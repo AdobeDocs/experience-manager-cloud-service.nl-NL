@@ -3,7 +3,7 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Validatie en foutopsporing met Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
+source-git-commit: 03fa3601c7819d469bf4d532ff5020aad0ea7ed9
 workflow-type: tm+mt
 source-wordcount: '2413'
 ht-degree: 1%
@@ -15,13 +15,13 @@ ht-degree: 1%
 ## Inleiding {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Raadpleeg de [Dispatcher op de pagina Cloud](/help/implementing/dispatcher/disp-overview.md) voor meer informatie over Dispatcher in de cloud en hoe u Dispatcher Tools downloadt. Als de configuratie van de verzender in erfeniswijze is, verwijs naar [verouderde wijzedocumentatie](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Raadpleeg voor meer informatie over Dispatcher in de cloud en over het downloaden van Dispatcher Tools de [Dispatcher in de cloud](/help/implementing/dispatcher/disp-overview.md) pagina. Als de configuratie van de verzender in verouderde modus is, raadpleegt u de [documentatie over oudere modus](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 In de volgende secties wordt de structuur van het bestand in de flexibele modus beschreven, evenals lokale validatie, foutopsporing en migratie van de oude modus naar de flexibele modus.
 
-In dit artikel wordt ervan uitgegaan dat de configuratie van de verzender van uw project het bestand `opt-in/USE_SOURCES_DIRECTLY` bevat, waardoor de SDK en de runtime de configuratie beter kunnen valideren en implementeren dan in de verouderde modus, waarbij beperkingen rond het aantal en de grootte van bestanden worden verwijderd.
+In dit artikel wordt ervan uitgegaan dat het bestand is opgenomen in de configuratie van de dispatcher van uw project `opt-in/USE_SOURCES_DIRECTLY`, waardoor de SDK en de runtime de configuratie beter kunnen valideren en implementeren dan in de verouderde modus, waarbij beperkingen rond het aantal en de grootte van bestanden worden verwijderd.
 
-Als uw configuratie van de verzender het bovengenoemde dossier niet omvat, is het **hoogst geadviseerd** dat u van erfeniswijze aan de flexibele wijze zoals die in [zich van erfeniswijze aan flexibele wijze wordt geschetst ](#migrating) sectie migreert.
+Als uw configuratie van de dispatcher het bovengenoemde bestand niet bevat, is het **aanbevolen** dat u van erfeniswijze aan de flexibele wijze zoals die in wordt geschetst migreert [Migreren van oude modus naar flexibele modus](#migrating) sectie.
 
 ## Bestandsstructuur {#flexible-mode-file-structure}
 
@@ -77,39 +77,39 @@ De volgende bestanden kunnen worden aangepast en worden bij de implementatie ove
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-U kunt een of meer van deze bestanden hebben. Zij bevatten `<VirtualHost>` ingangen die gastheernamen aanpassen en Apache toestaan om elk domeinverkeer met verschillende regels te behandelen. Bestanden worden gemaakt in de map `available_vhosts` en ingeschakeld met een symbolische koppeling in de map `enabled_vhosts`. Van de `.vhost` dossiers, zullen andere dossiers zoals herschrijft en variabelen worden omvat.
+U kunt een of meer van deze bestanden hebben. Zij bevatten `<VirtualHost>` vermeldingen die de namen van de gastheer aanpassen en Apache toestaan om elk domeinverkeer met verschillende regels te behandelen. Bestanden worden gemaakt in het dialoogvenster `available_vhosts` en ingeschakeld met een symbolische koppeling in het dialoogvenster `enabled_vhosts` directory. Van de `.vhost` bestanden, andere bestanden zoals herschreven en variabelen worden opgenomen.
 
 * `conf.d/rewrites/rewrite.rules`
 
-Dit bestand wordt opgenomen vanuit uw `.vhost`-bestanden. Het heeft een reeks herschrijfregels voor `mod_rewrite`.
+Dit bestand wordt vanuit uw `.vhost` bestanden. Er is een set herschrijfregels voor `mod_rewrite`.
 
 * `conf.d/variables/custom.vars`
 
-Dit bestand wordt opgenomen vanuit uw `.vhost`-bestanden. U kunt op deze locatie definities voor Apache-variabelen toevoegen.
+Dit bestand wordt vanuit uw `.vhost` bestanden. U kunt op deze locatie definities voor Apache-variabelen toevoegen.
 
 * `conf.d/variables/global.vars`
 
-Dit bestand wordt opgenomen vanuit het `dispatcher_vhost.conf`-bestand. U kunt de Dispatcher wijzigen en het logniveau in dit bestand herschrijven.
+Dit bestand wordt opgenomen vanuit de `dispatcher_vhost.conf` bestand. U kunt de Dispatcher wijzigen en het logniveau in dit bestand herschrijven.
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-U kunt één of meerdere van deze dossiers hebben, en zij bevatten landbouwbedrijven om gastheernamen aan te passen en de module van de Verzender toe te staan om elk landbouwbedrijf met verschillende regels te behandelen. Bestanden worden gemaakt in de map `available_farms` en ingeschakeld met een symbolische koppeling in de map `enabled_farms`. Van de `.farm` dossiers, zullen andere dossiers zoals filters, geheim voorgeheugenregels en anderen worden omvat.
+U kunt één of meerdere van deze dossiers hebben, en zij bevatten landbouwbedrijven om gastheernamen aan te passen en de module van de Verzender toe te staan om elk landbouwbedrijf met verschillende regels te behandelen. Bestanden worden gemaakt in het dialoogvenster `available_farms` en ingeschakeld met een symbolische koppeling in het dialoogvenster `enabled_farms` directory. Van de `.farm` bestanden, andere bestanden zoals filters, cacheregels en andere bestanden worden opgenomen.
 
 * `conf.dispatcher.d/cache/rules.any`
 
-Dit bestand wordt opgenomen vanuit uw `.farm`-bestanden. Hiermee geeft u voorkeuren voor caching op.
+Dit bestand wordt vanuit uw `.farm` bestanden. Hiermee geeft u voorkeuren voor caching op.
 
 * `conf.dispatcher.d/clientheaders/clientheaders.any`
 
-Dit bestand wordt opgenomen vanuit uw `.farm`-bestanden. Het specificeert welke verzoekkopballen aan het achtereind door:sturen.
+Dit bestand wordt vanuit uw `.farm` bestanden. Het specificeert welke verzoekkopballen aan het achtereind door:sturen.
 
 * `conf.dispatcher.d/filters/filters.any`
 
-Dit bestand wordt opgenomen vanuit uw `.farm`-bestanden. Het heeft een reeks regels die veranderen welk verkeer uit zou moeten worden gefiltreerd en niet het aan het achterste eind maken.
+Dit bestand wordt vanuit uw `.farm` bestanden. Het heeft een reeks regels die veranderen welk verkeer uit zou moeten worden gefiltreerd en niet het aan het achterste eind maken.
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-Dit bestand wordt opgenomen vanuit uw `.farm`-bestanden. Het heeft een lijst van gastheernamen of de wegen van URI die door glob aanpassing moeten worden aangepast. Dit bepaalt welke achtergrond om een verzoek te dienen.
+Dit bestand wordt vanuit uw `.farm` bestanden. Het heeft een lijst van gastheernamen of de wegen van URI die door glob aanpassing moeten worden aangepast. Dit bepaalt welke achtergrond om een verzoek te dienen.
 
 * `opt-in/USE_SOURCES_DIRECTLY`
 
@@ -125,7 +125,7 @@ Het wordt aanbevolen dat de bovenstaande bestanden verwijzen naar de hieronder v
 
 * `conf.d/available_vhosts/default.vhost`
 
-Bevat een virtuele voorbeeldhost. Voor uw eigen virtuele host maakt u een kopie van dit bestand, past u het aan, gaat u naar `conf.d/enabled_vhosts` en maakt u een symbolische koppeling naar uw aangepaste kopie.
+Bevat een virtuele voorbeeldhost. Voor uw eigen virtuele host maakt u een kopie van dit bestand, past u het aan, gaat u naar `conf.d/enabled_vhosts` en maak een symbolische koppeling naar uw aangepaste kopie.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -133,23 +133,23 @@ Deel van het basisframework dat wordt gebruikt om te illustreren hoe uw virtuele
 
 * `conf.d/rewrites/default_rewrite.rules`
 
-Standaard herschrijft regels geschikt voor een standaardproject. Als u aanpassing nodig hebt, wijzigt u `rewrite.rules`. In uw aanpassing, kunt u nog de standaardregels eerst omvatten, als zij uw behoeften aanpassen.
+Standaard herschrijft regels geschikt voor een standaardproject. Als u aanpassingen nodig hebt, wijzigt u `rewrite.rules`. In uw aanpassing, kunt u nog de standaardregels eerst omvatten, als zij uw behoeften aanpassen.
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
-Bevat een bedrijf van de steekproefDispatcher. Voor uw eigen landbouwbedrijf, creeer een exemplaar van dit dossier, pas het aan, ga naar `conf.d/enabled_farms` en creeer een symbolische verbinding aan uw aangepaste exemplaar.
+Bevat een bedrijf van de steekproefDispatcher. Voor uw eigen landbouwbedrijf, creeer een exemplaar van dit dossier, pas het aan, ga naar `conf.d/enabled_farms` en maak een symbolische koppeling naar uw aangepaste kopie.
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
-Een deel van het basiskader, wordt geproduceerd bij opstarten. U bent **required** om dit dossier in elk landbouwbedrijf te omvatten u, in `cache/allowedClients` sectie bepaalt.
+Een deel van het basiskader, wordt geproduceerd bij opstarten. U bent **vereist** om dit dossier in elk landbouwbedrijf te omvatten u bepaalt, in `cache/allowedClients` sectie.
 
 * `conf.dispatcher.d/cache/default_rules.any`
 
-De standaard geheim voorgeheugenregels geschikt voor een standaardproject. Als u aanpassing nodig hebt, wijzigt u `conf.dispatcher.d/cache/rules.any`. In uw aanpassing, kunt u nog de standaardregels eerst omvatten, als zij uw behoeften aanpassen.
+De standaard geheim voorgeheugenregels geschikt voor een standaardproject. Als u aanpassingen nodig hebt, wijzigt u `conf.dispatcher.d/cache/rules.any`. In uw aanpassing, kunt u nog de standaardregels eerst omvatten, als zij uw behoeften aanpassen.
 
 * `conf.dispatcher.d/clientheaders/default_clientheaders.any`
 
-De standaard verzoekkopballen om aan het achterste deel door:sturen, geschikt voor een standaardproject. Als u aanpassing nodig hebt, wijzigt u `clientheaders.any`. In uw aanpassing, kunt u nog de standaardverzoekkopballen eerst omvatten, als zij uw behoeften aanpassen.
+De standaard verzoekkopballen om aan het achterste deel door:sturen, geschikt voor een standaardproject. Als u aanpassingen nodig hebt, wijzigt u `clientheaders.any`. In uw aanpassing, kunt u nog de standaardverzoekkopballen eerst omvatten, als zij uw behoeften aanpassen.
 
 * `conf.dispatcher.d/dispatcher.any`
 
@@ -157,15 +157,15 @@ Deel van basisframework dat wordt gebruikt om te illustreren hoe uw Dispatcher-b
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
-Standaardfilters die geschikt zijn voor een standaardproject. Als u aanpassing nodig hebt, wijzigt u `filters.any`. In uw aanpassing, kunt u nog de standaardfilters eerst omvatten, als zij uw behoeften aanpassen.
+Standaardfilters die geschikt zijn voor een standaardproject. Als u aanpassingen nodig hebt, wijzigt u `filters.any`. In uw aanpassing, kunt u nog de standaardfilters eerst omvatten, als zij uw behoeften aanpassen.
 
 * `conf.dispatcher.d/renders/default_renders.any`
 
-Als onderdeel van het basisframework wordt dit bestand bij het opstarten gegenereerd. U bent **required** om dit dossier in elk landbouwbedrijf te omvatten u, in `renders` sectie bepaalt.
+Als onderdeel van het basisframework wordt dit bestand bij het opstarten gegenereerd. U bent **vereist** om dit dossier in elk landbouwbedrijf te omvatten u bepaalt, in `renders` sectie.
 
 * `conf.dispatcher.d/virtualhosts/default_virtualhosts.any`
 
-Standaardhostglobing geschikt voor een standaardproject. Als u aanpassing nodig hebt, wijzigt u `virtualhosts.any`. In uw aanpassing, zou u niet de standaard gastheer het globbings moeten omvatten, aangezien het **elke** inkomend verzoek aanpast.
+Standaardhostglobing geschikt voor een standaardproject. Als u aanpassingen nodig hebt, wijzigt u `virtualhosts.any`. In uw aanpassing, zou u niet het standaard gastheer globbings, aangezien het aanpast **elke** binnenkomend verzoek.
 
 ## Ondersteunde Apache-modules {#apache-modules}
 
@@ -174,9 +174,10 @@ Zie [Ondersteunde Apache-modules](/help/implementing/dispatcher/disp-overview.md
 ## Lokale validatie {#local-validation-flexible-mode}
 
 >[!NOTE]
+>
 >De onderstaande secties bevatten opdrachten met behulp van de Mac- of Linux-versies van de SDK, maar de Windows SDK kan ook op dezelfde manier worden gebruikt.
 
-Gebruik het `validate.sh` manuscript zoals hieronder getoond:
+Gebruik de `validate.sh` script zoals hieronder weergegeven:
 
 ```
 $ validate.sh src/dispatcher
@@ -217,23 +218,23 @@ Phase 3 finished
 Het script heeft de volgende drie fasen:
 
 1. De validator wordt uitgevoerd. Als de configuratie ongeldig is, ontbreekt het manuscript.
-2. Het voert het `httpd -t` bevel uit om te testen als de syntaxis correct is zodat apache httpd kan beginnen. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
-3. Controleert dat de ondergroep van de de configuratiedossiers van SDK van de Dispatcher, die bedoeld zijn om onveranderlijk te zijn zoals die in [de sectie van de Bestandsstructuur](##flexible-mode-file-structure) worden beschreven, niet is gewijzigd.
+2. Het voert het `httpd -t` om te testen of de syntaxis correct is, zodat apache httpd kan starten. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
+3. Controleert of de subset van de Dispatcher SDK-configuratiebestanden, die zijn bedoeld om onveranderbaar te zijn zoals beschreven in het dialoogvenster [Sectie Bestandsstructuur](##flexible-mode-file-structure), niet gewijzigd.
 
-Tijdens de implementatie van Cloud Manager wordt de syntaxiscontrole `httpd -t` ook uitgevoerd en worden eventuele fouten opgenomen in het logbestand voor Cloud Manager `Build Images step failure`.
+Tijdens een implementatie van Cloud Manager kunt u de `httpd -t` syntaxiscontrole wordt ook uitgevoerd en eventuele fouten worden opgenomen in Cloud Manager `Build Images step failure` log.
 
 ### Fase 1 {#first-phase}
 
-Als een instructie niet is gevoegd op lijst van gewenste personen, wordt een fout geregistreerd en wordt een afsluitcode van niet nul geretourneerd. Bovendien worden alle bestanden met patroon `conf.dispatcher.d/enabled_farms/*.farm` gescand en wordt gecontroleerd of:
+Als een instructie niet is gevoegd op lijst van gewenste personen, wordt een fout geregistreerd en wordt een afsluitcode van niet nul geretourneerd. Bovendien worden alle bestanden met een patroon gescand `conf.dispatcher.d/enabled_farms/*.farm` en controleert of:
 
-* Er bestaat geen filterregel die via `/glob` (zie [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) voor meer informatie toestaat.
-* Er wordt geen beheerfunctie weergegeven. Bijvoorbeeld toegang tot paden zoals `/crx/de or /system/console`.
+* Er bestaat geen filterregel die via `/glob` (zie [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) voor meer informatie .
+* Er wordt geen beheerfunctie weergegeven. Toegang tot bijvoorbeeld paden `/crx/de or /system/console`.
 
 Let op: het validatiehulpmiddel rapporteert alleen het verboden gebruik van Apache-instructies die niet zijn gevoegd op lijst van gewenste personen. Er worden geen syntactische of semantische problemen met uw Apache-configuratie gemeld, aangezien deze informatie alleen beschikbaar is voor Apache-modules in een actieve omgeving.
 
 Hieronder vindt u technieken voor het oplossen van problemen waarmee algemene validatiefouten kunnen worden opgespoord die door het programma worden uitgevoerd:
 
-**kan geen  `conf.dispatcher.d` submap vinden in het archief**
+**kan een `conf.dispatcher.d` submap in het archief**
 
 Uw archief moet mappen `conf.d` en `conf.dispatcher.d` bevatten. Let op: gebruik het voorvoegsel `etc/httpd` **niet** in uw archief.
 
@@ -243,9 +244,7 @@ Uw ingeschakelde landbouwbedrijven zouden in bovengenoemde subfolder moeten word
 
 **Ingesloten bestand (...) moet een naam hebben: ...**
 
-Er zijn twee secties in uw landbouwbedrijfconfiguratie die **must** omvat
-specifiek bestand: `/renders` en `/allowedClients` in de sectie `/cache`. Die
-de secties moeten er als volgt uitzien:
+Er zijn twee secties in uw landbouwbedrijfconfiguratie die **moet** een specifiek bestand opnemen: `/renders` en `/allowedClients` in de `/cache` sectie. Deze delen moeten er als volgt uitzien:
 
 ```
 /renders {
@@ -263,7 +262,7 @@ and:
 
 **bestand opgenomen op onbekende locatie: ...**
 
-Er zijn vier secties in uw landbouwbedrijfconfiguratie waar u uw eigen dossier mag omvatten: `/clientheaders`, `filters`, `/rules` in `/cache` sectie en `/virtualhosts`. De opgenomen bestanden moeten als volgt worden benoemd:
+Er zijn vier secties in uw landbouwbedrijfconfiguratie waar u uw eigen dossier mag omvatten: `/clientheaders`, `filters`, `/rules` in `/cache` en `/virtualhosts`. De opgenomen bestanden moeten als volgt worden benoemd:
 
 | Sectie | Bestandsnaam opnemen |
 |------------------|--------------------------------------|
@@ -276,8 +275,7 @@ U kunt ook de **standaardversie** van deze bestanden opnemen, waarvan de namen w
 
 **include statement at (...), outside any known location: ...**
 
-Behalve de zes secties die in de bovenstaande paragrafen worden vermeld, bent u niet toegestaan
-als u de instructie `$include` wilt gebruiken, wordt deze fout bijvoorbeeld gegenereerd door:
+Behalve de zes secties die in de bovenstaande paragrafen worden vermeld, bent u niet toegestaan om `$include` Deze fout wordt bijvoorbeeld gegenereerd door de volgende instructie:
 
 ```
 /invalidate {
@@ -287,12 +285,12 @@ als u de instructie `$include` wilt gebruiken, wordt deze fout bijvoorbeeld gege
 
 **toegestane clients/renderingen zijn niet inbegrepen bij: ...**
 
-Deze fout wordt geproduceerd wanneer u geen omvat voor `/renders` en `/allowedClients` in `/cache` sectie specificeert. Zie de
+Deze fout wordt gegenereerd wanneer u geen include-bestand opgeeft voor `/renders` en `/allowedClients` in de `/cache` sectie. Zie de
 **Ingesloten bestand (...) moet een naam hebben: ...** voor meer informatie.
 
 **filter mag geen globpatroon gebruiken om verzoeken toe te staan**
 
-Het is niet veilig om verzoeken met een `/glob` stijlregel toe te staan, die tegen de volledige verzoeklijn, bijvoorbeeld wordt aangepast.
+Het is niet veilig om verzoeken toe te staan met een `/glob` stijlregel, die wordt aangepast aan de volledige aanvraagregel, bijvoorbeeld
 
 ```
 /0100 {
@@ -300,7 +298,7 @@ Het is niet veilig om verzoeken met een `/glob` stijlregel toe te staan, die teg
 }
 ```
 
-Deze verklaring is bedoeld om verzoeken om `css` dossiers toe te staan, maar het staat ook verzoeken aan **any** middel toe die door het vraagkoord `?a=.css` wordt gevolgd. Het is daarom verboden dergelijke filters te gebruiken (zie ook CVE-2016-0957).
+Deze verklaring moet verzoeken om `css` bestanden, maar ook verzoeken om **alle** resource gevolgd door de queryreeks `?a=.css`. Het is daarom verboden dergelijke filters te gebruiken (zie ook CVE-2016-0957).
 
 **opgenomen bestand (...) komt niet overeen met een bekend bestand**
 
@@ -312,18 +310,16 @@ De opgenomen bestanden moeten als volgt worden benoemd:
 | Herschrijven | `conf.d/rewrites/rewrite.rules` |
 | Variabelen | `conf.d/variables/custom.vars` |
 
-U kunt ook de standaardversie **default** van de herschrijfregels opnemen, waarvan de naam `conf.d/rewrites/default_rewrite.rules` is.
+U kunt ook de opdracht **default** versie van de herschrijfregels, waarvan de naam is `conf.d/rewrites/default_rewrite.rules`.
 Er is geen standaardversie van de variabelebestanden.
 
 **Verouderde configuratielay-out gedetecteerd, compatibiliteitsmodus ingeschakeld**
 
-Dit bericht wijst erop dat uw configuratie verouderde versie 1 lay-out heeft, die een volledige bevat
-Apache-configuratie en bestanden met `ams_` voorvoegsels. Hoewel dit nog steeds wordt ondersteund
-moet u overschakelen naar de nieuwe indeling.
+Dit bericht geeft aan dat uw configuratie de verouderde versie 1-indeling heeft, die een volledige Apache-configuratie bevat en bestanden bevat met `ams_` voorvoegsels. Hoewel dit nog steeds wordt ondersteund voor achterwaartse compatibiliteit, dient u over te schakelen op de nieuwe indeling.
 
-Houd er rekening mee dat de eerste fase ook afzonderlijk **kan worden uitgevoerd** in plaats van vanuit het omvattende `validate.sh`-script.
+De eerste fase kan ook **afzonderlijk uitvoeren**, in plaats van uit de verpakking `validate.sh` script.
 
-Wanneer de looppas tegen uw beven artefact of uw `dispatcher/src` subdirectory, zal het bevestigingsmislukkingen melden:
+Als je in strijd bent met je beven artefact of je `dispatcher/src` subdirectory, zal het bevestigingsmislukkingen melden:
 
 ```
 $ validator full -relaxed dispatcher/src
@@ -341,25 +337,25 @@ bin\validator.exe -relaxed full src
 Cloud manager validator 2.0.xx
 2021/03/15 18:15:40 Dispatcher configuration validation failed:
   conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
-  
 ```
 
-Vermijd deze fout door de weg van de Ontdekkingsreiziger van Vensters en dan op de bevelherinnering te kopiëren en te kleven gebruikend een `cd` bevel in die weg.
+Vermijd deze fout door de weg van de Ontdekkingsreiziger van Vensters en dan op de bevelherinnering te kopiëren en te kleven gebruikend `cd` in dat pad.
 
 ### Fase 2 {#second-phase}
 
 Deze fase controleert de pijnsyntaxis door Docker in een beeld te beginnen. Docker moet lokaal zijn geïnstalleerd, maar AEM hoeft niet te worden uitgevoerd.
 
 >[!NOTE]
+>
 >Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Dit is een vereiste voor het uitvoeren van en het zuiveren van Dispatcher op een lokale computer.
 
-Deze fase kan ook onafhankelijk door `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080` worden in werking gesteld.
+Deze fase kan ook onafhankelijk worden uitgevoerd `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080`.
 
-Tijdens de implementatie van Cloud Manager wordt de syntaxiscontrole `httpd -t` ook uitgevoerd en worden eventuele fouten opgenomen in het foutenlogboek voor de stap Images maken van Cloud Manager.
+Tijdens een implementatie van Cloud Manager kunt u de `httpd -t` syntaxiscontrole wordt ook uitgevoerd en eventuele fouten worden opgenomen in het foutenlogboek voor de stap Build Images in Cloud Manager.
 
 ### Fase 3 {#third-phase}
 
-Als er een fout in deze fase is, impliceert het dat Adobe één of meerdere onveranderlijke dossiers heeft veranderd en u moet de overeenkomstige onveranderlijke dossiers met de nieuwe versie vervangen die in `src` folder van SDK wordt geleverd. In het onderstaande logboekvoorbeeld ziet u dit probleem:
+Als er een fout optreedt in deze fase, betekent dit dat Adobe een of meer onveranderbare bestanden heeft gewijzigd en dat u de overeenkomstige onveranderlijke bestanden moet vervangen door de nieuwe versie die wordt geleverd in het dialoogvenster `src` directory van de SDK. In het onderstaande logboekvoorbeeld ziet u dit probleem:
 
 ```
 Phase 3: Immutability check
@@ -378,17 +374,17 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
   
 ```
 
-Deze fase kan ook onafhankelijk door `bin/docker_immutability_check.sh src/dispatcher` worden in werking gesteld.
+Deze fase kan ook onafhankelijk worden uitgevoerd `bin/docker_immutability_check.sh src/dispatcher`.
 
 ## Fouten opsporen in uw Apache- en Dispatcher-configuratie {#debugging-apache-and-dispatcher-configuration}
 
-Houd er rekening mee dat u apache dispatcher lokaal kunt uitvoeren met `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080`.
+Houd er rekening mee dat u een dispatcher lokaal kunt uitvoeren met `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080`.
 
 Zoals eerder vermeld, moet Docker plaatselijk worden geïnstalleerd en het is niet noodzakelijk voor AEM in werking te stellen. Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Dit is een vereiste voor het uitvoeren van en het zuiveren van Dispatcher op een lokale computer.
 
-De volgende strategie kan worden gebruikt om de logboekoutput voor de module van de Verzender te verhogen en de resultaten van de `RewriteRule` evaluatie in zowel lokale als wolkenmilieu&#39;s te zien.
+De volgende strategie kan worden gebruikt om de logboekoutput voor de module van de Verzender te verhogen en de resultaten van te zien `RewriteRule` evaluatie in zowel lokale als cloudomgevingen.
 
-Logniveaus voor deze modules worden gedefinieerd door de variabelen `DISP_LOG_LEVEL` en `REWRITE_LOG_LEVEL`. Ze kunnen worden ingesteld in het bestand `conf.d/variables/global.vars`. Het relevante deel is als volgt:
+De logbestandniveaus voor deze modules worden bepaald door de variabelen `DISP_LOG_LEVEL` en `REWRITE_LOG_LEVEL`. Deze kunnen in het bestand worden ingesteld `conf.d/variables/global.vars`. Het relevante deel is als volgt:
 
 ```
 # Log level for the dispatcher
@@ -418,7 +414,7 @@ Logbestanden voor cloudomgevingen worden weergegeven via de logbestandsservice d
 
 ## Verschillende Dispatcher-configuraties per omgeving {#different-dispatcher-configurations-per-environment}
 
-Momenteel wordt dezelfde Dispatcher-configuratie toegepast op alle AEM als een Cloud Service-omgeving. De runtime heeft een omgevingsvariabele `ENVIRONMENT_TYPE` die de huidige uitvoermodus (dev, stage of prod) en een definitie bevat. De definitie kan `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` of `ENVIRONMENT_PROD` zijn. In de Apache-configuratie kan de variabele rechtstreeks in een expressie worden gebruikt. U kunt ook de definitie gebruiken om logica op te bouwen:
+Momenteel wordt dezelfde Dispatcher-configuratie toegepast op alle AEM as a Cloud Service omgevingen. De runtime heeft een omgevingsvariabele `ENVIRONMENT_TYPE` die de huidige uitvoeringsmodus (dev, werkgebied of pod) en een definitie bevat. De definitie kan `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` of `ENVIRONMENT_PROD`. In de Apache-configuratie kan de variabele rechtstreeks in een expressie worden gebruikt. U kunt ook de definitie gebruiken om logica op te bouwen:
 
 ```
 # Simple usage of the environment variable
@@ -443,18 +439,18 @@ In de configuratie van de Verzender, is de zelfde milieuvariabele beschikbaar. A
 }
 ```
 
-Wanneer u uw configuratie lokaal test, kunt u verschillende omgevingstypen simuleren door de variabele `DISP_RUN_MODE` rechtstreeks door te geven aan het `docker_run.sh`-script:
+Wanneer het testen van uw configuratie plaatselijk, kunt u verschillende milieutypes simuleren door de variabele over te gaan `DISP_RUN_MODE` aan de `docker_run.sh` script rechtstreeks:
 
 ```
 $ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 ```
 
 De standaardrunmode wanneer het overgaan niet in een waarde voor DISP_RUN_MODE is &quot;dev&quot;.
-Voor een volledige lijst van beschikbare opties en variabelen, stel het manuscript `docker_run.sh` zonder argumenten in werking.
+Voer het script uit voor een volledige lijst met beschikbare opties en variabelen `docker_run.sh` zonder argumenten.
 
 ## De Dispatcher-configuratie bekijken die door de Docker-container wordt gebruikt {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-Met milieu-specifieke configuraties, kan het moeilijk zijn om te bepalen hoe de daadwerkelijke configuratie van de Verzender kijkt als. Nadat u de docker container met `docker_run.sh` hebt gestart, kan deze als volgt worden gedumpt:
+Met milieu-specifieke configuraties, kan het moeilijk zijn om te bepalen hoe de daadwerkelijke configuratie van de Verzender kijkt als. Na het starten van de docker container met `docker_run.sh` het kan als volgt met dumping worden ingevoerd :
 
 * Bepaal de gebruikte dockercontainer-id:
 
@@ -477,15 +473,15 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migreren van oude modus naar flexibele modus {#migrating}
 
-Met de release van Cloud Manager 2021.7.0 genereren nieuwe programma&#39;s van Cloud Manager gefundeerde projectstructuren met [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) of hoger, waaronder het bestand **opt-in/USE_SOURCES_DIRECTLY**. Hierdoor worden eerdere beperkingen van de [verouderde modus](/help/implementing/dispatcher/validation-debug-legacy.md) met betrekking tot het aantal en de grootte van bestanden verwijderd, waardoor de SDK en de runtime de configuratie op een verbeterde manier valideren en implementeren. Als dit bestand niet in de configuratie van de verzender staat, wordt u ten zeerste aangeraden te migreren. Gebruik de volgende stappen om een veilige overgang te garanderen:
+Met de release van Cloud Manager 2021.7.0 genereren nieuwe programma&#39;s van Cloud Manager gemaven projectstructuren met [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) of hoger, inclusief het bestand **opt-in/USE_SOURCES_DIRECTLY**. Hiermee worden eerdere beperkingen van het dialoogvenster [verouderde modus](/help/implementing/dispatcher/validation-debug-legacy.md) rond het aantal en de grootte van dossiers, die ook SDK en runtime ertoe brengen om de configuratie op een betere manier te bevestigen en op te stellen. Als dit bestand niet in de configuratie van de verzender staat, wordt u ten zeerste aangeraden te migreren. Gebruik de volgende stappen om een veilige overgang te garanderen:
 
-1. **Lokaal testen.** Voeg de map en het bestand toe met de meest recente SDK voor verzendprogramma&#39;s  `opt-in/USE_SOURCES_DIRECTLY`. Volg de instructies voor lokale validatie in dit artikel om te testen of de verzender lokaal werkt.
+1. **Lokaal testen.** Voeg de map en het bestand toe met behulp van de meest recente SDK voor verzendprogramma&#39;s `opt-in/USE_SOURCES_DIRECTLY`. Volg de instructies voor lokale validatie in dit artikel om te testen of de verzender lokaal werkt.
 2. **Testen voor ontwikkeling van cloud:**
-   * Leg het bestand `opt-in/USE_SOURCES_DIRECTLY` vast aan een git-vertakking die wordt geïmplementeerd door de niet-productiepijpleiding naar een Cloud-ontwikkelomgeving.
+   * Het bestand vastleggen `opt-in/USE_SOURCES_DIRECTLY` aan een git tak die door de niet-productiepijpleiding aan een de ontwikkelomgeving van de Wolk wordt opgesteld.
    * Gebruik Cloud Manager om te implementeren in een Cloud-ontwikkelomgeving.
    * Test grondig. Het is essentieel om te controleren of uw apache- en dispatcherconfiguratie zich gedraagt zoals u verwacht voordat u wijzigingen in hogere omgevingen implementeert. Controleer al gedrag met betrekking tot uw douaneconfiguratie! Bestand een ondersteuningsticket voor de klant als u denkt dat de configuratie van de geïmplementeerde dispatcher uw aangepaste configuratie niet weerspiegelt.
 3. **Distribueren naar productie:**
-   * Leg het bestand `opt-in/USE_SOURCES_DIRECTLY` vast aan een git-vertakking die wordt geïmplementeerd door de productiepijpleiding naar het werkgebied en de productieomgevingen van de cloud.
+   * Het bestand vastleggen `opt-in/USE_SOURCES_DIRECTLY` aan een git tak die door de productiepijpleiding aan het stadium van de Wolk en productiemilieu&#39;s wordt opgesteld.
    * Gebruik Cloud Manager om te implementeren in testfasen.
    * Test grondig. Het is essentieel om te controleren of uw apache- en dispatcherconfiguratie zich gedraagt zoals u verwacht voordat u wijzigingen in hogere omgevingen implementeert. Controleer al gedrag met betrekking tot uw douaneconfiguratie! Bestand een ondersteuningsticket voor de klant als u denkt dat de configuratie van de geïmplementeerde dispatcher uw aangepaste configuratie niet weerspiegelt.
    * Gebruik Cloud Manager om de implementatie naar productie voort te zetten.
