@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 3ea19210049e49401da892021f098005759542a3
+source-git-commit: dadf4f21ebaac12386153b2a9c69dc8f10951e9c
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 6%
+source-wordcount: '916'
+ht-degree: 5%
 
 ---
 
@@ -53,6 +53,8 @@ In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-gui
 * `{{url_path}}` worden vervangen door de `url_path`, bijvoorbeeld `venia-bottoms/venia-pants/lenora-crochet-shorts`
 * `{{variant_sku}}` worden vervangen door de momenteel geselecteerde variant, bijvoorbeeld `VP09-KH-S`
 
+Aangezien `url_path` verouderd zijn, de vooraf gedefinieerde product-URL-indelingen gebruiken de `url_rewrites` en kies het pad met de meeste padsegmenten als alternatief als de optie `url_path` is niet beschikbaar.
+
 Met de bovenstaande voorbeeldgegevens ziet een product-variant-URL die is opgemaakt met de standaard-URL-indeling er ongeveer zo uit `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
 ### Categorie Pagina-URL-indeling {#product-list}
@@ -74,16 +76,19 @@ Met de bovenstaande voorbeeldgegevens ziet een categoriepagina-URL die is opgema
 > 
 > De `url_path` is een aaneenschakeling van `url_keys` van een product of categorie en het product of de categorie `url_key` gescheiden door `/` schuine streep.
 
+### Specifieke categorie-/productpagina&#39;s {#specific-pages}
+
+Het is mogelijk om [meerdere categorieën en productpagina&#39;s](../authoring/multi-template-usage.md) alleen voor een specifieke subset van categorieën of producten van een catalogus.
+
+De `UrlProvider` vooraf geconfigureerd is om diepgaande koppelingen naar dergelijke pagina&#39;s te genereren op instanties van de auteurslaag. Dit is handig voor editors die in de modus Voorbeeld door een site bladeren, naar een specifiek product of een bepaalde categoriepagina navigeren en terugschakelen naar de modus Bewerken om de pagina te bewerken.
+
+Bij publicatie-klasseninstanties daarentegen moeten URL&#39;s van cataloguspagina&#39;s stabiel worden gehouden om bijvoorbeeld geen winsten op beoordelingen van zoekmachines te verliezen. Vanwege deze publicatie-tier-instanties worden er geen diepgaande koppelingen naar specifieke cataloguspagina&#39;s per standaard weergegeven. Als u dit gedrag wilt wijzigen, _Specifieke paginastrategie CIF URL-provider_ kan worden gevormd om specifieke paginaURL&#39;s altijd te produceren.
+
 ## Aangepaste URL-indelingen {#custom-url-format}
 
-Als u een aangepaste URL-indeling wilt opgeven, kan een project de opdracht [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) en registreer de implementatie als dienst OSGI, die of als categorie pagina of productpagina url formaat gebruikt. De `UrlFormat#PROP_USE_AS` het de dienstbezit wijst erop, welke van de gevormde vooraf bepaalde formaten te vervangen:
+Om een formaat van douaneURL te verstrekken kan een project of uitvoeren [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) of de [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) de dienstinterface en registreert de implementatie als dienst OSGI. Deze implementaties, indien beschikbaar, vervangen de geconfigureerde, vooraf gedefinieerde indeling. Als er meerdere implementaties zijn geregistreerd, vervangt degene met de hogere servicerangschikking degene(n) door de lagere servicerangschikking.
 
-* `useAs=productPageUrlFormat`, vervangt de geconfigureerde URL-indeling van de productpagina
-* `useAs=categoryPageUrlFormat`, vervangt de geconfigureerde URL-indeling voor de categoriepagina
-
-Als er veelvoudige implementaties van zijn `UrlFormat` die als OSGI-diensten is geregistreerd, vervangt degene met de hoogste rangorde de dienst(en) door de lagere rangorde.
-
-De `UrlFormat` moet een paar methodes uitvoeren om een URL van een bepaalde Kaart van parameters te bouwen en een URL te ontleden om de zelfde Kaart van parameters terug te keren. De parameters zijn hetzelfde als hierboven beschreven, alleen voor categorieën en `{{uid}}` wordt de `UrlFormat`.
+De de formaatimplementaties van douaneURL moeten een paar methodes uitvoeren om een URL van bepaalde parameters te bouwen, en een URL te ontleden om de zelfde parameters respectievelijk terug te keren.
 
 ## Combineren met Sling Mappings {#sling-mapping}
 
