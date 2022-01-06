@@ -1,133 +1,131 @@
 ---
-title: Ga aan de slag met AEM headless vertaling
-description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Get started with AEM headless translation
+description: Get to know how to organize your headless content and how AEM's translation tools work.
+exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 0%
 
 ---
 
-# Ga aan de slag met AEM headless Translation {#getting-started}
+# Get Started with AEM Headless Translation {#getting-started}
 
-Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
+Get to know how to organize your headless content and how AEM&#39;s translation tools work.
 
-## Het verhaal tot nu toe {#story-so-far}
+## The Story So Far {#story-so-far}
 
-In het vorige document van de AEM headless vertaalreis, [Leer over hoofdloze inhoud en hoe te in AEM](learn-about.md) te vertalen u de basistheorie van wat een headless CMS is en u zou nu moeten:
+[](learn-about.md)
 
-* Begrijp de basisconcepten van inhoud zonder kop levering.
-* Wees vertrouwd met de manier waarop AEM ondersteuning biedt voor headless en translatie.
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
-Dit artikel bouwt verder op die grondbeginselen zodat u begrijpt hoe AEM inhoud zonder kop opslaat en beheert en hoe u AEM vertaalhulpmiddelen kunt gebruiken om die inhoud te vertalen.
+This article builds on those fundamentals so you understand how AEM stores and manages headless content and how you can use AEM&#39;s translation tools to translate that content.
 
-## Doelstelling {#objective}
+## Objective {#objective}
 
-Dit document helpt u begrijpen hoe u aan de slag kunt gaan met het vertalen van inhoud zonder kop in AEM. Na het lezen moet u:
+This document helps you understand how to get started translating headless content in AEM. After reading you should:
 
-* Begrijp het belang van inhoudsstructuur voor vertaling.
-* Begrijp hoe AEM inhoud zonder kop opslaat.
-* Wees vertrouwd met AEM vertaalhulpmiddelen.
+* Understand the importance of content structure to translation.
+* Understand how AEM stores headless content.
+* Be familiar with AEM&#39;s translation tools.
 
-## Eisen en voorwaarden {#requirements-prerequisites}
+## Requirements and Prerequisites {#requirements-prerequisites}
 
-Er zijn een aantal vereisten voordat u begint met het vertalen van inhoud zonder kop AEM inhoud.
+There are a number of requirements before you begin translating your headless AEM content.
 
-### Kennis {#knowledge}
+### Knowledge {#knowledge}
 
-* Ervaar het vertalen van inhoud in een CMS
-* Ervaar het gebruiken van de basiseigenschappen van grootschalig CMS
-* Werken met AEM basisverwerking
-* Kennis van de vertaalservice die u gebruikt
-* Basiskennis hebben van de inhoud die u wilt vertalen
+* Experience translating content in a CMS
+* Experience using the basic features of a large-scale CMS
+* Have a working knowledge of AEM basic handling
+* Understanding of the translation service you are using
+* Have a basic understanding of the content you are translating
 
 >[!TIP]
 >
->Als u niet vertrouwd bent met het gebruiken van grote CMS als AEM, overweeg het herzien van [Basisbehandeling](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentatie alvorens te werk te gaan. De documentatie voor basisverwerking maakt geen deel uit van de reis. Ga daarom na voltooiing terug naar deze pagina.
+>[](/help/sites-cloud/authoring/getting-started/basic-handling.md) The Basic Handling documentation is not part of the journey, so please return to this page when complete.
 
 ### Opties {#tools}
 
-* Sandbox-toegang voor het testen van het vertalen van uw inhoud
-* Credentials om verbinding te maken met uw voorkeursvertaalservice
-* Lid zijn van de `project-administrators` groep in AEM
+* Sandbox access for testing translating your content
+* Credentials to connect to your preferred translation service
+* `project-administrators`
 
-## Structuur is sleutel {#content-structure}
+## Structure is Key {#content-structure}
 
-AEM inhoud, of het nu kranteloze of traditionele webpagina&#39;s zijn, wordt aangedreven door de structuur ervan. AEM stelt weinig vereisten aan de inhoudsstructuur op, maar een zorgvuldige overweging van uw inhoudshiërarchie als onderdeel van de projectplanning kan vertaling veel eenvoudiger maken.
+AEM&#39;s content, be it headless or traditional web pages, is driven by its structure. AEM imposes few requirements on the content structure, but careful consideration of your content hierarchy as part of the project planning can make translation much simpler.
 
 >[!TIP]
 >
->Plan voor vertaling bij het allereerste begin van het project zonder kop. Werk vroeg nauw samen met de projectmanager en de inhoudarchitecten.
+>Plan for translation at the very beginning of the headless project. Work closely with the project manager and content architects early.
 >
->Een projectmanager voor internationalisatie kan worden verlangd als een aparte persoon die tot taak heeft te bepalen welke inhoud moet worden vertaald en wat niet, en welke vertaalde inhoud door regionale of lokale inhoudproducenten kan worden gewijzigd.
+>An Internationalization Project Manager may be required as a separate persona whose responsibility it is to define what content should be translated and what not, and what translated content may be modified by regional or local content producers.
 
-## Hoe AEM inhoud zonder kop opslaat {#headless-content-in-aem}
+## How AEM Stores Headless Content {#headless-content-in-aem}
 
-Voor de vertaalspecialist is het niet belangrijk om diepgaand te begrijpen hoe AEM inhoud zonder kop beheert. Het is echter nuttig bekend te zijn met de basisbeginselen en -terminologie, aangezien u later AEM vertaalhulpmiddelen gebruikt. Het belangrijkste is dat u uw eigen inhoud begrijpt en hoe deze is gestructureerd om deze effectief te kunnen vertalen.
+For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology will be helpful as you later use AEM&#39;s translation tools. Most importantly you need to understand your own content and how it is structured in order to effectively translate it.
 
-### Inhoudsmodellen {#content-models}
+### Content Models {#content-models}
 
-Om ervoor te zorgen dat inhoud zonder kop consistent wordt geleverd tussen kanalen, regio&#39;s en talen, moet de inhoud zeer gestructureerd zijn. AEM gebruikt Content Models om deze structuur af te dwingen. U kunt Content Models zien als een soort sjabloon of patroon voor het maken van inhoud zonder kop. Omdat elk project zijn eigen behoeften heeft, bepaalt elk project zijn eigen Modellen van het Fragment van de Inhoud. AEM heeft geen vaste eisen of structuur voor dergelijke modellen.
+In order for headless content to be delivered consistently across channels, regions, and languages, content must be highly structured. AEM uses Content Models to enforce this structure. Think of Content Models as a kind of template or pattern for creating headless content. Because every project has its own needs, every project defines its own Content Fragment Models. AEM has no fixed requirements or structure for such models.
 
-De inhoudarchitect werkt in een vroeg stadium van het project om deze structuur te definiëren. Als vertaler dient u nauw samen te werken met de inhoudarchitect om de inhoud te begrijpen en te ordenen.
+The content architect works early in the project to define this structure. As the translation specialist, you should work closely with the content architect to understand and organize the content.
 
 >[!NOTE]
 >
->Het is de verantwoordelijkheid van de inhoudarchitect om de inhoudsmodellen te definiëren. De vertaalspecialist mag alleen vertrouwd zijn met de structuur die in de volgende stappen wordt beschreven.
+>It is the responsibility of the content architect to define the Content Models. The translation specialist should only be familiar with their structure as outlined in the following steps.
 
-Omdat de inhoudsmodellen de structuur van uw inhoud bepalen, moet u weten welke gebieden van uw modellen moeten worden vertaald. In het algemeen werkt u met de inhoudarchitect om dit te definiëren. Volg onderstaande stappen om door de velden van uw inhoudsmodellen te bladeren.
+Because the Content Models define the structure of your content, you need to know which fields of your models must be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
 
-1. Navigeer naar **Tools** -> **Assets** -> **Content Fragment Models**.
-1. Modellen van inhoudsfragmenten worden over het algemeen opgeslagen in een mapstructuur. Tik of klik op de map voor uw project.
-1. De modellen worden vermeld. Tik of klik op het model om de details weer te geven.
+1. ************
+1. Content Fragment Models are generally stored in a folder structure. Tap or click on the folder for your project.
+1. The models are listed. Tap or click on the model to see the details.
    ![Modellen van contentfragmenten](assets/content-fragment-models.png)
-1. De **Inhoudsfragmentmodeleditor** wordt geopend.
-   1. De linkerkolom bevat de velden van het model. Deze kolom interesseert ons.
-   1. De rechterkolom bevat de velden die aan het model kunnen worden toegevoegd. Deze kolom kunnen wij negeren.
-      ![Inhoudsfragmentmodeleditor](assets/content-fragment-model-editor.png)
-1. Tik of klik op een van de velden van het model. AEM worden het en de details van dat gebied getoond in de juiste kolom.
-   ![Details van de Editor van het inhoudsfragmentmodel](assets/content-fragment-model-editor-detail.png)
+1. ****
+   1. The left column contains the fields of the model. This column interests us.
+   1. The right column contains the fields that can be added to the model. This column we can ignore.
+      ![](assets/content-fragment-model-editor.png)
+1. Tap or click one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
+   ![](assets/content-fragment-model-editor-detail.png)
 
-Neem nota van het gebied **de Naam van het Bezit** voor alle gebieden die moeten worden vertaald. U zult deze informatie later in de reis nodig hebben. Deze **Eigenschapnaam** s zijn vereist om AEM mee te delen welke velden van uw inhoud moeten worden vertaald.
+**** You will need this information later in the journey. ****
 
 >[!TIP]
 >
->Over het algemeen verschaft de contentarchitect de vertaalspecialist de **Eigenschapnaam** s van alle velden die vereist zijn voor vertaling. Deze veldnamen zijn nodig voor latere reizen. De voorafgaande stappen zijn bedoeld voor het begrijpen van de vertaalspecialist.
+>**** These field names are needed for later in the journey. The prior steps are provided for the understanding of the translation specialist.
 
 ### Contentfragmenten {#content-fragments}
 
-Inhoudsmodellen worden door de auteurs van de inhoud gebruikt om de inhoud zonder kop te maken. Inhoudsauteurs selecteren op welk model ze hun inhoud willen baseren en maken vervolgens Inhoudsfragmenten. Inhoudsfragmenten zijn exemplaren van de modellen en vertegenwoordigen feitelijke inhoud die zonder kop moet worden geleverd.
+Content Models are used by the content authors to create the actual headless content. Content authors select which model to base their content on an then create Content Fragments. Content Fragments are instances of the models and represent actual content to be delivered headlessly.
 
-Als Content Models de patronen voor de inhoud zijn, zijn de Content Fragments de daadwerkelijke inhoud die op die patronen wordt gebaseerd. De inhoudsfragmenten vertegenwoordigen de inhoud die moet worden vertaald.
+If the Content Models are the patterns for the content, the Content Fragments are the actual content based on those patterns. The Content Fragments represent the content that must be translated.
 
-Inhoudsfragmenten worden als elementen in AEM beheerd als onderdeel van DAM (Digital Asset Management). Dit is belangrijk aangezien zij allen onder de weg `/content/dam` worden gevestigd.
+Content Fragments are managed as assets in AEM as part of digital asset management (DAM). `/content/dam`
 
-## Aanbevolen inhoudsstructuur {#recommended-structure}
+## Recommended Content Structure {#recommended-structure}
 
-Zoals eerder geadviseerd, werk met uw inhoudarchitect om de aangewezen inhoudsstructuur voor uw eigen project te bepalen. Het volgende is echter een bewezen, eenvoudige en intuïtieve structuur die heel effectief is.
+As previously recommended, work with your content architect to determine the appropriate content structure for your own project. However the following is a proven, simple, and intuitive structure which is quite effective.
 
-Definieer een basismap voor uw project onder `/content/dam`.
+`/content/dam`
 
 ```text
 /content/dam/<your-project>
 ```
 
-De taal waarin uw inhoud wordt geschreven wordt genoemd de taalwortel. In ons voorbeeld is het Engels en moet het onder dit pad liggen.
+The language in which your content is authored is called the language root. In our example it is English and it should be below this path.
 
 ```text
 /content/dam/<your-project>/en
 ```
 
-Alle projectinhoud die mogelijk moet worden gelokaliseerd, moet onder de hoofdmap van de taal worden geplaatst.
+All project content that may need to be localized should be placed under the language root.
 
 ```text
 /content/dam/<your-project>/en/<your-project-content>
 ```
 
-De vertalingen zouden als sibling omslagen naast de taalwortel met hun omslagnaam moeten worden gecreeerd die ISO-2 taalcode van de taal vertegenwoordigt. Duits zou bijvoorbeeld het volgende pad hebben.
+Translations should be created as sibling folders alongside the language root with their folder name representing the ISO-2 language code of the language. For example, German would have the following path.
 
 ```text
 /content/dam/<your-project>/de
@@ -135,9 +133,9 @@ De vertalingen zouden als sibling omslagen naast de taalwortel met hun omslagnaa
 
 >[!NOTE]
 >
->Over het algemeen is de inhoudsarchitect verantwoordelijk voor het maken van deze taalmappen. Als ze niet worden gecreëerd, kunnen AEM later geen vertaalbanen creëren.
+>The content architect generally is responsible for creating these language folders. If they are not created, AEM will not be able to later create translation jobs.
 
-De uiteindelijke structuur kan er ongeveer als volgt uitzien.
+The final structure may look something like the following.
 
 ```text
 /content
@@ -156,39 +154,39 @@ De uiteindelijke structuur kan er ongeveer als volgt uitzien.
         |- ...
 ```
 
-Let op het specifieke pad van uw inhoud, want dit zal later nodig zijn om uw vertaling te configureren.
+You should take note of the specific path of your content as it will be required later to configure your translation.
 
 >[!NOTE]
 >
->Het is doorgaans de verantwoordelijkheid van de inhoudarchitect om de inhoudstructuur te definiëren, maar kan samenwerken met de vertaalspecialist.
+>It is generally the responsibility of the content architect to define the content structure, but can collaborate with the translation specialist.
 >
->Het wordt hier nader toegelicht om de volledigheid.
+>It is detailed here for completeness.
 
-## AEM {#translation-tools}
+## AEM Translation Tools {#translation-tools}
 
-Nu u begrijpt wat Content Fragments zijn en hoe belangrijk de inhoudsstructuur is, kunnen we bekijken hoe we deze inhoud kunnen vertalen. De vertaalhulpmiddelen in AEM zijn vrij krachtig, maar eenvoudig te begrijpen op hoog niveau.
+Now that you understand what Content Fragments are and the importance of content structure, we can look at how to translate this content. The translation tools in AEM are quite powerful, but are simple to understand at a high level.
 
-* **Vertaalaansluiting**  - De aansluiting is de koppeling tussen AEM en de vertaalservice die u gebruikt.
-* **Vertaalregels**  - Regels bepalen welke inhoud onder bepaalde paden moet worden vertaald.
-* **Vertaalprojecten**  - Vertaalprojecten verzamelen inhoud die als één enkele vertaalinspanning zou moeten worden gericht en volgen de vooruitgang van de vertaling, die met de schakelaar in aanraking komt om de te vertalen inhoud over te brengen en het terug van de vertaaldienst te ontvangen.
+* ****
+* ****
+* ****
 
-U plaatst over het algemeen slechts eens opstelling uw schakelaar voor uw instantie en regels per headless project. Vervolgens gebruikt u vertaalprojecten om uw inhoud te vertalen en de vertalingen voortdurend bij te werken.
+You generally only set up your connector once for your instance and rules per headless project. Then you use translation projects to translate your content and keep its translations up to date on a continual basis.
 
-## Volgende functies {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
+Now that you have completed this part of the headless translation journey you should:
 
-* Begrijp het belang van inhoudsstructuur voor vertaling.
-* Begrijp hoe AEM inhoud zonder kop opslaat.
-* Wees vertrouwd met AEM vertaalhulpmiddelen.
+* Understand the importance of content structure to translation.
+* Understand how AEM stores headless content.
+* Be familiar with AEM&#39;s translation tools.
 
-Bouw op deze kennis voort en zet uw AEM reis zonder hoofd door het document [Configureer de vertaalconnector](configure-connector.md) opnieuw te bekijken, waar u leert hoe u AEM met een vertaalservice kunt verbinden.|
+[](configure-connector.md)
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl wordt geadviseerd dat u op het volgende deel van de hoofdloze vertaalreis door het document [te herzien de vertaalschakelaar ](configure-connector.md) vormt zijn het volgende enkele extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de headless reis verder te gaan.
+[](configure-connector.md)
 
-* [AEM Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - Leer de grondbeginselen van de AEM UI om comfortabel te kunnen navigeren en essentiële taken uit te voeren zoals het vinden van uw inhoud.
-* [Inhoud identificeren voor vertaling](/help/sites-cloud/administering/translation/rules.md)  - Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.
-* [Het Vormen van het Kader](/help/sites-cloud/administering/translation/integration-framework.md)  van de Integratie van de Vertaling - leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertaling te integreren.
-* [Vertaalprojecten](/help/sites-cloud/administering/translation/managing-projects.md)  beheren - Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM kunt maken en beheren.
+* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+* [](/help/sites-cloud/administering/translation/rules.md)
+* [](/help/sites-cloud/administering/translation/integration-framework.md)
+* [](/help/sites-cloud/administering/translation/managing-projects.md)

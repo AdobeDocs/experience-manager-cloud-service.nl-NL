@@ -1,49 +1,46 @@
 ---
-title: Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten
-description: Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn about defining Metadata and Tagging for Content Fragments
+description: Learn about defining Metadata and Tagging for Content Fragments
+exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 2%
 
 ---
 
+# Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
 
-# Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten {#author-headless-metadata-tagging}
+## The Story so Far {#story-so-far}
 
-## Het artikel tot nu toe {#story-so-far}
+[](overview.md)[](introduction.md)
 
-Aan het begin van de [AEM Headless Content Author Reis](overview.md) behandelde [Introduction](introduction.md) de basisconcepten en -terminologie die relevant zijn voor ontwerpen voor koploze inhoud.
+In the previous step you were introduced to the use of references for Headless CMS Authoring. You learned what sorts of references are available, and what are their purposes: Content References, Asset/Media References, and Fragment References.
 
-In de vorige stap werd u geïntroduceerd in het gebruik van verwijzingen voor CMS-ontwerpen zonder koptekst. U hebt geleerd welke soorten verwijzingen beschikbaar zijn en wat hun doeleinden zijn: Content Reference, Asset/Media Reference, and Fragment References.
+This article builds on these so you understand how to use metadata and tagging to author your own content for your AEM headless project.
 
-Dit artikel bouwt hierop verder zodat u begrijpt hoe u meta-gegevens en het etiketteren aan auteur uw eigen inhoud voor uw project zonder AEM kunt gebruiken.
+## Objective {#objective}
 
-## Doelstelling {#objective}
+* ****
+* ****
 
-* **Publiek**: Geavanceerd
-* **Doel**: Introduceer het gebruik van metagegevens en codering voor CMS-ontwerpen zonder koppen.
+## Adding Metadata and Tags {#adding-metadata-and-tags}
 
-## Metagegevens en tags toevoegen {#adding-metadata-and-tags}
+There are three methods that you can use to add metadata and tags:
 
-U kunt drie methoden gebruiken om metagegevens en tags toe te voegen:
+* When first creating your fragment:
 
-* Bij het maken van het fragment:
+   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-   ![Inhoudsfragment maken - naam opgeven](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+* ********
 
-* Met het tabblad **Metagegevens** van de editor voor inhoudsfragmenten kunt u zowel verschillende metagegevensvelden als vooraf gedefinieerde **Codes** vanuit uw project toevoegen:
+   ![](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   ![Inhoudsfragmenteditor - Metagegevens](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+   * ****
 
-   * Dit is ook direct toegankelijk gebruikend **Eigenschappen** optie in de toolbar van de console van Activa.
+## What&#39;s Next {#whats-next}
 
-## Volgende functies {#whats-next}
-
-Nu kunt u al deze kennis aan gebruik zetten en beginnen creërend de Fragments van de Inhoud voor uw project.
+Now you can put all this knowledge to use and start creating Content Fragments for your project.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -51,4 +48,4 @@ Nu kunt u al deze kennis aan gebruik zetten en beginnen creërend de Fragments v
 
 * [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

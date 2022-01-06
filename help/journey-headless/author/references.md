@@ -1,115 +1,112 @@
 ---
-title: Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten
-description: Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud, voor inhoud, andere fragmenten en andere activa (media). Introduceer de noodzaak voor en de mechaniek van geneste fragmenten voor CMS-creatie zonder koppen.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn about using references in Content Fragments
+description: Learn about using references in Content Fragments, for content, other fragments and other assets (media). Introduce the necessity for, and the mechanics of, nested fragments for Headless CMS Authoring.
+exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 1%
 
 ---
 
+# Learn about using references in Content Fragments {#author-headless-references}
 
-# Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten {#author-headless-references}
+## The Story so Far {#story-so-far}
 
-## Het artikel tot nu toe {#story-so-far}
+[](overview.md)[](introduction.md)
 
-Aan het begin van de [AEM Headless Content Author Reis](overview.md) behandelde [Introduction](introduction.md) de basisconcepten en -terminologie die relevant zijn voor ontwerpen voor koploze inhoud.
+You have learned the basics of Headless CMS Authoring, with an introduction to authoring with AEMaaCS and in particular, authoring Content Fragments.
 
-U hebt de grondbeginselen van de Authoring van CMS zonder hoofd geleerd, met een inleiding tot het ontwerpen met AEMaaCS en in het bijzonder, het ontwerpen van Inhoudsfragmenten.
+This article builds on these so you understand how to use references to author your own content for your AEM headless project.
 
-Dit artikel bouwt op deze voort zodat begrijpt u hoe te om verwijzingen te gebruiken naar auteur uw eigen inhoud voor uw project zonder AEM.
+## Objective {#objective}
 
-## Doelstelling {#objective}
-
-* **Publiek**: Geavanceerd
-* **Doel**: Introduceer het gebruik van verwijzingen voor het Creëren van CMS zonder hoofd. Welke soorten verwijzingen beschikbaar zijn, en wat zijn hun doeleinden:
+* ****
+* **** What sorts of references are available, and what are their purposes:
 
    * Content References
-   * Verwijzingen naar element/media
-   * Fragmentverwijzingen
-   * Ad-hocverwijzingen vanuit een tekstblok
+   * Asset/Media References
+   * Fragment References
+   * Ad hoc references from within a text block
 
-## Wat zijn referenties? {#what-are-references}
+## What are references {#what-are-references}
 
-Verwijzingen zijn gewoon een mechanisme om uw bronnen aan te sluiten, of het nu andere inhoud, elementen (zoals afbeeldingen) of andere fragmenten betreft. Er zijn enkele verschillen, ook al zijn deze zeer vergelijkbaar.
+References are simply a mechanism for connecting your resources, be it other content, assets (as in images), or other fragments. Although very similar, there are some differences.
 
-Sommige verwijzingen hebben specifieke gegevenstypen (bijvoorbeeld Content References en Fragmentverwijzingen), terwijl andere eenvoudig worden toegevoegd als een verwijzing binnen een tekstblok (elementverwijzingen en ad-hocverwijzingen).
+Some references have dedicated data-types (for example, Content References and Fragment References), whereas others are simply added as a reference within a text block (asset references and ad hoc references).
 
-![Inhoudsfragmenten - verwijzingen](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
 ## Content References {#content-references}
 
-Content Reference do just that - they allow you to reference any other content. Hiermee wordt een browser geopend waarin u het inhoudsitem kunt selecteren.
+Content References do just that - they allow you to reference any other content. This will open a browser that allows you to select the content item.
 
-## Verwijzingen naar element/media {#assets-media-references}
+## Asset/Media References {#assets-media-references}
 
-Elementen (bijvoorbeeld afbeeldingen of media) kunnen in een tekstblok worden genoemd met de optie **Element invoegen**. Hiermee wordt een browser geopend waarin u het element kunt selecteren.
+**** This will open a browser that allows you to select the asset.
 
-![Inhoudsfragmenten - Element invoegen](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
+![](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
-## Fragmentverwijzingen {#fragment-references}
+## Fragment References {#fragment-references}
 
-Ook hier geldt dat fragmentverwijzingen alleen maar kunnen verwijzen naar een ander fragment. Waarom dit belangrijk is, moet er wat meer uitleg komen.
+Again Fragment References do just that - they allow you to reference another fragment. Why this is significant needs a bit more explanation.
 
-U kunt bijvoorbeeld de volgende modellen van inhoudsfragmenten definiëren:
+For example, you might have the following Content Fragment Models defined:
 
-* Plaats
-* Bedrijf
+* City
+* Company
 * Person
 * Awards
 
-Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers....en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
+Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
-En een persoon kan een Prijs (of misschien twee) hebben.
+And a Person can have an Award (or maybe two).
 
-* Mijn bedrijf - Bedrijf
-   * CEO - Persoon
-   * Werknemer(s) - Persoon
-      * Persoonlijke onderscheiding(en) - Uitreiking
+* My Company - Company
+   * CEO - Person
+   * Employee(s) - Person
+      * Personal Award(s) - Award
 
-Dat is alleen maar voor starters. Afhankelijk van de complexiteit kan een prijs bedrijfsspecifiek zijn of kan een bedrijf zijn hoofdkantoor in een bepaalde stad hebben.
+And that&#39;s just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
 
-U kunt deze relaties vertegenwoordigen met fragmentverwijzingen, omdat deze worden begrepen door zowel u (de auteur) als de toepassingen zonder kop.
+Representing these interrelationships can be achieved with Fragment References, as they are understood by both you (the author) and the headless applications.
 
-Als auteur bent u niet verantwoordelijk voor het definiëren van deze relaties (dat wordt gedaan door de Content Architect bij het maken van het Content Fragment Model), maar u moet weten hoe u de verwijzingen herkent en bewerkt.
+As an author you&#39;re not responsible for defining these relationships (that&#39;s done by the Content Architect when creating the Content Fragment Model), but you need to know how to recognize and edit the references.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
 -->
 
-### Geneste fragmenten ontwerpen {#author-nested-fragment}
+### How to author nested fragments {#author-nested-fragment}
 
-Verwijzingen naar ontwerpfragment zijn vrij eenvoudig (hoewel het veld gewoonlijk niet wordt gelabeld als **Fragmentverwijzing**). U kunt de verwijzing rechtstreeks invoeren of (waarschijnlijker) het mappictogram selecteren om een browser te openen waarin u door het gewenste fragment kunt navigeren en het gewenste fragment kunt selecteren.
+**** You can either type in the reference directly, or (more likely) select the folder icon to open a browser that allows you to navigate and select the fragment you need.
 
-![Inhoudsfragmenten - verwijzingen](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
+![](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
-De definitie van de besturingselementen van het inhoudsfragmentmodel:
+The definition of the Content Fragment Model controls:
 
-* of u meerdere referenties kunt selecteren om toe te voegen
-* de modeltypen inhoudsfragmenten die u kunt selecteren; In het Content Fragment Model worden de fragmentmodellen gedefinieerd die zijn toegestaan voor de referentie, zodat AEM alleen fragmenten presenteert die op die modellen zijn gebaseerd.
+* whether you can select to add multiple references
+* the model types of Content Fragments that you can select; the Content Fragment Model defines the fragment models allowed for the reference, so AEM only presents fragments based on those models.
 
-### Door geneste fragmenten navigeren {#navigate-nested-fragment}
+### How to navigate nested fragments {#navigate-nested-fragment}
 
-Met het tabblad **Structuurstructuur** van de Inhoudsfragmenteditor kunt u door de fragmenten navigeren waarnaar wordt verwezen door het fragment en vervolgens door alle verwijzingen die het fragment bevat. Als u een verwijzing selecteert, wordt dat fragment geopend voor bewerking.
+**** Selecting a reference opens that fragment for editing.
 
 >[!NOTE]
 >
->Met de broodkruimels in het hoofddeelvenster kunt u terugnavigeren naar het beginpunt.
+>Using the breadcrumbs in the main panel you can navigate back to your starting point.
 
-![Structuuromvang van inhoudsfragment](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
 
-## Ad-hocverwijzingen {#adhoc-references}
+## Ad Hoc References {#adhoc-references}
 
-Ad-hocverwijzingen kunnen worden toegevoegd als een eenvoudige koppeling binnen een tekstblok:
+Ad hoc references can be added as a simple link within a block of text:
 
-![Inhoudsfragmenten - Eenvoudige verwijzingen](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
+![](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
-## Volgende functies {#whats-next}
+## What&#39;s Next {#whats-next}
 
-Nu u over verwijzingen en structuur in Inhoudsfragmenten hebt geleerd, is de volgende stap [Meer informatie over Metagegevens en Tags](metadata-tagging.md). Zo leert en bespreekt u hoe u metagegevens en tags voor de inhoudsfragmenten kunt definiëren.
+[](metadata-tagging.md) This will introduce and discuss how you can define metadata and tags for your Content Fragments.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -117,21 +114,21 @@ Nu u over verwijzingen en structuur in Inhoudsfragmenten hebt geleerd, is de vol
 
    * [Contentfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [De configuratie toepassen op de middelenmap](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Apply the Configuration to your Assets Folder](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Een inhoudsfragment maken](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Variaties - Inhoudsfragmenten ontwerpen](/help/assets/content-fragments/content-fragments-variations.md)
+      * [Creating a Content Fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 
       * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modellen van inhoudsfragmenten - eigenschappen](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 
-* Aan de slag - hulplijnen
-   * [Snelstartgids voor mappen zonder middelenkoppen maken](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+* Getting Started Guides
+   * [Creating an Assets Folder Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
 
-* Reis van architect zonder hoofdinhoud AEM
+* AEM Headless Content Architect Journey
 
-* AEM doorlopende vertaalreis
+* AEM Headless Translation Journey

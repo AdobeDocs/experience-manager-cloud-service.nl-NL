@@ -1,74 +1,71 @@
 ---
-title: Reis van architect zonder hoofdinhoud AEM
-description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
-index: true
-hide: false
-hidefromtoc: false
+title: AEM Headless Content Architect Journey
+description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
 
 ---
 
-# Reis van architect zonder hoofdinhoud AEM {#aem-headless-content-architect-journey}
+# AEM Headless Content Architect Journey {#aem-headless-content-architect-journey}
 
-Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste headless project te gebruiken.
+Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first headless project.
 
 ## Inleiding {#introduction}
 
-Implementatie zonder hoofd wordt steeds belangrijker om uw publiek ervaringen te bieden, waar ze zich ook bevinden en ongeacht het kanaal.
+Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel.
 
-Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals gebruikelijk is in oplossingen voor volledige stapels. De implementatie is gericht op het maken van kanaalneutrale, herbruikbare fragmenten van inhoud en de levering ervan via meerdere kanalen. Het is een modern en dynamisch ontwikkelingspatroon voor de implementatie van digitale ervaringen.
+Headless implementation forgoes page and component management as is traditional in full stack solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is a modern and dynamic development pattern for implementing digital experiences.
 
-Deze gids leidt u door de belangrijkste onderwerpen zodat na voltooiing u:
+This guide leads you through the most important topics so that on completion you:
 
-* Begrijp wat de inhoud zonder kop levert en zijn voordelen.
-* Begrijp hoe u uw inhoud kunt modelleren voor AEM functies zonder kop.
-* Heb de capaciteit om de eerste stappen te nemen die uw inhoud voor uw eerste AEM zonder hoofd modelleren project.
+* Understand what headless content delivery is and its benefits.
+* Understand how to model your content for AEM&#39;s headless features.
+* Have the ability to take the first steps modeling your content for your first AEM headless project.
 
-## AEM Documentenreizen {#documentation-journeys}
+## AEM Documentation Journeys {#documentation-journeys}
 
-[Een documentatiereis](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
+[](/help/journey-documentation/documentation-journeys.md)
 
-Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
+Documentation Journeys are designed around best practices principles, informed by Adobe&#39;s latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
 
-Als u wilt weten hoe Adobe adviseert hoe te om hoofdloze zaken met AEM op te lossen, [Reizen zonder kop AEM](/help/journey-documentation/documentation-journeys.md) zijn waar te beginnen.
+[](/help/journey-documentation/documentation-journeys.md)
 
-## Publiek {#audience}
+## Audience {#audience}
 
-Deze reis is ontworpen voor de persona van de Content Architect. Als Content Architect definieert u de structuur van de inhoud. Deze definities worden vervolgens gebruikt door de makers van inhoud wanneer deze de werkelijke inhoud maken.
+This journey is designed for the Content Architect persona. As a Content Architect you will be defining the structure of the content. These definitions will then be used by the Content Authors, when they create the actual content.
 
-De reis bepaalt de vereisten, de stappen, en de benadering van een AEM Zwaardeloos project vanuit het perspectief van een Architect van de Inhoud. De reis zal extra persona&#39;s bepalen waarmee de inhoudarchitect voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is dat van de inhoudarchitect.
+The journey lays out the requirements, steps, and approach of an AEM Headless project from the perspective of a Content Architect. The journey will define additional personas with which the content architect must interact for a successful project, but the point-of-view for the journey is that of the content architect.
 
-Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar sommige informatie zal overbodig zijn voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
+Information in this journey can of course be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
 
-## De tocht van de Architect zonder inhoud {#the-journey}
+## The Headless Content Architect Journey {#the-journey}
 
-U zult vele onderwerpen in deze reis onderzoeken. In de volgende artikelen wordt u op basis van uw kennis van de kop in AEM en een link naar gedetailleerde technische documentatie weergegeven.
+You will explore many topics in this journey. The following articles give you foundational knowledge of headless in AEM and link out to detailed technical documentation.
 
-Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom adviseren wij als u in AEM nieuw bent om zonder kop te beginnen, dat u aan het begin begint en opeenvolgend vordert.
+Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless in AEM, we recommend that you start at the beginning and progress sequentially.
 
-| Aantal | Artikel | Beschrijving |
+| # | Article | Beschrijving |
 |---|---|---|
-| 0 | Reis van architect zonder hoofdinhoud AEM | Dit document |
-| 1 | [Modellering voor headless met AEM - Een inleiding](introduction.md) | Meer informatie over Headless Technology en wat het betekent voor modellering. |
-| 2 | [Basisbeginselen van modellen leren gebruiken](basics.md) | Leer de grondbeginselen van modellering met AEM |
-| 3 | [Hoe te om modelstructuren te bouwen](model-structure.md) | Leer hoe u structuren kunt modelleren met meerdere lagen voor zonder kop |
+| 0 | AEM Headless Content Architect Journey | This document |
+| 1 | [](introduction.md) | Learn about Headless Technology and what it means for modeling. |
+| 2 | [](basics.md) | Learn the basics of modeling with AEM |
+| 3 | [](model-structure.md) | Learn how to model structures with multiple layers for headless |
 
-## Volgende functies {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-U bent nu klaar om aan de slag te gaan op uw Adobe Headless reis. We raden u aan door te gaan naar het volgende deel van de reis en het artikel te lezen [Content Modeling for Headless with AEM - Een introductie](introduction.md).
+You are now ready to get started on your Adobe Headless journey. [](introduction.md)
 
 ## Aanvullende bronnen {#additional-resources}
 
-Documentatiereizen tonen u hoe AEM een bedrijfsprobleem oplost door een verhaal te verstrekken dat u door complexe, onderling samenhangende processen en eigenschappen begeleidt. Een reis illustreert hoe de veelvoudige eigenschappen samenwerken om één enkele bedrijfsbehoefte te dienen.
+Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
 
-Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Een aantal ervan kan echter met elkaar verwant zijn. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
+As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM&#39;s powerful features work together.
 
-* [AEM doorlopende vertaalreis](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
-* [Papierreis zonder koppen](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
-* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
-* [as a Cloud Service technische documentatie AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - Als u al een duidelijk inzicht hebt in AEM en technologieën zonder kop, kunt u onze diepgaande technische documenten direct raadplegen.
-* [Zelfstudies zonder koppen AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Als u liever wilt leren door te doen en technisch georiënteerd bent, neemt u onze praktische zelfstudies die zijn georganiseerd door API en framework, die het maken en gebruiken van toepassingen die zijn gebaseerd op AEM Headless onderzoeken.
+* [](/help/journey-headless/translation/overview.md)
+* [](/help/journey-headless/author/overview.md)
+* [](/help/journey-headless/developer/overview.md)
+* [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+* [](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

@@ -1,82 +1,80 @@
 ---
-title: Meer informatie over inhoud zonder kop en hoe u deze vertaalt in AEM
-description: Ontdek headless-concepten, hoe ze in kaart worden gebracht aan AEM, en de theorie van AEM vertaling.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn about headless content and how to translate it in AEM
+description: Learn headless concepts, how they map to AEM, and the theory of AEM translation.
+exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
 
 ---
 
-# Meer informatie over inhoud zonder kop en hoe u deze vertaalt in AEM {#learn-about}
+# Learn about headless content and how to translate it in AEM {#learn-about}
 
-Ontdek headless-concepten, hoe ze in kaart worden gebracht aan AEM, en de theorie van AEM vertaling.
+Learn headless concepts, how they map to AEM, and the theory of AEM translation.
 
-## Doelstelling {#objective}
+## Objective {#objective}
 
-Met dit document krijgt u een beter inzicht in de levering van inhoud zonder kop, hoe AEM koploze inhoud ondersteunt en hoe dergelijke inhoud kan worden vertaald. Na het lezen moet u:
+This document helps you understand headless content delivery, how AEM supports headless, and how such content can be translated. After reading you should:
 
-* Begrijp de basisconcepten van inhoud zonder kop levering.
-* Wees vertrouwd met de manier waarop AEM ondersteuning biedt voor headless en translatie.
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
-## Volledige levering van inhoud {#full-stack}
+## Full-Stack Content Delivery {#full-stack}
 
-Sinds de opkomst van gebruiksvriendelijke, grootschalige contentbeheersystemen (CMS&#39;s) hebben organisaties deze als centrale locatie gebruikt voor het beheer van berichten, branding en communicatie. Het gebruik van het CMS als centraal punt voor het beheer van ervaringen heeft de efficiëntie verbeterd doordat taken in verschillende systemen niet hoeven te worden gedupliceerd.
+Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have leveraged them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
 
-![De klassieke full-stack CMS](/help/journey-headless/developer/assets/full-stack.png)
+![](/help/journey-headless/developer/assets/full-stack.png)
 
-In een volledig-stapel CMS, is alle functionaliteit voor het manipuleren van inhoud in CMS. De functies van het systeem bestaan uit verschillende onderdelen van de CMS-stapel. De full-stack oplossing heeft veel voordelen.
+In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
 
-* Er is één systeem om te onderhouden.
-* Inhoud wordt centraal beheerd.
-* Alle diensten van het systeem zijn geïntegreerd.
-* Inhoud schrijven is naadloos.
+* There is one system to maintain.
+* Content is managed centrally.
+* All services of the system are integrated.
+* Content authoring is seamless.
 
-Als dus een nieuw kanaal moet worden toegevoegd of ondersteuning voor nieuwe soorten ervaringen is vereist, kunnen een (of meer) nieuwe componenten in de stapel worden ingevoegd en is er slechts één plaats om wijzigingen aan te brengen.
+So if new channel must be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
 
-![Een nieuw kanaal toevoegen aan de stapel](/help/journey-headless/developer/assets/adding-channel.png)
+![](/help/journey-headless/developer/assets/adding-channel.png)
 
-Nochtans wordt de ingewikkeldheid van de gebiedsdelen binnen de stapel snel duidelijk aangezien andere punten in de stapel moeten worden aangepast om de veranderingen aan te passen.
+However the complexity of the dependencies within the stack quickly becomes apparent as other items in the stack need to be adjusted to accommodate the changes.
 
-## De kop in de kop {#the-head}
+## The Head in Headless {#the-head}
 
-Het hoofd van een systeem is doorgaans de uitvoerrenderer van dat systeem, meestal in de vorm van een grafische interface of andere grafische uitvoer.
+The head of any system is generally the output renderer of that system, typically in the form of a GUI or other graphical output.
 
-Als we het hebben over een CMS zonder kop, beheert het CMS de inhoud en blijft het leveren aan consumenten. Door de **content** echter alleen op gestandaardiseerde wijze te leveren, laat een CMS zonder kop de uiteindelijke uitvoerrendering weg en laat de **presentatie** van de inhoud over aan de verbruikende service.
+When we talk about a headless CMS, the CMS manages the content and continues to deliver it to consumers. ********
 
-![CMS zonder hoofd](/help/journey-headless/developer/assets/headless-cms.png)
+![](/help/journey-headless/developer/assets/headless-cms.png)
 
-De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaringen, progressieve webapps (PWA), enz., nemen inhoud van het CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
+The consuming services, be they AR experiences, a web shop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
 
-Het weglaten van het hoofd vereenvoudigt CMS door ingewikkeldheid te verwijderen. Hierdoor wordt ook de verantwoordelijkheid voor het renderen van de inhoud verplaatst naar de diensten die de inhoud echt nodig hebben en die vaak beter geschikt zijn voor dergelijke rendering.
+Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
-## Koploze inhoud omzetten in AEM {#translating-in-aem}
+## Translating Headless Content in AEM {#translating-in-aem}
 
-Naast robuuste tools voor het maken, beheren en leveren van traditionele webpagina&#39;s op een volledig stapelbare manier, biedt AEM ook de mogelijkheid om op zichzelf staande selecties van inhoud te maken en deze zonder problemen te bedienen.
+In addition to offering robust tools to create, manage, and deliver traditional webpages in the full-stack fashion, AEM also offers the ability to author self-contained selections of content and serve them headlessly.
 
-Dankzij de kracht van AEM kan de inhoud zonder kop, volledig of in beide modellen tegelijk worden geleverd. Voor de vertaalspecialist, kan de zelfde reeks vertaalhulpmiddelen op beide soorten inhoud worden toegepast, die u een verenigde benadering geven voor het vertalen van uw inhoud.
+The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the translation specialist, the same set of translation tools can be applied to both types of content, giving you a unified approach for translating your content.
 
-Op reis leert u verder hoe AEM inhoud vertaalt, maar op een hoog niveau is het concept eenvoudig:
+Further in the journey you will learn the details about how AEM translates content, but at a high level, the concept is simple:
 
-1. Definieer een verbinding met een vertaalservice door het framework voor vertaalintegratie te configureren.
-1. Bepaal welke inhoud met behulp van vertaalregels moet worden vertaald.
-1. Maak een vertaalproject om de inhoud te oogsten, stuur het naar de vertaalservice en ontvang de resultaten.
-1. U kunt de vertaalde inhoud controleren en publiceren.
+1. Define a connection to a translation service by configuring the translation integration framework.
+1. Define which content should be translated using translation rules.
+1. Create a translation project to harvest the content, send it to the translation service, and receive the results.
+1. Review and publish the translated content.
 
-## Volgende functies {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-Bedankt dat u aan de slag bent gegaan met uw AEM reis zonder hoofd! Nu u dit document leest, moet u:
+Thanks for getting started on your AEM headless translation journey! Now that you read this document you should:
 
-* Begrijp de basisconcepten van inhoud zonder kop levering.
-* Wees vertrouwd met de manier waarop AEM ondersteuning biedt voor headless en translatie.
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
-Voortbouwen op deze kennis en doorgaan met uw AEM doorlopende vertaalreis door het document [Aan de slag te gaan met AEM koploze vertaling](getting-started.md), waar u een overzicht hebt van hoe AEM inhoud zonder kop beheert en de vertaalhulpmiddelen van het document kent.
+[](getting-started.md)
 
 ## Aanvullende bronnen {#additional-resources}
 
-Hoewel u wordt aangeraden naar het volgende gedeelte van de hoofdloze vertaalreis te gaan door het document [Aan de slag te gaan met AEM koploze vertaling,](getting-started.md) zijn de volgende aanvullende, optionele bronnen die een diepere duw doen op sommige in dit document vermelde concepten, maar ze zijn niet verplicht om door te gaan op de headless reis.
+[](getting-started.md)
 
-* [MSM en vertaling](/help/sites-cloud/administering/msm-and-translation.md) : de details van AEM beheer voor meerdere sites en hoe het werkt met de vertaalhulpmiddelen
+* [](/help/sites-cloud/administering/msm-and-translation.md)

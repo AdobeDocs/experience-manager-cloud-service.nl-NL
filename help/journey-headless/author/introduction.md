@@ -1,87 +1,84 @@
 ---
-title: AEM Schrijverreis zonder kopinhoud
-description: Een inleiding tot de krachtige, en flexibele, eindeloze eigenschappen van Adobe Experience Manager als Cloud Service, en hoe te om inhoud voor uw project te ontwerpen.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: AEM Headless Content Author Journey
+description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to author content for your project.
+exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%
 
 ---
 
+# Authoring for Headless with AEM - An Introduction {#author-headless-introduction}
 
-# Ontwerpen voor headless met AEM - Een inleiding {#author-headless-introduction}
+[](overview.md)
 
-In dit deel van [AEM Headless Content Author Reis](overview.md), kunt u de (basis) concepten en de terminologie noodzakelijk leren om auteursinhoud voor hoofdloze inhoudlevering met Adobe Experience Manager (AEM) als Cloud Service te begrijpen.
+## Objective {#objective}
 
-## Doelstelling {#objective}
+* ****
+* ****
 
-* **Publiek**: Begin
-* **Doel**: Introduceer de concepten en de terminologie relevant voor Headless Authoring.
+## Content Management System (CMS) {#content-management-system}
 
-## Inhoudsbeheersysteem (CMS) {#content-management-system}
+What is a Content Management System?
 
-Wat is een inhoudsbeheersysteem?
+A Content Management System (CMS) is just what it says it is - a computer system used to manage content. That&#39;s a bit general, so to be more precise, it is (typically) used for managing content that you want to make available on your website(s).
 
-Een inhoudsbeheersysteem (CMS) is precies wat het zegt: een computersysteem dat wordt gebruikt om inhoud te beheren. Dat is een beetje algemeen, dus om preciezer te zijn, wordt het (typisch) gebruikt voor het beheren van inhoud die u op uw website(s) ter beschikking wilt stellen.
+## Headless CMS {#headless-cms}
 
-## CMS zonder hoofd {#headless-cms}
+Headless is a term used to describe systems that effectively detaches the content from the manner of displaying that content on the web.
 
-Headless is een term die wordt gebruikt om systemen te beschrijven die de inhoud effectief losmaken van de manier waarop die inhoud op het web wordt weergegeven.
+Traditionally you would manage your content in a CMS, and the same CMS would be responsible for rendering that content on your webpages.
 
-Doorgaans beheert u de inhoud in een CMS en dezelfde CMS is verantwoordelijk voor het weergeven van die inhoud op uw webpagina&#39;s.
+Now, headless means that your content-set can be managed in the CMS and then accessed by one, or more, (independent) applications.
 
-Nu betekent headless dat uw inhoudset kan worden beheerd in het CMS en vervolgens kan worden geopend door een of meer (onafhankelijke) toepassingen.
-
-Dit betekent dat uw inhoud op elk apparaat in een groot aantal indelingen kan worden geleverd. Hierdoor wordt het hele proces veel flexibeler en hoeft u zich geen zorgen te maken over de indeling en opmaak.
+This means that your content can be delivered to any device, in a wide range of formats. This makes the whole process much more flexible, and also means that you do not need to worry about layout and formatting.
 
 >[!NOTE]
 >
->Als u meer wilt weten over de technische details van Headless CMS, kunt u meer lezen op Learn About CMS Headless Development.
+>If you want to learn more about the technical details of Headless CMS you can read more at Learn About CMS Headless Development.
 
 ## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
 
-Wat is AEM?
+So what is AEM?
 
-In de eerste plaats is AEM een contentbeheersysteem met een groot aantal functies die ook aan uw vereisten kunnen worden aangepast.
+First and foremost, AEM is a Content Management System with a wide range of features that can also be customized to meet your requirements.
 
-Dit alles betekent dat het kan worden gebruikt als:
+This all means that it can be used as a:
 
-* CMS zonder hoofd
-   * Voor koploze inhoud kan de inhoud worden geschreven als **Inhoudsfragmenten**.
-Dit zijn zelfstandige inhoudselementen die rechtstreeks door een waaier van toepassingen kunnen worden betreden, aangezien zij een vooraf bepaalde structuur hebben, die op **Modellen van het Fragment van de Inhoud** wordt gebaseerd.
-Dit betekent dat uw inhoud een groot aantal apparaten kan bereiken, in een groot aantal indelingen en met een grote verscheidenheid aan functies.
-(Deze fragmenten kunnen desgewenst ook worden gebruikt bij het samenstellen van AEM webpagina&#39;s.)
+* Headless CMS
+   * ****
+****
+This means your content can reach a wide range of devices, in a wide range of formats and with a wide selection of functionality.
+(And as a double-whammy, these fragments can also be used when constructing AEM web pages - if you want.)
 
-* &quot;Traditioneel&quot; CMS
-   * Inhoud is ontworpen voor webpagina&#39;s en gebruikt een reeks componenten die bepalen hoe de inhoud op uw website wordt weergegeven. Zelfs hier is AEM uiterst flexibel aangezien uw projectteam aangepaste componenten kan ontwikkelen.
+* &quot;Traditional&quot; CMS
+   * Content is authored for web pages, using a range of components that define how the content will be rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
 
-## Inhoud modelleren {#content-modeling}
+## Content Modeling {#content-modeling}
 
-Dus contentmodellering (ook wel data modellering genoemd) is een andere technische term - waarom zou het jou als auteur interesseren?
+So content modeling (also known as data modeling) is another technical term - why should it interest you as an author?
 
-Om ervoor te zorgen dat toepassingen zonder koppen toegang hebben tot uw inhoud en er iets mee kunnen doen, moet uw inhoud echt een vooraf gedefinieerde structuur hebben. Het zou mogelijk zijn om uw inhoud als vrij-vorm te hebben, maar het zou leven *zeer* voor de toepassingen gecompliceerd maken.
+For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. **
 
-Het proces om de structuur voor uw inhoud te bepalen om aan te houden impliceert het ontwerpen van een model - en dit wordt genoemd gegevensmodellering.
+Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling.
 
-Voor AEM de rol van de Architect van de Inhoud (vaak een verschillende persoon) zal de gegevensmodellering uitvoeren om een waaier van **Modellen van het Fragment van de Inhoud te ontwerpen** - die u dan als basis voor uw inhoud door **Inhoudsfragmenten** te gebruiken.
+********
 
 >[!NOTE]
 >
->Als u meer wilt weten over gegevensmodellering, kunt u meer lezen onder de AEM Headless Content Architect Journey.
+>If you want to learn more about data modeling you can read more under the AEM Headless Content Architect Journey.
 
-## Volgende functies {#whats-next}
+## What&#39;s Next {#whats-next}
 
-Nu u de concepten en de terminologie hebt geleerd, is de volgende stap [Leer de grondbeginselen van het schrijven van de Fragments van de Inhoud](basics.md). Dit zal de basisbehandeling van AEM samen met hoe te om de Fragments van de Inhoud introduceren.
+[](basics.md) This will introduce the basic handling of AEM together with how to author Content Fragments.
 
 ## Aanvullende bronnen {#additional-resources}
 
 * AEM Headless Developer Journey
-   * [Meer informatie over CMS Headless Development](/help/journey-headless/developer/learn-about.md)
-   * [Leer hoe u uw inhoud kunt modelleren](/help/journey-headless/developer/model-your-content.md)
+   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
+   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
 
-* Reis van architect zonder hoofdinhoud AEM
+* AEM Headless Content Architect Journey
 
-* Reis voor omzetting van inhoud zonder kop AEM
+* AEM Headless Content Translation Journey

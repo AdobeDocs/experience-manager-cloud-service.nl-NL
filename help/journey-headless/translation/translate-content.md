@@ -1,253 +1,251 @@
 ---
-title: Inhoud vertalen
-description: Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Translate Content
+description: Use the translation connector and rules to translate your headless content.
+exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '2174'
 ht-degree: 0%
 
 ---
 
-# Inhoud vertalen {#translate-content}
+# Translate Content {#translate-content}
 
-Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen.
+Use the translation connector and rules to translate your headless content.
 
-## Het verhaal tot nu toe {#story-so-far}
+## The Story So Far {#story-so-far}
 
-In het vorige document van de AEM hoofdloze vertaalreis, [Vorm Vertaal Regels](translation-rules.md) u leerde hoe te om AEM vertaalregels te gebruiken om uw vertaalinhoud te identificeren. Nu moet u:
+[](translation-rules.md) You should now:
 
-* Begrijp wat de vertaalregels doen.
-* U kunt uw eigen vertaalregels definiëren.
+* Understand what the translation rules do.
+* Be able to define your own translation rules.
 
-Nu uw schakelaar en vertaalregels opstelling zijn, neemt dit artikel u door de volgende stap van het vertalen van uw inhoud zonder kop.
+Now that your connector and translations rules are set up, this article takes you through the next step of translating your headless content.
 
-## Doelstelling {#objective}
+## Objective {#objective}
 
-Dit document helpt u begrijpen hoe te om AEM vertaalprojecten samen met de schakelaar en uw vertaalregels te gebruiken om inhoud te vertalen. Nadat u dit document hebt gelezen, moet u:
+This document helps you understand how to use AEM&#39;s translation projects along with the connector and your translations rules to translate content. After reading this document you should:
 
-* Begrijp wat een vertaalproject is.
-* Nieuwe vertaalprojecten kunnen maken.
-* Gebruik vertaalprojecten om uw inhoud zonder kop te vertalen.
+* Understand what a translation project is.
+* Be able to create new translation projects.
+* Use translation projects to translate your headless content.
 
-## Een vertaalproject maken {#creating-translation-project}
+## Creating a Translation Project {#creating-translation-project}
 
-Met vertaalprojecten kunt u de vertaling van inhoud zonder kop AEM. In een vertaalproject wordt de inhoud verzameld die op één locatie in andere talen moet worden vertaald voor een centrale weergave van de vertaalwerkzaamheden.
+Translation projects enable you to manage the translation of headless AEM content. A translation project gathers the content to be translated into other languages in one location for a central view of the translation effort.
 
-Wanneer inhoud aan een vertaalproject wordt toegevoegd, wordt een vertaalbaan gecreeerd voor het. Taken bieden opdrachten en statusinformatie die u gebruikt om de workflows voor het vertalen van mensen en computers die op de bronnen worden uitgevoerd, te beheren.
+When content is added to a translation project, a translation job is created for it. Jobs provide commands and status information that you use to manage the human translation and machine translation workflows that execute on the resources.
 
-Vertaalprojecten kunnen op twee manieren worden gemaakt:
+Translation projects can be created in two ways:
 
-1. Selecteer de taalwortel van de inhoud en hebben AEM automatisch tot het vertaalproject leiden dat op de inhoudspad wordt gebaseerd.
-1. Maak een leeg project en selecteer handmatig de inhoud die u aan het vertaalproject wilt toevoegen
+1. Select the language root of the content and have AEM automatically create the translation project based on the content path.
+1. Create an empty project and manually select the content to add to the translation project
 
-Beide zijn geldige benaderingen die doorgaans alleen verschillen op basis van de persoon die de vertaling uitvoert:
+Both are valid approaches usually only differing based on the persona performing the translation:
 
-* De TPM (vertaalprojectmanager) heeft vaak de flexibiliteit nodig om de inhoud handmatig te selecteren voor het vertaalproject.
-* Als de eigenaar van de inhoud ook verantwoordelijk is voor de vertaling, is het vaak gemakkelijker AEM het project automatisch te maken op basis van het geselecteerde inhoudspad.
+* The translation project manager (TPM) often needs the flexibility of manually selecting the content to the translation project.
+* If the content owner is also responsible for translation, letting AEM automatically create the project based on the selected content path is often easier.
 
-Beide benaderingen worden in de volgende secties verkend.
+Both approaches are explored in the following sections.
 
-### Automatisch een vertaalproject maken op basis van het inhoudspad {#automatically-creating}
+### Automatically Creating a Translation Project Based on Content Path {#automatically-creating}
 
-Voor eigenaars van inhoud die ook verantwoordelijk zijn voor vertaling, is het vaak gemakkelijker om het vertaalproject automatisch AEM maken. AEM automatisch een vertaalproject maken op basis van het inhoudspad:
+For content owners who are also responsible for translation, it is often easier to have AEM automatically create the translation project automatically. To have AEM automatically create a translation project based on your content path:
 
-1. Navigeer naar **Navigation** -> **Middelen** -> **Bestanden**. Onthoud dat inhoud zonder kop in AEM wordt opgeslagen als elementen die Content Fragments worden genoemd.
-1. Selecteer de taalwortel van uw project. In dit geval hebben we `/content/dam/wknd/en` geselecteerd.
-1. Tik op de spoorkiezer of klik op deze en toon het venster **References**.
-1. Tik of klik op **Taalkopieën**.
-1. Schakel het selectievakje **Taalkopieën** in.
-1. Vouw de sectie **Taalkopieën bijwerken** onder in het venster Referenties uit.
-1. Selecteer **Vertaalproject(en) maken** in het vervolgkeuzemenu **Project**.
-1. Geef een geschikte titel op voor uw vertaalproject.
-1. Tik of klik op **Start**.
+1. ************ Remember that headless content in AEM is stored as assets known as Content Fragments.
+1. Select the language root of your project. `/content/dam/wknd/en`
+1. ****
+1. ****
+1. ****
+1. ****
+1. ********
+1. Provide an appropriate title for your translation project.
+1. ****
 
-![Een vertaalproject maken](assets/create-translation-project.png)
+![](assets/create-translation-project.png)
 
-U ontvangt een bericht dat het project werd gecreeerd.
+You receive a message that the project was created.
 
 >[!NOTE]
 >
->Aangenomen wordt dat de vereiste taalstructuur voor de vertalingstalen al is gemaakt als onderdeel van de [definitie van de inhoudsstructuur.](getting-started.md#content-structure) Dit moet gebeuren in samenwerking met de inhoudarchitect.
+>[](getting-started.md#content-structure)
 >
->Als de taalmappen niet van tevoren worden gemaakt, kunt u geen taalkopieën maken zoals beschreven in de vorige stappen.
+>If the language folders are not created ahead of time, you will not be able to create language copies as described in the previous steps.
 
-### Handmatig een vertaalproject maken door uw inhoud te selecteren {#manually-creating}
+### Manually Creating a Translation Project by Selecting Your Content {#manually-creating}
 
-Voor managers van vertaalprojecten, is het vaak noodzakelijk om specifieke inhoud manueel te selecteren om in een vertaalproject te omvatten. Als u een dergelijk handmatig vertaalproject wilt maken, moet u eerst een leeg project maken en vervolgens de inhoud selecteren die u aan het project wilt toevoegen.
+For translation project managers, it is often necessary to manually select specific content to include in a translation project. To create such a manual translation project, you must start by creating an empty project and then select the content to add to it.
 
-1. Navigeer naar **Navigation** -> **Projecten**.
-1. Tik of klik op **Maken** -> **Map** om een map voor uw projecten te maken.
-   * Dit is optioneel, maar handig om uw vertaalwerkzaamheden te organiseren.
-1. Voeg in het venster **Project maken** een **Titel** voor de map toe en tik op **Maken** of klik op.
+1. ********
+1. ********
+   * This is optional, but helpful to organize your translation efforts.
+1. ************
 
-   ![Projectmap maken](assets/create-project-folder.png)
+   ![](assets/create-project-folder.png)
 
-1. Tik of klik op de map om de map te openen.
-1. Tik of klik in de nieuwe projectmap op **Maken** -> **Project**.
-1. Projecten zijn gebaseerd op sjablonen. Tik of klik op de sjabloon **Vertaalproject** om het te selecteren en tik of klik op **Volgende**.
+1. Tap or click the folder to open the folder.
+1. ********
+1. Projects are based on templates. ********
 
-   ![Sjabloon voor vertaalproject selecteren](assets/select-translation-project-template.png)
+   ![](assets/select-translation-project-template.png)
 
-1. Op **Basis** lusje, ga een naam voor uw nieuw project in.
+1. ****
 
-   ![Tabblad Projectbasis](assets/project-basic-tab.png)
+   ![](assets/project-basic-tab.png)
 
-1. Gebruik op het tabblad **Geavanceerd** het vervolgkeuzemenu **Doeltaal** om de taal of talen te selecteren waarin de inhoud moet worden vertaald. Tik of klik op **Maken**.
+1. ******** ****
 
-   ![Tabblad Project geavanceerd](assets/project-advanced-tab.png)
+   ![](assets/project-advanced-tab.png)
 
-1. Tik of klik op **Openen** in het bevestigingsdialoogvenster.
+1. ****
 
-   ![Dialoogvenster Projectbevestiging](assets/project-confirmation-dialog.png)
+   ![](assets/project-confirmation-dialog.png)
 
-Het project is gemaakt, maar bevat geen inhoud om te vertalen. In de volgende sectie wordt beschreven hoe het project is gestructureerd en hoe u inhoud kunt toevoegen.
+The project has been created, but contains no content to translate. The next section details how the project is structured and how to add content.
 
-## Een vertaalproject gebruiken {#using-translation-project}
+## Using a Translation Project {#using-translation-project}
 
-Vertaalprojecten zijn ontworpen om alle inhoud en taken in verband met een vertaalinspanning op één plaats te verzamelen, zodat uw vertaling eenvoudig en eenvoudig te beheren is.
+Translation projects are designed to collect all of the content and tasks related to a translation effort in one place to make your translation simple and easy to manage.
 
-Het vertaalproject weergeven:
+To view the translation project:
 
-1. Navigeer naar **Navigation** -> **Projecten**.
-1. Tik of klik op het project dat in de vorige sectie is gemaakt.
+1. ********
+1. Tap or click the project that was created in the previous section.
 
-![Vertaalproject](assets/translation-project.png)
+![](assets/translation-project.png)
 
-Het project is verdeeld in meerdere kaarten.
+The project is divided into multiple cards.
 
-* **Samenvatting**  - Deze kaart toont de basiskopbalinformatie van het project met inbegrip van de eigenaar, de taal, en de vertaalleverancier.
-* **Vertaaltaak**  - Deze kaart of kaarten geven een overzicht van de werkelijke vertaaltaak, inclusief de status, het aantal middelen, enz. Over het algemeen is er één taak per taal waarbij de ISO-2-taalcode aan de taaknaam wordt toegevoegd.
-* **Team**  - Deze kaart toont de gebruikers die aan dit vertaalproject samenwerken. Deze reis gaat niet over dit onderwerp.
-* **Taken**  - Extra taken verbonden aan het vertalen van de inhoud zoals het doen van punten of werkschemapunten. Deze reis gaat niet over dit onderwerp.
+* ****
+* **** Generally there is one job per language with the ISO-2 language code appended to the job name.
+* **** This journey does not cover this topic.
+* **** This journey does not cover this topic.
 
-Hoe u een vertaalproject gebruikt, hangt af van de manier waarop het is gemaakt: automatisch door AEM of handmatig.
+How you use a translation project depends on how it was created: either automatically by AEM or manually.
 
-### Een automatisch gemaakt vertaalproject gebruiken {#using-automatic-project}
+### Using an Automatically Created Translation Project {#using-automatic-project}
 
-Wanneer het automatisch tot stand brengen van het vertaalproject, evalueert AEM de inhoud zonder kop onder de weg u selecteerde gebaseerd op de vertaalregels die u eerder bepaalde. Op basis van die evaluatie extraheert het de inhoud die vertaald moet worden naar een nieuw vertaalproject.
+When automatically creating the translation project, AEM evaluates the headless content under the path you selected  based on the translation rules that you previously defined. Based on that evaluation, it extracts the content that requires translation into a new translation project.
 
-U kunt als volgt de details van de inhoud zonder kop in dit project bekijken:
+To see the detail of the headless content included in this project:
 
-1. Tik of klik op de knop voor weglatingen onder aan de **Vertaaltaak**-kaart.
-1. In het venster **Vertaaltaak** worden alle items in de taak weergegeven.
-   ![Taakdetails voor vertaling](assets/translation-job-detail.png)
-1. Tik of klik op een regel om de details van die regel weer te geven. Houd er rekening mee dat één regel meerdere inhoudsitems kan vertegenwoordigen die moeten worden vertaald.
-1. Tik of klik op het selectiekader voor een regelitem om andere opties weer te geven, zoals de optie om het item uit de taak te verwijderen of in de consoles Inhoudsfragmenten of Elementen weer te geven.
+1. ****
+1. ****
+   ![](assets/translation-job-detail.png)
+1. Tap or click a line to see the detail of that line, keeping in mind that one line may represent multiple content items to translate.
+1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
 
-![Opties voor vertaaltaken](assets/translation-job-options.png)
+![](assets/translation-job-options.png)
 
-De inhoud van de vertaaltaak wordt doorgaans gestart in de status **Concept**, zoals aangegeven door de kolom **Staat** in het venster **Vertaal taak**.
+************
 
-Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan de **Vertaaltaak**-kaart en selecteert u **Start**.
+********
 
-![Vertaaltaak starten](assets/start-translation-job.png)
+![](assets/start-translation-job.png)
 
-AEM communiceert nu met uw vertaalconfiguratie en -connector om de inhoud naar de vertaalservice te verzenden. U kunt de voortgang van de vertaling bekijken door naar het venster **Translation Job** terug te keren en de kolom **State** van de ingangen te bekijken.
+AEM now communicates with your translation configuration and connector to send the content to the translation service. ********
 
-![Vertaaltaak goedgekeurd](assets/translation-job-approved.png)
+![](assets/translation-job-approved.png)
 
-De vertalingen van de machine keren automatisch met een staat van **Goedgekeurd** terug. Menselijke vertaling maakt meer interactie mogelijk, maar valt buiten het bereik van deze reis.
+**** Human translation allows for more interaction, but is beyond the scope of this journey.
 
-### Handmatig een vertaalproject gebruiken {#using-manual-project}
+### Using a Manually Created Translation Project {#using-manual-project}
 
-Als u handmatig een vertaalproject maakt, AEM de benodigde taken, maar selecteert u niet automatisch de inhoud die u wilt opnemen. Hierdoor kan de projectbeheerder van de vertaling kiezen welke inhoud moet worden vertaald.
+When manually creating a translation project, AEM creates the necessary jobs, but does not automatically select any content to include. This allows the translation project manager the flexibility to pick-and-chose what content to translate.
 
-Inhoud toevoegen aan een vertaaltaak:
+To add content to a translation job:
 
-1. Tik of klik op de knop met de ellips onder aan een van de **Vertaaltaken**-kaarten.
-1. Controleer of de taak geen inhoud bevat. Tik of klik op de knop **Toevoegen** boven aan het venster en vervolgens **Middelen/Pagina&#39;s** in de vervolgkeuzelijst.
+1. ****
+1. See that the job contains no content. ********
 
-   ![Lege vertaaltaak](assets/empty-translation-job.png)
+   ![](assets/empty-translation-job.png)
 
-1. Er wordt een padbrowser geopend waarin u specifiek kunt selecteren welke inhoud u wilt toevoegen. Zoek de inhoud en tik of klik om deze te selecteren.
+1. A path browser opens allowing you to select specifically which content to add. Locate your content and tap or click to select.
 
-   ![Padbrowser](assets/path-browser.png)
+   ![](assets/path-browser.png)
 
-1. Tik of klik op **Selecteer** om de geselecteerde inhoud aan de taak toe te voegen.
-1. Geef in het dialoogvenster **Vertalen** op dat u **Taalkopie maken** wilt gebruiken.
+1. ****
+1. ********
 
-   ![Taalkopie maken](assets/translate-copy-master.png)
+   ![](assets/translate-copy-master.png)
 
-1. De inhoud wordt nu opgenomen in de taak.
+1. The content is now included in the job.
 
-   ![Inhoud toegevoegd aan vertaaltaak](assets/content-added.png)
+   ![](assets/content-added.png)
 
-1. Tik of klik op het selectiekader voor een regelitem om andere opties weer te geven, zoals de optie om het item uit de taak te verwijderen of in de consoles Inhoudsfragmenten of Elementen weer te geven.
+1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
 
-![Opties voor vertaaltaken](assets/translation-job-options.png)
+![](assets/translation-job-options.png)
 
-1. Herhaal deze stappen om alle vereiste inhoud in de taak op te nemen.
+1. Repeat these steps to include all required content in the job.
 
 >[!TIP]
 >
->De padbrowser is een krachtig hulpmiddel waarmee u uw inhoud kunt zoeken, filteren en doorbladeren. Tik of klik op de knop **Alleen inhoud/Filters** om het zijpaneel in of uit te schakelen en geavanceerde filters weer te geven, zoals **Gewijzigde datum** of **Vertaalstatus**.
+>The path browser is a powerful tool allowing you to search, filter, and navigate your content. ************
 >
->U kunt meer over wegbrowser in [extra middelensectie leren.](#additional-resources)
+>[](#additional-resources)
 
-U kunt de voorafgaande stappen gebruiken om de noodzakelijke inhoud aan alle talen (banen) voor het project toe te voegen. Nadat u alle inhoud hebt geselecteerd, kunt u de vertaling starten.
+You can use the prior steps to add the necessary content to all of the languages (jobs) for the project. Once you have selected all of the content, you can start the translation.
 
-De inhoud van de vertaaltaak wordt doorgaans gestart in de status **Concept**, zoals aangegeven door de kolom **Staat** in het venster **Vertaal taak**.
+************
 
-Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan de **Vertaaltaak**-kaart en selecteert u **Start**.
+********
 
-![Vertaaltaak starten](assets/start-translation-job.png)
+![](assets/start-translation-job.png)
 
-AEM communiceert nu met uw vertaalconfiguratie en -connector om de inhoud naar de vertaalservice te verzenden. U kunt de voortgang van de vertaling bekijken door naar het venster **Translation Job** terug te keren en de kolom **State** van de ingangen te bekijken.
+AEM now communicates with your translation configuration and connector to send the content to the translation service. ********
 
-![Vertaaltaak goedgekeurd](assets/translation-job-approved.png)
+![](assets/translation-job-approved.png)
 
-De vertalingen van de machine keren automatisch met een staat van **Goedgekeurd** terug. Menselijke vertaling maakt meer interactie mogelijk, maar valt buiten het bereik van deze reis.
+**** Human translation allows for more interaction, but is beyond the scope of this journey.
 
-## Vertaalde inhoud controleren {#reviewing}
+## Reviewing Translated Content {#reviewing}
 
-[Zoals eerder is opgemerkt, ](#using-translation-project) vloeit de door de machine vertaalde inhoud terug in AEM met de status van  **** Goedgekeurd, aangezien ervan wordt uitgegaan dat er geen menselijk ingrijpen vereist is omdat er machinevertaling wordt gebruikt. Het is natuurlijk nog steeds mogelijk om de vertaalde inhoud te beoordelen.
+[](#using-translation-project)**** However it is of course still possible to review the translated content.
 
-Ga eenvoudig naar de voltooide vertaalbaan en selecteer een lijnpunt door te tikken of checkbox te klikken. Het pictogram **Tonen in inhoudsfragment** wordt weergegeven in de werkbalk.
+Simply go to the completed translation job and select a line item by tapping or clicking the checkbox. ****
 
-![Tonen in inhoudsfragment](assets/reveal-in-content-fragment.png)
+![](assets/reveal-in-content-fragment.png)
 
-Tik of klik op dat pictogram om het vertaalde inhoudsfragment in de editorconsole te openen en de details van de vertaalde inhoud weer te geven.
+Tap or click that icon to open the translated content fragment in its editor console to see the details of the translated content.
 
-![Een vertaald inhoudsfragment](assets/translated-content-fragment.png)
+![](assets/translated-content-fragment.png)
 
-U kunt het inhoudsfragment desgewenst verder wijzigen, op voorwaarde dat u de juiste machtigingen hebt, maar dat het bewerken van inhoudsfragmenten buiten het bereik van deze rit valt. Zie de sectie [Aanvullende bronnen](#additional-resources) aan het einde van dit document voor meer informatie over dit onderwerp.
+You can further modify the content fragment as necessary, providing you have the proper permission, but editing content fragments is beyond the scope of this journey. [](#additional-resources)
 
-Het doel van het project is om alle middelen in verband met een vertaling op één plaats te verzamelen, zodat u gemakkelijk toegang hebt en een duidelijk overzicht krijgt. Zoals u echter kunt zien door de details van een vertaald item weer te geven, vloeien de vertalingen zelf terug naar de map met middelen van de vertaaltaal. In dit voorbeeld is de map
+The project&#39;s purpose is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the asset folder of the translation language. In this example the folder is
 
 ```text
 /content/dam/wknd/es
 ```
 
-Als u via **Navigation** -> **Files** -> **Assets** naar deze map navigeert, ziet u de vertaalde inhoud.
+************
 
-![Omslagstructuur voor vertaalde inhoud](assets/translated-file-content.png)
+![](assets/translated-file-content.png)
 
-AEM vertaalkader ontvangt de vertalingen van de vertaalschakelaar en leidt dan automatisch tot de inhoudsstructuur die op de taalwortel wordt gebaseerd en gebruikend de vertalingen die door de schakelaar worden verstrekt.
+AEM&#39;s translation framework receives the translations from the translation connector and then automatically creates the content structure based on the language root and using the translations provided by the connector.
 
-Het is belangrijk om te begrijpen dat deze inhoud niet wordt gepubliceerd en daarom niet beschikbaar voor uw headless diensten. We zullen meer leren over deze publicatiestructuur van auteurs en zien hoe we onze vertaalde inhoud in de volgende stap van de vertaalreis kunnen publiceren.
+It is important to understand that this content is not published and therefore not available to your headless services. We will learn about this author-publish structure and see how to publish our translated content in the next step of the translation journey.
 
-## Menselijke vertaling {#human-translation}
+## Human Translation {#human-translation}
 
-Als uw vertaalservice voorziet in menselijke vertaling, biedt het revisieproces meer opties. Bijvoorbeeld, komen de vertalingen in het project met de status **Draft** terug en moeten worden herzien en manueel worden goedgekeurd of verworpen.
+If your translation service provides human translation, the review process offers more options. ****
 
-Menselijke vertaling valt buiten het bereik van deze lokalisatietraject. Zie de sectie [Aanvullende bronnen](#additional-resources) aan het einde van dit document voor meer informatie over dit onderwerp. Naast de aanvullende goedkeuringsopties is het werkschema voor menselijke vertalingen echter hetzelfde als voor machinevertalingen die in deze reis worden beschreven.
+Human translation is beyond the scope of this localization journey. [](#additional-resources) However beyond the additional approval options, the workflow for human translations is the same as machine translations as described in this journey.
 
-## Volgende functies {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
+Now that you have completed this part of the headless translation journey you should:
 
-* Begrijp wat een vertaalproject is.
-* Nieuwe vertaalprojecten kunnen maken.
-* Gebruik vertaalprojecten om uw inhoud zonder kop te vertalen.
+* Understand what a translation project is.
+* Be able to create new translation projects.
+* Use translation projects to translate your headless content.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM doorlopende vertaaltocht door het document [Vertaalde inhoud publiceren](publish-content.md) te reviseren. Hierin leert u hoe u vertaalde inhoud publiceert en hoe u die vertalingen bijwerkt wanneer de inhoud van de hoofdtaal verandert.
+[](publish-content.md)
 
 ## Aanvullende bronnen {#additional-resources}
 
-Hoewel u wordt aangeraden naar het volgende gedeelte van de reis zonder kop door het document [Vertaalde inhoud publiceren te gaan, zijn ](publish-content.md) de volgende aanvullende, optionele bronnen die een diepere duw doen op bepaalde in dit document vermelde concepten, maar die niet nodig zijn om verder te gaan op de tocht zonder kop.
+[](publish-content.md)
 
-* [Vertaalprojecten](/help/sites-cloud/administering/translation/managing-projects.md)  beheren - Meer informatie over vertaalprojecten en aanvullende functies, zoals workflows voor menselijke vertaling en meertalige projecten.
-* [Ontwerpomgeving en -gereedschappen](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)  - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.
+* [](/help/sites-cloud/administering/translation/managing-projects.md)
+* [](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)

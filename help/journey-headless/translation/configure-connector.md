@@ -1,142 +1,140 @@
 ---
-title: De vertalingsconnector configureren
-description: Leer hoe u verbinding AEM maken met een vertaalservice.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Configure the Translation Connector
+description: Learn how to connect AEM to a translation service.
+exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 0%
 
 ---
 
-# De vertalingsconnector configureren {#configure-connector}
+# Configure the Translation Connector {#configure-connector}
 
-Leer hoe u verbinding AEM maken met een vertaalservice.
+Learn how to connect AEM to a translation service.
 
-## Het verhaal tot nu toe {#story-so-far}
+## The Story So Far {#story-so-far}
 
-In het vorige document van de AEM headless vertaling reis, [Begin met AEM headless vertaling](learn-about.md) u leerde hoe te om uw headless inhoud te organiseren en hoe AEM vertaalhulpmiddelen werken en u zou nu moeten:
+[](learn-about.md)
 
-* Begrijp het belang van inhoudsstructuur voor vertaling.
-* Begrijp hoe AEM inhoud zonder kop opslaat.
-* Wees vertrouwd met AEM vertaalhulpmiddelen.
+* Understand the importance of content structure to translation.
+* Understand how AEM stores headless content.
+* Be familiar with AEM&#39;s translation tools.
 
-Dit artikel bouwt op die grondbeginselen voort zodat kunt u de eerste configuratiestap nemen en de vertaaldienst opzetten, die u later in de reis zult gebruiken om uw inhoud te vertalen.
+This article builds on those fundamentals so you can take the first configuration step and set up a translation service, which you will use later in the journey to translate your content.
 
-## Doelstelling {#objective}
+## Objective {#objective}
 
-Dit document helpt u te begrijpen hoe te opstelling een AEM schakelaar aan uw gekozen vertaaldienst. Na het lezen moet u:
+This document helps you understand how to set up an AEM connector to your chosen translation service. After reading you should:
 
-* Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
-* Uw eigen verbinding met uw vertaalservice instellen.
+* Understand the important parameters of the Translation Integration Framework in AEM.
+* Be able to set up your own connection to your translation service.
 
-## Het vertaalintegratieframework {#tif}
+## The Translation Integration Framework {#tif}
 
-AEM TIF (Translation Integration Framework) integreert met vertaalservices van derden om de vertaling van AEM inhoud te ordenen. Het gaat om drie basisstappen.
+AEM&#39;s Translation Integration Framework (TIF) integrates with third-party translation services to orchestrate the translation of AEM content. It involves three basic steps.
 
-1. Verbind met uw vertaaldienstverlener.
-1. Creeer een configuratie van het Kader van de Integratie van de Vertaling.
-1. Koppel de configuratie aan uw inhoud.
+1. Connect to your translation service provider.
+1. Create a Translation Integration Framework configuration.
+1. Associate the configuration with your content.
 
-In de volgende secties worden deze stappen nader beschreven.
+The following sections describe these steps in more detail.
 
-## Verbinding maken met een vertaalserviceprovider {#connect-translation-provider}
+## Connecting to a Translation Service Provider {#connect-translation-provider}
 
-De eerste stap bestaat uit het kiezen van de vertaalservice die u wilt gebruiken. Er zijn vele keuzen voor mensen en machine vertaaldiensten beschikbaar aan AEM. De meeste providers bieden een vertaalpakket aan dat moet worden geïnstalleerd. Zie de sectie [Aanvullende bronnen](#additional-resources) voor een selectie van beschikbare opties.
-
->[!NOTE]
->
->De vertaalspecialist is over het algemeen verantwoordelijk voor het kiezen van welke vertaaldienst aan gebruik, maar de beheerder is typisch verantwoordelijk voor het installeren van het vereiste pakket van de vertaalschakelaar.
-
-Voor deze reis, gebruiken wij de Vertaler van Microsoft die van AEM voorziet van een proefvergunning uit-van-de-doos. Zie de sectie [Aanvullende bronnen](#additional-resources) voor meer informatie over deze provider.
-
-Als u een andere leverancier kiest, moet uw beheerder het aansluitingspakket installeren volgens de instructies van de vertaalservice.
+The first step is to choose which translation service you wish to use. There are many choices for human and machine translation services available to AEM. Most providers offer a translator package to be installed. [](#additional-resources)
 
 >[!NOTE]
 >
->Het gebruiken van de uit-van-de-doos Vertaler van Microsoft in AEM vereist geen extra opstelling en werkt zoals-is zonder extra schakelaarconfiguratie.
+>The translation specialist is generally responsible for choosing which translation service to use, but the administrator typically is responsible for installing the required translation connector package.
+
+For the purposes of this journey, we use the Microsoft Translator which AEM provides with a trial license out-of-the-box. [](#additional-resources)
+
+If you choose another provider your administrator must install the connector package as per the instructions provided by the translation service.
+
+>[!NOTE]
 >
->Als u ervoor kiest om de schakelaar van de Vertaler van Microsoft voor testdoeleinden te gebruiken, te hoeven u niet om de stappen in de volgende twee secties uit te voeren: [Een configuratie voor vertaalintegratie maken](#create-config) en [Koppel de configuratie aan uw inhoud.](#associate) Nochtans wordt u geadviseerd om hen te lezen zodat u met de stappen vertrouwd bent voor wanneer u uw aangewezen schakelaar moet vormen.
+>Using the out-of-the-box Microsoft Translator in AEM does not require additional setup and works as-is without additional connector configuration.
 >
->De proefvergunning van de schakelaar van de Vertaler van Microsoft is niet voorgenomen voor productiedoeleinden en als u besluit om het vergunning te verlenen, moet de systeembeheerder de stappen volgen die in de [Aanvullende Bronnen](#additional-resources) sectie aan het eind van dit document worden gedetailleerd om die vergunning te vormen.
+>[](#create-config)[](#associate)
+>
+>[](#additional-resources)
 
-## Een configuratie voor vertaalintegratie maken {#create-config}
+## Creating a Translation Integration Configuration {#create-config}
 
-Nadat het schakelaarpakket voor uw aangewezen vertaaldienst wordt geïnstalleerd, moet u een configuratie van het Kader van de Integratie van de Vertaling voor die dienst tot stand brengen. De configuratie bevat de volgende informatie:
+After the connector package for your preferred translation service is installed, you must create a Translation Integration Framework configuration for that service. The configuration includes the following information:
 
-* Welke vertaalserviceprovider moet worden gebruikt
-* Of het vertalen van mensen of machines moet worden uitgevoerd
-* Of andere inhoud die aan het inhoudsfragment is gekoppeld, zoals tags, moet worden vertaald
+* Which translation service provider to use
+* Whether human or machine translation is to be performed
+* Whether to translate other content that is associated with the Content Fragment such as tags
 
-Een nieuwe vertaalconfiguratie maken:
+To create a new translation configuration:
 
-1. Klik of tik in het algemene navigatiemenu op **Gereedschappen** -> **Cloud Services** -> **Vertaal Cloud Services**.
-1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt maken. Dit is vaak gebaseerd op een bepaald project of kan globaal zijn.
-   * In dit geval zou een configuratie globaal kunnen worden gemaakt om op alle inhoud, of enkel voor het WKND project van toepassing te zijn.
+1. ************
+1. Navigate to where you wish to create the configuration in your content structure. This is often based on a particular project or can be global.
+   * For example, in this case, a configuration could be made globally to apply to all content, or just for the WKND project.
 
-   ![Locatie vertaalconfiguratie](assets/translation-configuration-location.png)
+   ![](assets/translation-configuration-location.png)
 
-1. Geef de volgende informatie op in de velden en klik of tik op **Maken**.
-   1. Selecteer **Configuratietype** in de vervolgkeuzelijst. Selecteer **Translation Integration** in de lijst.
-   1. Ga **Titel** voor uw configuratie in. De **Title** identificeert de configuratie in de **Cloud Services** console evenals in de drop-down lijsten van het paginabezit.
-   1. Typ desgewenst een **Naam** die u wilt gebruiken voor het opslagknooppunt dat de configuratie opslaat.
+1. ****
+   1. **** ****
+   1. **** ********
+   1. ****
 
-   ![Vertaalconfiguratie maken](assets/create-translation-configuration.png)
+   ![](assets/create-translation-configuration.png)
 
-1. Tik of klik op **Maken** en het venster **Configuratie bewerken** verschijnt waar u de configuratie-eigenschappen kunt configureren.
+1. ********
 
-1. Inhoudsfragmenten worden opgeslagen als elementen in AEM. Tik of klik op het tabblad **Middelen**.
+1. Remember that Content Fragments are stored as assets in AEM. ****
 
-![Eigenschappen van vertaalconfiguratie](assets/translation-configuration.png)
+![](assets/translation-configuration.png)
 
-1. Geef de volgende informatie op.
+1. Provide the following information.
 
-   1. **Omzettingsmethode**  - Selecteer  **Machine** Translation of  **Human** Translation, afhankelijk van uw vertaalbureau. In het kader van deze reis gaan we uit van machinevertaling.
-   1. **Vertaalproviders**  - Selecteer in de lijst de aansluiting die u voor uw vertaalservice hebt geïnstalleerd.
-   1. **Inhoudscategorie**  - Selecteer de meest geschikte categorie om de vertaling beter te richten (alleen voor automatische vertaling).
-   1. **Elementen**  van inhoudsfragmenten omzetten - Schakel deze optie in om elementen die aan inhoudsfragmenten zijn gekoppeld, te vertalen.
-   1. **Elementen**  vertalen - Schakel deze optie in om de elementen te vertalen.
-   1. **Metagegevens**  vertalen - Controleer dit om metagegevens van elementen te vertalen.
-   1. **Tags**  vertalen: schakel deze optie in om codes te vertalen die aan het element zijn gekoppeld.
-   1. **Automatisch omzetten**  - Schakel deze eigenschap in als u wilt dat vertalingen automatisch naar de vertaalservice worden verzonden.
+   1. ************ For the purposes of this journey we assume machine translation.
+   1. ****
+   1. ****
+   1. ****
+   1. ****
+   1. ****
+   1. ****
+   1. ****
 
-1. Tik of klik op **Opslaan en sluiten**.
+1. ****
 
-U hebt nu de schakelaar aan uw vertaaldienst gevormd.
+You have now configured the connector to your translation service.
 
-## De configuratie koppelen aan uw inhoud {#associate}
+## Associate the Configuration with Your Content {#associate}
 
-AEM is een flexibel en krachtig hulpmiddel en steunt veelvoudige, gelijktijdige vertaaldiensten via veelvoudige schakelaars en veelvoudige configuraties. Het opzetten van een dergelijke configuratie valt buiten het bereik van deze reis. Nochtans betekent deze flexibiliteit dat u moet specificeren welke schakelaars en configuratie zouden moeten worden gebruikt om uw inhoud te vertalen door deze configuratie met uw inhoud te associëren.
+AEM is a flexible and powerful tool and supports multiple, simultaneous translation services via multiple connectors and multiple configurations. Setting up such a configuration is beyond the scope of this journey. However this flexibility means that you must specify which connectors and configuration should be used to translate your content by associating ths configuration with your content.
 
-Navigeer hiertoe naar de hoofdtaalmap van de inhoud. Voor ons voorbeelddoel is dit
+To do this, navigate to the language root of your content. For our example purposes this is
 
 ```text
 /content/dam/<your-project>/en
 ```
 
-1. Ga naar de globale navigatie en ga naar **Navigation** -> **Middelen** -> **Bestanden**.
-1. Selecteer in de middelenconsole de hoofdtaal die u wilt configureren en klik of tik op **Eigenschappen**.
-1. Tik of klik op het tabblad **Cloud Services**.
-1. Onder **Cloud Service Configurations** in **Add Configuratie** dropdown, selecteer uw schakelaar. Het zou in dropdown moeten verschijnen wanneer u zijn pakket zoals [eerder beschreven ](#connect-translation-provider) hebt geïnstalleerd.
-1. Onder **Cloud Service Configurations** in **Add Configuratie** dropdown, selecteer ook uw configuratie.
-1. Tik of klik op **Opslaan en sluiten**.
+1. ************
+1. ****
+1. ****
+1. ******** [](#connect-translation-provider)
+1. ********
+1. ****
 
-![Cloudserviceconfiguraties selecteren](assets/select-cloud-service-configurations.png)
+![](assets/select-cloud-service-configurations.png)
 
-## Volgende functies {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
+Now that you have completed this part of the headless translation journey you should:
 
-* Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
-* Uw eigen verbinding met uw vertaalservice instellen.
+* Understand the important parameters of the Translation Integration Framework in AEM.
+* Be able to set up your own connection to your translation service.
 
-Bouw op deze kennis voort en zet uw AEM onophoudelijke vertaalreis door het document [vertaalregels configureren ](translation-rules.md) te herzien, waar u leert hoe u bepaalt welke inhoud moet worden vertaald.
+[](translation-rules.md)
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [te herzien vertaalregels ](translation-rules.md) vormt zijn het volgende enkele extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de headless reis verder te gaan.
+[](translation-rules.md)
 
-* [Het vormen van het Kader](/help/sites-cloud/administering/translation/integration-framework.md)  van de Integratie van de Vertaling - herzie een lijst van geselecteerde vertaalschakelaars en leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdeconversie te integreren.
-* [Verbinding maken met Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)  - AEM biedt een proefaccount voor Microsoft Translation voor testdoeleinden.
+* [](/help/sites-cloud/administering/translation/integration-framework.md)
+* [](/help/sites-cloud/administering/translation/connect-ms-translator.md)
