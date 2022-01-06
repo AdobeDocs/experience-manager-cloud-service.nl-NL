@@ -1,9 +1,9 @@
 ---
-title: Hoe maak je een Forms Portal op een Experience Manager Sites-pagina?
+title: Een Forms Portal maken op een Experience Manager Sites-pagina
 description: Leer hoe u een Forms Portal kunt maken en de kerncomponenten van een AEM Sites-pagina kunt gebruiken die niet in de verpakking staan.
-source-git-commit: 4c42abfe2cc1b11aefb2b298e883406ca5c17fd2
+source-git-commit: 50eeb2c1e6925b39b03bbbdd627169453ea1c1d8
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
@@ -59,22 +59,15 @@ Voer de volgende stappen uit als u Forms Portal-componenten buiten de box wilt i
 
    Ook wijzigen `appTitle`, `appId`, en `groupId`in de bovenstaande opdracht om uw omgeving te weerspiegelen.
 
+1. **Voer in Prerelease de volgende stappen uit om de Forms Portal-componenten te gebruiken:**
+   * [Het prereleasekanaal inschakelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
+   * Vervangen `core-forms-components-*` versie met de gewenste pre-releaseversie (bijvoorbeeld 1.0.4-PRERELEASE-20211223) in uw `Cloud Manager/AEM Archetype` project door het bijwerken van `<core.forms.components.version>x.y.z</core.forms.components.version>` eigenschap op hoofdniveau `pom.xml` van het project Archetype.
+
 1. **Implementeer het project in uw lokale ontwikkelomgeving:** U kunt het volgende bevel gebruiken om aan uw lokale ontwikkelomgeving op te stellen
 
    `mvn -PautoInstallPackage clean install`
 
    Voor de volledige lijst met opdrachten raadpleegt u [Samenstellen en installeren](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
-
-1. [De kerncomponentartefacten opnemen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds) en de afhankelijkheid als volgt:
-
-   ```shell
-   <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>{TBD}</artifactId>
-               <type>content-package</type>
-               <version>{TBD}</version>
-   </dependency>
-   ```
 
 1. [De code implementeren op uw [!DNL AEM Forms] as a Cloud Service omgeving](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
 
@@ -85,7 +78,7 @@ Voer de volgende stappen uit als u Forms Portal-componenten buiten de box wilt i
 
 ### Azure Storage Configuration maken {#create-azure-storage-configuration}
 
-Controleer voordat u deze stappen uitvoert of u een [!DNL Azure] opslagaccount en een toegangstoets om toegang tot de [!DNL Azure] opslagaccount.
+Voordat u deze stappen uitvoert, moet u controleren of u beschikt over een Azure-opslagaccount en een toegangstoets om toegang tot de [!DNL Azure] opslagaccount.
 
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Storage]**.
 1. Selecteer een map om de configuratie te maken en tik op **[!UICONTROL Create]**.
