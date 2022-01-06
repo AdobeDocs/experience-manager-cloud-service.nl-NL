@@ -2,10 +2,10 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 9410b061278d916c95233ecba7f7f946fccc51ed
+source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '582'
+ht-degree: 5%
 
 ---
 
@@ -53,7 +53,8 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | [!DNL Sites] | Portal Director en Portlet-component | Deze mogelijkheden zijn verouderd in [!DNL Experience Manager] 6.4 en zijn nu verwijderd uit [!DNL Experience Manager]. |
 | [!DNL Sites] | Design Importer | Deze mogelijkheid is verwijderd als onveranderlijke gedeelten van het dialoogvenster [!DNL Experience Manager] opslagruimte zijn niet toegankelijk bij uitvoering. |
 | [!DNL Assets] | [!DNL Assets] delen met Marketing Cloud Assets Core Service en Creative Cloud services is niet beschikbaar. | Voor integratie met [!DNL Adobe Creative Cloud], gebruik [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). |
-| [!DNL Foundation] | Ondersteuning voor Apache Sling-gegevensbronnen (OSGi bundle org.apache.sling.datasource). | N.v.t. |
+| [!DNL Foundation] | Ondersteuning voor Apache Sling-gegevensbronnen (OSGi bundle org.apache.sling.datasource) | N.v.t. |
+| [!DNL Foundation] | Ondersteuning voor JST-scriptsjablonen (OSGi bundle org.apache.sling.scripting.jst) | N.v.t. |
 
 ## Java API {#java-api}
 
