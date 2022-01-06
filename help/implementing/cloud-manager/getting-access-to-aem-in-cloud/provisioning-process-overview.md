@@ -1,28 +1,28 @@
 ---
 title: Inrichtingsproces - Overzicht
 description: Inrichtingsproces - Overzicht
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '331'
 ht-degree: 7%
 
 ---
 
 
-# AEM als Cloud Service: Toegang en toegang aan boord
+# AEM as a Cloud Service: Toegang en toegang aan boord
 
-Deze pagina maakt een lijst van de zelfhulp middelen over leveringsproces voor Experience Manager als Cloud Service.
+Deze pagina maakt een lijst van de zelfhulp middelen over leveringsproces voor as a Cloud Service Experience Manager.
 
-## AEM als overzicht van het Provisioning Process van de Cloud Service
+## Overzicht van het as a Cloud Service inrichtingsproces AEM
 
 In dit gedeelte worden de belangrijkste artikelen besproken over de volgende onderwerpen:
 
-* Toegang tot AEM als Cloud Service
-* Adobe Experience Manager als Cloud Service aan boord nemen en Provisioning Process
+* Toegang tot AEM as a Cloud Service
+* Adobe Experience Manager as a Cloud Service on-boarding and Provisioning Process
 * Help en bronnen
 
 
-### Toegang tot AEM als Cloud Service
+### Toegang tot AEM as a Cloud Service
 
 Zodra auto-levering volledig is:
 
@@ -34,7 +34,7 @@ Zodra auto-levering volledig is:
 > ![procesoverzicht.jpg](./assets/processOverview.jpg)
 
 
-Voor meer informatie, gelieve te bezoeken [Aan boord gaan aan Experience Manager als Cloud Service op Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
+Ga voor meer informatie naar [Aan boord nemen van Experience Manager as a Cloud Service op Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
 
 ### Bronnen en koppelingen
 
@@ -43,14 +43,13 @@ Voor meer informatie, gelieve te bezoeken [Aan boord gaan aan Experience Manager
 • [Experience Manager as a Cloud Service openen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
 
 
-## Adobe Experience Manager als Cloud Service aan boord nemen
+## Adobe Experience Manager as a Cloud Service on boarding Process
 
 ### 1. Inkooporder activeert automatische provisioning.
 
 ### 2. Aan boord van organisaties naar Adobe Admin Console:
 
 >   ![procesoverzicht2.jpg](./assets/processOverview2.jpg)
-
 * Systeembeheerder:
    * Levering AEM programma&#39;s en omgevingen.
    * Navigeer naar de Admin Console voor beheertaken.
@@ -67,12 +66,11 @@ Voor meer informatie, gelieve te bezoeken [Aan boord gaan aan Experience Manager
 Afhankelijk van grootte en voorkeur, zijn er drie methoden voor het aan boord hebben van gebruikers:
 * Handmatig gebruikers maken in Admin Console
 * CSV-bestand uploaden
-* Gebruikers synchroniseren vanaf Enterprise Active
-Map
+* Gebruikers synchroniseren vanuit Active Directory van bedrijf
 
 ### 4. Admin configureert org en verleent gebruikers en groepstoegang tot milieu&#39;s
 
 ## Help en bronnen
 
-* [Eerste aanmelding - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
-* [Toegang tot AEM configureren als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [Eerste aanmelding - Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+* [Toegang tot AEM as a Cloud Service configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)

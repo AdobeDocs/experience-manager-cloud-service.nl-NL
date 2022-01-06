@@ -3,10 +3,10 @@ title: Bewerkingen en onderhoud van Adobe Experience Manager as a Cloud Service
 description: Zelfhulpbronnen en documentatiekoppelingen voor bewerkingen en onderhoud van Adobe Experience Manager as a Cloud Service
 landing-page-description: Leer over de achterste-eindverrichtingen van AEM as a Cloud Service, zoals het indexeren en onderhoudstaken.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 69%
+source-wordcount: '372'
+ht-degree: 70%
 
 ---
 
@@ -42,7 +42,7 @@ Deze pagina bevat zelfhulpbronnen over bewerkingen en onderhoud van Experience M
 * [Dispatcher-documentatie](/help/implementing/dispatcher/overview.md)
 * [HTL-documentatie](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Documentatie over kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentatie voor Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Gereedheid voor GDPR (AVG)](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

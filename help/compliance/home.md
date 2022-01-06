@@ -2,10 +2,10 @@
 title: Compatibiliteit
 description: Deze pagina maakt een lijst van zelfhulp middelen die informatie verstrekken over naleving in as a Cloud Service Experience Manager.
 landing-page-description: Voor een overzicht van de compatibiliteit in AEM als cloudservice, inclusief privacy en toegankelijkheid, kunt u hier beginnen.
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 61%
+source-wordcount: '386'
+ht-degree: 63%
 
 ---
 
@@ -43,7 +43,7 @@ Deze pagina maakt een lijst van zelfhulp middelen die informatie verstrekken ove
 * [Dispatcher-documentatie](/help/implementing/dispatcher/overview.md)
 * [HTL-documentatie](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Documentatie over kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentatie voor Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
