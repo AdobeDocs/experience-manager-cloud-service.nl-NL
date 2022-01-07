@@ -2,9 +2,9 @@
 title: Verouderde API's
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde API's in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
+source-git-commit: d7fc88481ab0d85f62ad0b9891c286cee92edfae
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '855'
 ht-degree: 4%
 
 ---
@@ -109,16 +109,16 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>30-07-21</td>
   </tr>
   <tr>
-    <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info</td>
+    <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
     <td>Het metatype van Apache Felix en SCR APIs zijn verouderd.  Gebruik in plaats hiervan de OSGi-metatype- en Declarative Service-API's.</td>
     <td>27-05-21</td>
-    <td>26-08-21</td>
+    <td>verwijderd</td>
   </tr>
   <tr>
-    <td>oorg.slf4j.impl</td>
+    <td>org.slf4j.impl</td>
     <td>De de implementatieklassen van het logboek zijn niet compatibel met AEM as a Cloud Service.</td>
     <td>7/4/21</td>
-    <td>8/26/21</td>
+    <td>removed</td>
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
@@ -136,19 +136,19 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>org.apache.sling.startupfilter<br>com.adobe.granite.crypto.spi<br>com.adobe.granite.crpyto.spi.base<br>com.adobe.agl.impl.data.icudt40b<br>com.adobe.agl.impl.data.icudt40b.brkitr<br>com.adobe.agl.impl.data.icudt40b.coll<br>com.adobe.agl.impl.data.icudt40b.rbnf<br>com.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></td>
     <td>Verouderd AEM 6.x API.</td>
     <td>08-04-19</td>
-    <td>29-09-21</td>
+    <td>verwijderd</td>
   </tr>
   <tr>
     <td>org.apache.sling.discovery.commons<br>org.apache.sling.discovery.commons.providers<br>org.apache.sling.discovery.commons.providers.base<br>org.apache.sling.discovery.commons.providers.spi<br>org.apache.sling.discovery.commons.providers.spi.base<br>org.apache.sling.discovery.commons.providers.util</td>
     <td>Deze API wordt niet ondersteund in Cloud Service.</td>
     <td>30-09-21</td>
-    <td>30-10-21</td>
+    <td>verwijderd</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml<br>org.apache.jackrabbit.vault.util.xml.serialize</td>
     <td>Util-klassen die verwant zijn aan Apache Xerces worden verwijderd in volgende releases die een belangrijke versiewijziging veroorzaken. Aangezien deze hulpprogramma's bedoeld zijn voor intern gebruik in FileVult, wordt de API afgekeurd ten opzichte van het openbare API-oppervlak.</td>
     <td>01-09-21</td>
-    <td>10/30/21</td>
+    <td>removed</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
     <td>Legacy AEM 6.x API.</td>
