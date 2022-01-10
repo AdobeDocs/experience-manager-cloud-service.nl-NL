@@ -2,12 +2,12 @@
 title: Assets Insights
 description: Houd gebruikersbeoordelingen en gebruiksstatistieken bij van afbeeldingen die worden gebruikt in marketingcampagnes van derden en creatieve oplossingen voor Adobe.
 contentOwner: AG
-feature: Asset Insights, Asset Reports
+feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
+source-git-commit: 0df4d40cb37ced97dcffaf20adc2132eaadae524
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '798'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Met Elementinzichten worden gegevens over gebruikersactiviteit vastgelegd, zoals
 
 Als u met behulp van Assets gebruiksstatistieken wilt vastleggen voor afbeeldingen van een website, moet u de insluitcode voor de afbeelding opnemen in de websitecode.
 
-Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van [!DNL Adobe Analytics] te halen. Voor details, zie [Elementen inzichten](#configure-asset-insights) vormen. Koop [!DNL Adobe Analytics] licentie afzonderlijk om deze functie te gebruiken.
+Om de statistieken van het vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van te halen [!DNL Adobe Analytics]. Zie voor meer informatie [Elementengegevens configureren](#configure-asset-insights). Als u deze functie wilt gebruiken, koopt u [!DNL Adobe Analytics] licentie afzonderlijk.
 
 >[!NOTE]
 >
@@ -30,28 +30,28 @@ Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor ac
 
 U kunt de elementinzichten van de metagegevenspagina weergeven.
 
-1. Selecteer de afbeelding in de gebruikersinterface Elementen en klik op **[!UICONTROL Properties]** op de werkbalk.
-1. Klik op **[!UICONTROL Insights]** op de pagina Eigenschappen.
-1. Controleer de gebruiksdetails voor het element op het tabblad **[!UICONTROL Insights]**. In de sectie **[!UICONTROL Score]** worden het totale gebruik en de prestatiesbronnen van een element beschreven.
+1. Selecteer de afbeelding in de gebruikersinterface Elementen en klik vervolgens op **[!UICONTROL Properties]** op de werkbalk.
+1. Klik op de pagina Eigenschappen op **[!UICONTROL Insights]**.
+1. Bekijk de gebruiksdetails voor het element in de **[!UICONTROL Insights]** tab. De **[!UICONTROL Score]** in dit gedeelte wordt het totale gebruik en de prestatiesbronnen van een actief beschreven.
 
    De score van het gebruik beschrijft het aantal tijden activa wordt gebruikt in diverse oplossingen.
 
-   De **[!UICONTROL Impressions]** score is het aantal keren dat het element op de website wordt geladen. Het getal dat onder **[!UICONTROL Clicks]** wordt weergegeven, is het aantal keren dat op het element wordt geklikt.
+   De **[!UICONTROL Impressions]** De score is het aantal keren dat het element op de website wordt geladen. Het nummer dat onder wordt weergegeven **[!UICONTROL Clicks]** is het aantal keren dat op het element wordt geklikt.
 
-1. Controleer de sectie **[!UICONTROL Usage Statistics]** om te weten van welke entiteiten het middel deel uitmaakte en welke creatieve oplossingen het onlangs gebruikten. Hoe hoger het gebruik, hoe groter de kans dat het middel populair is bij gebruikers. Gebruiksgegevens worden onder de volgende koppen weergegeven:
+1. Controleer de **[!UICONTROL Usage Statistics]** sectie om te weten van welke entiteiten het actief deel uitmaakte en welke creatieve oplossingen het onlangs gebruikten. Hoe hoger het gebruik, hoe groter de kans dat het middel populair is bij gebruikers. Gebruiksgegevens worden onder de volgende koppen weergegeven:
 
    * **[!UICONTROL Asset]**: Het aantal keren dat het actief deel uitmaakte van een collectie of samengesteld middel.
    * **[!UICONTROL Web & Mobile]**: Het aantal keren dat het middel deel uitmaakte van websites en apps.
-   * **[!UICONTROL Social]**: Het aantal keren dat het element is gebruikt in andere oplossingen, zoals een  [!DNL Adobe Campaign].
+   * **[!UICONTROL Social]**: Het aantal keren dat het element is gebruikt in andere oplossingen, zoals een [!DNL Adobe Campaign].
    * **[!UICONTROL Email]**: Het aantal keren dat het middel in e-mailcampagnes is gebruikt.
 
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >Omdat de eigenschap van de Inzichten van Activa typisch de gegevens van Oplossingen van [!DNL Adobe Analytics] periodiek ophaalt, kan de sectie van Oplossingen niet de meest recente gegevens tonen. De tijdspanne waarvoor de gegevens worden getoond hangt het programma van de haalverrichting af die de Inzichten van Activa in werking stellen om de gegevens van de Analyse terug te winnen.
+   >Omdat de eigenschap van de Inzichten van Activa typisch de gegevens van Oplossingen van haalt [!DNL Adobe Analytics] op een periodieke manier, kan de sectie van Oplossingen niet de meest recente gegevens tonen. De tijdspanne waarvoor de gegevens worden getoond hangt het programma van de haalverrichting af die de Inzichten van Activa in werking stellen om de gegevens van de Analyse terug te winnen.
 
-1. Als u de prestatiestatistieken voor het element gedurende een bepaalde periode grafisch wilt weergeven, selecteert u een punt in de sectie **[!UICONTROL Performance Statistics]**. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
+1. Als u de prestatiestatistieken voor het actief grafisch wilt weergeven over een tijdsperiode, selecteert u de periode in het dialoogvenster **[!UICONTROL Performance Statistics]** sectie. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -59,16 +59,16 @@ U kunt de elementinzichten van de metagegevenspagina weergeven.
    >
    >In tegenstelling tot de gegevens in de sectie van Oplossingen, toont de sectie van de Statistieken van Prestaties de meest recente gegevens.
 
-1. Klik **[!UICONTROL Get Embed Code]** onder de elementminiatuur om de insluitcode te verkrijgen voor het element dat u in websites opneemt om prestatiegegevens op te halen. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. Klik op **[!UICONTROL Get Embed Code]** onder de elementminiatuur. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
 ## Samengevoegde statistieken voor afbeeldingen weergeven {#viewing-aggregate-statistics-for-images}
 
-U kunt de scores van alle elementen in een map tegelijkertijd weergeven met **[!UICONTROL Insights View]**.
+U kunt de scores van alle elementen in een map tegelijk weergeven met **[!UICONTROL Insights View]**.
 
 1. Navigeer in de gebruikersinterface Elementen naar de map met de elementen waarvoor u inzichten wilt weergeven.
-1. Klik op de optie **[!UICONTROL Layout]** op de werkbalk en kies **[!UICONTROL Insights View]**.
+1. Klik op de knop **[!UICONTROL Layout]** en kiest u **[!UICONTROL Insights View]**.
 1. Op de pagina worden gebruiksscores voor de elementen weergegeven. Vergelijk de ratings van de verschillende activa en teken inzichten.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -87,36 +87,44 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 ## Elementengegevens configureren {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] Hiermee haalt u gebruiksgegevens op van digitale elementen die door websites van derden worden gebruikt  [!DNL Adobe Analytics]. Om ActivaInzichten toe te laten om deze gegevens terug te winnen en inzichten te produceren, vorm eerst de eigenschap om met [!DNL Adobe Analytics] te integreren.
+[!DNL Experience Manager Assets] haalt gebruiksgegevens op over digitale middelen die door websites van derden worden gebruikt [!DNL Adobe Analytics]. Om de Inzichten van Activa toe te laten om deze gegevens terug te winnen en inzichten te produceren, vorm eerst de eigenschap om met te integreren [!DNL Adobe Analytics].
 
 >[!NOTE]
 >
 >Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
 
-1. Klik in [!DNL Experience Manager] op **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+1. In [!DNL Experience Manager], klikt u op **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. Klik op de **[!UICONTROL Insights Configuration]**-kaart.
-1. Selecteer een datacenter in de wizard en geef uw referenties op, inclusief de naam van uw organisatie, gebruikersnaam en gedeeld geheim.
+1. Klik op de knop **[!UICONTROL Insights Configuration]** kaart.
 
-   ![Adobe Analytics for Assets Insights configureren in  [!DNL Experience Manager]](assets/insights_config2.png)
+1. Ga voor de toegangsgegevens van de Analyse-webservice naar **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL Company Settings]** > **[!UICONTROL Web Services]** en kopieert u de **[!UICONTROL Shared Secret]** toets.
+
+   Selecteer in de wizard de optie **[!UICONTROL Data Center]** en geef de weergavenaam van de **[!UICONTROL Company]**, Webservices **[!UICONTROL Username]** en plak de **[!UICONTROL Shared Secret]** toets.
+
+   Klik op **[!UICONTROL Authenticate]**.
+
+   ![Adobe Analytics for Assets Insights configureren in [!DNL Experience Manager]](assets/analytics-insight-config.png)
 
    *Afbeelding: Adobe Analytics for Assets Insights configureren in[!DNL Experience Manager]*
 
-1. Klik op **[!UICONTROL Authenticate]**. Nadat [!DNL Experience Manager] uw geloofsbrieven voor authentiek verklaart, van **[!UICONTROL Report Suite]** lijst, kies een het rapportreeks van Adobe Analytics van waar u de Inzichten van Activa wilt om gegevens te halen. Klik op **[!UICONTROL Add]**.
-1. Nadat [!DNL Experience Manager] uw rapportsuite heeft ingesteld, klikt u op **[!UICONTROL Done]**.
+1. Bij succesvolle authentificatie, zult u de Reeksen van het Rapport krijgen die in drop-down worden vermeld. Selecteer de Adobe Analytics **[!UICONTROL Report Suite]** van waar u de Inzichten van Activa om gegevens wilt halen. Klik op **[!UICONTROL Add]**.
+
+1. Na [!DNL Experience Manager] stelt uw rapportsuite in, klikt u op **[!UICONTROL Done]**.
+
+Zie voor meer informatie [Adobe Analytics Web Services](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
 
 ### Paginanummering {#page-tracker}
 
-Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Paginanummer voor u gegenereerd. Als u Assets Insights wilt inschakelen om de [!DNL Experience Manager]-elementen bij te houden die worden gebruikt in websites van derden, neemt u de paginacontrackercode op in de websitecode. Gebruik het hulpprogramma Paginanummering in Elementen om de code van de paginacontracker te genereren. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Paginanummer voor u gegenereerd. Om de Inzichten van Activa toe te laten om te volgen [!DNL Experience Manager] elementen die in websites van derden worden gebruikt, nemen de paginacontrackercode in de websitecode op. Gebruik het hulpprogramma Paginanummering in Elementen om de code van de paginacontracker te genereren. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. Klik in [!DNL Experience Manager] op **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+1. In [!DNL Experience Manager], klikt u op **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. Klik op de **[!UICONTROL Navigation]**-pagina op de **[!UICONTROL Insights Page Tracker]**-kaart.
-1. Klik **[!UICONTROL Download]** om de code van de paginacontracker te downloaden.
+1. Van de **[!UICONTROL Navigation]** pagina, klikt u op de knop **[!UICONTROL Insights Page Tracker]** kaart.
+1. Klikken **[!UICONTROL Download]** om de code van de paginacontracker te downloaden.
 
 <!--
 Add page tracker code, CQDOC-18045, 30/07/2021
