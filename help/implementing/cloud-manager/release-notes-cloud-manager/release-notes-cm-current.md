@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.12.0
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2021.12.0.
 feature: Release Information
-source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
+source-git-commit: 6389dfaf1e4569a0e7bf2c6dbfa30bb003c4db5b
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.12.0 is 16 dec
 * Er is een kleine update uitgevoerd naar de gebruikersinterface tijdens het kopiëren van TXT-items (&quot;TXT-waarde&quot; in plaats van &quot;TXT-record&quot;) om mogelijke verwarring te voorkomen.
 * [De documentatie met betrekking tot certificaatfouten](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) is bijgewerkt om aanvullende voorbeelden samen met het oplossen van problemen te behandelen.
 * Een optie is nu beschikbaar in de front-end pijpleiding uitvoering om vóór plaatsing aan productie te verwerpen of goed te keuren.
+* De versie van het AEM Project Archetype dat wordt gebruikt door Cloud Manager is bijgewerkt naar versie 32.
+
 
 ### Opgeloste problemen {#bug-fixes}
 
