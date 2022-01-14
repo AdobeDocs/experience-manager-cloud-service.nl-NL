@@ -4,9 +4,9 @@ description: Leer hoe u in Dynamic Media met video kunt werken, zoals tips en tr
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9842ee9117c33155ce206452d34d10123da9366e
+source-git-commit: d5ac82da6c46a020fc1ff9323a127b05551a3f88
 workflow-type: tm+mt
-source-wordcount: '9082'
+source-wordcount: '9100'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
       * Meer informatie over [Digitale elementen ordenen](/help/assets/organize-assets.md).
    * Upload uw primaire bronvideo&#39;s naar de mappen. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
 
-      * Dynamic Media ondersteunt vooral korte video&#39;s met een maximale lengte van 30 minuten.
+      * Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 50 x 50.
       * U kunt videobestanden uploaden van maximaal 15 GB elk.
       * [Uw video&#39;s uploaden](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Meer informatie over [Ondersteunde bestandsindelingen voor invoer](/help/assets/file-format-support.md).
@@ -273,7 +273,7 @@ Hier volgt een overzicht van tips voor het coderen van bronvideobestanden.
 
 Wanneer u een videobestand codeert, gebruikt u een videobronbestand van de hoogst mogelijke kwaliteit. Gebruik geen eerder gecodeerde videobestanden omdat deze bestanden al zijn gecomprimeerd en als u verder codeert, wordt een video van subparkwaliteit gemaakt.
 
-* Dynamic Media ondersteunt vooral korte video&#39;s met een maximale lengte van 30 minuten.
+* Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 50 x 50.
 * U kunt primaire bronvideobestanden uploaden die elk maximaal 15 GB bedragen.
 
 In de volgende tabel worden de aanbevolen grootte, hoogte-breedteverhouding en minimale bitsnelheid beschreven die uw bronvideobestanden moeten hebben voordat u ze codeert:
