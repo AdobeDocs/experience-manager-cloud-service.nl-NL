@@ -1,9 +1,9 @@
 ---
 title: 'Aangepaste lettertypen gebruiken '
 description: 'Aangepaste lettertypen gebruiken '
-source-git-commit: 7dd3785206b6d79caa500a155d3a6f3597303e65
+source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 0%
 
 **Cloud Service Communications-documentatie bevindt zich in bèta**
 
-Met Forms as a Cloud Service Communications kunt u XDP-sjablonen, op XDP gebaseerde PDF-documenten of Acrobat Forms (AcroForm) combineren met XML-gegevens om PDF-documenten te genereren. U kunt systeemlettertypen (lettertypen die in de Cloud Service zijn opgenomen) of aangepaste lettertypen (door de organisatie goedgekeurde lettertypen) gebruiken om de gegenereerde PDF-documenten te genereren.
-
-Systeemlettertypen zijn al beschikbaar in de Cloud Service. U kunt het ontwikkelingsproject van de Cloud Service gebruiken om douanedoopvonten aan uw milieu van de Cloud Service toe te voegen.
+Met Forms as a Cloud Service Communications kunt u een XDP-sjabloon, een op XDP gebaseerd PDF-document of een Acrobat-formulier (AcroForm) combineren met XML-gegevens om PDF-documenten te genereren. U kunt lettertypen gebruiken die zijn opgenomen in Cloud Service- of aangepaste lettertypen (door de organisatie goedgekeurde lettertypen) om de gegenereerde PDF-documenten te renderen. U kunt het ontwikkelingsproject van de Cloud Service gebruiken om douanedoopvonten aan uw milieu van de Cloud Service toe te voegen.
 
 ## Gedrag van PDF-documenten
 
-U kunt [een lettertype insluiten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) aan een PDF-document of gewoon de naam van een lettertype opgeven. Wanneer een lettertype is ingesloten, wordt het PDF-document op alle platforms op dezelfde manier weergegeven. Het gebruikte ingesloten lettertype voor een consistente vormgeving. Wanneer een lettertype niet is ingesloten, zoekt de PDF-renderingclient naar het lettertype op de client. Als het lettertype beschikbaar is op de clientcomputer, gebruikt de PDF het opgegeven lettertype, anders wordt de PDF weergegeven met een fallback-lettertype.
+U kunt [een lettertype insluiten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) naar een PDF-document. Wanneer een lettertype is ingesloten, wordt het PDF-document op alle platforms op dezelfde manier weergegeven. Het gebruikte ingesloten lettertype voor een consistente vormgeving. Wanneer een lettertype niet is ingesloten, is de rendering van het lettertype afhankelijk van de renderinstellingen van de PDF viewer-client. Als het lettertype beschikbaar is op de clientcomputer, gebruikt de PDF het opgegeven lettertype, anders wordt de PDF weergegeven met een fallback-lettertype.
 
 ## Aangepaste lettertypen toevoegen aan de as a Cloud Service Forms-omgeving
 
