@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -33,16 +33,45 @@ U kunt Experience Manager-elementen downloaden met de volgende methoden:
 
 ## Elementen downloaden met [!DNL Experience Manager] interface {#download-assets}
 
-De asynchrone downloaddienst verstrekt een kader voor naadloze download van grote activa. Kleinere bestanden worden in realtime gedownload vanuit de gebruikersinterface. [!DNL Experience Manager] één elementdownload niet archiveert op de plaats waar het oorspronkelijke bestand is gedownload. Deze functionaliteit maakt snellere downloads mogelijk. De grote bestanden worden asynchroon gedownload en [!DNL Experience Manager] meldt het invullen via de meldingen in het Postvak IN. Zie [begrijpen [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
+De asynchrone downloaddienst verstrekt een kader voor naadloze download van grote activa. Kleinere bestanden worden in realtime gedownload vanuit de gebruikersinterface. [!DNL Experience Manager] één elementdownload niet archiveert op de plaats waar het oorspronkelijke bestand is gedownload. Deze functionaliteit maakt snellere downloads mogelijk.
 
-![Melding downloaden](assets/download-notification.png)
+Standaard activeert Experience Manager een melding nadat de downloadworkflow is voltooid. Het downloadbericht wordt weergegeven in het dialoogvenster  [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-*Afbeelding: Melding downloaden via [!DNL Experience Manager] Postvak IN.*
+![Inbox-melding](assets/inbox-notification-for-large-downloads.png)
+
+<!--
+The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
+
+![Download notification](assets/download-notification.png)
+
+*Figure: Download notification via [!DNL Experience Manager] Inbox.*
+
+Asynchronous downloads are triggered in either of the following case:
+
+* If there are more than 10 assets or more than 100 MB to be downloaded.
+* If the download takes more than 30 seconds to prepare.
+-->
+
+### E-mailmelding inschakelen voor grote downloads {#enable-emails-for-large-downloads}
 
 Asynchrone downloads worden in een van de volgende gevallen geactiveerd:
 
-* Als er meer dan 10 elementen of meer dan 100 MB zijn om te downloaden.
-* Als het downloaden meer dan 30 seconden duurt om voor te bereiden.
+* Als er meer dan 10 elementen zijn
+* Als de downloadgrootte groter is dan 100 MB
+* Als het downloaden meer dan 30 seconden duurt om voor te bereiden
+
+Terwijl de afschuwelijke download achteraan loopt, kan de gebruiker blijven onderzoeken en verder in Experience Manager werken. Een out-of-box mechanisme is vereist om de gebruiker op de hoogte te brengen wanneer het downloadproces is voltooid. Om dit doel te bereiken, kunnen de beheerders e-maildienst vormen door opstelling een server SMTP. Zie [Mail Service configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+
+Nadat de e-mailservice is geconfigureerd, kunnen beheerders en gebruikers e-mailmeldingen inschakelen via de interface Experience Manager.
+
+E-mailmeldingen inschakelen:
+
+1. Aanmelden bij [!DNL Experience Manager Assets].
+1. Klik op het gebruikerspictogram in de rechterbovenhoek en klik vervolgens op **[!UICONTROL My Preferences]**. Het venster Gebruikersvoorkeuren wordt geopend.
+1. Selecteer **[!UICONTROL Asset Download email notifications]** selectievakje en klik op **[!UICONTROL Accept]**.
+
+   ![inschakelen-e-mailmeldingen voor grote downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+
 
 Voer de volgende stappen uit om elementen te downloaden:
 
@@ -50,8 +79,6 @@ Voer de volgende stappen uit om elementen te downloaden:
 1. Navigeer naar de elementen die u wilt downloaden. Selecteer de map of selecteer een of meer middelen in de map. Klik op de werkbalk op **[!UICONTROL Download]**.
 
    ![Beschikbare opties voor het downloaden van elementen van [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
-
-   *Afbeelding: Opties in het dialoogvenster Downloaden.*
 
 1. Selecteer in het dialoogvenster Downloaden de gewenste downloadopties.
 
@@ -66,13 +93,23 @@ Voer de volgende stappen uit om elementen te downloaden:
 
 1. Klik in het dialoogvenster op **[!UICONTROL Download]**.
 
+   Als e-mailmelding is ingeschakeld voor grote downloads, wordt een e-mail met een download-URL van de gearchiveerde ZIP-map in uw Postvak IN weergegeven. Klik op de downloadkoppeling in de e-mail om de ZIP-map te downloaden.
+
+   ![e-mailmeldingen voor grote downloads](/help/assets/assets/email-for-large-notification.png)
+
+   U kunt de melding ook in uw [!DNL Experience Manager] Postvak IN.
+
+   ![inbox-notifications-voor-grote downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
+
 ## Elementen downloaden die via koppelingen delen worden gedeeld {#link-share-download}
 
+<!--
 >[!NOTE]
 >
->Deze functionaliteit is beschikbaar in het pre-releasekanaal van de Experience Manager.
+>This functionality is available in the Experience Manager prerelease channel.
+-->
 
-Het delen van elementen via een koppeling is een handige manier om deze beschikbaar te maken voor belangstellenden zonder dat zij zich eerst hoeven aan te melden bij [!DNL Assets]. Als u een URL wilt genereren om elementen te delen, gebruikt u de opdracht [Functionaliteit voor delen koppelen](/help/assets/share-assets.md#sharelink).
+Het delen van elementen via een koppeling is een handige manier om deze beschikbaar te maken voor belangstellenden zonder dat zij zich eerst hoeven aan te melden bij [!DNL Assets]. Zie [Functionaliteit voor delen koppelen](/help/assets/share-assets.md#sharelink).
 
 Wanneer gebruikers elementen downloaden van gedeelde koppelingen [!DNL Assets] gebruikt een asynchrone service die snellere en ononderbroken downloads biedt. De te downloaden middelen worden op de achtergrond in een Postvak IN in een ZIP-archief met beheerbare bestandsgrootte in een wachtrij geplaatst. Voor zeer grote downloads wordt het downloaden afgekapt in bestanden van 100 GB.
 

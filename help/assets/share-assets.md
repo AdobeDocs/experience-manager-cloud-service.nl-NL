@@ -1,45 +1,58 @@
 ---
 title: Elementen, mappen en verzamelingen distribueren en delen
-description: Distribueer uw digitale elementen met methoden als delen als een koppeling, downloaden en via [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
+description: Digitale elementen distribueren met methoden als delen als een koppeling, downloaden en via [!DNL Brand Portal], [!DNL desktop app], en [!DNL Asset Link].
 contentOwner: AG
-feature: Middelenbeheer, Samenwerking, Asset Distribution
+feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
 
 # Elementen delen en distribueren die worden beheerd in [!DNL Experience Manager] {#share-assets-from-aem}
 
-[!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen van [!DNL Experience Manager Assets] als een [!DNL Cloud Service] te delen:
+[!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen te delen van [!DNL Experience Manager Assets] als [!DNL Cloud Service]:
 
-* [Delen als een koppeling](#sharelink).
-* [Elementen downloaden ](/help/assets/download-assets-from-aem.md) en afzonderlijk delen.
-* Delen met [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+* [Delen als koppeling](#sharelink).
+* [Elementen downloaden](/help/assets/download-assets-from-aem.md) en delen afzonderlijk.
+* Delen met [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 * Delen met [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
 * Delen met [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
 ## Elementen delen als koppeling {#sharelink}
 
-Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u met gebruikers wilt delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share`-locatie kunnen de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij [!DNL Assets].
+Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat ze zich eerst hoeven aan te melden bij [!DNL Assets]. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share` de locatie kan de koppelingen weergeven die met hen worden gedeeld.
 
 ![Dialoogvenster Delen van koppeling](assets/link-share-dialog.png)
 
 >[!NOTE]
 >
 >* U hebt ACL toestemming op de omslag of de activa nodig uitgeven die u als verbinding wilt delen.
->* Voordat u een koppeling met gebruikers deelt, [schakelt u uitgaande e-mails in](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Anders treedt een fout op.
+>* Voordat u een koppeling met gebruikers deelt, [uitgaande e-mailberichten inschakelen](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Anders treedt een fout op.
 
 
-1. Selecteer in de gebruikersinterface [!DNL Assets] het element dat u wilt delen als koppeling.
-1. Klik in de werkbalk op **[!UICONTROL Share Link]**. In het veld **[!UICONTROL Share Link]** wordt automatisch een elementkoppeling gemaakt. Kopieer deze koppeling en deel deze met de gebruikers. De standaardvervaltijd voor de verbinding is één dag.
+1. In de [!DNL Assets] -gebruikersinterface, selecteert u het element dat u wilt delen als koppeling.
+1. Klik in de werkbalk op de knop **[!UICONTROL Share Link]**. De [!UICONTROL Link Sharing] wordt weergegeven met een koppeling naar automatisch gegenereerde elementen in het dialoogvenster **[!UICONTROL Share Link]** veld.
 
-   >[!NOTE]
-   >
-   >Als een gedeeld element naar een andere locatie wordt verplaatst, werkt de koppeling niet meer. Maak de koppeling opnieuw en deel deze opnieuw met de gebruikers.
+   * Typ in het vak E-mailadres de e-mailadres van de gebruiker met wie u de koppeling wilt delen. U kunt de koppeling delen met meerdere gebruikers. Als de gebruiker lid is van uw organisatie, selecteert u de desbetreffende e-mailadres in de suggesties in de vervolgkeuzelijst. Als de gebruiker extern is, typt u de volledige e-mailid en drukt u op **[!UICONTROL Enter]**; e-mailadres wordt toegevoegd aan de lijst met gebruikers.
+
+   * In de **[!UICONTROL Subject]** typt u een onderwerp voor het element dat u wilt delen.
+   * In de **[!UICONTROL Message]** Typ indien nodig een bericht.
+   * In de **[!UICONTROL Expiration]** in het veld gebruikt u de datumkiezer om een vervaldatum en -tijd voor de koppeling op te geven. De vervaldatum is standaard ingesteld op 7 dagen vanaf de datum waarop u de koppeling deelt.
+   * De optie **[!UICONTROL Allow downlod of original file]** Schakel het selectievakje in zodat de ontvangers de oorspronkelijke vertoning kunnen downloaden.
+
+1. Klik op **[!UICONTROL Share]**. Een bericht bevestigt dat de koppeling wordt gedeeld met de gebruikers. Gebruikers ontvangen een e-mail met de gedeelde koppeling.
+
+<!--
+You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
+-->
+
+>[!NOTE]
+>
+>Als een gedeeld element naar een andere locatie wordt verplaatst, werkt de koppeling niet meer. Maak de koppeling opnieuw en deel deze opnieuw met de gebruikers.
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -110,15 +123,15 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Elementen downloaden en delen {#download-and-share-assets}
 
-Gebruikers kunnen de vereiste elementen downloaden en deze buiten [!DNL Experience Manager] delen. Voor meer informatie, zie [hoe te om activa te zoeken](/help/assets/search-assets.md), [hoe te om activa te downloaden](/help/assets/download-assets-from-aem.md), en [hoe te om inzamelingen te downloaden](manage-collections.md#download-a-collection)
+Gebruikers kunnen de vereiste middelen downloaden en deze delen buiten [!DNL Experience Manager]. Zie voor meer informatie [hoe te om activa te zoeken](/help/assets/search-assets.md), [middelen downloaden](/help/assets/download-assets-from-aem.md), en [hoe te om inzamelingen te downloaden](manage-collections.md#download-a-collection)
 
 ## Elementen delen met creatieve professionals {#share-with-creatives}
 
 Marketers en zakelijke gebruikers kunnen hun goedgekeurde bedrijfsmiddelen eenvoudig delen met hun creatieve professionals.
 
-* **Desktop-app** Experience Manager: De app werkt op Windows en Mac. Zie [Overzicht van de bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Zie [Elementen doorbladeren, zoeken en voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) voor informatie over hoe geautoriseerde desktopgebruikers gemakkelijk toegang kunnen krijgen tot de gedeelde elementen. De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [Elementen uploaden met de bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Experience Manager-bureaubladtoepassing**: De app werkt in Windows en Mac. Zie [Overzicht van desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Als u wilt weten hoe geautoriseerde desktopgebruikers gemakkelijk toegang kunnen krijgen tot de gedeelde elementen, raadpleegt u [elementen zoeken, zoeken en voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [elementen uploaden met bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Adobe-elementkoppeling**: De creatieve professionals kunnen middelen van binnen zoeken en gebruiken,  [!DNL Adobe InDesign]en  [!DNL Adobe Illustrator]  [!DNL Adobe Photoshop].
+* **Adobe-itemkoppeling**: Creatieve professionals kunnen rechtstreeks van binnenuit zoeken en middelen gebruiken [!DNL Adobe InDesign], [!DNL Adobe Illustrator], en [!DNL Adobe Photoshop].
 
 ## Assets delen configureren {#configure-sharing}
 
@@ -128,11 +141,11 @@ De verschillende opties om de activa te delen vereisen specifieke configuratie e
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u met gebruikers wilt delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share`-locatie kunnen de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij [!DNL Assets].
+Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u met gebruikers wilt delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share` de locatie kan de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat ze zich eerst hoeven aan te melden bij [!DNL Assets].
 
 >[!NOTE]
 >
->Als u verbindingen van uw instantie van de Auteur aan externe entiteiten wilt delen, zorg ervoor dat u slechts volgende URLs voor `GET` verzoeken blootstelt. Blokkeer andere URL&#39;s om ervoor te zorgen dat de instantie Auteur beveiligd is.
+>Als u koppelingen van uw instantie Auteur naar externe entiteiten wilt delen, dient u alleen de volgende URL&#39;s beschikbaar te maken voor `GET` verzoeken. Blokkeer andere URL&#39;s om ervoor te zorgen dat de instantie Auteur beveiligd is.
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
@@ -172,22 +185,22 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Desktopacties inschakelen voor gebruik met bureaubladtoepassing {#desktop-actions}
 
-Vanuit de [!DNL Assets]-gebruikersinterface in een browser kunt u de middelenlocaties verkennen of de middelen uitchecken en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden genoemd Desktopacties en om het toe te laten, zie [Desktopacties in  [!DNL Assets] Webinterface](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) toelaten.
+Van binnen [!DNL Assets] in een browser, kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden desktophandelingen genoemd en om deze in te schakelen, raadpleegt u [bureaubladhandelingen inschakelen in [!DNL Assets] webinterface](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
 ![Desktophandelingen als sneltoets gebruiken wanneer u met een bureaubladtoepassing werkt](assets/enable_desktop_actions.png)
 
 ### Te gebruiken configuraties [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. [!DNL Adobe Experience Manager Assets] wordt aangesloten op [!DNL Creative Cloud] desktop apps [!DNL Adobe InDesign], [!DNL Adobe Photoshop] en [!DNL Adobe Illustrator]. Met het [!DNL Adobe Asset Link]-deelvenster hebben creatieve toepassingen toegang tot inhoud die is opgeslagen in [!DNL Assets] en kunnen ze deze inhoud wijzigen zonder de creatieve toepassingen waarmee ze vertrouwd zijn, te verlaten.
+Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Het verbindt [!DNL Adobe Experience Manager Assets] with [!DNL Creative Cloud] bureaubladapps [!DNL Adobe InDesign], [!DNL Adobe Photoshop], en [!DNL Adobe Illustrator]. De [!DNL Adobe Asset Link] paneel stelt ontwerpers in staat toegang te krijgen tot inhoud die is opgeslagen in [!DNL Assets] zonder de creatieve toepassingen die ze het meest kennen, over te laten.
 
-Zie [hoe te om  [!DNL Assets] te vormen om het met [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) te gebruiken.
+Zie [hoe te vormen [!DNL Assets] gebruiken met [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## Beste werkwijzen en probleemoplossing {#bestpractices}
 
 * Elementmappen of -verzamelingen die in hun naam een witruimte bevatten, worden mogelijk niet gedeeld.
-* Als gebruikers de gedeelde elementen niet kunnen downloaden, controleert u met de beheerder van de Experience Manager wat de [downloadlimieten](#maxdatasize) zijn.
-* Een gebruiker kan alleen een voorvertoning weergeven van een video die wordt gedeeld via het delen van koppelingen als voor de video een statische video-uitvoering beschikbaar is op de locatie `/jcr:content/renditions` in het knooppunt van de video in de opslagplaats. De voorvertoning is niet afhankelijk van de beschikbaarheid van een [!DNL Dynamic Media]-uitvoering.
-* Wanneer u een video-element downloadt via gedeelde koppelingen, worden de [!DNL Dynamic Media]-vertoningen niet opgenomen in het gedownloade archief.
+* Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de beheerder van de Experience Manager om [downloadlimieten](#maxdatasize) zijn.
+* Een gebruiker kan alleen een voorvertoning weergeven van een video die wordt gedeeld via het delen van koppelingen als voor de video een statische video-uitvoering beschikbaar is op `/jcr:content/renditions` locatie in het knooppunt van de video in de opslagplaats. De voorvertoning is niet afhankelijk van de beschikbaarheid van een [!DNL Dynamic Media] uitvoering.
+* Wanneer u een video-element downloadt via gedeelde koppelingen, wordt de [!DNL Dynamic Media] Uitvoeringen worden niet opgenomen in het gedownloade archief.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your Experience Manager administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
