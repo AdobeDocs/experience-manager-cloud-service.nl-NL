@@ -2,9 +2,9 @@
 title: Back-up en herstel in AEM as a Cloud Service
 description: Back-up en herstel in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
+source-git-commit: 7778430b409bdd6f30530d34f2e8cd10d63df153
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Klanten dienen een ondersteuningsticket in te dienen waarin het probleem wordt b
 
 AEM as a Cloud Service ondersteuning:
 
+* Back-up en herstel voor stadium-, productie- en ontwikkelomgevingen.
 * 24-uurs herstel, wat betekent dat het systeem in de laatste 24 uur op elk punt kan worden hersteld.
 * Herstel van een specifieke, door Adobe gedefinieerde tijdstempel die tweemaal per dag is genomen gedurende de laatste 7 dagen.  Alle replicatieberichten (verwijderen, bijwerken, maken) blijven behouden.
 
