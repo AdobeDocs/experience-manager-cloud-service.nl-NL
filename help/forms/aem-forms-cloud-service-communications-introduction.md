@@ -2,9 +2,9 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
+source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1869'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,12 @@ U kunt een document op verzoek genereren of een batchtaak maken om meerdere docu
 
 * gestroomlijnde mogelijkheden voor het genereren van documentatie op aanvraag en batchverwerking
 
-* HTTP-API&#39;s bieden om de integratie met bestaande systemen te vergemakkelijken
+* HTTP-API&#39;s voor eenvoudigere integratie met bestaande systemen. Afzonderlijke API&#39;s voor bewerkingen op aanvraag (lage latentie) en batchbewerkingen (bewerkingen met hoge doorvoer) worden opgenomen. Hierdoor wordt het genereren van documenten een efficiënte taak.
 
 * een veilige toegang tot gegevens. Communicatie APIs verbindt met en heeft toegang tot gegevens slechts van klant aangewezen gegevensbewaarplaatsen, maakt geen lokale exemplaren van gegevens, die mededelingen hoogst veilig maken.
 
-* afzonderlijke API&#39;s voor bewerkingen met lage latentie en hoge doorvoer, waardoor het genereren van documenten een efficiënte taak wordt.
-
 ![Een voorbeeld van een creditcardformulier](assets/statement.png)
+Een voorbeeldcreditcardverklaring kan worden gecreeerd gebruikend Communicatie APIs. De verklaring gebruikt zelfde malplaatje maar afzonderlijke gegevens voor elke klant afhankelijk van hun gebruik van creditcard.
 
 ## Hoe werkt het?
 
@@ -143,16 +142,15 @@ Voordat u begint met het genereren van documenten met communicatie-API&#39;s, mo
 
 ### Formuliergegevens {#form-data}
 
-Communicatie-API&#39;s accepteren een formulierontwerp dat meestal wordt gemaakt in [Designer](use-forms-designer.md) en XML-formuliergegevens als invoer. Als u een document wilt vullen met gegevens, moet de XML-formuliergegevens een XML-element bevatten voor elk formulierveld dat u wilt vullen. De naam van het XML-element moet overeenkomen met de veldnaam. Een XML-element wordt genegeerd als het niet overeenkomt met een formulierveld of als de naam van het XML-element niet overeenkomt met de veldnaam. Het is niet nodig de volgorde aan te passen waarin de XML-elementen worden weergegeven. De belangrijkste factor is dat de XML-elementen met de overeenkomende waarden worden opgegeven.
+Communicatie-API&#39;s accepteren een formulierontwerp dat meestal wordt gemaakt in [Designer](use-forms-designer.md) en XML-formuliergegevens als invoer. Als u een document wilt vullen met gegevens, moet de XML-formuliergegevens een XML-element bevatten voor elk formulierveld dat u wilt vullen. De naam van het XML-element moet overeenkomen met de veldnaam. Als een XML-element niet overeenkomt met een formulierveld of als de naam van het XML-element niet overeenkomt met de veldnaam, wordt het XML-element genegeerd. Het is niet nodig de volgorde aan te passen waarin de XML-elementen worden weergegeven. De belangrijkste factor is dat de XML-elementen met de overeenkomende waarden worden opgegeven.
 
 Bekijk het volgende voorbeeld van een aanvraagformulier voor een lening:
 
 ![Toepassingsformulier laden](assets/loanFormData.png)
 
-Als u gegevens wilt samenvoegen in dit formulierontwerp, maakt u een XML-gegevensbron die overeenkomt met het formulier. De volgende XML vertegenwoordigt een XML-gegevensbron die overeenkomt met het voorbeeld van een hypotheektoepassingsformulier.
+Als u gegevens wilt samenvoegen in dit formulierontwerp, maakt u een XML-gegevensbron die overeenkomt met de formulierhiërarchie, veldnamen en gegevenstypen. De volgende XML vertegenwoordigt een XML-gegevensbron die overeenkomt met het voorbeeld van een hypotheektoepassingsformulier.
 
 ```XML
-<?xml version="1.0" encoding="UTF-8" ?>
 * <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
 * <xfa:data>
 * <data>
@@ -196,11 +194,11 @@ For email functionality, you can create a process in Experience Manager Workflow
 
 ### Afdrukbare gebieden {#printable-areas}
 
-De standaard niet-afdrukbare marge van 0,25 inch is niet exact voor labelprinters en varieert van printer tot printer en van labelgrootte tot labelgrootte. Het wordt aanbevolen de marge van 0,25 inch te behouden of te verlagen. U wordt echter aangeraden de niet-afdrukbare marge niet te verhogen. Anders wordt de informatie in het afdrukbare gebied niet correct afgedrukt.
+De standaard niet-afdrukbare marge van 0,25 inch is niet exact voor labelprinters en varieert van printer tot printer en van labelgrootte tot labelgrootte. Het is echter aan te raden de marge van 0,25 inch te behouden of te verkleinen. U wordt echter aangeraden de niet-afdrukbare marge niet te verhogen. Anders wordt de informatie in het afdrukbare gebied niet correct afgedrukt.
 
 Zorg altijd dat u het juiste XDC-bestand voor de printer gebruikt. Vermijd bijvoorbeeld het kiezen van een XDC-bestand voor een 300 dpi-printer en het verzenden van het document naar een 200 dpi-printer.
 
-### Scripts {#scripts}
+### Scripts voor alleen XFA-formulieren (XDP/PDF) {#scripts}
 
 Een formulierontwerp dat wordt gebruikt met de communicatie-API&#39;s kan scripts bevatten die op de server worden uitgevoerd. Zorg ervoor dat een formulierontwerp geen scripts bevat die op de client worden uitgevoerd. Voor informatie over het maken van scripts voor formulierontwerp raadpleegt u [Help bij Designer](use-forms-designer.md).
 
@@ -250,7 +248,7 @@ Een apparaatprofiel (XDC-bestand) is een printerbeschrijvingsbestand in XML-inde
 * dpl600.xdc
 
 U kunt de meegeleverde XDC-bestanden gebruiken om afdrukdocumenten te genereren of deze naar wens aan te passen.
-&lt;!-* Het is niet nodig deze bestanden te wijzigen om documenten te maken. Nochtans, kunt u hen wijzigen om aan uw bedrijfsvereisten te voldoen. —>
+<!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
 Deze bestanden zijn referentie-XDC-bestanden die de functies van specifieke printers ondersteunen, zoals residente lettertypen, papierladen en nietmachines. Het doel van deze verwijzing is om u te helpen begrijpen hoe u uw eigen printers kunt instellen met apparaatprofielen. De verwijzing is ook een uitgangspunt voor gelijkaardige printers in de zelfde productlijn.
 
