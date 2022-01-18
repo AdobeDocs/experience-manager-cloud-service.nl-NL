@@ -2,9 +2,9 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 0673aa4f2f0ad2f0a5205bf929de3f26aea0d879
+source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1840'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Communicatiegebruik [PDF- en XFA-sjablonen](#supported-document-types) with [XML
 
 Met behulp van een communicatie-API kunt u een sjabloon (XFA of PDF) combineren met klantgegevens ([XML-gegevens](#form-data)) om documenten te genereren in de indelingen PDF en Afdrukken, zoals PS, PCL, DPL, IPL en ZPL.
 
-Doorgaans maakt u een sjabloon met Designer en gebruikt u communicatie-API&#39;s om gegevens samen te voegen met de sjabloon. Uw toepassing kan het uitvoerdocument naar een netwerkprinter, een lokale printer of een opslagsysteem verzenden voor archivering. Een typisch uit de doos en de douanewerkschema&#39;s kijken als het volgende:
+Doorgaans maakt u een sjabloon met [Designer](use-forms-designer.md) en gebruik Communicatie APIs om gegevens met het malplaatje samen te voegen. Uw toepassing kan het uitvoerdocument naar een netwerkprinter, een lokale printer of een opslagsysteem verzenden voor archivering. Een typisch uit de doos en de douanewerkschema&#39;s kijken als het volgende:
 
 ![Communicatieworkflow](assets/communicaions-workflow.png)
 
@@ -44,9 +44,9 @@ Afhankelijk van het gebruiksgeval kunt u deze documenten ook beschikbaar stellen
 
 Communicatie biedt HTTP-API&#39;s voor het genereren van documenten op aanvraag en in batches:
 
-* **Synchrone API&#39;s** zijn geschikt voor on-demand, lage latentie en scenario&#39;s voor het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op gebruikersacties. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
+* **[Synchrone API&#39;s](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** zijn geschikt voor on-demand, lage latentie en scenario&#39;s voor het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op gebruikersacties. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
 
-* **Batch-API&#39;s (Asynchrone API&#39;s)** zijn geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Deze API&#39;s genereren documenten batchgewijs. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
+* **[Batch-API&#39;s (Asynchrone API&#39;s)](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** zijn geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Deze API&#39;s genereren documenten batchgewijs. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
 
 ## Onboarding
 
@@ -143,7 +143,7 @@ Voordat u begint met het genereren van documenten met communicatie-API&#39;s, mo
 
 ### Formuliergegevens {#form-data}
 
-Communicatie-API&#39;s accepteren een formulierontwerp dat gewoonlijk in Designer en XML-formuliergegevens wordt gemaakt als invoer. Als u een document wilt vullen met gegevens, moet de XML-formuliergegevens een XML-element bevatten voor elk formulierveld dat u wilt vullen. De naam van het XML-element moet overeenkomen met de veldnaam. Een XML-element wordt genegeerd als het niet overeenkomt met een formulierveld of als de naam van het XML-element niet overeenkomt met de veldnaam. Het is niet nodig de volgorde aan te passen waarin de XML-elementen worden weergegeven. De belangrijkste factor is dat de XML-elementen met de overeenkomende waarden worden opgegeven.
+Communicatie-API&#39;s accepteren een formulierontwerp dat meestal wordt gemaakt in [Designer](use-forms-designer.md) en XML-formuliergegevens als invoer. Als u een document wilt vullen met gegevens, moet de XML-formuliergegevens een XML-element bevatten voor elk formulierveld dat u wilt vullen. De naam van het XML-element moet overeenkomen met de veldnaam. Een XML-element wordt genegeerd als het niet overeenkomt met een formulierveld of als de naam van het XML-element niet overeenkomt met de veldnaam. Het is niet nodig de volgorde aan te passen waarin de XML-elementen worden weergegeven. De belangrijkste factor is dat de XML-elementen met de overeenkomende waarden worden opgegeven.
 
 Bekijk het volgende voorbeeld van een aanvraagformulier voor een lening:
 
@@ -186,13 +186,13 @@ Als u gegevens wilt samenvoegen in dit formulierontwerp, maakt u een XML-gegeven
 
 Voor volledige toegang tot de renderingmogelijkheden van de communicatie-API&#39;s wordt aanbevolen een XDP-bestand als invoer te gebruiken. Soms kan een PDF-bestand worden gebruikt. Het gebruik van een PDF-bestand als invoer heeft echter de volgende beperkingen:
 
-Een PDF-document dat geen XFA-stream bevat, kan niet worden gerenderd als PostScript, PCL of ZPL. Communicatie-API&#39;s kunnen PDF-documenten met XFA-streams (dat wil zeggen formulieren die zijn gemaakt in Designer) weergeven in laser- en labelindelingen. Als het PDF-document is ondertekend, gecertificeerd of gebruiksrechten bevat (toegepast met de AEM Forms Reader Extensions-service), kan het niet worden gerenderd naar deze afdrukindelingen.
+Een PDF-document dat geen XFA-stream bevat, kan niet worden gerenderd als PostScript, PCL of ZPL. Communicatie-API&#39;s kunnen PDF-documenten renderen met XFA-streams (formulieren die zijn gemaakt in [Designer](use-forms-designer.md)) in laser- en labelindelingen. Als het PDF-document is ondertekend, gecertificeerd of gebruiksrechten bevat (toegepast met de AEM Forms Reader Extensions-service), kan het niet worden gerenderd naar deze afdrukindelingen.
 
-&lt;!-* * Uitvoeropties zoals PDF-versie en gecodeerde PDF worden niet ondersteund voor Acrobat-formulieren. Ze zijn geldig voor PDF forms die XFA-streams bevatten. deze formulieren kunnen echter niet worden ondertekend of gecertificeerd.
+<!-- Run-time options such as PDF version and tagged PDF are not supported for Acrobat forms. They are valid for PDF forms that contain XFA streams; however, these forms cannot be signed or certified. 
 
-### E-mailondersteuning {#email-support}
+### Email support {#email-support}
 
-Voor e-mailfunctionaliteit kunt u een proces in de Workflows van de Experience Manager maken dat de E-mailstap gebruikt. Een workflow vertegenwoordigt een bedrijfsproces dat u automatiseert. —>
+For email functionality, you can create a process in Experience Manager Workflows that uses the Email Step. A workflow represents a business process that you are automating. -->
 
 ### Afdrukbare gebieden {#printable-areas}
 
@@ -202,9 +202,10 @@ Zorg altijd dat u het juiste XDC-bestand voor de printer gebruikt. Vermijd bijvo
 
 ### Scripts {#scripts}
 
-Een formulierontwerp dat wordt gebruikt met de communicatie-API&#39;s kan scripts bevatten die op de server worden uitgevoerd. Zorg ervoor dat een formulierontwerp geen scripts bevat die op de client worden uitgevoerd. Zie Help bij Designer voor informatie over het maken van scripts voor formulierontwerp.
+Een formulierontwerp dat wordt gebruikt met de communicatie-API&#39;s kan scripts bevatten die op de server worden uitgevoerd. Zorg ervoor dat een formulierontwerp geen scripts bevat die op de client worden uitgevoerd. Voor informatie over het maken van scripts voor formulierontwerp raadpleegt u [Help bij Designer](use-forms-designer.md).
 
-&lt;!-* ##### Werken met overwegingen voor lettertypedocument voor het werken met lettertypen>> —>
+<!-- #### Working with Fonts
+ Document Considerations for Working with Fonts>> -->
 
 ### Lettertypetoewijzing {#font-mapping}
 
@@ -255,7 +256,7 @@ Deze bestanden zijn referentie-XDC-bestanden die de functies van specifieke prin
 
 ### Werken met het XCI-configuratiebestand {#working-with-xci-files}
 
-Communicatie APIs gebruikt een XCI configuratiedossier om taken uit te voeren, zoals het controleren of de output één enkel paneel of gepagineerd is. Hoewel dit bestand instellingen bevat die kunnen worden ingesteld, is het niet standaard om deze waarde te wijzigen. &lt;!-* Het bestand default.xci bevindt zich in de map svcdata\XMLFormService. —>
+Communicatie APIs gebruikt een XCI configuratiedossier om taken uit te voeren, zoals het controleren of de output één enkel paneel of gepagineerd is. Hoewel dit bestand instellingen bevat die kunnen worden ingesteld, is het niet standaard om deze waarde te wijzigen. <!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
 
 U kunt een gewijzigd XCI-bestand doorgeven terwijl u een communicatie-API gebruikt. Als u dit doet, maakt u een kopie van het standaardbestand, wijzigt u alleen de waarden die moeten worden gewijzigd om aan uw bedrijfsvereisten te voldoen en gebruikt u het aangepaste XCI-bestand.
 
