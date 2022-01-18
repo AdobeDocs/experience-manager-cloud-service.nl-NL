@@ -1,13 +1,13 @@
 ---
 title: Elementen downloaden
 description: Elementen downloaden van [!DNL Adobe Experience Manager Assets] en schakelt u de downloadfunctionaliteit in of uit.
-contentOwner: AG
+contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ U kunt Experience Manager-elementen downloaden met de volgende methoden:
 
 ## Elementen downloaden met [!DNL Experience Manager] interface {#download-assets}
 
-De asynchrone downloaddienst verstrekt een kader voor naadloze download van grote activa. Kleinere bestanden worden in realtime gedownload vanuit de gebruikersinterface. [!DNL Experience Manager] één elementdownload niet archiveert op de plaats waar het oorspronkelijke bestand is gedownload. Deze functionaliteit maakt snellere downloads mogelijk.
+De asynchrone downloaddienst verstrekt een kader voor naadloze download van grote activa. Kleinere bestanden worden in real-time gedownload vanuit de gebruikersinterface. [!DNL Experience Manager] één elementdownload niet archiveert op de plaats waar het oorspronkelijke bestand is gedownload. Deze functionaliteit maakt snellere downloads mogelijk.
 
 Standaard activeert Experience Manager een melding nadat de downloadworkflow is voltooid. Het downloadbericht wordt weergegeven in het dialoogvenster  [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
@@ -52,15 +52,15 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
-### E-mailmelding inschakelen voor grote downloads {#enable-emails-for-large-downloads}
+### E-mailmeldingen inschakelen voor grote downloads {#enable-emails-for-large-downloads}
 
 Asynchrone downloads worden in een van de volgende gevallen geactiveerd:
 
-* Als er meer dan 10 elementen zijn
+* Indien er meer dan tien activa zijn
 * Als de downloadgrootte groter is dan 100 MB
 * Als het downloaden meer dan 30 seconden duurt om voor te bereiden
 
-Terwijl de afschuwelijke download achteraan loopt, kan de gebruiker blijven onderzoeken en verder in Experience Manager werken. Een out-of-box mechanisme is vereist om de gebruiker op de hoogte te brengen wanneer het downloadproces is voltooid. Om dit doel te bereiken, kunnen de beheerders e-maildienst vormen door opstelling een server SMTP. Zie [Mail Service configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Terwijl de asynchrone download achteraan loopt, kan de gebruiker blijven onderzoeken en verder in Experience Manager werken. Een out-of-box mechanisme is vereist om de gebruiker op de hoogte te brengen wanneer het downloadproces is voltooid. Om dit doel te bereiken, kunnen de beheerders e-maildienst vormen door opstelling een server SMTP. Zie [Mail Service configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Nadat de e-mailservice is geconfigureerd, kunnen beheerders en gebruikers e-mailmeldingen inschakelen via de interface Experience Manager.
 
