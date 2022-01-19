@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.1.0
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.1.0
 feature: Release Information
-source-git-commit: fec3a69db3b05a6b750ebf718f32f599cac24d0c
+source-git-commit: 0bc2dedd9bfbf138fddf9fe112ba0d66444fcb41
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '134'
 ht-degree: 3%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 3%
 # Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.1.0 {#release-notes}
 
 Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.1.0.
-
->[!NOTE]
->Klik op [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
-
 
 ## De tool Content Transfer {#ctt-release}
 
