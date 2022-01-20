@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 7c247f5080c59f07bc9ba549fb746bf62cca80ba
+source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
 workflow-type: tm+mt
-source-wordcount: '2150'
+source-wordcount: '2224'
 ht-degree: 1%
 
 ---
@@ -43,17 +43,27 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 
 Het definiëren van indexen kan uit deze drie gebruiksgevallen bestaan:
 
-1. Een nieuwe klantindexdefinitie toevoegen
-1. Een bestaande indexdefinitie bijwerken. Dit betekent in feite dat een nieuwe versie van een bestaande indexdefinitie moet worden toegevoegd
+1. Het toevoegen van een nieuwe definitie van de klantenindex.
+1. Een bestaande indexdefinitie bijwerken. In feite betekent dit dat een nieuwe versie van een bestaande indexdefinitie moet worden toegevoegd.
 1. Verwijderen van een bestaande index die overbodig of verouderd is.
 
 Voor zowel de punten 1 als 2 hierboven moet u een nieuwe indexdefinitie maken als onderdeel van uw aangepaste codebasis in het respectievelijke releaseprogramma voor Cloud Manager. Zie voor meer informatie de [Distribueren naar AEM as a Cloud Service documentatie](/help/implementing/deploying/overview.md).
+
+## Indexnamen {#index-names}
+
+Een indexdefinitie kan zijn:
+
+1. Een index die buiten het vak valt. Eén voorbeeld is `/oak:index/cqPageLucene-2`.
+1. Een aanpassing van een index die buiten het vak valt. Dergelijke aanpassingen worden bepaald door de klant. Eén voorbeeld is `/oak:index/cqPageLucene-2-custom-1`.
+1. Een volledig aangepaste index. Eén voorbeeld is `/oak:index/acme.product-1-custom-2`. Om het noemen van botsingen te vermijden, vereisen wij dat de volledig aangepaste indexen een prefix hebben, b.v. `acme.`
+
+Merk op dat zowel de aanpassing van een uit-van-de-doos index, als volledig douaneindexen, moet bevatten `-custom-`. Alleen volledig aangepaste indexen moeten beginnen met een voorvoegsel.
 
 ### De nieuwe indexdefinitie voorbereiden {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Als u een waarde buiten de index van het vak aanpast, bijvoorbeeld `damAssetLucene-6`, kopieer de laatste versie van de definitie in de index van het vak van een *Cloud Service* en voeg uw aanpassingen bovenaan toe, zorgt dit ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. De `tika` knooppunt onder `/oak:index/damAssetLucene-6/tika` is een vereist knooppunt en moet ook deel uitmaken van uw aangepaste index en bestaat niet in de SDK van de cloud.
+>Als u een index buiten het vak aanpast, bijvoorbeeld `damAssetLucene-6`, kopieer de meest recente out-of-box-indexdefinitie van een *Cloud Service* en voeg uw aanpassingen bovenaan toe, zorgt dit ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. De `tika` knooppunt onder `/oak:index/damAssetLucene-6/tika` is een vereist knooppunt en moet ook deel uitmaken van uw aangepaste index en bestaat niet in de SDK van de cloud.
 
 U moet een nieuw indexdefinitiepakket voorbereiden dat de daadwerkelijke indexdefinitie bevat, die dit noemingspatroon volgt:
 
@@ -79,7 +89,7 @@ Indexdefinities zijn nu gemarkeerd als aangepast en versieingesteld:
 
 * De indexdefinitie zelf (bijvoorbeeld `/oak:index/ntBaseLucene-custom-1`)
 
-Om een index op te stellen, moet de indexdefinitie (`/oak:index/definitionname`) moet worden geleverd via `ui.apps` via Git en het implementatieproces van Cloud Manager.
+Daarom om een index op te stellen, de indexdefinitie (`/oak:index/definitionname`) moet worden geleverd via `ui.apps` via Git en het implementatieproces van Cloud Manager.
 
 Nadat de nieuwe indexdefinitie is toegevoegd, moet de nieuwe toepassing worden geïmplementeerd via Cloud Manager. Na de implementatie worden twee taken gestart, die verantwoordelijk zijn voor het toevoegen (en indien nodig samenvoegen) van de indexdefinities aan respectievelijk MongoDB en Azure Segment Store voor auteur en publicatie. De onderliggende repository&#39;s worden opnieuw gedestilleerd met de nieuwe indexdefinities, voordat de Blauw-Groen omschakeling plaatsvindt.
 
@@ -154,7 +164,7 @@ Indexbeheer wordt momenteel alleen ondersteund voor indexen van het type `lucene
 
 ### Een index toevoegen {#adding-an-index}
 
-Een benoemde index toevoegen `/oak:index/acme.product-custom-1` om in een nieuwe versie van de toepassing en later te worden gebruikt, moet de index als volgt worden gevormd:
+Een volledig aangepaste index toevoegen met de naam `/oak:index/acme.product-custom-1` om in een nieuwe versie van de toepassing en later te worden gebruikt, moet de index als volgt worden gevormd:
 
 `acme.product-1-custom-1`
 
