@@ -1,10 +1,10 @@
 ---
 title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.11.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.11.0
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2021.11.0
 feature: Release Information
-source-git-commit: d6aa3097e558d4e78f20493f214167db57f1a013
+source-git-commit: e402578fc95fd97f808fde01a860d4c583af4c9b
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -14,14 +14,15 @@ ht-degree: 0%
 Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->Klik op [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>
+>Zie [deze pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de actuele releaseopmerkingen voor Adobe Experience Manager as a Cloud Service.
 
 ## Releasedatum {#release-date}
 
 De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.11.0 is 4 november 2021.
 De volgende release is gepland voor 16 december 2021.
 
-### Wat is er nieuw? {#what-is-new}
+## Wat is er nieuw? {#what-is-new}
 
 * Gebruikers kunnen nu nieuwe Front End-pijpleidingen gebruiken om front-end code op een versnelde manier uitsluitend te implementeren. Zie [Cloud Manager frontend Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) voor meer informatie.
 
@@ -50,7 +51,7 @@ De volgende release is gepland voor 16 december 2021.
 
 * Het CSV-bestand voor kwaliteitsafgifte bevat nu de tijdstempel voor elke kwaliteitsuitgave.
 
-### Opgeloste problemen {#bug-fixes}
+## Opgeloste problemen {#bug-fixes}
 
 * Bepaalde unorthodox bouwt configuraties resulteerde in onnodige dossiers die in het geheime voorgeheugen van Maven van de pijpleiding worden opgeslagen die in vreemde netwerk I/O resulteerde toen het beginnen en het tegenhouden van de bouwstijlcontainer.
 
@@ -61,4 +62,3 @@ De volgende release is gepland voor 16 december 2021.
 * Foutbericht wanneer het maximale aantal opslagplaatsen is bereikt, geeft geen reden voor de fout aan.
 
 * In zeldzame gevallen faalden de pijpleidingen vanwege een onjuiste herbehandeling van bepaalde responscodes.
-
