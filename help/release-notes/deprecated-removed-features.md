@@ -2,9 +2,9 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: bbd8277fc5ed81bc656900ec3a993630aa5ffad5
+source-git-commit: d55e2aec4718e752cfc0dfa610abf1a1d36a583f
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '603'
 ht-degree: 5%
 
 ---
@@ -46,16 +46,16 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 
 Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd uit [!DNL Experience Manager] with [!DNL Experience Manager] als [!DNL Cloud Service].
 
-| Gebied | Functie | Vervanging |
-| ------------ | ------------------ | ----------- |
-| Gebruikersinterface | De klassieke gebruikersinterface wordt verwijderd uit de gebruikersinterface van het product. Een paar Klassieke dialogen UI zijn beschikbaar voor een paar uitgezochte mogelijkheden, zoals de Controleur van de Verbinding, de Leegmaken van de Versie, en sommige configuraties van de Cloud Service. Binnenkort [productupdates](/help/release-notes/home.md) kan de beschikbaarheid van de klassieke gebruikersinterface verder verwijderen. | Standaardinterface |
-| [!DNL Dynamic Media] | Eerdere integratie met [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) en [Dynamic Media Hybride, modus](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) niet beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. | Gebruiken [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) verstrekt [!DNL Experience Manager] als [!DNL Cloud Service]. |
-| [!DNL Sites] | Portal Director en Portlet-component | Deze mogelijkheden zijn verouderd in [!DNL Experience Manager] 6.4 en zijn nu verwijderd uit [!DNL Experience Manager]. |
-| [!DNL Sites] | Design Importer | Deze mogelijkheid is verwijderd als onveranderlijke gedeelten van het dialoogvenster [!DNL Experience Manager] opslagruimte zijn niet toegankelijk bij uitvoering. |
-| [!DNL Assets] | [!DNL Assets] delen met Marketing Cloud Assets Core Service en Creative Cloud services is niet beschikbaar. | Voor integratie met [!DNL Adobe Creative Cloud], gebruik [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). |
-| [!DNL Foundation] | Ondersteuning voor Apache Sling-gegevensbronnen (OSGi bundle org.apache.sling.datasource) | N.v.t. |
-| [!DNL Foundation] | Ondersteuning voor JST-scriptsjablonen (OSGi bundle org.apache.sling.scripting.jst) | N.v.t. |
-| [!DNL Foundation] | Ondersteuning voor het Apache Felix Http-whiteboard | OSGi Http-whiteboard |
+| Gebied | Functie | Vervanging | Datum van verwijderen doel |
+| ------------ | ------------------ | ----------- | ------------------- |
+| Gebruikersinterface | De klassieke gebruikersinterface wordt verwijderd uit de gebruikersinterface van het product. Een paar Klassieke dialogen UI zijn beschikbaar voor een paar uitgezochte mogelijkheden, zoals de Controleur van de Verbinding, de Leegmaken van de Versie, en sommige configuraties van de Cloud Service. Binnenkort [productupdates](/help/release-notes/home.md) kan de beschikbaarheid van de klassieke gebruikersinterface verder verwijderen. | Standaardinterface | Verwijderd |
+| [!DNL Dynamic Media] | Eerdere integratie met [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) en [Dynamic Media Hybride, modus](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) niet beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. | Gebruiken [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) verstrekt [!DNL Experience Manager] als [!DNL Cloud Service]. | Verwijderd |
+| [!DNL Sites] | Portal Director en Portlet-component | Deze mogelijkheden zijn verouderd in [!DNL Experience Manager] 6.4 en zijn nu verwijderd uit [!DNL Experience Manager]. | Verwijderd |
+| [!DNL Sites] | Design Importer | Deze mogelijkheid is verwijderd als onveranderlijke gedeelten van het dialoogvenster [!DNL Experience Manager] opslagruimte zijn niet toegankelijk bij uitvoering. | Verwijderd |
+| [!DNL Assets] | [!DNL Assets] delen met Marketing Cloud Assets Core Service en Creative Cloud services is niet beschikbaar. | Voor integratie met [!DNL Adobe Creative Cloud], gebruik [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). | Verwijderd |
+| [!DNL Foundation] | Ondersteuning voor Apache Sling-gegevensbronnen (OSGi bundle org.apache.sling.datasource) | N.v.t. | Verwijderd |
+| [!DNL Foundation] | Ondersteuning voor JST-scriptsjablonen (OSGi bundle org.apache.sling.scripting.jst) | N.v.t. | Verwijderd |
+| [!DNL Foundation] | Ondersteuning voor het Apache Felix Http-whiteboard | OSGi Http-whiteboard | maart 2022 |
 
 ## Java API {#java-api}
 
