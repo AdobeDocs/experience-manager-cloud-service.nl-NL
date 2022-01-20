@@ -2,9 +2,9 @@
 title: Verouderde API's
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde API's in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: d7fc88481ab0d85f62ad0b9891c286cee92edfae
+source-git-commit: bbd8277fc5ed81bc656900ec3a993630aa5ffad5
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '989'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>com.day.cq.jcrclustersupport</td>
     <td>Detectie-API van Sling gebruiken als alternatief</td>
     <td>2015</td>
-    <td>verwijderd</td>
+    <td>removed</td>
   </tr>
   <tr>
     <td>org.apache.sling.settings</td>
@@ -74,8 +74,8 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 is op onderhoudswijze. In plaats daarvan moet Commons Lang 3 worden gebruikt.</td>
-    <td>30-04-21</td>
+    <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead.</td>
+    <td>4/30/21</td>
     <td>12/31/21</td>
   </tr>
   <tr>
@@ -94,12 +94,12 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n</td>
     <td>The Felix web console is not supported in Cloud environments</td>
     <td>30-04-21</td>
-    <td>30-07-21</td>
+    <td>7/30/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml<br>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.client.util</td>
-    <td>De pakketten Eclipse Jetty en Felix HTTP Jetty worden niet meer ondersteund.</td>
-    <td>27-05-21</td>
+    <td>The Eclipse Jetty and Felix Http Jetty packages are no longer supported.</td>
+    <td>5/27/21</td>
     <td>8/26/21</td>
   </tr>
   <tr>
@@ -129,7 +129,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
     <td>Deze API is verouderd omdat Apache Abdera sinds 2017 een gepensioneerd project is.</td>
-    <td>08-04-19</td>
+    <td>4/8/19</td>
     <td>09/29/21</td>
   </tr>
   <tr>
@@ -154,6 +154,30 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>Legacy AEM 6.x API.</td>
     <td>4/8/19</td>
     <td>09/29/21</td>
+  </tr>
+  <tr>
+    <td>org.apache.felix.http.whiteboard</td>
+    <td>Het Apache Felix Http-whiteboard wordt niet meer ondersteund. Migreer uw code naar het OSGi Http-whiteboard.</td>
+    <td>27-01-2022</td>
+    <td>24-03-2022</td>
+  </tr>
+  <tr>
+    <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
+    <td>Deze API is verouderd. Migreer uw code naar de XML API's die worden geleverd door de JDK.</td>
+    <td>27-01-2022</td>
+    <td>24-03-2022</td>
+  </tr>
+  <tr>
+    <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
+    <td>Deze interne logback-API wordt niet ondersteund door AEM as a Cloud Service.</td>
+    <td>27-01-2022</td>
+    <td>3/24/2022</td>
+  </tr>
+  <tr>
+    <td>org.slf4j.spi</td>
+    <td>This internal log4j API is not supported by AEM as a Cloud Service.</td>
+    <td>1/27/2022</td>
+    <td>3/24/2022</td>
   </tr>
 </tbody>
 </table>

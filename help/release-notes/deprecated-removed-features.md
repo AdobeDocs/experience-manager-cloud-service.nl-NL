@@ -2,9 +2,9 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
+source-git-commit: bbd8277fc5ed81bc656900ec3a993630aa5ffad5
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '592'
 ht-degree: 5%
 
 ---
@@ -55,6 +55,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | [!DNL Assets] | [!DNL Assets] delen met Marketing Cloud Assets Core Service en Creative Cloud services is niet beschikbaar. | Voor integratie met [!DNL Adobe Creative Cloud], gebruik [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). |
 | [!DNL Foundation] | Ondersteuning voor Apache Sling-gegevensbronnen (OSGi bundle org.apache.sling.datasource) | N.v.t. |
 | [!DNL Foundation] | Ondersteuning voor JST-scriptsjablonen (OSGi bundle org.apache.sling.scripting.jst) | N.v.t. |
+| [!DNL Foundation] | Ondersteuning voor het Apache Felix Http-whiteboard | OSGi Http-whiteboard |
 
 ## Java API {#java-api}
 
