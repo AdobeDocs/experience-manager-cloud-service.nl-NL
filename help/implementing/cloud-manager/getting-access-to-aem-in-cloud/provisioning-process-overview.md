@@ -1,7 +1,7 @@
 ---
 title: Inrichtingsproces - Overzicht
 description: Inrichtingsproces - Overzicht
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 7%
@@ -38,9 +38,9 @@ Ga voor meer informatie naar [Aan boord nemen van Experience Manager as a Cloud 
 
 ### Bronnen en koppelingen
 
-• [IMS-ondersteuning voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)\
-・ [Op rollen gebaseerde machtigingen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)\
-• [Experience Manager as a Cloud Service openen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
+* [IMS-ondersteuning voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)
+* [Op rollen gebaseerde machtigingen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)
+* [Experience Manager as a Cloud Service openen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
 
 
 ## Adobe Experience Manager as a Cloud Service on boarding Process
@@ -49,7 +49,8 @@ Ga voor meer informatie naar [Aan boord nemen van Experience Manager as a Cloud 
 
 ### 2. Aan boord van organisaties naar Adobe Admin Console:
 
->   ![procesoverzicht2.jpg](./assets/processOverview2.jpg)
+![procesoverzicht2.jpg](./assets/processOverview2.jpg)
+
 * Systeembeheerder:
    * Levering AEM programma&#39;s en omgevingen.
    * Navigeer naar de Admin Console voor beheertaken.
@@ -61,7 +62,7 @@ Ga voor meer informatie naar [Aan boord nemen van Experience Manager as a Cloud 
 
 ### 3. Boordgebruikers en Toegang beheren in Admin Console:
 
->   ![procesoverzicht3.jpg](./assets/processOverview3.jpg)
+![procesoverzicht3.jpg](./assets/processOverview3.jpg)
 
 Afhankelijk van grootte en voorkeur, zijn er drie methoden voor het aan boord hebben van gebruikers:
 * Handmatig gebruikers maken in Admin Console
