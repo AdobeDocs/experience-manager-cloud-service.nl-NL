@@ -2,14 +2,20 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
+source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 1%
+source-wordcount: '2222'
+ht-degree: 2%
 
 ---
 
 # Ontwikkelingsrichtlijnen voor AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
+
+>[!CONTEXTUALHELP]
+>id="development_guidelines"
+>title="Ontwikkelingsrichtlijnen voor AEM as a Cloud Service"
+>abstract="Op dit tabblad kunt u de aanbevolen werkwijzen voor codering weergeven in AEM as a Cloud Service. Codering kan aanzienlijk anders zijn dan implementaties op AMS- of On-Prem-niveau."
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demo van pakketstructuur"
 
 De code die in AEM as a Cloud Service loopt moet zich ervan bewust zijn dat het altijd in een cluster loopt. Dit betekent dat er altijd meer dan één instantie actief is. De code moet veerkrachtig zijn, vooral omdat een instantie op om het even welk ogenblik zou kunnen worden tegengehouden.
 
