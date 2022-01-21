@@ -5,9 +5,9 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
+source-git-commit: 462fd68ce4a33e14464256be4f4e9fdfe8d34aab
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,11 @@ ht-degree: 0%
 
 U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar middelen rechtstreeks verzenden vanuit [!DNL Adobe Experience Manager Assets]. Gedownloade elementen worden gebundeld in een ZIP-bestand. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
+<!--
 >[!NOTE]
 >
->Ontvangers van e-mails moeten lid zijn van de `dam-users` groep voor toegang tot de ZIP-downloadkoppeling in het e-mailbericht. Om de elementen te kunnen downloaden, moeten de leden machtigingen hebben om workflows te starten die het downloaden van elementen activeren.
+>Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
+-->
 
 De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets kunnen niet worden gedownload.
 
@@ -33,9 +35,9 @@ U kunt Experience Manager-elementen downloaden met de volgende methoden:
 
 ## Elementen downloaden met [!DNL Experience Manager] interface {#download-assets}
 
-De asynchrone downloaddienst verstrekt een kader voor naadloze download van grote activa. Kleinere bestanden worden in real-time gedownload vanuit de gebruikersinterface. [!DNL Experience Manager] één elementdownload niet archiveert op de plaats waar het oorspronkelijke bestand is gedownload. Deze functionaliteit maakt snellere downloads mogelijk.
+De asynchrone downloaddienst verstrekt een kader voor naadloze download van grote activa. De downloadarchieven die groter zijn dan 100 GB worden gesplitst in meerdere ZIP-archieven met een maximale grootte van 100 GB elk. Deze kunnen afzonderlijk worden gedownload. Kleinere bestanden worden in real-time gedownload vanuit de gebruikersinterface. [!DNL Experience Manager] één elementdownload niet archiveert op de plaats waar het oorspronkelijke bestand is gedownload. Deze functionaliteit maakt snellere downloads mogelijk.
 
-Standaard activeert Experience Manager een melding nadat de downloadworkflow is voltooid. Het downloadbericht wordt weergegeven in het dialoogvenster  [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
+Standaard, [!DNL Experience Manager] activeert een melding nadat de downloadworkflow is voltooid. Het downloadbericht wordt weergegeven in het dialoogvenster  [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Inbox-melding](assets/inbox-notification-for-large-downloads.png)
 
@@ -85,7 +87,7 @@ Voer de volgende stappen uit om elementen te downloaden:
    | Downloadoptie | Beschrijving |
    |---|---|
    | **[!UICONTROL Create separate folder for each asset]** | Selecteer deze optie om elk element dat u downloadt, inclusief elementen, op te nemen in onderliggende mappen die onder de bovenliggende map van het element zijn genest in één map op uw lokale computer. Wanneer deze optie *niet* Selecteer standaard de maphiërarchie die wordt genegeerd en alle elementen worden naar één map op uw lokale computer gedownload. |
-   | **[!UICONTROL Email]** | Selecteer deze optie als u een e-mailbericht wilt verzenden naar de ontvanger. De standaard e-mailsjablonen zijn beschikbaar op de volgende locaties:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> De malplaatjes die u tijdens plaatsing aanpast zijn beschikbaar bij de volgende plaatsen: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>U kunt huurdersspecifieke douanemalplaatjes bij de volgende plaatsen opslaan:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL Email]** | Selecteer deze optie om een e-mailbericht (met een koppeling naar uw download) naar een andere gebruiker te verzenden. De ontvangende gebruiker moet lid van zijn `dam-users` groep. De standaard e-mailsjablonen zijn beschikbaar op de volgende locaties:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> De malplaatjes die u tijdens plaatsing aanpast zijn beschikbaar bij de volgende plaatsen: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>U kunt huurdersspecifieke douanemalplaatjes bij de volgende plaatsen opslaan:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Asset(s)]** | Selecteer deze optie als u het element in de oorspronkelijke vorm zonder vertoningen wilt downloaden.<br>De optie Subassets is beschikbaar als het oorspronkelijke element subassets heeft. |
    | **[!UICONTROL Rendition(s)]** | Een vertoning is de binaire representatie van een element. Elementen hebben een primaire representatie, namelijk die van het geüploade bestand. Zij kunnen om het even welk aantal vertegenwoordiging hebben. <br> Met deze optie kunt u de uitvoeringen selecteren die u wilt downloaden. Welke uitvoeringen beschikbaar zijn, is afhankelijk van het element dat u hebt geselecteerd. |
    | **[!UICONTROL Smart Crops]** | Selecteer deze optie als u alle slimme-uitsnijduitvoeringen van het geselecteerde element vanuit [!DNL Experience Manager]. Er wordt een ZIP-bestand met de Smart Crop-uitvoeringen gemaakt en gedownload naar uw lokale computer. |
