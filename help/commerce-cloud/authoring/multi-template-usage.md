@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
+source-git-commit: f45021ff09a4874d19fa7d8d40405cfd52bf8434
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,11 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
+Specifieke productpagina&#39;s kunnen worden geselecteerd door een sku of door de categorie van een product. De latere URL wordt alleen ondersteund door sommige van de beschikbare standaard-URL-indelingen voor productpagina&#39;s, omdat hiervoor categoriegegevens moeten worden gecodeerd in de product-URL.
+
 Meer informatie over dit onderwerp vindt u in de volgende bronnen:
 
+- [Geavanceerde URL-configuraties](../configuring/advanced-url-configuration.md)
 - [AEM CIF Core-componenten - Configuratie van meerdere cataloguspagina&#39;s](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## Gerelateerde bronnen {#related}
