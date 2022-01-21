@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] Batchverwerking voor as a Cloud Service communicatie
 description: Hoe te om merkgeoriënteerde en gepersonaliseerde mededelingen tot stand te brengen?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2297'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Een batchbewerking is een proces waarbij meerdere documenten van een vergelijkba
 
 U kunt batchbewerkingen gebruiken om meerdere documenten met een gepland interval te genereren.
 
->[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/338349)
 
 U kunt de video bekijken of de onderstaande instructies uitvoeren om te leren hoe u documenten kunt genereren met behulp van batchbewerkingen. De API-naslagdocumentatie die in video wordt gebruikt, is beschikbaar in de indeling .yaml. U kunt de [Batch-API&#39;s](assets/batch-api.yaml) bestand maken en uploaden naar Postman om de functionaliteit van API&#39;s te controleren en de video te volgen.
 
@@ -100,7 +100,7 @@ Met de configuratie van batchgegevens kunt u containers en mappen configureren v
 
 De configuratie maken:
 
-1. Ga naar Extra > Forms > Batch voor uitvoer - Unified Storage Connector.
+1. Ga naar Extra > Forms > Unified Storage Connector.
 1. Open een map als host voor de configuratie en klik op Maken. U gebruikt de algemene map of maakt een map.
 1. Geef de titel en naam van de configuratie op. Selecteer in Opslag Microsoft Azure Storage.
 1. Blader in Opslagconfiguratiepad naar en selecteer de Cloud Configuration die referenties van de Azure-opslagaccount in eigendom van de klant bevat.
@@ -108,11 +108,11 @@ De configuratie maken:
 1. Geef in de doelmap het pad op van de Azure Storage-container en -map waarin de gegenereerde documenten worden opgeslagen.
 1. Klik op Maken.
 
-Uw Experience Manager-instantie is nu verbonden met Microsoft Azure Storage en geconfigureerd voor het ophalen en verzenden van gegevens naar specifieke locaties op Microsoft Azure Storage.
+Your Experience Manager instance is now connected to Microsoft Azure Storage and configured to retrieve and send data to specific locations on Microsoft Azure Storage.
 
 ### Sjablonen en andere elementen uploaden naar uw Experience Manager-instantie {#upload-templates-and-other-assets-to-your-AEM-instance}
 
-Een organisatie heeft doorgaans meerdere sjablonen. Bijvoorbeeld, één malplaatje elk voor creditcardverklaringen, voordelenverklaringen, en claimtoepassingen. Upload al dergelijke XDP en PDF malplaatjes aan uw instantie van de Experience Manager. Een sjabloon uploaden:
+Een organisatie heeft doorgaans meerdere sjablonen. For example, one template each for credit card statements, benefits statements, and claim applications. Upload al dergelijke XDP en PDF malplaatjes aan uw instantie van de Experience Manager. Een sjabloon uploaden:
 
 1. Open een Experience Manager-instantie.
 1. Ga naar Forms > Forms en Documenten
@@ -251,7 +251,7 @@ Invoer- en uitvoergegevens worden alleen opgeslagen op Microsoft Azure Storage.
 
 **Zijn communicatie-API&#39;s alleen beschikbaar voor Experience Manager Forms Cloud Service? Kan ik vergelijkbare functionaliteit krijgen in een on-premise omgeving?**
 
-U kunt de dienst van de Output van AEM Forms gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, en formaten te produceren ZPL.
+You can use AEM Forms Output service to combine a template (XFA or PDF) with customer data to generate documents in PDF, PS, PCL, and ZPL formats.
 
 In vergelijking met een omgeving op locatie biedt de Cloud Service extra voordelen van automatisch schalen en kosteneffectiviteit.
 

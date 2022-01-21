@@ -2,7 +2,7 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 1%
@@ -25,7 +25,7 @@ U kunt een document op verzoek genereren of een batchtaak maken om meerdere docu
 * een veilige toegang tot gegevens. Communicatie APIs verbindt met en heeft toegang tot gegevens slechts van klant aangewezen gegevensbewaarplaatsen, maakt geen lokale exemplaren van gegevens, die mededelingen hoogst veilig maken.
 
 ![Een voorbeeld van een creditcardformulier](assets/statement.png)
-Een voorbeeldcreditcardverklaring kan worden gecreeerd gebruikend Communicatie APIs. De verklaring gebruikt zelfde malplaatje maar afzonderlijke gegevens voor elke klant afhankelijk van hun gebruik van creditcard.
+Een creditcardverklaring kan worden gecreeerd gebruikend Communicatie APIs. Deze voorbeeldinstructie gebruikt dezelfde sjabloon maar afzonderlijke gegevens voor elke klant, afhankelijk van het gebruik van de creditcard.
 
 ## Hoe werkt het?
 
@@ -33,7 +33,7 @@ Communicatiegebruik [PDF- en XFA-sjablonen](#supported-document-types) with [XML
 
 Met behulp van een communicatie-API kunt u een sjabloon (XFA of PDF) combineren met klantgegevens ([XML-gegevens](#form-data)) om documenten te genereren in de indelingen PDF en Afdrukken, zoals PS, PCL, DPL, IPL en ZPL.
 
-Doorgaans maakt u een sjabloon met [Designer](use-forms-designer.md) en gebruik Communicatie APIs om gegevens met het malplaatje samen te voegen. Uw toepassing kan het uitvoerdocument naar een netwerkprinter, een lokale printer of een opslagsysteem verzenden voor archivering. Een typisch uit de doos en de douanewerkschema&#39;s kijken als het volgende:
+Doorgaans maakt u een sjabloon met [Designer](use-forms-designer.md) en gebruik Communicatie APIs om gegevens met het malplaatje samen te voegen. Your application can send the output document to a network printer, a local printer, or to a storage system for archival. Een typisch uit de doos en de douanewerkschema&#39;s kijken als het volgende:
 
 ![Communicatieworkflow](assets/communicaions-workflow.png)
 
