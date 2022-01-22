@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '1254'
 ht-degree: 0%
 
 ---
@@ -24,27 +24,72 @@ ht-degree: 0%
 
 ## Elementen delen als koppeling {#sharelink}
 
-Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat ze zich eerst hoeven aan te melden bij [!DNL Assets]. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share` de locatie kan de koppelingen weergeven die met hen worden gedeeld.
+Het delen van elementen via een koppeling is een handige manier om de bronnen beschikbaar te maken voor externe partijen zonder dat ze zich hoeven aan te melden bij [!DNL Assets]. Met deze functionaliteit kunnen anonieme gebruikers de elementen openen en downloaden die met hen worden gedeeld. Wanneer gebruikers elementen downloaden van gedeelde koppelingen [!DNL Assets] gebruikt een asynchrone service die snellere en ononderbroken downloads biedt. De te downloaden middelen worden op de achtergrond in een Postvak IN in een ZIP-archief met beheerbare bestandsgrootte in een wachtrij geplaatst. Voor zeer grote downloads wordt de download gebundeld in bestanden van 100 GB.
 
-![Dialoogvenster Delen van koppeling](assets/link-share-dialog.png)
+<!--
+Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
+-->
 
 >[!NOTE]
 >
 >* U hebt ACL toestemming op de omslag of de activa nodig uitgeven die u als verbinding wilt delen.
->* Voordat u een koppeling met gebruikers deelt, [uitgaande e-mailberichten inschakelen](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Anders treedt een fout op.
+>* [Uitgaande e-mailberichten inschakelen](/help/implementing/developing/introduction/development-guidelines.md#sending-email) voordat u een koppeling met de gebruikers deelt.
 
 
-1. In de [!DNL Assets] -gebruikersinterface, selecteert u het element dat u wilt delen als koppeling.
-1. Klik in de werkbalk op de knop **[!UICONTROL Share Link]**. De [!UICONTROL Link Sharing] wordt weergegeven met een koppeling naar automatisch gegenereerde elementen in het dialoogvenster **[!UICONTROL Share Link]** veld.
+Er zijn twee manieren om de elementen te delen met behulp van de functie voor het delen van koppelingen:
+
+1. Een gedeelde koppeling genereren, [de elementkoppeling kopiëren en delen](#copy-and-share-assets-link) met andere gebruikers. De standaardvervaltijd van de verbinding is één dag. U kunt de vervaltijd niet wijzigen wanneer u de gekopieerde koppeling deelt met andere gebruikers.
+
+1. Een gedeelde koppeling genereren en [de elementkoppeling via e-mail delen](#share-assets-link-through-email). In dit geval kunt u de standaardwaarden wijzigen, zoals de vervaldatum en -tijd, en het downloaden van de oorspronkelijke elementen en de uitvoeringen toestaan. U kunt e-mail naar meerdere gebruikers verzenden door hun e-mailadres toe te voegen.
+
+![Dialoogvenster Delen van koppeling](assets/link-sharing-dialog.png)
+
+### De elementkoppeling kopiëren en delen{#copy-and-share-asset-link}
+
+Elementen delen als een openbare URL:
+
+1. Aanmelden bij [!DNL Experience Manager Assets] en navigeer naar **[!UICONTROL Files]**.
+1. Selecteer het middel of de middelen of de map met elementen. Klik **[!UICONTROL Share Link]** op de werkbalk.
+1. De **[!UICONTROL Link Sharing]** wordt weergegeven met een koppeling naar automatisch gegenereerde elementen in het dialoogvenster **[!UICONTROL Share Link]** veld.
+1. Kopieer de elementkoppeling en deel deze met de gebruikers.
+
+### Koppeling met middelen delen via e-mailkennisgeving {#share-assets-link-through-email}
+
+Elementen delen via e-mail:
+
+1. Selecteer het middel of de middelen of de map met elementen. Klik **[!UICONTROL Share Link]** op de werkbalk.
+1. De **[!UICONTROL Link Sharing]** wordt weergegeven met een koppeling naar automatisch gegenereerde elementen in het dialoogvenster **[!UICONTROL Share Link]** veld.
 
    * Typ in het vak E-mailadres de e-mailadres van de gebruiker met wie u de koppeling wilt delen. U kunt de koppeling delen met meerdere gebruikers. Als de gebruiker lid is van uw organisatie, selecteert u de desbetreffende e-mailadres in de suggesties in de vervolgkeuzelijst. Als de gebruiker extern is, typt u de volledige e-mailid en drukt u op **[!UICONTROL Enter]**; e-mailadres wordt toegevoegd aan de lijst met gebruikers.
 
-   * In de **[!UICONTROL Subject]** typt u een onderwerp voor het element dat u wilt delen.
+   * In de **[!UICONTROL Subject]** Typ een onderwerp om het doel van de gedeelde elementen op te geven.
    * In de **[!UICONTROL Message]** Typ indien nodig een bericht.
-   * In de **[!UICONTROL Expiration]** in het veld gebruikt u de datumkiezer om een vervaldatum en -tijd voor de koppeling op te geven. De standaardvervaltijd voor de verbinding is één dag.
+   * In de **[!UICONTROL Expiration]** in het veld gebruikt u de datumkiezer om een vervaldatum en -tijd voor de koppeling op te geven.
    * De optie **[!UICONTROL Allow downlod of original file]** Schakel het selectievakje in zodat de ontvangers de oorspronkelijke vertoning kunnen downloaden.
 
-1. Klik op **[!UICONTROL Share]**. Een bericht bevestigt dat de koppeling wordt gedeeld met de gebruikers. Gebruikers ontvangen een e-mail met de gedeelde koppeling.
+1. Klik op **[!UICONTROL Share]**. Een bericht bevestigt dat de koppeling wordt gedeeld met de gebruikers. De gebruikers ontvangen een e-mail met de gedeelde koppeling.
+
+![E-mail voor delen van koppeling](assets/link-sharing-email-notification.png)
+
+### Elementen downloaden via de elementkoppeling
+
+Elke gebruiker die toegang heeft tot de koppeling voor gedeelde elementen, kan de elementen downloaden die in een ZIP-map zijn gebundeld. Het downloadproces is hetzelfde, ongeacht of een gebruiker de gekopieerde elementkoppeling opent of de via e-mail gedeelde elementkoppeling gebruikt.
+
+* Klik op de elementkoppeling of plak de URL in uw browser. De [!UICONTROL Link Share] interface opent waar u kunt op [!UICONTROL Card View] of [!UICONTROL List View].
+
+* In de [!UICONTROL Card View]kunt u de muis boven het gedeelde element of de map met gedeelde elementen plaatsen om de elementen te selecteren of in de wachtrij voor downloaden.
+
+* Standaard wordt in de gebruikersinterface het **[!UICONTROL Download Inbox]** optie. Het geeft de lijst weer van alle gedeelde elementen of mappen die samen met hun status in de wachtrij voor downloaden staan.
+
+* Bij het selecteren van de middelen of map, kunt u een **[!UICONTROL Queue Download]** verschijnt op het scherm. Klik op de knop **[!UICONTROL Queue Download]** om het downloadproces te starten.
+
+   ![Downloaden van wachtrij](assets/queue-download.png)
+
+* Klik tijdens het voorbereiden van het downloadbestand op de knop **[!UICONTROL Download Inbox]** om de status van uw download weer te geven. Voor grote downloads klikt u op de knop **[!UICONTROL Refresh]** om de status bij te werken.
+
+   ![Postvak IN downloaden](assets/link-sharing-download-inbox.png)
+
+* Als de verwerking is voltooid, klikt u op de knop **[!UICONTROL Download]** om het ZIP-bestand te downloaden.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -146,6 +191,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 >[!NOTE]
 >
 >Als u koppelingen van uw instantie Auteur naar externe entiteiten wilt delen, dient u alleen de volgende URL&#39;s beschikbaar te maken voor `GET` verzoeken. Blokkeer andere URL&#39;s om ervoor te zorgen dat de instantie Auteur beveiligd is.
+>
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
