@@ -2,9 +2,9 @@
 title: 'Hoe kan ik een workflow toewijzen aan andere gebruikers, e-mail verzenden en Adobe Sign gebruiken in een workflow? '
 description: Met Forms-gerichte workflows kunt u snel adaptieve, op Forms gebaseerde workflows maken. Met Adobe Sign kunt u documenten elektronisch ondertekenen, op formulieren gebaseerde bedrijfsprocessen maken, gegevens ophalen en verzenden naar meerdere gegevensbronnen en e-mailmeldingen verzenden
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '4849'
+source-wordcount: '4939'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Forms-centric workflowstappen voeren AEM Forms-specifieke bewerkingen uit in een
 * Verbind een werkschemamodel met diverse gegevensbronnen om gegevens gemakkelijk te bewaren en terug te winnen.
 
 * Gebruik de stap E-mail om meldingen en andere bijlagen te verzenden wanneer een actie is voltooid en wanneer een workflow is gestart of voltooid.
+
+>[!NOTE]
+>
+>Als het workflowmodel is gemarkeerd voor externe opslag, kunt u voor alle Forms-workflowstappen alleen de optie voor het opslaan of ophalen van gegevensbestanden en bijlagen selecteren.
 
 
 ## Taakstap toewijzen {#assign-task-step}
@@ -66,7 +70,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **[!UICONTROL Pre-populated]**: De volgende velden die hieronder worden vermeld, dienen als invoer voor de taak:
 
    * **[!UICONTROL Select input data file using]**: Pad van invoergegevensbestand (.json, .xml, .doc of formuliergegevensmodel). U kunt het invoergegevensbestand terugwinnen gebruikend een weg die met betrekking tot de lading is of het dossier terugwinnen dat in een variabele van Document, XML, of gegevenstype JSON wordt opgeslagen. Het bestand bevat bijvoorbeeld de gegevens die via een AEM Inbox-toepassing voor het formulier zijn verzonden. Een voorbeeldpad is [Payload_Directory]/workflow/gegevens.
-   * **[!UICONTROL Select input attachments using]**: Bijlagen die op de locatie beschikbaar zijn, worden gekoppeld aan het formulier dat aan de taak is gekoppeld. Het pad is altijd relatief ten opzichte van de lading. Een voorbeeldpad is [Payload_Directory]/bijlagen/. U kunt bijlagen opgeven die relatief zijn ten opzichte van de lading of een variabele van het documenttype (Array-lijst > Document) gebruiken om een invoerbijlage op te geven voor het adaptieve formulier
+   * **[!UICONTROL Select input attachments using]**: Bijlagen die op de locatie beschikbaar zijn, worden gekoppeld aan het formulier dat aan de taak is gekoppeld. Het pad kan relatief zijn ten opzichte van de lading of de bijlage ophalen die is opgeslagen in een variabele van een document. Een voorbeeldpad is [Payload_Directory]/bijlagen/. U kunt bijlagen opgeven die relatief zijn ten opzichte van de lading of een variabele van het documenttype (Array-lijst > Document) gebruiken om een invoerbijlage op te geven voor het adaptieve formulier.
 
    <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -88,7 +92,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL Assignee]** > **[!UICONTROL Assign options]**: Geef de methode op waarmee de taak aan een gebruiker wordt toegewezen. U kunt de taak dynamisch toewijzen aan een gebruiker of groep met behulp van het script Deelnemerkiezer of u kunt de taak toewijzen aan een specifieke AEM gebruiker of groep.
-* **[!UICONTROL Participant Chooser]**: De optie is beschikbaar wanneer de optie **[!UICONTROL Dynamically to a user or group]** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Zie voor meer informatie [Een workflow dynamisch toewijzen aan de gebruikers](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en [Een aangepaste stap voor Adobe Experience Manager Dynamic Participant maken.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **[!UICONTROL Participant Chooser]**: De optie is beschikbaar wanneer de optie **[!UICONTROL Dynamically to a user or group]** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Zie voor meer informatie [Een workflow dynamisch toewijzen aan de gebruikers](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en [Een aangepaste stap voor Adobe Experience Manager Dynamic Participant maken.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL Participants]**: Het veld is beschikbaar wanneer de **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** is geselecteerd in het dialoogvenster **[!UICONTROL Participant Chooser]** veld. In het veld kunt u gebruikers of groepen selecteren voor de optie RandomParticipantChooser.
 
@@ -130,6 +134,10 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **[!UICONTROL Show Data from Previous Steps]**: Schakel deze optie in als u wilt dat toewijzen vorige toewijzingen, reeds ondernomen actie op de taak, aan de taak toegevoegde opmerkingen en Document of Record van de voltooide taak kunnen weergeven, indien beschikbaar.
 * **[!UICONTROL Show Data from Subsequent Steps]**: Selecteer deze optie om de huidige toegewezen persoon in staat te stellen de actie te bekijken die is ondernomen en de opmerkingen die aan de taak zijn toegevoegd door de volgende toegewezen personen. Het staat ook de huidige toegewezen persoon toe om een Document van Verslag van de voltooide taak te bekijken, als beschikbaar.
 * **[!UICONTROL Visibility of data type]**: Standaard kan een toegewezen persoon een document met records, toewijzingen, ondernomen actie en opmerkingen bekijken die door eerdere en volgende toewijzingen zijn toegevoegd. Gebruik de zichtbaarheid van de optie Gegevenstype om het type gegevens te beperken dat zichtbaar is voor de ontvangers.
+
+>[!NOTE]
+>
+>De opties om de Assign stap van de Taak als ontwerp te bewaren en de geschiedenis van de Assign stap van de Taak terug te winnen worden onbruikbaar gemaakt wanneer u een AEM werkschemamodel voor externe gegevensopslag vormt. In Postvak In is bovendien de optie voor opslaan uitgeschakeld.
 
 ## E-mailstap verzenden {#send-email-step}
 

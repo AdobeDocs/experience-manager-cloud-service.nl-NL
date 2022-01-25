@@ -1,9 +1,9 @@
 ---
 title: Hoe te om Verenigde Verbinding van de Opslag voor AEM Forms te vormen?
 description: Leer hoe u Unified Storage Connector voor AEM Forms beheert. Gebruik de Unified Storage-connector om AEM Forms aan te sluiten op externe gegevensopslagsystemen.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '544'
 ht-degree: 1%
 
 ---
@@ -53,16 +53,16 @@ Voer de volgende stappen uit om een AEM workflowmodel voor een externe gegevenso
 
 >[!NOTE]
 >
->De opties om de Assign stap van de Taak als ontwerp te bewaren en de geschiedenis van de Assign stap van de Taak terug te winnen zijn niet beschikbaar wanneer u een AEM werkschemamodel voor externe gegevensopslag vormt.
+>De opties om de Assign stap van de Taak als ontwerp te bewaren en de geschiedenis van de Assign stap van de Taak terug te winnen worden onbruikbaar gemaakt wanneer u een AEM werkschemamodel voor externe gegevensopslag vormt.
 
 ### Richtlijnen voor AEM werkstromen voor externe gegevensopslag {#guidelines-workflows-external-data-storage}
 
 Hieronder volgen de richtlijnen voor het gebruik van AEM Workflows en het opslaan van gegevens naar externe gegevensopslagsystemen, zoals Microsoft Azure-opslagserver:
 
-* Gebruik variabelen om gegevens op te slaan tijdens het definiëren van invoer- en uitvoergegevensbestanden en bijlagen in stappen van het workflowmodel. Niet selecteren **[!UICONTROL Relative to Payload]** en **[!UICONTROL Available at an absolute path]** opties. De **[!UICONTROL Relative to Payload]** en **Beschikbaar op een absoluut pad** opties worden niet automatisch weergegeven als u [configureren van een AEM workflowmodel voor externe gegevensopslag](#configure-workflow-external-data-storage).
+* Gebruik variabelen om gegevens op te slaan tijdens het definiëren van invoer- en uitvoergegevensbestanden en bijlagen in stappen van het workflowmodel. Niet selecteren **[!UICONTROL Relative to Payload]** en **[!UICONTROL Available at an absolute path]** opties. De **[!UICONTROL Relative to Payload]** en **[!UICONTROL Available at an absolute path]** opties worden niet automatisch weergegeven als u [configureren van een AEM workflowmodel voor externe gegevensopslag](#configure-workflow-external-data-storage).
 
 * Gebruik variabelen om gegevensbestand en gehechtheid op te slaan terwijl het voorleggen van een adaptief formulier aan een AEMWerkstroom. Niet selecteren **[!UICONTROL Relative to Payload]** en een aangepast formulier naar een AEM workflow te verzenden. De **[!UICONTROL Relative to Payload]** Deze optie wordt niet automatisch weergegeven als u [configureren van een AEM workflowmodel voor externe gegevensopslag](#configure-workflow-external-data-storage).
 
 * Gebruik geen aangepaste AEM Workflowstap in een workflowmodel voor het opslaan van gegevens in de CRX DE-opslagplaats.
 
-* Wanneer u [configureren van een AEM workflowmodel voor externe gegevensopslag](#configure-workflow-external-data-storage)Maak geen aangepaste kolommen voor AEM Inbox op basis van de gegevens van een workflow.
+* Wanneer u [configureren van een AEM workflowmodel voor externe gegevensopslag](#configure-workflow-external-data-storage)Creëer geen aangepaste kolommen voor AEM Inbox, aangezien de waarden van de aangepaste kolommen niet worden opgehaald als het werkitem in AEM Inbox tot een workflow behoort die is gemarkeerd voor externe opslag.
