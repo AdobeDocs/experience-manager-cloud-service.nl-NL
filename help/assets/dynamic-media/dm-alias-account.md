@@ -10,7 +10,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
+source-git-commit: 494f6803967725ca04a1cc4512c1e553b9f0282c
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -29,11 +29,11 @@ Een Dynamic Media-account voor bedrijfalias zorgt ervoor dat alle updates die in
 
 Houd rekening met het volgende wanneer u een Dynamic Media-bedrijfsaliasaccount configureert:
 
-* Wanneer u een bedrijf alias rekening op vormt **[!UICONTROL Edit Dynamic Media Configuration]** pagina, voor geheim voorgeheugenongeldigverklaring om succesvol te zijn, moet u URLs ongeldig maken voor *beide* de **[!UICONTROL Company]** en de **[!UICONTROL Company Alias]** account, gelijktijdig.
 * Bestaande Dynamic Media-URL&#39;s of viewerinsluitcode op uw *leven* digitale eigenschappen moeten handmatig worden bijgewerkt om de nieuwe aliasnaam te weerspiegelen. URL&#39;s of viewers die code insluiten met uw oorspronkelijke Dynamic Media-bedrijfsnaam, blijven echter werken voor bestaande of nieuwe elementen.
 * De Dynamic Media-mogelijkheden voor aliasaccounts zijn beperkt tot de Experience Manager Assets Authoring-modus en -levering. De alias van het bedrijf werkt niet met Experience Manager Sites. De componenten WCM (Web Content Management) worden niet bijgewerkt voor deze wijziging. Deze componenten werken nog steeds met de oorspronkelijke Dynamic Media-bedrijfsnaam voor het ophalen van Dynamic Media-middelen.
 * U kunt slechts één bedrijfsaliasaccount instellen op het tabblad **[!UICONTROL Edit Dynamic Media Configuration]** pagina. U kunt echter wel zoveel aliasaccounts van bedrijven maken als een ondersteuningsgeval en de vereiste aliasnaam handmatig doorgeven in de Dynamic Media URL&#39;s of de insluitcode van de viewer.
 * De out-of-the-box [Cache-validatie](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) het vermogen van Dynamic Media maakt URLs met zowel Bedrijf als van het Bedrijf Alias rekeningen ongeldig die in de pagina van de Configuratie van Dynamic Media in Cloud Services worden gevormd.
+* Wanneer u een bedrijf alias rekening op vormt **[!UICONTROL Edit Dynamic Media Configuration]** pagina, voor geheim voorgeheugenongeldigverklaring om succesvol te zijn, moet u URLs ongeldig maken voor *beide* de **[!UICONTROL Company]** en de **[!UICONTROL Company Alias]** account, gelijktijdig.
 
 Zie ook [Een Dynamic Media-configuratie maken in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
