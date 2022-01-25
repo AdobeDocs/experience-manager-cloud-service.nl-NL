@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 3eb12e6e6a539a8f6b3cb4ccddba9d1971268c13
+source-git-commit: 1bef3ed7ba12e872dd8f478b13d14b459eb9495b
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## Elementen delen als koppeling {#sharelink}
 
-Het delen van elementen via een koppeling is een handige manier om de bronnen beschikbaar te maken voor externe partijen zonder dat ze zich hoeven aan te melden bij [!DNL Assets]. Met deze functionaliteit kunnen anonieme gebruikers de elementen openen en downloaden die met hen worden gedeeld. Wanneer gebruikers elementen downloaden van gedeelde koppelingen [!DNL Assets] gebruikt een asynchrone service die snellere en ononderbroken downloads biedt. De te downloaden middelen worden op de achtergrond in een Postvak IN in een ZIP-archief met beheerbare bestandsgrootte in een wachtrij geplaatst. Voor grote downloads wordt de download gebundeld in bestanden van 100 GB.
+Het delen van elementen via een koppeling is een handige manier om de bronnen beschikbaar te maken voor externe partijen, marketers en andere [!DNL Experience Manager] gebruikers. Met deze functionaliteit kunnen anonieme gebruikers de elementen openen en downloaden die met hen worden gedeeld. Bij het downloaden van elementen van een gedeelde koppeling [!DNL Experience Manager Assets] gebruikt een asynchrone dienst die sneller en ononderbroken download aanbiedt. De te downloaden middelen worden op de achtergrond in een Postvak IN in een ZIP-archief met beheerbare bestandsgrootte in een wachtrij geplaatst. Voor grote downloads wordt de download gebundeld in meerdere bestanden van 100 GB per bestandsgrootte.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
