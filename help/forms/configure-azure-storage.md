@@ -2,9 +2,9 @@
 title: Hoe te om Azure opslag te vormen?
 description: Leer hoe u formulieren kunt integreren met Azure-opslagserver.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -93,4 +93,8 @@ Een objecteigenschap van een gegevensmodel definiëren als een zoeksleutel:
 1. Van de schakelaar **[!UICONTROL Search Key]** Schakel optie in op status ON. Deze optie is alleen beschikbaar voor primaire gegevenstypen.
 1. Tikken **[!UICONTROL Done]** en tik vervolgens op **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
 
-Nadat u objecteigenschappen van gegevensmodellen hebt gedefinieerd als zoeksleutels, worden de sleutels opgeslagen als metagegevens in Azure-opslag.
+Nadat u objecteigenschappen van gegevensmodellen hebt gedefinieerd als zoeksleutels, worden de hashwaarden opgeslagen in Azure-indextags en in Base64-gecodeerde waarden worden opgeslagen in de Azure-metagegevens.
+
+>[!NOTE]
+>
+>Per Azure-entiteit zijn slechts 10 zoeksleutels toegestaan, omdat Azure alleen 10 tags per Blob toestaat en de waarde van eigenschappen die is gemarkeerd als zoeksleutels na hashing wordt opgeslagen in Azure-indextags.
