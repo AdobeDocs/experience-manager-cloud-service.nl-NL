@@ -2,9 +2,9 @@
 title: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 description: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 283bef84f2d5973150be8f62bd6f86193252d4f4
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 ## 1. Wordt CIF GraphQL slechts gebruikt voor handel of zal dit voor het vragen van inhoud beschikbaar zijn authored op AEM JCR?
 
-Adobe heeft de GraphQL APIs van Magento als zijn officiële handel API voor alle handel-verwante gegevens goedgekeurd. Daarom gebruikt AEM GraphQL om handelsgegevens met Magento en met om het even welke handelingsmotor via I/O Runtime uit te wisselen. Deze GraphQL API is onafhankelijk van AEM GraphQL API om tot Inhoudsfragmenten toegang te hebben.
+Adobe heeft Adobe Commerce GraphQL APIs als zijn officiële handel API voor alle handel-verwante gegevens goedgekeurd. Daarom gebruikt AEM GraphQL om handelsgegevens met Adobe Commerce en met om het even welke handelingsmotor via I/O Runtime uit te wisselen. Deze GraphQL API is onafhankelijk van AEM GraphQL API om tot Inhoudsfragmenten toegang te hebben.
 
-## 2. Kunnen de activa van het Product (beelden) van AEM via Adobe Commerce (Magento) admin worden opgeslagen en van verwijzingen voorzien? Hoe kunnen activa van Dynamic Media worden verbruikt?
+## 2. Kunnen de activa van het Product (beelden) van AEM via Adobe Commerce worden opgeslagen en van verwijzingen voorzien admin? Hoe kunnen activa van Dynamic Media worden verbruikt?
 
-Er is geen officiële AEM Assets - Magento-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op [marktplaats](https://marketplace.magento.com/bounteous-dam.html).
+Er is geen officiële AEM Assets - Adobe Commerce-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op [marktplaats](https://marketplace.magento.com/bounteous-dam.html).
 
-Of als tijdelijke oplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de middelen handmatig opslaan in Magento. Dynamic Media maakt nu deel uit van AEM Assets en zal op dezelfde manier werken.
+Of als tijdelijke oplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de middelen handmatig opslaan in Adobe Commerce. Dynamic Media maakt nu deel uit van AEM Assets en zal op dezelfde manier werken.
 
 ## 3. Maakt het uit waar de handelsoplossing wordt ingezet? (Op prem of in de cloud)
 
@@ -39,7 +39,7 @@ Dit hangt af van een paar extra aspecten die u in overweging moet nemen. Wat is 
 
 ## 7. Hoe speelt PIM in dit kader?
 
-PIM-gegevens worden via GraphQL-verzoeken aan AEM en clients beschikbaar gesteld. Onze aanbeveling is om PIM te integreren met de motor van de handel (Magento of anderen) zodat PIM gegevens dan van de handelsinrichting kunnen worden teruggewonnen.
+PIM-gegevens worden via GraphQL-verzoeken aan AEM en clients beschikbaar gesteld. Onze aanbeveling is om PIM te integreren met de motor van de handel (Adobe Commerce of anderen) zodat PIM-gegevens kunnen worden opgehaald van de motor van de handel.
 
 ## 8. Verzendt u ook de prijzen en andere gegevens in cache via Dispatcher. Vormt dat een veelvuldige uitdaging voor het ongeldig maken van cache?
 
@@ -59,7 +59,7 @@ CIF verstrekt de bar van het Onderzoek en de componenten van het Resultaat van h
 
 ## 12. Hoe kunnen productgegevens in MSM of vertalingen worden gebruikt?
 
-Productgegevens worden meestal al vertaald in PIM of in Magento. De integratie AEM - Magento ondersteunt de verbinding met meerdere Magento-winkels en -winkelweergaven. In een MSM-instelling wordt doorgaans één AEM site gekoppeld aan één Magento-winkelweergave.
+Productgegevens worden meestal al vertaald in PIM of in Adobe Commerce. De integratie AEM - Adobe Commerce ondersteunt de verbinding met meerdere Adobe Commerce-winkels en -winkelweergaven. In een MSM-installatie is doorgaans één AEM site gekoppeld aan één Adobe Commerce-winkelweergave.
 
 ## 13. Is er een manier om de productgegevens te verbeteren met commerciële tekst? Waar doe je dit? In AEM of in de handelsoplossing?
 
@@ -67,12 +67,12 @@ We raden u aan marketinggerelateerde gegevens en inhoud in AEM te beheren. Decor
 
 ## 14. Hoe kunnen wij naleving PCI verzekeren wanneer het gebruiken van AEM voor de volledige presentatielaag?
 
-We raden je aan geabstraheerde betalingsmethoden te gebruiken. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch Adobe of de handelsoplossingen kaarthoudende gegevens houden of overgaan. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over Magento PCI-compatibiliteit raadpleegt u [PGB-compatibiliteitseisen](https://magento.com/pci-compliance).
+We raden je aan geabstraheerde betalingsmethoden te gebruiken. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch Adobe of de handelsoplossingen kaarthoudende gegevens houden of overgaan. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over Adobe Commerce PCI-compatibiliteit raadpleegt u [PGB-compatibiliteitseisen](https://business.adobe.com/products/magento/pci-compliance.html).
 
-## 15. Als ik gebruik van AEM en Magento cloud-versies, is deze gezamenlijke oplossing PCI-compatibel?
+## 15. Als ik gebruik van AEM en Adobe Commerce cloud-versies, is deze gezamenlijke oplossing PCI-compatibel?
 
 Ja, de zelfbeoordelingsvragenlijst D en de verklaring van naleving zijn op verzoek beschikbaar.
 
 ## 16. Hoe kan ik om een I/O Runtime proefvergunning verzoeken?
 
-U kunt een proeflicentie aanvragen om I/O Runtime te gebruiken [hier](https://adobeio.typeform.com/to/obqgRm).
+U kunt een proeflicentie aanvragen om I/O Runtime te gebruiken [hier](https://developer.adobe.com/app-builder/trial/).

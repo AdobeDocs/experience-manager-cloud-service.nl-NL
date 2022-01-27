@@ -2,9 +2,9 @@
 title: Caching en prestaties
 description: Leer over de verschillende beschikbare configuraties om GrafiekQL en inhoudcaching toe te laten om de prestaties van uw handelsimplementatie te optimaliseren.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 11ad29835688b5a6f79ee16760cc03a6ee82d6a3
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Zodra gevormd voor een bepaalde component, begint het geheime voorgeheugen het o
 
 Wanneer het vormen caching voor componenten, moet de geheim voorgeheugennaam de naam van zijn **proxy** componenten die u in uw project definieert.
 
-Alvorens de cliënt een verzoek GraphQL verzendt, zal het controleren of dat **exact** zelfde GraphQL- verzoek is reeds caching en zal misschien de caching reactie terugkeren. Om aan elkaar te passen, MOET het verzoek GraphQL precies aanpassen, namelijk de vraag, verrichtingsnaam (als om het even welk), variabelen (als om het even welk) moeten allen aan het caching verzoek gelijk zijn, en ook alle kopballen van douaneHTTP die zouden kunnen worden geplaatst MOET het zelfde zijn. De Magento `Store` koptekst MOET overeenkomen.
+Alvorens de cliënt een verzoek GraphQL verzendt, zal het controleren of dat **exact** zelfde GraphQL- verzoek is reeds caching en zal misschien de caching reactie terugkeren. Om aan elkaar te passen, MOET het verzoek GraphQL precies aanpassen, namelijk de vraag, verrichtingsnaam (als om het even welk), variabelen (als om het even welk) moeten allen aan het caching verzoek gelijk zijn, en ook alle kopballen van douaneHTTP die zouden kunnen worden geplaatst MOET het zelfde zijn. De Adobe Commerce `Store` koptekst MOET overeenkomen.
 
 ### Voorbeelden {#examples}
 
@@ -49,7 +49,7 @@ Caching voor andere componenten zou op een projectbasis, gewoonlijk in coördina
 
 Pagina&#39;s of fragmenten in cache AEM in het deelvenster [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is een beste praktijk voor om het even welk AEM project. Doorgaans is dit afhankelijk van validatietechnieken die ervoor zorgen dat inhoud die in AEM is gewijzigd, correct wordt bijgewerkt in de Dispatcher. Dit is een kernelement van de strategie voor het in cache plaatsen van AEM Dispatcher.
 
-Naast zuivere AEM beheerde inhoud CIF kan een pagina commerciële gegevens typisch tonen die dynamisch van Magento via GraphQL wordt gehaald. Hoewel de paginastructuur zelf misschien nooit verandert, kan de commerciële inhoud bijvoorbeeld veranderen als sommige productgegevens (naam, prijs, enz.) wijzigingen in Magento.
+Naast zuivere AEM beheerde inhoud CIF kan een pagina commerciële gegevens typisch tonen die dynamisch van Adobe Commerce via GraphQL wordt gehaald. Hoewel de paginastructuur zelf misschien nooit verandert, kan de commerciële inhoud bijvoorbeeld veranderen als sommige productgegevens (naam, prijs, enz.) wijzigingen in Adobe Commerce.
 
 Om ervoor te zorgen dat CIF-pagina&#39;s gedurende een beperkte periode in de AEM dispatcher in cache kunnen worden opgeslagen, raden we u daarom aan om het volgende te doen: [Op tijd gebaseerde invalidatie van cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (ook wel op TTL gebaseerd in cache plaatsen genoemd) wanneer het in cache plaatsen van CIF-pagina&#39;s in de AEM Dispatcher. Deze eigenschap kan in AEM met het gebruiken van extra worden gevormd [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) pakket.
 

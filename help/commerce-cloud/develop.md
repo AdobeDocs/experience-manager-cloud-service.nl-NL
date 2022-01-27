@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
+source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1004'
 ht-degree: 4%
 
 ---
@@ -68,25 +68,25 @@ Voor lokale ontwikkeling van de CIF Add-on met behulp van de AEM as a Cloud Serv
 
    Het ZIP-bestand voor de CIF-invoegtoepassing bevat twee Sling Feature-archiefbestanden `.far` bestanden. Zorg ervoor dat u de juiste SDK gebruikt voor AEM-auteur of AEM-publicatie, afhankelijk van hoe u de lokale AEM as a Cloud Service SDK wilt uitvoeren.
 
-1. Een lokale besturingssysteemomgevingsvariabele maken met de naam `COMMERCE_ENDPOINT` het eindpunt Magento GraphQL vasthouden.
+1. Een lokale besturingssysteemomgevingsvariabele maken met de naam `COMMERCE_ENDPOINT` Houd het Adobe Commerce GraphQL-eindpunt vast.
 
    Voorbeeld Mac OSX:
 
    ```bash
-   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    Voorbeeld van Windows:
 
    ```bash
-   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    Deze variabele wordt gebruikt door AEM om met uw handelssysteem te verbinden. Bovendien omvat de toe:voegen-on CIF een lokale omgekeerde volmacht om het eindpunt van GraphQL van de Handel plaatselijk beschikbaar te maken. Dit wordt gebruikt door de CIF auteurshulpmiddelen (productconsole en plukkers) en voor CIF cliënt-zijcomponenten die directe vraag GraphQL doen.
 
    Deze variabele moet ook voor de AEM as a Cloud Service omgeving worden ingesteld. Zie voor meer informatie over variabelen [Het vormen OSGi voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (Optioneel) Als u niet-actieve catalogusfuncties wilt inschakelen, moet u een integratietoken maken voor uw Magento-instantie. Volg de stappen op [Aan de slag](./getting-started.md#staging) om het token te maken.
+1. (Optioneel) Als u niet-actieve catalogusfuncties wilt inschakelen, moet u een integratietoken maken voor uw Adobe Commerce-instantie. Volg de stappen op [Aan de slag](./getting-started.md#staging) om het token te maken.
 
    Plaats een geheim OSGi met de naam `COMMERCE_AUTH_HEADER` op de volgende waarde:
 

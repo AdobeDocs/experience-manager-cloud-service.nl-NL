@@ -1,6 +1,6 @@
 ---
 title: Multi-Store-installatie voor handel
-description: Leer hoe u meerdere winkelweergaven van Magento tot AEM kunt toewijzen. Hierdoor kunnen projecten ondersteuning bieden voor meertalige en meertalige gebruiksgevallen.
+description: Leer hoe u meerdere winkelweergaven van Adobe Commerce aan AEM koppelt. Hierdoor kunnen projecten ondersteuning bieden voor meertalige en meertalige gebruiksgevallen.
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
@@ -10,32 +10,32 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: c5ae2fb098c30d2be45316367f87725d16d84af7
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # Multi-Store-installatie voor handel {#multi-store}
 
-De AEM CIF Core Componenten kunnen op veelvoudige AEM plaatsstructuren worden gebruikt en de onderliggende cliënt GraphQL implementatie kan met verschillende Magento opslag/opslagmeningen verbinden. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
+De AEM CIF Core-componenten kunnen worden gebruikt op meerdere AEM-sitestructuren en de onderliggende GraphQL-clientimplementatie kan verbinding maken met verschillende Adobe Commerce-winkels/winkelweergaven. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
 
-In een video wordt een overzicht gegeven van de opties voor het integreren van meerdere Magento Store Views met Adobe Experience Manager Sites.
+In een video wordt een overzicht gegeven van de opties voor het integreren van meerdere Adobe Commerce Store Views met Adobe Experience Manager Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 AEM functies voor beheer van meerdere sites van Live Copy en Language Copy worden in combinatie met het Commerce Integration Framework gebruikt om sites wereldwijd te beheren in verschillende regio&#39;s en regio&#39;s.
 
-De geadviseerde opstelling is een 1:1 verhouding tussen AEM plaats en de opslagmening van de Magento te gebruiken.
+De aanbevolen setup bestaat uit het gebruik van een 1:1-relatie tussen AEM site en de Adobe Commerce-winkelweergave.
 
 Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten te AEM zodat ook deze kunnen worden gekoppeld aan een toegewijde winkelweergave:
 
 ## Configuratie {#configuration}
 
-1. Meerdere winkels configureren en weergaven opslaan volgens het in [Magento-websites, -winkels en -weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. Meerdere winkels configureren en weergaven opslaan volgens het in [Adobe Commerce-websites, -winkels en -weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
-2. Zorg ervoor dat de verbinding tussen AEM &amp; Magento werkt.
+2. Controleer of de verbinding tussen AEM en Adobe Commerce werkt.
 
 3. Creeer een kindconfiguratie van CIF Cloud Service config die deze stappen volgt:
 
@@ -47,7 +47,7 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
 
    >[!TIP]
    >
-   > Commerciële catalogi kunnen worden benaderd met behulp van id&#39;s of UID&#39;s. UID&#39;s zijn geïntroduceerd in Magento 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
+   > Commerciële catalogi kunnen worden benaderd met behulp van id&#39;s of UID&#39;s. UID&#39;s zijn geïntroduceerd in Adobe Commerce 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
 
 4. Wijs de kindconfiguratie aan een AEM plaats toe
 
@@ -59,7 +59,7 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
 
 ## Aanvullende bronnen
 
-* [Magento-websites, -winkels en -weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+* [Adobe Commerce-websites, -winkels en -weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF Core-componenten - Configuratie van meerdere winkels/sites](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Beheer van meerdere sites gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](/help/sites-cloud/administering/msm/overview.md)

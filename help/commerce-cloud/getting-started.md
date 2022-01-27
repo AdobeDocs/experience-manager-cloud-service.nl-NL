@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 2afeb12ec7b99da056652fc869da5bc82db30754
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1096'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Nadat u de CIF-invoegtoepassing hebt ingericht, wordt deze toegepast op alle bes
 
 De tweede stap is zelfbediening voor elke AEM as a Cloud Service omgeving. Er zijn sommige extra configuraties u na de aanvankelijke levering van toe:voegen-op CIF zult moeten doen.
 
-## AEM verbinden met een Oplossing van de Handel {#magento}
+## AEM verbinden met een Oplossing van de Handel {#solution}
 
 De CIF-invoegtoepassing en de [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) met een handelsoplossing, moet u het eindpunt GraphicsQL eindpunt URL via een de omgevingsvariabele van de Manager van de Wolk verstrekken. De variabelenaam is `COMMERCE_ENDPOINT`. Er moet een beveiligde verbinding via HTTPS worden geconfigureerd.
 
@@ -81,7 +81,7 @@ Om AEM met een handelsoplossing via Adobe I/O CLI te verbinden, volg deze stappe
 
    Zie [CLI-documenten](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor meer informatie.
 
-   De het eindpunt URL van GraphQL van de handel eindpunt moet aan de dienst van GraphQl van de handel richten en een veilige verbinding gebruiken HTTPS. Bijvoorbeeld: `https://<yourmagentosystem>/graphql`.
+   De het eindpunt URL van GraphQL van de handel eindpunt moet aan de dienst van GraphQl van de handel richten en een veilige verbinding gebruiken HTTPS. Bijvoorbeeld: `https://<yourcommercesystem>/graphql`.
 
 4. Catalogusfuncties met status inschakelen die verificatie vereisen (optioneel)
 
@@ -103,7 +103,7 @@ Met dit, bent u klaar om AEM as a Cloud Service Handel te gebruiken en uw projec
 
 ## Opslaan en catalogi configureren {#catalog}
 
-De CIF-invoegtoepassing en de [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) kan op veelvoudige AEM plaatsstructuren worden gebruikt die met verschillende handels opslag (of opslagmeningen, enz.) worden verbonden.Door gebrek, wordt de toe:voegen-aan CIF opgesteld met een standaardconfig die met Adobe Commerce standaardopslag en catalogus (Magento) verbindt.
+De CIF-invoegtoepassing en de [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) kan op veelvoudige AEM plaatsstructuren worden gebruikt die met verschillende handels opslag (of opslagmeningen, enz.) worden verbonden.Door gebrek, wordt de toe:voegen-binnen CIF opgesteld met een standaardconfig die met Adobe Commerce standaardopslag en catalogus verbindt.
 
 Deze configuratie kan voor het project via CIF Cloud Service config worden aangepast die deze stappen volgt:
 
@@ -118,7 +118,7 @@ Deze configuratie kan voor het project via CIF Cloud Service config worden aange
 De volgende eigenschappen kunnen worden geconfigureerd:
 
 - Cliënt GraphQL - selecteer de gevormde cliënt GraphQL voor handel achterste mededeling. Dit zou typisch bij gebrek moeten blijven.
-- Winkelweergave - de weergave-id (Magento) van de winkel. Als dit leeg is, wordt de standaardwinkelweergave gebruikt.
+- Winkelweergave - de weergave-id van de winkel. Als dit leeg is, wordt de standaardwinkelweergave gebruikt.
 - GraphQL de Weg van de Volmacht - de Volmacht van GraphQL van de weg URL in AEM gebruik aan volmachtsverzoeken aan het commerciële achterste eindpunt GraphQL.
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ De volgende eigenschappen kunnen worden geconfigureerd:
 - De Steun van UID van de Catalogus van de inschakelen - laat steun voor UID in plaats van identiteitskaart in de handel achterste vraag GraphQL toe.
    >[!NOTE]
    >
-   > Ondersteuning voor UID&#39;s werd geïntroduceerd in Adobe Commerce (Magento) 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
+   > Ondersteuning voor UID&#39;s is geïntroduceerd in Adobe Commerce 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
 - Hoofdcategorie-id van catalogus - de id (UID of ID) van de hoofdmap van de opslagcatalogus
    >[!CAUTION]
    >

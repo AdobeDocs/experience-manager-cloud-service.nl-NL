@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: a30006b7eedbe2bc6993f47b7e8433af6df17a07
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '2578'
+source-wordcount: '2598'
 ht-degree: 0%
 
 ---
 
 # AEM CIF Core-componenten aanpassen {#customize-cif-components}
 
-De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie breidt u de [Productteam](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) om een aangepast kenmerk van Magento weer te geven. U zult ook meer over de integratie GraphQL tussen AEM en Magento en de uitbreidingshaken leren die door de Componenten van de Kern CIF worden verstrekt.
+De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie breidt u de [Productteam](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) om een aangepast kenmerk van Adobe Commerce weer te geven. U zult ook meer over de integratie GraphQL tussen AEM en Adobe Commerce en de uitbreidingshaken leren die door de Componenten van de Kern CIF worden verstrekt.
 
 >[!TIP]
 >
@@ -28,13 +28,13 @@ De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een ref
 
 ## Wat u gaat maken
 
-Het merk Venia is onlangs begonnen met de productie van bepaalde producten met behulp van duurzame materialen en het bedrijf wil graag een **Eco Friendly** badge als onderdeel van de Product Teaser. Er wordt een nieuw aangepast kenmerk gemaakt in Magento om aan te geven of een product het **Milieuvriendelijk** materiaal. Dit douanekenmerk zal dan als deel van de vraag GraphQL worden toegevoegd en op de Teaser van het Product voor gespecificeerde producten getoond.
+Het merk Venia is onlangs begonnen met de productie van bepaalde producten met behulp van duurzame materialen en het bedrijf wil graag een **Eco Friendly** badge als onderdeel van de Product Teaser. In Adobe Commerce wordt een nieuw aangepast kenmerk gemaakt om aan te geven of een product het **Milieuvriendelijk** materiaal. Dit douanekenmerk zal dan als deel van de vraag GraphQL worden toegevoegd en op de Teaser van het Product voor gespecificeerde producten getoond.
 
 ![Eco-vriendelijke badge - definitieve implementatie](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## Vereisten {#prerequisites}
 
-U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Dit omvat een lopende instantie van AEM die wordt gevormd en met een instantie van Magento verbonden. De vereisten en stappen voor [lokale ontwikkeling instellen met AEM as a Cloud Service SDK](../develop.md). Als u de zelfstudie volledig wilt volgen, hebt u machtigingen nodig om toe te voegen [Kenmerken van een product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Magento.
+U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Dit omvat een lopende instantie van AEM die wordt gevormd en met een instantie van Adobe Commerce verbonden. De vereisten en stappen voor [lokale ontwikkeling instellen met AEM as a Cloud Service SDK](../develop.md). Als u de zelfstudie volledig wilt volgen, hebt u machtigingen nodig om toe te voegen [Kenmerken van een product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
 U zult ook GrafiekQL winde zoals nodig hebben [GraphiQL](https://github.com/graphql/graphiql) of een browserextensie om de codevoorbeelden en zelfstudies uit te voeren. Als u een browserextensie installeert, moet u ervoor zorgen dat deze de mogelijkheid heeft om aanvraagheaders in te stellen. In Google Chrome: [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) is één extensie die de taak kan uitvoeren.
 
@@ -59,11 +59,11 @@ We klonen de [Venia-project](https://github.com/adobe/aem-cif-guides-venia) en o
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Voeg de noodzakelijke configuraties OSGi toe om uw AEM instantie met een instantie van de Magento te verbinden of de configuraties aan het onlangs gecreeerd project toe te voegen.
+1. Voeg de noodzakelijke configuraties OSGi toe om uw AEM instantie met een instantie van Adobe Commerce te verbinden of de configuraties aan het onlangs gecreeerd project toe te voegen.
 
-1. Op dit punt zou u een werkende versie van een storefront moeten hebben die met een instantie van Magento wordt verbonden. Ga naar de `US` > `Home` pagina bij: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Op dit moment hebt u een werkende versie van een winkel die is verbonden met een Adobe Commerce-instantie. Ga naar de `US` > `Home` pagina bij: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   Je moet zien dat de winkel het thema Venia gebruikt. Als u het hoofdmenu van de storefront uitbreidt, ziet u verschillende categorieën die aangeven dat de Magento van de verbinding werkt.
+   Je moet zien dat de winkel het thema Venia gebruikt. Als u het hoofdmenu van de winkel uitbreidt, ziet u verschillende categorieën die aangeven dat de verbinding met Adobe Commerce werkt.
 
    ![Storefront geconfigureerd met Venia-thema](../assets/customize-cif-components/venia-store-configured.png)
 
@@ -77,7 +77,7 @@ De component Product Teaser wordt tijdens deze zelfstudie uitgebreid. Als eerste
 
    ![Productteam invoegen](../assets/customize-cif-components/product-teaser-add-component.png)
 
-3. Vouw het zijpaneel uit (indien nog niet in-/uitgeschakeld) en schakel het vervolgkeuzemenu voor het zoeken van elementen naar **Producten**. Dit zou een lijst van beschikbare producten van een verbonden instantie van de Magento moeten tonen. Selecteer een product en **slepen+neerzetten** het op **Productteam** op de pagina.
+3. Vouw het zijpaneel uit (indien nog niet in-/uitgeschakeld) en schakel het vervolgkeuzemenu voor het zoeken van elementen naar **Producten**. Dit zou een lijst van beschikbare producten van een verbonden instantie van Adobe Commerce moeten tonen. Selecteer een product en **slepen+neerzetten** het op **Productteam** op de pagina.
 
    ![Slepen en productteam neerzetten](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
@@ -89,15 +89,15 @@ De component Product Teaser wordt tijdens deze zelfstudie uitgebreid. Als eerste
 
    ![Productteam - standaardstijl](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Aangepast kenmerk toevoegen in Magento {#add-custom-attribute}
+## Een aangepast kenmerk toevoegen in Adobe Commerce {#add-custom-attribute}
 
-De in AEM weergegeven producten en productgegevens worden opgeslagen in Magento. Voeg vervolgens een nieuw kenmerk toe voor **Eco Friendly** als onderdeel van het productkenmerk ingesteld met de gebruikersinterface van Magento.
+De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Commerce. Voeg vervolgens een nieuw kenmerk toe voor **Eco Friendly** als onderdeel van het kenmerk product dat is ingesteld met de gebruikersinterface van Adobe Commerce.
 
 >[!TIP]
 >
 > Hebt u al een aangepaste **Ja/Nee** kenmerk als onderdeel van de set productkenmerken? Voel u vrij om het te gebruiken en sla deze sectie over.
 
-1. Meld u aan bij uw Magento-instantie.
+1. Meld u aan bij uw Adobe Commerce-exemplaar.
 1. Navigeren naar **Catalogus** > **Producten**.
 1. Werk het zoekfilter bij om de **Configureerbaar product** gebruikt wanneer toegevoegd aan de component Teaser in de vorige oefening. Open het product in de bewerkingsmodus.
 
@@ -124,24 +124,24 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Magento.
 
    >[!TIP]
    >
-   > Meer informatie over het beheren [Productkenmerken vindt u in de gebruikershandleiding voor Magento](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
+   > Meer informatie over het beheren [Productkenmerken vindt u in de gebruikershandleiding van Adobe Commerce](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
-1. Navigeren naar **Systeem** > **Gereedschappen** > **Cachebeheer**. Aangezien een update aan het gegevensschema is gemaakt moeten wij sommige Types van Geheime voorgeheugen in Magento ongeldig maken.
+1. Navigeren naar **Systeem** > **Gereedschappen** > **Cachebeheer**. Aangezien een update aan het gegevensschema is gemaakt moeten wij sommige Types van Geheime voorgeheugen in Adobe Commerce ongeldig maken.
 1. Schakel het selectievakje naast **Configuratie** en verzend het cachetype voor **Vernieuwen**
 
    ![Type configuratiecache vernieuwen](../assets/customize-cif-components/refresh-configuration-cache-type.png)
 
    >[!TIP]
    >
-   > Meer informatie over [Cachebeheer vindt u in de gebruikershandleiding van Magento](https://docs.magento.com/user-guide/system/cache-management.html).
+   > Meer informatie over [Cache Management vindt u in de Adobe Commerce-gebruikershandleiding](https://docs.magento.com/user-guide/system/cache-management.html).
 
 ## Gebruik een GrafiekQL winde om Attribuut te verifiëren {#use-graphql-ide}
 
-Voordat u in AEM code gaat, is het handig om de [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) het gebruiken van een IDE GraphQL. De integratie van Magento met AEM wordt hoofdzakelijk gedaan via een reeks vragen GraphQL. Het begrip van en het wijzigen van de vragen GraphQL is één van de belangrijkste manieren waarin de Componenten van de Kern CIF kunnen worden uitgebreid.
+Voordat u in AEM code gaat, is het handig om de [Overzicht van GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) het gebruiken van een IDE GraphQL. De integratie van Adobe Commerce met AEM wordt hoofdzakelijk gedaan via een reeks vragen GraphQL. Het begrip van en het wijzigen van de vragen GraphQL is één van de belangrijkste manieren waarin de Componenten van de Kern CIF kunnen worden uitgebreid.
 
 Daarna, gebruik een IDE GraphQL om te verifiëren dat `eco_friendly` kenmerk is toegevoegd aan de set productkenmerken. Screenshots in deze zelfstudie gebruiken de [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
 
-1. Open GrafiekQL winde en ga URL in `http://<magento-server>/graphql` in de bar URL van uw winde of uitbreiding.
+1. Open GrafiekQL winde en ga URL in `http://<commerce-server>/graphql` in de bar URL van uw winde of uitbreiding.
 2. Voeg het volgende toe [productquery](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) waar `YOUR_SKU` is de **SKU** van het product dat bij de vorige exercitie werd gebruikt:
 
    ```json
@@ -182,7 +182,7 @@ Daarna, gebruik een IDE GraphQL om te verifiëren dat `eco_friendly` kenmerk is 
 
    >[!TIP]
    >
-   > Meer gedetailleerde documentatie over [Magento GraphQL vindt u hier](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   > Meer gedetailleerde documentatie over [Adobe Commerce GraphQL vindt u hier](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Het verkoopmodel voor de producttaser bijwerken {#updating-sling-model-product-teaser}
 
@@ -285,7 +285,7 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
 
    Toevoegen aan de `extendProductQueryWith` deze methode is een krachtige manier om ervoor te zorgen dat aanvullende productkenmerken beschikbaar zijn voor de rest van het model. Het minimaliseert ook het aantal uitgevoerde vragen.
 
-   In de bovenstaande code`addCustomSimpleField` wordt gebruikt om de `eco_friendly` kenmerk. Dit illustreert hoe u voor om het even welke douanekenmerken kunt vragen die deel van het schema van de Magento uitmaken.
+   In de bovenstaande code`addCustomSimpleField` wordt gebruikt om de `eco_friendly` kenmerk. Dit illustreert hoe u kunt zoeken naar aangepaste kenmerken die deel uitmaken van het Adobe Commerce-schema.
 
    >[!NOTE]
    >
