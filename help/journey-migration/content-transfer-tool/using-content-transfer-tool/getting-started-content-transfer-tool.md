@@ -1,9 +1,9 @@
 ---
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '859'
 ht-degree: 25%
 
 ---
@@ -88,7 +88,7 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
    1. **Access Token**: Voer het toegangstoken in.
 
       >[!NOTE]
-      >U kunt het toegangstoken terugwinnen door **Toegangstoken openen** knop. U moet ervoor zorgen dat u tot de groep van AEM beheerders in de instantie van de doelCloud Service behoort.
+      >U kunt het toegangstoken terugwinnen door **Toegangstoken openen** knop. U moet ervoor zorgen dat u tot de groep van &quot;Beheerders&quot;in de instantie van de doelCloud Service behoort.
 
    1. **Parameters**: Selecteer de volgende parameters om de migratieset te maken:
 
