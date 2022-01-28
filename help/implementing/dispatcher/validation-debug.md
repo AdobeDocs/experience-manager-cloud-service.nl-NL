@@ -3,9 +3,9 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Validatie en foutopsporing met Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
+source-git-commit: 5a586e99febac6ee2f0f566e508028812bf89372
 workflow-type: tm+mt
-source-wordcount: '2413'
+source-wordcount: '2433'
 ht-degree: 1%
 
 ---
@@ -126,6 +126,8 @@ Het wordt aanbevolen dat de bovenstaande bestanden verwijzen naar de hieronder v
 * `conf.d/available_vhosts/default.vhost`
 
 Bevat een virtuele voorbeeldhost. Voor uw eigen virtuele host maakt u een kopie van dit bestand, past u het aan, gaat u naar `conf.d/enabled_vhosts` en maak een symbolische koppeling naar uw aangepaste kopie.
+
+Zorg ervoor dat er altijd een virtuele host beschikbaar is die overeenkomt met ServerAlias &quot;\*.local&quot; en ook localhost, nodig voor interne Adobe-processen.
 
 * `conf.d/dispatcher_vhost.conf`
 
