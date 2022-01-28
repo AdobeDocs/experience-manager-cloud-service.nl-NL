@@ -1,15 +1,15 @@
 ---
 title: Hoe migreren van een AEM 6.5 Forms en AEM 6.4 Forms naar [!DNL AEM Forms] as a Cloud Service omgeving?
-description: Migreren van een [!DNL AEM Forms] On-Premise environment to [!DNL AEM Forms] as a Cloud Service omgeving
+description: Migreren van een [!DNL AEM Forms] Omgeving op locatie naar [!DNL AEM Forms] as a Cloud Service omgeving
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ea9d8714dca0d30ba2ff33cef220c8b3f8b3c429
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1146'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,10 @@ U kunt uw Adaptieve Forms-, thema-, sjablonen- en cloudconfiguraties migreren va
 * (Alleen voor AEM 6.3 Forms of een eerdere versie van de omgeving die is bijgewerkt naar AEM 6.4 Forms of AEM 6.5 Forms) Aangepaste Forms op basis van out-of-the-box sjablonen en thema&#39;s die beschikbaar zijn in AEM 6.3 Forms of vorige versie worden niet ondersteund op [!DNL [!DNL AEM Forms]] as a Cloud Service.
 
 ## Vereisten {#prerequisites}
+
+* [Forms inschakelen - Digitale inschrijving](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) voor uw Forms Cloud Service-programma en [de pijpleiding in werking stellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+
+![Droog resultaat](assets/enable-add-on.png)
 
 * In een Cloud Service-omgeving werkt het migratiehulpprogramma samen met het Hulpprogramma voor het toewijzen van gebruikersgegevens en het gereedschap voor het overbrengen van inhoud. Het migratiehulpprogramma maakt [!DNL AEM Forms] elementen die compatibel zijn met Cloud Service en het gereedschap voor inhoudsoverdracht migreren de inhoud van uw [!DNL AEM Forms] milieu aan een [!DNL AEM] as a Cloud Service omgeving. Voordat u het migratiehulpprogramma gaat gebruiken, moet u het proces van [verplaatsen naar AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Het proces heeft twee gereedschappen:
    * [Gereedschap Toewijzing gebruiker](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration): Met het gereedschap Toewijzing gebruiker kunt u uw gebruikers toewijzen met de bijbehorende Adobe IMS-gebruikersaccounts.
