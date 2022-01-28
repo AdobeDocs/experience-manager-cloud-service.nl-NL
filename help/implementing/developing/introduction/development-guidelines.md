@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
+source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2288'
 ht-degree: 2%
 
 ---
@@ -105,15 +105,34 @@ Om de logboekniveaus voor de milieu&#39;s van de Wolk te veranderen, zou de het 
 
 **Het FOUTOPSPORINGSlogniveau activeren**
 
-Het standaardlogboekniveau is INFO, dat wil zeggen, worden de DEBUG- berichten niet geregistreerd.
-Als u het niveau van het FOUTOPSPORINGSlogbestand wilt activeren, stelt u de optie
+Het standaardlogboekniveau is INFO, dat wil zeggen, worden de DEBUG- berichten niet geregistreerd. Als u het niveau van het DEBUG-logbestand wilt activeren, werkt u de volgende eigenschap bij naar de foutopsporingsmodus.
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-eigenschap voor foutopsporing. Verlaat het logboek bij het DEBUG logboekniveau niet langer dan nodig, aangezien het veel logboeken produceert.
+Stel bijvoorbeeld `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` met de volgende waarde.
+
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+Laat het logbestand op het niveau van het DEBUG-logbestand niet langer dan nodig is, omdat dit veel items genereert.
+
+De discrete logboekniveaus kunnen voor de verschillende AEM milieu&#39;s worden geplaatst gebruikend runtime op wijze-gebaseerde configuratie OSGi die als het wenselijk is om altijd bij te registreren `DEBUG` tijdens de ontwikkeling. Bijvoorbeeld:
+
+| Milieu | OSGi-configuratielocatie per uitvoeringsmodus | `org.apache.sling.commons.log.level` eigenschapswaarde | | - | - | - | | Ontwikkeling | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | | Fase | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WAARSCHUWING | | Productie | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | FOUT |
+
 Een lijn in zuivert dossier begint gewoonlijk met DEBUG, en verstrekt dan het logboekniveau, de installeractie en het logboekbericht. Bijvoorbeeld:
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 De logniveaus zijn als volgt:
 
