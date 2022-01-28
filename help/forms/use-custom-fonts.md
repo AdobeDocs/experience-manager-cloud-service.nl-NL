@@ -1,9 +1,9 @@
 ---
 title: 'Aangepaste lettertypen gebruiken '
 description: 'Aangepaste lettertypen gebruiken '
-source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Met Forms as a Cloud Service Communications kunt u een XDP-sjabloon, een op XDP 
 
 U kunt [een lettertype insluiten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) naar een PDF-document. Wanneer een lettertype is ingesloten, wordt het PDF-document op alle platforms op dezelfde manier weergegeven. Het gebruikte ingesloten lettertype voor een consistente vormgeving. Wanneer een lettertype niet is ingesloten, is de rendering van het lettertype afhankelijk van de renderinstellingen van de PDF viewer-client. Als het lettertype beschikbaar is op de clientcomputer, gebruikt de PDF het opgegeven lettertype, anders wordt de PDF weergegeven met een fallback-lettertype.
 
-## Aangepaste lettertypen toevoegen aan de as a Cloud Service Forms-omgeving
+## Aangepaste lettertypen toevoegen aan de as a Cloud Service Forms-omgeving {#custom-fonts-cloud-service}
 
 Aangepaste lettertypen toevoegen aan uw Cloud Service-omgeving:
 
-1. Het lokale ontwikkelingsproject instellen en openen. U kunt elke gewenste IDE gebruiken.
+1. De instellingen en openen [lokaal ontwikkelingsproject](setup-local-development-environment.md). U kunt elke gewenste IDE gebruiken.
 1. Maak in de mapstructuur op hoofdniveau van het project een map waarin u aangepaste lettertypen kunt opslaan en aangepaste lettertypen kunt toevoegen aan de map. Bijvoorbeeld lettertypen/src/main/resources
    ![Map Fonts](assets/fonts.png)
 
@@ -71,3 +71,21 @@ Aangepaste lettertypen toevoegen aan uw Cloud Service-omgeving:
    ```
 
 1. De bijgewerkte code inchecken en [de pijpleiding in werking stellen](/help/implementing/cloud-manager/deploy-code.md) om de lettertypen te implementeren in uw Cloud Service-omgeving.
+
+1. Open de bevelherinnering, navigeer aan de lokale projectomslag, en stel hieronder bevel in werking. Er worden pakketten met lettertypen gemaakt in een .jar-bestand. U kunt het .jar dossier voor de lokale plaatsing van het project gebruiken.
+
+```shell
+mvn clean install
+```
+
+## Aangepaste lettertypen toevoegen aan uw lokale ontwikkelomgeving voor Forms Cloud Service {#custom-fonts-cloud-service-sdk}
+
+1. Start uw lokale ontwikkelomgeving.
+1. Navigeren naar [crx-repository]\install-map
+1. Plaats het .jar-bestand met aangepaste lettertypen en relevante implementatiecode in de installatiemap. Als u het .jar dossier niet hebt, voer de stappen uit die in worden vermeld [Aangepaste lettertypen toevoegen aan de as a Cloud Service Forms-omgeving](#custom-fonts-cloud-service) om het bestand te genereren.
+1. Voer de [SDK-omgeving op basis van docker](setup-local-development-environment.md#docker-microservices)
+
+
+   >[!NOTE]
+   >
+   >Wanneer u een bijgewerkt .jar dossier opstelt om douanedoopvonten aan lokale plaatsingsmilieu toe te voegen of te verwijderen, stop en begin het op docker-Gebaseerde milieu van SDK.
