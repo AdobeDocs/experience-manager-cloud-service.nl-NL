@@ -3,9 +3,9 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Validatie en foutopsporing met Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: ddc49ef1eed491a4464d17b6a47f924c42381e7f
+source-git-commit: dc25b243c2d64d735e553e7ea2fb990fb34cb4cb
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2508'
 ht-degree: 1%
 
 ---
@@ -441,7 +441,7 @@ In de configuratie van de Verzender, is de zelfde milieuvariabele beschikbaar. A
 }
 ```
 
-U kunt ook omgevingsvariabelen van Cloud Manager gebruiken in de configuratie httpd/dispatcher. Deze methode is vooral belangrijk als een programma meerdere ontwikkelomgevingen heeft en sommige van deze ontwikkelomgevingen verschillende waarden hebben voor de httpd/dispatcherconfiguratie. Dezelfde syntaxis ${VIRTUALHOST} wordt gebruikt als in het bovenstaande voorbeeld, maar de declaraties Definiëren in het bovenstaande variabelenbestand worden niet gebruikt. Lees de [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en) voor instructies over het configureren van omgevingsvariabelen van Cloud Manager.
+U kunt ook omgevingsvariabelen van Cloud Manager gebruiken in de configuratie httpd/dispatcher. Deze methode is vooral belangrijk als een programma meerdere ontwikkelomgevingen heeft en sommige van deze ontwikkelomgevingen verschillende waarden hebben voor de httpd/dispatcherconfiguratie. Dezelfde syntaxis ${VIRTUALHOST} wordt gebruikt als in het bovenstaande voorbeeld, maar de declaraties Definiëren in het bovenstaande variabelenbestand worden niet gebruikt. Lees de [Documentatie van Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) voor instructies over het configureren van omgevingsvariabelen van Cloud Manager.
 
 Wanneer het testen van uw configuratie plaatselijk, kunt u verschillende milieutypes simuleren door de variabele over te gaan `DISP_RUN_MODE` aan de `docker_run.sh` script rechtstreeks:
 
