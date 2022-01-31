@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] Batchverwerking voor as a Cloud Service communicatie
 description: Hoe te om merkgeoriënteerde en gepersonaliseerde mededelingen tot stand te brengen?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
@@ -168,55 +168,6 @@ Laten we het met behulp van een voorbeeld begrijpen: Stel dat er een invoergegev
 >[!NOTE]
 >
 >Het verwerken van een batch kan enige tijd in beslag nemen, afhankelijk van het aantal invoerrecords en de complexiteit van de sjabloon. Wacht een paar minuten voordat u doelmappen controleert op uitvoerbestanden.
-
-## Overwegingen  {#considerations-for-communications-apis}
-
-### Formuliergegevens {#form-data}
-
-Communicatie-API&#39;s accepteren zowel een formulierontwerp dat gewoonlijk in Designer wordt gemaakt als XML-formuliergegevens. Als u een document wilt vullen met gegevens, moet de XML-formuliergegevens een XML-element bevatten voor elk formulierveld dat u wilt vullen. De naam van het XML-element moet overeenkomen met de veldnaam. Een XML-element wordt genegeerd als het niet overeenkomt met een formulierveld of als de naam van het XML-element niet overeenkomt met de veldnaam. Het is niet nodig de volgorde aan te passen waarin de XML-elementen worden weergegeven. De belangrijkste factor is dat de XML-elementen met de overeenkomende waarden worden opgegeven.
-
-Bekijk het volgende voorbeeld van een aanvraagformulier voor een lening:
-
-![Toepassingsformulier laden](assets/loanFormData.png)
-
-Als u gegevens wilt samenvoegen in dit formulierontwerp, maakt u een XML-gegevensbron die overeenkomt met het formulier. De volgende XML vertegenwoordigt een XML-gegevensbron die overeenkomt met het voorbeeld van een hypotheektoepassingsformulier.
-
-```XML
-<?xml version="1.0" encoding="UTF-8" ?>
-- <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
-- <xfa:data>
-- <data>
-    - <Layer>
-        <closeDate>1/26/2007</closeDate>
-        <lastName>Johnson</lastName>
-        <firstName>Jerry</firstName>
-        <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>
-        <city>New York</city>
-        <zipCode>00501</zipCode>
-        <state>NY</state>
-        <dateBirth>26/08/1973</dateBirth>
-        <middleInitials>D</middleInitials>
-        <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>
-        <phoneNumber>5555550000</phoneNumber>
-    </Layer>
-    - <Mortgage>
-        <mortgageAmount>295000.00</mortgageAmount>
-        <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>
-        <purchasePrice>300000</purchasePrice>
-        <downPayment>5000</downPayment>
-        <term>25</term>
-        <interestRate>5.00</interestRate>
-    </Mortgage>
-</data>
-</xfa:data>
-</xfa:datasets>
-```
-
-### Ondersteunde documenttypen {#supported-document-types}
-
-Voor volledige toegang tot de renderingmogelijkheden van de communicatie-API&#39;s wordt aanbevolen een XDP-bestand als invoer te gebruiken. Soms kan een PDF-bestand worden gebruikt. Het gebruik van een PDF-bestand als invoer heeft echter de volgende beperkingen:
-
-Een PDF-document dat geen XFA-stream bevat, kan niet worden gerenderd als PostScript, PCL of ZPL. Communicatie-API&#39;s kunnen PDF-documenten met XFA-streams (dat wil zeggen formulieren die zijn gemaakt in Designer) weergeven in laser- en labelindelingen. Als het PDF-document is ondertekend, gecertificeerd of gebruiksrechten bevat (toegepast met de AEM Forms Reader Extensions-service), kan het niet worden gerenderd naar deze afdrukindelingen.
 
 ## API-naslagdocumentatie
 
