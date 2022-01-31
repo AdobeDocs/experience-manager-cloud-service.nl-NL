@@ -1,9 +1,9 @@
 ---
 title: 'Aangepaste lettertypen gebruiken '
 description: 'Aangepaste lettertypen gebruiken '
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: 0bfd75e517e03110d58575b21551d1d553fa36bf
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,10 @@ U kunt [een lettertype insluiten](https://adobedocs.github.io/experience-manager
 Aangepaste lettertypen toevoegen aan uw Cloud Service-omgeving:
 
 1. De instellingen en openen [lokaal ontwikkelingsproject](setup-local-development-environment.md). U kunt elke gewenste IDE gebruiken.
-1. Maak in de mapstructuur op hoofdniveau van het project een map waarin u aangepaste lettertypen kunt opslaan en aangepaste lettertypen kunt toevoegen aan de map. Bijvoorbeeld lettertypen/src/main/resources
+1. Maak in de mapstructuur op hoofdniveau van het project een map (module) waarin u aangepaste lettertypen kunt opslaan en aangepaste lettertypen kunt toevoegen aan de map. Bijvoorbeeld lettertypen/src/main/resources
    ![Map Fonts](assets/fonts.png)
 
-1. Open het bestand pom.xml op hoofdniveau van het ontwikkelingsproject.
+1. Open het bestand pom.xml in de module Fonts van het ontwikkelingsproject.
 1. Toevoegen `<Font-Archive-Version>` manifesteer ingang aan het .pom dossier en vastgestelde waarde van versie aan 1:
 
    ```xml
@@ -72,11 +72,11 @@ Aangepaste lettertypen toevoegen aan uw Cloud Service-omgeving:
 
 1. De bijgewerkte code inchecken en [de pijpleiding in werking stellen](/help/implementing/cloud-manager/deploy-code.md) om de lettertypen te implementeren in uw Cloud Service-omgeving.
 
-1. Open de bevelherinnering, navigeer aan de lokale projectomslag, en stel hieronder bevel in werking. Er worden pakketten met lettertypen gemaakt in een .jar-bestand. U kunt het .jar dossier voor de lokale plaatsing van het project gebruiken.
+1. (Optioneel) Open de opdrachtprompt, navigeer naar de lokale projectmap en voer de onderstaande opdracht uit. De opdracht verpakt de lettertypen in een .jar-bestand, samen met relevante informatie. Met het .jar-bestand kunt u aangepaste lettertypen toevoegen aan een lokale ontwikkelomgeving van Forms Cloud Service.
 
-```shell
-mvn clean install
-```
+   ```shell
+   mvn clean install
+   ```
 
 ## Aangepaste lettertypen toevoegen aan uw lokale ontwikkelomgeving voor Forms Cloud Service {#custom-fonts-cloud-service-sdk}
 
@@ -88,4 +88,4 @@ mvn clean install
 
    >[!NOTE]
    >
-   >Wanneer u een bijgewerkt .jar dossier opstelt om douanedoopvonten aan lokale plaatsingsmilieu toe te voegen of te verwijderen, stop en begin het op docker-Gebaseerde milieu van SDK.
+   >Wanneer u een bijgewerkt bestand met aangepaste lettertypen .jar naar de lokale implementatieomgeving implementeert, start u de op docker gebaseerde SDK-omgeving opnieuw.

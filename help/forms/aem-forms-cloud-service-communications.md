@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Communicatie
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2369'
+source-wordcount: '2247'
 ht-degree: 0%
 
 ---
@@ -267,24 +267,8 @@ In de volgende tabel worden XCI-opties opgegeven.
 | config/present/pdf/tagged | Controls the include of tags into the output PDF document. Codes, in de context van PDF, zijn aanvullende informatie die in een document is opgenomen om de logische structuur van het document zichtbaar te maken. Tags zijn handig voor toegankelijkheidshulpmiddelen en voor het opnieuw opmaken. Een paginanummer kan bijvoorbeeld als een artefact worden gecodeerd, zodat een schermlezer het niet in het midden van de tekst activeert. Hoewel codes een document nuttiger maken, verhogen zij ook de grootte van het document en de verwerkingstijd om het tot stand te brengen. |
 | config/present/pdf/version | Hiermee geeft u de versie op van het PDF-document dat moet worden gegenereerd. |
 
-### Bekende problemen
-
-- Zorg ervoor dat de grootte van de sjabloon- en XCI-configuratiebestanden groter is dan 16 kB.
-
-- Zorg ervoor dat het gegevens-xml-bestand de XML-declaratiekop niet bevat. Bijvoorbeeld, `<?xml version="1.0" encoding="UTF-8"?>`
-
-- Voor een batchconfiguratie is slechts één instantie van een combinatie van waarden van OutputType (PDF, PRINT) en RenderType (PostScript, PCL, IPL, ZPL, enz.) is toegestaan.
-
-- Wijzig de Configuratie van de Configuratie van de Gegevensbron USC/Azure Cloud die in een partijconfiguratie wordt gebruikt niet terwijl de partij in werking wordt gesteld. Zelfs na uitvoering, als om het even welke update wordt vereist, creeer een exemplaar van configuratie in plaats van het bijwerken van gebruikt in een bestaande partijconfiguratie.
-
-### Best practices voor
-
-- Adobe raadt aan gegevensbestanden op te slaan in een blob-containerarchief in het cloudgebied dat door AEM Cloud Service wordt gebruikt.
-
 <!-- Using API
 
  There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as HTTP endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
 
 The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document. -->
-
-
