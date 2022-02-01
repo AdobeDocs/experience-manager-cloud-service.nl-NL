@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
 source-wordcount: '3205'
 ht-degree: 0%
@@ -43,11 +43,11 @@ Zie ook [Optioneel - Dynamic Media-instellingen instellen en configureren](/help
 1. In de pagina van de Server van het Beeld, plaats uw Server van het Beeld - publiceer context, en gebruik dan de vijf lusjes om gebrek te vormen publiceer montages.
 
    * [Afbeeldingsserver](#image-server)
-   * [Beveiliging](#security-tab) tab
-   * [Catalogusbeheer](#catalog-management-tab) tab
-   * [Aanvraagkenmerken](#request-attributes-tab) tab
-   * [Algemene miniatuurkenmerken](#common-thumbnail-attributes-tab) tab
-   * [Kenmerken kleurbeheer](#color-management-attributes-tab) tab
+      * [Beveiliging](#security-tab) tab
+      * [Catalogusbeheer](#catalog-management-tab) tab
+      * [Aanvraagkenmerken](#request-attributes-tab) tab
+      * [Algemene miniatuurkenmerken](#common-thumbnail-attributes-tab) tab
+      * [Kenmerken kleurbeheer](#color-management-attributes-tab) tab
 
    ![Dynamic Media Publish Setup-pagina](/help/assets/assets-dm/dm-publish-setup.png)
    *Dynamic Media Publish Setup-pagina, met de **[!UICONTROL Request Attributes]**geselecteerd.*<br><br>
