@@ -2,9 +2,9 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dbc0ef92b0b61945ee195971aacab3bc8781b01c
+source-git-commit: d4372e7f5766c6fadea6ca25edc7bfa2aeba10b9
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1017'
 ht-degree: 2%
 
 ---
@@ -18,9 +18,9 @@ Met communicatiemogelijkheden kunt u merkgeoriënteerde, gepersonaliseerde en ge
 
 U kunt een document op verzoek genereren of een batchtaak maken om meerdere documenten met gedefinieerde intervallen te genereren. Communicatie-API&#39;s bieden:
 
-* gestroomlijnde mogelijkheden voor het genereren van documentatie op aanvraag en batchverwerking
+* gestroomlijnde mogelijkheden voor het genereren van documentatie op aanvraag en batchverwerking.
 
-* HTTP-API&#39;s voor eenvoudigere integratie met bestaande systemen. Afzonderlijke API&#39;s voor bewerkingen op aanvraag (lage latentie) en batchbewerkingen (bewerkingen met hoge doorvoer) worden opgenomen. Hierdoor wordt het genereren van documenten een efficiënte taak.
+* HTTP-API&#39;s voor eenvoudigere integratie met externe systemen. Afzonderlijke API&#39;s voor bewerkingen op aanvraag (lage latentie) en batchbewerkingen (bewerkingen met hoge doorvoer) worden opgenomen. Hierdoor wordt het genereren van documenten een efficiënte taak.
 
 * een veilige toegang tot gegevens. Communicatie APIs verbindt met en heeft toegang tot gegevens slechts van klant aangewezen gegevensbewaarplaatsen, maakt geen lokale exemplaren van gegevens, die mededelingen hoogst veilig maken.
 
@@ -31,7 +31,7 @@ Een creditcardverklaring kan worden gecreeerd gebruikend Communicatie APIs. Deze
 
 Communicatiegebruik [PDF- en XFA-sjablonen](#supported-document-types) with [XML-gegevens](#form-data) om één document op bestelling of veelvoudige documenten te produceren gebruikend een partijbaan bij bepaalde interval.
 
-Met behulp van een communicatie-API kunt u een sjabloon (XFA of PDF) combineren met klantgegevens ([XML-gegevens](#form-data)) om documenten te genereren in de indelingen PDF en Afdrukken, zoals PS, PCL, DPL, IPL en ZPL.
+Via de communicatie-API&#39;s kunt u een sjabloon (XFA of PDF) combineren met klantgegevens ([XML-gegevens](#form-data)) om documenten te genereren in de indelingen PDF en Afdrukken, zoals PS, PCL, DPL, IPL en ZPL.
 
 Doorgaans maakt u een sjabloon met [Designer](use-forms-designer.md) en gebruik Communicatie APIs om gegevens met het malplaatje samen te voegen. Uw toepassing kan het uitvoerdocument naar een netwerkprinter, een lokale printer of een opslagsysteem verzenden voor archivering. Een typisch uit de doos en de douanewerkschema&#39;s kijken als het volgende:
 
@@ -43,9 +43,9 @@ Afhankelijk van het gebruiksgeval kunt u deze documenten ook beschikbaar stellen
 
 Communicatie biedt HTTP-API&#39;s voor het genereren van documenten op aanvraag en in batches:
 
-* **[Synchrone API&#39;s](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** zijn geschikt voor on-demand, lage latentie en scenario&#39;s voor het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op gebruikersacties. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
+* **[Synchrone API&#39;s](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor on-demand, lage latentie en scenario&#39;s voor het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op gebruikersacties. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
 
-* **[Batch-API&#39;s (Asynchrone API&#39;s)](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** zijn geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Deze API&#39;s genereren documenten batchgewijs. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
+* **[Batch-API&#39;s (Asynchrone API&#39;s)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Deze API&#39;s genereren documenten batchgewijs. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
 
 Een aantal van de belangrijkste toepassingen van communicatie-API&#39;s zijn:
 
@@ -100,7 +100,6 @@ Als u probeert een niet-interactief PDF-document af te vlakken, treedt een uitzo
 Een interactief PDF-document bevat verschillende elementen die een formulier vormen. Deze elementen kunnen velden (voor het accepteren of weergeven van gegevens), knoppen (voor het activeren van gebeurtenissen) en scripts (voor het uitvoeren van een bepaalde handeling) bevatten. Wanneer u op een knop klikt, wordt mogelijk een gebeurtenis geactiveerd die de status van een veld wijzigt. Als u bijvoorbeeld een optie kiest voor een geslacht, kan de kleur van een veld of de weergave van het formulier veranderen. Dit is een voorbeeld van een handmatige gebeurtenis die ertoe leidt dat de formulierstatus verandert.
 
 Wanneer een dergelijk interactief PDF-document wordt afgevlakt met behulp van de communicatie-API&#39;s, blijft de status van het formulier niet behouden. Stel de Booleaanse waarde in om ervoor te zorgen dat de status van het formulier wordt behouden, zelfs nadat het formulier is samengevoegd _preserveFormState_ op True om de status van het formulier op te slaan en te behouden.
-
 
 ## Onboarding
 

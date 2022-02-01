@@ -2,15 +2,15 @@
 title: AEM Forms as a Cloud Service - Communicatie
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
+source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
 
 
-# AEM Forms-API&#39;s voor as a Cloud Service communicatie gebruiken - synchrone verwerking {#frequently-asked-questions}
+# as a Cloud Service communicatie-API&#39;s van AEM Forms gebruiken - Synchrone verwerking {#frequently-asked-questions}
 
 **De functie Communicatie is in bèta.**
 
@@ -31,17 +31,17 @@ Een synchrone bewerking is een proces waarbij documenten lineair worden gegenere
 
 * **Basisverificatie**: De basisauthentificatie is een eenvoudige authentificatieregeling die in het protocol van HTTP wordt gebouwd. De client verzendt HTTP-aanvragen met de machtigingsheader die het woord Basic bevat, gevolgd door een spatie en een base64-coded tekenreeks username:password. Als u bijvoorbeeld autoriseert als beheerder/beheerder, verzendt de client Basic [base64-coded string username]: [base64-gecodeerd tekenreekswachtwoord].
 
-* **Tokengebaseerde verificatie:** De op token-gebaseerde authentificatie gebruikt een toegangstoken (het teken van de authentificatie van de Drager) om verzoeken aan AEM as a Cloud Service te maken. AEM Forms as a Cloud Service verstrekt APIs om het toegangstoken veilig terug te winnen. Om het teken terug te winnen en te gebruiken om een verzoek voor authentiek te verklaren:
+* **Tokengebaseerde verificatie:** De op token-gebaseerde authentificatie gebruikt een toegangstoken (het teken van de authentificatie van de Drager) om verzoeken aan Experience Manager as a Cloud Service te maken. AEM Forms as a Cloud Service verstrekt APIs om het toegangstoken veilig terug te winnen. Om het teken terug te winnen en te gebruiken om een verzoek voor authentiek te verklaren:
 
-   1. [AEM as a Cloud Service gegevens ophalen uit de ontwikkelaarsconsole](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [Installeer AEM as a Cloud Service referenties op uw omgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (De Server van de Toepassing, de Server van het Web, of andere niet-AEM servers) die worden gevormd om verzoeken naar (maken vraag) de wolkendienst te verzenden.
+   1. [as a Cloud Service referenties van Experience Manager ophalen uit de ontwikkelaarsconsole](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [as a Cloud Service referenties van Experience Manager installeren op uw omgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (De Server van de Toepassing, de Server van het Web, of andere niet-AEM servers) die worden gevormd om verzoeken naar (maken vraag) de wolkendienst te verzenden.
    1. [Een JWT-token genereren en deze uitgewisseld met Adobe IMS API&#39;s voor een toegangstoken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. Voer de AEM-API met het toegangstoken uit als een token voor Dragerverificatie.
-   1. [Stel de juiste machtigingen in voor de gebruiker van de technische account in de AEM-omgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. Voer de Experience Manager-API met het toegangstoken uit als een token voor Dragerverificatie.
+   1. [Stel de juiste machtigingen in voor de gebruiker van de technische account in de Experience Manager-omgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
    >[!NOTE]
    >
-   >Adobe raadt aan tokengebaseerde verificatie te gebruiken in een productieomgeving.
+   >Adobe raadt aan tokenverificatie op een productieomgeving te gebruiken.
 
 ### Voorwaarden {#pre-requisites}
 
