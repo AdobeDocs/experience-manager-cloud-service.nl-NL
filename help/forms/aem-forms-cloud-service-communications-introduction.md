@@ -2,23 +2,22 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: d4372e7f5766c6fadea6ca25edc7bfa2aeba10b9
+source-git-commit: fcde70f424d8e798469563397ba091547163bd77
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 2%
+source-wordcount: '1287'
+ht-degree: 1%
 
 ---
 
 # AEM Forms as a Cloud Service communicatie gebruiken {#frequently-asked-questions}
 
-**De functie as a Cloud Service communicatie van AEM Forms is in bèta.**
+**API&#39;s voor documentmanipulatie met AEM Forms as a Cloud Service Communications bevinden zich in de bètaversie en kunnen aanzienlijk worden gewijzigd vóór de feitelijke release.**
 
-Met communicatiemogelijkheden kunt u merkgeoriënteerde, gepersonaliseerde en gestandaardiseerde documenten maken, zoals zakelijke correspondentie, instructies, aanvraagverwerkingsbrieven, voordeelberichten, maandelijkse facturen of welkomstkits.
+Met communicatiemogelijkheden kunt u documenten maken die door uw merk zijn goedgekeurd, gepersonaliseerd en gestandaardiseerd, zoals zakelijke correspondentie, instructies, aanvraagverwerkingsbrieven, aankondigingen van voordelen, maandelijkse facturen of welkomstkits. De mogelijkheid biedt API&#39;s om de documenten te genereren en te bewerken. U kunt een document op verzoek genereren of bewerken of een batchtaak maken om meerdere documenten met gedefinieerde intervallen te genereren. Communicatie-API&#39;s bieden:
 
+* Gestroomlijnde mogelijkheden voor het genereren van documentatie op aanvraag en batchverwerking.
 
-U kunt een document op verzoek genereren of een batchtaak maken om meerdere documenten met gedefinieerde intervallen te genereren. Communicatie-API&#39;s bieden:
-
-* gestroomlijnde mogelijkheden voor het genereren van documentatie op aanvraag en batchverwerking.
+* PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie ophalen over PDF-documenten
 
 * HTTP-API&#39;s voor eenvoudigere integratie met externe systemen. Afzonderlijke API&#39;s voor bewerkingen op aanvraag (lage latentie) en batchbewerkingen (bewerkingen met hoge doorvoer) worden opgenomen. Hierdoor wordt het genereren van documenten een efficiënte taak.
 
@@ -51,13 +50,13 @@ Een aantal van de belangrijkste toepassingen van communicatie-API&#39;s zijn:
 
 ### PDF-documenten maken {#create-pdf-documents}
 
-Met communicatie-API&#39;s kunt u een PDF-document maken dat is gebaseerd op een formulierontwerp en XML-formuliergegevens. De uitvoer is een niet-interactief PDF-document. Gebruikers kunnen dus geen formuliergegevens invoeren of wijzigen. Een basisworkflow is het samenvoegen van XML-formuliergegevens met een formulierontwerp om een PDF-document te maken. In de volgende afbeelding ziet u hoe een formulierontwerp en XML-formuliergegevens worden samengevoegd om een PDF-document te maken.
+Met de API&#39;s voor het genereren van documenten kunt u een PDF-document maken dat is gebaseerd op een formulierontwerp en XML-formuliergegevens. De uitvoer is een niet-interactief PDF-document. Gebruikers kunnen dus geen formuliergegevens invoeren of wijzigen. Een basisworkflow is het samenvoegen van XML-formuliergegevens met een formulierontwerp om een PDF-document te maken. In de volgende afbeelding ziet u hoe een formulierontwerp en XML-formuliergegevens worden samengevoegd om een PDF-document te maken.
 
 ![PDF-documenten maken](assets/outPutPDF_popup.png)
 
 ### PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL)-document maken {#create-PS-PCL-ZPL-documents}
 
-Met communicatie-API&#39;s kunt u PostScript (PS)-, Printer Command Language (PCL)- en Zebra Printing Language (ZPL)-documenten maken die zijn gebaseerd op een XDP-formulierontwerp of PDF-document. Met deze API&#39;s kunt u een formulierontwerp samenvoegen met formuliergegevens om een document te genereren. U kunt het document opslaan in een bestand en een aangepast proces ontwikkelen om het naar een printer te verzenden.
+Met API&#39;s voor het genereren van documenten kunt u PostScript- (PS), PCL-documenten (Printer Command Language) en ZPL-documenten (Zebra Printing Language) maken die zijn gebaseerd op een XDP-formulierontwerp of PDF-document. Met deze API&#39;s kunt u een formulierontwerp samenvoegen met formuliergegevens om een document te genereren. U kunt het document opslaan in een bestand en een aangepast proces ontwikkelen om het naar een printer te verzenden.
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -71,7 +70,7 @@ The following illustration shows Communications APIs processing an XML data file
 
 ### Batchgegevens verwerken om meerdere documenten te maken {#processing-batch-data-to-create-multiple-documents}
 
-U kunt aparte documenten maken voor elke record in een XML-batchgegevensbron. U kunt documenten bulksgewijs en asynchroon genereren. U kunt diverse parameters voor de omzetting vormen en dan het partijproces beginnen. <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
+Met API&#39;s voor het genereren van documenten kunt u afzonderlijke documenten maken voor elke record in een XML-batchgegevensbron. U kunt documenten bulksgewijs en asynchroon genereren. U kunt diverse parameters voor de omzetting vormen en dan het partijproces beginnen. <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
 
 <!-- The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all of the records.
 
@@ -85,7 +84,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ### Interactieve PDF-documenten afvlakken {#flatten-interactive-pdf-documents}
 
-Met de API&#39;s voor communicatie kunt u een interactief PDF-document (bijvoorbeeld een formulier) transformeren naar een niet-interactief PDF-document. Met een interactief PDF-document kunnen gebruikers gegevens in de documentvelden van het PDF-document invoeren of wijzigen. Het transformeren van een interactief PDF-document naar een niet-interactief PDF-document wordt afvlakking genoemd. Wanneer een PDF-document wordt samengevoegd, kan een gebruiker de gegevens in de documentvelden niet wijzigen. Een reden om een PDF-document af te vlakken is ervoor te zorgen dat gegevens niet kunnen worden gewijzigd.
+Met API&#39;s voor het genereren van documenten kunt u een interactief PDF-document (bijvoorbeeld een formulier) transformeren naar een niet-interactief PDF-document. Met een interactief PDF-document kunnen gebruikers gegevens in de documentvelden van het PDF-document invoeren of wijzigen. Het transformeren van een interactief PDF-document naar een niet-interactief PDF-document wordt afvlakking genoemd. Wanneer een PDF-document wordt samengevoegd, kan een gebruiker de gegevens in de documentvelden niet wijzigen. Een reden om een PDF-document af te vlakken is ervoor te zorgen dat gegevens niet kunnen worden gewijzigd.
 
 U kunt de volgende typen PDF-documenten samenvoegen:
 
@@ -101,11 +100,30 @@ Een interactief PDF-document bevat verschillende elementen die een formulier vor
 
 Wanneer een dergelijk interactief PDF-document wordt afgevlakt met behulp van de communicatie-API&#39;s, blijft de status van het formulier niet behouden. Stel de Booleaanse waarde in om ervoor te zorgen dat de status van het formulier wordt behouden, zelfs nadat het formulier is samengevoegd _preserveFormState_ op True om de status van het formulier op te slaan en te behouden.
 
+### PDF-documenten samenstellen
+
+Met de API&#39;s voor documentproductie kunt u twee of meer PDF-documenten samenvoegen tot één PDF-document of PDF-Portfolio. U kunt ook functies toepassen op het PDF-document die navigatie ondersteunen of de beveiliging verbeteren. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
+
+* Een eenvoudig PDF-document samenstellen
+* Een PDF-Portfolio maken
+* Gecodeerde documenten samenstellen
+* Documenten samenstellen met Bates-nummering
+* Documenten samenvoegen en samenvoegen
+
+### PDF-documenten demonteren
+
+U kunt de API&#39;s voor documenthandleiding gebruiken om een PDF-document te demonteren. De service kan pagina&#39;s uitnemen uit het brondocument of een brondocument splitsen op basis van bladwijzers. Deze taak is meestal handig als het PDF-document oorspronkelijk is gemaakt op basis van veel afzonderlijke documenten, zoals een verzameling instructies.
+
+* Pagina&#39;s uit een brondocument extraheren
+* Een brondocument splitsen op basis van bladwijzers
+
+### Converteren naar en valideren van documenten die voldoen aan PDF/A
+
+Met de API&#39;s voor documentproductie kunt u een PDF-document converteren naar een versie die compatibel is met PDF/A en bepalen of een PDF-document voldoet aan PDF/A. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
+
 ## Onboarding
 
-De mededelingen zijn beschikbaar als standalone en toe:voegen-op module voor as a Cloud Service gebruiker van Forms. U kunt contact opnemen met het verkoopteam van Adobe of uw Adobe om toegang aan te vragen.
-
-Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan uw AEM Forms-ontwikkelaars (gebruikers) van uw organisatie om de API&#39;s te gebruiken.
+De mededelingen zijn beschikbaar als standalone en toe:voegen-op module voor as a Cloud Service gebruiker van Forms. U kunt contact opnemen met het verkoopteam van Adobe of uw Adobe om toegang aan te vragen. Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan uw AEM Forms-ontwikkelaars (gebruikers) van uw organisatie om de API&#39;s te gebruiken.
 
 Na het installeren, om Mededelingen voor uw as a Cloud Service milieu van Forms toe te laten:
 
