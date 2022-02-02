@@ -2,9 +2,9 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: fcde70f424d8e798469563397ba091547163bd77
+source-git-commit: c934eba98a9dcb74687739ccbaaedff3c0228561
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1401'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Met communicatiemogelijkheden kunt u documenten maken die door uw merk zijn goed
 
 * Gestroomlijnde mogelijkheden voor het genereren van documentatie op aanvraag en batchverwerking.
 
-* PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie ophalen over PDF-documenten
+* PDF-documenten combineren, opnieuw rangschikken en valideren.
 
 * HTTP-API&#39;s voor eenvoudigere integratie met externe systemen. Afzonderlijke API&#39;s voor bewerkingen op aanvraag (lage latentie) en batchbewerkingen (bewerkingen met hoge doorvoer) worden opgenomen. Hierdoor wordt het genereren van documenten een efficiënte taak.
 
@@ -26,33 +26,22 @@ Met communicatiemogelijkheden kunt u documenten maken die door uw merk zijn goed
 ![Een voorbeeld van een creditcardformulier](assets/statement.png)
 Een creditcardverklaring kan worden gecreeerd gebruikend Communicatie APIs. Deze voorbeeldinstructie gebruikt dezelfde sjabloon maar afzonderlijke gegevens voor elke klant, afhankelijk van het gebruik van de creditcard.
 
-## Hoe werkt het?
+## Documentgeneratie
 
-Communicatiegebruik [PDF- en XFA-sjablonen](#supported-document-types) with [XML-gegevens](#form-data) om één document op bestelling of veelvoudige documenten te produceren gebruikend een partijbaan bij bepaalde interval.
-
-Via de communicatie-API&#39;s kunt u een sjabloon (XFA of PDF) combineren met klantgegevens ([XML-gegevens](#form-data)) om documenten te genereren in de indelingen PDF en Afdrukken, zoals PS, PCL, DPL, IPL en ZPL.
+Via API&#39;s voor het genereren van communicatiedocumenten kunt u een sjabloon (XFA of PDF) combineren met klantgegevens ([XML-gegevens](#form-data)) om documenten te genereren in de indelingen PDF en Afdrukken, zoals PS, PCL, DPL, IPL en ZPL. Deze API&#39;s gebruiken [PDF- en XFA-sjablonen](#supported-document-types) with [XML-gegevens](communications-known-issues-limitations.md#form-data) om één document op bestelling of veelvoudige documenten te produceren gebruikend een partijbaan bij bepaalde interval.
 
 Doorgaans maakt u een sjabloon met [Designer](use-forms-designer.md) en gebruik Communicatie APIs om gegevens met het malplaatje samen te voegen. Uw toepassing kan het uitvoerdocument naar een netwerkprinter, een lokale printer of een opslagsysteem verzenden voor archivering. Een typisch uit de doos en de douanewerkschema&#39;s kijken als het volgende:
 
-![Communicatieworkflow](assets/communicaions-workflow.png)
+![Workflow voor het genereren van communicatiedocumenten](assets/communicaions-workflow.png)
 
-Afhankelijk van het gebruiksgeval kunt u deze documenten ook beschikbaar stellen voor downloaden via uw website of een opslagserver.
-
-## Communicatie-API&#39;s
-
-Communicatie biedt HTTP-API&#39;s voor het genereren van documenten op aanvraag en in batches:
-
-* **[Synchrone API&#39;s](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor on-demand, lage latentie en scenario&#39;s voor het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op gebruikersacties. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
-
-* **[Batch-API&#39;s (Asynchrone API&#39;s)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Deze API&#39;s genereren documenten batchgewijs. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
-
-Een aantal van de belangrijkste toepassingen van communicatie-API&#39;s zijn:
+Afhankelijk van het gebruiksgeval kunt u deze documenten ook beschikbaar stellen voor downloaden via uw website of een opslagserver. Voorbeelden van API&#39;s voor het genereren van documenten zijn:
 
 ### PDF-documenten maken {#create-pdf-documents}
 
 Met de API&#39;s voor het genereren van documenten kunt u een PDF-document maken dat is gebaseerd op een formulierontwerp en XML-formuliergegevens. De uitvoer is een niet-interactief PDF-document. Gebruikers kunnen dus geen formuliergegevens invoeren of wijzigen. Een basisworkflow is het samenvoegen van XML-formuliergegevens met een formulierontwerp om een PDF-document te maken. In de volgende afbeelding ziet u hoe een formulierontwerp en XML-formuliergegevens worden samengevoegd om een PDF-document te maken.
 
 ![PDF-documenten maken](assets/outPutPDF_popup.png)
+Afbeelding: Standaardworkflow voor het maken van een PDF-document
 
 ### PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL)-document maken {#create-PS-PCL-ZPL-documents}
 
@@ -70,7 +59,11 @@ The following illustration shows Communications APIs processing an XML data file
 
 ### Batchgegevens verwerken om meerdere documenten te maken {#processing-batch-data-to-create-multiple-documents}
 
-Met API&#39;s voor het genereren van documenten kunt u afzonderlijke documenten maken voor elke record in een XML-batchgegevensbron. U kunt documenten bulksgewijs en asynchroon genereren. U kunt diverse parameters voor de omzetting vormen en dan het partijproces beginnen. <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
+Met API&#39;s voor het genereren van documenten kunt u afzonderlijke documenten maken voor elke record in een XML-batchgegevensbron. U kunt documenten bulksgewijs en asynchroon genereren. U kunt diverse parameters voor de omzetting vormen en dan het partijproces beginnen.
+
+![PDF-documenten maken](assets/ou_OutputBatchMany_popup.png)
+
+<!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
 
 <!-- The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all of the records.
 
@@ -100,6 +93,11 @@ Een interactief PDF-document bevat verschillende elementen die een formulier vor
 
 Wanneer een dergelijk interactief PDF-document wordt afgevlakt met behulp van de communicatie-API&#39;s, blijft de status van het formulier niet behouden. Stel de Booleaanse waarde in om ervoor te zorgen dat de status van het formulier wordt behouden, zelfs nadat het formulier is samengevoegd _preserveFormState_ op True om de status van het formulier op te slaan en te behouden.
 
+
+## Documentmanipulatie
+
+Via API&#39;s voor documentmanipulatie kunt u PDF-documenten combineren, opnieuw rangschikken en valideren. Doorgaans maakt u een DDX en verzendt u deze naar API&#39;s voor documentbeheer om een document samen te stellen of opnieuw te rangschikken. Het DDX-document bevat instructies voor het gebruik van de brondocumenten om een set vereiste documenten te maken. De DDX-referentiedocumentatie biedt gedetailleerde informatie over alle ondersteunde bewerkingen. Voorbeelden van documentmanipulatie zijn:
+
 ### PDF-documenten samenstellen
 
 Met de API&#39;s voor documentproductie kunt u twee of meer PDF-documenten samenvoegen tot één PDF-document of PDF-Portfolio. U kunt ook functies toepassen op het PDF-document die navigatie ondersteunen of de beveiliging verbeteren. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
@@ -110,6 +108,9 @@ Met de API&#39;s voor documentproductie kunt u twee of meer PDF-documenten samen
 * Documenten samenstellen met Bates-nummering
 * Documenten samenvoegen en samenvoegen
 
+![Een eenvoudig PDF-document samenstellen op basis van meerdere PDF-documenten](assets/as_document_assembly.png)
+Afbeelding: Een eenvoudig PDF-document samenstellen op basis van meerdere PDF-documenten
+
 ### PDF-documenten demonteren
 
 U kunt de API&#39;s voor documenthandleiding gebruiken om een PDF-document te demonteren. De service kan pagina&#39;s uitnemen uit het brondocument of een brondocument splitsen op basis van bladwijzers. Deze taak is meestal handig als het PDF-document oorspronkelijk is gemaakt op basis van veel afzonderlijke documenten, zoals een verzameling instructies.
@@ -117,9 +118,21 @@ U kunt de API&#39;s voor documenthandleiding gebruiken om een PDF-document te de
 * Pagina&#39;s uit een brondocument extraheren
 * Een brondocument splitsen op basis van bladwijzers
 
+![Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meerdere documenten](assets/as_intro_pdfsfrombookmarks.png)
+Afbeelding: Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meerdere documenten
+
 ### Converteren naar en valideren van documenten die voldoen aan PDF/A
 
 Met de API&#39;s voor documentproductie kunt u een PDF-document converteren naar een versie die compatibel is met PDF/A en bepalen of een PDF-document voldoet aan PDF/A. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
+
+
+## Typen communicatie-API&#39;s
+
+Communicatie biedt HTTP-API&#39;s voor het genereren van documenten op aanvraag en in batches:
+
+* **[Synchrone API&#39;s](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor on-demand, lage latentie en scenario&#39;s voor het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op gebruikersacties. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
+
+* **[Batch-API&#39;s (Asynchrone API&#39;s)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Deze API&#39;s genereren documenten batchgewijs. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
 
 ## Onboarding
 
@@ -141,7 +154,7 @@ Na het installeren, om Mededelingen voor uw as a Cloud Service milieu van Forms 
 
 1. Stel de bouwstijlpijpleiding in werking.
 
-Nadat de bouwstijllijn slaagt, wordt Communicatie APIs toegelaten voor uw milieu.
+Nadat de bouwstijllijn slaagt, Communicatie APIs wordt toegelaten voor uw milieu.
 
 
 <!--
