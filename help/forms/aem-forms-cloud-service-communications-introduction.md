@@ -2,22 +2,24 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: c934eba98a9dcb74687739ccbaaedff3c0228561
+source-git-commit: 2f934bb63796599d6c3cca47498c1799388a9923
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1395'
 ht-degree: 1%
 
 ---
 
 # AEM Forms as a Cloud Service communicatie gebruiken {#frequently-asked-questions}
 
-**API&#39;s voor documentmanipulatie met AEM Forms as a Cloud Service Communications bevinden zich in de bètaversie en kunnen aanzienlijk worden gewijzigd vóór de feitelijke release.**
+**AEM Forms as a Cloud Service - Communicatie API&#39;s voor documentmanipulatie worden in bèta weergegeven en kunnen aanzienlijk veranderen voordat ze daadwerkelijk worden uitgebracht.**
 
-Met communicatiemogelijkheden kunt u documenten maken die door uw merk zijn goedgekeurd, gepersonaliseerd en gestandaardiseerd, zoals zakelijke correspondentie, instructies, aanvraagverwerkingsbrieven, aankondigingen van voordelen, maandelijkse facturen of welkomstkits. De mogelijkheid biedt API&#39;s om de documenten te genereren en te bewerken. U kunt een document op verzoek genereren of bewerken of een batchtaak maken om meerdere documenten met gedefinieerde intervallen te genereren. Communicatie-API&#39;s bieden:
+Met communicatiemogelijkheden kunt u documenten maken die door uw merk zijn goedgekeurd, gepersonaliseerd en gestandaardiseerd, zoals zakelijke correspondentie, instructies, aanvraagverwerkingsbrieven, aankondigingen van voordelen, maandelijkse facturen of welkomstkits.
 
-* Gestroomlijnde mogelijkheden voor het genereren van documentatie op aanvraag en batchverwerking.
+De mogelijkheid biedt API&#39;s om de documenten te genereren en te bewerken. U kunt een document op verzoek genereren of bewerken of een batchtaak maken om meerdere documenten met gedefinieerde intervallen te genereren. Communicatie-API&#39;s bieden:
 
-* PDF-documenten combineren, opnieuw rangschikken en valideren.
+* gestroomlijnde mogelijkheden voor het genereren van documentatie op aanvraag en batchverwerking.
+
+* de mogelijkheid om PDF-documenten op aanvraag te combineren, opnieuw te rangschikken en te valideren.
 
 * HTTP-API&#39;s voor eenvoudigere integratie met externe systemen. Afzonderlijke API&#39;s voor bewerkingen op aanvraag (lage latentie) en batchbewerkingen (bewerkingen met hoge doorvoer) worden opgenomen. Hierdoor wordt het genereren van documenten een efficiënte taak.
 
@@ -28,24 +30,26 @@ Een creditcardverklaring kan worden gecreeerd gebruikend Communicatie APIs. Deze
 
 ## Documentgeneratie
 
-Via API&#39;s voor het genereren van communicatiedocumenten kunt u een sjabloon (XFA of PDF) combineren met klantgegevens ([XML-gegevens](#form-data)) om documenten te genereren in de indelingen PDF en Afdrukken, zoals PS, PCL, DPL, IPL en ZPL. Deze API&#39;s gebruiken [PDF- en XFA-sjablonen](#supported-document-types) with [XML-gegevens](communications-known-issues-limitations.md#form-data) om één document op bestelling of veelvoudige documenten te produceren gebruikend een partijbaan bij bepaalde interval.
+Via API&#39;s voor het genereren van communicatiedocumenten kunt u een sjabloon (XFA of PDF) combineren met klantgegevens ([XML-gegevens](#form-data)) om documenten te genereren in de indelingen PDF en Afdrukken, zoals PS, PCL, DPL, IPL en ZPL. Deze API&#39;s gebruiken [PDF- en XFA-sjablonen](#supported-document-types) with [XML-gegevens](communications-known-issues-limitations.md#form-data) om één document op bestelling of meerdere documenten te produceren die een partijbaan gebruiken.
 
 Doorgaans maakt u een sjabloon met [Designer](use-forms-designer.md) en gebruik Communicatie APIs om gegevens met het malplaatje samen te voegen. Uw toepassing kan het uitvoerdocument naar een netwerkprinter, een lokale printer of een opslagsysteem verzenden voor archivering. Een typisch uit de doos en de douanewerkschema&#39;s kijken als het volgende:
 
 ![Workflow voor het genereren van communicatiedocumenten](assets/communicaions-workflow.png)
 
-Afhankelijk van het gebruiksgeval kunt u deze documenten ook beschikbaar stellen voor downloaden via uw website of een opslagserver. Voorbeelden van API&#39;s voor het genereren van documenten zijn:
+Afhankelijk van het gebruiksgeval kunt u deze documenten ook beschikbaar stellen voor downloaden via uw website of een opslagserver.
+
+Voorbeelden van API&#39;s voor het genereren van documenten zijn:
 
 ### PDF-documenten maken {#create-pdf-documents}
 
-Met de API&#39;s voor het genereren van documenten kunt u een PDF-document maken dat is gebaseerd op een formulierontwerp en XML-formuliergegevens. De uitvoer is een niet-interactief PDF-document. Gebruikers kunnen dus geen formuliergegevens invoeren of wijzigen. Een basisworkflow is het samenvoegen van XML-formuliergegevens met een formulierontwerp om een PDF-document te maken. In de volgende afbeelding ziet u hoe een formulierontwerp en XML-formuliergegevens worden samengevoegd om een PDF-document te maken.
+Met de API&#39;s voor het genereren van documenten kunt u een PDF-document maken dat is gebaseerd op een formulierontwerp en XML-formuliergegevens. De uitvoer is een niet-interactief PDF-document. Met andere woorden, gebruikers kunnen de formuliergegevens niet invoeren of wijzigen. Een basisworkflow is het samenvoegen van XML-formuliergegevens met een formulierontwerp om een PDF-document te maken. In de volgende afbeelding ziet u hoe een formulierontwerp en XML-formuliergegevens worden samengevoegd om een PDF-document te maken.
 
 ![PDF-documenten maken](assets/outPutPDF_popup.png)
 Afbeelding: Standaardworkflow voor het maken van een PDF-document
 
 ### PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL)-document maken {#create-PS-PCL-ZPL-documents}
 
-Met API&#39;s voor het genereren van documenten kunt u PostScript- (PS), PCL-documenten (Printer Command Language) en ZPL-documenten (Zebra Printing Language) maken die zijn gebaseerd op een XDP-formulierontwerp of PDF-document. Met deze API&#39;s kunt u een formulierontwerp samenvoegen met formuliergegevens om een document te genereren. U kunt het document opslaan in een bestand en een aangepast proces ontwikkelen om het naar een printer te verzenden.
+Met API&#39;s voor het genereren van documenten kunt u PostScript- (PS), PCL-documenten (Printer Command Language) en ZPL-documenten (Zebra Printing Language) maken die zijn gebaseerd op een XDP-formulierontwerp of PDF-document. Deze API&#39;s helpen u bij het samenvoegen van een formulierontwerp met formuliergegevens om een document te genereren. U kunt het document opslaan in een bestand en een aangepast proces ontwikkelen om het naar een printer te verzenden.
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -96,11 +100,11 @@ Wanneer een dergelijk interactief PDF-document wordt afgevlakt met behulp van de
 
 ## Documentmanipulatie
 
-Via API&#39;s voor documentmanipulatie kunt u PDF-documenten combineren, opnieuw rangschikken en valideren. Doorgaans maakt u een DDX en verzendt u deze naar API&#39;s voor documentbeheer om een document samen te stellen of opnieuw te rangschikken. Het DDX-document bevat instructies voor het gebruik van de brondocumenten om een set vereiste documenten te maken. De DDX-referentiedocumentatie biedt gedetailleerde informatie over alle ondersteunde bewerkingen. Voorbeelden van documentmanipulatie zijn:
+Via API&#39;s voor documentmanipulatie kunt u PDF-documenten combineren, opnieuw rangschikken en valideren. Doorgaans maakt u een DDX en verzendt u deze naar API&#39;s voor documentmanipulatie om een document samen te stellen of opnieuw te rangschikken. Het DDX-document bevat instructies voor het gebruik van de brondocumenten om een set vereiste documenten te maken. De DDX-referentiedocumentatie biedt gedetailleerde informatie over alle ondersteunde bewerkingen. Voorbeelden van documentmanipulatie zijn:
 
 ### PDF-documenten samenstellen
 
-Met de API&#39;s voor documentproductie kunt u twee of meer PDF-documenten samenvoegen tot één PDF-document of PDF-Portfolio. U kunt ook functies toepassen op het PDF-document die navigatie ondersteunen of de beveiliging verbeteren. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
+Met de API&#39;s voor documentproductie kunt u twee of meer PDF-documenten samenvoegen tot één PDF-document of PDF-Portfolio. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
 
 * Een eenvoudig PDF-document samenstellen
 * Een PDF-Portfolio maken
@@ -113,7 +117,7 @@ Afbeelding: Een eenvoudig PDF-document samenstellen op basis van meerdere PDF-do
 
 ### PDF-documenten demonteren
 
-U kunt de API&#39;s voor documenthandleiding gebruiken om een PDF-document te demonteren. De service kan pagina&#39;s uitnemen uit het brondocument of een brondocument splitsen op basis van bladwijzers. Deze taak is meestal handig als het PDF-document oorspronkelijk is gemaakt op basis van veel afzonderlijke documenten, zoals een verzameling instructies.
+U kunt de API&#39;s voor documenthandleiding gebruiken om een PDF-document te demonteren. De API&#39;s kunnen pagina&#39;s uitnemen uit het brondocument of een brondocument splitsen op basis van bladwijzers. Deze taak is meestal handig als het PDF-document oorspronkelijk is gemaakt op basis van veel afzonderlijke documenten, zoals een verzameling instructies.
 
 * Pagina&#39;s uit een brondocument extraheren
 * Een brondocument splitsen op basis van bladwijzers
@@ -121,9 +125,9 @@ U kunt de API&#39;s voor documenthandleiding gebruiken om een PDF-document te de
 ![Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meerdere documenten](assets/as_intro_pdfsfrombookmarks.png)
 Afbeelding: Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meerdere documenten
 
-### Converteren naar en valideren van documenten die voldoen aan PDF/A
+### Converteren naar documenten die voldoen aan de PDF/A-standaard en deze valideren
 
-Met de API&#39;s voor documentproductie kunt u een PDF-document converteren naar een versie die compatibel is met PDF/A en bepalen of een PDF-document voldoet aan PDF/A. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
+Met de API&#39;s voor documentproductie kunt u een PDF-document converteren naar een document dat voldoet aan de PDF/A-standaard en bepalen of een PDF PDF/A-compatibel is. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
 
 
 ## Typen communicatie-API&#39;s
@@ -136,9 +140,9 @@ Communicatie biedt HTTP-API&#39;s voor het genereren van documenten op aanvraag 
 
 ## Onboarding
 
-De mededelingen zijn beschikbaar als standalone en toe:voegen-op module voor as a Cloud Service gebruiker van Forms. U kunt contact opnemen met het verkoopteam van Adobe of uw Adobe om toegang aan te vragen. Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan uw AEM Forms-ontwikkelaars (gebruikers) van uw organisatie om de API&#39;s te gebruiken.
+Communicatiecapaciteit is beschikbaar als zelfstandige en add-on module voor as a Cloud Service Forms-gebruikers. U kunt contact opnemen met het verkoopteam van Adobe of uw Adobe om toegang aan te vragen. Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan uw as a Cloud Service Forms-ontwikkelaars (gebruikers) van uw organisatie om de API&#39;s te gebruiken.
 
-Na het installeren, om Mededelingen voor uw as a Cloud Service milieu van Forms toe te laten:
+Na het instappen, om Communicatie vermogen voor uw as a Cloud Service milieu van Forms toe te laten:
 
 1. Meld u aan bij Cloud Manager en open de as a Cloud Service AEM Forms-instantie.
 
@@ -152,9 +156,7 @@ Na het installeren, om Mededelingen voor uw as a Cloud Service milieu van Forms 
 
 1. Klik op **[!UICONTROL Update]**.
 
-1. Stel de bouwstijlpijpleiding in werking.
-
-Nadat de bouwstijllijn slaagt, Communicatie APIs wordt toegelaten voor uw milieu.
+1. Stel de bouwstijlpijpleiding in werking. Nadat de bouwstijlpijpleiding slaagt, Communicatie APIs wordt toegelaten voor uw milieu.
 
 
 <!--
