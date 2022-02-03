@@ -1,9 +1,9 @@
 ---
 title: Uw demo-sites beheren
 description: Leer meer over de gereedschappen die beschikbaar zijn om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
-source-git-commit: cb04570664188635d6dc0237eb4ab0a9d347aaf2
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,17 @@ Leer meer over de gereedschappen die beschikbaar zijn om u te helpen uw demosite
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Snelle reis van de Plaats, [Site maken](create-site.md) u creeerde een nieuwe demoplaats die op de malplaatjes van de Toevoeging van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
+In het vorige document van de AEM Reference Demos Add-on trip, [Site maken](create-site.md) u creeerde een nieuwe demoplaats die op de malplaatjes van de Toevoeging van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
 
 * Begrijp hoe te om tot het AEM auteursmilieu toegang te hebben.
 * Weet hoe u een site kunt maken op basis van een sjabloon.
 * Begrijp de grondbeginselen van het navigeren van de plaatsstructuur en het uitgeven van een pagina.
+
+Als u ook [AEM Screens ingeschakeld voor uw demo-site,](screens.md) u zou ook moeten:
+
+* De basisbeginselen van AEM Screens kennen.
+* Begrijp de Web.Cafe demo-inhoud.
+* Weet hoe u AEM Screens for We.Cafe kunt configureren.
 
 Nu u uw eigen demosite hebt om te verkennen, worden in dit artikel de gereedschappen beschreven die beschikbaar zijn om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
 

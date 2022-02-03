@@ -1,9 +1,9 @@
 ---
 title: Demo-site maken
 description: Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde sjablonen.
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Snelle reis van de Plaats, [Programma maken](create-program.md) u nam de eerste configuratiestap om een programma voor testende doeleinden tot stand te brengen en gebruikte een pijpleiding om toe:voegen-op inhoud op te stellen. Nu moet u:
+In het vorige document van de AEM Reference Demos Add-on trip, [Programma maken](create-program.md) u nam de eerste configuratiestap om een programma voor testende doeleinden tot stand te brengen en gebruikte een pijpleiding om toe:voegen-op inhoud op te stellen. Nu moet u:
 
 * Begrijp hoe u met Cloud Manager een nieuw programma kunt maken.
 * Zorg dat u weet hoe u de Add-on Reference Demos voor het nieuwe programma activeert.
 * Kan een pijpleiding in werking stellen om toe:voegen-op inhoud op te stellen.
 
-In dit artikel wordt de volgende stap van het proces beschreven door een nieuwe site te maken in AEM op basis van de sjablonen van de invoegtoepassing voor demo van referentie.
+In dit artikel wordt de volgende stap van het proces beschreven door een nieuwe site of een AEM Screens-project te maken in AEM op basis van de sjablonen van de invoegtoepassing voor de demodus van de referentie.
 
 ## Doelstelling {#objective}
 
@@ -31,7 +31,7 @@ Dit document helpt u begrijpen hoe te om een nieuwe plaats tot stand te brengen 
 * Weet hoe u een site kunt maken op basis van een sjabloon.
 * Begrijp de grondbeginselen van het navigeren van de plaatsstructuur en het uitgeven van een pagina.
 
-## Een demo-site maken {#create-site}
+## Een demopsite of schermproject maken {#create-site}
 
 Zodra de pijpleiding toe:voegen-aan van de Demo van de Verwijzing heeft opgesteld, kunt u tot het AEM auteursmilieu toegang hebben om demoplaatsen tot stand te brengen die op de toe:voegen-op inhoud worden gebaseerd.
 
@@ -47,11 +47,11 @@ Zodra de pijpleiding toe:voegen-aan van de Demo van de Verwijzing heeft opgestel
 
    ![Site maken van sjabloon](assets/create-site-from-template.png)
 
-1. De wizard voor het maken van de site wordt gestart. In de linkerkolom kunt u de demo malplaatjes zien die de pijpleiding aan uw auteursinstantie opstelde. Tik of klik op een pictogram om het te selecteren en details in de rechterkolom weer te geven. Tik of klik op **Volgende**.
+1. De wizard voor het maken van de site wordt gestart. In de linkerkolom kunt u de demo malplaatjes zien die de pijpleiding aan uw auteursinstantie opstelde. Tik of klik op een pictogram om het te selecteren en details in de rechterkolom weer te geven. Als u AEM Screens wilt testen of demo, moet u de optie **We.Cafe-sitesjabloon**. Tik of klik op **Volgende**.
 
    ![Wizard Site maken](assets/site-creation-wizard.png)
 
-1. Geef in het volgende scherm een titel op voor uw site. Er kan een sitenaam worden opgegeven of deze wordt gegenereerd op basis van de titel als deze wordt weggelaten. Tik of klik op **Maken**.
+1. Geef in het volgende scherm een titel op voor uw site of schermproject. Er kan een sitenaam worden opgegeven of deze wordt gegenereerd op basis van de titel als deze wordt weggelaten. Tik of klik op **Maken**.
 
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.
@@ -101,7 +101,10 @@ Nu u dit deel van de AEM Toelage van de Demo van de Verwijzing hebt voltooid zou
 * Weet hoe u een site kunt maken op basis van een sjabloon.
 * Begrijp de grondbeginselen van het navigeren van de plaatsstructuur en het uitgeven van een pagina.
 
-U kunt nu de functies van AEM testen met add-on inhoud. Als u wilt weten hoe u deze demo-inhoud beheert, gaat u door met de reis van de AEM Reference Demo Add-On door het document opnieuw te bekijken [Uw demosites beheren,](manage.md) waar u informatie krijgt over de beschikbare gereedschappen om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
+U kunt nu de functies van AEM testen met add-on inhoud. U hebt twee opties om uw reis voort te zetten:
+
+* Als u AEM Screens-inhoud volledig wilt demo- en testen, moet u een site implementeren op basis van de **We.Cafe-sitesjabloon** zoals hierboven beschreven en doorgaan [Schakel AEM Screens for Your Demo Site in.](screens.md)
+* Als u alleen Sites-inhoud wilt demo, gaat u verder [Uw demosites beheren,](manage.md) waar u informatie krijgt over de beschikbare gereedschappen om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
 
 ## Aanvullende bronnen {#additional-resources}
 

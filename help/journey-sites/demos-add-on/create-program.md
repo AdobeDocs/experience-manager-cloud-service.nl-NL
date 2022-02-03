@@ -1,9 +1,9 @@
 ---
 title: Programma maken
 description: Leer hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op op te stellen.
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Leer hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op o
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Snelle reis van de Plaats, [Invoegtoepassing demodemodus begrijpen,](installation.md) U leerde hoe het installatieproces van de Add-On van de Demos van de Verwijzing werkt, die hoe de verschillende stukken samenwerken. Nu moet u:
+In het vorige document van de AEM Reference Demos Add-on trip, [Invoegtoepassing demodemodus begrijpen,](installation.md) U leerde hoe het installatieproces van de Add-On van de Demos van de Verwijzing werkt, die hoe de verschillende stukken samenwerken. Nu moet u:
 
 * U hebt een basiskennis van Cloud Manager.
 * Begrijp hoe de pijpleidingen inhoud en configuratie aan AEM leveren.
@@ -76,7 +76,7 @@ Nadat u zich hebt aangemeld bij Cloud Manager, kunt u een nieuw sandboxprogramma
 
    ![Dialoogvenster Programma bewerken](assets/edit-program-dialog.png)
 
-1. Op de **Oplossingen en invoegtoepassingen** tabblad, vouwt u de **Sites** vermelding in de lijst en vervolgens controleren **Demo van referenties**. Tik of klik op **Bijwerken**.
+1. Op de **Oplossingen en invoegtoepassingen** tabblad, vouwt u de **Sites** vermelding in de lijst en vervolgens controleren **Demo van referenties**. Als u ook demo&#39;s voor AEM Screens wilt maken, schakelt u het selectievakje **Schermen** ook in de lijst. Tik of klik op **Bijwerken**.
 
    ![Opties voor demo&#39;s van verwijzingen controleren](assets/edit-program-add-on.png)
 

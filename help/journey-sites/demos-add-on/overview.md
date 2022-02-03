@@ -1,9 +1,9 @@
 ---
 title: AEM Referentie demos Add-on-reis
 description: Begin hier voor een geleide reis door hoe te om de AEM toe:voegen-aan van de Demo van de Verwijzing aan een zandbakmilieu met minimale AEM configuratie gemakkelijk toe te voegen en de krachtige eigenschappen van AEM met rijke voorbeelden te kunnen testen die op best-praktijken worden gebaseerd.
-source-git-commit: 3dc268060188defcc84971f73baced1f30dccd49
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '855'
 ht-degree: 1%
 
 ---
@@ -11,18 +11,18 @@ ht-degree: 1%
 
 # AEM Referentie demos Add-on-reis {#reference-demos-add-on-journey}
 
-Begin hier voor een geleide reis door hoe te om de AEM toe:voegen-aan van de Demo van de Verwijzing aan een zandbakmilieu met minimale AEM configuratie gemakkelijk toe te voegen en de krachtige eigenschappen van AEM met rijke voorbeelden te kunnen testen die op best-praktijken worden gebaseerd.
+Begin hier voor een geleide reis door hoe te om de AEM toe:voegen-aan van de Demo van de Verwijzing aan een zandbakmilieu met minimale AEM configuratie gemakkelijk toe te voegen en de krachtige eigenschappen van AEM Sites en AEM Screens met rijke voorbeelden te kunnen testen die op beste praktijken worden gebaseerd.
 
 ## Inleiding {#introduction}
 
-AEM Sites is een krachtig hulpmiddel voor het maken en beheren van digitale ervaringen. Inhoudsauteurs kunnen eenvoudig digitale ervaringen maken met de siteeditor en de inhoud indelen met de siteconsole, terwijl ze de inhoud live kunnen zien zoals deze via AEM aan uw publiek via kanalen wordt geleverd.
+AEM is een krachtig hulpmiddel voor het creëren en beheren van digitale ervaringen. Inhoudsauteurs kunnen eenvoudig digitale ervaringen maken met de siteeditor en de inhoud indelen met de siteconsole, terwijl ze de inhoud live kunnen zien zoals deze via AEM aan uw publiek via kanalen wordt geleverd.
 
-Zonder steekproefinhoud en configuratie, kan het moeilijk zijn om de krachtige eigenschappen van AEM voor nieuwe en ervaren cliënten te testen. Met de AEM Reference Demos Add-On kunt u eenvoudig sandboxomgevingen maken die vooraf zijn geladen met voorbeeldinhoud en die vooraf zijn geconfigureerd met de nieuwste richtlijnen voor best practices voor Adobe. Met de add-on kunt u AEM functies eenvoudig evalueren in context en met vrijwel geen configuratie.
+Zonder steekproefinhoud en configuratie, kan het moeilijk zijn om de krachtige eigenschappen van AEM voor nieuwe en ervaren cliënten te testen. Met de AEM Reference Demos Add-On kunt u eenvoudig sandboxomgevingen maken die vooraf zijn geladen met voorbeeldinhoud en die vooraf zijn geconfigureerd met de nieuwste richtlijnen voor best practices voor Adobe. Met de add-on kunt u eenvoudig AEM Sites- en AEM Screens-functies evalueren in context en met vrijwel geen configuratie.
 
 * **Als u nog niet eerder hebt AEM**, is deze reis de eenvoudigste manier om in een echte, volledig functionerende AEM omgeving aan de slag te gaan met echte inhoud, zodat u de functionaliteit kunt testen en de mogelijkheden van AEM kunt leren kennen.
 * **Als u een ervaren AEM gebruiker bent** Na deze reis is het de eenvoudigste manier om een aparte demomgeving op te zetten voor testdoeleinden of om een concepttest te maken met behulp van nieuwe functionaliteit.
 
-Wat u ook nodig hebt, als u een AEM omgeving nodig hebt die gevuld is met realistische, volledig functionerende, voorbeeldinhoud, is het instellen van een sandbox met de AEM Demo Add-On van de Referentie alleen voor u. Lezen!
+Wat u ook nodig hebt, als u een AEM omgeving nodig hebt die gevuld is met realistische, volledig functionerende, voorbeeldinhoud, kunt u een sandbox instellen met de AEM Demo Add-On van de Referentie. Lezen!
 
 ## AEM Documentenreizen {#documentation-journeys}
 
@@ -34,7 +34,7 @@ Als u wilt weten hoe Adobe adviseert om plaatszaken met AEM op te lossen, zijn d
 
 ## Publiek {#audience}
 
-Deze reis beschrijft de vereisten, de stappen, en de benadering om een nieuw programma tot stand te brengen en een AEM zandbak met AEM toe:voegen-aan de Demo&#39;s van de Verwijzing op te zetten. Het belangrijkste publiek is **systeembeheerder** wie de rol krijgt toegewezen **Zakelijke eigenaar** in Cloud Manager. Dit is meestal dezelfde persoon die verantwoordelijk is voor milieubeheer. Nochtans zodra toe:voegen-aan van de Demos van de Verwijzing wordt geïnstalleerd, kan die beheerder andere gebruikers toegang tot het AEM milieu verlenen om de eigenschappen te testen die door toe:voegen-op zijn toegelaten.
+Deze reis beschrijft de vereisten, de stappen, en de benadering om een nieuw programma tot stand te brengen en een AEM zandbak met de AEM toe:voegen-aan van de Demo van de Verwijzing met inbegrip van Plaatsen en/of de inhoud van de de demo van Schermen op te zetten. Het belangrijkste publiek is **systeembeheerder** wie de rol krijgt toegewezen **Zakelijke eigenaar** in Cloud Manager. Dit is meestal dezelfde persoon die verantwoordelijk is voor milieubeheer. Nochtans zodra toe:voegen-aan van de Demos van de Verwijzing wordt geïnstalleerd, kan die beheerder andere gebruikers toegang tot het AEM milieu verlenen om de eigenschappen te testen die door toe:voegen-op zijn toegelaten.
 
 ## De AEM Reference Demo Add-on-reis {#the-journey}
 
@@ -46,7 +46,8 @@ U zult verscheidene onderwerpen in deze reis onderzoeken. De volgende artikelen 
 | 1 | [Invoegtoepassing demodemodus begrijpen](installation.md) | Leer meer over Cloud Manager en hoe deze wordt gebruikt om de invoegtoepassing te installeren. |
 | 2 | [Een programma en een pijplijn maken](create-program.md) | Leer hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op op te stellen. |
 | 3 | [Een demo-site maken](create-site.md) | Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde sjablonen. |
-| 4 | [Uw demo-sites beheren](manage.md) | Leer meer over de gereedschappen die beschikbaar zijn om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen. |
+| 4 | [(Optioneel) AEM Screens inschakelen voor uw demo-site](screens.md) | Optioneel - Leer de extra stappen om de volledige as a Cloud Service AEM Screens-ervaring op uw demo-site in te schakelen. |
+| 5 | [Uw demo-sites beheren](manage.md) | Leer meer over de gereedschappen die beschikbaar zijn om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen. |
 
 ## Volgende functies {#what-is-next}
 
