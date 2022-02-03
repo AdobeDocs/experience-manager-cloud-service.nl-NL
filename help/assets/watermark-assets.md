@@ -2,13 +2,13 @@
 title: Watermerk van de elementen
 description: Voeg een watermerk toe aan uw digitale elementen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen, publiceren
+feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 0%
+source-wordcount: '262'
+ht-degree: 1%
 
 ---
 
@@ -16,24 +16,38 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] Hiermee kunt u een digitaal watermerk aan afbeeldingen toevoegen. [!DNL Assets] ondersteunt het toepassen van een afbeelding als watermerk op andere afbeeldingsbestanden. Met watermerken kunnen gebruikers de authenticiteit en de copyrighteigendom van de elementen controleren. Een watermerk kan ook worden gebruikt om de status van een document aan te geven als vertrouwelijk, concept, geldigheid enzovoort.
 
-Ga als volgt te werk om [!DNL Experience Manager] te configureren voor watermerkelementen:
+>[!NOTE]
+>
+>Deze functie is beschikbaar in het prereleasekanaal. Zie [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
 
-1. Een PNG-bestand wordt toegepast als een watermerk. Upload dit bestand in uw DAM-opslagplaats.
+Om te vormen [!DNL Experience Manager] op watermerkelementen:
 
-1. Open de aan uw omgeving gekoppelde [!DNL Cloud Manager] Git-opslagplaats. Leg een bestand met de naam `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` in de opslagplaats vast met de volgende inhoud. Voor instructies, zie [hoe te configuratie OSGi in [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md) doen.
+1. Een PNG-bestand wordt toegepast als een watermerk. Upload dit bestand naar uw DAM-opslagplaats.
 
-   ```json
-   {
-   "watermark": "/content/dam/<path-to-watermark-image.png>",
-    "width": 100
-   }
-   ```
+1. Ga naar **[!UICONTROL Tools > Assets > Assets Configurations]**.
 
-1. [Maak een verwerkingsprofiel ](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) om de assetmicroservices te gebruiken voor het toepassen van het watermerk.
+1. Klik op **[!UICONTROL System Watermarking Profile]**.
+
+1. Op de [!UICONTROL System Watermarking Profile page], geeft u het afbeeldingspad op dat in stap 1 naar de DAM-opslagplaats is geüpload.
+
+1. Geef een watermerkschaal op, variërend van 0,0 tot 1,0, ten opzichte van de weergavebreedte in het dialoogvenster **[!UICONTROL Scale]** veld.
+
+1. Klik op **[!UICONTROL Save]**.
+
+   ![Detector van duplicatie van middelen](assets/system-watermarking-profile.png)
+
+   >[!NOTE]
+   >
+   >Als u een systeemwatermerkingsprofiel hebt geconfigureerd met `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` configuratiedossier (configuratie OSGi), kunt u het blijven gebruiken, nochtans, adviseert Adobe om de nieuwe methode te gebruiken.
+
+
+1. [Een verwerkingsprofiel maken](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) om gebruik te maken van asset microservices om het watermerk toe te passen.
 
    ![Middelverwerkingsprofiel om watermerk te maken](assets/watermark-processing-profile.png)
 
-1. [Pas de verwerkingsprofielen toe op een ](/help/assets/asset-microservices-configure-and-use.md#use-profiles) map om elementen met een watermerk te maken.
+   Zorg ervoor dat u de **[!UICONTROL Watermark]** schakelen tijdens het maken van het verwerkingsprofiel.
+
+1. [De verwerkingsprofielen toepassen op een map](/help/assets/asset-microservices-configure-and-use.md#use-profiles) om elementen met een watermerk te maken.
 
 ## Tips en beperkingen {#tips-limitations-bestpractices}
 
@@ -43,6 +57,6 @@ Ga als volgt te werk om [!DNL Experience Manager] te configureren voor watermerk
 
 >[!MORELIKETHIS]
 >
->* [Overzicht](/help/assets/asset-microservices-overview.md) van Asset microservices.
->* [Gebruik assetmicroservices met verwerkingsprofielen](/help/assets/asset-microservices-configure-and-use.md).
+>* [Overzicht van services voor middelenmicroservices](/help/assets/asset-microservices-overview.md).
+>* [Middelenmicroservices gebruiken met verwerkingsprofielen](/help/assets/asset-microservices-configure-and-use.md).
 

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '3242'
-ht-degree: 21%
+source-wordcount: '3212'
+ht-degree: 22%
 
 ---
 
@@ -213,10 +213,6 @@ Referenties weergeven en beheren op het tabblad [!DNL Assets] implementatie, voe
    ![waarschuwing forceren verwijderen](assets/delete-referenced-asset.png)
 
 ### Updates van middelen beheren in externe DAM {#handling-updates-to-remote-assets}
-
->[!NOTE]
->
->Deze functie is beschikbaar in het prereleasekanaal. Zie [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
 
 Na [configureren, verbinding](#configure-a-connection-between-sites-and-assets-deployments) tussen externe DAM- en Sites-implementaties worden de middelen op externe DAM beschikbaar gesteld op de implementatie van Sites. Vervolgens kunt u de bewerkingen bijwerken, verwijderen, hernoemen en verplaatsen op de externe DAM-middelen of -mappen. De updates zijn, met wat vertraging, automatisch beschikbaar op de plaatsing van Plaatsen. Als een element op een externe DAM wordt gebruikt op een lokale Experience Manager Sites-pagina, worden de updates van het element op de externe DAM weergegeven op de pagina Sites.
 
