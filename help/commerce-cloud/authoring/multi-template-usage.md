@@ -10,18 +10,18 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: f45021ff09a4874d19fa7d8d40405cfd52bf8434
+source-git-commit: 13ed4f82f441daf95b80b5d015b00ea49f8d1ed2
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
 # Meerdere categorieën en productpagina&#39;s maken {#multiple}
 
-    >[!OPMERKING]
-    >
-    > Deze functie werkt alleen voor winkeliers op basis van CIF (bijvoorbeeld Venia).
+>[!NOTE]
+>
+> Deze functionaliteit werkt alleen voor winkeliers op basis van CIF (bijvoorbeeld Venia).
 
 [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) biedt auteurs van inhoud de mogelijkheid om extra categorie- en productpagina&#39;s te maken. Deze pagina&#39;s kunnen met extra marketing inhoud worden verrijkt en worden gevormd om specifieke categorieën en producten te richten. De volgende video doorloopt de opstelling van deze eigenschap.
 
