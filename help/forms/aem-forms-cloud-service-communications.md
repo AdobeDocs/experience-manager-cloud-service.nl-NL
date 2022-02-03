@@ -2,17 +2,15 @@
 title: AEM Forms as a Cloud Service - Communicatie
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
 
 
-# as a Cloud Service communicatie-API&#39;s van AEM Forms gebruiken - Synchrone verwerking {#frequently-asked-questions}
-
-**De functie Communicatie is in bèta.**
+# Synchrone verwerking gebruiken {#sync-processing-introduction}
 
 Met behulp van communicatie kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, claimverwerkingsbrieven, aankondigingen van voordelen, claimverwerkingsbrieven, maandelijkse facturen en welkomstkits. U kunt Communicatie APIs gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, DPL, IPL, en ZPL formaten te produceren.
 

@@ -2,16 +2,16 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2f934bb63796599d6c3cca47498c1799388a9923
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1135'
 ht-degree: 1%
 
 ---
 
 # AEM Forms as a Cloud Service communicatie gebruiken {#frequently-asked-questions}
 
-**AEM Forms as a Cloud Service - Communicatie API&#39;s voor documentmanipulatie worden in bèta weergegeven en kunnen aanzienlijk veranderen voordat ze daadwerkelijk worden uitgebracht.**
+**Documentmanipulatie-API&#39;s bevinden zich in de pre-releasefase en kunnen worden gewijzigd voordat ze daadwerkelijk worden uitgebracht.**
 
 Met communicatiemogelijkheden kunt u documenten maken die door uw merk zijn goedgekeurd, gepersonaliseerd en gestandaardiseerd, zoals zakelijke correspondentie, instructies, aanvraagverwerkingsbrieven, aankondigingen van voordelen, maandelijkse facturen of welkomstkits.
 
@@ -21,9 +21,9 @@ De mogelijkheid biedt API&#39;s om de documenten te genereren en te bewerken. U 
 
 * de mogelijkheid om PDF-documenten op aanvraag te combineren, opnieuw te rangschikken en te valideren.
 
-* HTTP-API&#39;s voor eenvoudigere integratie met externe systemen. Afzonderlijke API&#39;s voor bewerkingen op aanvraag (lage latentie) en batchbewerkingen (bewerkingen met hoge doorvoer) worden opgenomen. Hierdoor wordt het genereren van documenten een efficiënte taak.
+* HTTP-API&#39;s voor eenvoudigere integratie met externe systemen. Afzonderlijke API&#39;s voor bewerkingen op aanvraag (lage latentie) en batchbewerkingen (bewerkingen met hoge doorvoer) worden opgenomen.
 
-* een veilige toegang tot gegevens. Communicatie APIs verbindt met en heeft toegang tot gegevens slechts van klant aangewezen gegevensbewaarplaatsen, maakt geen lokale exemplaren van gegevens, die mededelingen hoogst veilig maken.
+* een veilige toegang tot gegevens. Communicatie APIs verbindt met en heeft toegang tot gegevens slechts van klant aangewezen gegevensbewaarplaatsen, die mededelingen hoogst veilig maken.
 
 ![Een voorbeeld van een creditcardformulier](assets/statement.png)
 Een creditcardverklaring kan worden gecreeerd gebruikend Communicatie APIs. Deze voorbeeldinstructie gebruikt dezelfde sjabloon maar afzonderlijke gegevens voor elke klant, afhankelijk van het gebruik van de creditcard.
@@ -57,7 +57,7 @@ Communications APIs can create separate documents for each record within an XML 
 
 The following illustration also shows Communications APIs processing an XML data file that contains multiple records. However, assume that you instruct the APIs to create a single PDF document that contains all data records. In this situation, the APIs generate one document that contains all of the records.
 
-The following illustration shows Communications APIs processing an XML data file that contains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
+The following illustration shows Communications APIs processing an XML data file that con tains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
 
  -->
 
@@ -77,34 +77,34 @@ The following illustration shows the Communication APIs processing an XML data f
 
 ![Create PDF Documents](assets/ou_OutputBatchMany_popup.png)
 
-For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. -->
+For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. 
 
-### Interactieve PDF-documenten afvlakken {#flatten-interactive-pdf-documents}
+### Flatten interactive PDF documents {#flatten-interactive-pdf-documents}
 
-Met API&#39;s voor het genereren van documenten kunt u een interactief PDF-document (bijvoorbeeld een formulier) transformeren naar een niet-interactief PDF-document. Met een interactief PDF-document kunnen gebruikers gegevens in de documentvelden van het PDF-document invoeren of wijzigen. Het transformeren van een interactief PDF-document naar een niet-interactief PDF-document wordt afvlakking genoemd. Wanneer een PDF-document wordt samengevoegd, kan een gebruiker de gegevens in de documentvelden niet wijzigen. Een reden om een PDF-document af te vlakken is ervoor te zorgen dat gegevens niet kunnen worden gewijzigd.
+You can use document generation APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document’s fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
 
-U kunt de volgende typen PDF-documenten samenvoegen:
+You can flatten the following types of PDF documents:
 
-* Interactieve PDF-documenten die zijn gemaakt in Designer (die XFA-streams bevatten).
+* Interactive PDF documents created in Designer (that contain XFA streams).
 
 * Acrobat PDF forms
 
-Als u probeert een niet-interactief PDF-document af te vlakken, treedt een uitzondering op.
+If you attempt to flatten a non-interactive PDF document, an exception occurs.
 
-### Formulierstatus behouden {#retain-form-state}
+### Retain Form State {#retain-form-state}
 
-Een interactief PDF-document bevat verschillende elementen die een formulier vormen. Deze elementen kunnen velden (voor het accepteren of weergeven van gegevens), knoppen (voor het activeren van gebeurtenissen) en scripts (voor het uitvoeren van een bepaalde handeling) bevatten. Wanneer u op een knop klikt, wordt mogelijk een gebeurtenis geactiveerd die de status van een veld wijzigt. Als u bijvoorbeeld een optie kiest voor een geslacht, kan de kleur van een veld of de weergave van het formulier veranderen. Dit is een voorbeeld van een handmatige gebeurtenis die ertoe leidt dat de formulierstatus verandert.
+An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
 
-Wanneer een dergelijk interactief PDF-document wordt afgevlakt met behulp van de communicatie-API&#39;s, blijft de status van het formulier niet behouden. Stel de Booleaanse waarde in om ervoor te zorgen dat de status van het formulier wordt behouden, zelfs nadat het formulier is samengevoegd _preserveFormState_ op True om de status van het formulier op te slaan en te behouden.
+When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
 
-## Documentmanipulatie
+## (Pre-release) Documentmanipulatie
 
 Via API&#39;s voor documentmanipulatie kunt u PDF-documenten combineren, opnieuw rangschikken en valideren. Doorgaans maakt u een DDX en verzendt u deze naar API&#39;s voor documentmanipulatie om een document samen te stellen of opnieuw te rangschikken. Het DDX-document bevat instructies voor het gebruik van de brondocumenten om een set vereiste documenten te maken. De DDX-referentiedocumentatie biedt gedetailleerde informatie over alle ondersteunde bewerkingen. Voorbeelden van documentmanipulatie zijn:
 
 ### PDF-documenten samenstellen
 
-Met de API&#39;s voor documentproductie kunt u twee of meer PDF-documenten samenvoegen tot één PDF-document of PDF-Portfolio. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
+Met de API&#39;s voor documentproductie kunt u twee of meer PDF- of XDP-documenten samenvoegen tot één PDF-document of PDF Portfolio. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
 
 * Een eenvoudig PDF-document samenstellen
 * Een PDF-Portfolio maken
@@ -128,6 +128,11 @@ Afbeelding: Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meer
 ### Converteren naar documenten die voldoen aan de PDF/A-standaard en deze valideren
 
 Met de API&#39;s voor documentproductie kunt u een PDF-document converteren naar een document dat voldoet aan de PDF/A-standaard en bepalen of een PDF PDF/A-compatibel is. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
+
+>!![Note]
+Als u API&#39;s voor documentmanipulatie wilt inschakelen en configureren, voegt u de volgende regel toe aan [Dispatcher-configuratie](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+`# Allow Forms Doc Generation requests`
+`/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 ## Typen communicatie-API&#39;s

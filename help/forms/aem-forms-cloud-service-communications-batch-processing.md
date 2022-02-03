@@ -2,14 +2,14 @@
 title: Experience Manager [!DNL Forms] Batchverwerking voor as a Cloud Service communicatie
 description: Hoe te om merkgeoriënteerde en gepersonaliseerde mededelingen tot stand te brengen?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1693'
 ht-degree: 0%
 
 ---
 
-# Forms as a Cloud Service Communications - batchverwerking
+# Batchverwerking gebruiken
 
 Met behulp van communicatie kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, claimverwerkingsbrieven, aankondigingen van voordelen, claimverwerkingsbrieven, maandelijkse facturen en welkomstkits. U kunt Communicatie APIs gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, DPL, IPL, en ZPL formaten te produceren.
 
