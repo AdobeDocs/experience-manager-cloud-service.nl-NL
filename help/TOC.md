@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8c4261b91c16127ac86f5f469d8f309858d2f617
+source-git-commit: 13aa3d34a6e81c7711665dcf974008d9324c6753
 workflow-type: tm+mt
-source-wordcount: '3487'
+source-wordcount: '3495'
 ht-degree: 24%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 24%
    + Releaseopmerkingen {#release-notes}
       + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2021 {#2021}
+         + [Opmerkingen bij de release 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [Opmerkingen bij de release 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
          + [Opmerkingen bij de release 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
          + [Opmerkingen bij de release 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
@@ -124,6 +125,7 @@ ht-degree: 24%
          + [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [Richtlijnen en beste praktijken voor het gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Aan de slag met het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+         + [Inhoudsoverdrachten valideren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Afhandeling van grote opslagplaatsen voor inhoud](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [Inhoud uit bron extraheren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Inhoud in doel invoegen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -285,6 +287,7 @@ ht-degree: 24%
       + [Assets toevoegen en uploaden](/help/assets/add-assets.md)
       + [Assets doorzoeken](/help/assets/search-assets.md)
       + [Algemene taken voor assetbeheer](/help/assets/manage-digital-assets.md)
+      + [Publicatie beheren](/help/assets/manage-publication.md)
       + [3D-elementen voorvertonen](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Slimme tags voor afbeeldingen](/help/assets/smart-tags.md)
       + [Slimme tag toewijzen aan video-elementen](/help/assets/smart-tags-video-assets.md)

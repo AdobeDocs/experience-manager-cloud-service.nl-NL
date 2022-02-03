@@ -1,38 +1,37 @@
 ---
 title: Ervaringsfragmenten
-description: Breid Adobe Experience Manager als Fragments van de Ervaring van de Cloud Service uit.
-translation-type: tm+mt
-source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
+description: Breid de Fragmenten van de Ervaring van Adobe Experience Manager as a Cloud Service uit.
+exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
+source-git-commit: 975bbe809da1b34af8b8cab3b10ae2594133cf6d
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1526'
 ht-degree: 0%
 
 ---
-
 
 # Ervaringsfragmenten{#experience-fragments}
 
 ## De basisbeginselen {#the-basics}
 
-Een [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een groep van een of meer componenten, inclusief inhoud en lay-out, waarnaar op pagina&#39;s kan worden verwezen.
+An [Ervaar fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een groep van één of meerdere componenten met inbegrip van inhoud en lay-out die binnen pagina&#39;s kunnen worden van verwijzingen voorzien.
 
 Een ervaringsfragment dat Master en/of variant wordt gebruikt:
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
-Aangezien er geen `/libs/cq/experience-fragments/components/xfpage/xfpage.html` is, keert het terug naar
+Aangezien er geen `/libs/cq/experience-fragments/components/xfpage/xfpage.html` het terugkeert naar
 
-* `sling:resourceSuperType` :  `wcm/foundation/components/page`
+* `sling:resourceSuperType` : `wcm/foundation/components/page`
 
-## De normale HTML-uitvoering {#the-plain-html-rendition}
+## De normale HTML-vertoning {#the-plain-html-rendition}
 
-Met de kiezer `.plain.` in de URL hebt u toegang tot de normale HTML-uitvoering.
+Met de `.plain.` in de URL, kunt u tot de normale vertoning van de HTML toegang hebben.
 
 Dit is beschikbaar in de browser, maar het primaire doel is om andere toepassingen (bijvoorbeeld webapps van derden, aangepaste mobiele implementaties) rechtstreeks toegang te geven tot de inhoud van het Experience Fragment door alleen de URL te gebruiken.
 
-De normale HTML-uitvoering voegt het protocol-, host- en contextpad toe aan paden die:
+Met de uitvoering voor normale HTML worden het protocol, de host en het contextpad toegevoegd aan paden die:
 
-* van het type: `src`, `href` of `action`
+* van het type: `src`, `href`, of `action`
 
 * of eindigen met: `-src`, of `-href`
 
@@ -50,29 +49,6 @@ De selector voor normale uitvoering gebruikt een transformator in plaats van aan
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
-## Sociale variaties {#social-variations}
-
-Sociale varianten kunnen op sociale media (tekst en afbeelding) worden geplaatst. AEM deze sociale varianten componenten kunnen bevatten; bijvoorbeeld tekstcomponenten, afbeeldingscomponenten.
-
-De afbeelding en de tekst voor de sociale post kunnen van elk type afbeeldingsbron of tekstresource op elk diepteniveau (in de bouwsteen of de lay-outcontainer) worden genomen.
-
-Sociale variaties maken bouwstenen ook mogelijk en houden er rekening mee bij het nemen van sociale maatregelen (op het gebied van de publicatieomgeving).
-
-Om de correcte tekst en het beeld aan het sociale media netwerk te posten, moeten sommige overeenkomsten worden geëerbiedigd als u uw eigen aangepaste componenten ontwikkelt.
-
-Hiervoor moeten de volgende eigenschappen worden gebruikt:
-
-* Voor het extraheren van de afbeelding
-
-   * `fileReference`
-   * `fileName`
-
-* Voor het uitnemen van de tekst
-
-   * `text`
-
-Componenten die deze conventie niet gebruiken, worden niet in aanmerking genomen.
-
 ## Sjablonen voor ervaringsfragmenten {#templates-for-experience-fragments}
 
 >[!CAUTION]
@@ -87,7 +63,7 @@ Bij het ontwikkelen van een nieuwe sjabloon voor Experience Fragments kunt u de 
 <!-- When developing a new template for Experience Fragments you can follow follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
-Om een malplaatje van het ervaringsfragment tot stand te brengen dat door **Create de tovenaar van het Fragment van de Ervaring** wordt ontdekt, moet u één van deze regelreeksen volgen:
+Een ervaringsfragmentsjabloon maken die wordt gedetecteerd door de **Experience Fragment maken** wizard, moet u een van de volgende regelsets volgen:
 
 1. Beide:
 
@@ -97,9 +73,9 @@ Om een malplaatje van het ervaringsfragment tot stand te brengen dat door **Crea
    1. De naam van de sjabloon moet beginnen met:
       `experience-fragments`
 Hierdoor kunnen gebruikers ervaringsfragmenten maken in /content/experience-fragments als de 
-`cq:allowedTemplates` Deze eigenschap bevat alle sjablonen met namen die beginnen met  `experience-fragment`. Klanten kunnen deze eigenschap bijwerken en hun eigen naamgevingsschema of sjabloonlocaties opnemen.
+`cq:allowedTemplates` eigenschap van deze map bevat alle sjablonen met namen die beginnen met `experience-fragment`. Klanten kunnen deze eigenschap bijwerken en hun eigen naamgevingsschema of sjabloonlocaties opnemen.
 
-1. [Toegestane ](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) sjablonen kunnen worden geconfigureerd in de console van Experience Fragments.
+1. [Toegestane sjablonen](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) kan in de console van de Fragmenten van de Ervaring worden gevormd.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -131,7 +107,7 @@ In AEM hebt u de mogelijkheid om ervaringsfragmenten te maken. Een ervaringsfrag
 
 Een van de gebruiksgevallen voor dergelijke groepen is het insluiten van inhoud in aanraakpunten van derden, zoals Adobe Target.
 
-### Standaardkoppeling bij herschrijven van {#default-link-rewriting}
+### Standaardkoppeling herschrijven {#default-link-rewriting}
 
 <!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
@@ -140,7 +116,7 @@ Met de functie Exporteren naar doel kunt u:
 
 * een fragment van de Ervaring tot stand brengen,
 * er componenten aan toevoegen,
-* en exporteer het vervolgens als een Adobe Target-aanbieding in HTML-indeling of in JSON-indeling.
+* en exporteer het vervolgens als een Adobe Target-aanbieding in de indeling HTML of JSON.
 
 Deze functie kan worden ingeschakeld op een auteur-instantie van AEM. Het vereist een geldige Configuratie van Adobe Target, en configuraties voor de Verbinding Externalzer.
 
@@ -148,30 +124,30 @@ Deze functie kan worden ingeschakeld op een auteur-instantie van AEM. Het vereis
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-De Link Externalzer wordt gebruikt om te bepalen welke URL&#39;s correct zijn wanneer de HTML-versie van het Target Offer wordt gemaakt. Deze versie wordt vervolgens naar Adobe Target verzonden. Dit is nodig omdat Adobe Target vereist dat alle koppelingen binnen de HTML-doelaanbieding openbaar toegankelijk zijn; dit betekent dat alle bronnen waarnaar de koppelingen verwijzen, en het ervaringsfragment zelf, moeten worden gepubliceerd voordat ze kunnen worden gebruikt.
+De Verbinding ExternalAlizer wordt gebruikt om correcte URLs te bepalen nodig wanneer het creëren van de versie van de HTML van het Aanbod van het Doel, dat later naar Adobe Target wordt verzonden. Dit is noodzakelijk aangezien Adobe Target vereist dat alle verbindingen binnen de Aanbieding van de HTML van het Doel openbaar kunnen worden betreden; dit betekent dat alle bronnen waarnaar de koppelingen verwijzen, en het ervaringsfragment zelf, moeten worden gepubliceerd voordat ze kunnen worden gebruikt.
 
-Wanneer u een HTML-doelaanbieding samenstelt, wordt standaard een aanvraag verzonden naar een aangepaste Sling-kiezer in AEM. Deze kiezer wordt `.nocloudconfigs.html` genoemd. Zoals de naam al aangeeft, wordt er een gewone HTML-rendering van een Experience-fragment gemaakt, maar worden er geen cloudconfiguraties in opgenomen (wat overbodige informatie zou zijn).
+Wanneer u een Target HTML-aanbieding samenstelt, wordt standaard een aanvraag verzonden naar een aangepaste Sling-kiezer in AEM. Deze kiezer wordt `.nocloudconfigs.html`. Zoals de naam al aangeeft, wordt een GPU-rendering van een Experience-fragment gemaakt, maar worden cloudconfiguraties niet opgenomen (wat overbodige informatie zou zijn).
 
-Nadat u de HTML-pagina hebt gegenereerd, brengt de Sling Rewriter-pijplijn wijzigingen aan in de uitvoer:
+Nadat u de pagina van de HTML produceert, maakt de Sling Rewriter pijpleiding wijzigingen in de output:
 
-1. De `html`-, `head`- en `body`-elementen worden vervangen door `div`-elementen. De `meta`-, `noscript`- en `title`-elementen worden verwijderd (het zijn onderliggende elementen van het oorspronkelijke `head`-element en worden niet meegenomen wanneer dit wordt vervangen door het `div`-element).
+1. De `html`, `head`, en `body` elementen worden vervangen door `div` elementen. De `meta`, `noscript` en `title` elementen worden verwijderd (het zijn onderliggende elementen van het origineel) `head` -element, en wordt niet in aanmerking genomen wanneer deze wordt vervangen door de `div` element).
 
-   Dit wordt gedaan om ervoor te zorgen dat het HTML- Doelaanbod in de Activiteiten van het Doel kan worden omvat.
+   Dit wordt gedaan om ervoor te zorgen dat de HTML Target Offerte in de Activiteiten van het Doel kan worden omvat.
 
-2. AEM wijzigt alle interne koppelingen in de HTML, zodat deze verwijzen naar een gepubliceerde bron.
+2. AEM wijzigt om het even welke interne verbindingen aanwezig in de HTML, zodat zij aan een gepubliceerde middel richten.
 
-   Als u wilt bepalen welke koppelingen moeten worden gewijzigd, AEM u dit patroon voor kenmerken van HTML-elementen volgt:
+   Om te bepalen welke koppelingen moeten worden gewijzigd, AEM dit patroon voor kenmerken van HTML-elementen volgen:
 
    1. `src` attributes
    2. `href` attributes
    3. `*-src` kenmerken (zoals data-src, custom-src, enz.)
-   4. `*-href` kenmerken (zoals  `data-href`,  `custom-href`,  `img-href`enz.)
+   4. `*-href` kenmerken (zoals `data-href`, `custom-href`, `img-href`, enz.)
 
    >[!NOTE]
    >
-   >In de meeste gevallen zijn de interne koppelingen in de HTML relatieve koppelingen, maar het kan voorkomen dat aangepaste componenten volledige URL&#39;s in de HTML bevatten. Standaard worden deze volledige URL&#39;s genegeerd en worden geen wijzigingen aangebracht.
+   >In de meeste gevallen zijn de interne koppelingen in de HTML relatieve koppelingen, maar er kunnen zich gevallen voordoen waarin aangepaste componenten volledige URL&#39;s in de HTML bevatten. Standaard worden deze volledige URL&#39;s genegeerd en worden geen wijzigingen aangebracht.
 
-   De verbindingen in deze attributen worden in werking gesteld door AEM Verbinding Externalzer `publishLink()` om URL opnieuw te creëren alsof het op een gepubliceerde instantie was, en als dusdanig, openbaar beschikbaar.
+   De verbindingen in deze attributen worden in werking gesteld door de Verbinding Externalzer van de AEM `publishLink()` om de URL opnieuw te maken alsof deze zich op een gepubliceerd exemplaar bevindt, en als zodanig openbaar te maken.
 
 Als u een implementatie buiten de doos gebruikt, moet het hierboven beschreven proces voldoende zijn om het doelaanbod te genereren op basis van het ervaringsfragment en het vervolgens te exporteren naar Adobe Target. Er zijn echter enkele gebruiksgevallen die in dit proces niet in aanmerking worden genomen; deze omvatten :
 
@@ -180,21 +156,21 @@ Als u een implementatie buiten de doos gebruikt, moet het hierboven beschreven p
 
 Voor deze gebruiksgevallen AEM verstrekt de Interface van de Leverancier van de Verbinding Rewriter.
 
-### Interface van Rewriter-provider koppelen {#link-rewriter-provider-interface}
+### Interface Rewriter-provider koppelen {#link-rewriter-provider-interface}
 
-Voor complexere gevallen, die niet door [gebrek](#default-link-rewriting) worden behandeld, AEM biedt de Interface van de Leverancier van de Verbinding Rewriter aan. Dit is een `ConsumerType` interface die u in uw bundels, als dienst kunt uitvoeren. De wijzigingen die AEM uitvoeren op interne koppelingen van een HTML-aanbieding worden overgeslagen zoals deze worden weergegeven op basis van een Experience Fragment. Met deze interface kunt u het herschrijven van interne HTML-koppelingen aanpassen aan uw bedrijfsbehoeften.
+Voor meer gecompliceerde gevallen die niet onder de [default](#default-link-rewriting), AEM biedt de Interface van de Leverancier van de Verbinding Rewriter aan. Dit is een `ConsumerType` interface die u in uw bundels, als dienst kunt uitvoeren. Het omzeilt de aanpassingen AEM op interne verbindingen van een aanbieding van de HTML zoals die van een Fragment van de Ervaring worden teruggegeven uitvoeren. Met deze interface kunt u het herschrijven van interne HTML-koppelingen aanpassen aan uw bedrijfsbehoeften.
 
 Voorbeelden van gebruiksgevallen om deze interface als dienst uit te voeren omvatten:
 
 * Sling Mappings worden ingeschakeld op de publicatie-instanties, maar niet op de auteurinstantie
 * Een verzender of vergelijkbare technologie wordt gebruikt om URL&#39;s intern om te leiden
-* Er zijn `sling:alias mechanisms` voor bronnen
+* Er zijn `sling:alias mechanisms` beschikt over middelen
 
 >[!NOTE]
 >
 >Deze interface verwerkt alleen de interne HTML-koppelingen van het gegenereerde doelaanbod.
 
-De interface van de Leverancier van de Verbinding Rewriter ( `ExperienceFragmentLinkRewriterProvider`) is als volgt:
+De koppeling Rewriter Provider Interface ( `ExperienceFragmentLinkRewriterProvider`) is als volgt:
 
 ```java
 public interface ExperienceFragmentLinkRewriterProvider {
@@ -246,12 +222,12 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 
 Voor de dienst aan het werk, zijn er nu drie methodes die binnen de dienst moeten worden uitgevoerd:
 
-* ` [shouldRewrite](#shouldrewrite)`
-* ` [rewriteLink](#rewritelink)`
+* `[shouldRewrite](#shouldrewrite)`
+* `[rewriteLink](#rewritelink)`
 
    * `rewriteLinkExample2`
 
-* ` [getPriority](#priorities-getpriority)`
+* `[getPriority](#priorities-getpriority)`
 
 #### shouldRewrite {#shouldrewrite}
 
@@ -299,13 +275,13 @@ De naam van het HTML-element dat momenteel wordt verwerkt.
 * `attribute`
 De exacte kenmerknaam.
 
-Als het systeem Exporteren naar doel bijvoorbeeld dit element momenteel verwerkt, kunt u `CSSInclude` als volgt definiëren:
+Als dit element bijvoorbeeld momenteel wordt verwerkt door het systeem Exporteren naar doel, kunt u definiëren `CSSInclude` als:
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
 ```
 
-De vraag aan de `rewriteLink()` methode wordt gedaan gebruikend deze parameters:
+De oproep aan de `rewriteLink()` De methode wordt uitgevoerd met behulp van de volgende parameters:
 
 ```java
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
@@ -313,7 +289,7 @@ rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", a
 
 Wanneer u de dienst creeert kunt u besluiten nemen die op de bepaalde input worden gebaseerd, en dan de verbinding dienovereenkomstig herschrijven.
 
-Voor ons voorbeeld, zouden wij het `/etc.clientlibs` deel van URL willen verwijderen en het aangewezen externe domein toevoegen. Om dingen eenvoudig te houden, zullen wij overwegen dat wij toegang tot een Resolver van het Middel voor uw dienst, zoals in `rewriteLinkExample2` hebben:
+Voor ons voorbeeld willen we de `/etc.clientlibs` deel van URL en voeg het aangewezen externe domein toe. Om dingen eenvoudig te houden, zullen wij overwegen dat wij toegang tot een Resolver van het Middel voor uw dienst, zoals in hebben `rewriteLinkExample2`:
 
 >[!NOTE]
 >
@@ -350,14 +326,14 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->Als de bovengenoemde methode `null` terugkeert, dan zal de Uitvoer aan het systeem van het Doel de verbinding zoals het is, een relatieve verbinding aan een middel verlaten.
+>Als de bovenstaande methode retourneert `null`Dan zal de Uitvoer naar het systeem van het Doel de verbinding zoals het is, een relatieve verbinding aan een middel verlaten.
 
 #### Prioriteiten - getPriority {#priorities-getpriority}
 
-Het is niet ongebruikelijk om verscheidene diensten te nodig om voor verschillende soorten Fragments van de Ervaring te behandelen, of zelfs om een Generische Dienst te hebben die het externaliseren en in kaart brengen voor alle Fragments van de Ervaring behandelt. In deze gevallen kunnen conflicten ontstaan over de service die moet worden gebruikt, zodat AEM de mogelijkheid biedt **Prioriteiten** voor verschillende services te definiëren. De prioriteiten worden bepaald volgens de methode:
+Het is niet ongebruikelijk om verscheidene diensten te nodig om voor verschillende soorten Fragments van de Ervaring te behandelen, of zelfs om een Generische Dienst te hebben die het externaliseren en in kaart brengen voor alle Fragments van de Ervaring behandelt. In deze gevallen kunnen conflicten ontstaan over de dienst die moet worden gebruikt, zodat AEM de mogelijkheid biedt om **Prioriteiten** voor verschillende diensten. De prioriteiten worden bepaald volgens de methode:
 
 * `getPriority()`
 
-Deze methode staat het gebruik van verscheidene diensten toe waar de `shouldRewrite()` methode waar voor het zelfde Fragment van de Ervaring terugkeert. De dienst die het hoogste aantal van zijn `getPriority()`methode terugkeert is de dienst die de Variatie van het Fragment van de Ervaring behandelt.
+Deze methode maakt het gebruik van verschillende diensten mogelijk wanneer de `shouldRewrite()` Deze methode retourneert true voor hetzelfde ervaringsfragment. De dienst die het hoogste aantal van zijn terugkeert `getPriority()`De methode is de dienst die de Variatie van het Fragment van de Ervaring behandelt.
 
-Als voorbeeld, kunt u `GenericLinkRewriterProvider` hebben die de basisafbeelding voor alle Fragmenten van de Ervaring behandelt en wanneer de `shouldRewrite()` methode `true` voor alle Variaties van het Fragment van de Ervaring terugkeert. Voor verscheidene specifieke Fragments van de Ervaring, kunt u speciale behandeling willen, zodat in dit geval, kunt u `SpecificLinkRewriterProvider` verstrekken waarvoor de `shouldRewrite()` methode waar slechts voor sommige Variaties van het Fragment van de Ervaring terugkeert. Om ervoor te zorgen dat `SpecificLinkRewriterProvider` wordt gekozen om die Variaties van het Fragment van de Ervaring te behandelen, moet het in zijn `getPriority()` methode een hoger aantal dan terugkeren `GenericLinkRewriterProvider.`
+U kunt bijvoorbeeld een `GenericLinkRewriterProvider` dat de basisafbeelding voor alle fragmenten van de Ervaring behandelt en wanneer `shouldRewrite()` methode retourneert `true` voor alle Experience Fragment Variations. Voor verscheidene specifieke Fragments van de Ervaring, kunt u speciale behandeling willen, zodat kunt u in dit geval verstrekken `SpecificLinkRewriterProvider` waarvoor `shouldRewrite()` Deze methode retourneert alleen true voor bepaalde Experience Fragment-variaties. Om ervoor te zorgen dat `SpecificLinkRewriterProvider` wordt gekozen om die Variaties van het Fragment van de Ervaring te behandelen, moet het in zijn terugkeren `getPriority()` methode een hoger getal dan `GenericLinkRewriterProvider.`

@@ -2,9 +2,9 @@
 title: Ervaringsfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 45da72dc39a4c2a66957dbbe26f563b00100488e
+source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1522'
 ht-degree: 7%
 
 ---
@@ -12,6 +12,7 @@ ht-degree: 7%
 # Ervaringsfragmenten {#experience-fragments}
 
 In Adobe Experience Manager as a Cloud Service:
+
 * is een groep van een of meer componenten
 * omvat zowel inhoud als lay-out
 * kan worden verwezen binnen pagina&#39;s
@@ -22,10 +23,12 @@ Een ervaringsfragment:
 * Maakt deel uit van een ervaring (pagina).
 * Kan op meerdere pagina&#39;s worden gebruikt.
 * Is gebaseerd op een malplaatje (editable slechts) om structuur en componenten te bepalen.
+* Deze sjabloon wordt gebruikt om de *hoofdpagina* van het ervaringsfragment.
 * Bestaat uit een of meer componenten, met layout, in een alineasysteem.
 * Kan andere ervaringsfragmenten bevatten.
 * Kan worden gecombineerd met andere componenten (waaronder andere Experience Fragments) om een volledige pagina (ervaring) te vormen.
-* Kan verschillende variaties hebben, die inhoud en/of componenten kunnen delen.
+* Een of meer variaties kunnen worden gemaakt op basis van de basispagina.
+* Deze variaties kunnen inhoud en/of componenten delen.
 * Kan worden opgedeeld in bouwstenen die kunnen worden gebruikt voor meerdere variaties van het fragment.
 
 U kunt Experience Fragments gebruiken:
@@ -57,7 +60,6 @@ Er moeten ervaringsfragmenten worden gebruikt:
    * Kanaal- of contextspecifieke variaties.
    * ervaring die zinvol is om te groeperen; bijvoorbeeld een campagne met verschillende ervaringen op verschillende kanalen.
 * Wanneer u Omnichannel Commerce gebruikt.
-   * Handelsgerelateerde inhoud delen op [sociale media](/help/implementing/developing/extending/experience-fragments.md#social-variations) kanalen op schaal.
    * Aanraakpunten transactioneel maken.
 
 ## Fragmenten voor uw ervaring ordenen {#organizing-your-experience-fragments}
@@ -151,7 +153,6 @@ Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vorme
 
 1. Selecteren **Opslaan**.
 
-
 ## Een ervaringsfragment maken {#creating-an-experience-fragment}
 
 Een ervaringsfragment maken:
@@ -176,6 +177,12 @@ Een ervaringsfragment maken:
    A **Titel** is verplicht. Als de **Naam** wordt leeg gelaten, wordt het afgeleid van de **Titel**.
 
    ![Ervaar fragmenteigenschappen](/help/sites-cloud/authoring/assets/xf-04.png)
+
+   >[!NOTE]
+   >
+   >Labels uit de sjabloon Fragmentervaring worden niet samengevoegd met codes op de basispagina van dit ervaringsfragment.
+   >
+   >Deze zijn volledig gescheiden.
 
 1. Klikken **Maken**.
 
@@ -232,6 +239,7 @@ U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk 
 
    ![Variatie-eigenschappen](/help/sites-cloud/authoring/assets/xf-07.png)
 
+
 1. Bevestigen met **Gereed**, wordt de nieuwe variatie in het deelvenster weergegeven.
 
 ## Uw ervaringsfragment gebruiken {#using-your-experience-fragment}
@@ -283,7 +291,7 @@ Een nieuw bouwblok maken:
 
 Uw bouwsteen is zichtbaar in **Bouwstenen** tab. Voor elk blok zijn de volgende acties beschikbaar:
 
-* **Ga naar master**: open de mastervariatie op een nieuw tabblad
+* **Ga naar master**: de basispaginavariatie openen op een nieuw tabblad
 * **Naam wijzigen**
 * **Verwijderen**
 
@@ -338,8 +346,6 @@ Details worden getoond in alle weergaven van de console voor **Experience-fragme
       * **Pinterest board**
    * **Verwijzingen**
       * Een lijst met verwijzingen
-   * **Status van sociale media**
-      * Details van variaties in sociale media
 
 ## De normale HTML-vertoning {#the-plain-html-rendition}
 

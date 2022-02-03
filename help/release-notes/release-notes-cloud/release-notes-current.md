@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 35f153a6f094f558b6a5e1d880dde9f33dcd92fb
+source-git-commit: 3c6b25bdcc626946ae7bd4b98da65f4ccfd963f7
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -25,119 +25,113 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release (2021.11.0) is 16 december 2021.
-De volgende release (2022.1.0) vindt plaats op 3 februari 2022.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release (2022.1.0) is 3 februari 2022.
+De volgende release (2022.2.0) vindt plaats op 24 februari 2022.
 
 ## Video vrijgeven {#release-video}
 
-Kijk eens naar de [Overzicht release december 2021](https://video.tv.adobe.com/v/339278) video voor een overzicht van de functies die zijn toegevoegd in de release van 2021.11.0 (november 2021).
+Kijk eens naar de [Overzicht release januari 2022](https://video.tv.adobe.com/v/340120) video voor een overzicht van de functies die in de release 2022.1.0 zijn toegevoegd.
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* Dynamic Media Image Smart Crop and Swatch wordt nu aangedreven door de nieuwste Sensei-services, die verbeterde gewassen en stalen genereert. Bovendien is een verbetering gestart om verschillende uitsnijdinhoud te genereren, voor dezelfde hoogte-breedteverhouding maar voor verschillende resoluties. Bovendien blijven eventuele handmatige bewerkingen behouden bij het opwerken als de breedte en hoogte in het afbeeldingsprofiel niet worden gewijzigd.
-
-### Nieuwe functies in het dialoogvenster [!DNL Assets] prerelease-kanaal {#assets-prerelease-features}
-
 * [!DNL Dynamic Media] - U kunt nu AEM Dynamic Media-interface gebruiken om Algemene instellingen en Publicatie-instellingen te configureren in plaats van de Dynamic Media Classic-bureaubladtoepassing te doorlopen.
 
 * [!DNL Dynamic Media] ondersteunt nu opname, voorvertoning, afspelen en publiceren voor MXF-video&#39;s. Annotatie en verbluffende video voor MXF-video&#39;s worden nog niet ondersteund.
 
-* Nadat u een verbinding tussen externe DAM- en Sites-implementaties hebt geconfigureerd, worden de middelen op externe DAM beschikbaar gesteld op de implementatie van Sites. U kunt nu de opdracht [bewerkingen bijwerken, verwijderen, hernoemen en verplaatsen](../../assets/use-assets-across-connected-assets-instances.md) op de externe DAM-middelen of -mappen. De updates zijn, met wat vertraging, automatisch beschikbaar op de plaatsing van Plaatsen.
+* Nadat u een verbinding tussen externe DAM- en Sites-implementaties hebt geconfigureerd, worden de middelen op externe DAM beschikbaar gesteld op de implementatie van Sites. U kunt nu de opdracht [bewerkingen bijwerken, verwijderen, hernoemen en verplaatsen](/help/assets/use-assets-across-connected-assets-instances.md) op de externe DAM-middelen of -mappen. De updates zijn, met wat vertraging, automatisch beschikbaar op de plaatsing van Plaatsen.
+
+### Nieuwe functies in het dialoogvenster [!DNL Assets] prerelease-kanaal {#assets-prerelease-features}
+
+* [!DNL AEM Dynamic Media] biedt nu de flexibiliteit om [één alias-account configureren](../../assets/dynamic-media/dm-alias-account.md) in de gebruikersinterface, waarbij ervoor wordt gezorgd dat Dynamic Media-URL&#39;s en code voor insluiten van de viewer buiten de box worden bijgewerkt. Dit heeft een positieve invloed op SEO om de updates te weerspiegelen die zijn aangebracht in uw zakelijke context, zoals herbranding.
+
+* U kunt nu de opdracht [!DNL Experience Manager Assets] gebruikersinterface naar:
+
+   * Configureer de detectie van dubbele elementen in een opslagplaats.
+
+   * Configureer het toevoegen van digitale watermerken aan afbeeldingen.
+
+* De beheerders kunnen nu de e-mailservice configureren voor grote downloads. Hiermee kunnen gebruikers e-mailmeldingen inschakelen voor grote downloads vanaf het tabblad [!DNL Experience Manager Assets] interface. De gebruiker ontvangt een e-mailbericht met de downloadkoppeling van de gearchiveerde ZIP-map na voltooiing van het downloadproces.
+
+
+* De functie Publicatie beheren is verbeterd dankzij een verbeterde gebruikersinterface. De gebruikers kunnen inhoud publiceren of unpublish aan en van de geselecteerde bestemming, toevoegen Inhoud aan de het publiceren lijst van over de bewaarplaats DAM, omvatten de Montages van de Omslag om inhoud van de geselecteerde omslagen te publiceren en filters toe te passen, en plannen het publiceren aan een recentere datum of een tijd.
+
+### Opgeloste problemen {#bug-fixes}
+
+* Niet-verwerkte middelen zonder oorspronkelijke uitvoering worden naar de Asset compute verzonden voor verwerking terwijl de middelen van AEM on-premise naar cloudservices worden gemigreerd.
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* **Externe AEM workflowgegevens voor veilige verwerking**: U kunt AEM werkstroomgegevens (AEM gegevens van de Variabelen van het Werkschema) opslaan die de gevoelige elementen van Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. De gegevenselementen en workflowvariabelen worden niet opgeslagen in AEM opslagplaats en worden op verzoek opgehaald van een door de klant beheerde opslagplaats tijdens de verwerking van de Workflow.
-
-### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
-
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
-   * Genereer documenten door sjabloonbestanden (PDF en XDP) te vullen met XML-gegevens.
-   * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
+   * Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
+   * Formulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
+   * Afdruk-PDF genereren op basis van XFA-formulier-PDF.
+   * Genereer bulksgewijs PDF-, PostScript-, PCL- en ZPL-documenten door meerdere gegevenssets samen te voegen met bronsjablonen.
 
 * **Aangepaste lettertypen voor document van record- en PDF-documenten die zijn gemaakt met communicatie-API&#39;s**: U kunt nu met een merk goedgekeurde lettertypen gebruiken in PDF-documenten die zijn gegenereerd met communicatie-API&#39;s, zodat deze kunnen worden afgestemd op uw organisatorische vereisten.
 
-* **Forms Portal**: U kunt [Forms Portal](/help/forms/configure-forms-portal.md) om gepubliceerde adaptieve formulieren op een AEM Sites-pagina weer te geven. Hiermee kan een sitebezoeker alle beschikbare formulieren detecteren. Bovendien kan de bezoeker de portal Formulieren gebruiken om een concept van een adaptief formulier op te slaan en te openen en de versie van de PDF van een ingediend adaptief formulier te bekijken.
+### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
+
+* **[Assembler-API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Stel API&#39;s samen om PDF-documenten te combineren, opnieuw te rangschikken, te vergroten en te verkrijgen.
+
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* Uitgebreide myAccount componenten die op de verlengbare Peregrine componenten van de Handel gebaseerd zijn
+* Verbeterde myAccount-componenten
+* De component van de Aanbeveling van het product steunt extra paginatypen (homepage, het winkelwagentje, de bevestiging van de orde)
+* **Wishlist**
+   * Aangemeld door bezoekers kunnen producten toevoegen aan een verlanglijst
+   * Het beheren van de verlanglijst en de producten ervan is mogelijk via mijnAccount
+   * De knop &quot;Toevoegen aan wenslijst&quot; kan worden ingeschakeld/uitgeschakeld op componentniveau via beleid (bijvoorbeeld productgummetje, productdetails)
+   * Beschikbaar als een kerncomponent en in de AEM Venia Storefront
 
-![Uitgebreide myAccount-componenten](/help/assets/CIF/extended-myAccount-components.png)
-
-* Auteurs kunnen ad-hoc Product Recommendations van de Handel tot stand brengen gebruikend extra advisetypes
-
-* Ondersteuning voor cadeaukaarten in AEM Storefront
+![Wishlist](/help/assets/CIF/wishlist.png)
 
 ## Cloud Manager {#cloud-manager}
 
-In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.11.0 beschreven.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2022.01.0.
 
-### Releasedatum {#release-date-cm-nov}
+>[!NOTE]
+>
+>Zie [deze pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de actuele releaseopmerkingen voor Adobe Experience Manager as a Cloud Service.
 
-De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.11.0 is 4 november 2021.
-De volgende release is gepland voor 9 december 2021.
+### Releasedatum {#release-date-cm}
 
-### Wat is er nieuw? {#what-is-new-cm-nov}
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 januari 2022. De volgende release is gepland voor 10 februari 2022.
 
-* Gebruikers kunnen nu nieuwe Front End-pijpleidingen gebruiken om front-end code op een versnelde manier uitsluitend te implementeren. Zie [Cloud Manager frontend Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) voor meer informatie.
+### Wat is er nieuw? {#what-is-new-cm}
 
-   >[!IMPORTANT]
-   >U moet AEM versie hebben `2021.10.5933.20211012T154732Z` of hoger om nieuwe Front End-pijpleidingen te gebruiken.
+* Cloud Manager wordt [vermijd het herbouwen van de codebasis wanneer het ontdekt dat het zelfde git begaan wordt gebruikt](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in veelvoudige full-stack pijpleidingexecuties.
+* Voor toegang tot het AEM-omgevingslogboek is nu de **Implementatiebeheer** productprofiel. Gebruikers zonder dit profiel zien een uitgeschakelde knop in de gebruikersinterface.
+* UI zal niet front-end pijpleidingsconfiguratie voor een programma toestaan waar de Plaatsen niet als oplossing wordt toegelaten.
+* Na het genereren van een wachtwoord voor het afsluiten wordt de vervaldatum weergegeven.
 
-* De duur van de pijpleiding van de Kwaliteit van de code wordt beduidend verminderd door de codeanalyse op een efficiëntere manier uit te voeren zonder de behoefte om een volledig AEM beeld te bouwen. Deze verandering zal geleidelijk plaatsvinden in de weken na de release.
+### Opgeloste problemen {#bug-fixes-cm}
 
-* De Vastleggingsidentiteitskaart van het Git zal nu in de details van de pijpleidingsuitvoering worden getoond die het gemakkelijker maken om de code te volgen die werd gebouwd.
-
-* Het programma wordt nu gemaakt via openbaar toegankelijke API.
-
-* Environment Creation is nu beschikbaar via openbare API.
-
-* De `x-request-id` responsheader is nu zichtbaar in de API-afspeelruimte op [www.adobe.io](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
-
-* Als gebruiker zie ik een pijplijnkaart met nulpijpleidingen die mij de juiste begeleiding biedt.
-
-* Een nieuwe pagina van de Activiteit is nu beschikbaar waar de activiteiten zoals pijpleiding en codeuitvoering samen met hun bijbehorende details kunnen worden bekeken. In de loop der tijd zullen de activiteiten die op deze pagina worden vermeld, in het toepassingsgebied worden uitgebreid, samen met de verstrekte gegevens.
-
-* Er is nu een nieuwe pagina met pijplijnen beschikbaar met een statuspop-up, zodat u de samenvatting van de details eenvoudig kunt bekijken. De uitvoeringen van de pijpleiding kunnen samen met hun bijbehorende details worden bekeken.
-
-* De Edit Pijpleiding API steunt nu het veranderen van het milieu dat in de plaatsingsfasen wordt gebruikt.
-
-* Voor grote pakketten is een optimalisatie in het OakPal-scanproces geïntroduceerd.
-
-* Het CSV-bestand voor kwaliteitsafgifte bevat nu de tijdstempel voor elke kwaliteitsuitgave.
-
-### Opgeloste problemen {#bug-fixes-nov}
-
-* Bepaalde unorthodox bouwt configuraties resulteerde in onnodige dossiers die in het geheime voorgeheugen van Maven van de pijpleiding worden opgeslagen die in vreemde netwerk I/O resulteerde toen het beginnen en het tegenhouden van de bouwstijlcontainer.
-
-* De PATCH API van de pijpleiding ontbreekt als de plaatsingsfase niet bestaat.
-
-* De `ClientlibProxyResourceCheck` de kwaliteitsregel leverde fout-positieve problemen op wanneer er clientbibliotheken waren met algemene basispaden.
-
-* Foutbericht wanneer het maximale aantal opslagplaatsen is bereikt, geeft geen reden voor de fout aan.
-
-* In zeldzame gevallen faalden de pijpleidingen vanwege een onjuiste herbehandeling van bepaalde responscodes.
+* Null wijzeruitzonderingen die door sommige front-end pijpleidingsplaatsingen worden ontmoet zijn verbeterd.
+* Omgevingsvariabelen kunnen nu worden toegevoegd, bijgewerkt en verwijderd wanneer een omgeving een verouderde versie van AEM uitvoert.
+* De stap van het bouwstijlbeeld zal niet meer als FOUT voor pijpleidingen worden gemerkt die de geplande stap in bepaalde zeldzame gevallen gebruikten.
+* Voor programma&#39;s met slechts één opslagplaats, zal het pijpleidingsuitvoeringsscherm nu de bewaarplaatsnaam tonen.
 
 ## Analysator van best practices {#bpa-release}
 
 ### Releasedatum {#release-date-bpa}
 
-De releasedatum voor de analyse van best practices v2.1.22 is 1 december 2021.
+De releasedatum voor de analyse van best practices v2.1.24 is 1 februari 2022.
 
 ### Wat is er nieuw? {#what-is-new-bpa}
 
-* Mogelijkheid om de gebruikte versie van ACS-gemeenschappelijk te detecteren en te rapporteren.
-* Mogelijkheid om het aantal gebruikers en subgroepen in een groep op te sporen en te rapporteren.
-* Mogelijkheid om waarden van knoopeigenschappen in MongoDB te detecteren en te rapporteren die groter zijn dan 16 MB.
+* Mogelijkheid om het aantal elementen met en zonder slimme tags te detecteren en hierover te rapporteren.
+* Mogelijkheid om de gebruikte versie van de Core Component te detecteren en hierover verslag uit te brengen.
+* Mogelijkheid om het type bronlaag (Auteur of Publiceren) waar BPA is uitgevoerd, op te sporen en te rapporteren.
 
 ### Opgeloste problemen {#bug-fixes-bpa}
 
-* Detection of Foundation components was verfijnd om valse negatieven te verminderen.
-* Voor AEM Forms-klanten geldt dat BPA-berichten `EMAIL_PDF_SUBMIT_ACTION` niet beschikbaar zijn op AEM as a Cloud Service is opgelost.
+* BPA-logica voor grootteaanpassing is sneller en efficiënter gemaakt.
+* In sommige scenario&#39;s, verhoogde BPA niet de geanalyseerde telling toen het in werking werd gesteld. Dit is opgelost.
