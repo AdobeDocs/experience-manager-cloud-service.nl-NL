@@ -2,7 +2,7 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: a6b6a190a59d1c2f0001fe1f28d8d7bc8353d464
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 1%
@@ -129,10 +129,12 @@ Afbeelding: Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meer
 
 Met de API&#39;s voor documentproductie kunt u een PDF-document converteren naar een document dat voldoet aan de PDF/A-standaard en bepalen of een PDF PDF/A-compatibel is. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
 
->!![Note]
-Als u API&#39;s voor documentmanipulatie wilt inschakelen en configureren, voegt u de volgende regel toe aan [Dispatcher-configuratie](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
-`# Allow Forms Doc Generation requests`
-`/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
+>[!NOTE]
+>
+> Als u API&#39;s voor documentmanipulatie wilt inschakelen en configureren, voegt u de volgende regel toe aan [Dispatcher-configuratie](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 ## Typen communicatie-API&#39;s
