@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 8c3a1366d076c009262eeab8129e4e589dc4f7c5
+source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2039'
 ht-degree: 3%
 
 ---
@@ -92,27 +92,27 @@ Het wijzigen van de URL-indeling van een live website kan een negatief effect he
 >
 > De opslag specifieke configuratie van de formaten URL vereist [CIF Core Components 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) en de meest recente versie van de invoegtoepassing Adobe Experience Manager Content and Commerce.
 
-## Product-URL&#39;s waarbij de categorie behouden blijft {#context-aware-pdps}
+## URL&#39;s voor productpagina&#39;s die zijn afgestemd op de categorie {#context-aware-pdps}
 
 Omdat het mogelijk is om categoriegegevens te coderen in een product-URL, kunnen producten die in meerdere categorieën zijn ook worden geadresseerd met meerdere product-URL&#39;s.
 
-In de standaardconfiguratie zullen de standaardURL formaten één van de mogelijke alternatieven gebruikend het volgende schema selecteren:
+Met de standaard-URL-indelingen kunt u een van de mogelijke alternatieven selecteren met behulp van het volgende schema:
 
 * als de `url_path` wordt bepaald door de e-commerce achterste gebruik het (afgekeurd)
 * van de `url_rewrites` gebruik de URL&#39;s die eindigen met de `url_key` als alternatieven
 * van deze alternatieven wordt de versie met de meeste padsegmenten gebruikt
 * als er meerdere zijn, neemt u de eerste in de volgorde die door de e-commerce backend wordt gegeven
 
-In dit schema worden de `url_path` dat de meeste voorouders heeft, gebaseerd op de veronderstelling dat een kindcategorie specifieker is dan de oudercategorie. De geselecteerde `url_path` wordt beschouwd _canonicaal_ en wordt altijd gebruikt voor de canonieke koppeling op productpagina&#39;s of in de sitemap van het product.
+In dit schema worden de `url_path` met de meeste voorouders, gebaseerd op de veronderstelling dat een kindcategorie specifieker is dan de oudercategorie. De geselecteerde `url_path` wordt beschouwd _canonicaal_ en wordt altijd gebruikt als de canonieke koppeling op productpagina&#39;s of in de sitemap van het product.
 
 Wanneer een winkelier echter van een categoriepagina naar een productpagina navigeert, of van de ene productpagina naar de andere gerelateerde productpagina in dezelfde categorie, is het nuttig om de huidige categoriecontext te behouden. In dit geval `url_path` de selectie moet de voorkeur geven aan alternatieven die zich in de huidige categoriecontext bevinden boven de _canonicaal_ hierboven beschreven selectie.
 
 Deze functie moet zijn ingeschakeld in het dialoogvenster _Configuratie CIF URL Provider_. Als deze optie is ingeschakeld, behaalt de selectie een hogere score op de volgende punten:
 
-* ze komen overeen met delen van een bepaalde categorie `url_paths` vanaf het begin (wazig voorvoegsel afstemmen)
+* ze komen overeen met delen van een bepaalde categorie `url_path` vanaf het begin (wazig voorvoegsel afstemmen)
 * of ze komen overeen met een bepaalde categorie `url_key` overal (nauwkeurige gedeeltelijke aanpassing)
 
-Neem bijvoorbeeld de reactie voor een [productquery](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) hieronder. Aangezien de gebruiker op de categoriepagina &quot;New Prodcuts / New in Summer 2022&quot;is en de winkel de standaard pagina URL-indeling van de categoriepagina gebruikt, zou het alternatief &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot;2 van de wegsegmenten van de context van het begin aanpassen: &quot;new-products&quot; en &quot;new-in-zomer-2022&quot;. Als de winkel een URL-indeling voor een categoriepagina gebruikt die alleen de `url_key`, blijft hetzelfde alternatief geselecteerd omdat het overeenkomt met de `url_key` overal. In beide gevallen wordt de URL van de productpagina gemaakt voor &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; `url_path`.
+Neem bijvoorbeeld de reactie voor een [productquery](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) hieronder. Aangezien de gebruiker op de categoriepagina &quot;New Prodcuts / New in Summer 2022&quot;is en de opslag de standaard pagina URL-indeling van de categoriepagina gebruikt, zou het alternatief &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot;2 van de wegsegmenten van de context van het begin aanpassen: &quot;new-products&quot; en &quot;new-in-zomer-2022&quot;. Als de winkel een URL-indeling voor de rubriekpagina gebruikt die alleen de categorie bevat `url_key`, blijft hetzelfde alternatief geselecteerd omdat het overeenkomt met de `url_key` overal. In beide gevallen wordt de URL van de productpagina gemaakt voor &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; `url_path`.
 
 ```
 {
@@ -203,29 +203,29 @@ URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_
 
 ### Kies de beste URL-indeling {#choose-url-format}
 
-Zoals vermeld voordat u een van de beschikbare standaardindelingen selecteert of zelfs een aangepaste indeling implementeert, is dit in hoge mate afhankelijk van de behoeften en vereisten van een winkel. De volgende suggesties kunnen helpen om een goed opgeleid besluit te nemen.
+Zoals vermeld voordat u een van de beschikbare standaardindelingen selecteert of zelfs een aangepaste indeling implementeert, is de toepassing in hoge mate afhankelijk van de behoeften en vereisten van een winkel. De volgende suggesties kunnen helpen om een goed opgeleid besluit te nemen.
 
 _**Gebruik een URL-indeling van de productpagina die de skin bevat.**_
 
-De componenten van de Kern CIF gebruiken de SKU als primaire herkenningsteken in alle componenten. Als de indeling van de URL van de productpagina niet de SKU bevat, is een GraphQL-query nodig om deze op te lossen vanuit de `url_key`, die van invloed kan zijn op de metrische tijd tot de eerste byte. Ook kan het wenselijk zijn dat kopers producten via de huid zoeken in zoekmachines.
+De componenten van de Kern CIF gebruiken de SKU als primaire herkenningsteken in alle componenten. Als de indeling van de URL van de productpagina de sku niet bevat, is een GraphQL-query nodig om deze op te lossen. Dit kan de tijd-aan-eerste-byte beïnvloeden. Ook, kan het gewenst zijn, dat de kopers producten door sku kunnen vinden gebruikend onderzoeksmotoren.
 
 _**Gebruik een URL-indeling van de productpagina die de categoriecontext bevat.**_
 
-Bepaalde functies van de CIF URL-provider zijn alleen beschikbaar wanneer u product-URL-indelingen gebruikt die de categoriecontext coderen, zoals de categorie `url_key` of de categorie `url_path`. Zelfs als deze functies niet vereist zijn voor een nieuwe winkel, kunt u de migratie in de toekomst verminderen door in het begin een van deze URL-indelingen te gebruiken.
+Bepaalde functies van de CIF URL-provider zijn alleen beschikbaar wanneer u product-URL-indelingen gebruikt die de categoriecontext coderen, zoals de categorie `url_key` of de categorie `url_path`. Zelfs als deze functies niet vereist zijn voor een nieuwe winkel, helpt het gebruik van een van deze URL-indelingen in het begin de migratie-inspanningen in de toekomst te verminderen.
 
 _**Balans tussen URL-lengte en gecodeerde informatie.**_
 
-Afhankelijk van de grootte van de catalogus, met name de grootte en diepte van de categoriestructuur, is het wellicht niet verstandig om de volledige `url_path` van categorieën in de URL. In dat geval kan de lengte van de URL worden verminderd door de categorie `url_key` in plaats daarvan. Hierdoor worden bijna alle functies ingeschakeld die beschikbaar zijn wanneer u de categorie gebruikt `url_path`.
+Afhankelijk van de grootte van de catalogus, met name de grootte en diepte van de categoriestructuur, is het wellicht niet verstandig om de volledige `url_path` van categorieën in de URL. In dat geval kan de lengte van de URL worden verminderd door alleen de categorie&#39;s op te nemen `url_key` in plaats daarvan. De meeste functies die beschikbaar zijn bij het gebruik van de categorie worden ondersteund `url_path`.
 
-Gebruik bovendien [Sling Mappings](#sling-mapping) om de sku met het product te combineren `url_key`. In de meeste e-commercesystemen volgt de sku een bepaald formaat en scheidt de sku van `url_key` voor binnenkomende verzoeken moet gemakkelijk mogelijk zijn. Daarom moet het mogelijk zijn de URL van een productpagina te herschrijven naar `/p/{{category}}/{{sku}}-{{url_key}}.html`en een categorie-URL naar `/c/{{url_key}}.html` respectievelijk. De `/p` en `/c` prefix zijn nog steeds nodig om product en categoriepagina&#39;s van andere inhoudspagina&#39;s te onderscheiden.
+Gebruik bovendien [Sling Mappings](#sling-mapping) om de sku met het product te combineren `url_key`. In de meeste e-commercesystemen volgt de sku een bepaalde indeling en wordt de sku van de `url_key` voor binnenkomende verzoeken moet gemakkelijk mogelijk zijn. Daarom moet het mogelijk zijn de URL van een productpagina te herschrijven naar `/p/{{category}}/{{sku}}-{{url_key}}.html`en een categorie-URL naar `/c/{{url_key}}.html` respectievelijk. De `/p` en `/c` prefix zijn nog steeds nodig om product en categoriepagina&#39;s van andere inhoudspagina&#39;s te onderscheiden.
 
-### Eén URL-indeling migreren naar een andere {#migrate-url-formats}
+### Migreren naar een nieuwe URL-indeling {#migrate-url-formats}
 
-Veel van de standaardindelingen voor URL&#39;s zijn op de een of andere manier compatibel met elkaar. Dit betekent dat URL&#39;s die door een van de indelingen worden ingegeven, door een andere kunnen worden geparseerd. Hiermee kunt u gemakkelijker schakelen tussen de URL-indelingen.
+Veel van de standaardindelingen voor URL&#39;s zijn op de een of andere manier compatibel met elkaar. Dit betekent dat URL&#39;s die door een van de indelingen worden ingegeven, door een andere kunnen worden geparseerd. Hierdoor kunt u gemakkelijker migreren tussen URL-indelingen.
 
 Aan de andere kant hebben zoekprogramma&#39;s enige tijd nodig om alle cataloguspagina&#39;s met de nieuwe URL-indeling opnieuw te doorzoeken. Ter ondersteuning van dit proces en ook om de gebruikerservaring te verbeteren, wordt aanbevolen omleidingen te bieden die de gebruiker van de oude naar de nieuwe URL&#39;s sturen.
 
-Eén manier om dat te bereiken, is een werkgebiedomgeving verbinden met de back-end van de e-commerce productie en deze zodanig configureren dat de nieuwe URL-indeling wordt gebruikt. Verkrijg daarna de [sitemap-product, gegenereerd door de sitemapgenerator van CIF-producten](../../overview/seo-and-url-management.md) voor zowel het stadium als de productieomgeving, en deze gebruiken om een [Apache httpd-kaart herschrijven](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Deze herschrijfkaart kan dan aan de verzender samen met de uitrol van het nieuwe formaat worden opgesteld URL.
+Eén manier om dat mogelijk te doen, is een werkgebiedomgeving verbinden met de back-end van de e-commerce productie en deze zodanig configureren dat de nieuwe URL-indeling wordt gebruikt. Verkrijg daarna de [sitemap-product, gegenereerd door de sitemapgenerator van CIF-producten](../../overview/seo-and-url-management.md) voor zowel het stadium als de productieomgeving, en deze gebruiken om een [Apache httpd-kaart herschrijven](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Deze herschrijfkaart kan dan aan de verzender samen met de uitrol van het nieuwe formaat worden opgesteld URL.
 
 ## Voorbeeld {#example}
 
