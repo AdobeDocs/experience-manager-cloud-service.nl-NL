@@ -8,9 +8,9 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 1932476a2ca8f46c1f73214c15982d7baa6c56ff
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ hidefromtoc: yes -->
 
 >[!NOTE]
 >
->De functie voor het maken van een alias-account voor een Dynamic Media-bedrijf bevindt zich in het Prerelease-kanaal voor januari 2022. De functie is in het algemeen beschikbaar in de release van februari 2022.
+>Deze functie voor het maken van een Dynamic Media-account voor bedrijven bevindt zich in Prerelease Channel voor januari 2022. Zie [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen. De functie is in het algemeen beschikbaar in de release van februari 2022.
 
 Dynamic Media-URL&#39;s en insluitcode voor viewers bevatten uw bedrijfsnaam. Deze accountnaam is gemaakt op het moment dat Dynamic Media de provisioning uitvoert. Er kunnen scenario&#39;s zijn waar uw zaken een verwerving, of een herbranding hebben ondergaan, of u eenvoudig een meer memorabele naam wilt gebruiken. In dergelijke gevallen is het niet eenvoudig om de naam van uw bedrijfsaccount handmatig bij te werken in alle URL&#39;s en de insluitcode van de viewer die uit het vak komt. Bovendien is het mogelijk dat u invloed hebt op uw bestaande Dynamic Media-opslagplaats of op live-inhoud. Om dit probleem op te lossen, kunt u een Dynamic Media-account voor bedrijfsaliassen configureren.
 
