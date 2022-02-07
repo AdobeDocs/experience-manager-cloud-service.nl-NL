@@ -8,9 +8,9 @@ content-type: reference
 feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 347da5edf4c8ad2ae72284f4e1a4003493596194
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2189'
 ht-degree: 2%
 
 ---
@@ -42,9 +42,7 @@ Zie ook [3D-indelingen ondersteund in Experience Manager Assets](/help/assets/fi
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
 | USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Alleen ondersteuning voor inname; er is geen weergave of interactie beschikbaar.* USDZ is een eigen 3D-indeling die door Safari of iOS kan worden weergegeven. |
 
-<!-- >[!NOTE]
->
->The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). UNHIDE 2/3/22 CQDOC-18921-->
+De 3D Media WCM-component en de 3D-voorvertoning op de pagina Details van een element zijn niet compatibel met de nieuwste versie van Chrome (97.x). Als u met 3D-elementen wilt werken, gebruikt u Firefox of Safari of een eerdere versie van Chrome (96.x).
 
 ## Snel starten: 3D-middelen in Dynamic Media {#quick-start-three-d}
 
