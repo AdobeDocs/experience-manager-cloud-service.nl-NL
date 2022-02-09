@@ -1,9 +1,9 @@
 ---
 title: Inhoudsoverdrachten valideren
 description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten te valideren
-source-git-commit: 9705af35d4a6064c0b4ad35086d98f4b43158dec
+source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inh
 
 >[!INFO]
 >
->Deze functie is beschikbaar vanaf versie 1.8.x van het Content Transfer Tool (CTT). De AEM Cloud Service-doelomgeving moet ten minste versie 6158 of hoger zijn.
+>Deze functie is beschikbaar vanaf versie 1.8.x van het Content Transfer Tool (CTT). De AEM Cloud Service-doelomgeving moet ten minste versie 6158 of hoger zijn. Het vereist ook het bronmilieu om opstelling te zijn om in werking te stellen [voorkopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). De bevestigingseigenschap zoekt het azcopy.config- dossier op de bron. Als dit bestand niet wordt gevonden, wordt de validatie niet uitgevoerd. Meer over leren hoe te om een dossier te vormen azcopy.config, zie [deze pagina](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze functie inschakelt, duurt het langer om zowel een extractie als een opname uit te voeren. Om de eigenschap te gebruiken, laat het in de Console van het Systeem van het bron AEM milieu door deze stappen toe te volgen:
 
