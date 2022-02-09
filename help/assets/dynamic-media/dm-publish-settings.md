@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
 workflow-type: tm+mt
-source-wordcount: '3205'
+source-wordcount: '3213'
 ht-degree: 0%
 
 ---
@@ -66,6 +66,9 @@ De pagina van de Server van het Beeld vestigt standaardmontages voor het leveren
 ### Het tabblad Beveiliging {#security-tab}
 
 **[!UICONTROL Client address]** - Laat u één of meerdere IP adressen of IP adreswaaiers specificeren. Wanneer gespecificeerd, worden de verzoeken aan deze beeldcatalogus die van een cliënt bij een niet vermeld IP adres voortkomen verworpen. Deze regel geldt zowel voor de levering van afbeeldingen als voor gerenderde afbeeldingen.
+
+![Het tabblad Beveiliging ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Het tabblad Beveiliging dat het veld IP &quot;allow&quot; weergeeft.*
+
 
 ### Tabblad Catalogusbeheer {#catalog-management-tab}
 
