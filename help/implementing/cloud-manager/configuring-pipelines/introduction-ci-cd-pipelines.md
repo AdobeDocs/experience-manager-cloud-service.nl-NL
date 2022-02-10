@@ -2,9 +2,9 @@
 title: CI/CD-pijpleidingen
 description: Leer meer over de CI/CD-pijpleidingen van Cloud Manager en hoe deze kunnen worden gebruikt om uw code efficiënt te implementeren.
 index: true
-source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1364'
 ht-degree: 0%
 
 ---
@@ -147,16 +147,18 @@ Raadpleeg de volgende documenten voor meer informatie over het configureren van 
 
 De configuratiepijpleidingen van de rij van het Web laten exclusieve plaatsing van configuratie HTTPD/Dispatcher aan AEM runtime toe door het van andere codeveranderingen te ontkoppelen. Het is een gestroomlijnde pijpleiding die gebruikers verstrekt die wensen om de configuratieveranderingen van de verzender slechts op te stellen, een versnelde manier om dit in slechts een paar minuten te doen.
 
->[!IMPORTANT]
+>[!TIP]
 >
->U moet AEM versie hebben `X` of hoger om web-tier config pijpleidingen te gebruiken.
+>Met de configuratiepijpleidingen van de Webrij, kunt u tussen het opslaan van uw Webconfig in de zelfde bronplaats kiezen zoals voor de volledige stapelpijpleiding of in een verschillende plaats, afhankelijk van welke structuur beter uw project aanpast.
 
 De volgende beperkingen zijn van toepassing.
 
+* U moet AEM versie hebben `2021.12.6151.20211217T120950Z` of nieuwer zijn om gebruik te maken van webtier config-pijpleidingen.
+* U moet [deelnemen aan de flexibele modus van de verzendingsprogramma&#39;s](/help/implementing/dispatcher/disp-overview.md#validation-debug) om web-tier config pijpleidingen te gebruiken.
 * Een gebruiker moet met het programma worden geregistreerd **Implementatiebeheer** rol voor het configureren of uitvoeren van pijpleidingen.
 * Op elk ogenblik, kan er slechts één pijpleiding van de Webrij config per milieu zijn.
 * De gebruiker kan geen configuratiepijplijn van de Webrij vormen wanneer zijn overeenkomstige volledig-stapelpijpleiding loopt.
-* De structuur van de weblaag moet voldoen aan de structuur van de flexibele modus, zoals gedefinieerd in het document [Dispatcher in de cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* De structuur van de weblaag moet voldoen aan de structuur van de flexibele modus, zoals gedefinieerd in het document [Dispatcher in de cloud.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
 Houd er bovendien rekening mee dat de [volledige stapelpijplijn](#full-stack-pipeline) zal zich gedragen wanneer een pijpleiding van het Webniveau wordt ingevoerd.
 

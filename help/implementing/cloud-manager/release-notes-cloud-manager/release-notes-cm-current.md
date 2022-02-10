@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2022.02.0
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2022.02.0.
 feature: Release Information
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,8 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2022.02.0 is 10 feb
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Nieuw versneld [Webservicepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) zijn geïntroduceerd om HTTPD/verzender-configuratie uitsluitend te implementeren
-   * U moet AEM versie hebben `2021.12.6151.20211217T120950Z` om deze functie te gebruiken.
+* Nieuw versneld [Webservicepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) zijn geïntroduceerd om HTTPD/verzender-configuratie uitsluitend te implementeren.
+   * U moet AEM versie hebben `2021.12.6151.20211217T120950Z` of nieuwer en [deelnemen aan de flexibele modus van de verzendingsprogramma&#39;s](/help/implementing/dispatcher/disp-overview.md#validation-debug) om deze functie te gebruiken.
    * Dit onderdeel wordt geleidelijk ingevoerd gedurende de twee weken na de release van 2022.02.0.
 * De landingservaring van Cloud Manager is vernieuwd voor verbeterde navigatie, eenvoudig schakelen tussen raster-/tegelweergaven en pop-ups voor snel overzicht van het programma.
 * Een nieuwe drempelwaarde voor onvoldoende prestaties (`< D`) is toegevoegd aan de [betrouwbaarheidsmaatstaf.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
