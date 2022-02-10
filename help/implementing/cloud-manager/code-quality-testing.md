@@ -15,7 +15,10 @@ Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de k
 
 >[!CONTEXTUALHELP]
 >
->
+>id="aemcloud_nonbpa_codequalitytests"
+>title="Code Quality Testing"
+>abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+
 ## Inleiding {#introduction}
 
 Bij het testen van de codekwaliteit wordt uw toepassingscode geëvalueerd op basis van een set kwaliteitsregels. Het is het primaire doel van een code-kwaliteit slechts pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle productie en niet-productiepijpleidingen.
