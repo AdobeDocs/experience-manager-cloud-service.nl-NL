@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Deze omgevingsvariabele wordt op twee plaatsen gebruikt:
 
 Een verschillend eindpuntURL GraphQL kan voor elke AEM as a Cloud Service milieu worden gebruikt. Zo kunnen projecten AEM het opvoeren milieu&#39;s met handel het opvoeren systemen en AEM productiemilieu met een handelsproductiesysteem verbinden. Dat eindpunt GraphQL openbaar moet zijn, privé VPN of lokale verbindingen worden niet gesteund. Naar keuze, kan een authentificatiekopbal worden verstrekt om extra eigenschappen te gebruiken CIF die authentificatie vereisen.
 
-De CIF-invoegtoepassing is optioneel en alleen voor Adobe Commerce Enterprise / Cloud en ondersteunt het gebruik van gefaseerde catalogusgegevens voor AEM auteurs. Dit vereist om een toestemmingstoken te vormen. Het gevormde toestemmingstoken is slechts beschikbaar en gebruikt op AEM auteursinstanties om veiligheidsredenen. AEM publicatie-instanties kunnen geen gefaseerde gegevens weergeven.
+De CIF-invoegtoepassing (optioneel en alleen voor Adobe Commerce Enterprise/Cloud) ondersteunt het gebruik van gefaseerde catalogusgegevens voor AEM auteurs. Dit vereist om een vergunningskopbal te vormen. Deze koptekst is alleen beschikbaar en wordt uit veiligheidsoverwegingen gebruikt bij AEM auteur-instanties. AEM publicatie-instanties kunnen geen gefaseerde gegevens weergeven.
 
 Er zijn twee opties om het eindpunt te vormen:
 
@@ -59,7 +59,7 @@ Als u op deze knop klikt, wordt een dialoogvenster geopend:
 
 ![Eindpunt van CM-handel](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Nadat het eindpunt (naar keuze een authentificatietoken voor gefaseerde catalogussteun) wordt geplaatst, zal het eindpunt op de detailpagina worden getoond. Als u op het pictogram Bewerken klikt, wordt hetzelfde dialoogvenster geopend waarin het eindpunt indien nodig kan worden gewijzigd.
+Nadat het eindpunt en naar keuze een vergunningskopbal voor gefaseerde catalogussteun wordt geplaatst, zal het eindpunt op de detailpagina worden getoond. Als u op het pictogram Bewerken klikt, wordt hetzelfde dialoogvenster geopend waarin het eindpunt indien nodig kan worden gewijzigd.
 
 ![CM-omgevingsinformatie](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
