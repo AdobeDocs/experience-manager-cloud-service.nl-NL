@@ -1,79 +1,172 @@
 ---
-title: Een niet-productiepijpleiding configureren
-description: Volg deze pagina om over het Vormen van een niet-Productiepijpleiding in de Manager van de Wolk te leren
+title: Niet-productiepijpleidingen configureren
+description: Leer hoe te om niet-productiepijpleidingen te vormen om de kwaliteit van uw code te testen alvorens aan productiemilieu's op te stellen.
 index: true
-source-git-commit: 2ac65af4cf410491d1196b9e20f67647e0a1b4d1
+source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
 
 
-# Een niet-productiepijpleiding configureren {#configure-non-production-pipeline}
+# Niet-productiepijpleidingen configureren {#configuring-non-production-pipelines}
 
-Naast de hoofdpijpleiding die zich naar het stadium en de productie ontwikkelt, kunnen klanten extra pijpleidingen opzetten, die niet-productiepijpleidingen worden genoemd.
+Leer hoe te om niet-productiepijpleidingen te vormen om de kwaliteit van uw code te testen alvorens aan productiemilieu&#39;s op te stellen.
+
+## Niet-productiepijpleidingen {#non-production-pipelines}
+
+Naast [productiepijpleidingen](#configuring-production-pipelines.md) die zich aan stagings en productiemilieu&#39;s opstelt, kunt u ook niet-productiepijpleidingen opzetten om uw code te bevestigen.
 
 Er zijn twee soorten niet-productiepijpleidingen:
 
-1. Codekwaliteit: Hiermee wordt de codekwaliteit gescand op de code in de git-vertakking. Deze pijpleiding voert de bouw en de stappen van de codekwaliteit uit.
-1. Implementatie: Naast het uitvoeren van de bouw en de stappen van de codekwaliteit, stelt deze pijpleiding de code aan geselecteerde niet-productie aan AEM as a Cloud Service milieu op.
+* **Codekwaliteitspijplijnen** - Deze looppas codekwaliteit scant op de code in een git tak en voert de bouw en de stappen van de codekwaliteit uit.
+* **Implementatiepijpleidingen** - Naast het uitvoeren van de bouw en de stappen van de codekwaliteit zoals de pijpleidingen van de codekwaliteit, stellen deze pijpleidingen de code in een non-production milieu op.
+
+>[!NOTE]
+>
+>U kunt [pijpleidingsinstellingen bewerken](managing-pipelines.md) na de eerste installatie.
 
 ## Een nieuwe niet-productiepijplijn toevoegen {#adding-non-production-pipeline}
 
-Op het thuisscherm worden deze pijpleidingen op een nieuwe kaart vermeld:
+Nadat u uw programma hebt ingesteld en minstens één omgeving hebt gebruikt met de interface van Cloud Manager, kunt u een niet-productiepijplijn toevoegen door deze stappen uit te voeren.
+
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
 1. Toegang krijgen tot **Pijpleidingen** kaart van het startscherm van Cloud Manager. Klikken op **+Toevoegen** en selecteert u **Niet-productiepijpleiding toevoegen**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
+   ![Niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. **Niet-productiepijpleiding toevoegen**  wordt weergegeven. Selecteer het type pijpleiding u wilt creëren, of **Codekwaliteit, pijplijn** of **Implementatiepijp**.
+1. Op de **Configuratie** tabblad van het dialoogvenster **Niet-productiepijpleiding toevoegen** selecteert u het type niet-productiepijplijn dat u wilt toevoegen, of **Codekwaliteit, pijplijn** of **Implementatiepijp**.
 
-   >[!NOTE]
-   >Voor de pijpleidingen van de Plaatsing, moet u het plaatsingsmilieu selecteren.
+   ![Dialoogvenster Niet-productiepijplijn toevoegen](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
-   Bovendien kunt u ook instellen **Implementatieactivering** en **Belangrijk gedrag metrische fouten** van **Implementatieopties**. Klikken op **Doorgaan**.
+1. Een **Naam niet-productiepijpleiding** om uw pijpleiding samen met de volgende extra informatie te identificeren.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
+   * **Implementatieactivering** - U hebt de volgende opties wanneer het bepalen van de plaatsingstrekkers om de pijpleiding te beginnen.
 
-   U kunt de volgende plaatsingstrekkers bepalen om de pijpleiding te beginnen.
+      * **Handmatig** - Gebruik deze optie om de pijpleiding manueel te beginnen.
+      * **Wijzigingen in Git** - Deze opties beginnen de pijpleiding CI/CD wanneer de bemoeienis aan de gevormde git tak wordt toegevoegd. Met deze optie, kunt u de pijpleiding nog manueel zoals vereist beginnen.
+   * **Belangrijk gedrag metrische fouten** - Tijdens het instellen of bewerken van pijpleidingen **Implementatiebeheer** heeft de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitspoorten wordt ontmoet. U hebt de volgende opties.
 
-   * **Handmatig** - het gebruiken van UI begint manueel de pijpleiding.
-   * **Wijzigingen in Git** - start de CI/CD-pijplijn wanneer er verplichtingen aan de gevormde it-tak worden toegevoegd. Zelfs als u deze optie selecteert, kunt u de pijpleiding altijd manueel beginnen.
-
-      Tijdens pijpleidingsopstelling of geef uit, heeft de Manager van de Plaatsing de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitshates wordt ontmoet.
-
-      Dit is handig voor klanten die meer geautomatiseerde processen willen. De beschikbare opties zijn:
-   U kunt het belangrijke gedrag van mislukkingsmetriek bepalen om de pijpleiding te beginnen.
-
-   * **Telkens vragen** - Dit is de standaardinstelling en u moet handmatig ingrijpen bij elke belangrijke fout.
-   * **Direct mislukken** - Indien geselecteerd, zal de pijpleiding worden geannuleerd wanneer een Belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
-   * **Direct doorgaan** - Indien geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een Belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
+      * **Telkens vragen** - Dit is de standaardinstelling en u moet handmatig ingrijpen bij belangrijke fouten.
+      * **Direct mislukken** - Indien geselecteerd, zal de pijpleiding worden geannuleerd wanneer een belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
+      * **Direct doorgaan** - Indien geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 
-1. Selecteren **[Volledige stapelcode](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** of **[Code frontend](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**.
+1. Klikken **Doorgaan**.
 
-   Als u **Code frontend**, moet u de optie **Bewaarplaats**, **Git Branch** en **Codelocatie**, zoals weergegeven in onderstaande afbeelding:
+1. Op de **Broncode** tabblad van het dialoogvenster **Niet-productiepijpleiding toevoegen** moet u selecteren welk type code de pijplijn moet verwerken.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-confignew1.png)
+   * **[Code frontend](#front-end-code)**
+   * **[Volledige stapelcode](#full-stack-code)**
+   * **[Config. web](#web-tier-config)**
 
-   Als u **Volledige stapelcode**, moet u de optie **Bewaarplaats** en **Git Branch**, zoals weergegeven in de figuur:
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-fullstack1.png)
+De stappen om de verwezenlijking van uw niet productiepijplijn te voltooien variëren afhankelijk van de optie voor **Broncode** geselecteerd. Volg de verbindingen hierboven om aan de volgende sectie van dit document te springen om de configuratie van uw pijpleiding te voltooien.
 
-   >[!IMPORTANT]
-   >Als er al een pijplijn met volledige stapelcode bestaat voor de geselecteerde omgeving, wordt deze selectie uitgeschakeld.
+### Code frontend {#front-end-code}
 
-   >[!NOTE]
-   >Voordat u begint met het configureren van de voorste-eindpijplijnen, raadpleegt u [Reis voor snel maken van site AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) voor een end-to-end workflow met het gebruiksvriendelijke AEM gereedschap Snel site maken. Met deze documentatiesite kunt u de front-end ontwikkeling van uw AEM Site stroomlijnen en uw site snel aanpassen zonder AEM kennis van de back-end.
+Een front-end codepijpleiding stelt front-end code op bouwt die één of meerdere cliënt-kant toepassingen UI bevatten. Zie het document [CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) voor meer informatie over dit type pijpleiding .
 
-1. De nieuwe niet-productiepijplijn wordt nu weergegeven in de **Pijpleidingen** kaart.
+Om de configuratie van de front-end code non-production pijpleiding te beëindigen, volg deze stappen.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-fullstack2.png)
+1. Op de **Broncode** moet u de volgende opties definiëren.
 
+   * **In aanmerking komende implementatieomgevingen** - Als uw pijpleiding een plaatsingspijpleiding is, moet u selecteren aan welke milieu&#39;s het zou moeten opstellen.
+   * **Bewaarplaats** - Deze optie bepaalt waarvan git repo de pijpleiding de code zou moeten terugwinnen.
 
-   De pijpleiding wordt getoond op de kaart op het huisscherm met vier acties, zoals hieronder getoond:
+   >[!TIP]
+   > 
+   >Zie het document [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
 
-   * **Toevoegen** - staat toe dat een nieuwe pijpleiding wordt toegevoegd.
-   * **Alles tonen** - de gebruiker in staat stelt alle pijpleidingen te bekijken.
-   * **Repo-info openen** - stelt de gebruiker in staat de informatie op te halen die nodig is om toegang te krijgen tot de gegevensopslagruimte van Cloud Manager Git.
-   * **Meer informatie** - navigeert naar inzicht in de bron van de Documentatie van de CI/CD-pijpleiding.
+   * **Git Branch** - Deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
+   * **Codelocatie** - Deze optie bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
+
+   ![Pijpleiding aan de voorzijde](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
+
+1. Klikken **Opslaan**.
+
+De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managing-pipelines.md) op de **Pijpleidingen** kaart op **Programmaoverzicht** pagina.
+
+### Volledige stapelcode {#full-stack-code}
+
+Een full-stack codepijpleiding stelt gelijktijdig achterste en front-end codebouwstijlen op die één of meerdere AEM servertoepassingen samen met configuratie HTTPD/Dispatcher bevatten. Zie het document [CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) voor meer informatie over dit type pijpleiding .
+
+>[!NOTE]
+>
+>Als er al een &#39;full-stack&#39;-codepijplijn voor de geselecteerde omgeving bestaat, wordt deze selectie uitgeschakeld.
+
+Om de configuratie van de full-stack code non-production pijpleiding te beëindigen, volg deze stappen.
+
+1. Op de **Broncode** moet u de volgende opties definiëren.
+
+   * **In aanmerking komende implementatieomgevingen** - Als uw pijpleiding een plaatsingspijpleiding is, moet u selecteren aan welke milieu&#39;s het zou moeten opstellen.
+   * **Bewaarplaats** - Deze opties bepalen waarvan de git repo de pijpleiding de code zou moeten terugwinnen.
+
+   >[!TIP]
+   > 
+   >Zie het document [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
+
+   * **Git Branch** - Deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
+   * **Configuratie van web-Tier negeren** -
+
+   ![Volledige pijplijn](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
+
+1. Klikken **Opslaan**.
+
+De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managing-pipelines.md) op de **Pijpleidingen** kaart op **Programmaoverzicht** pagina.
+
+### Config. web {#web-tier-config}
+
+Een configuratiepijplijn van de Webrij stelt configuraties HTTPD/Dispatcher op. Zie het document [CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) voor meer informatie over dit type pijpleiding .
+
+>[!NOTE]
+>
+>Als er voor de geselecteerde omgeving al een pijpleiding voor code in de weblaag bestaat, wordt deze selectie uitgeschakeld.
+
+Om de configuratie van de full-stack code non-production pijpleiding te beëindigen, volg deze stappen.
+
+1. Op de **Broncode** moet u de volgende opties definiëren.
+
+   * **In aanmerking komende implementatieomgevingen** - Als uw pijpleiding een plaatsingspijpleiding is, moet u selecteren aan welke milieu&#39;s het zou moeten opstellen.
+   * **Bewaarplaats** - Deze optie bepaalt waarvan git repo de pijpleiding de code zou moeten terugwinnen.
+
+   >[!TIP]
+   > 
+   >Zie het document [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
+
+   * **Git Branch** - Deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
+   * **Codelocatie** - Deze optie bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
+      * Voor configuratieleidingen voor het web is dit meestal het pad dat `conf.d`, `conf.dispatcher.d`, en `opt-in` directory&#39;s.
+      * Als de projectstructuur bijvoorbeeld is gegenereerd op basis van de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) het pad zou `/dispatcher/src`.
+
+   ![Gasleiding op de weblijst](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
+
+1. Klikken **Opslaan**.
+
+>[!NOTE]
+>
+>Als u een bestaande full-stack pijpleiding die aan een milieu opstelt hebt, die tot een Web rij config pijpleiding voor het zelfde milieu leidt zal de bestaande configuratie van de Webrij in de full-stack pijpleiding worden genegeerd.
+
+De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managing-pipelines.md) op de **Pijpleidingen** kaart op **Programmaoverzicht** pagina.
+
+## Verzendpakketten overslaan {#skip-dispatcher-packages}
+
+Als u de pakketten wilt die van de dispatcher als deel van uw pijpleiding worden gebouwd, maar hen niet willen worden gepubliceerd om opslag te bouwen, kunt u het publiceren van hen onbruikbaar maken, die pijpleidingsloopduur kunnen verminderen.
+
+De volgende configuratie om het publiceren van de pakketten van dispatcher onbruikbaar te maken moet via uw project worden toegevoegd `pom.xml` bestand. De variabele is gebaseerd op een omgevingsvariabele die fungeert als een vlag die u in de builcontainer van Cloud Manager kunt instellen om te bepalen wanneer verzenderpakketten moeten worden genegeerd.
+
+```xml
+<profile>
+  <id>only-include-dispatcher-when-it-isnt-ignored</id>
+  <activation>
+    <property>
+      <name>env.IGNORE_DISPATCHER_PACKAGES</name>
+      <value>!true</value>
+    </property>
+  </activation>
+  <modules>
+    <module>dispatcher</module>
+  </modules>
+</profile>
+```

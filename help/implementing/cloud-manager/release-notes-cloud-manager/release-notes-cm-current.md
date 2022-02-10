@@ -1,18 +1,18 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2022.01.0
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2022.01.0.
+title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2022.02.0
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2022.02.0.
 feature: Release Information
-source-git-commit: 8da3976250c94d5858d07a83b0eb395fab9a3eda
+source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2022.01.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2022.02.0 {#release-notes}
 
-Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2022.01.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2022.02.0.
 
 >[!NOTE]
 >
@@ -20,18 +20,20 @@ Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Man
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 januari 2022. De volgende release is gepland voor 10 februari 2022.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2022.02.0 is 10 februari 2022. De volgende release is gepland voor 10 maart 2022.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Cloud Manager wordt [vermijd het herbouwen van de codebasis wanneer het ontdekt dat het zelfde git begaan wordt gebruikt](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in veelvoudige full-stack pijpleidingexecuties.
-* Voor toegang tot het AEM-omgevingslogboek is nu de **Implementatiebeheer** productprofiel. Gebruikers zonder dit profiel zien een uitgeschakelde knop in de gebruikersinterface.
-* UI zal niet front-end pijpleidingsconfiguratie voor een programma toestaan waar de Plaatsen niet als oplossing wordt toegelaten.
-* Na het genereren van een wachtwoord voor het afsluiten wordt de vervaldatum weergegeven.
+* Nieuw versneld [Webservicepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) zijn geïntroduceerd om HTTPD/verzender-configuratie uitsluitend te implementeren
+   * U moet AEM versie hebben `2021.12.6151.20211217T120950Z` om deze functie te gebruiken.
+   * Dit onderdeel wordt geleidelijk ingevoerd gedurende de twee weken na de release van 2022.02.0.
+* De landingservaring van Cloud Manager is vernieuwd voor verbeterde navigatie, eenvoudig schakelen tussen raster-/tegelweergaven en pop-ups voor snel overzicht van het programma.
+* Een nieuwe drempelwaarde voor onvoldoende prestaties (`< D`) is toegevoegd aan de [betrouwbaarheidsmaatstaf.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
+   * Klanten met ernstige kwaliteitsproblemen die van invloed zijn op de stabiliteit van het systeem, voornamelijk in verband met ongeldige indexen en workflowprocessen, kunnen pas implementeren als deze problemen zijn opgelost.
+* De ernst van de `BannedPath` [kwaliteitsregel](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) is veranderd van blokker in kritiek.
+* De pijplijntovenaar zal de gebruiker informeren wanneer een AEM omgevingsupdate alvorens een [Webservicepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) ermee geassocieerd.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* Null wijzeruitzonderingen die door sommige front-end pijpleidingsplaatsingen worden ontmoet zijn verbeterd.
-* Omgevingsvariabelen kunnen nu worden toegevoegd, bijgewerkt en verwijderd wanneer een omgeving een verouderde versie van AEM uitvoert.
-* De stap van het bouwstijlbeeld zal niet meer als FOUT voor pijpleidingen worden gemerkt die de geplande stap in bepaalde zeldzame gevallen gebruikten.
-* Voor programma&#39;s met slechts één opslagplaats, zal het pijpleidingsuitvoeringsscherm nu de bewaarplaatsnaam tonen.
+* De oude wachtwoorden van de git-opslagplaats worden nu altijd ongeldig gemaakt wanneer een nieuw wachtwoord wordt gegenereerd.
+* Het bijwerken van omgevingsvariabelen via de API heeft in zeldzame situaties geen invloed meer op de uitvoering van een pijpleiding.

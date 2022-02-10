@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c135f7c0c5265110774d145bf8c5a73d44d660b1
+source-git-commit: ad49f5896680f191cd667b2e17ee8e81b7c424a5
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3494'
 ht-degree: 24%
 
 ---
@@ -552,6 +552,8 @@ ht-degree: 24%
    + Cloud Manager gebruiken {#using-cloud-manager}
       + Opmerkingen bij de release van Cloud Manager {#release-notes-cloud-manager}
          + [Opmerkingen bij de huidige release](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+         + 2022 {#2022}
+            + [Opmerkingen bij de release 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021 {#2021}
             + [Opmerkingen bij de release 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [Opmerkingen bij de release 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -602,12 +604,9 @@ ht-degree: 24%
       + [Omgevingsvariabelen](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
          + [Inleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-         + Productiepijpleidingen {#production-pipelines}
-            + [Een productiepijpleiding configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-            + [Een productiepijpleiding bewerken](/help/implementing/cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-         + Niet-productiepijpleidingen {#non-production-pipelines}
-            + [Een niet-productiepijplijn configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-            + [Een niet-productiepijplijn bewerken](/help/implementing/cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
+         + [Een productiepijpleiding configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Een niet-productiepijplijn configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [Pijpleidingen beheren](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [Uw code implementeren](/help/implementing/cloud-manager/deploy-code.md)
       + Inzicht in de testresultaten {#test-results}
          + [Overzicht](/help/implementing/cloud-manager/overview-test-results.md)

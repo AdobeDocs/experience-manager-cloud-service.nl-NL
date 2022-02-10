@@ -1,80 +1,79 @@
 ---
-title: Codekwaliteitstests - Cloud Services
-description: Codekwaliteitstests - Cloud Services
+title: Testen van de codekwaliteit
+description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: ca3c1f255b8441a8d376a55a5353d58848384b8b
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
 
 # Testen van de codekwaliteit {#code-quality-testing}
 
+Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
+
 >[!CONTEXTUALHELP]
->id="aemcloud_nonbpa_codequalitytests"
->title="Testen van de codekwaliteit"
->abstract="Het testen van de Kwaliteit van de Code evalueert de kwaliteit van uw toepassingscode. Het is de kerndoelstelling van een code-Kwaliteit enige pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle niet-productie en productiepijpleidingen."
+>
+>
+## Inleiding {#introduction}
 
-Het testen van de Kwaliteit van de Code evalueert de kwaliteit van uw toepassingscode. Het is de kerndoelstelling van een code-Kwaliteit enige pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle niet-productie en productiepijpleidingen.
+Bij het testen van de codekwaliteit wordt uw toepassingscode geëvalueerd op basis van een set kwaliteitsregels. Het is het primaire doel van een code-kwaliteit slechts pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle productie en niet-productiepijpleidingen.
 
-Zie [Het vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie over verschillende soorten pijpleidingen.
+Het document raadplegen [Het vormen van Uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie over verschillende soorten pijpleidingen.
 
 ## Codekwaliteitsregels {#understanding-code-quality-rules}
 
-Bij het testen van de kwaliteit van de code, wordt de broncode gescand om ervoor te zorgen dat het aan bepaalde kwaliteitscriteria voldoet. Momenteel wordt dit geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met gebruik van OakPAL. Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Sommige AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld zoals [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan bepaalde kwaliteitscriteria voldoet. Dit wordt geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met OakPAL. Er zijn meer dan 100 regels, die generieke regels van Java en AEM-specifieke regels combineren. Sommige AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld zoals [aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
->U kunt de volledige lijst met regels downloaden [hier](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+U kunt de volledige lijst met regels downloaden [met deze koppeling.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
-**Drielagige plaat**
+### Waarderingen met drie lagen {#three-tiered-gate}
 
-Deze stap voor het testen van de codekwaliteit bevat een structuur met drie niveaus voor de geïdentificeerde problemen:
+Kwesties die door code kwaliteitstests worden geïdentificeerd worden toegewezen aan één van drie categorieën.
 
-* **Kritiek**: Dit zijn kwesties die door de poort worden geïdentificeerd en die een directe mislukking van de pijpleiding veroorzaken.
+* **Kritiek** - Dit zijn kwesties die een onmiddellijk mislukken van de pijpleiding veroorzaken.
 
-* **Belangrijk**: Dit zijn kwesties die door de poort worden geïdentificeerd die de pijpleiding veroorzaken om een gepauzeerde staat in te gaan. Een plaatsingsmanager, projectmanager, of bedrijfseigenaar kunnen of de kwesties met voeten treden, waarin de pijpleiding te werk gaat, of zij kunnen de kwesties goedkeuren, in welk geval de pijpleiding met een mislukking stopt.
+* **Belangrijk** - Dit zijn kwesties die de pijpleiding veroorzaken om een gepauzeerde staat in te gaan. Een plaatsingsmanager, projectmanager, of bedrijfseigenaar kunnen of de kwesties met voeten treden, waarin de pijpleiding te werk gaat, of zij kunnen de kwesties goedkeuren, in welk geval de pijpleiding met een mislukking stopt.
 
-* **Info**: Dit zijn kwesties die door de poort worden geïdentificeerd en die uitsluitend ter informatie worden verstrekt en geen invloed hebben op de uitvoering van de pijpleiding
+* **Info** - Dit zijn kwesties die louter ter informatie worden verstrekt en geen invloed hebben op de uitvoering van de pijpleiding
 
-De resultaten van deze stap worden geleverd als *Waarderingen*.
+De resultaten van deze stap worden geleverd als **Waarderingen**.
 
-De volgende tabel geeft een overzicht van de classificaties en foutdrempels voor elk van de categorieën Kritiek, Belangrijk en Informatie:
+De volgende tabel geeft een overzicht van de classificaties en foutdrempels voor elk van de kritieke, belangrijke en informatiecategorieën.
 
 | Naam | Definitie | Categorie | Drempel voor fout |
 |--- |--- |--- |--- |
-| Beveiligingsbeoordeling | A = 0 Kwetsbaarheid <br/>B = ten minste 1 kleine kwetsbaarheid<br/> C = ten minste 1 grote kwetsbaarheid <br/>D = minimaal 1 kritieke kwetsbaarheid <br/>E = ten minste 1 kwetsbaarheid van de blokker | Kritiek | &lt; B |
-| Betrouwbaarheidsbeoordeling | A = 0 Bug <br/>B = minimaal 1 kleine bug <br/>C = ten minste 1 groot probleem <br/>D = minimaal 1 kritieke fout E = minimaal 1 blokkeringsfout | Belangrijk | &lt; C |
-| Onderhoudsverklaring | Uitstaande herstelkosten voor codegeuren zijn: <br/><ul><li>&lt;=5% van de tijd die al in de toepassing is ingegaan, is de rating A </li><li>tussen 6 en 10% is de rating een B </li><li>tussen 11 en 20% is de rating een C </li><li>tussen 21 en 50% is de rating een D</li><li>iets meer dan 50% is een E</li></ul> | Belangrijk | &lt; A |
-| Dekking | Een combinatie van de dekking van de meetlijn en de toestand volgens deze formule: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>waarbij: CT = voorwaarden die ten minste één keer zijn geëvalueerd op &#39;true&#39; tijdens het uitvoeren van eenheidstests <br/>CF = voorwaarden die ten minste één keer zijn geëvalueerd op &#39;false&#39; tijdens het uitvoeren van eenheidstests <br/>LC = gedekte lijnen = lines_to_cover - uncoveren <br/><br/> B = totaal aantal voorwaarden <br/>EL = totaal aantal uitvoerbare lijnen (lijnen_naar_omslag) | Belangrijk | &lt; 50% |
-| Overgeslagen eenheidstests | Aantal overgeslagen eenheidstests. | Info | > 1 |
+| Beveiligingsbeoordeling | A = Geen kwetsbaarheden <br/>B = minimaal 1 kleine kwetsbaarheid<br/> C = ten minste 1 grote kwetsbaarheid <br/>D = minimaal 1 kritieke kwetsbaarheid <br/>E = Minstens 1 blokkeerkwetsbaarheid | Kritiek | &lt; B |
+| Betrouwbaarheidsbeoordeling | A = Geen fouten <br/>B = ten minste 1 kleine bug <br/>C = ten minste 1 grote bug <br/>D = minstens 1 kritieke bug<br>E = Minstens 1 blocker bug | Kritiek | &lt; D |
+| Onderhoudsverklaring | Gedefinieerd door de openstaande herstelkosten voor code wordt gegesmelt als percentage van de tijd die al in de toepassing is gegaan<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | Belangrijk | &lt; A |
+| Dekking | Gedefinieerd door een combinatie van de dekking van de testlijn en de conditie met behulp van de formule: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = Voorwaarden die zijn beoordeeld als `true` ten minste één keer tijdens het uitvoeren van eenheidstests</li><li>`CF` = Voorwaarden die zijn beoordeeld als `false` ten minste één keer tijdens het uitvoeren van eenheidstests</li><li>`LC` = Coverlines = lines_to_cover - uncover_lines</li><li>`B` = totaal aantal voorwaarden</li><li>`EL` = totaal aantal uitvoerbare regels (lines_to_cover)</li></ul> | Belangrijk | &lt; 50% |
+| Overgeslagen eenheidstests | Aantal overgeslagen eenheidstests | Info | > 1 |
 | Problemen openen | Algemene uitgiftypen - Vulnerabilities, Bugs en Codefragmenten | Info | > 0 |
-| Gedupliceerde lijnen | Aantal lijnen betrokken bij gedupliceerde blokken. <br/>Een codeblok dat als gedupliceerd moet worden beschouwd: <br/><ul><li>**Niet-Java-projecten:**</li><li>Er moeten ten minste 100 opeenvolgende en gedupliceerde tokens zijn.</li><li>Deze tokens moeten ten minste op: </li><li>30 regels code voor COBOL </li><li>20 coderegels voor ABAP </li><li>10 coderegels voor andere talen</li><li>**Java-projecten:**</li><li> Er moeten minstens tien opeenvolgende en gedupliceerde verklaringen zijn, ongeacht het aantal tokens en lijnen.</li></ul> <br/>Verschillen in inspringing en in letterlijke tekenreeksen worden genegeerd bij het detecteren van duplicaten. | Info | > 1% |
-| Compatibiliteit met Cloud Service | Aantal geïdentificeerde kwesties van de Verenigbaarheid van de Cloud Service. | Info | > 0 |
+| Gedupliceerde lijnen | Gedefinieerd als het aantal regels dat is betrokken bij gedupliceerde blokken. Een codeblok wordt als gedupliceerd beschouwd onder de volgende omstandigheden.<br>Niet-Java-projecten:<ul><li>Er moeten ten minste 100 opeenvolgende en gedupliceerde tokens zijn.</li><li>Deze tokens moeten ten minste worden verspreid over: </li><li>30 regels code voor COBOL </li><li>20 coderegels voor ABAP </li><li>10 coderegels voor andere talen</li></ul>Java-projecten:<ul></li><li> Er moeten minstens tien opeenvolgende en gedupliceerde instructies zijn, ongeacht het aantal tokens en regels.</li></ul>Verschillen in inspringing en in letterlijke tekenreeksen worden genegeerd wanneer duplicaten worden gedetecteerd. | Info | > 1% |
+| Compatibiliteit met Cloud Service | Aantal geïdentificeerde compatibiliteitsproblemen met cloudservices | Info | > 0 |
 
 >[!NOTE]
->
->Zie [Metrische definities](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) voor meer gedetailleerde definities.
-
+Zie [Metrische definities van SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) voor meer gedetailleerde definities.
 
 >[!NOTE]
->
->Meer informatie over de kwaliteitsregels van de aangepaste code die worden uitgevoerd door [!UICONTROL Cloud Manager], raadpleeg [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Meer informatie over de kwaliteitsregels van de aangepaste code die worden uitgevoerd door [!UICONTROL Cloud Manager], gelieve het document te raadplegen [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Werken met valse positieven {#dealing-with-false-positives}
 
-Het kwaliteitscontroleproces is niet perfect en zal soms ten onrechte problemen identificeren die eigenlijk niet problematisch zijn. Dit wordt bedoeld als a *vals positief*.
+Het kwaliteitscontroleproces is niet perfect en zal soms ten onrechte problemen identificeren die eigenlijk niet problematisch zijn. Dit wordt bedoeld als a **vals positief**.
 
-In deze gevallen kan de broncode worden geannoteerd met de standaard-Java `@SuppressWarnings` annotatie die de regel-id opgeeft als het annotatiekenmerk. Een veelvoorkomend probleem is bijvoorbeeld dat de SonarQube-regel voor het detecteren van gecodeerde wachtwoorden agressief kan zijn ten aanzien van de manier waarop een gecodeerd wachtwoord wordt geïdentificeerd.
+In deze gevallen kan de broncode worden geannoteerd met de standaard-Java `@SuppressWarnings` annotatie die de regel-id opgeeft als het annotatiekenmerk. Bijvoorbeeld, één gemeenschappelijk vals positief is dat de regel SonarQube om hardcoded wachtwoorden te ontdekken agressief kan zijn over hoe een hard - gecodeerd wachtwoord wordt geïdentificeerd.
 
-Om naar een specifiek voorbeeld te kijken, zou deze code vrij gemeenschappelijk in een AEM project zijn dat code heeft om met één of andere externe dienst te verbinden:
+De volgende code is vrij gemeenschappelijk in een AEM project, dat code heeft om met één of andere externe dienst te verbinden.
 
 ```java
 @Property(label = "Service Password")
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube verhoogt vervolgens de kwetsbaarheid van de blokker. Na het herzien van de code, identificeert u dat dit geen kwetsbaarheid is en kan dit met aangewezen regel identiteitskaart annoteren
+SonarQube zal dan een blokkeerkwetsbaarheid veroorzaken. Maar na het herzien van de code, erkent u dat dit geen kwetsbaarheid is en kan de code met aangewezen regelidentiteitskaart annoteren.
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -92,8 +91,26 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 
 >[!NOTE]
->
->Het is weliswaar de beste praktijk om `@SuppressWarnings` annotatie zo specifiek mogelijk, d.w.z. alleen de specifieke instructie of het blok dat de uitgave veroorzaakt, annoteren op klasseniveau mogelijk maken.
+Het is weliswaar de beste praktijk om `@SuppressWarnings` annotatie zo specifiek mogelijk, d.w.z. alleen de specifieke instructie of het blok dat de uitgave veroorzaakt, annoteren op klasseniveau mogelijk maken.
 
 >[!NOTE]
->Terwijl er geen expliciete het Testen van de Veiligheid stap is, zijn er nog veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Zie [Beveiligingsoverzicht voor AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) voor meer informatie over beveiliging in Cloud Service.
+Terwijl er geen expliciete veiligheidsteststap is, zijn er veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Het document raadplegen [Beveiligingsoverzicht voor AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) voor meer informatie over beveiliging in Cloud Service.
+
+## Optimalisatie van inhoudspakketscannen {#content-package-scanning-optimization}
+
+In het kader van het kwaliteitsanalyseproces voert Cloud Manager een analyse uit van de inhoudspakketten die door de Maven-build worden geproduceerd. Cloud Manager biedt optimalisaties om dit proces te versnellen, die effectief zijn wanneer bepaalde verpakkingsbeperkingen worden nageleefd. Het meest significant is de optimalisering die voor projecten wordt uitgevoerd die één enkel inhoudspakket uitvoeren, dat algemeen als &quot;allen&quot;pakket wordt bedoeld, dat een aantal andere inhoudspakketten bevat die door de bouwstijl worden geproduceerd, die als overgeslagen worden gemerkt. Wanneer Cloud Manager dit scenario detecteert in plaats van het &quot;all&quot;-pakket uit te pakken, worden de afzonderlijke inhoudspakketten direct gescand en gesorteerd op basis van afhankelijkheden. Neem bijvoorbeeld de volgende build-uitvoer.
+
+* `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
+* `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (overgeslagen-content-package)
+* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (overgeslagen-content-package)
+
+Als de enige items binnen `myco-all-1.0.0-SNAPSHOT.zip` zijn de twee overgeslagen inhoudspakketten , dan worden de twee ingesloten pakketten gescand in plaats van het &quot; all &quot; - inhoudspakket .
+
+Voor projecten die tientallen ingebedde pakketten produceren, is deze optimalisering getoond om naar boven van 10 minuten per pijpleidingsuitvoering te besparen.
+
+Een speciaal geval kan voorkomen wanneer het &quot;alle&quot;inhoudspakket een combinatie overgeslagen inhoudspakketten en bundels OSGi bevat. Als `myco-all-1.0.0-SNAPSHOT.zip` bevat de twee ingesloten pakketten die eerder werden vermeld evenals een of meer OSGi-bundels, dan wordt een nieuw, minimaal inhoudspakket samengesteld met alleen de OSGi-bundels. Dit pakket krijgt altijd een naam `cloudmanager-synthetic-jar-package` en de opgenomen bundels worden in `/apps/cloudmanager-synthetic-installer/install`.
+
+>[!NOTE]
+* Deze optimalisatie heeft geen invloed op de pakketten die worden geïmplementeerd op AEM.
+* Omdat de overeenkomst tussen de ingesloten inhoudspakketten en de overgeslagen inhoudspakketten is gebaseerd op bestandsnamen, kan deze optimalisatie niet worden uitgevoerd als meerdere overgeslagen inhoudspakketten exact dezelfde bestandsnaam hebben of als de bestandsnaam tijdens het insluiten is gewijzigd.
+

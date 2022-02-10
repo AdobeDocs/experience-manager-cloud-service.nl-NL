@@ -4,22 +4,22 @@ description: Volg deze pagina om te leren hoe u aan de slag kunt gaan met een in
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
-source-git-commit: aeee4c4865e2ba7a8c9c7ffb392a08c45dffb20a
+source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
 
 # Aan de slag met het instapproces {#getting-started}
 
-Onboarding is het proces waarbij een aangewezen [Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) AEM as a Cloud Service voor uw organisatie plaatst. Dit omvat de eerste levering van cloudbronnen en het toewijzen van gebruikers aan rollen op basis van hun taakverantwoordelijkheden. Dientengevolge, kan elk lid login en tot hun AEM as a Cloud Service middelen toegang hebben.
+Onboarding is het proces waarin een aangewezen [Systeembeheerder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) stelt AEM as a Cloud Service voor uw organisatie in. Dit omvat de eerste levering van cloudbronnen en het toewijzen van gebruikers aan rollen op basis van hun taakverantwoordelijkheden. Dientengevolge, kan elk lid login en tot hun AEM as a Cloud Service middelen toegang hebben.
 
 ## Doelstelling {#objective}
 
 Als systeembeheerder, vat dit document de zeer eerste stappen in uw onboarding reis samen.
 
-Nadat u deze sectie hebt gelezen, kunt u het volgende doen:
+Na het lezen van deze sectie moet u in staat zijn om:
 
 * Toegang tot en aanmelding bij Admin Console.
 * Controleer uw rechten als systeembeheerder via Admin Console.
@@ -40,14 +40,14 @@ Volg de onderstaande stappen om naar de Admin Console te navigeren en uw rol van
 >[!NOTE]
 >U moet een systeembeheerder zijn om de volgende stappen succesvol te kunnen voltooien.
 
-1. Klik op **Aan de slag** van uw welkomstbericht, zoals in de onderstaande afbeelding wordt getoond, om naar de Admin Console te navigeren of vanuit [hier](https://adminconsole.adobe.com) rechtstreeks naar de Admin Console te navigeren.
+1. Klikken op **Aan de slag** vanuit uw welkomstbericht, zoals in de onderstaande afbeelding, om naar de Admin Console te navigeren of rechtstreeks naar de Admin Console te navigeren vanuit [hier](https://adminconsole.adobe.com).
 
    >[!NOTE]
-   >Als systeembeheerder ontvangt u meerdere e-mails. Zoek de welkomste e-mail die u de informatie over de naam van de Organisatie verstrekt waartot u toegang tot hebt gekregen en klik op **Aan de slag**. Als u de e-mail niet kunt vinden, navigeer direct aan [Admin Console](https://adminconsole.adobe.com/).
+   >Als systeembeheerder ontvangt u meerdere e-mails. Ga naar de welkomste-mail die u de informatie verschaft over de naam van de organisatie waartoe u toegang hebt gekregen en klik op **Aan de slag**. Als u het e-mailbericht niet kunt vinden, navigeert u rechtstreeks naar [Admin Console](https://adminconsole.adobe.com/).
 
    ![](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Meld u aan met uw [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Bij een geslaagde aanmelding ziet u de pagina **Overzicht** van de Adobe Admin Console, zoals hieronder wordt weergegeven.
+1. Aanmelden met uw [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Als u zich met succes hebt aangemeld, ziet u de **Overzicht** pagina van de Adobe Admin Console, zoals hieronder weergegeven.
 
    ![](/help/journey-onboarding/assets/get-started1.png)
 
@@ -56,15 +56,15 @@ Volg de onderstaande stappen om naar de Admin Console te navigeren en uw rol van
 
    ![](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 
-1. Selecteer **Beheerders** op de **Gebruikers**-kaart om te controleren of u Systeembeheerder bent via Adobe Admin Console.
+1. Selecteren **Beheerders** van de **Gebruikers** -kaart om te controleren of u Systeembeheerder bent via Adobe Admin Console.
 
    ![](/help/journey-onboarding/assets/get-started2.png)
 
-1. Nadat u op **Beheerders** van de **Gebruikers** kaart hebt geklikt, kunt u zoeken door uw Adobe ID-e-mail, gebruikersnaam, voornaam of achternaam in te voeren.
+1. Wanneer u op **Beheerders** van de **Gebruikers** -kaart, kunt u zoeken door uw Adobe ID-e-mail, gebruikersnaam, voornaam of achternaam in te voeren.
 
    ![](/help/journey-onboarding/assets/get-started3.png)
 
-1. De zoekopdracht moet uw e-mailrecord hebben gevonden. Bovendien moet **ADMIN ROLE** **System** tonen, zoals hieronder getoond. Dit bevestigt u een Beheerder van het Systeem bent. Dit bevestigt uw rol als Beheerder van het Systeem.
+1. De zoekopdracht moet uw e-mailrecord hebben gevonden. Daarnaast worden de **ADMIN ROLE** moet tonen **Systeem**, zoals hieronder weergegeven. Dit bevestigt u een Beheerder van het Systeem bent. Dit bevestigt uw rol als Beheerder van het Systeem.
 
    ![](/help/journey-onboarding/assets/get-started4.png)
 
@@ -72,4 +72,9 @@ Volg de onderstaande stappen om naar de Admin Console te navigeren en uw rol van
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u zich bij Admin Console hebt aangemeld en uw profiel als Beheerder van het Systeem hebt gecontroleerd, zou u uw aan boord gaan reis door het document [te herzien toewijzen de Leden van het Team aan de Profielen van het Product van de Manager van de Wolk](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md) moeten voortzetten.
+Nu u zich hebt aangemeld bij de Admin Console en uw profiel hebt gecontroleerd als systeembeheerder, kunt u de instapprocedure voortzetten door het document opnieuw te bekijken [Teamleden toewijzen aan productprofielen van Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
+
+## Aanvullende bronnen {#additional-resources}
+
+* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+* [Systeembeheerder](/help/onboarding/learn-concepts/system-administrator.md)

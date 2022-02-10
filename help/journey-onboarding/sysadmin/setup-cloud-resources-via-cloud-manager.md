@@ -1,193 +1,182 @@
 ---
 title: Cloud Resources instellen via Cloud Manager
-description: Volg deze pagina voor informatie over het instellen van Cloud Resources via Cloud Manager
+description: Leer hoe u Cloud Manager kunt gebruiken om uw eigen cloudbronnen in te stellen en te beheren.
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
-source-git-commit: 7fe39bbc8d5e965af7f339b2a524420c76360552
+source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
 
 # Cloud Resources instellen via Cloud Manager {#setup-cloud-resources}
 
-De systeembeheerder die is toegewezen aan de rol Bedrijfseigenaar moet toegang hebben tot en zich aanmelden bij Cloud Manager. Hierna moet een teamlid dat is toegewezen aan het bedrijfseigenaarsprofiel zich aanmelden bij Cloud Manager en uw cloudprogramma en -omgevingen maken zodat uw team van experts aan de slag kan.
+Leer hoe u Cloud Manager kunt gebruiken om uw eigen cloudbronnen in te stellen en te beheren.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u te begrijpen hoe uw cloudbronnen zijn gemaakt en wie dit kan doen.
+Dit document helpt u te begrijpen hoe uw cloudbronnen zijn gemaakt en wie deze kan maken. Na het lezen van deze sectie moet u begrijpen:
 
-Na het lezen van deze sectie moet u begrijpen:
-
-* Een systeembeheerder die is toegewezen aan de rol Bedrijfseigenaar moet de eerste zijn die toegang heeft tot en zich aanmeldt bij Cloud Manager.
+* Een systeembeheerder die aan de **Zakelijke eigenaar** rol moet de eerste rol in uw organisatie zijn om u aan te melden en toegang te krijgen tot Cloud Manager.
 * Hoe uw cloudprogramma en -omgevingen worden gemaakt.
 
 ## Inleiding {#introduction}
 
-Het toevoegen van cloudbronnen gebeurt via Cloud Manager door uw teamlid dat is toegewezen aan het productprofiel van Cloud Manager Business Owner. Dit individu begrijpt meestal de zakelijke behoeften en voltooit de initiële installatie van Cloud Manager.
+Het toevoegen van cloudbronnen gebeurt via Cloud Manager door uw teamlid dat is toegewezen aan de **Zakelijke eigenaar** productprofiel. Dit individu begrijpt meestal de zakelijke behoeften en voltooit de initiële installatie van Cloud Manager.
 
 Volg de onderstaande secties om te leren hoe u uw [cloudserviceprogramma&#39;s](#create-cloud-service-program) en [omgevingen.](#create-cloud-environments)
 
-### Voorwaarden {#prerequisites}
+### Vereisten {#prerequisites}
 
-* De systeembeheerder die is toegewezen aan de rol Bedrijfseigenaar moet toegang hebben tot en zich aanmelden bij Cloud Manager.
+* De systeembeheerder die aan **Zakelijke eigenaar** rol moet zich hebben aangemeld bij Cloud Manager voordat andere gebruikers met de functie **Zakelijke eigenaar** Hiermee wordt geprobeerd toegang te krijgen tot Cloud Manager om de in dit document beschreven stappen uit te voeren en uit te voeren.
 
-* Begrijpen hoe [navigeer en meld u aan bij Cloud Manager.](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+   * Terugkeren naar de [Teamleden toewijzen aan productprofielen van Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) een document van deze reis voor meer informatie .
 
-* Wees vertrouwd met [Productprofielen van Cloud Manager.](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
+* U moet begrijpen hoe [navigeer en meld u aan bij Cloud Manager.](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 
-* Begrijp de concepten van Cloud Manager [programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) en [omgevingen.](/help/implementing/cloud-manager/manage-environments.md)
+* U zou vertrouwd met moeten zijn [Productprofielen van Cloud Manager.](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
+
+* U moet de concepten van Cloud Manager begrijpen [programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) en [omgevingen.](/help/implementing/cloud-manager/manage-environments.md)
+
+## Toegang tot Cloud Manager als systeembeheerder en bedrijfseigenaar {#access-sysadmin-bo}
+
+Voor de teamleden die u aan de **Zakelijke eigenaar** de rol kan tot wolkenmanager toegang hebben en beginnen met het creëren van wolkenmiddelen, moet de Beheerder van het Systeem toewijzen **Zakelijke eigenaar** rol en meld u aan bij Cloud Manager.
+
+1. Zorg ervoor dat u, als systeembeheerder, de **Zakelijke eigenaar** rol toegewezen.
+
+   * Terugkeren naar de vorige stap van deze reis, [Teamleden toewijzen aan productprofielen van Cloud Manager,](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) voor meer informatie over de toewijzing van de **Zakelijke eigenaar** rol aan de Beheerder van het Systeem als u dit nog niet hebt gedaan.
+
+1. Aanmelden bij Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en worden aangeboden met de normale landingspagina.
+
+Door u met succes aan te melden als Systeembeheerder met de **Zakelijke eigenaar** rol, initialiseert u Cloud Manager voor gebruik door andere gebruikers met **Zakelijke eigenaar** rol. Je ontvangt geen bevestiging van dit bericht of een bericht. Eenvoudig aanmelden is voldoende.
+
+Totdat u zich bij Cloud Manager als systeembeheerder aanmeldt bij het dialoogvenster **Zakelijke eigenaar** rol, andere gebruikers met de **Zakelijke eigenaar** met deze rol kunnen geen programma&#39;s worden gemaakt in Cloud Manager, zelfs niet als aan deze programma&#39;s de juiste rollen zijn toegewezen.
 
 ## Navigeren naar Cloud Manager {#navigate-cloud-manager}
 
-De gebruiker van de Bedrijfs Eigenaar zal een welkome e-mail met een verbinding ontvangen om te beginnen, of als zij het niet kunnen vinden, toegang hebben [Cloud Manager](https://my.cloudmanager.adobe.com/) direct door u aan te melden met uw Adobe ID.
-
-Ga als volgt te werk om naar Cloud Manager te navigeren:
+De gebruiker met de **Zakelijke eigenaar** de rol zal een welkome e-mail met een verbinding ontvangen om te beginnen. Volg de onderstaande stappen om naar Cloud Manager te navigeren met deze welkomstmail.
 
 1. Klik op **Aan de slag**, zoals weergegeven in onderstaande afbeelding.
-   ![](/help/journey-onboarding/assets/get-started-email.png)
+   ![E-mailvoorbeeld](/help/journey-onboarding/assets/get-started-email.png)
 
 1. U gaat naar Cloud Manager **Programma&#39;s en producten** pagina.
 
-   >[!IMPORTANT]
+   >[!TIP]
    >
-   >U kunt ook rechtstreeks naar de aanmeldingspagina van Cloud Manager navigeren vanuit [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Bladwijzer maken van deze pagina voor toekomstig gebruik en om u te helpen rechtstreeks naar de landingspagina van Cloud Manager te navigeren.
+   >U kunt ook rechtstreeks naar de aanmeldingspagina van Cloud Manager navigeren vanuit [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Bladwijzer maken van deze pagina voor toekomstig gebruik.
 
 1. U wordt doorgestuurd naar de bestemmingspagina van Cloud Manager. Zie [De programma&#39;s van Cloud Manager weergeven](#viewing-programs) voor meer informatie.
 
-Bovendien kunt u naar Cloud Manager navigeren **Programma&#39;s en producten** pagina van Adobe Experience Cloud homepage. Voer de onderstaande stappen uit:
+U kunt ook naar Cloud Manager navigeren **Programma&#39;s en producten** pagina van Adobe Experience Cloud homepage door deze stappen te volgen
 
 1. Ga rechtstreeks naar [Adobe Experience Cloud](https://experience.adobe.com) en meld u aan met uw Adobe ID.
 
 1. Selecteer op de startpagina van Adobe Experience Cloud de optie **Experience Manager**.
 
-   ![](/help/journey-onboarding/assets/setup-resources2.png)
+   ![Experience Cloud homepage](/help/journey-onboarding/assets/setup-resources2.png)
 
-1. Hiermee gaat u naar de AEM homepage. Vanaf hier, starten **Cloud Manager** .
+1. Hiermee gaat u naar de AEM homepage. Klik hier op **Starten** op de **Cloud Manager** tegel.
 
-   ![](/help/journey-onboarding/assets/setup-resources3.png)
+   ![AEM homepage](/help/journey-onboarding/assets/setup-resources3.png)
 
 1. Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager. Zie [De programma&#39;s van Cloud Manager weergeven](#viewing-programs) voor meer informatie.
 
-   >[!NOTE]
-   >
-   >Afhankelijk van de rollen die binnen worden toegewezen [!UICONTROL Cloud Manager] en de status van de toepassing, ziet u verschillende schermen tijdens het gebruik [!UICONTROL Cloud Manager] UI.
+De manier waarop u via Cloud Manager toegang krijgt tot uw programma&#39;s en producten is een zaak van u en heeft geen invloed op de manier waarop u Cloud Manager gebruikt of op de manier waarop u uw programma&#39;s beheert.
 
-### Programma&#39;s weergeven op de bestemmingspagina van Cloud Manager {#viewing-programs}
+>[!NOTE]
+>
+>Afhankelijk van de rollen die binnen worden toegewezen [!UICONTROL Cloud Manager] en de status van de toepassing, ziet u verschillende schermen tijdens het gebruik [!UICONTROL Cloud Manager] UI.
 
-Nadat u zich hebt aangemeld, gaat u naar de bestemmingspagina van Cloud Manager. Een van de drie opties wordt hieronder beschreven:
+### Programma&#39;s weergeven {#viewing-programs}
 
-#### Als er geen programma&#39;s bestaan in Cloud Manager {#no-programs}
+Zodra u toegang hebt tot Cloud Manager, hangt wat u ziet af van de status van uw programma&#39;s, zoals in de volgende secties wordt beschreven.
 
-Als er geen programma&#39;s in uw organisatie aanwezig zijn, wordt u op de bestemmingspagina opgedragen het eerste programma te maken, zoals in de onderstaande afbeelding wordt getoond.
+#### Als er geen programma&#39;s bestaan {#no-programs}
 
-![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+Als er geen programma&#39;s in uw organisatie aanwezig zijn, wordt u op de bestemmingspagina opgedragen het eerste programma te maken.
 
-#### Wanneer er al programma&#39;s bestaan in Cloud Manager {#programs-exist}
+![Geen programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-Als er al programma&#39;s bestaan in uw organisatie, wordt u op de bestemmingspagina opgedragen een ander programma toe te voegen en worden ook alle bestaande programma&#39;s weergegeven, zoals in de onderstaande afbeelding wordt getoond.
+#### Wanneer er al programma&#39;s bestaan {#programs-exist}
 
-![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+Als programma&#39;s al in uw organisatie aanwezig zijn, wordt op de landingspagina uw bestaande programma&#39;s weergegeven en wordt ook een knop weergegeven om aanvullende programma&#39;s toe te voegen.
 
-#### Wanneer een Programma bestaat en de gebruiker de Beheerder van het Systeem is {#programs-exist-sysadmin}
+![Er bestaan programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-Als er al programma&#39;s bestaan in uw organisatie en u een systeembeheerder bent, wordt de landingspagina weergegeven **Toegang beheren** samen met **Programma toevoegen** zoals weergegeven in de onderstaande afbeelding.
+#### Wanneer een Programma bestaat en u een Beheerder van het Systeem bent {#programs-exist-sysadmin}
 
-![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+Als programma&#39;s al in uw organisatie bestaan en u een Systeembeheerder bent, wordt de landingspagina weergegeven **Toegang beheren** samen met **Programma toevoegen** optie.
+
+![Systeembeheerweergave](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 
 ## Gebruikersrollen controleren {#verify-user-roles}
 
-Nadat u zich hebt aangemeld bij Cloud Manager, volgt u de onderstaande stappen om te controleren of u het productprofiel van de eigenaar van het bedrijf hebt toegewezen:
+Nadat u zich hebt aangemeld bij Cloud Manager, kunt u controleren of u de opdracht **Zakelijke eigenaar** productprofiel.
 
-1. Selecteer uw profiel rechtsboven, zoals hieronder wordt getoond.
+1. Selecteer het profiel rechtsboven in het venster.
 
-   ![](/help/journey-onboarding/assets/setup-resources5.png)
+   ![Gebruikersprofiel](/help/journey-onboarding/assets/setup-resources5.png)
 
-1. Selecteren **Gebruikersrollen** en zorg ervoor dat u aan Bedrijfseigenaar wordt toegewezen.
+1. Selecteren **Gebruikersrollen** om de rollen te tonen die aan uw gebruiker worden toegewezen.
 
-   ![](/help/journey-onboarding/assets/setup-resources6.png)
+   ![Gebruikersrollen](/help/journey-onboarding/assets/setup-resources6.png)
 
-1. Dit bevestigt uw gebruikersrol als Bedrijfseigenaar.
+1. Bevestigt uw gebruiker heeft **Zakelijke eigenaar** rol.
 
-   ![](/help/journey-onboarding/assets/setup-resources7.png)
+   ![Lijst met gebruikersrollen](/help/journey-onboarding/assets/setup-resources7.png)
 
-   Geweldig werk! U hebt zich met succes aangemeld bij Cloud Manager als bedrijfseigenaar.
+U hebt zich met succes aangemeld bij Cloud Manager als bedrijfseigenaar. Als u geen toegewezen **Zakelijke eigenaar** en neemt u contact op met uw systeembeheerder.
 
-## Cloud Service-programma maken {#create-cloud-service-program}
+## Een Cloud Service-programma maken {#create-cloud-service-program}
 
-Voer de onderstaande stappen uit om uw cloudserviceprogramma te maken vanuit Cloud Manager:
+Nu u ervoor hebt gezorgd dat u de juiste toegang hebt, kunt u uw eerste programma maken.
 
-1. Navigeer naar de bestemmingspagina van Cloud Manager, zoals hieronder wordt getoond.
+1. Ga naar de bestemmingspagina van Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en meld u aan.
 
-   >[!NOTE]
-   >
-   >U moet een teamlid zijn dat is toegewezen aan het productprofiel van de Business Owner van Cloud Manager om deze stap te kunnen voltooien.
+1. Klik op de bestemmingspagina van Cloud Manager op **Programma toevoegen** om de wizard Programma toevoegen te starten.
 
-   Klik hier op **Programma toevoegen** om de wizard Programma toevoegen te starten.
-
-   ![](/help/journey-onboarding/assets/setup-resources4.png)
+   ![Openingspagina](/help/journey-onboarding/assets/setup-resources4.png)
 
    >[!TIP]
    >
-   >Kijk naar de [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) voor meer informatie over het maken van uw AEM als een Cloud-programma en voor meer informatie over belangrijke overwegingen voordat u uw programma maakt.
+   >Voor geleidelijke instructie op hoe te om de Add tovenaar van het Programma te gebruiken, verwijs naar het document [Productieprogramma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md) of bekijk dit [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) voor meer informatie over het maken van uw AEM als een Cloud-programma en voor meer informatie over belangrijke overwegingen voordat u uw programma maakt.
 
-   >[!TIP]
-   >
-   >Voor stap voor stap instructies op hoe te om de Add tovenaar van het Programma te gebruiken, ga [hier](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md).
 
-1. Wanneer uw cloudprogramma met succes is gemaakt, kunt u naar uw programma navigeren om de **Overzicht** pagina van uw programma, zoals hieronder getoond.
+1. Als uw cloudprogramma met succes is gemaakt, kunt u vanuit de landingspagina van Cloud Manager naar uw programma navigeren om de **Overzicht** pagina van uw programma.
 
-   ![](/help/journey-onboarding/assets/setup-resources8.png)
+   ![Overzicht van programma](/help/journey-onboarding/assets/setup-resources8.png)
 
-   >[!NOTE]
-   >
-   >Als u dit nog niet hebt gedaan, is het nu een goed moment om uw leden voor ontwikkelaars toe te voegen aan uw team voor Cloud Manager. Raadpleeg het productprofiel Gebruikers toevoegen aan ontwikkelaar en volg de beschreven stappen.
+1. Leden die zijn toegewezen aan het productprofiel voor ontwikkelaars kunnen zich aanmelden bij Cloud Manager en de opslagruimten voor cloudbeheer beheren.
 
-1. Leden die zijn toegewezen aan het productprofiel voor ontwikkelaars kunnen zich aanmelden bij Cloud Manager en [Cloud Manager-kit beheren](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+   * Als u dat nog niet hebt gedaan, is het nu een goed moment om leden toe te wijzen aan de **Ontwikkelaar** rol in uw Cloud Manager-team. Terugkeren naar de [Teamleden toewijzen aan productprofielen van Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) een document van deze reis voor meer informatie .
 
-   Geweldig werk! Uw programma is nu gemaakt en uw Cloud Manager Git kan door uw ontwikkelaars worden geopend!
-
+Uw programma is nu gemaakt en de gegevensopslagruimte van uw cloudbeheer is beschikbaar voor uw ontwikkelaars.
 
 ## Creëer uw Cloud-omgevingen {#create-cloud-environments}
 
 Wanneer u uw cloudprogramma hebt gemaakt, maakt u uw cloudomgevingen.
 
-Voer de onderstaande stappen uit om uw cloud-omgevingen te maken met Cloud Manager:
+1. Ga naar de bestemmingspagina van Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u **Toevoegen** van de milieukaart.
 
-1. Ga naar Cloud Manager **Overzicht** pagina en selecteer **Toevoegen** van de milieukaart.
+   ![Knop Omgeving toevoegen](/help/journey-onboarding/assets/setup-resources9.png)
 
-   ![](/help/journey-onboarding/assets/setup-resources9.png)
+1. De wizard voor het toevoegen van omgevingen start en begeleidt u door het toevoegen van uw omgeving. Voeg eerst uw ontwikkelomgeving toe om vertrouwd te raken met de wizard.
 
-   >[!IMPORTANT]
+   >[!TIP]
    >
-   >Een gebruiker van de Manager van de Wolk in de rol Bedrijfs van de Eigenaar of van de Manager van de Plaatsing moet worden het programma geopend om deze stap met succes te voltooien.
+   >Het document raadplegen [Een omgeving toevoegen](/help/implementing/cloud-manager/manage-environments.md#adding-environments) voor meer informatie of om te kijken [deze korte videozelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) voor meer informatie over omgevingen in Cloud Manager en hoe u deze aan uw programma kunt toevoegen.
 
-   Kijk ook eens naar de sneltoets [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) zelfstudie voor meer informatie over omgevingen in Cloud Manager en over hoe u deze aan uw programma kunt toevoegen.
+1. Aan de **Ontwikkelaar** Met het profiel product kunt u zich aanmelden bij Cloud Manager en de Git-opslagruimten van Cloud Manager beheren.
 
-1. Hiermee wordt de wizard voor het toevoegen van omgevingen gestart die u begeleidt bij het toevoegen van uw omgeving. Voeg eerst uw ontwikkelomgeving toe om vertrouwd te raken met de wizard. Zie [Een omgeving toevoegen](/help/implementing/cloud-manager/manage-environments.md#adding-environments) voor meer informatie.
-
-   >[!NOTE]
-   >
-   >Als u dit nog niet hebt gedaan, is het nu een goed moment om uw leden voor ontwikkelaars toe te voegen aan uw team voor Cloud Manager. Raadpleeg het productprofiel Gebruikers toevoegen aan ontwikkelaar en volg de beschreven stappen.
-
-1. Leden die zijn toegewezen aan het productprofiel voor ontwikkelaars kunnen zich aanmelden bij Cloud Manager en [Cloud Manager Git beheren.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-
-   Geweldig werk! Uw programma is nu gemaakt en uw Cloud Manager Git is beschikbaar voor uw ontwikkelaars.
-
-   Gefeliciteerd! Uw cloudprogrammaomgevingen zijn nu gemaakt en uw ontwikkelaars zijn toegevoegd aan het team!
+Het programma is nu gemaakt en uw cloudbeheerpakket is beschikbaar voor uw ontwikkelaars.
 
 ## Volgende functies {#whats-next}
 
-Aan uw teamleden moeten machtigingen voor de instantie worden verleend, aangezien machtigingen voor het beheren van Cloud Manager niet voldoende zijn. Nu uw cloudbronnen zijn gemaakt en klaar zijn om door uw team te worden geopend, moet de systeembeheerder uw teamleden toewijzen aan AEM as a Cloud Service productprofielen van Adobe Admin Console.
+Nu uw wolkenmiddelen zijn gecreeerd en klaar om door uw team worden betreden, moet de Beheerder van het Systeem uw teamleden aan AEM as a Cloud Service productprofielen van Adobe Admin Console toewijzen om tot die middelen toegang te hebben.
 
->[!NOTE]
->
->Om toegang te krijgen tot AEM as a Cloud Service gebruikers, moet deze behoren tot een van twee productprofielen `AEM Users` of `AEM Administrators`. Zie [Producten en gebruikerstoegang in Admin Console beheren](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) voor meer informatie.
-
-U moet uw instapreis voortzetten door het document opnieuw te bekijken [Teamleden toewijzen aan AEM as a Cloud Service productprofielen.](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
-
+U moet uw instapreis voortzetten door het document opnieuw te bekijken [Teamleden toewijzen aan AEM as a Cloud Service productprofielen](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md) waar u zult leren hoe te om uw teamleden de rechten te verlenen zij hebben om tot uw nieuwe milieu&#39;s toegang te hebben.
 
 ## Aanvullende bronnen {#additional-resources}
 
