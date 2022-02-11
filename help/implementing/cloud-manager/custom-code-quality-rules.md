@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit
 description: Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van [het testen van de codekwaliteit]. Zij zijn gebaseerd op beste praktijken van AEM Techniek.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 4567581eb02c928f1493defdab667cc713fc222a
+source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3495'
 ht-degree: 3%
 
 ---
@@ -12,15 +12,15 @@ ht-degree: 3%
 # Aangepaste regels voor codekwaliteit {#custom-code-quality-rules}
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_customcodequalityrules"
->title="Custom Code Quality Rules"
->abstract="This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering."
+>title="Aangepaste regels voor codekwaliteit"
+>abstract="Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code. Zij zijn gebaseerd op beste praktijken van AEM Techniek."
 
 Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van [testen van de codekwaliteit.](/help/implementing/cloud-manager/code-quality-testing.md) Zij zijn gebaseerd op beste praktijken van AEM Techniek.
 
 >[!NOTE]
-De hier opgegeven codevoorbeelden dienen slechts ter illustratie. Zie de SonarQube [Conceptendocumentatie](https://docs.sonarqube.org/7.4/user-guide/concepts/) voor meer informatie over SonarQube-concepten en kwaliteitsregels.
+>
+>De hier opgegeven codevoorbeelden dienen slechts ter illustratie. Zie de SonarQube [Conceptendocumentatie](https://docs.sonarqube.org/7.4/user-guide/concepts/) voor meer informatie over SonarQube-concepten en kwaliteitsregels.
 
 ## SonarQube-regels {#sonarqube-rules}
 
@@ -315,7 +315,8 @@ public void doThis() throws Exception {
 In het algemeen, zou het INFO logboekniveau moeten worden gebruikt om belangrijke acties te afbakenen en, door gebrek, AEM wordt gevormd om bij het INFO niveau of boven te registreren. GET- en HEAD-methoden mogen nooit alleen-lezen zijn en vormen dus geen belangrijke acties. Het registreren op het niveau INFO in antwoord op GET of HEAD verzoeken zal waarschijnlijk tot significante logboeklawaai leiden daardoor het moeilijker maken om nuttige informatie in logboekdossiers te identificeren. Het registreren wanneer de behandeling van GET of HEAD- verzoeken of op de niveaus van de WAARSCHUWING of van de FOUT zou moeten zijn wanneer iets verkeerd is gegaan of op de niveaus DEBUG of van de TRACE als de diepere het oplossen van problemeninformatie nuttig zou zijn.
 
 >[!NOTE]
-Dit geldt niet voor `access.log`-type registreren voor elke verzoeken.
+>
+>Dit geldt niet voor `access.log`-type registreren voor elke verzoeken.
 
 #### Niet-compatibele code {#non-compliant-code-8}
 
@@ -520,7 +521,8 @@ Er zijn echter gevallen waarin een API afgekeurd is in de context van AEM, maar 
 In de volgende sectie worden de OakPAL-controles beschreven die door Cloud Manager zijn uitgevoerd.
 
 >[!NOTE]
-OakPAL is een framework dat inhoudspakketten valideert met behulp van een zelfstandige Oak-opslagplaats. Het werd ontwikkeld door een AEM partner en winnaar van de prijs AEM Rockstar North America 2019.
+>
+>OakPAL is een framework dat inhoudspakketten valideert met behulp van een zelfstandige Oak-opslagplaats. Het werd ontwikkeld door een AEM partner en winnaar van de prijs AEM Rockstar North America 2019.
 
 ### Product-API&#39;s die zijn voorzien van een annotatie met @ProviderType mogen niet worden geïmplementeerd of uitgebreid door klanten {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -681,9 +683,12 @@ Het is al lang een goede praktijk dat de `/libs` de inhoudsstructuur in de AEM-i
 Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zelfde component OSGi veelvoudige tijden wordt gevormd. Dit leidt tot dubbelzinnigheid over welke configuratie van toepassing zal zijn. Deze regel is &quot;runmode-bewust&quot;in die zin dat het slechts kwesties zal identificeren waar de zelfde component veelvoudige tijden op de zelfde runmode of combinatie runmodes wordt gevormd.
 
 >[!NOTE]
-Deze regel zal kwesties veroorzaken waar de zelfde configuratie, bij de zelfde weg, in veelvoudige pakketten wordt bepaald, met inbegrip van gevallen waar het zelfde pakket in de algemene lijst van gebouwde pakketten wordt gedupliceerd.
-Als de build bijvoorbeeld pakketten met de naam `com.myco:com.myco.ui.apps` en `com.myco:com.myco.all` waar `com.myco:com.myco.all` insluiten `com.myco:com.myco.ui.apps`, dan alle configuraties binnen `com.myco:com.myco.ui.apps` worden gerapporteerd als duplicaten.
-Dit is doorgaans het geval als de [Richtlijnen voor de structuur van inhoudspakketten.](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In dit specifieke voorbeeld wordt het pakket `com.myco:com.myco.ui.apps` ontbreekt het `<cloudManagerTarget>none</cloudManagerTarget>` eigenschap.
+>
+>Deze regel zal kwesties veroorzaken waar de zelfde configuratie, bij de zelfde weg, in veelvoudige pakketten wordt bepaald, met inbegrip van gevallen waar het zelfde pakket in de algemene lijst van gebouwde pakketten wordt gedupliceerd.
+>
+>Als de build bijvoorbeeld pakketten met de naam `com.myco:com.myco.ui.apps` en `com.myco:com.myco.all` waar `com.myco:com.myco.all` insluiten `com.myco:com.myco.ui.apps`, dan alle configuraties binnen `com.myco:com.myco.ui.apps` worden gerapporteerd als duplicaten.
+>
+>Dit is doorgaans het geval als de [Richtlijnen voor de structuur van inhoudspakketten.](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In dit specifieke voorbeeld wordt het pakket `com.myco:com.myco.ui.apps` ontbreekt het `<cloudManagerTarget>none</cloudManagerTarget>` eigenschap.
 
 #### Niet-conforme code {#non-compliant-code-osgi}
 
@@ -779,7 +784,8 @@ De documentatie van de Hulpmiddelen van de Modernisering van de AEM verstrekt do
 Om compatibel te zijn met het implementatiemodel van de Cloud Service, moeten afzonderlijke inhoudspakketten ofwel inhoud bevatten voor de onveranderlijke gebieden van de opslagplaats (dat wil zeggen: `/apps` en `/libs`) of het veranderbare gebied (dat wil zeggen alles niet in `/apps` of `/libs`), maar niet beide. Bijvoorbeeld een pakket dat beide bevat `/apps/myco/components/text and /etc/clientlibs/myco` niet verenigbaar is met de Cloud Service en ertoe zal leiden dat een probleem wordt gerapporteerd.
 
 >[!NOTE]
-De regel [Klantpakketten mogen geen knooppunten onder /libs maken of wijzigen](#oakpal-customer-package) altijd van toepassing.
+>
+>De regel [Klantpakketten mogen geen knooppunten onder /libs maken of wijzigen](#oakpal-customer-package) altijd van toepassing.
 
 Zie [AEM projectstructuur](/help/implementing/developing/introduction/aem-project-content-package-structure.md) voor meer informatie .
 

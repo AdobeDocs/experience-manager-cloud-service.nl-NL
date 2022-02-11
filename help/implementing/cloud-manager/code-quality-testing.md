@@ -2,9 +2,9 @@
 title: Testen van de codekwaliteit
 description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ca3c1f255b8441a8d376a55a5353d58848384b8b
+source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1145'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,9 @@ ht-degree: 1%
 Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_codequalitytests"
->title="Code Quality Testing"
->abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+>title="Testen van de codekwaliteit"
+>abstract="Bij het testen van de codekwaliteit wordt uw toepassingscode geëvalueerd op basis van een set kwaliteitsregels. Het is het primaire doel van een code-kwaliteit slechts pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle productie en niet-productiepijpleidingen."
 
 ## Inleiding {#introduction}
 
@@ -30,7 +29,8 @@ Het document raadplegen [Het vormen van Uw CI-CD Pijpleiding](/help/implementing
 Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan bepaalde kwaliteitscriteria voldoet. Dit wordt geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met OakPAL. Er zijn meer dan 100 regels, die generieke regels van Java en AEM-specifieke regels combineren. Sommige AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld zoals [aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
-U kunt de volledige lijst met regels downloaden [met deze koppeling.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>
+>U kunt de volledige lijst met regels downloaden [met deze koppeling.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
 ### Waarderingen met drie lagen {#three-tiered-gate}
 
@@ -58,10 +58,12 @@ De volgende tabel geeft een overzicht van de classificaties en foutdrempels voor
 | Compatibiliteit met Cloud Service | Aantal geïdentificeerde compatibiliteitsproblemen met cloudservices | Info | > 0 |
 
 >[!NOTE]
-Zie [Metrische definities van SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) voor meer gedetailleerde definities.
+>
+>Zie [Metrische definities van SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) voor meer gedetailleerde definities.
 
 >[!NOTE]
-Meer informatie over de kwaliteitsregels van de aangepaste code die worden uitgevoerd door [!UICONTROL Cloud Manager], gelieve het document te raadplegen [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>
+>Meer informatie over de kwaliteitsregels van de aangepaste code die worden uitgevoerd door [!UICONTROL Cloud Manager], gelieve het document te raadplegen [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Werken met valse positieven {#dealing-with-false-positives}
 
@@ -94,10 +96,11 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 
 >[!NOTE]
-Het is weliswaar de beste praktijk om `@SuppressWarnings` annotatie zo specifiek mogelijk, d.w.z. alleen de specifieke instructie of het blok dat de uitgave veroorzaakt, annoteren op klasseniveau mogelijk maken.
+>
+>Het is weliswaar de beste praktijk om `@SuppressWarnings` annotatie zo specifiek mogelijk, d.w.z. alleen de specifieke instructie of het blok dat de uitgave veroorzaakt, annoteren op klasseniveau mogelijk maken.
 
 >[!NOTE]
-Terwijl er geen expliciete veiligheidsteststap is, zijn er veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Het document raadplegen [Beveiligingsoverzicht voor AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) voor meer informatie over beveiliging in Cloud Service.
+>Terwijl er geen expliciete veiligheidsteststap is, zijn er veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Het document raadplegen [Beveiligingsoverzicht voor AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) voor meer informatie over beveiliging in Cloud Service.
 
 ## Optimalisatie van inhoudspakketscannen {#content-package-scanning-optimization}
 
@@ -114,6 +117,7 @@ Voor projecten die tientallen ingebedde pakketten produceren, is deze optimalise
 Een speciaal geval kan voorkomen wanneer het &quot;alle&quot;inhoudspakket een combinatie overgeslagen inhoudspakketten en bundels OSGi bevat. Als `myco-all-1.0.0-SNAPSHOT.zip` bevat de twee ingesloten pakketten die eerder werden vermeld evenals een of meer OSGi-bundels, dan wordt een nieuw, minimaal inhoudspakket samengesteld met alleen de OSGi-bundels. Dit pakket krijgt altijd een naam `cloudmanager-synthetic-jar-package` en de opgenomen bundels worden in `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
-* Deze optimalisatie heeft geen invloed op de pakketten die worden geïmplementeerd op AEM.
-* Omdat de overeenkomst tussen de ingesloten inhoudspakketten en de overgeslagen inhoudspakketten is gebaseerd op bestandsnamen, kan deze optimalisatie niet worden uitgevoerd als meerdere overgeslagen inhoudspakketten exact dezelfde bestandsnaam hebben of als de bestandsnaam tijdens het insluiten is gewijzigd.
+>
+>* Deze optimalisatie heeft geen invloed op de pakketten die worden geïmplementeerd op AEM.
+>* Omdat de overeenkomst tussen de ingesloten inhoudspakketten en de overgeslagen inhoudspakketten is gebaseerd op bestandsnamen, kan deze optimalisatie niet worden uitgevoerd als meerdere overgeslagen inhoudspakketten exact dezelfde bestandsnaam hebben of als de bestandsnaam tijdens het insluiten is gewijzigd.
 
