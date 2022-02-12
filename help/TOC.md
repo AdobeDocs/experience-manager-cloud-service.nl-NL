@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ad49f5896680f191cd667b2e17ee8e81b7c424a5
+source-git-commit: 7076b5b7db75ebe4f6b381ab2330769f7dcd6904
 workflow-type: tm+mt
-source-wordcount: '3494'
+source-wordcount: '3444'
 ht-degree: 24%
 
 ---
@@ -158,12 +158,7 @@ ht-degree: 24%
          + [Uw accountomgeving configureren](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [Uw inbox](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [Sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + Schrijverreis zonder kopinhoud {#headless-journey}
-         + [AEM Schrijverreis zonder kopinhoud - Overzicht](/help/journey-headless/author/overview.md)
-         + [Ontwerpen voor headless met AEM - Een inleiding](/help/journey-headless/author/introduction.md)
-         + [Grondbeginselen van ontwerpen voor headless met AEM](/help/journey-headless/author/basics.md)
-         + [Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten](/help/journey-headless/author/references.md)
-         + [Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten](/help/journey-headless/author/metadata-tagging.md)
+      + [Schrijverreis zonder kopinhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
       + Grondbeginselen van authoring {#fundamentals}
          + [Omgeving en tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [Pagina-annotaties toevoegen](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -253,14 +248,7 @@ ht-degree: 24%
                + [Vertaalregels configureren](/help/journey-sites/translation/translation-rules.md)
                + [Inhoud vertalen](/help/journey-sites/translation/translate-content.md)
                + [Vertaalde inhoud publiceren](/help/journey-sites/translation/publish-content.md)
-            + Dagboekreis zonder hoofd {#headless}
-               + [Begrijp zonder hoofd vertaling in AEM](/help/journey-headless/translation/overview.md)
-               + [Ga aan de slag met AEM headless vertaling](/help/journey-headless/translation/getting-started.md)
-               + [Meer informatie over inhoud zonder kop en hoe u kunt vertalen in AEM](/help/journey-headless/translation/learn-about.md)
-               + [Vertaalaansluiting configureren](/help/journey-headless/translation/configure-connector.md)
-               + [Vertaalregels configureren](/help/journey-headless/translation/translation-rules.md)
-               + [Inhoud vertalen](/help/journey-headless/translation/translate-content.md)
-               + [Vertaalde inhoud publiceren](/help/journey-headless/translation/publish-content.md)
+            + [Dagboekreis zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [Inhoud vertalen voor meertalige sites](/help/sites-cloud/administering/translation/overview.md)
             + [Inhoud voorbereiden voor vertaling](/help/sites-cloud/administering/translation/preparation.md)
             + [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -319,9 +307,6 @@ ht-degree: 24%
       + [Facetten doorzoeken](/help/assets/search-facets.md)
       + [HTTP-API voor assets](/help/assets/mac-api-assets.md)
       + [Ondersteuning voor inhoudsfragmenten in HTTP-API voor middelen](/help/assets/content-fragments/assets-api-content-fragments.md)
-      + [GraphQL API voor inhoudsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)
-      + [Verificatie voor externe GraphQL-query&#39;s op inhoudsfragmenten](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-      + [GraphQL API met inhoudfragmenten - Voorbeeldinhoud en query&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md)
       + [Gekoppelde assets](/help/assets/use-assets-across-connected-assets-instances.md)
       + [Rendities alleen voor plaatsing genereren](/help/assets/configure-fpo-renditions.md)
       + [Rapporten over assets](/help/assets/asset-reports.md)
@@ -547,6 +532,73 @@ ht-degree: 24%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migratie](/help/commerce-cloud/migration.md)
    + [Veelgestelde vragen](/help/commerce-cloud/faq.md)
++ Koploos {#headless}
+   + [Inleiding tot AEM zonder kop](/help/headless/introduction.md)
+   + Instellen {#setup}
+      + [Inleiding](/help/headless/setup/introduction.md)
+      + [Configuratie](/help/headless/setup/create-configuration.md)
+      + [Inhoudsfragmentmodel](/help/headless/setup/create-content-model.md)
+      + [Map Middelen](/help/headless/setup/create-assets-folder.md)
+      + [Inhoudsfragment](/help/headless/setup/create-content-fragment.md)
+      + [GraphQL-eindpunt](/help/headless/setup/create-api-request.md)
+   + Contentfragmenten {#content-fragments}
+      + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+      + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
+      + [Beheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
+      + Authoring{#authoring}
+         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
+         + [Teksteditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
+         + [Gekoppelde inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
+         + [Variaties](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
+      + [Metagegevens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
+      + [Boomstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
+      + [JSON-voorvertoning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+   + GraphQL API {#graphql-api}
+      + [GraphQL API voor inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
+      + [GrafiekQL-eindpunten beheren](/help/headless/graphql-api/graphql-endpoint.md)
+      + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
+      + [Sample GraphQL-query&#39;s](/help/headless/graphql-api/sample-queries.md)
+      + [Blijvende query&#39;s voor GraphQL](/help/headless/graphql-api/persisted-queries.md)
+   + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+   + Beveiliging {#security}
+      + [Machtigingen](/help/headless/security/permissions.md)
+      + [Verificatie](/help/headless/security/authentication.md)
+   + Implementatie {#deployment}
+      + [Architectuur](/help/headless/deployment/architecture.md)
+      + [Dispatcher](/help/headless/deployment/dispatcher.md)
+      + [CORS Config](/help/headless/deployment/cross-origin-resource-sharing.md)
+      + [Refererfilter](/help/headless/deployment/referrer-filter.md)
+   + Reizen zonder hoofd {#journeys}
+      + Headless Developer Journey {#developer}
+         + [Doorschijnend begrijpen in AEM](/help/journey-headless/developer/overview.md)
+         + [Meer informatie over CMS Headless Development](/help/journey-headless/developer/learn-about.md)
+         + [Aan de slag met AEM headless as a Cloud Service](/help/journey-headless/developer/getting-started.md)
+         + [Pad naar uw eerste ervaring met AEM zonder kop](/help/journey-headless/developer/path-to-first-experience.md)
+         + [Hoe te om uw inhoud als Modellen van de Inhoud te modelleren AEM](/help/journey-headless/developer/model-your-content.md)
+         + [Toegang krijgen tot uw inhoud via AEM API&#39;s voor levering](/help/journey-headless/developer/access-your-content.md)
+         + [Inhoud bijwerken via AEM Assets API&#39;s](/help/journey-headless/developer/update-your-content.md)
+         + [Hoe kan ik het allemaal samenbrengen?](/help/journey-headless/developer/put-it-all-together.md)
+         + [Live gaan met uw toepassing zonder kop](/help/journey-headless/developer/go-live.md)
+         + [Optioneel - Hoe kunt u toepassingen van één pagina maken met AEM](/help/journey-headless/developer/create-spa.md)
+      + Reis voor architect zonder hoofdinhoud {#architect}
+         + [Reis van architect zonder hoofdinhoud AEM overzicht](/help/journey-headless/architect/overview.md)
+         + [Content Modeling for Headless with AEM - Een introductie](/help/journey-headless/architect/introduction.md)
+         + [Leer de basisbeginselen van de Content Modeling voor headless met AEM](/help/journey-headless/architect/basics.md)
+         + [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](/help/journey-headless/architect/model-structure.md)
+      + Dagboekreis zonder hoofd {#translation}
+         + [Begrijp zonder hoofd vertaling in AEM](/help/journey-headless/translation/overview.md)
+         + [Ga aan de slag met AEM headless vertaling](/help/journey-headless/translation/getting-started.md)
+         + [Meer informatie over inhoud zonder kop en hoe u kunt vertalen in AEM](/help/journey-headless/translation/learn-about.md)
+         + [Vertaalaansluiting configureren](/help/journey-headless/translation/configure-connector.md)
+         + [Vertaalregels configureren](/help/journey-headless/translation/translation-rules.md)
+         + [Inhoud vertalen](/help/journey-headless/translation/translate-content.md)
+         + [Vertaalde inhoud publiceren](/help/journey-headless/translation/publish-content.md)
+      + Schrijverreis zonder kopinhoud {#author}
+         + [AEM Schrijverreis zonder kopinhoud - Overzicht](/help/journey-headless/author/overview.md)
+         + [Ontwerpen voor headless met AEM - Een inleiding](/help/journey-headless/author/introduction.md)
+         + [Grondbeginselen van ontwerpen voor headless met AEM](/help/journey-headless/author/basics.md)
+         + [Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten](/help/journey-headless/author/references.md)
+         + [Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten](/help/journey-headless/author/metadata-tagging.md)
 + Implementatie {#implementing}
    + [Applicaties voor AEM as a Cloud Service implementeren](/help/implementing/home.md)
    + Cloud Manager gebruiken {#using-cloud-manager}
@@ -690,49 +742,7 @@ ht-degree: 24%
             + [Een aangepaste voorspellende evaluator implementeren](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [Aangepaste foutpagina&#39;s](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM knooppunttypen](/help/implementing/developing/introduction/node-types.md)
-      + Erviteitsbeheer zonder hoofd {#headless}
-         + [Koploos en AEM](/help/implementing/developing/headless/introduction.md)
-         + Reizen zonder hoofd {#journeys}
-            + Headless Developer Journey {#developer}
-               + [Doorschijnend begrijpen in AEM](/help/journey-headless/developer/overview.md)
-               + [Meer informatie over CMS Headless Development](/help/journey-headless/developer/learn-about.md)
-               + [Aan de slag met AEM headless as a Cloud Service](/help/journey-headless/developer/getting-started.md)
-               + [Pad naar uw eerste ervaring met AEM zonder kop](/help/journey-headless/developer/path-to-first-experience.md)
-               + [Hoe te om uw inhoud als Modellen van de Inhoud te modelleren AEM](/help/journey-headless/developer/model-your-content.md)
-               + [Toegang krijgen tot uw inhoud via AEM API&#39;s voor levering](/help/journey-headless/developer/access-your-content.md)
-               + [Inhoud bijwerken via AEM Assets API&#39;s](/help/journey-headless/developer/update-your-content.md)
-               + [Hoe kan ik het allemaal samenbrengen?](/help/journey-headless/developer/put-it-all-together.md)
-               + [Live gaan met uw toepassing zonder kop](/help/journey-headless/developer/go-live.md)
-               + [Optioneel - Hoe kunt u toepassingen van één pagina maken met AEM](/help/journey-headless/developer/create-spa.md)
-            + Reis van architect zonder hoofdinhoud AEM {#architect}
-               + [Reis van architect zonder hoofdinhoud AEM overzicht](/help/journey-headless/architect/overview.md)
-               + [Content Modeling for Headless with AEM - Een introductie](/help/journey-headless/architect/introduction.md)
-               + [Leer de basisbeginselen van de Content Modeling voor headless met AEM](/help/journey-headless/architect/basics.md)
-               + [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](/help/journey-headless/architect/model-structure.md)
-         + Aan de slag met koppen {#getting-started}
-            + [Inleiding](/help/implementing/developing/headless/getting-started/introduction.md)
-            + [Een configuratie maken](/help/implementing/developing/headless/getting-started/create-configuration.md)
-            + [Een inhoudsfragmentmodel maken](/help/implementing/developing/headless/getting-started/create-content-model.md)
-            + [Een middelenmap maken](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
-            + [Een inhoudsfragment maken](/help/implementing/developing/headless/getting-started/create-content-fragment.md)
-            + [Inhoudsfragmenten openen en leveren](/help/implementing/developing/headless/getting-started/create-api-request.md)
-         + Contentfragmenten {#content-fragments}
-            + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-            + [Werken met contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
-            + [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
-            + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
-            + [Contentfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
-            + [Variaties - Authoring van content voor fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
-            + [Markering](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-            + [Gekoppelde inhoud gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
-            + [Metagegevens - Fragmenteigenschappen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-            + [Boomstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-            + [Voorvertoning - JSON-representatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
-         + Leverings-API {#delivery-api}
-            + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
-            + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-            + [AEM GraphQL API met inhoudfragmenten - Inhoud en query&#39;s als voorbeeld](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
-            + [Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
+      + [Erviteitsbeheer zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + Hybride en SPA ontwikkeling {#hybrid}
          + [Hybride en SPA met AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [JSON-export inschakelen voor een component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)

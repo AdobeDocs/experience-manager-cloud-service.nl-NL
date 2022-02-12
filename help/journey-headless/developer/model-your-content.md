@@ -2,7 +2,7 @@
 title: Uw inhoud modelleren
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw inhoud voor AEM levering zonder kop kunt modelleren met behulp van Content Modeling with Content Fragment Models and Content Fragments.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 8107e6fdf4a1e4b49d0ab1ac213cfcf286c5dc86
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Uw inhoud modelleren {#model-your-content}
 
-In dit deel van [AEM Headless Developer Journey](overview.md) leert u hoe u de inhoudsstructuur kunt modelleren. Dan realiseer die structuur voor Adobe Experience Manager (AEM) gebruikend de Modellen van de Fragmenten van de Inhoud en de Fragmenten van de Inhoud, voor hergebruik over kanalen.
+In dit deel van het [AEM Headless Developer Journey](overview.md)kunt u leren hoe u de inhoudsstructuur kunt modelleren. Dan realiseer die structuur voor Adobe Experience Manager (AEM) gebruikend de Modellen van de Fragmenten van de Inhoud en de Fragmenten van de Inhoud, voor hergebruik over kanalen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Aan het begin [Leer over CMS Headless Development](learn-about.md) bedekte de levering van inhoud zonder kop en waarom het zou moeten worden gebruikt. Vervolgens [Aan de slag met AEM Headless als een Cloud Service](getting-started.md) wordt AEM Headless beschreven in de context van uw eigen project.
+Aan het begin [Meer informatie over CMS Headless Development](learn-about.md) leverde inhoud zonder kop en waarom het zou moeten worden gebruikt. Vervolgens [Aan de slag met AEM headless as a Cloud Service](getting-started.md) beschreven AEM Headless in de context van uw eigen project.
 
-In het vorige document van de AEM hoofdloze reis, [Weg aan Uw Eerste Ervaring Gebruikend AEM Headless](path-to-first-experience.md), leerde u dan de stappen nodig om uw eerste project uit te voeren. Na het lezen moet u:
+In het vorige document van de AEM zonder kop: [Pad naar uw eerste ervaring met AEM zonder kop](path-to-first-experience.md), leerde u dan de stappen nodig om uw eerste project uit te voeren. Na het lezen moet u:
 
 * Belangrijke planningsoverwegingen voor het ontwerpen van uw inhoud begrijpen
 * Begrijp de stappen om hoofdloos uit te voeren afhankelijk van uw vereisten van het integratieniveau.
@@ -29,7 +29,7 @@ Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u hoe te om uw eig
 ## Doelstelling {#objective}
 
 * **Publiek**: Begin
-* **Doel**: Leer hoe u uw inhoudsstructuur kunt modelleren en realiseer die structuur met AEM Content Fragment Models and Content Fragments:
+* **Doelstelling**: Leer hoe u uw inhoudsstructuur kunt modelleren en realiseer die structuur met AEM Content Fragment Models and Content Fragments:
    * Introduceer concepten en terminologie met betrekking tot gegevens/inhoud modellering.
    * Ontdek waarom contentmodellering nodig is voor levering van inhoud zonder koptekst.
    * Leer hoe u deze structuur kunt realiseren met AEM Content Fragment Models (en inhoud met Content Fragments schrijven).
@@ -43,9 +43,9 @@ Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u hoe te om uw eig
 
 ## Inhoud modelleren {#content-modeling}
 
-*Het is een grote, slechte wereld daarbuiten*.
+*Het is een grote, slechte wereld daar*.
 
-Misschien niet, maar het is zeker een grote ***gecompliceerde*** wereld daarbuiten en gegevensmodellering wordt gebruikt om een vereenvoudigde vertegenwoordiging van een zeer (zeer) kleine onderafdeling te bepalen, gebruikend de specifieke informatie die voor een bepaald doel nodig is.
+Misschien niet, maar het is zeker een grote ***ingewikkeld*** en datamodellering wordt gebruikt om een vereenvoudigde weergave van een zeer (zeer) kleine subsectie te definiëren, met gebruikmaking van de specifieke informatie die voor een bepaald doel nodig is.
 
 >[!NOTE]
 >
@@ -81,25 +81,25 @@ Bijvoorbeeld speciale evenementen voor alle scholen in het gebied:
 
 ### Concepten {#concepts}
 
-Wat u wilt beschrijven worden bedoeld als **Entiteiten** - fundamenteel de &quot;dingen&quot;die wij informatie over willen opslaan.
+Wat u wilt beschrijven wordt bedoeld als **Entiteiten** - in feite de &quot;dingen&quot; waarover we informatie willen opslaan.
 
-De informatie die we over hen willen opslaan is **Attributes** (eigenschappen), zoals Naam, en Kwalificaties voor de leerkrachten.
+De informatie die we over hen willen opslaan, is de **Attributen** (eigenschappen), zoals Naam, en Kwalificaties voor de docenten.
 
-Dan zijn er verschillende **relaties** tussen de entiteiten. Een school heeft bijvoorbeeld meestal maar één hoofdleraar en veel leraren (en meestal is de hoofdleraar ook een leraar).
+Dan zijn er verschillende **Relaties** tussen de entiteiten. Een school heeft bijvoorbeeld meestal maar één hoofdleraar en veel leraren (en meestal is de hoofdleraar ook een leraar).
 
-Het proces om deze informatie, samen met het verband tussen hen te analyseren en te bepalen, wordt genoemd **Inhoud Modeling**.
+Het proces van het analyseren en definiëren van deze informatie, samen met de onderlinge relaties, wordt **Inhoud modelleren**.
 
 ### Basisbeginselen {#basics}
 
-Vaak moet u beginnen door een **Conceptueel Schema** op te stellen dat de entiteiten en hun verhoudingen beschrijft. Meestal is dit op hoog niveau (conceptueel).
+Vaak moet u beginnen door een **Conceptueel schema** die de entiteiten en hun relaties beschrijft. Meestal is dit op hoog niveau (conceptueel).
 
-Nadat dit stabiel is kunt u de modellen in een **Logisch Schema** vertalen dat de entiteiten, samen met de attributen, en de verhoudingen beschrijft. Op dit niveau moet u de definities zorgvuldig bestuderen om dubbel werk te voorkomen en uw ontwerp te optimaliseren.
+Als dit stabiel is, kunt u de modellen omzetten in een **Logisch schema** die de entiteiten, samen met de kenmerken, en de relaties beschrijft. Op dit niveau moet u de definities zorgvuldig bestuderen om dubbel werk te voorkomen en uw ontwerp te optimaliseren.
 
 >[!NOTE]
 >
 >Soms worden deze twee stappen samengevoegd, vaak afhankelijk van de complexiteit van uw scenario.
 
-Bijvoorbeeld, hebt u afzonderlijke entiteiten voor `Head Teacher` en `Teacher`, of eenvoudig een extra attribuut op het `Teacher` model nodig?
+Hebt u bijvoorbeeld aparte entiteiten nodig voor `Head Teacher` en `Teacher`of gewoon een extra kenmerk op de knop `Teacher` model?
 
 ### Waarborging van gegevensintegriteit {#data-integrity}
 
@@ -166,10 +166,10 @@ Een inhoudsfragmentmodel beschrijft een entiteit.
 
 Binnen een model:
 
-1. **Met** gegevenstypen kunt u de afzonderlijke kenmerken definiëren.
-Definieer bijvoorbeeld het veld met de naam van een docent als **Text** en de bijbehorende servicejaren als **Number**.
-1. Met de gegevenstypen **Content Reference** en **Fragmentverwijzing** kunt u relaties maken met andere inhoud binnen AEM.
-1. Met het gegevenstype **Fragmentverwijzing** kunt u meerdere structuurniveaus realiseren door de Content Fragments (op basis van het modeltype) te nesten. Dit is van essentieel belang voor het modelleren van inhoud.
+1. **Gegevenstypen** kunt u de afzonderlijke kenmerken definiëren.
+U kunt bijvoorbeeld het veld met de naam van een docent definiëren als **Tekst** en hun dienstjaren als **Getal**.
+1. De gegevenstypen **Content Reference** en **Fragmentverwijzing** kunt u relaties maken met andere inhoud binnen AEM.
+1. De **Fragmentverwijzing** Met het gegevenstype kunt u meerdere structuurniveaus realiseren door de Content Fragments (op basis van het modeltype) te nesten. Dit is van essentieel belang voor het modelleren van inhoud.
 
 Bijvoorbeeld:
 ![Inhoud modelleren met inhoudsfragmenten](assets/headless-modeling-01.png "Inhoud modelleren met inhoudsfragmenten")
@@ -193,12 +193,12 @@ AEM bevat de volgende gegevenstypen waarmee u uw inhoud kunt modelleren:
 
 Twee gegevenstypen bevatten verwijzingen naar inhoud buiten een specifiek fragment:
 
-* **Content**
-ReferenceThis verstrekt een eenvoudige verwijzing naar andere inhoud van om het even welk type.
+* **Content Reference**
+Dit verstrekt een eenvoudige verwijzing naar andere inhoud van om het even welk type.
 U kunt bijvoorbeeld naar een afbeelding op een bepaalde locatie verwijzen.
 
-* **Fragment**
-ReferenceThis biedt verwijzingen naar andere inhoudsfragmenten.
+* **Fragmentverwijzing**
+Hier vindt u verwijzingen naar andere inhoudsfragmenten.
 Dit type verwijzing wordt gebruikt om geneste inhoud te creëren, introducerend de verhoudingen nodig om uw inhoud te modelleren.
 Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
    * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
@@ -266,15 +266,15 @@ Zie De structuur van het voorbeeldinhoudsfragment voor een basisstructuur als vo
 
 ## Volgende functies {#whats-next}
 
-Nu u hebt geleerd hoe te om uw structuur te modelleren, en inhoud tot stand te brengen afhankelijk van dat, is de volgende stap aan [Leer hoe te om vragen te gebruiken GraphQL om tot uw inhoud van de Fragmenten van de Inhoud toegang te hebben en terug te winnen](access-your-content.md). Dit zal GraphQL introduceren en bespreken, dan bekijk sommige steekproefvragen om te zien hoe de dingen in praktijk werken.
+Nu u hebt geleerd hoe u uw structuur kunt modelleren en inhoud kunt maken die hiervan afhankelijk is, is de volgende stap: [Leer hoe te om vragen te gebruiken GraphQL om tot uw inhoud van de Fragmenten van de Inhoud toegang te hebben en terug te winnen](access-your-content.md). Dit zal GraphQL introduceren en bespreken, dan bekijk sommige steekproefvragen om te zien hoe de dingen in praktijk werken.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)  - de introductiepagina voor inhoudsfragmenten
-   * [De Fragmenten van de inhoud in Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md)  van de Configuratie - laten de functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe
-   * [Modellen](/help/assets/content-fragments/content-fragments-models.md)  voor inhoudsfragmenten maken en bewerken van modellen voor inhoudsfragmenten
-   * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)  beheren - Inhoudsfragmenten maken en ontwerpen; deze pagina leidt u tot andere gedetailleerde secties
-* [AEM GraphQL-schema](access-your-content.md) - hoe GraphQL modellen realiseert
-* [De structuur van het voorbeeldinhoudsfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Aan de slag met AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - Een korte videozelfstudie waarin een overzicht wordt gegeven van het gebruik van AEM functies zonder kop, waaronder het modelleren van inhoud en GraphQL
-   * [GraphQL Modelling Basics](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html)  - Leer hoe te om Inhoudsfragmenten in Adobe Experience Manager (AEM) voor gebruik met GraphQL te bepalen en te gebruiken.
+* [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) - de introductiepagina voor inhoudsfragmenten
+   * [Inhoudsfragmenten in de configuratiebrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md) - functionaliteit voor inhoudsfragmenten inschakelen in de configuratiegrowser
+   * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) - modellen voor inhoudsfragmenten maken en bewerken
+   * [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md) - het maken en ontwerpen van contentfragmenten; deze pagina leidt u tot andere gedetailleerde secties
+* [AEM GraphQL-schema&#39;s](access-your-content.md) - hoe GraphQL modellen realiseert
+* [De structuur van het voorbeeldinhoudsfragment](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
+* [Aan de slag met AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Een korte videozelfstudie waarin een overzicht wordt gegeven van het gebruik van functies zonder kop, zoals contentmodellering en GraphQL
+   * [Basisbeginselen van GraphQL-modellering](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) definieert en gebruikt voor gebruik met GraphQL.

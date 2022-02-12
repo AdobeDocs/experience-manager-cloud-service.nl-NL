@@ -1,26 +1,26 @@
 ---
-title: Learn about Creating Content Fragment Models in AEM
-description: Learn about the concepts and mechanics of modeling content for your Headless CMS using Content Fragments Models.
+title: Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM
+description: Leer over de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '688'
 ht-degree: 2%
 
 ---
 
-# Learn about Creating Content Fragment Models in AEM {#architect-headless-content-fragment-models}
+# Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM {#architect-headless-content-fragment-models}
 
-## The Story so Far {#story-so-far}
+## Het artikel tot nu toe {#story-so-far}
 
-[](overview.md)[](basics.md)
+Aan het begin van de [AEM Schrijverreis zonder kopinhoud](overview.md) de [Grondbeginselen van inhoudsmodellen voor headless met AEM](basics.md) heeft betrekking op de basisbegrippen en de terminologie die relevant zijn voor het ontwerpen van koploze producten.
 
-This article builds on these so you understand how to create your own Content Fragment Models for your AEM headless project.
+Dit artikel bouwt op deze voort zodat begrijpt u hoe te om uw eigen Modellen van het Fragment van de Inhoud voor uw project zonder AEM te creëren.
 
-## Objective {#objective}
+## Doelstelling {#objective}
 
-* ****
-* ****
+* **Publiek**: Begin
+* **Doelstelling**: de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 
 <!-- which persona does this? -->
 <!-- and who allows the configuration on the folders? -->
@@ -37,99 +37,99 @@ At the very start you need to enable Content Fragment Models for your site, this
 >See Additional Resources - Content Fragments in the Configuration Browser
 -->
 
-## Creating Content Fragment Models {#creating-content-fragment-models}
+## Modellen voor inhoudsfragmenten maken {#creating-content-fragment-models}
 
-Then the Content Fragments Models can be created and the structure defined. This can be done under Tools -> Assets -> Content Fragment Models.
+Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. U doet dit onder Gereedschappen -> Middelen -> Modellen voor inhoudsfragmenten.
 
-![](assets/cfm-tools.png)
+![Modellen van inhoudsfragmenten in gereedschappen](assets/cfm-tools.png)
 
-**** Here you can enter various key details.
+Nadat u deze optie hebt geselecteerd, navigeert u naar de locatie voor uw model en selecteert u **Maken**. Hier kunt u verschillende belangrijke details invoeren.
 
-**** This means that your model will be available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+De optie **Model inschakelen** is standaard geactiveerd. Dit betekent dat uw model beschikbaar is voor gebruik (bij het maken van inhoudsfragmenten) zodra u het hebt opgeslagen. U kunt dit desgewenst deactiveren. Er zijn later mogelijkheden om een bestaand model in te schakelen (of uit te schakelen).
 
-![](/help/assets/content-fragments/assets/cfm-models-02.png)
+![Inhoudsfragmentmodel maken](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-********
+Bevestigen met **Maken** en u kunt **Openen** uw model om de structuur te beginnen definiëren.
 
-## Defining Content Fragment Models {#defining-content-fragment-models}
+## Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
-****
+Wanneer u voor het eerst een nieuw model opent, ziet u een groot, leeg vak aan de linkerkant en een lange lijst met **Gegevenstypen** rechts:
 
-![](/help/assets/content-fragments/assets/cfm-models-03.png)
+![Leeg model](/help/assets/content-fragments/assets/cfm-models-03.png)
 
-So - what&#39;s to be done?
+Wat moet er gebeuren?
 
-****
+U kunt instanties van de **Gegevenstypen** op de linkerruimte - u bepaalt reeds uw model!
 
-![](/help/assets/content-fragments/assets/cfm-models-04.png)
+![Velden definiëren](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-**** These depend on the type being used. Bijvoorbeeld:
+Nadat u een gegevenstype hebt toegevoegd, moet u de **Eigenschappen** voor dat veld. Deze hangen van het type af dat wordt gebruikt. Bijvoorbeeld:
 
-![](/help/assets/content-fragments/assets/cfm-models-05.png)
+![Gegevenseigenschappen](/help/assets/content-fragments/assets/cfm-models-05.png)
 
-You can add as many fields as you need. Bijvoorbeeld:
+U kunt zoveel velden toevoegen als u nodig hebt. Bijvoorbeeld:
 
-![](/help/assets/content-fragments/assets/cfm-models-07.png)
+![Inhoudsfragmentmodel](/help/assets/content-fragments/assets/cfm-models-07.png)
 
-### Your Content Authors {#your-content-authors}
+### Uw makers van inhoud {#your-content-authors}
 
-Your content authors do not see the actual Data Types and Properties that you&#39;ve used to create your models. This means that you might have to provide help and information on how they complete specific fields. For basic information you can use the Field Label and Default Value, but more complex cases project specific documentation might need to be considered.
-
->[!NOTE]
->
->See Additional Resources - Content Fragment Models.
-
-## Managing Content Fragment Models {#managing-content-fragment-models}
-
-<!-- needs more details -->
-
-Managing your Content Fragment Models involves:
-
-* Enabling (or disabling) them - this makes them available for authors when creating Content Fragments.
-* Deleting - deletion is always needed, but you need to be aware of deleting a model that is already used for Content Fragments, in particular fragments that are already published.
-
-## Publishing {#publishing}
-
-<!-- needs more details -->
-
-Content fragment models need to be published when/before any dependent content fragments are published.
+De auteurs van de inhoud zien de gegevenstypen en eigenschappen die u hebt gebruikt om uw modellen te maken, niet. Dit betekent dat u mogelijk hulp en informatie moet bieden over de manier waarop specifieke velden worden ingevuld. Voor basisinformatie kunt u het Etiket van het Gebied en StandaardWaarde gebruiken, maar de complexere gevallen zouden de projectspecifieke documentatie kunnen moeten worden overwogen.
 
 >[!NOTE]
 >
->If an author tries to publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
+>Zie Aanvullende bronnen - Modellen van inhoudsfragmenten.
 
-** This aims to prevent changes that would result in errors to existing GraphQL schemas and queries, especially on the publish environment. ****
+## Modellen voor inhoudsfragmenten beheren {#managing-content-fragment-models}
 
-********
+<!-- needs more details -->
 
-## What&#39;s Next {#whats-next}
+Het beheren van uw modellen van het Fragment van de Inhoud impliceert:
 
-Now that you have learned the basics, the next step is to start creating your own Content Fragment Models.
+* Het toelaten (of het onbruikbaar maken) hen - dit maakt hen voor auteurs beschikbaar wanneer het creëren van de Fragmenten van de Inhoud.
+* Verwijderen - verwijdering is altijd nodig, maar u moet er rekening mee houden dat u een model verwijdert dat al wordt gebruikt voor inhoudsfragmenten, met name fragmenten die al zijn gepubliceerd.
+
+## Publiceren {#publishing}
+
+<!-- needs more details -->
+
+Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke inhoudsfragmenten worden gepubliceerd.
+
+>[!NOTE]
+>
+>Als een auteur een inhoudsfragment probeert te publiceren waarvoor het model nog niet is gepubliceerd, zal een selectielijst dit vermelden en het model zal met het fragment worden gepubliceerd.
+
+Zodra een model is gepubliceerd, wordt het *vergrendeld* in de modus ALLEEN-LEZEN bij de auteur. Dit is bedoeld om veranderingen te verhinderen die in fouten aan bestaande schema&#39;s en vragen GraphQL, vooral op het publicatiemilieu zouden resulteren. Het wordt in de console aangegeven door **Vergrendeld**.
+
+Wanneer het model **Vergrendeld** (in de modus ALLEEN-LEZEN) kunt u de inhoud en structuur van modellen zien, maar niet rechtstreeks bewerken; hoewel u kunt beheren **Vergrendeld** modellen van of de console, of de modelredacteur.
+
+## Volgende functies {#whats-next}
+
+Nu u de grondbeginselen hebt geleerd, is de volgende stap het creëren van uw eigen Modellen van het Fragment van de Inhoud te beginnen.
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Authoring van concepten](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
+* [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** -console, maar veel/de meeste functies zijn ook relevant voor het navigeren naar en het uitvoeren van actie op **Modellen van inhoudsfragmenten** onder de **Activa** console.
 
 * [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
 
    * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Defining your Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [Het model van het inhoudsfragment definiëren](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [Enabling or Disabling a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [Een inhoudsfragmentmodel in- of uitschakelen](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Modellen voor inhoudsfragmenten toestaan in de middelenmap](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Deleting a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [Een inhoudsfragmentmodel verwijderen](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [Publishing a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [Een inhoudsfragmentmodel publiceren](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [Unpublishing a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [Publicatie van een inhoudsfragmentmodel ongedaan maken](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [Locked (Published) Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [Vergrendelde (gepubliceerde) modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
-* Getting Started Guides
+* Aan de slag - hulplijnen
 
-   * [Creating Content Fragment Models Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-content-model.md)
+   * [Modellen voor inhoudsfragmenten maken zonder kop instellen](/help/headless/setup/create-content-model.md)

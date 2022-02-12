@@ -2,9 +2,9 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1696'
 ht-degree: 1%
 
 ---
@@ -268,7 +268,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
 
 * Aan de slag - hulplijnen
-   * [Snelstartgids voor mappen zonder middelenkoppen maken](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+   * [Een headless Setup voor middelenmappen maken](/help/headless/setup/create-assets-folder.md)
 
 * Reis van architect zonder hoofdinhoud AEM
 

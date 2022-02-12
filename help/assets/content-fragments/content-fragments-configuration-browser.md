@@ -4,7 +4,7 @@ description: Leer hoe te om bepaalde functionaliteit van het Fragment van de Inh
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 2e6f59fe663a3c93fc612b888f151d75dc5821f6
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 17%
@@ -27,7 +27,7 @@ Voordat u Inhoudsfragmenten kunt gebruiken, moet u de opdracht **Configuratiebro
 >Als u deze optie niet inschakelt **Modellen van inhoudsfragmenten**:
 >
 >* de **Maken** Deze optie is niet beschikbaar voor het maken van nieuwe modellen.
->* u kunt niet [Selecteer de configuratie van Plaatsen om het verwante eindpunt tot stand te brengen](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* u kunt niet [Selecteer de configuratie van Plaatsen om het verwante eindpunt tot stand te brengen](/help/headless/graphql-api/graphql-endpoint.md).
 
 
 Voor het inschakelen van de functionaliteit voor inhoudsfragmenten moet u:

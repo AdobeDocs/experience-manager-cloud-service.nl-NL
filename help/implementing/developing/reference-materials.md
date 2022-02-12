@@ -2,7 +2,7 @@
 title: API-referentiematerialen
 description: AEM heeft uitgebreide en krachtige API's die u kunt gebruiken voor uw digitale-ervaringsproject.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 3%
@@ -53,7 +53,7 @@ Als een API door AEM wordt verstrekt, verkies het over Sling, JCR, en OSGi. Als 
 
 >[!TIP]
 >
->Zie het document [Java API Best Practices](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html) voor meer informatie over deze richtlijnen.
+>Zie het document voor meer informatie over deze richtlijnen [Tips en trucs voor Java API begrijpen.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ## Services en API&#39;s voor levering en contentbeheer AEM {#delivery-apis}
 
@@ -66,7 +66,7 @@ AEM biedt aanpasbare componenten en leveringsopties voor inhoud.
 | [JSON-export inschakelen voor een component](/help/implementing/developing/components/enabling-json-exporter.md) | JSON-export van componentinhoud genereren op basis van een modellerframework |
 | [Elementen-API](/help/assets/mac-api-assets.md) | Hiermee kunt u CRUD-bewerkingen (read-read-update-delete) maken voor elementen, waaronder binaire elementen, metagegevens, uitvoeringen en opmerkingen. Zie AEM Assets HTTP API |
 | [HTTP-API voor inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md) | Inhoud rechtstreeks benaderen via de HTTP-API via CRUD-bewerkingen |
-| [Content Fragment GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) | Efficiënte levering van inhoudsfragmenten aan JavaScript-clients inschakelen in CMS-implementaties zonder kop |
+| [Content Fragment GraphQL API](/help/headless/graphql-api/content-fragments.md) | Efficiënte levering van inhoudsfragmenten aan JavaScript-clients inschakelen in CMS-implementaties zonder kop |
 | [Content Fragments Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | De exacte indeling van ondersteunde HTTP-elementaanvragen |
 
 ## SPA-specifieke API&#39;s {#spa-apis}
@@ -82,4 +82,4 @@ AEM SDK-framework van de Editor (SPA) voor één pagina biedt specifieke JavaScr
 
 >[!TIP]
 >
->Bekijk de [SPA Inleiding en Analyse](/help/implementing/developing/hybrid/introduction.md) voor meer informatie over single-page toepassingen.
+>Kijk uit de [SPA Inleiding en Analyse](/help/implementing/developing/hybrid/introduction.md) voor meer informatie over toepassingen van één pagina.

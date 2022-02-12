@@ -1,14 +1,13 @@
 ---
 title: Hoofdletters en headless in AEM
 description: AEM projecten kunnen worden uitgevoerd in een krachtig en zonder kop model, maar de keuze is niet binair. AEM biedt de flexibiliteit om de voordelen van beide modellen in één project te benutten.
-translation-type: tm+mt
-source-git-commit: 772717b7ad3baa17a58e251c128663035eb89931
+exl-id: 709850ca-7757-47ab-9625-f411121cde2c
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 0%
 
 ---
-
 
 # Hoofdletters en headless in AEM {#headful-headless}
 
@@ -22,7 +21,7 @@ AEM kan ook worden gebruikt om inhoud eenvoudig te beheren, zodat de presentatie
 
 Maar dit hoeft geen binaire keuze te zijn. AEM biedt ongekende flexibiliteit, die u toestaat om de voordelen van beide modellen voor uw project te exploiteren.
 
-![AEM implementatiemodellen](headless/assets/aem-implementation-models.png)
+![Implementatiemodellen AEM](/help/headless/assets/aem-implementation-models.png)
 
 In een krachtig of volledig-stapelmodel, wordt de inhoud beheerd in de AEM bewaarplaats en AEM componenten die op Java, HTML, enz. worden gebaseerd. worden gebruikt om de inhoud weer te geven voor de gebruikerservaring. In dit model gebeurt het maken van de inhoud, het vormgeven, het presenteren en het leveren ervan allemaal in AEM.
 
@@ -44,7 +43,7 @@ In de volgende sectie worden deze integratieniveaus nader beschreven.
 
 >[!NOTE]
 >
->Natuurlijk kunt u de SPA van de webshop ook opnieuw implementeren als een volledig functionerende AEM [met behulp van het AEM Editor-framework.](/help/implementing/developing/hybrid/introduction.md) Als u al een nieuwe webshop of andere SPA hebt AEM en wilt maken, is dit de aanbevolen methode, maar valt deze buiten het bereik van dit document.
+>Natuurlijk kunt u de SPA van de webshop ook opnieuw implementeren als een volledig functionerende AEM SPA [het AEM SPA Editor-framework gebruiken.](/help/implementing/developing/hybrid/introduction.md) Als u al een nieuwe webshop of andere SPA hebt AEM en wilt maken, is dit de aanbevolen methode, maar valt deze buiten het bereik van dit document.
 
 ## SPA integratieniveaus {#integration-levels}
 
@@ -54,19 +53,19 @@ SPA integratie ligt op een spectrum van vier niveaus in AEM.
    * De SPA en AEM bestaan afzonderlijk en wisselen geen informatie uit.
    * Inhoud wordt in twee aparte systemen gemaakt, beheerd en afzonderlijk geleverd.
 * **Niveau 1: Integratie van inhoudsfragmenten**
-   * [Inhoudsfragmenten ](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om beperkte inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om beperkte inhoud voor de SPA te maken en te beheren.
+   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan alleen in de SPA worden weergegeven.
 * **Niveau 2: De SPA insluiten in AEM**
-   * [Inhoudsfragmenten ](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
+   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan binnen AEM in context worden weergegeven.
    * Beperkte inhoud kan binnen AEM worden bewerkt.
 * **Niveau 3: SPA insluiten en volledig inschakelen in AEM**
-   * [Inhoudsfragmenten ](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
+   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
    * Inhoud kan binnen AEM in context worden weergegeven.
    * De meeste inhoud kan worden bewerkt in AEM.
 
@@ -78,9 +77,9 @@ Het voordeel en de flexibiliteit van AEM worden duidelijk met niveaus 2 en 3, te
 
 Er zijn verschillende gereedschappen in AEM beschikbaar, afhankelijk van het integratieniveau dat u kiest. Elk niveau bouwt op de hulpmiddelen voort die in het vorige worden gebruikt. De volgende lijst verwijst naar de relevante bronnen.
 
-* **Niveau 1:** Inhoudsfragmenten en het  [AEM ](/help/implementing/developing/headless/introduction.md) kader zonder kop kunnen worden gebruikt om AEM inhoud aan de SPA te leveren.
+* **Niveau 1:** Inhoudsfragmenten en de [AEM kader zonder kop](/help/headless/introduction.md) kan worden gebruikt om AEM inhoud aan de SPA te leveren.
 * **Niveau 2:** Naast niveau 1:
-   * [De ](/help/implementing/developing/hybrid/remote-page.md) component RemotePage kan worden gebruikt om de externe SPA in te sluiten in AEM waar AEM inhoud in-context kan worden bekeken.
-   * Bepaalde punten op de SPA kunnen ook worden ingeschakeld om beperkte bewerkingen in AEM toe te staan.](/help/implementing/developing/hybrid/editing-external-spa.md)[
+   * [De component RemotePage](/help/implementing/developing/hybrid/remote-page.md) kan worden gebruikt om de externe SPA in te sluiten in AEM waar AEM inhoud in context kan worden bekeken.
+   * Bepaalde punten op de SPA kunnen ook worden ingeschakeld op [beperkte bewerking in AEM toestaan.](/help/implementing/developing/hybrid/editing-external-spa.md)
 * **Niveau 3:** Naast niveau 2:
    * Volledige zones van de SPA kunnen worden ingeschakeld om uitgebreide bewerkingen in AEM toe te staan.
