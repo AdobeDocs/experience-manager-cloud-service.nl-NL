@@ -2,7 +2,7 @@
 title: Onderhoudstaken in AEM as a Cloud Service
 description: Onderhoudstaken in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 3e0de69033883bb77fae5be83d47167663bea3fd
+source-git-commit: 83fe5c7b3a30f2444cddd982e9cc14a07c410530
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 0%
@@ -34,13 +34,13 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
 | Versie wissen | Adobe | Volledig eigendom van Adobe, maar in de toekomst zullen klanten bepaalde parameters kunnen configureren. |
 | Logboek controleren leegmaken | Adobe | Volledig eigendom van Adobe, maar in de toekomst zullen klanten bepaalde parameters kunnen configureren. |
 | Lucene Binaries Cleanup | Adobe | Ongebruikt en daarom door Adobe uitgeschakeld. |
-| Ad-hoc taak wissen | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder  `/libs` door eigenschappen onder de omslag  `/apps/settings/granite/operations/maintenance/granite_weekly` of  `granite_daily`te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven (naam het  `granite_TaskPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm de eigenschappen OSGI zie de documentatie van de Taak  [AEM 6.5 van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Werkstroom leegmaken | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder  `/libs` door eigenschappen onder de `/apps/settings/granite/operations/maintenance/granite_weekly` omslag te creëren  `granite_daily`. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven (naam het  `granite_WorkflowPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm de eigenschappen OSGI zie  [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Project wissen | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder  `/libs` door eigenschappen onder de omslag  `/apps/settings/granite/operations/maintenance/granite_weekly` of  `granite_daily`te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een knoop onder de knoop hierboven (naam het  `granite_ProjectPurgeTask`) met de aangewezen eigenschappen toe te voegen. <br> Vorm eigenschappen OSGI zie  [AEM 6.5 documentatie van de Taak van het Onderhoud](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Ad-hoc taak wissen | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder `/libs` door eigenschappen onder de map te maken `/apps/settings/granite/operations/maintenance/granite_weekly` of `granite_daily`. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven toe te voegen (noem het) `granite_TaskPurgeTask`) met de juiste eigenschappen. <br> Vorm de eigenschappen OSGI zie [AEM 6.5 Onderhoudstaken](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Werkstroom leegmaken | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder `/libs` door eigenschappen onder de map te maken`/apps/settings/granite/operations/maintenance/granite_weekly` of `granite_daily`. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven toe te voegen (noem het) `granite_WorkflowPurgeTask`) met de juiste eigenschappen. <br> De eigenschappen van OSGI configureren [AEM 6.5 Onderhoudstaken](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Project wissen | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder `/libs` door eigenschappen onder de map te maken `/apps/settings/granite/operations/maintenance/granite_weekly` of `granite_daily`. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een knoop onder de knoop hierboven toe te voegen (noem het `granite_ProjectPurgeTask`) met de juiste eigenschappen. <br> Eigenschappen van OSGI configureren, zie [AEM 6.5 Onderhoudstaken](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen van ad-hoctaken en het opruimen van projecten plannen die tijdens de dagelijkse, wekelijkse of maandelijkse onderhoudsperiode moeten worden uitgevoerd. Deze configuraties zouden direct in broncontrole moeten worden uitgegeven. In de onderstaande tabel worden de configuratieparameters beschreven die beschikbaar zijn voor elk venster. Zie ook de locaties en codevoorbeelden na de tabel.
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
     <th>Configuratie van venster Onderhoud</th>
@@ -53,9 +53,9 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
   <td>
-  <p><strong>windowSchedule=daily</strong>  (deze waarde mag niet worden gewijzigd)</p>
-  <p><strong>windowStartTime=HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
-  <p><strong>windowEndTime=HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
+  <p><strong>windowSchedule=daily</strong> (deze waarde mag niet worden gewijzigd)</p>
+  <p><strong>windowStartTime=HH:MM</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
+  <p><strong>windowEndTime=HH:MM</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
   </td> 
   </tr>
   <tr>
@@ -63,9 +63,9 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
     <td>
-    <p><strong>windowSchedule=wekelijks</strong>  (deze waarde mag niet worden gewijzigd)</p>
-    <p><strong>windowStartTime=HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het wekelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
-    <p><strong>windowEndTime=HH:</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Wekelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
+    <p><strong>windowSchedule=wekelijks</strong> (deze waarde mag niet worden gewijzigd)</p>
+    <p><strong>windowStartTime=HH:MM</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het wekelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
+    <p><strong>windowEndTime=HH:MM</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Wekelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
     <p><strong>windowScheduleWeekdays= Array van 2 waarden van 1-7 (bijvoorbeeld [5,5])</strong> De eerste waarde van de array is de startdag waarop de taak is gepland en de tweede waarde is de einddag waarop de taak wordt gestopt. De exacte tijd van het begin en het einde wordt bepaald door respectievelijk windowStartTime en windowEndTime.</p>
     </td>
   </tr>
@@ -74,11 +74,11 @@ Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
     <td>
-    <p><strong>windowSchedule=daily</strong>  (deze waarde mag niet worden gewijzigd)</p>
-    <p><strong>windowStartTime=HH:</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die aan het Maandelijkse Onderhoudsvenster zijn gekoppeld, moeten worden uitgevoerd.</p>
-    <p><strong>windowEndTime=HH:</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die zijn gekoppeld aan het venster Maandelijks onderhoud niet meer worden uitgevoerd als deze nog niet zijn voltooid.</p>
+    <p><strong>windowSchedule=daily</strong> (deze waarde mag niet worden gewijzigd)</p>
+    <p><strong>windowStartTime=HH:MM</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die aan het Maandelijkse Onderhoudsvenster zijn gekoppeld, moeten worden uitgevoerd.</p>
+    <p><strong>windowEndTime=HH:MM</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die zijn gekoppeld aan het venster Maandelijks onderhoud niet meer worden uitgevoerd als deze nog niet zijn voltooid.</p>
     <p><strong>windowScheduleWeekdays=Array van 2 waarden van 1-7 (bijvoorbeeld [5,5])</strong> De eerste waarde van de array is de startdag waarop de taak is gepland en de tweede waarde is de einddag waarop de taak wordt gestopt. De exacte tijd van het begin en het einde wordt bepaald door respectievelijk windowStartTime en windowEndTime.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 aan programma op de eerste week van de maand of 1 aan programma op de laatste week van de maand. Het ontbreken van een waarde zou banen effectief plannen elke dag zoals die door windowScheduleWeekdays elke maand wordt geregeld.</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 naar schema op de eerste week van de maand of 1 naar schema op de laatste week van de maand. Het ontbreken van een waarde zou banen effectief plannen elke dag zoals die door windowScheduleWeekdays elke maand wordt geregeld.</p>
     </td> 
     </tr>
     </tbody>
