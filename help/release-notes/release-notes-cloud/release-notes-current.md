@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
+source-git-commit: 7935ed5c332934cf1824ef8e6b52b6a7f451dc34
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1083'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,10 @@ De volgende release (2022.2.0) vindt plaats op 24 februari 2022.
 ## Video vrijgeven {#release-video}
 
 Kijk eens naar de [Overzicht release januari 2022](https://video.tv.adobe.com/v/340120) video voor een overzicht van de functies die in de release 2022.1.0 zijn toegevoegd.
+
+## Adobe Experience Manager Sites as a Cloud Service {#sites}
+
+* De **[Vooruiteinde pijplijn inschakelen](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** is beschikbaar in het dialoogvenster **Site** rail van de Sites-console voor sites die versie 2 van de Page Core-component gebruiken. Deze knoop vormt de plaats om de thema&#39;s te laden die met de Voorste Pijpleiding van het Eind bovenop de bestaande cliëntbibliotheken worden opgesteld.
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
