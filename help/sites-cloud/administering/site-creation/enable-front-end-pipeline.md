@@ -3,9 +3,9 @@ title: Voorste pijplijn inschakelen
 description: Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt toelaten om plaatsthema's te gebruiken om uw plaats sneller aan te passen.
 feature: Administering
 role: Admin
-source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
+source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,18 @@ De plaatsen die op plaatsmalplaatjes worden gebaseerd kunnen hefboomwerking de f
 >Als u niet vertrouwd met de front-end pijpleiding bent en hoe te om plaatsen snel op te stellen gebruikend het en plaatssjablonen, te herzien gelieve [Reis voor snel maken van sites](/help/journey-sites/quick-site/overview.md) voor een inleiding.
 
 Als u uw bestaande site niet hebt gemaakt op basis van sitesjablonen en -thema&#39;s, kunt AEM uw site zodanig configureren dat de thema&#39;s worden geladen die worden geïmplementeerd met de Front End Pipeline boven op de bestaande clientbibliotheken.
+
+## Technische details {#technical-details}
+
+Wanneer u de front-end pijpleiding voor een plaats activeert, AEM brengt de volgende veranderingen in uw plaatsstructuur aan.
+
+* Alle pagina&#39;s van de site bevatten één extra CSS- en JS-bestand, dat kan worden gewijzigd door updates te implementeren via een speciale front-end pipe van Cloud Manager.
+* De toegevoegde CSS- en JS-bestanden zijn aanvankelijk leeg, maar u kunt een map met &quot;themabronnen&quot; downloaden om de mapstructuur te starten waarmee u CSS- en JS-code-updates via die pijplijn kunt implementeren.
+* Deze wijziging kan alleen ongedaan worden gemaakt door een ontwikkelaar door de opdracht `SiteConfig` en `HtmlPageItemsConfig` knooppunten die met deze bewerking onder worden gemaakt `/conf/<site-name>/sling:configs`.
+
+>[!NOTE]
+>
+>Deze actie zal niet automatisch de bestaande cliëntbibliotheken van de plaats omzetten om de doopvont-eind pijpleiding te gebruiken. Het verplaatsen van deze bronnen van de omslag van de cliëntbibliotheek naar de front-end pijpleidingsomslag is een taak die handwerk door een front-end ontwikkelaar vereist.
 
 ## Vereisten {#requirements}
 
