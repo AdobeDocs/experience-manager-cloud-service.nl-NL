@@ -2,7 +2,7 @@
 title: Niet-productiepijpleidingen configureren
 description: Leer hoe te om niet-productiepijpleidingen te vormen om de kwaliteit van uw code te testen alvorens aan productiemilieu's op te stellen.
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 0%
@@ -124,7 +124,7 @@ Een configuratiepijplijn van de Webrij stelt configuraties HTTPD/Dispatcher op. 
 >
 >Als er voor de geselecteerde omgeving al een pijpleiding voor code in de weblaag bestaat, wordt deze selectie uitgeschakeld.
 
-Om de configuratie van de full-stack code non-production pijpleiding te beëindigen, volg deze stappen.
+Voer de volgende stappen uit om de configuratie van de niet-productiepijplijn voor code op het web te voltooien.
 
 1. Op de **Broncode** moet u de volgende opties definiëren.
 
