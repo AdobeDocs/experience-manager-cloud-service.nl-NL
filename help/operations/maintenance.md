@@ -2,9 +2,9 @@
 title: Onderhoudstaken in AEM as a Cloud Service
 description: Onderhoudstaken in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 83fe5c7b3a30f2444cddd982e9cc14a07c410530
+source-git-commit: 7ff9cabe239c8e474b03c4ecce6d32bf659665a7
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,64 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
 | Project wissen | Klant | Moet worden gedaan in de geest. <br> Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder `/libs` door eigenschappen onder de map te maken `/apps/settings/granite/operations/maintenance/granite_weekly` of `granite_daily`. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. <br> Laat de onderhoudstaak toe door een knoop onder de knoop hierboven toe te voegen (noem het `granite_ProjectPurgeTask`) met de juiste eigenschappen. <br> Eigenschappen van OSGI configureren, zie [AEM 6.5 Onderhoudstaken](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 Klanten kunnen elk van de taken voor het opschonen van werkstromen, het opruimen van ad-hoctaken en het opruimen van projecten plannen die tijdens de dagelijkse, wekelijkse of maandelijkse onderhoudsperiode moeten worden uitgevoerd. Deze configuraties zouden direct in broncontrole moeten worden uitgegeven. In de onderstaande tabel worden de configuratieparameters beschreven die beschikbaar zijn voor elk venster. Zie ook de locaties en codevoorbeelden na de tabel.
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>Onderhoudstaken</th>
+    <th>Wie eigenaar is van de configuratie</th>
+    <th>Hoe te om (facultatief) te vormen</th>
+  </tr>  
+  <tr>
+    <td>Afvalverzameling datastore</td>
+    <td>Adobe</td>
+    <td>N.v.t. volledig in Adobe bezit</td>
+  </td> 
+  </tr>
+  <tr>
+    <td>Versie wissen</td>
+    <td>Adobe</td>
+    <td>Volledig eigendom van Adobe, maar in de toekomst zullen klanten bepaalde parameters kunnen configureren.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Logboek controleren leegmaken</td>
+    <td>Adobe</td>
+    <td>Volledig eigendom van Adobe, maar in de toekomst zullen klanten bepaalde parameters kunnen configureren.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Lucene Binaries Cleanup</td>
+    <td>Adobe</td>
+    <td>Ongebruikt en daarom door Adobe uitgeschakeld.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Ad-hoc taak wissen</td>
+    <td>Klant</td>
+    <td>
+    <p>Moet worden gedaan in de geest. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> of <code>granite_daily</code>.</p>
+    <p>Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven toe te voegen (noem het) <code>granite_TaskPurgeTask</code>) met de juiste eigenschappen. Vorm de eigenschappen OSGI zie <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 Onderhoudstaken</a>.</p>
+  </td>
+  </tr>
+    <tr>
+    <td>Werkstroom leegmaken</td>
+    <td>Klant</td>
+    <td>
+    <p>Moet worden gedaan in de geest. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> of <code>granite_daily</code>. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
+    <p>Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven toe te voegen (noem het) <code>granite_WorkflowPurgeTask</code>) met de juiste eigenschappen. De eigenschappen van OSGI configureren <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 Onderhoudstaken</a>.</p>
+  </td>
+  </tr>
+  <tr>
+    <td>Project wissen</td>
+    <td>Klant</td>
+    <td>
+    <p>Moet worden gedaan in de geest. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> of <code>granite_daily</code>. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
+    <p>Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven toe te voegen (noem het) <code>granite_ProjectPurgeTask</code>) met de juiste eigenschappen. De eigenschappen van OSGI configureren <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 Onderhoudstaken</a>.</p>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 <table style="table-layout:auto">
  <tbody>
