@@ -1,9 +1,9 @@
 ---
 title: Uw aangepaste thema implementeren
 description: Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.
-source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
+source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -102,6 +102,7 @@ AEM is een krachtig hulpmiddel en er zijn veel extra opties beschikbaar. Bekijk 
 
 Hieronder vindt u een aantal aanvullende bronnen die dieper ingaan op bepaalde concepten die in dit document worden genoemd.
 
+* [Het Siterail gebruiken om uw Sitethema te beheren](/help/sites-cloud/administering/site-creation/site-rail.md) - Leer de krachtige functies van de Site-rail om u te helpen uw site eenvoudig aan te passen en te beheren, zoals het downloaden van themabronnen en het beheren van themaversies.
 * [as a Cloud Service technische documentatie AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - Als u al een duidelijk inzicht hebt in AEM, kunt u de diepgaande technische documenten direct raadplegen.
 * [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Als u meer informatie wilt over de functies van Cloud Manager, kunt u de diepgaande technische documenten direct raadplegen.
 * [Op rollen gebaseerde machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Raadpleeg dit document voor meer informatie over deze rollen en hoe u deze kunt beheren.

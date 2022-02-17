@@ -1,17 +1,17 @@
 ---
-title: Voorste pijplijn inschakelen
+title: Het toelaten van de Voor-Eind Pijpleiding
 description: Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt toelaten om plaatsthema's te gebruiken om uw plaats sneller aan te passen.
 feature: Administering
 role: Admin
-source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
+source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
 
-# Voorste pijplijn inschakelen {#enable-front-end-pipeline}
+# Het toelaten van de Voor-Eind Pijpleiding {#enable-front-end-pipeline}
 
 Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt toelaten om plaatsthema&#39;s te gebruiken om uw plaats sneller aan te passen.
 
@@ -47,7 +47,7 @@ AEM kan uw bestaande plaats automatisch aanpassen om de front-end pijpleiding te
 
 ## Het toelaten van Voorste Pijl-Eind {#enabling}
 
-Het inschakelen van uw site wordt uitgevoerd via de Sites-console.
+Het toelaten van uw plaats doet van de console van Plaatsen gebruikend [Sitemlek.](site-rail.md)
 
 1. Meld u aan bij AEM en navigeer naar uw site via **Algemene navigatie** > **Sites**.
 1. Selecteer uw site in de console. U moet de hoofdmap van de site selecteren en geen onderliggende pagina&#39;s.
@@ -58,7 +58,8 @@ Het inschakelen van uw site wordt uitgevoerd via de Sites-console.
 
 1. AEM vraagt u om te bevestigen met een overzicht van de aangebrachte wijzigingen. Bevestig en uw site is aangepast.
 
-Nu is uw plaats klaar om de front-end pijpleiding te gebruiken. Meer over de front-end pijpleiding leren zie:
+Nu is uw plaats klaar om de front-end pijpleiding te gebruiken. Meer over de front-end pijpleiding en het beheren van uw plaatsthema leren zie:
 
+* [Het Siterail gebruiken om uw Sitethema te beheren](site-rail.md)
 * [Reis voor snel maken van site](/help/journey-sites/quick-site/overview.md) - Deze documentatietraject biedt u een overzicht van het proces van het snel implementeren van een site met behulp van de front-end pijplijn en het hulpprogramma Snel site maken.
 * [CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) - In dit document wordt de front-end pijplijn beschreven in de context van de full-stack en web-tier pijpleidingen.
