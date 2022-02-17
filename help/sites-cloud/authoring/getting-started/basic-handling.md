@@ -2,9 +2,9 @@
 title: Basisbewerkingen
 description: Geniet van gemak bij het navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
+source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '2954'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ Klikken of tikken **Volgende** om naar de volgende pagina van het overzicht te g
 
 Het overzicht zal de volgende keer opnieuw beginnen u tot een console toegang hebt tenzij u of alle dia&#39;s bekijkt of de optie controleert **Dit niet meer weergeven**.
 
-## Global Navigation {#global-navigation}
+## Algemene navigatie {#global-navigation}
 
 U kunt tussen de consoles navigeren met het algemene navigatievenster. Dit wordt geactiveerd als een vervolgkeuzelijst met volledig scherm wanneer u op de Adobe Experience Manager-koppeling klikt of tikt linksboven in het scherm.
 
@@ -49,7 +49,7 @@ U kunt het globale navigatievenster sluiten door te klikken of te tikken **Sluit
 
 ![Bovenste balk van het navigatievenster](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
-Globale navigatie heeft twee deelvensters, die door pictogrammen bij de linkermarge van het scherm worden vertegenwoordigd:
+Globale navigatie heeft twee deelvensters, weergegeven door pictogrammen aan de linkermarge van het scherm:
 
 * **[Navigatie](#navigation-panel)** - Wordt vertegenwoordigd door een kompas en het standaarddeelvenster wanneer u zich aanmeldt bij AEM
 * **[Gereedschappen](#tools-panel)** - Vertegenwoordigd door een hamer
@@ -68,7 +68,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
 
 | Console | Doel |
 |---|---|
-| Projecten | De console van Projecten geeft u directe toegang tot uw projecten. [Projecten zijn virtuele dashboards](/help/sites-cloud/authoring/projects/overview.md) die kan worden gebruikt om een team te bouwen. You can then give that team access to resources, workflows, and tasks, thus allowing people to work towards a common goal. |
+| Projecten | De console van Projecten geeft u directe toegang tot uw projecten. [Projecten zijn virtuele dashboards](/help/sites-cloud/authoring/projects/overview.md) die kan worden gebruikt om een team te bouwen. U kunt dat team dan toegang tot middelen, werkschema&#39;s, en taken geven, zo toestaand mensen om aan een gemeenschappelijk doel te werken. |
 | Sites | Met de siteconsoles kunt u [sites maken, weergeven en beheren](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) uitvoeren op uw AEM. Via deze console kunt u pagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren. |
 | Ervaringsfragmenten | An [Ervaar fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een stand-alone ervaring die kan worden hergebruikt over kanalen en variaties hebben, die het probleem van het herhaaldelijk kopiëren en het kleven ervaringen of delen van ervaringen bespaart. |
 | Assets | Met de middelenconsole kunt u importeren en beheren [digitale elementen, zoals afbeeldingen, video&#39;s, documenten en audiobestanden](/help/assets/overview.md). Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM wordt uitgevoerd. U kunt ook [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) vanaf de middelenconsole. |
@@ -132,15 +132,15 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
    Klik gewoon op de tekst van de broodkruimel om een vervolgkeuzelijst weer te geven met de niveaus van de hiërarchie van het momenteel geselecteerde item. Klik op een bericht om naar die locatie te gaan.
 
-   ![Example of breadcrumbs expanded](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
+   ![Voorbeeld van uitvouwen broodkruimels](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
-* **Create** button
+* **Maken** knop
 
    ![Knop Maken](/help/sites-cloud/authoring/assets/create.png)
 
    Zodra geklikt, zijn de getoonde opties aangewezen aan de console/de context.
 
-* [Views](#viewing-and-selecting-resources)
+* [Weergaven](#viewing-and-selecting-resources)
 
    Het weergavepictogram bevindt zich helemaal rechts van de AEM werkbalk. De huidige weergave wordt ook gewijzigd. In de standaardweergave bijvoorbeeld **Kolomweergave** het laat zien :
 
@@ -156,7 +156,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
 * Toetsenbordnavigatie
 
-   You can navigate a website using only the keyboard. Hierbij wordt de standaardbrowserfunctionaliteit van het **TAB** toets (of **OPT+TAB**) om u te verplaatsen tussen elementen op de pagina die u kunt focussen.
+   U kunt alleen met het toetsenbord door een website navigeren. Hierbij wordt de standaardbrowserfunctionaliteit van het **TAB** toets (of **OPT+TAB**) om u te verplaatsen tussen elementen op de pagina die u kunt focussen.
 
    In de **Sites** console daar is de toegevoegde optie aan **Overslaan naar hoofdinhoud**. Dit wordt zichtbaar aangezien u door de kopbalopties van labels voorziet, en versnelt uw navigatie door u toe te staan om de standaardelementen in de (product) toolbar over te slaan en u rechtstreeks aan de belangrijkste inhoud te nemen.
 
@@ -245,7 +245,7 @@ U kunt uw bronnen weergeven, doorbladeren en selecteren (voor verdere actie) met
 
 >[!NOTE]
 >
->By default, AEM Assets does not display the original renditions of assets in the UI as thumbnails in any of the views. Beheerders kunnen met overlays de oorspronkelijke uitvoeringen als miniaturen weergeven.
+>Standaard worden in AEM Assets de oorspronkelijke uitvoeringen van elementen in de gebruikersinterface niet als miniaturen weergegeven in een van de weergaven. Beheerders kunnen met overlays de oorspronkelijke uitvoeringen als miniaturen weergeven.
 
 ### Bronnen selecteren {#selecting-resources}
 
@@ -389,23 +389,23 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
 De **Spoorwegkiezer** is linksboven in het venster beschikbaar en geeft opties weer, afhankelijk van de huidige consoles.
 
-![Rail selector expanded](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
+![Selector rails uitgebreid](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
 In het dialoogvenster **Sites** kunt u alleen inhoud (de standaardinstelling), de inhoudsstructuur, de tijdlijn, verwijzingen, sitedetails of het filterzijpaneel selecteren.
 
-Als alleen inhoud wordt geselecteerd, wordt alleen het pictogram van de spoorstaaf weergegeven. When any other option is selected, the option name appears next to the rail icon.
+Als alleen inhoud wordt geselecteerd, wordt alleen het pictogram van de spoorstaaf weergegeven. Als er een andere optie is geselecteerd, wordt de naam van de optie weergegeven naast het pictogram van de track.
 
 >[!NOTE]
 >
 >[Sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) zijn beschikbaar om snel tussen de weergaveopties van de spoorstaaf te schakelen.
 
-### Content Tree {#content-tree}
+### Inhoudsstructuur {#content-tree}
 
 Met de inhoudsstructuur kunt u snel door de sitehiërarchie in het zijpaneel navigeren en veel informatie over de pagina&#39;s in de huidige map bekijken.
 
 Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijstmening of kaartmening, kunnen de gebruikers gemakkelijk de hiërarchische structuur van het project zien en gemakkelijk over de inhoudsstructuur met de kant-paneel van de inhoudsboom navigeren, evenals gedetailleerde paginainformatie in de lijstmening.
 
-![Content tree](/help/sites-cloud/authoring/assets/content-tree.png)
+![Inhoudsstructuur](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
 >
@@ -465,7 +465,7 @@ Deze opties zijn toegankelijk via de chevron naast de **Opmerking** veld.
 
 ![Sitemon](../assets/site-rail.png)
 
-Tik of klik op de knop **Themabronnen downloaden** om de [thema van uw site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Zie het document [Het Siterail gebruiken om uw Sitethema te beheren](/help/sites-cloud/administering/site-creation/site-rail.md) voor meer informatie over hoe u de spoorstaaf kunt gebruiken om de [thema van uw site.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
