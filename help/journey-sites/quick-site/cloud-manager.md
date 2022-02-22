@@ -1,9 +1,9 @@
 ---
 title: Inzicht krijgen in Cloud Manager en de workflow voor snel maken van sites
 description: Leer meer over Cloud Manager en hoe dit het nieuwe proces voor het maken van de Snelle site samenbrengt.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -82,11 +82,17 @@ Voor deze reis is een volledig begrip van Cloud Manager niet nodig. Op hoog nive
 
 ![Cloud Manager-structuur](assets/cloud-manager-structure.png)
 
-* **TENANT** - Elke klant wordt voorzien van een huurder. **WKND Reizen- en avontuurbedrijven** kan huurder zijn.
-* **PROGRAMMA&#39;S** - Elke huurder heeft een of meer programma&#39;s. De **WKND Reizen- en avontuurbedrijven** een huurder heeft **WKND Nightlife** en **WKND-projecten** programma.
-* **OMGEVINGEN** - Elk programma heeft meerdere omgevingen, zoals productie voor live-inhoud en staging en ontwikkeling voor ontwikkelingsdoeleinden. **WKND Nightlife** en **WKND-projecten** programma &#39; s zouden zowel een ontwikkelings - , fase - als een productieomgeving hebben .
+* **TENANT** - Elke klant wordt voorzien van een huurder.
+* **PROGRAMMA&#39;S** - Elke huurder heeft één of meerdere programma&#39;s, die vaak de gelicentieerde oplossingen van de klant weerspiegelen.
+* **OMGEVINGEN** - Elk programma heeft meerdere omgevingen, zoals productie voor live-inhoud, één voor staging en één voor ontwikkelingsdoeleinden.
 * **BEVESTIGING** - De omgevingen beschikken over git-opslagruimten waar de toepassing en front-end code worden onderhouden.
 * **GEREEDSCHAPPEN EN WORKFLOWS** - De pijpleidingen beheren de implementatie van code van de gegevensbanken aan de milieu&#39;s.
+
+Een voorbeeld is vaak handig bij het contextualiseren van deze hiërarchie.
+
+* WKND Travel and Adventure Enterprises zou een **huurder** die zich richt op reisgerelateerde media.
+* De huurder van WKND Reizen en Adventure Enterprises zou twee kunnen hebben **programma&#39;s**: Eén Sites-programma voor WKND Magazine en één Assets-programma voor WKND Media.
+* De programma&#39;s WKND Magazine en WKND Media zouden zowel dev, stadium, als productie hebben **omgevingen**.
 
 ## De snelle ontwikkeling van de Site Creation Front-End {#flow}
 

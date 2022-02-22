@@ -3,7 +3,7 @@ title: Cloud Resources instellen via Cloud Manager
 description: Leer hoe u Cloud Manager kunt gebruiken om uw eigen cloudbronnen in te stellen en te beheren.
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Volg de onderstaande secties om te leren hoe u uw [cloudserviceprogramma&#39;s](
 
 * U zou vertrouwd met moeten zijn [Productprofielen van Cloud Manager.](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
 
-* U moet de concepten van Cloud Manager begrijpen [programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) en [omgevingen.](/help/implementing/cloud-manager/manage-environments.md)
+* U moet de concepten van Cloud Manager begrijpen [programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) en [omgevingen.](/help/implementing/cloud-manager/manage-environments.md)
 
 ## Toegang tot Cloud Manager als systeembeheerder en bedrijfseigenaar {#access-sysadmin-bo}
 
@@ -141,7 +141,7 @@ Nu u ervoor hebt gezorgd dat u de juiste toegang hebt, kunt u uw eerste programm
 
    >[!TIP]
    >
-   >Voor geleidelijke instructie op hoe te om de Add tovenaar van het Programma te gebruiken, verwijs naar het document [Productieprogramma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md) of bekijk dit [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) voor meer informatie over het maken van uw AEM als een Cloud-programma en voor meer informatie over belangrijke overwegingen voordat u uw programma maakt.
+   >Voor geleidelijke instructie op hoe te om de Add tovenaar van het Programma te gebruiken, verwijs naar het document [Productieprogramma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) of bekijk dit [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) voor meer informatie over het maken van uw AEM als een Cloud-programma en voor meer informatie over belangrijke overwegingen voordat u uw programma maakt.
 
 
 1. Als uw cloudprogramma met succes is gemaakt, kunt u vanuit de landingspagina van Cloud Manager naar uw programma navigeren om de **Overzicht** pagina van uw programma.
