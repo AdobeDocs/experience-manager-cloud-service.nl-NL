@@ -4,9 +4,9 @@ description: Voeg uw digitale middelen toe aan [!DNL Adobe Experience Manager] a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
+source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
 workflow-type: tm+mt
-source-wordcount: '2647'
+source-wordcount: '2671'
 ht-degree: 0%
 
 ---
@@ -149,7 +149,11 @@ De volgende afbeelding illustreert de verschillende fasen wanneer u elementen va
 
 #### Vereisten {#prerequisites-bulk-ingestion}
 
-U moet de opslaggegevens van de bronblob hebben om uw instantie van de Experience Manager met een gegevensopslag te verbinden.
+Voor het gebruik van deze functie is een externe opslagaccount of emmer uit Azure of AWS vereist.
+
+>[!NOTE]
+>
+>Maak de container of het emmertje van de opslagaccount als privé en accepteer alleen verbindingen van geoorloofde verzoeken. Aanvullende beperkingen op ingangsnetwerkverbindingen worden echter niet ondersteund.
 
 #### Het gereedschap Bulkimport configureren {#configure-bulk-ingestor-tool}
 
