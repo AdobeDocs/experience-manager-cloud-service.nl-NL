@@ -1,9 +1,9 @@
 ---
 title: Gereedheidsfase
 description: Meer informatie over de stappen die u moet nemen om ervoor te zorgen dat uw AEM-installatie klaar is om naar de cloud te worden verplaatst
-source-git-commit: 2b2b18993d2782f01cc9361e1d558fb0d1a8c530
+source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1975'
 ht-degree: 5%
 
 ---
@@ -49,7 +49,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   <tr>
     <td>Meerdere en onveranderbare filters scheiden in overeenkomende pakketten</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en">as a Cloud Service opmerkelijke wijzigingen AEM</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEM projectstructuur voor AEM as a Cloud Service</a></td>
-    <td>Een enkel pakket dat in AEM as a Cloud Service kan worden geïmplementeerd, kan subpakketten bevatten, voornamelijk om muteerbare en onveranderlijke inhoud te bevatten die in hun eigen pakketten is gescheiden.</td>
+    <td>Een enkele verpakking die in AEM as a Cloud Service kan worden geïmplementeerd, kan subpakketten bevatten, voornamelijk om muteerbare en onveranderlijke inhoud te bevatten die in hun eigen pakketten is gescheiden.</td>
   </tr>
   <tr>
     <td>Reparatie-item</td>
@@ -114,7 +114,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   <tr>
     <td>Workflowstartprogramma's</td>
     <td></td>
-    <td>Verwijder alle werkstroomopstarters die OOTB of de aangepaste DAM Update Asset Workflow activeren uit uw code.</br>Alle in AEM as a Cloud Service geüploade activa worden door de Asset Processing Service verwerkt. Er is een configuratie van OSGi van de naverwerking van het Werkschema die kan worden gebruikt om extra stappen van de douaneverwerking teweeg te brengen.</td>
+    <td>Verwijder alle werkstroomopstarters die OOTB of de aangepaste DAM Update Asset Workflow activeren uit uw code.</br>Alle in AEM as a Cloud Service geüploade activa worden door de Asset Processing Service verwerkt. Voor aangepaste stappen raadpleegt u <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Workflows na verwerking</a> voor het instellen en configureren van workflows na verwerking.</td>
   </tr>
   <tr>
     <td>Aangepaste stappen voor vertoning</td>
