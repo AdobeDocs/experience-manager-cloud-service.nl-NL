@@ -1,10 +1,10 @@
 ---
 title: Gereedheidsfase
 description: Meer informatie over de stappen die u moet nemen om ervoor te zorgen dat uw AEM-installatie klaar is om naar de cloud te worden verplaatst
-source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
+source-git-commit: d851ca19070232e1d43f5c5e546d4174e2c310a2
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 5%
+source-wordcount: '2078'
+ht-degree: 6%
 
 ---
 
@@ -145,6 +145,11 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
     <td>Back-up en herstel</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en">as a Cloud Service back-up en herstel AEM</a></td>
     <td></td>
+  </tr>
+  <tr>
+    <td>Wijzigingen in verificatie</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">IMS-ondersteuning voor AEM as a Cloud Service</td>
+    <td>Als u eerder SAML 2.0-integratie gebruikte op zowel auteur als publicatie voordat u naar de Cloud Service ging, is de belangrijkste wijziging dat AEM as a Cloud Service auteur alleen integreert met Adobe IMS. Nochtans, AEM de as a Cloud Service Publish rij kan hefboomwerking nog SAML of andere authentificatieintegratie. AEM as a Cloud Service biedt alleen ondersteuning voor IMS-verificatie voor authoring-, beheer- en ontwikkelaargebruikers. De IMS-verificatie biedt geen ondersteuning voor externe eindgebruikers van klantsites zoals sitebezoekers.</td>
   </tr>
 </tbody>
 </table>
