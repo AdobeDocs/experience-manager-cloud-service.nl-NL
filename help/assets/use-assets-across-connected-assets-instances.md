@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: f624b287bf5a46d4a20991dae6cd7b521a7fe472
 workflow-type: tm+mt
-source-wordcount: '3212'
-ht-degree: 22%
+source-wordcount: '3715'
+ht-degree: 17%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 22%
 In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Één reden kan geografisch gedistribueerde bestaande plaatsingen zijn die worden vereist om samen te werken. Een andere reden kunnen overnames zijn die leiden tot heterogene infrastructuren, waaronder verschillende [!DNL Experience Manager] versies, die het moederbedrijf samen wil gebruiken.
 
 De functionaliteit Connected Assets ondersteunt de bovenstaande gebruiksmogelijkheid door integratie van [!DNL Experience Manager Sites] en [!DNL Experience Manager Assets]. Gebruikers kunnen webpagina&#39;s maken in [!DNL Sites] die de digitale elementen gebruiken vanuit een aparte [!DNL Assets] implementaties.
+
+>[!NOTE]
+>
+>Configureer Connected Assets alleen wanneer u de middelen moet gebruiken die beschikbaar zijn op een externe DAM-implementatie op een aparte Sites-implementatie voor het ontwerpen van webpagina&#39;s.
 
 ## Overzicht van gekoppelde assets {#overview-of-connected-assets}
 
@@ -48,19 +52,19 @@ Auteurs zoeken naar afbeeldingen en de volgende typen documenten in de Inhoudszo
 
 Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing van een kenmerk en de overeenkomstige gebruikersgroepen. Het lokale bereik wordt gebruikt voor het geval waarin een auteur een webpagina maakt. De externe scope wordt gebruikt voor de DAM-implementatie die als host fungeert voor de vereiste assets. De [!DNL Sites] auteur haalt deze externe elementen op.
 
-| Rol | Scope | Gebruikersgroep | Gebruikersnaam in voorbeeldprocedure | Vereiste |
+| Rol | Scope | Gebruikersgroep | Vereiste |
 |------|--------|-----------|-----|----------|
-| [!DNL Sites] beheerder | Lokaal | [!DNL Experience Manager] `administrators` | `admin` | Instellen [!DNL Experience Manager] en vormt integratie met verre [!DNL Assets] implementatie. |
-| DAM-gebruiker | Lokaal | `Authors` | `ksaner` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
-| [!DNL Sites] author | Lokaal | <ul><li>`Authors` (met leestoegang op de externe DAM en auteurstoegang op de lokale [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau [!DNL Sites]</li></ul> | `ksaner` | Eindgebruikers zijn [!DNL Sites] auteurs die deze integratie gebruiken om de snelheid van hun inhoud te verbeteren. Auteurs kunnen bestanden zoeken en doorbladeren in externe DAM met [!UICONTROL Content Finder] en het gebruik van de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
-| [!DNL Assets] beheerder | Extern | [!DNL Experience Manager] `administrators` | `admin` op afstand [!DNL Experience Manager] | Configureer CORS (Cross-Origin Resource Sharing). |
-| DAM-gebruiker | Extern | `Authors` | `ksaner` op afstand [!DNL Experience Manager] | Auteur-rol op de externe server [!DNL Experience Manager] implementatie. Zoek en blader naar assets in gekoppelde assets met de [!UICONTROL Content Finder]. |
-| DAM-distributeur (technische gebruiker) | Extern | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` op afstand [!DNL Experience Manager] | Deze gebruiker die aanwezig is op de externe implementatie wordt gebruikt door [!DNL Experience Manager] lokale server (niet de [!DNL Sites] auteurrol) om de verre activa, namens te halen [!DNL Sites] auteur. Deze rol is anders dan de twee bovenstaande `ksaner`-rollen en hoort bij een andere gebruikersgroep. |
-| [!DNL Sites] technisch gebruiker | Lokaal | `connectedassets-sites-techaccts` | - | Toestaan [!DNL Assets] implementatie om te zoeken naar verwijzingen naar elementen in de [!DNL Sites] webpagina&#39;s. |
+| [!DNL Sites] beheerder | Lokaal | [!DNL Experience Manager] `administrators` | Instellen [!DNL Experience Manager] en vormt integratie met verre [!DNL Assets] implementatie. |
+| DAM-gebruiker | Lokaal | `Authors` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
+| [!DNL Sites] author | Lokaal | <ul><li>`Authors` (met leestoegang op de externe DAM en auteurstoegang op de lokale [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau [!DNL Sites]</li></ul> | Eindgebruikers zijn [!DNL Sites] auteurs die deze integratie gebruiken om de snelheid van hun inhoud te verbeteren. Auteurs kunnen bestanden zoeken en doorbladeren in externe DAM met [!UICONTROL Content Finder] en het gebruik van de vereiste afbeeldingen op lokale webpagina&#39;s. |
+| [!DNL Assets] beheerder | Extern | [!DNL Experience Manager] `administrators` | Configureer CORS (Cross-Origin Resource Sharing). |
+| DAM-gebruiker | Extern | `Authors` | Auteur rol op de afstandsbediening [!DNL Experience Manager] implementatie. Zoek en blader naar assets in gekoppelde assets met de [!UICONTROL Content Finder]. |
+| DAM-distributeur (technische gebruiker) | Extern | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | Deze gebruiker die aanwezig is op de externe implementatie wordt gebruikt door [!DNL Experience Manager] lokale server (niet de [!DNL Sites] auteurrol) om de verre activa, namens te halen [!DNL Sites] auteur. |
+| [!DNL Sites] technisch gebruiker | Lokaal | `connectedassets-sites-techaccts` | Toestaan [!DNL Assets] implementatie om te zoeken naar verwijzingen naar elementen in de [!DNL Sites] webpagina&#39;s. |
 
 ### Connected Assets-architectuur {#connected-assets-architecture}
 
-Met Experience Manager kunt u een externe DAM-implementatie als bron aansluiten op meerdere Experience Manager Sites-implementaties. U kunt een maximum van vier plaatsingen van Plaatsen met een bron verre DAM verbinden. Nochtans, kunt u een plaatsing van Plaatsen met slechts één verre plaatsing verbinden DAM.
+Met Experience Manager kunt u een externe DAM-implementatie als bron verbinden met meerdere Experience Managers [!DNL Sites] implementaties. U kunt maximaal vier [!DNL Sites] implementaties naar een externe DAM-bron. U kunt echter wel verbinding maken met een [!DNL Sites] implementatie met slechts één externe DAM-implementatie.
 
 De volgende diagrammen illustreren de gesteunde scenario&#39;s:
 
@@ -132,6 +136,19 @@ U kunt de connectiviteit tussen gevormde controleren [!DNL Sites] implementaties
 
 U kunt een verbinding configureren tussen [!DNL Sites] implementatie en [!DNL Dynamic Media] implementatie waarmee auteurs van webpagina&#39;s kunnen werken [!DNL Dynamic Media] afbeeldingen op hun webpagina&#39;s. Tijdens het ontwerpen van webpagina&#39;s kunt u beter externe middelen en externe [!DNL Dynamic Media] implementaties blijven hetzelfde . Hierdoor kunt u de [!DNL Dynamic Media] functionaliteit via de functie Verbonden elementen, bijvoorbeeld voorinstellingen voor slimme uitsnijden en afbeeldingen.
 
+Met Connected Assets kunt u de [!DNL Dynamic Media] functionaliteit voor het verwerken van afbeeldingselementen op de externe DAM-implementatie.
+
+Te gebruiken [!DNL Dynamic Media] afbeeldingen van een externe DAM-implementatie op een [!DNL Sites] implementatie:
+
+1. Configureren [!DNL Dynamic Media] op externe DAM-implementatie met de volgende opties:
+   * Synchronisatiemodus: Standaard ingeschakeld
+   * Elementen publiceren: Alle inhoud synchroniseren
+1. Aan [!DNL Sites] implementatie:
+   1. Configureren [!DNL Dynamic Media] hetzelfde bedrijf gebruiken als in stap 1 (Synchronisatiemodus uitgeschakeld).
+   1. Aangesloten elementen configureren.
+
+   [!DNL Dynamic Media] elementen zijn beschikbaar op [!DNL Sites] implementatie in de modus Alleen-lezen. U kunt daarom niet [!DNL Dynamic Media] om elementen op de [!DNL Sites] implementatie.
+
 Voer de volgende stappen uit om de verbinding te configureren:
 
 1. Maak de configuratie voor Connected Assets zoals hierboven beschreven, behalve wanneer u de functionaliteit configureert, selecteert u **[!UICONTROL Fetch original rendition for Dynamic Media Connected Assets]** optie.
@@ -159,15 +176,15 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
 1. Ga naar de [!DNL Assets] interface op de verre plaatsing door tot **[!UICONTROL Assets]** > **[!UICONTROL Files]** van [!DNL Experience Manager] werkruimte. U kunt `https://[assets_servername_ams]:[port]/assets.html/content/dam` ook in een browser openen. Upload de assets van uw keuze.
 
-1. Op de [!DNL Sites] implementatie, klikt u in de profielactivator in de rechterbovenhoek op **[!UICONTROL Impersonate as]**. Geef `ksaner` op als gebruikersnaam, selecteer de opgegeven optie en klik op **[!UICONTROL OK]**.
+1. Op de [!DNL Sites] implementatie, klikt u in de profielactivator in de rechterbovenhoek op **[!UICONTROL Impersonate as]**. Geef de gebruikersnaam op, selecteer de opgegeven optie en klik op **[!UICONTROL OK]**.
 
-1. Een `We.Retail` websitepagina op **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Bewerk de pagina. U kunt `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` ook in een browser openen om een pagina te bewerken.
+1. Een [!DNL Sites] pagina en bewerk de pagina.
 
    Klik op **[!UICONTROL Toggle Side Panel]** in de linkerbovenhoek van de pagina.
 
 1. Open de [!UICONTROL Assets] en klik op **[!UICONTROL Log in to Connected Assets]**.
 
-1. Geef de referenties op: `ksaner` als gebruikersnaam en `password` als wachtwoord. Deze gebruiker heeft auteursrechten op beide [!DNL Experience Manager] implementaties.
+1. Geef de aanmeldingsgegevens op die u wilt aanmelden bij Connected Assets. Deze gebruiker heeft auteursrechten op beide [!DNL Experience Manager] implementaties.
 
 1. Zoek naar de asset die u aan DAM hebt toegevoegd. De externe assets worden weergegeven in het linkerdeelvenster. Filter op afbeeldingen of documenten en filter verder op de typen ondersteunde documenten. Sleep de afbeeldingen naar een `Image`-component en sleep documenten naar een `Download`-component.
 
@@ -227,6 +244,49 @@ Experience Manager geeft een `expired` status visuele indicator op elementen in 
 >[!NOTE]
 >
 >De updates aan activa in verre DAM worden ter beschikking gesteld aan de plaatsing van Plaatsen slechts als verre DAM en plaatsingen van Plaatsen op Experience Manager as a Cloud Service zijn.
+
+## Veelgestelde vragen {#frequently-asked-questions}
+
+### Moet u Connected Assets configureren als u de middelen die beschikbaar zijn op uw [!DNL Sites] implementatie?
+
+In dat geval is het niet nodig om Connected Assets te configureren. U kunt de middelen gebruiken die beschikbaar zijn op de [!DNL Sites] implementatie.
+
+### Wanneer moet u de Connected Assets-functie configureren?
+
+Configureer de functie Connected Assets alleen wanneer u de middelen die beschikbaar zijn op een externe DAM-implementatie moet gebruiken op een [!DNL Sites] implementatie.
+
+### Hoeveel [!DNL Sites] implementaties kunt u verbinding maken met een externe DAM-implementatie nadat u Connected Assets hebt geconfigureerd?
+
+U kunt maximaal vier [!DNL Sites] implementaties naar een externe DAM-implementatie na het configureren van Connected Assets. Zie voor meer informatie [Connected Assets-architectuur](#connected-assets-architecture).
+
+### Hoeveel verre plaatsingen DAM u met een [!DNL Sites] implementatie na het configureren van Connected Assets?
+
+U kunt één externe DAM-implementatie verbinden met een [!DNL Sites] implementatie na het configureren van Connected Assets. Zie voor meer informatie [Connected Assets-architectuur](#connected-assets-architecture).
+
+### Kunt u Dynamic Media-elementen van uw [!DNL Sites] implementatie na het configureren van Connected Assets?
+
+Na het configureren van Connected Assets, [!DNL Dynamic Media] elementen zijn beschikbaar op [!DNL Sites] implementatie in de modus Alleen-lezen. U kunt daarom niet [!DNL Dynamic Media] om elementen op de [!DNL Sites] implementatie. Zie voor meer informatie [Een verbinding tussen Sites en Dynamic Media-implementaties configureren](#sites-dynamic-media-connected-assets).
+
+### Kunt u elementen van de indeling Afbeelding en Document gebruiken, van de externe DAM-implementatie op de [!DNL Sites] implementatie na het configureren van Connected Assets?
+
+Ja, u kunt middelen van beeld en formaat van het Document types van de verre plaatsing van DAM op [!DNL Sites] implementatie na het configureren van Connected Assets.
+
+### Kan u inhoudsfragmenten en video-elementen van de externe DAM-implementatie gebruiken op de [!DNL Sites] implementatie na het configureren van Connected Assets?
+
+Nee, u kunt inhoudsfragmenten en video-elementen van de externe DAM-implementatie niet gebruiken op de [!DNL Sites] implementatie na het configureren van Connected Assets.
+
+### Kunt u Dynamic Media-middelen van de externe DAM-implementatie gebruiken op de [!DNL Sites] implementatie na het configureren van Connected Assets?
+
+Ja, u kunt Dynamic Media-middelen configureren en gebruiken vanaf de externe DAM-implementatie op de [!DNL Sites] implementatie na het configureren van Connected Assets. Zie voor meer informatie [Een verbinding tussen Sites en Dynamic Media-implementaties configureren](#sites-dynamic-media-connected-assets).
+
+### Nadat u Connected Assets hebt geconfigureerd, kunt u de bewerkingen voor bijwerken, verwijderen, hernoemen en verplaatsen op de externe DAM-middelen of -mappen?
+
+Ja, nadat u Connected Assets hebt geconfigureerd, kunt u de update uitvoeren, verwijderen, hernoemen en bewerkingen verplaatsen op de externe DAM-middelen of -mappen. De updates zijn, met wat vertraging, automatisch beschikbaar op de plaatsing van Plaatsen. Zie voor meer informatie [Updates van middelen beheren in externe DAM](#handling-updates-to-remote-assets).
+
+### Nadat u Connected Assets hebt geconfigureerd, kunt u elementen aan uw [!DNL Sites] implementatie en beschikbaar stellen voor externe DAM-implementatie?
+
+U kunt elementen toevoegen aan de [!DNL Sites] implementatie, maar deze middelen kunnen niet beschikbaar worden gemaakt voor de externe DAM-implementatie.
+
 
 ## Beperkingen en aanbevolen procedures {#tip-and-limitations}
 
