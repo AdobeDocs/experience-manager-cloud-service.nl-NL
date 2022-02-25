@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
+source-git-commit: 37a54fdc1c78350cd1c45e6ec4c0674d5b73c0f8
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1732'
 ht-degree: 1%
 
 ---
@@ -127,23 +127,25 @@ Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te 
 
 ### Binair bestand uploaden {#upload-binary}
 
-De uitvoer van het starten van een upload bevat een of meer URI-waarden voor uploaden. Als er meerdere URI&#39;s zijn opgegeven, kan de client de binaire code splitsen in onderdelen en PUT-aanvragen van elk onderdeel naar de opgegeven URI&#39;s voor uploaden in volgorde indienen. Als u ervoor kiest om het binaire getal in delen te splitsen, moet u zich aan de volgende richtlijnen houden:
+De uitvoer van het starten van een upload bevat een of meer URI-waarden voor uploaden. Als er meerdere URI&#39;s zijn opgegeven, kan de client de binaire code splitsen in onderdelen en PUT-aanvragen van elk onderdeel naar de opgegeven URI&#39;s voor uploaden in volgorde indienen. Houd u aan de volgende richtlijnen wanneer u ervoor kiest om het binaire getal in delen te splitsen:
+
 * Elk deel, met uitzondering van het laatste, moet groter zijn dan of gelijk zijn aan `minPartSize`.
 * Elk onderdeel moet een grootte hebben die kleiner is dan of gelijk is aan `maxPartSize`.
-* Als de grootte van uw binair getal overschrijdt `maxPartSize`, moet u het binaire bestand opsplitsen in onderdelen om het te uploaden.
+* Als de grootte van uw binair getal overschrijdt `maxPartSize`, splitst de binaire waarde in delen om deze te uploaden.
 * U hoeft niet alle URI&#39;s te gebruiken.
 
-Als de grootte van uw binair getal kleiner dan of gelijk aan is `maxPartSize`, kunt u in plaats daarvan het volledige binaire bestand uploaden naar één URI voor uploaden. Als er meer dan één URI voor uploaden is opgegeven, gebruikt u de eerste URI en negeert u de rest. U hoeft niet alle URI&#39;s te gebruiken.
+Als de grootte van uw binair getal kleiner dan of gelijk aan is `maxPartSize`, kunt u in plaats daarvan het gehele binaire bestand uploaden naar één URI voor uploaden. Als er meer dan één URI voor uploaden is opgegeven, gebruikt u de eerste URI en negeert u de rest. U hoeft niet alle URI&#39;s te gebruiken.
 
 Met behulp van CDN-randknooppunten kunt u het opvragen van binaire bestanden versnellen.
 
-De eenvoudigste manier om dit te bereiken is om de waarde van `maxPartSize` als de grootte van uw onderdeel. Het API-contract garandeert dat er voldoende URI&#39;s zijn voor het uploaden van het binaire bestand als u deze waarde als deelgrootte gebruikt. Hiervoor splitst u het binaire bestand in delen van grootte `maxPartSize`, met één URI voor elk onderdeel op volgorde. Het laatste deel kan elke grootte kleiner dan of gelijk aan `maxPartSize`. Stel bijvoorbeeld dat de totale grootte van het binaire getal 20.000 bytes is. `minPartSize` is 5.000 bytes, `maxPartSize` is 8.000 bytes, en het aantal upload URIs is 5. Voer vervolgens de volgende stappen uit:
+De eenvoudigste manier om dit te bereiken is om de waarde van `maxPartSize` als de grootte van uw onderdeel. Het API-contract garandeert dat er voldoende URI&#39;s zijn voor het uploaden van het binaire bestand als u deze waarde als deelgrootte gebruikt. Hiervoor splitst u het binaire bestand in delen van grootte `maxPartSize`, met één URI voor elk onderdeel op volgorde. Het laatste deel kan elke grootte kleiner dan of gelijk aan `maxPartSize`. Stel bijvoorbeeld dat de totale grootte van het binaire getal 20.000 bytes is. `minPartSize` is 5.000 bytes, `maxPartSize` is 8.000 bytes, en het aantal upload URIs is 5. Voer de volgende stappen uit:
+
 * Upload de eerste 8.000 bytes van het binaire getal met behulp van de eerste upload URI.
 * Upload de tweede 8.000 bytes van het binaire getal met behulp van de tweede upload URI.
 * Upload de laatste 4.000 bytes van het binaire getal met behulp van de derde upload URI. Aangezien dit het laatste deel is, hoeft het niet groter te zijn dan `minPartSize`.
-* U hoeft de laatste twee URI&#39;s voor uploaden niet te gebruiken. Negeer ze gewoon.
+* U hoeft de laatste twee URI&#39;s voor uploaden niet te gebruiken. U kunt ze negeren.
 
-Een algemene fout is om de onderdeelgrootte te berekenen op basis van het aantal URI&#39;s voor uploaden dat door de API wordt verschaft. Het API-contract garandeert niet dat deze aanpak werkt en kan in feite leiden tot deelgrootten die buiten het bereik liggen tussen `minPartSize` en `maxPartSize`. Dit kan resulteren in binaire upload mislukkingen.
+Een algemene fout is om de onderdeelgrootte te berekenen op basis van het aantal URI&#39;s voor uploaden dat door de API wordt verschaft. Het API-contract garandeert niet dat deze aanpak werkt en kan leiden tot deelgrootten die buiten het bereik liggen tussen `minPartSize` en `maxPartSize`. Dit kan resulteren in binaire upload mislukkingen.
 
 Opnieuw, de gemakkelijkste en veiligste manier is eenvoudig delen van grootte gelijk aan te gebruiken `maxPartSize`.
 
