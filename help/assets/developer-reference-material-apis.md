@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1739'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te 
 ```json
 {
     "completeURI": "(string)",
-    "folderPath": (string)",
+    "folderPath": "(string)",
     "files": [
         {
             "fileName": "(string)",
@@ -107,7 +107,9 @@ Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te 
             "uploadToken": "(string)",
             "uploadURIs": [
                 "(string)"
-            ]
+            ],
+            "minPartSize": (number),
+            "maxPartSize": (number)
         }
     ]
 }
@@ -125,15 +127,30 @@ Eén aanvraag kan worden gebruikt om uploads voor meerdere binaire bestanden te 
 
 ### Binair bestand uploaden {#upload-binary}
 
-De uitvoer van het starten van een upload bevat een of meer URI-waarden voor uploaden. Als er meer dan één URI is opgegeven, splitst de client het binaire getal in delen en worden de verzoeken van de PUT van elk onderdeel op volgorde naar elke URI gesplitst. Alle URI&#39;s gebruiken. Zorg ervoor dat de grootte van elk onderdeel binnen de minimum- en maximumgrootte ligt die in de reactie van de aanvrager zijn opgegeven. Met behulp van CDN-randknooppunten kunt u het opvragen van binaire bestanden versnellen.
+De uitvoer van het starten van een upload bevat een of meer URI-waarden voor uploaden. Als er meerdere URI&#39;s zijn opgegeven, kan de client de binaire code splitsen in onderdelen en PUT-aanvragen van elk onderdeel naar de opgegeven URI&#39;s voor uploaden in volgorde indienen. Als u ervoor kiest om het binaire getal in delen te splitsen, moet u zich aan de volgende richtlijnen houden:
+* Elk deel, met uitzondering van het laatste, moet groter zijn dan of gelijk zijn aan `minPartSize`.
+* Elk onderdeel moet een grootte hebben die kleiner is dan of gelijk is aan `maxPartSize`.
+* Als de grootte van uw binair getal overschrijdt `maxPartSize`, moet u het binaire bestand opsplitsen in onderdelen om het te uploaden.
+* U hoeft niet alle URI&#39;s te gebruiken.
 
-Een mogelijke methode hiervoor is het berekenen van de onderdeelgrootte op basis van het aantal URI&#39;s voor uploaden dat door de API wordt verschaft. Bijvoorbeeld, veronderstel de totale grootte van het binaire getal 20.000 bytes is en het aantal upload URIs 2 is. Voer vervolgens de volgende stappen uit:
+Als de grootte van uw binair getal kleiner dan of gelijk aan is `maxPartSize`, kunt u in plaats daarvan het volledige binaire bestand uploaden naar één URI voor uploaden. Als er meer dan één URI voor uploaden is opgegeven, gebruikt u de eerste URI en negeert u de rest. U hoeft niet alle URI&#39;s te gebruiken.
 
-* Onderdeelgrootte berekenen door totale grootte te delen door aantal URI&#39;s: 20,000 / 2 = 10,000.
-* POST bytewaaier 0-9.999 van binair aan eerste URI in de lijst van upload URIs.
-* POST bytewaaier 10.000 - 19.999 van binair aan tweede URI in de lijst van upload URIs.
+Met behulp van CDN-randknooppunten kunt u het opvragen van binaire bestanden versnellen.
+
+De eenvoudigste manier om dit te bereiken is om de waarde van `maxPartSize` als de grootte van uw onderdeel. Het API-contract garandeert dat er voldoende URI&#39;s zijn voor het uploaden van het binaire bestand als u deze waarde als deelgrootte gebruikt. Hiervoor splitst u het binaire bestand in delen van grootte `maxPartSize`, met één URI voor elk onderdeel op volgorde. Het laatste deel kan elke grootte kleiner dan of gelijk aan `maxPartSize`. Stel bijvoorbeeld dat de totale grootte van het binaire getal 20.000 bytes is. `minPartSize` is 5.000 bytes, `maxPartSize` is 8.000 bytes, en het aantal upload URIs is 5. Voer vervolgens de volgende stappen uit:
+* Upload de eerste 8.000 bytes van het binaire getal met behulp van de eerste upload URI.
+* Upload de tweede 8.000 bytes van het binaire getal met behulp van de tweede upload URI.
+* Upload de laatste 4.000 bytes van het binaire getal met behulp van de derde upload URI. Aangezien dit het laatste deel is, hoeft het niet groter te zijn dan `minPartSize`.
+* U hoeft de laatste twee URI&#39;s voor uploaden niet te gebruiken. Negeer ze gewoon.
+
+Een algemene fout is om de onderdeelgrootte te berekenen op basis van het aantal URI&#39;s voor uploaden dat door de API wordt verschaft. Het API-contract garandeert niet dat deze aanpak werkt en kan in feite leiden tot deelgrootten die buiten het bereik liggen tussen `minPartSize` en `maxPartSize`. Dit kan resulteren in binaire upload mislukkingen.
+
+Opnieuw, de gemakkelijkste en veiligste manier is eenvoudig delen van grootte gelijk aan te gebruiken `maxPartSize`.
 
 Als het uploaden is gelukt, reageert de server op elke aanvraag met een `201` statuscode.
+
+>[!NOTE]
+Voor meer informatie over het uploadalgoritme, zie [officiële functiedocumentatie](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) en [API-documentatie](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) in het Apache Jackrabbit Oak-project.
 
 ### Uploaden voltooien {#complete-upload}
 
@@ -175,6 +192,7 @@ De nieuwe uploadmethode wordt alleen ondersteund voor [!DNL Adobe Experience Man
 >[!MORELIKETHIS]
 * [Opensource-em-upload-bibliotheek](https://github.com/adobe/aem-upload).
 * [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem).
+* [Apache Jackrabbit Oak-documentatie voor direct uploaden](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 
 ## Workflows voor de verwerking en naverwerking van bedrijfsmiddelen {#post-processing-workflows}
@@ -259,7 +277,7 @@ De volgende technische workflowmodellen worden vervangen door asset microservice
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
+<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
