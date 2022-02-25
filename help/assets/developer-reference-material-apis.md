@@ -1,11 +1,11 @@
 ---
 title: Ontwikkelaarsreferenties voor [!DNL Assets]
-description: '[!DNL Assets] Met API''s en inhoud voor ontwikkelaarsverwijzing kunt u elementen beheren, zoals binaire bestanden, metagegevens, uitvoeringen, opmerkingen en [!DNL Content Fragments].'
+description: '"[!DNL Assets] Met API''s en inhoud voor ontwikkelaarsverwijzing kunt u elementen beheren, zoals binaire bestanden, metagegevens, uitvoeringen, opmerkingen en [!DNL Content Fragments]."'
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 2f0521831383c11e1edee8c5d719ec42f7bcfd5e
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 1%

@@ -1,42 +1,42 @@
 ---
-title: Release-aantekeningen voor 2020.9.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
-description: '[!DNL Adobe Experience Manager] als opmerkingen bij de release van de Cloud Service voor 2020.9.0.'
+title: Opmerkingen bij de release 2020.9.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+description: '"[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.9.0."'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 1%
 
 ---
 
-# Opmerkingen bij de release voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 {#release-notes}
+# Opmerkingen bij de release [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor [!DNL Experience Manager] beschreven als een Cloud Service 2020.9.0.
+In de volgende sectie worden de algemene opmerkingen bij de release beschreven voor [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
 ## Releasedatum {#release-date}
 
-De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 is 24 september 2020.
+De releasedatum voor [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is 24 september 2020.
 
-## [!DNL Adobe Experience Manager Sites] als Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Nieuw in [!DNL Sites] {#what-is-new-sites}
+### Nieuwe functies in [!DNL Sites] {#what-is-new-sites}
 
-* De JavaScript SDK [van de Editor voor één pagina-toepassing (SPA) is nu open bron.](/help/implementing/developing/hybrid/reference-materials.md)
+* De Single Page Application (SPA) Editor JavaScript SDK [is nu open source.](/help/implementing/developing/hybrid/reference-materials.md)
 
-## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### Nieuw in [!DNL Assets] {#what-is-new-assets}
+### Nieuwe functies in [!DNL Assets] {#what-is-new-assets}
 
 * Watermerken van afbeeldingsbestanden wordt ondersteund voor uitvoeringen die worden gegenereerd met elementmicroservices. Deze kan worden geconfigureerd als een verwerkingsprofiel en gebruikt een PNG-bestand als watermerk. Zie [watermerk uw elementen](/help/assets/watermark-assets.md).
 
 * Verbeteringen in [!DNL Dynamic Media]
 
-   * Selectieve publicatie - Een marketingteam heeft nu toegang tot [!DNL Dynamic Media] slimme-uitsnijdafbeeldingen en dynamische uitvoeringen die zijn gesynchroniseerd met [!DNL Dynamic Media], zodat ze promotiemateriaal kunnen maken, zonder dat ze deze middelen hoeven te publiceren naar [!DNL Dynamic Media] voor wereldwijde levering. [!DNL Experience Manager] en  [!DNL Dynamic Media] publicatie wordt ontkoppeld en kan afzonderlijk plaatsvinden om dit te bereiken. Zie [selectief publiceren](/help/assets/dynamic-media/selective-publishing.md).
-   * Beheerders kunnen het [!DNL Dynamic Media]-wachtwoord voor Cloud Servicen dat bij provisioning is ontvangen, nu opnieuw instellen. Het opnieuw instellen kan in [!DNL Experience Manager] gebruikersinterface worden gedaan, zonder de behoefte om [!DNL Dynamic Media Classic] Desktopapp te gebruiken.
+   * Selectieve publicatie - Een marketingteam kan nu toegang krijgen [!DNL Dynamic Media] SmartCrop-afbeeldingen en dynamische uitvoeringen die zijn gesynchroniseerd met [!DNL Dynamic Media] zodat ze promotiemateriaal kunnen maken zonder dat ze deze middelen hoeven te publiceren naar [!DNL Dynamic Media] voor wereldwijde levering. [!DNL Experience Manager] en [!DNL Dynamic Media] publicatie is ontkoppeld en kan afzonderlijk plaatsvinden om dit te bereiken. Zie [selectief publiceren](/help/assets/dynamic-media/selective-publishing.md).
+   * Beheerders kunnen nu opnieuw instellen [!DNL Dynamic Media] Wachtwoord van de Cloud Service dat bij levering wordt ontvangen. U kunt de voorinstelling uitvoeren in [!DNL Experience Manager] gebruikersinterface, zonder de noodzaak [!DNL Dynamic Media Classic] bureaubladtoepassing.
 
-* Zie [nieuw in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html) voor meer informatie over de volgende verbeteringen.
+* Zie voor meer informatie over de volgende verbeteringen [nieuwe functies in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
-   * Uitgebreide PDF-voorvertoning met integratie van Adobe Document Cloud View SDK.
+   * Verbeterde PDF-voorvertoning dankzij de integratie met Adobe Document Cloud View SDK.
    * Downloadfunctionaliteit met één klik.
    * Nieuwe beheerconfiguraties voor de downloadervaring.
 
@@ -46,11 +46,11 @@ De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2020.9.0 
 TBD: list of Assets aaCS bugs that are fixed.
 -->
 
-## Adobe Experience Manager Commerce als Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Uitgebrachte CIF Core Components v1.3.0. Raadpleeg [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) voor meer informatie.
+* Uitgebrachte CIF Core Components v1.3.0. Zie [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) voor meer informatie .
 
 * Voorvertoningsmogelijkheden met product/categorie voor product- en categoriesjablonen zijn nu beschikbaar. Zo kunnen zakelijke gebruikers/marketers in AEM de product-/categoriesjablonen met echte gegevens bekijken.
 
@@ -68,9 +68,9 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Releasedatum {#release-date-cm}
 
-De datum van de Versie voor [!UICONTROL Cloud Manager] Versie 2020.9.0 is September 03, 2020.
+De releasedatum voor [!UICONTROL Cloud Manager] Versie 2020.9.0 is 3 september 2020.
 
-### Wat is er nieuw?{#what-is-new-cloud-manager}
+### Wat is er nieuw? {#what-is-new-cloud-manager}
 
 * De controle van de inhoud is opnieuw geëtiketteerd als ErvingsControle.
 * Het bouwstijlproces is gescheiden in drie afzonderlijke Maven bevelen.
@@ -86,7 +86,7 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Read
 
 ### Nieuwe functies {#what-is-new-cra}
 
-* De Cloud Readiness Analyzer (CRA) heeft een beginstatusconsole die een expliciete **Generate Report** knoop voor de gebruiker toont om CRA uit te voeren.
+* De Cloud Readiness Analyzer (CRA) heeft een startstatusconsole die een expliciete **Rapport genereren** klikt de gebruiker om CRA uit te voeren.
 
 * De CRA UI toont vooruitgang terwijl het loopt. Er worden items weergegeven die worden geanalyseerd en bevindingen tijdens de uitvoering worden gevonden.
 
@@ -106,9 +106,9 @@ Volg deze sectie om te leren over wat nieuw is en de updates voor Versie van het
 
 * De CTT-gebruikersinterface heeft een functie voor automatisch opnieuw laden waarmee de overzichtspagina elke 30 seconden opnieuw wordt geladen.
 
-* Knop die aan CTT gebruikersinterface wordt toegevoegd om *Toegangstoken* gemakkelijk terug te winnen.
+* Knop die wordt toegevoegd aan de CTT-gebruikersinterface om op te halen *Toegangstoken* gemakkelijk.
 
-* Beschrijvend bevestigingsbericht toegevoegd voor *URL* en *Naam migratieset*.
+* Beschrijving van validatiebericht toegevoegd voor *URL* en *Naam migratieset*.
 
 ## Tools voor herstructurering van code {#code-refactoring}
 
@@ -118,8 +118,8 @@ Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen v
 
 * De insteekmodule AIO-CLI ondersteunt Repository Modernizer en stelt gebruikers in staat het gereedschap uit te voeren met de insteekmodule.
 
-   Zie [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie.
+   Zie [Git-bron: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie .
 
-* Het nut van de Modernizer van de Bewaarplaats kan worden gebruikt om bestaande projectpakketten in pakketten te herstructureren die met de projectstructuur compatibel zijn die voor AEM als Cloud Service wordt bepaald.
+* Het nut van de Modernizer van de Bewaarplaats kan worden gebruikt om bestaande projectpakketten in pakketten te herstructureren die met de projectstructuur compatibel zijn die voor AEM as a Cloud Service wordt bepaald.
 
-   Zie [Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie.
+   Zie [Git-bron: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie .
