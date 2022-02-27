@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f624b287bf5a46d4a20991dae6cd7b521a7fe472
+source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3713'
 ht-degree: 17%
 
 ---
@@ -53,7 +53,7 @@ Auteurs zoeken naar afbeeldingen en de volgende typen documenten in de Inhoudszo
 Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing van een kenmerk en de overeenkomstige gebruikersgroepen. Het lokale bereik wordt gebruikt voor het geval waarin een auteur een webpagina maakt. De externe scope wordt gebruikt voor de DAM-implementatie die als host fungeert voor de vereiste assets. De [!DNL Sites] auteur haalt deze externe elementen op.
 
 | Rol | Scope | Gebruikersgroep | Vereiste |
-|------|--------|-----------|-----|----------|
+|------|--------|-----------|----------|
 | [!DNL Sites] beheerder | Lokaal | [!DNL Experience Manager] `administrators` | Instellen [!DNL Experience Manager] en vormt integratie met verre [!DNL Assets] implementatie. |
 | DAM-gebruiker | Lokaal | `Authors` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
 | [!DNL Sites] author | Lokaal | <ul><li>`Authors` (met leestoegang op de externe DAM en auteurstoegang op de lokale [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau [!DNL Sites]</li></ul> | Eindgebruikers zijn [!DNL Sites] auteurs die deze integratie gebruiken om de snelheid van hun inhoud te verbeteren. Auteurs kunnen bestanden zoeken en doorbladeren in externe DAM met [!UICONTROL Content Finder] en het gebruik van de vereiste afbeeldingen op lokale webpagina&#39;s. |
@@ -136,7 +136,7 @@ U kunt de connectiviteit tussen gevormde controleren [!DNL Sites] implementaties
 
 U kunt een verbinding configureren tussen [!DNL Sites] implementatie en [!DNL Dynamic Media] implementatie waarmee auteurs van webpagina&#39;s kunnen werken [!DNL Dynamic Media] afbeeldingen op hun webpagina&#39;s. Tijdens het ontwerpen van webpagina&#39;s kunt u beter externe middelen en externe [!DNL Dynamic Media] implementaties blijven hetzelfde . Hierdoor kunt u de [!DNL Dynamic Media] functionaliteit via de functie Verbonden elementen, bijvoorbeeld voorinstellingen voor slimme uitsnijden en afbeeldingen.
 
-Met Connected Assets kunt u de [!DNL Dynamic Media] functionaliteit voor het verwerken van afbeeldingselementen op de externe DAM-implementatie.
+Met Connected Assets kunt u [!DNL Dynamic Media] om imageelementen te verwerken op de externe DAM-implementatie.
 
 Te gebruiken [!DNL Dynamic Media] afbeeldingen van een externe DAM-implementatie op een [!DNL Sites] implementatie:
 
