@@ -2,9 +2,9 @@
 title: Document met record genereren voor adaptieve Forms
 description: Verklaart hoe u een malplaatje voor een Document van Verslag (DoR) voor Aangepast Forms kunt produceren.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '3611'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ U kunt:
 
 Voordat u leert welke elementen nodig zijn voor een Document of Record:
 
-**Basissjabloon:** Een XFA-sjabloon (XDP-bestand) die is gemaakt in AEM Designer of een Acrobat-formulier (AcroForm). [Basissjabloon](#base-template-of-a-document-of-record) wordt gebruikt om opmaak- en brandinggegevens op te geven voor een Document of Record. Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie voordat
+**Basissjabloon:** Een XFA-sjabloon (XDP-bestand) gemaakt in Forms Designer of een Acrobat-formulier (AcroForm). [Basissjabloon](#base-template-of-a-document-of-record) wordt gebruikt om opmaak- en brandinggegevens op te geven voor een Document of Record. Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie voordat
 
 **Adaptief formulier:** Een adaptief formulier waarvoor het document of record moet worden gegenereerd.
 
@@ -38,7 +38,7 @@ Voordat u leert welke elementen nodig zijn voor een Document of Record:
 
 Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie. Voer de volgende stappen uit om een adaptief formulier te configureren voor het gebruik van XFA-sjabloon (XDP-bestand) als sjabloon voor Document of Record:
 
-1. Klik in AEM instantie van de auteur op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
+1. Klik in de auteur van Experience Manager op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
 1. Selecteer een formulier en klik op **[!UICONTROL Properties]**.
 1. Tik in het venster Eigenschappen op **[!UICONTROL Form Model]**.
 1. Op de  **[!UICONTROL Form Model]** tabblad, in het dialoogvenster **[!UICONTROL Select From]** vervolgkeuzelijst, selecteert u **[!UICONTROL Schema]** of **[!UICONTROL None]**. U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
@@ -51,7 +51,7 @@ Het adaptieve formulier is nu geconfigureerd voor het gebruik van een XDP-bestan
 
 Upload uw Adobe Acrobat PDF (Acroform) naar uw AEM Forms-exemplaar. Voer de volgende stappen uit om een adaptief formulier zo te configureren dat Adobe Acrobat PDF (Acroform) wordt gebruikt als sjabloon voor Document of Record:
 
-1. Klik in AEM instantie van de auteur op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
+1. Klik in de auteur van Experience Manager op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
 1. Selecteer een formulier en klik op **[!UICONTROL Properties]**.
 1. Tik in het venster Eigenschappen op **[!UICONTROL Form Model]**.
 1. Op de  **[!UICONTROL Form Model]** tabblad, in het dialoogvenster **[!UICONTROL Select From]** vervolgkeuzelijst, selecteert u **[!UICONTROL Schema]** of **[!UICONTROL None]**. U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
@@ -65,14 +65,14 @@ Het adaptieve formulier is nu geconfigureerd voor het gebruik van een Acrobat-fo
 Als een adaptief formulier is geconfigureerd om automatisch een Document of Record te genereren, wordt het document van Record van het formulier direct bijgewerkt telkens wanneer een formulier wordt gewijzigd. Als bijvoorbeeld een veld wordt verwijderd uit een bestaand adaptief formulier, wordt het bijbehorende veld ook verwijderd en is het niet zichtbaar in het Document of Record. Er zijn veel andere voordelen van het automatisch genereren van Document of Record. :
 
 * Formulierontwikkelaars hoeven de gegevensbindingen niet handmatig bij te houden. Het automatisch gegenereerde document met records verzorgt de aan gegevensbinding gerelateerde updates.
-* Formulierontwikkelaars hoeven velden die zijn gemarkeerd als niet opnemen in Document of Record, niet handmatig te verbergen. Automatisch gegenereerd document van records wordt vooraf geconfigureerd om dergelijke velden uit te sluiten.
+* Formulierontwikkelaars hoeven velden die zijn gemarkeerd als niet opnemen in Document of Record, niet handmatig te verbergen. Automatisch gegenereerd document met record is vooraf geconfigureerd om dergelijke velden uit te sluiten.
 * Met de optie Automatisch gegenereerd document van record bespaart u tijd die nodig is om een formuliersjabloon te maken voor Document of Record.
 * Met de optie Automatisch gegenereerd document van record kunt u verschillende stijlen en weergaven gebruiken met verschillende basissjablonen. Het helpt de beste stijl en verschijning voor Document van Verslag voor uw organisatie selecteren. Als u geen stijlen opgeeft, worden systeemstijlen standaard ingesteld.
-* Automatisch gegenereerd document van records zorgt ervoor dat elke wijziging in het formulier direct wordt doorgevoerd in het document met records.
+* Automatisch gegenereerd document van record zorgt ervoor dat elke wijziging in het formulier direct wordt weerspiegeld in het document van record.
 
 Voer de volgende stappen uit om een adaptief formulier te configureren zodat automatisch een Document of Record wordt gegenereerd:
 
-1. Klik in AEM instantie van de auteur op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
+1. Klik in de auteur van Experience Manager op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
 1. Selecteer een formulier en klik op **[!UICONTROL Properties]**.
 1. Tik in het venster Eigenschappen op **[!UICONTROL Form Model]**.
 1. Op de  **[!UICONTROL Form Model]** tabblad, in het dialoogvenster **[!UICONTROL Select From]** vervolgkeuzelijst, selecteert u **[!UICONTROL Schema]** of **[!UICONTROL None]**. U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
@@ -98,7 +98,7 @@ Adaptief-formuliervelden binden met sjabloonvelden om vastgelegde formuliergegev
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-U kunt de actie E-mail verzenden AEM Workflowverzending gebruiken in combinatie met [Document van de stap van het Verslag, en andere voorgelegde acties](configuring-submit-actions.md) om een Document van Verslag te ontvangen.
+U kunt de verzendactie E-mail, Workflow en Experience Manager gebruiken in combinatie met [Document van de stap van het Verslag, en andere voorgelegde acties](configuring-submit-actions.md) om een Document van Verslag te ontvangen.
 
 ## Incrementele updates van de sjabloon Document of Record {#document-of-record-template-incremental-updates}
 
@@ -148,7 +148,6 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
   
-
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -301,7 +300,7 @@ Een basissjabloon wordt gebruikt om de kop-, voettekst-, opmaak- en vormgeving v
 
 * De eigenschappen van deze velden worden toegepast op de velden in het Document of Record. Deze velden moeten `AF_<name of field in all caps>_XFO` naamgevingsconventie. De veldnaam voor het selectievakje moet bijvoorbeeld `AF_CHECKBOX_XFO`.
 
-Ga als volgt te werk in AEM Designer om een basissjabloon te maken.
+Ga als volgt te werk in Forms Designer om een basissjabloon te maken.
 
 1. Klik op **[!UICONTROL File]** > **[!UICONTROL New]**.
 1. Selecteer **[!UICONTROL Based on a template]** optie.
@@ -334,7 +333,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
 
    ![brandingsjabloon](assets/brandingtemplate.png)
 
-   Als u een aangepaste sjabloon wilt selecteren, bladert u door een selectie van een XDP-bestand in uw [!DNL AEM Forms] server. Als u een sjabloon wilt gebruiken die nog niet op uw [!DNL AEM Forms] server, moet u XDP eerst uploaden aan uw [!DNL AEM Forms] server.
+   Als u een aangepaste sjabloon wilt selecteren, bladert u door een selectie van een XDP-bestand in uw [!DNL AEM Forms] server. Als u een sjabloon wilt gebruiken die nog niet op uw [!DNL AEM Forms] server, moet u de XDP eerst uploaden naar uw [!DNL AEM Forms] server.
 
 1. Afhankelijk van het feit of u een standaardsjabloon of een aangepaste sjabloon selecteert, worden enkele of alle volgende eigenschappen weergegeven op het tabblad Document of Record. Geef deze op de juiste manier op:
 
@@ -354,7 +353,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
 
    >[!NOTE]
    >
-   >Als u een adaptieve formuliersjabloon gebruikt dat is gemaakt met een versie van Designer die ouder is dan 6.3, zodat de eigenschappen Accentkleur en Lettertypefamilie werken, moet u ervoor zorgen dat het volgende aanwezig is in de sjabloon Adaptief formulier onder het basissubformulier:
+   >Als u een adaptieve formuliersjabloon gebruikt dat is gemaakt met een versie van Designer die ouder is dan versie 6.3, werken de eigenschappen Accentkleur en Lettertypefamilie alleen als het volgende aanwezig is in de sjabloon Adaptief formulier onder het basissubformulier:
 
    ```xml
    <proto>
@@ -388,7 +387,7 @@ Velden in een deelvenster die zijn gerenderd in een kolomindeling in het documen
 
 Met de instellingen voor Document of Record kunt u opties kiezen die u wilt opnemen in het Document of Record. Een bank accepteert bijvoorbeeld naam, leeftijd, socialezekerheidsnummer en telefoonnummer in een formulier. Het formulier genereert een bankrekeningnummer en filiaalgegevens. U kunt ervoor kiezen alleen de naam, het socialezekerheidsnummer, de bankrekening en de filiaalgegevens weer te geven in Document of Record.
 
-De instellingen Document of Record van een component zijn beschikbaar onder de eigenschappen. Als u toegang wilt krijgen tot de eigenschappen van een component, selecteert u de component en klikt u op ![cmppr](assets/cmppr.png) in de overlay. De eigenschappen worden vermeld in de zijbalk en u kunt de volgende instellingen erin vinden.
+De instelling van de component Document of Record is beschikbaar onder de eigenschappen. Als u toegang wilt krijgen tot de eigenschappen van een component, selecteert u de component en klikt u op ![cmppr](assets/cmppr.png) in de overlay. De eigenschappen worden vermeld in de zijbalk en u kunt de volgende instellingen erin vinden.
 
 **Instellingen op veldniveau**
 
@@ -402,3 +401,69 @@ De instellingen Document of Record van een component zijn beschikbaar onder de e
 
 * **Inclusief niet-gebonden velden in DoR:** Als u de eigenschap instelt, worden niet-gebonden velden van op schema gebaseerde adaptieve vorm opgenomen in Document of Record. Standaard is dit waar.
 * **Velden uitsluiten van DoR indien verborgen:** Als u de eigenschap instelt, wordt de werking van de veldeigenschap &#39;Uitsluiten van document van record&#39; genegeerd als deze niet true is. Als velden verborgen zijn op het moment dat het formulier wordt verzonden, worden ze uitgesloten van Document of Record als de eigenschap is ingesteld op true, op voorwaarde dat de eigenschap &#39;Uitsluiten van document van record&#39; niet is ingesteld.
+
+## Een aangepast XCI-bestand gebruiken
+
+>[!NOTE]
+>
+> Deze functie is beschikbaar in het prereleasekanaal. Zie [Prerelease Channel-documentatie](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
+
+Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een document instellen. Forms as a Cloud Service heeft een master XCI-bestand. U kunt een aangepast XCI-bestand gebruiken om een of meer standaardeigenschappen te overschrijven die in het master XCI-bestand zijn opgegeven. U kunt bijvoorbeeld een lettertype insluiten in een document of een gelabelde eigenschap inschakelen voor alle documenten. In de volgende tabel worden de XCI-opties aangegeven:
+
+| XCI, optie | Beschrijving |
+|--- |--- |
+| config/present/pdf/creator | Hiermee wordt de maker van het document geïdentificeerd met het item Maker in het documentgegevenswoordenboek. Voor informatie over dit woordenboek raadpleegt u de [PDF Referentiehandleiding](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/pdf/producer | Hiermee wordt de documentproducent geïdentificeerd met behulp van het Producent-item in het documentinformatiewoordenboek. Voor informatie over dit woordenboek raadpleegt u de [PDF Referentiehandleiding](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/layout | Hiermee bepaalt u of de uitvoer één deelvenster is of gepagineerd. |
+| config/present/pdf/compression/level | Hiermee geeft u de mate van compressie op die moet worden gebruikt bij het genereren van een PDF-document. |
+| config/present/pdf/fontInfo/embed | Bepaalt het insluiten van lettertypen in het uitvoerdocument. |
+| config/present/pdf/scriptModel | Bepaalt of XFA-specifieke informatie wordt opgenomen in het PDF-uitvoerdocument. |
+| config/present/common/data/adjustData | Bepaalt of de XFA-toepassing de gegevens na het samenvoegen aanpast. |
+| config/present/pdf/renderPolicy | Bepaalt of het genereren van pagina-inhoud wordt uitgevoerd op de server of uitgesteld aan de client. |
+| config/present/common/locale | Geeft de standaardlandinstelling aan die in het uitvoerdocument wordt gebruikt. |
+| config/present/destination | Wanneer deze elementen zich in een huidig element bevinden, geeft u de uitvoerindeling op. Wanneer deze zich in een element openAction bevindt, geeft dit de handeling op die moet worden uitgevoerd wanneer het document wordt geopend in een interactieve client. |
+| config/present/output/type | Hiermee geeft u het type compressie op dat u wilt toepassen op een bestand of het type uitvoer dat u wilt maken. |
+| config/present/common/temp/uri | Hier geeft u de URI van het formulier op. |
+| config/present/common/template/base | Hiermee wordt een basislocatie voor URI&#39;s in het formulierontwerp opgegeven. Wanneer dit element ontbreekt of leeg is, wordt de locatie van het formulierontwerp als basis gebruikt. |
+| config/present/common/log/to | Controls the location that log data or output data is written to. |
+| config/present/output/to | Controls the location that log data or output data is written to. |
+| config/present/script/currentPage | Hiermee geeft u de eerste pagina op wanneer het document wordt geopend. |
+| config/present/script/exclude | Informeert Forms as a Cloud Service welke gebeurtenissen moeten worden genegeerd. |
+| config/present/pdf/linearized | Bepaalt of het PDF-uitvoerdocument lineair is. |
+| config/present/script/runScripts | Hiermee bepaalt u welke set scripts Forms as a Cloud Service uitvoert. |
+| config/present/pdf/tagged | Controls the include of tags into the output PDF document. Codes, in de context van PDF, zijn aanvullende informatie die in een document is opgenomen om de logische structuur van het document zichtbaar te maken. Tags zijn handig voor toegankelijkheidshulpmiddelen en voor het opnieuw opmaken. Een paginanummer kan bijvoorbeeld als een artefact worden gecodeerd, zodat een schermlezer het niet in het midden van de tekst activeert. Hoewel codes een document nuttiger maken, verhogen zij ook de grootte van het document en de verwerkingstijd om het tot stand te brengen. |
+| config/present/pdf/fontInfo/alwaysEmbed | Hiermee geeft u een lettertype op dat in het uitvoerdocument wordt ingesloten. |
+| config/present/pdf/fontInfo/neverEmbed | Hiermee geeft u een lettertype op dat nooit in het uitvoerdocument mag worden ingesloten. |
+| config/present/pdf/pdfa/part | Hier geeft u het versienummer op van de PDF/A-specificatie waarmee het document compatibel is. |
+| config/present/pdf/pdfa/amd | Geeft het wijzigingsniveau van de specificatie PDF/A aan. |
+| config/present/pdf/pdfa/conformance | Hiermee wordt het compatibiliteitsniveau opgegeven met de PDF/A-specificatie. |
+| config/present/pdf/version | Hiermee wordt de versie van het te genereren PDF-document opgegeven |
+| config/present/pdf/version/map | Geeft de terugvalfonts voor het document aan |
+
+### Een aangepast XCI-bestand gebruiken in uw as a Cloud Service Forms-omgeving
+
+1. Voeg het aangepaste XCI-bestand toe aan uw ontwikkelingsproject.
+1. Geef het volgende op [inline, eigenschap](/help/implementing/deploying/configuring-osgi.md):
+
+   ```JSON
+    {
+     "xciFilePath": "[path of XCI file]"
+    }
+   ```
+
+   Bijvoorbeeld,
+
+   ```JSON
+    {
+     "xciFilePath": "/content/dam/formsanddocuments/customMinionProBoldAndTagged.xci"
+    }
+   ```
+
+1. Implementeer het project in de omgeving van uw Cloud Service.
+
+### Een aangepast XCI-bestand gebruiken in uw lokale as a Cloud Service Forms-ontwikkelomgeving
+
+1. Upload het XCI-bestand naar uw lokale ontwikkelomgeving.
+1. Open Cloud Service SDK Configuration Manager. De standaard-URL is: <http://localhost:4502/system/console/configMgr>.
+1. Zoek en open de **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuratie.
+1. Geef het pad van het XCI-bestand op en klik op **[!UICONTROL Save]**.
