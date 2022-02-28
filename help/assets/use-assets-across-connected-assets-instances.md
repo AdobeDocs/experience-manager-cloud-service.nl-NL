@@ -5,12 +5,13 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
+source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
 workflow-type: tm+mt
-source-wordcount: '3713'
+source-wordcount: '3744'
 ht-degree: 17%
 
 ---
+
 
 # Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -132,22 +133,24 @@ U kunt de connectiviteit tussen gevormde controleren [!DNL Sites] implementaties
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
+## Dynamic Media-middelen gebruiken {#dynamic-media-assets}
+
+
+Met Connected Assets kunt u afbeeldingselementen gebruiken die zijn verwerkt door [!DNL Dynamic Media] vanaf de externe DAM-implementatie op sitepagina&#39;s en met Dynamic Media-functies, zoals voorinstellingen voor slimme uitsnijdingen en afbeeldingen.
+
+Te gebruiken [!DNL Dynamic Media] met verbonden elementen:
+
+1. Configureren [!DNL Dynamic Media] op externe DAM-implementatie met ingeschakelde synchronisatiemodus.
+1. Configureren [Verbonden elementen](#configure-a-connection-between-sites-and-assets-deployments).
+1. Configureren [!DNL Dynamic Media] op de instantie van Plaatsen met de zelfde bedrijfsnaam zoals gevormd op verre DAM. De plaatsing van Plaatsen moet read-only toegang tot de rekening van Dynamic Media hebben om met verbonden activa te werken. Zorg er daarom voor dat u de synchronisatiemodus in Dynamic Media-configuratie op de Sites-instantie uitschakelt.
+
+>[!CAUTION]
+>
+>Met verbonden middelen en [!DNL Dynamic Media] configuratie, kunt u niet gebruiken [!DNL Dynamic Media] om lokale middelen te verwerken beschikbaar op [!DNL Sites] implementatie.
+
 ## Een verbinding configureren tussen [!DNL Sites] en [!DNL Dynamic Media] implementaties {#sites-dynamic-media-connected-assets}
 
 U kunt een verbinding configureren tussen [!DNL Sites] implementatie en [!DNL Dynamic Media] implementatie waarmee auteurs van webpagina&#39;s kunnen werken [!DNL Dynamic Media] afbeeldingen op hun webpagina&#39;s. Tijdens het ontwerpen van webpagina&#39;s kunt u beter externe middelen en externe [!DNL Dynamic Media] implementaties blijven hetzelfde . Hierdoor kunt u de [!DNL Dynamic Media] functionaliteit via de functie Verbonden elementen, bijvoorbeeld voorinstellingen voor slimme uitsnijden en afbeeldingen.
-
-Met Connected Assets kunt u [!DNL Dynamic Media] om imageelementen te verwerken op de externe DAM-implementatie.
-
-Te gebruiken [!DNL Dynamic Media] afbeeldingen van een externe DAM-implementatie op een [!DNL Sites] implementatie:
-
-1. Configureren [!DNL Dynamic Media] op externe DAM-implementatie met de volgende opties:
-   * Synchronisatiemodus: Standaard ingeschakeld
-   * Elementen publiceren: Alle inhoud synchroniseren
-1. Aan [!DNL Sites] implementatie:
-   1. Configureren [!DNL Dynamic Media] hetzelfde bedrijf gebruiken als in stap 1 (Synchronisatiemodus uitgeschakeld).
-   1. Aangesloten elementen configureren.
-
-   [!DNL Dynamic Media] elementen zijn beschikbaar op [!DNL Sites] implementatie in de modus Alleen-lezen. U kunt daarom niet [!DNL Dynamic Media] om elementen op de [!DNL Sites] implementatie.
 
 Voer de volgende stappen uit om de verbinding te configureren:
 
