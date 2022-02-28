@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
+source-git-commit: 97e704dae32baa52f3e9490aa5dcab8f5081fd1a
 workflow-type: tm+mt
-source-wordcount: '3744'
+source-wordcount: '3684'
 ht-degree: 17%
 
 ---
@@ -148,11 +148,9 @@ Te gebruiken [!DNL Dynamic Media] met verbonden elementen:
 >
 >Met verbonden middelen en [!DNL Dynamic Media] configuratie, kunt u niet gebruiken [!DNL Dynamic Media] om lokale middelen te verwerken beschikbaar op [!DNL Sites] implementatie.
 
-## Een verbinding configureren tussen [!DNL Sites] en [!DNL Dynamic Media] implementaties {#sites-dynamic-media-connected-assets}
+## Configureren [!DNL Dynamic Media] {#configure-dynamic-media}
 
-U kunt een verbinding configureren tussen [!DNL Sites] implementatie en [!DNL Dynamic Media] implementatie waarmee auteurs van webpagina&#39;s kunnen werken [!DNL Dynamic Media] afbeeldingen op hun webpagina&#39;s. Tijdens het ontwerpen van webpagina&#39;s kunt u beter externe middelen en externe [!DNL Dynamic Media] implementaties blijven hetzelfde . Hierdoor kunt u de [!DNL Dynamic Media] functionaliteit via de functie Verbonden elementen, bijvoorbeeld voorinstellingen voor slimme uitsnijden en afbeeldingen.
-
-Voer de volgende stappen uit om de verbinding te configureren:
+Om te vormen [!DNL Dynamic Media] op [!DNL Assets] en [!DNL Sites] implementaties:
 
 1. Maak de configuratie voor Connected Assets zoals hierboven beschreven, behalve wanneer u de functionaliteit configureert, selecteert u **[!UICONTROL Fetch original rendition for Dynamic Media Connected Assets]** optie.
 
