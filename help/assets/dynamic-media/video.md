@@ -4,9 +4,9 @@ description: Leer hoe u in Dynamic Media met video kunt werken, zoals tips en tr
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
+source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
 workflow-type: tm+mt
-source-wordcount: '8976'
+source-wordcount: '8974'
 ht-degree: 3%
 
 ---
@@ -447,9 +447,6 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
 1. Op de pagina Dashboard, rechts van **[!UICONTROL Google Cloud Platform]** selecteert u de vervolgkeuzelijst Project om het dialoogvenster **[!UICONTROL Select a project]** in.
 1. In de **[!UICONTROL Select a project]** dialoogvenster selecteert u **[!UICONTROL New Project]**.
-
-   ![6_5_gogleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
 1. In de **[!UICONTROL New Project]** in het dialoogvenster **[!UICONTROL Project name]** veld, typt u de naam van het nieuwe project.
 
    Uw project-id is gebaseerd op uw projectnaam. Kies daarom de projectnaam zorgvuldig; het kan na het creëren niet worden veranderd. U moet dezelfde project-id opnieuw invoeren wanneer u YouTube later instelt in Experience Manager. Schrijf het daarom op.
@@ -460,8 +457,6 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
    * Op het dashboard van uw project, in **[!UICONTROL Getting Started]** kaart, selecteren **[!UICONTROL Explore and enable APIs]**.
    * Op het dashboard van uw project, in **[!UICONTROL APIs]** kaart, selecteren **[!UICONTROL Go to APIs overview]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. In het midden boven **[!UICONTROL APIs & Services]** pagina, selecteert u **[!UICONTROL ENABLE APIS AND SERVICES]**.<!-- NEXT STEP BELOW IS STEP 10 -->
 1. Op de **[!UICONTROL API Library]** pagina, links, onder **[!UICONTROL Category]**, selecteert u **[!UICONTROL YouTube]**. Selecteer rechts van de pagina de optie **[!UICONTROL YouTube]**.
