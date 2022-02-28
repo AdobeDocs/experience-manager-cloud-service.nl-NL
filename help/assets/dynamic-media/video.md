@@ -4,10 +4,10 @@ description: Leer hoe u in Dynamic Media met video kunt werken, zoals tips en tr
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: bb04d3bf3b5f4ca9abc12eee2e50b5f3a95ba405
+source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
 workflow-type: tm+mt
-source-wordcount: '9100'
-ht-degree: 4%
+source-wordcount: '8976'
+ht-degree: 3%
 
 ---
 
@@ -103,7 +103,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
 ## Werken met video in Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media is een end-to-end oplossing waarmee u eenvoudig Adaptieve video van hoge kwaliteit kunt publiceren voor streaming op meerdere schermen, zoals desktopcomputers, iOS, Android™, BlackBerry® en mobiele apparaten van Windows®. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. De desktopcomputer of het mobiele apparaat detecteert de beschikbare bandbreedte.
+Video in Dynamic Media is een end-to-end oplossing waarmee u eenvoudig Adaptieve video van hoge kwaliteit kunt publiceren voor streaming op meerdere schermen, waaronder desktops, tablets en mobiele apparaten. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. De desktopcomputer of het mobiele apparaat detecteert de beschikbare bandbreedte.
 
 Op een mobiel iOS-apparaat wordt bijvoorbeeld een bandbreedte gedetecteerd, zoals 3G, 4G of Wi-Fi. Vervolgens wordt automatisch de naar rechts gecodeerde video geselecteerd bij de verschillende bitsnelheden van de video in de adaptieve videoset. De video wordt gestreamd naar desktops, mobiele apparaten of tablets.
 
@@ -128,13 +128,13 @@ Voor het beheren van afzonderlijke video- en adaptieve videosets wordt het volge
 
 * ondertiteling in alle HTML5-videoviewers.
 * Video organiseren, doorbladeren en doorzoeken met volledige metagegevensondersteuning voor een efficiënt beheer van video-elementen.
-* Lever Adaptieve videosets voor het web en desktops, en voor mobiele apparaten, waaronder de iPhone, iPad, Android™, BlackBerry® en Windows®.
+* Lever Adaptieve videosets naar het web en desktops, tablets en mobiele apparaten.
 
 Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
-Dynamic Media ondersteunt het afspelen van mobiele video voor MP4 H.264-video. U kunt de apparaten van BlackBerry® vinden die dit videoformaat bij het volgende steunen: [Ondersteunde video-indelingen op BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-U vindt Windows®-apparaten die deze video-indeling ondersteunen als volgt: [Ondersteunde video-indelingen op Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
+OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 * Speel de video terug gebruikend de Voorinstellingen van de VideoKijker van Dynamic Media, met inbegrip van het volgende:
 
@@ -239,13 +239,15 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
    <td>Chrome (iOS)</td>
    <td>HLS</td>
   </tr>
-  <tr>
-   <td>Mobiel</td>
+ </tbody>
+</table>
+
+<!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
+   <td>Mobile</td>
    <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
- </tbody>
-</table>
+ -->
 
 ## Architectuur van Dynamic Media-videooplossing {#architecture-of-dynamic-media-video-solution}
 
@@ -436,21 +438,19 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 **Google Cloud-instellingen configureren:**
 
 1. Maak een Google-account.
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
-
-   Als u al een Google-account hebt, gaat u verder met de volgende stap.
+   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
 
 1. Ga naar [https://cloud.google.com/](https://cloud.google.com/).
 1. Selecteer in de rechterbovenhoek van de Google Cloud-pagina de optie **[!UICONTROL Console]**.
 
    Indien nodig **[!UICONTROL Sign in]** met uw Google-accountgegevens de **[!UICONTROL Console]** optie.
 
-1. Op de pagina Dashboard, rechts van **[!UICONTROL Google Cloud Platform]** selecteert u de vervolgkeuzelijst Project om het dialoogvenster Een project selecteren te openen.
-1. Selecteer in het dialoogvenster Een project selecteren de optie **[!UICONTROL New Project]**.
+1. Op de pagina Dashboard, rechts van **[!UICONTROL Google Cloud Platform]** selecteert u de vervolgkeuzelijst Project om het dialoogvenster **[!UICONTROL Select a project]** in.
+1. In de **[!UICONTROL Select a project]** dialoogvenster selecteert u **[!UICONTROL New Project]**.
 
    ![6_5_gogleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
-1. In het Nieuwe de dialoogvakje van het Project, op het gebied van de Naam van het Project, typ de naam van uw nieuw project.
+1. In de **[!UICONTROL New Project]** in het dialoogvenster **[!UICONTROL Project name]** veld, typt u de naam van het nieuwe project.
 
    Uw project-id is gebaseerd op uw projectnaam. Kies daarom de projectnaam zorgvuldig; het kan na het creëren niet worden veranderd. U moet dezelfde project-id opnieuw invoeren wanneer u YouTube later instelt in Experience Manager. Schrijf het daarom op.
 
@@ -458,72 +458,71 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
 1. Voer een van de volgende handelingen uit:
 
-   * Selecteer op het dashboard van uw project in de kaart Aan de slag de optie **[!UICONTROL Explore and enable APIs]**.
-   * Selecteer op het dashboard van uw project in de API&#39;s-kaart de optie **[!UICONTROL Go to APIs overview]**.
+   * Op het dashboard van uw project, in **[!UICONTROL Getting Started]** kaart, selecteren **[!UICONTROL Explore and enable APIs]**.
+   * Op het dashboard van uw project, in **[!UICONTROL APIs]** kaart, selecteren **[!UICONTROL Go to APIs overview]**.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. Selecteer boven aan de pagina met API&#39;s en services de optie **[!UICONTROL Enable APIs and Services]**.
-1. Op de pagina van de API-bibliotheek, links, onder **[!UICONTROL Category]**, selecteert u **[!UICONTROL YouTube]**. Selecteer rechts van de pagina de optie **[!UICONTROL YouTube Data API]**.
-1. Selecteer op de v3-pagina YouTube Data API de optie **[!UICONTROL Enable]**.
+1. In het midden boven **[!UICONTROL APIs & Services]** pagina, selecteert u **[!UICONTROL ENABLE APIS AND SERVICES]**.<!-- NEXT STEP BELOW IS STEP 10 -->
+1. Op de **[!UICONTROL API Library]** pagina, links, onder **[!UICONTROL Category]**, selecteert u **[!UICONTROL YouTube]**. Selecteer rechts van de pagina de optie **[!UICONTROL YouTube]**.
+1. Op de **[!UICONTROL YouTube]** pagina, selecteert u **[!UICONTROL YouTube Data API v3]**.
+1. Op de **[!UICONTROL YouTube Data API v3]** pagina, selecteert u **[!UICONTROL MANAGE]**.
 
-   ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
+   ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. U hebt referenties nodig om de API te gebruiken. Selecteer indien nodig **[!UICONTROL Create Credentials]**.
+1. U hebt referenties nodig om de API te gebruiken. Selecteer zo nodig aan de linkerkant van de pagina met API&#39;s en services de optie **[!UICONTROL Credentials]**.
 
-   ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
+1. Selecteer boven aan de pagina Referenties de optie **[!UICONTROL CREATE CREDENTIALS]** selecteert u vervolgens **[!UICONTROL OAuth client ID]**.
 
-1. Op de **[!UICONTROL Add credentials to your project]** pagina, stap 1, doet het volgende:
+1. Op de **[!UICONTROL Create OAuth client ID]** pagina, in de **[!UICONTROL Application type]** vervolgkeuzelijst, selecteert u **[!UICONTROL Web application]**.
 
-   * Selecteer in de vervolgkeuzelijst **[!UICONTROL Which API are you using?]** de optie **[!UICONTROL YouTube Data API v3]**.
+   ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
-   * Selecteer in de vervolgkeuzelijst **[!UICONTROL Where are you calling the API from?]** de optie **[!UICONTROL Web Server (for example, node.js, Tomcat)]**.
+1. Voer een van de volgende handelingen uit:
 
-   * Selecteer in de vervolgkeuzelijst **[!UICONTROL What data are you accessing?]** de optie **[!UICONTROL User data]**.
+   * In de **[!UICONTROL Name]** Voer een unieke naam in voor uw OAuth 2.0-client.
+   * Gebruik de standaardnaam die Google al heeft opgegeven in het dialoogvenster **[!UICONTROL Name]** veld.
 
-   ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
+1. Onder de **[!UICONTROL Authorized JavaScript origins]** kop, selecteren **[!UICONTROL ADD URI]**.
 
-1. Selecteer **[!UICONTROL What credentials do I need?]**
-1. Voer op de pagina **[!UICONTROL Add credentials to your project]** in stap 2 onder de kop **[!UICONTROL Create an OAuth 2.0 client ID]** in het veld Naam desgewenst een unieke naam in. U kunt ook de standaardnaam gebruiken die door Google is opgegeven.
-1. Onder de **[!UICONTROL Authorized JavaScript origins]** Voer in het tekstveld het volgende pad in, waarbij u uw eigen domein- en poortnummer in het pad vervangt en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
+   ![6_5_googleaccount-apis-nameAuthorizations](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
+
+1. In de **[!UICONTROL URIs]** tekstveld, voer het volgende pad in en vervang uw eigen domein- en poortnummer in het pad. Druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
 
    `https://<servername.domain>:<port_number>`
 
    Bijvoorbeeld, `https://1a2b3c.mycompany.com:4321`
 
-   **Opmerking**: De bovenstaande padvoorbeelden dienen alleen ter toelichting.
+   >[!IMPORTANT]
+   >
+   >Het bovenstaande voorbeeldpad is hypothetisch en alleen ter toelichting.
 
-   ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
+1. Onder de **[!UICONTROL Authorized redirect URIs]** Selecteer URI TOEVOEGEN.
 
-1. Onder de **[!UICONTROL Authorized redirect URIs]** Voer in het tekstveld het volgende pad in, waarbij u uw eigen domein- en poortnummer in het pad vervangt en druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
+1. In de **[!UICONTROL URIs]** tekstveld, voer het volgende pad in en vervang uw eigen domein- en poortnummer in het pad. Druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    Bijvoorbeeld, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **Opmerking**: Het bovenstaande padvoorbeeld is alleen bedoeld voor uitleg.
+   >[!IMPORTANT]
+   >
+   >Het bovenstaande voorbeeldpad is hypothetisch en alleen ter toelichting.
 
-1. Selecteer **[!UICONTROL Create OAuth client ID]**.
-1. Selecteer op de pagina **[!UICONTROL Add credentials to your project]** in stap 3 onder de kop **[!UICONTROL Set up the OAuth 2.0 consent screen]** het e-mailadres van Gmail dat u momenteel gebruikt.
+1. Onder aan de **[!UICONTROL Create OAuth client ID]** pagina, selecteert u **[!UICONTROL Create]**.
 
-   ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
+1. Op de **[!UICONTROL OAuth client created]** voert u de volgende handelingen uit:
 
-1. Onder de **[!UICONTROL Product name shown to users]** Voer in het tekstveld in wat u wilt weergeven op het instemmingsscherm.
+   * (Optioneel) Kopieer uw client-id en uw clientgeheim en sla deze op.
+   * Selecteren **[!UICONTROL DOWNLOAD JSON]** en sla het JSON-bestand op.
 
-   Het toestemmingsscherm wordt getoond aan de beheerder van de Experience Manager wanneer zij aan YouTube voor authentiek verklaren. Experience Manager neemt contact op met YouTube voor toestemming.
+   U hebt dit gedownloade JSON-bestand nodig wanneer u YouTube later instelt in Adobe Experience Manager.
 
-1. Selecteer **[!UICONTROL Continue]**.
-1. Op Add geloofsbrieven aan uw projectpagina, stap 4, onder Add **[!UICONTROL Download credentials]** kop, selecteren **[!UICONTROL Download]**.
+   ![6_5_googleaccount-apis-oauthclientcreated](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
-   ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
+1. Op de **[!UICONTROL OAuth client created]** dialoogvenster selecteert u **[!UICONTROL OK]**.
 
-1. Sla de `client_id.json` bestand.
-
-   U hebt dit gedownloade json-bestand nodig wanneer u YouTube later instelt in Adobe Experience Manager.
-
-1. Selecteer **[!UICONTROL Done]**.
-
-   Log uit op je Google account. Maak nu een YouTube-kanaal.
+1. Log uit op je Google account. Maak nu een YouTube-kanaal.
 
 ### Een YouTube-kanaal maken {#creating-a-youtube-channel}
 
