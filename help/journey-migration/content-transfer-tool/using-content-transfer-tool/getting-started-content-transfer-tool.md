@@ -1,10 +1,10 @@
 ---
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
-source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
+source-git-commit: 0951942690949c23a99da3494526c1c78e7bcf22
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 25%
+source-wordcount: '1069'
+ht-degree: 21%
 
 ---
 
@@ -125,6 +125,44 @@ In deze sectie leert u hoe u de Content Transfer-tool gebruikt om content te mig
 1. Selecteer een migratieset en klik op **Eigenschappen** om de eigenschappen van de migratieset weer te geven of te bewerken. Tijdens het bewerken van eigenschappen is het niet mogelijk om de **Naam migratieset** of de **Service-URL**.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+
+### Grootte en schijfruimte van migratieset bepalen {#migration-set-size}
+
+Nadat u een migratieset hebt gemaakt, wordt u ten zeerste aangeraden de migratieset te controleren voordat u een extractieproces start.
+Als u een formaatcontrole uitvoert op de migratieset, kunt u:
+* Bepalen of er voldoende schijfruimte is in het dialoogvenster `crx-quickstart` subdirectory om extractie te voltooien.
+* Bepaal of de grootte van de migratieset binnen de ondersteunde productgrenzen valt en vermijd mislukte inname van inhoud.
+
+Voer de onderstaande stappen uit om een groottecontrole uit te voeren:
+
+1. Selecteer een migratieset en klik op **Formaat controleren**.
+
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
+
+1. Hierdoor wordt de **Formaat controleren** .
+
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
+
+1. Klikken op **Formaat controleren** om het proces te starten. Vervolgens keert u terug naar de lijstweergave van de migratieset. Er wordt dan een bericht weergegeven dat aangeeft dat **Formaat controleren** wordt uitgevoerd.
+
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
+
+
+1. Eenmaal **Formaat controleren** proces is voltooid, verandert de status in **VOLTOOID**. Selecteer dezelfde migratieset en klik op **Formaat controleren** om de resultaten weer te geven.
+
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
+
+   Hieronder ziet u een voorbeeld van **Formaat controleren** resultaten zonder waarschuwingen.
+
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+
+1. Als de **Formaat controleren** de resultaten wijzen erop dat er onvoldoende schijfruimte is en/of dat de migratie de productlimieten overschrijdt; **WAARSCHUWING** status wordt weergegeven.
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+
+Hieronder ziet u een voorbeeld van **Formaat controleren** resultaten met waarschuwingen.
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
 ## Volgende functies {#whats-next}
