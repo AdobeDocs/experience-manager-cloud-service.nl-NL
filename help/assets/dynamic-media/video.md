@@ -4,9 +4,9 @@ description: Leer hoe u in Dynamic Media met video kunt werken, zoals tips en tr
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e1f0b04dde2eb5a3392a0b9befbc56135b06cff4
+source-git-commit: efdb8304197a76e66e71d6f7b5c510216ac5ff7e
 workflow-type: tm+mt
-source-wordcount: '9002'
+source-wordcount: '8997'
 ht-degree: 3%
 
 ---
@@ -443,11 +443,11 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
    Als u al een Google-account hebt, kunt u de volgende stap overslaan.
 
 1. Ga naar [https://cloud.google.com/](https://cloud.google.com/).
-1. Selecteer in de rechterbovenhoek van de Google Cloud-pagina de optie **[!UICONTROL Console]**.
+1. Op de **[!UICONTROL Google Cloud]** pagina, bij de rechterbovenhoek, selecteert u **[!UICONTROL Console]**.
 
    Indien nodig **[!UICONTROL Sign in]** met uw Google-accountgegevens de **[!UICONTROL Console]** optie.
 
-1. Op de pagina Dashboard, rechts van **[!UICONTROL Google Cloud Platform]**, selecteert u de **[!UICONTROL Project]** vervolgkeuzelijst om de **[!UICONTROL Select a project]** in.
+1. Op de **[!UICONTROL Dashboard]** pagina, rechts van **[!UICONTROL Google Cloud Platform]**, selecteert u de **[!UICONTROL Project]** vervolgkeuzelijst om de **[!UICONTROL Select a project]** in.
 1. In de **[!UICONTROL Select a project]** dialoogvenster selecteert u **[!UICONTROL New Project]**.
 1. In de **[!UICONTROL New Project]** in het dialoogvenster **[!UICONTROL Project name]** veld, typt u de naam van het nieuwe project.
 
@@ -467,8 +467,8 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
    ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. U hebt referenties nodig om de API te gebruiken. Selecteer zo nodig aan de linkerkant van de pagina met API&#39;s en services de optie **[!UICONTROL Credentials]**.
-1. Selecteer boven aan de pagina Referenties de optie **[!UICONTROL CREATE CREDENTIALS]** selecteert u vervolgens **[!UICONTROL OAuth client ID]**.
+1. U hebt referenties nodig om de API te gebruiken. Indien nodig, aan de linkerkant van de **[!UICONTROL APIs & Services]** pagina, selecteert u **[!UICONTROL Credentials]**.
+1. Op de **[!UICONTROL Credentials]** pagina, bij de bovenkant, selecteer **[!UICONTROL CREATE CREDENTIALS]** selecteert u vervolgens **[!UICONTROL OAuth client ID]**.
 1. Op de **[!UICONTROL Create OAuth client ID]** pagina, in de **[!UICONTROL Application type]** vervolgkeuzelijst, selecteert u **[!UICONTROL Web application]**.
 
    ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
@@ -488,9 +488,9 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
    Bijvoorbeeld, `https://1a2b3c.mycompany.com:4321`
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >Het bovenstaande voorbeeldpad is hypothetisch en alleen ter toelichting.
+   >Het bovenstaande URI-padvoorbeeld is hypothetisch en alleen ter uitleg.
 
 1. Onder de **[!UICONTROL Authorized redirect URIs]** Selecteer URI TOEVOEGEN.
 1. In de **[!UICONTROL URIs]** tekstveld, voer het volgende pad in en vervang uw eigen domein- en poortnummer in het pad. Druk vervolgens op **[!UICONTROL Enter]** om het pad aan de lijst toe te voegen:
@@ -499,14 +499,14 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
    Bijvoorbeeld, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >Het bovenstaande voorbeeldpad is hypothetisch en alleen ter toelichting.
+   >Het bovenstaande URI-padvoorbeeld is hypothetisch en alleen ter uitleg.
 
 1. Onder aan de **[!UICONTROL Create OAuth client ID]** pagina, selecteert u **[!UICONTROL Create]**.
 1. Op de **[!UICONTROL OAuth client created]** voert u de volgende handelingen uit:
 
-   * (Optioneel) Kopieer uw client-id en uw clientgeheim en sla deze op.
+   * (Optioneel) Kopieer de waarden in het dialoogvenster **[!UICONTROL Your Client ID]** en **[!UICONTROL Your Client Secret]** en opslaan.
    * Selecteren **[!UICONTROL DOWNLOAD JSON]** en sla het JSON-bestand op.
 
    U hebt dit gedownloade JSON-bestand nodig wanneer u YouTube later instelt in Adobe Experience Manager.
