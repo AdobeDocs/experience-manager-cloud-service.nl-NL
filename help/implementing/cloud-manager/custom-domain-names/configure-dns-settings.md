@@ -2,7 +2,7 @@
 title: 'DNS-instellingen configureren '
 description: DNS-instellingen configureren
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 0b24f8c8b88f476a0d1073e873e46441b1b8b821
+source-git-commit: 016954bc712a135886a6031deba05d92e7d5099c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
@@ -22,7 +22,7 @@ De volgende stappen moeten worden uitgevoerd zoals aangegeven in onderstaande ta
 
 | Stap |  | Verantwoordelijkheid | Meer informatie |
 |--- |--- |--- |---|
-| SLL-certificaat toevoegen | SLL-certificaat toevoegen | Klant | [Een SSL-certificaat toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
+| SSL-certificaat toevoegen | SSL-certificaat toevoegen | Klant | [Een SSL-certificaat toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
 | Domeinverificatie | TXT-record toevoegen | Klant | [Een TXT-record toevoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
 | Status domeinverificatie controleren |  | Klant |  |
 |  | Status: Domeinverificatie mislukt | Klant | [Status domeinnaam controleren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
