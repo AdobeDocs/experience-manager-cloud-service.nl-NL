@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 97e704dae32baa52f3e9490aa5dcab8f5081fd1a
+source-git-commit: 8457a6eb81b5d28c264e7f75793724b40fe7eb1d
 workflow-type: tm+mt
 source-wordcount: '3684'
 ht-degree: 17%
@@ -266,7 +266,7 @@ U kunt één externe DAM-implementatie verbinden met een [!DNL Sites] implementa
 
 ### Kunt u Dynamic Media-elementen van uw [!DNL Sites] implementatie na het configureren van Connected Assets?
 
-Na het configureren van Connected Assets, [!DNL Dynamic Media] elementen zijn beschikbaar op [!DNL Sites] implementatie in de modus Alleen-lezen. U kunt daarom niet [!DNL Dynamic Media] om elementen op de [!DNL Sites] implementatie. Zie voor meer informatie [Een verbinding tussen Sites en Dynamic Media-implementaties configureren](#sites-dynamic-media-connected-assets).
+Na het configureren van Connected Assets, [!DNL Dynamic Media] elementen zijn beschikbaar op [!DNL Sites] implementatie in de modus Alleen-lezen. U kunt daarom niet [!DNL Dynamic Media] om elementen op de [!DNL Sites] implementatie. Zie voor meer informatie [Een verbinding tussen Sites en Dynamic Media-implementaties configureren](#dynamic-media-assets).
 
 ### Kunt u elementen van de indeling Afbeelding en Document gebruiken, van de externe DAM-implementatie op de [!DNL Sites] implementatie na het configureren van Connected Assets?
 
@@ -278,7 +278,7 @@ Nee, u kunt inhoudsfragmenten en video-elementen van de externe DAM-implementati
 
 ### Kunt u Dynamic Media-middelen van de externe DAM-implementatie gebruiken op de [!DNL Sites] implementatie na het configureren van Connected Assets?
 
-Ja, u kunt Dynamic Media-middelen configureren en gebruiken vanaf de externe DAM-implementatie op de [!DNL Sites] implementatie na het configureren van Connected Assets. Zie voor meer informatie [Een verbinding tussen Sites en Dynamic Media-implementaties configureren](#sites-dynamic-media-connected-assets).
+Ja, u kunt Dynamic Media-middelen configureren en gebruiken vanaf de externe DAM-implementatie op de [!DNL Sites] implementatie na het configureren van Connected Assets. Zie voor meer informatie [Een verbinding tussen Sites en Dynamic Media-implementaties configureren](#dynamic-media-assets).
 
 ### Nadat u Connected Assets hebt geconfigureerd, kunt u de bewerkingen voor bijwerken, verwijderen, hernoemen en verplaatsen op de externe DAM-middelen of -mappen?
 
