@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
+source-git-commit: af07bce8618c7b13b4dc5e287c7218316029f565
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 3%
@@ -177,7 +177,7 @@ Specifieke productpagina&#39;s worden geselecteerd door de sku of de categorie v
 >
 > Voor het selecteren van specifieke productpagina&#39;s per categorie is vereist [CIF Core Components 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) of hoger.
 
-### Koppeling gebruiken {#specific-pages-deep-linking}
+### Diepe koppeling {#specific-pages-deep-linking}
 
 De `UrlProvider` is vooraf geconfigureerd om diepgaande koppelingen naar specifieke categorie- en productpagina&#39;s te genereren op instanties van de auteurslaag. Dit is handig voor editors die in de modus Voorbeeld door een site bladeren, naar een specifiek product of een bepaalde categoriepagina navigeren en terugschakelen naar de modus Bewerken om de pagina te bewerken.
 
