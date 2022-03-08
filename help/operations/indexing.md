@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
+source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2366'
 ht-degree: 1%
 
 ---
@@ -36,8 +36,9 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 1. Klanten kunnen zien of de indexeertaak is voltooid op de pagina voor het samenstellen van de cloud Manager en ontvangen een melding wanneer de nieuwe versie gereed is voor verkeer.
 
 1. Beperkingen:
-* Momenteel wordt indexbeheer op AEM as a Cloud Service alleen ondersteund voor indexen van het type lucene.
+* Indexbeheer op AEM as a Cloud Service wordt momenteel alleen ondersteund voor indexen van het type `lucene`.
 * Alleen standaardanalysatoren worden ondersteund (dat wil zeggen die welke met het product worden geleverd). Aangepaste analysatoren worden niet ondersteund.
+* Intern, zouden andere indexen voor vragen kunnen worden gevormd en worden gebruikt. Bijvoorbeeld, vragen die tegen `damAssetLucene` De index zou, op Skyline, in feite tegen een versie van Elasticsearch van deze index kunnen worden uitgevoerd. Dit verschil is doorgaans niet zichtbaar voor de toepassing en de gebruiker, maar bepaalde gereedschappen, zoals de `explain` Deze functie rapporteert een andere index. Voor verschillen tussen Lucene-indexen en Elastic-indexen raadpleegt u [de Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten hoeven en kunnen Elasticsearch-indexen niet rechtstreeks configureren.
 
 ## Het gebruik {#how-to-use}
 
@@ -129,7 +130,9 @@ Tijdens de ontwikkeling, of wanneer het gebruiken op gebouwinstallaties, kunnen 
 
 ### Indexbeheer met blauw-groene implementatie {#index-management-with-blue-green-deployment}
 
-Met blauwgroene implementaties is er geen downtime. Voor indexbeheer is het echter vereist dat indexen alleen door bepaalde versies van de toepassing worden gebruikt. Als u bijvoorbeeld een index toevoegt in versie 2 van de toepassing, wilt u deze nog niet gebruiken in versie 1 van de toepassing. Het omgekeerde is het geval wanneer een index wordt verwijderd: een in versie 2 verwijderde index is nog steeds nodig in versie 1. Als u een indexdefinitie wijzigt, willen we dat de oude versie van de index alleen wordt gebruikt voor versie 1 en dat de nieuwe versie van de index alleen wordt gebruikt voor versie 2.
+Met blauwgroene implementaties is er geen downtime. Tijdens een upgrade worden gedurende enige tijd zowel de oude versie (bijvoorbeeld versie 1) van de toepassing als de nieuwe versie (versie 2) tegelijk uitgevoerd tegen dezelfde opslagplaats. Als voor versie 1 een bepaalde index beschikbaar moet zijn, mag deze index niet worden verwijderd in versie 2: de index moet later worden verwijderd, bijvoorbeeld in versie 3, waarna gegarandeerd is dat versie 1 van de toepassing niet meer wordt uitgevoerd. Ook, zouden de toepassingen zodanig moeten worden geschreven dat versie 1 goed werkt, zelfs als versie 2 loopt, en als de indexen van versie 2 beschikbaar zijn.
+
+Nadat de upgrade naar de nieuwe versie is voltooid, kunnen oude indexen door het systeem worden opgeschoond. De oude indexen blijven misschien nog een tijdje, om terugdraaiversies te versnellen (als een terugdraaiing nodig zou moeten zijn).
 
 In de volgende tabel staan vijf indexdefinities: index `cqPageLucene` wordt gebruikt in beide versies terwijl index `damAssetLucene-custom-1` wordt alleen gebruikt in versie 2.
 
@@ -160,7 +163,7 @@ Zodra Adobe een out-of-the-box index zoals &quot;damAssetLucene&quot; of &quot;c
 
 ### Huidige beperkingen {#current-limitations}
 
-Indexbeheer wordt momenteel alleen ondersteund voor indexen van het type `lucene`.
+Indexbeheer wordt momenteel alleen ondersteund voor indexen van het type `lucene`. Intern, zouden andere indexen voor vragen, bijvoorbeeld elastische indexen kunnen worden gevormd en worden gebruikt.
 
 ### Een index toevoegen {#adding-an-index}
 
