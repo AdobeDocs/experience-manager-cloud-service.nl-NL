@@ -4,7 +4,7 @@ description: Leer hoe u in Dynamic Media werkt met interactieve video's en schok
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '5919'
 ht-degree: 3%
@@ -101,7 +101,6 @@ Als u een externe WCM (Web Content Manager) gebruikt, moet u de nieuwe interacti
 >
 >* U wilt interactiviteit aan uw video toevoegen door aan Snelle meningen te teweegbrengen.
 >* Uw implementatie van Experience Manager doet *niet* een eCommerce-integratieframework gebruiken om productgegevens vanuit elke eCommerce-oplossing, zoals IBM® WebSphere® Commerce, Elastic Path, SAP Hybris of Intershop, in de Experience Manager te krijgen. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
-
 >
 >Als uw implementatie van Experience Manager eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
 
@@ -541,7 +540,7 @@ De demo-website als voorbeeld gebruiken:
 
 De insluitcode voor video is standaard:
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7video_div.s7videoviewer{
    width:100%;
@@ -602,7 +601,7 @@ Bovendien ondersteunt de Interactieve Video-viewer de modus Volledig scherm. De 
 
 De insluitcode die door Experience Manager wordt geretourneerd, heeft al een gebruiksklare gebeurtenishandler. Er wordt opmerkingen toegevoegd zoals in het volgende gemarkeerde codefragment wordt getoond:
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -686,13 +685,13 @@ De laatste stap om de Quickview URL teweeg te brengen en het paneel van de Snell
 
 U kunt zien hoe deze stappen worden toegepast op de demo-website om een interactieve video volledig te integreren met de Quickview-code. Eerder in dit onderwerp, werd de structuur van Snelle mening URL geïdentificeerd als het volgende:
 
-```xml
+```xml {.line-numbers}
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
 Het is gemakkelijk om deze URL binnen te reconstrueren `quickViewActivate` handler gebruiken `categoryId` en `sku` velden beschikbaar in het dialoogvenster `inData` object dat aan de handler wordt doorgegeven via de code van de viewer, zoals in het volgende voorbeeld:
 
-```xml
+```js {.line-numbers}
 var sku=inData.sku;
 var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
@@ -700,13 +699,13 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 
 De demowebsite activeert het dialoogvenster Snelle weergave met behulp van een eenvoudige `loadQuickView()` functieaanroep. Deze functie heeft slechts één argument, namelijk de gegevens-URL van de Snelle weergave. De laatste stap om de interactieve video te integreren is dus het toevoegen van de volgende coderegel aan de `quickViewActivate` handler:
 
-```xml
+```xml {.line-numbers}
 loadQuickView(quickViewUrl);
 ```
 
 Tot slot moet u ervoor zorgen dat het dialoogvenster QuickView is gekoppeld aan het containerelement van de viewer. De standaard insluitcode bevat voorbeeldstappen om deze functionaliteit te bereiken. Als u een verwijzing naar het containerelement van de viewer wilt verkrijgen, kunt u de volgende coderegels gebruiken:
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 ```
@@ -717,7 +716,7 @@ De stappen om het element van het modale dialoogvenster daadwerkelijk te vinden 
 
 Voor de voorbeeldwebsite wordt het modale dialoogvenster van de Snelle weergave geïmplementeerd als een `DIV` met de modale id voor de snelweergave die rechtstreeks aan het document is gekoppeld `BODY`. De code waarmee dat dialoogvenster naar de container van de viewer wordt verplaatst, is daarom even eenvoudig als de volgende code:
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 inner_container.appendChild(document.getElementById("quickview-modal"));
@@ -725,7 +724,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 De volledige broncode ziet er als volgt uit:
 
-```xml
+```javascript {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -772,4 +771,4 @@ De laatste demo-website met de volledig geïntegreerde interactieve video ziet e
 
 ## Aangepaste pop-upvensters® maken met Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-Zie [Aangepaste pop-upvensters® maken met Quickview](/help/assets/dynamic-media/custom-pop-ups.md). —>
+Zie [Aangepaste pop-upvensters® maken met Quickview](/help/assets/dynamic-media/custom-pop-ups.md).

@@ -4,7 +4,7 @@ description: Leer hoe u in Dynamic Media met video kunt werken, zoals tips en tr
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 6ab9ec4efdefd6fb850fd59966b2424e6a19a9ab
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '8978'
 ht-degree: 3%
@@ -1099,7 +1099,7 @@ U kunt het volgende voorbeeld als voorbeeld van het formaat gebruiken u gebruikt
 
 ### WebVTT-bestand met navigatie in videohoofdstukken {#webvtt-file-with-video-chapter-navigation}
 
-```xml
+```xml {.line-numbers}
 WEBVTT
 Chapter 1
 00:00.000 --> 01:04.364
