@@ -2,9 +2,9 @@
 title: Document met record genereren voor adaptieve Forms
 description: Verklaart hoe u een malplaatje voor een Document van Verslag (DoR) voor Aangepast Forms kunt produceren.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
+source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3603'
 ht-degree: 1%
 
 ---
@@ -406,7 +406,7 @@ De instelling van de component Document of Record is beschikbaar onder de eigens
 
 >[!NOTE]
 >
-> Deze functie is beschikbaar in het prereleasekanaal. Zie [Prerelease Channel-documentatie](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
+> Deze functie is beschikbaar in het prereleasekanaal. Zie [Prerelease Channel-documentatie](/help/release-notes/prerelease.md#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
 
 Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een document instellen. Forms as a Cloud Service heeft een master XCI-bestand. U kunt een aangepast XCI-bestand gebruiken om een of meer standaardeigenschappen te overschrijven die in het master XCI-bestand zijn opgegeven. U kunt bijvoorbeeld een lettertype insluiten in een document of een gelabelde eigenschap inschakelen voor alle documenten. In de volgende tabel worden de XCI-opties aangegeven:
 
