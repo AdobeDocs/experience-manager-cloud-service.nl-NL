@@ -1,107 +1,122 @@
 ---
-title: Toegang van gebruiker tot nieuw Relic
-description: Volg deze pagina om over Nieuwe Relic Application Performance Monitoring voor AEM as a Cloud Service te leren
-source-git-commit: 696b86e9e88ca1fd7c0a5b688fa78f46227df3a4
+title: Nieuwe Relic One
+description: Meer informatie over de service New Relic One Application Performance Monitoring (APM) voor AEM as a Cloud Service en over hoe u toegang hebt tot deze service.
+exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
+source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
 
 
-# Toegang van gebruiker tot nieuw Relic {#user-access}
+# Nieuwe Relic One {#user-access}
+
+Meer informatie over de service New Relic One Application Performance Monitoring (APM) voor AEM as a Cloud Service en over hoe u toegang hebt tot deze service.
 
 ## Inleiding {#introduction}
 
-Adobe legt een hoge nadruk op de controle, de beschikbaarheid, en de prestaties van uw toepassing. Om dit doel te helpen bereiken, verleent AEM as a Cloud Service toegang tot een douane Nieuwe Relische controlereeks als deel van het standaardproductaanbod om uw teams de maximumzichtbaarheid aan uw systeem van de Cloud Service van Adobe Experience Manager en milieu prestatiesmetriek te verzekeren. In deze sectie worden de nieuwe functies voor de bewaking van Relic beschreven die op uw AEM as a Cloud Service omgevingen zijn ingeschakeld om de prestaties te ondersteunen en u in staat te stellen optimaal te profiteren van AEM as a Cloud Service omgevingen.
+Adobe legt een grote nadruk op de controle, de beschikbaarheid, en de prestaties van uw toepassing. Om dit doel te helpen bereiken, verleent AEM as a Cloud Service toegang tot een douane Nieuwe Relic Één controlereeks als deel van het standaard product aanbieden om uw teams de maximumzichtbaarheid aan uw AEM as a Cloud Service systeem en milieu prestatiesmetriek te verzekeren.
 
-## AEM as a Cloud Service transactiecontrole via nieuwe Relic - Value Propositie {#transaction-monitoring}
+In dit document worden de APM-functies (New Relic One Application Performance Monitoring) beschreven die op uw AEM as a Cloud Service omgevingen zijn ingeschakeld om de prestaties te ondersteunen en u te helpen het beste uit AEM as a Cloud Service te halen.
 
-Hier is de samenvatting van waardevoorstel van Nieuwe Relische Controle van de Prestaties van de Toepassing voor AEM as a Cloud Service:
+## Functies {#transaction-monitoring}
 
-* Directe toegang tot een toegewezen Nieuwe Relic One-account (toegang beheerd door Adobe Support).
+Nieuwe Relic One APM for AEM as a Cloud Service heeft veel functies.
 
-* Instrumented Nieuwe Relic APM agent die nauwkeurige methodevraag met lijnaantallen, met inbegrip van externe gebiedsdelen en gegevensbestanden toont.
+* Directe toegang tot een toegewezen Nieuwe Relic One-account (toegang beheerd door Adobe Support)
 
-* Holistische optimalisatie van prestaties door belangrijke metriek van infrastructuur-vlakke controle evenals toepassing (Adobe Experience Manager) controle te combineren.
+* Instrumenteerde Nieuwe Relic Één APM agent die nauwkeurige methodevraag met lijnaantallen, met inbegrip van externe gebiedsdelen en gegevensbestanden toont
 
-* Blootstelling van AEM as a Cloud Service JMX-bonen en Health Checks rechtstreeks aan nieuwe gegevens over Relic Insights, waardoor een grondige inspectie van de prestaties van de toepassingenstapel en gezondheidsmaatstaven mogelijk is.
+* Holistische optimalisatie van prestaties door de belangrijkste meetgegevens van infrastructuur-vlakke controle evenals toepassing (Adobe Experience Manager) controle te combineren
 
-## Toegang tot uw AEM as a Cloud Service nieuwe account {#accessing-new-relic}
+* Blootstelling van AEM as a Cloud Service JMX-bonen en gezondheidscontroles rechtstreeks binnen de nieuwe meetgegevens voor Relic Insights, waardoor een grondige inspectie van de prestaties van de toepassingsstapel en de gezondheidsmaatstaven mogelijk is.
 
-Uw toegewezen Nieuwe Relic-account wordt door Adobe geleverd en beheerd via de betrokkenheid van de klant. Adobe blijft de eigenaar en beheerder en zal de account namens u beschikbaar stellen voor toegang tot uw toegewezen subaccount.
+## Toegang krijgen tot nieuwe advertentie {#accessing-new-relic}
 
-Om toegang te krijgen tot uw Nieuwe Relische sub-rekening verbonden aan uw AEM as a Cloud Service Programma:
+Voer de volgende stappen uit om toegang te krijgen tot uw nieuwe e-mailaccount die is gekoppeld aan uw AEM as a Cloud Service programma.
 
-* Open een aanvraag door het tabblad Ondersteuning in de Admin Console te openen.
-* Zorg ervoor dat uw ticket de details van uw programma-id bevat, evenals de lijst met gebruikers die u Adobe-teams vraagt om de nieuwe Relic-toegang te openen.
-* Alle gebruikers moeten een volledige naam en een geldig e-mailadres hebben.
+1. Open een aanvraag door het tabblad Ondersteuning in de Admin Console te openen.
+1. In uw verzoek, omvat de details van uw identiteitskaart van het Programma, evenals de lijst van gebruikers die toegang tot Nieuw Relic vereisen.
+   * De volledige namen en geldige e-mailadressen van alle gebruikers moeten worden opgegeven.
 
-   >[!NOTE]
-   >Zie [AEM Support Portal voor Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor meer informatie .
+Het document raadplegen [AEM Support Portal voor Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor meer informatie over het openen van tickets .
 
 Zodra de toegang is verleend, verzendt het Nieuwe Relic een bevestigingsmail naar elke gebruiker, zodat kan de gebruiker het opstellingsproces voltooien en binnen ondertekenen.
 
-Als de gebruiker het bevestigingsbericht van de oorspronkelijke account niet kan vinden:
+Voer de volgende stappen uit als de gebruiker het bevestigingsbericht van de oorspronkelijke account niet kan vinden.
 
-1. Navigeer naar de aanmeldingspagina van New Relic op [login.newrelic.com/login](https://login.newrelic.com/login).
+1. Navigeer naar de aanmeldingspagina van New Relic op [`login.newrelic.com/login`](https://login.newrelic.com/login).
 
-1. Selecteren **Uw wachtwoord vergeten**.
+1. Selecteren **Bent u uw wachtwoord vergeten?**.
 
-   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+   ![Nieuwe aanmelding voor Relic](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
 1. Typ het e-mailadres van de account en selecteer **Mijn terugstelkoppeling verzenden**.
 
-   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
+   ![E-mailadres invoeren](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. Wanneer het systeem van New Relic een e-mailbericht retourneert, selecteert u de koppeling in het bericht om uw account opnieuw te bevestigen.
+1. Het nieuwe e-mailbericht zal de gebruiker een e-mail sturen met een koppeling om het account te bevestigen.
 
-   >[!NOTE]
-   >Als je geen e-mail van New Relic ontvangt:
-   >Controleer uw [spamfilters](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). Indien van toepassing, [Nieuw bericht toevoegen aan uw e-maillijst van gewenste personen](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >Geef feedback op het ondersteuningspakket en Adobe Support zal u verder helpen.
+Als u het aanmeldingsproces hebt voltooid en zich niet kunt aanmelden bij uw account vanwege e-mail- of wachtwoordfoutberichten, registreert u een ondersteuningsticket via [Admin Console](https://adminconsole.adobe.com/).
 
-1. Als u het aanmeldingsproces hebt voltooid en zich niet kunt aanmelden bij uw account vanwege e-mail- of wachtwoordfoutberichten, registreert u een ondersteuningsticket via [Admin Console](https://adminconsole.adobe.com/).
+>[!TIP]
+>
+>Als je geen e-mail van New Relic ontvangt:
+>
+>* Controleer uw [spamfilters](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
+>* Indien van toepassing, [Nieuw bericht toevoegen aan uw e-maillijst van gewenste personen](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
+>* Als geen van beide suggesties helpt, geef dan feedback op het ondersteuningsticket en Adobe Support-team helpt u verder.
 
-### Uw e-mail controleren {#verify-email}
 
-Als u tijdens het aanmelden wordt gevraagd uw e-mail te verifiëren, betekent dit dat uw e-mail is gekoppeld aan meerdere accounts en de optie krijgt om uw e-mail te verifiëren tijdens het aanmelden. Op deze manier kunt u kiezen welk account u wilt openen. Als u uw e-mailadres niet verifieert, probeert New Relic u aan te melden met de laatst gemaakte gebruikersrecord die aan uw e-mailadres is gekoppeld. Als u wilt voorkomen dat uw e-mail tijdens elke aanmelding wordt gecontroleerd, klikt u op het selectievakje Onthoud mijn gegevens in het aanmeldingsscherm.
+### Je e-mail verifiëren {#verify-email}
 
-Voor meer hulp kunt u een ondersteuningsticket openen via [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Als u tijdens het aanmelden wordt gevraagd uw e-mail te verifiëren, betekent dit dat uw e-mail is gekoppeld aan meerdere accounts. Op deze manier kunt u kiezen welk account u wilt openen.
+
+Als u uw e-mailadres niet verifieert, probeert New Relic u aan te melden met de laatst gemaakte gebruikersrecord die aan uw e-mailadres is gekoppeld. Als u wilt voorkomen dat uw e-mail tijdens elke aanmelding wordt gecontroleerd, klikt u op de knop **Onthoud mijn gegevens** Schakel het selectievakje in het aanmeldingsscherm in.
+
+Voor meer hulp, gelieve een steunkaartje via te openen [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Uitzonderingen {#exceptions}
 
-AEM as a Cloud Service richt het aanbieden rond Nieuwe Relic APM oplossing slechts en verleent geen steun voor alarmering, registreren of API integratiemogelijkheden.
+AEM as a Cloud Service biedt slechts de Nieuwe Relic Één APM oplossing aan en verleent geen steun voor alarmering, registreren, of API integratie.
 
-Voor meer hulp of extra begeleiding op Nieuw Relic-aanbod voor uw AEM as a Cloud Service Programma, te openen gelieve een steunkaartje via [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor hulp.
+Voor meer hulp of extra begeleiding op Nieuw Relic Één dienstenaanbod voor uw AEM as a Cloud Service Programma, gelieve een steunkaartje via te openen [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Veelgestelde vragen voor nieuwe zakelijke account {#faqs}
 
-### Wat controleert Adobe met Nieuw Relic? {#adobe-monitor}
+### Wat controleert Adobe met Nieuwe Relic Één? {#adobe-monitor}
 
-Adobe bewaakt de AEM as a Cloud Service services voor auteurs, publiceren en voorvertonen (indien beschikbaar) via de insteekmodule New Relic APM Java. Met Adobe kunt u de aangepaste New Relic APM Telemetry en bewaking in niet-productie- en productie-AEM as a Cloud Service omgevingen mogelijk maken. Uw nieuwe Relische account is gekoppeld aan een primaire door Adobe onderhouden account en bevat meerdere toepassingen die hierin worden gerapporteerd.
+Adobe volgt de AEM as a Cloud Service auteur, publiceert en voorproef (waar beschikbaar) de diensten via Nieuwe Relic One&#39;s Java-plug-in. Adobe maakt aangepaste New Relic One APM-telemetrie en bewaking mogelijk in niet-productie- en productie-AEM as a Cloud Service omgevingen.
 
-Drie per AEM as a Cloud Service omgeving:
+Uw Nieuwe Relic One-account is gekoppeld aan een primaire Adobe-account en heeft meerdere toepassingen die erin rapporteren: drie per AEM as a Cloud Service omgeving.
 
-* Eén toepassing voor de service Auteur per omgeving
-* Eén toepassing voor de service Publiceren per omgeving (inclusief Gulden publicatie)
+* Eén toepassing voor de auteurservice per omgeving
+* Eén toepassing voor de publicatieservice per omgeving (inclusief Golden Publish)
 * Eén toepassing voor de voorbeeldservice per omgeving
-   >[!IMPORTANT]
-   >Elke toepassing gebruikt één licentiecode, AEM as a Cloud Service omgevingen slechts aan één nieuwe Relic-account rapporteren. De volledige controlemetriek en de gebeurtenissen voor zowel Nieuwe Relic APM worden bewaard 7 dagen.
 
-### Wie heeft toegang tot de Nieuwe Relische gegevens van de Cloud Service? {#access-new-relic-cloud}
+Opmerking:
 
-Volledige leestoegang wordt verleend voor maximaal 10 leden van uw team. De lees toegang zal alle die meetkunde APM omvatten door de Nieuwe Relic agent wordt verzameld.
+* Elke toepassing gebruikt één licentiecode.
+* AEM as a Cloud Service milieu&#39;s rapporteren aan slechts één Nieuwe Relic Één rekening.
+* De volledige controlemetriek en de gebeurtenissen voor beide Nieuwe Relic Één worden behouden voor 7 dagen.
 
-### Wordt Aangepaste SSO-configuratie ondersteund? {#custom-sso}
+### Wie heeft toegang tot de gegevens van de nieuwe Relic One-cloudservice? {#access-new-relic-cloud}
 
-Aangepaste SSO-configuratie wordt momenteel niet ondersteund voor de nieuwe Relic-account die door Adobe is ingericht.
+Volledige leestoegang wordt verleend voor maximaal 10 leden van uw team. De gelezen toegang zal alle die meetkunde APM omvatten door Nieuw Relic wordt verzameld Één agent.
 
-### Wat als u reeds een op-gebouw Nieuw Relisch Abonnement hebt? {#new-relic-subscription}
+### Wordt aangepaste SSO-configuratie ondersteund? {#custom-sso}
 
-Het nieuwe observability platform van Nieuw Relic genoemd Nieuwe Relic laat de Groepen van de Steun van de Adobe en uw teams toe om, metriek en gebeurtenissen, allen in één plaats waar te waarnemen te controleren en te bekijken. Nieuwe Relic Één verstrekt gebruikers de capaciteit om over alle rekeningen te zoeken waar zij toegang hebben en de gegevens van alle diensten en gastheren in één mening visualiseren. Terwijl de Teams van de Steun van Adobe de AEM as a Cloud Service toepassing zullen controleren gebruikend Nieuwe Relische en andere interne hulpmiddelen als deel van uw dienst, kunnen uw teams Nieuwe Relic voor op-gebouw ontvangen diensten en infrastructuur blijven gebruiken. Zij zullen de gegevens van zowel Adobe als klant beheerde Nieuwe Relische rekeningen kunnen visualiseren.
+De configuratie van SSO van de douane wordt niet gesteund voor Nieuwe Relic Één rekening die door Adobe wordt voorzien.
+
+### Wat als ik reeds een op-gebouw Nieuw Relisch abonnement heb? {#new-relic-subscription}
+
+Nieuwe Relic Één is het nieuwe observability platform van Nieuw Relic en het laat de steun van Adobe en uw teams toe om, metriek en gebeurtenissen, allen op één plaats waar te waarnemen te controleren en te bekijken.
+
+Nieuwe Relic Één verstrekt gebruikers de capaciteit om over alle rekeningen te zoeken waar zij toegang hebben en de gegevens van alle diensten en gastheren in één mening visualiseren.
+
+Terwijl de steun van Adobe de AEM as a Cloud Service toepassing zal controleren gebruikend Nieuw Relic Één en andere interne hulpmiddelen als deel van uw dienst, kunnen uw teams Nieuwe Relic voor op-gebouw ontvangen diensten en infrastructuur blijven hefboomwerking. Zij zullen de gegevens van zowel Adobe New Relic Één rekening als klant-geleide Nieuwe Relische rekeningen kunnen visualiseren.
 
 >[!NOTE]
->De gebruiker moet de juiste toestemmingen hebben en de zelfde login methodologie voor beide rekeningen (Adobe en klant beheerde Nieuwe Relische rekening) gebruiken.
-
-
+>
+>Om beide gegevensreeksen binnen Nieuwe Relic te bekijken Één, moet een gebruiker de juiste toestemmingen hebben en de zelfde login methodologie voor beide rekeningen (Adobe Nieuw Relic Één en de klant-geleide Nieuwe Relische rekeningen) gebruiken.

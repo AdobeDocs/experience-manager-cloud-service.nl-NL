@@ -1,40 +1,44 @@
 ---
-title: Meldingen - Cloud Service
-description: Meldingen - Cloud Service
-translation-type: tm+mt
-source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
+title: Meldingen
+description: Leer hoe te om informatie over pijpleidingsplaatsingen te ontvangen gebruikend het het berichtsysteem van Adobe Experience Cloud.
+exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
+source-git-commit: 42d4e3bb38e3a7ecb4507d15e2307ed08d752b5c
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 1%
+source-wordcount: '247'
+ht-degree: 0%
 
 ---
 
+# Meldingen {#notifications}
 
-# Inzicht in meldingen {#notifications}
+[!UICONTROL Cloud Manager] staat de gebruiker toe om berichten te ontvangen wanneer de productiepijplijn (met succes of met succes), tijdens een productielocatie begint en voltooit.
 
-[!UICONTROL Cloud Manager] staat de gebruiker toe om berichten te ontvangen wanneer de productiepijplijn (met succes of met succes), bij het begin van een productielocatie begint en voltooit. Deze meldingen worden verzonden via het meldingssysteem Adobe [!UICONTROL Experience Cloud].
+Deze meldingen worden verzonden via de Adobe [!UICONTROL Experience Cloud] meldingssysteem voor gebruikers met rollen **Zakelijke eigenaar**, **Programmabeheerder**, en **Implementatiebeheer**.
 
->[!NOTE]
->
->De goedkeuring en de geplande berichten worden slechts verzonden naar gebruikers in de BedrijfsEigenaar, de Manager van het Programma, en de rollen van de Manager van de Plaatsing.
+De meldingen worden rechts op de menubalk weergegeven in het dialoogvenster [!UICONTROL Cloud Manager] UI en door Adobe [!UICONTROL Experience Cloud].
 
-De meldingen worden weergegeven in een zijbalk in [!UICONTROL Cloud Manager] UI (gebruikersinterface) en in de hele Adobe [!UICONTROL Experience Cloud].
-![](assets/notify-1.png)
+![Meldingspictogram in menubalk](assets/notify-1.png)
 
-Klik op het belpictogram van de koptekst om de zijbalk te openen en de meldingen weer te geven, zoals in de onderstaande afbeelding wordt getoond:
+Het belpictogram is gemarkeerd wanneer er nieuwe meldingen zijn. Klik erop om het deelvenster te openen om de meldingen weer te geven.
 
-![](assets/notify-2.png)
+![Meldingen weergeven](assets/notify-2.png)
 
-De zijbalk bevat een overzicht van de meest recente meldingen.
-
+In het deelvenster worden alleen de meest recente meldingen weergegeven. Klikken **Alles weergeven** onder aan het deelvenster om al uw meldingen weer te geven.
 
 ## E-mailmeldingen {#email-notifications}
 
-Standaard zijn meldingen beschikbaar in de webgebruikersinterface voor alle Adobe [!UICONTROL Experience Cloud]-oplossingen. Individuele gebruikers kunnen ook kiezen voor verzending van deze berichten via e-mail, hetzij op basis van directe gegevens, hetzij via een samenvatting.
+Standaard zijn meldingen beschikbaar in de gebruikersinterface van Adobe [!UICONTROL Experience Cloud] oplossingen. Individuele gebruikers kunnen deze berichten ook via e-mail verzenden door deze stappen te volgen.
 
-Hiermee gaat de gebruiker naar het scherm Meldingsvoorkeuren in Adobe [!UICONTROL Experience Cloud].
+1. Klik op het belpictogram om de meldingen weer te geven.
+1. Klik op de knop **Voorkeuren bewerken** pictogram (in de vorm van een tandwiel) boven aan het venster met meldingen.
+1. Klik in het venster dat wordt geopend op **Meldingen** in de linkernavigatie.
+   ![Voorkeurenvenster bewerken](assets/notification-preferences.png)
+1. Omlaag schuiven naar de **E-mail** kop.
+   ![E-mailopties](assets/email-preferences.png)
+1. Selecteer hoe je e-mailberichten wilt ontvangen.
+   * Geen e-mails verzenden (standaard)
+   * Directe meldingen
+   * Dagelijks overzicht
+   * Wekelijks overzicht
 
-De gebruikers kunnen e-mailberichten inschakelen en (optioneel) de typen berichten selecteren die ze via e-mail willen ontvangen.
-
->[!NOTE]
->U kunt het uit elkaar plaatsen van de Adobe ook toelaten [!UICONTROL Experience Cloud].
+Nadat u een selectie hebt gemaakt, wordt uw keuze automatisch opgeslagen zonder dat u op de knop Opslaan of Toepassen hoeft te klikken.

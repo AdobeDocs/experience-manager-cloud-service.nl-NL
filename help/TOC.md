@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '3436'
-ht-degree: 24%
+source-wordcount: '3419'
+ht-degree: 23%
 
 ---
 
@@ -641,17 +641,17 @@ ht-degree: 24%
          + [Programma&#39;s bewerken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Sluimeromgevingen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Een AEM-applicatieproject maken {#create-application-project}
-         + [De wizard gebruiken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-         + [Uw project instellen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [Inzicht in de omgeving van de build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [Wizard Project maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [Projectinstelling](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+         + [Build-omgeving](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md)
       + Uw code beheren {#managing-code}
          + [Maven-projectversiebeheer](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Opslagplaatsen in Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [Toegang tot opslagplaatsen](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Git integreren met Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [Werken met Meerdere opslagplaatsen voor Git-bronnen](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [Enterprise Team Development Setup voor AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Git gebruiken met Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [Meerdere opslagplaatsen gebruiken](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [Team instellen voor bedrijfsontwikkeling](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [Omgevingsvariabelen](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
          + [Inleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -668,8 +668,8 @@ ht-degree: 24%
          + [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
       + [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA-rapportage](/help/implementing/cloud-manager/sla-reporting.md)
-      + [Toegang van gebruiker tot nieuw Relic](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [Inzicht in meldingen](/help/implementing/cloud-manager/notifications.md)
+      + [Nieuwe Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [Meldingen](/help/implementing/cloud-manager/notifications.md)
       + SSL-certificaten beheren {#manage-ssl-certificates}
          + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)

@@ -1,61 +1,62 @@
 ---
-title: Logbestanden beheren - Cloud Service
-description: Logbestanden beheren - Cloud Service
+title: Logbestanden openen en beheren
+description: Leer hoe u logboeken kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 9%
+source-wordcount: '272'
+ht-degree: 3%
 
 ---
 
+
 # Logbestanden openen en beheren {#manage-logs}
 
-Gebruikers kunnen een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de **Environmental**-kaart op de pagina **Overzicht** of de pagina Environment Details.
+Leer hoe u logboeken kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
+
+U kunt een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de opdracht **Omgevingen** kaart van **Overzicht** pagina of pagina Omgevingsdetails.
 
 ## Logbestanden downloaden {#download-logs}
 
-Voer de onderstaande stappen uit om logbestanden te downloaden.
+Voer de volgende stappen uit om logbestanden te downloaden.
 
-1. Navigeer naar de **Environment**-kaart van de pagina **Overzicht**.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Selecteer **Logbestanden downloaden** in **..**-menu.
+1. Ga naar de **Omgevingen** kaart van **Overzicht** pagina.
 
-   ![](assets/download-logs1.png)
+1. Selecteren **Logbestanden downloaden** in het ovaalmenu.
 
-   *Of*,
+   ![Menu-item voor logbestanden downloaden](assets/download-logs1.png)
 
-   Van de pagina van de Details van het Milieu:
+1. In de **Logbestanden downloaden** selecteert u de gewenste **Service** in het keuzemenu
 
-   ![](assets/download-logs.png)
+   ![Het dialoogvenster Logbestanden downloaden](assets/download-preview.png)
 
-   >[!NOTE]
-   >Ongeacht waar het wordt geopend, verschijnt hetzelfde dialoogvenster en kan een afzonderlijk logbestand worden gedownload.
+1. Nadat u de service hebt geselecteerd, klikt u op het downloadpictogram naast het logbestand dat u wilt ophalen.
 
-1. Selecteer in het vervolgkeuzemenu **Service** opties zoals **Voorvertoning** of **Voorvertoning Dispatcher**, gevolgd door te klikken op het downloadpictogram.
+U kunt uw logbestanden ook openen via het dialoogvenster **Omgevingen** pagina.
 
-   ![](assets/download-preview.png)
-
+![Logbestanden van het scherm Environment](assets/download-logs.png)
 
 ## Logbestanden via API {#logs-through-api}
 
-Naast het downloaden van logboeken door UI, zullen de logboeken door API en de Interface van de Lijn van het Bevel beschikbaar zijn.
+Naast het downloaden van logboeken door UI, zijn de logboeken beschikbaar door API en de interface van de bevellijn.
 
-Als u bijvoorbeeld de logbestanden voor een specifieke omgeving wilt downloaden, is de opdracht een opdracht die lijkt op
+Als u de logbestanden voor een specifieke omgeving wilt downloaden, lijkt de opdracht op het volgende.
 
-```java
+```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Met de volgende opdracht kunt u logboeken trappen:
+U kunt logboeken ook staart via de interface van de bevellijn.
 
-```java
+```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Voor het verkrijgen van de milieu-id (in dit geval 1884) en de beschikbare service- of lognaamoties kunt u het volgende gebruiken:
+U kunt de volgende opdrachten gebruiken om de milieu-id (1884 in dit voorbeeld) en de beschikbare service- of lognaamoties op te halen.
 
-```java
+```shell
 $ aio cloudmanager:list-environments
 Environment Id Name                     Type  Description                          
 1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
@@ -75,9 +76,6 @@ Environment Id Service    Name
 1884           dispatcher aemdispatcher
 1884           dispatcher httpdaccess
 ```
-
->[!NOTE]
->Hoewel **Logboekdownloads** beschikbaar blijven via zowel de gebruikersinterface als de API, is **Logboektailing** alleen beschikbaar via API/CLI.
 
 ### Aanvullende bronnen {#resources}
 

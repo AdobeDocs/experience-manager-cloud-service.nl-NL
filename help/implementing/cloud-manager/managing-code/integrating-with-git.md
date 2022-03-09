@@ -1,23 +1,23 @@
 ---
-title: Integreren met Git
-description: Integreren met Git - Cloud Services
+title: Git gebruiken met Cloud Manager
+description: Leer hoe u de git-opslagruimten van Cloud Manager kunt gebruiken en hoe u uw eigen, door de klant beheerde git-opslagruimte op locatie kunt integreren met Cloud Manager.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
-source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 2%
+source-wordcount: '322'
+ht-degree: 0%
 
 ---
 
-# Git integreren met Adobe Cloud Manager {#git-integration}
+# Git gebruiken met Cloud Manager {#git-integration}
 
-Adobe Cloud Manager wordt geleverd met één git-opslagplaats die wordt gebruikt om code te implementeren via de CI/CD-leidingen van Cloud Manager. Klanten kunnen de git-opslagruimte van Cloud Manager uit de doos gebruiken. Klanten hebben ook de mogelijkheid om een on-premise of **door de klant beheerde** git-opslagplaats te integreren met Cloud Manager.
+Adobe Cloud Manager wordt geleverd met één git-opslagplaats die wordt gebruikt om code te implementeren via de CI/CD-leidingen van Cloud Manager.
+
+U kunt de git-opslagplaats van Cloud Manager uit de doos gebruiken, maar u kunt ook een door de klant beheerde git-opslagplaats integreren met Cloud Manager.
 
 ## Overzicht van GIT-integratie {#git-integration-overview}
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/)
-
-In deze videoreeks worden verschillende gebruiksgevallen besproken met betrekking tot de integratie van een door de klant beheerde git-opslagplaats met Cloud Manager, waaronder:
+Deze videoreeks verkent verschillende gebruiksgevallen bij de integratie van een door de klant beheerde it-opslagplaats met Cloud Manager, waaronder:
 
 * [Beginsynchronisatie](#initial-sync)
 * [Basisvertakkingsstrategie](#branching-strategy)
@@ -25,21 +25,21 @@ In deze videoreeks worden verschillende gebruiksgevallen besproken met betrekkin
 * [Implementatie van productie](#production-deployment)
 * [Releasetags synchroniseren](#sync-tags)
 
-De videoreeks veronderstelt een basiskennis van git en broncontrolebeheer. Zie de [aanvullende bronnen onder](#additional-resources) voor meer informatie over git.
+De videoreeks veronderstelt een basiskennis van git en broncontrolebeheer. Zie de [extra bronnen onder](#additional-resources) voor meer informatie over git .
 
->[!NOTE]
->
->De stappen en naamgevingsconventies die in deze videoreeks worden beschreven, zijn enkele aanbevolen werkwijzen voor het werken met een door de klant beheerde git-opslagplaats en Cloud Manager. Verwacht wordt dat de getoonde conventies en workflows zullen worden aangepast voor individuele ontwikkelingsteams.
+>[!VIDEO](https://video.tv.adobe.com/v/28710/)
+
+De stappen en naamconventies die in deze videoreeks worden beschreven, zijn enkele aanbevolen werkwijzen voor het werken met een door de klant beheerde it-opslagplaats in Cloud Manager. Verwacht wordt dat de getoonde conventies en workflows zijn aangepast voor individuele gevallen van gebruik.
 
 ## Beginsynchronisatie {#initial-sync}
 
-Eerste stappen voor het synchroniseren van een door de klant beheerde Git-opslagplaats met de Git-opslagplaats van Cloud Manager.
+In deze video leert u de eerste stappen voor het synchroniseren van een door de klant beheerde Git-opslagplaats met de Git-opslagplaats van Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
 
 ## Basisvertakkingsstrategie {#branching-strategy}
 
-Volg de onderstaande video om de basisvertakkingsstrategieën te leren.
+In deze video leert u basisvertakkingsstrategieën.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
@@ -57,7 +57,7 @@ Code voorbereiden voor een productievrijgave in een door de klant beheerde it-op
 
 ## Releasetags synchroniseren {#sync-tags}
 
-Synchroniseer releasetags van een cloudbeheeropslagplaats naar een door de klant beheerde it-opslagplaats om te bepalen welke code is geïmplementeerd in werkgebied- en productieomgevingen.
+Synchroniseer releasetags van een cloudbeheeropslagplaats naar een door de klant beheerde it-opslagplaats om te bepalen welke code is geïmplementeerd in testomgevingen en productieomgevingen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 

@@ -1,45 +1,42 @@
 ---
 title: Toegang tot opslagplaatsen
-seo-title: Accessing Repositories
-description: Op deze pagina wordt beschreven hoe u de Git-opslagplaats kunt openen en beheren.
-seo-description: Follow this page to learn how to access and manage your Git repository.
+description: Leer hoe u uw git-opslagplaats kunt openen en beheren met behulp van het beheer van een git-account voor zelfbediening vanuit Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
+source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 5%
+source-wordcount: '229'
+ht-degree: 0%
 
 ---
 
 # Toegang tot opslagplaatsen {#accessing-repos}
 
-U kunt de Git Repository openen en beheren met Self-Service Git Account Management vanuit de interface van Cloud Manager.
+Leer hoe u uw git-opslagplaats kunt openen en beheren met behulp van het beheer van een git-account voor zelfbediening vanuit Cloud Manager.
 
-## Accountbeheer van Self-Service Repositories gebruiken {#self-service-repos}
+## Accountbeheer voor Zelf-servicereservering gebruiken {#self-service-repos}
 
-Gebruik de **Access Repo Info** knoop beschikbaar bij de UI van de Manager van de Wolk, het meest opvallend op de pijpleidingskaart.
+Met Cloud Manager kunt u eenvoudig gegevens van uw opslagplaats ophalen met de **Repo-info openen** de knoop is duidelijk beschikbaar op de pijpleidingskaart.
 
-1. Navigeer naar **Pipelines** kaart van uw **Overzicht van het Programma** pagina.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. U zult **Toegang Repo Info** optie bekijken om tot uw Bewaarplaats van de Bewaarplaats van de Git toegang te hebben en te beheren.
+1. Navigeren naar **Pijpleidingen** kaart van uw **Programmaoverzicht** pagina en zoek de **Repo-info openen** om toegang te krijgen tot uw Git Repository en deze te beheren.
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![De knop Repo-info openen op de milieucokaart](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-   Bovendien, als u **niet-Productie** pijpleidingslusje selecteert, zult u de **optie van de Reactie van de Toegang ook daar bekijken Info**.
+1. Klik op de knop **Repo-info weergeven** om een dialoogvenster te openen dat wordt weergegeven:
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
-
-   >[!NOTE]
-   >De optie **Repo-info benaderen** is zichtbaar voor gebruikers in de rol Developer of Deployment Manager. Als u op deze knop klikt, wordt een dialoogvenster geopend waarin de gebruiker de URL naar zijn of haar gegevensopslagruimte voor de Intel Health Care Management Suite kan vinden, samen met de gebruikersnaam en het wachtwoord.
+   * De URL naar de gegevensopslagruimte van Cloud Manager.
+   * De git-gebruikersnaam.
+   * Het wachtwoord voor de it, waarvan de waarde wordt weergegeven wanneer de optie **Wachtwoord genereren** wordt geklikt.
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-   De belangrijkste aspecten voor het beheer van uw Git in Cloud Manager zijn:
+Met behulp van deze referenties kan de gebruiker een lokale kopie van de opslagplaats klonen en wijzigingen aanbrengen in die lokale opslagplaats, en wanneer hij klaar is, alle wijzigingen in de code terugsturen naar de externe opslagplaats voor code in Cloud Manager.
 
-   * **URL**: De URL van de gegevensopslagruimte
-   * **Gebruikersnaam**: De gebruikersnaam
-   * **Wachtwoord**: De waarde die wordt weergegeven wanneer op de knop **Wachtwoord genereren** wordt geklikt.
+De **Repo-info openen** deze optie is ook beschikbaar op de **Niet-productie** pijplijntabblad van de **Pijpleidingen** kaart.
 
+![Knop Repo-info benaderen op niet-productietabblad](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
 
-      >[!NOTE]
-      >Een gebruiker kan een kopie van de code uitchecken en wijzigingen aanbrengen in de lokale gegevensopslagruimte. Als de gebruiker klaar is, kan hij of zij de wijzigingen in de code doorvoeren naar de externe opslagplaats voor code in Cloud Manager.
+>[!NOTE]
+>
+>De **Repo-info openen** deze optie is zichtbaar voor gebruikers met **Ontwikkelaar** of **Implementatiebeheer** rollen.

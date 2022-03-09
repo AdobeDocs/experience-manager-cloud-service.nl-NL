@@ -1,52 +1,55 @@
 ---
-title: Functionele tests - Cloud Services
-description: Functionele tests - Cloud Services
+title: Functionele tests
+description: Leer over de drie verschillende types van functionele tests die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
+source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 3%
+source-wordcount: '632'
+ht-degree: 0%
 
 ---
 
-# Functionele tests {#functional-testing}
 
+# Functionele tests {#functional-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Functionele tests"
->abstract="Functionele tests worden ingedeeld in drie typen: Functionele tests voor producten, aangepaste functionele tests en aangepaste UI-tests"
+>abstract="Leer over de drie verschillende types van functionele tests die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren."
 
-Functionele tests worden ingedeeld in drie typen:
+Meer informatie over de drie verschillende typen functionele tests die in de [as a Cloud Service implementatieproces AEM](/help/implementing/cloud-manager/deploy-code.md) om de kwaliteit en betrouwbaarheid van uw code te garanderen.
 
+## Overzicht {#overview}
+
+Er zijn drie verschillende soorten functionele tests in AEM as a Cloud Service.
 
 * [Functioneel testen van producten](#product-functional-testing)
 * [Aangepaste functionele tests](#custom-functional-testing)
-* [Aangepaste UI-tests](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+* [Aangepaste UI-tests](#custom-ui-testing)
+
+Voor alle functionele tests kunnen de gedetailleerde resultaten van de tests als `.zip` bestand met de **Buildlog downloaden** knoop in het bouwstijloverzichtsscherm als deel van [implementatieproces.](/help/implementing/cloud-manager/deploy-code.md) Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Raadpleeg het document voor toegang tot deze logboeken [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie .
 
 ## Functioneel testen van producten {#product-functional-testing}
 
-De Functionele Tests van het product zijn een reeks stabiele HTTP integratietests (ITs) rond kernfunctionaliteit in AEM (bijvoorbeeld, creatie en replicatie) die klantenveranderingen in hun toepassingscode verhinderen worden opgesteld als het deze kernfunctionaliteit breekt.
+De functionele tests van het product zijn een reeks stabiele HTTP integratietests (ITs) van kernfunctionaliteit in AEM zoals creatie en replicatietaken. Deze tests verhinderen klantenveranderingen in de code van de douanetoepassing worden opgesteld als het kernfunctionaliteit breekt.
 
-Functionele tests van het product worden automatisch uitgevoerd wanneer een klant nieuwe code naar Cloud Manager implementeert en kunnen niet worden overgeslagen.
+Functionele tests voor producten worden automatisch uitgevoerd wanneer u nieuwe code implementeert in Cloud Manager en kunnen niet worden overgeslagen.
 
-Zie [Productfunctionele tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) voor monstertests.
+Zie [functionele producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub voor steekproeftests.
 
 ## Aangepaste functionele tests {#custom-functional-testing}
 
-De het testen van de Functie van de Douane stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen.
+De functionele het testen van de douane stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen.
 
 De bouw moet of nul of één test JARs produceren. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. Als de build meerdere testJAR&#39;s produceert, is de geselecteerde JAR niet deterministisch.
 
->[!NOTE]
->Met de knop **Logboek downloaden** hebt u toegang tot een ZIP-bestand met de logboekbestanden voor de gedetailleerde versie van de testuitvoering. Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Deze kunnen worden geopend met de standaardfunctionaliteit voor downloaden of staaflogbestanden. Zie [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie .
+### Functionele tests schrijven {#writing-functional-tests}
 
+Aangepaste functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden ingezet voor AEM. Over het algemeen zou dit een afzonderlijke module Maven zijn. Het resulterende JAR-bestand moet alle vereiste afhankelijkheden bevatten en wordt gewoonlijk gemaakt met de opdracht `maven-assembly-plugin` met de `jar-with-dependencies` descriptor.
 
-## Functionele tests schrijven {#writing-functional-tests}
+Bovendien moet de JAR de `Cloud-Manager-TestType` manifestkoptekst ingesteld op `integration-test`. In de toekomst wordt verwacht dat extra headerwaarden worden ondersteund.
 
-Door de klant geschreven functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden geïmplementeerd op AEM. Over het algemeen zou dit een afzonderlijke module Maven zijn. Het resulterende JAR dossier moet alle vereiste gebiedsdelen bevatten en zou over het algemeen worden gecreeerd gebruikend de getelegrafeerde assemblage-stop gebruikend jar-met-gebiedsdelen beschrijver.
-
-Bovendien moet de JAR de Cloud-Manager-TestType manifestkopbal hebben die aan integratie-test wordt geplaatst. In de toekomst wordt verwacht dat extra headerwaarden worden ondersteund. Een voorbeeldconfiguratie voor maven-assemblage-stop is:
+Hier volgt een voorbeeldconfiguratie voor de `maven-assembly-plugin`.
 
 ```java
 <build>
@@ -85,15 +88,23 @@ Een klasse met de naam `com.myco.tests.aem.it.ExampleIT` zou worden uitgevoerd, 
 
 Bovendien moet de testcode onder een pakket met de naam `it` (Het filter voor uitsluitingen van dekking is `**/it/**/*.java`).
 
-De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is ontworpen en geconfigureerd om compatibel te zijn met de conventies die worden gebruikt door de testbibliotheek aem-testing-clients. Ontwikkelaars worden ten zeerste aangeraden deze bibliotheek te gebruiken en de best practices ervan te volgen. Zie [Git Link](https://github.com/adobe/aem-testing-clients) voor meer informatie .
+De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is zodanig ontworpen en geconfigureerd dat deze compatibel is met de conventies die door de `aem-testing-clients` testbibliotheek. Ontwikkelaars worden ten zeerste aangeraden deze bibliotheek te gebruiken en de best practices ervan te volgen.
+
+Raadpleeg de [`aem-testing-clients` GitHub-repo](https://github.com/adobe/aem-testing-clients) voor meer informatie .
+
+## Aangepaste UI-tests {#custom-ui-testing}
+
+Het testen van de gebruikersinterface van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd).
+
+Raadpleeg het document [Aangepaste UI-tests](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) voor meer informatie .
 
 ## Uitvoering lokale test {#local-test-execution}
 
-Aangezien de testklassen tests JUnit zijn, kunnen zij van mainstream Java IDEs zoals Eclipse, IntelliJ, NetBeans, etc. worden in werking gesteld.
+Omdat testklassen JUnit-tests zijn, kunnen ze vanuit gangbare Java IDE&#39;s als Eclipse, IntelliJ, NetBeans enzovoort worden uitgevoerd.
 
-Wanneer u deze tests uitvoert, moet u echter een aantal verschillende systeemeigenschappen instellen die door de em-testclients (en de onderliggende testclients voor verkopers) worden verwacht.
+Bij het uitvoeren van deze tests is het echter noodzakelijk een aantal verschillende systeemeigenschappen in te stellen die door de `aem-testing-clients` (en de onderliggende Sling Testing Clients)-bibliotheek.
 
-De systeemeigenschappen zijn als volgt:
+De systeemeigenschappen zijn als volgt.
 
 * `sling.it.instances - should be set to 2`
 * `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`

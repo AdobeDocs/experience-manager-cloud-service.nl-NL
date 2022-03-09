@@ -1,39 +1,39 @@
 ---
-title: Overzicht van de testresultaten - Cloud Services
-description: Overzicht van de testresultaten - Cloud Services
-translation-type: tm+mt
-source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
+title: Overzicht van tests in Cloud Manager
+description: Bekijk een overzicht van de drie typen tests die automatisch worden uitgevoerd in Cloud Manager om de kwaliteit van uw aangepaste code te garanderen.
+exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
 
 
-# Overzicht {#overview}
+# Overzicht van tests in Cloud Manager {#overview}
 
-Er zijn drie brede testcategorieën die worden ondersteund door Cloud Manager for Cloud Services Pipeline:
+Er zijn drie testcategorieën die worden ondersteund door Cloud Manager voor Cloud Services-pijpleidingen.
 
 1. [Testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md)
 
-   Het testen van de Kwaliteit van de Code evalueert de kwaliteit van uw toepassingscode. De code-Kwaliteit pijpleiding wordt uitgevoerd onmiddellijk na de bouwstap in alle niet-productie en productiepijpleidingen.
-
-   De [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) die door Cloud Manager worden uitgevoerd, worden gemaakt op basis van de beste werkwijzen van AEM Engineering.
+   * Testen van de codekwaliteit evalueert de kwaliteit van uw toepassingscode.
+   * De pijpleiding van de codekwaliteit wordt onmiddellijk na de bouwstap uitgevoerd in alle niet-productie- en productiepijpleidingen.
+   * De [aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md) uitgevoerd door Cloud Manager worden gemaakt op basis van de beste werkwijzen van AEM Engineering.
 
 1. [Functionele tests](/help/implementing/cloud-manager/functional-testing.md)
 
-   De functionele tests maken deel uit van de testfase van het werkgebied van een productiepijpleiding.
+   * Functionele tests maken deel uit van de testfase van een productiepijpleiding.
 
 1. [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   Het testen van de Controle van de Ervaring wordt toegelaten in alle de productiepijpleidingen van de Manager van de Wolk en kan niet worden overgeslagen.
+   * Het testen van de ervaringscontrole is ingeschakeld in alle productiepijpleidingen van Cloud Manager en kan niet worden overgeslagen.
 
 Deze tests kunnen:
 
 * Door de klant geschreven
 * met Adobe geschreven
-* Brongereedschap openen
+* Gemaakt met opensource-gereedschappen
 
-   >[!NOTE]
-   > Zowel door de klant geschreven tests als Adobe geschreven tests worden uitgevoerd in een containerinfrastructuur die is ontworpen voor het uitvoeren van deze tests.
-
+>[!NOTE]
+>
+> Zowel klant-geschreven tests als Adobe-geschreven tests worden in een containerinfrastructuur in werking gesteld die voor het runnen van dergelijke tests wordt ontworpen.

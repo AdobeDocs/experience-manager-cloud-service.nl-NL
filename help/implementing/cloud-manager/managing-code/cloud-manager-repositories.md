@@ -1,76 +1,82 @@
 ---
 title: Opslagplaatsen voor Cloud Manager
-description: Opslagplaatsen voor Cloud Manager
-source-git-commit: e5d52c92c9162a58cc1a8e4f5d1169d59ee13119
+description: Leer hoe u uw git-opslagruimten maakt, weergeeft en verwijdert in Cloud Manager.
+exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
+source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
 
+
 # Opslagplaatsen voor Cloud Manager {#cloud-manager-repos}
 
-Opslagplaatsen die zijn gemaakt en beschikbaar zijn in Cloud Manager, kunnen worden weergegeven en beheerd via de pagina Opslagplaatsen.
+Leer hoe u uw git-opslagruimten maakt, weergeeft en verwijdert in Cloud Manager.
 
 >[!NOTE]
->Er geldt een limiet van 300 gegevensbanken voor alle programma&#39;s in een bepaald bedrijf (of IMS Org).
+>
+>Er geldt een limiet van 300 gegevensbanken voor alle programma&#39;s in een bepaalde onderneming of IMS-organisatie.
 
 ## Opslagplaatsen toevoegen en beheren {#add-manage-repos}
 
-Voer de onderstaande stappen uit om opslagruimten in Cloud Manager weer te geven en te beheren:
+Volg deze stappen om opslagruimten in Cloud Manager weer te geven en te beheren.
 
-1. Van **Overzicht van het Programma** pagina, klik op **Bewaarplaatsen** lusje en navigeer aan **Bewaarplaatsen** pagina.
+1. Van de **Programmaoverzicht** pagina, klik op **Opslagplaatsen** en navigeer naar de **Opslagplaatsen** pagina.
 
-1. Klik op **Opslagplaats toevoegen** om de wizard te starten.
+1. Klikken op **Opslagplaats toevoegen** om de wizard te starten.
 
-   >[!NOTE]
-   >Een gebruiker in de Manager van de Plaatsing of de rol van BedrijfsEigenaar moet worden het programma geopend om een bewaarplaats kunnen toevoegen.
-
-   ![](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
+   ![Opslagplaats toevoegen, knop](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
 1. Voer de gewenste naam en beschrijving in en klik op **Opslaan**.
 
-   ![](/help/implementing/cloud-manager/assets/repos/repo-1.png)
+   ![Dialoogvenster Opslagplaats toevoegen](/help/implementing/cloud-manager/assets/repos/repo-1.png)
 
-1. Selecteer **Opslaan**. De nieuwe reactie wordt weergegeven in de tabel, zoals hieronder wordt weergegeven.
+Wanneer de wizard wordt gesloten, wordt uw nieuwe opslagplaats weergegeven in de tabel.
 
-   >[!NOTE]
-   >In Cloud Manager gemaakte opslagplaatsen kunnen u ook selecteren tijdens het toevoegen of bewerken van pijpleidingstappen. Verwijs naar [Vorm uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) om meer te leren. Er is één *primaire* bewaarplaats of een tak voor om het even welke bepaalde pijpleiding. Met [Ondersteuning voor Git-submodule](#git-submodule-support) kunnen er echter veel secundaire vertakkingen worden opgenomen tijdens het bouwen.
+U kunt de gegevensopslagruimte in de tabel selecteren, op de knop voor weglatingsteken klikken en **Repository-URL kopiëren**, **Weergeven en bijwerken**, of **Verwijderen**.
 
-   ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+![Opties voor opslagplaats](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. U kunt de gegevensopslagruimte selecteren en op de menuopties van uiterst rechts in de tabel klikken naar **Repository URL kopiëren** of **View &amp; Update** of **Delete** uw gegevensopslagruimte, zoals in de onderstaande afbeelding wordt getoond.
+In Cloud Manager gemaakte opslagruimten kunnen ook worden geselecteerd wanneer u pijpleidingen toevoegt of bewerkt. Raadpleeg het document [CI-CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie.
 
-   ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+Er is één enkele primaire bewaarplaats of een tak voor om het even welke bepaalde pijpleiding. Met [ondersteuning voor git-submodules](#git-submodule-support)Veel secundaire vertakkingen kunnen tijdens de bouwperiode worden opgenomen.
+
+>[!NOTE]
+>
+>Een gebruiker moet de rol hebben **Implementatiebeheer** of **Zakelijke eigenaar** om een gegevensopslagruimte te kunnen toevoegen.
 
 ## Een opslagplaats verwijderen {#delete-repo}
 
-Voer de onderstaande stappen uit om een opslagplaats in Cloud Manager te verwijderen:
->[!NOTE]
->Als u een opslagplaats verwijdert, gebeurt het volgende:
->1. Maak de verwijderde opslagplaats onbruikbaar voor nieuwe opslagplaatsen die in de toekomst kunnen worden gecreeerd. In dit geval wordt een foutbericht weergegeven zoals hieronder wordt getoond:
-   >*De naam van de opslagplaats moet binnen de organisatie uniek zijn.*
->1. Maak de verwijderde opslagplaats niet beschikbaar in Cloud Manager en kan daarom niet worden gekoppeld aan een pijpleiding.
+Als u een opslagplaats verwijdert, gebeurt het volgende:
 
+* Maak de verwijderde opslagplaats onbruikbaar voor nieuwe opslagplaatsen die in de toekomst kunnen worden gecreeerd.
+   * Het foutbericht `Repository name should be unique within organization.` in dergelijke gevallen worden getoond.
+* Maak de verwijderde opslagplaats niet beschikbaar in Cloud Manager en niet beschikbaar voor het koppelen naar een pijpleiding.
 
-1. Van **Overzicht van het Programma** pagina, klik op **Bewaarplaatsen** lusje en navigeer aan **Bewaarplaatsen** pagina.
+Ga als volgt te werk om een opslagplaats in Cloud Manager te verwijderen.
 
-1. Selecteer de opslagplaats en klik op de menuopties helemaal rechts van de tabel. Klik op **Delete** om de gegevensopslagruimte te verwijderen, zoals in de onderstaande afbeelding wordt getoond.
+1. Van de **Programmaoverzicht** pagina, klik op **Opslagplaatsen** en navigeer naar de **Opslagplaatsen** pagina.
 
-   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
+1. Selecteer de opslagplaats en klik op de knop voor weglatingsteken en selecteer **Verwijderen** om de gegevensopslagruimte te verwijderen.
 
+   ![Opslagplaats verwijderen](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 ## Ondersteuning voor Git-submodule {#git-submodule-support}
 
-Git-submodules kunnen worden gebruikt om de inhoud van meerdere vertakkingen tijdens het samenstellen samen te voegen tussen git-opslagruimten. Wanneer het de bouwstijlproces van de Manager van de Wolk uitvoert, nadat de bewaarplaats die voor de pijpleiding wordt gevormd wordt gekloond en de gevormde tak wordt gecontroleerd, als de tak een `.gitmodules` dossier in de wortelfolder bevat, wordt het bevel uitgevoerd.
+Git-submodules kunnen worden gebruikt om de inhoud van meerdere vertakkingen tijdens het samenstellen samen te voegen tussen git-opslagruimten.
+
+Wanneer het de bouwstijlproces van de Manager van de Wolk uitvoert, nadat de bewaarplaats die voor de pijpleiding wordt gevormd wordt gekloond en de gevormde tak wordt gecontroleerd, als de tak een bevat `.gitmodules` in de hoofdmap, wordt de opdracht uitgevoerd.
+
+Het volgende bevel zal elke submodule in de aangewezen folder uitchecken.
 
 ```
 $ git submodule update --init
 ```
 
-Dit zal elke submodule in de aangewezen folder uitchecken. Deze techniek is een mogelijk alternatief voor https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html voor organisaties die vertrouwd zijn met het gebruik van git-submodules en geen extern samenvoegingsproces willen beheren.
+Deze techniek is een mogelijk alternatief voor de oplossing die in het document wordt beschreven [Werken met Meerdere opslagplaatsen voor Git-bronnen](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) voor organisaties die comfortabel zijn met het gebruik van git-submodules en geen extern samenvoegingsproces willen beheren.
 
-Stel dat er drie opslagplaatsen zijn, die elk een enkele vertakking met de naam main bevatten. In de &quot;primaire&quot; opslagplaats, d.w.z. de opslagplaats die in de pijpleidingen is geconfigureerd, heeft de hoofdtak een bestand pom.xml waarin de projecten in de andere twee opslagplaatsen worden aangegeven:
+Stel bijvoorbeeld dat er drie opslagruimten zijn die elk één vertakking met de naam `main`. In de primaire opslagplaats, d.w.z. de opslagplaats die in de pijpleidingen is geconfigureerd, `main` vertakking bevat een `pom.xml` dossier waarin de projecten in de andere twee gegevensbanken worden verklaard.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -91,16 +97,16 @@ Stel dat er drie opslagplaatsen zijn, die elk een enkele vertakking met de naam 
 </project>
 ```
 
-Vervolgens voegt u submodules toe voor de andere twee opslagruimten:
+Vervolgens voegt u submodules toe voor de andere twee opslagruimten.
 
-```
+```shell
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-Dit resulteert in een `.gitmodules` dossier dat als dit kijkt:
+Dit leidt tot een `.gitmodules` bestand, vergelijkbaar met het volgende.
 
-```
+```text
 [submodule "project-a"]
     path = project-a
     url = https://git.cloudmanager.adobe.com/ProgramName/projectA/
@@ -111,12 +117,16 @@ Dit resulteert in een `.gitmodules` dossier dat als dit kijkt:
     branch = main
 ```
 
-Meer informatie over git-submodules vindt u in de [Git-referentiehandleiding](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+Meer informatie over git-submodules vindt u in de [Git Reference Manual.](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
-Houd rekening met het volgende wanneer u git-submodules gebruikt:
+### Beperkingen en Recommendations {#limitations-recommendations}
 
-* De URL van de it moet exact in de hierboven beschreven syntaxis staan. Sluit om beveiligingsredenen geen referenties in deze URL&#39;s in.
+Houd rekening met de volgende beperkingen wanneer u git-submodules gebruikt.
+
+* De URL van de it moet exact de syntaxis hebben die in de vorige sectie wordt beschreven.
 * Alleen submodules in de hoofdmap van de vertakking worden ondersteund.
-* Git-submoduleverwijzingen worden opgeslagen naar specifieke it-opdrachten. Dientengevolge, wanneer veranderingen in de submodule bewaarplaats worden aangebracht, moet het gecommitteerde referenced worden bijgewerkt, bijvoorbeeld door `git submodule update --remote` te gebruiken.
-* Tenzij anders nodig, wordt het ten zeerste aanbevolen &quot;oppervlakkige&quot; submodules te gebruiken. Om dit te doen, stel `git config -f .gitmodules submodule.<submodule path>.shallow true` voor elke submodule in werking.
-
+* Omwille van de beveiliging mag u referenties niet insluiten in URL&#39;s met git.
+* Tenzij anders nodig, wordt het ten zeerste aanbevolen oppervlakkige submodules te gebruiken.
+   * Voer `git config -f .gitmodules submodule.<submodule path>.shallow true` voor elke submodule.
+* Verwijzingen naar de Git-submodule worden opgeslagen naar specifieke it-opdrachten. Dientengevolge, wanneer veranderingen in de submodule bewaarplaats worden aangebracht, begaat referenced moet worden bijgewerkt.
+   * Bijvoorbeeld door `git submodule update --remote`

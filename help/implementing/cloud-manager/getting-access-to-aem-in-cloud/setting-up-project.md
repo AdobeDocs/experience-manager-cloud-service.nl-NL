@@ -1,38 +1,40 @@
 ---
-title: Details projectinstelling
-description: Details projectinstelling - Cloud Services
+title: Projectinstelling
+description: Leer hoe AEM projecten met Maven en de normen worden gebouwd u moet waarnemen wanneer het creëren van uw eigen project.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 4219c8ce30a0f1cd44bbf8e8de46d6be28a1ddf3
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 5%
+source-wordcount: '1264'
+ht-degree: 1%
 
 ---
 
-# Uw project instellen {#project-setup-details}
+# Projectinstelling {#project-setup}
 
-## Details projectinstelling wijzigen {#modifying-project-setup-details}
+Leer hoe AEM projecten met Maven en de normen worden gebouwd u moet waarnemen wanneer het creëren van uw eigen project.
 
-Om te kunnen worden gebouwd en geïmplementeerd met Cloud Manager, moeten bestaande AEM projecten zich aan een aantal basisregels houden:
+## Details projectinstelling {#project-setup-details}
 
-* Projecten moeten worden gebouwd met Apache Maven.
-* Er moet een *pom.xml* in de hoofdmap van de Git-opslagplaats. Dit *pom.xml* bestand kan verwijzen naar zoveel submodules (die op hun beurt weer andere submodules kunnen hebben, enz.) indien nodig.
+AEM projecten moeten aan de volgende richtlijnen voldoen om te kunnen worden gebouwd en geïmplementeerd met Cloud Manager:
 
-* U kunt verwijzingen toevoegen naar extra gegevensopslagruimten voor vervormingen in uw *pom.xml* bestanden. Toegang tot [met wachtwoord beveiligde gegevensbanken voor artefacten](#password-protected-maven-repositories) wordt gesteund wanneer gevormd. Toegang tot door het netwerk beveiligde gegevensbestanden voor artefacten wordt echter niet ondersteund.
-* Implementeerbare inhoudspakketten worden gedetecteerd door te zoeken naar een inhoudspakket *zip* bestanden die zich in een map met de naam *target*. Elk aantal submodules kan inhoudspakketten produceren.
-
-* Implementeerbare Dispatcher-artefacten worden gedetecteerd door te scannen op *zip* bestanden (opnieuw) in een map met de naam *target*) met benoemde directory&#39;s *conf* en *conf.d*.
-
-* Als er meer dan één inhoudspakket is, wordt de volgorde van pakketimplementaties niet gegarandeerd. Als een specifieke orde nodig is, kunnen de gebiedsdelen van het inhoudspakket worden gebruikt om de orde te bepalen. Verpakkingen kunnen [overgeslagen](#skipping-content-packages) vanaf de implementatie.
-
+* De projecten moeten worden gebouwd gebruikend [Apache Maven.](https://maven.apache.org)
+* Er moet een `pom.xml` in de hoofdmap van de it-opslagplaats. Dit `pom.xml` bestand kan verwijzen naar zoveel submodules (die op hun beurt weer andere submodules kunnen hebben, enz.) indien nodig.
+* U kunt verwijzingen toevoegen naar extra gegevensopslagruimten voor vervormingen in uw `pom.xml` bestanden.
+   * Toegang tot [met wachtwoord beveiligde gegevensbanken voor artefacten](#password-protected-maven-repositories) wordt gesteund wanneer gevormd. Toegang tot door het netwerk beveiligde gegevensbestanden voor artefacten wordt echter niet ondersteund.
+* Implementeerbare inhoudspakketten worden gedetecteerd door te zoeken naar een inhoudspakket `.zip` bestanden, die zich in een map met de naam `target`.
+   * Elk aantal submodules kan inhoudspakketten produceren.
+* Inzetbare verzenders worden gedetecteerd door te scannen op `.zip` bestanden (ook opgenomen in de map met de naam `target`), die mappen met naam hebben `conf` en `conf.d`.
+* Als er meer dan één inhoudspakket is, wordt de volgorde van pakketimplementaties niet gegarandeerd.
+   * Als een specifieke orde nodig is, kunnen de gebiedsdelen van het inhoudspakket worden gebruikt om de orde te bepalen.
+* Verpakkingen kunnen [overgeslagen](#skipping-content-packages) tijdens de implementatie.
 
 ## GeMaven profielen activeren in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
-In sommige beperkte gevallen moet u het constructieproces mogelijk enigszins variëren wanneer u het uitvoert in Cloud Manager, in tegenstelling tot wanneer het wordt uitgevoerd op ontwikkelaarswerkstations. In deze gevallen [Geweven profielen](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) kan worden gebruikt om te definiëren hoe de build in verschillende omgevingen moet verschillen, waaronder Cloud Manager.
+In sommige beperkte gevallen moet u het constructieproces mogelijk enigszins variëren wanneer u werkt in Cloud Manager, in tegenstelling tot wanneer u werkt op ontwikkelaarswerkstations. In deze gevallen [Geweven profielen](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) kan worden gebruikt om te definiëren hoe de build in verschillende omgevingen moet verschillen, waaronder Cloud Manager.
 
-De activering van een Geweven Profiel binnen de de bouwstijlmilieu van de Manager van de Wolk zou moeten worden gedaan door Cm_BUILD milieuvariabele te zoeken die hierboven wordt beschreven. Omgekeerd moet een profiel dat alleen buiten de buildomgeving van Cloud Manager moet worden gebruikt, worden uitgevoerd door te zoeken naar de afwezigheid van deze variabele.
+Als u een Maven-profiel activeert in de ontwerpomgeving van Cloud Manager, moet u zoeken naar de `CM_BUILD` [omgevingsvariabele.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) Op dezelfde manier moet een profiel dat alleen buiten de buildomgeving van Cloud Manager moet worden gebruikt, worden uitgevoerd door te zoeken naar de afwezigheid van deze variabele.
 
-Als u bijvoorbeeld alleen een eenvoudig bericht wilt uitvoeren wanneer de build wordt uitgevoerd in Cloud Manager, doet u het volgende:
+Als u bijvoorbeeld alleen een eenvoudig bericht wilt uitvoeren wanneer de build wordt uitgevoerd in Cloud Manager, doet u dit.
 
 ```xml
         <profile>
@@ -68,9 +70,9 @@ Als u bijvoorbeeld alleen een eenvoudig bericht wilt uitvoeren wanneer de build 
 
 >[!NOTE]
 >
->Als u dit profiel op een werkstation voor ontwikkelaars wilt testen, kunt u het op de opdrachtregel inschakelen (met `-PcmBuild`) of in uw Integrated Development Environment (IDE).
+>Als u dit profiel op een werkstation voor ontwikkelaars wilt testen, kunt u het op de opdrachtregel inschakelen (met `-PcmBuild`) of in uw geïntegreerde ontwikkelomgeving (IDE).
 
-En als u een eenvoudig bericht wilt uitvoeren slechts wanneer de bouwstijl buiten de Manager van de Wolk in werking wordt gesteld, zou u dit doen:
+En als u een eenvoudig bericht wilt uitvoeren slechts wanneer de bouwstijl buiten de Manager van de Wolk in werking wordt gesteld, zou u dit doen.
 
 ```xml
         <profile>
@@ -107,127 +109,142 @@ En als u een eenvoudig bericht wilt uitvoeren slechts wanneer de bouwstijl buite
 ## Ondersteuning voor met wachtwoord beveiligde gegevensopslagruimte {#password-protected-maven-repositories}
 
 >[!NOTE]
->Artefacten van een met wachtwoord beveiligde Maven-opslagplaats mogen alleen zeer voorzichtig worden gebruikt, aangezien code die via dit mechanisme wordt geïmplementeerd, momenteel niet door alle kwaliteitsregels wordt uitgevoerd die in de Quality Gates van Cloud Manager zijn geïmplementeerd. Daarom mag het alleen worden gebruikt in zeldzame gevallen en voor code die niet aan AEM is gekoppeld. Het wordt geadviseerd om de bronnen van Java evenals de volledige code van de projectbron samen met het binaire getal op te stellen.
+>
+>Artefacten van een met wachtwoord beveiligde Maven-opslagplaats mogen alleen zeer voorzichtig worden gebruikt, aangezien code die via dit mechanisme wordt geïmplementeerd momenteel niet door alle [code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) geïmplementeerd in de kwaliteitspoort van Cloud Manager. Daarom mag het alleen worden gebruikt in zeldzame gevallen en voor code die niet aan AEM is gekoppeld. Het wordt geadviseerd om de bronnen van Java evenals de volledige code van de projectbron samen met het binaire getal op te stellen.
 
-Als u een met een wachtwoord beveiligde Maven-opslagplaats vanuit Cloud Manager wilt gebruiken, geeft u het wachtwoord (en optioneel de gebruikersnaam) op als een geheime Pipeline-variabele en verwijst u naar dat geheim in een bestand met de naam `.cloudmanager/maven/settings.xml` in de it-opslagplaats. Dit bestand volgt op [Maven Settings-bestand](https://maven.apache.org/settings.html) schema. Wanneer het buildproces van Cloud Manager wordt gestart, wordt `<servers>` element in dit bestand wordt samengevoegd met de standaardwaarde `settings.xml` bestand geleverd door Cloud Manager. Server-id&#39;s die beginnen met `adobe` en `cloud-manager` worden beschouwd als gereserveerd en mogen niet worden gebruikt door aangepaste servers. Server-id&#39;s **niet** komt overeen met een van deze voorvoegsels of de standaard-id `central` wordt nooit weerspiegeld door Cloud Manager. Als dit bestand is geïnstalleerd, wordt vanuit een `<repository>` en/of `<pluginRepository>` element binnen de `pom.xml` bestand. Over het algemeen: `<repository>` en/of `<pluginRepository>` elementen zouden in een [Specifiek profiel voor Cloud Manager](#activating-maven-profiles-in-cloud-manager), hoewel dat niet strikt noodzakelijk is.
+Als u een met wachtwoord beveiligde Maven-opslagplaats wilt gebruiken in Cloud Manager:
 
-Stel bijvoorbeeld dat de gegevensopslagruimte zich bevindt op https://repository.myco.com/maven2. De gebruikersnaam die Cloud Manager moet gebruiken is `cloudmanager` en het wachtwoord `secretword`.
+1. Geef het wachtwoord (en eventueel de gebruikersnaam) op als geheim [pijpleidingvariabele.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+1. Verwijs dan naar dat geheim binnen een dossier genoemd `.cloudmanager/maven/settings.xml` in de git-opslagplaats, die volgt op de [Maven Settings-bestand](https://maven.apache.org/settings.html) schema.
 
-Plaats eerst het wachtwoord als geheim op de pijpleiding:
+Wanneer het buildproces van Cloud Manager wordt gestart:
 
-`$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+* De `<servers>` element in dit bestand wordt samengevoegd met de standaardwaarde `settings.xml` bestand geleverd door Cloud Manager.
+   * Server-id&#39;s die beginnen met `adobe` en `cloud-manager` worden beschouwd als gereserveerd en mogen niet worden gebruikt door aangepaste servers.
+   * Server-id&#39;s die niet overeenkomen met een van deze voorvoegsels of de standaard-id `central` wordt nooit weerspiegeld door Cloud Manager.
+* Als dit bestand is geïnstalleerd, wordt vanuit een `<repository>` en/of `<pluginRepository>` element binnen de `pom.xml` bestand.
+* Over het algemeen: `<repository>` en/of `<pluginRepository>` elementen zouden in een [Specifiek profiel voor Cloud Manager](#activating-maven-profiles-in-cloud-manager), hoewel dat niet strikt noodzakelijk is.
 
-Verwijs dit vervolgens vanuit de `.cloudmanager/maven/settings.xml` bestand:
+Als voorbeeld, laten we zeggen dat de bewaarplaats is bij `https://repository.myco.com/maven2`is de gebruikersnaam die Cloud Manager moet gebruiken: `cloudmanager`en het wachtwoord is `secretword`. Voer de volgende stappen uit.
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
-    <servers>
-        <server>
-            <id>myco-repository</id>
-            <username>cloudmanager</username>
-            <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
-        </server>
-    </servers>
-</settings>
-```
+1. Plaats het wachtwoord als geheim in de pijpleiding.
 
-En ten slotte verwijst u naar de server-id in de `pom.xml` bestand:
+   ```text
+   $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+   ```
 
-```xml
-<profiles>
-    <profile>
-        <id>cmBuild</id>
-        <activation>
-                <property>
-                    <name>env.CM_BUILD</name>
-                </property>
-        </activation>
-        <repositories>
-             <repository>
-                 <id>myco-repository</id>
-                 <name>MyCo Releases</name>
-                 <url>https://repository.myco.com/maven2</url>
-                 <snapshots>
-                     <enabled>false</enabled>
-                 </snapshots>
-                 <releases>
-                     <enabled>true</enabled>
-                 </releases>
-             </repository>
-         </repositories>
-         <pluginRepositories>
-             <pluginRepository>
-                 <id>myco-repository</id>
-                 <name>MyCo Releases</name>
-                 <url>https://repository.myco.com/maven2</url>
-                 <snapshots>
-                     <enabled>false</enabled>
-                 </snapshots>
-                 <releases>
-                     <enabled>true</enabled>
-                 </releases>
-             </pluginRepository>
-         </pluginRepositories>
-    </profile>
-</profiles>
-```
+1. Verwijs hier vanuit de `.cloudmanager/maven/settings.xml` bestand.
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+       <servers>
+           <server>
+               <id>myco-repository</id>
+               <username>cloudmanager</username>
+              <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+           </server>
+       </servers>
+   </settings>
+   ```
+
+1. Verwijs ten slotte de server-id binnen de `pom.xml` bestand:
+
+   ```xml
+   <profiles>
+       <profile>
+           <id>cmBuild</id>
+           <activation>
+                   <property>
+                       <name>env.CM_BUILD</name>
+                   </property>
+           </activation>
+           <repositories>
+                <repository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+       </profile>
+   </profiles>
+   ```
 
 ### Bronnen implementeren {#deploying-sources}
 
 Het is een goede praktijk om de bronnen van Java samen met binair aan een Geweven bewaarplaats op te stellen.
 
-Vorm maven-bron-stop in uw project:
+Om dit te doen, vorm maven-bron-stop in uw project.
 
 ```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-source-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>attach-sources</id>
-                    <goals>
-                        <goal>jar-no-fork</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-source-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <id>attach-sources</id>
+                     <goals>
+                         <goal>jar-no-fork</goal>
+                     </goals>
+                 </execution>
+             </executions>
+         </plugin>
 ```
 
 ### Projectbronnen implementeren {#deploying-project-sources}
 
-Het is een goede praktijk om de volledige projectbron samen met binair aan een Geweven bewaarplaats op te stellen - dit staat toe om het nauwkeurige artefact te herbouwen.
+Het is een goede praktijk om de volledige projectbron samen met binair aan een Geweven bewaarplaats op te stellen. Hierdoor kan het exacte artefact opnieuw worden opgebouwd.
 
-Vorm maven-assemblage-stop in uw project:
+Om dit te doen, vorm maven-assemblage-stop in uw project.
 
 ```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>project-assembly</id>
-                    <phase>package</phase>
-                    <goals>
-                        <goal>single</goal>
-                    </goals>
-                    <configuration>
-                        <descriptorRefs>
-                            <descriptorRef>project</descriptorRef>
-                        </descriptorRefs>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-assembly-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <id>project-assembly</id>
+                     <phase>package</phase>
+                     <goals>
+                         <goal>single</goal>
+                     </goals>
+                     <configuration>
+                         <descriptorRefs>
+                             <descriptorRef>project</descriptorRef>
+                         </descriptorRefs>
+                     </configuration>
+                 </execution>
+             </executions>
+         </plugin>
 ```
 
 ## Inhoudspakketten worden overgeslagen {#skipping-content-packages}
 
-In Cloud Manager kunnen builds een willekeurig aantal inhoudspakketten produceren.
-Om diverse redenen kan het wenselijk zijn een inhoudspakket te maken, maar het niet te implementeren. Dit kan bijvoorbeeld handig zijn wanneer u inhoudspakketten maakt die alleen voor testen worden gebruikt of die door een andere stap in het constructieproces opnieuw worden verpakt, dat wil zeggen als een subpakket van een ander pakket.
+In Cloud Manager kunnen builds een willekeurig aantal inhoudspakketten produceren. Om diverse redenen is het wellicht wenselijk een inhoudspakket te maken, maar dit niet te implementeren. Een voorbeeld kan zijn wanneer het bouwen van inhoudspakketten die slechts voor het testen worden gebruikt of die door een andere stap in het bouwstijlproces, d.w.z. als subpakket van een ander pakket zullen worden herverpakt.
 
-Voor deze scenario&#39;s zoekt Cloud Manager naar een eigenschap met de naam ***cloudManagerTarget*** in de eigenschappen van samengestelde contentpakketten. Als deze eigenschap is ingesteld op Geen, zal het pakket worden overgeslagen en niet geïmplementeerd. Het mechanisme om deze eigenschap in te stellen hangt af van de manier waarop de build het contentpakket produceert. Met de invoegtoepassing filevault-maven-plugin kunt u de invoegtoepassing bijvoorbeeld als volgt configureren:
+Voor deze scenario&#39;s zoekt Cloud Manager naar een eigenschap met de naam `cloudManagerTarget` in de eigenschappen van samengestelde contentpakketten. Als deze eigenschap is ingesteld op `none`, wordt het pakket overgeslagen en niet geïmplementeerd.
+
+Het mechanisme om dit bezit te plaatsen hangt van de manier af bouwt het inhoudspakket produceert. Met de `filevault-maven-plugin` u zou de stop als volgt vormen.
 
 ```xml
         <plugin>
@@ -243,7 +260,7 @@ Voor deze scenario&#39;s zoekt Cloud Manager naar een eigenschap met de naam ***
         </plugin>
 ```
 
-Met de insteekmodule voor het verpakken van inhoud is deze vergelijkbaar:
+De `content-package-maven-plugin` heeft een vergelijkbare configuratie.
 
 ```xml
         <plugin>
@@ -289,6 +306,6 @@ Indien gewenst, kan het hergebruikgedrag voor specifieke pijpleidingen door de p
 
 ### Caveats {#caveats}
 
-* [Beproefde versieafhandeling](/help/implementing/cloud-manager/managing-code/project-version-handling.md) de projectversie alleen in productiepijpleidingen vervangen. Daarom als het zelfde begaat op zowel ontwikkelt uitvoering als een uitvoering van de productiepijplijn en de ontwikkelings opstellen pijpleiding eerst wordt uitgevoerd, zullen de versies aan stadium en productie zonder worden veranderd worden opgesteld. In dit geval wordt echter nog steeds een tag gemaakt.
+* [Beproefde versieafhandeling](/help/implementing/cloud-manager/managing-code/project-version-handling.md) vervangt de projectversie alleen in productiepijpleidingen. Daarom als het zelfde begaat op zowel ontwikkelt uitvoering als een uitvoering van de productiepijplijn en de ontwikkelings opstellen pijpleiding eerst wordt uitgevoerd, zullen de versies aan stadium en productie zonder worden veranderd worden opgesteld. In dit geval wordt echter nog steeds een tag gemaakt.
 * Als de terugwinning van de opgeslagen artefacten niet succesvol is, zal de bouwstijlstap worden uitgevoerd alsof geen artefacten waren opgeslagen.
 * Andere pijpleidingvariabelen dan `CM_DISABLE_BUILD_REUSE` worden niet in overweging genomen wanneer Cloud Manager besluit eerder gemaakte constructieartefacten opnieuw te gebruiken.

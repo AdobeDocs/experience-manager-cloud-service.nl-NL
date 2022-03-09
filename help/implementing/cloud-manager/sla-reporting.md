@@ -1,51 +1,51 @@
 ---
-title: SLA-rapportage - Cloud Service
-description: SLA-rapportage - Cloud Service
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+title: SLA-rapportage
+description: Leer hoe u de prestaties van uw productie AEM omgeving kunt bekijken ten opzichte van de overeenkomst voor serviceniveau (SLA).
+exl-id: 03932415-a029-4703-b44a-f86a87edb328
+source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
 
+
 # SLA-rapportage {#sla-reporting}
 
-Volg de secties hieronder om over SLA die in AEM as a Cloud Service rapporteren te leren.
+Leer hoe u de prestaties van uw productie AEM omgeving kunt bekijken ten opzichte van de overeenkomst voor serviceniveau (SLA).
 
 ## Inleiding {#introduction}
 
-Klanten kunnen de prestaties van hun productie AEM omgeving zien in verhouding tot hun contractuele Service Level Agreement (SLA). Dit is beschikbaar door een menu op het lusje van Rapporten, dat van de belangrijkste kopbal toegankelijk is.
+SLA-rapporteringsgegevens zijn beschikbaar voor elk productieprogramma via **Rapporten** tab. Voer de volgende stappen uit om toegang te krijgen.
 
-Volg het onderstaande voorbeeld, dat is een grafiek die het maandelijkse SLA-bereik voor 2021 toont.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-![](assets/sla-reporting-1.png)
+1. Ga naar de **Rapporten** van de **Overzicht** pagina.
 
+1. Klik op het gewenste jaar om de SLA-gegevens te zien.
 
-Als u de muis over een gegevenspunt beweegt, worden de specifieke waarden voor die maand weergegeven.
+![SLA-grafiekvoorbeeld](assets/sla-reporting-1.png)
 
-![](assets/sla-reporting-b.png)
+Schuif de cursor over een gegevenspunt om de specifieke waarden voor dat punt weer te geven.
 
->[!NOTE]
->Deze verslagen zullen geleidelijk aan ter beschikking van de klanten worden gesteld. Als de optie Rapporten niet wordt weergegeven in de hoofdnavigatie, neemt u contact op met uw Adobe-medewerker om te weten wanneer uw rapporten beschikbaar worden gesteld.
-
-In het gedeelte Gebeurtenisanalyse onder deze grafiek ziet u de reeks incidenten die zich tijdens het geselecteerde jaar voor het programma hebben voorgedaan.
-
-Elk van de incidenten heeft een tijdbereik, een oorzaak en een reeks opmerkingen, zoals in de onderstaande afbeelding wordt getoond.
-
-![](assets/sla-reporting-c.png)
-
+![Gedetailleerde gegevens weergeven](assets/sla-reporting-b.png)
 
 ## SLA-waarden {#sla-metrics}
 
-* **Tier-**
-contract publicerenDit is de SLA die in uw contract met Adobe voor de publicatielaag is gedefinieerd.
+De grafiek van het geselecteerde jaar bevat een aantal gegevenssets.
 
-* **Publish Tier**
-ActualThis is the measured uptime of the production publish tier factoring incidenten due by Adobe of our vendors.
+* **Tier-contract publiceren** - Dit is SLA die in uw contract met Adobe voor publicatielaag wordt bepaald.
 
-* **Tier-**
-contract voor auteurDit is de SLA die in uw contract met Adobe is gedefinieerd voor de auteurslaag.
+* **Reële reeks publiceren** - Dit is de gemeten uptime van de productie publiceer tier factoring die door Adobe of Adobe incidenten wordt veroorzaakt.
 
-* **Reeks auteur**
-ActualDit is de gemeten uptime van de productiefabrikant die door Adobe of onze verkopers wordt veroorzaakt.
+* **Tier-contract voor auteur** - Dit is SLA die in uw contract met Adobe voor de auteursrij wordt bepaald.
 
+* **Reële lijst van auteur** - Dit is de gemeten uptime van de productiefabrikant die door Adobe of Adobe incidenten wordt veroorzaakt.
+
+## Gebeurtenisanalyse {#event-analysis}
+
+De **Gebeurtenisanalyse** in het gedeelte onder de grafiek wordt de reeks incidenten weergegeven die zich tijdens het geselecteerde jaar voor het programma hebben voorgedaan.
+
+Elk van de incidenten heeft een tijdbereik, een oorzaak en een reeks opmerkingen.
+
+![Voorbeeld van gebeurtenisanalyse](assets/sla-reporting-c.png)
