@@ -3,13 +3,13 @@ title: Installeren [!DNL Workfront for Experience Manager enhanced connector]
 description: Installeren [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 8ca25f86a8d0d61b40deaff0af85e56e438efbdc
+exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
+source-git-commit: a5776453b261e6f4e6c891763934b236bade8f7f
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
-
 
 # Installeren [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
@@ -42,6 +42,23 @@ Volg de volgende stappen voordat u de aansluiting installeert:
 
 De invoegtoepassing installeren in [!DNL Experience Manager] als [!DNL Cloud Service]Voer de volgende stappen uit:
 
+1. Download de verbeterde connector van [Adobe-softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+
+1. [Toegang](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) en kloon uw AEM as a Cloud Service opslagplaats uit Cloud Manager.
+
+1. Open de gekloonde AEM as a Cloud Service opslagplaats met een IDE van uw keuze.
+
+1. Plaats het verbeterde gedownloade schakelaar zip dossier in Stap 1 bij de volgende weg:
+
+   ```TXT
+      /ui.apps/src/main/resources/<zip file>
+   ```
+
+   >[!NOTE]
+   >
+   >Als de `resources` de map bestaat niet. Maak de map.
+
+
 1. Toevoegen `pom.xml` afhankelijkheden:
 
    1. Afhankelijkheid in bovenliggend element toevoegen `pom.xml`.
@@ -51,47 +68,28 @@ De invoegtoepassing installeren in [!DNL Experience Manager] als [!DNL Cloud Ser
          <groupId>digital.hoodoo</groupId>
          <artifactId>workfront-tools.ui.apps</artifactId>
          <type>zip</type>
-         <version>1.7.4</version>
+         <version>enhanced connector version number</version>
+         <scope>system</scope>
+         <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
       </dependency>
       ```
 
-   1. Een afhankelijkheid toevoegen in alle module [!DNL pom.xml].
+      >[!NOTE]
+      >
+      >Zorg ervoor dat u het versienummer van de verbeterde connector bijwerkt voordat u de afhankelijkheid naar de bovenliggende toepassing kopieert `pom.xml`.
+
+   1. Afhankelijkheid toevoegen in `all module pom.xml`.
 
       ```XML
          <dependency>
             <groupId>digital.hoodoo</groupId>
             <artifactId>workfront-tools.ui.apps</artifactId>
             <type>zip</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
          </dependency>
       ```
 
-1. Toevoegen `pom.xml` verificatie.
-
-   1. Neem de configuratie van de onderstaande opslagplaats op in de pom.xml in het adobe-public profiel, zodat de verbindingsafhankelijkheden (boven) tijdens de build kunnen worden opgelost (zowel lokaal als door Cloud Manager). Credentials for repository access will be provided when the purchase of a license. De referenties moeten worden toegevoegd aan het bestand settings.xml in de sectie Servers.
-
-      ```XML
-      <repository>
-         <id>hoodoo-maven</id>
-         <name>Hoodoo Repository</name>
-         <url>https://gitlab.com/api/v4/projects/12715200/packages/maven</url>
-      </repository>
-      ```
-
-   1. Een bestand met de naam `./cloudmanager/maven/settings.xml` in de hoofdmap van het project. Voor ondersteuning van een met wachtwoord beveiligde Maven-opslagplaats raadpleegt u [hoe te opstelling uw project](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md). Een voorbeeld `settings.xml` bestand ter referentie. Ten slotte moet u uw lokale `settings.xml` om lokaal te compileren.
-
-      ```XML
-         <server>
-            <id>hoodoo-maven</id>
-            <configuration>
-               <httpHeaders>
-                     <property>
-                        <name>Deploy-Token</name>
-                        <value>xxxxxxxxxxxxxxxx</value>
-                     </property>
-               </httpHeaders>
-            </configuration>
-         </server>
-      ```
 
 1. Toevoegen `pom.xml` worden ingesloten. Voeg de [!DNL Workfront for Experience Manager enhanced connector] pakketten naar `embeddeds` van de `pom.xml` van al uw subproject. Moet zijn ingesloten in de all-module `pom.xml`.
 
@@ -104,6 +102,12 @@ De invoegtoepassing installeren in [!DNL Experience Manager] als [!DNL Cloud Ser
       <target>/apps/<path-to-project-install-folder>/install</target>
    </embedded>
    ```
+
+   Het doel van de ingesloten sectie is ingesteld op `/apps/<path-to-project-install-folder>/install`. Dit JCR-pad `/apps/<path-to-project-install-folder>` moet in de filterregels in de `all/src/main/content/META-INF/vault/filter.xml` bestand. De filterregels voor de gegevensopslagruimte worden gewoonlijk afgeleid van de naam van het programma. Gebruik de naam van de map als doel in de bestaande regels.
+
+1. Breng de wijzigingen aan in de repository.
+
+1. De pijplijn in werking stellen aan [Wijzigingen in Cloud Manager implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 1. Als u een systeemgebruikersconfiguratie wilt maken, maakt u `wf-workfront-users` in [!DNL Experience Manager] Gebruikersgroep en de machtiging toewijzen `jcr:all` tot `/content/dam`. Een systeemgebruiker `workfront-tools` wordt automatisch gemaakt en de vereiste machtigingen worden automatisch beheerd. Alle gebruikers van [!DNL Workfront] die de verbeterde aansluiting gebruiken, worden automatisch toegevoegd als onderdeel van deze groep.
 

@@ -1,15 +1,15 @@
 ---
-title: '"[!DNL Experience Manager Assets] integratie met [!DNL Adobe Workfront]"'
+title: '''[!DNL Experience Manager Assets] integratie met [!DNL Adobe Workfront]'''
 description: Inleiding tot integratie tussen [!DNL Assets] en [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
+source-git-commit: b6e108296d6786166e482cd8bbd20caa36795f44
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '926'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [!DNL Assets] integratie met [!DNL Adobe Workfront] {#assets-integration-overview}
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 De [!DNL Workfront for Experience Manager enhanced connector] maakt verbeterde bedrijfsprocessen mogelijk met end-to-end workflows en biedt gepersonaliseerde end-to-end clientervaringen en centrale opslag. Adobe biedt een standaardaansluiting en een verbeterde aansluiting om de twee oplossingen te integreren. Zie de ondersteunde functies hieronder voor een vergelijking en zie [wat nieuw is in de [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
-[!DNL Workfront for Experience Manage enhanced connector] stelt uw organisatie in staat om:
+[!DNL Workfront for Experience Manager enhanced connector] stelt uw organisatie in staat om:
 
 * Maak automatisch gekoppelde mappen voor Experience Managers in Workfront en deel de mappen in op basis van Workfront-Portfolio, -programma&#39;s en -projecten.
 * Metagegevens van Workfront-projecten synchroniseren met mappen voor gekoppelde Experience Managers.
@@ -32,6 +32,8 @@ Raadpleeg de platformondersteuning en [eerste vereisten voor de verbeterde aansl
 >Adobe vereist plaatsing en configuratie van [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services]. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt deze niet ondersteund door Adobe.
 >
 >Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] die deze aansluiting overbodig maken; als dit voorkomt, kunnen de klanten worden vereist om van het gebruik van deze schakelaar over te gaan.
+>
+>Zie [Partnercertificatieexamen voor Workfront voor verbeterde connector voor Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, [Handleiding voor Examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 ## Verschillende integraties vergelijken tussen [!DNL Assets] en [!DNL Workfront] {#feature-parity-matrix}
 
