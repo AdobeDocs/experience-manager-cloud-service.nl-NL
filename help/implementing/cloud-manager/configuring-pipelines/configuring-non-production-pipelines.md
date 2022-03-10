@@ -2,13 +2,13 @@
 title: Niet-productiepijpleidingen configureren
 description: Leer hoe te om niet-productiepijpleidingen te vormen om de kwaliteit van uw code te testen alvorens aan productiemilieu's op te stellen.
 index: true
-source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
+exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
+source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
-
 
 # Niet-productiepijpleidingen configureren {#configuring-non-production-pipelines}
 
@@ -47,12 +47,6 @@ Nadat u uw programma hebt ingesteld en minstens één omgeving hebt gebruikt met
 
       * **Handmatig** - Gebruik deze optie om de pijpleiding manueel te beginnen.
       * **Wijzigingen in Git** - Deze opties beginnen de pijpleiding CI/CD wanneer de bemoeienis aan de gevormde git tak wordt toegevoegd. Met deze optie, kunt u de pijpleiding nog manueel zoals vereist beginnen.
-   * **Belangrijk gedrag metrische fouten** - Tijdens het instellen of bewerken van pijpleidingen **Implementatiebeheer** heeft de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitspoorten wordt ontmoet. U hebt de volgende opties.
-
-      * **Telkens vragen** - Dit is de standaardinstelling en u moet handmatig ingrijpen bij belangrijke fouten.
-      * **Direct mislukken** - Indien geselecteerd, zal de pijpleiding worden geannuleerd wanneer een belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
-      * **Direct doorgaan** - Indien geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
-
 
 1. Klikken **Doorgaan**.
 
