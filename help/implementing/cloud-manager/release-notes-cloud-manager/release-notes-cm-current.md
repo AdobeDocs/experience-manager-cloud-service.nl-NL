@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2022.3.0 in Adobe Experience Man
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.3.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 0749099acf98b09d0f83bfe86c2cc4558261c029
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,11 @@ De releasedatum voor Cloud Manager versie 2022.3.0 in AEM as a Cloud Service 10 
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Een gebruiker met de **Ontwikkelaar** de rol kan tot het AEM milieulogboek nu toegang hebben.
-* [De `reliability_rating` kritisch metrisch](/help/implementing/cloud-manager/code-quality-testing.md) is uitgeschakeld.
-* Een gebruiker kan nu sorteren op de kolommen in het dialoogvenster **Pijpleidingen** in Cloud Manager.
+* De toegang tot AEM het logboek van het Milieu kan worden gedaan gebruikend de rol van de Ontwikkelaar.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* Een subset van handmatig gemaakte git-opslagplaatsen had onjuiste naamwaarden die van invloed waren op [de functie voor hergebruik van bouwartefacten.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) De namen van deze opslagruimten zijn gewijzigd en gebruikers zien de gecorrigeerde naam in de API/UI van Cloud Manager.
-* [Wanneer het toevoegen van of het uitgeven van een pijpleiding van de codekwaliteit,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) de **Belangrijk gedrag metrische fouten** worden niet meer weergegeven.
-* De onverwachte configuraties van de pijpleidingsvariabele veroorzaken niet meer fouten in de bouwstijlstap.
+* Een subset van handmatig gemaakte it-opslagruimten had een onjuiste naamwaarde waardoor de functie voor hergebruik van bouwmateriaal niet doeltreffend was. De namen van deze opslagruimten zijn gewijzigd en gebruikers zien de gecorrigeerde naam in de API/UI van Cloud Manager.
+* Bij de productie van volledige stapelleidingen werden bouwartefacten van niet-productiepijpleidingen onjuist opnieuw gebruikt.
+* Wanneer het toevoegen van of het uitgeven van een pijpleiding van de codekwaliteit, worden de opties om metrische mislukkingen te behandelen niet meer getoond.
+* Sommige onverwachte configuraties van pijpleidingsvariabele konden in de bouwstijlstap veroorzaken.
