@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 08ed7f06b60ab65a0060c4fa00f902006f3afbdd
+source-git-commit: e4d7d3d7fb4430c2027d4d2f3c34d77890c28ad8
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 1%
@@ -26,7 +26,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 ## Releasedatum {#release-date}
 
 De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release (2022.1.0) is 3 februari 2022.
-De volgende release (2022.2.0) is op 10 maart 2022.
+De volgende release (2022.3.0) is op 31 maart 2022.
 
 ## Video vrijgeven {#release-video}
 
