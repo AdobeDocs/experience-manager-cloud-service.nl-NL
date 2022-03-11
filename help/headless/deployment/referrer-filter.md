@@ -2,13 +2,13 @@
 title: Configuratie van filter Referrer met AEM zonder kop
 description: Met het filter Adobe Experience Manager Referrer kunt u toegang krijgen van hosts van derden. Een configuratie OSGi voor de Filter van de Referateur is nodig om toegang tot het eindpunt GraphQL voor headless toepassingen toe te laten.
 feature: GraphQL API
-source-git-commit: 0cc131209f497241949f8da6e8144dfcaffe7e6e
+exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
 
 ---
-
 
 # Refererfilter {#referrer-filter}
 

@@ -1,13 +1,13 @@
 ---
 title: Inhoudsoverdrachten valideren
 description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten te valideren
-source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
+exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 1%
 
 ---
-
 
 # Inhoudsoverdrachten valideren {#validating-content-transfers}
 
@@ -157,7 +157,3 @@ Kies een pad in het validatierapport en controleer of dit aanwezig is in de doel
 Sommige paden uit de extractie- en innamesamenvattingen worden doelbewust uitgesloten om de grootte van deze bestanden beheerbaar te houden, met als doel het resultaat van de migratievalidatie binnen twee uur na voltooiing van de inname te kunnen berekenen.
 
 De paden die we momenteel uitsluiten van de samenvattingen zijn: `cqdam.text.txt` vertoningen, knooppunten binnen `/home`en knooppunten binnen `/jcr:system`.
-
-
-
-

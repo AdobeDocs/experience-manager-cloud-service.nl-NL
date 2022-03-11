@@ -21,7 +21,6 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) 
 >* Kennis van uw site en inhoudsstructuur
 >* Begrip van cachestrategieën
 >* Ondersteuning van uw ontwikkelingsteam
-
 >
 >Voordat u deze functie gebruikt, wordt u aangeraden dit met uw ontwikkelingsteam te bespreken om de beste manier te definiëren om deze voor uw project te gebruiken.
 

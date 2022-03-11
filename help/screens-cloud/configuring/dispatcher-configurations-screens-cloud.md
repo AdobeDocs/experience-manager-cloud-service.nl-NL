@@ -1,21 +1,21 @@
 ---
-title: Configuraties van Dispatcher in rasters als Cloud Service
-description: Deze pagina beschrijft Dispatcher Configurations in Screens als Cloud Service.
-source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
+title: Dispatcher Configurations in as a Cloud Service schermen
+description: Op deze pagina worden de configuraties van Dispatcher in as a Cloud Service schermen beschreven.
+exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
+# Dispatcher Configurations in as a Cloud Service schermen {#dispatcher-configurations-screens-cloud}
 
-# Configuraties van Dispatcher in rasters als Cloud Service {#dispatcher-configurations-screens-cloud}
+In deze sectie worden de configuraties van de verzender voor as a Cloud Service schermen beschreven.
 
-In deze sectie worden de configuraties van de verzender voor rasters beschreven als een Cloud Service.
+## Filters en cacheregels toevoegen in Dispatcher voor as a Cloud Service schermimplementatie {#deployment}
 
-## Filters en cacheregels toevoegen in Dispatcher voor rasters als Cloud Service-implementatie {#deployment}
-
-De volgende filters en cachemijnen in verzenders toestaan voor de publicatie-instanties in rasters als Cloud Service.
+De volgende filters en cachemels in verzenders toestaan voor de publicatie-instanties in as a Cloud Service schermen.
 
 ### AEM Screens-filters {#filters}
 
@@ -32,7 +32,7 @@ De volgende filters en cachemijnen in verzenders toestaan voor de publicatie-ins
 
 ### Cacheregels {#cache-rules}
 
-* Voeg `/statfileslevel "10"` aan `/cache` sectie in `publish_farm.any` toe.
+* Toevoegen `/statfileslevel "10"` tot `/cache` sectie in `publish_farm.any`/.
 
    >[!NOTE]
    >Deze geheim voorgeheugenregel steunt caching tot 10 niveaus van de geheim voorgeheugendocroot en maakt ongeldig wanneer de inhoud wordt gepubliceerd eerder dan het ongeldig maken van alles. U kunt dit niveau wijzigen op basis van de mate waarin de inhoudsstructuur is ingesteld.
@@ -46,7 +46,7 @@ De volgende filters en cachemijnen in verzenders toestaan voor de publicatie-ins
    }
    ```
 
-* Voeg de volgende regels aan `/rules` sectie in `/cache` in publish_farm.any of in een dossier toe dat van `publish_farm.any` inbegrepen is.
+* Voeg de volgende regels toe aan `/rules` sectie in `/cache` in publish_farm.any of in een bestand waarvan `publish_farm.any`.
 
    ```
    ## Allow Dispatcher Cache for Screens channels

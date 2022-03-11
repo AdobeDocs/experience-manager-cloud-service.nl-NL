@@ -1,25 +1,25 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.5.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.5.0
-feature: Geen informatie
+title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.5.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.5.0
+feature: Release Information
 exl-id: 8ae3cf2f-1865-427a-b612-bdf56e2f0304
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.5.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.5.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.5.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.5.0.
 
 >[!NOTE]
->Om de huidige Nota&#39;s van de Versie voor Adobe Experience Manager als Cloud Service te zien, klik [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>Klik op [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.5.0 is 6 mei 2021.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.5.0 is 6 mei 2021.
 
 ### Wat is er nieuw? {#what-is-new}
 
@@ -33,11 +33,11 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.5.0 is 6 mei 20
 
 * Invoegtoepassing voor handel kan nu worden toegepast op Sandbox-programma&#39;s tijdens de workflow van het bewerkingsprogramma.
 
-* De *ervaring van het bewerkingsprogramma* is vernieuwd.
+* De *Programma bewerken* de ervaring is vernieuwd .
 
 * De lijst van de Namen van het Domein in de pagina van Details van het Milieu zal tot 250 namen van Domein via paginering tonen.
 
-* De **Oplossingen &amp; toe:voegen-ons** tabel in **Add Programma** en **Edit Programma** werkschema&#39;s zullen de oplossing tonen, zelfs als slechts één oplossing voor het Programma beschikbaar is.
+* De **Oplossingen en invoegtoepassingen** tab in **Programma toevoegen** en **Programma bewerken** De werkschema&#39;s zullen de oplossing tonen, zelfs als slechts één oplossing voor het Programma beschikbaar is.
 
 * Het foutenbericht in het bouwstijlstaplogboek toen de bouwstijl geen opgestelde inhoudspakketten produceerde was onduidelijk.
 
@@ -45,7 +45,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.5.0 is 6 mei 20
 
 * Soms, kan de gebruiker een groene &quot;actieve&quot;status naast een IP Lijst van gewenste personen zien zelfs wanneer die configuratie niet werd opgesteld.
 
-* In plaats van &#39;verwijderde&#39; variabelen te verwijderen, markeert de API voor pijpleidingvariabelen deze alleen met status **DELETED**.
+* In plaats van &#39;verwijderde&#39; variabelen te verwijderen, markeert de API voor pijpleidingvariabelen deze alleen met status **VERWIJDERD**.
 
 * Sommige kwaliteitskwesties van het type Code Smell hadden een onjuiste invloed op de beoordeling Betrouwbaarheid.
 

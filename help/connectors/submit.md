@@ -37,7 +37,7 @@ Ongeacht waar zij worden ontvangen, moeten de pakketten als gebiedsdelen in pom.
 </dependency>
 ```
 
-Als de ISV-partner de aansluiting host op een voor internet toegankelijke opslagplaats (zoals Cloud Manager toegankelijk), moet de ISV de configuratie van de opslagplaats bieden waar de pom.xml kan worden geplaatst, zodat de (hierboven vermelde) connectorafhankelijkheden kunnen worden opgelost tijdens het maken (zowel lokaal als door Cloud Manager).
+Als de ISV-partner de aansluiting host op een voor internet toegankelijke (zoals Cloud Manager toegankelijk) opslagplaats, moet de ISV de configuratie van de opslagplaats bieden waar de pom.xml kan worden geplaatst, zodat de (hierboven) vermelde connectorafhankelijkheden kunnen worden opgelost tijdens het maken (zowel lokaal als door Cloud Manager).
 
 ```xml
 <repository>

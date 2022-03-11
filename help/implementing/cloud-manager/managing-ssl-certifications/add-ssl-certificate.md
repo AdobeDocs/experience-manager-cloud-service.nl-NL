@@ -4,7 +4,7 @@ description: Een SSL-certificaat toevoegen - SSL-certificaten beheren
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Een Certificaat neemt een paar dagen in beslag om te verstrekken en het wordt ge
 
 ## Certificaatindeling {#certificate-format}
 
-SSL-bestanden moeten de PEM-indeling hebben om te kunnen worden geïnstalleerd in Cloud Manager. Algemene bestandsextensies die binnen de PEM-indeling vallen, zijn onder meer `.pem,` .`crt`, `.cer`, en `.cert`.
+SSL-bestanden moeten de PEM-indeling hebben om te kunnen worden geïnstalleerd in Cloud Manager. Algemene bestandsextensies die binnen de PEM-indeling vallen, zijn onder andere `.pem,` .`crt`, `.cer`, en `.cert`.
 
 Voer de onderstaande stappen uit om de indeling van uw SSL-bestanden te converteren naar PEM:
 

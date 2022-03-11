@@ -1,17 +1,17 @@
 ---
-title: 'Publicatie beheren '
+title: Publicatie beheren
 description: Elementen publiceren naar of verwijderen uit Experience Manager Assets, Dynamic Media en Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-source-git-commit: 6ffdd6801fffb743314759b6c303723c2599dfa5
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 4%
 
 ---
-
 
 # Publicaties beheren in Experience Manager Assets {#manage-publication-in-aem}
 
@@ -191,4 +191,3 @@ U kunt elementen, mappen en verzamelingen publiceren naar de [!DNL Experience Ma
 * Lege mappen worden niet gepubliceerd.
 * Als u een element publiceert dat wordt verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
 * Verwijder tijdens het verwijderen van de publicatie van een complex element alleen de publicatie van het element. Maak de publicatie van de referenties niet ongedaan, omdat ze door andere gepubliceerde elementen kunnen worden doorverwezen.
-

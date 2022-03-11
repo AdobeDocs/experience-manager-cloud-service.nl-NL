@@ -3,13 +3,13 @@ title: Het Siterail gebruiken om uw Sitethema te beheren
 description: Leer de krachtige functies van de Site-rail om u te helpen uw site eenvoudig aan te passen en te beheren.
 feature: Administering
 role: Admin
-source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
+exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
 
 ---
-
 
 # Het Siterail gebruiken om uw Sitethema te beheren {#site-rail}
 

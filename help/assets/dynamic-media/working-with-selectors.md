@@ -22,35 +22,35 @@ In deze Carousel Banner gebruikt u bijvoorbeeld de productkiezer als u een hotsp
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Wanneer u selecteert (in plaats van handmatig in te voeren) waar hotspots of afbeeldingen met hyperlinks naartoe gaan, gebruikt u de kiezer. De Sitekiezer werkt alleen als u een [!DNL Adobe Experience Manager Sites]-klant bent. De productkiezer vereist ook [!DNL Experience Manager Commerce].
+Wanneer u selecteert (in plaats van handmatig in te voeren) waar hotspots of afbeeldingen met hyperlinks naartoe gaan, gebruikt u de kiezer. De site-kiezer werkt alleen als u een [!DNL Adobe Experience Manager Sites] klant. De productkiezer heeft ook [!DNL Experience Manager Commerce].
 
 ## Producten selecteren in Dynamic Media {#selecting-products}
 
 Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbeelding met hyperlinks wilt gebruiken om een snelle weergave van een specifiek product in uw productcatalogus te maken.
 
-1. Navigeer naar de carrouselset, de interactieve afbeelding of de interactieve video en selecteer het tabblad **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
+1. Navigeer naar de Carousel-set, de interactieve afbeelding of de interactieve video en selecteer de optie **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
 
-   De productkiezer bevindt zich in het gebied **[!UICONTROL Action Type]**.
+   De productkiezer bevindt zich in de **[!UICONTROL Action Type]** gebied.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Selecteer het pictogram **[!UICONTROL Product Selector]** (vergrootglas) en navigeer naar een product in de catalogus.
+1. Selecteer **[!UICONTROL Product Selector]** (vergrootglas) en navigeer naar een product in de catalogus.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   U kunt filteren op trefwoorden of tags door te tikken op **[!UICONTROL Filter]** en trefwoorden in te voeren of tags te selecteren, of beide.
+   U kunt filteren op trefwoord of tag door te tikken **[!UICONTROL Filter]** en het invoeren van trefwoorden, of het selecteren van tags, of beide.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   U kunt wijzigen waar [!DNL Experience Manager] naar productgegevens bladert door op **[!UICONTROL Browse]** te tikken en naar een andere map te navigeren.
+   U kunt wijzigen waar [!DNL Experience Manager] bladeren naar productgegevens door te tikken **[!UICONTROL Browse]** en naar een andere map te navigeren.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Selecteer **[!UICONTROL Sort by]** om te veranderen of [!DNL Experience Manager] door nieuwste aan oudst of oudst aan nieuwste sorteert.
+   Selecteren **[!UICONTROL Sort by]** om te wijzigen of [!DNL Experience Manager] sorteert op nieuwste naar oudste of oudste naar nieuwste.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Selecteer **[!UICONTROL View as]** om te veranderen hoe u producten bekijkt - of **[!UICONTROL List View]** of **[!UICONTROL Card View]**.
+   Selecteren **[!UICONTROL View as]** om te wijzigen hoe producten worden weergegeven - ofwel **[!UICONTROL List View]** of **[!UICONTROL Card View]**.
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -58,21 +58,21 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. In de modus **[!UICONTROL Preview]** kunt u de hotspot of de afbeelding met hyperlinks selecteren en zien hoe de Snelle weergave eruitziet.
+1. Wanneer in **[!UICONTROL Preview]** kunt u de hotspot of de afbeelding met hyperlinks selecteren en zien hoe de Snelle weergave eruitziet.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
 ## Sites selecteren in Dynamic Media {#selecting-sites}
 
-Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeeldingskaart wilt koppelen aan een webpagina die wordt beheerd binnen [!DNL Experience Manager]-sites.
+Met de sitekiezer kunt u een webpagina kiezen als u een hotspot of afbeeldingskaart wilt koppelen aan een webpagina die wordt beheerd binnen [!DNL Experience Manager] sites.
 
-1. Navigeer naar de carrouselset, de interactieve afbeelding of de interactieve video en selecteer het tabblad **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
+1. Navigeer naar de Carousel-set, de interactieve afbeelding of de interactieve video en selecteer de optie **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
 
    De sitekiezer bevindt zich in het gebied **[!UICONTROL Action Type]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Selecteer het pictogram **[!UICONTROL Site Selector]** (map met vergrootglas) en navigeer naar een pagina in uw [!DNL Experience Manager]-sites waarnaar u de hotspot of afbeelding met hyperlinks wilt koppelen.
+1. Selecteer **[!UICONTROL Site Selector]** pictogram (map met vergrootglas) en navigeer naar een pagina in uw [!DNL Experience Manager] sites waaraan u de hotspot of afbeelding met hyperlinks wilt koppelen.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,30 +80,30 @@ Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeelding
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Als u in de modus **[!UICONTROL Preview]** de hotspot of afbeelding met hyperlinks selecteert, navigeert u naar de door u opgegeven [!DNL Experience Manager]-sitepagina.
+1. Wanneer in **[!UICONTROL Preview]** als u de hotspot of afbeelding met hyperlinks selecteert, navigeert u naar de [!DNL Experience Manager] door u opgegeven sitepagina.
 
 ## Elementen selecteren in Dynamic Media {#selecting-assets}
 
-Gebruik deze kiezer om afbeeldingen te kiezen voor gebruik in een carrouselbanner, een interactieve video, afbeeldingssets, gemengde mediasets en centrifugesets. In interactieve video is de elementenkiezer beschikbaar wanneer u **[!UICONTROL Select Assets]** selecteert op het tabblad **[!UICONTROL Content]**. In Carousel-sets is de elementenkiezer beschikbaar wanneer u een dia maakt. In de Reeksen van het Beeld, Gemengde Plaatsen van Media, en de Reeksen van de Rotatie, is de activaselecteur beschikbaar wanneer u een Reeks van het Beeld, Gemengde Geplaatste Media, of Reeks van de Rotatie creeert.
+Gebruik deze kiezer om afbeeldingen te kiezen voor gebruik in een carrouselbanner, een interactieve video, afbeeldingssets, gemengde mediasets en centrifugesets. In interactieve video is de elementenkiezer beschikbaar wanneer u **[!UICONTROL Select Assets]** in de **[!UICONTROL Content]** tab. In Carousel-sets is de elementenkiezer beschikbaar wanneer u een dia maakt. In de Reeksen van het Beeld, Gemengde Plaatsen van Media, en de Reeksen van de Rotatie, is de activaselecteur beschikbaar wanneer u een Reeks van het Beeld, Gemengde Geplaatste Media, of Reeks van de Rotatie creeert.
 
-Zie ook [Asset Picker](/help/assets/search-assets.md#asset-selector) voor meer informatie.
+Zie ook [Asset Picker](/help/assets/search-assets.md#asset-selector) voor meer informatie .
 
-1. Navigeer naar de Carousel-set en maak een dia. Of navigeer naar de Interactieve Video, ga **[!UICONTROL Content]** tabel, dan uitgezochte activa. U kunt ook een gemengde mediaset, Afbeeldingsset of Spin-set maken.
-1. Selecteer het pictogram **[!UICONTROL Asset Selector]** (map met vergrootglas) en navigeer naar een element.
+1. Navigeer naar de Carousel-set en maak een dia. Of navigeer naar de interactieve video en ga naar de **[!UICONTROL Content]** selecteert u vervolgens elementen. U kunt ook een gemengde mediaset, Afbeeldingsset of Spin-set maken.
+1. Selecteer **[!UICONTROL Asset Selector]** (map met vergrootglas) en navigeer naar een element.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   Filter op trefwoord of tag door te tikken op **[!UICONTROL Filter]** en trefwoorden in te voeren, of criteria toe te voegen, of beide.
+   Filteren op trefwoord of tag door erop te tikken **[!UICONTROL Filter]** en het invoeren van trefwoorden, of het toevoegen van criteria, of beide.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   U kunt wijzigen waar [!DNL Experience Manager] naar elementen bladert door naar een andere map in het veld **[!UICONTROL Path]** te navigeren.
+   U kunt wijzigen waar [!DNL Experience Manager] bladert naar elementen door naar een andere map in de **[!UICONTROL Path]** veld.
 
-   Selecteer **[!UICONTROL Collection]** om alleen te zoeken naar elementen binnen verzamelingen.
+   Selecteren **[!UICONTROL Collection]** om alleen te zoeken naar elementen in verzamelingen.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Selecteer **[!UICONTROL View as]** om te veranderen hoe u producten - of **[!UICONTROL List View]**, **[!UICONTROL Column View]**, of **[!UICONTROL Card View]** bekijkt.
+   Selecteren **[!UICONTROL View as]** om te wijzigen hoe producten worden weergegeven - ofwel **[!UICONTROL List View]**, **[!UICONTROL Column View]**, of **[!UICONTROL Card View]**.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 

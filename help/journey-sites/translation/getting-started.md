@@ -4,13 +4,13 @@ description: Leer hoe u uw AEM Sites-inhoud kunt ordenen en hoe AEM vertaalgeree
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 8c04ffde2cbafcb6d556de8d48fc19f5b130a2c1
+exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met AEM Sites Translation {#getting-started}
 
@@ -18,7 +18,7 @@ Leer hoe u uw AEM Sites-inhoud kunt ordenen en hoe AEM vertaalgereedschappen wer
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Sites translatietraject, [Leer over AEM Sites-inhoud en hoe u in AEM](learn-about.md) vertaalt, leerde u de basistheorie van AEM Sites en u zou nu moeten:
+In het vorige document van de AEM Sites-vertaalreis: [Meer informatie over AEM Sites-inhoud en over het vertalen in AEM](learn-about.md) U hebt de basistheorie van AEM Sites geleerd en u zou nu moeten:
 
 * Begrijp de basisbeginselen van het maken van AEM Sites-inhoud.
 * Zorg dat u weet hoe AEM vertaling ondersteunt.
@@ -47,7 +47,7 @@ Er zijn een aantal vereisten voordat u begint met het vertalen van AEM inhoud.
 
 >[!TIP]
 >
->Als u niet vertrouwd bent met het gebruiken van grote CMS als AEM, overweeg het herzien van [Basisbehandeling](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentatie alvorens te werk te gaan. De documentatie voor basisverwerking maakt geen deel uit van de reis. Ga daarom na voltooiing terug naar deze pagina.
+>Als u niet vertrouwd bent met het gebruik van een grootschalig CMS als AEM, kunt u overwegen om de [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentatie voordat u verdergaat. De documentatie voor basisverwerking maakt geen deel uit van de reis. Ga daarom na voltooiing terug naar deze pagina.
 
 ### Opties {#tools}
 
@@ -65,7 +65,7 @@ De siteconsole biedt een overzicht van de structuur van uw inhoud waardoor u een
 
 Toegang tot de siteconsole:
 
-1. Klik of tik in het algemene navigatiemenu op **Navigatie** -> **Sites**.
+1. Klik of tik op **Navigatie** -> **Sites**.
 1. De siteconsole wordt geopend op het hoogste niveau van uw inhoud.
 1. Zorg ervoor dat de **Kolomweergave** is geselecteerd met de weergavekiezer rechtsboven in het venster.
 
@@ -79,7 +79,7 @@ Toegang tot de siteconsole:
 
    ![Inhoud selecteren](assets/sites-console-selection.png)
 
-1. Door op de spoorselecteur bij de bovenkant linkerzijde te tikken of te klikken, kunt u **Inhoudsboom** mening voor een boomoverzicht van uw inhoud ook tonen.
+1. Door op de spoorkiezer linksboven te tikken of te klikken, kunt u ook de **Inhoudsstructuur** voor een boomstructuuroverzicht van uw inhoud.
 
    ![Weergave Inhoudsboomstructuur](assets/sites-console-content-tree.png)
 
@@ -101,7 +101,7 @@ Een pagina bewerken:
 
    ![Een pagina selecteren om te bewerken](assets/sites-editor-select-page.png)
 
-1. Tik op de optie **Bewerken** in de werkbalk.
+1. Tik op de knop **Bewerken** in de werkbalk.
 1. De site-editor wordt geopend en de geselecteerde pagina wordt geladen voor bewerking in een nieuw browsertabblad.
 1. Wanneer u de muis over inhoud beweegt of hierop tikt, worden kiezers voor afzonderlijke componenten weergegeven. Componenten zijn de bouwstenen voor slepen en neerzetten die de pagina vormen.
 
@@ -129,7 +129,7 @@ AEM inhoud wordt aangestuurd door de structuur ervan. AEM stelt weinig vereisten
 
 Zoals eerder geadviseerd, werk met uw inhoudarchitect om de aangewezen inhoudsstructuur voor uw eigen project te bepalen. Het volgende is echter een bewezen, eenvoudige en intuïtieve structuur die heel effectief is.
 
-Definieer een basismap voor uw project onder `/content`.
+Een basismap definiëren voor uw project onder `/content`.
 
 ```text
 /content/<your-project>
@@ -187,9 +187,9 @@ Let op het specifieke pad van uw inhoud, want dit zal later nodig zijn om uw ver
 
 Nu u de de plaatsenconsole en redacteur en het belang van inhoudsstructuur begrijpt, kunnen wij bekijken hoe te om inhoud te vertalen. De vertaalhulpmiddelen in AEM zijn vrij krachtig, maar eenvoudig te begrijpen op hoog niveau.
 
-* **Vertaalaansluiting**  - De aansluiting is de koppeling tussen AEM en de vertaalservice die u gebruikt.
-* **Vertaalregels**  - Regels bepalen welke inhoud onder bepaalde paden moet worden vertaald.
-* **Vertaalprojecten**  - Vertaalprojecten verzamelen inhoud die als één enkele vertaalinspanning zou moeten worden gericht en volgen de vooruitgang van de vertaling, die met de schakelaar in aanraking komt om de te vertalen inhoud over te brengen en het terug van de vertaaldienst te ontvangen.
+* **Vertaalaansluiting** - De connector is de koppeling tussen AEM en de vertaalservice die u gebruikt.
+* **Vertaalregels** - Regels bepalen welke inhoud onder bepaalde paden moet worden vertaald.
+* **Omzettingsprojecten** - Vertaalprojecten bevatten inhoud die als één enkele vertaalinspanning moet worden aangepakt en volgen de voortgang van de vertaling, die met de schakelaar in aanraking komt om de te vertalen inhoud over te brengen en het terug van de vertaaldienst te ontvangen.
 
 U plaatst over het algemeen slechts eens uw schakelaar voor uw instantie en regels per project. Vervolgens gebruikt u vertaalprojecten om uw inhoud te vertalen en de vertalingen voortdurend bij te werken.
 
@@ -201,13 +201,13 @@ Nu u dit deel van de AEM Sites vertaalreis hebt voltooid, moet u:
 * Begrijp hoe AEM inhoud opslaat.
 * Wees vertrouwd met AEM vertaalhulpmiddelen.
 
-Bouw op deze kennis voort en zet uw AEM Sites-vertaalreis door het document [Configureer de vertaalconnector](configure-connector.md) opnieuw te bekijken, waar u leert hoe u AEM kunt verbinden met een vertaalservice.|
+Gebaseerd op deze kennis en uw AEM Sites-vertaalreis voortzetten door het document opnieuw te bekijken [De vertaalaansluiting configureren](configure-connector.md) waar u leert hoe u AEM kunt maken met een vertaalservice.|
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de vertaalreis door het document [te herzien de vertaalschakelaar ](configure-connector.md) vormt zijn het volgende enkele extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
+U kunt het beste naar het volgende gedeelte van de vertaalreis gaan door het document te bekijken [De vertaalaansluiting configureren](configure-connector.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
 
-* [AEM Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - Leer de grondbeginselen van de AEM UI om comfortabel te kunnen navigeren en essentiële taken uit te voeren zoals het vinden van uw inhoud.
-* [Inhoud identificeren voor vertaling](/help/sites-cloud/administering/translation/rules.md)  - Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.
-* [Het Vormen van het Kader](/help/sites-cloud/administering/translation/integration-framework.md)  van de Integratie van de Vertaling - leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertaling te integreren.
-* [Vertaalprojecten](/help/sites-cloud/administering/translation/managing-projects.md)  beheren - Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM kunt maken en beheren.
+* [AEM basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Leer de basisbeginselen van de AEM-interface om eenvoudig door essentiële taken te kunnen navigeren en deze uit te voeren, zoals het zoeken naar uw inhoud.
+* [Te vertalen inhoud identificeren](/help/sites-cloud/administering/translation/rules.md) - Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.
+* [Het framework voor vertaalintegratie configureren](/help/sites-cloud/administering/translation/integration-framework.md) - Leer hoe u het vertaalintegratieframework kunt configureren voor integratie met externe vertaalservices.
+* [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md) - Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM kunt maken en beheren.

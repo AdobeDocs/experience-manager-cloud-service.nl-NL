@@ -1,22 +1,22 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.10.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.10.0
-feature: Geen informatie
+title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2020.10.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2020.10.0
+feature: Release Information
 exl-id: 129d0dd8-3d6e-4cf0-b42e-5526f5cf0836
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '300'
 ht-degree: 1%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2020.10.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2020.10.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2020.10.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.10.0 is 1 oktober 2020.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2020.10.0 is 1 oktober 2020.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -30,8 +30,8 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.10.0 is 1 oktob
 
 * Het aantal omgevingsvariabelen per omgeving is verhoogd tot 200.
 
-* De kaart van het Milieu op de pagina van het Overzicht zal nu tot drie milieu&#39;s een lijst maken. Gebruikers kunnen de knop **Alles weergeven** selecteren om naar de overzichtspagina Omgeving te navigeren en een tabel met een volledige lijst met omgevingen weer te geven.
-Zie [Omgeving weergeven](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) voor meer informatie.
+* De kaart van het Milieu op de pagina van het Overzicht zal nu tot drie milieu&#39;s een lijst maken. Gebruikers kunnen de **Alles tonen** om naar de overzichtspagina van het Milieu te navigeren om een lijst met een volledige lijst van milieu&#39;s te bekijken.
+Zie [Weergaveomgeving](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) voor meer informatie .
 
 
 ### Opgeloste problemen {#bug-fixes-cloud-manager}

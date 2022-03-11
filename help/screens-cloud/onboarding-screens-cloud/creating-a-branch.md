@@ -1,20 +1,20 @@
 ---
 title: Een vertakking maken
-description: Op deze pagina wordt beschreven hoe u een vertakking maakt in Cloud Manager for Screens als Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+description: Op deze pagina wordt beschreven hoe u een vertakking maakt in Cloud Manager for Screens as a Cloud Service.
+exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 1%
 
 ---
 
-
 # Een vertakking maken in Cloud Manager {#create-branch-screens-cloud}
 
 In deze sectie wordt beschreven hoe u een vertakking voor uw programma maakt in Cloud Manager.
 
 >[!NOTE]
->Raadpleeg [De wizard in Cloud Manager gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) voor informatie over het maken van een AEM toepassingsproject in Cloud Manager met de wizard.
+>Zie [De wizard gebruiken in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) voor meer informatie over het maken van een AEM toepassingsproject in Cloud Manager met de wizard.
 
 ## Doelstelling {#objective}
 
@@ -24,22 +24,22 @@ In de volgende sectie wordt beschreven hoe u een vertakking voor uw programma ku
 
 1. Navigeer naar Cloud Manager en selecteer het pictogram om naar de overzichtspagina van Cloud Manager te gaan.
 
-1. Klik op **Maken** om uw vertakking en project te maken.
+1. Klikken op **Maken** om uw tak en project tot stand te brengen.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/create-branch1.png)
 
-1. Selecteer **Title** en **New Branch Name** van **Create a Branch and Project** tovenaar en klik op **Create**.
+1. Selecteer **Titel** en **Nieuwe naam vertakking** van **Een vertakking en project maken** wizard en klik op **Maken**.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/create-branch2.png)
 
-1. U zult de vraag-aan-actie kaart op de pagina van de Manager van de Wolk **Overzicht** zien de status als project in uitvoering wordt bijgewerkt.
+1. U zult de vraag-aan-actie kaart op de Manager van de Wolk zien **Overzicht** De status wordt bijgewerkt terwijl het project wordt gemaakt.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/create-branch3.png)
 
-1. Zodra de projectverwezenlijking met succes is voltooid, zult u de vraag-aan-actie kaartupdate in de pagina van de Manager van de Wolk **Overzicht** zien.
+1. Als het project is gemaakt, wordt de update van de call-to-action-kaart weergegeven in Cloud Manager **Overzicht** pagina.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
 ## Volgende functies {#whats-next}
 
-Zodra u hebt geleerd hoe u een vertakking voor uw project in de Manager van de Wolk creeert, bent u nu bereid om zich op de volgende stap in het proces Onboarding te bewegen en dat is, [Creërend en Vestigend het Milieu](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).
+Zodra u hebt geleerd hoe u een vertakking voor uw project kunt maken in Cloud Manager, kunt u nu verdergaan naar de volgende stap in het proces Onboarding, namelijk: [De omgeving maken en instellen](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).

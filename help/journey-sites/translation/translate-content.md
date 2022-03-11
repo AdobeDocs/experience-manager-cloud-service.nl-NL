@@ -4,13 +4,13 @@ description: Gebruik de vertaalaansluiting en de regels om uw inhoud te vertalen
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 08127d72c84d6f47f5058ef631dc3128114f1953
+exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud vertalen {#translate-content}
 
@@ -18,7 +18,7 @@ Gebruik de vertaalaansluiting en de regels om uw inhoud te vertalen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Sites vertaling reis, [vorm Vertaal Regels](translation-rules.md) u leerde hoe te om AEM vertaalregels te gebruiken om uw vertaalinhoud te identificeren. Nu moet u:
+In het vorige document van de AEM Sites-vertaalreis: [Vertaalregels configureren](translation-rules.md) u hebt geleerd hoe u AEM vertaalregels kunt gebruiken om uw vertaalinhoud te identificeren. Nu moet u:
 
 * Begrijp wat de vertaalregels doen.
 * U kunt uw eigen vertaalregels definiëren.
@@ -55,15 +55,15 @@ Beide benaderingen worden in de volgende secties verkend.
 
 Voor eigenaars van inhoud die ook verantwoordelijk zijn voor vertaling, is het vaak gemakkelijker om het vertaalproject automatisch AEM maken. AEM automatisch een vertaalproject maken op basis van het inhoudspad:
 
-1. Navigeer naar **Navigatie** -> **Sites** en tik op uw project of klik op uw project.
+1. Navigeren naar **Navigatie** -> **Sites** en tik of klik op uw project.
 1. Zoek de taalhoofdmap van uw project. Als de hoofdtaal bijvoorbeeld Engels is, `/content/<your-project>/en`.
    * Voor de eerste vertaling zijn de andere taalmappen lege plaatsaanduidingen. Deze worden gewoonlijk gemaakt door de inhoudarchitect.
 1. Zoek de taalhoofdmap van uw project.
-1. Tik op de spoorkiezer of klik op deze en toon het venster **References**.
+1. Tik of klik op de railkiezer en toon de **Verwijzingen** deelvenster.
 1. Tik of klik op **Taalkopieën**.
-1. Schakel het selectievakje **Taalkopieën** in.
-1. Vouw de sectie **Taalkopieën bijwerken** onder in het venster Referenties uit.
-1. Selecteer **Vertaalproject(en) maken** in het vervolgkeuzemenu **Project**.
+1. Controleer de **Taalkopieën** selectievakje.
+1. De sectie uitvouwen **Taalkopieën bijwerken** onder aan het venster Verwijzingen.
+1. In de **Project** vervolgkeuzelijst, selecteren **Vertaalproject(en) maken**.
 1. Geef een geschikte titel op voor uw vertaalproject.
 1. Tik of klik op **Bijwerken**.
 
@@ -73,7 +73,7 @@ U ontvangt een bericht dat het project werd gecreeerd.
 
 >[!NOTE]
 >
->Aangenomen wordt dat de vereiste taalstructuur voor de vertalingstalen al is gemaakt als onderdeel van de [definitie van de inhoudsstructuur.](getting-started.md#content-structure) Dit moet gebeuren in samenwerking met de inhoudarchitect.
+>Er wordt aangenomen dat de noodzakelijke taalstructuur voor de vertalingstalen reeds is gecreëerd als onderdeel van de [definitie van de inhoudsstructuur.](getting-started.md#content-structure) Dit moet gebeuren in samenwerking met de inhoudarchitect.
 >
 >Als de taalmappen niet van tevoren worden gemaakt, kunt u geen taalkopieën maken zoals beschreven in de vorige stappen.
 
@@ -81,24 +81,24 @@ U ontvangt een bericht dat het project werd gecreeerd.
 
 Voor managers van vertaalprojecten, is het vaak noodzakelijk om specifieke inhoud manueel te selecteren om in een vertaalproject te omvatten. Als u een dergelijk handmatig vertaalproject wilt maken, moet u eerst een leeg project maken en vervolgens de inhoud selecteren die u aan het project wilt toevoegen.
 
-1. Navigeer naar **Navigation** -> **Projecten**.
+1. Navigeren naar **Navigatie** -> **Projecten**.
 1. Tik of klik op **Maken** -> **Map** om een map voor uw projecten te maken.
    * Dit is optioneel, maar handig om uw vertaalwerkzaamheden te organiseren.
-1. Voeg in het venster **Project maken** een **Titel** voor de map toe en tik op **Maken** of klik op.
+1. In de **Project maken** venster, een **Titel** voor de map en tik of klik op **Maken**.
 
    ![Projectmap maken](assets/create-project-folder.png)
 
 1. Tik of klik op de map om de map te openen.
-1. Tik of klik in de nieuwe projectmap op **Maken** -> **Project**.
-1. Projecten zijn gebaseerd op sjablonen. Tik of klik op de sjabloon **Vertaalproject** om het te selecteren en tik of klik op **Volgende**.
+1. Tik of klik op **Maken** -> **Project**.
+1. Projecten zijn gebaseerd op sjablonen. Tik of klik op de knop **Omzettingsproject** sjabloon om het te selecteren en vervolgens te tikken of te klikken **Volgende**.
 
    ![Sjabloon voor vertaalproject selecteren](assets/select-translation-project-template.png)
 
-1. Op **Basis** lusje, ga een naam voor uw nieuw project in.
+1. Op de **Basis** voert u een naam in voor uw nieuwe project.
 
    ![Tabblad Projectbasis](assets/project-basic-tab.png)
 
-1. Gebruik op het tabblad **Geavanceerd** het vervolgkeuzemenu **Doeltaal** om de taal of talen te selecteren waarin de inhoud moet worden vertaald. Tik of klik op **Maken**.
+1. Op de **Geavanceerd** gebruiken **Doeltaal** vervolgkeuzelijst om de taal of talen te selecteren waarin de inhoud moet worden vertaald. Tik of klik op **Maken**.
 
    ![Tabblad Project geavanceerd](assets/project-advanced-tab.png)
 
@@ -114,23 +114,23 @@ Vertaalprojecten zijn ontworpen om alle inhoud en taken in verband met een verta
 
 Het vertaalproject weergeven:
 
-1. Navigeer naar **Navigation** -> **Projecten**.
-1. Tik of klik op het project dat in de vorige sectie is gemaakt (of [Automatisch een vertaalproject maken op basis van het inhoudspad](#automatically-creating) of [Handmatig een vertaalproject maken door uw inhoud](#manually-creating) te selecteren, afhankelijk van uw situatie).
+1. Navigeren naar **Navigatie** -> **Projecten**.
+1. Tik of klik op het project dat in de vorige sectie is gemaakt (of [Automatisch een vertaalproject maken op basis van het inhoudspad](#automatically-creating) of [Handmatig een vertaalproject maken door uw inhoud te selecteren](#manually-creating) afhankelijk van uw situatie).
 
 ![Vertaalproject](assets/translation-project.png)
 
 Het project is verdeeld in meerdere kaarten.
 
-* **Samenvatting**  - Deze kaart toont de basiskopbalinformatie van het project met inbegrip van de eigenaar, de taal, en de vertaalleverancier.
-* **Vertaaltaak**  - Deze kaart of kaarten geven een overzicht van de werkelijke vertaaltaak, inclusief de status, het aantal middelen, enz. Over het algemeen is er één taak per taal waarbij de ISO-2-taalcode aan de taaknaam wordt toegevoegd.
-   * Wanneer [automatisch vertaaltaken maakt, AEM](#automatically-creating) de taken asynchroon en worden deze mogelijk niet direct in het project weergegeven.
-* **Team**  - Deze kaart toont de gebruikers die aan dit vertaalproject samenwerken. Deze reis gaat niet over dit onderwerp.
-* **Taken**  - Extra taken verbonden aan het vertalen van de inhoud zoals het doen van punten of werkschemapunten. Deze reis gaat niet over dit onderwerp.
+* **Samenvatting** - Deze kaart bevat de basiskoptekstinformatie van het project, waaronder de eigenaar, de taal en de vertaalprovider.
+* **Vertaaltaak** - Op deze kaart of op deze kaarten is (zijn) een overzicht te zien van de werkelijke vertaalbaan, met inbegrip van de status, het aantal activa, enz. Over het algemeen is er één taak per taal waarbij de ISO-2-taalcode aan de taaknaam wordt toegevoegd.
+   * Wanneer [automatisch vertaalbanen creëren,](#automatically-creating) AEM leidt tot de banen asynchroon en zij kunnen niet onmiddellijk binnen het project verschijnen.
+* **Team** - Deze kaart toont de gebruikers die aan dit vertaalproject samenwerken. Deze reis gaat niet over dit onderwerp.
+* **Taken** - Aanvullende taken die samenhangen met het vertalen van de inhoud, zoals het uitvoeren van items of workflowitems. Deze reis gaat niet over dit onderwerp.
 
 Om de vertaalstroom in AEM beter te begrijpen, is één verandering in de projectmontages nuttig. Deze stap is niet vereist voor productievertalingen, maar voor een beter begrip van het proces.
 
-1. Tik op de **Summiere**-kaart of klik op de elliptische knop onder aan de kaart.
-1. Schakel op het tabblad **Geavanceerd** de optie **Starten na promotie verwijderen** uit.
+1. Op de **Samenvatting** tikken of tikken op de knop voor de ovaal onder aan de kaart.
+1. Op de **Geavanceerd** tabblad, schakelt u de optie uit **Starten na aanbieding verwijderen**.
 
    ![Starten na promotieoptie verwijderen](assets/delete-launch-option.png)
 
@@ -144,8 +144,8 @@ Wanneer het automatisch tot stand brengen van het vertaalproject, evalueert AEM 
 
 U kunt als volgt de details van de inhoud in dit project bekijken:
 
-1. Tik of klik op de knop voor weglatingen onder aan de **Vertaaltaak**-kaart.
-1. In het venster **Vertaaltaak** worden alle items in de taak weergegeven.
+1. Tik of klik op de knop voor de ovaal onder aan het dialoogvenster **Vertaaltaak** kaart.
+1. De **Vertaaltaak** worden alle items in de taak weergegeven.
 
    ![Taakdetails voor vertaling](assets/translation-job-detail.png)
 
@@ -154,35 +154,35 @@ U kunt als volgt de details van de inhoud in dit project bekijken:
 
    ![Opties voor vertaaltaken](assets/translation-job-options.png)
 
-De inhoud van de vertaaltaak wordt doorgaans gestart in de status **Concept**, zoals aangegeven door de kolom **Staat** in het venster **Vertaal taak**.
+De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door de **Staat** in de **Vertaaltaak** venster.
 
-Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan de **Vertaaltaak**-kaart en selecteert u **Start**.
+Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan het dialoogvenster **Vertaaltaak** kaart en selecteer **Start**.
 
 ![Vertaaltaak starten](assets/start-translation-job.png)
 
-AEM communiceert nu met uw vertaalconfiguratie en -connector om de inhoud naar de vertaalservice te verzenden. U kunt de voortgang van de vertaling bekijken door naar het venster **Translation Job** terug te keren en de kolom **State** van de ingangen te bekijken.
+AEM communiceert nu met uw vertaalconfiguratie en -connector om de inhoud naar de vertaalservice te verzenden. U kunt de voortgang van de vertaling bekijken door terug te keren naar de **Vertaaltaak** venster en de **Staat** kolom van de vermeldingen.
 
 ![Vertaaltaak goedgekeurd](assets/translation-job-approved.png)
 
-De vertalingen van de machine keren automatisch met een staat van **Goedgekeurd** terug. Menselijke vertaling maakt meer interactie mogelijk, maar valt buiten het bereik van deze reis.
+De vertalingen van de machine keren automatisch met een staat van terug **Goedgekeurd**. Menselijke vertaling maakt meer interactie mogelijk, maar valt buiten het bereik van deze reis.
 
 >[!TIP]
 >
->De verwerking van een vertaalbaan kan wat tijd vergen, en u kunt uw vertaalpunten zien van de staat van **Draft** aan **Bezig Vertaling** aan **Klaar voor Overzicht** alvorens zij bij de **Goedgekeurde** staat aankomen. Dat is te verwachten.
+>Het kan enige tijd duren om een vertaaltaak te verwerken en het kan zijn dat uw vertaalitems van de status **Concept** tot **Bezig met omzetten** tot **Gereed voor revisie** voordat ze bij **Goedgekeurd** status. Dat is te verwachten.
 
 >[!NOTE]
 >
->Als u de projectoptie **Launch After Promotion** niet hebt gedeactiveerd zoals wordt beschreven in de vorige sectie, worden ](#using-translation-project) vertaalde items weergegeven met de status **Verwijderd**. [ Dit is normaal, omdat AEM de vertaalverslagen automatisch verwijdert zodra de vertaalde punten aankomen. De vertaalde items zijn geïmporteerd als taalkopieën, alleen de vertaalrecords zijn verwijderd omdat ze niet meer nodig zijn.
+>Als u de projectoptie niet hebt gedeactiveerd **Starten na aanbieding verwijderen** als [beschreven in het vorige punt,](#using-translation-project) vertaalde items worden weergegeven bij de **Verwijderd** status. Dit is normaal, omdat AEM de vertaalverslagen automatisch verwijdert zodra de vertaalde punten aankomen. De vertaalde items zijn geïmporteerd als taalkopieën, alleen de vertaalrecords zijn verwijderd omdat ze niet meer nodig zijn.
 >
->Maak je geen zorgen als dit onduidelijk is. Dit zijn diepgaande details van hoe AEM werkt en niet uw begrip van de reis beïnvloedt. Raadpleeg de sectie [Aanvullende bronnen](#additional-resources) aan het einde van dit artikel als u meer wilt weten over de manier waarop AEM vertalingen verwerkt.
+>Maak je geen zorgen als dit onduidelijk is. Dit zijn diepgaande details van hoe AEM werkt en niet uw begrip van de reis beïnvloedt. Als u dieper wilt gaan werken op de manier waarop AEM vertalingen verwerkt, raadpleegt u de [extra middelen](#additional-resources) aan het einde van dit artikel.
 
-### Handmatig een vertaalproject gebruiken {#using-manual-project}
+### Een handmatig gemaakt vertaalproject gebruiken {#using-manual-project}
 
 Als u handmatig een vertaalproject maakt, AEM de benodigde taken, maar selecteert u niet automatisch de inhoud die u in die taken wilt opnemen. Hierdoor kan de projectbeheerder van de vertaling kiezen welke inhoud moet worden vertaald.
 
 Inhoud toevoegen aan een vertaaltaak:
 
-1. Tik of klik op de knop met de ellips onder aan een van de **Vertaaltaken**-kaarten.
+1. Tik of klik op de ovaalknop onder aan een van de **Vertaaltaak** kaarten.
 1. Controleer of de taak geen inhoud bevat. Tik of klik op de knop **Toevoegen** boven aan het venster en vervolgens **Middelen/Pagina&#39;s** in de vervolgkeuzelijst.
 
    ![Lege vertaaltaak](assets/empty-translation-job.png)
@@ -191,8 +191,8 @@ Inhoud toevoegen aan een vertaaltaak:
 
    ![Padbrowser](assets/path-browser.png)
 
-1. Tik of klik op **Selecteer** om de geselecteerde inhoud aan de taak toe te voegen.
-1. Geef in het dialoogvenster **Vertalen** op dat u **Taalkopie maken** wilt gebruiken.
+1. Tik of klik op **Selecteren** om de geselecteerde inhoud aan de baan toe te voegen.
+1. In de **Vertalen** , geeft u aan dat u **Taalkopie maken**.
 
    ![Taalkopie maken](assets/translate-copy-master.png)
 
@@ -208,39 +208,39 @@ Inhoud toevoegen aan een vertaaltaak:
 
 >[!TIP]
 >
->De padbrowser is een krachtig hulpmiddel waarmee u uw inhoud kunt zoeken, filteren en doorbladeren. Tik of klik op de knop **Alleen inhoud/Filters** om het zijpaneel in of uit te schakelen en geavanceerde filters weer te geven, zoals **Gewijzigde datum** of **Vertaalstatus**.
+>De padbrowser is een krachtig hulpmiddel waarmee u uw inhoud kunt zoeken, filteren en doorbladeren. Tik of klik op de knop **Alleen inhoud/filters** om het zijpaneel in en uit te schakelen en geavanceerde filters zoals **Wijzigingsdatum** of **Vertaalstatus**.
 >
->U kunt meer over wegbrowser in [extra middelensectie leren.](#additional-resources)
+>Meer informatie over de padbrowser vindt u in het dialoogvenster [sectie aanvullende bronnen.](#additional-resources)
 
 U kunt de voorafgaande stappen gebruiken om de noodzakelijke inhoud aan alle talen (banen) voor het project toe te voegen. Nadat u alle inhoud hebt geselecteerd, kunt u de vertaling starten.
 
-De inhoud van de vertaaltaak wordt doorgaans gestart in de status **Concept**, zoals aangegeven door de kolom **Staat** in het venster **Vertaal taak**.
+De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door de **Staat** in de **Vertaaltaak** venster.
 
-Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan de **Vertaaltaak**-kaart en selecteert u **Start**.
+Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan het dialoogvenster **Vertaaltaak** kaart en selecteer **Start**.
 
 ![Vertaaltaak starten](assets/start-translation-job.png)
 
-AEM communiceert nu met uw vertaalconfiguratie en -connector om de inhoud naar de vertaalservice te verzenden. U kunt de voortgang van de vertaling bekijken door naar het venster **Translation Job** terug te keren en de kolom **State** van de ingangen te bekijken.
+AEM communiceert nu met uw vertaalconfiguratie en -connector om de inhoud naar de vertaalservice te verzenden. U kunt de voortgang van de vertaling bekijken door terug te keren naar de **Vertaaltaak** venster en de **Staat** kolom van de vermeldingen.
 
 ![Vertaaltaak goedgekeurd](assets/translation-job-approved.png)
 
-De vertalingen van de machine keren automatisch met een staat van **Goedgekeurd** terug. Menselijke vertaling maakt meer interactie mogelijk, maar valt buiten het bereik van deze reis.
+De vertalingen van de machine keren automatisch met een staat van terug **Goedgekeurd**. Menselijke vertaling maakt meer interactie mogelijk, maar valt buiten het bereik van deze reis.
 
 >[!TIP]
 >
->De verwerking van een vertaalbaan kan wat tijd vergen, en u kunt uw vertaalpunten zien van de staat van **Draft** aan **Bezig Vertaling** aan **Klaar voor Overzicht** alvorens zij bij de **Goedgekeurde** staat aankomen. Dat is te verwachten.
+>Het kan enige tijd duren om een vertaaltaak te verwerken en het kan zijn dat uw vertaalitems van de status **Concept** tot **Bezig met omzetten** tot **Gereed voor revisie** voordat ze bij **Goedgekeurd** status. Dat is te verwachten.
 
 >[!NOTE]
 >
->Als u de projectoptie **Launch After Promotion** niet hebt gedeactiveerd zoals wordt beschreven in de vorige sectie, worden ](#using-translation-project) vertaalde items weergegeven met de status **Verwijderd**. [ Dit is normaal, omdat AEM de vertaalverslagen automatisch verwijdert zodra de vertaalde punten aankomen. De vertaalde items zijn geïmporteerd als taalkopieën, alleen de vertaalrecords zijn verwijderd omdat ze niet meer nodig zijn.
+>Als u de projectoptie niet hebt gedeactiveerd **Starten na aanbieding verwijderen** als [beschreven in het vorige punt,](#using-translation-project) vertaalde items worden weergegeven bij de **Verwijderd** status. Dit is normaal, omdat AEM de vertaalverslagen automatisch verwijdert zodra de vertaalde punten aankomen. De vertaalde items zijn geïmporteerd als taalkopieën, alleen de vertaalrecords zijn verwijderd omdat ze niet meer nodig zijn.
 >
->Maak je geen zorgen als dit onduidelijk is. Dit zijn diepgaande details van hoe AEM werkt en niet uw begrip van de reis beïnvloedt. Raadpleeg de sectie [Aanvullende bronnen](#additional-resources) aan het einde van dit artikel als u meer wilt weten over de manier waarop AEM vertalingen verwerkt.
+>Maak je geen zorgen als dit onduidelijk is. Dit zijn diepgaande details van hoe AEM werkt en niet uw begrip van de reis beïnvloedt. Als u dieper wilt gaan werken op de manier waarop AEM vertalingen verwerkt, raadpleegt u de [extra middelen](#additional-resources) aan het einde van dit artikel.
 
 ## Vertaalde inhoud controleren {#reviewing}
 
-[Zoals eerder is opgemerkt, ](#using-translation-project) vloeit de door de machine vertaalde inhoud terug in AEM met de status van  **** Goedgekeurd, aangezien ervan wordt uitgegaan dat er geen menselijk ingrijpen vereist is omdat er machinevertaling wordt gebruikt. Het is natuurlijk nog steeds mogelijk om de vertaalde inhoud te beoordelen.
+[Zoals eerder waargenomen,](#using-translation-project) door de computer vertaalde inhoud gaat terug naar AEM met de status **Goedgekeurd** aangezien ervan wordt uitgegaan dat er geen menselijk ingrijpen vereist is omdat er machinevertaling wordt gebruikt . Het is natuurlijk nog steeds mogelijk om de vertaalde inhoud te beoordelen.
 
-Ga eenvoudig naar de voltooide vertaalbaan en selecteer een lijnpunt door te tikken of checkbox te klikken. Het pictogram **Voorvertoning in Sites** wordt weergegeven in de werkbalk.
+Ga eenvoudig naar de voltooide vertaalbaan en selecteer een lijnpunt door te tikken of checkbox te klikken. Het pictogram **Voorvertoning in sites** wordt weergegeven in de werkbalk.
 
 ![Tonen op sites](assets/reveal-in-sites.png)
 
@@ -248,7 +248,7 @@ Tik of klik op dat pictogram om de vertaalde inhoud in de bijbehorende console t
 
 ![Een vertaalde pagina](assets/translated-page.png)
 
-U kunt de vertaalde inhoud verder aanpassen, op voorwaarde dat u de juiste toestemming hebt, maar het bewerken van inhoud valt buiten het bereik van deze reis. Zie de sectie [Aanvullende bronnen](#additional-resources) aan het einde van dit document voor meer informatie over dit onderwerp.
+U kunt de vertaalde inhoud verder aanpassen, op voorwaarde dat u de juiste toestemming hebt, maar het bewerken van inhoud valt buiten het bereik van deze reis. Zie de [Aanvullende bronnen](#additional-resources) voor meer informatie over dit onderwerp.
 
 Het doel van het project is om alle middelen in verband met een vertaling op één plaats te verzamelen, zodat u gemakkelijk toegang hebt en een duidelijk overzicht krijgt. Zoals u echter kunt zien door de details van een vertaald item weer te geven, vloeien de vertalingen zelf terug naar de map sites van de vertaaltaal. In dit voorbeeld is de map
 
@@ -256,7 +256,7 @@ Het doel van het project is om alle middelen in verband met een vertaling op é�
 /content/<your-project>/es
 ```
 
-Als u via **Navigation** -> **Sites** naar deze map navigeert, ziet u de vertaalde inhoud.
+Als u via **Navigatie** -> **Sites**, ziet u de vertaalde inhoud.
 
 ![Omslagstructuur voor vertaalde inhoud](assets/translated-sites-content.png)
 
@@ -266,9 +266,9 @@ Het is belangrijk te begrijpen dat deze inhoud niet wordt gepubliceerd en dus ni
 
 ## Menselijke vertaling {#human-translation}
 
-Als uw vertaalservice voorziet in menselijke vertaling, biedt het revisieproces meer opties. Bijvoorbeeld, komen de vertalingen in het project met de status **Draft** terug en moeten worden herzien en manueel worden goedgekeurd of verworpen.
+Als uw vertaalservice voorziet in menselijke vertaling, biedt het revisieproces meer opties. Bijvoorbeeld, komen de vertalingen terug in het project met de status **Concept** en moet met de hand worden herzien en goedgekeurd of geweigerd.
 
-Menselijke vertaling valt buiten het bereik van deze lokalisatietraject. Zie de sectie [Aanvullende bronnen](#additional-resources) aan het einde van dit document voor meer informatie over dit onderwerp. Naast de aanvullende goedkeuringsopties is het werkschema voor menselijke vertalingen echter hetzelfde als voor machinevertalingen die in deze reis worden beschreven.
+Menselijke vertaling valt buiten het bereik van deze lokalisatietraject. Zie de [Aanvullende bronnen](#additional-resources) voor meer informatie over dit onderwerp. Naast de aanvullende goedkeuringsopties is het werkschema voor menselijke vertalingen echter hetzelfde als voor machinevertalingen die in deze reis worden beschreven.
 
 ## Volgende functies {#what-is-next}
 
@@ -278,11 +278,11 @@ Nu u dit deel van de AEM Sites vertaalreis hebt voltooid, moet u:
 * Nieuwe vertaalprojecten kunnen maken.
 * Gebruik vertaalprojecten om uw inhoud te vertalen.
 
-Bouw op deze kennis voort en vervolg uw AEM Sites-vertaalreis door het document [Vertaalde inhoud publiceren](publish-content.md) opnieuw te bekijken. Hierin leert u hoe u uw vertaalde inhoud publiceert en hoe u die vertalingen kunt bijwerken wanneer de inhoud van de hoofdtaal verandert.
+Gebaseerd op deze kennis en uw AEM Sites-vertaalreis voortzetten door het document opnieuw te bekijken [Vertaalde inhoud publiceren](publish-content.md) waar u leert hoe u uw vertaalde inhoud publiceert en hoe u deze vertalingen bijwerkt wanneer de inhoud van de hoofdtaal verandert.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Hoewel u wordt aangeraden naar het volgende gedeelte van de vertaalreis te gaan door het document [Vertaalde inhoud publiceren te bekijken, zijn de volgende aanvullende, optionele bronnen die een dieper effect hebben op bepaalde concepten die in dit document worden genoemd, maar die niet nodig zijn om verder te gaan op de reis.](publish-content.md)
+U kunt het beste naar het volgende gedeelte van de vertaalreis gaan door het document te bekijken [Vertaalde inhoud publiceren,](publish-content.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
 
-* [Vertaalprojecten](/help/sites-cloud/administering/translation/managing-projects.md)  beheren - Meer informatie over vertaalprojecten en aanvullende functies, zoals workflows voor menselijke vertaling en meertalige projecten.
-* [Ontwerpomgeving en -gereedschappen](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)  - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.
+* [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md) - Leer de details van vertaalprojecten en aanvullende functies zoals workflows voor menselijke vertaling en meertalige projecten.
+* [Ontwerpomgeving en -gereedschappen](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.

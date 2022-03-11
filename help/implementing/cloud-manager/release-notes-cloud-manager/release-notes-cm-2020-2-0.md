@@ -1,22 +1,22 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.2.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.2.0
-feature: Geen informatie
+title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2020.2.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2020.2.0
+feature: Release Information
 exl-id: 3f3324d9-53db-458d-9523-2e0d5d6dc3f7
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '199'
+ht-degree: 2%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2020.2.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.2.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2020.2.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2020.2.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.2.0 is 13 februari 2020.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2020.2.0 is 13 februari 2020.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -24,7 +24,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.2.0 is 13 febru
 
 * De Adobe Experience Manager archetype-versie is bijgewerkt naar versie 22.
 * De werkgebied- en productieomgevingen in de programma&#39;s Sandbox/Demo kunnen nu worden bijgewerkt via de interface van Cloud Manager.
-* URL&#39;s die in Experience Cloud-berichten worden gebruikt, zijn geoptimaliseerd om een extra omleiding te voorkomen.
+* URL&#39;s die worden gebruikt in Experience Cloud-berichten, zijn geoptimaliseerd om een extra omleiding te voorkomen.
 * Uitvoeringsstappen van de pijpleiding die nu uitdrukkelijk genoemd.
 * De stap voor het scannen van code heeft nu een downloadbaar logboek.
 * Het spreadsheet dat kwesties bevat die tijdens code het aftasten nu worden ontdekt heeft een kolom met een verbinding aan documentatie voor de specifieke regel.

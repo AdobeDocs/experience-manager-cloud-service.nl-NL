@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# Aan de slag met SPA in AEM Angular {#getting-started-with-spas-in-aem-using-angular} gebruiken
+# Aan de slag met SPA in AEM Angular gebruiken {#getting-started-with-spas-in-aem-using-angular}
 
 Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor websitegebruikers. Ontwikkelaars willen sites kunnen maken met behulp van SPA frameworks en auteurs willen inhoud naadloos bewerken binnen AEM voor een site die is gebouwd met behulp van SPA frameworks.
 
@@ -17,7 +17,7 @@ De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van 
 
 >[!NOTE]
 >
->Dit artikel is gebaseerd op het kader van de Angular. Zie [Aan de slag met SPA in AEM - Reageren](getting-started-react.md) voor het corresponderende document voor het React-framework.
+>Dit artikel is gebaseerd op het kader van de Angular. Zie voor het bijbehorende document voor het React-framework [Aan de slag met SPA in AEM - Reageren](getting-started-react.md).
 
 ## Inleiding {#introduction}
 
@@ -37,13 +37,13 @@ Raadpleeg de volgende documenten voor meer informatie over SPA werken in AEM:
 
 Dit document loopt door de structuur van een vereenvoudigde SPA en illustreert hoe het werkt zodat u deze interpretatie op uw eigen SPA kunt toepassen.
 
-## Afhankelijkheden, configuratie en gebouw {#dependencies-configuration-and-building}
+## Afhankelijkheden, configuratie en gebouwen {#dependencies-configuration-and-building}
 
 Naast de verwachte afhankelijkheid van Angulars, kan de steekproef SPA extra bibliotheken gebruiken om de verwezenlijking van SPA efficiënter te maken.
 
 ### Afhankelijkheden {#dependencies}
 
-Het `package.json` dossier bepaalt de vereisten van het algemene SPA pakket. De minimum vereiste AEM gebiedsdelen zijn hier vermeld.
+De `package.json` het dossier bepaalt de vereisten van het algemene SPA pakket. De minimum vereiste AEM gebiedsdelen zijn hier vermeld.
 
 ```
 "dependencies": {
@@ -57,9 +57,9 @@ De `aem-clientlib-generator` wordt gebruikt om het maken van clientbibliotheken 
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Meer details over het kunnen [op GitHub hier](https://github.com/wcm-io-frontend/aem-clientlib-generator) worden gevonden.
+Meer informatie hierover is te vinden [op GitHub hier](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
-`aem-clientlib-generator` wordt gevormd in `clientlib.config.js` dossier als volgt.
+De `aem-clientlib-generator` is geconfigureerd in de `clientlib.config.js` bestand als volgt.
 
 ```
 module.exports = {
@@ -90,15 +90,15 @@ module.exports = {
 
 ### Gebouw {#building}
 
-Bij het ontwikkelen van de app wordt [Webpack](https://webpack.js.org/) benut voor omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van de clientbibliotheek. Daarom zal het bouwstijlbevel op lijken:
+Eigenlijk de app-functies ontwikkelen [Webpack](https://webpack.js.org/) voor de omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van clientbibliotheken. Daarom zal het bouwstijlbevel op lijken:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
 Nadat het pakket is gemaakt, kan het naar een AEM-instantie worden geüpload.
 
-### Projectarchetype {#aem-project-archetype} AEM
+### Projectarchetype AEM {#aem-project-archetype}
 
-Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
+Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK.
 
 ## Toepassingsstructuur {#application-structure}
 
@@ -110,7 +110,7 @@ Een vereenvoudigde afbeeldingscomponent wordt als voorbeeld gebruikt, maar alle 
 
 ### app.module.ts {#app-module-ts}
 
-Het ingangspunt in de SPA is het `app.module.ts` bestand dat hier vereenvoudigd wordt weergegeven om de aandacht op de belangrijke inhoud te richten.
+Het ingangspunt in de SPA is de `app.module.ts` bestand dat hier wordt weergegeven, is vereenvoudigd zodat u zich kunt concentreren op de belangrijke inhoud.
 
 ```
 // app.module.ts
@@ -133,7 +133,7 @@ import { AppRoutingModule } from './app-routing.module';
 export class AppModule {}
 ```
 
-Het `app.module.ts` dossier is het uitgangspunt van app en bevat de aanvankelijke projectconfiguratie en gebruikt `AppComponent` om App op te starten.
+De `app.module.ts` het dossier is het uitgangspunt van app en bevat de aanvankelijke projectconfiguratie en het gebruik `AppComponent` om de app op te starten.
 
 #### Statische instantie {#static-instantiation}
 
@@ -141,7 +141,7 @@ Wanneer de component statisch wordt geconcretiseerd gebruikend het componentenma
 
 ### app.component.ts {#app-component-ts}
 
-Eenmaal `app.module.ts` bootstraps `AppComponent`, kan het dan de App initialiseren, die hier in een vereenvoudigde versie wordt getoond om zich op de belangrijke inhoud te concentreren.
+Eenmaal `app.module.ts` bootstraps `AppComponent`kan de toepassing vervolgens worden geïnitialiseerd. Deze versie wordt hier in een vereenvoudigde versie weergegeven en richt zich op de belangrijke inhoud.
 
 ```
 // app.component.ts
@@ -175,7 +175,7 @@ export class AppComponent {
 
 ### main-content.component.ts {#main-content-component-ts}
 
-Door de pagina te verwerken, `app.component.ts` roept `main-content.component.ts` hier in een vereenvoudigde versie vermeld.
+Door de pagina te verwerken, `app.component.ts` oproepen `main-content.component.ts` hier in een vereenvoudigde versie vermeld.
 
 ```
 import { Component } from '@angular/core';
@@ -206,11 +206,11 @@ export class MainContentComponent {
 }
 ```
 
-De `MainComponent` neemt de JSON-weergave van het paginamodel op en verwerkt de inhoud om elk element van de pagina om te buigen of te versieren. Meer informatie over `Page` vindt u in het document [SPA Blauwdruk](blueprint.md).
+De `MainComponent` Voert de JSON-representatie van het paginamodel in en verwerkt de inhoud om elk element van de pagina om te buigen of te versieren. Meer informatie over de `Page` te vinden in het document [SPA](blueprint.md).
 
 ### image.component.ts {#image-component-ts}
 
-De `Page` bestaat uit componenten. Met JSON ingebed, kan `Page` die componenten zoals `image.component.ts` verwerken zoals hier getoond.
+De `Page` bestaat uit componenten. Met de JSON ingepakt, `Page` kan componenten zoals `image.component.ts` zoals u hier ziet.
 
 ```
 /// image.component.ts
@@ -239,11 +239,11 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-Het centrale idee van SPA in AEM is het idee om SPA componenten aan AEM componenten in kaart te brengen en de component bij te werken wanneer de inhoud wordt gewijzigd (en vice versa). Zie het document [SPA het Overzicht van de Redacteur](editor-overview.md) voor een samenvatting van dit communicatie model.
+Het centrale idee van SPA in AEM is het idee om SPA componenten aan AEM componenten in kaart te brengen en de component bij te werken wanneer de inhoud wordt gewijzigd (en vice versa). Zie het document [Overzicht SPA Editor](editor-overview.md) voor een samenvatting van dit communicatiemodel.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
-De methode `MapTo` wijst de SPA component aan de AEM toe. Het ondersteunt het gebruik van één tekenreeks of een array van tekenreeksen.
+De `MapTo` methode wijst de SPA component aan de AEM component toe. Het ondersteunt het gebruik van één tekenreeks of een array van tekenreeksen.
 
 `ImageEditConfig` is een configuratievoorwerp dat tot het toelaten van de auteursmogelijkheden van een component bijdraagt door de noodzakelijke meta-gegevens voor de redacteur te verstrekken om placeholders te produceren
 
@@ -266,14 +266,14 @@ Ten slotte kan de afbeelding worden gerenderd in `image.component.html`.
 
 Componenten in een toepassing van één pagina moeten regelmatig informatie uitwisselen. Er zijn verschillende aanbevolen manieren om dit te doen, die als volgt worden opgesomd in toenemende mate van complexiteit.
 
-* **Optie 1:** centraliseer de logica en uitzending aan de noodzakelijke componenten bijvoorbeeld door een util klasse als zuivere object-oriented oplossing te gebruiken.
-* **Optie 2:** Deel componentstatussen met een framebibliotheek, zoals NgRx.
+* **Optie 1:** Centraliseer de logica en uitzending aan de noodzakelijke componenten bijvoorbeeld door een util klasse als zuivere object-oriented oplossing te gebruiken.
+* **Optie 2:** De componentenstaten van het aandeel door een staatsbibliotheek zoals NgRx te gebruiken.
 * **Optie 3:** Gebruik de objecthiërarchie door de containercomponent aan te passen en uit te breiden.
 
 ## Volgende stappen {#next-steps}
 
-* [Aan de slag met SPA in AEM met ](getting-started-react.md) Reactshows hoe een basisSPA wordt gebouwd om met de SPA Redacteur in AEM te werken gebruikend Reageren.
-* [SPA de ](editor-overview.md) Overzichten van de Redacteur gaat dieper in het communicatie model tussen AEM en de SPA.
-* [WKND SPA ](wknd-tutorial.md) Projectis een geleidelijke zelfstudie die een eenvoudig SPA project in AEM implementeert.
-* [Het dynamische Model aan de Toewijzing van de Component voor ](model-to-component-mapping.md) SPAs verklaart het dynamische model aan componentenafbeelding en hoe het binnen SPA in AEM werkt.
-* [SPA ](blueprint.md) Blueprintoffers duiken diep in hoe SPA SDK voor AEM werkt voor het geval u SPA in AEM voor een kader buiten React of Angular wilt uitvoeren of eenvoudig een dieper begrip zou willen.
+* [Aan de slag met SPA in AEM met Reageren](getting-started-react.md) toont hoe een basis SPA wordt gebouwd om met de SPARedacteur in AEM te werken die Reageren gebruiken.
+* [Overzicht SPA Editor](editor-overview.md) gaat dieper in het communicatie model tussen AEM en de SPA.
+* [WKND SPA Project](wknd-tutorial.md) is een geleidelijke zelfstudie die een eenvoudig SPA project in AEM implementeert.
+* [Dynamisch model naar componenttoewijzing voor SPA](model-to-component-mapping.md) verklaart het dynamische model aan componentenafbeelding en hoe het binnen SPA in AEM werkt.
+* [SPA](blueprint.md) biedt een diepgaande duik in hoe de SPA SDK voor AEM werkt voor het geval u SPA in AEM voor een kader buiten React of Angular wilt uitvoeren of eenvoudig een dieper begrip zou willen.

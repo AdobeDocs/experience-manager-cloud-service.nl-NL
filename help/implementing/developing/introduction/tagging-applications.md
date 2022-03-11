@@ -26,15 +26,15 @@ Voor gerelateerde informatie over codering:
 
 ## Overzicht van de API voor tags {#overview-of-the-tagging-api}
 
-Met de implementatie van het [tagging framework](tagging-framework.md) in AEM kunt u tags en code-inhoud beheren met de JCR API. `TagManager` zorgt ervoor dat tags die zijn ingevoerd als waarden in de eigenschap  `cq:tags` string array niet worden gedupliceerd, verwijdert deze tags die verwijzen naar niet-bestaande tags en updates  `TagID`  `TagID`voor verplaatste of samengevoegde tags. `TagManager` gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De hoofdklassen bevinden zich in het [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) pakket:
+De uitvoering van de [coderingskader](tagging-framework.md) in AEM staat het beheer van tags en tag-inhoud met behulp van de JCR API toe. `TagManager` zorgt ervoor dat tags die zijn ingevoerd als waarden in het dialoogvenster `cq:tags` array-eigenschap string wordt niet gedupliceerd, maar verwijderd `TagID`verwijst naar niet-bestaande tags en updates `TagID`s voor verplaatste of samengevoegde markeringen. `TagManager` gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De hoofdklassen bevinden zich in de [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) pakket:
 
-* `JcrTagManagerFactory` - retourneert een JCR-gebaseerde implementatie van een  `TagManager`. Dit is de referentie-implementatie van de API voor labelen.
+* `JcrTagManagerFactory` - geeft een JCR-gebaseerde implementatie van een `TagManager`. Dit is de referentie-implementatie van de API voor labelen.
 * `TagManager` - Hiermee kunt u tags oplossen en maken op basis van paden en namen.
 * `Tag` - definieert het labelobject.
 
 ### Een op JCR gebaseerde tagbeheer ophalen {#getting-a-jcr-based-tagmanager}
 
-Om een `TagManager` instantie terug te winnen, moet u JCR `Session` hebben en `getTagManager(Session)` roepen:
+Om een `TagManager` -instantie, hebt u een JCR nodig `Session` en om `getTagManager(Session)`:
 
 ```java
 @Reference
@@ -43,7 +43,7 @@ JcrTagManagerFactory jcrTagManagerFactory;
 TagManager tagManager = jcrTagManagerFactory.getTagManager(session);
 ```
 
-In de typische het Verkopen context kunt u aan `TagManager` van `ResourceResolver` ook aanpassen:
+In de typische verkoopcontext kunt u zich ook aanpassen aan een `TagManager` van de `ResourceResolver`:
 
 ```java
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
@@ -51,7 +51,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Een tagobject ophalen {#retrieving-a-tag-object}
 
-Een `Tag` kan door `TagManager` worden teruggewonnen, of het oplossen van een bestaande markering of het creëren van nieuwe:
+A `Tag` kan worden opgehaald via de `TagManager`door een bestaande tag op te lossen of een nieuwe tag te maken:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -59,13 +59,13 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Voor de op JCR-Gebaseerde implementatie, die `Tags` op JCR `Nodes` in kaart brengt, kunt u het mechanisme van Sling direct gebruiken `adaptTo` als u het middel (b.v. zoals `/content/cq:tags/default/my/tag`) hebt:
+Voor de op JCR gebaseerde implementatie, die kaarten `Tags` op JCR `Nodes`, kunt u rechtstreeks gebruikmaken van de `adaptTo` mechanisme als u de bron hebt (bijvoorbeeld `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
 ```
 
-Hoewel een tag alleen *vanuit* een bron (geen knooppunt) mag worden omgezet, kan een tag *worden omgezet in* zowel een knooppunt als een bron:
+Een tag mag alleen worden omgezet *van* een bron (geen knooppunt), een tag kan worden omgezet *tot* zowel een knooppunt als een bron:
 
 ```java
 Node node = tag.adaptTo(Node.class);
@@ -74,7 +74,7 @@ Resource node = tag.adaptTo(Resource.class);
 
 >[!NOTE]
 >
->Directe aanpassing van `Node` aan `Tag` is niet mogelijk, omdat `Node` de methode Sling `Adaptable.adaptTo(Class)` niet implementeert.
+>Rechtstreeks aanpassen van `Node` tot `Tag` is niet mogelijk, omdat `Node` implementeert Sling niet `Adaptable.adaptTo(Class)` methode.
 
 ### Labels ophalen en instellen {#getting-and-setting-tags}
 
@@ -101,7 +101,7 @@ long count = tag.getCount();
 
 >[!NOTE]
 >
->De geldige `RangeIterator` is:
+>De geldige `RangeIterator` te gebruiken is:
 >
 >`com.day.cq.commons.RangeIterator`
 
@@ -113,7 +113,7 @@ tagManager.deleteTag(tag);
 
 ### Codes dupliceren {#replicating-tags}
 
-Het is mogelijk om de replicatieservice (`Replicator`) met markeringen te gebruiken omdat de markeringen van type `nt:hierarchyNode` zijn:
+Het is mogelijk om de replicatiedienst te gebruiken (`Replicator`) met tags omdat tags van het type zijn `nt:hierarchyNode`:
 
 ```java
 replicator.replicate(session, replicationActionType, tagPath);
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## De opschoonfunctie voor tags {#the-tag-garbage-collector}
 
-De opschoonfunctie voor tags is een service op de achtergrond die verborgen en ongebruikte tags opruimt. Verborgen en ongebruikte tags zijn tags onder `/content/cq:tags` die een eigenschap `cq:movedTo` hebben en niet worden gebruikt op een inhoudsknooppunt. Ze hebben een getal van nul. Door dit lazy schrappingsproces te gebruiken, moet de inhoudsknoop (d.w.z. het `cq:tags` bezit) niet als deel van de beweging of de fusieverrichting worden bijgewerkt. De verwijzingen in het `cq:tags` bezit worden automatisch bijgewerkt wanneer `cq:tags` bezit wordt bijgewerkt, bijvoorbeeld door de dialoog van de pagina eigenschappen.
+De opschoonfunctie voor tags is een service op de achtergrond die verborgen en ongebruikte tags opruimt. Verborgen en ongebruikte tags zijn onderliggende codes `/content/cq:tags` die een `cq:movedTo` en worden niet gebruikt op een inhoudsknooppunt. Ze hebben een getal van nul. Door dit lazy schrappingsproces te gebruiken, de inhoudsknoop (d.w.z. `cq:tags` eigenschap) hoeft niet te worden bijgewerkt als onderdeel van de verplaatsings- of samenvoegbewerking. De verwijzingen in de `cq:tags` eigenschap wordt automatisch bijgewerkt wanneer de `cq:tags` eigenschap wordt bijgewerkt, bijvoorbeeld via het dialoogvenster Pagina-eigenschappen.
 
 De opschoonfunctie voor tags wordt standaard eenmaal per dag uitgevoerd. Dit kan worden gevormd bij:
 
@@ -131,16 +131,16 @@ De opschoonfunctie voor tags wordt standaard eenmaal per dag uitgevoerd. Dit kan
 
 De zoekopdracht naar tags en het tagoverzicht werkt als volgt:
 
-* De zoekopdracht naar `TagID` zoekt naar de tags waarvan de eigenschap `cq:movedTo` is ingesteld op `TagID` en doorloopt de `cq:movedTo` `TagID`s.
-* De zoekopdracht naar tagtitel zoekt alleen de tags zonder de eigenschap `cq:movedTo`.
+* De zoekopdracht naar `TagID` zoekt naar de tags met de eigenschap `cq:movedTo` instellen op `TagID` en volgt de `cq:movedTo` `TagID`s.
+* De zoekopdracht naar de titel van een tag zoekt alleen naar de tags zonder een `cq:movedTo` eigenschap.
 
 ## Tags in verschillende talen {#tags-in-different-languages}
 
-Een tag `title` kan in verschillende talen worden gedefinieerd. Vervolgens wordt een taalgevoelige eigenschap toegevoegd aan het tagknooppunt. Deze eigenschap heeft de notatie `jcr:title.<locale>`, bijvoorbeeld `jcr:title.fr` voor de Franse vertaling. `<locale>` moet een ISO-tekenreeks voor kleine letters zijn en onderstrepingsteken (`_`) gebruiken in plaats van een koppelteken/streepje (`-`), bijvoorbeeld:  `de_ch`.
+Een tag `title` kunnen in verschillende talen worden gedefinieerd. Vervolgens wordt een taalgevoelige eigenschap toegevoegd aan het tagknooppunt. Deze eigenschap heeft de indeling `jcr:title.<locale>`, bijvoorbeeld `jcr:title.fr` voor de Franse vertaling. `<locale>` moet een ISO-tekenreeks voor kleine letters zijn en een onderstrepingsteken gebruiken (`_`) in plaats van koppelteken/streepje (`-`), bijvoorbeeld: `de_ch`.
 
-Wanneer bijvoorbeeld de tag **Animals** wordt toegevoegd aan de pagina **Products**, wordt de waarde `stockphotography:animals` toegevoegd aan de eigenschap `cq:tags` van het knooppunt `/content/wknd/en/products/jcr:content`. Er wordt naar de vertaling verwezen vanuit het tagknooppunt.
+Als u bijvoorbeeld **Dieren** -tag wordt toegevoegd aan de **Producten** pagina, de waarde `stockphotography:animals` wordt toegevoegd aan de eigenschap `cq:tags` van het knooppunt `/content/wknd/en/products/jcr:content`. Er wordt naar de vertaling verwezen vanuit het tagknooppunt.
 
-De server-side API heeft gelokaliseerde `title` verwante methodes:
+De server-side API heeft gelokaliseerd `title`-gerelateerde methoden:
 
 * [`com.day.cq.tagging.Tag`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
@@ -155,17 +155,17 @@ De server-side API heeft gelokaliseerde `title` verwante methodes:
 
 In AEM kan de taal worden opgehaald uit de paginataal of uit de taal van de gebruiker.
 
-Bij het labelen hangt de lokalisatie af van de context, aangezien tag `titles` kan worden weergegeven in de paginataal, in de gebruikerstaal of in een andere taal.
+Bij het labelen is lokalisatie afhankelijk van de context als tag `titles` kan worden weergegeven in de paginataal, in de taal van de gebruiker of in een andere taal.
 
 ### Een nieuwe taal toevoegen aan het dialoogvenster Tag bewerken {#adding-a-new-language-to-the-edit-tag-dialog}
 
-In de volgende procedure wordt beschreven hoe u een nieuwe taal (bijvoorbeeld Fins) kunt toevoegen aan het dialoogvenster **Tag Edit**:
+In de volgende procedure wordt beschreven hoe een nieuwe taal (bijvoorbeeld het Fins) aan de **Tag bewerken** dialoogvenster:
 
-1. Bewerk in **CRXDE** de eigenschap multi-value `languages` van het knooppunt `/content/cq:tags`.
-1. Voeg `fi_fi` toe, die de Finse landinstelling vertegenwoordigt, en sla de wijzigingen op.
+1. In **CRXDE**, bewerkt u de eigenschap voor meerdere waarden `languages` van het knooppunt `/content/cq:tags`.
+1. Toevoegen `fi_fi`, die staat voor de Finse landinstelling, en sla de wijzigingen op.
 
-Het Fins is nu beschikbaar in het tagdialoogvenster van de pagina-eigenschappen en in het dialoogvenster **Tag bewerken** wanneer u een tag bewerkt in de **Tags toevoegen**-console.
+Het Fins is nu beschikbaar in het tagdialoogvenster van de pagina-eigenschappen en in het dialoogvenster **Tag bewerken** wanneer u een tag bewerkt in het dialoogvenster **Tags** console.
 
 >[!NOTE]
 >
->De nieuwe taal moet een van de AEM erkende talen zijn, d.w.z. het moet beschikbaar zijn als een knooppunt onder `/libs/wcm/core/resources/languages`.
+>De nieuwe taal moet een van de AEM erkende talen zijn, d.w.z. het moet beschikbaar zijn als een hieronder knooppunt `/libs/wcm/core/resources/languages`.

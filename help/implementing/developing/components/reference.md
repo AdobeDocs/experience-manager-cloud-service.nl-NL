@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Referentiehandleiding voor componenten {#components-reference-guide}
 
-Componenten vormen de kern van het opbouwen van een ervaring in AEM. Met de [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) kunt u eenvoudig aan de slag met een gereedschapsset kant van kant-en-klare, robuuste componenten. In de [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md) wordt uitgelegd hoe u deze gereedschappen kunt gebruiken en hoe u aangepaste componenten kunt maken om een nieuwe AEM te maken.
+Componenten vormen de kern van het opbouwen van een ervaring in AEM. De [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) maak het eenvoudig om aan de slag te gaan met een gereedschapsset kant-en-klare, robuuste componenten. De [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md) neemt de ontwikkelaar door hoe te om deze hulpmiddelen te gebruiken en hoe te om douanecomponenten te bouwen om een nieuwe AEM plaats tot stand te brengen.
 
 >[!TIP]
 >
->Voordat verwijzingen naar dit document worden toegevoegd, moet u de [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md) hebben voltooid en zo vertrouwd zijn met [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+>Voordat u naar dit document verwijst, moet u controleren of u de opdracht [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md) en dus vertrouwd zijn met de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [AEM Projectarchetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
 Omdat de WKND-zelfstudie betrekking heeft op de meeste gevallen van gebruik, is dit document alleen bedoeld als aanvulling op deze bronnen. Het geeft diepgaande technische details over hoe de componenten in AEM gestructureerd en gevormd zijn en niet bedoeld als begonnen gids worden.
 
@@ -37,15 +37,15 @@ Voordat u begint met het configureren of coderen van uw component, moet u het vo
 
 ### Bestaande componenten opnieuw gebruiken {#reusing-components}
 
-Voordat u tijd investeert in het maken van een geheel nieuwe component, kunt u het aanpassen of uitbreiden van bestaande componenten overwegen. [De Core ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Component is een reeks flexibele, robuuste en goed geteste onderdelen die klaar zijn voor productie.
+Voordat u tijd investeert in het maken van een geheel nieuwe component, kunt u het aanpassen of uitbreiden van bestaande componenten overwegen. [De kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) bieden een reeks flexibele, robuuste en goed geteste onderdelen die klaar zijn voor productie.
 
 #### Basiscomponenten uitbreiden {#extending-core-components}
 
-De Componenten van de Kern bieden ook [duidelijke aanpassingspatronen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html) aan die u kunt gebruiken om hen aan de behoeften van uw eigen project aan te passen.
+De Core Components biedt ook [aanpassingspatronen wissen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html) die u kunt gebruiken om hen aan de behoeften van uw eigen project aan te passen.
 
 #### Onderdelen bedekken {#overlying-components}
 
-Componenten kunnen ook opnieuw worden gedefinieerd met een [overlay](/help/implementing/developing/introduction/overlays.md) op basis van de logica van het zoekpad. In dat geval wordt de [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) echter niet geactiveerd en moet `/apps` de volledige overlay definiëren.
+Componenten kunnen ook opnieuw worden gedefinieerd met een [bedekking](/help/implementing/developing/introduction/overlays.md) op basis van de logica van het zoekpad. In dat geval echter [Samenvoegen van verkoopbronnen](/help/implementing/developing/introduction/sling-resource-merger.md) wordt niet geactiveerd en `/apps` moet de volledige overlay definiëren.
 
 #### Componentdialoogvensters uitbreiden {#extending-component-dialogs}
 
@@ -55,17 +55,17 @@ Dit betekent dat u alleen de vereiste verschillen opnieuw hoeft te definiëren i
 
 ### Opmaak voor Content Logic en rendering  {#content-logic-and-rendering-markup}
 
-De component wordt weergegeven met [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Uw component moet de HTML definiëren die nodig is om de vereiste inhoud te nemen en deze vervolgens naar wens weer te geven, zowel in de auteur- als in de publicatieomgeving.
+Uw component wordt weergegeven met [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Uw component moet de HTML definiëren die nodig is om de vereiste inhoud te nemen en deze vervolgens naar wens weer te geven, zowel in de auteur- als in de publicatieomgeving.
 
 Het wordt aanbevolen de code die verantwoordelijk is voor opmaak en rendering, gescheiden te houden van de code die de logica regelt die wordt gebruikt om de inhoud van de component te selecteren.
 
-Deze filosofie wordt gesteund door [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html), een malplaatjetaal die opzettelijk beperkt is om ervoor te zorgen dat een echte programmeertaal wordt gebruikt om de onderliggende bedrijfslogica te bepalen. Dit mechanisme markeert de code die voor een bepaalde mening wordt geroepen en, indien vereist, staat specifieke logica voor verschillende meningen van de zelfde component toe.
+Deze filosofie wordt ondersteund door [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html), wordt een sjabloontaal die doelbewust beperkt is om een echte programmeertaal te garanderen, gebruikt om de onderliggende bedrijfslogica te definiëren. Dit mechanisme markeert de code die voor een bepaalde mening wordt geroepen en, indien vereist, staat specifieke logica voor verschillende meningen van de zelfde component toe.
 
 Deze (facultatieve) logica kan op verschillende manieren worden uitgevoerd en wordt aangehaald van HTML met specifieke bevelen:
 
-* Java gebruiken - [De HTML Java use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) laat een HTML- dossier toe om helpermethodes in een klasse van douaneJava tot stand te brengen. Hierdoor kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de inhoud van de component te implementeren.
-* JavaScript gebruiken - [De HTML JavaScript gebruik-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) laat een HTML- dossier toe om helpercode toegang te hebben die in JavaScript wordt geschreven. Hierdoor kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
-* Het gebruik van Client-Side Libraries - Moderne websites vertrouwen sterk op client-side verwerking door complexe JavaScript- en CSS-code. Zie het document [Client-Side Libraries gebruiken op AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) voor meer informatie.
+* Java gebruiken - [De HTML Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) Hiermee kan een HTML-bestand toegang krijgen tot hulplijnmethoden in een aangepaste Java-klasse. Hierdoor kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de inhoud van de component te implementeren.
+* JavaScript gebruiken - [De HTML JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) Hiermee krijgt een HTML-bestand toegang tot hulplijncode die in JavaScript is geschreven. Hierdoor kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
+* Het gebruik van Client-Side Libraries - Moderne websites vertrouwen sterk op client-side verwerking door complexe JavaScript- en CSS-code. Zie het document [Client-Side bibliotheken gebruiken op AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) voor meer informatie .
 
 ## Componentstructuur {#structure}
 
@@ -91,10 +91,10 @@ Dit is een abstractie die helpt ervoor te zorgen dat zelfs wanneer de blik en he
 De definitie van een component kan als volgt worden uitgesplitst:
 
 * AEM componenten zijn gebaseerd op [Sling.](https://sling.apache.org/documentation.html)
-* AEM componenten bevinden zich onder `/libs/core/wcm/components`.
+* AEM onderdelen bevinden zich onder `/libs/core/wcm/components`.
 * Projectspecifieke componenten/site bevinden zich onder `/apps/<myApp>/components`.
-* AEM standaardcomponenten worden gedefinieerd als `cq:Component` en hebben de belangrijkste elementen:
-   * jcr-eigenschappen - Een lijst met jcr-eigenschappen. Dit zijn variabele en sommige kunnen facultatief zijn hoewel de basisstructuur van een componentenknoop, zijn eigenschappen, en subnodes door de `cq:Component` definitie worden bepaald.
+* AEM standaardonderdelen worden gedefinieerd als `cq:Component` en hebben de belangrijkste elementen:
+   * jcr-eigenschappen - Een lijst met jcr-eigenschappen. Deze zijn veranderlijk en sommige kunnen facultatief zijn hoewel de basisstructuur van een componentenknoop, zijn eigenschappen, en subnodes door worden bepaald `cq:Component` definitie.
    * Bronnen - Deze definiëren statische elementen die door de component worden gebruikt.
    * Scripts - Deze worden gebruikt om het gedrag van de resulterende instantie van de component te implementeren.
 
@@ -103,13 +103,13 @@ De definitie van een component kan als volgt worden uitgesplitst:
 * **Basisknooppunt**:
    * `<mycomponent> (cq:Component)` - Hiërarchieknooppunt van component.
 * **Vitale eigenschappen**:
-   * `jcr:title` - titel van de component; wordt bijvoorbeeld gebruikt als label wanneer de component wordt vermeld in de  [Componentbrowser ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) en  [Componentconsole](/help/sites-cloud/authoring/features/components-console.md)
+   * `jcr:title` - titel van de component; wordt bijvoorbeeld als label gebruikt wanneer de component in het dialoogvenster [Browser voor componenten](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) en [Componentenconsole](/help/sites-cloud/authoring/features/components-console.md)
    * `jcr:description` - Beschrijving van het onderdeel; gebruikt als muis-over wenk in de Browser van Componenten en de Console van Componenten
-   * Zie de sectie [Component Icon](#component-icon) voor meer informatie
-* **Vitale onderliggende knooppunten**:
+   * Zie de sectie [Pictogram Component](#component-icon) voor meer informatie
+* **Vital Child Nodes**:
    * `cq:editConfig (cq:EditConfig)` - Definieert de bewerkingseigenschappen van de component en zorgt ervoor dat de component wordt weergegeven in de Componentbrowser
       * Als de component een dialoogvenster heeft, wordt dit automatisch weergegeven in de browser Components of Sidetrap, zelfs als cq:editConfig niet bestaat.
-   * `cq:childEditConfig (cq:EditConfig)` - Bepaalt de UI-aspecten van de auteur voor onderliggende componenten die hun eigen componenten niet definiëren  `cq:editConfig`.
+   * `cq:childEditConfig (cq:EditConfig)` - Bepaalt de UI-aspecten van de auteur van onderliggende componenten die hun eigen componenten niet definiëren `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
    * `cq:design_dialog (nt:unstructured)` - Ontwerpbewerking voor deze component
 
@@ -117,31 +117,31 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
 Het pictogram of de afkorting voor de component wordt gedefinieerd via JCR-eigenschappen van de component wanneer de component door de ontwikkelaar wordt gemaakt. Deze eigenschappen worden in de volgende volgorde geëvalueerd en de eerste geldige gevonden eigenschap wordt gebruikt.
 
-1. `cq:icon` - Tekenreekseigenschap die naar een standaardpictogram in de  [Coral UI-](https://opensource.adobe.com/coral-spectrum/examples/#icon) bibliotheek verwijst dat in de componentbrowser wordt weergegeven
+1. `cq:icon` - Tekenreekseigenschap die naar een standaardpictogram in het dialoogvenster [Coral UI-bibliotheek](https://opensource.adobe.com/coral-spectrum/examples/#icon) om in componentenbrowser te tonen
    * Gebruik de waarde van het kenmerk HTML van het pictogram Koraal.
 1. `abbreviation` - Tekenreekseigenschap om de afkorting van de componentnaam in de componentbrowser aan te passen
    * De afkorting moet worden beperkt tot twee tekens.
-   * Als u een lege tekenreeks opgeeft, wordt de afkorting opgebouwd van de eerste twee tekens van de eigenschap `jcr:title`.
+   * Als u een lege tekenreeks opgeeft, wordt de afkorting opgebouwd van de eerste twee tekens van het `jcr:title` eigenschap.
       * Bijvoorbeeld &quot;Im&quot; voor &quot;Image&quot;
       * De gelokaliseerde titel wordt gebruikt om de afkorting samen te stellen.
-   * De afkorting wordt alleen omgezet als de component een eigenschap `abbreviation_commentI18n` heeft, die vervolgens als vertaalhint wordt gebruikt.
-1. `cq:icon.png` of  `cq:icon.svg` - Pictogram voor deze component, die wordt weergegeven in de Componentbrowser
+   * De afkorting wordt alleen vertaald als de component een `abbreviation_commentI18n` eigenschap, die vervolgens wordt gebruikt als vertaalhint.
+1. `cq:icon.png` of `cq:icon.svg` - Pictogram voor deze component, die wordt weergegeven in de Componentbrowser
    * 20 x 20 pixels is de grootte van pictogrammen van standaardcomponenten.
       * Grotere pictogrammen worden verkleind (op de client).
    * De aanbevolen kleur is rgb(112, 112, 112) > #707070
    * De achtergrond van standaardcomponentpictogrammen is transparant.
-   * Alleen `.png`- en `.svg`-bestanden worden ondersteund.
-   * Als u bestanden importeert vanuit het bestandssysteem via de Eclipse-plug-in, moeten bestandsnamen bijvoorbeeld worden beschermd als `_cq_icon.png` of `_cq_icon.svg`.
-   * `.png` heeft voorrang op  `.svg` als beide aanwezig zijn.
+   * Alleen `.png` en `.svg` worden ondersteund.
+   * Als u bestanden importeert vanuit het bestandssysteem via de Eclipse-plug-in, moeten bestandsnamen worden beschermd als `_cq_icon.png` of `_cq_icon.svg` bijvoorbeeld.
+   * `.png` neemt precedent over `.svg` als beide aanwezig zijn.
 
-Als geen van de bovengenoemde eigenschappen (`cq:icon`, `abbreviation`, `cq:icon.png` of `cq:icon.svg`) op de component worden gevonden:
+Als geen van de bovenstaande eigenschappen (`cq:icon`, `abbreviation`, `cq:icon.png` of `cq:icon.svg`) vindt u op de component:
 
-* Het systeem zoekt naar dezelfde eigenschappen op de supercomponenten na de eigenschap `sling:resourceSuperType`.
-* Als er op het niveau van de supercomponent niets of een lege afkorting wordt gevonden, maakt het systeem de afkorting van de eerste letters van de eigenschap `jcr:title` van de huidige component.
+* Het systeem zoekt naar dezelfde eigenschappen op de supercomponenten na de instelling `sling:resourceSuperType` eigenschap.
+* Als er op het niveau van de supercomponent niets of een lege afkorting wordt gevonden, maakt het systeem de afkorting van de eerste letters van het dialoogvenster `jcr:title` eigenschap van de huidige component.
 
-Als u de overerving van pictogrammen van supercomponenten wilt annuleren, wordt het standaardgedrag hersteld wanneer u een lege eigenschap `abbreviation` voor de component instelt.
+Als u de overerving van pictogrammen van supercomponenten wilt annuleren, stelt u een lege `abbreviation` eigenschap op de component wordt teruggezet naar het standaardgedrag.
 
-De [Component Console](/help/sites-cloud/authoring/features/components-console.md#component-details) toont hoe het pictogram voor een bepaalde component wordt bepaald.
+De [Component Console](/help/sites-cloud/authoring/features/components-console.md#component-details) geeft weer hoe het pictogram voor een bepaalde component is gedefinieerd.
 
 #### Voorbeeld van SVG-pictogram {#svg-icon-example}
 
@@ -165,12 +165,12 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
 
 | Naam | Type | Beschrijving |
 |---|---|---|
-| `.` | `cq:Component` | Dit vertegenwoordigt de huidige component. Een component is van knooppunttype `cq:Component`. |
-| `componentGroup` | `String` | Dit vertegenwoordigt de groep waaronder de component in [Browser van Componenten kan worden geselecteerd.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Een waarde die begint met  `.` wordt gebruikt voor componenten die niet beschikbaar voor selectie van UI zoals basiscomponenten zijn waarvan andere componenten erven. |
+| `.` | `cq:Component` | Dit vertegenwoordigt de huidige component. Een component is van het knooppunttype `cq:Component`. |
+| `componentGroup` | `String` | Dit vertegenwoordigt de groep waaronder de component in kan worden geselecteerd [Componentbrowser.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Een waarde die begint met `.` wordt gebruikt voor componenten die niet beschikbaar voor selectie van UI zoals basiscomponenten zijn waarvan andere componenten erven. |
 | `cq:isContainer` | `Boolean` | Dit geeft aan of de component een containercomponent is en daarom andere componenten zoals een alineasysteem kan bevatten. |
 | `cq:dialog` | `nt:unstructured` | Dit is de definitie van het dialoogvenster Bewerken voor de component. |
 | `cq:design_dialog` | `nt:unstructured` | Dit is de definitie van het ontwerpdialoogvenster voor de component. |
-| `cq:editConfig` | `cq:EditConfig` | Dit bepaalt [geef configuratie van de component uit.](#edit-behavior) |
+| `cq:editConfig` | `cq:EditConfig` | Dit bepaalt [de configuratie van de component bewerken.](#edit-behavior) |
 | `cq:htmlTag` | `nt:unstructured` | Hiermee worden extra tagkenmerken geretourneerd die aan de omringende HTML-tag worden toegevoegd. Hiermee schakelt u het toevoegen van kenmerken aan de automatisch gegenereerde div-elementen in. |
 | `cq:noDecoration` | `Boolean` | Indien waar (true), wordt de component niet gerenderd met automatisch gegenereerde div- en css-klassen. |
 | `cq:template` | `nt:unstructured` | Indien gevonden, zal dit knooppunt als inhoudsmalplaatje worden gebruikt wanneer de component van Browser van Componenten wordt toegevoegd. |
@@ -179,9 +179,9 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
 | `jcr:title` | `String` | Dit is de titel van de component. |
 | `sling:resourceSuperType` | `String` | Wanneer deze is ingesteld, overerft de component deze component. |
 | `component.html` | `nt:file` | Dit is het HTML-scriptbestand van de component. |
-| `cq:icon` | `String` | Deze waarde verwijst naar het [pictogram van de component](#component-icon) en verschijnt in Browser van Componenten. |
+| `cq:icon` | `String` | Deze waarde wijst naar de [pictogram van de component](#component-icon) en wordt weergegeven in de Componentbrowser. |
 
-Als we naar de **component Text** kijken, kunnen we een aantal van deze elementen zien:
+Als we kijken naar de **Tekst** een aantal van deze elementen:
 
 ![Structuur van tekstcomponent](assets/components-text.png)
 
@@ -199,19 +199,19 @@ Onderliggende knooppunten die van bijzonder belang zijn, zijn onder meer:
 
 ### Dialoogvensters {#dialogs}
 
-Dialoogvensters zijn een belangrijk element van uw component omdat ze een interface bieden waarmee auteurs de component op een inhoudspagina kunnen configureren en invoer voor die component kunnen leveren. Zie [ontwerpdocumentatie](/help/sites-cloud/authoring/fundamentals/editing-content.md) voor meer informatie over hoe de auteurs van inhoud met componenten communiceren.
+Dialoogvensters zijn een belangrijk element van uw component omdat ze een interface bieden waarmee auteurs de component op een inhoudspagina kunnen configureren en invoer voor die component kunnen leveren. Zie de [ontwerpdocumentatie](/help/sites-cloud/authoring/fundamentals/editing-content.md) voor meer informatie over hoe de auteurs van de inhoud met componenten werken.
 
 Afhankelijk van de complexiteit van de component heeft uw dialoogvenster mogelijk een of meer tabbladen nodig.
 
 Dialoogvensters voor AEM componenten:
 
-* Dit zijn `cq:dialog` knooppunten van het type `nt:unstructured`.
-* Deze knooppunten bevinden zich onder hun `cq:Component` knooppunten en naast hun componentdefinities.
+* zijn `cq:dialog` knooppunten van het type `nt:unstructured`.
+* bevinden zich onder hun `cq:Component` knooppunten en naast hun componentdefinities.
 * Definieer het dialoogvenster voor het bewerken van de inhoud van deze component.
 * Wordt gedefinieerd met graniet UI-componenten.
-* Gerenderde server-kant (als het Verdelen componenten), die op hun inhoudsstructuur en `sling:resourceType` bezit wordt gebaseerd.
+* worden serverzijde (als het Verdelen componenten) teruggegeven, die op hun inhoudsstructuur en `sling:resourceType` eigenschap.
 * Bevat een nodestructuur die de gebieden binnen de dialoog beschrijft
-   * Deze knooppunten hebben `nt:unstructured` de vereiste `sling:resourceType` eigenschap.
+   * Deze knooppunten zijn `nt:unstructured` met de vereiste `sling:resourceType` eigenschap.
 
 ![Dialoogdefinitie van titelcomponent](assets/components-title-dialog.png)
 
@@ -223,14 +223,14 @@ In het dialoogvenster worden afzonderlijke velden gedefinieerd:
 
 De dialoogvensters van het ontwerp zijn gelijkaardig aan de dialogen die worden gebruikt om inhoud uit te geven en te vormen, maar zij verstrekken de interface voor malplaatjeauteurs om ontwerpdetails voor die component op een paginasjabloon pro-vormen en te verstrekken. Paginasjablonen worden vervolgens door de auteurs van de inhoud gebruikt om inhoudspagina&#39;s te maken. Zie de [sjabloondocumentatie](/help/sites-cloud/authoring/features/templates.md) voor meer informatie over hoe sjablonen worden gemaakt.
 
-[De dialoogvensters van het ontwerp worden gebruikt wanneer het uitgeven van een paginamalplaatje](/help/sites-cloud/authoring/features/templates.md), hoewel zij niet voor alle componenten nodig zijn. De **Title** en **Image Components** hebben bijvoorbeeld allebei ontwerpdialoogvensters, terwijl **Social Media Sharing Component** dat niet doet.
+[Ontwerpdialoogvensters worden gebruikt bij het bewerken van een paginasjabloon](/help/sites-cloud/authoring/features/templates.md), hoewel ze niet voor alle componenten nodig zijn. Bijvoorbeeld de **Titel** en **Afbeeldingscomponenten** beide hebben ontwerpdialoogvensters, terwijl de **Component voor delen van sociale media** niet.
 
 ### Gebruikersinterface voor koralen en graniet {#coral-and-granite}
 
 De interface van koralen en de interface van Granite bepalen het uiterlijk van AEM.
 
-* [Koraal ](https://opensource.adobe.com/coral-spectrum/documentation/) UIverstrekt een verenigbare UI over alle wolkenoplossingen.
-* [Granite ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) UIttert de prijsverhoging van de Koraal UI die in het Verkopen componenten voor de bouw van consoles UI en dialogen wordt verpakt.
+* [Koraalinterface](https://opensource.adobe.com/coral-spectrum/documentation/) biedt een consistente gebruikersinterface voor alle cloudoplossingen.
+* [Graniet-interface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) verstrekt de prijsverhoging van de Koraal UI die in het Verdelen componenten voor de bouw van consoles UI en dialogen wordt verpakt.
 
 De graniet-interface biedt een groot aantal basiswidgets die nodig zijn om uw dialoogvenster in de ontwerpomgeving te maken. Indien nodig kunt u deze selectie uitbreiden en uw eigen widget maken.
 
@@ -250,17 +250,17 @@ Content not found
 
 Als u een nieuwe widget wilt maken voor gebruik in een componentdialoogvenster, moet u een nieuwe granite UI-veldcomponent maken.
 
-Als u het dialoogvenster beschouwt als een eenvoudige container voor een formulierelement, kunt u ook de primaire inhoud van het dialoogvenster zien als formuliervelden. Voor het maken van een nieuw formulierveld moet u een brontype maken; dit is hetzelfde als het maken van een nieuwe component. Om u in die taak te helpen, biedt granite UI een generische gebiedscomponent aan om van (het gebruiken van `sling:resourceSuperType`) te erven:
+Als u het dialoogvenster beschouwt als een eenvoudige container voor een formulierelement, kunt u ook de primaire inhoud van het dialoogvenster zien als formuliervelden. Voor het maken van een nieuw formulierveld moet u een brontype maken; dit is hetzelfde als het maken van een nieuwe component. Om u in die taak te helpen, biedt granite UI een generische gebiedscomponent aan om van (het gebruiken van `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-Meer specifiek verstrekt granite UI een waaier van gebiedscomponenten die voor gebruik in dialogen geschikt zijn, of meer in het algemeen sprekend in [vormen.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+Meer specifiek verstrekt granite UI een waaier van gebiedscomponenten die voor gebruik in dialogen geschikt zijn, of meer in het algemeen sprekend binnen [formulieren.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
 
-Zodra u uw middeltype hebt gecreeerd, kunt u uw gebied concretiseren door een nieuw knooppunt in uw dialoog toe te voegen, met het bezit `sling:resourceType` die naar het middeltype verwijzen u net hebt geïntroduceerd.
+Zodra u uw middeltype hebt gecreeerd, kunt u uw gebied concretiseren door een nieuw knooppunt in uw dialoog, met het bezit toe te voegen `sling:resourceType` verwijzen naar het middeltype u net hebt geïntroduceerd.
 
 #### Toegang tot dialoogvelden {#access-to-dialog-fields}
 
-U kunt rendervoorwaarden (`rendercondition`) ook gebruiken om te controleren wie toegang tot specifieke lusjes/gebieden in uw dialoog heeft; bijvoorbeeld:
+U kunt ook rendervoorwaarden gebruiken (`rendercondition`) om te bepalen wie toegang heeft tot specifieke tabbladen/velden in uw dialoogvenster; bijvoorbeeld:
 
 ```text
 + mybutton
@@ -282,7 +282,7 @@ Zie de [sjabloondocumentatie](/help/sites-cloud/authoring/features/templates.md)
 
 ### Componenten en de inhoud die ze maken {#components-and-the-content-they-create}
 
-Als we een instantie van de component **Title** op de pagina maken en configureren: `/content/wknd/language-masters/en/adventures/extreme-ironing.html`
+Als we een instantie van de **Titel** component op de pagina: `/content/wknd/language-masters/en/adventures/extreme-ironing.html`
 
 ![Het dialoogvenster Titel bewerken](assets/components-title-dialog.png)
 
@@ -290,30 +290,30 @@ Dan kunnen wij de structuur zien van de inhoud die binnen de bewaarplaats wordt 
 
 ![Structuur van knooppunt van component Title](assets/components-title-content-nodes.png)
 
-Met name als u de werkelijke tekst van een **Titel-component** bekijkt:
+Als u met name kijkt naar de feitelijke tekst van een **Component Title**:
 
-* De inhoud bevat een eigenschap `jcr:title` met de werkelijke tekst van de titel die de auteur heeft ingevoerd.
-* Het bevat ook een `sling:resourceType` verwijzing naar de componentendefinitie.
+* De inhoud bevat een `jcr:title` eigenschap met de werkelijke tekst van de titel die de auteur heeft ingevoerd.
+* Het bevat ook een `sling:resourceType` verwijzing naar de componentdefinitie.
 
 De gedefinieerde eigenschappen zijn afhankelijk van de afzonderlijke definities. Hoewel ze complexer kunnen zijn dan boven ze liggen, volgen ze nog steeds dezelfde basisbeginselen.
 
 ## Componenthiërarchie en Overerving {#component-hierarchy-and-inheritance}
 
-Componenten binnen AEM zijn onderworpen aan de **Resource Type Hierarchy**. Dit wordt gebruikt om componenten uit te breiden gebruikend het bezit `sling:resourceSuperType`. Hierdoor kan de component overerven van een andere component.
+Componenten binnen AEM zijn onderworpen aan de **Hiërarchie van brontype**. Dit wordt gebruikt om componenten uit te breiden gebruikend het bezit `sling:resourceSuperType`. Hierdoor kan de component overerven van een andere component.
 
-Zie de sectie [Componenten opnieuw gebruiken](#reusing-components) voor meer informatie.
+Zie de sectie [Componenten opnieuw gebruiken](#reusing-components) voor meer informatie .
 
 ## Gedrag bewerken {#edit-behavior}
 
 In deze sectie wordt uitgelegd hoe u het bewerkingsgedrag van een component kunt configureren. Dit omvat kenmerken zoals acties beschikbaar voor de component, kenmerken van de in.place redacteur, en de luisteraars met betrekking tot gebeurtenissen op de component.
 
-Het bewerkingsgedrag van een component wordt gevormd door een `cq:editConfig` knoop van type `cq:EditConfig` onder de componentenknoop (van type `cq:Component`) toe te voegen en door specifieke eigenschappen en kindknopen toe te voegen. De volgende eigenschappen en onderliggende knooppunten zijn beschikbaar:
+Het bewerkingsgedrag van een component wordt geconfigureerd door een `cq:editConfig` knooppunt van type `cq:EditConfig` onder het componentknooppunt (van het type `cq:Component`) en door specifieke eigenschappen en onderliggende knooppunten toe te voegen. De volgende eigenschappen en onderliggende knooppunten zijn beschikbaar:
 
 * `cq:editConfig` knoopeigenschappen
 * [`cq:editConfig` onderliggende knooppunten](#configuring-with-cq-editconfig-child-nodes):
-   * `cq:dropTargets` (knooppunttype  `nt:unstructured`): definieert een lijst met neerzetdoelen die een neerzetbestemming kunnen accepteren vanuit een element van de inhoudzoeker (één neerzetdoel is toegestaan)
-   * `cq:inplaceEditing` (knooppunttype  `cq:InplaceEditingConfig`): definieert een op locatie bewerkingsconfiguratie voor de component
-   * `cq:listeners` (knooppunttype  `cq:EditListenersConfig`): definieert wat er gebeurt voordat of nadat een handeling op de component plaatsvindt
+   * `cq:dropTargets` (knooppunttype) `nt:unstructured`): definieert een lijst met neerzetdoelen die een neerzetbestemming kunnen accepteren vanuit een element van de inhoudzoeker (één neerzetdoel is toegestaan)
+   * `cq:inplaceEditing` (knooppunttype) `cq:InplaceEditingConfig`): definieert een op locatie bewerkingsconfiguratie voor de component
+   * `cq:listeners` (knooppunttype) `cq:EditListenersConfig`): definieert wat er gebeurt voordat of nadat een handeling op de component plaatsvindt
 
 Er zijn vele bestaande configuraties in AEM. U kunt gemakkelijk naar specifieke eigenschappen of kindknopen zoeken gebruikend het hulpmiddel van de Vraag in **CRXDE Lite**.
 
@@ -321,7 +321,7 @@ Er zijn vele bestaande configuraties in AEM. U kunt gemakkelijk naar specifieke 
 
 Componenten moeten altijd HTML renderen die zichtbaar is voor de auteur, zelfs als de component geen inhoud heeft. Anders zou het van de interface van de redacteur visueel kunnen verdwijnen, die het technisch aanwezig maar onzichtbaar maken op de pagina en in de redacteur. In een dergelijk geval zullen de auteurs de lege component niet kunnen selecteren en ermee werken.
 
-Om deze reden, zouden de componenten placeholder moeten teruggeven zolang zij geen zichtbare output teruggeven wanneer de pagina in de paginaredacteur wordt teruggegeven (wanneer de wijze WCM `edit` of `preview` is).
+Om deze reden, zouden de componenten placeholder moeten teruggeven zolang zij geen zichtbare output teruggeven wanneer de pagina in de paginaredacteur wordt teruggegeven (wanneer de wijze WCM is `edit` of `preview`).
 De gebruikelijke HTML-markering voor een tijdelijke aanduiding is:
 
 ```HTML
@@ -335,9 +335,9 @@ Het standaard HTML-script dat de bovenstaande tijdelijke aanduiding HTML rendert
      data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
 ```
 
-In het vorige voorbeeld is `isEmpty` een variabele die alleen waar is wanneer de component geen inhoud heeft en onzichtbaar is voor de auteur.
+In het vorige voorbeeld: `isEmpty` is een variabele die alleen waar is wanneer de component geen inhoud heeft en onzichtbaar is voor de auteur.
 
-Om herhaling te voorkomen, raadt Adobe aan dat implementatoren van componenten een HTML-sjabloon gebruiken voor deze plaatsaanduidingen, [zoals het sjabloon dat wordt verschaft door de Core Components.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Om herhaling te voorkomen, raadt Adobe aan dat implementatoren van componenten een HTML-sjabloon gebruiken voor deze plaatsaanduidingen, [zoals die van de Componenten van de Kern wordt verstrekt.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
 
 Het gebruik van het malplaatje in de vorige verbinding wordt dan gedaan met de volgende lijn van HTML:
 
@@ -346,33 +346,33 @@ Het gebruik van het malplaatje in de vorige verbinding wordt dan gedaan met de v
      data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
 ```
 
-In het vorige voorbeeld is `model.text` de variabele die alleen waar is wanneer de inhoud inhoud bevat en zichtbaar is.
+In het vorige voorbeeld: `model.text` is de variabele die alleen waar is wanneer de inhoud inhoud inhoud bevat en zichtbaar is.
 
-Een voorbeeldgebruik van dit malplaatje kan in de Componenten van de Kern, [zoals in de Component van de Titel worden gezien.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+Een voorbeeld van het gebruik van dit malplaatje kan in de Componenten van de Kern worden gezien, [zoals in de component Title.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### Configureren met cq:Onderliggende knooppunten EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
 #### Elementen in een dialoogvenster neerzetten - cq:dropTargets {#cq-droptargets}
 
-De `cq:dropTargets` knoop (knooptype `nt:unstructured`) bepaalt het dalingsdoel dat een daling van een element kan goedkeuren dat van de inhoudzoeker wordt gesleept. Het is een knooppunt van het type `cq:DropTargetConfig`.
+De `cq:dropTargets` node (type node) `nt:unstructured`) definieert het doel voor neerzetten dat een neerzetbewerking kan accepteren vanuit een element dat vanuit de zoekfunctie voor inhoud wordt gesleept. Het is een knooppunt van het type `cq:DropTargetConfig`.
 
-Het onderliggende knooppunt van het type `cq:DropTargetConfig` definieert een neerzetdoel in de component.
+De onderliggende node van type `cq:DropTargetConfig` Hiermee definieert u een neerzetdoel in de component.
 
 ### Op plaats bewerken - cq:inplaceEditing {#cq-inplaceediting}
 
-Met een interne editor kan de gebruiker inhoud rechtstreeks in de inhoudsstroom bewerken, zonder dat een dialoogvenster hoeft te worden geopend. Bijvoorbeeld, hebben de standaard **Tekst** en **Titel** componenten allebei een inp-kant redacteur.
+Met een interne editor kan de gebruiker inhoud rechtstreeks in de inhoudsstroom bewerken, zonder dat een dialoogvenster hoeft te worden geopend. De standaard **Tekst** en **Titel** de componenten hebben allebei een inp-kant redacteur.
 
 Een interne editor is niet nodig/zinvol voor elk componenttype.
 
-De `cq:inplaceEditing` knoop (knooptype `cq:InplaceEditingConfig`) bepaalt een op zijn plaats het uitgeven configuratie voor de component. Deze kan de volgende eigenschappen hebben:
+De `cq:inplaceEditing` node (type node) `cq:InplaceEditingConfig`) definieert een configuratie voor bewerken op locatie voor de component. Deze kan de volgende eigenschappen hebben:
 
 | Eigenschapnaam | Type eigenschap | Waarde van eigenschap |
 |---|---|---|
 | `active` | `Boolean` | `true` om op plaats het uitgeven van de component toe te laten. |
 | `configPath` | `String` | Pad van de editorconfiguratie, die door een configuratieknooppunt kan worden gespecificeerd |
-| `editorType` | `String` | De beschikbare typen zijn: `plaintext` voor niet-HTML-inhoud converteert `title` grafische titels naar een gewone tekst voordat het bewerken begint en `text` gebruikt de Rich Text Editor |
+| `editorType` | `String` | De beschikbare typen zijn: `plaintext` voor niet-HTML-inhoud, `title` zet grafische titels om in een gewone tekst voordat het bewerken begint, en `text` gebruikt de Rich Text Editor |
 
-In de volgende configuratie wordt het bewerken van de invoegpositie ingeschakeld en wordt `plaintext` gedefinieerd als het editortype:
+De volgende configuratie laat het inp-plaats uitgeven van de component toe en bepaalt `plaintext` als het editortype:
 
 ```text
     <cq:inplaceEditing
@@ -383,16 +383,16 @@ In de volgende configuratie wordt het bewerken van de invoegpositie ingeschakeld
 
 ### Veldgebeurtenissen verwerken - cq:listeners {#cq-listeners}
 
-De methode voor het verwerken van gebeurtenissen in dialoogvelden wordt uitgevoerd met listeners in een aangepaste [clientbibliotheek.](/help/implementing/developing/introduction/clientlibs.md)
+De methode voor het afhandelen van gebeurtenissen in dialoogvelden wordt uitgevoerd met listeners in een aangepaste [clientbibliotheek.](/help/implementing/developing/introduction/clientlibs.md)
 
 Om logica in uw gebied te injecteren, zou u moeten:
 
 * Laat uw veld gemarkeerd zijn met een bepaalde CSS-klasse (de haak).
-* Definieer in uw clientbibliotheek een JS-listener die is gekoppeld aan die CSS-klassenaam (dit zorgt ervoor dat uw aangepaste logica alleen binnen het bereik van uw veld valt en niet van invloed is op andere velden van hetzelfde type).
+* Definieer in uw clientbibliotheek een JS-listener die is gekoppeld aan de naam van die CSS-klasse (zo weet u zeker dat uw aangepaste logica alleen binnen het bereik van uw veld valt en niet van invloed is op andere velden van hetzelfde type).
 
-Hiervoor moet u weten welke onderliggende widgetbibliotheek u wilt gebruiken. [Zie de ](https://opensource.adobe.com/coral-spectrum/documentation/) documentatie van de Koral UI om te identificeren aan welke gebeurtenis u wilt reageren.
+Hiervoor moet u weten welke onderliggende widgetbibliotheek u wilt gebruiken. [Zie de documentatie van de Koral UI](https://opensource.adobe.com/coral-spectrum/documentation/) om aan te geven op welke gebeurtenis u wilt reageren.
 
-De `cq:listeners` knoop (knooptype `cq:EditListenersConfig`) bepaalt wat vóór of na een actie op de component gebeurt. In de volgende tabel worden de mogelijke eigenschappen gedefinieerd.
+De `cq:listeners` node (type node) `cq:EditListenersConfig`) definieert wat er voor of na een handeling op de component gebeurt. In de volgende tabel worden de mogelijke eigenschappen gedefinieerd.
 
 | Eigenschapnaam | Waarde van eigenschap |
 |---|---|
@@ -411,17 +411,17 @@ De `cq:listeners` knoop (knooptype `cq:EditListenersConfig`) bepaalt wat vóór 
 
 >[!NOTE]
 >
->In het geval van geneste componenten gelden bepaalde beperkingen voor handelingen die zijn gedefinieerd als eigenschappen op het knooppunt `cq:listeners`. Voor geneste componenten zijn de waarden van de volgende eigenschappen **must** `REFRESH_PAGE`:
+>In het geval van geneste componenten gelden er bepaalde beperkingen voor handelingen die als eigenschappen voor de `cq:listeners` knooppunt. Voor geneste componenten worden de waarden van de volgende eigenschappen **moet** zijn `REFRESH_PAGE`:
 >
 >* `aftermove`
 >* `aftercopy`
 
 
-De gebeurtenishandler kan worden geïmplementeerd met een aangepaste implementatie. Bijvoorbeeld (waarbij `project.customerAction` een statische methode is):
+De gebeurtenishandler kan worden geïmplementeerd met een aangepaste implementatie. Bijvoorbeeld: `project.customerAction` is een statische methode):
 
 `afteredit = "project.customerAction"`
 
-Het volgende voorbeeld is gelijkwaardig aan de `REFRESH_INSERTED` configuratie:
+Het volgende voorbeeld is gelijk aan het `REFRESH_INSERTED` configuratie:
 
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
@@ -438,11 +438,11 @@ Met de volgende configuratie wordt de pagina vernieuwd nadat de component is ver
 
 ### Veldvalidatie {#field-validation}
 
-Veldvalidatie in de graniet-gebruikersinterface en de graniet-UI-widgets wordt uitgevoerd met de API `foundation-validation`. Raadpleeg de [`foundation-valdiation` documentatie van graniet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html) voor meer informatie.
+Veldvalidatie in de graniet-gebruikersinterface en de graniet-UI-widgets wordt uitgevoerd met de `foundation-validation` API. Zie de [`foundation-valdiation` documentatie van graniet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html) voor meer informatie.
 
 ### Beschikbaarheid van dialoogvenster vaststellen {#dialog-ready}
 
-Als u een aangepast JavaScript hebt dat alleen moet worden uitgevoerd wanneer het dialoogvenster beschikbaar en gereed is, moet u luisteren naar de gebeurtenis `dialog-ready`.
+Als u een aangepaste JavaScript hebt die alleen moet worden uitgevoerd wanneer het dialoogvenster beschikbaar en gereed is, moet u luisteren naar de `dialog-ready` gebeurtenis.
 
 Deze gebeurtenis wordt geactiveerd wanneer het dialoogvenster wordt geladen (of opnieuw wordt geladen) en klaar voor gebruik is. Dit houdt in dat telkens wanneer er een wijziging (maken/bijwerken) plaatsvindt in de DOM van het dialoogvenster.
 
@@ -450,7 +450,7 @@ Deze gebeurtenis wordt geactiveerd wanneer het dialoogvenster wordt geladen (of 
 
 ## Werking voorvertoning {#preview-behavior}
 
-Het [WCM Modus](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) koekje wordt geplaatst wanneer het schakelen aan de wijze van de Voorproef zelfs wanneer de pagina niet wordt verfrist.
+De [WCM-modus](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie wordt ingesteld wanneer wordt overgeschakeld naar de modus Voorbeeld, zelfs wanneer de pagina niet wordt vernieuwd.
 
 Voor componenten met een teruggeven die voor de Wijze van WCM gevoelig zijn, moeten zij worden bepaald om zich specifiek te verfrissen, dan zich op de waarde van het koekje baseren.
 
@@ -466,11 +466,11 @@ Als ontwikkelaar wilt u eenvoudige toegang tot componentendocumentatie zodat u d
 
 Daarom is het vrij gemakkelijk om het even welke bestaande documentatiemarkering te maken u binnen de component zelf beschikbaar hebt.
 
-U hoeft alleen een `README.md`-bestand in de componentstructuur te plaatsen.
+U hoeft alleen maar een `README.md` in de componentstructuur.
 
 ![README.md in componentenstructuur](assets/components-documentation.png)
 
-Deze markering wordt dan weergegeven in de [Component Console.](/help/sites-cloud/authoring/features/components-console.md)
+Deze markering wordt dan weergegeven in het dialoogvenster [Component Console.](/help/sites-cloud/authoring/features/components-console.md)
 
 ![README.md zichtbaar in de Componentenconsole](assets/components-documentation-console.png)
 

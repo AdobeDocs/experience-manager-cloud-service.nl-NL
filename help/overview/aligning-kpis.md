@@ -32,7 +32,7 @@ In een digitale wereld kun je bijna alles meten. Het kiezen van drie KPIs voor u
 
 1. **Voor elk doel, identificeer prestatiesindicatoren.** Als uw doel bijvoorbeeld is de juridische kosten voor DRM-overtredingen met $100.000 te verlagen, is het mogelijk dat een goede prestatie-indicator wordt gebruikt: &quot;100% van de verlopen elementen worden verwijderd uit digitale eigenschappen op of vóór de vervaldatum.&quot; Probeer om met veelvoudige indicatoren voor elk doel te komen. Als u met 2-3 bedrijfsdoelstellingen en 3-5 doelstellingen bent begonnen, zou u een lijst van 15-20 prestatiesindicatoren kunnen hebben.
 
-1. **Kies de 3 indicatoren die het belangrijkst voor uw zaken zijn.** Dit zijn je PI&#39;s. Zij zouden zich met 3 bedrijfsdoelstellingen kunnen richten — elk die door een verschillende manager op C-niveau worden gesteund — of alle 3 KPIs zouden het zelfde doel kunnen steunen, als iedereen het eens is het belangrijkste.
+1. **Kies de 3 indicatoren die het belangrijkst voor uw zaken zijn.** Dit zijn je PI&#39;s. Zij zouden zich aan 3 bedrijfsdoelstellingen kunnen richten — elk die door een verschillende manager op C-niveau worden gesteund — of alle 3 KPIs zouden het zelfde doel kunnen steunen, als iedereen het eens is het belangrijkste.
 
 1. **Maak een meetbare methode voor elke PKI.** Als u uw KPI&#39;s hebt gekozen, downloadt u onze sjabloon voor de KPI-methodologie, die u door de rest van het proces zal begeleiden.
 

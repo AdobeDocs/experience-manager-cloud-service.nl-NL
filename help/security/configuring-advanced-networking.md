@@ -1,13 +1,13 @@
 ---
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
-source-git-commit: 4079e44d4fdce49b1c60caf178583a8800e17c0e
+exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2982'
 ht-degree: 0%
 
 ---
-
 
 # Geavanceerde netwerken configureren voor AEM as a Cloud Service {#configuring-advanced-networking}
 

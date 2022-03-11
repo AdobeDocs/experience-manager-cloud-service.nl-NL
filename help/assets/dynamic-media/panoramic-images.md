@@ -1,13 +1,13 @@
 ---
 title: Panoramische afbeeldingen
 description: Leer hoe u in Dynamic Media met panoramische afbeeldingen werkt.
-feature: Panoramische afbeeldingen
+feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 16%
+source-wordcount: '147'
+ht-degree: 15%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 In deze sectie wordt beschreven hoe u met de Panorama-viewer werkt om bolvormige panoramische afbeeldingen te renderen voor een indrukwekkende kijkervaring van 360 graden van een kamer, eigenschap, locatie of landschap.
 
-Zie ook [Voorinstellingen voor viewers beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
+Zie ook [Viewervoorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramisch beeld2](assets/panoramic-image2.png)
 
@@ -27,11 +27,11 @@ Als u een geüpload element wilt kwalificeren als een bolvormige panorama-afbeel
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Gelabeld met de trefwoorden `equirectangular` of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Codes gebruiken](/help/sites-cloud/authoring/features/tags.md).
+* Gecodeerd met de trefwoorden `equirectangular`, of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md).
 
 Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van toepassing op panoramische assets voor de pagina met assetdetails en de `Panoramic Media` WCM-component.
 
-Zie [Elementen uploaden](/help/assets/manage-digital-assets.md#uploading-assets) als u elementen wilt uploaden voor gebruik met de Panoramische Image-viewer.
+Als u elementen wilt uploaden voor gebruik met de Panorama-viewer, raadpleegt u [Elementen uploaden](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 

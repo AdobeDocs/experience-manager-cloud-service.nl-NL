@@ -1,6 +1,6 @@
 ---
 title: Vorm RTE om toegankelijke Web-pagina's en plaatsen tot stand te brengen.
-description: Leer om de Rich Text Editor te vormen om toegankelijke plaatsen in  [!DNL Adobe Experience Manager] tot stand te brengen.
+description: Leer Rich Text Editor te configureren om toegankelijke sites te maken in [!DNL Adobe Experience Manager].
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
@@ -14,26 +14,26 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager] biedt ondersteuning voor standaardtoegankelijkheidsfuncties, zoals alternatieve tekst voor afbeeldingen, en extra functies die kunnen worden gebruikt bij het maken van inhoud. Inhoudsauteurs gebruiken deze functies met componenten die de RTE (RTE) gebruiken. Tot de functies behoren het toevoegen van alternatieve tekst, structuurinformatie via koppen en alinea-elementen, enzovoort.
 
-Voor inzicht in typische configuraties van RTE, zie [vorm RTE](rich-text-editor.md) en [vorm stop-ins RTE voor specifieke functionaliteit](configure-rich-text-editor-plug-ins.md).
+Voor een begrip van typische configuraties van RTE, zie [RTE configureren](rich-text-editor.md) en [vormen stop-ins RTE voor specifieke functionaliteit](configure-rich-text-editor-plug-ins.md).
 
-Gebruik de configuratie van stop-ins van RTE om de op toegankelijkheid betrekking hebbende eigenschappen te vormen en aan te passen. Gebruik bijvoorbeeld `paraformat` om semantische elementen op blokniveau toe te voegen, waaronder het uitbreiden van het aantal kopniveaus dat wordt ondersteund buiten de standaard `H1`, `H2` en `H3` die worden geleverd. Het bewerken van tekst met opmaak is mogelijk met behulp van vele componenten uit de ontwerpgebruikersinterface. De algemeen gebruikte componenten zijn tekst, beeld, download, etc.
+Gebruik de configuratie van stop-ins van RTE om de op toegankelijkheid betrekking hebbende eigenschappen te vormen en aan te passen. Gebruik bijvoorbeeld `paraformat` om extra semantische elementen op blokniveau toe te voegen, met inbegrip van het uitbreiden van het aantal kopniveaus die buiten het basisniveau worden gesteund `H1`, `H2` en `H3` standaard opgegeven. Het bewerken van tekst met opmaak is mogelijk met behulp van vele componenten uit de ontwerpgebruikersinterface. De algemeen gebruikte componenten zijn tekst, beeld, download, etc.
 
-De functionaliteit van RTE kan in vele componenten ter beschikking worden gesteld. De primaire component is de `Text` component.
+De functionaliteit van RTE kan in vele componenten ter beschikking worden gesteld. De primaire component is `Text` component.
 
-Voor de `Text` component in [!DNL Experience Manager], toont het volgende het schermschot de rijke tekstredacteur met een toegelaten waaier van stop-ins, met inbegrip van `paraformat`:
+Voor de `Text` component in [!DNL Experience Manager]In de volgende schermafbeelding wordt de RTF-editor weergegeven met een reeks ingeschakelde plug-ins, waaronder `paraformat`:
 
 ![RTE-tekstcomponent in de modus Volledig scherm](assets/rte-toolbar-full-screen-mode.png)
 
 ## De functies voor insteekmodules configureren {#configuring-the-plugin-features}
 
-Voor instructies om RTE te vormen, zie [vorm de Rich Text Editor](rich-text-editor.md) pagina. Het artikel heeft betrekking op:
+Voor instructies om RTE te vormen, zie [vormen de Rich Text Editor](rich-text-editor.md) pagina. Het artikel heeft betrekking op:
 
 * [Plug-ins en bijbehorende functies](rich-text-editor.md#aboutplugins)
 * [Configuratielocaties](rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [Een insteekmodule activeren en de eigenschap features configureren](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Andere functies van de RTE configureren](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Als u een aantal of alle functies voor een plug-in wilt activeren, configureert u de plug-in in de desbetreffende `rtePlugins`-subvertakking in CRXDE Lite.
+Als u een aantal of alle functies voor een plug-in wilt activeren, configureert u de plug-in in het daarvoor bestemde `rtePlugins` subtak in CRXDE Lite.
 
 ![CRXDE Lite die een voorbeeld van rtePlugin toont](assets/example-rteplugin-crxde-lite.png)
 
@@ -42,19 +42,19 @@ Als u een aantal of alle functies voor een plug-in wilt activeren, configureert 
 Er worden nieuwe semantische blokformaten beschikbaar gesteld voor selectie.
 
 1. Afhankelijk van uw RTE, bepaal en navigeer aan [configuratielocatie](rich-text-editor.md#understand-the-configuration-paths-and-locations).
-1. [Schakel het ](rich-text-editor.md) veld Alinea&#39;s selecteren in door de plug-in [ te ](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)activeren.
-1. [Geef de indelingen op die u beschikbaar wilt hebben in het veld](rich-text-editor.md) Alinea&#39;s selecteren.
+1. [Het veld Alinea&#39;s selecteren inschakelen](rich-text-editor.md) door [de insteekmodule activeren](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Geef de indelingen op die beschikbaar moeten zijn in het veld Alinea&#39;s selecteren](rich-text-editor.md).
 1. De paragraafformaten zijn dan beschikbaar aan de inhoudauteur van de selectiegebieden in RTE.
 
-Met structuurelementen beschikbaar in RTE via de opties van het paragraafformaat, [!DNL Experience Manager] verstrekt een goede basis voor de ontwikkeling van toegankelijke inhoud. Inhoudsauteurs kunnen de RTE niet gebruiken om de tekengrootte of kleuren of andere verwante kenmerken op te maken, waardoor inlineopmaak niet mogelijk is. In plaats daarvan kunnen de auteurs de juiste structuurelementen selecteren, zoals koppen, en algemene stijlen gebruiken die u hebt gekozen bij de optie Stijlen, om een zuivere opmaak en grotere opties te garanderen voor gebruikers die met hun eigen stijlbladen en correct gestructureerde inhoud bladeren.
+Met structuurelementen beschikbaar in de RTE via de opties voor alineaopmaak [!DNL Experience Manager] biedt een goede basis voor de ontwikkeling van toegankelijke inhoud. Inhoudsauteurs kunnen de RTE niet gebruiken om de tekengrootte of kleuren of andere verwante kenmerken op te maken, waardoor inlineopmaak niet mogelijk is. In plaats daarvan kunnen de auteurs de juiste structuurelementen selecteren, zoals koppen, en algemene stijlen gebruiken die u hebt gekozen bij de optie Stijlen, om een zuivere opmaak en grotere opties te garanderen voor gebruikers die met hun eigen stijlbladen en correct gestructureerde inhoud bladeren.
 
 ## De functie Bron bewerken gebruiken {#use-of-the-source-edit-feature}
 
-In sommige gevallen zullen inhoudsauteurs het nodig vinden om de HTML-broncode die met de RTE is gemaakt, te onderzoeken en aan te passen. Bijvoorbeeld, kan een stuk van inhoud die binnen RTE wordt gecreeerd meer prijsverhoging vereisen om naleving WCAG 2.0 te verzekeren. Dit kan met [bron worden gedaan uitgeven](rich-text-editor.md#aboutplugins) optie van RTE. U kunt de [`sourceedit` eigenschap op `misctools` stop-in ](rich-text-editor.md#aboutplugins) specificeren.
+In sommige gevallen, zullen de inhoudsauteurs het noodzakelijk vinden om de HTML broncode te onderzoeken en aan te passen die gebruikend RTE wordt gecreeerd. Bijvoorbeeld, kan een stuk van inhoud die binnen RTE wordt gecreeerd meer prijsverhoging vereisen om naleving WCAG 2.0 te verzekeren. Dit kan worden gedaan met de [bronbewerking](rich-text-editor.md#aboutplugins) optie van de RTE. U kunt de [`sourceedit` op de `misctools` insteekmodule](rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->Gebruik de functie `sourceedit` zorgvuldig. Bij typefouten en niet-ondersteunde functies kunnen problemen optreden.
+>Gebruik de `sourceedit` zorgvuldig worden uitgevoerd. Bij typefouten en niet-ondersteunde functies kunnen problemen optreden.
 
 <!--
 TBD ENGREVIEW: Is this only applicable to Classic UI? 
@@ -148,5 +148,5 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Een snelle gids voor WCAG-standaarden](/help/compliance/accessibility/quick-guide-wcag.md)
-* [Toegankelijke inhoud maken in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
+>* [Toegankelijke inhoud maken in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 

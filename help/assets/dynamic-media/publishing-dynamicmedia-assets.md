@@ -2,23 +2,23 @@
 title: Dynamic Media-elementen publiceren
 description: Leer hoe u Dynamic Media-middelen publiceert.
 contentOwner: Rick Brough
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '452'
 ht-degree: 2%
 
 ---
 
 # Dynamic Media-elementen publiceren {#publishing-dynamic-media-assets}
 
-U publiceert uw Dynamic Media-elementen door de elementen te selecteren die u al hebt geüpload en **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]** te selecteren. Nadat uw Dynamic Media-elementen zijn gepubliceerd, kunt u ze via een URL of door code in te sluiten op de pagina opnemen.
+U publiceert uw Dynamic Media-elementen door de elementen te selecteren die u al hebt geüpload en **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]**. Nadat uw Dynamic Media-elementen zijn gepubliceerd, kunt u ze via een URL of door code in te sluiten op de pagina opnemen.
 
-U kunt ook direct elementen publiceren die u uploadt, zonder tussenkomst van de gebruiker. U kunt deze elementen ook selectief publiceren. Zie [Dynamic Media](config-dm.md) configureren. U kunt ook selectief elementen publiceren naar Dynamic Media of Adobe Experience Manager, wederzijds exclusief van elkaar, met **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+U kunt ook direct elementen publiceren die u uploadt, zonder tussenkomst van de gebruiker. U kunt deze elementen ook selectief publiceren. Zie [Dynamic Media configureren](config-dm.md). Of u kunt selectief elementen publiceren naar Dynamic Media of Adobe Experience Manager, wederzijds exclusief elkaar, met behulp van **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
-In **[!UICONTROL Card View]** verschijnt een klein globe pictogram direct onder de naam van een element en links van de datum en tijd om erop te wijzen dat het wordt gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
+In de **[!UICONTROL Card View]**, wordt een klein globpictogram direct onder de naam van een element weergegeven en links van de datum en tijd om aan te geven dat het element is gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
 >[!NOTE]
 >
@@ -28,18 +28,16 @@ Als u video-elementen direct na het coderen wilt publiceren, moet u ervoor zorge
 
 Zie ook [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md).
 
-Zie ook [De Dynamic Media Video-viewer of Afbeeldingsviewer insluiten op een webpagina](embed-code.md).
+Zie ook [De Dynamic Media Video-viewer of Image-viewer insluiten op een webpagina](embed-code.md).
 
 >[!NOTE]
 >
 >* Elementen moeten worden gepubliceerd om de URL te kunnen gebruiken. Als de elementen niet worden gepubliceerd, werkt het kopiëren en plakken van de URL in een webbrowser niet.
 >* Voorinstellingen voor afbeeldingen en viewervoorinstellingen moeten worden geactiveerd en gepubliceerd voor live levering.
-
 >
 
 
-
-Zie [Elementen publiceren](/help/assets/manage-digital-assets.md) voor gedetailleerde informatie over het publiceren van een set of element.
+Ga voor gedetailleerde informatie over het publiceren van een set of element naar [Middelen publiceren](/help/assets/manage-digital-assets.md).
 
 ## HTTP/2 levering van Dynamic Media-middelen {#http-delivery-of-dynamic-media-assets}
 

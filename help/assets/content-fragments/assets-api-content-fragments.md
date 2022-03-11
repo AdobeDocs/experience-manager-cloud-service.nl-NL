@@ -21,8 +21,7 @@ Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een b
 >De [Elementen HTTP-API](/help/assets/mac-api-assets.md) omvat:
 >
 >* REST-API voor middelen
->* including support for Content Fragments
-
+>* inclusief ondersteuning voor inhoudsfragmenten
 >
 >De huidige implementatie van de HTTP-API voor middelen is gebaseerd op de [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) architectonische stijl.
 
@@ -76,8 +75,8 @@ De HTTP-methode bepaalt de uit te voeren bewerking:
 
 * **GET** - om een JSON-representatie van een middel of een map op te halen
 * **POST** - om nieuwe elementen of mappen te maken
-* **PUT** - to update the properties of an asset or folder
-* **DELETE** - to delete an asset or folder
+* **PUT** - om de eigenschappen van een middel of een omslag bij te werken
+* **DELETE** - om een middel of een omslag te schrappen
 
 >[!NOTE]
 >
@@ -127,7 +126,7 @@ Dit betekent dat`write`) verzoeken kunnen niet worden gecombineerd tot één enk
   </tr>
   <tr>
    <td>Architecten</td>
-   <td><p>Schrijftoegang richt zich gewoonlijk tot een auteurinstantie.</p> <p>Read may also be directed to a publish instance.</p> </td>
+   <td><p>Schrijftoegang richt zich gewoonlijk tot een auteurinstantie.</p> <p>Lees kan ook naar een publicatie-instantie worden gestuurd.</p> </td>
    <td>Aangezien deze benadering read-only is, zal het typisch voor publiceer instanties worden gebruikt.</td>
   </tr>
   <tr>
@@ -148,7 +147,6 @@ Als de REST API van Middelen binnen een milieu zonder specifieke authentificatie
 >
 >* [CORS/AEM toegelicht](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Video - Ontwikkelen voor CORS met AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 
@@ -229,13 +227,13 @@ Inhoudsfragmenten:
 
 * Wordt ook als atomisch beschouwd, d.w.z. de elementen en variaties worden blootgesteld als onderdeel van de eigenschappen van het fragment ten opzichte van als koppelingen of onderliggende entiteiten. Op deze manier hebt u efficiënt toegang tot de lading van een fragment.
 
-#### Content Models and Content Fragments {#content-models-and-content-fragments}
+#### Inhoudsmodellen en Inhoudsfragmenten {#content-models-and-content-fragments}
 
 De modellen die de structuur van een inhoudsfragment definiëren, worden momenteel niet via een HTTP-API weergegeven. Daarom *consument* moet op de hoogte zijn van het model van een fragment (ten minste minimaal), hoewel de meeste informatie kan worden afgeleid uit de lading; als gegevenstypen, enz. maken deel uit van de definitie.
 
 Als u een nieuw inhoudsfragment wilt maken, moet u het pad (interne gegevensopslagruimte) van het model opgeven.
 
-#### Associated Content {#associated-content}
+#### Gekoppelde inhoud {#associated-content}
 
 Gekoppelde inhoud wordt momenteel niet weergegeven.
 
@@ -244,7 +242,7 @@ Gekoppelde inhoud wordt momenteel niet weergegeven.
 Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomgeving gebruikt, samen met uw specifieke gebruiksscenario.
 
 * Het wordt ten zeerste aanbevolen dat het maken is gebonden aan een instantie van de auteur ([en er is momenteel geen manier om een fragment te repliceren dat moet worden gepubliceerd met deze API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
-* Delivery is possible from both, as AEM serves requested content in JSON format only.
+* De levering is mogelijk van beide, aangezien AEM gevraagde inhoud in formaat slechts JSON dient.
 
    * Opslag en levering vanuit een AEM auteur-instantie zouden voldoende moeten zijn voor toepassingen achter de firewall, in de mediabibliotheek.
 
@@ -268,7 +266,7 @@ Bijvoorbeeld:
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
-De reactie is geserialiseerd met JSON met de inhoud gestructureerd zoals in het inhoudsfragment. References are delivered as reference URLs.
+De reactie is geserialiseerd met JSON met de inhoud gestructureerd zoals in het inhoudsfragment. Referenties worden als referentie-URL&#39;s geleverd.
 
 Er zijn twee typen leesbewerkingen mogelijk:
 
@@ -303,7 +301,7 @@ Gebruik gebeurt via:
 
 Er zijn enkele beperkingen:
 
-* **Inhoudsfragmentmodellen worden momenteel niet ondersteund**: ze kunnen niet worden gelezen of gemaakt. Ontwikkelaars moeten het juiste pad naar het inhoudsfragmentmodel weten om een nieuw inhoudsfragment te kunnen maken of een bestaand inhoudsfragment bij te werken. Currently the only method to get an overview of these is through the administration UI.
+* **Inhoudsfragmentmodellen worden momenteel niet ondersteund**: ze kunnen niet worden gelezen of gemaakt. Ontwikkelaars moeten het juiste pad naar het inhoudsfragmentmodel weten om een nieuw inhoudsfragment te kunnen maken of een bestaand inhoudsfragment bij te werken. Momenteel is de enige methode om een overzicht van deze te krijgen door het beleid UI.
 * **Verwijzingen worden genegeerd**. Er wordt momenteel niet gecontroleerd of naar een bestaand inhoudsfragment wordt verwezen. Daarom kan het verwijderen van een inhoudsfragment bijvoorbeeld resulteren in problemen op een pagina die een verwijzing naar het verwijderde inhoudsfragment bevat.
 * **JSON-gegevenstype** De REST API-uitvoer van de *JSON-gegevenstype* is momenteel *op tekenreeks gebaseerde uitvoer*.
 
@@ -378,7 +376,7 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
 ## API-naslag {#api-reference}
 
-See here for detailed API references:
+Zie hier voor gedetailleerde API-referenties:
 
 * [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 

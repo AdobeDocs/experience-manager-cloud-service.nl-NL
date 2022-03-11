@@ -1,14 +1,13 @@
 ---
 title: Onderdelenconsole
 description: Met de componentenconsole kunt u door alle componenten bladeren die voor uw instantie zijn gedefinieerd
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 17%
 
 ---
-
 
 # Onderdelenconsole {#components-console}
 
@@ -20,7 +19,7 @@ U kunt deze openen via **Gereedschappen ->** **Algemeen ->** **Componenten**. Om
 
 >[!NOTE]
 >
->In de Componentenconsole worden alle componenten in het systeem weergegeven. In de [Componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) worden componenten weergegeven die beschikbaar zijn voor auteurs en worden componentgroepen verborgen die met een punt ( `.`) beginnen.
+>In de Componentenconsole worden alle componenten in het systeem weergegeven. De [Componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) toont componenten die aan auteurs beschikbaar zijn en verbergt om het even welke componentengroepen die met een periode beginnen ( `.`).
 
 ## Zoeken {#search-field}
 
@@ -41,12 +40,12 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
    * De algemene eigenschappen van de component weergeven.
       * Geef weer hoe het pictogram of de afkorting is gedefinieerd voor de component. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
       * Als u op de bron van het pictogram klikt, gaat u naar die component.
-   * Bekijk **Resourcetype** en **Resourcesupertype** (indien gedefinieerd) voor de component.
+   * De weergave van **Type bron** en **Super Type resource** (indien gedefinieerd) voor de component.
       * Als u op het Super Type van Middel klikt, gaat u naar die component.
 
    >[!NOTE]
    >
-   >Omdat `/apps` niet bewerkbaar is bij uitvoering, is de Componentenconsole alleen-lezen.
+   >Omdat `/apps` kan tijdens runtime niet worden bewerkt, is de Componentenconsole alleen-lezen.
 
 * **Beleid**
 
@@ -62,6 +61,6 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
 
 * **Documentatie**
 
-   Als de ontwikkelaar documentatie voor de component heeft verstrekt, zal het op **Documentatie** tabel verschijnen. Als er geen documentatie beschikbaar is, zal **Documentatie** tabel niet worden getoond. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+   Als de ontwikkelaar documentatie voor de component heeft verstrekt, zal het op het **Documentatie** tab. Als er geen documentatie beschikbaar is, **Documentatie** wordt niet weergegeven. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
    ![Componentdocumentatie](/help/sites-cloud/authoring/assets/components-console-documentation.png)

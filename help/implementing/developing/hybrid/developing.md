@@ -15,18 +15,18 @@ Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor 
 
 Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen van een front-end ontwikkelaar om een SPA voor AEM te ontwikkelen en geeft een overzicht van de architectuur van AEM met betrekking tot het opstellen van SPA op AEM.
 
-## Ontwikkelingsprincipes SPA voor AEM {#spa-development-principles-for-aem}
+## SPA ontwikkelingsbeginselen voor AEM {#spa-development-principles-for-aem}
 
-Bij het ontwikkelen van toepassingen voor één pagina op AEM wordt ervan uitgegaan dat de ontwikkelaar aan de voorzijde de beste werkwijzen volgt bij het maken van een SPA. Als u als front-end ontwikkelaar deze algemene beste praktijken evenals weinig AEM-specifieke principes volgt, zal uw SPA functioneel met [AEM en zijn inhoud-creatie mogelijkheden](introduction.md#content-editing-experience-with-spa) zijn.
+Bij het ontwikkelen van toepassingen voor één pagina op AEM wordt ervan uitgegaan dat de ontwikkelaar aan de voorzijde de beste werkwijzen volgt bij het maken van een SPA. Als u als front-end ontwikkelaar deze algemene beste praktijken evenals weinig AEM-specifieke principes volgt, zal uw SPA functioneel zijn met [AEM en de mogelijkheden voor het schrijven van inhoud](introduction.md#content-editing-experience-with-spa).
 
-* **[Draagbaarheid](#portability)**  - De onderdelen moeten zo draagbaar mogelijk zijn, net als alle andere onderdelen. De SPA moet met draagbare en herbruikbare onderdelen worden gebouwd.
-* **[AEM de Structuur](#aem-drives-site-structure)**  van de Plaats van Drives - de voorste eindontwikkelaar leidt tot componenten en bezit hun interne structuur, maar baseert zich op AEM om de inhoudsstructuur van de plaats te bepalen.
-* **[Dynamische rendering](#dynamic-rendering)**  - Alle rendering moet dynamisch zijn.
-* **[Het dynamische Verpletteren](#dynamic-routing)**  - de SPA is verantwoordelijk voor het verpletteren en AEM luistert aan het en haalt gebaseerd op het. Om het even welk verpletteren zou ook dynamisch moeten zijn.
+* **[Overdraagbaarheid](#portability)** - De onderdelen moeten zo draagbaar mogelijk zijn, net als alle andere onderdelen. De SPA moet met draagbare en herbruikbare onderdelen worden gebouwd.
+* **[Sitestructuur AEM stations](#aem-drives-site-structure)** - De front-end ontwikkelaar maakt componenten en bezit hun interne structuur, maar vertrouwt op AEM om de inhoudsstructuur van de site te bepalen.
+* **[Dynamische rendering](#dynamic-rendering)** - Alle rendering moet dynamisch zijn.
+* **[Dynamische routering](#dynamic-routing)** - De SPA is verantwoordelijk voor het verpletteren en AEM luistert aan het en haalt gebaseerd op het. Om het even welk verpletteren zou ook dynamisch moeten zijn.
 
 Als u deze principes in gedachten houdt bij het ontwikkelen van uw SPA, is deze zo flexibel en mogelijk in de toekomst, waarbij alle ondersteunde AEM ontwerpfuncties worden ingeschakeld.
 
-Als u geen AEM ontwerpeigenschappen te hoeven steunen, kunt u een verschillend [SPA ontwerpmodel](#spa-design-models) moeten overwegen.
+Als u AEM ontwerpfuncties niet hoeft te ondersteunen, moet u mogelijk rekening houden met een andere [SPA ontwerpmodel](#spa-design-models).
 
 ### Overdraagbaarheid {#portability}
 
@@ -44,21 +44,21 @@ Dit betekent dat de front-end ontwikkelaar klanteninhoud vóór of na het ingang
 
 De SPA mag alleen vertrouwen op dynamische rendering van inhoud. Dit is de standaardverwachting waarbij AEM alle onderliggende elementen van de inhoudsstructuur ophaalt en rendert.
 
-Elke expliciete rendering die naar specifieke inhoud verwijst, wordt als statische rendering beschouwd en wordt wel ondersteund, maar is niet compatibel met AEM functies voor het schrijven van inhoud. Dit druist ook in tegen het beginsel van [portability](#portability).
+Elke expliciete rendering die naar specifieke inhoud verwijst, wordt als statische rendering beschouwd en wordt wel ondersteund, maar is niet compatibel met AEM functies voor het schrijven van inhoud. Dit druist ook in tegen het beginsel van [draagbaarheid](#portability).
 
-### Dynamisch routeren {#dynamic-routing}
+### Dynamische routering {#dynamic-routing}
 
-Zoals met het teruggeven, zou al het verpletteren ook dynamisch moeten zijn. In AEM, [zou de SPA altijd het verpletteren](routing.md) moeten bezitten en AEM aan het luistert en inhoud haalt die op het wordt gebaseerd.
+Zoals met het teruggeven, zou al het verpletteren ook dynamisch moeten zijn. In AEM [de SPA zou altijd het verpletteren moeten bezitten](routing.md) en AEM luistert ernaar en haalt er inhoud op.
 
-Om het even welk statisch verpletterend werk tegen het [beginsel van portability](#portability) en beperkt de auteur door niet compatibel te zijn met de eigenschappen van de inhoudcreatie van AEM. Bijvoorbeeld, met het statische verpletteren, als de inhoudsauteur een route zou willen veranderen of een pagina zou veranderen, zou hij of zij de front eindontwikkelaar moeten vragen om het te doen.
+Om het even welke statische verpletterende werken tegen [beginsel van draagbaarheid](#portability) en beperkt de auteur door niet compatibel te zijn met de eigenschappen van AEM voor het schrijven van inhoud. Bijvoorbeeld, met het statische verpletteren, als de inhoudsauteur een route zou willen veranderen of een pagina zou veranderen, zou hij of zij de front eindontwikkelaar moeten vragen om het te doen.
 
-## Projectarchetype {#aem-project-archetype} AEM
+## Projectarchetype AEM {#aem-project-archetype}
 
-Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
+Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK.
 
-## Ontwerpmodellen SPA {#spa-design-models}
+## SPA ontwerpmodellen {#spa-design-models}
 
-Als de [principes van het ontwikkelen van SPA in AEM](#spa-development-principles-for-aem) worden gevolgd, dan zal uw SPA met alle gesteunde AEM tevreden auteurseigenschappen functioneel zijn.
+Als de [beginselen voor de ontwikkeling van SPA in AEM](#spa-development-principles-for-aem) worden gevolgd, werkt uw SPA met alle ondersteunde functies voor het schrijven van AEM inhoud.
 
 Er kunnen zich echter gevallen voordoen waarin dit niet volledig noodzakelijk is. In de volgende tabel vindt u een overzicht van de verschillende ontwerpmodellen, hun voordelen en hun nadelen.
 
@@ -70,7 +70,7 @@ Er kunnen zich echter gevallen voordoen waarin dit niet volledig noodzakelijk is
    <th><strong>Nadelen</strong></th>
   </tr>
   <tr>
-   <td>AEM wordt gebruikt als een CMS zonder kop zonder het <a href="/help/implementing/developing/hybrid/reference-materials.md">SPA framework van SDK van de Editor te gebruiken.</a></td>
+   <td>AEM wordt gebruikt als een CMS zonder kop zonder het <a href="/help/implementing/developing/hybrid/reference-materials.md">SPA Editor SDK-framework.</a></td>
    <td>De front-end ontwikkelaar heeft volledige controle over de app.</td>
    <td><p>Inhoudsauteurs kunnen geen gebruik maken van AEM ervaring voor het schrijven van inhoud.</p> <p>De code is noch draagbaar noch herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar van de front-end via het JCR bewerkbare sjablonen moet bijhouden.</p> </td>
   </tr>
@@ -89,11 +89,11 @@ Er kunnen zich echter gevallen voordoen waarin dit niet volledig noodzakelijk is
 
 >[!NOTE]
 >
->Hoewel alle modellen in AEM worden gesteund, slechts door de derde (en daardoor volgend de geadviseerde [SPA ontwikkelingsprincipes in AEM](#spa-development-principles-for-aem)) zullen de inhoudauteurs met de inhoud van de SPA in AEM kunnen in wisselwerking staan en uitgeven aangezien zij gewend zijn.
+>Hoewel alle modellen in AEM worden gesteund, slechts door het derde uit te voeren (en daardoor te volgen geadviseerde [Ontwikkelingsprincipes SPA in AEM](#spa-development-principles-for-aem)) zullen de auteurs van de inhoud kunnen communiceren met en de inhoud van de SPA kunnen bewerken in AEM zoals ze gewend zijn.
 
 ## Bestaande SPA migreren naar AEM {#migrating-existing-spas-to-aem}
 
-In het algemeen als uw SPA de [SPA Ontwikkelingsprincipes voor AEM](#spa-development-principles-for-aem) volgt, zal uw SPA in AEM werken en bewerkbaar zijn gebruikend de AEM Redacteur SPA.
+In het algemeen als uw SPA de [SPA ontwikkelingsbeginselen voor AEM](#spa-development-principles-for-aem)Dan werkt uw SPA in AEM en kunt u deze bewerken met de AEM SPA Editor.
 
 Ga als volgt te werk om uw bestaande SPA klaar te maken voor AEM.
 
@@ -115,35 +115,35 @@ Hieronder volgt een overzicht van de stappen die een front-end ontwikkelaar moet
 
 1. **In React componenten, heb toegang tot het model via`this.props.cqModel`**
 
-   Zodra de componenten worden overeengekomen en het model JSON op zijn plaats is, is de front-end ontwikkelaar vrij om de SPA te ontwikkelen en kan eenvoudig tot het model JSON via `this.props.cqModel` toegang hebben.
+   Zodra componenten zijn overeengekomen en het JSON-model is geïmplementeerd, is de front-end ontwikkelaar vrij om de SPA te ontwikkelen en kan hij eenvoudig toegang krijgen tot het JSON-model via `this.props.cqModel`.
 
-1. **De  `render()` methode van de component implementeren**
+1. **Componenten implementeren `render()` methode**
 
-   De front-end ontwikkelaar implementeert de `render()` methode zoals zij geschikt zien en kan de gebieden van het `cqModel` bezit gebruiken. Hiermee worden het DOM en de HTML-fragmenten uitgevoerd die in de pagina worden ingevoegd. Dit is de standaardmanier om een app te maken in React.
+   De front-end ontwikkelaar implementeert de `render()` -methode naar eigen inzicht en kan de velden van de `cqModel` eigenschap. Hiermee worden het DOM en de HTML-fragmenten uitgevoerd die in de pagina worden ingevoegd. Dit is de standaardmanier om een app te maken in React.
 
 1. **Wijs de component aan het AEM middeltype via toe`MapTo()`**
 
-   De afbeelding slaat componentenklassen op en wordt intern door de verstrekte `Container` component gebruikt om componenten terug te winnen en dynamisch te concretiseren die op het bepaalde middeltype worden gebaseerd.
+   In de toewijzing worden componentklassen opgeslagen en intern door de opgegeven klasse gebruikt `Container` component om componenten terug te winnen en dynamisch te concretiseren die op het bepaalde middeltype worden gebaseerd.
 
    Dit dient als de &quot;lijm&quot;tussen voorkant en achtereind zodat weet de redacteur aan welke componenten de reactiecomponenten beantwoorden.
 
-   De `Page` en `ResponsiveGrid` zijn goede voorbeelden van klassen die de basis `Container` uitbreiden.
+   De `Page` en `ResponsiveGrid` zijn goede voorbeelden van klassen die de basis uitbreiden `Container`.
 
-1. **De parameter van de component definiëren  `EditConfig` als parameter voor`MapTo()`**
+1. **De component definiëren `EditConfig` als parameter voor`MapTo()`**
 
    Deze parameter is noodzakelijk om de redacteur te vertellen hoe de component zou moeten worden genoemd zolang bij nog niet wordt teruggegeven of geen inhoud heeft om terug te geven.
 
-1. **De opgegeven  `Container` klasse uitbreiden voor pagina&#39;s en containers**
+1. **De opgegeven opties uitbreiden `Container` klasse voor pagina&#39;s en containers**
 
    Pagina- en alineasystemen moeten deze klasse uitbreiden, zodat delegatie naar binnencomponenten naar behoren werkt.
 
-1. **Voer een verpletterende oplossing uit die het gebruiken van HTML5  `History` API.**
+1. **Voer een verpletterende oplossing uit die HTML5 gebruikt `History` API.**
 
-   Wanneer `ModelRouter` wordt toegelaten, zal het roepen van `pushState` en `replaceState` functies een verzoek aan `PageModelManager` teweegbrengen om een ontbrekend fragment van het model te halen.
+   Wanneer de `ModelRouter` wordt toegelaten, roepend `pushState` en `replaceState` functies activeren een verzoek aan de `PageModelManager` om een ontbrekend fragment van het model op te halen.
 
-   De huidige versie van `ModelRouter` steunt slechts het gebruik van URLs die aan de daadwerkelijke middelweg van de Invoerpunten van het Sling Model richt. Het steunt niet het gebruik van vanity URLs of aliassen.
+   De huidige versie van de `ModelRouter` alleen ondersteuning voor het gebruik van URL&#39;s die verwijzen naar het feitelijke bronnenpad van verzendmodel-entry-punten. Het steunt niet het gebruik van vanity URLs of aliassen.
 
-   `ModelRouter` kan worden onbruikbaar gemaakt of worden gevormd om een lijst van regelmatige uitdrukkingen te negeren.
+   De `ModelRouter` Kan worden uitgeschakeld of geconfigureerd om een lijst met reguliere expressies te negeren.
 
 ## AEM-agnost {#aem-agnostic}
 
@@ -154,12 +154,12 @@ Deze codeblokken illustreren hoe uw React- en Angular-componenten niets nodig he
 
 ![Agnostische aanpak AEM](assets/aem-agnostic.png)
 
-De `MapTo` helper is de &quot;lijm&quot;die de achterkant en de front-end componenten toestaat om samen te passen:
+De `MapTo` helper is de &quot;lijm&quot; die het mogelijk maakt de achterkant en de voorste delen samen te voegen:
 
 * Het vertelt de container JS (of JS paragraafsysteem) welke component JS voor het teruggeven van elk van de componenten verantwoordelijk is die in JSON aanwezig zijn.
 * Er wordt een HTML-gegevenskenmerk toegevoegd aan de HTML die de JS-component rendert, zodat de SPA Editor weet welk dialoogvenster aan de auteur moet worden weergegeven wanneer de component wordt bewerkt.
 
-Voor meer informatie over het gebruiken van `MapTo` en het bouwen van SPA voor AEM in het algemeen, zie de Aan de slag gids voor uw gekozen kader.
+Voor meer informatie over het gebruik `MapTo` en SPA maken voor AEM in het algemeen, raadpleegt u de gids Aan de slag voor uw gekozen framework.
 
 * [Aan de slag met SPA in AEM Reageren gebruiken](getting-started-react.md)
 * [Aan de slag met SPA in AEM Angular gebruiken](getting-started-angular.md)
@@ -186,8 +186,8 @@ De algemene architectuur van AEM, inclusief ontwikkelings-, auteurs- en publicat
    1. De SPA vraagt om de buitenste HTML.
    1. De CSS is geladen.
    1. Het JavaScript-bestand van de SPA toepassing wordt geladen.
-   1. Wanneer de SPA toepassing wordt uitgevoerd, wordt de JSON opgevraagd, zodat de app het DOM van de pagina kan maken met de kenmerken `cq-data`.
-   1. Met deze `cq-data`-kenmerken kan de editor aanvullende pagina-informatie laden, zodat deze weet welke bewerkingsconfiguraties beschikbaar zijn voor de componenten.
+   1. Wanneer de SPA toepassing wordt uitgevoerd, wordt de JSON opgevraagd, zodat de app het DOM van de pagina kan maken, inclusief de `cq-data` kenmerken.
+   1. Dit `cq-data` de attributen staan de redacteur toe om extra paginainformatie te laden zodat het weet welke uitgeeft configuraties voor de componenten beschikbaar zijn.
 
 * **AEM-publicatie**
 
@@ -205,9 +205,9 @@ De algemene architectuur van AEM, inclusief ontwikkelings-, auteurs- en publicat
 
 ## Volgende stappen {#next-steps}
 
-* [Aan de slag met SPA in AEM met ](getting-started-react.md) Reactshows hoe een basisSPA wordt gebouwd om met de SPA Redacteur in AEM te werken gebruikend Reageren.
-* [Aan de slag met SPA in AEM met ](getting-started-angular.md) Angularshows hoe een basisSPA is gemaakt om met de SPA Editor in AEM Angular te werken.
-* [SPA de ](editor-overview.md) Overzichten van de Redacteur gaat dieper in het communicatie model tussen AEM en de SPA.
-* [WKND SPA ](wknd-tutorial.md) Projectis een geleidelijke zelfstudie die een eenvoudig SPA project in AEM implementeert.
-* [Het dynamische Model aan de Toewijzing van de Component voor ](model-to-component-mapping.md) SPAs verklaart het dynamische model aan componentenafbeelding en hoe het binnen SPA in AEM werkt.
-* [SPA ](blueprint.md) Blueprintoffers duiken diep in hoe SPA SDK voor AEM werkt voor het geval u SPA in AEM voor een kader buiten React of Angular wilt uitvoeren of eenvoudig een dieper begrip zou willen.
+* [Aan de slag met SPA in AEM met Reageren](getting-started-react.md) toont hoe een basis SPA wordt gebouwd om met de SPARedacteur in AEM te werken die Reageren gebruiken.
+* [Aan de slag met SPA in AEM met Angular](getting-started-angular.md) toont hoe een basis SPA wordt gebouwd om met de SPA Redacteur in AEM het gebruiken van Angular te werken.
+* [Overzicht SPA Editor](editor-overview.md) gaat dieper in het communicatie model tussen AEM en de SPA.
+* [WKND SPA Project](wknd-tutorial.md) is een geleidelijke zelfstudie die een eenvoudig SPA project in AEM implementeert.
+* [Dynamisch model naar componenttoewijzing voor SPA](model-to-component-mapping.md) verklaart het dynamische model aan componentenafbeelding en hoe het binnen SPA in AEM werkt.
+* [SPA](blueprint.md) biedt een diepgaande duik in hoe de SPA SDK voor AEM werkt voor het geval u SPA in AEM voor een kader buiten React of Angular wilt uitvoeren of eenvoudig een dieper begrip zou willen.

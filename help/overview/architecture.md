@@ -1,7 +1,8 @@
 ---
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
-source-git-commit: a54841ca2e959e885a997b19dd03c6ece3f00d1c
+exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1782'
 ht-degree: 82%
@@ -12,8 +13,8 @@ ht-degree: 82%
 
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
->title="Inleiding tot AEM als architectuur van de Cloud Service"
->abstract="In dit lusje, kunt u de nieuwe architectuur van AEM als Cloud Service bekijken en de veranderingen begrijpen. AEM heeft geresulteerd in een dynamische architectuur met een variabel aantal afbeeldingen, dus het is belangrijk om de tijd te nemen om te begrijpen.de cloudarchitectuur"
+>title="Inleiding tot AEM as a Cloud Service architectuur"
+>abstract="Op dit tabblad kunt u de nieuwe architectuur van AEM as a Cloud Service bekijken en de wijzigingen begrijpen. AEM heeft geresulteerd in een dynamische architectuur met een variabel aantal afbeeldingen, dus het is belangrijk om de tijd te nemen om te begrijpen.de cloudarchitectuur"
 >additional-url="https://video.tv.adobe.com/v/330542/" text="Overzicht van architectuur"
 
 
@@ -68,7 +69,7 @@ De schaling van instanties per tenant van de service kan automatisch of handmati
 
 AEM as a Cloud Service wordt beschikbaar gesteld als afzonderlijke instanties waarbij elke instantie een volledige AEM-omgeving vertegenwoordigt.
 
-Er zijn drie soorten milieu&#39;s beschikbaar met AEM als Cloud Service:
+Er zijn drie soorten milieu&#39;s beschikbaar met AEM as a Cloud Service:
 
 * **Productieomgeving**: is de host voor de applicaties van alle zakelijke gebruikers.
 
@@ -76,7 +77,7 @@ Er zijn drie soorten milieu&#39;s beschikbaar met AEM als Cloud Service:
 
 * **Ontwikkelomgeving**: hier kunnen ontwikkelaars AEM-applicaties implementeren onder dezelfde runtimevoorwaarden als de fase- en productieomgeving.
 
-   Raadpleeg [Omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) voor meer informatie.
+   Zie [Omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) voor meer informatie .
 
 ## Programma&#39;s {#programs}
 
@@ -87,7 +88,7 @@ Een AEM-programma is de container die het volgende bevat:
 |  Programma-element |  Getal |
 |--- |--- |
 | Code-repository (Git) |  1 |
-| Basisinstallatiekopie (Sites of Assets) |  3 |
+| Basisinstallatiekopie (Sites of Assets) |  1 |
 | Fase- en productieomgevingset (1:1) | 0 of 1 |
 | Niet-productieomgevingen (ontwikkeling of demonstratie) | 0 tot en met N |
 | Pijplijn voor elke omgeving | 0 of 1 |
@@ -136,7 +137,7 @@ Deze nieuwe architectuur bestaat uit verschillende hoofdonderdelen:
 
    * In de authoringlaag wordt content van en naar de persistentielaag gelezen en geschreven.
 
-   * De opslag van lobs wordt gedeeld over publiceren, de voorproef, en de auteursrijen; bestanden worden niet *verplaatst*.
+   * De opslag van lobs wordt gedeeld over publiceren, de voorproef, en de auteursrijen; bestanden zijn niet *bewogen*.
 
    * Wanneer inhoud wordt goedgekeurd van de auteursrij, is dit een aanwijzing dat het kan worden geactiveerd, daarom aan de publicatielaag persistence laag worden geduwd; of naar keuze naar de voorvertoningslaag. Dit gebeurt via de Replication Service, een middleware-pijplijn. Deze pijpleiding ontvangt de nieuwe inhoud, met de individuele publiceerdienst (of voorproefdienst) knopen die aan de inhoud intekenen die aan de pijpleiding wordt geduwd.
 

@@ -3,13 +3,13 @@ title: Sitethema's
 description: Leer hoe AEM sitethema's kunnen worden gebruikt om de stijl en het ontwerp van uw site aan te passen.
 feature: Administering
 role: Admin
-source-git-commit: 0b00d579886a106f5f66cfc54d90eab9563724cd
+exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
 
 ---
-
 
 # Sitethema&#39;s {#site-themes}
 

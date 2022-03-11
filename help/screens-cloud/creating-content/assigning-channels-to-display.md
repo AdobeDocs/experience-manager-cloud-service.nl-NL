@@ -1,15 +1,15 @@
 ---
-title: Kanaal toewijzen aan een weergave in schermen als Cloud Service
-description: Op deze pagina wordt beschreven hoe u een kanaal als Cloud Service kunt toewijzen aan een weergave in schermen.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+title: Kanaal toewijzen aan een as a Cloud Service weergave in schermen
+description: Op deze pagina wordt beschreven hoe u een kanaal toewijst aan een weergave in as a Cloud Service schermen.
+exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 1%
 
 ---
 
-
-# Kanaal toewijzen aan een weergave in schermen als Cloud Service {#assign-channel-displays-screens-cloud}
+# Kanaal toewijzen aan een as a Cloud Service weergave in schermen {#assign-channel-displays-screens-cloud}
 
 Zodra de projectopstelling volledig is, moet u het kanaal aan een vertoning toewijzen om de inhoud te bekijken.
 
@@ -28,13 +28,13 @@ Voordat u de onderstaande stappen uitvoert om een kanaal toe te wijzen aan een w
 
 Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
 
-1. Navigeer naar de Serviceverlener voor schermen en selecteer **Display** in het navigatievenster aan de linkerkant.
+1. Ga naar Screens Services Provider en selecteer **Weergaven** in het navigatievenster aan de linkerkant.
 
-1. Klik op **Kanaal toewijzen** aan de weergave.
+1. Klikken op **Kanaal toewijzen** op het scherm.
 
    ![afbeelding](/help/screens-cloud/assets/display/assignchannel-1.png)
 
-1. Vul de volgende velden in het dialoogvenster **Een kanaal toewijzen**.
+1. De volgende velden vullen vanuit **Een kanaal toewijzen** in.
 
    ![afbeelding](/help/screens-cloud/assets/display/assignchannel-2.png)
 
@@ -45,7 +45,7 @@ Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
       >Prioriteit wordt gebruikt om de toewijzingen te bestellen als meerdere toewijzingen voldoen aan de afspeelcriteria. Degene met de hoogste waarde heeft altijd voorrang op lagere waarden. Bijvoorbeeld, als er twee kanalen A en B zijn. A heeft een prioriteit van 1 en B heeft een prioriteit van 2, dan wordt kanaal B getoond, aangezien het een hogere prioriteit dan A heeft.
    1. Selecteer de begin- en einddatum van **Activering**.
 
-1. Klik op **+ voeg terugval** toe om een terugkeringsprogramma voor uw kanaal toe te voegen.
+1. Klikken op **+ Herhaling toevoegen** om een herhalingsschema voor uw kanaal toe te voegen.
 
    ![afbeelding](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
@@ -56,16 +56,16 @@ Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
 
    * **Naam**: Titel van uw terugkerend schema.
    * **Herhalen**: Kies of het schema Dagelijks, Wekelijks, Maandelijks, of Jaarlijks loopt.
-   * **Begin**: De begintijd voor uw schema.
+   * **Start**: De begintijd voor uw schema.
    * **Einde**: De eindtijd voor uw schema. U kunt de achtergrondkleur instellen op tijd of duur.
    * **Tijd**: Het programma eindigt op een bepaald tijdstip.
    * **Duur**: Het schema loopt gedurende een bepaalde tijdsduur in uren of minuten.
 
-1. Klik op **Create** en nu zult u zien dat een kanaal voor die vertoning, zoals aangetoond in het hieronder cijfer wordt toegewezen.
+1. Klikken op **Maken** en nu zult u zien dat een kanaal voor die vertoning, zoals aangetoond in het hieronder cijfer wordt toegewezen.
 
    ![afbeelding](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u het kanaal aan een vertoning hebt toegewezen, zou u uw Schermen als reis van de Cloud Service moeten voortzetten door het document [te herzien Installing en het Vormen de Speler van de Schermen voor AEM als Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Nu u het kanaal aan een vertoning hebt toegewezen, zou u uw as a Cloud Service reis van de Schermen door het document opnieuw te bekijken moeten voortzetten [Schermspeler voor AEM as a Cloud Service installeren en configureren](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

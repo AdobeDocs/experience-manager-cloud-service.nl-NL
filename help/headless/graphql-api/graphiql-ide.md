@@ -2,13 +2,13 @@
 title: Het gebruiken van GrahiQL winde in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
-source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
+exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 3%
 
 ---
-
 
 # GraphiQL IDE gebruiken {#graphiql-ide}
 
@@ -37,4 +37,3 @@ GrahiQL winde is een ontwikkelingshulpmiddel en nodig slechts op laag-vlakke mil
 1. Download de nieuwste **GraphiQL Content Package v.x.x.x**
 1. Van de **AEM starten** menu navigeren naar **Gereedschappen** > **Implementatie** > **Pakketten**.
 1. Klikken **Pakket uploaden** en kiest u het pakket dat u in de vorige stap hebt gedownload. Klikken **Installeren** om het pakket te installeren.
-

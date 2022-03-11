@@ -19,7 +19,7 @@ Onboarding is het proces waarin een aangewezen [Systeembeheerder](https://experi
 
 Als systeembeheerder, vat dit document de zeer eerste stappen in uw onboarding reis samen.
 
-Na het lezen van deze sectie moet u in staat zijn om:
+Nadat u deze sectie hebt gelezen, kunt u het volgende doen:
 
 * Toegang tot en aanmelding bij Admin Console.
 * Controleer uw rechten als systeembeheerder via Admin Console.

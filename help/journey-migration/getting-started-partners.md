@@ -1,7 +1,8 @@
 ---
 title: De Gids van de migratie aan Experience Manager as a Cloud Service voor Partners
 description: De Gids van de migratie aan Experience Manager as a Cloud Service voor Partners
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2112'
 ht-degree: 7%

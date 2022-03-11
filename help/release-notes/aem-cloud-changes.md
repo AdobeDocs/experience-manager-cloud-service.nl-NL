@@ -1,6 +1,6 @@
 ---
-title: Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
-description: Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service
+title: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
+description: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
@@ -9,15 +9,15 @@ ht-degree: 9%
 
 ---
 
-# Opvallende wijzigingen in Adobe Experience Manager (AEM) als Cloud Service {#notable-changes-aem-cloud}
+# Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
 
 AEM Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer van uw AEM-projecten. Er zijn echter een aantal verschillen tussen AEM Sites op locatie of in Adobe Managed Service in vergelijking met AEM Cloud Service. In dit document worden de belangrijke verschillen belicht.
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
->title="Opvallende wijzigingen in AEM als Cloud Service"
->abstract="Op dit tabblad kunt u inhoud weergeven die u helpt de verschillen te begrijpen tussen AEM op locatie of in Adobe Managed Services in vergelijking met AEM als Cloud Service."
->additional-url="https://video.tv.adobe.com/v/330543" text="Evolutie van AEM als Cloud Service"
+>title="Opvallende wijzigingen in AEM as a Cloud Service"
+>abstract="Op dit tabblad kunt u inhoud weergeven die u helpt de verschillen te begrijpen tussen AEM op locatie of in Adobe Managed Services in vergelijking met AEM as a Cloud Service."
+>additional-url="https://video.tv.adobe.com/v/330543" text="Evolutie van AEM as a Cloud Service"
 
 
 >[!NOTE]
@@ -50,13 +50,13 @@ De belangrijkste verschillen zijn te vinden op de volgende gebieden:
 
 ## /apps en /libs zijn onveranderlijk bij runtime {#apps-libs-immutable}
 
-Alle inhoud en submappen in `/apps` en `/libs` zijn alleen-lezen. Om het even welke eigenschap of douanecode die verwacht om veranderingen daar aan te brengen zal er niet doen. Er wordt een fout geretourneerd dat dergelijke inhoud alleen-lezen is en de schrijfbewerking niet kan worden voltooid. Dit heeft gevolgen voor een aantal AEM:
+Alle inhoud en submappen in `/apps` en `/libs` is alleen-lezen. Om het even welke eigenschap of douanecode die verwacht om veranderingen daar aan te brengen zal er niet doen. Er wordt een fout geretourneerd dat dergelijke inhoud alleen-lezen is en de schrijfbewerking niet kan worden voltooid. Dit heeft gevolgen voor een aantal AEM:
 
-* Wijzigingen in `/libs` zijn helemaal niet toegestaan.
+* Geen wijzigingen in `/libs` zijn überhaupt toegestaan.
    * Dit is geen nieuwe regel, nochtans werd dit niet afgedwongen in vorige on-premise versies van AEM.
-* Bedekkingen voor gebieden in `/libs` die mogen worden bedekt, zijn nog steeds toegestaan binnen `/apps`.
+* Bedekkingen voor gebieden in `/libs` die mogen worden overschreden, zijn nog steeds toegestaan binnen `/apps`.
    * Dergelijke overlays moeten afkomstig zijn van Git via de CI/CD-leiding.
-* De statische informatie van het malplaatjeontwerp die in `/apps` wordt opgeslagen kan niet via UI worden uitgegeven.
+* Statische het ontwerpinformatie van het Malplaatje die in wordt opgeslagen `/apps` kan niet via UI worden bewerkt.
    * Het wordt aanbevolen bewerkbare sjablonen te gebruiken.
    * Als de Statische Malplaatjes nog worden vereist, moet de configuratieinformatie uit Git via de pijpleiding CI/CD komen.
 * MSM de Vervaging en de douaneMSM uitrolconfiguraties moeten van Git via de pijpleiding worden geïnstalleerd CI/CD.
@@ -64,14 +64,14 @@ Alle inhoud en submappen in `/apps` en `/libs` zijn alleen-lezen. Om het even we
 
 ## OSGi-bundels en -instellingen moeten zijn gebaseerd op gegevensopslagruimte {#osgi}
 
-De console van het Web, die in vorige versies van AEM wordt gebruikt om montages te veranderen OSGi, is niet beschikbaar in AEM Cloud Service. Daarom moeten wijzigingen in OSGi worden aangebracht via de CI/CD-pijplijn.
+De webconsole, die in vorige versies van AEM werd gebruikt om OSGi-instellingen te wijzigen, is niet beschikbaar in AEM Cloud Service. Daarom moeten wijzigingen in OSGi worden aangebracht via de CI/CD-pijplijn.
 
 * Wijzigingen in OSGi-instellingen kunnen alleen via Git-persistentie worden uitgevoerd als op JCR gebaseerde OSGi-instellingen.
 * Nieuwe of bijgewerkte OSGi-bundels moeten via Git worden geïntroduceerd als onderdeel van het aanlegproces van de CI/CD-pijplijn.
 
 ## Wijzigingen in publicatieruimte zijn niet toegestaan {#changes-to-publish-repo}
 
-Naast wijzigingen in de map `/home` op de publicatielaag zijn directe wijzigingen in de publicatiereserver niet toegestaan op AEM Cloud Service. In eerdere versies van on-premise AEM of AEM op AMS kunnen wijzigingen in de code rechtstreeks worden doorgevoerd in de publicatieopslagplaats. Sommige beperkingen kunnen op de volgende manieren worden beperkt:
+Behalve wijzigingen onder de `/home` op de publicatielijst. Directe wijzigingen in de publicatiereserver zijn niet toegestaan op AEM Cloud Service. In eerdere versies van on-premise AEM of AEM op AMS kunnen wijzigingen in de code rechtstreeks worden doorgevoerd in de publicatieopslagplaats. Sommige beperkingen kunnen op de volgende manieren worden beperkt:
 
 * Voor op inhoud en inhoud gebaseerde configuratie: Breng de wijzigingen aan in de auteurinstantie en publiceer deze.
 * Voor code en configuratie: de wijzigingen in de GIT-opslagplaats aan te brengen en de CI/CD-pijpleiding uit te voeren.
@@ -96,7 +96,7 @@ Aanvullende of aangepaste uitvoermodi zijn niet mogelijk in AEM Cloud Service.
 
 ## Verwijderen van replicatieagents {#replication-agents}
 
-In AEM Cloud Service, wordt de inhoud gepubliceerd gebruikend [het Verdelen van de Inhoud Distributie](https://sling.apache.org/documentation/bundles/content-distribution.html). De replicatieagenten die in vorige versies van AEM worden gebruikt worden niet meer gebruikt of verstrekt, die de volgende gebieden van bestaande AEM projecten zouden kunnen beïnvloeden:
+In AEM Cloud Service wordt inhoud gepubliceerd met [Distributie van inhoud verkopen](https://sling.apache.org/documentation/bundles/content-distribution.html). De replicatieagenten die in vorige versies van AEM worden gebruikt worden niet meer gebruikt of verstrekt, die de volgende gebieden van bestaande AEM projecten zouden kunnen beïnvloeden:
 
 * Aangepaste workflows die bijvoorbeeld inhoud doorsturen naar replicatieagents van voorvertoningsservers.
 * Aanpassing aan replicatieagenten om inhoud om te zetten
@@ -114,4 +114,4 @@ Voor project dat van AMS of een op-gebouw Adobe overgaat adviseert sterk leverag
 
 ## Afhandeling en levering van bedrijfsmiddelen {#asset-handling}
 
-Het uploaden, verwerken en downloaden van bedrijfsmiddelen wordt in [!DNL Experience Manager Assets] geoptimaliseerd als een [!DNL Cloud Service]. [!DNL Assets] is nu efficiënter, maakt meer schaling mogelijk en kunt u sneller uploaden en downloaden. Bovendien is dit van invloed op de bestaande aangepaste code en bepaalde bewerkingen. Voor een lijst van veranderingen en voor pariteit met [!DNL Experience Manager] 6.5 eigenschappen, zie [veranderingen in  [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Het uploaden, verwerken en downloaden van bedrijfsmiddelen is geoptimaliseerd in [!DNL Experience Manager Assets] als [!DNL Cloud Service]. [!DNL Assets] is nu efficiënter, maakt meer schaling mogelijk en kunt u sneller uploaden en downloaden. Bovendien is dit van invloed op de bestaande aangepaste code en bepaalde bewerkingen. Voor een lijst met wijzigingen en voor pariteit met [!DNL Experience Manager] 6.5-functies, raadpleegt u de [wijzigingen in [!DNL Assets]](/help/assets/assets-cloud-changes.md).

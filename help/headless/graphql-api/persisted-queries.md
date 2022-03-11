@@ -2,13 +2,13 @@
 title: Blijvende query's voor GraphQL
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
-source-git-commit: 0912cadeae13050c9cfc606d1c2b8f4236cd78ed
+exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 1%
 
 ---
-
 
 # Blijvende query&#39;s voor GraphQL {#persisted-queries-caching}
 

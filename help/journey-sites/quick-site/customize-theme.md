@@ -1,13 +1,13 @@
 ---
 title: Het sitethema aanpassen
 description: Leer hoe u het sitethema hebt gemaakt, hoe u het kunt aanpassen en hoe u het kunt testen met live AEM-inhoud.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
 
 ---
-
 
 # Het sitethema aanpassen {#customize-the-site-theme}
 

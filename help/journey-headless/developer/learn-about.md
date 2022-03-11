@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Meer informatie over CMS Headless Development {#learn-about}
 
-In dit deel van de [AEM Headless Developer Journey,](overview.md) leert u over technologie zonder kop en waarom u deze zou gebruiken.
+In dit deel van het [AEM Headless Developer Journey,](overview.md) leer over technologie zonder kop en waarom je het zou gebruiken.
 
 ## Doelstelling {#objective}
 
@@ -58,7 +58,7 @@ Het hoofd van een systeem is doorgaans de uitvoerrenderer van dat systeem, meest
 
 Een server zonder kop zit bijvoorbeeld waarschijnlijk ergens in een rack in een serverruimte en heeft geen monitor aangesloten. Om tot het toegang te hebben moet u ver met het verbinden. In dit geval is de monitor de kop omdat deze zorgt voor het renderen van de uitvoer van de server. Als consument van de service geeft u uw eigen hoofd (de monitor) wanneer u op afstand verbinding maakt.
 
-Als we het hebben over een CMS zonder kop, beheert het CMS de inhoud en blijft het leveren aan consumenten. Door de **content** echter alleen op gestandaardiseerde wijze te leveren, laat een CMS zonder kop de uiteindelijke uitvoerrendering weg en laat de **presentatie** van de inhoud over aan de verbruikende service.
+Als we het hebben over een CMS zonder kop, beheert het CMS de inhoud en blijft het leveren aan consumenten. Maar alleen door de **content** op gestandaardiseerde wijze weglaat een CMS zonder kop de uiteindelijke rendering van de uitvoer, waardoor de **presentatie** van de inhoud aan de verbruikende dienst.
 
 ![CMS zonder hoofd](assets/headless-cms.png)
 
@@ -86,7 +86,7 @@ Bij levering van inhoud zonder kop wordt vaak gebruikgemaakt van GraphQL API&#39
 
 Wat de gekozen API ook is, door een headless-systeem te definiëren op basis van gemeenschappelijke API&#39;s, kunt u de nieuwste browser en andere webtechnologieën, zoals progressieve webapps (PWA), benutten. API&#39;s maken een standaardinterface die eenvoudig kan worden uitgebreid en aangepast.
 
-Inhoud wordt doorgaans weergegeven aan de clientzijde. Dit betekent doorgaans dat iemand uw inhoud op een mobiel apparaat aanroept, dat uw CMS de inhoud levert en dat het mobiele apparaat (de client) verantwoordelijk is voor het renderen van de inhoud die u hebt bediend. Als het apparaat oud of anderszins langzaam is, is uw digitale ervaring ook langzaam.
+Inhoud wordt doorgaans aan de clientzijde gerenderd. Dit betekent doorgaans dat iemand uw inhoud op een mobiel apparaat aanroept, dat uw CMS de inhoud levert en dat het mobiele apparaat (de client) verantwoordelijk is voor het renderen van de inhoud die u hebt bediend. Als het apparaat oud of anderszins langzaam is, is uw digitale ervaring ook langzaam.
 
 Door de inhoud los te koppelen van de presentatie kan er meer controle zijn over dergelijke prestatieproblemen aan de clientzijde. De server-kant teruggeven (SSR) brengt de verantwoordelijkheid over om de inhoud van browser van de cliënt aan de server terug te geven. Zo kunt u als leverancier van de inhoud uw publiek een niveau van gegarandeerde prestaties aanbieden als dat is wat wordt vereist.
 
@@ -120,11 +120,11 @@ Bedankt dat je aan de slag bent gegaan met je AEM tocht zonder kop! Nu u dit doc
 * Begrijp waarom en wanneer de kop niet nodig is.
 * Op hoog niveau weten hoe headless-concepten worden gebruikt en hoe ze met elkaar verweven zijn.
 
-Bouw op deze kennis voort en zet uw AEM onophoudelijke reis door het document [Aan de slag met AEM zonder hoofd als Cloud Service ](getting-started.md) te herzien waar u zult leren hoe te opstelling de noodzakelijke hulpmiddelen en hoe te beginnen nadenkend over hoe AEM de levering van inhoud zonder kop en zijn eerste vereisten benadert.
+Gebaseerd op deze kennis en doorgaan met uw AEM zonder hoofd door het document opnieuw te bekijken [Aan de slag met AEM headless as a Cloud Service](getting-started.md) waar u zult leren hoe te opstelling de noodzakelijke hulpmiddelen en hoe te beginnen te denken over hoe AEM de levering van inhoud zonder kop en zijn eerste vereisten benadert.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Hoewel u wordt aangeraden naar het volgende gedeelte van de ontwikkeltocht zonder kop te gaan door het document [Aan de slag met AEM zonder kop als Cloud Service te bekijken,](getting-started.md) zijn de volgende aanvullende, optionele bronnen die een diepere duik maken over bepaalde concepten die in dit document worden genoemd, maar die niet nodig zijn om verder te gaan op de tocht zonder kop.
+Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder kop te gaan door het document te bekijken [Aan de slag met AEM headless as a Cloud Service,](getting-started.md) hieronder volgen enkele aanvullende , optionele bronnen die dieper ingaan op bepaalde in dit document genoemde concepten , maar die niet nodig zijn om verder te gaan op de weg zonder kop .
 
-* [Inleiding tot de Architectuur van Adobe Experience Manager als Cloud Service](/help/overview/architecture.md)  - Begrijp AEM als structuur van een Cloud Service
-* [AEM Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  zonder kop - Gebruik deze praktische zelfstudies om te bekijken hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.
+* [Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Inzicht AEM as a Cloud Service structuur
+* [Tutorials zonder kop AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Gebruik deze praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.

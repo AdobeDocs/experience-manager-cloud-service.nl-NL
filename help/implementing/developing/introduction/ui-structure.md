@@ -1,22 +1,21 @@
 ---
 title: Structuur van de AEM-interface
 description: De AEM UI heeft verschillende onderliggende beginselen en bestaat uit verschillende sleutelelementen
-translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 0%
 
 ---
 
-
-# Structuur van de AEM UI {#structure-of-the-aem-ui}
+# Structuur van de AEM-interface {#structure-of-the-aem-ui}
 
 De AEM UI heeft verschillende onderliggende beginselen en bestaat uit verschillende sleutelelementen:
 
 ## Consoles {#consoles}
 
-### Basislay-out en formaat {#basic-layout-and-resizing}
+### Basislay-out en -formaat {#basic-layout-and-resizing}
 
 De interface biedt ruimte voor zowel mobiele apparaten als bureaubladapparaten, in plaats van twee stijlen te maken, AEM gebruikt één stijl die voor alle schermen en apparaten werkt.
 
@@ -69,7 +68,7 @@ De standaardwaarde is **Alleen inhoud** (spoorstaaf verborgen).
 
 ![Linkerspoor](assets/ui-left-rail.png)
 
-## Pagina-ontwerp {#page-authoring}
+## Pagina&#39;s ontwerpen {#page-authoring}
 
 Bij het ontwerpen van pagina&#39;s ziet u de volgende structurele gebieden.
 
@@ -96,7 +95,7 @@ Het editorframe is een container (abstract) voor alle pagina-ontwerpelementen. H
 
 ### Zijpaneel {#side-panel}
 
-Dit bevat drie standaardtabbladen. Met de tabbladen **Middelen** en **Componenten** kunt u dergelijke elementen selecteren en uit het deelvenster slepen en op de pagina neerzetten. Met het tabblad **Inhoudsstructuur** kunt u de hiërarchie van inhoud op de pagina inspecteren.
+Dit bevat drie standaardtabbladen. De **Activa** en **Componenten** Met tabs kunt u dergelijke elementen selecteren en ze uit het deelvenster slepen en op de pagina neerzetten. De **Inhoudsstructuur** kunt u de hiërarchie van inhoud op de pagina controleren.
 
 Het zijpaneel is standaard verborgen. Als deze optie is geselecteerd, wordt deze links weergegeven of schuift deze over om het hele venster te bedekken wanneer het vensterformaat kleiner is dan 1024 px; zoals bijvoorbeeld op een mobiel apparaat.
 
@@ -128,7 +127,7 @@ Op het tabblad Inhoudsstructuur kunt u de hiërarchie van inhoud op de pagina we
 
 ### Bedekkingen {#overlays}
 
-Deze bedekken het inhoudskader en worden gebruikt door [layers](#layer) om de mechanica te realiseren van hoe u (volledig transparant) met de componenten en hun inhoud kunt in wisselwerking staan.
+Deze bedekken het inhoudsframe en worden gebruikt door de [lagen](#layer) om te realiseren hoe u (volledig transparant) kunt communiceren met de componenten en hun inhoud.
 
 De overlays bevinden zich in het editorframe (met alle andere pagina-ontwerpelementen), hoewel ze de juiste componenten in het inhoudsframe bedekken.
 
@@ -157,7 +156,7 @@ De laagschakelaar is beschikbaar als daling onderaan van de toolbar (bij de bove
 
 ![Laagschakelaar](assets/ui-layer-switcher.png)
 
-### Deelwerkbalk {#component-toolbar}
+### Werkbalk Component {#component-toolbar}
 
 Elke instantie van een component zal zijn toolbar tonen wanneer geklikt (of eens of met een langzaam tweemaal klikken). De werkbalk bevat de specifieke handelingen (bijvoorbeeld kopiëren, plakken, open editor) die beschikbaar zijn voor de componentinstantie op de pagina.
 
@@ -169,4 +168,4 @@ Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst b
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Zie de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor meer technische informatie.
+Voor meer technische informatie raadpleegt u de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor de pagina-editor.

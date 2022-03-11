@@ -1,13 +1,13 @@
 ---
 title: AEM Referentie demos Add-on-reis
 description: Begin hier voor een geleide reis door hoe te om de AEM toe:voegen-aan van de Demo van de Verwijzing aan een zandbakmilieu met minimale AEM configuratie gemakkelijk toe te voegen en de krachtige eigenschappen van AEM met rijke voorbeelden te kunnen testen die op best-praktijken worden gebaseerd.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 1%
 
 ---
-
 
 # AEM Referentie demos Add-on-reis {#reference-demos-add-on-journey}
 

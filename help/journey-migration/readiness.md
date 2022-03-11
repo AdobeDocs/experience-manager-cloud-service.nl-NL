@@ -1,7 +1,8 @@
 ---
 title: Gereedheidsfase
 description: Meer informatie over de stappen die u moet nemen om ervoor te zorgen dat uw AEM-installatie klaar is om naar de cloud te worden verplaatst
-source-git-commit: d851ca19070232e1d43f5c5e546d4174e2c310a2
+exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 6%
@@ -49,7 +50,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   <tr>
     <td>Meerdere en onveranderbare filters scheiden in overeenkomende pakketten</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en">as a Cloud Service opmerkelijke wijzigingen AEM</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEM projectstructuur voor AEM as a Cloud Service</a></td>
-    <td>Een enkele verpakking die in AEM as a Cloud Service kan worden geïmplementeerd, kan subpakketten bevatten, voornamelijk om muteerbare en onveranderlijke inhoud te bevatten die in hun eigen pakketten is gescheiden.</td>
+    <td>Een enkel pakket dat in AEM as a Cloud Service kan worden geïmplementeerd, kan subpakketten bevatten, voornamelijk om muteerbare en onveranderlijke inhoud te bevatten die in hun eigen pakketten is gescheiden.</td>
   </tr>
   <tr>
     <td>Reparatie-item</td>

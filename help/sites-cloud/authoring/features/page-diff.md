@@ -1,14 +1,13 @@
 ---
 title: Page Diff-optie
 description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '622'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Page Diff-optie {#page-diff}
 
@@ -20,22 +19,22 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 
 >[!NOTE]
 >
->De gebruiker moet **Modify/Create/Delete** toestemming op de knoop `/content/versionhistory` hebben om de eigenschap te gebruiken.
+>De gebruiker moet de **Wijzigen/Maken/Verwijderen** toestemming voor het knooppunt `/content/versionhistory` om deze functie te gebruiken.
 >
 >Zie [Developing and Page Diff](/help/implementing/developing/introduction/page-diff.md#operation-details) voor meer technische details over deze functie.
 
-## {#use} gebruiken
+## Gebruiken {#use}
 
 De zijdelingse scheiding kan het volgende vergelijken:
 
-* [Versies](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page)  - Eerdere versie van een pagina met de huidige status
-* [Actieve kopieën](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)  - Live kopie met vervaging
-* [Starten](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page)  - Starten met bron
-* [Taalkopieën](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)  - Een pagina voor en na (her)vertaling
+* [Versies](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - Eerdere versie van een pagina met de huidige staat
+* [Actieve kopieën](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live kopie met bijbehorende blauwdruk
+* [Starten](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - Starten met bron
+* [Taalkopieën](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) - Een pagina voor en na (her)vertaling
 
 Zie de respectieve onderwerpen over hoe te om diff binnen die contexten te beginnen.
 
-### Presentatie van verschillen {#presentation-of-differences}
+### Presentatie van de verschillen {#presentation-of-differences}
 
 Ongeacht de inhoud die wordt vergeleken, blijft de presentatie van het diff gelijk.
 
@@ -48,14 +47,14 @@ De bron van beide pagina&#39;s wordt duidelijk weergegeven in de koptekstbalk bo
 
 ![Versies naast elkaar](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
 
-De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
+Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
 
 **Componentwijzigingen**
 
 * Lichtgroen - component toegevoegd
 * Roze - component verwijderd
 
-**HTML-wijzigingen**
+**HTML wijzigen**
 
 * Donkergroen - HTML toegevoegd
 * Rood - HTML verwijderd
@@ -64,7 +63,7 @@ De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn ge
 >
 >Bij het vergelijken van taalkopieën wordt het markeren gedeactiveerd, omdat in een vertaling alles verandert en het markeren geen nut zou hebben.
 
-### Volledig scherm en {#fullscreen-and-exiting} afsluiten
+### Volledig scherm en afsluiten {#fullscreen-and-exiting}
 
 Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de twee zijden van het deelvenstervak om het venster te vergroten naar het volledige browservenster.
 
@@ -91,7 +90,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Bij verschillende versies en lanceringen houdt diff geen rekening met dynamische componenten zoals broodkruimels, menu&#39;s, productlijsten of logo&#39;s (componenten die op de plaatsstructuur vertrouwen om hun inhoud terug te geven).
 * Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
-   * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) voor de pagina om te zien of is de pagina bewogen.
+   * Als u problemen ondervindt met een diff, controleert u [Tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) om te zien of de pagina is verplaatst.
 
 >[!NOTE]
 >
@@ -99,4 +98,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Raadpleeg de [documentatie voor ontwikkelaars](/help/implementing/developing/introduction/page-diff.md) van deze functie voor meer informatie over de werking van het mechanisme voor paginagecheiding en de beperkingen die paginaafbreking kunnen beïnvloeden.
+>Zie voor meer informatie over de werking van het mechanisme voor pagina-diff en de beperkingen die invloed kunnen hebben op pagina-diff de [ontwikkelaarsdocumentatie](/help/implementing/developing/introduction/page-diff.md) van deze functie.

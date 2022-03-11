@@ -20,4 +20,4 @@ Vergelijkbaar met de AEM WKND-zelfstudie biedt deze op SPA gerichte tegenhanger 
 * [Uw eerste Angular SPA in AEM maken](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
 * [Uw eerste SPA Reageren in AEM maken](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
 
-Alvorens u met uw eigen SPA project voor AEM begint, kunt u [het Ontwikkelen SPA voor AEM](developing.md) document ook willen herzien.
+Voordat u met uw eigen SPA project begint voor AEM, kunt u echter ook de opdracht [SPA ontwikkelen voor AEM](developing.md) document.

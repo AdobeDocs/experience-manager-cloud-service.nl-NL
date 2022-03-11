@@ -1,17 +1,17 @@
 ---
-title: Release-aantekeningen voor 2021.8.0-release van [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Release-aantekeningen voor 2021.8.0-release van [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+title: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 0%
 
 ---
 
+# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-# Huidige releaseopmerkingen voor as a Cloud Service [!DNL Adobe Experience Manager] {#release-notes}
-
-In de volgende sectie worden de algemene opmerkingen bij de release weergegeven voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ De volgende release (2021.9.0) vindt plaats op 6 oktober 2021.
 
 ## Video vrijgeven {#release-video}
 
-Bekijk de video [August 2021 Release Overview](https://video.tv.adobe.com/v/336277) voor een overzicht van de toegevoegde functies.
+Kijk eens naar de [Overzicht release augustus 2021](https://video.tv.adobe.com/v/336277) video voor een overzicht van de toegevoegde functies.
 
-## [!DNL Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
@@ -41,38 +41,38 @@ Bekijk de video [August 2021 Release Overview](https://video.tv.adobe.com/v/3362
 
 * Wanneer u TXT-bestanden uploadt, genereert de elementmicroservices automatisch een miniatuur. De PNG-miniatuur is een uitvoering van het TXT-bestand waarmee gebruikers de inhoud of de bestanden tot op zekere hoogte kunnen identificeren zonder de bestanden te openen. Deze functionaliteit vereist geen configuratie en werkt standaard.
 
-   ![Een uitvoering van een TXT-bestand wordt automatisch gegenereerd  [!DNL Assets] in PNG-indeling](/help/assets/assets/thumbnail-rendition-txt-file.png)
+   ![Er wordt automatisch een uitvoering van een TXT-bestand gegenereerd door [!DNL Assets] in PNG-indeling](/help/assets/assets/thumbnail-rendition-txt-file.png)
    *Afbeelding: Er wordt automatisch een uitvoering van een TXT-bestand gegenereerd om u te helpen het bestand te identificeren zonder het te openen.*
 
-### Nieuwe functie in het prerelease-kanaal [!DNL Assets] {#assets-prerelease-features}
+### Nieuwe functie in het dialoogvenster [!DNL Assets] prerelease-kanaal {#assets-prerelease-features}
 
 * Gebruikers kunnen de elementen die in de zoekresultaten worden weergegeven nu sorteren in de kolom- en kaartweergave. Het sorteren werkt op de kolommen Naam, Gemaakt, Gewijzigd of Geen.
 
-   ![De zoekresultaten sorteren  [!DNL Assets] in de kolom- en kaartweergave](/help/assets/assets/sort-searched-assets.png)
-   *Afbeelding: U kunt de zoekresultaten sorteren  [!DNL Assets] in de kolom- en kaartweergave.*
+   ![De zoekresultaten sorteren in [!DNL Assets] in kolom- en kaartweergaven](/help/assets/assets/sort-searched-assets.png)
+   *Afbeelding: De zoekresultaten sorteren in [!DNL Assets] in de kolom- en kaartweergave.*
 
 ### Buizen vastgesteld in [!DNL Assets] {#assets-bugs-fixed}
 
-* Wanneer een lid van de contributorgroep aan de [!DNL Assets] Console navigeert, wordt een extra `POST` verzoek geproduceerd om een Inzameling te proberen en tot stand te brengen. Dit verzoek wordt niet vereist, het ontbreekt wegens toestemmingskwesties, en leidt tot veel fouten in de logboeken. (CQ-4328856)
-* Wanneer gebruikers een element weergeven en [!UICONTROL Timeline] selecteren in het pop-upmenu in het linkerdeelvenster, wordt een fout weergegeven. In de logboeken, worden vele waarschuwingen geregistreerd toe te schrijven aan een slechte vraag. (CQ-4328919)
+* Wanneer een lid van de contributiegroep naar de [!DNL Assets] Console, een extra `POST` Er wordt een aanvraag gegenereerd om een verzameling te maken. Dit verzoek wordt niet vereist, het ontbreekt wegens toestemmingskwesties, en leidt tot veel fouten in de logboeken. (CQ-4328856)
+* Wanneer gebruikers een element weergeven en de optie [!UICONTROL Timeline] in het pop-upmenu in het linkerdeelvenster wordt een fout weergegeven. In de logboeken, worden vele waarschuwingen geregistreerd toe te schrijven aan een slechte vraag. (CQ-4328919)
 
-## [!DNL Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
-### Nieuw in [!DNL Forms] {#what-is-new-forms}
+### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* De dienst van de automatede form conversion kan [PDF forms in Italiaans en Portugees ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) in Aangepast Forms omzetten.
+* De service automatede form conversion kan [PDF forms converteren naar Italiaans en Portugees](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) naar Adaptive Forms.
 
-* **Op acroform gebaseerd Document of Record**: as a Cloud Service AEM Forms biedt ondersteuning voor het gebruik van  [Adobe Acrobat Form PDF (Acroform PDF) ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als sjabloon voor Document of Record naast XFA-formuliersjabloon.
+* **Op acroform gebaseerd document of record**: as a Cloud Service AEM Forms-ondersteuning gebruiken [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als een sjabloon voor Document of Record naast XFA-formuliersjabloon.
 
-* **Microsoft Azure Data Store-connector**: U kunt nu het formuliergegevensmodel  [verbinden met Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft Azure Storage als een BLOB.
+* **Microsoft Azure Data Store-connector**: U kunt nu [Formuliergegevensmodel verbinden met Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft Azure Storage als een BLOB.
 
-### Nieuwe functies beschikbaar in het prerelease-kanaal [!DNL Forms] {#prerelease-features-forms}
+### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
 
 * **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt nu elke ontvanger van de overeenkomst inschakelen om zijn rol in een adaptief formulier te configureren, waarbij ondertekenaar de standaardrol is.
 
 * **Analyses voor Adaptive Forms**: U kunt het gedrag van de eindgebruiker nu vastleggen en volgen via Adobe Analytics for Adaptive Forms om inzichten van de eindgebruiker te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
-* **Sluit AEM Forms eenvoudig aan op Microsoft Dynamics en Salesforce.com**: De dienst verstrekt uit de doos gegevensbronconfiguratie en gegevensmodellen voor de Dynamica van Microsoft en Salesforce.com, die het voor ontwikkelaars sneller en gemakkelijker maken om de Dynamica van Microsoft en Salesforce.com als gegevensbronnen voor een adaptieve vorm te vormen.
+* **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce.com**: De dienst verstrekt uit de doos gegevensbronconfiguratie en gegevensmodellen voor de Dynamica van Microsoft en Salesforce.com, die het voor ontwikkelaars sneller en gemakkelijker maken om de Dynamica van Microsoft en Salesforce.com als gegevensbronnen voor een adaptieve vorm te vormen.
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
@@ -96,9 +96,9 @@ De volgende release is gepland voor 9 september 2021.
 ### Wat is er nieuw? {#what-is-new-aug}
 
 * Klanten van Cloud Servicen kunnen nu SLA-rapporten (Service Level Agreement) weergeven in Cloud Manager. Dit zal de komende maanden geleidelijk beschikbaar worden gesteld.
-Zie [SLA Rapportering](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) om meer te leren.
+Zie [SLA-rapportage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) voor meer informatie.
 
-* Het type en de strengheid van de IndexType en `IndexDamAssetLucene` kwaliteitsregels zijn veranderd. Dit zijn nu beide bugs van Blocker *serverity*.
+* Het type en de ernst van het IndexType en `IndexDamAssetLucene` de kwaliteitsvoorschriften zijn gewijzigd . Dit zijn nu beide bugs van Blocker *seriteit*.
 
 * De nieuwe de kwaliteitsregels van de indexkwaliteit van de eikel zijn geïntroduceerd om asynchrone en tika configuraties te behandelen.
 
@@ -118,7 +118,7 @@ Zie [SLA Rapportering](https://experienceleague.adobe.com/docs/experience-manage
 
 * De eerste instapweigering mislukte voor nieuwe organisaties met zeer lange namen.
 
-* Af en toe, wanneer een pijpleiding tweemaal om één of andere reden wordt teweeggebracht, resulteert het in één van de uitvoeringen die met *geen status van de pijpleidingsuitvoering kan bijwerken* fout.
+* Af en toe, wanneer een pijpleiding tweemaal om één of andere reden in werking wordt gesteld, resulteert het in één van de terechtstellingen die nalaten *kan uitvoerstatus van pijpleiding niet bijwerken* fout.
 
 ## De tool Content Transfer {#content-transfer-tool}
 
@@ -130,6 +130,6 @@ De releasedatum voor Content Transfer Tool v1.5.6 is 11 augustus 2021.
 
 * In sommige gevallen zijn niet alle gebruikers gemigreerd naar de doelinstantie. Om deze moeilijke CTT v1.5.6 te krijgen wordt vereist samen met aem-ethos-hulpmiddelen 1.2.354 of recentere versie op het doel AEM as a Cloud Service instantie.
 
-* De **Stop Ingestie** knoop werd onbruikbaar gemaakt tijdens opname aan de Publish instantie. Dit is niet nodig omdat er geen stap voor het herstellen van het mongo is tijdens de opname van Publiceren.
+* De **Inscriptie stoppen** werd uitgeschakeld tijdens het toevoegen aan de instantie Publiceren. Dit is niet nodig omdat er geen stap voor het herstellen van het mongo is tijdens de opname van Publiceren.
 
-* CTT heeft de map `/tmp` niet opgeschoond na een geslaagde extractie. Dit leidde soms tot problemen met schijfruimte.
+* De CTT heeft de `/tmp` map na een geslaagde extractie. Dit leidde soms tot problemen met schijfruimte.

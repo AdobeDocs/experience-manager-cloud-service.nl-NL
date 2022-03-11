@@ -22,14 +22,13 @@ Het is mogelijk dat in uw organisatie verschillende afdelingen verschillende asp
 
 Digitaal bestuur begint met het uitzoeken wie verantwoordelijk is voor wat en wie digitaal gerichte taken uitvoert. Mogelijk moet u een aantal strategische aannemers maken om de benodigde vaardigheden toe te voegen. Een nog grotere uitdaging is het aansturen van een cultuurverschuiving — het opbouwen van brede steun voor de nieuwe technologie en het helpen van mensen om gewend te raken aan nieuwe manieren om dingen te doen. Een belangrijk onderdeel van die inspanning is het creëren van een digitale gemeenschap, die mensen van elkaar laat leren en steunen.
 
-We zullen ons momenteel concentreren op het plaatsen van de juiste mensen in de juiste taken om uw Adobe Experience Manager-implementatie te helpen sturen. Voor elk kernproduct, Sites en Experience Managers Experience Managers, hebben we een lijst met rollen beschikbaar gesteld die u moet opvullen, samen met de vaardigheden, expertiseniveaus en kenmerken die mensen effectief maken in de verschillende functies.
+We zullen ons momenteel concentreren op het plaatsen van de juiste mensen in de juiste taken om uw Adobe Experience Manager-implementatie te helpen sturen. Voor elk basisproduct — Experience Manager Sites en Experience Manager Assets — hebben we een lijst met rollen beschikbaar gesteld die u moet vervullen, samen met de vaardigheden, expertiseniveaus en kenmerken die mensen effectief maken in de verschillende rollen.
 
 Uw taak deze week is om beide lijsten met uw implementatieteam te evalueren en ervoor te zorgen dat u in elke rol personen met relevante kwalificaties hebt.
 
-## **Belangrijke rollen voor AEM sites van Experience Managers**
+## **Belangrijkste rollen voor AEM Experience Manager Sites**
 
-Een winnend bemanningsteam heeft negen mensen op de juiste plaatsen nodig — net als uw plaatsingsteam. Uw succes met Adobe Experience Manager Sites hangt af van de kracht van uw teamleden en hoe goed ze samenwerken. Zorg ervoor u deze negen toegewezen rollen hebt
-aan personen met de voorgestelde kwalificaties.
+Een winnend bemanningsteam heeft negen mensen op de juiste plaatsen nodig — net als uw plaatsingsteam. Uw succes met Adobe Experience Manager Sites hangt af van de kracht van uw teamleden en hoe goed ze samenwerken. Zorg ervoor u deze negen rollen hebt die aan mensen met de voorgestelde kwalificaties worden toegewezen.
 
 | Rol | Vaardigheden | Capaciteitsniveau | Kwaliteit |
 |--- |--- |--- |--- |
@@ -41,7 +40,7 @@ aan personen met de voorgestelde kwalificaties.
 | QA/UAT-lead | Gelijke certificering, begrip van SDLC | Melding aan intermediair | Gedetailleerd, processtation, consistent |
 | Technisch architect | Ervaring met IT-infrastructuur | Expert | Gedetailleerd, op processen gebaseerd, consistent |
 | Back-end Developer | Gelijke certificering, ervaring met computerprogrammering en computerwetenschap | Melding aan intermediair | Gedetailleerd, op processen gebaseerd, consistent |
-| Front-end Developer | Eenvoudige certificering, inzicht in HTML, CSS en JavaScript | Melding aan intermediair | Gedetailleerd, op processen gebaseerd, consistent |
+| Front-end Developer | Gelijke certificering, inzicht in HTML, CSS en JavaScript | Melding aan intermediair | Gedetailleerd, op processen gebaseerd, consistent |
 
 Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wanneer elke rol in het implementatieproces in spel komt.
 
@@ -49,9 +48,9 @@ Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wa
 
 ![](assets/team_involvement.png)
 
-**Controleer deze lijst met uw** team van de implementatie en zorg ervoor u mensen met relevante kwalificaties in elke rol hebt. Teamleden die minder bekend zijn met Adobe Experience Cloud, kunnen [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) leermiddelen gebruiken om gecertificeerd te worden via [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+**Deze lijst met uw implementatieteam bekijken** en zorg ervoor dat u mensen met relevante kwalificaties in elke rol hebt. Teamleden die minder bekend zijn met Adobe Experience Cloud kunnen [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) leermiddelen om gecertificeerd te worden [Adobe digitaal leren](https://learning.adobe.com/certification.html).
 
-## **Belangrijkste rollen voor AEM Experience Manager-elementen**
+## **Belangrijkste rollen voor AEM Experience Manager Assets**
 
 Van architect tot ScrumMaster, elke rol in dit team is onmisbaar — inclusief de DAM-bibliotheek.
 
@@ -67,7 +66,7 @@ Mogelijk hebt u al de meeste mensen die u nodig hebt om een geslaagde Adobe Expe
 | QA/UAT-lead | Gelijke certificering, begrip van SDLC | Melding aan intermediair | Gedetailleerd, processtation, consistent |
 | Technisch architect | Ervaring met IT-infrastructuur | Expert | Gedetailleerd, op processen gebaseerd, consistent |
 | Back-end Developer | Gelijke certificering, ervaring met computerprogrammering en computerwetenschap | Melding aan intermediair | Gedetailleerd, op processen gebaseerd, consistent |
-| Front-end Developer | Eenvoudige certificering, inzicht in HTML, CSS en JavaScript | Melding aan intermediair | Gedetailleerd, op processen gebaseerd, consistent |
+| Front-end Developer | Gelijke certificering, inzicht in HTML, CSS en JavaScript | Melding aan intermediair | Gedetailleerd, op processen gebaseerd, consistent |
 | DAM Librarian | Achtergrond en graad van de biowetenschappen | Expert | Gedetailleerd, procesgestuurd, geordend |
 
 Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wanneer elke rol in het implementatieproces in spel komt.
@@ -78,4 +77,4 @@ Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wa
 
 >[!TIP]
 >
-> Meer informatie over Adobe Experience Cloud en hefboomwerking middelen op [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) en wordt verklaard door [Adobe Digitaal Leren](https://learning.adobe.com/certification.html).
+> Meer informatie over Adobe Experience Cloud en bronnen gebruiken op [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) en worden gecertificeerd via [Adobe digitaal leren](https://learning.adobe.com/certification.html).

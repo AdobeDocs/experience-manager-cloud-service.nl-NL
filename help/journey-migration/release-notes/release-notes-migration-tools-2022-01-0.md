@@ -2,13 +2,13 @@
 title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.1.0
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.1.0
 feature: Release Information
-source-git-commit: 45520a55958030fa053491b921e70da18b16377f
+exl-id: cbd0c316-bda3-48fb-89d6-a8f97bad1970
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 3%
 
 ---
-
 
 # Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.1.0 {#release-notes}
 
@@ -27,4 +27,3 @@ De releasedatum voor Content Transfer Tool v1.7.18 is 18 januari 2022.
 ### Opgeloste problemen {#bug-fixes-ctt}
 
 * Standaardconfiguraties worden bijgewerkt om uitvoeringstijden tijdens het uitpakken te beperken.
-

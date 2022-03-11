@@ -15,7 +15,7 @@ ht-degree: 0%
 Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.9.0.
 
 >[!NOTE]
->Om de huidige Nota&#39;s van de Versie voor Adobe Experience Manager as a Cloud Service te zien, klik [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>Klik op [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## Releasedatum {#release-date}
 
@@ -29,9 +29,9 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.9.0 is 9 septe
 
 * Het logbestand met stappen voor codekwaliteit bevat nu uitgebreide logboekgegevens over het OakPal-scanproces.
 
-* De opties in het menu van de pagina Activiteit bevatten nu een optie voor **Logbestand downloaden** voor voltooide uitvoering van de codegenerator. Als u deze optie selecteert, wordt het logboek met de stap build gedownload.
+* De opties in het menu Activiteit pagina bevatten nu een optie voor **Logbestand downloaden** voor voltooide uitvoering van de Code Generator. Als u deze optie selecteert, wordt het logboek met de stap build gedownload.
 
-* Als u rechtstreeks op de programmakaart klikt, gaat u nu naar de pagina **Overzicht** van Cloud Manager. Zie [Een productieprogramma maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) voor meer informatie.
+* Als u rechtstreeks op de programmakaart klikt, gaat u nu naar Cloud Manager **Overzicht** pagina. Zie [Een productieprogramma maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) voor meer informatie .
 
 ### Opgeloste problemen {#bug-fixes}
 

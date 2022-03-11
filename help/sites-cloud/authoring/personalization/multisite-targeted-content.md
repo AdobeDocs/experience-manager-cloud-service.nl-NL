@@ -48,7 +48,6 @@ Een site of live kopie is gekoppeld aan een gebied met de activiteiten die besch
 >
 >* Als u rollouts of live kopieën gebruikt, is een MSM-licentie vereist.
 >* Wanneer u synchronisatie naar Adobe Target gebruikt, is een Adobe Target-licentie vereist.
-
 >
 
 
@@ -235,7 +234,6 @@ Een activiteit die overerft van een andere site wordt groen gemarkeerd naast de 
 >
 >* U kunt actieve kopieën in een activiteit alleen opschorten of loskoppelen.
 >* U hoeft live kopieën niet op te schorten of los te koppelen om een overgeërfde activiteit uit te breiden. U kunt altijd **new** lokale ervaringen en aanbiedingen voor die activiteit. Als u een bestaande activiteit wilt wijzigen, dan moet u overerving opschorten.
-
 >
 
 

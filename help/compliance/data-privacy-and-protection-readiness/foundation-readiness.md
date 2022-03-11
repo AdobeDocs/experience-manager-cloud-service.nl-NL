@@ -1,6 +1,6 @@
 ---
 title: Data Protection and Data Privacy Regulations - Adobe Experience Manager as a Cloud Service Foundation Readiness
-description: Leer over Adobe Experience Manager als steun van de Stichting van de Cloud Service voor de diverse Regels van de Bescherming van Gegevens en van de Privacy van Gegevens; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuwe AEM als een Cloud Service-project moet worden geïmplementeerd.
+description: Meer informatie over de ondersteuning van de Adobe Experience Manager as a Cloud Service Foundation voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuw AEM as a Cloud Service project moet worden uitgevoerd.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 5%
 
 ---
 
-# Adobe Experience Manager als Cloud Service Foundation Readiness for Data Protection and Data Privacy Regulations {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager as a Cloud Service Foundation Readiness for Data Protection and Data Privacy Regulations {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Voor meer informatie over wat Adobe aan privacykwesties, en dit betekent voor u als Adobe klant, zie [Adobe Privacy Center](https://www.adobe.com/privacy.html) betekent.
+>Voor meer informatie over Adobe aan privacykwesties, en dit betekent voor u als klant van de Adobe, zie [Adobe](https://www.adobe.com/privacy.html).
 
 ## Ondersteuning voor gegevensprivacy en -bescherming van AEM Stichting {#aem-foundation-data-privacy-and-protection-support}
 
@@ -29,7 +29,7 @@ Op het niveau van de AEM Stichting, wordt het Persoonlijke Gegevens die wordt op
 
 ### Handmatige stappen {#manual-steps}
 
-1. Open de gebruikersbeheerconsole door naar **[!UICONTROL Tools - Security - Users]** te bladeren of rechtstreeks naar `https://<serveraddress>:<serverport>/security/users.html` te bladeren
+1. Open de console van het Beleid van de Gebruiker, door te doorbladeren aan **[!UICONTROL Tools - Security - Users]** of door rechtstreeks te bladeren naar `https://<serveraddress>:<serverport>/security/users.html`
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -39,7 +39,7 @@ Op het niveau van de AEM Stichting, wordt het Persoonlijke Gegevens die wordt op
 
    ![zoeken naar account](assets/dpp-foundation-01.png)
 
-1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder **[!UICONTROL Details]** tabel.
+1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder **[!UICONTROL Details]** tab.
 
    ![gebruikersprofiel](assets/dpp-foundation-02.png)
 
@@ -81,13 +81,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Open de console van het Beleid van de Gebruiker en onderzoek naar de gebruiker in kwestie, zoals hierboven beschreven.
 2. Houd de muisaanwijzer boven de gebruiker en klik op het pictogram Selecteren. Het profiel wordt grijs om aan te geven dat het is geselecteerd.
 
-3. Druk op de knop **Uitschakelen** in het bovenste menu om de gebruiker uit te schakelen:
+3. Druk op **Uitschakelen** in het bovenste menu om de gebruiker uit te schakelen:
 
    ![account uitschakelen](assets/dpp-foundation-03.png)
 
 4. Ten slotte, bevestig de actie.
 
-   De gebruikersinterface geeft vervolgens aan dat de gebruikersaccount is gedeactiveerd door uit te schakelen en een vergrendeling toe te voegen aan de profielkaart:
+   De gebruikersinterface geeft vervolgens aan dat het gebruikersaccount is gedeactiveerd door uit te schakelen en een vergrendeling toe te voegen aan de profielkaart:
 
    ![account uitgeschakeld](assets/dpp-foundation-04.png)
 
@@ -95,7 +95,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->Voor AEM als Cloud Service is er geen handprocedure beschikbaar van UI voor de schrapping van een gebruikersprofiel, aangezien CRXDE niet toegankelijk is.
+>Voor AEM as a Cloud Service is er geen handprocedure beschikbaar van UI voor de schrapping van een gebruikersprofiel, aangezien CRXDE niet toegankelijk is.
 
 ### HTTP-API {#http-api-1}
 

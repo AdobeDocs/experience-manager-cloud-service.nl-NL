@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Werken met Dynamic Media {#working-with-dynamic-media}
 
-[Met Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media kunt u op aanvraag rijke visuele merchandising- en marketingmiddelen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) biedt hulp bij het leveren van rijke visuele merchandising- en marketingmiddelen op aanvraag, die automatisch worden geschaald voor gebruik op internet-, mobiele en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360° draaien en video. Dynamic Media integreert op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
@@ -22,7 +22,7 @@ Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360° draaien en 
 
 ## Wat u met Dynamic Media kunt doen {#what-you-can-do-with-dynamic-media}
 
-Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Over het algemeen wordt in [Werken met digitale middelen](/help/assets/manage-digital-assets.md) uitvoerig ingegaan op de manier waarop u met middelen werkt. Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van middelen; weergeven en bewerken van eigenschappen en zoeken naar elementen.
+Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Hoe met middelen in het algemeen kan worden gewerkt, wordt in detail besproken [Werken met digitale middelen](/help/assets/manage-digital-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van middelen; weergeven en bewerken van eigenschappen en zoeken naar elementen.
 
 Alleen Dynamic Media biedt de volgende functies:
 
@@ -39,7 +39,7 @@ Alleen Dynamic Media biedt de volgende functies:
 * [Elementen beheren](managing-assets.md)
 * [Snelle weergaven gebruiken om aangepaste pop-upvensters® te maken](custom-pop-ups.md)
 
-Zie ook [Dynamic Media](administering-dynamic-media.md) instellen.
+Zie ook [Dynamic Media instellen](administering-dynamic-media.md).
 
 <!-- 
 
@@ -62,7 +62,7 @@ Wanneer u op een afbeeldingselement klikt, is de weergave van het element anders
 
 ### Dynamische uitvoeringen {#dynamic-renditions}
 
-Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamic]**) zijn beschikbaar wanneer Dynamic Media is ingeschakeld.
+Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamic]**) zijn beschikbaar als Dynamic Media is ingeschakeld.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
@@ -74,13 +74,13 @@ Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar als Dynamic 
 
 ### PTIFF-uitvoeringen {#ptiff-renditions}
 
-Tot de voor Dynamic Media ingeschakelde elementen behoren `pyramid.tiffs`.
+Inclusief Dynamic Media-middelen `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### Weergave van element wijzigen {#asset-views-change}
 
-Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knoppen `+` en `-` te klikken. U kunt ook op een bepaald gebied klikken of erop tikken. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld wordt als volgt weergegeven:
+Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knop `+` en `-` knoppen. U kunt ook op een bepaald gebied klikken of erop tikken. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld wordt als volgt weergegeven:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

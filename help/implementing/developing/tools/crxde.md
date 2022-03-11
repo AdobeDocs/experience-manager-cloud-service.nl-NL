@@ -54,7 +54,7 @@ Het biedt ook ondersteuning voor het zoeken naar knooppunten met een specifieke 
 
 De **Venster Explorer** geeft een structuur weer van alle knooppunten in de opslagplaats.
 
-Klik op een knooppunt om de eigenschappen ervan weer te geven in het dialoogvenster **Eigenschappen** tab. Nadat u op een knooppunt hebt geklikt, kunt u een handeling op de werkbalk selecteren. Klik nogmaals op het knooppunt om de naam ervan te wijzigen.
+Klik op een knooppunt om de eigenschappen ervan weer te geven in het dialoogvenster **Eigenschappen** tab. After clicking a node, you can select an action in the toolbar. Klik nogmaals op het knooppunt om de naam ervan te wijzigen.
 
 Met het structuurnavigatiefilter (het binoculars-pictogram) kunt u de knooppunten in de opslagplaats filteren waarvoor de naam de invoertekst bevat. Het is alleen van toepassing op knooppunten die lokaal zijn geladen.
 
@@ -66,9 +66,9 @@ De **Home** kunt u zoeken in inhoud en/of documentatie en toegang krijgen tot de
 
 Dubbelklik op een bestand in het dialoogvenster **Venster Explorer** om de inhoud ervan in de **Venster bewerken**. U kunt het dan wijzigen en de veranderingen bewaren.
 
-Als een bestand eenmaal is bewerkt in het dialoogvenster **Venster bewerken** zijn de volgende gereedschappen beschikbaar op de werkbalk:
+Once a file is edited in the **Edit Pane**, the following tools are available on the toolbar:
 
-* **Tonen in boomstructuur** - Geeft het bestand weer in de boomstructuur van de opslagplaats.
+* **Show in tree** - Shows the file in the repository tree.
 * **Zoeken/vervangen** - Voert een zoekopdracht of vervangactie uit.
 
 Dubbelklik op de statusregel van het dialoogvenster **Venster bewerken** opent de **Ga naar regel** zodat u een specifiek regelnummer kunt invoeren.
@@ -143,7 +143,7 @@ De **Naam knop wijzigen** wijzigt de naam van het geselecteerde knooppunt.
 
 ### Mixins {#mixins-button}
 
-De **Mixins, knop** staat u toe om mixingstypes aan het knooptype toe te voegen. De mixintypen worden meestal gebruikt om geavanceerde functies toe te voegen.
+De **Mixins, knop** staat u toe om mixingstypes aan het knooptype toe te voegen. The mixin types are mostly used to add advanced features.
 
 ### Opties {#tools-button}
 
@@ -151,14 +151,14 @@ De **Gereedschapknop** is een vervolgkeuzemenu met de volgende gereedschappen be
 
 * **Serverconfiguratie** - toegang tot de Felix-console (ook beschikbaar op `https://<host>:<port>/system/console/configMgr`)
 * **Query** - de gegevensopslagplaats opvragen
-* **Bevoegdheden** - om rechten weer te geven en toe te voegen
-* **Toegangsbeheer testen** - om de toestemming voor bepaalde paden en/of aangever te testen
+* **Privileges** - to view and add privileges
+* **Test Access Control** - to test the permission for certain path and/or principal
 * **Notitietype exporteren** - knooppunttypen in het systeem exporteren als CND-notatie
 * **Notitietype importeren** - om knooppunttypes in te voeren gebruikend aantekening CND.
 
 ### Aanmeldingswidget {#login-widget}
 
-De **Aanmeldingswidget** geeft de momenteel aangemelde gebruiker weer.
+The **Login Widget** displays the currently logged-in user.
 
 Klik op deze knop om u aan te melden of opnieuw aan te melden als een andere gebruiker. De `@crx.default` geeft aan dat u zich in de standaardwerkruimte (en alleen) in de repository bevindt.
 
@@ -173,19 +173,19 @@ Een map met CRXDE Lite maken:
 
 1. Voer de map in **Naam** en klik op **OK**.
 
-1. Klikken **Alles opslaan** om de wijzigingen op de server op te slaan.
+1. Click **Save All** to save the changes on the server.
 
 ## Een knooppunt maken {#creating-a-node}
 
-Een knooppunt maken met CRXDE Lite:
+To create a node with CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. In de [**Deelvenster Exploderer**,](#explorer-pane) Klik met de rechtermuisknop op het knooppunt waar u het nieuwe knooppunt wilt maken, selecteer **Maken** vervolgens **Knooppunt maken**.
+1. In the [**Exploerer Pane**,](#explorer-pane) right-click the node where you want to create the new node, select **Create**, then **Create Node**.
 1. Voer de **Naam** en selecteert u de **Type**.
 1. Klikken **OK**.
 1. Klik op de knop [**Alle knoppen opslaan**](#save-all-button) om de wijzigingen op de server op te slaan.
 
-U kunt het knooppunt nu aan uw behoeften aanpassen door eigenschappen te wijzigen of nieuwe knooppunten te maken.
+You can now adapt the node to your needs by modifying properties or creating new nodes.
 
 >[!NOTE]
 De meeste bewerkingen, inclusief **Knooppunt maken**, houdt alle wijzigingen in het geheugen bij en slaat deze alleen op in de opslagplaats wanneer deze worden opgeslagen (met behulp van de [**Alle knoppen opslaan**](#save-all-button)). Sommige bewerkingen, zoals verplaatsen, worden echter automatisch voortgezet.
@@ -232,15 +232,15 @@ Een definitie van het knooppunttype importeren:
 1. Er wordt een nieuw tabblad geopend in het dialoogvenster [**Venster bewerken**](#edit-pane) gelabeld **Notitietype importeren**.
 1. Voer de CND-notatie voor de definitie in het tekstvak van het dialoogvenster **Notitietype importeren** tab.
 1. Controleren **Update toestaan** als u een bestaande definitie bijwerkt.
-1. Klikken **Importeren**.
+1. Click **Import**.
 
 ## Logboekregistratie {#logging}
 
-Met CRXDE Lite kunt u het bestand weergeven `error.log` die zich in het bestandssysteem bevindt op `<aem-install-dir>/crx-quickstart/logs` en filtreer het met het aangewezen logboekniveau. Ga als volgt te werk:
+Met CRXDE Lite kunt u het bestand weergeven `error.log` die zich in het bestandssysteem bevindt op `<aem-install-dir>/crx-quickstart/logs` en filtreer het met het aangewezen logboekniveau. Proceed as follows:
 
-1. Open CRXDE Lite in uw browser.
+1. Open CRXDE Lite in your browser.
 1. In het vervolgkeuzemenu rechts van het dialoogvenster [**Tabblad Console**](#console-tab) onder aan het venster selecteert u **Serverlogboeken**.
-1. Klik op de knop **Stoppen** om de berichten weer te geven.
+1. Click the **Stop** icon to display the messages.
 
 U kunt:
 

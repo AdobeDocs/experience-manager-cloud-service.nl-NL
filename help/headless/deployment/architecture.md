@@ -2,13 +2,13 @@
 title: Architectuur van AEM headless
 description: Meer informatie over de architectuur op hoog niveau voor Adobe Experience Manager omdat deze betrekking heeft op een headless-implementatie. Begrijp de rol van AEM Auteur, Voorproef, en publiceer de diensten en het geadviseerde plaatsingspatroon voor koploze toepassingen.
 feature: Content Fragments,GraphQL API
-source-git-commit: 64b2beb4af2297e19e39ad534856bce33ffcfcf8
+exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # Architectuur van AEM headless
 
@@ -49,4 +49,3 @@ Een andere optie voor headless plaatsingen is een **Voorvertoning AEM** service.
 1. Er kan een voorvertoningsversie van de toepassing worden ingesteld die verbinding maakt met de service Voorvertoning.
 1. Nadat de inhoud is gereviseerd en goedgekeurd, kan deze worden gepubliceerd naar de AEM-publicatieservice.
 1. Eindgebruikers hebben interactie met de productieversie van de toepassing. De productietoepassing maakt verbinding met de publicatieservice via de Dispatcher en gebruikt de GraphQL API&#39;s om inhoud aan te vragen en te verbruiken.
-

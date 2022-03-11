@@ -57,7 +57,7 @@ Als u de DPR-configuratie voor Smart Imaging inschakelt, wordt de gevraagde afbe
 
 >[!NOTE]
 >
->* U kunt `dpr=on,dprValue` zelfs gebruiken als het bedrijfniveau DPR plaatsen als weg.
+>* U kunt `dpr=on,dprValue` zelfs als het bedrijf de DPR-instelling als uitgeschakeld heeft.
 >* Als de resulterende afbeelding door DPR-optimalisatie groter is dan de Dynamic Media-instelling MaxPix, wordt de breedte van MaxPix altijd herkend door de hoogte-breedteverhouding van de afbeelding te behouden.
 
 
@@ -66,13 +66,13 @@ Als u de DPR-configuratie voor Smart Imaging inschakelt, wordt de gevraagde afbe
 | 816x500 | 1 | 816x500 |
 | 816x500 | 2 | 1632x1000 |
 
-Zie ook [Bij het werken met afbeeldingen](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [Bij het werken met Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+Zie ook [Wanneer u met afbeeldingen werkt](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [Wanneer u werkt met Slim uitsnijden](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
 ### Informatie over netwerkbandbreedteoptimalisatie {#network-bandwidth-optimization}
 
 Als u Netwerkbandbreedte inschakelt, wordt automatisch de beeldkwaliteit aangepast die wordt aangeboden op basis van de werkelijke netwerkbandbreedte. Voor slechte netwerkbandbreedte, wordt de optimalisering DPR automatisch uitgezet, zelfs als het reeds aanstaat.
 
-Uw bedrijf kan desgewenst de optimalisatie van de netwerkbandbreedte op het niveau van de individuele afbeelding uitschakelen door `network=off` aan de URL van de afbeelding toe te voegen.
+Uw bedrijf kan desgewenst de optimalisatie van de netwerkbandbreedte op het individuele beeldniveau uitschakelen door het toevoegen `network=off` naar de URL van de afbeelding.
 
 | Toegestane waarde in de URL van een afbeelding | Beschrijving |
 |---|---|
@@ -90,11 +90,11 @@ Verbeteringen in de nieuwste versie van Smart Imaging:
 
 * Verbeterde Google SEO-classificatie voor webpagina&#39;s die gebruikmaken van de nieuwste Smart Imaging.
 * Hiermee wordt geoptimaliseerde inhoud direct (bij uitvoering) weergegeven.
-* Gebruikt Adobe Sensei-technologie voor conversie op basis van de kwaliteit (`qlt`) die is opgegeven in de afbeeldingsaanvraag.
-* U kunt Smart Imaging uitschakelen met de URL-parameter `bfc`.
+* Gebruikt Adobe Sensei-technologie voor conversie naar kwaliteit (`qlt`) opgegeven in de afbeeldingsaanvraag.
+* Slimme afbeeldingen kunnen worden uitgeschakeld met de opdracht `bfc` URL-parameter.
 * onafhankelijk van TTL (Time to Live). Eerder was een minimale TTL van 12 uur verplicht voor Smart Imaging.
 * Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. Bij de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een cachevalidatieproces in één stap mogelijk is.
-* Klanten die aangepaste koppen in hun linialen gebruiken, profiteren van de nieuwste functie voor Smart Imaging, omdat deze koppen, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd. Bijvoorbeeld &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; zoals voorgesteld in [Voeg een aangepaste koptekstwaarde toe aan afbeeldingsreacties|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* Klanten die aangepaste koppen in hun linialen gebruiken, profiteren van de nieuwste functie voor Smart Imaging, omdat deze koppen, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd. Bijvoorbeeld &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; zoals voorgesteld in [Een aangepaste koptekstwaarde toevoegen aan reacties op afbeeldingen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## Zijn er licentiekosten verbonden aan Smart Imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -145,7 +145,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## Hoe werkt Smart Imaging met bestaande voorinstellingen voor afbeeldingen die al in gebruik zijn? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-Slimme afbeeldingen werken met uw bestaande &quot;voorinstellingen voor afbeeldingen&quot;. Het neemt al uw beeldmontages behalve kwaliteit (`qlt`) en formaat (`fmt`) aan als het gevraagde dossierformaat JPEG of PNG is. Voor conversie van indelingen behoudt Smart Imaging volledige visuele getrouwheid zoals gedefinieerd door de vooraf ingestelde instellingen van de afbeelding, maar met een kleinere bestandsgrootte. Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
+Slimme afbeeldingen werken met uw bestaande &quot;voorinstellingen voor afbeeldingen&quot;. Alle afbeeldingsinstellingen worden in acht genomen, behalve de kwaliteit (`qlt`) en -formaat (`fmt`) als de gewenste bestandsindeling JPEG of PNG is. Voor conversie van indelingen behoudt Smart Imaging volledige visuele getrouwheid zoals gedefinieerd door de vooraf ingestelde instellingen van de afbeelding, maar met een kleinere bestandsgrootte. Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
@@ -155,7 +155,7 @@ Smart Imaging werkt naadloos met uw bestaande afbeeldings-URL&#39;s en voorinste
 
 Als u een nieuw aangepast domein moet configureren voor het gebruik van Smart Imaging, moeten de URL&#39;s worden bijgewerkt om dit aangepaste domein te weerspiegelen.
 
-Zie [Ben ik geschikt voor het gebruik van Smart Imaging?](#am-i-eligible-to-use-smart-imaging) voor meer informatie over de vereisten voor Smart Imaging.
+Voor meer informatie over de vereisten voor slimme beeldverwerking raadpleegt u [Mag ik Smart Imaging gebruiken?](#am-i-eligible-to-use-smart-imaging)
 
 <!-- OLD No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
@@ -170,11 +170,11 @@ Slimme afbeeldingen werken met afbeeldingen die via HTTP of HTTPS worden gelever
 Als u Smart Imaging wilt gebruiken, moet de Dynamic Media Classic of Dynamic Media van uw bedrijf op een Experience Manager-account aan de volgende vereisten voldoen:
 
 * Gebruik Adobe-Gebundelde CDN (het Netwerk van de Levering van de Inhoud) als deel van uw vergunning.
-* Gebruik een specifiek domein (bijvoorbeeld `images.company.com` of `mycompany.scene7.com`), niet een algemeen domein (bijvoorbeeld `s7d1.scene7.com`, `s7d2.scene7.com` of `s7d13.scene7.com`).
+* Gebruik een specifiek domein (bijvoorbeeld `images.company.com` of `mycompany.scene7.com`), niet een algemeen domein (bijvoorbeeld `s7d1.scene7.com`, `s7d2.scene7.com`, of `s7d13.scene7.com`).
 
-Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich vervolgens aan bij uw bedrijfsaccount of -accounts.
+Om uw domeinen te vinden, open [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw bedrijfsaccount of -accounts.
 
-Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen domein gebruikt, kunt u verzoeken over te gaan naar uw eigen douanedomein. Maak dit overgangsverzoek wanneer u een technisch steunkaartje voorlegt.
+Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoeken naar het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen domein gebruikt, kunt u verzoeken over te gaan naar uw eigen douanedomein. Maak dit overgangsverzoek wanneer u een technisch steunkaartje voorlegt.
 
 Voor je eerste aangepaste domein zijn er geen extra kosten verbonden met een Dynamic Media-licentie.
 
@@ -192,25 +192,25 @@ Smart Imaging DPR en netwerkoptimalisatie zijn standaard uitgeschakeld voor een 
 | Europe, Middle East, Africa | 13 August 2021 | 
 | Asia-Pacific | 22 July 2021 | -->
 
-1. [Gebruik de Admin Console om een steungeval](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) tot stand te brengen.
+1. [Gebruik de Admin Console om een steungeval tot stand te brengen](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    1. Primaire contactpersoon, e-mail, telefoon.
    1. Alle domeinen die moeten worden ingeschakeld voor Smart Imaging (dat wil zeggen `images.company.com` of `mycompany.scene7.com`).
 
-      Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich vervolgens aan bij uw bedrijfsaccount of -accounts.
+      Om uw domeinen te vinden, open [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw bedrijfsaccount of -accounts.
 
       Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
 
-      Zoek het veld met het label **[!UICONTROL Published Server Name]**.
+      Zoeken naar het veld met het label **[!UICONTROL Published Server Name]**.
    1. Verifieer dat u CDN door Adobe gebruikt en niet met een directe verhouding wordt beheerd.
-   1. Verifieer u een specifiek domein zoals `images.company.com` of `mycompany.scene7.com`, en niet een generisch domein, zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com` gebruikt.
+   1. Controleren of u een specifiek domein gebruikt, zoals `images.company.com` of `mycompany.scene7.com`en niet een algemeen domein, zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich vervolgens aan bij uw bedrijfsaccount of -accounts.
+      Om uw domeinen te vinden, open [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw bedrijfsaccount of -accounts.
 
       Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
 
-      Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Dynamic Media Classic-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
+      Zoeken naar het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Dynamic Media Classic-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
    1. Geef aan of het via HTTP/2 moet werken.
 
 1. De Klantenondersteuning van Adobe voegt u toe aan de lijst voor het wachten van Smart Imaging-klanten op basis van de volgorde waarin de verzoeken worden verzonden.
@@ -219,8 +219,8 @@ Smart Imaging DPR en netwerkoptimalisatie zijn standaard uitgeschakeld voor een 
 1. Klantenondersteuning stuurt u een melding nadat deze is voltooid.
 1. Om de prestatieverbeteringen van Smart Imaging te maximaliseren, raadt Adobe aan om de Time To Live (TTL) in te stellen op 24 uur of langer. De TTL bepaalt hoe lang de activa door CDN in het voorgeheugen worden opgeslagen. Deze instelling wijzigen:
 
-   1. Als u Dynamic Media Classic gebruikt, gaat u naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Stel de waarde **[!UICONTROL Default Client Cache Time To Live]** in op 24 of langer.
-   1. Als u Dynamic Media gebruikt, volgt u [deze instructies](config-dm.md). Stel de waarde **[!UICONTROL Expiration]** 24 uur of langer in.
+   1. Als je Dynamic Media Classic gebruikt, ga dan naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Stel de **[!UICONTROL Default Client Cache Time To Live]** waarde 24 of langer.
+   1. Als u Dynamic Media gebruikt, volgt u [deze instructies](config-dm.md). Stel de **[!UICONTROL Expiration]** waarde 24 uur of langer.
 
 ## Wanneer kan ik verwachten dat mijn account is ingeschakeld met Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
@@ -230,7 +230,7 @@ De verzoeken worden verwerkt in de orde waarin zij door de Steun van de Klant, v
 >
 >Er kan een lange aanlooptijd zijn, omdat het inschakelen van Smart Imaging Adobe het wissen van de cache met zich meebrengt. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
 
-## Wat zijn de risico&#39;s wanneer u overschakelt naar het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
+## Wat zijn de risico&#39;s wanneer u overschakelt op het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de CDN-cache echter wel gewist. Bij deze bewerking gaat u naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media op Experience Manager.
 
@@ -239,12 +239,12 @@ Tijdens de eerste overgang raakten de afbeeldingen in de cache rechtstreeks op s
 ## Hoe kan ik controleren of Smart Imaging naar behoren werkt?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Wanneer uw account is geconfigureerd met Smart Imaging, laadt u een Dynamic Media Classic- of Adobe Experience Manager - Dynamic Media-afbeeldings-URL in de browser.
-1. Open het deelvenster Chrome-ontwikkelaar door in de browser naar **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** te gaan. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
+1. Open het deelvenster Chrome-ontwikkelaar door naar **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** in de browser. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
 
 1. Zorg ervoor dat de cache is uitgeschakeld wanneer de ontwikkelprogramma&#39;s zijn geopend.
 
-   * In Windows® navigeert u naar de instellingen in het venster voor het gereedschap Ontwikkelaar en schakelt u het selectievakje **[!UICONTROL Disable cache (while devtools is open)]** in.
-   * Selecteer **[!UICONTROL disable cache]** onder het tabblad **[!UICONTROL Network]** in macOS.
+   * In Windows® navigeert u naar de instellingen in het deelvenster voor ontwikkelaars en selecteert u vervolgens **[!UICONTROL Disable cache (while devtools is open)]** selectievakje.
+   * In macOS, in het ontwikkelaarsvenster, onder het dialoogvenster **[!UICONTROL Network]** tab, selecteert u **[!UICONTROL disable cache]**.
 
 1. Waarnemen dat het inhoudstype wordt omgezet in de juiste indeling. In de volgende schermafbeelding ziet u een PNG-afbeelding die dynamisch wordt omgezet in WebP op Chrome.
 1. Herhaal deze test voor verschillende browsers en gebruikersomstandigheden.
@@ -257,7 +257,7 @@ Tijdens de eerste overgang raakten de afbeeldingen in de cache rechtstreeks op s
 
 ## Kan Smart Imaging voor een aanvraag worden uitgeschakeld?{#turning-off-smart-imaging}
 
-Ja. U kunt Smart Imaging uitschakelen door de optie `bfc=off` aan de URL toe te voegen.
+Ja. U kunt Smart Imaging uitschakelen door de optie toe te voegen `bfc=off` naar de URL.
 
 ## Kan ik vragen dat DPR en netwerkoptimalisatie op bedrijfsniveau worden uitgeschakeld? {#dpr-companylevel-turnoff}
 
@@ -267,7 +267,7 @@ Ja. Om DPR en netwerkoptimalisering bij uw bedrijf onbruikbaar te maken, creeer 
 
 Op dit moment kunt u Smart Imaging optioneel in- of uitschakelen. Er is geen andere tuning beschikbaar.
 
-## Als u de kwaliteitsinstellingen beheert met Smart Imaging, zijn er dan minimum- en maximumwaarden die ik kan instellen? Is het bijvoorbeeld mogelijk om &quot;niet lager dan 60&quot; en &quot;niet groter dan 80&quot; in te stellen? {#minimum-maximum}
+## Als u met Smart Imaging de kwaliteitsinstellingen beheert, zijn er dan minimum- en maximumwaarden die ik kan instellen? Is het bijvoorbeeld mogelijk om &quot;niet lager dan 60&quot; en &quot;niet groter dan 80&quot; in te stellen? {#minimum-maximum}
 
 De huidige slimme beeldverwerking biedt geen dergelijke provisioningmogelijkheden.
 
@@ -277,11 +277,11 @@ Slimme afbeeldingen bepalen of de conversie nuttig is of niet. De nieuwe afbeeld
 
 Hoe werkt Smart Imaging DPR-optimalisatie met Adobe Experience Manager Sites-componenten en Dynamic Media-viewers?
 
-* Experience Manager Sites Core-componenten worden standaard geconfigureerd voor DPR-optimalisatie. Om te grote afbeeldingen te voorkomen door de DPR-optimalisatie voor Smart Imaging DPR aan de serverzijde, wordt `dpr=off` altijd toegevoegd aan Experience Manager Sites Core Components Dynamic Media-afbeeldingen.
-* Als Dynamic Media Foundation Component standaard is geconfigureerd voor DPR-optimalisatie, wordt `dpr=off` altijd toegevoegd aan Dynamic Media Foundation Component-afbeeldingen om te grote afbeeldingen te voorkomen door DPR-optimalisatie voor Smart Imaging op de server. Zelfs als de klant DPR-optimalisatie in de DM Foundation Component uitschakelt, wordt de functie Smart Imaging DPR aan de serverzijde niet ingeschakeld. Samengevat, in de Component van de Stichting DM, komt de optimalisering DPR van kracht die op het niveau van de Component van de Stichting wordt gebaseerd DM slechts het plaatsen.
+* Experience Manager Sites Core-componenten worden standaard geconfigureerd voor DPR-optimalisatie. Om te grote afbeeldingen te voorkomen door de serverfunctie Smart Imaging DPR te optimaliseren, `dpr=off` wordt altijd toegevoegd aan Experience Manager Sites Core Components Dynamic Media-afbeeldingen.
+* Op basis van Dynamic Media Foundation Component is deze standaard geconfigureerd voor DPR-optimalisatie, om te grote afbeeldingen te voorkomen door DPR-optimalisatie voor Smart Imaging op de server. `dpr=off` wordt altijd toegevoegd aan Dynamic Media Foundation Component-afbeeldingen. Zelfs als de klant DPR-optimalisatie in de DM Foundation Component uitschakelt, wordt de functie Smart Imaging DPR aan de serverzijde niet ingeschakeld. Samengevat, in de Component van de Stichting DM, komt de optimalisering DPR van kracht die op het niveau van de Component van de Stichting wordt gebaseerd DM slechts het plaatsen.
 * Elke DPR-optimalisatie aan de viewerzijde werkt in combinatie met DPR-optimalisatie voor Smart Imaging op de server en resulteert niet in te grote afbeeldingen. Met andere woorden, wanneer DPR door de viewer wordt afgehandeld, zoals de hoofdweergave alleen in een viewer met zoomfunctie, worden de DPR-waarden voor Smart Imaging op de server niet geactiveerd. Op dezelfde manier wordt de DPR-waarde voor Smart Imaging op de server geactiveerd wanneer viewerelementen, zoals stalen en miniaturen, geen DPR-verwerking hebben.
 
-Zie ook [Bij het werken met afbeeldingen](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [Bij het werken met Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+Zie ook [Wanneer u met afbeeldingen werkt](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [Wanneer u werkt met Slim uitsnijden](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
 >[!MORELIKETHIS]
 >

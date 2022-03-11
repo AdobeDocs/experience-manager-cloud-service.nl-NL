@@ -54,7 +54,7 @@ Date24/08/2021
 
 ## Elementen in mappen ordenen {#organize-using-folders}
 
-De eenvoudigste manier om elementen te ordenen is het opslaan van de elementen in mappen. Dit is hetzelfde als het ordenen van bestanden in mappen in uw lokale bestandssysteem. Zie [Elementen beheren](manage-digital-assets.md) voor meer informatie over het maken en beheren van mappen. Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan een grote invloed hebben op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
+De eenvoudigste manier om elementen te ordenen is het opslaan van de elementen in mappen. Dit is hetzelfde als het ordenen van bestanden in mappen in uw lokale bestandssysteem. Voor meer informatie over het maken en beheren van mappen raadpleegt u [Elementen beheren](manage-digital-assets.md). Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan een grote invloed hebben op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
 
 * Gewoonlijk groeit de opslagplaats voor digitale middelen altijd. Daarom is het belangrijk om het gebruik van metagegevens, de mapstructuur en de naamgeving van bestanden vroegtijdig te formaliseren in de ontwerpcyclus van de inhoud.
 * Gebruik mappen alleen om een consistente opslagstructuur voor uw digitale elementen op te leggen. Deze consistentie helpt uw proces en beheert uw activa beter. Met middelen die bijvoorbeeld in de volgende typen mappen worden geplaatst, kunt u uw elementen segregeren:
@@ -64,13 +64,13 @@ De eenvoudigste manier om elementen te ordenen is het opslaan van de elementen i
    * **Primaire mappen**: bevat originele, brondigitale elementen.
    * **Uitvoermappen**: bevat vertoningen en kopieën van de originele, brondigitale elementen.
    * **Bestandsgroottemappen**: bevat digitale elementen op basis van kleine, middelgrote of grote bestanden.
-   * **Mappen** stapelen: bevat digitale elementen die klaar zijn om live op uw website te publiceren.
+   * **Mappen stapelen**: bevat digitale elementen die klaar zijn om live op uw website te publiceren.
    * **MIME-tekstmappen**: bevat digitale elementen die specifiek zijn voor MIME-typen, zoals afbeeldingen, documenten en multimedia.
-   * **Mappen** archiveren: bevat gepensioneerde digitale elementen.
+   * **Mappen archiveren**: bevat gepensioneerde digitale elementen.
    * **Op datum gebaseerde mappen**: bevat digitale elementen die zijn gebaseerd op een aanmaakdatum of een datum die als laatste is gewijzigd.
 
 * Maak een map met mappen die waarschijnlijk niet worden gewijzigd, zodat aanpassingen of automatisering gewoon kunnen doorgaan. De toegewezen verwerkingsprofielen werken bijvoorbeeld nog steeds.
-* Als een element al is gepubliceerd, gebruikt u [!DNL Experience Manager] om het element naar een andere map te verplaatsen en opnieuw te publiceren vanaf de nieuwe locatie. De oorspronkelijke locatie van het gepubliceerde element is nog steeds beschikbaar samen met het nieuw gepubliceerde element. Het oorspronkelijke gepubliceerde element is echter *verloren* naar [!DNL Experience Manager] en kan niet ongepubliceerd worden. Daarom, als beste praktijken, eerst unpublish een middel en dan verplaats het naar een verschillende omslag.
+* Als een element al is gepubliceerd, gebruikt u [!DNL Experience Manager] om het element naar een andere map te verplaatsen en opnieuw te publiceren vanaf de nieuwe locatie. De oorspronkelijke locatie van het gepubliceerde element is nog steeds beschikbaar samen met het nieuw gepubliceerde element. Het oorspronkelijke gepubliceerde middel is echter *verloren* tot [!DNL Experience Manager] en kan niet worden gepubliceerd. Daarom, als beste praktijken, eerst unpublish een middel en dan verplaats het naar een verschillende omslag.
 
 ## Elementen ordenen met tags {#use-tags-to-organize-assets}
 
@@ -85,14 +85,14 @@ Raadpleeg de volgende artikelen voor meer informatie:
 
 ## Indelen als verzamelingen {#organize-as-collections}
 
-Met de inzamelingen van activa in [!DNL Experience Manager Assets], kunt u de capaciteit stroomlijnen om, activa tot stand te brengen uit te geven en te delen tussen gebruikers. Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen die een statische referentielijst met elementen, mappen en verzamelingen bevatten, en verzamelingen die op basis van zoekcriteria elementen in elementen trekken. U kunt verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
+Met verzamelingen van middelen in [!DNL Experience Manager Assets]kunt u de mogelijkheid om elementen te maken, te bewerken en te delen tussen gebruikers stroomlijnen. Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen die een statische referentielijst met elementen, mappen en verzamelingen bevatten, en verzamelingen die op basis van zoekcriteria elementen in elementen trekken. U kunt verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
 
-Zie [Verzamelingen beheren](manage-collections.md) voor meer informatie
+Zie voor meer informatie [verzamelingen beheren](manage-collections.md)
 
 
 ## Profielen gebruiken om uw elementen te ordenen {#organize-to-use-profiles}
 
-Een verwerkingsprofiel bevat [!DNL Assets] verwerkingsopdrachten die van toepassing zijn op elementen die naar vooraf gedefinieerde mappen worden geüpload. Profielen worden gebruikt om de verwerking van inhoud van een map of nieuw geüploade elementen te automatiseren. U kunt profielen gebruiken om uw elementen beter te ordenen.
+Een verwerkingsprofiel bevat [!DNL Assets] opdrachten verwerken die van toepassing zijn op elementen die worden geüpload naar vooraf gedefinieerde mappen. Profielen worden gebruikt om de verwerking van inhoud van een map of nieuw geüploade elementen te automatiseren. U kunt profielen gebruiken om uw elementen beter te ordenen.
 
 Als u het gebruik van metagegevens, de naamgeving van bestanden en de mapstructuur gestandaardiseerd, bent u er zeker van dat u verwerkingsprofielen met grotere nauwkeurigheid en consistentie kunt toepassen op mappen wanneer de pool met digitale elementen toeneemt.
 

@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media-middelen leveren
 description: Leer hoe u Dynamic Media-middelen kunt leveren.
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Met Dynamic Media hebt u verschillende opties:
 
    * Uw video of afbeelding insluiten op uw website.
    * Koppel URL&#39;s aan uw webtoepassing. Gebruik koppelingen wanneer u een videospeler wilt leveren als een pop-up- of modaal venster.
-   * Als uw site responsief is, kunt u geoptimaliseerde afbeeldingen ](/help/assets/dynamic-media/responsive-site.md) leveren.[
+   * Als uw site reageert, kunt u [geoptimaliseerde afbeeldingen leveren](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->Slimme beeldbewerking werkt met uw bestaande voorinstellingen voor afbeeldingen. Het gebruikt intelligentie bij de laatste milliseconde van levering om beelddossiergrootte verder te verminderen die op browser of netwerkverbindingssnelheid wordt gebaseerd. Zie [Slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie.
+>Slimme beeldbewerking werkt met uw bestaande voorinstellingen voor afbeeldingen. Het gebruikt intelligentie bij de laatste milliseconde van levering om beelddossiergrootte verder te verminderen die op browser of netwerkverbindingssnelheid wordt gebaseerd. Zie [Slimme afbeeldingen](/help/assets/dynamic-media/imaging-faq.md) voor meer informatie .
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
@@ -44,4 +44,4 @@ Raadpleeg de volgende onderwerpen voor meer informatie:
 
 Experience Manager ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze leveringsmethode verbetert de manier waarop browsers en servers communiceren, waardoor u betere responstijd en laadtijden voor al uw Dynamic Media-middelen krijgt.
 
-Zie [HTTP/2 Levering van inhoud Veelgestelde vragen](/help/assets/dynamic-media/http2faq.md) voor meer informatie.
+Zie voor meer informatie [HTTP/2 Levering van inhoud Veelgestelde Vragen](/help/assets/dynamic-media/http2faq.md).

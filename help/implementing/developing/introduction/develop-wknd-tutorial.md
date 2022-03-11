@@ -13,15 +13,15 @@ ht-degree: 7%
 
 ## Overzicht {#overview}
 
-Nieuw bij het ontwikkelen van Adobe Experience Manager als Cloud Service? Wilt u de nieuwste praktijken vernieuwen? Dit is de plaats om te beginnen!
+Nieuw bij het ontwikkelen van Adobe Experience Manager as a Cloud Service? Wilt u de nieuwste praktijken vernieuwen? Dit is de plaats om te beginnen!
 
 Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën. De hoop is aan het eind van deze zelfstudie zult u de basisstichting van het AEM platform en de kennis van enkele gemeenschappelijke ontwerppatronen begrijpen.
 
-## Zelfstudie voor WKND-ontwikkelaars{#wknd-developer-tutorial}
+## Zelfstudie voor WKND-ontwikkelaars {#wknd-developer-tutorial}
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[De WKND-zelfstudie voor ontwikkelaars is ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) hier beschikbaar en begeleidt u bij het maken van een AEM project met de nieuwste technologieën en best practices.
+[De WKND-zelfstudie voor ontwikkelaars is hier beschikbaar](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) en begeleidt u door het creëren van een AEM project gebruikend de recentste technologieën en beste praktijken.
 
 ## Kernbegrippen {#core-concepts}
 

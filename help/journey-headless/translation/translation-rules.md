@@ -1,6 +1,6 @@
 ---
-title: Configure Translation Rules
-description: Learn how to define translation rules to identify content for translation.
+title: Vertaalregels configureren
+description: Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
@@ -9,93 +9,93 @@ ht-degree: 0%
 
 ---
 
-# Configure Translation Rules {#configure-translation-rules}
+# Vertaalregels configureren {#configure-translation-rules}
 
-Learn how to define translation rules to identify content for translation.
+Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 
-## The Story So Far {#story-so-far}
+## Het verhaal tot nu toe {#story-so-far}
 
-[](configure-connector.md)
+In het vorige document van de AEM zonder kop [Vertaalaansluiting configureren](configure-connector.md) u leerde hoe te om uw vertaalschakelaar te installeren en te vormen en zou nu moeten:
 
-* Understand the important parameters of the Translation Integration Framework in AEM.
-* Be able to set up your own connection to your translation service.
+* Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
+* Uw eigen verbinding met uw vertaalservice instellen.
 
-Now that your connector is set up, this article takes you through the next step of identifying what content you need to translate.
+Nu uw schakelaar opstelling is, neemt dit artikel u door de volgende stap van het identificeren van welke inhoud u moet vertalen.
 
-## Objective {#objective}
+## Doelstelling {#objective}
 
-This document helps you understand how to use AEM&#39;s translation rules to identify your translation content. After reading this document you should:
+Dit document helpt u te begrijpen hoe u AEM vertaalregels kunt gebruiken om uw vertaalinhoud te identificeren. Nadat u dit document hebt gelezen, moet u:
 
-* Understand what the translation rules do.
-* Be able to define your own translation rules.
+* Begrijp wat de vertaalregels doen.
+* U kunt uw eigen vertaalregels definiëren.
 
-## Translation Rules {#translation-rules}
+## Vertaalregels {#translation-rules}
 
-Content Fragments, which represent your headless content, can contain much information organized by structured fields. Depending on your project needs, it is likely that not all of the fields within a Content Fragment must to be translated.
+Inhoudsfragmenten, die uw inhoud zonder kop vertegenwoordigen, kunnen veel informatie bevatten die is ingedeeld in gestructureerde velden. Afhankelijk van uw projectbehoeften is het waarschijnlijk dat niet alle velden in een inhoudsfragment moeten worden vertaald.
 
-Translation rules identify the content that is included in, or excluded from, translation projects. When content is translated, AEM extracts or harvests the content based on these rules. In this way only content that must be translated is sent to the translation service.
+In de vertaalregels wordt aangegeven welke inhoud is opgenomen in of uitgesloten van vertaalprojecten. Wanneer de inhoud wordt vertaald, AEM de inhoud uitpakt of oogst die op deze regels wordt gebaseerd. Op die manier wordt alleen inhoud die moet worden vertaald naar de vertaaldienst verzonden.
 
-Translation rules include the following information:
+De vertaalregels bevatten de volgende informatie:
 
-* The path of the content to which the rule applies
-   * The rule also applies to the descendants of the content
-* The names of the properties that contain the content to translate
-   * The property can be specific to a specific resource type or to all resource types
+* Het pad van de inhoud waarop de regel van toepassing is
+   * De regel is ook van toepassing op de onderliggende elementen van de inhoud
+* De namen van de eigenschappen die de te vertalen inhoud bevatten
+   * Het bezit kan voor een specifiek middeltype of voor alle middeltypes specifiek zijn
 
-Because Content Fragment Models, which define the structure of your Content Fragments, are unique to your own project, it is vital to set up translation rules so AEM knows what elements of your content models to translate.
+Omdat de Modellen van het Fragment van de Inhoud, die de structuur van uw Inhoudsfragmenten bepalen, aan uw eigen project uniek zijn, is het essentieel aan opstellingsvertaalregels zodat AEM weet welke elementen van uw inhoudsmodellen om moeten vertalen.
 
 >[!TIP]
 >
->**** These names are needed to configure translation rules. [****](getting-started.md#content-modlels)
+>Over het algemeen biedt de architect van de inhoud de vertaler **Eigenschapnaam** s van alle velden die nodig zijn voor vertaling. Deze namen zijn nodig om vertaalregels te configureren. Als vertaler [kan deze vinden **Eigenschapnaam** zoals uzelf](getting-started.md#content-modlels) zoals eerder beschreven in deze reis.
 
-## Creating Translation Rules {#creating-rules}
+## Vertaalregels maken {#creating-rules}
 
-Multiple rules can be created to support complex translation requirements. For example, one project you may be working on requires all fields of the model to be translated, but on another only description fields must be translated while titles are left untranslated.
+Er kunnen meerdere regels worden gemaakt ter ondersteuning van complexe vertaalvereisten. Het ene project waaraan u werkt, vereist bijvoorbeeld dat alle velden van het model worden vertaald, maar dat andere alleen beschrijvingsvelden worden vertaald terwijl titels niet worden vertaald.
 
-Translation rules are designed to handle such scenarios. However in this example we illustrate how to create rules by focusing on a simple, single configuration.
+De vertaalregels worden ontworpen om dergelijke scenario&#39;s te behandelen. Nochtans in dit voorbeeld illustreren wij hoe te om regels tot stand te brengen door zich op een eenvoudige, enige configuratie te concentreren.
 
-**** To access it:
+Er is een **Configuratie vertaling** console beschikbaar voor het vormen van vertaalregels. Toegang tot dit bestand:
 
-1. ********
-1. ****
+1. Navigeren naar **Gereedschappen** -> **Algemeen**.
+1. Tik of klik op **Configuratie vertaling**.
 
-**** Here we highlight the most necessary and typical steps required for a basic headless localization configuration.
+In de **Configuratie vertaling** UI, zijn er een aantal opties beschikbaar voor uw vertaalregels. Hier benadrukken wij de meest noodzakelijke en typische stappen die voor een basisconfiguratie zonder kop worden vereist.
 
-1. **** This is the path of the content that is be affected by the rule.
-   ![](assets/add-translation-context.png)
-1. **** `/content/dam/<your-project>`
-   ![](assets/select-context.png)
-1. AEM saves the configuration.
-1. **** ****
-   ![](assets/translation-rules-editor.png)
-1. `/content/dam` **`/content/dam`**
-1. ****[](getting-started.md#content-models)
-   1. ****
-   1. ********
-   1. ****
-   1. Repeat these steps for all of the fields that you must translate.
-   1. ****
-      ![](assets/add-property.png)
+1. Tik of klik op **Context toevoegen**, waarmee u een pad kunt toevoegen. Dit is het pad van de inhoud waarop de regel van toepassing is.
+   ![Context toevoegen](assets/add-translation-context.png)
+1. Gebruik de padbrowser om het vereiste pad te selecteren en tik of klik op de knop **Bevestigen** op te slaan. Onthoud dat Content Fragments, die inhoud zonder kop bevatten, zich doorgaans onder `/content/dam/<your-project>`.
+   ![Het pad selecteren](assets/select-context.png)
+1. AEM slaat de configuratie op.
+1. Selecteer de context die u zojuist hebt gemaakt en tik of klik op **Bewerken**. Hierdoor wordt het **Editor voor omzettingsregels** om de eigenschappen te configureren.
+   ![Editor voor vertaalregels](assets/translation-rules-editor.png)
+1. Standaard worden alle configuraties overgeërfd van het bovenliggende pad, in dit geval `/content/dam`. Schakel de optie uit **Overnemen van`/content/dam`** om extra gebieden aan de configuratie toe te voegen.
+1. Als deze optie is uitgeschakeld, onder de knop **Algemeen** in de lijst, voegt u de eigenschapnamen toe van de Content Fragment Model(s) die u [eerder geïdentificeerd als velden voor vertaling.](getting-started.md#content-models)
+   1. Voer de naam van de eigenschap in het dialoogvenster **Nieuwe eigenschap** veld.
+   1. De opties **Vertalen** en **Overnemen** worden automatisch ingeschakeld.
+   1. Tik of klik op **Toevoegen**.
+   1. Herhaal deze stappen voor alle velden die u moet vertalen.
+   1. Tik of klik op **Opslaan**.
+      ![Eigenschap toevoegen](assets/add-property.png)
 
-You have now configured your translation rules.
+U hebt nu uw vertaalregels geconfigureerd.
 
-## Advanced Usage {#advanced-usage}
+## Geavanceerd gebruik {#advanced-usage}
 
-There are a number of additional properties that can be configured as part of your translation rules. In addition, you can specify your rules by hand as XML, which allows for more specificity and flexibility.
+Er zijn een aantal extra eigenschappen die als deel van uw vertaalregels kunnen worden gevormd. Bovendien kunt u uw regels handmatig als XML opgeven, waardoor meer specificiteit en flexibiliteit mogelijk zijn.
 
-[](#additional-resources)
+Dergelijke functies zijn meestal niet nodig om uw inhoud zonder kop te lokaliseren, maar u kunt er meer over lezen in het dialoogvenster [Aanvullende bronnen](#additional-resources) als u geïnteresseerd bent.
 
-## What&#39;s Next {#what-is-next}
+## Volgende functies {#what-is-next}
 
-Now that you have completed this part of the headless translation journey you should:
+Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 
-* Understand what the translation rules do.
-* Be able to define your own translation rules.
+* Begrijp wat de vertaalregels doen.
+* U kunt uw eigen vertaalregels definiëren.
 
-[](translate-content.md)
+Gebaseerd op deze kennis en doorgaan met uw AEM doorlopende vertaaltocht door het document opnieuw te bekijken [Inhoud vertalen](translate-content.md) waar u zult leren hoe uw schakelaar en regels samenwerken om hoofdloze inhoud te vertalen.
 
 ## Aanvullende bronnen {#additional-resources}
 
-[](translate-content.md)
+U kunt het beste naar het volgende gedeelte van de reis zonder kop gaan door het document te bekijken [Inhoud vertalen,](translate-content.md) hieronder volgen enkele aanvullende , optionele bronnen die dieper ingaan op bepaalde in dit document genoemde concepten , maar die niet nodig zijn om verder te gaan op de weg zonder kop .
 
-* [](/help/sites-cloud/administering/translation/rules.md)
+* [Te vertalen inhoud identificeren](/help/sites-cloud/administering/translation/rules.md) - Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.

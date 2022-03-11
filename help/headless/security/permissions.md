@@ -1,14 +1,14 @@
 ---
-title: 'Bevoegdheidsoverwegingen voor inhoud zonder kop '
+title: Bevoegdheidsoverwegingen voor inhoud zonder kop
 description: Leer over verschillende toestemmings en ACL overwegingen voor een headless implementatie met Adobe Experience Manager. Begrijp de verschillende personen en de potentiële toestemmingsniveaus nodig voor zowel auteur als Publish milieu's.
 feature: Content Fragments,GraphQL API
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
+exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
 
 ---
-
 
 # Bevoegdheidsoverwegingen voor inhoud zonder kop
 
@@ -98,4 +98,3 @@ De [AEM headless SDK](https://github.com/adobe/aem-headless-client-js#create-aem
 ### Toegang krijgen tot de API GraphQL
 
 HTTP-aanvragen die de [juiste verificatiereferenties](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) op de eindpunten van de GraphQL API van de AEM-publicatieservice bevat inhoud die de referenties mogen lezen en die anoniem toegankelijk is. Andere gebruikers van de GraphQL API kunnen de inhoud in de met CUG&#39;s beveiligde mappen niet lezen.
-

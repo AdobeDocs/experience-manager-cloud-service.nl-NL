@@ -1,22 +1,21 @@
 ---
-title: Gebruik de Rich Text Editor in [!DNL Adobe Experience Manager] om inhoud te schrijven.
-description: Gebruik  [!DNL Experience Manager] Rich Text Editor om inhoud te schrijven.
-translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+title: De Rich Text Editor gebruiken in [!DNL Adobe Experience Manager] aan de auteur van inhoud.
+description: Gebruik de [!DNL Experience Manager] De rijke Redacteur van de Tekst aan auteursinhoud.
+exl-id: 15c175f8-11de-4475-87a9-920219a4c004
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
+# De Rich Text Editor gebruiken om inhoud te schrijven {#use-rich-text-editor-to-author-content}
 
-# Gebruik de Rich Text Editor om inhoud {#use-rich-text-editor-to-author-content} te schrijven
-
-De rijke Redacteur van de Tekst (RTE) is een basisbouwsteen om tekstuele inhoud aan [!DNL Adobe Experience Manager] toe te voegen. Ook, zijn vele andere componenten die auteursrecht toestaan gebaseerd op RTE. De ontwikkelaars van de Experience Manager kunnen RTE aanpassen en de beheerders vormen RTE voor gebruik door auteurs.
+De Rich Text Editor (RTE) is een basisbouwsteen voor het toevoegen van tekstuele inhoud aan [!DNL Adobe Experience Manager]. Ook, zijn vele andere componenten die auteursrecht toestaan gebaseerd op RTE. De ontwikkelaars van de Experience Manager kunnen RTE aanpassen en de beheerders vormen RTE voor gebruik door auteurs.
 
 ## Lokaal bewerken {#in-place-editing}
 
-Een op tekst gebaseerde component selecteren met één klik om de [componentwerkbalk](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) weer te geven.
+Een op tekst gebaseerde component selecteren met één klik om de [componentwerkbalk](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar).
 
 ![De componentwerkbalk](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
@@ -36,24 +35,24 @@ De werkbalk bevat doorgaans de volgende opties:
 
 ## Volledig scherm bewerken {#full-screen-editing}
 
-Voor op tekst gebaseerde componenten, klik de volledig-schermwijze ![RTE volledige het schermknoop](/help/sites-cloud/authoring/assets/editing-full-screen.png) van [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) om de rijke tekstredacteur te openen en de rest van de pagina inhoud te verbergen.
+Voor op tekst gebaseerde componenten klikt u op de modus Volledig scherm ![RTE-knop voor volledig scherm](/help/sites-cloud/authoring/assets/editing-full-screen.png) van de [werkbalk](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) Hiermee opent u de teksteditor met opmaak en verbergt u de rest van de pagina-inhoud.
 
-In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid van opties [is afhankelijk van de configuratie](/help/implementing/developing/extending/rich-text-editor.md).
+In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. Beschikbaarheid van opties [afhankelijk van de configuratie](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![RTE in de modus Volledig scherm](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
 De volgende opties voor teksteditors met tekstopmaak zijn beschikbaar:
 
 * **Anker**: Maak een anker in de tekst waarnaar u later een koppeling kunt maken of een verwijzing kunt maken.
-* **Tekst links** uitlijnen.
-* **Tekst** centreren.
-* **Tekst rechts** uitlijnen.
+* **Tekst links uitlijnen**.
+* **Tekst centreren**.
+* **Tekst rechts uitlijnen**.
 
 Klik op minimaliseren om de modus Volledig scherm te sluiten.
 
 >[!TIP]
 >
->Het kopiëren van genestelde lijsten van [!DNL Microsoft Word] in RTE kan inconsistente resultaten geven. Plak in plaats daarvan als tekst en pas de tekst handmatig aan.
+>Geneste lijsten kopiëren uit [!DNL Microsoft Word] in de RTE kan leiden tot inconsistente resultaten. Plak in plaats daarvan als tekst en pas de tekst handmatig aan.
 
 >[!MORELIKETHIS]
 >

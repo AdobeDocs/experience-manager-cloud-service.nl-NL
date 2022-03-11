@@ -1,46 +1,45 @@
 ---
 title: SPA
 description: Voor toepassingen van één pagina in AEM, is app verantwoordelijk voor het verpletteren. Dit document beschrijft het verpletterende mechanisme, het contract, en beschikbare opties.
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
-
-# SPA Model Routering{#spa-model-routing}
+# SPA{#spa-model-routing}
 
 Voor toepassingen van één pagina in AEM, is app verantwoordelijk voor het verpletteren. Dit document beschrijft het verpletterende mechanisme, het contract, en beschikbare opties.
 
-## Projectroutering {#project-routing}
+## Project routeren {#project-routing}
 
-App bezit het verpletteren en dan uitgevoerd door de ontwikkelaars van het projectfront. Dit document beschrijft specifiek het verpletteren voor het model dat door de AEM server is teruggekeerd. De gegevensstructuur van het paginamodel stelt URL van het onderliggende middel bloot. Het front-end project kan om het even welke douane of derdebibliotheek gebruiken die verpletterende functionaliteit verstrekt. Zodra een route een fragment van model verwacht, kan een vraag aan de `PageModelManager.getData()` functie worden gemaakt. Wanneer een modelroute is veranderd moet een gebeurtenis worden teweeggebracht om luisterbibliotheken zoals de Redacteur van de Pagina te waarschuwen.
+The App owns the routing and is then implemented by the project front end developers. Dit document beschrijft specifiek het verpletteren voor het model dat door de AEM server is teruggekeerd. De gegevensstructuur van het paginamodel stelt URL van het onderliggende middel bloot. The front end project can use any custom or third-party library providing routing functionalities. Zodra een route een fragment van model, een vraag aan verwacht `PageModelManager.getData()` kan worden uitgevoerd. Wanneer een modelroute is veranderd moet een gebeurtenis worden teweeggebracht om luisterbibliotheken zoals de Redacteur van de Pagina te waarschuwen.
 
 ## Architectuur {#architecture}
 
-Voor een gedetailleerde beschrijving raadpleegt u de sectie [PageModelManager](blueprint.md#pagemodelmanager) van het document SPA blauwdruk.
+Voor een gedetailleerde beschrijving raadpleegt u de [PageModelManager](blueprint.md#pagemodelmanager) van het document SPA blauwdruk.
 
 ## ModelRouter {#modelrouter}
 
-`ModelRouter` - indien ingeschakeld - kapselt de API-functies `pushState` en `replaceState` van de HTML5 History in om ervoor te zorgen dat een bepaald fragment van het model vooraf wordt opgehaald en toegankelijk is. Vervolgens wordt de geregistreerde front-end component meegedeeld dat het model is gewijzigd.
+De `ModelRouter` - indien ingeschakeld - kapselt de API-functies van HTML5 History in `pushState` en `replaceState` om ervoor te zorgen dat een bepaald fragment van het model vooraf wordt opgehaald en toegankelijk is. It then notifies the registered front end component that the model has been modified.
 
-## Handmatig versus automatisch model dat {#manual-vs-automatic-model-routing}
+## Manual vs Automatic Model Routing {#manual-vs-automatic-model-routing}
 
-Met `ModelRouter` worden fragmenten van het model automatisch opgehaald. Maar zoals elk geautomatiseerd gereedschap ook met beperkingen gepaard gaat. Indien nodig kan `ModelRouter` worden uitgeschakeld of geconfigureerd om paden te negeren met behulp van meta-eigenschappen (zie de sectie Meta-eigenschappen van het document [SPA Paginacomponent](page-component.md)). De ontwikkelaars van het vooreind kunnen hun eigen model dan uitvoeren die laag verpletteren door `PageModelManager` te verzoeken om om het even welk bepaald fragment van model te laden gebruikend de `getData()` functie.
+The `ModelRouter` automates the fetching of fragments of the model. Maar zoals elk geautomatiseerd gereedschap ook met beperkingen gepaard gaat. When needed the `ModelRouter` can be disabled or configured to ignore paths using meta properties (See the Meta Properties section of the [SPA Page Component](page-component.md) document). Front end developers can then implement their own model routing layer by requesting the `PageModelManager` to load any given fragment of model using the `getData()` function.
 
 >[!CAUTION]
 >
->De huidige versie van `ModelRouter` steunt slechts het gebruik van URLs die aan de daadwerkelijke middelweg van de Invoerpunten van het Sling Model richt. Het steunt niet het gebruik van Vanity URLs of aliassen.
+>De huidige versie van de `ModelRouter` alleen ondersteuning voor het gebruik van URL&#39;s die verwijzen naar het feitelijke bronnenpad van verzendmodel-entry-punten. Het steunt niet het gebruik van Vanity URLs of aliassen.
 
 ## Routeringscontract {#routing-contract}
 
-De huidige implementatie is gebaseerd op de veronderstelling dat het SPA project de HTML5 History API voor het verpletteren aan de verschillende toepassingspagina&#39;s gebruikt.
+De huidige implementatie is gebaseerd op de veronderstelling dat het SPA project HTML5 Geschiedenis API voor het verpletteren aan de verschillende toepassingspagina&#39;s gebruikt.
 
 ### Configuratie {#configuration}
 
-`ModelRouter` steunt het concept model verpletterend aangezien het `pushState` en `replaceState` vraag aan prefetch modelfragmenten luistert. Intern activeert het `PageModelManager` om het model te laden dat aan een bepaalde URL beantwoordt en een `cq-pagemodel-route-changed` gebeurtenis in brand steken die andere modules kunnen luisteren aan.
+De `ModelRouter` steunt het concept model verpletterend aangezien het op let `pushState` en `replaceState` aanroepen van vooraf ingestelde modelfragmenten. Intern activeert het de `PageModelManager` om het model te laden dat overeenkomt met een opgegeven URL en voert een `cq-pagemodel-route-changed` gebeurtenis waaraan andere modules kunnen luisteren.
 
 Dit gedrag wordt standaard automatisch ingeschakeld. Om het onbruikbaar te maken, zou de SPA het volgende meta-bezit moeten teruggeven:
 
@@ -48,7 +47,7 @@ Dit gedrag wordt standaard automatisch ingeschakeld. Om het onbruikbaar te maken
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-Merk op dat elke route van de SPA aan een toegankelijke bron in AEM (b.v., &quot; `/content/mysite/mypage"`) zou moeten beantwoorden aangezien `PageModelManager` automatisch zal proberen om het overeenkomstige paginamodel te laden zodra de route wordt geselecteerd. Desondanks, indien nodig, kan de SPA een &quot;lijst van afgewezen personen&quot;van routes ook bepalen die door `PageModelManager` moeten worden genegeerd:
+Note that every route of the SPA should correspond to an accessible resource in AEM (e.g., &quot; `/content/mysite/mypage"`) since the `PageModelManager` will automatically try to load the corresponding page model once the route is selected. Desondanks kan de SPA, indien nodig, ook een &quot;lijst van gewezen personen&quot;van routes bepalen die door `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

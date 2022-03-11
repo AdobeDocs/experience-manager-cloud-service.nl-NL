@@ -1,14 +1,14 @@
 ---
-title: Ondersteuning van miniaturen voor video's op schermen als Cloud Service
-description: In deze pagina wordt beschreven hoe u miniatuurondersteuning voor video's in schermen kunt toevoegen als Cloud Service.
+title: Ondersteuning voor miniaturen voor video's in as a Cloud Service schermen
+description: Op deze pagina wordt beschreven hoe u ondersteuning voor miniaturen voor video's in as a Cloud Service schermen toevoegt.
 index: true
-source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
+exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
 
 ---
-
 
 # Ondersteuning van miniaturen voor video&#39;s {#thumbnail-support-videos}
 
@@ -31,16 +31,16 @@ Dankzij de ondersteuning voor miniaturen kunt u:
 
 >[!IMPORTANT]
 >**Vereisten**
->Voordat u leert hoe u miniaturen voor video&#39;s kunt gebruiken, moet u leren hoe u videouitvoeringen voor kanalen in rasters maakt als een Cloud Service-project. Zie [hier](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) voor meer informatie.
+>Voordat u leert hoe u miniaturen voor video&#39;s kunt gebruiken, moet u weten hoe u video-uitvoeringen voor kanalen maakt in het as a Cloud Service project Schermen. Zie [hier](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) voor meer informatie .
 
 Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 
 1. Navigeer naar een bestaand rasterkanaal of maak een nieuw kanaal.
 
    >[!NOTE]
-   >Zie [Een kanaal in rasters maken en beheren als een Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en) voor meer informatie over het maken van een kanaal en het toevoegen van inhoud aan een kanaal.
+   >Ga voor meer informatie over het maken van een kanaal en het toevoegen van inhoud aan een kanaal naar [Een kanaal maken en beheren in as a Cloud Service schermen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
 
-1. Selecteer het kanaal en klik op **Edit** van de actiebar om de redacteur te openen.
+1. Selecteer het kanaal en klik op **Bewerken** in de actiebalk om de editor te openen.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
@@ -48,19 +48,19 @@ Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Selecteer de video en klik op het *moersleutelpictogram* om de video-eigenschappen te openen.
+1. Selecteer de video en klik op de knop *moersleutel* om de video-eigenschappen te openen.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. Het dialoogvenster **Video** wordt geopend waar u de neerzetzone **Miniatuur** wilt weergeven.
+1. De **Video** wordt het dialoogvenster geopend waarin u het dialoogvenster **Miniatuur** dropzone.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
-1. Sleep een afbeelding van de elementenkiezer naar de neerzetzone **Miniatuur** en klik op **Done**.
+1. Sleep een afbeelding van de elementkiezer naar de **Miniatuur** dropzone en klik op **Gereed**.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
 
-1. Klik op **Voorvertoning**.
+1. Klikken op **Voorvertoning**.
 
 1. Als een video op de component wordt geplaatst, zal de video spelen. Als dat niet het geval is en de miniatuur is ingesteld, wordt de miniatuur afgespeeld. Anders wordt de component beschouwd als niet gevormd en zal worden overgeslagen.
 

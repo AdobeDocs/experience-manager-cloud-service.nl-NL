@@ -1,14 +1,13 @@
 ---
 title: Workflows toepassen op pagina's
 description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. het is ook mogelijk meerdere werkschema's toe te passen.
-translation-type: tm+mt
-source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
+exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 11%
 
 ---
-
 
 # Workflows toepassen op pagina&#39;s {#applying-workflows-to-pages}
 
@@ -24,7 +23,7 @@ Wanneer u de workflow toepast, geeft u de volgende informatie op:
 Workflows kunnen worden gestart vanaf:
 
 * [de Sites-console](#starting-a-workflow-from-the-sites-console).
-* [bij het bewerken van een pagina, vanuit Pagina-informatie](#starting-a-workflow-from-the-page-editor).
+* [bij het bewerken van een pagina, uit paginagegevens](#starting-a-workflow-from-the-page-editor).
 
 >[!NOTE]
 >
@@ -51,48 +50,48 @@ Workflows kunnen worden gestart vanaf:
 
 U kunt een workflow starten vanuit:
 
-* [Kies de optie Maken op de werkbalk](#starting-a-workflow-from-the-sites-toolbar) Sites.
+* [De optie Maken op de werkbalk Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [de tijdlijnrail van de Sites-console](#starting-a-workflow-from-the-timeline).
 
 In beide gevallen moet u:
 
-* [Geef de workflowdetails op in de wizard](#specifying-workflow-details-in-the-create-workflow-wizard) Workflow maken.
+* [Geef de workflowdetails op in de wizard Workflow maken](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Een workflow starten op de werkbalk Sites {#starting-a-workflow-from-the-sites-toolbar}
 
-U kunt een werkschema van de toolbar van **Sites** console beginnen:
+U kunt een workflow starten op de werkbalk van het dialoogvenster **Sites** console:
 
 1. Navigeer naar de gewenste pagina en selecteer deze.
 
-1. Met de optie **Maken** op de werkbalk kunt u **Workflow** nu selecteren.
+1. Van de **Maken** in de werkbalk die u nu kunt selecteren **Workflow**.
 
    ![Werkstroom maken van de werkbalk](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
-1. Met de wizard **Workflow maken** kunt u [de workflowdetails opgeven](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. De **Workflow maken** wizard helpt u [de workflowdetails opgeven](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Een workflow starten vanuit de tijdlijn {#starting-a-workflow-from-the-timeline}
 
-Vanuit de **tijdlijn** kunt u een workflow starten die op de geselecteerde bron moet worden toegepast.
+Van de **Tijdlijn** u kunt een workflow starten die op de geselecteerde bron moet worden toegepast.
 
-1. [Selecteer de ](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) bron en open  [Tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)  (of open Chronologie en selecteer dan de middel).
-1. De pijlpunt door het commentaargebied kan worden gebruikt om **Workflow van het Begin** te openbaren:
+1. [Selecteer de bron](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) en open [Tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (U kunt Tijdlijn openen en vervolgens de bron selecteren).
+1. De pijlpunt op het veld Opmerking kan worden gebruikt om **Workflow starten**:
 
    ![Workflow maken vanuit de tijdlijn](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
-1. Met de wizard **Workflow maken** kunt u [de workflowdetails opgeven](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. De **Workflow maken** wizard helpt u [de workflowdetails opgeven](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Workflowdetails opgeven in de wizard Workflow maken {#specifying-workflow-details-in-the-create-workflow-wizard}
 
-Met de wizard **Workflow maken** kunt u de workflow selecteren en de vereiste details opgeven.
+De **Workflow maken** De wizard helpt u de workflow te selecteren en de vereiste details op te geven.
 
-Na het openen van **Create Workflow** tovenaar van of:
+Na het openen van het dialoogvenster **Workflow maken** wizard van:
 
-* [Kies de optie Maken op de werkbalk](#starting-a-workflow-from-the-sites-toolbar) Sites.
+* [De optie Maken op de werkbalk Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [de tijdlijnrail van de Sites-console](#starting-a-workflow-from-the-timeline).
 
 U kunt details opgeven:
 
-1. In de stap **Eigenschappen** worden de basisopties van de workflow gedefinieerd:
+1. In de **Eigenschappen** De basisopties van de workflow worden nu gedefinieerd:
 
    * **Workflowmodel**
    * **Titel werkstroom**
@@ -113,17 +112,17 @@ U kunt details opgeven:
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
 
-   Wanneer volledig, gebruik **Volgende** om te werk te gaan.
+   Na voltooiing gebruiken **Volgende** om verder te gaan.
 
    ![Eigenschappen van werkstromen opgeven](/help/sites-cloud/authoring/assets/workflows-properties.png)
 
-1. In de stap **Scope** kunt u selecteren:
+1. In de **Toepassingsgebied** stap die u kunt selecteren:
 
-   * **Voeg** Inhoud toe om  [wegbrowser ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) te openen en extra middelen te selecteren; Als u in de browser op Selecteren klikt of tikt  **** om de inhoud aan de werkstroominstantie toe te voegen.
+   * **Inhoud toevoegen** om de [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) en selecteer aanvullende middelen; wanneer u in de browser klikt of tikt **Selecteren** om de inhoud aan de werkstroominstantie toe te voegen.
 
    * Een bestaande bron voor het weergeven van extra handelingen:
 
-      * **Neem** kinderen op om op te geven dat onderliggende elementen van die bron worden opgenomen in de workflow.
+      * **Inclusief kinderen** om te specificeren dat de kinderen van die bron in het werkschema zullen worden omvat.
 Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis van:
 
          * Alleen directe kinderen opnemen.
@@ -132,7 +131,7 @@ Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis
 
          Alle opgegeven onderliggende items worden toegevoegd aan de lijst met bronnen waarop de workflow van toepassing is.
 
-      * **Verwijder** Selectie om die bron uit de workflow te verwijderen.
+      * **Selectie verwijderen** om die bron uit de workflow te verwijderen.
 
    ![Werkstroombereik definiëren](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
@@ -140,10 +139,10 @@ Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis
    >
    >Als u aanvullende resources toevoegt, kunt u **Terug** gebruiken om de instelling voor **Workflowpakket behouden** aan te passen in de stap **Eigenschappen**.
 
-1. Gebruik **Maken** om de wizard te sluiten en de werkstroominstantie te maken. Een bericht wordt getoond in de console van Plaatsen.
+1. Gebruiken **Maken** om de wizard te sluiten en de instantie van de workflow te maken. Een bericht wordt getoond in de console van Plaatsen.
 
 ## Een workflow starten vanuit de Pagina-editor {#starting-a-workflow-from-the-page-editor}
 
-Wanneer u een pagina bewerkt, kunt u **Pagina-informatie** op de werkbalk selecteren. Het drop-down menu heeft de optie **Begin in Werkschema**. Hiermee wordt een dialoogvenster geopend waarin u de vereiste workflow kunt opgeven, en desgewenst een titel:
+Als u een pagina bewerkt, kunt u **Pagina-informatie** op de werkbalk. Het vervolgkeuzemenu heeft de optie **Starten in workflow**. Hiermee wordt een dialoogvenster geopend waarin u de vereiste workflow kunt opgeven, en desgewenst een titel:
 
 ![Een workflow starten vanuit de pagina-editor](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

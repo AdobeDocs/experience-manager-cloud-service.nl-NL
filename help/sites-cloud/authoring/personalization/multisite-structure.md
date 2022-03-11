@@ -1,20 +1,19 @@
 ---
 title: Structurering van beheer voor meerdere sites voor getargete content
 description: Een diagram toont hoe multisite steun voor gerichte inhoud gestructureerd is
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 8%
 
 ---
 
-
 # Structurering van beheer voor meerdere sites voor getargete content {#how-multisite-management-for-targeted-content-is-structured}
 
 Het volgende diagram toont hoe multisite steun voor gerichte inhoud gestructureerd is.
 
-Gebieden staan onder **/content/campagnes/&lt;brand>** en elk merk heeft standaard een master gebied, dat automatisch wordt gemaakt. Elk gebied bevat zijn eigen reeks activiteiten, ervaringen en aanbiedingen.
+Onder de gebieden verschijnen **/content/campagnes/&lt;brand>** elk merk heeft standaard een master gebied dat automatisch wordt gemaakt . Elk gebied bevat zijn eigen reeks activiteiten, ervaringen en aanbiedingen.
 
 ![Multisite structuur](/help/sites-cloud/authoring/assets/multisite-structure.png)
 

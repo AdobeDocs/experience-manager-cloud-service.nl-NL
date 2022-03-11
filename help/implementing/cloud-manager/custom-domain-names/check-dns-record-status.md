@@ -13,21 +13,21 @@ ht-degree: 0%
 
 U kunt bepalen of uw domeinnaam correct aan uw AEM as a Cloud Service website door het pictogram van de Status voor het DNS verslag van de lijst op de Milieu&#39;s van de pagina van de Montages van het Domein te klikken wordt opgelost.
 
-Cloud Manager zal automatisch een DNS raadpleging teweegbrengen wanneer uw Naam van het Domein van de Douane eerst met succes wordt geverifieerd en wordt opgesteld. Voor verdere pogingen, moet u actief **oplossen opnieuw** pictogram naast de status selecteren.
+Cloud Manager zal automatisch een DNS raadpleging teweegbrengen wanneer uw Naam van het Domein van de Douane eerst met succes wordt geverifieerd en wordt opgesteld. Voor volgende pogingen moet u actief de optie **opnieuw oplossen** naast de status.
 
 Cloud Manager voert een DNS-zoekopdracht voor uw domeinnaam uit en geeft een van de volgende statusberichten weer:
 
-* **DNS status not**
-detectedDNS status zal niet worden ontdekt tot uw naam van het douanedomein met succes is geverifieerd en opgesteld. Deze status wordt ook waargenomen wanneer uw naam van het Domein van de Douane in het proces van schrapping is.
+* **DNS-status niet gedetecteerd**
+DNS status zal niet worden ontdekt tot uw naam van het douanedomein met succes is geverifieerd en opgesteld. Deze status wordt ook waargenomen wanneer uw naam van het Domein van de Douane in het proces van schrapping is.
 
-* **DNS lost**
-Incorrect opThis wijst erop dat of DNS archiefconfiguratie nog niet heeft opgelost/over gewezen of onjuist is.
+* **DNS lost onjuist op**
+Dit wijst erop dat één van beide DNS archiefconfiguratie niet heeft opgelost/op nog gewezen of onjuist is.
 
    >[!NOTE]
-   >U moet of `CNAME` of `A-record` door de overeenkomstige instructies te volgen vormen. Zie DNS-instellingen configureren voor meer informatie. Wanneer klaar, moet u **oplossen opnieuw** pictogram naast de status selecteren.
+   >U moet één van beide vormen `CNAME` of `A-record` door de desbetreffende instructies te volgen. Zie DNS-instellingen configureren voor meer informatie. Wanneer u klaar bent, moet u de optie **opnieuw oplossen** naast de status.
 
-* **DNS-resolutie In**
-ProgressResolution wordt uitgevoerd. Deze status wordt meestal weergegeven nadat u het pictogram &quot;Opnieuw oplossen&quot; naast de status hebt geselecteerd.
+* **DNS-resolutie in uitvoering**
+De resolutie is in uitvoering. Deze status wordt meestal weergegeven nadat u het pictogram &quot;Opnieuw oplossen&quot; naast de status hebt geselecteerd.
 
-* **DNS lost**
-correct op Uw DNS montages worden behoorlijk gevormd. Uw site is bestemd voor bezoekers.
+* **DNS lost correct op**
+Uw DNS-instellingen zijn correct geconfigureerd. Uw site is bestemd voor bezoekers.

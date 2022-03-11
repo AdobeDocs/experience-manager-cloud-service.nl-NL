@@ -1,26 +1,25 @@
 ---
 title: Uw accountomgeving configureren
 description: AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren
-translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 4%
 
 ---
 
-
-# Uw accountomgeving {#configuring-your-account-environment} configureren
+# Uw accountomgeving configureren {#configuring-your-account-environment}
 
 AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
 Met de optie [Gebruiker](#user-settings) in de [koptekst](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#my-preferences) kunt u uw gebruikersopties wijzigen, zoals
 
-Begin door tot [User](#user-settings) optie in de kopbal toegang te hebben.
+Beginnen met toegang tot de [Gebruiker](#user-settings) in de koptekst.
 
 ## Gebruikersinstellingen {#user-settings}
 
-In het instellingendialoogvenster **Gebruiker** hebt u toegang tot:
+De **Gebruiker** In het dialoogvenster Instellingen hebt u toegang tot:
 
 * Imiteren als
    * Met Impersonate als functionaliteit, kan een gebruiker namens een andere gebruiker werken. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -33,7 +32,7 @@ In het instellingendialoogvenster **Gebruiker** hebt u toegang tot:
 
 ### Mijn voorkeuren {#my-preferences}
 
-Het dialoogvenster **Mijn voorkeuren** is toegankelijk via de optie [Gebruiker](#user-settings) in de koptekst.
+De **Mijn voorkeuren** dialoogvenster is toegankelijk via de [Gebruiker](#user-settings) in de koptekst.
 
 Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
@@ -47,7 +46,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
    Hiermee definieert u het gedrag voor het openen van vensters. Selecteer een van de volgende opties:
 
-   * **Meerdere vensters**  (standaard)
+   * **Meerdere vensters** (Standaard)
 
       * Pagina&#39;s worden in een nieuw venster geopend.
    * **Eén venster**
@@ -72,12 +71,12 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
    Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 
-   * **Altijd exacte datum** weergeven: De exacte datum wordt altijd weergegeven (nooit een relatieve datum).
+   * **Altijd exacte datum weergeven**: De exacte datum wordt altijd weergegeven (nooit een relatieve datum).
    * **1 dag**: De relatieve datum wordt weergegeven voor datums binnen één dag, anders wordt een exacte datum weergegeven.
    * **7 dagen (standaard)**: De relatieve datum wordt weergegeven voor datums binnen zeven dagen, anders wordt een exacte datum weergegeven.
    * **1 maand**: De relatieve datum wordt weergegeven voor datums binnen een maand, anders wordt een exacte datum weergegeven.
    * **1 jaar**: De relatieve datum wordt weergegeven voor data binnen een jaar, anders wordt een exacte datum vermeld.
-   * **Relatieve datum** altijd weergeven: Exacte datums worden nooit weergegeven en alleen relatieve datums worden weergegeven.
+   * **Relatieve datum altijd weergeven**: Exacte datums worden nooit weergegeven en alleen relatieve datums worden weergegeven.
 
 * **Sneltoetsen inschakelen**
 
@@ -94,4 +93,4 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Bestandsconfiguratie**
 
-   Met deze optie kunt u de voorkeursconfiguratie van Adobe Stock opgeven. Deze optie is alleen beschikbaar als uw systeembeheerder [Adobe Stock-integratie](/help/assets/aem-assets-adobe-stock.md) heeft ingeschakeld.
+   Met deze optie kunt u de voorkeursconfiguratie van Adobe Stock opgeven. Deze optie is alleen beschikbaar als uw systeembeheerder heeft ingeschakeld [Adobe Stock-integratie](/help/assets/aem-assets-adobe-stock.md).

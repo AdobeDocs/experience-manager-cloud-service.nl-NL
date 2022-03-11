@@ -1,13 +1,13 @@
 ---
 title: HTTP-API voor assets
-description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Experience Manager Assets].
+description: Digitale middelen maken, lezen, bijwerken, verwijderen en beheren met HTTP API in [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Elementen HTTP-API,API's
+feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -16,28 +16,28 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Met de HTTP-API [!DNL Assets] kunt u CRUD-bewerkingen (read-read-update-delete) maken op digitale elementen, waaronder metagegevens, uitvoeringen en opmerkingen, en op gestructureerde inhoud met behulp van [!DNL Experience Manager] Inhoudsfragmenten. Deze wordt weergegeven op `/api/assets` en wordt geïmplementeerd als REST API. Het omvat [steun voor Inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md).
+De [!DNL Assets] Met de HTTP-API kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, uitvoeringen en opmerkingen, en voor gestructureerde inhoud met gebruik van [!DNL Experience Manager] Inhoudsfragmenten. Het wordt blootgesteld bij `/api/assets` en is geïmplementeerd als REST API. Hieronder vallen [ondersteuning voor inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 Toegang krijgen tot de API:
 
 1. Open het API-servicedocument op `https://[hostname]:[port]/api.json`.
-1. Volg de [!DNL Assets] de dienstverbinding die aan `https://[hostname]:[server]/api/assets.json` leidt.
+1. Volg de [!DNL Assets] servicekoppeling die leidt naar `https://[hostname]:[server]/api/assets.json`.
 
 De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode voor alle MIME-typen. Het JSON-antwoord is optioneel en is mogelijk niet beschikbaar, bijvoorbeeld voor PDF-bestanden. Vertrouw op de antwoordcode voor verdere analyse of acties.
 
 >[!NOTE]
 >
->Alle API-aanroepen met betrekking tot het uploaden of bijwerken van middelen of binaire bestanden in het algemeen (zoals uitvoeringen) zijn voor [!DNL Experience Manager] vervangen als een [!DNL Cloud Service]-implementatie. Voor het uploaden van binaire getallen, gebruik [directe binaire upload APIs](developer-reference-material-apis.md#asset-upload) in plaats daarvan.
+>Alle API-aanroepen die betrekking hebben op het uploaden of bijwerken van elementen of binaire bestanden in het algemeen (zoals uitvoeringen) zijn afgekeurd voor [!DNL Experience Manager] als [!DNL Cloud Service] implementatie. Gebruik voor het uploaden van binaire bestanden [directe binaire upload-API&#39;s](developer-reference-material-apis.md#asset-upload) in plaats daarvan.
 
 ## Contentfragmenten {#content-fragments}
 
-A [Inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal type element. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn met `standard` elementen (zoals afbeeldingen of documenten), zijn enkele aanvullende regels van toepassing op de verwerking van inhoudsfragmenten.
+A [Inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal soort actief. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn tussen `standard` elementen (zoals afbeeldingen of documenten), zijn enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
 
-Zie [Ondersteuning van inhoudsfragmenten in de  [!DNL Experience Manager Assets] HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) voor meer informatie.
+Zie voor meer informatie [Ondersteuning voor inhoudsfragmenten in het dialoogvenster [!DNL Experience Manager Assets] HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Gegevensmodel {#data-model}
 
-De [!DNL Assets] HTTP API stelt twee belangrijke elementen, omslagen en activa (voor standaardactiva) bloot. Bovendien worden meer gedetailleerde elementen beschikbaar gesteld voor aangepaste gegevensmodellen die gestructureerde inhoud in Content Fragments beschrijven. Zie [Gegevensmodellen van inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor meer informatie.
+De [!DNL Assets] HTTP API stelt twee belangrijke elementen, omslagen en activa (voor standaardactiva) bloot. Bovendien worden meer gedetailleerde elementen beschikbaar gesteld voor aangepaste gegevensmodellen die gestructureerde inhoud in Content Fragments beschrijven. Zie [Gegevensmodellen van inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor nadere informatie.
 
 ### Mappen {#folders}
 
@@ -52,9 +52,9 @@ Mappen zijn vergelijkbaar met mappen zoals in traditionele bestandssystemen. De 
 
 >[!NOTE]
 >
->Sommige eigenschappen van map of element worden toegewezen aan een ander voorvoegsel. Het voorvoegsel `jcr` van `jcr:title`, `jcr:description` en `jcr:language` worden vervangen door voorvoegsel `dc`. Daarom bevatten `dc:title` en `dc:description` in de geretourneerde JSON de waarden van respectievelijk `jcr:title` en `jcr:description`.
+>Sommige eigenschappen van map of element worden toegewezen aan een ander voorvoegsel. De `jcr` voorvoegsel van `jcr:title`, `jcr:description`, en `jcr:language` worden vervangen door `dc` voorvoegsel. Vandaar in de geretourneerde JSON, `dc:title` en `dc:description` bevatten de waarden van `jcr:title` en `jcr:description`, respectievelijk.
 
-**** LinksMappen maken drie koppelingen zichtbaar:
+**Koppelingen** Mappen maken drie koppelingen zichtbaar:
 
 * `self`: Koppeling naar zichzelf.
 * `parent`: Koppeling naar de bovenliggende map.
@@ -62,16 +62,16 @@ Mappen zijn vergelijkbaar met mappen zoals in traditionele bestandssystemen. De 
 
 ### Assets {#assets}
 
-In [!DNL Experience Manager] bevat een element de volgende elementen:
+In [!DNL Experience Manager] een element bevat de volgende elementen:
 
 * De eigenschappen en metagegevens van het element.
 * Oorspronkelijk geüpload binair bestand van het element.
-* Meerdere uitvoeringen, zoals geconfigureerd. Dit kunnen afbeeldingen van verschillende grootten, video&#39;s van verschillende coderingen of uitgenomen pagina&#39;s uit PDF- of [!DNL Adobe InDesign]-bestanden zijn.
+* Meerdere uitvoeringen, zoals geconfigureerd. Dit kunnen afbeeldingen van verschillende grootten, video&#39;s van verschillende coderingen of uitgenomen pagina&#39;s van PDF of [!DNL Adobe InDesign] bestanden.
 * Optionele opmerkingen.
 
-Zie [Ondersteuning van inhoudsfragmenten in HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) voor informatie over elementen in inhoudsfragmenten.
+Voor informatie over elementen in inhoudsfragmenten raadpleegt u [Ondersteuning voor inhoudsfragmenten in Experience Manager Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
-In [!DNL Experience Manager] heeft een map de volgende componenten:
+In [!DNL Experience Manager] een map bevat de volgende componenten:
 
 * Entiteiten: De onderliggende elementen van activa zijn de uitvoeringen.
 * Eigenschappen.
@@ -79,23 +79,23 @@ In [!DNL Experience Manager] heeft een map de volgende componenten:
 
 ## Beschikbare functies {#available-features}
 
-De [!DNL Assets] HTTP-API bevat de volgende functies:
+De [!DNL Assets] HTTP API bevat de volgende functies:
 
-* [Haal een mappenlijst](#retrieve-a-folder-listing) op.
-* [Maak een map](#create-a-folder).
+* [Een mappenlijst ophalen](#retrieve-a-folder-listing).
+* [Een map maken](#create-a-folder).
 * [Een element maken (afgekeurd)](#create-an-asset)
 * [Binair element bijwerken (afgekeurd)](#update-asset-binary).
-* [Metagegevens](#update-asset-metadata) van elementen bijwerken.
-* [Een elementuitvoering](#create-an-asset-rendition) maken.
-* [Een elementuitvoering](#update-an-asset-rendition) bijwerken.
-* [Maak een middelenopmerking](#create-an-asset-comment).
-* [Kopieer een map of element](#copy-a-folder-or-asset).
-* [Een map of element](#move-a-folder-or-asset) verplaatsen.
-* [Een map, element of uitvoering](#delete-a-folder-asset-or-rendition) verwijderen.
+* [Metagegevens van elementen bijwerken](#update-asset-metadata).
+* [Een elementuitvoering maken](#create-an-asset-rendition).
+* [Een elementuitvoering bijwerken](#update-an-asset-rendition).
+* [Een middelenopmerking maken](#create-an-asset-comment).
+* [Een map of element kopiëren](#copy-a-folder-or-asset).
+* [Een map of element verplaatsen](#move-a-folder-or-asset).
+* [Een map, element of uitvoering verwijderen](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
->Om de leesbaarheid te verbeteren, worden in de volgende voorbeelden de volledige cURL-notaties weggelaten. De notatie correleert met [Resty](https://github.com/micha/resty) die een manuscriptomslag voor cURL is.
+>Om de leesbaarheid te verbeteren, worden in de volgende voorbeelden de volledige cURL-notaties weggelaten. De notatie correleert met [Herstellen](https://github.com/micha/resty) Dit is een scriptwrapper voor cURL.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -110,7 +110,7 @@ De [!DNL Assets] HTTP-API bevat de volgende functies:
 
 Haalt een Siren-weergave op van een bestaande map en van de onderliggende entiteiten (submappen of elementen).
 
-**Verzoek**:  `GET /api/assets/myFolder.json`
+**Verzoek**: `GET /api/assets/myFolder.json`
 
 **Antwoordcodes**: De responscodes zijn:
 
@@ -118,20 +118,20 @@ Haalt een Siren-weergave op van een bestaande map en van de onderliggende entite
 * 404 - NIET GEVONDEN - map bestaat niet of is niet toegankelijk.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-**Reactie**: De klasse van de geretourneerde entiteit is een middel of een map. De eigenschappen van ingesloten entiteiten vormen een subset van de volledige reeks eigenschappen van elke entiteit. Om een volledige vertegenwoordiging van de entiteit te verkrijgen, zouden de cliënten de inhoud van URL moeten terugwinnen die door de verbinding met een `rel` van `self` wordt gericht.
+**Antwoord**: De klasse van de geretourneerde entiteit is een middel of een map. De eigenschappen van ingesloten entiteiten vormen een subset van de volledige reeks eigenschappen van elke entiteit. Om een volledige vertegenwoordiging van de entiteit te verkrijgen, zouden de cliënten de inhoud van URL moeten terugwinnen waarop de verbinding met `rel` van `self`.
 
 ## Een map maken {#create-a-folder}
 
-Hiermee maakt u een `sling`: `OrderedFolder` op het opgegeven pad. Als `*` in plaats van een knooppuntnaam wordt verstrekt, gebruikt servlet de parameternaam als knooppuntnaam. In het verzoek worden de volgende twee handelingen geaccepteerd:
+Hiermee maakt u een `sling`: `OrderedFolder` op het opgegeven pad. Indien `*` wordt verstrekt in plaats van een knoopnaam, gebruikt servlet de parameternaam als knooppuntnaam. In het verzoek worden de volgende twee handelingen geaccepteerd:
 
 * Een Sirene-weergave van de nieuwe map
-* Een reeks naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form`- `data`. Dit is handig als u een map rechtstreeks vanuit een HTML-formulier wilt maken.
+* Een set naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form`- `data`. Dit is handig als u een map rechtstreeks vanuit een HTML-formulier wilt maken.
 
 Ook kunnen eigenschappen van de map worden opgegeven als URL-queryparameters.
 
-Een API-aanroep mislukt met een `500`-antwoordcode als het bovenliggende knooppunt van het opgegeven pad niet bestaat. Een vraag keert een antwoordcode `409` terug als de omslag bestaat.
+Een API-aanroep mislukt met een `500` antwoordcode als het bovenliggende knooppunt van het opgegeven pad niet bestaat. Een vraag keert een reactiecode terug `409` als de map bestaat.
 
-**Parameters**:  `name` is de mapnaam.
+**Parameters**: `name` is de mapnaam.
 
 **Verzoek**
 
@@ -147,17 +147,17 @@ Een API-aanroep mislukt met een `500`-antwoordcode als het bovenliggende knooppu
 
 ## Een element maken {#create-an-asset}
 
-Zie [asset upload](developer-reference-material-apis.md) voor informatie over het maken van een element. U kunt geen middel tot stand brengen gebruikend HTTP API.
+Zie [elementen uploaden](developer-reference-material-apis.md) voor informatie over hoe u een element maakt. U kunt geen middel tot stand brengen gebruikend HTTP API.
 
 ## Elementbinair bijwerken {#update-asset-binary}
 
-Zie [Elementupload](developer-reference-material-apis.md) voor informatie over het bijwerken van elementbinaire bestanden. U kunt een element binair niet bijwerken gebruikend HTTP API.
+Zie [elementen uploaden](developer-reference-material-apis.md) voor informatie over hoe u binaire elementen voor elementen kunt bijwerken. U kunt een element binair niet bijwerken gebruikend HTTP API.
 
 ## Metagegevens van een element bijwerken {#update-asset-metadata}
 
-Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap bijwerkt in de naamruimte `dc:`, werkt de API dezelfde eigenschap bij in de naamruimte `jcr`. De API synchroniseert de eigenschappen niet onder de twee naamruimten.
+Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap in het dialoogvenster `dc:` naamruimte, wordt dezelfde eigenschap in de API bijgewerkt `jcr` naamruimte. De API synchroniseert de eigenschappen niet onder de twee naamruimten.
 
-**Verzoek**:  `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Verzoek**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
 **Antwoordcodes**: De responscodes zijn:
 
@@ -170,7 +170,7 @@ Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap bij
 
 Een uitvoering voor een element maken. Als de naam van de parameter request niet wordt opgegeven, wordt de bestandsnaam gebruikt als naam voor de vertoning.
 
-**Parameters**: De parameters zijn  `name` voor naam van de vertoning en  `file` als dossierverwijzing.
+**Parameters**: De parameters zijn `name` voor de naam van de vertoning en `file` als bestandsverwijzing.
 
 **Verzoek**
 
@@ -188,7 +188,7 @@ Een uitvoering voor een element maken. Als de naam van de parameter request niet
 
 Updates vervangen respectievelijk een elementuitvoering door de nieuwe binaire gegevens.
 
-**Verzoek**:  `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
+**Verzoek**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
 **Antwoordcodes**: De responscodes zijn:
 
@@ -199,9 +199,9 @@ Updates vervangen respectievelijk een elementuitvoering door de nieuwe binaire g
 
 ## Een opmerking toevoegen aan een element {#create-an-asset-comment}
 
-**Parameters**: De parameters zijn  `message` voor de berichttekst van de opmerking en  `annotationData` voor de annotatiegegevens in JSON-indeling.
+**Parameters**: De parameters zijn `message` voor de berichttekst van de opmerking en `annotationData` voor de Annotatiegegevens in JSON-indeling.
 
-**Verzoek**:  `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
+**Verzoek**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
 **Antwoordcodes**: De responscodes zijn:
 
@@ -217,10 +217,10 @@ Hiermee kopieert u een map of element die beschikbaar is op het opgegeven pad na
 **Aanvraagkoppen**: De parameters zijn:
 
 * `X-Destination` - een nieuwe doel-URI binnen het bereik van de API-oplossing waarnaar de bron moet worden gekopieerd.
-* `X-Depth` - hetzij  `infinity` hetzij  `0`. Wanneer u `0` gebruikt, worden alleen de bron en de eigenschappen ervan gekopieerd en niet de onderliggende elementen.
-* `X-Overwrite` - Gebruik deze optie  `F` om te voorkomen dat een element op de bestaande bestemming wordt overschreven.
+* `X-Depth` - hetzij `infinity` of `0`. Gebruiken `0` kopieert alleen de bron en zijn eigenschappen en niet zijn kinderen.
+* `X-Overwrite` - Gebruik `F` om te voorkomen dat een actief op de bestaande bestemming wordt overschreven.
 
-**Verzoek**:  `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
+**Verzoek**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
 **Antwoordcodes**: De responscodes zijn:
 
@@ -236,10 +236,10 @@ Hiermee verplaatst u een map of element op het opgegeven pad naar een nieuwe bes
 **Aanvraagkoppen**: De parameters zijn:
 
 * `X-Destination` - een nieuwe doel-URI binnen het bereik van de API-oplossing waarnaar de bron moet worden gekopieerd.
-* `X-Depth` - hetzij  `infinity` hetzij  `0`. Wanneer u `0` gebruikt, worden alleen de bron en de eigenschappen ervan gekopieerd en niet de onderliggende elementen.
-* `X-Overwrite` - Gebruik deze optie  `T` om bestaande bronnen te verwijderen of  `F` om te voorkomen dat bestaande bronnen worden overschreven.
+* `X-Depth` - hetzij `infinity` of `0`. Gebruiken `0` kopieert alleen de bron en zijn eigenschappen en niet zijn kinderen.
+* `X-Overwrite` - Gebruik beide `T` om bestaande middelen geforceerd te verwijderen of `F` om te voorkomen dat een bestaande bron wordt overschreven.
 
-**Verzoek**:  `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+**Verzoek**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
 **Antwoordcodes**: De responscodes zijn:
 
@@ -266,13 +266,13 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 
 ## Tips, aanbevolen procedures en beperkingen {#tips-limitations}
 
-* Na [!UICONTROL Off Time] zijn een middel en zijn vertoningen niet beschikbaar via de [!DNL Assets] Webinterface en door HTTP API. De API retourneert een foutbericht van 404 als [!UICONTROL On Time] in de toekomst is of als [!UICONTROL Off Time] in het verleden is.
+* Na de [!UICONTROL Off Time], een actief en de uitleveringen ervan niet beschikbaar zijn via de [!DNL Assets] webinterface en via de HTTP-API. De API geeft een foutbericht van 404 als de [!UICONTROL On Time] in de toekomst is of [!UICONTROL Off Time] is in het verleden.
 
-* De HTTP-API van middelen retourneert de volledige metagegevens niet. De naamruimten zijn gecodeerd en alleen die naamruimten worden geretourneerd. Zie het elementpad `/jcr_content/metadata.json` voor volledige metagegevens.
+* De HTTP-API van middelen retourneert de volledige metagegevens niet. De naamruimten zijn gecodeerd en alleen die naamruimten worden geretourneerd. Zie het middelenpad voor volledige metagegevens `/jcr_content/metadata.json`.
 
-* Sommige eigenschappen van map of element worden toegewezen aan een ander voorvoegsel wanneer ze worden bijgewerkt met behulp van API&#39;s. Het voorvoegsel `jcr` van `jcr:title`, `jcr:description` en `jcr:language` worden vervangen door voorvoegsel `dc`. Daarom bevatten `dc:title` en `dc:description` in de geretourneerde JSON de waarden van respectievelijk `jcr:title` en `jcr:description`.
+* Sommige eigenschappen van map of element worden toegewezen aan een ander voorvoegsel wanneer ze worden bijgewerkt met behulp van API&#39;s. De `jcr` voorvoegsel van `jcr:title`, `jcr:description`, en `jcr:language` worden vervangen door `dc` voorvoegsel. Vandaar in de geretourneerde JSON, `dc:title` en `dc:description` bevatten de waarden van `jcr:title` en `jcr:description`, respectievelijk.
 
 >[!MORELIKETHIS]
 >
->* [Referentiedocumenten voor ontwikkelaar voor [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+>* [Referentiedocumenten voor ontwikkelaars voor [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
 

@@ -1,31 +1,32 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.8.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.8.0
+title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.8.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.8.0
 feature: Release Information
-source-git-commit: 11910316836b33e886aeba84f89d1b2eebfe7de2
+exl-id: cf1d5c4f-404a-4ced-90f2-273c710adc0f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.8.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.8.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.8.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.8.0.
 
 >[!NOTE]
->Om de huidige Nota&#39;s van de Versie voor Adobe Experience Manager als Cloud Service te zien, klik [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>Klik op [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.8.0 is 12 augustus 2021.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.8.0 is 12 augustus 2021.
 
 ### Wat is er nieuw? {#what-is-new}
 
 * Klanten van Cloud Servicen kunnen nu SLA-rapporten (Service Level Agreement) weergeven in Cloud Manager. Dit zal de komende maanden geleidelijk beschikbaar worden gesteld.
-Zie [SLA Rapportering](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) om meer te leren.
+Zie [SLA-rapportage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) voor meer informatie.
 
-* Het type en de strengheid van de IndexType en `IndexDamAssetLucene` kwaliteitsregels zijn veranderd. Dit zijn nu beide bugs van Blocker *serverity*.
+* Het type en de ernst van het IndexType en `IndexDamAssetLucene` de kwaliteitsvoorschriften zijn gewijzigd . Dit zijn nu beide bugs van Blocker *seriteit*.
 
 * De nieuwe de kwaliteitsregels van de indexkwaliteit van de eikel zijn geïntroduceerd om asynchrone en tika configuraties te behandelen.
 
@@ -45,4 +46,4 @@ Zie [SLA Rapportering](https://experienceleague.adobe.com/docs/experience-manage
 
 * De eerste instapweigering mislukte voor nieuwe organisaties met zeer lange namen.
 
-* Af en toe, wanneer een pijpleiding tweemaal om één of andere reden wordt teweeggebracht, resulteert het in één van de uitvoeringen die met *geen status van de pijpleidingsuitvoering kan bijwerken* fout.
+* Af en toe, wanneer een pijpleiding tweemaal om één of andere reden in werking wordt gesteld, resulteert het in één van de terechtstellingen die nalaten *kan uitvoerstatus van pijpleiding niet bijwerken* fout.

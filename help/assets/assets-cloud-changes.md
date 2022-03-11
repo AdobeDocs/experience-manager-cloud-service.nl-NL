@@ -1,12 +1,12 @@
 ---
 title: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service]
-description: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5
+description: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] als [!DNL Cloud Service] in vergelijking met [!DNL Adobe Experience Manager] 6.5
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1025'
 ht-degree: 0%
 
 ---

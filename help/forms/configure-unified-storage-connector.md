@@ -1,13 +1,13 @@
 ---
 title: Hoe te om Verenigde Verbinding van de Opslag voor AEM Forms te vormen?
 description: Leer hoe u Unified Storage Connector voor AEM Forms beheert. Gebruik de Unified Storage-connector om AEM Forms aan te sluiten op externe gegevensopslagsystemen.
-source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
+exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 1%
 
 ---
-
 
 # Unified Storage-connector beheren voor AEM Forms {#manage-unified-storage-connector}
 

@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Het uitvoeren van een Evaluator van de Predicatie van de Douane voor de Bouwer van de Vraag {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-In dit document wordt beschreven hoe u de [Query Builder](query-builder-api.md) kunt uitbreiden door een aangepaste evaluatieversie voor voorspelling te implementeren.
+In dit document wordt beschreven hoe u het dialoogvenster [Query Builder](query-builder-api.md) door een aangepaste evaluatieversie van de predikaat te implementeren.
 
 ## Overzicht {#overview}
 
-De [Query Builder](query-builder-api.md) biedt een eenvoudige manier om de opslagplaats voor inhoud te vragen. AEM wordt geleverd met [een set voorspelbeoordelaars](#query-builder-predicates.md) die u helpen uw gegevens te vragen.
+De [Query Builder](query-builder-api.md) biedt een eenvoudige manier om de opslagplaats voor inhoud te vragen. AEM wordt geleverd met [een reeks beoordelaars met voorspelling](#query-builder-predicates.md) waarmee u uw gegevens kunt opvragen.
 
 Nochtans zou u uw vragen kunnen willen vereenvoudigen door een douane uit te voeren predikt beoordelaar die wat ingewikkeldheid verbergt en een betere semantiek verzekert.
 
@@ -30,7 +30,7 @@ Een aangepaste predikaat kan ook andere dingen uitvoeren die niet direct mogelij
 
 >[!TIP]
 >
->U kunt voorbeelden van vragen in het [document van de Bouwer van de Vraag](query-builder-api.md) vinden.
+>U vindt voorbeelden van query&#39;s in het dialoogvenster [Query Builder](query-builder-api.md) document.
 
 >[!TIP]
 >
@@ -48,11 +48,11 @@ Een aangepaste predikaat kan ook andere dingen uitvoeren die niet direct mogelij
 
 Een predikaat beoordelaar behandelt de evaluatie van bepaalde predikaten, die de bepalende beperkingen van een vraag zijn.
 
-Het brengt een onderzoek op hoger niveau (zoals `width>200`) aan een specifieke vraag JCR in kaart die het daadwerkelijke inhoudsmodel (b.v. `metadata/@width > 200`). Of het kan knopen manueel filtreren en hun beperkingen controleren.
+Hiermee wordt een zoekrestrictie op een hoger niveau toegewezen (zoals `width>200`) naar een specifieke JCR-query die past bij het werkelijke inhoudsmodel (bijvoorbeeld `metadata/@width > 200`). Of het kan knopen manueel filtreren en hun beperkingen controleren.
 
 >[!TIP]
 >
->Zie de [Java-documentatie](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html) voor meer informatie over het `PredicateEvaluator`- en `com.day.cq.search`-pakket.
+>Voor meer informatie over de `PredicateEvaluator` en de `com.day.cq.search` pakket zie [Java-documentatie](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementatie van een aangepaste voorspellende evaluator voor replicatiemetagegevens {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -64,7 +64,7 @@ Als voorbeeld beschrijft deze sectie hoe te om een douane te creëren predikaat 
 
 #### Replicatiemetagegevens met standaardvoorspellende evaluatoren opvragen {#querying-replication-metadata-with-default-predicate-evaluators}
 
-De volgende vraag haalt de lijst van knopen in `/content` tak die door `admin` sinds het begin van het jaar zijn geactiveerd.
+Met de volgende query wordt de lijst met knooppunten opgehaald in `/content` vertakking die is geactiveerd door `admin` sinds het begin van het jaar.
 
 ```xml
 path=/content
@@ -84,7 +84,7 @@ Deze vraag is geldig maar moeilijk te lezen en benadrukt niet het verband tussen
 
 #### Doelstellingen {#objectives}
 
-Het doel van `ReplicationPredicateEvaluator` is de bovengenoemde vraag te steunen gebruikend de volgende syntaxis.
+Het doel van het `ReplicationPredicateEvaluator` moet bovenstaande query met de volgende syntaxis ondersteunen.
 
 ```xml
 path=/content
@@ -100,15 +100,15 @@ Het groeperen van replicatiemagegevens predikt met een douane predikaat evaluato
 
 >[!TIP]
 >
->De opstelling van nieuwe AEM projecten met inbegrip van het gebruiken van maven wordt in detail uitgelegd door [de WKND zelfstudie.](develop-wknd-tutorial.md)
+>De opzet van nieuwe AEM met inbegrip van het gebruik van maven wordt in detail toegelicht door [de WKND-zelfstudie.](develop-wknd-tutorial.md)
 
-Eerst moet u de Geweven gebiedsdelen van uw project bijwerken. De `PredicateEvaluator` maakt deel uit van het `cq-search` artefact zodat moet het aan uw Maven pom dossier worden toegevoegd.
+Eerst moet u de Geweven gebiedsdelen van uw project bijwerken. De `PredicateEvaluator` maakt deel uit van de `cq-search` artefact zodat moet het aan uw Gepompdossier van Maven worden toegevoegd.
 
 >[!NOTE]
 >
->Het bereik van de `cq-search`-afhankelijkheid wordt ingesteld op `provided` omdat `cq-search` wordt geleverd door de `OSGi`-container.
+>Het toepassingsgebied van de `cq-search` afhankelijkheid is ingesteld op `provided` omdat `cq-search` wordt verstrekt door de `OSGi` container.
 
-Het volgende fragment toont de verschillen in het `pom.xml`-bestand, in [Unified diff-indeling](https://en.wikipedia.org/wiki/Diff#Unified_format)
+In het volgende fragment worden de verschillen in de `pom.xml` bestand, in [Unified Diff-indeling](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
 ```text
 @@ -120,6 +120,12 @@
@@ -127,14 +127,14 @@ Het volgende fragment toont de verschillen in het `pom.xml`-bestand, in [Unified
 
 #### Het schrijven van ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
 
-Het `cq-search` project bevat de `AbstractPredicateEvaluator` abstracte klasse. Dit kan met een paar stappen worden uitgebreid om uw eigen douane uit te voeren voorspelt beoordelaar `(PredicateEvaluator`).
+De `cq-search` het project bevat `AbstractPredicateEvaluator` abstracte klasse. Dit kan met een paar stappen worden uitgebreid om uw eigen douane uit te voeren voorspelt beoordelaar `(PredicateEvaluator`).
 
 >[!NOTE]
 >
->In de volgende procedure wordt uitgelegd hoe u een expressie `Xpath` kunt bouwen om gegevens te filteren. Een andere optie zou zijn de `includes` methode uit te voeren die gegevens op een rijbasis selecteert. Zie de [Java-documentatie](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) voor meer informatie.
+>De volgende procedure laat zien hoe u een `Xpath` expressie om gegevens te filteren. Een andere mogelijkheid zou zijn om de `includes` methode die gegevens op rijbasis selecteert. Zie de [Java-documentatie](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) voor meer informatie .
 
-1. Een nieuwe Java-klasse maken die `com.day.cq.search.eval.AbstractPredicateEvaluator` uitbreidt
-1. Annoteer uw klasse met een `@Component` als fragment toont in [verenigde diff formaat](https://en.wikipedia.org/wiki/Diff#Unified_format)
+1. Een nieuwe Java-klasse maken die een uitbreiding `com.day.cq.search.eval.AbstractPredicateEvaluator`
+1. Annoteer uw klasse met een `@Component` zoals fragmenten in [Unified Diff-indeling](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
    ```text
    @@ -19,8 +19,11 @@
@@ -152,11 +152,11 @@ Het `cq-search` project bevat de `AbstractPredicateEvaluator` abstracte klasse. 
 
    >[!NOTE]
    >
-   >De `factory`moet een unieke tekenreeks zijn die begint met `com.day.cq.search.eval.PredicateEvaluator/`en eindigt met de naam van uw aangepaste `PredicateEvaluator`.
+   >De `factory`moet een unieke tekenreeks zijn die begint met `com.day.cq.search.eval.PredicateEvaluator/`en eindigend met de naam van uw aangepaste `PredicateEvaluator`.
 
    >[!NOTE]
    >
-   >De naam van `PredicateEvaluator` is de voorspelbare naam, die wordt gebruikt wanneer het bouwen van vragen.
+   >De naam van de `PredicateEvaluator` is de predicaatnaam, die wordt gebruikt wanneer het bouwen van vragen.
 
 1. Overschrijven:
 
@@ -164,11 +164,11 @@ Het `cq-search` project bevat de `AbstractPredicateEvaluator` abstracte klasse. 
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   In de opheffingsmethode bouwt u een `Xpath` uitdrukking die op `Predicate` in argument wordt gebaseerd.
+   In de overschrijfmethode bouwt u een `Xpath` op basis van de `Predicate` geargumenteerd.
 
 ### Voorbeeld van een aangepaste voorspellende evaluator voor replicatiemetagegevens {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
-De volledige implementatie van deze `PredicateEvaluator` zou aan de volgende klasse kunnen gelijkaardig zijn.
+De volledige uitvoering van deze `PredicateEvaluator` Dit kan vergelijkbaar zijn met de volgende klasse.
 
 ```java
 /*

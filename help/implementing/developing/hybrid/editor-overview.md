@@ -1,16 +1,15 @@
 ---
 title: Overzicht SPA Editor
 description: In dit artikel wordt een uitgebreid overzicht gegeven van de SPA Editor en van de manier waarop dit werkt. In dit artikel zijn gedetailleerde workflows opgenomen van interactie tussen de SPA Editor in AEM.
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 0%
 
 ---
 
-
-# Overzicht van SPA editor {#spa-editor-overview}
+# Overzicht SPA Editor {#spa-editor-overview}
 
 Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor websitegebruikers. Ontwikkelaars willen sites kunnen maken met behulp van SPA frameworks en auteurs willen inhoud naadloos bewerken binnen AEM voor een site die is gebouwd met behulp van dergelijke frameworks.
 
@@ -18,7 +17,7 @@ De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binn
 
 ## Inleiding {#introduction}
 
-Sites die zijn gemaakt met behulp van gemeenschappelijke SPA, zoals React en Angular, laden de inhoud via dynamische JSON en bieden niet de HTML-structuur die nodig is om bewerkingsbesturingselementen te kunnen plaatsen in de AEM Paginaeditor.
+De plaatsen die gebruikend gemeenschappelijke SPA zoals React en Angular worden gebouwd laden hun inhoud via dynamische JSON en verstrekken niet de structuur van de HTML die noodzakelijk voor de AEM Redacteur van de Pagina is om bewerkingscontroles te kunnen plaatsen.
 
 Om het bewerken van SPA binnen AEM mogelijk te maken, is een toewijzing tussen de JSON-uitvoer van de SPA en het inhoudsmodel in de AEM opslagplaats nodig om wijzigingen in de inhoud op te slaan.
 
@@ -26,35 +25,34 @@ SPA ondersteuning in AEM introduceert een dunne JS-laag die communiceert met de 
 
 Raadpleeg de volgende documenten voor meer informatie over SPA in AEM:
 
-* [SPA ](blueprint.md) Blauwdruk voor de technische voorschriften van een SPA
-* [Aan de slag met SPA in AEM met ](getting-started-react.md) React voor een snelle rondleiding van een eenvoudige SPA met React
-* [Aan de slag met SPA in AEM met ](getting-started-angular.md) Angularand voor een snelle rondleiding van een eenvoudige SPA met behulp van Hoekig
+* [SPA](blueprint.md) voor de technische voorschriften van een SPA
+* [Aan de slag met SPA in AEM met Reageren](getting-started-react.md) voor een snelle rondleiding van een eenvoudige SPA met React
+* [Aan de slag met SPA in AEM met Angular](getting-started-angular.md) voor een snelle rondleiding van een eenvoudige SPA die Angular gebruiken
 
 ## Ontwerp {#design}
 
-De paginacomponent voor een SPA verstrekt niet de elementen van HTML van zijn kindcomponenten via het JSP of HTML- dossier. Deze bewerking wordt gedelegeerd aan het SPA. De representatie van onderliggende componenten of modellen wordt opgehaald als een JSON-gegevensstructuur van het JCR. De SPA componenten worden vervolgens volgens die structuur aan de pagina toegevoegd. Dit gedrag onderscheidt de aanvankelijke lichaamssamenstelling van de paginacomponent van niet-SPA tegenhangers.
+De paginacomponent voor een SPA verstrekt niet de HTML elementen van zijn kindcomponenten via het JSP of HTML- dossier. Deze bewerking wordt gedelegeerd aan het SPA. De representatie van onderliggende componenten of modellen wordt opgehaald als een JSON-gegevensstructuur van het JCR. De SPA componenten worden vervolgens volgens die structuur aan de pagina toegevoegd. Dit gedrag onderscheidt de aanvankelijke lichaamssamenstelling van de paginacomponent van niet-SPA tegenhangers.
 
 ### Paginamodel beheren {#page-model-management}
 
-De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven `PageModel`-bibliotheek. De SPA moet de bibliotheek Paginamodel gebruiken om te worden geïnitialiseerd en door de SPA Editor te worden ontworpen. De bibliotheek Paginamodel die indirect via de `aem-react-editable-components` npm aan de component AEMPagina wordt verstrekt. Het paginamodel is een tolk tussen AEM en de SPA en moet daarom altijd aanwezig zijn. Wanneer de pagina is gemaakt, moet een extra bibliotheek `cq.authoring.pagemodel.messaging` worden toegevoegd om de communicatie met de paginaeditor mogelijk te maken.
+De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven `PageModel` bibliotheek. De SPA moet de bibliotheek Paginamodel gebruiken om te worden geïnitialiseerd en door de SPA Editor te worden ontworpen. De bibliotheek Paginamodel die indirect via de `aem-react-editable-components` npm. Het paginamodel is een tolk tussen AEM en de SPA en moet daarom altijd aanwezig zijn. Wanneer de pagina is gemaakt, voegt u een extra bibliotheek toe `cq.authoring.pagemodel.messaging` moet worden toegevoegd om de communicatie met de paginaeditor mogelijk te maken.
 
-Als de SPA paginacomponent overerft van de hoofdcomponent van de pagina, zijn er twee opties om de categorie `cq.authoring.pagemodel.messaging` van de cliëntbibliotheek beschikbaar te maken:
+Als de SPA paginacomponent overerft van de hoofdcomponent van de pagina, zijn er twee opties voor het maken van de component `cq.authoring.pagemodel.messaging` beschikbare categorie voor clientbibliotheek:
 
 * Als de sjabloon bewerkbaar is, voegt u deze toe aan het paginabeleid.
-* Of voeg de categorieën toe gebruikend `customfooterlibs.html`.
+* U kunt ook de categorieën toevoegen met de opdracht `customfooterlibs.html`.
 
-Voor elke bron in het geëxporteerde model zal de SPA een werkelijke component toewijzen die de opdracht
-renderen. Het model, dat als JSON wordt vertegenwoordigd, wordt dan teruggegeven gebruikend de componentenafbeeldingen binnen een container.
+Voor elke bron in het geëxporteerde model wijst de SPA een werkelijke component toe die de rendering uitvoert. Het model, dat als JSON wordt vertegenwoordigd, wordt dan teruggegeven gebruikend de componentenafbeeldingen binnen een container.
 
 ![Model- en componenttoewijzing in SPA](assets/model-component-mapping.png)
 
 >[!CAUTION]
 >
->De opname van de categorie `cq.authoring.pagemodel.messaging` moet worden beperkt tot de context van de SPA-editor.
+>De opneming van de `cq.authoring.pagemodel.messaging` Deze categorie moet beperkt blijven tot de context van de SPA-editor.
 
-### Gegevenstype voor communicatie {#communication-data-type}
+### Gegevenstype communicatie {#communication-data-type}
 
-Wanneer de categorie `cq.authoring.pagemodel.messaging` aan de pagina wordt toegevoegd, wordt een bericht naar de Pagina-editor verzonden om het gegevenstype JSON-communicatiegegevens vast te stellen. Wanneer het gegevenstype van communicatiegegevens aan JSON wordt geplaatst, zullen de verzoeken van de GET met de Sling Model eindpunten van een component communiceren. Nadat een update in de pagina-editor plaatsvindt, wordt de JSON-representatie van de bijgewerkte component verzonden naar de bibliotheek Paginamodel. De bibliotheek Paginamodel stelt vervolgens de SPA van updates op de hoogte.
+Wanneer de `cq.authoring.pagemodel.messaging` wordt toegevoegd aan de pagina. Er wordt een bericht verzonden naar de Pagina-editor om het JSON-communicatietype vast te stellen. Wanneer het gegevenstype van communicatiegegevens aan JSON wordt geplaatst, zullen de verzoeken van de GET met de Sling Model eindpunten van een component communiceren. Nadat een update in de pagina-editor plaatsvindt, wordt de JSON-representatie van de bijgewerkte component verzonden naar de bibliotheek Paginamodel. De bibliotheek Paginamodel stelt vervolgens de SPA van updates op de hoogte.
 
 ![SPA](assets/communication.png)
 
@@ -62,7 +60,7 @@ Wanneer de categorie `cq.authoring.pagemodel.messaging` aan de pagina wordt toeg
 
 U kunt de stroom van de interactie tussen de SPA en AEM begrijpen door de SPA Redacteur als bemiddelaar tussen twee te denken.
 
-* De communicatie tussen de pagina-editor en de SPA wordt gemaakt met JSON in plaats van HTML.
+* De communicatie tussen de pagina-editor en de SPA wordt gemaakt met JSON in plaats van met HTML.
 * De pagina-editor biedt de meest recente versie van het paginamodel aan de SPA via de iframe- en messaging-API.
 * De manager van het paginamodel brengt de redacteur op de hoogte het klaar voor uitgave is en gaat het paginamodel als structuur JSON over.
 * De editor wijzigt de DOM-structuur van de pagina die wordt gemaakt niet of opent deze zelfs niet, maar biedt het nieuwste paginamodel.
@@ -93,7 +91,7 @@ Met inachtneming van de belangrijkste elementen van de SPA Editor, ziet de auteu
 >* In productie (publiceren), wordt de SPA redacteur nooit geladen.
 
 
-### Workflow voor paginabewerking tussen client en server {#client-server-page-editing-workflow}
+### Workflow voor paginabewerking op client-server {#client-server-page-editing-workflow}
 
 Dit is een gedetailleerder overzicht van de interactie tussen client en server bij het bewerken van een SPA.
 
@@ -104,11 +102,11 @@ Dit is een gedetailleerder overzicht van de interactie tussen client en server b
 1. De repository retourneert de bronnen.
 1. De verkoper van het ModelExporter keert het model van de pagina terug.
 1. De SPA instantieert zijn componenten die op het paginamodel worden gebaseerd.
-1. **6** aDe inhoud deelt de redacteur mee dat het voor ontwerp klaar is.
+1. **6 bis.** De inhoud informeert de editor dat deze gereed is voor ontwerpen.
 
-   **6** bDe paginaredacteur verzoekt de componentenauteursconfiguraties.
+   **6 ter** De paginaeditor vraagt om configuraties voor componentontwerp.
 
-   **6** cDe pagina-editor ontvangt de componentconfiguraties.
+   **6 quater** De paginaeditor ontvangt de componentconfiguraties.
 1. Wanneer de auteur een component bewerkt, wordt in de pagina-editor een wijzigingsverzoek naar de standaard POST servlet gepost.
 1. De bron wordt bijgewerkt in de opslagplaats.
 1. De bijgewerkte bron wordt doorgegeven aan de POST servlet.
@@ -121,61 +119,61 @@ Dit is een gedetailleerder overzicht van de interactie tussen client en server b
 1. De SPA werkt zijn componenten bij die op de nieuwe verwijzing van het paginamodel worden gebaseerd.
 1. De componentconfiguraties van de paginaeditors worden bijgewerkt.
 
-   **17** aDe SPA geeft aan dat de inhoud gereed is voor de pagina-editor.
+   **17 bis** De SPA geeft aan dat de inhoud klaar is voor de pagina-editor.
 
-   **17** bDe paginaredacteur voorziet de SPA van componentenconfiguraties.
+   **17 ter** De paginaredacteur voorziet de SPA van componentenconfiguraties.
 
-   **17** cDe SPA biedt bijgewerkte componentconfiguraties.
+   **17 quater** De SPA biedt bijgewerkte componentconfiguraties.
 
-### Ontwerpwerkstroom {#authoring-workflow}
+### Ontwerpworkflow {#authoring-workflow}
 
 Dit is een gedetailleerder overzicht dat is toegespitst op de ontwerpervaring.
 
 ![SPA ontwerpworkflow](assets/authoring-workflow.png)
 
 1. De SPA haalt het paginamodel op.
-1. **2** aHet paginamodel voorziet de redacteur van de gegevens die voor creatie worden vereist.
+1. **2 bis.** Het paginamodel voorziet de redacteur van de gegevens die voor creatie worden vereist.
 
-   **2** bWanneer op de hoogte gesteld, werkt de componentenbeheerder de inhoudsstructuur van de pagina bij.
+   **2 ter** Wanneer deze op de hoogte wordt gesteld, werkt de componentbeheerder de inhoudsstructuur van de pagina bij.
 1. De componentenbeheerder vraagt de afbeelding tussen een AEM middeltype en een SPA component.
 1. De componentinstantie instantieert dynamisch de SPA component op basis van het paginamodel en de componenttoewijzing.
 1. De paginaeditor werkt het paginamodel bij.
-1. **6** aHet paginamodel verstrekt bijgewerkte auteursgegevens aan de paginaredacteur.
+1. **6 bis.** Het paginamodel verstrekt bijgewerkte auteursgegevens aan de paginaredacteur.
 
-   **6** bHet paginamodel verzendt wijzigingen naar de componentorchestrator.
+   **6 ter** Het paginamodel verzendt wijzigingen naar de componentorchestrator.
 1. De componentorchestrator haalt de componenttoewijzing op.
 1. De componentbeheerder werkt de inhoud van de pagina bij.
 1. Wanneer de SPA klaar is met het bijwerken van de inhoud van de pagina, laadt de pagina-editor de ontwerpomgeving.
 
 ## Vereisten en beperkingen {#requirements-limitations}
 
-Om de auteur in staat te stellen om de paginaredacteur te gebruiken om de inhoud van een SPA uit te geven, moet uw SPA toepassing worden uitgevoerd om met de AEM SPA Redacteur SDK in wisselwerking te staan. Zie [Aan de slag met SPA in AEM met React](getting-started-react.md) document voor een minimum dat u moet weten om van u in werking te stellen.
+Om de auteur in staat te stellen om de paginaredacteur te gebruiken om de inhoud van een SPA uit te geven, moet uw SPA toepassing worden uitgevoerd om met de AEM SPA Redacteur SDK in wisselwerking te staan. Zie de [Aan de slag met SPA in AEM met Reageren](getting-started-react.md) -document voor minimale informatie die u nodig hebt om die van u te kunnen gebruiken.
 
 ### Ondersteunde kaders {#supported-frameworks}
 
 De SPA Editor SDK ondersteunt de volgende minimale versies:
 
 * 16.x en hoger reageren
-* Hoek 6.x en hoger
+* Angular 6.x en hoger
 
 Eerdere versies van deze frameworks werken mogelijk met de AEM SPA Editor SDK, maar worden niet ondersteund.
 
-### Extra kaders {#additional-frameworks}
+### Aanvullende kaders {#additional-frameworks}
 
-Er kunnen aanvullende SPA worden geïmplementeerd om te werken met de AEM SPA Editor SDK. Zie [SPA Blueprint](blueprint.md) document voor de vereisten waaraan een framework moet voldoen om een framespecifieke laag te maken die bestaat uit modules, componenten en services om met de AEM SPA Editor te werken.
+Er kunnen aanvullende SPA worden geïmplementeerd om te werken met de AEM SPA Editor SDK. Zie de [SPA](blueprint.md) document voor de vereisten waaraan een kader moet voldoen om tot een kader-specifieke laag te leiden die uit modules, componenten, en de diensten wordt samengesteld om met de AEM SPA Redacteur te werken.
 
 ### Meerdere kiezers gebruiken {#multiple-selectors}
 
-Aanvullende aangepaste kiezers kunnen worden gedefinieerd en gebruikt als onderdeel van een SPA die is ontwikkeld voor de AEM SPA SDK. Voor deze ondersteuning is echter vereist dat de `model`-kiezer de eerste kiezer is en dat de extensie `.json` is, zoals vereist door de JSON Exporter.
+Aanvullende aangepaste kiezers kunnen worden gedefinieerd en gebruikt als onderdeel van een SPA die is ontwikkeld voor de AEM SPA SDK. Deze ondersteuning vereist echter dat de `model` selector is de eerste kiezer en de extensie is `.json` zoals vereist door de JSON Exporter.
 
 ### Vereisten voor teksteditor {#text-editor-requirements}
 
 Als u de op plaats-editor wilt gebruiken van een tekstcomponent die in SPA is gemaakt, is er aanvullende configuratie vereist.
 
-1. Stel een willekeurig kenmerk in op het containerelement dat de tekst-HTML bevat. In het geval van het Project van de SPA WKND, is het een `<div>` element en selecteur die is gebruikt is `data-rte-editelement`.
-1. Stel de configuratie `editElementQuery` in op de `cq:InplaceEditingConfig` van de corresponderende AEM tekstcomponent die naar die kiezer wijst, bijvoorbeeld `data-rte-editelement`. Hierdoor weet de editor welk HTML-element de HTML-tekst omsluit.
+1. Stel een willekeurig kenmerk in op het containerelement dat de tekst HTML bevat. In het geval van het WKND SPA Project, is het een `<div>` element en de kiezer die is gebruikt, is `data-rte-editelement`.
+1. De configuratie instellen `editElementQuery` op de overeenkomstige AEM tekstcomponent `cq:InplaceEditingConfig` die naar die kiezer wijst, bijvoorbeeld `data-rte-editelement`. Dit laat de redacteur weten welk element van HTML de HTML tekst verpakt.
 
-Voor extra informatie over het `editElementQuery` bezit en de configuratie van de rijke tekstredacteur, zie [vorm de Rich Redacteur van de Tekst.](/help/implementing/developing/extending/rich-text-editor.md)
+Voor meer informatie over de `editElementQuery` eigenschap en de configuratie van de teksteditor met opmaak, raadpleegt u [Configureer de Rich Text Editor.](/help/implementing/developing/extending/rich-text-editor.md)
 
 ### Beperkingen {#limitations}
 
@@ -188,6 +186,6 @@ De AEM SPA Editor SDK wordt volledig ondersteund door Adobe en als nieuwe functi
 * Stijlsysteem
 * Ongedaan maken/Opnieuw
 * Pagina diff en Tijd verdraaien
-* Functies voor het herschrijven van HTML aan de serverzijde, zoals Koppelingencontrole, CDN-herschrijfservice, URL-verkorting, enz.
+* Functies die HTML herschrijven aan de serverzijde uitvoeren, zoals Koppelingencontrole, CDN-herschrijvingsservice, URL-verkorting enz.
 * Modus Ontwikkelaar
 * AEM starten

@@ -1,19 +1,19 @@
 ---
 title: Markering
 description: Begrijp hoe de redacteur van het Fragment van de Inhoud markeringssyntaxis gebruikt om u toe te staan om tot koploze inhoud gemakkelijk te leiden.
-feature: Contentfragmenten
+feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '522'
 ht-degree: 4%
 
 ---
 
 # Markering {#markdown}
 
-Wanneer u [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de inhoudsfragmenteditor *markdown* syntaxis zodat u eenvoudig inhoud zonder kop kunt schrijven:
+Wanneer u [ontwerpen](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), gebruikt de inhoudfragmenteditor *markeren* syntaxis waarmee u eenvoudig inhoud zonder kop kunt schrijven:
 
 ![markeringseditor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -59,7 +59,7 @@ Een regeleinde wordt gemaakt door een regel met twee of meer spaties te eindigen
 
 U kunt inline-koppelingen en verwijzingskoppelingen maken.
 
-In beide stijlen wordt de koppelingstekst gescheiden door vierkante haken `[]`.
+In beide stijlen wordt de koppelingstekst gescheiden door vierkante haakjes `[]`.
 
 Dit zijn voorbeelden van inlineverbindingen:
 
@@ -129,7 +129,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-Als u een niet-geordende lijst wilt maken, gebruikt u de optie &amp;ast; vóór de items in de lijst. Bijvoorbeeld:
+&amp;Als u een ongeordende lijst wilt maken, gebruikt u de voorste lijst; vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 

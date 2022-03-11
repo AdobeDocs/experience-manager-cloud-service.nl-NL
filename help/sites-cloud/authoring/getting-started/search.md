@@ -1,20 +1,19 @@
 ---
 title: Zoeken
 description: Vind sneller uw inhoud dankzij uitgebreide zoekopdracht
-translation-type: tm+mt
-source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
+exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 6%
 
 ---
 
-
 # Zoeken {#search-feature}
 
 De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeken, afhankelijk van het middeltype.
 
-## Basisinformatie zoeken {#search-basics}
+## Grondbeginselen van zoekopdrachten {#search-basics}
 
 Zoeken is beschikbaar op de bovenste werkbalk:
 
@@ -24,17 +23,17 @@ Met de zoekrail kunt u:
 
 * Zoeken naar een specifiek trefwoord, pad of tag
 * Filter volgens bronspecifieke criteria, zoals gewijzigde datums, paginastatus, bestandsgrootte, enzovoort.
-* Definieer en gebruik een [opgeslagen zoekopdracht](#saved-searches) - op basis van de bovenstaande criteria
+* Definieer en gebruik een [opgeslagen zoekopdracht](#saved-searches) - op basis van bovenstaande criteria
 
 >[!NOTE]
 >
->De zoekopdracht kan ook worden aangeroepen door de sneltoets `/` (forward slash) te gebruiken wanneer de zoekrail zichtbaar is.
+>Zoeken kan ook worden aangeroepen door de sneltoets te gebruiken `/` (slash) wanneer de zoekrail zichtbaar is.
 
-## {#search-and-filter} zoeken en filteren
+## Zoeken en filteren {#search-and-filter}
 
 U kunt als volgt uw bronnen zoeken en filteren:
 
-1. Open **Zoeken** (met het vergrootglas in de werkbalk) en voer uw zoekterm in. Er worden voorstellen gedaan die kunnen worden geselecteerd:
+1. Openen **Zoeken** (met het vergrootglas in de werkbalk) en voer uw zoekterm in. Er worden voorstellen gedaan die kunnen worden geselecteerd:
 
    ![Zoekterm](/help/sites-cloud/authoring/assets/search-term.png)
 
@@ -42,14 +41,14 @@ U kunt als volgt uw bronnen zoeken en filteren:
 
    ![Zoeklocatie](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Indien nodig, kunt u de locatiefilter verwijderen (selecteer **X** op de filter u wilt verwijderen) over alle consoles/middeltypes te zoeken.
+1. Indien nodig kunt u het locatiefilter verwijderen (selecteer **X** op het filter dat u wilt verwijderen) om te zoeken in alle consoles/middeltypen.
 1. De resultaten zullen worden getoond, gegroepeerd volgens console en verwant middeltype.
 
    U kunt of een specifieke middel selecteren (voor verdere actie), of boren neer door het vereiste middeltype te selecteren; bijvoorbeeld **Alle sites weergeven**:
 
    ![Zoekresultaten](/help/sites-cloud/authoring/assets/search-results.png)
 
-1. Als u verder omlaag wilt boren, selecteert u het symbool Rail (linksboven) om het zijpaneel te openen **Filters &amp; Opties**.
+1. Als u verder omlaag wilt boren, selecteert u het symbool Rail (linksboven) om het zijpaneel te openen **Filters en opties**.
 
    ![Spoorstaaf, knop](/help/sites-cloud/authoring/assets/rail-button.png)
 
@@ -94,7 +93,7 @@ Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde 
 
    ![Een zoekopdracht opslaan](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
-1. Wijs een naam toe, dan gebruik **sparen** om te bevestigen:
+1. Wijs een naam toe, dan gebruik **Opslaan** ter bevestiging:
 
    ![Een zoekopdracht opslaan met een naam](/help/sites-cloud/authoring/assets/search-save-name.png)
 
@@ -104,8 +103,8 @@ Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde 
 
 1. Nadat u het bestand hebt opgeslagen, kunt u:
 
-   * Gebruik **x** (tegen de naam van de opgeslagen zoekopdracht) om een nieuwe query te starten (de opgeslagen zoekopdracht zelf wordt niet verwijderd).
-   * **Bewerk Opgeslagen zoekopdracht**, wijzig de zoekvoorwaarden en  **** sla de zoekopdracht nogmaals op.
+   * Gebruiken **x** (naast de naam van de opgeslagen zoekopdracht) om een nieuwe query te starten (de opgeslagen zoekopdracht zelf wordt niet verwijderd).
+   * **Opgeslagen zoekopdracht bewerken** wijzigt u vervolgens de zoekvoorwaarden **Opslaan** opnieuw.
 
 Opgeslagen zoekopdrachten kunnen worden gewijzigd door de opgeslagen zoekopdracht te selecteren en onder aan het zoekvenster op **Opgeslagen zoekopdracht bewerken** te klikken.
 

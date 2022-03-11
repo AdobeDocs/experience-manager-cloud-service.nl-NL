@@ -4,8 +4,8 @@ description: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2022'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Raadpleeg onze cursus [Toegang tot AEM configureren voor beheerders](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) voor een inleiding over hoe gebruikers zich verifiëren met Adobe IMS om as a Cloud Service te AEM en hoe Adobe IMS-gebruikers, -gebruikersgroepen en -productprofielen worden gebruikt om de toegang tot AEM en de functies en functies te beheren. Adobe ID vereist.
+>Bekijk onze cursus Experience League [Toegang tot AEM voor beheerders configureren](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) voor een inleiding over hoe gebruikers het gebruik van Adobe IMS voor authentiek verklaren om as a Cloud Service te AEM en hoe de Gebruikers, de Groepen van de Gebruiker van Adobe IMS, en de Profielen van het Product worden gebruikt om toegang tot AEM en zijn eigenschappen en functionaliteiten te controleren. Adobe ID vereist.
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ Hieronder vindt u de belangrijkste OSGI-configuraties die moeten worden aangepas
 
 ### Producten en gebruikerstoegang beheren in Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Wanneer de Beheerder van het Product aan Admin Console het programma opent, zullen zij veelvoudige instanties van de AEM as a Cloud Service Context van het Product, zoals hieronder getoond zien. Selecteer bijvoorbeeld een van de producten op de pagina **Overzicht**:
+Wanneer de Beheerder van het Product aan Admin Console het programma opent, zullen zij veelvoudige instanties van de AEM as a Cloud Service Context van het Product, zoals hieronder getoond zien. Selecteer bijvoorbeeld een van de producten in het menu **Overzicht** pagina:
 
 ![Instantieaanmelding](/help/security/assets/ims6.png)
 

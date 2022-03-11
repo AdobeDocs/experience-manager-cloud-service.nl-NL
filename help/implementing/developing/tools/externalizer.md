@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # URL&#39;s extern maken {#externalizing-urls}
 
-In AEM, is **ExternalAlizer** de dienst OSGi die u toestaat om een middelweg programmatically om te zetten (b.v. `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door de weg met vooraf gevormde DNS te bevestigen.
+In AEM **ExternalAlizer** is de dienst OSGi die u toestaat om een middelweg programmatically om te zetten (b.v. `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door het pad vooraf te bevestigen met een vooraf geconfigureerde DNS.
 
 Omdat een AEM as a Cloud Service instantie zijn uiterlijk zichtbare URL niet kan kennen en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
-Dit artikel verklaart hoe te om de dienst te vormen Externalzer en hoe te om het te gebruiken. Raadpleeg [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html) voor technische details van de service.
+Dit artikel verklaart hoe te om de dienst te vormen Externalzer en hoe te om het te gebruiken. Voor technische details van de dienst, gelieve te verwijzen naar [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Standaardgedrag van Externalzer en Hoe te om met voeten te treden {#default-behavior}
 
-Buiten het vak heeft de service Externalzer waarden zoals `author-p12345-e6789.adobeaemcloud.com` en `publish-p12345-e6789.adobeaemcloud.com`.
+Buiten-de doos, heeft de dienst Externalzer waarden zoals `author-p12345-e6789.adobeaemcloud.com` en `publish-p12345-e6789.adobeaemcloud.com`.
 
-Om dergelijke waarden met voeten te treden, gebruikt de het omgevingsvariabelen van de Manager van de Wolk zoals die in het artikel [Vormen OSGi voor AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) en het plaatsen van vooraf bepaalde `AEM_CDN_DOMAIN_AUTHOR` en `AEM_CDN_DOMAIN_PUBLISH` variabelen worden beschreven.
+Als u deze waarden wilt overschrijven, gebruikt u de omgevingsvariabelen van Cloud Manager, zoals beschreven in het artikel [Het vormen OSGi voor AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) en het instellen van de vooraf gedefinieerde `AEM_CDN_DOMAIN_AUTHOR` en `AEM_CDN_DOMAIN_PUBLISH` variabelen.
 
 ## Het vormen van de Dienst Externalzer {#configuring-the-externalizer-service}
 
@@ -29,7 +29,7 @@ De dienst ExternalAlizer staat u toe om het domein centraal te bepalen dat aan p
 
 >[!NOTE]
 >
->Zoals wanneer het toepassen van om het even welke [OSGi configuraties voor AEM as a Cloud Service, ](/help/implementing/deploying/overview.md#osgi-configuration) de volgende stappen op een lokale ontwikkelaarinstantie zouden moeten worden uitgevoerd en dan aan uw projectcode voor plaatsing geëngageerd.
+>Als u een [OSGi-configuraties voor AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) de volgende stappen zouden op een lokale ontwikkelaarinstantie moeten worden uitgevoerd en dan aan uw projectcode voor plaatsing geëngageerd.
 
 Om een domeinafbeelding voor de dienst te bepalen Externalzer:
 
@@ -37,15 +37,15 @@ Om een domeinafbeelding voor de dienst te bepalen Externalzer:
 
    `https://<host>:<port>/system/console/configMgr`
 
-1. Klik **De Verbinding van CQ van de Dag uiterlijk** om de doos van de configuratiedialoog te openen.
+1. Klikken **Day CQ Link ExternalAlizer** om het dialoogvenster Configuratie te openen.
 
    ![De configuratie ExternalAlizer OSGi](./assets/externalizer-osgi.png)
 
    >[!NOTE]
    >
-   >De directe verbinding aan de configuratie is `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
+   >De directe koppeling naar de configuratie is `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
 
-1. Definieer een **Domeinen**-toewijzing. Een toewijzing bestaat uit een unieke naam die in de code kan worden gebruikt om naar het domein, een ruimte en het domein te verwijzen:
+1. Een **Domeinen** toewijzing. Een toewijzing bestaat uit een unieke naam die in de code kan worden gebruikt om naar het domein, een ruimte en het domein te verwijzen:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
@@ -71,7 +71,7 @@ Om een domeinafbeelding voor de dienst te bepalen Externalzer:
    >
    >Met een aangepaste configuratie kunt u een nieuwe categorie toevoegen, zoals `production`, `staging` of zelfs externe niet-AEM systemen zoals `my-internal-webservice`. Het is nuttig om harde codering dergelijke URLs over verschillende plaatsen in codebase van een project te vermijden.
 
-1. Klik **Opslaan** om uw wijzigingen op te slaan.
+1. Klikken **Opslaan** om uw wijzigingen op te slaan.
 
 ### Het gebruiken van de Dienst Externalzer {#using-the-externalizer-service}
 
@@ -125,4 +125,4 @@ Deze sectie toont een paar voorbeelden van hoe de dienst Externalzer kan worden 
 
 >[!TIP]
 >
->U kunt meer voorbeelden in [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html) vinden.
+>Meer voorbeelden vindt u in het gedeelte [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).

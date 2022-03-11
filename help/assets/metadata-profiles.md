@@ -16,26 +16,26 @@ ht-degree: 18%
 
 Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen in een map. Maak een metagegevensprofiel en pas dit toe op een map. Elk element dat u vervolgens uploadt naar de map, neemt de standaardmetagegevens over die u hebt geconfigureerd in het metagegevensprofiel.
 
-Een belangrijk begrip met betrekking tot het gebruik van profielen in de Middelen van de Experience Manager is dat zij aan omslagen worden toegewezen. Binnen een profiel bevinden zich instellingen in de vorm van metagegevensprofielen, samen met videoprofielen of afbeeldingsprofielen. Met deze instellingen wordt de inhoud van een map samen met de submappen van de map verwerkt. Daarom heeft de manier waarop u bestanden en mappen benoemt, de manier waarop u submappen rangschikt en de manier waarop u de bestanden in deze mappen verwerkt, een grote invloed op de manier waarop deze elementen door een profiel worden verwerkt.
+Een belangrijk concept voor het gebruik van profielen in Experience Manager Assets is dat deze aan mappen worden toegewezen. Binnen een profiel bevinden zich instellingen in de vorm van metagegevensprofielen, samen met videoprofielen of afbeeldingsprofielen. Met deze instellingen wordt de inhoud van een map samen met de submappen van de map verwerkt. Daarom heeft de manier waarop u bestanden en mappen benoemt, de manier waarop u submappen rangschikt en de manier waarop u de bestanden in deze mappen verwerkt, een grote invloed op de manier waarop deze elementen door een profiel worden verwerkt.
 Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen en goede praktijken voor metagegevens te gebruiken, kunt u optimaal gebruikmaken van de verzameling van digitale elementen en ervoor zorgen dat de juiste bestanden door het juiste profiel worden verwerkt.
 
 ## Een metagegevensprofiel toevoegen {#adding-a-metadata-profile}
 
-1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** en klik vervolgens op **[!UICONTROL Create]**.
-1. Voer een titel in voor Metagegevensprofiel, bijvoorbeeld Voorbeeldmetagegevens, en tik **[!UICONTROL Submit]**. Het bewerkingsformulier voor het metagegevensprofiel wordt weergegeven.
-1. Klik op een component en configureer de eigenschappen ervan op het tabblad **[!UICONTROL Settings]**. Klik bijvoorbeeld op de component **[!UICONTROL Description]** en bewerk de eigenschappen ervan.
-Bewerk de volgende eigenschappen voor de component **[!UICONTROL Description]**:
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** en klik vervolgens op **[!UICONTROL Create]**.
+1. Voer een titel in voor het metagegevensprofiel, bijvoorbeeld Voorbeeldmetagegevens, en tik op **[!UICONTROL Submit]**. Het bewerkingsformulier voor het metagegevensprofiel wordt weergegeven.
+1. Klik op een component en configureer de eigenschappen ervan in het dialoogvenster **[!UICONTROL Settings]** tab. Klik bijvoorbeeld op de knop **[!UICONTROL Description]** en de eigenschappen ervan bewerken.
+Bewerk de volgende eigenschappen voor de **[!UICONTROL Description]** component:
 
    * **[!UICONTROL Field Label]** - De weergavenaam van de eigenschap metadata. Dit is alleen voor de gebruikersverwijzing.
-   * **[!UICONTROL Map to Property]** - De waarde van deze eigenschap geeft het relatieve pad/de relatieve naam aan naar het knooppunt met middelen waar het wordt opgeslagen in de opslagplaats. De waarde moet altijd beginnen met `./` omdat dit aangeeft dat het pad zich onder het knooppunt van het element bevindt.
+   * **[!UICONTROL Map to Property]** - De waarde van deze eigenschap geeft het relatieve pad/de relatieve naam aan naar het knooppunt met middelen waar het wordt opgeslagen in de opslagplaats. De waarde moet altijd beginnen met `./` omdat het aangeeft dat het pad zich onder het knooppunt van het element bevindt.
 
-      De waarde die u opgeeft voor **[!UICONTROL Map to property]**, wordt opgeslagen als een eigenschap onder het metagegevensknooppunt van het element. Als u bijvoorbeeld `/jcr:content/metadata/dc:desc` als naam van  **[!UICONTROL Map to property]**,  [!DNL Adobe Experience Manager Assets] slaat de waarde  `dc:desc` bij de de meta-gegevensknoop van het element op.
+      De waarde die u opgeeft voor **[!UICONTROL Map to property]** wordt opgeslagen als een eigenschap onder het metagegevensknooppunt van het element. Als u bijvoorbeeld `/jcr:content/metadata/dc:desc` als de naam van **[!UICONTROL Map to property]**, [!DNL Adobe Experience Manager Assets] slaat de waarde op `dc:desc` op het metagegevensknooppunt van het element.
 
-   * **[!UICONTROL Default Value]** - Gebruik deze eigenschap om een standaardwaarde voor de metagegevenscomponent toe te voegen. Als u bijvoorbeeld &quot;Mijn beschrijving&quot; opgeeft, wordt deze waarde toegewezen aan de eigenschap `dc:desc` bij het metagegevensknooppunt van het element.
+   * **[!UICONTROL Default Value]** - Gebruik deze eigenschap om een standaardwaarde voor de metagegevenscomponent toe te voegen. Als u bijvoorbeeld &quot;Mijn beschrijving&quot; opgeeft, wordt deze waarde toegewezen aan de eigenschap `dc:desc` op het metagegevensknooppunt van het element.
 
       >[!NOTE]
       >
-      >Als u een standaardwaarde toevoegt aan een nieuwe eigenschap metadata (die niet bestaat op het knooppunt `/jcr:content/metadata`), worden de eigenschap en de waarde ervan standaard niet weergegeven op de pagina Eigenschappen van het element. Om het nieuwe bezit op de [!UICONTROL Properties] pagina te bekijken, wijzig de overeenkomstige schemavorm.
+      >Een standaardwaarde toevoegen aan een nieuwe eigenschap voor metagegevens (die niet bestaat bij `/jcr:content/metadata` node) geeft de eigenschap en de waarde ervan standaard niet weer op de pagina Eigenschappen van het element. Als u de nieuwe eigenschap wilt weergeven op de knop [!UICONTROL Properties] pagina, wijzigt u het corresponderende schema-formulier.
 
 1. (Optioneel) Voeg op het tabblad **[!UICONTROL Build Form]** meer componenten toe aan het formulier Bewerken en configureer de eigenschappen ervan op het tabblad **[!UICONTROL Settings]**. De volgende eigenschappen zijn beschikbaar op het tabblad **[!UICONTROL Build Form]**:
 
@@ -48,19 +48,19 @@ Bewerk de volgende eigenschappen voor de component **[!UICONTROL Description]**:
 | Date | Veldlabel, Toewijzen aan eigenschap, Standaardwaarde |
 | Standaardlabels | Veldlabel, Toewijzen aan eigenschap, Standaardwaarde, Beschrijving |
 
-1. Klik op **[!UICONTROL Done]**. Het metagegevensprofiel wordt toegevoegd aan de lijst met profielen op de pagina **[!UICONTROL Metadata Profiles]**.
+1. Klik op **[!UICONTROL Done]**. Het metagegevensprofiel wordt toegevoegd aan de lijst met profielen in het dialoogvenster **[!UICONTROL Metadata Profiles]** pagina.
 
 ## Een metagegevensprofiel kopiëren {#copying-a-metadata-profile}
 
-1. Selecteer op de pagina **[!UICONTROL Metadata Profiles]** een metagegevensprofiel om er een kopie van te maken.
+1. Van de **[!UICONTROL Metadata Profiles]** selecteert u een metagegevensprofiel om er een kopie van te maken.
 1. Klik op **[!UICONTROL Copy]** op de werkbalk.
-1. Voer in het dialoogvenster **[!UICONTROL Copy Metadata Profile]** een titel in voor de nieuwe kopie van het metagegevensprofiel.
+1. In de **[!UICONTROL Copy Metadata Profile]** voert u een titel in voor de nieuwe kopie van het metagegevensprofiel.
 1. Klik op **[!UICONTROL Copy]**. De kopie van het metadataprofiel wordt weergegeven in de lijst met profielen op de pagina **[!UICONTROL Metadata Profiles]**.
 
 ## Een metagegevensprofiel verwijderen {#deleting-a-metadata-profile}
 
-1. Selecteer op de pagina **[!UICONTROL Metadata Profiles]** een profiel dat u wilt verwijderen.
-1. Klik op **[!UICONTROL Delete Metadata Profiles]** op de werkbalk.
+1. Van de **[!UICONTROL Metadata Profiles]** selecteert u een profiel dat u wilt verwijderen.
+1. Klikken **[!UICONTROL Delete Metadata Profiles]** in de werkbalk.
 1. Klik in het dialoogvenster op **[!UICONTROL Delete]** om de verwijderbewerking te bevestigen. Het metagegevensprofiel wordt uit de lijst verwijderd.
 
 ## Een metagegevensprofiel toepassen op mappen {#applying-a-metadata-profile-to-folders}
@@ -85,25 +85,25 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 1. Ga naar **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Selecteer het metagegevensprofiel dat u wilt toepassen op een of meerdere mappen.
-1. Klik op **[!UICONTROL Apply Metadata Profile to Folder(s)]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en klik op **[!UICONTROL Done]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Klikken **[!UICONTROL Apply Metadata Profile to Folder(s)]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en klik op **[!UICONTROL Done]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
 #### Metagegevensprofielen toepassen op mappen vanuit Eigenschappen {#applying-metadata-profiles-to-folders-from-properties}
 
-1. Klik in de linkertrack op **[!UICONTROL Assets]** en navigeer naar de map waarop u een metagegevensprofiel wilt toepassen.
-1. Klik of klik op het vinkje in de map om het te selecteren en klik of klik op **Eigenschappen**.
-1. Selecteer de tab **[!UICONTROL Metadata Profiles]** en selecteer het profiel in de vervolgkeuzelijst en klik op **[!UICONTROL Save]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Klik in de linkertrack op **[!UICONTROL Assets]** Navigeer vervolgens naar de map waarop u een metagegevensprofiel wilt toepassen.
+1. Klik of klik op het vinkje in de map om het te selecteren en klik of klik vervolgens op **Eigenschappen**.
+1. Selecteer **[!UICONTROL Metadata Profiles]** en selecteert u het profiel in de keuzelijst en klikt u op **[!UICONTROL Save]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
 ### Een metagegevensprofiel algemeen toepassen {#applying-a-metadata-profile-globally}
 
-Naast het toepassen van een profiel op een omslag, kunt u ook globaal toepassen zodat om het even welke inhoud die in [!DNL Experience Manager Assets] in om het even welke omslag wordt geupload het geselecteerde profiel wordt toegepast.
+Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat alle inhoud die u uploadt naar [!DNL Experience Manager Assets] in een map is het geselecteerde profiel toegepast.
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevensprofiel heeft dat u later hebt gewijzigd. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
 **Voer een van de volgende handelingen uit als u een metagegevensprofiel globaal wilt toepassen**
 
-* Navigeer naar `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`, pas het aangewezen profiel toe en klik **[!UICONTROL Save]**.
+* Navigeren naar `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` en pas het juiste profiel toe en klik op **[!UICONTROL Save]**.
 
-* Navigeer naar CRXDE Lite naar het volgende knooppunt: `/content/dam/jcr:content`. Voeg de eigenschap `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` toe. Klik **Alles opslaan**.
+* Navigeer naar CRXDE Lite naar het volgende knooppunt: `/content/dam/jcr:content`. De eigenschap toevoegen `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Klikken **Alles opslaan**.
 
 ## Een metagegevensprofiel uit mappen verwijderen {#removing-a-metadata-profile-from-folders}
 
@@ -115,12 +115,12 @@ U kunt een metadataprofiel uit een map verwijderen vanuit het menu **Gereedschap
 
 1. Klik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Selecteer het metagegevensprofiel dat u uit een of meerdere mappen wilt verwijderen.
-1. Klik op **[!UICONTROL Remove Metadata Profile from Folder(s)]** en selecteer de map of meerdere mappen waaruit u een profiel wilt verwijderen en klik op **[!UICONTROL Done]**.
+1. Klikken **[!UICONTROL Remove Metadata Profile from Folder(s)]** en selecteer de map of meerdere mappen waaruit u een profiel wilt verwijderen en klik op **[!UICONTROL Done]**.
 
    U kunt bevestigen dat het metagegevensprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
 ### Metagegevensprofielen uit mappen verwijderen via eigenschappen {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Klik op het logo van de Experience Manager en navigeer **[!UICONTROL Assets]** naar de map waaruit u een metagegevensprofiel wilt verwijderen.
+1. Klik op het logo van de Experience Manager en navigeer **[!UICONTROL Assets]** en vervolgens naar de map waaruit u een metagegevensprofiel wilt verwijderen.
 1. Klik in de map op het vinkje om het te selecteren en klik vervolgens op **[!UICONTROL Properties]**.
 1. Selecteer het tabblad **[!UICONTROL Metadata Profiles]**, selecteer **[!UICONTROL None]** in het vervolgkeuzemenu en klik op **[!UICONTROL Save]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.

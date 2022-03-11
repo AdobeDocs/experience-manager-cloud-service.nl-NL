@@ -1,5 +1,5 @@
 ---
-title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
+title: Learning to use GraphQL with AEM - Sample Content and Queries
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s {#learn-graphql-with-aem-sample-content-queries}
 
-Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
+Learn to use GraphQL with AEM to serve content headlessly by exploring sample content and queries.
 
 >[!NOTE]
 >
@@ -764,7 +764,7 @@ query {
 }
 ```
 
-### Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen {#sample-array-item-occur-at-least-once}
+### Sample Query - Filter on an array with an item that must occur at least once {#sample-array-item-occur-at-least-once}
 
 Deze query filtert op een array met een item (`city:na`) die ten minste één keer moet plaatsvinden.
 
@@ -1301,10 +1301,10 @@ Deze query vraagt om:
 
 ### Voorbeeldquery voor een inhoudsfragment van een specifiek model met inhoudsverwijzingen{#sample-wknd-fragment-specific-model-content-reference}
 
-Deze query heeft twee voordelen:
+There are two flavors of this query:
 
 1. Alle inhoudsverwijzingen retourneren.
-1. De specifieke inhoudsverwijzingen van het type retourneren `attachments`.
+1. To return the specific content references of type `attachments`.
 
 Deze vragen worden ondervraagd:
 
@@ -1543,7 +1543,7 @@ De velden waarin een persoon wordt gedefinieerd, die ook een werknemer kan zijn:
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
 | Naam | Tekst met één regel |  |
-| Voornaam | Tekst met één regel |  |
+| Voornaam | Single line text |  |
 | Awards | Fragmentverwijzing (meerdere velden) | [Uitreiking](#model-award) |
 
 #### Uitreiking {#model-award}

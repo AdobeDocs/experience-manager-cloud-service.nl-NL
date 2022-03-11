@@ -1,12 +1,12 @@
 ---
 title: Inhoud opnieuw gebruiken - Beheer van meerdere sites en Live kopiëren
 description: Maak kennis met de introductie van het hergebruik van inhoud met AEM krachtige functies Live Copy en Multi Site Manager.
-feature: Beheer van meerdere sites
+feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2682'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Met MSM (Multi Site Manager) kunt u dezelfde site-inhoud op meerdere locaties ge
 
 * Met MSM kunt u:
    * Inhoud eenmaal maken en vervolgens
-   * Gebruik deze inhoud opnieuw in andere gebieden (via [Actieve kopieën](#live-copies)) van dezelfde of andere sites.
+   * Deze inhoud opnieuw gebruiken in andere gebieden (via [Actieve kopieën](#live-copies)) van dezelfde of andere sites.
 * MSM onderhoudt dan de levende verhoudingen tussen uw broninhoud en zijn Levende Kopieën zodat:
    * Wanneer u wijzigingen aanbrengt in de broninhoud, worden de bron en Actieve kopieën gesynchroniseerd.
    * U kunt alleen de inhoud van de actieve kopieën aanpassen door de live relatie voor afzonderlijke subpagina&#39;s en/of componenten te verbreken.
@@ -38,9 +38,9 @@ Er zijn vele gebruiksgevallen voor MSM en Levende Exemplaren. Enkele scenario&#3
 
    Een typisch gebruiksgeval dat MSM steunt is inhoud in verscheidene multinationale plaatsen van het zelfde-Taal opnieuw te gebruiken. Hierdoor kan de kerninhoud opnieuw worden gebruikt en kunnen nationale variaties worden toegestaan.
 
-   Het Engelse gedeelte van het voorbeeld [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md) is bijvoorbeeld gemaakt voor klanten in de VS. De meeste inhoud op deze site kan ook worden gebruikt voor andere WKND-sites die geschikt zijn voor Engelstalige klanten van verschillende landen en culturen. De kerninhoud blijft voor alle sites hetzelfde, terwijl regionale aanpassingen kunnen worden aangebracht.
+   Bijvoorbeeld de Engelse sectie van het [WKND-lesbestand](/help/implementing/developing/introduction/develop-wknd-tutorial.md) is opgericht voor klanten in de VS. De meeste inhoud op deze site kan ook worden gebruikt voor andere WKND-sites die geschikt zijn voor Engelstalige klanten van verschillende landen en culturen. De kerninhoud blijft voor alle sites hetzelfde, terwijl regionale aanpassingen kunnen worden aangebracht.
 
-   De volgende structuur kan voor plaatsen voor de Verenigde Staten en Canada worden gebruikt. Merk op hoe `language-masters` knoop het master exemplaar van niet alleen Engels maar andere taalinhoud handhaaft. Deze inhoud kan worden gebruikt als basis voor aanvullende regionale taalinhoud naast het Engels.
+   De volgende structuur kan voor plaatsen voor de Verenigde Staten en Canada worden gebruikt. Let op: `language-masters` node behoudt de master kopie van niet alleen Engelstalige maar ook andere taalinhoud. Deze inhoud kan worden gebruikt als basis voor aanvullende regionale taalinhoud naast het Engels.
 
    ```xml
    /content
@@ -109,35 +109,35 @@ Er zijn vele gebruiksgevallen voor MSM en Levende Exemplaren. Enkele scenario&#3
 
 MSM is direct toegankelijk in UI gebruikend diverse opties van de aangewezen console.
 
-* **Site**  maken (**sites**)
+* **Site maken** (**Sites**)
 
    * Met MSM kunt u meerdere websites beheren die gemeenschappelijke inhoud delen. Websites worden bijvoorbeeld vaak aangeboden voor een internationaal publiek, zodat de meeste inhoud in alle landen hetzelfde is, met een subset van de inhoud die specifiek is voor het afzonderlijke land. Met MSM kunt u [Actieve kopieën maken die automatisch een of meer sites bijwerken op basis van uw bronsite](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Dit helpt u ook om een gemeenschappelijke basisstructuur af te dwingen, de gemeenschappelijke inhoud over de veelvoudige plaatsen te gebruiken, een gemeenschappelijke blik te handhaven en zich te concentreren inspanningen op het beheren van de inhoud die eigenlijk tussen de plaatsen verschilt. Een site maken op deze manier:
       * Vereist een vooraf bepaalde blauwdrukconfiguratie om de bron te specificeren.
       * Hiermee maakt u een live kopie van de (vooraf gedefinieerde) bron.
-      * Biedt de gebruiker de knop **Uitvoeren**.
+      * Biedt de gebruiker de **Uitrol** knop.
 
-* **Live kopie**  maken (**sites**)
+* **Live kopie maken** (**Sites**)
 
-   * Met MSM kunt u [een ad-hoc (eenmalige) live kopie van een afzonderlijke pagina of subvertakking van een website maken.](creating-live-copies.md#creating-a-live-copy-of-a-page) Bijvoorbeeld, het dupliceren van een subtak om informatie over een nieuwe/bijgewerkte versie van een product te verstrekken. Op deze manier een actieve kopie maken:
+   * Met MSM kunt u [Maak een ad-hoc (eenmalige) live kopie van een afzonderlijke pagina of subvertakking van een website.](creating-live-copies.md#creating-a-live-copy-of-a-page) Bijvoorbeeld, het dupliceren van een subtak om informatie over een nieuwe/bijgewerkte versie van een product te verstrekken. Op deze manier een actieve kopie maken:
       * Hiermee maakt u een ad-hoc live kopie (geen configuratie voor blauwdrukken vereist).
       * Kan worden gebruikt om (direct) een actieve kopie van elke pagina of vertakking te maken.
-      * Vereist **Synchronize** (verstrekt niet **Rollout** knoop).
+      * Vereisten **Synchroniseren** (geen **Uitrol** ).
 
-* **Eigenschappen**  weergeven (**sites**)
+* **Eigenschappen weergeven** (**Sites**)
 
-   * Deze optie helpt u, indien van toepassing, [uw Live kopie te controleren](creating-live-copies.md#monitoring-your-live-copy) door informatie op te geven over de betreffende **actieve kopie** of **blauwdruk**.
+   * Deze optie helpt u, indien van toepassing [Live kopie controleren](creating-live-copies.md#monitoring-your-live-copy) door informatie te verstrekken over de **Live kopie** of **Blauwdruk**.
 
-* **Verwijzingen** (**sites**)
+* **Verwijzingen** (**Sites**)
 
-   * De [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) rail verstrekt informatie over **Actieve exemplaren** samen met toegang tot aangewezen acties.
+   * De [Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) spoor verstrekt informatie over **Actieve kopieën** en toegang tot passende maatregelen.
 
-* **Overzicht**  van live kopiëren (**sites**)
+* **Overzicht van live kopiëren** (**Sites**)
 
-   * Met deze console kunt u uw blauwdruk en de bijbehorende actieve kopieën [weergeven en beheren.](live-copy-overview.md)
+   * Met deze console kunt u [bekijk en beheer uw blauwdruk en de bijbehorende Actieve exemplaren.](live-copy-overview.md)
 
-* **Blauwdrukken**  (**gereedschappen**  -  **Sites**)
+* **Blauwdrukken** (**Gereedschappen** - **Sites**)
 
-   * Met deze console kunt u [uw blauwdrukconfiguraties maken en beheren.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Met deze console kunt u [maak en beheer uw blauwdrukconfiguraties.](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
@@ -156,9 +156,9 @@ Als inleiding, verstrekt de volgende lijst een overzicht van de belangrijkste te
 | Blauwdruk | Gelijk aan bron | Kan worden gedefinieerd door een configuratie van een blauwdruk |
 | Blauwdrukconfiguratie | Vooraf gedefinieerde configuratie die een bronpad opgeeft | Wanneer in een blauwdrukconfiguratie naar een blauwdrukpagina wordt verwezen, wordt de opdracht Uitrollen beschikbaar |
 | Hoofdstuk | De gedeelten van de blauwdruk die moeten worden opgenomen in de actieve kopie | Dit zijn doorgaans subpagina&#39;s van de hoofdmap |
-| Synchronisatie | De generische termijn voor de synchronisatie van inhoud tussen de bron en Live kopieën (door zowel **Rollout** als **Synchronize** opties) |  |
+| Synchronisatie | De generische term voor de synchronisatie van inhoud tussen de bron en Live kopieën (door beide **Uitrol** en **Synchroniseren** opties) |  |
 | Uitrol | Synchroniseert van bron naar Live kopie | Kan worden geactiveerd door een auteur (op een blauwdrukpagina) of door een systeemgebeurtenis (zoals gedefinieerd door de rollout-configuratie) |
-| Rolloutconfiguratie | Regels die bepalen welke eigenschappen worden gesynchroniseerd, hoe en wanneer |  |
+| Configuratie van rollout | Regels die bepalen welke eigenschappen worden gesynchroniseerd, hoe en wanneer |  |
 | Synchroniseren | Een handmatig verzoek om synchronisatie, uitgevoerd vanaf de Live Copy-pagina&#39;s |  |
 | Overerving | Een pagina/component van Actieve kopie overerft de inhoud van de bronpagina/component wanneer de synchronisatie plaatsvindt |  |
 | Onderbreken | Hiermee wordt de live relatie tussen een actieve kopie en de bijbehorende blauwdrukpagina tijdelijk verwijderd |  |
@@ -184,11 +184,11 @@ Een live MSM-kopie is een kopie van specifieke site-inhoud waarvoor een live rel
    * Diep: de pagina, samen met de onderliggende pagina&#39;s ervan
 * De regels van de synchronisatie, genoemd rollout configuraties, bepalen welke eigenschappen worden gesynchroniseerd en wanneer de synchronisatie voorkomt.
 
-In het vorige voorbeeld is `/content/wknd/language-masters/en` de algemene master site in het Engels. Als u de inhoud van deze site opnieuw wilt gebruiken, worden live MSM-kopieën gemaakt:
+In het vorige voorbeeld: `/content/wknd/language-masters/en` is de wereldwijde master site in het Engels. Als u de inhoud van deze site opnieuw wilt gebruiken, worden live MSM-kopieën gemaakt:
 
-* De inhoud onder `/content/wknd/language-masters/en` is de bron.
-* De inhoud onder `/content/wknd/language-masters/en` wordt gekopieerd onder de `/content/wknd/us/en/` en `/content/wknd/ca/en` knopen. Dit zijn de actieve kopieën.
-* Auteurs brengen wijzigingen aan op de pagina&#39;s onder `/content/wknd/language-masters/en`.
+* De onderstaande inhoud `/content/wknd/language-masters/en` is de bron.
+* De onderstaande inhoud `/content/wknd/language-masters/en` wordt gekopieerd onder de `/content/wknd/us/en/` en `/content/wknd/ca/en` knooppunten. Dit zijn de actieve kopieën.
+* Auteurs brengen wijzigingen aan onderstaande pagina&#39;s aan `/content/wknd/language-masters/en`.
 * Wanneer teweeggebracht, synchroniseert MSM deze veranderingen in Levende Exemplaren.
 
 ### Actieve kopieën - Compositie {#live-copies-composition}
@@ -210,7 +210,7 @@ De basisvorm van Live Copy heeft:
    * Koppel de Live Copy-bron aan de bijbehorende blauwdruk/bron.
    * Wordt gebruikt bij het realiseren van overerving en rollout.
 
-Wijzigingen kunnen [gesynchroniseerd](creating-live-copies.md#synchronizing-your-live-copy) zijn volgens de vereisten.
+Wijzigingen kunnen [gesynchroniseerd](creating-live-copies.md#synchronizing-your-live-copy) volgens de eisen.
 
 ![Samenstellingsoverzicht van live kopiëren](../assets/live-copy-composition.png)
 
@@ -219,13 +219,13 @@ Wijzigingen kunnen [gesynchroniseerd](creating-live-copies.md#synchronizing-your
 Wanneer u een live kopie maakt in AEM, kunt u de vertakking Live kopie zien en door de vertakking Live kopie navigeren en de normale AEM gebruiken in de vertakking Live kopie. Dit betekent dat u (of een proces) nieuwe bronnen (pagina&#39;s en/of alinea&#39;s) kunt maken in Live Copy. Bijvoorbeeld een product voor een bepaald gebied of land.
 
 * Dergelijke bronnen hebben geen live relatie met de bron-/blauwdrukpagina&#39;s en zijn niet gesynchroniseerd.
-* De scenario&#39;s kunnen voorkomen dat MSM als speciale gevallen behandelt. Wanneer u (of een proces) bijvoorbeeld een pagina maakt met dezelfde positie en naam in de vertakkingen bron/blauwdruk en Live kopie. Voor dergelijke situaties zie [Conflicten van de Uitvoer MSM](rollout-conflicts.md) voor meer informatie.
+* De scenario&#39;s kunnen voorkomen dat MSM als speciale gevallen behandelt. Wanneer u (of een proces) bijvoorbeeld een pagina maakt met dezelfde positie en naam in de vertakkingen van de bron/blauwdruk en Live kopie. Zie voor dergelijke situaties [Conflicten MSM-rollout](rollout-conflicts.md) voor meer informatie .
 
 ![Live kopie met niet-live kopiëren pagina&#39;s](../assets/live-copy-with-non-live-copy-pages.png)
 
 #### Geneste actieve kopieën {#nested-live-copies}
 
-Wanneer u (of een proces) een [nieuwe pagina binnen een bestaand Levend Exemplaar ](#live-copy-with-non-live-copy-pages) creeert kan deze nieuwe pagina ook als Levend Exemplaar van een verschillende blauwdruk worden geplaatst. Dit wordt een geneste live kopie genoemd. In geneste live kopieën wordt het gedrag van de tweede of binnenste live kopie op de volgende manieren beïnvloed door de eerste of buitenste live kopie:
+Wanneer u (of een proces) een [nieuwe pagina in een bestaande live kopie](#live-copy-with-non-live-copy-pages) Deze nieuwe pagina kan ook worden ingesteld als een live kopie van een andere blauwdruk. Dit wordt een geneste live kopie genoemd. In geneste live kopieën wordt het gedrag van de tweede of binnenste live kopie op de volgende manieren beïnvloed door de eerste of buitenste live kopie:
 
 * Een uitgebreide rollout die wordt geactiveerd voor Live Copy op hoofdniveau, kan worden doorgevoerd in de geneste Live Copy.
 * Eventuele koppelingen tussen de bronnen worden in de Live kopieën herschreven.
@@ -240,35 +240,35 @@ Koppelingen die bijvoorbeeld van de tweede naar de eerste blauwdruk wijzen, word
 
 #### Gestapelde actieve kopieën {#stacked-live-copies}
 
-Een actieve kopie wordt een gestapelde live kopie genoemd wanneer deze wordt gemaakt als het onderliggende element van een ondiepe Live kopie. Het gedraagt zich op de zelfde manier zoals [genestelde Levende Exemplaar ](#nested-live-copies).
+Een actieve kopie wordt een gestapelde live kopie genoemd wanneer deze wordt gemaakt als het onderliggende element van een ondiepe Live kopie. Het gedraagt zich op dezelfde manier als [geneste live kopie](#nested-live-copies).
 
 ### Bron-, blauwdruk- en blauwdrukconfiguraties {#source-blueprints-and-blueprint-configurations}
 
 Elke pagina of elke vertakking met pagina&#39;s kan worden gebruikt als bron van een Live kopie. Nochtans, staat MSM u ook toe om een blauwdrukconfiguratie te bepalen die een bronweg specificeert. De voordelen van het gebruik van een blauwdrukconfiguratie zijn:
 
-* Laat de auteur de optie **Uitvoer** op een blauwdruk gebruiken. Dit wil zeggen dat er expliciet wijzigingen moeten worden aangebracht in Live kopieën die van deze blauwdruk overerven.
-* Laat de auteur **Site maken/> gebruiken.** Op deze manier kan de gebruiker eenvoudig talen selecteren en de structuur van Live Copy configureren.
+* Laat de auteur het **Uitrol** op een blauwdruk. Dit wil zeggen dat er expliciet wijzigingen moeten worden aangebracht in Live kopieën die van deze blauwdruk overerven.
+* Laat de auteur gebruiken **Site maken**. Op deze manier kan de gebruiker eenvoudig talen selecteren en de structuur van Live Copy configureren.
 * Definieer een standaardconfiguratie voor rollout voor actieve kopieën die een relatie hebben met de blauwdruk.
 
 De bron voor een live kopie kan gewone pagina&#39;s zijn of pagina&#39;s die door een blauwdrukconfiguratie worden omringd. Beide zijn geldige gebruiksgevallen.
 
 De bron vormt de blauwdruk voor Live kopie. De blauwdruk wordt gedefinieerd wanneer u:
 
-* [Maak een configuratie](creating-live-copies.md#creating-a-blueprint-configuration)  Vervagen. De configuratie definieert vooraf de pagina&#39;s die moeten worden gebruikt om de actieve kopie te maken.
-* [Een actieve kopie van een pagina](creating-live-copies.md#creating-a-live-copy-of-a-page)  maken. De pagina&#39;s die worden gebruikt om de actieve kopie (de bronpagina&#39;s) te maken, zijn de pagina&#39;s met de blauwdruk. Naar de bronpagina kan door een blauwdrukconfiguratie al dan niet worden verwezen.
+* [Een blauwdrukconfiguratie maken](creating-live-copies.md#creating-a-blueprint-configuration) - De configuratie definieert vooraf de pagina&#39;s die moeten worden gebruikt om de Live kopie te maken.
+* [Een actieve kopie van een pagina maken](creating-live-copies.md#creating-a-live-copy-of-a-page) - De pagina&#39;s die worden gebruikt voor het maken van Live Copy (de bronpagina&#39;s) zijn de pagina&#39;s met de blauwdruk. Naar de bronpagina kan door een blauwdrukconfiguratie al dan niet worden verwezen.
 
 ### Uitvoeren en synchroniseren {#rollout-and-synchronize}
 
 Een rollout is de centrale actie MSM die Levende Kopieën met hun bronnen synchroniseert. U kunt rollouts handmatig uitvoeren of automatisch uitvoeren.
 
-* Een [rollout configuratie](#rollout-configurations) kan worden bepaald zodat specifieke [gebeurtenissen](live-copy-sync-config.md#rollout-triggers) een rollout kan veroorzaken om automatisch voor te komen.
-* Wanneer u een pagina met een blauwdruk maakt, kunt u de opdracht **[Uitvoer](creating-live-copies.md#rolling-out-a-blueprint)** gebruiken om wijzigingen door te voeren in Live kopie.
-   * De opdracht **Rollout** is beschikbaar op een blauwdrukpagina waarnaar wordt verwezen door een blauwdrukconfiguratie.
+* A [rollout-configuratie](#rollout-configurations) kunnen worden gedefinieerd zodat specifieke [gebeurtenissen](live-copy-sync-config.md#rollout-triggers) kan ertoe leiden dat een rollout automatisch voorkomt.
+* Wanneer u een pagina met een blauwdruk maakt, kunt u de opdracht **[Uitrol](creating-live-copies.md#rolling-out-a-blueprint)** om wijzigingen door te voeren in Live Copy.
+   * De **Uitrol** is beschikbaar op een pagina van de blauwdruk die door een blauwdrukconfiguratie van verwijzingen wordt voorzien.
 
    ![Uitrol](../assets/live-copy-rollout.png)
 
-* Wanneer u een pagina van Live kopie ontwerpt, kunt u de opdracht **[Synchroniseren](creating-live-copies.md#synchronizing-a-live-copy)** gebruiken om wijzigingen van de bron naar de Live kopie over te brengen.
-   * De opdracht **Synchroniseren** is altijd beschikbaar op de pagina Live kopie, ongeacht of de bron-/blauwdrukpagina door een blauwdrukconfiguratie is omsloten.
+* Wanneer u een pagina voor Live kopie maakt, kunt u de opdracht **[Synchroniseren](creating-live-copies.md#synchronizing-a-live-copy)** gebruiken om wijzigingen van de bron naar Live kopie over te brengen.
+   * De **Synchroniseren** Deze opdracht is altijd beschikbaar op de pagina Live kopiëren, ongeacht of de bron-/blauwdrukpagina is ingesloten door een blauwdrukconfiguratie.
 
    ![Synchroniseren](../assets/live-copy-synchronize.png)
 
@@ -276,30 +276,30 @@ Een rollout is de centrale actie MSM die Levende Kopieën met hun bronnen synchr
 
 Een rollout-configuratie bepaalt wanneer en hoe een Live Copy wordt gesynchroniseerd met de broninhoud. Een rollout-configuratie bestaat uit een trigger en een of meer synchronisatiehandelingen:
 
-* **Trigger**  - Een trigger is een gebeurtenis die ervoor zorgt dat de synchronisatie van actieve handelingen plaatsvindt, zoals de activering van een bronpagina. MSM bepaalt de trekkers die u kunt gebruiken.
-* **Synchronisatiehandelingen**  - Synchronisatiehandelingen worden uitgevoerd op de Live kopie om deze te synchroniseren met de bron. Voorbeelden van handelingen zijn het kopiëren van inhoud, het bestellen van onderliggende knooppunten en het activeren van de pagina Live kopie. MSM biedt een aantal synchronisatiehandelingen.
+* **Trigger** - Een trigger is een gebeurtenis die ervoor zorgt dat de synchronisatie van een live actie plaatsvindt, zoals de activering van een bronpagina. MSM bepaalt de trekkers die u kunt gebruiken.
+* **Synchronisatiehandelingen** - Er worden synchronisatiehandelingen uitgevoerd op de Live kopie om deze te synchroniseren met de bron. Voorbeelden van handelingen zijn het kopiëren van inhoud, het bestellen van onderliggende knooppunten en het activeren van de pagina Live kopie. MSM biedt een aantal synchronisatiehandelingen.
 
 >[!NOTE]
 >
 >U kunt aangepaste handelingen voor uw instantie maken met de Java API.
 
-De configuraties van de rollout kunnen worden opnieuw gebruikt, zodat meer dan één Levend Exemplaar de zelfde rollout configuratie kan gebruiken. Verschillende [implementatieconfiguraties](live-copy-sync-config.md#installed-rollout-configurations) zijn opgenomen in een standaardinstallatie.
+De configuraties van de rollout kunnen worden opnieuw gebruikt, zodat meer dan één Levend Exemplaar de zelfde rollout configuratie kan gebruiken. Meerdere [rollout-configuraties](live-copy-sync-config.md#installed-rollout-configurations) zijn opgenomen in een standaardinstallatie.
 
 ### Conflicten bij rollout {#rollout-conflicts}
 
-Rollouts kunnen ingewikkeld worden, vooral wanneer auteurs inhoud in zowel de bron als Live kopie bewerken. Zo is het nuttig om zich van bewust te zijn hoe AEM om het even welke [conflicten behandelt die tijdens rollout zouden kunnen voorkomen.](rollout-conflicts.md)
+Rollouts kunnen ingewikkeld worden, vooral wanneer auteurs inhoud in zowel de bron als Live kopie bewerken. Het is dus handig om te weten hoe AEM omgaat met alle [conflicten die kunnen optreden tijdens rollout.](rollout-conflicts.md)
 
 ### Overerving en synchronisatie opschorten en annuleren {#suspending-and-cancelling-inheritance-and-synchronization}
 
 Elke pagina en component in een live kopie is via een live relatie gekoppeld aan de bronpagina en -component ervan. De live relatie configureert de synchronisatie van Live Copy-inhoud van de bron.
 
-U kunt de overerving van Live kopie voor een pagina van Live kopie **opschorten**, zodat u pagina-eigenschappen en -componenten kunt wijzigen. Wanneer u overerving onderbreekt, worden de pagina-eigenschappen en -componenten niet meer gesynchroniseerd met de bron.
+U kunt **Onderbreken** de overerving van Live kopie voor een pagina van Live kopie, zodat u pagina-eigenschappen en -componenten kunt wijzigen. Wanneer u overerving onderbreekt, worden de pagina-eigenschappen en -componenten niet meer gesynchroniseerd met de bron.
 
-Tijdens het bewerken van een afzonderlijke pagina kunnen auteurs Overerving **Annuleren** voor een component. Wanneer de overerving wordt geannuleerd, wordt de live relatie onderbroken en vindt de synchronisatie niet plaats voor die component. Het annuleren van overerving en synchronisatie is handig wanneer subsecties van de inhoud moeten worden aangepast.
+Wanneer auteurs een afzonderlijke pagina bewerken, kunnen ze **Overerving annuleren** voor een component. Wanneer de overerving wordt geannuleerd, wordt de live relatie onderbroken en vindt de synchronisatie niet plaats voor die component. Het annuleren van overerving en synchronisatie is handig wanneer subsecties van de inhoud moeten worden aangepast.
 
 ### Een actieve kopie ontkoppelen {#detaching-a-live-copy}
 
-U kunt ook [een Live kopie](creating-live-copies.md#detaching-a-live-copy) loskoppelen van de blauwdruk om alle verbindingen te verwijderen.
+U kunt ook [Een actieve kopie loskoppelen](creating-live-copies.md#detaching-a-live-copy) om alle verbindingen te verwijderen.
 
 >[!CAUTION]
 >
@@ -309,7 +309,7 @@ Met de handeling Loskoppelen wordt de live relatie tussen een actieve kopie en d
 
 >[!TIP]
 >
->Zie [Een actieve kopie loskoppelen](creating-live-copies.md#detaching-a-live-copy) voor volledige informatie, inclusief de gerelateerde impact op subpagina&#39;s en bovenliggende pagina&#39;s.
+>Zie [Een actieve kopie ontkoppelen](creating-live-copies.md#detaching-a-live-copy) voor volledige informatie, met inbegrip van de gevolgen voor subpagina&#39;s en bovenliggende pagina&#39;s.
 
 ## Standaardstappen voor het gebruik van MSM {#standard-steps-for-using-msm}
 
@@ -319,19 +319,19 @@ De volgende stappen beschrijven de standaardprocedure voor het gebruiken van MSM
 1. Bepaal de rollout configuratie aan gebruik.
 
    1. MSM [installeert verscheidene rollout configuraties](live-copy-sync-config.md#installed-rollout-configurations) die aan een aantal gebruiksgevallen kunnen voldoen.
-   1. Naar keuze kunt u [een rollout configuratie](live-copy-sync-config.md#creating-a-rollout-configuration) indien nodig tot stand brengen.
+   1. U kunt desgewenst [een rollout-configuratie maken](live-copy-sync-config.md#creating-a-rollout-configuration) indien nodig.
 
-1. Bepaal waar u [de rollout configuraties aan gebruik ](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) moet specificeren en zonodig vormen.
-1. Indien nodig, [creeer een blauwdrukconfiguratie](creating-live-copies.md#creating-a-blueprint-configuration) die de broninhoud van Levend Exemplaar identificeert.
+1. Bepaal waar u wilt [Geef de rollout-configuraties op die u wilt gebruiken](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) en configureren naar wens.
+1. Indien vereist, [een blauwdrukconfiguratie maken](creating-live-copies.md#creating-a-blueprint-configuration) waarmee de broninhoud van de actieve kopie wordt geïdentificeerd.
 1. [Maak een actieve kopie.](creating-live-copies.md#creating-a-live-copy)
 1. Breng de gewenste wijzigingen aan in de broninhoud. U dient het normale proces voor het beoordelen en goedkeuren van inhoud dat uw organisatie heeft ingesteld, te gebruiken.
-1. [Schuif ](creating-live-copies.md#rolling-out-a-blueprint) de blauwdruk uit of  [synchroniseer de actieve ](creating-live-copies.md#synchronizing-a-live-copy) kopie met de wijzigingen.
+1. [Uitrollen](creating-live-copies.md#rolling-out-a-blueprint) de blauwdruk, of [Live kopie synchroniseren](creating-live-copies.md#synchronizing-a-live-copy) met de wijzigingen.
 
 ## MSM aanpassen {#customizing-msm}
 
 MSM verstrekt hulpmiddelen zodat uw implementatie aan de uitzonderlijke ingewikkeldheid kan aanpassen die wanneer het delen van inhoud kan bestaan.
 
-* **Aangepaste implementatieconfiguraties** :  [maak een ](live-copy-sync-config.md#creating-a-rollout-configuration) implementatieconfiguratie wanneer de geïnstalleerde implementatieconfiguraties niet aan uw vereisten voldoen. U kunt elke beschikbare uitrolltrigger- en synchronisatiehandeling gebruiken.
+* **Aangepaste implementatieconfiguraties** - [Een rollout-configuratie maken](live-copy-sync-config.md#creating-a-rollout-configuration) als de geïnstalleerde implementatieconfiguraties niet aan uw vereisten voldoen. U kunt elke beschikbare uitrolltrigger- en synchronisatiehandeling gebruiken.
 
 <!--
 * **Custom Synchronization Actions** - [Create a custom synchronization action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) when the installed actions do not meet your specific application requirements. MSM provides a Java API for creating custom synchronization actions.
@@ -339,4 +339,4 @@ MSM verstrekt hulpmiddelen zodat uw implementatie aan de uitzonderlijke ingewikk
 
 ## Best practices voor {#best-practices}
 
-De [MSM beste praktijken](best-practices.md) pagina bevat belangrijke informatie betreffende uw implementatie.
+De [Aanbevolen MSM-procedures](best-practices.md) Deze pagina bevat belangrijke informatie over uw implementatie.

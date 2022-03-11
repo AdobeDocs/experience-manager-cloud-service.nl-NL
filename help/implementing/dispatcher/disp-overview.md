@@ -5,7 +5,7 @@ feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---
@@ -19,23 +19,23 @@ ht-degree: 1%
 
 ## Inleiding {#apache-and-dispatcher-configuration-and-testing}
 
-Deze pagina beschrijft de verzendingsprogramma&#39;s en hoe u deze kunt downloaden en uitpakken, de ondersteunde apache-modules en biedt een overzicht op hoog niveau van de oude en flexibele modi. Daarnaast zijn er meer verwijzingen naar validatie en foutopsporing en naar het migreren van de Dispatcher-configuratie van AMS naar AEM als Cloud Service
+Deze pagina beschrijft de verzendingsprogramma&#39;s en hoe u deze kunt downloaden en uitpakken, de ondersteunde apache-modules en biedt een overzicht op hoog niveau van de oude en flexibele modi. Daarnaast zijn er meer verwijzingen naar validatie en foutopsporing en naar AEM as a Cloud Service migratie van de Dispatcher-configuratie van AMS naar
 
 ## Verzendgereedschappen {#dispatcher-sdk}
 
-De Dispatcher Tools maken deel uit van de algemene AEM als Cloud Service SDK en verstrekken:
+De Dispatcher Tools maken deel uit van de algemene AEM as a Cloud Service SDK en bieden:
 
 * Een vanilla-bestandsstructuur met de configuratiebestanden die moeten worden opgenomen in een toegewezen project voor Dispatcher.
-* Tooling voor klanten om te bevestigen dat de configuratie van de Verzender slechts AEM als Cloud Service gesteunde richtlijnen omvat.        Bovendien controleert het gereedschap ook of de syntaxis correct is, zodat de pijn correct kan beginnen.
+* Tooling voor klanten om te bevestigen dat de configuratie van de Verzender slechts AEM as a Cloud Service gesteunde richtlijnen omvat.        Bovendien controleert het gereedschap ook of de syntaxis correct is, zodat de pijn correct kan beginnen.
 * Een Docker-afbeelding waarmee de Dispatcher lokaal wordt weergegeven.
 
 ## De gereedschappen downloaden en uitpakken {#extracting-the-sdk}
 
-De Dispatcher Tools, onderdeel van [AEM als Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), kunnen van een ZIP dossier bij [de portal van de Distributie van de Software worden gedownload ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools kan worden gebruikt om te worden geïmplementeerd in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
+De Dispatcher-gereedschappen maken deel uit van de [as a Cloud Service SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), kan worden gedownload van een ZIP-bestand op het [Softwaredistributie](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portaal. Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools kan worden gebruikt om te worden geïmplementeerd in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
 
-Pak de SDK uit, die de Dispatcher Tools voor zowel MacOS, Linux als Windows bundelt.
+Pak de SDK uit, die de Dispatcher Tools voor zowel macOS, Linux als Windows bundelt.
 
-**Voor MacOS/Linux** moet u het artefact van het gereedschap Dispatcher uitvoeren en uitvoeren. De Dispatcher Tools-bestanden worden automatisch geëxtraheerd onder de map waarin u het hebt opgeslagen (waarbij `version` de versie van de Dispatcher Tools is).
+**Voor macOS/Linux**, maakt u het artefact van het gereedschap Dispatcher uitvoerbaar en voert u dit uit. De Dispatcher Tools-bestanden worden automatisch geëxtraheerd onder de map waarin u het hebt opgeslagen (waar `version` is de versie van de Dispatcher Tools).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -44,17 +44,17 @@ Verifying archive integrity...  100%   All good.
 Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**Voor Windows** pakt u het ZIP-archief van Dispatcher Tooling uit.
+**Voor Windows**, haalt u het ZIP-archief van Dispatcher Tooling uit.
 
 ## Validatie en foutopsporing met de Dispatcher Tools {#validation-debug}
 
 De dispatcherhulpmiddelen worden gebruikt om de configuratie van de Verzender van uw project te bevestigen en te zuiveren. Leer meer over hoe te om die hulpmiddelen op de pagina&#39;s te gebruiken die hieronder worden vermeld, op basis van of de de vraagersconfiguratie van uw project op flexibele wijze of erfeniswijze gestructureerd is:
 
-* **Flexibele modus** : de aanbevolen modus en de standaard voor  [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) en hoger, die ook wordt gebruikt door Cloud Manager voor nieuwe omgevingen die na de release Cloud Manager 2021.7.0 zijn gemaakt. Klanten kunnen deze modus activeren door de map en het bestand `opt-in/USE_SOURCES_DIRECTLY` toe te voegen. Door deze flexibelere modus te gebruiken, zijn er geen beperkingen in de bestandsstructuur onder de map rewrites die in de oude modus slechts één `rewrite.rules` bestand nodig had. Bovendien is er geen beperking op het aantal regels dat u kunt toevoegen. Zie [Validatie en foutopsporing met behulp van Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md) voor meer informatie over de mapstructuur en lokale validatie.
+* **Flexibele modus** - de aanbevolen modus en de standaardinstelling voor [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) en hoger, die ook wordt gebruikt door Cloud Manager voor nieuwe omgevingen die zijn gemaakt na de release van Cloud Manager 2021.7.0. Klanten kunnen deze modus activeren door de map en het bestand toe te voegen `opt-in/USE_SOURCES_DIRECTLY`. Door deze flexibelere modus te gebruiken, zijn er geen beperkingen in de bestandsstructuur onder de map rewrites waarvoor in de oude modus slechts één bestand nodig was `rewrite.rules` bestand. Bovendien is er geen beperking op het aantal regels dat u kunt toevoegen. Zie voor meer informatie over de mapstructuur en lokale validatie [Validatie en foutopsporing met Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md).
 
-* **Verouderde modus** : zie  [Validatie en foutopsporing met de Dispatcher-gereedschappen (verouderd) voor meer informatie over de mapstructuur en lokale validatie voor de verouderde modus van de verzenderconfiguratie.](/help/implementing/dispatcher/validation-debug-legacy.md)
+* **Oudere modus** - voor details over de omslagstructuur en lokale bevestiging voor de verouderde wijze van de configuratie van de verzender [Validatie en foutopsporing met Dispatcher Tools (verouderd)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
-Voor meer informatie over hoe te om van het model van de erfenisconfiguratie aan flexibelere te migreren, die van AEM archetype 28 wordt voorzien, zie [deze documentatie](/help/implementing/dispatcher/validation-debug.md#migrating).
+Voor meer informatie over hoe te van het model van de erfenisconfiguratie aan flexibelere te migreren, die van AEM archetype 28 wordt voorzien, zie [deze documentatie](/help/implementing/dispatcher/validation-debug.md#migrating).
 
 ## Ondersteunde Apache-modules {#supported-directives}
 
@@ -103,8 +103,8 @@ Allowlisted directives:
 
 ## Mapstructuur {#folder-structure}
 
-De mappenstructuur van de applaus en de verzender van het project verschilt enigszins, afhankelijk van de modus die het project gebruikt, zoals beschreven in de sectie [Validatie en foutopsporing met de sectie Verzender Tools](#validation-debug) hierboven.
+De mappenstructuur van de applaus en de verzender van het project verschilt enigszins, afhankelijk van de modus die het project gebruikt, zoals beschreven in het dialoogvenster [Validatie en foutopsporing met de Dispatcher Tools](#validation-debug) hierboven.
 
 ## De Dispatcher-configuratie migreren van AMS {#ams-aem}
 
-Voor details op hoe te om de configuratie van de Ontvanger van AMS aan AEM als Cloud Service te migreren, zie [Migrating de configuratie van de Ontvanger van AMS aan AEM](/help/implementing/dispatcher/ams-aem.md) als Cloud Service pagina.
+Voor meer informatie over hoe u de configuratie Dispatcher van AMS naar AEM as a Cloud Service kunt migreren, raadpleegt u de [De Dispatcher-configuratie migreren van AMS naar AEM](/help/implementing/dispatcher/ams-aem.md) as a Cloud Service pagina.

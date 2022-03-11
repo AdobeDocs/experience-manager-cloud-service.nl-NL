@@ -1,43 +1,42 @@
 ---
 title: Het vormen Segmentatie met ContextHub
 description: Leer hoe te om segmentatie te vormen gebruikend ContextHub.
-translation-type: tm+mt
-source-git-commit: c9c7176f6c3bf70529b761183341a2490d4ecbfc
+exl-id: fbc38611-dbee-426e-b823-df64b6730c45
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 0%
 
 ---
 
-
 # Het vormen Segmentatie met ContextHub{#configuring-segmentation-with-contexthub}
 
-Segmentering is een belangrijke overweging bij het maken van een campagne. Zie [Segmentatie](segmentation.md) voor informatie over hoe de segmentatie en zeer belangrijke termijnen werkt.
+Segmentering is een belangrijke overweging bij het maken van een campagne. Zie [Segmentering begrijpen](segmentation.md) voor informatie over hoe de segmentatie werkt en zeer belangrijke termijnen.
 
 Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstellingen hebt verzameld u wilt bereiken, zult u de segmenten en de strategieën nodig voor uw gerichte inhoud moeten bepalen.
 
-Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. [De hier gedefinieerde ](activities.md) activiteiten kunnen op elke pagina worden opgenomen en definiëren voor welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
+Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. [Activiteiten](activities.md) Hier gedefinieerd kan op elke pagina worden opgenomen en definiëren voor welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 
 AEM kunt u de ervaringen van uw gebruikers eenvoudig aanpassen. Het staat u ook toe om de resultaten van uw segmentdefinities te verifiëren.
 
-## Segmenten {#accessing-segments} openen
+## Segmenten openen {#accessing-segments}
 
-De console [Soorten publiek](audiences.md) wordt gebruikt om segmenten voor ContextHub evenals publiek voor uw rekening van Adobe Target te beheren. Deze documentatie behandelt het beheren van segmenten voor ContextHub.
+De [Soorten publiek](audiences.md) console wordt gebruikt om segmenten voor ContextHub evenals publiek voor uw rekening van Adobe Target te beheren. Deze documentatie behandelt het beheren van segmenten voor ContextHub.
 
-Als u toegang wilt krijgen tot uw segmenten, selecteert u **Navigatie > Aanpassing aan persoonlijke voorkeur > Soorten publiek**.
+Om tot uw segmenten toegang te hebben, in globale navigatie selecteer **Navigation > Personalisatie > Soorten publiek**.
 
 ![Het publiek beheren](../assets/contexthub-segmentation-audiences.png)
 
 ## Segmenteditor {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-Met de **Segmenteditor** kunt u een segment gemakkelijk wijzigen. Als u een segment wilt bewerken, selecteert u een segment in de lijst met segmenten en klikt u op de knop **Bewerken**.
+De **Segmenteditor** kunt u een segment gemakkelijk wijzigen. Als u een segment wilt bewerken, selecteert u een segment in de lijst met segmenten en klikt u op de knop **Bewerken** knop.
 
 ![Segment-editor](../assets/contexthub-segment-editor.png)
 
-Met behulp van de componentenbrowser kunt u **AND** en **OF** containers toevoegen om de segmentlogica te bepalen, dan extra componenten toevoegen om eigenschappen en waarden of verwijzingsmanuscripten en andere segmenten te vergelijken om de selectiecriteria (zie [Creërend een Nieuw Segment ](#creating-a-new-segment)) te bepalen om het nauwkeurige scenario voor het selecteren van het segment te bepalen.
+Met de componentenbrowser kunt u toevoegen **EN** en **OF** containers om de segmentlogica te bepalen, dan voeg extra componenten toe om eigenschappen en waarden of verwijzingsmanuscripten en andere segmenten te vergelijken om de selectiecriteria te bepalen (zie [Een nieuw segment maken](#creating-a-new-segment)) om het exacte scenario voor het selecteren van het segment te bepalen.
 
-Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelost. Als meerdere segmenten van toepassing zijn, wordt ook de **Boost**-factor gebruikt. Zie [Een nieuw segment maken](#creating-a-new-segment) voor meer informatie over de versterkingsfactor.
+Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelost. Wanneer meerdere segmenten van toepassing zijn, dan **Verhogen** wordt ook gebruikt. Zie [Een nieuw segment maken](#creating-a-new-segment) voor meer informatie over de stimulerende factor.
 
 >[!CAUTION]
 >
@@ -45,7 +44,7 @@ Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelos
 
 ### Containers {#containers}
 
-De volgende containers zijn beschikbaar uit-van-de-doos en staan u toe om vergelijkingen en verwijzingen samen te groeperen voor booleaanse evaluatie. U kunt deze vanuit de componentbrowser naar de editor slepen. Zie de volgende sectie [Using AND and OR Containers](#using-and-and-or-containers) voor meer informatie.
+De volgende containers zijn beschikbaar uit-van-de-doos en staan u toe om vergelijkingen en verwijzingen samen te groeperen voor booleaanse evaluatie. U kunt deze vanuit de componentbrowser naar de editor slepen. Zie de volgende sectie [AND en OR-containers gebruiken](#using-and-and-or-containers) voor meer informatie .
 
 |  |  |
 |---|---|
@@ -70,9 +69,9 @@ De volgende segmentvergelijkingen zijn beschikbaar uit-van-de-doos om segmenteig
 >
 >`null < 30 // will return true`
 >
->Daarom wanneer [creërend een segment](#creating-a-new-segment), zou u **gegevenstype** moeten selecteren wanneer de types van vergeleken waarden gekend zijn. Bijvoorbeeld:
+>Daarom [een segment maken](#creating-a-new-segment)selecteert u een **gegevenstype** wanneer de typen van de vergeleken waarden bekend zijn. Bijvoorbeeld:
 >
->Wanneer u de eigenschap `profile/age` vergelijkt, weet u al dat het vergeleken type **number** zal zijn, dus zelfs als `profile/age` niet is ingesteld, zal een vergelijking `profile/age` minder-dan 30 **false** terugkeren, zoals u zou verwachten.
+>Bij vergelijking van de eigenschap `profile/age`, weet u reeds dat het vergeleken type zal zijn **getal**, zelfs als `profile/age` is niet ingesteld, een vergelijking `profile/age` minder dan 30 wordt geretourneerd **false**, zoals u zou verwachten.
 
 ### Verwijzingen {#references}
 
@@ -81,19 +80,19 @@ De volgende verwijzingen zijn beschikbaar uit-van-de-doos om rechtstreeks met ee
 |  |  |
 |---|---|
 | Segmentverwijzing | Evalueer het referenced segment |
-| Scriptreferentie | Evalueer het referenced manuscript. Zie de volgende sectie [Scriptverwijzingen gebruiken](#using-script-references) voor meer informatie. |
+| Scriptreferentie | Evalueer het referenced manuscript. Zie de volgende sectie [Scriptverwijzingen gebruiken](#using-script-references) voor meer informatie . |
 
 ## Een nieuw segment maken {#creating-a-new-segment}
 
 Het nieuwe segment definiëren:
 
-1. Na [het toegang hebben tot van de segmenten](#accessing-segments), [navigeer aan de omslag](#organizing-segments) waar u het segment zou willen tot stand brengen, of het in de wortel verlaten.
+1. Na [toegang krijgen tot de segmenten](#accessing-segments), [naar de map navigeren](#organizing-segments) waar u het segment wilt creëren, of het in de wortel verlaten.
 
-1. Tik of klik op de knop **Maken** en selecteer **ContextHub Segment maken**.
+1. Tik of klik op de knop **Maken** en selecteert u **ContextHub-segment maken**.
 
    ![Segment toevoegen](../assets/contexthub-create-segment.png)
 
-1. In **Nieuw Segment ContextHub**, ga een titel voor het segment evenals een verhogingswaarde indien nodig in en tik of klik dan **Create**.
+1. In de **Nieuw ContextHub-segment** Voer een titel voor het segment in en geef indien nodig een ophaalwaarde op en tik of klik op **Maken**.
 
    ![Nieuw segment](../assets/contexthub-new-segment.png)
 
@@ -108,12 +107,12 @@ Het nieuwe segment definiëren:
 
    ![Testen op mensen in Bazel](../assets/contexthub-comparing-property-value.png)
 
-   Stel indien mogelijk altijd een **Gegevenstype** in om ervoor te zorgen dat uw vergelijkingen correct worden geëvalueerd. Zie [Vergelijkingen](#comparisons) voor meer informatie.
+   Altijd een **Gegevenstype** indien mogelijk om ervoor te zorgen dat uw vergelijkingen correct worden geëvalueerd. Zie [Vergelijkingen](#comparisons) voor meer informatie .
 
-1. Klik **Done** om uw definitie op te slaan:
-1. Voeg desgewenst meer componenten toe. U kunt booleaanse expressies formuleren met behulp van de containercomponenten voor AND en OR vergelijkingen (zie [Using AND and Or Containers](#using-and-and-or-containers) hieronder). Met de segmentredacteur kunt u componenten schrappen niet meer nodig, of hen slepen aan nieuwe posities binnen de verklaring.
+1. Klikken **Gereed** om uw definitie op te slaan:
+1. Voeg desgewenst meer componenten toe. U kunt booleaanse expressies formuleren met behulp van de containercomponenten voor AND en OR vergelijkingen (zie [en/of containers gebruiken](#using-and-and-or-containers) hieronder). Met de segmentredacteur kunt u componenten schrappen niet meer nodig, of hen slepen aan nieuwe posities binnen de verklaring.
 
-### AND en OR containers {#using-and-and-or-containers} gebruiken
+### AND en OR-containers gebruiken {#using-and-and-or-containers}
 
 Gebruikend EN en OF containercomponenten, kunt u complexe segmenten in AEM construeren. Hierbij is het nuttig om op een aantal basispunten te letten:
 
@@ -140,9 +139,9 @@ U kunt meerdere AND- en OR-operatoren naar wens nesten.
 
 Door de component van de Verwijzing van het Manuscript te gebruiken, kan de evaluatie van een segmentbezit aan een extern manuscript worden afgevaardigd. Zodra het manuscript behoorlijk wordt gevormd, kan het als een andere component van een segmentvoorwaarde worden gebruikt.
 
-#### Een script definiëren naar verwijzing {#defining-a-script-to-reference}
+#### Een script definiëren als naslaggids {#defining-a-script-to-reference}
 
-1. Voeg bestand toe aan clientlib `contexthub.segment-engine.scripts`.
+1. Bestand toevoegen aan `contexthub.segment-engine.scripts` clientlib.
 1. Voer een functie uit die een waarde terugkeert. Bijvoorbeeld:
 
    ```javascript
@@ -174,34 +173,34 @@ Door de component van de Verwijzing van het Manuscript te gebruiken, kan de eval
    })();
    ```
 
-1. Registreer het script met `ContextHub.SegmentEngine.ScriptManager.register`.
+1. Script registreren met `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Als het manuscript van extra eigenschappen afhangt, zou het manuscript `this.dependOn()` moeten roepen. Als het script bijvoorbeeld afhankelijk is van `profile/age`:
+Als het script afhankelijk is van aanvullende eigenschappen, moet het script `this.dependOn()`. Als het script bijvoorbeeld afhankelijk is van `profile/age`:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 ```
 
-#### Naar een script {#referencing-a-script} verwijzen
+#### Naar een script verwijzen {#referencing-a-script}
 
 1. Maak een ContextHub-segment.
-1. Voeg **Script Reference** toe component in de gewenste plaats van het segment.
-1. Open het bewerkingsdialoogvenster van de **Scriptreferentie**-component. Als [correct gevormd](#defining-a-script-to-reference), zou het manuscript in **de drop-down** manuscriptnaam moeten beschikbaar zijn.
+1. Toevoegen **Scriptreferentie** op de gewenste plaats van het segment.
+1. Het dialoogvenster Bewerken van het dialoogvenster **Scriptreferentie** component. Indien [correct geconfigureerd](#defining-a-script-to-reference), moet het script beschikbaar zijn in het dialoogvenster **Scriptnaam** vervolgkeuzelijst.
 
-## Segmenten {#organizing-segments} ordenen
+## Segmenten ordenen {#organizing-segments}
 
 Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte lijst. In dergelijke gevallen kan het handig zijn om mappen te maken voor het beheer van uw segmenten.
 
-### Nieuwe map maken {#create-folder}
+### Een nieuwe map maken {#create-folder}
 
-1. Nadat u [de segmenten hebt geopend](#accessing-segments), klikt of tikt u op de knop **Maken** en selecteert u **Map**.
+1. Na [toegang krijgen tot de segmenten](#accessing-segments), klikt u of tikt u op **Maken** en selecteert u **Map**.
 
    ![Map toevoegen](../assets/contexthub-create-segment.png)
 
-1. Geef een **Titel** en een **Naam** op voor uw map.
-   * De **Titel** zou beschrijvend moeten zijn.
+1. Een **Titel** en **Naam** voor uw map.
+   * De **Titel** moeten beschrijvend zijn.
    * De **Naam** wordt de knooppuntnaam in de repository.
-      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast volgens de naamconventies [AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Het wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
       * Deze kan zo nodig worden aangepast.
 
    ![Map maken](../assets/contexthub-create-folder.png)
@@ -217,13 +216,13 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
 ### Bestaande mappen wijzigen {#modify-folders}
 
-1. Nadat u [de segmenten hebt geopend](#accessing-segments), klikt of tikt u op de map die u wilt wijzigen om deze te selecteren.
+1. Na [toegang krijgen tot de segmenten](#accessing-segments), klikt of tikt op de map die u wilt wijzigen om deze te selecteren.
 
    ![Map selecteren](../assets/contexthub-select-folder.png)
 
 1. Tik of klik op **Naam wijzigen** in de werkbalk om de naam van de map te wijzigen.
 
-1. Geef een nieuwe **Maptitel** op en tik of klik op **Opslaan**.
+1. Nieuwe **Maptitel** tikken of klikken **Opslaan**.
 
    ![Naam map wijzigen](../assets/contexthub-rename-folder.png)
 
@@ -233,24 +232,24 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
 ### Een map verwijderen
 
-1. Nadat u [de segmenten hebt geopend](#accessing-segments), klikt of tikt u op de map die u wilt wijzigen om deze te selecteren.
+1. Na [toegang krijgen tot de segmenten](#accessing-segments), klikt of tikt op de map die u wilt wijzigen om deze te selecteren.
 
    ![Map selecteren](../assets/contexthub-select-folder.png)
 
-1. Tik of klik op **Delete** in de werkbalk om de map te verwijderen.
+1. Tik of klik op **Verwijderen** in de werkbalk om de map te verwijderen.
 
 1. Een dialoogvenster bevat een lijst met mappen die zijn geselecteerd om te worden verwijderd.
 
    ![Verwijderen bevestigen](../assets/contexthub-confirm-segment-delete.png)
 
-   * Tik of klik op **Verwijderen** om te bevestigen.
+   * Tik of klik op **Verwijderen** ter bevestiging.
    * Tik of klik op **Annuleren** om af te breken.
 
 1. Als een van de geselecteerde mappen submappen of segmenten bevat, moet de verwijdering ervan worden bevestigd.
 
    ![Verwijderen van kinderen bevestigen](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tik of klik **Verwijder** forceren om te bevestigen.
+   * Tik of klik op **Verwijderen forceren** ter bevestiging.
    * Tik of klik op **Annuleren** om af te breken.
 
 >[!NOTE]
@@ -259,7 +258,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
 ## De toepassing van een segment testen {#testing-the-application-of-a-segment}
 
-Zodra het segment is bepaald, kunnen de potentiële resultaten met de hulp van **[ContextHub](contexthub.md) worden getest.**
+Zodra het segment is bepaald, kunnen de potentiële resultaten met de hulp van worden getest **[ContextHub](contexthub.md).**
 
 1. Een voorvertoning van een pagina weergeven
 1. Klik het pictogram ContextHub om de toolbar te openbaren ContextHub
@@ -280,7 +279,7 @@ Of indien deze niet is opgelost:
 
 Dergelijke tests kunnen ook worden uitgevoerd op inhoudspagina&#39;s en in combinatie met gerichte inhoud en verwante **Activiteiten** en **Ervaringen**.
 
-Als u een activiteit en ervaring hebt ingesteld, kunt u uw segment gemakkelijk testen met de activiteit. Zie de verwante [documentatie over het ontwerpen van doelinhoud](targeted-content.md) voor meer informatie over het instellen van een activiteit.
+Als u een activiteit en ervaring hebt ingesteld, kunt u uw segment gemakkelijk testen met de activiteit. Voor meer informatie over het instellen van een activiteit raadpleegt u de verwante [documentatie over het ontwerpen van gerichte inhoud](targeted-content.md).
 
 1. In de bewerkingsmodus van een pagina waarop u doelinhoud hebt ingesteld, ziet u dat de inhoud als doel is ingesteld via het pijlpictogram op de inhoud.
 1. De schakelaar aan voorproefwijze en het gebruiken van de contexthub, schakelaar aan een persoon die niet de segmentatie aanpast die voor de ervaring wordt gevormd.
@@ -288,4 +287,4 @@ Als u een activiteit en ervaring hebt ingesteld, kunt u uw segment gemakkelijk t
 
 ## Uw segment gebruiken {#using-your-segment}
 
-Segmenten worden gebruikt om de werkelijke inhoud te bepalen die door specifieke doelgroepen wordt gezien. Zie [Soorten publiek beheren](audiences.md) voor meer informatie over soorten publiek en segmenten en [Doelinhoud ontwerpen](targeted-content.md) over het gebruik van soorten publiek en segmenten om inhoud te bepalen.
+Segmenten worden gebruikt om de werkelijke inhoud te bepalen die door specifieke doelgroepen wordt gezien. Zie [Soorten publiek beheren](audiences.md) voor meer informatie over doelgroepen en segmenten en [Doelinhoud ontwerpen](targeted-content.md) over het gebruik van soorten publiek en segmenten om inhoud als doel in te stellen.

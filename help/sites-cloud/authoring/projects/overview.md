@@ -11,18 +11,18 @@ ht-degree: 9%
 
 # Projecten {#projects}
 
-Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Tegels. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere types van informatie omvatten, zoals die in detail in [Projecttegels worden beschreven.](#project-tiles)
+Projects let you group resources into one entity. A common, shared environment makes it easy to manage your projects. The types of resources you can associate with a project are referred to in AEM as Tiles. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere soorten informatie omvatten, zoals die in detail wordt beschreven [Projectblokken.](#project-tiles)
 
 >[!CAUTION]
 >
->Voor gebruikers in projecten om andere gebruikers/groepen te zien terwijl het gebruiken van de functionaliteit van Projecten zoals het creëren van projecten, het creëren van taken/werkschema&#39;s, het zien van en het beheren van het team, die gebruikers moeten lees toegang op `/home/users` en `/home/groups` hebben. De eenvoudigste manier om dit te implementeren is om de groep **projects-users** leestoegang te geven tot `/home/users` en `/home/groups`.
+>Voor gebruikers in projecten om andere gebruikers/groepen te zien terwijl het gebruiken van de functionaliteit van Projecten zoals het creëren van projecten, het creëren van taken/werkschema&#39;s, het zien en het leiden van het team, moeten die gebruikers gelezen toegang hebben op `/home/users` en `/home/groups`. De eenvoudigste manier om dit te implementeren is om de **projecten-gebruikers** groep lees toegang tot `/home/users` en `/home/groups`.
 
 Als gebruiker kunt u het volgende doen:
 
-* Projecten maken
+* Create projects
 * Inhoud en elementmappen aan een project koppelen
-* Projecten verwijderen
-* Inhoudskoppelingen uit project verwijderen
+* Delete projects
+* Remove content links from project
 
 Zie de volgende aanvullende onderwerpen:
 
@@ -30,21 +30,21 @@ Zie de volgende aanvullende onderwerpen:
 * [Werken met taken](/help/sites-cloud/authoring/projects/tasks.md)
 * [Werken met projectworkflows](/help/sites-cloud/authoring/projects/workflows.md)
 
-## Projectconsole {#projects-console}
+## Projects Console {#projects-console}
 
-De projectenconsole is waar u tot uw projecten binnen AEM toegang hebt en leidt.
+The projects console is where you access and manage your projects within AEM.
 
 ![De projectenconsole](/help/sites-cloud/authoring/assets/projects-console.png)
 
-* Selecteer **Tijdlijn** en dan een project om zijn chronologie te bekijken.
-* Klik/tik **Selecteer** om de selectiemodus in te schakelen.
-* Klik **Maken** om projecten toe te voegen.
-* **Met Actieve** projecties in- en uitschakelen kunt u schakelen tussen alle projecten en alleen de actieve projecten.
-* **Toon de** Kijken van de Statistieken u projectstatistieken betreffende taakvoltooiing zien.
+* Selecteren **Tijdlijn** en vervolgens een project om de bijbehorende tijdlijn weer te geven.
+* Klikken/tikken **Selecteren** om naar de selectiemodus te gaan.
+* Klikken **Maken** om projecten toe te voegen.
+* **Actieve projecten schakelen** Hiermee kunt u schakelen tussen alle projecten en alleen projecten die actief zijn.
+* **Statistische weergave tonen** laat u projectstatistieken over taakvoltooiing zien.
 
 ## Projectblokken {#project-tiles}
 
-Met Projecten, associeert u verschillende soorten informatie met uw projecten. Deze worden **Tegels** genoemd. Elk van de tegels en het soort informatie dat ze bevatten, wordt in deze sectie beschreven.
+Met Projecten, associeert u verschillende soorten informatie met uw projecten. Deze worden **Tegels**. Elk van de tegels en het soort informatie dat ze bevatten, wordt in deze sectie beschreven.
 
 Aan uw project kunnen de volgende tegels zijn gekoppeld. Elk wordt beschreven in de volgende secties:
 
@@ -61,7 +61,7 @@ Aan uw project kunnen de volgende tegels zijn gekoppeld. Elk wordt beschreven in
 
 ### Assets {#assets}
 
-In de **Elementen** tegel, kunt u alle activa verzamelen die u voor een bepaald project gebruikt.
+In de **Activa** U kunt alle elementen verzamelen die u voor een bepaald project gebruikt.
 
 ![Elementen](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
@@ -71,23 +71,23 @@ U uploadt elementen rechtstreeks in de tegel. Daarnaast kunt u Afbeeldingssets, 
 
 ### Asset Collections {#asset-collections}
 
-Net als bij elementen kunt u [verzamelingen van middelen](/help/assets/manage-collections.md) rechtstreeks aan uw project toevoegen. U definieert verzamelingen in elementen.
+Similar to assets, you can add [asset collections](/help/assets/manage-collections.md) directly to your project. You define collections in Assets.
 
-![Verzameling van middelen](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
+![Asset collection](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
 Voeg een verzameling toe door op **Verzameling toevoegen** te klikken en de juiste verzameling in de lijst te selecteren.
 
 ### Ervaringen {#experiences}
 
-Met de tegel **Ervaring** kunt u een mobiele app, website of publicatie aan het project toevoegen.
+De **Ervaringen** Met een tegel kunt u een mobiele app, website of publicatie aan het project toevoegen.
 
 ![Ervaringen](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-De pictogrammen geven aan welke ervaring wordt weergegeven: website, mobiele applicatie of een publicatie. Voeg ervaringen toe door te tikken of te klikken op de knop Omlaag en te tikken **Ervaring toevoegen** en het type ervaring te selecteren.
+De pictogrammen geven aan welke ervaring wordt weergegeven: website, mobiele applicatie of een publicatie. Ervaringen toevoegen door te tikken of te klikken op de knop Omlaag en tikken **Ervaring toevoegen** en het type ervaring te selecteren.
 
 ![Een ervaring toevoegen](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
-Selecteer het pad voor de miniaturen en wijzig, indien van toepassing, de miniatuur voor de ervaring. Ervaringen worden gegroepeerd in de tegel **Ervaring**.
+Selecteer het pad voor de miniaturen en wijzig, indien van toepassing, de miniatuur voor de ervaring. De ervaringen worden gegroepeerd in de **Ervaringen** tegel.
 
 ### Koppelingen {#links}
 
@@ -99,39 +99,39 @@ U kunt de koppeling een naam geven die gemakkelijk herkenbaar is en u kunt de mi
 
 ![Koppeling toevoegen](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
-### Projectinfo {#project-info}
+### Project Info {#project-info}
 
-De tegel Projectinformatie bevat algemene informatie over het project, zoals een beschrijving, projectstatus (inactief of actief), een vervaldatum en leden. Bovendien kunt u een projectduimnagel toevoegen, die op de belangrijkste pagina van Projecten wordt getoond.
+De tegel Projectinformatie bevat algemene informatie over het project, zoals een beschrijving, projectstatus (inactief of actief), een vervaldatum en leden. In addition, you can add a project thumbnail, which is displayed on the main Projects page.
 
 ![Projectinfo](/help/sites-cloud/authoring/assets/project-info.png)
 
-De leden van het team kunnen van deze tegel (of hebben hun rollen veranderd) evenals de tegel van het Team worden toegewezen en worden geschrapt.
+Team members can be assigned and deleted from this tile (or have their roles changed) as well as the Team tile.
 
 ![Teamleden toevoegen aan project](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 ### Vertaaltaak {#translation-job}
 
-In de tegel Vertaal-taak begint u een vertaling en ziet u ook de status van uw vertalingen. Zie [Vertaalprojecten maken](/help/assets/translate-assets.md) om uw vertaling in te stellen.
+In de tegel Vertaal-taak begint u een vertaling en ziet u ook de status van uw vertalingen. Ga voor meer informatie over het instellen van de vertaling naar [Vertaalprojecten maken](/help/assets/translate-assets.md).
 
 ![Vertaaltaak](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Klik op de ellips onder aan de kaart **Vertaaltaak** om de elementen in de vertaalworkflow weer te geven. In de lijst met vertaaltaken worden ook items voor metagegevens en tags van elementen weergegeven. Deze vermeldingen geven aan dat de metagegevens en tags voor de elementen ook worden vertaald.
+Klik op de ellips onder aan het dialoogvenster **Vertaaltaak** kaart om de middelen in de vertaalwerkstroom te bekijken. In de lijst met vertaaltaken worden ook items voor metagegevens en tags van elementen weergegeven. Deze vermeldingen geven aan dat de metagegevens en tags voor de elementen ook worden vertaald.
 
 ![Detail vertaaltaak](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
 ### Team {#team}
 
-In deze tegel, kunt u de leden van het projectteam specificeren. Wanneer het uitgeven, kunt u de naam van het teamlid ingaan en de gebruikersrol toewijzen.
+In deze tegel, kunt u de leden van het projectteam specificeren. When editing, you can enter the name of the team member and assign the user role.
 
-![Teamtegel](/help/sites-cloud/authoring/assets/projects-team-tile.png)
+![Team tile](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
-U kunt teamleden toevoegen en verwijderen uit het team. Bovendien kunt u [gebruikersrol](#user-roles-in-a-project) uitgeven die aan het teamlid wordt toegewezen.
+U kunt teamleden toevoegen en verwijderen uit het team. Daarnaast kunt u de opdracht [gebruikersrol](#user-roles-in-a-project) toegewezen aan het teamlid.
 
 ![Team toevoegen uit lijst](/help/sites-cloud/authoring/assets/projects-add-team-list.png)
 
 ### Workflows {#workflows}
 
-U kunt uw project toewijzen om bepaalde workflows te volgen. Als om het even welke werkschema&#39;s lopen, toont hun status in **de tegel van Werkstromen** in Projecten.
+U kunt uw project toewijzen om bepaalde workflows te volgen. Als er workflows actief zijn, wordt de status van deze workflows weergegeven in het dialoogvenster **Workflows** tegel in projecten.
 
 ![Workflows](/help/sites-cloud/authoring/assets/project-workflows.png)
 
@@ -141,13 +141,13 @@ Deze worden beschreven in [Werken met projectworkflows.](/help/sites-cloud/autho
 
 ### Lanceringen {#launches}
 
-De tegel van Lanceringen toont om het even welke lanceringen die met een [werkschema van de Lancering van het Verzoek zijn gevraagd.](/help/sites-cloud/authoring/projects/workflows.md)
+In de tegel Startpagina worden alle opstarten weergegeven die zijn aangevraagd met een [Verzoek indienen om workflow te starten.](/help/sites-cloud/authoring/projects/workflows.md)
 
 ![Lanceringen](/help/sites-cloud/authoring/assets/project-launches.png)
 
 ### Taken {#tasks}
 
-Met Taken kunt u de status van projectgerelateerde taken, waaronder workflows, controleren. De taken worden behandeld in detail bij [Werken met Taken](/help/sites-cloud/authoring/projects/tasks.md).
+Met Taken kunt u de status van projectgerelateerde taken, waaronder workflows, controleren. Taken worden in detail besproken op [Werken met taken](/help/sites-cloud/authoring/projects/tasks.md).
 
 ![Taken](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
@@ -157,7 +157,7 @@ AEM schepen met drie verschillende sjablonen uit de doos:
 
 * Een eenvoudig project - een referentiemonster voor alle projecten die niet in andere categorieën passen (een &#39;catch-all&#39;-project). Het omvat drie basisrollen (Eigenaars, Editors, en Waarnemers) en vier werkschema&#39;s (de Goedkeuring van het Project, de Lancering van het Verzoek, de Pagina van het Aanbrengen van het Verzoek en E-mail van het Verzoek).
 * Een mediaproject - een referentiemonsteringsproject voor aan media gerelateerde activiteiten. Het omvat verscheidene media verwante projectrollen (Fotografen, Editors, Copywriters, Ontwerpers, Eigenaars en Waarnemers). Het vraagt ook om een Copy-workflow om tekst aan te vragen en te bekijken.
-* A [translatieproject](/help/sites-cloud/administering/translation/overview.md) - Een referentiemonster voor het beheer van activiteiten met betrekking tot vertalingen. Het omvat drie basisrollen (Eigenaars, Editors, en Waarnemers). Het omvat twee werkschema&#39;s die in het gebruikersinterface van Workflows worden betreden.
+* A [vertaalproject](/help/sites-cloud/administering/translation/overview.md) - Een referentiemonster voor het beheer van activiteiten in verband met vertaling. Het omvat drie basisrollen (Eigenaars, Editors, en Waarnemers). Het omvat twee werkschema&#39;s die in het gebruikersinterface van Workflows worden betreden.
 
 Gebaseerd op het malplaatje u selecteert, hebt u verschillende opties beschikbaar aan u met name rond gebruikersrollen en werkschema&#39;s.
 
@@ -174,7 +174,7 @@ Alle projecten steunen de volgende standaardrollen om u veiligheid en controleto
 |---|---|---|---|
 | Waarnemer | Een gebruiker in deze rol kan projectdetails, met inbegrip van de projectstatus bekijken. | Alleen-lezen machtigingen voor een project | `workflow-users` groep |
 | Editor | Een gebruiker met deze rol kan de inhoud van een project uploaden en bewerken. | Lees en schrijf toegang op een project, bijbehorende meta-gegevens, en verwante activa; rechten om een opnamelijst te uploaden en elementen te controleren en goed te keuren; schrijfmachtigingen voor /etc/commerce; machtiging wijzigen voor een specifiek project | werkstroom-gebruikersgroep |
-| Eigenaar | Een gebruiker met deze rol kan een project initiëren. Een eigenaar kan een project tot stand brengen, het werk in een project in werking stellen, en ook goedgekeurde activa naar de omslag van de Productie verplaatsen. Hoewel alle andere taken in het project ook door de eigenaar kunnen worden bekeken en worden uitgevoerd. | Schrijfmachtigingen op `/etc/commerce` | `dam-users` groep (om een project te kunnen tot stand brengen) project-beheerders groep (om tot een project te kunnen leiden en activa te bewegen) |
+| Eigenaar | Een gebruiker met deze rol kan een project initiëren. Een eigenaar kan een project tot stand brengen, het werk in een project in werking stellen, en ook goedgekeurde activa naar de omslag van de Productie verplaatsen. Hoewel alle andere taken in het project ook door de eigenaar kunnen worden bekeken en worden uitgevoerd. | Schrijfmachtiging ingeschakeld `/etc/commerce` | `dam-users` groep (om een project te kunnen tot stand brengen) project-beheerders groep (om tot een project te kunnen leiden en activa te bewegen) |
 
 >[!NOTE]
 >

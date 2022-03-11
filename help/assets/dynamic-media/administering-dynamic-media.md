@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Dynamic Media instellen {#setting-up-dynamic-media}
 
-[Met Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media kunt u elementen beheren door op aanvraag rijke visuele marketing- en marketingmiddelen te leveren die automatisch worden geschaald voor gebruik op internet, mobiele en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helpt u bedrijfsmiddelen te beheren door op verzoek rijke visuele marketing- en marketingmiddelen te leveren, die automatisch worden geschaald voor consumptie op internet, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -41,5 +41,5 @@ Zie ook de volgende onderwerpen:
 >
 >**Als u een upgrade uitvoert:**
 >
->* Nadat u Adobe [!DNL Experience Manager] in gebruik hebt, wordt Dynamic Media automatisch ingeschakeld voor elk element dat u uploadt (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u op een geüpgrade exemplaar van [!DNL Experience Manager] en nieuw voor Dynamic Media bent, moet u waarschijnlijk uw activa opnieuw verwerken om hen Dynamic Media-Toegelaten te maken. Zie [Elementen opnieuw verwerken in een map](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Nadat u Adobe hebt [!DNL Experience Manager] Als de bestanden die u uploadt actief zijn, wordt Dynamic Media automatisch ingeschakeld (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u op een bevorderd geval van bent [!DNL Experience Manager] en die je nog niet in Dynamic Media hebt, moet je waarschijnlijk je middelen opnieuw verwerken om ze voor Dynamic Media geschikt te maken. Zie [Elementen in een map opnieuw verwerken](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 

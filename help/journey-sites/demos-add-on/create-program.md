@@ -1,13 +1,13 @@
 ---
 title: Programma maken
 description: Leer hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op op te stellen.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 06287618-0328-40b1-bba8-84002283f23f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
 
 ---
-
 
 # Programma maken {#creating-a-program}
 

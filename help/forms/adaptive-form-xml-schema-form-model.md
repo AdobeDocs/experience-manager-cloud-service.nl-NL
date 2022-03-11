@@ -165,7 +165,6 @@ U kunt de volgende kenmerken toevoegen aan de elementen van het XML-schema om sp
 >
 >* Het eerste teken van de elementnaam omzetten in hoofdletters
 >* Witruimte invoegen bij grenzen van camelhoofdletters.
-
 >
 >Als u bijvoorbeeld de opdracht `userFirstName` schema-element, het bijschrift dat in het adaptieve formulier wordt gegenereerd, is `User First Name`.
 

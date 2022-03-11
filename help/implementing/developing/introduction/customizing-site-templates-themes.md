@@ -3,13 +3,13 @@ title: Sitesjablonen en -thema's aanpassen
 description: Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructuur en de initiële inhoud vooraf te definiëren en hoe thema's worden gebruikt om de sitestijl te definiëren waarmee u snel sites kunt maken.
 feature: Administering
 role: Admin
-source-git-commit: 0babdc80421c8a2a4be55d005884475dcebeda84
+exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 1%
 
 ---
-
 
 # Sitesjablonen en -thema&#39;s aanpassen {#customizing-site-templates-themes}
 

@@ -1,22 +1,22 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.7.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.7.0
-feature: Geen informatie
+title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2020.7.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2020.7.0
+feature: Release Information
 exl-id: b5ac4dd4-18c6-4867-b2df-53711555007f
 source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '309'
 ht-degree: 1%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2020.7.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.7.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2020.7.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2020.7.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.7.0 is 9 juli 2020.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2020.7.0 is 9 juli 2020.
 
 ## Wat is er nieuw? {#whats-new-cloud-manager}
 
@@ -28,7 +28,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.7.0 is 9 juli 2
 
 * De pijpleidingen van de Manager van de wolk steunen nu klant-vastgestelde variabelen en geheimen.
 
-   Zie de Variabelen van de Pijpleiding voor meer details.
+   Raadpleeg de pijplijnvariabelen voor meer informatie.
 
 * Verificatie-gebonden Private Maven Repositories worden nu ondersteund.
 
@@ -41,7 +41,7 @@ Raadpleeg Ondersteuning voor Java 11 gebruiken voor meer informatie.
 
 * De koppeling naar de ontwikkelaarsconsole rechtstreeks vanuit Cloud Manager gaf de optie voor het dehiberneren/hberneren van de omgeving van een Sandbox-programma niet weer.
 
-* De opties **Annuleren** en **Opslaan** op de bewerkingspagina Niet-productiepijplijn zijn niet altijd zichtbaar.
+* De **Annuleren** en **Opslaan** op de pagina Bewerken van niet-productiepijpleiding zijn niet altijd opties weergegeven.
 
 * Bepaalde fouten in het proces van de codekwaliteit kunnen ertoe leiden dat het logbestand niet correct wordt gegenereerd.
 
@@ -55,4 +55,4 @@ Raadpleeg Ondersteuning voor Java 11 gebruiken voor meer informatie.
 
 ### Bekende problemen {#known-issues}
 
-* Als gevolg van een wijziging in de manier waarop de codedekking wordt berekend, is de *minimum*-versie van de Jacoco-plug-in nu 0.7.5.201505241946 (uitgebracht in mei 2015). Klanten die expliciet verwijzen naar een oudere versie ontvangen een foutbericht in het proces voor de kwaliteit van de code.
+* Als gevolg van een wijziging in de manier waarop de codedekking wordt berekend, wordt de *minimum* De versie van de Jacoco-plug-in is nu 0.7.5.201505241946 (uitgebracht in mei 2015). Klanten die expliciet verwijzen naar een oudere versie ontvangen een foutbericht in het proces voor de kwaliteit van de code.

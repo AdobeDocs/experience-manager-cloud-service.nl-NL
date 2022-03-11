@@ -11,11 +11,11 @@ ht-degree: 1%
 
 # Uw inhoud bijwerken via AEM Assets API&#39;s {#update-your-content}
 
-In dit deel van [AEM Headless Developer Journey,](overview.md) leert u hoe u de REST API kunt gebruiken om de inhoud van uw Content Fragments te openen en bij te werken.
+In dit deel van het [AEM Headless Developer Journey,](overview.md) Leer hoe u de REST API kunt gebruiken om de inhoud van de Content Fragments te openen en bij te werken.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM headless reis, [How to Access Your Content via AEM Delivery APIs](access-your-content.md) leerde u hoe te om tot uw inhoud zonder kop in AEM via AEM GraphQL API toegang te hebben en u zou nu moeten:
+In het vorige document van de AEM zonder kop: [Hoe te om tot Uw Inhoud via AEM levering APIs toegang te hebben](access-your-content.md) U hebt geleerd hoe u toegang krijgt tot inhoud zonder kop in AEM via de AEM GraphQL API en u moet nu:
 
 * Heb een inzicht op hoog niveau van GraphQL.
 * Begrijp hoe de AEM GraphQL API werkt.
@@ -26,7 +26,7 @@ Dit artikel bouwt verder op deze basisbeginselen, zodat u begrijpt hoe u bestaan
 ## Doelstelling {#objective}
 
 * **Publiek**: Geavanceerd
-* **Doel**: Leer hoe u de REST API kunt gebruiken om de inhoud van de inhoudsfragmenten te openen en bij te werken:
+* **Doelstelling**: Leer hoe u de REST API kunt gebruiken om de inhoud van de inhoudsfragmenten te openen en bij te werken:
    * Introduceer de AEM Assets HTTP API.
    * Introduceer en bespreek de ondersteuning voor inhoudsfragmenten in de API.
    * Details van de API illustreren.
@@ -41,9 +41,9 @@ In het vorige stadium van de Headless Reis, leerde u over het gebruiken van AEM 
 
 Waarom is er dus nog een API nodig?
 
-Met de HTTP-API voor middelen kunt u uw inhoud **Lezen**, maar u kunt ook **Maken**, **Bijwerken** en **Verwijderen** inhoud - handelingen uitvoeren die niet mogelijk zijn met de API GraphQL.
+Met de HTTP-API voor middelen kunt u **Lezen** uw inhoud, maar u kunt ook **Maken**, **Bijwerken** en **Verwijderen** content - handelingen die niet mogelijk zijn met de GraphQL API.
 
-De REST-API voor middelen is beschikbaar voor elke installatie van een recente Adobe Experience Manager as a Cloud Service-versie die buiten de box valt.
+De REST API voor middelen is beschikbaar voor elke installatie van een recente Adobe Experience Manager as a Cloud Service-versie die buiten de box valt.
 
 ## HTTP-API voor assets {#assets-http-api}
 
@@ -52,7 +52,7 @@ De HTTP-API voor Middelen omvat:
 * REST-API voor middelen
 * inclusief ondersteuning voor inhoudsfragmenten
 
-De huidige implementatie van de Elementen HTTP API is gebaseerd op de **REST** architecturale stijl en laat u toe om tot inhoud (opgeslagen in AEM) via **CRUD** verrichtingen (creeer, Lees, Update, Schrapping) toegang te hebben.
+De huidige implementatie van de HTTP-API voor middelen is gebaseerd op de **REST** architecturale stijl en biedt toegang tot inhoud (opgeslagen in AEM) via **CRUD** bewerkingen (Maken, Lezen, Bijwerken, Verwijderen).
 
 Met deze bewerking kunt u met de API Adobe Experience Manager as a Cloud Service gebruiken als een headless CMS (Content Management System) door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken. Toepassingen voor één pagina (SPA), die zijn gebaseerd op een framework of die zijn aangepast, vereisen bijvoorbeeld inhoud die via een API wordt aangeboden, vaak in JSON-indeling.
 
@@ -209,34 +209,34 @@ Associated content is currently not exposed.
 
 ### Toegang {#access}
 
-De REST API van Activa gebruikt het `/api/assets` eindpunt en vereist de weg van de activa om tot het toegang te hebben (zonder belangrijke `/content/dam`).
+De REST-API voor middelen gebruikt de `/api/assets` eindpunt en vereist de weg van de activa om tot het toegang te hebben (zonder het leiden `/content/dam`).
 
 * Dit betekent dat toegang tot het actief moet worden verkregen tegen:
    * `/content/dam/path/to/asset`
 * U moet een aanvraag indienen:
    * `/api/assets/path/to/asset`
 
-Als u bijvoorbeeld toegang wilt krijgen tot `/content/dam/wknd/en/adventures/cycling-tuscany`, vraagt u `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Bijvoorbeeld om `/content/dam/wknd/en/adventures/cycling-tuscany`, verzoek `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >Toegang over:
 >
->* `/api/assets` **U** hoeft de  `.model` kiezer niet te gebruiken.
->* `/content/path/to/page` **** vereist het gebruik van de  `.model` kiezer.
+>* `/api/assets` **niet** het gebruik van de `.model` kiezer.
+>* `/content/path/to/page` **doet** het gebruik van de `.model` kiezer.
 
 
 ### Bewerking {#operation}
 
 De HTTP-methode bepaalt de uit te voeren bewerking:
 
-* **GET** - om een JSON-representatie van een element of map op te halen
+* **GET** - om een JSON-representatie van een middel of een map op te halen
 * **POST** - om nieuwe elementen of mappen te maken
 * **PUT** - om de eigenschappen van een middel of een omslag bij te werken
 * **DELETE** - om een middel of een omslag te schrappen
 
 >[!NOTE]
 >
->De verzoeklichaam en/of parameters URL kunnen worden gebruikt om sommige van deze verrichtingen te vormen; Stel bijvoorbeeld dat een map of een element moet worden gemaakt door een **POST**-verzoek.
+>De verzoeklichaam en/of parameters URL kunnen worden gebruikt om sommige van deze verrichtingen te vormen; moet u bijvoorbeeld definiëren dat een map of element moet worden gemaakt met een **POST** verzoek.
 
 De exacte indeling van ondersteunde aanvragen wordt gedefinieerd in de API-naslagdocumentatie.
 
@@ -251,11 +251,11 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 
 >[!CAUTION]
 >
->De configuratie van de verzender op AEM wolkeninstanties zou toegang tot `/api` kunnen blokkeren.
+>De configuratie van de verzender op AEM wolkeninstanties zou toegang tot kunnen blokkeren `/api`.
 
 >[!NOTE]
 >
->Zie de API-naslaggids voor meer informatie. Met name [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>Zie de API-naslaggids voor meer informatie. Met name: [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### Lezen/Levering {#read-delivery}
 
@@ -280,7 +280,7 @@ Gebruik gebeurt via:
 
 `POST /{cfParentPath}/{cfName}`
 
-De hoofdtekst moet een JSON-representatie bevatten van het inhoudsfragment dat moet worden gemaakt, inclusief de initiële inhoud die moet worden ingesteld op de elementen van het inhoudsfragment. Het is verplicht om de eigenschap `cq:model` in te stellen en deze moet verwijzen naar een geldig inhoudsfragmentmodel. Als u dit niet doet, treedt er een fout op. Er moet ook een koptekst `Content-Type` worden toegevoegd die is ingesteld op `application/json`.
+De hoofdtekst moet een JSON-representatie bevatten van het inhoudsfragment dat moet worden gemaakt, inclusief de initiële inhoud die moet worden ingesteld op de elementen van het inhoudsfragment. Het is verplicht de `cq:model` en moet verwijzen naar een geldig inhoudsfragmentmodel. Als u dit niet doet, treedt er een fout op. Er moet ook een koptekst worden toegevoegd `Content-Type` die is ingesteld op `application/json`.
 
 ### Bijwerken {#update}
 
@@ -318,7 +318,7 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-U zou uw AEM onophoudelijke reis moeten voortzetten door het document [te herzien hoe te met Uw Zwaarloze Toepassing ](go-live.md) gaan waar u werkelijk uw AEM Zwaardeloos project neemt levend!
+U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Hoe u met uw headless toepassing kunt gaan werken](go-live.md) waar je je AEM Headless project live neemt!
 
 ## Aanvullende bronnen {#additional-resources}
 

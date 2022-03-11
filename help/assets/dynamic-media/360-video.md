@@ -21,16 +21,16 @@ Met de 360/VR-videoviewer kunt u rechthoekige video renderen. Het resultaat is e
 
 Ruimtelijke audio wordt momenteel niet ondersteund. als audio in stereo wordt gemengd, verandert de balans (L/R) niet aangezien de klant de kijkhoek van de camera verandert.
 
-Zie [Dynamic Media 360-video&#39;s en aangepaste videominiatuur gebruiken met AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
+Zie [Dynamic Media 360-video&#39;s en aangepaste videominiatuur gebruiken voor AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
 
 Zie ook [Viewer-voorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ## 360 Video in actie {#video-in-action}
 
-Selecteer [Ruimtestation 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) om een browservenster te openen en een video van 360° te bekijken. Tijdens het afspelen van video sleept u de aanwijzer naar een nieuwe locatie om de weergavehoek te wijzigen.
+Selecteren [Ruimtestation 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) om een browservenster te openen en een video van 360° te bekijken. Tijdens het afspelen van video sleept u de aanwijzer naar een nieuwe locatie om de weergavehoek te wijzigen.
 
-![360 Video ](assets/6_5_360videoiss_simplified.png)
-*sampleVideo frame van Space Station 360*
+![360 Videovoorbeeld](assets/6_5_360videoiss_simplified.png)
+*Videoframe vanaf Space Station 360*
 
 ## 360/VR-video en Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
@@ -40,10 +40,10 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
 
 ## Elementen uploaden voor gebruik met de 360-videoviewer {#uploading-assets-for-use-with-the-video-viewer}
 
-360 video-elementen die naar [!DNL Experience Manager] worden geüpload, krijgen het label **Multimedia** op een elementenpagina, vergelijkbaar met normaal video-element.
+360 video-elementen die worden geüpload naar [!DNL Experience Manager] worden gelabeld als **Multimedia** op een elementpagina, vergelijkbaar met normaal video-element.
 
-![6_5_360video-](assets/6_5_360video-selecttopreview.png)
-*selectto previewEen geüploade 360 video-element in de kaartweergave. Het element is gelabeld als Multimedia.*
+![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
+*Een geüpload videoelement dat 360 pixels bevat die in de kaartweergave worden weergegeven. Het element wordt aangeduid als Multimedia.*
 
 **Elementen uploaden voor gebruik met de 360 Video-viewer:**
 
@@ -58,7 +58,7 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
 
       * 1080p - 1920 x 1080, bekend als Full HD- of FHD-resolutie of,
       * 2160p - 3840 x 2160, bekend als 4k, UHD of Ultra HD-resolutie. Deze grote weergaveresolutie wordt meestal aangetroffen op hoogwaardige televisies en computermonitoren. De resolutie van 2160p wordt vaak &#39;4k&#39; genoemd omdat de breedte dichtbij 4000 pixels ligt. Met andere woorden, het biedt vier keer de pixels van 1080p.
-   * [Maak een aangepast adaptief videoprofiel ](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) met uitvoeringen van hogere kwaliteit. U kunt bijvoorbeeld een adaptief videoprofiel maken dat de volgende drie instellingen bevat:
+   * [Een aangepast adaptief videoprofiel maken](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) met uitvoeringen van hogere kwaliteit. U kunt bijvoorbeeld een adaptief videoprofiel maken dat de volgende drie instellingen bevat:
 
       * Breedte=automatisch; Hoogte=720; Bitsnelheid=2500 kbps
       * Breedte=automatisch; Height=1080; Bitsnelheid=5000 kbps
@@ -67,7 +67,7 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
 
    Deze benadering plaatst grotere eisen op het netwerk en cpu van het eind - gebruiker.
 
-1. [Upload uw video naar de map](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+1. [Uw video uploaden naar de map](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
 <!--
 
@@ -99,41 +99,41 @@ Zie ook [Viewer-voorinstellingen bewerken](/help/assets/dynamic-media/managing-v
 Als u tevreden bent met de 360-video, kunt u deze publiceren.
 
 Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
-Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met [!DNL Experience Manager Sites] pagina&#39;s heeft.
+Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met heeft [!DNL Experience Manager Sites] pagina&#39;s.
 Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **Een voorvertoning van 360 video&#39;s weergeven:**
 
-1. Navigeer in **[!UICONTROL Assets]** naar een bestaande 360-video die u hebt gemaakt. Selecteer het 360 Video-element om het element te openen in de voorvertoningsmodus.
+1. In **[!UICONTROL Assets]** navigeer naar een bestaande 360-video die u hebt gemaakt. Selecteer het 360 Video-element om het element te openen in de voorvertoningsmodus.
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
    Selecteer het 360-video-element om een voorvertoning van de video weer te geven.
 
-1. Selecteer op de voorvertoningspagina, linksboven op de pagina, de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers]**.
+1. Selecteer op de voorvertoningspagina, linksboven op de pagina, de vervolgkeuzelijst en selecteer vervolgens **[!UICONTROL Viewers]**.
 
    ![6_5_360video-voorvertoning-viewers](assets/6_5_360video-preview-viewers.png)
 
-   Selecteer **[!UICONTROL Video360_social]** in de lijst Viewers en voer een van de volgende handelingen uit:
+   Selecteer in de lijst Viewers de optie **[!UICONTROL Video360_social]** Voer vervolgens een van de volgende handelingen uit:
 
    * Als u de kijkhoek van de statische scène wilt wijzigen, sleept u de aanwijzer over de video.
-   * Selecteer de knop **[!UICONTROL Play]** van de video om met afspelen te beginnen. Terwijl de video wordt afgespeeld, sleept u de aanwijzer over de video om de kijkhoek te wijzigen.
+   * Selecteer de video&#39;s om het afspelen te starten **[!UICONTROL Play]** knop. Terwijl de video wordt afgespeeld, sleept u de aanwijzer over de video om de kijkhoek te wijzigen.
 
-   ![6_5_360video-voorvertoning-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360 videoscreenshot.*
+   ![6_5_360video-voorvertoning-video360-social ](assets/6_5_360video-preview-video360-social.png)*Een schermafbeelding van 360 pixels.*
 
-   * Selecteer **[!UICONTROL Video360VR]** in de lijst Viewers.
+   * Selecteer in de lijst Viewers de optie **[!UICONTROL Video360VR]**.
 
       VR-video (Virtual Reality) is overweldigende video-inhoud die wordt benaderd met headsets van virtuele realiteit. Net als bij gewone video&#39;s maakt u aan het begin VR-video&#39;s wanneer een video wordt opgenomen of vastgelegd met videocamera&#39;s van 360°.
    ![6_5_360video-voorvertoning-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Een videoschermafbeelding van 360 VR.*
 
-1. Selecteer **[!UICONTROL Close]** rechtsboven op de voorvertoningspagina.
+1. Rechtsboven op de voorvertoningspagina selecteert u **[!UICONTROL Close]**.
 
 ## 360-video publiceren {#publishing-video}
 
 Als u 360-video wilt gebruiken, moet u deze publiceren. Wanneer u een 360-video publiceert, wordt de URL en de insluitcode geactiveerd. Het publiceert ook de 360 Video aan de wolk van Dynamic Media die met een CDN voor scalable en prestatieslevering geïntegreerd is.
 
-Zie [Dynamic Media Assets publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van 360 Video.
-Zie ook [Video of Afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
-Zie ook [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met [!DNL Experience Manager Sites] pagina&#39;s heeft.
+Zie [Dynamic Media-middelen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van 360-video.
+Zie ook [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
+Zie ook [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met heeft [!DNL Experience Manager Sites] pagina&#39;s.
 Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).

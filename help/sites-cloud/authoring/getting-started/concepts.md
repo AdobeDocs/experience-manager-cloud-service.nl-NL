@@ -1,14 +1,13 @@
 ---
 title: Authoring van concepten
 description: Concepten van ontwerpen in AEM
-translation-type: tm+mt
-source-git-commit: 92434d0dc29ac5fe1b395a2d34c8e48e2fdb7c97
+exl-id: ee9e4952-e075-4398-b31f-d7886153efff
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 1%
 
 ---
-
 
 # Authoring van concepten {#authoring-concepts}
 
@@ -30,7 +29,7 @@ In de auteursomgeving wordt de functionaliteit van AEM beschikbaar gesteld door 
 
 ## Auteursomgeving {#author-environment}
 
-De auteur werkt in wat als **auteursomgeving** wordt bekend. Dit verstrekt een makkelijk te gebruiken interface (grafische gebruikersinterface (GUI of UI)) voor het creëren van de inhoud. De auteur moet zich aanmelden met een account waaraan de juiste toegangsrechten zijn toegewezen.
+De auteur werkt in wat bekend staat als de **auteursomgeving**. Dit verstrekt een makkelijk te gebruiken interface (grafische gebruikersinterface (GUI of UI)) voor het creëren van de inhoud. De auteur moet zich aanmelden met een account waaraan de juiste toegangsrechten zijn toegewezen.
 
 >[!NOTE]
 >
@@ -53,12 +52,12 @@ Daarnaast zijn er beheertaken die u helpen uw inhoud te beheren:
 >
 >AEM wordt ook vanuit de auteursomgeving beheerd.
 
-## Omgeving {#publish-environment} publiceren
+## Publicatie-omgeving {#publish-environment}
 
 Als de inhoud van uw site gereed is, wordt deze gepubliceerd naar de **publicatieomgeving**. Hier worden de pagina&#39;s van de website beschikbaar gemaakt voor het beoogde publiek, in overeenstemming met de vormgeving van de ontworpen interface.
 
-Zie het document [Pagina&#39;s publiceren.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
+Zie het document voor meer informatie over het publiceren en ongedaan maken van de publicatie van pagina&#39;s [Pagina&#39;s publiceren.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
 
-## Verzending {#dispatcher}
+## Dispatcher {#dispatcher}
 
-Om de prestaties voor bezoekers van uw website te optimaliseren, implementeert de **[dispatcher](/help/implementing/dispatcher/overview.md)** taakverdeling en caching.
+Om de prestaties voor bezoekers van uw website te optimaliseren, **[verzender](/help/implementing/dispatcher/overview.md)** implementeert taakverdeling en caching.

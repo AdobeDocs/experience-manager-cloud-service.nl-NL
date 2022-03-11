@@ -1,5 +1,5 @@
 ---
-title: Het gebruiken van de Verzameling van Middel in Adobe Experience Manager als Cloud Service
+title: Het gebruiken van de Verzameling van Middel in Adobe Experience Manager as a Cloud Service
 description: De het Verdelen Samenvoeging van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
@@ -15,71 +15,70 @@ ht-degree: 1%
 
 Sling Resource Merger verleent de diensten om tot middelen toegang te hebben en samen te voegen. Het verstrekt afdiff (differentiërende) mechanismen voor allebei:
 
-* **[Bedekkingen](/help/implementing/developing/introduction/overlays.md)** van bronnen die gebruikmaken van de  [zoekpaden](/help/implementing/developing/introduction/overlays.md#search-paths).
+* **[Bedekkingen](/help/implementing/developing/introduction/overlays.md)** van middelen die [zoekpaden](/help/implementing/developing/introduction/overlays.md#search-paths).
 
-* **Overschrijving** van componentendialogen voor touch-enabled UI (`cq:dialog`), gebruikend de hiërarchie van het middeltype (door het bezit  `sling:resourceSuperType`).
+* **Overschrijvingen** van componentdialoogvensters voor de interface met aanraakbediening (`cq:dialog`), met behulp van de hiërarchie van het middeltype (via de eigenschap `sling:resourceSuperType`).
 
 Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getreden middelen en/of de eigenschappen samengevoegd met de originele middelen/eigenschappen:
 
-* De inhoud van de aangepaste definitie heeft een hogere prioriteit dan die van het origineel (d.w.z. het *overlays* of *overschrijft* het).
+* De inhoud van de aangepaste definitie heeft een hogere prioriteit dan die van het origineel (d.w.z. *bedekkingen* of *overschrijvingen* het).
 
-* Indien nodig geven [eigenschappen](#properties) die in de aanpassing zijn gedefinieerd, aan hoe inhoud die uit het origineel is samengevoegd, moet worden gebruikt.
+* Indien nodig [eigenschappen](#properties) Geef aan hoe inhoud die is samengevoegd met het origineel, moet worden gebruikt.
 
 >[!CAUTION]
 >
->De Sling Resource Merger en verwante methodes kunnen slechts met aanraking-toegelaten UI worden gebruikt (die enige UI voor AEM als Cloud Service beschikbaar is).
+>De Sling Resource Merger en verwante methodes kunnen slechts met aanraking-toegelaten UI worden gebruikt (die enige UI beschikbaar voor AEM as a Cloud Service is).
 
 ### Doelen voor AEM {#goals-for-aem}
 
 De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel in AEM zijn:
 
-* zorgen ervoor dat aanpassingen niet worden aangebracht in `/libs`.
-* vermindert de structuur die van `/libs` wordt herhaald.
+* ervoor zorgen dat er geen wijzigingen in de aanpassing worden aangebracht in `/libs`.
+* de structuur reduceren waarvan een replicatie wordt uitgevoerd `/libs`.
 
-   Wanneer het gebruiken van de Verzameling van het Middel wordt het niet geadviseerd om de volledige structuur van `/libs` te kopiëren aangezien dit in teveel informatie zou resulteren die in de aanpassing (gewoonlijk `/apps`) wordt gehouden. Het dupliceren van informatie vergroot onnodig de kans op problemen wanneer het systeem op om het even welke manier wordt verbeterd.
+   Wanneer het gebruiken van de Verzameling van het Middel wordt het niet geadviseerd om de volledige structuur van te kopiëren `/libs` aangezien dit zou leiden tot te veel informatie in de aanpassing (gewoonlijk `/apps`). Het dupliceren van informatie vergroot onnodig de kans op problemen wanneer het systeem op om het even welke manier wordt verbeterd.
 
 >[!CAUTION]
 >
->U ***must*** verandert niets in `/libs` weg.
+>U ***moet*** niets wijzigen in de `/libs` pad.
 >
->Dit komt doordat de inhoud van `/libs` kan worden overschreven wanneer upgrades op uw instantie worden toegepast.
+>Dit komt omdat de inhoud van `/libs` kan worden overschreven wanneer upgrades op uw exemplaar worden toegepast.
 >
 >* Bedekkingen zijn afhankelijk van [zoekpaden](/help/implementing/developing/introduction/overlays.md#search-paths).
 >
->* Overschrijvingen zijn niet afhankelijk van de zoekpaden, maar maken de verbinding met de eigenschap `sling:resourceSuperType`.
-
+>* Overschrijvingen zijn niet afhankelijk van de zoekpaden, ze gebruiken de eigenschap `sling:resourceSuperType` om de verbinding te maken.
 >
->Overschrijvingen worden echter vaak gedefinieerd onder `/apps`, aangezien de beste praktijken in AEM als Cloud Service aanpassingen onder `/apps` moeten bepalen; Dit komt omdat u niets onder `/libs` moet veranderen.
+>Overschrijvingen worden echter vaak gedefinieerd onder `/apps`, aangezien de beste praktijken in AEM as a Cloud Service is aanpassingen te bepalen onder `/apps`; omdat je niets mag veranderen onder `/libs`.
 
 ### Eigenschappen {#properties}
 
 De resourcefusie biedt de volgende eigenschappen:
 
-* `sling:hideProperties` (  `String` of  `String[]`)
+* `sling:hideProperties` ( `String` of `String[]`)
 
    Geeft de eigenschap op, of een lijst met eigenschappen, die moet worden verborgen.
 
-   Alle jokertekens worden verborgen.`*`
+   Het jokerteken `*` verbergt alles.
 
 * `sling:hideResource` ( `Boolean`)
 
    Geeft aan of de bronnen volledig verborgen moeten zijn, inclusief de onderliggende elementen.
 
-* `sling:hideChildren` (  `String` of  `String[]`)
+* `sling:hideChildren` ( `String` of `String[]`)
 
    Bevat het onderliggende knooppunt of de lijst met onderliggende knooppunten die moet worden verborgen. De eigenschappen van het knooppunt blijven behouden.
 
-   Alle jokertekens worden verborgen.`*`
+   Het jokerteken `*` verbergt alles.
 
-* `sling:orderBefore` (  `String`)
+* `sling:orderBefore` ( `String`)
 
    Bevat de naam van de sibling knoop die de huidige knoop voor van zou moeten worden geplaatst.
 
-Deze eigenschappen beïnvloeden hoe de overeenkomstige/originele middelen/eigenschappen (van `/libs`) door de bekleding/de opheffing (vaak in `/apps`) worden gebruikt.
+Deze eigenschappen beïnvloeden hoe de overeenkomstige/originele middelen/eigenschappen (van `/libs`) worden gebruikt door de bedekking/overschrijving (vaak in `/apps`).
 
 ### De structuur maken {#creating-the-structure}
 
-Als u een bedekking wilt maken of overschrijven, moet u het oorspronkelijke knooppunt opnieuw maken, met de equivalente structuur, onder het doel (gewoonlijk `/apps`). Bijvoorbeeld:
+Als u een bedekking wilt maken of overschrijven, moet u het oorspronkelijke knooppunt opnieuw maken, met de equivalente structuur, onder de bestemming (gewoonlijk `/apps`). Bijvoorbeeld:
 
 * Bedekking
 
@@ -91,7 +90,7 @@ Als u een bedekking wilt maken of overschrijven, moet u het oorspronkelijke knoo
 
       `/apps/cq/core/content/nav/sites`
 
-      Werk vervolgens de eigenschap `jcr:title` naar wens bij.
+      Vervolgens werkt u de eigenschap bij `jcr:title` zoals vereist.
 
 * Negeren
 
@@ -103,7 +102,7 @@ Als u een bedekking wilt maken of overschrijven, moet u het oorspronkelijke knoo
 
       `/apps/the-project/components/text/cq:dialog`
 
-Als u een van deze opties wilt maken, hoeft u alleen de skeletstructuur opnieuw te maken. Om de recreatie van de structuur te vereenvoudigen kunnen alle intermediaire knopen van type `nt:unstructured` zijn (zij moeten niet het originele knooptype weerspiegelen; bijvoorbeeld in `/libs`).
+Als u een van deze opties wilt maken, hoeft u alleen de skeletstructuur opnieuw te maken. Om de recreatie van de structuur te vereenvoudigen kunnen alle intermediaire knopen van type zijn `nt:unstructured` (zij hoeven niet op het oorspronkelijke knooppunttype te wijzen; bijvoorbeeld in `/libs`).
 
 In het bovenstaande overlayvoorbeeld zijn dus de volgende knooppunten nodig:
 
@@ -118,7 +117,7 @@ In het bovenstaande overlayvoorbeeld zijn dus de volgende knooppunten nodig:
 
 >[!NOTE]
 >
->Bij gebruik van de samenvoeging van het Verspreide Middel (d.w.z. wanneer het behandelen van de norm, aanraking-toegelaten UI) wordt het niet geadviseerd om de volledige structuur van `/libs` te kopiëren aangezien het in teveel informatie zou resulteren die in `/apps` wordt gehouden. Dit kan problemen veroorzaken wanneer het systeem op om het even welke manier wordt bevorderd.
+>Wanneer u de samenvoeging van de slingerende bron gebruikt (d.w.z. wanneer u werkt met de standaard, interface met aanraakbediening), wordt het niet aanbevolen om de volledige structuur te kopiëren van `/libs` omdat het zou leiden tot te veel informatie in `/apps`. Dit kan problemen veroorzaken wanneer het systeem op om het even welke manier wordt bevorderd.
 
 ### Gevallen gebruiken {#use-cases}
 
@@ -126,38 +125,38 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
 
 * **Een eigenschap toevoegen**
 
-   De eigenschap bestaat niet in de `/libs`-definitie, maar is vereist in de `/apps`-bedekking/overschrijving.
+   De eigenschap bestaat niet in het dialoogvenster `/libs` , maar is vereist in de `/apps` bedekking/overschrijving.
 
    1. Maak het corresponderende knooppunt binnen `/apps`
    1. Maak de nieuwe eigenschap op dit knooppunt &quot;
 
 * **Een eigenschap opnieuw definiëren (geen automatisch gemaakte eigenschappen)**
 
-   De eigenschap wordt gedefinieerd in `/libs`, maar er is een nieuwe waarde vereist in de `/apps`-bedekking/overschrijving.
+   De eigenschap wordt gedefinieerd in `/libs`, maar in de `/apps` bedekking/overschrijving.
 
    1. Maak het corresponderende knooppunt binnen `/apps`
-   1. De overeenkomende eigenschap op dit knooppunt maken (onder / `apps`)
+   1. Maak de overeenkomende eigenschap op dit knooppunt (onder / `apps`)
 
       * Het bezit zal een prioriteit hebben die op de het Verspreiden configuratie van de Resolver van het Middel wordt gebaseerd.
       * Het wijzigen van het type eigenschap wordt ondersteund.
 
-         Als u een bezitstype gebruikt verschillend aan die in `/libs` wordt gebruikt, dan zal het bezitstype u bepaalt worden gebruikt.
+         Als u een ander type eigenschap gebruikt dan het type dat wordt gebruikt in `/libs`Vervolgens wordt het door u gedefinieerde type eigenschap gebruikt.
    >[!NOTE]
    >
    >Het wijzigen van het type eigenschap wordt ondersteund.
 
 * **Een automatisch gemaakte eigenschap opnieuw definiëren**
 
-   Door gebrek, auto-gecreeerde eigenschappen (zoals `jcr:primaryType`) zijn niet onderworpen aan een bedekking/opheffing om ervoor te zorgen dat het knooptype momenteel onder `/libs` wordt geëerbiedigd. Als u een bedekking/overschrijving wilt toepassen, moet u het knooppunt opnieuw maken in `/apps`, moet u de eigenschap expliciet verbergen en opnieuw definiëren:
+   Automatisch gemaakte eigenschappen (zoals `jcr:primaryType`) niet onderworpen zijn aan een bedekking/overschrijving om ervoor te zorgen dat het knooptype dat momenteel onder `/libs` wordt nageleefd. Als u een bedekking/overschrijving wilt toepassen, moet u het knooppunt opnieuw maken in `/apps`, de eigenschap expliciet verbergen en opnieuw definiëren:
 
-   1. Maak het corresponderende knooppunt onder `/apps` met de gewenste `jcr:primaryType`
-   1. Maak de eigenschap `sling:hideProperties` op dat knooppunt, met de waarde ingesteld op die van de eigenschap auto-created; bijvoorbeeld `jcr:primaryType`
+   1. Maak het corresponderende knooppunt onder `/apps` met het gewenste `jcr:primaryType`
+   1. De eigenschap maken `sling:hideProperties` op dat knooppunt, met de waarde ingesteld op die van de eigenschap auto-created; bijvoorbeeld: `jcr:primaryType`
 
-      Deze eigenschap, gedefinieerd onder `/apps`, krijgt nu prioriteit boven de eigenschap gedefinieerd onder `/libs`
+      Deze eigenschap, gedefinieerd onder `/apps`, zal nu voorrang krijgen boven de in `/libs`
 
 * **Een knooppunt en de onderliggende knooppunten opnieuw definiëren**
 
-   De knoop en zijn kinderen worden bepaald in `/libs`, maar een nieuwe configuratie wordt vereist in `/apps` bedekking/opheffing.
+   De knoop en zijn kinderen worden bepaald in `/libs`, maar in de `/apps` bedekking/overschrijving.
 
    1. Combineer de handelingen van:
 
@@ -166,10 +165,10 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
 
 * **Een eigenschap verbergen**
 
-   De eigenschap wordt gedefinieerd in `/libs`, maar is niet vereist in de `/apps`-overlay/>.
+   De eigenschap wordt gedefinieerd in `/libs`, maar niet vereist in de `/apps` bedekking/overschrijving.
 
    1. Maak het corresponderende knooppunt binnen `/apps`
-   1. Maak een eigenschap `sling:hideProperties` van het type `String` of `String[]`. Met deze optie geeft u de eigenschappen op die moeten worden verborgen of genegeerd. Jokertekens kunnen ook worden gebruikt. Bijvoorbeeld:
+   1. Een eigenschap maken `sling:hideProperties` van het type `String` of `String[]`. Met deze optie geeft u de eigenschappen op die moeten worden verborgen of genegeerd. Jokertekens kunnen ook worden gebruikt. Bijvoorbeeld:
 
       * `*`
       * `["*"]`
@@ -178,37 +177,37 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
 
 * **Een knooppunt en de onderliggende knooppunten verbergen**
 
-   Het knooppunt en de onderliggende knooppunten worden gedefinieerd in `/libs`, maar zijn niet vereist in de `/apps`-overlay/>.
+   De knoop en zijn kinderen worden bepaald in `/libs`, maar niet vereist in de `/apps` bedekking/overschrijving.
 
    1. Het corresponderende knooppunt maken onder /apps
-   1. Een eigenschap `sling:hideResource` maken
+   1. Een eigenschap maken `sling:hideResource`
 
       * type: `Boolean`
       * value: `true`
 
 * **Onderliggende items van een knooppunt verbergen (terwijl de eigenschappen van het knooppunt behouden blijven)**
 
-   De knoop, zijn eigenschappen en zijn kinderen worden bepaald in `/libs`. Het knooppunt en zijn eigenschappen zijn vereist in de `/apps`-bedekking/overschrijving, maar sommige of alle onderliggende knooppunten zijn niet vereist in de `/apps`-bedekking/overschrijving.
+   De knoop, zijn eigenschappen en zijn kinderen worden bepaald in `/libs`. Het knooppunt en de eigenschappen ervan zijn vereist in het dialoogvenster `/apps` bedekken/overschrijven, maar sommige of alle onderliggende knooppunten zijn niet vereist in de `/apps` bedekking/overschrijving.
 
    1. Maak het corresponderende knooppunt onder `/apps`
-   1. Maak de eigenschap `sling:hideChildren`:
+   1. De eigenschap maken `sling:hideChildren`:
 
       * type: `String[]`
-      * waarde: een lijst met onderliggende knooppunten (zoals gedefinieerd in `/libs`) die moeten worden verborgen of genegeerd
+      * waarde: een lijst met onderliggende knooppunten (zoals gedefinieerd in `/libs`) om te verbergen/negeren
 
-      Jokerteken&amp;ast; kan worden gebruikt om alle onderliggende knooppunten te verbergen/te negeren.
+      Jokerteken&amp;st; kan worden gebruikt om alle onderliggende knooppunten te verbergen/te negeren.
 
 
 * **Knooppunten opnieuw ordenen**
 
-   Het knooppunt en de bijbehorende knooppunten worden gedefinieerd in `/libs`. Er is een nieuwe positie vereist, zodat het knooppunt opnieuw wordt gemaakt in de `/apps`-bedekking/overschrijving, waarbij de nieuwe positie wordt gedefinieerd ten opzichte van het desbetreffende knooppunt op hetzelfde niveau in `/libs`.
+   De knoop en zijn siblings worden bepaald in `/libs`. Een nieuwe positie wordt vereist zodat wordt de knoop opnieuw gemaakt in `/apps` bedekking/overschrijving, waarbij de nieuwe positie wordt gedefinieerd ten opzichte van het juiste knooppunt op hetzelfde niveau in `/libs`.
 
-   * Gebruik de eigenschap `sling:orderBefore`:
+   * Gebruik de `sling:orderBefore` eigenschap:
 
       1. Maak het corresponderende knooppunt onder `/apps`
-      1. Maak de eigenschap `sling:orderBefore`:
+      1. De eigenschap maken `sling:orderBefore`:
 
-         This specifies the node (as in `/libs`) that the current node should be positioned before:
+         Dit specificeert de knoop (zoals in `/libs`) dat het huidige knooppunt moet worden geplaatst voor:
 
          * type: `String`
          * waarde: `<before-SiblingName>`
@@ -221,7 +220,7 @@ De samenvoeging van het Verspreide Middel omvat twee leveranciers van douanemidd
 >
 >Wanneer het toegang tot van uw middel wordt het geadviseerd om het aangewezen koppelingspunt te gebruiken.
 >
->Dit zorgt ervoor dat de Verschuivende Fusie van het Middel wordt aangehaald en de volledig samengevoegde middelen teruggekeerd (verminderend de structuur die van `/libs` moet worden herhaald).
+>Dit zorgt ervoor dat de Verschuivende Fusie van het Middel wordt aangehaald en volledig samengevoegde middel teruggekeerd (verminderend de structuur die van moet worden herhaald `/libs`).
 
 * Bedekking:
 

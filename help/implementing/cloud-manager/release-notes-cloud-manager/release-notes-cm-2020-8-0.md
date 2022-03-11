@@ -1,36 +1,36 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.8.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.8.0
-feature: Geen informatie
+title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2020.8.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2020.8.0
+feature: Release Information
 exl-id: 70674e16-f9ba-4777-98fe-34161e90a481
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2020.8.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.8.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2020.8.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2020.8.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.8.0 is 6 augustus 2020.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2020.8.0 is 6 augustus 2020.
 
 ## Wat is er nieuw? {#whats-new-cloud-manager}
 
-* De Controle van de inhoud is een eigenschap die op de Pijpleidingen van de Productie van de Plaatsen van de Manager van de Wolk wordt toegelaten. De configuratie van de Pijpleiding van de Productie voor programma&#39;s met Plaatsen omvat nu een derde lusje genoemd **Content Audit**. Wanneer een productiepijpleiding in werking wordt gesteld, zal een nieuwe stap van de Controle van de Inhoud in de pijpleiding na douane functionele tests worden omvat die de plaats tegen een aantal dimensies met inbegrip van prestaties, SEO (de Optimalisering van de Motor van het Onderzoek), toegankelijkheid, beste praktijken en PWA (Progressieve App van het Web) zullen evalueren.
+* De Controle van de inhoud is een eigenschap die op de Pijpleidingen van de Productie van de Plaatsen van de Manager van de Wolk wordt toegelaten. De configuratie van de Pijpleiding van de Productie voor programma&#39;s met Plaatsen omvat nu een derde genoemd lusje **Controle van inhoud**. Wanneer een productiepijpleiding in werking wordt gesteld, zal een nieuwe stap van de Controle van de Inhoud in de pijpleiding na douane functionele tests worden omvat die de plaats tegen een aantal dimensies met inbegrip van prestaties, SEO (de Optimalisering van de Motor van het Onderzoek), toegankelijkheid, beste praktijken en PWA (Progressieve App van het Web) zullen evalueren.
 
 
    >[!NOTE]
    >De naam van Content Audit is sindsdien gewijzigd in Experience Audit.
 
-   Raadpleeg [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie.
+   Zie [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie .
 
 * Nieuw gemaakte omgevingen in middelenprogramma&#39;s worden nu automatisch geconfigureerd met Smart Content Services.
 
-* Gesamberde omgevingen kunnen worden gedehiberneerd op de pagina **Overzicht** van Cloud Manager.
+* Gesamberde omgevingen kunnen worden gedehiberneerd uit de cloudbeheerfunctie **Overzicht** pagina.
 
 * Mogelijkheid om ervaringscontroles uit te voeren op pagina&#39;s, aangedreven door Google Lighthouse. Als onderdeel van de Cloud Manager-pijplijn kunnen maximaal 25 pagina&#39;s worden gecontroleerd en gevalideerd op basis van ervaringen met KPI&#39;s en scores worden weergegeven in de gebruikersinterface van Cloud Manager.
 
@@ -42,7 +42,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.8.0 is 6 august
 
 * In sommige gevallen werden voltooide executies van pijpleidingen niet met succes geregistreerd als voltooid, waardoor nieuwe executies van de pijpleiding werden voorkomen.
 
-* Uitvoeringen van pijpleidingen zouden soms *geplakt* worden als gevolg van interne communicatieproblemen.
+* Uitvoeringen via pijpleidingen zouden af en toe worden uitgevoerd *vastlopen* vanwege interne communicatieproblemen.
 
 * Bij de provisioning van een nieuwe organisatie kregen sommige gebruikers met andere beheerrollen dan systeembeheerders ten onrechte toegang tot Cloud Manager.
 
@@ -52,7 +52,7 @@ De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.8.0 is 6 august
 
 * De gebruikersinterface stond abusievelijk toe dat bewerkingen werden uitgevoerd in een omgeving terwijl deze werd verwijderd.
 
-* Er is een kleurfout opgetreden op de pagina **Overzicht** van Cloud Manager.
+* Er is een kleurfout opgetreden in Cloud Manager **Overzicht** pagina.
 
 ### Bekende problemen {#known-issues-cm}
 

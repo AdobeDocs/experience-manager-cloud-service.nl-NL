@@ -15,39 +15,39 @@ Wanneer u een pagina maakt, moet u een sjabloon selecteren die wordt gebruikt al
 
 Met de **Sjablooneditor** is het creëren en onderhouden van sjablonen niet meer alleen een taak voor ontwikkelaars. Een hoofdgebruiker die ook **maker van sjablonen** wordt genoemd, kan ook worden betrokken. Ontwikkelaars zijn nog steeds nodig om de omgeving in te stellen, clientbibliotheken te maken en de te gebruiken componenten te maken, maar zodra deze basisbeginselen zijn ingesteld, kan de **maker van sjablonen** sjablonen maken en configureren zonder een ontwikkelingsproject.
 
-Met de **Sjabloonconsole** kunnen sjabloonauteurs:
+De **Sjabloonconsole** stelt sjabloonauteurs in staat om:
 
 * Maak een nieuwe sjabloon of kopieer een bestaande sjabloon.
 * De levenscyclus van de sjabloon beheren.
 
-Met de **Sjablooneditor** kunnen sjabloonauteurs:
+De **Sjablooneditor** stelt sjabloonauteurs in staat om:
 
 * Voeg componenten aan het malplaatje toe en plaats hen op een ontvankelijk net.
 * Configureer de componenten vooraf.
 * Bepaal welke componenten op pagina&#39;s kunnen worden uitgegeven die met het malplaatje worden gecreeerd.
 
-In dit document wordt uitgelegd hoe een **sjabloonauteur** de sjabloonconsole en -editor kan gebruiken om bewerkbare sjablonen te maken en te beheren.
+In dit document wordt uitgelegd hoe een **sjabloonauteur** Met de sjabloonconsole en -editor kunt u bewerkbare sjablonen maken en beheren.
 
-Raadpleeg het document [Paginasjablonen](/help/implementing/developing/components/templates.md) voor meer informatie over hoe bewerkbare sjablonen op technisch niveau werken.
+Raadpleeg het document voor ontwikkelaars voor gedetailleerde informatie over hoe bewerkbare sjablonen op technisch niveau werken [Paginasjablonen](/help/implementing/developing/components/templates.md) voor meer informatie .
 
 >[!NOTE]
 >
 >De **sjablooneditor** biedt geen ondersteuning voor rechtstreekse targeting op het sjabloonniveau. Pagina&#39;s die zijn gemaakt op basis van een bewerkbare sjabloon, kunnen als doel worden ingesteld, maar de sjablonen zelf kunnen dat niet.
 
-## Voordat u {#before-you-start} begint
+## Voordat u begint {#before-you-start}
 
 >[!NOTE]
 >
->Een beheerder moet een malplaatjeomslag in **Configurations Browser** vormen en juiste toestemmingen toepassen alvorens een malplaatjeauteur een malplaatje in die omslag kan tot stand brengen.
+>Een beheerder moet een sjabloonmap configureren in het dialoogvenster **Configuratiebrowser** en pas de juiste machtigingen toe voordat een sjabloonauteur een sjabloon in die map kan maken.
 
-Voordat u begint, is het belangrijk om te bedenken dat voor het maken van een nieuwe sjabloon samenwerking vereist is. Daarom wordt [Role](#roles) voor elke taak vermeld. Dit heeft geen invloed op de manier waarop u een sjabloon gebruikt om een pagina te maken, maar het heeft wel invloed op de manier waarop een pagina betrekking heeft op de sjabloon.
+Voordat u begint, is het belangrijk om te bedenken dat voor het maken van een nieuwe sjabloon samenwerking vereist is. Daarom [Rol](#roles) wordt aangegeven voor elke taak. Dit heeft geen invloed op de manier waarop u een sjabloon gebruikt om een pagina te maken, maar het heeft wel invloed op de manier waarop een pagina betrekking heeft op de sjabloon.
 
 ### Rollen {#roles}
 
 Om een nieuwe sjabloon te maken met behulp van de **sjabloonconsole** en de **sjablooneditor** is samenwerking tussen de volgende rollen vereist:
 
-* **Beheerder**:
-   * Hiermee maakt u een nieuwe map voor sjablonen waarvoor `admin` rechten vereist zijn.
+* **Beheer**:
+   * Hiermee maakt u een nieuwe map voor sjablonen die u nodig hebt `admin` rechten.
    * Dergelijke taken kunnen vaak ook door een ontwikkelaar worden uitgevoerd
 * **Developer**:
    * Concentraties op de technische/interne details
@@ -69,19 +69,19 @@ De in dit document beschreven taken worden weergegeven met de rol die verantwoor
 
 Bij het maken van een nieuwe bewerkbare sjabloon:
 
-* Gebruik de **Sjabloon** console. Dit is beschikbaar in de **Algemene** sectie van **Tools** console.
+* Gebruik de **Sjabloon** console. Dit is beschikbaar in het dialoogvenster **Algemeen** van de **Gereedschappen** console.
    * Of rechtstreeks bij: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* Kan [indien nodig een map voor de sjablonen maken](#creating-a-template-folder-admin)
-* [Een nieuwe sjabloon](#creating-a-new-template-template-author) maken die aanvankelijk leeg is
-* [Indien nodig aanvullende ](#defining-template-properties-template-author) eigenschappen voor de sjabloon definiëren
-* [Bewerk de sjabloon ](#editing-templates-template-authors) om het volgende te definiëren:
-   * [Structuur](#editing-a-template-structure-template-author)  - vooraf gedefinieerde inhoud die niet kan worden gewijzigd op pagina&#39;s die met de sjabloon zijn gemaakt.
-   * [Eerste inhoud](#editing-a-template-initial-content-author)  - vooraf gedefinieerde inhoud die kan worden gewijzigd op pagina&#39;s die met de sjabloon zijn gemaakt.
-   * [Layout](#editing-a-template-layout-template-author)  - Voor een reeks apparaten.
-   * [Stijlen](/help/sites-cloud/authoring/features/style-system.md)  - Definieer de stijlen die met de sjabloon en de componenten ervan moeten worden gebruikt.
-* [De sjabloon inschakelen ](#enabling-a-template-template-author) voor gebruik bij het maken van een pagina
-* [De sjabloon ](#allowing-a-template-author) voor de vereiste pagina of vertakking van uw website toestaan
-* [De sjabloon publiceren ](#publishing-a-template-template-author) om deze beschikbaar te maken in de publicatieomgeving
+* Kan [een map maken voor de sjablonen](#creating-a-template-folder-admin) indien nodig
+* [Een nieuwe sjabloon maken](#creating-a-new-template-template-author), die aanvankelijk leeg zal zijn
+* [Aanvullende eigenschappen definiëren](#defining-template-properties-template-author) voor de sjabloon indien vereist
+* [De sjabloon bewerken](#editing-templates-template-authors) om de volgende waarden te definiëren:
+   * [Structuur](#editing-a-template-structure-template-author) - Vooraf gedefinieerde inhoud die niet kan worden gewijzigd op pagina&#39;s die met de sjabloon zijn gemaakt.
+   * [Oorspronkelijke inhoud](#editing-a-template-initial-content-author) - Vooraf gedefinieerde inhoud die kan worden gewijzigd op pagina&#39;s die met de sjabloon zijn gemaakt.
+   * [Layout](#editing-a-template-layout-template-author) - Voor een reeks apparaten.
+   * [Stijlen](/help/sites-cloud/authoring/features/style-system.md) - Definieer de stijlen die met de sjabloon en de componenten ervan moeten worden gebruikt.
+* [De sjabloon inschakelen](#enabling-a-template-template-author) voor gebruik bij het maken van een pagina
+* [De sjabloon toestaan](#allowing-a-template-author) voor de vereiste pagina of vertakking van uw website
+* [De sjabloon publiceren](#publishing-a-template-template-author) ter beschikking stellen van de publicatieomgeving
 
 >[!NOTE]
 >
@@ -91,11 +91,11 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 >
 >Voer nooit informatie in die u wilt internationaliseren in een sjabloon. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Voor sjabloonelementen zoals kop- en voetteksten die moeten worden gelokaliseerd, kunt u de [lokalisatiefuncties van de kerncomponenten gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>Voor sjabloonelementen zoals kop- en voetteksten die moeten worden gelokaliseerd, kunt u de opdracht [lokalisatiefuncties van de kerncomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
-### Een sjabloonmap maken - Admin {#creating-a-template-folder-admin}
+### Sjabloonmap maken - Beheer {#creating-a-template-folder-admin}
 
-Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-specifieke malplaatjes te houden. Dit is een beheertaak en wordt beschreven in het document [Paginasjablonen](/help/implementing/developing/components/templates.md#template-folders).—>
+Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-specifieke malplaatjes te houden. Dit is een beheertaak die in het document wordt beschreven [Paginasjablonen](/help/implementing/developing/components/templates.md#template-folders).—>
 
 ### Een nieuwe sjabloon maken - Sjabloonauteur {#creating-a-new-template-template-author}
 
@@ -103,28 +103,28 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
 
    >[!NOTE]
    >
-   >In een standaard AEM instantie bestaat de **global** omslag reeds in de malplaatjeconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden.
+   >In een standaardinstelling AEM **globaal** bestaat al in de sjabloonconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden.
    >
-   >Het wordt geadviseerd beste praktijken te gebruiken om een [malplaatjeomslag te gebruiken die voor uw project](/help/implementing/developing/components/templates.md#template-folders) wordt gecreeerd.
+   >Aanbevolen wordt een [sjabloonmap die voor uw project is gemaakt](/help/implementing/developing/components/templates.md#template-folders).
 
-1. Selecteer **Maken**, gevolgd door **Sjabloon maken** om de wizard te openen.
+1. Selecteren **Maken**, gevolgd door **Sjabloon maken** om de wizard te openen.
 
-1. Kies een **Sjabloontype** en selecteer **Volgende**.
+1. Kies een **Sjabloontype** selecteert u vervolgens **Volgende**.
 
    >[!NOTE]
    >
-   >Sjabloontypen zijn vooraf gedefinieerde sjabloonlay-outs en kunnen worden beschouwd als sjablonen voor een sjabloon. Deze worden vooraf bepaald door ontwikkelaars of de systeembeheerder. Meer informatie vindt u in het document [Paginasjablonen](/help/implementing/developing/components/templates.md#template-type).—>
+   >Sjabloontypen zijn vooraf gedefinieerde sjabloonlay-outs en kunnen worden beschouwd als sjablonen voor een sjabloon. Deze worden vooraf bepaald door ontwikkelaars of de systeembeheerder. Meer informatie vindt u in het document voor ontwikkelaars [Paginasjablonen](/help/implementing/developing/components/templates.md#template-type).—>
 
-1. Voltooi **Sjabloondetails**:
+1. Voltooi de **Sjabloondetails**:
 
    * **Sjabloonnaam**
    * **Beschrijving**
 
-1. Selecteer **Maken**. Er wordt een bevestiging weergegeven. Selecteer **Open** om de sjabloon te bewerken of **Done** om terug te keren naar de sjabloonconsole.
+1. Selecteer **Maken**. Er wordt een bevestiging weergegeven. Selecteer **Openen** om te beginnen met het bewerken van de sjabloon of **Gereed** om terug te keren naar de sjabloonconsole.
 
    >[!NOTE]
    >
-   >Wanneer een nieuw malplaatje wordt gecreeerd is het duidelijk als **Laag** in de console, wijst dit erop dat het nog niet beschikbaar is om door paginaauteurs te gebruiken.
+   >Wanneer een nieuwe sjabloon wordt gemaakt, wordt deze gemarkeerd als **Concept** in de console, wijst dit erop dat het nog niet beschikbaar is om door paginaauteurs te gebruiken.
 
 >[!NOTE]
 >
@@ -137,17 +137,17 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
 Een sjabloon kan de volgende eigenschappen hebben:
 
 * Afbeelding
-   * Afbeelding die moet worden gebruikt als een [miniatuur van de sjabloon](#template-thumbnail-image) voor het selecteren van bijvoorbeeld de wizard Pagina maken.
+   * Afbeelding die moet worden gebruikt als een [miniatuur van de sjabloon](#template-thumbnail-image) als hulpmiddel bij het selecteren, bijvoorbeeld in de wizard Pagina maken.
       * Kan worden geüpload
       * Kan worden gegenereerd op basis van de sjablooninhoud
 * Titel
-   * Een titel die wordt gebruikt voor het identificeren van de sjabloon, zoals in de wizard **Pagina maken**.
+   * Een titel die wordt gebruikt voor de identificatie van de sjabloon, zoals in de **Pagina maken** wizard.
 * Beschrijving
-   * Een optionele beschrijving voor meer informatie over de sjabloon en het gebruik ervan, die bijvoorbeeld te zien is in de wizard **Pagina maken**.
+   * Een facultatieve beschrijving om meer informatie over het malplaatje en zijn gebruik te verstrekken, dat bijvoorbeeld in **Pagina maken** wizard.
 
 De eigenschappen weergeven en/of bewerken:
 
-1. Selecteer de sjabloon in de **Sjabloonconsole**.
+1. In de **Sjabloonconsole** selecteert u de sjabloon.
 1. Selecteer **Eigenschappen weergeven** op de werkbalk of kies Snelle opties om het dialoogvenster te openen.
 1. U kunt nu de sjablooneigenschappen weergeven of bewerken.
 
@@ -155,36 +155,36 @@ De eigenschappen weergeven en/of bewerken:
 >
 >De status van een sjabloon (concept, ingeschakeld of uitgeschakeld) wordt aangegeven in de console.
 
-#### Sjabloonminiatuurafbeelding {#template-thumbnail-image}
+#### Miniatuurafbeelding sjabloon {#template-thumbnail-image}
 
 De sjabloonminiatuur definiëren:
 
 1. Bewerk de sjablooneigenschappen.
 1. Kies of u een miniatuur wilt uploaden of wilt dat deze wordt gegenereerd op basis van de sjablooninhoud.
-   * Als u een miniatuur wilt uploaden, klikt of tikt u op **Afbeelding uploaden**
-   * Als u een miniatuur wilt genereren, klikt of tikt u op **Voorvertoning genereren**
+   * Als u een miniatuur wilt uploaden, klikt u of tikt u op **Afbeelding uploaden**
+   * Als u een miniatuur wilt genereren, klikt u of tikt u op **Voorvertoning genereren**
 1. Voor beide methoden wordt een voorbeeld van de miniatuur weergegeven.
-   * Als het niet bevredigend is, klik of tik **Clear** om een ander beeld te uploaden of de duimnagel opnieuw te produceren.
-1. Als u tevreden bent met de miniatuur, klikt of tikt u op **Opslaan en sluiten**.
+   * Klik of tik op **Wissen** om een andere afbeelding te uploaden of de miniatuur opnieuw te genereren.
+1. Als u tevreden bent met de miniatuur, klikt u of tikt u op **Opslaan en sluiten**.
 
 ### Een sjabloon inschakelen en toestaan - Sjabloonauteur {#enabling-and-allowing-a-template-template-author}
 
 Als u een sjabloon wilt kunnen gebruiken bij het maken van een pagina, moet u:
 
-* [Schakel de sjabloon in ](#enabling-a-template-template-author) om deze beschikbaar te maken voor gebruik bij het maken van pagina&#39;s.
-* [Toestaan dat het ](#allowing-a-template-author) sjabloon de vertakkingen van de inhoud opgeeft waar de sjabloon kan worden gebruikt.
+* [De sjabloon inschakelen](#enabling-a-template-template-author) beschikbaar maken voor gebruik bij het maken van pagina&#39;s.
+* [De sjabloon toestaan](#allowing-a-template-author) om de inhoudtakken te specificeren waar het malplaatje kan worden gebruikt.
 
 #### Sjabloon inschakelen - Sjabloonauteur {#enabling-a-template-template-author}
 
-Een sjabloon kan worden in- of uitgeschakeld om het beschikbaar te maken of niet beschikbaar te zijn in de wizard **Pagina maken**.
+Een sjabloon kan worden in- of uitgeschakeld, zodat deze beschikbaar of niet beschikbaar is in het dialoogvenster **Pagina maken** wizard.
 
 >[!CAUTION]
 >
 >Zodra een malplaatje wordt toegelaten zal een waarschuwing worden getoond wanneer een malplaatjeauteur begint om het malplaatje verder bij te werken. Dit moet de gebruiker informeren dat naar de sjabloon kan worden verwezen, zodat wijzigingen van invloed kunnen zijn op de pagina&#39;s die naar de sjabloon verwijzen.
 
-1. Selecteer de sjabloon in de **Sjabloonconsole**.
-1. Selecteer **Inschakelen** of **Uitschakelen** op de werkbalk en nogmaals in het bevestigingsvenster.
-1. U kunt uw malplaatje nu gebruiken wanneer [het creëren van een nieuwe pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), hoewel u waarschijnlijk malplaatje [wilt uitgeven](#editing-templates-template-authors) volgens uw vereisten.
+1. In de **Sjabloonconsole** selecteert u de sjabloon.
+1. Selecteren **Inschakelen** of **Uitschakelen** op de werkbalk en nogmaals in het bevestigingsdialoogvenster.
+1. U kunt nu uw sjabloon gebruiken wanneer [een nieuwe pagina maken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), hoewel u waarschijnlijk [de sjabloon bewerken](#editing-templates-template-authors) volgens uw vereisten.
 
 >[!NOTE]
 >
@@ -194,8 +194,8 @@ Een sjabloon kan worden in- of uitgeschakeld om het beschikbaar te maken of niet
 
 Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasvertakkingen.
 
-1. Open [Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) voor de hoofdpagina van de vertakking waar u de sjabloon beschikbaar wilt maken.
-1. Open het tabblad **Geavanceerd**.
+1. Open de [Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) voor de hoofdpagina van de vertakking waar u het malplaatje beschikbaar wilt zijn.
+1. Open de **Geavanceerd** tab.
 1. Gebruik onder **Sjablooninstellingen** de optie **Veld toevoegen** om het pad of de paden naar de sjabloon of sjablonen op te geven.
 
    Het pad kan expliciet zijn of patronen gebruiken. Bijvoorbeeld:
@@ -206,12 +206,12 @@ Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaal
 
    >[!NOTE]
    >
-   >Als de lijst **Toegestane sjablonen** leeg blijft, wordt de structuur opgetrokken totdat een waarde/lijst wordt gevonden.
+   >Als de **Toegestane sjablonen** wordt leeg gelaten, wordt de structuur opgetrokken totdat een waarde/lijst wordt gevonden.
    >
    >
-   >Zie [Sjabloonbeschikbaarheid](/help/implementing/developing/components/templates.md#template-availability) - de principes voor toegestane sjablonen blijven ongewijzigd.
+   >Zie [Beschikbaarheid sjabloon](/help/implementing/developing/components/templates.md#template-availability) - de beginselen voor toegestane sjablonen blijven dezelfde.
 
-1. Klik **Opslaan** om de wijzigingen in de pagina-eigenschappen op te slaan.
+1. Klikken **Opslaan** om de wijzigingen in de pagina-eigenschappen op te slaan.
 
 >[!NOTE]
 >
@@ -221,16 +221,16 @@ Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaal
 
 Aangezien het malplaatje van verwijzingen wordt voorzien wanneer een pagina wordt teruggegeven, moet het volledig gevormde malplaatje worden gepubliceerd zodat het op het publicatiemilieu beschikbaar is.
 
-1. Selecteer de sjabloon in de **Sjabloonconsole**.
-1. Selecteer **Publiceren** van de toolbar om de tovenaar te openen.
-1. Selecteer het **Inhoudsbeleid** dat gelijktijdig moet worden gepubliceerd.
-1. Selecteer **Publiceren** op de werkbalk om de handeling te voltooien.
+1. In de **Sjabloonconsole** selecteert u de sjabloon.
+1. Selecteren **Publiceren** op de werkbalk om de wizard te openen.
+1. Selecteer **Inhoudsbeleid** samen te publiceren.
+1. Selecteren **Publiceren** van de werkbalk om de handeling te voltooien.
 
 ## Sjablonen bewerken - Sjabloonauteurs {#editing-templates-template-authors}
 
 Bij het maken of bewerken van een sjabloon zijn er verschillende aspecten die u kunt definiëren. Sjablonen bewerken is vergelijkbaar met het ontwerpen van pagina&#39;s.
 
-Met de selector **Modus** op de werkbalk kunt u het juiste aspect van de sjabloon selecteren en bewerken:
+De **Modus** in de werkbalk kunt u het juiste aspect van de sjabloon selecteren en bewerken:
 
 * [Structuur](#editing-a-template-structure-template-author)
 * [Oorspronkelijke inhoud](#editing-a-template-initial-content-author)
@@ -238,7 +238,7 @@ Met de selector **Modus** op de werkbalk kunt u het juiste aspect van de sjabloo
 
 ![Sjabloonbewerkingsmodus selecteren](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-Met de optie **Paginabeleid** in het menu **Pagina-informatie** kunt u [het vereiste paginabeleid selecteren](#page-policies):
+Terwijl de **Paginabeleid** de optie **Pagina-informatie** kunt u [Selecteer het vereiste paginabeleid](#page-policies):
 
 ![Pagina-informatie sjablooneditor](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -252,21 +252,21 @@ De volgende kenmerken van een sjabloon kunnen worden bewerkt:
 
 #### Structuur {#template-structure}
 
-Componenten die aan de [structuur](#editing-a-template-structure-template-author) zijn toegevoegd, kunnen door de auteurs van de pagina niet van de resulterende pagina&#39;s worden verplaatst of verwijderd. Als u wilt dat auteurs van pagina&#39;s componenten aan resulterende pagina&#39;s kunnen toevoegen en verwijderen, dan moet u een paragraafsysteem aan het malplaatje toevoegen.
+Componenten toegevoegd aan de [structuur](#editing-a-template-structure-template-author) kunnen door de auteurs van de pagina niet worden verplaatst of verwijderd uit de resulterende pagina&#39;s. Als u wilt dat auteurs van pagina&#39;s componenten aan resulterende pagina&#39;s kunnen toevoegen en verwijderen, dan moet u een paragraafsysteem aan het malplaatje toevoegen.
 
-Wanneer componenten zijn vergrendeld, kunt u inhoud toevoegen die niet kan worden bewerkt door auteurs van pagina&#39;s. U kunt componenten ontgrendelen zodat u [Eerste inhoud](#editing-a-template-initial-content-author) kunt definiëren.
+Wanneer componenten zijn vergrendeld, kunt u inhoud toevoegen die niet kan worden bewerkt door auteurs van pagina&#39;s. U kunt componenten ontgrendelen zodat u kunt definiëren [Oorspronkelijke inhoud](#editing-a-template-initial-content-author).
 
 >[!NOTE]
 >
 >In de structuurmodus kunnen componenten die het bovenliggende element van een niet-vergrendelde component zijn, niet worden verplaatst, geknipt of verwijderd.
 
-#### Eerste inhoud {#template-initial-content}
+#### Oorspronkelijke inhoud {#template-initial-content}
 
-Wanneer een component is ontgrendeld, kunt u de [initiële inhoud](#editing-a-template-initial-content-author) definiëren die wordt gekopieerd naar de resulterende pagina(&#39;s) die op basis van de sjabloon zijn gemaakt. Deze niet-vergrendelde componenten kunnen op de resulterende pagina(&#39;s) worden bewerkt.
+Wanneer een component is ontgrendeld, kunt u de [initiële inhoud](#editing-a-template-initial-content-author) die worden gekopieerd naar de resulterende pagina(&#39;s) die op basis van de sjabloon zijn gemaakt. Deze niet-vergrendelde componenten kunnen op de resulterende pagina(&#39;s) worden bewerkt.
 
 >[!NOTE]
 >
->In de modus **Eerste inhoud** en op de resulterende pagina&#39;s kunnen alle niet-vergrendelde componenten met een toegankelijk bovenliggend element (d.w.z. componenten binnen een lay-outcontainer) worden verwijderd.
+>In **Oorspronkelijke inhoud** zowel in de modus als op de resulterende pagina&#39;s kunnen alle ontgrendelde onderdelen die een toegankelijk bovenliggend element hebben (d.w.z. onderdelen in een lay-outcontainer) worden verwijderd.
 
 #### Indeling {#template-layout}
 
@@ -274,34 +274,34 @@ Met de [lay-out](#editing-a-template-layout-template-author) kunt u de sjabloonl
 
 #### Paginabeleid {#template-page-policies}
 
-[Met ](#page-policies) paginabeleid kunt u vooraf gedefinieerde paginabeleidsregels verbinden met de pagina. Met dit paginabeleid worden de verschillende ontwerpconfiguraties gedefinieerd.
+[Paginabeleid](#page-policies) Hiermee kunt u vooraf gedefinieerde paginabeleidsregels verbinden met de pagina. Met dit paginabeleid worden de verschillende ontwerpconfiguraties gedefinieerd.
 
 #### Stijlen {#template-styles}
 
-Met het [Stijlsysteem](/help/sites-cloud/authoring/features/style-system.md) kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
+De [Stijlsysteem](/help/sites-cloud/authoring/features/style-system.md) Hiermee kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
 
-Zie [documentatie van het Systeem van de Stijl](/help/sites-cloud/authoring/features/style-system.md) voor meer informatie.
+Zie de [documentatie over stijlsystemen](/help/sites-cloud/authoring/features/style-system.md) voor meer informatie .
 
 ### Een sjabloon bewerken - Structuur - Sjabloonauteur {#editing-a-template-structure-template-author}
 
-Op **Structuur** wijze bepaalt u componenten en inhoud voor uw malplaatje en bepaalt beleid voor het malplaatje en zijn componenten.
+In **Structuur** in deze modus definieert u componenten en inhoud voor de sjabloon en definieert u het beleid voor de sjabloon en de componenten ervan.
 
 * Componenten die in de sjabloonstructuur zijn gedefinieerd, kunnen niet op een resulterende pagina worden verplaatst of uit resulterende pagina&#39;s worden verwijderd.
 * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
-* Componenten kunnen worden ontgrendeld en opnieuw worden vergrendeld, zodat u [initiële inhoud](#editing-a-template-initial-content-author) kunt definiëren.
+* Componenten kunnen opnieuw worden ontgrendeld en vergrendeld, zodat u [initiële inhoud](#editing-a-template-initial-content-author).
 * Het ontwerpbeleid voor de componenten en pagina wordt gedefinieerd.
 
 ![Paginastructuur van de sjablooneditor](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
 Er zijn een aantal acties die u kunt uitvoeren in de modus **Structuur** van de sjablooneditor en een aantal functies om u te helpen:
 
-#### Componenten {#add-components} toevoegen
+#### Componenten toevoegen {#add-components}
 
 Er zijn verschillende manieren om componenten aan de sjabloon toe te voegen:
 
-* Vanuit de browser **Components** in het zijpaneel.
+* Van de **Componenten** in het zijpaneel.
 * Met de optie **Component invoegen** op de werkbalk kunt u componenten gebruiken die zich al in de sjabloon bevinden of het vak **Componenten hierheen slepen**.
-* Sleep een element (van de browser **Middelen** in het zijpaneel) rechtstreeks naar de sjabloon om de juiste component ter plekke te genereren.
+* Door een element te slepen (vanuit de **Activa** in het zijpaneel) rechtstreeks op de sjabloon om de juiste component in situ te genereren.
 
 Na toevoeging wordt elke component gemarkeerd met:
 
@@ -319,7 +319,7 @@ Na toevoeging wordt elke component gemarkeerd met:
 
 >[!NOTE]
 >
->Hoewel niet identiek, heeft het toevoegen van componenten en activa aan een malplaatje vele gelijkenissen aan gelijkaardige acties wanneer [pagina creatie](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+>Hoewel niet identiek, heeft het toevoegen van componenten en activa aan een malplaatje vele gelijkenissen met gelijkaardige acties wanneer [pagina&#39;s ontwerpen](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 #### Componenthandelingen {#component-actions}
 
@@ -329,13 +329,13 @@ Voer acties uit op de componenten nadat deze aan de sjabloon zijn toegevoegd. El
 
 Het kan ook afhankelijk zijn van acties zoals wanneer een beleid met de component is geassocieerd, dan wordt het pictogram van de ontwerpconfiguratie beschikbaar.
 
-#### {#edit-and-configure} bewerken en configureren
+#### Bewerken en configureren {#edit-and-configure}
 
 Met deze twee acties kunt u inhoud toevoegen aan uw componenten.
 
 #### Rand om structuur aan te geven {#border-to-indicate-structure}
 
-Wanneer u in de modus **Structuur** werkt, geeft een oranje rand de op dat moment geselecteerde component aan. Een stippellijn geeft ook de bovenliggende component aan.
+Wanneer u werkt in **Structuur** een oranje rand geeft aan welke component momenteel is geselecteerd. Een stippellijn geeft ook de bovenliggende component aan.
 
 #### Beleid en eigenschappen (algemeen) {#policy-and-properties-general}
 
@@ -351,8 +351,8 @@ Zo kunt u de ontwerpdetails definiëren.
 
 Het configuratievenster is verdeeld in twee.
 
-* In de linkerkant van de dialoog onder **Beleid**, hebt u de capaciteit om een bestaand beleid te selecteren of bestaande te selecteren.
-* In de rechterkant van het dialoogvenster onder **Eigenschappen** kunt u de eigenschappen instellen die specifiek zijn voor het componenttype.
+* Links in het dialoogvenster onder **Beleid** kunt u een bestaand beleid selecteren of een bestaand beleid selecteren.
+* Rechts van het dialoogvenster onder **Eigenschappen** kunt u de eigenschappen instellen die specifiek zijn voor het componenttype.
 
 De beschikbare eigenschappen zijn afhankelijk van de geselecteerde component. Voor een tekstcomponent definiëren de eigenschappen bijvoorbeeld de kopieer- en plakopties, opmaakopties en alineastijl.
 
@@ -360,21 +360,21 @@ De beschikbare eigenschappen zijn afhankelijk van de geselecteerde component. Vo
 
 Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van een component gedefinieerd. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
-Onder **Beleid** kunt u een bestaand beleid selecteren om op de component via drop-down van toepassing te zijn.
+Onder **Beleid** u kunt een bestaand beleid selecteren om op de component via drop-down toe te passen.
 
 ![Beleid selecteren](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-Een nieuw beleid kan worden toegevoegd door toe te voegen knoop naast **Uitgezochte beleid** dropdown te selecteren. Vervolgens moet een nieuwe titel worden gegeven in het veld **Beleidstitel**.
+Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld.
 
 ![Beleidsknop toevoegen](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-Het geselecteerde bestaande beleid in **Uitgezochte beleid** dropdown kan als nieuw beleid worden gekopieerd gebruikend de exemplaarknoop naast dropdown. Vervolgens moet een nieuwe titel worden gegeven in het veld **Beleidstitel**. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
+Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
 
 ![De knop Beleid kopiëren](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-Een beschrijving van het beleid is optioneel in het veld **Beleidsbeschrijving**.
+Een beschrijving van het beleid is optioneel in het gedeelte **Beleidsomschrijving** veld.
 
-In **Andere malplaatjes die ook het geselecteerde beleid** sectie gebruiken, kunt u gemakkelijk zien welke andere malplaatjes het beleid gebruiken dat in **Uitgezochte beleid** dropdown wordt geselecteerd.
+In de **Andere sjablonen gebruiken ook het geselecteerde beleid** kunt u gemakkelijk zien welke andere sjablonen het beleid gebruiken dat is geselecteerd in het dialoogvenster **Beleid selecteren** vervolgkeuzelijst.
 
 ![Gebruik van bestaand beleid](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -384,14 +384,14 @@ In **Andere malplaatjes die ook het geselecteerde beleid** sectie gebruiken, kun
 
 ##### Eigenschappen {#properties}
 
-Onder de kop **Eigenschappen** kunt u de instellingen van de component definiëren. De kop heeft twee tabbladen:
+Onder de **Eigenschappen** kunt u de instellingen van de component definiëren. De kop heeft twee tabbladen:
 
 * Hoofd
 * Functies
 
 ###### Hoofd {#main}
 
-Op het **Main** lusje, worden de belangrijkste montages van de component bepaald.
+Op de **Hoofd** worden de belangrijkste instellingen van de component gedefinieerd.
 
 Voor een afbeeldingscomponent kunnen bijvoorbeeld de toegestane breedten worden gedefinieerd en kan het laden worden ingeschakeld.
 
@@ -399,15 +399,15 @@ Als een instelling meerdere configuraties toestaat, klikt of tikt u op de knop *
 
 ![Knop Toevoegen](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-Als u een configuratie wilt verwijderen, klikt of tikt u op de knop **Delete** rechts van de configuratie.
+Als u een configuratie wilt verwijderen, klikt of tikt u op de knop **Verwijderen** knoop die rechts van de configuratie wordt gevestigd.
 
-Als u een configuratie wilt verwijderen, klikt of tikt u op de knop **Delete**.
+Als u een configuratie wilt verwijderen, klikt of tikt u op de knop **Verwijderen** knop.
 
 ![Knop Verwijderen](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
 ###### Functies {#features}
 
-Met het tabblad **Functies** kunt u extra functies van de component in- of uitschakelen.
+De **Functies** kunt u extra functies van de component in- of uitschakelen.
 
 Voor een afbeeldingscomponent kunt u bijvoorbeeld de uitsnijdverhoudingen, de toegestane afbeeldingsoriëntaties en de vraag of uploads zijn toegestaan, definiëren.
 
@@ -415,11 +415,11 @@ Voor een afbeeldingscomponent kunt u bijvoorbeeld de uitsnijdverhoudingen, de to
 
 >[!CAUTION]
 >
->In AEM uitsnijdverhoudingen worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. Gebruikers die pagina&#39;s schrijven, zijn zich niet bewust van enig verschil op voorwaarde dat u de **Naam** duidelijk definieert aangezien dit is wat wordt weergegeven in de gebruikersinterface.
+>Let op: in AEM snijdverhoudingen worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. Gebruikers die de pagina schrijven, zijn zich niet bewust van enig verschil, op voorwaarde dat u de **Naam** duidelijk aangezien dit is wat in UI wordt getoond.
 
 >[!NOTE]
 >
->[Inhoudsbeleid voor componenten die de RTF-](/help/implementing/developing/extending/rich-text-editor.md) editor implementeren, kan alleen worden gedefinieerd voor opties die door de RTE via de bijbehorende UI-instellingen beschikbaar worden gemaakt.
+>[Beleid voor inhoud voor componenten die de RTF-editor implementeren](/help/implementing/developing/extending/rich-text-editor.md) kan slechts voor opties worden bepaald die door RTE door zijn montages UI ter beschikking worden gesteld.
 
 #### Beleid en eigenschappen (container voor layout) {#policy-and-properties-layout-container}
 
@@ -435,11 +435,11 @@ Het configuratievenster wordt verdeeld in twee delen, enkel zoals in het algemen
 
 Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van een component gedefinieerd. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
-Onder **Beleid** kunt u een bestaand beleid selecteren om op de component via drop-down van toepassing te zijn. Deze functie werkt net als bij het algemene gebruik van het venster.
+Onder **Beleid** u kunt een bestaand beleid selecteren om op de component via drop-down toe te passen. Deze functie werkt net als bij het algemene gebruik van het venster.
 
 ##### Eigenschappen {#properties-layout}
 
-Onder **Eigenschappen** rubriek kunt u kiezen welke componenten beschikbaar voor de lay-outcontainer zijn en hun montages bepalen. De kop heeft drie tabbladen:
+Onder de **Eigenschappen** kunt u kiezen welke componenten beschikbaar zijn voor de lay-outcontainer en de instellingen definiëren. De kop heeft drie tabbladen:
 
 * Toegestane componenten
 * Standaardcomponenten
@@ -447,10 +447,10 @@ Onder **Eigenschappen** rubriek kunt u kiezen welke componenten beschikbaar voor
 
 ###### Toegestane componenten {#allowed-components}
 
-Op **Toegestane Componenten** lusje, bepaalt u welke componenten voor de lay-outcontainer beschikbaar zijn.
+Op de **Toegestane componenten** -tab, definieert u welke componenten beschikbaar zijn voor de lay-outcontainer.
 
 * De componenten worden gegroepeerd op hun componentgroepen, die kunnen worden uitgevouwen en samengevouwen.
-* U kunt een hele groep selecteren door de naam van de groep te controleren en u kunt de selectie van alle groepen opheffen door de selectie uit te schakelen.
+* U kunt een hele groep selecteren door de naam van de groep te controleren. U kunt de selectie van alle groepen ongedaan maken door de selectie uit te schakelen.
 * Een min vertegenwoordigt minstens één maar niet alle punten in een groep worden geselecteerd.
 * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
 * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.
@@ -459,28 +459,28 @@ Op **Toegestane Componenten** lusje, bepaalt u welke componenten voor de lay-out
 
 ###### Standaardcomponenten {#default-components}
 
-Op het **tabblad Default Components** definieert u welke componenten automatisch aan bepaalde mediatypen worden gekoppeld, zodat AEM weet met welke component deze wordt gekoppeld wanneer een auteur een element van de elementenbrowser sleept. Merk op dat slechts de componenten met dalingsstreken voor dergelijke configuratie beschikbaar zijn.
+Op de **Standaardcomponenten** , bepaalt u welke componenten automatisch aan bepaalde media types worden geassocieerd zodat wanneer een auteur activa van elementenbrowser sleept, AEM weet met welke component om het te associëren. Merk op dat slechts de componenten met dalingsstreken voor dergelijke configuratie beschikbaar zijn.
 
-Klik of tik **Toewijzing toevoegen** om een geheel nieuwe component en MIME typetoewijzing toe te voegen.
+Klikken of tikken **Toewijzing toevoegen** om een geheel nieuwe component en MIME typetoewijzing toe te voegen.
 
 Selecteer een component in de lijst en klik of tik op **Type toevoegen** om een extra MIME-type toe te voegen aan een reeds toegewezen component. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
 
 ![Standaardcomponenten, tabblad](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
-###### Responsieve instellingen {#responsive-settings}
+###### Instellingen voor responsie {#responsive-settings}
 
-Op het **Responsieve lusje van Montages** kunt u het aantal kolommen in het resulterende net van de lay-outcontainer vormen.
+Op de **Instellingen voor responsie** kunt u het aantal kolommen in het resulterende raster van de layoutcontainer configureren.
 
-#### Componenten {#unlock-and-lock-components} ontgrendelen en vergrendelen
+#### Componenten ontgrendelen en vergrendelen {#unlock-and-lock-components}
 
-U ontgrendelt/vergrendelt componenten om te definiëren of de inhoud beschikbaar is voor wijziging in de modus **Eerste inhoud**.
+U ontgrendelt/vergrendelt componenten om te bepalen of de inhoud beschikbaar is voor wijzigingen in **Oorspronkelijke inhoud** in.
 
 Wanneer een component is ontgrendeld:
 
 * Een open hangslotindicator wordt getoond in de grens.
 * De componentwerkbalk wordt dienovereenkomstig aangepast.
-* Alle inhoud die al is ingevoerd, wordt niet meer weergegeven in de modus **Structuur**.
-   * Al ingevoerde inhoud wordt beschouwd als eerste inhoud en is alleen zichtbaar in de modus **Eerste inhoud**.
+* Alle inhoud die al is ingevoerd, wordt niet meer weergegeven in **Structuur** in.
+   * Al ingevoerde inhoud wordt beschouwd als initiële inhoud en is alleen zichtbaar in **Oorspronkelijke inhoud** in.
 * De bovenliggende elementen van de ontgrendelde component kunnen niet worden verplaatst, geknipt of verwijderd.
 
 ![Component-knop vergrendelen](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
@@ -503,13 +503,13 @@ Als de structuur na het maken van op de sjabloon gebaseerde pagina&#39;s wordt b
 
 ### Een sjabloon bewerken - Eerste inhoud - Auteur {#editing-a-template-initial-content-author}
 
-**De aanvankelijke** inhoudsmodus wordt gebruikt voor gedefinieerde inhoud die wordt weergegeven wanneer een pagina voor het eerst wordt gemaakt op basis van de sjabloon. De eerste inhoud kan vervolgens door auteurs van pagina&#39;s worden bewerkt.
+**Oorspronkelijke inhoud** wordt gebruikt voor gedefinieerde inhoud die wordt weergegeven wanneer een pagina voor het eerst wordt gemaakt op basis van de sjabloon. De eerste inhoud kan vervolgens door auteurs van pagina&#39;s worden bewerkt.
 
 Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **Initiële content**, kunnen alleen de ontgrendelde componenten worden geselecteerd en bewerkt.
 
 >[!NOTE]
 >
->**De modus Oorspronkelijke** inhoud kan worden gebruikt als bewerkingsmodus voor pagina&#39;s die met die sjabloon zijn gemaakt. Daarom worden beleidsregels niet gedefinieerd in de modus **Begininhoud**, maar in de modus [**Structuur**](#editing-a-template-structure-template-author).
+>**Oorspronkelijke inhoud** U kunt de bewerkingsmodus gebruiken voor pagina&#39;s die met die sjabloon zijn gemaakt. Daarom wordt het beleid niet gedefinieerd in **Oorspronkelijke inhoud** modus, maar eerder in [**Structuur** mode](#editing-a-template-structure-template-author).
 
 * Ontgrendelde componenten die beschikbaar zijn voor bewerking, worden gemarkeerd. Als deze optie is geselecteerd, hebben ze een blauwe rand:
 
@@ -532,15 +532,15 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 >
 >De eerste inhoud is bedoeld voor het voorbereiden van componenten en de paginalay-out die als uitgangspunt dienen voor het maken van de inhoud. Het is niet de bedoeling om de inhoud te zijn die ongewijzigd blijft. Daarom kan de initiële inhoud niet worden vertaald.
 >
->Als u vertaalbare tekst in uw malplaatje zoals in kopballen of footers moet omvatten, kunt u [localisatiefuncties van de kerncomponenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Als u vertaalbare tekst in uw sjabloon wilt opnemen, bijvoorbeeld in kop- of voetteksten, kunt u de opdracht [lokalisatiefuncties van de kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
-### Een sjabloon bewerken - Indeling - Sjabloonauteur {#editing-a-template-layout-template-author}
+### Een sjabloon bewerken - Layout - Sjabloonauteur {#editing-a-template-layout-template-author}
 
-U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [De responsieve ](/help/sites-cloud/authoring/features/responsive-layout.md) indeling voor sjablonen werkt op dezelfde manier als bij het ontwerpen van pagina&#39;s.
+U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [Responsieve indeling](/help/sites-cloud/authoring/features/responsive-layout.md) voor sjablonen werkt op dezelfde manier als voor het ontwerpen van pagina&#39;s.
 
 >[!NOTE]
 >
->Wijzigingen in de lay-out worden weergegeven in de modus **Eerste inhoud**, maar er worden geen wijzigingen weergegeven in de modus **Structuur**.
+>Wijzigingen in de lay-out worden weergegeven in **Oorspronkelijke inhoud** , maar er zijn geen wijzigingen in **Structuur** in.
 
 ![Sjabloonindeling bewerken](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
@@ -548,12 +548,12 @@ U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [De responsieve 
 
 Het paginabeleid, inclusief de vereiste clientbibliotheken, blijft behouden onder de optie **Paginabeleid** van het menu **Pagina-informatie**.
 
-Het dialoogvenster **Paginabeleid** openen:
+Om toegang te krijgen tot **Paginabeleid** dialoogvenster:
 
-1. Selecteer **Paginagegevens** in de werkbalk van de **Sjablooneditor** en **Paginabeleid** om het dialoogvenster te openen.
-1. Het dialoogvenster **Paginabeleid** wordt geopend en is verdeeld in twee secties:
+1. Van de **Sjablooneditor**, selecteert u **Pagina-informatie** vanaf de werkbalk, dan **Paginabeleid** om het dialoogvenster te openen.
+1. De **Paginabeleid** wordt geopend en is verdeeld in twee gedeelten:
 
-   * De linkerhelft bepaalt [paginabeleid](#page-policies)
+   * De linkerhelft definieert de [paginabeleid](#page-policies)
    * De rechterhelft definieert de [pagina-eigenschappen](#page-properties)
 
    ![Paginaontwerp](/help/sites-cloud/authoring/assets/templates-page-design.png)
@@ -564,34 +564,34 @@ U kunt een inhoudsbeleid toepassen op de sjabloon of de resulterende pagina&#39;
 
 ![Paginabeleid](/help/sites-cloud/authoring/assets/templates-page-policy.png)
 
-* U kunt een bestaand beleid voor de pagina van **Uitgezochte beleid** drop-down selecteren.
+* U kunt een bestaand beleid voor de pagina selecteren in het menu **Beleid selecteren** vervolgkeuzelijst.
 
    ![Beleidskiezer](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   Een nieuw beleid kan worden toegevoegd door toe te voegen knoop naast **Uitgezochte beleid** dropdown te selecteren. Vervolgens moet een nieuwe titel worden gegeven in het veld **Beleidstitel**.
+   Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld.
 
    ![Beleidsknop toevoegen](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   Het geselecteerde bestaande beleid in **Uitgezochte beleid** dropdown kan als nieuw beleid worden gekopieerd gebruikend de exemplaarknoop naast dropdown. Vervolgens moet een nieuwe titel worden gegeven in het veld **Beleidstitel**. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
+   Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
 
    ![De knop Beleid kopiëren](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-* Definieer een titel voor het beleid in het veld **Beleidstitel**. Een beleid wordt vereist om een titel te hebben zodat het gemakkelijk in **Uitgezochte beleid** dropdown kan worden geselecteerd.
+* Definieer een titel voor het beleid in het dialoogvenster **Beleidstitel** veld. Een beleid moet een titel hebben zodat het gemakkelijk kan worden geselecteerd in het **Beleid selecteren** vervolgkeuzelijst.
 
    ![Beleidstitel](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
-* Een beschrijving van het beleid is optioneel in het veld **Beleidsbeschrijving**.
-* In **Andere malplaatjes die ook het geselecteerde beleid** sectie gebruiken, kunt u gemakkelijk zien welke andere malplaatjes het beleid gebruiken dat in **Uitgezochte beleid** dropdown wordt geselecteerd.
+* Een beschrijving van het beleid is optioneel in het gedeelte **Beleidsomschrijving** veld.
+* In de **Andere sjablonen gebruiken ook het geselecteerde beleid** kunt u gemakkelijk zien welke andere sjablonen het beleid gebruiken dat is geselecteerd in het dialoogvenster **Beleid selecteren** vervolgkeuzelijst.
 
    ![Beleidsgebruik](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### Pagina-eigenschappen {#page-properties}
 
-Met pagina-eigenschappen kunt u de vereiste clientbibliotheken definiëren in het dialoogvenster **Pagina-ontwerp**. Deze client-side bibliotheken bevatten stijlpagina&#39;s en javascript die met de sjabloon moeten worden geladen en pagina&#39;s die met die sjabloon zijn gemaakt.
+Met pagina-eigenschappen kunt u de vereiste clientbibliotheken definiëren met de **Paginaontwerp** . Deze client-side bibliotheken bevatten stijlpagina&#39;s en javascript die met de sjabloon moeten worden geladen en pagina&#39;s die met die sjabloon zijn gemaakt.
 
 ![Pagina-eigenschappen](/help/sites-cloud/authoring/assets/templates-page-properties.png)
 
-* Geef de clientbibliotheken op die u wilt toepassen op pagina&#39;s die met deze sjabloon zijn gemaakt. De naam van een bibliotheek invoeren in het tekstveld in de sectie **Client Side Libraries**.
+* Geef de clientbibliotheken op die u wilt toepassen op pagina&#39;s die met deze sjabloon zijn gemaakt. De naam van een bibliotheek invoeren in het tekstveld in het dialoogvenster **Client Side Libraries** sectie.
 
    ![Bibliotheken op de client](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
@@ -611,15 +611,15 @@ Met pagina-eigenschappen kunt u de vereiste clientbibliotheken definiëren in he
 
 ### Een sjabloon bewerken - Initiële pagina-eigenschappen - Auteur {#editing-a-template-initial-page-properties-author}
 
-Met de optie **Beginpagina-eigenschappen** kunt u de eerste [pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) definiëren die moeten worden gebruikt bij het maken van resulterende pagina&#39;s.
+Met de **Oorspronkelijke pagina-eigenschappen** kunt u het eerste [pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) te gebruiken bij het maken van resulterende pagina&#39;s.
 
-1. Selecteer **Pagina-informatie** in de sjablooneditor en **Beginpagina-eigenschappen** om het dialoogvenster te openen.
+1. Selecteer in de sjablooneditor de optie **Pagina-informatie** vanaf de werkbalk, dan **Oorspronkelijke pagina-eigenschappen** om het dialoogvenster te openen.
 
 1. In het dialoogvenster kunt u de eigenschappen definiëren die u wilt toepassen op pagina&#39;s die met deze sjabloon zijn gemaakt.
 
    ![Sjablonen, eigenschappen voor eerste pagina](/help/sites-cloud/authoring/assets/templates-initial-properties.png)
 
-1. Bevestig uw definities met **Done**.
+1. Bevestig uw definities met **Gereed**.
 
 ## Best practices voor {#best-practices}
 
@@ -657,5 +657,5 @@ Houd bij het maken van sjablonen rekening met:
    >
    >AEM geeft expliciete waarschuwingen wanneer het veranderen van de slotstatus van componenten op malplaatjes die niet meer concepten zijn.
 
-1. [Uw eigen ](#creating-a-template-folder-admin) mappen maken voor uw sitespecifieke sjablonen.
-1. [Publiceer uw sjablonen ](#publishing-a-template-template-author) vanuit de  **** Templatesconsole.
+1. [Uw eigen mappen maken](#creating-a-template-folder-admin) voor uw sitespecifieke sjablonen.
+1. [Uw sjablonen publiceren](#publishing-a-template-template-author) van de **Sjablonen** console.

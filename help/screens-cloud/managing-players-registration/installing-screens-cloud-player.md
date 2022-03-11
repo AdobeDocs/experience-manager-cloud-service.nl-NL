@@ -1,6 +1,6 @@
 ---
-title: Players in rasters installeren en configureren als Cloud Service
-description: In deze pagina wordt beschreven hoe u spelers op schermen als Cloud Service kunt installeren en configureren.
+title: Players in as a Cloud Service schermen installeren en configureren
+description: In deze pagina wordt beschreven hoe u spelers in as a Cloud Service schermen kunt installeren en configureren.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# Players in rasters installeren en configureren als Cloud Service {#installing-players-screens-cloud}
+# Players in as a Cloud Service schermen installeren en configureren {#installing-players-screens-cloud}
 
-In deze sectie wordt beschreven hoe u AEM Screens-spelers kunt installeren die zijn geregistreerd op externe AEM. Bovendien moet u de bestaande speler opnieuw instellen in de fabriek en de nieuwe speler vervolgens registreren bij AEM Screens als Cloud Service.
+In deze sectie wordt beschreven hoe u AEM Screens-spelers kunt installeren die zijn geregistreerd op externe AEM. Bovendien moet u de bestaande speler opnieuw instellen in de fabriek en de nieuwe speler vervolgens registreren tegen AEM Screens as a Cloud Service.
 
 ## Doelstelling {#objective}
 
@@ -22,7 +22,7 @@ Dit document helpt u te begrijpen hoe u de speler kunt instellen voordat u de sp
 
 ## Stappen om de speler in te stellen op de cloudmodus {#cloud-mode-setup}
 
-Wanneer u de nieuwste speler hebt gedownload van [AEM Screens Player Downloads](https://download.macromedia.com/screens/), kunt u de speler nu bijwerken naar de Cloud-modus.
+Wanneer u de nieuwste speler hebt gedownload van [Downloads voor AEM Screens Player](https://download.macromedia.com/screens/), kunt u de speler nu bijwerken naar de cloud-modus.
 
 Voer de onderstaande stappen uit om uw speler bij te werken:
 
@@ -31,21 +31,21 @@ Voer de onderstaande stappen uit om uw speler bij te werken:
    >[!NOTE]
    >U kunt kiezen of u wilt testen met specifieke hardwareapparaten of met een webextensie voor uw eigen speler.
 
-1. Klik op de tab **Configuration** en klik op **To Factory** onder **Reset**.
+1. Klik op de knop **Configuratie** en klik op **Naar fabriek** knop onder **Herstellen** optie.
 
    ![afbeelding](/help/screens-cloud/assets/player/installplayer-2.png)
 
-1. Klik op **Bevestig** om de speler opnieuw in te stellen.
+1. Klikken op **Bevestigen** om de speler opnieuw in te stellen.
 
-1. Opnieuw van **Configuratie** tabel en klik op **Verandering in de Wijze van de Wolk** knoop onder **Runmode** optie van de Wisselen.
+1. Opnieuw vanaf de **Configuratie** en klik op **Wijzigen in de cloudmodus** knop onder **Runmode schakelen** optie.
 
    ![afbeelding](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. Klik op **Bevestig** dat ertoe aanzet wanneer het schakelen naar wolkenwijze de speler zal schrappen-register.
+1. Klikken op **Bevestigen** die ertoe aanzet wanneer overschakeling op wolkenwijze zal de speler deregistreren.
 
 ## Standaardafspeelcontrole {#playback-monitoring}
 
-De speler rapporteert verschillende afspeelmetriek met elke `ping` die standaard op 30 seconden wordt ingesteld. Gebaseerd op deze metriek, kunnen wij diverse randgevallen zoals vastgezette ervaring, leeg scherm, en het plannen kwesties ontdekken. Dit laat ons kwesties op het apparaat begrijpen en problemen oplossen, en bespoedigt zo een onderzoek en correctieve maatregelen met u.
+De speler rapporteert verschillende afspeelmetriek voor elke speler `ping` dat is standaard 30 seconden. Gebaseerd op deze metriek, kunnen wij diverse randgevallen zoals vastgezette ervaring, leeg scherm, en het plannen kwesties ontdekken. Dit laat ons kwesties op het apparaat begrijpen en problemen oplossen, en bespoedigt zo een onderzoek en correctieve maatregelen met u.
 
 Met de standaardafspeelcontrole in een AEM Screens-speler kunnen we:
 
@@ -57,7 +57,7 @@ Met de standaardafspeelcontrole in een AEM Screens-speler kunnen we:
 
 ### Eigenschappen {#understand-properties}
 
-De volgende eigenschappen worden in elke `ping` opgenomen:
+De volgende eigenschappen worden in elk `ping`:
 
 | Eigenschap | Beschrijving |
 |---|---|
@@ -80,7 +80,7 @@ Hieronder worden enkele beperkingen weergegeven voor elementaire afspeelcontrole
 
 * De speler rapporteert zijn eigen playbackstaat aan de server, zodat vereist het een actieve verbinding.
 
-* De eigenschap `isContentRendering` die de GPU controleert, is momenteel te hulpbronnenintensief om standaard te kunnen worden ingeschakeld en vereist expliciete opt-in bij de voorkeuren van de speler. U wordt aangeraden dit niet te gebruiken in combinatie met video&#39;s in productie.
+* De `isContentRendering` eigenschap die de GPU controleert, is momenteel te hulpbronnenintensief om standaard te kunnen worden ingeschakeld en vereist expliciete opt-in bij de voorkeuren voor spelers. U wordt aangeraden dit niet te gebruiken in combinatie met video&#39;s in productie.
 
 * Deze functie wordt alleen ondersteund voor reekskanalen en heeft nog geen betrekking op het gebruik van interactieve kanalen (SPA).
 
@@ -88,4 +88,4 @@ Hieronder worden enkele beperkingen weergegeven voor elementaire afspeelcontrole
 
 ## Volgende functies {#whats-next}
 
-Nu u de speler hebt geïnstalleerd en geconfigureerd in de cloud-modus, moet u uw schermen voortzetten als een Cloud Service-reis door het document opnieuw te bekijken, [Players in Screens registreren als een Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van Screens Services Provider.
+Nu u de speler hebt geïnstalleerd en geconfigureerd voor de cloud-modus, moet u de as a Cloud Service reis van de schermen voortzetten door het document opnieuw te bekijken. [Afspeellagen registreren in as a Cloud Service schermen](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van Screens Services Provider.

@@ -17,21 +17,21 @@ De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binn
 
 ## Inleiding {#introduction}
 
-### Artikel doelstelling {#article-objective}
+### Artikel {#article-objective}
 
 Dit artikel introduceert de basisconcepten van SPA alvorens de lezer door een analyse van de SPA redacteur door een eenvoudige SPA toepassing te gebruiken te leiden om basisinhoud het uitgeven aan te tonen. Vervolgens duikt het neer in de constructie van de pagina en hoe de SPA toepassing zich verhoudt tot en communiceert met de AEM SPA Editor.
 
 Het doel van deze inleiding en analyse is aan een AEM ontwikkelaar te tonen waarom SPA relevant zijn, hoe zij over het algemeen werken, hoe een SPA door de AEM Redacteur wordt behandeld SPA, en hoe het van een standaard AEM toepassing verschillend is.
 
-De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SPA Project app. Als u de stappen wilt volgen, moet u [de voorbeeld-WKND-SPA Project-app van GitHub hier downloaden en installeren.](https://github.com/adobe/aem-guides-wknd-spa)
+De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SPA Project app. Volg deze stappen [download en installeer de steekproefWKND SPAProject app van GitHub hier.](https://github.com/adobe/aem-guides-wknd-spa)
 
 >[!CAUTION]
 >
->Dit document gebruikt [WKND SPA Project app](https://github.com/adobe/aem-guides-wknd-spa) alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
+>In dit document worden de [WKND SPA Project-app](https://github.com/adobe/aem-guides-wknd-spa) uitsluitend voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 
 >[!TIP]
 >
->Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
+>Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK.
 
 ### Wat is een SPA? {#what-is-a-spa}
 
@@ -78,10 +78,10 @@ Door de pagina op de client te renderen, reageren de pagina-elementen sneller en
 >
 >Raadpleeg de artikelen voor technische details over SPA werken in AEM:
 >* [Aan de slag met SPA in AEM Reageren gebruiken](getting-started-react.md)
-* [Aan de slag met SPA in AEM Angular gebruiken](getting-started-angular.md)
-
-Raadpleeg het artikel voor een nadere uitleg van het ontwerp, de architectuur en de technische workflow van de SPA Editor:
-* [SPA Editor - Overzicht](editor-overview.md).
+>* [Aan de slag met SPA in AEM Angular gebruiken](getting-started-angular.md)
+>
+>Raadpleeg het artikel voor een nadere uitleg van het ontwerp, de architectuur en de technische workflow van de SPA Editor:
+>* [Overzicht SPA Editor](editor-overview.md).
 
 
 ## Ervaring voor het bewerken van inhoud met SPA {#content-editing-experience-with-spa}
@@ -94,7 +94,7 @@ Wanneer een SPA is gemaakt om gebruik te maken van de AEM SPA Editor, merkt de a
 
    ![WKND SPA Project home](assets/wknd-home.png)
 
-1. Selecteer een tekstcomponent. Een werkbalk ziet er net zo uit als een andere component. Selecteer **Bewerken**.
+1. Selecteer een tekstcomponent. Een werkbalk ziet er net zo uit als een andere component. Selecteren **Bewerken**.
 
    ![Tekstcomponent selecteren](assets/wknd-text.png)
 
@@ -113,16 +113,18 @@ Wanneer een SPA is gemaakt om gebruik te maken van de AEM SPA Editor, merkt de a
 Extra ontwerpgereedschappen, zoals het slepen en neerzetten van aanvullende componenten op de pagina, het opnieuw rangschikken van componenten en het wijzigen van de layout, worden ondersteund, net als in elke andere AEM.
 
 >[!NOTE]
-De SPA Editor wijzigt het DOM van de toepassing niet. De SPA zelf is verantwoordelijk voor het DOM.
-Als u wilt zien hoe dit werkt, gaat u verder naar het volgende gedeelte van dit artikel [SPA Apps en de AEM SPA Editor](#spa-apps-and-the-aem-spa-editor).
+>
+>De SPA Editor wijzigt het DOM van de toepassing niet. De SPA zelf is verantwoordelijk voor het DOM.
+>
+>Ga naar de volgende sectie van dit artikel om te zien hoe dit werkt [Apps en de AEM SPA Editor SPA](#spa-apps-and-the-aem-spa-editor).
 
-## Apps en de AEM SPA Redacteur {#spa-apps-and-the-aem-spa-editor} SPA
+## Apps en de AEM SPA Editor SPA {#spa-apps-and-the-aem-spa-editor}
 
 Door te ervaren hoe een SPA zich gedraagt voor de eindgebruiker en vervolgens de SPA pagina te inspecteren, kunt u beter begrijpen hoe een SAP-app werkt met de SPA Editor in AEM.
 
-### Een SPA toepassing {#using-an-spa-application} gebruiken
+### Een SPA toepassing gebruiken {#using-an-spa-application}
 
-1. Laad de WKND SPA-projecttoepassing op de publicatieserver of met de optie **Weergeven als gepubliceerd** in het menu **Pagina-informatie** in de paginaeditor.
+1. Laad de WKND SPA-projecttoepassing op de publicatieserver of met de optie **Weergeven als gepubliceerd** van de **Pagina-informatie** in de pagina-editor.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -144,11 +146,11 @@ Door te ervaren hoe een SPA zich gedraagt voor de eindgebruiker en vervolgens de
 
 Dus als de pagina niet opnieuw wordt geladen wanneer u door de onderliggende pagina&#39;s navigeert, hoe wordt deze geladen?
 
-In de volgende sectie, [Een SPA toepassing laden](#loading-a-spa-application), wordt dieper ingegaan op de mechanica van het laden van de SPA en hoe de inhoud synchroon en asynchroon kan worden geladen.
+de volgende afdeling, [Een SPA-toepassing laden](#loading-a-spa-application), gaat dieper in de mechanica van het laden van de SPA en hoe de inhoud synchroon en asynchroon kan worden geladen.
 
-### Een SPA {#loading-a-spa-application} laden
+### Een SPA laden {#loading-a-spa-application}
 
-1. Laad, indien nog niet geladen, de WKND-SPA Project-app op de publicatieserver of met de optie **Weergeven als gepubliceerd** in het menu **Pagina-informatie** in de pagina-editor.
+1. Laad, indien nog niet geladen, de WKND SPA Project-app op de publicatieserver of met de optie **Weergeven als gepubliceerd** van de **Pagina-informatie** in de pagina-editor.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -156,7 +158,7 @@ In de volgende sectie, [Een SPA toepassing laden](#loading-a-spa-application), w
 
 1. Gebruik het ingebouwde gereedschap van uw browser om de bron van de pagina weer te geven.
 1. De inhoud van de bron is beperkt.
-   * De pagina heeft geen inhoud in de hoofdtekst. Het bestaat hoofdzakelijk uit stijlbladen en een vraag aan diverse manuscripten zoals `clientlib-react.min.js`.
+   * De pagina heeft geen inhoud in de hoofdtekst. Het bestaat voornamelijk uit stijlpagina&#39;s en een aanroep naar verschillende scripts, zoals `clientlib-react.min.js`.
    * Deze scripts vormen de belangrijkste stuurprogramma&#39;s voor deze toepassing en zijn verantwoordelijk voor het renderen van alle inhoud.
 
 1. Gebruik de ingebouwde gereedschappen van uw browser om de pagina te inspecteren. Zie de inhoud van de DOM volledig geladen.
@@ -169,13 +171,13 @@ In de volgende sectie, [Een SPA toepassing laden](#loading-a-spa-application), w
 
    ![WKND SPA Projectnetwerkactiviteit](assets/wknd-network.png)
 
-1. Laad `home.model.json` in een nieuw lusje.
+1. Laad de `home.model.json` op een nieuw tabblad.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.model.json`
 
    ![JSON van de homepage van het SPA WKND Project](assets/wknd-json.png)
 
-   De AEM SPA Editor gebruikt [AEM Content Services](/help/assets/content-fragments/content-fragments.md) om de volledige inhoud van de pagina als een JSON-model te leveren.
+   De AEM SPA Editor gebruikt [AEM Content Services](/help/assets/content-fragments/content-fragments.md) om de volledige inhoud van de pagina als JSON-model te leveren.
 
    Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan de SPA. De levering van de JSON-gegevens wordt naar beneden gedelegeerd aan elke component (van pagina, alinea, component, enz.).
 
@@ -183,17 +185,17 @@ In de volgende sectie, [Een SPA toepassing laden](#loading-a-spa-application), w
 
 1. Het model kan pagina&#39;s ook groeperen zodat ze synchroon worden geladen, waardoor het aantal pagina&#39;s dat opnieuw moet worden geladen, afneemt.
 
-   In het voorbeeld van WKND SPA Project worden de pagina&#39;s `home`, `page-1`, `page-2` en `page-3` synchroon geladen, aangezien bezoekers doorgaans alle pagina&#39;s bezoeken.
+   In het voorbeeld van de WKND-SPA Project-app `home`, `page-1`, `page-2`, en `page-3` De pagina&#39;s worden synchroon geladen, aangezien bezoekers doorgaans al deze pagina&#39;s bezoeken.
 
    Dit gedrag is niet verplicht en is volledig definieerbaar.
 
    ![WKND SPA Projectitemgroepering](assets/wknd-pages.png)
 
-1. Als u dit verschil in gedrag wilt zien, laadt u de pagina `home` opnieuw en wist u de netwerkactiviteit van de inspecteur. Navigeer naar `page-1` in het paginamenu en controleer of de enige netwerkactiviteit een aanvraag is voor het image van `page-1`. `page-1` zelf hoeft niet te worden geladen.
+1. Als u dit verschil in gedrag wilt weergeven, laadt u het gereedschap `home` en wist de netwerkactiviteit van de inspecteur. Navigeren naar `page-1` in het paginamenu en controleer of de enige netwerkactiviteit een verzoek is om het image van `page-1`. `page-1` zelf hoeft niet te worden geladen.
 
    ![WKND SPA Project page-1 netwerkactiviteit](assets/wknd-page1-network.png)
 
-### Interactie met de SPA-editor {#interaction-with-the-spa-editor}
+### Interactie met de SPA Editor {#interaction-with-the-spa-editor}
 
 Met behulp van de voorbeeldtoepassing WKND SPA Project is het duidelijk hoe de app zich gedraagt en wordt geladen wanneer deze wordt gepubliceerd, waarbij gebruik wordt gemaakt van inhoudsservices voor het leveren van JSON-inhoud en het asynchroon laden van bronnen.
 
@@ -201,7 +203,7 @@ Voor de auteur van de inhoud is het maken van inhoud met een SPA-editor bovendie
 
 In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur toestaat om componenten binnen de SPA met AEM componenten te verbinden en deze naadloze het uitgeven ervaring te bereiken.
 
-1. Laad de WKND SPA toepassing van het Project in de redacteur en schakelaar aan **Voorproef** wijze.
+1. Laad de WKND SPA toepassing van het Project in de redacteur en schakelaar aan **Voorvertoning** in.
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
@@ -222,21 +224,24 @@ In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur to
    Bepaalde specifieke klassenamen worden ook toegevoegd voor het markeren van plaatsaanduidingen en voor het slepen en neerzetten van elementen.
 
    >[!NOTE]
-   Dit gedrag verschilt van gerenderde pagina&#39;s aan serverzijde in AEM, waar een `cq`-element is ingevoegd voor elke bewerkbare component.
-   Deze benadering in de Redacteur van de SPA verwijdert de behoefte om douaneelementen te injecteren, die slechts een extra gegevensattribuut baseren, die de prijsverhoging voor de frontend ontwikkelaar eenvoudiger maken.
+   >
+   >Dit gedrag verschilt van gerenderde pagina&#39;s aan serverzijde in AEM, waar een `cq` element ingevoegd voor elke bewerkbare component.
+   >
+   >Deze benadering in de Redacteur van de SPA verwijdert de behoefte om douaneelementen te injecteren, die slechts een extra gegevensattribuut baseren, die de prijsverhoging voor de frontend ontwikkelaar eenvoudiger maken.
 
 ## Hoofdletters en headless in AEM {#headful-headless}
 
 SPA kunnen worden ingeschakeld met flexibele integratieniveaus binnen AEM, met inbegrip van SPA die buiten AEM zijn ontwikkeld en onderhouden. Bovendien kan SPA worden gebruikt binnen AEM terwijl ook AEM wordt gebruikt om inhoud aan extra eindpunten zonder problemen te leveren.
 
 >[!TIP]
-Zie het document [Headful en Headless in AEM](/help/implementing/developing/headful-headless.md) voor meer informatie.
+>
+>Zie het document [Hoofdletters en headless in AEM](/help/implementing/developing/headful-headless.md) voor meer informatie .
 
 ## Volgende stappen {#next-steps}
 
 Nu u de SPA het uitgeven ervaring in AEM begrijpt en hoe een SPA op de SPA Redacteur betrekking heeft, neem een diepgaande duik in het begrijpen van hoe een SPA wordt gebouwd.
 
-* [Aan de slag met SPA in AEM met ](getting-started-react.md) Reactshows hoe een basisSPA is gemaakt om met de SPA Editor te werken in AEM Reageren
-* [Aan de slag met SPA in AEM met ](getting-started-angular.md) Angularshows hoe een basisSPA is gemaakt om met de SPA Editor in AEM Angular te werken
-* [SPA de ](editor-overview.md) Overzichten van de Redacteur gaat dieper in het communicatie model tussen AEM en de SPA.
-* [Het ontwikkelen van SPA voor ](developing.md) AEMbeschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een SPA voor AEM te ontwikkelen evenals hoe SPA met AEM architectuur in wisselwerking staan.
+* [Aan de slag met SPA in AEM met Reageren](getting-started-react.md) toont hoe een basis SPA wordt gebouwd om met de SPARedacteur in AEM het gebruiken van React te werken
+* [Aan de slag met SPA in AEM met Angular](getting-started-angular.md) toont hoe een basis SPA wordt gebouwd om met de SPARedacteur in AEM het gebruiken van Angular te werken
+* [Overzicht SPA Editor](editor-overview.md) gaat dieper in het communicatie model tussen AEM en de SPA.
+* [SPA ontwikkelen voor AEM](developing.md) beschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een SPA voor AEM te ontwikkelen evenals hoe SPA met AEM architectuur in wisselwerking staan.

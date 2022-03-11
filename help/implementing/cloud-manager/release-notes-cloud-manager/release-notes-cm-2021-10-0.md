@@ -2,7 +2,8 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.10.0
 description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.10.0
 feature: Release Information
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+exl-id: f8a87b00-52ce-42a6-a955-45cb14703b40
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -50,4 +51,3 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.10.0 is 14 okt
 * Bepaalde interne verzoeken die tijdens het creëren van het milieu werden gedaan, werden niet opnieuw beproefd.
 
 * Als de plaatsing mislukte fout na de controle van de domeinnaam voorkomt, is het foutenbericht verbeterd om de klant te verzoeken om hun vertegenwoordiger van de Adobe te contacteren.
-

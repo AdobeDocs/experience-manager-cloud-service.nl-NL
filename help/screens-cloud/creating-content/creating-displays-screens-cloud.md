@@ -1,15 +1,15 @@
 ---
-title: Weergaven in rasters maken en beheren als Cloud Service
-description: Op deze pagina wordt beschreven hoe u beeldschermen als Cloud Service kunt maken en beheren.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+title: Weergaven maken en beheren in as a Cloud Service schermen
+description: Op deze pagina wordt beschreven hoe u weergaven in as a Cloud Service schermen maakt en beheert.
+exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 1%
 
 ---
 
-
-# Weergaven in rasters maken en beheren als Cloud Service {#create-displays-screens-cloud}
+# Weergaven maken en beheren in as a Cloud Service schermen {#create-displays-screens-cloud}
 
 Nadat u uw kanaal hebt gepubliceerd, is het nu tijd om weergave te maken in de Raster Services Provider.
 
@@ -25,16 +25,16 @@ Dit document helpt u te begrijpen hoe u vertoningen in de Dienstverlener van de 
 
 Voer de onderstaande stappen uit om de weergave te maken van Screens Services Provider:
 
-1. Navigeer aan de Leverancier van de Diensten van het Scherm van uw AEM instantie van de Cloud Service.
-1. Selecteer **Weergaven** in het linkernavigatievenster en klik op **Maken** in de rechterbovenhoek van het scherm.
+1. Navigeer naar Screens Services Provider vanuit uw AEM Cloud Service-exemplaar.
+1. Selecteren **Weergaven** in het linkernavigatievenster en klik op **Maken** in de rechterbovenhoek van het scherm.
 
    ![afbeelding](/help/screens-cloud/assets/display/disp-1.png)
 
-1. Selecteer **Weergave** in de actiebalk.
+1. Selecteren **Weergave** in de actiebalk.
 
    ![afbeelding](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Voer de titel in als **HerhalingChannelDisplay** in **Weergavenaam** en klik op **Maken**.
+1. Voer de titel in als **LoopingChannelDisplay** in **Weergavenaam** en klik op **Maken**.
 
    ![afbeelding](/help/screens-cloud/assets/display/disp3.png)
 
@@ -46,10 +46,10 @@ Voer de onderstaande stappen uit om de weergave te maken van Screens Services Pr
 
 U kunt een weergave verwijderen van de Raster Services Provider.
 
-Selecteer de weergave en klik op **Delete** onder aan het deelvenster, zoals in de onderstaande afbeelding wordt getoond.
+Selecteer de weergave en klik op **Verwijderen** onder aan het deelvenster, zoals in de onderstaande afbeelding wordt getoond.
 
 ![afbeelding](/help/screens-cloud/assets/display/disp-5.png)
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u hebt geleerd om vertoningen voor uw project tot stand te brengen en te beheren, zou u uw Schermen als reis van de Cloud Service moeten voortzetten door het document [Toewijzend Kanaal aan een Vertoning in Schermen als Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en) te herzien.
+Nu, dat u hebt geleerd hoe te om vertoningen voor uw project tot stand te brengen en te beheren, zou u uw as a Cloud Service reis van de Schermen door het document te herzien moeten voortzetten [Kanaal toewijzen aan een as a Cloud Service weergave in schermen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).

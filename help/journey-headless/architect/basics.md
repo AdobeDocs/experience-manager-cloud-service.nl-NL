@@ -1,6 +1,6 @@
 ---
-title: Learn Content Modeling Basics
-description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
+title: Basisbeginselen van Content Modeling
+description: Leer de basis van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Fragments van de Inhoud.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
@@ -9,141 +9,143 @@ ht-degree: 1%
 
 ---
 
-# Learn the Content Modeling Basics for Headless with AEM {#content-modeling-headless-basics}
+# Leer de basisbeginselen van de Content Modeling voor headless met AEM {#content-modeling-headless-basics}
 
-## The Story so Far {#story-so-far}
+## Het artikel tot nu toe {#story-so-far}
 
-[](overview.md)[](introduction.md)
+Aan het begin van de [Reis van architect zonder hoofdinhoud AEM](overview.md) de [Inleiding](introduction.md) heeft betrekking op de basisbeginselen en -terminologie die relevant zijn voor het modelleren van de inhoud voor koploze koppen.
 
-This article builds on these so you understand how to model your content for your AEM headless project.
+Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud voor uw project zonder AEM kunt modelleren.
 
-## Objective {#objective}
+## Doelstelling {#objective}
 
-* ****
-* ****
+* **Publiek**: Begin
+* **Doelstelling**: Introduceer de concepten Inhoud modelleren voor Hoofdloze CMS.
 
-## Content Modeling with Content Fragment Models {#architect-content-fragment-models}
+## Inhoud modelleren met modellen van inhoudsfragmenten {#architect-content-fragment-models}
 
-Content (Data) Modeling is a set of established techniques, often used when developed relationship databases, so what does Content Modeling mean for AEM Headless?
+De modellering van de inhoud (Gegevens) is een reeks gevestigde technieken, vaak gebruikt wanneer ontwikkelde relatiedatabases, zodat wat de Modellering van de Inhoud voor AEM Zwaartepunt betekent?
 
-### Why? {#why}
+### Waarom? {#why}
 
-To ensure that your application can consistently and efficiently request and receive the required content from AEM, this content must be structured.
+Om ervoor te zorgen dat uw toepassing de vereiste inhoud van AEM consistent en efficiënt kan aanvragen en ontvangen, moet deze inhoud gestructureerd zijn.
 
-This means that your application knows in advance the form of response and therefore, how to process it. This is much easier than receiving free-form content, which has to be parsed to determine what it contains and therefore, how it can be used.
+Dit betekent dat uw toepassing van tevoren de vorm van de reactie en daarom hoe te om het weet te verwerken. Dit is veel gemakkelijker dan het ontvangen van vrije-vorminhoud, die moet worden geparseerd om te bepalen wat het bevat en daarom, hoe het kan worden gebruikt.
 
-### Introduction to How? {#how}
+### Inleiding aan hoe? {#how}
 
-AEM uses Content Fragments to provide the structures needed for Headless delivery of your content to your applications.
+AEM gebruikt Content Fragments om de structuren te bieden die nodig zijn voor de levering van inhoud zonder kop aan uw toepassingen.
 
-The structure of your content model is:
+De structuur van het inhoudsmodel is:
 
-* realized by the definition of your Content Fragment Model,
-* used as a basis of the Content Fragments used for your content generation.
+* door de definitie van het inhoudsfragmentmodel wordt gerealiseerd,
+* gebruikt als basis voor de Inhoudsfragmenten die worden gebruikt voor het genereren van inhoud.
 
 >[!NOTE]
 >
->The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in the Developer Journey.
+>De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de AEM Schema GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in de Reis van de Ontwikkelaar wordt gebruikt.
 
-Requests for your content are made using the AEM GraphQL API, a customized implementation of the standard GraphQL API. The AEM GraphQL API allows applications to perform (complex) queries on your Content Fragments, with each query being according to a specific model type.
+Verzoeken om uw inhoud worden gemaakt met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. AEM GraphQL API staat toepassingen toe om (complexe) vragen op uw Fragments van de Inhoud uit te voeren, met elke vraag die volgens een specifiek modeltype is.
 
-The content returned can then be used by your applications.
+De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
 
-## Creating the Structure with Content Fragment Models {#create-structure-content-fragment-models}
+## De structuur maken met modellen van inhoudsfragmenten {#create-structure-content-fragment-models}
 
-Content Fragment Models provide various mechanisms that allow you to define the structure of your content.
+Modellen van inhoudsfragmenten bieden verschillende mechanismen waarmee u de structuur van de inhoud kunt definiëren.
 
-A Content Fragment Model describes an entity.
+Een inhoudsfragmentmodel beschrijft een entiteit.
 
 >[!NOTE]
->Content Fragment functionality must be enabled in the Configuration Browser so that you can create new models.
+>De functionaliteit van het Fragment van de inhoud moet in Browser van de Configuratie worden toegelaten zodat u nieuwe modellen kunt tot stand brengen.
 
 >[!TIP]
 >
->The model should be named so that the content author knows which model to select when creating a Content Fragment.
+>Het model moet een naam krijgen, zodat de auteur van de inhoud weet welk model moet worden geselecteerd bij het maken van een inhoudsfragment.
 
-Within a model:
+Binnen een model:
 
-1. ****
-********
-1. ********
-1. **** This is vital for your content modeling.
+1. **Gegevenstypen** kunt u de afzonderlijke kenmerken definiëren.
+U kunt bijvoorbeeld het veld met de naam van een docent definiëren als **Tekst** en hun dienstjaren als **Getal**.
+1. De gegevenstypen **Content Reference** en **Fragmentverwijzing** kunt u relaties maken met andere inhoud binnen AEM.
+1. De **Fragmentverwijzing** Met het gegevenstype kunt u meerdere structuurniveaus realiseren door de Content Fragments (op basis van het modeltype) te nesten. Dit is van essentieel belang voor het modelleren van inhoud.
 
 Bijvoorbeeld:
 
-![](assets/headless-modeling-01.png "")
+![Inhoud modelleren met inhoudsfragmenten](assets/headless-modeling-01.png "Inhoud modelleren met inhoudsfragmenten")
 
-## Data Types {#data-types}
+## Gegevenstypen {#data-types}
 
-AEM provides the following data types for you to model your content:
+AEM bevat de volgende gegevenstypen waarmee u uw inhoud kunt modelleren:
 
-* Single line text
-* Multi line text
-* Number
+* Tekst met één regel
+* Tekst met meerdere regels
+* Getal
 * Boolean
 * Datum en tijd
-* Enumeration
+* Opsomming
 * Tags
 * Content Reference
-* Fragment Reference
-* JSON Object
+* Fragmentverwijzing
+* JSON-object
 
 >[!NOTE]
 >
->Further details are available under Content Fragment Models - Data Types.
+>Meer details zijn beschikbaar onder Modellen van het Fragment van de Inhoud - de Types van Gegevens.
 
-## References and Nested Content {#references-nested-content}
+## Verwijzingen en geneste inhoud {#references-nested-content}
 
-Two data types provide references to content outside a specific fragment:
+Twee gegevenstypen bevatten verwijzingen naar inhoud buiten een specifiek fragment:
 
-* ****
-For example, you can reference an image at a specified location.
+* **Content Reference**
+Dit verstrekt een eenvoudige verwijzing naar andere inhoud van om het even welk type.
+U kunt bijvoorbeeld naar een afbeelding op een bepaalde locatie verwijzen.
 
-* ****
-This type of reference is used to create nested content, introducing the relationships needed to model your content.
-The data type can be configured to allow fragment authors to:
-   * Edit the referenced fragment directly.
-   * Create a new content fragment, based on the appropriate model
-
->[!NOTE]
->
->You can also create ad hoc references by using links within Text blocks.
-
-## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
-
-****
-
-** This allows the headless application to follow the connections and access the content as necessary.
+* **Fragmentverwijzing**
+Hier vindt u verwijzingen naar andere inhoudsfragmenten.
+Dit type verwijzing wordt gebruikt om geneste inhoud te creëren, introducerend de verhoudingen nodig om uw inhoud te modelleren.
+Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
+   * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
+   * Een nieuw inhoudsfragment maken op basis van het juiste model
 
 >[!NOTE]
 >
->**
+>U kunt ook ad-hocverwijzingen maken met koppelingen in tekstblokken.
 
-Fragment References do just that - they allow you to reference another fragment.
+## Structuurniveaus (geneste fragmenten) {#levels-of-structure-nested-fragments}
 
-For example, you might have the following Content Fragment Models defined:
+Voor het modelleren van inhoud **Fragmentverwijzing** Met het gegevenstype kunt u meerdere niveaus van structuur en relaties maken.
 
-* City
-* Company
+Met deze referentie kunt u *verbinden* Diverse Content Fragment Models om interrelaties te vertegenwoordigen. Hierdoor kan de toepassing zonder kop de verbindingen volgen en zo nodig toegang krijgen tot de inhoud.
+
+>[!NOTE]
+>
+>Dit moet met voorzichtigheid worden gebruikt en de beste praktijken kunnen worden gedefinieerd als *nest zo veel als nodig is, maar zo weinig mogelijk*.
+
+Fragmentverwijzingen doen alleen dat - ze stellen u in staat naar een ander fragment te verwijzen.
+
+U kunt bijvoorbeeld de volgende modellen van inhoudsfragmenten definiëren:
+
+* Plaats
+* Bedrijf
 * Person
 * Awards
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers....en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
 
-And a Person can have an Award (or maybe two).
+En een persoon kan een Prijs (of misschien twee) hebben.
 
-* My Company - Company
-   * CEO - Person
-   * Employee(s) - Person
-      * Personal Award(s) - Award
+* Mijn bedrijf - Bedrijf
+   * CEO - Persoon
+   * Werknemer(s) - Persoon
+      * Persoonlijke onderscheiding(en) - Uitreiking
 
-And that&#39;s just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
+Dat is alleen maar voor starters. Afhankelijk van de complexiteit kan een prijs bedrijfsspecifiek zijn of kan een bedrijf zijn hoofdkantoor in een bepaalde stad hebben.
 
-Representing these interrelationships can be achieved with Fragment References, as they are understood by you (the architect), your content author and the headless applications.
+U kunt deze interrelaties vertegenwoordigen met fragmentverwijzingen, zoals u (de architect), de auteur van de inhoud en de toepassingen zonder kop ze begrijpt.
 
-## What&#39;s Next {#whats-next}
+## Volgende functies {#whats-next}
 
-[](model-structure.md) This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of modeling for headless.
+Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](model-structure.md). Dit zal de diverse beschikbare verwijzingen introduceren en bespreken, en hoe te om niveaus van structuur met de Verwijzingen van het Fragment tot stand te brengen - een zeer belangrijk deel van modellering voor headless.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -153,6 +155,6 @@ Representing these interrelationships can be achieved with Fragment References, 
 
 * [Authoring van concepten](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
+* [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** console, maar veel/de meeste eigenschappen zijn ook relevant voor het ontwerpen **Inhoudsfragmenten** onder de **Activa** console.
 
 * [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)

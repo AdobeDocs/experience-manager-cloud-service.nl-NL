@@ -16,6 +16,6 @@ Omdat AEM gebaseerd is op Sling en een opslagplaats JCR gebruikt, zijn de knoopt
 * [JCR-knooppunttypen](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling Node Types](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Daar komt nog bij. AEM biedt een reeks aangepaste knooppunttypen. Voor de huidigste lijst met alle bijbehorende eigenschappen, [gebruik CRXDE](/help/implementing/developing/tools/crxde.md) om de volgende weg in de AEM bewaarplaats te doorbladeren:
+Daar komt nog bij. AEM biedt een reeks aangepaste knooppunttypen. Voor de meest recente lijst met alle bijbehorende eigenschappen: [CRXDE gebruiken](/help/implementing/developing/tools/crxde.md) om door het volgende pad in de AEM te bladeren:
 
 `/jcr:system/jcr:nodeTypes`

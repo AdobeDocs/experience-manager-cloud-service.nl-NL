@@ -1,17 +1,17 @@
 ---
 title: Opvallende wijzigingen van de add-on van het kader voor de integratie van de handel (CIF)
 description: Opvallende veranderingen van het Kader voor de Integratie van de Handel (CIF) in vergelijking met de oude CIF-versies.
-exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%
 
 ---
 
-# Opvallende wijzigingen in de invoegtoepassing {#notable-changes} van het kader voor de integratie van de handel (CIF)
+# Opvallende veranderingen in de toe:voegen-on van het Kader van de Integratie van de Handel (CIF){#notable-changes}
 
-Adobe Experience Manager als Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM projecten te beheren. Om meer over deze mogelijkheden te leren, te volgen gelieve de verbinding voor [veranderingen in Experience Manager als Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM projecten te beheren. Als u meer wilt weten over deze mogelijkheden, volgt u de koppeling voor [wijzigingen in as a Cloud Service Experience Manager](/help/release-notes/aem-cloud-changes.md).
 
 In dit document worden de belangrijke verschillen tussen de add-on en oude CIF-versies van het kader voor de integratie van de handel (Commerce Integration Framework, CIF) belicht, die voornamelijk CIF Classic (Quickstart) en CIF Open-source worden genoemd.
 
@@ -19,7 +19,7 @@ In dit document worden de belangrijke verschillen tussen de add-on en oude CIF-v
 
 De AEM CIF-invoegtoepassing wordt geïnstalleerd via Cloud Manager. Voor de installatie is een CIF-krediet vereist, behalve voor sandboxen waarin CIF zonder credits kan worden geïnstalleerd. Kredieten worden automatisch ontvangen via de levering van de CIF-invoegtoepassing in uw AEM.
 
-De invoegtoepassing wordt automatisch bijgewerkt als onderdeel van de normale AEM als een Cloud Service-update.
+De invoegtoepassing wordt automatisch bijgewerkt als onderdeel van de normale AEM as a Cloud Service updates.
 
 **Vorige CIF-versies**
 
@@ -38,7 +38,7 @@ Het eindpunt wordt gevormd en bijgewerkt of via de UI van de Manager van de Wolk
 
 ## Plaatsing van het CIF-project van Venia
 
-Project beschikbaar in [Cloud Manager Git Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) en implementatie uitgevoerd via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)
+Project beschikbaar in [Opslagplaats voor wolkenbeheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) en implementatie via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)
 
 **Vorige CIF-versies**
 
@@ -63,4 +63,4 @@ AEM geeft de ervaringen van de productcatalogus direct weer met behulp van AEM c
 
 >[!NOTE]
 >
->Raadpleeg [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) voor aanvullende documentatie over het gebruik van CIF met AEM Beheerde service of AEM On-premisse.
+>Voor extra documentatie over hoe te om CIF met AEM Beheerde Dienst of AEM On-premisse te gebruiken, verwijs naar [Kader voor integratie in de handel](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

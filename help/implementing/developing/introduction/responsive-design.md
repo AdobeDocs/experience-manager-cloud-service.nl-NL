@@ -1,7 +1,6 @@
 ---
 title: Responsief ontwerp
 description: Met responsief ontwerp kunnen dezelfde ervaringen effectief worden weergegeven op meerdere apparaten in meerdere richtingen
-translation-type: tm+mt
 source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
 source-wordcount: '492'
@@ -22,7 +21,7 @@ Ontwerp uw ervaringen zodat ze zich aanpassen aan de clientviewport waarin ze wo
 
 ![Voorbeelden van responsief ontwerp](assets/responsive-example.png)
 
-Ontwikkel Adobe Experience Manager (AEM) toepassingen die HTML5 genereren die zich aanpast aan meerdere venstergrootten en -standen. De volgende bereiken van viewport-breedten komen bijvoorbeeld overeen met verschillende apparaattypen en -oriëntaties
+Ontwikkel Adobe Experience Manager (AEM) toepassingen die HTML5 produceren die zich aan veelvoudige venstergrootte en richtlijn aanpassen. De volgende bereiken van viewport-breedten komen bijvoorbeeld overeen met verschillende apparaattypen en -oriëntaties
 
 * Maximale breedte van 480 pixels (telefoon, staand)
 * Maximale breedte van 767 pixels (telefoon, liggend)
@@ -36,9 +35,9 @@ Zie de volgende onderwerpen voor informatie over het uitvoeren van ontvankelijk 
 * [Vloeiende rasters](#developing-a-fluid-grid)
 * [Adaptieve afbeeldingen](#using-adaptive-images)
 
-Tijdens het ontwerpen kunt u de werkbalk **Emulator** gebruiken om een voorvertoning van uw pagina&#39;s weer te geven voor verschillende schermgrootten.
+Tijdens het ontwerpen kunt u de opdracht **Emulator** om een voorvertoning van uw pagina&#39;s voor verschillende schermgrootten weer te geven.
 
-## Voordat u {#before-you-develop} ontwikkelt
+## Voordat u ontwikkelt {#before-you-develop}
 
 Voordat u de AEM ontwikkelt die uw webpagina&#39;s ondersteunt, moet u een aantal ontwerpbeslissingen nemen. U moet bijvoorbeeld over de volgende informatie beschikken:
 
@@ -50,20 +49,20 @@ Voordat u de AEM ontwikkelt die uw webpagina&#39;s ondersteunt, moet u een aanta
 
 De typische AEM toepassingsstructuur ondersteunt alle responsieve ontwerpimplementaties:
 
-* Paginacomponenten bevinden zich onder `/apps/<application_name>/components`
-* Sjablonen bevinden zich onder `/apps/<application_name>/templates`
+* Paginacomponenten staan hieronder `/apps/<application_name>/components`
+* Sjablonen bevinden zich hieronder `/apps/<application_name>/templates`
 
-## Mediaquery&#39;s {#using-media-queries} gebruiken
+## Mediaquery&#39;s gebruiken {#using-media-queries}
 
 Met mediaquery&#39;s kunt u CSS-stijlen selectief gebruiken voor het weergeven van pagina&#39;s. AEM ontwikkelingshulpmiddelen en eigenschappen laten u toe om media vragen in uw toepassingen effectief en efficiënt uit te voeren.
 
-De W3C-groep biedt de aanbeveling [Mediaquery&#39;s](https://www.w3.org/TR/css3-mediaqueries/) waarmee deze CSS3-functie en de syntaxis worden beschreven.
+De W3C-groep biedt de [Mediaquery&#39;s](https://www.w3.org/TR/css3-mediaqueries/) een aanbeveling die deze CSS3-functie en de syntaxis beschrijft.
 
-### Het CSS-bestand {#creating-the-css-file} maken
+### Het CSS-bestand maken {#creating-the-css-file}
 
 Definieer in uw CSS-bestand mediaquery&#39;s op basis van de eigenschappen van de apparaten waarvoor u een mediaquery maakt. De volgende implementatiestrategie is effectief voor het beheren van stijlen voor elke mediaquery:
 
-* Gebruik een [map Clientbibliotheek](clientlibs.md) om de CSS te definiëren die wordt samengevoegd wanneer de pagina wordt weergegeven.
+* Een [Map Clientbibliotheek](clientlibs.md) om de CSS te definiëren die wordt samengesteld wanneer de pagina wordt weergegeven.
 * Definieer elke mediaquery en de bijbehorende stijlen in afzonderlijke CSS-bestanden. Het is handig bestandsnamen te gebruiken die de apparaatfuncties van de mediaquery vertegenwoordigen.
 * Definieer stijlen die op alle apparaten in een afzonderlijk CSS-bestand van toepassing zijn.
 * In het css.txt- dossier van de omslag van de Bibliotheek van de Cliënt, orde de lijst CSS dossiers zoals vereist in het geassembleerde CSS dossier.

@@ -1,29 +1,29 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.4.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2020.4.0
-feature: Geen informatie
+title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2020.4.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2020.4.0
+feature: Release Information
 exl-id: 15665fb5-9444-416b-938a-45c31fdce5cf
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2020.4.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2020.4.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2020.4.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2020.4.0 is 9 april 2020.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2020.4.0 is 9 april 2020.
 
 ## Wat is er nieuw? {#whats-new-cloud-manager}
 
 * De uitgever URLs zijn nu beschikbaar bij de pagina van het Milieu in de UI van de Manager van de Wolk.
 * Wijzigingen in navigatie om gebruikers toe te staan een programma te bewerken, te schakelen of toe te voegen vanuit de overzichtspagina van Cloud Manager.
 * Wijzigingen die gebruikers toestaan om programma te bewerken vanaf de landingspagina van de programmakaart op de landingspagina van Cloud Manager.
-* Nieuwe pijpleidingsstatus **Pijpleiding die** tegen het milieu wordt getoond het met wordt geassocieerd.
+* Nieuwe pijpleidingsstatus **Pijpleiding loopt** worden weergegeven tegen de omgeving waaraan het is gekoppeld.
 * Verbeteringen om de pagina van de pijpleidingsuitvoering begrijpelijk te maken. Dit omvat vertoning van de naam van de Pijpleiding (niet productiepijplijn slechts) en type, en een badge om erop te wijzen of is de pijpleidingsstatus Bezig/Geannuleerd/Ontbroken.
 * Knopinfo om de gebruikerservaring en de begrijpelijkheid te verbeteren rond de vraag waarom de knop Programma/omgeving toevoegen is uitgeschakeld.
 * Mislukte omgevingen kunnen nu worden verwijderd via de gebruikersinterface en de API.

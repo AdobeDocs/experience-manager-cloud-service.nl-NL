@@ -1,6 +1,6 @@
 ---
-title: Release-aantekeningen voor 2021.5.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
-description: Release-aantekeningen voor 2021.5.0-release van [!DNL Adobe Experience Manager] als Cloud Service.
+title: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] als Cloud Service {#release-notes}
+# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] als Cloud Service weergegeven.
+In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021 enzovoort.
@@ -22,30 +22,30 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 ## Releasedatum {#release-date}
 
-De Releasedatum voor [!DNL Adobe Experience Manager] als Cloud Service 2021.5.0 is 27 mei 2021.
+De releasedatum voor [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 is 27 mei 2021.
 De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
-## AEM als Stichting van de Cloud Service {#foundation}
+## AEM as a Cloud Service stichting {#foundation}
 
-### Wat in AEM als Stichting van de Cloud Service Nieuw is {#what-is-new-foundation}
+### Nieuw in AEM as a Cloud Service Stichting {#what-is-new-foundation}
 
-* [Prereleaskanaal](/help/release-notes/prerelease.md): Bekijk de volgende functies een volledige maand voordat u live gaat met de productie.
+* [Prerelease-kanaal](/help/release-notes/prerelease.md): Bekijk de volgende functies een volledige maand voordat u live gaat met de productie.
 
-* [API-afdrukking](/help/release-notes/deprecated-apis.md): er is een lijst beschikbaar met de meest recente verouderde API&#39;s die als Cloud Service AEM worden gebruikt.
+* [API-veroudering](/help/release-notes/deprecated-apis.md): er is een lijst beschikbaar van de meest recente vervangen API&#39;s voor AEM as a Cloud Service.
 
-* [AEM als Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Werk uw gemaakte projecten bij naar de nieuwste versie, die een verouderde Java API-controle en andere verbeteringen bevat.
+* [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Werk uw gemaakte projecten bij naar de nieuwste versie, die een verouderde Java API-controle en andere verbeteringen bevat.
 
-## [!DNL Adobe Experience Manager Sites] als  [!DNL Cloud Service] {#sites}
+## [!DNL Adobe Experience Manager Sites] als [!DNL Cloud Service] {#sites}
 
-### Nieuw in [!DNL Sites] {#what-is-new-sites}
+### Nieuwe functies in [!DNL Sites] {#what-is-new-sites}
 
-* U kunt binnenkort de inhoud op een nieuwe [Voorvertoningslaag](/help/sites-cloud/authoring/fundamentals/previewing-content.md) controleren om de weergave van de uiteindelijke ervaring te simuleren zoals u dat zou doen op de laag Publiceren. Dit wordt ingeschakeld door de AEM Sites Managed Publication-wizard, waarmee u nu een publicatiebestemming kunt kiezen tussen Publiceren of Voorvertoning. Ervaring met Voorvertoning is dan toegankelijk via een specifieke URL. Na validatie bij Voorvertoning kan inhoud op de gebruikelijke manier van Auteur worden gepubliceerd om te publiceren. Het inschakelen van de voorvertoningsservice in AEM als een Cloud Service-omgeving zal in de komende weken geleidelijk worden geïmplementeerd.
+* U kunt de inhoud binnenkort verifiëren op een nieuwe [Voorvertoning laag](/help/sites-cloud/authoring/fundamentals/previewing-content.md) om de definitieve ervaring te simuleren kijkt en voelt zoals u op de Publish rij. Dit wordt ingeschakeld door de AEM Sites Managed Publication-wizard, waarmee u nu een publicatiebestemming kunt kiezen tussen Publiceren of Voorvertoning. Ervaring met Voorvertoning is dan toegankelijk via een specifieke URL. Na validatie bij Voorvertoning kan inhoud op de gebruikelijke manier van Auteur worden gepubliceerd om te publiceren. Het inschakelen van de voorvertoningsservice in AEM as a Cloud Service omgevingen wordt in de komende weken geleidelijk uitgevoerd.
 
-## [!DNL Adobe Experience Manager Assets] als  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
-### Nieuw in [!DNL Assets] {#what-is-new-assets}
+### Nieuwe functies in [!DNL Assets] {#what-is-new-assets}
 
-* U kunt de gedeelde elementen downloaden met de functie voor delen van koppeling. Deze download gebruikt nu een asynchrone service die sneller en ononderbroken downloads biedt, zelfs voor zeer grote downloads. Zie [Elementen downloaden](/help/assets/download-assets-from-aem.md#link-share-download).
+* U kunt de gedeelde elementen downloaden met de functie voor delen van koppeling. Deze download gebruikt nu een asynchrone service die sneller en ononderbroken downloads biedt, zelfs voor zeer grote downloads. Zie [downloadmiddelen](/help/assets/download-assets-from-aem.md#link-share-download).
 
    ![Postvak IN downloaden](/help/assets/assets/download-inbox.png)
 
@@ -57,34 +57,34 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
 * Met het gereedschap Asset Bulk Ingestor kunt u metagegevens toevoegen tijdens een grote opname.
 
-* Dankzij de verbeteringen in de gebruikerservaring wordt het aantal elementen in een map weergegeven. [!DNL Assets] geeft 1000+ weer voor meer dan 1000 elementen in een map.
+* Dankzij de verbeteringen in de gebruikerservaring wordt het aantal elementen in een map weergegeven. Voor meer dan 1000 elementen in een map: [!DNL Assets] geeft 1000+ weer.
 
    ![Het aantal elementen in een map wordt weergegeven op de interface](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### Buizen vastgesteld in [!DNL Assets] {#assets-bugs-fixed}
 
-* Tijdens het uploaden van zeer grote bestanden loopt [!DNL Experience Manager desktop app] vast. (CQ-4320942)
+* Als u zeer grote bestanden uploadt, loopt de [!DNL Experience Manager desktop app]. (CQ-4320942)
 * De werkbalkopties verschillen wanneer dezelfde verzameling in een map is geselecteerd en wanneer deze is geselecteerd uit een zoekresultaat. (CQ-4321406)
 
 #### Nieuw in Dynamic Media {#what-is-new-dm}
 
-* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u afbeeldingen van de beste kwaliteit efficiënt leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md) en [Optimalisatie van afbeeldingen met de volgende generatie afbeeldingsindelingen WebP en AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) voor meer informatie.
+* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u afbeeldingen van de beste kwaliteit efficiënt leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Zie voor meer informatie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md) en [Optimalisatie van afbeeldingen met de volgende generatie afbeeldingsindelingen WebP en AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * Introductie van ondersteuning voor AVIF van de volgende generatie bij levering via Dynamic Media (fmt URL-modifier).
 
-## [!DNL Adobe Experience Manager Forms] als  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
-### Nieuw in [!DNL Forms] {#what-is-new-forms}
+### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
 * **Contextafhankelijke Help**: Er is contextafhankelijke Help toegevoegd voor een aangepaste formuliereditor, sjablooneditor en themaeditor, zodat ontwerpers meer inzicht kunnen krijgen in verschillende functies van editors.
-* **Foutberichten in de browser** Eigenschappen: Foutberichten toegevoegd voor elke eigenschap in de browser Adaptive Forms Properties. Met deze berichten kunt u de toegestane waarden voor een veld beter begrijpen.
+* **Foutberichten in de browser Eigenschappen**: Foutberichten toegevoegd voor elke eigenschap in de browser Adaptive Forms Properties. Met deze berichten kunt u de toegestane waarden voor een veld beter begrijpen.
 
-### Opkomende bètafunctie van [!DNL Forms] {#what-is-new-forms-prerelease}
+### De aanstaande bètafunctie van [!DNL Forms] {#what-is-new-forms-prerelease}
 
 Uitvoeren als cloudservice: Met de uitvoerservice kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone en asynchrone batchmodus. Met uitvoerservice kunt u toepassingen maken waarmee u:
 
 * Definitieve formulierdocumenten genereren door sjabloonbestanden te vullen met XML-gegevens.
 * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
-* Afdruk-PDF&#39;s genereren op basis van XFA-formulier-PDF&#39;s.
+* Afdruk-PDF genereren op basis van XFA-formulier-PDF.
 
 U kunt schrijven naar formscsbeta@adobe.com om u aan te melden voor het bètaprogramma.
 
@@ -97,11 +97,11 @@ U kunt schrijven naar formscsbeta@adobe.com om u aan te melden voor het bètapro
 
 ## Cloud Manager {#cloud-manager}
 
-In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM beschreven als Cloud Service 2021.5.0.
+In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.5.0 beschreven.
 
 ### Releasedatum {#release-date-cm-may}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.5.0 is 6 mei 2021.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.5.0 is 6 mei 2021.
 De volgende release is gepland voor 3 juni 2021.
 
 ### Wat is er nieuw? {#what-is-new-may}
@@ -128,7 +128,7 @@ De volgende release is gepland voor 3 juni 2021.
 
 * Soms, kan de gebruiker een groene &quot;actieve&quot;status naast een IP Lijst van gewenste personen zien zelfs wanneer die configuratie niet werd opgesteld.
 
-* In plaats van &#39;verwijderde&#39; variabelen te verwijderen, markeert de API voor pijpleidingvariabelen deze alleen met status **DELETED**.
+* In plaats van &#39;verwijderde&#39; variabelen te verwijderen, markeert de API voor pijpleidingvariabelen deze alleen met status **VERWIJDERD**.
 
 * Sommige kwaliteitskwesties van het type Code Smell hadden een onjuiste invloed op de beoordeling Betrouwbaarheid.
 
@@ -148,7 +148,7 @@ De releasedatum voor Content Transfer Tool v1.4.6 is 27 mei 2021.
 
 * De nieuwe logboekverklaring werd toegevoegd aan het foutenlogboek van QuickStart, als de gebruiker geen toestemming op uitvoerbaar Java heeft.
 
-* Wanneer een gebruiker een migratieset verwijdert uit de CTT UI, waar een extractie is uitgevoerd, wordt de `tmp`-map die aan die migratieset is gekoppeld, verwijderd om ruimte te besparen.
+* Wanneer een gebruiker een migratieset verwijdert uit de CTT UI, waar een extractie is uitgevoerd, wordt `tmp` de map die aan die migratieset is gekoppeld, wordt verwijderd om ruimte te besparen.
 
 ### Opgeloste problemen {#bug-fixes-ctt-latest}
 
@@ -168,7 +168,7 @@ De releasedatum voor Content Transfer Tool v1.4.0 is 11 mei 2021.
 ### Opgeloste problemen {#bug-fixes-ctt-may}
 
 * De veelvoudige insectenmoeilijke situaties verwant met auto-verfrissen eigenschap in het Hulpmiddel van de Overdracht van de Inhoud UI.
-* Het hulpmiddel van de Overdracht van de inhoud met `wipe=true` resulteerde in onjuiste tellerindex op het doel. Dit is opgelost.
+* Inhoud overbrengen met `wipe=true` heeft geresulteerd in een onjuiste telindex op het doel. Dit is opgelost.
 
 ## Commerce Add-on {#cloud-services-commerce}
 

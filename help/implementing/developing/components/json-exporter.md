@@ -9,7 +9,7 @@ ht-degree: 2%
 
 ---
 
-# JSON-exportfunctie voor inhoudsservices {#json-exporter-for-content-services}
+# JSON-exportfunctie voor services voor inhoud {#json-exporter-for-content-services}
 
 AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM buiten de focus van webpagina&#39;s te veralgemenen.
 
@@ -25,7 +25,7 @@ Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u de inhoudsdie
 
 Met de AEM JSON-exportfunctie kunt u de inhoud van een (y) AEM pagina in de indeling van het JSON-gegevensmodel leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
 
-Binnen AEM wordt de levering bereikt gebruikend de selecteur `model` en `.json` uitbreiding.
+Binnen AEM wordt de levering bereikt met behulp van de kiezer `model` en `.json` extensie.
 
 `.model.json`
 
@@ -41,7 +41,7 @@ Binnen AEM wordt de levering bereikt gebruikend de selecteur `model` en `.json` 
 
 U kunt de inhoud van een gestructureerd inhoudsfragment ook leveren door dit specifiek te activeren.
 
-Dit wordt gedaan gebruikend de volledige weg aan het fragment (via `jcr:content`); bijvoorbeeld met een achtervoegsel zoals
+Dit doet u door het volledige pad naar het fragment te gebruiken (via de `jcr:content`); bijvoorbeeld met een achtervoegsel zoals
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -59,11 +59,11 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 
    >[!NOTE]
    >
-   >U kunt [uw eigen componenten ](enabling-json-exporter.md) aanpassen om tot deze gegevens toegang te hebben en te gebruiken.
+   >U kunt [uw eigen componenten aanpassen](enabling-json-exporter.md) om deze gegevens te openen en te gebruiken.
 
    >[!NOTE]
    >
-   >Hoewel geen standaardimplementatie, [worden de veelvoudige selecteurs gesteund, ](enabling-json-exporter.md#multiple-selectors) maar `model` moet de eerste zijn.
+   >Hoewel het geen standaardimplementatie is, [meerdere kiezers worden ondersteund,](enabling-json-exporter.md#multiple-selectors) maar `model` moet de eerste zijn.
 
 ### Aanvullende informatie {#further-information}
 
@@ -83,4 +83,4 @@ Zie voor meer informatie:
 * [Inhoudsfragmenten in de gebruikershandleiding voor middelen](/help/assets/content-fragments/content-fragments.md)
 * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [De ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Componenten van de kern en de component van het Fragment van de  [Inhoud](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

@@ -1,14 +1,13 @@
 ---
 title: Developing and Page Diff
 description: Begrijp hoe de functie Pagina Diff werkt en hoe deze een ontwikkelaar kan beïnvloeden
-translation-type: tm+mt
-source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
+exl-id: 03c08616-2203-4b90-bed6-4836266e2507
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
 
 ---
-
 
 # Developing and Page Diff {#developing-and-page-diff}
 
@@ -16,11 +15,11 @@ ht-degree: 0%
 
 Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina met een vorige versie naast elkaar kunnen vergelijken met de gemarkeerde verschillen.
 
-Met het paginagecheiding kan een gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Paginadiff](/help/sites-cloud/authoring/features/page-diff.md) voor meer informatie over deze gebruikersfunctie.
+Met het paginagecheiding kan een gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Voor meer informatie over deze gebruikersfunctie raadpleegt u [Pagina grijs](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Bewerkingsdetails {#operation-details}
 
-Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wil vergelijken opnieuw gemaakt door op de achtergrond AEM te plaatsen om het afschuiven te vergemakkelijken. Dit is nodig om de inhoud [te kunnen weergeven voor vergelijking naast elkaar](/help/sites-cloud/authoring/features/page-diff.md).
+Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wil vergelijken opnieuw gemaakt door op de achtergrond AEM te plaatsen om het afschuiven te vergemakkelijken. Dit is nodig om de inhoud te kunnen renderen [voor vergelijking naast elkaar](/help/sites-cloud/authoring/features/page-diff.md).
 
 Deze recreatiebewerking wordt intern AEM uitgevoerd en is transparant voor de gebruiker en vereist geen interventie. Nochtans zou een beheerder die de bewaarplaats bijvoorbeeld in CRX DE Lite bekijkt deze ontspannen versies binnen de inhoudsstructuur zien.
 

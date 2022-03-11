@@ -1,14 +1,13 @@
 ---
 title: Asynchrone taken
 description: Adobe Experience Manager optimaliseert prestaties door sommige resource-intensieve taken asynchroon te voltooien.
-translation-type: tm+mt
-source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
+exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 100%
 
 ---
-
 
 # Asynchrone bewerkingen {#asynchronous-operations}
 
@@ -92,7 +91,7 @@ U kunt het schema wijzigen voor de opschoontaak en hoe lang details van voltooid
 
 U kunt configureren wat het maximum aantal assets, pagina’s of verwijzingen voor AEM is om een bepaalde bewerking asynchroon te verwerken en om e-mailmeldingen over de verwerking van taken in en uit te schakelen.
 
-### Asynchrone verwijderingsbewerkingen van assets configureren{#configuring-synchronous-delete-operations}
+### Asynchrone verwijderingsbewerkingen van assets configureren {#configuring-synchronous-delete-operations}
 
 Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wordt de verwijderingsbewerking asynchroon uitgevoerd.
 
@@ -105,7 +104,7 @@ Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wo
 1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
 1. Sla de wijzigingen op.
 
-### Asynchrone verplaatsingsbewerkingen van assets configureren{#configuring-asynchronous-move-operations}
+### Asynchrone verplaatsingsbewerkingen van assets configureren {#configuring-asynchronous-move-operations}
 
 Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 
@@ -118,7 +117,7 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
 1. Sla de wijzigingen op.
 
-### Asynchrone verplaatsingsbewerkingen van pagina’s configureren{#configuring-asynchronous-page-move-operations}
+### Asynchrone verplaatsingsbewerkingen van pagina’s configureren {#configuring-asynchronous-page-move-operations}
 
 Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 

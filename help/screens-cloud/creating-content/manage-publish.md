@@ -1,15 +1,15 @@
 ---
-title: Een kanaal in schermen publiceren als Cloud Service
-description: Op deze pagina wordt beschreven hoe u een kanaal in Schermen publiceert als een Cloud Service.
-source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
+title: Een kanaal publiceren in as a Cloud Service schermen
+description: Op deze pagina wordt beschreven hoe u een kanaal in as a Cloud Service schermen publiceert.
+exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
 
 ---
 
-
-# Kanalen in schermen publiceren als Cloud Service {#publish-channel-screens-cloud}
+# Kanalen in as a Cloud Service schermen publiceren {#publish-channel-screens-cloud}
 
 ## Inleiding {#introduction}
 
@@ -29,24 +29,24 @@ Dit document helpt u het publiceren van de uitgegeven inhoud aan de leverancier 
 
 Voer de onderstaande stappen uit om het kanaal te publiceren:
 
-1. Navigeer en selecteer het kanaal van uw project, zoals **FirstDigitalExperience** —> **Kanalen** —> **HerhalingskanaalOne**.
+1. Navigeer en selecteer het kanaal van uw project, zoals **FirstDigitalExperience** —> **Kanalen** —> **LoopingChannelOne**.
 
    ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
-1. Klik op **Publicatie beheren** in de actiebalk.
+1. Klikken op **Publicatie beheren** in de actiebalk.
 
-1. Selecteer **Actie** als **Publicatie** en **Planning** als **Now** van **Manage Publication Wizard** en klik op **Next**.
+1. Selecteer **Handeling** als **Publiceren** en **Planning** als **Nu** van de **De wizard Publicatie beheren** en klik op **Volgende**.
 
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >Klik **+ omvat Kinderen** van de actiebar en uncheck alle opties om alle modules in uw project te publiceren en klik toevoegen om te publiceren. Door gebrek, zullen alle dozen worden gecontroleerd en u zult manueel uncheck de dozen moeten om alle modules in uw project te publiceren.
+   >Klikken **+ Inclusief onderliggende items** in de actiebalk en schakel alle opties uit om alle modules in uw project te publiceren en klik op Toevoegen om te publiceren. Door gebrek, zullen alle dozen worden gecontroleerd en u zult manueel uncheck de dozen moeten om alle modules in uw project te publiceren.
 
-1. Nadat u het kanaal hebt geselecteerd via de wizard **Publicatie beheren**, klikt u op **Publiceren** om het kanaal te publiceren.
+1. Nadat u het kanaal hebt geselecteerd in het menu **Publicatie beheren** wizard, klik op **Publiceren** om het kanaal te publiceren.
 
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u uw kanalen in het project hebt gepubliceerd, zou u uw Schermen nu als reis van de Cloud Service moeten voortzetten door het document, [te herzien het Installeren van en het Vormen Players in Schermen als Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).
+Nu, dat u uw kanalen in het project hebt gepubliceerd, zou u uw as a Cloud Service reis van de Schermen door het document opnieuw te bekijken nu moeten voortzetten, [Players in as a Cloud Service schermen installeren en configureren](/help/screens-cloud/creating-content/manage-publish.md).

@@ -1,20 +1,20 @@
 ---
 title: Een vertakking maken
-description: Op deze pagina wordt beschreven hoe u een vertakking maakt in Cloud Manager for Screens als Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+description: Op deze pagina wordt beschreven hoe u een vertakking maakt in Cloud Manager for Screens as a Cloud Service.
+exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 1%
 
 ---
 
-
 # Een omgeving maken in Cloud Manager {#create-environment-screens-cloud}
 
 In deze sectie wordt beschreven hoe u een omgeving voor uw programma kunt maken in Cloud Manager.
 
 >[!NOTE]
->Raadpleeg [Omgevingen beheren in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) voor meer informatie over hoe de gebruiker een omgeving kan maken.
+>Zie [Omgevingen beheren in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) om te leren hoe de gebruiker een omgeving kan maken.
 
 ## Doelstelling {#objective}
 
@@ -24,13 +24,13 @@ In de volgende sectie wordt beschreven hoe u een omgeving voor uw programma kunt
 
 Zodra het project met succes wordt gecreeerd, zult u de vraag-aan-actie kaartupdate in de pagina van het Overzicht van de Manager van de Wolk zien.
 
-1. Navigeer naar Cloud Manager en selecteer het pictogram om naar de pagina **Overzicht** van Cloud Manager te gaan.
+1. Ga naar Cloud Manager en selecteer het pictogram om naar Cloud Manager te gaan **Overzicht** pagina.
 
-1. Klik op **Omgeving toevoegen** van de pagina **Overzicht** van Cloud Manager.
+1. Klikken op **Omgeving toevoegen** van de Cloud Manager **Overzicht** pagina.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. Selecteer de omgevingsdetails in het dialoogvenster **Omgeving toevoegen** en klik op **Opslaan**.
+1. Selecteer de omgevingsdetails in het menu **Omgeving toevoegen** en klik op **Opslaan**.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
@@ -40,5 +40,4 @@ Zodra het project met succes wordt gecreeerd, zult u de vraag-aan-actie kaartupd
 
 ## Volgende functies {#whats-next}
 
-Zodra u hebt geleerd hoe u een omgeving voor uw programma kunt instellen in Cloud Manager, kunt u nu verdergaan naar de volgende stap in het proces Onboarding, namelijk [De Pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md) uitvoeren.
-
+Zodra u hebt geleerd hoe u een omgeving voor uw programma kunt instellen in Cloud Manager, kunt u nu verdergaan naar de volgende stap in het proces Onboarding, dat wil zeggen: [De pijplijn uitvoeren](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

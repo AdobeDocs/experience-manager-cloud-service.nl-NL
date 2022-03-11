@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Integreren met Adobe Target{#integrating-with-adobe-target}
 
-Als onderdeel van de Adobe Marketing Cloud kunt u met [Adobe Target](http://www.adobe.com/solutions/testing-targeting/testandtarget.html) de relevantie van de inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Adobe Target wordt door marketers gebruikt voor het ontwerpen en uitvoeren van online tests, het maken van on-the-fly publiekssegmenten (gebaseerd op gedrag) en het automatiseren van het richten van inhoud en online ervaringen. AEM als Cloud Service heeft de doelworkflow overgenomen die wordt gebruikt in Adobe Target Standard. Als u Doel gebruikt, zult u met het richten het uitgeven milieu in AEM als Cloud Service vertrouwd zijn.
+In het kader van de Adobe Marketing Cloud [Adobe Target](http://www.adobe.com/solutions/testing-targeting/testandtarget.html) Hiermee kunt u de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Adobe Target wordt door marketers gebruikt voor het ontwerpen en uitvoeren van online tests, het maken van on-the-fly publiekssegmenten (gebaseerd op gedrag) en het automatiseren van het richten van inhoud en online ervaringen. AEM as a Cloud Service heeft de doelworkflow overgenomen die wordt gebruikt in Adobe Target Standard. Als u Doel gebruikt, zult u met het richten het uitgeven milieu in AEM as a Cloud Service vertrouwd zijn.
 
 Integreer uw AEM met Adobe Target om inhoud op uw pagina&#39;s aan te passen:
 
@@ -22,14 +22,14 @@ Integreer uw AEM met Adobe Target om inhoud op uw pagina&#39;s aan te passen:
 
 >[!NOTE]
 >
->Adobe Experience Manager als klanten van de Cloud Service die geen bestaande rekening van het Doel hebben, kan om toegang tot het Pak van de Stichting van het Doel voor Experience Cloud verzoeken.  Het Pak van de Stichting verstrekt volume beperkt gebruik van Doel.
+>De klanten van Adobe Experience Manager as a Cloud Service die geen bestaand rekening van het Doel hebben, kunnen om toegang tot het Pak van de Stichting van het Doel voor Experience Cloud verzoeken.  Het Pak van de Stichting verstrekt volume beperkt gebruik van Doel.
 
 
 Voer de volgende taken uit om met Doel te integreren:
 
-* [Voorwaardelijke taken](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html) uitvoeren: Registreer u bij Adobe Target en configureer bepaalde aspecten van de AEM auteur. Uw Adobe Target-account moet minimaal beschikken over **goedkeurmachtigingen op niveau**. Bovendien moet u de activiteitenmontages op publiceren knoop beveiligen zodat het voor gebruikers ontoegankelijk is.
+* [Voorwaardelijke taken uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html): Registreer u bij Adobe Target en configureer bepaalde aspecten van de AEM auteur. Je Adobe Target-account moet **fiatteur** minimaal niveau aan machtigingen. Bovendien moet u de activiteitenmontages op publiceren knoop beveiligen zodat het voor gebruikers ontoegankelijk is.
 
-* Launch by Adobe is het defacto hulpmiddel om een AEM plaats met de mogelijkheden van het Doel (bibliotheken JS) van instrumenten te voorzien. Daarom gaat de integratie van AEM als Cloud Service met Launch en Adobe Target hand in hand (zie de koppelingen hieronder).
+* Launch by Adobe is het defacto hulpmiddel om een AEM plaats met de mogelijkheden van het Doel (bibliotheken JS) van instrumenten te voorzien. De integratie van AEM as a Cloud Service met Launch en Adobe Target gaat daarom hand in hand (zie de koppelingen hieronder).
 
    * [Integratie met Adobe Target met Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
    * [Launch by Adobe integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
@@ -38,32 +38,30 @@ Voer de volgende taken uit om met Doel te integreren:
 
 >[!NOTE]
 >
->De configuratie IMS (technische rekeningen) voor Launch by Adobe wordt preconfigured in AEM als Cloud Service. Gebruikers hoeven deze configuratie niet te maken.
+>De configuratie IMS (technische rekeningen) voor Launch by Adobe wordt preconfigured in AEM as a Cloud Service. Gebruikers hoeven deze configuratie niet te maken.
 
-1. [Activiteiten](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html) configureren: Koppel uw activiteiten aan de doelwolkenconfiguratie.
+1. [Activiteiten configureren](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html): Koppel uw activiteiten aan de doelwolkenconfiguratie.
 
 >[!CAUTION]
 >
->In AEM als Cloud Service, wordt de replicatieagent die Aanbiedingen en Activiteiten van AEM aan Adobe Target synchroniseert door gebrek onbruikbaar gemaakt. Neem contact op met het [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager)-team als u de replicatieagent opnieuw moet inschakelen.
+>In AEM as a Cloud Service, wordt de replicatieagent die Aanbiedingen en Activiteiten van AEM aan Adobe Target synchroniseert onbruikbaar gemaakt door gebrek. Neem contact op met de [Adobe-ondersteuning](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) team als u de replicatieagent opnieuw moet toelaten.
 
 >[!NOTE]
 >
 >Als u Doel met een configuratie van de douanevolmacht gebruikt, moet u zowel de volmachtsconfiguraties van de Cliënt van HTTP vormen aangezien sommige functionaliteiten van AEM de 3.x APIs en sommige anderen 4.x APIs gebruiken:
 >
->* 3.x is geconfigureerd met [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 3.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
 >
-
 
 
 >[!CAUTION]
 >
->U moet het knooppunt activity settings **cq:ActivitySettings** op de publicatie-instantie beveiligen zodat dit niet toegankelijk is voor normale gebruikers. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
+>U moet het knooppunt met activiteiteninstellingen beveiligen **cq:ActivitySettings** op de publicatie-instantie zodat deze niet toegankelijk is voor normale gebruikers. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
 >
->Zie [Voorwaarden voor integratie met Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) voor meer informatie.
+>Zie [Vereisten voor integratie met Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) voor nadere informatie.
 
-Wanneer de integratie is voltooid, kunt u [door de auteur bepaalde inhoud](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html) verzenden die bezoekersgegevens naar Adobe Target verzendt. Paginacomponenten hebben specifieke code nodig om het aanwijzen van inhoud mogelijk te maken. (Zie [Ontwikkelen voor gerichte inhoud](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html).
+Wanneer de integratie is voltooid, kunt u [doelinhoud auteur](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html) die bezoekersgegevens naar Adobe Target verzendt. Paginacomponenten hebben specifieke code nodig om het aanwijzen van inhoud mogelijk te maken. (Zie [Ontwikkelen voor gerichte inhoud](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html).
 
 >[!NOTE]
 >
@@ -71,10 +69,10 @@ Wanneer de integratie is voltooid, kunt u [door de auteur bepaalde inhoud](https
 
 ## Bronnen voor achtergrondinformatie {#background-information-sources}
 
-Voor de integratie van AEM als Cloud Service met Adobe Target is kennis vereist van Adobe Target, AEM Activiteitenbeheer en AEM beheer van doelgroepen. U zou met de volgende informatie vertrouwd moeten zijn:
+Voor de integratie van AEM as a Cloud Service met Adobe Target is kennis van Adobe Target, AEM Activiteitenbeheer en AEM beheer van doelgroepen vereist. U zou met de volgende informatie vertrouwd moeten zijn:
 
 * Adobe Target (Zie de [Adobe Target-documentatie](https://experienceleague.adobe.com/docs/target/using/target-home.html)).
-* AEM Activiteitenconsole (zie [Activiteiten beheren](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html).
+* AEM Activiteitenconsole (zie [Beheersactiviteiten](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html).
 * AEM publiek (zie [Soorten publiek beheren](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html).
 
 >[!NOTE]

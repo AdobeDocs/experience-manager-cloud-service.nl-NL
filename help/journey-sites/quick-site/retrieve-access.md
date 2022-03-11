@@ -1,13 +1,13 @@
 ---
 title: Toegang tot Git Repository ophalen
 description: Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot gegevensopslagruimte.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 3%
 
 ---
-
 
 # Toegang tot Git Repository ophalen {#retrieve-access}
 

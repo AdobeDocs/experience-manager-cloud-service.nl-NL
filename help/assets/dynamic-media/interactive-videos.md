@@ -90,17 +90,17 @@ Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-as
 
 1. **Een interactieve video toevoegen aan uw website of uw website in Experience Manager** - Als u Experience Manager Sites of eCommerce gebruikt, of beide, voeg de interactieve video aan een Web-pagina in Experience Manager toe. Sleep de component Interactieve media naar de pagina. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 Gebruik de insluitcode of URL om uw interactieve video te integreren met uw ervaringen op de website. Zie [Een interactieve video integreren met uw website](#integrating-an-interactive-video-with-your-website).
-Als u een externe WCM (Web Content Manager) gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie [Een interactieve video integreren met een bestaande QuickView](#integrating-an-interactive-video-with-an-existing-quickview).
+Als u een externe WCM (Web Content Manager) gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. See [Integrate an interactive video with an existing Quickview](#integrating-an-interactive-video-with-an-existing-quickview).
    [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 ## (Optioneel) Quickview-variabelen identificeren {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 >
->Deze taak is alleen vereist als aan de volgende voorwaarden wordt voldaan:
+>This task is only required if the following are true:
 >
->* U wilt interactiviteit aan uw video toevoegen door aan Snelle meningen te teweegbrengen.
->* Uw implementatie van Experience Manager doet *niet* een eCommerce-integratieframework gebruiken om productgegevens vanuit elke eCommerce-oplossing, zoals IBM® WebSphere® Commerce, Elastic Path, SAP Hybris of Intershop, in de Experience Manager te krijgen. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
+>* You want to add interactivity to your video by triggering to Quick views.
+>* Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, SAP Hybris, or Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
 >Als uw implementatie van Experience Manager eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
 
@@ -270,11 +270,11 @@ Zie [Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-frag
 
 >[!NOTE]
 >
->De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
+>The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
 
-Opties voor Ongedaan maken en Opnieuw worden in de rechterbovenhoek van de pagina ondersteund tijdens de huidige sessie voor maken en bewerken.
+Undo and Redo options, near the upper-right corner of the page, are supported during your current creation/editing session.
 
-Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in Voorvertoning. Van daaruit kunt u een voorinstelling voor een interactieve videoviewer selecteren en de video afspelen om bij benadering te zien hoe deze er voor klanten uitziet.
+After you save your interactive video, the video is immediately opened into Preview. Van daaruit kunt u een voorinstelling voor een interactieve videoviewer selecteren en de video afspelen om bij benadering te zien hoe deze er voor klanten uitziet.
 
 **Om interactiviteit aan uw video toe te voegen:**
 
@@ -287,9 +287,9 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    * Selecteer de afbeelding om deze te openen op de pagina Detailweergave. Selecteer op de werkbalk de optie **[!UICONTROL Edit]**.
 
-1. Voer op de pagina Interactieve video maken een van de volgende handelingen uit:
+1. On the Create Interactive Video page, do any one of the following:
 
-   * Selecteer de optie **[!UICONTROL Play]** knop. Wanneer een bepaald product, de dienst, of een detail dat u wilt benadrukken in mening komt, uitgezocht **[!UICONTROL Add Segment]** op de werkbalk. Herhaal deze bewerking totdat u het einde van de video hebt bereikt.
+   * Selecteer de optie **[!UICONTROL Play]** knop. When a particular product, service, or detail that you want to highlight comes into view, select **[!UICONTROL Add Segment]** on the toolbar. Herhaal deze bewerking totdat u het einde van de video hebt bereikt.
 
       Voor elk tijdsegment dat u toevoegt, kunt u er een of meer miniatuurafbeeldingen aan toewijzen. Vervolgens kunt u deze miniaturen koppelen aan de productpagina&#39;s van QuickView die klanten kunnen kopen of aan webpagina&#39;s voor meer informatie.
 
@@ -301,7 +301,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
-   Afhankelijk van de lengte van uw video, blijft de Duur van het Segment aan de volgende waarden in gebreke:
+   Depending on the length of your video, the Segment Duration defaults to the following values:
 
    <table>
       <tbody>
@@ -372,13 +372,13 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    * Een segment verwijderen
 
-      Selecteer het laatste segment op de tijdlijn en selecteer vervolgens op de werkbalk de optie **[!UICONTROL Delete Segment]**. Als twee of meer segmenten zijn geselecteerd, is de functie Segment verwijderen uitgeschakeld.
+      Selecteer het laatste segment op de tijdlijn en selecteer vervolgens op de werkbalk de optie **[!UICONTROL Delete Segment]**. If two or more segments are selected, the Delete Segment feature is disabled.
 
-      U kunt alleen het laatste segment verwijderen. Als u bijvoorbeeld alle segmenten op de tijdlijn wilt verwijderen, moet u altijd de laatste selecteren en vervolgens **[!UICONTROL Delete Segment]**.
+      You can only delete the last segment. Als u bijvoorbeeld alle segmenten op de tijdlijn wilt verwijderen, moet u altijd de laatste selecteren en vervolgens **[!UICONTROL Delete Segment]**.
 
 
-1. Selecteer een tijdsegment waaraan u een of meer miniatuurafbeeldingen wilt koppelen.
-1. Selecteer rechts van de video de optie **[!UICONTROL Content]** tab.
+1. Select a time segment to which you want to associate one or more thumbnail images.
+1. To the right of the video, select the **[!UICONTROL Content]** tab.
 1. Selecteer op het tabblad Inhoud de optie **[!UICONTROL Select Assets]** Blader vervolgens naar alle afbeeldingselementen die u voor de video wilt gebruiken en selecteer deze. De geselecteerde elementen worden toegevoegd aan het deelvenster Elementkiezer op het tabblad Inhoud.
 
 1. Voer een van de volgende handelingen uit in de elementkiezer onder het tabblad Inhoud:
@@ -409,7 +409,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
    <table> 
     <tbody> 
       <tr> 
-      <td>De geselecteerde miniatuurafbeelding aan een Snelle weergave koppelen</td> 
+      <td>To associate the selected thumbnail image with a Quickview</td> 
       <td><p>Selecteer onder Type handeling de optie <strong>QuickView</strong>.</p> <p>Als u een klant van Experience Manager Sites en van de Handel bent:</p> 
        <ul> 
        <li>Het tekstveld SKU-waarde wordt vooraf ingevuld met de SKU (Stock Keeping Unit) van het geselecteerde product. SKU is een uniek herkenningsteken voor elk verschillend product of de dienst die u aanbiedt. Dit veld wordt automatisch ingevuld wanneer de afbeelding is gekoppeld aan een product in Experience Manager Commerce.</li> 
@@ -459,14 +459,14 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
 1. Voer een van de volgende handelingen uit:
 
-   * Herhaal stap 6-11 om meer miniatuurafbeeldingen toe te voegen aan tijdlijnsegmenten in uw video.
+   * Repeat steps 6-11 to add more thumbnail images to timeline segments in your video.
    * Ga verder met de optionele stap 13.
 
-1. (Optioneel) Voer een van de volgende handelingen uit:
+1. (Optional) Do either of the following:
 
-   * **[!UICONTROL Merge Segment]** - U kunt twee aangrenzende segmenten (met of zonder productminiaturen aan hen toegewezen) in één segment combineren.
+   * **[!UICONTROL Merge Segment]** - You can combine two adjacent segments (with or without product thumbnails assigned to them) into one segment.
 
-      Selecteer in de tijdlijn twee of meer aangrenzende segmenten die u wilt samenvoegen. Er zijn geen blauwe, ovale sleepgrepen op de twee geselecteerde segmenten in de onderstaande afbeelding.
+      Selecteer in de tijdlijn twee of meer aangrenzende segmenten die u wilt samenvoegen. There are no blue oval drag handles on the two selected segments in the image below.
 
       Selecteren **[!UICONTROL Merge Segment]** op de werkbalk.
    ![chlimage_1-134](assets/chlimage_1-134.png)
@@ -475,18 +475,18 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    * **[!UICONTROL Split Segment]** - U kunt één segment opsplitsen in twee segmenten met gelijke tijdnotatie. Als er al productminiaturen aan het segment zijn toegewezen, worden de miniaturen gecombineerd in het linkersegment.
 
-      Selecteer op de tijdlijn een segment dat u wilt delen in de helft en selecteer vervolgens **[!UICONTROL Split Segment]** op de werkbalk.
+      On the timeline, select a segment you want to divide in half, then select **[!UICONTROL Split Segment]** on the toolbar.
 
       Als u twee of meer segmenten selecteert, wordt het dialoogvenster **[!UICONTROL Split Segment]** gebruiken.
    ![chlimage_1-135](assets/chlimage_1-135.png)
 
-   Een geselecteerd segment van tien seconden opsplitsen in twee segmenten van vijf seconden elk.
+   Splitting a selected ten-second segment into two segments of five seconds each.
 
 1. In de rechterbovenhoek van het dialoogvenster **[!UICONTROL Create Interactive Video]** wordt de naam weergegeven van de geselecteerde viewer-voorinstelling die bij de video wordt gebruikt. Als u een andere viewervoorinstelling wilt selecteren, selecteert u de naam.
 
    De `Shoppable_Video_light` Met de voorinstelling van de viewer kunt u de video afspelen met een wit weergavegebied naast de video. In het weergavegebied worden de selecteerbare miniatuurafbeeldingen tijdens het afspelen weergegeven. De `Shoppable_Video_dark` Met de voorinstelling van de viewer kunt u de video afspelen met een zwart weergavegebied naast de video.
 
-   Als u uw eigen voorinstelling voor de interactieve videoviewer hebt gemaakt, wordt deze weergegeven in de lijst met voorinstellingen waaruit u kunt kiezen.
+   If you created your own Interactive Video viewer preset, you can see it in the list of presets from which you can choose.
 
    Als u klaar bent, selecteert u **[!UICONTROL Save]**.
 
@@ -584,7 +584,7 @@ De bestaande implementatie van QuickView vertegenwoordigt normaal gesproken een 
 1. De front-end code verzendt een AJAX verzoek gebruikend URL die in stap 2 wordt verkregen.
 1. De achterste logica keert de overeenkomstige gegevens of inhoud van de Snelle mening terug naar de front-end code.
 1. De front-end code laadt de gegevens of de inhoud van de Snelle mening.
-1. Naar keuze, zet de front-end code de geladen gegevens van de Snelle mening in een vertegenwoordiging van HTML om.
+1. Optionally, the front-end code converts the loaded Quickview data into an HTML representation.
 1. De front-end code geeft een modaal dialoogvenster of deelvenster weer en geeft de HTML-inhoud op het scherm weer voor de eindgebruiker.
 
 Deze aanroepen vertegenwoordigen geen onafhankelijke openbare API-aanroepen die door de webpaginalogica kunnen worden aangeroepen vanuit een willekeurige stap. In plaats daarvan, is het een geketende vraag waar elke volgende stap in de laatste fase (callback) van de vorige stap verborgen is.

@@ -1,22 +1,21 @@
 ---
 title: Lanceringen maken
 description: U kunt een lancering tot stand brengen om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 12%
 
 ---
 
-
 # Lanceringen maken {#creating-launches}
 
 Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagina&#39;s voor toekomstige activering toe te laten. Wanneer u een Starten creeert, specificeert u een titel en de bronpagina:
 
-* De titel wordt weergegeven in de [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) rail, vanwaar auteurs ze kunnen openen om er aan te werken.
+* De titel wordt weergegeven in het dialoogvenster [Verwijzingen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) spoorwegen, vanwaar auteurs toegang hebben tot hen om er aan te werken.
 * De onderliggende pagina&#39;s van de bronpagina worden standaard in de opstart opgenomen. U kunt desgewenst alleen de bronpagina gebruiken.
-* Standaard worden de startpagina&#39;s automatisch bijgewerkt met [Live kopie](/help/sites-cloud/administering/msm/overview.md) als de bronpagina&#39;s veranderen. U kunt opgeven dat er een statische kopie wordt gemaakt om automatische wijzigingen te voorkomen.
+* Standaard, [Live kopie](/help/sites-cloud/administering/msm/overview.md) werkt automatisch de startpagina&#39;s bij terwijl de bronpagina&#39;s veranderen. U kunt opgeven dat er een statische kopie wordt gemaakt om automatische wijzigingen te voorkomen.
 
 U kunt desgewenst de **Startdatum** (en -tijd) opgeven om te bepalen wanneer de startpagina&#39;s moeten worden gepromoveerd en geactiveerd. De **startdatum** werkt echter alleen in combinatie met de markering **Geschikt voor productie** (zie [Een startconfiguratie bewerken](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)). Opdat de acties automatisch zouden optreden, moeten beide worden ingesteld.
 
@@ -26,28 +25,27 @@ U kunt desgewenst de **Startdatum** (en -tijd) opgeven om te bepalen wanneer de 
 >
 >* `/libs/launches/templates/outofscope`
 >
+>Deze pagina&#39;s kunnen niet worden bewerkt. Het bericht wordt weergegeven:
 >
-Deze pagina&#39;s kunnen niet worden bewerkt. Het bericht wordt weergegeven:
->
->* **Deze pagina maakt geen deel uit van de opstart. Naar productiepagina**
+>* **Deze pagina maakt geen deel uit van de opstart. Ga naar productiepagina**
 
 
-## Starten {#creating-a-launch} maken
+## Starten maken {#creating-a-launch}
 
 U kunt een lancering van of Sites of de console van Lanceringen tot stand brengen:
 
-1. Open de **Sites** of **Launches** console.
+1. Open de **Sites** of **Starten** console.
 
    >[!NOTE]
    >
-   >Wanneer u de console **Sites** gebruikt, is het gebruikelijk om naar de locatie van de bronpagina te navigeren, maar dit is niet verplicht, aangezien u kunt navigeren wanneer u **Bron starten** in de wizard selecteert.
+   >Wanneer u de **Sites** console is het gebruikelijk om naar de plaats van de bronpagina te navigeren, maar dit is niet verplicht aangezien u kunt navigeren wanneer het selecteren van **Bron starten** in de wizard.
 
 1. Afhankelijk van de console die u gebruikt:
    * **Lanceringen**:
-      1. Selecteer **Start maken** op de werkbalk om de wizard te openen.
+      1. Selecteren **Starten maken** op de werkbalk om de wizard te openen.
    * **Sites**:
-      1. Selecteer **Maken** op de werkbalk om het selectievak te openen.
-      1. Selecteer **Launch** maken om de wizard te openen.
+      1. Selecteren **Maken** van de werkbalk om het selectievak te openen.
+      1. Van dit uitgezocht **Starten maken** om de wizard te openen.
 
    >[!NOTE]
    >
@@ -55,7 +53,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
    >
    >Hiermee gebruikt u de geselecteerde pagina als de eerste bronpagina.
 
-1. In **Selecteer Bron** stap moet u **Pagina&#39;s toevoegen**. U kunt meerdere pagina&#39;s selecteren en het pad voor elke pagina opgeven:
+1. In de **Bron selecteren** stap die u nodig hebt **Pagina&#39;s toevoegen**. U kunt meerdere pagina&#39;s selecteren en het pad voor elke pagina opgeven:
    * Navigeer naar de gewenste locatie.
    * Selecteer de bronpagina(&#39;s) en bevestig (vinkje).
 
@@ -71,38 +69,38 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
 1. Voor elk item kunt u opgeven of:
 
-   * **Inclusief subpagina**&#39;s:
+   * **Subpagina&#39;s opnemen**:
 
       * Geef op of u de opstart wilt maken met of zonder de onderliggende pagina&#39;s.  Deze subpagina&#39;s worden standaard opgenomen.
 
-   Ga verder met **Next**.
+   Doorgaan met **Volgende**.
 
    ![Startebron selecteren](/help/sites-cloud/authoring/assets/launches-select-source-2.png)
 
-1. In de stap **Eigenschappen** van de tovenaar kunt u specificeren:
+1. In de **Eigenschappen** stap van de wizard die u kunt opgeven:
 
-   * **Titel** starten: De naam van de Launch. De naam moet zinvol zijn voor auteurs.
+   * **Titel starten**: De naam van de Launch. De naam moet zinvol zijn voor auteurs.
    * **met bestaande inhoud**: de oorspronkelijke inhoud wordt gebruikt om de opstart te maken.
-   * **Gebruik een nieuwe sjabloon om de pagina** te vervangen: Zie Starten  [maken met nieuwe ](#create-launch-with-new-template) sjabloon voor meer informatie.
-   * **Live-gegevens** van bronpagina overnemen: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Met deze optie bereikt u dit door de opstart te maken tot een [Live kopie](/help/sites-cloud/administering/msm/overview.md). Deze optie is standaard geselecteerd.—>
-   * **Startdatum**: de datum en het tijdstip waarop de lanceerkopie moet worden geactiveerd (afhankelijk van de  **productievlag** Readyflag; zie  [Launches - de Orde van Gebeurtenissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
+   * **een nieuwe sjabloon gebruiken om de pagina te vervangen**: Zie [Starten met nieuwe sjabloon maken](#create-launch-with-new-template) voor meer informatie .
+   * **Live-gegevens van bronpagina overnemen**: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Met deze optie bereikt u dit door de introductie van [Live kopie](/help/sites-cloud/administering/msm/overview.md). Deze optie is standaard geselecteerd.—>
+   * **Opstartdatum**: De datum en het tijdstip waarop de opstartafbeelding moet worden geactiveerd (afhankelijk van de **Gereed voor productie** vlag; zie [Starten - de volgorde van gebeurtenissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Starteigenschappen](/help/sites-cloud/authoring/assets/launches-properties.png)
 
-1. Gebruik **Maken** om het proces te voltooien en een nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
+1. Gebruiken **Maken** om het proces te voltooien en uw nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
 
-   Als u de console terugkeert (met **Done**) kunt u uw lancering zien (en toegang hebben) van of:
+   Als u de console terugkeert (met **Gereed**) kunt u uw lancering zien (en toegang hebben) van één van beiden:
 
-   * De [**Launches** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * De [**References** in de **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * De [**Starten** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * De [**Verwijzingen** in de **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
-### Starten maken met nieuwe sjabloon {#create-launch-with-new-template}
+### Starten met nieuwe sjabloon maken {#create-launch-with-new-template}
 
 Bij het maken van een opstart kunt u opgeven of u een nieuwe sjabloon wilt gebruiken:
 
 >[!NOTE]
 >
->Deze optie is alleen beschikbaar wanneer u een opstart maakt via de console **Sites**. Het is niet beschikbaar wanneer het creëren van een lancering van **Launches** console.
+>Deze optie is alleen beschikbaar wanneer u een opstart maakt via het dialoogvenster **Sites** console. Deze functie is niet beschikbaar wanneer u een opstart maakt via de **Starten** console.
 
 ![Starten met een nieuwe sjabloon maken](/help/sites-cloud/authoring/assets/launches-create-new-template.png)
 
@@ -117,7 +115,7 @@ Selecteer deze optie:
 >
 >Aangezien een andere sjabloon wordt gebruikt, is de nieuwe pagina leeg. Vanwege de verschillende paginastructuur wordt er geen inhoud over gekopieerd.
 >
->Dit mechanisme kan worden gebruikt om het malplaatje van een [bestaande pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) te veranderen - hoewel het verlies van inhoud moet worden overwogen.
+>Dit mechanisme kan worden gebruikt om de sjabloon van een [bestaande pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) - het verlies van inhoud moet echter in overweging worden genomen.
 
 ### Een geneste start maken {#creating-a-nested-launch}
 
@@ -125,37 +123,37 @@ Door een geneste opstart te maken (opstart binnen een opstart) kunt u een opstar
 
 >[!NOTE]
 >
->Zie ook [Een geneste start promoten](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch).
+>Zie ook [Een geneste start bevorderen](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch).
 
 #### Een geneste start maken - Opstartconsole {#creating-a-nested-launch-launches-console}
 
-Het maken van een geneste opstart vanuit de **Launches**-console is in principe hetzelfde als het maken van een andere opstarthandeling, met uitzondering dat u naar de opstartaftakking `/content/launches` moet navigeren:
+Een geneste opstart maken vanuit de **Starten** console is in wezen het zelfde als het creëren van een andere vorm van lancering, met uitzondering dat u aan de lanceringstak moet navigeren `/content/launches`:
 
-1. Selecteer **Maken** in de **Launches**-console.
-1. Selecteer **Pagina&#39;s toevoegen**, dan navigeer aan de lanceringstak door `/content/launches` in **Filters** spoorstaaf te specificeren. Selecteer de vereiste start en bevestig dit met **Selecteren**:
+1. In de **Starten** console selecteren **Maken**.
+1. Selecteren **Pagina&#39;s toevoegen** navigeer vervolgens naar de startvertakking door `/content/launches` in de **Filters** spoorwegen. Selecteer de vereiste start en bevestig dit met **Selecteren**:
 
    ![Een geneste start maken](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. Ga verder met **Next**.
+1. Doorgaan met **Volgende**.
 
-1. Voltooi **Eigenschappen** zoals met een andere lancering.
+1. Voltooi de **Eigenschappen** zoals bij elke andere lancering.
 
 1. Volledig met **Maken**.
 
-#### Een geneste start maken - Siteconsole {#creating-a-nested-launch-sites-console}
+#### Een geneste start maken - Sites-console {#creating-a-nested-launch-sites-console}
 
-Om een geneste lancering van **Sites** te creëren console - die op een bestaande lancering wordt gebaseerd:
+Als u een geneste opstart wilt maken vanuit de **Sites** console - gebaseerd op een bestaande lancering:
 
-1. Open [Starten vanuit Referenties (Sites-console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) om de beschikbare handelingen weer te geven.
+1. Toegang krijgen tot [Starten vanuit verwijzingen (Sites-console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) om de beschikbare acties weer te geven.
 1. Selecteer **Start maken** om de wizard te openen (aangezien de bron al is geselecteerd, wordt de stap **Bron selecteren** overgeslagen).
-1. Voer de **Titel starten** en alle andere vereiste gegevens in (zoals bij een normale start).
-1. Gebruik **Maken** om het proces te voltooien en een nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
+1. Voer de **Titel starten** en alle andere vereiste gegevens (zoals bij een normale start).
+1. Gebruiken **Maken** om het proces te voltooien en uw nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
 
 Als u **Gereed** selecteert, keert u terug naar het spoor met **Referenties** van de **Sites**-console. Als u de juiste pagina selecteert, wordt de nieuwe startpagina weergegeven.
 
-### Starten {#deleting-a-launch} verwijderen
+### Een Starten verwijderen {#deleting-a-launch}
 
-U kunt een lancering van [lanceert console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) schrappen:
+U kunt een opstart verwijderen uit het dialoogvenster [opstartconsole](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
 
 * Selecteer de start door op de miniatuur te tikken of te klikken.
 * De werkbalk wordt weergegeven. Selecteer Verwijderen.

@@ -2,12 +2,12 @@
 title: Elementen in mappen en verzamelingen controleren
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
-feature: Verzamelingen,Samenwerking
+feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '745'
 ht-degree: 20%
 
 ---
@@ -27,13 +27,13 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. (Optioneel) Selecteer in de lijst **[!UICONTROL Project]** het project waaraan u de revisietaak wilt koppelen. Standaard is de optie **[!UICONTROL None]** geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
+1. (Optioneel) Van de **[!UICONTROL Project]** selecteert u het project waaraan u de revisietaak wilt koppelen. Standaard worden de **[!UICONTROL None]** is geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
 
    >[!NOTE]
    >
    >Slechts zijn de projecten waarvoor u de (of hogere) toestemmingen op het niveau van de Redacteur hebt zichtbaar in **[!UICONTROL Projects]** lijst.
 
-1. Voer een naam in voor de overzichtstaak en selecteer een fiatteur in de lijst **[!UICONTROL Assign To]**.
+1. Voer een naam in voor de revisietaak en selecteer een fiatteur in het menu **[!UICONTROL Assign To]** lijst.
 
    >[!NOTE]
    >
@@ -48,7 +48,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
    ![review_name](assets/review_name.png)
 
 1. Tik of klik op **[!UICONTROL Submit]** en tik of klik vervolgens op **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Meld u aan bij [!DNL Experience Manager Assets] als fiatteur en navigeer naar de interface Middelen. Als u elementen wilt goedkeuren, klikt of tikt u op het pictogram **[!UICONTROL Notifications]** en selecteert u vervolgens de revisietaak in de lijst.
+1. Aanmelden bij [!DNL Experience Manager Assets] als fiatteur en navigeer naar de interface Middelen. Als u elementen wilt goedkeuren, klikt u op **[!UICONTROL Notifications]** en selecteert u vervolgens de revisietaak in de lijst.
 
    ![melding](assets/notification.png)
 
@@ -57,7 +57,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![review_task](assets/review_task.png)
 
-1. Tik of klik op het pictogram **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en tik op **[!UICONTROL Complete]** om te bevestigen.
+1. Tik of klik op het pictogram **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en tik/klik op  **[!UICONTROL Complete]** ter bevestiging.
 1. Navigeer naar de interface Middelen en open de map. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in zowel de Kaart- als lijstweergave.
 
    **Kaartweergave**
@@ -75,13 +75,13 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
-1. (Optioneel) Selecteer in de lijst **[!UICONTROL Project]** het project waaraan u de revisietaak wilt koppelen. Standaard is de optie **[!UICONTROL None]** geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
+1. (Optioneel) Van de **[!UICONTROL Project]** selecteert u het project waaraan u de revisietaak wilt koppelen. Standaard worden de **[!UICONTROL None]** is geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
 
    >[!NOTE]
    >
    >Slechts zijn de projecten waarvoor u de (of hogere) toestemmingen op het niveau van de Redacteur hebt zichtbaar in **[!UICONTROL Projects]** lijst.
 
-1. Voer een naam in voor de overzichtstaak en selecteer een fiatteur in de lijst **[!UICONTROL Assign To]**.
+1. Voer een naam in voor de revisietaak en selecteer een fiatteur in het menu **[!UICONTROL Assign To]** lijst.
 
    >[!NOTE]
    >
@@ -92,13 +92,13 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Tik of klik op **[!UICONTROL Submit]** en tik of klik vervolgens op **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Meld u aan bij [!DNL Experience Manager Assets] als fiatteur en navigeer naar de middelenconsole. Tik op het pictogram **[!UICONTROL Notifications]** of klik op het pictogram om elementen goed te keuren en selecteer vervolgens de revisietaak in de lijst.
+1. Aanmelden bij [!DNL Experience Manager Assets] als Approver en navigeer aan de console van Activa. Tik op de knop **[!UICONTROL Notifications]** en selecteert u vervolgens de revisietaak in de lijst.
 1. Controleer op de pagina **[!UICONTROL Review Task]** de details van de revisietaak en tik of klik vervolgens op **[!UICONTROL Review]**.
-1. Alle elementen in de verzameling zijn zichtbaar op de overzichtspagina. Selecteer de elementen en tik op **[!UICONTROL Approve/Reject]** of klik op het pictogram  om elementen goed te keuren of af te wijzen.
+1. Alle elementen in de verzameling zijn zichtbaar op de overzichtspagina. Selecteer de elementen en tik op de knop **[!UICONTROL Approve/Reject]** pictogram om elementen goed te keuren of af te wijzen, al naar het geval.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Tik of klik op het pictogram **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en tik op **[!UICONTROL Complete]** om te bevestigen.
+1. Tik of klik op het pictogram **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en tik/klik op **[!UICONTROL Complete]** ter bevestiging.
 1. Navigeer naar de verzamelingsconsole en open de verzameling. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in zowel de Kaart- als lijstweergave.
 
    **Kaartweergave**

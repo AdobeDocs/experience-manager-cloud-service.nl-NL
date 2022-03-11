@@ -1,6 +1,6 @@
 ---
-title: Publish Translated Content
-description: Learn how to publish your translated content and update the translations as the content updates.
+title: Vertaalde inhoud publiceren
+description: Leer hoe u uw vertaalde inhoud publiceert en de vertalingen bijwerkt terwijl de inhoud wordt bijgewerkt.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
@@ -9,159 +9,159 @@ ht-degree: 0%
 
 ---
 
-# Publish Translated Content {#publish-content}
+# Vertaalde inhoud publiceren {#publish-content}
 
-Learn how to publish your translated content and update the translations as the content updates.
+Leer hoe u uw vertaalde inhoud publiceert en de vertalingen bijwerkt terwijl de inhoud wordt bijgewerkt.
 
-## The Story So Far {#story-so-far}
+## Het verhaal tot nu toe {#story-so-far}
 
-[](configure-connector.md) You should now:
+In het vorige document van de AEM zonder kop [Inhoud vertalen,](configure-connector.md) u hebt geleerd hoe u AEM vertaalprojecten kunt gebruiken om uw inhoud zonder kop te vertalen. Nu moet u:
 
-* Understand what a translation project is.
-* Be able to create new translation projects.
-* Use translation projects to translate your headless content.
+* Begrijp wat een vertaalproject is.
+* Nieuwe vertaalprojecten kunnen maken.
+* Gebruik vertaalprojecten om uw inhoud zonder kop te vertalen.
 
-Now that your initial translation is complete, this article takes you through the next step of publishing that content and what to do to update your translations as the underlying content in the language root  changes.
+Nu uw eerste vertaling is voltooid, wordt in dit artikel de volgende stap gezet voor het publiceren van die inhoud en wat u moet doen om uw vertalingen bij te werken wanneer de onderliggende inhoud in de hoofdtaalwijziging verandert.
 
-## Objective {#objective}
+## Doelstelling {#objective}
 
-This document helps you understand how to publish headless content in AEM and how to create a continual workflow to keep your translations up-to-date. After reading this document, you should:
+Dit document helpt u te begrijpen hoe u inhoud zonder kop in AEM kunt publiceren en hoe u een continue workflow kunt maken om uw vertalingen up-to-date te houden. Nadat u dit document hebt gelezen, moet u:
 
-* Understand the author-publish model of AEM.
-* Know how to publish your translated content.
-* Be able to implement a continual update model for your translated content.
+* Begrijp het auteur-publicatiemodel van AEM.
+* Zorg dat u weet hoe u uw vertaalde inhoud publiceert.
+* Een voortdurend updatemodel voor uw vertaalde inhoud kunnen implementeren.
 
-## AEM&#39;s Author-Publish Model {#author-publish}
+## Auteur-publicatiemodel AEM {#author-publish}
 
-Before you publish your content, it is a good idea to understand AEM&#39;s author-publish model. In simplified terms, AEM divides users of the system into two groups.
+Voordat u de inhoud publiceert, is het verstandig om AEM publicatiemodel te begrijpen. In vereenvoudigde termen verdeelt AEM gebruikers van het systeem in twee groepen.
 
-1. Those who create and manage the content and the system
-1. Those who consume the content from the system
+1. Degenen die de inhoud en het systeem maken en beheren
+1. Degenen die de inhoud van het systeem consumeren
 
-AEM is therefore physically separated into two instances.
+AEM wordt daarom fysiek in twee gevallen gescheiden.
 
-1. ****
-1. ****
+1. De **auteur** -instantie is het systeem waarop auteurs en beheerders van inhoud werken om inhoud te maken en te beheren.
+1. De **publish** het systeem dat de inhoud aan de consumenten levert , is bijvoorbeeld het systeem .
 
-Once content is created on the author instance, it must be transferred to the publish instance for it to be available for consumption. ****
+Nadat inhoud op de instantie van de auteur is gemaakt, moet deze naar de instantie publish worden overgedragen om de inhoud beschikbaar te maken voor consumptie. Het proces waarbij van de auteur naar publicatie wordt overgeschakeld, wordt **publicatie**.
 
-## Publishing Your Translated Content {#publishing}
+## Uw vertaalde inhoud publiceren {#publishing}
 
-Once you are happy with the state of your translated content, it must be published so headless services can consume it. This task is usually not the responsibility of the translation specialist, but is documented here to illustrate the complete workflow.
+Zodra u tevreden bent met de staat van uw vertaalde inhoud, moet het worden gepubliceerd zodat de headless diensten het kunnen verbruiken. Deze taak valt gewoonlijk niet onder de verantwoordelijkheid van de vertaalspecialist, maar wordt hier beschreven om de volledige werkstroom te illustreren.
 
 >[!NOTE]
 >
->Generally when the translation is complete, the translations specialist informs the content owners that the translations are ready for publication. The content owners then publish them.
+>Wanneer de vertaling is voltooid, informeert de vertalingsspecialist de eigenaars van de inhoud over het feit dat de vertalingen klaar zijn voor publicatie. De eigenaars van de inhoud publiceren deze vervolgens.
 >
->The following steps are provided for completeness.
+>De volgende stappen worden verstrekt voor volledigheid.
 
-The simplest way to publish the translations is to navigate to the project assets folder.
+De eenvoudigste manier om de vertalingen te publiceren is aan de omslag van projectactiva te navigeren.
 
 ```text
 /content/dam/<your-project>/
 ```
 
-Under this path you have sub-folders for each translation language and can choose which to publish.
+Onder dit pad hebt u submappen voor elke vertaaltaal en kunt u kiezen welke taal u wilt publiceren.
 
-1. ************
-1. Here you see the language root folder and all other language folders. Select the localized language or languages that you wish to publish.
-   ![](assets/select-language-folder.png)
-1. ****
-1. ******************** ****
-   ![](assets/manage-publication-options.png)
-1. **** ****
-   ![](assets/manage-publication-scope.png)
-1. AEM confirms the publish action with a pop-up message at the bottom of the screen.
-   ![](assets/resources-published-message.png)
+1. Ga naar **Navigatie** -> **Activa** -> **Bestanden** en opent u de projectmap.
+1. Hier ziet u de hoofdmap van de taal en alle andere taalmappen. Selecteer de gelokaliseerde taal of talen die u wilt publiceren.
+   ![Taalmap selecteren](assets/select-language-folder.png)
+1. Tik of klik op **Publicatie beheren**.
+1. In de **Publicatie beheren** venster, zorg ervoor dat **Publiceren** wordt automatisch geselecteerd onder **Handeling** en dat **Nu** is geselecteerd onder **Planning**. Tik of klik op **Volgende**.
+   ![Publicatieopties beheren](assets/manage-publication-options.png)
+1. In het volgende **Publicatie beheren** bevestigen dat het juiste pad of de juiste paden is of zijn geselecteerd. Tik of klik op **Publiceren**.
+   ![Publicatiebereik beheren](assets/manage-publication-scope.png)
+1. AEM bevestigt de publicatieactie met een pop-upbericht onder aan het scherm.
+   ![Bronnen gepubliceerde banner](assets/resources-published-message.png)
 
-Your translated headless content is now published! It can now be accessed and consumed by your headless services.
-
->[!TIP]
->
->You can select multiple items (i.e. multiple language folders) when publishing in order to publish multiple translations at one time.
-
-There are additional options when publishing your content, such as scheduling a publication time, which are beyond the scope of this journey. [](#additional-resources)
-
-## Updating Your Translated Content {#updating-translations}
-
-Translation is rarely a one-off exercise. Typically your content authors continue to add to and modify your content in the language root after initial translation is complete. This means that you need to also update your translated content.
-
-Specific project requirements define how often you need to update your translations and what decision process is followed before performing an update. Once you have decided to update your translations, the process in AEM is very simple. As the initial translation was based on a translation project, so too are any updates.
-
-However as before, the process differs slightly if you chose to automatically create your translation project or manually create your translation project.
-
-### Updating an Automatically Created Translation Project {#updating-automatic-project}
-
-1. ************ Remember that headless content in AEM is stored as assets known as Content Fragments.
-1. Select the language root of your project. `/content/dam/wknd/en`
-1. ****
-1. ****
-1. ****
-1. ****
-1. ********
-1. ****
-1. ****
-
-![](assets/add-to-existing-project.png)
-
-The content is added to the existing translation project. To view the translation project:
-
-1. ********
-1. Tap or click the project that you just updated.
-1. Tap or click the language or one of the languages that you updated.
-
-You see that a new job card was added to the project. In this example, another Spanish translation was added.
-
-![](assets/additional-translation-job.png)
-
-You may notice that the statistics listed on the new card (number of assets and content fragments) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
-
-[](translate-content.md#using-translation-project)
-
-### Updating a Manually Created Translation Project {#updating-manual-project}
-
-To update a translation you can add a new job to your existing project that is responsible for translating the updated content.
-
-1. ********
-1. Tap or click the project that you need to update.
-1. ****
-1. ************
-
-   ![](assets/add-translation-job-tile.png)
-
-1. ****
-
-   ![](assets/update-target.png)
-
-1. ********
-
-   ![](assets/select-target-language.png)
-
-1. Once your new translation job&#39;s target language is set, tap or click on the ellipsis button at the bottom of the job card to view the details of the job.
-1. The job is empty when first created. ****[](translate-content.md##manually-creating)
+Uw vertaalde inhoud zonder kop is nu gepubliceerd! Het kan nu door uw headless diensten worden betreden en worden verbruikt.
 
 >[!TIP]
 >
->The path browser&#39;s powerful filters can again be useful to find just the content that has been updated.
+>U kunt bij het publiceren meerdere items selecteren (dat wil zeggen meerdere taalmappen) om meerdere vertalingen tegelijk te publiceren.
+
+Er zijn extra opties wanneer het publiceren van uw inhoud, zoals het plannen van een publicatietijd, die buiten het werkingsgebied van deze reis zijn. Zie de [Aanvullende bronnen](#additional-resources) aan het einde van het document voor meer informatie.
+
+## Uw vertaalde inhoud bijwerken {#updating-translations}
+
+Vertaling is zelden een eenmalige exercitie. Meestal blijven auteurs van inhoud uw inhoud toevoegen aan en wijzigen deze in de hoofdmap van de taal nadat de eerste vertaling is voltooid. Dit betekent dat u ook uw vertaalde inhoud moet bijwerken.
+
+De specifieke projectvereisten bepalen hoe vaak u uw vertalingen moet bijwerken en welk besluitvormingsproces wordt gevolgd alvorens een update uit te voeren. Zodra u hebt besloten uw vertalingen bij te werken, is het proces in AEM zeer eenvoudig. Aangezien de eerste vertaling gebaseerd was op een vertaalproject, zijn ook updates mogelijk.
+
+Net als voorheen verschilt het proces enigszins als u ervoor kiest om automatisch uw vertaalproject te maken of uw vertaalproject handmatig te maken.
+
+### Een automatisch gemaakt vertaalproject bijwerken {#updating-automatic-project}
+
+1. Navigeren naar **Navigatie** -> **Activa** -> **Bestanden**. Onthoud dat inhoud zonder kop in AEM wordt opgeslagen als elementen die Content Fragments worden genoemd.
+1. Selecteer de taalwortel van uw project. In dit geval hebben we `/content/dam/wknd/en`.
+1. Tik of klik op de railkiezer en toon de **Verwijzingen** deelvenster.
+1. Tik of klik op **Taalkopieën**.
+1. Controleer de **Taalkopieën** selectievakje.
+1. De sectie uitvouwen **Taalkopieën bijwerken** onder aan het venster Verwijzingen.
+1. In de **Project** vervolgkeuzelijst, selecteren **Toevoegen aan een bestaand vertaalproject**.
+1. In de **Bestaand vertaalproject** selecteert u het project dat u voor de eerste vertaling hebt gemaakt.
+1. Tik of klik op **Start**.
+
+![Items toevoegen aan bestaand vertaalproject](assets/add-to-existing-project.png)
+
+De inhoud wordt toegevoegd aan het bestaande vertaalproject. Het vertaalproject weergeven:
+
+1. Navigeren naar **Navigatie** -> **Projecten**.
+1. Tik of klik op het project dat u zojuist hebt bijgewerkt.
+1. Tik of klik op de taal of een van de talen die u hebt bijgewerkt.
+
+U ziet dat er een nieuwe banenkaart aan het project is toegevoegd. In dit voorbeeld is een andere Spaanse vertaling toegevoegd.
+
+![Extra vertaalbaan toegevoegd](assets/additional-translation-job.png)
+
+U kunt zien dat de statistieken op de nieuwe kaart (aantal activa en inhoudsfragmenten) verschillend zijn. Dit komt omdat AEM herkent wat er is veranderd sinds de laatste vertaling en alleen de inhoud bevat die moet worden vertaald. Dit omvat het opnieuw vertalen van bijgewerkte inhoud en het voor het eerst vertalen van nieuwe inhoud.
+
+Vanaf dit punt [start en beheer uw vertaaltaak op dezelfde manier als het origineel.](translate-content.md#using-translation-project)
+
+### Een handmatig gemaakt vertaalproject bijwerken {#updating-manual-project}
+
+Als u een vertaling wilt bijwerken, kunt u een nieuwe taak toevoegen aan uw bestaande project die verantwoordelijk is voor het vertalen van de bijgewerkte inhoud.
+
+1. Navigeren naar **Navigatie** -> **Projecten**.
+1. Tik of klik op het project dat u wilt bijwerken.
+1. Tik of klik op de knop **Toevoegen** boven in het venster.
+1. In de **Tegel toevoegen** venster, tikken of klikken **Vertaaltaak** en vervolgens **Verzenden**.
+
+   ![Tegel toevoegen](assets/add-translation-job-tile.png)
+
+1. Tik op de kaart van de nieuwe vertaaltaak of klik op de chevron-knop boven aan de kaart en selecteer **Doel bijwerken** om de doeltaal van de nieuwe baan te bepalen.
+
+   ![Doel bijwerken](assets/update-target.png)
+
+1. In de **Doeltaal selecteren** gebruiken om de taal te selecteren en tikken of klikken **Gereed**.
+
+   ![Doeltaal selecteren](assets/select-target-language.png)
+
+1. Als de doeltaal van uw nieuwe vertaaltaak is ingesteld, tikt u of klikt u op de knop met de ellips onder aan de taakkaart om de details van de taak weer te geven.
+1. De taak is leeg wanneer deze voor het eerst wordt gemaakt. Inhoud aan de taak toevoegen door te tikken of op de knop **Toevoegen** en de padbrowser gebruiken [zoals u dat eerder deed toen u het vertaalproject oorspronkelijk creeerde.](translate-content.md##manually-creating)
+
+>[!TIP]
 >
->[](#additional-resources)
+>De krachtige filters van de padbrowser kunnen ook weer nuttig zijn om alleen de inhoud te zoeken die is bijgewerkt.
+>
+>Meer informatie over de padbrowser vindt u in het dialoogvenster [sectie aanvullende bronnen.](#additional-resources)
 
-[](translate-content.md#using-translation-project)
+Vanaf dit punt [start en beheer uw vertaaltaak op dezelfde manier als het origineel.](translate-content.md#using-translation-project)
 
-## End of the Journey? {#end-of-journey}
+## Einde van de reis? {#end-of-journey}
 
-Congratulations! You have completed the headless translation journey! You should now:
+Gefeliciteerd! U hebt de reis zonder kop voltooid! Nu moet u:
 
-* Have an overview of what headless content delivery is.
-* Have a basic Understanding AEM&#39;s headless features.
-* Understand AEM&#39;s translation features and how they related to headless content.
-* Have the ability to start translating your own headless content.
+* Heb een overzicht van wat de levering van inhoud zonder kop is.
+* U hebt een basiskennis AEM functies zonder kop.
+* Begrijp AEM vertaalfuncties en hoe deze verwant zijn aan inhoud zonder kop.
+* De mogelijkheid hebben om uw eigen inhoud zonder kop te vertalen.
 
-You are now ready to translate your own headless content in AEM. However AEM is a powerful tool and there are many additional options available. [](#additional-resources)
+U bent nu klaar om uw eigen inhoud zonder kop in AEM te vertalen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [](/help/sites-cloud/administering/translation/managing-projects.md)
-* [](/help/sites-cloud/authoring/getting-started/concepts.md) This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
-* [](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
-* [](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)
+* [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md) - Leer de details van vertaalprojecten en aanvullende functies zoals workflows voor menselijke vertaling en meertalige projecten.
+* [Ontwerpconcepten](/help/sites-cloud/authoring/getting-started/concepts.md) - Meer informatie over de auteur en het publicatiemodel van AEM. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
+* [Pagina&#39;s publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Meer informatie over de extra functies die beschikbaar zijn wanneer u inhoud publiceert. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
+* [Ontwerpomgeving en -gereedschappen](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.

@@ -1,48 +1,49 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.3.0
-description: Opmerkingen bij de release voor Cloud Manager in AEM als Cloud Service Release 2021.3.0
+title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.3.0
+description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.3.0
 feature: Release Information
-source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
+exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager als Cloud Service 2021.3.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.3.0 {#release-notes}
 
-Deze pagina bevat de releaseopmerkingen voor Cloud Manager in AEM als Cloud Service 2021.3.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service 2021.3.0.
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM als Cloud Service 2021.3.0 is 11 maart 2021.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.3.0 is 11 maart 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Wat is er nieuw? {#what-is-new}
 
-* Klanten met omgevingen met reeds bestaande aangepaste domeinnaamconfiguraties voor [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zullen een bericht zien over hun eerdere bestaande configuraties en zullen zichzelf kunnen bedienen via de gebruikersinterface.
+* Klanten met omgevingen met bestaande aangepaste domeinnaamconfiguraties voor [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zal een bericht over hun eerder bestaande configuraties zien en zal kunnen zelf-dienen via UI.
 
 * Gebruikers met de vereiste machtigingen kunnen nu een programma bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen:
    * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa of vice versa toe.
    * Sites of middelen verwijderen uit een bestaand programma met zowel Sites als Middelen.
    * Voeg tweede, ongebruikte oplossingsrechten toe aan een bestaand programma of aan een nieuw programma.
 
-* **AEM Push** Updatelabel zal nu voor zowel de Uitvoering van de Pijpleiding als de schermen van de Activiteit worden getoond.
+* **AEM bijwerken** Het label wordt nu weergegeven voor zowel het scherm Uitvoeren als Activiteit van de pijplijn.
 
-* Als een milieu gehiberneerd maar er ook een AEM beschikbare update is, zal **Gesambernated** status belangrijkheid over **beschikbare Update** nemen.
+* Als een omgeving is gehiberneerd maar er ook een AEM update beschikbaar is, kunt u het volgende doen: **Gesamberneerd** status heeft voorrang op **Update beschikbaar**.
 
 * Gebruikers kunnen nu hun rol(en) in de cloud Manager zien door de optie &#39;Rol(en) in de cloud-manager weergeven&#39; te selecteren nadat ze naar het pictogram Gebruikersprofiel (rechtsboven) van Unified Shell zijn genavigeerd.
 
-* Het label **Goedkeuringsaanvraag** is voor meer duidelijkheid opnieuw gelabeld aan **Productiegoedkeuring**.
+* Het label **Goedkeuringsaanvraag** is opnieuw gelabeld aan **Erkenning productie** voor meer duidelijkheid.
 
-* Het **Version**-label is opnieuw gelabeld aan **Git Tag** in het uitvoeringsscherm van de productiepijplijn.
+* De **Versie** label is opnieuw gelabeld aan **Git-tag** in het scherm van de de pijpleiding van de Productie uitvoeren.
 
-* De labels die het gedrag bepalen wanneer belangrijke metriek niet aan de bepaalde drempel voldoet, zijn opnieuw geëtiketteerd om op hun ware gedrag te wijzen: **Onmiddellijk annuleren** en **Direct goedkeuren**.
+* De labels die het gedrag bepalen wanneer belangrijke metriek niet aan de bepaalde drempel voldoet, zijn opnieuw geëtiketteerd om op hun ware gedrag te wijzen: **Direct annuleren** en **Direct goedkeuren**.
 
-* De lijsten van de klasse en van de methodevervanging zijn bijgewerkt gebaseerd op versie `2021.3.4997.20210303T022849Z-210225` van de AEM Cloud Service SDK.
+* De lijsten met klassen en methoden zijn bijgewerkt op basis van versie `2021.3.4997.20210303T022849Z-210225` van de SDK van AEM Cloud Service.
 
-* De productiepijplijn van de Manager van de wolk zal [Aangepaste UI het Testen](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) capaciteit nu omvatten.
+* De productiepijplijn van Cloud Manager wordt nu opgenomen [Aangepaste UI-tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) capaciteit.
 
 ### Opgeloste problemen  {#bug-fixes}
 

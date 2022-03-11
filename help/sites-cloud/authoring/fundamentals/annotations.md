@@ -17,13 +17,13 @@ Een annotatie plaatst een eenvoudige schets of notitie (denk in real-world kleve
 
 >[!TIP]
 >
->Vergeet niet dat [commentaren](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) ook beschikbaar zijn voor het verstrekken van terugkoppelen op een pagina.
+>Vergeet niet dat [opmerkingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) zijn ook beschikbaar voor het opgeven van feedback op een pagina.
 
-Een speciale [modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) wordt gebruikt voor het maken en weergeven van annotaties.
+Een speciale [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) wordt gebruikt voor het maken en weergeven van annotaties.
 
 >[!TIP]
 >
->Afhankelijk van uw vereisten kunt u ook een [workflow](/help/sites-cloud/authoring/workflows/overview.md) ontwikkelen om meldingen te verzenden wanneer annotaties worden toegevoegd, bijgewerkt of verwijderd.
+>Afhankelijk van uw vereisten kunt u ook een [werkstroom](/help/sites-cloud/authoring/workflows/overview.md) om meldingen te verzenden wanneer annotaties worden toegevoegd, bijgewerkt of verwijderd.
 
 ## Annotatie-indicator {#annotation-indicator}
 
@@ -49,11 +49,11 @@ Annotaties zijn alleen zichtbaar in de modus Annotatie.
 
 1. Tik op de x-knop rechts van de bovenste werkbalk om de modus Annotatie af te sluiten en terug te keren naar de eerder gebruikte modus.
 
-## Annotaties {#annotating-a-component} toevoegen en bewerken
+## Annotaties toevoegen en bewerken {#annotating-a-component}
 
 In de modus Annotatie kunt u niet alleen notities weergeven, maar ook annotaties maken, bewerken, verplaatsen of verwijderen
 
-1. [Start de ](#annotate-mode) modus Annoteren op de pagina.
+1. [Annotatiemodus starten](#annotate-mode) op de pagina.
 
 1. Klik of tik op het pictogram Annotatie toevoegen (plus symbool links op de werkbalk) om annotaties toe te voegen.
 
@@ -80,7 +80,7 @@ In de modus Annotatie kunt u niet alleen notities weergeven, maar ook annotaties
 
 1. Nadat u een specifieke annotatie hebt bewerkt, kunt u:
 
-   * Klik of tik op de tekstmarkering om de annotatie te openen. Nadat u de volledige tekst hebt geopend, kunt u wijzigingen aanbrengen of de annotatie [verwijderen.](#deleting-annotations)
+   * Klik of tik op de tekstmarkering om de annotatie te openen. Als u de volledige tekst hebt geopend, kunt u wijzigingen aanbrengen of [de annotatie verwijderen.](#deleting-annotations)
    * Verander de positie van de tekstmarkering.
    * Klik of tik op een schetslijn om die schets te selecteren en sleep deze naar de gewenste positie.
    * Een component verplaatsen of kopiëren
@@ -95,11 +95,11 @@ In de modus Annotatie kunt u niet alleen notities weergeven, maar ook annotaties
 >
 >De definitie van een afzonderlijk componenttype bepaalt of het toevoegen van een aantekening (ANNOTATION) mogelijk is (of niet) op instanties van die component.
 
-## Annotatie en schetsen {#deleting-annotations} verwijderen
+## Annotatie en schetsen verwijderen {#deleting-annotations}
 
 Annotaties en de bijbehorende schetsen kunnen worden verwijderd.
 
-1. [Start de ](#annotate-mode) modus Annoteren op de pagina.
+1. [Annotatiemodus starten](#annotate-mode) op de pagina.
 
 1. Klik of tik op de tekstmarkering om de annotatie te openen.
 
@@ -113,11 +113,11 @@ Annotaties en de bijbehorende schetsen kunnen worden verwijderd.
 >
 >Als u een component verwijdert, worden alle annotaties en schetsen verwijderd die aan die bron zijn gekoppeld, ongeacht de positie op de pagina als geheel.
 
-## Alleen schetsen {#deleting-sketches} verwijderen
+## Alleen schetsen verwijderen {#deleting-sketches}
 
 U kunt alleen specifieke schetsen verwijderen in plaats van de gehele annotatie met alle gekoppelde schetsen.
 
-1. [Start de ](#annotate-mode) modus Annoteren op de pagina.
+1. [Annotatiemodus starten](#annotate-mode) op de pagina.
 
 1. Klik of tik op de schets. AEM markeert deze met een donkerder blauw vak.
 
@@ -131,5 +131,5 @@ U kunt alleen specifieke schetsen verwijderen in plaats van de gehele annotatie 
 
 Naast componenten kunt u verschillende bronnen van annotatie voorzien:
 
-* Elementen [Annoteren van elementen](/help/assets/manage-digital-assets.md#annotating)
+* Annoteren van elementen [Annoteren van elementen](/help/assets/manage-digital-assets.md#annotating)
 * Video-elementen annoteren [Video-elementen annoteren](/help/assets/manage-video-assets.md#annotate-video-assets)
