@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
+source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2306'
 ht-degree: 2%
 
 ---
@@ -158,6 +158,8 @@ Merk op dat bij lokale ontwikkeling (met behulp van de SDK), `/apps` en `/libs` 
 
 Klanten hebben toegang tot de CRXDE-lijst in de ontwikkelomgeving van de auteur, maar niet in het stadium of de productie. De onveranderlijke gegevensopslagruimte (`/libs`, `/apps`) kan niet worden geschreven naar bij uitvoering. Als u dit probeert, treedt er een fout op.
 
+In plaats daarvan kan de Repository Browser worden gestart vanuit de Developer Console, waarmee een alleen-lezen weergave in de opslagplaats wordt geboden voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen. Meer informatie over de Repository Browser [hier](/help/implementing/developing/tools/repository-browser.md).
+
 In de Developer Console for dev, stage, and production environment is een set tools beschikbaar voor foutopsporing AEM as a Cloud Service ontwikkelaarsomgevingen. De URL kan worden bepaald door de URL van de service Auteur of Publiceren als volgt aan te passen:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
@@ -184,11 +186,7 @@ Ook nuttig voor het zuiveren, heeft de console van de Ontwikkelaar een verbindin
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Voor productieprogramma&#39;s wordt de toegang tot de Developer Console gedefinieerd door &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor elke gebruiker met een productprofiel dat hem toegang geeft tot AEM as a Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - rol ontwikkelaar&quot; nodig voor statusdumps en moeten gebruikers ook worden gedefinieerd in het productprofiel van AEM gebruikers of AEM beheerders voor zowel auteur- als publicatieservices om statusstortgegevens van beide services te bekijken. Voor meer informatie over het instellen van gebruikersmachtigingen raadpleegt u [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
-### AEM Staging- en productieservice {#aem-staging-and-production-service}
-
-Klanten hebben geen toegang tot ontwikkelaarstools voor testomgevingen en productieomgevingen.
+Voor productieprogramma&#39;s wordt de toegang tot de Developer Console gedefinieerd door &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor elke gebruiker met een productprofiel dat hem toegang geeft tot AEM as a Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - Developer Role&quot; vereist voor statusdumps en moeten de browser van de opslagplaats en gebruikers ook worden gedefinieerd in het productprofiel van AEM gebruikers of AEM beheerders voor zowel auteur- als publicatieservices om gegevens van beide services te kunnen bekijken. Voor meer informatie over het instellen van gebruikersmachtigingen raadpleegt u [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Prestatiebewaking {#performance-monitoring}
 
