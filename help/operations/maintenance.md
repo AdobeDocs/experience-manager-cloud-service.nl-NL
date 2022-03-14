@@ -2,9 +2,9 @@
 title: Onderhoudstaken in AEM as a Cloud Service
 description: Onderhoudstaken in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 9177741a57bb16c36b51d1a042538b9cee20a0b8
+source-git-commit: cd48b78383974027d8980397632c395a5958edbf
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de op
 
 ## Onderhoudstaken configureren
 
-In vorige versies van AEM kon u onderhoudstaken configureren met de onderhoudskaart (Opties > Bewerkingen > Onderhoud). Voor AEM as a Cloud Service, is de Kaart van het Onderhoud niet meer beschikbaar zodat zouden de configuraties aan broncontrole moeten worden geëngageerd en door de Manager van de Wolk worden opgesteld. Adobe zal onderhoudstaken beheren die geen klantenbesluiten (bijvoorbeeld, de Inzameling van het huisvuil van de Datastore) vereisen terwijl andere onderhoudstaak door de klant kan worden gevormd (zie de lijst hieronder).
+In vorige versies van AEM kon u onderhoudstaken configureren met de onderhoudskaart (Opties > Bewerkingen > Onderhoud). Voor AEM as a Cloud Service, is de Kaart van het Onderhoud niet meer beschikbaar zodat zouden de configuraties aan broncontrole moeten worden geëngageerd en door de Manager van de Wolk worden opgesteld. Adobe beheert die onderhoudstaken die montages hebben die niet door klanten (bijvoorbeeld, de Inzameling van de Schrapping van de Schrapping van de Datastore, de Schrapping van het Logboek van de Controle, de Schrapping van de Versie) configureerbaar zijn. Andere onderhoudstaken kunnen door klanten worden geconfigureerd, zoals in de onderstaande tabel wordt beschreven.
 
 >[!CAUTION]
 >
@@ -56,14 +56,22 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>Versie wissen</td>
     <td>Adobe</td>
-    <td>Volledig eigendom van Adobe, maar in de toekomst zullen klanten bepaalde parameters kunnen configureren.</td>
+    <td>De auteurslaag moet presterend blijven, oudere versies van elk stuk inhoud onder <code>/content</code> knooppunt van de repository worden gezuiverd volgens het volgende gedrag:<br><ol>
+  <li>Versies ouder dan 30 dagen worden verwijderd</li>
+  <li>De meest recente vijf versies in de laatste 30 dagen worden bewaard</li>
+  <li>Ongeacht de bovenstaande regels blijft de meest recente versie behouden.</li>
+</ol><br>OPMERKING: het hierboven beschreven gedrag wordt vanaf 14 maart 2022 toegepast op nieuwe omgevingen en wordt op 21 april 2022 toegepast voor bestaande omgevingen (die welke vóór 14 maart 2022 zijn gecreëerd).</td>
   </td>
   </tr>
   <tr>
     <td>Logboek controleren leegmaken</td>
     <td>Adobe</td>
-    <td>Volledig eigendom van Adobe, maar in de toekomst zullen klanten bepaalde parameters kunnen configureren.</td>
-  </td>
+    <td>Om ervoor te zorgen dat de auteurslaag presteert, oudere controlelogboeken onder <code>/content</code> knooppunt van de repository worden gezuiverd volgens het volgende gedrag:<br><ol>
+  <li>Voor replicatiecontrole worden auditlogboeken ouder dan 3 dagen verwijderd</li>
+  <li>Voor DAM-audits (Assets) worden auditlogboeken ouder dan 30 dagen verwijderd</li>
+  <li>Voor pagina-controle worden logboeken ouder dan 3 dagen verwijderd.<br></li>
+</ol><br>OPMERKING: het hierboven beschreven gedrag wordt vanaf 14 maart 2022 toegepast op nieuwe omgevingen en wordt op 21 april 2022 toegepast voor bestaande omgevingen (die welke vóór 14 maart 2022 zijn gecreëerd).</td>
+   </td>
   </tr>
   <tr>
     <td>Lucene Binaries Cleanup</td>
