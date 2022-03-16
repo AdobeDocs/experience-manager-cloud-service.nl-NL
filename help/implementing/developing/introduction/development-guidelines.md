@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
+source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2356'
 ht-degree: 2%
 
 ---
@@ -55,15 +55,19 @@ Op dezelfde manier, met alles dat asynchroon gebeurt, zoals handelend op observa
 
 ## Uitgaande HTTP-verbindingen {#outgoing-http-connections}
 
-Het wordt sterk geadviseerd dat om het even welke uitgaande verbindingen van HTTP redelijk plaatsen verbind en lees onderbrekingen. Voor code die deze time-outs niet toepast, AEM instanties die op AEM as a Cloud Service worden uitgevoerd een algemene time-out afdwingen. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen die door de volgende populaire bibliotheken van Java worden gebruikt:
+Het wordt sterk geadviseerd dat om het even welke uitgaande verbindingen van HTTP redelijk plaatsen verbind en lees onderbrekingen; De voorgestelde waarden zijn 1 seconde voor de verbindingsperiode en 5 seconden voor read timeout. De nauwkeurige aantallen moeten worden bepaald gebaseerd op de prestaties van het backend systeem die deze verzoeken behandelen.
+
+Voor code die deze time-outs niet toepast, AEM instanties die op AEM as a Cloud Service worden uitgevoerd een algemene time-out afdwingen. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen.
 
 Adobe raadt het gebruik van de meegeleverde [Apache HttpComponents Client 4.x-bibliotheek](https://hc.apache.org/httpcomponents-client-ga/) voor het maken van HTTP-verbindingen.
 
 Alternatieven waarvan bekend is dat ze werken, maar waarvoor de afhankelijkheid zelf nodig kan zijn, zijn:
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) en/of [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (Door AEM verstrekt)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) en/of [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (Door AEM verstrekt)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (niet aanbevolen omdat het verouderd is en wordt vervangen door versie 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Niet verstrekt door AEM)
+
+Naast het verstrekken van onderbrekingen ook zou een juiste behandeling van dergelijke onderbrekingen evenals onverwachte HTTP- statuscodes moeten worden uitgevoerd.
 
 ## Geen Klassieke UI-aanpassingen {#no-classic-ui-customizations}
 
