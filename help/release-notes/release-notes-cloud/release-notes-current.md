@@ -3,10 +3,10 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4d7d3d7fb4430c2027d4d2f3c34d77890c28ad8
+source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 1%
+source-wordcount: '1188'
+ht-degree: 0%
 
 ---
 
@@ -135,15 +135,17 @@ De releasedatum voor Content Transfer Tool v1.8.6 is 3 februari 2022.
 
 ### Releasedatum {#release-date-bpa}
 
-De releasedatum voor de analyse van best practices v2.1.24 is 1 februari 2022.
+De releasedatum voor de analyse van best practices v2.1.26 is 16 maart 2022.
 
 ### Wat is er nieuw? {#what-is-new-bpa}
 
-* Mogelijkheid om het aantal elementen met en zonder slimme tags te detecteren en hierover te rapporteren.
-* Mogelijkheid om de gebruikte versie van de Core Component te detecteren en hierover verslag uit te brengen.
-* Mogelijkheid om het type bronlaag (Auteur of Publiceren) waar BPA is uitgevoerd, op te sporen en te rapporteren.
+* Mogelijkheid om niet-verwerkte activa te detecteren. Als onverwerkte middelen worden ontdekt, moeten deze activa of aan verwerkt worden geplaatst of moeten uit de migratie worden verwijderd die tijdens inhoudstransmissie wordt geplaatst om lopende in kwesties tijdens inhoudsinname te vermijden.
+* Mogelijkheid om te detecteren of inhoud meer dan 1000 vanity-URL&#39;s heeft. Het gebruik van een hoog aantal vanity-URL&#39;s is niet de beste manier, omdat hiermee een laadbewerking wordt uitgevoerd op de servers Dispatcher en Publish.
+* Mogelijkheid om problemen met betrekking tot de definities van de eikenindex te identificeren en incompatibiliteiten met AEM as a Cloud Service vast te stellen.
+* Mogelijkheid om het gebruik van Externalzer-configuraties te detecteren en hierover verslag uit te brengen. In AEM as a Cloud Service configuraties Externalzer worden ingesteld door Cloud Manager. Daarom moeten bestaande configuraties Externalzer worden vernieuwd om de compatibiliteit te behouden.
 
 ### Opgeloste problemen {#bug-fixes-bpa}
 
-* BPA-logica voor grootteaanpassing is sneller en efficiënter gemaakt.
-* In sommige scenario&#39;s, verhoogde BPA niet de geanalyseerde telling toen het in werking werd gesteld. Dit is opgelost.
+* In sommige gevallen kon BPA niet worden uitgevoerd omdat FormsSelectiveFeaturesAnalysis een assertiefout genereerde. Dit is opgelost.
+* BPA rapporteerde bevindingen met betrekking tot het WRK-patroon als MAJOR in plaats van als KRITIEK. Dit is opgelost.
+* BPA rapporteerde onjuist bevindingen met betrekking tot OAK-indexdefinities in ui.apps als CRITICAL. Dit is opgelost
