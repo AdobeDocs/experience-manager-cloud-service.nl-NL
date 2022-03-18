@@ -2,9 +2,9 @@
 title: Navigeren naar de Serviceverlener voor schermen
 description: In deze pagina wordt beschreven hoe u naar de Serviceverlener voor schermen kunt navigeren.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 9263c833edf092a4254b7692924c1638100b9f6d
+source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,8 @@ Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. Voer in het dialoogvenster Instellingen bewerken de volgende gegevens in.
-o **Basis-URL** - URL voor publiceren AEM naar **Auteur-URL** - URL AEM-auteur of **Pad naar kanaalprovider** - /screens/channels.json
+   * **URL publiceren** - AEM publicatie-URL (bijvoorbeeld `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **Auteur-URL** - AEM auteur-URL (bijvoorbeeld `https://author-p12345-e12345.adobeaemcloud.com`)
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens4.png)
 
