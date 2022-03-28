@@ -4,9 +4,9 @@ description: Leer hoe u inhoud in de cache van uw CDN (Content Delivery Network)
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: c9944b1ac561b54ad2e2870ab0da967c005f105f
+source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Dynamic Media-elementen worden in cache geplaatst door de CDN (Content Delivery 
 >
 >Voor deze functie is het vereist dat u de CDN uit de doos gebruikt die bij Adobe Experience Manager Dynamic Media is gebundeld. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
 
-Zie ook [Overzicht van cache in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
+<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
 **De CDN-cache ongeldig maken via Dynamic Media:**
 
@@ -57,7 +57,7 @@ Zie ook [Overzicht van cache in Dynamic Media](https://helpx.adobe.com/experienc
 
    >[!NOTE]
    >
-   >Als u besluit de opties te behouden **[!UICONTROL Invalidate asset associated image presets in CDN]** *en* **[!UICONTROL Invalidate based on template]** Als deze optie is uitgeschakeld, wordt de basis-URL van de geselecteerde elementen samengesteld voor ongeldigmaking. Gebruik deze optie alleen voor afbeeldingen.
+   >Als u besluit de opties te handhaven **[!UICONTROL Invalidate asset associated image presets in CDN]** *en* **[!UICONTROL Invalidate based on template]** Als deze optie is uitgeschakeld, wordt de basis-URL van de geselecteerde elementen samengesteld voor ongeldigmaking. Gebruik deze optie alleen voor afbeeldingen.
 
 
    | Optie | Beschrijving |
