@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
-source-wordcount: '2982'
+source-wordcount: '2976'
 ht-degree: 0%
 
 ---
@@ -305,11 +305,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## Verouderde, specifieke klanten van het Adres van de Afstuwing {#legacy-dedicated-egress-address-customers}
-
-Als u van een specifieke uitgang IP vóór 2021.09.30 bent voorzien, zal uw specifieke uitgangIP eigenschap werken zoals hieronder beschreven.
-
-### Functiegebruik {#feature-usage}
+## Functiegebruik {#feature-usage}
 
 De functie is compatibel met Java-code of bibliotheken die resulteren in uitgaand verkeer, op voorwaarde dat deze standaard Java-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit ook de meest gangbare bibliotheken omvatten.
 
@@ -351,11 +347,14 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 Het zelfde specifieke IP wordt toegepast op alle programma&#39;s van een klant in hun organisatie van de Adobe en voor alle milieu&#39;s in elk van hun programma&#39;s. Deze is van toepassing op zowel auteur- als publicatieservices.
 
-Alleen HTTP- en HTTPS-poorten worden ondersteund. Dit omvat HTTP/1.1 en HTTP/2 wanneer gecodeerd.
-
 ### Foutopsporingsoverwegingen {#debugging-considerations}
 
 Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals te roepen [https://ifconfig.me/IP](https://ifconfig.me/IP), die het roepende IP adres zal terugkeren.
+
+## Verouderde, specifieke klanten van het Adres van de Afstuwing {#legacy-dedicated-egress-address-customers}
+
+Als u van een specifieke uitgang IP vóór 2021.09.30 bent voorzien, steunt uw specifieke uitgangIP eigenschap slechts havens HTTP en HTTPS.
+Dit omvat HTTP/1.1 en HTTP/2 wanneer gecodeerd.
 
 ## Virtual Private Network (VPN) {#vpn}
 
