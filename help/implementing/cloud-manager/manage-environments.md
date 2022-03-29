@@ -2,7 +2,7 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 409bd3d701c50f40c6d4e0d85228ea183c6a2764
+source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 0%
@@ -49,7 +49,7 @@ De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen 
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
+1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
 
    * Selecteer een **Type omgeving**.
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes weergegeven achter het omgevingstype Ontwikkeling.
@@ -220,7 +220,7 @@ De volgende acties kunnen op de publicatieservice voor uw milieu worden uitgevoe
 
 * [Een aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-* [Status van aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) of [SSL-certificaat](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+* [Status van aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) of [SSL-certificaat](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
 * [De Status van een IP Lijsten van gewenste personen controleren](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 

@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2021.3.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2021.3.0."'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 0%
@@ -90,7 +90,7 @@ De volgende release is gepland voor 8 april 2021.
 
 ### Wat is er nieuw? {#what-is-new-march}
 
-* Klanten met omgevingen met bestaande aangepaste domeinnaamconfiguraties voor [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zal een bericht over hun eerder bestaande configuraties zien en zal kunnen zelf-dienen via UI.
+* Klanten met omgevingen met bestaande aangepaste domeinnaamconfiguraties voor [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zal een bericht over hun eerder bestaande configuraties zien en zal kunnen zelf-dienen via UI.
 
 * Gebruikers met de vereiste machtigingen kunnen nu een programma bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen:
 

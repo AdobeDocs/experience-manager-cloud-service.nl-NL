@@ -1,81 +1,98 @@
 ---
-title: Een SSL-certificaat toevoegen - SSL-certificaten beheren
-description: Een SSL-certificaat toevoegen - SSL-certificaten beheren
+title: Een SSL-certificaat toevoegen
+description: Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma's van Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
+source-git-commit: 2c87d5fb33b83ca77b97391e4b0baaf38f8dd026
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
 # Een SSL-certificaat toevoegen {#adding-an-ssl-certificate}
 
->[!NOTE]
->AEM as a Cloud Service accepteert alleen certificaten die voldoen aan het OV- (Organisatie-validatie) of EV-beleid (Extended Validation). Het DV-beleid (Domain Validation) wordt niet geaccepteerd. Bovendien moet elk certificaat een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende 2048-bits RSA-privésleutel. AEM as a Cloud Service accepteert jokertekens voor SSL-certificaten voor een domein.
+Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma&#39;s van Cloud Manager.
 
-Een Certificaat neemt een paar dagen in beslag om te verstrekken en het wordt geadviseerd om het certificaat zelfs maanden van tevoren te provisioning. Zie [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) voor meer informatie .
+>[!TIP]
+>
+>Een certificaat kan een paar dagen aan levering vergen. Adobe beveelt daarom aan dat het certificaat ruim van tevoren wordt verstrekt.
 
 ## Certificaatindeling {#certificate-format}
 
-SSL-bestanden moeten de PEM-indeling hebben om te kunnen worden geïnstalleerd in Cloud Manager. Algemene bestandsextensies die binnen de PEM-indeling vallen, zijn onder andere `.pem,` .`crt`, `.cer`, en `.cert`.
+SSL-certificaatbestanden moeten de PEM-indeling hebben om te worden geïnstalleerd met Cloud Manager. Algemene bestandsextensies in de PEM-indeling omvatten: `.pem,` .`crt`, `.cer`, en `.cert`.
 
-Voer de onderstaande stappen uit om de indeling van uw SSL-bestanden te converteren naar PEM:
+Het volgende `openssl` U kunt opdrachten gebruiken om niet-PEM-certificaten om te zetten.
 
 * PFX converteren naar PEM
 
-   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   ```shell
+   openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+   ```
 
 * P7B converteren naar PEM
 
-   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   ```shell
+   openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+   ```
 
 * DER converteren naar PEM
 
-   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
-
-## Belangrijke overwegingen {#important-considerations}
-
-* Een gebruiker moet de rol van bedrijfseigenaar of implementatiebeheerder hebben om een SSL-certificaat te installeren in Cloud Manager.
-
-* Cloud Manager staat op elk gewenst moment maximaal 10 SSL-certificaten toe die kunnen worden gekoppeld aan een of meer omgevingen in uw gehele programma, zelfs als het certificaat is verlopen. Met de interface van Cloud Manager kunnen echter maximaal 50 SSL-certificaten met deze beperking in het programma worden geïnstalleerd. Doorgaans kan een certificaat meerdere domeinen (tot 100 SAN&#39;s) bestrijken. U kunt dus overwegen meerdere domeinen in hetzelfde certificaat te groeperen om binnen deze limiet te blijven.
-
+   ```shell
+   openssl x509 -inform der -in certificate.cer -out certificate.pem
+   ```
 
 ## Een certificaat toevoegen {#adding-a-cert}
 
-Voer de onderstaande stappen uit om een certificaat toe te voegen:
+Ga als volgt te werk om een certificaat toe te voegen met gebruik van Cloud Manager.
 
-1. Meld u aan bij Cloud Manager.
-1. Navigeren naar **Omgevingen** scherm van **Overzicht** pagina.
-1. Klikken op **SSL-certificaten** in het navigatiemenu aan de linkerkant. Op dit scherm wordt een tabel weergegeven met de details van bestaande SSL-certificaten.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+1. Navigeren naar **Omgevingen** van het scherm **Overzicht** pagina.
+
+1. Klikken op **SSL-certificaten** in het navigatievenster aan de linkerkant. Een tabel met details van bestaande SSL-certificaten wordt weergegeven op het hoofdscherm.
+
+   ![Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
 1. Klikken op **SSL-certificaat toevoegen** openen **SSL-certificaat toevoegen** in.
 
-   * Geef een naam op voor uw certificaat in **Certificaatnaam**. Dit kan elke naam zijn die u helpt gemakkelijk naar uw certificaat te verwijzen.
-   * Plak de **Certificaat**, **Persoonlijke sleutel** en **Certificaatketen** in hun respectieve velden. Gebruik het plakpictogram rechts van het invoervak.
-De drie velden zijn niet optioneel en moeten worden opgenomen.
+   * Geef een naam op voor uw certificaat in **Certificaatnaam**.
+      * Dit is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar uw certificaat kunt verwijzen.
+   * Plak de **Certificaat**, **Persoonlijke sleutel**, en **Certificaatketen** waarden in hun respectieve gebieden.
+      * U kunt het plakpictogram rechts van het invoervak gebruiken.
+      * Alle drie velden zijn verplicht.
 
-      ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+   ![Dialoogvenster SSL-certificaat toevoegen](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
+   * Eventuele fouten worden weergegeven.
+      * U moet alle fouten aanpakken voordat uw certificaat kan worden opgeslagen.
+      * Zie de [Certificaatfouten](#certificate-errors) voor meer informatie over het aanpakken van algemene fouten.
 
 
-      >[!NOTE]
-      >Eventuele fouten worden weergegeven. U moet alle fouten aanpakken voordat uw certificaat kan worden opgeslagen. Zie de [Certificaatfouten](#certificate-errors) meer te leren over het richten van gemeenschappelijke fouten.
+1. Klikken **Opslaan** om uw certificaat op te slaan.
 
-1. Klikken **Opslaan** om uw certificaat in te dienen. U ziet het als een nieuwe rij in de tabel.
+Nadat u het certificaat hebt opgeslagen, wordt het weergegeven als een nieuwe rij in de tabel.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![Opgeslagen SSL-certificaat](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+
+>[!NOTE]
+>
+>Een gebruiker moet lid zijn van **Zakelijke eigenaar** of **Implementatiebeheer** rol om een SSL-certificaat te installeren in Cloud Manager.
 
 ## Certificaatfouten {#certificate-errors}
 
+Er kunnen bepaalde fouten optreden als een certificaat niet correct is geïnstalleerd of voldoet aan de vereisten van Cloud Manager.
+
 ### Certificaatbeleid {#certificate-policy}
 
-Als de fout &quot;Certificaatbeleid moet in overeenstemming zijn met OV of OV en niet met DV-beleid.&quot; wordt weergegeven, controleert u het beleid van uw certificaat.
+Controleer het beleid van uw certificaat als de volgende fout optreedt.
 
-Normaliter worden certificaattypen geïdentificeerd door de OID-waarden die zijn ingesloten in het beleid. Deze OID&#39;s zijn uniek en daarom wordt bij het converteren van een certificaat naar een tekstformulier en het zoeken naar de OID bevestigd dat het certificaat een overeenkomst heeft.
+```text
+Certificate policy must conform with EV or OV, and not DV policy.
+```
 
-U kunt de certificaatdetails als volgt bekijken.
+Het certificaatbeleid wordt gewoonlijk bepaald door ingesloten OID-waarden. Als u een certificaat op tekst uitvoert en naar de OID zoekt, wordt het beleid van het certificaat weergegeven.
+
+U kunt de certificaatdetails als tekst uitvoeren gebruikend het volgende voorbeeld als gids.
 
 ```text
 openssl x509 -in 9178c0f58cb8fccc.pem -text
@@ -94,15 +111,15 @@ certificate:
 ...
 ```
 
-Deze tabellen bieden identificatie van patronen.
+Het OID-patroon in de tekst definieert het beleidstype van het certificaat.
 
-| Patroon | Certificaattype | Aanvaardbaar |
+| Patroon | Beleid | Aanvaard in Cloud Manager |
 |---|---|---|
-| `2.23.140.1.2.1` | DV | Nee |
+| `2.23.140.1.1` | EV | Ja |
 | `2.23.140.1.2.2` | OV | Ja |
-| `2.23.140.1.2.3` and `TLS Web Server Authentication` | IV cert met toestemming voor gebruik voor https | Ja |
+| `2.23.140.1.2.1` | DV | Nee |
 
-`grep`pingelen voor de patronen, kunt u uw certificaattype bevestigen.
+Door `grep`pingel voor de patronen OID in de tekst van het outputcertificaat, kunt u uw certificaatbeleid bevestigen.
 
 ```shell
 # "EV Policy"
@@ -117,21 +134,30 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 ### Certificaatvolgorde corrigeren {#correct-certificate-order}
 
-De gemeenschappelijkste reden voor een certificaatplaatsing om te ontbreken is dat de midden of kettingcertificaten niet in de correcte orde zijn. Met name tussentijdse certificaatbestanden moeten eindigen op het basiscertificaat of het basiscertificaat dat zich het dichtst bij het basiscertificaat bevindt en in aflopende volgorde staan vanaf het basiscertificaat `main/server` certificaat aan de wortel.
+De gemeenschappelijkste reden voor een certificaatplaatsing om te ontbreken is dat de midden of kettingcertificaten niet in de correcte orde zijn.
 
-U kunt de orde van uw middendossiers bepalen gebruikend het volgende bevel:
+Tussentijdse certificaatbestanden moeten eindigen met het basiscertificaat of het certificaat dat zich het dichtst bij het basiscertificaat bevindt. Zij moeten in dalende orde van `main/server` certificaat aan de wortel.
 
-`openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout`
+U kunt de orde van uw middendossiers bepalen gebruikend het volgende bevel.
 
-U kunt controleren of de persoonlijke sleutel en `main/server` certificaat komt overeen met behulp van de volgende opdrachten:
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
 
-`openssl x509 -noout -modulus -in certificate.pem | openssl md5`
+U kunt controleren of de persoonlijke sleutel en `main/server` het certificaat past het gebruiken van de volgende bevelen aan.
 
-`openssl rsa -noout -modulus -in ssl.key | openssl md5`
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
 
 >[!NOTE]
->De uitvoer van deze twee opdrachten moet exact hetzelfde zijn. Als u geen overeenkomende persoonlijke sleutel kunt vinden voor uw `main/server` -certificaat, moet u het certificaat opnieuw coderen door een nieuwe CSR te genereren en/of een bijgewerkt certificaat aan te vragen bij uw SSL-leverancier.
+>
+>De uitvoer van deze twee opdrachten moet exact hetzelfde zijn. Als u geen overeenkomende persoonlijke sleutel voor uw `main/server` -certificaat, moet u het certificaat opnieuw coderen door een nieuwe CSR te genereren en/of een bijgewerkt certificaat aan te vragen bij uw SSL-leverancier.
 
 ### Geldigheidsdatums certificaat {#certificate-validity-dates}
 
-Cloud Manager verwacht dat het SSL-certificaat ten minste 90 dagen geldig is in de toekomst. Controleer de geldigheid van de certificaatketen.
+Cloud Manager verwacht dat het SSL-certificaat ten minste 90 dagen geldig is vanaf de huidige datum. Controleer de geldigheid van de certificaatketen.

@@ -1,50 +1,76 @@
 ---
-title: Inleiding - SSL-certificaten beheren
-description: Inleiding - SSL-certificaten beheren
+title: Inleiding tot het beheren van SSL-certificaten
+description: Leer hoe u in Cloud Manager zelfbedieningsgereedschappen hebt om SSL-certificaten te installeren.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 09a2c24b848364954dc5621995d0d0dc24059011
+source-git-commit: 898f7bc46a3f1b0ac93ee43fbf7b60a11682a073
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
-# Inleiding {#introduction}
+
+# Inleiding tot het beheren van SSL-certificaten{#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="SSL-certificaten beheren"
->abstract="Cloud Manager biedt klanten de mogelijkheid om zelf SSL-certificaten te installeren via de interface van Cloud Manager. Cloud Manager gebruikt een Platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die doorgaans worden verkregen van certificeringsinstanties van derden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html" text="Een SSL-certificaat weergeven, bijwerken en vervangen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html" text="Status van een SSL-certificaat controleren"
+>abstract="Leer hoe u met Cloud Manager zelfservicegereedschappen hebt voor het installeren en beheren van SSL-certificaten om uw site te beveiligen voor uw gebruikers. Cloud Manager gebruikt een platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die zijn verkregen van certificeringsinstanties van derden."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Een SSL-certificaat weergeven, bijwerken en vervangen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Status van een SSL-certificaat controleren"
 
+Cloud Manager biedt u zelfbedieningsgereedschappen voor het installeren en beheren van SSL-certificaten om uw site te beveiligen voor uw gebruikers. Cloud Manager gebruikt een platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die zijn verkregen van certificeringsinstanties van derden, zoals Let&#39;s Encrypt.
 
-Cloud Manager biedt klanten de mogelijkheid om zelf SSL-certificaten te installeren via de interface van Cloud Manager. Cloud Manager gebruikt een Platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die doorgaans worden verkregen van certificeringsinstanties van derden, bijvoorbeeld *Laten we versleutelen*.
+## Inleiding tot certificaten {#certificates}
 
-## Belangrijke overwegingen {#important-considerations}
+Bedrijven gebruiken SSL-certificaten om hun websites te beveiligen en hun klanten in staat te stellen er vertrouwen in te stellen. Voor het gebruik van het SSL-protocol vereist een webserver het gebruik van een SSL-certificaat.
 
-* Cloud Manager biedt geen SSL-certificaten of persoonlijke sleutels. Deze moeten afkomstig zijn van certificeringsinstanties van derden. Zie [Een SSL-certificaat ophalen](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) voor meer informatie.
+Wanneer een entiteit een certificaat aanvraagt bij een certificeringsinstantie, voltooit de certificeringsinstantie een verificatieproces. Dit kan zich van het verifiëren van domeinnaamcontrole tot het verzamelen van de documenten van de bedrijfregistratie en abonneeovereenkomsten uitstrekken. Zodra de informatie van een entiteit is geverifieerd, zal de CA hun openbare sleutel ondertekenen gebruikend de privé sleutel van CA. Omdat alle belangrijke certificeringsinstanties basiscertificaten hebben in webbrowsers, wordt het certificaat van de entiteit gekoppeld via een *vertrouwensketen* en de webbrowser herkent het als een vertrouwd certificaat.
 
-* AEM alleen as a Cloud Service ondersteunt veilige `https` sites. Klanten met meerdere aangepaste domeinen willen niet telkens wanneer zij een domein toevoegen, een certificaat uploaden. Daarom zullen dergelijke klanten profiteren door één certificaat met meerdere domeinen te krijgen.
+>[!IMPORTANT]
+>
+>Cloud Manager biedt geen SSL-certificaten of persoonlijke sleutels. Deze moeten worden verkregen van certificeringsinstanties (CA&#39;s).
 
-* AEM as a Cloud Service accepteert alleen certificaten die voldoen aan het OV- (Organisatie-validatie) of EV-beleid (Extended Validation). Het DV-beleid (Domain Validation) wordt niet geaccepteerd. Bovendien moet elk certificaat een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende 2048-bits RSA-privésleutel.
+## SSL-beheerfuncties van Cloud Manager {#features}
 
-* AEM as a Cloud Service accepteert jokertekens voor SSL-certificaten voor een domein.
+Cloud Manager ondersteunt de volgende gebruiksopties voor SSL-certificaten van klanten.
 
-* Cloud Manager staat op elk gewenst moment maximaal 50 SSL-certificaten toe die kunnen worden gekoppeld aan een of meer omgevingen in uw gehele programma, zelfs als het certificaat is verlopen. Met de interface van Cloud Manager kunnen echter maximaal 50 SSL-certificaten met deze beperking in het programma worden geïnstalleerd. Doorgaans kan een certificaat meerdere domeinen (tot 100 SAN&#39;s) bestrijken. U kunt dus overwegen meerdere domeinen in hetzelfde certificaat te groeperen om onder deze limiet te blijven.
-
-Cloud Manager ondersteunt de volgende SSL-certificaatvereisten voor klanten:
-
-* Een SSL-certificaat kan door meerdere omgevingen worden gebruikt, dat wil zeggen één keer toevoegen en meerdere keren gebruiken.
+* Een SSL-certificaat kan door meerdere omgevingen worden gebruikt. Dit wil zeggen dat het eenmaal kan worden toegevoegd en meerdere keren kan worden gebruikt.
 * Elke Cloud Manager-omgeving kan meerdere certificaten gebruiken.
 * Een persoonlijke sleutel kan meerdere SSL-certificaten uitgeven.
 * Elk certificaat bevat gewoonlijk meerdere domeinen.
-* De de dienstroutes van Platform TLS verzoeken aan de Dienst CDN van de klant die op het SSL certificaat wordt gebaseerd dat wordt gebruikt om te eindigen en de Dienst CDN die gastheren dat domein.
+* De platformTLS de dienstroutes verzoeken aan de dienst CDN van de klant die op het SSL certificaat wordt gebaseerd dat wordt gebruikt om te eindigen en de dienst CDN die gastheren dat domein.
+* AEM as a Cloud Service accepteert SSL-jokertekens voor een domein.
 
-Met behulp van de pagina met SSL-certificaten voor de gebruikersinterface van Cloud Manager kan een gebruiker met machtigingen verschillende taken uitvoeren om SSL-certificaten voor een programma te beheren:
+## Recommendations {#recommendations}
+
+AEM alleen as a Cloud Service ondersteunt veilige `https` sites.
+
+* Klanten met meerdere aangepaste domeinen willen niet telkens wanneer zij een domein toevoegen, een certificaat uploaden.
+* Dergelijke klanten zullen profiteren door één certificaat met veelvoudige domeinen te krijgen.
+
+## Vereisten {#requirements}
+
+* AEM as a Cloud Service accepteert alleen certificaten die voldoen aan het OV- (Organisatie-validatie) of EV-beleid (Extended Validation).
+* Elk certificaat moet een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende persoonlijke RSA-sleutel van 2048 bits.
+* Het DV-beleid (Domain Validation) wordt niet geaccepteerd.
+* Zelfondertekende certificaten worden niet geaccepteerd.
+
+OV- en EV-certificaten bieden gebruikers extra door CA gevalideerde informatie die kan worden gebruikt om te bepalen of de eigenaar van een website, de afzender van een e-mail of de digitale handtekening van uitvoerbare code of PDF-documenten betrouwbaar is. DV-certificaten staan een dergelijke eigendomsverificatie niet toe.
+
+## Beperkingen {#limitations}
+
+Cloud Manager staat op elk gewenst moment maximaal 50 SSL-certificaten toe. Deze kunnen aan één of meerdere milieu&#39;s over uw programma worden geassocieerd en ook om het even welke verlopen certificaten omvatten.
+
+Als u de limiet hebt bereikt, controleert u uw certificaten en overweegt u:
+
+* Verlopen certificaten verwijderen.
+* Meerdere domeinen in hetzelfde certificaat groeperen, aangezien een certificaat meerdere domeinen kan bestrijken (maximaal 100 SAN&#39;s).
+
+## Meer informatie {#learn-more}
+
+Een gebruiker met de vereiste machtigingen kan Cloud Manager gebruiken om SSL-certificaten voor een programma te beheren. Raadpleeg de volgende documenten voor meer informatie over deze functies.
 
 * [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-* [Een SSL-certificaat weergeven, bijwerken of vervangen](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
-   >[!NOTE]
-   >Met deze acties kunt u details weergeven of een certificaat vervangen dat bijna verlopen is.
-* [Een SSL-certificaat verwijderen](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+* [Een SSL-certificaat weergeven, bijwerken of vervangen](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+* [Een SSL-certificaat verwijderen](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
