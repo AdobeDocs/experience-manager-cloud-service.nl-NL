@@ -3,19 +3,23 @@ title: Browser voor opslagplaats
 seo-title: Repository Browser
 description: De repository browser biedt een alleen-lezen weergave in de repository voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
-source-git-commit: 76e28ca5628fb985df21f53d1c3e9898985dc736
+exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
+source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
-
 
 # Browser voor opslagplaats {#repository-browser}
 
 >[!NOTE]
 >
 >De gegevensopslagbrowser is beschikbaar voor AEM versie 6582 en hoger.
+
+>[!INFO]
+>
+>U kunt ook [deze clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) voor een snelle video-introductie over het gebruik van de Repository Browser voor foutopsporing AEM as a Cloud Service.
 
 ## Inleiding {#introduction}
 
