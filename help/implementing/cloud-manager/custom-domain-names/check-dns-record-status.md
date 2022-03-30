@@ -1,33 +1,43 @@
 ---
 title: DNS-recordstatus controleren
-description: DNS-recordstatus controleren
+description: Leer hoe te om te bepalen of uw DNS montages behoorlijk door de Manager van de Wolk te gebruiken oplossen.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
 
 # DNS-recordstatus controleren {#check-dns-record-status}
 
-U kunt bepalen of uw domeinnaam correct aan uw AEM as a Cloud Service website door het pictogram van de Status voor het DNS verslag van de lijst op de Milieu&#39;s van de pagina van de Montages van het Domein te klikken wordt opgelost.
+In Cloud Manager kunt u bepalen of uw domeinnaam correct wordt omgezet in uw AEM as a Cloud Service website.
 
-Cloud Manager zal automatisch een DNS raadpleging teweegbrengen wanneer uw Naam van het Domein van de Douane eerst met succes wordt geverifieerd en wordt opgesteld. Voor volgende pogingen moet u actief de optie **opnieuw oplossen** naast de status.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-Cloud Manager voert een DNS-zoekopdracht voor uw domeinnaam uit en geeft een van de volgende statusberichten weer:
+1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 
-* **DNS-status niet gedetecteerd**
-DNS status zal niet worden ontdekt tot uw naam van het douanedomein met succes is geverifieerd en opgesteld. Deze status wordt ook waargenomen wanneer uw naam van het Domein van de Douane in het proces van schrapping is.
+1. Klikken op **Domeininstellingen** in het linkernavigatievenster.
 
-* **DNS lost onjuist op**
-Dit wijst erop dat één van beide DNS archiefconfiguratie niet heeft opgelost/op nog gewezen of onjuist is.
+1. Klik op de knop **Status** pictogram voor de domeinnaam.
 
-   >[!NOTE]
-   >U moet één van beide vormen `CNAME` of `A-record` door de desbetreffende instructies te volgen. Zie DNS-instellingen configureren voor meer informatie. Wanneer u klaar bent, moet u de optie **opnieuw oplossen** naast de status.
+Cloud Manager voert een DNS raadpleging voor uw domeinnaam uit en toont één van de volgende statusberichten.
 
-* **DNS-resolutie in uitvoering**
-De resolutie is in uitvoering. Deze status wordt meestal weergegeven nadat u het pictogram &quot;Opnieuw oplossen&quot; naast de status hebt geselecteerd.
+* **DNS-status niet gedetecteerd** - DNS status zal niet worden ontdekt tot uw naam van het douanedomein met succes is geverifieerd en opgesteld.
 
-* **DNS lost correct op**
-Uw DNS-instellingen zijn correct geconfigureerd. Uw site is bestemd voor bezoekers.
+   * Deze status wordt ook waargenomen wanneer uw naam van het Domein van de Douane in het proces van schrapping is.
+
+* **DNS lost onjuist op** - Dit wijst erop dat of de DNS archiefconfiguratie niet heeft opgelost of onjuist is.
+
+   * Het document raadplegen [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) voor meer informatie.
+   * Wanneer u klaar bent, moet u de optie **Opnieuw oplossen** naast de status.
+
+* **DNS-resolutie in uitvoering** - De resolutie is in behandeling.
+
+   * Deze status wordt meestal weergegeven nadat u de optie **Opnieuw oplossen** naast de status.
+
+* **DNS lost correct op** - Uw DNS-instellingen zijn correct geconfigureerd.
+
+   * Uw site is bestemd voor bezoekers.
+
+Cloud Manager activeert automatisch een DNS-zoekopdracht wanneer uw aangepaste domeinnaam voor het eerst is geverifieerd en geïmplementeerd. Voor volgende pogingen moet u actief de optie **Opnieuw oplossen** naast de status.

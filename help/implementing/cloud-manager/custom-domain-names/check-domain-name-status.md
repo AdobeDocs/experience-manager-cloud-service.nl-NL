@@ -1,53 +1,61 @@
 ---
 title: Status domeinnaam controleren
-description: Status domeinnaam controleren
+description: Leer hoe u kunt bepalen of uw aangepaste domeinnaam is geverifieerd door Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
+source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
+
 # Status domeinnaam controleren {#check-status}
 
-U kunt bepalen of uw domeinnaam met succes is geverifieerd door op het statuspictogram voor de domeinnaam te klikken in de tabel betreffende omgevingen op de pagina Domeininstellingen.
+U kunt de status van uw aangepaste domeinnaam bepalen in Cloud Manager.
 
->[!NOTE]
->Cloud Manager activeert automatisch een TXT-verificatie wanneer u Opslaan selecteert in de verificatiestap van de wizard Aangepast domein toevoegen. Voor verdere controles moet u actief selecteren **Opnieuw controleren** naast de status.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-Cloud Manager controleert het eigendom van domeinen via de TXT-waarde en geeft een van de volgende statusberichten weer:
+1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 
-* **Domeinverificatie mislukt**
-De TXT-waarde ontbreekt of wordt met fouten gedetecteerd. Volg de instructies en probeer het opnieuw. Wanneer u klaar bent, moet u de optie 
-*Opnieuw controleren* naast de status.
+1. Klikken op **Domeininstellingen** in het linkernavigatievenster.
 
-* **Domeinverificatie wordt uitgevoerd**
-Verificatie wordt uitgevoerd. Deze status wordt meestal weergegeven nadat u de optie 
-*Opnieuw controleren* naast de status.
+1. Klik op de knop **Status** pictogram voor de domeinnaam.
 
-* **Geverifieerd, implementatie mislukt**
-TXT-verificatie is gelukt. De CDN-implementatie is echter mislukt. Neem contact op met uw Adobe-vertegenwoordiger.
+Cloud Manager controleert het eigendom van het domein via de TXT-waarde en geeft een van de volgende statusberichten weer.
 
-* **Domein geverifieerd en geïmplementeerd**
-Deze status geeft aan dat uw aangepaste domeinnaam klaar is om te worden gebruikt.
-   >[!NOTE]
-   >Op dit moment is uw aangepaste domeinnaam klaar om te worden getest en moet deze naar de domeinnaam van Cloud Manager worden verwezen. Zie [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) voor meer informatie.
+* **Domeinverificatie mislukt** - De TXT-waarde ontbreekt of wordt met fouten gedetecteerd.
 
-* **Verwijderen**
-Verwijderen van aangepaste domeinnaam wordt uitgevoerd.
+   * Volg de instructies die worden gegeven om het probleem op te lossen.
+   * Wanneer u klaar bent, moet u de optie **Opnieuw controleren** naast de status.
 
-* **Verwijderen mislukt**
-Verwijderen van aangepaste domeinnaam is mislukt. U moet het opnieuw proberen. Zie [Een aangepaste domeinnaam verwijderen](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) voor meer informatie.
+* **Domeinverificatie wordt uitgevoerd** - De verificatie wordt uitgevoerd.
 
+   * Deze status wordt meestal weergegeven nadat u de optie **Opnieuw controleren** naast de status.
+
+* **Geverifieerd, implementatie mislukt** - De TXT-verificatie is gelukt, maar de CDN-implementatie is mislukt.
+
+   * Neem in dergelijke gevallen contact op met uw Adobe-vertegenwoordiger.
+
+* **Domein geverifieerd en geïmplementeerd** - Deze status geeft aan dat uw aangepaste domeinnaam klaar is om te worden gebruikt.
+
+   * Op dit moment is uw aangepaste domeinnaam klaar om te worden getest en moet deze naar de domeinnaam van Cloud Manager worden verwezen.
+   * Raadpleeg het document [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) voor meer informatie.
+
+* **Verwijderen** - De verwijdering van een aangepaste domeinnaam wordt uitgevoerd.
+
+* **Verwijderen mislukt** - Het verwijderen van een aangepaste domeinnaam is mislukt en moet opnieuw worden geprobeerd.
+
+   * Raadpleeg het document [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) voor meer informatie.
+
+Cloud Manager activeert automatisch een TXT-verificatie wanneer u **Opslaan** over de verificatiestap van de **Aangepast domein toevoegen** wizard. Voor verdere controles, moet u actief selecteren opnieuw verifieert pictogram naast de status.
 
 ## Bestaande CDN-configuraties voor aangepaste domeinnamen {#pre-existing-cdn}
 
-Klanten met omgevingen die reeds bestaande CDN-configuraties voor IP-Lijsten van gewenste personen, SSL-certificaten of aangepaste domeinnamen bevatten, zien het volgende bericht in het dialoogvenster **IP-Lijst van gewenste personen** en de **Omgeving** detailpagina. Het bericht dat op UI wordt getoond zal verdwijnen zodra de klant alle reeds bestaande omgevingsconfiguraties via UI volledig heeft gemigreerd en het kan 1-2 werkdagen voor het bericht vergen om te verdwijnen.
+Als u een reeds bestaande configuratie CDN voor uw namen van het douanedomein hebt, zal er een informatief bericht op het **IP-Lijst van gewenste personen** en **Omgeving** pagina&#39;s, die u aanmoedigen om deze configuraties toe te voegen via de gebruikersinterface zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
 
->[!NOTE]
->Om de reeds bestaande configuraties te kunnen zien en beheren moeten zij via UI worden toegevoegd. Zie [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) voor meer informatie .
+Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
+Raadpleeg het document [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) voor meer informatie .
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
+![Bestaande CDN config-bericht](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
