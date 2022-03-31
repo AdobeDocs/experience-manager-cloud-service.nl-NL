@@ -2,7 +2,7 @@
 title: SSL-certificaten beheren
 description: Leer hoe u Cloud Manager gebruikt om de status van uw SSL-certificaten te controleren en hoe u deze kunt bewerken, vervangen, bijwerken en verwijderen.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 6cc1620d139db3804325c118d0874c5f94cb23a4
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -24,16 +24,6 @@ De status van uw SSL-certificaten kan in één oogopslag worden geïnterpreteerd
    * Cloud Manager verzendt regelmatig meldingen in de gebruikersinterface om u te waarschuwen voor het binnenkort verlopen van een certificaat.
 
 * **Rood** - Deze status geeft aan dat het SSL-certificaat is verlopen.
-
-## Bestaande CDN-configuraties {#pre-existing-cdn}
-
-Als u een reeds bestaande CDN configuratie voor uw SSL certificaat hebt, zal er een informatief bericht op het **SSL-certificaten** , waarbij u wordt aangemoedigd deze configuraties toe te voegen via de gebruikersinterface, zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
-
-Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
-
-Raadpleeg het document [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer informatie .
-
-Een soortgelijk bericht wordt ook gegeven op de **IP-Lijst van gewenste personen** en de **Omgevingen** pagina&#39;s voor milieu&#39;s die reeds bestaande configuraties CDN voor IP lijsten van gewenste personen of douanedomeinnamen hebben.
 
 ## Een SSL-certificaat bijwerken {#update-ssl-certificate}
 
@@ -70,3 +60,13 @@ Ga als volgt te werk om een SSL-certificaat te verwijderen.
 >[!NOTE]
 >
 >Een gebruiker moet lid zijn van **Zakelijke eigenaar** of **Implementatiebeheer** rol om een SSL-certificaat te verwijderen in Cloud Manager.
+
+## Bestaande CDN-configuraties {#pre-existing-cdn}
+
+Als u een reeds bestaande CDN configuratie voor uw SSL certificaat hebt, zal er een informatief bericht op het **SSL-certificaten** , waarbij u wordt aangemoedigd deze configuraties toe te voegen via de gebruikersinterface, zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
+
+Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
+
+Raadpleeg het document [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer informatie .
+
+Een soortgelijk bericht wordt ook gegeven op de **IP-Lijst van gewenste personen** en de **Omgevingen** pagina&#39;s voor milieu&#39;s die reeds bestaande configuraties CDN voor IP lijsten van gewenste personen of douanedomeinnamen hebben.

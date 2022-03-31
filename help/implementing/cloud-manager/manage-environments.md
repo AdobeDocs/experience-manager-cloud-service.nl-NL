@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1745'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen 
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
+1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
 
    * Selecteer een **Type omgeving**.
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes weergegeven achter het omgevingstype Ontwikkeling.
@@ -105,9 +105,9 @@ Een gebruiker met de vereiste machtigingen moet de stappen van de volgende optie
 
 1. Creeer een aangewezen IP lijst van gewenste personen, pas het op de voorproefdienst toe, en unapply onmiddellijk `Preview Default [<envId>]` lijst van gewenste personen.
 
-   * Zie [Een IP-Lijst van gewenste personen niet toepassen](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) voor meer informatie .
+   * Raadpleeg het document [IP-Lijsten van gewenste personen toepassen en niet toepassen](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) voor meer informatie .
 
-1. De update gebruiken **IP-Lijst van gewenste personen** werkschema om standaardIP te verwijderen en IPs toe te voegen zoals aangewezen. Zie [Het bekijken van en het Bijwerken van een IP Lijst van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) voor meer informatie.
+1. De update gebruiken **IP-Lijst van gewenste personen** werkschema om standaardIP te verwijderen en IPs toe te voegen zoals aangewezen. Zie [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) voor meer informatie.
 
 Wanneer de toegang tot de voorvertoningsservice is ontgrendeld, wordt het vergrendelingspictogram vóór de naam van de voorvertoningsservice niet meer weergegeven.
 
@@ -220,7 +220,7 @@ De volgende acties kunnen op de publicatieservice voor uw milieu worden uitgevoe
 
 * [Status van aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) of [SSL-certificaat](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
-* [De Status van een IP Lijsten van gewenste personen controleren](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
 
 ## IP-Lijsten van gewenste personen beheren {#manage-ip-allow-lists}

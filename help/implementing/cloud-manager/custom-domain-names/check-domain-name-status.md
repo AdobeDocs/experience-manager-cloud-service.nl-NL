@@ -2,9 +2,9 @@
 title: Status domeinnaam controleren
 description: Leer hoe u kunt bepalen of uw aangepaste domeinnaam is geverifieerd door Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,8 @@ Cloud Manager activeert automatisch een TXT-verificatie wanneer u **Opslaan** ov
 
 ## Bestaande CDN-configuraties voor aangepaste domeinnamen {#pre-existing-cdn}
 
-Als u een reeds bestaande configuratie CDN voor uw namen van het douanedomein hebt, zal er een informatief bericht op het **IP-Lijst van gewenste personen** en **Omgeving** pagina&#39;s, die u aanmoedigen om deze configuraties toe te voegen via de gebruikersinterface zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
+Als u een reeds bestaande configuratie CDN voor uw namen van het douanedomein hebt, zal er een informatief bericht op het **Aangepaste domeinnamen** en **Omgeving** pagina&#39;s, die u aanmoedigen om deze configuraties toe te voegen via de gebruikersinterface zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
 
 Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 
 Raadpleeg het document [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) voor meer informatie .
-
-![Bestaande CDN config-bericht](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)

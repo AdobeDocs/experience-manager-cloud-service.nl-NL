@@ -2,16 +2,16 @@
 title: Een TXT-record toevoegen
 description: Leer hoe u TXT-record toevoegt om een aangepaste domeinnaam toe te voegen in Cloud Manager.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: c80b7288b86ac62da17d5a83ec96cb882e36f687
+source-git-commit: 491e710223c5878bfa81c4b0a57d18ec0ec29479
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
 
 # Een TXT-record toevoegen {#adding-txt}
 
-Een DNS TXT-record geeft toestemming voor het hosten van een domein in een CDN-service. U moet een DNS TXT- verslag in de streek tot stand brengen die de Manager van de Wolk machtigt om de Dienst CDN met het douanedomein op te stellen en het te associëren met de backenddienst. Deze koppeling staat volledig onder uw controle en machtigt Cloud Manager om inhoud van de service aan een domein te leveren. Deze vergunning kan worden verleend en ingetrokken.
+Een DNS TXT-record geeft toestemming voor het hosten van een domein in een CDN-service. U moet een DNS TXT- verslag in de streek tot stand brengen die de Manager van de Wolk machtigt om de Dienst CDN met het douanedomein op te stellen en het te associëren met de backenddienst. Deze koppeling staat volledig onder uw controle en machtigt Cloud Manager om inhoud van de service aan een domein te leveren. Deze vergunning kan worden verleend en ingetrokken. De TXT-record is specifiek voor het domein en de omgeving van Cloud Manager.
 
 U moet aan deze vereisten voldoen voordat u een TXT-record toevoegt.
 

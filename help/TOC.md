@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ac5984d9b5c8800287e11fe00e02d60d9727ed43
+source-git-commit: 62c0c4cbc6de202e4fb2aecb02a146a19088d7ee
 workflow-type: tm+mt
-source-wordcount: '3407'
-ht-degree: 23%
+source-wordcount: '3387'
+ht-degree: 24%
 
 ---
 
@@ -675,11 +675,11 @@ ht-degree: 23%
       + [SLA-rapportage](/help/implementing/cloud-manager/sla-reporting.md)
       + [Nieuwe Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Meldingen](/help/implementing/cloud-manager/notifications.md)
-      + SSL-certificaten beheren {#manage-ssl-certificates}
+      + SSL-certificaten {#manage-ssl-certificates}
          + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Aangepaste domeinnamen beheren {#custom-domain-names}
+      + Aangepaste domeinnamen {#custom-domain-names}
          + [Inleiding](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Een TXT-record toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -687,14 +687,11 @@ ht-degree: 23%
          + [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-      + IP-Lijsten van gewenste personen beheren {#ip-allow-lists}
+      + IP-Lijsten van gewenste personen {#ip-allow-lists}
          + [Inleiding](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Een IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [Het bekijken van en het Bijwerken van een IP Lijst van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-         + [Een IP-Lijst van gewenste personen toepassen](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-         + [IP niet toepassen Allow-List](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-         + [Een IP-Lijst van gewenste personen verwijderen](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-         + [De status van een IP-Lijst van gewenste personen controleren](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+         + [IP-Lijsten van gewenste personen toepassen en niet toepassen](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Veelgestelde vragen over Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + Ontwikkelen voor AEM as a Cloud Service {#developing}
       + [AEM-projectstructuur](/help/implementing/developing/introduction/aem-project-content-package-structure.md)

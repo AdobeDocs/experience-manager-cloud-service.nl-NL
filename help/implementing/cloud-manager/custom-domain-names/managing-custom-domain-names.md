@@ -1,13 +1,13 @@
 ---
 title: Aangepaste domeinnamen beheren
 description: Leer hoe u met Cloud Manager aangepaste domeinnamen kunt weergeven, bijwerken, vervangen en verwijderen.
-source-git-commit: 4604b5fad59524a05dc7addf16c70246a14cfea1
+exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste domeinnamen beheren {#managing-custom-domain-names}
 
@@ -52,7 +52,8 @@ Een gebruiker met de **Zakelijke eigenaar** of **Implementatiebeheer** Met de ro
 1. Klik op de knop met de ellips helemaal rechts van de rij.
 
 1. Selecteren **Verwijderen**.
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
+
+   ![Aangepaste domeinnamen verwijderen](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Bevestig je verzending.
 

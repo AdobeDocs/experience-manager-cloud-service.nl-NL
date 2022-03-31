@@ -3,7 +3,7 @@ title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service v
 description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.3.0
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%
@@ -22,7 +22,7 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.3.0 is 11 maar
 
 ### Wat is er nieuw? {#what-is-new}
 
-* Klanten met omgevingen met bestaande aangepaste domeinnaamconfiguraties voor [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zal een bericht over hun eerder bestaande configuraties zien en zal kunnen zelf-dienen via UI.
+* Klanten met omgevingen met bestaande aangepaste domeinnaamconfiguraties voor [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zal een bericht over hun eerder bestaande configuraties zien en zal kunnen zelf-dienen via UI.
 
 * Gebruikers met de vereiste machtigingen kunnen nu een programma bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen:
    * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa of vice versa toe.
