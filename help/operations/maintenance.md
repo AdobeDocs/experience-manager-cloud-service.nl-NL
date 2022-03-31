@@ -2,9 +2,9 @@
 title: Onderhoudstaken in AEM as a Cloud Service
 description: Onderhoudstaken in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
+source-git-commit: 0472c3247f171c7c090444f02b928bbcf3a4e1fe
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Versies ouder dan 30 dagen worden verwijderd</li>
        <li>De meest recente vijf versies in de laatste 30 dagen worden bewaard</li>
        <li>Ongeacht de bovenstaande regels blijft de meest recente versie behouden.</li>
-     </ol><br>OPMERKING: het hierboven beschreven gedrag wordt vanaf 14 maart 2022 toegepast op nieuwe omgevingen en wordt op 21 april 2022 toegepast voor bestaande omgevingen (die welke vóór 14 maart 2022 zijn gecreëerd).</td>
+     </ol><br>OPMERKING: het hierboven beschreven gedrag wordt standaard afgedwongen voor nieuwe omgevingen die na 14 maart 2022 zijn gemaakt. Stuur een ticket voor klantenondersteuning als u andere instellingen nodig hebt.</td>
   </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Voor replicatiecontrole worden auditlogboeken ouder dan 3 dagen verwijderd</li>
        <li>Voor DAM-audits (Assets) worden auditlogboeken ouder dan 30 dagen verwijderd</li>
        <li>Voor pagina-controle worden logboeken ouder dan 3 dagen verwijderd.</li>
-     </ol><br>OPMERKING: het hierboven beschreven gedrag wordt vanaf 14 maart 2022 toegepast op nieuwe omgevingen en wordt op 21 april 2022 toegepast voor bestaande omgevingen (die welke vóór 14 maart 2022 zijn gecreëerd).</td>
+     </ol><br>OPMERKING: het hierboven beschreven gedrag wordt standaard afgedwongen voor nieuwe omgevingen die na 14 maart 2022 zijn gemaakt. Stuur een ticket voor klantenondersteuning als u andere instellingen nodig hebt.</td>
    </td>
   </tr>
   <tr>
