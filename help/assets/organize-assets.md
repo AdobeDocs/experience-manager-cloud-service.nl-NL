@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
+source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -74,14 +74,45 @@ De eenvoudigste manier om elementen te ordenen is het opslaan van de elementen i
 
 ## Elementen ordenen met tags {#use-tags-to-organize-assets}
 
-Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen maken met de zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en AI-algoritmen van Adobe Sensei toepassen voor het detecteren van elementen.
+<!--
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] maakt gebruik van een zelfstudie-algoritme om zeer beschrijvende tags te maken waarmee u het juiste element met een paar klikken kunt vinden. Slimme tags maken gebruik van Adobe Sensei, artificiële intelligentie en het leerframework voor machines, die kunnen worden opgeleid om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+
+For more information, see the following articles:
+
+* [Edit asset metadata](meta-edit.md)
+* [Smart Tags in Assets](smart-tags.md)
+-->
+
+Als u tags aan elementen toevoegt, kunt u deze tijdens een zoekopdracht gemakkelijker terugvinden, verzamelingen maken met behulp van de zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en AI-algoritmen van Adobe Sensei toepassen voor het detecteren van elementen.
+
+[!DNL Adobe Experience Manager Assets] maakt gebruik van een zelfstudie-algoritme om zeer beschrijvende tags te maken waarmee u het juiste element met een paar klikken kunt vinden. Slimme tags maken gebruik van Adobe Sensei, artificiële intelligentie en het leerframework voor machines, die kunnen worden opgeleid om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen.
+
+Hieronder vindt u de stappen voor het toevoegen van codes aan een element:
+
+1. Aanmelden bij [!DNL Experience Manager Assets].
+1. Klikken **[!UICONTROL Assets]** > **[!UICONTROL Files]** selecteert u het element en klikt u op **[!UICONTROL Properties]** om de eigenschappen van het element te openen.
+1. In de **[!UICONTROL Basic]** klikt u op het mappictogram in **[!UICONTROL Tags]** metagegevens. Er wordt een pop-upvenster geopend.
+1. Zoek of selecteer de juiste tags van de bestaande tags in `cq-tags`. U kunt meerdere tags toewijzen aan het element.
+
+   U kunt de codestructuur in oplopende of aflopende volgorde sorteren op basis van de opties **[!UICONTROL Name]** (alfabetische volgorde), **[!UICONTROL Created]** datum, of **[!UICONTROL Modified]** datum. In de volgende afbeelding wordt de codestructuur alfabetisch gesorteerd op basis van de **[!UICONTROL Name]**.
+
+   ![add-tags](assets/add-tags-to-asset.png)
+
+1. Klikken **Opslaan** om de wijzigingen in de metagegevens van de elementen bij te werken.
+
+>[!NOTE]
+>
+>U kunt de codestructuur sorteren terwijl u slimme tags maakt en wanneer u zoekfilters toepast met behulp van de voorspelling van tags.
+>
+>De functie voor sorteerlabels is beschikbaar in het pre-releasekanaal. Zie [Prerelease Channel-documentatie](/help/release-notes/prerelease.md#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
 
 Raadpleeg de volgende artikelen voor meer informatie:
 
 * [Metagegevens van elementen bewerken](meta-edit.md)
 * [Slimme tags in elementen](smart-tags.md)
+* [Voorspelende tags toevoegen aan het zoekvenster](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## Indelen als verzamelingen {#organize-as-collections}
 

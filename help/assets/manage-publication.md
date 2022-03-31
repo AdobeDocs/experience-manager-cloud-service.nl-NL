@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1351'
 ht-degree: 4%
 
 ---
@@ -61,10 +61,6 @@ Klik op **[!UICONTROL Next]**. Op basis van de selectie **[!UICONTROL Scope]** b
 
 ### Inhoud toevoegen {#add-content}
 
->[!NOTE]
->
->Deze functie is beschikbaar in het prereleasekanaal. Zie [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
-
 Publiceren naar [!DNL Experience Manager Assets] kunt u meer inhoud (elementen en mappen) toevoegen aan de publicatielijst. U kunt meer elementen of mappen aan de lijst toevoegen via de opslagplaatsen voor dam. Klikken op **[!UICONTROL Add Content]** om meer inhoud toe te voegen.
 
 U kunt meerdere elementen uit een map toevoegen of meerdere mappen tegelijk toevoegen. U kunt echter geen elementen uit meerdere mappen tegelijk toevoegen.
@@ -72,10 +68,6 @@ U kunt meerdere elementen uit een map toevoegen of meerdere mappen tegelijk toev
 ![Inhoud toevoegen](assets/manage-publication-add-content.png)
 
 ### Inclusief mapinstellingen {#include-folder-settings}
-
->[!NOTE]
->
->Deze functie is beschikbaar in het prereleasekanaal. Zie [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
 
 Standaard wordt een map gepubliceerd naar [!DNL Experience Manager Assets] publiceert alle elementen, submappen en de bijbehorende referenties.
 

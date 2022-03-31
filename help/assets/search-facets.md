@@ -4,9 +4,9 @@ description: In dit artikel wordt beschreven hoe u zoekfacetten in de Experience
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2280'
 ht-degree: 17%
 
 ---
@@ -144,6 +144,11 @@ De `Tags` Met behulp van voorspellingen kunt u op tags gebaseerde zoekopdrachten
 1. Navigeer naar het deelvenster Zoeken. De **[!UICONTROL Tags]** predikaat wordt toegevoegd aan het paneel van het Onderzoek.
 1. Geef tags op op basis waarvan u de elementen wilt zoeken of een selectie wilt maken in de lijst met suggesties.
 1. Selecteren **[!UICONTROL Match all]** om te zoeken naar overeenkomsten die alle tags bevatten die u opgeeft.
+
+U kunt de codestructuur in oplopende of aflopende volgorde sorteren op basis van de opties **[!UICONTROL Name]** (alfabetische volgorde), **[!UICONTROL Created]** datum, of **[!UICONTROL Modified]** datum. In de volgende afbeelding wordt de codestructuur alfabetisch gesorteerd op basis van de **[!UICONTROL Name]**.
+
+![add-tags](assets/add-tags-to-asset.png)
+
 
 ## Andere voorspellingen toevoegen {#adding-other-predicates}
 

@@ -2,9 +2,9 @@
 title: Een API-verzoek maken - headless Setup
 description: Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van inhoudsfragmenten en AEM middelen REST API voor het beheer van inhoudsfragmenten.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,16 @@ De architecten van de informatie zullen vragen voor hun kanaaleindpunten moeten 
 GraphiQL is winde die op een AEM milieu kan worden geïnstalleerd. Voer de volgende stappen uit [GraphiQL IDE gebruiken](/help/headless/graphql-api/graphiql-ide.md) om op uw AEM te installeren.
 
 1. Logboek in AEM as a Cloud Service en toegang tot de interface GraphiQL:
-   * Bijvoorbeeld: `https://<host>:<port>/content/graphiql.html`.
+   * Bijvoorbeeld: `https://<host>:<port>/aem/graphiql.html`.
 
-1. GrahiQL winde is een in-browser vraagredacteur voor GraphQL. U kunt het gebruiken om vragen te bouwen om de Fragmenten van de Inhoud terug te winnen om hen hoofdelijk als JSON te leveren.
-   * In het linkerdeelvenster kunt u een query maken.
-   * De resultaten worden weergegeven in het rechterdeelvenster.
+1. GrahiQL winde is een in-browser vraagredacteur voor GraphQL. U kunt het gebruiken om vragen te bouwen om de Fragmenten van de Inhoud terug te winnen om hen zonder hoofd als JSON te leveren.
+   * Met de vervolgkeuzelijst rechtsboven kunt u het eindpunt selecteren.
+   * Een uiterst linker paneel maakt een lijst van de voortgezette vragen (indien beschikbaar)
+   * In het deelvenster links in het midden kunt u uw query samenstellen.
+   * De resultaten worden weergegeven in het rechtermiddelste deelvenster.
    * De vraagredacteur kenmerkt codevoltooiing en hotkeys om de vraag gemakkelijk uit te voeren.
-      ![GraphiQL-editor](../assets/graphiql.png)
+
+   ![GraphiQL-editor](../assets/graphiql.png)
 
 1. Ervan uitgaande dat het model dat we hebben gemaakt, werd aangeroepen `person` met velden `firstName`, `lastName`, en `position`, kunnen wij een eenvoudige vraag bouwen om de inhoud van ons Inhoudsfragment terug te winnen.
 

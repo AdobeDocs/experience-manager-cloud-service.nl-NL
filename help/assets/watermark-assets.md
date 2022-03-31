@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -15,10 +15,6 @@ ht-degree: 1%
 # Watermerk uw elementen {#watermark-assets}
 
 [!DNL Adobe Experience Manager Assets] Hiermee kunt u een digitaal watermerk aan afbeeldingen toevoegen. [!DNL Assets] ondersteunt het toepassen van een afbeelding als watermerk op andere afbeeldingsbestanden. Met watermerken kunnen gebruikers de authenticiteit en de copyrighteigendom van de elementen controleren. Een watermerk kan ook worden gebruikt om de status van een document aan te geven als vertrouwelijk, concept, geldigheid enzovoort.
-
->[!NOTE]
->
->Deze functie is beschikbaar in het prereleasekanaal. Zie [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
 
 Om te vormen [!DNL Experience Manager] op watermerkelementen:
 

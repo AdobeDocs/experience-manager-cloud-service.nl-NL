@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
 workflow-type: tm+mt
-source-wordcount: '4199'
+source-wordcount: '4169'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,7 @@ Bij het organiseren van een verzameling elementen, bijvoorbeeld alle `Nature` af
 
 >[!NOTE]
 >
->* Een map Middelen van het type `sling:OrderedFolder`, wordt niet ondersteund bij delen naar Marketing Cloud. Als u een map wilt delen, selecteert u [!UICONTROL Ordered] wanneer u een map maakt.
+>* Een map Middelen van het type `sling:OrderedFolder`, wordt niet ondersteund bij het delen naar Experience Cloud. Als u een map wilt delen, selecteert u [!UICONTROL Ordered] wanneer u een map maakt.
 >* Experience Manager staat het gebruik niet toe `subassets` woord als de naam van een map. Het is een trefwoord dat is gereserveerd voor knooppunten die subassets voor samengestelde elementen bevatten
 
 
@@ -45,10 +45,6 @@ Zie [digitale elementen toevoegen aan Experience Manager](add-assets.md).
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
 Als een DAM-gebruiker een of meer middelen uploadt die al in de gegevensopslagruimte aanwezig zijn, [!DNL Experience Manager] detecteert de duplicatie en brengt de gebruiker op de hoogte. Dubbele detectie is standaard uitgeschakeld, omdat deze invloed kan hebben op de prestaties, afhankelijk van de grootte van de opslagplaats en het aantal geüploade middelen.
-
->[!NOTE]
->
->Deze functie is beschikbaar in het prereleasekanaal. Zie [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
 
 De functie inschakelen:
 
@@ -611,7 +607,7 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
    ![compare_versions](assets/compare_versions.png)
 
-### Een workflow op een middel starten {#starting-a-workflow-on-an-asset}
+### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
 
 1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en tik op het element of klik erop om de elementpagina te openen.
 1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Timeline]** in het menu om de tijdlijn weer te geven.

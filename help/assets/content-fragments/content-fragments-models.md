@@ -4,9 +4,9 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
+source-git-commit: 0d964a981f7b9004e99768888f78558c57ae398a
 workflow-type: tm+mt
-source-wordcount: '2838'
+source-wordcount: '2924'
 ht-degree: 3%
 
 ---
@@ -180,13 +180,16 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
 
 * Zie **[Fragmentverwijzing (geneste fragmenten)](#fragment-reference-nested-fragments)** voor meer details over dat specifieke gegevenstype en zijn eigenschappen.
 
-<!--
-* **Translatable**
-  Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
+* **Vertaalbaar**
 
-  * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
--->
+   >[!NOTE]
+   Deze functie is beschikbaar in het prereleasekanaal.
+   Zie de [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen.
+
+   De **Vertaalbaar** Schakel het selectievakje in een veld in de editor van het inhoudsfragmentmodel in:
+
+   * Zorg ervoor dat de eigenschapsnaam van het veld wordt toegevoegd aan de vertaalconfiguratie, context `/content/dam/<sites-configuration>`, indien nog niet aanwezig.
+   * Voor GraphQL: instellen `<translatable>` eigenschap in het veld Inhoudsfragment naar `yes`, om GraphQL-queryfilter toe te staan voor JSON-uitvoer met alleen vertaalbare inhoud.
 
 ## Validatie {#validation}
 

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
+source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
 workflow-type: tm+mt
-source-wordcount: '2328'
-ht-degree: 4%
+source-wordcount: '2359'
+ht-degree: 3%
 
 ---
 
@@ -118,7 +118,13 @@ Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te mak
 1. Maak de benodigde labels en de juiste codestructuur. Upload de relevante afbeeldingen in de DAM-opslagplaats.
 1. In [!DNL Experience Manager] gebruikersinterface, toegang **[!UICONTROL Assets]** > **[!UICONTROL Smart Tag Training]**.
 1. Klik op **[!UICONTROL Create]**. Een **[!UICONTROL Title]**, **[!UICONTROL Description]**.
-1. Blader naar de tags van de bestaande tags in `cq:tags` dat je het model wilt trainen. Klik op **[!UICONTROL Next]**.
+1. Klik op het mappictogram in **[!UICONTROL Tags]** veld. Er wordt een pop-upvenster geopend.
+1. Zoek of selecteer de juiste tags van de bestaande tags in `cq-tags` die u aan het model wilt toevoegen. Klik op **[!UICONTROL Next]**.
+
+   >[!NOTE]
+   >
+   >U kunt de codestructuur in oplopende of aflopende volgorde sorteren op basis van de opties **[!UICONTROL Name]** (alfabetische volgorde), **[!UICONTROL Created]** datum, of **[!UICONTROL Modified]** datum.
+
 1. In de **[!UICONTROL Select Assets]** dialoogvenster, klikt u op **[!UICONTROL Add Assets]** op elke tag. Zoek in de DAM-opslagplaats of blader door de opslagplaats om ten minste 10 en ten hoogste 50 afbeeldingen te selecteren. Selecteer elementen en niet de map. Als u de afbeeldingen hebt geselecteerd, klikt u op **[!UICONTROL Select]**.
 
    ![Trainingsstatus weergeven](assets/smart-tags-training-status.png)
