@@ -2,10 +2,10 @@
 title: Weergaven maken en beheren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u weergaven in as a Cloud Service schermen maakt en beheert.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: b56c7e5de41cf75f4442d8294ddfbe1a05cb3dee
+source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 1%
+source-wordcount: '668'
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ U kunt de maprail verplaatsen van het weergeven van alle mappen naar specifieke 
 
 1. De map side-rail wordt weergegeven.
 
-![afbeelding](/help/screens-cloud/assets/display/toggle-rail.png)
+   ![afbeelding](/help/screens-cloud/assets/display/toggle-rail.png)
 
 1. Selecteren **Mappen verbergen** om het opnieuw te sluiten.
 
@@ -74,13 +74,62 @@ U kunt mappen maken om uw weergaven beter te organiseren.
 1. Navigeer naar de overzichtsweergave voor weergaven.
 1. Zorg ervoor dat u zich momenteel niet in een map bevindt, raadpleeg het volgende:
 
-![afbeelding](/help/screens-cloud/assets/display/verify-view.png)
+   ![afbeelding](/help/screens-cloud/assets/display/verify-view.png)
 
-Opmerking: **Alle weergaven** moet worden geselecteerd in de omslagzijspoor en mag de breadcrumb-navigatie alleen worden getoond **Weergaven**.
+   Opmerking: **Alle weergaven** moet worden geselecteerd in de omslagzijspoor en mag de breadcrumb-navigatie alleen worden getoond **Weergaven**.
 
-1. Klik op de knop Maken rechtsboven en selecteer de knop **Map** option
+1. Klik op de knop Maken rechtsboven en selecteer de knop **Map** optie.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Createfolder.png)
 
 1. Vul de titel voor de nieuwe map in en klik op **Maken**.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## Een nieuwe geneste map maken {#nested-folder}
+
+1. Navigeer naar de overzichtsweergave voor weergaven.
+
+1. Selecteer de gewenste bovenliggende map in de omslagzijtrack of door in de overzichtsweergave te bladeren.
+1. Controleer of de gewenste bovenliggende map is geselecteerd.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Nestedview.png)
+
+   * De map moet in de omslagzijrail worden geselecteerd.
+   * De navigatie breadcrumb moet de huidige mapnaam weergeven naast **Weergaven**.
+
+1. Klikken  **Maken**  in de rechterbovenhoek en selecteert u de **Map** optie.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Createfolder.png)
+
+1. Vul de titel voor de nieuwe map in en klik op **Maken**.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## Inhoud naar een nieuwe map verplaatsen {#move-folder}
+
+U kunt inhoud naar de nieuwe mappen verplaatsen om de weergaven beter te organiseren.
+
+1. Navigeer naar de overzichtsweergave voor weergaven.
+
+1. Selecteer de gewenste bovenliggende map in de omslagzijtrack of door een keuze te maken in de overzichtsweergave.
+
+1. Controleer of u de gewenste bovenliggende map hebt geselecteerd.
+
+![afbeelding](/help/screens-cloud/assets/display/movetofolder.png)
+
+**Opmerking**: De map moet in de omslagzijrail worden geselecteerd. Daarnaast moet in de navigatie met de breadcrumb de huidige mapnaam worden weergegeven naast **Weergaven**.
+
+## Inhoud uit een map verwijderen {#delete-folder}
+
+Alle mapbewerkingen zijn toegankelijk via de selectieactiebalk in de overzichtsweergave.
+
+1. Navigeer naar de bovenliggende map of selecteer deze in de zijbalk.
+
+1. Selecteer in de overzichtsweergave de gewenste onderliggende map die u wilt verwijderen en zorg ervoor dat deze leeg is.
+
+1. Klik op de knop **Verwijderen** in de actiebalk van de selectie. De handeling wordt uitgeschakeld als de map niet leeg is.
+
 
 ## Volgende functies {#whats-next}
 

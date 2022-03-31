@@ -2,10 +2,10 @@
 title: Kanalen maken en beheren in as a Cloud Service schermen
 description: In deze pagina wordt beschreven hoe u kanalen in as a Cloud Service schermen maakt en beheert.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: afcee8019c9b59f3eb1fdcabd569272eeea76dab
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 0%
+source-wordcount: '1116'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +20,7 @@ Met dit document krijgt u meer inzicht in het maken en beheren van kanalen voor 
 
 * begrijpen hoe u kanalen maakt voor de Inhoudsprovider voor schermen
 * inhoud in uw kanalen beheren en bewerken
+* activeringsschema voor uw kanalen
 
 ## Stappen voor het maken van een nieuw sequentiekanaal in as a Cloud Service schermen {#create-new-channel}
 
@@ -87,6 +88,89 @@ De volgende sjablonen zijn beschikbaar tijdens het gebruik van de **Maken** wiza
 | Volgekanaal | Hiermee kunt u een kanaal maken waarmee de componenten opeenvolgend worden afgespeeld (een voor een in een presentatie). |
 | Linker- of rechterL-balkgesplitste schermkanaal | Hiermee kunnen auteurs van inhoud verschillende typen elementen weergeven in zones met de juiste grootte. |
 
+## Standaardtoewijzingsdetails gebruiken voor kanalen {#default-channels}
+
+Met deze functie kunt u een standaard activeringsschema voor een kanaal definiëren en dit standaard gebruiken voor elke toewijzing voor een weergave. Dit verstrekt een methode zodat de lastige programmadefinitie niet te hoeven worden herhaald.
+
+### Standaardtoewijzingsdetails maken voor een kanaal {#create-default}
+
+1. Navigeer naar de detailspagina voor het kanaal u wilt vormen.
+1. Zoek de **Standaardtoewijzingsdetails** tegel op de pagina.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Assignment1.png)
+
+1. Klikken **Standaarddetails instellen**.
+1. Configureer de standaardtoewijzingsdetails, inclusief prioriteit, begin- en einddatum en herhalingspatronen voor het kanaal en klik op **Toewijzen**.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Assignments2.png)
+
+1. De details van de toewijzing worden weergegeven in het dialoogvenster **Standaardtoewijzingsdetails** tegel:
+
+   ![afbeelding](/help/screens-cloud/assets/display/Assignments3.png)
+
+In deze tegel wordt de volgende informatie weergegeven:
+* Standaardprioriteit van het kanaal in de weergave.
+* De begin- en einddatum van de activering wanneer het kanaal volgens de planning moet worden afgespeeld.
+* Synthetisch overzicht van de herhaling (Uur/Dagelijks/Wekelijks/Maandelijks/Jaarlijks en naam die aan die herhaling is gegeven).
+
+### De standaardtoewijzingsdetails gebruiken bij het toewijzen aan een weergave {#default-display}
+
+Kanalen met standaardtoewijzingsdetails kunnen op dezelfde manier worden weergegeven als gewone kanalen, met de toegevoegde optie om de standaardtoewijzingsdetails te benutten in plaats van telkens handmatig aangepaste details te definiëren.
+
+1. Navigeer naar de pagina met weergavedetails waaraan u het kanaal wilt toewijzen en klik op de knop **Kanaal toewijzen**.
+Of selecteer de gewenste weergave in de overzichtsweergave en klik op de knop **Kanaal toewijzen**.
+1. Het dialoogvenster Kanaaltoewijzing wordt geopend.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Assignments4.png)
+
+1. Selecteer in de kanaalkiezer het gewenste kanaal met de standaardtoewijzingsdetails.
+1. U ziet dat het dialoogvenster voor kanaaltoewijzing is gewijzigd en u kunt de standaardtoewijzingsdetails kiezen of aangepaste toewijzingsdetails selecteren:
+
+   ![afbeelding](/help/screens-cloud/assets/display/Assignments5.png)
+
+1. Klikken **Toewijzen** om de toewijzing te voltooien, of klik **Aangepaste toewijzingsdetails instellen** als u de standaardinstellingen liever overschrijft met een aantal andere waarden in de context van die bepaalde weergave.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Assignments6.png)
+
+1. Let op: **Toegewezen kanalen** De tegel wordt bijgewerkt met de nieuwe toewijzing:
+
+   ![afbeelding](/help/screens-cloud/assets/display/Assignments7.png)
+
+1. U ziet dat de kanalen een ander pictogram hebben, afhankelijk van het feit of ze aangepaste programma&#39;s (het pictogram Klok) gebruiken of de standaarddetails (het pictogram voor de klok van de Wereld) overnemen. Als u op deze kanalen klikt, worden de planningsdetails weergegeven.
+1. U ziet ook dat de beschikbare acties voor elk type verschillen.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Assignments8.png)
+
+**Opmerking:** Een kanaaltoewijzing die gebruikmaakt van de standaardtoewijzingsdetails, kan in de context van de weergave niet worden bewerkt.
+
+* Als u het in een douanetoewijzing moet veranderen, zult u het eerst moeten verwijderen en dan het opnieuw toevoegen gebruikend **Aangepaste toewijzingsdetails instellen** optie.
+* Als u de eigenschappen van de standaardtoewijzingsdetails moet wijzigen, moet u dit rechtstreeks doen vanaf de pagina met kanaaldetails.
+
+### Standaardtoewijzingsgegevens uit een kanaal verwijderen {#remove-display}
+
+1. Navigeer naar de detailpagina voor het kanaal u de standaardtoewijzingsdetails wilt verwijderen.
+1. Zoek de **Standaardtoewijzingsdetails** tegel op de pagina
+1. Klik op de knop **Standaard verwijderen**.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Assignments9.png)
+
+1. Er wordt een bevestigingsdialoogvenster weergegeven waarin de details overeenkomen met een van de volgende voorwaarden:
+   **a.** Kanaal wordt in geen enkele weergave gebruikt.
+
+   ![afbeelding](/help/screens-cloud/assets/display/Assignments10.png)
+
+**b.** Kanaal wordt gebruikt in één scherm.
+
+![afbeelding](/help/screens-cloud/assets/display/Assignment11.png)
+
+**c.** Kanaal wordt gebruikt in verschillende beeldschermen.
+
+![afbeelding](/help/screens-cloud/assets/display/Assignments12.png)
+
+1. Klik op de knop *Verwijderen* om de wijziging te valideren.
+
+**Opmerking:** Als u de standaardtoewijzingsdetails uit een kanaal verwijdert, worden de overeenkomende toewijzingen verwijderd voor alle weergaven die het kanaal gebruikten.
+Dit kan dan ook leiden tot lege schermen als er geen alternatieve inhoud op die schermen moet worden afgespeeld.
 
 ## Volgende functies {#whats-next}
 
