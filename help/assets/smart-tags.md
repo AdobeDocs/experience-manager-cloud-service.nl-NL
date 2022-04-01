@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '2359'
 ht-degree: 3%
@@ -124,6 +124,7 @@ Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te mak
    >[!NOTE]
    >
    >U kunt de codestructuur in oplopende of aflopende volgorde sorteren op basis van de opties **[!UICONTROL Name]** (alfabetische volgorde), **[!UICONTROL Created]** datum, of **[!UICONTROL Modified]** datum.
+
 
 1. In de **[!UICONTROL Select Assets]** dialoogvenster, klikt u op **[!UICONTROL Add Assets]** op elke tag. Zoek in de DAM-opslagplaats of blader door de opslagplaats om ten minste 10 en ten hoogste 50 afbeeldingen te selecteren. Selecteer elementen en niet de map. Als u de afbeeldingen hebt geselecteerd, klikt u op **[!UICONTROL Select]**.
 

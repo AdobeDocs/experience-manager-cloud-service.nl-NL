@@ -4,9 +4,9 @@ description: Voeg uw digitale middelen toe aan [!DNL Adobe Experience Manager] a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
+source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2870'
 ht-degree: 0%
 
 ---
@@ -116,12 +116,12 @@ Het dubbele element behouden in [!DNL Assets], klikt u op **[!UICONTROL Keep]**.
 
 ### Bestandsnaamverwerking en verboden tekens {#filename-handling}
 
-[!DNL Experience Manager Assets] Hiermee voorkomt u dat u elementen uploadt met de verboden tekens in de bestandsnaam. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, [!DNL Assets] geeft een waarschuwingsbericht weer en stopt de upload totdat u deze tekens verwijdert of uploadt met een toegestane naam.
+[!DNL Experience Manager Assets] Hiermee voorkomt u dat elementen met de verboden tekens in de bestandsnaam worden geüpload. Als u een element probeert te uploaden met bestandsnamen die een niet-toegestaan teken of meer bevatten, [!DNL Assets] geeft een waarschuwingsbericht weer en stopt de upload totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
 Als u specifieke conventies voor de naamgeving van bestanden voor uw organisatie wilt aanpassen, kunt u de opdracht [!UICONTROL Upload Assets] kunt u lange namen opgeven voor de bestanden die u uploadt. De volgende tekens (lijst met door spaties gescheiden tekens) worden niet ondersteund:
 
-* ongeldige tekens voor de naam van het elementbestand `* / : [ \\ ] | # % { } ? &`
-* ongeldige tekens voor naam van elementmap `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* Ongeldige tekens voor elementnaam: `* / : [ \\ ] | # % { } ? &`
+* Ongeldige tekens voor naam van elementmap: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Bulkupload-elementen {#bulk-upload}
 
@@ -147,7 +147,7 @@ De volgende afbeelding illustreert de verschillende fasen wanneer u elementen va
 
 ![Bulkopname](assets/bulk-ingestion.png)
 
-#### Vereisten {#prerequisites-bulk-ingestion}
+**Vereisten**
 
 Voor het gebruik van deze functie is een externe opslagaccount of emmer uit Azure of AWS vereist.
 
@@ -155,7 +155,7 @@ Voor het gebruik van deze functie is een externe opslagaccount of emmer uit Azur
 >
 >Maak de container of het emmertje van de opslagaccount als privé en accepteer alleen verbindingen van geoorloofde verzoeken. Aanvullende beperkingen op ingangsnetwerkverbindingen worden echter niet ondersteund.
 
-#### Het gereedschap Bulkimport configureren {#configure-bulk-ingestor-tool}
+### Het gereedschap Bulkimport configureren {#configure-bulk-ingestor-tool}
 
 Voer de volgende stappen uit om het gereedschap Bulk importeren te configureren:
 
@@ -187,31 +187,108 @@ Voer de volgende stappen uit om het gereedschap Bulk importeren te configureren:
 
 1. Klikken **[!UICONTROL Save]** om de configuratie op te slaan.
 
-#### De configuratie van het gereedschap Bulkimport beheren {#manage-bulk-import-configuration}
+### De configuratie van het gereedschap Bulkimport beheren {#manage-bulk-import-configuration}
 
 Na het creëren van het Bulk het hulpmiddelconfiguratie van de Invoer, kunt u taken uitvoeren om de configuratie vóór bulk te evalueren het opnemen van activa aan uw instantie van de Experience Manager. Selecteer de configuratie beschikbaar op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]** om de beschikbare opties te bekijken om uw Bulk het hulpmiddelconfiguratie van de Invoer te beheren.
 
-##### De configuratie bewerken {#edit-configuration}
+### De configuratie bewerken {#edit-configuration}
 
 Selecteer de configuratie en klik op **[!UICONTROL Edit]** om de configuratiedetails te wijzigen. U kunt de titel van de configuratie en de gegevensbron van het voer niet uitgeven terwijl het uitvoeren van geeft verrichting uit.
 
-##### De configuratie verwijderen {#delete-configuration}
+### De configuratie verwijderen {#delete-configuration}
 
 Selecteer de configuratie en klik op **[!UICONTROL Delete]** om de configuratie van de Invoer van het Bulk te schrappen.
 
-##### Verbinding met gegevensbron valideren {#validate-connection}
+### Verbinding met gegevensbron valideren {#validate-connection}
 
 Selecteer de configuratie en klik op **[!UICONTROL check]** om de verbinding met de gegevensbron te valideren. In het geval van een geslaagde verbinding, toont de Experience Manager het volgende bericht:
 
 ![Bericht met succes bij importeren van bulkgoederen](assets/bulk-import-success-message.png)
 
-##### Een testrun aanroepen voor de Bulk Import-taak {#invoke-test-run-bulk-import}
+### Een testrun aanroepen voor de Bulk Import-taak {#invoke-test-run-bulk-import}
 
 Selecteer de configuratie en klik op **[!UICONTROL Dry Run]** om een testlooppas voor de BulkTaak van de Invoer aan te halen. Experience Manager geeft de volgende gegevens weer over de Bulk Import-taak:
 
 ![Droog resultaat](assets/dry-assets-result.png)
 
-##### Eenmalige of terugkerende bulkimport plannen {#schedule-bulk-import}
+### Bestandsnamen verwerken tijdens bulkimport {#filename-handling-bulkimport}
+
+Wanneer u elementen of mappen bulksgewijs importeert, [!DNL Experience Manager Assets] importeert de gehele structuur van wat er in de invoerbron bestaat. [!DNL Experience Manager] volgt de ingebouwde regels voor speciale tekens in de naam van het element en de map. Deze bestandsnamen moeten daarom worden ontsmet. Voor zowel de mapnaam als de elementnaam blijft de door de gebruiker gedefinieerde titel ongewijzigd en wordt deze opgeslagen in `jcr:title`.
+
+Tijdens de bulkinvoer [!DNL Experience Manager] zoekt u naar de bestaande mappen om te voorkomen dat de elementen en mappen opnieuw worden geïmporteerd, en controleert u ook de ontsmettingsregels die zijn toegepast in de bovenliggende map waar het importeren plaatsvindt. Als de ontsmettingsregels worden toegepast in de bovenliggende map, worden dezelfde regels toegepast op de importbron. Voor nieuwe importbewerkingen gelden de volgende saneringsregels voor het beheer van de bestandsnamen van elementen en mappen.
+
+**Elementnaam verwerken in bulkimport**
+
+Voor namen van elementbestanden wordt de JCr-naam&amp;pad ontsmet met behulp van de API: `JcrUtil.escapeIllegalJcrChars`.
+
+* De unicode ongewijzigd laten
+* Vervang de speciale tekens bijvoorbeeld door hun URL Escape-code. `new*asset.png` wordt bijgewerkt naar `new%2Aasset.png`:
+
+   ```
+          URL escape code   
+   
+   "         %22
+   %         %25
+   '         %27
+   *         %2A
+   .         %2E
+   /         %2F
+   :         %3A
+   [         %5B
+   \n        %5Cn
+   \r        %5Cr
+   \t        %5Ct
+   ]         %5D
+   |         %7C
+   ```
+
+**Mapnaam verwerken in bulkimport**
+
+Voor mapbestandsnamen wordt het JCr-naam&amp;pad ontsmet met behulp van de API: `JcrUtil.createValidName`.
+
+* Hoofdletters omzetten in kleine letters
+* Unicode ongewijzigd laten
+* De speciale tekens bijvoorbeeld vervangen door een streepje (&#39;-&#39;) `new*asset.png` wordt bijgewerkt naar `new-asset.png`:
+
+   ```
+   "                           
+   #                         
+   %                           
+   &                          
+   *                           
+   +                          
+   .                           
+   :                           
+   ;                          
+   ?                          
+   [                           
+   ]                           
+   ^                         
+   {                         
+   }                         
+   |                           
+   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \      Not allowed in Azure, allowed in AWS.
+   \t                          
+   ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
+
+#### Eenmalige of terugkerende bulkimport plannen {#schedule-bulk-import}
 
 Voer de volgende stappen uit om een eenmalige of terugkerende bulkimport te plannen:
 
@@ -222,7 +299,7 @@ Voer de volgende stappen uit om een eenmalige of terugkerende bulkimport te plan
    ![Taak bulkingestor plannen](assets/bulk-ingest-schedule1.png)
 
 
-##### De doelmap Middelen weergeven {#view-assets-target-folder}
+#### De doelmap Middelen weergeven {#view-assets-target-folder}
 
 Selecteer de configuratie en klik op **[!UICONTROL View Assets]** om de doellocatie voor Elementen weer te geven waar de elementen worden geïmporteerd nadat de taak Bulk importeren is uitgevoerd.
 
