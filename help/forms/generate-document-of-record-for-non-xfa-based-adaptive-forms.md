@@ -2,9 +2,9 @@
 title: Document met record genereren voor adaptieve Forms
 description: Verklaart hoe u een malplaatje voor een Document van Verslag (DoR) voor Aangepast Forms kunt produceren.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
+source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
 workflow-type: tm+mt
-source-wordcount: '3603'
+source-wordcount: '3583'
 ht-degree: 1%
 
 ---
@@ -403,10 +403,6 @@ De instelling van de component Document of Record is beschikbaar onder de eigens
 * **Velden uitsluiten van DoR indien verborgen:** Als u de eigenschap instelt, wordt de werking van de veldeigenschap &#39;Uitsluiten van document van record&#39; genegeerd als deze niet true is. Als velden verborgen zijn op het moment dat het formulier wordt verzonden, worden ze uitgesloten van Document of Record als de eigenschap is ingesteld op true, op voorwaarde dat de eigenschap &#39;Uitsluiten van document van record&#39; niet is ingesteld.
 
 ## Een aangepast XCI-bestand gebruiken
-
->[!NOTE]
->
-> Deze functie is beschikbaar in het prereleasekanaal. Zie [Prerelease Channel-documentatie](/help/release-notes/prerelease.md#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
 
 Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een document instellen. Forms as a Cloud Service heeft een master XCI-bestand. U kunt een aangepast XCI-bestand gebruiken om een of meer standaardeigenschappen te overschrijven die in het master XCI-bestand zijn opgegeven. U kunt bijvoorbeeld een lettertype insluiten in een document of een gelabelde eigenschap inschakelen voor alle documenten. In de volgende tabel worden de XCI-opties aangegeven:
 

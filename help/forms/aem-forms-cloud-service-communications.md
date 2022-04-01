@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Communicatie
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,9 @@ ht-degree: 0%
 
 # Synchrone verwerking gebruiken {#sync-processing-introduction}
 
-Met behulp van communicatie kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, claimverwerkingsbrieven, aankondigingen van voordelen, claimverwerkingsbrieven, maandelijkse facturen en welkomstkits. U kunt Communicatie APIs gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, DPL, IPL, en ZPL formaten te produceren.
+Met communicatiemogelijkheden kunt u documenten maken die door uw merk zijn goedgekeurd, gepersonaliseerd en gestandaardiseerd, zoals zakelijke correspondentie, instructies, aanvraagverwerkingsbrieven, aankondigingen van voordelen, maandelijkse facturen of welkomstkits.
 
-Overweeg een scenario waar u één of meerdere malplaatjes en veelvoudige verslagen van de gegevens van XML voor elke malplaatje hebt. U kunt communicatie-API&#39;s gebruiken om een afdrukdocument te genereren voor elke record. <!-- You can also combine the records into a single document. --> Het resultaat is een niet-interactief PDF-document. In een niet-interactief PDF-document kunnen gebruikers geen gegevens invoeren in de desbetreffende velden.
-
+De mogelijkheid biedt API&#39;s om de documenten te genereren en te bewerken. U kunt een document op verzoek genereren of bewerken of een batchtaak maken om meerdere documenten met gedefinieerde intervallen te genereren.
 
 De mededelingen verstrekken APIs voor het op bestelling en geplande documentgeneratie. U kunt synchrone API&#39;s voor asynchrone API&#39;s (Asynchrone API&#39;s) voor het genereren van geplande documenten gebruiken:
 
@@ -25,7 +24,7 @@ De mededelingen verstrekken APIs voor het op bestelling en geplande documentgene
 
 ## Synchrone bewerkingen gebruiken {#batch-operations}
 
-Een synchrone bewerking is een proces waarbij documenten lineair worden gegenereerd. Het steunt twee type van authentificatie:
+Een synchrone bewerking is een proces waarbij documenten lineair worden gegenereerd of bewerkt. Het steunt twee type van authentificatie:
 
 * **Basisverificatie**: De basisauthentificatie is een eenvoudige authentificatieregeling die in het protocol van HTTP wordt gebouwd. De client verzendt HTTP-aanvragen met de machtigingsheader die het woord Basic bevat, gevolgd door een spatie en een base64-coded tekenreeks username:password. Als u bijvoorbeeld autoriseert als beheerder/beheerder, verzendt de client Basic [base64-coded string username]: [base64-gecodeerd tekenreekswachtwoord].
 
@@ -41,9 +40,9 @@ Een synchrone bewerking is een proces waarbij documenten lineair worden gegenere
    >
    >Adobe raadt aan tokenverificatie op een productieomgeving te gebruiken.
 
-### Voorwaarden {#pre-requisites}
+### (Alleen API&#39;s voor het genereren van documenten)Voorwaarden {#pre-requisites}
 
-Voor het gebruik van synchrone API&#39;s is het volgende vereist:
+Als u synchrone API&#39;s wilt gebruiken voor het genereren van documenten, is het volgende vereist:
 
 * PDF- of XDP-sjablonen
 * [Gegevens die met sjablonen moeten worden samengevoegd](#form-data)
@@ -73,4 +72,3 @@ De [API-naslagdocumentatie](https://www.adobe.io/experience-manager-forms-cloud-
 >[!NOTE]
 >
 >Alleen leden van een groep met formuliergebruikers hebben toegang tot communicatie-API&#39;s.
-
