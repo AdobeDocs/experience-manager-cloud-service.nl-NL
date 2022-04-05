@@ -4,9 +4,9 @@ description: Leer hoe vertaalregels inhoud identificeren die moet worden vertaal
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1292'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,22 @@ De vertaalregels identificeren de inhoud om voor pagina&#39;s, componenten, en a
 >[!TIP]
 >
 >Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md) Dit is een geleid pad door uw AEM Sites-inhoud te vertalen met de krachtige vertaalgereedschappen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
+
+## Inhoudsfragmenten en vertaalregels {#content-fragments}
+
+De vertaalregels die in dit document worden beschreven, zijn alleen van toepassing op inhoudsfragmenten als de **Velden voor inhoudsmodellen inschakelen voor vertaling** Deze optie is niet geactiveerd op het tabblad [configuratieniveau van het framework voor vertaalintegratie.](integration-framework.md#assets-configuration-properties)
+
+Als de **Velden voor inhoudsmodellen inschakelen voor vertaling** -optie is actief, AEM gebruikt de optie **Vertaalbaar** veld op [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md#properties) om te bepalen of het veld moet worden vertaald. In dit geval: [vertaalregels](rules.md) worden vervangen.
+
+Als u vertaalregels wilt gebruiken voor het vertalen van uw inhoudsfragmenten, **Velden voor inhoudsmodellen inschakelen voor vertaling** optie in de configuratie van het vertaalintegratieframework moet worden uitgeschakeld.
+
+>[!NOTE]
+>
+>Deze functie is beschikbaar in het prereleasekanaal.
+> 
+>Zie de [Prerelease Channel-documentatie](/help/release-notes/prerelease.md#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen.
+
+## Overzicht {#overview}
 
 Pagina&#39;s en elementen worden weergegeven als knooppunten in de JCR-opslagplaats. De inhoud die wordt geëxtraheerd, is een of meer eigenschapwaarden van de knooppunten. De vertaalregels identificeren de eigenschappen die de inhoud bevatten die moet worden geëxtraheerd.
 

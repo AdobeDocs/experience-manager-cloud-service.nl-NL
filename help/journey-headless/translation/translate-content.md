@@ -2,12 +2,13 @@
 title: Inhoud omzetten (AEM zonder kop)
 description: Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
+
 
 # Inhoud vertalen {#translate-content}
 
@@ -21,6 +22,10 @@ In het vorige document van de AEM zonder kop [Vertaalregels configureren](transl
 * U kunt uw eigen vertaalregels definiëren.
 
 Nu uw schakelaar en vertaalregels opstelling zijn, neemt dit artikel u door de volgende stap van het vertalen van uw inhoud zonder kop.
+
+>[!NOTE]
+>
+>Als u het [Vertaalregels configureren](translation-rules.md) De stap van deze reis omdat u op het pre-releasekanaal van AEM as a Cloud Service bent, te hoeven u zich niet met vertaalregels zoals vermeld in dit document bezig te houden.
 
 ## Doelstelling {#objective}
 

@@ -2,9 +2,9 @@
 title: Regels voor vertaling configureren (AEM kop)
 description: Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,15 @@ In het vorige document van de AEM zonder kop [Vertaalaansluiting configureren](c
 * Uw eigen verbinding met uw vertaalservice instellen.
 
 Nu uw schakelaar opstelling is, neemt dit artikel u door de volgende stap van het identificeren van welke inhoud u moet vertalen.
+
+>[!CAUTION]
+>
+>Deze stap van de documentatietraject is alleen nodig als u niet op het pre-releasekanaal van AEM as a Cloud Service bent.
+>
+>* Als u op het pre-releasekanaal bent, gelieve aan de volgende stap van de reis over te slaan [Inhoud vertalen.](translate-content.md)
+>* Als u zich niet op het pre-releasekanaal bevindt, moet u dit document blijven lezen.
+>
+>Zie de [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over het prereleasekanaal.
 
 ## Doelstelling {#objective}
 
@@ -99,3 +108,4 @@ Gebaseerd op deze kennis en doorgaan met uw AEM doorlopende vertaaltocht door he
 U kunt het beste naar het volgende gedeelte van de reis zonder kop gaan door het document te bekijken [Inhoud vertalen,](translate-content.md) hieronder volgen enkele aanvullende , optionele bronnen die dieper ingaan op bepaalde in dit document genoemde concepten , maar die niet nodig zijn om verder te gaan op de weg zonder kop .
 
 * [Te vertalen inhoud identificeren](/help/sites-cloud/administering/translation/rules.md) - Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.
+* [as a Cloud Service pre-releasekanaal AEM](/help/release-notes/prerelease.md#enable-prerelease) - Leer hoe u zich aanmeldt bij het pre-releasekanaal van AEM as a Cloud Service om nieuwe en toekomstige functies uit te proberen.

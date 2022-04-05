@@ -2,9 +2,9 @@
 title: Ga aan de slag met AEM headless vertaling
 description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: d5a7138cd5e3e9f0febe20b7447589beadc45554
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1567'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,14 @@ Omdat de inhoudsmodellen de structuur van uw inhoud bepalen, moet u weten welke 
 1. Tik of klik op een van de velden van het model. AEM worden het en de details van dat gebied getoond in de juiste kolom.
    ![Details van de Editor van het inhoudsfragmentmodel](assets/content-fragment-model-editor-detail.png)
 
-Let op het veld **Eigenschapnaam** voor alle velden die moeten worden vertaald. U zult deze informatie later in de reis nodig hebben. Deze **Eigenschapnaam** s wordt vereist om AEM te informeren welke gebieden van uw inhoud moeten worden vertaald.
-
 >[!TIP]
 >
->Over het algemeen biedt de architect van de inhoud de vertaler **Eigenschapnaam** s van alle velden die vereist zijn voor vertaling. Deze veldnamen zijn nodig voor latere reizen. De voorafgaande stappen zijn bedoeld voor het begrijpen van de vertaalspecialist.
+>Over het algemeen is de inhoudarchitect verantwoordelijk voor het identificeren van de velden die vereist zijn voor vertaling. De voorafgaande stappen zijn bedoeld voor het begrijpen van de vertaalspecialist.
+
+Hoe u de vertaling van de velden van het inhoudsmodel beheert, hangt af van het feit of u het pre-releasekanaal van AEM as a Cloud Service gebruikt. Zie de [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over het prereleasekanaal.
+
+* **Als u het prereleasekanaal gebruikt**, biedt de inhoudarchitect de **Vertaalbaar** veld op elk veld Inhoudsmodel dat moet worden vertaald.
+* **Als u het prereleasekanaal niet gebruikt**, biedt de inhoudarchitect u de **Eigenschapnaam** veld voor alle velden die moeten worden vertaald. U zult deze informatie later in de reis nodig hebben. Deze **Eigenschapnaam** s wordt vereist om AEM te informeren welke gebieden van uw inhoud moeten worden vertaald.
 
 ### Contentfragmenten {#content-fragments}
 
@@ -167,10 +170,10 @@ Let op het specifieke pad van uw inhoud, want dit zal later nodig zijn om uw ver
 Nu u begrijpt wat Content Fragments zijn en hoe belangrijk de inhoudsstructuur is, kunnen we bekijken hoe we deze inhoud kunnen vertalen. De vertaalhulpmiddelen in AEM zijn vrij krachtig, maar eenvoudig te begrijpen op hoog niveau.
 
 * **Vertaalaansluiting** - De connector is de koppeling tussen AEM en de vertaalservice die u gebruikt.
-* **Vertaalregels** - Regels bepalen welke inhoud onder bepaalde paden moet worden vertaald.
+* **Vertaalregels** - Regels bepalen welke inhoud onder bepaalde paden moet worden vertaald. Regels zijn alleen nodig als u het pre-releasekanaal voor AEM niet gebruikt.
 * **Omzettingsprojecten** - Vertaalprojecten bevatten inhoud die als één enkele vertaalinspanning moet worden aangepakt en volgen de voortgang van de vertaling, die met de schakelaar in aanraking komt om de te vertalen inhoud over te brengen en het terug van de vertaaldienst te ontvangen.
 
-U plaatst over het algemeen slechts eens opstelling uw schakelaar voor uw instantie en regels per headless project. Vervolgens gebruikt u vertaalprojecten om uw inhoud te vertalen en de vertalingen voortdurend bij te werken.
+U plaatst over het algemeen slechts eens uw schakelaar voor uw instantie. Als er regels nodig zijn, worden deze per project zonder kop ingesteld. Vervolgens gebruikt u vertaalprojecten om uw inhoud te vertalen en de vertalingen voortdurend bij te werken.
 
 ## Volgende functies {#what-is-next}
 
@@ -190,3 +193,4 @@ U kunt het beste naar het volgende gedeelte van de reis zonder kop gaan door het
 * [Te vertalen inhoud identificeren](/help/sites-cloud/administering/translation/rules.md) - Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.
 * [Het framework voor vertaalintegratie configureren](/help/sites-cloud/administering/translation/integration-framework.md) - Leer hoe u het vertaalintegratieframework kunt configureren voor integratie met externe vertaalservices.
 * [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md) - Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM kunt maken en beheren.
+* [as a Cloud Service pre-releasekanaal AEM](/help/release-notes/prerelease.md#enable-prerelease) - Leer hoe u zich aanmeldt bij het pre-releasekanaal van AEM as a Cloud Service om nieuwe en toekomstige functies uit te proberen.

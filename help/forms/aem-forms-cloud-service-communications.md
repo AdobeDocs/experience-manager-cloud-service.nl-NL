@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Communicatie
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,10 @@ ht-degree: 0%
 
 # Synchrone verwerking gebruiken {#sync-processing-introduction}
 
-Met communicatiemogelijkheden kunt u documenten maken die door uw merk zijn goedgekeurd, gepersonaliseerd en gestandaardiseerd, zoals zakelijke correspondentie, instructies, aanvraagverwerkingsbrieven, aankondigingen van voordelen, maandelijkse facturen of welkomstkits.
+Met behulp van communicatie kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, claimverwerkingsbrieven, aankondigingen van voordelen, claimverwerkingsbrieven, maandelijkse facturen en welkomstkits. U kunt Communicatie APIs gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, DPL, IPL, en ZPL formaten te produceren.
 
-De mogelijkheid biedt API&#39;s om de documenten te genereren en te bewerken. U kunt een document op verzoek genereren of bewerken of een batchtaak maken om meerdere documenten met gedefinieerde intervallen te genereren.
+Overweeg een scenario waar u één of meerdere malplaatjes en veelvoudige verslagen van de gegevens van XML voor elke malplaatje hebt. U kunt communicatie-API&#39;s gebruiken om een afdrukdocument te genereren voor elke record. <!-- You can also combine the records into a single document. --> Het resultaat is een niet-interactief PDF-document. In een niet-interactief PDF-document kunnen gebruikers geen gegevens invoeren in de desbetreffende velden.
+
 
 De mededelingen verstrekken APIs voor het op bestelling en geplande documentgeneratie. U kunt synchrone API&#39;s voor asynchrone API&#39;s (Asynchrone API&#39;s) voor het genereren van geplande documenten gebruiken:
 
@@ -24,7 +25,19 @@ De mededelingen verstrekken APIs voor het op bestelling en geplande documentgene
 
 ## Synchrone bewerkingen gebruiken {#batch-operations}
 
-Een synchrone bewerking is een proces waarbij documenten lineair worden gegenereerd of bewerkt. Het steunt twee type van authentificatie:
+Een synchrone bewerking is een proces waarbij documenten lineair worden gegenereerd. Afzonderlijke API&#39;s zijn beschikbaar voor:
+
+* Hiermee genereert u een PDF-document op basis van een sjabloon en voegt u er gegevens aan toe.
+* Genereer een PostScript- (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL)-document op basis van een XDP-bestand of PDF-document.
+* PDF-documenten samenstellen
+* PDF-documenten demonteren
+* Een document converteren naar een document dat voldoet aan de PDF/A-standaard
+* Een document valideren dat voldoet aan de PDF/A-standaard
+
+
+### Een API-aanroep verifiëren
+
+De synchrone verrichtingen steunen twee type van authentificatie:
 
 * **Basisverificatie**: De basisauthentificatie is een eenvoudige authentificatieregeling die in het protocol van HTTP wordt gebouwd. De client verzendt HTTP-aanvragen met de machtigingsheader die het woord Basic bevat, gevolgd door een spatie en een base64-coded tekenreeks username:password. Als u bijvoorbeeld autoriseert als beheerder/beheerder, verzendt de client Basic [base64-coded string username]: [base64-gecodeerd tekenreekswachtwoord].
 
@@ -40,16 +53,17 @@ Een synchrone bewerking is een proces waarbij documenten lineair worden gegenere
    >
    >Adobe raadt aan tokenverificatie op een productieomgeving te gebruiken.
 
-### (Alleen API&#39;s voor het genereren van documenten)Voorwaarden {#pre-requisites}
 
-Als u synchrone API&#39;s wilt gebruiken voor het genereren van documenten, is het volgende vereist:
+### (Alleen voor API&#39;s voor documentgeneratie) Elementen en machtigingen configureren
+
+Voor het gebruik van synchrone API&#39;s is het volgende vereist:
 
 * PDF- of XDP-sjablonen
 * [Gegevens die met sjablonen moeten worden samengevoegd](#form-data)
 * Gebruikers met beheerdersrechten voor Experience Managers
 * Sjablonen en andere elementen uploaden naar uw Experience Manager Forms Cloud Service-exemplaar
 
-#### Sjablonen en andere elementen uploaden naar uw Experience Manager-instantie
+### (Alleen voor API&#39;s voor documentgeneratie) Sjablonen en andere elementen uploaden naar uw Experience Manager-instantie
 
 Een organisatie heeft doorgaans meerdere sjablonen. Bijvoorbeeld, één malplaatje elk voor creditcardverklaringen, voordelenverklaringen, en claimtoepassingen. Upload al dergelijke XDP en PDF malplaatjes aan uw instantie van de Experience Manager. Een sjabloon uploaden:
 
@@ -58,14 +72,10 @@ Een organisatie heeft doorgaans meerdere sjablonen. Bijvoorbeeld, één malplaat
 1. Klik op Maken > Map en maak een map. Open de map.
 1. Klik op Maken > Bestand uploaden en upload de sjablonen.
 
-### Synchrone API gebruiken om documenten te genereren
 
-Afzonderlijke API&#39;s zijn beschikbaar voor:
+### Een API aanroepen
 
-* Hiermee genereert u een PDF-document op basis van een sjabloon en voegt u er gegevens aan toe.
-* Genereer een PostScript- (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL)-document op basis van een XDP-bestand of PDF-document.
-
-De [API-naslagdocumentatie](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is ook beschikbaar in de indeling .yaml. U kunt de .yaml downloaden voor [synchrone API&#39;s](assets/sync.yaml) en uploadt het naar postman om functionaliteit van APIs te controleren.
+De [API-naslagdocumentatie](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie biedt ook een API-definitiebestand in de indeling .yaml. U kunt het .yaml dossier downloaden en het uploaden aan postman om functionaliteit van APIs te controleren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 

@@ -4,9 +4,9 @@ description: Leer hoe te om het Kader van de Integratie van de Vertaling te vorm
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 917f5790fb36fd1560ba43c67f8072616b605894
+source-git-commit: 5ef9ac087ec3feab9c68935b81882451c308daed
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1535'
 ht-degree: 0%
 
 ---
@@ -67,11 +67,7 @@ Nadat u een vertaalintegratieframework hebt geconfigureerd, kunt u [koppelen aan
 >
 >Voor een overzicht van de vertaalfuncties voor inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](overview.md).
 
-Eén configuratie van het framework bepaalt hoe pagina-inhoud en elementen moeten worden omgezet.
-
-![Translatieconfiguratie](../assets/translation-configuration.png)
-
-Een nieuwe vertaalconfiguratie maken:
+Eén configuratie van het framework bepaalt hoe pagina-inhoud en elementen worden vertaald. Een nieuwe vertaalconfiguratie maken:
 
 1. In de [algemeen navigatiemenu,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) klikken of tikken **Gereedschappen -> Cloud Services - en Cloud Services voor vertaling**.
 1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt maken. Dit is vaak gebaseerd op een bepaalde site of kan globaal zijn.
@@ -85,28 +81,41 @@ Een nieuwe vertaalconfiguratie maken:
 
 De **Sites** bepaalt hoe de vertaling van pagina-inhoud wordt uitgevoerd.
 
+![Translatieconfiguratie voor sites](../assets/translation-configuration.png)
+
 | Eigenschap | Beschrijving |
 |---|---|
-| Vertaalworkflow | Deze eigenschap definieert de vertaalmethode die het framework uitvoert voor site-inhoud:<br>- Machinevertaling: De vertaalprovider voert de vertaling in real-time uit met behulp van automatische vertaling.<br>- Menselijke vertaling: De inhoud wordt naar de vertaalprovider verzonden en door vertalers vertaald.<br>- Niet vertalen: Inhoud wordt niet verzonden voor vertaling. Hiermee slaat u bepaalde vertakkingen met inhoud over die niet worden vertaald, maar wel kunnen worden bijgewerkt met de meest recente inhoud. |
+| Omzettingsmethode | Deze eigenschap definieert de vertaalmethode die het framework uitvoert voor site-inhoud:<br>- Machinevertaling: De vertaalprovider voert de vertaling in real-time uit met behulp van automatische vertaling.<br>- Menselijke vertaling: De inhoud wordt naar de vertaalprovider verzonden en door vertalers vertaald.<br>- Niet vertalen: Inhoud wordt niet verzonden voor vertaling. Hiermee slaat u bepaalde vertakkingen met inhoud over die niet worden vertaald, maar wel kunnen worden bijgewerkt met de meest recente inhoud. |
 | Vertaalbureau | Deze eigenschap definieert de vertaalprovider die de vertaling moet uitvoeren. Een leverancier verschijnt in de lijst wanneer zijn overeenkomstige schakelaar wordt geïnstalleerd. |
 | Inhoudscategorie | (Alleen machinevertaling) Deze eigenschap is een categorie die de inhoud beschrijft die u wilt vertalen. De categorie kan van invloed zijn op de keuze van terminologie en woordgebruik bij het vertalen van inhoud. |
 | Tags vertalen | Met deze optie schakelt u het vertalen van codes in die aan de pagina zijn gekoppeld. |
 | Pagina-elementen vertalen | This property define how to translate assets that are added to components from the file system or referenced from assets:<br>- Niet vertalen: Pagina-elementen worden niet omgezet.<br>- Workflow voor het vertalen van sites gebruiken: De activa worden behandeld volgens de configuratieeigenschappen op **Sites** tab.<br>- Workflow voor het vertalen van middelen gebruiken: De activa worden behandeld volgens de eigenschappen die op worden gevormd **Activa** tab. |
 | Vertaling automatisch uitvoeren | Schakel deze eigenschap in om na het maken van vertaalprojecten automatisch vertaaltaken uit te voeren. U hebt geen mogelijkheid om de vertaaltaak te beoordelen en te vergroten wanneer u deze optie selecteert. |
+| Alleen bijwerken uitschakelen | Als deze optie is ingeschakeld, worden bij het bijwerken van het vertaalproject alle vertaalbare velden voor vertaling ingediend, en niet alleen de velden die zijn gewijzigd sinds de laatste vertaling. |
 
 ### Eigenschappen van middelenconfiguratie {#assets-configuration-properties}
 
 De eigenschappen van activa bepalen hoe te om activa te vormen. Zie voor meer informatie over het vertalen van elementen [Taalkopieën voor middelen maken](/help/assets/translate-assets.md).
 
+![Translatieconfiguratie voor sites](../assets/translation-configuration-assets.png)
+
 | Eigenschap | Beschrijving |
 |---|---|
-| Vertaalworkflow | Met deze eigenschap wordt het type vertaling geselecteerd dat het framework uitvoert voor elementen:<br>- Machinevertaling: De vertaalprovider voert de vertaling direct uit met behulp van computervertaling.<br>- Menselijke vertaling: Inhoud wordt automatisch naar de vertaalprovider verzonden om handmatig te worden vertaald.<br>-Niet vertalen: Elementen worden niet verzonden voor vertaling. |
+| Omzettingsmethode | Met deze eigenschap wordt het type vertaling geselecteerd dat het framework uitvoert voor elementen:<br>- Machinevertaling: De vertaalprovider voert de vertaling direct uit met behulp van computervertaling.<br>- Menselijke vertaling: Inhoud wordt automatisch naar de vertaalprovider verzonden om handmatig te worden vertaald.<br>-Niet vertalen: Elementen worden niet verzonden voor vertaling. |
 | Vertaalbureau | Deze eigenschap definieert de vertaalprovider die de vertaling moet uitvoeren. Een leverancier verschijnt in de lijst wanneer zijn overeenkomstige schakelaar wordt geïnstalleerd. |
 | Inhoudscategorie | (Alleen machinevertaling) Met deze eigenschap wordt de inhoud beschreven die u wilt vertalen. De categorie kan van invloed zijn op de keuze van terminologie en woordgebruik bij het vertalen van inhoud. |
 | Elementen vertalen | Activeer deze eigenschap om elementen in het vertaalproject op te nemen. |
 | Metagegevens vertalen | Activeer deze eigenschap om metagegevens van elementen te vertalen. |
 | Tags vertalen | Activeer deze eigenschap om codes te vertalen die aan het element zijn gekoppeld. |
 | Vertaling automatisch uitvoeren | Selecteer deze eigenschap als u na het maken van vertaalprojecten automatisch vertaaltaken wilt uitvoeren. U hebt geen gelegenheid om de vertaalbaan te herzien of te behandelen wanneer u deze optie selecteert. |
+| Alleen bijwerken uitschakelen | Als deze optie is ingeschakeld, worden bij het bijwerken van het vertaalproject alle vertaalbare velden voor vertaling ingediend, en niet alleen de velden die zijn gewijzigd sinds de laatste vertaling. |
+| Velden van inhoudsmodellen inschakelen voor vertaling* | Als u deze optie inschakelt, wordt de opdracht **Vertaalbaar** veld op [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md#properties) om te bepalen of het veld wordt vertaald. In dit geval: [vertaalregels](rules.md) worden vervangen. |
+
+>[!NOTE]
+>
+>*Deze functie is beschikbaar in het prereleasekanaal.
+> 
+>Zie de [Prerelease Channel-documentatie](/help/release-notes/prerelease.md#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen.
 
 ## Pagina&#39;s voor omzetting configureren {#configuring-pages-for-translation}
 

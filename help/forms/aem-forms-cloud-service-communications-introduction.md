@@ -2,9 +2,9 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Documentmanipulatie
 
-Via API&#39;s voor documentmanipulatie kunt u PDF-documenten combineren, opnieuw rangschikken en valideren. Doorgaans maakt u een DDX en verzendt u deze naar API&#39;s voor documentmanipulatie om een document samen te stellen of opnieuw te rangschikken. Het DDX-document bevat instructies voor het gebruik van de brondocumenten om een set vereiste documenten te maken. De DDX-referentiedocumentatie biedt gedetailleerde informatie over alle ondersteunde bewerkingen. Voorbeelden van documentmanipulatie zijn:
+Via API&#39;s voor documentmanipulatie kunt u PDF-documenten combineren, opnieuw rangschikken en valideren. Doorgaans maakt u een DDX en verzendt u deze naar API&#39;s voor documentmanipulatie om een document samen te stellen of opnieuw te rangschikken. De [DDX-document](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) Hier vindt u instructies over het gebruik van de brondocumenten om een set vereiste documenten te maken. De DDX-referentiedocumentatie biedt gedetailleerde informatie over alle ondersteunde bewerkingen. Voorbeelden van documentmanipulatie zijn:
 
 ### PDF-documenten samenstellen
 

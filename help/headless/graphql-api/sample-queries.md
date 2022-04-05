@@ -1,9 +1,9 @@
 ---
-title: Learning to use GraphQL with AEM - Sample Content and Queries
+title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 6d5cdc4b606692f059fe3a6b7a29544f5bc0fa11
+source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s {#learn-graphql-with-aem-sample-content-queries}
 
-Learn to use GraphQL with AEM to serve content headlessly by exploring sample content and queries.
+Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekpr
 >
 >Afhankelijk van uw instantie kunt u rechtstreeks toegang krijgen tot de [GraphiQL-interface inbegrepen bij AEM GraphQL API](/help/headless/graphql-api/graphiql-ide.md) voor het indienen van en het testen van vragen.
 >
->Bijvoorbeeld: `http://localhost:4502/content/graphiql.html`
+>Bijvoorbeeld: `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
 >
@@ -764,7 +764,7 @@ query {
 }
 ```
 
-### Sample Query - Filter on an array with an item that must occur at least once {#sample-array-item-occur-at-least-once}
+### Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen {#sample-array-item-occur-at-least-once}
 
 Deze query filtert op een array met een item (`city:na`) die ten minste één keer moet plaatsvinden.
 
@@ -1301,10 +1301,10 @@ Deze query vraagt om:
 
 ### Voorbeeldquery voor een inhoudsfragment van een specifiek model met inhoudsverwijzingen{#sample-wknd-fragment-specific-model-content-reference}
 
-There are two flavors of this query:
+Deze query heeft twee voordelen:
 
 1. Alle inhoudsverwijzingen retourneren.
-1. To return the specific content references of type `attachments`.
+1. De specifieke inhoudsverwijzingen van het type retourneren `attachments`.
 
 Deze vragen worden ondervraagd:
 
@@ -1543,7 +1543,7 @@ De velden waarin een persoon wordt gedefinieerd, die ook een werknemer kan zijn:
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
 | Naam | Tekst met één regel |  |
-| Voornaam | Single line text |  |
+| Voornaam | Tekst met één regel |  |
 | Awards | Fragmentverwijzing (meerdere velden) | [Uitreiking](#model-award) |
 
 #### Uitreiking {#model-award}

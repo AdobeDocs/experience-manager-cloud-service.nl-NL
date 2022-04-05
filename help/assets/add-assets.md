@@ -4,9 +4,9 @@ description: Voeg uw digitale middelen toe aan [!DNL Adobe Experience Manager] a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
+source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
 workflow-type: tm+mt
-source-wordcount: '2870'
+source-wordcount: '2875'
 ht-degree: 0%
 
 ---
@@ -219,36 +219,37 @@ Tijdens de bulkinvoer [!DNL Experience Manager] zoekt u naar de bestaande mappen
 
 **Elementnaam verwerken in bulkimport**
 
-Voor namen van elementbestanden wordt de JCr-naam&amp;pad ontsmet met behulp van de API: `JcrUtil.escapeIllegalJcrChars`.
+Voor namen van elementbestanden worden de naam en het pad van de JCR gesimuleerd met behulp van de API: `JcrUtil.escapeIllegalJcrChars`.
 
-* De unicode ongewijzigd laten
-* Vervang de speciale tekens bijvoorbeeld door hun URL Escape-code. `new*asset.png` wordt bijgewerkt naar `new%2Aasset.png`:
+* Unicode-tekens worden niet gewijzigd
+* Vervang de speciale tekens bijvoorbeeld door hun URL Escape-code. `new asset.png` wordt bijgewerkt naar `new%20asset.png`:
 
    ```
-          URL escape code   
+                   URL escape code   
    
-   "         %22
-   %         %25
-   '         %27
-   *         %2A
-   .         %2E
-   /         %2F
-   :         %3A
-   [         %5B
-   \n        %5Cn
-   \r        %5Cr
-   \t        %5Ct
-   ]         %5D
-   |         %7C
+   "               %22
+   %               %25
+   '               %27
+   *               %2A
+   .               %2E
+   /               %2F
+   :               %3A
+   [               %5B
+   \n              %5Cn
+   \r              %5Cr
+   \t              %5Ct
+   ]               %5D
+   |               %7C
+   space char      %20
    ```
 
 **Mapnaam verwerken in bulkimport**
 
-Voor mapbestandsnamen wordt het JCr-naam&amp;pad ontsmet met behulp van de API: `JcrUtil.createValidName`.
+Voor mapbestandsnamen worden de naam en het pad van de JCR ontsmet met behulp van de API: `JcrUtil.createValidName`.
 
-* Hoofdletters omzetten in kleine letters
-* Unicode ongewijzigd laten
-* De speciale tekens bijvoorbeeld vervangen door een streepje (&#39;-&#39;) `new*asset.png` wordt bijgewerkt naar `new-asset.png`:
+* Hoofdletters worden omgezet in kleine letters
+* Unicode-tekens worden niet gewijzigd
+* De speciale tekens bijvoorbeeld vervangen door een streepje (&#39;-&#39;) `new asset.png` wordt bijgewerkt naar `new-asset.png`:
 
    ```
    "                           
@@ -267,9 +268,10 @@ Voor mapbestandsnamen wordt het JCr-naam&amp;pad ontsmet met behulp van de API: 
    {                         
    }                         
    |                           
-   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
-   \      Not allowed in Azure, allowed in AWS.
-   \t                          
+   /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \         Not allowed in Azure, allowed in AWS.
+   \t
+   space     It is the space character.
    ```
 
 <!-- 

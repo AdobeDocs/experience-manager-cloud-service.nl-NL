@@ -2,7 +2,7 @@
 title: Hoe te om tot Uw Inhoud via AEM levering APIs toegang te hebben
 description: In dit deel van de AEM Headless Ontwikkelaarsreis, leer hoe te om vragen te gebruiken GraphQL om tot uw inhoud van de Fragmenten van de Inhoud toegang te hebben.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -272,7 +272,7 @@ De fragmentmodellen worden gebruikt:
 
 De vragen kunnen in de interface GraphiQL, bijvoorbeeld bij zijn ingegaan:
 
-* `http://localhost:4502/content/graphiql.html`
+* `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 
