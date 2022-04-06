@@ -2,9 +2,9 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,6 @@ ht-degree: 0%
 >abstract="Het testen van de gebruikersinterface van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd)."
 
 Het testen van de gebruikersinterface van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen.
-
->[!NOTE]
-> Het werkgebied en de productiepijpleidingen die vóór 10 februari 2021 zijn gemaakt, moeten worden bijgewerkt om de interfacetests te kunnen gebruiken zoals beschreven op deze pagina.
-> Zie [CI-CD-pijpleidingen in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor informatie over pijpleidingsconfiguratie.
 
 ## Overzicht {#custom-ui-testing}
 
@@ -62,12 +58,9 @@ Als u een `testing.properties` bestand in het constructieartefact toevoegen `inc
 
 >[!NOTE]
 >
->Als uw project deze lijn niet omvat, zult u dit dossier moeten uitgeven om in het testen UI te kiezen. Als het dossier een lijn adviseert om het niet uit te geven, te negeren gelieve dat advies.
-
->[!NOTE]
+>Als uw project deze lijn niet omvat, zult u het dossier moeten uitgeven om in het testen UI te kiezen.
 >
->Productiepijpleidingen die vóór 10 februari 2021 zijn aangelegd, moeten worden bijgewerkt om de in dit punt beschreven interfacetests te kunnen gebruiken. Dit betekent hoofdzakelijk de Gebruiker de pijpleiding van de Productie moet uitgeven en klikt **Opslaan** van de BU, zelfs als er geen wijzigingen zijn aangebracht.
->Zie [Het vormen van uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) om meer over pijpleidingsconfiguratie te leren.
+>Het bestand kan een regel bevatten die u adviseert het bestand niet te bewerken. Dit is toe te schrijven aan het worden geïntroduceerd in uw project alvorens het opt-in testen UI werd geïntroduceerd en de cliënt was niet bedoeld om het dossier uit te geven. Dit kan veilig worden genegeerd.
 
 ## UI-tests samenstellen {#building-ui-tests}
 
@@ -177,7 +170,7 @@ De volgende omgevingsvariabelen worden tijdens runtime aan de Docker-afbeelding 
 | Variabele | Voorbeelden | Beschrijving |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | De URL van de seleniumserver |
-| `SELENIUM_BROWSER` | `chrome`, `firefox` | De browserimplementatie die wordt gebruikt door de seleniumserver |
+| `SELENIUM_BROWSER` | `chrome` | De browserimplementatie die wordt gebruikt door de seleniumserver |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | De URL van de AEM instantie van de auteur |
 | `AEM_AUTHOR_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt om u aan te melden bij de instantie van de AEM auteur |
 | `AEM_AUTHOR_PASSWORD` | `admin` | Het wachtwoord om zich aan te melden bij de instantie van de AEM auteur |
@@ -198,7 +191,7 @@ Zodra het statuseindpunt van Selenium met een positieve reactie beantwoordt, kun
 
 ### Testrapporten genereren {#generate-test-reports}
 
-De Docker-afbeelding moet testrapporten genereren in de XML-indeling JUnit en deze opslaan in het pad dat is opgegeven door de omgevingsvariabele `REPORTS_PATH`. De indeling JUnit XML is een veelgebruikte indeling voor het rapporteren van de resultaten van tests. Als de Docker-afbeelding gebruikmaakt van Java en Maven, wordt zowel het [Maven Surefire-plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) en de [Maven Failsafe-insteekmodule](https://maven.apache.org/surefire/maven-failsafe-plugin/).
+De Docker-afbeelding moet testrapporten genereren in de XML-indeling JUnit en deze opslaan in het pad dat is opgegeven door de omgevingsvariabele `REPORTS_PATH`. De indeling JUnit XML is een veelgebruikte indeling voor het rapporteren van de resultaten van tests. Als de Docker-afbeelding gebruikmaakt van Java en Maven, gebruikt u standaardtestmodules zoals [Maven Surefire-plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) en [Maven Failsafe-insteekmodule](https://maven.apache.org/surefire/maven-failsafe-plugin/) kan dergelijke rapporten uit de doos produceren.
 
 Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geïmplementeerd, controleert u de documentatie voor de gekozen hulpmiddelen op hoe u JUnit-XML-rapporten kunt genereren.
 

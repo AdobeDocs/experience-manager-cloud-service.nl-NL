@@ -2,9 +2,9 @@
 title: Functionele tests
 description: Leer over de drie verschillende types van functionele tests die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
+source-git-commit: a936f056685f2233a272b4b3105d845f832d143c
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -27,27 +27,37 @@ Er zijn drie verschillende soorten functionele tests in AEM as a Cloud Service.
 * [Aangepaste functionele tests](#custom-functional-testing)
 * [Aangepaste UI-tests](#custom-ui-testing)
 
-Voor alle functionele tests kunnen de gedetailleerde resultaten van de tests als `.zip` bestand met de **Buildlog downloaden** knoop in het bouwstijloverzichtsscherm als deel van [implementatieproces.](/help/implementing/cloud-manager/deploy-code.md) Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Raadpleeg het document voor toegang tot deze logboeken [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie .
+Voor alle functionele tests kunnen de gedetailleerde resultaten van de tests als `.zip` bestand met de **Buildlog downloaden** knoop in het bouwstijloverzichtsscherm als deel van [implementatieproces.](/help/implementing/cloud-manager/deploy-code.md)
+
+Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Raadpleeg het document voor toegang tot deze logboeken [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie .
+
+Zowel de functionele tests van het product als de aangepaste functionele tests zijn gebaseerd op de [AEM Clients testen.](https://github.com/adobe/aem-testing-clients)
 
 ## Functioneel testen van producten {#product-functional-testing}
 
-De functionele tests van het product zijn een reeks stabiele HTTP integratietests (ITs) van kernfunctionaliteit in AEM zoals creatie en replicatietaken. Deze tests verhinderen klantenveranderingen in de code van de douanetoepassing worden opgesteld als het kernfunctionaliteit breekt.
+De functionele tests van het product zijn een reeks stabiele HTTP integratietests (ITs) van kernfunctionaliteit in AEM zoals creatie en replicatietaken. Deze tests worden gehandhaafd door Adobe en zijn bedoeld om veranderingen in de code van de douanetoepassing te verhinderen worden opgesteld als het kernfunctionaliteit breekt.
 
 Functionele tests voor producten worden automatisch uitgevoerd wanneer u nieuwe code implementeert in Cloud Manager en kunnen niet worden overgeslagen.
 
-Zie [functionele producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub voor steekproeftests.
+De functionele tests van het product worden gehandhaafd als open-bronproject. Zie [functionele producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub voor meer informatie.
 
 ## Aangepaste functionele tests {#custom-functional-testing}
 
-De functionele het testen van de douane stap in de pijpleiding is altijd aanwezig en kan niet worden overgeslagen.
+Terwijl het functionele testen van producten door Adobe wordt bepaald, kunt u uw eigen kwaliteitstests voor uw eigen toepassing schrijven. Dit zal als douane functionele tests als deel van de productiepijplijn worden uitgevoerd om de kwaliteit van uw toepassing te verzekeren.
 
-De bouw moet of nul of één test JARs produceren. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. Als de build meerdere testJAR&#39;s produceert, is de geselecteerde JAR niet deterministisch.
+Het functionele testen van de douane wordt uitgevoerd zowel voor douanecode plaatsingen als duw verbeteringen, wat vooral belangrijk maakt om goede functionele tests te schrijven die AEM codeveranderingen verhinderen uw toepassingscode te breken. De aangepaste functionele teststap is altijd aanwezig en kan niet worden overgeslagen.
 
-### Functionele tests schrijven {#writing-functional-tests}
+### Aangepaste functionele tests schrijven {#writing-functional-tests}
+
+De zelfde hulpmiddelen die Adobe gebruikt om product functionele tests te schrijven kunnen worden gebruikt om uw douane functionele tests te schrijven. Gebruik de [functionele producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als voorbeeld van hoe te om uw tests te schrijven.
+
+De code voor een aangepaste functionele test is Java-code in het dialoogvenster `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. [Zie het AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor monstertests.
+
+De tests worden uitgevoerd op door Adobe onderhouden testinfrastructuren met minimaal twee auteurinstanties, twee publiceerinstanties en een dispatcherconfiguratie. Dit betekent dat uw aangepaste functionele tests worden uitgevoerd tegen de gehele AEM stapel.
 
 Aangepaste functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden ingezet voor AEM. Over het algemeen zou dit een afzonderlijke module Maven zijn. Het resulterende JAR-bestand moet alle vereiste afhankelijkheden bevatten en wordt gewoonlijk gemaakt met de opdracht `maven-assembly-plugin` met de `jar-with-dependencies` descriptor.
 
-Bovendien moet de JAR de `Cloud-Manager-TestType` manifestkoptekst ingesteld op `integration-test`. In de toekomst wordt verwacht dat extra headerwaarden worden ondersteund.
+Bovendien moet de JAR de `Cloud-Manager-TestType` manifestkoptekst ingesteld op `integration-test`.
 
 Hier volgt een voorbeeldconfiguratie voor de `maven-assembly-plugin`.
 
@@ -92,6 +102,10 @@ De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is zodanig
 
 Raadpleeg de [`aem-testing-clients` GitHub-repo](https://github.com/adobe/aem-testing-clients) voor meer informatie .
 
+>[!TIP]
+>
+>[Deze video bekijken](https://www.youtube.com/watch?v=yJX6r3xRLHU) over hoe u aangepaste functionele tests kunt gebruiken om uw vertrouwen in uw CI/CD pijpleidingen te verbeteren.
+
 ## Aangepaste UI-tests {#custom-ui-testing}
 
 Het testen van de gebruikersinterface van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd).
@@ -100,7 +114,7 @@ Raadpleeg het document [Aangepaste UI-tests](/help/implementing/cloud-manager/ui
 
 ## Uitvoering lokale test {#local-test-execution}
 
-Omdat testklassen JUnit-tests zijn, kunnen ze vanuit gangbare Java IDE&#39;s als Eclipse, IntelliJ, NetBeans enzovoort worden uitgevoerd.
+Omdat testklassen JUnit-tests zijn, kunnen ze vanuit gangbare Java IDE&#39;s als Eclipse, IntelliJ, NetBeans enzovoort worden uitgevoerd. Omdat zowel de functionele tests van het product als de douane functionele tests op de zelfde technologie gebaseerd zijn, kunnen allebei plaatselijk worden in werking gesteld door de producttests in uw douanetests te kopiëren.
 
 Bij het uitvoeren van deze tests is het echter noodzakelijk een aantal verschillende systeemeigenschappen in te stellen die door de `aem-testing-clients` (en de onderliggende Sling Testing Clients)-bibliotheek.
 
