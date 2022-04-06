@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 1e2b58015453c194af02fdae62c3735727981da1
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '1468'
 ht-degree: 0%
 
 ---
@@ -84,6 +84,51 @@ Ga als volgt te werk om gegevensbronnen toe te voegen aan of bij te werken naar 
 >[!NOTE]
 >
 >Nadat u nieuwe gegevensbronnen hebt toegevoegd of bestaande gegevensbronnen hebt bijgewerkt in een formuliergegevensmodel, moet u de bindingsverwijzingen naar behoren bijwerken in Adaptive Forms<!--and interactive communications--> die gebruikmaken van het bijgewerkte formuliergegevensmodel.
+
+## Contextbewuste configuraties voor specifieke uitvoeringsmodi {#runmode-specific-context-aware-config}
+
+[!UICONTROL Form Data Model] gebruiken [Contextbewuste configuraties verkopen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) om verschillende gegevensbronparameters te steunen om met gegevensbronnen voor verschillende [!DNL Experience Manager] uitvoeringsmodi.
+
+Wanneer [!UICONTROL Form Data Model] gebruikt cloudconfiguraties om parameters op te slaan, die bij inchecken en implementeren via bronbesturing (GIT-opslagruimte van Cloud-Manager) cloudconfiguratie met dezelfde parameters voor alle uitvoeringsmodi (ontwikkeling, werkgebied en productie) maken. Als er echter verschillende gegevenssets nodig zijn voor test- en productieomgevingen, gebruiken we gegevensbronparameters (bijvoorbeeld URL van gegevensbron) voor verschillende [!DNL Experience Manager] uitvoeringsmodi.
+
+Om dit te bereiken moet u een configuratie tot stand brengen OSGi die parameter-waarde paren van de gegevensbron bevat. Dit treedt het zelfde paar van met voeten [!UICONTROL Form Data Model] cloudconfiguratie bij uitvoering. Aangezien de configuraties OSGi deze looppaswijzen door gebrek steunen, kunt u een gegevensbronparameter aan verschillende waarden met voeten treden die op looppaswijze worden gebaseerd.
+
+Implementatiespecifieke cloudconfiguraties inschakelen in [!UICONTROL Form Data Model]:
+
+1. Cloudconfiguratie maken op een lokale ontwikkelingsinstantie. Voor gedetailleerde stappen raadpleegt u [Hoe te om gegevensbronnen te vormen](/help/forms/configure-data-sources.md).
+
+1. Sla uw cloudconfiguratie op het bestandssysteem op.
+   1. Pakket maken met filter `/conf/{foldername}/settings/cloudconfigs/fdm`. Hetzelfde gebruiken `{foldername}` zoals in stap 1. en vervangen `fdm` with `azurestorage` voor Azure-opslagconfiguratie.
+   1. Pakket samenstellen en downloaden. Zie voor meer informatie [pakkethandelingen](/help/implementing/developing/tools/package-manager.md).
+
+1. Cloudconfiguratie integreren in [!DNL Experience Manager] Archetype-project.
+   1. Pak het gedownloade pakket uit.
+   1. Kopiëren `jcr_root` en plaatst deze uw `ui.content` > `src` > `main` > `content`.
+   1. Bijwerken `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` om filter te bevatten `/conf/{foldername}/settings/cloudconfigs/fdm`. Zie voor meer informatie [ui.content module of AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, wordt de zelfde wolkenconfiguratie geïnstalleerd op alle milieu&#39;s (of runmodes). Om de waarde van gebieden (zoals URL) van wolkenconfiguraties te veranderen die op milieu worden gebaseerd, gebruik de configuratie OSGi die in de volgende stap wordt besproken.
+
+1. Maak een contextbewuste configuratie voor Apache Sling. Om de configuratie te creëren OSGi:
+   1. **OSGi-configuratiebestanden instellen in [!DNL Experience Manager] Archetype-project.**
+OSGi-fabrieksconfiguratiebestanden maken met PID 
+`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Maak een bestand met dezelfde naam onder elke uitvoermodusmap waarin de waarden per uitvoermodus moeten worden gewijzigd. Zie voor meer informatie [OSGi configureren voor [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+
+   1. **Stel de configuratie-json OSGI in.** Om Apache Sling Context-Aware de Leverancier van de Opheffing van de Configuratie te gebruiken:
+      1. Instantie voor lokale ontwikkeling `/system/console/configMgr`selecteert u de OSGi-configuratie in de fabriek met de naam **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi configuration]**.
+      1. Geef een beschrijving.
+      1. Selecteer **[!UICONTROL enabled]**.
+      1. Geef onder Overschrijvingen velden op die moeten worden gewijzigd op basis van de omgeving in de syntaxis met regelafstand. Zie voor meer informatie [Contextbewuste Apache Sling-configuratie - Overschrijven](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Bijvoorbeeld, `cloudconfigs/fdm/{configName}/url="newURL"`.
+U kunt meerdere overschrijvingen toevoegen door **[!UICONTROL +]**.
+      1. Selecteer **[!UICONTROL Save]**.
+      1. Om OSGi Configuration JSON te krijgen, volg de stappen in [OSGi-configuraties genereren met de AEM SDK QuickStart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
+      1. Plaats JSON in de Dossiers van de Configuratie van de Fabriek OSGi die in de vorige stap worden gecreeerd.
+      1. De waarde wijzigen van `newURL` op basis van omgeving (of runmode).
+      1. Om geheime waarde te veranderen die op runmode wordt gebaseerd, kan de geheime variabele tot stand worden gebracht gebruikend [cloudbeheer-API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) en kan later worden verwezen in de [OSGi-configuratie](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
+Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, zal de opheffing verschillende waarden op verschillende milieu&#39;s (of looppaswijze) verstrekken.
+
+      >[!NOTE]
+      >
+      >[!DNL Adobe Managed Service] gebruikers kunnen de geheime waarden coderen gebruikend crypto steun (voor details, zie [coderingsondersteuning voor configuratie-eigenschappen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) en plaats gecodeerde tekst na [de context bewuste configuraties zijn beschikbaar in de dienstpak 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
+
+1. Vernieuw de gegevensbrondefinities gebruikend de optie om gegevensbrondefinities in te vernieuwen [Formuliergegevensmodeleditor](#data-sources) om FDM geheime voorgeheugen door FDM UI te verfrissen en de recentste configuratie te krijgen.
 
 ## Volgende stappen {#next-steps}
 
