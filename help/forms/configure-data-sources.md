@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7d3f553765580c1d81a80bea456e9df908939bc0
+source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1404'
 ht-degree: 0%
 
 ---
@@ -135,6 +135,28 @@ Doe het volgende de diensten RESTful vormen:
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst tot stand te brengen.
+
+### Het model van de gegevens van de vormHTTP cliëntconfiguratie om prestaties te optimaliseren {#fdm-http-client-configuration}
+
+[!DNL Experience Manager Forms] formuliergegevensmodel bij integratie met RESTful-webservices als gegevensbron bevat HTTP-clientconfiguraties voor optimalisatie van prestaties.
+Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te configureren:
+
+1. Aanmelden bij [!DNL Experience Manager Forms] Instantie van auteur als beheerder en ga naar [!DNL Experience Manager] bundels voor webconsoles. De standaard-URL is [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+
+1. Tik op **[!UICONTROL Form Data Model HTTP Client Configuration for REST data source]**.
+
+1. In de [!UICONTROL Form Data Model HTTP Client Configuration for REST data source] dialoogvenster:
+
+   * Geef het maximale aantal toegestane verbindingen op tussen het gegevensmodel van het formulier en de RESTful-webservices in het dialoogvenster **[!UICONTROL Connection limit in total]** veld. De standaardwaarde is 20 verbindingen.
+
+   * Specificeer het maximumaantal toegestane verbindingen voor elke route in **[!UICONTROL Connection limit on per route basis]** veld. De standaardwaarde is 2 verbindingen.
+
+   * Geef de duur op, gedurende welke een blijvende HTTP-verbinding in leven blijft in het dialoogvenster **[!UICONTROL Keep alive]** veld. De standaardwaarde is 15 seconden.
+
+   * Geef de duur op waarvoor de [!DNL Experience Manager Forms] server wacht tot een verbinding tot stand is gebracht, in het dialoogvenster **[!UICONTROL Connection timeout]** veld. De standaardwaarde is 10 seconden.
+
+   * Geef de maximale periode voor inactiviteit op tussen twee gegevenspakketten in het dialoogvenster **[!UICONTROL Socket timeout]** veld. De standaardwaarde is 30 seconden.
+
 
 ## SOAP-webservices configureren {#configure-soap-web-services}
 
