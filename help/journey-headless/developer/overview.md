@@ -1,18 +1,18 @@
 ---
 title: AEM Headless Developer Journey
-description: AEM CMS-documentatie zonder kop. Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
+description: Begin hier voor een geleide reis door Adobe Experience Manager (AEM) as a Cloud Service wanneer het als Zwaardeloos Systeem van het Inhoudsbeheer (CMS) wordt gebruikt. Deze reis verstrekt u van alle informatie u uw eerste headless toepassing moet ontwikkelen.
 landing-page-description: Begin hier voor een begeleide reis door de headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
+source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1277'
 ht-degree: 1%
 
 ---
 
 # AEM Headless Developer Journey {#aem-headless-developer-journey}
 
-Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste project zonder titel te gebruiken. Deze reis voorziet u van al AEM Documentatie zonder Titel u uw eerste toepassing zonder titel moet ontwikkelen.
+Begin hier voor een geleide reis door Adobe Experience Manager (AEM) as a Cloud Service wanneer het als Zwaardeloos Systeem van het Inhoudsbeheer (CMS) wordt gebruikt. Leer over de krachtige en flexibele functies zonder koppen, hun mogelijkheden en hoe u deze kunt gebruiken voor uw eerste project voor ontwikkeling zonder koppen. Deze reis verstrekt u van alle informatie u uw eerste headless toepassing moet ontwikkelen.
 
 ## Inleiding {#introduction}
 
