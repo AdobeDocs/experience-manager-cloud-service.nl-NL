@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 372e40eb90d87d9ed366e08a3c0117068542680b
+source-git-commit: a96824cede31414963ff7e6f5ef1315bd35a51c1
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -96,40 +96,7 @@ Kijk eens naar de [Overzicht release maart 2022](https://video.tv.adobe.com/v/34
 
 ## Cloud Manager {#cloud-manager}
 
-### Releasedatum februari {#release-date-cm-feb}
-
-De releasedatum voor Cloud Manager in AEM as a Cloud Service 2022.02.0 is 10 februari 2022. De volgende release is gepland voor 10 maart 2022.
-
-### Wat is er nieuw? {#what-is-new-cm-feb}
-
-* Nieuw versneld [Webservicepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) zijn geïntroduceerd om HTTPD/verzender-configuratie uitsluitend te implementeren.
-   * U moet AEM versie hebben `2021.12.6151.20211217T120950Z` of nieuwer en [deelnemen aan de flexibele modus van de verzendingsprogramma&#39;s](/help/implementing/dispatcher/disp-overview.md#validation-debug) om deze functie te gebruiken.
-   * Dit onderdeel wordt geleidelijk ingevoerd gedurende de twee weken na de release van 2022.02.0.
-* De landingservaring van Cloud Manager is vernieuwd voor verbeterde navigatie, eenvoudig schakelen tussen raster-/tegelweergaven en pop-ups voor snel overzicht van het programma.
-* Een nieuwe drempelwaarde voor onvoldoende prestaties (`< D`) is toegevoegd aan de [betrouwbaarheidsmaatstaf.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
-   * Klanten met ernstige kwaliteitsproblemen die van invloed zijn op de stabiliteit van het systeem, voornamelijk in verband met ongeldige indexen en workflowprocessen, kunnen pas implementeren als deze problemen zijn opgelost.
-* De ernst van de `BannedPath` [kwaliteitsregel](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) is veranderd van blokker in kritiek.
-* De pijplijntovenaar zal de gebruiker informeren wanneer een AEM omgevingsupdate alvorens een [Webservicepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) ermee geassocieerd.
-
-### Opgeloste problemen {#bug-fixes-cm-feb}
-
-* De oude wachtwoorden van de git-opslagplaats worden nu altijd ongeldig gemaakt wanneer een nieuw wachtwoord wordt gegenereerd.
-* Het bijwerken van omgevingsvariabelen via de API heeft in zeldzame situaties geen invloed meer op de uitvoering van een pijpleiding.
-
-### Releasedatum maart {#release-date-cm-march}
-
-De releasedatum voor Cloud Manager versie 2022.3.0 in AEM as a Cloud Service 10 maart 2022. De volgende release is gepland voor 7 april 2022.
-
-### Wat is er nieuw? {#what-is-new-cm-march}
-
-* De toegang tot AEM het logboek van het Milieu kan worden gedaan gebruikend de rol van de Ontwikkelaar.
-
-### Opgeloste problemen {#bug-fixes-cm-march}
-
-* Een subset van handmatig gemaakte it-opslagruimten had een onjuiste naamwaarde waardoor de functie voor hergebruik van bouwmateriaal niet doeltreffend was. De namen van deze opslagruimten zijn gewijzigd en gebruikers zien de gecorrigeerde naam in de API/UI van Cloud Manager.
-* Bij de productie van volledige stapelleidingen werden bouwartefacten van niet-productiepijpleidingen onjuist opnieuw gebruikt.
-* Wanneer het toevoegen van of het uitgeven van een pijpleiding van de codekwaliteit, worden de opties om metrische mislukkingen te behandelen niet meer getoond.
-* Sommige onverwachte configuraties van pijpleidingsvariabele konden in de bouwstijlstap veroorzaken.
+U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
 ## De tool Content Transfer {#ctt-release}
 
