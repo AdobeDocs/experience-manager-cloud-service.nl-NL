@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: a6268415217894dae5d3aae77256855717798d3c
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -180,6 +180,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Een OData-
 
 >[!NOTE]
 >
+> Formuliergegevensmodel ondersteunt [OData versie 4.0](https://www.odata.org/documentation/) en later.
 >Voor geleidelijke gids om te vormen [!DNL Microsoft Dynamics 365], online of ter plaatse, zie [[!DNL Microsoft Dynamics] OData-configuratie](ms-dynamics-odata-configuration.md).
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
