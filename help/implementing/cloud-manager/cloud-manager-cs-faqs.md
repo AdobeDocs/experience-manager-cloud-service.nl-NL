@@ -2,9 +2,9 @@
 title: Veelgestelde vragen over Cloud Manager
 description: Zoek antwoorden op de meest gestelde vragen over Cloud Manager in AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 5f4bbedaa5c4630d6f955bb0986e8b32444d6aa3
+source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,9 @@ Dit document bevat antwoorden op de meest gestelde vragen over Cloud Manager in 
 
 Ja. U moet de opdracht `maven-toolchains-plugin` met de juiste instellingen voor Java 11.
 
-* Dit wordt gedocumenteerd [hier](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
-* Zie bijvoorbeeld de [projectcode van wknwdd-project](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+Het proces wordt gedocumenteerd [hier](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+
+Zie bijvoorbeeld de [projectcode van wknwdd-project](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Mijn build mislukt met een fout over maven-scr-plugin na het schakelen van Java 8 naar Java 11. Wat kan ik doen? {#build-fails-maven-scr-plugin}
 
@@ -33,7 +34,7 @@ Voor instructies over het verwijderen van deze plug-in raadpleegt u [hier.](http
 
 ## Mijn build mislukt met een fout met betrekking tot RequireJavaVersion na het schakelen van Java 8 naar Java 11. Wat kan ik doen? {#build-fails-requirejavaversion}
 
-Voor builds van Cloud Manager worden de `maven-enforcer-plugin` mislukt met deze fout.
+Voor builds van Cloud Manager worden de `maven-enforcer-plugin` kan mislukken met deze fout.
 
 ```text
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
@@ -55,7 +56,9 @@ Dit laat verdere plaatsing toe om nog worden geïnstalleerd wanneer de versie ni
 
 U kunt de versie ook instellen op `-SNAPSHOT` voor stadium- en productiegebouwen of -implementaties. Cloud Manager stelt automatisch een correct versienummer in en maakt een tag voor u in de it. Indien nodig kunt u later naar dit label verwijzen.
 
-## Hoe werkt het pakket en de bundelversioning bij stadium en productielokalisaties? {#snapshot-version}
+Meer informatie over versiebeheer vindt u op [Hier gedocumenteerd.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+
+## Hoe werkt het pakket en de bundelversioning voor stadium en productieplaatsingen? {#snapshot-version}
 
 In werkgebied- en productieimplementaties wordt een automatische versie gegenereerd als [Hier gedocumenteerd.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
@@ -86,12 +89,11 @@ De oplossing is om een [Configuratie RepositoryInitializer OSGi](/help/implement
 
 In de vorige voorbeeldfout wordt het pakket `myapp-base.ui.content-*.zip` bevat inhoud onder `/conf` en `/var/workflow`. Om de plaatsing te slagen, toestemmingen voor `sling-distribution-importer` onder deze paden is het noodzakelijk .
 
-Hier is een voorbeeld [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) van één dergelijke configuratie OSGi die extra toestemmingen voor `sling-distribution-importer` gebruiker.  Deze configuratie voegt machtigingen toe onder `/var`.  Dit XML-bestand hieronder [1] moet worden toegevoegd aan het toepassingspakket onder `/apps/myapp/config` (waarbij myapp de map is waarin uw toepassingscode is opgeslagen).
-org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
+Hier is een voorbeeld van een [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi-configuratie die extra toestemmingen voor de `sling-distribution-importer` gebruiker.  De configuratie voegt toestemmingen onder toe `/var`.  Een dergelijke configuratie moet worden toegevoegd aan het toepassingspakket onder `/apps/myapp/config` (waarbij myapp de map is waarin uw toepassingscode is opgeslagen).
 
-## Mijn plaatsing van de Manager van de Wolk ontbreekt bij de opstellen stap in AEM as a Cloud Service en ik reeds een configuratie RepositoryInitializer OSGi. Wat kan ik nog meer doen? {#build-failures}
+## Mijn plaatsing van de Manager van de Wolk ontbreekt bij de opstellen stap in AEM as a Cloud Service en ik voegde reeds een configuratie RepositoryInitializer OSGi toe. Wat kan ik nog meer doen? {#build-failures}
 
-Indien [het toevoegen van een configuratie RepositoryInitializer OSGi](##cloud-manager-deployment-cloud-service) heeft de fout niet opgelost, mogelijk is dit te wijten aan een van deze extra problemen.
+Indien [het toevoegen van een configuratie RepositoryInitializer OSGi](#cloud-manager-deployment-cloud-service) heeft de fout niet opgelost, mogelijk is dit te wijten aan een van deze extra problemen.
 
 * De plaatsing zou wegens een slechte configuratie kunnen ontbreken OSGi die een uit-van-de doosdienst breekt.
    * Controleer de logboeken tijdens plaatsing om te zien of zijn er om het even welke duidelijke fouten.
