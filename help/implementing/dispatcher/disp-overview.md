@@ -3,10 +3,10 @@ title: Dispatcher in de cloud
 description: 'Dispatcher in de cloud '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Inleiding {#apache-and-dispatcher-configuration-and-testing}
 
-Deze pagina beschrijft de verzendingsprogramma&#39;s en hoe u deze kunt downloaden en uitpakken, de ondersteunde apache-modules en biedt een overzicht op hoog niveau van de oude en flexibele modi. Daarnaast zijn er meer verwijzingen naar validatie en foutopsporing en naar AEM as a Cloud Service migratie van de Dispatcher-configuratie van AMS naar
+Deze pagina beschrijft de verzendingsprogramma&#39;s en hoe u deze kunt downloaden en uitpakken, de ondersteunde apache-modules en biedt een overzicht op hoog niveau van de oude en flexibele modi. Daarnaast zijn er meer verwijzingen naar validatie en foutopsporing en het migreren van de Dispatcher-configuratie van AMS naar AEM as a Cloud Service. Zie ook [deze video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) voor meer informatie over de implementatie van verzenderbestanden in een cloudservicemilieu.
 
 ## Verzendgereedschappen {#dispatcher-sdk}
 
