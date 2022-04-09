@@ -2,9 +2,9 @@
 title: Ervaringen op het gebied van authoringhandel
 description: Werkopdrachten
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ Het gebruik van Omnissearch is een gemakkelijke manier voor artsen om AEM inhoud
 
 Het resultaat wordt gegroepeerd op type.
 
-    >[!OPMERKING]
-    >
-    > Full-text zoeken in Omnsearch biedt geen ondersteuning voor gekoppelde inhoudsfragmenten. Gebruik SKU of UID om bijbehorende inhoudsfragmenten te zoeken.
+>[!NOTE]
+>
+> Bij zoeken in volledige tekst in Omnsearch worden geen bijbehorende inhoudsfragmenten ondersteund. Gebruik SKU of UID om bijbehorende inhoudsfragmenten te zoeken.
