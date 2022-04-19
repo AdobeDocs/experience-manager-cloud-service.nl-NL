@@ -3,9 +3,9 @@ title: CI/CD-pijpleidingen
 description: Leer meer over de CI/CD-pijpleidingen van Cloud Manager en hoe deze kunnen worden gebruikt om uw code efficiënt te implementeren.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,12 @@ Cloud Manager biedt twee soorten pijpleidingen:
 * [Niet-productiepijpleidingen](#non-prod-pipeline)
 
 ![Typen pijpleidingen](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
+
+## Video-overzicht {#video}
+
+Voor een snel overzicht van pijpleidingstypes, bekijk deze korte video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)
 
 ## Productiepijpleidingen {#prod-pipeline}
 
