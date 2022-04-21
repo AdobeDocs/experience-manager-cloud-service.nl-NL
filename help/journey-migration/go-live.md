@@ -2,9 +2,9 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Voordat u de migratie van de productie kunt uitvoeren, volgt u de stappen voor d
 Na de eerste migratie uit productie moet u incrementele verhogingen uitvoeren om ervoor te zorgen dat uw inhoud up-to-date wordt gebracht op de cloudinstantie. Daarom wordt u aangeraden de volgende aanbevolen procedures te volgen:
 
 * Gegevens verzamelen over de hoeveelheid inhoud. Bijvoorbeeld: per week, twee weken of een maand.
-* Zorg ervoor dat u de aanvullingen zodanig plant dat u meer dan 48 uur aan extractie en inname van inhoud voorkomt. Dit wordt aanbevolen, zodat de aanvulling van de inhoud past in een weekendtijdkader.
+* Zorg ervoor dat u de aanvullingen zodanig plant dat u meer dan 48 uur aan extractie en inname van inhoud voorkomt. Dit wordt aanbevolen, zodat de extra inhoud binnen een weekendtijdkader past.
 * Plan het aantal vereiste topups en gebruik deze schattingen om rond de Go-Live-datum te plannen.
 
 ## Identificeer Code en de Inhoud stijgt Tijdlijnen voor de Migratie {#code-content-freeze}
@@ -82,7 +82,7 @@ Zorg ervoor dat wanneer u live gaat, u de migratie van inhoud uitvoert op produc
 Wanneer u de productiemigratie uitvoert, moet u het gereedschap Inhoud overbrengen niet vanuit een kloon uitvoeren omdat:
 
 * Als een klant tijdens aanvullende migraties versies van inhoud moet migreren, worden de versies niet gemigreerd wanneer de klant het gereedschap Inhoud overbrengen van een kloon uitvoert. Zelfs als de kloon regelmatig van live auteur wordt ontspannen, telkens als een kloon wordt gecreeerd zullen de controlepunten die door het Hulpmiddel van de Overdracht van de Inhoud zullen worden gebruikt om de delta&#39;s te berekenen worden teruggesteld.
-* Aangezien een kloon niet als geheel kan worden verfrist, moet het ACL pakket van de Vraag worden gebruikt om de inhoud te verpakken en te installeren die van productie aan kloon wordt toegevoegd of wordt uitgegeven. Het probleem met deze aanpak is dat verwijderde inhoud op de broninstantie nooit naar de kloon wordt gebracht, tenzij deze handmatig wordt verwijderd uit zowel de bron als de kloon. Hierdoor ontstaat de mogelijkheid dat de verwijderde inhoud op de productie niet wordt verwijderd van de kloon en AEM as a Cloud Service.
+* Aangezien een kloon niet als geheel kan worden verfrist, moet het ACL pakket van de Vraag worden gebruikt om de inhoud te verpakken en te installeren die van productie aan kloon wordt toegevoegd of wordt uitgegeven. Het probleem met deze aanpak is dat verwijderde inhoud op de broninstantie nooit naar de kloon wordt gebracht, tenzij deze handmatig wordt verwijderd uit zowel de bron als de kloon. Hierdoor wordt de mogelijkheid geïntroduceerd dat de verwijderde inhoud op de productie niet wordt verwijderd op de kloon en AEM as a Cloud Service.
 
 **De belasting van de AEM optimaliseren tijdens het migreren van de inhoud**
 
@@ -113,13 +113,45 @@ Beide items worden geïdentificeerd en gerapporteerd in de [Best Practice Analyz
 
 ## Live checklist {#Go-Live-Checklist}
 
-Controleer de onderstaande lijst met activiteiten om ervoor te zorgen dat u een soepele en geslaagde migratie kunt uitvoeren:
+Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepel en succesvol verloopt.
 
-* Plan een code- en inhoudstijdsperiode. Zie ook [Tijdlijnen voor code en inhoud vastzetten voor migratie](#code-content-freeze).
-* De laatste top-up voor inhoud uitvoeren
-* Testiteraties voltooien
-* Prestatie- en beveiligingstests uitvoeren
-* Snelle overstap en voer de migratie op de productie-instantie uit
+* Voer een end-to-end productiepijplijn uit met functionele en UI-tests om een **altijd huidig** AEM productervaring. Zie de volgende bronnen.
+   * [Versie-updates AEM](/help/implementing/deploying/aem-version-updates.md)
+   * [Aangepaste functionele tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
+   * [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
+* Inhoud migreren naar productie en ervoor zorgen dat een relevante subset beschikbaar is voor testdoeleinden.
+   * Houd er rekening mee dat de beste praktijken van DevOps voor AEM impliceren dat de code zich van ontwikkeling naar het productiemilieu beweegt terwijl [de inhoud gaat verder dan de productieomgeving.](/help/overview/enterprise-devops.md#code-movement)
+* Plan een code- en inhoudstijdsperiode.
+   * Zie ook de sectie [Tijdlijnen voor code en inhoud vastzetten voor migratie](#code-content-freeze)
+* Voer de laatste top-up van de inhoud uit.
+* Valideer de configuraties van de verzender.
+   * Gebruik een lokale verzender-validator waarmee de verzender lokaal kan worden geconfigureerd, gevalideerd en gesimuleerd
+      * [Stel de lokale verzendprogramma&#39;s in.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+   * Herzie zorgvuldig de virtuele gastheerconfiguratie.
+      * De eenvoudigste (en standaard) oplossing moet `ServerAlias *` in uw virtuele hostbestand in het dialoogvenster `/dispatcher/src/conf.d/available_vhostsfolder`.
+         * Hierdoor kunnen de hostaliassen die door productfunctionele tests, cachevalidatie van de verzender en klonen worden gebruikt, functioneren.
+      * Als `ServerAlias *` niet aanvaardbaar is, ten minste: `ServerAlias` ingangen moeten naast uw douanedomeinen worden toegestaan:
+         * `localhost`
+         * `*.local`
+         * `publish*.adobeaemcloud.net`
+         * `publish*.adobeaemcloud.com`
+* Configureer CDN, SSL en DNS.
+   * Als u uw eigen CDN gebruikt, ga een steunkaartje in om aangewezen het verpletteren te vormen.
+      * Zie de sectie [CDN van de klant wijst naar AEM Beheerde CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) in de CDN-documentatie voor meer informatie.
+      * U zult SSL en DNS volgens de documentatie van uw verkoper moeten vormen CDN.
+   * Als u geen extra CDN gebruikt, beheer SSL en DNS volgens de volgende documentatie:
+      * SSL-certificaten beheren
+         * [Inleiding tot het beheren van SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [SSL-certificaat beheren](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      * Aangepaste domeinnamen (DNS) beheren
+         * [Inleiding tot aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [Aangepaste domeinnaam beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+   * Herinner me om TTL te bevestigen die voor uw DNS verslag wordt geplaatst.
+      * TTL is de hoeveelheid tijd een DNS verslag in een geheim voorgeheugen alvorens de server om een update te vragen blijft.
+      * Als u zeer hoge TTL hebt, zullen de updates aan uw DNS verslag langer duren om zich te verspreiden.
+* Voer prestatie- en beveiligingstests uit die voldoen aan uw zakelijke vereisten en doelstellingen.
+* Besnoeiing over en zorg ervoor dat daadwerkelijke go-live zonder enige nieuwe plaatsing of inhoudsupdate wordt uitgevoerd.
 
 U kunt altijd naar de lijst verwijzen als u uw taken opnieuw moet kalibreren tijdens het uitvoeren van de migratie.
 
