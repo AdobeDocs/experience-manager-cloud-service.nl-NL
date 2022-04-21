@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
+source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2442'
 ht-degree: 1%
 
 ---
@@ -60,17 +60,19 @@ Een indexdefinitie kan zijn:
 
 Merk op dat zowel de aanpassing van een uit-van-de-doos index, als volledig douaneindexen, moet bevatten `-custom-`. Alleen volledig aangepaste indexen moeten beginnen met een voorvoegsel.
 
-### De nieuwe indexdefinitie voorbereiden {#preparing-the-new-index-definition}
+## De nieuwe indexdefinitie voorbereiden {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Als u een index buiten het vak aanpast, bijvoorbeeld `damAssetLucene-6`, kopieer de meest recente out-of-box-indexdefinitie van een *Cloud Service* en voeg uw aanpassingen bovenaan toe, zorgt dit ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. De `tika` knooppunt onder `/oak:index/damAssetLucene-6/tika` is een vereist knooppunt en moet ook deel uitmaken van uw aangepaste index en bestaat niet in de SDK van de cloud.
+>Als u een index buiten het vak aanpast, bijvoorbeeld `damAssetLucene-6`, kopieer de meest recente out-of-box-indexdefinitie van een *Cloud Service* ontwikkelomgeving met behulp van CRX DE Package Manager (`/crx/packmgr/`). Wijzig vervolgens de naam van de configuratie, bijvoorbeeld `damAssetLucene-6-custom-1`en voeg uw aanpassingen bovenaan toe. Dit zorgt ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. De `tika` knooppunt onder `/oak:index/damAssetLucene-6/tika` is vereist in de aangepaste index van de cloudservice. Het bestaat niet op de Cloud SDK.
 
 U moet een nieuw indexdefinitiepakket voorbereiden dat de daadwerkelijke indexdefinitie bevat, die dit noemingspatroon volgt:
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
 die dan nog verder moeten `ui.apps/src/main/content/jcr_root`. Subhoofdmappen worden op dit moment niet ondersteund.
+
+Het filter voor het pakket moet zo worden ingesteld dat bestaande indexen (out-of-the-box) behouden blijven. Er zijn twee manieren om dit te doen: Het filter is ingesteld op `<filter root="/oak:index/" mode="merge"/>` in het bestand `ui.apps/src/main/content/META-INF/vault/filter.xml`of moet elke aangepaste (of aangepaste) index afzonderlijk worden vermeld in de filtersectie, bijvoorbeeld `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. In het laatste geval moet het filter telkens wanneer de versie wordt gewijzigd, worden aangepast.
 
 Het pakket van het bovenstaande voorbeeld is samengesteld als `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
@@ -80,7 +82,7 @@ Het pakket van het bovenstaande voorbeeld is samengesteld als `com.adobe.granite
 >
 >`noIntermediateSaves=true`
 
-### Indexdefinities implementeren {#deploying-index-definitions}
+## Indexdefinities implementeren {#deploying-index-definitions}
 
 >[!NOTE]
 >
