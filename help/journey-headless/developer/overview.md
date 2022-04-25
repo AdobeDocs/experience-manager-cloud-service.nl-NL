@@ -1,11 +1,11 @@
 ---
 title: AEM Headless Developer Journey
-description: Begin hier voor een geleide reis door Adobe Experience Manager (AEM) as a Cloud Service wanneer het als Zwaardeloos Systeem van het Inhoudsbeheer (CMS) wordt gebruikt. Deze reis verstrekt u van alle informatie u uw eerste headless toepassing moet ontwikkelen.
+description: Begin hier voor een geleide reis door Adobe Experience Manager (AEM) as a Cloud Service wanneer het eigenschappen zoals Inhoudsmodellen, Inhoudsfragmenten, en een GraphQL API gebruikt om hoofdloze ervaringen als een Systeem van het Beheer van de Inhoud zonder Titel (CMS) te drijven. Deze reis verstrekt u van alle informatie u uw eerste headless toepassing moet ontwikkelen.
 landing-page-description: Begin hier voor een begeleide reis door de headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
+source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1307'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Begin hier voor een geleide reis door Adobe Experience Manager (AEM) as a Cloud 
 
 ## Inleiding {#introduction}
 
-Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals gebruikelijk is in oplossingen voor volledige stapels. De implementatie is gericht op het maken van kanaalneutrale, herbruikbare fragmenten van inhoud en de levering ervan via meerdere kanalen. Het is een modern en dynamisch ontwikkelingspatroon voor de implementatie van digitale ervaringen.
+Bij de headless-implementatie van AEM wordt gebruikgemaakt van Content Fragments Models en Content Fragments om de nadruk te leggen op het maken van gestructureerde, kanaalneutrale en herbruikbare fragmenten van inhoud en hun doorvoerkanalen. Hiervoor gaat het pagina- en componentbeheer verloren, zoals dat gebruikelijk is in volledige stapeloplossingen. Het is een modern en dynamisch ontwikkelingspatroon voor de implementatie van digitale ervaringen.
 
 Deze gids leidt u door de belangrijkste implementatieonderwerpen in AEM zodat u na voltooiing:
 
