@@ -2,9 +2,9 @@
 title: Uw code implementeren
 description: Leer hoe u uw code implementeert met gebruik van Cloud Manager-pijpleidingen in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,19 @@ Productieimplementaties volgen doorgaans dezelfde stappen als eerder beschreven,
 Dit proces gaat verder tot de plaatsing alle uitgevers en verzenders in de topologie heeft bereikt.
 
 ![Implementatiefase productie](assets/production-deployment.png)
+
+## Tijdstippen {#timeouts}
+
+Er wordt een time-out toegepast in de volgende stappen als er op feedback van gebruikers wordt gewacht:
+
+| Stap | Time-out |
+|--- |--- |
+| Testen van de codekwaliteit | 14 dagen |
+| Beveiligingstests | 14 dagen |
+| Prestatietesten | 14 dagen |
+| Goedkeuringsaanvraag | 14 dagen |
+| Implementatie van planningsproductie | 14 dagen |
+| CSE-ondersteuning | 14 dagen |
 
 ## Implementatieproces {#deployment-process}
 
