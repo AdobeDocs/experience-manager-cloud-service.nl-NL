@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
+source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2444'
 ht-degree: 2%
 
 ---
@@ -225,15 +225,17 @@ Zie de [AEM 6.5-documentatie](https://experienceleague.adobe.com/docs/experience
 * De SMTP servergastheernaam zou aan $ moeten worden geplaatst[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * De SMTP serverhaven zou aan de waarde van de originele volmachtshaven moeten worden geplaatst die in de portForwards parameter wordt geplaatst in de API vraag wordt gebruikt wanneer het vormen van omhoog geavanceerd voorzien van een netwerk. Bijvoorbeeld, 30465 (eerder dan 465)
 
-Ook wordt aanbevolen dat indien haven 465 is aangevraagd:
+De SMTP serverhaven zou als `portDest` waarde die is ingesteld in de parameter portForwards die wordt gebruikt in de API-aanroep bij het configureren van geavanceerde netwerken en de `portOrig` De waarde moet een betekenisvolle waarde zijn die binnen het vereiste bereik van 30000 - 30999 ligt. Bijvoorbeeld, als de SMTP serverhaven 465 is, zou haven 30465 als moeten worden gebruikt `portOrig` waarde.
 
-* set `smtp.port` tot `465`
-* set `smtp.ssl` tot `true`
+In dit geval en het veronderstellen van SSL moet worden toegelaten, in de configuratie van **Day CQ Mail Service OSGI** service:
 
-en indien om poort 587 is verzocht:
+* Set `smtp.port` tot `30465`
+* Set `smtp.ssl` tot `true`
 
-* set `smtp.port` tot `587`
-* set `smtp.ssl` tot `false`
+Alternatief, als de bestemmingshaven 587 is, `portOrig` de waarde 30587 moet worden gebruikt. En ervan uitgaande dat SSL moet worden uitgeschakeld, de configuratie van de Day CQ Mail Service OSGI-service:
+
+* Set `smtp.port` tot `30587`
+* Set `smtp.ssl` tot `false`
 
 De `smtp.starttls` eigenschap wordt automatisch door AEM as a Cloud Service bij uitvoering ingesteld op een geschikte waarde. Als `smtp.ssl` is ingesteld op true, `smtp.startls` wordt genegeerd. Indien `smtp.ssl` is ingesteld op false, `smtp.starttls` is ingesteld op true. Dit is ongeacht `smtp.starttls` waarden die zijn ingesteld in uw OSGI-configuratie.
 
