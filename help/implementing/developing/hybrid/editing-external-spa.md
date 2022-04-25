@@ -2,9 +2,9 @@
 title: Een externe SPA bewerken in AEM
 description: In dit document worden de aanbevolen stappen beschreven voor het uploaden van een zelfstandige SPA naar een AEM-instantie, het toevoegen van bewerkbare gedeelten van inhoud en het inschakelen van ontwerpen.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
 workflow-type: tm+mt
-source-wordcount: '2127'
+source-wordcount: '2401'
 ht-degree: 0%
 
 ---
@@ -257,6 +257,42 @@ Er zijn een aantal vereisten om virtuele bladcomponenten en enkele beperkingen t
 * Het pad naar het knooppunt waar een nieuw knooppunt wordt gemaakt, moet geldig zijn als het wordt opgegeven via `itemPath`.
    * In dit voorbeeld: `root/responsivegrid` moet bestaan zodat de nieuwe knoop `text_20` kan daar worden gecreëerd.
 * Alleen het maken van bladcomponenten wordt ondersteund. Virtuele container en pagina worden in toekomstige versies ondersteund.
+
+### Virtuele containers {#virtual-containers}
+
+De mogelijkheid om containers toe te voegen, zelfs als de bijbehorende container nog niet in AEM is gemaakt, wordt ondersteund. Het concept en de aanpak lijken op [virtuele bladcomponenten.](#virtual-leaf-components)
+
+De front-end ontwikkelaar kan de containercomponenten in aangewezen plaatsen binnen de SPA toevoegen en deze componenten zullen placeholders tonen wanneer geopend in de redacteur in AEM. De auteur kan vervolgens componenten en de inhoud ervan toevoegen aan de container, waarmee de vereiste knooppunten in de JCR-structuur worden gemaakt.
+
+Als er bijvoorbeeld al een container bestaat op `/root/responsivegrid` en de ontwikkelaar wil een nieuwe kindcontainer toevoegen:
+
+![Containerlocatie](assets/container-location.png)
+
+`newContainer` bestaat nog niet in de AEM.
+
+Wanneer u de pagina met deze component in AEM bewerkt, wordt een lege plaatsaanduiding voor een container weergegeven waarin de auteur inhoud kan toevoegen.
+
+![Tijdelijke aanduiding voor container](assets/container-placeholder.png)
+
+![Containerlocatie in JCR](assets/container-jcr-structure.png)
+
+Nadat de auteur een onderliggende component aan de container heeft toegevoegd, wordt het nieuwe containerknooppunt gemaakt met de corresponderende naam in de JCR-structuur.
+
+![Container met inhoud](assets/container-with-content.png)
+
+![Container met inhoud in JCR](assets/container-with-content-jcr.png)
+
+Meer componenten en inhoud kunnen nu aan de container worden toegevoegd zoals de auteur vereist en de wijzigingen zullen worden voortgezet.
+
+#### Eisen en beperkingen {#container-limitations}
+
+Er zijn een aantal vereisten om virtuele containers en enkele beperkingen toe te voegen.
+
+* Het beleid om te bepalen welke componenten kunnen worden toegevoegd zal van de oudercontainer worden geërft.
+* Het directe bovenliggende element van de container die moet worden gemaakt, moet al in AEM bestaan.
+   * Als de container `root/responsivegrid` bestaat al in de AEM container, dan kan een nieuwe container tot stand worden gebracht door het weg te verstrekken `root/responsivegrid/newContainer`.
+   * Niettemin `root/responsivegrid/newContainer/secondNewContainer` is niet mogelijk.
+* Er kan slechts één nieuw componentniveau per keer worden gemaakt.
 
 ## Aanvullende aanpassingen {#additional-customizations}
 
