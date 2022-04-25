@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,31 @@ Gebruikers kunnen verwerkingsprofielen maken om de volgende creatieve bewerkinge
 
    ![Objecten slim vervangen](/help/assets/assets/content-automation-objectreplace.png)
 
+## Inhoudsautomatisering inschakelen voor AEM as a Cloud Service programma {#enable-content-automation}
+
+De add-on voor automatisering van inhoud inschakelen voor AEM as a Cloud Service programma met gebruik van Cloud Manager:
+
+1. Neem contact op met uw accountvertegenwoordiger om een licentie te verkrijgen voor de add-on Inhoudsautomatisering.
+1. Open Cloud Manager en schakel over naar uw organisatie met de bedrijfskiezer.
+1. Klikken **[!UICONTROL Add Program]** en geeft u een programmanaam op.
+1. Klik op **[!UICONTROL Continue]**.
+1. Uitbreiden **[!UICONTROL Assets]** en selecteert u **[!UICONTROL Content Automation]**.
+1. Klik op **[!UICONTROL Create]**.
+1. De pijplijn in werking stellen aan [Wijzigingen in Cloud Manager implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
+Als u de invoegtoepassing voor het automatiseren van inhoud wilt toevoegen aan een bestaand AEM as a Cloud Service programma in Cloud Manager:
+
+1. Klikken... op de programmakaart.
+
+1. Selecteren **[!UICONTROL Edit Program]** en selecteer vervolgens **[!UICONTROL Solutions & Add-ons]** tab.
+
+1. Uitbreiden **[!UICONTROL Assets]** en selecteert u **[!UICONTROL Content Automation]**.
+1. Klik op **[!UICONTROL Update]**.
+1. De pijplijn in werking stellen aan [Wijzigingen in Cloud Manager implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
 ## Een verwerkingsprofiel gebruiken om uw creatieve middelen bulksgewijs te bewerken {#process-assets}
 
 Ga als volgt te werk als u verwerkingsprofielen wilt gebruiken om automatisch variaties te maken:
-
-1. Contact [Adobe Klantenondersteuning](https://experienceleague.adobe.com/#support) om de vergunning te ontvangen.
 
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**.
 
