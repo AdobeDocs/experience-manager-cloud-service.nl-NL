@@ -2,7 +2,7 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
+source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepe
    * [Aangepaste functionele tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
 * Inhoud migreren naar productie en ervoor zorgen dat een relevante subset beschikbaar is voor testdoeleinden.
-   * Houd er rekening mee dat de beste praktijken van DevOps voor AEM impliceren dat de code zich van ontwikkeling naar het productiemilieu beweegt terwijl [de inhoud gaat verder dan de productieomgeving.](/help/overview/enterprise-devops.md#code-movement)
+   * Houd er rekening mee dat de beste praktijken van DevOps voor AEM impliceren dat de code zich van ontwikkeling aan het productiemilieu beweegt terwijl de inhoud zich van productiemilieu&#39;s beweegt.
 * Plan een code- en inhoudstijdsperiode.
    * Zie ook de sectie [Tijdlijnen voor code en inhoud vastzetten voor migratie](#code-content-freeze)
 * Voer de laatste top-up van de inhoud uit.
