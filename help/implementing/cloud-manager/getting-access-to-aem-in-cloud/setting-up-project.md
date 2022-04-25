@@ -2,9 +2,9 @@
 title: Projectinstelling
 description: Leer hoe AEM projecten met Maven en de normen worden gebouwd u moet waarnemen wanneer het creëren van uw eigen project.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: e0774c34ed81d23a5d7a897f65d50dcbf8f8af0d
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1415'
 ht-degree: 1%
 
 ---
@@ -280,7 +280,11 @@ De `content-package-maven-plugin` heeft een vergelijkbare configuratie.
 
 In veel gevallen, wordt de zelfde code opgesteld aan veelvoudige AEM milieu&#39;s. Waar mogelijk, zal de Manager van de Wolk vermijden herbouwend de codebasis wanneer het ontdekt dat het zelfde gat begaan wordt gebruikt in veelvoudige full-stack pijpleidinguitvoeringen.
 
-Wanneer een uitvoering is begonnen, begaat de huidige HEAD voor de takpijpleiding wordt gehaald. De commit hash is zichtbaar in UI en via API. Wanneer de bouwstijlstap met succes voltooit, worden de resulterende artefacten opgeslagen gebaseerd op die knoeiboel begaan en kunnen in verdere pijpleidingsuitvoeringen opnieuw worden gebruikt. Wanneer een hergebruik voorkomt, worden de bouw en de stappen van de codekwaliteit effectief vervangen met de resultaten van de originele uitvoering. Het logboekdossier voor de bouwstijlstap zal van de artefacten en de uitvoeringsinformatie een lijst maken die werd gebruikt om hen oorspronkelijk te bouwen.
+Wanneer een uitvoering is begonnen, begaat de huidige HEAD voor de takpijpleiding wordt gehaald. De commit hash is zichtbaar in UI en via API. Wanneer de bouwstijlstap met succes voltooit, worden de resulterende artefacten opgeslagen gebaseerd op die knoeiboel begaan en kunnen in verdere pijpleidingsuitvoeringen opnieuw worden gebruikt.
+
+Pakketten worden opnieuw gebruikt via pijpleidingen als ze zich in hetzelfde programma bevinden. Wanneer u pakketten zoekt die opnieuw kunnen worden gebruikt, negeert AEM vertakkingen en hergebruikt artefacten tussen vertakkingen.
+
+Wanneer een hergebruik voorkomt, worden de bouw en de stappen van de codekwaliteit effectief vervangen met de resultaten van de originele uitvoering. Het logboekdossier voor de bouwstijlstap zal van de artefacten en de uitvoeringsinformatie een lijst maken die werd gebruikt om hen oorspronkelijk te bouwen.
 
 Hieronder ziet u een voorbeeld van een dergelijke loguitvoer.
 
@@ -291,6 +295,34 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 ```
 
 Het logboek van de stap van de codekwaliteit zal gelijkaardige informatie bevatten.
+
+### Voorbeelden {#example-reuse}
+
+#### Voorbeeld 1 {#example-1}
+
+Houd er rekening mee dat uw programma twee ontwikkelingspijplijnen heeft:
+
+* Pijpleiding 1 op tak `foo`
+* Pijpleiding 2 op vertakking `bar`
+
+Beide vertakkingen zijn op zelfde verbind identiteitskaart
+
+1. De lopende Pijpleiding 1 zal eerst de pakketten normaal bouwen.
+1. Dan zal het lopen Pijpleiding 2 pakketten hergebruiken die door Pijpleiding 1 worden gecreeerd.
+
+#### Voorbeeld 2 {#example-2}
+
+Houd er rekening mee dat uw programma twee vertakkingen heeft:
+
+* Branch `foo`
+* Branch `bar`
+
+Beide vertakkingen hebben zelfde verbind identiteitskaart
+
+1. Een ontwikkelingspijplijn bouwt en voert uit `foo`.
+1. Daarna bouwt en voert een productiepijpleiding uit `bar`.
+
+In dit geval is het artefact van `foo` zal opnieuw worden gebruikt voor de productiepijplijn aangezien dezelfde &quot;commit hash&quot; is geïdentificeerd.
 
 ### Afmelden {#opting-out}
 
@@ -306,6 +338,8 @@ Indien gewenst, kan het hergebruikgedrag voor specifieke pijpleidingen door de p
 
 ### Caveats {#caveats}
 
+* Artefacten van de bouwstijl worden niet opnieuw gebruikt over verschillende programma&#39;s, ongeacht als de commit knoeiboel identiek is.
+* De kunstmatigheden van de bouwstijl worden opnieuw gebruikt binnen het zelfde programma zelfs als de tak en/of de pijpleiding verschillend is.
 * [Beproefde versieafhandeling](/help/implementing/cloud-manager/managing-code/project-version-handling.md) vervangt de projectversie alleen in productiepijpleidingen. Daarom als het zelfde begaat op zowel ontwikkelt uitvoering als een uitvoering van de productiepijplijn en de ontwikkelings opstellen pijpleiding eerst wordt uitgevoerd, zullen de versies aan stadium en productie zonder worden veranderd worden opgesteld. In dit geval wordt echter nog steeds een tag gemaakt.
 * Als de terugwinning van de opgeslagen artefacten niet succesvol is, zal de bouwstijlstap worden uitgevoerd alsof geen artefacten waren opgeslagen.
 * Andere pijpleidingvariabelen dan `CM_DISABLE_BUILD_REUSE` worden niet in overweging genomen wanneer Cloud Manager besluit eerder gemaakte constructieartefacten opnieuw te gebruiken.
