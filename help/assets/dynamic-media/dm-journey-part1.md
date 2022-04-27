@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media Journey
+title: Dynamic Media Journey, Deel I
 description: 'De Dynamic Media Journey bespreekt de basisbeginselen van Dynamic Media, hoe het werkt, wat het voor u kan doen, en welke waarde het aan uw werk en uw klanten brengt. '
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: b830c6e2f86b92b03cb9c03e94ae2bb2e3bda444
+source-git-commit: dc290be237c938af59960834b32269a1f6c5bd97
 workflow-type: tm+mt
-source-wordcount: '3482'
+source-wordcount: '3484'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,8 @@ Deze unieke leveringsmethode zorgt ervoor dat de verenigbare kwaliteitservaringe
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media levert dezelfde primaire afbeelding aan verschillende mediums in verschillende formaten en formaten.](/help/assets/assets-dm/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media levert dezelfde primaire afbeelding aan verschillende mediums in verschillende formaten en formaten.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+
 *Adobe Dynamic Media zorgt voor consistentie, kwaliteit wordt geleverd aan elk scherm, ongeacht grootte of bandbreedte.*
 
 Terwijl u doorleest, gaat u meer leren over waarom dit concept van &quot;één primair elementenbestand, eindeloze mogelijkheden&quot; belangrijk is.
@@ -104,7 +105,7 @@ Deze intelligentie vermindert verder de grootte van het beelddossier die op brow
 
 Over het algemeen kunt u met intelligente beeldverwerking een prestatieverbetering van 22 tot 47% verwachten, afhankelijk van uw bestaande voorinstellingen voor afbeeldingen en specifieke kenmerken van de eindgebruiker. De beeldkwaliteit blijft behouden alsof deze nooit wordt beïnvloed.
 
-![Slimme afbeeldingen](/help/assets/assets-dm/dm-smart-imaging.png)
+![Slimme afbeeldingen](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *Met Smart Imaging worden de indeling en bestandsgrootte van afbeeldingen automatisch geoptimaliseerd op basis van de browsermogelijkheden en de netwerksnelheid van de klant.*
 
 Slimme beeldverwerking is niet standaard ingeschakeld, omdat hiervoor een gecoördineerde inspanning van u en de technische ondersteuning van Adobe Dynamic Media nodig is. Voor het inschakelen van Smart Imaging moet de CDN-cache volledig worden gewist. Deze cache wordt vervolgens opnieuw gevuld met tijd. Als u in het gebruiken van Slimme Beeldvorming geinteresseerd bent, kunt u met Adobe werken om het te hebben aangezet door een technisch steunkaartje voor te leggen. Technische ondersteuning geeft u vervolgens een URL-parameter waarmee u vooraf slimme beeldverwerking kunt uitproberen. U kunt de presentatie uitproberen op elk van uw webpagina&#39;s of afbeeldingen, zodat u de prestaties en besparingen kunt zien. U kunt SmartImage vervolgens inschakelen voor uw volledige site.
@@ -117,7 +118,7 @@ Wanneer er een video op een pagina, of een hoofdpagina is, neigen uw klanten om 
 
 Om dit probleem op te lossen, biedt Dynamic Media u de mogelijkheid om *Adaptieve videosets*.
 
-![Aangepaste videoset](/help/assets/dynamic-media/assets/dm-adaptive-video.png)
+![Aangepaste videoset](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *Een adaptieve videoset groepeert versies van dezelfde video die met verschillende bitsnelheden en indelingen zijn gecodeerd.*
 
 U begint met uw originele, primaire video, die u in het systeem uploadt. Dynamic Media automatisch vergroten of verkleinen, of *transcodes*, die video in meerdere video&#39;s. Op het moment van levering bepaalt het op intelligente wijze welk videoscherm, welke kwaliteit en welke indeling moet worden gebruikt en levert het aan de telefoon, tablet of desktopcomputer.
