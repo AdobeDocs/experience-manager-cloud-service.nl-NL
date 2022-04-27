@@ -4,9 +4,9 @@ description: Leer hoe te om het Kader van de Integratie van de Vertaling te vorm
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 5ef9ac087ec3feab9c68935b81882451c308daed
+source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1522'
 ht-degree: 0%
 
 ---
@@ -39,8 +39,8 @@ De volgende vertaalverkopers verstrekken een implementatie van AEM API voor vert
 * [Wolken](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
-* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
 Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar tot stand brengen. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een cloudconfiguratie voor de Microsoft Translator-aansluiting raadpleegt u [Integreren met Microsoft Translator](connect-ms-translator.md).
@@ -109,13 +109,7 @@ De eigenschappen van activa bepalen hoe te om activa te vormen. Zie voor meer in
 | Tags vertalen | Activeer deze eigenschap om codes te vertalen die aan het element zijn gekoppeld. |
 | Vertaling automatisch uitvoeren | Selecteer deze eigenschap als u na het maken van vertaalprojecten automatisch vertaaltaken wilt uitvoeren. U hebt geen gelegenheid om de vertaalbaan te herzien of te behandelen wanneer u deze optie selecteert. |
 | Alleen bijwerken uitschakelen | Als deze optie is ingeschakeld, worden bij het bijwerken van het vertaalproject alle vertaalbare velden voor vertaling ingediend, en niet alleen de velden die zijn gewijzigd sinds de laatste vertaling. |
-| Velden van inhoudsmodellen inschakelen voor vertaling* | Als u deze optie inschakelt, wordt de opdracht **Vertaalbaar** veld op [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md#properties) om te bepalen of het veld wordt vertaald. In dit geval: [vertaalregels](rules.md) worden vervangen. |
-
->[!NOTE]
->
->*Deze functie is beschikbaar in het prereleasekanaal.
-> 
->Zie de [Prerelease Channel-documentatie](/help/release-notes/prerelease.md#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen.
+| Velden voor inhoudsmodellen inschakelen voor vertaling | Als u deze optie inschakelt, wordt de opdracht **Vertaalbaar** veld op [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md#properties) bepalen of het veld wordt vertaald en automatisch wordt gemaakt [vertaalregels](rules.md) dienovereenkomstig. Deze optie vervangt de vertaalregels die u hebt gemaakt. |
 
 ## Pagina&#39;s voor omzetting configureren {#configuring-pages-for-translation}
 

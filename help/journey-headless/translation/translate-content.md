@@ -1,35 +1,31 @@
 ---
-title: Inhoud omzetten (AEM zonder kop)
-description: Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen.
+title: Koploze inhoud omzetten
+description: Gebruik de vertaalaansluiting om uw inhoud zonder kop te vertalen.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2177'
 ht-degree: 0%
 
 ---
 
 
-# Inhoud vertalen {#translate-content}
+# Koploze inhoud omzetten {#translate-content}
 
-Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen.
+Gebruik de vertaalaansluiting om uw inhoud zonder kop te vertalen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM zonder kop [Vertaalregels configureren](translation-rules.md) u hebt geleerd hoe u AEM vertaalregels kunt gebruiken om uw vertaalinhoud te identificeren. Nu moet u:
+In het vorige document van de AEM zonder kop [Vertaalaansluiting configureren](configure-connector.md) u leerde over het vertaalkader in AEM. Nu moet u:
 
-* Begrijp wat de vertaalregels doen.
-* U kunt uw eigen vertaalregels definiëren.
+* Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
+* Uw eigen verbinding met uw vertaalservice instellen.
 
-Nu uw schakelaar en vertaalregels opstelling zijn, neemt dit artikel u door de volgende stap van het vertalen van uw inhoud zonder kop.
-
->[!NOTE]
->
->Als u het [Vertaalregels configureren](translation-rules.md) De stap van deze reis omdat u op het pre-releasekanaal van AEM as a Cloud Service bent, te hoeven u zich niet met vertaalregels zoals vermeld in dit document bezig te houden.
+Nu de connector is ingesteld, gaat u met dit artikel door de volgende stap voor het vertalen van inhoud zonder kop.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen hoe te om AEM vertaalprojecten samen met de schakelaar en uw vertaalregels te gebruiken om inhoud te vertalen. Nadat u dit document hebt gelezen, moet u:
+Dit document helpt u begrijpen hoe te om AEM vertaalprojecten samen met de schakelaar te gebruiken om inhoud te vertalen. Nadat u dit document hebt gelezen, moet u:
 
 * Begrijp wat een vertaalproject is.
 * Nieuwe vertaalprojecten kunnen maken.
@@ -130,7 +126,7 @@ Hoe u een vertaalproject gebruikt, hangt af van de manier waarop het is gemaakt:
 
 ### Een automatisch gemaakt vertaalproject gebruiken {#using-automatic-project}
 
-Wanneer het automatisch tot stand brengen van het vertaalproject, evalueert AEM de inhoud zonder kop onder de weg u selecteerde gebaseerd op de vertaalregels die u eerder bepaalde. Op basis van die evaluatie extraheert het de inhoud die vertaald moet worden naar een nieuw vertaalproject.
+Wanneer u het vertaalproject automatisch maakt, beoordeelt AEM de inhoud zonder kop onder het pad dat u hebt geselecteerd. Op basis van die evaluatie extraheert het de inhoud die vertaald moet worden naar een nieuw vertaalproject. Ik weet welke velden moeten worden vertaald op basis van de velden die worden gemarkeerd als **Vertaalbaar** door de inhoudarchitect.
 
 U kunt als volgt de details van de inhoud zonder kop in dit project bekijken:
 

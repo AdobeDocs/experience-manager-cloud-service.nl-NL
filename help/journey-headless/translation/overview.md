@@ -2,9 +2,9 @@
 title: AEM doorlopende vertaalreis
 description: Begin hier voor een begeleide reis door uw inhoud zonder kop te vertalen met AEM krachtige vertaalhulpmiddelen.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1029'
 ht-degree: 1%
 
 ---
@@ -67,9 +67,8 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 | 1 | [Meer informatie over inhoud zonder kop en hoe u deze vertaalt in AEM](learn-about.md) | Ontdek headless-concepten, hoe ze in kaart worden gebracht aan AEM, en de theorie van AEM vertaling. |
 | 2 | [Ga aan de slag met AEM headless vertaling](getting-started.md) | Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken. |
 | 3 | [De vertaalaansluiting configureren](configure-connector.md) | Leer hoe u verbinding AEM maken met een vertaalservice. |
-| 4 | [Vertaalregels configureren](translation-rules.md) | Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren. |
-| 5 | [Inhoud vertalen](translate-content.md) | Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen. |
-| 6 | [Vertaalde inhoud publiceren](publish-content.md) | Leer hoe u uw vertaalde inhoud publiceert en de vertaling bijwerkt wanneer de onderliggende inhoud wordt bijgewerkt. |
+| 4 | [Inhoud vertalen](translate-content.md) | Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen. |
+| 5 | [Vertaalde inhoud publiceren](publish-content.md) | Leer hoe u uw vertaalde inhoud publiceert en de vertaling bijwerkt wanneer de onderliggende inhoud wordt bijgewerkt. |
 
 ## Volgende functies {#what-is-next}
 

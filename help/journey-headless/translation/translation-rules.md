@@ -1,10 +1,10 @@
 ---
-title: Regels voor vertaling configureren (AEM kop)
+title: Vertaalregels configureren voor inhoud zonder kop
 description: Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ Nu uw schakelaar opstelling is, neemt dit artikel u door de volgende stap van he
 
 >[!CAUTION]
 >
->Deze stap van de documentatietraject is alleen nodig als u niet op het pre-releasekanaal van AEM as a Cloud Service bent.
+>Deze stap van de documentatietraject is alleen nodig als u de **Vertaalbaar** markering op inhoudsfragmenten.
 >
->* Als u op het pre-releasekanaal bent, gelieve aan de volgende stap van de reis over te slaan [Inhoud vertalen.](translate-content.md)
->* Als u zich niet op het pre-releasekanaal bevindt, moet u dit document blijven lezen.
->
->Zie de [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over het prereleasekanaal.
+>* De **Vertaalbaar** markering maakt automatisch vertaalregels voor u en vereist geen interventie.
+>* De **Vertaalbaar** de vlag wordt slechts gebruikt als de configuratie van het Kader van de Integratie van de Vertaling wordt geplaatst aan **[Velden inhoudsmodel inschakelen voor vertaling.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* Het toelaten van deze optie in de configuratie van TIF zal om het even welke manueel-gecreeerde vertaalregels vervangen.|
+
 
 ## Doelstelling {#objective}
 
@@ -108,4 +108,3 @@ Gebaseerd op deze kennis en doorgaan met uw AEM doorlopende vertaaltocht door he
 U kunt het beste naar het volgende gedeelte van de reis zonder kop gaan door het document te bekijken [Inhoud vertalen,](translate-content.md) hieronder volgen enkele aanvullende , optionele bronnen die dieper ingaan op bepaalde in dit document genoemde concepten , maar die niet nodig zijn om verder te gaan op de weg zonder kop .
 
 * [Te vertalen inhoud identificeren](/help/sites-cloud/administering/translation/rules.md) - Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.
-* [as a Cloud Service pre-releasekanaal AEM](/help/release-notes/prerelease.md#enable-prerelease) - Leer hoe u zich aanmeldt bij het pre-releasekanaal van AEM as a Cloud Service om nieuwe en toekomstige functies uit te proberen.

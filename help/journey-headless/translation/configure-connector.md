@@ -1,10 +1,10 @@
 ---
-title: De vertaalaansluiting configureren (AEM kop)
+title: De vertaalconnector configureren voor inhoud zonder kop
 description: Leer hoe u verbinding AEM maken met een vertaalservice.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
@@ -101,9 +101,6 @@ Een nieuwe vertaalconfiguratie maken:
    1. **Vertaling automatisch uitvoeren** - Schakel deze eigenschap in als u vertalingen automatisch naar uw vertaalservice wilt verzenden.
    1. **Alleen bijwerken uitschakelen** - Als deze optie is ingeschakeld, worden bij het bijwerken van het vertaalproject alle vertaalbare velden voor vertaling ingediend, en niet alleen de velden die zijn gewijzigd sinds de laatste vertaling. Het bijwerken van uw vertaalproject zal later in de reis worden besproken.
    1. **Velden voor inhoudsmodellen inschakelen voor vertaling** - Schakel deze optie in zodat de vertaalconfiguratie automatisch velden in de inhoudsmodellen herkent die zijn gebaseerd op de **Vertaalbaar** markering.
-      * Indien beschikbaar, moet deze optie worden gecontroleerd om het vertaalproces te vereenvoudigen.
-      * Deze optie is alleen beschikbaar in het prereleasekanaal van AEM as a Cloud Service.
-      * Zie de [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over het prereleasekanaal.
 
 1. Tik of klik op **Opslaan en sluiten**.
 
@@ -135,7 +132,7 @@ Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 * Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
 * Uw eigen verbinding met uw vertaalservice instellen.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM doorlopende vertaaltocht door het document opnieuw te bekijken [Vertaalregels configureren,](translation-rules.md) Hier leert u hoe u definieert welke inhoud u wilt vertalen.
+Gebaseerd op deze kennis en doorgaan met uw AEM doorlopende vertaaltocht door het document opnieuw te bekijken [Inhoud vertalen,](translation-rules.md) waar u zult leren hoe te om uw configuratie tot dusverre te gebruiken om uw inhoud daadwerkelijk te vertalen.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -143,4 +140,3 @@ U kunt het beste naar het volgende gedeelte van de reis zonder kop gaan door het
 
 * [Het framework voor vertaalintegratie configureren](/help/sites-cloud/administering/translation/integration-framework.md) - Een lijst met geselecteerde vertaalconnectors bekijken en leren hoe u het vertaalintegratieframework kunt configureren voor integratie met vertaalservices van derden.
 * [Verbinding maken met Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM levert een Microsoft Translation-account voor testdoeleinden.
-* [as a Cloud Service pre-releasekanaal AEM](/help/release-notes/prerelease.md#enable-prerelease) - Leer hoe u zich aanmeldt bij het pre-releasekanaal van AEM as a Cloud Service om nieuwe en toekomstige functies uit te proberen.
