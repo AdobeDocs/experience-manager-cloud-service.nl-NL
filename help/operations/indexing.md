@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
+source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2420'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ U moet een nieuw indexdefinitiepakket voorbereiden dat de daadwerkelijke indexde
 
 die dan nog verder moeten `ui.apps/src/main/content/jcr_root`. Subhoofdmappen worden op dit moment niet ondersteund.
 
-Het filter voor het pakket moet zo worden ingesteld dat bestaande indexen (out-of-the-box) behouden blijven. Er zijn twee manieren om dit te doen: Het filter is ingesteld op `<filter root="/oak:index/" mode="merge"/>` in het bestand `ui.apps/src/main/content/META-INF/vault/filter.xml`of moet elke aangepaste (of aangepaste) index afzonderlijk worden vermeld in de filtersectie, bijvoorbeeld `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. In het laatste geval moet het filter telkens wanneer de versie wordt gewijzigd, worden aangepast.
+Het filter voor het pakket moet zo worden ingesteld dat bestaande indexen (out-of-the-box) behouden blijven. In het bestand `ui.apps/src/main/content/META-INF/vault/filter.xml`moet elke aangepaste (of aangepaste) index worden vermeld, bijvoorbeeld `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Als de indexversie later wordt gewijzigd, moet het filter worden aangepast.
 
 Het pakket van het bovenstaande voorbeeld is samengesteld als `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
