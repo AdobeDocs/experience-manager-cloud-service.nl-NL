@@ -1,44 +1,36 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.3.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.3.0
+title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.4.0
+description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.4.0
 feature: Release Information
-source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
+source-git-commit: 87e3291b4a72c24fc6cf8df488df305f1a078ea5
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 1%
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
+# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.4.0 {#release-notes}
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.3.0 {#release-notes}
-
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.3.0.
+Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.4.0.
 
 ## Analysator van best practices {#bpa-release}
 
 ### Releasedatum {#release-date-bpa}
 
-De releasedatum voor de analyse van best practices v2.1.26 is 16 maart 2022.
+De releasedatum voor de analyse van best practices v2.1.28 is 22 april 2022.
 
 ### Wat is er nieuw? {#what-is-new-bpa}
 
-* Mogelijkheid om niet-verwerkte activa te detecteren. Als onverwerkte middelen worden ontdekt, moeten deze activa of aan verwerkt worden geplaatst of moeten uit de migratie worden verwijderd die tijdens inhoudstransmissie wordt geplaatst om lopende in kwesties tijdens inhoudsinname te vermijden.
-* Mogelijkheid om te detecteren of inhoud meer dan 1000 vanity-URL&#39;s heeft. Het gebruik van een hoog aantal vanity-URL&#39;s is niet de beste manier, omdat hiermee een laadbewerking wordt uitgevoerd op de servers Dispatcher en Publish.
-* Mogelijkheid om problemen met betrekking tot de definities van de eikenindex te identificeren en incompatibiliteiten met AEM as a Cloud Service vast te stellen.
-* Mogelijkheid om het gebruik van Externalzer-configuraties te detecteren en hierover verslag uit te brengen. In AEM as a Cloud Service configuraties Externalzer worden ingesteld door Cloud Manager. Daarom moeten bestaande configuraties Externalzer worden vernieuwd om de compatibiliteit te behouden.
+* Mogelijkheid om het gebruik van niet-ondersteunde API&#39;s van Asset Manager te detecteren en hierover verslag uit te brengen. Er zijn vier API&#39;s die niet meer worden ondersteund in AEM as a Cloud Service. Klanten moeten ervoor zorgen dat ze deze API&#39;s niet meer gebruiken en moeten de nieuwe methode voor het uploaden van middelen gebruiken.
+
+* Mogelijkheid om het gebruik van sjablonen voor inhoudsfragmenten te detecteren. Sjablonen voor inhoudsfragmenten worden niet meer ondersteund voor het maken van nieuwe inhoudsfragmenten op AEM as a Cloud Service. Klanten moeten contentfragmentmodellen maken om sjablonen voor inhoudsfragmenten te vervangen.
+
+* Mogelijkheid om activa met meer dan 100 afstammingen onder het metadatknooppunt van het actief in de repository te detecteren. Het wordt aanbevolen om metagegevensknooppunten te verwijderen die niet nodig zijn om de prestaties te verbeteren wanneer mappen met dergelijke elementen worden geladen.
+
+* Mogelijkheid om het gebruikte type gegevensopslag te detecteren en te rapporteren.
+
+* Patroon bijgewerkt voor AEM formulierportal.
 
 ### Opgeloste problemen {#bug-fixes-bpa}
 
-* In sommige gevallen kon BPA niet worden uitgevoerd omdat FormsSelectiveFeaturesAnalysis een assertiefout genereerde. Dit is opgelost.
-* BPA rapporteerde bevindingen met betrekking tot het WRK-patroon als MAJOR in plaats van als KRITIEK. Dit is opgelost.
-* BPA rapporteerde onjuist bevindingen met betrekking tot OAK-indexdefinities in ui.apps als CRITICAL. Dit is opgelost.
-
-## De tool Content Transfer {#ctt-release}
-
-### Releasedatum {#release-date-ctt}
-
-De releasedatum voor Content Transfer Tool v1.9.0 is 28 februari 2022.
-
-### Wat is er nieuw? {#what-is-new-ctt}
-
-* Hulplijnen voor grootte controleren - Met de functie voor het controleren van de grootte van het gereedschap Inhoud overbrengen kunt u mislukte overdrachten van inhoud reduceren.  Met de functie Grootte controleren kunnen gebruikers 1) bepalen of ze voldoende schijfruimte hebben in het dialoogvenster `crx-quickstart` subdirectory voor extractie en 2) maak een schatting van de grootte van de migratieset en controleer of deze wordt ondersteund. Als één of beide controles worden geschonden, zullen de gebruikers waarschuwingen in CTT UI zien. Met deze garantie kunt u mislukte inhoudsoverdrachten voorkomen en de migratieopties proactief bespreken met de klantenservice van Adobe. Zie [Grootte en schijfruimte van migratieset bepalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) voor meer informatie .
+* BPA rapporteerde bevindingen voor kerncomponenten in plaats van alleen op klantcomponenten te rapporteren. Dit is opgelost.
