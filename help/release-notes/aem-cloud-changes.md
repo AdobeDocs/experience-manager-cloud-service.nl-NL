@@ -2,9 +2,9 @@
 title: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
 description: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '822'
 ht-degree: 9%
 
 ---
@@ -34,7 +34,7 @@ De belangrijkste verschillen zijn te vinden op de volgende gebieden:
 
 * [/apps en /libs zijn onveranderlijk bij runtime](#apps-libs-immutable)
 
-* [OSGi-bundels en -instellingen moeten zijn gebaseerd op gegevensopslagruimte](#osgi)
+* [OSGi-bundels en -configuraties moeten als code worden behandeld](#osgi)
 
 * [Wijzigingen in publicatieruimte zijn niet toegestaan](#changes-to-publish-repo)
 
@@ -62,12 +62,14 @@ Alle inhoud en submappen in `/apps` en `/libs` is alleen-lezen. Om het even welk
 * MSM de Vervaging en de douaneMSM uitrolconfiguraties moeten van Git via de pijpleiding worden geïnstalleerd CI/CD.
 * I18n vertalingsveranderingen moeten van Git via de CI/CD pijpleiding komen.
 
-## OSGi-bundels en -instellingen moeten zijn gebaseerd op gegevensopslagruimte {#osgi}
+## OSGi-bundels en -configuraties moeten als code worden behandeld {#osgi}
 
-De webconsole, die in vorige versies van AEM werd gebruikt om OSGi-instellingen te wijzigen, is niet beschikbaar in AEM Cloud Service. Daarom moeten wijzigingen in OSGi worden aangebracht via de CI/CD-pijplijn.
+Wijzigingen in OSGi-bundels en -configuraties moeten via de CI/CD-pijplijn worden aangebracht.
 
-* Wijzigingen in OSGi-instellingen kunnen alleen via Git-persistentie worden uitgevoerd als op JCR gebaseerde OSGi-instellingen.
-* Nieuwe of bijgewerkte OSGi-bundels moeten via Git worden geïntroduceerd als onderdeel van het aanlegproces van de CI/CD-pijplijn.
+* Nieuwe of bijgewerkte OSGi-bundels moeten via Git via de CI/CD-pijplijn worden geïntroduceerd.
+* Wijzigingen in OSGi-configuraties kunnen alleen via de CI/CD-leiding van Git komen.
+
+De console van het Web, die in vorige versies van AEM wordt gebruikt om bundels OSGi en configuraties te veranderen, is niet beschikbaar in AEM Cloud Service.
 
 ## Wijzigingen in publicatieruimte zijn niet toegestaan {#changes-to-publish-repo}
 
@@ -114,4 +116,4 @@ Voor project dat van AMS of een op-gebouw Adobe overgaat adviseert sterk leverag
 
 ## Afhandeling en levering van bedrijfsmiddelen {#asset-handling}
 
-Het uploaden, verwerken en downloaden van bedrijfsmiddelen is geoptimaliseerd in [!DNL Experience Manager Assets] als [!DNL Cloud Service]. [!DNL Assets] is nu efficiënter, maakt meer schaling mogelijk en kunt u sneller uploaden en downloaden. Bovendien is dit van invloed op de bestaande aangepaste code en bepaalde bewerkingen. Voor een lijst met wijzigingen en voor pariteit met [!DNL Experience Manager] 6.5-functies, raadpleegt u de [wijzigingen in [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Het uploaden, verwerken en downloaden van bedrijfsmiddelen worden geoptimaliseerd in [!DNL Experience Manager Assets] als [!DNL Cloud Service]. [!DNL Assets] is nu efficiënter, maakt meer schaling mogelijk en kunt u sneller uploaden en downloaden. Bovendien is dit van invloed op de bestaande aangepaste code en bepaalde bewerkingen. Voor een lijst met wijzigingen en voor pariteit met [!DNL Experience Manager] 6.5-functies, raadpleegt u de [wijzigingen in [!DNL Assets]](/help/assets/assets-cloud-changes.md).
