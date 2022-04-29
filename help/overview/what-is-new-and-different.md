@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 84%
+source-wordcount: '1897'
+ht-degree: 81%
 
 ---
 
@@ -171,7 +171,7 @@ Voor bestaande AEM-applicaties die worden uitgevoerd in AEM as a Cloud Service, 
 
 Dit proces wordt meestal &#39;Cloud-first&#39;-ontwikkeling genoemd. Aangezien de &#39;end-to-end&#39; duur naar verwachting minuten in beslag zal nemen (van 20 tot 50, afhankelijk van de complexiteit van de applicatie), is het noodzakelijk om methoden voor snelle ontwikkeling te gebruiken voordat de code en configuratiewijzigingen in de cloud worden uitgeprobeerd.
 
-De webconsole, waar OSGI-bundels en de bijbehorende configuratie worden beheerd en die voorheen deel uitmaakte van de AEM QuickStart, is niet meer rechtstreeks toegankelijk voor gebruikers in een omgeving van AEM as a Cloud Service. Deze interface is in de modus voor alleen-lezen nog toegankelijk door een nieuwe ontwikkelaarsconsole te gebruiken. Met deze console kunnen de ontwikkelaars rechtstreeks elke node van een authoring- of publicatieservice selecteren en zich aanmelden, en vervolgens naar de gebieden gaan die standaard zijn geblokkeerd.
+De console van het Web, waar de bundels OSGI en hun bijbehorende configuratie worden beheerd, en eerder deel van AEM QuickStart, is niet meer beschikbaar in AEM as a Cloud Service. De nieuwe ontwikkelaarsconsole verstrekt een read-only interface voor de meeste runtime informatie. Met deze console, kunnen de ontwikkelaars en login rechtstreeks aan om het even welk bepaald knooppunt van een auteur selecteren of de publicatieservice, en de relevante informatie bekijken.
 
 >[!NOTE]
 >
