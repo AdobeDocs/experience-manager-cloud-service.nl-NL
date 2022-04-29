@@ -1,15 +1,11 @@
 ---
 title: Een gebruiker of groep dynamisch selecteren voor workflowstappen die op AEM Forms zijn gericht
-seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
 description: 'Leer hoe u een gebruiker of groep voor een [!DNL AEM Forms] tijdens de runtime. '
-seo-description: Learn how to select a user or group for an [!DNL AEM Forms] workflow at the runtime.
-uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
-discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -116,9 +112,9 @@ function getAdobeSignRecipients() {
 
 ## Java-interface gebruiken om een gebruiker of groep dynamisch te kiezen {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-U kunt de [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface om dynamisch een gebruiker of groep te kiezen voor [!DNL Adobe Sign] en Taakstappen toewijzen. U kunt een bundel tot stand brengen OSGi die het gebruik gebruikte [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface en implementeer deze in de [!DNL AEM Forms] server. Hiermee maakt u de optie beschikbaar voor selectie in de categorie Taak toewijzen en [!DNL Adobe Sign] componenten van AEM Workflow.
+U kunt de [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface om dynamisch een gebruiker of groep te kiezen voor [!DNL Adobe Sign] en Taakstappen toewijzen. U kunt een bundel tot stand brengen OSGi die het gebruik gebruikte [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface en implementeer deze in de [!DNL AEM Forms] server. Hiermee maakt u de optie beschikbaar voor selectie in de categorie Taak toewijzen en [!DNL Adobe Sign] componenten van AEM Workflow.
 
-U hebt [[!DNL AEM Forms] Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar en [granietjar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden om het hieronder vermelde codevoorbeeld te compileren. Voeg deze jar dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
+U hebt [[!DNL AEM Forms] Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) jar en [granietjar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden om het hieronder vermelde codevoorbeeld te compileren. Voeg deze jar dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
 1. Open Eclipse IDE. Ga naar **[!UICONTROL File]**> **[!UICONTROL New Project]**.
 1. Selecteer in het scherm Selecteer een wizard de optie **[!UICONTROL Maven Project]** en klik op **[!UICONTROL Next]**.
@@ -141,7 +137,7 @@ U hebt [[!DNL AEM Forms] Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-fo
            <repository>
                <id>adobe</id>
                <name>Adobe Public Repository</name>
-               <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+               <url>https://repo1.maven.org/maven2/com/adobe/</url>
                <layout>default</layout>
            </repository>
        </repositories>
@@ -149,7 +145,7 @@ U hebt [[!DNL AEM Forms] Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-fo
            <pluginRepository>
                <id>adobe</id>
                <name>Adobe Public Repository</name>
-               <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+               <url>https://repo1.maven.org/maven2/com/adobe/</url>
                <layout>default</layout>
            </pluginRepository>
        </pluginRepositories>
@@ -225,7 +221,7 @@ U hebt [[!DNL AEM Forms] Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-fo
    </project>
    ```
 
-1. Broncode toevoegen die gebruikt [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface om dynamisch een gebruiker of groep te kiezen voor de taakstap Toewijzen. Zie voor voorbeeldcode [Voorbeeld voor het dynamisch kiezen van een gebruiker of groep met behulp van Java-interface](#-sample-scripts-for).
+1. Broncode toevoegen die gebruikt [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface om dynamisch een gebruiker of groep te kiezen voor de taakstap Toewijzen. Zie voor voorbeeldcode [Voorbeeld voor het dynamisch kiezen van een gebruiker of groep met behulp van Java-interface](#-sample-scripts-for).
 1. Open een bevelherinnering en navigeer aan de folder die het OSGi bundelproject bevat. Gebruik het volgende bevel om de bundel te creëren OSGi:
 
    `mvn clean install`
@@ -349,4 +345,3 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
-
