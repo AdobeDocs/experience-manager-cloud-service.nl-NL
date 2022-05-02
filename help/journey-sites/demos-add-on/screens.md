@@ -2,9 +2,9 @@
 title: AEM Screens inschakelen voor uw demo-site
 description: Leer de stappen om de volledige as a Cloud Service AEM Screens-ervaring op uw demo-site in te schakelen.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2671'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,7 @@ Eerst moet u de inhoud van uw schermdemo publiceren naar AEM Screens as a Cloud 
 
    ![Weergave maken](assets/create-display.png)
 
-1. Nadat u het kanaal hebt gemaakt, klikt u erop om details weer te geven. Aan de weergave moet een kanaal worden toegewezen dat vanuit uw demosite is gesynchroniseerd. Klikken op **Kanaal toewijzen** rechtsboven in het scherm.
+1. Nadat de weergave is gemaakt, klikt u op de naam van de weergave om het scherm met weergavedetails te openen. Aan de weergave moet een kanaal worden toegewezen dat vanuit uw demosite is gesynchroniseerd. Klikken op **Kanaal toewijzen** rechtsboven in het scherm.
 
    ![Kanaaldetails](assets/channel-detail.png)
 
