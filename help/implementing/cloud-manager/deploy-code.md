@@ -2,9 +2,9 @@
 title: Uw code implementeren
 description: Leer hoe u uw code implementeert met gebruik van Cloud Manager-pijpleidingen in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
+source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,18 @@ ht-degree: 0%
 
 # Uw code implementeren {#deploy-your-code}
 
-Leer hoe u uw code implementeert met gebruik van Cloud Manager-pijpleidingen in AEM as a Cloud Service.
+Leer hoe u uw code implementeert in Production met gebruik van Cloud Manager-pijpleidingen in AEM as a Cloud Service.
+
+![Productiepijpdiagram](./assets/configure-pipeline/production-pipeline-diagram.png)
+
+Het naadloos opstellen van code aan Stadium en dan door aan Productie wordt gedaan via een pijpleiding van de Productie. De uitvoering van de productiepijplijn wordt opgedeeld in twee logische fasen.
+
+1. Implementatie in de Stage-omgeving
+   * De code wordt gebouwd en opgesteld aan het milieu van het Stadium voor geautomatiseerde functionele tests, het testen UI, ervaringscontrole, en het testen van de gebruikersaanvaarding (UAT).
+1. Implementatie in productieomgeving
+   * Zodra de bouw op Stadium wordt bevestigd, en voor bevordering aan Productie goedgekeurd, wordt het zelfde bouwstijlfeit opgesteld aan het milieu van de Productie.
+
+_Slechts steunt het Volledige type van de pijpleiding van de Code van de Stapel coderingsaftasten, functie het testen, UI het testen, en ervaringscontrole._
 
 ## Uw code implementeren met Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
