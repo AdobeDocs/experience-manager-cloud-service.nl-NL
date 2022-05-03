@@ -2,10 +2,10 @@
 title: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
 description: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
+source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 9%
+source-wordcount: '846'
+ht-degree: 8%
 
 ---
 
@@ -40,7 +40,7 @@ De belangrijkste verschillen zijn te vinden op de volgende gebieden:
 
 * [Aangepaste runmodi zijn niet toegestaan](#custom-runmodes)
 
-* [Verwijderen van replicatieagents](#replication-agents)
+* [Verwijderen van replicatieagents en gerelateerde wijzigingen](#replication-agents)
 
 * [Verwijderen van klassieke gebruikersinterface](#classic-ui)
 
@@ -96,13 +96,15 @@ De volgende runmodes worden verstrekt uit-van-de-doos voor AEM Cloud Service:
 
 Aanvullende of aangepaste uitvoermodi zijn niet mogelijk in AEM Cloud Service.
 
-## Verwijderen van replicatieagents {#replication-agents}
+## Verwijderen van replicatieagents en gerelateerde wijzigingen {#replication-agents}
 
 In AEM Cloud Service wordt inhoud gepubliceerd met [Distributie van inhoud verkopen](https://sling.apache.org/documentation/bundles/content-distribution.html). De replicatieagenten die in vorige versies van AEM worden gebruikt worden niet meer gebruikt of verstrekt, die de volgende gebieden van bestaande AEM projecten zouden kunnen beïnvloeden:
 
 * Aangepaste workflows die bijvoorbeeld inhoud doorsturen naar replicatieagents van voorvertoningsservers.
 * Aanpassing aan replicatieagenten om inhoud om te zetten
 * De omgekeerde Replicatie gebruiken om inhoud van te brengen terug naar auteur publiceren
+
+Bovendien merk op dat de pauze en onbruikbaar maken knopen uit de console van het replicatieagentenbeleid zijn verwijderd.
 
 ## Verwijderen van klassieke gebruikersinterface {#classic-ui}
 
