@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
+source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
 workflow-type: tm+mt
-source-wordcount: '2640'
+source-wordcount: '2835'
 ht-degree: 0%
 
 ---
@@ -185,7 +185,7 @@ Als u wilt controleren of elementen worden verwerkt, bekijkt u een voorvertoning
 
 In een situatie waarin aanvullende verwerking van elementen vereist is die niet met de verwerkingsprofielen kan worden bereikt, kunnen extra nabewerkingsworkflows aan de configuratie worden toegevoegd. Na de verwerking kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
 
-Indien geconfigureerd, worden workflows na verwerking automatisch uitgevoerd door [!DNL Experience Manager] nadat de verwerking van microservices is voltooid. Het is niet nodig om handmatig starters voor werkstromen toe te voegen om de werkstromen te activeren. De voorbeelden zijn:
+nabewerkingsworkflows, of [Workflow voor automatisch starten](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), indien geconfigureerd, automatisch uitgevoerd door [!DNL Experience Manager] nadat de verwerking van microservices is voltooid. Het is niet nodig om handmatig starters voor werkstromen toe te voegen om de werkstromen te activeren. De voorbeelden zijn:
 
 * Aangepaste workflowstappen om elementen te verwerken.
 * Integraties om metagegevens of eigenschappen toe te voegen aan elementen van externe systemen, bijvoorbeeld product- of procesgegevens.
@@ -233,6 +233,32 @@ U kunt de aangepaste workflowrunnerservice configureren voor de geavanceerde con
 * Workflows na verwerking op expressie (`postProcWorkflowsByExpression`): Meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende reguliere expressies. Expressies en modellen moeten worden gescheiden door een dubbele punt. De reguliere expressie moet rechtstreeks naar het knooppunt Asset verwijzen en niet naar een van de uitvoeringen of bestanden. Bijvoorbeeld: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 Om te weten hoe te om een configuratie op te stellen OSGi, zie [implementeren voor [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
+
+#### Uitvoering van workflow na verwerking uitschakelen
+
+Als naverwerking niet nodig is, maakt en gebruikt u een &quot;leeg&quot; workflowmodel in het dialoogvenster __Workflow automatisch starten__ selectie.
+
+##### Het workflowmodel voor automatisch opstarten van uitgeschakelde systemen maken
+
+1. Navigeren naar __Extra > Workflow > Modellen__
+1. Selecteren __Maken > Model maken__ van de bovenste actiebalk
+1. Geef een titel en naam op voor het nieuwe workflowmodel, bijvoorbeeld:
+   * Titel: Workflow automatisch starten uitschakelen
+   * Naam: disable-auto-start-workflow
+1. Selecteren __Gereed__ om het workflowmodel te maken
+1. __Selecteren__ en __Bewerken__ het nieuwe workflowmodel
+1. Selecteer in de werkstroommodeleditor de optie __Stap 1__ uit de modeldefinitie en deze verwijderen
+1. Open de __Zijpaneel__ en selecteert u __Stappen__
+1. Sleep de __DAM Update Asset Workflow voltooid__ stap in de modeldefinitie
+1. Selecteer __Pagina-informatie__ (naast de knop __Zijpaneel__ schakelen) en selecteren __Eigenschappen openen__
+1. Onder de __Basis__ tab, selecteert u __Tijdelijke workflow__
+1. Selecteren __Opslaan en sluiten__ van de bovenste actiebalk
+1. Selecteren __Synchroniseren__ in de bovenste actiebalk
+1. Sluit de Redacteur van het Model van het Werkschema
+
+##### Het workflowmodel voor automatisch opstarten van uitgeschakelde systemen toepassen
+
+Voer de stappen uit die in [een workflowmodel toepassen op een map](#apply-workflow-model-to-folder) en stelt de __Workflow automatisch starten uitschakelen__ als de __Workflow automatisch starten__ voor mappen hoeft u geen elementen achteraf te verwerken.
 
 ## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
