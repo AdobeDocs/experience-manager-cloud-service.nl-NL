@@ -2,16 +2,22 @@
 title: Hoe te om tot Uw Inhoud via AEM levering APIs toegang te hebben
 description: In dit deel van de AEM Headless Ontwikkelaarsreis, leer hoe te om vragen te gebruiken GraphQL om tot uw inhoud van de Fragmenten van de Inhoud toegang te hebben.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 1%
+source-wordcount: '1410'
+ht-degree: 0%
 
 ---
 
 # Hoe te om tot Uw Inhoud via AEM levering APIs toegang te hebben {#access-your-content}
 
 In dit deel van het [AEM Headless Developer Journey,](overview.md) U kunt leren hoe u query&#39;s kunt gebruiken GraphQL om toegang te krijgen tot de inhoud van uw Content Fragments en deze te verzenden naar uw app (koploze levering).
+
+>[!NOTE]
+>
+>Een deel van de functionaliteit van deze functie is beschikbaar in het prereleasekanaal. Met name functionaliteit met betrekking tot doorlopende query&#39;s.
+> 
+>Zie de [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -242,7 +248,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Voordat u begint met query&#39;s op uw inhoud, moet u:
 
 * Uw eindpunt inschakelen
-   * Gereedschappen gebruiken -> Middelen -> GrafiekQL
+   * Gereedschappen gebruiken -> Algemeen -> GrafiekQL
    * [GrafiekQL-eindpunt inschakelen](/help/headless/graphql-api/graphql-endpoint.md)
 
 * GraphiQL installeren (indien vereist)
@@ -270,9 +276,10 @@ De fragmentmodellen worden gebruikt:
 
 ### Waar kan ik uw query&#39;s testen? {#where-to-test-your-queries}
 
-De vragen kunnen in de interface GraphiQL, bijvoorbeeld bij zijn ingegaan:
+De vragen kunnen in de interface worden ingegaan GraphiQL. U kunt tot de vraagredacteur van één van beiden toegang hebben:
 
-* `http://localhost:4502/aem/graphiql.html`
+* **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
+* rechtstreeks; bijvoorbeeld: `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 

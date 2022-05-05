@@ -1,7 +1,7 @@
 ---
 title: Inrichtingsproces - Overzicht
 description: Inrichtingsproces - Overzicht
-source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
+source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 7%
@@ -31,7 +31,7 @@ Zodra auto-levering volledig is:
 * De beheerder kan gebruikers en rollen voor extra teamleden door de Admin Console toevoegen
 * Rolgebaseerde machtigingen voor gebruikers controleren om machtigingstoewijzingen in Cloud Manager te bepalen
 
-> ![procesoverzicht.jpg](./assets/processOverview.jpg)
+![procesoverzicht.jpg](assets/processOverview.jpg)
 
 
 Ga voor meer informatie naar [Aan boord nemen van Experience Manager as a Cloud Service op Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
@@ -49,7 +49,7 @@ Ga voor meer informatie naar [Aan boord nemen van Experience Manager as a Cloud 
 
 ### 2. Aan boord van organisaties naar Adobe Admin Console:
 
-![procesoverzicht2.jpg](./assets/processOverview2.jpg)
+![procesoverzicht2.jpg](assets/processOverview2.jpg)
 
 * Systeembeheerder:
    * Levering AEM programma&#39;s en omgevingen.
@@ -62,7 +62,7 @@ Ga voor meer informatie naar [Aan boord nemen van Experience Manager as a Cloud 
 
 ### 3. Boordgebruikers en Toegang beheren in Admin Console:
 
-![procesoverzicht3.jpg](./assets/processOverview3.jpg)
+![procesoverzicht3.jpg](assets/processOverview3.jpg)
 
 Afhankelijk van grootte en voorkeur, zijn er drie methoden voor het aan boord hebben van gebruikers:
 * Handmatig gebruikers maken in Admin Console

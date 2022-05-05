@@ -2,9 +2,9 @@
 title: Een API-verzoek maken - headless Setup
 description: Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van inhoudsfragmenten en AEM middelen REST API voor het beheer van inhoudsfragmenten.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,12 @@ ht-degree: 0%
 # Een API-verzoek maken - headless Setup {#accessing-delivering-content-fragments}
 
 Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van inhoudsfragmenten en AEM middelen REST API voor het beheer van inhoudsfragmenten.
+
+>[!NOTE]
+>
+>Een deel van de functionaliteit van deze functie is beschikbaar in het prereleasekanaal. Met name functionaliteit met betrekking tot doorlopende query&#39;s.
+> 
+>Zie de [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen.
 
 ## Wat zijn GraphQL- en Assets REST-API&#39;s? {#what-are-the-apis}
 
@@ -27,7 +33,7 @@ De rest van deze gids zal zich op toegang GraphQL en de levering van het Fragmen
 
 Alvorens GraphQL APIs kan worden gebruikt, moet een eindpunt GraphQL worden gecreeerd.
 
-1. Navigeren naar **Gereedschappen**, **Activa** selecteert u vervolgens **GraphQL**.
+1. Navigeren naar **Gereedschappen**, **Algemeen** selecteert u vervolgens **GraphQL**.
 1. Selecteer **Maken**.
 1. De **Nieuw GraphQL-eindpunt maken** wordt geopend. Hier kunt u opgeven:
    * **Naam**: naam van het eindpunt; U kunt elke gewenste tekst invoeren.
@@ -48,7 +54,11 @@ De architecten van de informatie zullen vragen voor hun kanaaleindpunten moeten 
 GraphiQL is winde die op een AEM milieu kan worden geïnstalleerd. Voer de volgende stappen uit [GraphiQL IDE gebruiken](/help/headless/graphql-api/graphiql-ide.md) om op uw AEM te installeren.
 
 1. Logboek in AEM as a Cloud Service en toegang tot de interface GraphiQL:
-   * Bijvoorbeeld: `https://<host>:<port>/aem/graphiql.html`.
+
+   U kunt tot de vraagredacteur van één van beiden toegang hebben:
+
+   * **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
+   * rechtstreeks; bijvoorbeeld: `http://localhost:4502/aem/graphiql.html`
 
 1. GrahiQL winde is een in-browser vraagredacteur voor GraphQL. U kunt het gebruiken om vragen te bouwen om de Fragmenten van de Inhoud terug te winnen om hen zonder hoofd als JSON te leveren.
    * Met de vervolgkeuzelijst rechtsboven kunt u het eindpunt selecteren.

@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Pagina's publiceren en verwijderen met AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1791'
 ht-degree: 5%
 
 ---
@@ -16,6 +16,10 @@ Wanneer u de inhoud in de ontwerpomgeving hebt gemaakt en gecontroleerd, is het 
 Dit wordt bedoeld als het publiceren van een pagina. Wanneer u een pagina uit het publicatiemilieu wilt verwijderen wordt bedoeld unpublishing. Wanneer u de pagina publiceert en publiceert, blijft deze beschikbaar in de ontwerpomgeving voor verdere wijzigingen totdat u de pagina verwijdert.
 
 U kunt een pagina direct of op een vooraf gedefinieerde datum/tijd publiceren of verwijderen.
+
+>[!NOTE]
+>
+>Het publiceren van een Fragment van de Ervaring volgt hoofdzakelijk de zelfde procedure zoals voor het publiceren van een pagina, hoewel van de console of de redacteur van de Fragmenten van de Ervaring.
 
 ## Terminologie {#terminology}
 

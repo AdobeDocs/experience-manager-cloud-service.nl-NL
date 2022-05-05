@@ -1,9 +1,10 @@
 ---
 title: IMS-configuratie voor gebruik bij integratie met Adobe Analytics
 description: Meer informatie over IMS Configuration voor gebruik bij Integratie met Adobe Analytics
-source-git-commit: 7686329de2ef621f69899e07efa9af16e50a35f9
+exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
+source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '893'
 ht-degree: 1%
 
 ---
@@ -11,12 +12,6 @@ ht-degree: 1%
 # IMS-configuratie voor gebruik bij integratie met Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
 
 Voor de integratie van Adobe Experience Manager as a Cloud Service (AEMaaCS) met Adobe Analytics via de API voor Analytics Standard is de configuratie van Adobe IMS (Identity Management System) vereist. De configuratie wordt gerealiseerd met de Adobe Developer Console.
-
->[!NOTE]
-> 
->Deze functie is beschikbaar in het prereleasekanaal.
->
->Zie de [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen.
 
 >[!NOTE]
 >
@@ -66,11 +61,11 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 
 ## IMS configureren voor Adobe Analytics-integratie met AEM {#configuring-ims-adobe-analytics-integration-with-aem}
 
-Gebruikend de Console van de Ontwikkelaar van de Adobe moet u een Project (integratie) met Adobe Analytics (voor AEM aan gebruik) tot stand brengen, dan wijs de vereiste voorrechten toe.
+U moet met de Adobe Developer-console een project (integratie) maken met Adobe Analytics (voor AEM gebruik) en vervolgens de vereiste rechten toewijzen.
 
 ### Het project maken {#creating-the-project}
 
-Open de Adobe Developer Console om een project met Adobe Analytics te maken dat AEM gebruikt:
+Open de Adobe Developer-console om een project te maken met Adobe Analytics dat AEM gebruiken:
 
 1. Open de Adobe Developer Console voor Projecten:
 
@@ -129,7 +124,7 @@ U moet nu de vereiste rechten toewijzen aan de integratie:
 
 ## Gegevens opgeslagen voor het Adobe Developer Console Integration-project {#details-stored-for-the-ims-integration-project}
 
-Van de Console van de Ontwikkelaar van Adobe - de Projecten kunt u een lijst van al uw integratieprojecten zien:
+Vanuit de Adobe Developer Console - Projecten kunt u een lijst met al uw integratieprojecten zien:
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -153,7 +148,7 @@ Als u terugkeert naar AEM kunt u de IMS-configuratie voltooien door de vereiste 
 1. Terugkeren naar de [IMS-configuratie geopend in AEM](#configuring-ims-generating-a-public-key).
 1. Selecteren **Volgende**.
 
-1. Hier kunt u de [details van de projectconfiguratie in de Console van de Ontwikkelaar van de Adobe](#details-stored-for-the-ims-integration-project):
+1. Hier kunt u de [details van de projectconfiguratie in de Adobe Developer Console](#details-stored-for-the-ims-integration-project):
 
    * **Titel**: Uw tekst.
    * **Autorisatieserver**: Kopieer/plak deze vanuit de `aud` lijn van de **Payload** hieronder, bijvoorbeeld `https://ims-na1.adobelogin.com` in het onderstaande voorbeeld

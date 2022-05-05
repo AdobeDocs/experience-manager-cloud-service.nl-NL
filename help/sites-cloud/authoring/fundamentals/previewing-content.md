@@ -2,9 +2,9 @@
 title: Inhoud voorvertonen
 description: Leer hoe u de AEM voorvertoningsservice gebruikt om inhoud voor te vertonen voordat u live gaat.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e70e6ee055c2542752e66e53aa70a9378b1bc5c0
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ AEM biedt een Sites Preview-service, waarmee ontwikkelaars en makers van inhoud 
 Het vergemakkelijkt het voorvertonen van paginaervaringen die anders niet zichtbaar zouden zijn vanuit de auteursomgeving, zoals paginaovergangen en andere alleen inhoud aan de publiczijde.
 
 Meer informatie over de voorvertoningsomgevingen vindt u in het document [Omgevingen beheren.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
+>[!NOTE]
+>
+>Het publiceren van een Fragment van de Ervaring aan Voorproef volgt eigenlijk de zelfde procedure zoals voor een pagina, hoewel van de console of de redacteur van de Fragmenten van de Ervaring.
 
 ## Inhoud publiceren voor voorvertoning {#publishing-content-to-preview}
 

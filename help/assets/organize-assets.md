@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
+source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -90,12 +90,6 @@ Hieronder vindt u de stappen voor het toevoegen van codes aan een element:
    ![add-tags](assets/add-tags-to-asset.png)
 
 1. Klikken **Opslaan** om de wijzigingen in de metagegevens van de elementen bij te werken.
-
->[!NOTE]
->
->U kunt de codestructuur sorteren terwijl u slimme tags maakt en wanneer u zoekfilters toepast met behulp van de voorspelling van tags.
->
->De functie voor sorteerlabels is beschikbaar in het pre-releasekanaal. Zie [Prerelease Channel-documentatie](/help/release-notes/prerelease.md#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
 
 Raadpleeg de volgende artikelen voor meer informatie:
 

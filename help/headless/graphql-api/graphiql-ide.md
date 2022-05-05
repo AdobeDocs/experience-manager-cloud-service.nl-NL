@@ -3,9 +3,9 @@ title: Het gebruiken van GrahiQL winde in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,10 @@ De **GraphiQL** het hulpmiddel staat u toe om uw vragen te testen en te zuiveren
 * zie **Historie** van uw vorige vragen
 * gebruiken **Documentatieverkenner** toegang tot de documentatie; helpen u te leren en te begrijpen welke methoden beschikbaar zijn.
 
-Bijvoorbeeld:
+U kunt tot de vraagredacteur van één van beiden toegang hebben:
 
-* `http://localhost:4502/aem/graphiql.html`
+* **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
+* rechtstreeks; bijvoorbeeld: `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 

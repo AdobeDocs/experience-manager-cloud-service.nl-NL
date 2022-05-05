@@ -2,10 +2,10 @@
 title: Ervaringsfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 7%
+source-wordcount: '1560'
+ht-degree: 6%
 
 ---
 
@@ -354,6 +354,12 @@ Met de `.plain.` in de URL hebt, kunt u vanuit de browser toegang krijgen tot de
 >[!NOTE]
 >
 >Hoewel dit direct beschikbaar is in de browser, [het primaire doel is om andere toepassingen (bijvoorbeeld webapps van derden, aangepaste mobiele implementaties) rechtstreeks toegang te geven tot de inhoud van het Experience Fragment, waarbij alleen de URL wordt gebruikt](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+
+## Fragmenten voor publicatie-ervaring {#publishing-experience-fragments}
+
+Het publiceren van het fragment van uw ervaring is in feite hetzelfde als [publiceren, pagina&#39;s](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (vanuit de console of editor van de Experience Fragments).
+
+U kunt ook [publiceren naar voorvertoning](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (opnieuw van de console of de redacteur van Fragmenten van de Ervaring).
 
 ## Exporteren van ervaringsfragmenten {#exporting-experience-fragments}
 
