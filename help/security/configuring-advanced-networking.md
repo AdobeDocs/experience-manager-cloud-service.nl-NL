@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 906c8aed146724c1bb18e8031e5dd97f4cf68d25
+source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2964'
 ht-degree: 0%
 
 ---
@@ -70,11 +70,11 @@ De per milieuhaven die regels door:sturen kan opnieuw worden bijgewerkt door opn
 
 ### Het schrappen van of het onbruikbaar maken van de Flexibele Poorten {#deleting-disabling-flexible-port-egress-provision}
 
-Naar **delete** de netwerkinfrastructuur voor een programma, roept *DELETE /program/{program ID}/ netwerkinfrastructuur/{networkInfrastructureID}* Raadpleeg de documentatie van de API voor Cloud Manager voor meer informatie.
+Naar **delete** de netwerkinfrastructuur voor een programma, roept `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
 
 Om **disable** flexibele havenuitgang uit een bepaalde omgeving, aanroepen `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
-Zie voor meer informatie de [Documentatie voor API voor cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Zie voor meer informatie over de API&#39;s de [Documentatie voor API voor cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Verkeer dat {#flexible-port-egress-traffic-routing}
 
