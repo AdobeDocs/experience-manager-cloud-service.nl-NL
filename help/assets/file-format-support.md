@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 1ea99c0eb602fa48674a03e25ee615add425f6af
+source-git-commit: 77cba988368c07438835148d08f1e8cc6e469b7b
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '984'
 ht-degree: 4%
 
 ---
@@ -213,7 +213,11 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PDF (Zie onderstaande opmerking) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+>[!NOTE]
+>
+>Voor beveiligde PDF wordt alleen Uploaden ondersteund.
 
 ## Dynamic Media - Ondersteunde rasterafbeeldingsindelingen {#image-support-dynamic-media}
 
