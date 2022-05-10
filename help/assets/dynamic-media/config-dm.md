@@ -3,9 +3,9 @@ title: Dynamic Media-Cloud Service configureren
 description: Leer hoe u Dynamic Media in Adobe Experience Manager as a Cloud Service configureert.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
 workflow-type: tm+mt
-source-wordcount: '3217'
+source-wordcount: '3228'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. In as a Cloud Service Experience Manager, selecteer het as a Cloud Service embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben.
 1. Selecteer links van de console het pictogram Gereedschappen en ga naar **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. Selecteer in het linkerdeelvenster van de Dynamic Media Configuration Browser-pagina de optie **[!UICONTROL global]** (selecteer het mappictogram niet links van **[!UICONTROL global]**). Selecteer vervolgens **[!UICONTROL Create]**.
-1. Op de **[!UICONTROL Create Dynamic Media Configuration]** Voer een titel, het e-mailadres van de Dynamic Media-account en het wachtwoord in en selecteer vervolgens uw regio. Deze informatie wordt u door Adobe in de levering-e-mail verstrekt. Neem contact op met de klantenondersteuning van Adobe als u dit e-mailbericht niet hebt ontvangen.
+1. Op de **[!UICONTROL Create Dynamic Media Configuration]** Voer de titel, het e-mailadres van de Dynamic Media-account en het wachtwoord van de bedrijfsbeheerder van de Dynamic Media-account in en selecteer vervolgens uw regio. Deze informatie wordt u door Adobe in de levering-e-mail verstrekt. Neem contact op met de klantenondersteuning van Adobe als u dit e-mailbericht niet hebt ontvangen.
 1. Selecteer **[!UICONTROL Connect to Dynamic Media]**.
 1. In de **[!UICONTROL Change Password]** in het dialoogvenster **[!UICONTROL New Password]** voert u een nieuw wachtwoord in dat uit 8-25 tekens bestaat. Het wachtwoord moet ten minste een van de volgende elementen bevatten:
 
@@ -235,7 +235,7 @@ De standaardkleureigenschappen configureren voor het inschakelen van kleurcorrec
 1. Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)Meld u vervolgens aan bij uw account met de aanmeldingsgegevens die tijdens de provisioning zijn opgegeven.
 1. Ga naar **[!UICONTROL Setup > Application Setup]**.
 1. Vouw het gebied **[!UICONTROL Publish Setup]** uit en selecteer **[!UICONTROL Image Server]**. Stel **[!UICONTROL Publish Context]** in op **[!UICONTROL Image Serving]** wanneer u standaardinstellingen voor publicatie-exemplaren instelt.
-1. Naar de eigenschap bladeren die u moet wijzigen, bijvoorbeeld een eigenschap in het dialoogvenster **[!UICONTROL Color Management Attributes]** gebied.
+1. Blader naar de eigenschap die u moet wijzigen, bijvoorbeeld een eigenschap in het dialoogvenster **[!UICONTROL Color Management Attributes]** gebied.
 U kunt de volgende eigenschappen voor kleurcorrectie instellen:
 
    | Eigenschap | Beschrijving |
@@ -282,7 +282,7 @@ Zie [Elementen uploaden](/help/assets/add-assets.md).
 
    * Dubbeltik op de knop **[!UICONTROL enabled]** veld. Standaard zijn alle MIME-elementtypen ingeschakeld (ingesteld op **[!UICONTROL true]**), wat betekent dat de activa voor verwerking naar Dynamic Media worden gesynchroniseerd. Als u dit MIME-type van element wilt uitsluiten van verwerking, wijzigt u deze instelling in **[!UICONTROL false]**.
 
-   * Dubbeltikken **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [Ondersteunde MIME-typen](/help/assets/file-format-support.md) voor een lijst met toegestane waarden voor de verwerkingsparameters kunt u voor een bepaald MIME-type gebruiken.
+   * Dubbeltikken **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [Ondersteunde MIME-typen](/help/assets/file-format-support.md) voor een lijst met toegestane waarden voor de verwerkingsparameters die u kunt gebruiken voor een bepaald MIME-type.
 
 1. Voer een van de volgende handelingen uit:
    * Herhaal stap 3-4 om meer MIME-typen te bewerken.
@@ -292,7 +292,7 @@ Zie [Elementen uploaden](/help/assets/add-assets.md).
 
 #### MIME-typen toevoegen voor niet-ondersteunde indelingen {#adding-mime-types-for-unsupported-formats}
 
-U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Experience Manager Assets. Om ervoor te zorgen dat om het even welk nieuw knooppunt u in CRXDE Lite toevoegt niet door Experience Manager wordt geschrapt, beweeg het MIME type vóór `image_`. Zorg er ook voor dat de ingeschakelde waarde is ingesteld op **[!UICONTROL false]**.
+U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Experience Manager Assets. Om ervoor te zorgen dat nieuwe knooppunten die u in CRXDE Lite toevoegt, niet door Experience Manager worden verwijderd, verplaatst u het MIME-type eerder `image_`. Zorg er ook voor dat de ingeschakelde waarde is ingesteld op **[!UICONTROL false]**.
 
 **MIME-typen toevoegen voor niet-ondersteunde indelingen:**
 
