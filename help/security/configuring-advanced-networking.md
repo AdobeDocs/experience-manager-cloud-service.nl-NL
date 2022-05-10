@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
+source-git-commit: d5d17c554cc0877ebe89710b3ea512355fec2a84
 workflow-type: tm+mt
-source-wordcount: '2964'
+source-wordcount: '2977'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,10 @@ De per milieuhaven die regels door:sturen kan opnieuw worden bijgewerkt door opn
 ### Het schrappen van of het onbruikbaar maken van de Flexibele Poorten {#deleting-disabling-flexible-port-egress-provision}
 
 Naar **delete** de netwerkinfrastructuur voor een programma, roept `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
+
+>[!NOTE]
+>
+> Met Verwijderen wordt de infrastructuur niet verwijderd als er omgevingen zijn waarin de infrastructuur wordt gebruikt.
 
 Om **disable** flexibele havenuitgang uit een bepaalde omgeving, aanroepen `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
