@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: d5d17c554cc0877ebe89710b3ea512355fec2a84
+source-git-commit: 290f75af3da5fb10fadc578163568913be4878df
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '2981'
 ht-degree: 0%
 
 ---
@@ -520,7 +520,7 @@ Het hieronder diagram verstrekt een visuele vertegenwoordiging van een reeks dom
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>IP van verkeer dat van de AEM kant van VPN aan de klantenkant komt. Dit kan in de configuratie van de klant worden gevoegd op lijst van gewenste personen om ervoor te zorgen dat de verbindingen slechts van AEM kunnen worden gemaakt.</td>
-    <td>Als de klant slechts de toegang van VPN tot AEM wil toestaan, zouden zij DNS CNAME ingangen moeten vormen om in kaart te brengen <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>  en/of <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> en dit.</td>
+    <td>Als de klant de toegang van VPN tot AEM wil toestaan, zouden zij DNS CNAME ingangen moeten vormen om hun douanedomein en/of in kaart te brengen <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> en/of <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> en dit.</td>
   </tr>
 </tbody>
 </table>
