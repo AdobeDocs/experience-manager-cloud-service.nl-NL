@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
+source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2535'
 ht-degree: 1%
 
 ---
@@ -64,13 +64,13 @@ Merk op dat zowel de aanpassing van een uit-van-de-doos index, als volledig doua
 
 >[!NOTE]
 >
->Als u een index buiten het vak aanpast, bijvoorbeeld `damAssetLucene-6`, kopieer de meest recente out-of-box-indexdefinitie van een *Cloud Service* ontwikkelomgeving met behulp van CRX DE Package Manager (`/crx/packmgr/`). Wijzig vervolgens de naam van de configuratie, bijvoorbeeld `damAssetLucene-6-custom-1`en voeg uw aanpassingen bovenaan toe. Dit zorgt ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. De `tika` knooppunt onder `/oak:index/damAssetLucene-6/tika` is vereist in de aangepaste index van de cloudservice. Het bestaat niet op de Cloud SDK.
+>Als u een index buiten het vak aanpast, bijvoorbeeld `damAssetLucene-6`, kopieer de meest recente out-of-box-indexdefinitie van een *Cloud Service* met behulp van CRX DE Package Manager (`/crx/packmgr/`). Wijzig vervolgens de naam van de configuratie, bijvoorbeeld `damAssetLucene-6-custom-1`en voeg uw aanpassingen bovenaan toe. Dit zorgt ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. De `tika` knooppunt onder `/oak:index/damAssetLucene-6/tika` is vereist in de aangepaste index van de cloudservice. Het bestaat niet op de Cloud SDK.
 
 U moet een nieuw indexdefinitiepakket voorbereiden dat de daadwerkelijke indexdefinitie bevat, die dit noemingspatroon volgt:
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-die dan nog verder moeten `ui.apps/src/main/content/jcr_root`. Subhoofdmappen worden op dit moment niet ondersteund.
+die dan nog verder moeten `ui.apps/src/main/content/jcr_root`. Alle aangepaste en aangepaste indexdefinities moeten onder `/oak:index`.
 
 Het filter voor het pakket moet zo worden ingesteld dat bestaande indexen (out-of-the-box) behouden blijven. In het bestand `ui.apps/src/main/content/META-INF/vault/filter.xml`moet elke aangepaste (of aangepaste) index worden vermeld, bijvoorbeeld `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Als de indexversie later wordt gewijzigd, moet het filter worden aangepast.
 
@@ -84,15 +84,69 @@ Het pakket van het bovenstaande voorbeeld is samengesteld als `com.adobe.granite
 
 ## Indexdefinities implementeren {#deploying-index-definitions}
 
->[!NOTE]
->
->Er is een bekend probleem met de insteekmodule Jackrabbit FileVult Maven Package **1.1.0.** waardoor u niet kunt toevoegen `oak:index` tot modules van `<packageType>application</packageType>`. U moet een update uitvoeren naar een recentere versie van die plug-in.
-
-Indexdefinities zijn nu gemarkeerd als aangepast en versieingesteld:
+Indexdefinities zijn gemarkeerd als aangepast en versieingesteld:
 
 * De indexdefinitie zelf (bijvoorbeeld `/oak:index/ntBaseLucene-custom-1`)
 
-Daarom om een index op te stellen, de indexdefinitie (`/oak:index/definitionname`) moet worden geleverd via `ui.apps` via Git en het implementatieproces van Cloud Manager.
+Als u een aangepaste of aangepaste index wilt implementeren, wordt de indexdefinitie (`/oak:index/definitionname`) moet worden geleverd via `ui.apps` via Git en het implementatieproces van Cloud Manager. In het FileVault-filter, bijvoorbeeld `ui.apps/src/main/content/META-INF/vault/filter.xml`elke aangepaste en aangepaste index afzonderlijk vermelden, bijvoorbeeld `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. De aangepaste/aangepaste indexdefinitie zelf wordt vervolgens opgeslagen in het bestand `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, als volgt:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="[async,nrt]"
+        compatVersion="{Long}2"
+        ...
+        </indexRules>
+        <tika jcr:primaryType="nt:unstructured">
+            <config.xml jcr:primaryType="nt:file"/>
+        </tika>
+</jcr:root>
+```
+
+Het bovenstaande voorbeeld bevat een configuratie voor Apache Tika. Het Tika-configuratiebestand wordt opgeslagen onder `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+
+### Projectconfiguratie
+
+Afhankelijk van welke versie van de Insteekmodule van het Pakket wordt gebruikt Van het Bestandsindeling van het Pakket van het Jasrabbit wordt Maven, wordt wat meer configuratie in het project vereist. Bij gebruik van de insteekmodule Jackrabbit FileVult Maven Package **1.1.6.** of hoger, dan het bestand `pom.xml` moet de volgende sectie in plug-inconfiguratie bevatten voor de `filevault-package-maven-plugin`, in `configuration/validatorsSettings` (net voor `jackrabbit-nodetypes`):
+
+```xml
+<jackrabbit-packagetype>
+    <options>
+        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+    </options>
+</jackrabbit-packagetype>
+```
+
+In dit geval geldt ook het `vault-validation` De versie moet worden bijgewerkt naar een nieuwere versie:
+
+```xml
+<dependency>
+    <groupId>org.apache.jackrabbit.vault</groupId>
+    <artifactId>vault-validation</artifactId>
+    <version>3.5.6</version>
+</dependency>
+```
+
+Dan, binnen `ui.apps.structure/pom.xml` en `ui.apps/pom.xml`, de configuratie van de `filevault-package-maven-plugin` moet `allowIndexDefinitions` alsmede `noIntermediateSaves` ingeschakeld. De optie `noIntermediateSaves` zorgt ervoor dat de indexconfiguraties automatisch worden toegevoegd.
+
+```xml
+<groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <properties>
+            <cloudManagerTarget>none</cloudManagerTarget>
+            <noIntermediateSaves>true</noIntermediateSaves>
+        </properties>
+    ...
+```
+
+In `ui.apps.structure/pom.xml`de `filters` voor deze insteekmodule moet als volgt een filterhoofdmap bevatten:
+
+```xml
+<filter><root>/oak:index</root></filter>
+```
 
 Nadat de nieuwe indexdefinitie is toegevoegd, moet de nieuwe toepassing worden geïmplementeerd via Cloud Manager. Na de implementatie worden twee taken gestart, die verantwoordelijk zijn voor het toevoegen (en indien nodig samenvoegen) van de indexdefinities aan respectievelijk MongoDB en Azure Segment Store voor auteur en publicatie. De onderliggende repository&#39;s worden opnieuw gedestilleerd met de nieuwe indexdefinities, voordat de Blauw-Groen omschakeling plaatsvindt.
 
