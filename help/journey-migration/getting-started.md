@@ -2,9 +2,9 @@
 title: Aan de slag met de migratiereis om as a Cloud Service te AEM
 description: Start uw migratiereis door uzelf vertrouwd te maken met de basis van de overgang naar AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '587'
 ht-degree: 7%
 
 ---
@@ -35,9 +35,13 @@ De migratiereis naar Cloud Service omvat de volgende fasen:
 * Zodra alles op zijn plaats is, kunt u de migratie met uitvoeren [GoLive-fase](/help/journey-migration/go-live.md)
 * Tot slot moet u controleren op problemen en de prestaties verbeteren nadat de migratie is voltooid, in het dialoogvenster [Fase na introductie](/help/journey-migration/post-go-live.md).
 
-In de onderstaande afbeelding ziet u een afbeelding van de aanbevolen overgang naar AEM as a Cloud Service.
+In onderstaande afbeelding ziet u een hoge weergave van de aanbevolen overgang naar AEM as a Cloud Service.
 
 ![afbeelding](/help/journey-migration/assets/move-aemcloud-process.png)
+
+U kunt ook het onderstaande diagram raadplegen voor een gedetailleerdere, gedetailleerdere weergave van de migratiereis.
+
+![afbeelding](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
