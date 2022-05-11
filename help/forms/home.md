@@ -1,18 +1,18 @@
 ---
 title: Inleiding tot [!DNL AEM Forms] as a Cloud Service
-description: Gebruik dit Platform-as-a-Service (PaaS) om, digitale vormen en bedrijfsprocessen op bedrijfsniveau tot stand te brengen te beheren en te publiceren, evenals vormen met huidige gegevensbronnen aan te sluiten.
+description: Ontdek AEM Forms en leer hoe u hiermee bedrijfsklare documenten en formulierinhoud kunt maken. Leer meer over Platform-as-a-Service (PaaS) en hoe u digitale formulieren en bedrijfsprocessen op bedrijfsniveau beheert en Forms aansluit op huidige gegevensbronnen.
 landing-page-description: Begrijp hoe u formulieren in AEM as a Cloud Service kunt gebruiken.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: fe2f0743d8efaaf9b3fcfc9e20264cca627db6c8
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
 
 # Inleiding {#introduction}
 
-Adobe Experience Manager Forms as a Cloud Service biedt een cloud-native, Platform als service-oplossing (PaaS) voor bedrijven om complexe digitale formulieren te maken, beheren, publiceren en bijwerken, terwijl ingediende gegevens worden geïntegreerd met back-endprocessen, bedrijfsregels en gegevens worden opgeslagen in een externe gegevensopslag. De dienst is altijd huidig, altijd beschikbaar, en altijd het leren.
+Adobe [!DNL Experience Manager Forms as a Cloud Service] biedt bedrijven een oplossing voor cloud-native Platform als service (PaaS) voor het maken, beheren, publiceren en bijwerken van complexe digitale formulieren en het integreren van verzonden gegevens met back-endprocessen, bedrijfsregels en het opslaan van gegevens in een externe gegevensopslag. De dienst is altijd huidig, altijd beschikbaar, en altijd het leren.
 
 Met deze service kunt u interactieve en aantrekkelijke digitale formulieren maken en implementeren. Bijvoorbeeld, neem een organisatie die zijn reis van de klanteninschrijving probeert te digitaliseren. Zij hebben veelvoudige gegevensbronnen met bestaande klantengegevens. Ze willen formulieren vooraf invullen, hun formulieren elektronisch ondertekenen en ingevulde formulieren archiveren als PDF-bestanden. Bovendien heeft de organisatie meerdere afdrukformulieren (PDF forms), maar ze zijn ook op zoek naar het converteren van al hun afdrukformulieren naar digitale formulieren.
 

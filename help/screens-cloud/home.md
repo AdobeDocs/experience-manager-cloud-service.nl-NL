@@ -1,18 +1,18 @@
 ---
 title: AEM Screens as a Cloud Service
-description: Adobe Experience Manager Screens as a Cloud Service zelfhulpbronnen en documentatiekoppelingen
+description: Lees meer over AEM Screens en hoe deze oplossing voor digitale handtekeningen werkt.
 landing-page-description: Begrijp de as a Cloud Service AEM Screens.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 47%
+source-wordcount: '418'
+ht-degree: 46%
 
 ---
 
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-Deze pagina bevat een overzicht van de bronnen voor zelfhulp met betrekking tot as a Cloud Service AEM Screens.
+Deze pagina helpt u meer te begrijpen over AEM Screens en hoe deze oplossing voor digitale handtekeningen werkt. Krijg zelf-hulp middelen en leer over wat nieuw is.
 
 >[!NOTE]
 >Voor AEM Screens met AEM 6.5, zie [AEM Screens-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).

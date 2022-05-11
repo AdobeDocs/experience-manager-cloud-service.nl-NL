@@ -1,18 +1,18 @@
 ---
 title: Compatibiliteit
-description: Deze pagina maakt een lijst van zelfhulp middelen die informatie verstrekken over naleving in as a Cloud Service Experience Manager.
+description: Krijg een overzicht van naleving in as a Cloud Service Experience Manager.
 landing-page-description: Voor een overzicht van de compatibiliteit in AEM als cloudservice, inclusief privacy en toegankelijkheid, kunt u hier beginnen.
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 63%
+source-wordcount: '378'
+ht-degree: 64%
 
 ---
 
 # Naleving van AEM as a Cloud Service {#aem-compliance}
 
-Deze pagina maakt een lijst van zelfhulp middelen die informatie verstrekken over naleving in as a Cloud Service Experience Manager.
+Krijg een overzicht van naleving in as a Cloud Service Experience Manager.
 
 ## Belangrijke overzichtsartikelen {#key-articles}
 

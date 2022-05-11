@@ -1,20 +1,20 @@
 ---
-title: '"[!DNL Assets] als [!DNL Cloud Service] Hulplijn"'
-description: '"[!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service] zelfhulp bronnen en documentatiekoppelingen"'
+title: as a Cloud Service hulplijn voor middelen
+description: Meer informatie over as a Cloud Service middelen en meer informatie over nieuwe functies.
 landing-page-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 25%
+source-wordcount: '293'
+ht-degree: 24%
 
 ---
 
-# [!DNL Assets] als [!DNL Cloud Service] Hulplijn {#aem-assets-guide}
+# [!DNL Assets as a Cloud Service] hulplijn {#aem-assets-guide}
 
-De volgende middelen van de zelfhulp zijn beschikbaar voor [!DNL Experience Manager Assets] als [!DNL Cloud Service].
+Meer informatie over [!DNL AEM Assets as a Cloud Service] en wordt bijgewerkt op wat nieuw is.
 
 ## Sleutel [!DNL Assets] artikelen {#key-articles}
 

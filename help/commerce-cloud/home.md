@@ -1,18 +1,18 @@
 ---
 title: AEM Inhoud en Handel
-description: De zelfhulp van de Inhoud en van de Handel middelen en documentatiekoppelingen AEM
+description: Begrijp hoe te om de Inhoud en de Handel van de Experience Manager as a Cloud Service te gebruiken en te beheren.
 landing-page-description: Begrijp hoe te om de Inhoud en de Handel van de Experience Manager as a Cloud Service te gebruiken en te beheren.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 54%
+source-wordcount: '367'
+ht-degree: 52%
 
 ---
 
 # AEM Inhoud en Handel {#commerce-guide}
 
-Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Inhoud en Handel.
+Begrijp hoe te om de Inhoud en de Handel van de Experience Manager as a Cloud Service te gebruiken en te beheren.
 
 >[!NOTE]
 >
