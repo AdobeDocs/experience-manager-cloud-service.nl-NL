@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 290f75af3da5fb10fadc578163568913be4878df
+source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
 workflow-type: tm+mt
-source-wordcount: '2981'
+source-wordcount: '3053'
 ht-degree: 0%
 
 ---
@@ -68,13 +68,7 @@ De configuratie op programmaniveau kan worden bijgewerkt door de `PUT /api/progr
 
 De per milieuhaven die regels door:sturen kan opnieuw worden bijgewerkt door opnieuw het aanhalen van `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` eindpunt, ervoor zorgen om de volledige reeks configuratieparameters, eerder dan een ondergroep te omvatten.
 
-### Het schrappen van of het onbruikbaar maken van de Flexibele Poorten {#deleting-disabling-flexible-port-egress-provision}
-
-Naar **delete** de netwerkinfrastructuur voor een programma, roept `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
-
->[!NOTE]
->
-> Met Verwijderen wordt de infrastructuur niet verwijderd als er omgevingen zijn waarin de infrastructuur wordt gebruikt.
+### Flexibele poortuitgang uitschakelen {#disabling-flexible-port-egress-provision}
 
 Om **disable** flexibele havenuitgang uit een bepaalde omgeving, aanroepen `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
@@ -206,6 +200,12 @@ Het belangrijkste verschil is dat het verkeer altijd van specifieke, unieke IP z
 Naast de verpletterende regels die door flexibele havenuitgang in worden gesteund `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` eindpunt, specifiek uitgangIP adres steunt a `nonProxyHosts` parameter. Dit staat u toe om een reeks gastheren te verklaren die door een gedeelde IPs adreswaaier eerder dan specifieke IP zou moeten leiden, die nuttig kan zijn aangezien het verkeer dat door gedeelde IPs wordt behandeld verder kan worden geoptimaliseerd. De `nonProxyHost` URL&#39;s kunnen de patronen volgen van `example.com` of `*.example.com`, waarbij het jokerteken alleen wordt ondersteund aan het begin van het domein.
 
 Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres, zouden de klanten flexibele havenuitgang moeten kiezen als een specifiek IP adres niet wordt vereist aangezien Adobe prestaties van flexibel havenuitgang verkeer kan optimaliseren.
+
+### Het onbruikbaar maken van toegewezen IP van de Eis Adres {#disabling-dedicated-egress-IP-address}
+
+Om **disable** Het specifieke IP van de Eis Adres van een bepaald milieu, haalt aan `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+
+Zie voor meer informatie over de API&#39;s de [Documentatie voor API voor cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Verkeer dat {#dedcated-egress-ip-traffic-routing}
 
@@ -397,9 +397,7 @@ Merk op dat de adresruimte niet na de aanvankelijke levering van VPN kan worden 
 
 Het per-milieu dat regels verplettert kan worden bijgewerkt door opnieuw het aanhalen van `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` eindpunt, ervoor zorgen om de volledige reeks configuratieparameter, eerder dan een ondergroep te omvatten. Het duurt doorgaans 5 tot 10 minuten om omgevingsupdates toe te passen.
 
-### Het schrappen van of het onbruikbaar maken van VPN {#deleting-or-disabling-the-vpn}
-
-Om de netwerkinfrastructuur te schrappen, leg een kaartje van de klantensteun voor, beschrijvend wat is gecreeerd en waarom het moet worden geschrapt.
+### Het onbruikbaar maken van VPN {#disabling-the-vpn}
 
 Om VPN voor een bepaald milieu onbruikbaar te maken, roep aan `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`. Meer informatie in het [API-documentatie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -540,6 +538,25 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
+## De netwerkinfrastructuur van een programma verwijderen {#deleting-network-infrastructure}
+
+Naar **delete** de netwerkinfrastructuur voor een programma, roept `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+
+>[!NOTE]
+>
+> Met Verwijderen wordt de infrastructuur alleen verwijderd als de geavanceerde netwerken van alle omgevingen zijn uitgeschakeld.
+
 ## Overgang tussen de Geavanceerde Types van Voorzien van een netwerk {#transitioning-between-advanced-networking-types}
 
-Aangezien `kind` parameter kan niet worden gewijzigd. Neem contact op met de klantenondersteuning voor assistentie en beschrijf wat er al is gemaakt en de reden voor de wijziging.
+Het is mogelijk om tussen geavanceerde voorzien van een netwerktypes te migreren door de volgende procedure te volgen:
+
+* geavanceerd netwerken in alle omgevingen uitschakelen
+* verwijder de geavanceerde netwerkinfrastructuur
+* ontspant de geavanceerde voorzien van een netwerkinfras met de correcte waarden
+* geavanceerde netwerken op milieuniveau herstellen
+
+>[!WARNING]
+>
+> Deze procedure zal in een onderbreking van de geavanceerde voorzien van een netwerkdiensten tussen schrapping en recreatie resulteren
+
+Als de onderbreking significante bedrijfsgevolgen zou veroorzaken, contacteer klantensteun voor hulp, beschrijvend wat reeds is gecreeerd en de reden voor de verandering.
