@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.12.0
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2021.12.0.
 feature: Release Information
-source-git-commit: e402578fc95fd97f808fde01a860d4c583af4c9b
+source-git-commit: bd31dc0ca5b0f4cd84314dba67c8a611f490d377
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Deze pagina bevat een overzicht van de opmerkingen bij de release voor Cloud Man
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.12.0 is 16 december 2021. De volgende release is gepland voor januari 2022.
+De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.12.0 is 16 december 2021. De volgende release is gepland voor 20 januari 2022.
 
 ## Wat is er nieuw? {#what-is-new}
 
