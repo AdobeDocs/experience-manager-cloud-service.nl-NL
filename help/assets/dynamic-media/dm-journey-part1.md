@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '3582'
+source-wordcount: '3705'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Het publiek dat het beste past bij de lezers van deze reis zijn de volgende pers
 
 >[!TIP]
 >
->Voor de beste resultaten raadt Adobe u aan de Dynamic Media-reis op een desktopcomputer te lezen en weer te geven.
+>Voor de beste resultaten raadt Adobe u aan deze Dynamic Media-reis op een desktopcomputer te lezen en weer te geven.
 
 ## Wat is Dynamic Media en hoe kan het u helpen? {#dm-journey-a}
 
@@ -249,44 +249,50 @@ Nadat u elementen hebt geüpload naar Dynamic Media, is het aan te raden _publis
 
 Naast het handmatig publiceren van middelen kunt u Dynamic Media zodanig configureren dat u direct elementen publiceert - zonder tussenkomst van de gebruiker - op het moment van uploaden.
 
-Na het uploaden zijn er verschillende manieren om een voorvertoning van de uitvoeringen van een element weer te geven in Dynamic Media. Voorvertoning van uitvoeringen kan u helpen een idee te krijgen van wat een klant ziet. Een algemene voorbeeldmethode is om een element te selecteren en vervolgens de bijbehorende uitvoeringen te bekijken door een *voorinstelling afbeelding* zoals hieronder weergegeven.
+Na het uploaden zijn er verschillende manieren om een voorvertoning van de uitvoeringen van een element weer te geven in Dynamic Media. Voorvertoning van uitvoeringen kan u helpen een idee te krijgen van wat een klant ziet. Een algemene voorbeeldmethode is om een element te selecteren en vervolgens de bijbehorende uitvoeringen te bekijken door een _voorinstelling afbeelding_ zoals hieronder weergegeven.
 
 ![Een voorvertoning weergeven van een element op basis van de voorinstelling Grote afbeelding](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Een voorvertoning weergeven van een uitvoering van een element op basis van de geselecteerde voorinstelling voor &quot;Grote&quot; afbeeldingen. Er is op de knop URL geklikt. Het resulterende URL-pad bevat de naam van de &quot;Grote&quot; afbeeldingsvoorinstelling en kan in een webpagina worden gebruikt._
 
 Bovenstaande URL is live! [Probeer het](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
 
-Een andere methode om een voorvertoning van een element weer te geven, is het selecteren van het afbeeldingselement en vervolgens het selecteren van een *Viewers* zoals in het volgende wordt getoond.
+Een andere methode om een voorvertoning van een element weer te geven, is het selecteren van het afbeeldingselement en vervolgens het selecteren van een _Viewers_ zoals in het volgende wordt getoond.
 
 ![Een voorvertoning weergeven van een element op basis van de voorinstelling voor de weergave Verticaal licht zoomen](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Een voorvertoning weergeven van een element op basis van de geselecteerde voorinstelling voor de viewer &quot;ZoomVertical_light&quot;. De muisaanwijzer (`+`) is over het horloge verplaatst om in te zoomen. Let op de knoppen URL en Insluiten._
 
 De bovenstaande vertoning is live! [Probeer het](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
 
-Laten we deze URL&#39;s wat dichterbij bekijken zodat u beter begrijpt wat er aan de hand is. Neem me mee naar [Dynamic Media-reis: Basisbeginselen, Deel II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+## Optioneel - Meer informatie
 
-## Meer informatie
+Deel I van deze reis ging over de grondbeginselen van een verscheidenheid aan Dynamic Media-onderwerpen. Als je meer wilt weten over wat je net leest, gebruik dan de onderstaande materialen om meer in detail concepten te verkennen. Anders kunt u doorgaan met deel II van uw reis. Zie [Hoe verder in deze Dynamic Media-reis](#whats-next).
 
-_Dynamic Media-onderwerpen_
+_Dynamic Media Help-onderwerpen_
 
-* [Werken met Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
+* [Werken met Dynamic Media in Experience Manager](/help/assets/dynamic-media/dynamic-media.md)
 * [Slimme afbeeldingen](/help/assets/dynamic-media/imaging-faq.md)
-* [Adaptieve videosets](/help/assets/dynamic-media/video.md)
+* [Aangepaste videosets maken](/help/assets/dynamic-media/video.md)
 * [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Elementen uploaden](/help/assets/add-assets.md#upload-assets)
 * [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md)
-* [3D-elementen voorvertonen](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Dynamic Media-middelen leveren](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [Een voorvertoning weergeven van 3D-elementen](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Dynamic Media Assets leveren](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [Werken met Selectieve publicatie in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
 
 _Dynamic Media-zelfstudies_
 
 * [Dynamic Media gebruiken met Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager-inhoudsbibliotheek](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (zoek op *Dynamic Media*)
+* [Adobe Experience Manager-inhoudsbibliotheek](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (zoek op _Dynamic Media_)
 
 _Dynamic Media-viewers_
 
-* [Live demo&#39;s](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [Live demo&#39;s](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) van elke viewer
+
+## Hoe verder in deze Dynamic Media-reis {#whats-next}
+
+In deel II van deze reis, zult u Dynamic Media URLs een wat dichterbij bekijken om beter te begrijpen wat aan de hand is wanneer een activa wordt geleverd. U leert ook meer over de grondbeginselen van het maken van voorinstellingen voor afbeeldingen om elementen te renderen, en meer over Afbeeldingssets, Spin-sets en Gemengde-mediasets en hoe deze worden gemaakt.
+
+Neem me mee naar [Dynamic Media-reis: Basisbeginselen, Deel II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

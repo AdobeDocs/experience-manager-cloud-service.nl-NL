@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2847'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Zie ook [Dynamic Media Journey; Basisbeginselen, Deel I](/help/assets/dynamic-me
 
 >[!TIP]
 >
->Voor de beste resultaten raadt Adobe u aan de Dynamic Media-reis op een desktopcomputer te lezen en weer te geven.
+>Voor de beste resultaten raadt Adobe u aan deze Dynamic Media-reis op een desktopcomputer te lezen en weer te geven.
 
 ## Anatomie van een Dynamic Media URL en hoe Dynamic Media inhoud levert {#dm-journey-d}
 
@@ -43,7 +43,7 @@ Het eerste deel van de rode URL verwijst naar het serverdomein zelf. In dit geva
 
 De accountnaam is het gedeelte in paars. In dit geval wordt de account aangeroepen `jpearldemo`.
 
-De ID of naam van het element `AdobeStock_28563982` is groen. Merk op dat het element *nee* bestandsextensie zoals `.png` of `.jpg`. Wanneer middelen in Dynamic Media worden opgenomen, wordt de bestandsextensie verwijderd en wordt een ander type bestand gemaakt: een piramid-TIFF-bestand. Met de piramic-TIFF kan Dynamic Media snel uitvoeringen maken.
+De ID of naam van het element `AdobeStock_28563982` is groen. Merk op dat het element _nee_ bestandsextensie zoals `.png` of `.jpg`. Wanneer middelen in Dynamic Media worden opgenomen, wordt de bestandsextensie verwijderd en wordt een ander type bestand gemaakt: een piramid-TIFF-bestand. Met de piramic-TIFF kan Dynamic Media snel uitvoeringen maken.
 
 Tot slot zijn er enkele parameters voor beeldverwerking. `?wid=1000&fmt=jpeg&qlt=85`geel aan het uiteinde.
 
@@ -68,7 +68,7 @@ Voeg nu een rotatieparameter toe aan de gecontroleerde afbeelding. En het einde 
 
 Het horloge wordt nog steeds enigszins schuingetrokken naar links. De rotatiewaarde wijzigen van `90` tot `92`en drukt u vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)
 
-Nogmaals, het moment waarop u drukt **[!UICONTROL Enter]** Er wordt bijna onmiddellijk een nieuwe uitvoering van het horloge gegenereerd. U kunt zien wat voor prestaties u krijgt, wat verklaart waarom Dynamic Media meer dan 800.000 afbeeldingsverzoeken kan indienen, *per seconde*, op een druk weekend of een grote vakantie.
+Nogmaals, het moment waarop u drukt **[!UICONTROL Enter]** Er wordt bijna onmiddellijk een nieuwe uitvoering van het horloge gegenereerd. U kunt zien wat voor prestaties u krijgt, wat verklaart waarom Dynamic Media meer dan 800.000 afbeeldingsverzoeken kan indienen, _per seconde_, op een druk weekend of een grote vakantie.
 
 Hoewel het mogelijk is de parameters voor afbeeldingsverwerking in een URL per afbeelding te wijzigen, is dit geen efficiënte methode, vooral niet als u tienduizenden afbeeldingen op uw website hebt staan. Een veel betere aanpak is het gebruik van voorinstellingen voor afbeeldingen.
 
@@ -204,17 +204,19 @@ U leest gewoon wat over sets afbeeldingen en viewers. Laten we naar een paar and
 * `ZoomVertical_dark` viewer toegepast op een afbeeldingselement. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark).
 * `Zoom_light` viewer die op een afbeelding is toegepast. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light).
 
-## Meer informatie
+## Optioneel - Meer informatie
 
-_Dynamic Media-onderwerpen_
+Als je meer wilt weten over wat je net leest, gebruik dan de onderstaande materialen om meer in detail concepten te verkennen. Anders is de Dynamic Media-reis voltooid!
+
+_Dynamic Media Help-onderwerpen_
 
 * [Voorinstellingen voor afbeeldingen maken](/help/assets/dynamic-media/image-presets.md)
 * Een lijst van [parameters voor beeldverwerking](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) die u kunt gebruiken in het veld Afbeeldingsmodifier wanneer u een voorinstelling voor een afbeelding maakt
 * [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md)
-* [3D-elementen voorvertonen](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Afbeeldingssets](/help/assets/dynamic-media/image-sets.md)
-* [Sets draaien](/help/assets/dynamic-media/spin-sets.md)
-* [Gemengde mediasets](/help/assets/dynamic-media/mixed-media-sets.md)
+* [Een voorvertoning weergeven van 3D-elementen](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Afbeeldingssets maken](/help/assets/dynamic-media/image-sets.md)
+* [Spin-sets maken](/help/assets/dynamic-media/spin-sets.md)
+* [Gemengde mediasets maken](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Dynamic Media-zelfstudies_
 
@@ -223,6 +225,6 @@ _Dynamic Media-zelfstudies_
 
 _Dynamic Media-viewers_
 
-* [Live demo&#39;s](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [Live demo&#39;s](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) van elke viewer
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
