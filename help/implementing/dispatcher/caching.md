@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: 'Caching in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
+source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1960'
 ht-degree: 0%
 
 ---
@@ -181,6 +181,10 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
          Header set Age 0
       </LocationMatch>
       ```
+
+### HEAD-aanvraaggedrag {#request-behavior}
+
+Wanneer een verzoek van HEAD bij Adobe CDN voor een middel wordt ontvangen dat **niet** in cache wordt geplaatst, wordt het verzoek getransformeerd en door de verzender en/of AEM instantie ontvangen als een GET- verzoek. Als de reactie cacheable is dan zullen de verdere verzoeken van HEAD van CDN worden gediend. Als de reactie niet in cache kan worden geplaatst, worden de volgende HEAD-aanvragen doorgegeven aan de verzender en/of AEM instantie gedurende een periode die afhankelijk is van de `Cache-Control` TTL.
 
 ## Ongeldige validatie van cache-verzending {#disp}
 
