@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f5282d149e80328742ff9008441960f62cea6290
+source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1790'
 ht-degree: 1%
 
 ---
@@ -167,6 +167,8 @@ Nadat alle delen van een binair dossier worden geupload, leg een verzoek van de 
 | `versionLabel` | Tekenreeks | Optioneel | Als er een nieuwe versie wordt gemaakt, wordt het label gekoppeld aan de nieuwe versie van een element. |
 | `versionComment` | Tekenreeks | Optioneel | Als er een nieuwe versie wordt gemaakt, worden de opmerkingen gekoppeld aan de versie. |
 | `replace` | Boolean | Optioneel | Indien `True` en er een element met de opgegeven naam bestaat, [!DNL Experience Manager] Hiermee verwijdert u het element en maakt u het opnieuw. |
+| `uploadDuration` | Getal | Optioneel | De totale hoeveelheid tijd, in milliseconden, voor het dossier om in zijn geheel te uploaden. Indien opgegeven, wordt de uploadduur opgenomen in de logbestanden van het systeem voor de analyse van de overdrachtssnelheid. |
+| `fileSize` | Getal | Optioneel | De grootte van het bestand, in bytes. Indien opgegeven, wordt de bestandsgrootte opgenomen in de logbestanden van het systeem voor de analyse van de overdrachtssnelheid. |
 
 >[!NOTE]
 Als het element bestaat en beide `createVersion` noch `replace` wordt opgegeven, dan [!DNL Experience Manager] werkt de huidige versie van het element met het nieuwe binaire getal bij.
