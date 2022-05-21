@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
+source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
 workflow-type: tm+mt
-source-wordcount: '3658'
+source-wordcount: '3651'
 ht-degree: 14%
 
 ---
@@ -47,7 +47,7 @@ Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
 Auteurs zoeken naar afbeeldingen en de volgende typen documenten in de Inhoudszoeker en slepen de gezochte elementen in de Pagina-editor. Documenten worden toegevoegd aan de `Download` en afbeeldingen naar de `Image` component. Auteurs kunnen de externe elementen ook toevoegen in aangepaste [!DNL Experience Manager] component die de standaardwaarde uitbreidt `Download` of `Image` componenten. De ondersteunde indelingen zijn:
 
-* **Afbeeldingsindelingen**: De notaties die de [Afbeeldingscomponent](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) ondersteunt.
+* **Afbeeldingsindelingen**: De notaties die de [Afbeeldingscomponent](file-format-support.md#image-formats) ondersteunt.
 * **Documentindelingen**: Zie de [ondersteunde documentindelingen](file-format-support.md#document-formats).
 
 ### Betrokken gebruikers en groepen {#users-and-groups-involved}
