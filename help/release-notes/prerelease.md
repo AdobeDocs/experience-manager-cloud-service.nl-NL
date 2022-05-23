@@ -2,9 +2,9 @@
 title: '"[!DNL Adobe Experience Manager] as a Cloud Service prerelease-kanaal"'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service prerelease-kanaal"'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -29,28 +29,41 @@ De pre-releasefuncties kunnen op verschillende manieren worden ervaren:
 
 ### Cloud-omgevingen {#cloud-environments}
 
-Om nieuwe eigenschappen in de console van Plaatsen op wolkendev milieu&#39;s evenals het resultaat van om het even welke projectaanpassingen te zien:
+Als u een Cloud-omgeving wilt bijwerken zodat deze de prerelease kan gebruiken, voegt u een nieuwe [omgevingsvariabele](../implementing/cloud-manager/environment-variables.md) met de interface Environment Configuration in Cloud Manager:
 
-* Met de [Het eindpunt van de omgevingsvariabelen van de API voor cloudbeheer](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)stelt u de **AEM_RELEASE_CHANNEL** omgevingsvariabele voor de waarde **prerelease**.
+1. Ga naar de **Programma** > **Omgeving** > **Omgevingsconfiguratie** wilt bijwerken.
+1. Een nieuwe toevoegen [omgevingsvariabele](../implementing/cloud-manager/environment-variables.md):
 
-```
-PATCH /program/{programId}/environment/{environmentId}/variables
-[
-        {
-                "name" : "AEM_RELEASE_CHANNEL",
-                "value" : "prerelease",
-                "type" : "string"
-        }
-]
-```
+   | Naam | Waarde | Toegepaste service | Type |
+   |------|-------|-----------------|------|
+   | `AEM_RELEASE_CHANNEL` | `prerelease` | Alles | Variabele |
 
-De CLI van Cloud Manager kan ook worden gebruikt, volgens de instructies op [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
-```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+1. Sla de wijzigingen op en vernieuw de omgeving met ingeschakelde prerelease-functieschakelingen.
+
+   ![Nieuwe omgevingsvariabele](assets/env-configuration-prerelease.png)
 
 
-De variabele kan worden verwijderd of op een andere waarde worden ingesteld als u wilt dat de omgeving wordt hersteld naar het gedrag van het gewone (niet-pre-releasekanaal) kanaal
+**Alternatief** u kunt de API en CLI van de Manager van de Wolk gebruiken om de milieuvariabelen bij te werken:
 
-* U kunt ook omgevingsvariabelen configureren vanuit de [Gebruikersinterface van Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+* Gebruiken [Het eindpunt van de omgevingsvariabelen van de API voor cloudbeheer](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)stelt u de **AEM_RELEASE_CHANNEL** omgevingsvariabele voor de waarde **prerelease**.
+
+   ```
+   PATCH /program/{programId}/environment/{environmentId}/variables
+   [
+           {
+                   "name" : "AEM_RELEASE_CHANNEL",
+                   "value" : "prerelease",
+                   "type" : "string"
+           }
+   ]
+   ```
+
+* De CLI van Cloud Manager kan ook worden gebruikt, volgens de instructies op [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
+
+   ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+
+
+De variabele kan worden verwijderd of op een andere waarde worden ingesteld als u wilt dat de omgeving wordt hersteld naar het gedrag van het gewone (niet-pre-)releasekanaal.
 
 ### Lokale SDK {#local-sdk}
 
