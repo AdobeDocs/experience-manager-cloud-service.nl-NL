@@ -2,9 +2,9 @@
 title: 'Registratie, aanmelding en gebruikersprofiel '
 description: Meer informatie over registratie, aanmelding, gebruikersgegevens en groepssynchronisatie voor AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
+source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ De klanten kunnen op SAML-Gebaseerde authentificatie via hun aangewezen SAML IdP
 >
 >Alleen de initiële verificatie van de gebruikersgegevens wordt geverifieerd door de IdP en volgende aanvragen om AEM worden uitgevoerd met behulp van een AEM token, zolang het cookie beschikbaar is.
 
-Zie de documentatie voor meer informatie over [SAML 2.0-verificatiehandler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=en#saml-authentication-handler).
+Zie de documentatie voor meer informatie over [SAML 2.0-verificatiehandler](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
 
 **OAuth/SSO**
 
