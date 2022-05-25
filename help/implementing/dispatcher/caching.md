@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: 'Caching in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
+source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '2183'
 ht-degree: 0%
 
 ---
@@ -83,31 +83,42 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
 * door gebruik te maken van AEM clientbibliotheekframework worden JavaScript- en CSS-code zodanig gegenereerd dat browsers deze oneindig in cache kunnen plaatsen, aangezien elke wijziging zich voordoet als nieuwe bestanden met een uniek pad.  Met andere woorden, HTML dat verwijzingen de cliëntbibliotheken zullen worden geproduceerd zoals nodig zodat de klanten nieuwe inhoud kunnen ervaren aangezien het wordt gepubliceerd. Het cache-control wordt ingesteld op &#39;onveranderlijk&#39; of op 30 dagen voor oudere browsers die de waarde &#39;onveranderlijk&#39; niet respecteren.
 * zie de sectie [Bibliotheken aan de clientzijde en consistentie van versies](#content-consistency) voor meer informatie.
 
-### Afbeeldingen en inhoud die groot genoeg is en in blokopslag is opgeslagen {#images}
+### Afbeeldingen en inhoud die groot genoeg is om in blokopslag te worden opgeslagen {#images}
 
-* standaard niet in cache geplaatst
-* kan op een fijner korrelig niveau worden ingesteld door de volgende pijn `mod_headers` richtlijnen:
+Het standaardgedrag voor programma&#39;s die na medio mei 2022 worden gemaakt (met name voor programma-id&#39;s van meer dan 65000), is standaard in cache plaatsen, terwijl ook de verificatiecontext van het verzoek wordt gerespecteerd. Oudere programma&#39;s (programma-id&#39;s van 65000 of lager) plaatsen standaard geen blob-inhoud in de cache.
 
-   ```
-      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
-        Header set Cache-Control "max-age=222"
-        Header set Age 0
-      </LocationMatch>
-   ```
+In beide gevallen kunnen de in de cache geplaatste koppen op een fijnere korreligheid in de apache/verzender-laag worden overschreven met behulp van de apache `mod_headers` richtlijnen , bijvoorbeeld :
 
-   Zie de bespreking in de html/tekstsectie hierboven voor het uitoefenen van voorzichtigheid om niet te wijd in het voorgeheugen onder te brengen en ook hoe te om AEM te dwingen altijd caching met de &quot;altijd&quot;optie toe te passen.
+```
+   <LocationMatch "^/content/.*\.(jpeg|jpg)$">
+     Header set Cache-Control "max-age=222"
+     Header set Age 0
+   </LocationMatch>
+```
 
-   Er moet voor worden gezorgd dat een `src/conf.dispatcher.d/`het geheime voorgeheugen heeft de volgende regel (die in de standaardconfiguratie is):
+Wanneer het wijzigen van de caching kopballen bij de verzender laag, gelieve voorzichtig te zijn om niet te wijd in het voorgeheugen onder te brengen, zie de bespreking in de HTML/tekstsectie [boven](#html-text)). Zorg er ook voor dat elementen die bedoeld zijn om privé te blijven (in plaats van in cache te worden geplaatst), geen deel uitmaken van de `LocationMatch` richtingsfilters.
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+#### Nieuw standaardgedrag voor in cache plaatsen {#new-caching-behavior}
 
-   Zorg ervoor dat elementen die bedoeld zijn om privé te blijven in plaats van in cache te worden opgeslagen, geen deel uitmaken van de LocationMatch-instructiefilters.
+De AEM laag zal geheim voorgeheugenkopballen plaatsen afhankelijk van of de geheim voorgeheugenkopbal reeds is geplaatst en de waarde van het verzoektype. Merk op dat als geen kopbal van de geheim voorgeheugencontrole is geplaatst, openbare inhoud in het voorgeheugen wordt opgeslagen en voor authentiek verklaard verkeer wordt geplaatst aan privé. Als een kopbal van de geheim voorgeheugencontrole is geplaatst, zullen de geheim voorgeheugenkopballen ongewijzigd zijn.
 
-   >[!NOTE]
-   >De andere methoden, waaronder de [verzender-ttl AEM ACS-Commons-project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), overschrijft de waarden niet.
+| Besturingsheader voor cache bestaat? | Type aanvraag | AEM stelt cachekoppen in op |
+|------------------------------|---------------|------------------------------------------------|
+| Nee | publiek | Cachebeheer: public, max-age=600, onveranderlijk |
+| Nee | geverifieerd | Cachebeheer: private, max-age=600, onveranderlijk |
+| Ja | alle | ongewijzigd |
+
+Hoewel niet aanbevolen, is het mogelijk om het nieuwe standaardgedrag te wijzigen om het oude gedrag te volgen (programma-id&#39;s gelijk aan of lager dan 65000) door de omgevingsvariabele van Cloud Manager in te stellen `AEM_BLOB_ENABLE_CACHING_HEADERS` naar false.
+
+#### Oudere standaardcaching, gedrag {#old-caching-behavior}
+
+De AEM laag plaatst blob-inhoud niet standaard in het cachegeheugen.
+
+>[!NOTE]
+>Het wordt aanbevolen het oudere standaardgedrag te wijzigen om consistent te zijn met het nieuwe gedrag (programma-id&#39;s die hoger zijn dan 65000) door de omgevingsvariabele AEM_BLOB_ENABLE_CACHING_HEADERS van Cloud Manager in te stellen op true. Als het programma al actief is, controleert u of de inhoud zich na de wijzigingen gedraagt zoals u verwacht.
+
+>[!NOTE]
+>De andere methoden, waaronder de [verzender-ttl AEM ACS-Commons-project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), worden de waarden niet overschreven.
 
 ### Andere inhoudstypen in nodenarchief {#other-content}
 
@@ -115,7 +126,7 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
 * standaard kan niet worden ingesteld met de `EXPIRATION_TIME` variabele die wordt gebruikt voor html/text-bestandstypen
 * cache-vervaldatum kan worden ingesteld met dezelfde LocationMatch-strategie die in de html/text-sectie wordt beschreven door de juiste regex op te geven
 
-### Furthur-optimalisaties
+### Verdere optimalisaties {#further-optimizations}
 
 * Vermijd het gebruik `User-Agent` als onderdeel van de `Vary` header. Oudere versies van de standaarddispatcheropstelling (vóór archetype versie 28) omvatten dit en wij adviseren u dat gebruikend de hieronder stappen te verwijderen.
    * Zoek de hostbestanden in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
