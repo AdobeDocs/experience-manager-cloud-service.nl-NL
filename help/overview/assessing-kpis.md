@@ -2,9 +2,9 @@
 title: KPI's openen
 description: KPI's openen
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
+source-git-commit: 6c6412a05bc00480623ee0d08106f53f4c0c416a
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,3 @@ Nadat u de Experience Manager hebt gestart, krijgt u met een sterke set KPI&#39;
 >[!TIP]
 >
 > Neem contact op met als u extra hulp nodig hebt bij je KPI&#39;s. [Adobe Consulting Services](https://www.adobe.com/experience-cloud/consulting-services.html) of uw implementatiepartner.
-
-Download de IDC-rapporten voor meer voorbeelden van de typen resultaten die grote bedrijven hebben gezien bij het gebruik van Adobe Experience Manager:
-* [De bedrijfswaarde van Adobe Experience Manager Sites](https://www.adobe.com/content/dam/acom/en/modal-offers/idc-aem-sites-q218/pdfs/22037555.en.aem.whitepaper.IDCBusinessValueAEMSites.pdf)
-* [De bedrijfswaarde van Adobe Experience Manager Assets](https://wwwimages2.adobe.com/content/dam/acom/en/modal-offers/idc-aem-Assets-q218/pdfs/220380622.en.aem.whitepaper.IDCBusinessValueAEMAssets.pdf)
