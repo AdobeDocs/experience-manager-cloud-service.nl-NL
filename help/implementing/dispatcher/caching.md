@@ -3,7 +3,7 @@ title: Caching in AEM as a Cloud Service
 description: 'Caching in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
+source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 0%
@@ -96,7 +96,7 @@ In beide gevallen kunnen de in de cache geplaatste koppen op een fijnere korreli
    </LocationMatch>
 ```
 
-Wanneer het wijzigen van de caching kopballen bij de verzender laag, gelieve voorzichtig te zijn om niet te wijd in het voorgeheugen onder te brengen, zie de bespreking in de HTML/tekstsectie [boven](#html-text)). Zorg er ook voor dat elementen die bedoeld zijn om privé te blijven (in plaats van in cache te worden geplaatst), geen deel uitmaken van de `LocationMatch` richtingsfilters.
+Wanneer het wijzigen van de caching kopballen bij de verzender laag, gelieve voorzichtig te zijn om niet te wijd in het voorgeheugen onder te brengen, zie de bespreking in de HTML/tekstsectie [boven](#html-text). Zorg er ook voor dat elementen die bedoeld zijn om privé te blijven (in plaats van in cache te worden geplaatst), geen deel uitmaken van de `LocationMatch` richtingsfilters.
 
 #### Nieuw standaardgedrag voor in cache plaatsen {#new-caching-behavior}
 
