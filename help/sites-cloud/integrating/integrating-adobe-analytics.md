@@ -4,9 +4,9 @@ description: 'Integreren met Adobe Analytics '
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: acd44bd7ff211466acc425148cab18dc7ae6d44c
+source-git-commit: e950f2399553c301c97c4fcac549a7ef6a234164
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '570'
 ht-degree: 2%
 
 ---
@@ -15,13 +15,10 @@ ht-degree: 2%
 
 Door Adobe Analytics en AEM as a Cloud Service te integreren, kunt u uw webpaginageactiviteit volgen. De integratie vereist:
 
-* met de aanraakinterface een analytische configuratie maken in AEM as a Cloud Service.
+* met de aanraakinterface een analytische configuratie maken in AEM as a Cloud Service. Houd er rekening mee dat IMS-verificatie vereist is om Adobe Analytics te integreren met AEM as a Cloud Service.
 * Adobe Analytics toevoegen en configureren als extensie in [Adobe starten](#analytics-launch). Ga voor meer informatie over het starten van Adobe naar [deze pagina](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
 Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de Configuratie van Analytics in AEM as a Cloud Service. In plaats daarvan wordt het nu gedaan door Adobe Launch, dat het feitelijk hulpmiddel is om een AEM plaats met Analytische mogelijkheden (bibliotheken JS) van instrumenten te voorzien. In Adobe Launch, wordt een bezit gecreeerd waar de uitbreiding van Adobe Analytics kan worden gevormd en de regels worden gecreeerd om gegevens naar Adobe Analytics te verzenden. Adobe Launch heeft in de plaats getreden van de door de sitecatalyst geleverde analytische taak.
-
->[!NOTE]
->Toegevoegd in het pre-releasekanaal is de vereiste voor IMS-verificatie om Adobe Analytics te integreren met AEM as a Cloud Service. Zie de [Adobe Analytics configureren met IMS-verificatie (prereleasekanaal)](#configuration-parameters-ims) voor meer informatie. Het prereleasekanaal bekijken [documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie over hoe u deze instelling voor uw omgeving kunt inschakelen.
 
 >[!NOTE]
 >
@@ -37,35 +34,20 @@ Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de 
 
 ### Configuratieparameters {#configuration-parameters}
 
-De configuratiegebieden in het venster van de Configuratie van Adobe Analytics zijn:
-
-![Configuratieparameters](assets/properties_field1.png "Configuratieparameters")
-
-| Eigenschap | Beschrijving |
-|---|---|
-| Bedrijf | Adobe Analytics Login Company |
-| Gebruikersnaam | Adobe Analytics API-gebruiker |
-| Wachtwoord | Adobe Analytics-wachtwoord voor verificatie |
-| Datacenter | Het Adobe Analytics-datacenter waaraan uw account is gekoppeld (server bijvoorbeeld San Jose, Londen) |
-| Segment | Optie voor het gebruik van een analysesegment dat is gedefinieerd in de huidige rapporteringssuite. De analyserapporten worden gefilterd op basis van het segment. Zie [deze pagina](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) voor meer informatie. |
-| Rapportageopties | Een opslagplaats waar u gegevens en trekkingsrapporten verzendt. Een rapportsuite definieert de volledige, onafhankelijke rapportage op een gekozen website, een set websites of een subset van websitepagina&#39;s. U kunt de rapporten bekijken die van één enkele rapportreeks worden gehaald en kunt dit gebied in een configuratie op elk ogenblik overeenkomstig uw vereisten uitgeven. |
-
-### Adobe Analytics configureren met IMS-verificatie (prereleasekanaal) {#configuration-parameters-ims}
-
-Toegevoegd in het pre-releasekanaal is de vereiste voor IMS-verificatie om Adobe Analytics te integreren met AEM as a Cloud Service. Het prereleasekanaal bekijken [documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie over hoe u deze instelling voor uw omgeving kunt inschakelen. Dit betekent dat een configuratie IMS voor zowel Lancering als Analytics noodzakelijk is om Analytics met AEM en Lancering behoorlijk te integreren. Terwijl de configuratie IMS voor Lancering vooraf in AEM as a Cloud Service wordt gevormd, moet de configuratie van Analytics IMS worden gecreeerd.
-
-Zie dit [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) om te leren hoe te om de configuratie van Analytics IMS tot stand te brengen.
-
-Nadat u de stappen in het dialoogvenster [Adobe Analytics-configuratie maken](#configuration-parameters) de gebieden in het configuratievenster aanwezig zijn als volgt:
+De velden in het configuratievenster zijn als volgt:
 
 ![Configuratieparameters](assets/properties_field2.png "Configuratieparameters")
 
 | Eigenschap | Beschrijving |
 |---|---|
 | Titel | De configuratienaam |
-| IMS-configuratie | Selecteer de IMS-configuratie (zie bovenstaande beschrijving) |
+| IMS-configuratie | De IMS-configuratie selecteren (zie het hoofdstuk hieronder) |
 | Segment | Optie voor het gebruik van een analysesegment dat is gedefinieerd in de huidige rapporteringssuite. De analyserapporten worden gefilterd op basis van het segment. Zie [deze pagina](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) voor meer informatie. |
 | Rapportageopties | Een opslagplaats waar u gegevens en trekkingsrapporten verzendt. Een rapportsuite definieert de volledige, onafhankelijke rapportage op een gekozen website, een set websites of een subset van websitepagina&#39;s. U kunt de rapporten bekijken die van één enkele rapportreeks worden gehaald en kunt dit gebied in een configuratie op elk ogenblik overeenkomstig uw vereisten uitgeven. |
+
+### Adobe Analytics met IMS-verificatie {#configuration-parameters-ims}
+
+Er is een IMS-configuratie vereist om Adobe Analytics op de juiste manier te integreren met AEM as a Cloud Service. Deze configuratie moet worden gemaakt, dus raadpleeg deze [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) om te leren hoe te om de configuratie van Analytics IMS tot stand te brengen.
 
 ### Een configuratie toevoegen aan een site {#add-configuration}
 
@@ -81,8 +63,8 @@ Adobe Analytics kan als extensie worden toegevoegd aan de eigenschap Launch. De 
 
 >[!NOTE]
 >
->Bestaande (verouderde) frameworks werken nog, maar kunnen niet worden geconfigureerd in de aanraakinterface. Het is raadzaam om de configuraties van de veranderlijke afbeelding in Lancering opnieuw op te bouwen.
+>De configuratie IMS (technische rekeningen) voor Lancering wordt preconfigured in AEM as a Cloud Service. U hoeft deze configuratie niet te maken.
 
 >[!NOTE]
 >
->De configuratie IMS (technische rekeningen) voor Lancering wordt preconfigured in AEM as a Cloud Service. Gebruikers hoeven deze configuratie niet te maken.
+>Bestaande (verouderde) frameworks werken nog, maar kunnen niet worden geconfigureerd in de aanraakinterface. Het is raadzaam om de configuraties van de veranderlijke afbeelding in Lancering opnieuw op te bouwen.
