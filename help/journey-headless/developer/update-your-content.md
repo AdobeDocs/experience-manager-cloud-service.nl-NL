@@ -2,9 +2,9 @@
 title: Uw inhoud bijwerken via AEM Assets API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u de REST API kunt gebruiken om toegang te krijgen tot de inhoud van de Content Fragments en deze bij te werken.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
@@ -318,7 +318,7 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Hoe u met uw headless toepassing kunt gaan werken](go-live.md) waar je je AEM Headless project live neemt!
+U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Alles bij elkaar plaatsen - uw app en uw inhoud in AEM headless](put-it-all-together.md) waar u vertrouwd zult raken met de AEM architectuurgrondbeginselen en hulpmiddelen u moet gebruiken om uw toepassing samen te stellen.
 
 ## Aanvullende bronnen {#additional-resources}
 
