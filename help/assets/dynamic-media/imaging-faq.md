@@ -5,9 +5,9 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 86a223231aacb4c7159e695d3ce731ff35fc469d
+source-git-commit: 263808980a9542b1a333c59e68e59122cf43025d
 workflow-type: tm+mt
-source-wordcount: '3471'
+source-wordcount: '3472'
 ht-degree: 0%
 
 ---
