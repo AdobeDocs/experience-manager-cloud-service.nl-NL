@@ -4,9 +4,9 @@ description: Leer hoe Smart Imaging met Adobe Sensei AI de unieke weergavekenmer
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 743782e2716aa79491adee2f32da6d746bcc40a7
 workflow-type: tm+mt
-source-wordcount: '2573'
+source-wordcount: '2578'
 ht-degree: 0%
 
 ---
@@ -78,9 +78,10 @@ Uw bedrijf kan desgewenst de optimalisatie van de netwerkbandbreedte op het indi
 |---|---|
 | `network=off` | Hiermee schakelt u netwerkoptimalisatie op individueel afbeeldings-URL-niveau uit. |
 
->[!NOTE]
->
->DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliënt-zijwaarden van gebundelde CDN. Deze waarden zijn soms onjuist. iPhone5 met DPR=2 en iPhone12 met DPR=3, beide met DPR=2. Voor apparaten met hoge resolutie is het beter DPR=2 te verzenden dan DPR=1 te verzenden. Binnenkort beschikbaar: Adobe werkt aan code aan de clientzijde om de DPR van een eindgebruiker nauwkeurig te bepalen.
+DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliënt-zijwaarden van gebundelde CDN. Deze waarden zijn soms onjuist. iPhone5 met DPR=2 en iPhone12 met `dpr=3`, beide presentaties `dpr=2`. Stilstaand, voor apparaten met hoge resolutie, verzenden `dpr=2` is beter dan verzenden `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->
+
+
+DPR aan de clientzijde biedt u 100% nauwkeurige waarden en werkt voor elk apparaat, of het nu gaat om Apple of een ander nieuw apparaat dat zojuist is gestart.
 
 ## Wat zijn de belangrijkste voordelen van de nieuwste Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
