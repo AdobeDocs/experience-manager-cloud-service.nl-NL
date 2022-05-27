@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8f75eb16718bba38bc6a12d5558f50335fd647aa
+source-git-commit: 20118fd9226a7b3ca92cdf3fc78071457d965a77
 workflow-type: tm+mt
-source-wordcount: '3484'
+source-wordcount: '3491'
 ht-degree: 23%
 
 ---
@@ -398,6 +398,7 @@ ht-degree: 23%
       + [De CDN-cache ongeldig maken via Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [De CDN-cache ongeldig maken via Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
+      + [Slimme beeldverwerking met pixelverhouding van client-side apparaat](/help/assets/dynamic-media/client-side-dpr.md)
       + [Dynamic Media-middelen leveren](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Hotlink-beveiliging activeren in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D-ondersteuning](/help/assets/dynamic-media/assets-3d.md)

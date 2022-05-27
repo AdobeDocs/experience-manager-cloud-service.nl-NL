@@ -5,9 +5,9 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 70d472776b5530cbb1048b7284780408326df604
+source-git-commit: 86a223231aacb4c7159e695d3ce731ff35fc469d
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3471'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Uw bedrijf kan desgewenst de optimalisatie van de netwerkbandbreedte op het indi
 |---|---|
 | `network=off` | Hiermee schakelt u netwerkoptimalisatie op individueel afbeeldings-URL-niveau uit. |
 
-DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliënt-zijwaarden van gebundelde CDN. Deze waarden zijn soms onjuist. iPhone5 met DPR=2 en iPhone12 met `dpr=3`, beide presentaties `dpr=2`. Stilstaand, voor apparaten met hoge resolutie, verzenden `dpr=2` is beter dan verzenden `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->.
+DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliënt-zijwaarden van gebundelde CDN. Deze waarden zijn soms onjuist. iPhone5 met DPR=2 en iPhone12 met `dpr=3`, beide presentaties `dpr=2`. Stilstaand, voor apparaten met hoge resolutie, verzenden `dpr=2` is beter dan verzenden `dpr=1`. De beste manier om deze onnauwkeurigheid te overwinnen, is echter door DPR op de client-side te gebruiken om u 100% nauwkeurige waarden te geven. En het werkt voor elk apparaat, of het nu Apple is of een ander apparaat dat gelanceerd werd. Zie [Slimme beeldverwerking gebruiken met pixelverhouding van client-side apparaat](/help/assets/dynamic-media/client-side-dpr.md).
 
 ### Extra belangrijke voordelen van Smart Imaging
 
