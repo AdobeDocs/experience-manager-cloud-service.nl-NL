@@ -1,11 +1,11 @@
 ---
 title: Inleiding tot AEM zonder kop
-description: Adobe Experience Manager (AEM) Headless self-help bronnen en documentatiekoppelingen. Leer hoe u functies als Content Models, Content Fragments en een GraphQL API kunt gebruiken voor een baanloze ervaring met AEM.
+description: Meer informatie over Adobe Experience Manager (AEM) als een headless CMS met een combinatie van gedetailleerde documentatie en ritten zonder kop. Leer hoe u functies als Content Models, Content Fragments en een GraphQL API kunt gebruiken voor een baanloze ervaring met AEM.
 landing-page-description: Begrijp hoe u Experience Manager zonder hoofd as a Cloud Service kunt gebruiken en toedienen.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
+source-git-commit: 2771dfde3b20f3867bc96dedd744d8dd7ab4fed9
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Inleiding tot Adobe Experience Manager Headless  {#introduction-aem-headless}
 
 Leer hoe functies van Adobe Experience Manager (AEM) zoals Content Models, Content Fragments, en een GraphQL API worden gebruikt om ervoor te zorgen dat u op schaal sneller kunt werken.
+
+U kunt de gedetailleerde documentatie van alle functies lezen en/of de selectie van [ritten zonder kop als snelle start](#first-steps).
 
 ## Overzicht {#overview}
 
