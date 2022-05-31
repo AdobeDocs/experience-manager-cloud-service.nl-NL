@@ -2,9 +2,9 @@
 title: Ondersteuning voor zelfde site-cookie voor Adobe Experience Manager as a Cloud Service
 description: Ondersteuning voor zelfde site-cookie voor Adobe Experience Manager as a Cloud Service
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,15 @@ De standaardwaarde van deze instelling (`SameSite=Lax`) kan ervoor zorgen dat ve
 
 U kunt dit omzeilen door het Cookie-kenmerk SameSite in te stellen op `None` voor het aanmeldingstoken.
 
-U kunt dit doen door de volgende stappen te volgen:
+>[!CAUTION]
+>
+>De `SameSite=None` instelling wordt alleen toegepast als het protocol beveiligd is (HTTPS).
+>
+>Als het protocol niet veilig (HTTP) is, dan wordt het plaatsen genegeerd en de server zal dit WARN bericht tonen:
+>
+>`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
+
+U kunt de instelling toevoegen door de volgende stappen uit te voeren:
 
 1. Een versie van de AEM SDK QuickStart lokaal installeren
 1. Ga naar de webconsole op `http://serveraddress:serverport/system/console/configMgr`
