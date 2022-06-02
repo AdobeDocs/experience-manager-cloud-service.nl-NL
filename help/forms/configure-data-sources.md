@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
+source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1574'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,16 @@ ht-degree: 0%
 
 ![Gegevensintegratie](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] Met gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden. De volgende types worden gesteund uit-van-de-doos. Met weinig aanpassing kunt u echter ook andere gegevensbronnen integreren.
+[!DNL Experience Manager Forms] Met gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden. De volgende typen worden buiten de box ondersteund:
 
 <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * [!DNL Experience Manager] user profile  -->
 * RESTful-webservices
 * SOAP-webservices
-* OData-diensten
+* OData-diensten (versie 4.0)
+* Microsoft Dynamics
+* SalesForce
+* Microsoft Azure Blob Storage
 
 De integratie van gegevens steunt OAuth2.0, Basisauthentificatie, en API Zeer belangrijke authentificatietypes out-of-the-box, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl de RESTful, op SOAP-Gebaseerde, en de diensten OData binnen worden gevormd [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> en aansluiting voor [!DNL Experience Manager] gebruikersprofiel is geconfigureerd in [!DNL Experience Manager] webconsole.
 
@@ -110,7 +113,7 @@ De map configureren voor configuraties van cloudservices:
 
 ## RESTful-webservices configureren {#configure-restful-web-services}
 
-RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https://swagger.io/specification/) in JSON- of YAML-indeling in een [!DNL Swagger] definitiebestand. RESTful-webservice configureren in [!DNL Experience Manager] as a Cloud Service, zorg ervoor dat u of [!DNL Swagger] op uw bestandssysteem of de URL waar het bestand wordt gehost.
+RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https://swagger.io/specification/v2/) in JSON- of YAML-indeling in een [!DNL Swagger] definitiebestand. RESTful-webservice configureren in [!DNL Experience Manager] as a Cloud Service, zorg ervoor dat u of [!DNL Swagger] file ([Versie 2.0](https://swagger.io/specification/v2/)) op uw bestandssysteem of de URL waar het bestand wordt gehost.
 
 Doe het volgende de diensten RESTful vormen:
 
@@ -139,6 +142,35 @@ Doe het volgende de diensten RESTful vormen:
 ### Het model van de gegevens van de vormHTTP cliëntconfiguratie om prestaties te optimaliseren {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] formuliergegevensmodel bij integratie met RESTful-webservices als gegevensbron bevat HTTP-clientconfiguraties voor optimalisatie van prestaties.
+
+Stel de volgende eigenschappen van de **[!UICONTROL Form Data Model HTTP Client Configuration for REST data source]** configuratie voor het opgeven van de reguliere expressie:
+
+* Gebruik de `http.connection.max.per.route` eigenschap om het maximum aantal toegestane verbindingen tussen het formuliergegevensmodel en RESTful-webservices in te stellen. De standaardwaarde is 20 verbindingen.
+
+* Gebruik de `http.connection.max` bezit om het maximumaantal toegestane verbindingen voor elke route te specificeren. De standaardwaarde is 40 verbindingen.
+
+* Gebruik de `http.connection.keep.alive.duration` eigenschap om de duur op te geven waarvoor een blijvende HTTP-verbinding in leven wordt gehouden. De standaardwaarde is 15 seconden.
+
+* Gebruik de `http.connection.timeout` eigenschap om de duur op te geven waarvoor [!DNL Experience Manager Forms] server wacht tot een verbinding tot stand is gebracht. De standaardwaarde is 10 seconden.
+
+* Gebruik de `http.socket.timeout` eigenschap om de maximale periode voor inactiviteit tussen twee gegevenspakketten op te geven. De standaardwaarde is 30 seconden.
+
+In het volgende JSON-bestand wordt een voorbeeld weergegeven:
+
+```json
+{   
+   "http.connection.keep.alive.duration":"15",   
+   "http.connection.max.per.route":"20",   
+   "http.connection.timeout":"10",   
+   "http.socket.timeout":"30",   
+   "http.connection.idle.connection.timeout":"15",   
+   "http.connection.max":"40" 
+} 
+```
+
+Om waarden van een configuratie te plaatsen, [OSGi-configuraties genereren met de AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [stel de configuratie op](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) naar de instantie Cloud Service.
+
+
 Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te configureren:
 
 1. Aanmelden bij [!DNL Experience Manager Forms] Instantie van auteur als beheerder en ga naar [!DNL Experience Manager] bundels voor webconsoles. De standaard-URL is [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
@@ -156,7 +188,6 @@ Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te
    * Geef de duur op waarvoor de [!DNL Experience Manager Forms] server wacht tot een verbinding tot stand is gebracht, in het dialoogvenster **[!UICONTROL Connection timeout]** veld. De standaardwaarde is 10 seconden.
 
    * Geef de maximale periode voor inactiviteit op tussen twee gegevenspakketten in het dialoogvenster **[!UICONTROL Socket timeout]** veld. De standaardwaarde is 30 seconden.
-
 
 ## SOAP-webservices configureren {#configure-soap-web-services}
 

@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4bfd1c144642f5c2f3b2bf4cd7469b0a7ce8f8fe
+source-git-commit: 333653e42de895fdd2097ad52ed3904192c57437
 workflow-type: tm+mt
-source-wordcount: '3497'
+source-wordcount: '3502'
 ht-degree: 23%
 
 ---
@@ -437,6 +437,7 @@ ht-degree: 23%
    + [Inleiding](/help/forms/home.md)
    + [Belangrijkste kenmerken](/help/forms/key-features.md)
    + [Opvallende wijzigingen](/help/forms/notable-changes.md)
+   + [Architectuur](/help/forms/aem-forms-cloud-service-architecture.md)
    + De dienst instellen en configureren {#setup-environment}
       + [Boordomgeving naar Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Een lokale ontwikkelomgeving instellen](/help/forms/setup-local-development-environment.md)
@@ -477,6 +478,7 @@ ht-degree: 23%
          + [Omleidingspagina configureren](/help/forms/configuring-redirect-page.md)
          + [asynchrone verzending voor een adaptief formulier configureren](/help/forms/asynchronous-submissions-adaptive-forms.md)
          + [Een aangepaste verzendhandeling maken](/help/forms/custom-submit-action-form.md)
+      + [Aangepaste formuliervelden vooraf invullen](/help/forms/prepopulate-adaptive-form-fields.md)
       + [Document van record genereren](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
       + Metagegevens toevoegen of verbeteren {#manage-metadata}
          + [Metagegevens van een adaptief formulier toevoegen, verwijderen of bewerken](/help/forms/manage-form-metadata.md)

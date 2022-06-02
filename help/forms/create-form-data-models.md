@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1e2b58015453c194af02fdae62c3735727981da1
+source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1465'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Zorg ervoor dat u de gegevensbronnen hebt geconfigureerd die u wilt gebruiken in
 
    * Geef een naam op voor het gegevensmodel van het formulier.
    * (**Optioneel**) Geef een titel, beschrijving en codes op voor het formuliergegevensmodel.
-   * (**Optioneel en alleen van toepassing als gegevensbronnen zijn geconfigureerd**) Tik op het pictogram naast het pictogram **[!UICONTROL Data Source Configuration]** en selecteer het configuratieknooppunt waar de wolkendiensten voor de gegevensbronnen u wilt gebruiken verblijven. Het beperkt de lijst van gegevensbronnen beschikbaar voor selectie op de volgende pagina tot degenen beschikbaar in de geselecteerde configuratieknooppunt. Nochtans, om het even welke gegevensbestand JDBC en [!DNL Experience Manager] gegevensbronnen van gebruikersprofielen worden standaard weergegeven. Als u geen configuratieknooppunt selecteert, worden de gegevensbronnen van alle configuratieknooppunten vermeld.
+   * (**Optioneel en alleen van toepassing als gegevensbronnen zijn geconfigureerd**) Tik op het pictogram naast het pictogram **[!UICONTROL Data Source Configuration]** en selecteer het configuratieknooppunt waar de wolkendiensten voor de gegevensbronnen u wilt gebruiken verblijven. Het beperkt de lijst van gegevensbronnen beschikbaar voor selectie op de volgende pagina tot degenen beschikbaar in de geselecteerde configuratieknooppunt. Alle [!DNL Experience Manager] gegevensbronnen van gebruikersprofielen worden standaard weergegeven. Als u geen configuratieknooppunt selecteert, worden de gegevensbronnen van alle configuratieknooppunten vermeld.
 
 1. Tik op **[!UICONTROL Next]**.
 

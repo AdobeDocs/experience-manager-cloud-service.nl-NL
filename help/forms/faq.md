@@ -3,9 +3,9 @@ title: 'Forms as a Cloud Service veelgestelde vragen '
 description: Forms as a Cloud Service veelgestelde vragen
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: a5cd8a49a74eb8372d1d363ff859e1aef921859b
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -89,3 +89,7 @@ Het formuliergegevensmodel bevat geen methode voor het gebruik van aangepaste ce
 
 * **Welke functies maken geen deel uit van de oorspronkelijke GA-release?**
 Forms Portal [!DNL AEM Forms] app, integratie met Adobe Analytics en integratie met Adobe Target maken geen deel uit van de eerste GA-release. Raadpleeg de maandelijkse releaseopmerkingen voor meer informatie over de nieuwe functies.
+
+* **Ik heb een [JSON-schema om een adaptief formulier te maken](adaptive-form-json-schema-form-model.md). Het JSON-schema definieert gebeurtenissen voor bepaalde componenten van adaptieve formulieren. Biedt AEM Forms as a Cloud Service ondersteuning voor gebeurtenissen?**
+Maak het adaptieve formulier op basis van het JSON-schema in Experience Manager 6.5 Forms-omgeving en gebruik de [Hulpprogramma voor migratie](migrate-to-forms-as-a-cloud-service.md) om deze Adaptieve Forms te migreren naar AEM Forms as a Cloud Service. Het hulpprogramma converteert dergelijke gebeurtenissen naar clientbibliotheken en u kunt Adaptive Forms blijven gebruiken voor gebeurtenissen in een Cloud Service-omgeving.
+
