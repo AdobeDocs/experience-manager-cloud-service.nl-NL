@@ -3,9 +3,9 @@ title: Problemen met Dynamic Media oplossen
 description: Tips voor het oplossen van problemen wanneer u Dynamic Media gebruikt.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -169,53 +169,71 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
 
 Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u problemen hebt met viewers.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Probleem</strong></td>
-   <td><strong>Foutopsporing</strong></td>
-   <td><strong>Oplossing</strong></td>
-  </tr>
-  <tr>
-   <td>Voorinstellingen van viewer worden niet gepubliceerd</td>
-   <td><p>Ga door naar de diagnostische pagina van de voorbeeldmanager: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Berekende waarden observeren. Wanneer correct werkend, ziet u:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Opmerking</strong>: Het kan ongeveer 10 minuten duren nadat de Dynamic Media-cloudinstellingen zijn geconfigureerd voor synchronisatie van de viewerelementen.</p> <p>Als er niet-geactiveerde elementen overblijven, selecteert u een van de <strong>Alle niet-geactiveerde elementen weergeven</strong> knoppen om details weer te geven.</p> </td>
-   <td>
-    <ol>
-     <li>Navigeer naar de lijst met voorinstellingen voor viewers in de beheerprogramma's: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Selecteer alle voorinstellingen van de viewer en selecteer <strong>Publiceren</strong>.</li>
-     <li>Navigeer terug naar voorbeeldbeheer en controleer of het aantal niet-geactiveerde elementen nu nul is.</li>
-    </ol> </td>
-  </tr>
-  <tr>
-   <td>Vooraf ingestelde illustraties van de viewer retourneren 404 vanaf de voorvertoning in elementdetails of kopiëren, URL- en insluitcode</td>
-   <td><p>Ga als volgt te werk bij CRXDE Lite:</p>
-    <ol>
-     <li>Navigeren naar <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> map in uw Dynamic Media-synchronisatiemap (bijvoorbeeld <code>/content/dam/_CSS/_OOTB</code>),</li>
-     <li>Zoek het metagegevensknooppunt van het problematische element (bijvoorbeeld <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Controleren op de aanwezigheid van <code>dam:scene7*</code> eigenschappen. Als het element is gesynchroniseerd en gepubliceerd, ziet u de <code>dam:scene7FileStatus</code> set is to <strong>PublishComplete</strong>.</li>
-     <li>Poging om de illustratie rechtstreeks vanuit Dynamic Media aan te vragen door de waarden van de volgende eigenschappen en letterlijke tekenreeksen samen te voegen
-      <ul>
-       <li><code>dam:scene7Domain</code></li>
-       <li><code>"is/content"</code></li>
-       <li><code>dam:scene7Folder</code></li>
-       <li><code>&lt;asset-name&gt;</code></li>
-       <li>Voorbeeld: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
-      </ul> </li>
-    </ol> </td>
-   <td><p>Als de voorbeeldbestanden of de vooraf ingestelde illustratie van de viewer niet zijn gesynchroniseerd of gepubliceerd, start u het gehele kopiëren/synchronisatieproces opnieuw:</p>
-    <ol>
-     <li>Ga naar <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
-     </li>
-     <li>Selecteer in volgorde de volgende handelingen:
-      <ol>
-       <li>Synchronisatiemappen verwijderen.</li>
-       <li>Map met voorinstellingen verwijderen (onder <code>/conf</code>).
-       <li>Trigger DM Setup Async Job.</li>
-      </ol> </li>
-     <li>Wacht op melding van succesvolle synchronisatie in uw Experience Manager Inbox.
-     </li>
-    </ol> </td>
-  </tr>
- </tbody>
-</table>
+### Probleem: Viewer-voorinstellingen worden niet gepubliceerd {#viewers-not-published}
+
+**Foutopsporing**
+
+1. Ga door naar de diagnostische pagina van de voorbeeldmanager: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
+1. Berekende waarden observeren. Wanneer correct werkend, ziet u het volgende: `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+
+   >[!NOTE]
+   >
+   >Het kan ongeveer 10 minuten duren nadat de Dynamic Media-cloudinstellingen zijn geconfigureerd voor synchronisatie van de viewerelementen.
+
+1. Als er niet-geactiveerde elementen overblijven, selecteert u een van de **Alle niet-geactiveerde elementen weergeven** knoppen om details weer te geven.
+
+**Oplossing**
+
+1. Navigeer naar de lijst met voorinstellingen voor viewers in de beheerprogramma&#39;s: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. Selecteer alle voorinstellingen van de viewer en selecteer **Publiceren**.
+1. Navigeer terug naar voorbeeldbeheer en controleer of het aantal niet-geactiveerde elementen nu nul is.
+
+### Probleem: Vooraf ingestelde illustraties van de viewer retourneren 404 vanuit Voorvertoning in elementdetails of URL kopiëren/code insluiten {#viewer-preset-404}
+
+**Foutopsporing**
+
+Ga als volgt te werk bij CRXDE Lite:
+
+1. Navigeren naar `<sync-folder>/_CSS/_OOTB` map in uw Dynamic Media-synchronisatiemap (bijvoorbeeld `/content/dam/_CSS/_OOTB`).
+1. Zoek het metagegevensknooppunt van het problematische element (bijvoorbeeld `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
+1. Controleren op de aanwezigheid van `dam:scene7*` eigenschappen. Als het element is gesynchroniseerd en gepubliceerd, ziet u de `dam:scene7FileStatus` set is to **PublishComplete**.
+1. Poging om de illustratie rechtstreeks via Dynasmic Media aan te vragen door de waarden van de volgende eigenschappen en letterlijke tekenreeksen samen te voegen:
+
+   * `dam:scene7Domain`
+   * `"is/content"`
+   * `dam:scene7Folder`
+   * `<asset-name>`
+Voorbeeld: 
+`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+
+**Oplossing**
+
+Als de voorbeeldbestanden of de vooraf ingestelde illustratie van de viewer niet zijn gesynchroniseerd of gepubliceerd, start u het gehele kopiëren/synchronisatieproces opnieuw:
+
+1. Navigeer naar CRXDE Lite.
+1. Verwijderen `<sync-folder>/_CSS/_OOTB`.
+1. Ga naar CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
+1. Zoeken naar viewerpakket in de lijst; begint met `cq-dam-scene7-viewers-content`.
+1. Selecteren **Opnieuw installeren**.
+1. Onder Cloud Services, navigeer aan de pagina van de Configuratie van Dynamic Media, dan open de doos van de configuratiedialoog voor uw configuratie Dynamic Media - S7.
+1. Geen wijzigingen aanbrengen, selecteer **Opslaan**.
+Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CSS met voorinstellingen voor viewers en de illustraties te maken en te synchroniseren.
+
+### Probleem: Afbeeldingsvoorvertoning wordt niet geladen in het ontwerpen van viewervoorinstellingen {#image-preview-not-loading}
+
+**Oplossing**
+
+1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben, dan navigeer aan **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Navigeer in de linkertrack naar de map met voorbeeldinhoud op de volgende locatie:
+
+   `/content/dam/_DMSAMPLE`
+
+1. Verwijder de `_DMSAMPLE` map.
+1. Navigeer in de linkertrack naar de map met voorinstellingen op de volgende locatie:
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. Verwijder de `viewer` map.
+1. Selecteer in de linkerbovenhoek van de pagina CRXDE Lite de optie **[!UICONTROL Save All]**.
+1. Selecteer in de linkerbovenhoek van de pagina CRXDE Lite de optie **Terug naar startpunt** pictogram.
+1. Maak opnieuw een [Dynamic Media-configuratie in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
