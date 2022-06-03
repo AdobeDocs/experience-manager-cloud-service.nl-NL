@@ -2,7 +2,7 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f84806c1579f8ef163dd9454fcae4a57bf22a452
+source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 7%
@@ -102,7 +102,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
 Als u de migratieset wilt vullen die u hebt gemaakt in de Cloud Acceleration Manager, moet u de nieuwste versie van het Content Transfer Tool installeren op uw Adobe Experience Manager-broninstantie (AEM). Volg deze sectie om te leren hoe u de migratieset kunt vullen.
 
-1. Nadat u de meest recente versie (Vxxx) van het Content Transfer Tool op uw Adobe Experience Manager-bronexemplaar hebt geïnstalleerd, gaat u naar **Bewerkingen - Inhoud migreren**
+1. Nadat u de meest recente versie (v2.0.10) van het Content Transfer Tool op uw Adobe Experience Manager-bronexemplaar hebt geïnstalleerd, gaat u naar **Bewerkingen - Inhoud migreren**
 
 1. Klikken op **Migratieset maken**
 
