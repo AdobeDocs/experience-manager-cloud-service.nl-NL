@@ -2,10 +2,10 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 29%
+source-wordcount: '701'
+ht-degree: 15%
 
 ---
 
@@ -21,54 +21,89 @@ ht-degree: 29%
 
 Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool op te nemen:
 >[!NOTE]
->U kunt de optionele pre-copy stap uitvoeren om de innamefase aanzienlijk te versnellen. Zie [Inschakelen met AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) voor meer informatie .
+>U kunt de optionele pre-copy stap uitvoeren om de innamefase aanzienlijk te versnellen. De pre-copy stap is het meest effectief voor de eerste volledige extractie en inname. Zie [Inschakelen met AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer informatie .
 
-1. Een migratieset selecteren vanuit **Inhoud overbrengen** pagina en klik op **Ingest** om te beginnen met inslikken.
+1. Ga naar Cloud Acceleration Manager. Klik op uw projectkaart en klik op de kaart van de Overdracht van de Inhoud. Navigeren naar **Ingestietaken** en klik op **Nieuwe inname**
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven. Inhoud kan tegelijkertijd worden ingevoerd in een instantie Auteur of Publiceren. Selecteer de instantie waaraan u inhoud wilt toevoegen. Klikken op **Ingest** om de inname fase te starten.
+1. Geef de vereiste informatie op om een nieuwe opname te maken.
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
+   * Selecteer de migratieset die u net als bron hebt geëxtraheerd
+   * Selecteer de doelomgeving. Dit is waar de inhoud van de migratieset wordt opgenomen. Selecteer de laag. (Auteur/Publicatie).
 
-   >[!IMPORTANT]
+   >[!NOTE]
+   >
+   >Als de bron Auteur was, wordt het geadviseerd om het in de rij van de Auteur op het doel op te nemen. Als de bron Publiceren was, zou het doel ook Publiceren moeten zijn.
+
+   >[!NOTE]
+   >
+   >U kunt de optionele pre-copy stap uitvoeren om de innamefase aanzienlijk te versnellen. Zie [Inschakelen met AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer informatie .
+   > 
    >Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om de opname van de Auteur eerst alleen in werking te stellen. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
 
    >[!IMPORTANT]
-   >Wanneer de **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** is ingeschakeld, wordt de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud kan worden ingevoerd. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die is toegevoegd aan de **beheerders** groep.
+   >
+   >U kunt een opname alleen afschoppen in de doelomgeving als u tot de lokale omgeving behoort **AEM** groep in de instantie Cloud Service die u inhoud overdraagt. Als u niet tot de groep van AEM beheerders behoort, zult u een fout zoals hieronder getoond zien wanneer u probeert om een opname te beginnen.
+   >![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
+   >[!IMPORTANT]
+   >
+   >Als de instelling **Sluitereffect** wordt ingeschakeld voordat de inhoud wordt ingevoerd, wordt de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt ingevoerd. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die is toegevoegd aan de **beheerders** groep. U zult aan de beheerdersgroep opnieuw moeten worden toegevoegd om een opname te beginnen.
 
-   Klik bovendien op **Klantenservice** om een kaartje, zoals aangetoond in het hieronder cijfer te registreren.
+1. Klikken op **Ingest**
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-   Zie ook: [Belangrijke overwegingen voor het gebruik van het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) voor meer informatie.
+1. U kunt dan de fase van de Ingestie van de de lijstmening van de Banen van de Ingestie controleren
 
-1. Zodra de inname is voltooid, is de status onder **Inname door auteur** updates voor **VOLTOOID**.
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png)
+1. Nadat de inname is voltooid, klikt u op de knop i) in de rechterbovenhoek van het scherm voor meer informatie over de innametaak.
+
+<!-- Alexandru: hiding temporarily, until it's reviewed 
+
+1. The **Migration Set ingestion** dialog box displays. Content can be ingested to either Author instance or Publish instance at a time. Select the instance to ingest content to. Click on **Ingest** to start the ingestion phase. 
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
+
+   >[!IMPORTANT]
+   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later. 
+
+   >[!IMPORTANT]
+   >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
+
+   Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
+   
+   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) to learn more.
+
+1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png) -->
 
 ## Opname aanvullen {#top-up-ingestion-process}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion"
+>abstract="Gebruik de functie Boven om gewijzigde inhoud te verplaatsen sinds de vorige activiteit voor inhoudsoverdracht. Na voltooiing van Ingestie, controleer de logboeken om het even welke fout/waarschuwingen. Eventuele fouten moeten onmiddellijk worden opgelost door de gemelde problemen te verhelpen of door contact op te nemen met de klantenservice van Adobe."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Logbestanden weergeven"
 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële *aanvulling* van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
 
 >[!NOTE]
->Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
+>Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service. Als u de pre-exemplaarstap voor de eerste volledige opname hebt gebruikt, kunt u pre-exemplaar voor verdere bovenop-up ingezien overslaan (als de top-up migratie vastgestelde grootte minder dan 200GB) omdat het tijd aan het volledige proces kan toevoegen.
 
-Als het opnameproces is voltooid, kunt u deltacontent gebruiken via de opnamemethode met aanvullen. Voer de onderstaande stappen uit:
+Als het inslikken is voltooid, moet u een [Extractie bovenaan](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) en gebruikt u vervolgens de methode van de bovenste opname.
 
-1. Ga naar de **Inhoud overbrengen** en selecteert u de migratieset waarvoor u de bovenste opname wilt uitvoeren. Klik op **Ingest** om de opname te starten.
+U kunt dit doen door een nieuwe Ingestietaak te creëren en ervoor te zorgen dat **Sluitereffect** is uitgeschakeld tijdens de Ingestiefase, zoals hieronder wordt getoond:
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest1.png)
+![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 
-1. Het dialoogvenster voor het **opnemen van de migratieset** wordt weergegeven.
-
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest2.png)
-
-   >[!IMPORTANT]
-   >U moet de opdracht **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** gebruiken, om te voorkomen dat de bestaande inhoud uit de vorige insluitingsactiviteit wordt verwijderd. Klik bovendien op **Klantenservice** om een kaartje, zoals aangetoond in het voorafgaande cijfer te registreren.
 
 ## Volgende functies {#whats-next}
 

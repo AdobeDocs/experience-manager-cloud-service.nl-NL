@@ -1,46 +1,20 @@
 ---
-title: Overzicht van de tool Content Transfer
+title: Overzicht naar het gereedschap Inhoud overbrengen (verouderd)
 description: Overzicht van de tool Content Transfer
-exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 43%
+source-wordcount: '476'
+ht-degree: 62%
 
 ---
 
-# Overzicht {#overview-content-transfer-tool}
-
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Overzicht"
->abstract="Het hulpmiddel van de Overdracht van de inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om bestaande inhoud over van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service te bewegen. Met de tool worden &#39;principals&#39; (gebruikers of groepen) automatisch overgedragen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="Richtlijnen en best practices"
-
-<!-- Alexandru: Old version of contextual help, keep for failover/debugging
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Overview"
->abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraction Process"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process" -->
+# Overzicht van het gereedschap Inhoudsoverdracht (verouderd) {#overview-content-transfer-tool}
 
 De tool Content Transfer is door Adobe ontwikkeld. Hiermee kunt u bestaande content van een AEM-broninstantie (On-Premise of AMS) verplaatsen naar de doelinstantie van AEM Cloud Service.
 
 Met de tool worden &#39;principals&#39; (gebruikers of groepen) automatisch overgedragen.
-
-Er is een nieuwe versie van het gereedschap Inhoud overbrengen beschikbaar waarin het proces voor de overdracht van inhoud wordt geïntegreerd met het programma voor de versnelling van de cloud. Het wordt ten zeerste aanbevolen over te schakelen op deze nieuwe versie om alle voordelen van deze versie te benutten:
-
-* Zelfbediening om een migratieset één keer uit te pakken en tegelijkertijd in meerdere omgevingen in te voeren
-* Verbeterde gebruikerservaring dankzij betere laadstatussen, hulplijnen en foutafhandeling
-* Logbestanden voor congestie blijven bestaan en zijn altijd beschikbaar voor probleemoplossing
-
-De nieuwe versie gebruiken (Vxx) <!-- update when version is available --> u moet oudere versies van het gereedschap Inhoud overbrengen verwijderen, omdat het programma een belangrijke architecturale wijziging heeft ondergaan.
-
->[!NOTE]
->
-> In situaties waarin al een migratie wordt uitgevoerd, kunt u de vorige versie van CTT blijven gebruiken totdat de migratie is voltooid. Voor documentatie met betrekking tot de vorige versie van CTT raadpleegt u de [oudere documentatie](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## Fasen in gereedschap Inhoud overbrengen {#phases-content-transfer-tool}
 
@@ -61,8 +35,11 @@ De overdracht van content bestaat uit twee fasen:
 
 Een migratieset heeft de volgende kenmerken:
 
-* Met de nieuwe versie kunt u maximaal vijf migratiesets maken in een project dat is gemaakt in Cloud Acceleration Manager.
+* U kunt maximaal tien migratiesets tegelijk maken en onderhouden tijdens de activiteit voor inhoudsoverdracht.
 * Elke migratieset moet een unieke naam hebben.
+* Als een migratieset langer dan 30 dagen inactief is geweest, wordt deze automatisch verwijderd.
+* Wanneer u een migratieset maakt, wordt deze gekoppeld aan een specifieke omgeving. U kunt alleen content opnemen in een auteur- of publicatie-instantie van dezelfde omgeving.
+
 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
 

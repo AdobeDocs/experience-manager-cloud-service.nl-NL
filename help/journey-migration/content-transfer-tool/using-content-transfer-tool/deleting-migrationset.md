@@ -2,25 +2,40 @@
 title: Een migratieset verwijderen in het gereedschap Inhoud overbrengen
 description: Een migratieset verwijderen in het gereedschap Inhoud overbrengen
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b10fab405ae3afad36c727c91dd52ad3b8cee5f6
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 39%
+source-wordcount: '230'
+ht-degree: 4%
 
 ---
 
 # Een migratieset verwijderen {#delete-migration-set}
 
-U kunt de migratieset verwijderen vanaf de pagina *Overview.*
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_delete_migrationset"
+>title="Een migratieset verwijderen"
+>abstract="Leer hoe u een migratieset verwijdert."
 
-## Stappen om een migratieset te verwijderen uit het gereedschap voor het overbrengen van inhoud {#deleting-migration-set}
+U kunt migratiesets verwijderen uit Cloud Acceleration Manager.
 
-Voer de onderstaande stappen uit:
+## Stappen om een migratieset te verwijderen {#deleting-migration-set}
 
-1. Ga naar de **Inhoud overbrengen** en selecteer de migratieset die u wilt verwijderen en klik op **Verwijderen** in de actiebalk.
+Volg onderstaande stappen om een migratieset te verwijderen:
+
+1. Navigeer naar de lijstweergave Migratieset in Cloud Acceleration Manager en klik op de drie stippen (**...**) naast de migratieset die u wilt verwijderen. De **Verwijderen** De actie moet zichtbaar zijn zoals hieronder wordt getoond.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. Klik op **Delete** in het dialoogvenster **Delete Migration Set** om de verwijdering te bevestigen.
+1. Wanneer u op **Verwijderen** Er wordt een dialoogvenster weergegeven waarin u de verwijderactie kunt bevestigen.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
+
+>[!NOTE]
+>
+>Als u een migratieset verwijdert uit CAM (Cloud Acceleration Manager), wordt deze set niet verwijderd uit het gereedschap Inhoud overbrengen. Als een migratieset eenmaal uit CAM is verwijderd, kan de gebruiker geen extracties uitvoeren voor die migratieset vanuit de wizard Inhoud overbrengen. Als de migratieset echter uit de wizard Inhoud overbrengen is verwijderd, kan de gebruiker deze opnieuw maken zolang de migratieset nog beschikbaar is in de Cloud Acceleration Manager.
+>
+>Als u het gereedschap Inhoud overbrengen synchroon wilt houden met het beheer van de cloudversnelling, kan de gebruiker ook de migratieset verwijderen uit het gereedschap Inhoud overbrengen.
+
+Als u de migratieset wilt verwijderen uit de wizard Inhoud overbrengen, selecteert u de migratieset en klikt u op **Verwijderen** in de actiebalk.
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)

@@ -1,15 +1,16 @@
 ---
-title: Het gereedschap Inhoud overbrengen uitvoeren op een publicatie-instantie
+title: Het gereedschap Inhoud overbrengen uitvoeren op een instantie Publiceren (verouderd)
 description: Het gereedschap Inhoud overbrengen uitvoeren op een publicatie-instantie
-exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+hide: true
+hidefromtoc: true
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
 
-# Het gereedschap Inhoud overbrengen uitvoeren op een publicatie-instantie {#run-content-transfer-tool-publish-instance}
+# Het gereedschap Inhoud overbrengen uitvoeren op een instantie Publiceren (verouderd) {#run-content-transfer-tool-publish-instance}
 
 ## Inleiding {#introduction}
 
@@ -25,6 +26,8 @@ Volg de onderstaande aanbevolen aanpak:
 * Gebruik dezelfde versie van het gereedschap Inhoud overbrengen die ook voor de instantie Auteur is gebruikt.
 
 * Er hoeft slechts één publicatieknooppunt te worden gemigreerd. Deze moet uit het taakverdelingsmechanisme worden verwijderd voordat de extractie wordt gestart.
+
+* Gebruik bij het maken van de migratieset de URL van de auteur AEM de as a Cloud Service omgeving.
 
 * Tijdens het publiceren wordt de publicatielaag niet verkleind (in tegenstelling tot de auteur).
 

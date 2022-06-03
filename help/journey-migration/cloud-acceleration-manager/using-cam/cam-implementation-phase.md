@@ -2,9 +2,9 @@
 title: Implementatiefase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de implementatiefase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '793'
 ht-degree: 2%
 
 ---
@@ -89,24 +89,32 @@ Volg deze sectie om AEM activiteitenkaart van de Kaart van de Plaatsing te onder
 
 ## Inhoudsoverdrachtkaart gebruiken {#content-transfer}
 
-De activiteitenkaart van de Overdracht van de Inhoud verstrekt begeleiding en overwegingen die zouden moeten worden herzien wanneer het gebruiken van het Hulpmiddel van de Overdracht van de Inhoud om inhoud van uw huidige AEM as a Cloud Service te bewegen aan AEM.
+Met de kaart voor inhoudsoverdracht kunt u de overdracht van inhoud van uw huidige AEM naar AEM as a Cloud Service starten en beheren.
 
 Volg deze sectie om de activiteitenkaart van de Overdracht van de Inhoud te onderzoeken:
 
-1. Klik op de knop **Weergave** van de knop **Inhoud overbrengen** activiteitenkaart.
+1. Klik op de knop **Controleren** van de knop **Inhoud overbrengen** activiteitenkaart.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
+   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. Een inhoudscarrousel geeft de relevante informatie voor deze fase van de migratiereis weer.
+1. Als u een inhoudsoverdracht wilt starten, moet u een migratieset maken. Klikken op **Migratieset maken**. Met een migratieset kan inhoud worden overgebracht naar AEM as a Cloud Service.
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/content-transfertool-card.png)
+   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >Controleer de [voorwaarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) en de [beste praktijken en richtsnoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) voordat u het gereedschap Inhoud overbrengen gebruikt.
 
+1. U moet het gereedschap Inhoud overbrengen downloaden en installeren om de migratieset te vullen en de extractiefase van de overdracht van inhoud te voltooien. Controleren [Aan de slag met het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) voor meer informatie over het gebruik van het gereedschap Inhoud overbrengen.
+
+1. Als u inhoud van de Migratie-set wilt opnemen in een omgeving op AEM as a Cloud Service, moet u een opname starten. Navigeren naar **Ingestietaken** en klik op **Nieuwe opname**. Controleren [Inhoud in doel invoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) om te leren hoe u de Ingestiefase van de inhoudsoverdracht kunt voltooien.
+
+   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+
 ### De tijd van de inhoudsoverdracht schatten {#calculating}
 
-Er is een nieuwe calculator voor het gereedschap Inhoud overbrengen beschikbaar waarmee u kunt inschatten hoe lang het kan duren om de activiteit voor inhoudsoverdracht te voltooien. Met de schuifregelaar Grootte inhoudgegevensopslagruimte kunt u de grootte selecteren die van toepassing is op uw project. De overdrachtstijden variëren voor de extractie- en innamefasen.
+Er is een calculator voor het gereedschap Inhoudsoverdracht beschikbaar waarmee u kunt inschatten hoe lang het kan duren om de activiteit voor inhoudsoverdracht te voltooien. Met de schuifregelaar Grootte inhoudgegevensopslagruimte kunt u de grootte selecteren die van toepassing is op uw project. De overdrachtstijden variëren voor de extractie- en innamefasen.
+
+![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
 >[!NOTE]
 >Deze tijden zijn slechts schattingen. Factor zoals netwerksnelheden en tijd aan schaalinstanties zijn niet rekenschap gegeven in deze ramingen.

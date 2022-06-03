@@ -1,15 +1,16 @@
 ---
-title: Inhoudsoverdrachten valideren
+title: Inhoudsoverdrachten valideren (verouderd)
 description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten te valideren
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '950'
 ht-degree: 1%
 
 ---
 
-# Inhoudsoverdrachten valideren {#validating-content-transfers}
+# Inhoudsoverdrachten valideren (verouderd) {#validating-content-transfers}
 
 ## Aan de slag {#getting-started}
 
@@ -44,11 +45,11 @@ Voor een grafische illustratie hiervan, verwijs naar de voorbeelden hieronder:
 
 * **Extractie (overschrijven)**
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **Verontreiniging (sluitereffect)**
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **Opmerkingen**
 
@@ -58,11 +59,11 @@ Voor een grafische illustratie hiervan, verwijs naar de voorbeelden hieronder:
 
 * **Extractie**
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **Inname**
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **Opmerkingen**
 
@@ -127,10 +128,22 @@ Migration validation took 0 minutes
 
 Het bovenstaande mislukkingsvoorbeeld werd bereikt door een opname in werking te stellen, en dan opnieuw de zelfde inname opnieuw in werking te stellen met Wipe gehandicapt, zodat geen knopen tijdens inname betrokken waren — alles was reeds aanwezig op het doel.
 
-Het validatierapport kan niet alleen worden opgenomen in het innamelogboek, maar ook worden geopend vanuit de **Ingestietaken** gebruikersinterface in Cloud Acceleration Manager. Klik hiertoe op de drie stippen (**...**) en klik vervolgens op **Validatierapport** in de vervolgkeuzelijst om het validatierapport weer te geven.
+Het validatierapport is niet alleen opgenomen in het innamelogboek, maar kan ook worden geopend vanuit de gebruikersinterface van het gereedschap Inhoudsoverdracht. Selecteer hiertoe een migratieset en klik op de knop **Valideren** knop op de actiebalk:
 
 
-![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+
+Het dialoogvenster Validatielogbestanden wordt geopend:
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+
+Gebruik de **Rapport voor publicatie/auteur van validatie** om het validatierapport te bekijken voor de meest recente opname in de opgegeven laag van uw doelomgeving. Zie hieronder een voorbeeld van een kleine publicatieopname:
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+
+>[!NOTE]
+>
+>De **Rapport voor publicatie/auteur van validatie** Als de inname is voltooid, verschijnt er een koppeling. Bovendien, blijven de bevestigingsrapporten voortbestaan, zodat verlopen zij niet nadat de opname voltooit, zoals de innamelogboeken.
 
 ## Problemen oplossen {#troubleshooting}
 
