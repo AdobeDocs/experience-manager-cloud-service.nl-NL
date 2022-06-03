@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.6.0
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.6.0
 feature: Release Information
-source-git-commit: 717b2c851a18ef5171d64a462509ce08fb87a59c
+source-git-commit: 666635fc951ceb10e1a4a9a90a042d60da9f463a
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 2%
@@ -22,11 +22,8 @@ De releasedatum voor de analyse van best practices v2.1.30 is 1 juni 2022.
 ### Wat is er nieuw? {#what-is-new-bpa}
 
 * Mogelijkheid om het gebruik van aangepaste dialoogwidgets te detecteren en hierover verslag uit te brengen met gebruik van de widgets CoralUI en Klassieke dialoog. Het wordt aanbevolen aangepaste Klassieke Dialoogwidgets om te zetten van ExtJS in CoralUI. De widgets van het dialoogvenster Aangepast koraal moeten worden bijgewerkt naar CoralUI3.
-
 * Mogelijkheid om het gebruik en de versie van Assets Share Commons te detecteren en te rapporteren. Commons 1.x voor het delen van bedrijfsmiddelen wordt niet ondersteund op AEM as a Cloud Service en moet worden bijgewerkt naar 2.x.
-
 * Mogelijkheid om het aantal knooppunten van versies te detecteren en hierover te rapporteren.
-
 * Capaciteit om op de agenten van de douanereplicatie of uit de agenten van de doosreplicatie te ontdekken en te rapporteren die zijn gewijzigd.
 
 ### Opgeloste problemen {#bug-fixes-bpa}
