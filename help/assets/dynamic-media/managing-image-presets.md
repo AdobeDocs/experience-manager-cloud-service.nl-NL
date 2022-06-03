@@ -4,7 +4,7 @@ description: Meer informatie over voorinstellingen voor afbeeldingen en over het
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
 workflow-type: tm+mt
 source-wordcount: '3499'
 ht-degree: 7%
@@ -27,7 +27,7 @@ In deze sectie wordt beschreven hoe u voorinstellingen voor afbeeldingen maakt, 
 
 ## Meer informatie over voorinstellingen voor afbeeldingen {#understanding-image-presets}
 
-Net als bij een macro is een voorinstelling voor afbeeldingen een vooraf gedefinieerde verzameling opdrachten voor het vergroten of verkleinen en opmaken van de grootte die onder een naam zijn opgeslagen. Als u wilt weten hoe Voorinstellingen afbeelding werken, veronderstelt u dat elke productafbeelding op uw website moet worden weergegeven in verschillende formaten, formaten en compressiesnelheden voor levering op het bureaublad en op mobiele apparatuur.
+Net als bij een macro is een voorinstelling voor afbeeldingen een vooraf gedefinieerde verzameling opdrachten voor het vergroten of verkleinen en opmaken van de grootte die onder een naam zijn opgeslagen. Als u wilt weten hoe Voorinstellingen afbeelding werken, veronderstelt u dat elke productafbeelding op uw website moet worden weergegeven in verschillende formaten, formaten en compressiesnelheden voor levering op het bureaublad en in mobiele apparaten.
 
 U kunt twee voorinstellingen voor afbeeldingen maken: één met 500 x 500 pixels voor desktopversie en 150 x 150 pixels voor de mobiele versie. U maakt twee voorinstellingen voor afbeeldingen, die u één voorinstelling noemt `Enlarge` om afbeeldingen weer te geven op 500 x 500 pixels en één aangeroepen afbeelding `Thumbnail` om afbeeldingen weer te geven op 150 x 150 pixels. Als u afbeeldingen wilt leveren op de `Enlarge` en `Thumbnail` grootte, vindt de Experience Manager de definitie van de Voorinstelling Afbeelding vergroten en Voorinstelling miniatuurafbeelding. Vervolgens genereert Experience Manager dynamisch een afbeelding met de grootte en opmaakspecificaties van elke voorinstelling voor afbeeldingen.
 
@@ -236,7 +236,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
 
 * **[!UICONTROL Enable Simple Sharpening]** - Niet selecteren **[!UICONTROL Enable Simple Sharpening]** (dit verscherpingsfilter biedt minder controle dan de instellingen voor onscherpe maskering).
 
-* **[!UICONTROL Sharpening: Resampling Mode]** - Selecteer **[!UICONTROL Bi-Cubic]**.
+* **[!UICONTROL Sharpening: Resampling Mode]** - Selecteer **[!UICONTROL Sharp2]**.
 
 #### Opties op het tabblad Standaard {#basic-tab-options}
 
