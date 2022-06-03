@@ -1,17 +1,17 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.6.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.6.0
+title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.5.0
+description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.5.0
 feature: Release Information
-source-git-commit: 666635fc951ceb10e1a4a9a90a042d60da9f463a
+source-git-commit: 48dd6b3184cdde06b902eae35fac42515f606e77
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 2%
 
 ---
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.6.0 {#release-notes}
+# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.5.0 {#release-notes}
 
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.6.0.
+Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.5.0.
 
 ## Analysator van best practices {#bpa-release}
 
