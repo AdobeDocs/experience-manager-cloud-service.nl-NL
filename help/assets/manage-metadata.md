@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1940'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Metagegevens zijn de verzameling van alle gegevens die beschikbaar zijn voor een
 * Naam van de map waarin deze zich bevindt.
 * Gerelateerde elementen of toegepaste tags.
 
-Het bovenstaande zijn de basiseigenschappen van metagegevens die [!DNL Experience Manager] kan beheren voor elementen, waardoor gebruikers alle elementen kunnen zien. Het is bijvoorbeeld handig elementen te bestellen op de laatste wijzigingsdatum wanneer u onlangs toegevoegde elementen probeert te vinden.
+Het bovenstaande zijn de basiseigenschappen van metagegevens die [!DNL Experience Manager] kan beheren voor elementen, waardoor gebruikers alle elementen kunnen zien. Het is bijvoorbeeld handig elementen te bestellen op de laatste wijzigingsdatum wanneer u onlangs toegevoegde of gewijzigde elementen probeert te detecteren.
 
 U kunt meer gegevens op hoog niveau toevoegen aan digitale elementen, bijvoorbeeld:
 
@@ -67,6 +67,21 @@ Technische metagegevens zijn handig voor softwaretoepassingen die werken met dig
 De beschrijvende meta-gegevens zijn meta-gegevens betrokken bij het toepassingsdomein, bijvoorbeeld, de zaken die een activa uit komt. Metagegevens met een beschrijving kunnen niet automatisch worden bepaald. Deze wordt handmatig of halfautomatisch gemaakt. Een camera met GPS-functionaliteit kan bijvoorbeeld automatisch de breedte en lengte bijhouden en geotaggen aan de afbeelding toevoegen.
 
 De kosten voor het handmatig maken van beschrijvende metagegevens zijn hoog. Er worden dus standaarden ingesteld om de uitwisseling van metagegevens tussen softwaresystemen en organisaties te vergemakkelijken. [!DNL Experience Manager Assets] ondersteunt alle relevante normen voor metagegevensbeheer.
+
+## Metagegevens en laatste wijziging {#last-modification}
+
+De datum van laatste wijziging van een element geeft de laatste keer weer dat het oorspronkelijke bestand voor een element wordt gewijzigd. De wijzigingsdatum en -gebruiker worden daarom alleen gewijzigd als:
+
+* Er wordt een nieuwe versie van het element geüpload
+* Een actief wordt opnieuw verwerkt
+
+De laatste wijzigingsdatum en -gebruiker worden niet gewijzigd:
+
+* Wanneer een element wordt verplaatst of hernoemd
+* Wanneer een element is uitgecheckt, is deze ingecheckt of is de versie
+* Wanneer een actief wordt gepubliceerd of niet gepubliceerd
+* Updates van metagegevens
+* Referentie- of verzamelingsupdates
 
 ## Coderingsnormen {#encoding-standards}
 
