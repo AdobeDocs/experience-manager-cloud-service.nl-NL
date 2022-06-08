@@ -2,7 +2,7 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
+source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 1%
@@ -58,7 +58,7 @@ Een boomactivering uitvoeren:
 
 Houd u aan de volgende richtlijnen wanneer u deze functie gebruikt voor de beste prestaties:
 * Het wordt aanbevolen minder dan 100 paden tegelijk te repliceren, met een harde limiet van 500 paden.
-* De totale grootte van de gerepliceerde inhoud moet kleiner zijn dan 5 MB. Dit omvat enkel de knopen en de eigenschappen, maar geen binaire getallen, die werkschemapakketten en inhoudspakketten omvatten.
+* De totale grootte van de gerepliceerde inhoud moet kleiner zijn dan 10 MB. Dit omvat enkel de knopen en de eigenschappen, maar geen binaire getallen, die werkschemapakketten en inhoudspakketten omvatten.
 
 ### Workflow van inhoudsstructuur publiceren {#publish-content-tree-workflow}
 
@@ -194,7 +194,7 @@ De `ReplicationStatus` van een middel wordt slechts gewijzigd als de replicatiea
 
 **Paden en grootten van de API voor replicatie**
 
-Het wordt aanbevolen minder dan 100 paden te repliceren, waarbij 500 de harde limiet is. Boven de harde grens, zal een ReplicationException worden geworpen. Als uw toepassingslogica atomische replicatie niet vereist, kan deze grens worden overwonnen door ReplicationOptions.setUseAtoomcall aan vals te plaatsen, die om het even welk aantal wegen zal goedkeuren, maar intern emmers creëren om onder deze grens te blijven. De hoeveelheid inhoud die per replicatievraag wordt overgebracht moet niet 5 MB overschrijden, die de knopen en de eigenschappen omvat, maar geen binaire getallen (werkschemapakketten en inhoudspakketten worden beschouwd als binaire getallen).
+Het wordt aanbevolen minder dan 100 paden te repliceren, waarbij 500 de harde limiet is. Boven de harde grens, zal een ReplicationException worden geworpen. Als uw toepassingslogica atomische replicatie niet vereist, kan deze grens worden overwonnen door ReplicationOptions.setUseAtoomcall aan vals te plaatsen, die om het even welk aantal wegen zal goedkeuren, maar intern emmers creëren om onder deze grens te blijven. De hoeveelheid inhoud die per replicatievraag wordt overgebracht moet niet 10 MB overschrijden, die de knopen en de eigenschappen omvat, maar geen binaire getallen (werkschemapakketten en inhoudspakketten worden beschouwd als binaire getallen).
 
 ## Problemen oplossen {#troubleshooting}
 
