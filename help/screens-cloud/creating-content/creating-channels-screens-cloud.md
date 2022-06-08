@@ -2,9 +2,9 @@
 title: Kanalen maken en beheren in as a Cloud Service schermen
 description: In deze pagina wordt beschreven hoe u kanalen in as a Cloud Service schermen maakt en beheert.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: afcee8019c9b59f3eb1fdcabd569272eeea76dab
+source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1107'
 ht-degree: 1%
 
 ---
@@ -174,4 +174,4 @@ Dit kan dan ook leiden tot lege schermen als er geen alternatieve inhoud op die 
 
 ## Volgende functies {#whats-next}
 
-Nu u een AEM Screens-kanaal hebt ingesteld in uw project, moet u uw kanaal publiceren. Zie [Kanalen in as a Cloud Service schermen publiceren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) voordat u uw spelers beheert bij Screens Services Provider.
+Nu u een AEM Screens-kanaal hebt ingesteld in uw project, moet u uw kanaal publiceren. Zie [Kanalen in as a Cloud Service schermen publiceren](manage-publish.md) voordat u uw spelers beheert bij Screens Services Provider.

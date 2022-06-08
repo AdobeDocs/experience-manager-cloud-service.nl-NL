@@ -2,7 +2,7 @@
 title: Een kanaal publiceren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u een kanaal in as a Cloud Service schermen publiceert.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -49,4 +49,4 @@ Voer de onderstaande stappen uit om het kanaal te publiceren:
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u uw kanalen in het project hebt gepubliceerd, zou u uw as a Cloud Service reis van de Schermen door het document opnieuw te bekijken nu moeten voortzetten, [Players in as a Cloud Service schermen installeren en configureren](/help/screens-cloud/creating-content/manage-publish.md).
+Nu, dat u uw kanalen in het project hebt gepubliceerd, zou u uw as a Cloud Service reis van de Schermen door het document opnieuw te bekijken nu moeten voortzetten, [Players in as a Cloud Service schermen installeren en configureren](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

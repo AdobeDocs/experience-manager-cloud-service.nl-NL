@@ -2,9 +2,9 @@
 title: Een project maken in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u een project maakt in as a Cloud Service schermen.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 7a11ce1ce5862068b3087848065b661b13bed1e0
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ Voer de onderstaande stappen uit om een bestaand project te verwijderen uit de I
 
 ## Volgende functies {#whats-next}
 
-Nu u een AEM Screens-project hebt ingesteld, kunt u een nieuw kanaal maken en inhoud aan de kanalen toevoegen. Zie [Een kanaal maken en beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en) om te leren om inhoud in Kanalen tot stand te brengen en te beheren.
+Nu u een AEM Screens-project hebt ingesteld, kunt u een nieuw kanaal maken en inhoud aan de kanalen toevoegen. Zie [Een kanaal maken en beheren](creating-channels-screens-cloud.md) om te leren om inhoud in Kanalen tot stand te brengen en te beheren.
