@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2022.5.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.5.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2022.6.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.6.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: c48d6f553c6a973a200fb11c2112beaf9be16d1c
+source-git-commit: af1ab1602506cc174e0226a7572ccb12d8ff527a
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 1%
+source-wordcount: '300'
+ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2022.5.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2022.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.5.0 in AEM as a Cloud Service.
+Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.6.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,17 +21,20 @@ Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.5
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2022.5.0 in AEM as a Cloud Service mei 2022. De volgende release is gepland voor 9 juni 2022.
+De releasedatum voor Cloud Manager versie 2022.6.0 in AEM as a Cloud Service 9 juni 2022. De volgende release is gepland voor 30 juni 2022.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* De pagina Omgevingen heeft een kolom om AEM Versie van milieu te tonen.
-* De uitvoering van de pijpleiding zal nu fouten op het hoogste niveau UI op het uitvoeringsscherm tonen.
-* Voer de stap Productie-implementatie opnieuw uit via de gebruikersinterface van Cloud Manager.
-* Maak images opnieuw om de productiestap opnieuw uit te voeren.
-* Nieuwe API om zelfbediening schrapping van netwerkinfrastructuur toe te laten.
+* De interface van Cloud Manager is nu beschikbaar [zelfbediening voor het herstellen van inhoud](/help/operations/backup.md) naar een bekende goede staat van de AEM wolkenomgeving.
+   * Dit onderdeel wordt geleidelijk ingevoerd in de weken na de release van 2022.06.0.
+* Een nieuwe welkomstkaart op de landingspagina van Cloud Manager biedt gebruikers snel toegang tot zelfstudies aan boord en voortgangsgegevens voor de huurder.
+   * Deze functie wordt in de week na de release van 2022.06.0 geleidelijk ingevoerd.
+* Gebruikers met de vereiste machtigingen hebben toegang tot een nieuwe [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.md) op de landingspagina van Cloud Manager om details te bekijken van rechten waarover de huurder beschikt.
+   * AEM Sites is de eerste oplossing waarvoor beschikbaarheid en verbruik via het dashboard voor Cloud Manage worden geleverd.
+   * Dit onderdeel wordt geleidelijk ingevoerd in de weken na de release van 2022.06.0.
+* [Nieuw Relic sub-account en self-service gebruikersbeheer](/help/implementing/cloud-manager/user-access-new-relic.md) is nu beschikbaar via de interface van Cloud Manager.
+   * Dit onderdeel wordt geleidelijk ingevoerd in de weken na de release van 2022.06.0.
+* Een nieuwe Go Live-widget op de homepage van productieprogramma&#39;s voor Cloud Servicen biedt nu richtlijnen voor het voorbereiden van een geslaagde live-ervaring.
+* [Buildartefacten kunnen nu opnieuw worden gebruikt](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) bij gebruik van git spiegelen.
 
 ## Opgeloste problemen {#bug-fixes}
-
-* Met de knop Logbestanden downloaden uit de statuslogboeken van de UI Test worden de logbestanden niet gedownload.
-* Sommige executies bleven vastzitten in de context van het plegen van een trigger en het annuleren van een goedkeuringsstap.

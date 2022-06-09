@@ -2,9 +2,9 @@
 title: Programma's bewerken
 description: Leer hoe u uw productie- en sandboxprogramma's kunt bewerken om de opties aan te passen nadat u deze hebt gemaakt.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,13 @@ Voer de volgende stappen uit om een programma te bewerken.
 
    ![Programma bewerken, optie](assets/edit-program-overview.png)
 
-1. De **Programma bewerken** Er worden twee tabbladen weergegeven: **Algemeen** en **Oplossingen en invoegtoepassingen**. Selecteer **Algemeen** om de naam en beschrijving van het programma te bewerken.
+1. De **Programma bewerken** pagina wordt geopend. Op de **Algemeen** bewerken.
 
    * Voor een programma moet ten minste één oplossing worden gekozen.
 
    ![Tabblad Algemeen](assets/edit-program-prod1.png)
 
-1. Selecteer **Oplossingen en invoegtoepassingen** om de oplossingen voor het programma te wijzigen.
+1. Op de **Oplossingen en invoegtoepassingen** wijzigt u de oplossingen voor het programma.
 
    ![Oplossingen selecteren](assets/edit-prg.png)
 
@@ -46,9 +46,15 @@ Voer de volgende stappen uit om een programma te bewerken.
 
    ![Invoegtoepassingen bewerken](assets/edit-program-add-on.png)
 
+1. Op de **Live-instellingen** wijzigen, wijzigt u de geplande datum voor de introductie van het programma.
+
+   ![Instellingen voor go-live bewerken](assets/edit-program-go-live.png)
+
+   * Deze datum is alleen bedoeld voor informatief gebruik en activeert de widget Go Live op de overzichtspagina van het programma om op tijd koppelingen naar AEM as a Cloud Service documentatie over best practices te bieden, zodat deze op de juiste manier kunnen worden afgestemd op uw reis en een geslaagde en vloeiende Go Live-ervaring tot resultaat hebben.
+
 1. Klikken op **Bijwerken** om uw wijzigingen in het programma op te slaan.
 
-Zodra uw updates worden aangebracht, als de geselecteerde oplossingen zijn veranderd, zullen die veranderingen na de volgende plaatsing van kracht worden.
+Elke keer dat een programma wordt bewerkt, inclusief het toevoegen of verwijderen van een oplossing of invoegtoepassing, worden deze wijzigingen van kracht na de volgende implementatie.
 
 ## Sandbox-programma&#39;s verwijderen {#delete-sandbox-program}
 
