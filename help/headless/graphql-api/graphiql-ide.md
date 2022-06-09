@@ -3,9 +3,9 @@ title: Het gebruiken van GrahiQL winde in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '960'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,9 @@ Tenuitvoerlegging van de norm [GraphiQL](https://graphql.org/learn/serving-over-
 
 >[!NOTE]
 >
->Een deel van de functionaliteit van deze functie is beschikbaar in het prereleasekanaal. Met name functionaliteit met betrekking tot doorlopende query&#39;s.
-> 
->Zie de [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen.
-
->[!NOTE]
+>GraphiQL is inbegrepen in alle milieu&#39;s van AEM (maar zal slechts toegankelijk/zichtbaar zijn wanneer u uw eindpunten vormt).
 >
->GraphiQL is inbegrepen in AEM, maar door gebrek wordt het slechts toegelaten op `dev-authors` omgevingen.
+>In vorige versies was een pakket nodig om GraphiQL IDE te installeren. Als u deze installatie hebt, kunt u deze nu verwijderen.
 
 >[!NOTE]
 >U moet [Uw eindpunten geconfigureerd](/help/headless/graphql-api/graphql-endpoint.md) in de [configuratievenster](/help/assets/content-fragments/content-fragments-configuration-browser.md) voordat u GraphiQL IDE gebruikt.
@@ -35,7 +31,7 @@ De **GraphiQL** het hulpmiddel staat u toe om uw vragen te testen en te zuiveren
 * stel uw vragen in werking om de resultaten onmiddellijk te zien
 * beheren **Query-variabelen**
 * opslaan en beheren **Blijvende query&#39;s**
-* publiceren of publiceren ongedaan maken, **Blijvende query&#39;s** (van `dev-publish`)
+* publiceren of publiceren ongedaan maken, **Blijvende query&#39;s** (bijvoorbeeld van/naar `dev-publish`)
 * zie **Historie** van uw vorige vragen
 * gebruiken **Documentatieverkenner** toegang tot de documentatie; helpen u te leren en te begrijpen welke methoden beschikbaar zijn.
 
@@ -46,7 +42,7 @@ U kunt tot de vraagredacteur van één van beiden toegang hebben:
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
-U kunt GraphiQL op uw systeem van de ontwikkelauteur gebruiken zodat zij door uw cliënttoepassing kunnen worden gevraagd gebruikend verzoeken, en het publiceren vragen. Voor productiegebruik moet u vervolgens [verplaats uw vragen naar uw productieomgeving](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Aanvankelijk aan productieauteur voor het bevestigen van onlangs authored inhoud met de vragen, en productie publiceren voor levende consumptie.
+U kunt GraphiQL op uw systeem gebruiken zodat de vragen door uw cliënttoepassing kunnen worden gevraagd gebruikend verzoeken, en voor het publiceren van vragen. Voor productiegebruik kunt u vervolgens [verplaats uw vragen naar uw productieomgeving](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Aanvankelijk aan productieauteur voor het bevestigen van onlangs authored inhoud met de vragen, en productie publiceren voor levende consumptie.
 
 ## Het selecteren van uw eindpunt {#selecting-endpoint}
 
@@ -100,9 +96,9 @@ Bijvoorbeeld:
 
 ![GrafiekQL-variabelen](assets/cfm-graphqlapi-03.png "GrafiekQL-variabelen")
 
-## Doorlopende query&#39;s publiceren (dev-publish) {#publishing-persisted-queries}
+## Het publiceren van voortgeduurde vragen {#publishing-persisted-queries}
 
-Als u de doorlopende query in de lijst hebt geselecteerd (linkerdeelvenster), kunt u de opdracht **Publiceren** en **Publiceren ongedaan maken** handelingen. Hiermee worden ze geactiveerd in uw ontwikkelings-publicatieomgeving (`dev-publish`) voor eenvoudige toegang door uw toepassingen tijdens het testen.
+Als u de doorlopende query in de lijst hebt geselecteerd (linkerdeelvenster), kunt u de opdracht **Publiceren** en **Publiceren ongedaan maken** handelingen. Hiermee worden ze geactiveerd in uw publicatieomgeving (bijvoorbeeld `dev-publish`) voor eenvoudige toegang door uw toepassingen tijdens het testen.
 
 >[!NOTE]
 >

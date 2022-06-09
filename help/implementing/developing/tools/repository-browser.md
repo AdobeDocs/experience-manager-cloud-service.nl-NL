@@ -4,7 +4,7 @@ seo-title: Repository Browser
 description: De repository browser biedt een alleen-lezen weergave in de repository voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
+source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -65,6 +65,18 @@ De browser van de repository kan worden gestart door de onderstaande stappen te 
 Met het navigatievenster aan de linkerkant kunt u de inhoudshiërarchie doorlopen. Als u op elke map of elk knooppunt klikt, worden de onderliggende items van de map of het knooppunt weergegeven. De mappenstructuur weerspiegelt de boomstructuur Sling Resource, een superset van de JCR Node-structuur.
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
+
+<!-- Alexandru: temporarily commenting this out, please don't delete. 
+
+Alternatively, you can navigate directly to a path by entering it in the **Path** field, as shown below. This will also expand its location in the content hierarcy view on the left.
+
+![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
+
+Whenever you click a folder on the left, the Path field automatically populates with its location. This is useful for copying and pasting the value for later usage.
+
+Additionally, when you click on a folder, the URL is dynamically modified to include the path to that folder. This allows for bookmarkable URLs.
+
+-->
 
 Voor publiceren, door gebrek, zal Browser van de Bewaarplaats slechts openbare inhoud tonen, zo bepaalde omslagen zoals `/conf` of `/home` is niet zichtbaar.
 

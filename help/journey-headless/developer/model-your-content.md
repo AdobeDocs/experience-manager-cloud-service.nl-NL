@@ -2,7 +2,7 @@
 title: Uw inhoud modelleren
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw inhoud voor AEM levering zonder kop kunt modelleren met behulp van Content Modeling with Content Fragment Models and Content Fragments.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -214,7 +214,7 @@ Bij het allereerste begin moet u de Modellen van het Fragment van de Inhoud voor
 >
 >Zie Extra Middelen - de Fragmenten van de Inhoud in Browser van de Configuratie
 
-Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. U doet dit onder Gereedschappen -> Middelen -> Modellen voor inhoudsfragmenten. Bijvoorbeeld:
+Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. Dit kan worden gedaan in het kader van **Gereedschappen** -> **Algemeen** -> **Modellen van inhoudsfragmenten**. Bijvoorbeeld:
 
 ![Inhoudsfragmentmodel](assets/cfm-model.png)
 

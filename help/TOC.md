@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d379c0fe84c566923682e058f212b805a03fb533
+source-git-commit: 4f0ba5de5d1e4c0163c411dd611cb0ca09798dba
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3594'
 ht-degree: 23%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 23%
    + [Terminologie - Nieuw voor de cloud](/help/overview/terminology.md)
    + [Inleiding tot de architectuur van AEM as a Cloud Service](/help/overview/architecture.md)
    + [SEO- en URL-beheer](/help/overview/seo-and-url-management.md)
+   + [AEM as a Cloud Service op Verenigde Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [KPI&#39;s evalueren](/help/overview/assessing-kpis.md)
    + [KPI&#39;s uitlijnen](/help/overview/aligning-kpis.md)
    + [Het juiste team kiezen](/help/overview/choose-right-team.md)
@@ -33,6 +34,7 @@ ht-degree: 23%
    + Algemene opmerkingen bij de release van AEMaaCS {#release-notes}
       + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [Opmerkingen bij de release 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [Opmerkingen bij de release 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
          + [Opmerkingen bij de release 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
@@ -358,6 +360,7 @@ ht-degree: 23%
       + [Digital Rights Management voor elementen](/help/assets/drm.md)
       + [Watermerkelementen](/help/assets/watermark-assets.md)
       + [Elementen verwerken met [!DNL Creative Cloud] API&#39;s](/help/assets/cc-api-integration.md)
+      + [Kleurlabels voor afbeeldingen](/help/assets/color-tag-images.md)
    + Configureren, beheren en uitbreiden [!DNL Assets] {#admin}
       + [Referenties van ontwikkelaarsdocumenten en -API&#39;s](/help/assets/developer-reference-material-apis.md)
       + [Metadataschema van map](/help/assets/folder-metadata-schema.md)
@@ -612,6 +615,7 @@ ht-degree: 23%
       + [GraphQL-eindpunt](/help/headless/setup/create-api-request.md)
    + Contentfragmenten {#content-fragments}
       + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+      + [Console voor inhoudsfragmenten](/help/headless/content-fragments/content-fragment-console.md)
       + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
       + [Beheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
       + Authoring{#authoring}

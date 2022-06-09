@@ -3,9 +3,9 @@ title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+source-git-commit: 0ff90afca3fb72ac6d0a79793a332c1c2172cd67
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1430'
 ht-degree: 2%
 
 ---
@@ -13,12 +13,6 @@ ht-degree: 2%
 # Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s {#learn-graphql-with-aem-sample-content-queries}
 
 Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
-
->[!NOTE]
->
->Een deel van de functionaliteit van deze functie is beschikbaar in het prereleasekanaal. Met name functionaliteit met betrekking tot doorlopende query&#39;s.
-> 
->Zie de [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen.
 
 >[!NOTE]
 >

@@ -2,7 +2,7 @@
 title: Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM
 description: Leer over de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 2%
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Modellen voor inhoudsfragmenten maken {#creating-content-fragment-models}
 
-Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. U doet dit onder Gereedschappen -> Middelen -> Modellen voor inhoudsfragmenten.
+Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. Dit kan worden gedaan in het kader van **Gereedschappen** -> **Algemeen** -> **Modellen van inhoudsfragmenten**.
 
 ![Modellen van inhoudsfragmenten in gereedschappen](assets/cfm-tools.png)
 
@@ -110,7 +110,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap het creëren van uw ei
 
 * [Authoring van concepten](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** -console, maar veel/de meeste functies zijn ook relevant voor het navigeren naar en het uitvoeren van actie op **Modellen van inhoudsfragmenten** onder de **Activa** console.
+* [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** -console, maar veel/de meeste functies zijn ook relevant voor het navigeren naar en het uitvoeren van actie op **Modellen van inhoudsfragmenten** onder de **Algemeen** console.
 
 * [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
 

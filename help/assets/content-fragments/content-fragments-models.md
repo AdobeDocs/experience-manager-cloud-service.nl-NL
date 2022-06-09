@@ -4,7 +4,7 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '2892'
 ht-degree: 3%
@@ -24,7 +24,7 @@ U kunt als volgt modellen van inhoudsfragmenten gebruiken:
 
 ## Een inhoudsfragmentmodel maken {#creating-a-content-fragment-model}
 
-1. Navigeren naar **Gereedschappen**, **Activa** en vervolgens openen **Modellen van inhoudsfragmenten**.
+1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
 1. Navigeer naar de map die geschikt is voor uw [configuratie](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Gebruiken **Maken** om de wizard te openen.
 
@@ -46,7 +46,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 >
 >Het bewerken van een bestaand inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
 
-1. Navigeren naar **Gereedschappen**, **Activa** en vervolgens openen **Modellen van inhoudsfragmenten**.
+1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
 1. Open het vereiste model voor **Bewerken**; gebruik de snelle actie of selecteer het model en de actie op de werkbalk.
@@ -400,7 +400,7 @@ De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als v
 
 Een inhoudsfragmentmodel verwijderen:
 
-1. Navigeren naar **Gereedschappen**, **Activa** en vervolgens openen **Modellen van inhoudsfragmenten**.
+1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
 1. Selecteer uw model, gevolgd door **Verwijderen** op de werkbalk.
@@ -415,7 +415,7 @@ Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke 
 
 Een fragmentmodel voor inhoud publiceren:
 
-1. Navigeren naar **Gereedschappen**, **Activa** en vervolgens openen **Modellen van inhoudsfragmenten**.
+1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
 1. Selecteer uw model, gevolgd door **Publiceren** op de werkbalk.
@@ -431,7 +431,7 @@ Inhoudsfragmentmodellen kunnen ongepubliceerd zijn als naar deze modellen niet w
 
 Publicatie van een inhoudsfragmentmodel ongedaan maken:
 
-1. Navigeren naar **Gereedschappen**, **Activa** en vervolgens openen **Modellen van inhoudsfragmenten**.
+1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
 1. Selecteer uw model, gevolgd door **Publiceren ongedaan maken** op de werkbalk.

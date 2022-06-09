@@ -2,7 +2,7 @@
 title: Modellen voor inhoudsfragmenten maken - Instellingen zonder kop
 description: Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en i
 
 Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de nieuwe modellen worden vereist. Om aan de slag te kunnen gaan, hoeven we maar één model te maken.
 
-1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen -> Middelen -> Modellen van inhoudsfragmenten**.
+1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen**, **Algemeen**, **Modellen van inhoudsfragmenten**.
 1. Tik of klik op de map die u hebt gemaakt door uw configuratie te maken.
 
    ![De map Modellen](../assets/models-folder.png)

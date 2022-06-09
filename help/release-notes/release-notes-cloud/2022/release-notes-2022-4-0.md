@@ -1,0 +1,96 @@
+---
+title: Opmerkingen bij de release 2022.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Opmerkingen bij de release 2022.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+source-git-commit: 53d5dbd53ec1e2dcb20b2b91f0cb020e9e35659c
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 0%
+
+---
+
+
+# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+
+In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
+
+>[!NOTE]
+>
+>Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021, enzovoort.
+
+>[!NOTE]
+>
+>Zie [Recente documentatieupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor meer informatie over documentatie-updates die niet rechtstreeks verband houden met een release.
+
+## Releasedatum {#release-date}
+
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release (2022.4.0) is 5 mei 2022.
+De volgende release (2022.5.0) is gepland voor 9 juni 2022.
+
+## Video vrijgeven {#release-video}
+
+Kijk eens naar de [Overzicht release april 2022](https://video.tv.adobe.com/v/342612?quality=12) video voor een overzicht van de functies die in de release 2022.4.0 zijn toegevoegd.
+
+## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
+
+### Nieuwe functies in [!DNL Sites] {#sites-features}
+
+* Gegevenstypen van inhoudsmodel kunnen nu worden gedefinieerd als [vertaalbaar](/help/assets/content-fragments/content-fragments-models.md#properties) het gebruiken van een eenvoudig controlevakje in de redacteur van het inhoudsmodel. Bovendien worden AEM vertaalregels en configuraties automatisch bijgewerkt.
+
+## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
+
+### Nieuwe functies in [!DNL Assets] {#assets-features}
+
+* U kunt nu [sorteertags](/help/assets/organize-assets.md#use-tags-to-organize-assets) in het venster met de tagkiezer in oplopende of aflopende volgorde op basis van de tagnaam, aanmaakdatum of wijzigingsdatum.
+
+
+## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
+
+### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
+
+* **Communicatie - Ondersteuning voor API&#39;s voor documentmanipulatie in Forms as a Cloud Service SDK**: [Documentmanipulatie-API&#39;s](/help/forms/aem-forms-cloud-service-communications.md) Help bij het combineren, herschikken en valideren van PDF-documenten. U kunt nu communicatie - API&#39;s voor documentgeneratie gebruiken in een lokale ontwikkelomgeving met behulp van de as a Cloud Service SDK van AEM Forms.
+
+* **Aangepaste XCI gebruiken voor het genereren van een document met records**: U kunt nu [gebruik een aangepast XCI-bestand om verschillende eigenschappen van een document of record in te stellen](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Het treedt master XCI met de douaneveranderingen met voeten. Het verstrekt meer controle over de generatie van Documenten van Verslag, het verhogen van verpersoonlijking, en aanpassingskansen.
+
+* **Onzichtbare CAPTCHA gebruiken in een adaptieve vorm**: U kunt de [onzichtbare CAPTCHA om de CAPTCHA-uitdaging alleen te laten zien in het geval van een verdachte activiteit](/help/forms/captcha-adaptive-forms.md). Als er geen verdachte activiteit wordt gevonden, wordt de CAPTCHA-uitdaging niet weergegeven. Het helpt menselijke vormvoltooiing zonder controledoosvereisten beoordelen, aanpassingsinspanningen verminderen, en de eindgebruikerservaring verbeteren.
+
+* **Configuraties van formuliergegevensmodellen**: U kunt nu [Configuraties van het formuliergegevensmodel opnieuw gebruiken in verschillende omgevingen](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config), het vereenvoudigen van gegevensintegratie en het verlagen van IT-kosten.
+
+## CIF-invoegtoepassing {#cloud-services-cif}
+
+### Nieuwe functies {#what-is-new-cif}
+
+* Snelle toegang tot productcockpit: Eenvoudig toegang tot volledige gedetailleerde productinformatie met één klik in de Editor voor sites
+
+   ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
+
+* Steun voor extra marketingcomponenten: De componenten kunnen worden gevormd om toe:voegen-aan-kar en toe:voegen-aan-wenslijst vraag-aan-actie te tonen
+
+   ![Snelkoppeling naar productcockpit in Sites-editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+
+## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
+
+### SDK Build Analyzers {#sdk-build-analyzers}
+
+De AEM as a Cloud Service SDK bouwt Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling op te sporen, ruim voordat ze met Cloud Manager naar een cloud-omgeving implementeren.
+
+Er is onlangs een nieuwe analysator toegevoegd:
+
+* `content-packages-validation` - valideert voor een goed gevormde inhoudssyntaxis en -structuur voor pakketten die tijdens de implementatie worden geïnstalleerd
+
+U wordt ten zeerste aangeraden uw gemaakte project bij te werken met de nieuwste versie van de analysator of de analysator op te nemen als u dat nog niet hebt gedaan. Raadpleeg de documentatie voor meer informatie [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
+
+## [!DNL Experience Manager] als [!DNL Cloud Service] Foundation Security {#foundation-security}
+
+### TLS 1.0, 1.1-afleiding
+
+Vanaf 30 juni 2022 is voor as a Cloud Service Experience Manager een veiligere netwerkcommunicatie en gegevensuitwisseling met gebruikerssystemen vereist. AEM zal uitsluitend de Veiligheid van de Laag van het Vervoer (TLS), 1.2 protocol gebruiken. Oudere TLS versies 1.0 en 1.1 worden vervangen.
+
+Als u oudere versies van TLS blijft gebruiken als 1.0 of 1.1, kan de toegang tot as a Cloud Service Experience Manager verloren gaan.
+
+## Cloud Manager {#cloud-manager}
+
+U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+
+## Migratiehulpmiddelen {#migration-tools}
+
+U kunt een volledige lijst vinden van de versies van de Hulpmiddelen van de Migratie [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

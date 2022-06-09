@@ -2,7 +2,7 @@
 title: Ga aan de slag met AEM headless Translation
 description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -78,7 +78,7 @@ De inhoudarchitect werkt in een vroeg stadium van het project om deze structuur 
 
 Omdat de inhoudsmodellen de structuur van uw inhoud bepalen, moet u weten welke gebieden van uw modellen moeten worden vertaald. In het algemeen werkt u met de inhoudarchitect om dit te definiëren. Volg onderstaande stappen om door de velden van uw inhoudsmodellen te bladeren.
 
-1. Navigeren naar **Gereedschappen** -> **Activa** -> **Modellen van inhoudsfragmenten**.
+1. Navigeren naar **Gereedschappen** -> **Algemeen** -> **Modellen van inhoudsfragmenten**.
 1. Modellen van inhoudsfragmenten worden over het algemeen opgeslagen in een mapstructuur. Tik of klik op de map voor uw project.
 1. De modellen worden vermeld. Tik of klik op het model om de details weer te geven.
    ![Modellen van contentfragmenten](assets/content-fragment-models.png)

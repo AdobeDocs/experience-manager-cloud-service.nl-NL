@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8c432f8902d005918c4fd4432d23c3140967c773
+source-git-commit: 036d8b590bc9ca9dcbe4dd3e34bc14cc2d8a79e1
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -25,60 +25,72 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release (2022.4.0) is 5 mei 2022.
-De volgende release (2022.5.0) is gepland voor 9 juni 2022.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release (2022.5.0) is 9 juni 2022.
+De volgende release (2022.6.0) is gepland voor 30 juni 2022.
 
 ## Video vrijgeven {#release-video}
 
-Kijk eens naar de [Overzicht release april 2022](https://video.tv.adobe.com/v/342612?quality=12) video voor een overzicht van de functies die in de release 2022.4.0 zijn toegevoegd.
+Bekijk de video Overzicht van de release van mei 2022 voor een overzicht van de functies die in de release van 2022.5.0 zijn toegevoegd:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343321/?quality=12)
 
 ## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
 
 ### Nieuwe functies in [!DNL Sites] {#sites-features}
 
-* Gegevenstypen van inhoudsmodel kunnen nu worden gedefinieerd als [vertaalbaar](/help/assets/content-fragments/content-fragments-models.md#properties) het gebruiken van een eenvoudig controlevakje in de redacteur van het inhoudsmodel. Bovendien worden AEM vertaalregels en configuraties automatisch bijgewerkt.
+### Nieuwe functies beschikbaar in [!DNL Sites] prerelease-kanaal {#prerelease-features-sites}
+
+* Verschillende GraphQL-functies
+* Een nieuwe console die is geoptimaliseerd voor Headless-gebruik van Content Fragments
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* U kunt nu [sorteertags](/help/assets/organize-assets.md#use-tags-to-organize-assets) in het venster met de tagkiezer in oplopende of aflopende volgorde op basis van de tagnaam, aanmaakdatum of wijzigingsdatum.
+* [Dynamic Media Smart Imaging](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) biedt nu ondersteuning voor AVIF-bestandsindeling - verdere verbetering van Google Core Web Vital (Grootste voorwaardelijke verf), waarbij AVIF een extra reductie van 20% biedt ten opzichte van WebP. In totaal kan AVIF tot 41% reductie van gemiddelde grootte bieden in vergelijking met JPEG (in sommige afbeeldingen zelfs tot 76%).
+
+* [!UICONTROL Experience Manager Assets Brand Portal] Voert nu om de twaalf uur automatische taken uit om alle Brand Portal-middelen te verwijderen die naar AEM worden gepubliceerd. U hoeft daarom de middelen in de map Contribution niet handmatig te verwijderen om de mapgrootte onder de drempelwaarde te houden. Zie [Nieuwe functies in Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+
+### Nieuwe functies beschikbaar in [!DNL Assets] prerelease-kanaal {#prerelease-features-assets}
+
+Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [onderscheid maken tussen kleuren in een afbeelding en deze als tags automatisch toepassen bij opname](../../assets/color-tag-images.md). Deze tags maken een verbeterde zoekervaring mogelijk op basis van de compositie van de afbeeldingskleur. U kunt het aantal kleuren binnen een bereik van 1 tot 40 configureren dat aan een afbeelding is gelabeld, zodat u later kunt zoeken naar afbeeldingen op basis van die kleuren.
+
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
-### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
+### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
 
-* **Communicatie - Ondersteuning voor API&#39;s voor documentmanipulatie in Forms as a Cloud Service SDK**: [Documentmanipulatie-API&#39;s](/help/forms/aem-forms-cloud-service-communications.md) Help bij het combineren, herschikken en valideren van PDF-documenten. U kunt nu communicatie - API&#39;s voor documentgeneratie gebruiken in een lokale ontwikkelomgeving met behulp van de as a Cloud Service SDK van AEM Forms.
+* **Adaptieve Forms integreren met Microsoft® Power Automate**: U kunt nu een adaptief formulier configureren om bij verzending een Microsoft® Power Automate Cloud Flow uit te voeren. Met het geconfigureerde adaptieve formulier worden vastgelegde gegevens, bijlagen en het document met records naar Power Automate Cloud Flow verzonden voor verwerking. Het helpt u om een aangepaste ervaring op het gebied van gegevensvastlegging op te bouwen en tegelijk de kracht van Microsoft® Power Automate te benutten om bedrijfslogics rond vastgelegde gegevens te bouwen en de workflows van klanten te automatiseren.
 
-* **Aangepaste XCI gebruiken voor het genereren van een document met records**: U kunt nu [gebruik een aangepast XCI-bestand om verschillende eigenschappen van een document of record in te stellen](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Het treedt master XCI met de douaneveranderingen met voeten. Het verstrekt meer controle over de generatie van Documenten van Verslag, het verhogen van verpersoonlijking, en aanpassingskansen.
+* **Wizard voor het maken van een adaptief formulier**: Met een gebruiksvriendelijke wizard kunt u snel Adaptive Forms ontwerpen. De wizard biedt een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken.
 
-* **Onzichtbare CAPTCHA gebruiken in een adaptieve vorm**: U kunt de [onzichtbare CAPTCHA om de CAPTCHA-uitdaging alleen te laten zien in het geval van een verdachte activiteit](/help/forms/captcha-adaptive-forms.md). Als er geen verdachte activiteit wordt gevonden, wordt de CAPTCHA-uitdaging niet weergegeven. Het helpt menselijke vormvoltooiing zonder controledoosvereisten beoordelen, aanpassingsinspanningen verminderen, en de eindgebruikerservaring verbeteren.
-
-* **Configuraties van formuliergegevensmodellen**: U kunt nu [Configuraties van het formuliergegevensmodel opnieuw gebruiken in verschillende omgevingen](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config), het vereenvoudigen van gegevensintegratie en het verlagen van IT-kosten.
+   ![Wizard voor het maken van een adaptief formulier](/help/release-notes/assets/wizard.png)
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* Snelle toegang tot productcockpit: Eenvoudig toegang tot volledige gedetailleerde productinformatie met één klik in de Editor voor sites
+* Pagina met eigenschappen van cockpit-eigenschappen voor nieuwe producten voor een beter en vereenvoudigd overzicht
 
-   ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
+![overzicht van de eigenschappen van productcockpit](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Steun voor extra marketingcomponenten: De componenten kunnen worden gevormd om toe:voegen-aan-kar en toe:voegen-aan-wenslijst vraag-aan-actie te tonen
+* Verbeterde compatibiliteit en robuustheid voor connectors van andere leveranciers op I/O Runtime
 
-   ![Snelkoppeling naar productcockpit in Sites-editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+* Verbeterde ondersteuning voor GQL Client configuration overwrites (bijv. aangepast caching gedrag instellen)
+
+### Bugfixes {#bug-fixes-cif}
+
+* In het veld Meerwaardeproductkiezer worden de tweede en aanvullende producten als ongeldig weergegeven
+
+* De productkiezer wordt soms verborgen achter componenten
 
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
 
-### SDK Build Analyzers {#sdk-build-analyzers}
+### Nieuwe functies {#what-is-new-foundation}
 
-De AEM as a Cloud Service SDK bouwt Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling op te sporen, ruim voordat ze met Cloud Manager naar een cloud-omgeving implementeren.
+* De optie &quot;structuur toevoegen&quot; onder het beheerscherm van de replicatieagent **Tabblad Distribueren**, die eerder als afgekeurd werd aangekondigd, zal op 20 juni, 2022 of kort daarna worden geschrapt. Pakketten met een boomstructuur van inhoud moeten in plaats daarvan worden gerepliceerd met [Publicatie beheren](/help/operations/replication.md#manage-publication) of de [Workflow Inhoudsstructuur publiceren](/help/operations/replication.md#publish-content-tree-workflow).
 
-Er is onlangs een nieuwe analysator toegevoegd:
-
-* `content-packages-validation` - valideert voor een goed gevormde inhoudssyntaxis en -structuur voor pakketten die tijdens de implementatie worden geïnstalleerd
-
-U wordt ten zeerste aangeraden uw gemaakte project bij te werken met de nieuwste versie van de analysator of de analysator op te nemen als u dat nog niet hebt gedaan. Raadpleeg de documentatie voor meer informatie [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
+* Het gebruik van de API voor beheer van replicatieagent voor het distribueren van inhoudspakketten groter dan 10 MB (knooppunten met eigenschappen, exclusief binaire getallen) is afgekeurd en wordt afgedwongen op 12 september 2022 of kort daarna. In plaats daarvan, [Publicatie beheren](/help/operations/replication.md#manage-publication) of de [Workflow Inhoudsstructuur publiceren](/help/operations/replication.md#publish-content-tree-workflow) moeten worden gebruikt om deze grote inhoudspakketten te repliceren. In juli, zal een waarschuwingsbericht in het scherm van de replicatieagent admin verschijnen **Tabblad Distribueren** als u probeert deze grote inhoudspakketten te repliceren en ook in het AEM foutenlogboek wanneer de replicatie-API wordt gebruikt om deze grote inhoudspakketten te repliceren. In september worden waarschuwingen vervangen door fouten. Pas de processen dienovereenkomstig aan.
 
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Foundation Security {#foundation-security}
 
