@@ -4,10 +4,10 @@ description: Inleiding tot integratie tussen [!DNL Assets] en [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 1fce2eb37ebeaef966913e3ffdac59e9e126c788
+source-git-commit: 1a0718d317f13924cd4da273f9184b4f165bbc7e
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 2%
+source-wordcount: '955'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ Raadpleeg de platformondersteuning en [eerste vereisten voor de verbeterde aansl
 >
 >* Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] die deze aansluiting overbodig maken; als dit voorkomt, kunnen de klanten worden vereist om van het gebruik van deze schakelaar over te gaan.
 >
->* Adobe steunt verbeterde schakelaarversies 1.7.4 en hoger. Zie stap 5(a) van [Uitgebreide installatie-instructies](workfront-connector-install.md).
+>* Adobe steunt verbeterde schakelaarversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Zie stap 5(a) van [Uitgebreide installatie-instructies](workfront-connector-install.md).
 >
 >* Zie [Partnercertificatieexamen voor Workfront voor verbeterde connector voor Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, [Handleiding voor Examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
