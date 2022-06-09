@@ -2,9 +2,9 @@
 title: Overzicht van de inhoudsleveringsstroom
 description: Overzicht van de inhoudsleveringsstroom
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 60fc1b8f93c93ca427507dbe56511342f285e6bc
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 1%
 
 ---
@@ -29,6 +29,9 @@ De gegevensstroom is als volgt:
 
 Standaard is het inhoudstype HTML/tekst ingesteld op verlopen na 300 seconden (5 minuten) op de verzendingslaag, een drempel die zowel door de verzendercache als door de CDN wordt nageleefd. Tijdens herplaatsingen van de publicatiedienst, wordt het verzendechergeheime voorgeheugen ontruimd en daarna opgewarmd alvorens nieuwe publicatieknooppunten verkeer goedkeuren.
 
-De secties hieronder verstrekken meer detail over inhoudslevering, met inbegrip van configuratie CDN en caching.
+In de volgende secties vindt u meer informatie over de levering van inhoud:
+* [CDN-configuratie](/help/implementing/dispatcher/cdn.md)
+* [Caching](/help/implementing/dispatcher/caching.md)
+
 
 Er is informatie beschikbaar over de replicatie van de auteurservice naar de publicatieservice [hier](/help/operations/replication.md).
