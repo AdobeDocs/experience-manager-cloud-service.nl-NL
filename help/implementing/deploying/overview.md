@@ -3,9 +3,9 @@ title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
+source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
 workflow-type: tm+mt
-source-wordcount: '3364'
+source-wordcount: '3360'
 ht-degree: 1%
 
 ---
@@ -191,7 +191,7 @@ Eventuele inhoudspakketten die via Cloud Manager zijn geïnstalleerd (zowel vera
 
 Het is gemeenschappelijk voor klanten om pre-gebouwde pakketten van derdebronnen zoals softwareverkopers zoals Adobe vertaalpartners te omvatten. De aanbeveling is om deze pakketten in een verre bewaarplaats te ontvangen en hen in verwijzing in `pom.xml`. Dit is mogelijk voor openbare gegevensbanken en ook voor persoonlijke gegevensbanken met wachtwoordbeveiliging, zoals beschreven in [met wachtwoord beveiligde gegevensopslagruimten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-Als het opslaan van het pakket in een externe opslagplaats niet mogelijk is, kunnen klanten in een lokale, op bestandssysteem gebaseerde Maven opslagplaats plaatsen, die aan SCM als deel van het project wordt geëngageerd en door wat van het hangt van het van verwijzingen voorzien. De opslagplaats zou worden gedeclareerd in de onderstaande projectpomp:
+Als het opslaan van het pakket in een externe opslagplaats niet mogelijk is, kunnen klanten in een lokale, op bestandssysteem gebaseerde Maven opslagplaats plaatsen, die aan SCM als deel van het project wordt geëngageerd en door wat van het hangt van het van verwijzingen voorzien. De gegevensopslagruimte zou in de projectpom worden gedeclareerd, zoals hieronder wordt geïllustreerd:
 
 
 ```
@@ -309,13 +309,17 @@ De ondersteunde runmode configuraties zijn:
 * **config.publish.dev** (*Is van toepassing op AEM Dev Publish-service*)
 * **config.publish.stage** (*Is van toepassing op AEM service Staging publiceren*)
 * **config.publish.prod** (*Van toepassing op AEM publicatieservice Productie*)
-* **config.dev** (*Van toepassing op AEM Dev-services)
-* **config.stage** (*Van toepassing op AEM Staging-services)
-* **config.prod** (*Van toepassing op AEM productiediensten)
+* **config.dev** (*Van toepassing op AEM Dev-services*)
+* **config.stage** (*Van toepassing op AEM-halveringsdiensten*)
+* **config.prod** (*Van toepassing op AEM Productiediensten*)
 
 De configuratie OSGI die de meest passende runmodes heeft wordt gebruikt.
 
-Wanneer het ontwikkelen plaatselijk, kan een loopmode startparameter worden overgegaan om te dicteren welke loopmode configuratie OSGI zal worden gebruikt.
+Bij lokale ontwikkeling, een runtime startparameter `-r`, wordt gebruikt om de configuratie op te geven van de runmode OSGI.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
