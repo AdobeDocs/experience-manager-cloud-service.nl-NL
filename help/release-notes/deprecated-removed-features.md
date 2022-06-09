@@ -2,10 +2,10 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: d55e2aec4718e752cfc0dfa610abf1a1d36a583f
+source-git-commit: c4809bcbeae5339427b1da588021606d18b482a5
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 5%
+source-wordcount: '666'
+ht-degree: 4%
 
 ---
 
@@ -41,6 +41,10 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 | [!DNL Assets] | [Bepaalde workflowstappen](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` werkstroom wordt niet ondersteund, inclusief het aanroepen van opdrachtregelprogramma&#39;s zoals [!DNL ImageMagick]. | [Middelenmicroservices](/help/assets/asset-microservices-overview.md) bieden een vervanging voor veel workflows. Gebruik voor aangepaste verwerking [nabewerkingsworkflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | MPEG-transcodering van video&#39;s. | Gebruik voor het genereren van miniaturen in MPEG [Middelenmicroservices](/help/assets/asset-microservices-overview.md). Gebruik voor MPEG-transcodering [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | De replicatie UI van de boom onder het &quot;Distribute&quot;lusje van de replicatieagent (verwijdering na 30 September, 2021) | [Publicatie beheren](/help/operations/replication.md#manage-publication) of [workflow voor publicatiestructuur](/help/operations/replication.md#publish-content-tree-workflow) benaderingen |
+| [!DNL Foundation] | Noch kan het lusje van de Distribute van het scherm van de replicatieagent admin noch de Replicatie API worden gebruikt om inhoudspakketten over 10MB (handhaving na 12 september 2022) te herhalen | [Publicatie beheren](/help/operations/replication.md#manage-publication) of [workflow voor publicatiestructuur](/help/operations/replication.md#publish-content-tree-workflow) benaderingen |
+
+
+| [!DNL Foundation]       | U kunt het tabblad Distribueren van het scherm Beheer van de replicatieagent en de API voor replicatie niet gebruiken om inhoudspakketten over 10 MB te repliceren. In plaats daarvan kunt u beide [Publicatie beheren](/help/operations/replication.md#manage-publication) of [workflow voor publicatiestructuur](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## Verwijderde functies {#removed-features}
 
