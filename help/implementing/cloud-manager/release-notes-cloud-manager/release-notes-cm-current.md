@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2022.6.0 in Adobe Experience Man
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.6.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 2ba6858feefb22b5caf26000f5ee17779f3661c4
+source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -37,4 +37,9 @@ De releasedatum voor Cloud Manager versie 2022.6.0 in AEM as a Cloud Service is 
 * Een nieuwe Go Live-widget op de homepage van productieprogramma&#39;s voor Cloud Servicen biedt nu richtlijnen voor het voorbereiden van een geslaagde live-ervaring.
 * [Buildartefacten kunnen nu opnieuw worden gebruikt](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) bij gebruik van git spiegelen.
 
-## Opgeloste problemen {#bug-fixes}
+## API-wijzigingen {#api-changes}
+
+* De [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API is vervangen en [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) moet worden gebruikt.
+   * `List Programs` blijft werken, maar het gebruik ervan zal waarschuwingsberichten in logboeken genereren.
+   * Na drie maanden wordt er geen steun meer verleend.
+
