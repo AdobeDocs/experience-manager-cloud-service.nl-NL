@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a2cdc7c4e9d3dfd52ca76afcf951fa67b279918a
+source-git-commit: e5b0bee3e2e4a10b3015f115d5193c43a1e15c1b
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Bekijk de video Overzicht van de release van mei 2022 voor een overzicht van de 
 ### Nieuwe functies beschikbaar in [!DNL Sites] prerelease-kanaal {#prerelease-features-sites}
 
 * Verschillende GraphQL-functies
-* Een nieuwe console die is geoptimaliseerd voor Headless-gebruik van Content Fragments
+* A [nieuwe console](/help/headless/content-fragments/content-fragment-console.md) geoptimaliseerd voor gebruik zonder kop van inhoudsfragmenten
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
@@ -89,6 +89,10 @@ Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [ond
 * De optie &quot;structuur toevoegen&quot; onder het beheerscherm van de replicatieagent **Tabblad Distribueren**, die eerder als afgekeurd werd aangekondigd, zal op 20 juni, 2022 of kort daarna worden geschrapt. Pakketten met een boomstructuur van inhoud moeten in plaats daarvan worden gerepliceerd met [Publicatie beheren](/help/operations/replication.md#manage-publication) of de [Workflow Inhoudsstructuur publiceren](/help/operations/replication.md#publish-content-tree-workflow).
 
 * Het gebruik van de API voor beheer van replicatieagent voor het distribueren van inhoudspakketten groter dan 10 MB (knooppunten met eigenschappen, exclusief binaire getallen) is afgekeurd en wordt afgedwongen op 12 september 2022 of kort daarna. In plaats daarvan, [Publicatie beheren](/help/operations/replication.md#manage-publication) of de [Workflow Inhoudsstructuur publiceren](/help/operations/replication.md#publish-content-tree-workflow) moeten worden gebruikt om deze grote inhoudspakketten te repliceren. In juli, zal een waarschuwingsbericht in het scherm van de replicatieagent admin verschijnen **Tabblad Distribueren** als u probeert deze grote inhoudspakketten te repliceren en ook in het AEM foutenlogboek wanneer de replicatie-API wordt gebruikt om deze grote inhoudspakketten te repliceren. In september worden waarschuwingen vervangen door fouten. Pas de processen dienovereenkomstig aan.
+
+### Nieuwe functies beschikbaar in [!DNL Experience Manager] prerelease-kanaal {#prerelease-features-foundation}
+
+* AEM as a Cloud Service is nu geïntegreerd met Verenigde Shell om de gebruikerservaring te verbeteren en het met alle andere toepassingen van Experience Cloud te verenigen. Zie [AEM as a Cloud Service op Verenigde Shell](/help/overview/aem-cloud-service-on-unified-shell.md) voor meer informatie .
 
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Foundation Security {#foundation-security}
 
