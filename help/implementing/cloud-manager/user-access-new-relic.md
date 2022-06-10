@@ -2,9 +2,9 @@
 title: Nieuwe Relic One
 description: Meer informatie over de service New Relic One Application Performance Monitoring (APM) voor AEM as a Cloud Service en over hoe u toegang hebt tot deze service.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
+source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1612'
 ht-degree: 0%
 
 ---
@@ -46,13 +46,11 @@ Voer de volgende stappen uit om de gebruikers van de nieuwe subaccount voor Reli
 
 1. Klik op het programma waarvoor u uw Nieuwe Relic Één gebruikers wilt beheren.
 
-1. Naar de **Omgevingen** van de **Programmaoverzicht** pagina door op de knop **Omgevingen** aan de bovenkant van het scherm.
-
-1. Op de **Omgevingen** scherm, klik de ellipsieknoop bij de bovenkant van het scherm naast het **Omgeving toevoegen** knop.
-
-1. Klik in het menu Ovaal op **Gebruikers beheren**.
+1. Onder aan het dialoogvenster **Omgevingen** kaart op de pagina van het programmaoverzicht, klik de ellipsieknoop en selecteer **Gebruikers beheren**.
 
    ![Gebruikers beheren](assets/newrelic-manage-users.png)
+
+   * U hebt ook toegang tot de **Gebruikers beheren** optie via de ellipsieknop boven aan het dialoogvenster **Omgevingen** van uw programma.
 
 1. In de **Nieuwe onlinegebruikers beheren** voert u de voor- en achternaam in van de gebruiker die u wilt toevoegen en klikt u op de knop **Toevoegen** knop. Herhaal deze stap voor alle gebruikers die u wilt toevoegen.
 
@@ -98,11 +96,11 @@ Ga als volgt te werk om toegang te krijgen tot nieuwe versie van Relic One via C
 
 1. Klik op het programma waarvoor u tot Nieuwe Relic wilt toegang hebben.
 
-1. Naar de **Omgevingen** van de **Programmaoverzicht** pagina door op de knop **Omgevingen** aan de bovenkant van het scherm.
+1. Onder aan het dialoogvenster **Omgevingen** kaart op de pagina van het programmaoverzicht, klik de ellipsieknoop en selecteer **Nieuw bericht openen**.
 
-1. Op de **Omgevingen** scherm, klik de ellipsieknoop bij de bovenkant van het scherm naast het **Omgeving toevoegen** knop.
+   ![Gebruikers beheren](assets/newrelic-access.png)
 
-1. Klik in het menu Ovaal op **Nieuw bericht openen**.
+   * U kunt tot Nieuw Relisch via de ellipsknoop bij de bovenkant van ook toegang hebben **Omgevingen** van uw programma.
 
 1. Meld u aan bij Nieuwe lokale site op het nieuwe browsertabblad dat wordt geopend.
 
