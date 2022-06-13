@@ -3,9 +3,9 @@ title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
+source-git-commit: 71dc0f18dfea348ab291ac1a32f38d6b03ac577c
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -104,6 +104,27 @@ Met GraphQL kunt u vragen uitvoeren om of terug te keren:
 U kunt ook het volgende uitvoeren:
 
 * [Blijvende query&#39;s die in cache zijn geplaatst](/help/headless/graphql-api/persisted-queries.md)
+
+### Best practices voor GraphQL-query (Dispatcher) {#graphql-query-best-practices}
+
+De [Blijvende query&#39;s](/help/headless/graphql-api/persisted-queries.md) De aanbevolen methode is:
+
+* ze zijn in cache geplaatst
+* zij worden centraal beheerd door AEM as a Cloud Service
+
+De directe, en/of POST, vragen worden niet geadviseerd aangezien zij niet in het voorgeheugen ondergebracht zijn, zodat in een standaardinstantie de Dispatcher wordt gevormd om dergelijke vragen te blokkeren.
+
+>[!NOTE]
+>
+>Om directe, en/of POST toe te staan, kunt de vragen in de Dispatcher u uw Beheerder van het Systeem vragen:
+>
+>* Een omgevingsvariabele van Cloud Manager maken met de naam `ENABLE_GRAPHQL_ENDPOINT`
+>* met de waarde `true`
+
+
+>[!NOTE]
+>
+>De capaciteit om directe vragen uit te voeren kan op een bepaald punt in de toekomst worden verouderd.
 
 ### GraphiQL IDE {#graphiql-ide}
 

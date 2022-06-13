@@ -3,9 +3,9 @@ title: Blijvende query's voor GraphQL
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 368c2d537d740b2126aa7cce657ca54f7ad6b329
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '783'
 ht-degree: 1%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 1%
 # Blijvende query&#39;s voor GraphQL {#persisted-queries-caching}
 
 De gepersisteerde vragen zijn vragen GraphQL die op de as a Cloud Service server van Adobe Experience Manager (AEM) worden gecreeerd en worden opgeslagen. Ze kunnen worden aangevraagd met een GET-aanvraag door clienttoepassingen. De reactie van een verzoek van de GET kan bij de verzender en lagen CDN in het voorgeheugen ondergebracht worden, die uiteindelijk de prestaties van de het verzoeken cliënttoepassing verbeteren. Dit verschilt van standaardvragen GraphQL, die gebruikend POST verzoeken worden uitgevoerd waar de reactie niet gemakkelijk in het voorgeheugen kan worden opgeslagen.
+
+>[!NOTE]
+>
+>Blijvende query&#39;s worden aanbevolen. Zie [Best practices voor GraphQL-query (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) voor details, en de verwante configuratie van de Verzender.
 
 De [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is beschikbaar in AEM voor u om, uw vragen te ontwikkelen te testen en voort te zetten GraphQL, alvorens [overbrengen naar uw productieomgeving](#transfer-persisted-query-production). Voor gevallen die aanpassing vereisen (bijvoorbeeld wanneer [cache aanpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) u kunt de API gebruiken; zie het curvevoorbeeld in [Hoe te om een vraag te handhaven GraphQL](#how-to-persist-query).
 
