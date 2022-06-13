@@ -4,7 +4,7 @@ description: Leer de krachtige functies van de Site-rail om u te helpen uw site 
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -30,7 +30,7 @@ De site-rail wordt gebruikt voor het beheer van thema- en sjabloongerelateerde i
 >
 >Controleer de [Reis voor snel maken van site](/help/journey-sites/quick-site/overview.md) om uzelf vertrouwd te maken met het gereedschap Snel site maken en de front-end pijplijn om het thema van uw site eenvoudig aan te passen.
 
-##  Themabronnen downloaden {#downloading-theme-sources}
+## Themabronnen downloaden {#downloading-theme-sources}
 
 Wanneer u een site maakt in AEM op basis van een [sitesjabloon,](site-templates.md) u kunt uw [site-thema](site-themes.md) het gebruik van de Sitelijn.
 
@@ -40,7 +40,7 @@ Terwijl de Site-rail in de siteconsole wordt weergegeven, selecteert u de hoofdm
 
 Tik of klik op **Themabronnen downloaden** om een lokale kopie van het sitethema te downloaden als `.zip` bestand voor aanpassingsdoeleinden.
 
-##  Sjabloonbronnen downloaden {#downloading-template-resources}
+## Sjabloonbronnen downloaden {#downloading-template-resources}
 
 [Sitesjablonen](site-templates.md) kan informatie bevatten naast de structuur van uw site-inhoud en [site-thema.](site-themes.md) Sitesjablonen kunnen bijvoorbeeld draadframemodellen of andere sitegerelateerde bestanden bevatten.
 
