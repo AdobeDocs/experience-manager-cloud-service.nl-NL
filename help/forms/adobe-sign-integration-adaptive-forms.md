@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 00dced631aa293630f923ee1e94f321bbf4cddb9
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om t
    >
    >Wanneer u een adaptief formulier maakt, geeft u de naam van de container op in het dialoogvenster **[!UICONTROL Configuration Container]** veld.
 
-1. Tik op de configuratiepagina op **[!UICONTROL Create]** om [!DNL Adobe Sign]in AEM Forms.
+1. Tik op de configuratiepagina op **[!UICONTROL Create]** om [!DNL Adobe Sign] in AEM Forms.
 1. In de **[!UICONTROL General]** tabblad van het dialoogvenster **[!UICONTROL Create Adobe Sign Configuration]** pagina, geeft u een **[!UICONTROL Name]** voor de configuratie en tik **[!UICONTROL Next]**. U kunt desgewenst een **[!UICONTROL Title]** en blader om een **[!UICONTROL Thumbnail]** voor de configuratie.
 
 1. Kopieer de URL in het huidige browservenster naar een laptop. De URL is vereist om te configureren [!DNL Adobe Sign] toepassing met [!DNL AEM Forms] in een latere stap.
