@@ -1,13 +1,13 @@
 ---
 title: Kleurlabels voor afbeeldingen
 description: Met Experience Manager Assets kunt u onderscheid maken tussen kleuren in een afbeelding en deze automatisch als tags toepassen. Vervolgens kunt u deze tags gebruiken om afbeeldingen te zoeken en te filteren.
-source-git-commit: 74c13efe99b50ba08d9dc38c246de71482a536a0
+exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
+source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 2%
+source-wordcount: '1124'
+ht-degree: 1%
 
 ---
-
 
 # Kleurlabels voor afbeeldingen {#color-tag-images}
 
@@ -106,6 +106,24 @@ U voegt als volgt de component Slimme kleurcodes toe aan de formuliereditor voor
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
 
+## Kleurlabels voor bestaande afbeeldingen in DAM {#color-tags-existing-images}
+
+De al bestaande afbeeldingen in DAM worden niet automatisch van een kleurlabel voorzien. U moet [!UICONTROL Reprocess Assets] handmatig om er kleurcodes voor te genereren.
+
+Voer de volgende stappen uit als u afbeeldingen met kleurcodes of mappen (inclusief submappen) van elementen die al in de opslagplaats voor elementen bestaan, wilt kleuren:
+
+1. Selecteer [!DNL Adobe Experience Manager] logo en selecteer vervolgens elementen in het [!UICONTROL Navigation] pagina.
+
+1. Selecteren [!UICONTROL Files] om de interface Elementen weer te geven.
+
+1. Navigeer naar de map waarop u kleurcodes wilt toepassen.
+
+1. Selecteer de volledige map of specifieke afbeeldingen.
+
+1. Selecteren ![Pictogram Elementen opnieuw verwerken](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] en selecteert u de [!UICONTROL Full Process] optie.
+
+Als het proces is voltooid, navigeert u naar de [!UICONTROL Properties] pagina van om het even welke beeld binnen de omslag. De automatisch toegevoegde tags worden weergegeven in [!UICONTROL Smart Color Tags] sectie in [!UICONTROL Basic] tab.
+
 
 ## Slimme-kleurtags voor afbeeldingen weergeven {#view-color-tags}
 
@@ -167,7 +185,3 @@ Zo zoekt u afbeeldingen op basis van kleuren:
    U kunt afbeeldingen filteren op basis van de selectie van één kleur. De afbeeldingen met de geselecteerde kleur als een van de slimme-kleurtags en boven de [Dekking/Dominantiedrempel %](#manage-color-tagging-settings) in het rechterdeelvenster.
 
 1. Klik op x in de zoekbalk om het filter te wissen.
-
-
-
-
