@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
+source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1806'
 ht-degree: 1%
 
 ---
@@ -183,6 +183,9 @@ Adobe biedt opensource-bibliotheken en -gereedschappen voor meer informatie over
 
 * [Opensource-em-upload-bibliotheek](https://github.com/adobe/aem-upload).
 * [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem).
+
+>[!NOTE]
+Zowel de aem-upload bibliotheek als het bevel-lijn hulpmiddel gebruiken allebei [node-httptransfer-bibliotheek](https://github.com/adobe/node-httptransfer/)
 
 ### Verouderde API&#39;s voor middelenupload {#deprecated-asset-upload-api}
 
