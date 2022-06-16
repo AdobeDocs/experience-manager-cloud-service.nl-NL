@@ -2,7 +2,7 @@
 title: Werken met paginaversies
 description: Versies van een pagina maken, vergelijken en herstellen
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 4%
@@ -193,9 +193,9 @@ Een vorige versie vergelijken met de huidige pagina:
 
 Timewarp is een eigenschap die wordt ontworpen om het *gepubliceerd* staat van een pagina op specifieke tijden in het verleden.
 
->[!NOTE]
+>[!TIP]
 >
->[Tijdverdraaiing kan ook worden gebruikt bij Startpagina&#39;s om een voorvertoning van de toekomst weer te geven](/help/sites-cloud/authoring/launches/preview.md).
+>[Tijdverdraaiing kan ook worden gebruikt bij Startpagina&#39;s om een voorvertoning van de toekomst weer te geven.](/help/sites-cloud/authoring/launches/preview.md)
 
 Omdat content creation een doorlopend en gezamenlijk proces is, is het doel van Timewarp om auteurs in staat te stellen de gepubliceerde website in de loop van de tijd bij te houden om te begrijpen hoe de inhoud is gewijzigd. Deze functie gebruikt de paginaversies om de status van de publicatieomgeving te bepalen.
 
