@@ -3,9 +3,9 @@ title: Dynamic Media-Cloud Service configureren
 description: Leer hoe u Dynamic Media in Adobe Experience Manager as a Cloud Service configureert.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
+source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3316'
 ht-degree: 2%
 
 ---
@@ -270,6 +270,7 @@ Zie [Elementen uploaden](/help/assets/add-assets.md).
 
 **MIME-typen bewerken voor ondersteunde indelingen:**
 
+1. Meld u aan bij de as a Cloud Service Experience Manager als productbeheerder.
 1. In as a Cloud Service Experience Manager, selecteer het as a Cloud Service embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben, dan ga naar **[!UICONTROL General > CRXDE Lite]**.
 1. Navigeer in de linkerspoorstaaf naar het volgende:
 
@@ -296,6 +297,7 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
 **MIME-typen toevoegen voor niet-ondersteunde indelingen:**
 
+1. Meld u aan bij de as a Cloud Service Experience Manager als productbeheerder.
 1. Van as a Cloud Service Experience Manager, ga naar **[!UICONTROL Tools > Operations > Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -377,6 +379,10 @@ Zie ook [MIME-typen toevoegen voor niet-ondersteunde indelingen](#adding-mime-ty
 
 De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In Dynamic Media werd video verwerkt met de **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
+>[!NOTE]
+>
+>U moet als productbeheerder zijn aangemeld bij de as a Cloud Service Experience Manager om deze taak te voltooien.
+
 **Om de vooraf bepaalde de arbeidersthreads bij te werken van de Rij van het Werkschema van de Granite (videoactiva):**
 
 1. Navigeren naar `https://<server>/system/console/configMgr` en zoek naar **Wachtrij: Graniet Workflow Queue**.
@@ -398,6 +404,10 @@ De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In D
 #### Werk de vooraf bepaalde de arbeidersthreads bij van de Rij van de Rij van de Rij van de Granite Transiet {#update-granite-transient-workflow-queue-worker-threads-images}
 
 De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media wordt het gebruikt voor het opnemen en verwerken van afbeeldings- en niet-video-elementen.
+
+>[!NOTE]
+>
+>U moet als productbeheerder zijn aangemeld bij de as a Cloud Service Experience Manager om deze taak te voltooien.
 
 **Om de vooraf bepaalde de werkrijarbeidersthreads bij te werken van de rij van de Grensovergang van de Granite Transient van het Werkschema:**
 
@@ -423,6 +433,10 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 #### De maximale uploadverbindingen naar de Dynamic Media Classic (Scene7)-server bijwerken {#update-max-s7-upload-connections}
 
 Met de instelling Dynamic Media Classic (Scene7) Upload Connection synchroniseert u Experience Managers met Dynamic Media Classic-servers.
+
+>[!NOTE]
+>
+>U moet als productbeheerder zijn aangemeld bij de as a Cloud Service Experience Manager om deze taak te voltooien.
 
 **Zo werkt u de maximale uploadverbindingen naar de Dynamic Media Classic (Scene7)-server bij:**
 
