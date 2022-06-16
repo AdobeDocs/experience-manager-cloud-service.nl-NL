@@ -2,9 +2,9 @@
 title: Testen van de codekwaliteit
 description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
+source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1175'
 ht-degree: 1%
 
 ---
@@ -41,6 +41,12 @@ Kwesties die door code kwaliteitstests worden geïdentificeerd worden toegewezen
 * **Belangrijk** - Dit zijn kwesties die de pijpleiding veroorzaken om een gepauzeerde staat in te gaan. Een plaatsingsmanager, projectmanager, of bedrijfseigenaar kunnen of de kwesties met voeten treden, waarin de pijpleiding te werk gaat, of zij kunnen de kwesties goedkeuren, in welk geval de pijpleiding met een mislukking stopt.
 
 * **Info** - Dit zijn kwesties die louter ter informatie worden verstrekt en geen invloed hebben op de uitvoering van de pijpleiding
+
+>[!NOTE]
+>
+>In een slechts pijpleiding van de codekwaliteit, kunnen de belangrijke mislukkingen in de gate van de Kwaliteit van de Code niet worden met voeten getreden aangezien de het testen stap van de codekwaliteit de definitieve stap in de pijpleiding is.
+
+### Waarderingen {#ratings}
 
 De resultaten van deze stap worden geleverd als **Waarderingen**.
 
