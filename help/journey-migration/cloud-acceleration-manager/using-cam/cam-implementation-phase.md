@@ -2,9 +2,9 @@
 title: Implementatiefase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de implementatiefase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
+source-git-commit: 24331b974ded34ef949cc3d6fb157b124c145dee
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '792'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Volg deze sectie om de activiteitenkaart van de Lokale Ontwikkeling te onderzoek
 
 ## Code Refactoring Card gebruiken {#code-refactoring}
 
-De de activiteitenkaart van de Refactoring van de Code verstrekt alle relevante informatie en benadrukt de gebieden van de code refactoring u moet herzien en oplossen wanneer zich het bewegen aan AEM as a Cloud Service.
+De de activiteitenkaart van de Refactoring van de Code verstrekt alle relevante informatie en benadrukt de code refactoring gebieden u moet herzien en oplossen wanneer zich het bewegen aan AEM as a Cloud Service.
 
 Volg deze sectie om de de activiteitenkaart van het Refactoring van de Code te onderzoeken:
 

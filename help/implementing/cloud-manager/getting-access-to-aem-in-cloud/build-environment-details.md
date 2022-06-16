@@ -2,7 +2,7 @@
 title: Build-omgeving
 description: Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en test.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
+source-git-commit: c138f0be15550df85a2ec23b6b551ccba07996c8
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
 * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
+* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven is geconfigureerd op systeemniveau met een `settings.xml` bestand, dat automatisch de openbare gegevensopslagruimte Adobe bevat met een profiel genaamd `adobe-public`. (Zie [Adobe Public Maven Repository](https://repo1.maven.org/) voor meer informatie ).
 
 >[!NOTE]

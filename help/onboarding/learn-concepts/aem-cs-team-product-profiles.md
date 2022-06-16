@@ -2,7 +2,7 @@
 title: as a Cloud Service teams en productprofielen AEM
 description: Volg deze pagina om informatie over AEM as a Cloud Service Team en Profielen van het Product te leren.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
+source-git-commit: fd23701414a2ae4142ea2a11cef92bc0cb202421
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Uw AEM as a Cloud Service teamleden worden tijdens het instappen toegevoegd aan 
 
 ## Productprofielen van Cloud Manager {#cloud-manager-product-profiles}
 
-Cloud Manager heeft vooraf geconfigureerde productprofielen, of meer eenvoudig, op rollen gebaseerde machtigingen. Uw systeembeheerder is verantwoordelijk voor het instellen van uw team van Cloud Manager door de profielen aan deze productprofielen toe te wijzen en moet zich vertrouwd maken met deze productprofielen en aan welk teamlid ze moeten toewijzen.
+Cloud Manager heeft vooraf geconfigureerde productprofielen, of meer eenvoudig, op rollen gebaseerde machtigingen. Uw systeembeheerder is verantwoordelijk voor het instellen van uw team van Cloud Manager door deze aan deze productprofielen toe te wijzen en moet zich vertrouwd maken met deze productprofielen en aan welk teamlid ze moeten toewijzen.
 >[!NOTE]
 >Zie [Op rollen gebaseerde machtigingen in Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions) voor meer informatie .
 

@@ -2,7 +2,7 @@
 title: Experience Audit Testing
 description: Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
+source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -31,7 +31,7 @@ De controle van de ervaring in de Manager van de Wolk zorgt ervoor dat de ervari
 
 De controleresultaten zijn informatief en staan de plaatsingsmanager toe om de scores en de verandering tussen de huidige en vorige scores te zien. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
 
-Experience Audit wordt aangedreven door Google Lighthouse, een opensource tool van Googl en wordt ingeschakeld in alle productiepijpleidingen van Cloud Manager.
+Experience Audit wordt aangedreven door Google Lighthouse, een opensource tool van Google, en wordt ingeschakeld in alle productiepijpleidingen van Cloud Manager.
 
 ## Werken met de resultaten van Experience Audit {#understanding-experience-audit-results}
 
