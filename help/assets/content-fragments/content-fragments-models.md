@@ -4,9 +4,9 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2894'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ U kunt als volgt modellen van inhoudsfragmenten gebruiken:
 ## Een inhoudsfragmentmodel maken {#creating-a-content-fragment-model}
 
 1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
-1. Navigeer naar de map die geschikt is voor uw [configuratie](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. Navigeer naar de map die geschikt is voor uw [configuratie of subconfiguratie](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Gebruiken **Maken** om de wizard te openen.
 
    >[!CAUTION]

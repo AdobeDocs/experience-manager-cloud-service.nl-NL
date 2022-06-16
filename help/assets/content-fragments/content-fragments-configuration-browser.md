@@ -4,10 +4,10 @@ description: Leer hoe te om bepaalde functionaliteit van het Fragment van de Inh
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 17%
+source-wordcount: '339'
+ht-degree: 15%
 
 ---
 
@@ -43,9 +43,20 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
 >
 >Zie ook voor meer informatie [Configuratiebrowser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
->[!CAUTION]
+>[!NOTE]
 >
->Subconfiguraties (een configuratie die binnen een configuratie wordt genest) worden gesteund voor gebruik met de Fragmenten van de Inhoud, maar kunnen niet voor vragen worden gebruikt GraphQL.
+>[Subconfiguraties](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (een configuratie die in een andere configuratie is genest), wordt volledig ondersteund voor gebruik met Content Fragments, Content Fragment Models en GraphQL-query&#39;s.
+>
+>Ik wil alleen opmerken dat:
+>
+>
+>* Na het creëren van modellen in een subconfiguratie, is het NIET mogelijk om het model naar een andere subconfiguratie te bewegen of te kopiëren.
+>
+>* Een eindpunt GraphQL zal (nog) op een ouder (wortel) configuratie worden gebaseerd.
+>
+>* Blijvende query&#39;s worden (nog) als relevant voor de bovenliggende (basis)configuratie opgeslagen.
+
+
 
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
 
