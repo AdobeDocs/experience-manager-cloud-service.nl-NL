@@ -3,10 +3,10 @@ title: Blijvende query's voor GraphQL
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 368c2d537d740b2126aa7cce657ca54f7ad6b329
+source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 1%
+source-wordcount: '1109'
+ht-degree: 0%
 
 ---
 
@@ -53,17 +53,17 @@ Aanbevolen wordt om query&#39;s in een AEM ontwerpomgeving in eerste instantie v
 
 Er zijn verschillende methoden om query&#39;s te blijven uitvoeren, waaronder:
 
-* GraphiQL IDE - zie [Blijvende query&#39;s opslaan](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* GraphiQL IDE - zie [Blijvende query&#39;s opslaan](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (voorkeursmethode)
 * krullen - zie het volgende voorbeeld
 * Andere gereedschappen, inclusief [Postman](https://www.postman.com/)
 
-Hier zijn de stappen om een bepaalde vraag voort te zetten gebruikend **krullen** opdrachtregelgereedschap:
+GraphiQL IDE is de **voorkeur** methode voor het voortduren van vragen. Om een bepaalde vraag voort te zetten gebruikend **krullen** opdrachtregelgereedschap:
 
 1. Bereid de vraag door PUTing het aan het nieuwe eindpunt URL voor `/graphql/persist.json/<config>/<persisted-label>`.
 
    Maak bijvoorbeeld een doorlopende query:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -86,7 +86,7 @@ Hier zijn de stappen om een bepaalde vraag voort te zetten gebruikend **krullen*
 
    Controleer bijvoorbeeld of het programma is gelukt:
 
-   ```xml
+   ```json
    {
      "action": "create",
      "configurationName": "wknd",
@@ -100,7 +100,7 @@ Hier zijn de stappen om een bepaalde vraag voort te zetten gebruikend **krullen*
 
    Gebruik bijvoorbeeld de voortgezette query:
 
-   ```xml
+   ```shell
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
@@ -109,7 +109,7 @@ Hier zijn de stappen om een bepaalde vraag voort te zetten gebruikend **krullen*
 
    Gebruik bijvoorbeeld de voortgezette query:
 
-   ```xml
+   ```shell
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -135,7 +135,7 @@ Hier zijn de stappen om een bepaalde vraag voort te zetten gebruikend **krullen*
 
    Bijvoorbeeld:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -148,7 +148,7 @@ Hier zijn de stappen om een bepaalde vraag voort te zetten gebruikend **krullen*
 
    Bijvoorbeeld:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -161,7 +161,7 @@ Hier zijn de stappen om een bepaalde vraag voort te zetten gebruikend **krullen*
 
    Bijvoorbeeld:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -183,44 +183,131 @@ Hier zijn de stappen om een bepaalde vraag voort te zetten gebruikend **krullen*
      }'
    ```
 
+
+## Hoe te om een Verlengde vraag uit te voeren {#execute-persisted-query}
+
+Een clienttoepassing vraagt een aanvraag tot GET met de volgende syntaxis uit om een query met behoud van waarden uit te voeren:
+
+```
+GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
+```
+
+Wanneer `PERSISTENT_PATH` is een verkort pad naar de opslaglocatie van de Persistent-query.
+
+1. Bijvoorbeeld `wknd` is de configuratienaam en `plain-article-query` is de naam van de Persistent-query. De query uitvoeren:
+
+   ```shell
+   $ curl -X GET \
+       https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query
+   ```
+
 1. Een query uitvoeren met parameters.
+
+   >[!NOTE]
+   >
+   > De variabelen en de waarden van de vraag moeten behoorlijk zijn [gecodeerd](#encoding-query-url) bij het uitvoeren van een continue query.
 
    Bijvoorbeeld:
 
    ```xml
-   $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
    $ curl -X GET \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+       "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
+
+   Zie gebruiken [queryvariabelen](#query-variables) voor meer informatie .
+
+## Query-variabelen gebruiken {#query-variables}
+
+De variabelen van de vraag kunnen met Verblijfsde Vragen worden gebruikt. De vraagvariabelen worden toegevoegd aan het verzoek vooraf bepaald met een puntkomma (`;`) met de naam en de waarde van de variabele. Meerdere variabelen worden gescheiden door puntkomma&#39;s.
+
+Het patroon ziet er als volgt uit:
+
+```
+<AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
+```
+
+De volgende query bevat bijvoorbeeld een variabele `activity` een lijst filteren op basis van een activiteitwaarde:
+
+```graphql
+query getAdventuresByActivity($activity: String!) {
+      adventureList (filter: {
+        adventureActivity: {
+          _expressions: [
+            {
+              value: $activity
+            }
+          ]
+        }
+      }){
+        items {
+          _path
+        adventureTitle
+        adventurePrice
+        adventureTripLength
+      }
+    }
+  }
+```
+
+Deze query kan worden uitgevoerd onder een pad `wknd/adventures-by-activity`. Om de Permanente vraag te roepen waar `activity=Camping` het verzoek zou er als volgt uitzien :
+
+```
+<AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
+```
+
+Let op: `%3B` is de UTF-8-codering voor `;` en `%3D` is de codering voor `=`. De vraagvariabelen en om het even welke speciale karakters moeten [correct gecodeerd](#encoding-query-url) voor de Persisted query die moet worden uitgevoerd.
+
+## De URL van de query coderen voor gebruik door een app {#encoding-query-url}
+
+Voor gebruik door een toepassing worden speciale tekens gebruikt bij het samenstellen van queryvariabelen (dus puntkomma&#39;s (`;`), gelijkteken (`=`), slashes `/`) moet worden omgezet om de overeenkomstige UTF-8-codering te gebruiken.
+
+Bijvoorbeeld:
+
+```xml
+curl -X GET \ "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
+```
+
+De URL kan worden opgesplitst in de volgende onderdelen:
+
+| URL-onderdeel | Beschrijving |
+|----------| -------------|
+| `/graphql/execute.json` | Blijvend zoekeindpunt |
+| `/wknd/adventure-by-path` | Blijvend zoekpad |
+| `%3B` | Codering van `;` |
+| `adventurePath` | Query-variabele |
+| `%3D` | Codering van `=` |
+| `%2F` | Codering van `/` |
+| `%2Fcontent%2Fdam...` | Gecodeerd pad naar het inhoudsfragment |
+
+In onbewerkte tekst ziet de aanvraag-URI er als volgt uit:
+
+```plaintext
+/graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
+```
+
+Als u een voortgezette query in een client-app wilt gebruiken, moet de SDK van de client zonder kop worden gebruikt voor [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java), of [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). De Headless Client SDK codeert alle queryvariabelen automatisch naar behoren in de aanvraag.
 
 ## Het overbrengen van een blijvende vraag aan uw milieu van de Productie  {#transfer-persisted-query-production}
 
-Uiteindelijk moet uw persisted query zich in uw productie-publicatieomgeving bevinden (van AEM as a Cloud Service), waar deze kan worden aangevraagd door clienttoepassingen. Als u een aanhoudende query wilt gebruiken in uw publicatieomgeving voor productie, moet de verwante permanente structuur worden gerepliceerd:
+Verblijfsde vragen zouden altijd op de dienst van de Auteur AEM moeten worden gecreeerd en dan gepubliceerd (herhaald) aan de dienst van de Publicatie AEM. Vaak, worden de Persisted vragen gecreeerd en op lagere milieu&#39;s zoals lokale of milieu&#39;s van de Ontwikkeling getest. Het is dan noodzakelijk om Verlengde vragen aan hogere niveaumilieu&#39;s te bevorderen, die hen uiteindelijk op een productieAEM publiceren milieu voor cliënttoepassingen ter beschikking stellen om te verbruiken.
 
-* aanvankelijk aan productieauteur voor het bevestigen van onlangs authored inhoud met de vragen,
-* vervolgens ten slotte de productie publiceren voor levende consumptie
+### Persistente query&#39;s verpakken
 
-Er zijn verscheidene benaderingen om uw persisted vraag over te brengen:
+U kunt permanente query&#39;s inbouwen [AEM](/help/implementing/developing/tools/package-manager.md). AEM pakketten kunnen vervolgens worden gedownload en geïnstalleerd in verschillende omgevingen. AEM Pakketten kunnen ook worden gerepliceerd vanuit een AEM-auteuromgeving naar een AEM-publicatieomgeving.
 
-1. Een pakket gebruiken:
-   1. Maak een nieuwe pakketdefinitie.
-   1. De configuratie opnemen (bijvoorbeeld `/conf/wknd/settings/graphql/persistentQueries`).
-   1. Maak het pakket.
-   1. Breng het pakket over (downloaden/uploaden of repliceren).
-   1. Installeer het pakket.
+Een pakket maken:
 
-1. Een POST voor replicatie gebruiken:
+1. Navigeren naar **Gereedschappen** > **Implementatie** > **Pakketten**.
+1. Een nieuw pakket maken door te tikken **Pakket maken**. Hiermee wordt een dialoogvenster geopend waarin het pakket wordt gedefinieerd.
+1. In het dialoogvenster Pakketdefinitie, onder **Algemeen** Voer een **Naam** zoals &quot;wknd-persistent-questions&quot;.
+1. Voer een versienummer in, bijvoorbeeld &quot;1.0&quot;.
+1. Onder **Filters** een nieuwe **Filter**. Gebruik de Finder van de Weg om te selecteren `persistentQueries` onder de configuratie. Bijvoorbeeld voor de `wknd` configuratie het volledige weg zal zijn `/conf/wknd/settings/graphql/persistentQueries`.
+1. Tikken **Opslaan** om de nieuwe pakketdefinitie op te slaan en het dialoogvenster te sluiten.
+1. Tik op de knop **Opbouwen** in de nieuw gecreëerde definitie van het Pakket.
 
-   ```xml
-   $ curl -X POST   http://localhost:4502/bin/replicate.json \
-   -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-   -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-   -F cmd=activate
-   ```
+Nadat het pakket is gemaakt, kunt u:
+* **Downloaden** het pakket en heruploaden in een andere omgeving.
+* **Repliceren** het pakket door te tikken **Meer** > **Repliceren**. Hierdoor wordt het pakket gerepliceerd naar de verbonden AEM-publicatieomgeving.
 
 <!--
 1. Using replication/distribution tool:
@@ -230,23 +317,3 @@ Er zijn verscheidene benaderingen om uw persisted vraag over te brengen:
 * Using a workflow (via workflow launcher configuration):
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 -->
-
-Zodra de vraagconfiguratie op uw publiceer milieu in productie is, zijn de zelfde authentificatiebeginselen van toepassing, enkel gebruikend het publiceereindpunt.
-
->[!NOTE]
->
->Voor anonieme toegang veronderstelt het systeem dat ACL &quot;iedereen&quot;toestaat om toegang tot de vraagconfiguratie te hebben.
->
->Als dat niet het geval is, zal het niet kunnen uitvoeren.
-
-## De URL van de query coderen voor gebruik door een app {#encoding-query-url}
-
-Voor gebruik door een toepassing moeten eventuele puntkomma&#39;s (&quot;;&quot;) in de URL&#39;s worden gecodeerd.
-
-Bijvoorbeeld, zoals in het verzoek om een voortgezette vraag uit te voeren:
-
-```xml
-curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-```
-
-Als u een voortgezette query in een client-app wilt gebruiken, moet de SDK van de client zonder kop worden gebruikt [AEM headless-client voor JavaScript](https://github.com/adobe/aem-headless-client-js).
