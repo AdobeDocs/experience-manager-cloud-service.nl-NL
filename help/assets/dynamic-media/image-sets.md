@@ -4,9 +4,9 @@ description: Leer hoe u in Dynamic Media werkt met sets afbeeldingen.
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '2088'
 ht-degree: 5%
 
 ---
@@ -28,6 +28,15 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
 >[!NOTE]
 >
 >Voor informatie over de gebruikersinterface van Middelen raadpleegt u [Elementen beheren met de Touch UI](/help/assets/manage-digital-assets.md).
+
+Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
+
+| Element - Type limiet | Beste praktijken | Implementatielimiet | Wijzigingen voor limiet 31 december 2022 |
+| --- | --- | --- | --- |
+| **Afbeeldingsset** - Aantal dubbele elementen per set | Geen duplicaten | 100 | 20 |
+| **Afbeeldingsset** - Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+
+Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 
 ## Snel starten: Afbeeldingssets {#quick-start-image-sets}
 
@@ -127,6 +136,15 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 >
 >Afbeeldingssets worden niet ondersteund voor elementen met &quot;,&quot; (komma) in de bestandsnaam.
 
+Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
+
+| Element - Type limiet | Beste praktijken | Implementatielimiet | Wijzigingen voor limiet 31 december 2022 |
+| --- | --- | --- | --- |
+| **Afbeeldingsset** - Aantal dubbele elementen per set | Geen duplicaten | 100 | 20 |
+| **Afbeeldingsset** - Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+
+Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
+
 **Afbeeldingssets maken:**
 
 1. Selecteer in Adobe Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole.
@@ -182,7 +200,7 @@ U kunt afbeeldingssets maken in de gebruikersinterface of automatisch met [voori
 
 sets die zijn gemaakt met voorinstellingen voor batchsets, doen *niet* worden weergegeven in de gebruikersinterface. U kunt deze sets op drie verschillende manieren weergeven. (Deze methoden zijn ook beschikbaar als u de afbeeldingssets in de gebruikersinterface hebt gemaakt.)
 
-* Open de eigenschappen van een element. Eigenschappen geven aan naar welke sets van het geselecteerde element wordt verwezen of een lid van. Selecteer de naam van de set als u de volledige set wilt zien.
+* Open de eigenschappen van een element. Eigenschappen geven aan naar welke sets van het geselecteerde element wordt verwezen of een lid van. Selecteer de naam van de set om de volledige set weer te geven.
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 

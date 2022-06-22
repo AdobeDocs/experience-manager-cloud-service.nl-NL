@@ -4,9 +4,9 @@ description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellinge
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '3088'
+source-wordcount: '3125'
 ht-degree: 4%
 
 ---
@@ -53,6 +53,14 @@ In **[!UICONTROL Unsharp Mask]** hebt u de volgende filteropties:
 Verscherpen wordt beschreven in [Afbeeldingen verscherpen](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## Opties voor uitsnijden {#crop-options}
+
+Wanneer u Slim uitsnijden op afbeeldingen implementeert, raadt Adobe de volgende aanbevolen procedures aan en wordt de volgende limiet toegepast:
+
+| Type limiet | Beste praktijken | Implementatielimiet |
+| --- | --- | --- |
+| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 |
+
+Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
