@@ -4,10 +4,10 @@ description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellinge
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
-source-wordcount: '3125'
-ht-degree: 4%
+source-wordcount: '3131'
+ht-degree: 5%
 
 ---
 
@@ -56,9 +56,9 @@ Verscherpen wordt beschreven in [Afbeeldingen verscherpen](/help/assets/dynamic-
 
 Wanneer u Slim uitsnijden op afbeeldingen implementeert, raadt Adobe de volgende aanbevolen procedures aan en wordt de volgende limiet toegepast:
 
-| Type limiet | Beste praktijken | Implementatielimiet |
-| --- | --- | --- |
-| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 |
+| Type limiet | Beste praktijken | Oplegde limiet | Wijziging tot limiet op 31 december 2022 |
+| --- | --- | --- | --- |
+| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 | 20 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 

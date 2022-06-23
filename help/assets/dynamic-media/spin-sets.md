@@ -4,7 +4,7 @@ description: Leer hoe u met centrifuges werkt in Dynamic Media.
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 8%
@@ -27,7 +27,7 @@ De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UI
 
 Wanneer u een reeks van de Rotatie creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grens:
 
-| Type limiet | Beste praktijken | Implementatielimiet |
+| Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
 | Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
 
@@ -119,7 +119,7 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken.
 
 Wanneer u een reeks van de Rotatie creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grens:
 
-| Type limiet | Beste praktijken | Implementatielimiet |
+| Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
 | Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
 

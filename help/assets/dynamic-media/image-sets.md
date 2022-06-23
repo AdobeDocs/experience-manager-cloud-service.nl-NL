@@ -4,9 +4,9 @@ description: Leer hoe u in Dynamic Media werkt met sets afbeeldingen.
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2068'
 ht-degree: 5%
 
 ---
@@ -31,10 +31,10 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
 
 Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
 
-| Element - Type limiet | Beste praktijken | Implementatielimiet | Wijzigingen voor limiet 31 december 2022 |
-| --- | --- | --- | --- |
-| **Afbeeldingsset** - Aantal dubbele elementen per set | Geen duplicaten | 100 | 20 |
-| **Afbeeldingsset** - Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+| Type limiet | Beste praktijken | Oplegde limiet |
+| --- | --- | --- |
+| Aantal dubbele elementen per set | Geen duplicaten | 20 |
+| Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 
@@ -138,10 +138,10 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
 
-| Element - Type limiet | Beste praktijken | Implementatielimiet | Wijzigingen voor limiet 31 december 2022 |
-| --- | --- | --- | --- |
-| **Afbeeldingsset** - Aantal dubbele elementen per set | Geen duplicaten | 100 | 20 |
-| **Afbeeldingsset** - Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+| Type limiet | Beste praktijken | Oplegde limiet |
+| --- | --- | --- |
+| Aantal dubbele elementen per set | Geen duplicaten | 20 |
+| Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 
