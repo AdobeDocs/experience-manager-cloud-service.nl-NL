@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2334'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ U kunt sjablonen maken van Adobe® Photoshop®-bestanden, lagen behouden, opgeve
 
 ### Tabblad PDF {#pdf-tab}
 
-Het maximumaantal pagina&#39;s voor een PDF dat voor extractie in aanmerking komt, is 5000 voor nieuwe uploads. Deze limiet verandert in 100 pagina&#39;s op 31 december 2022. Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
+Het maximumaantal pagina&#39;s voor een PDF dat voor extractie in aanmerking komt, is 5000 voor nieuwe uploads. Deze limiet wordt op 31 december 2022 gewijzigd in 100 pagina&#39;s (voor alle PDF). Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 
 U kunt de bestanden omzetten in pixels, zoekwoorden en koppelingen extraheren, de resolutie instellen en een kleurruimte kiezen.
 
