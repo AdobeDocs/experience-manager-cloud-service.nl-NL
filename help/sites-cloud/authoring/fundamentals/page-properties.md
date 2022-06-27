@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
 workflow-type: tm+mt
-source-wordcount: '1966'
+source-wordcount: '1987'
 ht-degree: 5%
 
 ---
@@ -98,7 +98,8 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    * **Taal** - De paginataal
    * **Taalbasis** - Moet worden gecontroleerd als de pagina de basis van een taalkopie is
-   * **Omleiden** - Geeft de pagina aan waarnaar deze pagina automatisch moet worden omgeleid
+   * **Omleiden** - Geeft de pagina aan waarnaar deze pagina automatisch moet worden omgeleid met een HTML `302 Found` status.
+      * **Permanent omleiden** - Als deze optie is ingeschakeld, wordt de pagina omgeleid naar het doelpad dat samen met een HTML wordt geleverd `301 Moved Permanently` status.
    * **Ontwerp** - Geeft aan of de pagina wordt weergegeven of verborgen in de paginanavigatie van de resulterende site
    * **Alias** - Hiermee wordt een alias opgegeven die met deze pagina moet worden gebruikt
       * Als u bijvoorbeeld een alias definieert van `private` voor de pagina `/content/wknd/us/en/magazine/members-only`, kan deze pagina ook worden geopend via `/content/wknd/us/en/magazine/private`

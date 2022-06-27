@@ -2,9 +2,9 @@
 title: Omgevingsvariabelen van Cloud Manager
 description: De standaardmilieuvariabelen kunnen via de Manager van de Wolk worden gevormd en worden beheerd en aan het runtime milieu worden verstrekt, dat in configuratie OSGi moet worden gebruikt.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: e03a209079b393d29e02977a2698f8d803a916cd
+source-git-commit: 7f8d6afdb5e3aecc90fdeb870eaaa0a5c5d29ca9
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ Omgevingsvariabelen kunnen `pom.xml` configuraties veiliger en flexibeler. Bijvo
 U hebt als volgt toegang tot omgevingsvariabelen en geheimen via XML.
 
 * `${env.VARIABLE_NAME}`
-* `${env.SECRET_NAME}`
+* `${secret.SECRET_NAME}`
 
 Zie het document [Project instellen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) voor een voorbeeld van het gebruik van beide typen variabelen in een `pom.xml` bestand.
