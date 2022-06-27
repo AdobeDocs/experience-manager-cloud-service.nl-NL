@@ -3,9 +3,9 @@ title: Dynamic Media-Cloud Service configureren
 description: Leer hoe u Dynamic Media in Adobe Experience Manager as a Cloud Service configureert.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
+source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3353'
 ht-degree: 2%
 
 ---
@@ -272,6 +272,9 @@ Zie [Elementen uploaden](/help/assets/add-assets.md).
 
 1. Meld u aan bij de as a Cloud Service Experience Manager als productbeheerder.
 1. In as a Cloud Service Experience Manager, selecteer het as a Cloud Service embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben, dan ga naar **[!UICONTROL General > CRXDE Lite]**.
+
+   Als u geen toegang hebt tot CRXDE Lite, raadpleegt u [CRXDE Lite gebruiken](/help/implementing/developing/tools/crxde.md).
+
 1. Navigeer in de linkerspoorstaaf naar het volgende:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -326,6 +329,8 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
 1. Keer terug naar het browser lusje dat uw open Experience Manager as a Cloud Service console heeft.
 1. Van as a Cloud Service Experience Manager, ga naar **[!UICONTROL Tools > General > CRXDE Lite]**.
+
+   Als u geen toegang hebt tot CRXDE Lite, raadpleegt u [CRXDE Lite gebruiken](/help/implementing/developing/tools/crxde.md).
 
    ![Gereedschappen > Algemeen > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -382,6 +387,8 @@ De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In D
 >[!NOTE]
 >
 >U moet als productbeheerder zijn aangemeld bij de as a Cloud Service Experience Manager om deze taak te voltooien.
+
+Als u geen toegang tot OSGi hebt, zie [OSGi-configuratie](/help/implementing/developing/components/overview.md#osgi-configuration).
 
 **Om de vooraf bepaalde de arbeidersthreads bij te werken van de Rij van het Werkschema van de Granite (videoactiva):**
 
