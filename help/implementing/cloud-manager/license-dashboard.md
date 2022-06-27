@@ -1,13 +1,13 @@
 ---
 title: Licentiedashboard
 description: Cloud Manager biedt een dashboard voor het eenvoudig weergeven van AEMaaCS-productrechten die beschikbaar zijn voor uw organisatie of huurder.
-source-git-commit: 82b4a4c8da9f42de08c19eb3caf25ff3a1bad4d4
+exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
+source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
-
 
 # Licentiedashboard {#license-dashboard}
 
@@ -57,13 +57,15 @@ Elke sectie vat samen wat beschikbaar is en hoe het momenteel, als bij allen wor
 
 Een inhoudsverzoek is een verzoek dat in AEM Sites of om het even welk klant-verstrekt in het voorgeheugen onderbrengend systeem zoals een netwerk van de inhoudslevering komt om inhoud of gegevens in één van beide formaat van de HTML als paginamening of in formaat JSON als API vraag te leveren.
 
-Één inhoudsverzoek wordt geteld voor elke paginamening of voor elke vijf API vraag, die bij de ingang van het eerste caching systeem wordt gemeten om een inhoudsverzoek te ontvangen.
+Één inhoudsverzoek wordt geteld voor elke paginamening of voor elke vijf API vraag, die bij de ingang van het eerste caching systeem wordt gemeten om een inhoudsverzoek te ontvangen. Inhoudsaanvragen worden alleen in mindering gebracht op productieomgevingen.
 
 Inhoudsverzoeken sluiten verzoeken of activiteiten uit die door of namens Adobe worden geïnitieerd met als enig doel het aanbieden van producten en diensten. Adobe-geïdentificeerd gebruikersagent verkeer van bots, kruiplers, en spinnen met betrekking tot gemeenschappelijke onderzoeksmotoren en sociale media diensten wordt ook uitgesloten.
 
 ### Hoe meet Adobe Experience Manager verzoeken om inhoud? {#how-are-content-requests-measured}
 
-Aanvragen voor inhoud worden op de server bijgehouden binnen de Cloud Service. CDN die in AEM as a Cloud Service sporen geldige HTML en JSON verzoeken wordt ingebouwd. AEM heeft ook regels om bekende bots uit te sluiten, met inbegrip van bekende diensten die de site regelmatig bezoeken om hun zoekindex of service te vernieuwen.
+Inhoudsaanvragen worden bijgehouden op Edge-servers van AEM as a Cloud Service. Het verkeer van de oorsprong telt niet op inhoudverzoeken. CDN die in AEM as a Cloud Service sporen geldige HTML en JSON verzoeken wordt ingebouwd.
+
+AEM heeft ook regels om bekende bots uit te sluiten, met inbegrip van bekende diensten die de site regelmatig bezoeken om hun zoekindex of service te vernieuwen.
 
 Hieronder volgt een niet-limitatieve lijst van voorbeelden van uitgesloten bekende diensten.
 
