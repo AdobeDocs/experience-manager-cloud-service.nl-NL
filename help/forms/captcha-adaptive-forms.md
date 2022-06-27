@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
+source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 0%
@@ -88,7 +88,7 @@ CAPTCHA gebruiken in Adaptive Forms:
 1. Van de **[!UICONTROL Captcha service]** vervolgkeuzelijst, selecteert u **[!UICONTROL reCaptcha]** om de dienst reCAPTCHA toe te laten als u het zoals die in vormde [De dienst van ReCAPTCHA door Google](#google-recaptcha). Selecteer een configuratie in het keuzemenu Instellingen.
 1. Selecteer de tekst als **[!UICONTROL Normal]** of **[!UICONTROL Compact]** voor de reCAPTCHA-widget. U kunt ook de **[!UICONTROL Invisible]** optie om de CAPTCHA-uitdaging alleen aan te tonen in het geval van een verdachte activiteit. Het symbool dat wordt beveiligd door de reCAPTCHA-badge, hieronder, wordt weergegeven op de beveiligde formulieren.
 
-   ![Google is verwerkt door reCAPTCHA badge](assets/google-recaptcha-v2.png)
+   ![Google beveiligd door reCAPTCHA-badge](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
