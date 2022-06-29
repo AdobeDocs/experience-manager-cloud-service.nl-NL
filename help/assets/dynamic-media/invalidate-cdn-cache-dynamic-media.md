@@ -4,9 +4,9 @@ description: Leer hoe u inhoud in de cache van uw CDN (Content Delivery Network)
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
+source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1297'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,20 @@ Dynamic Media-elementen worden in cache geplaatst door de CDN (Content Delivery 
 
 >[!NOTE]
 >
->Voor deze functie is het vereist dat u de CDN uit de doos gebruikt die bij Adobe Experience Manager Dynamic Media is gebundeld. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
+>Deze functie vereist dat u de CDN met Adobe-bundels gebruikt die bij Adobe Experience Manager Dynamic Media wordt geleverd. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
+
+Als u [Slimme afbeeldingen](/help/assets/dynamic-media/imaging-faq.md) op uw account en u gebruikt de Adobe-gebundelde CDN, kunt u alle URL&#39;s met verschillende querytekenreeksen leegmaken door de enkele basis-URL op te schonen.
+
+Bijvoorbeeld, ongeldig maken `https://weekendsite.scene7.com/is/image/grundfos/image`maakt ook de volgende URL&#39;s ongeldig:
+
+* `https://weekendsite.scene7.com/is/image/grundfos/image`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* enzovoort.
+
+Deze ongeldigmaking is echter niet het geval voor algemene domeinen die geen ondersteuning bieden voor Smart Imaging, zoals `s7d1.scene7.com`. Dergelijke domeinen hebben nog steeds de volledige URL nodig om validatiewerkzaamheden met succes uit te voeren.
 
 **De CDN-cache ongeldig maken via Dynamic Media:**
 
