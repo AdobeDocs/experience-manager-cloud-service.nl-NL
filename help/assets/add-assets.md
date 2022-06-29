@@ -4,9 +4,9 @@ description: Voeg uw digitale middelen toe aan [!DNL Adobe Experience Manager] a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
+source-git-commit: a715594f74187ad61cdea566274723d170fd3783
 workflow-type: tm+mt
-source-wordcount: '2875'
+source-wordcount: '2956'
 ht-degree: 0%
 
 ---
@@ -155,6 +155,11 @@ Voor het gebruik van deze functie is een externe opslagaccount of emmer uit Azur
 >
 >Maak de container of het emmertje van de opslagaccount als privé en accepteer alleen verbindingen van geoorloofde verzoeken. Aanvullende beperkingen op ingangsnetwerkverbindingen worden echter niet ondersteund.
 
+>[!NOTE]
+>
+>Externe opslagaccounts kunnen andere naamregels voor bestanden/mappen hebben dan het gereedschap Bulk importeren. Zie [Bestandsnamen verwerken tijdens bulkimport](#filename-handling-bulkimport) voor meer informatie over namen die niet zijn toegestaan of die niet zijn beschermd.
+
+
 ### Het gereedschap Bulkimport configureren {#configure-bulk-ingestor-tool}
 
 Voer de volgende stappen uit om het gereedschap Bulk importeren te configureren:
@@ -216,6 +221,15 @@ Selecteer de configuratie en klik op **[!UICONTROL Dry Run]** om een testlooppas
 Wanneer u elementen of mappen bulksgewijs importeert, [!DNL Experience Manager Assets] importeert de gehele structuur van wat er in de invoerbron bestaat. [!DNL Experience Manager] volgt de ingebouwde regels voor speciale tekens in de naam van het element en de map. Deze bestandsnamen moeten daarom worden ontsmet. Voor zowel de mapnaam als de elementnaam blijft de door de gebruiker gedefinieerde titel ongewijzigd en wordt deze opgeslagen in `jcr:title`.
 
 Tijdens de bulkinvoer [!DNL Experience Manager] zoekt u naar de bestaande mappen om te voorkomen dat de elementen en mappen opnieuw worden geïmporteerd, en controleert u ook de ontsmettingsregels die zijn toegepast in de bovenliggende map waar het importeren plaatsvindt. Als de ontsmettingsregels worden toegepast in de bovenliggende map, worden dezelfde regels toegepast op de importbron. Voor nieuwe importbewerkingen gelden de volgende saneringsregels voor het beheer van de bestandsnamen van elementen en mappen.
+
+**Namen die niet zijn toegestaan tijdens bulkimport**
+
+De volgende tekens zijn niet toegestaan in bestands- en mapnamen:
+
+* Besturings- en privé-gebruik (0x00 tot 0x1F, \u0081, \uE000)
+* Bestands- of mapnamen die eindigen met een punt (.)
+
+Bestanden of mappen met namen die aan deze voorwaarden voldoen, worden tijdens het importproces overgeslagen en gemarkeerd als mislukt.
 
 **Elementnaam verwerken in bulkimport**
 
