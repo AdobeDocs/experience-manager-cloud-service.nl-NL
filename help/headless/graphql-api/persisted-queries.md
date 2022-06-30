@@ -3,9 +3,9 @@ title: Blijvende query's voor GraphQL
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Aanbevolen wordt om query&#39;s in een AEM ontwerpomgeving in eerste instantie v
 
 Er zijn verschillende methoden om query&#39;s te blijven uitvoeren, waaronder:
 
-* GraphiQL IDE - zie [Blijvende query&#39;s opslaan](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (voorkeursmethode)
+* GraphiQL IDE - zie [Blijvende query&#39;s opslaan](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (voorkeursmethode)
 * krullen - zie het volgende voorbeeld
 * Andere gereedschappen, inclusief [Postman](https://www.postman.com/)
 
@@ -256,6 +256,45 @@ Deze query kan worden uitgevoerd onder een pad `wknd/adventures-by-activity`. Om
 ```
 
 Let op: `%3B` is de UTF-8-codering voor `;` en `%3D` is de codering voor `=`. De vraagvariabelen en om het even welke speciale karakters moeten [correct gecodeerd](#encoding-query-url) voor de Persisted query die moet worden uitgevoerd.
+
+## Door uw doorlopende query&#39;s in cache te plaatsen {#caching-persisted-queries}
+
+Aanbevolen wordt om query&#39;s door te voeren omdat deze in het cachegeheugen kunnen worden opgeslagen bij de verzender- en CDN-lagen, waardoor de prestaties van de toepassing die de aanvraag indient uiteindelijk verbeteren.
+
+Standaard maakt AEM de CDN-cache (Content Delivery Network) ongeldig op basis van een standaardtijd tot live (TTL).
+
+Deze waarde is ingesteld op:
+
+* 7200 seconden is standaardTTL voor de Verzender en CDN; ook bekend als *gedeelde cache*
+   * standaard: s-maxage=7200
+* 60 is standaard TTL voor de cliënt (bijvoorbeeld, browser)
+   * standaard: maxage=60
+
+Als u TTL voor uw vraag wilt veranderen GraphLQ, dan moet de vraag of zijn:
+
+* aanhouden na het beheren van de [HTTP Cache headers - van de GraphQL IDE](#http-cache-headers)
+* blijft bestaan met de [API-methode](#cache-api).
+
+### De kopballen van het Geheime voorgeheugen van HTTP in GraphQL beheren  {#http-cache-headers-graphql}
+
+GraphiQL IDE - zie [Blijvende query&#39;s opslaan](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+### Cache beheren vanuit de API {#cache-api}
+
+Dit impliceert het posten van de vraag aan AEM gebruikend CURL in uw interface van de bevellijn.
+
+Een voorbeeld:
+
+```xml
+curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
+De `cache-control` kan worden ingesteld tijdens het maken (PUT) of later (bijvoorbeeld via een aanvraag voor een POST). Het cache-control is optioneel wanneer u de aanhoudend query maakt, omdat AEM de standaardwaarde kan opgeven. Zie [Hoe te om een vraag te handhaven GraphQL](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), bijvoorbeeld om een vraag voort te zetten gebruikend krullen.
 
 ## De URL van de query coderen voor gebruik door een app {#encoding-query-url}
 

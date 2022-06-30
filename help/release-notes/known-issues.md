@@ -2,9 +2,9 @@
 title: Bekende problemen
 description: Bekende problemen met Adobe Experience Manager as a Cloud Service
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: 755c0072148ad73486df2ccfed69248b9d73ec2a
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,16 @@ In dit artikel worden de bekende problemen van [!DNL Adobe Experience Manager] a
 
 <!-- 
 ## Platform {#platform}
+-->
 
 ## Sites {#sites}
--->
+
+Sommige bekende problemen in [!DNL Sites] zijn:
+
+* In GrafiekQL winde kunt u [beheer het geheime voorgeheugen voor uw voortgezette vragen](/help/headless/graphql-api/graphiql-ide.md##managing-cache).
+   * Bij de eerste keer sparen de waarden voor de kopballen worden bewaard geplaatst aan `0` (in plaats van de standaardwaarden) - als de gebruiker deze waarden in het dialoogvenster niet heeft gewijzigd.
+   * Bij het opslaan worden de waarden correct opgeslagen.
+   * Daarom moet de gebruiker de kopballen tweemaal bewaren.
 
 ## [!DNL Assets] {#assets}
 

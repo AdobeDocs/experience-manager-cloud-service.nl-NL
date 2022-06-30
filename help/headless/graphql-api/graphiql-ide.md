@@ -3,9 +3,9 @@ title: Het gebruiken van GrahiQL winde in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,33 @@ Bijvoorbeeld:
 
 ![GrafiekQL-variabelen](assets/cfm-graphqlapi-03.png "GrafiekQL-variabelen")
 
+## Het beheren van geheime voorgeheugen voor uw persistente vragen {#managing-cache}
+
+[Blijvende query&#39;s](/help/headless/graphql-api/persisted-queries.md) worden aanbevolen, omdat deze in de verzender- en CDN-lagen in het cachegeheugen kunnen worden opgeslagen, waardoor de prestaties van de toepassing die de aanvraag indient, uiteindelijk worden verbeterd. Standaard maakt AEM de CDN-cache (Content Delivery Network) ongeldig op basis van een standaardtijd tot live (TTL).
+
+Gebruikend GraphQL kunt u de Kopballen van het Geheime voorgeheugen van HTTP vormen om deze parameters voor uw individuele voortgezette vraag te controleren.
+
+1. De **Kopteksten** Deze optie is toegankelijk via de drie verticale stippen rechts van de naam van de voortgezette query (het linkerdeelvenster):
+
+   ![Blijvende HTTP-cache-headers van query](assets/cfm-graphqlapi-headers-01.png "Blijvende HTTP-cache-headers van query")
+
+1. Als u deze optie selecteert, wordt het dialoogvenster **Cacheconfiguratie** dialoogvenster:
+
+   ![Instellingen voor blijvende HTTP-cache van query](assets/cfm-graphqlapi-headers-02.png "Instellingen voor blijvende HTTP-cache van query")
+
+1. Selecteer de gewenste parameter en pas vervolgens de gewenste waarde aan:
+
+   * **cache-control** - **maximale leeftijd**
+Deze inhoud kan gedurende een opgegeven aantal seconden in cache worden opgeslagen. Dit is doorgaans de TTL-indeling van de browser (tijd om te leven).
+   * **surrogaatcontrole** - **s-maxage**
+Hetzelfde als maximale leeftijd, maar is specifiek van toepassing op proxycaches.
+   * **surrogaatcontrole** - **stale-while-revalidate**
+De bussen kunnen een caching reactie blijven dienen nadat het, tot het gespecificeerde aantal seconden stale wordt.
+   * **surrogaatcontrole** - **stale-if-error**
+In geval van een fout of een fout van de oorsprong kan het optreden van een cache gedurende een opgegeven aantal seconden worden voortgezet.
+
+1. Selecteren **Opslaan** om de wijzigingen voort te zetten.
+
 ## Het publiceren van voortgeduurde vragen {#publishing-persisted-queries}
 
 Als u de doorlopende query in de lijst hebt geselecteerd (linkerdeelvenster), kunt u de opdracht **Publiceren** en **Publiceren ongedaan maken** handelingen. Hiermee worden ze geactiveerd in uw publicatieomgeving (bijvoorbeeld `dev-publish`) voor eenvoudige toegang door uw toepassingen tijdens het testen.
@@ -103,32 +130,6 @@ Als u de doorlopende query in de lijst hebt geselecteerd (linkerdeelvenster), ku
 >[!NOTE]
 >
 >De definitie van het voorgeheugen van de persisted query `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} heeft een standaardwaarde van 2 uur (7200 seconden).
-
-## Door uw doorlopende query&#39;s in cache te plaatsen {#caching-persisted-queries}
-
-AEM maakt de CDN-cache (Content Delivery Network) ongeldig op basis van een standaardtijd om te leven (TTL).
-
-Deze waarde is ingesteld op:
-
-* 7200 seconden is standaardTTL voor de Verzender en CDN; ook bekend als *gedeelde cache*
-   * standaard: s-maxage=7200
-* 60 is standaard TTL voor de cliënt (bijvoorbeeld, browser)
-   * standaard: maxage=60
-
-AEM vragen GraphQL die met GraphiQL UI werden voortgeduurd zullen standaardTTL op uitvoering gebruiken. Als u TTL voor uw vraag wilt veranderen GraphLQ, dan moet de vraag in plaats daarvan voortbestaan gebruikend de API methode. Dit impliceert het posten van de vraag aan AEM gebruikend CURL in uw interface van de bevellijn.
-
-Een voorbeeld:
-
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
-```
-
-De `cache-control` kan worden ingesteld tijdens het maken (PUT) of later (bijvoorbeeld via een aanvraag voor een POST). Het cache-control is optioneel wanneer u de aanhoudend query maakt, omdat AEM de standaardwaarde kan opgeven. Zie [Hoe te om een vraag te handhaven GraphQL](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), bijvoorbeeld om een vraag voort te zetten gebruikend krullen.
 
 ## URL kopiëren om rechtstreeks toegang te krijgen tot de query {#copy-url}
 

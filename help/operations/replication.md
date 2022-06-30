@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
+source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1216'
 ht-degree: 1%
 
 ---
@@ -40,25 +40,6 @@ Publicatie beheren biedt meer opties dan Snel publiceren, waardoor onderliggende
 Als de onderliggende items van een map worden opgenomen voor de optie &quot;Later publiceren&quot;, wordt de workflow van de structuur met publicatie-inhoud geactiveerd, zoals in dit artikel wordt beschreven.
 
 U vindt meer gedetailleerde informatie over Publicatie beheren op het tabblad [Publicatie van documentatie over grondbeginselen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
-
-### Boomactivering {#tree-activation}
-
->[!NOTE]
->
->Deze benadering moet als afgekeurd worden beschouwd en zal op of na 30 september 2021 worden verwijderd, aangezien zij niet langer een status heeft en minder schaalbaar is dan andere benaderingen. Aanbevolen wordt in plaats daarvan publicatiemethoden te gebruiken
-
-Een boomactivering uitvoeren:
-
-1. Ga in het menu AEM Start naar **Extra > Implementatie > Distributie**
-2. Selecteer de kaart **publish**
-3. Eenmaal in de gebruikersinterface van de webconsole voor publiceren **Selecteer Distribueren**
-
-   ![Distribueren](assets/publish-distribute.png "Distribueren")
-4. Selecteer het pad in de padbrowser en kies een knooppunt, structuur of verwijder het pad naar wens en selecteer **Verzenden**
-
-Houd u aan de volgende richtlijnen wanneer u deze functie gebruikt voor de beste prestaties:
-* Het wordt aanbevolen minder dan 100 paden tegelijk te repliceren, met een harde limiet van 500 paden.
-* De totale grootte van de gerepliceerde inhoud moet kleiner zijn dan 10 MB. Dit omvat enkel de knopen en de eigenschappen, maar geen binaire getallen, die werkschemapakketten en inhoudspakketten omvatten.
 
 ### Workflow van inhoudsstructuur publiceren {#publish-content-tree-workflow}
 
@@ -133,7 +114,7 @@ De workflow verwerkt inhoud in blokken, die elk een subset vormen van de volledi
 
 ### Replicatie-API {#replication-api}
 
-U kunt inhoud publiceren gebruikend Replacement API die in AEM as a Cloud Service wordt getoond.
+U kunt inhoud publiceren gebruikend de Replicatie API die in AEM as a Cloud Service wordt getoond.
 
 Zie voor meer informatie de [API-documentatie](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
@@ -192,9 +173,12 @@ Als u een dergelijk filter niet aanbiedt en alleen de &quot;publish&quot;-agent 
 De `ReplicationStatus` van een middel wordt slechts gewijzigd als de replicatieactie minstens één agent omvat die door gebrek actief is. In het bovenstaande voorbeeld is dit niet het geval, aangezien de replicatie enkel de &quot;voorproef&quot;agent gebruikt. Daarom moet u het nieuwe `getStatusForAgent()` methode, die het vragen van de status voor een specifieke agent toestaat. Deze methode werkt ook voor de &quot;publiceer&quot;agent. Het keert een niet-krachteloze waarde terug als er om het even welke replicatieactie die gebruikend de verstrekte agent is gedaan geweest.
 
 
-**Paden en grootten van de API voor replicatie**
+**Limieten voor replicatie-API**
 
-Het wordt aanbevolen minder dan 100 paden te repliceren, waarbij 500 de harde limiet is. Boven de harde grens, zal een ReplicationException worden geworpen. Als uw toepassingslogica atomische replicatie niet vereist, kan deze grens worden overwonnen door ReplicationOptions.setUseAtoomcall aan vals te plaatsen, die om het even welk aantal wegen zal goedkeuren, maar intern emmers creëren om onder deze grens te blijven. De hoeveelheid inhoud die per replicatievraag wordt overgebracht moet niet 10 MB overschrijden, die de knopen en de eigenschappen omvat, maar geen binaire getallen (werkschemapakketten en inhoudspakketten worden beschouwd als binaire getallen).
+Het wordt aanbevolen minder dan 100 paden tegelijk te repliceren, waarbij 500 paden de harde limiet zijn. Boven de harde limiet geldt een `ReplicationException` wordt gegenereerd.
+Als voor uw toepassingslogica geen atoomreplicatie is vereist, kunt u deze limiet overwinnen door het instellen van de optie `ReplicationOptions.setUseAtomicCalls` naar false, dat een willekeurig aantal paden accepteert, maar intern emmers maakt om onder deze limiet te blijven.
+
+De grootte van de inhoud die per replicatievraag wordt overgebracht moet niet overschrijden `10 MB`. Dit omvat de knooppunten en de eigenschappen, maar geen binaire bestanden (workflowpakketten en inhoudspakketten worden als binaire bestanden beschouwd).
 
 ## Problemen oplossen {#troubleshooting}
 

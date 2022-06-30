@@ -1,13 +1,13 @@
 ---
 title: Opmerkingen bij de release 2022.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 53d5dbd53ec1e2dcb20b2b91f0cb020e9e35659c
+exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
+source-git-commit: f42cf1b82f7cf42be2afd30d69d71354fe0afeb3
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
-
 
 # Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -55,17 +55,6 @@ Kijk eens naar de [Overzicht release april 2022](https://video.tv.adobe.com/v/34
 
 * **Configuraties van formuliergegevensmodellen**: U kunt nu [Configuraties van het formuliergegevensmodel opnieuw gebruiken in verschillende omgevingen](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config), het vereenvoudigen van gegevensintegratie en het verlagen van IT-kosten.
 
-## CIF-invoegtoepassing {#cloud-services-cif}
-
-### Nieuwe functies {#what-is-new-cif}
-
-* Snelle toegang tot productcockpit: Eenvoudig toegang tot volledige gedetailleerde productinformatie met één klik in de Editor voor sites
-
-   ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
-
-* Steun voor extra marketingcomponenten: De componenten kunnen worden gevormd om toe:voegen-aan-kar en toe:voegen-aan-wenslijst vraag-aan-actie te tonen
-
-   ![Snelkoppeling naar productcockpit in Sites-editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
 
