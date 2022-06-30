@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten maken - Instellingen zonder kop
 description: Leer hoe u AEM inhoudsfragmenten kunt gebruiken voor het ontwerpen, maken, beheren en gebruiken van pagina-onafhankelijke inhoud voor levering zonder kop.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -25,24 +25,21 @@ Inhoudsfragmenten bevatten gestructureerde inhoud en kunnen in JSON-indeling wor
 
 Inhoudsauteurs maken een willekeurig aantal Inhoudsfragmenten om de inhoud te vertegenwoordigen die zij maken. Dit zal hun belangrijkste taak in AEM zijn. Met het oog op deze gids voor het op gang brengen van de werkzaamheden zullen we slechts één gids hoeven te maken.
 
-1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Navigation -> Middelen**.
+1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Navigatie** -> **Inhoudsfragmenten**.
+
 1. Tik of klik op de knop [eerder gemaakte map.](create-assets-folder.md)
-1. Tik of klik op **Maken -> Inhoudsfragment**.
-1. Het maken van een inhoudsfragment wordt in twee stappen weergegeven als een wizard. Selecteer eerst het model dat u wilt gebruiken om het inhoudsfragment te maken en tik of klik op **Volgende**.
+1. Tik of klik op **Maken**.
+1. Het maken van een inhoudsfragment wordt weergegeven als een dialoogvenster.
+Selecteer de locatie en het model waarmee u het inhoudsfragment wilt maken.
+
    * Welke modellen beschikbaar zijn, is afhankelijk van de [**Cloud Configuration** u hebt gedefinieerd voor de map assets](create-assets-folder.md) waarin u het inhoudsfragment maakt.
-   * Als u het bericht ontvangt `We could not find any models`, controleert u de configuratie van de map met elementen.
+   * Als uw model niet beschikbaar is, controleert u de configuratie van de map Assets.
 
-   ![Inhoudsfragmentmodel selecteren](../assets/content-fragment-model-select.png)
-1. Een **Titel**, **Beschrijving**, en **Tags** tikken of klikken **Maken**.
+   Voeg de titel, de naam en, indien nodig, de beschrijving toe.
 
-   ![Inhoudsfragment maken](../assets/content-fragment-create.png)
-1. Tik of klik op **Openen** in het bevestigingsvenster.
+   ![Dialoogvenster Nieuw inhoudsfragment maken](/help/headless/content-fragments/assets/cfc-console-create.png)
 
-   ![Bevestiging van Content Fragment](../assets/content-fragment-confirmation.png)
-1. Geef de details van het inhoudsfragment op in de Inhoudsfragmenteditor.
-
-   ![Inhoudsfragmenteditor](../assets/content-fragment-edit.png)
-1. Tik of klik op **Opslaan** of  **Opslaan en sluiten**.
+1. Tik of klik op **Maken** of  **Maken en openen**.
 
 Inhoudsfragmenten kunnen verwijzen naar andere inhoudsfragmenten, waarbij zo nodig een geneste inhoudsstructuur mogelijk is.
 
@@ -54,4 +51,4 @@ Nu u een inhoudsfragment hebt gemaakt, kunt u verdergaan naar het laatste gedeel
 
 >[!TIP]
 >
->Voor volledige details over het beheren van Inhoudsfragmenten raadpleegt u de [Documentatie over inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
+>Voor volledige details over het beheren van Inhoudsfragmenten raadpleegt u de [Documentatie over inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)

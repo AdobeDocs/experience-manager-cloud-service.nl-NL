@@ -4,7 +4,7 @@ description: Leer hoe vertaalregels inhoud identificeren die moet worden vertaal
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 0%
@@ -23,7 +23,7 @@ De vertaalregels identificeren de inhoud om voor pagina&#39;s, componenten, en a
 
 De vertaalregels die in dit document worden beschreven, zijn alleen van toepassing op inhoudsfragmenten als de **Velden voor inhoudsmodellen inschakelen voor vertaling** Deze optie is niet geactiveerd op het tabblad [configuratieniveau van het framework voor vertaalintegratie.](integration-framework.md#assets-configuration-properties)
 
-Als de **Velden voor inhoudsmodellen inschakelen voor vertaling** -optie is actief, AEM gebruikt de optie **Vertaalbaar** veld op [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md#properties) om te bepalen of het veld moet worden vertaald, worden automatisch vertaalregels vastgesteld. Deze optie vervangt de vertaalregels die u hebt gemaakt en vereist geen interventie of extra stappen.
+Als de **Velden voor inhoudsmodellen inschakelen voor vertaling** -optie is actief, AEM gebruikt de optie **Vertaalbaar** veld op [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) om te bepalen of het veld moet worden vertaald, worden automatisch vertaalregels vastgesteld. Deze optie vervangt de vertaalregels die u hebt gemaakt en vereist geen interventie of extra stappen.
 
 Als u vertaalregels wilt gebruiken voor het vertalen van uw inhoudsfragmenten, **Velden voor inhoudsmodellen inschakelen voor vertaling** Deze optie in de configuratie van het vertaalintegratieframework moet worden uitgeschakeld en u moet de onderstaande stappen volgen om uw regels te maken.
 

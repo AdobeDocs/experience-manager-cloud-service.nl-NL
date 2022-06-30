@@ -1,23 +1,20 @@
 ---
 title: Werken met contentfragmenten
-description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service inhoud kunt ontwerpen, maken, curven en gebruiken die onafhankelijk is van pagina's, ideaal voor levering zonder kop.
-feature: Content Fragments
-role: User
-exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: bd589f689174f4da20e0f5e73a8786a3dee0f352
+description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service inhoud kunt ontwerpen, maken, curven en gebruiken die onafhankelijk is van pagina's. Dit is ideaal voor het ontwerpen van pagina's en het leveren zonder kop.
+source-git-commit: 6de4120a5b8b312ca1a665b7d7ef7686670c4997
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2068'
 ht-degree: 3%
 
 ---
 
 # Werken met contentfragmenten {#working-with-content-fragments}
 
-Met Adobe Experience Manager (AEM) as a Cloud Service, staan de Fragments van de Inhoud u toe om te ontwerpen, tot stand te brengen, te leiden en [pagina-onafhankelijke inhoud publiceren](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Zo kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen, ideaal voor levering zonder kop.
+Met Adobe Experience Manager (AEM) as a Cloud Service, staan de Fragments van de Inhoud u toe om te ontwerpen, tot stand te brengen, te leiden en [pagina-onafhankelijke inhoud publiceren](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Zo kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen, ideaal voor het ontwerpen van pagina&#39;s en voor levering zonder kop.
 
 Inhoudsfragmenten bevatten gestructureerde inhoud:
 
-* Zij zijn gebaseerd op een [Inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md), waarin een vooraf gedefinieerde structuur voor het resulterende fragment wordt gedefinieerd.
+* Zij zijn gebaseerd op een [Inhoudsfragmentmodel](/help/sites-cloud/administering/content-fragments/content-fragments-models.md), waarin een vooraf gedefinieerde structuur voor het resulterende fragment wordt gedefinieerd.
 * De structuur kan liggen tussen:
    * Basis
       * Bijvoorbeeld een tekstveld met één regel tekst.
@@ -34,20 +31,21 @@ Inhoudsfragmenten kunnen ook worden geleverd in JSON-indeling, waarbij gebruik w
 * biedt u de mogelijkheid om de component te gebruiken om te beheren welke elementen van een fragment moeten worden geleverd
 * staat bulklevering toe, door veelvoudige inhoudfragment kerncomponenten op de pagina toe te voegen die voor levering API wordt gebruikt
 
->[!NOTE]
->
->Inhoudsfragmenten worden opgeslagen als **Activa**. Ze worden nu voornamelijk beheerd met de **[Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, hoewel zij nog van kunnen leiden **Activa** console. Deze afdeling heeft betrekking op het beheer van de **Activa** console.
-
 Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren, onderhouden en gebruiken van uw inhoudsfragmenten:
 
-* [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-* [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) - het inschakelen, maken en definiëren van uw modellen
-* [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md) - maak uw inhoudsfragmenten; vervolgens bewerken, publiceren en verwijzen
-* [Variaties - Fragmentinhoud ontwerpen](/help/assets/content-fragments/content-fragments-variations.md) - de fragmentinhoud ontwerpen en variaties van de Master inhoud maken
-* [Markering](/help/assets/content-fragments/content-fragments-markdown.md) - markeringssyntaxis gebruiken voor uw fragment
-* [Gekoppelde inhoud gebruiken](/help/assets/content-fragments/content-fragments-assoc-content.md) - gekoppelde inhoud toevoegen
-* [Metagegevens - Fragmenteigenschappen](/help/assets/content-fragments/content-fragments-metadata.md) - de fragmenteigenschappen weergeven en bewerken
-* Gebruiken [Inhoudsfragmenten, samen met GraphQL, om inhoud te leveren](/help/assets/content-fragments/content-fragments-graphql.md) voor gebruik in uw toepassingen. Om dit te helpen, kunt u een voorvertoning weergeven [JSON-uitvoer](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - het inschakelen, maken en definiëren van uw modellen
+* [De console Inhoudsfragmenten gebruiken](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) - om toegang te krijgen tot uw fragmenten, deze te maken, te bewerken, te publiceren en ernaar te verwijzen
+* [Inhoudsfragmenten beheren](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - maak uw inhoudsfragmenten; vervolgens bewerken, publiceren en verwijzen
+* [Variaties - Fragmentinhoud ontwerpen](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) - de fragmentinhoud ontwerpen en variaties van de Master inhoud maken
+* [Markering](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md) - markeringssyntaxis gebruiken voor uw fragment
+* [Gekoppelde inhoud gebruiken](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) - gekoppelde inhoud toevoegen
+* [Metagegevens - Fragmenteigenschappen](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md) - de fragmenteigenschappen weergeven en bewerken
+* Gebruik uw inhoudsfragmenten:
+
+   * [voor paginaontwerp](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+   * [samen met GraphQL, voor headless levering aan uw toepassingen](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
+Om dit te helpen, kunt u een voorvertoning weergeven van de [Boomstructuur](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md) en [JSON-uitvoer](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -120,9 +118,11 @@ Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructu
 
 Inhoudsfragmenten zijn:
 
+* A **Sites** gebruiken.
+
 * Opgeslagen als **Activa**:
 
-   * Inhoudsfragmenten (en hun variaties) kunnen worden gemaakt en onderhouden op basis van de **Activa** console.
+   * Inhoudsfragmenten (en hun variaties) kunnen worden gemaakt en onderhouden op basis van de **Inhoudsfragmenten** en de **Activa** console.
    * Gemaakt en bewerkt in de Inhoudsfragmenteditor.
 
 * Gebruikt in de [pagina-editor via de component Inhoudsfragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (verwijzende component):
@@ -150,7 +150,7 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
 
    * Vormen een integrerend deel van het fragment (zie [Delen van een inhoudsfragment maken](#constituent-parts-of-a-content-fragment)).
    * De positie van het element definiëren.
-   * Zie [Elementen invoegen in uw fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) in de fragmenteditor voor meer informatie.
+   * Zie [Elementen invoegen in uw fragment](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) in de fragmenteditor voor meer informatie.
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
    * zijn verbonden met een fragment; maar geen vast deel van het fragment (zie [Delen van een inhoudsfragment maken](#constituent-parts-of-a-content-fragment)).
    * Biedt enige flexibiliteit voor positionering.
    * U kunt het fragment gemakkelijk gebruiken (als tussenliggende inhoud) op een pagina.
-   * Zie [Gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) voor meer informatie .
+   * Zie [Gekoppelde inhoud](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) voor meer informatie .
 
 * Assets die beschikbaar zijn in de **assetbrowser** van de pagina-editor
 
@@ -183,7 +183,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
    * Tekstblokken, vaak meerdere regels, die zijn gescheiden als afzonderlijke entiteiten.
 
-   * In de modi [Tekst met opmaak](/help/assets/content-fragments/content-fragments-variations.md#rich-text) en [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) kan een alinea worden opgemaakt als een koptekst. In dat geval horen die alinea en de volgende alinea bij elkaar als één eenheid.
+   * In de modi [Tekst met opmaak](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#rich-text) en [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#markdown) kan een alinea worden opgemaakt als een koptekst. In dat geval horen die alinea en de volgende alinea bij elkaar als één eenheid.
 
    * Inhoudsbeheer tijdens het ontwerpen van pagina&#39;s inschakelen.
 
@@ -193,7 +193,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * zijn ingesloten in het alineasysteem van het fragment.
    * Kan worden opgemaakt wanneer de [fragment wordt gebruikt of er wordt naar verwezen op een pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
    * Kan alleen met de fragmenteditor worden toegevoegd aan, verwijderd uit of verplaatst binnen een fragment. Deze handelingen kunnen niet worden uitgevoerd in de paginaeditor.
-   * Kan alleen worden toegevoegd aan, verwijderd uit of verplaatst binnen een fragment met [Opmaak RTF in de fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+   * Kan alleen worden toegevoegd aan, verwijderd uit of verplaatst binnen een fragment met [Opmaak RTF in de fragmenteditor](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
    * Kan alleen worden toegevoegd aan tekstelementen met meerdere regels (elk fragmenttype).
    * Aan de voorgaande tekst (alinea) worden toegevoegd.
 
@@ -209,7 +209,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
    * Dit is inhoud die zich buiten een fragment bevindt, maar die van redactionele betekenis is. Meestal worden afbeeldingen, video&#39;s of andere fragmenten weergegeven.
    * De afzonderlijke elementen in de verzameling zijn beschikbaar voor gebruik met het fragment in de pagina-editor wanneer het aan een pagina wordt toegevoegd. Dit betekent dat ze optioneel zijn, afhankelijk van de vereisten van het specifieke kanaal.
-   * De activa zijn [gekoppeld aan fragmenten via verzamelingen](/help/assets/content-fragments/content-fragments-assoc-content.md); Met gekoppelde verzamelingen kan de auteur beslissen welke elementen worden gebruikt wanneer deze de pagina ontwerpt.
+   * De activa zijn [gekoppeld aan fragmenten via verzamelingen](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md); Met gekoppelde verzamelingen kan de auteur beslissen welke elementen worden gebruikt wanneer deze de pagina ontwerpt.
 
       * Verzamelingen kunnen tijdens het ontwerpen van fragmenten als standaardinhoud worden gekoppeld.
       * [Activa (DAM) Inzamelingen](/help/assets/manage-collections.md) vormen de basis voor de bijbehorende inhoud van fragmenten.
@@ -236,7 +236,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
       * Elk inhoudsfragment heeft één instantie van Master.
       * Master kan niet worden verwijderd.
-   * Master is toegankelijk in de fragmenteditor onder **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)**.
+   * Master is toegankelijk in de fragmenteditor onder **[Variaties](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)**.
    * Master is geen variatie als zodanig, maar is de basis van alle variaties.
 
 
@@ -246,9 +246,9 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Wordt gemaakt als kopieën van **Master**, maar kan vervolgens naar behoefte worden bewerkt; er is gewoonlijk inhoudsoverlap tussen de variaties zelf.
    * Kan worden gedefinieerd tijdens het ontwerpen van fragmenten.
    * Opgeslagen in het fragment, om spreiding van inhoudskopieën te voorkomen.
-   * Variaties kunnen [gesynchroniseerd](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) master als de Master inhoud is bijgewerkt.
-   * Kan [Samengevat](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) om de tekst snel af te kappen tot een vooraf gedefinieerde lengte.
-   * Beschikbaar onder [Variaties](/help/assets/content-fragments/content-fragments-variations.md) tabblad van de fragmenteditor.
+   * Variaties kunnen [gesynchroniseerd](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#synchronizing-with-master) master als de Master inhoud is bijgewerkt.
+   * Kan [Samengevat](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#summarizing-text) om de tekst snel af te kappen tot een vooraf gedefinieerde lengte.
+   * Beschikbaar onder [Variaties](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) tabblad van de fragmenteditor.
 
 ### Tussen inhoud wanneer pagina&#39;s worden gemaakt met inhoudsfragmenten {#in-between-content-when-page-authoring-with-content-fragments}
 
@@ -270,9 +270,9 @@ Voor het maken van inhoudfragmenten hebt u het volgende nodig:
 
 * **Inhoudsmodel**
 
-   * zijn [toegelaten gebruikend Browser van de Configuratie](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-   * zijn [gemaakt met Gereedschappen](/help/assets/content-fragments/content-fragments-models.md).
-   * Vereist voor [een fragment maken](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
+   * zijn [toegelaten gebruikend Browser van de Configuratie](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
+   * zijn [gemaakt met Gereedschappen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md).
+   * Vereist voor [een fragment maken](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Definieert de structuur van een fragment (titel, inhoudselementen, tagdefinities).
    * Definities van inhoudsmodellen vereisen een titel en één gegevenselement. alles is optioneel .
    * Het model kan de standaardinhoud definiëren, indien van toepassing.

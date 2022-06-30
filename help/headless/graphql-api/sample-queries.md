@@ -3,7 +3,7 @@ title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 0ff90afca3fb72ac6d0a79793a332c1c2172cd67
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 2%
@@ -18,8 +18,8 @@ Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door s
 >
 >Deze pagina moet samen met:
 >
->* [Contentfragmenten](/help/assets/content-fragments/content-fragments.md)
->* [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
+>* [Contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+>* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [AEM GraphQL API voor gebruik met Content Fragments](/help/headless/graphql-api/content-fragments.md)
 
 

@@ -2,7 +2,7 @@
 title: Aan de slag met AEM headless as a Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 0%
@@ -285,8 +285,8 @@ Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder
 * [Naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md) - Technische documentatie van beperkingen voor paginanummering in AEM
 * [Beheer en vertaling van meerdere sites](/help/sites-cloud/administering/msm-and-translation.md) - Technische documentatie over AEM krachtige vertaalfuncties
 * [Workflows AEM](/help/sites-cloud/authoring/workflows/overview.md) - Technische documentatie over de automatisering van workflows in AEM
-* [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) - Technische documentatie voor inhoudsfragmenten.
-* [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) - Technische documentatie voor modellen van inhoudsfragmenten.
+* [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Technische documentatie voor inhoudsfragmenten.
+* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Technische documentatie voor modellen van inhoudsfragmenten.
 * [GraphQL - Technische documentatie](https://graphql.org) - De definitie GraphQL (externe koppeling)
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) - Technische documentatie die verklaart hoe te om verzoeken tot toegang te leiden en inhoudsfragmenten te leveren
 * [REST-API voor middelen](/help/assets/content-fragments/assets-api-content-fragments.md) - Technische documentatie die verklaart hoe te om de Fragmenten van de Inhoud (en andere activa) tot stand te brengen en te wijzigen

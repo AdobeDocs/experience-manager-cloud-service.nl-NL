@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0f6546d4a25a59a93090952f0ee58e27f0f0f838
+source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
-source-wordcount: '3612'
-ht-degree: 22%
+source-wordcount: '3682'
+ht-degree: 23%
 
 ---
 
@@ -274,6 +274,20 @@ ht-degree: 22%
          + [Het vormen Segmentatie met ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registratie, aanmelding en gebruikersprofiel](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + Beheer {#administering}
+      + Contentfragmenten {#content-fragments}
+         + [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+         + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
+         + [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+         + [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+         + [Console voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+         + [Contentfragmenten beheren](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+         + [Variaties - Authoring van content voor fragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+         + [Aan contentfragmenten gekoppelde content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
+         + [Metagegevens - Fragmenteigenschappen](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+         + [Contentfragmenten - Overwegingen verwijderen](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
+         + [Markering](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
+         + [Boomstructuur](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
+         + [Voorvertoning - JSON-representatie](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
       + Site maken {#site-creation}
          + [Een nieuwe site maken](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Voorste pijplijn inschakelen](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -619,18 +633,18 @@ ht-degree: 22%
       + [Inhoudsfragment](/help/headless/setup/create-content-fragment.md)
       + [GraphQL-eindpunt](/help/headless/setup/create-api-request.md)
    + Contentfragmenten {#content-fragments}
-      + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+      + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
       + [Console voor inhoudsfragmenten](/help/headless/content-fragments/content-fragment-console.md)
-      + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
-      + [Beheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
+      + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
+      + [Beheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
       + Authoring{#authoring}
-         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
-         + [Teksteditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
-         + [Gekoppelde inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
-         + [Variaties](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
-      + [Metagegevens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-      + [Boomstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-      + [JSON-voorvertoning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
+         + [Teksteditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
+         + [Gekoppelde inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
+         + [Variaties](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
+      + [Metagegevens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
+      + [Boomstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
+      + [JSON-voorvertoning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
    + GraphQL API {#graphql-api}
       + [GraphQL API voor inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
       + [GrafiekQL-eindpunten beheren](/help/headless/graphql-api/graphql-endpoint.md)

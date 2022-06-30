@@ -2,7 +2,7 @@
 title: Een middelenmap maken - Instellingen zonder kop
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 131225c8303bdd8900a8e22ef51b545da2257f40
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -50,8 +50,8 @@ Als u een gelokaliseerde sitestructuur gebruikt, kunt u [een hoofdmap voor een t
 
 ## Volgende stappen {#next-steps}
 
-Nu u een map voor de inhoudsfragmenten hebt gemaakt, kunt u verdergaan naar het vierde gedeelte van de gids Aan de slag en [Maak inhoudsfragmenten.](create-content-fragment.md)
+Nu u een map voor de inhoudsfragmenten hebt gemaakt, kunt u verdergaan naar het vierde gedeelte van de gids Aan de slag en [inhoudsfragmenten maken](create-content-fragment.md).
 
 >[!TIP]
 >
->Voor volledige details over het beheren van Inhoudsfragmenten raadpleegt u de [Documentatie over inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
+>Voor volledige details over het beheren van Inhoudsfragmenten raadpleegt u de [Documentatie over inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)

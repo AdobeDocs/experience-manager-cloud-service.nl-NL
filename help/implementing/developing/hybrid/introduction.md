@@ -2,7 +2,7 @@
 title: SPA Inleiding en Analyse
 description: Dit artikel introduceert de concepten SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 0%
@@ -177,7 +177,7 @@ de volgende afdeling, [Een SPA-toepassing laden](#loading-a-spa-application), ga
 
    ![JSON van de homepage van het SPA WKND Project](assets/wknd-json.png)
 
-   De AEM SPA Editor gebruikt [AEM Content Services](/help/assets/content-fragments/content-fragments.md) om de volledige inhoud van de pagina als JSON-model te leveren.
+   De AEM SPA Editor gebruikt [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) om de volledige inhoud van de pagina als JSON-model te leveren.
 
    Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan de SPA. De levering van de JSON-gegevens wordt naar beneden gedelegeerd aan elke component (van pagina, alinea, component, enz.).
 

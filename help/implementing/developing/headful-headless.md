@@ -1,8 +1,8 @@
 ---
 title: Hoofdletters en headless in AEM
-description: AEM projecten kunnen worden uitgevoerd in een krachtig en zonder kop model, maar de keuze is niet binair. AEM offers the flexibility to exploit the advantages of both models in one project.
+description: AEM projecten kunnen worden uitgevoerd in een krachtig en zonder kop model, maar de keuze is niet binair. AEM biedt de flexibiliteit om de voordelen van beide modellen in één project te benutten.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 0%
@@ -11,33 +11,33 @@ ht-degree: 0%
 
 # Hoofdletters en headless in AEM {#headful-headless}
 
-Adobe Experience Manager projects can be implemented in both headful and headless models, but the choice isn&#39;t binary. AEM offers the flexibility to exploit the advantages of both models in one project. Dit document biedt een overzicht van de verschillende modellen en beschrijft de niveaus van SPA integratie.
+Adobe Experience Manager-projecten kunnen worden geïmplementeerd in zowel headful als headless modellen, maar de keuze is niet binair. AEM biedt de flexibiliteit om de voordelen van beide modellen in één project te benutten. Dit document biedt een overzicht van de verschillende modellen en beschrijft de niveaus van SPA integratie.
 
 ## Overzicht {#overview}
 
-AEM offers powerful tools to manage both the creation of content and its delivery in one platform. This is a traditional &quot;headful&quot; model of content management, where the content authors and developers work on the same platform to deliver the experiences to the content consumers.
+AEM biedt krachtige tools om zowel de creatie van inhoud als de levering ervan in één platform te beheren. Dit is een traditioneel &#39;krachtig&#39; model van contentbeheer, waarbij de auteurs en ontwikkelaars van inhoud op hetzelfde platform werken om de ervaringen aan de gebruikers van de inhoud te leveren.
 
-AEM kan ook worden gebruikt om inhoud eenvoudig te beheren, zodat de presentatie en levering van de inhoud door een ander platform kunnen worden beheerd. This is the &quot;headless&quot; model of content management, where the content authors and developers work on different platforms to deliver experience to the content consumers.
+AEM kan ook worden gebruikt om inhoud eenvoudig te beheren, zodat de presentatie en levering van de inhoud door een ander platform kunnen worden beheerd. Dit is het &#39;headless&#39;-model van contentbeheer, waarbij de auteurs en ontwikkelaars van inhoud op verschillende platforms werken om de gebruikers van inhoud ervaring te bieden.
 
-But this need not be a binary choice. AEM offers unprecedented flexibility, allowing you to exploit the advantages of both models for your project.
+Maar dit hoeft geen binaire keuze te zijn. AEM biedt ongekende flexibiliteit, die u toestaat om de voordelen van beide modellen voor uw project te exploiteren.
 
-![AEM Implementation Models](/help/headless/assets/aem-implementation-models.png)
+![Implementatiemodellen AEM](/help/headless/assets/aem-implementation-models.png)
 
-In a headful or full-stack model, the content is managed in the AEM repository and AEM components based on Java, HTL, etc. worden gebruikt om de inhoud weer te geven voor de gebruikerservaring. In dit model gebeurt het maken van de inhoud, het vormgeven, het presenteren en het leveren ervan allemaal in AEM.
+In een krachtig of volledig-stapelmodel, wordt de inhoud beheerd in de AEM bewaarplaats en AEM componenten die op Java, HTML, enz. worden gebaseerd. worden gebruikt om de inhoud weer te geven voor de gebruikerservaring. In dit model gebeurt het maken van de inhoud, het vormgeven, het presenteren en het leveren ervan allemaal in AEM.
 
 In een headless model, wordt de inhoud beheerd in de AEM bewaarplaats, maar geleverd via APIs zoals REST en GraphQL aan een ander systeem om de inhoud voor de gebruikerservaring terug te geven. In dit model wordt inhoud gemaakt in AEM, maar wordt de inhoud vormgegeven, gepresenteerd en geleverd op een ander platform.
 
-Single Page Applications (SPAs) are often the destination for content delivered headlessly by AEM. Deze SPA hoeven echter niet geheel buiten de AEM te liggen. AEM allows you to decide to what degree your SPAs are integrated into AEM. Let&#39;s take an example.
+Toepassingen op één pagina (SPA) zijn vaak de bestemming voor inhoud die zonder kop door AEM wordt geleverd. Deze SPA hoeven echter niet geheel buiten de AEM te liggen. AEM kunt u bepalen in welke mate uw SPA in AEM is geïntegreerd. Laten we een voorbeeld nemen.
 
-## Web Shop Example {#web-shop-example}
+## Voorbeeld van webwinkel {#web-shop-example}
 
-Stel dat u een bestaande webshop hebt voor uw bedrijf als SPA. In it you have all your product details and images. Vervolgens introduceert u AEM om uw marketingactiviteiten, zoals promotiesites, blogs en inhoud van campagnes, kracht bij te zetten. Hoe integreer je deze twee? AEM enables a spectrum of options:
+Stel dat u een bestaande webshop hebt voor uw bedrijf als SPA. Hierin staan al uw productdetails en afbeeldingen. Vervolgens introduceert u AEM om uw marketingactiviteiten, zoals promotiesites, blogs en inhoud van campagnes, kracht bij te zetten. Hoe integreer je deze twee? AEM maakt een spectrum van opties mogelijk:
 
 * **De systemen onafhankelijk laten werken.**
 * **Bied de webshop beperkte inhoud van AEM via GraphQL.** Inhoud kan door auteurs in AEM worden gemaakt, maar kan alleen via de SPA van de webshop worden bekeken.
-* **Sluit de SPA van de webshop in AEM in.** Content can be created by authors in AEM, and viewed in AEM in the context of the web shop, but not manipulated.
+* **Sluit de SPA van de webshop in AEM in.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de webshop worden weergegeven, maar niet worden gemanipuleerd.
 * **Sluit de SPA van de webshop in AEM in en schakel bewerkbare punten in.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de context van de webshop worden weergegeven. De auteurs hebben slechts beperkte mogelijkheden om de inhoud van de webshop SPA binnen AEM te manipuleren.
-* **Embed the webs shop SPA in AEM, and enable entire zones for editing.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de context van de webshop worden weergegeven. De auteurs hebben slechts beperkte mogelijkheden om de inhoud van de webshop SPA binnen AEM te manipuleren.
+* **Sluit de webwinkel in AEM in en schakel volledige zones in voor bewerking.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de context van de webshop worden weergegeven. De auteurs hebben slechts beperkte mogelijkheden om de inhoud van de webshop SPA binnen AEM te manipuleren.
 
 In de volgende sectie worden deze integratieniveaus nader beschreven.
 
@@ -49,29 +49,29 @@ In de volgende sectie worden deze integratieniveaus nader beschreven.
 
 SPA integratie ligt op een spectrum van vier niveaus in AEM.
 
-* **Level 0: No integration**
+* **Niveau 0: Geen integratie**
    * De SPA en AEM bestaan afzonderlijk en wisselen geen informatie uit.
    * Inhoud wordt in twee aparte systemen gemaakt, beheerd en afzonderlijk geleverd.
 * **Niveau 1: Integratie van inhoudsfragmenten**
-   * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om beperkte inhoud voor de SPA te maken en te beheren.
+   * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) worden gebruikt in AEM om beperkte inhoud voor de SPA te maken en te beheren.
    * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan alleen in de SPA worden weergegeven.
 * **Niveau 2: De SPA insluiten in AEM**
-   * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
+   * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
    * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
-   * Some content is managed in AEM and some in an external system.
-   * Content can be viewed in-context within AEM.
-   * Limited content can be edited within AEM.
+   * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
+   * Inhoud kan binnen AEM in context worden weergegeven.
+   * Beperkte inhoud kan binnen AEM worden bewerkt.
 * **Niveau 3: SPA insluiten en volledig inschakelen in AEM**
-   * [Content Fragments](/help/assets/content-fragments/content-fragments.md) are used in AEM to create and manage content for the SPA.
-   * The SPA retrieves this content via AEM&#39;s [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
+   * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
+   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
    * Inhoud kan binnen AEM in context worden weergegeven.
    * De meeste inhoud kan worden bewerkt in AEM.
 
-Niveau 1 is een voorbeeld van een typische implementatie zonder kop. However content authors can only view their content in-context within the SPA. AEM is slechts een ontwerpgereedschap.
+Niveau 1 is een voorbeeld van een typische implementatie zonder kop. Inhoudsauteurs kunnen hun inhoud echter alleen in-context binnen de SPA bekijken. AEM is slechts een ontwerpgereedschap.
 
-The advantage and flexibility of AEM becomes apparent with levels 2 and 3 while still retaining the advantages of SPAs. Content authors can create their content in AEM, but also see it in-context within AEM. De SPA krijgt het vermogen om in AEM te worden ontworpen, maar nog als SPA worden geleverd.
+Het voordeel en de flexibiliteit van AEM worden duidelijk met niveaus 2 en 3, terwijl de voordelen van SPA behouden blijven. Inhoudsauteurs kunnen hun inhoud in AEM maken, maar zien deze ook in context binnen AEM. De SPA krijgt het vermogen om in AEM te worden ontworpen, maar nog als SPA worden geleverd.
 
 ## Implementatie van de integratieniveaus {#implementing}
 

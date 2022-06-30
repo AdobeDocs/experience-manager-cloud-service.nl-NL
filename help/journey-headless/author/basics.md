@@ -2,9 +2,9 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1668'
 ht-degree: 1%
 
 ---
@@ -53,38 +53,68 @@ Uw account is geconfigureerd met alle rechten die u nodig hebt. Als u om het eve
 
 De eerste keer dat u zich aanmeldt bij een kleine online zelfstudie, worden enkele van de belangrijkste functies van de gebruikersinterface gemarkeerd.
 
-Vervolgens kunt u het navigatievenster gebruiken om toegang te krijgen tot belangrijke gebieden van AEM. Voor inhoudsfragmenten gebruikt u de opdracht **Elementenconsole**.
+Vervolgens kunt u het navigatievenster gebruiken om toegang te krijgen tot belangrijke gebieden van AEM. Voor inhoudsfragmenten gebruikt u de opdracht **Inhoudsfragmenten** console (voor sommige acties gebruikt u ook de **Activa** console).
 
-U kunt het navigatievenster openen door het Adobe-pictogram linksboven te selecteren, gevolgd door het kleine kompaspictogram:
+U kunt het navigatievenster openen door het Adobe-pictogram linksboven te selecteren, gevolgd door het kleine kompaspictogram.
 
-![Navigatievenster](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+<!--
+The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
+
+![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+-->
 
 >[!NOTE]
->Hoewel Inhoudsfragmenten een kenmerk van AEM zijn **Sites**, vindt u deze in de **Activa** console. Dit is een technisch detail dat u niet zou moeten beïnvloeden, maar zou nuttig kunnen zijn om te weten.
+>Hoewel Inhoudsfragmenten een kenmerk van AEM zijn **Sites** worden opgeslagen als **Activa**. Dit is een technisch detail dat u niet zou moeten beïnvloeden, maar zou nuttig kunnen zijn om te weten.
 
-Binnen de console kunt u mappen selecteren om naar het inhoudsfragment te navigeren of de broodkruimels (in de koptekst) om een back-up van de structuur te maken.
+Binnen de console kunt u mappen in het linkerdeelvenster selecteren om naar het inhoudsfragment te navigeren. U kunt ook filteren en/of zoeken.
 
-![Broodkruimels](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
+![Content Fragments-console](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
 
 ### Handelingen, selecteren, weergeven {#actions-selecting-viewing}
 
-De **Activa** console heeft toegewezen **Werkbalken voor handelingen**, en **Snelle handelingen** die u kunt gebruiken nadat u een bron hebt geselecteerd (bijvoorbeeld een map of inhoudsfragment).
+In de **Inhoudsfragmenten** een reeks acties beschikbaar is voor uw inhoudsfragmenten op de werkbalk:
 
-De snelle Acties zijn beschikbaar voor één enkel middel, zie **Bazel** in het onderstaande voorbeeld:
+<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
-![Snelle handelingen](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+* **Openen in elementen**
+* **Maken**
+* De **Verwezen door** de kolom biedt ook een directe koppeling om alle bovenliggende verwijzingen van dat fragment weer te geven; inclusief verwijzen naar inhoudsfragmenten, ervaringsfragmenten en pagina&#39;s.
+* Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 
-De werkbalk Handelingen biedt toegang tot het volledige scala aan handelingen die voor het huidige scenario gelden. De beschikbare acties kunnen veranderen; bijvoorbeeld, afhankelijk van uw plaats, of of u veelvoudige middelen hebt geselecteerd:
+Nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikbaar:
 
-![Werkbalk Handelingen](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
-U kunt de indeling voor het weergeven van uw bronnen selecteren met de Weergaveselector:
+* **Open**
+* **Publiceren** (en **Publiceren ongedaan maken**)
+* **Kopiëren**
+* **Verplaatsen**
+* **Naam wijzigen**
+* **Verwijderen**
 
-![Kiezer weergeven](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+>[!NOTE]
+>
+>Handelingen zoals Publiceren, Publiceren ongedaan maken, Verwijderen, Verplaatsen, Naam wijzigen, Kopiëren, een asynchrone taak activeren. De voortgang van die taak kan worden gecontroleerd via de interface AEM Async Jobs.
 
-U kunt aanvullende informatie over items weergeven met de spoorkiezer. Dit geeft ook toegang tot extra acties.
+<!--
+The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
 
-![Linkerspoor](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+The Quick Actions are available for a single resource, see **Basel** in the example below:
+
+![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+
+The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
+
+![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+
+You can select the format for viewing your resources with the View Selector:
+
+![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+
+You can view additional information about items using the Rail Selector. This also gives access to additional actions.
+
+![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+-->
 
 ## Inhoudsfragmenten ontwerpen {#authoring-content-fragments}
 
@@ -98,7 +128,7 @@ Tenzij u zeer weinig Inhoudsfragmenten hebt, wilt u deze ordenen - zodat u (en a
 
 #### Een map maken {#creating-folder}
 
-U kunt dit doen door een reeks mappen te maken binnen **Bestanden** van de middelenconsole. Selecteer **Maken** optie (rechtsboven), gevolgd door **Map**:
+U kunt dit doen door een reeks mappen te maken binnen **Bestanden** van de **Activa** console. Selecteer **Maken** optie (rechtsboven), gevolgd door **Map**:
 
 ![Map maken, optie](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -136,23 +166,39 @@ U krijgt waarschijnlijk een eerste map waarin u uw mappen kunt maken. Dit is aan
 
 ### Een inhoudsfragment maken {#creating-fragment}
 
-Het maken van een inhoudsfragment lijkt sterk op het instellen van een **Inhoudsfragment** in plaats daarvan:
+In de **Inhoudsfragmenten** console die u kunt gebruiken **Maken** om de **Nieuw inhoudsfragment** dialoogvenster:
 
-![Inhoudsfragment maken, optie](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+![Content Fragments console - Een nieuw fragment maken](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-Dit keer wordt een wizard geopend. De eerste stap bestaat uit het selecteren van het inhoudsfragmentmodel waarop het fragment wordt gebaseerd:
+Geef de volgende instellingen op:
 
-![Inhoudsfragment maken - Model selecteren](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+* **Locatie**
+* **Inhoudsfragmentmodel**
+* **Titel**
+* **Naam**
+* **Beschrijving**
 
-Na voortzetting met **Volgende** u kunt de details opgeven (**Basis** en **Geavanceerd**) voor het fragment:
+Bevestig vervolgens met een van beide **Maken** of **Maken en openen**.
 
-![Inhoudsfragment maken - naam opgeven](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+<!--
+Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
 
-Bevestigen met **Maken** en u kunt **Openen** het fragment in de editor.
+![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+
+![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+
+After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
+
+![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+Confirm with **Create** and you can then **Open** your fragment in the editor.
+-->
 
 ### Een fragment bewerken {#editing-fragment}
 
-U kunt een fragment direct openen nadat u het hebt gemaakt of door het te selecteren in de middelenconsole.
+U kunt een fragment direct openen nadat u het hebt gemaakt, of door het te selecteren vanuit de console Inhoudsfragmenten (ook vanaf de console Elementen).
 
 Wanneer de redacteur eerst opent zult u zien:
 
@@ -217,7 +263,7 @@ Modellen van inhoudsfragmenten zijn in feite van vitaal belang voor inhoudsfragm
 
 Nadat u het fragment hebt voltooid, kunt u **Publiceren** zodat deze beschikbaar is voor toepassingen zonder koppen.
 
-De publicatiehandelingen zijn beschikbaar in de editor (of op de werkbalk van het **Activa** console):
+De publicatieacties zijn beschikbaar in de editor (of op de werkbalk van het **Inhoudsfragmenten** of de **Activa** console):
 
 ![Inhoudsfragmenteditor - Mijn fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -249,22 +295,22 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
       * [Publicatie beheren](/help/assets/manage-publication.md#manage-publication)
 
-* [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
+* [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [Contentfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md)
+   * [Contentfragmenten beheren](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [De configuratie toepassen op de middelenmap](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [De configuratie toepassen op de middelenmap](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Een inhoudsfragment maken](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Variaties - Inhoudsfragmenten ontwerpen](/help/assets/content-fragments/content-fragments-variations.md)
+      * [Een inhoudsfragment maken](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Variaties - Inhoudsfragmenten ontwerpen](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modellen van inhoudsfragmenten - eigenschappen](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Modellen van inhoudsfragmenten - eigenschappen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
-      * [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 
 * Aan de slag - hulplijnen

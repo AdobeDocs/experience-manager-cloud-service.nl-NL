@@ -2,9 +2,9 @@
 title: Basisbewerkingen
 description: Geniet van gemak bij het navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
+source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
 workflow-type: tm+mt
-source-wordcount: '2954'
+source-wordcount: '2993'
 ht-degree: 4%
 
 ---
@@ -73,6 +73,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
 | Ervaringsfragmenten | An [Ervaar fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een stand-alone ervaring die kan worden hergebruikt over kanalen en variaties hebben, die het probleem van het herhaaldelijk kopiëren en het kleven ervaringen of delen van ervaringen bespaart. |
 | Assets | Met de middelenconsole kunt u importeren en beheren [digitale elementen, zoals afbeeldingen, video&#39;s, documenten en audiobestanden](/help/assets/overview.md). Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM wordt uitgevoerd. U kunt ook [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) vanaf de middelenconsole. |
 | Personalisatie | Deze console biedt een raamwerk van gereedschappen voor [het ontwerpen van gerichte inhoud en het presenteren van gepersonaliseerde ervaringen.](/help/sites-cloud/authoring/personalization/overview.md) |
+| Contentfragmenten | [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Met deze sjablonen kunt u gestructureerde inhoud voorbereiden, klaar voor gebruik op meerdere locaties/via meerdere kanalen, en ideaal voor zowel paginaontwerp als levering zonder kop. |
 
 ## Deelvenster Gereedschappen {#tools-panel}
 

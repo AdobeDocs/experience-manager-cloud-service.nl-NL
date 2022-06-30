@@ -2,9 +2,9 @@
 title: Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten
 description: Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '241'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Dit artikel bouwt hierop verder zodat u begrijpt hoe u meta-gegevens en het etik
 
 U kunt drie methoden gebruiken om metagegevens en tags toe te voegen:
 
-* Bij het maken van het fragment:
+* Wanneer u voor het eerst een fragment maakt (van de **Activa** console):
 
    ![Inhoudsfragment maken - naam opgeven](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
@@ -44,8 +44,8 @@ Nu kunt u al deze kennis aan gebruik zetten en beginnen creërend de Fragments v
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Metagegevens - Fragmenteigenschappen](/help/assets/content-fragments/content-fragments-metadata.md)
+* [Metagegevens - Fragmenteigenschappen](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

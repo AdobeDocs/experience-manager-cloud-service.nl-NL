@@ -4,9 +4,9 @@ description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragm
 feature: Content Fragments
 role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: bd589f689174f4da20e0f5e73a8786a3dee0f352
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1778'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,7 @@ De [Inhoudsfragmenteditor](#opening-the-fragment-editor) biedt diverse [modi](#m
 
 >[!NOTE]
 >
->Inhoudsfragmenten worden opgeslagen als **Activa**, en dus in de eerste plaats vanuit de **Activa** console.
+>Inhoudsfragmenten worden opgeslagen als **Activa**. Ze worden nu voornamelijk beheerd met de **[Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, hoewel zij nog van kunnen leiden **Activa** console. Deze afdeling heeft betrekking op het beheer van de **Activa** console.
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
