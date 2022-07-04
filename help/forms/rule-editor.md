@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6141'
+source-wordcount: '6152'
 ht-degree: 0%
 
 ---
@@ -531,6 +531,7 @@ Begeleidend `jsdoc` is vereist:
 * Als u aangepaste configuratie en beschrijving wilt
 * Omdat er meerdere manieren zijn om een functie in te declareren `JavaScript,` Met opmerkingen kunt u de functies bijhouden.
 
+De redacteur van de regel steunt syntaxis JavaScript ES2015 voor manuscripten en douanefuncties.
 Zie voor meer informatie [jsdoc.app](https://jsdoc.app/).
 
 Ondersteund `jsdoc` tags:
