@@ -2,9 +2,9 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
+source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1128'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Een creditcardverklaring kan worden gecreeerd gebruikend Communicatie APIs. Deze
 
 ## Documentgeneratie
 
-Via API&#39;s voor het genereren van communicatiedocumenten kunt u een sjabloon (XFA of PDF) combineren met klantgegevens ([XML-gegevens](#form-data)) om documenten te genereren in de indelingen PDF en Afdrukken, zoals PS, PCL, DPL, IPL en ZPL. Deze API&#39;s gebruiken [PDF- en XFA-sjablonen](#supported-document-types) with [XML-gegevens](communications-known-issues-limitations.md#form-data) om één document op bestelling of meerdere documenten te produceren die een partijbaan gebruiken.
+Via API&#39;s voor het genereren van communicatiedocumenten kunt u een sjabloon (XFA of PDF) combineren met klantgegevens (XML) om documenten te genereren in de indelingen PDF en Afdrukken, zoals de indelingen PS, PCL, DPL, IPL en ZPL. Deze API&#39;s gebruiken PDF- en XFA-sjablonen met [XML-gegevens](communications-known-issues-limitations.md#form-data) om één document op bestelling of meerdere documenten te produceren die een partijbaan gebruiken.
 
 Doorgaans maakt u een sjabloon met [Designer](use-forms-designer.md) en gebruik Communicatie APIs om gegevens met het malplaatje samen te voegen. Uw toepassing kan het uitvoerdocument naar een netwerkprinter, een lokale printer of een opslagsysteem verzenden voor archivering. Een typisch uit de doos en de douanewerkschema&#39;s kijken als het volgende:
 
@@ -101,7 +101,7 @@ Via API&#39;s voor documentmanipulatie kunt u PDF-documenten combineren, opnieuw
 
 ### PDF-documenten samenstellen
 
-Met de API&#39;s voor documentproductie kunt u twee of meer PDF- of XDP-documenten samenvoegen tot één PDF-document of PDF Portfolio. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
+U kunt de API&#39;s voor documentmanipulatie gebruiken om twee of meer PDF- of XDP-documenten samen te stellen tot één PDF-document of PDF-Portfolio. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
 
 * Een eenvoudig PDF-document samenstellen
 * Een PDF-Portfolio maken
@@ -114,7 +114,7 @@ Afbeelding: Een eenvoudig PDF-document samenstellen op basis van meerdere PDF-do
 
 ### PDF-documenten demonteren
 
-U kunt de API&#39;s voor documenthandleiding gebruiken om een PDF-document te demonteren. De API&#39;s kunnen pagina&#39;s uitnemen uit het brondocument of een brondocument splitsen op basis van bladwijzers. Deze taak is meestal handig als het PDF-document oorspronkelijk is gemaakt op basis van veel afzonderlijke documenten, zoals een verzameling instructies.
+U kunt de API&#39;s voor documentmanipulatie gebruiken om een PDF-document te demonteren. De API&#39;s kunnen pagina&#39;s uitnemen uit het brondocument of een brondocument splitsen op basis van bladwijzers. Deze taak is meestal handig als het PDF-document oorspronkelijk is gemaakt op basis van veel afzonderlijke documenten, zoals een verzameling instructies.
 
 * Pagina&#39;s uit een brondocument extraheren
 * Een brondocument splitsen op basis van bladwijzers
@@ -124,7 +124,7 @@ Afbeelding: Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meer
 
 ### Converteren naar documenten die voldoen aan de PDF/A-standaard en deze valideren
 
-Met de API&#39;s voor documentproductie kunt u een PDF-document converteren naar een document dat voldoet aan de PDF/A-standaard en bepalen of een PDF PDF/A-compatibel is. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
+Met de API&#39;s voor documentmanipulatie kunt u een PDF-document converteren naar een document dat voldoet aan de PDF/A-standaard en bepalen of een PDF-document voldoet aan de PDF/A-standaard. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
 
 ## Typen communicatie-API&#39;s
 
