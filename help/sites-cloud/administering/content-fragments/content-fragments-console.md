@@ -2,7 +2,7 @@
 title: Console voor inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten beheert met de console voor inhoudsfragmenten.
 landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fragmenten van de Inhoud te beheren die op hoog volumengebruik van Inhoudsfragmenten voor Hoofdloze gebruik, maar ook gebruikt wanneer het ontwerpen van de pagina wordt geconcentreerd.
-source-git-commit: 19ec74f98bf0dedb768db5c4ec7eb6063779b03c
+source-git-commit: 8c44ecf0237c7a3660ef9fa97f46cc400e4bd30f
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Console voor inhoudsfragmenten  {#content-fragments-console}
 
-Leer hoe de console van de Fragmenten van de Inhoud toegang tot uw Fragments van de Inhoud optimaliseert, die u, hen helpen tot stand brengen zoeken en leiden door admin acties zoals te nemen publiceren, unpublish, exemplaar.
+Leer hoe de console van de Fragmenten van de Inhoud toegang tot uw Fragments van de Inhoud optimaliseert, die u, hen helpen tot stand brengen zoeken en leiden door administratieve acties zoals te voeren publiceren, unpublish, exemplaar.
 
 De console van de Fragmenten van de Inhoud wordt gewijd aan het beheren van, het zoeken naar, en het creëren van de Fragmenten van de Inhoud. Het is geoptimaliseerd voor gebruik in een context zonder kop, maar wordt ook gebruikt bij het maken van Content Fragments voor gebruik in paginaontwerp.
 
