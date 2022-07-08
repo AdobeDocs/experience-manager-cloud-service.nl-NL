@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 778a3687447c1e07605fdb95b3934b10d22483e8
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3691'
 ht-degree: 23%
 
 ---
@@ -634,7 +634,7 @@ ht-degree: 23%
       + [GraphQL-eindpunt](/help/headless/setup/create-api-request.md)
    + Contentfragmenten {#content-fragments}
       + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [Console voor inhoudsfragmenten](/help/headless/content-fragments/content-fragment-console.md)
+      + [Console voor inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
       + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
       + [Beheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
       + Authoring{#authoring}

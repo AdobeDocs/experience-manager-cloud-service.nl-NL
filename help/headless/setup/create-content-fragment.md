@@ -2,7 +2,7 @@
 title: Inhoudsfragmenten maken - Instellingen zonder kop
 description: Leer hoe u AEM inhoudsfragmenten kunt gebruiken voor het ontwerpen, maken, beheren en gebruiken van pagina-onafhankelijke inhoud voor levering zonder kop.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Selecteer de locatie en het model waarmee u het inhoudsfragment wilt maken.
 
    Voeg de titel, de naam en, indien nodig, de beschrijving toe.
 
-   ![Dialoogvenster Nieuw inhoudsfragment maken](/help/headless/content-fragments/assets/cfc-console-create.png)
+   ![Dialoogvenster Nieuw inhoudsfragment maken](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 1. Tik of klik op **Maken** of  **Maken en openen**.
 

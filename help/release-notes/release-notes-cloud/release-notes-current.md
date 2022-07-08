@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 88506fd4538c55a880904ea37055eb97d4ae05b3
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Bekijk de video Overzicht van de release van juni 2022 voor een overzicht van de
 
 ### Nieuwe functies in [!DNL Sites] {#sites-features}
 
-* Een nieuwe [gebruikersinterface](/help/headless/content-fragments/content-fragment-console.md) is nu beschikbaar voor beheerders van inhoud en auteurs van inhoud om efficiënt te beheren (acties zoals publiceren, ongedaan maken, kopiëren, verplaatsen, enz.), zoek-/filterfragmenten te maken voor gebruik in hoofdletters.
+* Een nieuwe [gebruikersinterface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is nu beschikbaar voor beheerders van inhoud en auteurs van inhoud om efficiënt te beheren (acties zoals publiceren, ongedaan maken, kopiëren, verplaatsen, enz.), zoek-/filterfragmenten te maken voor gebruik in hoofdletters.
 
    ![Console voor inhoudsfragment](/help/release-notes/assets/cf-ui.png)
 
