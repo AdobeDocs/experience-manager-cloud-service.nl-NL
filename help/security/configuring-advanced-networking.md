@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
+source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
 workflow-type: tm+mt
-source-wordcount: '3053'
+source-wordcount: '3006'
 ht-degree: 0%
 
 ---
@@ -209,29 +209,7 @@ Zie voor meer informatie over de API&#39;s de [Documentatie voor API voor cloud 
 
 ### Verkeer dat {#dedcated-egress-ip-traffic-routing}
 
-Het verkeer van HTTP of https die naar bestemmingen door havens 80 of 443 gaan zal door een preconfigured volmacht gaan, veronderstellend de standaard het voorzien van een netwerkbibliotheek van Java wordt gebruikt. Voor HTTP of https verkeer die door andere havens gaan zou een volmacht moeten worden gevormd gebruikend de volgende eigenschappen.
-
-```
-AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
-AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
-```
-
-Hier ziet u bijvoorbeeld een voorbeeldcode voor het verzenden van een aanvraag naar `www.example.com:8443`:
-
-```java
-String url = "www.example.com:8443"
-String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
-
-HttpClient client = HttpClient.newBuilder()
-      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
-      .build();
- 
-HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
-HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-```
-
-Als het gebruiken van niet-standaard het voorzien van een netwerkbibliotheken van Java, vorm volmachten gebruikend de eigenschappen hierboven, voor al verkeer.
+Het HTTP- of https-verkeer zal door een vooraf geconfigureerde proxy gaan, op voorwaarde dat deze standaard Java-systeemeigenschappen voor proxyconfiguraties gebruiken.
 
 Niet-http/s verkeer met bestemmingen door havens die in worden verklaard `portForwards` parameter moet verwijzen naar een eigenschap met de naam `AEM_PROXY_HOST`, samen met de toegewezen poort. Bijvoorbeeld:
 
