@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een overzicht van Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 778a3687447c1e07605fdb95b3934b10d22483e8
+source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
 workflow-type: tm+mt
-source-wordcount: '3691'
+source-wordcount: '3674'
 ht-degree: 23%
 
 ---
@@ -123,24 +123,19 @@ ht-degree: 23%
    + [Ondersteuning voor zelfde site-cookie voor AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [OAuth2 Steun voor de postdienst](/help/security/oauth2-support-for-mail-service.md)
 + Onboarding {#onboarding}
-   + [Onboarding van AEM as a Cloud Service](/help/onboarding/home.md)
-   + Meer informatie over onboarding Concepten {#onboarding-concepts}
-      + [Systeembeheerder](/help/onboarding/learn-concepts/system-administrator.md)
-      + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
-      + [Adobe Identity Management-systeem](/help/onboarding/learn-concepts/ims.md)
-      + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
-      + [Inleiding tot Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
-      + [as a Cloud Service team en productprofielen AEM](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
-      + [Adobe-ondersteuning](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+   + [Begin hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + Onboarding Journaal {#journey}
-      + [Onboarding Journaal](/help/journey-onboarding/home.md)
-      + [Overzicht van de reis aan boord](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
-      + [Aan de slag met het instapproces](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md)
-      + [Teamleden toewijzen aan productprofielen van Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md)
-      + [Cloud Resources instellen via Cloud Manager](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md)
-      + [Teamleden toewijzen aan AEM as a Cloud Service productprofielen](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
-      + [Leerpad voor ontwikkelaars en implementatiemanagers](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
-      + [Leerpad voor AEM gebruikers](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+      + [Reisoverzicht aan boord](/help/journey-onboarding/overview.md)
+      + [Voorbereiding aan boord](/help/journey-onboarding/preparation.md)
+      + [as a Cloud Service terminologie AEM](/help/journey-onboarding/terminology.md)
+      + [De Admin Console](/help/journey-onboarding/admin-console.md)
+      + [Productprofielen voor Cloud Manager toewijzen](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+      + [Cloud Manager openen](/help/journey-onboarding/cloud-manager.md)
+      + [Een programma maken](/help/journey-onboarding/create-program.md)
+      + [Omgevingen maken](/help/journey-onboarding/create-environments.md)
+      + [AEM productprofielen toewijzen](/help/journey-onboarding/assign-profiles-aem.md)
+      + [Taken van ontwikkelaar- en implementatiebeheer](/help/journey-onboarding/developers.md)
+      + [AEM](/help/journey-onboarding/aem-users.md)
    + AEM Referentie demos Add-on-reis {#demo-add-on}
       + [Overzicht](/help/journey-sites/demos-add-on/overview.md)
       + [Installatie](/help/journey-sites/demos-add-on/installation.md)
@@ -148,6 +143,9 @@ ht-degree: 23%
       + [Demo-site maken](/help/journey-sites/demos-add-on/create-site.md)
       + [Schermen inschakelen](/help/journey-sites/demos-add-on/screens.md)
       + [Uw demo-site beheren](/help/journey-sites/demos-add-on/manage.md)
+   + Overige onboarding concepten {#concepts}
+      + [Inleiding tot Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
+      + [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md)
 + AEM as a Cloud Service migratiereis {#migration-journey}
    + [Aan de slag met verplaatsen AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Gereedheidsfase](/help/journey-migration/readiness.md)
@@ -750,7 +748,7 @@ ht-degree: 23%
          + [IP-Lijsten van gewenste personen toepassen en niet toepassen](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Veelgestelde vragen over Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+      + [Veelgestelde vragen over Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Ontwikkelen voor AEM as a Cloud Service {#developing}
       + [AEM-projectstructuur](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM-projectrepositorystructuurpakket](/help/implementing/developing/introduction/repository-structure-package.md)

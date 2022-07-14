@@ -3,7 +3,7 @@ title: Productiepijpleidingen configureren
 description: Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu's te bouwen en op te stellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 94e37ae6aef64ec61e633e4c034ceefe5e75c7c8
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Leer hoe te om de pijpleidingen van de Productie te vormen om uw code aan de milieu&#39;s van de Productie te bouwen en op te stellen. Een productiepijpleiding stelt code eerst aan het milieu van het Stadium op, en op goedkeuring stelt de zelfde code aan het milieu van de Productie op.
 
-Een gebruiker moet beschikken over de **[Implementatiebeheer](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** rol om productiepijpleidingen te configureren.
+Een gebruiker moet beschikken over de **[Implementatiebeheer](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** rol om productiepijpleidingen te configureren.
 
 >[!NOTE]
 >

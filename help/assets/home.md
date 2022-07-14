@@ -5,9 +5,9 @@ landing-page-description: Leer hoe u Experience Manager Assets as a Cloud Servic
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '294'
 ht-degree: 24%
 
 ---
@@ -30,7 +30,7 @@ Meer informatie over [!DNL AEM Assets as a Cloud Service] en wordt bijgewerkt op
 | [Overzicht](/help/overview/home.md) | Inleiding, overzicht en verklarende woordenlijst van [!DNL Experience Manager] als [!DNL Cloud Service]. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Releaseopmerkingen, nieuwe functies, verouderde en verwijderde functies en bekende problemen. |
 | [Handboek voor beveiliging](/help/security/home.md) | Meer informatie over belangrijke beveiligingsonderwerpen met betrekking tot [!DNL Experience Manager] als [!DNL Cloud Service]. |
-| [Onboarding](/help/onboarding/home.md) | Aan de slag met [!DNL Experience Manager] als [!DNL Cloud Service] — krijg toegang en beschermt belangrijke gegevens. |
+| [Onboarding Journaal](/help/journey-onboarding/overview.md) | Aan de slag met [!DNL Experience Manager] als [!DNL Cloud Service] — krijg toegang en beschermt belangrijke gegevens. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Begrijpen met en beheren van auteur [!DNL Experience Manager Sites] als [!DNL Cloud Service]. |
 | [Handboek voor implementatie](/help/implementing/home.md) | Begrijp hoe te om ervaringen te bouwen en aan te passen gebruikend de krachtige eigenschappen van de Experience Manager door deze ontwikkeling en plaatsingsonderwerpen te onderzoeken. |
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van Experience Manager om zich voor te bereiden op uw eerste project zonder kop. |

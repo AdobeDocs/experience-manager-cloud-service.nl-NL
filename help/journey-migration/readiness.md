@@ -2,9 +2,9 @@
 title: Gereedheidsfase
 description: Meer informatie over de stappen die u moet nemen om ervoor te zorgen dat uw AEM-installatie klaar is om naar de cloud te worden verplaatst
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2079'
 ht-degree: 6%
 
 ---
@@ -220,4 +220,4 @@ Zodra u het werkingsgebied van de veranderingen begrijpt die worden vereist om z
 * [AEM as a Cloud Service: Inleiding, architectuur en anders denken](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
 * [Een Cloud Service thuis AEM](/help/overview/home.md) - Voor een overzicht van de as a Cloud Service documentatie van de Experience Manager, begin hier.
 * [as a Cloud Service overzicht AEM](/help/overview/home.md) - Deze handleiding biedt een overzicht van Experience Manager als cloudservice, inclusief een inleiding, terminologie en architectuur.
-* [Onboarding](/help/onboarding/home.md)- Deze gids verstrekt een samenvatting van hoe te beginnen met as a Cloud Service Experience Manager, met inbegrip van hoe te om toegang te krijgen en opstelling uw team
+* [Onboarding Journaal](/help/journey-onboarding/overview.md)- Deze gids verstrekt een samenvatting van hoe te beginnen met as a Cloud Service Experience Manager, met inbegrip van hoe te om toegang te krijgen en opstelling uw team

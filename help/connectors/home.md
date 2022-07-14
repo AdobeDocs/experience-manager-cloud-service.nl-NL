@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service-connector
 description: Leer over Connectors, wat zij kunnen doen, en hoe te om deze waardevolle hulpmiddelen in Experience Manager uit te voeren.
 landing-page-description: Leer over Connectors, wat zij kunnen doen, en hoe te om deze waardevolle hulpmiddelen in Experience Manager uit te voeren.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '395'
 ht-degree: 60%
 
 ---
@@ -27,7 +27,7 @@ Leer over Connectors voor as a Cloud Service Experience Manager, wat zij kunnen 
 | [Overzicht](/help/overview/home.md) | Deze handleiding biedt een inleidende beschrijving van Experience Manager als cloudservice, zoals een inleiding, terminologie, architectuur, enz. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
-| [Onboarding](/help/onboarding/home.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
+| [Onboarding Journaal](/help/journey-onboarding/overview.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
 | [Handboek voor Sites](/help/sites-cloud/home.md) | Leer hoe u Experience Manager Sites as a Cloud Service beheert en er als auteur mee werkt. |
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert. |
 | [Overstappen naar AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
