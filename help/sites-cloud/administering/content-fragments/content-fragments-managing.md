@@ -1,9 +1,9 @@
 ---
 title: Contentfragmenten beheren
 description: Leer hoe te om de console van Fragmenten van de Inhoud te gebruiken om uw AEM Contentfragmenten te beheren; voor het ontwerpen van pagina's of als basis voor inhoud zonder kop.
-source-git-commit: 2c5b04d297a71a276ef3e85386f052de36337622
+source-git-commit: 9de8becfd69ea2a65a847cba88468c94e2fdf484
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2047'
 ht-degree: 1%
 
 ---
@@ -69,13 +69,13 @@ Een inhoudsfragment maken:
 Tijdens het bestaan kan een inhoudsfragment verschillende statussen hebben, zoals in het dialoogvenster [Console voor inhoudsfragment](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
 
 * **Nieuw**
-Er is een nieuw inhoudsfragment gemaakt, maar het is nooit bewerkt of geopend in de inhoudsfragmenteditor.
+Er is een nieuw inhoudsfragment gemaakt, maar het is nooit bewerkt of geopend in de editor voor inhoudsfragmenten.
 * **Concept**
-Iemand heeft het inhoudsfragment bewerkt of geopend in de Content Fragment Editor - voordat het is gepubliceerd.
+Iemand heeft het (nieuwe) inhoudsfragment bewerkt of geopend in de Inhoudsfragmenteditor, maar het is nog niet gepubliceerd.
 * **Gepubliceerd**
 Het inhoudsfragment is gepubliceerd.
 * **Gewijzigd**
-Het inhoudsfragment is bewerkt nadat het is gepubliceerd (maar voordat het opnieuw is gepubliceerd).
+Het inhoudsfragment is bewerkt nadat het is gepubliceerd (maar voordat de wijziging is gepubliceerd).
 * **Ongepubliceerd**
 Het inhoudsfragment is niet gepubliceerd.
 
