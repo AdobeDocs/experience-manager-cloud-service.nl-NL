@@ -4,9 +4,9 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: a5a5ec2211fe51bb04a1016f34fdac2f25cfe4e1
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2890'
 ht-degree: 3%
 
 ---
@@ -75,7 +75,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
          >[!CAUTION]
          >
-         >Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype, merk op dat de namen slechts Latijnse karakters, numerieke cijfers en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
+         >Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype, merk op dat de namen slechts A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
          >
          >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
       Bijvoorbeeld:
@@ -141,7 +141,7 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
 * **Eigenschapnaam**
 
-   Wanneer u deze eigenschap handmatig bijwerkt voor een gegevenstype, moet u opletten dat namen **moet** bevatten *alleen* Latijnse tekens, numerieke cijfers en onderstrepingsteken &quot;_&quot; als speciaal teken.
+   Wanneer u deze eigenschap handmatig bijwerkt voor een gegevenstype, moet u opletten dat namen **moet** bevatten *alleen* A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot; als speciaal teken.
 
    >[!CAUTION]
    >

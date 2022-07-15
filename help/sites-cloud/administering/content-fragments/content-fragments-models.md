@@ -1,9 +1,9 @@
 ---
 title: Modellen van contentfragmenten
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw Fragments van de Inhoud in AEM dienen. Hiermee kunt u gestructureerde inhoud maken voor gebruik in koploze levering of voor het ontwerpen van pagina's.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+source-git-commit: a5a5ec2211fe51bb04a1016f34fdac2f25cfe4e1
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2904'
 ht-degree: 3%
 
 ---
@@ -72,7 +72,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
          >[!CAUTION]
          >
-         >Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype, merk op dat de namen slechts Latijnse karakters, numerieke cijfers en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
+         >Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype, merk op dat de namen slechts A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
          >
          >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
       Bijvoorbeeld:
@@ -138,7 +138,7 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
 * **Eigenschapnaam**
 
-   Wanneer u deze eigenschap handmatig bijwerkt voor een gegevenstype, moet u opletten dat namen **moet** bevatten *alleen* Latijnse tekens, numerieke cijfers en onderstrepingsteken &quot;_&quot; als speciaal teken.
+   Wanneer u deze eigenschap handmatig bijwerkt voor een gegevenstype, moet u opletten dat namen **moet** bevatten *alleen* A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot; als speciaal teken.
 
    >[!CAUTION]
    >
