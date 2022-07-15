@@ -2,10 +2,10 @@
 title: Kleurlabels voor afbeeldingen
 description: Met Experience Manager Assets kunt u onderscheid maken tussen kleuren in een afbeelding en deze automatisch als tags toepassen. Vervolgens kunt u deze tags gebruiken om afbeeldingen te zoeken en te filteren.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
+source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 1%
+source-wordcount: '1094'
+ht-degree: 2%
 
 ---
 
@@ -16,10 +16,6 @@ ht-degree: 1%
 Experience Manager Assets gebruikt Adobe Sensei AI-mogelijkheden om kleuren in een afbeelding te onderscheiden en deze automatisch als tags toe te passen bij opname. Deze tags maken een verbeterde zoekervaring mogelijk op basis van de compositie van de afbeeldingskleur.
 
 U kunt het aantal kleuren binnen een bereik van 1 tot 40 configureren dat aan een afbeelding is gelabeld, zodat u later kunt zoeken naar afbeeldingen op basis van die kleuren. Experience Manager Assets past de labels toe op basis van de kleurdekking in een afbeelding. U kunt ook de weergave-indeling voor een kleurtag configureren.
-
->[!NOTE]
->
->Deze functie is beschikbaar in het prereleasekanaal. Zie [Prerelease Channel-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) voor informatie om de functie in te schakelen voor uw omgeving.
 
 In de volgende afbeelding ziet u de volgorde van taken die u uitvoert voor het configureren en beheren van kleurlabels voor afbeeldingen in Experience Manager Assets:
 
