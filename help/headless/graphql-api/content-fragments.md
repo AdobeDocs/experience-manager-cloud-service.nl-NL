@@ -3,9 +3,9 @@ title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 4f81a315d637b567fc6a6038b192f048bb462b4d
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2708'
 ht-degree: 0%
 
 ---
@@ -346,6 +346,10 @@ De `_variations` is geïmplementeerd om het opvragen van variaties in een inhoud
 
 Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
+>[!NOTE]
+>
+>Als de opgegeven variatie niet bestaat voor een inhoudsfragment, wordt de master variatie geretourneerd als standaard (fallback).
+
 <!--
 ## Security Considerations {#security-considerations}
 -->
@@ -450,42 +454,47 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
 
 * Als u een lijst met resultaten verwacht:
    * toevoegen `List` de modelnaam; bijvoorbeeld:  `cityList`
-   * Zie [Voorbeeldquery - Alle informatie over alle steden](#sample-all-information-all-cities)
+   * Zie [Voorbeeldquery - Alle informatie over alle steden](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * Als u logische OR wilt gebruiken:
    * use ` _logOp: OR`
-   * Zie [Voorbeeldquery - Alle personen met de naam &quot;Jobs&quot; of &quot;Smith&quot;](#sample-all-persons-jobs-smith)
+   * Zie [Voorbeeldquery - Alle personen met de naam &quot;Jobs&quot; of &quot;Smith&quot;](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * Logische AND bestaat ook, maar is (vaak) impliciet
 
 * U kunt zoeken naar veldnamen die overeenkomen met de velden in het model van het inhoudsfragment
-   * Zie [Voorbeeldquery - Volledige details van de CEO en medewerkers van een bedrijf](#sample-full-details-company-ceos-employees)
+   * Zie [Voorbeeldquery - Volledige details van de CEO en medewerkers van een bedrijf](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)
 
 * Naast de velden van uw model zijn er velden die door het systeem worden gegenereerd (voorafgegaan door een onderstrepingsteken):
 
    * Voor inhoud:
 
       * `_locale` : de taal te onthullen; gebaseerd op Taalbeheer
-         * Zie [Voorbeeldquery voor meerdere inhoudsfragmenten van een bepaalde landinstelling](#sample-wknd-multiple-fragments-given-locale)
+         * Zie [Voorbeeldquery voor meerdere inhoudsfragmenten van een bepaalde landinstelling](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
       * `_metadata` : om metagegevens voor uw fragment weer te geven
-         * Zie [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB](#sample-metadata-awards-gb)
+         * Zie [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
       * `_model` : toestaan dat wordt gezocht naar een inhoudsfragmentmodel (pad en titel)
-         * Zie [Voorbeeldquery voor een inhoudsfragmentmodel op basis van een model](#sample-wknd-content-fragment-model-from-model)
+         * Zie [Voorbeeldquery voor een inhoudsfragmentmodel op basis van een model](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
       * `_path` : het pad naar het inhoudsfragment in de repository
-         * Zie [Voorbeeldquery - één specifiek stedenfragment](#sample-single-specific-city-fragment)
+         * Zie [Voorbeeldquery - één specifiek stedenfragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
       * `_reference` : verwijzingen zichtbaar te maken; inline-verwijzingen opnemen in de Rich Text Editor
-         * Zie [Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen](#sample-wknd-multiple-fragments-prefetched-references)
+         * Zie [Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
       * `_variation` : om specifieke variaties in het inhoudsfragment weer te geven
+
+         >[!NOTE]
+         >
+         >Als de opgegeven variatie niet bestaat voor een inhoudsfragment, wordt de master variatie geretourneerd als standaard (fallback).
+
          * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](#sample-cities-named-variation)
    * En bewerkingen:
 
       * `_operator` : specifieke exploitanten toepassen; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
-         * Zie [Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot;](#sample-all-persons-not-jobs)
-         * Zie [Voorbeeldquery - Alle avonturen waar de `_path` begint met een bepaald voorvoegsel](#sample-wknd-all-adventures-cycling-path-filter)
+         * Zie [Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot;](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
+         * Zie [Voorbeeldquery - Alle avonturen waar de `_path` begint met een bepaald voorvoegsel](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : specifieke voorwaarden toe te passen; bijvoorbeeld:  `AT_LEAST_ONCE`
-         * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](#sample-array-item-occur-at-least-once)
+         * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : om de zaak te negeren bij het vragen
-         * Zie [Voorbeeldquery - Alle steden met SAN in naam, ongeacht het geval](#sample-all-cities-san-ignore-case)
+         * Zie [Voorbeeldquery - Alle steden met SAN in naam, ongeacht het geval](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
 
 
 
@@ -498,7 +507,7 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
 * GraphQL-vaktypen worden ondersteund:
 
    * gebruiken `... on`
-      * Zie [Voorbeeldquery voor een inhoudsfragment van een specifiek model met een inhoudsverwijzing](#sample-wknd-fragment-specific-model-content-reference)
+      * Zie [Voorbeeldquery voor een inhoudsfragment van een specifiek model met een inhoudsverwijzing](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)
 
 * Extra fallback bij het opvragen van geneste fragmenten:
 
