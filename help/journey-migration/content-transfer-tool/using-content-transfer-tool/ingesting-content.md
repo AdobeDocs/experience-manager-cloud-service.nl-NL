@@ -2,10 +2,10 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
+source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 15%
+source-wordcount: '908'
+ht-degree: 12%
 
 ---
 
@@ -44,8 +44,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
    >[!IMPORTANT]
    >
-   >U kunt een opname alleen afschoppen in de doelomgeving als u tot de lokale omgeving behoort **AEM** groep in de instantie Cloud Service die u inhoud overdraagt. Als u niet tot de groep van AEM beheerders behoort, zult u een fout zoals hieronder getoond zien wanneer u probeert om een opname te beginnen.
-   >![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
+   >U kunt een opname alleen afschoppen in de doelomgeving als u tot de lokale omgeving behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u geen inname kunt starten, raadpleegt u [Kan inname niet starten](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) voor meer informatie .
 
    >[!IMPORTANT]
    >
@@ -103,7 +102,25 @@ U kunt dit doen door een nieuwe Ingestietaak te creëren en ervoor te zorgen dat
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## Problemen oplossen {#troubleshooting}
 
+### CAM Kan migratietoken niet ophalen {#cam-unable-to-retrieve-the-migration-token}
+
+De automatische herwinning van het migratietoken kan om verschillende redenen ontbreken, met inbegrip van u [een IP-lijst van gewenste personen instellen via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) in de omgeving van de doelCloud Service.  In dergelijke scenario&#39;s zult u de volgende dialoog zien wanneer u probeert om een opname te beginnen:
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+U moet het migratietoken handmatig ophalen door op de koppeling &#39;Token ophalen&#39; in het dialoogvenster te klikken. Hiermee wordt een ander tabblad geopend waarin het token wordt weergegeven. U kunt het token vervolgens kopiëren en plakken in het dialoogvenster **Invoer van migratietoken** veld. Nu moet je de inname kunnen starten.
+
+>[!NOTE]
+>
+>Het token is beschikbaar voor gebruikers die tot de lokale server behoren **AEM** groep op de de auteursdienst van de bestemmingsCloud Service.
+
+### Kan inname niet starten {#unable-to-start-ingestion}
+
+U kunt een opname alleen afschoppen in de doelomgeving als u tot de lokale omgeving behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u niet tot de groep van AEM beheerders behoort, zult u een fout zoals hieronder getoond zien wanneer u probeert om een opname te beginnen. U kunt de beheerder vragen om u toe te voegen aan de lokale **AEM** of vraag om de token zelf, die u vervolgens in de **Invoer van migratietoken** veld.
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ## Volgende functies {#whats-next}
 
