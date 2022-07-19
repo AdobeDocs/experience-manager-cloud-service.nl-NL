@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
+source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1259'
 ht-degree: 1%
 
 ---
@@ -172,6 +172,9 @@ Als u een dergelijk filter niet aanbiedt en alleen de &quot;publish&quot;-agent 
 
 De `ReplicationStatus` van een middel wordt slechts gewijzigd als de replicatieactie minstens één agent omvat die door gebrek actief is. In het bovenstaande voorbeeld is dit niet het geval, aangezien de replicatie enkel de &quot;voorproef&quot;agent gebruikt. Daarom moet u het nieuwe `getStatusForAgent()` methode, die het vragen van de status voor een specifieke agent toestaat. Deze methode werkt ook voor de &quot;publiceer&quot;agent. Het keert een niet-krachteloze waarde terug als er om het even welke replicatieactie die gebruikend de verstrekte agent is gedaan geweest.
 
+### Methoden voor het ongeldig maken van inhoud {#invalidating-content}
+
+U kunt inhoud direct ongeldig maken door of het Verdelen van de Invalidatie van de Inhoud (SCD) van auteur (de aangewezen methode) te gebruiken of door de Replicatie API te gebruiken om de publicatieverzender te roepen flush replicatieagent. Zie de [Caching](/help/implementing/dispatcher/caching.md) voor meer informatie.
 
 **Limieten voor replicatie-API**
 
@@ -179,6 +182,7 @@ Het wordt aanbevolen minder dan 100 paden tegelijk te repliceren, waarbij 500 pa
 Als voor uw toepassingslogica geen atoomreplicatie is vereist, kunt u deze limiet overwinnen door het instellen van de optie `ReplicationOptions.setUseAtomicCalls` naar false, dat een willekeurig aantal paden accepteert, maar intern emmers maakt om onder deze limiet te blijven.
 
 De grootte van de inhoud die per replicatievraag wordt overgebracht moet niet overschrijden `10 MB`. Dit omvat de knooppunten en de eigenschappen, maar geen binaire bestanden (workflowpakketten en inhoudspakketten worden als binaire bestanden beschouwd).
+
 
 ## Problemen oplossen {#troubleshooting}
 

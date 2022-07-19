@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: 'Caching in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 91a88cb02192defdd651ecb6d108d4540186d06e
+source-git-commit: ff78e359cf79afcb4818e0599dca5468b4e6c754
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 0%
+source-wordcount: '2591'
+ht-degree: 1%
 
 ---
 
@@ -205,36 +205,232 @@ Over het algemeen is het niet nodig om de cachegeheugen van de verzender ongeldi
 
 Net als bij eerdere versies van AEM wordt de inhoud van de verzendingscache gewist wanneer u pagina&#39;s publiceert of de publicatie ervan ongedaan maakt. Als een cacheprobleem wordt vermoed, moeten klanten de pagina&#39;s in kwestie opnieuw publiceren en ervoor zorgen dat er een virtuele host beschikbaar is die overeenkomt met ServerAlias localhost, wat vereist is voor de ongeldigverklaring van het cachegeheugen van de verzender.
 
-
 Wanneer de publicatieinstantie een nieuwe versie van een pagina of element van de auteur ontvangt, gebruikt deze de agent flush om de juiste paden op de dispatcher ongeldig te maken. Het bijgewerkte pad wordt samen met de bovenliggende elementen uit de cache van de verzender verwijderd tot een niveau (u kunt dit configureren met de [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
-### Expliciete cachevalidatie van verzender {#explicit-invalidation}
+## Expliciete ongeldigverklaring van de verzender-cache {#explicit-invalidation}
 
-Over het algemeen hoeft de inhoud in de verzender niet handmatig ongeldig te worden gemaakt, maar dit is mogelijk als dat nodig is.
+Adobe raadt aan om de levenscyclus van de levering van inhoud te regelen op standaard cacheheaders. Indien nodig is het echter mogelijk inhoud rechtstreeks in de verzender ongeldig te maken.
+
+De volgende lijst bevat scenario&#39;s waar u uitdrukkelijk het geheime voorgeheugen zou kunnen willen invalideren (terwijl naar keuze het luisteren naar de voltooiing van de ongeldigverklaring):
+
+* Na het publiceren van inhoud zoals ervaringsfragmenten of inhoudsfragmenten, het ongeldig maken van gepubliceerde en in cache geplaatste inhoud die naar die elementen verwijst.
+* Een extern systeem waarschuwen wanneer pagina&#39;s waarnaar wordt verwezen, zijn ongeldig gemaakt.
+
+Er zijn twee benaderingen om het geheime voorgeheugen uitdrukkelijk ongeldig te maken:
+
+* De voorkeursbenadering is het gebruik van de Sling Content Distribution (SCD) van de auteur.
+* Door de replicatie-API te gebruiken om de publicatiedispatcher te activeren, maakt u replicatieagent leeg.
+
+De benaderingen verschillen in termen van laagbeschikbaarheid, de capaciteit om gebeurtenissen en gebeurtenisverwerkingsgarantie te dedupliceren. In de onderstaande tabel staan de volgende opties:
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>N.v.t.</th>
+    <th>Beschikbaarheid van niveaus</th>
+    <th>Deduplicatie </th>
+    <th>Garantie </th>
+    <th>Actie </th>
+    <th>Gevolgen </th>
+    <th>Beschrijving </th>
+  </tr>  
+  <tr>
+    <td>SCD-API (Sling Content Distribution)</td>
+    <td>Auteur</td>
+    <td>Mogelijk met de API voor detectie of het inschakelen van de <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">deduplicatiemodus</a>.</td>
+    <td>Ten minste één keer.</td>
+    <td>
+     <ol>
+       <li>TOEVOEGEN</li>
+       <li>DELETE</li>
+       <li>ONGELDIG</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Hiërarchisch/Stat Niveau</li>
+       <li>Hiërarchisch/Stat Niveau</li>
+       <li>Level Resource-Only</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Hiermee publiceert u inhoud en maakt u de cache ongeldig.</li>
+       <li>Hiermee verwijdert u inhoud en maakt u de cache ongeldig.</li>
+       <li>Hiermee wordt inhoud ongeldig gemaakt zonder deze te publiceren.</li>
+     </ol>
+     </td>
+  </tr>
+  <tr>
+    <td>Replicatie-API</td>
+    <td>Publicatie</td>
+    <td>Niet mogelijk. De gebeurtenis wordt op elke publicatie-instantie weergegeven.</td>
+    <td>Beste inspanning.</td>
+    <td>
+     <ol>
+       <li>ACTIVEREN</li>
+       <li>DEACTIVEREN</li>
+       <li>DELETE</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Hiërarchisch/Stat Niveau</li>
+       <li>Hiërarchisch/Stat Niveau</li>
+       <li>Hiërarchisch/Stat Niveau</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>Hiermee publiceert u inhoud en maakt u de cache ongeldig.</li>
+       <li>Uit auteur/publicatiereeks - hiermee verwijdert u inhoud en maakt u de cache ongeldig.</li>
+       <li><p><strong>Van Auteursniveau</strong> - Verwijdert inhoud en maakt de cache ongeldig (indien geactiveerd uit de AEM-auteurscategorie in de publicatieagent).</p>
+           <p><strong>Uit publicatiereeks</strong> - Maakt alleen de cache ongeldig (indien geactiveerd vanaf de AEM-publicatielaag op de Flush- of Resource-Only-flush-agent).</p>
+       </li>
+     </ol>
+     </td>
+  </tr>
+  </tbody>
+</table>
+
+Houd er rekening mee dat de twee acties die rechtstreeks verband houden met de invalidatie van de cache, de API voor invalidatie en replicatie van inhoud (Sling Content Distribution, SCD)-API deactiveren zijn.
+
+Uit de tabel blijkt ook dat:
+
+* SCD API is nodig wanneer elke gebeurtenis moet worden gegarandeerd, bijvoorbeeld synchroniseren met een extern systeem dat nauwkeurige kennis vereist. Merk op dat als er een publiceer rij upscaling gebeurtenis op het tijdstip van de ongeldigingsvraag is, een extra gebeurtenis zal worden opgeheven wanneer elk nieuw publiceert de ongeldigverklaring verwerkt.
+
+* Het gebruik van de API voor replicatie is niet gebruikelijk, maar moet worden gebruikt in gevallen waarin de trigger voor het ongeldig maken van de cache afkomstig is uit de publicatielaag en niet uit de auteurslaag. Dit zou nuttig kunnen zijn als de verzender TTL wordt gevormd.
+
+Als u de verzender-cache wilt invalideren, wordt u aangeraden de handeling voor invalidatie van de SCD API van de auteur te gebruiken. Bovendien kunt u ook naar de gebeurtenis luisteren, zodat u vervolgens verdere downstreamacties kunt activeren.
+
+### Verdelen van inhoud (SCD) {#sling-distribution}
 
 >[!NOTE]
->Voorafgaand aan AEM as a Cloud Service, waren er twee manieren om het berichtchergeheime voorgeheugen ongeldig te maken.
->
->1. Roep de replicatieagent aan, die de publicatiedispatcher spoelagent specificeert
->2. Het direct roepen van `invalidate.cache` API (bijvoorbeeld `POST /dispatcher/invalidate.cache`)
+>Houd er rekening mee dat u de aangepaste code in een AEM Cloud Service Dev-omgeving en niet lokaal moet testen wanneer u de onderstaande instructies gebruikt.
 
->
->De verzender `invalidate.cache` API-benadering wordt niet meer ondersteund omdat deze alleen betrekking heeft op een specifiek verzendingsknooppunt. AEM as a Cloud Service werkt op het de dienstniveau, niet het individuele knoopniveau en zo de ongeldigingsinstructies in [In cache geplaatste pagina&#39;s ongeldig maken van AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) is niet langer geldig voor AEM as a Cloud Service.
+Bij gebruik van de SCD-actie van Auteur ziet het implementatiepatroon er als volgt uit:
 
-De replicatie spoelmiddel zou moeten worden gebruikt. Dit kan worden gedaan gebruikend [Replicatie-API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). Het uitlijnmiddeleindpunt is niet configureerbaar maar pre-gevormd om aan de dispatcher te richten, die met de publicatieservice wordt aangepast die de uitlijningsagent in werking stelt. De spoelagent kan typisch door gebeurtenissen OSGi of werkschema&#39;s worden teweeggebracht.
+1. Schrijf aangepaste code van Auteur om de distributie van de inhoud van de regel aan te roepen [API](https://sling.apache.org/documentation/bundles/content-distribution.html)De handeling voor ongeldig maken wordt doorgegeven met een lijst met paden:
+
+```
+@Reference
+private Distributor distributor;
+
+ResourceResolver resolver = ...; // the resource resolver used for authorizing the request
+String agentName = "publish";    // the name of the agent used to distribute the request
+
+String pathToInvalidate = "/content/to/invalidate";
+DistributionRequest distributionRequest = new SimpleDistributionRequest(DistributionRequestType.INVALIDATE, false, pathToInvalidate);
+distributor.distribute(agentName, resolver, distributionRequest);
+```
+
+* (Optioneel) Luister naar een gebeurtenis die de bron weergeeft die ongeldig wordt gemaakt voor alle verzendersinstanties:
+
+
+```
+package org.apache.sling.distribution.journal.shared;
+
+import org.apache.sling.discovery.DiscoveryService;
+import org.apache.sling.distribution.journal.impl.event.DistributionEvent;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.event.Event;
+import org.osgi.service.event.EventHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import static org.apache.sling.distribution.DistributionRequestType.INVALIDATE;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_PATHS;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_TYPE;
+import static org.apache.sling.distribution.event.DistributionEventTopics.AGENT_PACKAGE_DISTRIBUTED;
+import static org.osgi.service.event.EventConstants.EVENT_TOPIC;
+
+@Component(immediate = true, service = EventHandler.class, property = {
+        EVENT_TOPIC + "=" + AGENT_PACKAGE_DISTRIBUTED
+})
+public class InvalidatedHandler implements EventHandler {
+    private static final Logger LOG = LoggerFactory.getLogger(InvalidatedHandler.class);
+
+    @Reference
+    private DiscoveryService discoveryService;
+
+    @Override
+    public void handleEvent(Event event) {
+
+        String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
+
+        if (INVALIDATE.name().equals(distributionType)) {
+            boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
+            // process the OSGi event on the leader author instance
+            if (isLeader) {
+                String[] paths = (String[]) event.getProperty(DISTRIBUTION_PATHS);
+                String packageId = (String) event.getProperty(DistributionEvent.PACKAGE_ID);
+                invalidated(paths, packageId);
+            }
+        }
+    }
+
+    private void invalidated(String[] paths, String packageId) {
+        // custom logic
+        LOG.info("Successfully applied package with id {}, paths {}", packageId, paths);
+    }
+}
+```
+
+<!-- Optionally, instead of using the isLeader approach, one could add an OSGi configuration for the PID org.apache.sling.distribution.journal.impl.publisher.DistributedEventNotifierManager and property deduplicateEvent=true. But we'll stick with just one strategy and not mention it (double-check this).**review this**-->
+
+* (Optioneel) Voer bedrijfslogica uit in de `invalidated(String[] paths, String packageId)` hierboven beschreven methode.
+
+>[!NOTE]
+>
+>De Adobe CDN wordt niet leeggemaakt wanneer de verzender ongeldig wordt gemaakt. De Adobe-beheerde CDN respecteert TTLs en zo is er geen behoefte aan het worden gespoeld.
+
+### Replicatie-API {#replication-api}
+
+Hieronder ziet u het implementatiepatroon bij gebruik van de API-deactivering voor replicatie:
+
+1. Voor publiceer rij, roep de Replicatie API om publicatieverzender te teweegbrengen leegmaken replicatieagent.
+
+Het uitlijnmiddeleindpunt is niet configureerbaar maar eerder preconfigured om aan dispatcher te richten, die met de publicatieservice wordt aangepast die naast de uitlijningsagent loopt.
+
+De spoelagent kan typisch door douanecode worden teweeggebracht die op gebeurtenissen OSGi of werkschema&#39;s wordt gebaseerd.
+
+```
+String[] paths = …
+ReplicationOptions options = new ReplicationOptions();
+options.setSynchronous(true);
+options.setFilter( new AgentFilter {
+  public boolean isIncluded (Agent agent) {
+   return agent.getId().equals(“flush”);
+  }
+});
+
+Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
+```
+
+<!-- In general, it will not be necessary to manually invalidate content in the dispatcher, but it is possible if needed.
+
+>[!NOTE]
+>Prior to AEM as a Cloud Service, there were two ways of invalidating the dispatcher cache.
+>
+>1. Invoke the replication agent, specifying the publish dispatcher flush agent
+>2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
+>
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
+
+The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
 <!-- Need to find a new link and/or example -->
 <!-- 
 and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
--->
 
-Dit wordt geïllustreerd in het onderstaande diagram.
+The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-Als er een probleem is dat de verzender cache niet wordt gewist, neemt u contact op met [klantenondersteuning](https://helpx.adobe.com/support.ec.html) die de verzendingscache zo nodig kunnen leegmaken.
+If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
-Adobe-beheerde CDN respecteert TTLs en zo is er geen behoefte aan het om worden gespoeld. Als een probleem wordt vermoed, [contact opnemen met klantenondersteuning](https://helpx.adobe.com/support.ec.html) ondersteuning die een CDN-cache met Adobe-beheer indien nodig kan leegmaken.
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## Client-Side bibliotheken en consistentie van versies {#content-consistency}
 
