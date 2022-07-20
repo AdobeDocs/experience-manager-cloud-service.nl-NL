@@ -2,7 +2,8 @@
 title: 'Hoe kan ik een workflow toewijzen aan andere gebruikers, e-mail verzenden en Adobe Sign gebruiken in een workflow? '
 description: Met Forms-gerichte workflows kunt u snel adaptieve, op Forms gebaseerde workflows maken. Met Adobe Sign kunt u documenten elektronisch ondertekenen, op formulieren gebaseerde bedrijfsprocessen maken, gegevens ophalen en verzenden naar meerdere gegevensbronnen en e-mailmeldingen verzenden
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
+google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
+source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
 workflow-type: tm+mt
 source-wordcount: '4939'
 ht-degree: 0%
@@ -166,7 +167,7 @@ De e-mailstap heeft de volgende eigenschappen:
 * **[!UICONTROL Workflow Metadata]**: Gebruik de optie wanneer de te gebruiken waarde in een werkschemabezit wordt opgeslagen. Nadat u de optie hebt geselecteerd, typt u de naam van de eigenschap metadata in het lege tekstvak onder de optie Metagegevens werkstroom. Bijvoorbeeld emailAddress.
 
 <!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
-* **[!UICONTROL Image]**: Gebruik de optie om een afbeelding in te sluiten in de e-mail. Blader en kies de afbeelding nadat u de optie hebt geselecteerd. De afbeeldingsoptie is alleen beschikbaar voor de afbeeldingstags (&lt;img src=&quot;*&quot; />) die beschikbaar zijn in de e-mailsjabloon.
+* **[!UICONTROL Image]**: Gebruik de optie om een afbeelding in te sluiten in de e-mail. Blader en kies de afbeelding nadat u de optie hebt geselecteerd. De afbeeldingsoptie is alleen beschikbaar voor de afbeeldingstags (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) die beschikbaar zijn in de e-mailsjabloon.&#42;
 
 **[!UICONTROL Sender’s / Recipient's Email Address]**: Selecteer **[!UICONTROL Literal]** om handmatig een e-mailadres op te geven of selecteer de optie **[!UICONTROL Retrieve from Workflow metadata]** om het e-mailadres op te halen uit een eigenschap metadata. U kunt ook een lijst met arrays met metagegevenseigenschappen opgeven voor de **[!UICONTROL Retrieve from Workflow metadata]** optie. Selecteer **[!UICONTROL Variable]** om het e-mailadres op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String.
 
