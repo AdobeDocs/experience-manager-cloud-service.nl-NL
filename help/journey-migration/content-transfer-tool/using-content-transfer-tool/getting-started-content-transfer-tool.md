@@ -2,10 +2,10 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
+source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 7%
+source-wordcount: '1341'
+ht-degree: 6%
 
 ---
 
@@ -44,6 +44,18 @@ Om connectiviteit aan het doel AEM as a Cloud Service milieu te testen, geef het
 
 >[!NOTE]
 >Als een `HTTP/2 200` is ontvangen, is een verbinding met AEM as a Cloud Service gelukt.
+
+### SSL-registratie inschakelen {#enable-ssl-logging}
+
+Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optreden. Als u verbindingsproblemen tijdens een extractieproces wilt oplossen, kunt u SSL-registratie inschakelen via de systeemconsole van de AEM omgeving door de volgende stappen uit te voeren:
+
+1. Navigeer naar de Adobe Experience Manager Web Console op uw broninstantie door naar **Gereedschappen - Bewerkingen - Webconsole** of rechtstreeks naar de URL op *https://serveraddress:serverport/system/console/configMgr*
+1. Zoeken naar **Configuratie van de service Content Transfer Tool Extraction**
+1. Gebruik de knop voor het potloodpictogram om de configuratiewaarden ervan te bewerken
+1. De optie **SSL-registratie inschakelen voor extractie** instellen en vervolgens op **Opslaan**:
+
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
+
 
 ## De Content Transfer-tool uitvoeren {#running-tool}
 
