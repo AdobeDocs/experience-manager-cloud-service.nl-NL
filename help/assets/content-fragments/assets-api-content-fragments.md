@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service Content Fragments Support in 
 description: Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een belangrijk stuk van AEM koploze leveringseigenschap.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
+source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1761'
 ht-degree: 1%
 
 ---
@@ -255,47 +255,6 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 >[!NOTE]
 >
 >Zie voor meer informatie de [API-naslag](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Met name: [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
-
-### Lezen/Levering {#read-delivery}
-
-Gebruik gebeurt via:
-
-`GET /{cfParentPath}/{cfName}.json`
-
-Bijvoorbeeld:
-
-`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
-De reactie is geserialiseerd met JSON met de inhoud gestructureerd zoals in het inhoudsfragment. Referenties worden als referentie-URL&#39;s geleverd.
-
-Er zijn twee typen leesbewerkingen mogelijk:
-
-* Als u een specifiek inhoudsfragment leest per pad, wordt hiermee de JSON-representatie van het inhoudsfragment geretourneerd.
-* Een map met inhoudsfragmenten lezen op pad: Hiermee worden de JSON-representaties van alle inhoudsfragmenten in de map geretourneerd.
-
-### Maken {#create}
-
-Gebruik gebeurt via:
-
-`POST /{cfParentPath}/{cfName}`
-
-De hoofdtekst moet een JSON-representatie bevatten van het inhoudsfragment dat moet worden gemaakt, inclusief de initiële inhoud die moet worden ingesteld op de elementen van het inhoudsfragment. Het is verplicht de `cq:model` en moet verwijzen naar een geldig inhoudsfragmentmodel. Als u dit niet doet, treedt er een fout op. Er moet ook een koptekst worden toegevoegd `Content-Type` die is ingesteld op `application/json`.
-
-### Bijwerken {#update}
-
-Gebruik is via
-
-`PUT /{cfParentPath}/{cfName}`
-
-De hoofdtekst moet een JSON-representatie bevatten van wat voor het opgegeven inhoudsfragment moet worden bijgewerkt.
-
-Dit kan gewoon de titel of beschrijving zijn van een inhoudsfragment, of één element, of alle elementwaarden en/of metagegevens.
-
-### Verwijderen {#delete}
-
-Gebruik gebeurt via:
-
-`DELETE /{cfParentPath}/{cfName}`
 
 ## Beperkingen {#limitations}
 
