@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
+source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2251'
 ht-degree: 1%
 
 ---
@@ -280,17 +280,7 @@ Als een index in een recentere versie van de toepassing moet worden verwijderd, 
 
 Als het niet meer nodig is om een uit-van-de-doos index te hebben, dan moet u de uit-van-de-doos indexdefinitie kopiëren. Als u bijvoorbeeld al hebt geïmplementeerd `damAssetLucene-8-custom-3`, maar u hebt de aanpassingen niet meer nodig en u wilt terugschakelen naar de standaardinstelling `damAssetLucene-8` index, dan moet u een index toevoegen `damAssetLucene-8-custom-4` die de indexdefinitie van `damAssetLucene-8`.
 
-## Indexoptimalisaties {#index-optimizations}
+## Optimalisatie van indexen en query&#39;s {#index-query-optimizations}
 
-Apache Jackrabbit Oak maakt flexibele indexconfiguraties mogelijk om zoekopdrachten efficiënt af te handelen. Indexen zijn vooral belangrijk voor grotere opslagplaatsen. Controleer of alle query&#39;s worden ondersteund door een geschikte index. De vragen zonder een geschikte index kunnen duizenden knopen lezen, die dan als waarschuwing wordt geregistreerd. Dergelijke vragen zouden moeten worden geïdentificeerd door de logboekdossiers te analyseren, zodat de indexdefinities kunnen worden geoptimaliseerd. Zie [deze pagina](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) voor meer informatie .
-
-### Lucene full text index on AEM as a Cloud Service {#index-lucene}
-
-De fulltext-index `/oak:index/lucene-2` kan zeer groot worden omdat het alle knopen in de AEM bewaarplaats door gebrek indexeert.  Na de plannen van Adobe om deze index terug te trekken zal het niet meer aan de productkant in AEM as a Cloud Service worden gebruikt en het zou niet moeten worden vereist om klantencode in werking te stellen. Voor AEM as a Cloud Service milieu&#39;s met gemeenschappelijke indexen van Lucene, werkt Adobe individueel met klanten voor een gecoördineerde benadering om deze index te compenseren en betere, geoptimaliseerde indexen te gebruiken. Klanten hoeven geen actie te ondernemen zonder dat ze dit van Adobe in kennis stellen. AEM as a Cloud Service klanten zullen door Adobe op de hoogte worden gesteld wanneer er behoefte is aan actie met betrekking tot deze optimalisering. Als deze index voor douanequery&#39;s, als tijdelijke oplossing wordt vereist, zou een exemplaar van deze index moeten worden gecreeerd gebruikend een verschillende naam, bijvoorbeeld `/oak:index/acme.lucene-1-custom-1`, zoals beschreven [hier](/help/operations/indexing.md).
-Deze optimalisatie is standaard niet van toepassing op andere AEM omgevingen die op locatie worden gehost of worden beheerd door Adobe Managed Services.
-
-## Zoekopdrachten optimaliseren {#index-query}
-
-De **Query-prestaties** kunt u zowel populaire als trage JCR-query&#39;s observeren. Bovendien, kan het vragen analyseren en diverse informatie over tonen, met name als een index voor deze vraag of niet wordt gebruikt.
-
-In tegenstelling tot in AEM op gebouw, AEM as a Cloud Service toont niet **Query-prestaties** in de gebruikersinterface. In plaats daarvan is deze nu beschikbaar via de Developer Console (in Cloud Manager) op het tabblad [Zoekopdrachten](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) tab.
+Apache Jackrabbit Oak maakt flexibele indexconfiguraties mogelijk om zoekopdrachten efficiënt af te handelen. Indexen zijn vooral belangrijk voor grotere opslagplaatsen. Controleer of alle query&#39;s worden ondersteund door een geschikte index. De vragen zonder een geschikte index kunnen duizenden knopen lezen, die dan als waarschuwing wordt geregistreerd.
+Zie [deze pagina](best-practices-for-querying-and-indexing.md) op hoe de vragen en de indexen kunnen worden geoptimaliseerd.
