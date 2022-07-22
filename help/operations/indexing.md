@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
+source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2253'
 ht-degree: 1%
 
 ---
@@ -280,7 +280,8 @@ Als een index in een recentere versie van de toepassing moet worden verwijderd, 
 
 Als het niet meer nodig is om een uit-van-de-doos index te hebben, dan moet u de uit-van-de-doos indexdefinitie kopiëren. Als u bijvoorbeeld al hebt geïmplementeerd `damAssetLucene-8-custom-3`, maar u hebt de aanpassingen niet meer nodig en u wilt terugschakelen naar de standaardinstelling `damAssetLucene-8` index, dan moet u een index toevoegen `damAssetLucene-8-custom-4` die de indexdefinitie van `damAssetLucene-8`.
 
-## Optimalisatie van indexen en query&#39;s {#index-query-optimizations}
+## Optimalisatie van index en query {#index-query-optimizations}
 
 Apache Jackrabbit Oak maakt flexibele indexconfiguraties mogelijk om zoekopdrachten efficiënt af te handelen. Indexen zijn vooral belangrijk voor grotere opslagplaatsen. Controleer of alle query&#39;s worden ondersteund door een geschikte index. De vragen zonder een geschikte index kunnen duizenden knopen lezen, die dan als waarschuwing wordt geregistreerd.
-Zie [deze pagina](best-practices-for-querying-and-indexing.md) op hoe de vragen en de indexen kunnen worden geoptimaliseerd.
+
+Zie [dit document](query-and-indexing-best-practices.md) voor informatie over hoe vragen en indexen kunnen worden geoptimaliseerd.
