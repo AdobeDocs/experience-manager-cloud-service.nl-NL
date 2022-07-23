@@ -2,9 +2,9 @@
 title: Inleiding tot het beheren van SSL-certificaten
 description: Leer hoe u in Cloud Manager zelfbedieningsgereedschappen hebt om SSL-certificaten te installeren.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 898f7bc46a3f1b0ac93ee43fbf7b60a11682a073
+source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 0%
 >id="aemcloud_golive_sslcert"
 >title="SSL-certificaten beheren"
 >abstract="Leer hoe u met Cloud Manager zelfservicegereedschappen hebt voor het installeren en beheren van SSL-certificaten om uw site te beveiligen voor uw gebruikers. Cloud Manager gebruikt een platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die zijn verkregen van certificeringsinstanties van derden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Een SSL-certificaat weergeven, bijwerken en vervangen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Status van een SSL-certificaat controleren"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Een SSL-certificaat weergeven, bijwerken en vervangen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Status van een SSL-certificaat controleren"
 
 Cloud Manager biedt u zelfbedieningsgereedschappen voor het installeren en beheren van SSL-certificaten om uw site te beveiligen voor uw gebruikers. Cloud Manager gebruikt een platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die zijn verkregen van certificeringsinstanties van derden, zoals Let&#39;s Encrypt.
 
