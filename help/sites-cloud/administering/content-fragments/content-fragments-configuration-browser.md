@@ -1,10 +1,11 @@
 ---
 title: Inhoudsfragmenten - Configuratiebrowser
 description: Leer hoe te om specifieke functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 15%
+source-wordcount: '358'
+ht-degree: 14%
 
 ---
 
@@ -17,7 +18,7 @@ Leer hoe te om specifieke functionaliteit van het Fragment van de Inhoud in Brow
 Voordat u Inhoudsfragmenten kunt gebruiken, moet u de opdracht **Configuratiebrowser** inschakelen:
 
 * **Modellen van inhoudsfragmenten** - verplicht
-* **GrafiekQL blijvende vragen** - facultatief
+* **GrafiekQL Blijvende query&#39;s** - facultatief
 
 >[!CAUTION]
 >
@@ -60,9 +61,12 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
 1. Gebruiken **Maken** om het dialoogvenster te openen, waarin u:
 
    1. Geef een **Titel**.
+   1. De **Naam** wordt de knooppuntnaam in de repository.
+      * Het wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
+      * U kunt deze desgewenst aanpassen.
    1. Selecteer
       * **Modellen van contentfragmenten**
-      * **GrafiekQL blijvende vragen**
+      * **GrafiekQL Blijvende query&#39;s**
 
       ![Configuratie definiëren](assets/cfm-conf-01.png)
 

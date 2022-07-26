@@ -3,7 +3,7 @@ title: Blijvende query's voor GraphQL
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Bijvoorbeeld, om een voortgeduurde vraag specifiek voor de configuratie van Plaa
 >
 >Zie [Functionaliteit van inhoudsfragment inschakelen in configuratievenster](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) voor meer informatie .
 >
->De **GrafiekQL blijvende vragen** moet worden toegelaten, voor de aangewezen configuratie van Plaatsen.
+>De **GrafiekQL Blijvende query&#39;s** moet worden toegelaten, voor de aangewezen configuratie van Plaatsen.
 
 Als er bijvoorbeeld een bepaalde query wordt uitgevoerd, `my-query`, die een model gebruikt `my-model` vanuit de configuratie Sites `my-conf`:
 
@@ -192,9 +192,9 @@ Een clienttoepassing vraagt een aanvraag tot GET met de volgende syntaxis uit om
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-Wanneer `PERSISTENT_PATH` is een verkort pad naar de opslaglocatie van de Persistent-query.
+Wanneer `PERSISTENT_PATH` is een verkort pad naar de opslaglocatie van de Persisted-query.
 
-1. Bijvoorbeeld `wknd` is de configuratienaam en `plain-article-query` is de naam van de Persistent-query. De query uitvoeren:
+1. Bijvoorbeeld `wknd` is de configuratienaam en `plain-article-query` is de naam van de Persisted-query. De query uitvoeren:
 
    ```shell
    $ curl -X GET \
@@ -205,7 +205,7 @@ Wanneer `PERSISTENT_PATH` is een verkort pad naar de opslaglocatie van de Persis
 
    >[!NOTE]
    >
-   > De variabelen en de waarden van de vraag moeten behoorlijk zijn [gecodeerd](#encoding-query-url) bij het uitvoeren van een continue query.
+   > De variabelen en de waarden van de vraag moeten behoorlijk zijn [gecodeerd](#encoding-query-url) bij het uitvoeren van een blijvende query.
 
    Bijvoorbeeld:
 
@@ -310,8 +310,8 @@ De URL kan worden opgesplitst in de volgende onderdelen:
 
 | URL-onderdeel | Beschrijving |
 |----------| -------------|
-| `/graphql/execute.json` | Blijvend zoekeindpunt |
-| `/wknd/adventure-by-path` | Blijvend zoekpad |
+| `/graphql/execute.json` | Blijvend vraageindpunt |
+| `/wknd/adventure-by-path` | Pad voor permanente query |
 | `%3B` | Codering van `;` |
 | `adventurePath` | Query-variabele |
 | `%3D` | Codering van `=` |
@@ -330,9 +330,9 @@ Als u een voortgezette query in een client-app wilt gebruiken, moet de SDK van d
 
 Verblijfsde vragen zouden altijd op de dienst van de Auteur AEM moeten worden gecreeerd en dan gepubliceerd (herhaald) aan de dienst van de Publicatie AEM. Vaak, worden de Persisted vragen gecreeerd en op lagere milieu&#39;s zoals lokale of milieu&#39;s van de Ontwikkeling getest. Het is dan noodzakelijk om Verlengde vragen aan hogere niveaumilieu&#39;s te bevorderen, die hen uiteindelijk op een productieAEM publiceren milieu voor cliënttoepassingen ter beschikking stellen om te verbruiken.
 
-### Persistente query&#39;s verpakken
+### Voorbehouden query&#39;s verpakken
 
-U kunt permanente query&#39;s inbouwen [AEM](/help/implementing/developing/tools/package-manager.md). AEM pakketten kunnen vervolgens worden gedownload en geïnstalleerd in verschillende omgevingen. AEM Pakketten kunnen ook worden gerepliceerd vanuit een AEM-auteuromgeving naar een AEM-publicatieomgeving.
+De blijvende vragen kunnen in worden gebouwd [AEM](/help/implementing/developing/tools/package-manager.md). AEM pakketten kunnen vervolgens worden gedownload en geïnstalleerd in verschillende omgevingen. AEM Pakketten kunnen ook worden gerepliceerd vanuit een AEM-auteuromgeving naar een AEM-publicatieomgeving.
 
 Een pakket maken:
 

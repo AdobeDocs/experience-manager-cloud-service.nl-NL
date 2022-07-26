@@ -2,7 +2,7 @@
 title: Een configuratie maken - installatie zonder kop
 description: Creeer een configuratie als eerste stap aan het worden begonnen met hoofdloos in AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
       * Deze kan zo nodig worden aangepast.
 1. Controleer de volgende opties:
    * **Modellen van contentfragmenten**
-   * **GrafiekQL blijvende vragen**
+   * **GrafiekQL Blijvende query&#39;s**
 
    ![Configuratie maken](../assets/create-configuration.png)
 
@@ -43,7 +43,7 @@ Indien nodig kunt u meerdere configuraties maken. Configuraties kunnen ook worde
 
 >[!NOTE]
 >
->Configuratieopties naast **Modellen van inhoudsfragmenten** en **GrafiekQL blijvende vragen** kan nodig zijn, afhankelijk van uw implementatievereisten.
+>Configuratieopties naast **Modellen van inhoudsfragmenten** en **GrafiekQL Blijvende query&#39;s** kan nodig zijn, afhankelijk van uw implementatievereisten.
 
 ## Volgende stappen {#next-steps}
 

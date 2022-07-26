@@ -3,7 +3,7 @@ title: Dispatcher-configuratie met AEM headless
 description: De Dispatcher is een caching- en beveiligingslaag voor Adobe Experience Manager-publicatieomgevingen. Verscheidene configuraties worden gebruikt om eindpunten GraphQL aan toepassingen zonder kop te openen.
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%
@@ -38,4 +38,4 @@ Het verzoek om Persisted vragen wordt gemaakt tegen een verschillend eindpunt. A
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-U kunt permanente query&#39;s aanvragen met `GET`, waarbij de reactie op Dispatcher- en CDN-niveau in de cache wordt geplaatst. Meer informatie over caching en cachevalidatie vindt u [hier](/help/implementing/dispatcher/caching.md).
+U kunt blijvende query&#39;s aanvragen met `GET`, waarbij de reactie op Dispatcher- en CDN-niveau in de cache wordt geplaatst. Meer informatie over caching en cachevalidatie vindt u [hier](/help/implementing/dispatcher/caching.md).
