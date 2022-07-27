@@ -2,9 +2,9 @@
 title: Inhoud herstellen in AEM as a Cloud Service
 description: Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met gebruik van Cloud Manager.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
+source-git-commit: a61eaa8f13c96c87f45f4074ebd15e1dc8597c2c
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1175'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,15 @@ Het terugzetproces beïnvloedt slechts inhoud, verlatend uw code en versie van A
 
 Cloud Manager biedt twee typen back-ups waarmee u inhoud kunt herstellen.
 
-* **Punt in tijd (PIT):** Dit type herstelt van systeemsteunen van de laatste 24 uren van de huidige tijd.
+* **Punt in tijd (PIT):** Dit type herstelt van ononderbroken systeemsteunen van de laatste 24 uren van de huidige tijd.
 * **Vorige week:** Dit type herstelt van systeemsteunen in de laatste zeven dagen exclusief de vorige 24 uren.
 
 In beide gevallen blijft de versie van de aangepaste code en AEM ongewijzigd.
+
+De prestatiesmetriek van het herstellen van inhoud in AEM als ContentService verwijzen naar de gestandaardiseerde benchmarks:
+
+* **Doelstelling hersteltijd (RTO):** De doelstelling voor de hersteltijd varieert afhankelijk van de grootte van de opslagplaats, maar als regel geldt dat als de herstelvolgorde eenmaal is gestart, dit ongeveer 30 minuten in beslag moet nemen.
+* **De doelstelling van het herstelpunt (BHP):** De herstelpuntdoelstelling is maximaal 24 uur
 
 >[!TIP]
 >
