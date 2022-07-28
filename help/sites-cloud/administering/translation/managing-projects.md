@@ -4,9 +4,9 @@ description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM ku
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
 workflow-type: tm+mt
-source-wordcount: '3863'
+source-wordcount: '3920'
 ht-degree: 0%
 
 ---
@@ -178,6 +178,11 @@ Handmatige bewerkingen van vertaalde inhoud kunnen worden gesynchroniseerd met h
 ![Wijzigingen voor vertaalgeheugen vergelijken](../assets/update-translation-memory-compare.png)
 
 AEM stuurt de geselecteerde tekenreeksen terug naar het vertaalbeheersysteem.
+
+* De actie werkt de vertaling van bestaande koorden in het vertaalgeheugen van gevormde Systemen van het Vertaalbeheer (TMS) bij.
+* Het creëert geen nieuwe vertaalbanen.
+* Het verzendt de waardeparen van koorden en hun vertalingen terug naar TMS, via AEM vertaling API.
+* Deze eigenschap vereist dat een Systeem van het Vertaalbeheer voor gebruik met AEM wordt gevormd.
 
 ### Vertaalstatus van een pagina controleren {#check-translation-status}
 
