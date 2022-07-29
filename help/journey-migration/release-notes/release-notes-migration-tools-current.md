@@ -2,9 +2,10 @@
 title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.7.0
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.7.0
 feature: Release Information
-source-git-commit: f84327096951772e1bed8656334841e1292d6bcf
+exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
+source-git-commit: ad9edf7bc164ea7e03496680dff8df6d1ebe266a
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '430'
 ht-degree: 2%
 
 ---
@@ -12,6 +13,22 @@ ht-degree: 2%
 # Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.7.0 {#release-notes}
 
 Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.7.0.
+
+## Analysator van best practices {#bpa-release}
+
+### Releasedatum {#release-date-bpa}
+
+De releasedatum voor de analyse van best practices v2.1.30 is 27 juli 2022.
+
+### Wat is er nieuw? {#what-is-new-bpa}
+
+* BPA kan nu de totale migreerbare grootte van de Lucene Index, die de Totale Lucene Index exclusief is, detecteren en rapporteren `/oak:index/lucene` en `/oak:index/damAssetLucene`.
+* Nieuw patroon toegevoegd in BPA om het gebruik van een aangepast i18n-woordenboek te detecteren en er een melding van te maken. Translator.html is niet beschikbaar in AEM as a Cloud Service en aangepast i18n-woordenboek moet worden geïmplementeerd vanuit Git via de Cloud Manager CI/CD-pijplijn.
+
+### Opgeloste problemen {#bug-fixes-bpa}
+
+* BPA rapporteerde over ontbrekende originele uitvoeringen voor inhoudsfragmenten. Omdat inhoudsfragmenten geen uitvoeringen hebben, wordt deze controle nu overgeslagen voor inhoudsfragmenten.
+* De optie om ACS-gemeenschappelijke bevindingen te filtreren ontbrak in BPA UI. Dit is opgelost.
 
 ## De tool Content Transfer {#ctt-release}
 
@@ -44,4 +61,3 @@ De releasedatum voor Cloud Acceleration Manager is 15 juli 2022.
 
 * Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om het migratietoken handmatig op te halen om een opname te kunnen starten wanneer automatisch ophalen mislukt. De automatische herwinning kan ontbreken als de klanten opstelling IP allow-list hebben die CAM blokkeert of als een niet-admin gebruiker probeert om een opname te beginnen. Zie [Problemen oplossen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) voor meer informatie .
 * Lange tabellen op de pagina Complexiteit migratie kunnen nu worden samengevouwen, zodat u ze eenvoudig kunt gebruiken.
-
