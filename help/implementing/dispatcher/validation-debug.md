@@ -3,9 +3,9 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Validatie en foutopsporing met Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
+source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2536'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,10 @@ De volgende bestanden kunnen worden aangepast en worden bij de implementatie ove
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
 U kunt een of meer van deze bestanden hebben. Zij bevatten `<VirtualHost>` vermeldingen die de namen van de gastheer aanpassen en Apache toestaan om elk domeinverkeer met verschillende regels te behandelen. Bestanden worden gemaakt in het dialoogvenster `available_vhosts` en ingeschakeld met een symbolische koppeling in het dialoogvenster `enabled_vhosts` directory. Van de `.vhost` bestanden, andere bestanden zoals herschreven en variabelen worden opgenomen.
+
+>[!NOTE]
+>
+>In de flexibele modus moet u relatieve paden gebruiken in plaats van absolute paden.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -480,11 +484,15 @@ $ docker exec d75fbd23b29 httpd-test
 Met de release van Cloud Manager 2021.7.0 genereren nieuwe programma&#39;s van Cloud Manager gemaven projectstructuren met [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) of hoger, inclusief het bestand **opt-in/USE_SOURCES_DIRECTLY**. Hiermee worden eerdere beperkingen van het dialoogvenster [verouderde modus](/help/implementing/dispatcher/validation-debug-legacy.md) rond het aantal en de grootte van dossiers, die ook SDK en runtime ertoe brengen om de configuratie op een betere manier te bevestigen en op te stellen. Als dit bestand niet in de configuratie van de verzender staat, wordt u ten zeerste aangeraden te migreren. Gebruik de volgende stappen om een veilige overgang te garanderen:
 
 1. **Lokaal testen.** Voeg de map en het bestand toe met behulp van de meest recente SDK voor verzendprogramma&#39;s `opt-in/USE_SOURCES_DIRECTLY`. Volg de instructies voor lokale validatie in dit artikel om te testen of de verzender lokaal werkt.
-2. **Testen voor ontwikkeling van cloud:**
+1. **Testen voor ontwikkeling van cloud:**
    * Het bestand vastleggen `opt-in/USE_SOURCES_DIRECTLY` aan een git tak die door de niet-productiepijpleiding aan een de ontwikkelomgeving van de Wolk wordt opgesteld.
    * Gebruik Cloud Manager om te implementeren in een Cloud-ontwikkelomgeving.
    * Test grondig. Het is essentieel om te controleren of uw apache- en dispatcherconfiguratie zich gedraagt zoals u verwacht voordat u wijzigingen in hogere omgevingen implementeert. Controleer al gedrag met betrekking tot uw douaneconfiguratie! Bestand een ondersteuningsticket voor de klant als u denkt dat de configuratie van de geïmplementeerde dispatcher uw aangepaste configuratie niet weerspiegelt.
-3. **Distribueren naar productie:**
+
+   >[!NOTE]
+   >
+   >In de flexibele modus moet u relatieve paden gebruiken in plaats van absolute paden.
+1. **Distribueren naar productie:**
    * Het bestand vastleggen `opt-in/USE_SOURCES_DIRECTLY` aan een git tak die door de productiepijpleiding aan het stadium van de Wolk en productiemilieu&#39;s wordt opgesteld.
    * Gebruik Cloud Manager om te implementeren in testfasen.
    * Test grondig. Het is essentieel om te controleren of uw apache- en dispatcherconfiguratie zich gedraagt zoals u verwacht voordat u wijzigingen in hogere omgevingen implementeert. Controleer al gedrag met betrekking tot uw douaneconfiguratie! Bestand een ondersteuningsticket voor de klant als u denkt dat de configuratie van de geïmplementeerde dispatcher uw aangepaste configuratie niet weerspiegelt.
