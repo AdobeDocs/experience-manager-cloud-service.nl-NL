@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: d763bacb0844a438ebea6ef206dfa184a49993fe
+source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -15,23 +15,19 @@ In de volgende sectie worden de algemene opmerkingen bij de release beschreven v
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor de laatste versie 1.9.1 van [!DNL Workfront for Experience Manager enhanced connector] is 1 juli 2022.
+De releasedatum voor de laatste versie 1.9.2 van [!DNL Workfront for Experience Manager enhanced connector] is 3 augustus 2022.
 
 ## Geen hooglichten {#release-highlights}
 
 De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de volgende verbeteringen en foutoplossingen:
 
-* Toegevoegde ondersteuning voor verificatie tussen Experience Manager- en Workfront-toepassingen met Workfront API-sleutel voor instanties die naar Adobe IMS zijn gemigreerd.
+* De **[!UICONTROL Upload Document]** werkstroomstap kan geen document aan Workfront koppelen.
 
-* Wanneer u externe bestanden of mappen koppelt, worden in de Workfront-toepassing de `SERVER_ERROR` foutbericht. Het foutbericht verwijst naar een niet-geautoriseerde uitzondering vanwege een onjuiste combinatie van API-sleutels.
-
-* Wanneer u een Create werkstroom van de Taak voor activa uitvoert, toont de Null uitzondering van de Wijzer in de logboekberichten.
-
-* Wanneer u de optie `Replace Spaces with DASH` onder Geavanceerde instellingen in Experience Manager resulteert dit in het maken van dubbele mappen in Workfront.
+* De **[!UICONTROL Upload Document]** kan geen document aan Taken en problemen in Workfront koppelen. De werkstroomstap koppelt een document aan Projecten met succes.
 
 >[!IMPORTANT]
 >
->Adobe raadt u aan [upgrade naar de nieuwste versie 1.9.1](../assets/update-workfront-enhanced-connector.md) van de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe raadt u aan [upgrade naar de nieuwste versie 1.9.2](../assets/update-workfront-enhanced-connector.md) van de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekende problemen {#known-issues}
 
@@ -40,6 +36,18 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 * Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** in de vervolgkeuzelijst kunt u de doelbestemming in de Experience Manager niet selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** keuzelijst beschikbaar in de nieuwe Workfront-ervaring.
 
 ## Eerdere versies {#previous-releases}
+
+### Release juli 2022 {#july-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] versie 1.9.1 bevat de volgende updates:
+
+* Toegevoegde ondersteuning voor verificatie tussen Experience Manager- en Workfront-toepassingen met Workfront API-sleutel voor instanties die naar Adobe IMS zijn gemigreerd.
+
+* Wanneer u externe bestanden of mappen koppelt, worden in de Workfront-toepassing de `SERVER_ERROR` foutbericht. Het foutbericht verwijst naar een niet-geautoriseerde uitzondering vanwege een onjuiste combinatie van API-sleutels.
+
+* Wanneer u een Create werkstroom van de Taak voor activa uitvoert, toont de Null uitzondering van de Wijzer in de logboekberichten.
+
+* Wanneer u de optie `Replace Spaces with DASH` onder Geavanceerde instellingen in Experience Manager resulteert dit in het maken van dubbele mappen in Workfront.
 
 ### Release juni 2022 {#june-2022-release}
 
