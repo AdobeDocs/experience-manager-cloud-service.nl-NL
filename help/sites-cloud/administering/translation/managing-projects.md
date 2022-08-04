@@ -4,9 +4,9 @@ description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM ku
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
+source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
 workflow-type: tm+mt
-source-wordcount: '3920'
+source-wordcount: '3992'
 ht-degree: 0%
 
 ---
@@ -177,12 +177,20 @@ Handmatige bewerkingen van vertaalde inhoud kunnen worden gesynchroniseerd met h
 
 ![Wijzigingen voor vertaalgeheugen vergelijken](../assets/update-translation-memory-compare.png)
 
-AEM stuurt de geselecteerde tekenreeksen terug naar het vertaalbeheersysteem.
+AEM werkt de vertaling van de bestaande koorden in het vertaalgeheugen van gevormde TMS bij.
 
-* De actie werkt de vertaling van bestaande koorden in het vertaalgeheugen van gevormde Systemen van het Vertaalbeheer (TMS) bij.
+* De actie werkt de vertaling van bestaande koorden in het vertaalgeheugen van gevormde TMS bij.
 * Het creëert geen nieuwe vertaalbanen.
-* Het verzendt de waardeparen van koorden en hun vertalingen terug naar TMS, via AEM vertaling API.
-* Deze eigenschap vereist dat een Systeem van het Vertaalbeheer voor gebruik met AEM wordt gevormd.
+* De vertalingen worden via AEM vertalings-API teruggestuurd naar de TMS (zie hieronder).
+
+Deze functie gebruiken:
+
+* Een TMS moet voor gebruik met AEM worden gevormd.
+* De schakelaar moet de methode uitvoeren [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+   * De code binnen deze methode bepaalt wat met het verzoek van de vertaalgeheugenupdate gebeurt.
+   * Het AEM vertaalkader verzendt de koordwaardeparen (originele en bijgewerkte vertaling) terug naar TMS via deze methodeimplementatie.
+
+De updates van het vertaalgeheugen kunnen worden onderschept en naar een douanebestemming worden verzonden, voor gevallen waar een merkgebonden vertaalgeheugen wordt gebruikt.
 
 ### Vertaalstatus van een pagina controleren {#check-translation-status}
 
