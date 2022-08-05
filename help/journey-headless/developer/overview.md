@@ -3,9 +3,9 @@ title: AEM Headless Developer Journey
 description: 'Begin hier voor een geleide reis door Adobe Experience Manager (AEM) as a Cloud Service wanneer het als Zwaardeloos Systeem van het Inhoudsbeheer (CMS) wordt gebruikt. Leer over de krachtige en flexibele functies zonder koppen, hun mogelijkheden en hoe u deze kunt gebruiken voor uw eerste project voor ontwikkeling zonder koppen. Deze reis verstrekt u van alle informatie u uw eerste headless toepassing moet ontwikkelen. '
 landing-page-description: 'Krijg inzicht in de levering en implementatie van inhoud zonder kop. Meer weten over het ontwikkelen van uw strategie binnen uw bedrijf? '
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2ec6b29800867462bbc2e88048c583d4e5eefa57
+source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1300'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Het volgende is de persoon die in deze reis interactie heeft.
 | Beheerder | Beheert de basisopstelling en configuratie van AEM | De ontwikkelaar werkt met de beheerder om configuratieveranderingen nodig voor ontwikkeling aan te brengen. |
 | Content Architect | Analyseert de vereisten voor de gegevens die zonder kop moeten worden geleverd en bepaalt de structuur voor deze gegevens | Ontwikkelaars werken samen met de inhoudarchitect om de structuur van de gegevens en de vereisten voor het leveren van de inhoud te begrijpen. |
 
-Informatie op deze reis kan natuurlijk nuttig zijn voor iedereen, maar sommige informatie kan voor bepaalde rollen overbodig zijn. Blijf op de hoogte voor [komende reizen die bijkomende rollen bestrijken.](/help/journey-documentation/documentation-journeys.md#journeys)
+De informatie in deze reis kan voor alle mensen nuttig zijn, maar sommige informatie kan niet noodzakelijk voor bepaalde rollen zijn. Blijf op de hoogte voor [komende reizen die bijkomende rollen bestrijken.](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## De headless Developer Journey {#the-journey}
 
