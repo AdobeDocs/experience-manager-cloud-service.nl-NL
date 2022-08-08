@@ -2,16 +2,16 @@
 title: Sneltoetsen voor consoles
 description: Bespaar tijd bij het ontwerpen met deze sneltoetsen
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Sneltoetsen voor consoles {#keyboard-shortcuts-for-consoles}
 
-De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Assets, Users, Groepen, Projecten en Experience Fragments.
+De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Assets, Users, Groepen, Projecten en Experience Fragments. Er zijn ook specifieke sneltoetsen voor de [Content Fragments-console](#keyboard-shortcuts-for-the-content-fragments-console).
 
 | Locatie | Sneltoets | Beschrijving |
 |---|---|---|
@@ -81,3 +81,7 @@ U kunt sneltoetsen op twee locaties deactiveren:
 ## Sneltoetsen voor de Pagina-editor {#keyboard-shortcuts-for-the-page-editor}
 
 In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing op het gebruik van consoles, andere op [pagina bewerken](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+## Sneltoetsen voor de console van inhoudsfragmenten {#keyboard-shortcuts-for-the-content-fragments-console}
+
+Sommige sneltoetsen zijn van toepassing op de [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)

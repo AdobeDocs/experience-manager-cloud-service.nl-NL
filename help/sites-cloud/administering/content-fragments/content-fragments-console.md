@@ -2,9 +2,10 @@
 title: Console voor inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten beheert met de console voor inhoudsfragmenten.
 landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fragmenten van de Inhoud te beheren die op hoog volumengebruik van Inhoudsfragmenten voor Hoofdloze gebruik, maar ook gebruikt wanneer het ontwerpen van de pagina wordt geconcentreerd.
-source-git-commit: 8c44ecf0237c7a3660ef9fa97f46cc400e4bd30f
+exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
+source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -26,6 +27,10 @@ De console van de Fragmenten van de Inhoud wordt gewijd aan het beheren van, het
 >* dit **Inhoudsfragmenten** console
 >* de **Activa** console - zie [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md)
 
+
+>[!NOTE]
+>
+>Een selectie van [sneltoetsen beschikbaar voor gebruik in deze console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 De console van de Fragmenten van de Inhoud kan direct van het hoogste niveau van de Globale Navigatie worden betreden:
 

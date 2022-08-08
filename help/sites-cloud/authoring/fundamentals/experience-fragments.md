@@ -2,10 +2,10 @@
 title: Ervaringsfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -346,6 +346,10 @@ Details worden getoond in alle weergaven van de console voor **Experience-fragme
       * **Pinterest board**
    * **Verwijzingen**
       * Een lijst met verwijzingen
+   * **Personalisatie**
+      * **ContextHub-pad**
+      * **Segmentpad**
+      * **Merk**
 
 ## De normale HTML-vertoning {#the-plain-html-rendition}
 

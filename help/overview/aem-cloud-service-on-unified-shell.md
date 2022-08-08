@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service op Verenigde Shell
 description: AEM as a Cloud Service op Verenigde Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 9ef6bda76667b08b5fb62b90acdc75002889d420
+source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '369'
 ht-degree: 1%
 
 ---
@@ -12,14 +12,11 @@ ht-degree: 1%
 # AEM as a Cloud Service op Verenigde Shell {#aem-as-a-cloud-service-on-unified-shell}
 
 >[!NOTE]
->Deze functie bevindt zich in het Prerelease-kanaal voor mei 2022.
+>Deze functie bevindt zich in het Prerelease-kanaal voor juli 2022.
 >
->Dit is bedoeld als inleiding op een nieuwe functie die in de release van juni 2022 algemeen beschikbaar zal zijn.
+>Dit is bedoeld als inleiding aan een nieuwe eigenschap die in de versie van Augustus 2022 algemeen beschikbaar zal zijn.
 >
 >Zie de [Prerelease Channel-documentatie](/help/release-notes/prerelease.md#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen.
-
->[!INFO]
->Vanwege een recent gevonden probleem is de Unified Shell-integratie met AEM as a Cloud Service tijdelijk uitgeschakeld. De functie wordt weer ingeschakeld zodra het probleem is opgelost. Dank u voor uw begrip.
 
 ## Overzicht {#overview}
 

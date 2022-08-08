@@ -3,9 +3,9 @@ title: 'Hoe kan ik een workflow toewijzen aan andere gebruikers, e-mail verzende
 description: Met Forms-gerichte workflows kunt u snel adaptieve, op Forms gebaseerde workflows maken. Met Adobe Sign kunt u documenten elektronisch ondertekenen, op formulieren gebaseerde bedrijfsprocessen maken, gegevens ophalen en verzenden naar meerdere gegevensbronnen en e-mailmeldingen verzenden
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
+source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
 workflow-type: tm+mt
-source-wordcount: '4939'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -140,6 +140,23 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 >
 >De opties om de Assign stap van de Taak als ontwerp te bewaren en de geschiedenis van de Assign stap van de Taak terug te winnen worden onbruikbaar gemaakt wanneer u een AEM werkschemamodel voor externe gegevensopslag vormt. In Postvak In is bovendien de optie voor opslaan uitgeschakeld.
 
+## Omzetten in stap PDF/A {#convert-pdfa}
+
+PDF/A is een archiefindeling voor langetermijnbehoud van de inhoud van het document, door de lettertypen in te sluiten en de compressie van het bestand ongedaan te maken. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. U kunt de ***Omzetten in PDF/A*** stap in een AEM Workflow om uw PDF documenten in PDF/A formaat om te zetten.
+
+De stap Omzetten in PDF/A heeft de volgende eigenschappen:
+
+**[!UICONTROL Input Document]**: Het invoerdocument kan relatief zijn ten opzichte van de lading, een absoluut pad hebben, kunnen worden opgegeven als lading of opgeslagen in een variabele van het gegevenstype Document.
+
+**[!UICONTROL Conversion Options]**: Met deze eigenschap worden instellingen opgegeven voor het converteren van PDF-documenten naar PDF/A-documenten. Onder dit tabblad zijn verschillende opties beschikbaar:
+* **[!UICONTROL Compliance]**: Hiermee geeft u de standaarden op waaraan het uitvoer-PDF/A-document moet voldoen.
+* **[!UICONTROL Result Level]**: Hiermee geeft u het resultaatniveau op als PassFail, Summary of Gedetailleerd voor de conversie-uitvoer.
+* **[!UICONTROL Color Space]**: Hiermee geeft u de vooraf gedefinieerde kleurruimte op die wordt gebruikt voor uitvoer van PDF/A-bestanden.
+* **[!UICONTROL Optional Content]**: Hiermee staat u toe dat specifieke grafische objecten en/of annotaties alleen zichtbaar zijn in uitvoer-PDF/A-document als aan een bepaalde set criteria wordt voldaan.
+
+**[!UICONTROL Output Documents]**: Hier geeft u de locatie op waar het uitvoerbestand moet worden opgeslagen. Het uitvoerbestand kan worden opgeslagen op een locatie die relatief is ten opzichte van de lading, de lading wordt overschreven, als de lading een bestand is of in een variabele van het gegevenstype Document.
+
+
 ## E-mailstap verzenden {#send-email-step}
 
 Gebruik de stap E-mail om een e-mail te verzenden, bijvoorbeeld een e-mail met een Document of Record, koppeling van een adaptief formulier <!-- , link of an interactive communication-->of met een bijgevoegd PDF-document. E-mailstapondersteuning verzenden [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de weergave, het kleurenschema en het gedrag van de e-mail definiëren.
@@ -197,6 +214,31 @@ Als u bijvoorbeeld het pad van een map opgeeft, worden alle bestanden die rechts
 **[!UICONTROL Save Generated Document of Record using below options]**: Geef de locatie op waar u een document van een recordbestand wilt bewaren. U kunt ervoor kiezen om de payload-map te overschrijven, Document of Record op een locatie in de payload-map te plaatsen of het Document of Record op te slaan in een variabele van het documentgegevenstype.
 
 **[!UICONTROL Locale]**: Geef de taal van het document met records op. Selecteren **[!UICONTROL Literal]** om de landinstelling te selecteren in een vervolgkeuzelijst of selecteer **[!UICONTROL Variable]** om de landinstelling op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String. U moet de landinstellingscode definiëren terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **nl_NL** voor het Engels en **fr_FR** voor Frans.
+
+## DDX-stap aanroepen {#invokeddx}
+
+XML (DDX) van de Beschrijving van het document is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX definieert een set bewerkingen die op een of meer invoerdocumenten kan worden toegepast om een of meer uitvoerdocumenten te genereren.  Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de ***DDX-stap aanroepen*** in een AEM Workflow voor het uitvoeren van diverse bewerkingen, zoals het samenstellen van documenten, het maken en wijzigen van Acrobat en XFA Forms, en andere bewerkingen die worden beschreven in [DDX-naslagdocumentatie](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+
+De aanroepende DDX-stap heeft de volgende eigenschappen:
+
+**[!UICONTROL Input Documents]**: Wordt gebruikt om eigenschappen van een invoerdocument in te stellen. Onder dit tabblad zijn verschillende opties beschikbaar:
+* **[!UICONTROL Specify DDX Using]**: Hiermee geeft u de invoerdocumenten op die relatief zijn ten opzichte van de payload, een absoluut pad hebben, kunnen worden opgegeven als een payload of kunnen worden opgeslagen in een variabele van het gegevenstype Document.
+* **[!UICONTROL Create Map from Payload]**: Voegt alle documenten onder de ladingsomslag aan de Kaart van het Document van de Input voor aan te halen API in Assembler. De knooppuntnaam voor elk document wordt gebruikt als sleutel in de kaart.
+* **[!UICONTROL Input Document’s Map]**: Option wordt gebruikt om meerdere items toe te voegen met **[!UICONTROL ADD]** knop. Elk item vertegenwoordigt de sleutel van het document in de kaart en de bron van het document.
+
+**[!UICONTROL Environment Options]**: Deze optie wordt gebruikt om verwerkingsinstellingen in te stellen voor het aanroepen van de API. Onder dit tabblad zijn verschillende opties beschikbaar:
+* **[!UICONTROL Validate Only]**: Hiermee wordt de geldigheid van het invoer-DDX-document gecontroleerd.
+* **[!UICONTROL Fail on Error]**: Controleert of de aanroepAPI-service mislukt, in het geval van een fout. De standaardwaarde is False.
+* **[!UICONTROL First Bates Number]**: Geeft het getal aan dat automatisch wordt verhoogd. Dit zelf-stijgende aantal wordt automatisch getoond op elke opeenvolgende pagina.
+* **[!UICONTROL Default Style]**: Hiermee stelt u de standaardstijl voor het uitvoerbestand in.
+
+>[!NOTE]
+>
+>Omgevingsopties blijven gesynchroniseerd met HTTP API&#39;s.
+
+**[!UICONTROL Output Documents]**: Hier geeft u de locatie op waar het uitvoerbestand moet worden opgeslagen. Onder dit tabblad zijn verschillende opties beschikbaar:
+* **[!UICONTROL Save Output in Payload]**: Hiermee slaat u uitvoerdocumenten op onder de payload-map of overschrijft u de payload als de payload een bestand is.
+* **[!UICONTROL Output Document’s Map]**: Hiermee geeft u de locatie op waar elk documentbestand expliciet moet worden opgeslagen door één item per document toe te voegen. Elk item vertegenwoordigt het document en de locatie waar het moet worden opgeslagen. Als er meerdere uitvoerdocumenten zijn, wordt deze optie gebruikt.
 
 ## De stap Service van het formuliergegevensmodel aanroepen {#invoke-form-data-model-service-step}
 

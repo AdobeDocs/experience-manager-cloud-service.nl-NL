@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 75621ba378d59bd36146b15995823c43c458d349
+source-git-commit: 2340c9416d90f7973109ba57c1769ae892049026
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,78 +25,92 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release (2022.6.0) is 30 juni 2022.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release (2022.7.0) is 8 augustus 2022.
 
-De volgende release (2022.7.0) is gepland voor 8 augustus 2022.
+De volgende release (2022.8.0) is gepland voor 25 augustus 2022.
 
 ## Video vrijgeven {#release-video}
 
-Bekijk de video Overzicht van de release van juni 2022 voor een overzicht van de functies die in de release van 2022.6.0 zijn toegevoegd:
+Bekijk de video Overzicht van de release van juli 2022 voor een overzicht van de functies die in de release van 2022.7.0 zijn toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/344308/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
 
 ## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
 
 ### Nieuwe functies in [!DNL Sites] {#sites-features}
 
-* Een nieuwe [gebruikersinterface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is nu beschikbaar voor beheerders van inhoud en auteurs van inhoud om efficiënt te beheren (acties zoals publiceren, ongedaan maken, kopiëren, verplaatsen, enz.), zoek-/filterfragmenten te maken voor gebruik in hoofdletters.
+* De [Console voor inhoudsfragment](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ondersteunt nu sneltoetsen.
 
-   ![Console voor inhoudsfragment](/help/release-notes/assets/cf-ui.png)
+* AEM als Cloud Service [voor het web geoptimaliseerde afbeeldingslevering](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) staat toe om paginasnelheid beduidend te verbeteren door formaten zoals WebP te leveren. Deze nieuwe service biedt ook flexibelere opties voor het vergroten en verkleinen en transformeren van afbeeldingen. Alle versies van de [Component Core Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) toestaan om deze service te gebruiken en afbeeldingen als WebP te leveren door te klikken op een optie in het beleid van de afbeeldingscomponent.
 
-* De nieuwe [Component Inhoudsopgave](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) werkt niet alleen met de Componenten van de Kern maar met alle componenten, automatisch teruggevend ToCs op inhoudspagina&#39;s. En omdat het server-kant wordt teruggegeven en volledig in het voorgeheugen ondergebracht door de verzender, is het ook efficiënt om te laden.
+* AEM personaliseringsactiviteiten kunnen nu gebruikmaken van fragmenten in plaats van onze oude aanbiedingen. Deze functie:
+   * biedt een migratiepad waarin AEM inhoud ervaringsfragmentaanbiedingen zou bevorderen in plaats van oudere bibliotheekaanbiedingen, zodat op de juiste wijze gevormde inhoud wordt geleverd die zich op de volgende schaaldatum aan de personalisatie aanpast.
+   * Hiermee voorkomt u dat auteurs van inhoud per ongeluk ongestileerde inhoud op hun site weergeven.
+   * staat het richten wijze van om het even welke component toe om in een ervaringsfragment (zowel JSON als de types van HTML) worden omgezet dat editable malplaatjes gebruikt.
+
+>[!NOTE]
+>
+>Bestaande verpersoonlijkingsactiviteiten die reeds gebruikmaken van verouderde aanbiedingen, kunnen dit blijven doen, maar nieuwe verpersoonlijkingsactiviteiten moeten worden gecreëerd als ervaringsfragmenten, aangezien dat de aanbevolen aanpak is.
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
-### Nieuwe functies in [!DNL Assets] {#assets-features}
+### Nieuwe functies beschikbaar in [!DNL Assets] prerelease-kanaal {#prerelease-features-assets}
 
-Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [onderscheid maken tussen kleuren in een afbeelding en deze als tags automatisch toepassen bij opname](../../assets/color-tag-images.md). Deze tags maken een verbeterde zoekervaring mogelijk op basis van de compositie van de afbeeldingskleur. U kunt het aantal kleuren binnen een bereik van 1 tot 40 configureren dat aan een afbeelding is gelabeld, zodat u later kunt zoeken naar afbeeldingen op basis van die kleuren.
+U kunt nu Adobe Experience Manager Assets configureren voor [het type elementen beperken dat gebruikers kunnen uploaden op basis van het MIME-type](/help/assets/configure-asset-upload-restrictions.md).
+
+![Beperkingen voor het uploaden van middelen](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies in [!DNL Forms] {#forms-features}
 
-* **[Adaptieve Forms integreren met Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**: U kunt nu een adaptief formulier configureren om bij verzending een Microsoft® Power Automate Cloud Flow uit te voeren. Met het geconfigureerde adaptieve formulier worden vastgelegde gegevens, bijlagen en het document met records naar Power Automate Cloud Flow verzonden voor verwerking. Het helpt u om een aangepaste ervaring op het gebied van gegevensvastlegging op te bouwen en tegelijk de kracht van Microsoft® Power Automate te benutten om bedrijfslogics rond vastgelegde gegevens te bouwen en de workflows van klanten te automatiseren.
+* **Ondersteuning voor toetsenbordinvoer voor scripthandtekeningen**: Adaptief Forms wordt steeds meer gebruikt op aanraakapparaten en een algemene vereiste is het ondersteunen van handtekeningen. Het ondertekenen van documenten op aanraakapparaten is een geaccepteerde manier geworden voor het ondertekenen van formulieren. Adaptive Forms biedt native ondersteuning voor scripthandtekeningen en Adobe Sign voor dergelijke gebruiksgevallen. Nu kunt u, samen met andere reeds ondersteunde opties, ook het toetsenbord gebruiken om handtekeningen in een adaptief formulier te krabbelen. Het helpt ook toegankelijkheidscompatibiliteit te verbeteren.
 
-* **Wizard voor het maken van een adaptief formulier**: Met een gebruiksvriendelijke wizard kunt u snel Adaptive Forms ontwerpen. De wizard biedt een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken.
+![Ondersteuning voor toetsenbordinvoer voor scripthandtekeningen op iPhone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
-   ![Wizard voor het maken van een adaptief formulier](/help/release-notes/assets/wizard.png)
+* **De wizard Adaptieve Forms gebruiken in de lokale taal**: U kunt de wizard gebruiken in de taal van uw keuze. Het biedt nu ondersteuning voor alle talen die door Adobe Experience Manager worden ondersteund.
+
+### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
+
+<!-- * **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) -->
+
+* **Invou - Een stap AEM workflow**: XML (DDX) van de Beschrijving van het document is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX-documenten zijn sjablonen voor de documenten en beschrijven de gewenste kenmerken van brondocumenten die in de resulterende documenten moeten worden weergegeven. Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de Invoke stap en de Werkstroom van de AEM gebruiken om diverse verrichtingen uit te voeren, zoals het assembleren van het demonteren van documenten, het creëren van en het wijzigen van Acrobat en XFA Forms, en andere die verrichtingen in [DDX-referentie](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentatie.
+
+* **Omzetten in PDF/A - Een stap voor AEM workflow**: PDF/A is een archiefindeling voor langdurige bewaring van de inhoud van het document, alle lettertypen worden ingesloten en het bestand wordt niet gecomprimeerd. Nu kunt u met de stap Omzetten in PDF/A en AEM Workflow uw documenten of bestanden in elke indeling converteren naar PDF/A-indeling.
+
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* Pagina met eigenschappen van cockpit-eigenschappen voor nieuwe producten voor een beter en vereenvoudigd overzicht
+* Verrijking van productcatalogus ondersteunt nu AEM pagina&#39;s. Hierdoor kunnen auteurs pagina - productkoppeling beheren.
 
-![overzicht van de eigenschappen van productcockpit](/help/assets/CIF/product_cockpit_properties_overview.png)
-
-* Verbeterde compatibiliteit en robuustheid voor connectors van andere leveranciers op I/O Runtime
-
-* Verbeterde ondersteuning voor GQL Client configuration overwrites (bijv. aangepast caching gedrag instellen)
-
-* Meerdere eindpunten voor handel worden nu offline ondersteund en kunnen worden geconfigureerd via Cloud Manager. Meer informatie vindt u op de CIF-blog [hier](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
-
+* Verschillende verbeteringen voor CIF Core-componenten
 
 ### Bugfixes {#bug-fixes-cif}
 
-* In het veld Meerwaardeproductkiezer worden de tweede en aanvullende producten als ongeldig weergegeven
+* Aanmeldingstoken toevoegen aan prijsophaalbewerkingen op de client
 
-* De productkiezer wordt soms verborgen achter componenten
-
-## Invoegtoepassing demo&#39;s referentie {#cloud-services-demos}
-
-### Nieuwe functies {#what-is-new-demos}
-
-* Nieuwe WKND-sjabloon voor Inhoud en Handel die WKND uitbreidt met een E2E-ervaring voor winkelen met productcatalogus, winkelwagentje, kassa en mijnAccount. Dit malplaatje gebruikt CIF en zijn Componenten van de Kern van CIF, zodat moet u ook toe:voegen-op CIF installeren. Meer informatie vindt u op de CIF-blog [hier](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
-
-![WKND-winkel](/help/assets/CIF/wknd_shop.png)
-
-![WKND pdp](/help/assets/CIF/wknd_pdp.png)
+* Onjuiste paginacomponent in de datalaag
 
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* Zoals vermeld in de versienota&#39;s van mei (2022.5.0), voegt de &quot;boom&quot;optie onder het scherm van de replicatieagent admin toe **Distribueren** is verwijderd. Pakketten met een boomstructuur van inhoud moeten in plaats daarvan worden gerepliceerd met [Publicatie beheren](/help/operations/replication.md#manage-publication) of de [Inhoudsstructuur publiceren](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
+* De [Browser voor opslagplaats](/help/implementing/developing/tools/repository-browser.md) heeft nu een veld voor padinvoer, zodat u rechtstreeks naar een specifieke map in de hiërarchie van de opslagplaats kunt gaan
+* SCD (Sling Content Distribution) ondersteunt nu een expliciete actie &#39;invalidatie&#39; om inhoud ongeldig te maken zonder dat die inhoud wordt gepubliceerd. Zie de [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) voor meer informatie.
+* mod_macro is nu beschikbaar in AEM as a Cloud Service. Zie [deze tabel](/help/implementing/dispatcher/disp-overview.md) voor een lijst met ondersteunde Apache-modules.
+
+### Verbeteringen AEM as a Cloud Service SDK Dispatcher Tools {#dispatcher-tools-enhancements}
+
+* Apache kan worden gestart met `update_sdk.sh` script, dat automatisch alle volgende wijzigingen in de configuratie apache en dispatcher laadt en valideert, waardoor de ontwikkelsnelheid wordt verbeterd. Alleen ondersteund voor de flexibele modus van de verzendingsprogramma&#39;s. Zie ook [Fouten opsporen in uw Apache- en Dispatcher-configuratie](/help/implementing/dispatcher/validation-debug.md#automatic-loading) voor meer informatie over automatisch laden en valideren.
+* De lokale configuratie van apache/verzender zal veranderingen in wolkenmilieu&#39;s nauwkeuriger volgen, die gelijkheid tussen de twee milieu&#39;s verhogen.
+
+### Nieuwe functies beschikbaar in [!DNL Experience Manager] prerelease-kanaal {#prerelease-features-foundation}
+
+* AEM as a Cloud Service is nu geïntegreerd met Verenigde Shell om de gebruikerservaring te verbeteren en het met alle andere toepassingen van Experience Cloud te verenigen. Zie [AEM as a Cloud Service op Verenigde Shell](/help/overview/aem-cloud-service-on-unified-shell.md) voor meer informatie .
 
 ## Cloud Manager {#cloud-manager}
 

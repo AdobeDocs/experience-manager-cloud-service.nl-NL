@@ -2,10 +2,10 @@
 title: Release-aantekeningen voor Adobe Experience Manager (AEM) as a Cloud Service.
 description: Release-aantekeningen voor Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 57e1f39394f501b8fc2ab8ff5f7d12f6365016e9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '616'
+ht-degree: 31%
 
 ---
 
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2022,6,0 |
+| Versie | 2022,7,0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 
 ## Hoe te om voor een Versie voor te bereiden {#how-to-prepare}
 
-Met het model voor continue afgifte in [!DNL Adobe Experience Manager] as a Cloud Service wordt de toepassing automatisch bijgewerkt. Er zijn twee soorten updates, eigenschapversies en kritieke updates:
+Met het model voor continue afgifte in [!DNL Adobe Experience Manager] as a Cloud Service wordt de toepassing automatisch bijgewerkt. Er zijn twee soorten updates, eigenschapversies en onderhoudsversies:
 
 * De versies van de eigenschap worden gedaan met een voorspelbare maandelijkse frequentie en zijn gericht op nieuwe mogelijkheden en productinnovaties.
-* Kritieke updates worden vaak uitgevoerd en zijn gericht op beveiligingsupdates, foutoplossingen en prestatieverbeteringen. Dit zorgt ervoor dat [!DNL Adobe Experience Manager] as a Cloud Service is altijd up-to-date met om het even welke kritieke moeilijke situaties.
+* De versies van het onderhoud worden gedaan vaak en zijn geconcentreerd op veiligheidsupdates, insectenmoeilijke situaties, en prestatiesverhogingen. Dit zorgt ervoor dat [!DNL Adobe Experience Manager] as a Cloud Service is altijd up-to-date met om het even welke kritieke moeilijke situaties.
 
 Naast de snelheid van de innovatie, [!DNL Adobe Experience Manager] as a Cloud Service biedt ook de flexibiliteit om de volgende functies een volledige maand van tevoren voor te vertonen voordat de functies in productie worden genomen. Hierdoor kunt u de impact van een aanstaande release op hun organisatie beoordelen door de functies in uw eigen aangepaste omgeving te testen en de interne gebruikers ruim van tevoren op te leiden/voor te bereiden.
 

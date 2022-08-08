@@ -2,16 +2,16 @@
 title: Sneltoetsen voor paginabewerking
 description: In AEM zijn verschillende sneltoetsen beschikbaar, waaronder enkele voor paginabewerking
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Sneltoetsen voor paginabewerking {#keyboard-shortcuts-when-editing-pages}
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op de [gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op de [gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), en met name de [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
 >
 >Wanneer de gebruiker in de voorvertoningsmodus begint te communiceren met de pagina, wordt de `Ctrl-Shift-m` sneltoets is niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar als de gebruiker op de bovenste editor-balk klikt of naar de modus Bewerken teruggaat.
 
-Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de opdracht [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de opdracht [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), en met name de [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >

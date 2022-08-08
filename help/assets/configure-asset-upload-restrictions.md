@@ -1,0 +1,55 @@
+---
+title: Beperkingen voor het uploaden van middelen configureren
+description: 'Configureer Adobe Experience Manager Assets om het type elementen te beperken dat gebruikers kunnen uploaden op basis van het MIME-type. Zo voorkomt u ongewenste uploads in de gewenste indeling en schadelijke bestanden. '
+source-git-commit: 3be29e4f76b53b4be7815e50ec42c627fec84b68
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
+
+---
+
+# Beperkingen voor het uploaden van middelen configureren {#configure-asset-upload-restrictions}
+
+U kunt Adobe Experience Manager Assets zodanig configureren dat het type elementen dat gebruikers kunnen uploaden, wordt beperkt op basis van het MIME-type.
+
+>[!IMPORTANT]
+>
+>Standaard kunnen gebruikers met Experience Manager Assets elementen van alle MIME-typen uploaden. U kunt de instellingen echter zo configureren dat gebruikers alleen bestanden van bepaalde MIME-typen kunnen uploaden.
+
+## Vereisten {#prerequisites-asset-upload-restrictions}
+
+U moet beheerdersrechten hebben om beperkingen voor het uploaden van elementen te configureren.
+
+## Beperkingen toepassen voor het uploaden van middelen {#apply-restrictions-asset-uploadsssssss}
+
+Om te vormen [!DNL Experience Manager] om gebruikers te beperken tot het uploaden van bestanden van specifieke MIME-typen:
+
+1. Ga naar **[!UICONTROL Tools > Assets > Assets Configurations]**.
+
+1. Klik op **[!UICONTROL Upload Restrictions]**.
+
+1. Klikken **[!UICONTROL Add]** om de toegestane MIME-typen te definiëren.
+
+1. Geef het MIME-type op in het tekstvak. U kunt op **[!UICONTROL Add]** nogmaals om meer toegestane MIME-typen op te geven. U kunt ook op ![verwijderpictogram](assets/delete-icon.svg) om een MIME-type uit de lijst te verwijderen.
+
+1. Klik op **[!UICONTROL Save]**.
+
+**Voorbeeld 1: Uploaden van alle afbeeldingen en PDF-bestanden naar Experience Manager Assets toestaan**
+
+Voer de volgende instellingen uit om het uploaden van afbeeldingen in alle indelingen en PDF-bestanden naar Experience Manager Assets toe te staan:
+
+![Beperkingen voor het uploaden van middelen](assets/asset-upload-restrictions.png)
+
+`image/*` aangezien het MIME-type het uploaden van afbeeldingen in alle indelingen toestaat. `application/pdf` aangezien het MIME-type het uploaden van PDF-bestanden naar Experience Manager Assets toestaat.
+
+**Voorbeeld 2: Uploaden van specifieke afbeeldingsindelingen naar Experience Manager Assets toestaan**
+
+Voer de volgende instellingen uit om specifieke afbeeldingsindelingen toe te voegen aan de toegestane MIME-typen en het uploaden van alle andere elementindelingen te beperken:
+
+![Beperkingen op activa](assets/asset-restrictions.png)
+
+Op basis van de instellingen in de afbeelding kunt u afbeeldingen in de indelingen .JPG, .PNG en .GIF uploaden naar Experience Manager Assets.
+
+
+
+
