@@ -4,9 +4,9 @@ description: Leer hoe AEM sitethema's kunnen worden gebruikt om de stijl en het 
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 62ae8bf09e616135cbd5498d1d083a74bb6b0e2a
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Sitethema&#39;s zijn eenvoudig pakketten met een logische structuur die duidelij
 
 ## Standaardsitethema {#standard-site-theme}
 
-Adobe biedt een verwijzingsthema voor tips en trucs dat u kunt gebruiken als basis voor het maken van uw eigen thema. [Het standaardthema van de Plaats is beschikbaar op GitHub.](https://github.com/adobe/aem-site-template-standard-theme-e2e)
+Adobe biedt een verwijzingsthema voor tips en trucs dat u kunt gebruiken als basis voor het maken van uw eigen thema. [Het standaardthema van de Plaats is beschikbaar op GitHub](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
 
 ## Sitethema&#39;s ontwikkelen {#developing-themes}
 
