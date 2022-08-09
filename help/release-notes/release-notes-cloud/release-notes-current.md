@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 0ae79facb4233988db4a649b8e79ca3041832584
+source-git-commit: a3e18349c3cf2240cc68275a3862abeb75ea372a
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Bekijk de video Overzicht van de release van juli 2022 voor een overzicht van de
 
 ### Nieuwe functies in [!DNL Sites] {#sites-features}
 
-* De [Console voor inhoudsfragment](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ondersteunt nu sneltoetsen.
+* De [Console voor inhoudsfragment](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now supports [sneltoetsen](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 * AEM als Cloud Service [voor het web geoptimaliseerde afbeeldingslevering](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) staat toe om paginasnelheid beduidend te verbeteren door formaten zoals WebP te leveren. Deze nieuwe service biedt ook flexibelere opties voor het vergroten en verkleinen en transformeren van afbeeldingen. Alle versies van de [Component Core Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) toestaan om deze service te gebruiken en afbeeldingen als WebP te leveren door te klikken op een optie in het beleid van de afbeeldingscomponent.
 
