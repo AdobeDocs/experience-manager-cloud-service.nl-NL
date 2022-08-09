@@ -1,13 +1,13 @@
 ---
 title: Wat is een headless CMS?
 description: Meer informatie over Headless CMS. Hoe werken ze? Wat zijn de alternatieven en verschillen? Waarom zou u een Headless CMS willen gebruiken?
-source-git-commit: 35064ef7d9a4a3f2368667be02b11840b29d56f0
+exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
-
 
 # Wat is een headless CMS? {#what-is-a-headless-cms}
 
@@ -31,11 +31,7 @@ Zeer krachtig, waardoor u de volledige controle hebt over de inhoud en opmaak, m
 
 Met een systeem voor inhoudsbeheer zonder kop zijn back-end en front-end nu ontkoppeld.
 
-Het koploze deel is de achtergrond van de inhoud.
-
-* &quot;*Een CMS, een systeem voor inhoudsbeheer zonder kop, is een back-end alleen inhoudsbeheersysteem (CMS) dat vanaf de basis is ontwikkeld als een opslagplaats voor inhoud die inhoud toegankelijk maakt via een API voor weergave op elk apparaat.*
-
-   Zie [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+Het onderdeel zonder kop is de achterkant van de inhoud, omdat een CMS (headless Content Management System) een back-end alleen inhoudsbeheersysteem is dat expliciet is ontworpen en gebouwd als een opslagplaats voor inhoud die inhoud toegankelijk maakt via een API, voor weergave op elk apparaat.
 
 De front-end, die onafhankelijk van elkaar wordt ontwikkeld en onderhouden, haalt inhoud van de headless backend op met behulp van een Content Delivery API, typisch in formaat JSON. Dit kan bijvoorbeeld een React- of een Angular-toepassing (toepassing voor één pagina (SPA)) zijn.
 
