@@ -3,9 +3,9 @@ title: 'Hoe kan ik een workflow toewijzen aan andere gebruikers, e-mail verzende
 description: Met Forms-gerichte workflows kunt u snel adaptieve, op Forms gebaseerde workflows maken. Met Adobe Sign kunt u documenten elektronisch ondertekenen, op formulieren gebaseerde bedrijfsprocessen maken, gegevens ophalen en verzenden naar meerdere gegevensbronnen en e-mailmeldingen verzenden
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
+source-git-commit: a8dae80f79e32117341519b31c389f8fc30b5957
 workflow-type: tm+mt
-source-wordcount: '5523'
+source-wordcount: '5557'
 ht-degree: 0%
 
 ---
@@ -168,11 +168,11 @@ De stap Omzetten in PDF/A heeft de volgende eigenschappen:
 
 **[!UICONTROL Input Document]**: Het invoerdocument kan relatief zijn ten opzichte van de lading, een absoluut pad hebben, kunnen worden opgegeven als lading of opgeslagen in een variabele van het gegevenstype Document.
 
-**[!UICONTROL Conversion Options]**: Met deze eigenschap worden instellingen opgegeven voor het converteren van PDF-documenten naar PDF/A-documenten. Onder dit tabblad zijn verschillende opties beschikbaar:
-* **[!UICONTROL Compliance]**: Hiermee geeft u de standaarden op waaraan het uitvoer-PDF/A-document moet voldoen.
+**[!UICONTROL Conversion Options]**: Met deze eigenschap worden de instellingen opgegeven voor het converteren van PDF-documenten naar PDF/A-documenten. Onder dit tabblad zijn verschillende opties beschikbaar:
+* **[!UICONTROL Compliance]**: Hiermee wordt de standaard opgegeven waaraan het PDF/A-uitvoerdocument moet voldoen. Het steunt verschillende normen van PDF zoals PDF/A-1b, PDF/A-2b of PDF/A-3b.
 * **[!UICONTROL Result Level]**: Hiermee geeft u het resultaatniveau op als PassFail, Summary of Gedetailleerd voor de conversie-uitvoer.
-* **[!UICONTROL Color Space]**: Hiermee geeft u de vooraf gedefinieerde kleurruimte op die wordt gebruikt voor uitvoer van PDF/A-bestanden.
-* **[!UICONTROL Optional Content]**: Hiermee staat u toe dat specifieke grafische objecten en/of annotaties alleen zichtbaar zijn in uitvoer-PDF/A-document als aan een bepaalde set criteria wordt voldaan.
+* **[!UICONTROL Color Space]**: Hiermee wordt de vooraf gedefinieerde kleurruimte opgegeven als S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED of SWOP, die kan worden gebruikt voor uitvoer van PDF/A-bestanden.
+* **[!UICONTROL Optional Content]**: Toestaan dat specifieke grafische objecten en/of annotaties alleen zichtbaar zijn in uitvoer-PDF/A-document als aan een bepaalde set criteria wordt voldaan.
 
 **[!UICONTROL Output Documents]**: Hier geeft u de locatie op waar het uitvoerbestand moet worden opgeslagen. Het uitvoerbestand kan worden opgeslagen op een locatie die relatief is ten opzichte van de lading, de lading wordt overschreven, als de lading een bestand is of in een variabele van het gegevenstype Document.
 
@@ -247,13 +247,13 @@ XML (DDX) van de Beschrijving van het document is een verklarende prijsverhoging
 De aanroepende DDX-stap heeft de volgende eigenschappen:
 
 **[!UICONTROL Input Documents]**: Wordt gebruikt om eigenschappen van een invoerdocument in te stellen. Onder dit tabblad zijn verschillende opties beschikbaar:
-* **[!UICONTROL Specify DDX Using]**: Hiermee geeft u de invoerdocumenten op die relatief zijn ten opzichte van de payload, een absoluut pad hebben, kunnen worden opgegeven als een payload of kunnen worden opgeslagen in een variabele van het gegevenstype Document.
-* **[!UICONTROL Create Map from Payload]**: Voegt alle documenten onder de ladingsomslag aan de Kaart van het Document van de Input voor aan te halen API in Assembler. De knooppuntnaam voor elk document wordt gebruikt als sleutel in de kaart.
+* **[!UICONTROL Specify DDX Using]**: Hiermee geeft u het invoerdocument op dat betrekking heeft op de lading, een absoluut pad heeft, als lading kan worden opgegeven of in een variabele van het gegevenstype Document kan worden opgeslagen.
+* **[!UICONTROL Create Map from Payload]**: Voeg alle documenten onder de ladingsomslag aan de Kaart van het Document van de Input voor aan te halen API in Assembler. De knooppuntnaam voor elk document wordt gebruikt als sleutel in de kaart.
 * **[!UICONTROL Input Document’s Map]**: Option wordt gebruikt om meerdere items toe te voegen met **[!UICONTROL ADD]** knop. Elk item vertegenwoordigt de sleutel van het document in de kaart en de bron van het document.
 
 **[!UICONTROL Environment Options]**: Deze optie wordt gebruikt om verwerkingsinstellingen in te stellen voor het aanroepen van de API. Onder dit tabblad zijn verschillende opties beschikbaar:
 * **[!UICONTROL Validate Only]**: Hiermee wordt de geldigheid van het invoer-DDX-document gecontroleerd.
-* **[!UICONTROL Fail on Error]**: Controleert of de aanroepAPI-service mislukt, in het geval van een fout. De standaardwaarde is False.
+* **[!UICONTROL Fail on Error]**: Booleaanse waarde die aangeeft of de API-service aanroepen mislukt, in het geval van een fout of niet. De standaardwaarde is False.
 * **[!UICONTROL First Bates Number]**: Geeft het getal aan dat automatisch wordt verhoogd. Dit zelf-stijgende aantal wordt automatisch getoond op elke opeenvolgende pagina.
 * **[!UICONTROL Default Style]**: Hiermee stelt u de standaardstijl voor het uitvoerbestand in.
 
