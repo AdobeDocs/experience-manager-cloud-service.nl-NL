@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f947a328897387d37e2092580e6992f14a344eb2
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -109,7 +109,7 @@ U kunt nu Adobe Experience Manager Assets configureren voor [het type elementen 
 
 ### Verbeteringen AEM as a Cloud Service SDK Dispatcher Tools {#dispatcher-tools-enhancements}
 
-* Apache kan worden gestart met `update_sdk.sh` script, dat automatisch alle volgende wijzigingen in de configuratie apache en dispatcher laadt en valideert, waardoor de ontwikkelsnelheid wordt verbeterd. Alleen ondersteund voor de flexibele modus van de verzendingsprogramma&#39;s. Zie ook [Fouten opsporen in uw Apache- en Dispatcher-configuratie](/help/implementing/dispatcher/validation-debug.md#automatic-loading) voor meer informatie over automatisch laden en valideren.
+* Apache kan worden gestart met `docker_run_hot_reload.sh` script, dat automatisch alle volgende wijzigingen in de configuratie apache en dispatcher laadt en valideert, waardoor de ontwikkelsnelheid wordt verbeterd. Alleen ondersteund voor de flexibele modus van de verzendingsprogramma&#39;s. Zie ook [Fouten opsporen in uw Apache- en Dispatcher-configuratie](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) voor meer informatie over automatisch opnieuw laden en valideren.
 * De lokale configuratie van apache/verzender zal veranderingen in wolkenmilieu&#39;s nauwkeuriger volgen, die gelijkheid tussen de twee milieu&#39;s verhogen.
 
 ### Nieuwe functies beschikbaar in [!DNL Experience Manager] prerelease-kanaal {#prerelease-features-foundation}

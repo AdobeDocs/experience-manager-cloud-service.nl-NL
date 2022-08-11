@@ -3,7 +3,7 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Validatie en foutopsporing met Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 1%
@@ -231,7 +231,7 @@ Tijdens een implementatie van Cloud Manager kunt u de `httpd -t` syntaxiscontrol
 
 >[!NOTE]
 >
->Zie de [Automatisch laden en valideren](#automatic-loading) voor een efficiënt alternatief voor het uitvoeren `validate.sh` na elke configuratiewijziging.
+>Zie de [Automatisch opnieuw laden en valideren](#automatic-loading) voor een efficiënt alternatief voor het uitvoeren `validate.sh` na elke configuratiewijziging.
 
 ### Fase 1 {#first-phase}
 
@@ -422,7 +422,7 @@ Wanneer het runnen van Verzender plaatselijk, worden de logboeken gedrukt direct
 
 Logbestanden voor cloudomgevingen worden weergegeven via de logbestandsservice die beschikbaar is in Cloud Manager.
 
-### Automatisch laden en valideren {#automatic-loading}
+### Automatisch opnieuw laden en valideren {#automatic-reloading}
 
 >[!NOTE]
 >
