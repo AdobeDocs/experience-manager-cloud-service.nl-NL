@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2022.7.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.7.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.8.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 9f76f77365c0e9b2986e9bb3560bc039e0ca7961
+source-git-commit: 0476fda614ce693222ae2e2fb62ea2f84243f80c
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '187'
 ht-degree: 1%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2022.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.7.0 in AEM as a Cloud Service.
+Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.8.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,15 +21,16 @@ Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.7
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2022.7.0 in AEM as a Cloud Service is 8 augustus 2022. De volgende release is gepland voor 11 augustus 2022.
+De releasedatum voor Cloud Manager versie 2022.8.0 in AEM as a Cloud Service is 11 augustus 2022. De volgende release is gepland voor 9 september 2022.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Gebruikers van Cloud Manager kunnen nu nuttige videozelfstudies openen via de **Welkom** op de landingspagina op elk gewenst moment.
-* De popover op de **[Inhoud herstellen](/help/operations/backup.md)** tabblad van de pagina met omgevingsdetails bevat nu een handige lijst met it-opdrachten waarmee de gebruiker wijzigingen lokaal kan bekijken.
+* Er is een vernieuwde interface-ervaring in het dialoogvenster [voeg omgevingsworkflow toe.](/help/implementing/cloud-manager/manage-environments.md)
+* [Het AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) in Cloud Manager is bijgewerkt naar versie 37.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* Feedbackberichten in de gebruikersinterface met betrekking tot het maken van nieuwe lokale subaccounts tijdens het maken van programma&#39;s zijn verbeterd.
-* Gebruikers kunnen de aangepaste UI-testlogboeken nu downloaden via de interface van Cloud Manager.
-* Een probleem werd opgelost waar na de goedkeuring van een frontend pijpleiding geen vraag werd gemaakt om de plaatsingsstap uit te voeren.
+* Het geval waarin Nieuwe Relic-gebruikers niet zijn gemaakt of verwijderd in de gebruikersinterface van Cloud Manager is gecorrigeerd.
+* Bepaalde gevallen van onregelmatige fouten bij het aanmaken van de opslagplaats zijn veerkrachtiger gemaakt.
+* Zeldzame voorvallen van VSTS org opstellingsfouten worden nu verminderd toe te schrijven aan geïntroduceerde herpogingen.
+* Verbeterde validatie tijdens het maken van nieuwe eBay-subaccounts voorkomt nu bepaalde fouten.
