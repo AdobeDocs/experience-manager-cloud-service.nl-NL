@@ -2,8 +2,7 @@
 title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.5.0
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.5.0
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: f84327096951772e1bed8656334841e1292d6bcf
+source-git-commit: 6196f3fc67dbcfe03a71bb6a0796dd5d1d0f8546
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 2%
@@ -53,4 +52,4 @@ De releasedatum voor Cloud Acceleration Manager is 2 juni 2022.
 
 ### Wat is er nieuw? {#what-is-new-cam}
 
-* Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om inhoudoverdrachten te starten en te beheren om inhoud van een AEM van een klant (On-premise of Adobe Managed Services) te verplaatsen naar AEM as a Cloud Service als onderdeel van een migratieproject. Zie [Inhoudsoverdrachtkaart gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) voor meer informatie .
+* Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om inhoudoverdrachten te starten en te beheren om inhoud van een AEM van de klant (On-premise of Adobe Managed Services) te verplaatsen naar AEM as a Cloud Service als onderdeel van een migratieproject. Zie [Inhoudsoverdrachtkaart gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) voor meer informatie .
