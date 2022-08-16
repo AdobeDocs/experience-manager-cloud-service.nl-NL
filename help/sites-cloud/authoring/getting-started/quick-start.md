@@ -2,7 +2,7 @@
 title: Handleiding Snel aan de slag met de authoring van pagina's
 description: Een snelle gids op hoog niveau waarmee u pagina-inhoud kunt gaan ontwerpen
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 4%
@@ -244,13 +244,13 @@ Deze acties kunnen allemaal worden geactiveerd door:
 
    Afhankelijk van uw handeling:
 
-   * Kopiëren:
+   * [Kopiëren](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
       * Vervolgens moet u naar de nieuwe locatie navigeren en plakken.
-   * Verplaatsen:
+   * [Verplaatsen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
       * De wizard wordt geopend om de gegevens te verzamelen die nodig zijn om de pagina te verplaatsen. Volg de aanwijzingen op het scherm.
-   * Verwijderen:
+   * [Verwijderen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
       * U wordt gevraagd de actie te bevestigen.
    >[!NOTE]
