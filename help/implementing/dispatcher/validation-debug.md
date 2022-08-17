@@ -3,9 +3,9 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Validatie en foutopsporing met Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
+source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2655'
 ht-degree: 1%
 
 ---
@@ -426,7 +426,7 @@ Logbestanden voor cloudomgevingen worden weergegeven via de logbestandsservice d
 
 >[!NOTE]
 >
->Vanwege een beperking van het Windows-besturingssysteem is deze functie alleen beschikbaar voor Linux-gebruikers.
+>Vanwege een beperking van het Windows-besturingssysteem is deze functie alleen beschikbaar voor macOS- en Linux-gebruikers.
 
 In plaats van lokale validatie uit te voeren (`validate.sh`) en het starten van de dockercontainer (`docker_run.sh`) telkens als de configuratie wordt gewijzigd, kunt u anders in werking stellen `docker_run_hot_reload.sh` script.  Het script controleert op wijzigingen in de configuratie en laadt deze automatisch opnieuw en voert de validatie opnieuw uit. Met deze optie kunt u veel tijd besparen tijdens het opsporen van fouten.
 
