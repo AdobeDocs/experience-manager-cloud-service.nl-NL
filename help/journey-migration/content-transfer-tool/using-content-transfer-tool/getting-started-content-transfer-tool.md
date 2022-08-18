@@ -2,7 +2,7 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
+source-git-commit: 8e1cc042da37fd246a5048e67fc04cbacfa69775
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 6%
@@ -35,7 +35,7 @@ Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van
 De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u een extractie wilt uitvoeren, moeten de volgende eindpunten toegankelijk zijn vanaf de instantie die AEM uitvoert:
 
 * Het doel AEM de as a Cloud Service omgeving: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* De Azure-opslagservice: `*.blob.core.windows.net`
+* De Azure-opslagservice: `casstorageprod.blob.core.windows.net`
 * Het eindpunt van de Toewijzing van de Gebruiker IO: `usermanagement.adobe.io`
 
 Om connectiviteit aan het doel AEM as a Cloud Service milieu te testen, geef het volgende cURL bevel van shell van de broninstantie uit (vervang `program_id`, `environment_id`, en `migration_token`):
