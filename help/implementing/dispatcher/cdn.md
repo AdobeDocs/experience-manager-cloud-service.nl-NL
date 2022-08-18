@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 472a4311372ce9a01730f7ced6d4b26018aae4b9
+source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1042'
 ht-degree: 8%
 
 ---
@@ -70,6 +70,8 @@ Configuratieinstructies:
    * Dit is nodig zodat de Adobe CDN de bron van de verzoeken kan bevestigen en het `X-Forwarded-*` kopteksten naar de AEM toepassing. Bijvoorbeeld:`X-Forwarded-For` wordt gebruikt om cliëntIP te bepalen. Zo, wordt het de verantwoordelijkheid van de vertrouwde op bezoeker (d.w.z. klant-beheerde CDN) om de juistheid van te verzekeren `X-Forwarded-*` kopteksten (zie onderstaande opmerking).
    * De toegang tot de ingangen van Adobe CDN kan optioneel worden geblokkeerd wanneer een `X-AEM-Edge-Key` is niet aanwezig. Gelieve te informeren Adobe als u directe toegang tot de ingangen van Adobe CDN (moet worden geblokkeerd) nodig hebt.
 
+Zie de [Voorbeeld van CDN-leveranciersconfiguraties](#sample-configurations) sectie voor configuratievoorbeelden van belangrijke verkopers CDN.
+
 Alvorens levend verkeer goed te keuren, zou u met Adobe klantensteun moeten bevestigen dat het eind-aan-eind verkeer dat correct verplettert functioneert.
 
 Nadat u de `X-AEM-Edge-Key`, kunt u testen dat het verzoek correct als volgt wordt verpletterd.
@@ -99,6 +101,25 @@ Wanneer u uw eigen CDN gebruikt, hoeft u de domeinen en certificaten niet te ins
 Er is potentieel een kleine prestatieshit toe te schrijven aan de extra hop, hoewel de hop van klant CDN aan AEM beheerde CDN waarschijnlijk efficiënt zal zijn.
 
 Houd er rekening mee dat deze CDN-configuratie van de klant wordt ondersteund voor de publicatielijst, maar niet vóór de auteurslaag.
+
+### Voorbeeld van CDN-leveranciersconfiguraties {#sample-configurations}
+
+Hieronder worden verschillende configuratievoorbeelden van een aantal toonaangevende CDN-leveranciers weergegeven.
+
+**Akamai**
+
+![Akamai1](assets/akamai1.png "Akamai")
+![Akamai2](assets/akamai2.png "Akamai")
+
+**Amazon CloudFront**
+
+![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
+![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
+
+**Cloudflare**
+
+![Cloudflare1](assets/cloudflare1.png "Cloudflare")
+![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
 ## Geolocatie-headers {#geo-headers}
 
