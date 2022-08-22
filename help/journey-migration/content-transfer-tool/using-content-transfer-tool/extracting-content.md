@@ -2,7 +2,7 @@
 title: Inhoud uit bron extraheren
 description: Inhoud uit bron extraheren
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 5075482f48bf9aaf2c7386af74c14a50b4469840
+source-git-commit: e9af2bee0867b6787cd25f4af80cf8bf6a4d706a
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 19%
@@ -32,19 +32,20 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
-   >!![IMPORTANT]
-   Zorg ervoor dat de Extractiesleutel geldig is en niet dicht bij zijn vervaldatum is. Als deze bijna verlopen is, kunt u de Extractietoets vernieuwen door de migratieset te selecteren en op Eigenschappen te klikken. Klikken op **Vernieuwen**. Hiermee gaat u naar Cloud Acceleration Manager waar u kunt klikken op **Extractietoets kopiëren**. Telkens wanneer u klikt op **Extractietoets kopiëren**Er wordt een nieuwe extractiesleutel gegenereerd die 14 dagen geldig is vanaf het moment waarop deze is gemaakt.
-   [!afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >[!IMPORTANT]
+   >
+   >Zorg ervoor dat de Extractiesleutel geldig is en niet dicht bij zijn vervaldatum is. Als deze bijna verlopen is, kunt u de Extractietoets vernieuwen door de migratieset te selecteren en op Eigenschappen te klikken. Klikken op **Vernieuwen**. Hiermee gaat u naar Cloud Acceleration Manager waar u kunt klikken op **Extractietoets kopiëren**. Telkens wanneer u klikt op **Extractietoets kopiëren**Er wordt een nieuwe extractiesleutel gegenereerd die 14 dagen geldig is vanaf het moment waarop deze is gemaakt.
+   >[!afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. Hiermee wordt het dialoogvenster Extractie weergegeven. Klikken op **Extraheren** om de extractiefase te starten.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
 
    >[!NOTE]
-U kunt de container tijdens de extractiefase overschrijven. Indien **Stapelcontainer overschrijven** is uitgeschakeld, kan het extracties versnellen voor volgende migraties waarbij de paden van de inhoud of de instellingen van versies niet zijn gewijzigd. Als de instellingen voor de inhoudspaden of de include-versies echter zijn gewijzigd, **Stapelcontainer overschrijven** moet zijn ingeschakeld.
+   >U kunt de container tijdens de extractiefase overschrijven. Indien **Stapelcontainer overschrijven** is uitgeschakeld, kan het extracties versnellen voor volgende migraties waarbij de paden van de inhoud of de instellingen van versies niet zijn gewijzigd. Als de instellingen voor de inhoudspaden of de include-versies echter zijn gewijzigd, **Stapelcontainer overschrijven** moet zijn ingeschakeld.
 
    >[!IMPORTANT]
-Als de gebruikerstoewijzing niet is uitgevoerd op deze migratieset voordat de inhoud uit de bron is geëxtraheerd, wordt een waarschuwing weergegeven met de melding dat de stap Gebruikerstoewijzing in behandeling is, zoals in de bovenstaande afbeelding wordt getoond. Klikken op **Kaartgebruikers** om het gereedschap Toewijzing gebruiker uit te voeren.
+   >Als de gebruikerstoewijzing niet is uitgevoerd op deze migratieset voordat de inhoud uit de bron is geëxtraheerd, wordt een waarschuwing weergegeven met de melding dat de stap Gebruikerstoewijzing in behandeling is, zoals in de bovenstaande afbeelding wordt getoond. Klikken op **Kaartgebruikers** om het gereedschap Toewijzing gebruiker uit te voeren.
 
 1. De **Extractie** wordt nu het veld weergegeven **UITVOEREN** status om aan te geven dat de extractie wordt uitgevoerd.
 
@@ -68,8 +69,8 @@ Als de gebruikerstoewijzing niet is uitgevoerd op deze migratieset voordat de in
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
 
 >[!NOTE]
-Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service. Als u de voorkopiestap hebt gebruikt voor de eerste volledige extractie, kunt u de voorkopie voor volgende aanvullende extracties overslaan (als de instelbare migratie kleiner is dan 200 GB) omdat dit tijd kan toevoegen aan het gehele proces.
-Bovendien is het van essentieel belang dat de inhoudstructuur van bestaande inhoud niet wordt gewijzigd vanaf het moment dat de eerste extractie wordt uitgevoerd tot het moment dat de aanvullende extractie wordt uitgevoerd. Top-ups kunnen niet worden uitgevoerd op inhoud waarvan de structuur is gewijzigd sinds de eerste extractie. Zorg ervoor dat u dit tijdens het migratieproces beperkt.
+>Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service. Als u de voorkopiestap hebt gebruikt voor de eerste volledige extractie, kunt u de voorkopie voor volgende aanvullende extracties overslaan (als de instelbare migratie kleiner is dan 200 GB) omdat dit tijd kan toevoegen aan het gehele proces.
+>Bovendien is het van essentieel belang dat de inhoudstructuur van bestaande inhoud niet wordt gewijzigd vanaf het moment dat de eerste extractie wordt uitgevoerd tot het moment dat de aanvullende extractie wordt uitgevoerd. Top-ups kunnen niet worden uitgevoerd op inhoud waarvan de structuur is gewijzigd sinds de eerste extractie. Zorg ervoor dat u dit tijdens het migratieproces beperkt.
 
 Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extractiemethode voor aanvullen.
 
@@ -82,8 +83,8 @@ Voer de onderstaande stappen uit:
 1. De **Extractie van migratieset** wordt weergegeven. Klikken op **Extraheren**.
 
    >[!IMPORTANT]
-Zorg dat de optie **Overwrite staging container during extraction** (voor het overschrijven van de stagingcontainer tijdens de extractie) is uitgeschakeld.
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >Zorg dat de optie **Overwrite staging container during extraction** (voor het overschrijven van de stagingcontainer tijdens de extractie) is uitgeschakeld.
+   >![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
 
 
 ## Volgende functies {#whats-next}
