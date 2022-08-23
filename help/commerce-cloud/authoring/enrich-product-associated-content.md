@@ -2,7 +2,7 @@
 title: Productgegevens verrijken met gekoppelde AEM-inhoud
 description: Leer hoe marketers productgegevens kunnen verrijken met bijbehorende inhoud uit Adobe Experience Manager. Inhoud, zoals elementen en ervaringsfragmenten in AEM kunnen aan handelsproducten worden gekoppeld. Als deze inhoudstypen eenmaal zijn gekoppeld, kunnen ze dynamisch worden ingevoegd op een tijdelijke aanduiding in een productpagina of categoriepagina. Dit opent een breed scala aan mogelijkheden voor marketers om zich te richten op specifieke productpagina met extra inhoud, zoals afbeeldingen en video.
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: aaac412148d1499476c99a15fd1eed45d29fc29b
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

@@ -3,14 +3,14 @@ title: Gebruik van CIF-product en rubriekkiezer
 description: Leer hoe te om het product en de categoriekiezer van CIF in uw componenten van de klantenhandel te gebruiken om auteurs en verkopers te steunen om met handelsproduct en catalogusgegevens efficiënt te werken.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: 2e0a2b543fe0b6302a5dd62055f89a8f30427e6b
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
