@@ -2,7 +2,7 @@
 title: Onderhoudstaken in AEM as a Cloud Service
 description: Onderhoudstaken in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: def7f7071dac447397f40186de1380b8e5575608
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de opslagplaats te optimaliseren. Met AEM as a Cloud Service, is de behoefte aan klanten om de operationele eigenschappen van onderhoudstaken te vormen minimaal. De klanten kunnen hun middelen op toepassing-vlakke zorgen concentreren, verlatend de infrastructuurverrichtingen aan Adobe.
 
-## Onderhoudstaken configureren
+## Onderhoudstaken configureren {#maintenance-tasks-configuring}
 
 In vorige versies van AEM kon u onderhoudstaken configureren met de onderhoudskaart (Opties > Bewerkingen > Onderhoud). Voor AEM as a Cloud Service, is de Kaart van het Onderhoud niet meer beschikbaar zodat zouden de configuraties aan broncontrole moeten worden geëngageerd en door de Manager van de Wolk worden opgesteld. Adobe beheert die onderhoudstaken die montages hebben die niet door klanten (bijvoorbeeld, de Inzameling van de Schrapping van de Schrapping van de Datastore, de Schrapping van het Logboek van de Controle, de Schrapping van de Versie) configureerbaar zijn. Andere onderhoudstaken kunnen door klanten worden geconfigureerd, zoals in de onderstaande tabel wordt beschreven.
 
