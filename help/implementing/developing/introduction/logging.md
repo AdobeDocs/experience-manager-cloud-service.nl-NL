@@ -2,9 +2,9 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
+source-git-commit: 690939074570fb5285f242fe8d782380cfa5abc1
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2324'
 ht-degree: 2%
 
 ---
@@ -549,7 +549,7 @@ De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden w
 
 In het supportverzoek moeten klanten aangeven:
 
-* Splunk HEC eindpuntadres
+* Splunk HEC eindpuntadres. Dit eindpunt moet een geldig SSL-certificaat hebben
 * De segmentindex
 * De segmentpoort
 * De Splunk HEC-token. Zie [deze pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) voor meer informatie .
