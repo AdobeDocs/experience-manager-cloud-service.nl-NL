@@ -2,9 +2,9 @@
 title: Licentiedashboard
 description: Cloud Manager biedt een dashboard voor het eenvoudig weergeven van AEMaaCS-productrechten die beschikbaar zijn voor uw organisatie of huurder.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
+source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -67,35 +67,21 @@ Inhoudsaanvragen worden bijgehouden op Edge-servers van AEM as a Cloud Service. 
 
 AEM heeft ook regels om bekende bots uit te sluiten, met inbegrip van bekende diensten die de site regelmatig bezoeken om hun zoekindex of service te vernieuwen.
 
-Hieronder volgt een niet-limitatieve lijst van voorbeelden van uitgesloten bekende diensten.
-
-* AddSearchBot
-* AhrefsBot
-* Applebot
-* Vraag Jeeves Corporate Spider
-* Bingbot
-* BingPreview
-* BLEXBot
-* BuiltWith
-* Bytespider
-* CrawlerKengo
-* Facebookexternalhit
-* Google AdsBot
-* Google AdsBot Mobile
-
 ### Waarom toont mijn Analytics-rapport andere resultaten dan de AEM Content Requests? {#why-are-reports-different}
 
 De verzoeken van de inhoud zullen variaties met Analytics van een organisatie hebben rapporteringshulpmiddelen zoals samengevat in deze lijst.
 
 | Reden voor variantie | Toelichting |
 |---|---|
-| Tags | Alle pagina&#39;s die worden bijgehouden als AEM inhoudsaanvragen, kunnen al dan niet worden gelabeld met Analytics tracking.<br>Alle API-aanroepen die worden bijgehouden als AEM inhoudsaanvragen, worden niet gelabeld door het hulpprogramma Analytics van een organisatie.<br>Pagina&#39;s of API-aanroepen kunnen worden gelabeld om handelingen bij te houden in plaats van weergaven. |
+| Tags | Alle pagina&#39;s die worden bijgehouden als AEM inhoudsaanvragen, kunnen al dan niet worden gelabeld met Analytics tracking. Alle API-aanroepen die worden bijgehouden als AEM inhoudsaanvragen, worden niet gelabeld door het hulpprogramma Analytics van een organisatie.<br>Pagina&#39;s of API-aanroepen kunnen worden gelabeld om handelingen bij te houden of alleen om unieke paginaweergaven in plaats van alle weergaven. |
 | Tag Management-regels | Instellingen voor regels voor tagbeheer kunnen resulteren in verschillende configuraties voor gegevensverzameling op een pagina, wat resulteert in een combinatie van verschillen met het bijhouden van de inhoudsaanvraag. |
 | Bots | Onbekende bots die niet vooraf zijn geïdentificeerd en door AEM zijn verwijderd, kunnen verschillen in het bijhouden van gegevens veroorzaken. |
 | Rapportageopties | Pagina&#39;s die deel uitmaken van hetzelfde AEM exemplaar en domein, kunnen gegevens naar verschillende analytische rapportsuites verzenden. |
 | Instrumenten voor toezicht en beveiliging van derden | Met de hulpprogramma&#39;s voor controle en beveiligingsscans kunt u verzoeken om AEM genereren die niet worden bijgehouden in analytische rapporten. |
 | Prefetverzoeken | Als u een prefetch-service gebruikt om pagina&#39;s vooraf te laden om de snelheid te verhogen, kan dit leiden tot aanzienlijke toename van het verkeer van inhoudsverzoeken. |
-| DDOS | Terwijl Adobe alles in het werk stelt om automatisch verkeer van DDOS-aanvallen te detecteren en eruit te filteren, is er geen garantie dat alle mogelijke DDOS-aanvallen worden gedetecteerd. |
+| DDOS | Terwijl Adobe alles doet om automatisch verkeer van DDOS-aanvallen te detecteren en eruit te filteren, is er geen garantie dat alle mogelijke DDOS-aanvallen worden gedetecteerd |
+| Verkeersblokkers | Als u een tracker-blokker in een browser gebruikt, kunnen sommige aanvragen niet worden bijgehouden. |
+| Vuurmuren | Firewalls kunnen het bijhouden van analyses blokkeren. Dit komt vaker voor bij bedrijfsfirewalls. |
 
 ### Wat als ik mijn eigen CDN gebruik? {#using-own-cdn}
 
