@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.9.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.8.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4eebe0fe80f816bb7f92026531848cec84285078
+source-git-commit: 0b453290cd0e7dc5ec319e8ddbfa085f109717df
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 2%
+source-wordcount: '187'
+ht-degree: 1%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.9.0 in AEM as a Cloud Service.
+Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.8.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,8 +21,16 @@ Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.9
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2022.9.0 in AEM as a Cloud Service is 9 september 2022. De volgende release is gepland voor 6 oktober 2022.
+De releasedatum voor Cloud Manager versie 2022.8.0 in AEM as a Cloud Service is 11 augustus 2022. De volgende release is gepland voor 9 september 2022.
 
 ## Wat is er nieuw? {#what-is-new}
 
+* Er is een vernieuwde interface-ervaring in het dialoogvenster [voeg omgevingsworkflow toe.](/help/implementing/cloud-manager/manage-environments.md)
+* [Het AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) in Cloud Manager is bijgewerkt naar versie 37.
+
 ## Opgeloste problemen {#bug-fixes}
+
+* Het geval waarin Nieuwe Relic-gebruikers niet zijn gemaakt of verwijderd in de gebruikersinterface van Cloud Manager is gecorrigeerd.
+* Bepaalde gevallen van onregelmatige fouten bij het aanmaken van de opslagplaats zijn veerkrachtiger gemaakt.
+* Zeldzame voorvallen van VSTS org opstellingsfouten worden nu verminderd toe te schrijven aan geïntroduceerde herpogingen.
+* Verbeterde validatie tijdens het maken van nieuwe eBay-subaccounts voorkomt nu bepaalde fouten.
