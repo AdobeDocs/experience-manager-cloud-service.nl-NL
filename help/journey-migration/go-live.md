@@ -2,9 +2,9 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -144,6 +144,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepe
          * [Inleiding tot het beheren van SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [SSL-certificaat beheren](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Aangepaste domeinnamen (DNS) beheren
+         * Om ervoor te zorgen dat de DNS cutover geen onverwachte problemen zal introduceren, is het best om een testsubdomain tot stand te brengen om uw productieinstantie aan te sluiten alvorens u gaat-leven en een ronde van het testen van UAT doet. Dus als uw domein example.com is, kunt u een subdomain test.voorbeeld.com tot stand brengen en het op productie toepassen. Tijdens het testen van de UAT van het domein zult u dingen zoals juiste verbindingsredirection, caching, en verzender configuraties willen zoeken.
          * [Inleiding tot aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [Aangepaste domeinnaam beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
