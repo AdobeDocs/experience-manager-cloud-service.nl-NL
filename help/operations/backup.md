@@ -2,9 +2,9 @@
 title: Inhoud herstellen in AEM as a Cloud Service
 description: Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met gebruik van Cloud Manager.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: a61eaa8f13c96c87f45f4074ebd15e1dc8597c2c
+source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,12 @@ ht-degree: 0%
 >abstract="Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met gebruik van Cloud Manager."
 
 Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met gebruik van Cloud Manager.
+
+>[!NOTE]
+>
+>* Deze functie wordt gefaseerd geïmplementeerd en wordt mogelijk nog niet in alle huurders van Cloud Manager ingeschakeld.
+>* Deze functie is momenteel beperkt tot testomgevingen en ontwikkelomgevingen. Het eigenschapgebruik en terugkoppelen van deze milieutypes zullen een succesvolle uitrol aan productiemilieu&#39;s in de nabije toekomst verzekeren.
+
 
 ## Overzicht {#overview}
 
