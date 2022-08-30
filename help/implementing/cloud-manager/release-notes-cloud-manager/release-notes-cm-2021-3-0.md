@@ -3,7 +3,7 @@ title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service v
 description: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.3.0
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%
@@ -29,7 +29,7 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.3.0 is 11 maar
    * Sites of middelen verwijderen uit een bestaand programma met zowel Sites als Middelen.
    * Voeg tweede, ongebruikte oplossingsrechten toe aan een bestaand programma of aan een nieuw programma.
 
-* **AEM bijwerken** Het label wordt nu weergegeven voor zowel het scherm Uitvoeren als Activiteit van de pijplijn.
+* **Update voor AEM onderhoud** Het label wordt nu weergegeven voor zowel het scherm Uitvoeren als Activiteit van de pijplijn.
 
 * Als een omgeving is gehiberneerd maar er ook een AEM update beschikbaar is, kunt u het volgende doen: **Gesamberneerd** status heeft voorrang op **Update beschikbaar**.
 

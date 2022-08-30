@@ -2,9 +2,9 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1903'
 ht-degree: 80%
 
 ---
@@ -67,26 +67,27 @@ Hierdoor is automatische schaling mogelijk voor variërende gebruikspatronen:
 
 ## Updates AEM {#aem-updates}
 
->[!NOTE]
->Zie voor meer informatie de [Versie-updates AEM](/help/implementing/deploying/aem-version-updates.md).
-
-AEM as a Cloud Service gebruikt nu Continuous Integration en Continuous Delivery (CI/CD) om ervoor te zorgen dat uw projecten op de huidigste AEM versie zijn. Dit betekent dat de instanties van de Productie en van het Stadium aan de recentste AEM versie zonder enige onderbreking van de dienst voor gebruikers worden bijgewerkt.
+AEM as a Cloud Service gebruikt nu ononderbroken integratie en ononderbroken levering (CI/CD) om ervoor te zorgen dat uw projecten op de huidigste AEM versie zijn. Dit betekent dat de productie en de geleidelijke instanties aan de recentste AEM versie zonder enige onderbreking van de dienst voor gebruikers worden bijgewerkt.
 
 >[!NOTE]
-> Als de update naar de productieomgeving mislukt, wordt de werkgebiedomgeving automatisch teruggedraaid. Dit wordt automatisch gedaan om ervoor te zorgen dat zowel het werkgebied als de productieomgeving na het voltooien van een update dezelfde AEM versie hebben.
+>
+>Als de update naar de productieomgeving mislukt, wordt de testomgeving automatisch teruggedraaid in Cloud Manager. Dit wordt automatisch gedaan om ervoor te zorgen dat nadat een update voltooit, zowel de het opvoeren als productiemilieu&#39;s op de zelfde AEM versie zijn.
 
-AEM versie-updates zijn van twee typen:
+Er zijn twee typen AEM versie-updates:
 
-* **AEM Push-updates**
+* **Updates voor AEM**
 
    * Kunnen dagelijks worden uitgebracht.
-   * Meestal onderhoud, inclusief de nieuwste oplossingen voor problemen en beveiligingsupdates.
+   * Deze bestanden zijn vooral bedoeld voor onderhoudsdoeleinden, zoals de nieuwste oplossingen voor problemen en beveiligingsupdates.
+   * minimaal effect hebben, aangezien de wijzigingen regelmatig worden toegepast.
 
-      Aangezien veranderingen regelmatig worden toegepast, is het effect cumulatief, wat minder invloed heeft op uw service.
+* **Nieuwe functies bijwerken**
 
-* **Nieuwe functie-updates**
+   * Wordt vrijgegeven via een voorspelbaar maandschema.
 
-   * Uitgegeven via een voorspelbaar maandschema.
+>[!TIP]
+>
+>Zie voor meer informatie de [Versie-updates AEM](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
