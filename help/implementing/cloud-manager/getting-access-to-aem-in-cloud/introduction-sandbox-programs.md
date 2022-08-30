@@ -2,9 +2,9 @@
 title: 'Inleiding tot Sandbox-programma''s '
 description: Leer welke sandboxprogramma's verschillen van productieprogramma's.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 05cba12cdd14c2e29f6a471047ce95fcf720abc4
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ De milieu&#39;s die in een zandbakprogramma worden gecreeerd worden niet gevormd
 ### Geen aangepaste domeinen of IP-Lijsten van gewenste personen {#ip-allow}
 
 Aangepaste domeinen en IP-lijsten van gewenste personen zijn niet beschikbaar in sandboxprogramma&#39;s.
+
+### Geen geavanceerde netwerken {#advanced-networking}
+
+[Geavanceerde netwerkfuncties](/help/security/configuring-advanced-networking.md) (bv. zelfbediende levering van VPN, niet-standaardhavens, specifieke IP adressen van de uitgang, enz.) zijn niet beschikbaar in sandboxprogramma&#39;s.
 
 ### Handmatige AEM {#updates}
 

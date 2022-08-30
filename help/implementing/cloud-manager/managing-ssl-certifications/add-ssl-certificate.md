@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen
 description: Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma's van Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 2c87d5fb33b83ca77b97391e4b0baaf38f8dd026
+source-git-commit: 14e0255b3ce2ca44579b9fc3de6c7b7f5d8f34b6
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -57,9 +57,7 @@ Ga als volgt te werk om een certificaat toe te voegen met gebruik van Cloud Mana
 
    * Geef een naam op voor uw certificaat in **Certificaatnaam**.
       * Dit is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar uw certificaat kunt verwijzen.
-   * Plak de **Certificaat**, **Persoonlijke sleutel**, en **Certificaatketen** waarden in hun respectieve gebieden.
-      * U kunt het plakpictogram rechts van het invoervak gebruiken.
-      * Alle drie velden zijn verplicht.
+   * Plak de **Certificaat**, **Persoonlijke sleutel**, en **Certificaatketen** waarden in hun respectieve gebieden. Alle drie velden zijn verplicht.
 
    ![Dialoogvenster SSL-certificaat toevoegen](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
