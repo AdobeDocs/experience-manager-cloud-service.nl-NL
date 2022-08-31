@@ -2,9 +2,9 @@
 title: as a Cloud Service teams en productprofielen AEM
 description: Leer hoe AEM as a Cloud Service team en productprofielen en toegang tot uw gelicentieerde Adobe oplossingen verlenen en beperken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
+source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Cloud Manager heeft vooraf geconfigureerde productprofielen die kunnen worden be
 
 Aan elk van de productprofielen zijn specifieke machtigingen gekoppeld.
 
-* **Zakelijke eigenaar** - In deze rol hebt u de toestemming om een nieuw programma toe te voegen of een programma uit te geven, een milieu toe te voegen of bij te werken, pijpleidingen toe te voegen/uit te geven/te schrappen/in werking te stellen, code in AEM milieu op te stellen, of de controles van de codekwaliteit uit te voeren.
+* **Zakelijke eigenaar** - In deze rol hebt u de toestemming om een nieuw programma toe te voegen of een programma uit te geven, een milieu toe te voegen of bij te werken, code in AEM milieu op te stellen, of de controles van de codekwaliteit uit te voeren.
 * **Implementatiebeheer** - In deze rol, hebt u de toestemming om een milieu toe te voegen of bij te werken, om het even welke pijpleiding in werking te stellen, en code op te stellen aan AEM milieu, of de controles van de codekwaliteit uit te voeren.
 * **Ontwikkelaar** - In deze rol, hebt u de toestemming om persoonlijke toegangstokens te produceren om toegang tot it te hebben.
 * **Programmabeheerder** - In deze rol, hebt u de toestemming om pijpleidingen te plannen, de drie-rij kwaliteitsspoorten met voeten te treden, en productiegoedkeuring te verstrekken.

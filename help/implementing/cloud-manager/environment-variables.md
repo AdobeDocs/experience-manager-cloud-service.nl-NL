@@ -2,9 +2,9 @@
 title: Omgevingsvariabelen van Cloud Manager
 description: De standaardmilieuvariabelen kunnen via de Manager van de Wolk worden gevormd en worden beheerd en aan het runtime milieu worden verstrekt, dat in configuratie OSGi moet worden gebruikt.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 4b2ea300f61ad7d1218a984f7238365c5b170a8e
+source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ De meest gangbare gebruiksgevallen voor het gebruik van omgevingsvariabelen zijn
 * Wanneer er meerdere ontwikkelomgevingen in een programma voorkomen en sommige configuraties van de ene omgeving tot de andere verschillen
 
 ## Omgevingsvariabelen toevoegen {#add-variables}
+
+>[!NOTE]
+>
+>U moet lid zijn van de [**Implementatiebeheer** rol](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) om omgevingsvariabelen toe te voegen of te wijzigen.
 
 1. Meld u aan bij Adobe Cloud Manager via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager geeft een overzicht van de verschillende beschikbare programma&#39;s. Selecteer het bestand dat u wilt beheren.
