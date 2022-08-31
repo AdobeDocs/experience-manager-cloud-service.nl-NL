@@ -2,7 +2,7 @@
 title: Meerdere opslagplaatsen gebruiken
 description: Leer hoe u meerdere git-opslagruimten beheert wanneer u werkt met Cloud Manager.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: ea89dfd560d317e97179e74c297d1b93bb67f125
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 0%
@@ -28,8 +28,8 @@ Hier volgt een voorbeeld `pom.xml` bestand voor twee in eigendom van de klant zi
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
   
     <groupId>customer.group.id</groupId>

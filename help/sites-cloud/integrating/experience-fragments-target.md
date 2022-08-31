@@ -2,7 +2,7 @@
 title: Exporteren van ervaringsfragmenten naar Adobe Target
 description: Exporteren van ervaringsfragmenten naar Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 8e13f671ada67e4e22b66094ad23bf5a0508ccba
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2259'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Als u uw exemplaar wilt voorbereiden voor het exporteren van AEM Experience Frag
 
 * [Integreren met Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Cloudconfiguratie toevoegen](#add-the-cloud-configuration)
-* [Add the Legacy Configuration](#add-the-legacy-configuration)
+* [De verouderde configuratie toevoegen](#add-the-legacy-configuration)
 
 Daarna kunt u:
 
@@ -37,11 +37,11 @@ Daarna kunt u:
 * [Je ervaringsfragmenten in Adobe Target gebruiken](#using-your-experience-fragments-in-adobe-target)
 * En ook [Een ervaringsfragment verwijderen dat al naar Adobe Target is geëxporteerd](#deleting-an-experience-fragment-already-exported-to-adobe-target)
 
-Experience Fragments can be exported to the default workspace in Adobe Target, or to user-defined workspaces for Adobe Target.
+U kunt Experience Fragments exporteren naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target.
 
 >[!NOTE]
 >
->De Adobe Target-werkruimten bestaan niet in Adobe Target zelf. They are defined and managed in Adobe IMS (Identity Management System), then selected for usage across solutions using Adobe Developer Console.
+>De Adobe Target-werkruimten bestaan niet in Adobe Target zelf. Deze worden gedefinieerd en beheerd in Adobe IMS (Identity Management System) en vervolgens voor gebruik op verschillende oplossingen geselecteerd met Adobe Developer Console.
 
 >[!NOTE]
 >
@@ -49,9 +49,9 @@ Experience Fragments can be exported to the default workspace in Adobe Target, o
 
 >[!NOTE]
 >
->For further information see also:
+>Zie ook voor meer informatie:
 >
->* [Adobe Target-ontwikkeling](http://developers.adobetarget.com/)
+>* [Adobe Target-ontwikkeling](https://developers.adobetarget.com/)
 >* [Kernonderdelen - Ervaar fragmenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 >* [Adobe Target - Hoe gebruik ik Adobe Experience Manager (AEM)-fragmenten?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
 >* [AEM 6.5 - De integratie met Adobe Target handmatig configureren - Een doelcloudconfiguratie maken](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
@@ -173,7 +173,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
 
 1. In de **Adobe Target-instellingen** geeft u waarden op voor deze eigenschappen.
 
-   * **Authentication**: this defaults to IMS (User Credentials is deprecated)
+   * **Verificatie**: Deze standaard is ingesteld op IMS (Gebruikersreferenties zijn afgekeurd)
 
    * **Clientcode**: De clientcode van de doelaccount
 
@@ -206,14 +206,14 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
       >AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
       >
       >* Verbeterde laadtijden voor webimplementaties
-      >* Improved security
+      >* Verbeterde beveiliging
       >* Betere implementatieopties voor toepassingen van één pagina
-      >* AT.js contains the components that were included in target.js, so there is no longer a call to target.js
+      >* AT.js bevat de componenten die in target.js inbegrepen waren, zodat is er niet meer een vraag aan target.js
 
       >
-      >You can select AT.js or mbox.js in the **Client library** drop-down menu.
+      >U kunt AT.js of mbox.js in selecteren **Clientbibliotheek** vervolgkeuzemenu.
 
-   * **Tagbeheersysteem gebruiken om clientbibliotheek te leveren** - Selecteer deze optie als u de clientbibliotheek van Adobe Launch of een ander systeem voor tagbeheer (of DTM, dat is afgekeurd) wilt gebruiken.
+   * **Tag Management System gebruiken om clientbibliotheek te leveren** - Selecteer deze optie als u de clientbibliotheek van Adobe Launch of een ander systeem voor tagbeheer (of DTM, dat is afgekeurd) wilt gebruiken.
 
    * **Aangepaste AT.js**: Blader om uw aangepaste AT.js te uploaden. Leeg laten om de standaardbibliotheek te gebruiken.
 
@@ -352,7 +352,7 @@ Een ervaringsfragment exporteren van AEM naar doel (na het opgeven van de cloudc
 
    >[!NOTE]
    >
-   >Selecting **Publish** will publish the experience fragment right away and send it to Target.
+   >Selecteren **Publiceren** publiceert het ervaringsfragment meteen en verzendt het naar Target.
 
 1. Tikken/klikken **OK** in het bevestigingsdialoogvenster.
 
@@ -387,10 +387,10 @@ Om dergelijke situaties te voorkomen:
 * Als het ervaringsfragment momenteel niet wordt gebruikt in een activiteit, AEM kan de gebruiker het fragment zonder een waarschuwingsbericht verwijderen.
 * Als het ervaringsfragment momenteel door een activiteit in Doel wordt gebruikt, wordt de AEM gebruiker een foutbericht gegeven over de mogelijke gevolgen die het verwijderen van het fragment voor de activiteit zal hebben.
 
-   Het foutbericht in AEM belet de gebruiker niet (geforceerd) het ervaringsfragment te verwijderen. If the Experience Fragment is deleted:
+   Het foutbericht in AEM belet de gebruiker niet (geforceerd) het ervaringsfragment te verwijderen. Als het ervaringsfragment wordt verwijderd:
 
-   * The Target offer with AEM Experience Fragment may show undesired behavior
+   * De aanbieding van het Doel met AEM Fragment van de Ervaring kan ongewenste gedrag tonen
 
-      * The offer will likely still render, as the Experience Fragment HTML was pushed to Target
+      * Het aanbod wordt waarschijnlijk nog steeds weergegeven, aangezien de HTML van het ervaringsfragment naar Target is geduwd
       * Eventuele verwijzingen in het ervaringsfragment werken mogelijk niet correct als middelen waarnaar wordt verwezen ook in AEM worden verwijderd.
-   * Of course, any further modifications to the Experience Fragment are impossible as the Experience Fragment does not exist anymore in AEM.
+   * Uiteraard zijn verdere wijzigingen van het ervaringsfragment niet mogelijk omdat het ervaringsfragment niet meer in AEM bestaat.

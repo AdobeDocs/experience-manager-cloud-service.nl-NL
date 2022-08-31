@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1314'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
    * Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    * Afdruk-PDF-bestanden genereren op basis van een XFA-formulier met PDF en Adobe Acrobat-formulier.
@@ -134,11 +134,11 @@ De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!
 
 * Labels met dezelfde naam maar verschillende naamruimten kunnen niet eerder worden gemaakt.
 
-## XML-documentatie voor as a Cloud Service Experience Manager {#xml-documentation}
+## XML Documentation for Experience Manager as a Cloud Service {#xml-documentation}
 
 ### Nieuwe functies {#what-is-new-xml-documentation}
 
-De Documentatie van XML voor as a Cloud Service Experience Manager is over het algemeen beschikbaar. Het staat Experience Manager as a Cloud Service klanten toe om de Documentatie van XML toe te kopen addon om, technische inhoud over veelvoudige kanalen met inbegrip van Experience Manager Sites in te voeren tot stand te brengen, te leiden en te leveren.
+XML Documentation for Experience Manager as a Cloud Service is over het algemeen beschikbaar. Het staat Experience Manager as a Cloud Service klanten toe om XML Documentation addon aan invoer te kopen, tot stand te brengen, te leiden, en technische inhoud over veelvoudige kanalen met inbegrip van Experience Manager Sites te leveren.
 
 ## Cloud Manager {#cloud-manager}
 

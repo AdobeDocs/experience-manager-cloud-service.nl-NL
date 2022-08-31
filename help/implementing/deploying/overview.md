@@ -3,7 +3,7 @@ title: Implementeren naar AEM as a Cloud Service
 description: 'Implementeren naar AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Aangezien de toepassingsveranderingen toe te schrijven aan het blauw-Groene plaa
 
 Voor klanten met bestaande codebases is het van essentieel belang dat de in AEM documentatie beschreven herstructureringsoefening in de opslagplaats wordt doorlopen om ervoor te zorgen dat inhoud die voorheen onder de /etc. viel, naar de juiste locatie wordt verplaatst.
 
-Voor deze codepakketten gelden enkele aanvullende beperkingen, bijvoorbeeld [installatiekoppels](http://jackrabbit.apache.org/filevault/installhooks.html) worden niet ondersteund.
+Voor deze codepakketten gelden enkele aanvullende beperkingen, bijvoorbeeld [installatiekoppels](https://jackrabbit.apache.org/filevault/installhooks.html) worden niet ondersteund.
 
 ## OSGI-configuratie {#osgi-configuration}
 
@@ -104,7 +104,7 @@ Na de overgang naar de nieuwe versie van de toepassing:
    * Mappen (toevoegen, wijzigen, verwijderen)
    * Bewerkbare sjablonen (toevoegen, wijzigen, verwijderen)
    * Contextbewuste configuratie (alles onder `/conf`) (toevoegen, wijzigen, verwijderen)
-   * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie de [Jackrabbit filevault-documentatie](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) over het installeren van haken. Merk op dat AEM CS momenteel FileVault versie 3.4.0 gebruikt, die installatiekoppen aan admin gebruikers, systeemgebruikers, en lid van de beheerdersgroep beperkt).
+   * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie de [Jackrabbit filevault-documentatie](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) over het installeren van haken. Merk op dat AEM CS momenteel FileVault versie 3.4.0 gebruikt, die installatiekoppen aan admin gebruikers, systeemgebruikers, en lid van de beheerdersgroep beperkt).
 
 Het is mogelijk de installatie van veranderbare inhoud te beperken tot auteur of te publiceren door pakketten in een install.auteur of install.publish omslag in te bedden onder `/apps`. Herstructurering om deze scheiding te weerspiegelen vond plaats in AEM 6.5 en nadere bijzonderheden over de aanbevolen projectherstructurering zijn te vinden in de [AEM 6.5-documentatie.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 

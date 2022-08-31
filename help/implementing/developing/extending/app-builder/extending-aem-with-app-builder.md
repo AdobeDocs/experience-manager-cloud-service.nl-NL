@@ -2,7 +2,7 @@
 title: Uitbreiden [!DNL Adobe Experience Manager] as a Cloud Service met Adobe Developer App Builder.
 description: Uitbreiden [!DNL Adobe Experience Manager] as a Cloud Service met Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -23,7 +23,7 @@ App Builder biedt klanten een manier om Adobe Experience Manager in verschillend
 * De Uitbreidbaarheid van de Diensten van de kern - breid kerntoepassingsmogelijkheden door het standaardgedrag met douaneeigenschappen &amp; bedrijfslogica uit te breiden.
 * Gebruikerservaring Uitbreidbaarheid: breid de kernervaring uit om bedrijfsvereisten te ondersteunen of klantspecifieke digitale eigenschappen, winkelcentra en back-office toepassingen te ontwikkelen.
 
-App Builder (voorheen Project Firefly genoemd) is sinds zomer 2020 beschikbaar voor zakelijke klanten en partners via onze Voorvertoning voor ontwikkelaars. De algemene beschikbaarheid (GA) van App Builder is gepland voor december 2021. We verwelkomen ontwikkelaars om App Builder uit te proberen via onze [Proefprogramma](http://adobe.ly/appbuilder-trial).
+App Builder (voorheen Project Firefly genoemd) is sinds zomer 2020 beschikbaar voor zakelijke klanten en partners via onze Voorvertoning voor ontwikkelaars. De algemene beschikbaarheid (GA) van App Builder is gepland voor december 2021. We verwelkomen ontwikkelaars om App Builder uit te proberen via onze [Proefprogramma](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ App Builder (voorheen Project Firefly genoemd) is sinds zomer 2020 beschikbaar v
 
 In plaats van een out-of-the-box oplossing biedt Adobe Developer App Builder een gemeenschappelijk, consistent en gestandaardiseerd ontwikkelingsplatform voor het uitbreiden van Adobe Cloud-oplossingen, zoals AEM:
 
-* Adobe Developer Console — Voor de ontwikkeling van aangepaste microservices en extensies kunnen ontwikkelaars projecten bouwen en beheren en tegelijkertijd toegang krijgen tot alle hulpmiddelen en API&#39;s die zij nodig hebben om plug-ins en integratie te maken.
+* Adobe Developer Console — voor de ontwikkeling van aangepaste microservices en extensies, zodat ontwikkelaars projecten kunnen maken en beheren en toegang krijgen tot alle hulpmiddelen en API&#39;s die zij nodig hebben om plug-ins en integratie te maken.
 * Gereedschappen voor ontwikkelaars — Open-source-gereedschappen, SDK&#39;s en bibliotheken waarmee ontwikkelaars eenvoudig aangepaste extensies en integratie kunnen maken. Gebruik Spectrum Reageren (de UI toolkit van Adobe) om één gemeenschappelijke UI voor alle Adobe te hebben apps.
 * Services — I/O-runtime voor het hosten van infrastructuur op ons serverplatform en I/O-gebeurtenissen voor op gebeurtenissen gebaseerde integratie. Wij bieden ook offline ondersteuning voor het opslaan van gegevens en bestanden.
 * Adobe Experience Cloud — Ontwikkelaars kunnen extensies en integraties indienen die binnen hun Experience Cloud Org moeten worden gepubliceerd. Systeembeheerders kunnen deze extensies vervolgens controleren, beheren en goedkeuren. Na publicatie vindt u naast andere Adobe Experience Cloud-apps ook de aangepaste App Builder-extensies en -gereedschappen.
@@ -61,7 +61,7 @@ App Builder biedt video&#39;s en documentatie voor ontwikkelaars, waaronder hulp
 
 Klaar om te beginnen met ontwikkelen? We hebben veel voorbeeldtoepassingen waarmee u snel aan de slag kunt:
 
-* [Code-labels voor App Builder op de website voor Adobe-ontwikkelaars](https://www.adobe.io/app-builder/docs/resources/)
+* [Code-labels voor App Builder op de Adobe Developer-website](https://www.adobe.io/app-builder/docs/resources/)
 
 ## Ondersteuning {#support}
 

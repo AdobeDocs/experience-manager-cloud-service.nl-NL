@@ -2,7 +2,7 @@
 title: 'Registratie, aanmelding en gebruikersprofiel '
 description: Meer informatie over registratie, aanmelding, gebruikersgegevens en groepssynchronisatie voor AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Aanmelding kan op de volgende twee manieren worden uitgevoerd:
 Klanten kunnen hun eigen aangepaste componenten schrijven. Meer leren, overweeg vertrouwd worden met:
 
 * De [Sling Authentication Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
-* en overwegen [waarbij de AEM communautaire deskundigenvergadering wordt gevraagd](http://bit.ly/ATACEFeb15) over aanmelden.
+* en overwegen [waarbij de AEM communautaire deskundigenvergadering wordt gevraagd](https://bit.ly/ATACEFeb15) over aanmelden.
 
 ### Integratie met een identiteitsprovider {#integration-with-an-idp}
 

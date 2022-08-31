@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2020.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.7.0."'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 1%
@@ -63,7 +63,7 @@ Zie [Aan de slag met AEM as a Cloud Service Handel](https://experienceleague.ado
 
 Release 2.11.0 van de [AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites, waaronder:
 
-* Invoering van een nieuwe [PDF Viewer-component](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
+* Invoering van een nieuwe [PDF Viewer-component](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * Ondersteuning voor versnelde mobiele pagina&#39;s (AMP) van kerncomponenten is nu beschikbaar. Het helpt klanten sneller ervaringen op te doen door de paginaovergang onmiddellijk te maken wanneer ze de site betreden vanuit een mobiel zoekresultaat van Google, wat de betrokkenheid van gebruikers en SEO verbetert.
 Zie [AMP-ondersteuning voor de kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) voor meer informatie .

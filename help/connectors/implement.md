@@ -2,7 +2,7 @@
 title: Een AEM-connector implementeren
 description: Een AEM-connector implementeren
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 7%
@@ -37,7 +37,7 @@ Nuttige documentatie
 
 Experience Manager as a Cloud Service [documentatie](../overview/introduction.md) biedt waardevolle inzichten in de ontwikkeling in AEM. Hieronder volgen enkele specifieke technische onderwerpen en verwijzingen die u nuttig kunt vinden wanneer het uitvoeren van een AEM schakelaar:
 
-* Adobe Consulting Services (ACS) [AEM](http://adobe-consulting-services.github.io/acs-aem-samples/) voor code met goede opmerkingen om AEM ontwikkelaars te helpen opleiden
+* Adobe Consulting Services (ACS) [AEM](https://adobe-consulting-services.github.io/acs-aem-samples/) voor code met goede opmerkingen om AEM ontwikkelaars te helpen opleiden
 * De verschillende documentatiekoppelingen in de sectie Gemeenschappelijke integratiepatronen van dit artikel
 
 Communautaire middelen
@@ -45,9 +45,9 @@ Communautaire middelen
 
 Naast de statische documentatie hierboven, bieden Adobe en de AEM gemeenschap middelen om een schakelaar aan markt te helpen brengen:
 
-* De Adobe-gemeenschap [AEM](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) is een actieve site waarop uw collega&#39;s vragen stellen en antwoorden op vragen
+* De Adobe-gemeenschap [AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) is een actieve site waarop uw collega&#39;s vragen stellen en antwoorden op vragen
 * De extra technische middelen van Adobe zijn beschikbaar aan bepaalde partnerniveaus. Meer informatie over de [Adobe Exchange-programma](https://partners.adobe.com/exchangeprogram/experiencecloud).
-* Als uw organisatie implementatiehulp nodig heeft, kunt u contact opnemen met het [Professionele services-team](http://www.adobe.com/nl/marketing-cloud/service-support/professional-consulting-training.html) van Adobe of [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) raadplegen voor een lijst van partners van Adobe over de hele wereld
+* Als uw organisatie implementatiehulp nodig heeft, kunt u contact opnemen met het [Professionele services-team](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) van Adobe of [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) raadplegen voor een lijst van partners van Adobe over de hele wereld
 
 Pakketstructuurregels
 -----------------------

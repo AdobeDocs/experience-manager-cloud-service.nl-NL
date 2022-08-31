@@ -2,7 +2,7 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2930'
 ht-degree: 12%
@@ -144,12 +144,12 @@ Bijvoorbeeld, zou een AEM project dat 2 verkoper AEM toepassingen omvat als kunn
 
 Pakketten moeten worden gemarkeerd met het opgegeven pakkettype. De types van pakket helpen het doel en de plaatsing van een pakket verduidelijken.
 
-+ Containerpakketten moeten hun `packageType` tot `container`. Containerpakketten mogen geen normale knooppunten bevatten. Alleen OSGi-bundels, -configuraties en -subpakketten zijn toegestaan. Containers in AEM as a Cloud Service mogen niet worden gebruikt [installatiekoppels](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Containerpakketten moeten hun `packageType` tot `container`. Containerpakketten mogen geen normale knooppunten bevatten. Alleen OSGi-bundels, -configuraties en -subpakketten zijn toegestaan. Containers in AEM as a Cloud Service mogen niet worden gebruikt [installatiekoppels](https://jackrabbit.apache.org/filevault/installhooks.html).
 + Codepakketten (onveranderbaar) moeten hun `packageType` tot `application`.
 + In inhoudspakketten moeten de elementen worden ingesteld `packageType` tot `content`.
 
 
-Zie voor meer informatie [Apache Jackrabbit FileVault - PakketMaven Plugin-documentatie](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit-pakkettypen](http://jackrabbit.apache.org/filevault/packagetypes.html)en de [FileVault Maven-configuratiefragment](#marking-packages-for-deployment-by-adoube-cloud-manager) hieronder.
+Zie voor meer informatie [Apache Jackrabbit FileVault - PakketMaven Plugin-documentatie](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit-pakkettypen](https://jackrabbit.apache.org/filevault/packagetypes.html)en de [FileVault Maven-configuratiefragment](#marking-packages-for-deployment-by-adoube-cloud-manager) hieronder.
 
 >[!TIP]
 >
@@ -625,4 +625,4 @@ In de `all/pom.xml` toevoegen `maven-clean-plugin` insteekmodule waarmee de doel
 ## Aanvullende bronnen {#additional-resources}
 
 + [Pakketten beheren met Maven](/help/implementing/developing/tools/maven-plugin.md)
-+ [Maven-plug-in voor het pakket met bestandsVault-inhoud](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [Maven-plug-in voor het pakket met bestandsVault-inhoud](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
