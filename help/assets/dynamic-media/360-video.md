@@ -4,9 +4,9 @@ description: Leer hoe u met 360 en VR-video (Virtual Reality) werkt in Dynamic M
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Zie ook [Viewer-voorinstellingen beheren](/help/assets/dynamic-media/managing-vi
 
 ## 360 Video in actie {#video-in-action}
 
-Selecteren [Ruimtestation 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) om een browservenster te openen en een video van 360° te bekijken. Tijdens het afspelen van video sleept u de aanwijzer naar een nieuwe locatie om de weergavehoek te wijzigen.
+Selecteren [Ruimtestation 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) om een browservenster te openen en een video van 360° te bekijken. Tijdens het afspelen van video sleept u de aanwijzer naar een nieuwe locatie om de weergavehoek te wijzigen.
 
 ![360 Videovoorbeeld](assets/6_5_360videoiss_simplified.png)
 *Videoframe vanaf Space Station 360*
@@ -43,18 +43,18 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
 360 video-elementen die worden geüpload naar [!DNL Experience Manager] worden gelabeld als **Multimedia** op een elementpagina, vergelijkbaar met normaal video-element.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*Een geüpload videoelement dat 360 pixels bevat die in de kaartweergave worden weergegeven. Het element wordt aangeduid als Multimedia.*
+*Een geüpload 360-video element dat in de Kaartweergave wordt weergegeven. Het element wordt aangeduid als Multimedia.*
 
 **Elementen uploaden voor gebruik met de 360 Video-viewer:**
 
 1. Er is een map gemaakt voor uw 360-video-element.
 1. [Pas een adaptief videoprofiel toe op de map](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-   Bij het renderen van 360 video-inhoud worden hogere eisen gesteld aan de resolutie van de bronvideo en aan de resolutie van gecodeerde vertoningen dan aan de standaard niet-360 video-inhoud.
+   Bij het renderen van 360-video-inhoud worden hogere eisen gesteld aan de resolutie van de bronvideo en aan de resolutie van gecodeerde vertoningen dan aan de standaard niet-360-video-inhoud.
 
-   U kunt het adaptieve videoprofiel gebruiken dat al bij Dynamic Media wordt geleverd. Het resultaat is echter een merkbaar lagere videokwaliteit dan bij niet-360 video-gecodeerd met dezelfde instellingen die met een niet-360-videoviewer worden gerenderd. Ga daarom als volgt te werk als u hoogwaardige 360 video nodig hebt:
+   U kunt het adaptieve videoprofiel gebruiken dat al bij Dynamic Media wordt geleverd. De kwaliteit van 360-video is echter merkbaar lager dan bij niet-360-video die is gecodeerd met dezelfde instellingen die zijn gerenderd met een niet-360-videoviewer. Ga daarom als volgt te werk als u hoogwaardige 360 video nodig hebt:
 
-   * In het ideale geval heeft uw oorspronkelijke 360 video-inhoud een van de volgende resoluties:
+   * In het ideale geval heeft uw oorspronkelijke 360-video-inhoud een van de volgende resoluties:
 
       * 1080p - 1920 x 1080, bekend als Full HD- of FHD-resolutie of,
       * 2160p - 3840 x 2160, bekend als 4k, UHD of Ultra HD-resolutie. Deze grote weergaveresolutie wordt meestal aangetroffen op hoogwaardige televisies en computermonitoren. De resolutie van 2160p wordt vaak &#39;4k&#39; genoemd omdat de breedte dichtbij 4000 pixels ligt. Met andere woorden, het biedt vier keer de pixels van 1080p.
@@ -63,7 +63,7 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
       * Breedte=automatisch; Hoogte=720; Bitsnelheid=2500 kbps
       * Breedte=automatisch; Height=1080; Bitsnelheid=5000 kbps
       * Breedte=automatisch; Hoogte=1440; Bitsnelheid=6600 kbps
-   * Verwerk 360 video-inhoud in een map die exclusief is bestemd voor 360 video-elementen.
+   * Verwerk 360-video-inhoud in een map die exclusief is bestemd voor 360 video-elementen.
 
    Deze benadering plaatst grotere eisen op het netwerk en cpu van het eind - gebruiker.
 
@@ -119,7 +119,7 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-me
    * Als u de kijkhoek van de statische scène wilt wijzigen, sleept u de aanwijzer over de video.
    * Selecteer de video&#39;s om het afspelen te starten **[!UICONTROL Play]** knop. Terwijl de video wordt afgespeeld, sleept u de aanwijzer over de video om de kijkhoek te wijzigen.
 
-   ![6_5_360video-voorvertoning-video360-social ](assets/6_5_360video-preview-video360-social.png)*Een schermafbeelding van 360 pixels.*
+   ![6_5_360video-voorvertoning-video360-social ](assets/6_5_360video-preview-video360-social.png)*Een schermafbeelding van 360 video.*
 
    * Selecteer in de lijst Viewers de optie **[!UICONTROL Video360VR]**.
 
