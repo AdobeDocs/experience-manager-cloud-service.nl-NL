@@ -2,7 +2,7 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 1%
@@ -38,9 +38,9 @@ Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
 ## Hoe te om de Hulpmiddelen van de Ontwikkelaar van de AEM voor Eclipse te installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Als u eenmaal aan de [vereisten](#requirements) hierboven kunt u de plug-in als volgt installeren:
+Wanneer u aan [vereisten](#requirements) hierboven kunt u de plug-in als volgt installeren:
 
-1. Open de [AEM website Developer Tools.](https://eclipse.adobe.com/aem/dev-tools/)
+1. Open de [Website AEM Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. Kopieer de **Installatiekoppeling**.
 

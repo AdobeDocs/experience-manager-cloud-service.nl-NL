@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
@@ -62,9 +62,9 @@ Om PWA Studio met het eindpunt GraphQL van AEM te verbinden, kunt u gebruiken [A
 
    U kunt meer details over de aanpassing van de component van de Navigatie in vinden [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) en in de [Uitbreidingskader](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentatie van de PWA Studio.
 
-1. De cliënt van Apollo zal het AEM eindpunt GraphQL bij verwachten <https://pwa-studio/endpoint.js>. Om het eindpunt aan deze plaats in kaart te brengen, zult u de configuratie UPWARD van uw toepassing van de PWA Studio moeten aanpassen: a. Voeg de variabele AEM_CFM_GRAPHQL aan pwa-root/.env toe en pas het aan punt aan uw AEM eindpunt van de Fragmenten van de Inhoud GraphQL aan.
+1. De cliënt van Apollo zal het AEM eindpunt GraphQL bij verwachten `<https://pwa-studio/endpoint.js>`. Om het eindpunt aan deze plaats in kaart te brengen, zult u de configuratie UPWARD van uw toepassing van de PWA Studio moeten aanpassen: a. Voeg de variabele AEM_CFM_GRAPHQL aan pwa-root/.env toe en pas het aan punt aan uw AEM eindpunt van de Fragmenten van de Inhoud GraphQL aan.
 
-   Voorbeeld: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
+   Voorbeeld: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
    b. Voeg een volmachtsoplosser aan uw configuratie UPWARD toe. Een voorbeeld-UPWARD-configuratie kan er als volgt uitzien:
 
@@ -95,13 +95,13 @@ Volg de documentatie van de Fragmenten van de Inhoud van de AEM aan opstelling e
 
    Stel de toegestane oorspronkelijke eigenschap in op de volledige hostnaam van de PWA-toepassing.
 
-   Voorbeeld:  <https://pwa-studio-test-vflyn.local.pwadev:9366>
+   Voorbeeld:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling Referrer-filter (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
    Stel de eigenschap allow.hosts in op de hostnaam van uw PWA-toepassing.
 
-   Voorbeeld: pwa-studio-test-vflyn.local.pwadev
+   Voorbeeld: `pwa-studio-test-vflyn.local.pwadev`
 
 Hier vindt u volledige voorbeelden van beide configuraties: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

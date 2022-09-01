@@ -3,9 +3,9 @@ title: OSGi configureren voor Adobe Experience Manager as a Cloud Service
 description: 'OSGi-configuratie met geheime waarden en milieu-specifieke waarden '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 69fa35f55617746bfd9e8bdf6e1a0490c341ae90
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3240'
+source-wordcount: '3216'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 [OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
 
-OSGi verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare, en samenwerkingscomponenten worden geconstrueerd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld. Dit staat gemakkelijk beheer van bundels OSGi toe aangezien zij kunnen worden tegengehouden, geïnstalleerd, individueel begonnen. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke component OSGi is bevat in één van de diverse bundels. Zie voor meer informatie de [OSGi-specificatie](https://www.osgi.org/Specifications/HomePage).
+OSGi verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare, en samenwerkingscomponenten worden geconstrueerd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld. Dit staat gemakkelijk beheer van bundels OSGi toe aangezien zij kunnen worden tegengehouden, geïnstalleerd, individueel begonnen. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke component OSGi is bevat in één van de diverse bundels. Zie voor meer informatie de [OSGi-specificatie](https://help.eclipse.org/latest/index.jsp).
 
 U kunt de configuratiemontages voor componenten OSGi door configuratiedossiers beheren die deel van een AEM codeproject uitmaken.
 
@@ -122,7 +122,7 @@ Er zijn drie soorten OSGi configuratiewaarden die met Adobe Experience Manager a
    }
    ```
 
-   Merk op dat één enkel OSGi- configuratiedossier om het even welke combinatie van deze types van configuratiewaarde samen kan gebruiken. Bijvoorbeeld:
+   Één enkel OSGi- configuratiedossier kan om het even welke combinatie deze types van configuratiewaarde samen gebruiken. Bijvoorbeeld:
 
    ```json
    {
@@ -174,7 +174,7 @@ Er zijn twee manieren om configuraties tot stand te brengen OSGi, zoals hieronde
 De JSON geformatteerde OSGi configuratiedossiers kunnen door hand in het AEM project worden geschreven. Dit is vaak de snelste manier om configuraties OSGi voor bekende componenten te creëren OSGi, en vooral de componenten van douane OSGi die door de zelfde ontwikkelaar die de configuraties bepalen zijn ontworpen en ontwikkeld. Deze benadering kan ook worden gebruikt om configuraties voor de zelfde component te kopiëren/te kleven en bij te werken OSGi over diverse runmode omslagen.
 
 1. In uw winde, open `ui.apps` project, bepaal de plaats van of creeer de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe configuratie OSGi moet uitvoeren
-1. In deze configuratiemap, creeer een nieuw `<PID>.cfg.json` bestand. PID is de Persistente Identiteit van de component OSGi. Het is gewoonlijk de volledige klassennaam van de OSGi componentimplementatie. Bijvoorbeeld:
+1. In deze configuratiemap maakt u een `<PID>.cfg.json` bestand. PID is de Persistente Identiteit van de component OSGi. Het is gewoonlijk de volledige klassennaam van de OSGi componentimplementatie. Bijvoorbeeld:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 Merk op dat OSGi de namen van de configuratiefabrieksdossiers gebruiken `<factoryPID>-<name>.cfg.json` naamgevingsconventie
 1. De nieuwe openen `.cfg.json` dossier, en bepaal de sleutel/waardecombinaties voor het bezit OSGi en waardeparen, na [JSON OSGi-configuratie](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
@@ -202,7 +202,7 @@ De AEM QuickStart Jar&#39;s AEM Web Console van SDK kan worden gebruikt vormt co
 1. De configuratie OSGi in formaat JSON zal in de Serialized sectie van de Eigenschappen van de Configuratie tonen
    ![OSGi-installateursconfiguratieserver](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. In uw winde, open `ui.apps` project, bepaal de plaats van of creeer de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe configuratie OSGi moet uitvoeren.
-1. In deze configuratiemap, creeer een nieuw `<PID>.cfg.json` bestand. De PID is dezelfde waarde uit stap 5.
+1. In deze configuratiemap maakt u een `<PID>.cfg.json` bestand. De PID is dezelfde waarde uit stap 5.
 1. Plak de Generialiseerde Eigenschappen van de Configuratie van Stap 10 in `.cfg.json` bestand.
 1. Sla uw wijzigingen op in de nieuwe `.cfg.json` bestand.
 1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe.
@@ -303,7 +303,7 @@ Als een bezit OSGi verschillende waarden voor auteur tegenover publiceert vereis
 * Apart `config.author` en `config.publish` U dient OSGi-mappen te gebruiken, zoals beschreven in het dialoogvenster [Sectie Resolutie van uitvoermodus](#runmode-resolution).
 * Er zijn twee opties om de onafhankelijke variabelennamen te maken die moeten worden gebruikt:
    * de eerste optie, die wordt aanbevolen: in alle OSGi-mappen (zoals `config.author` en `config.publish`) gedeclareerd om verschillende waarden te definiëren, dezelfde variabelenaam gebruiken. Bijvoorbeeld
-      `$[env:ENV_VAR_NAME;default=<value>]`, waarbij de standaardwaarde overeenkomt met de standaardwaarde voor die laag (auteur of publicatie). Wanneer u de omgevingsvariabele instelt via [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) of via een client, onderscheid maken tussen de lagen aan de hand van de parameter &quot;service&quot; zoals in dit [API-naslagdocumentatie](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). De &quot;dienst&quot;parameter zal de waarde van de variabele aan de aangewezen OSGi rij binden. Het kan &quot;auteur&quot;, &quot;publish&quot; of &quot;preview&quot; zijn.
+      `$[env:ENV_VAR_NAME;default=<value>]`, waarbij de standaardwaarde overeenkomt met de standaardwaarde voor die laag (auteur of publicatie). Wanneer u de omgevingsvariabele instelt via [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) of via een client, onderscheid maken tussen de lagen aan de hand van de parameter &quot;service&quot; zoals in dit [API-naslagdocumentatie](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). De &quot;dienst&quot;parameter zal de waarde van de variabele aan de aangewezen OSGi rij binden. Het kan &quot;auteur&quot;, &quot;publish&quot; of &quot;preview&quot; zijn.
    * de tweede optie is het declareren van verschillende variabelen met een voorvoegsel, zoals `author_<samevariablename>` en `publish_<samevariablename>`
 
 ### Configuratievoorbeelden {#configuration-examples}
@@ -460,7 +460,7 @@ config.dev
 
 ## Cloud Manager API-indeling voor het instellen van eigenschappen {#cloud-manager-api-format-for-setting-properties}
 
-Zie [deze pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) over hoe API moet worden gevormd.
+Zie [deze pagina](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) over hoe API moet worden gevormd.
 >[!NOTE]
 >
 >Zorg ervoor dat de gebruikte API voor Cloud Manager de rol &quot;Deployment Manager - Cloud Service&quot; heeft toegewezen. Andere rollen kunnen niet alle onderstaande opdrachten uitvoeren.
@@ -491,7 +491,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >Standaardvariabelen worden niet ingesteld via API, maar in de eigenschap OSGi zelf.
 >
->Zie [deze pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) voor meer informatie .
+>Zie [deze pagina](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) voor meer informatie .
 
 ### Waarden ophalen via API {#getting-values-via-api}
 
@@ -499,7 +499,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-Zie [deze pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) voor meer informatie .
+Zie [deze pagina](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) voor meer informatie .
 
 ### Waarden verwijderen via API {#deleting-values-via-api}
 
@@ -509,7 +509,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 Als u een variabele wilt verwijderen, neemt u deze op met een lege waarde.
 
-Zie [deze pagina](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) voor meer informatie .
+Zie [deze pagina](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) voor meer informatie .
 
 ### Waarden ophalen via de opdrachtregel {#getting-values-via-cli}
 

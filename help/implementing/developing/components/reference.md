@@ -2,7 +2,7 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 0%
@@ -59,11 +59,11 @@ Uw component wordt weergegeven met [HTML.](https://www.w3schools.com/htmL/html_i
 
 Het wordt aanbevolen de code die verantwoordelijk is voor opmaak en rendering, gescheiden te houden van de code die de logica regelt die wordt gebruikt om de inhoud van de component te selecteren.
 
-Deze filosofie wordt ondersteund door [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html), wordt een sjabloontaal die doelbewust beperkt is om een echte programmeertaal te garanderen, gebruikt om de onderliggende bedrijfslogica te definiëren. Dit mechanisme markeert de code die voor een bepaalde mening wordt geroepen en, indien vereist, staat specifieke logica voor verschillende meningen van de zelfde component toe.
+Deze filosofie wordt ondersteund door [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), wordt een sjabloontaal die doelbewust beperkt is om een echte programmeertaal te garanderen, gebruikt om de onderliggende bedrijfslogica te definiëren. Dit mechanisme markeert de code die voor een bepaalde mening wordt geroepen en, indien vereist, staat specifieke logica voor verschillende meningen van de zelfde component toe.
 
 Deze (facultatieve) logica kan op verschillende manieren worden uitgevoerd en wordt aangehaald van HTML met specifieke bevelen:
 
-* Java gebruiken - [De HTML Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) Hiermee kan een HTML-bestand toegang krijgen tot hulplijnmethoden in een aangepaste Java-klasse. Hierdoor kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de inhoud van de component te implementeren.
+* Java gebruiken - [De HTML Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) Hiermee kan een HTML-bestand toegang krijgen tot hulplijnmethoden in een aangepaste Java-klasse. Hierdoor kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de inhoud van de component te implementeren.
 * JavaScript gebruiken - [De HTML JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) Hiermee krijgt een HTML-bestand toegang tot hulplijncode die in JavaScript is geschreven. Hierdoor kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
 * Het gebruik van Client-Side Libraries - Moderne websites vertrouwen sterk op client-side verwerking door complexe JavaScript- en CSS-code. Zie het document [Client-Side bibliotheken gebruiken op AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) voor meer informatie .
 

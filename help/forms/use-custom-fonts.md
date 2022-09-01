@@ -2,7 +2,7 @@
 title: Aangepaste lettertypen gebruiken
 description: Aangepaste lettertypen gebruiken
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Naast de eerder genoemde bewerkingen kunt u lettertypen gebruiken die zijn opgen
 
 ## Gedrag van PDF-documenten
 
-U kunt [een lettertype insluiten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) naar een PDF-document. Wanneer een lettertype is ingesloten, wordt het PDF-document op alle platformen op dezelfde manier weergegeven. Er worden ingesloten lettertypen gebruikt voor een consistente vormgeving. Wanneer een lettertype niet is ingesloten, is de rendering van het lettertype afhankelijk van de renderinstellingen van PDF viewer-clients zoals Acrobat of Acrobat Reader. Als het lettertype beschikbaar is op de clientcomputer, gebruikt de PDF het opgegeven lettertype, anders wordt de PDF weergegeven met een standaard fallback-lettertype.
+U kunt [een lettertype insluiten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) naar een PDF-document. Wanneer een lettertype is ingesloten, wordt het PDF-document op alle platformen op dezelfde manier weergegeven. Er worden ingesloten lettertypen gebruikt voor een consistente vormgeving. Wanneer een lettertype niet is ingesloten, is de rendering van het lettertype afhankelijk van de renderinstellingen van PDF viewer-clients zoals Acrobat of Acrobat Reader. Als het lettertype beschikbaar is op de clientcomputer, gebruikt de PDF het opgegeven lettertype, anders wordt de PDF weergegeven met een standaard fallback-lettertype.
 
 ## Aangepaste lettertypen toevoegen aan de as a Cloud Service Forms-omgeving {#custom-fonts-cloud-service}
 

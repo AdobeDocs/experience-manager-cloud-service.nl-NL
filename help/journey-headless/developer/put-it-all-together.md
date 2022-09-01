@@ -2,9 +2,9 @@
 title: Alles bij elkaar plaatsen - uw app en uw inhoud in AEM headless
 description: In dit deel van de AEM Headless Ontwikkelaarsreis, leer hoe te om uw AEMProject met inbegrip van Inhoudsfragmenten, uw vraag GraphQL, uw vraag REST API, en uw toepassing te nemen, en het voor te bereiden voor het leven.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ De AEM SDK wordt gebruikt om aangepaste code te maken en in te voeren. Het is he
 
 Anders dan de AEM SDK, de AEM **Headless SDK** Deze groep bevat bibliotheken die door clients kunnen worden gebruikt om via HTTP snel en eenvoudig te communiceren met AEM headless API&#39;s.
 
-Voor meer informatie over de AEM Headless SDK raadpleegt u de [documentatie hier](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/how-to/aem-headless-sdk.html?lang=en).
+Voor meer informatie over de AEM Headless SDK raadpleegt u de [documentatie hier](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
 
 ## Aanvullende ontwikkelingsinstrumenten {#additional-development-tools}
 
@@ -54,11 +54,11 @@ Naast de AEM SDK hebt u aanvullende gereedschappen nodig die het ontwikkelen en 
 
 Omdat AEM een Java™-toepassing is, moet u Java™ en de Java™ SDK installeren om de ontwikkeling van AEM as a Cloud Service te ondersteunen.
 
-Git is wat u zult gebruiken om broncontrole te beheren en de veranderingen in de Manager van de Wolk te controleren en dan hen op te stellen aan een productie-instantie.
+Git is wat u gebruikt om broncontrole te beheren en de veranderingen in de Manager van de Wolk in te checken en dan hen op te stellen aan een productie-instantie.
 
 AEM gebruikt Apache Maven om projecten te bouwen die uit het AEM Maven Project archetype worden geproduceerd. Alle belangrijke IDEs verstrekt integratiesteun voor Maven.
 
-Node.js is een runtimeomgeving van JavaScript die wordt gebruikt om met de front-end activa van AEM project te werken `ui.frontend` subproject. Node.js wordt gedistribueerd met npm, is de facto het pakketbeheer Node.js, dat wordt gebruikt om JavaScript gebiedsdelen te beheren.
+Node.js is een runtimeomgeving van JavaScript die wordt gebruikt om met de front-end activa van AEM project te werken `ui.frontend` subproject. Node.js wordt gedistribueerd met npm, is de facto Manager van het Pakket Node.js, die wordt gebruikt om JavaScript gebiedsdelen te beheren.
 
 ## Componenten van een AEM systeem in één oogopslag {#components-of-an-aem-system-at-a-glance}
 
@@ -74,9 +74,9 @@ Een volledige AEM omgeving bestaat uit een Auteur, Publish en Dispatcher. Deze c
 
 ## De workflow voor lokale ontwikkeling {#the-local-development-workflow}
 
-Het lokale ontwikkelingsproject is gebaseerd op Apache Maven en gebruikt Git voor broncontrole. Om het project bij te werken, kunnen de ontwikkelaars hun aangewezen geïntegreerde ontwikkelomgeving, zoals Eclipse, de Code van Visual Studio of IntelliJ, onder andere gebruiken.
+Het lokale ontwikkelingsproject is gebaseerd op Apache Maven en gebruikt Git voor broncontrole. Om het project bij te werken, kunnen de ontwikkelaars hun aangewezen geïntegreerde ontwikkelomgeving, zoals Eclipse, de Code van Visual Studio, of IntelliJ, onder anderen gebruiken.
 
-Als u code- of inhoudsupdates wilt testen die door uw toepassing zonder kop worden opgenomen, moet u de updates voor de lokale AEM-runtime implementeren, die lokale instanties van de AEM auteur en publicatieservices bevat.
+Als u code- of inhoudsupdates wilt testen die door uw toepassing zonder kop worden opgenomen, moet u de updates implementeren naar de lokale AEM runtime, die lokale instanties van de AEM auteur en publicatieservices bevat.
 
 Let op het verschil tussen de verschillende componenten in de lokale AEM runtime, want het is belangrijk dat u de updates test op de plaatsen waar ze het belangrijkst zijn. Test bijvoorbeeld de inhoud van updates op de auteur of test nieuwe code op de publicatie-instantie.
 
@@ -90,13 +90,13 @@ Om dat te doen, moet je alles samenvoegen: code, inhoud, en configuratie en test
 
 De lokale ontwikkelomgeving bestaat uit drie hoofdgebieden:
 
-1. Het AEM Project - dit zal alle douanecode, configuratie en inhoud bevatten de AEM ontwikkelaars zullen werken aan
-1. Lokale AEM Runtime - lokale versies van de AEM auteur en publiceer de diensten die zullen worden gebruikt om code van het AEM project op te stellen
+1. Het AEM Project - dit project bevat alle douanecode, configuratie, en inhoud de AEM ontwikkelaars zullen werken aan
+1. Lokale AEM Runtime - lokale versies van de AEM auteur en publiceer de diensten die worden gebruikt om code van het AEM project op te stellen
 1. De lokale Dispatcher Runtime - een lokale versie van de Apache htttpd-webserver die de Dispatcher-module bevat
 
 Nadat de lokale ontwikkelomgeving is ingesteld, kunt u inhoud die in de React-app wordt gebruikt, simuleren door een statische Node-server lokaal te implementeren.
 
-Zie voor een diepgaander overzicht van het instellen van een lokale ontwikkelomgeving en alle afhankelijkheden die nodig zijn voor de voorvertoning van inhoud de [Implementatiedocumentatie voor productie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
+<!-- THIS TOPIC IS 404. IT DOES NOT APPEAR IN THE TOC OR ANYWHERE ELSE To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/headless-tutorial/graphql/multi-step/production-deployment.html). -->
 
 ## Volgende functies {#whats-next}
 
@@ -105,7 +105,7 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 * Kennis hebben van de AEM-ontwikkelingsinstrumenten
 * De lokale ontwikkelingsworkflow begrijpen
 
-U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Hoe u met uw headless toepassing kunt gaan werken](/help/journey-headless/developer/go-live.md) waar je je AEM Headless project live neemt!
+Ga door met het doornemen van het document zonder AEM [Hoe u met uw headless toepassing kunt gaan werken](/help/journey-headless/developer/go-live.md) waar je je AEM Headless project live neemt!
 
 ## Aanvullende bronnen {#additional-resources}
 

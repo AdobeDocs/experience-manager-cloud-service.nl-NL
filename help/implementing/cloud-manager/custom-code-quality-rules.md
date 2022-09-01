@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit
 description: Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van [het testen van de codekwaliteit]. Zij zijn gebaseerd op beste praktijken van AEM Techniek.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3493'
 ht-degree: 3%
 
 ---
@@ -772,7 +772,7 @@ AEM componenten die een Klassieke dialoog UI hebben zouden altijd een overeenkom
 * Een component met een dialoogvenster voor het ontwerpen van een klassieke gebruikersinterface (d.w.z. een `design_dialog` knooppunt) moet een corresponderend dialoogvenster voor het ontwerpen van een aanraakinterface hebben (dat wil zeggen een `cq:design_dialog` onderliggende node).
 * Een component met zowel een dialoogvenster voor klassieke gebruikersinterface als een dialoogvenster voor klassieke gebruikersinterface moet zowel een corresponderend dialoogvenster voor aanraakinterface als een overeenkomstig dialoogvenster voor aanraakgebruikersinterface hebben.
 
-De documentatie van de Hulpmiddelen van de Modernisering van de AEM verstrekt documentatie en tooling voor hoe te om componenten van Klassieke UI in Aanraakinterface om te zetten. Zie [de documentatie over AEM moderniseringsinstrumenten](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) voor meer informatie .
+De documentatie van de Hulpmiddelen van de Modernisering van de AEM verstrekt documentatie en tooling voor hoe te om componenten van Klassieke UI in Aanraakinterface om te zetten. Zie [de documentatie over AEM moderniseringsinstrumenten](https://opensource.adobe.com/aem-modernize-tools/) voor meer informatie .
 
 ### Pakketten mogen geen MIP-bestand en onveranderbare inhoud mengen {#oakpal-packages-immutable}
 

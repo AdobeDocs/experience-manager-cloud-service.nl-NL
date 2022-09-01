@@ -2,9 +2,9 @@
 title: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 description: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Adobe heeft Adobe Commerce GraphQL APIs als zijn officiële handel API voor alle
 
 ## 2. Kunnen de activa van het Product (beelden) van AEM via Adobe Commerce worden opgeslagen en van verwijzingen voorzien admin? Hoe kunnen activa van Dynamic Media worden verbruikt?
 
-Er is geen officiële AEM Assets - Adobe Commerce-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op [marktplaats](https://marketplace.magento.com/bounteous-dam.html).
+Er is geen officiële AEM Assets - Adobe Commerce-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op [marktplaats](https://marketplace.magento.com) <!-- THIS IS THE OLD URL THAT WAS USED. IT WAS 404 (https://marketplace.magento.com/bounteous-dam.html) -->
 
-Of als tijdelijke oplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de middelen handmatig opslaan in Adobe Commerce. Dynamic Media maakt nu deel uit van AEM Assets en zal op dezelfde manier werken.
+Of als tijdelijke oplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de middelen handmatig opslaan in Adobe Commerce. Dynamic Media maakt nu deel uit van AEM Assets en werkt op dezelfde manier.
 
 ## 3. Maakt het uit waar de handelsoplossing wordt ingezet? (Op prem of in de cloud)
 
-Nee, het maakt niet uit waar uw handelsoplossing wordt geïmplementeerd. CIF en de AEM zullen werken ongeacht het plaatsingsmodel. Als de oplossing echter wordt geïmplementeerd met de aanbevolen E2E-referentiearchitectuur, kunnen E2E-tests worden uitgevoerd met prestatie-KPI&#39;s die een typisch bedrijfsklantprofiel vertegenwoordigen. Dit zal aanvullende informatie opleveren die als benchmark kan worden gebruikt.
+Nee, het maakt niet uit waar uw handelsoplossing wordt geïmplementeerd. CIF en de AEM storefront werken ongeacht het plaatsingsmodel. Als de oplossing echter wordt geïmplementeerd met de aanbevolen E2E-referentiearchitectuur, kunnen E2E-tests worden uitgevoerd met prestatie-KPI&#39;s die een typisch bedrijfsklantprofiel vertegenwoordigen. Deze methode biedt aanvullende informatie die als benchmark kan worden gebruikt.
 
 ## 4. Hoe worden cataloguspagina&#39;s of productpagina&#39;s in AEM gemaakt? Hoe blijven ze in AEM?
 
@@ -43,23 +43,23 @@ PIM-gegevens worden via GraphQL-verzoeken aan AEM en clients beschikbaar gesteld
 
 ## 8. Verzendt u ook de prijzen en andere gegevens in cache via Dispatcher. Vormt dat een veelvuldige uitdaging voor het ongeldig maken van cache?
 
-Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen op de Dispatcher. Dynamische gegevens worden via GraphQL API&#39;s direct opgehaald aan de clientzijde met webcomponenten. Alleen statische gegevens (zoals product- of categoriegegevens) worden in cache geplaatst op de Dispatcher. Als de productgegevens veranderen, zal er een behoefte aan geheim voorgeheugenbevestiging zijn.
+Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen op de Dispatcher. Dynamische gegevens worden via GraphQL API&#39;s direct opgehaald aan de clientzijde met webcomponenten. Alleen statische gegevens (zoals product- of categoriegegevens) worden in cache geplaatst op de Dispatcher. Als de productgegevens veranderen, is er behoefte aan geheim voorgeheugenbevestiging.
 
 ## 9. Hoe werkt cachevervalsing voor AEM Dispatcher met AEM en handel?
 
-We raden u aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad, adviseren wij teruggevend de gegevenscliënt-kant. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenongeldigverklaring, gelieve te verwijzen naar [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+We raden u aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad, adviseren wij teruggevend de gegevenscliënt-kant. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenongeldigverklaring, zie [De Dispatcher-cache optimaliseren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) en [Optimalisatie van AEM prestaties](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
 ## 10 Bestaat er een aanbeveling voor een uniforme zoekopdracht in AEM inhoud met Commerce?
 
-Er is een verwijzingsimplementatie voor productzoekopdrachten beschikbaar, maar er is geen uniforme zoekopdracht met inhoud. Deze eigenschap is gewoonlijk zeer klant-specifiek en beter opgelost op een project-specifiek niveau.
+Er is een verwijzingsimplementatie voor productzoekopdrachten beschikbaar, maar er is geen uniforme zoekopdracht met inhoud. Deze eigenschap is klant-specifiek en beter opgelost op een project-specifiek niveau.
 
 ## 11. Hoe werkt Search met AEM en handel die CIF gebruiken?
 
-CIF verstrekt de bar van het Onderzoek en de componenten van het Resultaat van het Onderzoek. De component van de bar van het Onderzoek verzendt een verzoek GraphQL met de onderzoekstermijn naar de handeloplossing die dan een productlijst terugkeert die productnaam, prijs, SLUG, enz. omvat. De component van het Resultaat van het Onderzoek toont dan de onderzoeksresultaten in een galeriemening op een pagina van het onderzoeksresultaat die in AEM wordt gecreeerd. De zoekfunctie ondersteunt standaard zoeken in volledige tekst. Wij gebruiken de sleutel SLUG/url om een verwijzing naar PDP te bouwen.
+CIF verstrekt de bar van het Onderzoek en de componenten van het Resultaat van het Onderzoek. De component van de bar van het Onderzoek verzendt een verzoek GraphQL met de onderzoekstermijn naar de handels oplossing die dan een productlijst terugkeert die productnaam, prijs, SLUG, etc. omvat. De component van het Resultaat van het Onderzoek toont dan de onderzoeksresultaten in een galeriemening op een pagina van het onderzoeksresultaat die in AEM wordt gecreeerd. De zoekfunctie ondersteunt standaard zoeken in volledige tekst. Wij gebruiken de sleutel SLUG/url om een verwijzing naar PDP te bouwen.
 
 ## 12. Hoe kunnen productgegevens in MSM of vertalingen worden gebruikt?
 
-Productgegevens worden meestal al vertaald in PIM of in Adobe Commerce. De integratie AEM - Adobe Commerce ondersteunt de verbinding met meerdere Adobe Commerce-winkels en -winkelweergaven. In een MSM-installatie is doorgaans één AEM site gekoppeld aan één Adobe Commerce-winkelweergave.
+Productgegevens zijn al vertaald in PIM of Adobe Commerce. De integratie AEM - Adobe Commerce ondersteunt de verbinding met meerdere Adobe Commerce-winkels en -winkelweergaven. In een MSM-instelling wordt doorgaans één AEM site gekoppeld aan één Adobe Commerce-winkelweergave.
 
 ## 13. Is er een manier om de productgegevens te verbeteren met commerciële tekst? Waar doe je dit? In AEM of in de handelsoplossing?
 
@@ -67,7 +67,7 @@ We raden u aan marketinggerelateerde gegevens en inhoud in AEM te beheren. Decor
 
 ## 14. Hoe kunnen wij naleving PCI verzekeren wanneer het gebruiken van AEM voor de volledige presentatielaag?
 
-We raden je aan geabstraheerde betalingsmethoden te gebruiken. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch Adobe of de handelsoplossingen kaarthoudende gegevens houden of overgaan. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over Adobe Commerce PCI-compatibiliteit raadpleegt u [PGB-compatibiliteitseisen](https://business.adobe.com/products/magento/pci-compliance.html).
+We raden je aan geabstraheerde betalingsmethoden te gebruiken. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch Adobe of de handelsoplossingen kaarthoudende gegevens houden of overgaan. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI-Volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over Adobe Commerce PCI-compatibiliteit raadpleegt u [PGB-compatibiliteitseisen](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## 15. Als ik gebruik van AEM en Adobe Commerce cloud-versies, is deze gezamenlijke oplossing PCI-compatibel?
 
