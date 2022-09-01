@@ -1,9 +1,10 @@
 ---
 title: Contentfragmenten beheren
 description: Leer hoe te om de console van Fragmenten van de Inhoud te gebruiken om uw AEM Contentfragmenten te beheren; voor het ontwerpen van pagina's of als basis voor inhoud zonder kop.
-source-git-commit: 9de8becfd69ea2a65a847cba88468c94e2fdf484
+exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
+source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '1915'
 ht-degree: 1%
 
 ---
@@ -35,6 +36,20 @@ De [Inhoudsfragmenteditor](#opening-the-fragment-editor) biedt diverse [modi](#m
 >[!NOTE]
 >
 >Inhoudsfragmenten worden opgeslagen als **Activa**. Zij worden hoofdzakelijk beheerd vanuit de **Inhoudsfragmenten** console, maar kan ook vanuit de **Activa** console.
+
+## De console met inhoudsfragmenten {#content-fragments-console}
+
+De console van de Fragmenten van de Inhoud verleent directe toegang tot uw fragmenten, en verwante taken. Zie voor meer informatie:
+
+* [Basisstructuur en verwerking van de console voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+
+* [De informatie die over uw inhoudsfragmenten wordt verstrekt](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+
+* [Handelingen voor een inhoudsfragment in de inhoudsfragmentconsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+
+* [De kolommen aanpassen die beschikbaar zijn in de console voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+
+* [Zoeken en filteren in de console voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
@@ -78,61 +93,6 @@ Het inhoudsfragment is gepubliceerd.
 Het inhoudsfragment is bewerkt nadat het is gepubliceerd (maar voordat de wijziging is gepubliceerd).
 * **Ongepubliceerd**
 Het inhoudsfragment is niet gepubliceerd.
-
-## Handelingen voor een inhoudsfragment in de inhoudsfragmentconsole {#actions-content-fragment-console}
-
-In de **Inhoudsfragmenten** een reeks acties beschikbaar is voor uw inhoudsfragmenten op de werkbalk:
-
-![Consoleacties](assets/cfm-managing-cf-console-01.png)
-
-* **Openen in elementen**
-* **Maken**
-* De **Verwezen door** de kolom biedt ook een directe koppeling om alle bovenliggende verwijzingen van dat fragment weer te geven; inclusief verwijzen naar inhoudsfragmenten, ervaringsfragmenten en pagina&#39;s.
-* Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
-
-Nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikbaar:
-
-![Console-handelingen - geselecteerd fragment](assets/cfm-managing-cf-console-selected-01.png)
-
-* **Open**
-* **Publiceren** (en **Publiceren ongedaan maken**)
-* **Kopiëren**
-* **Verplaatsen**
-* **Naam wijzigen**
-* **Verwijderen**
-
->[!NOTE]
->
->Handelingen zoals Publiceren, Publiceren ongedaan maken, Verwijderen, Verplaatsen, Naam wijzigen, Kopiëren, een asynchrone taak activeren. De voortgang van die taak kan worden gecontroleerd via de interface AEM Async Jobs.
-
-## De weergave in de console Inhoudsfragmenten aanpassen {#viewing-content-fragment-console}
-
-De console toont informatie over de inhoudsfragmenten - in de huidige omslag en alle kindomslagen.
-
-U kunt de weergegeven informatie aanpassen met de **Tabel aanpassen** pictogram:
-
-![Tabelpictogram aanpassen](assets/cfm-managing-cf-console-customize-table-icon.png)
-
-Hierdoor wordt de **Tabel aanpassen** het dialoogvenster waarin u de beschikbare kolommen kunt selecteren of deselecteren:
-
-![Tabel aanpassen](assets/cfm-managing-cf-console-customize-table.png)
-
-## Zoeken en filteren in de console voor inhoudsfragmenten {#search-filter-content-fragment-console}
-
-U kunt de Inhoudsfragmenten zoeken en/of filteren die in de console moeten worden weergegeven.
-
-U kunt:
-
-* Selecteer de vereiste map
-* Selecteer de filters met de **Filters tonen** en het zoekvak parallel gebruiken:
-
-![Tabelpictogram aanpassen](assets/cfm-managing-cf-console-filter-search-01.png)
-
-Er zijn filters beschikbaar:
-
-![Filteren en zoeken](assets/cfm-managing-cf-console-filter-search-02.png)
-
-De filters en zoekcombinatie kunnen ook worden opgeslagen voor latere referentie.
 
 ## De fragmenteditor openen {#opening-the-fragment-editor}
 
@@ -284,7 +244,7 @@ Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd
 
 Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving. Dit gebeurt met de standaardfunctionaliteit Middelen
 
-* Van de **Publiceren** op de werkbalk van het dialoogvenster [Content Fragments-console](#actions-content-fragment-console)
+* Van de **Publiceren** op de werkbalk van het dialoogvenster [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
    * **Nu** - na bevestiging wordt het fragment onmiddellijk gepubliceerd
    * **Schema** - u kunt de datum en tijd selecteren waarop het fragment wordt gepubliceerd
 
@@ -325,6 +285,14 @@ Een fragment verwijderen:
 
    >[!CAUTION]
    Als er al vanuit een ander fragment of een pagina naar het fragment wordt verwezen, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met een **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
+
+## Bovenliggende verwijzingen van het fragment zoeken {#parent-references-fragment}
+
+De details van ouderverwijzingen kunnen van worden betreden **Verwijzingen** kolom van de [Console voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+
+## Taalkopieën van het fragment zoeken {#language-copies-fragment}
+
+Nadere bijzonderheden over de taalkopieën zijn te vinden op het tabblad **Taal** kolom van de [Console voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Tijdlijn voor inhoudsfragmenten {#timeline-for-content-fragments}
 
@@ -406,4 +374,3 @@ U kunt terugkeren naar een specifieke versie van het fragment:
    Selecteer de gewenste versie en klik vervolgens op **Deze versie herstellen** handeling.
 
 * while [een versie vergelijken met de huidige versie](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **Vorige versie** naar de geselecteerde versie.
-

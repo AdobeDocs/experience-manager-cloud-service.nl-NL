@@ -2,9 +2,9 @@
 title: Document met record genereren voor adaptieve Forms
 description: Verklaart hoe u een malplaatje voor een Document van Verslag (DoR) voor Aangepast Forms kunt produceren.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
+source-git-commit: e9f235f4e4a1d314370a423ee8a2ef997346a794
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3602'
 ht-degree: 1%
 
 ---
@@ -400,7 +400,7 @@ De instelling van de component Document of Record is beschikbaar onder de eigens
 **Instellingen voor formulierniveau**
 
 * **Inclusief niet-gebonden velden in DoR:** Als u de eigenschap instelt, worden niet-gebonden velden van op schema gebaseerde adaptieve vorm opgenomen in Document of Record. Standaard is dit waar.
-* **Velden uitsluiten van DoR indien verborgen:** Als u de eigenschap instelt, wordt de werking van de veldeigenschap &#39;Uitsluiten van document van record&#39; genegeerd als deze niet true is. Als velden verborgen zijn op het moment dat het formulier wordt verzonden, worden ze uitgesloten van Document of Record als de eigenschap is ingesteld op true, op voorwaarde dat de eigenschap &#39;Uitsluiten van document van record&#39; niet is ingesteld.
+* **Velden uitsluiten van DoR indien verborgen:** Als u de eigenschap instelt, wordt de werking van de veldeigenschap &#39;Uitsluiten van document van record&#39; genegeerd als deze niet true is. Als velden verborgen zijn op het moment dat het formulier wordt verzonden, worden ze uitgesloten van Document of Record als de eigenschap is ingesteld op true, op voorwaarde dat de eigenschap &#39;Uitsluiten van document van record&#39; niet is ingesteld. Instelling [Revalidate op server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) eigenschap true geeft de verborgen velden aan die moeten worden uitgesloten van het document met record op de server.
 
 ## Een aangepast XCI-bestand gebruiken
 

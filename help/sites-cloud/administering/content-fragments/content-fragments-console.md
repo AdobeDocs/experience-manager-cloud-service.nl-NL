@@ -3,9 +3,9 @@ title: Console voor inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten beheert met de console voor inhoudsfragmenten.
 landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fragmenten van de Inhoud te beheren die op hoog volumengebruik van Inhoudsfragmenten voor Hoofdloze gebruik, maar ook gebruikt wanneer het ontwerpen van de pagina wordt geconcentreerd.
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
+source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ De console van de Fragmenten van de Inhoud kan direct van het hoogste niveau van
 
 ![Globale navigatie - de console van de Fragmenten van de Inhoud](assets/cfc-global-navigation.png)
 
+## Basisstructuur en verwerking van de console {#basic-structure-handling-content-fragments-console}
+
 Selecteren **Inhoudsfragmenten** opent de console in een nieuw lusje.
 
 ![Content Fragments console - Overview](assets/cfc-console-overview.png)
@@ -49,16 +51,20 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
    * Hier kunt u de mappenstructuur verbergen of weergeven
    * U kunt een specifieke vertakking van de boomstructuur selecteren
 * Het hoofd-/rechterdeelvenster - vanaf hier kunt u:
-   * Zie de lijst met alle inhoudsfragmenten in de geselecteerde vertakking van de structuur
+   * Zie de lijst met alle inhoudsfragmenten in de geselecteerde vertakking van de structuur:
       * De plaats wordt aangegeven door de broodkruimels; deze kunnen ook worden gebruikt om de locatie te wijzigen
-      * Inhoudsfragmenten uit de geselecteerde map en alle onderliggende mappen worden weergegeven
-         * Verschillende velden met informatie over een inhoudsfragment bevatten koppelingen. hiermee kunt u het juiste fragment openen in de editor
+      * Inhoudsfragmenten uit de geselecteerde map en alle onderliggende mappen worden weergegeven:
+         * [Verschillende informatiegebieden](#selectuse-available-columns) over een inhoudsfragment koppelingen verschaft; afhankelijk van het veld kunnen :
+            * Open het gewenste fragment in de editor
+            * Informatie over verwijzingen weergeven
+            * Informatie weergeven over taalversies van het fragment
+         * U kunt [Selecteer een of meer inhoudsfragmenten om de beschikbare acties weer te geven](#actions-selected-content-fragment)
       * U kunt een kolomkop selecteren om de tabel te sorteren op basis van die kolom. opnieuw selecteren om te schakelen tussen oplopend en aflopend
    * **[Maken](#creating-new-content-fragment)** een nieuw inhoudsfragment
    * [Filter](#filtering-fragments) de Inhoudsfragmenten op basis van een selectie van voorspelling en sla het filter op voor toekomstig gebruik
    * [Zoeken](#searching-fragments) de inhoudsfragmenten
-   * De tabelweergave aanpassen om geselecteerde kolommen met informatie weer te geven
-   * Gebruiken **Openen in elementen** om de huidige locatie rechtstreeks te openen in het dialoogvenster **Activa** console.
+   * [De tabelweergave aanpassen om geselecteerde kolommen met informatie weer te geven](#selectuse-available-columns)
+   * Gebruiken **Openen in elementen** om de huidige locatie rechtstreeks te openen in het dialoogvenster **Activa** console
 
       >[!NOTE]
       >
@@ -68,9 +74,69 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
       >* rechtstreeks vanuit het globale navigatievenster
 
 
+## Handelingen voor een (geselecteerd) inhoudsfragment {#actions-selected-content-fragment}
+
 Als u een specifiek fragment selecteert, wordt een werkbalk geopend die is toegespitst op de acties die beschikbaar zijn voor dat fragment. U kunt ook meerdere fragmenten selecteren. De selectie van acties wordt dienovereenkomstig aangepast.
 
 ![Content Fragments console - toolbar voor een geselecteerd fragment](assets/cfc-fragment-toolbar.png)
+
+* **Open**
+* **Publiceren** (en **Publiceren ongedaan maken**)
+* **Kopiëren**
+* **Verplaatsen**
+* **Naam wijzigen**
+* **Verwijderen**
+
+>[!NOTE]
+>
+>Handelingen zoals Publiceren, Publiceren ongedaan maken, Verwijderen, Verplaatsen, Naam wijzigen, Kopiëren, een asynchrone taak activeren. De voortgang van die taak kan worden gecontroleerd via de interface AEM Async Jobs.
+
+## De informatie die over uw inhoudsfragmenten wordt verstrekt {#information-content-fragments}
+
+Het hoofd/juiste paneel (lijstmening) van de console verstrekt een waaier van informatie over uw Fragments van de Inhoud. Sommige punten verstrekken ook directe verbindingen aan verdere acties en/of informatie:
+
+* **Naam**
+   * Hier vindt u een koppeling waarmee u het fragment in de editor kunt openen.
+* **Model**
+   * Hier vindt u een koppeling waarmee u het fragment in de editor kunt openen.
+* **Map**
+   * Verstrekt een verbinding om de omslag in de console te openen.
+Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
+* **Status**
+   * Alleen informatie
+* **Gewijzigd**
+   * Alleen informatie
+* **Gewijzigd door**
+   * Alleen informatie
+* **Gepubliceerd op**
+   * Alleen informatie
+* **Gepubliceerd door**
+   * Alleen informatie
+* **Verwezen door**
+
+   * Verstrekt een verbinding die een dialoog opent die van alle ouderverwijzingen van dat fragment een lijst maakt; inclusief verwijzen naar inhoudsfragmenten, ervaringsfragmenten en pagina&#39;s. Als u een specifieke verwijzing wilt openen, klikt u op de knop **Titel** in het dialoogvenster.
+
+      ![Content Fragments console - References dialog](assets/cfc-console-references-dialog.png)
+
+* **Taal**
+
+   * Geeft de landinstelling van het inhoudsfragment aan, samen met het totale aantal landinstellingen/taalkopieën dat aan het inhoudsfragment is gekoppeld.
+
+      ![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
+
+      * Klik/tik op de telling om een dialoog te openen die alle taalexemplaren toont. Als u een specifieke taalkopie wilt openen, klikt u op de knop **Titel** in het dialoogvenster.
+
+         ![Content Fragments console - Language dialog](assets/cfc-console-languages-dialog.png)
+
+## Beschikbare kolommen selecteren {#select-available-columns}
+
+Zoals met andere consoles kunt u de kolommen vormen die zichtbaar, en beschikbaar voor actie zijn:
+
+![Content Fragments console - column configuration](assets/cfc-console-column-icon.png)
+
+Dit zal een lijst van kolommen voorstellen die u kunt verbergen of tonen:
+
+![Content Fragments console - column configuration](assets/cfc-console-column-selection.png)
 
 ## Een nieuw inhoudsfragment maken {#creating-new-content-fragment}
 
