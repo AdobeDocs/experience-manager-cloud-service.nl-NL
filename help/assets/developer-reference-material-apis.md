@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
+source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1864'
 ht-degree: 1%
 
 ---
@@ -84,6 +84,8 @@ Deze aanpak biedt een schaalbare en krachtigere verwerking van geüploade bedrij
 
 >[!NOTE]
 Zie de cliëntcode om deze benadering in open-source uit te voeren [aem-upload bibliotheek](https://github.com/adobe/aem-upload).
+[!IMPORTANT]
+In bepaalde omstandigheden kunnen wijzigingen zich niet volledig verspreiden tussen verzoeken om Experience Manager vanwege uiteindelijk consistente aard van de opslag in Cloud Service. Dit leidt tot 404 reacties om uploadvraag in werking te stellen of te voltooien toe te schrijven aan de vereiste omslagverwezenlijking die niet wordt verspreid. Clients moeten 404 reacties verwachten en deze afhandelen door een nieuwe strategie uit te voeren.
 
 ### Uploaden starten {#initiate-upload}
 
