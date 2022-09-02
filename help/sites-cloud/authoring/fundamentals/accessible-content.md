@@ -2,9 +2,9 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager as a Cloud Service maken (WCAG 2.1-compatibiliteit)
 description: Gebruik AEM as a Cloud Service om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
 workflow-type: tm+mt
-source-wordcount: '14054'
+source-wordcount: '14053'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ De richtsnoeren worden ingedeeld op basis van drie conformiteitsniveaus: Niveau 
 
 * **Niveau A:** Uw site bereikt een minimaal basistoegankelijkheidsniveau. Om aan dit niveau te voldoen moet aan alle slagingscriteria voor Niveau A worden voldaan.
 * **Niveau AA:** Dit is een ideaal toegankelijkheidsniveau waarnaar u wilt streven, waarbij uw site een basisniveau van toegankelijkheid bereikt, zodat deze in de meeste situaties toegankelijk is voor de meeste mensen die de meeste technologieën gebruiken. Om aan dit niveau te voldoen moet aan alle slagingscriteria voor Niveau A en Niveau AA worden voldaan.
-* **Niveau AAA:** Uw site bereikt een zeer hoog toegankelijkheidsniveau. Om aan dit niveau te voldoen moet aan alle slagingscriteria voor Niveau A, Niveau AA en Niveau AAA worden voldaan.
+* **Niveau AAA:** Uw site heeft een hoge mate van toegankelijkheid. Om aan dit niveau te voldoen, worden alle criteria van Niveau A, Niveau AA, en van het Succes van Niveau AAA vervuld.
 
 Wanneer u uw site maakt, moet u het algemene niveau bepalen waaraan u uw site wilt laten voldoen.
 
@@ -40,7 +40,7 @@ De volgende sectie presenteert [lagen van de WCAG 2.1-richtsnoeren](https://www.
 
 >[!NOTE]
 >
->In dit document gebruiken we:
+>In dit document gebruiken we het volgende:
 >
 >* De [korte namen voor de WCAG 2.1-richtsnoeren](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* De [nummering die wordt gebruikt in de WCAG 2.1-richtsnoeren](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) kruisverwijzingen met de WCAG-website te ondersteunen.
@@ -52,7 +52,7 @@ De volgende sectie presenteert [lagen van de WCAG 2.1-richtsnoeren](https://www.
 
 ### Alternatieven voor tekst (1.1) {#text-alternatives}
 
-[Richtsnoer 1.1 Tekstalternatieven: Maak tekstalternatieven voor alle niet-tekstuele inhoud, zodat deze kan worden gewijzigd in andere formulieren die u nodig hebt, zoals grote gedrukte tekst, braille, spraak, symbolen of eenvoudigere taal.](https://www.w3.org/TR/WCAG/#text-alternatives)
+[Richtsnoer 1.1 Tekstalternatieven: Verstrek tekstalternatieven voor om het even welke niet-tekstinhoud zodat het in andere vormen kan worden veranderd mensen, zoals grote druk, braille, toespraak, symbolen, of eenvoudigere taal nodig hebben.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
 ### Niet-tekstuele inhoud (1.1.1) {#non-text-content}
 
@@ -62,7 +62,7 @@ De volgende sectie presenteert [lagen van de WCAG 2.1-richtsnoeren](https://www.
 
 #### Doel - Niet-tekstuele inhoud (1.1.1) {#purpose-non-text-content}
 
-De informatie op een webpagina kan in vele verschillende niet-tekstformaten, zoals beelden, video&#39;s, animaties, grafieken worden verstrekt. Personen die blind zijn of een ernstige visuele handicap hebben, kunnen geen niet-tekstuele inhoud zien, maar hebben wel toegang tot tekstinhoud door deze door een schermlezer te laten lezen of in tactiele vorm te laten weergeven door een brailleweergaveapparaat. Dus door tekstalternatieven voor inhoud in grafische indeling te bieden, kunnen mensen die de grafische inhoud niet kunnen zien, toegang krijgen tot een equivalente versie van de informatie die de inhoud biedt.
+Informatie op een webpagina kan in vele verschillende niet-tekstindelingen worden opgegeven, zoals afbeeldingen, video&#39;s, animaties, grafieken en grafieken. Personen die blind zijn of een ernstige visuele handicap hebben, kunnen geen niet-tekstuele inhoud zien, maar hebben wel toegang tot tekstinhoud door deze door een schermlezer te laten lezen of in tactiele vorm te laten weergeven door een brailleweergaveapparaat. Dus door tekstalternatieven voor inhoud in grafische indeling te bieden, kunnen mensen die de grafische inhoud niet kunnen zien, toegang krijgen tot een equivalente versie van de informatie die de inhoud biedt.
 
 Een nuttig extra voordeel is dat tekstopties het mogelijk maken dat niet-tekstuele inhoud wordt geïndexeerd door zoekmachinetechnologie.
 
@@ -74,17 +74,17 @@ Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalterna
 >
 >Enkele out-of-the-box Core-componenten, zoals **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** geen **Alternatieve tekst** veld voor het toevoegen van alternatieve tekstbeschrijvingen aan afzonderlijke afbeeldingen, hoewel er een **Label** field (**[Toegankelijkheid](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** ) voor de gehele component.
 >
->Bij het uitvoeren van versies van deze componenten voor uw AEM-exemplaar zal uw ontwikkelingsteam dergelijke componenten moeten configureren om het kenmerk `alt` te ondersteunen zodat auteurs dit aan de content kunnen toevoegen (zie Ondersteuning toevoegen voor aanvullende HTML-elementen en -kenmerken).
+>Wanneer het uitvoeren van versies van deze voor uw AEM instantie, moet uw ontwikkelingsteam dergelijke componenten vormen om `alt` -kenmerk zodat auteurs dit kunnen toevoegen aan de inhoud (zie Ondersteuning voor extra HTML-elementen en -kenmerken toevoegen).
 >
 >Enkele out-of-the-box Core-componenten, zoals **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** geen **Alternatieve tekst** veld voor het toevoegen van alternatieve tekstbeschrijvingen aan afzonderlijke afbeeldingen, hoewel er een **Label** field (**[Toegankelijkheid](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** ) voor de gehele component.
 >
->Bij het uitvoeren van versies van deze componenten voor uw AEM-exemplaar zal uw ontwikkelingsteam dergelijke componenten moeten configureren om het kenmerk `alt`[ te ondersteunen zodat auteurs dit aan de content kunnen toevoegen (zie Ondersteuning toevoegen voor aanvullende HTML-elementen en -kenmerken](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Wanneer het uitvoeren van versies van deze voor uw AEM instantie, moet uw ontwikkelingsteam dergelijke componenten vormen om `alt` attribuut zodat de auteurs het aan de inhoud kunnen toevoegen (zie [Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 AEM vereist **Alternatieve tekst** veld dat standaard moet worden ingevuld. Als de afbeelding zuiver decoratief is en alternatieve tekst overbodig is, wordt de **Afbeelding is decoratief** Deze optie kan worden ingeschakeld.
 
 #### Alternatieven voor goede tekst maken {#creating-good-text-alternatives}
 
-Er zijn verschillende vormen van niet-tekstuele inhoud, zodat de waarde van het tekstoptie afhankelijk is van de rol die de afbeelding in de webpagina speelt. De volgende algemene regels voor duim zijn van toepassing:
+Er zijn verschillende vormen van niet-tekstuele inhoud, zodat de waarde van het tekstoptie afhankelijk is van de rol die de afbeelding in de webpagina speelt. Enkele algemene regels die u wellicht nuttig vindt, zijn:
 
 * Alternatieven voor tekst moeten beknopt zijn, maar toch duidelijk aangeven welke essentiële informatie door de niet-tekstuele inhoud wordt verstrekt.
 * Te lange beschrijvingen (meer dan 100 tekens) moeten worden vermeden. Als een tekstalternatief meer details vereist:
@@ -258,7 +258,7 @@ Volg de aanwijzingen voor [Bijschriften (vooraf opgenomen)](#captions-prerecorde
 
 Gedetailleerde instructies vallen buiten het bereik van dit document, maar de volgende bronnen bieden nuttige informatie:
 
-* [WebAIM: Real Time Captioning](https://www.webaim.org/techniques/captions/realtime.php)
+* [WebAIM: Real Time Captioning](https://webaim.org/techniques/captions/realtime.php)
 
 * [AccessComputing-project (University of Washington): Kunnen de titels automatisch worden geproduceerd gebruikend toespraakerkenning?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -567,7 +567,7 @@ Zorg ervoor dat de tekst voldoende contrasteert met de achtergrond. Contrastverh
 >* [PMtoEM.com: Eenvoudige omzetting van PX naar EM](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
-Als u contrastverhoudingen wilt controleren, gebruikt u een gereedschap voor kleurcontrast, zoals het gereedschap [Paciello Group Color Contrast Analyse](https://www.paciellogroup.com/resources/contrast-analyser.html) of de [Controle van webAIM-kleurcontrast](https://www.webaim.org/resources/contrastchecker/). Met deze gereedschappen kunt u kleurenparen controleren en contrastproblemen melden.
+Als u contrastverhoudingen wilt controleren, gebruikt u een gereedschap voor kleurcontrast, zoals het gereedschap [Paciello Group Color Contrast Analyse](https://www.tpgi.com/resources/contrast-analyser.html) of de [Controle van webAIM-kleurcontrast](https://webaim.org/resources/contrastchecker/). Met deze gereedschappen kunt u kleurenparen controleren en contrastproblemen melden.
 
 Als u zich minder zorgen maakt over het opgeven van de vormgeving van de pagina, kunt u er ook voor kiezen geen kleur voor de achtergrond en de voorgrondtekst op te geven. Er is geen controle op het contrast nodig, omdat de browser van de gebruiker de kleuren van de tekst en de achtergrond bepaalt.
 
