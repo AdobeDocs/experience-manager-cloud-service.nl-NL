@@ -1,13 +1,13 @@
 ---
-title: Metagegevens - Fragmenteigenschappen
+title: Metagegevens - fragmenteigenschappen (elementen - inhoudsfragmenten)
 description: Zie hoe u de eigenschappen van metagegevens voor Content Fragments in AEM kunt weergeven en bewerken om de inhoud zonder kop aan te passen.
 feature: Content Fragments
 role: User
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 4d20b83c3324e5c082c26e2fa700f03763da2d19
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 4%
+source-wordcount: '209'
+ht-degree: 3%
 
 ---
 
