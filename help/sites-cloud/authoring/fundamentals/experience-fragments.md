@@ -2,10 +2,10 @@
 title: Ervaringsfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
+source-git-commit: 456b754fad3dc2d8f684f344b69d57d47b823b03
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1566'
+ht-degree: 6%
 
 ---
 
@@ -313,7 +313,7 @@ Als u een Experience Fragment bewerkt, worden de beschikbare bouwstenen weergege
 Details van het fragment kunt u zien:
 
 1. Navigeer naar de locatie van uw ervaringsfragmenten (navigeer niet verder naar beneden naar de variaties in het fragment).
-Details worden getoond in alle weergaven van de console voor **Experience-fragmenten**, met de **Lijstweergave** inclusief details van een exportbewerking naar het doel: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+Details worden getoond in alle weergaven van de console voor **Experience-fragmenten**, met de **Lijstweergave**[ inclusief details van een exportbewerking naar het doel](/help/sites-cloud/integrating/integrating-adobe-target.md):
 
    ![Ervaar fragmentdetails](/help/sites-cloud/authoring/assets/xf-15.png)
 
