@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Communicatie
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
+source-git-commit: 07b9118b8cfc27bc9e2bfa134fbb57c7ae2728ad
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Een organisatie heeft doorgaans meerdere sjablonen. Bijvoorbeeld, één malplaat
 
 ### Een API aanroepen
 
-De [API-naslagdocumentatie](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie biedt ook een API-definitiebestand in de indeling .yaml. U kunt het .yaml dossier downloaden en het uploaden aan postman om functionaliteit van APIs te controleren.
+De [API-naslagdocumentatie](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie biedt ook een API-definitiebestand in de indeling .yaml. U kunt het .yaml dossier downloaden en het uploaden aan postman om functionaliteit van APIs te controleren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
