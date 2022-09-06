@@ -2,9 +2,9 @@
 title: Inhoud voorvertonen
 description: Leer hoe u de AEM voorvertoningsservice gebruikt om inhoud voor te vertonen voordat u live gaat.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 5a804895013e19592f918341bbc7921261b26945
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,12 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 Zie het document [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over het ophalen van de URL&#39;s voor uw omgevingen.
 
 Inhoud kan ook voor voorvertoning worden gepubliceerd met behulp van een [workflow voor publicatiestructuur](/help/operations/replication.md#publish-content-tree-workflow) met de `agentId` parameter ingesteld op `preview` of door [replicatie-API](/help/operations/replication.md#replication-api) met een `AgentFilter` geconfigureerd voor voorvertoning.
+
+## Publicatie van inhoud in voorvertoning ongedaan maken {#unpublishing-content-from-preview}
+
+Publiceren van inhoud vanuit uw **Voorvertoning** milieu is in wezen hetzelfde proces als [publicatie van pagina&#39;s ongedaan maken](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) van de **Publiceren** milieu.
+
+Het enige verschil is dat u de **Doel** te worden **Voorvertoning**.
 
 ## OSGi-instellingen configureren voor de voorbeeldreeks {#configuring-osgi-settings-for-the-preview-tier}
 

@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Pagina's publiceren en verwijderen met AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 5a804895013e19592f918341bbc7921261b26945
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1811'
 ht-degree: 5%
 
 ---
@@ -215,9 +215,9 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
 ## Publicatie van pagina&#39;s ongedaan maken {#unpublishing-pages}
 
-Als u de publicatie van een pagina ongedaan maakt, wordt deze verwijderd uit uw publicatieomgeving, zodat deze niet langer beschikbaar is voor uw lezers.
+Als u de publicatie van een pagina ongedaan maakt, wordt deze verwijderd uit uw publicatie, of [voorvertoning](/help/sites-cloud/authoring/fundamentals/previewing-content.md), zodat deze niet langer beschikbaar is voor uw lezers.
 
-In een [vergelijkbare manier van publiceren](#publishing-pages), kunnen een of meer pagina&#39;s niet worden gepubliceerd:
+In een [vergelijkbare manier van publiceren](#publishing-pages), kan de publicatie van een of meer pagina&#39;s ongedaan worden gemaakt vanaf het gewenste doel:
 
 * [Vanuit de pagina-editor](#unpublishing-from-the-editor)
 * [Van de plaatsenconsole](#unpublishing-from-the-console)
@@ -244,6 +244,9 @@ Net zoals u [de optie Publicatie beheren gebruiken om te publiceren](#manage-pub
    >[!NOTE]
    >
    >Als u een publicatie/publicatie later wilt annuleren, gaat u naar de [Workflowconsole](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) om de corresponderende workflow te beëindigen.
+
+   >[!NOTE]
+   >Als u een [Voorvertoning](/help/sites-cloud/authoring/fundamentals/previewing-content.md) omgeving die u kunt selecteren **Doel** tijdens Publicatie beheren.
 
 1. Als u de niet-publicatie wilt voltooien, gaat u door met de wizard zoals u [de pagina publiceren](#manage-publication).
 
