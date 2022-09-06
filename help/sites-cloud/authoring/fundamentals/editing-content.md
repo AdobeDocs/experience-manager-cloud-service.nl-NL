@@ -2,9 +2,9 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
 workflow-type: tm+mt
-source-wordcount: '2974'
+source-wordcount: '2992'
 ht-degree: 6%
 
 ---
@@ -466,7 +466,7 @@ Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt e
 
 >[!CAUTION]
 >
->U kunt een pagina vergrendelen wanneer u een gebruiker imiteert. Een pagina die op deze manier is vergrendeld, kan echter alleen dan worden ontgrendeld door de gebruiker die zich heeft laten verpersoonlijken of door de beheerder.
+>U kunt een pagina vergrendelen wanneer u een gebruiker imiteert. Een pagina die op deze manier is vergrendeld, kan echter alleen dan worden ontgrendeld door de gebruiker die zich heeft voorgedaan of door een gebruiker met beheerdersrechten (een lid van AEM IMS-profiel voor beheerders).
 >
 >De pagina&#39;s kunnen niet worden ontgrendeld door zich als de gebruiker voor te doen die de pagina heeft vergrendeld.
 <!--
@@ -483,7 +483,7 @@ In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en he
 
 >[!CAUTION]
 >
->U kunt een pagina vergrendelen wanneer u een gebruiker imiteert. Een pagina die op deze manier is vergrendeld, kan echter alleen dan worden ontgrendeld door de gebruiker die zich heeft laten verpersoonlijken of door de beheerder.
+>U kunt een pagina vergrendelen wanneer u een gebruiker imiteert. Een pagina die op deze manier is vergrendeld, kan echter alleen dan worden ontgrendeld door de gebruiker die zich heeft voorgedaan of door een gebruiker met beheerdersrechten (een lid van AEM IMS-profiel voor beheerders).
 >
 >De pagina&#39;s kunnen niet worden ontgrendeld door zich als de gebruiker voor te doen die de pagina heeft vergrendeld.
 <!--
