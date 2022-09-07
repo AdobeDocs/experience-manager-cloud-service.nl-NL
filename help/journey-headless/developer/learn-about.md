@@ -2,7 +2,7 @@
 title: Meer informatie over CMS Headless Development
 description: In dit deel van de AEM Headless Developer Journey, leer over technologie zonder kop en waarom je het zou gebruiken.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 2abceb1333877c41c61d1036ab82ec40058011fe
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
