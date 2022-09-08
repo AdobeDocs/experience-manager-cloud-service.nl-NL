@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.8.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.9.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 0b453290cd0e7dc5ec319e8ddbfa085f109717df
+source-git-commit: f7f4f1c81b1dd611b723514b8c06aad6909a73c1
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 1%
+source-wordcount: '212'
+ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.8.0 in AEM as a Cloud Service.
+Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.9.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,16 +21,16 @@ Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.8
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2022.8.0 in AEM as a Cloud Service is 11 augustus 2022. De volgende release is gepland voor 9 september 2022.
+De releasedatum voor Cloud Manager versie 2022.9.0 in AEM as a Cloud Service is 8 september 2022. De volgende release is gepland voor 6 oktober 2022.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Er is een vernieuwde interface-ervaring in het dialoogvenster [voeg omgevingsworkflow toe.](/help/implementing/cloud-manager/manage-environments.md)
-* [Het AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) in Cloud Manager is bijgewerkt naar versie 37.
+* AEM hulplijnen kunnen nu op zelfbediening worden geconfigureerd voor Sandbox-programma&#39;s.
+* Klanten zonder de rol Cloud Manager hebben geen toegang tot de programmatiedetails. Ze kunnen echter wel naar de eindpunten van de auteur navigeren vanuit de bestemmingspagina&#39;s van Cloud Manager.
+* Klanten kunnen **Incidenten en proactieve meldingen** groepen om van Adobe over incidenten of aanbevelingen met betrekking tot hun toepassing te horen AEMaaCS.
+* De betaalbaarheid van het programma in de interface toevoegen biedt altijd knopinfo wanneer deze is uitgeschakeld vanwege machtigingen of aan machtigingen gerelateerde redenen.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* Het geval waarin Nieuwe Relic-gebruikers niet zijn gemaakt of verwijderd in de gebruikersinterface van Cloud Manager is gecorrigeerd.
-* Bepaalde gevallen van onregelmatige fouten bij het aanmaken van de opslagplaats zijn veerkrachtiger gemaakt.
-* Zeldzame voorvallen van VSTS org opstellingsfouten worden nu verminderd toe te schrijven aan geïntroduceerde herpogingen.
-* Verbeterde validatie tijdens het maken van nieuwe eBay-subaccounts voorkomt nu bepaalde fouten.
+* De workflow Omgeving toevoegen bevat aanvullende validaties om ervoor te zorgen dat het resultaat succesvol is.
+* Verbeterde klantfeedback met betrekking tot de build van de AEM-app wanneer de klant wordt geconfronteerd met connectiviteitsproblemen met privérepo&#39;s.
