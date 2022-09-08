@@ -2,13 +2,13 @@
 title: Een programma maken
 description: Leer hoe u Cloud Manager gebruikt om uw eerste programma te maken.
 role: Admin, User, Developer
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
+source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
-
 
 # Een programma maken {#create-program}
 
@@ -38,6 +38,10 @@ Er zijn twee verschillende soorten programma&#39;s:
 * A **sandboxprogramma** wordt typisch gecreeerd ten behoeve van opleiding, lopende demo&#39;s, enablement, POCs, of documentatie.
 
 Omdat ze verschillende doelen dienen, hebben de verschillende omgevingen verschillende opties. Het proces om ze te maken is echter vergelijkbaar. Voor deze instapreis creëren we een zandbakomgeving.
+
+>[!NOTE]
+>
+>Standaard heeft een gebruiker met toegang tot een AEM omgeving ook de rol Cloud >Manager. Deze rol op zich is ontoereikend om de gebruiker toegang te geven tot de mening van de programmadetails. Een dergelijke gebruiker met alleen de gebruikersrol van Cloud Manager kan via de opties in het programmamenu naar de auteur-URL van de AEM omgeving navigeren (als er omgevingen zijn). Dergelijke gebruikers moeten hun beheerder contacteren als zij programma-vlakke toegang willen krijgen.
 
 ## Sandboxprogramma&#39;s maken {#create-sandbox}
 

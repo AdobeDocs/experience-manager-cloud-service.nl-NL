@@ -2,13 +2,13 @@
 title: Cloud Manager openen
 description: Leer hoe u toegang krijgt tot Cloud Manager zodat u uw projectbronnen kunt instellen.
 role: Admin, User, Developer
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
+source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
-
 
 # Cloud Manager openen {#cloud-resources}
 
@@ -32,6 +32,10 @@ Cloud Manager is een essentieel onderdeel van AEM as a Cloud Service en fungeert
 Typisch een teamlid dat aan wordt toegewezen **Zakelijke eigenaar** Het productprofiel is verantwoordelijk voor het toevoegen van cloudbronnen, zoals programma&#39;s en omgevingen. Dit individu begrijpt de bedrijfsbehoeften en wie de initiële installatie van Cloud Manager voltooit.
 
 In het kader van deze instapreis hebt u als systeembeheerder al uzelf toegewezen aan de **Zakelijke eigenaar** productprofiel en stelt de cloudbronnen in. Afhankelijk van daadwerkelijke projectvereisten, kunnen de bedrijfseigenaars al dan niet het zelfde zijn als de systeembeheerder.
+
+>[!NOTE]
+>
+>Standaard heeft een gebruiker met toegang tot een AEM omgeving ook de rol Cloud >Manager. Deze rol op zich is ontoereikend om de gebruiker toegang te geven tot de mening van de programmadetails. Een dergelijke gebruiker met alleen de gebruikersrol van Cloud Manager kan via de opties in het programmamenu naar de auteur-URL van de AEM omgeving navigeren (als er omgevingen zijn). Dergelijke gebruikers moeten hun beheerder contacteren als zij programma-vlakke toegang willen krijgen.
 
 ## Toegang tot Cloud Manager als systeembeheerder en bedrijfseigenaar {#access-sysadmin-bo}
 
