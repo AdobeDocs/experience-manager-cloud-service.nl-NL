@@ -3,7 +3,7 @@ title: Gebruikersgroepen voor meldingen
 description: Leer hoe u een gebruikersgroep in de Admin Console kunt maken om de ontvangst van belangrijke e-mailberichten te beheren.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
+source-git-commit: 532184edca597452e76fdf763e7377d5e835bebc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Nu de groepen zijn gemaakt, moet u de juiste gebruikers toewijzen. Dit kunt u do
 
 1. Selecteer **Gebruikers** tabblad van de bovenste navigatie en selecteer vervolgens **Gebruiker toevoegen**.
 
-![Gebruikers](assets/cloud_manager_add_user.png)
+   ![Gebruikers](assets/cloud_manager_add_user.png)
 
 1. In de **Gebruikers aan uw team toevoegen** voert u de e-mailadres in van de gebruiker die u wilt toevoegen.
 
