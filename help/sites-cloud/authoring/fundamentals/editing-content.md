@@ -2,9 +2,9 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
+source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
 workflow-type: tm+mt
-source-wordcount: '2992'
+source-wordcount: '3019'
 ht-degree: 6%
 
 ---
@@ -466,12 +466,11 @@ Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt e
 
 >[!CAUTION]
 >
->U kunt een pagina vergrendelen wanneer u een gebruiker imiteert. Een pagina die op deze manier is vergrendeld, kan echter alleen dan worden ontgrendeld door de gebruiker die zich heeft voorgedaan of door een gebruiker met beheerdersrechten (een lid van AEM IMS-profiel voor beheerders).
+>U kunt een pagina vergrendelen wanneer u een gebruiker imiteert. Een pagina die op deze manier is vergrendeld, kan echter alleen worden ontgrendeld (door klanten) met behulp van de gebruiker die als imitatie is opgetreden.
 >
->De pagina&#39;s kunnen niet worden ontgrendeld door zich als de gebruiker voor te doen die de pagina heeft vergrendeld.
-<!--
->Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
--->
+>Pagina&#39;s kunnen niet worden ontgrendeld door zich voor te doen als de gebruiker die de pagina heeft vergrendeld.
+>
+>Als de gebruiker die de pagina heeft vergrendeld niet beschikbaar is om de pagina te ontgrendelen, vraagt u de klantenondersteuning om opties voor het verwijderen van de vergrendeling te evalueren.
 
 ## Een pagina ontgrendelen {#unlocking-a-page}
 
@@ -483,9 +482,20 @@ In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en he
 
 >[!CAUTION]
 >
->U kunt een pagina vergrendelen wanneer u een gebruiker imiteert. Een pagina die op deze manier is vergrendeld, kan echter alleen dan worden ontgrendeld door de gebruiker die zich heeft voorgedaan of door een gebruiker met beheerdersrechten (een lid van AEM IMS-profiel voor beheerders).
+>U kunt een pagina vergrendelen wanneer u een gebruiker imiteert. Een pagina die op deze manier is vergrendeld, kan echter alleen dan worden ontgrendeld (door klanten) met de gebruiker die zich heeft voorgedaan.
 >
->De pagina&#39;s kunnen niet worden ontgrendeld door zich als de gebruiker voor te doen die de pagina heeft vergrendeld.
+>Pagina&#39;s kunnen niet worden ontgrendeld door zich voor te doen als de gebruiker die de pagina heeft vergrendeld.
+>
+>Als de gebruiker die de pagina heeft vergrendeld niet beschikbaar is om de pagina te ontgrendelen, vraagt u de klantenondersteuning om opties voor het verwijderen van de vergrendeling te evalueren.
+
+<!--
+>[!CAUTION]
+>
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
+>
+>Pages can not be unlocked by impersonating the user who locked the page.
+-->
+
 <!--
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
