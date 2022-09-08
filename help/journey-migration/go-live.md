@@ -2,9 +2,9 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
+source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1729'
 ht-degree: 0%
 
 ---
@@ -153,6 +153,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepe
       * Als u zeer hoge TTL hebt, zullen de updates aan uw DNS verslag langer duren om zich te verspreiden.
 * Voer prestatie- en beveiligingstests uit die voldoen aan uw zakelijke vereisten en doelstellingen.
 * Besnoeiing over en zorg ervoor dat daadwerkelijke go-live zonder enige nieuwe plaatsing of inhoudsupdate wordt uitgevoerd.
+* Creeer de Groepen van het Bericht van de gebruiker van de Admin Console. Zie [Gebruikersgroepen voor meldingen](/help/journey-onboarding/user-groups.md)
 
 U kunt altijd naar de lijst verwijzen als u uw taken opnieuw moet kalibreren tijdens het uitvoeren van de migratie.
 
