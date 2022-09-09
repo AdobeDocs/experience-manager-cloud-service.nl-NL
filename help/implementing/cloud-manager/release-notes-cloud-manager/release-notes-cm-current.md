@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2022.9.0 in Adobe Experience Man
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.9.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: f7f4f1c81b1dd611b723514b8c06aad6909a73c1
+source-git-commit: 4c04ab85f8760b9f72f7540b991edc7691995f66
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ De releasedatum voor Cloud Manager versie 2022.9.0 in AEM as a Cloud Service is 
 
 * AEM hulplijnen kunnen nu op zelfbediening worden geconfigureerd voor Sandbox-programma&#39;s.
 * Klanten zonder de rol Cloud Manager hebben geen toegang tot de programmatiedetails. Ze kunnen echter wel naar de eindpunten van de auteur navigeren vanuit de bestemmingspagina&#39;s van Cloud Manager.
-* Klanten kunnen **Incidenten en proactieve meldingen** groepen om van Adobe over incidenten of aanbevelingen met betrekking tot hun toepassing te horen AEMaaCS.
+* Klanten kunnen **Incidenten en proactieve meldingen** groepen om van Adobe over incidenten of aanbevelingen met betrekking tot hun toepassing te horen AEMaaCS. Zie [Gebruikersgroep voor meldingen](/help/journey-onboarding/user-groups.md) voor meer informatie .
 * De betaalbaarheid van het programma in de interface toevoegen biedt altijd knopinfo wanneer deze is uitgeschakeld vanwege machtigingen of aan machtigingen gerelateerde redenen.
 
 ## Opgeloste problemen {#bug-fixes}
