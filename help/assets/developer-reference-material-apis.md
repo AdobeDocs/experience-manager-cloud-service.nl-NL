@@ -1,6 +1,6 @@
 ---
 title: Ontwikkelaarsreferenties voor [!DNL Assets]
-description: '"[!DNL Assets] Met API''s en inhoud voor ontwikkelaarsverwijzing kunt u elementen beheren, zoals binaire bestanden, metagegevens, uitvoeringen, opmerkingen en [!DNL Content Fragments]."'
+description: "[!DNL Assets] Met API's en inhoud voor ontwikkelaarsverwijzing kunt u elementen beheren, zoals binaire bestanden, metagegevens, uitvoeringen, opmerkingen en [!DNL Content Fragments]."
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin

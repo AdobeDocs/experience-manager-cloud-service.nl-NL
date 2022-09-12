@@ -1,5 +1,5 @@
 ---
-title: 'Hoe kan ik Forms Designer downloaden en installeren om Document of Record-sjablonen te maken?  '
+title: Hoe kan ik Forms Designer downloaden en installeren om Document of Record-sjablonen te maken?
 description: Met Forms Designer kunt u XDP- en PDF-formuliersjablonen maken die als sjabloon voor een document met records fungeren. Designer is beschikbaar in het dialoogvenster [!DNL AEM Forms] licentie.
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4

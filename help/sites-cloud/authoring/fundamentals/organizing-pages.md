@@ -102,7 +102,7 @@ De minimaal toegestane tekens zijn:
 * `_` (onderstrepingsteken)
 * `-` (afbreekstreepje/minteken)
 
-Alle tekens die zijn toegestaan, zijn beschikbaar in [de naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md).
+Alle tekens die zijn toegestaan, kunt u vinden in [de naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md).
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ A **Titel** het veld met ongeldige tekens wordt geaccepteerd, maar voor de afgel
 | Titel | Afgeleide naam |
 |---|---|
 | Schön | `schoen.html` |
-| SC%&amp;*ç+ | `sc---c-.html` |
+| SC%&amp;&#42;ç+ | `sc---c-.html` |
 
 #### Naam {#name}
 

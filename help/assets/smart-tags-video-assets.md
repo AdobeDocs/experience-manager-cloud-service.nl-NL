@@ -130,7 +130,7 @@ Om de configuratie van de betrouwbaarheidsscoreOSGI aan het project toe te voege
 
 * De voortgang van de codering wordt niet weergegeven.
 
-* Alleen video&#39;s die kleiner zijn dan 300 MB, worden automatisch gecodeerd. De [!DNL Adobe Sensei] de dienst slaat videodossiers over die in grootte groter zijn.
+* Alleen video&#39;s die kleiner zijn dan 300 MB, worden automatisch gecodeerd. De [!DNL Adobe Sensei] De dienst slaat videodossiers over die in grootte groter zijn.
 
 * Alleen de video&#39;s in de bestandsindelingen en ondersteunde codecs die worden vermeld in [Slimme tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats) zijn gelabeld.
 

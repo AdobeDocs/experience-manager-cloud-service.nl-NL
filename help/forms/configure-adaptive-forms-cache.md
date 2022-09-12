@@ -1,7 +1,7 @@
 ---
 title: Adaptieve Forms-cache configureren
 seo-title: Configure Adaptive Forms cache
-description: 'De Adaptive Forms-cache is speciaal ontworpen voor Adaptive Forms en documenten. Het cachegeheugen van Adaptive Forms en adaptieve documenten met als doel de tijd die nodig is om een adaptief formulier of document op de client te genereren, te verkorten. '
+description: De Adaptive Forms-cache is speciaal ontworpen voor Adaptive Forms en documenten. Het cachegeheugen van Adaptive Forms en adaptieve documenten met als doel de tijd die nodig is om een adaptief formulier of document op de client te genereren, te verkorten.
 seo-description: The Adaptive Forms cache is designed specifically for Adaptive Forms and documents. It caches Adaptive Forms and adaptive documents with the objective of reducing the time required to render an Adaptive Form or document on the client.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference

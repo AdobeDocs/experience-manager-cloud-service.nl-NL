@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media-nieuwsarchief
-description: 'De Dynamic Media-nieuwsbrief per Experience League is een maandelijkse nieuwsbrief. Het is ontworpen om u te helpen snel aan de slag te gaan met Dynamic Media en Dynamic Media Classic zodat u meteen waarde kunt realiseren. De waardevolle kennis-bouwende middelen zijn beschikbaar in deze one-stop shop nieuwsbrief. Er zijn bijvoorbeeld Hoe kan ik-video''s en overzichten van oplossingen. Lees meer over enkele belangrijke functies en mogelijkheden, zoals voorinstellingen voor afbeeldingen, voorinstellingen voor viewers, videoprofielen en meer. '
+description: De Dynamic Media-nieuwsbrief per Experience League is een maandelijkse nieuwsbrief. Het is ontworpen om u te helpen snel aan de slag te gaan met Dynamic Media en Dynamic Media Classic zodat u meteen waarde kunt realiseren. De waardevolle kennis-bouwende middelen zijn beschikbaar in deze one-stop shop nieuwsbrief. Er zijn bijvoorbeeld Hoe kan ik-video's en overzichten van oplossingen. Lees meer over enkele belangrijke functies en mogelijkheden, zoals voorinstellingen voor afbeeldingen, voorinstellingen voor viewers, videoprofielen en meer.
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20

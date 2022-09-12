@@ -1,5 +1,5 @@
 ---
-title: 'Hoe kan ik een workflow toewijzen aan andere gebruikers, e-mail verzenden en Adobe Sign gebruiken in een workflow? '
+title: Hoe kan ik een workflow toewijzen aan andere gebruikers, e-mail verzenden en Adobe Sign gebruiken in een workflow?
 description: Met Forms-gerichte workflows kunt u snel adaptieve, op Forms gebaseerde workflows maken. Met Adobe Sign kunt u documenten elektronisch ondertekenen, op formulieren gebaseerde bedrijfsprocessen maken, gegevens ophalen en verzenden naar meerdere gegevensbronnen en e-mailmeldingen verzenden
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4

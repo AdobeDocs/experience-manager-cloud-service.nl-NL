@@ -10,13 +10,13 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
-source-git-commit: feef8159a01393baebe11c014ae6093b79df72d1
+exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
+source-git-commit: 4edf66127696ce91466811e2ffdcfbbd73f7cc2c
 workflow-type: tm+mt
 source-wordcount: '1603'
 ht-degree: 0%
 
 ---
-
 
 # Abonnement configureren in [!DNL Experience Manager Assets] {#configure-transcription-service}
 
@@ -166,6 +166,3 @@ De volgende indelingen voor audio- en videobestanden worden ondersteund voor tra
 ## Tips voor probleemoplossing {#troubleshooting}
 
 Meld u aan bij uw [!DNL Azure Media Services] account met de zelfde geloofsbrieven (die u voor configuratie) hebt gebruikt om de verzoekstatus te verifiëren. Contact [!DNL Azure] als uw verzoek niet met succes wordt verwerkt.
-
-
-

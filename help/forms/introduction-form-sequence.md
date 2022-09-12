@@ -1,6 +1,6 @@
 ---
 title: Hoe maakt u een uit meerdere stappen bestaande formulierreeks?
-description: 'Met [!DNL Experience Manager Forms]kunt u een reeks formulierdeelvensters definiëren waarmee gebruikers door een adaptief formulier kunnen navigeren en dit kunnen invullen. Dig dieper door een gebruikscasebenadering als voorbeeld te nemen om multi-step vormopeenvolging tot stand te brengen. '
+description: Met [!DNL Experience Manager Forms]kunt u een reeks formulierdeelvensters definiëren waarmee gebruikers door een adaptief formulier kunnen navigeren en dit kunnen invullen. Dig dieper door een gebruikscasebenadering als voorbeeld te nemen om multi-step vormopeenvolging tot stand te brengen.
 feature: Adaptive Forms
 role: User
 level: Intermediate

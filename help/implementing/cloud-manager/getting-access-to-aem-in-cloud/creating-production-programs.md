@@ -1,5 +1,5 @@
 ---
-title: 'Productieprogramma''s maken '
+title: Productieprogramma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen productieprogramma te maken voor het hosten van liveverkeer.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c

@@ -1,10 +1,11 @@
 ---
 title: Beperkingen voor het uploaden van middelen configureren
-description: 'Configureer Adobe Experience Manager Assets om het type elementen te beperken dat gebruikers kunnen uploaden op basis van het MIME-type. Zo voorkomt u ongewenste uploads in de gewenste indeling en schadelijke bestanden. '
-source-git-commit: 3be29e4f76b53b4be7815e50ec42c627fec84b68
+description: Configureer Adobe Experience Manager Assets om het type elementen te beperken dat gebruikers kunnen uploaden op basis van het MIME-type. Zo voorkomt u ongewenste uploads in de gewenste indeling en schadelijke bestanden.
+exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '282'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +50,3 @@ Voer de volgende instellingen uit om specifieke afbeeldingsindelingen toe te voe
 ![Beperkingen op activa](assets/asset-restrictions.png)
 
 Op basis van de instellingen in de afbeelding kunt u afbeeldingen in de indelingen .JPG, .PNG en .GIF uploaden naar Experience Manager Assets.
-
-
-
-

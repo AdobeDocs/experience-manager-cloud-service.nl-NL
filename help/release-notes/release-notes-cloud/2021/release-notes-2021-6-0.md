@@ -30,12 +30,12 @@ De volgende release (2021.7.0) vindt plaats op 29 juli 2021.
 
 Kijk eens naar de [Juni 2021 Overzicht van de Versie](https://video.tv.adobe.com/v/334296) video voor een overzicht van de toegevoegde functies.
 
-## XML-documentatie voor AEM als cloudservice {#xml-documentation}
+## XML Documentation for AEM as a cloud Service {#xml-documentation}
 
 ### Wat is er nieuw? {#what-is-new-xml-documentation}
 
-* De Documentatie van XML voor AEM as a Cloud Service is nu GA.
-* Hierdoor kunnen bestaande AEM Cloud Service-klanten XML-documentatiegegevens aanschaffen voor het importeren, maken, beheren en leveren van technische inhoud op meerdere kanalen, waaronder AEM sites
+* XML Documentation for AEM as a Cloud Service is nu GA.
+* Hierdoor kunnen bestaande AEM Cloud Service-klanten XML Documentation-addon aanschaffen voor het importeren, maken, beheren en leveren van technische inhoud op meerdere kanalen, waaronder AEM sites
 
 ## Cloud Manager {#cloud-manager}
 

@@ -1,6 +1,6 @@
 ---
 title: Opmerkingen bij de release 2021.2.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2021.2.0."'
+description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt

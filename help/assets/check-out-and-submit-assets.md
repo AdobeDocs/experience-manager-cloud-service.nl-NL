@@ -1,6 +1,6 @@
 ---
 title: Bestanden in- en uitchecken in [!DNL Assets]
-description: Learn how to check out assets for editing and check them back in after the changes are complete.
+description: Leer hoe u middelen kunt uitchecken voor bewerking en ze weer kunt inchecken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
 feature: Asset Management
 role: User
@@ -12,9 +12,9 @@ ht-degree: 1%
 
 ---
 
-# Check-in and check-out files in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
+# Bestanden inchecken en uitchecken in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
-[!DNL Adobe Experience Manager Assets] lets you check out assets for editing and check them back in after you complete making the changes. Nadat u een element hebt uitgecheckt, kunt u het element alleen bewerken, annoteren, publiceren, verplaatsen of verwijderen. Als u een element uitcheckt, vergrendelt u het element. Other users cannot perform any of these operations on the asset until you check the asset back in to [!DNL Assets]. However, they can still change the metadata for the locked asset.
+[!DNL Adobe Experience Manager Assets] Hiermee kunt u elementen uitchecken voor bewerking en ze weer inchecken nadat u alle wijzigingen hebt aangebracht. Nadat u een element hebt uitgecheckt, kunt u het element alleen bewerken, annoteren, publiceren, verplaatsen of verwijderen. Als u een element uitcheckt, vergrendelt u het element. Andere gebruikers kunnen geen van deze bewerkingen op het element uitvoeren totdat u het element weer incheckt bij [!DNL Assets]. Ze kunnen echter wel de metagegevens van het vergrendelde element wijzigen.
 
 Om activa te kunnen uitchecken/inchecken, hebt u schrijftoegang op hen nodig.
 
@@ -22,10 +22,10 @@ Met deze functie voorkomt u dat andere gebruikers de wijzigingen overschrijven d
 
 ## Elementen uitchecken {#checking-out-assets}
 
-1. Van de [!DNL Assets] -gebruikersinterface, selecteert u het element dat u wilt uitchecken. You can also select multiple assets to check out.
+1. Van de [!DNL Assets] -gebruikersinterface, selecteert u het element dat u wilt uitchecken. U kunt ook meerdere elementen selecteren om uit te checken.
 
-1. Klik **[!UICONTROL Checkout]** op de werkbalk. The **[!UICONTROL Checkout]** option toggles to **[!UICONTROL Checkin]**.
-To verify whether other users can edit the asset you checked out, log in as a different user. Het pictogram ![pictogram uitchecken vergrendeling](assets/do-not-localize/checkout_lock.png) wordt weergegeven op de miniatuur van het element dat u hebt uitgecheckt.
+1. Klik **[!UICONTROL Checkout]** op de werkbalk. De **[!UICONTROL Checkout]** optie schakelt over naar **[!UICONTROL Checkin]**.
+Meld u aan als een andere gebruiker om te controleren of andere gebruikers het uitgecheckte element kunnen bewerken. Het pictogram ![pictogram uitchecken vergrendeling](assets/do-not-localize/checkout_lock.png) wordt weergegeven op de miniatuur van het element dat u hebt uitgecheckt.
 
    ![uitcheckpictogram in kaartweergave](assets/checkout-icon-card-view.png)
 
@@ -37,13 +37,13 @@ To verify whether other users can edit the asset you checked out, log in as a di
 
 1. Klikken **[!UICONTROL Edit]** om het element te openen in de bewerkingsmodus.
 
-1. Bewerk het element en sla de wijzigingen op. For example, crop the image and save. U kunt er ook voor kiezen om het element te annoteren of te publiceren.
+1. Bewerk het element en sla de wijzigingen op. Snijd bijvoorbeeld de afbeelding bij en sla deze op. U kunt er ook voor kiezen om het element te annoteren of te publiceren.
 
 1. Het bewerkte element selecteren in het menu [!DNL Assets] en klik op **[!UICONTROL Checkin]** op de werkbalk. Het gewijzigde element is ingecheckt bij [!DNL Assets] en is beschikbaar voor andere gebruikers om te bewerken.
 
 ## Geforceerd inchecken {#forced-check-in}
 
-Administrators can check in assets that are checked out by other users.
+Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheckt.
 
 1. Aanmelden bij [!DNL Assets] als beheerder.
 1. Van de [!DNL Assets] een of meer elementen selecteren die door andere gebruikers zijn uitgecheckt.
@@ -54,10 +54,10 @@ Administrators can check in assets that are checked out by other users.
 
 ## Aanbevolen werkwijzen en beperkingen {#tips-limitations}
 
-* Het is mogelijk een *map* die uitgecheckte elementbestanden bevat. Before deleting a folder, ensure that no digital assets are checked-out by users.
+* Het is mogelijk een *map* die uitgecheckte elementbestanden bevat. Voordat u een map verwijdert, moet u controleren of er geen digitale elementen zijn uitgecheckt door gebruikers.
 
 >[!MORELIKETHIS]
 >
 >* [Inchecken en uitchecken begrijpen [!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [Video tutorial to understand check in and check out in [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [Videozelfstudie voor meer informatie over inchecken en uitchecken [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 

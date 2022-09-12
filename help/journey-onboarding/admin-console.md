@@ -1,13 +1,13 @@
 ---
 title: De Admin Console openen
 description: Zodra u de voorbereiding noodzakelijk aan het aan boord gaan en de grondbeginselen van structuur AEMaaCS begrijpt, bent u bereid om in de Admin Console voor het eerst te registreren.
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 0%
 
 ---
-
 
 # De Admin Console openen {#accessing-admin-console}
 

@@ -1,6 +1,6 @@
 ---
 title: Aangepaste pop-ups maken met Snelle weergave
-description: '"Leer over hoe het gebrek Quickview in e-commerce ervaringen wordt gebruikt waarbij een pop-up venster met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren voor weergave in het pop-upvenster."'
+description: "Leer over hoe het gebrek Quickview in e-commerce ervaringen wordt gebruikt waarbij een pop-up venster met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren voor weergave in het pop-upvenster."
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Aangepaste pop-ups maken met Snelle weergave {#using-quickviews-to-create-custom-pop-ups}
 
-The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de viewer die u gebruikt, kunnen klanten een hotspot, een miniatuurafbeelding of een afbeelding met hyperlinks selecteren om informatie of verwante inhoud weer te geven.
+De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de viewer die u gebruikt, kunnen klanten een hotspot, een miniatuurafbeelding of een afbeelding met hyperlinks selecteren om informatie of verwante inhoud weer te geven.
 
-Quickview is supported by the following viewers in Dynamic Media:
+QuickView wordt ondersteund door de volgende viewers in Dynamic Media:
 
-* Interactive Images (selectable hotspots)
+* Interactieve afbeeldingen (selecteerbare hotspots)
 * Interactieve video (selecteerbare miniatuurafbeeldingen tijdens het afspelen van video)
 * Carrouselbanners (selecteerbare hotspots of afbeeldingen met hyperlinks)
 
@@ -27,12 +27,12 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
 
 1. Maak een Snelle weergave voor een geüpload element.
 
-   You typically create a Quickview the same time that you edit an asset for use with the viewer you are using.
+   Normaal gesproken maakt u een QuickView op hetzelfde moment dat u een element bewerkt voor gebruik met de viewer die u gebruikt.
 
    <table>
     <tbody>
     <tr>
-    <td><strong>Viewer you are using</strong></td>
+    <td><strong>Viewer die u gebruikt</strong></td>
     <td><strong>Voer de volgende stappen uit om de Snelle weergave te maken</strong></td>
     </tr>
     <tr>
@@ -64,11 +64,11 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
     </tr>
     <tr>
     <td>Interactieve video<br /> </td>
-    <td><a href="/help/assets/dynamic-media/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Integrating an interactive video with your website</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Een interactieve video integreren met uw website</a>.<br /> </td>
     </tr>
     <tr>
     <td>Carousel banner</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adding a carousel banner to your website page</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Een carrouselbanner toevoegen aan uw websitepagina</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -82,7 +82,7 @@ Stel dat u de volgende voorbeeldcode voor insluiten op uw webpagina gebruikte vo
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
-   The handler is loaded into the viewer using `setHandlers`:
+   De handler wordt in de viewer geladen met `setHandlers`:
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
@@ -108,8 +108,8 @@ Stel dat u de volgende voorbeeldcode voor insluiten op uw webpagina gebruikte vo
 
    De `quickViewActivate` De manager controleert de Snelle mening in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening wordt geplaatst. Er wordt ook een monster genomen `loadQuickView` functieaanroep.
 
-   **Variable mapping**
-Map variables for use in your web page to the SKU value and generic variables contained in the Quickview:
+   **Variabele toewijzen**
+Wijs variabelen voor gebruik in uw Web-pagina aan de waarde SKU en generische variabelen in de Snelle mening toe:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -160,7 +160,7 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
 
 
 1. U kunt nu een functie gebruiken om een eenvoudige pop-up in de Snelle mening aan te halen. In het volgende voorbeeld wordt een `DIV` voor een popup.
-1. Style the pop-up `DIV` in the following manner. Voeg desgewenst extra stijlen toe.
+1. De pop-up opmaken `DIV` op de volgende wijze. Voeg desgewenst extra stijlen toe.
 
    ```xml {.line-numbers}
    <style type="text/css">
@@ -174,7 +174,7 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
 
 1. Het pop-upvenster plaatsen `DIV` in de hoofdtekst van de pagina HTML.
 
-   One of the elements is set with an ID that is updated with SKU value when the user invokes a Quickview. The example also includes a simple button to hide the pop-up again after it becomes visible.
+   Één van de elementen wordt geplaatst met een identiteitskaart die met waarde SKU wordt bijgewerkt wanneer de gebruiker een Snelle mening aanhaalt. Het voorbeeld bevat ook een eenvoudige knop waarmee u de pop-up weer kunt verbergen nadat deze zichtbaar is geworden.
 
    ```xml {.line-numbers}
    <div id="quickview_div" >
@@ -199,7 +199,7 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
 1. Upload een HTML-pagina voor de test naar uw webserver en open deze. De pop-up wordt weergegeven door de viewer `DIV` wanneer een gebruiker een Snelle mening aanhaalt.
 1. **Het aangepaste pop-upvenster weergeven in de modus Volledig scherm**
 
-   Sommige viewers, zoals de Interactieve Video-viewer, ondersteunen weergave op volledig scherm. However, using the pop-up as described in the previous steps causes it to display behind the viewer while in full screen mode.
+   Sommige viewers, zoals de Interactieve Video-viewer, ondersteunen weergave op volledig scherm. Als u de pop-up echter gebruikt zoals in de vorige stappen wordt beschreven, wordt deze achter de viewer weergegeven in de modus Volledig scherm.
 
    Als u het pop-upvenster in de modi Standaard en Volledig scherm wilt weergeven, koppelt u het pop-upvenster aan de viewercontainer. In dit geval gebruikt u een tweede handlermethode, `initComplete`.
 
@@ -261,4 +261,4 @@ In dit voorbeeld wordt de interactieve afbeeldingsviewer gebruikt.
 
    `s7interactiveimageviewer.init()`
 
-   After you embed the viewer into your host page, be sure that the viewer instance is created. Also, ensure that the handlers are loaded before the viewer is invoked using `init()`.
+   Nadat u de viewer hebt ingesloten in uw hostpagina, moet u controleren of de viewer-instantie is gemaakt. Zorg er ook voor dat de handlers worden geladen voordat de viewer wordt aangeroepen met `init()`.

@@ -87,7 +87,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 4. Ten slotte, bevestig de actie.
 
-   De gebruikersinterface geeft vervolgens aan dat het gebruikersaccount is gedeactiveerd door uit te schakelen en een vergrendeling toe te voegen aan de profielkaart:
+   De gebruikersinterface geeft vervolgens aan dat de gebruikersaccount is gedeactiveerd door uit te schakelen en een vergrendeling toe te voegen aan de profielkaart:
 
    ![account uitgeschakeld](assets/dpp-foundation-04.png)
 

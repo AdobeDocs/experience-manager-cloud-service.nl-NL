@@ -2,13 +2,13 @@
 title: Opmerkingen bij de release Cloud Manager 2022.6.0 in Adobe Experience Manager as a Cloud Service
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.6.0 in AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: 5200ee315ad88dae4b52c0ea904489e73f62a8a0
+exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release Cloud Manager 2022.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
@@ -41,4 +41,3 @@ De releasedatum voor Cloud Manager versie 2022.6.0 in AEM as a Cloud Service is 
 * De [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API is vervangen en [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) moet worden gebruikt.
    * `List Programs` blijft werken, maar het gebruik ervan zal waarschuwingsberichten in logboeken genereren.
    * Na drie maanden wordt er geen steun meer verleend.
-

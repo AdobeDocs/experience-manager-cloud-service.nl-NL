@@ -4,8 +4,8 @@ description: In AEM zijn verschillende sneltoetsen beschikbaar, waaronder enkele
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 2%
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 'Sluiende en ontsmette zandbakomgevingen '
+title: Sluiende en ontsmette zandbakomgevingen
 description: Leer hoe omgevingen van een sandboxprogramma automatisch overschakelen op een hibernatiemodus en hoe u deze kunt deorganiseren.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6

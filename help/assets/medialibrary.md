@@ -1,6 +1,6 @@
 ---
 title: Media Library gebruiken voor elementair beheer van digitale middelen
-description: '"[!DNL Experience Manager Assets] en Media Library voor middelenbeheer."'
+description: "[!DNL Experience Manager Assets] en Media Library voor middelenbeheer."
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader

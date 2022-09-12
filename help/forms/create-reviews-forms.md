@@ -1,7 +1,7 @@
 ---
 title: Revisies voor elementen in formulieren maken en beheren
 seo-title: Creating and managing reviews for assets in forms
-description: 'Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen kunnen maken over een element dat beschikbaar is in een formulier. '
+description: Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen kunnen maken over een element dat beschikbaar is in een formulier.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference

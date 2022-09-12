@@ -1,6 +1,6 @@
 ---
 title: Integreren met Adobe Target
-description: 'Integreren met Adobe Target '
+description: Integreren met Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2

@@ -2,9 +2,9 @@
 title: Een Forms Portal maken op een Experience Manager Sites-pagina
 description: Leer hoe u een Forms Portal kunt maken en de kerncomponenten van een AEM Sites-pagina kunt gebruiken die niet in de verpakking staan.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,9 @@ Voer de volgende stappen uit als u Forms Portal-componenten buiten de box wilt i
 
    Ook wijzigen `appTitle`, `appId`, en `groupId`in de bovenstaande opdracht om uw omgeving te weerspiegelen.
 
-   Wanneer het project gereed is, werkt u de `<core.forms.components.version>x.y.z</core.forms.components.version>` eigenschap op hoofdniveau `pom.xml` van het project Archetype om de nieuwste versie van [core-forms-components](https://github.com/adobe/aem-core-forms-components) in uw `AEM Archetype` project.
+1. **Voer in Prerelease de volgende stappen uit om de Forms Portal-componenten te gebruiken:**
+   * [Het prereleasekanaal inschakelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
+   * Vervangen `core-forms-components-*` versie met de gewenste pre-releaseversie (bijvoorbeeld 1.0.4-PRERELEASE-20211223) in uw `Cloud Manager/AEM Archetype` project door het bijwerken van `<core.forms.components.version>x.y.z</core.forms.components.version>` eigenschap op hoofdniveau `pom.xml` van het project Archetype.
 
 1. **Implementeer het project in uw lokale ontwikkelomgeving:** U kunt het volgende bevel gebruiken om aan uw lokale ontwikkelomgeving op te stellen
 

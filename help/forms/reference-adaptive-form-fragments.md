@@ -1,7 +1,7 @@
 ---
 title: Referentie adaptieve formulierfragmenten
 seo-title: Reference Adaptive Form Fragments
-description: 'AEM Forms biedt adaptieve formulierfragmenten die u kunt gebruiken als elementen om snel een formulier te maken. '
+description: AEM Forms biedt adaptieve formulierfragmenten die u kunt gebruiken als elementen om snel een formulier te maken.
 seo-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

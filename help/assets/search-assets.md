@@ -172,7 +172,7 @@ U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, z
 | Tags | tags:&quot;Locatie en reizen&quot; |
 | Type | type:&quot;image\png&quot; |
 | Breedte van afbeelding | breedte:ondergrens..bovenaan |
-| Hoogte van afbeelding | hoogte:ondergrens..upperbound |
+| Hoogte van afbeelding | hoogte:ondergrens..bovenaan |
 | Person | persoon:John |
 
 De eigenschappen `path`, `limit`, `size`, en `orderby` kan niet worden gecombineerd met `OR` met een andere eigenschap.
@@ -300,7 +300,7 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 *Afbeelding: Het illustreren van het gebruik van asteriskvervanging in het onderzoek van Activa gebruikend een voorbeeld.*
 
-**Zoeken met jokerteken voor vraagtekens**: Als u de zoekopdracht wilt uitbreiden, gebruikt u een of meer &#39;?&#39; tekens die exact overeenkomen met het aantal tekens. For example, in the following illustration,
+**Zoeken met jokerteken voor vraagtekens**: Als u de zoekopdracht wilt uitbreiden, gebruikt u een of meer &#39;?&#39; tekens die exact overeenkomen met het aantal tekens. In de volgende afbeelding, bijvoorbeeld:
 
 * `run???` query komt niet overeen met enig element.
 
@@ -390,7 +390,7 @@ U kunt naar digitale elementen zoeken op basis van een of meer van de volgende e
 | Goedgekeurde status | Goedgekeurd of geweigerd. |
 | Afdrukstand | Horizontaal, Verticaal of Vierkant. |
 | Stijl | Kleur, of Zwart-wit. |
-| Video Height | Specified as a minimum and maximum value. Waarde wordt alleen opgeslagen in de metagegevens van video-uitvoeringen. |
+| Videohoogte | Opgegeven als minimum- en maximumwaarde. Waarde wordt alleen opgeslagen in de metagegevens van video-uitvoeringen. |
 | Videobreedte | Opgegeven als minimum- en maximumwaarde. Waarde wordt alleen opgeslagen in de metagegevens van video-uitvoeringen. |
 | Video-indeling | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Waarde wordt opgeslagen in de metagegevens van de bronvideo en eventuele uitvoeringen. |
 | Videocodec | x264. Waarde wordt alleen opgeslagen in de metagegevens van video-uitvoeringen. |
@@ -454,8 +454,8 @@ U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het
 
 | Fout, problemen, symptomen | Mogelijke reden | Mogelijke oplossing of begrip van het probleem |
 |---|---|---|
-| Onjuiste resultaten bij het zoeken naar elementen met ontbrekende metagegevens. | Bij het zoeken naar elementen waarbij de verplichte metagegevens ontbreken, [!DNL Experience Manager] kunnen elementen weergeven die geldige metagegevens hebben. De resultaten zijn gebaseerd op de eigenschap voor geïndexeerde metagegevens. | After the metadata is updated, re-indexing is required to reflect correct state of assets metadata. Zie [verplichte metagegevens](metadata-schemas.md#define-mandatory-metadata). |
-| Te veel zoekresultaten. | Broad search parameter. | U kunt overwegen de [zoekopdracht](#scope). Het gebruik van slimme tags kan meer zoekresultaten opleveren dan u had verwacht. Zie [zoekgedrag met slimme tags](#withsmarttags). |
+| Onjuiste resultaten bij het zoeken naar elementen met ontbrekende metagegevens. | Bij het zoeken naar elementen waarbij de verplichte metagegevens ontbreken, [!DNL Experience Manager] kunnen elementen weergeven die geldige metagegevens hebben. De resultaten zijn gebaseerd op de eigenschap voor geïndexeerde metagegevens. | Nadat de metagegevens zijn bijgewerkt, moet de index opnieuw worden geïndexeerd om de juiste status van metagegevens voor elementen weer te geven. Zie [verplichte metagegevens](metadata-schemas.md#define-mandatory-metadata). |
+| Te veel zoekresultaten. | Brede zoekparameter. | U kunt overwegen de [zoekopdracht](#scope). Het gebruik van slimme tags kan meer zoekresultaten opleveren dan u had verwacht. Zie [zoekgedrag met slimme tags](#withsmarttags). |
 | Onverwante of gedeeltelijk verwante zoekresultaten. | Wijzigingen in zoekgedrag met slimme tags. | Begrijpen [hoe zoeken verandert na slimme tags](#withsmarttags). |
 | Geen suggesties voor automatisch aanvullen van elementen. | Nieuw geüploade elementen zijn nog niet geïndexeerd. De metagegevens zijn niet direct beschikbaar als suggesties wanneer u een trefwoord in de zoekbalk typt. | [!DNL Experience Manager] wacht tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade of bijgewerkte elementen te indexeren en voegt de metagegevens vervolgens toe aan de lijst met suggesties. |
 | Geen zoekresultaten. | <ul><li>Elementen die overeenkomen met uw query bestaan niet. </li><li> Whitespace toegevoegd vóór de zoekquery. </li><li> Niet-ondersteund metagegevensveld bevat het trefwoord waarnaar u hebt gezocht.</li><li> Zoeken tijdens offline uitvoering van een element. </li></ul> | <ul><li>Zoeken met een ander trefwoord. U kunt ook slim labelen of zoeken op basis van gelijkenis gebruiken om de zoekresultaten te verbeteren. </li><li>[Bekende beperking](#limitations).</li><li>Niet alle metagegevensvelden worden in aanmerking genomen voor zoekopdrachten. Zie [bereik](#scope).</li><li>Later zoeken of on-time en off-time wijzigen voor de vereiste elementen.</li></ul> |

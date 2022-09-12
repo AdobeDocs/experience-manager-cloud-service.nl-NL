@@ -1,5 +1,5 @@
 ---
-title: 'Elementen importeren en exporteren '
+title: Elementen importeren en exporteren
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: U kunt Adaptieve Forms en gerelateerde elementen importeren en exporteren naar een AEM. Zo kunt u formulieren migreren of verplaatsen naar andere systemen.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.

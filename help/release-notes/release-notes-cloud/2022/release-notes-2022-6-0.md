@@ -1,13 +1,13 @@
 ---
 title: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: c2cd11b806f0cb961fc5ea0d8469f57b04e4aafa
+exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 0%
 
 ---
-
 
 # Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 

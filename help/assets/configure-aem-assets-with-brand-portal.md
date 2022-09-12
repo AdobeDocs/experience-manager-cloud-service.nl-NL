@@ -175,7 +175,7 @@ In het bovenstaande voorbeeld worden een aanvullende aanvraag en een aanvullend 
 >
 >Er wordt een aanvullend verzoek gegenereerd als de bovenliggende map niet bestaat in Brand Portal of is gewijzigd in Experience Manager Assets.
 
-Samen met de automatiseringsworkflow om Brand Portal op Experience Mananger Assets te activeren [!DNL Cloud Service], bestaat er een andere methode om de middelen van de Manager van de Ervaring als a manueel te vormen [!DNL Cloud Service] met Brand Portal. Dit wordt niet meer aanbevolen met Adobe Developer Console.
+Samen met de automatiseringsworkflow om Brand Portal op Experience Mananger Assets te activeren [!DNL Cloud Service], bestaat er een andere methode om de middelen van de Manager van de Ervaring als a manueel te vormen [!DNL Cloud Service] met Brand Portal. Adobe Developer Console wordt niet meer aanbevolen.
 
 >[!NOTE]
 >
@@ -183,12 +183,12 @@ Samen met de automatiseringsworkflow om Brand Portal op Experience Mananger Asse
 
 ## Handmatige configuratie met Adobe Developer Console {#manual-configuration}
 
-In de volgende sectie wordt beschreven hoe u de middelen van Experience Manager handmatig kunt configureren als een [!DNL Cloud Service] met Brand Portal via Adobe Developer Console.
+In de volgende sectie wordt beschreven hoe u de middelen van Experience Manager handmatig kunt configureren als een [!DNL Cloud Service] met Brand Portal met Adobe Developer Console.
 
-Eerder, Ervaar Mananger Assets als [!DNL Cloud Service] handmatig geconfigureerd met Brand Portal via de Adobe Developer Console, die een Adobe Identity Management Services (IMS)-accounttoken aanschaft voor toestemming van de Brand Portal-huurder. Voor dit programma zijn configuraties vereist in zowel de Experience Manager-middelen als de Adobe Developer Console.
+Eerder, Ervaar Mananger Assets als [!DNL Cloud Service] handmatig geconfigureerd met Brand Portal via Adobe Developer Console, die een Adobe Identity Management Services (IMS)-accounttoken aanschaft voor toestemming van de Brand Portal-huurder. Hiervoor zijn configuraties vereist in zowel Experience Manager-middelen als in Adobe Developer Console.
 
 1. Maak in Experience Manager Assets een IMS-account en genereer een openbare sleutel (certificaat).
-1. In de Console van de Ontwikkelaar van Adobe, creeer een project voor uw huurder van Brand Portal (organisatie).
+1. Maak in Adobe Developer Console een project voor uw Brand Portal-huurder (organisatie).
 1. Onder het project, vorm API gebruikend de openbare sleutel om een verbinding van de de dienstrekening tot stand te brengen.
 1. Krijg de geloofsbrieven van de de dienstrekening en JSON Web Token (JWT) nuttige ladingsinformatie.
 1. In de Elementen van de Manager van de Ervaring, vorm de rekening IMS gebruikend de geloofsbrieven van de de dienstrekening en JWT lading.
@@ -227,7 +227,7 @@ De IMS-configuratie omvat twee stappen:
 
 ### Openbaar certificaat verkrijgen {#public-certificate}
 
-Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd in de Adobe Developer Console.
+Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd op Adobe Developer Console.
 
 1. Meld u aan bij Experience Manager-middelen.
 1. Van de **Gereedschappen** deelvenster, navigeren naar **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
@@ -240,23 +240,23 @@ Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd in de Adobe 
 
 1. Klik op de knop **[!UICONTROL Download Public Key]** en sla het CRT-bestand (Public Key) op uw computer op.
 
-   De openbare sleutel wordt later gebruikt om API voor uw Brand Portal huurder te vormen en de geloofsbrieven van de de dienstrekening in de Console van de Ontwikkelaar van Adobe te produceren.
+   De openbare sleutel wordt later gebruikt om API voor uw Brand Portal huurder te vormen en de geloofsbrieven van de de dienstrekening in de Console van Adobe Developer te produceren.
 
    ![Download Certificate](assets/ims-config3.png)
 
 1. Klik op **[!UICONTROL Next]**.
 
-   In de **Account** wordt een Adobe IMS-account gemaakt waarvoor de gegevens van de serviceaccount zijn vereist die in de Adobe Developer Console zijn gegenereerd. Laat deze pagina voorlopig open.
+   In de **Account** wordt een Adobe IMS-account gemaakt waarvoor de referenties van de serviceaccount zijn vereist die in Adobe Developer Console worden gegenereerd. Laat deze pagina voorlopig open.
 
    Open een nieuw tabblad en [een JWT-verbinding (Service Account) maken in Adobe Developer Console](#createnewintegration) om de referenties en JWT-lading op te halen voor het configureren van de IMS-account.
 
 ### Verbinding voor serviceaccount (JWT) maken {#createnewintegration}
 
-In de Console van de Ontwikkelaar van Adobe, worden de projecten en APIs gevormd op het niveau van de huurder van Brand Portal (organisatie). Als u een API configureert, wordt een JWT-verbinding (Service Account) gemaakt. Er zijn twee methodes om API te vormen, door een zeer belangrijk paar (privé en openbare sleutels) te produceren of door een openbare sleutel te uploaden. Om de Middelen van de Manager van de Ervaring met Brand Portal te vormen, moet u een openbare sleutel (certificaat) in de Middelen van de Manager van de Ervaring produceren en geloofsbrieven in de Console van de Ontwikkelaar van de Adobe tot stand brengen door de openbare sleutel te uploaden. Deze gegevens zijn vereist voor het configureren van de IMS-account in Experience Manager Assets. Zodra de IMS-account is geconfigureerd, kunt u de Brand Portal-cloudservice configureren in Experience Manager-middelen.
+In de Console van Adobe Developer, worden de projecten en APIs gevormd op het niveau van de huurder van Brand Portal (organisatie). Als u een API configureert, wordt een JWT-verbinding (Service Account) gemaakt. Er zijn twee methodes om API te vormen, door een zeer belangrijk paar (privé en openbare sleutels) te produceren of door een openbare sleutel te uploaden. Als u Experience Manager-middelen met Brand Portal wilt configureren, moet u een openbare sleutel (certificaat) genereren in Experience Manager-middelen en referenties maken in Adobe Developer Console door de openbare sleutel te uploaden. Deze gegevens zijn vereist voor het configureren van de IMS-account in Experience Manager Assets. Zodra de IMS-account is geconfigureerd, kunt u de Brand Portal-cloudservice configureren in Experience Manager-middelen.
 
 Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en lading van JWT te produceren:
 
-1. Meld u aan bij de Adobe Developer Console met systeembeheerdersrechten voor de IMS-organisatie (Brand Portal-huurder). De standaard-URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Meld u aan bij Adobe Developer Console met systeembeheerdersrechten voor de IMS-organisatie (Brand Portal-huurder). De standaard-URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]

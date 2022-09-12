@@ -1,6 +1,6 @@
 ---
-title: '"[!DNL Adobe Experience Manager] as a Cloud Service prerelease-kanaal"'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service prerelease-kanaal"'
+title: "[!DNL Adobe Experience Manager] as a Cloud Service prerelease-kanaal"
+description: "[!DNL Adobe Experience Manager] as a Cloud Service prerelease-kanaal"
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt

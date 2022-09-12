@@ -1,6 +1,6 @@
 ---
 title: Wat is er veranderd tussen AEM 6.5 Forms en AEM Cloud Services
-description: 'Bent u een Experience Manager Forms-gebruiker en wilt u een upgrade uitvoeren naar Adobe Experience Manager Forms as a Cloud Service? Leer de opvallendste wijzigingen voordat u gaat upgraden of migreren naar Cloud Service.  '
+description: Bent u een Experience Manager Forms-gebruiker en wilt u een upgrade uitvoeren naar Adobe Experience Manager Forms as a Cloud Service? Leer de opvallendste wijzigingen voordat u gaat upgraden of migreren naar Cloud Service.
 contentOwner: khsingh
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4

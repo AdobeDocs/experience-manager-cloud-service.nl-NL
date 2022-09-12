@@ -11,7 +11,7 @@ ht-degree: 9%
 
 # Projecten {#projects}
 
-Projects let you group resources into one entity. A common, shared environment makes it easy to manage your projects. The types of resources you can associate with a project are referred to in AEM as Tiles. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere soorten informatie omvatten, zoals die in detail wordt beschreven [Projectblokken.](#project-tiles)
+Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Tegels. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere soorten informatie omvatten, zoals die in detail wordt beschreven [Projectblokken.](#project-tiles)
 
 >[!CAUTION]
 >
@@ -19,10 +19,10 @@ Projects let you group resources into one entity. A common, shared environment m
 
 Als gebruiker kunt u het volgende doen:
 
-* Create projects
+* Projecten maken
 * Inhoud en elementmappen aan een project koppelen
-* Delete projects
-* Remove content links from project
+* Projecten verwijderen
+* Inhoudskoppelingen uit project verwijderen
 
 Zie de volgende aanvullende onderwerpen:
 
@@ -30,9 +30,9 @@ Zie de volgende aanvullende onderwerpen:
 * [Werken met taken](/help/sites-cloud/authoring/projects/tasks.md)
 * [Werken met projectworkflows](/help/sites-cloud/authoring/projects/workflows.md)
 
-## Projects Console {#projects-console}
+## Projectconsole {#projects-console}
 
-The projects console is where you access and manage your projects within AEM.
+De projectenconsole is waar u tot uw projecten binnen AEM toegang hebt en leidt.
 
 ![De projectenconsole](/help/sites-cloud/authoring/assets/projects-console.png)
 
@@ -71,9 +71,9 @@ U uploadt elementen rechtstreeks in de tegel. Daarnaast kunt u Afbeeldingssets, 
 
 ### Asset Collections {#asset-collections}
 
-Similar to assets, you can add [asset collections](/help/assets/manage-collections.md) directly to your project. You define collections in Assets.
+Net als bij elementen kunt u [verzamelingen van middelen](/help/assets/manage-collections.md) rechtstreeks naar uw project. U definieert verzamelingen in elementen.
 
-![Asset collection](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
+![Verzameling van middelen](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
 Voeg een verzameling toe door op **Verzameling toevoegen** te klikken en de juiste verzameling in de lijst te selecteren.
 
@@ -99,13 +99,13 @@ U kunt de koppeling een naam geven die gemakkelijk herkenbaar is en u kunt de mi
 
 ![Koppeling toevoegen](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
-### Project Info {#project-info}
+### Projectinfo {#project-info}
 
-De tegel Projectinformatie bevat algemene informatie over het project, zoals een beschrijving, projectstatus (inactief of actief), een vervaldatum en leden. In addition, you can add a project thumbnail, which is displayed on the main Projects page.
+De tegel Projectinformatie bevat algemene informatie over het project, zoals een beschrijving, projectstatus (inactief of actief), een vervaldatum en leden. Bovendien kunt u een projectduimnagel toevoegen, die op de belangrijkste pagina van Projecten wordt getoond.
 
 ![Projectinfo](/help/sites-cloud/authoring/assets/project-info.png)
 
-Team members can be assigned and deleted from this tile (or have their roles changed) as well as the Team tile.
+De leden van het team kunnen van deze tegel (of hebben hun rollen veranderd) evenals de tegel van het Team worden toegewezen en worden geschrapt.
 
 ![Teamleden toevoegen aan project](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -121,9 +121,9 @@ Klik op de ellips onder aan het dialoogvenster **Vertaaltaak** kaart om de midde
 
 ### Team {#team}
 
-In deze tegel, kunt u de leden van het projectteam specificeren. When editing, you can enter the name of the team member and assign the user role.
+In deze tegel, kunt u de leden van het projectteam specificeren. Wanneer het uitgeven, kunt u de naam van het teamlid ingaan en de gebruikersrol toewijzen.
 
-![Team tile](/help/sites-cloud/authoring/assets/projects-team-tile.png)
+![Teamtegel](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
 U kunt teamleden toevoegen en verwijderen uit het team. Daarnaast kunt u de opdracht [gebruikersrol](#user-roles-in-a-project) toegewezen aan het teamlid.
 

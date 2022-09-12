@@ -1,7 +1,8 @@
 ---
 title: IMS-configuratie voor gebruik bij integratie met Adobe Target
 description: Meer informatie over IMS Configuration voor gebruik bij Integratie met Adobe Target
-source-git-commit: 444673c443d048db16e6ebc196b1498f553ef07b
+exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
+source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
 workflow-type: tm+mt
 source-wordcount: '859'
 ht-degree: 1%
@@ -10,7 +11,7 @@ ht-degree: 1%
 
 # IMS-configuratie voor gebruik bij integratie met Adobe Target{#ims-configuration-for-integration-with-adobe-target}
 
-Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) vereist. De configuratie wordt gerealiseerd met de Adobe Developer Console.
+Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) vereist. De configuratie wordt uitgevoerd met de Adobe Developer Console.
 
 >[!NOTE]
 >
@@ -31,7 +32,7 @@ Voordat u met deze procedure begint:
 
 * De systeembeheerder van het Systeem van uw organisatie zou de Admin Console moeten gebruiken om de vereiste ontwikkelaars in uw organisatie aan de relevante productprofielen toe te voegen.
 
-   * Dit verstrekt de specifieke ontwikkelaars met toestemmingen om integratie toe te laten gebruikend de Console van de Ontwikkelaar van de Adobe.
+   * Hiermee beschikken de specifieke ontwikkelaars over machtigingen om integratie in te schakelen met de Adobe Developer-console.
    * Zie voor meer informatie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -58,13 +59,13 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 
 ## IMS configureren voor Adobe Target-integratie met AEM {#configuring-ims-adobe-target-integration-with-aem}
 
-Adobe Developer Console Project (integratie) met Adobe Target dat AEM gebruikt, wijst vervolgens de vereiste rechten toe.
+Adobe Developer Console Project (integratie) met Adobe Target dat AEM gebruiken, wijst dan de vereiste voorrechten toe.
 
 ### Het project maken {#creating-the-project}
 
-Open de Adobe Developer Console om een project met Adobe Target te maken dat AEM gebruikt:
+Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM gebruiken:
 
-1. Open de Adobe Developer Console voor Projecten:
+1. Open de Adobe Developer-console voor projecten:
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -131,9 +132,9 @@ U moet nu de vereiste rechten toewijzen aan de integratie:
 1. Selecteren **API-referenties**, dan de vereiste integratieconfiguratie.
 1. Selecteren **Editor** als de **Productrol**; in plaats van **Waarnemer**.
 
-## Gegevens opgeslagen voor het Adobe Developer Console Integration-project {#details-stored-for-the-ims-integration-project}
+## Gegevens opgeslagen voor het Adobe Developer Console Integration Project {#details-stored-for-the-ims-integration-project}
 
-Van de console van de Projecten van de Console van de Ontwikkelaar van Adobe kunt u een lijst van al uw integratieprojecten zien:
+Vanuit de Adobe Developer Console Projecten Console kunt u een lijst van al uw integratieprojecten zien:
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -157,7 +158,7 @@ Terugkeren naar AEM kunt u de IMS-configuratie voltooien door vereiste waarden v
 1. Terugkeren naar de [IMS-configuratie geopend in AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Selecteren **Volgende**.
 
-1. Hier kunt u de [details van de projectconfiguratie in de Console van de Ontwikkelaar van Adobe](#details-stored-for-the-ims-integration-project):
+1. Hier kunt u de [details van de projectconfiguratie in Adobe Developer Console](#details-stored-for-the-ims-integration-project):
 
    * **Titel**: Uw tekst.
    * **Autorisatieserver**: Kopieer/plak deze vanuit de `aud` lijn van de **Payload** hieronder, bijvoorbeeld `https://ims-na1.adobelogin.com` in het onderstaande voorbeeld

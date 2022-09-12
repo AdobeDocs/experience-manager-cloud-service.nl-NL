@@ -1,5 +1,5 @@
 ---
-title: 'IP-Lijsten van gewenste personen toepassen en niet toepassen '
+title: IP-Lijsten van gewenste personen toepassen en niet toepassen
 description: Leer hoe te om IP lijsten van gewenste personen op milieu's toe te passen en ongedaan te maken.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326

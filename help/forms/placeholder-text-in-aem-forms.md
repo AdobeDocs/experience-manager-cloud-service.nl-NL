@@ -1,5 +1,5 @@
 ---
-title: 'Plaatsaanduidingstekst in [!DNL AEM Forms] '
+title: Plaatsaanduidingstekst in [!DNL AEM Forms]
 description: Plaatsaanduidingstekst is bedoeld om de gebruiker te helpen bij het invoeren van gegevens wanneer het besturingselement geen waarde heeft. Dit kan een samplewaarde of een korte beschrijving van de verwachte indeling zijn.
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt

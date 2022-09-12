@@ -1,5 +1,5 @@
 ---
-title: 'Hoe te om een gegevensbestand met te verbinden [!DNL AEM Forms] as a Cloud Service? '
+title: Hoe te om een gegevensbestand met te verbinden [!DNL AEM Forms] as a Cloud Service?
 seo-title: AEM Forms Data Integration
 description: U kunt gegevens ophalen en opslaan in RESTful-webservices, SOAP-webservices en OData-services van [!DNL AEM Forms] as a Cloud Service. De service biedt een speciaal hulpmiddel voor het ophalen, testen, valideren en verzenden van gegevens naar verschillende typen gegevensbronnen.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3

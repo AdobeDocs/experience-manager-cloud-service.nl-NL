@@ -1,7 +1,8 @@
 ---
 title: Metagegevenstoewijzing tussen Workfront en Experience Manager Assets configureren
 description: Wijs de gebieden van activa meta-gegevens tussen Adobe Workfront en Experience Manager as a Cloud Service toepassingen toe. Als u metagegevensvelden toewijst aan Experience Manager Assets en een element verzendt van Workfront naar, kunt u de metagegevens van de toegewezen elementen weergeven in Experience Manager Assets.
-source-git-commit: 212ecb5330de739b2e479d36462953ce33697c1c
+exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 1%
@@ -127,6 +128,3 @@ Instellingen voor metagegevens toepassen op de afbeeldingsmap:
 1. Selecteer de doelmap waarnaar [de afbeelding wordt verzonden vanuit de Adobe Workfront-toepassing](#send-image-workfront-assets) en klik op **[!UICONTROL Apply]**.
 
 U kunt naar de afbeelding navigeren in Experience Manager Assets en de metagegevens bekijken die aan de afbeelding zijn gekoppeld. Selecteer de afbeelding en klik op **[!UICONTROL Properties]** om de metagegevens van de afbeelding weer te geven.
-
-
-

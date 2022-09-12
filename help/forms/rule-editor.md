@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6152'
+source-wordcount: '6147'
 ht-degree: 0%
 
 ---
@@ -628,7 +628,7 @@ Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulie
 1. Selecteer het invoervak en tik op ![bewerkingsregels](assets/edit-rules-icon.svg) om de regeleditor te openen.
 1. Tik op **[!UICONTROL Create Rule]**. Maak met de opties hieronder een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
 
-[![Aangepaste functies gebruiken om een regel te maken](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+   [![Aangepaste functies gebruiken om een regel te maken](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. Tik op **[!UICONTROL Done]**. Uw aangepaste functie wordt toegevoegd.
 

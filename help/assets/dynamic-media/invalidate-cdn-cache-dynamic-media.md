@@ -68,7 +68,7 @@ Deze ongeldigmaking is echter niet het geval voor algemene domeinen die geen ond
 
    >[!NOTE]
    >
-   >Als u besluit de opties te handhaven **[!UICONTROL Invalidate asset associated image presets in CDN]** *en* **[!UICONTROL Invalidate based on template]** Als deze optie is uitgeschakeld, wordt de basis-URL van de geselecteerde elementen samengesteld voor ongeldigmaking. Gebruik deze optie alleen voor afbeeldingen.
+   >Als u besluit de opties te behouden **[!UICONTROL Invalidate asset associated image presets in CDN]** *en* **[!UICONTROL Invalidate based on template]** Als deze optie is uitgeschakeld, wordt de basis-URL van de geselecteerde elementen samengesteld voor ongeldigmaking. Gebruik deze optie alleen voor afbeeldingen.
 
 
    | Optie | Beschrijving |

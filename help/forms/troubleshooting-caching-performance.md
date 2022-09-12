@@ -1,7 +1,7 @@
 ---
-title: 'Problemen met prestaties in cache oplossen  '
+title: Problemen met prestaties in cache oplossen
 seo-title: Troubleshooting caching performance
-description: 'Problemen met prestaties in cache oplossen  '
+description: Problemen met prestaties in cache oplossen
 seo-description: Troubleshooting caching performance
 contentOwner: khsingh
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c

@@ -1,12 +1,12 @@
 ---
 title: Beveiliging voor Adobe Experience Manager as a Cloud Service
-description: 'Meer weten over de beveiligingsfuncties van Adobe Experience Manager as a Cloud Service? '
+description: Meer weten over de beveiligingsfuncties van Adobe Experience Manager as a Cloud Service?
 landing-page-description: Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service.
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '382'
+ht-degree: 63%
 
 ---
 

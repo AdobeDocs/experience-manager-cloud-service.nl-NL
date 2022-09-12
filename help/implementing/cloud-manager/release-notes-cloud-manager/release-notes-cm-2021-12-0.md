@@ -2,13 +2,13 @@
 title: Opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service versie 2021.12.0
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager in AEM as a Cloud Service release 2021.12.0.
 feature: Release Information
-source-git-commit: bd31dc0ca5b0f4cd84314dba67c8a611f490d377
+exl-id: ee920bc5-cad7-4fac-bf73-bc1178699f90
+source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release voor Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.12.0 {#release-notes}
 

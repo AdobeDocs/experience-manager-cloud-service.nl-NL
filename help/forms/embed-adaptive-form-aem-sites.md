@@ -5,7 +5,7 @@ description: U kunt de AEM Forms Container-component gebruiken om adaptieve Form
 feature: Adaptive Forms
 source-git-commit: dac38b2a90b2a1969e5332b8a658e8f1e0e5eccb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---

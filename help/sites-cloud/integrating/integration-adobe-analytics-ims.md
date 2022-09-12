@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # IMS-configuratie voor gebruik bij integratie met Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
 
-Voor de integratie van Adobe Experience Manager as a Cloud Service (AEMaaCS) met Adobe Analytics via de API voor Analytics Standard is de configuratie van Adobe IMS (Identity Management System) vereist. De configuratie wordt gerealiseerd met de Adobe Developer Console.
+Voor de integratie van Adobe Experience Manager as a Cloud Service (AEMaaCS) met Adobe Analytics via de API voor Analytics Standard is de configuratie van Adobe IMS (Identity Management System) vereist. De configuratie wordt uitgevoerd met de Adobe Developer Console.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Voordat u met deze procedure begint:
 
 * De systeembeheerder van het Systeem van uw organisatie zou de Admin Console moeten gebruiken om de vereiste ontwikkelaars in uw organisatie aan de relevante productprofielen toe te voegen.
 
-   * Dit verstrekt de specifieke ontwikkelaars met toestemmingen om integratie toe te laten gebruikend de Console van de Ontwikkelaar van de Adobe.
+   * Hiermee beschikken de specifieke ontwikkelaars over machtigingen om integratie in te schakelen met de Adobe Developer-console.
    * Zie voor meer informatie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -67,7 +67,7 @@ U moet met de Adobe Developer-console een project (integratie) maken met Adobe A
 
 Open de Adobe Developer-console om een project te maken met Adobe Analytics dat AEM gebruiken:
 
-1. Open de Adobe Developer Console voor Projecten:
+1. Open de Adobe Developer-console voor projecten:
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -122,7 +122,7 @@ U moet nu de vereiste rechten toewijzen aan de integratie:
 1. Selecteren **API-referenties**, dan de vereiste integratieconfiguratie.
 1. Selecteren **Editor** als de **Productrol**; in plaats van **Waarnemer**.
 
-## Gegevens opgeslagen voor het Adobe Developer Console Integration-project {#details-stored-for-the-ims-integration-project}
+## Gegevens opgeslagen voor het Adobe Developer Console Integration Project {#details-stored-for-the-ims-integration-project}
 
 Vanuit de Adobe Developer Console - Projecten kunt u een lijst met al uw integratieprojecten zien:
 

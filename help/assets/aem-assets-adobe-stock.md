@@ -31,7 +31,7 @@ De integratie vereist:
 * Aan de slag [!DNL Experience Manager Assets] als [!DNL Cloud Service] instance
 * An [bedrijf [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/)
 * Een gebruiker met machtigingen in Admin Console naar het standaardprofiel voor het product Stock
-* Een gebruiker met machtigingen voor het profiel Developer Access voor het maken van integratie in de Adobe Developer Console
+* Een gebruiker met machtigingen voor het Developer Access-profiel voor het maken van integratie in Adobe Developer Console
 
 Een onderneming [!DNL Adobe Stock] plan,
 
@@ -111,7 +111,7 @@ De IMS-configuratie omvat twee stappen:
 
 ### Openbaar certificaat verkrijgen {#public-certificate}
 
-Met de openbare sleutel (certificaat) wordt uw productprofiel geverifieerd in de Adobe Developer Console.
+Met de openbare sleutel (certificaat) wordt uw productprofiel geverifieerd in Adobe Developer Console.
 
 1. Meld u aan bij uw [!DNL Experience Manager Assets] cloudinstantie.
 
@@ -127,7 +127,7 @@ Met de openbare sleutel (certificaat) wordt uw productprofiel geverifieerd in de
 
 1. Klik op **[!UICONTROL Create certificate]**. Klik vervolgens op **[!UICONTROL OK]** om de openbare sleutel te produceren.
 
-1. Klik op de knop **[!UICONTROL Download Public Key]** en sla het bestand met de openbare sleutel (.crt) op uw computer op. De openbare sleutel wordt later gebruikt om API voor uw Brand Portal huurder te vormen en de geloofsbrieven van de de dienstrekening in de Console van de Ontwikkelaar van Adobe te produceren.
+1. Klik op de knop **[!UICONTROL Download Public Key]** en sla het bestand met de openbare sleutel (.crt) op uw computer op. De openbare sleutel wordt later gebruikt om API voor uw Brand Portal huurder te vormen en de geloofsbrieven van de de dienstrekening in de Console van Adobe Developer te produceren.
 
    Klik op **[!UICONTROL Next]**.
 
@@ -139,11 +139,11 @@ Met de openbare sleutel (certificaat) wordt uw productprofiel geverifieerd in de
 
 ### Verbinding voor serviceaccount (JWT) maken {#createnewintegration}
 
-In de Console van de Ontwikkelaar van Adobe, worden de projecten en APIs gevormd op organisatieniveau. Als u een API configureert, wordt een JWT-verbinding (Service Account) gemaakt. Er zijn twee methodes om API te vormen, door een zeer belangrijk paar (privé en openbare sleutels) te produceren of door een openbare sleutel te uploaden. In dit voorbeeld worden de gegevens van de serviceaccount gegenereerd door de openbare sleutel te uploaden.
+In Adobe Developer Console, worden de projecten en APIs gevormd op organisatieniveau. Als u een API configureert, wordt een JWT-verbinding (Service Account) gemaakt. Er zijn twee methodes om API te vormen, door een zeer belangrijk paar (privé en openbare sleutels) te produceren of door een openbare sleutel te uploaden. In dit voorbeeld worden de gegevens van de serviceaccount gegenereerd door de openbare sleutel te uploaden.
 
 Om de geloofsbrieven van de de dienstrekening en JWT lading te produceren:
 
-1. Meld u aan bij de Adobe Developer Console met systeembeheerdersrechten. De standaard-URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Meld u aan bij de Adobe Developer-console met systeembeheerdersrechten. De standaard-URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    Controleer of u de juiste IMS-organisatie (Stock Entitlement) hebt geselecteerd in de vervolgkeuzelijst (organisatie).

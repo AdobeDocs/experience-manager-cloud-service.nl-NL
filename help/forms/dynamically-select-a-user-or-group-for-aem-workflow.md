@@ -1,6 +1,6 @@
 ---
 title: Een gebruiker of groep dynamisch selecteren voor workflowstappen die op AEM Forms zijn gericht
-description: 'Leer hoe u een gebruiker of groep voor een [!DNL AEM Forms] tijdens de runtime. '
+description: Leer hoe u een gebruiker of groep voor een [!DNL AEM Forms] tijdens de runtime.
 content-type: troubleshooting
 topic-tags: publish
 source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0

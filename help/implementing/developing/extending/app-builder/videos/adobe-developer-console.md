@@ -1,5 +1,5 @@
 ---
-title: Adobe Developer Console for App Builder
+title: Adobe Developer-console voor App Builder
 description: Meer informatie over Adobe Developer Console- en App Builder-projecten.
 version: Cloud Service
 feature: App Builder
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Adobe Developer Console for App Builder
+# Adobe Developer-console voor App Builder
 
 >[!IMPORTANT]
 >
@@ -24,19 +24,19 @@ ht-degree: 0%
 
 ## Aan de slag met Adobe Developer Console
 
-Leer wat de Console van de Ontwikkelaar van de Adobe is, en hoe te om tot het toegang te hebben en te navigeren.
+Leer wat de Adobe Developer Console is, en hoe te om tot het toegang te hebben en te navigeren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
 
 ## Werken met projecten en sjablonen
 
-Leer hoe te om een project tot stand te brengen App Builder gebruikend het malplaatje App Builder van de Console van de Ontwikkelaar van Adobe.
+Leer hoe u een App Builder-project maakt met de sjabloon App Builder van de Adobe Developer-console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
 
 ## Projectgegevens
 
-Leer hoe u de opties gebruikt in het aanmeldingsmenu van de Adobe Developer Console en in het goedkeuringsproces.
+Leer hoe u de opties gebruikt in het aanmeldingsmenu van Adobe Developer Console en in het goedkeuringsproces.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
 

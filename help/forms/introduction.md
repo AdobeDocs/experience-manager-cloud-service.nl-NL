@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager (AEM) as a Cloud Service overzicht van Forms
-description: '"[!DNL AEM Forms] as a Cloud Service is een platform voor het maken, beheren en publiceren van formulieren en bedrijfsprocessen op bedrijfsniveau."'
+description: "[!DNL AEM Forms] as a Cloud Service is een platform voor het maken, beheren en publiceren van formulieren en bedrijfsprocessen op bedrijfsniveau."
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '82'

@@ -7,9 +7,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1145'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ U kunt uw Adaptieve Forms-, thema-, sjablonen- en cloudconfiguraties migreren va
 
 * De service helpt inhoud alleen te migreren van [!DNL AEM Forms] in OSGi-omgevingen. Inhoud migreren uit [!DNL AEM Forms] op JEE aan een milieu van de Cloud Service wordt niet gesteund.
 
-* (Alleen voor AEM 6.3 Forms of een eerdere versie van de omgeving die is bijgewerkt naar AEM 6.4 Forms of AEM 6.5 Forms) Aangepaste Forms op basis van out-of-the-box sjablonen en thema&#39;s die beschikbaar zijn in AEM 6.3 Forms of vorige versie worden niet ondersteund op [!DNL [!DNL AEM Forms]] as a Cloud Service.
+* (Alleen voor AEM 6.3 Forms of een eerdere versie van de omgeving die is bijgewerkt naar AEM 6.4 Forms of AEM 6.5 Forms) Aangepaste Forms op basis van out-of-the-box sjablonen en thema&#39;s die beschikbaar zijn in AEM 6.3 Forms of vorige versie worden niet ondersteund op [!DNL AEM Forms] as a Cloud Service.
 
 ## Vereisten {#prerequisites}
 

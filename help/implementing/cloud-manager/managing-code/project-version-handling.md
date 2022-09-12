@@ -1,6 +1,6 @@
 ---
 title: Maven-projectversiebeheer
-description: 'Voor implementatie van AEM as a Cloud Service in fasen en productie genereert Cloud Manager een unieke, incrementele versie. '
+description: Voor implementatie van AEM as a Cloud Service in fasen en productie genereert Cloud Manager een unieke, incrementele versie.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 21607fadf33dac038c7f794b933b92f60b8e20a9
 workflow-type: tm+mt
