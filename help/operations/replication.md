@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
+source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1258'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ U kunt dit ook bereiken door een workflowmodel te maken dat gebruikmaakt van de 
 * `enableVersion` (booleaanse waarde, standaardwaarde): `true`). Deze parameter bepaalt als een nieuwe versie op replicatie wordt gecreeerd.
 * `agentId` (tekenreekswaarde; de standaardwaarde betekent dat alleen agents voor publicatie worden gebruikt). Men adviseert om over agentId uitdrukkelijk te zijn; Stel bijvoorbeeld de waarde in: publiceren. De agent instellen op `preview` publiceert naar de voorbeeldservice
 * `filters` (tekenreekswaarde, standaard betekent dat alle paden zijn geactiveerd). Beschikbare waarden zijn:
-   * `onlyActivated` - alleen paden die niet zijn gemarkeerd als geactiveerd, worden geactiveerd.
+   * `onlyActivated` - alleen paden die zijn gemarkeerd als geactiveerd, worden geactiveerd.
    * `onlyModified` - activeer alleen paden die al zijn geactiveerd en een wijzigingsdatum na de activeringsdatum hebben.
    * Het bovenstaande kan ORed zijn met een pijp &quot;|&quot;. Bijvoorbeeld, `onlyActivated|onlyModified`.
 
