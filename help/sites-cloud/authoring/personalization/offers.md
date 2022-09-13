@@ -2,9 +2,9 @@
 title: Aanbiedingen maken en beheren (console Aanbiedingen)
 description: Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen kunt gebruiken
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
+source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1393'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,23 @@ Voeg indien nodig codes toe.
 1. Bevestigen met **Gereed**.
 
    Als u nu naar de **Geniet van fragmentatieaanbiedingen** -console, ziet u het nieuwe ervaringsfragment samen met de bijbehorende variaties.
+
+### Aanwijzen met de aanbiedingensjabloon {#targeting-offers-template}
+
+>[!CAUTION]
+>
+>Deze optie is alleen beschikbaar voor klanten met bestaande oudere aanbiedingen.
+>
+>Net als bij de **Aanbiedingen** -console is niet meer beschikbaar:
+>
+>* zodra het laatste verouderde aanbod is omgezet in Experience Fragments
+>* wanneer oude aanbiedingen zijn verouderd (in de toekomst)
+>
+>Daarom is de geadviseerde optie het Fragmenten van de Ervaring te gebruiken, niet deze optie.
+
+Voor klanten met bestaande, oudere aanbiedingen geldt dat de **Aanbiedingssjabloon gebruiken** opties zijn zichtbaar wanneer u zich richt op componenten die **niet** Geniet van fragmenten:
+
+![Omzetten in dialoogvenster Fragmentvariatie beleven](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## De aanbiedingenconsole {#offers-console}
 
