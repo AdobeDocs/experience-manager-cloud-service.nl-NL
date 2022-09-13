@@ -1,15 +1,101 @@
 ---
-title: Aanbiedingen maken en beheren
+title: Aanbiedingen maken en beheren (console Aanbiedingen)
 description: Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen kunt gebruiken
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 1%
+source-wordcount: '1306'
+ht-degree: 0%
 
 ---
 
-# Aanbiedingen maken en beheren {#creating-and-managing-offers}
+# Aanbiedingen maken en beheren (console Aanbiedingen) {#creating-and-managing-offers}
+
+De **Aanbiedingen** console zal in de toekomst verouderd zijn. Het is dus vanaf nu:
+
+* Alleen beschikbaar voor klanten met *verouderd* reeds gedefinieerde aanbiedingen (d.w.z. reeds bestaand)
+* Aanbevolen dat dergelijke verouderde aanbiedingen worden geconverteerd naar Experience Fragment-aanbiedingen
+   * Zodra het laatste verouderde aanbod is omgezet/verwijderd, wordt het **Aanbiedingen** console is niet meer beschikbaar.
+
+![Aanpassingsconsoles](/help/sites-cloud/authoring/assets/offers-consoles.png)
+
+>[!NOTE]
+>
+>Klanten met bestaande oudere aanbiedingen kunnen nog steeds gebruikmaken van de **Aanbiedingen** -console om bestaande aanbiedingen te bekijken en nieuwe, verouderde aanbiedingen te maken.
+>
+>Klanten zonder bestaande oudere aanbiedingen zien de **Aanbiedingen** console.
+>
+>Alle klanten kunnen **Geniet van fragmenten** om aanbiedingen te maken en te beheren.
+
+## Een verouderde aanbieding omzetten in een ervaringsfragment {#convert-legacy-offer-to-experience-fragment}
+
+A **Omzetten in ervaring met fragmentvariatie** en workflow zijn geïmplementeerd om u te helpen uw oudere aanbieding om te zetten in een Experience Fragment:
+
+>[!NOTE]
+>
+>Dit is de aanbevolen workflow voor het converteren van verouderde aanbiedingen naar ervaren fragmenten.
+
+>[!NOTE]
+>
+>U kunt zelf ook een nieuw Experience Fragment maken, de inhoud van uw verouderde aanbieding handmatig overbrengen naar het fragment en vervolgens de verouderde aanbieding verwijderen.
+
+>[!CAUTION]
+>
+>De **Omzetten in ervaring met fragmentvariatie** is beschikbaar voor alle Core Components.
+>
+>Deze optie wordt niet ondersteund voor aangepaste componenten. Voor dergelijke componenten moet u de inhoud handmatig omzetten in een ervaringsfragment.
+
+>[!CAUTION]
+>
+>Zodra het laatste verouderde aanbod is omgezet/verwijderd:
+>
+>* De **Aanbiedingen** console is niet meer beschikbaar.
+>* Het doelpictogram in de werkbalkbalk van andere betrokken componenten wordt niet meer weergegeven.
+
+
+1. Open een pagina die de aanbieding voor bewerking bevat.
+
+1. Overschakelen op **Doelstelling** voor die pagina.
+
+1. Selecteren **Doelstelling starten**.
+
+1. Selecteer de juiste (beoogde) component.
+
+1. De componentwerkbalk biedt een optie voor **Omzetten in ervaring met fragmentvariatie**:
+
+   ![Verouderde aanbieding omzetten in fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+
+1. Er wordt een dialoogvenster weergegeven. Hier kunt u de vereiste **Handeling**:
+
+   * Een nieuw ervaringsfragment maken
+   * De inhoud toevoegen aan een bestaand ervaringsfragment
+
+   Voor dit scenario selecteert u **Een nieuw ervaringsfragment maken**.
+
+   ![Omzetten in dialoogvenster Fragmentvariatie beleven](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
+
+1. Vul de vereiste velden in het dialoogvenster in:
+
+   * **Bovenliggend pad**
+Het bovenliggende pad van het nieuwe ervaringsfragment opgeven
+   * **Sjabloon**
+Selecteer de sjabloon die u wilt gebruiken voor het maken van het ervaringsfragment.
+   * **Fragmenttitel**
+Geef de titel op.
+   * **Fragmenttags**
+Voeg indien nodig codes toe.
+
+1. Bevestigen met **Gereed**.
+
+   Als u nu naar de **Geniet van fragmentatieaanbiedingen** -console, ziet u het nieuwe ervaringsfragment samen met de bijbehorende variaties.
+
+## De aanbiedingenconsole {#offers-console}
+
+>[!CAUTION]
+>
+>Deze console wordt afgekeurd in de toekomst, aangezien het een erfenismanier aanbiedt om inhoud te personaliseren.
+>
+>Je hebt wat tijd om je voor te bereiden. Zie hoe te [zet uw bestaande oude aanbiedingen om in een ervaringsfragmentaanbieding](#convert-legacy-offer-to-experience-fragment).
 
 Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u kunt [gebruik in de praktijk](/help/sites-cloud/authoring/personalization/targeted-content.md). Het creëren van aanbiedingen in de console van Aanbiedingen bespaart tijd wanneer verscheidene ervaringen de zelfde aanbieding vereisen:
 
@@ -18,7 +104,7 @@ Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u k
 
 De console van Aanbiedingen organiseert aanbiedingen door merk. Elk merk bevat een bibliotheek met aanbiedingen die in de ervaringen van een merk kunnen worden gebruikt. Gebruik mappen om een hiërarchische structuur te definiëren voor het organiseren van aanbiedingen in elke bibliotheek. Met een logische mapstructuur kunnen auteurs eenvoudig aanbiedingen zoeken door te bladeren. Met tags en zoekgereedschappen kunnen auteurs ook aanbiedingen vinden.
 
-## Een merk toevoegen met de aanbiedingsconsole {#add-a-brand-using-the-offers-console}
+### Een merk toevoegen met de aanbiedingsconsole {#add-a-brand-using-the-offers-console}
 
 Maak een merk waaraan uw aanbiedingen zijn gekoppeld. Open een merk in de console van Aanbiedingen om tot zijn aanbiedingsbibliotheek toegang te hebben waar u omslagen en aanbiedingen kunt tot stand brengen.
 
@@ -33,7 +119,7 @@ Wanneer u een merk maakt met de console Aanbiedingen, wordt dit ook weergegeven 
 1. Typ een titel voor het merk zoals u deze wilt weergeven in de consoles van Aanbiedingen en Activiteiten. Typ of selecteer eventueel een of meer tags die u aan het merk wilt koppelen.
 1. Klikken of tikken **Maken**.
 
-## Een map toevoegen aan een aanbiedingsbibliotheek {#add-a-folder-to-an-offer-library}
+### Een map toevoegen aan een aanbiedingsbibliotheek {#add-a-folder-to-an-offer-library}
 
 Voeg een map toe aan de aanbiedingsbibliotheek van een merk om aanbiedingen te organiseren en op te slaan. U kunt een map maken onder het merk of onder andere mappen.
 
@@ -49,7 +135,7 @@ Voeg een map toe aan de aanbiedingsbibliotheek van een merk om aanbiedingen te o
 
 1. Klikken of tikken **Maken**.
 
-## Een voorstel toevoegen aan een bibliotheek met aanbiedingen {#add-an-offer-to-an-offer-library}
+### Een voorstel toevoegen aan een bibliotheek met aanbiedingen {#add-an-offer-to-an-offer-library}
 
 Voeg een aanbieding toe aan de aanbiedingsbibliotheek van een merk zodat deze aan de ervaringen van het merk kan worden toegevoegd. Als je een voorstel toevoegt, geef je een titel op. U kunt de aanbieding ook koppelen aan een of meer tags om de zoekbaarheid te verbeteren.
 
@@ -64,7 +150,7 @@ Nadat u het voorstel hebt gemaakt, kunt u het openen om de inhoud te ontwerpen.
 1. Typ een titel voor de aanbieding en selecteer of typ desgewenst een of meer tags die u aan de aanbieding wilt koppelen. Klik of tik vervolgens op **Maken**.
 1. Klik of tik op **Pagina openen**.
 
-## Een voorstel bewerken {#editing-an-offer}
+### Een voorstel bewerken {#editing-an-offer}
 
 Open een aanbieding en bewerk de inhoud zoals u die in de ervaringen wilt weergeven die het gebruiken. Als u een aanbieding bewerkt die in een willekeurige ervaring wordt gebruikt, worden de wijzigingen in de ervaringen weergegeven.
 
@@ -73,7 +159,7 @@ U kunt een voorstel van een omslag in een aanbiedingsbibliotheek of van onderzoe
 1. Tik of klik op het pictogram naast de aanbieding in de console Aanbiedingen en klik of tik op **Bewerken**.
 1. Voeg componenten toe aan de aanbieding en bewerk de componenteninhoud zoals gebruikelijk.
 
-## Een voorstel verwijderen {#deleting-an-offer}
+### Een voorstel verwijderen {#deleting-an-offer}
 
 Een voorstel verwijderen wanneer het niet meer nodig is. Wanneer u probeert om een voorstel te schrappen dat in een ervaring wordt gebruikt, wordt u ertoe aangezet om de schrapping te bevestigen. Als u bevestigt, wordt het aanbod verwijderd en wordt het uit de ervaringen verwijderd.
 
@@ -89,7 +175,7 @@ U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibli
    * Als u de aanbieding wilt verwijderen en deze uit de ervaringen wilt verwijderen, klikt u of tikt u op **Verwijderen forceren**.
    * Klik of tik op **Annuleren**.
 
-## Zoeken naar voorstellen {#searching-for-offers}
+### Zoeken naar voorstellen {#searching-for-offers}
 
 Zoek naar voorstellen van om het even welk merk gebruikend sleutelwoorden om de titel te passen.
 

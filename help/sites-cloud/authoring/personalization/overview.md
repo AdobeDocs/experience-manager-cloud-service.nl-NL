@@ -2,9 +2,9 @@
 title: Aanpassing en doelgerichtheid van inhoud
 description: Leer hoe AEM persoonlijke inhoud kan maken
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8b741b64db43369bf0ca3bfbe947fb58ef5ec05a
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,11 @@ Een aanbieding is inhoud die op een plaats op een pagina voor een ervaring versc
 
 Op de pagina voor vrouwen van een voorbeeldwebsite kunt u bijvoorbeeld aanbiedingen gebruiken als de laserafbeelding die boven aan de pagina wordt weergegeven. Een ander aanbod wordt gebruikt als taser voor vrouwen ouder dan 30 jaar en voor vrouwen jonger dan 30 jaar.
 
-Gebruik de [Aanbiedingsconsole](/help/sites-cloud/authoring/personalization/offers.md) om aanbiedingen te maken die u in meerdere ervaringen kunt gebruiken. Aanbiedingen voor eenmalig gebruik maken of aanbiedingen uit een aanbiedingenbibliotheek toevoegen wanneer [ontwerpen, doelinhoud](/help/sites-cloud/authoring/personalization/targeted-content.md).
+Gebruiken [Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) om aanbiedingen te maken die u in meerdere ervaringen kunt gebruiken. Aanbiedingen voor eenmalig gebruik maken of aanbiedingen uit een aanbiedingenbibliotheek toevoegen wanneer [ontwerpen, doelinhoud](/help/sites-cloud/authoring/personalization/targeted-content.md).
+
+<!--
+Use the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) to create offers that you can use in multiple experiences. Create single-use offers or add offers from an offer library when [authoring targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
+-->
 
 ## Richtingsmotor {#targeting-engine}
 
