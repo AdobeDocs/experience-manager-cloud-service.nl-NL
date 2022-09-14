@@ -4,10 +4,10 @@ description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellinge
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
 workflow-type: tm+mt
-source-wordcount: '3131'
-ht-degree: 5%
+source-wordcount: '3187'
+ht-degree: 4%
 
 ---
 
@@ -84,6 +84,10 @@ U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U
 ### Ondersteunde bestandsindelingen voor afbeeldingen met slimme uitsnijden en kleurstalen
 
 De maximale resolutie voor ondersteunde invoerbestanden is 16 kB.
+
+>[!NOTE]
+>
+>De resolutie van 16 kB is een weergaveresolutie met ongeveer 16.000 pixels horizontaal. De meest gebruikte resolutie van 16 kB is 15360 x 8640, die het pixelaantal van 8kHD in elke afmeting verdubbelt, voor een totaal van vier keer zo veel pixel. Deze resolutie heeft 132,7 megapixels, 16 keer zoveel pixels als een resolutie van 4.000 pixels en 64 keer zoveel pixels als de resolutie van 1.080p.
 
 | Afbeeldingsindeling | Niet-hoofdlettergevoelige bestandsextensie | MIME-type | Ondersteunde invoerkleurruimte | Maximale ondersteunde grootte invoerbestand | Ondersteunde afbeeldingsindeling? |
 | --- | --- | --- | --- | --- | --- |
