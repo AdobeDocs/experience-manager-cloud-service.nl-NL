@@ -2,9 +2,9 @@
 title: Werken met contentfragmenten
 description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service inhoud kunt ontwerpen, maken, curven en gebruiken die onafhankelijk is van pagina's. Dit is ideaal voor het ontwerpen van pagina's en het leveren zonder kop.
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2107'
 ht-degree: 3%
 
 ---
@@ -86,6 +86,11 @@ Deze inhoudsfragmenten kunnen vervolgens worden samengevoegd om via verschillend
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
 >Zie ook voor meer informatie [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="Maak de inhoudsstructuur voor uw app"
+>abstract="Als u onze reeks interactieve hulplijnen volgt, leert u de structuur (ook wel het inhoudsfragmentmodel genoemd) te maken die als basis voor al uw inhoud zonder kop fungeert."
 
 ## Inhoudsfragmenten en inhoudsservices {#content-fragments-and-content-services}
 

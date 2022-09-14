@@ -2,9 +2,9 @@
 title: Aflevering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL
 description: Leer de basisconcepten van het realiseren van een AEM CMS zonder kop die Inhoudsfragmenten met GraphQL gebruiken voor de levering van inhoud zonder kop.
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,11 @@ Dit wordt bereikt gebruikend de Fragments van de Inhoud, samen met AEM GraphQL A
 >* [AEM Handel verbruikt gegevens van een handelsplatform via GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* [AEM de Fragmenten van de Inhoud werken samen met AEM GraphQL API (een aangepaste implementatie, die op standaard GraphQL wordt gebaseerd), om gestructureerde inhoud voor gebruik in uw toepassingen te leveren](/help/headless/graphql-api/content-fragments.md).
 
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="Inhoud extraheren met de GraphQL API"
+>abstract="In deze module zult u leren hoe u de Fragmenten van de Inhoud en GraphQL API als Systeem van het Beheer van de Inhoud zonder Titel kunt gebruiken."
 
 ## CMS zonder hoofd {#headless-cms}
 
