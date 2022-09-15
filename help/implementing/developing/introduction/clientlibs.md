@@ -2,9 +2,9 @@
 title: Client-Side bibliotheken gebruiken op AEM as a Cloud Service
 description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientlibs) in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden verzonden
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2565'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,7 @@ Het insluiten van code is handig voor het verschaffen van toegang tot bibliothek
 
 #### Toepassingsspecifieke clientbibliotheekmappen {#app-specific-client-library-folders}
 
-Het wordt aanbevolen alle toepassingsgerelateerde bestanden in de onderstaande toepassingsmap te houden `/app`. Het is ook aan te raden bezoekers van websites de toegang tot de `/app` map. Om aan beide beste praktijken te voldoen, creeer een omslag van de cliëntbibliotheek onder `/etc` map waarin de clientbibliotheek is ingesloten die zich onder `/app`.
+U kunt het beste alle toepassingsgerelateerde bestanden in hun toepassingsmap onder /apps opslaan. Het wordt ook aanbevolen bezoekers van websites toegang tot de map /apps te weigeren. Om aan beide beste praktijken te voldoen, creeer een omslag van de cliëntbibliotheek onder de /etc omslag die de cliëntbibliotheek inbedt die onder /apps is.
 
 Gebruik de eigenschap Categorieën om de clientbibliotheekmap te identificeren die u wilt insluiten. Als u de bibliotheek wilt insluiten, voegt u een eigenschap toe aan het insluiten `cq:ClientLibraryFolder` node, met de volgende eigenschapkenmerken:
 
