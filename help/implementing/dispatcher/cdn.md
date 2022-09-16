@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
+source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1056'
 ht-degree: 8%
 
 ---
@@ -98,7 +98,7 @@ Wanneer u uw eigen CDN gebruikt, hoeft u de domeinen en certificaten niet te ins
 >
 >Sandbox programmamilieu&#39;s steunen geen klant-Geleverde CDN.
 
-Er is potentieel een kleine prestatieshit toe te schrijven aan de extra hop, hoewel de hop van klant CDN aan AEM beheerde CDN waarschijnlijk efficiënt zal zijn.
+De extra hop tussen klant CDN en AEM CDN is slechts nodig in het geval van een geheim voorgeheugenmisser. Door de strategieën van de geheim voorgeheugenoptimalisering te gebruiken die in dit artikel worden beschreven, zou de toevoeging van een klant CDN slechts verwaarloosbare latentie moeten introduceren.
 
 Houd er rekening mee dat deze CDN-configuratie van de klant wordt ondersteund voor de publicatielijst, maar niet vóór de auteurslaag.
 
