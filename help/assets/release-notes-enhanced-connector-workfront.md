@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
+source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -24,7 +24,7 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 * Kan geen bestand uploaden dat groter is dan 8 GB.
 * Problemen bij het automatisch publiceren van middelen die van Workfront naar AEM worden verzonden.
 * Het veld Basispad is niet beschikbaar voor het veld Codes tijdens het bewerken van een standaardformulier voor een metagegevensschema.
-* Problemen tijdens het toevoegen van nieuwe versies in Workfront met AEM workflows
+* Problemen tijdens het toevoegen van nieuwe versies in Workfront via AEM workflows.
 * Wanneer u een AEM zoekopdracht uitvoert naar middelen die beschikbaar zijn in Workfront, AEM een foutbericht wordt weergegeven.
 * Wanneer u een AEM werkstroom maakt voor het maken van taken op basis van een element en geen bovenliggende taaknaam definieert, wordt de taak niet in Workfront gemaakt.
 
