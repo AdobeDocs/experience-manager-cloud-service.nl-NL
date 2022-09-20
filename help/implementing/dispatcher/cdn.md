@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
+source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 8%
+source-wordcount: '1093'
+ht-degree: 7%
 
 ---
 
@@ -127,6 +127,10 @@ De AEM beheerde CDN voegt kopballen aan elk verzoek met toe:
 
 * landcode: `x-aem-client-country`
 * continentale code: `x-aem-client-continent`
+
+>[!NOTE]
+>
+>In het geval van klant beheerde CDN zullen deze kopballen op de plaats van de klantenCDN volmachtsserver eerder dan de daadwerkelijke cliënt wijzen.  Daarom voor klant beheerde CDN, zouden de geolocatiekopballen door klanten CDN moeten worden beheerd.
 
 De waarden voor de landcodes zijn de beschreven alpha-2-codes [hier](https://en.wikipedia.org/wiki/ISO_3166-1).
 
