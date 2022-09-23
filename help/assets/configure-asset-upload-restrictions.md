@@ -2,9 +2,9 @@
 title: Beperkingen voor het uploaden van middelen configureren
 description: Configureer Adobe Experience Manager Assets om het type elementen te beperken dat gebruikers kunnen uploaden op basis van het MIME-type. Zo voorkomt u ongewenste uploads in de gewenste indeling en schadelijke bestanden.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
+source-git-commit: d2d0d8b0d484d2e5cd2bf44449e7d71d3da98eea
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,12 @@ Voer de volgende instellingen uit om het uploaden van afbeeldingen in alle indel
 ![Beperkingen voor het uploaden van middelen](assets/asset-upload-restrictions.png)
 
 `image/*` aangezien het MIME-type het uploaden van afbeeldingen in alle indelingen toestaat. `application/pdf` aangezien het MIME-type het uploaden van PDF-bestanden naar Experience Manager Assets toestaat.
+
+Als u probeert een bestand te uploaden dat niet is opgenomen in de lijst met toegestane MIME-typen, geeft Experience Manager Assets het volgende foutbericht weer:
+
+![Beperkte bestanden](assets/asset-upload-restricted-files.png)
+
+`Screen Recording 2022-08-31 at 3.36.09 PM.mov` verwijst naar een bestandsnaam die niet is opgenomen in de toegestane MIME-typen.
 
 **Voorbeeld 2: Uploaden van specifieke afbeeldingsindelingen naar Experience Manager Assets toestaan**
 
