@@ -3,9 +3,9 @@ title: Gebruikersgroepen voor meldingen
 description: Leer hoe u een gebruikersgroep in de Admin Console kunt maken om de ontvangst van belangrijke e-mailberichten te beheren.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 532184edca597452e76fdf763e7377d5e835bebc
+source-git-commit: b56bb15f8330deefc11d19e784e36590ef674dd8
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,12 @@ Leer hoe u een gebruikersgroep in de Admin Console kunt maken om de ontvangst va
 
 ## Overzicht {#overview}
 
-Van tijd tot tijd moet Adobe contact opnemen met betrekking tot hun AEM as a Cloud Service omgeving. Naast productmeldingen gebruikt Adobe soms ook e-mail voor dergelijke berichten. Er zijn twee soorten meldingen:
+Van tijd tot tijd moet Adobe contact opnemen met gebruikers over hun AEM as a Cloud Service omgeving. Naast productmeldingen gebruikt Adobe soms ook e-mail voor berichten. Er zijn twee typen e-mailmeldingen:
 
-* **Melding van incidenten — Cloud Service** - Deze meldingen worden verzonden tijdens een incident of wanneer Adobe een probleem met de mogelijke beschikbaarheid in uw AEM as a Cloud Service omgeving heeft vastgesteld.
-* **Proactieve melding - Cloud Service** - Deze meldingen worden verzonden wanneer een lid van het ondersteuningsteam van Adobe advies wil geven over een mogelijke optimalisatie of aanbeveling die uw AEM as a Cloud Service omgeving ten goede kan komen.
+* **Melding incident** - Deze meldingen worden verzonden tijdens een incident of wanneer Adobe een probleem met de mogelijke beschikbaarheid in uw AEM as a Cloud Service omgeving heeft vastgesteld.
+* **Proactieve kennisgeving** - Deze meldingen worden verzonden wanneer een lid van het ondersteuningsteam van Adobe advies wil geven over een mogelijke optimalisatie of aanbeveling die uw AEM as a Cloud Service omgeving ten goede kan komen.
 
-Voor de correcte gebruikers om deze berichten te ontvangen, moet u gebruikersgroepen vormen.
+Voor de correcte gebruikers om deze berichten te ontvangen, moet u gebruikersgroepen vormen en toewijzen die in dit document worden beschreven.
 
 ## Vereisten {#prerequisites}
 
@@ -45,25 +45,33 @@ Als u de ontvangst van meldingen correct wilt instellen, moet u twee gebruikersg
 
    ![Gebruikersgroep maken](assets/cloud_manager_instance.png)
 
-1. De lijst met alle geconfigureerde productprofielen van Cloud Manager wordt weergegeven. Bijvoorbeeld:
+1. De lijst met alle geconfigureerde productprofielen van Cloud Manager wordt weergegeven.
 
    ![Gebruikersgroep maken](assets/cloud_manager_profiles.png)
 
-1. Klikken **Nieuw profiel** en voert de volgende gegevens in:
+1. Klikken **Nieuw profiel** en de volgende gegevens verstrekken:
 
-   * Naam van productprofiel: Melding van incidenten - Cloud Service
-   * Weergavenaam: Melding van incidenten - Cloud Service
-   * Omschrijving: Het profiel van de Manager van de wolk voor de gebruikers die berichten tijdens een incident zullen ontvangen of wanneer Adobe een potentieel beschikbaarheidsprobleem met uw AEM as a Cloud Service milieu heeft geïdentificeerd.
+   * **Naam van productprofiel**: `Incident Notification - Cloud Service`
+   * **Weergavenaam**: `Incident Notification - Cloud Service`
+   * **Beschrijving**: Het profiel van de Manager van de wolk voor de gebruikers die berichten tijdens een incident zullen ontvangen of wanneer Adobe een potentieel beschikbaarheidsprobleem met uw AEM as a Cloud Service milieu heeft geïdentificeerd
 
-1. Klikken **Opslaan** en herhaal stap 5 met de volgende details:
+1. Klikken **Opslaan**.
 
-   * Naam van productprofiel: Proactieve melding - Cloud Service
-   * Weergavenaam: Proactieve melding - Cloud Service
-   * Omschrijving: Het profiel van de Manager van de wolk voor de gebruikers die berichten zullen ontvangen wanneer een lid van het de steunteam van de Adobe raad over een potentiële optimalisering of aanbeveling willen verstrekken om met uw AEM as a Cloud Service omgevingsconfiguratie te doen.
+1. Klikken **Nieuw profiel** nogmaals de volgende gegevens verstrekken:
+
+   * **Naam van productprofiel**: `Proactive Notification - Cloud Service`
+   * **Weergavenaam**: `Proactive Notification - Cloud Service`
+   * **Beschrijving**: Het profiel van de Manager van de wolk voor de gebruikers die berichten zullen ontvangen wanneer een lid van het de ondersteuningsteam van Adobe raad over een potentiële optimalisering of aanbeveling willen verstrekken om met uw AEM as a Cloud Service omgevingsconfiguratie te doen
+
+1. Klikken **Opslaan**.
+
+Uw twee nieuwe berichtgroepen worden gecreeerd.
 
 >[!NOTE]
 >
->Het is belangrijk dat de naam van het profiel Cloud Manager exact gelijk is aan de bovenstaande naam. Kopieer en plak de naam van het productprofiel uit de opgegeven beschrijving. Eventuele afwijkingen of typos leiden ertoe dat meldingen niet naar wens worden verzonden. Als er een fout optreedt of als er geen profielen zijn gedefinieerd, stuurt Adobe standaard een melding naar bestaande gebruikers die zijn toegewezen aan de profielen voor implementatiebeheer van Cloud Manager Developer (is dit of , en).
+>Het is belangrijk dat de Cloud Manager **productprofielnaam** is precies hetzelfde als opgegeven. Kopieer en plak de opgegeven productprofielnaam om fouten te voorkomen. Eventuele afwijkingen of typos leiden ertoe dat meldingen niet naar wens worden verzonden.
+>
+>Als er een fout optreedt of als de profielen niet zijn gedefinieerd, meldt Adobe de bestaande gebruikers die aan de profielen zijn toegewezen standaard **Cloud Manager Developer** of **Implementatiebeheer** profielen.
 
 ## De gebruikers toewijzen aan de nieuwe productprofielen voor meldingen {#add-users}
 
@@ -71,7 +79,9 @@ Nu de groepen zijn gemaakt, moet u de juiste gebruikers toewijzen. Dit kunt u do
 
 ### Nieuwe gebruikers toevoegen aan groepen {#new-user}
 
-1. Identificeer de gebruiker(s) die of Incident of Proactieve Meldingen zou moeten ontvangen.
+Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde id&#39;s nog niet zijn ingesteld.
+
+1. Identificeer de gebruiker(s) die of incident of pro-actieve berichten zou moeten ontvangen.
 
 1. Aanmelden bij Admin Console bij [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) als u nog niet bent aangemeld.
 
@@ -79,24 +89,46 @@ Nu de groepen zijn gemaakt, moet u de juiste gebruikers toewijzen. Dit kunt u do
 
    ![Gebruikers](assets/product_services.png)
 
-1. Selecteer **Gebruikers** tabblad van de bovenste navigatie en selecteer vervolgens **Gebruiker toevoegen**.
+1. Als de gefederaliseerde id voor uw teamleden nog niet is ingesteld, selecteert u de optie **Gebruikers** tabblad van de bovenste navigatie en selecteer vervolgens **Gebruiker toevoegen**. Anders overslaan naar de sectie [Bestaande gebruikers toevoegen aan groepen.](#existing-users)
 
    ![Gebruikers](assets/cloud_manager_add_user.png)
 
-1. In de **Gebruikers aan uw team toevoegen** voert u de e-mailadres in van de gebruiker die u wilt toevoegen.
+1. In de **Gebruikers aan uw team toevoegen** voert u de e-mailid in van de gebruiker die u wilt toevoegen en selecteert u `Adobe ID` voor de **Type id**.
 
-   * Als de gefedereerde id voor uw teamleden nog niet is ingesteld, selecteert u Adobe ID voor het id-type.
-   * Zie stap 9 als de gebruiker al bestaat.
+1. Klik op de plusknop onder de knop **Producten selecteren** kop om productselectie te beginnen.
 
-1. Klik op de plusknop onder de knop **Producten selecteren** kop om productselectie te beginnen en selecteer **Adobe Experience Manager as a Cloud Service** en wijst **Melding van incidenten - Cloud Service** of **Proactieve melding - Cloud Service**, of beide aan de gebruiker.
+1. Selecteren **Adobe Experience Manager as a Cloud Service** en wijs één of allebei van de nieuwe groepen aan de gebruiker toe.
 
-1. Klikken **Opslaan** en er wordt een welkomstbericht verzonden naar de gebruiker die u hebt toegevoegd. De uitgenodigde gebruiker zal nu de berichten ontvangen.
+   * **Melding van incidenten - Cloud Service**
+   * **Proactieve melding - Cloud Service**
 
-1. Herhaal deze stappen voor de gebruikers in uw team die u de meldingen wilt ontvangen.
+1. Klikken **Opslaan** en er wordt een welkomstbericht verzonden naar de gebruiker die u hebt toegevoegd.
 
-1. Zoek in het geval dat de gebruiker al bestaat de naam van de gebruiker en:
+De uitgenodigde gebruiker zal nu de berichten ontvangen. Herhaal deze stappen voor de gebruikers in uw team die u meldingen wilt ontvangen.
 
-   * Klik op de naam van de gebruiker.
-   * In de **Producten** sectie, klikt u op **Bewerken**.
-   * Klik op de knop Potlood in het dialoogvenster **Producten selecteren** kop om productselectie te beginnen en selecteer **Adobe Experience Manager as a Cloud Service** en wijst **Melding van incidenten - Cloud Service** of **Proactieve melding - Cloud Service**, of beide aan de gebruiker.
-   * Klikken **Opslaan** en er wordt een welkomstbericht verzonden naar de gebruiker die u hebt toegevoegd. De uitgenodigde gebruiker zal nu de berichten ontvangen.
+### Bestaande gebruikers toevoegen aan groepen {#existing-user}
+
+Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde id&#39;s al bestaan.
+
+1. Identificeer de gebruiker(s) die of incident of pro-actieve berichten zou moeten ontvangen.
+
+1. Aanmelden bij Admin Console bij [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) als u nog niet bent aangemeld.
+
+1. Van de **Overzicht** pagina, selecteert u **Adobe Experience Manager as a Cloud Service** van de **Producten en diensten** kaart.
+
+1. Selecteer **Gebruikers** van de bovenste navigatie.
+
+1. Als de gefedereerde identiteitskaart reeds voor het teamlid bestaat die u aan een berichtgroep wilt toevoegen, die gebruiker in de lijst wordt gevestigd en het klikt. Anders overslaan naar de sectie [Nieuwe gebruikers toevoegen aan groepen.](#add-user)
+
+1. In de **Producten** in het venster met gebruikersgegevens klikt u op de knop voor ovaal en selecteert u **Bewerken**.
+
+1. In de **Producten bewerken** venster, klikt u op de potloodknop onder de **Producten selecteren** kop om productselectie te beginnen.
+
+1. Selecteren **Adobe Experience Manager as a Cloud Service** en wijs één of allebei van de nieuwe groepen aan de gebruiker toe.
+
+   * **Melding van incidenten - Cloud Service**
+   * **Proactieve melding - Cloud Service**
+
+1. Klikken **Opslaan** en er wordt een welkomstbericht verzonden naar de gebruiker die u hebt toegevoegd.
+
+De uitgenodigde gebruiker zal nu de berichten ontvangen. Herhaal deze stappen voor de gebruikers in uw team die u meldingen wilt ontvangen.
