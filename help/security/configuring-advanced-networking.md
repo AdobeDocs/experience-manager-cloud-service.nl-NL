@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
+source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
 workflow-type: tm+mt
-source-wordcount: '3016'
+source-wordcount: '3036'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ De flexibele havenuitgang is de geadviseerde keus als u geen VPN nodig hebt en g
 
 ### Configuratie {#configuring-flexible-port-egress-provision}
 
-Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` eindpunt wordt aangehaald, eenvoudig overgaand de waarde van `flexiblePortEgress` voor de `kind` parameter en regio. Het eindpunt reageert met het `network_id`, alsmede andere informatie met inbegrip van de status. In de API-documenten moet naar de volledige set parameters en de exacte syntaxis worden verwezen.
+Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` eindpunt wordt aangehaald, eenvoudig overgaand de waarde van `flexiblePortEgress` voor de `kind` parameter en regio. Het eindpunt reageert met het `network_id`, alsmede andere informatie met inbegrip van de status. De volledige set parameters en de exacte syntaxis, evenals belangrijke informatie zoals welke parameters later niet kunnen worden gewijzigd, [kan worden verwezen in de API-documenten.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 Zodra geroepen, vergt het typisch ongeveer 15 minuten voor de voorzien van een netwerkinfrastructuur om worden provisioned. Een oproep aan de Cloud Manager [GET netwerkinfrastructuur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) zou de status &quot;ready&quot; aangeven.
 
