@@ -2,9 +2,9 @@
 title: SPA en rendering op de server
 description: Als u SSR (Server Side Rendering) gebruikt in uw SPA, kunt u de eerste laadbewerking van de pagina versnellen en vervolgens verdere rendering doorgeven aan de client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
+source-git-commit: cc50520d7ee2bb3e7d1491154d531aa84ac9e956
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ SSR verstrekt gewoonlijk één of andere waarde wanneer er duidelijk &quot;ja&qu
 * **SEO:** Is SSR eigenlijk nog vereist voor uw plaats om behoorlijk door de onderzoeksmotoren worden geïndexeerd die verkeer brengen? Vergeet niet dat de zoekmachine die als hoofdopzoekprogramma wordt gebruikt nu JS evalueert.
 * **Paginasnelheid:** Biedt SSR een meetbare snelheidsverbetering in levensechte omgevingen en vergroot de algehele gebruikerservaring?
 
-Slechts wanneer minstens één van deze twee vragen met duidelijk &quot;ja&quot;voor uw project wordt beantwoord adviseert Adobe het uitvoeren van SSR. In de volgende secties wordt beschreven hoe u dit kunt doen met Adobe I/O Runtime.
+Slechts wanneer minstens één van deze twee vragen met duidelijk &quot;ja&quot;voor uw project wordt beantwoord adviseert Adobe het uitvoeren van SSR. In de volgende secties wordt beschreven hoe u dit kunt doen met Adobe I/O Runtime, onderdeel van [App Builder](https://developer.adobe.com/app-builder).
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
@@ -34,8 +34,9 @@ Als u [vertrouwen erop dat uw project de implementatie van SSR vereist](#when-to
 
 Ga voor meer informatie over Adobe I/O Runtime naar
 
-* [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) - voor een overzicht van de dienst
-* [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) - voor gedetailleerde documentatie op het platform
+* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) - voor een overzicht van de Runtime eigenschap van App Builder
+* [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) - voor meer informatie over het volledige App Builder-product
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs) - voor gedetailleerde documentatie
 
 In de volgende secties wordt beschreven hoe Adobe I/O Runtime kan worden gebruikt om SSR voor uw SPA in twee verschillende modellen te implementeren:
 
@@ -44,7 +45,7 @@ In de volgende secties wordt beschreven hoe Adobe I/O Runtime kan worden gebruik
 
 >[!NOTE]
 >
->Adobe beveelt een aparte Adobe I/O Runtime-werkruimte aan per omgeving (werkgebied, proefperiode, testen, enz.). Dit staat voor typische patronen van de het levenscyclus van de systeemontwikkeling (SDLC) met verschillende versies van één enkele toepassing toe die aan verschillende milieu&#39;s worden opgesteld. Zie het document [CI/CD voor de Toepassingen van de Vuurwerk van het Project](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) voor meer informatie .
+>Adobe beveelt een aparte Adobe I/O Runtime-werkruimte aan per omgeving (werkgebied, proefperiode, testen, enz.). Dit staat voor typische patronen van de het levenscyclus van de systeemontwikkeling (SDLC) met verschillende versies van één enkele toepassing toe die aan verschillende milieu&#39;s worden opgesteld.  Zie het document [CI/CD voor App Builder-toepassingen](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) voor meer informatie .
 >
 >Er is geen aparte werkruimte nodig per instantie (auteur, publiceren), tenzij er verschillen zijn in de runtimplementatie per instantietype.
 
