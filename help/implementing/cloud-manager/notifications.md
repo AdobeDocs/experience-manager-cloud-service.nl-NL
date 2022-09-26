@@ -2,43 +2,92 @@
 title: Meldingen
 description: Leer hoe te om informatie over pijpleidingsplaatsingen te ontvangen gebruikend het het berichtsysteem van Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 42d4e3bb38e3a7ecb4507d15e2307ed08d752b5c
+source-git-commit: 0de041211c8257d920bcf354593b3caa2db43572
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
 
+
 # Meldingen {#notifications}
 
-[!UICONTROL Cloud Manager] staat de gebruiker toe om berichten te ontvangen wanneer de productiepijplijn (met succes of met succes), tijdens een productielocatie begint en voltooit.
+Leer hoe Cloud Manager u op de hoogte brengt van belangrijke gebeurtenissen.
 
-Deze meldingen worden verzonden via de Adobe [!UICONTROL Experience Cloud] meldingssysteem voor gebruikers met rollen **Zakelijke eigenaar**, **Programmabeheerder**, en **Implementatiebeheer**.
+## Meldingen in Cloud Manager {#cloud-manager-notifications}
 
-De meldingen worden rechts op de menubalk weergegeven in het dialoogvenster [!UICONTROL Cloud Manager] UI en door Adobe [!UICONTROL Experience Cloud].
+[!UICONTROL Cloud Manager] verzendt u berichten wanneer een productiepijplijn (met succes of met succes), bij het begin van een productieleiding begint en voltooit.
 
-![Meldingspictogram in menubalk](assets/notify-1.png)
+Deze meldingen worden verzonden via de [!UICONTROL Experience Cloud] meldingssysteem voor gebruikers in de **Zakelijke eigenaar**, **Programmabeheerder**, en **Implementatiebeheer** rollen.
 
-Het belpictogram is gemarkeerd wanneer er nieuwe meldingen zijn. Klik erop om het deelvenster te openen om de meldingen weer te geven.
+De meldingen worden weergegeven in een zijbalk in [!UICONTROL Cloud Manager] en door de Adobe [!UICONTROL Experience Cloud]. Het belpictogram in de koptekst is gemarkeerd wanneer u nieuwe meldingen hebt.
 
-![Meldingen weergeven](assets/notify-2.png)
+![Meldingspictogram](assets/notifications-bell-badged.png)
 
-In het deelvenster worden alleen de meest recente meldingen weergegeven. Klikken **Alles weergeven** onder aan het deelvenster om al uw meldingen weer te geven.
+Klik op het belpictogram om de zijbalk te openen en de meldingen weer te geven. De **Meldingen** in de zijbalk worden de meest recente meldingen weergegeven, zoals bevestigingen voor de implementatie. Meldingen betreffen uw omgeving.
 
-## E-mailmeldingen {#email-notifications}
+![Zijbalk voor meldingen](assets/notifications-activities.png)
 
-Standaard zijn meldingen beschikbaar in de gebruikersinterface van Adobe [!UICONTROL Experience Cloud] oplossingen. Individuele gebruikers kunnen deze berichten ook via e-mail verzenden door deze stappen te volgen.
+De **Aankondigingen** bevat Adobe-productaankondigingen. Aankondigingen hebben betrekking op het product.
 
-1. Klik op het belpictogram om de meldingen weer te geven.
-1. Klik op de knop **Voorkeuren bewerken** pictogram (in de vorm van een tandwiel) boven aan het venster met meldingen.
-1. Klik in het venster dat wordt geopend op **Meldingen** in de linkernavigatie.
-   ![Voorkeurenvenster bewerken](assets/notification-preferences.png)
-1. Omlaag schuiven naar de **E-mail** kop.
-   ![E-mailopties](assets/email-preferences.png)
-1. Selecteer hoe je e-mailberichten wilt ontvangen.
-   * Geen e-mails verzenden (standaard)
-   * Directe meldingen
-   * Dagelijks overzicht
-   * Wekelijks overzicht
+![Zijbalk voor meldingen](assets/notificaitons-announcements.png)
 
-Nadat u een selectie hebt gemaakt, wordt uw keuze automatisch opgeslagen zonder dat u op de knop Opslaan of Toepassen hoeft te klikken.
+Klik op een bericht of aankondiging om de details ervan weer te geven. De berichten verbonden aan activiteiten zoals pijpleidingsplaatsingen nemen u aan het detail van die activiteit zoals het venster van de pijpleidingsuitvoering.
+
+Klik op de knop **Alles weergeven** onder in het deelvenster om alle aankondigingen in uw Postvak IN weer te geven.
+
+Klik op de knop **Alles markeren als gelezen** onder aan het deelvenster kunt u alle ongelezen meldingen markeren als gelezen en de badge voor het belpictogram wissen.
+
+## Configuratie van melding {#configuration}
+
+U kunt aanpassen hoe u meldingen ontvangt en welke meldingen u ontvangt.
+
+Klik op het tandwielpictogram boven aan de zijbalk met meldingen.
+
+![Pictogram Meldingsinstellingen](assets/notifications-configuration.png)
+
+Hierdoor wordt het **Voorkeuren voor Experience Cloud** , waarin u uw berichtabonnementen kunt definiëren en kunt aangeven hoe u uw meldingen ontvangt.
+
+### Abonnementen {#subscriptions}
+
+In abonnementen wordt gedefinieerd voor welke producten u meldingen ontvangt en welke meldingen.
+
+![Abonnementen op meldingen](assets/notifications-subscriptions.png)
+
+Standaard ontvangt u alle meldingen voor alle producten. Klikken op **Aanpassen** naast een product om de typen meldingen te definiëren die u voor dat product ontvangt.
+
+![Aanpassing van berichtabonnement](assets/notifications-subscriptions-customize.png)
+
+### Prioriteit {#priority}
+
+Prioritaire waarschuwingen worden gemarkeerd met een **HOOG** -tag en kan worden geconfigureerd om uitsluitend als waarschuwing te worden ontvangen. In de **Prioriteit** kunt u opgeven welke categorieën als prioritaire meldingen worden beschouwd.
+
+![Meldingsprioriteit](assets/notifications-priority.png)
+
+Gebruik de vervolgkeuzelijst om aan de lijst met categorieën toe te voegen die als prioriteit worden aangemerkt. Klik op de X naast de categorienamen om deze te verwijderen.
+
+### Waarschuwingen {#alerts}
+
+Er worden enkele seconden waarschuwingen weergegeven in de rechterbovenhoek van het venster. Gebruik de **Waarschuwingen** in deze sectie om te definiëren voor welke meldingen u waarschuwingen ontvangt.
+
+![Meldingswaarschuwingen](assets/notifications-alerts.png)
+
+U kunt het gedrag van de waarschuwingen definiëren.
+
+* **Waarschuwingen weergeven voor** - Definieert de typen meldingen die waarschuwingen activeren
+* **Waarschuwingen moeten op het scherm blijven staan totdat ik ze afsluit** - Controleert of de waarschuwingen zouden moeten voortbestaan tenzij u hen actief ontslaat
+* **Duur** - Hiermee bepaalt u hoe lang de waarschuwing op het scherm moet blijven als u niet hebt gekozen dat deze op het scherm moet blijven.
+
+## E-mails {#emails}
+
+Meldingen zijn beschikbaar in de webgebruikersinterface van Adobe [!UICONTROL Experience Cloud] oplossingen. U kunt ervoor kiezen deze meldingen via e-mail te verzenden in het dialoogvenster **E-mails** sectie.
+
+![E-mailberichten](assets/notifications-emails.png)
+
+Standaard worden geen e-mails verzonden. U kunt e-mails ontvangen als:
+
+* Meteen
+* Dagelijks
+* Wekelijks
+
+Wanneer **Directe meldingen** wordt gekozen, worden e-mails onmiddellijk verzonden voor elke melding. Voor **Dagelijks overzicht** en **Wekelijks overzicht** U kunt kiezen wanneer uw dagelijkse samenvatting wordt verzonden en op welke dag en wanneer uw wekelijkse samenvatting wordt verzonden.
