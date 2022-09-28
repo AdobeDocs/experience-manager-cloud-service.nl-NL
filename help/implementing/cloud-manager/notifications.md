@@ -2,7 +2,7 @@
 title: Meldingen
 description: Leer hoe te om informatie over pijpleidingsplaatsingen te ontvangen gebruikend het het berichtsysteem van Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 0de041211c8257d920bcf354593b3caa2db43572
+source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -78,7 +78,7 @@ U kunt het gedrag van de waarschuwingen definiëren.
 * **Waarschuwingen moeten op het scherm blijven staan totdat ik ze afsluit** - Controleert of de waarschuwingen zouden moeten voortbestaan tenzij u hen actief ontslaat
 * **Duur** - Hiermee bepaalt u hoe lang de waarschuwing op het scherm moet blijven als u niet hebt gekozen dat deze op het scherm moet blijven.
 
-## E-mails {#emails}
+### E-mails {#emails}
 
 Meldingen zijn beschikbaar in de webgebruikersinterface van Adobe [!UICONTROL Experience Cloud] oplossingen. U kunt ervoor kiezen deze meldingen via e-mail te verzenden in het dialoogvenster **E-mails** sectie.
 
