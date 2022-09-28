@@ -2,9 +2,9 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 197bff164df83788b4b8b16ba4c7a82021f86002
+source-git-commit: 4b737e1b9355cbb5c4532e0a614c18f5679d61f2
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2347'
 ht-degree: 2%
 
 ---
@@ -559,6 +559,10 @@ De bovenstaande eigenschappen moeten voor elke relevante combinatie van programm
 >[!NOTE]
 >
 >Splunk forward for sandbox program environment is not supported.
+
+>[!NOTE]
+>
+>Het Splunk door:sturen vermogen is niet mogelijk van een specifiek uitgangIP adres.
 
 Zorg ervoor dat het eerste verzoek alle ontwikkelomgeving bevat die moet worden ingeschakeld, in aanvulling op de fase-/prodomgevingen. Splunk moet een SSL-certificaat hebben en openbaar zijn.
 
