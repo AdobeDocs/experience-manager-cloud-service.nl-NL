@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
+source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
-source-wordcount: '3036'
+source-wordcount: '3053'
 ht-degree: 0%
 
 ---
@@ -336,7 +336,7 @@ Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres 
 ## Verouderde, specifieke klanten van het Adres van de Afstuwing {#legacy-dedicated-egress-address-customers}
 
 Als u van een specifieke uitgang IP vóór 2021.09.30 bent voorzien, steunt uw specifieke uitgangIP eigenschap slechts havens HTTP en HTTPS.
-Dit omvat HTTP/1.1 en HTTP/2 wanneer gecodeerd.
+Dit omvat HTTP/1.1 en HTTP/2 wanneer gecodeerd. Bovendien kan één specifiek uitgang eindpunt met om het even welk doel slechts over HTTP/HTTPS op havens 80/443 spreken respectievelijk.
 
 ## Virtual Private Network (VPN) {#vpn}
 
