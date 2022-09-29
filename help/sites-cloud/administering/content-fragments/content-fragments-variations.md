@@ -1,8 +1,10 @@
 ---
 title: Variaties - Authoring van content voor fragmenten
 description: Begrijp hoe u met behulp van variaties inhoud voor het fragment kunt ontwerpen en maak vervolgens variaties van die inhoud afhankelijk van het doel. Dit biedt extra flexibiliteit voor zowel levering zonder kop als het ontwerpen van pagina's.
+feature: Content Fragments
+role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2287'
 ht-degree: 11%

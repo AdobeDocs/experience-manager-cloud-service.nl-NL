@@ -1,10 +1,12 @@
 ---
 title: Inhoudsfragmenten - Configuratiebrowser
-description: Leer hoe te om specifieke functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten.
+description: Leer hoe te om de functionaliteit van het Fragment van de Inhoud en van GraphQL in Browser van de Configuratie toe te laten om AEM koploze leveringseigenschappen te gebruiken.
+feature: Content Fragments
+role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '365'
 ht-degree: 14%
 
 ---

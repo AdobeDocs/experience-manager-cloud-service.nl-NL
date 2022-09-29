@@ -1,10 +1,12 @@
 ---
 title: Gekoppelde inhoud
-description: Begrijp hoe AEM bijbehorende inhoudseigenschap de verbinding verstrekt zodat de activa facultatief met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd, toevoegend extra flexibiliteit aan zowel paginauteurs als koploze inhoudslevering.
+description: Begrijp hoe de bijbehorende inhoudseigenschap voor de Fragmenten van de Inhoud de verbinding voor activa (naar keuze) verstrekt die met het fragment moeten worden gebruikt, toevoegend extra flexibiliteit aan zowel pagina creatie als hoofdloze inhoudslevering.
+feature: Content Fragments
+role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '243'
 ht-degree: 4%
 
 ---

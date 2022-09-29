@@ -2,10 +2,8 @@
 title: Aflevering van inhoud zonder kop met behulp van inhoudsfragmenten met GraphQL (elementen - inhoudsfragmenten)
 description: Leer de basisconcepten van het realiseren van een AEM CMS zonder kop die Inhoudsfragmenten met GraphQL gebruiken voor de levering van inhoud zonder kop.
 feature: Content Fragments, GraphQL API
-topic: Headless
-role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%

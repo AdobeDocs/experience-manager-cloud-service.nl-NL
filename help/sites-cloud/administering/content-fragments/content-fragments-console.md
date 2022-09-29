@@ -1,11 +1,13 @@
 ---
 title: Console voor inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten beheert met de console voor inhoudsfragmenten.
-landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fragmenten van de Inhoud te beheren die op hoog volumengebruik van Inhoudsfragmenten voor Hoofdloze gebruik, maar ook gebruikt wanneer het ontwerpen van de pagina wordt geconcentreerd.
+landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fragmenten van de Inhoud te beheren die op het hoge volumengebruik van Inhoudsfragmenten voor Hoofdloze gebruik-gevallen wordt geconcentreerd, maar ook gebruikt wanneer de pagina creatie.
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---

@@ -1,8 +1,10 @@
 ---
 title: Modellen van contentfragmenten
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw Fragments van de Inhoud in AEM dienen. Hiermee kunt u gestructureerde inhoud maken voor gebruik in koploze levering of voor het ontwerpen van pagina's.
+feature: Content Fragments
+role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2904'
 ht-degree: 3%
