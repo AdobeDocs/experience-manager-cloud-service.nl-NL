@@ -2,7 +2,7 @@
 title: Aanpassing en doelgerichtheid van inhoud
 description: Leer hoe u gepersonaliseerde, gerichte inhoud met AEM kunt creëren
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 635a9e577f03c865cdb31f539598fb8fe034d7b7
+source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 0%
@@ -38,9 +38,6 @@ Wanneer u pagina&#39;s maakt, definieert u meerdere ervaringen, waarbij elke erv
 
 ### Voorstel {#offer}
 
-<!-- not clear - needs clarification -->
-<!-- is an offer a personalized experience, or an activity? -->
-
 Een aanbieding is een persoonlijke ervaring, die vaak voor een beperkte periode beschikbaar is.
 
 Een pagina van een voorbeeldwebsite kan bijvoorbeeld aanbiedingen gebruiken als de laserafbeelding die boven aan de pagina wordt weergegeven. Een persoon boven de 30 en een persoon onder de 30 zien verschillende aanbiedingen als het ervaringsteken.
@@ -62,8 +59,6 @@ Een activiteit:
 * definieert de toewijzing van een specifiek publiek (segment) met een specifieke ervaring
 * wordt de periode gedefinieerd gedurende welke de streefwaarde wordt toegepast
 * de [doelmotor](#targeting-engine) die uw pagina&#39;s gebruiken
-
-<!-- an example for each of the two types would be good -->
 
 De activiteit kan of een verpersoonlijkingsactiviteit, of A/B de activiteit van de Test (in het geval van het AEM en de verpersoonlijkingswerkschema van Adobe Target) zijn.
 
