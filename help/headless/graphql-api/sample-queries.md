@@ -3,9 +3,9 @@ title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 7e89ac3f575082d19e509ca133500b71070cc605
+source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1448'
 ht-degree: 2%
 
 ---
@@ -31,6 +31,10 @@ Zie voor hulp bij dit:
 
 * En sommige [voorbeeld GraphQL-query&#39;s](#graphql-sample-queries), op basis van de fragmentstructuur van de voorbeeldinhoud (Content Fragment Models and related Content Fragments).
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_headless_graphql_sample"
+>title="GraphQL gebruiken"
+>abstract="Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken."
 
 ## GraphQL - Voorbeeldquery&#39;s met gebruik van de structuur van het contentfragment voor voorbeeldinhoud {#graphql-sample-queries-sample-content-fragment-structure}
 

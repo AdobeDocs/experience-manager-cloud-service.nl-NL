@@ -4,9 +4,9 @@ description: Begrijp hoe u met behulp van variaties inhoud voor het fragment kun
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2306'
 ht-degree: 11%
 
 ---
@@ -369,6 +369,12 @@ Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/sites-cloud
 
 
 ## Variaties beheren {#managing-variations}
+
+[!CONTEXTUALHELP]
+id="aemcloud_sites_contentfragments_variations"
+title="Variaties beheren"
+abstract="Leer hoe u variaties in de inhoud aanbrengt voor gebruik met specifieke kanalen."
+additional-url="https://video.tv.adobe.com/v/333295" text="Variaties in inhoudsfragment"
 
 ### Een variatie maken {#creating-a-variation}
 
