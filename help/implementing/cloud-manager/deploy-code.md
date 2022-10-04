@@ -2,9 +2,9 @@
 title: Uw code implementeren
 description: Leer hoe u uw code implementeert met gebruik van Cloud Manager-pijpleidingen in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cb08fcbd6c1060466ca9e6b4639774d43b70c83c
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1220'
 ht-degree: 0%
 
 ---
@@ -121,6 +121,10 @@ Er wordt een time-out toegepast in de volgende stappen als er op feedback van ge
 ## Implementatieproces {#deployment-process}
 
 Alle plaatsingen van de Cloud Service volgen een het rollen proces om nul onderbreking te verzekeren. Raadpleeg het document [Hoe de Rolling Inzet werkt](/help/implementing/deploying/overview.md#how-rolling-deployments-work) voor meer informatie.
+
+>[!NOTE]
+>
+>Het cachegeheugen van de Dispatcher wordt bij elke implementatie gewist. Het wordt dan opgewarmd alvorens de nieuwe publicatieknooppunten verkeer goedkeuren.
 
 ## Een productieimplementatie opnieuw uitvoeren {#Reexecute-Deployment}
 
