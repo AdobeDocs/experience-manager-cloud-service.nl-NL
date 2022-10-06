@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
+source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1139'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="CDN in AEM as a Cloud Service"
->abstract="AEM als Cloud Service wordt verzonden met een ingebouwde CDN. Het is vooral de bedoeling de latentie te verminderen door cachebare inhoud van de CDN-knooppunten aan de rand, bij de browser, te leveren. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties."
+>abstract="AEM als Cloud Service wordt verzonden met een ingebouwde CDN. Het belangrijkste doel is latentie te verminderen door cacheable inhoud van de knopen CDN bij de rand, dichtbij browser te leveren. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties."
 
 AEM als Cloud Service wordt verzonden met een ingebouwde CDN. Het belangrijkste doel is het verminderen van latentie door content te leveren die in de cache kan worden opgeslagen en die komt van de CDN-knooppunten aan de rand van de omgeving, dicht in de buurt van de browser. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties.
 
@@ -25,7 +25,7 @@ Zie ook de volgende video&#39;s [Wolk 5 AEM CDN Deel 1](https://experienceleague
 
 ## AEM beheerde CDN  {#aem-managed-cdn}
 
-Volg de onderstaande secties om de zelfbediening UI van de Manager van de Wolk te gebruiken om voor de levering van inhoud voor te bereiden door AEM uit-van-de-doos CDN te gebruiken:
+Volg de onderstaande secties om de zelfbedieningsinterface van Cloud Manager te gebruiken voor het voorbereiden van de levering van inhoud met behulp van AEM kant-en-klare CDN:
 
 1. [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -38,7 +38,7 @@ Zie [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/
 
 >[!CAUTION]
 >
->Slechts zullen de verzoeken van toegestane IPs door beheerde CDN van AEM worden gediend. Als u uw eigen CDN aan AEM beheerde CDN richt, dan zorg ervoor IPs van uw CDN in de lijst van gewenste personen inbegrepen is.
+>Slechts zullen de verzoeken van toegestane IPs door AEM beheerde CDN worden gediend. Als u uw eigen CDN aan AEM beheerde CDN richt, dan zorg ervoor IPs van uw CDN in de lijst van gewenste personen inbegrepen is.
 
 ## CDN van de klant wijst naar AEM Beheerde CDN {#point-to-point-CDN}
 
@@ -61,7 +61,7 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het r
 
 Configuratieinstructies:
 
-1. Wijs de CDN toe aan de ingang van de Adobe CDN als zijn oorsprongdomein. Bijvoorbeeld, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Wijs uw CDN aan de ingang van Adobe CDN als zijn oorsprongdomein. Bijvoorbeeld, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. SNI moet ook aan de ingang van Adobe CDN worden geplaatst.
 1. Stel de Hostkop in op het oorspronkelijke domein. Bijvoorbeeld: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Stel de `X-Forwarded-Host` header met de domeinnaam zodat AEM de hostheader kan bepalen. Bijvoorbeeld: `X-Forwarded-Host:example.com`.
@@ -120,6 +120,19 @@ Hieronder worden verschillende configuratievoorbeelden van een aantal toonaangev
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+## Inhoud verplaatsen {#content-disposition}
+
+Voor de publicatielaag is de standaardinstelling voor het weergeven van lobs een bijlage. Dit kan worden overschreven met de standaard [koptekst voor inhoudspositie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in de verzender.
+
+Hieronder ziet u een voorbeeld van hoe de configuratie eruit moet zien:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## Geolocatie-headers {#geo-headers}
 
