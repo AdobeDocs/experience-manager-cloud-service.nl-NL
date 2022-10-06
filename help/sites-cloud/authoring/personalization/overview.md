@@ -2,9 +2,9 @@
 title: Aanpassing en doelgerichtheid van inhoud
 description: Leer hoe u gepersonaliseerde, gerichte inhoud met AEM kunt creëren
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
+source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -111,29 +111,32 @@ AEM kan momenteel het volgende gebruiken:
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEM verstrekt ingebouwde het richten motorContextHub die paginaverzoeken verwerkt en de inhoud aan vertoning bepaalt. Wanneer u de AEM doelengine gebruikt, kunt u alleen segmenten gebruiken die zijn gemaakt in AEM voor het definiëren van het publiek van uw ervaringen.
+AEM biedt de ingebouwde engine voor gericht werken [ContextHub](/help/implementing/developing/personalization/contexthub.md) die paginaverzoeken verwerkt en bepaalt welke inhoud moet worden weergegeven. Wanneer u de AEM doelengine gebruikt, kunt u alleen segmenten gebruiken die zijn gemaakt in AEM voor het definiëren van het publiek van uw ervaringen.
 
 ### Adobe Target {#adobe-target}
 
-De Adobe Target-engine voor doelwitten zorgt ervoor dat informatie die tijdens paginabezoeken is verzameld, wordt bijgehouden in Adobe Target.
+De [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) Bij het activeren van de engine wordt informatie die tijdens paginabezoeken is verzameld, in Adobe Target bijgehouden.
 
 * Wanneer u deze doelengine gebruikt, gebruikt u de segmenten die u uit Adobe Target importeert om het publiek voor uw ervaringen te definiëren.
 * Activiteiten die gebruikmaken van de Adobe Target-engine zijn [gesynchroniseerd met doel](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
-U kunt deze engine gebruiken wanneer u [geïntegreerd met Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+U kunt deze engine gebruiken wanneer u [geïntegreerd met Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ## Uw persoonlijke inhoud instellen {#how-to-setup-personalized-content}
 
 Er zijn verschillende stappen en definities vereist voor het leveren van uw gepersonaliseerde inhoud:
 
-1. Integreer AEM met uw gerichte motor.
+1. Stel de doelengine in door:
+
+   1. Configureren [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
+   1. Integreren met [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
 1. Configureer het publiek.
 
-   1. Afhankelijk van uw het richten motor, bepaal het publiek of segment, samen met de regels.
+   1. Definieer, afhankelijk van uw doelengine, de [Doelgroep](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) of [ContextHub-segment](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md), alsmede de regels.
 
-1. Maak uw merk en activiteiten.
+1. Maak uw [Merk en activiteiten](/help/sites-cloud/authoring/personalization/activities.md).
 
 1. Maak een selectie van ervaringen die u aan de verschillende doelgroepen wilt laten zien.
 
-1. Pas deze ervaringen aan door ze toe te wijzen aan het specifieke publiek (segmenten).
+1. Deze ervaringen personaliseren, door [doelgericht](/help/sites-cloud/authoring/personalization/targeted-content.md) zij worden gericht aan het specifieke publiek (segmenten).
