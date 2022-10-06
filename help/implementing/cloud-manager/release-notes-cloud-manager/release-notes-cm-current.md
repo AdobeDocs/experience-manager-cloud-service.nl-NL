@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.9.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2022.10.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.10.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: f7f4f1c81b1dd611b723514b8c06aad6909a73c1
+source-git-commit: a873b23f7dac8742820300ef154b94a72e4b8a23
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2022.10.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.9.0 in AEM as a Cloud Service.
+Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.10.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,16 +21,15 @@ Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.9
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2022.9.0 in AEM as a Cloud Service is 8 september 2022. De volgende release is gepland voor 6 oktober 2022.
+De releasedatum voor Cloud Manager versie 2022.9.0 in AEM as a Cloud Service is 6 oktober 2022. De volgende release is gepland voor 3 november 2022.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* AEM hulplijnen kunnen nu op zelfbediening worden geconfigureerd voor Sandbox-programma&#39;s.
-* Klanten zonder de rol Cloud Manager hebben geen toegang tot de programmatiedetails. Ze kunnen echter wel naar de eindpunten van de auteur navigeren vanuit de bestemmingspagina&#39;s van Cloud Manager.
-* Klanten kunnen **Incidenten en proactieve meldingen** groepen om van Adobe over incidenten of aanbevelingen met betrekking tot hun toepassing te horen AEMaaCS.
-* De betaalbaarheid van het programma in de interface toevoegen biedt altijd knopinfo wanneer deze is uitgeschakeld vanwege machtigingen of aan machtigingen gerelateerde redenen.
+* De versie van de [Project archetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) gebruikt door Cloud Manager is bijgewerkt naar versie 39.
+* De interface van het licentiedashboard zal gebruikers nu informeren als een programma van Plaatsen met een CDN bovenop AEM as a Cloud Service wordt gevormd.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* De workflow Omgeving toevoegen bevat aanvullende validaties om ervoor te zorgen dat het resultaat succesvol is.
-* Verbeterde klantfeedback met betrekking tot de build van de AEM-app wanneer de klant wordt geconfronteerd met connectiviteitsproblemen met privérepo&#39;s.
+* Er is een situatie opgelost waarbij gebruikers met hoofdletters in hun e-mailadres niet kunnen worden toegevoegd aan een nieuwe e-mailaccount in Cloud Manager.
+* De oplossing Schermen wordt nu getoond als er veelvoudige oplossingen in het programma zijn.
+* Een situatie werd bevestigd waar de front-end pijpleiding uitvoering niet zou beginnen wanneer het milieu de status UPDATING had.

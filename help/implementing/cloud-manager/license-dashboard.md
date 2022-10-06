@@ -2,9 +2,9 @@
 title: Licentiedashboard
 description: Cloud Manager biedt een dashboard voor het eenvoudig weergeven van AEMaaCS-productrechten die beschikbaar zijn voor uw organisatie of huurder.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
+source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,10 @@ De verzoeken van de inhoud zullen variaties met Analytics van een organisatie he
 | Verkeersblokkers | Als u een tracker-blokker in een browser gebruikt, kunnen sommige aanvragen niet worden bijgehouden. |
 | Vuurmuren | Firewalls kunnen het bijhouden van analyses blokkeren. Dit komt vaker voor bij bedrijfsfirewalls. |
 
+### Wat als ik meer over mijn volume van de inhoudshulp zou willen leren? {#current-request-volumes}
+
+Als u meer inzichten in het volume van de inhoudsaanvraag wilt hebben dat wordt weergegeven in het licentiedashboard, kan uw Adobe-team een rapport weergeven met de stuurprogramma&#39;s voor het hoogste volume van de inhoudsaanvragen. Neem contact op met uw Adobe-team of met de klantenservice van Adobe om een rapport met het hoogste gebruik aan te vragen.
+
 ### Wat als ik mijn eigen CDN gebruik? {#using-own-cdn}
 
-Het dashboard voor aanvragen voor inhoud in Cloud Manager geeft geen tracering voor uw eigen CDN weer.
+Op het licentiedashboard worden alleen gegevens weergegeven die door de Cloud Service CDN worden bijgehouden.  Als u verkiest om uw eigen CDN (BYOCDN) te brengen, zult u uw volume van het inhoudsverzoek terug naar Adobe op jaarbasis, zoals die in uw contract wordt vermeld.

@@ -1,0 +1,35 @@
+---
+title: Opmerkingen bij de release Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.9.0 in AEM as a Cloud Service.
+feature: Release Information
+source-git-commit: 115c98b207d3dea89cbeb3dbc8559a81efefe461
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 0%
+
+---
+
+
+# Opmerkingen bij de release Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+
+Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.9.0 in AEM as a Cloud Service.
+
+>[!NOTE]
+>
+>Zie [deze pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de actuele releaseopmerkingen voor Adobe Experience Manager as a Cloud Service.
+
+## Releasedatum {#release-date}
+
+De releasedatum voor Cloud Manager versie 2022.9.0 in AEM as a Cloud Service is 8 september 2022. De volgende release is gepland voor 6 oktober 2022.
+
+## Wat is er nieuw? {#what-is-new}
+
+* AEM hulplijnen kunnen nu op zelfbediening worden geconfigureerd voor Sandbox-programma&#39;s.
+* Klanten zonder de rol Cloud Manager hebben geen toegang tot de programmatiedetails. Ze kunnen echter wel naar de eindpunten van de auteur navigeren vanuit de bestemmingspagina&#39;s van Cloud Manager.
+* Klanten kunnen **Incidenten en proactieve meldingen** groepen om van Adobe over incidenten of aanbevelingen met betrekking tot hun toepassing te horen AEMaaCS. Zie [Gebruikersgroep voor meldingen](/help/journey-onboarding/user-groups.md) voor meer informatie .
+* De betaalbaarheid van het programma in de interface toevoegen biedt altijd knopinfo wanneer deze is uitgeschakeld vanwege machtigingen of aan machtigingen gerelateerde redenen.
+
+## Opgeloste problemen {#bug-fixes}
+
+* De workflow Omgeving toevoegen bevat aanvullende validaties om ervoor te zorgen dat het resultaat succesvol is.
+* Verbeterde klantfeedback met betrekking tot de build van de AEM-app wanneer de klant wordt geconfronteerd met connectiviteitsproblemen met privérepo&#39;s.
