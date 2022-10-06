@@ -2,7 +2,7 @@
 title: Inhoud uit bron extraheren
 description: Inhoud uit bron extraheren
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: a2e14d73fd6b8138799799c6408a0846224cd8c9
+source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 19%
@@ -35,7 +35,7 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
    >[!IMPORTANT]
    >
    >Zorg ervoor dat de Extractiesleutel geldig is en niet dicht bij zijn vervaldatum is. Als deze bijna verlopen is, kunt u de Extractietoets vernieuwen door de migratieset te selecteren en op Eigenschappen te klikken. Klikken op **Vernieuwen**. Hiermee gaat u naar Cloud Acceleration Manager waar u kunt klikken op **Extractietoets kopiëren**. Telkens wanneer u klikt op **Extractietoets kopiëren**Er wordt een nieuwe extractiesleutel gegenereerd die 14 dagen geldig is vanaf het moment waarop deze is gemaakt.
-   >[!afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. Hiermee wordt het dialoogvenster Extractie weergegeven. Klikken op **Extraheren** om de extractiefase te starten.
 
