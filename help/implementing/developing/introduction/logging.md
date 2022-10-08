@@ -2,7 +2,7 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 437c6b3bcd331bf385f2845bfdb0be656a57488e
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 2%
@@ -554,7 +554,7 @@ In het supportverzoek moeten klanten aangeven:
 * De segmentpoort
 * De Splunk HEC-token. Zie [deze pagina](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) voor meer informatie .
 
-De bovenstaande eigenschappen moeten voor elke relevante combinatie van programma/omgevingstype worden gespecificeerd.  Als een klant bijvoorbeeld ontwikkelings-, staging- en productieomgevingen wilde, moeten deze drie informatiesets leveren, zoals hieronder wordt aangegeven.
+De bovenstaande eigenschappen moeten voor elke relevante combinatie van programma/omgevingstype worden gespecificeerd. Als een klant bijvoorbeeld ontwikkelings-, staging- en productieomgevingen wilde, moeten deze drie informatiesets leveren, zoals hieronder wordt aangegeven.
 
 >[!NOTE]
 >

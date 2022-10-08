@@ -2,9 +2,9 @@
 title: Technische stichtingen AEM
 description: Een overzicht van de technische fundamenten van AEM, inclusief hoe AEM is gestructureerd en fundamentele technologieën zoals JCR, Sling en OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2191'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Het volgende diagram verklaart alle verborgen, maar krachtige, verzoekparameters
 Verkopen is *inhoudgericht*. Dit betekent dat de verwerking wordt geconcentreerd op de inhoud aangezien elk (HTTP) verzoek op inhoud in de vorm van een middel JCR (een gegevensopslagplaats knoop) in kaart wordt gebracht:
 
 * Het eerste doel is de bron (JCR-knooppunt) die de inhoud in zijn bezit heeft
-* Ten tweede bevindt de representatie, of het script, zich in combinatie met bepaalde delen van het verzoek (bijvoorbeeld kiezers en/of de extensie) vanuit de eigenschappen van de bron.
+* Ten tweede, wordt de vertegenwoordiging, of het manuscript, gevestigd van de middeleigenschappen in combinatie met bepaalde delen van het verzoek (bijvoorbeeld, selecteurs en/of de uitbreiding)
 
 ### RESTful Sling {#restful-sling}
 
@@ -123,8 +123,8 @@ Met Verschuiven geeft u op welk script een bepaalde entiteit wordt gerenderd (do
 
 Het verzoek wordt uitgesplitst en de nodige informatie wordt ingewonnen. De repository wordt gezocht naar de gevraagde resource (content node):
 
-* First Sling controleert of een knoop op de plaats bestaat die in het verzoek wordt gespecificeerd; bijv. `../content/corporate/jobs/developer.html`
-* Als geen knoop wordt gevonden, wordt de uitbreiding gelaten vallen en het onderzoek herhaald; bijv. `../content/corporate/jobs/developer`
+* First Sling controleert of een knoop op de plaats bestaat die in het verzoek wordt gespecificeerd; bijvoorbeeld: `../content/corporate/jobs/developer.html`
+* Als geen knoop wordt gevonden, wordt de uitbreiding gelaten vallen en het onderzoek herhaald; bijvoorbeeld: `../content/corporate/jobs/developer`
 * Als er geen knooppunt wordt gevonden, retourneert Sling de http-code 404 (Not Found).
 
 Met Sling kunnen andere zaken dan JCR-knooppunten ook bronnen zijn, maar dit is een geavanceerde functie.
@@ -146,7 +146,7 @@ Alle verkoopscripts worden opgeslagen in submappen van `/apps` (veranderbaar, ge
 
 Een paar andere punten die u kunt opmerken zijn:
 
-* Wanneer de methode (GET, POST) vereist is, wordt deze in hoofdletters gespecificeerd volgens de HTTP-specificatie, bijvoorbeeld `jobs.POST.esp`
+* Wanneer de methode (GET, POST) vereist is, wordt deze in hoofdletters opgegeven, bijvoorbeeld volgens de HTTP-specificatie. `jobs.POST.esp`
 * Verschillende scriptengines worden ondersteund, maar de gebruikelijke, aanbevolen scripts zijn HTML en JavaScript.
 
 De lijst met scriptengines die door de opgegeven AEM worden ondersteund, wordt weergegeven in de Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
@@ -278,7 +278,7 @@ Hierdoor kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw 
 * Bijwerken
 * Verwijderen
 * Zie de huidige status
-* Meer gedetailleerde informatie (bijvoorbeeld symbolische naam, versie, locatie, enz.) over de specifieke bundels opvragen
+* Meer gedetailleerde informatie (bijvoorbeeld symbolische naam, versie, locatie, enz.) over de specifieke bundels openen
 
 Zie [Het vormen OSGi voor AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) voor meer informatie .
 

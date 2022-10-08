@@ -2,9 +2,9 @@
 title: Build-omgeving
 description: Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en test.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,7 @@ Voor sommige builds moeten extra systeempakketten worden geïnstalleerd om volle
         </profile>
 ```
 
-Dezelfde techniek kan worden gebruikt om taalspecifieke pakketten te installeren, bijvoorbeeld met behulp van `gem` voor RubyGems of `pip` voor Python Packages.
+Deze zelfde techniek kan worden gebruikt om taal-specifieke pakketten te installeren, bijvoorbeeld `gem` voor RubyGems of `pip` voor Python Packages.
 
 >[!NOTE]
 >

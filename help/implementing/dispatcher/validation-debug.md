@@ -3,10 +3,10 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Validatie en foutopsporing met Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 1%
+source-wordcount: '2693'
+ht-degree: 0%
 
 ---
 
@@ -281,7 +281,7 @@ Er zijn vier secties in uw landbouwbedrijfconfiguratie waar u uw eigen dossier m
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-U kunt ook de **standaardversie** van deze bestanden opnemen, waarvan de namen worden voorafgegaan door het woord `default_`, bijvoorbeeld `../filters/default_filters.any`.
+U kunt ook de opdracht **default** versie van deze bestanden waarvan de namen worden voorafgegaan door het woord `default_`, bijvoorbeeld `../filters/default_filters.any`.
 
 **include statement at (...), outside any known location: ...**
 
@@ -312,13 +312,26 @@ Deze verklaring moet verzoeken om `css` bestanden, maar ook verzoeken om **alle*
 
 **opgenomen bestand (...) komt niet overeen met een bekend bestand**
 
-Er zijn twee typen bestanden in uw virtuele Apache-hostconfiguratie die als volgt kunnen worden opgegeven: herschrijft en variabelen.
-De opgenomen bestanden moeten als volgt worden benoemd:
+Standaard kunnen twee typen bestanden in uw virtuele Apache-hostconfiguratie worden opgegeven als: herschrijft en variabelen.
 
 | Type | Bestandsnaam opnemen |
 |-----------|---------------------------------|
 | Herschrijven | `conf.d/rewrites/rewrite.rules` |
 | Variabelen | `conf.d/variables/custom.vars` |
+
+In de flexibele modus kunnen ook andere bestanden worden opgenomen, mits deze zich in submappen (op elk niveau) van `conf.d` directory vooraf ingesteld als volgt.
+
+| Voorvoegsel van bovenste map van bestand opnemen |
+|-------------------------------------|
+| `conf.d/includes` |
+| `conf.d/modsec` |
+| `conf.d/rewrites` |
+
+U kunt bijvoorbeeld een bestand opnemen in een nieuwe map onder `conf.d/includes` map als volgt:
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 U kunt ook de opdracht **default** versie van de herschrijfregels, waarvan de naam is `conf.d/rewrites/default_rewrite.rules`.
 Er is geen standaardversie van de variabelebestanden.

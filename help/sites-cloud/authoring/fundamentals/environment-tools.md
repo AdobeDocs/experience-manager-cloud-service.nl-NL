@@ -2,10 +2,10 @@
 title: Ontwerpomgeving en -gereedschappen
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 12%
+source-wordcount: '2157'
+ht-degree: 11%
 
 ---
 
@@ -230,7 +230,7 @@ Selecteer het juiste referentietype voor meer informatie. In bepaalde situaties 
 
 ## Gebeurtenissen - tijdlijn {#events-timeline}
 
-Voor de juiste bronnen (bv. pagina&#39;s van de **Sites** console, of middelen van de **Activa** console) de [tijdlijn kan worden gebruikt om de recente activiteit op om het even welke geselecteerde punten te tonen](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+Voor de juiste bronnen (bijvoorbeeld pagina&#39;s van de **Sites** console, of middelen van de **Activa** console) de [tijdlijn kan worden gebruikt om de recente activiteit op om het even welke geselecteerde punten te tonen](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
 Open de vereiste console, navigeer dan aan het vereiste middel en open **Tijdlijn**, met:
 
@@ -282,7 +282,7 @@ U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pi
 >* Afhankelijk van de kenmerken van de pagina zijn sommige modi mogelijk niet beschikbaar.
 >* Voor toegang tot bepaalde modi zijn de juiste machtigingen/bevoegdheden vereist.
 >* De modus Ontwikkelaar is niet beschikbaar op mobiele apparaten vanwege ruimtebeperkingen.
->* Er is een [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Lay-out**, enz.).
+>* Er is een [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Layout**, enz.).
 >
 
 

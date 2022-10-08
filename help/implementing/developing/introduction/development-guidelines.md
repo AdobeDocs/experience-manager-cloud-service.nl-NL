@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2445'
 ht-degree: 2%
 
 ---
@@ -206,7 +206,7 @@ In de onderstaande secties wordt beschreven hoe u e-mail kunt aanvragen, configu
 
 ### Uitgaande e-mail inschakelen {#enabling-outbound-email}
 
-Standaard zijn poorten die worden gebruikt om e-mail te verzenden, uitgeschakeld. Om een haven te activeren, vorm [geavanceerde netwerken](/help/security/configuring-advanced-networking.md), waarbij u ervoor zorgt dat voor elke benodigde omgeving de `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` de haven die van het eindpunt regels door:sturen, die de voorgenomen haven (b.v., 465 of 587) aan een volmachtshaven in kaart brengt.
+Standaard zijn poorten die worden gebruikt om e-mail te verzenden, uitgeschakeld. Om een haven te activeren, vorm [geavanceerde netwerken](/help/security/configuring-advanced-networking.md), waarbij u ervoor zorgt dat voor elke benodigde omgeving de `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` De haven die van het eindpunt regels door:sturen, die de voorgenomen haven (bijvoorbeeld, 465 of 587) aan een volmachtshaven in kaart brengt.
 
 Het wordt geadviseerd om geavanceerd voorzien van een netwerk met te vormen `kind` parameter ingesteld op `flexiblePortEgress` aangezien Adobe de prestaties van flexibel havenuitgang verkeer kan optimaliseren. Als een uniek uitgangIP adres noodzakelijk is, kies een `kind` parameter van `dedicatedEgressIp`. Als u reeds VPN voor andere redenen hebt gevormd, kunt u het unieke IP adres gebruiken dat door die geavanceerde voorzien van een netwerkvariatie eveneens wordt verstrekt.
 

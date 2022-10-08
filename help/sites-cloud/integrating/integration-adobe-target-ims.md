@@ -2,9 +2,9 @@
 title: IMS-configuratie voor gebruik bij integratie met Adobe Target
 description: Meer informatie over IMS Configuration voor gebruik bij Integratie met Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---

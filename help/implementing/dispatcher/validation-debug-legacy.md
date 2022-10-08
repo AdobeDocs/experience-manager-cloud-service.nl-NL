@@ -4,9 +4,9 @@ description: Validatie en foutopsporing met Dispatcher Tools (verouderd)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '2304'
+source-wordcount: '2345'
 ht-degree: 1%
 
 ---
@@ -270,7 +270,7 @@ Er zijn vier secties in uw landbouwbedrijfconfiguratie waar u uw eigen dossier m
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-U kunt ook de **standaardversie** van deze bestanden opnemen, waarvan de namen worden voorafgegaan door het woord `default_`, bijvoorbeeld `../filters/default_filters.any`.
+U kunt ook de opdracht **default** versie van deze bestanden waarvan de namen worden voorafgegaan door het woord `default_`, bijvoorbeeld `../filters/default_filters.any`.
 
 **include statement at (...), outside any known location: ...**
 
@@ -308,6 +308,10 @@ De opgenomen bestanden moeten als volgt worden benoemd:
 |-----------|---------------------------------|
 | Herschrijven | `conf.d/rewrites/rewrite.rules` |
 | Variabelen | `conf.d/variables/custom.vars` |
+
+>[!TIP]
+>
+>Om meer dossiers op een veel minder beperkte manier te kunnen omvatten, zou u aan flexibele de configuratiewijze van de verzender kunnen willen schakelen. Zie het document [Validatie en foutopsporing met Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md) voor meer informatie over de flexibele modus.
 
 U kunt ook de opdracht **default** versie van de herschrijfregels, waarvan de naam is `conf.d/rewrites/default_rewrite.rules`.
 Er is geen standaardversie van de variabelebestanden.

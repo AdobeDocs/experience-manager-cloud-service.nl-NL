@@ -2,9 +2,9 @@
 title: Aan de slag met SPA in AEM Reageren gebruiken
 description: In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wordt uitgelegd hoe deze wordt samengesteld en kunt u snel met uw eigen SPA aan de slag gaan met het React-framework.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ Dit is een standaardgebruik van deze functie, niet uniek voor deze voorbeeldapp.
 
 #### Statische instantie {#static-instantiation}
 
-Wanneer de component statisch wordt geconcretiseerd gebruikend het componentenmalplaatje (b.v. JSX), moet de waarde van het model tot de eigenschappen van de component worden overgegaan.
+Wanneer de component statisch wordt geconcretiseerd gebruikend het componentenmalplaatje (bijvoorbeeld, JSX), moet de waarde van het model tot de eigenschappen van de component worden overgegaan.
 
 ### App.js {#app-js}
 

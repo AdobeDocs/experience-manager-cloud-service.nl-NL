@@ -2,9 +2,9 @@
 title: Regels voor gegevensbescherming en gegevensbescherming - Adobe Experience Manager as a Cloud Service-gereedheid
 description: Meer informatie over Adobe Experience Manager as a Cloud Service-ondersteuning voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuw AEM as a Cloud Service project moet worden uitgevoerd.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '730'
 ht-degree: 1%
 
 ---

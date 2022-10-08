@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Pagina's publiceren en verwijderen met AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1812'
 ht-degree: 5%
 
 ---

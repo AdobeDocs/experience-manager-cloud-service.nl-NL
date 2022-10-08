@@ -2,9 +2,9 @@
 title: SPA
 description: In dit document wordt het algemene, kaderonafhankelijke contract beschreven dat elk SPA kader moet vervullen om bewerkbare SPA binnen AEM te implementeren.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2057'
 ht-degree: 0%
 
 ---
@@ -227,7 +227,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 De projectcomponenten moeten minstens de volgende gegevensattributen produceren om de redacteur toe te staan om met hen in wisselwerking te staan.
 
-* `data-cq-data-path`: Relatief pad van de component, zoals opgegeven door de `PageModel` (bv. `"root/responsivegrid/image"`). Dit kenmerk mag niet aan pagina&#39;s worden toegevoegd.
+* `data-cq-data-path`: Relatief pad van de component, zoals opgegeven door de `PageModel` (bijvoorbeeld `"root/responsivegrid/image"`). Dit kenmerk mag niet aan pagina&#39;s worden toegevoegd.
 
 Samengevat, om door de paginaredacteur als editable te worden geïnterpreteerd, moet een projectcomponent het volgende contract in acht nemen:
 

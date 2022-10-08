@@ -2,9 +2,9 @@
 title: Inleiding tot Sandbox-programma's
 description: Leer welke sandboxprogramma's verschillen van productieprogramma's.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 05cba12cdd14c2e29f6a471047ce95fcf720abc4
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Aangepaste domeinen en IP-lijsten van gewenste personen zijn niet beschikbaar in
 
 ### Geen geavanceerde netwerken {#advanced-networking}
 
-[Geavanceerde netwerkfuncties](/help/security/configuring-advanced-networking.md) (bv. zelfbediende levering van VPN, niet-standaardhavens, specifieke IP adressen van de uitgang, enz.) zijn niet beschikbaar in sandboxprogramma&#39;s.
+[Geavanceerde netwerkfuncties](/help/security/configuring-advanced-networking.md) (bijvoorbeeld, zelf-dient levering van VPN, niet-standaardhavens, specifieke IP adressen van de uitgang, enz.) zijn niet beschikbaar in sandboxprogramma&#39;s.
 
 ### Handmatige AEM {#updates}
 

@@ -2,9 +2,9 @@
 title: ContextHub JavaScript API-naslaggids
 description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de component ContextHub aan de pagina is toegevoegd
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '4622'
 ht-degree: 3%
 
 ---
@@ -58,7 +58,7 @@ De volgende lijst maakt een lijst van de namen van gebeurtenissen die voor Conte
 | `ContextHub.Constants.EVENT_UI_CONTAINER_OPENED` | Wordt geactiveerd wanneer de ContextHub UI wordt geopend | `ui-container-opened` |
 | `ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED` | Wordt geactiveerd wanneer de ContextHub-gebruikersinterface is samengevouwen | `ui-container-closed` |
 | `ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED` | Wordt geactiveerd wanneer een eigenschap wordt gewijzigd | `ui-property-modified` |
-| `ContextHub.Constants.EVENT_UI_RENDERED` | Wordt geactiveerd telkens wanneer de ContextHub UI wordt gerenderd (bijvoorbeeld na een bezitsverandering) | `ui-rendered` |
+| `ContextHub.Constants.EVENT_UI_RENDERED` | Wordt geactiveerd telkens wanneer de ContextHub UI wordt gerenderd (bijvoorbeeld, na een bezitsverandering) | `ui-rendered` |
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | Wordt geactiveerd wanneer de UI-container wordt geïnitialiseerd | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | Geeft de actieve UI-modus aan | `/_/active-ui-mode` |
 

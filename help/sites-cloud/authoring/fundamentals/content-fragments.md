@@ -2,9 +2,9 @@
 title: Contentfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Content Fragments kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1166'
 ht-degree: 3%
 
 ---
@@ -153,7 +153,7 @@ Als u [content hebt gekoppeld](/help/sites-cloud/administering/content-fragments
 
 >[!NOTE]
 >
->Er zijn verschillende methoden om toe te voegen [visuele elementen (bv. afbeeldingen)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
+>Er zijn verschillende methoden om toe te voegen [visuele elementen (bijvoorbeeld afbeeldingen)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
 
 >[!NOTE]
 >

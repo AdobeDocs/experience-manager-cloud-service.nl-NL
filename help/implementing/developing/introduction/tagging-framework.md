@@ -2,9 +2,9 @@
 title: Kader voor tags AEM
 description: Taginhoud en gebruik de AEM Taginginfrastructuur om deze te categoriseren en te ordenen.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1570'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ In AEM is het basispad `/content/cq:tags` en de hoofdnode is van het type `cq:Fo
 
 ### Tagnaamruimte {#tag-namespace}
 
-Met naamruimten kunt u items groeperen. Het meest gangbare gebruik-hoofdlettergebruik is een naamruimte per site (bijvoorbeeld public versus internal) of per grotere toepassing (bijvoorbeeld Sites of Assets), maar naamruimten kunnen voor verschillende andere behoeften worden gebruikt. Naamruimten worden in de gebruikersinterface gebruikt om alleen de subset van tags (d.w.z. tags van een bepaalde naamruimte) weer te geven die van toepassing is op de huidige inhoud.
+Met naamruimten kunt u items groeperen. Het meest gangbare gebruik-hoofdlettergebruik is het hebben van een naamruimte per site (bijvoorbeeld public versus internal) of per grotere toepassing (bijvoorbeeld Sites of Assets), maar naamruimten kunnen voor verschillende andere behoeften worden gebruikt. Naamruimten worden in de gebruikersinterface gebruikt om alleen de subset van tags (d.w.z. tags van een bepaalde naamruimte) weer te geven die van toepassing is op de huidige inhoud.
 
 De naamruimte van de tag is het eerste niveau in de taxonomy-substructuur. Dit is het knooppunt direct onder de [taxonomie root node.](#taxonomy-root-node) Een naamruimte is een knooppunt van het type `cq:Tag` waarvan de ouder geen `cq:Tag` knooppunttype.
 

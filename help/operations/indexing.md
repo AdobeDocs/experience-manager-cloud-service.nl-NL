@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2255'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Een indexdefinitie kan zijn:
 
 1. Een index die buiten het vak valt. Eén voorbeeld is `/oak:index/cqPageLucene-2`.
 1. Een aanpassing van een index die buiten het vak valt. Dergelijke aanpassingen worden bepaald door de klant. Eén voorbeeld is `/oak:index/cqPageLucene-2-custom-1`.
-1. Een volledig aangepaste index. Eén voorbeeld is `/oak:index/acme.product-1-custom-2`. Om het noemen van botsingen te vermijden, vereisen wij dat de volledig aangepaste indexen een prefix hebben, b.v. `acme.`
+1. Een volledig aangepaste index. Eén voorbeeld is `/oak:index/acme.product-1-custom-2`. Om het noemen van botsingen te vermijden, vereisen wij dat de volledig douaneindexen een prefix hebben, bijvoorbeeld: `acme.`
 
 Merk op dat zowel de aanpassing van een uit-van-de-doos index, als volledig douaneindexen, moet bevatten `-custom-`. Alleen volledig aangepaste indexen moeten beginnen met een voorvoegsel.
 
@@ -88,7 +88,7 @@ Indexdefinities zijn gemarkeerd als aangepast en versieingesteld:
 
 * De indexdefinitie zelf (bijvoorbeeld `/oak:index/ntBaseLucene-custom-1`)
 
-Als u een aangepaste of aangepaste index wilt implementeren, wordt de indexdefinitie (`/oak:index/definitionname`) moet worden geleverd via `ui.apps` via Git en het implementatieproces van Cloud Manager. In het FileVault-filter, bijvoorbeeld `ui.apps/src/main/content/META-INF/vault/filter.xml`elke aangepaste en aangepaste index afzonderlijk vermelden, bijvoorbeeld `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. De aangepaste/aangepaste indexdefinitie zelf wordt vervolgens opgeslagen in het bestand `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, als volgt:
+Als u een aangepaste of aangepaste index wilt implementeren, wordt de indexdefinitie (`/oak:index/definitionname`) moet worden geleverd via `ui.apps` via Git en het implementatieproces van Cloud Manager. In het filter FileVault bijvoorbeeld: `ui.apps/src/main/content/META-INF/vault/filter.xml`elke aangepaste en aangepaste index afzonderlijk vermelden, bijvoorbeeld `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. De aangepaste/aangepaste indexdefinitie zelf wordt vervolgens opgeslagen in het bestand `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, als volgt:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

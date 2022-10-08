@@ -2,10 +2,10 @@
 title: Enterprise DevOps
 description: Leer over de processen, methoden en communicatie die zijn vereist om implementatie en samenwerking te vereenvoudigen.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 98eaa1390e499f48bb1a615e21b2dfb7a0523c57
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 100%
+source-wordcount: '1002'
+ht-degree: 97%
 
 ---
 
@@ -108,7 +108,7 @@ Code moet altijd van beneden naar boven worden doorgegeven:
 * vervolgens opnieuw getest op testomgevingen
 * en pas hierna kan de code worden geïmplementeerd in de productieomgevingen
 
-De code (bijvoorbeeld aangepaste functionaliteit van webapplicaties en ontwerpsjablonen) wordt meestal overgedragen door pakketten te exporteren en te importeren tussen de verschillende content-repository&#39;s. Waar zinvol kan deze replicatie als automatisch proces worden geconfigureerd.
+De code (bijvoorbeeld aangepaste functionaliteit van webtoepassingen en ontwerpsjablonen) wordt meestal overgedragen door pakketten te exporteren en te importeren tussen de verschillende opslagplaatsen voor inhoud. Waar zinvol kan deze replicatie als automatisch proces worden geconfigureerd.
 
 Code-implementatie wordt vaak geactiveerd door AEM as a Cloud Service-projecten:
 

@@ -2,9 +2,9 @@
 title: Migratie naar de AEM Commerce Integration Framework (CIF)-invoegtoepassing
 description: Hoe te om aan het AEM Kader van de Integratie van de Handel (CIF) toe:voegen-on van een oude versie te migreren
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -51,4 +51,4 @@ Als u catalogusblauwdruk gebruikt met Klassieke CIF, moet u de workflow van de p
 
 ## Niet-cacheable gegevens en winkelinteractie
 
-De cliënt-zijverzoeken voor niet cacheable gegevens en interactie (b.v. toe:voegen-aan-kart, onderzoek) zouden rechtstreeks naar het handelseindpunt (of handelsoplossing of integratielaag) via CDN/Dispatcher moeten gaan. Verwijder om het even welke vraag waar AEM enkel een volmacht was.
+De cliënt-zijverzoeken voor niet cacheable gegevens en interactie (bijvoorbeeld, toe:voegen-aan-kart, onderzoek) zouden rechtstreeks naar het handelseindpunt (of handelsoplossing of integratielaag) via CDN/Dispatcher moeten gaan. Verwijder om het even welke vraag waar AEM enkel een volmacht was.

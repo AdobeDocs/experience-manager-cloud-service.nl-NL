@@ -2,9 +2,9 @@
 title: Uw accountomgeving configureren
 description: AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '490'
 ht-degree: 4%
 
 ---
@@ -67,7 +67,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Relatieve datumpresentatie**
 
-   Om de leesbaarheid te verbeteren, worden AEM datums in de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
+   Om de leesbaarheid te verbeteren, worden AEM datums in de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
 
    Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 

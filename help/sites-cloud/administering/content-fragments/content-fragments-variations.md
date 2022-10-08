@@ -4,9 +4,9 @@ description: Begrijp hoe u met behulp van variaties inhoud voor het fragment kun
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2308'
 ht-degree: 11%
 
 ---
@@ -307,7 +307,7 @@ Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. de o
 
 >[!CAUTION]
 Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
-Opmaak van het element (bv. grootte) moet echter plaatsvinden in het dialoogvenster [paginaeditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
+De opmaak van het element (bijvoorbeeld de grootte) moet echter worden uitgevoerd in het dialoogvenster [paginaeditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
 
 >[!NOTE]
 Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
@@ -343,7 +343,7 @@ Deze optie is beschikbaar als **Tekst met meerdere regels** is geconfigureerd me
 
 >[!CAUTION]
 Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
-Opmaak van het element (bv. grootte) moet echter plaatsvinden in het dialoogvenster [paginaeditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
+De opmaak van het element (bijvoorbeeld de grootte) moet echter worden uitgevoerd in het dialoogvenster [paginaeditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
 
 >[!NOTE]
 Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.

@@ -2,9 +2,9 @@
 title: Uw code implementeren
 description: Leer hoe u uw code implementeert met gebruik van Cloud Manager-pijpleidingen in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: cb08fcbd6c1060466ca9e6b4639774d43b70c83c
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Het bouwstijlproces stelt uw code door drie fasen op.
 
 De **Werkgebiedimplementatie** fase. Deze stappen worden uitgevoerd.
 
-* **Validatie**  - Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken. Bijvoorbeeld het testen of de geconfigureerde vertakking bestaat en of de omgevingen beschikbaar zijn.
+* **Validatie**  - Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken. bijvoorbeeld, het testen dat de gevormde tak bestaat en dat de milieu&#39;s beschikbaar zijn.
 * **Testen van build en eenheid** - Met deze stap wordt een inperkt ontwikkelproces uitgevoerd.
    * Zie het document [Omgevingsdetails samenstellen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) voor meer informatie over de ontwikkelomgeving.
 * **Codescannen** - Deze stap evalueert de kwaliteit van uw toepassingscode.

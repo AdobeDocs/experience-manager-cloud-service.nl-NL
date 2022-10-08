@@ -1,10 +1,10 @@
 ---
 title: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service Dispatcher-configuratie
 description: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service Dispatcher-configuratie
-source-git-commit: 42c25579e66ed2a98ded1cca403292fd1843e9af
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 99%
+source-wordcount: '1342'
+ht-degree: 95%
 
 ---
 
@@ -36,7 +36,7 @@ Deze sectie biedt stapsgewijze instructies voor het omzetten van een AMS-configu
 
 1. Verwijder of becommentarieer virtuele hostsecties die niet verwijzen naar poort 80
 
-   Als u nog secties in uw virtuele hostbestanden hebt die uitsluitend verwijzen naar andere poorten dan poort 80, b.v.
+   Als u nog secties in uw virtuele gastheerdossiers hebt die uitsluitend naar andere havens dan haven 80 verwijzen, bijvoorbeeld:
 
    `<VirtualHost *:443>`
    `...`
@@ -89,7 +89,7 @@ Als er fouten optreden over ontbrekende Include-bestanden, controleert u of de n
 
 1. **De naam van farmbestanden wijzigen**
 
-   Alle farms in conf.dispatcher.d/enabled_farms moeten worden hernoemd, zodat ze overeenkomen met het patroon *.farm. Als een farmbestand bijvoorbeeld customerX_farm.any heet, moet u dit hernoemen naar customerX.farm.
+   Alle landbouwbedrijven in conf.dispatcher.d/enabled_farm moeten worden anders genoemd om het patroon *.farm aan te passen, zodat bijvoorbeeld, zou een landbouwbedrijfdossier genoemd customerX_farm.any klantX.farm anders moeten worden genoemd.
 
 1. **Cache controleren**
 

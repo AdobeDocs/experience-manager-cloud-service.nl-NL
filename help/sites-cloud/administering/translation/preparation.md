@@ -4,7 +4,7 @@ description: Leer hoe u inhoud voorbereidt voor vertaling.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Als u de hoofdtaal wilt maken, maakt u een pagina en gebruikt u een ISO-taalcode
 * `<language-code>` - De ondersteunde taalcode is bijvoorbeeld een tweelettercode zoals gedefinieerd in ISO-639-1 `en`.
 * `<language-code>_<country-code>` of `<language-code>-<country-code>` - De ondersteunde landcode is bijvoorbeeld een tweelettercode in kleine letters of hoofdletters, zoals gedefinieerd in ISO 3166. `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-U kunt beide indelingen gebruiken op basis van de structuur die u voor uw globale site hebt gekozen.  De hoofdpagina van de Franse taalkopie van de WKND-site heeft bijvoorbeeld `fr` als de **Naam** eigenschap. De **Naam** eigenschap wordt gebruikt als de naam van het paginaknooppunt in de repository en bepaalt daarom het pad van de pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+U kunt beide indelingen gebruiken op basis van de structuur die u voor uw globale site hebt gekozen. De hoofdpagina van de Franse taalkopie van de WKND-site heeft bijvoorbeeld `fr` als de **Naam** eigenschap. De **Naam** eigenschap wordt gebruikt als de naam van het paginaknooppunt in de repository en bepaalt daarom het pad van de pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Navigeer naar sites.
 1. Klik of tik op de site waarvoor u een taalkopie wilt maken.

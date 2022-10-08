@@ -2,10 +2,10 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 12%
+source-wordcount: '2931'
+ht-degree: 11%
 
 ---
 
@@ -19,7 +19,7 @@ In dit artikel worden de wijzigingen beschreven die nodig zijn om Adobe Experien
 
 AEM toepassingsimplementaties moeten bestaan uit één AEM. Dit pakket dient op zijn beurt subpakketten te bevatten die alles omvatten wat door de toepassing wordt vereist om te functioneren, met inbegrip van code, configuratie en om het even welke ondersteunende basislijninhoud.
 
-AEM vereist een scheiding van **content** en **code**, wat betekent dat één enkel contentpakket **niet kan** worden geïmplementeerd op **zowel** `/apps` als tijdens runtime beschrijfbare gebieden (bijvoorbeeld `/content`, `/conf`, `/home` of iets anders dan `/apps`) van de opslagplaats. In plaats daarvan moet de applicatie code en content scheiden in afzonderlijke pakketten voor implementatie in AEM.
+AEM vereist een scheiding van **content** en **code**, wat betekent dat er één inhoudspakket is **kan** implementeren voor **beide** `/apps` en runtime-schrijfbare gebieden (bijvoorbeeld `/content`, `/conf`, `/home`of iets anders `/apps`) van de gegevensopslagruimte. In plaats daarvan moet de applicatie code en content scheiden in afzonderlijke pakketten voor implementatie in AEM.
 
 De pakketstructuur die in dit document wordt beschreven, is compatibel met **zowel** lokale ontwikkelingsimplementaties als AEM Cloud Service-implementaties.
 

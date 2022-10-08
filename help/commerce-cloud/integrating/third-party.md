@@ -3,9 +3,9 @@ title: Integratie van AEM en handel van derden met behulp van het kader voor int
 description: Ondernemingen kunnen aanvullende handelsoplossingen van derden nodig hebben om hun winkel te kunnen bedienen. Het Kader van de Integratie van de Handel (CIF) kan in dergelijke integratiescenario's worden gebruikt om een derde handelsoplossing met Adobe Experience Manager te verbinden gebruikend I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c,42dd8922-540d-4a93-9e45-b5e83dc11e16
-source-git-commit: a53ef07cd9da636c8d938c711de6defb9eb8e05f
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ We raden u aan [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/
 
 De [referentieimplementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference) is een groot uitgangspunt om de integratie aan uw handelsoplossing te bouwen. Hoewel GraphQL wordt ondersteund, kan deze ook worden geïntegreerd met elk ander type API, zoals REST.
 
-Deze integratielaag is niet vereist als er een laag van derden beschikbaar is (bijvoorbeeld Mulesoft) of als de integratie op de oplossing van derden wordt gebouwd.
+Deze integratielaag is niet vereist als er een laag van derden beschikbaar is (bijvoorbeeld Mulesoft) of als de integratie bovenop de oplossing van derden wordt gebouwd.
 
 ## Vooraf gebouwde connectors {#connectors}
 

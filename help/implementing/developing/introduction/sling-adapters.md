@@ -2,9 +2,9 @@
 title: Sling Adapters
 description: Sling biedt een adapterpatroon om objecten die de Aanpasbare interface implementeren, gemakkelijk te vertalen
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2221'
 ht-degree: 0%
 
 ---
@@ -121,11 +121,11 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` zijn mogel
   </tr>
   <tr>
    <td><a href="https://sling.apache.org/apidocs/sling5/org/apache/sling/api/scripting/SlingScript.html">SlingScript</a></td>
-   <td>Als deze bron een script (bijvoorbeeld jsp-bestand) is waarvoor een scriptengine is geregistreerd met sling.</td>
+   <td>Als deze bron een script is (bijvoorbeeld jsp-bestand) waarvoor een scriptengine is geregistreerd met sling.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/products/servlet/2.2/javadoc/javax/servlet/Servlet.html">Servlet</a></td>
-   <td>Als deze bron een script (bijvoorbeeld jsp-bestand) is waarvoor een scriptengine is geregistreerd met sling of als dit een servlet-resource is.</td>
+   <td>Als deze bron een script is (bijvoorbeeld jsp-bestand) waarvoor een scriptengine is geregistreerd met sling of als dit een servlet-resource is.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Lang</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Double.html">Dubbel</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Kalender</a><br /> <a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Waarde</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">String[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Lang[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Kalender[]</a><br /> <a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Waarde[]</a></td>

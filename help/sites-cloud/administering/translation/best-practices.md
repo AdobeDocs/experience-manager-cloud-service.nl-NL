@@ -4,9 +4,9 @@ description: Leer over beste praktijken die door Adobe engineering en adviesteam
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een comp
 * Een naamgevingsconventie voor taal/landsites gebruiken die volgt **[W3C-standaarden.](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**
 * Bepaal hoe inhoud wordt verdeeld over regio&#39;s en landen. Bedenk welke landen talen delen. U wordt aangeraden om taalstramienen te maken, een laag van niet-geactiveerde pagina&#39;s, waarin vertaalde inhoud kan worden gecontroleerd en gewijzigd en vervolgens kan worden geduwd of naar een landsite met dezelfde taal kan worden gesleept.
 * Er zijn twee manieren om taalstramienen te maken: het gebruiken van taalexemplaren, en het gebruiken van MSM/levende exemplaren.
-   * De taalkopieerbenadering wordt gebruikt door AEM out-of-the-box vertaalintegratieframework, en daarom is het de eenvoudigste manier om aan de slag te gaan. Het framework biedt een gebruikersinterface die het in eerste instantie gemakkelijk maakt om wijzigingen in de inhoud vanuit de hoofdtaal (bijvoorbeeld het Engels) master door te geven en te vertalen naar de taalmeesters. Naarmate het project groeit, wordt workflowautomatisering echter steeds noodzakelijker om de vertaling van het toegenomen aantal pagina&#39;s en/of talen te beheren.
+   * De taalkopieerbenadering wordt gebruikt door AEM out-of-the-box vertaalintegratieframework, en daarom is het de eenvoudigste manier om aan de slag te gaan. Het framework biedt een gebruikersinterface waarmee u in eerste instantie gemakkelijk inhoudwijzigingen vanuit de hoofdtaal (bijvoorbeeld het Engels) master aan taalmeesters kunt doorgeven en vertalen. Naarmate het project groeit, wordt workflowautomatisering echter steeds noodzakelijker om de vertaling van het toegenomen aantal pagina&#39;s en/of talen te beheren.
    * De MSM/levende exemplaarbenadering kan een alternatief voor geavanceerde gebruiksgevallen zijn, waar de plaatsen groter en complexer zijn. Sterk bestuur en automatisering van de workflow zijn van meet af aan nodig om de complexe overervingsrelaties tussen Engelse en taalmeesters aan te pakken en het risico van het overschrijven van bestaande vertalingen te verminderen. Deze behandeling kan met de hulp van sommige vertaalschakelaars worden verwezenlijkt. Zie [MSM en meertalige sites](/help/sites-cloud/administering/msm/best-practices.md#msm-and-multilingual-websites) voor meer informatie .
 * Als uw master taal globale variaties heeft, is een optie MSM te gebruiken om een levende kopie van algemeen master tot stand te brengen voor vertaling te gebruiken. Als bijvoorbeeld wereldwijd schrijven wordt uitgevoerd in een Amerikaans master Engels, maakt u een internationaal master Engels als een live kopie en als basis voor vertaling naar andere talen.
 * Gebruik MSM om landsites te maken van de vertaalde taalstramienen en om inhoud te implementeren voor sites die dezelfde taal delen. De master Franse taal kan bijvoorbeeld worden uitgerold naar de sites van Frankrijk, België en Zwitserland.

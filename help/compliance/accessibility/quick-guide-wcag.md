@@ -2,10 +2,10 @@
 title: Snelgids voor WCAG 2.1
 description: Snelgids voor WCAG 2.1
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 100%
+source-wordcount: '1776'
+ht-degree: 98%
 
 ---
 
@@ -104,7 +104,7 @@ Technieken voor WCAG 2.1 zijn beschikbaar op de pagina [Technieken voor WCAG 2.1
 
 **Technieken** vormen het niveau onder succescriteria in de hiërarchie van WCAG 2.1. Ze worden door WAI geclassificeerd als informatief, niet als normatief. Met andere woorden, een specifieke techniek hoeft niet te worden gevolgd om een bron in overeenstemming te brengen met WCAG 2.1.
 
-Omdat technieken veel specifieker zijn dan succescriteria, verwijzen ze doorgaans naar een bepaalde technologie of een bepaald contenttype (bijvoorbeeld HTML of video), of naar een situatie (bijvoorbeeld e-commerce of e-learningtoepassing). U kunt technieken zien als bewezen voorbeelden van hoe specifieke richtlijnen en succescriteria kunnen worden nageleefd, zodat ze nuttig zijn voor auteurs en ontwikkelaars die in bepaalde situaties werken.
+Omdat technieken veel specifieker zijn dan succescriteria, verwijzen zij gewoonlijk naar een bepaald technologie of inhoudstype (bijvoorbeeld, HTML, of video), of situatie (bijvoorbeeld, e-commerce of e-learningtoepassing). U kunt technieken zien als bewezen voorbeelden van hoe specifieke richtlijnen en succescriteria kunnen worden nageleefd, zodat ze nuttig zijn voor auteurs en ontwikkelaars die in bepaalde situaties werken.
 
 U hebt op de volgende manieren toegang tot technieken:
 

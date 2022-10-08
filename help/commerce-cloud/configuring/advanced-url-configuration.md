@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2043'
 ht-degree: 3%
 
 ---
@@ -50,10 +50,10 @@ Hiermee configureert u de URL&#39;s van de productpagina&#39;s en ondersteunt u 
 In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` wordt vervangen door `/content/venia/us/en/products/product-page`
-* `{{sku}}` worden vervangen door de sku van het product, bijvoorbeeld `VP09`
+* `{{sku}}` worden vervangen door bijvoorbeeld de sku van het product, `VP09`
 * `{{url_key}}` worden vervangen door de `url_key` eigenschap, bijvoorbeeld `lenora-crochet-shorts`
 * `{{url_path}}` worden vervangen door de `url_path`, bijvoorbeeld `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` worden vervangen door de momenteel geselecteerde variant, bijvoorbeeld `VP09-KH-S`
+* `{{variant_sku}}` worden vervangen door bijvoorbeeld de geselecteerde variant; `VP09-KH-S`
 
 Aangezien `url_path` verouderd zijn, de vooraf gedefinieerde product-URL-indelingen gebruiken de `url_rewrites` en kies het pad met de meeste padsegmenten als alternatief als de optie `url_path` is niet beschikbaar.
 

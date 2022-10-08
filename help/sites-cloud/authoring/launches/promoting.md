@@ -2,9 +2,9 @@
 title: Lanceringen promoten
 description: U moet opstartiepagina's promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '818'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
 1. Open:
    * De **Sites** console bij navigeren naar bronpagina&#39;s:
       1. Open de [referentie-rail](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) en selecteert u de gewenste bronpagina met [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md) (of selecteer en open de referentie-rail, de volgorde is niet belangrijk). Alle verwijzingen worden weergegeven.
-      1. Selecteren **Starten** (bv. Startpagina&#39;s (1)) om een lijst weer te geven met de specifieke lanceringen.
+      1. Selecteren **Starten** (bijvoorbeeld Launches (1)) om een lijst weer te geven met de specifieke startacties.
       1. Selecteer de specifieke lancering om de beschikbare acties te tonen.
       1. Selecteren **Starten bevorderen** om de wizard te openen.
    * De **Sites** console bij navigeren door opstartiepagina&#39;s:
@@ -91,7 +91,7 @@ Wanneer u een startpagina bewerkt, wordt **Starten bevorderen** actie is ook bes
 
 ## Een geneste start bevorderen {#promoting-a-nested-launch}
 
-Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de bronnen, inclusief de hoofdbron (productie).
+Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar elk van de bronnen, inclusief de hoofdbron (productie).
 
 ![Een geneste start](/help/sites-cloud/authoring/assets/launches-promoting-nested.png)
 

@@ -4,9 +4,9 @@ description: Leer de beste praktijken die door Adobe engineering en raadplegende
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1434'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 MSM is een configureerbaar framework voor het automatiseren van de implementatie van inhoud. Bij implementaties gaat het vaak om grote delen van een website en meerdere organisaties en geografische gebieden. Daarom wordt u ten zeerste aangeraden MSM-implementaties net zo zorgvuldig te plannen als uw website:
 
 * zorgvuldig **planstructuur en inhoudsstromen** voordat de implementatie wordt gestart.
-* **Pas de aanpassingen zoveel als nodig is, maar zo weinig mogelijk.** Hoewel MSM een hoge mate van aanpassing (bijvoorbeeld rollout configuraties) steunt, typisch is de beste praktijken voor de prestaties, de betrouwbaarheid en de upgradeability van uw website aanpassing minimaliseren.
+* **Pas de aanpassingen zoveel als nodig is, maar zo weinig mogelijk.** Hoewel MSM een hoge mate van aanpassing (bijvoorbeeld, rollout configuraties) steunt, typisch is de beste praktijken voor de prestaties, de betrouwbaarheid en de upgradeability van uw website aanpassing minimaliseren.
 * Een **bestuur** model in een vroeg stadium, en de gebruikers dienovereenkomstig trainen, om succes te verzekeren. Een goede praktijk vanuit bestuurlijk oogpunt is: **de autoriteit die producenten van lokale inhoud hebben** om inhoud toe te wijzen/te verbinden aan andere lokale gebruikers en hun respectieve Levende Exemplaren. Dit komt omdat onbestuurde, geketende overerving de complexiteit van een MSM-structuur aanzienlijk kan verhogen en de prestaties en betrouwbaarheid ervan in gevaar kan brengen.
 * Zodra er een plan voor uw structuur, inhoudsstromen, automatisering, en bestuur bestaat, **prototype maken en uw systeem grondig testen** voordat een live implementatie wordt gestart.
 * Houd er rekening mee dat **Adobe Consulting en toonaangevende systeemintegrators** hebben diepe ervaring planning en het uitvoeren van inhoudautomatisering met MSM, zodat kunnen zij u zowel beginnen met uw project MSM als door zijn volledige implementatie helpen.

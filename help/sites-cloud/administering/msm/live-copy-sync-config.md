@@ -4,9 +4,9 @@ description: Leer hoe u de krachtige synchronisatieopties van Live Copy kunt con
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2336'
+source-wordcount: '2337'
 ht-degree: 0%
 
 ---

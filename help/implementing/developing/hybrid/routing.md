@@ -2,9 +2,9 @@
 title: SPA
 description: Voor toepassingen van één pagina in AEM, is app verantwoordelijk voor het verpletteren. Dit document beschrijft het verpletterende mechanisme, het contract, en beschikbare opties.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 823b6412c9e75fe523e93c4f234ddd9d0ae93f5a
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Dit gedrag wordt standaard automatisch ingeschakeld. Om het onbruikbaar te maken
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Merk op dat elke route van de SPA met een toegankelijke bron in AEM (b.v., &quot; `/content/mysite/mypage"`) sinds de `PageModelManager` zal automatisch proberen om het overeenkomstige paginamodel te laden zodra de route wordt geselecteerd. Desondanks kan de SPA, indien nodig, ook een &quot;lijst van gewezen personen&quot;van routes bepalen die door `PageModelManager`:
+Merk op dat elke route van de SPA met een toegankelijke bron in AEM (bijvoorbeeld &quot; `/content/mysite/mypage"`) sinds de `PageModelManager` zal automatisch proberen om het overeenkomstige paginamodel te laden zodra de route wordt geselecteerd. Desondanks kan de SPA, indien nodig, ook een &quot;lijst van gewezen personen&quot;van routes bepalen die door `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

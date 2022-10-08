@@ -2,16 +2,16 @@
 title: URL's extern maken
 description: ExternalAlizer is de dienst OSGi die u toestaat om een middelweg in externe en absolute URL programmatically om te zetten.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 28903c1cbadece9d0ef575cdc0f0d7fd32219538
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
 
 # URL&#39;s extern maken {#externalizing-urls}
 
-In AEM **ExternalAlizer** is de dienst OSGi die u toestaat om een middelweg programmatically om te zetten (b.v. `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door het pad vooraf te bevestigen met een vooraf geconfigureerde DNS.
+In AEM **ExternalAlizer** is de dienst OSGi die u toestaat om een middelweg programmatically om te zetten (bijvoorbeeld `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door het pad vooraf te bevestigen met een vooraf geconfigureerde DNS.
 
 Omdat een AEM as a Cloud Service instantie zijn uiterlijk zichtbare URL niet kan kennen en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 

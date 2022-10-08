@@ -2,9 +2,9 @@
 title: Contentfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1811'
 ht-degree: 1%
 
 ---
@@ -63,9 +63,9 @@ Inhoudsfragmenten, gebaseerd op een inhoudsfragmentmodel, worden toegewezen aan 
    * De elementgegevens worden opgeslagen onder het master subknooppunt:
       `jcr:content/data/master`
 
-   * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie: bijv. `jcr:content/data/myvariation`
+   * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie: bijvoorbeeld: `jcr:content/data/myvariation`
 
-   * De gegevens van elk element worden in het desbetreffende subknooppunt opgeslagen als een eigenschap met de elementnaam: bv. de inhoud van het element `text` is opgeslagen als eigenschap `text` op `jcr:content/data/master`
+   * De gegevens van elk element worden in het desbetreffende subknooppunt opgeslagen als een eigenschap met de elementnaam: bijvoorbeeld de inhoud van het element `text` is opgeslagen als eigenschap `text` op `jcr:content/data/master`
 
 * Metagegevens en bijbehorende inhoud worden hieronder opgeslagen `jcr:content/metadata`
 Met uitzondering van de titel en de beschrijving, die niet als traditionele metagegevens worden beschouwd en op 
@@ -180,7 +180,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
    De interface voorziet u van de middelen:
 
-   * Basisgegevens beheren (bijvoorbeeld naam ophalen; get/set titel/beschrijving)
+   * Standaardgegevens beheren (bijvoorbeeld naam ophalen; get/set titel/beschrijving)
    * Toegang tot metagegevens
    * Toegangselementen:
 

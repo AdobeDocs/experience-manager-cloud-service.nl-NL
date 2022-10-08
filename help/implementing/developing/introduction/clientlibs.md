@@ -2,9 +2,9 @@
 title: Client-Side bibliotheken gebruiken op AEM as a Cloud Service
 description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientlibs) in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden verzonden
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2566'
 ht-degree: 0%
 
 ---
@@ -348,5 +348,5 @@ YUI wordt geplaatst als standaardminifier in AEM. Voer de volgende stappen uit o
 1. Zoeken en bewerken **Adobe Granite HTML Library Manager**.
 1. De optie **Minieren** (als deze optie nog niet is ingeschakeld).
 1. De waarde instellen **Standaardconfiguratie JS-processor** tot `min:gcc`.
-   * Opties kunnen worden doorgegeven als deze met een puntkomma worden gescheiden, bijvoorbeeld `min:gcc;obfuscate=true`.
+   * Opties kunnen worden doorgegeven als deze bijvoorbeeld met een puntkomma worden gescheiden. `min:gcc;obfuscate=true`.
 1. Klikken **Opslaan** om de wijzigingen op te slaan.

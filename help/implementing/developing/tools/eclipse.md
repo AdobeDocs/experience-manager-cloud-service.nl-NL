@@ -2,9 +2,9 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1183'
 ht-degree: 1%
 
 ---
@@ -196,7 +196,7 @@ Als u klaar bent, moet het pakket op de instantie worden uitgevoerd en als u het
 
 Als u een pakket opnieuw wilt maken uit uw project, klikt u met de rechtermuisknop op de knop `PROJECT.ui.apps` of `PROJECT.ui.content` en kiest u **Uitvoeren als** -> **Maven Install**.
 
-Er is nu een doelmap gemaakt met uw pakket in de map (bijvoorbeeld `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+U hebt nu een doelmap die met het pakket in is gemaakt (bijvoorbeeld `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Problemen oplossen {#troubleshooting}
 

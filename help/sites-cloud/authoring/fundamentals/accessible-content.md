@@ -2,9 +2,9 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager as a Cloud Service maken (WCAG 2.1-compatibiliteit)
 description: Gebruik AEM as a Cloud Service om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '14053'
+source-wordcount: '14061'
 ht-degree: 5%
 
 ---
@@ -436,7 +436,7 @@ Volg de onderstaande richtlijnen [Voldoen aan criteria 1.3.2](https://www.w3.org
 
 Ontwerpers richten zich vaak op visuele ontwerpfuncties, zoals kleur, vorm, tekststijl of de absolute of relatieve positie van een stuk inhoud wanneer ze informatie presenteren. Dit kunnen zeer krachtige ontwerptechnieken zijn voor het overbrengen van informatie (en kunnen de algemene toegankelijkheid voor waargenomen gebruikers met cognitieve toegankelijkheidsbehoeften verbeteren), maar mensen die blind of visueel gehandicapt zijn kunnen geen toegang hebben tot informatie die visuele identificatie van eigenschappen zoals positie, kleur of vorm vereist.
 
-Ook informatie die onderscheid moet maken tussen verschillende geluiden (bv. mannelijke of vrouwelijke gesproken inhoud) zal toegankelijkheidsbelemmeringen voor mensen met gehoorstoornissen opleveren, als deze informatie niet wordt weerspiegeld in een tekstalternatief voor de audio-inhoud.
+Op dezelfde manier zal informatie die onderscheid tussen verschillende geluiden vereist (bijvoorbeeld gesproken inhoud van mannen of vrouwen) toegankelijkheidsbarrières voor mensen met gehoorstoornissen opleveren, als dit niet in een tekstalternatief voor de audio-inhoud wordt weerspiegeld.
 
 >[!NOTE]
 >
@@ -488,7 +488,7 @@ Telkens wanneer kleur wordt gebruikt om informatie over te brengen, zorg ervoor 
 
 Zorg er bijvoorbeeld voor dat informatie die door kleur wordt verschaft, ook expliciet in tekst wordt vermeld.
 
-Als kleur wordt gebruikt als actiepunt voor het verschaffen van informatie, moet u een extra visuele aanwijzing opgeven, zoals het wijzigen van de stijl (bijvoorbeeld vet, cursief) of het lettertype. Dit helpt mensen met een laag gezichtsvermogen of die een kleurgezichtsgebrek hebben om de informatie te identificeren. Er kan echter niet volledig op worden vertrouwd, omdat het mensen die de pagina helemaal niet kunnen zien, niet helpt. Daarom is het (soms) nuttig om verborgen teksten te verstrekken of programmatic oplossingen, zoals te gebruiken [Toegankelijke Rich Internet Applications (ARIA) reeks van Webnormen](https://www.w3.org/WAI/standards-guidelines/aria/), om deze informatie door te geven aan niet-waargenomen gebruikers.
+Wanneer kleur wordt gebruikt als een actiepunt om informatie te verschaffen, moet u een extra visuele aanwijzing opgeven, zoals het wijzigen van de stijl (bijvoorbeeld vet, cursief) of het lettertype. Dit helpt mensen met een laag gezichtsvermogen of die een kleurgezichtsgebrek hebben om de informatie te identificeren. Er kan echter niet volledig op worden vertrouwd, omdat het mensen die de pagina helemaal niet kunnen zien, niet helpt. Daarom is het (soms) nuttig om verborgen teksten te verstrekken of programmatic oplossingen, zoals te gebruiken [Toegankelijke Rich Internet Applications (ARIA) reeks van Webnormen](https://www.w3.org/WAI/standards-guidelines/aria/), om deze informatie door te geven aan niet-waargenomen gebruikers.
 
 #### Meer informatie - Gebruik van kleur (1.4.1) {#more-information-use-of-color}
 
@@ -611,7 +611,7 @@ en de richtsnoeren uit hoofde van [Voldoen aan criteria 1.4.4](https://www.w3.or
 
 #### Doel - Afbeeldingen van tekst (1.4.5) {#purpose-images-of-text}
 
-Afbeeldingen van tekst worden vaak gebruikt wanneer een bepaalde tekststijl de voorkeur heeft; bijvoorbeeld een logo of tekst die uit een andere bron is gegenereerd (bijvoorbeeld een scan van een papieren document). In vergelijking met tekst in HTML en opgemaakt met CSS beschikken tekstafbeeldingen echter niet over de flexibiliteit om de grootte of weergave te wijzigen die nodig kan zijn voor mensen met een visuele handicap of leesproblemen.
+Afbeeldingen van tekst worden vaak gebruikt wanneer een bepaalde tekststijl de voorkeur heeft; bijvoorbeeld een logo of als tekst is gegenereerd uit een andere bron (bijvoorbeeld een scan van een papieren document). In vergelijking met tekst in HTML en opgemaakt met CSS beschikken tekstafbeeldingen echter niet over de flexibiliteit om de grootte of weergave te wijzigen die nodig kan zijn voor mensen met een visuele handicap of leesproblemen.
 
 #### Procedure - Afbeeldingen van tekst (1.4.5) {#how-to-meet-images-of-text}
 
@@ -1063,7 +1063,7 @@ Het doel van dit succescriterium is ervoor te zorgen dat de functionaliteit voor
 * nieuwe vensters die worden gestart wanneer een component focus krijgt;
 * focus wordt gewijzigd in een andere component wanneer die component focus krijgt;
 
-Focus kan naar een besturingselement worden verplaatst via het toetsenbord (bijvoorbeeld met Tab naar een besturingselement) of de muis (bijvoorbeeld door op een tekstveld te klikken). Als u de muis over een besturingselement beweegt, wordt de focus niet verplaatst, tenzij dit gedrag door scripts wordt geïmplementeerd. Merk op dat voor sommige soorten controles, het klikken op een controle de controle (b.v. knoop) kan ook activeren, die, beurtelings, een verandering in context kan in werking stellen.
+Focus kan naar een besturingselement worden verplaatst via het toetsenbord (bijvoorbeeld met Tab naar een besturingselement) of de muis (bijvoorbeeld door op een tekstveld te klikken). Als u de muis over een besturingselement beweegt, wordt de focus niet verplaatst, tenzij dit gedrag door scripts wordt geïmplementeerd. Merk op dat voor sommige soorten controles, het klikken op een controle de controle (bijvoorbeeld, knoop) kan ook activeren, die, beurtelings, een verandering in context kan in werking stellen.
 
 #### Hoe te om te ontmoeten - op Focus (3.2.1) {#how-to-meet-on-focus}
 

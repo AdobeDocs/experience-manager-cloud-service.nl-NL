@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [ond
 
 * Verbeterde compatibiliteit en robuustheid voor connectors van andere leveranciers op I/O Runtime
 
-* Verbeterde ondersteuning voor GQL Client configuration overwrites (bijv. aangepast caching gedrag instellen)
+* Verbeterde ondersteuning voor overschreven GQL Client-configuratie (bijvoorbeeld aangepaste caching-functionaliteit instellen)
 
 * Meerdere eindpunten voor handel worden nu offline ondersteund en kunnen worden geconfigureerd via Cloud Manager. Meer informatie vindt u op de CIF-blog [hier](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
 

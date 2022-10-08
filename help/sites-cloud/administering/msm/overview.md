@@ -4,9 +4,9 @@ description: Maak kennis met de introductie van het hergebruik van inhoud met AE
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2683'
 ht-degree: 0%
 
 ---

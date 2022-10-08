@@ -2,9 +2,9 @@
 title: Het uitvoeren van een Evaluator van de Predicatie van de Douane voor de Bouwer van de Vraag
 description: De Bouwer van de Vraag in AEM biedt een gemakkelijke, klantgerichte manier om de inhoudsbewaarplaats te vragen
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Een aangepaste predikaat kan ook andere dingen uitvoeren die niet direct mogelij
 
 Een predikaat beoordelaar behandelt de evaluatie van bepaalde predikaten, die de bepalende beperkingen van een vraag zijn.
 
-Hiermee wordt een zoekrestrictie op een hoger niveau toegewezen (zoals `width>200`) naar een specifieke JCR-query die past bij het werkelijke inhoudsmodel (bijvoorbeeld `metadata/@width > 200`). Of het kan knopen manueel filtreren en hun beperkingen controleren.
+Hiermee wordt een zoekrestrictie op een hoger niveau toegewezen (zoals `width>200`) naar een specifieke JCR-query die past bij het daadwerkelijke inhoudsmodel (bijvoorbeeld `metadata/@width > 200`). Of het kan knopen manueel filtreren en hun beperkingen controleren.
 
 >[!TIP]
 >
@@ -60,7 +60,7 @@ Als voorbeeld beschrijft deze sectie hoe te om een douane te creëren predikaat 
 
 * `cq:lastReplicated` die de datum van de laatste replicatieactie opslaat
 * `cq:lastReplicatedBy` die identiteitskaart van de gebruiker opslaat die de laatste replicatieactie teweegbracht
-* `cq:lastReplicationAction` die de laatste replicatiehandeling opslaat (bijvoorbeeld activering, deactivering)
+* `cq:lastReplicationAction` die de laatste replicatieactie (bijvoorbeeld, Activering, Deactivering) opslaat
 
 #### Replicatiemetagegevens met standaardvoorspellende evaluatoren opvragen {#querying-replication-metadata-with-default-predicate-evaluators}
 

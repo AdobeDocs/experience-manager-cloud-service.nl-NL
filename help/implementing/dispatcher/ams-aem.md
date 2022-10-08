@@ -3,9 +3,9 @@ title: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 description: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1447'
 ht-degree: 14%
 
 ---
@@ -104,7 +104,7 @@ Verwijder alle bestanden uit een farm in `conf.dispatcher.d/enabled_farms` dat `
 
 ### De naam van farmbestanden wijzigen
 
-Alle bedrijven in `conf.d/enabled_farms` moet worden hernoemd om overeen te komen met het patroon `*.farm`, dus bijvoorbeeld een landbouwbedrijfsdossier genoemd `customerX_farm.any` naam wijzigen `customerX.farm`.
+Alle bedrijven in `conf.d/enabled_farms` moet worden hernoemd om overeen te komen met het patroon `*.farm`, dus bijvoorbeeld, een landbouwbedrijfdossier genoemd `customerX_farm.any` naam wijzigen `customerX.farm`.
 
 ### Cache controleren
 

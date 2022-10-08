@@ -2,9 +2,9 @@
 title: Responsieve lay-out
 description: AEM kunt u een responsieve lay-out voor uw pagina's maken
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1766'
 ht-degree: 7%
 
 ---

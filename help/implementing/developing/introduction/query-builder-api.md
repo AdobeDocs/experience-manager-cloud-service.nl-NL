@@ -2,9 +2,9 @@
 title: Query Builder-API
 description: De functionaliteit van de Asset Share Query Builder wordt weergegeven via een Java API en een REST API.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2040'
 ht-degree: 0%
 
 ---
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Wat wordt geretourneerd, verfijnen {#refining-what-is-returned}
 
-Door gebrek, zal QueryBuilder JSON Servlet een standaardreeks eigenschappen voor elke knoop in het onderzoeksresultaat (b.v. weg, naam, titel, enz.) terugkeren. Als u de controle wilt krijgen over de eigenschappen die worden geretourneerd, kunt u een van de volgende handelingen uitvoeren:
+Door gebrek, zal QueryBuilder JSON Servlet een standaardreeks eigenschappen voor elke knoop in het onderzoeksresultaat (bijvoorbeeld, weg, naam, titel, enz.) terugkeren. Als u de controle wilt krijgen over de eigenschappen die worden geretourneerd, kunt u een van de volgende handelingen uitvoeren:
 
 Geef het volgende op
 

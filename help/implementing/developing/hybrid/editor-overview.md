@@ -2,9 +2,9 @@
 title: Overzicht SPA Editor
 description: In dit artikel wordt een uitgebreid overzicht gegeven van de SPA Editor en van de manier waarop dit werkt. In dit artikel zijn gedetailleerde workflows opgenomen van interactie tussen de SPA Editor in AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: c7759e390d9ea6c2196c9f6c895232c4e75c6d23
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1636'
 ht-degree: 0%
 
 ---
@@ -171,7 +171,7 @@ Aanvullende aangepaste kiezers kunnen worden gedefinieerd en gebruikt als onderd
 Als u de op plaats-editor wilt gebruiken van een tekstcomponent die in SPA is gemaakt, is er aanvullende configuratie vereist.
 
 1. Stel een willekeurig kenmerk in op het containerelement dat de tekst HTML bevat. In het geval van het WKND SPA Project, is het een `<div>` element en de kiezer die is gebruikt, is `data-rte-editelement`.
-1. De configuratie instellen `editElementQuery` op de overeenkomstige AEM tekstcomponent `cq:InplaceEditingConfig` die naar die kiezer wijst, bijvoorbeeld `data-rte-editelement`. Dit laat de redacteur weten welk element van HTML de HTML tekst verpakt.
+1. De configuratie instellen `editElementQuery` op de overeenkomstige AEM tekstcomponent `cq:InplaceEditingConfig` dat bijvoorbeeld naar die kiezer wijst, `data-rte-editelement`. Dit laat de redacteur weten welk element van HTML de HTML tekst verpakt.
 
 Voor meer informatie over de `editElementQuery` eigenschap en de configuratie van de teksteditor met opmaak, raadpleegt u [Configureer de Rich Text Editor.](/help/implementing/developing/extending/rich-text-editor.md)
 

@@ -2,9 +2,9 @@
 title: SPA
 description: In een SPA verstrekt de paginacomponent niet de HTML elementen van zijn kindcomponenten, maar in plaats daarvan delegeert dit aan het kader van de SPA. In dit document wordt uitgelegd hoe de paginacomponent van een SPA hierdoor uniek wordt.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---

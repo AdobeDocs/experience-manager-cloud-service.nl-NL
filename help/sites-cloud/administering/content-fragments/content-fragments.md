@@ -4,9 +4,9 @@ description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) 
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2109'
 ht-degree: 3%
 
 ---
@@ -64,7 +64,7 @@ Om dit te helpen, kunt u een voorvertoning weergeven van de [Boomstructuur](/hel
 Het aantal communicatiekanalen neemt jaarlijks toe. Doorgaans verwijzen kanalen naar het leveringsmechanisme, als:
 
 * fysiek kanaal; bijvoorbeeld desktop, mobiel.
-* Vorm van levering in een fysiek kanaal; Bijvoorbeeld de pagina met productdetails, de pagina met productcategorieën voor desktops of mobiele websites, de pagina met mobiele apps voor mobiele apparaten.
+* Vorm van levering in een fysiek kanaal; bijvoorbeeld de pagina &#39;&#39;productdetails&#39;&#39;, &#39;&#39;productcategoriepagina&#39;&#39; voor desktop&#39; of &#39;&#39;mobiel web&#39;&#39; en &#39;&#39;mobiele app&#39; voor mobiele apparaten.
 
 U (waarschijnlijk) wilt echter niet exact dezelfde inhoud gebruiken voor alle kanalen. U moet de inhoud optimaliseren op basis van het specifieke kanaal.
 

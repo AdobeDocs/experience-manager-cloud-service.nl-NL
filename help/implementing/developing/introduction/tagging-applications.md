@@ -2,9 +2,9 @@
 title: Tags samenstellen in AEM toepassingen
 description: Programmaticaal werken met tags of tags uitbreiden binnen een aangepaste AEM.
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## De opschoonfunctie voor tags {#the-tag-garbage-collector}
 
-De opschoonfunctie voor tags is een service op de achtergrond die verborgen en ongebruikte tags opruimt. Verborgen en ongebruikte tags zijn onderliggende codes `/content/cq:tags` die een `cq:movedTo` en worden niet gebruikt op een inhoudsknooppunt. Ze hebben een getal van nul. Door dit lazy schrappingsproces te gebruiken, de inhoudsknoop (d.w.z. `cq:tags` eigenschap) hoeft niet te worden bijgewerkt als onderdeel van de verplaatsings- of samenvoegbewerking. De verwijzingen in de `cq:tags` eigenschap wordt automatisch bijgewerkt wanneer de `cq:tags` eigenschap wordt bijgewerkt, bijvoorbeeld via het dialoogvenster Pagina-eigenschappen.
+De opschoonfunctie voor tags is een service op de achtergrond die verborgen en ongebruikte tags opruimt. Verborgen en ongebruikte tags zijn onderliggende codes `/content/cq:tags` die een `cq:movedTo` en worden niet gebruikt op een inhoudsknooppunt. Ze hebben een getal van nul. Door dit lazy schrappingsproces te gebruiken, de inhoudsknoop (d.w.z. `cq:tags` eigenschap) hoeft niet te worden bijgewerkt als onderdeel van de verplaatsings- of samenvoegbewerking. De verwijzingen in de `cq:tags` eigenschap wordt automatisch bijgewerkt wanneer de `cq:tags` Deze eigenschap wordt bijvoorbeeld bijgewerkt via het dialoogvenster Pagina-eigenschappen.
 
 De opschoonfunctie voor tags wordt standaard eenmaal per dag uitgevoerd. Dit kan worden gevormd bij:
 
@@ -159,7 +159,7 @@ Bij het labelen is lokalisatie afhankelijk van de context als tag `titles` kan w
 
 ### Een nieuwe taal toevoegen aan het dialoogvenster Tag bewerken {#adding-a-new-language-to-the-edit-tag-dialog}
 
-In de volgende procedure wordt beschreven hoe een nieuwe taal (bijvoorbeeld het Fins) aan de **Tag bewerken** dialoogvenster:
+In de volgende procedure wordt beschreven hoe u een nieuwe taal (bijvoorbeeld Fins) aan de **Tag bewerken** dialoogvenster:
 
 1. In **CRXDE**, bewerkt u de eigenschap voor meerdere waarden `languages` van het knooppunt `/content/cq:tags`.
 1. Toevoegen `fi_fi`, die staat voor de Finse landinstelling, en sla de wijzigingen op.

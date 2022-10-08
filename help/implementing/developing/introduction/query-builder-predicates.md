@@ -2,9 +2,9 @@
 title: Voorlopige naslaggids voor Query Builder
 description: Predicate reference for the Query Builder API.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2221'
 ht-degree: 1%
 
 ---
@@ -275,7 +275,7 @@ Het steunt facetextractie en verstrekt emmers voor elke unieke bezitswaarde in d
 
 Deze voorspelling past een bezit JCR aan een interval aan. Dit geldt voor eigenschappen met lineaire typen, zoals `LONG`, `DOUBLE` en `DECIMAL`. Voor `DATE` zie [`daterange`](#daterange) voorspellen die geoptimaliseerde invoer voor datumnotatie heeft.
 
-U kunt een ondergrens, een bovengrens of beide definiëren. De bewerking (bijvoorbeeld kleiner dan of kleiner dan of gelijk aan) kan ook afzonderlijk worden opgegeven voor de ondergrens en de bovengrens.
+U kunt een ondergrens, een bovengrens of beide definiëren. De bewerking (bijvoorbeeld kleiner dan of kleiner dan of gelijk aan) kan ook afzonderlijk worden opgegeven voor de onderzijde en de bovengrens.
 
 Het ondersteunt geen facetextractie.
 
@@ -370,7 +370,7 @@ Het ondersteunt geen facetextractie.
 
 * **`tagsearch`** - trefwoord dat moet worden gezocht in titels van tags
 * **`property`** - eigenschap (of relatief pad naar eigenschap) die in overweging moet worden genomen (standaard `cq:tags`)
-* **`lang`** - alleen zoeken in een bepaalde gelokaliseerde tagtitel (bijvoorbeeld `de`)
+* **`lang`** - als u alleen in een bepaalde gelokaliseerde tagtitel wilt zoeken (bijvoorbeeld `de`)
 * **`all`** - Booleaanse waarde om volledige labeltekst te doorzoeken, d.w.z. alle titels, beschrijving enz. (heeft voorrang op `lang`)
 
 ### type {#type}

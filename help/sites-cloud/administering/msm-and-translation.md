@@ -4,9 +4,9 @@ description: Leer hoe u uw inhoud kunt hergebruiken in uw project en meertalige 
 feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Doorgaans maakt u een master site in één taal en voor een specifiek land en ge
 >
 >Beperk het gebruik van beheer van meerdere sites tot inhoud in één taal.
 >
->Gebruik bijvoorbeeld de master Engelse versie om de Engelse versie van pagina&#39;s te maken voor de VS, Canada, het Verenigd Koninkrijk, enz. pagina&#39;s en gebruik de master Franse versie om de Franse versie van pagina&#39;s voor Frankrijk, Zwitserland, Canada, enz. te maken.
+>Gebruik bijvoorbeeld de master Engelse versie om de Engelse versie van pagina&#39;s te maken voor de VS, Canada, het Verenigd Koninkrijk, enzovoort. pagina&#39;s en gebruik de master Franse versie om de Franse versie van pagina&#39;s voor Frankrijk, Zwitserland, Canada, enz. te maken.
 
 In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet alle niveaus/elementen in kwestie weergeven):
 

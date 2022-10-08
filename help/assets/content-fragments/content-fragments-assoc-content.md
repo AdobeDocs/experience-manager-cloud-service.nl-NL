@@ -2,9 +2,9 @@
 title: Gekoppelde inhoud (elementen - inhoudsfragmenten)
 description: Begrijp hoe AEM bijbehorende inhoudseigenschap de verbinding verstrekt zodat de activa facultatief met het fragment kunnen worden gebruikt.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '233'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ AEM functie Gekoppelde inhoud biedt de verbinding, zodat elementen optioneel met
 
 >[!NOTE]
 >
->Er zijn verschillende methoden om toe te voegen [visuele elementen (bv. afbeeldingen)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
+>Er zijn verschillende methoden om toe te voegen [visuele elementen (bijvoorbeeld afbeeldingen)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
 
 Als u de koppeling wilt maken, moet u eerst [media-elementen toevoegen aan een verzameling](/help/assets/manage-collections.md). Daarna kunt u:
 
