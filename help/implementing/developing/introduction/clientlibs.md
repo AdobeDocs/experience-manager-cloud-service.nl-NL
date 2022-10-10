@@ -2,12 +2,13 @@
 title: Client-Side bibliotheken gebruiken op AEM as a Cloud Service
 description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientlibs) in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden verzonden
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
+
 
 # Client-Side bibliotheken gebruiken op AEM as a Cloud Service {#using-client-side-libraries}
 
@@ -55,7 +56,7 @@ Een bibliotheekmap aan de clientzijde is een opslagplaats-knooppunt van het type
 
 Elk `cq:ClientLibraryFolder` wordt gevuld met een set JS- en/of CSS-bestanden, samen met enkele ondersteunende bestanden (zie hieronder). Belangrijke eigenschappen van de `cq:ClientLibraryFolder` zijn als volgt geconfigureerd:
 
-* `allowProxy`: Omdat alle clientlibs onder moeten worden opgeslagen `apps`, biedt deze eigenschap toegang tot clientbibliotheken via proxyservlet. Zie [Een clientbibliotheekmap zoeken en de server Proxy Client Libraries gebruiken](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) hieronder.
+* `allowProxy`: Omdat alle clientlibs onder moeten worden opgeslagen `apps`Met deze eigenschap hebt u via proxyservlet toegang tot clientbibliotheken. Zie de sectie [Een clientbibliotheekmap zoeken en de server Proxy Client Libraries gebruiken](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) hieronder.
 * `categories`: Identificeert de categorieën waarin de set JS- en/of CSS-bestanden binnen deze set `cq:ClientLibraryFolder` vallen. De `categories` Met een eigenschap met meerdere waarden kan een bibliotheekmap deel uitmaken van meerdere categorieën (zie hieronder voor meer informatie).
 
 Als de map met clientbibliotheken een of meer bronbestanden bevat die tijdens runtime worden samengevoegd tot één JS- en/of CSS-bestand. De naam van het gegenereerde bestand is de knooppuntnaam met een van de `.js` of `.css` bestandsnaamextensie. Het bibliotheekknooppunt genaamd `cq.jquery` resulteert in het gegenereerde bestand met de naam `cq.jquery.js` of `cq.jquery.css`.
@@ -87,7 +88,7 @@ Voor de clientbibliotheken onder `/apps` om toegankelijk te zijn, wordt een volm
    * Type: Boolean
    * Waarde: `true`
 1. Als u statische bronnen moet beheren, maakt u een submap met de naam `resources` onder de clientbibliotheekmap.
-   * Als u statische bronnen onder de map opslaat `resources`, kunnen er niet naar worden verwezen in een publicatie-instantie.
+   * Als u statische bronnen ergens anders opslaat dan onder de map `resources`, kunnen er niet naar worden verwezen in een publicatie-instantie.
 1. Bronbestanden toevoegen aan de bibliotheekmap.
    * Dit wordt typisch gedaan door het front-end bouwstijlproces van [AEM Projectarchetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * U kunt bronbestanden desgewenst in submappen ordenen.
@@ -211,7 +212,7 @@ Het insluiten van code is handig voor het verschaffen van toegang tot bibliothek
 
 #### Toepassingsspecifieke clientbibliotheekmappen {#app-specific-client-library-folders}
 
-U kunt het beste alle toepassingsgerelateerde bestanden in hun toepassingsmap onder /apps opslaan. Het wordt ook aanbevolen bezoekers van websites toegang tot de map /apps te weigeren. Om aan beide beste praktijken te voldoen, creeer een omslag van de cliëntbibliotheek onder de /etc omslag die de cliëntbibliotheek inbedt die onder /apps is.
+Het wordt aanbevolen alle toepassingsgerelateerde bestanden in de onderstaande toepassingsmap te houden `/apps`. Het is ook aan te raden bezoekers van websites de toegang tot de `/apps` map. Om aan beide beste praktijken te voldoen, creeer een omslag van de cliëntbibliotheek onder `/etc` map waarin de clientbibliotheek is ingesloten die zich onder `/apps`.
 
 Gebruik de eigenschap Categorieën om de clientbibliotheekmap te identificeren die u wilt insluiten. Als u de bibliotheek wilt insluiten, voegt u een eigenschap toe aan het insluiten `cq:ClientLibraryFolder` node, met de volgende eigenschapkenmerken:
 
