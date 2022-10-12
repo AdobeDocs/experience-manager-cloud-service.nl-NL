@@ -10,7 +10,7 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 6b91c47f741f12cf66efd6a2ad6d9c1f4531ac70
+source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 0%
@@ -148,7 +148,7 @@ Ga naar de `ui.frontend` en de `webpack.common.js` bestand om de volgende regel 
 
 De [Apollo-client](https://www.apollographql.com/docs/react/) wordt gebruikt om zowel lokale als externe gegevens met GraphQL te beheren. Het slaat ook de resultaten van vragen GraphQL in een lokaal, genormaliseerd, in-geheugengeheime voorgeheugen op.
 
-Voor [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) om effectief te werken hebt u een `possibleTypes.js` bestand. Als u dit bestand wilt genereren, raadpleegt u [Mogelijke typen automatisch genereren](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Zie ook de [PWA Studio-referentieimplementatie](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) en een voorbeeld van een [`possibleTypes.js`](../assets/possibleTypes.js) bestand.
+Voor [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) om effectief te werken hebt u een `possibleTypes.js` bestand. Als u dit bestand wilt genereren, raadpleegt u [Mogelijke typen automatisch genereren](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Zie ook de [PWA Studio-referentieimplementatie](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) en een voorbeeld van een [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) bestand.
 
 
 1. Ga naar de `ui.frontend` en sla het bestand op als `./src/main/possibleTypes.js`
