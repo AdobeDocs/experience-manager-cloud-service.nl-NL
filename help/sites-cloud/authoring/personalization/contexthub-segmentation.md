@@ -2,9 +2,9 @@
 title: Het vormen Segmentatie met ContextHub
 description: Leer hoe te om segmentatie te vormen gebruikend ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1697'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ AEM kunt u de ervaringen van uw gebruikers eenvoudig aanpassen. Het staat u ook 
 
 De [Soorten publiek](audiences.md) console wordt gebruikt om segmenten voor ContextHub evenals publiek voor uw rekening van Adobe Target te beheren. Deze documentatie behandelt het beheren van segmenten voor ContextHub.
 
-Om tot uw segmenten toegang te hebben, in globale navigatie selecteer **Navigation > Personalisatie > Soorten publiek**.
+Om tot uw segmenten toegang te hebben, in globale navigatie selecteer **Navigation > Personalisatie > Soorten publiek**. Selecteer uw configuratie (bijvoorbeeld, Plaats WKND) om uw segmenten te zien:
 
 ![Het publiek beheren](../assets/contexthub-segmentation-audiences.png)
 
@@ -86,7 +86,7 @@ De volgende verwijzingen zijn beschikbaar uit-van-de-doos om rechtstreeks met ee
 
 Het nieuwe segment definiëren:
 
-1. Na [toegang krijgen tot de segmenten](#accessing-segments), [naar de map navigeren](#organizing-segments) waar u het segment wilt creëren, of het in de wortel verlaten.
+1. Na [toegang krijgen tot de segmenten](#accessing-segments), [naar de map navigeren](#organizing-segments) waar u het segment wilt maken.
 
 1. Tik of klik op de knop **Maken** en selecteert u **ContextHub-segment maken**.
 
