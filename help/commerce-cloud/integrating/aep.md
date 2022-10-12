@@ -10,9 +10,9 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
+source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 De [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) kerncomponenten bieden naadloze integratie met [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) om storefront gebeurtenissen en hun gegevens van cliënt-zijinteractie zoals door:sturen __toevoegen aan winkelwagentje__.
 
-De [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) project bevat een JavaScript-bibliotheek met de naam [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) om gebeurtenisgegevens te verzamelen van uw Opslag van de Handel. Deze gebeurtenisgegevens worden naar het Experience Platform verzonden waar ze worden gebruikt in andere Adobe Experience Cloud-producten, zoals Adobe Analytics en Adobe Target, om een profiel van 360 graden te maken dat een klantentraject bestrijkt. Door de gegevens van de Handel met andere producten in Adobe Experience Cloud te verbinden, kunt u taken uitvoeren zoals gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
+De [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) project bevat een JavaScript-bibliotheek met de naam [Adobe Experience Platform-connector voor Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) om gebeurtenisgegevens te verzamelen van uw Opslag van de Handel. Deze gebeurtenisgegevens worden naar het Experience Platform verzonden waar ze worden gebruikt in andere Adobe Experience Cloud-producten, zoals Adobe Analytics en Adobe Target, om een profiel van 360 graden te maken dat een klantentraject bestrijkt. Door de gegevens van de Handel met andere producten in Adobe Experience Cloud te verbinden, kunt u taken uitvoeren zoals gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
 
 Meer informatie over de [Gegevensverzameling Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) reeks technologieën waarmee u gegevens van de klantenervaring van cliënt-zijbronnen kunt verzamelen.
 
