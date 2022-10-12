@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 01d54ba56ccab372396829a012c4da8ef4a57fe2
 workflow-type: tm+mt
-source-wordcount: '3651'
+source-wordcount: '3685'
 ht-degree: 14%
 
 ---
@@ -66,7 +66,9 @@ De diverse rollen die betrokken zijn om te vormen en het vermogen en hun overeen
 
 ### Connected Assets-architectuur {#connected-assets-architecture}
 
-Met Experience Manager kunt u een externe DAM-implementatie als bron verbinden met meerdere Experience Managers [!DNL Sites] implementaties. U kunt maximaal vier [!DNL Sites] implementaties naar een externe DAM-bron. U kunt echter wel verbinding maken met een [!DNL Sites] implementatie met slechts één externe DAM-implementatie.
+Met Experience Manager kunt u een externe DAM-implementatie als bron verbinden met meerdere Experience Managers [!DNL Sites] implementaties. U kunt echter wel verbinding maken met een [!DNL Sites] implementatie met slechts één externe DAM-implementatie.
+
+Evalueer het optimale aantal instanties van Plaatsen om met een verre plaatsing te verbinden DAM. Adobe adviseert om instanties van Plaatsen aan de plaatsing en test incrementeel aan te sluiten dat er geen prestatieseffect bij verre DAM is, aangezien elke verbonden instantie van Plaatsen aan het gegevensverkeer op verre DAM bijdraagt.
 
 De volgende diagrammen illustreren de gesteunde scenario&#39;s:
 
@@ -261,9 +263,9 @@ Configureer de functie Connected Assets alleen wanneer u de middelen die beschik
 
 +++
 
-+++**Hoeveel [!DNL Sites] implementaties kunt u verbinding maken met een externe DAM-implementatie nadat u Connected Assets hebt geconfigureerd?**
++++**U kunt meerdere [!DNL Sites] implementaties naar een externe DAM-implementatie na het configureren van Connected Assets?**
 
-U kunt maximaal vier [!DNL Sites] implementaties naar een externe DAM-implementatie na het configureren van Connected Assets. Zie voor meer informatie [Connected Assets-architectuur](#connected-assets-architecture).
+Ja, u kunt meerdere [!DNL Sites] implementaties naar een externe DAM-implementatie na het configureren van Connected Assets. Zie voor meer informatie [Connected Assets-architectuur](#connected-assets-architecture).
 
 +++
 
