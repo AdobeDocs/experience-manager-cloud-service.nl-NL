@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
+source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -15,24 +15,19 @@ In de volgende sectie worden de algemene opmerkingen bij de release beschreven v
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor de laatste versie 1.9.3 van [!DNL Workfront for Experience Manager enhanced connector] is 16 september 2022.
+De releasedatum voor de laatste versie 1.9.4 van [!DNL Workfront for Experience Manager enhanced connector] is 7 oktober 2022.
 
 ## Geen hooglichten {#release-highlights}
 
 De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de volgende verbeteringen en foutoplossingen:
 
-* Kan geen bestand uploaden dat groter is dan 8 GB.
-* Problemen bij het automatisch publiceren van middelen die van Workfront naar AEM worden verzonden.
-* Het veld Basispad is niet beschikbaar voor het veld Codes tijdens het bewerken van een standaardformulier voor een metagegevensschema.
-* Problemen tijdens het toevoegen van nieuwe versies in Workfront via AEM workflows.
-* Wanneer u een AEM zoekopdracht uitvoert naar middelen die beschikbaar zijn in Workfront, AEM een foutbericht wordt weergegeven.
-* Wanneer u een AEM werkstroom maakt voor het maken van taken op basis van een element en geen bovenliggende taaknaam definieert, wordt de taak niet in Workfront gemaakt.
+* Kan het tabblad Gebeurtenisabonnementen niet weergeven op de verbeterde pagina voor schakelaarconfiguratie vanwege een groot aantal gebeurtenissen.
 
-
+* Workfront kan de lijst met bestaande mappen in een project niet ophalen. Dit leidt tot het maken van dubbele mappen.
 
 >[!IMPORTANT]
 >
->Adobe raadt u aan [upgrade naar de nieuwste versie 1.9.3](../assets/update-workfront-enhanced-connector.md) van de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.4](../assets/update-workfront-enhanced-connector.md) van de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekende problemen {#known-issues}
 
@@ -43,6 +38,17 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 * Workfront geeft een `SERVER_ERROR` bericht tijdens het koppelen van documenten aan AEM na de upgrade naar versie 8316. Als u het probleem wilt oplossen, wijst u `rep:readProperties` tot `content/dam/collections` for `wf-workfront-user` AEM Gebruikersgroep.
 
 ## Eerdere versies {#previous-releases}
+
+### Release september 2022 {#september-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] versie 1.9.3, uitgebracht op 16 september, bevat de volgende updates:
+
+* Kan geen bestand uploaden dat groter is dan 8 GB.
+* Problemen bij het automatisch publiceren van middelen die van Workfront naar AEM worden verzonden.
+* Het veld Basispad is niet beschikbaar voor het veld Codes tijdens het bewerken van een standaardformulier voor een metagegevensschema.
+* Problemen tijdens het toevoegen van nieuwe versies in Workfront via AEM workflows.
+* Wanneer u een AEM zoekopdracht uitvoert naar middelen die beschikbaar zijn in Workfront, AEM een foutbericht wordt weergegeven.
+* Wanneer u een AEM werkstroom maakt voor het maken van taken op basis van een element en geen bovenliggende taaknaam definieert, wordt de taak niet in Workfront gemaakt.
 
 ### Release van augustus 2022 {#august-2022-release}
 
