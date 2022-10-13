@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
+source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1163'
 ht-degree: 7%
 
 ---
@@ -29,6 +29,10 @@ Volg de onderstaande secties om de zelfbedieningsinterface van Cloud Manager te 
 
 1. [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+
+>[!NOTE]
+>
+>Aangepaste domeinen worden ondersteund in Cloud Manager **alleen** als u AEM beheerde CDN gebruikt. Als u uw eigen CDN en [wijs het aan AEM beheerde CDN](/help/implementing/dispatcher/cdn.md) u moet die specifieke CDN gebruiken om domeinen te beheren die geen Cloud Manager zijn.
 
 **Beperking van het verkeer**
 
@@ -54,10 +58,6 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het beheren en het r
 * De klant moet CDN kunnen vormen om met AEM as a Cloud Service te werken - zie de hieronder vermelde configuratieinstructies.
 * De klant moet ingenieurs CDN hebben die op vraag zijn in geval de verwante kwesties zich voordoen.
 * De klant moet een laadtest uitvoeren en met succes doorstaan alvorens naar productie te gaan.
-
->[!NOTE]
->
->De Adobe CDN is niet optioneel. De klanten die hun eigen CDN brengen moeten het aan de AEM Beheerde CDN richten.
 
 Configuratieinstructies:
 
@@ -88,7 +88,9 @@ In Windows:
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
 
-Wanneer u uw eigen CDN gebruikt, hoeft u de domeinen en certificaten niet te installeren in Cloud Manager. Het verpletteren in Adobe CDN zal gebruikend het standaarddomein worden gedaan `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>[!NOTE]
+>
+>Wanneer u uw eigen CDN gebruikt, hoeft u de domeinen en certificaten niet te installeren in Cloud Manager. Het verpletteren in Adobe CDN zal door het standaarddomein te gebruiken worden gedaan `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
