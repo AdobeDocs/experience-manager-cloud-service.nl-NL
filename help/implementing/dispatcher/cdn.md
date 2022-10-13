@@ -3,7 +3,7 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
+source-git-commit: 95ec89fa4bb71a63121bc86a74a15cc7812ae342
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 7%
@@ -32,7 +32,7 @@ Volg de onderstaande secties om de zelfbedieningsinterface van Cloud Manager te 
 
 >[!NOTE]
 >
->Aangepaste domeinen worden ondersteund in Cloud Manager **alleen** als u AEM beheerde CDN gebruikt. Als u uw eigen CDN en [wijs het aan AEM beheerde CDN](/help/implementing/dispatcher/cdn.md) u moet die specifieke CDN gebruiken om domeinen te beheren die geen Cloud Manager zijn.
+>Aangepaste domeinen worden ondersteund in Cloud Manager **alleen** als u AEM beheerde CDN gebruikt. Als u uw eigen CDN en [wijs het aan AEM beheerde CDN](#point-to-point-CDN) u moet die specifieke CDN gebruiken om domeinen te beheren die geen Cloud Manager zijn.
 
 **Beperking van het verkeer**
 
