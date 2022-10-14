@@ -1,8 +1,8 @@
 ---
 title: Aangepaste regels voor codekwaliteit
-description: Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van [het testen van de codekwaliteit]. Zij zijn gebaseerd op beste praktijken van AEM Techniek.
+description: Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code. Zij zijn gebaseerd op beste praktijken van AEM Techniek.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: d7509556e4ae7a377498f2de2bae57f3557522ac
 workflow-type: tm+mt
 source-wordcount: '3493'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 >title="Aangepaste regels voor codekwaliteit"
 >abstract="Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code. Zij zijn gebaseerd op beste praktijken van AEM Techniek."
 
-Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van [testen van de codekwaliteit.](/help/implementing/cloud-manager/code-quality-testing.md) Zij zijn gebaseerd op beste praktijken van AEM Techniek.
+Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van [testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md). Zij zijn gebaseerd op beste praktijken van AEM Techniek.
 
 >[!NOTE]
 >
