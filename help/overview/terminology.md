@@ -2,10 +2,10 @@
 title: Inleiding tot Adobe Experience Manager as a Cloud Service - Terminologie
 description: Inleiding tot Adobe Experience Manager as a Cloud Service - Terminologie.
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
-source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
+source-git-commit: aa55c2579f3a1361f263c7681eca8d3b4b7c963b
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 97%
+source-wordcount: '364'
+ht-degree: 88%
 
 ---
 
@@ -40,7 +40,7 @@ De volgende termen gebruikt in relatie tot Adobe Experience Manager (AEM) as a C
 | AEM Image | Een implementeerbaar artefact dat de AEM-productcode samen met de klantcode bevat. |
 | Asset-microservices | Cloudgebaseerde verwerkingsservices voor digitale assets die verschillende gebruiksgevallen voor assetverwerking bedienen, zoals het genereren van weergaven, PDF-verwerkingen, verwerking van subassets, tekstextractie, enzovoort. Zie [Asset-microservices - Overzicht](/help/assets/asset-microservices-overview.md) voor meer informatie. |
 | Git-repository voor Cloud Manager | Waar klanten hun code en configuratie-instellingen opslaan. |
-| Cloudprovider | AEM as a Cloud Service biedt momenteel ondersteuning voor Azure. Ondersteuning voor AWS is een van de punten in onze roadmap voor de toekomst. |
+| Cloudprovider | AEM as a Cloud Service wordt uitgevoerd op openbare cloudinfrastructuur van meerdere leveranciers achter de scène (zoals Microsoft Azure of Amazon Web Services) om de service met de contractuele SLA te leveren. |
 | Content Delivery Network (CDN) | AEM as a Cloud Service wordt geleverd met een standaard-CDN. Het belangrijkste doel is het verminderen van latentie door content te leveren die in de cache kan worden opgeslagen en die komt van de CDN-knooppunten aan de rand van de omgeving, dicht in de buurt van de browser. Het systeem wordt volledig beheerd en geconfigureerd voor optimale prestaties van AEM-applicaties. |
 | Content-repository | Waar de content wordt bewaard. |
 | Enterprise Isolation | Elke instantie van de AEM as a Cloud Service is gescheiden van de andere instanties. |
