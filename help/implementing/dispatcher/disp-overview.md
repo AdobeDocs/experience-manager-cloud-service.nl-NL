@@ -3,9 +3,9 @@ title: Dispatcher in de cloud
 description: Dispatcher in de cloud
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '998'
 ht-degree: 1%
 
 ---
@@ -55,6 +55,19 @@ De dispatcherhulpmiddelen worden gebruikt om de configuratie van de Verzender va
 * **Oudere modus** - voor details over de omslagstructuur en lokale bevestiging voor de verouderde wijze van de configuratie van de verzender [Validatie en foutopsporing met Dispatcher Tools (verouderd)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 Voor meer informatie over hoe te van het model van de erfenisconfiguratie aan flexibelere te migreren, die van AEM archetype 28 wordt voorzien, zie [deze documentatie](/help/implementing/dispatcher/validation-debug.md#migrating).
+
+## Inhoud verplaatsen {#content-disposition}
+
+Voor de publicatielaag is de standaardinstelling voor het weergeven van lobs een bijlage. Dit kan worden overschreven met de standaard [koptekst voor inhoudspositie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in de verzender.
+
+Hieronder ziet u een voorbeeld van hoe de configuratie eruit moet zien:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## Ondersteunde Apache-modules {#supported-directives}
 

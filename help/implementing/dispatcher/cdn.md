@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 95ec89fa4bb71a63121bc86a74a15cc7812ae342
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1117'
 ht-degree: 7%
 
 ---
@@ -122,19 +122,6 @@ Hieronder worden verschillende configuratievoorbeelden van een aantal toonaangev
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
-
-## Inhoud verplaatsen {#content-disposition}
-
-Voor de publicatielaag is de standaardinstelling voor het weergeven van lobs een bijlage. Dit kan worden overschreven met de standaard [koptekst voor inhoudspositie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in de verzender.
-
-Hieronder ziet u een voorbeeld van hoe de configuratie eruit moet zien:
-
-```
-<LocationMatch "^\/content\/dam.*\.(pdf).*">
- Header unset Content-Disposition
- Header set Content-Disposition inline
-</LocationMatch>
-```
 
 ## Geolocatie-headers {#geo-headers}
 
