@@ -1,11 +1,11 @@
 ---
 title: AEM Headless Developer Journey
-description: Begin hier voor een geleide reis door Adobe Experience Manager (AEM) as a Cloud Service wanneer het als Zwaardeloos Systeem van het Inhoudsbeheer (CMS) wordt gebruikt. Leer over de krachtige en flexibele functies zonder koppen, hun mogelijkheden en hoe u deze kunt gebruiken voor uw eerste project voor ontwikkeling zonder koppen. Deze reis verstrekt u van alle informatie u uw eerste headless toepassing moet ontwikkelen.
+description: Leer hoe u uw project kunt ontwikkelen voor levering van inhoud zonder kop met Adobe Experience Manager (AEM) als CMS zonder kop. Leer hoe u functies als Content Models, Content Fragments en een GraphQL-API kunt gebruiken voor een headless-ervaring.
 landing-page-description: Krijg inzicht in de levering en implementatie van inhoud zonder kop. Meer weten over het ontwikkelen van uw strategie binnen uw bedrijf?
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
+source-git-commit: 2d0856b7370b6b50935378ad26c7361e95820f4d
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1273'
 ht-degree: 1%
 
 ---
