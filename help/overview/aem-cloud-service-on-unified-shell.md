@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service op Verenigde Shell
 description: AEM as a Cloud Service op Verenigde Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
+source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '370'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ De voordelen hiervan zijn:
 * Eenvoudig schakelen tussen organisaties of schakelen naar een andere toepassing
 * Verbeterde producthulp
 * Eenvoudige feedbackknop voor producten om problemen te melden of ideeën te delen met Adobe
-* Toegang tot wereldwijde productaankondigingen en kennisgevingen naast meldingen die specifiek AEM as a Cloud Service zijn
+* Toegang tot wereldwijde productaankondigingen en kennisgevingen naast meldingen die specifiek zijn voor AEM as a Cloud Service
 
 ## Verenigde Shell uitschakelen {#disabling-unified-shell}
 
@@ -49,7 +49,7 @@ Uit de doos, AEM as a Cloud Service verenigde shell toegelaten heeft. Nochtans, 
 
    ![afbeelding](/help/overview/assets/unifiedshell3.png)
 
-## Wijzigen in donker thema {#chaning-to-dark-theme}
+## Wijzigen in donker thema {#changing-to-dark-theme}
 
 Als u het thema donker wilt weergeven, klikt u op het profielpictogram. Er wordt dan een pop-up weergegeven, zoals hieronder wordt weergegeven. U kunt de knevel gebruiken om aan een donker thema voor Verenigde Shell over te schakelen.
 
