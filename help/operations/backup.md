@@ -2,9 +2,9 @@
 title: Inhoud herstellen in AEM as a Cloud Service
 description: Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met gebruik van Cloud Manager.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
+source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
@@ -36,12 +36,14 @@ Cloud Manager biedt twee typen back-ups waarmee u inhoud kunt herstellen.
 * **Punt in tijd (PIT):** Dit type herstelt van ononderbroken systeemsteunen van de laatste 24 uren van de huidige tijd.
 * **Vorige week:** Dit type herstelt van systeemsteunen in de laatste zeven dagen exclusief de vorige 24 uren.
 
-In beide gevallen blijft de versie van de aangepaste code en AEM ongewijzigd.
+In beide gevallen blijven de versie van de aangepaste code en de AEM ongewijzigd.
 
 De prestatiesmetriek van het herstellen van inhoud in AEM als ContentService verwijzen naar de gestandaardiseerde benchmarks:
 
 * **Doelstelling hersteltijd (RTO):** De doelstelling voor de hersteltijd varieert afhankelijk van de grootte van de opslagplaats, maar als regel geldt dat als de herstelvolgorde eenmaal is gestart, dit ongeveer 30 minuten in beslag moet nemen.
-* **De doelstelling van het herstelpunt (BHP):** De herstelpuntdoelstelling is maximaal 24 uur
+* **De doelstelling van het herstelpunt (BHP):** De herstelpuntdoelstelling is afhankelijk van de duur van de werking van uw instantie:
+   * voor de eerste 24 bedrijfsuren: elk tijdstip gedurende die 24 uur.
+   * na de eerste 24 uur: maximaal 12 uur voor de voorafgaande zes dagen.
 
 >[!TIP]
 >
@@ -112,7 +114,7 @@ Wanneer het herstel met succes wordt voltooid, zal de omgeving:
 
 ## De juiste reservekopie kiezen {#choosing-backup}
 
-Hiermee herstelt u alleen de AEM inhoud. Om deze reden, moet u zorgvuldig de codeveranderingen overwegen die tussen uw gewenste herstellingspunt en de huidige tijd door te herzien zijn begaan geschiedenis tussen uw huidige begaat identiteitskaart en wordt hersteld aan.
+Hiermee herstelt u alleen de AEM inhoud. Om deze reden, moet u zorgvuldig codeveranderingen overwegen die tussen uw gewenste herstelt punt en de huidige tijd door te herzien begaat geschiedenis tussen huidige begaan identiteitskaart en wordt teruggegeven aan.
 
 Er zijn verschillende scenario&#39;s.
 
