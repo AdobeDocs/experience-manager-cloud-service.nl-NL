@@ -2,9 +2,9 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 501441717f541439ac8d914f1e419491399e6667
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1292'
 ht-degree: 6%
 
 ---
@@ -34,16 +34,8 @@ Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van
 
 De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u een extractie wilt uitvoeren, moeten de volgende eindpunten toegankelijk zijn vanaf de instantie die AEM uitvoert:
 
-* Het doel AEM de as a Cloud Service omgeving: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 * De Azure-opslagservice: `casstorageprod.blob.core.windows.net`
 * Het eindpunt van de Toewijzing van de Gebruiker IO: `usermanagement.adobe.io`
-
-Om connectiviteit aan het doel AEM as a Cloud Service milieu te testen, geef het volgende cURL bevel van shell van de broninstantie uit (vervang `program_id`, `environment_id`, en `migration_token`):
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
->[!NOTE]
->Als een `HTTP/2 200` is ontvangen, is een verbinding met AEM as a Cloud Service gelukt.
 
 ### SSL-registratie inschakelen {#enable-ssl-logging}
 
@@ -111,7 +103,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
 Als u de migratieset wilt vullen die u hebt gemaakt in de Cloud Acceleration Manager, moet u de nieuwste versie van het Content Transfer Tool installeren op uw Adobe Experience Manager-broninstantie (AEM). Volg deze sectie om te leren hoe u de migratieset kunt vullen.
 
-1. Nadat u de meest recente versie (v2.0.10) van het Content Transfer Tool op uw Adobe Experience Manager-bronexemplaar hebt geïnstalleerd, gaat u naar **Bewerkingen - Inhoud migreren**
+1. Nadat u de nieuwste versie van het gereedschap Inhoud overbrengen op uw Adobe Experience Manager-bronexemplaar hebt geïnstalleerd, gaat u naar **Bewerkingen - Inhoud migreren**
 
 1. Klikken op **Migratieset maken**
 
