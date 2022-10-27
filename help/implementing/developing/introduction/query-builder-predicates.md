@@ -2,9 +2,9 @@
 title: Voorlopige naslaggids voor Query Builder
 description: Predicate reference for the Query Builder API.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
 workflow-type: tm+mt
-source-wordcount: '2221'
+source-wordcount: '2268'
 ht-degree: 1%
 
 ---
@@ -244,10 +244,12 @@ Het ondersteunt geen facetextractie.
 * **`path`** - Hiermee definieert u het padpatroon.
    * Afhankelijk van de `exact` eigenschap, de gehele substructuur komt overeen (net als bij het toevoegen) `//*` in xpath, maar merk op dat dit het basispad niet bevat) of alleen een exact pad dat overeenkomt met het pad, dat jokertekens kan bevatten (`*`).
       * Standaardwaarden: `true`
-   * Als de `self`eigenschap is ingesteld, wordt de gehele substructuur, inclusief het basisknooppunt, doorzocht.
+
+<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`** - als `exact` is `true`, moet het exacte pad overeenkomen, maar het kan eenvoudige jokertekens bevatten (`*`), die gelijke namen, maar niet `/`; indien `false` (standaard) alle afstammingen worden opgenomen (optioneel)
 * **`flat`** - alleen de directe kinderen doorzoekt (zoals toevoegen) `/*` in xpath) (alleen gebruikt als `exact` is niet waar (optioneel)
-* **`self`** - de substructuur doorzoekt, maar het basisknooppunt bevat dat als pad is opgegeven (geen jokertekens)
+* **`self`** - zoekt in de substructuur, maar neemt het basisknooppunt op dat als pad is opgegeven (geen jokertekens).
+   * *Belangrijke opmerking*: Er is een probleem geïdentificeerd met `self` bezit in de huidige implementatie van querybuilder en het gebruiken van het in vragen kan correcte onderzoeksresultaten niet veroorzaken. De huidige implementatie van `self` eigenschap is ook niet haalbaar omdat hierdoor de bestaande toepassingen die erop vertrouwen, kunnen worden verbroken. Daarom `self` eigenschap is vervangen en wordt aangeraden het niet te gebruiken.
 
 ### eigenschap {#property}
 
