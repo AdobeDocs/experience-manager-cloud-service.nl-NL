@@ -8,9 +8,9 @@ user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een over
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2e0aef129333eb99933bc0adfc8a753069bd656f
+source-git-commit: 733a4e6a4b4d485a36bcc2b9f043bd6295920bb9
 workflow-type: tm+mt
-source-wordcount: '3731'
+source-wordcount: '3725'
 ht-degree: 22%
 
 ---
@@ -280,8 +280,6 @@ ht-degree: 22%
          + [Inzicht in segmentering](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Het vormen Segmentatie met ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registratie, aanmelding en gebruikersprofiel](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-      + Campagne {#campaign}
-         + [Nieuwsbrieven maken met AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + Beheer {#administering}
       + Contentfragmenten {#content-fragments}
          + [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -350,7 +348,7 @@ ht-degree: 22%
       + [Integreren met Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [IMS-configuratie voor gebruik bij integratie met Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exporteren van ervaringsfragmenten naar Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
-      + [Integreren met Adobe Campaign Classic](/help/sites-cloud/integrating/integrating-campaign-classic.md)
+      + [Integreren met Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
    + [[!DNL Assets] als [!DNL Cloud Service]](/help/assets/home.md)
    + [Overzicht en nieuwe functies](/help/assets/overview.md)
