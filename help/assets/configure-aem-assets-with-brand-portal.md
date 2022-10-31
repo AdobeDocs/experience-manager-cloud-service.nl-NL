@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: f1c95dd27857085a0a95a896efd2f66af346b75a
+source-git-commit: 3255e988c5ec9a0de33660061aeb21d91c3bc4d3
 workflow-type: tm+mt
 source-wordcount: '2307'
 ht-degree: 11%
@@ -18,22 +18,22 @@ Als u Adobe Experience Manager Assets Brand Portal configureert, kunt u goedgeke
 
 ## Brand Portal activeren met Cloud Manager {#activate-brand-portal}
 
-De gebruiker van Cloud Manager activeert Brand Portal for an Experience Mananger Assets als een [!DNL Cloud Service] -instantie. De activeringsworkflow maakt de vereiste configuraties (machtigingstoken, IMS-configuratie en Brand Portal-cloudservice) op de achtergrond en geeft de status van de Brand Portal-huurder in Cloud Manager weer. Als u Brand Portal activeert, kunnen gebruikers van Experience Manager middelen publiceren naar Brand Portal en deze verspreiden onder Brand Portal-gebruikers.
+De gebruiker van Cloud Manager activeert Brand Portal voor een Experience Manager Assets als een [!DNL Cloud Service] -instantie. De activeringsworkflow maakt de vereiste configuraties (machtigingstoken, IMS-configuratie en Brand Portal-cloudservice) op de achtergrond en geeft de status van de Brand Portal-huurder in Cloud Manager weer. Als u Brand Portal activeert, kunnen Experience Manager Assets-gebruikers elementen publiceren naar Brand Portal en deze verspreiden onder Brand Portal-gebruikers.
 
 **Vereisten**
 
-U hebt het volgende nodig om Brand Portal op uw Experience Manager-middelen te activeren als een [!DNL Cloud Service] instantie:
+U hebt het volgende nodig om Brand Portal op uw Experience Manager Assets te activeren als een [!DNL Cloud Service] instantie:
 
-* Een up-to-run Experience Manager-middelen als [!DNL Cloud Service] -instantie.
+* Een Experience Manager Assets als [!DNL Cloud Service] -instantie.
 * Een gebruiker die toegang heeft tot Cloud Manager en die is toegewezen aan profielen van het product van Cloud Manager. Zie [Cloud Manager openen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) voor meer informatie .
 
 >[!NOTE]
 >
->An Experience Manager Assets as a [!DNL Cloud Service] -instantie heeft het recht slechts verbinding te maken met één Brand Portal-gebruiker. U kunt meerdere omgevingen (ontwikkeling, productie en werkgebied) voor uw Experience Manager-middelen hebben als [!DNL Cloud Service] , waarbij Brand Portal op één omgeving wordt geactiveerd.
+>Een Experience Manager Assets als [!DNL Cloud Service] -instantie heeft het recht slechts verbinding te maken met één Brand Portal-gebruiker. U kunt voor uw Experience Manager Assets als [!DNL Cloud Service] , waarbij Brand Portal op één omgeving wordt geactiveerd.
 
 **Stappen om Brand Portal te activeren**
 
-U kunt Brand Portal activeren terwijl u omgevingen voor uw Experience Manager-middelen maakt als [!DNL Cloud Service] of afzonderlijk. Laten we ervan uitgaan dat de omgevingen al zijn gemaakt en dat u nu Brand Portal moet activeren.
+U kunt Brand Portal activeren terwijl u omgevingen voor uw Experience Manager Assets maakt als een [!DNL Cloud Service] of afzonderlijk. Laten we ervan uitgaan dat de omgevingen al zijn gemaakt en dat u nu Brand Portal moet activeren.
 
 1. Meld u aan bij Adobe Cloud Manager en navigeer naar **[!UICONTROL Environments]**.
 
@@ -54,17 +54,17 @@ U kunt Brand Portal activeren terwijl u omgevingen voor uw Experience Manager-mi
 
 >[!NOTE]
 >
->Brand Portal moet worden geactiveerd op dezelfde IMS org als de Experience Mananger Assets als een [!DNL Cloud Service] -instantie.
+>Brand Portal moet op dezelfde IMS org als de Experience Manager Assets worden geactiveerd als een [!DNL Cloud Service] -instantie.
 >
->Als u een bestaande Brand Portal-cloudconfiguratie hebt ([handmatig geconfigureerd met Adobe Developer Console](#manual-configuration)) voor een IMS org (org1-bestaand) en uw Experience Mananger Assets als een [!DNL Cloud Service] -instantie is geconfigureerd voor een andere IMS-org (org2-new). Als u Brand Portal activeert vanuit Cloud Manager, wordt de Brand Portal IMS-org opnieuw ingesteld op `org2-new`. Hoewel de manueel gevormde wolkenconfiguratie op `org1-existing` wordt weergegeven in de authentieke versie van Experience Manager, maar wordt niet meer gebruikt na het activeren van Brand Portal via Cloud Manager.
+>Als u een bestaande Brand Portal-cloudconfiguratie hebt ([handmatig geconfigureerd met Adobe Developer Console](#manual-configuration)) voor een IMS org (org1-bestaand) en uw Experience Manager Assets als een [!DNL Cloud Service] -instantie is geconfigureerd voor een andere IMS-org (org2-new). Als u Brand Portal activeert vanuit Cloud Manager, wordt de Brand Portal IMS-org opnieuw ingesteld op `org2-new`. Hoewel de manueel gevormde wolkenconfiguratie op `org1-existing` wordt weergegeven in de ontwerpversie van Experience Manager Assets, maar wordt niet meer gebruikt nadat u Brand Portal hebt geactiveerd via Cloud Manager.
 >
->Als de bestaande Brand Portal-cloudconfiguratie en Experience Manager-middelen [!DNL Cloud Service] -instantie dezelfde IMS org (org1) gebruikt, hoeft u Brand Portal alleen te activeren via Cloud Manager.
+>Als de bestaande Brand Portal-cloudconfiguratie en Experience Manager Assets als een [!DNL Cloud Service] -instantie dezelfde IMS org (org1) gebruikt, hoeft u Brand Portal alleen te activeren via Cloud Manager.
 >
 >Wijzig geen automatisch gegenereerde instellingen.
 
 **Zie ook**:
 
-* [Gebruikers en rollen toevoegen in de as a Cloud Service middelen van Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
+* [Gebruikers en rollen toevoegen in as a Cloud Service Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
 * [Omgevingen beheren in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
@@ -90,9 +90,9 @@ Voer de volgende stappen uit als u niet zeker bent van de Brand Portal-URL:
 
 **Verbinding testen**
 
-Voer de volgende stappen uit om de verbinding tussen uw Experience Manager-middelen als een [!DNL Cloud Service] instance en Brand Portal-huurder:
+Voer de volgende stappen uit om de verbinding tussen uw Experience Manager Assets als een [!DNL Cloud Service] instance en Brand Portal-huurder:
 
-1. Meld u aan bij Experience Manager-middelen.
+1. Meld u aan bij Experience Manager Assets.
 
 1. Van de **Gereedschappen** deelvenster, navigeren naar **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
@@ -117,7 +117,7 @@ Voer de volgende stappen uit om de verbinding tussen uw Experience Manager-midde
 
    ![](assets/test-bpconfig3.png)
 
-1. Om de verbinding tussen de Activa van de Manager van de Ervaring als a te verifiëren [!DNL Cloud Service] en Brand Portal klikt u op de knop **[!UICONTROL Test Connection]** pictogram.
+1. Om de verbinding tussen Experience Manager Assets als a te verifiëren [!DNL Cloud Service] en Brand Portal klikt u op de knop **[!UICONTROL Test Connection]** pictogram.
 
    ![](assets/test-bpconfig4.png)
 
@@ -127,15 +127,15 @@ Voer de volgende stappen uit om de verbinding tussen uw Experience Manager-midde
    >
    >Schakel de distributieagent niet uit, want dit kan de distributie van de assets (die actief zijn in de wachtrij) doen mislukken.
 
-Om de verbinding tussen uw middelen van de Ervaar als a te verifiëren [!DNL Cloud Service] -instantie en Brand Portal-huurder, publiceert u middelen van Experience Manager Assets naar Brand Portal. Als de verbinding is gelukt, is het gepubliceerde element zichtbaar in de Brand Portal-interface.
+Om de verbinding tussen uw Experience Manager Assets als a te verifiëren [!DNL Cloud Service] -exemplaar en Brand Portal-huurder, publiceer een middel van Experience Manager Assets naar Brand Portal. Als de verbinding is gelukt, is het gepubliceerde element zichtbaar in de Brand Portal-interface.
 
 
 U kunt nu het volgende doen:
 
-* [Elementen van Experience Manager-middelen publiceren naar Brand Portal](publish-to-brand-portal.md)
-* [Mappen van Experience Manager-middelen publiceren naar Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [Verzamelingen van Experience Manager-middelen publiceren naar Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Elementen publiceren van Brand Portal naar Experience Manager-middelen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Souring in Brand Portal
+* [Elementen publiceren van Experience Manager Assets naar Brand Portal](publish-to-brand-portal.md)
+* [Mappen publiceren van Experience Manager Assets naar Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [Verzamelingen van Experience Manager Assets naar Brand Portal publiceren](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Elementen publiceren van Brand Portal naar Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Souring in Brand Portal
 * [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Tags publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
@@ -145,7 +145,7 @@ Zie [Brand Portal-documentatie](https://experienceleague.adobe.com/docs/experien
 
 U kunt de logboeken van de distributieagent voor de activa het publiceren werkschema controleren.
 
-Laten we nu een middel van Experience Mananger Assets publiceren naar Brand Portal en de logboeken bekijken.
+Laten we nu een middel van Experience Manager Assets naar Brand Portal publiceren en de logboeken bekijken.
 
 1. Voer de stappen uit (van 1 tot en met 4) die in het dialoogvenster **Verbinding testen** en navigeer aan de pagina van de distributiegagent.
 1. Klikken **[!UICONTROL Logs]** om de logbestanden met de verwerking en fouten weer te geven.
@@ -162,20 +162,20 @@ Bij het publiceren van de asset worden de volgende aanvraag- en antwoordlogboeke
 **Aanvraag van distributieagent**:
 
 * DSTRQ2 (aanvraag 2): de aanvraag voor het publiceren van de asset wordt geactiveerd.
-* DSTRK3 (verzoek 3): Het systeem activeert een andere aanvraag om de map Experience Manager Assets (waarin het element bestaat) te publiceren en repliceert de map in Brand Portal.
+* DSTRK3 (verzoek 3): Het systeem activeert een andere aanvraag om de Experience Manager Assets-map (waarin het element bestaat) te publiceren en repliceert de map in Brand Portal.
 
 **Antwoord van distributieagent**:
 
 * queue-bpdistributionagent0 (DSTRQ2): de asset wordt gepubliceerd naar Brand Portal.
-* queue-bpdistributionagent0 (DSTRQ3): Het systeem dupliceert de map Experience Manager Assets (die het element bevat) in Brand Portal.
+* queue-bpdistributionagent0 (DSTRQ3): Het systeem dupliceert de Experience Manager Assets-map (die het element bevat) in Brand Portal.
 
 In het bovenstaande voorbeeld worden een aanvullende aanvraag en een aanvullend antwoord geactiveerd. Het systeem kan de bovenliggende map (Pad toevoegen) niet vinden in Brand Portal omdat het element voor de eerste keer is gepubliceerd. Daarom heeft het een extra aanvraag gestart om een bovenliggende map met dezelfde naam te maken in Brand Portal waar het element wordt gepubliceerd.
 
 >[!NOTE]
 >
->Er wordt een aanvullend verzoek gegenereerd als de bovenliggende map niet bestaat in Brand Portal of is gewijzigd in Experience Manager Assets.
+>Er wordt een extra aanvraag gegenereerd als de bovenliggende map niet bestaat in Brand Portal of is gewijzigd in Experience Manager Assets.
 
-Samen met de automatiseringsworkflow om Brand Portal op Experience Mananger Assets te activeren [!DNL Cloud Service], bestaat er een andere methode om de middelen van de Manager van de Ervaring als a manueel te vormen [!DNL Cloud Service] met Brand Portal. Adobe Developer Console wordt niet meer aanbevolen.
+Samen met de automatiseringsworkflow om Brand Portal op Experience Manager Assets te activeren [!DNL Cloud Service], bestaat er een andere methode om Experience Manager Assets handmatig als een [!DNL Cloud Service] met Brand Portal. Adobe Developer Console wordt niet meer aanbevolen.
 
 >[!NOTE]
 >
@@ -183,33 +183,33 @@ Samen met de automatiseringsworkflow om Brand Portal op Experience Mananger Asse
 
 ## Handmatige configuratie met Adobe Developer Console {#manual-configuration}
 
-In de volgende sectie wordt beschreven hoe u de middelen van Experience Manager handmatig kunt configureren als een [!DNL Cloud Service] met Brand Portal met Adobe Developer Console.
+In de volgende sectie wordt beschreven hoe u Experience Manager Assets handmatig kunt configureren als een [!DNL Cloud Service] met Brand Portal met Adobe Developer Console.
 
-Eerder, Ervaar Mananger Assets als [!DNL Cloud Service] handmatig geconfigureerd met Brand Portal via Adobe Developer Console, die een Adobe Identity Management Services (IMS)-accounttoken aanschaft voor toestemming van de Brand Portal-huurder. Hiervoor zijn configuraties vereist in zowel Experience Manager-middelen als in Adobe Developer Console.
+Eerder, Experience Manager Assets als [!DNL Cloud Service] handmatig geconfigureerd met Brand Portal via Adobe Developer Console, die een Adobe Identity Management Services (IMS)-accounttoken aanschaft voor toestemming van de Brand Portal-huurder. Hiervoor zijn configuraties nodig in zowel Experience Manager Assets als Adobe Developer Console.
 
-1. Maak in Experience Manager Assets een IMS-account en genereer een openbare sleutel (certificaat).
+1. In Experience Manager Assets maakt u een IMS-account en genereert u een openbare sleutel (certificaat).
 1. Maak in Adobe Developer Console een project voor uw Brand Portal-huurder (organisatie).
 1. Onder het project, vorm API gebruikend de openbare sleutel om een verbinding van de de dienstrekening tot stand te brengen.
 1. Krijg de geloofsbrieven van de de dienstrekening en JSON Web Token (JWT) nuttige ladingsinformatie.
-1. In de Elementen van de Manager van de Ervaring, vorm de rekening IMS gebruikend de geloofsbrieven van de de dienstrekening en JWT lading.
-1. In de Elementen van de Manager van de Ervaring, vorm de de wolkendienst van Brand Portal gebruikend de rekening IMS en het eindpunt van Brand Portal (organisatie URL).
-1. Test uw configuratie door middelen van de Activa van de Manager van de Ervaring aan Brand Portal te publiceren.
+1. In Experience Manager Assets configureert u de IMS-account met de gegevens van de serviceaccount en de JWT-payload.
+1. In Experience Manager Assets configureert u de Brand Portal-cloudservice met behulp van het IMS-account en het Brand Portal-eindpunt (organisatie-URL).
+1. Test uw configuratie door middelen van Experience Manager Assets aan Brand Portal te publiceren.
 
 >[!NOTE]
 >
->An Experience Manager Assets as a [!DNL Cloud Service] instantie wordt slechts met één Brand Portal-huurder geconfigureerd.
+>Een Experience Manager Assets als [!DNL Cloud Service] instantie wordt slechts met één Brand Portal-huurder geconfigureerd.
 
 **Vereisten**
 
-U hebt het volgende nodig om Experience Manager Assets te configureren met Brand Portal:
+U hebt het volgende nodig om Experience Manager Assets met Brand Portal te configureren:
 
-* Een up-to-run Experience Manager-middelen als [!DNL Cloud Service] instance
+* Een Experience Manager Assets als [!DNL Cloud Service] instance
 * URL Brand Portal-gebruiker
 * Een gebruiker met systeembeheerdersbevoegdheden op de IMS-organisatie van de Brand Portal-tenant
 
 ## Configuratie maken {#create-new-configuration}
 
-Voer de volgende stappen in de opgegeven reeks uit om Experience Mananger Assets te configureren met Brand Portal.
+Voer de volgende stappen in de opgegeven reeks uit om Experience Manager Assets met Brand Portal te configureren.
 
 1. [Openbaar certificaat verkrijgen](#public-certificate)
 1. [Verbinding voor serviceaccount (JWT) maken](#createnewintegration)
@@ -218,7 +218,7 @@ Voer de volgende stappen in de opgegeven reeks uit om Experience Mananger Assets
 
 ### IMS-configuratie maken {#create-ims-configuration}
 
-De IMS-configuratie verifieert uw middelen van Experience Manager als een [!DNL Cloud Service] instantie met de Brand Portal-huurder.
+De IMS-configuratie verifieert uw Experience Manager Assets als een [!DNL Cloud Service] instantie met de Brand Portal-huurder.
 
 De IMS-configuratie omvat twee stappen:
 
@@ -229,7 +229,7 @@ De IMS-configuratie omvat twee stappen:
 
 Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd op Adobe Developer Console.
 
-1. Meld u aan bij Experience Manager-middelen.
+1. Meld u aan bij Experience Manager Assets.
 1. Van de **Gereedschappen** deelvenster, navigeren naar **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 1. Klik op de pagina Adobe IMS Configurations op **[!UICONTROL Create]**. Het zal worden omgeleid naar de **[!UICONTROL Adobe IMS Technical Account Configuration]** pagina. Standaard worden de **Certificaat** wordt geopend.
 1. Selecteren **[!UICONTROL Adobe Brand Portal]** in de **[!UICONTROL Cloud Solution]** vervolgkeuzelijst.
@@ -252,7 +252,7 @@ Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd op Adobe Dev
 
 ### Verbinding voor serviceaccount (JWT) maken {#createnewintegration}
 
-In de Console van Adobe Developer, worden de projecten en APIs gevormd op het niveau van de huurder van Brand Portal (organisatie). Als u een API configureert, wordt een JWT-verbinding (Service Account) gemaakt. Er zijn twee methodes om API te vormen, door een zeer belangrijk paar (privé en openbare sleutels) te produceren of door een openbare sleutel te uploaden. Als u Experience Manager-middelen met Brand Portal wilt configureren, moet u een openbare sleutel (certificaat) genereren in Experience Manager-middelen en referenties maken in Adobe Developer Console door de openbare sleutel te uploaden. Deze gegevens zijn vereist voor het configureren van de IMS-account in Experience Manager Assets. Zodra de IMS-account is geconfigureerd, kunt u de Brand Portal-cloudservice configureren in Experience Manager-middelen.
+In de Console van Adobe Developer, worden de projecten en APIs gevormd op het niveau van de huurder van Brand Portal (organisatie). Als u een API configureert, wordt een JWT-verbinding (Service Account) gemaakt. Er zijn twee methodes om API te vormen, door een zeer belangrijk paar (privé en openbare sleutels) te produceren of door een openbare sleutel te uploaden. Als u Experience Manager Assets wilt configureren met Brand Portal, moet u een openbare sleutel (certificaat) genereren in Experience Manager Assets en referenties maken in Adobe Developer Console door de openbare sleutel te uploaden. Deze gegevens zijn vereist om de IMS-account in Experience Manager Assets te configureren. Zodra de IMS-account is geconfigureerd, kunt u de Brand Portal-cloudservice in Experience Manager Assets configureren.
 
 Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en lading van JWT te produceren:
 
@@ -378,7 +378,7 @@ Voer de volgende stappen uit om de IMS-account te configureren.
 
 Voer de volgende stappen uit om de Brand Portal-cloudservice te configureren:
 
-1. Meld u aan bij Experience Manager-middelen.
+1. Meld u aan bij Experience Manager Assets.
 
 1. Van de **Gereedschappen** deelvenster, navigeren naar **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
@@ -394,7 +394,7 @@ Voer de volgende stappen uit om de Brand Portal-cloudservice te configureren:
 
 1. Klik op **[!UICONTROL Save & Close]**. De cloudconfiguratie wordt gemaakt.
 
-   Uw Experience Manager-middelen als [!DNL Cloud Service] -instantie is nu geconfigureerd met de Brand Portal-gebruiker.
+   Je Experience Manager Assets als [!DNL Cloud Service] -instantie is nu geconfigureerd met de Brand Portal-gebruiker.
 
 U kunt de configuratie nu testen door de distributieagent te controleren en elementen naar Brand Portal te publiceren.
 
