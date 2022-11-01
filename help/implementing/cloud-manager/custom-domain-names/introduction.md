@@ -2,9 +2,9 @@
 title: Inleiding tot aangepaste domeinnamen
 description: Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbediening te identificeren aan de hand van een unieke merknaam.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '665'
 ht-degree: 1%
 
 ---
@@ -64,3 +64,7 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 | 5 | DNS-recordstatus controleren | Klant | [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5 bis | Als de DNS-recordstatus mislukt met `DNS status not detected` | Klant | [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5 ter | Als de DNS-recordstatus mislukt met `DNS resolves incorrectly` | Klant | [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+
+>[!TIP]
+>
+>Het instellen van aangepaste domeinnamen met AEM als cloudservice is doorgaans een eenvoudig proces. Nochtans bij gelegenheid kunnen de kwesties van de domeindelegatie voorkomen die 1 tot 2 werkdagen kunnen vergen om op te lossen. Daarom wordt het ten zeerste aanbevolen de domeinen ruim vóór hun live datum te installeren. Zie het document [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer informatie .
