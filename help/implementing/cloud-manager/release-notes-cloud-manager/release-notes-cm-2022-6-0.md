@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2022.6.0 in Adobe Experience Man
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.6.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,6 @@ De releasedatum voor Cloud Manager versie 2022.6.0 in AEM as a Cloud Service is 
 
 ## Wat is er nieuw? {#what-is-new}
 
-* De interface van Cloud Manager is nu beschikbaar [zelfbediening voor het herstellen van inhoud](/help/operations/backup.md) naar een bekende goede staat van de AEM wolkenomgeving.
-   * Dit onderdeel wordt geleidelijk ingevoerd in de weken na de release van 2022.06.0.
 * Een nieuwe welkomstkaart op de landingspagina van Cloud Manager biedt gebruikers snel toegang tot zelfstudies aan boord en voortgangsgegevens voor de huurder.
    * Deze functie wordt in de week na de release van 2022.06.0 geleidelijk ingevoerd.
 * Gebruikers met de vereiste machtigingen hebben toegang tot een nieuwe [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.md) op de landingspagina van Cloud Manager om details te bekijken van rechten waarover de huurder beschikt.

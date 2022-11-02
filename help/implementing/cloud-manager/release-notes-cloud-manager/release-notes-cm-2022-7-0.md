@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2022.7.0 in Adobe Experience Man
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.7.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: c19e4efb-69d6-4915-9e63-c47cd91e941b
-source-git-commit: 1ec1b3f58f7614140d584d3bc7fc113527d6511d
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '173'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ De releasedatum voor Cloud Manager versie 2022.7.0 in AEM as a Cloud Service is 
 ## Wat is er nieuw? {#what-is-new}
 
 * Gebruikers van Cloud Manager kunnen nu nuttige videozelfstudies openen via de **Welkom** op de landingspagina op elk gewenst moment.
-* De popover op de **[Inhoud herstellen](/help/operations/backup.md)** tabblad van de pagina met omgevingsdetails bevat nu een handige lijst met it-opdrachten waarmee de gebruiker wijzigingen lokaal kan bekijken.
 
 ## Opgeloste problemen {#bug-fixes}
 
