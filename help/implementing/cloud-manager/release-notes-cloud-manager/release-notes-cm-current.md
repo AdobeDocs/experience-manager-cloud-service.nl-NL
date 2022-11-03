@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2022.10.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.10.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2022.11.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a873b23f7dac8742820300ef154b94a72e4b8a23
+source-git-commit: b0d57f0ccfb80c8071026a53cab594cfced13497
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 0%
+source-wordcount: '191'
+ht-degree: 1%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2022.10.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2022.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.10.0 in AEM as a Cloud Service.
+Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.11.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,15 +21,14 @@ Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.1
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2022.9.0 in AEM as a Cloud Service is 6 oktober 2022. De volgende release is gepland voor 3 november 2022.
+De releasedatum voor Cloud Manager versie 2022.11.0 in AEM as a Cloud Service is 3 november 2022. De volgende release is gepland voor 29 november 2022.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* De versie van de [Project archetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) gebruikt door Cloud Manager is bijgewerkt naar versie 39.
-* De interface van het licentiedashboard zal gebruikers nu informeren als een programma van Plaatsen met een CDN bovenop AEM as a Cloud Service wordt gevormd.
+* Het licentiedashboard voor de AEM Sites-oplossing geeft nu contractgegevens weer, inclusief of de huurder zich al dan niet binnen zijn abonnement bevindt.
+* Wanneer een milieu verbonden aan een pijpleiding een status heeft die niet de pijpleiding om toelaat worden uitgevoerd, wordt de looppasactie onbruikbaar gemaakt met verklarende tooltip.
+* Er is een verbeterd bericht naar de gebruikersinterface gestuurd toen de **Programma toevoegen** knoop is gehandicapt wegens ontoereikende aanspraken voor de huurder.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* Er is een situatie opgelost waarbij gebruikers met hoofdletters in hun e-mailadres niet kunnen worden toegevoegd aan een nieuwe e-mailaccount in Cloud Manager.
-* De oplossing Schermen wordt nu getoond als er veelvoudige oplossingen in het programma zijn.
-* Een situatie werd bevestigd waar de front-end pijpleiding uitvoering niet zou beginnen wanneer het milieu de status UPDATING had.
+* De feedback tijdens de bewerkingsproductiepijplijn is verbeterd en komt niet vaak voor in een of meer ontbrekende omgevingen.
