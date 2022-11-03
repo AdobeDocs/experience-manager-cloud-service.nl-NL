@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service op Verenigde Shell
 description: AEM as a Cloud Service op Verenigde Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
+source-git-commit: 53e22737e62835872e47ac07530078c3d1dfcf31
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '443'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 1%
 
 ## Overzicht {#overview}
 
-AEM as a Cloud Service is geïntegreerd met Verenigde Shell om de gebruikerservaring te verbeteren en het met alle andere toepassingen van Experience Cloud te verenigen. De invloed van deze integratie is zichtbaar in de bovenste header van de toepassing, zoals hieronder wordt weergegeven.
+AEM as a Cloud Service (de Dienst van de Auteur) is geïntegreerd met Verenigde Shell om de gebruikerservaring te verbeteren en het met alle andere toepassingen van Experience Cloud te verenigen. De invloed van deze integratie is zichtbaar in de bovenste header van de toepassing, zoals hieronder wordt weergegeven.
 
-![afbeelding](/help/overview/assets/unifiedshell1.png)
+![afbeelding](/help/overview/assets/unifiedshell_header.png)
 
 De voordelen hiervan zijn:
 
@@ -58,6 +58,13 @@ Als u het thema donker wilt weergeven, klikt u op het profielpictogram. Er wordt
 >Het donkere thema is op Verenigde Shell (de hoogste bar) slechts van toepassing.
 
 ![afbeelding](/help/overview/assets/unifiedshell4.png)
+
+## Identificatie van de AEM as a Cloud Service omgeving {#identify-aemaacs-environment}
+
+AEM as a Cloud Service biedt drie typen omgevingen: Productie, werkgebied en ontwikkeling. Zie [Omgevingstypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) voor meer informatie . Met deze integratie met Verenigde Shell, wordt het type van milieu dat de gebruiker op de dienst van de Auteur wordt geregistreerd getoond op top-header via een etiket zoals hieronder getoond.
+
+![afbeelding](/help/overview/assets/unifiedshell_header_label.png)
+
 
 ## Toegang tot de AEM Inbox {#accessing-the-aem-inbox}
 
