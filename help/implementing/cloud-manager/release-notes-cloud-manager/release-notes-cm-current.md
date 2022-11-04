@@ -3,7 +3,7 @@ title: Opmerkingen bij de release Cloud Manager 2022.11.0 in Adobe Experience Ma
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b0d57f0ccfb80c8071026a53cab594cfced13497
+source-git-commit: 0b60b0954c98c5d10227b4db002e3c70f47b6901
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 1%
@@ -27,7 +27,7 @@ De releasedatum voor Cloud Manager versie 2022.11.0 in AEM as a Cloud Service is
 
 * Het licentiedashboard voor de AEM Sites-oplossing geeft nu contractgegevens weer, inclusief of de huurder zich al dan niet binnen zijn abonnement bevindt.
 * Wanneer een milieu verbonden aan een pijpleiding een status heeft die niet de pijpleiding om toelaat worden uitgevoerd, wordt de looppasactie onbruikbaar gemaakt met verklarende tooltip.
-* Er is een verbeterd bericht naar de gebruikersinterface gestuurd toen de **Programma toevoegen** knoop is gehandicapt wegens ontoereikende aanspraken voor de huurder.
+* Een verbeterd bericht werd toegevoegd aan UI toen **Programma toevoegen** knoop is gehandicapt wegens ontoereikende aanspraken voor de huurder.
 
 ## Opgeloste problemen {#bug-fixes}
 
