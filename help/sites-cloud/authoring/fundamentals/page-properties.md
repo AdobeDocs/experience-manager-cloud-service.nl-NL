@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
+source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
 workflow-type: tm+mt
-source-wordcount: '1987'
+source-wordcount: '1975'
 ht-degree: 5%
 
 ---
@@ -306,7 +306,7 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
    * U kunt de waarden in de beschikbare velden bijwerken.
       * De nieuwe waarden worden toegepast op alle geselecteerde pagina&#39;s wanneer u **Gereed**.
       * Wanneer het veld meerdere waarden heeft (bijvoorbeeld Codes), kunt u een nieuwe waarde toevoegen of een gemeenschappelijke waarde verwijderen.
-   * Velden die veel voorkomen, maar verschillende waarden op de verschillende pagina&#39;s hebben, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>`. Bij het bewerken van dergelijke velden moet de nodige aandacht worden besteed om gegevensverlies te voorkomen.
+   * Velden die veel voorkomen, maar verschillende waarden op de verschillende pagina&#39;s hebben, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>`.
 
 >[!NOTE]
 >
