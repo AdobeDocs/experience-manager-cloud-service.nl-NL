@@ -2,9 +2,9 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
+source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '916'
 ht-degree: 12%
 
 ---
@@ -54,7 +54,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. U kunt dan de fase van de Ingestie van de de lijstmening van de Banen van de Ingestie controleren
+1. U kunt dan de fase van de Opname van de de lijstmening van Banen van de Opname controleren en het de actiemenu gebruiken van de opname om het logboek te bekijken aangezien de opname vordert.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -124,4 +124,4 @@ U kunt een opname alleen afschoppen in de doelomgeving als u tot de lokale omgev
 
 ## Volgende functies {#whats-next}
 
-Als u Ingesterende inhoud hebt geleerd in Doel in het gereedschap Inhoud overbrengen, kunt u logbestanden weergeven na elke stap (extractie en opname) en op fouten zoeken. Zie [Logboeken voor een migratieset weergeven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) voor meer informatie.
+Nadat u Ingesting Content in Target hebt voltooid, kunt u logboeken van elke stap (extractie en opname) weergeven en op fouten zoeken. Zie [Logboeken voor een migratieset weergeven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) voor meer informatie.
