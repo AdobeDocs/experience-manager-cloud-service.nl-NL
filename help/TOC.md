@@ -8,9 +8,9 @@ user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een over
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d310b48d3abe8ffba2f25a27899cd042a186db84
+source-git-commit: 50b2859dc2a8a83a007bfef30d5c0959e92aa212
 workflow-type: tm+mt
-source-wordcount: '3739'
+source-wordcount: '3759'
 ht-degree: 22%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 22%
    + Algemene opmerkingen bij de release van AEMaaCS {#release-notes}
       + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [Opmerkingen bij de release 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
          + [Opmerkingen bij de release 2022.7.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
          + [Opmerkingen bij de release 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
          + [Opmerkingen bij de release 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
@@ -388,6 +389,7 @@ ht-degree: 22%
       + [Watermerkelementen](/help/assets/watermark-assets.md)
       + [Elementen verwerken met [!DNL Creative Cloud] API&#39;s](/help/assets/cc-api-integration.md)
       + [Kleurlabels voor afbeeldingen](/help/assets/color-tag-images.md)
+      + [PDF-documenten beheren](/help/assets/manage-pdf-documents.md)
    + Configureren, beheren en uitbreiden [!DNL Assets] {#admin}
       + [Referenties van ontwikkelaarsdocumenten en -API&#39;s](/help/assets/developer-reference-material-apis.md)
       + [Metadataschema van map](/help/assets/folder-metadata-schema.md)
@@ -501,6 +503,7 @@ ht-degree: 22%
       + [Geconverteerde formulieren controleren en corrigeren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
    + Een adaptief formulier maken en publiceren {#create-an-adaptive-form}
       + Voordat u begint {#before-you-start}
+         + [Inleiding tot het ontwerpen van een adaptieve Forms](/help/forms/introduction-forms-authoring.md)
          + [Een sjabloon maken](/help/forms/template-editor.md)
          + [Een thema maken](/help/forms/themes.md)
          + [Verbind uw gegevensbronnen met Cloud Service](/help/forms/data-integration.md)
@@ -535,19 +538,21 @@ ht-degree: 22%
       + De toegankelijkheid van een adaptief formulier verbeteren {#accessible-adaptive-forms}
          + [Een toegankelijk adaptief formulier maken](/help/forms/creating-accessible-adaptive-forms.md)
       + [Forms Portal configureren](/help/forms/configure-forms-portal.md)
-   + Een formulier integreren met een of meer gegevensbronnen {#use-form-data-model}
-      + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
-      + [Configureren [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [Configureren [!DNL Azure] opslag](/help/forms/configure-azure-storage.md)
-      + [Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
-      + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
+   + Integreren {#integrate}
+      + Een formulier integreren met een of meer gegevensbronnen {#use-form-data-model}
+         + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
+         + [Configureren [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+         + [Configureren [!DNL Azure] opslag](/help/forms/configure-azure-storage.md)
+         + [Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
+         + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
       + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
       + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
-   + [Integreren met Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-   + [Integreren met DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-   + [Integreren met sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-   + [Integreren met Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-   + [Een adaptief formulier integreren met Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [Integreren met Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+      + [Integreren met DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
+      + [Integreren met sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+      + [Integreren met Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+      + [Een adaptief formulier integreren met Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [Adaptieve Forms insluiten in AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
    + Workflows maken en gebruiken {#create-form-centric-workflows}
       + [Forms-centric stappen gebruiken in een workflow + stapsgewijze verwijzing](/help/forms/aem-forms-workflow-step-reference.md)
       + [Variabelen gebruiken in een Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)

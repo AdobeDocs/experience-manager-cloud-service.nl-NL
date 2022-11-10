@@ -2,9 +2,9 @@
 title: Hoe maakt u een adaptieve formuliersjabloon?
 description: Maak adaptieve formuliersjablonen om de basisstructuur en eerste inhoud te definiëren met de Sjablooneditor.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1757'
 ht-degree: 0%
 
 ---
@@ -153,9 +153,17 @@ Wanneer u een adaptief formulier maakt, wordt de sjabloon weergegeven wanneer u 
 
 Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt dat is gemaakt met een aangepaste sjabloon, wordt de sjabloon niet gedownload. Wanneer u het font importeert op een andere [!DNL AEM Forms] wordt geïmporteerd zonder de sjabloon. Als een formulier wordt geïmporteerd maar de sjabloon ervan niet beschikbaar is, wordt het formulier niet gegenereerd. U kunt de aangepaste sjabloon verpakken vanuit `/conf` node in `https://<server>:<port>/crx/packmgr`en deze in de [!DNL AEM Forms] -instantie waarin u het formulier wilt uploaden. U kunt ook [Creeer een malplaatje gebruikend AEM Archeype en stel het in uw instantie van Cloud Services op](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
+>[!NOTE]
+>
+> * U kunt een [!UICONTROL Form Data Model Schema] naar een sjabloon voor een adaptief formulier in een sjablooneditor. Zie [Een adaptief formulier maken](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) voor meer informatie .
+> * U kunt ook de [!UICONTROL Document of Record] rechtstreeks vanuit de editor voor adaptieve formulieren of de sjablooneditor voor adaptieve formulieren. Zie voor meer informatie [Document met record genereren voor adaptieve Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
 ## Een adaptief formulier maken met de sjabloon {#creating-an-adaptive-form-using-the-template}
 
 Nadat u een sjabloon hebt gemaakt en ingeschakeld, is deze beschikbaar in Formulierbeheer wanneer u een adaptief formulier maakt. Als u een sjabloon wilt gebruiken en een adaptief formulier wilt maken, raadpleegt u [Een adaptief formulier maken](creating-adaptive-form.md).
+
 
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}

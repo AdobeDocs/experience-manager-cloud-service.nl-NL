@@ -4,9 +4,9 @@ description: Voeg uw digitale middelen toe aan [!DNL Adobe Experience Manager] a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
+source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
 workflow-type: tm+mt
-source-wordcount: '2956'
+source-wordcount: '2991'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Terwijl u elk binair bestand kunt uploaden en beheren in [!DNL Experience Manage
 
 Ook kunt u ervoor kiezen om extra verwerkingen uit te voeren voor de geüploade elementen. U kunt een aantal profielen voor middelenverwerking configureren in de map waarin elementen worden geüpload om specifieke metagegevens, uitvoeringen of services voor beeldverwerking toe te voegen. Zie [proceselementen bij uploaden](#process-when-uploaded).
 
-[!DNL Assets] biedt de volgende uploadmethoden. Adobe raadt u aan om uw gebruiksscenario en toepasselijkheid van een uploadoptie te begrijpen voordat u deze gebruikt.
+[!DNL Assets] Geef de volgende uploadmethoden op. Adobe raadt u aan om uw gebruiksscenario en toepasselijkheid van een uploadoptie te begrijpen voordat u deze gebruikt.
 
 | Upload, methode | Wanneer gebruiken? | Primaire persoon |
 |---------------------|----------------|-----------------|
@@ -109,7 +109,7 @@ U kunt een element uploaden met hetzelfde pad (dezelfde naam en dezelfde locatie
    >
    >De optie om elementen te vervangen is niet beschikbaar als het element is vergrendeld of uitgecheckt.
 
-* Een andere versie maken: Er wordt een nieuwe versie van het bestaande middel gemaakt in de repository. U kunt de twee versies weergeven in het dialoogvenster [!UICONTROL Timeline] en kan desgewenst terugkeren naar de vorige bestaande versie.
+* Een andere versie maken: Er wordt een nieuwe versie van het bestaande middel gemaakt in de repository. U kunt de twee versies weergeven in het dialoogvenster [!UICONTROL Timeline] en kan zo nodig terugkeren naar de vorige bestaande versie.
 * Beide behouden: Als u ervoor kiest beide elementen te behouden, wordt de naam van het nieuwe element gewijzigd.
 
 Het dubbele element behouden in [!DNL Assets], klikt u op **[!UICONTROL Keep]**. Als u het geüploade dubbele element wilt verwijderen, klikt u op **[!UICONTROL Delete]**.
@@ -118,7 +118,7 @@ Het dubbele element behouden in [!DNL Assets], klikt u op **[!UICONTROL Keep]**.
 
 [!DNL Experience Manager Assets] Hiermee voorkomt u dat elementen met de verboden tekens in de bestandsnaam worden geüpload. Als u een element probeert te uploaden met bestandsnamen die een niet-toegestaan teken of meer bevatten, [!DNL Assets] geeft een waarschuwingsbericht weer en stopt de upload totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
-Als u specifieke conventies voor de naamgeving van bestanden voor uw organisatie wilt aanpassen, kunt u de opdracht [!UICONTROL Upload Assets] kunt u lange namen opgeven voor de bestanden die u uploadt. De volgende tekens (lijst met door spaties gescheiden tekens) worden niet ondersteund:
+Als u de specifieke naamgevingsconventies voor uw organisatie wilt aanpassen, [!UICONTROL Upload Assets] kunt u lange namen opgeven voor de bestanden die u uploadt. De volgende tekens (lijst met door spaties gescheiden tekens) worden niet ondersteund:
 
 * Ongeldige tekens voor elementnaam: `* / : [ \\ ] | # % { } ? &`
 * Ongeldige tekens voor naam van elementmap: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -139,7 +139,7 @@ Als u een groter aantal bestanden wilt uploaden, gebruikt u een van de volgende 
 
 ### Gereedschap Asset Bulk importeren {#asset-bulk-ingestor}
 
-Het hulpmiddel wordt verstrekt slechts aan de beheerdersgroep om voor grootschalige opname van activa van Azure of S3 datastores te gebruiken. Bekijk een videodemo van de configuratie en opname.
+Het hulpmiddel wordt verstrekt slechts aan de groep van beheerders voor grootschalige opname van activa van Azure of S3 datastores te gebruiken. Bekijk een videodemo van de configuratie en opname.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
@@ -171,6 +171,8 @@ Voer de volgende stappen uit om het gereedschap Bulk importeren te configureren:
 1. Selecteer het gegevenstype van de gegevensbron in het menu **[!UICONTROL Import Source]** vervolgkeuzelijst.
 
 1. Geef de waarden op om een verbinding met de gegevensbron te maken. Als u bijvoorbeeld **Azure Blob Storage** als gegevensbron, specificeer de waarden voor Azure opslagrekening, Azure blob container, en Azure toegangssleutel.
+
+1. Selecteer de vereiste authentificatiemodus van de drop-down lijst. **Azure Access Key** volledige toegang biedt tot de Azure-opslagaccount, terwijl **Azure SAS Token** staat de beheerder toe om de mogelijkheden van het teken te beperken gebruikend toestemmingen en vervalsingsbeleid.
 
 1. Geef de naam op van de hoofdmap die elementen bevat in de gegevensbron in het dialoogvenster **[!UICONTROL Source Folder]** veld.
 
@@ -220,7 +222,7 @@ Selecteer de configuratie en klik op **[!UICONTROL Dry Run]** om een testlooppas
 
 Wanneer u elementen of mappen bulksgewijs importeert, [!DNL Experience Manager Assets] importeert de gehele structuur van wat er in de invoerbron bestaat. [!DNL Experience Manager] volgt de ingebouwde regels voor speciale tekens in de naam van het element en de map. Deze bestandsnamen moeten daarom worden ontsmet. Voor zowel de mapnaam als de elementnaam blijft de door de gebruiker gedefinieerde titel ongewijzigd en wordt deze opgeslagen in `jcr:title`.
 
-Tijdens de bulkinvoer [!DNL Experience Manager] zoekt u naar de bestaande mappen om te voorkomen dat de elementen en mappen opnieuw worden geïmporteerd, en controleert u ook de ontsmettingsregels die zijn toegepast in de bovenliggende map waar het importeren plaatsvindt. Als de ontsmettingsregels worden toegepast in de bovenliggende map, worden dezelfde regels toegepast op de importbron. Voor nieuwe importbewerkingen gelden de volgende saneringsregels voor het beheer van de bestandsnamen van elementen en mappen.
+Tijdens de bulkinvoer [!DNL Experience Manager] zoekt u naar de bestaande mappen om te voorkomen dat de elementen en mappen opnieuw worden geïmporteerd, en controleert u ook de ontsmettingsregels die zijn toegepast in de bovenliggende map waar het importeren plaatsvindt. Als de ontsmettingsregels worden toegepast in de bovenliggende map, worden dezelfde regels toegepast op de importbron. Voor nieuwe importbewerkingen worden de volgende ontsmettingsregels toegepast om de bestandsnamen van elementen en mappen te beheren.
 
 **Namen die niet zijn toegestaan tijdens bulkimport**
 

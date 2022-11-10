@@ -3,9 +3,9 @@ title: Een adaptief formulier insluiten in AEM Sites-pagina
 seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: U kunt de AEM Forms Container-component gebruiken om adaptieve Forms toe te voegen aan of in te sluiten op een AEM Sites-pagina om een formulier in te vullen en te verzenden zonder de AEM Sites-pagina's te verlaten.
 feature: Adaptive Forms
-source-git-commit: dac38b2a90b2a1969e5332b8a658e8f1e0e5eccb
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,21 @@ Met AEM Forms kunnen ontwikkelaars van formulieren adaptieve formulieren naadloo
 
 Op de AEM Sites-pagina kunt u een adaptief formulier toevoegen met:
 
-* **[AEM Forms Container-component](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+* **AEM Forms Container-component**
 AEM Forms biedt een component die u aan uw sitepagina&#39;s kunt toevoegen. Met de AEM Forms Container-component kunt u een adaptief formulier insluiten.
 
-* **[Middelenbrowser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+* **Middelenbrowser**
 Alle formulieren zijn beschikbaar onder Elementen. U kunt het formulier slepen en neerzetten als middel op de pagina.
 
 ## Vereisten {#prerequisites}
 
-Als u een adaptief formulier wilt insluiten in een AEM Sites-pagina waarop een bewerkbare sjabloon wordt gebruikt, moet u ervoor zorgen dat de component AEM formulier is geconfigureerd als een toegestane component in de gekoppelde sjabloon. Zie voor meer informatie **Beleid en eigenschappen (container met layout)** sectie in [Paginasjablonen maken](/help/sites-authoring/templates.md).
+Als u een adaptief formulier wilt insluiten in een AEM Sites-pagina waarop een bewerkbare sjabloon wordt gebruikt, moet u ervoor zorgen dat de component AEM formulier is geconfigureerd als een toegestane component in de gekoppelde sjabloon.
 
-In het geval van een pagina van Plaatsen die een statisch malplaatje gebruikt, moet u het in het paragraafsysteem van de plaatspagina vormen. Zie [Componenten configureren in ontwerpmodus](/help/sites-authoring/default-components-designmode.md) voor meer informatie .
+In geval van **AEM Forms Container-component** is niet zichtbaar in de **Deelvenster Componentbrowser** van AEM sitepagina voert u de volgende stappen uit, zoals in de video wordt geïllustreerd.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410544)
+
+Als de pagina van Plaatsen een statisch malplaatje gebruikt, moet u het in het paragraafsysteem van de plaatspagina vormen.
 
 ## Een adaptief formulier insluiten {#af-component}
 
@@ -48,21 +52,31 @@ Een adaptief formulier insluiten met AEM Forms Container-component:
 1. Tik op de ingesloten AEM Forms Container-component op de sitepagina en tik vervolgens op ![settings_icon](assets/settings_icon.png) op de actiebalk. De **[!UICONTROL Edit AEM Forms Container]** wordt geopend.
 1. Geef het volgende op in het dialoogvenster AEM Forms-container bewerken.
 
-   <!-- * **Asset Type:** Select the type of asset to embed. The options are Adaptive Form -->
+   **Type element:** Selecteer het type element dat u wilt insluiten.
    * **Middelpad**: Blader naar het adaptieve formulier dat u wilt insluiten en selecteer dit. Deze wordt automatisch ingevuld als u deze uit de middelenbrowser hebt verwijderd.
    * **Verzending na verzending** : Selecteer de actie die moet worden geactiveerd bij het verzenden van het formulier. U kunt ervoor kiezen om een bedankbericht of een pagina voor bedankt weer te geven.
+      * Tonen
 
       * **Bericht van dank**: Schrijf een bericht met de teksteditor Rich die moet worden weergegeven bij het verzenden van formulieren. Deze optie is alleen beschikbaar als u een bedankbericht wilt weergeven.
       * **Dankbriefje**: Blader en selecteer de pagina die u wilt weergeven bij het verzenden van het formulier. Deze optie is alleen beschikbaar wanneer u een pagina voor bedankt weergeeft.
          * **Doorverwijzen naar pagina voor bedankt**: Schakel deze optie in om de pagina met het ingesloten adaptieve formulier te vervangen door de pagina Hartelijk dank. Anders vervangt de pagina Bedankt het Adaptief formulier in de AEM Forms-container, zonder de onderliggende sites op de pagina te vernieuwen. Deze optie is alleen beschikbaar wanneer u een pagina voor bedankt weergeeft.
    * **Paginataal gebruiken**: Gebruik de lokale versie van de AEM Sites-pagina in plaats van de landinstelling Adaptief formulier.
    * **Focus op formulier instellen**: Selecteer deze optie om de focus in te stellen op het eerste veld van het adaptieve formulier.
-
    * **Thema**: Selecteer een thema waarmee u opmaak definieert voor componenten van uw adaptieve formulier. Stijlen omvat vormgevingseigenschappen zoals letterstijl, achtergrondkleur, afmetingen en uitlijning.
+   * **Het formulier bedekt de volledige breedte van het kader**: Als deze optie is ingeschakeld, wordt iframe niet gebruikt om het formulier te genereren.
    * **Hoogte**: Geef de hoogte van de container op. Laat deze leeg om de grootte van de container automatisch te wijzigen.
    * **CSS-clientbibliotheek**: Geef het pad naar een CSS-clientbibliotheek op.
 
 1. Sla de instellingen op. Het adaptieve formulier is nu ingesloten in de pagina.
+
+Met AEM site kunt u ook direct een adaptief formulier maken met de containercomponent voor AEM formulieren. Voer de stappen uit om een adaptief formulier te maken met **AEM Forms-containercomponent** op AEM pagina met sites:
+1. Open de pagina AEM sites in de bewerkingsmodus waarin u een adaptief formulier wilt insluiten.
+1. Sleep vanuit het deelvenster Componentbrowser de AEM Forms Container-component naar de pagina.
+1. Klik op de knop **Plus** en wordt u omgeleid naar de wizard Formulier maken.
+
+   ![AEM component Form Container](/help/forms/assets/aemformcontainer.png)
+
+1. Wanneer een adaptief formulier wordt gemaakt, wordt u omgeleid naar de pagina AEM sites en wordt het gemaakte formulier weergegeven op de pagina AEM sites.
 
 ## Ingesloten adaptief formulier publiceren {#publishing-embedded-adaptive-form}
 

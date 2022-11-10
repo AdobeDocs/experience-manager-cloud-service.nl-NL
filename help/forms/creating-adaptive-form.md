@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: bcd9f3cfe6c22a6db51a9e6f96576bb8cdde7d0c
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -60,10 +60,15 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
    Tik in de linkerbovenhoek nadat u bent aangemeld op **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 
-1. Tik op **[!UICONTROL Create]**  > **[!UICONTROL Adaptive Forms]**. De wizard opent.s
+1. Tik op **[!UICONTROL Create]**  > **[!UICONTROL Adaptive Forms]**. De wizard wordt geopend.
 1. Selecteer een sjabloon op het tabblad Bron:
 
    * Wanneer u een bewerkbare sjabloon selecteert, wordt de actie voor het thema en het verzenden die in de sjabloon is opgegeven automatisch geselecteerd en wordt de opdracht **[!UICONTROL Create]** wordt ingeschakeld. Je kunt naar de **[!UICONTROL Style]** of **[!UICONTROL Submission]** tabs om een ander thema te selecteren of actie te verzenden. Als de geselecteerde bewerkbare sjabloon geen thema opgeeft, blijft de knop Maken uitgeschakeld. Je kunt naar de **[!UICONTROL Styles]** om handmatig een thema te selecteren.
+
+      >[!NOTE]
+      >
+      > U kunt ook [!UICONTROL Document of Record] sjabloon met een Apadtive Form Editor. Zie voor meer informatie [Document met ondersteuning voor records in de Adaptive Form Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
    * Wanneer u een statische sjabloon selecteert, zijn de opties voor gegevens, stijl, verzending, levering en voorvertoning niet beschikbaar. Als u een nieuw adaptief formulier maakt, is het raadzaam een bewerkbare sjabloon te gebruiken.
 
 1. Selecteer een thema op het tabblad Stijl:
@@ -159,3 +164,15 @@ U kunt het formuliermodel wijzigen voor een adaptief formulier (op JSON gebaseer
    * Als het adaptieve formulier is gebaseerd op een formuliermodel, kunt u een ander formulier kiezen <!-- form template, --> XML- of JSON-schema of Formuliergegevensmodel voor hetzelfde formuliermodel.
 
 1. Tikken **[!UICONTROL Save]** om de eigenschappen op te slaan.
+
+U kunt ook de eigenschappen van het formuliermodel wijzigen in de editor voor adaptieve formulieren of de sjablooneditor voor adaptieve formulieren.
+
+1. Selecteer **[!UICONTROL Adaptive Form container (Root)]** component.
+1. Klikken ![Pictogram configureren](/help/forms/assets/configure-icon.svg) pictogram om het **[!UICONTROL Properties]** van de container Adaptief formulier.
+1. Selecteer **[!UICONTROL Data Model]** en voer een van de volgende handelingen uit:
+
+   * Als het adaptieve formulier geen formuliermodel heeft, kunt u een formuliermodel kiezen en dienovereenkomstig <!-- a form template, --> XML- of JSON-schema of formuliergegevensmodel.
+   * Als het adaptieve formulier is gebaseerd op een formuliermodel, kunt u het formuliermodel niet wijzigen. U kunt een andere optie kiezen <!-- form template, --> XML- of JSON-schema of Formuliergegevensmodel voor hetzelfde formuliermodel als van toepassing.
+1. Tikken ![Opslaan](/help/forms/assets/check-button.png) om de eigenschappen op te slaan.
+
+![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)

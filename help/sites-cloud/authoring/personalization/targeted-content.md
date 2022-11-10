@@ -2,9 +2,9 @@
 title: Authoring van getargete content met targetingmodus
 description: De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen tot stand te brengen
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
 workflow-type: tm+mt
-source-wordcount: '5342'
+source-wordcount: '5414'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,25 @@ Door de auteur opgegeven inhoud met de doelmodus van AEM. De gerichte wijze en d
 * Simuleer de gebruikerservaring.
 * Voor meer aanpassing, vorm de component van het Doel.
 
-U kunt AEM of Adobe Target gebruiken als de doelengine (u moet over een geldige Adobe Target-account beschikken om Adobe Target te kunnen gebruiken). Als u Adobe Target gebruikt, moet u eerst de integratie configureren. Zie de instructies voor integratie met Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
+>[!NOTE]
+>
+>De doelmodus is zowel beschikbaar in de Pagina-editor als in de Experience Fragment Editor.
+>
+>De volgende documentatie is op beide van toepassing (aangezien zij allebei op de zelfde basis) werken hoewel het voor de Redacteur van de Pagina wordt geschreven.
+
+>[!CAUTION]
+>
+>Bij het richten in de Redacteur van de Pagina slechts de componenten van het Fragment van de Ervaring kunnen worden gericht.
+>
+>Andere componenttypen kunnen met de opdracht **Omzetten in ervaring met fragmentvariatie** op de werkbalk van de component.
+
+<!--
+>Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
+>
+>![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+-->
+
+U kunt AEM of Adobe Target gebruiken als de doelengine (u moet over een geldige Adobe Target-account beschikken om Adobe Target te kunnen gebruiken). Als u Adobe Target gebruikt, moet u eerst de integratie configureren. Zie de [instructies voor integratie met Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![Inhoud als doel instellen](../assets/targeted-content.png)
 

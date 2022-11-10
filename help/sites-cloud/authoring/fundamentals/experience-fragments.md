@@ -2,10 +2,10 @@
 title: Ervaringsfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 456b754fad3dc2d8f684f344b69d57d47b823b03
+source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 6%
+source-wordcount: '1971'
+ht-degree: 5%
 
 ---
 
@@ -308,6 +308,62 @@ Als u een Experience Fragment bewerkt, worden de beschikbare bouwstenen weergege
 
 ![Bouwblokken selecteren](/help/sites-cloud/authoring/assets/xf-14.png)
 
+## Personalisatie op uw ervaringsfragment {#personalization-experience-fragment}
+
+Als u het fragment personaliseert op uw ervaringsfragment, kunt u als een markeerteken één keer een doelpubliek voor het ervaringsfragment definiëren en het fragment vervolgens op een willekeurige pagina opnieuw gebruiken. Dit:
+
+* hoeft u niet telkens wanneer het fragment wordt gebruikt, de vereiste variaties voor elk publiek op te geven
+* handhaaft stijl over de aanbiedingen
+
+U kunt een Experience Fragment maken met meerdere componenten die binnen dit ene fragment zijn gegroepeerd. U kunt ook variaties van het fragment maken voor elk specifiek publiekssegment en deze fragmenten van de Ervaring vervolgens opnieuw gebruiken voor alle vereiste kanalen.
+
+Personalisatie wordt bereikt door het definiëren van de **Personalisatie** eigenschappen op het fragment of de variatie van de Ervaring, of de omslag die de fragmenten bevat; dit betekent dat overerving personalisatie-eigenschappen kan overschrijven.
+
+Als u deze eigenschappen configureert, wordt de optie **Doelstelling** in de Experience Fragment-editor.
+
+### Specialisatie definiëren voor uw ervaringsfragment {#defining-personalization-experience-fragment}
+
+U past het fragment als volgt aan:
+
+1. Ga naar de gewenste locatie in het dialoogvenster **Ervaar fragmenten** console.
+
+1. Selecteer een map of fragment, en **Eigenschappen** op de werkbalk.
+
+   >[!NOTE]
+   >
+   >De eigenschappen van de verpersoonlijking die op een omslag worden bepaald zullen door alle kindomslagen neer door de subboom, en de Fragmenten van de Ervaring (en variaties) binnen die subboom worden geërft. Ze kunnen worden overschreven door de overerving te verbreken.
+
+1. Open de **Personalisatie** om uw instellingen te definiëren en op te slaan. Bijvoorbeeld in een map:
+
+   ![Experience Fragment - Persoonlijke eigenschappen](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
+
+   >[!CAUTION]
+   >
+   >Wanneer een fragment is ingesloten op een sitepagina, en **Personalisatie** is gevormd, dan slechts zal de verpersoonlijkingsversie van de pagina bij pagina worden gebruikt die tijd teruggeeft.
+   >
+   >Als u wilt dat de doelbewerkingen op de componenten in een fragment worden uitgevoerd, moet aan de volgende voorwaarden worden voldaan:
+   >
+   >De **ContextHub-pad** geselecteerd in het dialoogvenster **Personalisatie** tab:
+   >
+   >* hetzelfde pad als het pad dat is geconfigureerd voor de pagina waarop het fragment wordt gerenderd
+      >Of:
+   >* een weg die een ondergroep van de opslag bevat die in ContextHub wordt bepaald die voor de pagina wordt gevormd
+
+   >
+   > 
+De **Segmentpad** geselecteerd in het dialoogvenster **Personalisatie** tab:
+   * hetzelfde pad als het pad dat is geconfigureerd voor de pagina waarop het fragment wordt gerenderd, of
+   * een pad dat een subset bevat van de segmenten die voor de pagina zijn geconfigureerd
+
+
+### Doelstelling definiëren voor uw ervaringsfragment {#defining-targeting-experience-fragment}
+
+Zodra de verpersoonlijkingseigenschappen zijn gevormd, zal de het richten wijze beschikbaar zijn wanneer het fragment voor het uitgeven wordt geopend.
+
+![Experience Fragment Editor - Targeingmodus](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
+
+Deze modus werkt op dezelfde manier als bij paginabewerking. Zie [Doelmodus voor de Pagina-editor](/help/sites-cloud/authoring/personalization/targeted-content.md) voor meer informatie .
+
 ## Details van uw ervaringsfragment {#details-of-your-experience-fragment}
 
 Details van het fragment kunt u zien:
@@ -324,10 +380,8 @@ Details worden getoond in alle weergaven van de console voor **Experience-fragme
    De eigenschappen zijn beschikbaar op verschillende tabbladen:
 
    >[!CAUTION]
-   >
-   >Deze tabbladen worden weergegeven wanneer u **Eigenschappen** van de console van de Fragmenten van de Ervaring.
-   >
-   >Als u **Eigenschappen opent** tijdens het bewerken van een Experience-fragment, worden de juiste [Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) weergegeven.
+   Deze tabbladen worden weergegeven wanneer u **Eigenschappen** van de console van de Fragmenten van de Ervaring.
+   Als u **Eigenschappen opent** tijdens het bewerken van een Experience-fragment, worden de juiste [Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) weergegeven.
 
    ![Ervaar fragmenteigenschappen](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -356,8 +410,7 @@ Details worden getoond in alle weergaven van de console voor **Experience-fragme
 Met de `.plain.` in de URL hebt, kunt u vanuit de browser toegang krijgen tot de uitvoering van normale HTML.
 
 >[!NOTE]
->
->Hoewel dit direct beschikbaar is in de browser, [het primaire doel is om andere toepassingen (bijvoorbeeld webapps van derden, aangepaste mobiele implementaties) rechtstreeks toegang te geven tot de inhoud van het Experience Fragment, waarbij alleen de URL wordt gebruikt](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Hoewel dit direct beschikbaar is in de browser, [het primaire doel is om andere toepassingen (bijvoorbeeld webapps van derden, aangepaste mobiele implementaties) rechtstreeks toegang te geven tot de inhoud van het Experience Fragment, waarbij alleen de URL wordt gebruikt](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Fragmenten voor publicatie-ervaring {#publishing-experience-fragments}
 

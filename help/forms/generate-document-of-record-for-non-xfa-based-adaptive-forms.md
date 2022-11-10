@@ -2,9 +2,9 @@
 title: Document met record genereren voor adaptieve Forms
 description: Verklaart hoe u een malplaatje voor een Document van Verslag (DoR) voor Aangepast Forms kunt produceren.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '3584'
+source-wordcount: '3960'
 ht-degree: 1%
 
 ---
@@ -330,27 +330,35 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
 1. Selecteer een deelvenster (hoofddeelvenster) in het document of Record en tik vervolgens op ![vormen](assets/configure.png).
 1. Tikken ![dortab](assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
 1. Selecteer de standaardsjabloon of een aangepaste sjabloon voor het weergeven van het Document of Record. Als u de standaardsjabloon selecteert, wordt een miniatuurvoorvertoning van het Document of Record weergegeven onder de vervolgkeuzelijst Sjabloon.
+1. Afhankelijk van het feit of u een standaardsjabloon of een aangepaste sjabloon selecteert, worden enkele of alle volgende eigenschappen weergegeven op het tabblad Document of Record. Geef de onderstaande eigenschappen op om de weergave van het Document of Record te definiëren:
 
-   ![brandingsjabloon](assets/brandingtemplate.png)
+   1. **Basiseigenschappen**:
+      * **Sjabloon**: Als u een aangepaste sjabloon wilt selecteren, bladert u door een selectie van een XDP-bestand in uw [!DNL AEM Forms] server. Als u een sjabloon wilt gebruiken die nog niet op uw [!DNL AEM Forms] server, moet u de XDP eerst uploaden naar uw [!DNL AEM Forms] server.
+      * **Accentkleur**: De kleur waarin koptekst en scheidingslijnen worden gerenderd in het document of de record PDF.
+      * **Lettertypefamilie**: Lettertypefamilie van de tekst in Document of Record PDF.
+      * **Formulierobjecten opnemen die niet aan het gegevensmodel zijn gebonden**: Als u de eigenschap instelt, worden niet-gebonden velden van op schema gebaseerde adaptieve vorm opgenomen in Document of Record.
+      * **Verborgen velden uitsluiten van het document of record**: Als u de eigenschap instelt, worden de verborgen velden aangegeven die u wilt uitsluiten van Document of Record.
+      * **Beschrijving van deelvensters verbergen**: Als u de eigenschap instelt, wordt de beschrijving van het deelvenster/de tabel niet opgenomen in Document of Record. Toepasselijk voor paneel en lijst.
 
-   Als u een aangepaste sjabloon wilt selecteren, bladert u door een selectie van een XDP-bestand in uw [!DNL AEM Forms] server. Als u een sjabloon wilt gebruiken die nog niet op uw [!DNL AEM Forms] server, moet u de XDP eerst uploaden naar uw [!DNL AEM Forms] server.
+      ![Basiseigenschappen](/help/forms/assets/basicpropertiesdor.png)
 
-1. Afhankelijk van het feit of u een standaardsjabloon of een aangepaste sjabloon selecteert, worden enkele of alle volgende eigenschappen weergegeven op het tabblad Document of Record. Geef deze op de juiste manier op:
+   1. **Eigenschappen van formulierveld**:
+      * **Geef voor de componenten Selectievakje en Keuzerondje alleen de geselecteerde waarden weer**: Als u de eigenschap instelt, worden alleen geselecteerde waarden van selectievakje en keuzerondje weergegeven in [!UICONTROL Document of Record].
+      * **Scheidingsteken voor meerdere waarden**: U kunt elk scheidingsteken, zoals een komma of een regeleinde, kiezen om meerdere waarden weer te geven.
+      * **Uitlijning opties**: U kunt de gewenste uitlijning (Horizontaal, Verticaal, Hetzelfde als adaptief formulier) selecteren om de uitlijning in te stellen voor velden zoals selectievakjes of keuzerondjes die moeten worden weergegeven op [!UICONTROL Document of Record]. Standaard wordt de verticale uitlijning ingesteld voor de velden in [!UICONTROL Document of Record]. Eigenschappen instellen via de [!UICONTROL Form Field Properties] van DoR overschrijft de eigenschappen die zijn ingesteld in het dialoogvenster [!UICONTROL Item Alignment] voor de velden op een adaptief formulier. In het geval dat u [!UICONTROL Same as Aaptive form] optie, wordt de groepering zoals gevormd in een Adaptief de auteursinstantie van de Vorm gebruikt voor [!UICONTROL Document of Record] velden.
+      * **Aantal opties voor horizontale uitlijning**:U kunt het aantal opties instellen dat op het Document of Record moet worden weergegeven voor de horizontale uitlijning.
 
-   * **Logoafbeelding**: U kunt kiezen of u de afbeelding met het logo wilt gebruiken in het adaptieve formulier, een afbeelding kiezen in het DAM-model of een afbeelding uploaden vanaf uw computer.
-   * **Formuliertitel**
-   * **Koptekst**
-   * **Label voor afwijzing**
-   * **Disclaimer**
-   * **Disclaimtekst**
-   * **Accentkleur**: De kleur waarin koptekst en scheidingslijnen worden gerenderd in het document of de record PDF
-   * **Lettertypefamilie**: Lettertypefamilie van de tekst in het document van Record PDF
-   * **Geef voor de componenten Selectievakje en Keuzerondje alleen de geselecteerde waarden weer**
-   * **Scheidingsteken voor meerdere geselecteerde waarden**
-   * **Formulierobjecten opnemen die niet aan het gegevensmodel zijn gebonden**
-   * **Verborgen velden uitsluiten van het document of record**
-   * **Beschrijving van deelvensters verbergen**
+      ![Eigenschappen van formulierveld](/help/forms/assets/formfieldpropertiesdor.png)
 
+   1. **Master pagina-eigenschappen**:
+      * **Logoafbeelding**: U kunt kiezen of u de afbeelding met het logo wilt gebruiken in het adaptieve formulier, een afbeelding kiezen in het DAM-model of een afbeelding uploaden vanaf uw computer.
+      * **Formuliertitel**: Titel van de DoR.
+      * **Koptekst**: Tekst die wordt weergegeven in de koptekstsectie van het Document of Record.
+      * **Label voor afwijzing**: Label van disclaimer.
+      * **Disclaimer**: Tekst die de reikwijdte van de rechten en verplichtingen in het document van registratie aangeeft.
+      * **Disclaimtekst**: Tekst van disclaimer.
+
+      ![Master pagina-eigenschappen](/help/forms/assets/masterpagepropertiesdor.png)
    >[!NOTE]
    >
    >Als u een adaptieve formuliersjabloon gebruikt dat is gemaakt met een versie van Designer die ouder is dan versie 6.3, werken de eigenschappen Accentkleur en Lettertypefamilie alleen als het volgende aanwezig is in de sjabloon Adaptief formulier onder het basissubformulier:
@@ -367,7 +375,30 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
    </proto>
    ```
 
-1. Tik op Gereed om de wijzigingen in de branding op te slaan.
+1. Tik op **[!UICONTROL Done]**.
+
+## Document met ondersteuning voor records in de Adaptive Form Editor {#dor-support-in-adaptiveform}
+
+U kunt de [!UICONTROL Document of Record] rechtstreeks vanuit de editor voor adaptieve formulieren of de sjablooneditor voor adaptieve formulieren.
+
+Voer de volgende stappen uit vanuit de auteur-instantie van de Adaptieve formuliereditor:
+
+1. Selecteer **[!UICONTROL Adaptive Form container (Root)]** component.
+1. Klikken ![Pictogram configureren](/help/forms/assets/configure-icon.svg) pictogram om het **[!UICONTROL Properties]** van de container Adaptief formulier.
+1. Open de **[!UICONTROL Document of Record Template]** en selecteert u een van de volgende opties:
+   * **[!UICONTROL None]**: Wanneer deze optie is geselecteerd, is [!UICONTROL Document of Record] sjabloon gemaakt voor uw adaptief formulier.
+
+   * **[!UICONTROL Associate Form Template as Document of Record Template]**:Als deze optie is geselecteerd, wordt XFA-formulier gebruikt als sjabloon voor Document of Record.
+
+   * **[!UICONTROL Generate Document of Record]**: Als deze optie is geselecteerd, wordt [!UICONTROL Document of Record] wordt automatisch gegenereerd voor uw adaptieve formulier.
+
+1. Tikken ![Opslaan](/help/forms/assets/check-button.png) om de eigenschappen op te slaan.
+
+![Document met ondersteuning voor recordsjablonen](/help/forms/assets/dor-templatesupport.png)
+
+>[!NOTE]
+>
+>Wanneer [!UICONTROL Document of Record] de sjabloon wordt gemaakt met een adaptieve formuliersjablooneditor en er zijn dan slechts twee opties beschikbaar onder [!UICONTROL Document of Record Template] tab as [!UICONTROL None] en [!UICONTROL Generate Document of Record].
 
 ## Tabel- en kolomindelingen voor deelvensters in document van record {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -400,7 +431,7 @@ De instelling van de component Document of Record is beschikbaar onder de eigens
 **Instellingen voor formulierniveau**
 
 * **Inclusief niet-gebonden velden in DoR:** Als u de eigenschap instelt, worden niet-gebonden velden van op schema gebaseerde adaptieve vorm opgenomen in Document of Record. Standaard is dit waar.
-* **Velden uitsluiten van DoR indien verborgen:** Als u de eigenschap instelt, wordt de werking van de veldeigenschap &#39;Uitsluiten van document van record&#39; genegeerd als deze niet true is. Als velden verborgen zijn op het moment dat het formulier wordt verzonden, worden ze uitgesloten van Document of Record als de eigenschap is ingesteld op true, op voorwaarde dat de eigenschap &#39;Uitsluiten van document van record&#39; niet is ingesteld. Instelling [Revalidate op server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) eigenschap true geeft de verborgen velden aan die moeten worden uitgesloten van het document met record op de server.
+* **Velden uitsluiten van DoR indien verborgen:** Als u de eigenschap instelt, wordt de werking van de veldeigenschap &#39;Uitsluiten van document van record&#39; genegeerd als deze niet true is. Als velden verborgen zijn op het moment dat het formulier wordt verzonden, worden ze uitgesloten van Document of Record als de eigenschap is ingesteld op true, op voorwaarde dat de eigenschap &#39;Uitsluiten van document van record&#39; niet is ingesteld. Instelling [Revalidate op server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) eigenschap &#39;true&#39; geeft de verborgen velden aan die kunnen worden uitgesloten van het opnemen van records op de server.
 
 ## Een aangepast XCI-bestand gebruiken
 

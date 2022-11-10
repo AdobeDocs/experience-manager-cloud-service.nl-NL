@@ -2,21 +2,14 @@
 title: AEM as a Cloud Service op Verenigde Shell
 description: AEM as a Cloud Service op Verenigde Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 5d9acdd9b6a377a7509e0638984cb40983fa6652
+source-git-commit: 76b7fb1d354664ec9fa773623ea4dee09164bec8
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 1%
+source-wordcount: '328'
+ht-degree: 2%
 
 ---
 
 # AEM as a Cloud Service op Verenigde Shell {#aem-as-a-cloud-service-on-unified-shell}
-
->[!NOTE]
->Deze functie bevindt zich in het Prerelease-kanaal voor juli 2022.
->
->Dit is bedoeld als inleiding aan een nieuwe eigenschap die in de versie van Augustus 2022 algemeen beschikbaar zal zijn.
->
->Zie de [Prerelease Channel-documentatie](/help/release-notes/prerelease.md#enable-prerelease) voor informatie over hoe u de functie voor uw omgeving kunt inschakelen.
 
 ## Overzicht {#overview}
 

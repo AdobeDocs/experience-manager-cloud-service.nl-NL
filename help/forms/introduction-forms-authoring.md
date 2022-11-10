@@ -9,9 +9,9 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2394'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 Met Adaptieve Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. [!DNL AEM Forms] biedt een intuïtieve gebruikersinterface en kant-en-klare componenten voor het maken en werken met Adaptive Forms. U kunt desgewenst een adaptief formulier maken op basis van een formuliermodel of -schema of zonder formuliermodel. Het is belangrijk om zorgvuldig het formuliermodel te kiezen dat niet alleen aan uw vereisten voldoet, maar ook uw bestaande infrastructurele investeringen en middelen uitbreidt. U kunt uit de volgende opties kiezen om een adaptief formulier te maken:
 
-<!-- * **Using a form data model**
-  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. -->
+* **Een formuliergegevensmodel gebruiken**
+   [Gegevensintegratie](data-integration.md) Hiermee kunt u entiteiten en services integreren van verschillende gegevensbronnen in een formuliergegevensmodel dat u kunt gebruiken voor het maken van een adaptieve Forms. Kies Formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
 
 * **Een XDP-formuliersjabloon gebruiken**
 Het is een ideaal formuliermodel als u investeert in XFA-gebaseerde of XDP-formulieren. Het biedt een directe manier om uw XFA-formulieren om te zetten in Adaptive Forms. Bestaande XFA-regels blijven behouden in de gekoppelde Adaptive Forms. De resulterende Adaptieve Forms ondersteunt XFA-constructies, zoals validaties, gebeurtenissen, eigenschappen en patronen.
@@ -35,9 +35,13 @@ De schema&#39;s van XML en JSON vertegenwoordigen de structuur waarin de gegeven
 * **Geen of geen formuliermodel gebruiken**
 Adaptieve Forms die met deze optie is gemaakt, gebruikt geen formuliermodel. De XML-gegevens die op basis van dergelijke formulieren worden gegenereerd, hebben een vlakke structuur met velden en bijbehorende waarden.
 
-<!--  For more information about creating an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md). -->
+   >[!NOTE]
+   >
+   > U kunt de eigenschappen van het formuliermodel wijzigen in de sjablooneditor voor Adaptief formulier of Adaptief formulier. Zie voor meer informatie [Eigenschappen van een formuliermodel bewerken in een adaptief formulier](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
-## Aangepaste interface voor formulierontwerp {#adaptive-form-authoring-ui}
+Als u een adaptief formulier wilt maken, raadpleegt u [Een adaptief formulier maken](creating-adaptive-form.md).
+
+## Gebruikersinterface voor adaptieve formulierontwerp {#adaptive-form-authoring-ui}
 
 De interface voor het optimaliseren van aanrakingen voor het ontwerpen van Adaptive Forms is intuïtief en biedt:
 
