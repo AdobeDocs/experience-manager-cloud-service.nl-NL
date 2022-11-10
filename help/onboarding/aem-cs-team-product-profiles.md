@@ -2,9 +2,9 @@
 title: as a Cloud Service teams en productprofielen AEM
 description: Leer hoe AEM as a Cloud Service team en productprofielen en toegang tot uw gelicentieerde Adobe oplossingen verlenen en beperken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
+source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,9 @@ Uw AEM as a Cloud Service teamleden worden tijdens het instappen toegevoegd aan 
 
 >[!TIP]
 >
->Raadpleeg voor meer informatie over het instapproces de [op instapreis.](/help/journey-onboarding/overview.md)
+>* Meer informatie over AEM productprofielen vindt u in het document [AEM productprofielen toewijzen.](/help/journey-onboarding/assign-profiles-aem.md)
+>* Raadpleeg voor meer informatie over het instapproces de [op instapreis.](/help/journey-onboarding/overview.md)
+
 
 ## Productprofielen van Cloud Manager {#cloud-manager-product-profiles}
 
@@ -63,3 +65,9 @@ Uw team van Cloud Manager omvat ten minste:
 >[!NOTE]
 >
 >Om toegang te krijgen tot AEM as a Cloud Service, moeten gebruikers tot een van twee productprofielen behoren: `AEM Users` of `AEM Administrators`. Rechten om Cloud Manager te beheren zijn niet voldoende.
+
+>[!TIP]
+>
+>* Raadpleeg het document voor meer informatie over productprofielen van Cloud Manager [Teamleden toewijzen aan productprofielen van Cloud Manager.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* Raadpleeg voor meer informatie over het instapproces de [op instapreis.](/help/journey-onboarding/overview.md)
+
