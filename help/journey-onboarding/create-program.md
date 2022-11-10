@@ -3,9 +3,9 @@ title: Een programma maken
 description: Leer hoe u Cloud Manager gebruikt om uw eerste programma te maken.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -39,10 +39,6 @@ Er zijn twee verschillende soorten programma&#39;s:
 
 Omdat ze verschillende doelen dienen, hebben de verschillende omgevingen verschillende opties. Het proces om ze te maken is echter vergelijkbaar. Voor deze instapreis creëren we een zandbakomgeving.
 
->[!NOTE]
->
->Standaard heeft een gebruiker met toegang tot een AEM omgeving ook de rol Cloud >Manager. Deze rol op zich is ontoereikend om de gebruiker toegang te geven tot de mening van de programmadetails. Een dergelijke gebruiker met alleen de gebruikersrol van Cloud Manager kan via de opties in het programmamenu naar de auteur-URL van de AEM omgeving navigeren (als er omgevingen zijn). Dergelijke gebruikers moeten hun beheerder contacteren als zij programma-vlakke toegang willen krijgen.
-
 ## Sandboxprogramma&#39;s maken {#create-sandbox}
 
 Ga als volgt te werk om een sandboxprogramma te maken.
@@ -75,3 +71,4 @@ Volg de aanvullende bronnen voor meer informatie over:
 * [Sandbox-programma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Leer hoe u met Cloud Manager uw eigen sandboxprogramma kunt maken voor training, demo, POC of andere niet-productiedoeleinden.
 * [Productieprogramma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) - Leer hoe u Cloud Manager kunt gebruiken om uw eigen productieprogramma te maken voor het hosten van liveverkeer.
 * [Adobe Cloud Manager gebruiken - Programma&#39;s](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) - De programma&#39;s van de Manager van de Wolk vertegenwoordigen reeksen AEM milieu&#39;s die logische reeksen bedrijfsinitiatieven steunen, typisch die aan een gekochte Overeenkomst van het Niveau van de Dienst (SLA) beantwoorden.
+* [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md) - Leer hoe AEM as a Cloud Service teams en productprofielen toegang tot uw gelicentieerde Adobe-oplossingen kunnen verlenen en beperken.

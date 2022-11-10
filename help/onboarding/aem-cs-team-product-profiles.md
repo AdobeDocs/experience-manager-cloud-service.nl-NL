@@ -1,17 +1,17 @@
 ---
 title: as a Cloud Service teams en productprofielen AEM
-description: Leer hoe AEM as a Cloud Service team en productprofielen en toegang tot uw gelicentieerde Adobe oplossingen verlenen en beperken.
+description: Leer hoe AEM as a Cloud Service team en productprofielen toegang tot uw gelicentieerde oplossingen van de Adobe kunnen verlenen en beperken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
 
 # as a Cloud Service teams en productprofielen AEM {#product-profiles}
 
-Leer hoe AEM as a Cloud Service team en productprofielen en toegang tot uw gelicentieerde Adobe oplossingen verlenen en beperken.
+Leer hoe AEM as a Cloud Service team en productprofielen toegang tot uw gelicentieerde oplossingen van de Adobe kunnen verlenen en beperken.
 
 ## Productprofielen {#profiles}
 
@@ -31,7 +31,9 @@ Uw AEM as a Cloud Service teamleden worden tijdens het instappen toegevoegd aan 
 
 >[!NOTE]
 >
->Elke gebruiker die is toegewezen aan een AEM as a Cloud Service productprofiel heeft (alleen-lezen) toegang tot Cloud Manager.
+>Elke gebruiker die is toegewezen aan een AEM as a Cloud Service productprofiel heeft alleen-lezentoegang tot Cloud Manager via de **Gebruiker van Cloud Manager** rol.
+>
+>Gebruikers met alleen de **Gebruiker van Cloud Manager** Deze rol kan u aanmelden bij Cloud Manager en naar de AEM auteursomgevingen navigeren (als deze bestaan) door de **Programma&#39;s** menuopties. De **Gebruiker van Cloud Manager** de rol is niet voldoende om toegang te krijgen tot de programmagegevens . Als dergelijke toegang nodig is, moeten de gebruikers extra rollen door hun systeembeheerder worden verleend.
 
 >[!TIP]
 >

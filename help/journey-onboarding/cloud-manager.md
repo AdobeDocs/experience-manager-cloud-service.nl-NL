@@ -3,9 +3,9 @@ title: Cloud Manager openen
 description: Leer hoe u toegang krijgt tot Cloud Manager zodat u uw projectbronnen kunt instellen.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,6 @@ Cloud Manager is een essentieel onderdeel van AEM as a Cloud Service en fungeert
 Typisch een teamlid dat aan wordt toegewezen **Zakelijke eigenaar** Het productprofiel is verantwoordelijk voor het toevoegen van cloudbronnen, zoals programma&#39;s en omgevingen. Dit individu begrijpt de bedrijfsbehoeften en wie de initiële installatie van Cloud Manager voltooit.
 
 In het kader van deze instapreis hebt u als systeembeheerder al uzelf toegewezen aan de **Zakelijke eigenaar** productprofiel en stelt de cloudbronnen in. Afhankelijk van daadwerkelijke projectvereisten, kunnen de bedrijfseigenaars al dan niet het zelfde zijn als de systeembeheerder.
-
->[!NOTE]
->
->Standaard heeft een gebruiker met toegang tot een AEM omgeving ook de rol Cloud >Manager. Deze rol op zich is ontoereikend om de gebruiker toegang te geven tot de mening van de programmadetails. Een dergelijke gebruiker met alleen de gebruikersrol van Cloud Manager kan via de opties in het programmamenu naar de auteur-URL van de AEM omgeving navigeren (als er omgevingen zijn). Dergelijke gebruikers moeten hun beheerder contacteren als zij programma-vlakke toegang willen krijgen.
 
 ## Toegang tot Cloud Manager als systeembeheerder en bedrijfseigenaar {#access-sysadmin-bo}
 
@@ -137,3 +133,4 @@ U moet uw instapreis voortzetten door het document opnieuw te bekijken [Een prog
 Volg de aanvullende bronnen voor meer informatie over:
 
 * [Inleiding tot Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - Meer informatie over Cloud Manager, Cloud Manager-programma&#39;s en omgevingen.
+* [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md) - Leer hoe AEM as a Cloud Service teams en productprofielen toegang tot uw gelicentieerde Adobe-oplossingen kunnen verlenen en beperken.
