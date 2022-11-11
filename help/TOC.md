@@ -8,9 +8,9 @@ user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een over
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
+source-git-commit: dce60b09a93ddf09b6b9285b832de91f6233bdae
 workflow-type: tm+mt
-source-wordcount: '3764'
+source-wordcount: '3770'
 ht-degree: 22%
 
 ---
@@ -489,6 +489,8 @@ ht-degree: 22%
    + [Belangrijkste kenmerken](/help/forms/key-features.md)
    + [Opvallende wijzigingen](/help/forms/notable-changes.md)
    + [Architectuur](/help/forms/aem-forms-cloud-service-architecture.md)
+   + AEM Forms Reference Collaterals {#formsreference-themes}
+      + [Referentiethema&#39;s](/help/forms/reference-themes.md)
    + De dienst instellen en configureren {#setup-environment}
       + [Boordomgeving naar Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Een lokale ontwikkelomgeving instellen](/help/forms/setup-local-development-environment.md)
