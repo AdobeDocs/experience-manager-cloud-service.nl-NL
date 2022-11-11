@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
+source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
          `200` als de antwoordcode aangeeft dat onjuiste gebeurtenisabonnementen met succes zijn verwijderd.
    >[!NOTE]
    >
-   >Als u reeds de verkeerde gebeurtenisabonnementen vóór het uitvoeren van de stappen hebt geschrapt die in deze procedure worden vermeld, kunt u Stap 4 overslaan.
+   >Als u reeds de verkeerde gebeurtenisabonnementen vóór het uitvoeren van de stappen hebt geschrapt die in deze procedure worden vermeld, kunt u de laatste stap van deze procedure overslaan.
 
 
 >[!IMPORTANT]
