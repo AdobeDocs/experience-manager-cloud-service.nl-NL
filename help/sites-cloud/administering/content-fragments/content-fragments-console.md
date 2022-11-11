@@ -5,9 +5,9 @@ landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fr
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,10 @@ De console van de Fragmenten van de Inhoud wordt gewijd aan het beheren van, het
 >[!NOTE]
 >
 >Een selectie van [sneltoetsen beschikbaar voor gebruik in deze console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+
+>[!NOTE]
+>
+>Uw projectteam kan de console indien nodig aanpassen. Zie [De console voor inhoudsfragmenten aanpassen](/help/implementing/developing/extending/content-fragment-console-customizing.md) voor nadere bijzonderheden.
 
 De console van de Fragmenten van de Inhoud kan direct van het hoogste niveau van de Globale Navigatie worden betreden:
 
