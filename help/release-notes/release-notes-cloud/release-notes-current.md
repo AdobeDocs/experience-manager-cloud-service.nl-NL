@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b1715c819a6d049c88de8f0bc7061951bbcd5248
+source-git-commit: a8d632818dd0514d63a5cb544e4b64301819483f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 # Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
-
->[!NOTE]
->
->De beschikbaarheid van de overeenkomstige AEM as a Cloud Service SDK wordt vertraagd, met als doel 11 november.
 
 >[!NOTE]
 >
