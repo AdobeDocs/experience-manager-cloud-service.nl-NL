@@ -4,27 +4,31 @@ seo-title: Reference Themes
 description: AEM Forms biedt adaptieve formulierthema's die u kunt ophalen bij Softwaredistributie en gebruiken om een formulier op te maken.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: ad1035e9d8f3a40d6211c9396e2a052ad54817e5
+source-git-commit: 3ca1996ac3a19151c0c05bd972f0aec07edabf69
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
 
-# Referentiethema&#39;s{#reference-themes}
 
-[Thema&#39;s](/help/forms/themes.md) Hiermee kunt u uw formulieren opmaken zonder diepgaande kennis van CSS. Naast het standaardthema kunt u de volgende thema&#39;s ophalen door het [AEM Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
+# Referentiemiddelen voor Forms as a Cloud Service {#reference-themes}
+
+U kunt de referentiethema&#39;s, sjablonen en formuliergegevensmodellen ophalen door de [Verwijzingsmiddelenpakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Het helpt u om snel uw Adaptieve Forms-ontwikkeling te starten en te versnellen. U kunt [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) om dit pakket te implementeren in uw as a Cloud Service AEM Forms-omgeving.
+
+De referentieelementen die in het pakket zijn opgenomen, zijn:
+
+## Thema&#39;s {#themes}
+
+[Thema&#39;s](/help/forms/themes.md) Hiermee kunt u uw formulieren opmaken zonder diepgaande kennis van CSS. De volgende thema&#39;s zijn opgenomen:
 
 * Beryl
-* Exec
-* Exec-Light
-* Vrijheid
+* Tranquil
 * Ultramarijn
 * Urbane
-* U.S. Web Design Standards
-* Tranquil
+* Canva
 
-Elk thema bevat een unieke en elegante stijl waarmee u aanpasbare formulieren voor uw gebruikers kunt maken. Het bevat unieke opmaak voor kiezers, zoals het deelvenster, het tekstvak, het numerieke vak, het keuzerondje, de tabel en de schakelaar. De stijlen in deze thema&#39;s zijn gebaseerd op vereisten. In een bepaald scenario hebt u bijvoorbeeld een minimalistisch thema met schone lettertypen nodig. Met het thema van de vrijheid kun je dat uiterlijk bereiken.
+Elk thema bevat een unieke en elegante stijl waarmee u aanpasbare formulieren voor uw gebruikers kunt maken. Het bevat unieke opmaak voor kiezers, zoals het deelvenster, het tekstvak, het numerieke vak, het keuzerondje, de tabel en de schakelaar. De stijlen in deze thema&#39;s zijn gebaseerd op vereisten. In een bepaald scenario hebt u bijvoorbeeld een minimalistisch thema met schone lettertypen nodig. Met het stedelijke thema kunt u dat uiterlijk bereiken.
 
 ![Referentiethema&#39;s](/help/forms/assets/ref-themes.png)
 
@@ -32,7 +36,7 @@ De thema&#39;s in dit pakket reageren snel en de stijl in deze thema&#39;s is ge
 
 Voor meer informatie over het installeren van het pakket raadpleegt u [Werken met pakketten](/help/implementing/developing/tools/package-manager.md).
 
-## Beryl {#beryl}
+### Beryl {#beryl}
 
 Het Berylthema wordt gebruikt door het adaptieve formulier We.Gov en benadrukt het gebruik van achtergrondafbeeldingen, transparantie en grote, platte pictogrammen. In de onderstaande schermafbeelding kunt u zien hoe het Beryl-thema eruitziet en hoe het de opmaak van uw formulier kan verbeteren.
 
@@ -42,66 +46,87 @@ Het Berylthema wordt gebruikt door het adaptieve formulier We.Gov en benadrukt h
 
 ](assets/beryl-1.png)-->
 
-## Exec {#exec}
+<!-- ## Exec {#exec}
 
-Met het thema Exec vermijdt u effen achtergrondvullingen om formuliercomponenten te benadrukken. Wanneer u componenten selecteert en klikt, worden de fontkleuren gewijzigd. In vergelijking met het standaardthema Canvas verandert de fontkleur van de tekst op het geselecteerde tabblad in donkerblauw. De navigatie- en verzendknoppen verschillen van het Berylthema.
+Exec theme avoids solid background fills to emphasize form components. Selecting and clicking components changes font colors. In comparison to the default Canvas theme, font color of the text in the selected tab changes to dark blue. Notice how the navigation and submit buttons are different from the Beryl theme.
 
-![Exec-thema](/help/forms/assets/exec.png)
+![Exec theme](/help/forms/assets/exec.png) -->
 
 <!--[Click to enlarge
 
 ](assets/exec-1.png)-->
 
-## Exec Light {#exec-light}
+<!-- ## Exec Light {#exec-light}
 
-Het thema Exec Light gebruikt witruimte voor een naadloze ervaring. Met de knoppen Volgende en Verzenden krijgt u een effen vulling en 3D-schaduw. Met de linkertabbladen krijgt u een pijl in plaats van dubbele markeringen.
+Exec Light theme uses white space to create a seamless experience. The Next and Submit buttons get a solid fill and 3D shadow. Selected tabs on the left get an arrow instead of double-check marks.
 
-![Exec light theme](/help/forms/assets/exec-light.png)
+![Exec light theme](/help/forms/assets/exec-light.png) -->
 
 <!--[Click to enlarge
 
 ](assets/exec-light-1.png)-->
 
-## Vrijheid {#liberty}
+<!-- ## Liberty {#liberty}
 
-Bij het thema van de vrijheid wordt de nadruk gelegd op het belang met een minimalistische benadering. De fontkleur van het bezochte tabblad wordt bijvoorbeeld groen. U kunt alleen de onderomtrek van het tekstvak zien waarin de weergave van een formulier op papier met lijnen wordt geëmuleerd. Het actieve tekstvak heeft een zwarte onderomtrek, terwijl andere een lichtgrijze onderomtrek krijgen.
+Liberty theme uses a minimalist approach to highlight the important. For example, the font color of the visited tab changes to green. You can only see the bottom-outline of the text box which emulates the look of a paper-based form with lines. The active text box has a black bottom-outline while others get light gray bottom-outline.
 
-![Vrije thema](/help/forms/assets/liberty.png)
-<!--[Click to enlarge
+![Liberty theme](/help/forms/assets/liberty.png) -->
+<!--[Click to enlarge](assets/liberty-1.png)-->
 
-](assets/liberty-1.png)-->
-
-## Tranquil {#tranquil}
+### Tranquil {#tranquil}
 
 Het thema Tranquil biedt lichte en donkere tinten van het schema Tranquil om verschillende componenten van een formulier te benadrukken. Keuzerondjes, deelvensters en tabs krijgen bijvoorbeeld een andere groene tint.
 
 ![Transparante thema](/help/forms/assets/tranquil.png)
 
-<!--[Click to enlarge
+<!--[Click to enlarge](assets/tranquil-1.png)-->
 
-](assets/tranquil-1.png)-->
-
-## Ultramarijn {#ultramarine}
+### Ultramarijn {#ultramarine}
 
 Het thema Ultramarijn gebruikt diepe blauwe schaduwen om componenten zoals lusjes, panelen, tekstvakjes, en knopen te benadrukken.
 
 ![Ultramarijnthema](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
-## Urbane {#urbane}
+### Urbane {#urbane}
 
 Met het thema Urbane wordt de nadruk gelegd op een minimalistische en functionele vormgeving. Wanneer u het thema Urbane op uw formulier toepast, ziet u dat de componenten plat zijn. De deelvensters krijgen dunne omtrekken om een modern uiterlijk te krijgen.
 
 ![Urbane thema](/help/forms/assets/urbane.png)
-<!--[Click to enlarge
+<!--[Click to enlarge](assets/urbane-1.png)-->
 
-](assets/urbane-1.png)-->
+<!-- ## U.S. Web Design Standards {#u-s-web-design-standards}
 
-## U.S. Web Design Standards {#u-s-web-design-standards}
+U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles described in the Draft U.S. Web Design Standards site. The web standard is used by federal organizations to create consistent web experiences across federal government websites.
 
-Het thema van de Normen van het Ontwerp van het Web van de V.S., zoals de naam voorstelt, gebruikt lettertypen en stijlen die in de Ontwerp van het Ontwerp van de Verenigde Staten van het Ontwerp van het Ontwerp van het Ontwerp van het Ontwerp van het Ontwerp van het Ontwerp van het Ontwerp van de Ontwerp van het Ontwerp van de Verenigde Staten worden beschreven. De webstandaard wordt door federale organisaties gebruikt om consistente webervaringen te maken op websites van de federale overheid.
+![U.S. Web Design Standards Theme](/help/forms/assets/us-web-standards.png) -->
+<!--[Click to enlarge](assets/usgov.png)-->
 
-![Thema van de Normen van het Ontwerp van het Web van de V.S.](/help/forms/assets/us-web-standards.png)
-<!--[Click to enlarge
 
-](assets/usgov.png)-->
+## Sjablonen
+
+Met sjablonen kunt u componenten slepen en neerzetten om de initiële structuur van een adaptief formulier te definiëren. De volgende elementen worden opgenomen:
+
+### Basis {#basic}
+
+Met de basissjabloon kunt u snel een inschrijvingsformulier maken.
+
+![Basisthema](/help/forms/assets/exec.png)
+
+### Leeg {#blank}
+
+De basissjabloon biedt een leeg canvas voor het maken van een initiële structuur voor adaptieve formulieren voor uw organisatie.
+
+## Formuliergegevensmodellen
+
+### Microsoft® Dynamics 365
+
+Met het gegevensmodel Microsoft Dynamics 365 kunt u Microsoft Dynamics 365 gebruiken als gegevensbron. Het verleent ook de steekproefdiensten om, gegevens te lezen bij te werken, te schrappen en toe te voegen aan de gegevensbron van de Dynamiek van Microsoft 365.
+
+![Microsoft® Dynamics 365-formuliergegevensmodel](/help/forms/assets/microsoft-dynamic-fdm.png)
+
+### Salesforce
+
+Met het Salesforce-gegevensmodel kunt u Salesforce gebruiken als gegevensbron. Het verleent de steekproefdiensten ook om, gegevens te lezen bij te werken te schrappen en toe te voegen aan Salesforce.
+
+![Salesforce-formuliergegevensmodel](/help/forms/assets/salesforce-fdm.png)
