@@ -8,9 +8,9 @@ user-guide-description: Zelfhulpbronnen en documentatiekoppelingen voor een over
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: dce60b09a93ddf09b6b9285b832de91f6233bdae
+source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3766'
 ht-degree: 22%
 
 ---
@@ -489,8 +489,6 @@ ht-degree: 22%
    + [Belangrijkste kenmerken](/help/forms/key-features.md)
    + [Opvallende wijzigingen](/help/forms/notable-changes.md)
    + [Architectuur](/help/forms/aem-forms-cloud-service-architecture.md)
-   + AEM Forms Reference Collaterals {#formsreference-themes}
-      + [Referentiethema&#39;s](/help/forms/reference-themes.md)
    + De dienst instellen en configureren {#setup-environment}
       + [Boordomgeving naar Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Een lokale ontwikkelomgeving instellen](/help/forms/setup-local-development-environment.md)
@@ -509,6 +507,7 @@ ht-degree: 22%
          + [Een sjabloon maken](/help/forms/template-editor.md)
          + [Een thema maken](/help/forms/themes.md)
          + [Verbind uw gegevensbronnen met Cloud Service](/help/forms/data-integration.md)
+         + [Referentie-elementen](/help/forms/reference-assets.md)
       + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
          + [Een adaptief formulier maken](/help/forms/creating-adaptive-form.md)
          + [JSON-schema ontwerpen voor een adaptief formulier](/help/forms/adaptive-form-json-schema-form-model.md)
