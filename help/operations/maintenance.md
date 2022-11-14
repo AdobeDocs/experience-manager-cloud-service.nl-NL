@@ -2,9 +2,9 @@
 title: Onderhoudstaken in AEM as a Cloud Service
 description: Onderhoudstaken in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 4e820caa043eeba22d14894d6943c957ea0bf80a
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -44,23 +44,23 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
   <tr>
     <td>Versie wissen</td>
     <td>Adobe</td>
-    <td>De auteurslaag moet presterend blijven, oudere versies van elk stuk inhoud onder <code>/content</code> knooppunt van de repository worden gezuiverd volgens het volgende gedrag:<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Voor bestaande milieu's (die vóór 1 Maart, 2023 worden gecreeerd), wordt het zuiveren onbruikbaar gemaakt en zal niet in de toekomst worden toegelaten tenzij uitdrukkelijk toegelaten door de klant, waarbij zij het met douanewaarden kunnen ook vormen.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Nieuwe omgevingen (die vanaf 1 maart 2023 zijn gemaakt) worden standaard leeggemaakt met de onderstaande waarden, waarbij klanten kunnen configureren met aangepaste waarden.
      <ol>
        <li>Versies ouder dan 30 dagen worden verwijderd</li>
        <li>De meest recente vijf versies in de laatste 30 dagen worden bewaard</li>
        <li>Ongeacht de bovenstaande regels blijft de meest recente versie behouden.</li>
-     </ol><br>OPMERKING: het hierboven beschreven gedrag wordt standaard afgedwongen voor nieuwe omgevingen die na 14 maart 2022 zijn gemaakt. Stuur een ticket voor klantenondersteuning als u andere instellingen nodig hebt.</td>
+     </ol></td>
   </td>
   </tr>
   <tr>
     <td>Logboek controleren leegmaken</td>
     <td>Adobe</td>
-    <td>Om ervoor te zorgen dat de auteurslaag presteert, oudere controlelogboeken onder <code>/content</code> knooppunt van de repository worden gezuiverd volgens het volgende gedrag:<br><br> <!-- See above for the two line breaks -->
+    <td>Voor bestaande milieu's (die vóór 1 Maart, 2023 worden gecreeerd), wordt het zuiveren onbruikbaar gemaakt en zal niet in de toekomst worden toegelaten tenzij uitdrukkelijk toegelaten door de klant, waarbij zij het met douanewaarden kunnen ook vormen.<br><br> <!-- See above for the two line breaks -->In nieuwe omgevingen (die vanaf 1 maart 2023 zijn gemaakt) wordt leegmaken standaard ingeschakeld onder de <code>/content</code> knooppunt van de repository volgens het volgende gedrag:
      <ol>
        <li>Voor replicatiecontrole worden auditlogboeken ouder dan 3 dagen verwijderd</li>
        <li>Voor DAM-audits (Assets) worden auditlogboeken ouder dan 30 dagen verwijderd</li>
        <li>Voor pagina-controle worden logboeken ouder dan 3 dagen verwijderd.</li>
-     </ol><br>OPMERKING: het hierboven beschreven gedrag wordt standaard afgedwongen voor nieuwe omgevingen die na 14 maart 2022 zijn gemaakt. Stuur een ticket voor klantenondersteuning als u andere instellingen nodig hebt.</td>
+     </ol></td>
    </td>
   </tr>
   <tr>
