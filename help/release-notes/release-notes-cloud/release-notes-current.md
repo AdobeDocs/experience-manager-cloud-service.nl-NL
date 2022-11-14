@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ac209259b8e8ac7c1734c0662dd640809b4e2932
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,18 @@ Bekijk de video Overzicht van de release van oktober 2022 voor een overzicht van
 * Experience Manager Assets nu [ondersteunt SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) naast de toegangstoets voor verificatie bij de verbinding met de Azure Blob Storage-gegevensbron voor het opnemen van elementen met het Bulk Import-gereedschap.
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
+
+### Nieuwe functies beschikbaar in [!DNL Forms] kanaal {#new-features-available-in-channel}
+
+* [Adaptieve Forms-wizard](/help/forms/creating-adaptive-form.md): AEM Forms biedt een gebruiksvriendelijke wizard die Adaptive Forms snel ontwikkelt. De wizard beschikt over een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken. Deze release biedt de wizard de volgende verbeteringen:
+
+   * Selecteer of deselecteer velden: Met de wizard kunt u een adaptief formulier maken op basis van JSON- en formuliergegevensmodelschema&#39;s. U kunt nu een subset van velden in een schema selecteren en opnemen in een adaptief formulier. De geselecteerde velden worden geconverteerd naar overeenkomstige componenten voor het vastleggen van adaptieve formuliergegevens om snel de gewenste adaptieve formulieren te maken.
+
+   * Statische sjablonen gebruiken: Klanten met bestaande investeringen in verouderde statische sjablonen kunnen hun reis naar cloudacceptatie voortzetten door statische sjablonen in wizard te gebruiken om adaptieve formulieren te maken. Dit geeft klanten extra tijd om oude statische sjablonen te migreren naar moderne bewerkbare sjablonen.
+
+* [Verborgen velden verwijderen uit een Document of Record (DoR) tijdens verwerking op de server](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): U kunt het document met record PDF voor eindgebruikers genereren met alleen die velden die voor hen zichtbaar waren tijdens het vastleggen van gegevens. Bij het verzenden van het formulier controleert de server welke velden op basis van verzonden gegevens verborgen waren voor de eindgebruiker en sluit deze velden uit van het document met het oog op consistentie.
+
+
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
 

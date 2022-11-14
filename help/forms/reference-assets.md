@@ -4,9 +4,9 @@ seo-title: Reference Themes
 description: AEM Forms biedt adaptieve formulierthema's die u kunt ophalen bij Softwaredistributie en gebruiken om een formulier op te maken.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,7 @@ ht-degree: 0%
 
 # Referentiemiddelen voor Forms as a Cloud Service {#reference-themes}
 
-U kunt de referentiethema&#39;s, sjablonen en formuliergegevensmodellen ophalen door de [Verwijzingsmiddelenpakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Het helpt u om snel uw Adaptieve Forms-ontwikkeling te starten en te versnellen. U kunt [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) om dit pakket te implementeren in uw as a Cloud Service AEM Forms-omgeving.
-
+U kunt de referentiethema&#39;s, sjablonen en formuliergegevensmodellen ophalen door de [Verwijzingsmiddelenpakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Het helpt u om snel uw Adaptieve Forms-ontwikkeling te starten en te versnellen. U kunt [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) om dit pakket te implementeren in uw as a Cloud Service Forms-omgeving.
 De referentieelementen die in het pakket zijn opgenomen, zijn:
 
 ## Thema&#39;s {#themes}
