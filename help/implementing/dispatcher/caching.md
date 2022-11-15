@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
+source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2666'
 ht-degree: 1%
 
 ---
@@ -199,9 +199,9 @@ Wanneer een verzoek van HEAD bij Adobe CDN voor een middel wordt ontvangen dat *
 
 ### Parameters van de marketingcampagne {#marketing-parameters}
 
-URL&#39;s van websites bevatten vaak parameters voor marketingcampagnes die worden gebruikt om het succes van een campagne te volgen. Om het geheime voorgeheugen van de verzender effectief te gebruiken, adviseert men dat u de configuratie van de verzender vormt `ignoreUrlParams` eigenschap as [gedocumenteerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+URL&#39;s van websites bevatten vaak parameters voor marketingcampagnes die worden gebruikt om het succes van een campagne te volgen. Als u het cachegeheugen van de verzender effectief wilt gebruiken, is het raadzaam de configuratie van de verzender te configureren `ignoreUrlParams` eigenschap as [hier gedocumenteerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
-De `ignoreUrlParams` mag geen opmerkingen bevatten en moet verwijzen naar het bestand `conf.dispatcher.d/cache/marketing_query_parameters.any`, die kan worden gewijzigd door de opmerkingen op te heffen die overeenkomen met de parameters die relevant zijn voor uw marketingkanalen. U kunt ook andere parameters toevoegen.
+De `ignoreUrlParams` mag geen opmerkingen bevatten en moet verwijzen naar het bestand `conf.dispatcher.d/cache/marketing_query_parameters.any`. U kunt het bestand wijzigen door de opmerkingen van de regels die overeenkomen met de parameters die relevant zijn voor uw marketingkanalen ongedaan te maken. U kunt ook andere parameters toevoegen.
 
 ```
 /ignoreUrlParams {
