@@ -4,9 +4,9 @@ description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellinge
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
+source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
 workflow-type: tm+mt
-source-wordcount: '3205'
+source-wordcount: '3198'
 ht-degree: 4%
 
 ---
@@ -84,14 +84,13 @@ Adobe raadt u aan de gegenereerde gewassen en stalen te controleren om na te gaa
 
 De maximale resolutie voor ondersteunde invoerbestanden is 16 kB.
 
-CMYK-afbeeldingsindeling wordt niet ondersteund voor slim uitsnijden.
-
 >[!NOTE]
 De resolutie van 16 kB is een weergaveresolutie met ongeveer 16.000 pixels horizontaal. De meest gebruikte resolutie van 16 kB is 15360 x 8640, die het pixelaantal van 8kHD in elke afmeting verdubbelt, voor een totaal van vier keer zo veel pixel. Deze resolutie heeft 132,7 megapixels, 16 keer zoveel pixels als een resolutie van 4.000 pixels en 64 keer zoveel pixels als de resolutie van 1.080p.
 
 | Afbeeldingsindeling | Niet-hoofdlettergevoelige bestandsextensie | MIME-type | Ondersteunde invoerkleurruimte | Maximale ondersteunde grootte invoerbestand | Ondersteunde afbeeldingsindeling? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Ja |
+| CMYK |  |  |  |  | Nee |
 | EPS |  |  |  |  | Nee |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Ja; het eerste frame van het geanimeerde GIF wordt gebruikt voor de vertoning. U kunt het eerste frame niet configureren of wijzigen. |
 | JPEG | `.jpg` and `.jpeg` | image/jpeg | sRGB | 15 GB | Ja |
