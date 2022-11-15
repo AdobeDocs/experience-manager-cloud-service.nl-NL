@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: e669fc821402f84fae58f457d5d9d1680c39ffaf
+source-git-commit: a3b16a47be8ec28a02763655d49a9bb469fbc118
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ Als u een centrifugeset of een afbeeldingsset maakt of PDF uploadt voor het uitn
 
 | Element - Type limiet | Beste praktijken | Oplegde limiet | Wijziging tot limiet op 31 december 2022 |
 | --- | --- | --- | --- |
-| **Afbeelding** - Aantal slimme uitsnijdingen per afbeelding | 5 | 100 | 20 |
+| **Afbeelding** - Aantal slimme uitsnijdingen per afbeelding | 5 | 100 | Niet van toepassing |
 | **Alle sets** - Aantal dubbele elementen per set | Geen duplicaten | 20 | Niet van toepassing |
 | **Alle sets** - Maximumaantal activa per set | 5-10 afbeeldingen per set | 1000 | Niet van toepassing |
 | **Set draaien** - Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 | Niet van toepassing |
