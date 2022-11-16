@@ -4,9 +4,9 @@ description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellinge
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
+source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
 workflow-type: tm+mt
-source-wordcount: '3198'
+source-wordcount: '3244'
 ht-degree: 4%
 
 ---
@@ -56,9 +56,9 @@ Verscherpen wordt beschreven in [Afbeeldingen verscherpen](/help/assets/dynamic-
 
 Wanneer u Slim uitsnijden op afbeeldingen implementeert, raadt Adobe de volgende aanbevolen procedures aan en wordt de volgende limiet toegepast:
 
-| Type limiet | Beste praktijken | Oplegde limiet | Wijziging tot limiet op 31 december 2022 |
-| --- | --- | --- | --- |
-| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 | 20 |
+| Type limiet | Beste praktijken | Oplegde limiet |
+| --- | --- | --- |
+| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 
@@ -71,7 +71,8 @@ Voor elke SmartCrop-generatie die u maakt, is extra verwerkingstijd nodig. Als u
 U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren of de snijinhoud in de verschillende doelresoluties te behouden.
 
 >[!IMPORTANT]
-Adobe raadt u aan de gegenereerde gewassen en stalen te controleren om na te gaan of deze geschikt en relevant zijn voor uw merk en waarden.
+・ Adobe raadt u aan de gegenereerde gewassen en stalen te herzien om ervoor te zorgen dat ze geschikt en relevant zijn voor uw merk en waarden.
+・ CMYK-afbeeldingsindeling wordt niet ondersteund bij slim uitsnijden.
 
 | Optie | Wanneer gebruiken | Beschrijving |
 | --- | --- | --- |
@@ -199,7 +200,8 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 ## Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-Adobe raadt u aan eventuele gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
+・ Adobe raadt u aan eventuele gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
+・ CMYK-afbeeldingsindeling wordt niet ondersteund bij slim uitsnijden.
 
 U kunt het venster voor slimme uitsnijden van een afbeelding handmatig opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.
 
@@ -231,6 +233,10 @@ Zie ook [Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen 
 1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Save]** selecteert u vervolgens **[!UICONTROL Close]** om terug te keren naar de map met elementen.
 
 ## Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+・ Adobe raadt u aan eventuele gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
+・ CMYK-afbeeldingsindeling wordt niet ondersteund bij slim uitsnijden.
 
 Nadat u een afbeeldingsprofiel met slimme uitsnijding hebt toegepast op een map, is op alle afbeeldingen in die map een uitsnijding toegepast. Indien gewenst kunt u *handmatig* U kunt het venster voor slimme uitsnijden in meerdere afbeeldingen opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.
 
