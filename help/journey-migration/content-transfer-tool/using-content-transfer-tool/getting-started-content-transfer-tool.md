@@ -2,9 +2,9 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 1dfef0f1157ead7f1240e9a41794436197136daa
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1327'
 ht-degree: 6%
 
 ---
@@ -36,6 +36,9 @@ De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde ga
 
 * De Azure-opslagservice: `casstorageprod.blob.core.windows.net`
 * Het eindpunt van de Toewijzing van de Gebruiker IO: `usermanagement.adobe.io`
+
+>[!NOTE]
+>Indien extractie mislukt als gevolg van de volgende fout: &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX-pad samenstellen mislukt: sun.security.provider.certpath.SunCertPathBuilderException: kan geen geldig certificatiepad vinden naar gevraagd doel&quot;, dan kan dit worden opgelost door het desbetreffende CA-certificaat te importeren.
 
 ### SSL-registratie inschakelen {#enable-ssl-logging}
 
