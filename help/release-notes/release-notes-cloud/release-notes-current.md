@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
+source-git-commit: 272225bbeea4443bf97349d11805dbb3386fd2cc
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -25,14 +25,13 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!CAUTION]
 >
->**Uitsluitingsperiode voor zwarte vrijdag en kerstonderhoud**
+>**Geplande uitsluitingsperiode voor onderhoud**
 >
 > Er wordt geen automatisch AEMaaCS-onderhoud uitgevoerd tijdens de volgende tijdframes, die beginnen en eindigen om middernacht (00:00) CET:
 >
 >* Maandag 21 november tot maandag 5 december
 >* Maandag, 19 december tot en met dinsdag, 3 januari
->
-> Deze periodes hebben betrekking op Zwarte Vrijdag, Cybermaandag, Kerstmis en Nieuwjaar.
+
 
 ## Releasedatum {#release-date}
 
