@@ -2,7 +2,7 @@
 title: Inleiding tot aangepaste domeinnamen
 description: Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbediening te identificeren aan de hand van een unieke merknaam.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
+source-git-commit: 42318a42a55134501eb13feca22791bb5db4e83f
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 
 | Stap | Beschrijving | Verantwoordelijkheid | Meer informatie |
 |--- |--- |--- |---|
-| 1 | SLL-certificaat toevoegen aan Cloud Manager | Klant | [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | SSL-certificaat toevoegen aan Cloud Manager | Klant | [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | TXT-record toevoegen om domein te verifiëren | Klant | [Een TXT-record toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 3 | Status domeinverificatie controleren | Klant | [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3 bis. | Als domeinverificatie mislukt met de status `Domain Verification Failure` | Klant | [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
