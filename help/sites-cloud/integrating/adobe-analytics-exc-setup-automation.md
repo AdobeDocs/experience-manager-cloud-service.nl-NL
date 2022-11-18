@@ -1,10 +1,10 @@
 ---
 title: Adobe Analytics integreren met Experience Cloud Setup Automation
-description: De Automatisering van de Opstelling van de Experience Cloud verstrekt een eenvoudige en geautomatiseerde manier om Experience Manager Sites met Experience Platform Launch en Adobe Analytics met een eenvoudige interface van de tovenaar UI te integreren en te voorzien. Leer hoe u de automatische installatie kunt gebruiken met uw eigen site.
+description: De Automatisering van de Opstelling van de Experience Cloud verstrekt een eenvoudige en geautomatiseerde manier om Experience Manager Sites met de Markeringen van het Experience Platform en Adobe Analytics met een eenvoudige interface van de tovenaar UI te integreren en te voorzien. Leer hoe u de automatische installatie kunt gebruiken met uw eigen site.
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
+source-git-commit: 539d3947964652dd92620ce0b0b057754742be96
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Adobe Analytics integreren met Experience Cloud Setup Automation {#integrate-adobe-analytics-automation-setup}
 
-De Automatisering van de Opstelling van de Experience Cloud verstrekt een eenvoudige en geautomatiseerde manier om Experience Manager Sites met Experience Platform Launch en Adobe Analytics met een eenvoudige interface van de tovenaar UI te integreren en te voorzien.
+De Automatisering van de Opstelling van de Experience Cloud verstrekt een eenvoudige en geautomatiseerde manier om Experience Manager Sites met de Markeringen van het Experience Platform en Adobe Analytics met een eenvoudige interface van de tovenaar UI te integreren en te voorzien.
 
 Het is nooit eenvoudiger geweest om Adobe Analytics met AEM Sites te integreren. Met de Automatisering van de Opstelling van Experience Cloud, vestiging, het integreren, en het van instrumenten voorzien van uw plaats om prestatiesanalyses te vangen om te begrijpen hoe goed uw klanten engaging en het omzetten allen behandeld met slechts een paar kliks worden.
 
-Deze video onderzoekt hoe een AEM plaats met Experience Platform Launch en Analytics gebruikend de Automatisering van de Opstelling van de Experience Cloud is geïntegreerd:
+In deze video wordt uitgelegd hoe een AEM site is geïntegreerd met Experience Platform Tags en Analytics met behulp van Experience Cloud Setup Automation:
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
@@ -57,7 +57,7 @@ De omgeving moet nu gereed zijn voor Experience Cloud Setup Automation.
    De automatiseringsopstelling komt asynchroon voor. De **Integratiestatus controleren** zal de huidige status van de integratie aantonen.
 
    * **In uitvoering** - geeft aan dat de taak wordt uitgevoerd.
-   * **Integratie voltooid** - Hiermee wordt aangegeven dat de taak is voltooid met de integratie van Analytics en Launch, het instellen van Launch-extensies en Startersregels en het maken van de nieuwe rapportsuite in Adobe Analytics.
+   * **Integratie voltooid** - Hiermee wordt aangegeven dat de taak is voltooid met het integreren van Analytics en Tags, het instellen van Tags-extensies en -regels en het maken van de nieuwe rapportsuite in Adobe Analytics.
    * **Mislukt** - geeft aan dat de automatische taak niet kan worden voltooid. Controleer de logbestanden voor deze taak door op de koppeling Logs te klikken.
 
 ## AEM instellen valideren
@@ -66,7 +66,7 @@ Nadat de automatisering is voltooid, controleert u of uw site de Analytics-gebeu
 
 1. Open een pagina op uw site met de **Sites-editor**.
 1. Gebruik de **Weergeven als gepubliceerd** om een gepubliceerde versie van de pagina te laden.
-1. Gebruik de ontwikkelaarshulpmiddelen van browser om het netwerkverkeer te inspecteren en dat **Starten** en `AppMeasurement.js` bestanden worden nu geladen.
+1. Gebruik de ontwikkelaarshulpmiddelen van browser om het netwerkverkeer te inspecteren en dat **Tags** en `AppMeasurement.js` bestanden worden nu geladen.
 1. Inspect de browser console om te zien dat de gebeurtenissen van het paginaniveau en componentenniveau door de Laag van de Gegevens van de Cliënt van de Adobe in brand worden gestoken en worden verzameld.
 
 ## Analytische instellingen valideren
