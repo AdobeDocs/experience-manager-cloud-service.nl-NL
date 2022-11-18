@@ -2,10 +2,10 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
+source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 12%
+source-wordcount: '956'
+ht-degree: 11%
 
 ---
 
@@ -26,6 +26,11 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 1. Ga naar Cloud Acceleration Manager. Klik op uw projectkaart en klik op de kaart van de Overdracht van de Inhoud. Navigeren naar **Ingestietaken** en klik op **Nieuwe inname**
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+
+1. Controleer de innamecontrolelijst en zorg ervoor dat alle stappen zijn voltooid. Dit zijn noodzakelijke stappen om een succesvolle inname te waarborgen. U kunt doorgaan naar de **Volgende** stap alleen als de checklist is voltooid.
+
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
 1. Geef de vereiste informatie op om een nieuwe opname te maken.
 

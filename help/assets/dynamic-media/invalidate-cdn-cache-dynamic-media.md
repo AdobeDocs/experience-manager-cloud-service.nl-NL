@@ -4,7 +4,7 @@ description: Leer hoe u inhoud in de cache van uw CDN (Content Delivery Network)
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
+source-git-commit: 532d32334456b4b791e3a5ffe17a780f378dd1cc
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 0%
@@ -23,11 +23,11 @@ Dynamic Media-elementen worden in cache geplaatst door de CDN (Content Delivery 
 
 Als u [Slimme afbeeldingen](/help/assets/dynamic-media/imaging-faq.md) op uw account en u gebruikt de Adobe-gebundelde CDN, kunt u alle URL&#39;s met verschillende querytekenreeksen leegmaken door de enkele basis-URL op te schonen.
 
-Bijvoorbeeld, ongeldig maken `https://weekendsite.scene7.com/is/image/grundfos/image`maakt ook de volgende URL&#39;s ongeldig:
+Bijvoorbeeld, ongeldig maken `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`maakt ook de volgende URL&#39;s ongeldig:
 
-* `https://weekendsite.scene7.com/is/image/grundfos/image`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?$PLP$`
 * enzovoort.
 
 Deze ongeldigmaking is echter niet het geval voor algemene domeinen die geen ondersteuning bieden voor Smart Imaging, zoals `s7d1.scene7.com`. Dergelijke domeinen hebben nog steeds de volledige URL nodig om validatiewerkzaamheden met succes uit te voeren.
