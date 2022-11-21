@@ -3,7 +3,7 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Validatie en foutopsporing met Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
+source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
 workflow-type: tm+mt
 source-wordcount: '2693'
 ht-degree: 0%
@@ -50,6 +50,7 @@ De structuur van de submap Dispatcher van het project is als volgt:
     ├── cache
     │   ├── default_invalidate.any
     │   ├── default_rules.any
+    │   ├── marketing_query_parameters.any
     │   └── rules.any
     ├── clientheaders
     │   ├── clientheaders.any
