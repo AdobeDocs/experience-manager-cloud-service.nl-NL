@@ -2,9 +2,9 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
+source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '1029'
 ht-degree: 11%
 
 ---
@@ -40,6 +40,10 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
    >[!NOTE]
    >
    >Als de bron Auteur was, wordt het geadviseerd om het in de rij van de Auteur op het doel op te nemen. Als de bron Publiceren was, zou het doel ook Publiceren moeten zijn.
+
+   >[!NOTE]
+   >
+   >Als de doellaag `Author`, wordt de instantie van de auteur afgesloten tijdens de duur van de opname en is niet beschikbaar voor gebruikers (bijvoorbeeld auteurs of personen die onderhoud uitvoeren, enz.). Dit is om het systeem te beschermen, en om het even welke veranderingen te verhinderen die of zouden kunnen of een innameconflict veroorzaken. Zorg ervoor dat uw team zich hiervan bewust is. Houd er ook rekening mee dat de omgeving tijdens het opnemen door de auteur wordt gehiberiseerd.
 
    >[!NOTE]
    >

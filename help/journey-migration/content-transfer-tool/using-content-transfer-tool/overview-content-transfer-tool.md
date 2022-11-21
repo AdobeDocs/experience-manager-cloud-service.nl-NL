@@ -2,7 +2,7 @@
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 99ecf1309b9fa7613bfb9c99de9677700082f128
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 43%
@@ -34,7 +34,7 @@ Er is een nieuwe versie van het gereedschap Inhoud overbrengen beschikbaar waari
 
 * Zelfbediening om een migratieset één keer uit te pakken en tegelijkertijd in meerdere omgevingen in te voeren
 * Verbeterde gebruikerservaring dankzij betere laadstatussen, hulplijnen en foutafhandeling
-* Logbestanden voor congestie blijven bestaan en zijn altijd beschikbaar voor probleemoplossing
+* Logbestanden voor insluiting blijven bestaan en zijn altijd beschikbaar voor probleemoplossing
 
 Als u de nieuwe versie wilt gaan gebruiken, moet u oudere versies van het gereedschap Inhoud overbrengen verwijderen, omdat het programma een belangrijke architecturale wijziging heeft ondergaan.
 
