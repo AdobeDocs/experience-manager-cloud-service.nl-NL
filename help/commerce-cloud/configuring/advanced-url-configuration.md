@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2214'
 ht-degree: 3%
 
 ---
@@ -183,6 +183,18 @@ De `UrlProvider` is vooraf geconfigureerd om diepgaande koppelingen naar specifi
 
 Op publicatielagen moeten URL&#39;s van cataloguspagina&#39;s echter stabiel blijven om bijvoorbeeld geen winsten te verliezen op beoordelingen van zoekmachines. Vanwege deze publicatie-tier-instanties worden er geen diepgaande koppelingen naar specifieke cataloguspagina&#39;s per standaard weergegeven. Als u dit gedrag wilt wijzigen, _Specifieke paginastrategie CIF URL-provider_ kan worden gevormd om specifieke pagina URLs altijd te produceren.
 
+### Meerdere cataloguspagina&#39;s {#multiple-product-pages}
+
+Wanneer editors volledige controle willen hebben over de navigatie op hoofdniveau van een site, is het mogelijk dat u niet de hoogste categorieën van een catalogus wilt weergeven met één cataloguspagina. In plaats daarvan kunnen editors meerdere cataloguspagina&#39;s maken, één voor elke categorie van de catalogus die ze in de navigatie op hoofdniveau willen opnemen.
+
+In dat geval kan op elke cataloguspagina een verwijzing staan naar een product- en categoriepagina die specifiek is voor de categorie die voor de cataloguspagina is geconfigureerd. De `UrlProvider` gebruikt u deze om koppelingen te maken voor de pagina&#39;s en categorieën in de geconfigureerde categorie. Om prestatieredenen worden echter alleen de onderliggende elementen van de directe cataloguspagina van de basis-/landingspagina van een site in overweging genomen.
+
+Het wordt aanbevolen dat de product- en categoriepagina&#39;s van een cataloguspagina aan die cataloguspagina worden gekoppeld, anders werken componenten zoals Navigatie of Breadcrumb mogelijk niet correct.
+
+>[!NOTE]
+>
+> Volledige ondersteuning voor meerdere cataloguspagina&#39;s is vereist [CIF Core Components 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) of hoger.
+
 ## Aanpassingen {#customization}
 
 ### Aangepaste URL-indelingen {#custom-url-format}
@@ -217,11 +229,11 @@ _**Balans tussen URL-lengte en gecodeerde informatie.**_
 
 Afhankelijk van de grootte van de catalogus, met name de grootte en diepte van de categoriestructuur, is het wellicht niet verstandig om de volledige `url_path` van categorieën in de URL. In dat geval kan de lengte van de URL worden verminderd door alleen de categorie&#39;s op te nemen `url_key` in plaats daarvan. De meeste functies die beschikbaar zijn bij het gebruik van de categorie worden ondersteund `url_path`.
 
-Gebruik bovendien [Sling Mappings](#sling-mapping) om de sku met het product te combineren `url_key`. In de meeste e-commercesystemen volgt de sku een bepaalde indeling en wordt de sku van de `url_key` voor binnenkomende verzoeken moet gemakkelijk mogelijk zijn. Daarom moet het mogelijk zijn de URL van een productpagina te herschrijven naar `/p/{{category}}/{{sku}}-{{url_key}}.html`en een categorie-URL naar `/c/{{url_key}}.html` respectievelijk. De `/p` en `/c` prefix zijn nog steeds nodig om product en categoriepagina&#39;s van andere inhoudspagina&#39;s te onderscheiden.
+Gebruik bovendien [Sling Mappings](#sling-mapping) om de sku met het product te combineren `url_key`. In de meeste e-commercesystemen volgt de sku een bepaalde indeling en wordt de sku van de `url_key` voor binnenkomende verzoeken moet gemakkelijk mogelijk zijn. Daarom moet het mogelijk zijn de URL van een productpagina te herschrijven naar `/p/{{category}}/{{sku}}-{{url_key}}.html`en een categorie-URL naar `/c/{{url_key}}.html` respectievelijk. De `/p` en `/c` voorvoegsel is nog steeds nodig om product - en categoriepagina &#39; s te onderscheiden van andere inhoudspagina &#39; s .
 
 ### Migreren naar een nieuwe URL-indeling {#migrate-url-formats}
 
-Veel van de standaardindelingen voor URL&#39;s zijn op de een of andere manier compatibel met elkaar. Dit betekent dat URL&#39;s die door een van de indelingen worden ingegeven, door een andere kunnen worden geparseerd. Hierdoor kunt u gemakkelijker migreren tussen URL-indelingen.
+Veel van de standaardindelingen voor URL&#39;s zijn op de een of andere manier compatibel met elkaar. Dit betekent dat URL&#39;s die door een van deze indelingen zijn opgemaakt, door een andere kunnen worden geparseerd. Hierdoor kunt u gemakkelijker migreren tussen URL-indelingen.
 
 Aan de andere kant hebben zoekprogramma&#39;s enige tijd nodig om alle cataloguspagina&#39;s met de nieuwe URL-indeling opnieuw te doorzoeken. Ter ondersteuning van dit proces en ook om de gebruikerservaring te verbeteren, wordt aanbevolen omleidingen te bieden die de gebruiker van de oude naar de nieuwe URL&#39;s sturen.
 
