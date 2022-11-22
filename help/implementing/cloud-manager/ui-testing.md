@@ -2,9 +2,9 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 31e84b7383cd9774b0eaf8ee0f2fe39bcd77fa15
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1407'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Als u een `testing.properties` bestand in het constructieartefact toevoegen `inc
 <includes>
     <include>Dockerfile</include>
     <include>wait-for-grid.sh</include>
-    <include>testing.properties</include> <!- opt-in test module in Cloud Manager -->
+    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
 </includes>
 [...]
 ```
@@ -194,6 +194,24 @@ Zodra het statuseindpunt van Selenium met een positieve reactie beantwoordt, kun
 De Docker-afbeelding moet testrapporten genereren in de XML-indeling JUnit en deze opslaan in het pad dat is opgegeven door de omgevingsvariabele `REPORTS_PATH`. De indeling JUnit XML is een veelgebruikte indeling voor het rapporteren van de resultaten van tests. Als de Docker-afbeelding gebruikmaakt van Java en Maven, gebruikt u standaardtestmodules zoals [Maven Surefire-plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) en [Maven Failsafe-insteekmodule](https://maven.apache.org/surefire/maven-failsafe-plugin/) kan dergelijke rapporten uit de doos produceren.
 
 Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geïmplementeerd, controleert u de documentatie voor de gekozen hulpmiddelen op hoe u JUnit-XML-rapporten kunt genereren.
+
+### Schermafbeeldingen en video&#39;s vastleggen {#capture-screenshots}
+
+De Docker-afbeelding kan aanvullende testuitvoer genereren (bijvoorbeeld screenshots, video&#39;s) en deze opslaan in het pad dat wordt aangegeven door de omgevingsvariabele `REPORTS_PATH`. Alle bestanden gevonden onder de `REPORTS_PATH` worden opgenomen in het archief van de testresultaten.
+
+Als een archief van het testresultaat tijdens een UI testuitvoering is gecreeerd, bevat het dossier van het testlogboek aan het eind een verwijzing naar de plaats van het archief van het testresultaat.
+
+```
+[...]
+
+===============================================================
+The detailed test results can be downloaded from the URL below.
+Note: the link will expire after 60 days
+
+    https://results-host/test-results.zip
+
+===============================================================
+```
 
 ### Bestanden uploaden {#upload-files}
 
