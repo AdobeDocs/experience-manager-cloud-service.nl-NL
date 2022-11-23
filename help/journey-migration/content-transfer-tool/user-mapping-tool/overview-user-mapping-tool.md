@@ -2,9 +2,9 @@
 title: Overzicht van het gereedschap Toewijzing aan gebruiker
 description: Overzicht van het gereedschap Toewijzing aan gebruiker
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 99af299c3f401ce898366a75563d2b933f120e40
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '361'
 ht-degree: 7%
 
 ---
@@ -26,7 +26,7 @@ Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde
 
 ## Gereedschap Toewijzing gebruiker {#mapping-tool}
 
-Met het gereedschap Inhoud overbrengen (zonder gebruikerstoewijzing) worden alle gebruikers en groepen gemigreerd die zijn gekoppeld aan de inhoud die wordt gemigreerd. Het hulpmiddel van de Toewijzing van de Gebruiker is een deel van het Hulpmiddel van de Overdracht van de Inhoud, en zijn enig doel is de gebruikers en de groepen te wijzigen zodat zij correct door IMS kunnen worden erkend, de enig-sign-on functionaliteit die door AEM as a Cloud Service wordt gebruikt. Zodra deze wijzigingen zijn aangebracht, migreert het gereedschap Inhoud overbrengen de gebruikers en groepen van de opgegeven inhoud zoals gewoonlijk.
+Met het gereedschap Inhoud overbrengen (zonder gebruikerstoewijzing) worden alle gebruikers en groepen gemigreerd die zijn gekoppeld aan de inhoud die wordt gemigreerd. Het hulpmiddel van de Toewijzing van de Gebruiker is een deel van het Hulpmiddel van de Overdracht van de Inhoud, en zijn enig doel is de gebruikers te wijzigen zodat zij correct door IMS, de enig-sign-on functionaliteit kunnen worden erkend die door AEM as a Cloud Service wordt gebruikt. Zodra deze wijzigingen zijn aangebracht, migreert het gereedschap Inhoud overbrengen de gebruikers en groepen van de opgegeven inhoud zoals gewoonlijk.
 
 ### Volgende functies {#whats-next}
 
