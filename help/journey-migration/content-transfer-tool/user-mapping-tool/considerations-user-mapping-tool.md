@@ -2,9 +2,9 @@
 title: Belangrijke overwegingen voor het gereedschap Toewijzing van gebruikers
 description: Belangrijke overwegingen voor het gereedschap Toewijzing van gebruikers
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 18047b129a9a347cbf6edcdc07dc6570fca26d3b
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,15 @@ ht-degree: 0%
 
 De volgende specifieke gevallen worden geregistreerd:
 
-1. Als een gebruiker geen e-mailadres heeft in het dialoogvenster `profile/email` van hun *jcr* wordt de gebruiker of groep in kwestie gemigreerd maar niet toegewezen.
+1. Als een gebruiker geen e-mailadres heeft in het dialoogvenster `profile/email` van hun *jcr* wordt de gebruiker of groep in kwestie gemigreerd maar niet toegewezen.  Dit is zelfs het geval als het e-mailadres wordt gebruikt als gebruikersnaam voor het aanmelden.
 
 1. Als een bepaalde e-mail niet wordt gevonden op het Adobe Identity Management System (IMS) voor de gebruikte organisatie-id (of als de IMS-id om een andere reden niet kan worden opgehaald), wordt de gebruiker of groep in kwestie gemigreerd, maar niet toegewezen.
 
 1. Als de gebruiker momenteel is uitgeschakeld, wordt deze op dezelfde manier behandeld als wanneer de gebruiker niet is uitgeschakeld. Het wordt toegewezen en gemigreerd als normaal en blijft uitgeschakeld in de cloudinstantie.
 
 1. Als een gebruiker op de doelinstantie van AEM Cloud Service met de zelfde gebruikersnaam (rep:principalName) zoals één van de gebruikers op de bron AEM instantie bestaat zal de gebruiker of de groep in kwestie niet worden gemigreerd.
+
+1. Als een gebruiker wordt gemigreerd zonder dat deze eerst via gebruikerstoewijzing wordt toegewezen, kunnen deze zich op het doelwolkensysteem niet aanmelden met hun IMS-id.  Ze kunnen zich misschien aanmelden met de traditionele AEM, maar houd er rekening mee dat dit normaal gesproken niet het gewenste of verwachte resultaat is.
 
 ## Aanvullende overwegingen {#additional-considerations}
 
