@@ -2,9 +2,9 @@
 title: Aangepaste foutpagina's
 description: AEM wordt geleverd met een standaardfouthandler voor de afhandeling van HTTP-fouten, die kan worden aangepast.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: db997127c6cbba434b86990852d1ba590d5f12a5
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,12 @@ Door [aanpassen van de pagina&#39;s die worden weergegeven door de fouthandler](
 Anders is de antwoordcode ingesteld op 500, maar wordt de `500.jsp` script niet uitgevoerd.
 
 Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fouthandler gelijk zijn aan de uitzonderingsklasse (of superklasse). Om al dergelijke uitzonderingen te behandelen kunt u een manuscript tot stand brengen `/apps/sling/servlet/errorhandler/Throwable.jsp` of `/apps/sling/servlet/errorhandler/Exception.jsp`.
+
+>[!NOTE]
+>
+>In AEM als Cloud Service, dient CDN een generische foutenpagina wanneer een 5XX fout van het achtereind wordt ontvangen. Om de daadwerkelijke reactie van de backend toe te staan om door te gaan moet u de volgende kopbal aan de reactie toevoegen:
+>`x-aem-error-pass: true`
+>Dit werkt alleen voor reacties die afkomstig zijn van AEM of de laag Apache/Dispatcher. Andere onverwachte fouten die uit tussenliggende infrastructuurlagen komen zullen nog de generische foutenpagina tonen.
 
 >[!CAUTION]
 >
