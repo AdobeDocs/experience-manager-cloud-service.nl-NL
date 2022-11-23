@@ -2,7 +2,7 @@
 title: Aangepaste foutpagina's
 description: AEM wordt geleverd met een standaardfouthandler voor de afhandeling van HTTP-fouten, die kan worden aangepast.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 570e7d71fc8b3db33e93394d0aa53cb159636fb7
+source-git-commit: ab68c03b29f3d2179b33c61a6d853d80ccb17615
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -71,7 +71,6 @@ Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fou
 >[!NOTE]
 >
 >In AEM als Cloud Service, dient CDN een generische foutenpagina wanneer een 5XX fout van het achtereind wordt ontvangen. Om de daadwerkelijke reactie van de backend toe te staan om door te gaan moet u de volgende kopbal aan de reactie toevoegen: `x-aem-error-pass: true`.
->
 >Dit werkt alleen voor reacties die afkomstig zijn van AEM of de laag Apache/Dispatcher. Andere onverwachte fouten die uit tussenliggende infrastructuurlagen komen zullen nog de generische foutenpagina tonen.
 
 >[!CAUTION]
