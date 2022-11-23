@@ -2,9 +2,9 @@
 title: Gebruikerstoewijzing gebruiken
 description: Gebruikerstoewijzing gebruiken
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
+source-git-commit: a9e30f6a15bbc9fc830849e05e1814a2cdd50fd5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '816'
 ht-degree: 3%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 3%
 Het hulpmiddel van de Toewijzing van de Gebruiker gebruikt API die het toestaat om gebruikers van het Systeem van Adobe Identity Management (IMS) per e-mail op te zoeken en hun IMS IDs terug te keren. Deze API vereist de gebruiker om een identiteitskaart van de Cliënt voor hun organisatie, een Geheim van de Cliënt, en een Token van de Toegang of van de Drager tot stand te brengen.
 
 ## Het gereedschap Toewijzing gebruiker instellen {#setting-up-user-mapping}
+
+**Vereiste:** Voor gebruikerstoewijzing moet elke gebruiker die aan zijn IMS-id moet worden toegewezen, een e-mailadres hebben in zijn profiel in AEM en in IMS.  Zelfs als de gebruiker een e-mailadres gebruikt als een gebruikers-id voor het aanmelden, werkt de toewijzing niet voor die gebruiker, tenzij het e-mailadres ook in het profiel en ook in IMS staat.
 
 Voer de onderstaande stappen uit om dit in te stellen:
 
