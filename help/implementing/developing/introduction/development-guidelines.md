@@ -1,11 +1,11 @@
 ---
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
-description: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
+description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 88d7728758927f16ed0807de8d261ca1b4b8b104
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 2%
+source-wordcount: '2590'
+ht-degree: 1%
 
 ---
 
@@ -14,18 +14,16 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="Ontwikkelingsrichtlijnen voor AEM as a Cloud Service"
->abstract="Op dit tabblad kunt u de aanbevolen werkwijzen voor codering weergeven in AEM as a Cloud Service. Codering kan aanzienlijk anders zijn dan implementaties op AMS- of On-Prem-niveau."
+>abstract="Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS."
 >additional-url="https://video.tv.adobe.com/v/330555/" text="Demo van pakketstructuur"
+
+Dit document bevat richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
+
+## Code moet clustervriendelijk zijn {#cluster-aware}
 
 De code die in AEM as a Cloud Service loopt moet zich ervan bewust zijn dat het altijd in een cluster loopt. Dit betekent dat er altijd meer dan één instantie actief is. De code moet veerkrachtig zijn, vooral omdat een instantie op om het even welk ogenblik zou kunnen worden tegengehouden.
 
 Tijdens de update van AEM as a Cloud Service, zullen er instanties zijn met oude en nieuwe code die parallel lopen. Daarom moet oude code niet breken met inhoud die door nieuwe code wordt gecreeerd en de nieuwe code moet oude inhoud kunnen behandelen.
-<!--
-
->[!NOTE]
-> All of the best practices mentioned here hold true for on-premise deployments of AEM, if not stated otherwise. An instance can always stop due to various reasons. However, with Skyline it is more likely to happen therefore an instance stopping is the rule not an exception.
-
--->
 
 Als de primaire code in de cluster moet worden geïdentificeerd, kan de API voor detectie van Apache Sling worden gebruikt om deze te detecteren.
 
@@ -262,7 +260,24 @@ De `smtp.starttls` eigenschap wordt automatisch door AEM as a Cloud Service bij 
 
 De SMTP servergastheer zou aan dat van uw postserver moeten worden geplaatst.
 
+## Vermijd grote multi-value eigenschappen {#avoid-large-mvps}
+
+De opslagplaats van de Eak-inhoud die AEM as a Cloud Service steunt is niet bedoeld om met een bovenmatig aantal multi-value eigenschappen (MVPs) te worden gebruikt. MVP&#39;s zijn lager dan 1000 en daarom is het handig deze regel te handhaven. De werkelijke prestaties zijn echter afhankelijk van vele factoren.
+
+De waarschuwingen worden geregistreerd door gebrek na meer dan 1000. Ze zijn vergelijkbaar met het volgende.
+
+```text
+org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/path/to/property] detected (1029 values). 
+```
+
+Grote MVP&#39;s kunnen leiden tot fouten omdat het MongoDB-document groter is dan 16 MB, wat resulteert in fouten die lijken op de volgende.
+
+```text
+Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
+```
+
+Zie de [Apache Oak-documentatie](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) voor meer informatie .
 
 ## [!DNL Assets] ontwikkelingsrichtsnoeren en gebruiksgevallen {#use-cases-assets}
 
-Zie voor meer informatie over de gevallen, aanbevelingen en referentiematerialen voor as a Cloud Service middelen voor ontwikkelingstoepassingen [Referenties voor ontwikkelaars van middelen](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Raadpleeg voor meer informatie over de gevallen, aanbevelingen en referentiematerialen voor as a Cloud Service middelen van het ontwikkelingstoepassingsprogramma de [Referenties voor ontwikkelaars voor Middelen.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
