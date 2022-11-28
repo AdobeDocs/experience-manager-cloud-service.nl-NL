@@ -3,9 +3,9 @@ title: Dynamic Media-Cloud Service configureren
 description: Leer hoe u Dynamic Media in Adobe Experience Manager as a Cloud Service configureert.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 58aee2ad24b38fd8abc197961adda524832d2614
+source-git-commit: 50a7db14a378f99eeadc3f9cb91f228ea4139ff4
 workflow-type: tm+mt
-source-wordcount: '3375'
+source-wordcount: '3559'
 ht-degree: 2%
 
 ---
@@ -96,7 +96,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | Pad naar hoofdmap van bedrijf | Het pad naar de hoofdmap van uw bedrijf. |
    | Middelen publiceren | U kunt uit de volgende drie opties kiezen:<br>**[!UICONTROL Immediately]**- Wanneer elementen worden geüpload, neemt het systeem de elementen op en wordt de URL/Embed onmiddellijk weergegeven. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.<br>**[!UICONTROL On Activation]** - U moet het element eerst expliciet publiceren voordat er een URL-/insluitkoppeling wordt opgegeven.<br>**[!UICONTROL Selective Publish]**- Elementen worden automatisch gepubliceerd voor een beveiligde voorvertoning. Zij kunnen ook uitdrukkelijk aan as a Cloud Service Experience Manager worden gepubliceerd zonder aan DMS7 voor levering in het openbare domein te publiceren. In de toekomst is deze optie bedoeld om elementen te publiceren voor de Experience Manager van as a Cloud Service elementen en om elementen te publiceren naar Dynamic Media, die elkaar wederzijds uitsluiten. Met andere woorden, u kunt elementen publiceren naar DMS7 zodat u functies als Slim uitsnijden of dynamische uitvoeringen kunt gebruiken. Of u kunt elementen alleen publiceren in een Experience Manager die as a Cloud Service is voor een voorvertoning; dezelfde activa worden niet in DMS7 gepubliceerd voor levering in het publieke domein. |
    | Beveiligde voorvertoningsserver | Hier kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Dat wil zeggen, nadat uitvoeringen zijn gegenereerd, kunnen as a Cloud Service Experience Managers veilig de externe Dynamic Media-uitvoeringen openen en bekijken (er worden geen binaire bestanden teruggestuurd naar de as a Cloud Service instantie van de Experience Manager).<br>Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe dat u dit het plaatsen zoals gespecificeerd verlaat. |
-   | Alle inhoud synchroniseren | Standaard geselecteerd. Schakel deze optie uit als u elementen selectief wilt opnemen in of uitsluiten van de synchronisatie met Dynamic Media. Als u deze optie uitschakelt, kunt u kiezen uit de volgende twee Dynamic Media-synchronisatiemodi:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]**- De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.<br>Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamic Media, selecteert u een elementmap en selecteert u vervolgens op de werkbalk **[!UICONTROL Properties]**. Op de **[!UICONTROL Details]** tabblad, in het dialoogvenster **[!UICONTROL Dynamic Media sync mode]** Kies een van de volgende drie opties in de vervolgkeuzelijst. Als u klaar bent, selecteert u **[!UICONTROL Save]**. *Onthoud: deze drie opties zijn niet beschikbaar als u **Alle inhoud synchroniseren**eerder.* Zie ook [Werken met Selectief publiceren op mapniveau in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Inherited]**- Geen expliciete synchronisatiewaarde in de map. In plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde presentaties wordt weergegeven als knopinfo.<br>**[!UICONTROL Enable for subfolders]** - Neem alles op in deze substructuur voor synchronisatie met Dynamic Media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.<br>**[!UICONTROL Disabled for subfolders]**- Sluit alles in deze substructuur uit van synchroniseren naar Dynamic Media. |
+   | Alle inhoud synchroniseren | Standaard geselecteerd. Schakel deze optie uit als u elementen selectief wilt opnemen in of uitsluiten van de synchronisatie met Dynamic Media. Als u deze optie uitschakelt, kunt u kiezen uit de volgende twee Dynamic Media-synchronisatiemodi:<br>**[!UICONTROL Dynamic Media sync mode]**<br>**[!UICONTROL Enable by default]**- De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.<br>Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamic Media, selecteert u een elementmap en selecteert u vervolgens op de werkbalk **[!UICONTROL Properties]**. Op de **[!UICONTROL Details]** tabblad, in het dialoogvenster **[!UICONTROL Dynamic Media sync mode]** Kies een van de volgende drie opties in de vervolgkeuzelijst. Als u klaar bent, selecteert u **[!UICONTROL Save]**. _Onthoud: deze drie opties zijn niet beschikbaar als u **Alle inhoud synchroniseren**eerder._ Zie ook [Werken met Selectief publiceren op mapniveau in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Inherited]**- Geen expliciete synchronisatiewaarde in de map. In plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde presentaties wordt weergegeven als knopinfo.<br>**[!UICONTROL Enable for subfolders]** - Neem alles op in deze substructuur voor synchronisatie met Dynamic Media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.<br>**[!UICONTROL Disabled for subfolders]**- Sluit alles in deze substructuur uit van synchroniseren naar Dynamic Media. |
 
    >[!NOTE]
    >
@@ -129,7 +129,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 U wordt nu gebeëindigd met de basisconfiguratie; U kunt Dynamic Media gebruiken.
 
-Als u uw configuratie verder wilt aanpassen, kunt u naar keuze om het even welke taken voltooien onder [Geavanceerde instellingen configureren in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+Als u uw configuratie verder wilt aanpassen, zoals toelatend ACL (de Lijst van het Toegangsbeheer) toestemmingen, kunt u naar keuze om het even welke taken voltooien onder [Geavanceerde instellingen configureren in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ### Een nieuwe Dynamic Media-configuratie oplossen {#troubleshoot-dm-config}
 
@@ -185,8 +185,9 @@ Het gewijzigde wachtwoord wordt opgeslagen wanneer u **[!UICONTROL Save]** in de
 
 ## (Optioneel) Geavanceerde instellingen configureren in Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-Als u de configuratie en configuratie van Dynamic Media verder wilt aanpassen of de prestaties ervan wilt optimaliseren, kunt u een of meer van de volgende handelingen uitvoeren *optioneel* taken:
+Als u de configuratie en configuratie van Dynamic Media verder wilt aanpassen of de prestaties ervan wilt optimaliseren, kunt u een of meer van de volgende handelingen uitvoeren _optioneel_ taken:
 
+* [(Optioneel) ACL-machtigingen inschakelen in Dynamic Media](#optional-enable-acl)
 * [(Optioneel) Dynamic Media-instellingen instellen en configureren](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Optioneel) Pas de prestaties van Dynamic Media aan](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
@@ -195,6 +196,33 @@ Als u de configuratie en configuratie van Dynamic Media verder wilt aanpassen of
 * [(Optional) Filtering assets for replication](#optional-filtering-assets-for-replication)
 
 -->
+
+### (Optioneel) De toegangsbeheerlijst inschakelen in Dynamic Media {#optional-enable-acl}
+
+Als je Dynamic Media uitvoert op AEM, gaat het momenteel door `/is/image` verzoeken om het Beeld van de Voorproef te beveiligen die zonder ACL (de Lijst van het Toegangsbeheer) toestemmingen op PlatformServerServlet te controleren. U kunt _enable_ ACL toestemmingen. De bevoegde autoriteit `/is/image` verzoeken. Als een gebruiker niet gemachtigd is om toegang te krijgen tot het middel, wordt de fout &quot;403 - Verboden&quot; weergegeven.
+
+**ACL toestemmingen in Dynamic Media toelaten:**
+
+1. Navigeer vanuit Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+
+1. Er wordt een nieuw browsertabblad geopend voor de **[!UICONTROL Adobe Experience Manager Web Console Configuration]** pagina.
+
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+
+1. Schuif op de pagina naar de naam _Adobe CQ Scene7 PlatformServer_.
+
+1. Rechts van de naam selecteert u het potloodpictogram (**[!UICONTROL Edit the configuration values]**).
+
+1. Op de **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** Selecteer het selectievakje voor de volgende twee instellingen:
+
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Als deze instelling is ingeschakeld, worden de resultaten van de machtiging voor twee minuten (standaard) in cache opgeslagen.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - Als deze instelling is ingeschakeld, wordt de toegang van een gebruiker gevalideerd terwijl deze via Dynamic Media Image Server een voorvertoning van de elementen weergeeft.
+
+   ![Instellingen van toegangsbeheerlijst inschakelen in de modus Dynamic Media - Scene7](/help/assets/dynamic-media/assets/acl.png)
+
+1. Selecteer in de rechterbenedenhoek van de pagina de optie **[!UICONTROL Save]**.
 
 ### (Optioneel) Dynamic Media-instellingen instellen en configureren {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
