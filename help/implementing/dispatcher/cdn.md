@@ -3,9 +3,9 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
+source-git-commit: 093a83b7e76167b1962639b245332e515df2447b
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1145'
 ht-degree: 7%
 
 ---
@@ -90,7 +90,8 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Wanneer u uw eigen CDN gebruikt, hoeft u de domeinen en certificaten niet te installeren in Cloud Manager. Het verpletteren in Adobe CDN zal door het standaarddomein te gebruiken worden gedaan `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>Wanneer u uw eigen CDN gebruikt, hoeft u geen domeinen en certificaten te installeren in Cloud Manager. Het verpletteren in Adobe CDN zal door het standaarddomein te gebruiken worden gedaan `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` die in het verzoek moeten worden ingediend `Host` header. Het verzoek overschrijven `Host` header met een aangepaste domeinnaam kan ertoe leiden dat de aanvraag onjuist wordt gerouteerd door de Adobe CDN.
+
 
 >[!NOTE]
 >
