@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2022.11.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.11.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2022.12.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.12.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3045c042129951bf693bca36a42c9111862e09f2
+source-git-commit: aa7f2175e2a43a318a6171e622d292ed3a8e958b
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2022.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2022.12.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.11.0 in AEM as a Cloud Service.
+Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.12.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,19 +21,15 @@ Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.1
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2022.11.0 in AEM as a Cloud Service is 3 november 2022. De volgende release is gepland voor 29 november 2022.
+De releasedatum voor Cloud Manager versie 2022.12.0 in AEM as a Cloud Service is 29 november 2022. De volgende release is gepland voor 19 januari 2023.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Het licentiedashboard voor de AEM Sites-oplossing geeft nu contractgegevens weer, inclusief of de huurder zich al dan niet binnen zijn abonnement bevindt.
-
->[!NOTE]
->
-> Dit onderdeel zal de komende weken geleidelijk aan aan alle huurders worden uitgerold.
-
-* Wanneer een milieu verbonden aan een pijpleiding een status heeft die niet de pijpleiding om toelaat worden uitgevoerd, wordt de looppasactie onbruikbaar gemaakt met verklarende tooltip.
-* Een verbeterd bericht werd toegevoegd aan UI toen **Programma toevoegen** knoop is gehandicapt wegens ontoereikende aanspraken voor de huurder.
+* Meldingen voor [AEM onderhoudsupdates](/help/overview/what-is-new-and-different.md#aem-updates) wordt weergegeven in de interface van Cloud Manager. Deze wijziging zal geleidelijk worden doorgevoerd in de weken na de release van 2022.12.0.
+* Wanneer een inname via de [Content Transfer Tool (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) wordt de status van de omgeving in zowel de ontwikkelaarsconsole als in Cloud Manager weergegeven als `Ingestion in Progress`.
+* Verbeteringen van de beschikbaarheid en betrouwbaarheid van [Pipetten van Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) zijn gemaakt.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* De feedback tijdens de bewerkingsproductiepijplijn is verbeterd en komt niet vaak voor in een of meer ontbrekende omgevingen.
+* Er is een wijziging aangebracht om [pijpleidingen aan de voorzijde](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) van het lopen terwijl een pijpleiding bezig is op het zelfde milieu.
+* Er is een wijziging aangebracht om een `PATCH /program//environment//variables` verzoek om omgevingen met de `FAILED` status.
