@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 77cba988368c07438835148d08f1e8cc6e469b7b
+source-git-commit: 93e25fcbe07d3262d924f97551e19661ea80a034
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '987'
 ht-degree: 4%
 
 ---
@@ -118,27 +118,27 @@ Zie ook [Werken met 3D-middelen in Dynamic Media](/help/assets/dynamic-media/ass
 
 De volgende documentindelingen worden ondersteund voor functies voor middelenbeheer:
 
-| Bestandsindeling | Miniaturen genereren | Volledige tekst extraheren | Breedte/Hoogte | Metagegevensbeheer | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
-| ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| DOC | - | - | - | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ePub | - | ✓ | - | - | - |
-| HTML | - | ✓ | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
-| UIT | ✓ | ✓ | ✓ | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | ✓ | ✓ | - | ✓ | ✓ |
-| XLS | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XML | - | ✓ | - | - | - |
+| Bestandsindeling | Miniaturen genereren | Volledige tekst extraheren | Breedte/Hoogte | Metagegevensbeheer | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) | Voorvertoning van volledig document |
+| ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |--------|
+| DOC | - | - | - | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ePub | - | ✓ | - | - | - | - |
+| HTML | - | ✓ | - | ✓ | ✓ | - |
+| ODF | ✓ | ✓ | ✓ | - | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - | - |
+| ODP | ✓ | ✓ | ✓ | - | - | - |
+| ODS | ✓ | ✓ | ✓ | - | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| UIT | ✓ | ✓ | ✓ | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | ✓ | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PS | - | - | ✓ | - | - | - |
+| RTF | - | ✓ | - | ✓ | ✓ | ✓ |
+| TXT | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| XLS | - | - | - | ✓ | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | - | ✓ | - | - | - | - |
 
 ## Video-indelingen {#video-formats}
 
