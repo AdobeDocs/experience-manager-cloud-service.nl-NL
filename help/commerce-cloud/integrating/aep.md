@@ -10,13 +10,13 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
+exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
+source-git-commit: c2fd3d33eb02ea671d9811ad527bf167a279ff01
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2080'
 ht-degree: 0%
 
 ---
-
 
 # AEM-CIF kerncomponenten en integratie van Adobe Experience Platform {#aem-cif-aep-integration}
 
@@ -471,10 +471,31 @@ Het project van de PWA Studio laat u Progressive Web Application (PWA) opslagpla
 
 Vanaf nu worden de volgende gebeurtenissen ondersteund:
 
-- addToCart
-- pageView
-- customUrl
-- referrerUrl
+__XDM-gebeurtenissen ervaren:__
+
+1. Toevoegen aan winkelwagentje (AEM)
+1. Pagina weergeven (AEM)
+1. Product weergeven (AEM)
+1. Zoekaanvraag verzonden (AEM)
+1. Respons zoekopdracht ontvangen (AEM)
+
+Wanneer [Peregrine-onderdelen](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) worden opnieuw gebruikt in het AEM Commerce-project:
+
+__XDM-gebeurtenissen ervaren:__
+
+1. Verwijderen uit winkelwagen
+1. Winkelwagentje openen
+1. Winkelwagentje bekijken
+1. Direct aanschaffen
+1. Afhandeling starten
+1. Uitchecken voltooien
+
+__XDM-profielgebeurtenissen:__
+
+1. Aanmelden
+1. Account maken
+1. Account bewerken
+
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -482,5 +503,5 @@ Raadpleeg de volgende bronnen voor meer informatie:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Overzicht van de Experience Platform-aansluiting](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+- [Verbindingsgebeurtenissen Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
 - [Adobe Experience Platform-overzicht](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-
