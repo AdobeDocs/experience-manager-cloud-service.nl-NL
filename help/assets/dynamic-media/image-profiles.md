@@ -4,9 +4,9 @@ description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellinge
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
+source-git-commit: 08b523fe66b86867f65c794e843fc55fe0faa050
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3378'
 ht-degree: 4%
 
 ---
@@ -54,19 +54,28 @@ Verscherpen wordt beschreven in [Afbeeldingen verscherpen](/help/assets/dynamic-
 
 ## Opties voor uitsnijden {#crop-options}
 
-Wanneer u Slim uitsnijden op afbeeldingen implementeert, raadt Adobe de volgende aanbevolen procedures aan en wordt de volgende limiet toegepast:
+Wanneer u SmartCrop op afbeeldingen implementeert, raadt Adobe de volgende aanbevolen procedures aan en past de volgende limiet toe:
 
 | Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
-| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 |
+| Aantal slimme gewassen per beeld | 5 | 100 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverhouding. Als voor de instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel de hoogte-breedteverhouding voor de toegevoegde afmetingen in het afbeeldingsprofiel hetzelfde is, wordt dezelfde hoogte-breedteverhouding naar Dynamic Media verzonden. Adobe raadt u aan hetzelfde snijgebied te gebruiken. Zo voorkomt u dat er invloed optreedt op verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt.
+De coördinaten voor slimme uitsnijdingen zijn afhankelijk van de hoogte-breedteverhouding. Als voor de instellingen Slim uitsnijden in een afbeeldingsprofiel de hoogte-breedteverhouding voor de toegevoegde afmetingen in het afbeeldingsprofiel gelijk is, wordt dezelfde hoogte-breedteverhouding naar Dynamic Media verzonden. Adobe raadt u aan hetzelfde snijgebied te gebruiken. Zo voorkomt u dat er invloed optreedt op verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt.
 
-Voor elke SmartCrop-generatie die u maakt, is extra verwerkingstijd nodig. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat u Smart Crop op mapniveau kunt toepassen, raadt Adobe u aan het gereedschap in mappen te gebruiken *alleen* waar dat nodig is.
+Voor elke slimme uitsnijdgeneratie die u maakt, is extra verwerkingstijd nodig. Als u bijvoorbeeld meer dan vijf hoogte-breedteverhoudingen voor slimme uitsnijden toevoegt, kan dit leiden tot een trage inname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat u Smart Crop op mapniveau kunt toepassen, raadt Adobe u aan het gereedschap in mappen te gebruiken *alleen* waar dat nodig is.
+
+**Richtlijnen voor het definiëren van SmartCrop in een afbeeldingsprofiel**
+Adobe raadt de volgende richtlijnen en tips aan om het gebruik van Smart Crop onder controle te houden en de verwerkingstijd en opslag van gewassen te optimaliseren:
+
+* Maak geen dubbele slimme uitsnijdprofielen met dezelfde breedte- en hoogtewaarden.
+* Noem slimme gewassen die op gewassenafmetingen worden gebaseerd, niet op eindgebruik. Dit helpt u te optimaliseren voor duplicaten waarbij één dimensie op meerdere pagina&#39;s wordt gebruikt.
+* Maak paginagewijs/middelengewijs afbeeldingsprofielen voor specifieke mappen en submappen in plaats van een algemeen profiel voor slimme uitsnijdingen dat wordt toegepast op alle mappen of alle elementen.
+* Een afbeeldingsprofiel dat u op submappen toepast, overschrijft een afbeeldingsprofiel dat op de map is toegepast.
+* In het ideale geval hebt u 10-15 slimme gewassen per afbeelding om de beeldverhoudingen en de verwerkingstijd te optimaliseren.
 
 U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren of de snijinhoud in de verschillende doelresoluties te behouden.
 
