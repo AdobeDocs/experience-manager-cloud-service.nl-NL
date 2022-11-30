@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
+source-git-commit: b40c46ff5d4399e6feff0ccaf37bdf0336c88016
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1374'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,14 @@ Adobe Experience Manager as a Cloud Service gebruikt de [Distributie van inhoud 
 >Lezen [Distributie](/help/overview/architecture.md#content-distribution) voor meer informatie .
 
 ## Methoden voor het publiceren van inhoud {#methods-of-publishing-content}
+
+>[!NOTE]
+>
+>Als u interesse hebt in content voor bulkpublicaties, gebruikt u de [Workflow van inhoudsstructuur publiceren](#publish-content-tree-workflow).
+>Deze workflowstap is speciaal voor Cloud Service gemaakt en kan grote ladingen efficiënt verwerken.
+>Het wordt niet aanbevolen om uw eigen aangepaste code voor bulkpublicaties te maken.
+>Als u om welke reden dan ook moet aanpassen, kunt u deze workflow/workflow-stap activeren door bestaande workflow-API&#39;s te gebruiken.
+>Hoewel het altijd een goede gewoonte is om alleen inhoud te publiceren die gepubliceerd moet worden en om voorzichtig te zijn met het niet publiceren van een groot aantal inhoud als dit niet nodig is, gelden er geen beperkingen voor de hoeveelheid inhoud die u via de workflow van de inhoudsstructuur publiceren kunt verzenden.
 
 ### Snel publiceren/publiceren - Gepland ongedaan maken/publiceren {#publish-unpublish}
 
