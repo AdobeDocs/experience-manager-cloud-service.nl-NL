@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 3255e988c5ec9a0de33660061aeb21d91c3bc4d3
+source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2278'
 ht-degree: 11%
 
 ---
@@ -29,11 +29,11 @@ U hebt het volgende nodig om Brand Portal op uw Experience Manager Assets te act
 
 >[!NOTE]
 >
->Een Experience Manager Assets als [!DNL Cloud Service] -instantie heeft het recht slechts verbinding te maken met één Brand Portal-gebruiker. U kunt voor uw Experience Manager Assets als [!DNL Cloud Service] , waarbij Brand Portal op één omgeving wordt geactiveerd.
+>Een geconfigureerde productieomgeving is vereist voor een Experience Manager Assets als een [!DNL Cloud Service] -instantie om verbinding te maken met Brand Portal-gebruiker.
 
 **Stappen om Brand Portal te activeren**
 
-U kunt Brand Portal activeren terwijl u omgevingen voor uw Experience Manager Assets maakt als een [!DNL Cloud Service] of afzonderlijk. Laten we ervan uitgaan dat de omgevingen al zijn gemaakt en dat u nu Brand Portal moet activeren.
+U kunt Brand Portal activeren terwijl u de productieomgevingen voor uw Experience Manager Assets maakt als een [!DNL Cloud Service] of afzonderlijk. Laten we ervan uitgaan dat de omgeving al tot stand is gekomen en dat u nu Brand Portal moet activeren.
 
 1. Meld u aan bij Adobe Cloud Manager en navigeer naar **[!UICONTROL Environments]**.
 
@@ -69,7 +69,7 @@ U kunt Brand Portal activeren terwijl u omgevingen voor uw Experience Manager As
 * [Omgevingen beheren in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
-**Aanmelden bij de Brand Portal-huurder**:
+**Aanmelden bij uw Brand Portal-huurder**:
 
 Nadat u de Brand Portal-huurder hebt geactiveerd in Cloud Manager, kunt u zich vanuit Admin Console aanmelden bij Brand Portal of rechtstreeks de URL van de huurder gebruiken.
 
@@ -80,7 +80,7 @@ Daar is de Tenant-id de IMS org.
 Voer de volgende stappen uit als u niet zeker bent van de Brand Portal-URL:
 
 1. Aanmelden bij [Admin Console](https://adminconsole.adobe.com/) en navigeer naar **[!UICONTROL Products]**.
-1. Selecteer in het linkerspoor de optie **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
+1. Selecteer in het linkerdeelvenster de optie **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
 1. Klikken op **[!UICONTROL Go to Brand Portal]** om Brand Portal rechtstreeks in de browser te openen.
 
    Of kopieer de URL van de Brand Portal-huurder vanuit de **[!UICONTROL Go to Brand Portal]** koppelen en plakken in uw browser om de Brand Portal-interface te openen.
@@ -403,7 +403,7 @@ U kunt de configuratie nu testen door de distributieagent te controleren en elem
 
 Perform the following steps to validate the configuration:
 
-1. Log in to AEM Assets.
+1. Login to AEM Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
