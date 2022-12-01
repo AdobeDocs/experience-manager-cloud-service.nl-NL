@@ -4,9 +4,9 @@ description: Inleiding tot integratie tussen [!DNL Assets] en [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5937ee8328be1af7e7f3f4765e24d65b074e02f1
+source-git-commit: 20dbcff249e3fc1beab24600cd54ce1bf4085d38
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1267'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Hieronder volgen de details van de functies die beschikbaar zijn via verschillen
 
 | Functie | Beschrijving | [!DNL Workfront] en [!DNL Assets Essentials] *Geen aansluiting (OOTB)* | [!DNL Workfront] for [!DNL AEM] connector *Vereist connector* | [!DNL Workfront for Experience Manager enhanced connector] *Vereist connector* | Workfront en [!DNL Experience Manager as a Cloud Service] *Geen aansluiting (OOTB)* |
 |----|----|----|------|-----|-----|
-| Implementatiemethoden | Geschikt voor [!DNL Assets] aanbieden. | Assets Essentials | Cloud Service, beheerde services van Adobe, op locatie | Cloud Service, beheerde services van Adobe, op locatie | Cloud Service, beheerde services van Adobe, op locatie |
+| Implementatiemethoden | Geschikt voor [!DNL Assets] aanbieden. | Assets Essentials | Cloud Service, beheerde services van Adobe, op locatie | Cloud Service, beheerde services van Adobe, op locatie | Cloud Service |
 | **Algemeen** |
 | Digitale bestanden verzenden vanuit [!DNL Workfront] tot [!DNL Assets] | De nieuwste versie van een WF-document kan worden geüpload naar AEM Assets, dat als een nieuwe versie van het document wordt gekoppeld. | ✓ | ✓ | ✓ | ✓ |
 | Mappen handmatig koppelen AEM aan Workfront-objecten | Bestaande AEM mappen kunnen worden gekoppeld als een Workfront-map en de onderliggende elementen ervan worden gekoppeld als nieuwe Workfront-documenten. | ✓ | ✓ | ✓ | ✓ |
@@ -66,7 +66,7 @@ Hieronder volgen de details van de functies die beschikbaar zijn via verschillen
 | In Workfront gekoppelde middelen wanneer op Direct door gebruiker AEM wordt geklikt | Gebruikers worden doorgestuurd naar AEM om een voorvertoning van een gekoppeld element weer te geven vanuit Workfront. | ✓ | ✓ | ✓ | Binnenkort |
 | Automatisch gekoppelde AEM mappen maken in Workfront | Maak automatisch gekoppelde AEM mappen in Workfront met behulp van projectstatussen. Configureer automatisch AEM mappen op basis van Workfront-Portfolio, -programma&#39;s en -projecten. | Nee | Nee | ✓ | Nee |
 | Navigeer rechtstreeks naar AEM opslagplaatsen vanuit Workfront | Gebruikers toestaan te navigeren naar beschikbare AEM opslagruimten die in Workfront zijn geconfigureerd. | ✓ | Nee | Nee | ✓ |
-| Automatisch gekoppelde AEM maken in Workfront | Maak automatisch gekoppelde AEM mappen in Workfront met de optie die beschikbaar is op het tabblad Documenten. | ✓ | Nee | Nee | ✓ |
+| Gekoppelde AEM maken in Workfront | Maak handmatig gekoppelde AEM mappen in Workfront met de optie die beschikbaar is op het tabblad Documenten. | ✓ | Nee | Nee | ✓ |
 | Commentaar synchroniseren | Automatisch opmerkingen synchroniseren voor elementen van [!DNL Workfront] tot [!DNL Assets] | Nee | ✓ | ✓ | Nee |
 | Ondersteuning voor meerdere Workfront-omgevingen die verbinding maken met één AEM | Gebruikers van meerdere Workfront-omgevingen kunnen verbinding maken met één AEM. | ✓ | Nee | Nee | ✓ |
 | Ondersteuning voor meerdere AEM omgevingen die verbinding maken met één Workfront-omgeving | Gebruikers in één Workfront-omgeving kunnen middelen verzenden of koppelen tussen meerdere AEM. | ✓ | ✓ | ✓ | ✓ |
