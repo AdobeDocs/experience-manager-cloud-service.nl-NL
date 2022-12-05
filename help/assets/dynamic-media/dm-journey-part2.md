@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
+source-git-commit: 9e425601c493740050d61e8025ea3f9e3dbdc4d8
 workflow-type: tm+mt
-source-wordcount: '2870'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Voeg nu een afbeeldingsverwerkingsparameter toe aan het einde van de URL. Typ re
 
 U ziet dat er een nieuwe uitvoering van het horloge wordt gegenereerd. Een belangrijke stap voorwaarts om te begrijpen dat u met deze eenvoudige oefening van het wijzigen van de afbeeldingsbreedte de afbeelding volledig dynamisch genereert.
 
-Wijzig nu de breedtewaarde van `500` pixels naar `1000` pixels en druk vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000).
+Wijzig nu de breedtewaarde van `500` pixels naar `1000` pixels en druk vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 Het moment waarop u drukt **[!UICONTROL Enter]** gaat de browser terug naar de Dynamic Media Image Server. Het produceert een gloednieuwe vertoning van het horloge, die op de nieuwe breedtewaarde wordt gebaseerd u enkel inging, dan levert het nieuwe beeld terug aan browser, en caches het.
 
 Dynamic Media beschikt over een groot aantal parameters voor beeldverwerking waarmee u uw afbeeldingselementen op webpagina&#39;s kunt perfectioneren. U kunt [zie hier een lijst](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
@@ -128,7 +128,9 @@ Als u klaar bent, slaat u de voorinstelling op en is deze nu beschikbaar voor al
 ![De voorinstelling voor afbeeldingen toepassen *Normaal* om een uitvoering van een afbeelding te genereren](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Door de voorinstelling Medium voor afbeeldingen toe te passen, wordt een uitvoering van een afbeelding gegenereerd._
 
-U kopieert de URL en plakt deze in uw browser om de weergave van de afbeelding te controleren. [Probeer het](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}. Let op de naam van de voorinstelling voor de afbeelding in uw browser _Normaal_ in het volledige URL-pad.
+U kopieert de URL en plakt deze in uw browser om de weergave van de afbeelding te controleren. [Probeer het](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}.
+
+Let op de naam van de voorinstelling voor de afbeelding in uw browser _Normaal_ in het volledige URL-pad.
 
 U kunt zien wat voor helderheid in de afbeelding wordt weergegeven. Deze kwaliteit is deels te wijten aan de manier waarop de kom chocolade is neergeschoten. Bovendien is het gedeeltelijk omdat u met Dynamic Media grotere afbeeldingen kunt opslaan dan die welke via digitale kanalen worden geleverd.
 
