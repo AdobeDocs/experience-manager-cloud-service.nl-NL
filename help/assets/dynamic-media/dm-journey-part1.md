@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
+source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
 workflow-type: tm+mt
-source-wordcount: '3705'
+source-wordcount: '3707'
 ht-degree: 0%
 
 ---
@@ -261,7 +261,7 @@ Een andere methode om een voorvertoning van een element weer te geven, is het se
 ![Een voorvertoning weergeven van een element op basis van de voorinstelling voor de weergave Verticaal licht zoomen](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Een voorvertoning weergeven van een element op basis van de geselecteerde voorinstelling voor de viewer &quot;ZoomVertical_light&quot;. De muisaanwijzer (`+`) is over het horloge verplaatst om in te zoomen. Let op de knoppen URL en Insluiten._
 
-De bovenstaande vertoning is live! [Probeer het](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
+De bovenstaande vertoning is live! [Probeer het](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}.
 
 ## Optioneel - Meer informatie
 
