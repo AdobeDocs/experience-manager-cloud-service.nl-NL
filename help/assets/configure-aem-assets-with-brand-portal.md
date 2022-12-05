@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
+source-git-commit: 85de154adbd0bc09aa9960665826c36af05b3a56
 workflow-type: tm+mt
-source-wordcount: '2278'
+source-wordcount: '2336'
 ht-degree: 11%
 
 ---
@@ -397,6 +397,16 @@ Voer de volgende stappen uit om de Brand Portal-cloudservice te configureren:
    Je Experience Manager Assets als [!DNL Cloud Service] -instantie is nu geconfigureerd met de Brand Portal-gebruiker.
 
 U kunt de configuratie nu testen door de distributieagent te controleren en elementen naar Brand Portal te publiceren.
+
+**IPs van de Lijst van gewenste personen van de Afbraak in SPS als veilige voorproef toegelaten**
+Als u Dynamic Media-Scene7 gebruikt met [beveiligde voorvertoning ingeschakeld](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) voor een bedrijf), dan wordt het geadviseerd dat de beheerder van het bedrijf van Scene7 [lijst van gewenste personen de openbare uitgang IPs](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) voor de respectieve gebieden die SPS (het Uitgevers Systeem van Scene7) gebruiken flits UI.
+De IP&#39;s van de uitgang zijn als volgt:
+
+| **Regio** | **IP van de uitgang** |
+|--- |--- |
+| NA | 130.248.160.68, 20.94.203.130 |
+| EMEA | 185.34.189.3, 51.132.146.75 |
+| APAC | 63 140 44 54 |
 
 <!--
 ### Test configuration {#test-configuration}
