@@ -2,9 +2,9 @@
 title: Overzicht van ervaringsfragmenten
 description: Breid de Fragmenten van de Ervaring van Adobe Experience Manager as a Cloud Service uit.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 912ecb02f0f38fc2766a81445c448f869964f94a
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,19 @@ Bijvoorbeeld:
 De selector voor normale uitvoering gebruikt een transformator in plaats van aanvullende scripts. de [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wordt gebruikt als transformator. Dit wordt gevormd bij
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### De generatie van de HTML-uitvoering configureren {#configuring-html-rendition-generation}
+
+De uitvoering van de HTML wordt gegenereerd met behulp van de Sling Rewriter Pipelines. De pijpleiding wordt bepaald bij `/libs/experience-fragments/config/rewriter/experiencefragments`. De transformator van de HTML steunt de volgende opties:
+
+* `allowedCssClasses`
+   * Een RegEx-expressie die overeenkomt met de CSS-klassen die in de uiteindelijke uitvoering moeten blijven staan.
+   * Dit is handig als de klant bepaalde CSS-klassen wil verwijderen
+* `allowedTags`
+   * Een lijst met HTML-tags die moeten worden toegestaan in de uiteindelijke uitvoering.
+   * Standaard zijn de volgende tags toegestaan (geen configuratie vereist): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link and script
+
+Het wordt geadviseerd om rewriter te vormen gebruikend een bekleding. Zie [Bedekkingen in AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
 
 ## Sjablonen voor ervaringsfragmenten {#templates-for-experience-fragments}
 
