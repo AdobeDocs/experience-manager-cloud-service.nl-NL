@@ -2,7 +2,7 @@
 title: Onderhoudstaken in AEM as a Cloud Service
 description: Onderhoudstaken in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 0e33ef91ce3668e7ce6aff98053c9f798b940dfd
+source-git-commit: e52d44015c040c1739152263d88ae436bd83d414
 workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 0%
@@ -49,7 +49,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
        <li>Versies ouder dan 30 dagen worden verwijderd</li>
        <li>De meest recente vijf versies in de laatste 30 dagen worden bewaard</li>
        <li>Ongeacht de bovenstaande regels blijft de meest recente versie behouden.</li>
-       <li>Aanbevolen wordt dat klanten, die wettelijke vereisten hebben om sitepagina's precies terug te geven zoals zij op een specifieke datum verschenen, met de gespecialiseerde, externe diensten integreren.<li>
+       <br>Aanbevolen wordt dat klanten die wettelijke vereisten hebben om sitepagina's precies te maken zoals zij op een specifieke datum verschenen, met gespecialiseerde, externe diensten integreren.
      </ol></td>
   </td>
   </tr>
@@ -61,7 +61,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
        <li>Voor replicatiecontrole worden auditlogboeken ouder dan 3 dagen verwijderd</li>
        <li>Voor DAM-audits (Assets) worden auditlogboeken ouder dan 30 dagen verwijderd</li>
        <li>Voor pagina-controle worden logboeken ouder dan 3 dagen verwijderd.</li>
-       <li>Aanbevolen wordt dat klanten, die wettelijke vereisten hebben om onbewerkbare controlelogboeken te produceren, met gespecialiseerde, externe diensten integreren.<li>
+       <br>Aanbevolen wordt dat klanten die wettelijke vereisten hebben om onbewerkbare controlelogboeken te produceren, met gespecialiseerde, externe diensten integreren.
      </ol></td>
    </td>
   </tr>
