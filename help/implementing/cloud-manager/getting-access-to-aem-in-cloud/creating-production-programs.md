@@ -2,9 +2,9 @@
 title: Productieprogramma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen productieprogramma te maken voor het hosten van liveverkeer.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
+source-git-commit: c68d4240fb70cc1d533c5fad6472c6c192085603
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,26 @@ Ga als volgt te werk om een productieprogramma te maken.
 
 1. Klikken op **Programma toevoegen** in de rechterbovenhoek van het scherm.
 
-   ![Stationspagina van Cloud Manager](assets/first_timelogin1.png)
+   ![Stationspagina van Cloud Manager](assets/log-in.png)
 
-1. Selecteren **Instellen voor productie** in de wizard Programma maken om een productieprogramma te maken. U kunt de standaardnaam van het programma accepteren of deze bewerken voordat u op **Doorgaan**.
+1. Selecteren **Instellen voor productie** in de wizard Programma maken om een productieprogramma te maken.
 
-   ![Programmawizard maken](assets/create-prod1.png)
+   1. U kunt de standaardnaam van het programma accepteren of bewerken.
+   1. U kunt desgewenst een miniatuurafbeelding slepen en neerzetten om uw programma te identificeren.
+   1. Tik of klik op **Doorgaan**.
+
+   ![Programmawizard maken](assets/create-production-program.png)
+
+1. Als u verbeterde beveiligingsrechten hebt, kunt u **Uitgebreide beveiliging** biedt de optie om **Uitgebreide beveiliging inschakelen** voor uw productieprogramma. Controleer indien nodig de optie om de uitgebreide beveiliging in te schakelen en tik of klik op **Doorgaan**.
+
+   * Uitgebreide beveiliging kan niet worden in- of uitgeschakeld nadat het programma is gemaakt.
+   * [Meer informatie](https://www.adobe.com/go/hipaa-ready) over implementatie van Adobe
+
+   ![Uitgebreide beveiliging, optie](assets/create-production-program-enhanced.png)
 
 1. Op de **Oplossingen en invoegtoepassingen** selecteert u de oplossingen die u in het programma wilt opnemen.
+
+   * Als u **Uitgebreide beveiliging inschakelen** eerder, zult u worden toegestaan om slechts zo vele oplossingen te selecteren waarvoor de aanspraken van HIPAA beschikbaar zijn.
 
    ![Oplossingen selecteren](assets/setup-prod-select.png)
 

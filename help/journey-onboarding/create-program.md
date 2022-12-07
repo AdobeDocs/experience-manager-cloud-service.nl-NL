@@ -3,9 +3,9 @@ title: Een programma maken
 description: Leer hoe u Cloud Manager gebruikt om uw eerste programma te maken.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
+source-git-commit: 228330465b6266590a5badbfa84644b3d1329033
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ Er zijn twee verschillende soorten programma&#39;s:
 * A **sandboxprogramma** wordt typisch gecreeerd ten behoeve van opleiding, lopende demo&#39;s, enablement, POCs, of documentatie.
 
 Omdat ze verschillende doelen dienen, hebben de verschillende omgevingen verschillende opties. Het proces om ze te maken is echter vergelijkbaar. Voor deze instapreis creëren we een zandbakomgeving.
+
+>[!TIP]
+>
+>Als u een productieprogramma moet maken, raadpleegt u de [Aanvullende bronnen](#additional-resources) voor een koppeling naar documentatie waarin programma&#39;s gedetailleerd worden beschreven.
 
 ## Sandboxprogramma&#39;s maken {#create-sandbox}
 

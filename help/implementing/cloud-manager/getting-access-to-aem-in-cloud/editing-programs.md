@@ -2,9 +2,9 @@
 title: Programma's bewerken
 description: Leer hoe u uw productie- en sandboxprogramma's kunt bewerken om de opties aan te passen nadat u deze hebt gemaakt.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
+source-git-commit: b56b8b448060cd446c6f17689882bc0515e27d25
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,12 @@ Voer de volgende stappen uit om een programma te bewerken.
 1. Klikken op **Bijwerken** om uw wijzigingen in het programma op te slaan.
 
 Elke keer dat een programma wordt bewerkt, inclusief het toevoegen of verwijderen van een oplossing of invoegtoepassing, worden deze wijzigingen van kracht na de volgende implementatie.
+
+Als de uitgebreide beveiliging van uw productieprogramma is ingeschakeld, kunt u een extra **Uitgebreide beveiliging** tabblad is beschikbaar in het dialoogvenster **Programma bewerken** venster om te bevestigen dat de functie actief is voor het programma.
+
+![Uitgebreide beveiliging actief voor een programma](assets/edit-program-enhanced.png)
+
+Deze instelling kan niet worden gewijzigd nadat het programma is gemaakt. Voor meer informatie over de uitgebreide beveiligingsoptie raadpleegt u de [Productieprogramma&#39;s maken](creating-production-programs.md) document.
 
 ## Sandbox-programma&#39;s verwijderen {#delete-sandbox-program}
 
