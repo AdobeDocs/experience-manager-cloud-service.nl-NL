@@ -3,16 +3,21 @@ title: Configuratie van filter Referrer met AEM zonder kop
 description: Met het filter Adobe Experience Manager Referrer kunt u toegang krijgen van hosts van derden. Een configuratie OSGi voor de Filter van de Referateur is nodig om toegang tot het eindpunt GraphQL voor headless toepassingen toe te laten.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d8cc024fa5128e4b27098d1bff92588487fe101a
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
 # Refererfilter {#referrer-filter}
 
-Met het filter Adobe Experience Manager Referrer kunt u toegang krijgen van hosts van derden. Een configuratie OSGi voor de Filter van de Referateur is nodig om toegang tot het eindpunt GraphQL voor headless toepassingen toe te laten.
+Met het filter Adobe Experience Manager Referrer kunt u toegang krijgen van hosts van derden.
+
+Een configuratie OSGi voor de Filter van de Referateur is nodig om toegang tot het eindpunt van GraphQL voor hoofdloze toepassingen over de POST van HTTP toe te laten. Wanneer het gebruiken van AEM Zwaarteloze Vraag die tot AEM over de GET van HTTP toegang hebben, is een configuratie van de Filter van de Referateur niet nodig.
+
+>[!WARNING]
+> AEM de Filter van de Referateur is geen OSGi- configuratiemotor, die betekent slechts één configuratie op de AEM dienst tegelijkertijd actief is. Voeg waar mogelijk geen aangepaste filterconfiguraties van Referrer toe, aangezien dit AEM native configuraties overschrijft en de productfunctionaliteit kan onderbreken.
 
 Dit wordt gedaan door een aangewezen configuratie OSGi voor de Filter toe te voegen Referrer die:
 
@@ -25,21 +30,21 @@ Bijvoorbeeld om toegang voor verzoeken met de Referiteur te verlenen `my.domain`
 
 ```xml
 {
-    "allow.empty":false,
-    "allow.hosts":[
+    "allow.empty": false,
+    "allow.hosts": [
       "my.domain"
     ],
-    "allow.hosts.regexp":[
+    "allow.hosts.regexp": [
       ""
     ],
-    "filter.methods":[
+    "filter.methods": [
       "POST",
       "PUT",
       "DELETE",
       "COPY",
       "MOVE"
     ],
-    "exclude.agents.regexp":[
+    "exclude.agents.regexp": [
       ""
     ]
 }
@@ -51,7 +56,7 @@ Bijvoorbeeld om toegang voor verzoeken met de Referiteur te verlenen `my.domain`
 >
 >* alleen toegang verlenen tot vertrouwde domeinen
 >* ervoor zorgen geen gevoelige informatie wordt blootgesteld
->* geen jokerteken gebruiken [*] syntaxis; dit zal allebei voor authentiek verklaarde toegang tot het eindpunt van GraphQL onbruikbaar maken en zal het aan de volledige wereld ook blootstellen.
+>* geen jokerteken gebruiken [*] syntaxis; dit zal zowel voor authentiek verklaarde toegang tot het eindpunt van GraphQL onbruikbaar maken als het aan de volledige wereld blootstellen.
 
 
 >[!CAUTION]
