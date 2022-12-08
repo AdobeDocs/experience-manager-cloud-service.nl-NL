@@ -2,10 +2,10 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
+source-git-commit: ee2240eac76d4df372d94152a7c17b6e449ef7c8
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 10%
+source-wordcount: '1181'
+ht-degree: 9%
 
 ---
 
@@ -119,7 +119,7 @@ U kunt dit doen door een nieuwe Ingestietaak te creëren en ervoor te zorgen dat
 
 ### CAM Kan migratietoken niet ophalen {#cam-unable-to-retrieve-the-migration-token}
 
-De automatische herwinning van het migratietoken kan om verschillende redenen ontbreken, met inbegrip van u [een IP-lijst van gewenste personen instellen via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) in de omgeving van de doelCloud Service.  In dergelijke scenario&#39;s zult u de volgende dialoog zien wanneer u probeert om een opname te beginnen:
+De automatische herwinning van het migratietoken kan om verschillende redenen ontbreken, met inbegrip van u [een IP-lijst van gewenste personen instellen via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) in de omgeving van de doelCloud Service. In dergelijke scenario&#39;s zult u de volgende dialoog zien wanneer u probeert om een opname te beginnen:
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -134,6 +134,14 @@ U moet het migratietoken handmatig ophalen door op de koppeling &#39;Token ophal
 U kunt een opname alleen afschoppen in de doelomgeving als u tot de lokale omgeving behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u niet tot de groep van AEM beheerders behoort, zult u een fout zoals hieronder getoond zien wanneer u probeert om een opname te beginnen. U kunt de beheerder vragen om u toe te voegen aan de lokale **AEM** of vraag om de token zelf, die u vervolgens in de **Invoer van migratietoken** veld.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+
+### Automatische updates via Release Orchestrator zijn nog steeds ingeschakeld
+
+De Orchestrator van de versie houdt automatisch milieu-bijgewerkt door updates automatisch toe te passen. Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving. Dat is één van de redenen een steunkaartje zou moeten worden geregistreerd alvorens een opname (zie &quot;Nota&quot;hierboven) te beginnen, zodat tijdelijk het onbruikbaar maken van Orchestrator van de Versie kan worden gepland.
+
+Als het Orchestrator van de Versie nog loopt wanneer een opname wordt begonnen, zal UI dit foutenbericht voorstellen. U kunt desondanks doorgaan, waarbij u het risico accepteert, door het veld te controleren en nogmaals op de knop te drukken.
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
 ## Volgende functies {#whats-next}
 
