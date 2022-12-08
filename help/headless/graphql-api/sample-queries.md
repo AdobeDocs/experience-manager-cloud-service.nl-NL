@@ -3,9 +3,9 @@ title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
+source-git-commit: dba0223fd05956934fe5a3405f21fcd099637726
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1554'
 ht-degree: 2%
 
 ---
@@ -29,14 +29,14 @@ Zie voor hulp bij dit:
 
 * A [voorbeeldstructuur van inhoudsfragment](#content-fragment-structure-graphql)
 
-* En sommige [voorbeeld GraphQL-query&#39;s](#graphql-sample-queries), op basis van de fragmentstructuur van de voorbeeldinhoud (Content Fragment Models and related Content Fragments).
+* En sommige [voorbeeld GraphQL-vragen](#graphql-sample-queries), op basis van de fragmentstructuur van de voorbeeldinhoud (Content Fragment Models and related Content Fragments).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
 >title="Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s"
 >abstract="Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken."
 
-## GraphQL - Voorbeeldquery&#39;s met gebruik van de structuur van het contentfragment voor voorbeeldinhoud {#graphql-sample-queries-sample-content-fragment-structure}
+## GraphQL - Voorbeeldquery&#39;s met de structuur van het voorbeeldinhoudsfragment {#graphql-sample-queries-sample-content-fragment-structure}
 
 Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekproefresultaten.
 
@@ -60,7 +60,7 @@ Dit alles wordt geretourneerd `types` voor alle beschikbare schema&#39;s.
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
   __schema {
     types {
@@ -73,7 +73,7 @@ Dit alles wordt geretourneerd `types` voor alle beschikbare schema&#39;s.
 
 **Voorbeeldresultaat**
 
-```xml
+```json
 {
   "data": {
     "__schema": {
@@ -152,7 +152,7 @@ Dit alles wordt geretourneerd `types` voor alle beschikbare schema&#39;s.
 Om alle informatie over alle steden terug te winnen, kunt u de zeer basisvraag gebruiken:
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
   cityList {
     items
@@ -162,7 +162,7 @@ Om alle informatie over alle steden terug te winnen, kunt u de zeer basisvraag g
 
 Wanneer uitgevoerd, zal het systeem automatisch de vraag uitbreiden om alle gebieden te omvatten:
 
-```xml
+```graphql
 {
   cityList {
     items {
@@ -177,7 +177,7 @@ Wanneer uitgevoerd, zal het systeem automatisch de vraag uitbreiden om alle gebi
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -236,7 +236,7 @@ Dit is een eenvoudige vraag om terug te keren `name`van alle vermeldingen in de 
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   cityList {
     items {
@@ -248,7 +248,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -286,7 +286,7 @@ Dit is een query om de details van één fragmentitem te retourneren op een spec
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
   cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
     item {
@@ -302,7 +302,7 @@ Dit is een query om de details van één fragmentitem te retourneren op een spec
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "cityByPath": {
@@ -327,7 +327,7 @@ Als u een nieuwe variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_c
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
   cityList (variation: "berlin_center") {
     items {
@@ -343,7 +343,7 @@ Als u een nieuwe variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_c
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -370,7 +370,7 @@ Gebruikend de structuur van de genestelde fragmenten, keert deze vraag de volled
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   companyList {
     items {
@@ -399,7 +399,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -498,7 +498,7 @@ Hiermee filtert u alles `persons` voor alle bestanden met de naam `Jobs`of `Smit
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -523,7 +523,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -552,7 +552,7 @@ Hiermee filtert u alles `persons` voor alle bestanden met de naam `Jobs`of `Smit
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -574,7 +574,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -619,7 +619,7 @@ Alles `adventures` waar `_path` begint met een bepaald voorvoegsel (`/content/da
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   adventureList(
     filter: {
@@ -641,7 +641,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "adventureList": {
@@ -664,7 +664,7 @@ Hier wordt een combinatie van velden gefilterd. An `AND` (impliciet) wordt gebru
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     population: {
@@ -700,7 +700,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -727,7 +727,7 @@ Deze vraag ondervraagt voor alle steden die `SAN` in de naam, ongeacht het geval
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     name: {
@@ -751,7 +751,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -778,7 +778,7 @@ Deze query filtert op een array met een item (`city:na`) die ten minste één ke
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -802,7 +802,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -836,7 +836,7 @@ Deze query filtert op een exacte arraywaarde.
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -862,7 +862,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -888,7 +888,7 @@ Deze vraag illustreert het filtreren voor om het even welk `person` van `name` &
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -920,7 +920,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -954,7 +954,7 @@ Deze query illustreert het filteren van drie geneste fragmenten - `company`, `em
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -996,7 +996,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -1046,7 +1046,7 @@ Deze query illustreert het filteren van drie geneste fragmenten - `company`, `em
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 query {
   awardList(filter: {
       id: {
@@ -1073,7 +1073,7 @@ query {
 
 **Voorbeeldresultaten**
 
-```xml
+```json
 {
   "data": {
     "awardList": {
@@ -1110,27 +1110,40 @@ Deze steekproefvragen zijn gebaseerd op het project WKND. Dit heeft:
 * Inhoudsfragmenten (en andere inhoud) beschikbaar onder:
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
+   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+
 >[!NOTE]
 >
 >Aangezien de resultaten omvangrijk kunnen zijn, worden ze hier niet weergegeven.
+
+>[!NOTE]
+>
+>Verschillende query&#39;s verwijzen naar de variatie `variation1`. Dit staat niet in het standaard WKND-pakket. Deze moet worden gemaakt voor testdoeleinden.
+>
+>Indien `variation1` bestaat niet, dan `master`variatie wordt als standaardwaarde geretourneerd.
 
 ### Voorbeeldquery voor alle inhoudsfragmenten van een bepaald model met de opgegeven eigenschappen {#sample-wknd-all-model-properties}
 
 Deze voorbeeldquery vraagt om:
 
 * voor alle inhoudfragmenten van het type `article`
-* met de `path`en `author` eigenschappen.
+* met de `_path` en de eigenschappen van de `authorFragment`.
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
   articleList {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
     }
-  }
+ }
 }
 ```
 
@@ -1143,7 +1156,7 @@ Deze query vraagt om:
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
   adventureList {
     items {
@@ -1208,12 +1221,17 @@ Deze voorbeeldquery vraagt om:
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
         _path
-        author
+        authorFragment {
+          _path
+          firstName
+          lastName
+          birthDay
+        }
         main {
           html
           markdown
@@ -1234,12 +1252,12 @@ Deze voorbeeldquery vraagt om:
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
-  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
       _path
-      adventureTitle
+      title
       _model {
         _path
         title
@@ -1262,15 +1280,15 @@ Deze query vraagt om:
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1288,7 +1306,9 @@ Deze query vraagt om:
 >
 >Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met de modellen `Article`, `Adventure` geselecteerd.
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1323,7 +1343,9 @@ Deze vragen worden ondervraagd:
 
 De volgende vraag keert alle inhoudsverwijzingen terug door te gebruiken `_references`:
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
      _references {
@@ -1363,7 +1385,9 @@ De volgende query retourneert alle `attachments` - een specifiek veld (subgroep)
 >
 >Het veld `attachments` heeft het gegevenstype Data `content-reference`, waarbij verschillende formulieren zijn geselecteerd.
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1405,9 +1429,11 @@ Deze query vraagt om:
 >
 >De RTE gealigneerde verwijzingen worden gehydrateerd binnen `_references`.
 
+<!-- need replacement query -->
+
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
   bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
     item {
@@ -1449,12 +1475,17 @@ Deze query vraagt om:
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
-      _path
-      author
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1474,12 +1505,19 @@ Deze query vraagt om:
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
-  articleList (variation: "variation1") {
+  articleList(variation: "variation1") {
     items {
       _path
-      author
+      _variation
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1499,12 +1537,17 @@ Deze query vraagt om:
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 { 
-  articleList (_locale: "fr") {
+  articleList(_locale: "fr") {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1516,44 +1559,45 @@ Deze query vraagt om:
 }
 ```
 
-<!-- CQDOC-19418 -->
+### Voorbeeldlijstquery met offset en limiet {#sample-list-offset-limit}
 
-<!--
+Deze query vraagt om:
 
-### Sample List Query using offset and limit {#sample-list-offset-limit}
+* voor de resultatenpagina met maximaal vijf artikelen, te beginnen bij het vijfde artikel van het *complete* resultatenlijst
 
-This query interrogates:
+**Voorbeeldquery**
 
-* for the page of results containing up to five articles, starting from the fifth article from the *complete* results list
-
-**Sample Query**
-
-```xml
-query {
-   articleList(offset: 5, limit:5) {
+```graphql
+{
+   articleList(offset: 5, limit: 5) {
     items {
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       _path
     }
   }
 }
 ```
 
-### Sample Pagination Query using first and after  {#sample-pagination-first-after}
+### Voorbeeld van pagineringsquery met eerste en volgende  {#sample-pagination-first-after}
 
-This query interrogates:
+Deze query vraagt om:
 
-* for the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list
+* voor de pagina met resultaten die maximaal vijf avonturen bevatten, beginnend bij het bepaalde cursorpunt in *complete* resultatenlijst
 
-**Sample Query**
+**Voorbeeldquery**
 
-```xml
-query {
+```graphql
+{
     adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
@@ -1564,13 +1608,11 @@ query {
 }
 ```
 
--->
-
-## De structuur van het fragment met voorbeeldinhoud (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
+## De structuur voor het voorbeeldinhoudfragment (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
 
 De steekproefvragen zijn gebaseerd op de volgende structuur, die gebruikt:
 
-* één of meer, [Voorbeeld van fragmentmodellen van inhoud](#sample-content-fragment-models-schemas) - de basis vormen voor de GraphQL-schema&#39;s
+* één of meer, [Voorbeeld van fragmentmodellen van inhoud](#sample-content-fragment-models-schemas) - de basis vormen voor de GraphQL-regeling
 
 * [Voorbeeldinhoudsfragmenten](#sample-content-fragments) op basis van bovenstaande modellen
 
