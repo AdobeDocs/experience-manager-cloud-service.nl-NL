@@ -1,38 +1,87 @@
 ---
-title: "[!DNL Adobe Experience Manager] as a Cloud Service prerelease-kanaal"
-description: "[!DNL Adobe Experience Manager] as a Cloud Service prerelease-kanaal"
+title: Adobe Experience Manager as a Cloud Service Prerelease-kanaal
+description: Leer hoe u het pre-releasekanaal gebruikt om een voorvertoning van aanstaande functies te AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
+source-git-commit: 5b38e7d0ad97cdf8b7d0d5da79cf3d6721fa618a
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '1306'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service prerelease-kanaal {#prerelease-channel}
 
+# Adobe Experience Manager as a Cloud Service Prerelease-kanaal {#prerelease-channel}
+
+Leer hoe u het pre-releasekanaal gebruikt om een voorvertoning van aanstaande functies te AEM as a Cloud Service.
 
 ## Inleiding {#introduction}
 
-[!DNL Adobe Experience Manager] as a Cloud Service biedt elke maand nieuwe functies, volgens het schema van [Routekaart voor release van Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). Om vertrouwd te worden met de eigenschappen die gepland zijn om de volgende maand levend te gaan, kunnen de klanten aan het prereleasekanaal intekenen, dat door geschikt te vormen in de milieu&#39;s van de standaardprogrammaontwikkeling of om het even welke milieu&#39;s van het zandbakprogramma toegankelijk is. De klanten kunnen voorproef veranderingen in de console van Plaatsen, evenals code tegen om het even welke nieuwe prerelease APIs bouwen.
+Adobe Experience Manager as a Cloud Service biedt elke maand nieuwe functies, volgens de [Experience Manager geeft routekaart vrij.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
-De lijst met pre-releasefuncties voor een bepaalde maand wordt geplaatst in het dialoogvenster [Opmerkingen bij maandelijkse release](/help/release-notes/release-notes-cloud/release-notes-current.md).
+Als u vertrouwd wilt raken met de functies die gepland zijn om de volgende maand live te gaan, kunt u zich abonneren op het pre-releasekanaal. Dit kanaal is toegankelijk door uw ontwikkelomgevingen of elke sandboxomgeving te configureren. U kunt een voorvertoning weergeven van wijzigingen die toegankelijk zijn via de AEM-gebruikersinterface en code maken op basis van nieuwe prerelease-API&#39;s.
 
->[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
+De lijst met pre-releasefuncties voor een bepaalde maand wordt geplaatst in het dialoogvenster [maandelijkse opmerkingen bij de release.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## Hoe te om Prerelease toe te laten {#enable-prerelease}
+## AEM as a Cloud Service releases {#releases}
+
+AEM as a Cloud Service heeft twee soorten versies.
+
+* **Maandelijkse releases** functies en mogelijkheden toevoegen aan AEM as a Cloud Service
+* **Kritieke updates** voeg veiligheidsupdates, prestatiesverhogingen, en insectenmoeilijke situaties toe, en worden toegepast op een dagelijkse basis.
+
+Dit patroon verzekert ononderbroken versies zonder onderbreking van de dienst.
+
+Met het pre-releasekanaal kunt u functies die voor de komende maandelijkse release zijn gepland, voorvertonen om de komende functionaliteit te evalueren en te plannen voor de mogelijke implementatie ervan voor uw eigen projecten. Hiermee kunt u plannen voor de volgende maandelijkse release.
+
+Als het bijvoorbeeld mei is en u bent geabonneerd op het pre-releasekanaal, kunt u functies evalueren in de aanstaande release van juni.
+
+![Prerelease, cadence, afbeelding](assets/prerelease-cadence.png)
+
+Prerelease geeft u een het rollen venster van één maand in aanstaande eigenschappen AEMaaCS, die u tijd geven om het effect van om het even welke nieuwe eigenschappen aan uw projecten en aanpassingen te beoordelen evenals planintroductie van dergelijke eigenschappen, het testen, en gebruikersopleiding.
+
+Voor het effectief benutten van de voordelen van het prereleasekanaal zijn vier stappen vereist.
+
+1. [Kalenders markeren](#mark-calendars)
+1. [Opmerkingen bij de release bekijken](#release-notes)
+1. [De nieuwe functies openen en proberen](#new-features)
+1. [Uw gebruikers trainen](#train-users)
+
+## Uw kalenders markeren {#mark-calendars}
+
+Maandelijkse releases zijn ruim van tevoren gepland en de releasedatums worden gepubliceerd op [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+
+Neem nota van de versiedata zodat kunt u tijd plannen om de aanstaande eigenschappen te herzien en te testen.
+
+## De opmerkingen bij de release bekijken {#release-notes}
+
+Wanneer u de releasedatums hebt gemarkeerd in uw kalender, moet u de optie [Adobe Experience League](/help/release-notes/release-notes-cloud/release-notes-current.md) website op de dag van de release voor de meest recente releaseopmerkingen.
+
+Elke versie gaat vergezeld van releaseopmerkingen die niet alleen nieuw zijn in die versie, maar ook de functies die beschikbaar zijn voor pre-releaseevaluatie. Lees uw kennis op voorhand en gebruik de nieuwste functies van AEMaaCS!
+
+U kunt ook [de bekende problemen controleren](/help/release-notes/known-issues.md) die samen met elke versie worden gepubliceerd zodat u zich ook van om het even welke technische kwesties kunt bewust zijn die een uitdaging voor uw evaluatie of uiteindelijke goedkeuring van om het even welke nieuwe eigenschappen kunnen inhouden.
+
+## Laat het Kanaal van de Prerelease toe om tot Nieuwe Eigenschappen toegang te hebben en uit te proberen {#new-features}
+
+Het pre-releasekanaal kan op om het even welke ontwikkeling of zandbakmilieu worden toegelaten. Prerelease kan niet worden ingeschakeld in staging- of productieomgevingen.
 
 De pre-releasefuncties kunnen op verschillende manieren worden ervaren:
 
-* Cloud-omgevingen (standaardprogramma-ontwikkelomgevingen of elk ander type sandboxprogramma)
-* Lokale SDK
+* [Cloud-omgevingen](#cloud-environments)
+* [Lokale SDK](#local-sdk)
 
 ### Cloud-omgevingen {#cloud-environments}
 
-Als u een Cloud-omgeving wilt bijwerken zodat deze de prerelease kan gebruiken, voegt u een nieuwe [omgevingsvariabele](../implementing/cloud-manager/environment-variables.md) met de interface Environment Configuration in Cloud Manager:
+Als u een wolkenomgeving wilt bijwerken om de pre-releaseversie te gebruiken, moet u een nieuwe omgevingsvariabele toevoegen. U kunt dit doen met de interface van Cloud Manager of via CLI.
 
-1. Ga naar de **Programma** > **Omgeving** > **Omgevingsconfiguratie** wilt bijwerken.
-1. Een nieuwe toevoegen [omgevingsvariabele](../implementing/cloud-manager/environment-variables.md):
+#### Omgevingsvariabele toevoegen met behulp van de gebruikersinterface {#add-with-ui}
+
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+
+1. Navigeer naar het programma waar u prerelease wilt inschakelen.
+
+1. Selecteer het milieu waar u prerelease wilt toelaten en tot zijn configuratie via toegang hebben **Programma** > **Omgeving** > **Omgevingsconfiguratie**.
+
+1. Een nieuwe toevoegen [omgevingsvariabele:](../implementing/cloud-manager/environment-variables.md)
 
    | Naam | Waarde | Toegepaste service | Type |
    |------|-------|-----------------|------|
@@ -42,12 +91,13 @@ Als u een Cloud-omgeving wilt bijwerken zodat deze de prerelease kan gebruiken, 
 
    ![Nieuwe omgevingsvariabele](assets/env-configuration-prerelease.png)
 
+#### Omgevingsvariabele toevoegen met CLI {#add-with-cli}
 
-**Alternatief** u kunt de API en CLI van de Manager van de Wolk gebruiken om de milieuvariabelen bij te werken:
+U kunt ook de API en CLI van Cloud Manager gebruiken om de omgevingsvariabelen bij te werken.
 
-* Gebruiken [Het eindpunt van de omgevingsvariabelen van de API voor cloudbeheer](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)stelt u de **AEM_RELEASE_CHANNEL** omgevingsvariabele voor de waarde **prerelease**.
+* Gebruiken [het eindpunt van de omgevingsvariabelen van de API voor cloudbeheer,](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables) instellen `AEM_RELEASE_CHANNEL` omgevingsvariabele voor de waarde `prerelease`.
 
-   ```
+   ```text
    PATCH /program/{programId}/environment/{environmentId}/variables
    [
            {
@@ -58,29 +108,33 @@ Als u een Cloud-omgeving wilt bijwerken zodat deze de prerelease kan gebruiken, 
    ]
    ```
 
-* De CLI van Cloud Manager kan ook worden gebruikt, volgens de instructies op [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
+* [De CLI voor Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) kan ook worden gebruikt
 
-   ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
-
+   ```shell
+   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease
+   ```
 
 De variabele kan worden verwijderd of op een andere waarde worden ingesteld als u wilt dat de omgeving wordt hersteld naar het gedrag van het gewone (niet-pre-)releasekanaal.
 
 ### Lokale SDK {#local-sdk}
 
-U kunt nieuwe eigenschappen in de console van Plaatsen in lokale QuickStart SDK en code tegen nieuwe APIs in pre-uitgave zien door uw beproefde project te hebben verwijzen naar prerelease `API Jar` gevestigd in Maven Central. U kunt deze prereleasefuncties op uw lokale computer ook zien door de regelmatige SDK van QuickStart op prereleasemodus te beginnen:
+U kunt nieuwe eigenschappen in de console van Plaatsen in lokale Quickstart SDK en code tegen nieuwe APIs in pre-uitgave zien door uw Maven project te vormen om naar prerelease te verwijzen `API Jar` gevestigd in Maven Central. U kunt deze prereleasefuncties in uw lokale ontwikkelomgeving ook zien door de regelmatige SDK van QuickStart op prereleasemodus te beginnen.
 
-* Download de SDK van de portal voor softwaredistributie en installeer de SDK zoals beschreven in [Toegang tot de AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
-* Neem het argument op wanneer u de SDK Quickstart start `-r prerelease`.
-* De waarde is *kleverig* zodat deze alleen bij het eerste opstarten kan worden geselecteerd. Installeer de SDK opnieuw om de opdrachtregeloptie te wijzigen.
+#### Quickstart SDK starten in pre-releasemodus {#prerelease-mode}
+
+1. Download de SDK van de portal voor softwaredistributie en installeer de SDK zoals beschreven in [Toegang tot de AEM as a Cloud Service SDK.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+1. Neem het argument op wanneer u de SDK Quickstart start `-r prerelease`.
+
+De waarde blijft behouden, zodat deze alleen bij het eerste opstarten kan worden geselecteerd. Installeer de SDK opnieuw om de opdrachtregeloptie te wijzigen.
 
 Aangezien er meerdere AEM onderhoudsreleases tussen maandelijkse functiereleases kunnen zijn, kunt u deze nieuwe SDK&#39;s downloaden en verwijzen naar de nieuwe Jar-versies van SDK API in bepaalde projecten. De onderhoudsversies zullen geen extra prereleasefuncties toevoegen, maar zouden andere kleinere veranderingen zoals insectenmoeilijke situaties, veiligheidsmoeilijke situaties, en prestatiesverhogingen kunnen omvatten.
 JavaDocs wordt gepubliceerd aan Centrale Maven.
 
-Samenstellen op basis van de prerelease SDK:
+#### Samenstellen op basis van de prerelease SDK {#build-sdk}
 
-1. wijzig de pom.xml van uw beproefde project om naar een verschillende prerelease sdk api jar te verwijzen, die aan Maven central wordt gepubliceerd. Het bevat nieuwe Java api voor de pre-releasefuncties en is afhankelijk van de sdk api jar. Dezelfde versie wordt gebruikt.
+1. De aangepaste `pom.xml` naar een duidelijke prerelease SDK API-jar verwijzen, die wordt gepubliceerd naar Maven Central. Deze bevat een nieuwe Java API voor de prereleasefuncties en is afhankelijk van de SDK API-jar. Dezelfde versie wordt gebruikt.
 
-   Hier ziet u bijvoorbeeld een fragment uit de sectie voor het beheer van afhankelijkheden van de bovenliggende pom dat verwijst naar de gewone API Jar:
+   Hier ziet u bijvoorbeeld een fragment uit de sectie voor het beheer van afhankelijkheden van de bovenliggende pom dat verwijst naar de gewone API-jar:
 
    ```
    <dependencyManagement>
@@ -123,21 +177,32 @@ Samenstellen op basis van de prerelease SDK:
 
    Zoals gebruikelijk, kunnen de individuele projecten de afhankelijkheid gebruiken.
 
-1. Distribueren naar uw lokale server
-1. Als tevreden bevestigend dat het zoals verwacht plaatselijk werkt, wijs code aan een ontwikkelingstak toe en gebruik een niet productiepijplijn van de Manager van de Wolk om aan een milieu op te stellen dat aan het prereleasekanaal intekent
+1. Distribueren naar uw lokale server.
+
+1. Als tevreden dat het zoals verwacht plaatselijk werkt, wijs code aan een ontwikkelingstak toe en gebruik een niet productiepijplijn van de Manager van de Wolk om aan een milieu op te stellen dat aan het prereleasekanaal intekent.
 
 >[!CAUTION]
 > 
-> De `aem-prerelease-sdk-api` artifactId mag nooit worden gebruikt bij het implementeren naar werkgebied of productie. Gebruikt altijd aem-sdk-api wanneer het opstellen via de Pijpleiding van de Productie. Ook code die verwijst naar pre-releaseAPI&#39;s mag niet worden geïmplementeerd via de productiepijpleiding.
+> De `aem-prerelease-sdk-api` artifactId mag nooit worden gebruikt wanneer het opstellen aan stadium of productie. Altijd de `aem-sdk-api` bij de uitrol via de productiepijplijn. Ook de code die verwijzingen prerelease APIs niet via de productiepijplijn zou moeten worden opgesteld.
 
-De [AEM CS SDK-build Analysemodus plug-in v1.0 en hoger](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) zal ontdekken als pre api in een project door de gebiedsdelen te inspecteren wordt gebruikt. Als de analysator het vindt, zal het prerelease sdk api gebruiken om het project te analyseren.
+De [AEM CS SDK-build Analysemodus plug-in v1.0 en hoger](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing) zal ontdekken of pre-versie API in een project door de gebiedsdelen te inspecteren wordt gebruikt. Als de analysator het vindt, zal het de prerelease SDK API gebruiken om het project te analyseren.
+
+## Uw gebruikers trainen {#train-users}
+
+Nadat u de nieuwe functies in het prereleasekanaal hebt getest en hebt besloten deze te gebruiken voor uw projecten, moet u de gebruikers trainen.
+
+Adobe Experience League biedt veel bronnen om AEMaaCS te leren.
+
+* [De AEMaaCS-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+* [Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
+* [De video met het overzicht van maandelijkse releases](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video) in de releaseopmerkingen
 
 ## Overwegingen {#considerations}
 
-Er zijn een paar dingen om op te merken wanneer het over het prereleasekanaal komt:
+Er zijn een paar punten om van nota te nemen wanneer het gebruiken van het prereleasekanaal.
 
-* Sommige functies die worden geïmplementeerd in de release van de volgende maand, worden mogelijk niet opgenomen in het prereleasekanaal.
+* Het pre-releasekanaal bevat niet noodzakelijkerwijs alle nieuwe functies die in de volgende versie moeten worden geïmplementeerd.
 * Functies in de prerelease worden onderworpen aan strenge kwaliteitsborging en zijn bedoeld om volledig te zijn in plaats van bètakwaliteit. Als u om het even welke kwesties opmerkt, rapporteer hen, enkel zoals u zou doen als u insecten in eigenschappen in een regelmatige AEM versie verdacht.
-* Om te bepalen als een milieu voor het prereleasekanaal wordt gevormd, ga naar AEM Console **Info** pagina en controleer of het AEM versienummer een *prerelease* achtervoegsel zoals ```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE```.
+* Om te bepalen als een milieu voor het prereleasekanaal wordt gevormd, ga naar AEM console **Info** pagina en controleer of het AEM versienummer een *prerelease* achtervoegsel zoals ```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE```.
 
-![info](/help/release-notes/assets/about.png)
+![Info](/help/release-notes/assets/about.png)
