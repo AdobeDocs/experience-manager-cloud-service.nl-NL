@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
+source-git-commit: f98704357c38f61e8e7d36b33ad32e9154c611e6
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '893'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,43 @@ In de volgende sectie worden de algemene opmerkingen bij de release beschreven v
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor de laatste versie 1.9.5 van [!DNL Workfront for Experience Manager enhanced connector] is 11 november 2022.
+De releasedatum voor de laatste versie 1.9.6 van [!DNL Workfront for Experience Manager enhanced connector] is 9 december 2022.
 
 ## Geen hooglichten {#release-highlights}
 
 De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de volgende verbeteringen en foutoplossingen:
+
+**Verbetering**
+
+<!--
+
+* Workfront enhanced connector now allows you to use new search parameters to be more specific while defining folder names on large repositories.
+
+-->
+
+* Workfront Enhanced Connector ondersteunt nu het uitvoeren van full-text zoekopdrachten op middelen en mappen.
+
+**Opgeloste problemen**
+
+* De metagegevens van de documentversie worden niet correct gesynchroniseerd tussen Workfront en Experience Manager.
+* Problemen tijdens het maken van een map die is gekoppeld aan Experience Manager in Workfront wanneer de map een schema gebruikt waarvoor geen definitie in de algemene configuratie beschikbaar is.
+* Het schema-editorformulier voor metagegevens reageert niet meer wanneer u op een veld klikt vanwege een laadtijd die langer is dan verwacht. Toegevoegde specifieke configuratie OSGi voor douaneformulieren om de kwestie op te lossen. De namen van de aangepaste formulieren die u toevoegt aan de schema-editor voor metagegevens zijn beschikbaar in de logbestanden.
+
+>[!IMPORTANT]
+>
+>Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.6](../assets/update-workfront-enhanced-connector.md) van de [!DNL Workfront for Experience Manager enhanced connector].
+
+## Bekende problemen {#known-issues}
+
+* Tijdens het vormen van project verbonden omslagen met AEM 6.4, slaat de Experience Manager niet de waarden voor **[!UICONTROL sub-folders]** en **[!UICONTROL Create linked folder in projects with portfolio]** velden. De waarde voor de **[!UICONTROL sub-folders]** veld bijwerken naar **[!UICONTROL undefined]** en de waarde voor de **[!UICONTROL Create linked folder in projects with portfolio]** veld bijwerken naar **[!UICONTROL Default Portfolio]** automatisch na het opslaan van de configuratie.
+
+* Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** in de vervolgkeuzelijst kunt u de doelbestemming in de Experience Manager niet selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** keuzelijst beschikbaar in de nieuwe Workfront-ervaring.
+
+## Eerdere versies {#previous-releases}
+
+### Release november 2022 {#november-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] versie 1.9.5, die op 11 november is uitgebracht, bevat de volgende updates:
 
 * Wanneer u in Workfront slechts één waarde definieert voor een veld met meerdere waarden, wordt de veldwaarde niet correct toegewezen aan Experience Manager.
 
@@ -58,19 +90,6 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
    >[!NOTE]
    >
    >Als u reeds de verkeerde gebeurtenisabonnementen vóór het uitvoeren van de stappen hebt geschrapt die in deze procedure worden vermeld, kunt u de laatste stap van deze procedure overslaan.
-
-
->[!IMPORTANT]
->
->Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.5](../assets/update-workfront-enhanced-connector.md) van de [!DNL Workfront for Experience Manager enhanced connector].
-
-## Bekende problemen {#known-issues}
-
-* Tijdens het vormen van project verbonden omslagen met AEM 6.4, slaat de Experience Manager niet de waarden voor **[!UICONTROL sub-folders]** en **[!UICONTROL Create linked folder in projects with portfolio]** velden. De waarde voor de **[!UICONTROL sub-folders]** veld bijwerken naar **[!UICONTROL undefined]** en de waarde voor de **[!UICONTROL Create linked folder in projects with portfolio]** veld bijwerken naar **[!UICONTROL Default Portfolio]** automatisch na het opslaan van de configuratie.
-
-* Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** in de vervolgkeuzelijst kunt u de doelbestemming in de Experience Manager niet selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** keuzelijst beschikbaar in de nieuwe Workfront-ervaring.
-
-## Eerdere versies {#previous-releases}
 
 ### Release oktober 2022 {#october-2022-release}
 
