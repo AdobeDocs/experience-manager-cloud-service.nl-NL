@@ -3,7 +3,7 @@ title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: dba0223fd05956934fe5a3405f21fcd099637726
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
 source-wordcount: '1554'
 ht-degree: 2%
@@ -29,7 +29,7 @@ Zie voor hulp bij dit:
 
 * A [voorbeeldstructuur van inhoudsfragment](#content-fragment-structure-graphql)
 
-* En sommige [voorbeeld GraphQL-vragen](#graphql-sample-queries), op basis van de fragmentstructuur van de voorbeeldinhoud (Content Fragment Models and related Content Fragments).
+* En sommige [voorbeeld GraphQL-query&#39;s](#graphql-sample-queries), op basis van de structuur van het voorbeeldinhoudsfragment (Content Fragment Models and related Content Fragments).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -1612,7 +1612,7 @@ Deze query vraagt om:
 
 De steekproefvragen zijn gebaseerd op de volgende structuur, die gebruikt:
 
-* één of meer, [Voorbeeld van fragmentmodellen van inhoud](#sample-content-fragment-models-schemas) - de basis vormen voor de GraphQL-regeling
+* één of meer, [Voorbeeld van fragmentmodellen van inhoud](#sample-content-fragment-models-schemas) - de basis vormen voor de GraphQL-schema&#39;s
 
 * [Voorbeeldinhoudsfragmenten](#sample-content-fragments) op basis van bovenstaande modellen
 

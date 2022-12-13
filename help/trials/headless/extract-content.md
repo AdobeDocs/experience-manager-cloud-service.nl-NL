@@ -3,33 +3,33 @@ title: Inhoud extraheren via de GraphQL API
 description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beheersysteem zonder kop.
 hidefromtoc: true
 index: false
-source-git-commit: a832ed1d81866a6470b47d8e30f5c242b10d1422
+exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
 
 ---
 
-
 # Inhoud extraheren via de GraphQL API {#extract-content}
 
-Tot nu toe AEM proefversies voor headless hebt u [uw eigen modellen van inhoudsfragmenten maken](content-structure.md) ook uw eigen inhoud zonder kop hebt gemaakt [Inhoudsfragmenten.](create-content.md) Nu kunt u leren hoe te om de Fragments van de Inhoud en GraphQL API als een hoofdloos inhoudsbeheersysteem te gebruiken om uw inhoud te leveren.
+Tot nu toe AEM proefversies voor headless hebt u [uw eigen modellen van inhoudsfragmenten maken](content-structure.md) ook uw eigen inhoud zonder kop hebt gemaakt [Inhoudsfragmenten.](create-content.md) Nu kunt u leren hoe u inhoudsfragmenten en de GraphQL API kunt gebruiken als een systeem voor inhoudsbeheer zonder kop om uw inhoud te leveren.
 
-GraphQL verstrekt op vraag-gebaseerde API die externe cliënttoepassingen toestaat om AEM voor slechts de inhoud te vragen het gebruikend één enkele API vraag vereist.
+GraphQL biedt een API op basis van query&#39;s waarmee externe clienttoepassingen AEM kunnen zoeken voor alleen de inhoud die ze nodig hebben met behulp van één API-aanroep.
 
 Eerst zult u leren hoe te om twee verschillende types van vragen in werking te stellen: **list** en **byPath** query&#39;s. Vervolgens leert u hoe u inhoud kunt ophalen uit het inhoudsfragment dat u eerder hebt gemaakt. Dit document dient als aanvulling op de interactieve rondleiding, die dezelfde stappen omvat en waar nodig gekoppeld is aan aanvullende middelen.
 
 >[!TIP]
 >
->Als u meer details over GraphQL API wilt, zie [Sectie Aanvullende bronnen](#additional-resources) aan het einde van deze module voor de handleiding GraphQL API.
+>Zie voor meer informatie over de GraphQL API de [Sectie Aanvullende bronnen](#additional-resources) aan het einde van deze module voor de GraphQL API-handleiding.
 
 ## GraphQL Explorer {#graphql-explorer}
 
-U begint op de Ontdekkingsreiziger GraphQL. Hier kunt u vragen bouwen en tegen uw inhoud zonder kop in werking stellen.
+U start in GraphQL Explorer. Hier kunt u vragen bouwen en tegen uw inhoud zonder kop in werking stellen.
 
 ![De GraphQL Query Editor](assets/extract-content/query-editor.png)
 
-Als u naar de Explorer GraphQL zelf buiten de instructies in de app wilt navigeren, wordt deze gevonden met het pictogram Adobe linksboven op de pagina. Dit opent de globale navigatie van AEM. Van hier, kiest u **Gereedschappen** en vervolgens **Algemeen** -> **GraphQL Query Editor**.
+Als u zelf naar de GraphQL Explorer wilt navigeren buiten de instructies in de app, wordt deze gevonden met het Adobe-pictogram linksboven op de pagina. Dit opent de globale navigatie van AEM. Van hier, kiest u **Gereedschappen** en vervolgens **Algemeen** -> **GraphQL Query Editor**.
 
 >[!TIP]
 >
@@ -43,7 +43,7 @@ Selecteer **AEM demo-elementen** van de **Endpoint** vervolgkeuzelijst in de rec
 
 ## Een lijstquery kopiëren en uitvoeren {#list-query}
 
-Begin met een eenvoudige lijstvraag om zich met te oriënteren hoe AEM as a Cloud Service GraphQL APIs werkt. Dit voorbeeld van de lijstvraag zal een lijst van alle inhoud terugkeren die een specifiek model van het Fragment van de Inhoud gebruikt. De inventaris en de categoriepagina&#39;s gebruiken typisch dit vraagformaat.
+Begin met een eenvoudige lijstvraag om zich met te oriënteren hoe AEM GraphQL APIs van as a Cloud Service werkt. Dit voorbeeld van de lijstvraag zal een lijst van alle inhoud terugkeren die een specifiek model van het Fragment van de Inhoud gebruikt. De inventaris en de categoriepagina&#39;s gebruiken typisch dit vraagformaat.
 
 1. Kopieer het volgende codefragment.
 
@@ -161,7 +161,7 @@ Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen. Zie de [Secti
 
 ## U hebt geleerd hoe u inhoud kunt zoeken! {#conclusion}
 
-Geweldig werk! U hebt over de twee basistypes van vragen geleerd en hoe te om uw eigen inhoud te vragen. Controleer de [Sectie Aanvullende bronnen](#additional-resources) voor extra steekproefvragen en leer hoeveel meer u met GraphQL API kunt doen.
+Geweldig werk! U hebt over de twee basistypes van vragen geleerd en hoe te om uw eigen inhoud te vragen. Controleer de [Sectie Aanvullende bronnen](#additional-resources) voor extra voorbeeldquery&#39;s en voor meer informatie over wat u kunt doen met de GraphQL API.
 
 Als u wilt leren hoe geëxtraheerde inhoud vervolgens wordt gebruikt in een aangepaste React-app, moet u de module controleren [Inhoud aanpassen in een voorbeeldprogramma Reageren.](customize-app.md)
 

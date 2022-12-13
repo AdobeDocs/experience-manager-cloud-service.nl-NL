@@ -3,13 +3,13 @@ title: De inhoudsstructuur voor uw app maken
 description: Leer hoe u de structuur maakt die fungeert als basis voor alle inhoud zonder kop met behulp van AEM modellen van inhoudsfragmenten.
 hidefromtoc: true
 index: false
-source-git-commit: 6010fb398ec8c04ae9153f313585bcf38ccaa26d
+exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%
 
 ---
-
 
 # De inhoudsstructuur voor uw app maken {#content-structure}
 

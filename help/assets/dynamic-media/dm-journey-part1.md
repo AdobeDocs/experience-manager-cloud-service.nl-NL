@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
+source-git-commit: 803c4dc44189d58ddbd2669b00dd8107b2a926ae
 workflow-type: tm+mt
 source-wordcount: '3709'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Dynamic Media integreert de workflows van de oplossing voor het beheer van digit
 
 Een van de belangrijkste punten die we moeten begrijpen over Dynamic Media is het concept _Eén primair elementbestand met eindeloze mogelijkheden_.
 
-Om dit concept beter te begrijpen, denk over de manier u traditioneel met één enkel middel, zoals een beeld of een video werkt. Meestal maakt u één primair middel. Vervolgens maakt u handmatig versies van hetzelfde element voor elke ervaring, elk apparaat dat nodig is, elke webpagina en elke eigenschap waar het wordt gebruikt. Met tijd, kan dat enige middel tot 20, 30, of meer versies groeien, zonder versiegeschiedenis in bijlage aan hen. Stel je voor dat je dat doet voor elk beeld of elke video die je hebt. Het aantal versies van middelen zou snel overweldigend worden om te onderhouden en bij te werken, om nog maar te zwijgen van de stijging van opslagkosten.
+Om dit concept beter te begrijpen, denk over de manier u traditioneel met één enkel middel, zoals een beeld of een video werkt. Meestal maakt u één primair middel. Vervolgens maakt u handmatig versies van hetzelfde element voor elke ervaring, elk apparaat dat nodig is, elke webpagina en elke eigenschap waar het wordt gebruikt. Met tijd, kan dat enige middel tot 20 groeien, 30, of meer versies, zonder versiegeschiedenis in bijlage aan hen. Stel je voor dat je dat doet voor elk beeld of elke video die je hebt. Het aantal versies van middelen zou snel overweldigend worden om te onderhouden en bij te werken, om nog maar te zwijgen van de stijging van opslagkosten.
 
 Dynamic Media is echter fundamenteel anders dan andere systemen omdat u het gebruikt om uw media te leveren _dynamisch_ van enkele, primaire elementen en van URL-aanroepen. De Dynamic Media URL-paden die u aanvraagt, bevatten instructies die de publicatieserver van de Adobe vertellen hoe het element moet worden weergegeven wanneer het op het scherm van de klant wordt weergegeven. Als u bijvoorbeeld hetzelfde primaire element gebruikt, kunt u het onmiddellijk in onbeperkte uitvoeringen laten leveren, waarbij de grootte, indeling, resolutie, gewicht, kleur, uitsnijden en effecten zoals een zoomweergave worden gewijzigd.
 

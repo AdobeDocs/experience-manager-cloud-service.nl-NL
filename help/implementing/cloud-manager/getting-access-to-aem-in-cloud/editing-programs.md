@@ -2,7 +2,7 @@
 title: Programma's bewerken
 description: Leer hoe u uw productie- en sandboxprogramma's kunt bewerken om de opties aan te passen nadat u deze hebt gemaakt.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: b56b8b448060cd446c6f17689882bc0515e27d25
+source-git-commit: 2638843c5646d3190327ae1dbd5348a9c207d674
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%

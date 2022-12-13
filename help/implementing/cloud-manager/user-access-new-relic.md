@@ -2,7 +2,7 @@
 title: Nieuwe Relic One
 description: Meer informatie over de service voor het controleren van de prestaties van New Relic One-toepassingen (APM) voor AEM as a Cloud Service en over hoe u deze service kunt gebruiken.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 9089c66a2fdb5a05eb888e2af736862aff1b7a11
+source-git-commit: abc3be85679724fd4a8ce1ddcbd2ac5cca151953
 workflow-type: tm+mt
 source-wordcount: '1607'
 ht-degree: 0%
@@ -40,11 +40,11 @@ Voer de volgende stappen uit om de gebruikers van uw New Relic One-subaccount vo
 
 >[!NOTE]
 >
->Een gebruiker in **Zakelijke eigenaar** of **Implementatiebeheer** De rol moet worden het programma geopend om Nieuw Relic te leiden Één gebruikers.
+>Een gebruiker in **Zakelijke eigenaar** of **Implementatiebeheer** rol moet zijn aangemeld om New Relic One-gebruikers te beheren.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Klik op het programma waarvoor u de New Relic One-gebruikers wilt beheren.
+1. Klik op het programma waarvoor u uw Nieuwe Relic Één gebruikers wilt beheren.
 
 1. Onder aan het dialoogvenster **Omgevingen** kaart op de pagina van het programmaoverzicht, klik de ellipsieknoop en selecteer **Gebruikers beheren**.
 
@@ -56,7 +56,7 @@ Voer de volgende stappen uit om de gebruikers van uw New Relic One-subaccount vo
 
    ![Gebruikers toevoegen](assets/newrelic-add-users.png)
 
-1. Om een Nieuw Relic te verwijderen Één gebruikers, klik de schrappingsknoop bij het rechtereind van de rij die de gebruiker vertegenwoordigt.
+1. Als u een New Relic One-gebruiker wilt verwijderen, klikt u op de verwijderknop aan de rechterkant van de rij die de gebruiker vertegenwoordigt.
 
 1. Klikken **Opslaan** om de gebruikers te maken.
 
@@ -68,13 +68,13 @@ Nadat de gebruikers zijn gedefinieerd, stuurt New Relic een bevestigingsbericht 
 
 ## Je New Relic One-gebruikersaccount activeren {#activate-account}
 
-Zodra een New Relic One-gebruikersaccount is gemaakt zoals beschreven in de voorbeeldsectie [New Relic One-gebruikers beheren](#manage-users), New Relic stuurt deze gebruikers een bevestigingsbericht naar het opgegeven adres. Om die rekeningen te gebruiken, moeten de gebruikers hun rekeningen met Nieuw Relic eerst activeren door hun wachtwoorden opnieuw in te stellen.
+Zodra een New Relic One-gebruikersaccount is gemaakt zoals beschreven in de voorbeeldsectie [New Relic One-gebruikers beheren](#manage-users), New Relic stuurt deze gebruikers een bevestigingsbericht naar het opgegeven adres. Als gebruikers deze accounts willen gebruiken, moeten ze eerst hun accounts bij New Relic activeren door hun wachtwoorden opnieuw in te stellen.
 
-Voer de volgende stappen uit om uw account als New Relic-gebruiker te activeren.
+Voer de volgende stappen uit om uw account te activeren als nieuwe eBay-gebruiker.
 
 1. Klik op de koppeling in het e-mailbericht van New Relic. Hiermee opent u de browser naar de pagina Nieuw bericht voor aanmelding.
 
-1. Selecteer op de pagina Nieuw reliëf de optie **Bent u uw wachtwoord vergeten?**.
+1. Selecteer op de New Relic-aanmeldpagina de optie **Bent u uw wachtwoord vergeten?**.
 
    ![Aanmelden bij New Relic](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
@@ -86,7 +86,7 @@ Voer de volgende stappen uit om uw account als New Relic-gebruiker te activeren.
 
 Als je geen bevestigingsbericht van New Relic hebt ontvangen, raadpleeg dan de [sectie Problemen oplossen.](#troubshooting)
 
-## New Relic One openen {#accessing-new-relic}
+## Toegang krijgen tot nieuwe advertentie {#accessing-new-relic}
 
 Zodra u [je New Relic-account heeft geactiveerd,](#activate-account) u kunt New Relic One openen via Cloud Manager of rechtstreeks.
 
@@ -112,7 +112,7 @@ New Relic One rechtstreeks openen:
 
 ### Je e-mail verifiëren {#verify-email}
 
-Als u wordt gevraagd uw e-mail te verifiëren tijdens het aanmelden bij Nieuwe Relic One, betekent dit dat uw e-mail is gekoppeld aan meerdere accounts. Op deze manier kunt u kiezen welk account u wilt openen.
+Als u wordt gevraagd uw e-mail te verifiëren tijdens het aanmelden bij New Relic One, betekent dit dat uw e-mail is gekoppeld aan meerdere accounts. Op deze manier kunt u kiezen welk account u wilt openen.
 
 Als u uw e-mailadres niet verifieert, probeert New Relic u aan te melden met de meest recente gebruikersrecord die aan uw e-mailadres is gekoppeld. Als u wilt voorkomen dat uw e-mail tijdens elke aanmelding wordt gecontroleerd, klikt u op de knop **Onthoud mijn gegevens** Schakel het selectievakje in het aanmeldingsscherm in.
 
@@ -132,7 +132,7 @@ Als u als Nieuwe Relic Één gebruiker zoals die in de sectie wordt beschreven w
 
    ![E-mailadres invoeren](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. New Relic stuurt je een e-mail met een link om het account te bevestigen.
+1. Met Nieuwe advertentie ontvangt u een e-mail met een koppeling om het account te bevestigen.
 
 Als u het aanmeldingsproces hebt voltooid en zich niet kunt aanmelden bij uw account vanwege e-mail- of wachtwoordfoutberichten, registreert u een ondersteuningsticket via [Admin Console.](https://adminconsole.adobe.com/)
 
@@ -144,17 +144,17 @@ Als je geen e-mail van New Relic ontvangt:
 
 ## Beperkingen {#limitations}
 
-Voor het toevoegen van gebruikers aan New Relic One gelden de volgende beperkingen:
+De volgende beperkingen zijn van toepassing op het toevoegen van gebruikers aan Nieuwe Relic Één:
 
 * Er kunnen maximaal 25 gebruikers worden toegevoegd. Als het maximumaantal gebruikers is bereikt, verwijdert u gebruikers om nieuwe gebruikers toe te voegen.
 * Gebruikers die aan New Relic worden toegevoegd, zijn van het type **Beperkt** verwijzen naar [de documentatie van New Relic voor meer informatie.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuen%20who,change)%20any%20New%20Relic%20features.)
 * AEM as a Cloud Service biedt alleen de New Relic One APM-oplossing en biedt geen ondersteuning voor waarschuwingen, logboekregistratie of API-integratie.
 
-Voor meer hulp of extra begeleiding over New Relic One-aanbiedingen voor uw AEM as a Cloud Service Programma, gelieve een steunkaartje via te openen [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Voor meer hulp of extra begeleiding op Nieuw Relic Één dienstenaanbod voor uw AEM as a Cloud Service Programma, gelieve een steunkaartje via te openen [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Veelgestelde vragen over New Relic One {#faqs}
 
-### Wat controleert Adobe met Nieuwe Relic Één? {#adobe-monitor}
+### Wat volgt Adobe met New Relic One? {#adobe-monitor}
 
 Adobe bewaakt de AEM as a Cloud Service auteur, publiceert en voorproef (indien beschikbaar) services via de New Relic One Java-plug-in. Adobe maakt aangepaste New Relic One APM-telemetrie en bewaking mogelijk in niet-productie- en productieomgevingen AEM as a Cloud Service omgevingen.
 
@@ -176,7 +176,7 @@ Volledige leestoegang wordt verleend voor maximaal 10 leden van uw team. Leestoe
 
 ### Wordt aangepaste SSO-configuratie ondersteund? {#custom-sso}
 
-De configuratie van SSO van de douane wordt niet gesteund voor Nieuwe Relic Één rekening die door Adobe wordt voorzien.
+Aangepaste SSO-configuratie wordt niet ondersteund voor de New Relic One-account die is ingericht door Adobe.
 
 ### Wat gebeurt er als ik al een New Relic-abonnement heb op de locatie? {#new-relic-subscription}
 
