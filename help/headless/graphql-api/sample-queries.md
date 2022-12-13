@@ -3,7 +3,7 @@ title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
+source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 2%
@@ -23,20 +23,20 @@ Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door s
 >* [AEM GraphQL API voor gebruik met Content Fragments](/help/headless/graphql-api/content-fragments.md)
 
 
-Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, helpt het om enkele praktische voorbeelden te zien.
+Om met vragen te beginnen GraphQL en hoe zij met AEM de Fragmenten van de Inhoud werken helpt het om sommige praktische voorbeelden te zien.
 
 Zie voor hulp bij dit:
 
 * A [voorbeeldstructuur van inhoudsfragment](#content-fragment-structure-graphql)
 
-* En sommige [voorbeeld GraphQL-query&#39;s](#graphql-sample-queries), op basis van de structuur van het voorbeeldinhoudsfragment (Content Fragment Models and related Content Fragments).
+* En sommige [voorbeeld GraphQL-vragen](#graphql-sample-queries), op basis van de structuur van het voorbeeldinhoudsfragment (Content Fragment Models and related Content Fragments).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
 >title="Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s"
 >abstract="Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken."
 
-## GraphQL - Voorbeeldquery&#39;s met de structuur van het voorbeeldinhoudsfragment {#graphql-sample-queries-sample-content-fragment-structure}
+## GraphQL - Voorbeeldquery&#39;s met gebruik van de structuur van het contentfragment voor voorbeeldinhoud {#graphql-sample-queries-sample-content-fragment-structure}
 
 Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekproefresultaten.
 
@@ -1464,7 +1464,7 @@ Deze query vraagt om:
 
 Deze query vraagt om:
 
-* voor één inhoudsfragment van type `article` op een bepaald pad
+* voor één inhoudsfragment van type `author` op een bepaald pad
    * binnen dat kader de gegevens betreffende de wijziging: `another`
 
 **Voorbeeldquery**
@@ -1487,7 +1487,7 @@ Deze query vraagt om:
 
 Deze query vraagt om:
 
-* voor inhoudfragmenten van het type `article` met een specifieke variatie: `another`
+* voor inhoudfragmenten van het type `author` met een specifieke variatie: `another`
 
 >[!NOTE]
 >
@@ -1588,7 +1588,7 @@ Deze query vraagt om:
 }
 ```
 
-## De structuur voor het voorbeeldinhoudfragment (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
+## De structuur van het fragment met voorbeeldinhoud (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
 
 De steekproefvragen zijn gebaseerd op de volgende structuur, die gebruikt:
 
