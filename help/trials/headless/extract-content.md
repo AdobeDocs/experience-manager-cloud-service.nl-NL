@@ -4,9 +4,9 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,12 @@ Eerst zult u leren hoe te om twee verschillende types van vragen in werking te s
 
 >[!TIP]
 >
->Zie voor meer informatie over de GraphQL API de [Sectie Aanvullende bronnen](#additional-resources) aan het einde van deze module voor de GraphQL API-handleiding.
+>Als u meer details over GraphQL API wilt, zie [Sectie Aanvullende bronnen](#additional-resources) aan het einde van deze module voor de handleiding GraphQL API.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="Inhoud extraheren met de GraphQL API"
+>abstract="In deze module leert u hoe u inhoudsfragmenten en de GraphQL API kunt gebruiken als een beheersysteem voor inhoud zonder kop."
 
 ## GraphQL Explorer {#graphql-explorer}
 
@@ -157,7 +162,7 @@ Nu u de twee primaire types van vragen in werking hebt gesteld, bent u bereid om
 
    ![Resultaten van uw eigen query](assets/extract-content/custom-query-results.png)
 
-Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen. Zie de [Sectie Aanvullende bronnen](#additional-resources) voor extra steekproefvragen en leer hoeveel meer u met GraphQL API kunt doen.
+Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen. Zie de [Sectie Aanvullende bronnen](#additional-resources) voor extra voorbeeldquery&#39;s en voor meer informatie over wat u kunt doen met de GraphQL API.
 
 ## U hebt geleerd hoe u inhoud kunt zoeken! {#conclusion}
 

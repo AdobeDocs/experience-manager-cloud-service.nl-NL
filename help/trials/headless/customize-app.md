@@ -4,9 +4,9 @@ description: Gebruik een voorbeeld van een React-app om te leren hoe u inhoud ku
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 AEM Proefversies voor headless worden vooraf geladen met een eenvoudige React-app om inhoud zonder kop weer te geven. In deze module leert u een voorvertoning van die app bekijken en de inhoud ervan wijzigen door een afbeelding te verwisselen en een schokkend moment voor de app te maken.
 
 De app zelf is gebaseerd op de structuur van inhoudsfragmenten. Met de Content Fragment-editor in AEM kunt u de inhoud van uw apps wijzigen. Om u te helpen begrijpen hoe dit wordt gedaan, neemt deze module van AEM Proefversies u door het proces met een snelle, interactieve tour. Dit document dient als aanvulling op de interactieve rondleiding, die dezelfde stappen omvat en waar nodig gekoppeld is aan aanvullende middelen.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="Inhoud aanpassen in een voorbeeld van een React-app"
+>abstract="We hebben een moderne React-app ingesteld waarmee u kunt leren hoe u inhoud kunt aanpassen met behulp van de functieset zonder kop."
 
 ## Inhoudsfragmenteditor {#fragment-editor}
 

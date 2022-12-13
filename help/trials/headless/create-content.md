@@ -4,9 +4,9 @@ description: Gebruik het model Inhoudsfragment dat u eerder hebt gemaakt om inho
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 0%
 # Koploze inhoud maken {#create-content}
 
 Door de in-product het leren module te volgen, leer hoe te om te gebruiken [De modellen van het Fragment van de Inhoud u eerder creeerde](content-structure.md) om inhoud te maken die kan worden gebruikt voor het ontwerpen van pagina&#39;s of als basis voor inhoud zonder kop. Dit document dient als aanvulling op de interactieve rondleiding, die dezelfde stappen omvat en waar nodig gekoppeld is aan aanvullende middelen.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="Nieuwe inhoud maken"
+>abstract="Voortbouwend op de modellen u in module 1 creeerde, zult u leren hoe te om inhoud tot stand te brengen die voor paginauteurs, of als basis van uw inhoud zonder kop kan worden gebruikt."
 
 ## Contentfragmenten {#introduction}
 

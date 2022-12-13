@@ -4,9 +4,9 @@ description: Leer hoe te om de console van Fragmenten van de Inhoud te gebruiken
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1915'
 ht-degree: 1%
 
 ---
@@ -54,11 +54,6 @@ De console van de Fragmenten van de Inhoud verleent directe toegang tot uw fragm
 * [Zoeken en filteren in de console voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="Nieuwe inhoud maken"
->abstract="Voortbouwend op de modellen u in module 1 creeerde, zult u leren hoe te om inhoud tot stand te brengen die voor paginauteurs, of als basis van uw inhoud zonder kop kan worden gebruikt."
 
 ### Een inhoudsmodel maken {#creating-a-content-model}
 
