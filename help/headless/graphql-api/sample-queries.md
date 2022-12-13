@@ -3,9 +3,9 @@ title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1540'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door s
 >* [AEM GraphQL API voor gebruik met Content Fragments](/help/headless/graphql-api/content-fragments.md)
 
 
-Om met vragen te beginnen GraphQL en hoe zij met AEM de Fragmenten van de Inhoud werken helpt het om sommige praktische voorbeelden te zien.
+Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, helpt het om enkele praktische voorbeelden te zien.
 
 Zie voor hulp bij dit:
 
@@ -1116,12 +1116,6 @@ Deze steekproefvragen zijn gebaseerd op het project WKND. Dit heeft:
 >
 >Aangezien de resultaten omvangrijk kunnen zijn, worden ze hier niet weergegeven.
 
->[!NOTE]
->
->Verschillende query&#39;s verwijzen naar de variatie `variation1`. Dit staat niet in het standaard WKND-pakket. Deze moet worden gemaakt voor testdoeleinden.
->
->Indien `variation1` bestaat niet, dan `master`variatie wordt als standaardwaarde geretourneerd.
-
 ### Voorbeeldquery voor alle inhoudsfragmenten van een bepaald model met de opgegeven eigenschappen {#sample-wknd-all-model-properties}
 
 Deze voorbeeldquery vraagt om:
@@ -1471,27 +1465,19 @@ Deze query vraagt om:
 Deze query vraagt om:
 
 * voor één inhoudsfragment van type `article` op een bepaald pad
-   * binnen dat kader de gegevens betreffende de wijziging: `variation1`
+   * binnen dat kader de gegevens betreffende de wijziging: `another`
 
 **Voorbeeldquery**
 
 ```graphql
 {
-  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo", variation: "another") {
     item {
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
@@ -1501,29 +1487,23 @@ Deze query vraagt om:
 
 Deze query vraagt om:
 
-* voor inhoudfragmenten van het type `article` met een specifieke variatie: `variation1`
+* voor inhoudfragmenten van het type `article` met een specifieke variatie: `another`
+
+>[!NOTE]
+>
+>Dit zal reserve voor de Fragmenten van de Inhoud tonen die geen a hebben [Variatie](/help/headless/graphql-api/content-fragments.md#variations) van de opgegeven naam.
 
 **Voorbeeldquery**
 
 ```graphql
 {
-  articleList(variation: "variation1") {
+  authorList(variation: "another") {
     items {
-      _path
-      _variation
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
