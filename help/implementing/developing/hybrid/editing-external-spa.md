@@ -2,9 +2,9 @@
 title: Een externe SPA bewerken in AEM
 description: In dit document worden de aanbevolen stappen beschreven voor het uploaden van een zelfstandige SPA naar een AEM-instantie, het toevoegen van bewerkbare gedeelten van inhoud en het inschakelen van ontwerpen.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2456'
 ht-degree: 0%
 
 ---
@@ -358,6 +358,10 @@ Om het uitgeven binnen AEM voor dit SPA toe te laten, zijn de volgende stappen v
 1. Verifieer het uitgeven van de pagina in AEM.
 
    * Implementeer het project en navigeer naar het nieuwe project `test` pagina. De pagina-inhoud wordt nu gerenderd en AEM componenten kunnen worden bewerkt.
+
+## Kaderbeperkingen {#framework-limitations}
+
+De component RemotePage verwacht dat de implementatie activa-manifest zoals levert [hier gevonden.](https://github.com/shellscape/webpack-manifest-plugin) De component RemotePage, echter, is slechts getest om met het React kader (en Next.js via ver-pagina-volgende component) te werken, en daarom steunt ver het laden van toepassingen van andere kaders, zoals Angular niet.
 
 ## Aanvullende bronnen {#additional-resources}
 
