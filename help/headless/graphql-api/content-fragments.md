@@ -3,7 +3,7 @@ title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 666125abe28ed71e85fdcf4a3b44f26e61c7795f
 workflow-type: tm+mt
 source-wordcount: '4174'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Door de GraphQL API in AEM te gebruiken, kunt u inhoudsfragmenten efficiënt aan
 
 >[!NOTE]
 >
->GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in as a Cloud Service Adobe Experience Manager (AEM):
+>GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM) as a Cloud Service:
 >
 >* [AEM Commerce gebruikt gegevens van een Commerce-platform via GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* AEM Content Fragments werken samen met de AEM GraphQL API (een aangepaste implementatie op basis van standaard GraphQL) voor gestructureerde inhoud voor gebruik in uw toepassingen.
@@ -41,7 +41,7 @@ GraphQL is:
 
 * &quot;*...een open specificatie voor een flexibele API-laag. Plaats GraphQL over uw bestaande achtergronden om producten sneller dan ooit te bouwen....*&quot;.
 
-   Zie [GraphQL verkennen](https://www.graphql.com).
+   Zie [GrafiekQL verkennen](https://www.graphql.com).
 
 * *&quot;...een taal en specificatie voor gegevensquery die in 2012 intern door Facebook zijn ontwikkeld, voordat deze in 2015 openbaar is uitbesteed. Het biedt een alternatief voor op REST gebaseerde architecturen met als doel de productiviteit van ontwikkelaars te verhogen en de hoeveelheden overgedragen gegevens te minimaliseren. GraphQL wordt gebruikt in productie door honderden organisaties van elke omvang...&quot;*
 
@@ -73,7 +73,7 @@ De GraphQL for AEM-implementatie is gebaseerd op de standaard GraphQL Java Libra
 
 * [GraphQL Java bij GitHub](https://github.com/graphql-java)
 
-### GraphQL-terminologie {#graphql-terminology}
+### GraphQL Terminologie {#graphql-terminology}
 
 GraphQL gebruikt het volgende:
 
@@ -87,9 +87,9 @@ GraphQL gebruikt het volgende:
 * **[Velden](https://graphql.org/learn/queries/#fields)**
 
 * **[GraphQL-eindpunt](graphql-endpoint.md)**
-   * De weg in AEM die aan vragen GraphQL antwoordt, en toegang tot de schema&#39;s GraphQL verleent.
+   * Het pad in AEM dat reageert op GraphQL-query&#39;s en toegang biedt tot de GraphQL-schema&#39;s.
 
-   * Zie [GraphQL Endpoint inschakelen](graphql-endpoint.md) voor nadere bijzonderheden.
+   * Zie [GrafiekQL-eindpunt inschakelen](graphql-endpoint.md) voor nadere bijzonderheden.
 
 Zie de [(GraphQL.org) Inleiding tot GraphQL](https://graphql.org/learn/) voor uitvoerige informatie, waaronder [Aanbevolen werkwijzen](https://graphql.org/learn/best-practices/).
 
@@ -158,13 +158,13 @@ Bovendien moet de gebruiker toegang hebben tot een GraphQL-eindpunt om GraphQL-q
 
 GraphQL is een sterk getypeerde API, wat betekent dat de gegevens duidelijk gestructureerd en ingedeeld moeten zijn per type.
 
-De specificatie GraphQL verstrekt een reeks richtlijnen op hoe te om tot een robuuste API voor het ondervragen van gegevens over een bepaalde instantie te leiden. Om dit te doen, moet een cliënt halen [Schema](#schema-generation), die alle typen bevat die nodig zijn voor een query.
+De GraphQL-specificatie biedt een aantal richtlijnen voor het maken van een robuuste API voor het ondervragen van gegevens over een bepaalde instantie. Om dit te doen, moet een cliënt halen [Schema](#schema-generation), die alle typen bevat die nodig zijn voor een query.
 
-Voor Inhoudsfragmenten zijn de GraphQL-schema&#39;s (structuur en typen) gebaseerd op **Ingeschakeld** [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) en hun gegevenstypen.
+Voor inhoudsfragmenten zijn de GraphQL-schema&#39;s (structuur en typen) gebaseerd op **Ingeschakeld** [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) en hun gegevenstypen.
 
 >[!CAUTION]
 >
->Alle GraphQL-schema&#39;s (afgeleid van Content Fragment Models) die zijn **Ingeschakeld**) zijn leesbaar door het eindpunt GraphQL.
+>Alle GraphQL-schema&#39;s (afgeleid van Content Fragment Models) die zijn **Ingeschakeld**) zijn leesbaar via het GraphQL-eindpunt.
 >
 >Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, aangezien deze op deze manier kunnen worden gelekt; Dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.
 
@@ -175,7 +175,7 @@ Als een gebruiker bijvoorbeeld een Content Fragment Model heeft gemaakt, genaamd
    ![Inhoudsfragmentmodel voor gebruik met GraphQL](assets/cfm-graphqlapi-01.png "Inhoudsfragmentmodel voor gebruik met GraphQL")
 
 1. Het corresponderende GraphQL-schema (uitvoer van de automatische documentatie GraphiQL):
-   ![GraphQL-schema gebaseerd op inhoudsfragmentmodel](assets/cfm-graphqlapi-02.png "GraphQL-schema gebaseerd op inhoudsfragmentmodel")
+   ![GrafiekQL-schema gebaseerd op inhoudsfragmentmodel](assets/cfm-graphqlapi-02.png "GraphQL-schema gebaseerd op inhoudsfragmentmodel")
 
    Dit toont aan dat het geproduceerde type `ArticleModel` bevat diverse [velden](#fields).
 
@@ -201,7 +201,7 @@ Als u bijvoorbeeld:
 
 1. Vervolgens wijzigen `Content-Fragment-Model-2`:
 
-   1. Alleen de `Model-2` Het type GraphQL wordt bijgewerkt.
+   1. Alleen de `Model-2` GraphQL-type wordt bijgewerkt.
 
    1. Overwegende `Model-1` blijft hetzelfde.
 
@@ -209,7 +209,7 @@ Als u bijvoorbeeld:
 >
 >Dit is belangrijk om op te merken voor het geval u bulkupdates op de Modellen van het Fragment van de Inhoud door REST api, of anders wilt doen.
 
-Het schema wordt gediend door het zelfde eindpunt zoals de vragen van GraphQL, met de cliënt die het feit behandelt dat het schema met de uitbreiding wordt geroepen `GQLschema`. U kunt bijvoorbeeld een eenvoudige `GET` verzoek op `/content/cq:graphql/global/endpoint.GQLschema` resulteert in de uitvoer van het schema met het inhoudstype: `text/x-graphql-schema;charset=iso-8859-1`.
+Het schema wordt gediend door het zelfde eindpunt zoals de vragen GraphQL, met de cliënt die het feit behandelt dat het schema met de uitbreiding wordt geroepen `GQLschema`. U kunt bijvoorbeeld een eenvoudige `GET` verzoek op `/content/cq:graphql/global/endpoint.GQLschema` resulteert in de uitvoer van het schema met het inhoudstype: `text/x-graphql-schema;charset=iso-8859-1`.
 
 <!-- move through to here to a separate "in depth" page -->
 
@@ -233,7 +233,7 @@ Binnen het schema zijn er afzonderlijke velden, van twee basiscategorieën:
 
    * Er is ook **Renderen als** rekening houden met de instelling, aangezien gebruikers bepaalde gegevenstypen kunnen configureren. U kunt bijvoorbeeld een tekstveld bestaande uit een enkele regel zo configureren dat het meerdere tekstregels bevat door `multifield` in de vervolgkeuzelijst.
 
-* GraphQL voor AEM genereert ook een aantal [helpervelden](#helper-fields).
+* GraphQL for AEM genereert ook een aantal [helpervelden](#helper-fields).
 
 ### Gegevenstypen {#data-types}
 
@@ -245,7 +245,7 @@ GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen
 | Tekst met meerdere regels | String, [String] |  Wordt gebruikt voor het uitvoeren van tekst, zoals de hoofdtekst van een artikel |
 | Getal |  Float [Float] | Wordt gebruikt om het zwevende-kommagetal en de reguliere getallen weer te geven |
 | Boolean |  Boolean |  Gebruikt om selectievakjes weer te geven → eenvoudige true/false-instructies |
-| Datum en tijd | Kalender |  Wordt gebruikt om datum en tijd weer te geven in de ISO 8086-indeling. Afhankelijk van het geselecteerde type zijn er drie kleuren beschikbaar voor gebruik in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
+| Datum en tijd | Kalender |  Wordt gebruikt om datum en tijd weer te geven in de indeling ISO 8601. Afhankelijk van het geselecteerde type zijn er drie kleuren beschikbaar voor gebruik in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
 | Opsomming |  Tekenreeks |  Wordt gebruikt om een optie weer te geven uit een lijst met opties die bij het maken van het model zijn gedefinieerd |
 |  Tags |  [Tekenreeks] |  Wordt gebruikt om een lijst weer te geven met tekenreeksen die tags vertegenwoordigen die in AEM worden gebruikt |
 | Content Reference |  String, [String] |  Wordt gebruikt om het pad naar een ander element in AEM weer te geven |
@@ -253,7 +253,7 @@ GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen
 
 ### Helpervelden {#helper-fields}
 
-Naast de gegevenstypen voor door de gebruiker gegenereerde velden, genereert GraphQL voor AEM ook een aantal *helper* velden voor het herkennen van een inhoudsfragment of voor het verschaffen van aanvullende informatie over een inhoudsfragment.
+Naast de gegevenstypen voor door de gebruiker gegenereerde velden, genereert GraphQL for AEM ook een aantal *helper* velden voor het herkennen van een inhoudsfragment of voor het verschaffen van aanvullende informatie over een inhoudsfragment.
 
 Deze [helpervelden](#helper-fields) zijn gemarkeerd met een voorgaande `_` om onderscheid te maken tussen wat door de gebruiker is gedefinieerd en wat automatisch is gegenereerd.
 
@@ -294,7 +294,7 @@ Zie [Voorbeeldquery - één specifiek stedenfragment](/help/headless/graphql-api
 
 #### Metagegevens {#metadata}
 
-Via GraphQL stelt AEM ook de metagegevens van een inhoudsfragment beschikbaar. Metagegevens zijn de informatie die een inhoudsfragment beschrijft, zoals de titel van een inhoudsfragment, het miniatuurpad, de beschrijving van een inhoudsfragment en de datum waarop het is gemaakt.
+Via GraphQL worden AEM ook de metagegevens van een inhoudsfragment beschikbaar gemaakt. Metagegevens zijn de informatie die een inhoudsfragment beschrijft, zoals de titel van een inhoudsfragment, het miniatuurpad, de beschrijving van een inhoudsfragment en de datum waarop het is gemaakt.
 
 Omdat metagegevens worden gegenereerd via de Schema-editor en als zodanig geen specifieke structuur hebben, `TypedMetaData` Het GraphQL-type is geïmplementeerd om de metagegevens van een inhoudsfragment beschikbaar te maken. `TypedMetaData` stelt de informatie bloot die door de volgende scalaire types wordt gegroepeerd:
 
@@ -332,7 +332,7 @@ Ga als volgt te werk om te zoeken naar metagegevens:
 }
 ```
 
-U kunt alle types van meta-gegevensGrafiekQL bekijken als u het Gegenereerde schema GraphQL bekijkt. Alle modeltypen hebben dezelfde `TypedMetaData`.
+U kunt alle GraphQL-typen voor metagegevens weergeven als u het schema Gegenereerde GraphQL weergeeft. Alle modeltypen hebben dezelfde `TypedMetaData`.
 
 >[!NOTE]
 >
@@ -377,7 +377,7 @@ GraphQL staat toe dat variabelen in de query worden geplaatst. Voor meer informa
 
 Als u bijvoorbeeld alle inhoudsfragmenten van het type wilt ophalen `Author` in een specifieke variatie (indien beschikbaar), kunt u het argument specificeren `variation` in GraphiQL.
 
-![GrafiekQL-variabelen](assets/cfm-graphqlapi-03.png "GraphQL-variabelen")
+![GrafiekQL-variabelen](assets/cfm-graphqlapi-03.png "GrafiekQL-variabelen")
 
 **Query**:
 
@@ -701,7 +701,7 @@ query {
 
 ## GraphQL voor AEM - Overzicht van extensies {#graphql-extensions}
 
-De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspecificatie van GraphQL. Voor vragen GraphQL met AEM zijn er een paar uitbreidingen:
+De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspecificatie van GraphQL. Voor GraphQL-query&#39;s met AEM zijn er een paar extensies:
 
 * Als u een lijst met resultaten verwacht:
    * toevoegen `List` de modelnaam; bijvoorbeeld:  `cityList`
@@ -785,9 +785,9 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
 
    * Als een bepaalde variatie niet bestaat in een genest fragment, wordt de **Master** variatie wordt geretourneerd.
 
-## Het vragen van het eindpunt GraphQL van een Externe Website {#query-graphql-endpoint-from-external-website}
+## Het GraphQL-eindpunt van een externe website opvragen {#query-graphql-endpoint-from-external-website}
 
-Om tot het eindpunt van GraphQL van een externe website toegang te hebben moet u vormen:
+Om tot het eindpunt GraphQL van een externe website toegang te hebben moet u vormen:
 
 * [CORS-filter](/help/headless/deployment/cross-origin-resource-sharing.md)
 * [Refererfilter](/help/headless/deployment/referrer-filter.md)
@@ -805,6 +805,6 @@ De gerezen vragen:
    * **A**: &quot;*De AEM GraphQL API biedt volledige controle op de JSON-uitvoer en is een industriestandaard voor het opvragen van inhoud.
 Als u verder gaat, is AEM van plan te investeren in de AEM GraphQL API.*&quot;
 
-## Zelfstudie - Aan de slag met AEM headless and GraphQL {#tutorial}
+## Zelfstudie - Aan de slag met AEM Headless en GraphQL {#tutorial}
 
 Op zoek naar een praktische zelfstudie? Uitchecken [Aan de slag met AEM Headless en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt ontwikkelen en beschikbaar maken met de GraphQL-API&#39;s van AEM en die door een externe toepassing wordt verbruikt.
