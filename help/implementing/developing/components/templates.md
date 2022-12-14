@@ -2,9 +2,9 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die wordt gebruikt als basis voor de nieuwe pagina
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3300'
 ht-degree: 0%
 
 ---
@@ -357,7 +357,7 @@ Als u een sjabloon hebt gemaakt die als basis voor andere sjablonen kan dienen, 
 1. Een sjabloon maken zoals een paginasjabloon [zoals hier beschreven](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), die als basis voor uw sjabloontype zal dienen.
 1. Kopieer de nieuwe sjabloon met CRXDE Lite van de `templates` aan de `template-types` knooppunt onder [sjabloonmap](#template-folders).
 1. De sjabloon verwijderen uit het dialoogvenster `templates` knooppunt onder [sjabloonmap](#template-folders).
-1. In de kopie van de sjabloon die zich onder de `template-types` knooppunt, alles verwijderen `cq:template` en `cq:templateType` `jcr:content` eigenschappen.
+1. In de kopie van de sjabloon die zich onder de `template-types` knooppunt, alles verwijderen `cq:template` en `cq:templateType` eigenschappen van alle `jcr:content` knooppunten.
 
 U kunt uw eigen malplaatjetype ook ontwikkelen gebruikend een voorbeeld editable malplaatje als basis, beschikbaar op GitHub.
 
