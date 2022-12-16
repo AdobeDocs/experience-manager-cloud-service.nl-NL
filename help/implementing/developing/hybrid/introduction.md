@@ -2,9 +2,9 @@
 title: SPA Inleiding en Analyse
 description: Dit artikel introduceert de concepten SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '2076'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,18 @@ Dit artikel introduceert de basisconcepten van SPA alvorens de lezer door een an
 
 Het doel van deze inleiding en analyse is aan een AEM ontwikkelaar te tonen waarom SPA relevant zijn, hoe zij over het algemeen werken, hoe een SPA door de AEM Redacteur wordt behandeld SPA, en hoe het van een standaard AEM toepassing verschillend is.
 
-De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SPA Project app. Volg deze stappen [download en installeer de steekproefWKND SPAProject app van GitHub hier.](https://github.com/adobe/aem-guides-wknd-spa)
+## Vereisten {#requirements}
+
+De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SPA Project app. Om samen met deze analyse te volgen, moet u het volgende beschikbaar hebben.
+
+* [Laatste ontwikkelings-SDK van AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   * Het zou als lokale ontwikkelomgeving moeten lopen.
+   * U moet beheerdersrechten voor het systeem hebben.
+* [De steekproefWKND SPA Project beschikbaar op GitHub](https://github.com/adobe/aem-guides-wknd-spa)
+   * Download de [nieuwste release van de React-app](https://github.com/adobe/aem-guides-wknd-spa/releases) genoemd gelijkaardig aan `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
+   * Download de [nieuwste voorbeeldafbeeldingen voor de app](https://github.com/adobe/aem-guides-wknd-spa/releases) genoemd gelijkaardig aan `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [Pakketbeheer gebruiken](/help/implementing/developing/tools/package-manager.md) om beide pakketten te installeren zoals u een ander pakket in AEM zou doen.
+   * Voor deze analyse hoeft de app niet te worden geïnstalleerd met Maven.
 
 >[!CAUTION]
 >
