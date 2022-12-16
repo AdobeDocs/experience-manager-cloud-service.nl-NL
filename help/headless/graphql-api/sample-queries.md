@@ -3,7 +3,7 @@ title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 2%
@@ -23,20 +23,20 @@ Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door s
 >* [AEM GraphQL API voor gebruik met Content Fragments](/help/headless/graphql-api/content-fragments.md)
 
 
-Om met vragen te beginnen GraphQL en hoe zij met AEM de Fragmenten van de Inhoud werken helpt het om sommige praktische voorbeelden te zien.
+Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, helpt het om enkele praktische voorbeelden te zien.
 
 Zie voor hulp bij dit:
 
 * A [voorbeeldstructuur van inhoudsfragment](#content-fragment-structure-graphql)
 
-* En sommige [voorbeeld GraphQL-vragen](#graphql-sample-queries), op basis van de structuur van het voorbeeldinhoudsfragment (Content Fragment Models and related Content Fragments).
+* En sommige [voorbeeld GraphQL-query&#39;s](#graphql-sample-queries), op basis van de structuur van het voorbeeldinhoudsfragment (Content Fragment Models and related Content Fragments).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
 >title="Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s"
 >abstract="Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken."
 
-## GraphQL - Voorbeeldquery&#39;s met gebruik van de structuur van het contentfragment voor voorbeeldinhoud {#graphql-sample-queries-sample-content-fragment-structure}
+## GraphQL - Voorbeeldquery&#39;s met de structuur van het voorbeeldinhoudsfragment {#graphql-sample-queries-sample-content-fragment-structure}
 
 Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekproefresultaten.
 
@@ -1588,7 +1588,7 @@ Deze query vraagt om:
 }
 ```
 
-## De structuur van het fragment met voorbeeldinhoud (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
+## De structuur voor het voorbeeldinhoudfragment (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
 
 De steekproefvragen zijn gebaseerd op de volgende structuur, die gebruikt:
 
@@ -1614,7 +1614,7 @@ De basisvelden voor het bedrijf zijn:
 |--- |--- |--- |
 | Bedrijfsnaam | Tekst met één regel |  |
 | CEO | Fragmentverwijzing (enkele) | [Person](#model-person) |
-| Werknemers | Fragmentverwijzing (meerdere velden) | [Persoon](#model-person) |
+| Werknemers | Fragmentverwijzing (meerdere velden) | [Person](#model-person) |
 
 #### Person {#model-person}
 
@@ -1655,29 +1655,29 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 | Bedrijfsnaam | CEO | Werknemers |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Trekslade |
+| Little Pony Inc. | Adam Smith | Lara Croft<br>Trekslade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
-#### Persoon {#fragment-person}
+#### Person {#fragment-person}
 
 | Naam | Voornaam | Awards |
 |--- |--- |--- |
-| Lincoln |  Abe |  |
-| Smith | Adam |   |
-| Slade |  Tussenruimte |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Uitsnijden |  Lara | Gamestar |
-| Caulfield |  Max |  Gameblitz |
-|  Taken |  Steve |   |
+| Lincoln | Abe |  |
+| Smith | Adam |  |
+| Slade | Tussenruimte | Gameblitz<br>Gamestar |
+| Marsh | Duke |  |
+| Smith | Joe |  |
+| Uitsnijden | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| Taken | Steve |  |
 
 #### Uitreiking {#fragment-award}
 
 | Sneltoets/id | Titel |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### Plaats {#fragment-city}
 
@@ -1685,8 +1685,8 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 |--- |--- |--- |--- |
 | Bazel | Zwitserland | 172258 | stad:emea |
 | Berlin | Duitsland | 3669491 | stad:hoofdstad<br>stad:emea |
-| Boekarest | Roemenië | 1821000 |  stad:hoofdstad<br>stad:emea |
-| San Francisco |  VS |  883306 |  stad:strand<br>plaats:na |
-| San Jose |  VS |  102635 |  plaats:na |
-| Stuttgart |  Duitsland |  634830 |  stad:emea |
-|  Zurich |  Zwitserland |  415367 |  stad:hoofdstad<br>stad:emea |
+| Boekarest | Roemenië | 1821000 | stad:hoofdstad<br>stad:emea |
+| San Francisco | VS | 883306 | stad:strand<br>plaats:na |
+| San Jose | VS | 102635 | plaats:na |
+| Stuttgart | Duitsland | 634830 | stad:emea |
+| Zurich | Zwitserland | 415367 | stad:hoofdstad<br>stad:emea |

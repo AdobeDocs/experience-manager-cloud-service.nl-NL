@@ -2,9 +2,9 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1433'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ De mogelijkheid biedt API&#39;s om de documenten te genereren en te bewerken. U 
 
 * HTTP-API&#39;s voor eenvoudigere integratie met externe systemen. Afzonderlijke API&#39;s voor bewerkingen op aanvraag (lage latentie) en batchbewerkingen (bewerkingen met hoge doorvoer) worden opgenomen.
 
-* een veilige toegang tot gegevens. Communicatie APIs verbindt met en heeft toegang tot gegevens slechts van klant aangewezen gegevensbewaarplaatsen, die mededelingen hoogst veilig maken.
+* een veilige toegang tot gegevens. Communicatie APIs verbindt met en heeft toegang tot gegevens slechts van klant-aangewezen gegevensbewaarplaatsen, die mededelingen hoogst veilig maken.
 
 ![Een voorbeeld van een creditcardformulier](assets/statement.png)
 Een creditcardverklaring kan worden gecreeerd gebruikend Communicatie APIs. Deze voorbeeldinstructie gebruikt dezelfde sjabloon maar afzonderlijke gegevens voor elke klant, afhankelijk van het gebruik van de creditcard.
@@ -126,13 +126,37 @@ Afbeelding: Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meer
 
 Met de API&#39;s voor documentmanipulatie kunt u een PDF-document converteren naar een document dat voldoet aan de PDF/A-standaard en bepalen of een PDF-document voldoet aan de PDF/A-standaard. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
 
+## Documenthulpprogramma&#39;s
+
+Met documenthulpprogramma&#39;s kunt u synchrone API&#39;s gebruiken om documenten om te zetten tussen PDF- en XDP-bestandsindelingen en om informatie over een PDF-document op te vragen. U kunt bijvoorbeeld bepalen of een PDF-document opmerkingen of bijlagen bevat.
+
+### Eigenschappen van PDF-document ophalen
+
+U kunt [vragen in een PDF-document](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) voor de volgende informatie:
+
+* Is een PDF-document: Controleer of het brondocument een PDF-document is.
+* Is een invulbaar formulier: Controleer of het PDF-brondocument een invulbaar formulier is.
+* Formuliertype: Haal het formuliertype van het document op.
+* Controleren op bijlagen: Controleer of het PDF-brondocument bijlagen bevat.
+* Controleren op opmerkingen: Controleer of het PDF-brondocument revisieopmerkingen bevat.
+* Is een PDF-pakket: Controleer of het document een PDF-pakket is.
+* Versie van PDF ophalen: De [versie van het PDF-document](https://en.wikipedia.org/wiki/History_of_PDF).
+* Aanbevolen Acrobat-versie: Haal de vereiste versie van Acrobat (Reader) op om het PDF-document te openen.
+* Is een XFA-document: Controleer of het brondocument PDF een op XFA gebaseerd PDF-document is.
+* Is Shell PDF: Controleer of het PDF-brondocument shell PDF is. Een shell-PDF bevat alleen een XFA-stroom, font- en afbeeldingsbronnen en één pagina die leeg is of een waarschuwing bevat dat het document moet worden geopend met Acrobat of Adobe Reader. De shell PDF wordt gebruikt met PDF transformatie om levering van slechts transformaties te optimaliseren PDFForm.
+* De XFA-versie ophalen: De [XFA-versie voor een op XFA gebaseerd PDF-document](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+
+### PDF-documenten converteren naar XDP-documenten
+
+De [PDF naar XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converteert een PDF-document naar een XDP-bestand. Een PDF-document kan alleen met succes worden geconverteerd naar een XDP-bestand als het PDF-document een XFA-stroom bevat in het woordenboek.
+
 ## Typen communicatie-API&#39;s
 
 Communicatie biedt HTTP-API&#39;s voor het genereren van documenten op aanvraag en in batches:
 
-* **[Synchrone API&#39;s](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor on-demand, lage latentie en scenario&#39;s voor het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op gebruikersacties. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
+* **[Synchrone API&#39;s](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor on-demand, lage latentie en scenario&#39;s voor het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op gebruikersacties. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
 
-* **[Batch-API&#39;s (Asynchrone API&#39;s)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Deze API&#39;s genereren documenten batchgewijs. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
+* **[Batch-API&#39;s (Asynchrone API&#39;s)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Deze API&#39;s genereren documenten batchgewijs. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
 
 ## Onboarding
 
