@@ -3,12 +3,13 @@ title: CI/CD-pijpleidingen
 description: Leer meer over de CI/CD-pijpleidingen van Cloud Manager en hoe deze kunnen worden gebruikt om uw code efficiënt te implementeren.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1368'
 ht-degree: 0%
 
 ---
+
 
 # Cloud Manager CI/CD Pipelines {#intro-cicd}
 
@@ -120,9 +121,9 @@ De front-end pijpleidingen helpen uw teams uw ontwerp en ontwikkelingsproces str
 >
 >Een gebruiker met de **Implementatiebeheer** De rol kan veelvoudige front-end pijpleidingen tot stand brengen en in werking stellen gelijktijdig.
 >
->Er is echter een maximum van 300 pijpleidingen per programma (voor alle soorten). Dit kunnen front-end codekwaliteit of front-end plaatsingspijpleidingen zijn.
+>Er is echter een maximum van 300 pijpleidingen per programma (voor alle soorten).
 
-Voorste-eindpijpleidingen kunnen pijpleidingen van codekwaliteit of plaatsing zijn.
+Voorste pijpleidingen kunnen pijpleidingen van codekwaliteit zijn of uitzetpijpleidingen.
 
 ### Alvorens u Voorste-Eind Pijpleidingen vormt {#before-start}
 

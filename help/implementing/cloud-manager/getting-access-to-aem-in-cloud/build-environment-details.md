@@ -2,12 +2,13 @@
 title: Build-omgeving
 description: Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en test.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
+
 
 # Build-omgeving {#build-environment}
 
@@ -225,3 +226,7 @@ Deze zelfde techniek kan worden gebruikt om taal-specifieke pakketten te install
 >[!NOTE]
 >
 >Als u een systeempakket op deze manier installeert, wordt dit niet geïnstalleerd in de runtimeomgeving die voor het uitvoeren van Adobe Experience Manager wordt gebruikt. Als u een systeempakket nodig hebt dat op de AEM-omgeving is geïnstalleerd, neemt u contact op met uw Adobe-vertegenwoordiger.
+
+>[!TIP]
+>
+>Raadpleeg het document voor meer informatie over de omgeving van de front-end build [Sites ontwikkelen met behulp van de Front-End Pipeline.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
