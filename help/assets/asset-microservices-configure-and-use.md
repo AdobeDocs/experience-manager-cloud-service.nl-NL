@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
+source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '2838'
 ht-degree: 0%
 
 ---
@@ -111,10 +111,10 @@ Het kan beeld, video, document, en andere dossierformaten in verschillende verto
 
 Ontwikkelaars kunnen de [!DNL Asset Compute Service] tot [aangepaste toepassingen maken](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) voor de ondersteunde gebruiksgevallen. [!DNL Experience Manager] U kunt deze aangepaste toepassingen vanuit de gebruikersinterface aanroepen met behulp van aangepaste profielen die beheerders configureren. [!DNL Asset Compute Service] steunt de volgende gevallen waarin externe diensten worden opgeroepen:
 
-* Gebruiken [!DNL Adobe Photoshop]s [ImageCutout-API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) en sla het resultaat op als uitvoering.
+* Gebruiken [!DNL Adobe Photoshop]s [ImageCutout-API](https://developer.adobe.com/photoshop/photoshop-api-docs/) en sla het resultaat op als uitvoering.
 * De systemen van de derde vraag om gegevens, bijvoorbeeld, een PIM systeem bij te werken.
 * Gebruiken [!DNL Photoshop] API om verschillende uitvoeringen te genereren op basis van de Photoshop-sjabloon.
-* Gebruiken [Adobe Lightroom API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) om de opgenomen elementen te optimaliseren en deze als uitvoeringen op te slaan.
+* Gebruiken [Adobe Lightroom API](https://developer.adobe.com/photoshop/photoshop-api-docs/) om de opgenomen elementen te optimaliseren en deze als uitvoeringen op te slaan.
 
 >[!NOTE]
 >
@@ -129,17 +129,17 @@ Ga als volgt te werk om een aangepast profiel te maken:
 1. Geef de volgende informatie op.
 
    * Bestandsnaam van elke vertoning en een ondersteunde bestandsextensie.
-   * [Eindpunt-URL van een Firefly-aangepaste app](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). De app moet afkomstig zijn van dezelfde organisatie als de Experience Manager-account.
+   * [Eindpunt-URL van een aangepaste app App Builder](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). De app moet afkomstig zijn van dezelfde organisatie als de Experience Manager-account.
    * Serviceparameters toevoegen aan [Geef extra informatie of parameters door aan de aangepaste toepassing](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
    * MIME-typen zijn opgenomen en uitgesloten om de verwerking te beperken tot een paar specifieke bestandsindelingen.
 
    Klik op **[!UICONTROL Save]**.
 
-De aangepaste toepassingen zijn zonder kop [Project onbedoeld](https://github.com/AdobeDocs/project-firefly) apps. De aangepaste toepassing haalt alle beschikbare bestanden op als deze zijn ingesteld met een verwerkingsprofiel. De toepassing moet de bestanden filteren.
+De aangepaste toepassingen zijn zonder kop [Project App Builder](https://developer.adobe.com/app-builder/docs/overview/) apps. Uw aangepaste toepassing krijgt alle beschikbare bestanden als deze zijn ingesteld met een verwerkingsprofiel. De toepassing moet de bestanden filteren.
 
 >[!CAUTION]
 >
->Als de Firefly-app en [!DNL Experience Manager] -account niet van dezelfde organisatie afkomstig zijn, de integratie werkt niet.
+>Als de app App Builder en [!DNL Experience Manager] -account niet van dezelfde organisatie afkomstig zijn, de integratie werkt niet.
 
 ### Een voorbeeld van een aangepast profiel {#custom-profile-example}
 
