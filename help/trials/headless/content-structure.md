@@ -4,9 +4,9 @@ description: Leer hoe u de structuur maakt die fungeert als basis voor alle inho
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,16 @@ Met inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, behe
 Om u te helpen begrijpen hoe dit wordt gedaan, neemt deze module van AEM Proefversies u door het proces met een snelle, interactieve tour eerst creërend het model en dan toevoegend zijn structuur. Dit document dient als aanvulling op de rondreis in het product, die dezelfde stappen omvat en waar nodig aan extra middelen koppelt.
 
 >[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
->title="De modeleditor starten"
->abstract="Het bouwen van een model van het inhoudsfragment begint met het creëren van een modelpunt in het werkschema van het modelbeleid, dan toevoegend structuurelementen aan het gebruikend de modelredacteur van het inhoudsfragment.<br><br>Klik hieronder om de functie te starten op een nieuw tabblad en volg dit leerdocument om uw eerste inhoudsfragment te maken."
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
->title="De modeleditor starten"
->abstract="Het bouwen van een model van het inhoudsfragment begint met het creëren van een modelpunt in het werkschema van het modelbeleid, dan toevoegend structuurelementen aan het gebruikend de modelredacteur van het inhoudsfragment.\n\nKlik hieronder om de functie op een nieuw tabblad te starten en volg dit leerdocument om het eerste inhoudsfragment te maken."
-
->[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Maak de inhoudsstructuur voor uw app"
 >abstract="Als u onze reeks interactieve hulplijnen volgt, leert u de structuur (ook wel het inhoudsfragmentmodel genoemd) te maken die als basis voor al uw inhoud zonder kop fungeert."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
+>title="De modeleditor starten"
+>abstract="Het bouwen van een model van het inhoudsfragment begint met het creëren van een modelpunt in het werkschema van het modelbeleid, dan toevoegend structuurelementen aan het gebruikend de modelredacteur van het inhoudsfragment.<br><br>Klik hieronder om de functie te starten op een nieuw tabblad en volg dit leerdocument om uw eerste model voor inhoudsfragmenten te maken."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Plaatsaanduiding voor de intro-video"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Videominiatuur: De bouwstenen van AEM Headless"
 
 ## De console van het inhoudsfragmentmodel {#content-fragment-model-console}
 

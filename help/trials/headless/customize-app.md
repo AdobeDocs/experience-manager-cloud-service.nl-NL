@@ -4,9 +4,9 @@ description: Gebruik een voorbeeld van een React-app om te leren hoe u inhoud ku
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,13 @@ De app zelf is gebaseerd op de structuur van inhoudsfragmenten. Met de Content F
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
 >title="Inhoud aanpassen in een voorbeeld van een React-app"
 >abstract="We hebben een moderne React-app ingesteld waarmee u kunt leren hoe u inhoud kunt aanpassen met behulp van de functieset zonder kop."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
+>title="De editor voor inhoudsfragmenten starten"
+>abstract="AEM Proefversies voor headless worden vooraf geladen met een eenvoudige React-app om inhoud zonder kop weer te geven. De app is gebaseerd op de structuur van inhoudsfragmenten. Met de Content Fragment-editor in AEM kunt u de inhoud van uw app wijzigen.<br><br>Start de functie op een nieuw tabblad door hieronder te klikken en volg deze handleiding."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Plaatsaanduiding voor de intro-video"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Videominiatuur: Toepassingsinhoud in een flits wijzigen"
 
 ## Inhoudsfragmenteditor {#fragment-editor}
 

@@ -4,16 +4,16 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
 
 # Inhoud extraheren via de GraphQL API {#extract-content}
 
-Tot nu toe AEM proefversies voor headless hebt u [uw eigen modellen van inhoudsfragmenten maken](content-structure.md) ook uw eigen inhoud zonder kop hebt gemaakt [Inhoudsfragmenten.](create-content.md) Nu kunt u leren hoe u inhoudsfragmenten en de GraphQL API kunt gebruiken als een systeem voor inhoudsbeheer zonder kop om uw inhoud te leveren.
+Tot nu toe AEM proefversies voor headless hebt u [uw eigen modellen van inhoudsfragmenten maken](content-structure.md) ook uw eigen inhoud zonder kop hebt gemaakt [Inhoudsfragmenten.](create-content.md) Nu kunt u leren hoe te om de Fragments van de Inhoud en GraphQL API als een hoofdloos inhoudsbeheersysteem te gebruiken om uw inhoud te leveren.
 
 GraphQL biedt een API op basis van query&#39;s waarmee externe clienttoepassingen AEM kunnen zoeken voor alleen de inhoud die ze nodig hebben met behulp van één API-aanroep.
 
@@ -21,12 +21,19 @@ Eerst zult u leren hoe te om twee verschillende types van vragen in werking te s
 
 >[!TIP]
 >
->Als u meer details over GraphQL API wilt, zie [Sectie Aanvullende bronnen](#additional-resources) aan het einde van deze module voor de handleiding GraphQL API.
+>Zie voor meer informatie over de GraphQL API de [Sectie Aanvullende bronnen](#additional-resources) aan het einde van deze module voor de GraphQL API-handleiding.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
 >title="Inhoud extraheren met de GraphQL API"
 >abstract="In deze module leert u hoe u inhoudsfragmenten en de GraphQL API kunt gebruiken als een beheersysteem voor inhoud zonder kop."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
+>title="GraphQL Explorer starten"
+>abstract="GraphQL biedt een API op basis van query&#39;s waarmee externe clienttoepassingen AEM kunnen zoeken voor alleen de inhoud die het nodig heeft, met behulp van één API-aanroep. Volg deze handleiding om te leren hoe u twee verschillende typen query&#39;s uitvoert en vervolgens inhoud ophaalt uit het inhoudsfragment dat u in een vorige module hebt gemaakt.<br><br>Start de functie op een nieuw tabblad door hieronder te klikken."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Plaatsaanduiding voor de intro-video"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Videominiatuur: Snelle extractie van GraphQL-inhoud"
 
 ## GraphQL Explorer {#graphql-explorer}
 
@@ -162,7 +169,7 @@ Nu u de twee primaire types van vragen in werking hebt gesteld, bent u bereid om
 
    ![Resultaten van uw eigen query](assets/extract-content/custom-query-results.png)
 
-Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen. Zie de [Sectie Aanvullende bronnen](#additional-resources) voor extra voorbeeldquery&#39;s en voor meer informatie over wat u kunt doen met de GraphQL API.
+Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen. Zie de [Sectie Aanvullende bronnen](#additional-resources) voor extra steekproefvragen en leer hoeveel meer u met GraphQL API kunt doen.
 
 ## U hebt geleerd hoe u inhoud kunt zoeken! {#conclusion}
 

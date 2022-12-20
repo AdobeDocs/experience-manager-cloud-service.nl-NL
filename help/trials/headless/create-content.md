@@ -4,9 +4,9 @@ description: Gebruik het model Inhoudsfragment dat u eerder hebt gemaakt om inho
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,13 @@ Door de in-product het leren module te volgen, leer hoe te om te gebruiken [De m
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Nieuwe inhoud maken"
 >abstract="Voortbouwend op de modellen u in module 1 creeerde, zult u leren hoe te om inhoud tot stand te brengen die voor paginauteurs, of als basis van uw inhoud zonder kop kan worden gebruikt."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
+>title="De console voor inhoudsfragmenten starten"
+>abstract="In AEM CMS zonder kop zijn &#39;inhoudsfragmenten&#39; alle stukken inhoud die in de vooraf gedefinieerde structuur passen. Dit wordt een &#39;inhoudsfragmentmodel&#39; genoemd. In deze analyse, zult u leren hoe te om inhoud voor uw model van het inhoudsfragment tot stand te brengen.<br><br>Klik hieronder om de functie te starten op een nieuw tabblad en volg dit leerdocument om uw eerste inhoudsfragment te maken."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Plaatsaanduiding voor de intro-video"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Videominiatuur: Inhoud toevoegen - het winnende recept"
 
 ## Contentfragmenten {#introduction}
 
