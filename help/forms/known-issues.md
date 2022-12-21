@@ -6,9 +6,9 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Voordat u begint met [!DNL AEM Forms] as a Cloud Service, herzie de volgende bek
 * Wanneer u een adaptief formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 bytes ontvangen. De kwestie komt met tussenpozen en slechts bij het gebruiken van synchrone voorlegging voor. Dit is een [bekende kwestie](https://feedbackassistant.apple.com/feedback/9117687) in Apple iOS.
 
 * Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan het andere uiteinde een bestand van 0 bytes ontvangen. Dit is een bekend probleem in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+* AEM Forms as a Cloud Service genereert geen miniaturen voor XDP- en JSON-schemabestanden. De service geeft standaardpictogrammen weer in plaats van miniaturen.
+
+   ![Bekende uitgave van Forms-miniatuur](/help/forms/assets/forms-tumbnail-known-issue.png)
 
 
 ## Beperkingen {#limitations}
