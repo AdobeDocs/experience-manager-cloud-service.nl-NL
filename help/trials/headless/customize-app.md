@@ -4,9 +4,9 @@ description: Gebruik een voorbeeld van een React-app om te leren hoe u inhoud ku
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1465'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,6 @@ De app zelf is gebaseerd op de structuur van inhoudsfragmenten. Met de Content F
 >title="De editor voor inhoudsfragmenten starten"
 >abstract="AEM Proefversies voor headless worden vooraf geladen met een eenvoudige React-app om inhoud zonder kop weer te geven. De app is gebaseerd op de structuur van inhoudsfragmenten. Met de Content Fragment-editor in AEM kunt u de inhoud van uw app wijzigen.<br><br>Start de functie op een nieuw tabblad door hieronder te klikken en volg deze handleiding."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Plaatsaanduiding voor de intro-video"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Videominiatuur: Toepassingsinhoud in een flits wijzigen"
 
 ## Inhoudsfragmenteditor {#fragment-editor}
 

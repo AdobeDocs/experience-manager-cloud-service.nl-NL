@@ -4,9 +4,9 @@ description: Leer hoe u de structuur maakt die fungeert als basis voor alle inho
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,6 @@ Om u te helpen begrijpen hoe dit wordt gedaan, neemt deze module van AEM Proefve
 >title="De modeleditor starten"
 >abstract="Het bouwen van een model van het inhoudsfragment begint met het creëren van een modelpunt in het werkschema van het modelbeleid, dan toevoegend structuurelementen aan het gebruikend de modelredacteur van het inhoudsfragment.<br><br>Klik hieronder om de functie te starten op een nieuw tabblad en volg dit leerdocument om uw eerste model voor inhoudsfragmenten te maken."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Plaatsaanduiding voor de intro-video"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Videominiatuur: De bouwstenen van AEM Headless"
 
 ## De console van het inhoudsfragmentmodel {#content-fragment-model-console}
 
