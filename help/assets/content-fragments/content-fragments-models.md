@@ -2,7 +2,7 @@
 title: Content Fragment Models (Assets - Content Fragments)
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
+source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
 workflow-type: tm+mt
 source-wordcount: '2887'
 ht-degree: 3%
@@ -324,7 +324,7 @@ Nadat een model is gemaakt, moet het worden ingeschakeld zodat het:
 
 * Deze optie is beschikbaar voor selectie wanneer u een nieuw inhoudsfragment maakt.
 * Er kan vanuit een inhoudsfragmentmodel naar worden verwezen.
-* is beschikbaar voor GraphQL; zodat wordt het schema geproduceerd.
+* beschikbaar is voor GraphQL; zodat wordt het schema geproduceerd.
 
 Een model inschakelen dat is gemarkeerd als:
 
@@ -345,8 +345,8 @@ Een model kan ook worden uitgeschakeld, zodat:
 * Het model is niet meer beschikbaar als basis voor het maken van *new* Inhoudsfragmenten.
 * Echter:
    * Het GraphQL-schema wordt steeds gegenereerd en kan nog steeds worden opgevraagd (om te voorkomen dat JSON API wordt beïnvloed).
-   * Om het even welke die Inhoudsfragmenten van het model worden gebaseerd kunnen nog van het eindpunt worden gevraagd en van GraphQL zijn teruggekeerd.
-* Het model kan niet meer van verwijzingen worden voorzien, maar de bestaande verwijzingen worden gehouden onaangeroerd, en kunnen nog worden gevraagd en van het eindpunt GraphQL zijn teruggekeerd.
+   * Om het even welke die Inhoudsfragmenten van het model worden gebaseerd kunnen nog van het eindpunt van GraphQL worden gevraagd en zijn teruggekeerd.
+* Er kan niet meer naar het model worden verwezen, maar bestaande verwijzingen blijven ongewijzigd en kunnen nog steeds worden opgevraagd en geretourneerd vanaf het GraphQL-eindpunt.
 
 Een model uitschakelen dat is gemarkeerd als **Ingeschakeld** u de **Uitschakelen** optie van:
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Met Inhoudsfragmenten en de GraphQL API kunt u Adobe Experience Manager (AEM) as a Cloud Service gebruiken als een CMS (Headless Content Management System).
 
-Dit wordt bereikt gebruikend de Fragments van de Inhoud, samen met AEM GraphQL API (een aangepaste implementatie, die op standaard GraphQL wordt gebaseerd), om gestructureerde inhoud voor gebruik in uw toepassingen zonder uitzondering te leveren. Dankzij de mogelijkheid om één API-query aan te passen, kunt u de specifieke inhoud ophalen en leveren die u wilt/moet renderen (als antwoord op de enkele API-query).
+Dit wordt bereikt door gebruik te maken van Content Fragments, samen met de AEM GraphQL API (een aangepaste implementatie die is gebaseerd op standaard-GraphQL), voor het zonder problemen aanbieden van gestructureerde inhoud voor gebruik in uw toepassingen. Dankzij de mogelijkheid om één API-query aan te passen, kunt u de specifieke inhoud ophalen en leveren die u wilt/moet renderen (als antwoord op de enkele API-query).
 
 >[!NOTE]
 >
@@ -28,10 +28,10 @@ Dit wordt bereikt gebruikend de Fragments van de Inhoud, samen met AEM GraphQL A
 
 >[!NOTE]
 >
->GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in as a Cloud Service Adobe Experience Manager (AEM):
+>GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM) as a Cloud Service:
 >
 >* [AEM Handel verbruikt gegevens van een handelsplatform via GraphQL](/help/commerce-cloud/integrating/magento.md).
->* [AEM Content Fragments werken samen met de AEM GraphQL API (een aangepaste implementatie, gebaseerd op standaard GraphQL) om gestructureerde inhoud te leveren voor gebruik in uw toepassingen](/help/headless/graphql-api/content-fragments.md).
+>* [AEM de Fragmenten van de Inhoud werken samen met AEM GraphQL API (een aangepaste implementatie, die op standaard GraphQL wordt gebaseerd), om gestructureerde inhoud voor gebruik in uw toepassingen te leveren](/help/headless/graphql-api/content-fragments.md).
 
 
 ## CMS zonder hoofd {#headless-cms}
@@ -44,7 +44,7 @@ Wat het ontwerpen van inhoudsfragmenten in AEM betekent dit:
 
 * De inhoud van de inhoudsfragmenten wordt vooraf gestructureerd volgens de modellen van het inhoudsfragment. Hierdoor wordt de toegang voor uw toepassingen vereenvoudigd, waardoor uw inhoud verder wordt verwerkt.
 
-## GraphQL - een overzicht {#graphql-overview}
+## GraphQL - Een overzicht {#graphql-overview}
 
 GraphQL is:
 
@@ -52,7 +52,7 @@ GraphQL is:
 
    Zie [GraphQL.org](https://graphql.org)
 
-De [AEM GraphQL API](#aem-graphql-api) staat u toe om (complexe) vragen op uw uit te voeren [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md); met elke vraag die volgens een specifiek modeltype is. De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
+De [GraphQL API AEM](#aem-graphql-api) staat u toe om (complexe) vragen op uw uit te voeren [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md); met elke vraag die volgens een specifiek modeltype is. De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
 
 ## GraphQL API AEM {#aem-graphql-api}
 
@@ -92,7 +92,7 @@ Deze [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fr
 
 De **[Fragmentverwijzing](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#fragment-reference-nested-fragments)**:
 
-* Is van bijzonder belang in samenhang met GraphQL.
+* Is in samenwerking met GraphQL van bijzonder belang.
 
 * Dit is een specifiek gegevenstype dat kan worden gebruikt bij het definiëren van een inhoudsfragmentmodel.
 
@@ -110,6 +110,6 @@ Om u te helpen bij het ontwerpen en ontwikkelen van uw modellen van inhoudsfragm
 
 Zie [Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s](/help/headless/graphql-api/sample-queries.md) voor een inleiding op het gebruik van de AEM GraphQL API.
 
-## Zelfstudie - Aan de slag met AEM headless and GraphQL
+## Zelfstudie - Aan de slag met AEM Headless en GraphQL
 
 Op zoek naar een praktische zelfstudie? Uitchecken [Aan de slag met AEM headless en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt samenstellen en beschikbaar maken met behulp van AEM GraphQL-API&#39;s en die door een externe toepassing wordt verbruikt.

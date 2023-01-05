@@ -132,7 +132,7 @@ Inhoudsfragmenten zijn:
 
    * De **Inhoudsfragment** is beschikbaar voor auteurs van pagina&#39;s. Hiermee kunnen ze naar het vereiste inhoudsfragment verwijzen en dit leveren in HTML- of JSON-indeling.
 
-* Toegankelijk met de [GraphQL API AEM](/help/headless/graphql-api/content-fragments.md).
+* Toegankelijk met de [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md).
 
 Inhoudsfragmenten zijn een inhoudsstructuur die:
 

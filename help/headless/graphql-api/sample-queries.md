@@ -36,7 +36,7 @@ Zie voor hulp bij dit:
 >title="Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s"
 >abstract="Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken."
 
-## GraphQL - Voorbeeldquery&#39;s met de structuur van het voorbeeldinhoudsfragment {#graphql-sample-queries-sample-content-fragment-structure}
+## GraphQL - Voorbeeldquery&#39;s met gebruik van de structuur van het contentfragment voor voorbeeldinhoud {#graphql-sample-queries-sample-content-fragment-structure}
 
 Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekproefresultaten.
 

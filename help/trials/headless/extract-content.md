@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Tot nu toe AEM proefversies voor headless hebt u [uw eigen modellen van inhoudsfragmenten maken](content-structure.md) ook uw eigen inhoud zonder kop hebt gemaakt [Inhoudsfragmenten.](create-content.md) Nu kunt u leren hoe u inhoudsfragmenten en de GraphQL API kunt gebruiken als een systeem voor inhoudsbeheer zonder kop om uw inhoud te leveren.
 
-GraphQL biedt een API op basis van query&#39;s waarmee externe clienttoepassingen AEM kunnen zoeken voor alleen de inhoud die ze nodig hebben met behulp van één API-aanroep.
+GraphQL verstrekt op vraag-gebaseerde API die externe cliënttoepassingen toestaat om AEM voor slechts de inhoud te vragen het gebruikend één enkele API vraag vereist.
 
 Eerst zult u leren hoe te om twee verschillende types van vragen in werking te stellen: **list** en **byPath** query&#39;s. Vervolgens leert u hoe u inhoud kunt ophalen uit het inhoudsfragment dat u eerder hebt gemaakt. Dit document dient als aanvulling op de interactieve rondleiding, die dezelfde stappen omvat en waar nodig gekoppeld is aan aanvullende middelen.
 
@@ -36,7 +36,7 @@ Eerst zult u leren hoe te om twee verschillende types van vragen in werking te s
 
 ## GraphQL Explorer {#graphql-explorer}
 
-U start in GraphQL Explorer. Hier kunt u vragen bouwen en tegen uw inhoud zonder kop in werking stellen.
+U begint op de Ontdekkingsreiziger GraphQL. Hier kunt u vragen bouwen en tegen uw inhoud zonder kop in werking stellen.
 
 ![De GraphQL Query Editor](assets/extract-content/query-editor.png)
 
@@ -168,7 +168,7 @@ Nu u de twee primaire types van vragen in werking hebt gesteld, bent u bereid om
 
    ![Resultaten van uw eigen query](assets/extract-content/custom-query-results.png)
 
-Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen. Zie de [Sectie Aanvullende bronnen](#additional-resources) voor extra steekproefvragen en leer hoeveel meer u met GraphQL API kunt doen.
+Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen. Zie de [Sectie Aanvullende bronnen](#additional-resources) voor extra voorbeeldquery&#39;s en voor meer informatie over wat u kunt doen met de GraphQL API.
 
 ## U hebt geleerd hoe u inhoud kunt zoeken! {#conclusion}
 

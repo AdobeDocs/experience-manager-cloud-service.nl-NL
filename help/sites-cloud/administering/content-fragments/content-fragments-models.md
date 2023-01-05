@@ -4,7 +4,7 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
+source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
 workflow-type: tm+mt
 source-wordcount: '2898'
 ht-degree: 3%
@@ -326,7 +326,7 @@ Nadat een model is gemaakt, moet het worden ingeschakeld zodat het:
 
 * Deze optie is beschikbaar voor selectie wanneer u een nieuw inhoudsfragment maakt.
 * Er kan vanuit een inhoudsfragmentmodel naar worden verwezen.
-* is beschikbaar voor GraphQL; zodat wordt het schema geproduceerd.
+* beschikbaar is voor GraphQL; zodat wordt het schema geproduceerd.
 
 Een model inschakelen dat is gemarkeerd als:
 
@@ -451,7 +451,7 @@ Deze functie biedt beheer voor modellen van inhoudsfragmenten die zijn gepublice
 
 ### De uitdaging {#the-challenge}
 
-* De Modellen van het Fragment van de inhoud bepalen het schema voor vragen GraphQL in AEM.
+* Met Content Fragment Models wordt het schema voor GraphQL-query&#39;s in AEM bepaald.
 
    * AEM GraphQL-schema&#39;s worden gemaakt zodra een Content Fragment Model is gemaakt en kunnen bestaan in zowel auteur- als publicatieomgevingen.
 

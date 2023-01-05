@@ -107,7 +107,7 @@ De resolutie van 16 kB is een weergaveresolutie met ongeveer 16.000 pixels horiz
 | PNG | `.png` | image/png | sRGB | 15 GB | Ja |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2 GB | Ja |
 | SVG |  |  |  |  | Nee |
-| TIFF | `.tif` en `.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | Ja |
+| TIFF | `.tif` and `.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | Ja |
 | WebP/Geanimeerde WebP |  |  |  |  | Nee |
 
 ## Dynamic Media-afbeeldingsprofielen maken {#creating-image-profiles}

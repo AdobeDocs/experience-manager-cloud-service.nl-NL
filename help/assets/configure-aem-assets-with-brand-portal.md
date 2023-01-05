@@ -406,7 +406,7 @@ De IP&#39;s van de uitgang zijn als volgt:
 |--- |--- |
 | NA | 130.248.160.68, 20.94.203.130 |
 | EMEA | 185.34.189.3, 51.132.146.75 |
-| APAC | 63 140 44 54 |
+| APAC | 63.140.44.54 |
 
 <!--
 ### Test configuration {#test-configuration}

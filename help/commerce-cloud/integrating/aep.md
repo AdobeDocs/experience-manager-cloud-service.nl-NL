@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: c2fd3d33eb02ea671d9811ad527bf167a279ff01
+source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
 workflow-type: tm+mt
 source-wordcount: '2080'
 ht-degree: 0%
@@ -146,7 +146,7 @@ Ga naar de `ui.frontend` en de `webpack.common.js` bestand om de volgende regel 
 
 ### Apollo-client configureren
 
-De [Apollo-client](https://www.apollographql.com/docs/react/) wordt gebruikt om zowel lokale als externe gegevens met GraphQL te beheren. Het slaat ook de resultaten van vragen GraphQL in een lokaal, genormaliseerd, in-geheugengeheime voorgeheugen op.
+De [Apollo-client](https://www.apollographql.com/docs/react/) wordt gebruikt voor het beheer van lokale en externe gegevens met GraphQL. Het slaat ook de resultaten van vragen GraphQL in een lokaal, genormaliseerd, in-geheugengeheime voorgeheugen op.
 
 Voor [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) om effectief te werken hebt u een `possibleTypes.js` bestand. Als u dit bestand wilt genereren, raadpleegt u [Mogelijke typen automatisch genereren](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Zie ook de [PWA Studio-referentieimplementatie](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) en een voorbeeld van een [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) bestand.
 

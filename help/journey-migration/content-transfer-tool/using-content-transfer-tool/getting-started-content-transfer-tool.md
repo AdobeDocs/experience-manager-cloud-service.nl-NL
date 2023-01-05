@@ -2,7 +2,7 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 4c2a02bb7ea981f78e51afc6ee20a3a936dfd666
+source-git-commit: eacd418ead2cc754a055449a99037b6541f55f6a
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 6%

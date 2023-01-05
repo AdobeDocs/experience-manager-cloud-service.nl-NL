@@ -2,7 +2,8 @@
 title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.9.0
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.9.0
 feature: Release Information
-source-git-commit: d6c47c3b8fe4ac994ee9f2db365888f496be12f0
+exl-id: 581370ba-e3e8-487e-af83-a1eacbda2763
+source-git-commit: dd4515bdbba81dcec0868c3058c7745775cc80ff
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 1%

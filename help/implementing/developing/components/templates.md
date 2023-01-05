@@ -262,7 +262,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
-   <td>lezen</td>
+   <td>read</td>
    <td>De anonieme Gebruiker van het Web moet beleid lezen terwijl het teruggeven van een pagina</td>
   </tr>
   <tr>
@@ -273,7 +273,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
   <tr>
    <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td>
    <td>Sjabloonauteur</td>
-   <td>lezen</td>
+   <td>read</td>
    <td>Sjabloonauteur maakt een nieuwe sjabloon op basis van een van de vooraf gedefinieerde sjabloontypen.</td>
   </tr>
   <tr>

@@ -2,7 +2,7 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 88d7728758927f16ed0807de8d261ca1b4b8b104
+source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
 workflow-type: tm+mt
 source-wordcount: '2590'
 ht-degree: 1%

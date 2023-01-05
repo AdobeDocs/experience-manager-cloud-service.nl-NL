@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
+source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 3%
@@ -219,7 +219,7 @@ Zoals vermeld voordat u een van de beschikbare standaardindelingen selecteert of
 
 _**Gebruik een URL-indeling van de productpagina die de skin bevat.**_
 
-De componenten van de Kern CIF gebruiken de SKU als primaire herkenningsteken in alle componenten. Als de indeling van de URL van de productpagina de sku niet bevat, is een GraphQL-query nodig om deze op te lossen. Dit kan de tijd-aan-eerste-byte beïnvloeden. Ook, kan het gewenst zijn, dat de kopers producten door sku kunnen vinden gebruikend onderzoeksmotoren.
+De componenten van de Kern CIF gebruiken de SKU als primaire herkenningsteken in alle componenten. Als de URL-indeling van de productpagina niet de SKU bevat, is een GraphQL-query nodig om deze op te lossen. Dit kan de tijd-aan-eerste-byte beïnvloeden. Ook, kan het gewenst zijn, dat de kopers producten door sku kunnen vinden gebruikend onderzoeksmotoren.
 
 _**Gebruik een URL-indeling van de productpagina die de categoriecontext bevat.**_
 
