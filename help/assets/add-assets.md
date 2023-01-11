@@ -4,7 +4,7 @@ description: Voeg uw digitale middelen toe aan [!DNL Adobe Experience Manager] a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a01a9e34fed9182c6c1e7325b2035c63acf875dd
+source-git-commit: 55e117bba7037d44eaadab8bd2de7164e23b47fa
 workflow-type: tm+mt
 source-wordcount: '2991'
 ht-degree: 0%
@@ -259,11 +259,11 @@ Voor namen van elementbestanden worden de naam en het pad van de JCR gesimuleerd
 
 **Mapnaam verwerken in bulkimport**
 
-Voor mapbestandsnamen worden de naam en het pad van de JCR ontsmet met behulp van de API: `JcrUtil.createValidName`.
+Voor mapbestandsnamen worden de naam en het pad van de JCR ontsmet met behulp van de API: `DamUtil.getSanitizedFolderName`.
 
 * Hoofdletters worden omgezet in kleine letters
 * Unicode-tekens worden niet gewijzigd
-* De speciale tekens bijvoorbeeld vervangen door een streepje (&#39;-&#39;) `new asset.png` wordt bijgewerkt naar `new-asset.png`:
+* De speciale tekens bijvoorbeeld vervangen door een streepje (&#39;-&#39;) `new folder` wordt bijgewerkt naar `new-folder`:
 
    ```
    "                           
