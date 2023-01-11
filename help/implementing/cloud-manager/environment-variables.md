@@ -2,9 +2,9 @@
 title: Omgevingsvariabelen van Cloud Manager
 description: De standaardmilieuvariabelen kunnen via de Manager van de Wolk worden gevormd en worden beheerd en aan het runtime milieu worden verstrekt, dat in configuratie OSGi moet worden gebruikt.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
+source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in de ontw
 
 ### Dispatcher {#dispatcher}
 
-Alleen normale omgevingsvariabelen kunnen op de verzender worden gebruikt. Geheimen kunnen niet worden gebruikt.
+Alleen normale omgevingsvariabelen kunnen worden gebruikt met [de verzender.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Geheimen kunnen niet worden gebruikt.
 
 Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` richtlijnen.
 
@@ -128,7 +128,7 @@ Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` richtlijnen
 
 ### OSGi-configuraties {#osgi}
 
-Zowel kunnen de regelmatige omgevingsvariabelen als de geheimen in configuraties OSGi worden gebruikt.
+Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in [OSGi-configuraties.](/help/implementing/deploying/configuring-osgi.md)
 
 ### Pipetvariabelen {#pipeline}
 
