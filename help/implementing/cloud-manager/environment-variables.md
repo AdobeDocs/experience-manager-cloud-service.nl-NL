@@ -2,9 +2,9 @@
 title: Omgevingsvariabelen van Cloud Manager
 description: De standaardmilieuvariabelen kunnen via de Manager van de Wolk worden gevormd en worden beheerd en aan het runtime milieu worden verstrekt, dat in configuratie OSGi moet worden gebruikt.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
+source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
@@ -107,3 +107,29 @@ U hebt als volgt toegang tot omgevingsvariabelen en geheimen via XML.
 Zie het document [Project instellen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) voor een voorbeeld van het gebruik van beide typen variabelen in een `pom.xml` bestand.
 
 Zie de [officiële documentatie van Maven](https://maven.apache.org/settings.html#quick-overview) voor meer informatie .
+
+## Beschikbaarheid van omgevingsvariabele {#availability}
+
+Omgevingsvariabelen kunnen op een aantal plaatsen worden gebruikt.
+
+### Auteur, Voorvertoning en Publiceren {#author-preview-publish}
+
+Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in de ontwerpomgeving, voorvertoningsomgeving en in de publicatieomgeving.
+
+### Dispatcher {#dispatcher}
+
+Alleen normale omgevingsvariabelen kunnen op de verzender worden gebruikt. Geheimen kunnen niet worden gebruikt.
+
+Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` richtlijnen.
+
+>[!TIP]
+>
+>U moet het gebruik van omgevingsvariabelen valideren met de [lokale verzender](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) voordat u gaat implementeren.
+
+### OSGi-configuraties {#osgi}
+
+Zowel kunnen de regelmatige omgevingsvariabelen als de geheimen in configuraties OSGi worden gebruikt.
+
+### Pipetvariabelen {#pipeline}
+
+Naast milieuvariabelen, zijn er ook pijpleidingsvariabelen, die tijdens de bouwstijlfase worden blootgesteld. [Klik hier voor meer informatie over pijpleidingvariabelen.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
