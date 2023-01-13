@@ -2,10 +2,10 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager as a Cloud Service maken (WCAG 2.1-compatibiliteit)
 description: Gebruik AEM as a Cloud Service om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 48ac0566409f74d3ffa389e5016af0d14419dc3a
 workflow-type: tm+mt
-source-wordcount: '14061'
-ht-degree: 5%
+source-wordcount: '14056'
+ht-degree: 4%
 
 ---
 
@@ -104,12 +104,12 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 * Illustratieve foto&#39;s: Dit zijn afbeeldingen van mensen, objecten of plaatsen. Het is belangrijk om over de rol van de foto in de pagina te denken, en over het algemeen geadviseerd om de beeldinhoud te beschrijven, aangezien de hulptechnologie het elementtype (bijvoorbeeld, zal aankondigen `graphic` of `image`); het kan de duidelijkheid van het gebruik vergroten `screenshot` of `illustration` in de alternatieve tekstbeschrijvingen, maar dit hangt af van de context. Consistentie is een belangrijke factor, een besluit zou voor een volledig auteursteam moeten worden genomen en dit was van toepassing door de gebruikerservaring.
 * Pictogrammen: Dit zijn kleine pictogrammen (afbeeldingen) die specifieke informatie bevatten. Ze moeten consistent worden gebruikt op een pagina en site. Alle exemplaren van het pictogram op een pagina of site moeten hetzelfde korte en korte tekstalternatief hebben, tenzij dit leidt tot onnodige duplicatie van aangrenzende tekst.
 * Grafieken en grafieken: Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Geef zo nodig ook een meer gedetailleerde beschrijving in de tekst met behulp van de **Beschrijving** in het **Geavanceerd** tabblad Eigenschappen van afbeelding. Bovendien kunt u de brongegevens elders op de pagina of site in tabelvorm opgeven.
-* Kaarten, diagrammen, stroomdiagrammen: Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), moet u ervoor zorgen dat het sleutelbericht wordt weergegeven in de tekstindeling en dat deze tekstinformatie bij elk gekoppeld gegevenspunt wordt geplaatst. Voor kaarten is het opgeven van een volledige-tekstequivalent waarschijnlijk onpraktisch, maar als de kaart wordt verstrekt als manier om mensen te helpen hun weg naar een bepaalde plaats vinden, dan kan de alternatieve tekst van de afbeelding kort *Kaart van X* aangeven, en vervolgens elders op de pagina of via het veld **Beschrijving** op het tabblad **Geavanceerd** van de component **Afbeelding** een routebeschrijving naar die plaats in tekst opgeven.
+* Kaarten, diagrammen, stroomdiagrammen: Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), moet u ervoor zorgen dat het sleutelbericht wordt weergegeven in de tekstindeling en dat deze tekstinformatie bij elk gekoppeld gegevenspunt wordt geplaatst. Voor kaarten is het onpraktisch om een volledige tekstequivalent te bieden, maar als de kaart wordt verstrekt als een manier om mensen te helpen hun weg naar een bepaalde plaats vinden, dan kan de alternatieve tekst van het kaartafbeelding kort wijzen op *Kaart van X* en geeft u vervolgens aanwijzingen voor die locatie op in tekst elders op de pagina of via de **Beschrijving** in het **Geavanceerd** tabblad van het dialoogvenster **Afbeelding** component.
 * CAPTCHA&#39;s: Een CAPTCHA is een *Volledig geautomatiseerde openbare trainingstest om computers en mensen te informeren*. Het is een veiligheidscontrole die op webpagina&#39;s wordt gebruikt om mensen van kwaadaardige software te onderscheiden, maar die toegankelijkheidsbarrières kan veroorzaken. Dit zijn afbeeldingen waarvoor gebruikers een beschrijving moeten geven van wat ze zien om een beveiligingstest te kunnen doorstaan. Het is duidelijk niet mogelijk om een tekstalternatief voor de afbeelding te bieden, dus in plaats daarvan moet u alternatieve niet-grafische oplossingen overwegen. De W3C biedt een aantal suggesties, zoals:Elk van deze benaderingen heeft zijn eigen verdiensten en nadelen.
    * Logische puzzels
    * Het gebruik van geluidsuitvoer in plaats van afbeeldingen
    * Beperkte gebruikaccounts en spamfilters.
-* Achtergrondafbeeldingen: Deze worden bereikt met CSS (Cascading Style Sheets) in plaats van met HTML. Dit betekent dat het niet mogelijk is een alternatieve tekstwaarde op te geven. Achtergrondafbeeldingen mogen daarom geen belangrijke tekstuele informatie opleveren. Als dat wel het geval is, moet deze informatie ook in de paginatekst worden vermeld. Het is echter belangrijk dat een andere achtergrond wordt weergegeven wanneer de afbeelding niet kan worden weergegeven.
+* Achtergrondafbeeldingen: Deze worden bereikt met CSS (Cascading Style Sheets) in plaats van met HTML. Dit betekent dat het niet mogelijk is een alternatieve tekstwaarde op te geven. Achtergrondafbeeldingen mogen daarom geen belangrijke tekstgegevens opleveren. Als dat het geval is, moet deze informatie ook in de paginatekst worden vermeld. Het is echter belangrijk dat een andere achtergrond wordt weergegeven wanneer de afbeelding niet kan worden weergegeven.
 
 >[!NOTE]
 >
@@ -560,16 +560,16 @@ Zorg ervoor dat de tekst voldoende contrasteert met de achtergrond. Contrastverh
 
 >[!NOTE]
 >
->De volgende sites kunnen u helpen bij conversies naar andere eenheden:
+>Met de volgende gereedschappen kunt u converteren naar andere eenheden:
 >
->* [Px naar Em-calculator - Universeel](https://www.omnicalculator.com/conversion/px-to-em)
->* [Omzetting lettergrootte: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: Eenvoudige omzetting van PX naar EM](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+>* [Px naar Em-calculator](https://www.omnicalculator.com/conversion/px-to-em)
+>* [Omzetting lettergrootte: pixel-point-em-rem-percent](https://websemantics.uk/tools/)
+>* [Pixel naar EM-converter](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
 Als u contrastverhoudingen wilt controleren, gebruikt u een gereedschap voor kleurcontrast, zoals het gereedschap [Paciello Group Color Contrast Analyse](https://www.tpgi.com/resources/contrast-analyser.html) of de [Controle van webAIM-kleurcontrast](https://webaim.org/resources/contrastchecker/). Met deze gereedschappen kunt u kleurenparen controleren en contrastproblemen melden.
 
-Als u zich minder zorgen maakt over het opgeven van de vormgeving van de pagina, kunt u er ook voor kiezen geen kleur voor de achtergrond en de voorgrondtekst op te geven. Er is geen controle op het contrast nodig, omdat de browser van de gebruiker de kleuren van de tekst en de achtergrond bepaalt.
+Als u zich minder zorgen maakt over het opgeven van de vormgeving van de pagina, kunt u er ook voor kiezen geen kleur voor de achtergrond en de voorgrondtekst op te geven. Er is geen controle op het contrast vereist, omdat de browser van de gebruiker de kleuren van de tekst en de achtergrond bepaalt.
 
 Als het niet mogelijk is om aan de aanbevolen contrastniveaus te voldoen, moet u een koppeling naar een alternatieve, equivalente versie van de pagina (die geen problemen met het kleurcontrast heeft) opgeven of moet u de gebruiker toestaan het contrast van het kleurenschema aan te passen aan zijn eigen vereisten.
 
@@ -864,7 +864,7 @@ Als het koppelingsanker echter tekst bevat die het doel van de koppeling naast h
 ```xml
 <a href="publications.html">
 <img src = "bookshelf.jpg" alt = "" />
-John Smith’s publications
+John Smith's publications
 </a>
 ```
 
@@ -979,10 +979,10 @@ Het doel van dit succescriterium is ervoor te zorgen dat tekst en andere taalkun
 Om aan dit succescriterium te voldoen, kan de standaardtaal van een webpagina worden geïdentificeerd met behulp van de `lang` attribuut binnen `<html>` -element boven aan de pagina. Bijvoorbeeld:
 
 * Als een pagina in het Engels is geschreven, `<html>` Het element moet als volgt worden gelezen:
-   `<html lang = “en”>`
+   `<html lang = "en">`
 
 * Overwegende dat voor een in het Spaans af te geven pagina de volgende norm moet worden vastgesteld:
-   `<html lang = “es”>`
+   `<html lang = "es">`
 
 AEM wordt de standaardtaal van de pagina ingesteld bij het maken van de pagina, maar kan ook worden gewijzigd bij het bewerken [Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md).
 
@@ -1029,7 +1029,7 @@ Tthe `lang` kan worden gebruikt om wijzigingen in de taal van de inhoud te ident
 Op dezelfde manier kan de browser een ongewoon woord of een ongewone woordgroep correct weergeven als de `span` element wordt als volgt gebruikt:
 
 ```xml
-<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</code>.</p>
+<p>The only French phrase I know is <span lang = "fr">je ne sais quoi</code>.</p>
 ```
 
 >[!NOTE]
