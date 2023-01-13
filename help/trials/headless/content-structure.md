@@ -4,9 +4,9 @@ description: Leer hoe u de structuur maakt die fungeert als basis voor alle inho
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
+source-git-commit: 900f9fc951a2b95b77abc5835ef9651128824826
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,12 @@ Om u te helpen begrijpen hoe dit wordt gedaan, neemt deze module van AEM Proefve
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="De modeleditor starten"
 >abstract="Het bouwen van een model van het inhoudsfragment begint met het creëren van een modelpunt in het werkschema van het modelbeleid, dan toevoegend structuurelementen aan het gebruikend de modelredacteur van het inhoudsfragment.<br><br>Klik hieronder om de functie te starten op een nieuw tabblad en volg dit leerdocument om uw eerste model voor inhoudsfragmenten te maken."
->additional-url="https://video.tv.adobe.com/v/328618" text="Plaatsaanduiding voor de intro-video"
+>additional-url="https://video.tv.adobe.com/v/3413261" text="Video over intro-inhoud"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
+>title="De modeleditor starten"
+>abstract="Gefeliciteerd! Door een model van het Fragment van de Inhoud te creëren, nam u de eerste stap aan leverend omni-kanaalinhoud op een geschaalde en standaardmanier."
 
 ## De console van het inhoudsfragmentmodel {#content-fragment-model-console}
 
