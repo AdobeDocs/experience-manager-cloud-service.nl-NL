@@ -1,26 +1,22 @@
 ---
-title: Tabellen in adaptieve Forms
-seo-title: Tables in Adaptive Forms
-description: De component Tabel in [!DNL AEM Forms] Hiermee kunt u in Adaptive Forms tabellen maken die reageren op mobiele lay-outs en waarmee u ook XDP-tabelcomponenten kunt gebruiken.
-seo-description: The Table component in [!DNL AEM Forms] lets you create tables in Adaptive Forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
-topic-tags: author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+title: Tabellen in adaptieve formulieren
+seo-title: Tables in adaptive forms
+description: Met de component Tabel in AEM Forms kunt u tabellen maken in adaptieve formulieren die reageren op mobiele lay-outs en kunt u ook XDP-tabelcomponenten gebruiken.
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Adaptive Forms
+source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2404'
 ht-degree: 0%
 
 ---
 
-
-# Tabellen in adaptieve Forms {#tables-in-adaptive-forms}
+# Tabellen in adaptieve vorm {#tables-in-adaptive-forms}
 
 Het gebruik van tabellen is een effectieve, vereenvoudigde en georganiseerde manier om complexe gegevens weer te geven. Het helpt gebruikers bij het gemakkelijk identificeren van informatie en het verstrekken van input in een geordende regeling van rijen en kolommen. De meeste vormen van financiële diensten en overheidsorganisaties vereisen grote gegevenslijsten om aantallen te zetten en berekeningen uit te voeren.
 
-[!DNL AEM Forms] biedt een component Tabel in de componentenbrowser in het zijpaneel waarmee u tabellen kunt maken in Adaptief Forms. Enkele belangrijke mogelijkheden zijn:
+AEM Forms biedt een component Tabel in de deelvensterbrowser op het zijpaneel waarmee u tabellen kunt maken in adaptieve formulieren. Enkele belangrijke mogelijkheden zijn:
 
 * Responsieve lay-out op mobiele apparaten
 * Configureerbare rijen en kolommen
@@ -34,7 +30,7 @@ Het gebruik van tabellen is een effectieve, vereenvoudigde en georganiseerde man
 
 ## Maak een tabel {#create-a-table}
 
-Als u een tabel wilt maken, sleept u de component Tabel uit de componentbrowser in de assistent op het adaptieve formulier. Standaard bevat de tabel twee kolommen en drie rijen, inclusief de koptekstrij.
+Als u een tabel wilt maken, sleept u de component Tabel uit de componentbrowser in het hulpwerkgebied naar het aangepaste formulier. Standaard bevat de tabel twee kolommen en drie rijen, inclusief de koptekstrij.
 
 ![Tabelcomponent in AEM zijbalk](assets/sidebar-tables.png)
 
@@ -42,7 +38,7 @@ Als u een tabel wilt maken, sleept u de component Tabel uit de componentbrowser 
 
 De koptekstcellen zijn tekstvelden. Als u het label voor een koptekst wilt wijzigen, klikt u met de rechtermuisknop op de kopcel en klikt u op **Bewerken**. Werk in het dialoogvenster Bewerken het label in het dialoogvenster **Waarde** veld en klik op **OK**.
 
-De lichaamscellen zijn tekstvakjes, door gebrek. U kunt een hoofdcel vervangen door een andere Adaptieve Forms-component die beschikbaar is in het zijpaneel, zoals een numeriek vak, een datumkiezer of een vervolgkeuzelijst.
+De lichaamscellen zijn tekstvakjes, door gebrek. U kunt een hoofdcel vervangen door elke andere adaptieve formuliercomponent die beschikbaar is in het hulpgedeelte, zoals een numeriek vak, een datumkiezer of een vervolgkeuzelijst.
 
 De eerste tekstrij in de volgende tabel bevat bijvoorbeeld tekstvak, datumkiezer en vervolgkeuzelijstcomponenten als cellen.
 
@@ -54,25 +50,30 @@ U kunt twee of meer lichaamscellen samenvoegen door de cellen te selecteren u wi
 
 U kunt een rij of kolom toevoegen en verwijderen en een rij omhoog en omlaag verplaatsen in een tabel.
 
-Als u een rij of kolom wilt toevoegen of verwijderen of een rij wilt verplaatsen, klikt u op een cel in de rij of kolom. Een vervolgkeuzemenu wordt boven aan de kolom en links van de rij weergegeven. Het menu bovenaan bevat opties voor het toevoegen of verwijderen van de kolom, terwijl u in het menu links de rij kunt toevoegen, verwijderen of verplaatsen.
+#### Een rij toevoegen, verwijderen of verplaatsen
 
-* Met de bewerking Toevoegen voegt u een rij onder of een kolom rechts van de geselecteerde rij of kolom toe.
-* Met de bewerking Verwijderen verwijdert u de geselecteerde rij of kolom.
-* Met de bewerking Omhoog en Omlaag verplaatst u de geselecteerde rij omhoog en omlaag.
+Als u de rij wilt toevoegen, verwijderen of verplaatsen, klikt u op een cel van de rij. de inhoudbrowser openen ![Inhoudsbrowser](/help/forms/assets/Smock_Layers_18_N.svg) en selecteert u de desbetreffende rij, wordt de geselecteerde rij gemarkeerd met de werkbalkoptie waaruit u de rij omhoog of omlaag kunt toevoegen, verwijderen of verplaatsen.
+* De **[!UICONTROL Move Up]** en **[!UICONTROL Move Down]** Hiermee verplaatst u de geselecteerde rij omhoog en omlaag.
 
-Het vervolgkeuzemenu voor de rij bevat ook de bewerking Bewerken waarmee u rijeigenschappen, -instellingen en opmaakopties kunt bewerken.
+* De **[!UICONTROL Add Column]** voegt een rij onder de geselecteerde rij toe.
 
-![add-delete-move-row-column](assets/add-delete-move-row-column.png)
+* De **[!UICONTROL Delete Column]** verwijdert de geselecteerde rij.
+
+![add-delete-move-row-column](assets/add-delete-move-row.png)
+
+Dubbelklik op de rij om de eigenschappen van een rij te configureren, zoals Naam, Verwijzing binden, Instellingen herhalen, CSS-klasse.
+![add-delete-move-row-column](assets/row-properties-image.png)
+
+
+#### Een kolom toevoegen of verwijderen
+
+Als u een kolom wilt toevoegen of verwijderen, klikt u op de tekstcel in de koptekstsectie. Er wordt een werkbalk geopend met opties voor het toevoegen of verwijderen van een kolom:
+
+![add-delete-move-row-column](assets/add-delet-column.png)
 
 >[!NOTE]
 >
->* U kunt wel een willekeurig aantal rijen in een tabel toevoegen, maar u kunt maximaal zes kolommen toevoegen. Bovendien kunt u de koptekstrij niet uit de tabel verwijderen.
->
->* Met automatische conversie van een PDF-formulier naar een adaptief formulier kunnen tabellen zonder koppen worden gemaakt. U kunt kolommen zonder kopteksten toevoegen en verwijderen aan tabellen. Verborgen kopteksten worden toegevoegd aan dergelijke lijsten helpen u kolommen toevoegen en schrappen. Deze kopteksten zijn zichtbaar tijdens het ontwerpen maar blijven verborgen in het gepubliceerde formulier.
-
-
-
-
+>U kunt wel een willekeurig aantal rijen in een tabel toevoegen, maar u kunt maximaal zes kolommen toevoegen. Bovendien kunt u de koptekstrij niet uit de tabel verwijderen.
 
 ### Tabelbeschrijving toevoegen {#add-table-description}
 
@@ -113,6 +114,14 @@ Sorteren inschakelen:
 
    U kunt ook wijzigingen aanbrengen in de tabel in het dialoogvenster **Voorvertoning** en klik nogmaals op de kolomkop om de kolomwaarden te sorteren.
 
+## Kolombreedte instellen voor een tabel {#set-column-width}
+
+Voer de volgende stappen uit om de kolombreedte voor een tabel in te stellen:
+
+1. In de **[!UICONTROL Content]** tikt u op de **[!UICONTROL Table]** component en tik Configure (![Configureren](assets/configure-icon.svg)).
+
+1. Voer de lijst met door komma&#39;s gescheiden waarden in het dialoogvenster **[!UICONTROL Column Width]** veld om de proportionele breedte van elke kolom in de tabel op te geven. Bijvoorbeeld voor een tabel die 3 kolommen bevat en die 2,4,6 opgeeft als de waarde in het dialoogvenster **[!UICONTROL Column Width]** resulteert in het instellen van de breedte van kolommen op 2/12 voor de eerste kolom, op 4/12 voor de tweede kolom en op 6/12 voor de derde kolom. 2/12, aangezien de breedte voor de eerste kolom verwijst naar een zesde van de tabelbreedte. Zo stelt 4/12 de tweede kolombreedte in als een derde van de tabelbreedte en 6/12 stelt de derde kolombreedte in als de helft van de tabelbreedte.
+
 ## Tabelstijl configureren {#configure}
 
 U kunt de stijl voor een tabel definiëren met de modus Stijl op de paginaboolbalk. Ga als volgt te werk om over te schakelen op de stijlmodus en de tabelopmaak te bewerken
@@ -126,7 +135,7 @@ De opmaakeigenschappen worden weergegeven in het zijpaneel.
 
 >[!NOTE]
 >
->U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van LESS-variabelen te wijzigen. Zie voor meer informatie [Thema&#39;s in [!DNL AEM Forms]](themes.md)
+>U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van [LESS-variabelen](https://lesscss.org//). Zie voor meer informatie [Thema&#39;s in AEM Forms](/help/forms/themes.md).
 
 ## Een rij dynamisch toevoegen of verwijderen {#add-or-delete-a-row-dynamically}
 
@@ -136,9 +145,9 @@ Tabellen bieden ondersteuning voor het dynamisch toevoegen of verwijderen van ri
 1. Geef op het tabblad Herhalingsinstellingen het minimale en maximale aantal rijen op om het aantal rijen in de tabel te beperken.
 1. Klikken **Gereed**.
 
-Tijdens runtime wordt **+** en *-* knoppen om een rij toe te voegen of te verwijderen.
+Bij uitvoering of voorvertoning ziet u **+** en ![Knop Verwijderen](/help/forms/assets/Smock_Delete.svg) knoppen om een rij toe te voegen of te verwijderen.
 
-![add-delete-rows-dynamic](assets/add-delete-rows-dynamically.png)
+![add-delete-rows-dynamic](assets/add-delete-layout.png)
 
 >[!NOTE]
 >
@@ -146,7 +155,7 @@ Tijdens runtime wordt **+** en *-* knoppen om een rij toe te voegen of te verwij
 
 ## Expressies in een tabel {#expressions-in-a-table}
 
-Met tabellen in Adaptief Forms kunt u expressies schrijven in JavaScript om gedrag te induceren, zoals een tabel of een rij tonen of verbergen, alle getallen optellen en het totaal in een cel weergeven, een cel in- of uitschakelen, gebruikersinvoer valideren enzovoort. Deze expressies gebruiken API&#39;s van het Adaptive Forms-scriptmodel.
+Met tabellen in adaptieve formulieren kunt u expressies schrijven in JavaScript om gedrag te induceren, zoals een tabel of een rij tonen of verbergen, alle getallen optellen en het totaal in een cel weergeven, een cel in- of uitschakelen, gebruikersinvoer valideren enzovoort. Deze expressies gebruiken API&#39;s van het adaptieve formulierscriptmodel.
 
 Tabellen en rijen bieden alleen ondersteuning voor zichtbaarheidsexpressies om de zichtbaarheid ervan te bepalen op basis van de waarde die door een expressie wordt geretourneerd, terwijl cellen de volgende expressies ondersteunen:
 
@@ -164,11 +173,11 @@ Tabellen en rijen bieden alleen ondersteuning voor zichtbaarheidsexpressies om d
 
 De zichtbaarheidsexpressie voor een tabel of rij kan worden gedefinieerd op het tabblad Eigenschappen van deelvenster van het corresponderende dialoogvenster van de component Bewerken. De expressies voor een cel kunnen worden gedefinieerd op het tabblad Script van het dialoogvenster dat de component Edit bevat.
 
-Voor de volledige lijst met adaptieve Forms-klassen, -gebeurtenissen, -objecten en openbare API&#39;s raadpleegt u [JavaScript Library API-referentie voor Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+Voor de volledige lijst met adaptieve formulierklassen, gebeurtenissen, objecten en openbare API&#39;s raadpleegt u [JavaScript Library API-referentie voor adaptieve formulieren](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Mobiele lay-outs {#mobile-layouts}
 
-Tabellen in Adaptive Forms bieden ongeëvenaarde mobiele apparaten dankzij hun dynamische en responsieve lay-outs. [!DNL AEM Forms] biedt twee typen mobiele lay-outs voor tabellen: kopteksten aan de linkerkant en Inklapbare kolommen.
+Tabellen in adaptieve formulieren bieden ongeëvenaarde beleving van mobiele apparaten vanwege hun dynamische en responsieve lay-outs. AEM Forms biedt twee typen mobiele lay-outs voor tabellen: kopteksten aan de linkerkant en Inklapbare kolommen.
 
 U kunt een mobiele lay-out voor een lijst van het Stijllusje van het Edit componentendialoogvenster voor een lijst vormen.
 
@@ -204,9 +213,9 @@ Uitgebreide kolom van een tabel op een mobiel apparaat
 
 ## Gegevens in een tabel samenvoegen {#merge-data-in-a-table}
 
-Met tabellen in Adaptief Forms kunt u de tabel tijdens runtime vullen met gegevens uit een XML-bestand. Het XML-bestand met gegevens kan zich bevinden in het lokale bestandssysteem van de computer waar [!DNL AEM Forms] wordt uitgevoerd of in de CRX-opslagplaats.
+Met tabellen in adaptieve formulieren kunt u de tabel tijdens runtime vullen met gegevens uit een XML-bestand. Het XML-bestand met gegevens kan zich bevinden in het lokale bestandssysteem van de computer waarop de AEM Forms-server wordt uitgevoerd of in de CRX-opslagplaats.
 
-Neem bijvoorbeeld de volgende overzichtstabel met banktransacties die we willen vullen met gegevens uit een XML-bestand.
+Neem bijvoorbeeld de volgende overzichtstabel voor banktransacties die we willen vullen met gegevens uit een XML-bestand.
 
 ![data-merge-table](assets/data-merge-table.png)
 
@@ -278,23 +287,23 @@ Het XML-bestand dat gegevens in de volgende indeling bevat:
 
 In de voorbeeld-XML worden de gegevens voor een rij gedefinieerd door de `<Row1>` -tags. Dit is de elementnaam voor de rij in de tabel. Binnen de `<Row1>` -tag, worden de gegevens voor elke cel binnen de -tag gedefinieerd voor de elementnaam, zoals `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, en `<type>`.
 
-Als u deze gegevens tijdens runtime wilt samenvoegen met de tabel, moet u het adaptieve formulier met de tabel verwijzen naar de absolute XML-locatie met wcmmode uitgeschakeld. Als het adaptieve formulier bijvoorbeeld op *https://`servername`/myForms/bankTransaction.html* en het XML-bestand met gegevens wordt opgeslagen op *C:/myTransactions/bankSummary.xml* kunt u de tabel weergeven met gegevens op de volgende URL:
+Als u deze gegevens tijdens runtime wilt samenvoegen met de tabel, moet u het aangepaste formulier met de tabel verwijzen naar de absolute XML-locatie met Wcmmode uitgeschakeld. Bijvoorbeeld als het adaptieve formulier zich op *https://localhost:4502/myForms/bankTransaction.html* en het XML-bestand met gegevens wordt opgeslagen op *C:/myTransactions/bankSummary.xml* kunt u de tabel weergeven met gegevens op de volgende URL:
 
-*https://`servername`/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
+*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
 ![data-merge-table](assets/data-merged-table.png)
 
 ## XDP-componenten en XSD-complexe typen gebruiken {#use-xdp-components-and-xsd-complex-types}
 
-Als u een adaptief formulier hebt gemaakt op basis van een XFA-formuliersjabloon, zijn de XFA-elementen beschikbaar op het tabblad Gegevensmodel van AEM Content Finder. U kunt deze XFA-elementen, inclusief tabellen, naar het adaptieve formulier slepen.
+Als u een adaptief formulier hebt gemaakt op basis van een XFA-formuliersjabloon, zijn de XFA-elementen beschikbaar op het tabblad Gegevensmodel van AEM Content Finder. U kunt deze XFA-elementen, inclusief tabellen, naar het aangepaste formulier slepen.
 
-Het XFA-tabelelement wordt toegewezen aan de component Tabel en werkt in Adaptief Forms buiten het vak. Alle eigenschappen en functies van de XDP-tabel blijven behouden wanneer u deze verplaatst naar het adaptieve formulier. U kunt er elke bewerking op uitvoeren, net als in de oorspronkelijke adaptieve formuliertabel. Als een rij in een XDP-tabel bijvoorbeeld herhaalbaar is gemarkeerd, wordt deze ook herhaald wanneer deze rij in Adaptive Forms wordt neergezet.
+Het XFA-tabelelement wordt toegewezen aan de component Tabel en werkt in adaptieve formulieren buiten de box. Alle eigenschappen en functies van XDP-tabellen blijven behouden wanneer u deze verplaatst naar een adaptief formulier. U kunt er elke bewerking op uitvoeren, net als bij een native adaptieve formuliertabel. Als een rij in een XDP-tabel bijvoorbeeld herhaalbaar is, wordt deze ook herhaald wanneer deze in adaptieve formulieren wordt verwijderd.
 
 Daarnaast kunt u XDP-subformulier slepen en neerzetten om een nieuwe rij toe te voegen aan de tabel. Het neerzetten van een genest subformulier werkt echter niet.
 
 >[!NOTE]
 >
->Een XDP-tabel zonder koptekstrij wordt niet toegewezen aan de component Adaptieve formuliertabel. In plaats daarvan wordt de sjabloon toegewezen aan de component Adaptief deelvenster Formulier met vloeiende layout. Wanneer u een geneste tabel toevoegt van een XDP naar een adaptief formulier, wordt de buitenste tabel geconverteerd naar een deelvenster, terwijl de binnenste tabel behouden blijft.
+>Een XDP-tabel zonder koptekstrij wordt niet toegewezen aan de adaptieve component Form Table. In plaats daarvan wordt het element toegewezen aan de adaptieve component van het deelvenster Formulier met vloeiende layout. Wanneer u een geneste tabel toevoegt van een XDP naar een adaptief formulier, wordt de buitenste tabel geconverteerd naar een deelvenster met behoud van de binnenste tabel.
 
 Bovendien kunt u een groep XSD-complexe tekstelementen slepen en neerzetten om een tabelrij te maken. Er wordt een nieuwe rij gemaakt net onder de rij waarop u de elementen hebt neergezet. De cellen die zijn gemaakt met de XSD-elementen voor complexe typen behouden een bindingsverwijzing naar de XSD. U kunt een lichaamscel met een XSD complex typeelement ook vervangen door het element op de cel te laten vallen.
 
@@ -307,7 +316,6 @@ Bovendien kunt u een groep XSD-complexe tekstelementen slepen en neerzetten om e
 ## Belangrijkste overwegingen {#key-considerations}
 
 * Als u rijen omhoog en omlaag verplaatst tijdens het ontwerpen van een op XSD gebaseerde tabel, wordt enig gegevensverlies uit tabelrijen gezien in de gegevens-XML die bij het verzenden van het formulier worden gegenereerd.
-* Aan elke cel in een standaardtabel is een vooraf gedefinieerde elementnaam gekoppeld. Als u een andere tabel toevoegt in het adaptieve formulier, hebben de standaardhoofdtekstcellen in de nieuwe tabel dezelfde elementnaam als in de eerste tabel. In dat geval bevatten de gegevens die bij het verzenden van het formulier worden gegenereerd, gegevens in de standaardhoofdtekstcellen van slechts een van de tabellen. Zorg er daarom voor dat u de elementnamen voor standaardlichaamscellen hernoemt om ze uniek te houden in verschillende tabellen en gegevensverlies te voorkomen.
+* Aan elke cel in een standaardtabel is een vooraf gedefinieerde elementnaam gekoppeld. Als u een andere tabel in het aangepaste formulier toevoegt, hebben de standaardhoofdtekstcellen in de nieuwe tabel dezelfde elementnaam als in de eerste tabel. In dat geval bevatten de gegevens die bij het verzenden van het formulier worden gegenereerd, gegevens in de standaardhoofdtekstcellen van slechts een van de tabellen. Zorg er daarom voor dat u de elementnamen voor standaardlichaamscellen hernoemt om ze uniek te houden in verschillende tabellen en gegevensverlies te voorkomen.
 
    Merk op dat dit slechts op de standaardlichaamscellen van toepassing is. Als u meer rijen of kolommen aan een tabel toevoegt, worden automatisch unieke elementnamen voor niet-standaardlichaamscellen gegenereerd.
-
