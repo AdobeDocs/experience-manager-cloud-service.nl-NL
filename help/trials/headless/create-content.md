@@ -4,85 +4,67 @@ description: Gebruik het model Inhoudsfragment dat u eerder hebt gemaakt om inho
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
+source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
-# Koploze inhoud maken {#create-content}
 
-Door de in-product het leren module te volgen, leer hoe te om te gebruiken [De modellen van het Fragment van de Inhoud u eerder creeerde](content-structure.md) om inhoud te maken die kan worden gebruikt voor het ontwerpen van pagina&#39;s of als basis voor inhoud zonder kop. Dit document dient als aanvulling op de interactieve rondleiding, die dezelfde stappen omvat en waar nodig gekoppeld is aan aanvullende middelen.
+# Koploze inhoud maken {#create-content}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Nieuwe inhoud maken"
->abstract="Voortbouwend op de modellen u in module 1 creeerde, zult u leren hoe te om inhoud tot stand te brengen die voor paginauteurs, of als basis van uw inhoud zonder kop kan worden gebruikt."
+>abstract="Gebruikend het model dat u in de vorige module creeerde, zult u leren hoe te om inhoud tot stand te brengen die voor paginaontwerp, of als basis van uw inhoud zonder kop kan worden gebruikt."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="De console voor inhoudsfragmenten starten"
->abstract="In AEM CMS zonder kop zijn &#39;inhoudsfragmenten&#39; alle stukken inhoud die in de vooraf gedefinieerde structuur passen. Dit wordt een &#39;inhoudsfragmentmodel&#39; genoemd. In deze analyse, zult u leren hoe te om inhoud voor uw model van het inhoudsfragment tot stand te brengen.<br><br>Klik hieronder om de functie te starten op een nieuw tabblad en volg dit leerdocument om uw eerste inhoudsfragment te maken."
->additional-url="https://video.tv.adobe.com/v/328618" text="Plaatsaanduiding voor de intro-video"
+>abstract="Het maken van consistente inhoud van hoge kwaliteit die naadloos werkt in uw apps en websites, leidt tot een geweldige klantervaring. In deze module wordt u door het maken van het eerste inhoudsfragment geleid om te tonen hoe u dit kunt doen. Bekijk de video om te begrijpen waarom dit een belangrijke stap is.<br><br>Start deze module op een nieuw tabblad door op de onderstaande knop te klikken en volg deze handleiding."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Video over het maken van een nieuwe inhoudintro"
 
-## Contentfragmenten {#introduction}
-
-In AEM as a Cloud Service zijn inhoudsfragmenten delen inhoud zonder kop op basis van de structuur die is gedefinieerd door een model van een inhoudsfragment. U kunt uw eigen inhoudsfragment maken door te beginnen in de console van het Fragment van de Inhoud. De console van het Fragment van de Inhoud kan als uw bibliotheek van inhoud zonder kop worden beschouwd. Met de console kunt u nieuwe inhoudsfragmenten maken en bestaande fragmenten beheren. Uw console is leeg, dus laten we een nieuw fragment maken!
-
-![De inhoud van het fragment bewerken](assets/create-content/content-fragment-console.png)
-
-Als u buiten de instructies in de app zelf naar de console voor inhoudsfragmenten wilt navigeren, wordt deze gevonden met het Adobe-pictogram linksboven op de pagina. Dit opent de globale navigatie van AEM. Van hier, kiest u **Navigatie** en vervolgens **Inhoudsfragmenten**.
-
->[!TIP]
->
->Als u meer over navigatie in AEM wilt weten, zie [Sectie Aanvullende bronnen](#additional-resources) van dit document voor meer informatie over AEM basisverwerking.
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
+>title="Geweldig werk! In deze module hebt u geleerd hoe u een inhoudsfragment kunt ontwerpen op basis van het model dat u eerder hebt gemaakt. U begrijpt nu hoe inhoudsteams inhoud kunnen maken en beheren voor apps en websites, onafhankelijk van ontwikkelingscycli."
+>abstract=""
 
 ## Een inhoudsfragment maken {#create-fragment}
 
-Inhoudsfragmenten vertegenwoordigen inhoud zonder kop. Maar ze kunnen alleen worden gemaakt op basis van een vooraf gedefinieerde inhoudsstructuur. Het model voor inhoudsfragmenten dat u eerder hebt gemaakt, fungeert als die structuur.
+Klik op de knop **De console voor inhoudsfragmenten starten** opent de console van het Fragment van de Inhoud hierboven op een nieuw lusje.
 
-1. Tik of klik op de knop **Maken** knop rechtsboven in de console om de **Nieuw inhoudsfragment** om een nieuw inhoudsfragment te maken.
+![De inhoud van het fragment bewerken](assets/create-content/content-fragment-console.png)
+
+Inhoudsfragmenten vertegenwoordigen uw inhoud zonder kop en zijn gebaseerd op vooraf gedefinieerde structuren, de zogenaamde Content Fragment-modellen. U kunt de Content Fragment-console beschouwen als een bibliotheek met inhoud zonder kop. Gebruik dit besturingselement om nieuwe inhoudsfragmenten te maken en bestaande fragmenten te beheren. Uw console is leeg, dus laten we een nieuw fragment maken!
+
+1. Tik of klik op de knop **Maken** knoop bij top-right van de console.
+
+1. De **Nieuw inhoudsfragment** wordt geopend waar u kunt beginnen met het maken van een nieuw inhoudsfragment. **Locatie** wordt automatisch gevuld met de locatie waar de nieuwe inhoud wordt opgeslagen.
 
    ![Dialoogvenster Inhoudsfragment maken](assets/create-content/create-content-fragment.png)
 
-1. Als u de richtlijnen voor de app volgt, **Locatie** wordt automatisch ingevuld.
-
-   1. Als u zich niet aan de richtlijnen houdt, gebruikt u de padbrowser om uw projectmap te selecteren.
-
-   1. In de **Nieuw inhoudsfragment** tikken of op de knop **Locatie kiezen** (het pictogram dat eruit ziet als een map) in het dialoogvenster **Locatie** veld.
-
-      ![Locatiedialoogvenster kiezen](assets/create-content/choose-location.png)
-   * U kunt ook het pad selecteren in het linkernavigatievenster van de Content Fragment-console voordat u op **Maken**.
-
-
-1. In de **Inhoudsfragmentmodel** Selecteer het model Inhoudsfragment dat u eerder hebt gemaakt in de vervolgkeuzelijst.
+1. In de **Inhoudsfragmentmodel** Selecteer het model Inhoudsfragment dat u eerder hebt gemaakt.
 
 1. Voeg een **Titel** voor het inhoudsfragment.
 
 1. Tik of klik op **Maken en openen**.
 
-## Inhoudsfragmenteditor {#edit-fragment}
+## Inhoud toevoegen aan uw inhoudsfragment {#add-content}
 
-Nadat u het nieuwe inhoudsfragment hebt opgeslagen, wordt de editor voor het inhoudsfragment geopend. Hier kunt u de feitelijke inhoud van het fragment opgeven.
+Nadat u het nieuwe inhoudsfragment hebt opgeslagen en geopend, wordt de editor voor het inhoudsfragment op een nieuw tabblad geopend. Hier kunt u de inhoud van het nieuwe fragment toevoegen.
 
-1. In de editor worden de velden weergegeven die u in het geselecteerde model hebt gedefinieerd. Hier kunt u ze bewerken om het inhoudsfragment te voltooien. Uw voortgang wordt automatisch opgeslagen.
+1. In de inhoudsfragmenteditor worden de velden weergegeven die u in het geselecteerde model hebt gedefinieerd. Hier kunt u inhoud toevoegen aan elk veld om het inhoudsfragment te voltooien. Uw voortgang wordt automatisch opgeslagen.
 
    ![Inhoudsfragmenteditor](assets/create-content/content-fragment-editor.png)
 
-1. Als het model van het inhoudsfragment veel velden bevat, kunt u snel naar elk veld springen met de opdracht **Variabelen** aan de linkerkant van de editor. Velden met fouten worden hier gemarkeerd.
-
-1. Het inhoudsfragment kan alleen door externe apps worden gebruikt als u het publiceert. Tik of klik op de knop **Publiceren** in de rechterbovenhoek van de editor.
+1. Tik of klik op de knop **Publiceren** in de rechterbovenhoek van de editor. Hierdoor is uw inhoudsfragment beschikbaar voor gebruik door externe apps.
 
 1. Selecteren **Nu** in de vervolgkeuzelijst. U kunt ook plannen dat het later wordt gepubliceerd.
 
    ![Knop Publiceren](assets/create-content/publish.png)
 
-   >[!TIP]
-   >
-   >Als u meer wilt weten over het publiceren van inhoud in AEM, raadpleegt u de [Sectie Aanvullende bronnen](#additional-resources) van dit document voor meer informatie over publiceren.
-
-1. AEM voert automatisch een verwijzingscontrole uit om ervoor te zorgen dat alle noodzakelijke middelen voor uw Inhoudsfragment worden gepubliceerd. In dit geval moet u ook het model publiceren dat u hebt gemaakt. Tik of klik op **Publiceren**.
+1. De **Inhoudsfragmenten publiceren** wordt weergegeven. AEM voert automatisch een verwijzingscontrole uit om ervoor te zorgen dat alle noodzakelijke middelen voor uw Inhoudsfragment worden gepubliceerd. In dit geval moet u ook het model publiceren dat u hebt gemaakt. Tik of klik op **Publiceren**.
 
    ![Referentiecontrole](assets/create-content/references.png)
 
@@ -90,21 +72,4 @@ Nadat u het nieuwe inhoudsfragment hebt opgeslagen, wordt de editor voor het inh
 
    ![Bevestiging van de bekendmaking](assets/create-content/publish-confirm.png)
 
-## U hebt geleerd hoe u een inhoudsfragment kunt maken! {#conclusion}
-
-In deze module hebt u geleerd hoe u een inhoudsfragment kunt maken op basis van het model dat u eerder hebt gemaakt. Op deze manier maakt een auteur van inhoud gestructureerde inhoud zonder kop.
-
-Nu uw inhoud is gemaakt en gepubliceerd, kunt u deze inhoud nu extraheren via Grafiek QL via AEM API&#39;s. U zult over dit in de module leren [Inhoud extraheren via de GraphQL API.](extract-content.md)
-
-U kunt terugkeren naar het beginscherm van de proefversie door op **Oplossingen** rechtsboven op de navigatiebalk en selecteert u **Experience Manager**.
-
-![Thuis navigeren](assets/create-content/home.png)
-
-## Aanvullende bronnen {#additional-resources}
-
-Voor meer informatie over de Fragmenten en de AEM van de Inhoud, overweeg het herzien van deze extra documentatie.
-
-* [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentatie over het navigeren en gebruiken van AEM voor nieuwe gebruikers
-* [Inhoudsfragmenten beheren - Publiceren en verwijzen](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment) - Details over het publiceren van inhoud in AEM
-* [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) - Overzicht van inhoudsfragmenten en koppelingen naar volledige documentatie over inhoudsfragmenten
-* [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md) - Inhoudsfragmenten maken en beheren
+Uw inhoud is gepubliceerd en kan als een inhoudsfragment aan uw app of website worden geleverd.
