@@ -3,10 +3,10 @@ title: Opmerkingen bij de release Cloud Manager 2023.1.0 in Adobe Experience Man
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2024.1.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 5aabdf22a040a031a3fa2a1a9f70247cf2e38f2e
+source-git-commit: 26a2ed4ee613b77c192652ae9afa99d5a86f72ce
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -26,6 +26,8 @@ De releasedatum voor Cloud Manager versie 2023.1.0 in AEM as a Cloud Service is 
 ## Wat is er nieuw? {#what-is-new}
 
 * De bruikbaarheidsverbeteringen waren het bijwerken van cursorstijlen die onderscheid maken tussen de plaats waar gebruikers actie kunnen ondernemen en de standaardaanwijzer.
+
+* In lijsten met omgevingen en leidinggevende uitvoeringen kunt u nu toegang krijgen tot details door op de afzonderlijke rij te klikken.
 
 * De testrapporten voor de aangepaste gebruikersinterface worden nu gekopieerd naar de opslag van Cloud Manager en zijn toegankelijk via de API-aanroep van Cloud Manager.
 
