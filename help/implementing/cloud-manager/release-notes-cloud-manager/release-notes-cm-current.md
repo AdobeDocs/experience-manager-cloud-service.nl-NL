@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2022.12.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2022.12.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2023.1.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2024.1.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 516c0027f917ea1e54286b268e7a0fb4c4e2b3d7
+source-git-commit: 5aabdf22a040a031a3fa2a1a9f70247cf2e38f2e
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 0%
+source-wordcount: '190'
+ht-degree: 1%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2022.12.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2023.1.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.12.0 in AEM as a Cloud Service.
+Op deze pagina worden de opmerkingen bij de release 2023.1.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
 
 >[!NOTE]
 >
@@ -21,15 +21,20 @@ Deze pagina documenteert de opmerkingen bij de release voor Cloud Manager 2022.1
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2022.12.0 in AEM as a Cloud Service is 29 november 2022. De volgende release is gepland voor 19 januari 2023.
+De releasedatum voor Cloud Manager versie 2023.1.0 in AEM as a Cloud Service is 19 januari 2023. De volgende release is gepland voor 16 februari 2023.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Meldingen voor [AEM onderhoudsupdates](/help/overview/what-is-new-and-different.md#aem-updates) wordt weergegeven in de interface van Cloud Manager. Deze wijziging zal geleidelijk worden doorgevoerd in de weken na de release van 2022.12.0.
-* Wanneer een inname via de [Content Transfer Tool (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) wordt de status van de omgeving in zowel de ontwikkelaarsconsole als in Cloud Manager weergegeven als `Ingestion in Progress`.
-* Verbeteringen van de beschikbaarheid en betrouwbaarheid van [Pipetten van Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) zijn gemaakt.
+* De bruikbaarheidsverbeteringen waren het bijwerken van cursorstijlen die onderscheid maken tussen de plaats waar gebruikers actie kunnen ondernemen en de standaardaanwijzer.
+
+* De testrapporten voor de aangepaste gebruikersinterface worden nu gekopieerd naar de opslag van Cloud Manager en zijn toegankelijk via de API-aanroep van Cloud Manager.
+
+* Gebruikers kunnen nu met behulp van pijl-links een overgang maken tussen een status voor een go-live widget.
+
+   ![Go-live widgetovergangen](assets/go-live-transitions.gif)
+
+* Zelfbediening [opzetten van HIPAA-programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) is nu mogelijk wanneer overeenkomstige rechten en machtigingen beschikbaar zijn.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* Er is een wijziging aangebracht om [pijpleidingen aan de voorzijde](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) van het lopen terwijl een pijpleiding bezig is op het zelfde milieu.
-* Er is een wijziging aangebracht om een `PATCH /program//environment//variables` verzoek om omgevingen met de `FAILED` status.
+* De Manager van de wolk zal twee pijpleiding verhinderen om bij (of bijna tezelfdertijd te beginnen, waarbij pijpleidingsmislukkingen worden vermeden.
