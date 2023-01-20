@@ -4,9 +4,9 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,9 @@ ht-degree: 0%
 
 ## Query voor een lijst met voorbeeldinhoud {#list-query}
 
-Klik op de knop **GraphQL Explorer starten** opent de GraphQL Explorer op een nieuw tabblad.
+U start in GraphQL Explorer op een nieuw tabblad. Hier kunt u query&#39;s samenstellen en valideren op basis van uw inhoud zonder kop voordat u deze gebruikt om de inhoud van uw app of website van stroom te voorzien.
 
-![De GraphQL Query Editor](assets/extract-content/query-editor.png)
-
-Met de GraphQL Explorer kunt u query&#39;s maken en valideren op basis van uw inhoud zonder kop voordat u deze gebruikt om de inhoud van uw app of website aan te sturen. Laten we eens kijken hoe dat is gelukt!
-
-1. Uw AEM proefversie zonder kop wordt geleverd met een eindpunt dat is voorgeladen met Content Fragments waaruit u inhoud voor testdoeleinden kunt extraheren. Selecteer **AEM Demo-elementen** van de **Endpoint** vervolgkeuzelijst in de rechterbovenhoek van de editor.
-
-   ![Eindpunt selecteren](assets/extract-content/select-endpoint.png)
+1. Uw AEM proefversie zonder kop wordt geleverd met een eindpunt dat is voorgeladen met Content Fragments waaruit u inhoud voor testdoeleinden kunt extraheren. Zorg ervoor dat de **AEM Demo-elementen** het eindpunt wordt geselecteerd in het dialoogvenster **Endpoint** vervolgkeuzelijst in de rechterbovenhoek van de editor.
 
 1. Kopieer het volgende codefragment voor een lijstvraag van vooraf geladen **AEM Demo-elementen** eindpunt. Een lijstvraag keert een lijst van alle inhoud terug die een specifiek model van het Fragment van de Inhoud gebruikt. De inventaris en de categoriepagina&#39;s gebruiken typisch dit vraagformaat.
 
@@ -67,19 +61,17 @@ Met de GraphQL Explorer kunt u query&#39;s maken en valideren op basis van uw in
 
 1. Vervang de bestaande inhoud in de vraagredacteur door de gekopieerde code te kleven.
 
-   ![Lijstquery](assets/extract-content/list-query.png)
-
 1. Klik op de knop **Afspelen** knoop bij de bovenkant verlaten van de vraagredacteur om de vraag uit te voeren.
 
 1. De resultaten worden getoond in het juiste paneel, naast de vraagredacteur. Als de query onjuist is, wordt een fout weergegeven in het rechterdeelvenster.
 
-   ![Zoekresultaten weergeven](assets/extract-content/list-query-results.png)
+   ![Lijstquery](assets/do-not-localize/list-query-1-3-4-5.png)
 
 U hebt net een lijstvraag voor een volledige lijst van alle Fragments van de Inhoud bevestigd. Dit proces helpt ervoor te zorgen dat de reactie is wat uw app verwacht, met resultaten die aantonen hoe uw apps en websites de in AEM gemaakte inhoud zullen ophalen.
 
 ## Query voor een specifiek deel van de voorbeeldinhoud {#bypath-query}
 
-Als u een query van het type byPath uitvoert, kunt u inhoud voor een bepaald inhoudsfragment ophalen. Productdetailpagina&#39;s en pagina&#39;s die zich op een specifieke set inhoud richten, vereisen doorgaans dit type query. Laten we eens kijken hoe het werkt!
+Als u een query van het type byPath uitvoert, kunt u inhoud voor een bepaald inhoudsfragment ophalen. Productdetailpagina&#39;s en pagina&#39;s die zich op een specifieke set inhoud richten, vereisen doorgaans dit type query.
 
 1. Kopieer het volgende codefragment voor een byPath-query van het vooraf geladen bestand **AEM Demo-elementen** eindpunt.
 
@@ -90,11 +82,11 @@ Als u een query van het type byPath uitvoert, kunt u inhoud voor een bepaald inh
      ) {
        item {
          _path
-         adventureTitle
-         adventureDescription {
+         title
+         description {
            json
          }
-         adventurePrimaryImage {
+         primaryImage {
            ... on ImageRef {
              _path
              width
@@ -108,46 +100,32 @@ Als u een query van het type byPath uitvoert, kunt u inhoud voor een bepaald inh
 
 1. Vervang de bestaande inhoud in de vraagredacteur door de gekopieerde code te kleven.
 
-   ![byPath-query](assets/extract-content/bypath-query.png)
-
 1. Klik op de knop **Afspelen** knoop bij de bovenkant verlaten van de vraagredacteur om de vraag uit te voeren.
 
 1. De resultaten worden getoond in het juiste paneel, naast de vraagredacteur. Als de query onjuist is, wordt een fout weergegeven in het rechterdeelvenster.
 
-   ![byPath-queryresultaten](assets/extract-content/bypath-query-results.png)
+   ![byPath-queryresultaten](assets/do-not-localize/bypath-query-2-3-4.png)
 
 U hebt zojuist een query byPath gevalideerd om een specifiek inhoudsfragment op te halen dat wordt aangegeven door het pad van dat fragment.
 
 ## Vraag uw eigen inhoud op {#own-queries}
 
-Nu u de twee primaire soorten vragen in werking hebt gesteld, bent u bereid om uw eigen inhoud te vragen!
+Nu u de twee primaire soorten vragen in werking hebt gesteld, bent u bereid om uw eigen inhoud te vragen.
 
 1. Om vragen tegen uw eigen Fragmenten van de Inhoud in werking te stellen, verander het eindpunt van **AEM Demo-elementen** aan de **Uw project** map.
 
-   ![Uw eigen eindpunt selecteren](assets/extract-content/select-endpoint.png)
-
 1. Verwijder alle bestaande inhoud in de query-editor. Typ vervolgens open haakje `{` en druk Ctrl+Space of Option+Space voor een automatisch aangevulde lijst van de modellen die in uw eindpunt werden bepaald. Selecteer het model dat u hebt gemaakt en waarin u eindigt `List` van de opties.
 
-   ![Automatisch voltooide modellen in vraagredacteur](assets/extract-content/auto-complete-models.png)
+   ![Aangepaste query starten](assets/do-not-localize/custom-query-1-2.png)
 
 1. Definieer de items die de query moet bevatten voor het model Inhoudsfragment dat u hebt geselecteerd. Typ nogmaals haakje openen `{`Druk vervolgens op Ctrl+Space of Option+Space voor een lijst die automatisch wordt voltooid. Selecteren `items` van de opties.
 
-   ![Items automatisch aanvullen in de query-editor](assets/extract-content/auto-complete-items.png)
+1. Tik of klik op de knop **prettiseren** om de code automatisch op te maken zodat deze gemakkelijker kan worden gelezen.
 
-1. Definieer de velden die de query moet bevatten voor het geselecteerde inhoudsfragmentmodel. Typ nogmaals haakje openen `{`Druk vervolgens op Ctrl+Space of Option+Space voor een automatisch aangevulde lijst met beschikbare velden in het model Inhoudsfragment. Selecteer in de lijst de gewenste velden in uw model.
-
-   ![Velden automatisch aanvullen in de query-editor](assets/extract-content/auto-complete-fields.png)
-
-1. Meerdere velden scheiden met een komma (`,`) of spatie en druk nogmaals op Ctrl+Space of Option+Space om extra velden te selecteren.
-
-1. Terwijl u werkt, kunt u tikken of op de knop **prettiseren** om de code automatisch op te maken zodat deze gemakkelijker kan worden gelezen.
-
-   ![prettiseren](assets/extract-content/prettify.png)
-
-1. Tik of klik op de knop **Afspelen** knoop bij de bovenkant verlaten van de redacteur om de vraag in werking te stellen.
-
-   ![Resultaten van uw eigen query](assets/extract-content/custom-query-results.png)
+1. Tik of klik op de knop **Afspelen** knoop bij de bovenkant verlaten van de redacteur om de vraag in werking te stellen. De redacteur auto voltooit `items` en de query wordt uitgevoerd.
 
 1. De resultaten worden getoond in het juiste paneel, naast de vraagredacteur.
+
+   ![Aangepaste query uitvoeren](assets/do-not-localize/custom-query-3-4-5-6.png)
 
 Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen.
