@@ -2,9 +2,9 @@
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 hidefromtoc: true
-source-git-commit: 983901387d059a98942b4f7c533770a55dd4ff4a
+source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
 workflow-type: tm+mt
-source-wordcount: '2114'
+source-wordcount: '2350'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Deze functie is nog niet beschikbaar.
+>Deze functie zal naar verwachting gedurende de maand februari geleidelijk aan aan aan de klanten worden geleverd.
 
 Om veranderingen op te stellen, vereisen de huidige milieu&#39;s van de Ontwikkeling van de Wolk het gebruik van een proces dat uitgebreide codeveiligheid en kwaliteitsregels gebruikt genoemd een pijpleiding CI/CD. Voor situaties waar snelle en iteratieve veranderingen nodig zijn, heeft Adobe de Milieu&#39;s van de Snelle Ontwikkeling (RDEs voor kort) geïntroduceerd.
 
@@ -30,9 +30,7 @@ Elk programma wordt voorzien van RDE. In het geval van Sandbox-accounts worden z
 
 Typisch, zou RDE door één enkele ontwikkelaar in een bepaalde tijd, voor het testen en het zuiveren van een specifieke eigenschap worden gebruikt. Wanneer de ontwikkelingszitting wordt gedaan, kan RDE in een standaardstaat voor het volgende gebruik worden teruggesteld.
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
-
-Additional RDEs may be purchased for Production programs -->
+Aanvullende RDE&#39;s kunnen in licentie worden gegeven voor productieprogramma&#39;s (niet-sandbox).
 
 ## RDE inschakelen in een programma {#enabling-rde-in-a-program}
 
@@ -54,7 +52,7 @@ Ga als volgt te werk om Cloud Manager te gebruiken om een RDE voor uw programma 
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
+1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
 
    * Selecteren **Snelle ontwikkeling** onder de **Omgevingstype selecteren** kop.
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter het omgevingstype weergegeven.
@@ -388,14 +386,17 @@ Hoewel RDE in vele opzichten gelijkaardig aan een Milieu van de Ontwikkeling van
 
 Om deze redenen, adviseert men dat na het bevestigen van code op een milieu RDE, u de code aan een Milieu van de Ontwikkeling van de Wolk zou moeten opstellen gebruikend de niet productiepijplijn. Tot slot test de code alvorens met de productiepijpleiding op te stellen.
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
+Neem ook de volgende oplossing-specifieke overwegingen op:
 
-## How many RDEs do I need? {#how-many-rds-do-i-need}
+* RDEs steunt momenteel niet het bekijken en het zuiveren voorste code die gebruikend de Voorste-EindPijl van de Manager van de Wolk wordt opgesteld.
 
-The purchase of additional RDEs for Production programs will be possible beginning with late January.
 
-The number of RDEs needed depends on the make-up and processes of an organization. The most flexible model is where an organization purchases a dedicated RDE for each one of their AEM CS developers. In this model, each developer can test their code on the RDE without needing to coordinate with other team members around whether an RDE environment is available.
+## Hoeveel RDEs heb ik nodig? {#how-many-rds-do-i-need}
 
-At the other extreme, a team with a single RDE may use internal processes to coordinate which developer can use the environment at a given time. This can possibly be whenever a developer has hit an intermediate feature milestone and is ready to validate in a Cloud environment where they can quickly make the changes they need.
+RDE is beschikbaar voor elke vergunning gegeven oplossing en Adobe biedt ook extra RDEs aan, die voor Productie (niet zandbak) programma&#39;s kan worden vergunning gegeven.
 
-An intermediate model is one where an organization purchases a number of RDEs that will create a situation in which not every developer will have a dedicated environment, but there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments. -->
+Het aantal vereiste RDEs hangt van de samenstelling en de processen van een organisatie af. Het meest flexibele model is waar een organisatie een specifieke RDE voor elk van hun ontwikkelaars van AEM Cloud Service koopt. In dit model, kan elke ontwikkelaar hun code op RDE testen zonder met andere teamleden rond te coördineren of een milieu RDE beschikbaar is.
+
+Aan het andere uiteinde kan een team met één RDE interne processen gebruiken om te coördineren welke ontwikkelaar het milieu op een bepaald ogenblik kan gebruiken. Dit kan mogelijk altijd zijn wanneer een ontwikkelaar een mijlpaal voor tussentijdse functies heeft bereikt en klaar is om te valideren in een Cloud-omgeving waar hij snel de gewenste wijzigingen kan aanbrengen.
+
+Een tussenliggend model is een model waarbij een organisatie een aantal RDE&#39;s koopt, zodat de kans groter is dat een ongebruikte RDE beschikbaar is. Eén strategie zou kunnen bestaan uit het toewijzen van een RDE per rumteam of belangrijke functie. Interne processen kunnen worden gebruikt om het gebruik van de omgevingen te coördineren.
