@@ -2,7 +2,7 @@
 title: Sites ontwikkelen met behulp van de voorste pijplijn
 description: Met de front-end pijpleiding wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijk sneller worden. In dit document worden enkele specifieke aspecten beschreven van het constructieproces aan de voorzijde die moeten worden vermeld.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
+source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De inhoud van de `dist` Deze map is de map die uiteindelijk wordt geïmplementee
 
 ### Node-versies {#node-versions}
 
-Door gebrek gebruikt de front-end pijpleiding Node 14, maar 16 en 16 zijn ook beschikbaar.
+Door gebrek de front-end pijpleiding gebruikt Node 14, maar 12 en 16 zijn ook beschikbaar.
 
 U kunt de `CM_CUSTOM_VAR_NODE_VERSION` omgevingsvariabele om de gewenste versie in te stellen.
 
