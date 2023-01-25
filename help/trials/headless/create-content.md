@@ -4,9 +4,9 @@ description: Gebruik het model Inhoudsfragment dat u eerder hebt gemaakt om inho
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 4a99ce530f3ca13f52648ffc0782d62cd5ebf395
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="De console voor inhoudsfragmenten starten"
->abstract="Het maken van consistente inhoud van hoge kwaliteit die naadloos werkt in uw apps en websites, leidt tot een geweldige klantervaring. In deze module wordt u door het maken van het eerste inhoudsfragment geleid om te tonen hoe u dit kunt doen. Bekijk de video om te begrijpen waarom dit een belangrijke stap is.<br><br>Start deze module op een nieuw tabblad door op de onderstaande knop te klikken en volg deze handleiding."
->additional-url="https://video.tv.adobe.com/v/328618" text="Video over het maken van een nieuwe inhoudintro"
+>abstract="Het maken van consistente inhoud van hoge kwaliteit die naadloos werkt in uw apps en websites, leidt tot een geweldige klantervaring. In deze module wordt u door het maken van het eerste inhoudsfragment geleid om te tonen hoe u dit kunt doen.<br><br>Start deze module op een nieuw tabblad door op de onderstaande knop te klikken en volg deze handleiding."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
