@@ -4,9 +4,9 @@ description: Leer hoe u Dynamic Media-afbeeldingsprofielen maakt die instellinge
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 08c4474c71d39ba95191225279bbfca92bb64d7c
+source-git-commit: 163b6b19f0401213813d8de30caf8144855b4e4c
 workflow-type: tm+mt
-source-wordcount: '3378'
+source-wordcount: '3342'
 ht-degree: 4%
 
 ---
@@ -17,15 +17,15 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 
 >[!IMPORTANT]
 >
->・ CMYK-afbeeldingsindeling wordt niet ondersteund bij slim uitsnijden.
-・ Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerd GIF- of INDD-bestanden (Adobe InDesign).
+>Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerd GIF- of INDD-bestanden (Adobe InDesign).
 
 ## Onscherp masker, optie {#unsharp-mask}
 
-Als u een afbeeldingsprofiel maakt, kunt u de opdracht **[!UICONTROL Unsharp mask]** Hiermee kunt u een verscherpingsfiltereffect op de uiteindelijke gedownsampelde afbeelding perfectioneren. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Adobe Photoshop.
+Als u een afbeeldingsprofiel maakt, kunt u de opdracht **[!UICONTROL Unsharp mask]** Hiermee kunt u een verscherpingsfiltereffect op de uiteindelijke gedownsampelde afbeelding perfectioneren. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker in Adobe Photoshop.
 
 >[!NOTE]
-Onscherp masker wordt alleen toegepast op verkleinde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dat betekent dat de grootst mogelijke uitvoeringen binnen het pad niet worden beïnvloed door een onscherp masker. Terwijl kleinere uitvoeringen, zoals miniaturen, worden gewijzigd (en het onscherpe masker worden weergegeven).
+>
+>Onscherp masker wordt alleen toegepast op verkleinde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dat betekent dat de grootst mogelijke uitvoeringen binnen het pad niet worden beïnvloed door een onscherp masker. Terwijl kleinere uitvoeringen, zoals miniaturen, worden gewijzigd (en het onscherpe masker worden weergegeven).
 
 In **[!UICONTROL Unsharp Mask]** hebt u de volgende filteropties:
 
@@ -80,8 +80,8 @@ Adobe raadt de volgende richtlijnen en tips aan om het gebruik van Smart Crop on
 U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren of de snijinhoud in de verschillende doelresoluties te behouden.
 
 >[!IMPORTANT]
-・ Adobe raadt u aan de gegenereerde gewassen en stalen te herzien om ervoor te zorgen dat ze geschikt en relevant zijn voor uw merk en waarden.
-・ CMYK-afbeeldingsindeling wordt niet ondersteund bij slim uitsnijden.
+>
+>Adobe raadt u aan de gegenereerde gewassen en stalen te controleren om na te gaan of deze geschikt en relevant zijn voor uw merk en waarden.
 
 | Optie | Wanneer gebruiken | Beschrijving |
 | --- | --- | --- |
@@ -95,12 +95,13 @@ U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U
 De maximale resolutie voor ondersteunde invoerbestanden is 16 kB.
 
 >[!NOTE]
-De resolutie van 16 kB is een weergaveresolutie met ongeveer 16.000 pixels horizontaal. De meest gebruikte resolutie van 16 kB is 15360 x 8640, die het pixelaantal van 8kHD in elke afmeting verdubbelt, voor een totaal van vier keer zo veel pixel. Deze resolutie heeft 132,7 megapixels, 16 keer zoveel pixels als een resolutie van 4.000 pixels en 64 keer zoveel pixels als de resolutie van 1.080p.
+>
+>De resolutie van 16 kB is een weergaveresolutie met ongeveer 16.000 pixels horizontaal. De meest gebruikte resolutie van 16 kB is 15360 x 8640, die het pixelaantal van 8kHD in elke afmeting verdubbelt, voor een totaal van vier keer zo veel pixel. Deze resolutie heeft 132,7 megapixels, 16 keer zoveel pixels als een resolutie van 4.000 pixels en 64 keer zoveel pixels als de resolutie van 1.080p.
 
 | Afbeeldingsindeling | Niet-hoofdlettergevoelige bestandsextensie | MIME-type | Ondersteunde invoerkleurruimte | Maximale ondersteunde grootte invoerbestand | Ondersteunde afbeeldingsindeling? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Ja |
-| CMYK |  |  |  |  | Nee |
+| CMYK |  |  |  |  | Ja |
 | EPS |  |  |  |  | Nee |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Ja; het eerste frame van het geanimeerde GIF wordt gebruikt voor de vertoning. U kunt het eerste frame niet configureren of wijzigen. |
 | JPEG | `.jpg` and `.jpeg` | image/jpeg | sRGB | 15 GB | Ja |
@@ -209,16 +210,17 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 ## Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-・ Adobe raadt u aan eventuele gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
-・ CMYK-afbeeldingsindeling wordt niet ondersteund bij slim uitsnijden.
+>
+>Adobe raadt u aan eventuele gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
 
 U kunt het venster voor slimme uitsnijden van een afbeelding handmatig opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.
 
 Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorgegeven overal waar u het uitsnijden voor de specifieke afbeeldingen gebruikt.
 
 >[!IMPORTANT]
-Wanneer u het venster voor slim uitsnijden van een element handmatig opnieuw uitlijnt of het formaat ervan wijzigt, blijft die bewerking behouden, zelfs als u later besluit het element opnieuw te verwerken. Als u echter de breedte, de hoogte of beide in het dialoogvenster **[!UICONTROL Responsive Image Crop]** in het afbeeldingsprofiel, wordt dat element opnieuw verwerkt.
-Zie [Dynamic Media-elementen in een map opnieuw verwerken](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>
+>Wanneer u het venster voor slim uitsnijden van een element handmatig opnieuw uitlijnt of het formaat ervan wijzigt, blijft die bewerking behouden, zelfs als u later besluit het element opnieuw te verwerken. Als u echter de breedte, de hoogte of beide in het dialoogvenster **[!UICONTROL Responsive Image Crop]** in het afbeeldingsprofiel, wordt dat element opnieuw verwerkt.
+>Zie [Dynamic Media-elementen in een map opnieuw verwerken](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnieuw wilt genereren.
 
@@ -244,16 +246,17 @@ Zie ook [Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen 
 ## Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 >[!IMPORTANT]
-・ Adobe raadt u aan eventuele gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
-・ CMYK-afbeeldingsindeling wordt niet ondersteund bij slim uitsnijden.
+>
+>Adobe raadt u aan eventuele gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
 
 Nadat u een afbeeldingsprofiel met slimme uitsnijding hebt toegepast op een map, is op alle afbeeldingen in die map een uitsnijding toegepast. Indien gewenst kunt u *handmatig* U kunt het venster voor slimme uitsnijden in meerdere afbeeldingen opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.
 
 Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorgegeven overal waar u het uitsnijden voor de specifieke afbeeldingen gebruikt.
 
 >[!IMPORTANT]
-Wanneer u het venster voor slimme uitsnijdingen van meerdere elementen handmatig opnieuw uitlijnt of het formaat ervan wijzigt, blijven deze bewerkingen behouden, zelfs als u later besluit deze elementen opnieuw te verwerken. Als u echter de breedte, de hoogte of beide in het dialoogvenster **[!UICONTROL Responsive Image Crop]** in het afbeeldingsprofiel, worden deze elementen opnieuw verwerkt.
-Zie [Dynamic Media-elementen in een map opnieuw verwerken](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>
+>Wanneer u het venster voor slimme uitsnijdingen van meerdere elementen handmatig opnieuw uitlijnt of het formaat ervan wijzigt, blijven deze bewerkingen behouden, zelfs als u later besluit deze elementen opnieuw te verwerken. Als u echter de breedte, de hoogte of beide in het dialoogvenster **[!UICONTROL Responsive Image Crop]** in het afbeeldingsprofiel, worden deze elementen opnieuw verwerkt.
+>Zie [Dynamic Media-elementen in een map opnieuw verwerken](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnieuw wilt genereren.
 

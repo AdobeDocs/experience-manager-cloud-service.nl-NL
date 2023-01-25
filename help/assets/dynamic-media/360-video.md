@@ -4,9 +4,9 @@ description: Leer hoe u met 360 en VR-video (Virtual Reality) werkt in Dynamic M
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Zie ook [Viewer-voorinstellingen beheren](/help/assets/dynamic-media/managing-vi
 
 Selecteren [Ruimtestation 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) om een browservenster te openen en een video van 360° te bekijken. Tijdens het afspelen van video sleept u de aanwijzer naar een nieuwe locatie om de weergavehoek te wijzigen.
 
-![360 Videovoorbeeld](assets/6_5_360videoiss_simplified.png)
+![Videoframe van Space Station 360 video](assets/6_5_360videoiss_simplified.png)
 *Videoframe vanaf Space Station 360*
 
 ## 360/VR-video en Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -42,7 +42,7 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
 
 360 video-elementen die worden geüpload naar [!DNL Experience Manager] worden gelabeld als **Multimedia** op een elementpagina, vergelijkbaar met normaal video-element.
 
-![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
+![Een geüpload 360-video-element dat in de kaartweergave wordt weergegeven](assets/6_5_360video-selecttopreview.png)
 *Een geüpload 360-video element dat in de Kaartweergave wordt weergegeven. Het element wordt aangeduid als Multimedia.*
 
 **Elementen uploaden voor gebruik met de 360 Video-viewer:**
@@ -106,25 +106,25 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-me
 
 1. In **[!UICONTROL Assets]** navigeer naar een bestaande 360-video die u hebt gemaakt. Selecteer het 360 Video-element om het element te openen in de voorvertoningsmodus.
 
-   ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
+   ![Screenshot van een geüploade 360 video-asset, zoals deze wordt weergegeven in de Kaartweergave van Experience Manager.](assets/6_5_360video-selecttopreview-1.png)
 
    Selecteer het 360-video-element om een voorvertoning van de video weer te geven.
 
 1. Selecteer op de voorvertoningspagina, linksboven op de pagina, de vervolgkeuzelijst en selecteer vervolgens **[!UICONTROL Viewers]**.
 
-   ![6_5_360video-voorvertoning-viewers](assets/6_5_360video-preview-viewers.png)
+   ![Screenshot van het selecteren van Viewers om de lijst met beschikbare videoviewers weer te geven.](assets/6_5_360video-preview-viewers.png)
 
    Selecteer in de lijst Viewers de optie **[!UICONTROL Video360_social]** Voer vervolgens een van de volgende handelingen uit:
 
    * Als u de kijkhoek van de statische scène wilt wijzigen, sleept u de aanwijzer over de video.
    * Selecteer de video&#39;s om het afspelen te starten **[!UICONTROL Play]** knop. Terwijl de video wordt afgespeeld, sleept u de aanwijzer over de video om de kijkhoek te wijzigen.
 
-   ![6_5_360video-voorvertoning-video360-social ](assets/6_5_360video-preview-video360-social.png)*Een schermafbeelding van 360 video.*
+   ![Screenshot van een gebruiker die de Video360_Social viewer selecteert om een voorvertoning van een video van 360 graden weer te geven.](assets/6_5_360video-preview-video360-social.png)*Een schermafbeelding van 360 video.*
 
    * Selecteer in de lijst Viewers de optie **[!UICONTROL Video360VR]**.
 
       VR-video (Virtual Reality) is overweldigende video-inhoud die wordt benaderd met headsets van virtuele realiteit. Net als bij gewone video&#39;s maakt u aan het begin VR-video&#39;s wanneer een video wordt opgenomen of vastgelegd met videocamera&#39;s van 360°.
-   ![6_5_360video-voorvertoning-video360vr](assets/6_5_360video-preview-video360vr.png)
+   ![Screenshot van een gebruiker die de muisaanwijzer boven de Viewer-optie Video360VR houdt.](assets/6_5_360video-preview-video360vr.png)
    *Een videoschermafbeelding van 360 VR.*
 
 1. Rechtsboven op de voorvertoningspagina selecteert u **[!UICONTROL Close]**.
