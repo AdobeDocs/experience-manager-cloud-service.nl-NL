@@ -3,7 +3,7 @@ title: Ondersteuning voor nieuwe landinstellingen voor lokalisatie van adaptieve
 seo-title: Supporting new locales for adaptive forms localization
 description: Met AEM Forms kunt u nieuwe landinstellingen toevoegen voor het lokaliseren van adaptieve formulieren. Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaanse (ko-KR) landinstellingen.
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: f8bbc6605e77cf2858c69dae96e9ab32698d1f16
+source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -34,8 +34,8 @@ Ondersteuning voor een nieuwe landinstelling toevoegen bij Adaptive Forms-runtim
 1. [Uw opslagplaats klonen](#1-clone-the-repository-clone-the-repository)
 1. [Een landinstelling toevoegen aan de GuideLocalizationService-service](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [Specifieke map voor landnamen toevoegen](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-1. [XFA-clientbibliotheek toevoegen voor een landinstelling](#3-add-xfa-client-library-for-a-locale)
-1. [Aangepaste formulierclientbibliotheek toevoegen voor een landinstelling](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+3,1 [XFA-clientbibliotheek toevoegen voor een landinstelling](#3-add-xfa-client-library-for-a-locale)
+3,2 [Aangepaste formulierclientbibliotheek toevoegen voor een landinstelling](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [Ondersteuning voor landinstellingen toevoegen voor het woordenboek](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [Leg de wijzigingen in de opslagplaats vast en implementeer de pijpleiding](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
