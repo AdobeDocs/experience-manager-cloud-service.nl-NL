@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a3f7a6759ca41d929e250171e52e43c21ad9450b
+source-git-commit: 592810c45c89d569644263c01b843d51761ebe8d
 workflow-type: tm+mt
-source-wordcount: '3845'
+source-wordcount: '3849'
 ht-degree: 21%
 
 ---
@@ -526,6 +526,7 @@ ht-degree: 21%
          + [CAPTCHA gebruiken in een adaptieve vorm](/help/forms/captcha-adaptive-forms.md)
          + [Basiscomponenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
          + [Krabbelen toepassen](/help/forms/signing-forms-using-scribble.md)
+         + [Ondersteuning voor nieuwe taallokalisatie](/help/forms/supporting-new-language-localization.md)
          + [Een tabel toevoegen aan een adaptief formulier](/help/forms/adaptive-forms-tables.md)
       + Indeling configureren en stijl toepassen op een adaptief formulier{#configure-layout-of-an-adaptive-form}
          + [De indeling van een adaptief formulier instellen](/help/forms/layout-capabilities-adaptive-forms.md)

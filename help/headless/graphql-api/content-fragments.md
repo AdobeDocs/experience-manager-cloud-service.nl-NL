@@ -3,7 +3,7 @@ title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 24dda46f8a3ac5179ae3bc95fba38c5d1f0660ca
 workflow-type: tm+mt
 source-wordcount: '4174'
 ht-degree: 0%
@@ -39,11 +39,11 @@ GraphQL is:
 
    Zie [GraphQL.org](https://graphql.org)
 
-* &quot;*...een open specificatie voor een flexibele API-laag. Plaats GraphQL over uw bestaande achtergronden om producten sneller dan ooit te bouwen....*&quot;.
+* &quot;*...een open specificatie voor een flexibele API-laag. GrafiekQL op uw bestaande achtergronden plaatsen om producten sneller dan ooit te bouwen....*&quot;.
 
    Zie [GraphQL verkennen](https://www.graphql.com).
 
-* *&quot;...een taal en specificatie voor gegevensquery die in 2012 intern door Facebook zijn ontwikkeld, voordat deze in 2015 openbaar is uitbesteed. Het biedt een alternatief voor op REST gebaseerde architecturen met als doel de productiviteit van ontwikkelaars te verhogen en de hoeveelheden overgedragen gegevens te minimaliseren. GraphQL wordt gebruikt in productie door honderden organisaties van elke grootte...&quot;*
+* *&quot;...een taal en specificatie voor gegevensquery die in 2012 intern door Facebook zijn ontwikkeld, voordat deze in 2015 openbaar is uitbesteed. Het biedt een alternatief voor op REST gebaseerde architecturen met als doel de productiviteit van ontwikkelaars te verhogen en de hoeveelheden overgedragen gegevens te minimaliseren. GraphQL wordt gebruikt in productie door honderden organisaties van elke omvang...&quot;*
 
    Zie [GraphQL Foundation](https://foundation.graphql.org/).
 
@@ -73,7 +73,7 @@ De GraphQL for AEM-implementatie is gebaseerd op de standaard GraphQL Java Libra
 
 * [GraphQL Java bij GitHub](https://github.com/graphql-java)
 
-### GraphQL-terminologie {#graphql-terminology}
+### GraphQL Terminologie {#graphql-terminology}
 
 GraphQL gebruikt het volgende:
 
@@ -82,14 +82,14 @@ GraphQL gebruikt het volgende:
 * **[Schema&#39;s en typen](https://graphql.org/learn/schema/)**:
 
    * Schema&#39;s worden gegenereerd door AEM op basis van de modellen van inhoudsfragmenten.
-   * Met behulp van uw schema&#39;s geeft GraphQL de typen en bewerkingen weer die zijn toegestaan voor de GraphQL voor AEM implementatie.
+   * Gebruikend uw schema&#39;s, stelt GraphQL de types en verrichtingen voor toegelaten GraphQL voor AEM implementatie voor.
 
 * **[Velden](https://graphql.org/learn/queries/#fields)**
 
 * **[GraphQL-eindpunt](graphql-endpoint.md)**
-   * Het pad in AEM dat reageert op GraphQL-query&#39;s en toegang biedt tot de GraphQL-schema&#39;s.
+   * De weg in AEM die aan vragen GraphQL antwoordt, en toegang tot de schema&#39;s GraphQL verleent.
 
-   * Zie [GraphQL Endpoint inschakelen](graphql-endpoint.md) voor nadere bijzonderheden.
+   * Zie [GrafiekQL-eindpunt inschakelen](graphql-endpoint.md) voor nadere bijzonderheden.
 
 Zie de [(GraphQL.org) Inleiding tot GraphQL](https://graphql.org/learn/) voor uitvoerige informatie, waaronder [Aanbevolen werkwijzen](https://graphql.org/learn/best-practices/).
 
@@ -160,7 +160,7 @@ GraphQL is een sterk getypte API, wat betekent dat de gegevens duidelijk gestruc
 
 De GraphQL-specificatie biedt een aantal richtlijnen voor het maken van een robuuste API voor het ondervragen van gegevens over een bepaalde instantie. Om dit te doen, moet een cliënt halen [Schema](#schema-generation), die alle typen bevat die nodig zijn voor een query.
 
-Voor Inhoudsfragmenten zijn de GraphQL-schema&#39;s (structuur en typen) gebaseerd op **Ingeschakeld** [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) en hun gegevenstypen.
+Voor inhoudsfragmenten zijn de GraphQL-schema&#39;s (structuur en typen) gebaseerd op **Ingeschakeld** [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) en hun gegevenstypen.
 
 >[!CAUTION]
 >
@@ -183,15 +183,15 @@ Als een gebruiker bijvoorbeeld een Content Fragment Model heeft gemaakt, genaamd
 
    * De andere velden zijn automatisch toegevoegd door AEM en zijn nuttige methoden voor het verschaffen van informatie over een bepaald inhoudsfragment. in dit voorbeeld, [helpervelden](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
-1. Nadat een gebruiker een inhoudsfragment heeft gemaakt op basis van het artikelmodel, kan het vervolgens worden ondervraagd via GraphQL. Zie voor voorbeelden de [Voorbeeldquery&#39;s](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries) (op basis van een [structuur van voorbeeldinhoudsfragment voor gebruik met GraphQL](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)).
+1. Nadat een gebruiker tot een Fragment van de Inhoud leidt dat op het model van het Artikel wordt gebaseerd, kan het dan door GraphQL worden ondervraagd. Zie voor voorbeelden de [Voorbeeldquery&#39;s](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries) (op basis van een [voorbeeldstructuur van inhoudsfragment voor gebruik met GraphQL](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)).
 
-In GraphQL voor AEM, is het schema flexibel. Dit betekent dat deze telkens automatisch wordt gegenereerd wanneer een inhoudsfragmentmodel wordt gemaakt, bijgewerkt of verwijderd. De caches voor het gegevensschema worden ook vernieuwd wanneer u een model van het inhoudsfragment bijwerkt.
+In GraphQL for AEM is het schema flexibel. Dit betekent dat deze telkens automatisch wordt gegenereerd wanneer een inhoudsfragmentmodel wordt gemaakt, bijgewerkt of verwijderd. De caches voor het gegevensschema worden ook vernieuwd wanneer u een model van het inhoudsfragment bijwerkt.
 
 <!-- move the following to a separate "in depth" page -->
 
 De caches voor het gegevensschema worden ook vernieuwd wanneer u een model van het inhoudsfragment bijwerkt.
 
-De dienst van GrafiekQL van Plaatsen luistert (in de achtergrond) naar om het even welke die wijzigingen aan een Model van het Fragment van de Inhoud worden aangebracht. Wanneer updates worden ontdekt, slechts wordt dat deel van het schema opnieuw geproduceerd. Deze optimalisatie bespaart tijd en zorgt voor stabiliteit.
+De service Sites GraphQL luistert (op de achtergrond) naar eventuele wijzigingen die zijn aangebracht in een inhoudsfragmentmodel. Wanneer updates worden ontdekt, slechts wordt dat deel van het schema opnieuw geproduceerd. Deze optimalisatie bespaart tijd en zorgt voor stabiliteit.
 
 Als u bijvoorbeeld:
 
@@ -209,7 +209,7 @@ Als u bijvoorbeeld:
 >
 >Dit is belangrijk om op te merken voor het geval u bulkupdates op de Modellen van het Fragment van de Inhoud door REST api, of anders wilt doen.
 
-Het schema wordt gediend door het zelfde eindpunt zoals de vragen van GraphQL, met de cliënt die het feit behandelt dat het schema met de uitbreiding wordt geroepen `GQLschema`. U kunt bijvoorbeeld een eenvoudige `GET` verzoek op `/content/cq:graphql/global/endpoint.GQLschema` resulteert in de uitvoer van het schema met het inhoudstype: `text/x-graphql-schema;charset=iso-8859-1`.
+Het schema wordt gediend door het zelfde eindpunt zoals de vragen GraphQL, met de cliënt die het feit behandelt dat het schema met de uitbreiding wordt geroepen `GQLschema`. U kunt bijvoorbeeld een eenvoudige `GET` verzoek op `/content/cq:graphql/global/endpoint.GQLschema` resulteert in de uitvoer van het schema met het inhoudstype: `text/x-graphql-schema;charset=iso-8859-1`.
 
 <!-- move through to here to a separate "in depth" page -->
 
@@ -237,23 +237,23 @@ Binnen het schema zijn er afzonderlijke velden, van twee basiscategorieën:
 
 ### Gegevenstypen {#data-types}
 
-GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen van het inhoudsfragmentmodel en de bijbehorende GraphQL-typen worden weergegeven:
+GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen van het Content Fragment Model en de corresponderende typen GraphQL worden weergegeven:
 
 | Inhoudsfragmentmodel - Gegevenstype | Type GraphQL | Beschrijving |
 |--- |--- |--- |
-| Tekst met één regel | String, [String] |  Wordt gebruikt voor eenvoudige tekenreeksen, zoals namen van auteurs, locaties, enzovoort. |
-| Tekst met meerdere regels | String, [String] |  Wordt gebruikt voor het uitvoeren van tekst, zoals de hoofdtekst van een artikel |
-| Getal |  Float [Float] | Wordt gebruikt om het zwevende-kommagetal en de reguliere getallen weer te geven |
-| Boolean |  Boolean |  Gebruikt om selectievakjes weer te geven → eenvoudige true/false-instructies |
-| Datum en tijd | Kalender |  Wordt gebruikt om datum en tijd weer te geven in de indeling ISO 8601. Afhankelijk van het geselecteerde type zijn er drie kleuren beschikbaar voor gebruik in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
-| Opsomming |  Tekenreeks |  Wordt gebruikt om een optie weer te geven uit een lijst met opties die bij het maken van het model zijn gedefinieerd |
-|  Tags |  [Tekenreeks] |  Wordt gebruikt om een lijst weer te geven met tekenreeksen die tags vertegenwoordigen die in AEM worden gebruikt |
-| Content Reference |  String, [String] |  Wordt gebruikt om het pad naar een ander element in AEM weer te geven |
-| Fragmentverwijzing |  *Een modeltype* |  Wordt gebruikt om te verwijzen naar een ander inhoudsfragment van een bepaald modeltype, dat is gedefinieerd toen het model werd gemaakt. |
+| Tekst met één regel | String, [String] | Wordt gebruikt voor eenvoudige tekenreeksen, zoals namen van auteurs, locaties, enzovoort. |
+| Tekst met meerdere regels | String, [String] | Wordt gebruikt voor het uitvoeren van tekst, zoals de hoofdtekst van een artikel |
+| Getal | Float [Float] | Wordt gebruikt om het zwevende-kommagetal en de reguliere getallen weer te geven |
+| Boolean | Boolean | Gebruikt om selectievakjes weer te geven → eenvoudige true/false-instructies |
+| Datum en tijd | Kalender | Wordt gebruikt om datum en tijd weer te geven in de indeling ISO 8601. Afhankelijk van het geselecteerde type zijn er drie kleuren beschikbaar voor gebruik in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
+| Opsomming | Tekenreeks | Wordt gebruikt om een optie weer te geven uit een lijst met opties die bij het maken van het model zijn gedefinieerd |
+| Tags | [Tekenreeks] | Wordt gebruikt om een lijst weer te geven met tekenreeksen die tags vertegenwoordigen die in AEM worden gebruikt |
+| Content Reference | String, [String] | Wordt gebruikt om het pad naar een ander element in AEM weer te geven |
+| Fragmentverwijzing | *Een modeltype* | Wordt gebruikt om te verwijzen naar een ander inhoudsfragment van een bepaald modeltype, dat is gedefinieerd toen het model werd gemaakt. |
 
 ### Helpervelden {#helper-fields}
 
-Naast de gegevenstypen voor door de gebruiker gegenereerde velden, genereert GraphQL voor AEM ook een aantal *helper* velden voor het herkennen van een inhoudsfragment of voor het verschaffen van aanvullende informatie over een inhoudsfragment.
+Naast de gegevenstypen voor door de gebruiker gegenereerde velden, genereert GraphQL for AEM ook een aantal *helper* velden voor het herkennen van een inhoudsfragment of voor het verschaffen van aanvullende informatie over een inhoudsfragment.
 
 Deze [helpervelden](#helper-fields) zijn gemarkeerd met een voorgaande `_` om onderscheid te maken tussen wat door de gebruiker is gedefinieerd en wat automatisch is gegenereerd.
 
@@ -371,9 +371,9 @@ Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/headless/grap
 ## Security Considerations {#security-considerations}
 -->
 
-## GrafiekQL-variabelen {#graphql-variables}
+## GraphQL-variabelen {#graphql-variables}
 
-GraphQL staat toe dat variabelen in de query worden geplaatst. Voor meer informatie kunt u de [GraphQL-documentatie voor variabelen](https://graphql.org/learn/queries/#variables).
+GraphQL laat variabelen toe om in de vraag worden geplaatst. Voor meer informatie kunt u de [GraphQL-documentatie voor variabelen](https://graphql.org/learn/queries/#variables).
 
 Als u bijvoorbeeld alle inhoudsfragmenten van het type wilt ophalen `Author` in een specifieke variatie (indien beschikbaar), kunt u het argument specificeren `variation` in GraphiQL.
 
@@ -548,7 +548,7 @@ U kunt ook filteren op geneste velden, maar dit wordt afgeraden omdat dit tot pr
 
 Zie voor meer voorbeelden:
 
-* nadere gegevens over de [GraphQL for AEM extensions](#graphql-extensions)
+* nadere gegevens over de [GraphQL voor AEM extensies](#graphql-extensions)
 
 * [Voorbeeldquery&#39;s met deze voorbeeldinhoud en -structuur](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries-sample-content-fragment-structure)
 
@@ -699,9 +699,9 @@ query {
 >* Vanwege interne technische beperkingen zullen de prestaties afnemen als sorteren en filteren wordt toegepast op geneste velden. Daarom wordt aangeraden filter-/sorteervelden te gebruiken die op hoofdniveau zijn opgeslagen. Dit is ook de geadviseerde manier als u grote gepagineerde resultaatreeksen wilt vragen.
 
 
-## GraphQL for AEM - Overzicht van extensies {#graphql-extensions}
+## GraphQL voor AEM - Overzicht van extensies {#graphql-extensions}
 
-De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspecificatie van GraphQL. Voor vragen GraphQL met AEM zijn er een paar uitbreidingen:
+De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaardspecificatie GraphQL. Voor GraphQL-query&#39;s met AEM zijn er een paar extensies:
 
 * Als u een lijst met resultaten verwacht:
    * toevoegen `List` de modelnaam; bijvoorbeeld:  `cityList`
@@ -776,7 +776,7 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
 
 
 
-* GraphQL-vaktypen worden ondersteund:
+* GraphQL-union-typen worden ondersteund:
 
    * use `... on`
       * Zie [Voorbeeldquery voor een inhoudsfragment van een specifiek model met een inhoudsverwijzing](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)
@@ -805,6 +805,6 @@ De gerezen vragen:
    * **A**: &quot;*De AEM GraphQL API biedt volledige controle op de JSON-uitvoer en is een industriestandaard voor het opvragen van inhoud.
 Als u verder gaat, is AEM van plan te investeren in de AEM GraphQL API.*&quot;
 
-## Zelfstudie - Aan de slag met AEM Headless en GraphQL {#tutorial}
+## Zelfstudie - Aan de slag met AEM headless and GraphQL {#tutorial}
 
-Op zoek naar een praktische zelfstudie? Uitchecken [Aan de slag met AEM headless en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt ontwikkelen en beschikbaar maken met de GraphQL-API&#39;s van AEM en die door een externe toepassing wordt verbruikt.
+Op zoek naar een praktische zelfstudie? Uitchecken [Aan de slag met AEM Headless en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt samenstellen en beschikbaar maken met behulp van AEM GraphQL-API&#39;s en die door een externe toepassing wordt verbruikt.
