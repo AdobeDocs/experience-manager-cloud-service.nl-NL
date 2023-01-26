@@ -2,7 +2,7 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
+source-git-commit: 00cbf0b9fa50ab3f42a0a3917caf40708c7209b9
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 0%
@@ -35,7 +35,7 @@ In tegenstelling tot aangepaste functionele tests, die HTTP-tests zijn die in Ja
 
 ### Klanten kiezen {#customer-opt-in}
 
-Als u wilt dat de gebruikersinterfacetests worden uitgevoerd door Cloud Manager, moet u zich aanmelden voor deze functie door een bestand toe te voegen aan uw opslagplaats.
+Als u wilt dat Cloud Manager uw UI-tests kan uitvoeren, moet u zich aanmelden voor deze functie door een bestand aan uw opslagplaats toe te voegen.
 
 * De bestandsnaam moet `testing.properties`.
 * De bestandsinhoud moet `ui-tests.version=1`.

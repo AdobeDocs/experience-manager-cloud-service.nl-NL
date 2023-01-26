@@ -2,12 +2,13 @@
 title: Opvallende wijzigingen in AEM Sites in AEM Cloud Service
 description: Opvallende wijzigingen in AEM Sites in AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 7becee73a64fbfd2b4f89c307f63868461b0e853
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '534'
 ht-degree: 15%
 
 ---
+
 
 # Belangrijke wijzigingen in AEM Sites as a Cloud Service {#notable-changes}
 
@@ -45,9 +46,9 @@ De initiatiefnemer van dergelijke acties kan hun status in een nieuwe UI control
 
 ## Nieuwe naslagsite en zelfstudie {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), is een nieuwe AEM referentiesite bijgewerkt en gepubliceerd met de beste werkwijzen voor het bouwen van een website met AEM en de uitgebreide reeks mogelijkheden, componenten en implementatiemodellen die beschikbaar zijn in AEM. De nieuwe referentiesite en [begeleidend lesbestand](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) behandelt fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, Bewerkbare Malplaatjes, cliëntbibliotheken, en componentenontwikkeling met Adobe Experience Manager Sites.
+[WKND](https://wknd.site/), is een nieuwe AEM referentiesite bijgewerkt en gepubliceerd met de beste werkwijzen om een website met AEM te bouwen, en met de uitgebreide reeks mogelijkheden, componenten, en plaatsingsmodellen die in AEM beschikbaar zijn. De nieuwe referentiesite en [begeleidend lesbestand](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) behandelt fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, editable malplaatjes, cliëntbibliotheken, en componentenontwikkeling met Adobe Experience Manager Sites.
 
-Eerder, werd Wij.Retail geïnstalleerd door gebrek met AEM (behalve wanneer begonnen op productiemodus).  Een referentiesite wordt nu standaard niet geïnstalleerd.  In plaats daarvan [git repo](https://github.com/adobe/aem-guides-wknd/) en [begeleidend lesbestand](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) met de bijgewerkte WKND-referentiesite.
+Eerder, werd Wij.Retail geïnstalleerd door gebrek met AEM (behalve wanneer begonnen op productiemodus). In AEM as a Cloud Service wordt een referentiesite niet standaard geïnstalleerd. In plaats daarvan [git repo](https://github.com/adobe/aem-guides-wknd/) en [begeleidend lesbestand](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) met de bijgewerkte WKND-referentiesite.
 
 ## Mogelijkheden niet beschikbaar bij uitvoering {#capabilities-not-available-at-runtime}
 
