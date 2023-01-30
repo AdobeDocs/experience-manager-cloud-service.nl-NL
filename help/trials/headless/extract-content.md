@@ -4,7 +4,7 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 9997e0ea1d78ab2c8bab46a95a664e8537f16b13
+source-git-commit: a33ca1698b30a075d80929b7c59961beecc3a9e0
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 0%
@@ -39,23 +39,23 @@ U start in GraphQL Explorer op een nieuw tabblad. Hier kunt u query&#39;s samens
 
    ```text
    {
-       adventureList {
-         items {
-            _path
-            adventureTitle
-            adventurePrice
-            adventureTripLength
-            adventurePrimaryImage {
-              ... on ImageRef {
-               _path
-               mimeType
-               width
-               height
-             }
-           }
+    adventureList {
+     items {
+       _path
+       title
+       price
+       tripLength
+       primaryImage {
+         ... on ImageRef {
+           _path
+           mimeType
+           width
+           height
          }
-      }
+       }
+     }
     }
+   }
    ```
 
 1. Vervang de bestaande inhoud in de vraagredacteur door de gekopieerde code te kleven.
