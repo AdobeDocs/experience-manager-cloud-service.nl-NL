@@ -2,9 +2,9 @@
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 hidefromtoc: true
-source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
+source-git-commit: c8cb222cdba805652123df852410ffed8b047ceb
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2446'
 ht-degree: 0%
 
 ---
@@ -390,6 +390,20 @@ U kunt RDE ook opnieuw instellen gebruikend de ellipsknoop direct van **Omgeving
 ![RDE herstellen van de kaart van Milieu](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 Ga voor meer informatie over hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren naar [de documentatie van Cloud Manager.](/help/implementing/cloud-manager/manage-environments.md)
+
+## Runmodi {#runmodes}
+
+U kunt RDE-specifieke OSGI-configuratie toepassen door achtervoegsels op de mapnaam te gebruiken, zoals in de volgende voorbeelden:
+
+* `config.rde`
+* `config.author.rde`
+* `config.publish.rde`
+
+Zie de [documentatie over de bedrijfsmodus](/help/implementing/deploying/overview.md#runmodes) voor algemene informatie over de exploitatiemodi.
+
+>[!NOTE]
+>
+>De configuratie van RDE OSGI is uniek in die zin dat het de waarden van om het even welke eigenschappen overerft OSGI die door de bundel worden verklaard `dev` uitvoeringsmodus.
 
 ## Logboekregistratie {#logging}
 
