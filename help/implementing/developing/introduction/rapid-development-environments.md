@@ -2,9 +2,9 @@
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 hidefromtoc: true
-source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
+source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,11 @@ Ga voor meer informatie over het gebruik van Cloud Manager om omgevingen te make
 
 Nadat u een RDE voor uw programma hebt toegevoegd met gebruik van Cloud Manager, kunt u ermee communiceren door de opdrachtregelprogramma&#39;s in te stellen zoals in de volgende stappen wordt beschreven:
 
+>[!IMPORTANT]
+>
+>Zorg ervoor dat u beschikt over de nieuwste versie van [Knooppunt en NPM geïnstalleerd](https://nodejs.org/en/download/) voor Adobe I/O CLI en verwante plug-ins correct te laten werken.
+
+
 1. Installeer de Adobe I/O CLI-gereedschappen volgens de procedure [hier](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. Installeer de Adobe I/O CLI-plug-in voor cloudbeheer en configureer deze zoals beschreven [hier](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 1. Installeer de Adobe I/O CLI hulpmiddelen AEM de stop van RDE door deze bevelen in werking te stellen:
@@ -120,6 +125,16 @@ Nadat u een RDE voor uw programma hebt toegevoegd met gebruik van Cloud Manager,
    Alternatief, kunt u bevestigen dat u deze ontwikkelaarrol hebt als u login aan de ontwikkelaarsconsole kunt door dit bevel in werking te stellen:
 
    `aio cloudmanager:environment:open-developer-console`
+
+>[!TIP]
+>
+>   Als u de `Warning: cloudmanager:list-programs is not a aio command.` fout, moet u installeren [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) door de onderstaande opdracht uit te voeren:
+>
+>   
+```
+>   aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+>   ```
+
 
 ## RDE gebruiken terwijl het Ontwikkelen van een Nieuwe Eigenschap {#using-rde-while-developing-a-new-feature}
 
