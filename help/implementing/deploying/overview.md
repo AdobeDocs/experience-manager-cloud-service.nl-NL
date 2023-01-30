@@ -3,9 +3,9 @@ title: Implementeren naar AEM as a Cloud Service
 description: Implementeren naar AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3415'
 ht-degree: 0%
 
 ---
@@ -171,6 +171,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Pakketbeheer - Meerdere inhoudspakketten migreren"
 >abstract="Gebruik van pakketbeheer verkennen voor gebruik waarbij een inhoudspakket als &#39;één uit&#39; moet worden geïnstalleerd, waaronder het importeren van specifieke inhoud van productie naar staging om een productieprobleem op te lossen, het overbrengen van een klein inhoudspakket van een on-premise omgeving naar AEM Cloud-omgevingen en meer."
+>abstract="Gebruik van pakketbeheer verkennen voor gebruik waarbij een inhoudspakket moet worden geïnstalleerd als &#39;één uit&#39;, dat het importeren van specifieke inhoud van productie naar staging omvat om een productieprobleem op te lossen, het overbrengen van kleine inhoudspakketten van on-premise omgeving naar AEM Cloud-omgevingen en meer."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="De tool Content Transfer"
 
 Er zijn gebruiksgevallen waarin een inhoudspakket als &quot;één uit&quot; moet worden geïnstalleerd. Bijvoorbeeld het invoeren van specifieke inhoud van productie aan het opvoeren om een productiekwestie te zuiveren. Voor deze scenario&#39;s [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) kan worden gebruikt in AEM as a Cloud Service omgevingen.
@@ -281,27 +282,30 @@ Als een mislukking na de plaatsing wordt gemeld of ontdekt, is het mogelijk dat 
 
 ## Runmodi {#runmodes}
 
-In bestaande AEM oplossingen hebben klanten de mogelijkheid instanties uit te voeren met willekeurige uitvoeringsmodi en om OSGI-configuratie toe te passen of om OSGI-bundels op die specifieke instanties te installeren. De uitvoermodi die gewoonlijk worden gedefinieerd, omvatten de *service* (auteur en publicatie) en de omgeving (dev, stage, prod).
+In bestaande AEM oplossingen hebben klanten de mogelijkheid instanties uit te voeren met willekeurige uitvoeringsmodi en om OSGI-configuratie toe te passen of om OSGI-bundels op die specifieke instanties te installeren. De uitvoermodi die gewoonlijk worden gedefinieerd, omvatten de *service* (auteur en publicatie) en het milieu (rood, dev, podium, pod).
 
 AEM as a Cloud Service is daarentegen meer mening over welke uitvoeringsmodi beschikbaar zijn en hoe OSGI-bundels en OSGI-configuratie aan hen kunnen worden toegewezen:
 
-* De de configuratieloopwijzen van OSGI moeten dev, stadium, prod voor het milieu of auteur, publiceren voor de dienst van verwijzingen voorzien. Een combinatie van `<service>.<environment_type>` wordt gesteund terwijl deze in deze specifieke orde moeten worden gebruikt (bijvoorbeeld `author.dev` of `publish.prod`). Er moet rechtstreeks vanuit de code naar de OSGI-tokens worden verwezen in plaats van de `getRunModes` , die niet langer de `environment_type` bij uitvoering. Zie voor meer informatie [Het vormen OSGi voor AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* De de configuratieloopwijzen van OSGI moeten RDE, dev, stadium, prod voor het milieu of auteur, publiceren voor de dienst van verwijzingen voorzien. Een combinatie van `<service>.<environment_type>` wordt gesteund terwijl deze in deze specifieke orde moeten worden gebruikt (bijvoorbeeld `author.dev` of `publish.prod`). Er moet rechtstreeks vanuit de code naar de OSGI-tokens worden verwezen in plaats van de `getRunModes` , die niet langer de `environment_type` bij uitvoering. Zie voor meer informatie [Het vormen OSGi voor AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * De de bundelloopwijzen van OSGI zijn beperkt tot de dienst (auteur, publiceer). OSGI-bundels per run-modus moeten in het inhoudspakket worden geïnstalleerd onder een van beide `install/author` of `install/publish`.
 
 Net als bij de bestaande AEM, is er geen manier om runmodi te gebruiken om alleen inhoud voor specifieke omgevingen of services te installeren. Als u een ontwikkelomgeving wilt laten doorlopen met gegevens of HTML die zich niet in het werkgebied of de productie bevinden, kan de pakketmanager worden gebruikt.
 
 De ondersteunde runmode configuraties zijn:
 
-* **config** (*De standaardwaarde is van toepassing op alle AEM Services*)
+* **config** (*De standaardwaarde is van toepassing op alle AEM services*)
 * **config.author** (*Is van toepassing op alle AEM Auteur-service*)
 * **config.signer.dev** (*Is van toepassing op AEM Dev Author-service*)
+* **config.signer.rde** (*Is van toepassing op AEM RDE-auteurservice*)
 * **config.maker.stage** (*Is van toepassing op AEM Staging Author-service*)
 * **config.maker.prod** (*Van toepassing op AEM dienst Productieauteur*)
 * **config.publish** (*Is van toepassing op de AEM-publicatieservice*)
 * **config.publish.dev** (*Is van toepassing op AEM Dev Publish-service*)
+* **config.publish.rde** (*Is van toepassing op AEM RDE-publicatieservice*)
 * **config.publish.stage** (*Is van toepassing op AEM service Staging publiceren*)
 * **config.publish.prod** (*Van toepassing op AEM publicatieservice Productie*)
 * **config.dev** (*Van toepassing op AEM Dev-services*)
+* **config.rde** (*Van toepassing op RDE-diensten*)
 * **config.stage** (*Van toepassing op AEM-halveringsdiensten*)
 * **config.prod** (*Van toepassing op AEM Productiediensten*)
 
