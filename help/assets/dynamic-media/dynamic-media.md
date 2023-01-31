@@ -1,9 +1,10 @@
 ---
 title: Werken met Dynamic Media
 description: Leer hoe u met Dynamic Media middelen kunt leveren voor gebruik op internet, mobiele apparaten en sociale sites.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 4%
@@ -37,7 +38,7 @@ Alleen Dynamic Media biedt de volgende functies:
 * [Video](video.md)
 * [Dynamic Media-middelen leveren](delivering-dynamic-media-assets.md)
 * [Elementen beheren](managing-assets.md)
-* [Snelle weergaven gebruiken om aangepaste pop-upvensters® te maken](custom-pop-ups.md)
+* [Snelle weergaven gebruiken om aangepaste pop-upvensters te maken](custom-pop-ups.md)
 
 Zie ook [Dynamic Media instellen](administering-dynamic-media.md).
 

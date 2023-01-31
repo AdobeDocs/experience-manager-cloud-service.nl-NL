@@ -1,10 +1,11 @@
 ---
 title: De cache van het Content Delivery Network ongeldig maken via Dynamic Media
 description: Leer hoe u inhoud in de cache van uw CDN (Content Delivery Network) ongeldig maakt, zodat u snel elementen kunt bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt.
+contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: db0451e76564f238b34555aafa3692202887a1d6
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 0%
@@ -68,7 +69,7 @@ Deze ongeldigmaking is echter niet het geval voor algemene domeinen die geen ond
 
    >[!NOTE]
    >
-   >Als u besluit de opties te behouden **[!UICONTROL Invalidate asset associated image presets in CDN]** *en* **[!UICONTROL Invalidate based on template]** Als deze optie is uitgeschakeld, wordt de basis-URL van de geselecteerde elementen samengesteld voor ongeldigmaking. Gebruik deze optie alleen voor afbeeldingen.
+   >Als u besluit de opties te handhaven **[!UICONTROL Invalidate asset associated image presets in CDN]** *en* **[!UICONTROL Invalidate based on template]** Als deze optie is uitgeschakeld, wordt de basis-URL van de geselecteerde elementen samengesteld voor ongeldigmaking. Gebruik deze optie alleen voor afbeeldingen.
 
 
    | Optie | Beschrijving |

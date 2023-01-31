@@ -1,10 +1,11 @@
 ---
 title: De Dynamic Media Video- of Image-viewer insluiten op een webpagina
 description: Leer hoe u Dynamic Media-video of afbeeldingselementen op een webpagina insluit.
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 21%

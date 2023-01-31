@@ -1,10 +1,11 @@
 ---
 title: Panoramische afbeeldingen
 description: Leer hoe u in Dynamic Media met panoramische afbeeldingen werkt.
+contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 15%
@@ -17,7 +18,7 @@ In deze sectie wordt beschreven hoe u met de Panorama-viewer werkt om bolvormige
 
 Zie ook [Viewervoorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![panoramisch beeld2](assets/panoramic-image2.png)
+![panoramic-image2](assets/panoramic-image2.png)
 
 ## Elementen uploaden voor gebruik met de Panorama-viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
