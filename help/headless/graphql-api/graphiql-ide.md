@@ -3,16 +3,16 @@ title: Het gebruiken van GrahiQL winde in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 6e6bdc539f07fd15649a4f99d491f0486a511bdc
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
 
 # GraphiQL IDE gebruiken {#graphiql-ide}
 
-Tenuitvoerlegging van de norm [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE is beschikbaar voor gebruik met de GraphQL API van Adobe Experience Manager (AEM) as a Cloud Service.
+Tenuitvoerlegging van de norm [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE is beschikbaar voor gebruik met de GraphQL API van as a Cloud Service Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Tenuitvoerlegging van de norm [GraphiQL](https://graphql.org/learn/serving-over-
 >U moet [Uw eindpunten geconfigureerd](/help/headless/graphql-api/graphql-endpoint.md) in de [configuratievenster](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) voordat u GraphiQL IDE gebruikt.
 
 
-De **GraphiQL** het hulpmiddel staat u toe om uw vragen te testen en te zuiveren GraphQL door u toe te laten:
+De **GraphiQL** kunt u uw GraphQL-query&#39;s testen en er fouten in opsporen door het volgende in te stellen:
 * Selecteer de **Endpoint** aangewezen aan de configuratie van Plaatsen die u voor uw vragen wilt gebruiken
 * direct nieuwe query&#39;s invoeren
 * creëren en openen, **[Blijvende query&#39;s](/help/headless/graphql-api/persisted-queries.md)**
@@ -94,13 +94,19 @@ Met GraphiQL IDE kunt u ook uw [Query-variabelen](/help/headless/graphql-api/con
 
 Bijvoorbeeld:
 
-![GrafiekQL-variabelen](assets/cfm-graphqlapi-03.png "GrafiekQL-variabelen")
+![GraphQL-variabelen](assets/cfm-graphqlapi-03.png "GraphQL-variabelen")
 
 ## Het beheren van geheime voorgeheugen voor uw persistente vragen {#managing-cache}
 
 [Blijvende query&#39;s](/help/headless/graphql-api/persisted-queries.md) worden aanbevolen, omdat deze in de verzender- en CDN-lagen in het cachegeheugen kunnen worden opgeslagen, waardoor de prestaties van de toepassing die de aanvraag indient, uiteindelijk worden verbeterd. Standaard maakt AEM de CDN-cache (Content Delivery Network) ongeldig op basis van een standaardtijd tot live (TTL).
 
-Gebruikend GraphQL kunt u de Kopballen van het Geheime voorgeheugen van HTTP vormen om deze parameters voor uw individuele voortgezette vraag te controleren.
+>[!NOTE]
+>
+>Aangepaste herschrijfregels voor Dispatcher kunnen de standaardinstellingen van AEM publicatie overschrijven.
+>
+>Als u op TTL-Gebaseerde cache-control kopballen van de verzender verzendt, die op een patroon van de plaatsovereenkomst wordt gebaseerd, dan, indien nodig, zou u kunnen willen uitsluiten `/graphql/execute.json/*` van de wedstrijden.
+
+Gebruikend GraphQL kunt u de Kopballen van het Geheime voorgeheugen van HTTP vormen om deze parameters voor uw individuele persisted vraag te controleren.
 
 1. De **Kopteksten** Deze optie is toegankelijk via de drie verticale stippen rechts van de naam van de voortgezette query (het linkerdeelvenster):
 
