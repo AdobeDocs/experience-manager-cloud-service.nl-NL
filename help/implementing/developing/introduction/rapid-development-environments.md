@@ -2,9 +2,9 @@
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 hidefromtoc: true
-source-git-commit: 966644ae0027264f25a3aaf3b2f777fb3e97c556
+source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2476'
 ht-degree: 0%
 
 ---
@@ -202,6 +202,8 @@ De reactie voor een succesvolle plaatsing lijkt op het volgende:
 U kunt desgewenst naar een externe opslagplaats verwijzen:
 
 `aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+
+Artefacten worden standaard geïmplementeerd op zowel auteur- als publicatieniveaus, maar de markering &#39;-s&#39; kan worden gebruikt om een specifieke laag als doel in te stellen.
 
 <u>Het opstellen van een Configuratie OSGI</u>
 
@@ -415,9 +417,10 @@ Hoewel RDE in vele opzichten gelijkaardig aan een Milieu van de Ontwikkeling van
 
 Om deze redenen, adviseert men dat na het bevestigen van code op een milieu RDE, u de code aan een Milieu van de Ontwikkeling van de Wolk zou moeten opstellen gebruikend de niet productiepijplijn. Tot slot test de code alvorens met de productiepijpleiding op te stellen.
 
-Neem ook de volgende oplossing-specifieke overwegingen op:
+Let ook op het volgende:
 
 * RDEs steunt momenteel niet het bekijken en het zuiveren voorste code die gebruikend de Voorste-EindPijl van de Manager van de Wolk wordt opgesteld.
+* RDEs steunt momenteel niet het prereleasekanaal.
 
 
 ## Hoeveel RDEs heb ik nodig? {#how-many-rds-do-i-need}
