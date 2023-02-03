@@ -1,15 +1,17 @@
 ---
 title: Opmerkingen bij de nieuwste onderhoudsrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de nieuwste onderhoudsrelease [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 23c4b815c0485286806ca76796460ef4fd81951c
+source-git-commit: bb310f87a3bbc114e971dc2dca5eab6a028d140a
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '153'
 ht-degree: 1%
 
 ---
 
 
 # Opmerkingen bij de onderhoudsrelease {#maintenance-release-notes}
+
+In de volgende sectie worden de technische opmerkingen bij de release beschreven voor de meest recente as a Cloud Service onderhoudsversie van Experience Manager.
 
 ## Release 10912 {#release-10912}
 
