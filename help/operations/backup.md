@@ -2,9 +2,9 @@
 title: Back-up en herstel in AEM as a Cloud Service
 description: Back-up en herstel in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 12e747ff73e9416775a3f26040ac7e15c21505ec
+source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ AEM as a Cloud Service ondersteuning:
 
 In alle gevallen, zal de versie van de douanecode van de laatste succesvolle plaatsing vóór het terugzetpunt worden genomen.
 
-De hersteltijddoelstelling (RTO) kan variëren, maar als algemene richtlijn duurt de herstelvolgorde gemiddeld tussen 60 en 90 minuten, afhankelijk van verschillende factoren, zoals de grootte van de opslagplaats.
+De hersteltijddoelstelling (RTO) kan variëren, maar als algemene richtlijn duurt de herstelvolgorde gemiddeld tussen 60 en 90 minuten, afhankelijk van verschillende factoren, zoals de grootte van de opslagplaats. Voorvertoningen van omgevingen en meerdere regio&#39;s kunnen de hersteltijddoelstelling verlengen.
 
 Na een terugzetbewerking wordt de AEM versie bijgewerkt naar de meest recente.
 
