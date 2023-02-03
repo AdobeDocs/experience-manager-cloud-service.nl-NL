@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 592810c45c89d569644263c01b843d51761ebe8d
+source-git-commit: edb6e23341289308837509eef444a8642b903bb7
 workflow-type: tm+mt
-source-wordcount: '3849'
+source-wordcount: '3857'
 ht-degree: 21%
 
 ---
@@ -66,6 +66,8 @@ ht-degree: 21%
          + [Opmerkingen bij de release 2020.4.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [Opmerkingen bij de release 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [Opmerkingen bij de release 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
+   + Opmerkingen bij de release AEMaaCS-onderhoud {#maintenance}
+      + [Opmerkingen bij de nieuwste onderhoudsrelease](/help/release-notes/maintenance/latest.md)
    + Opmerkingen bij de release van Cloud Manager {#cloud-manager}
       + [Opmerkingen bij de huidige release](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
@@ -663,7 +665,7 @@ ht-degree: 21%
       + [Inhoudsfragmentmodel](/help/headless/setup/create-content-model.md)
       + [Map Middelen](/help/headless/setup/create-assets-folder.md)
       + [Inhoudsfragment](/help/headless/setup/create-content-fragment.md)
-      + [GraphQL-eindpunt](/help/headless/setup/create-api-request.md)
+      + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
    + Contentfragmenten {#content-fragments}
       + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
       + [Console voor inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
@@ -679,10 +681,10 @@ ht-degree: 21%
       + [JSON-voorvertoning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
    + GraphQL API {#graphql-api}
       + [GraphQL API voor inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
-      + [GrafiekQL-eindpunten beheren](/help/headless/graphql-api/graphql-endpoint.md)
+      + [GraphQL-eindpunten beheren](/help/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
-      + [Sample GraphQL-query&#39;s](/help/headless/graphql-api/sample-queries.md)
-      + [Blijvende query&#39;s voor GraphQL](/help/headless/graphql-api/persisted-queries.md)
+      + [Voorbeeld van GraphQL-query&#39;s](/help/headless/graphql-api/sample-queries.md)
+      + [Blijvende GraphQL-query&#39;s](/help/headless/graphql-api/persisted-queries.md)
    + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + Beveiliging {#security}
       + [Machtigingen](/help/headless/security/permissions.md)
@@ -763,7 +765,7 @@ ht-degree: 21%
          + [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
       + [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA-rapportage](/help/implementing/cloud-manager/sla-reporting.md)
-      + [Nieuwe Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Meldingen](/help/implementing/cloud-manager/notifications.md)
       + SSL-certificaten {#manage-ssl-certificates}
          + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
