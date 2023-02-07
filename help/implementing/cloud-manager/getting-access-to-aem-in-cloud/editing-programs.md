@@ -2,9 +2,9 @@
 title: Programma's bewerken
 description: Leer hoe u uw productie- en sandboxprogramma's kunt bewerken om de opties aan te passen nadat u deze hebt gemaakt.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 2638843c5646d3190327ae1dbd5348a9c207d674
+source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,11 @@ Gebruikers met de vereiste machtigingen kunnen bewerken [productieprogramma&#39;
 * Voeg een tweede, ongebruikte oplossingsrecht aan of een bestaand programma of als nieuw Programma toe.
 * Sandboxprogramma&#39;s verwijderen.
 
->[!NOTE]
->
->U moet lid zijn van de **Zakelijke eigenaar** rol voor het bewerken van programma&#39;s of het verwijderen van sandboxprogramma&#39;s.
+## Machtigingen {#permissions}
+
+U moet lid zijn van de **Zakelijke eigenaar** rol voor het bewerken van programma&#39;s of het verwijderen van sandboxprogramma&#39;s.
+
+## Een programma bewerken {#editing}
 
 Voer de volgende stappen uit om een programma te bewerken.
 
