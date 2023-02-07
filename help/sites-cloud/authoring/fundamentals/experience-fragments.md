@@ -2,9 +2,9 @@
 title: Ervaringsfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '2064'
 ht-degree: 5%
 
 ---
@@ -38,6 +38,16 @@ Zonder Fragments van de Ervaring, zou de auteur dat fragment moeten kopiëren en
 De Fragmenten van de ervaring elimineren de behoefte aan exemplaar/deeg.
 * Om het hoofdloze gebruik-geval CMS te steunen.
 Auteurs willen AEM alleen gebruiken voor ontwerpen, maar niet voor levering aan de klant. Een systeem/aanraakpunt van derden zou deze ervaring gebruiken en vervolgens leveren aan de eindgebruiker.
+
+>[!NOTE]
+>
+>**[Inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** en **Ervaar fragmenten** zijn verschillende functies in AEM:
+>* **Inhoudsfragmenten** redactionele inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, cijfers en datums.
+>* **Ervaar fragmenten** volledig zijn ingedeeld; een fragment van een webpagina.
+>
+>De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
+>
+>Zie ook voor meer informatie [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!NOTE]
 >

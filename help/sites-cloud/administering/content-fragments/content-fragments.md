@@ -4,9 +4,9 @@ description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) 
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2066'
 ht-degree: 3%
 
 ---
@@ -58,7 +58,7 @@ Om dit te helpen, kunt u een voorvertoning weergeven van de [Boomstructuur](/hel
 >* [Contentfragmenten aanpassen en uitbreiden](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [Contentfragmenten die componenten voor rendering configureren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
->* [AEM GraphQL API voor gebruik met Content Fragments](/help/headless/graphql-api/content-fragments.md)
+>* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
 
 
 Het aantal communicatiekanalen neemt jaarlijks toe. Doorgaans verwijzen kanalen naar het leveringsmechanisme, als:
@@ -82,7 +82,7 @@ Deze inhoudsfragmenten kunnen vervolgens worden samengevoegd om via verschillend
 >[!NOTE]
 >
 >**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** zijn verschillende functies in AEM:
->* **Inhoudsfragmenten** zijn redactionele inhoud, die kan worden gebruikt om toegang te krijgen tot gestructureerde gegevens, zoals teksten, cijfers en datums. Het zijn pure inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out.
+>* **Inhoudsfragmenten** redactionele inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, cijfers en datums.
 >* **Ervaar fragmenten** volledig zijn ingedeeld; een fragment van een webpagina.
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
@@ -132,7 +132,7 @@ Inhoudsfragmenten zijn:
 
    * De **Inhoudsfragment** is beschikbaar voor auteurs van pagina&#39;s. Hiermee kunnen ze naar het vereiste inhoudsfragment verwijzen en dit leveren in HTML- of JSON-indeling.
 
-* Toegankelijk met de [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md).
+* Toegankelijk met de [GraphQL API AEM](/help/headless/graphql-api/content-fragments.md).
 
 Inhoudsfragmenten zijn een inhoudsstructuur die:
 
