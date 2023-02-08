@@ -2,9 +2,9 @@
 title: Afhandeling van grote opslagplaatsen voor inhoud
 description: In deze sectie wordt de verwerking van grote opslagplaatsen voor inhoud beschreven
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
+source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,9 @@ Volg de onderstaande sectie om de belangrijke overwegingen te begrijpen voordat 
 
 * De Inzameling van het huisvuil van de Opslag van gegevens is in de voorafgaande 7 dagen in werking gesteld op de bron. Raadpleeg voor meer informatie [Opruiming voor dataopslag](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=en#data-store-garbage-collection).
 
+### Aanvullende overwegingen bij het gebruik van AzCopy
+
+Vooraf kopiëren met AzCopy wordt momenteel niet ondersteund in Windows tijdens CTT-extractie.
 
 ### Extra overwegingen als de bron AEM instantie wordt gevormd om een opslag van de Gegevens van de Opslag van de Opslag van Amazon S3 of van Azure te gebruiken {#additional-considerations-amazons3-azure}
 
