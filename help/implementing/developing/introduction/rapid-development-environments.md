@@ -2,9 +2,9 @@
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 hidefromtoc: true
-source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
+source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2634'
 ht-degree: 0%
 
 ---
@@ -393,7 +393,7 @@ U kunt RDE ook opnieuw instellen gebruikend de ellipsknoop direct van **Omgeving
 
 Ga voor meer informatie over hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren naar [de documentatie van Cloud Manager.](/help/implementing/cloud-manager/manage-environments.md)
 
-## Runmodi {#runmodes}
+## Modi uitvoeren {#runmodes}
 
 U kunt RDE-specifieke OSGI-configuratie toepassen door achtervoegsels op de mapnaam te gebruiken, zoals in de volgende voorbeelden:
 
@@ -406,6 +406,20 @@ Zie de [documentatie over de bedrijfsmodus](/help/implementing/deploying/overvie
 >[!NOTE]
 >
 >De configuratie van RDE OSGI is uniek in die zin dat het de waarden van om het even welke eigenschappen overerft OSGI die door de bundel worden verklaard `dev` uitvoeringsmodus.
+
+RDE&#39;s verschillen van andere omgevingen omdat inhoud kan worden geïnstalleerd in de map install.load (of install.auteur.rde of install.publish.rde) onder /apps. Dit staat u toe om inhoud te begaan om het te git en het te leveren aan RDE gebruikend het hulpmiddel van de bevellijn.
+
+## vullen met inhoud {#populating-content}
+
+Wanneer een RDE wordt teruggesteld, wordt al inhoud verwijderd en zo zo, zo moet de expliciete actie worden genomen om inhoud toe te voegen. Als beste praktijken, overweeg het assembleren van een reeks inhoud die als testinhoud voor het bevestigen van of het zuiveren eigenschappen in RDE moet worden gebruikt. Er zijn verscheidene mogelijke strategieën om RDE met die inhoud te bevolken:
+
+1. Synchroniseer het inhoudspakket uitdrukkelijk aan RDE gebruikend het hulpmiddel van de bevellijn
+
+1. Plaats en wijs de steekproefinhoud in git binnen een install.rde omslag onder /apps toe en synchroniseer dan het overkoepelende inhoudspakket aan RDE gebruikend het hulpmiddel van de bevellijn.
+
+1. Pakketbeheer gebruiken
+
+U kunt maximaal 1 GB gebruiken voor het synchroniseren van inhoudspakketten.
 
 ## Logboekregistratie {#logging}
 
