@@ -5,17 +5,22 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
 
-# Een adaptief formulier maken {#creating-an-adaptive-form}
+# Een adaptief formulier maken (basiscomponenten) {#creating-an-adaptive-form}
 
 
 Met Adaptieve Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een gebruiksvriendelijke wizard die Adaptive Forms snel ontwikkelt. De wizard beschikt over een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken.
+
+>[!NOTE]
+>
+> In dit artikel wordt een oude aanpak beschreven voor het maken van een adaptief formulier. Ga voor het maken van adaptieve Forms op basis van de nieuwste aanpak naar [Een adaptief formulier maken (kerncomponenten)](creating-adaptive-form.md).
+
 
 <!-- 
 
@@ -39,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-   Adaptive Forms created with this option don’t use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
+   Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
 ## Voorwaarden
 
@@ -54,6 +59,8 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
 * **Machtigingen**: Gebruikers toevoegen aan [!DNL forms-users] om hun machtigingen te verlenen voor het maken van een adaptief formulier. Zie voor een gedetailleerde lijst met formulierspecifieke gebruikersgroepen [Groepen en machtigingen](forms-groups-privileges-tasks.md).
 
+## Een adaptief formulier maken (basiscomponenten) {#create-an-adaptive-form-foundation-components}
+
 1. Toegang [!DNL Experience Manager Forms] Instantie van auteur. Dit kan een Cloud-instantie of een lokale ontwikkelingsinstantie zijn.
 
 1. Ga uw geloofsbrieven op de Experience Manager login pagina in.
@@ -67,15 +74,19 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
       >[!NOTE]
       >
-      > U kunt ook [!UICONTROL Document of Record] sjabloon met een Apadtive Form Editor. Zie voor meer informatie [Document met ondersteuning voor records in de Adaptive Form Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+      > U kunt ook [!UICONTROL Document of Record] sjabloon met een Adaptieve Forms-editor. Zie voor meer informatie [Document met ondersteuning voor records in de Adaptive Form Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * Wanneer u een statische sjabloon selecteert, zijn de opties voor gegevens, stijl, verzending, levering en voorvertoning niet beschikbaar. Als u een nieuw adaptief formulier maakt, is het raadzaam een bewerkbare sjabloon te gebruiken.
 
-1. Selecteer een thema op het tabblad Stijl:
+1. In de **[!UICONTROL Style]** selecteert u een thema:
+
    * Als de geselecteerde sjabloon een thema opgeeft, wordt het thema automatisch geselecteerd in de wizard. U kunt ook een ander thema kiezen op het tabblad Stijl.
    * Als de geselecteerde sjabloon geen thema opgeeft, kunt u het tabblad Stijl gebruiken om een thema te kiezen. De **[!UICONTROL Create]** De knop wordt alleen ingeschakeld nadat een thema is geselecteerd.
-1. (Optioneel) Selecteer op het tabblad Gegevens een gegevensmodel:
+
+1. (Optioneel) In het dialoogvenster **[!UICONTROL Data]** selecteert u een gegevensmodel:
+
    * **Formuliergegevensmodel**: A [Formuliergegevensmodel](data-integration.md) Hiermee kunt u entiteiten en services integreren van verschillende gegevensbronnen tot een adaptief formulier. Kies Formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
+
    * **JSON Schema**: [JSON-schema](adaptive-form-json-schema-form-model.md) vertegenwoordigt de structuur waarin de gegevens door het achterste deelsysteem in uw organisatie worden geproduceerd of worden verbruikt. U kunt het schema koppelen aan een adaptief formulier en de elementen ervan gebruiken om dynamische inhoud toe te voegen aan het adaptieve formulier. De elementen van het schema zijn beschikbaar voor gebruik op het tabblad Gegevensmodelobjecten van de inhoudbrowser wanneer u Adaptief Forms ontwerpt. Alle velden worden ook toegevoegd aan het nieuwe adaptieve formulier.
 
    Standaard zijn alle velden van het gegevensmodel geselecteerd. Wanneer u het adaptieve formulier maakt, worden alle geselecteerde gegevensmodelvelden geconverteerd naar de overeenkomstige adaptieve formuliercomponenten. De wizard verschaft u selectievakjes om alleen de velden te selecteren die moeten worden opgenomen in het adaptieve formulier.
@@ -86,7 +97,7 @@ U hebt het volgende nodig om een adaptief formulier te maken:
    
    -->
 
-1. Selecteer op het tabblad Verzending een verzendactie:
+1. In de **[!UICONTROL Submission]** selecteert u een verzendactie:
 
    * Wanneer u een sjabloon selecteert, wordt de verzendactie die in de sjabloon is opgegeven automatisch geselecteerd. U kunt een andere verzendactie selecteren op het tabblad Verzending. De **[!UICONTROL  Submission]** worden alle beschikbare verzendhandelingen weergegeven.
 
@@ -176,3 +187,7 @@ U kunt ook de eigenschappen van het formuliermodel wijzigen in de editor voor ad
 1. Tikken ![Opslaan](/help/forms/assets/check-button.png) om de eigenschappen op te slaan.
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
+
+>[!NOTE]
+>
+> U kunt een positief formulier ook als een sjabloon opslaan. Zie voor meer informatie [Een sjabloon maken met een adaptief formulier](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).

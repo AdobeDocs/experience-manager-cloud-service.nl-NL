@@ -2,9 +2,9 @@
 title: Hoe maakt u een adaptieve formuliersjabloon?
 description: Maak adaptieve formuliersjablonen om de basisstructuur en eerste inhoud te definiëren met de Sjablooneditor.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -184,6 +184,23 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
+
+## Een adaptief formulier opslaan als sjabloon {#saving-adaptive-form-as-template}
+
+U kunt een adaptief formulier ook opslaan als een sjabloon voor toekomstig gebruik. Een adaptief formulier opslaan als een sjabloon:
+
+1. Selecteer een adaptief formulier om het als sjabloon op te slaan.
+1. Klik op **[!UICONTROL Save as Template]**. Er wordt een dialoogvenster weergegeven.
+1. Opgeven **[!UICONTROL Title]** (verplicht veld), **[!UICONTROL Location]** (verplicht veld) en **[!UICONTROL Description]** (optioneel veld) voor de sjabloon.
+1. Klik op **[!UICONTROL Create]**.
+
+   ![Opslaan als formulier als sjabloon](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>Als u hetzelfde containerbeleid wilt gebruiken als bij het adaptieve bronformulier, wordt u aangeraden de sjabloon op te slaan in dezelfde map als bij het adaptieve bronformulier. Als de sjabloon in een andere map wordt opgeslagen, gebruikt de gemaakte sjabloon een standaardcontainerbeleid.
 
 ## Recommendations {#recommendations}
 

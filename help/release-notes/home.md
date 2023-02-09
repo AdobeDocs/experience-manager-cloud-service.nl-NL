@@ -1,11 +1,11 @@
 ---
-title: Release-aantekeningen voor Adobe Experience Manager (AEM) as a Cloud Service.
-description: Release-aantekeningen voor Adobe Experience Manager (AEM) as a Cloud Service.
+title: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
+description: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 78c0ea75affc2d2f691ef983385b188b35c10120
+source-git-commit: fda4fdd3a28caa0a35014fbf4b0bbac8800e343c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '616'
+ht-degree: 34%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2022 10,0 |
+| Versie | 2023.1.0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 
@@ -21,8 +21,8 @@ ht-degree: 0%
 
 Met het model voor continue afgifte in [!DNL Adobe Experience Manager] as a Cloud Service wordt de toepassing automatisch bijgewerkt. Er zijn twee soorten updates, eigenschapversies en onderhoudsversies:
 
-* De versies van de eigenschap worden gedaan met een voorspelbare maandelijkse frequentie en zijn gericht op nieuwe mogelijkheden en productinnovaties.
-* De versies van het onderhoud worden gedaan vaak en zijn geconcentreerd op veiligheidsupdates, insectenmoeilijke situaties, en prestatiesverhogingen. Dit zorgt ervoor dat [!DNL Adobe Experience Manager] as a Cloud Service is altijd up-to-date met om het even welke kritieke moeilijke situaties.
+* [Functiereleases](/help/release-notes/release-notes-cloud/release-notes-current.md) worden uitgevoerd met een voorspelbare maandelijkse frequentie en zijn gericht op nieuwe capaciteiten en productinnovaties.
+* [Onderhoudsreleases](/help/release-notes/maintenance/latest.md) worden vaak uitgevoerd en zijn gericht op beveiligingsupdates, foutoplossingen en prestatieverbeteringen. Dit zorgt ervoor dat [!DNL Adobe Experience Manager] as a Cloud Service is altijd up-to-date met om het even welke kritieke moeilijke situaties.
 
 Naast de snelheid van de innovatie, [!DNL Adobe Experience Manager] as a Cloud Service biedt ook de flexibiliteit om de volgende functies een volledige maand van tevoren voor te vertonen voordat de functies in productie worden genomen. Hierdoor kunt u de impact van een aanstaande release op hun organisatie beoordelen door de functies in uw eigen aangepaste omgeving te testen en de interne gebruikers ruim van tevoren op te leiden/voor te bereiden.
 

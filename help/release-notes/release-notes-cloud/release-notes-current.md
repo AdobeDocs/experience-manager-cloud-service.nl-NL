@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b54f3fd476fb9537184e423c6506e0485092b451
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 
 # Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de opmerkingen bij de release met functies voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021, enzovoort.
+>Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2021, 2022, enzovoort.
+>
+>Kijk eens naar de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie over de volgende activering van functies voor [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -25,65 +27,56 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige maandelijkse release (2022.10.0) is 10 november 2022. De volgende maandelijkse release (2023.1.0) is gepland voor 9 februari 2023.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2023.1.0) is 9 februari 2023. De volgende release met functies (2023.2.0) is gepland voor 2 maart 2023.
 
 ## Video vrijgeven {#release-video}
 
-Bekijk de video Overzicht van de release van oktober 2022 voor een overzicht van de functies die in de release van 2022.10.0 zijn toegevoegd:
+Bekijk de video Overzicht van de release van januari 2023 voor een overzicht van de functies die in de release van 2023.1.0 zijn toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/3409801/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
 
 ## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
 
+### Nieuwe functies in [!DNL Sites] prerelease {#prerelease-features-sites}
 
-### Nieuwe functies in [!DNL Sites] {#sites-features}
-
-* De [Tab voor aanpassen aan ervaringsfragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) staat segmentatiespecificatiemogelijkheden aan de Redacteur van het Fragment van de Ervaring evenals de flexibiliteit toe om genestelde Fragmenten van de Ervaring tot stand te brengen waardoor de veranderingen van kopballen en footers voor veelvoudige segmenten kunnen worden gecreeerd. Vóór de lancering van deze eigenschap, is de verpersoonlijking die door AEM wordt aangeboden slechts beschikbaar voor plaatspagina&#39;s, maar niet voor de Fragments van de Ervaring
-
-* De [Console voor inhoudsfragment](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) gebruikers kunnen nu op efficiënte wijze vertaalde inhoudsfragmenten beheren. Er is 1-klik toegang beschikbaar om ook alle taalkopieën weer te geven. Gebruikers kunnen de tabelweergave ook filteren op de landinstelling van hun interesse.
-
-![Talen voor inhoudsfragmenten](/help/release-notes/assets/cfconsole-languages.png)
-
-* Verminder verder de laadtijd van de pagina voor bezoekers door de instellingen voor afbeeldingsgrootten in sjablonen te optimaliseren. Meer informatie over de afbeeldingscomponent vindt u op [Core WCM-component](https://github.com/adobe/aem-core-wcm-components)
+* De API voor het leveren van AEM GraphQL-inhoud biedt nu ondersteuning voor GraphQL [Paginering](/help/headless/graphql-api/content-fragments.md#paging) en [Sorteren](/help/headless/graphql-api/content-fragments.md#sorting)om het ophalen en renderen van grote content efficiënter te maken. De paginering van GraphQL staat toe om de tijd van de vraagreactie te verbeteren door resultaten in subsets in tegenstelling tot allen in één keer terug te keren. Met GraphQL-sortering kunnen inhoudssets in de gewenste volgorde worden geplaatst, waardoor het voor een clienttoepassing eenvoudiger wordt om de inhoud te verwerken.  De responstijd van de query wordt verder verbeterd met Hybride filters in de AEM GraphQL-engine. Inhoud wordt nu vanuit JCR gelezen in kleinere sets die overeenkomen met queryfilters.
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* Met Experience Manager Assets kunt u nu documenten in andere ondersteunde bestandsindelingen uploaden en[ een voorvertoning ervan weergeven met de meegeleverde viewer voor Documenten Cloud](/help/assets/manage-pdf-documents.md). Tot de ondersteunde indelingstypen behoren TXT, RTF, DOC, DOCX, PPT, PPTX, XLS en XLSX.
+* In middelenrapporten is nu de mogelijkheid opgenomen voor beheerders om [downloadrapporten voor bestanden genereren](/help/assets/asset-reports.md) van de as a Cloud Service Experience Manager Assets-implementatie. Deze gegevens stellen Admins verder in staat om inzichten af te leiden van belangrijke succesmaatstaven om de acceptatie van Activa binnen uw onderneming en door klanten te meten.
 
-   ![PDF-uitvoering voor andere indelingen](/help/release-notes/assets/multi-page-other-formats.png)
+   ![PDF-uitvoering voor andere indelingen](/help/release-notes/assets/choose_report.png)
 
+* Experience Manager Assets nu [ondersteunt SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) naast de toegangstoets voor verificatie bij de verbinding met de Azure Blob Storage-gegevensbron voor het opnemen van elementen met het Bulk Import-gereedschap.
+
+* Verbeterd beheer van CMYK-afbeeldingen in Asset compute, zodat u slimme uitsnijdtags en slimme tags voor CMYK-afbeeldingen kunt genereren.
 
 ### Nieuwe functies in [!DNL Assets] prerelease {#prerelease-features-assets}
 
-* Experience Manager Assets maakt nu gebruik van een verbeterd kunstmatig intelligentiekader voor slimme tags voor afbeeldingen. Deze inhoudsinfo geeft een betere relevantie en nauwkeurigheid van slimme tags die beschikbaar zijn voor alle afbeeldingselementen bij opname. Bovendien wordt de richtingsinformatie ingevuld in `cq:tags`, waarmee u betere zoekresultaten kunt bereiken met het filter Richting.
-
-   Als u geïnteresseerd bent in deelname aan de bètaversie, [Dit formulier invullen](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) uiterlijk op 14 november.
-
-* Experience Manager Assets nu [ondersteunt SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) naast de toegangstoets voor verificatie bij de verbinding met de Azure Blob Storage-gegevensbron voor het opnemen van elementen met het Bulk Import-gereedschap.
+* Experience Manager Assets biedt nu ondersteuning voor [grootschalige ingebruikname van middelen van het Google Cloud-Platform](/help/assets/add-assets.md#asset-bulk-ingestor) met het gereedschap Bulk importeren.
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] {#new-features-available-in-channel}
 
+* **[Workflowstappen om niet-interactieve PDF-documenten en afdrukbare uitvoer te genereren](/help/forms/aem-forms-workflow-step-reference.md)**: Automatiseer het maken van niet-interactieve PDF-documenten en afdrukbare uitvoer voor uw bedrijfsprocessen met AEM workflowstappen, stroomlijnt het genereren van documenten en bespaart tijd.
+* **[Gebruik voetnoten om citaten of extra informatie te verstrekken in Adaptief Forms](/help/forms/footnotes-richtextsupport.md)**: Gebruik voetnoten in een adaptief formulier om de informatie weer te geven over het invullen of gebruiken van een formulier. U kunt het ook gebruiken om tussen haakjes informatie, auteursrechttoestemmingen, en andere nuttige informatie te verstrekken.
 
-* [Adaptieve Forms-wizard](/help/forms/creating-adaptive-form.md): AEM Forms biedt een gebruiksvriendelijke wizard die Adaptive Forms snel ontwikkelt. De wizard beschikt over een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken. Deze release biedt de wizard de volgende verbeteringen:
+### Nieuwe functies in [!DNL Forms] prerelease {#prerelease-features-forms}
 
-   * Selecteer of deselecteer velden: Met de wizard kunt u een adaptief formulier maken op basis van JSON- en formuliergegevensmodelschema&#39;s. U kunt nu een subset van velden in een schema selecteren en opnemen in een adaptief formulier. De geselecteerde velden worden geconverteerd naar overeenkomstige componenten voor het vastleggen van adaptieve formuliergegevens om snel de gewenste adaptieve formulieren te maken.
+* **[Gebruik kerncomponenten voor gegevensvastlegging om Adaptive Forms te bouwen](/help/forms/creating-adaptive-form-core-components.md)**: Gebruik de Adaptive Forms Editor om formulieren te maken op basis van gestandaardiseerde componenten voor het vastleggen van gegevens (Core Components). Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring.
+* **[Ondersteuning voor de front-end pijpleiding voor de styling van de core component, gebaseerd op Adaptive Forms](/help/forms/using-themes-in-core-components.md)**: Gebruik eenvoudig aanpasbare BEM-gebaseerde thema&#39;s voor op Core Components-Gebaseerde Aangepaste Forms door hen met de pijpleiding van de Plaatsing van Frontend op te stellen om de blik en het gevoel van uw vormen te verbeteren.
+* **[Document met record genereren voor op kerncomponenten gebaseerde adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)**: Maak een record voor een op kerncomponenten gebaseerd adaptief formulier bij verzending voor langetermijnarchivering, afdrukken of in documentindeling.
 
-   * Statische sjablonen gebruiken: Klanten met bestaande investeringen in verouderde statische sjablonen kunnen hun reis naar cloudacceptatie voortzetten door statische sjablonen in wizard te gebruiken om adaptieve formulieren te maken. Dit geeft klanten extra tijd om oude statische sjablonen te migreren naar moderne bewerkbare sjablonen.
+![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* [Verborgen velden verwijderen uit een Document of Record (DoR) tijdens verwerking op de server](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): U kunt het document met record PDF voor eindgebruikers genereren met alleen die velden die voor hen zichtbaar waren tijdens het vastleggen van gegevens. Bij het verzenden van het formulier controleert de server welke velden op basis van verzonden gegevens verborgen waren voor de eindgebruiker en sluit deze velden uit van het document met het oog op consistentie.
-
-### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
-
-* **Adaptieve Forms-sjablooneditor**: Met Sjablooneditor kunt u de basisstructuur en het uiterlijk van Adaptieve Forms van een organisatie vooraf definiëren. Deze versie brengt volgende verbeteringen aan de malplaatjeredacteur:
-   * **[Formuliergegevensmodel in sjablooneditor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: U kunt een formuliergegevensmodelschema koppelen aan een adaptieve formuliersjabloon in de sjablooneditor. Het vermindert de tijd die nodig is om een adaptief formulier te maken. De optie wordt ook toegevoegd aan de Adaptive Forms-editor, zodat gebruikers het formuliergegevensmodel voor bestaande formulieren kunnen selecteren of wijzigen.
-   * **[Document met record in sjablooneditor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: U kunt het genereren van documenten nu standaardiseren voor alle formulieren die met een sjabloon zijn gemaakt. Dit helpt naleving en normalisatie voor org vereisten verbeteren.
-
-* **[De wizard Adaptief formulier starten vanaf een AEM Sites-pagina](/help/forms/embed-adaptive-form-aem-sites.md)**: AEM Sites-pagina biedt uitgebreide ondersteuning voor Adaptive Forms. U kunt nu een nieuw adaptief formulier maken of een bestaand adaptief formulier insluiten terwijl u op de AEM Sites-pagina blijft staan.
-* **[De vertoningsgroepering van de verandering voor controledozen en radioknoop in DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: U kunt nu de gewenste uitlijning (Horizontaal, Verticaal, Hetzelfde als Adaptief Forms) instellen voor het selectievakje en het keuzerondje in het Document of Record. Met deze optie bepaalt u de positie van de opties voor het selectievakje en het keuzerondje in het document of record.
+* **Een adaptief formulier delen voor revisie**: Met het mechanisme voor adaptieve Forms-revisie kan een of meer revisoren het formulier reviseren.
+* **[Adaptieve Forms verzenden naar Microsoft SharePoint en Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Stroomlijn de gegevensverzending met de mogelijkheid om adaptieve formuliergegevens rechtstreeks naar Microsoft SharePoint en Microsoft OneDrive te verzenden. U kunt zowel schema-gebaseerde als schema-loze gegevens voorleggen. Deze verzendacties vormen een aanvulling op de reeds beschikbare verzendacties.
+* **[Efficiënt formulieren maken met de functie Een adaptief formulier opslaan als sjabloon](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Stroomlijn het proces voor het maken van formulieren door een adaptief formulier op te slaan als een sjabloon en de sjablonen voor het volgende adaptieve formulier opnieuw te gebruiken.
+* **[Forms-gegevensmodel verbinden met databases die JDBC ondersteunen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**: Verbind AEM Forms as a Cloud Service met een gegevensbestand dat JDBC steunt om gegevens aan dergelijke gegevensbestanden te lezen en te schrijven.
+* **Gegevensmodel formulier verbinden met REST-eindpunten die ondersteuning bieden voor de Open API-specificatie versie 3.0**: Connect AEM Forms as a Cloud Service met REST-eindpunten die ondersteuning bieden voor Open API Specification versie 3.0, voor het verzenden en ontvangen van gegevens.
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
@@ -98,11 +91,25 @@ Bekijk de video Overzicht van de release van oktober 2022 voor een overzicht van
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* AEM as a Cloud Service (de Dienst van de Auteur) is nu geïntegreerd met Verenigde Shell om de gebruikerservaring te verbeteren en het met alle andere toepassingen van Experience Cloud te verenigen. Zie AEM als een [Cloud Service op Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) voor meer informatie .
+* [Snelle ontwikkelomgevingen](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE&#39;s stellen ontwikkelaars in staat om problemen snel op te lossen en nieuwe functies op AEM as a Cloud Service te implementeren.
 
-* Zoals eerder vermeld in versienota&#39;s, wordt het gebruiken van het scherm van de replicatieagent of replicatie API voor het verspreiden van inhoudspakketten groter dan 10 MB (knopen met eigenschappen, exclusief binaire getallen) afgekeurd en zal in de komende dagen worden afgedwongen. Zie [Publicatie beheren](/help/operations/replication.md#manage-publication) of de [Workflow Inhoudsstructuur publiceren](/help/operations/replication.md#publish-content-tree-workflow) voor de voorgestelde benaderingen voor het repliceren van deze grote inhoudspakketten.
+   Snelle ontwikkelomgevingen zijn een nieuw type cloudomgeving dat is ontworpen als een snelle, consistente en uitbreidbare manier om die code te valideren en die lokaal werkt, en werken ook zoals wordt verwacht in de cloud. Gebruik de Hulpmiddelen van de Lijn van het Bevel, snel &quot;synchroniseer&quot;inhoudspakketten, bundels, inhoudsdossiers, configuratie OSGI, of berichtconfiguratie aan RDE. Zie dit in actie in de video hieronder:
 
-* De configuratie van de afzender verwijst nu naar een dossier dat van gemeenschappelijke de vraagparameters van de marketing campagne een lijst maakt. Klanten kunnen ervoor kiezen om de commentaarmarkering van de parameters die voor hen relevant zijn, ongedaan te maken, wat resulteert in betere caching. Zie [Parameters van de marketingcampagne](/help/implementing/dispatcher/caching.md#marketing-parameters) voor meer informatie .
+   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+
+   Nadat code in de RDE met succes is gevalideerd, wordt het aangeraden om te worden geïmplementeerd in een Cloud Dev Environment om de kwaliteitspoorten van Cloud Manager uit te oefenen voordat u de code via productiepijplijn naar stadium- en productieomgevingen implementeert.
+
+   Elk programma omvat één RDE en naar keuze, kunnen meer worden vergunning gegeven.
+
+   >[!NOTE]
+   >
+   >De RDE&#39;s zullen in de komende weken geleidelijk worden ingevoerd; u kunt een e-mail naar aemcs-rde-support@adobe.com verzenden om aan de voorzijde van de lijn over te slaan.
+
+* [Uitgebreide ondersteuning voor API-toegangstokens aan de serverzijde](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) - U kunt nu meerdere referenties genereren. Dit is handig voor scenario&#39;s waarin API&#39;s verschillende kenmerken hebben. Het is nu ook mogelijk om geloofsbrieven op een zelfbediening manier in te trekken.
+
+## Opmerkingen bij de onderhoudsrelease {#maintenance}
+
+U vindt de meest recente opmerkingen in de onderhoudsrelease [hier](/help/release-notes/maintenance/latest.md).
 
 ## Cloud Manager {#cloud-manager}
 

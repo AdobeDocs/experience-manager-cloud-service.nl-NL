@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: ede33e43bdfd4b6aa4670fe74c2133a7a3b54b75
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 5%
+source-wordcount: '841'
+ht-degree: 4%
 
 ---
 
@@ -29,6 +29,7 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via <!-- through a
 [!DNL Experience Manager Assets] Hiermee genereert u de volgende standaardrapporten:
 
 * Uploaden
+* Downloaden
 * Verlopen
 * Wijziging
 * Publicatie
@@ -60,7 +61,7 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via <!-- through a
 
    ![Rapporttype selecteren](assets/choose_report.png)
 
-1. Configureer rapportdetails zoals titel, beschrijving, miniatuur en mappad in de CRX-opslagplaats waar het rapport wordt opgeslagen. Standaard is het mappad `/content/dam`. U kunt een ander pad opgeven.
+1. Configureer rapportdetails zoals titel, beschrijving, miniatuur en mappad. Standaard is het mappad `/content/dam`. U kunt een andere weg specificeren om het rapport over een specifieke omslag uit te voeren.
 
    ![Pagina om rapportdetails toe te voegen](assets/report_configuration.png)
 
@@ -104,6 +105,10 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via <!-- through a
    ![Een gegenereerd rapport](assets/report_page.png)
 
    Klikken **[!UICONTROL Download]** van de toolbar om het rapport in CSV formaat te downloaden.
+
+   >[!NOTE]
+   >
+   >U kunt rapporten genereren op basis van de gebeurtenissen die in de afgelopen 360 dagen zijn gegenereerd. Experience Manager bewaart de gegevens van de gebruikers-id 30 dagen.
 
 ## Aangepaste kolommen toevoegen aan rapporten {#add-custom-columns}
 

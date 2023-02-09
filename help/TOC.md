@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: edb6e23341289308837509eef444a8642b903bb7
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3857'
+source-wordcount: '3918'
 ht-degree: 21%
 
 ---
@@ -32,9 +32,10 @@ ht-degree: 21%
    + [Documentatiereizen](/help/journey-documentation/documentation-journeys.md)
 + Releaseopmerkingen {#release-notes}
    + [Geen informatie](/help/release-notes/home.md)
-   + Algemene opmerkingen bij de release van AEMaaCS {#release-notes}
+   + Opmerkingen bij de release AEMaaCS-functies {#release-notes}
       + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [Opmerkingen bij de release 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [Opmerkingen bij de release 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
          + [Opmerkingen bij de release 2022.7.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
          + [Opmerkingen bij de release 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
@@ -496,90 +497,100 @@ ht-degree: 21%
       + [Configureren [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Bijwerken [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
-   + [Inleiding](/help/forms/home.md)
-   + [Belangrijkste kenmerken](/help/forms/key-features.md)
-   + [Opvallende wijzigingen](/help/forms/notable-changes.md)
-   + [Architectuur](/help/forms/aem-forms-cloud-service-architecture.md)
-   + De dienst instellen en configureren {#setup-environment}
+   + Overzicht {#forms-overview}
+      + [Inleiding](/help/forms/home.md)
+      + [Belangrijkste kenmerken](/help/forms/key-features.md)
+      + [Opvallende wijzigingen](/help/forms/notable-changes.md)
+      + [Architectuur](/help/forms/aem-forms-cloud-service-architecture.md)
+      + [Veelgestelde vragen](/help/forms/faq.md)
+      + [Bekende problemen](/help/forms/known-issues.md)
+   + Instellen {#setup-environment}
       + [Boordomgeving naar Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Een lokale ontwikkelomgeving instellen](/help/forms/setup-local-development-environment.md)
       + [Forms Designer installeren en configureren](/help/forms/installing-configuring-designer.md)
       + [Unified Storage Connector configureren](/help/forms/configure-unified-storage-connector.md)
-   + Gebruikersgroepen, formulieren en gerelateerde elementen beheren {#manage-forms-and-related-assets}
+   + Migreren {#setup-environment}
+      + [Migreren naar [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+   + Beheer {#administering}
       + [Groepen en machtigingen](/help/forms/forms-groups-privileges-tasks.md)
       + [Aangepaste Forms, PDF forms en andere middelen importeren, exporteren en organiseren](/help/forms/import-export-forms-templates.md)
-   + PDF forms converteren naar adaptieve Forms {#afcs}
-      + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
-      + [Een bestaand PDF-formulier converteren naar een adaptief formulier](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
-      + [Geconverteerde formulieren controleren en corrigeren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
-   + Een adaptief formulier maken en publiceren {#create-an-adaptive-form}
-      + Voordat u begint {#before-you-start}
-         + [Inleiding tot het ontwerpen van een adaptieve Forms](/help/forms/introduction-forms-authoring.md)
-         + [Een sjabloon maken](/help/forms/template-editor.md)
-         + [Een thema maken](/help/forms/themes.md)
-         + [Verbind uw gegevensbronnen met Cloud Service](/help/forms/data-integration.md)
-         + [Referentie-elementen](/help/forms/reference-assets.md)
-      + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
-         + [Een adaptief formulier maken](/help/forms/creating-adaptive-form.md)
-         + [JSON-schema ontwerpen voor een adaptief formulier](/help/forms/adaptive-form-json-schema-form-model.md)
-         + [Forms Designer gebruiken](/help/forms/use-forms-designer.md)
-         + [Verbeter de prestaties van grote formulieren met het laden van de formulieren](/help/forms/lazy-loading-adaptive-forms.md)
-      + Componenten toevoegen aan een adaptief formulier {#add-components-to-an-adaptive-form}
-         + [CAPTCHA gebruiken in een adaptieve vorm](/help/forms/captcha-adaptive-forms.md)
-         + [Basiscomponenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-         + [Krabbelen toepassen](/help/forms/signing-forms-using-scribble.md)
-         + [Ondersteuning voor nieuwe taallokalisatie](/help/forms/supporting-new-language-localization.md)
-         + [Een tabel toevoegen aan een adaptief formulier](/help/forms/adaptive-forms-tables.md)
-      + Indeling configureren en stijl toepassen op een adaptief formulier{#configure-layout-of-an-adaptive-form}
-         + [De indeling van een adaptief formulier instellen](/help/forms/layout-capabilities-adaptive-forms.md)
-         + [Gebruik de modus Lay-out om het formaat van componenten te wijzigen](/help/forms/resize-using-layout-mode.md)
-         + [Ervaring met het vastleggen van gegevens in meerdere stappen maken](/help/forms/introduction-form-sequence.md)
-         + [Inline CSS-stijlen toepassen op afzonderlijke componenten van adaptieve formulieren](/help/forms/inline-style-adaptive-forms.md)
-      + Regels toevoegen en expressies gebruiken in een adaptieve vorm {#add-rules-and-use-expressions-in-an-adaptive-form}
-         + [Regels toevoegen aan een adaptief formulier](/help/forms/rule-editor.md)
-      + Gebruiken [!DNL Adobe Sign] {#use-adobe-sign}
-         + [Adobe Sign gebruiken om een adaptief formulier elektronisch te ondertekenen](/help/forms/working-with-adobe-sign.md)
-      + Handelingen en metagegevens verzenden configureren {#configure-submit-actions-and-metadata-submission}
-         + [Handeling verzenden instellen voor een adaptief formulier](/help/forms/configuring-submit-actions.md)
-         + [Omleidingspagina configureren](/help/forms/configuring-redirect-page.md)
-         + [asynchrone verzending voor een adaptief formulier configureren](/help/forms/asynchronous-submissions-adaptive-forms.md)
-         + [Een aangepaste verzendhandeling maken](/help/forms/custom-submit-action-form.md)
-      + [Aangepaste formuliervelden vooraf invullen](/help/forms/prepopulate-adaptive-form-fields.md)
-      + [Document van record genereren](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-      + Metagegevens toevoegen of verbeteren {#manage-metadata}
-         + [Metagegevens van een adaptief formulier toevoegen, verwijderen of bewerken](/help/forms/manage-form-metadata.md)
-         + [Eigenschappen van metagegevens van een adaptief formulier opnieuw gebruiken](/help/forms/reusing-adaptive-forms.md)
-      + De toegankelijkheid van een adaptief formulier verbeteren {#accessible-adaptive-forms}
-         + [Een toegankelijk adaptief formulier maken](/help/forms/creating-accessible-adaptive-forms.md)
-      + [Forms Portal configureren](/help/forms/configure-forms-portal.md)
    + Integreren {#integrate}
-      + Een formulier integreren met een of meer gegevensbronnen {#use-form-data-model}
+      + [AEM Forms as a Cloud Service met Adobe Sign integreren](/help/forms/adobe-sign-integration-adaptive-forms.md)
+      + [AEM Forms as a Cloud Service integreren met DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
+      + [AEM Forms as a Cloud Service met Adobe Analytics integreren](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+      + [Een adaptief formulier integreren met Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [Een adaptieve Forms insluiten in een AEM Sites-pagina](/help/forms/embed-adaptive-form-aem-sites.md)
+   + Adaptieve Forms {#adaptive-forms-authoring}
+      + Aangepaste Forms ontwerpen - Core-componenten {#authoring-adaptive-forms-core-components}
+         + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
+            + [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
+            + [Thema&#39;s maken voor een adaptief formulier - Core Components](/help/forms/using-themes-in-core-components.md)
+            + [Document met record genereren voor adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)
+      + Aangepaste Forms ontwerpen - Elementaire componenten {#authoring-adaptive-forms-foundation-components}
+         + Uw PDF forms converteren naar Adaptieve Forms {#afcs}
+            + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
+            + [Een bestaand PDF-formulier converteren naar een adaptief formulier](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
+            + [Geconverteerde formulieren controleren en corrigeren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
+         + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
+            + [Inleiding tot het ontwerpen van een adaptieve Forms](/help/forms/introduction-forms-authoring.md)
+            + [Een adaptief formulier maken](/help/forms/creating-adaptive-form.md)
+            + [Een sjabloon maken](/help/forms/template-editor.md)
+            + [Een thema maken](/help/forms/themes.md)
+            + [Referentie-elementen](/help/forms/reference-assets.md)
+            + [JSON-schema ontwerpen voor een adaptief formulier](/help/forms/adaptive-form-json-schema-form-model.md)
+            + [Forms Designer gebruiken](/help/forms/use-forms-designer.md)
+            + [Verbeter de prestaties van grote formulieren met het laden van de formulieren](/help/forms/lazy-loading-adaptive-forms.md)
+         + Componenten toevoegen aan een adaptief formulier {#add-components-to-an-adaptive-form}
+            + [CAPTCHA gebruiken in een adaptieve vorm](/help/forms/captcha-adaptive-forms.md)
+            + [Basiscomponenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+            + [Krabbelen toepassen](/help/forms/signing-forms-using-scribble.md)
+            + [Een tabel toevoegen aan een adaptief formulier](/help/forms/adaptive-forms-tables.md)
+            + [Ondersteuning voor voetnoten toevoegen aan een adaptief formulier](/help/forms/footnotes-richtextsupport.md)
+         + Indeling configureren en stijl toepassen op een adaptief formulier{#configure-layout-of-an-adaptive-form}
+            + [De indeling van een adaptief formulier instellen](/help/forms/layout-capabilities-adaptive-forms.md)
+            + [Gebruik de modus Lay-out om het formaat van componenten te wijzigen](/help/forms/resize-using-layout-mode.md)
+            + [Ervaring met het vastleggen van gegevens in meerdere stappen maken](/help/forms/introduction-form-sequence.md)
+            + [Inline CSS-stijlen toepassen op afzonderlijke componenten van adaptieve formulieren](/help/forms/inline-style-adaptive-forms.md)
+         + Regels toevoegen en expressies gebruiken in een adaptieve vorm {#add-rules-and-use-expressions-in-an-adaptive-form}
+            + [Regels toevoegen aan een adaptief formulier](/help/forms/rule-editor.md)
+         + Gebruiken [!DNL Adobe Sign] {#use-adobe-sign}
+            + [Adobe Sign gebruiken om een adaptief formulier elektronisch te ondertekenen](/help/forms/working-with-adobe-sign.md)
+         + Handelingen en metagegevens verzenden configureren {#configure-submit-actions-and-metadata-submission}
+            + [Handeling verzenden instellen voor een adaptief formulier](/help/forms/configuring-submit-actions.md)
+            + [Omleidingspagina configureren](/help/forms/configuring-redirect-page.md)
+            + [asynchrone verzending voor een adaptief formulier configureren](/help/forms/asynchronous-submissions-adaptive-forms.md)
+            + [Een aangepaste verzendhandeling maken](/help/forms/custom-submit-action-form.md)
+         + [Aangepaste formuliervelden vooraf invullen](/help/forms/prepopulate-adaptive-form-fields.md)
+         + [Document van record genereren](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + Metagegevens toevoegen of verbeteren {#manage-metadata}
+            + [Metagegevens van een adaptief formulier toevoegen, verwijderen of bewerken](/help/forms/manage-form-metadata.md)
+            + [Eigenschappen van metagegevens van een adaptief formulier opnieuw gebruiken](/help/forms/reusing-adaptive-forms.md)
+         + De toegankelijkheid van een adaptief formulier verbeteren {#accessible-adaptive-forms}
+            + [Een toegankelijk adaptief formulier maken](/help/forms/creating-accessible-adaptive-forms.md)
+         + [Forms Portal configureren](/help/forms/configure-forms-portal.md)
+      + Formuliergegevensmodel {#use-form-data-model}
+         + [Verbind uw gegevensbronnen met Cloud Service](/help/forms/data-integration.md)
          + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
          + [Configureren [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Configureren [!DNL Azure] opslag](/help/forms/configure-azure-storage.md)
          + [Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
          + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
-      + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
-      + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
-      + [Integreren met Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-      + [Integreren met DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-      + [Integreren met sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-      + [Integreren met Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-      + [Een adaptief formulier integreren met Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [Adaptieve Forms insluiten in AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
-   + Workflows maken en gebruiken {#create-form-centric-workflows}
-      + [Forms-centric stappen gebruiken in een workflow + stapsgewijze verwijzing](/help/forms/aem-forms-workflow-step-reference.md)
-      + [Variabelen gebruiken in een Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
-      + [De optie Buiten kantoor gebruiken](/help/forms/configure-out-of-office-settings.md)
-   + Communicatie gebruiken {#using-communications}
+         + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
+         + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
+      + Forms Centric Workflows {#create-form-centric-workflows}
+         + [Forms-centric stappen gebruiken in een workflow + stapsgewijze verwijzing](/help/forms/aem-forms-workflow-step-reference.md)
+         + [Variabelen gebruiken in een Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
+         + [De optie Buiten kantoor gebruiken](/help/forms/configure-out-of-office-settings.md)
+   + Communicatie-API&#39;s gebruiken {#using-communications}
       + [Inleiding tot communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Communicatie-API&#39;s - Synchrone verwerking](/help/forms/aem-forms-cloud-service-communications.md)
       + [Communicatie-API&#39;s - Batch-verwerking](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Aangepaste lettertypen gebruiken in PDF-documenten](/help/forms/use-custom-fonts.md)
       + [Bekende problemen, aanbevolen procedures en veelgestelde vragen](/help/forms/communications-known-issues-limitations.md)
-   + [Migreren naar [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + [Veelgestelde vragen](/help/forms/faq.md)
-   + [Bekende problemen](/help/forms/known-issues.md)
+      + Referentie ontwikkelings-API {#aem-forms-developer-api-reference}
+      + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [AEM Forms Cloud Service JavaScript API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [AEM Forms Cloud Service Java API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + Problemen oplossen {#troubleshooting-aem-forms-cloud-service}
       + [Installatie en configuratie](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Verzender en CDN in cache plaatsen](/help/forms/troubleshooting-caching-performance.md)
@@ -619,7 +630,7 @@ ht-degree: 21%
       + [Een aangepaste component voor as a Cloud Service schermen ontwikkelen](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [as a Cloud Service veelgestelde vragen weergeven](/help/screens-cloud/screens-cloud-faqs.md)
 + Inhoud en handel {#content-and-commerce}
-   + [AEM Inhoud en Handel](/help/commerce-cloud/home.md)
+   + [AEM Content en Commerce](/help/commerce-cloud/home.md)
    + [Opvallende wijzigingen in AEM inhoud en handel as a Cloud Service](/help/commerce-cloud/changes.md)
    + [Inleiding en overzicht](/help/commerce-cloud/introduction.md)
    + Handelsreizen {#journeys}

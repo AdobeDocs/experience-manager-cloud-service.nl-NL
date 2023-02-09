@@ -2,9 +2,9 @@
 title: Een verzendhandeling configureren voor een adaptief formulier
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '2891'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,9 @@ Er wordt een handeling Verzenden geactiveerd wanneer een gebruiker op de knop **
 * [E-mail verzenden](#send-email)
 * [Verzenden met gebruik van formuliergegevensmodel](#submit-using-form-data-model)
 * [Een AEM-workflow aanroepen](#invoke-an-aem-workflow)
+* [Verzenden naar SharePoint](#submit-to-sharedrive)
+* [Verzenden naar OneDrive](#submit-to-onedrive)
+* [Verzenden naar Azure Blob Storage](#azure-blob-storage)
 
 U kunt ook [De standaardverzendhandelingen uitbreiden](custom-submit-action-form.md) om uw eigen handeling Verzenden te maken.
 
@@ -46,9 +49,6 @@ U kunt een handeling Verzenden configureren in het dialoogvenster **[!UICONTROL 
 
 
 -->
-
-
-
 
 ## Verzenden naar REST-eindpunt {#submit-to-rest-endpoint}
 
@@ -89,7 +89,7 @@ U kunt ook **[!UICONTROL Enable POST request]** en geef een URL op om de aanvraa
 
 ## E-mail verzenden {#send-email}
 
-U kunt de **[!UICONTROL Send Email]** Verzend Actie om een e-mail naar een of meer ontvangers te verzenden wanneer het formulier met succes is verzonden. Het gegenereerde e-mailbericht kan formuliergegevens in een vooraf gedefinieerde indeling bevatten. In de volgende sjabloon worden bijvoorbeeld de naam van de klant, het verzendadres, de naam van de staat en de postcode opgehaald uit de ingediende formuliergegevens.
+U kunt de **[!UICONTROL Send Email]** Verzend Actie om een e-mail naar een of meer ontvangers te verzenden wanneer het formulier met succes is verzonden. Het gegenereerde e-mailbericht kan formuliergegevens in een vooraf gedefinieerde indeling bevatten. In de volgende sjabloon worden bijvoorbeeld de naam van de klant, het verzendadres, de naam van de staat en de postcode opgehaald uit de verzonden formuliergegevens.
 
     &quot;
     
@@ -162,6 +162,159 @@ Voordat u de **[!UICONTROL Invoke an AEM Workflow]** Met Handeling verzenden wor
 * **[!UICONTROL Processing Server User Name]**: Gebruikersnaam van workflowgebruiker
 
 * **[!UICONTROL Processing Server Password]**: Wachtwoord workflowgebruiker
+
+## Verzenden naar SharePoint {#submit-to-sharedrive}
+
+De **[!UICONTROL Submit to SharePoint]** Met Handeling verzenden wordt een adaptief formulier verbonden met een Microsoft SharePoint-opslagsysteem. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft SharePoint-opslag. Als u de opdracht **[!UICONTROL Submit to SharePoint]** Actie verzenden in een adaptieve vorm:
+
+1. [Een SharePoint-configuratie maken](#create-a-sharepoint-configuration-create-sharepoint-configuration): AEM Forms wordt aangesloten op uw Microsoft SharePoint-opslag.
+2. [De verzendactie Verzenden naar SharePoint gebruiken in een adaptief formulier](#use-sharepoint-configuartion-in-af): Het verbindt uw Adaptief Vorm met gevormde Microsoft SharePoint.
+
+### Een SharePoint-configuratie maken {#create-sharepoint-configuration}
+
+AEM Forms verbinden met uw Microsoft SharePoint-opslag:
+
+1. Ga naar uw **AEM Forms-auteur** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft SharePoint]**.
+1. Wanneer u de **[!UICONTROL Microsoft SharePoint]**, u wordt doorgestuurd naar **[!UICONTROL SharePoint Browser]**.
+1. Selecteer een **Configuratiecontainer**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
+1. Klik op **[!UICONTROL Create]**. De configuratietovenaar van SharePoint verschijnt.
+   ![SharePoint-configuratie](/help/forms/assets/sharepoint_configuration.png)
+1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]**. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheim, identiteitskaart van de Aannemer voor OAuth URL, zie [Microsoft-documentatie](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * U kunt de `Client ID` en `Client Secret` van uw app via de Microsoft Azure-portal.
+   * Voeg in de Microsoft Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Vervangen `[author-instance]` met de URL van uw instantie Auteur.
+   * API-machtigingen toevoegen `offline_access` en `Sites.Manage.All` om lees-/schrijfmachtigingen te bieden.
+   * OAuth-URL gebruiken: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Vervangen `<tenant-id>` met de `tenant-id` van uw app via de Microsoft Azure-portal.
+
+1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding `Connection Successful` wordt weergegeven.
+
+1. Nu selecteert u **SharePoint-site** > **Documentbibliotheek** > **SharePoint-map** om de gegevens op te slaan.
+
+   >[!NOTE]
+   >
+   >* Standaard, `forms-ootb-storage-adaptive-forms-submission` is aanwezig op geselecteerde SharePoint-site.
+   >* Een map maken als `forms-ootb-storage-adaptive-forms-submission`, indien niet reeds aanwezig in de `Documents` bibliotheek van de geselecteerde SharePoint-site door op **Map maken**.
+
+
+U kunt deze configuratie voor SharePoint-sites nu gebruiken voor de verzendactie in een adaptief formulier.
+
+### SharePoint-configuratie gebruiken in een adaptief formulier {#use-sharepoint-configuartion-in-af}
+
+U kunt de gemaakte SharePoint-configuratie in een adaptief formulier gebruiken om gegevens of gegenereerd document met record op te slaan in een SharePoint-map. Voer de volgende stappen uit om een SharePoint-opslagconfiguratie in een adaptief formulier te gebruiken als:
+1. Een [Adaptief formulier](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw SharePoint-opslag hebt gemaakt.
+   > * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
+
+
+1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to SharePoint]**.
+   ![SharePoint-GIF](/help/forms/assets/sharedrive-video.gif)
+1. Selecteer **[!UICONTROL Storage Configuration]**, waar u de gegevens wilt opslaan.
+1. Klikken **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
+
+Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft Sharepoint Storage.
+De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## Verzenden naar OneDrive {#submit-to-onedrive}
+
+De **[!UICONTROL Submit to OneDrive]** Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft OneDrive. U kunt de formuliergegevens, het bestand, de bijlagen of het document met records verzenden naar de aangesloten Microsoft OneDrive-opslag. Als u de opdracht [!UICONTROL Submit to OneDrive] Actie verzenden in een adaptieve vorm:
+
+1. [Een OneDrive-configuratie maken](#create-a-onedrive-configuration-create-onedrive-configuration): AEM Forms wordt aangesloten op uw Microsoft OneDrive-opslag.
+2. [De verzendactie Verzenden naar OneDrive gebruiken in een adaptief formulier](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Het verbindt uw Adaptief Vorm met gevormde Microsoft OneDrive.
+
+### Een OneDrive-configuratie maken {#create-onedrice-configuration}
+
+AEM Forms aansluiten op uw Microsoft OneDrive-opslag:
+
+1. Ga naar uw **AEM Forms-auteur** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft OneDrive]**.
+1. Wanneer u de **[!UICONTROL Microsoft OneDrive]**, u wordt doorgestuurd naar **[!UICONTROL OneDrive Browser]**.
+1. Selecteer een **Configuratiecontainer**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
+1. Klik op **[!UICONTROL Create]**. De OneDrive-configuratietovenaar wordt weergegeven.
+
+   ![OneDrive-configuratiescherm](/help/forms/assets/onedrive-configuration.png)
+
+1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]**. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheim, identiteitskaart van de Aannemer voor OAuth URL, zie [Microsoft-documentatie](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * U kunt de `Client ID` en `Client Secret` van uw app via de Microsoft Azure-portal.
+   * Voeg in de Microsoft Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Vervangen `[author-instance]` met de URL van uw instantie Auteur.
+   * API-machtigingen toevoegen `offline_access` en `Files.ReadWrite.All` om lees-/schrijfmachtigingen te bieden.
+   * OAuth-URL gebruiken: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Vervangen `<tenant-id>` met de `tenant-id` van uw app via de Microsoft Azure-portal.
+
+1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding `Connection Successful` wordt weergegeven.
+
+1. Nu selecteert u **[!UICONTROL OneDrive Container]** > **[Map OneDrive]**  om de gegevens op te slaan.
+
+   >[!NOTE]
+   >
+   >* Standaard, `forms-ootb-storage-adaptive-forms-submission` is aanwezig in OneDrive Container.
+   > * Een map maken als `forms-ootb-storage-adaptive-forms-submission`, indien nog niet aanwezig, klikt u op **Map maken**.
+
+
+U kunt deze OneDrive-opslagconfiguratie nu gebruiken voor de verzendactie in een adaptief formulier.
+
+### OneDrive-configuratie gebruiken in een adaptief formulier {#use-onedrive-configuartion-in-af}
+
+U kunt de gemaakte OneDrive-opslagconfiguratie in een adaptief formulier gebruiken om gegevens of gegenereerd document met record op te slaan in een OneDrive-map. Voer de volgende stappen uit om de OneDrive-opslagconfiguratie in een adaptief formulier te gebruiken als:
+1. Een [Adaptief formulier](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw OneDrive-opslag hebt gemaakt.
+   > * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
+
+
+1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to OneDrive]**.
+   ![OneDrive-GIF](/help/forms/assets/onedrive-video.gif)
+1. Selecteer **[!UICONTROL Storage Configuration]**, waar u de gegevens wilt opslaan.
+1. Klikken **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
+
+Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft OneDrive-opslagruimte.
+De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## Verzenden naar Azure Blob Storage {#submit-to-azure-blob-storage}
+
+De **[!UICONTROL Submit to Azure Blob Storage]**  Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft Azure-portal. U kunt de formuliergegevens, het bestand, de bijlagen of het document met records verzenden naar de aangesloten Azure Storage-containers. De handeling Verzenden voor Azure Blob Storage gebruiken:
+
+1. [Een Azure Blob Storage Container maken](#create-a-azure-blob-storage-container-create-azure-configuration): Het verbindt AEM Forms met Azure Storage containers.
+2. [Azure Storage Configuration in een Adaptive Form gebruiken ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Het verbindt uw Adaptief Vorm met gevormde Azure containers van de Opslag.
+
+### Een Azure Blob Storage Container maken {#create-azure-configuration}
+
+AEM Forms aansluiten op uw Azure Storage-containers:
+1. Ga naar uw **AEM Forms-auteur** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure Storage]**.
+1. Wanneer u de **[!UICONTROL Azure Storage]**, u wordt doorgestuurd naar **[!UICONTROL Azure Storage Browser]**.
+1. Selecteer een **Configuratiecontainer**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
+1. Klik op **[!UICONTROL Create]**. De wizard Azure Storage Configuration wordt weergegeven.
+
+   ![Azure Storage Configuration](/help/forms/assets/azure-storage-configuration.png)
+
+1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Azure Storage Account]** en **[!UICONTROL Azure Access key]**.
+
+   * U kunt `Azure Storage Account` naam en `Azure Access key` van de Opslagaccounts in de Microsoft Azure-portal.
+
+1. Klik op **[!UICONTROL Save]**.
+
+Nu kunt u deze Azure Storage Container-configuratie gebruiken voor de verzendactie in een adaptief formulier.
+
+### Azure Storage Configuration in een Adaptive Form gebruiken {#use-azure-storage-configuartion-in-af}
+
+U kunt de gemaakte Azure Storage Container-configuratie in een Adaptief formulier gebruiken om gegevens of gegenereerd Document of Record in Azure Storage-container op te slaan. Voer de volgende stappen uit om de configuratie van de Azure Storage container in een Adaptief formulier te gebruiken als:
+1. Een [Adaptief formulier](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw OneDrive-opslag hebt gemaakt.
+   > * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
+
+
+1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to Azure Blob Storage]**.
+   ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)
+
+1. Selecteer **[!UICONTROL Storage Configuration]**, waar u de gegevens wilt opslaan.
+1. Klikken **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
+
+Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven configuratie van de Azure Storage Container.
+De mapstructuur voor het opslaan van gegevens is `/configuration_container/form_name/year/month/date/submission_id/data`.
 
 Om waarden van een configuratie te plaatsen, [OSGi-configuraties genereren met de AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [stel de configuratie op](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) naar de instantie Cloud Service.
 
