@@ -4,9 +4,9 @@ description: Zodra u uw wolkenmiddelen hebt gevormd, zult u uw teamtoegang tot A
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 050e5966728e157bf2ae51f99a31f68a1d347e4b
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,10 @@ Als u AEM wilt gebruiken, moeten uw teamleden worden toegewezen aan ten minste Ã
 * `AEM Administrators` - Deze groep omvat gebruikers die verantwoordelijk zijn voor geavanceerde functies of AEM.
 
 Elke gebruiker die is toegewezen aan een AEM productprofiel krijgt ook alleen-lezen toegang tot Cloud Manager. Schrijftoegang tot Cloud Manager wordt mogelijk verleend via andere productprofielen.
+
+>[!CAUTION]
+>
+>Bewerk of verwijder de productprofielen AEM Beheerders of AEM gebruikers niet. Als u deze profielnamen bewerkt, kan het aanmelden bij de AEM-cloudinstantie worden verbroken.
 
 ## Vereisten {#prerequisites}
 
