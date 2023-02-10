@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -66,17 +66,18 @@ Bekijk de video Overzicht van de release van januari 2023 voor een overzicht van
 
 ### Nieuwe functies in [!DNL Forms] prerelease {#prerelease-features-forms}
 
-* **[Gebruik kerncomponenten voor gegevensvastlegging om Adaptive Forms te bouwen](/help/forms/creating-adaptive-form-core-components.md)**: Gebruik de Adaptive Forms Editor om formulieren te maken op basis van gestandaardiseerde componenten voor het vastleggen van gegevens (Core Components). Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring.
+* **[Gebruik kerncomponenten voor gegevensvastlegging om Adaptive Forms te bouwen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Adaptieve Forms-editor gebruiken](/help/forms/creating-adaptive-form-core-components.md) formulieren maken op basis van gestandaardiseerde componenten voor het vastleggen van gegevens (Core Components). Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring.
 * **[Ondersteuning voor de front-end pijpleiding voor de styling van de core component, gebaseerd op Adaptive Forms](/help/forms/using-themes-in-core-components.md)**: Gebruik eenvoudig aanpasbare BEM-gebaseerde thema&#39;s voor op Core Components-Gebaseerde Aangepaste Forms door hen met de pijpleiding van de Plaatsing van Frontend op te stellen om de blik en het gevoel van uw vormen te verbeteren.
 * **[Document met record genereren voor op kerncomponenten gebaseerde adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)**: Maak een record voor een op kerncomponenten gebaseerd adaptief formulier bij verzending voor langetermijnarchivering, afdrukken of in documentindeling.
 
-![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
+![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **Een adaptief formulier delen voor revisie**: Met het mechanisme voor adaptieve Forms-revisie kan een of meer revisoren het formulier reviseren.
 * **[Adaptieve Forms verzenden naar Microsoft SharePoint en Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Stroomlijn de gegevensverzending met de mogelijkheid om adaptieve formuliergegevens rechtstreeks naar Microsoft SharePoint en Microsoft OneDrive te verzenden. U kunt zowel schema-gebaseerde als schema-loze gegevens voorleggen. Deze verzendacties vormen een aanvulling op de reeds beschikbare verzendacties.
 * **[Efficiënt formulieren maken met de functie Een adaptief formulier opslaan als sjabloon](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Stroomlijn het proces voor het maken van formulieren door een adaptief formulier op te slaan als een sjabloon en de sjablonen voor het volgende adaptieve formulier opnieuw te gebruiken.
-* **[Forms-gegevensmodel verbinden met databases die JDBC ondersteunen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**: Verbind AEM Forms as a Cloud Service met een gegevensbestand dat JDBC steunt om gegevens aan dergelijke gegevensbestanden te lezen en te schrijven.
-* **Gegevensmodel formulier verbinden met REST-eindpunten die ondersteuning bieden voor de Open API-specificatie versie 3.0**: Connect AEM Forms as a Cloud Service met REST-eindpunten die ondersteuning bieden voor Open API Specification versie 3.0, voor het verzenden en ontvangen van gegevens.
+* **[AEM Forms verbinden met databases die door JDBC worden ondersteund](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Sluit uw AEM Forms-gegevensmodel eenvoudig aan op databases die JDBC ondersteunen, zodat u gegevens naadloos kunt lezen en schrijven.
+* **[Integreer met REST Endpoints die Open API 3.0 gebruiken](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Verbind AEM Forms as a Cloud Service Modellen van de Gegevens van de Vorm met REST eindpunten die Open API specificatieversie 3.0 steunen, die u toestaat om gegevens te verzenden en te ontvangen.
+* **[Een adaptief formulier delen voor revisie](/help/forms/create-reviews-forms.md)**: Met het mechanisme voor adaptieve Forms-revisie kan een of meer revisoren het formulier reviseren.
+
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 

@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3932'
 ht-degree: 21%
 
 ---
@@ -511,7 +511,7 @@ ht-degree: 21%
       + [Unified Storage Connector configureren](/help/forms/configure-unified-storage-connector.md)
    + Migreren {#setup-environment}
       + [Migreren naar [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + Beheer {#administering}
+   + Configureren en beheren {#administering}
       + [Groepen en machtigingen](/help/forms/forms-groups-privileges-tasks.md)
       + [Aangepaste Forms, PDF forms en andere middelen importeren, exporteren en organiseren](/help/forms/import-export-forms-templates.md)
    + Integreren {#integrate}
@@ -562,26 +562,28 @@ ht-degree: 21%
             + [Een aangepaste verzendhandeling maken](/help/forms/custom-submit-action-form.md)
          + [Aangepaste formuliervelden vooraf invullen](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Document van record genereren](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [Ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier](/help/forms/supporting-new-language-localization.md)
          + Metagegevens toevoegen of verbeteren {#manage-metadata}
             + [Metagegevens van een adaptief formulier toevoegen, verwijderen of bewerken](/help/forms/manage-form-metadata.md)
             + [Eigenschappen van metagegevens van een adaptief formulier opnieuw gebruiken](/help/forms/reusing-adaptive-forms.md)
          + De toegankelijkheid van een adaptief formulier verbeteren {#accessible-adaptive-forms}
             + [Een toegankelijk adaptief formulier maken](/help/forms/creating-accessible-adaptive-forms.md)
          + [Forms Portal configureren](/help/forms/configure-forms-portal.md)
-      + Formuliergegevensmodel {#use-form-data-model}
-         + [Verbind uw gegevensbronnen met Cloud Service](/help/forms/data-integration.md)
-         + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
-         + [Configureren [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Configureren [!DNL Azure] opslag](/help/forms/configure-azure-storage.md)
-         + [Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
-         + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
-         + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
-         + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
-      + Forms Centric Workflows {#create-form-centric-workflows}
-         + [Forms-centric stappen gebruiken in een workflow + stapsgewijze verwijzing](/help/forms/aem-forms-workflow-step-reference.md)
-         + [Variabelen gebruiken in een Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
-         + [De optie Buiten kantoor gebruiken](/help/forms/configure-out-of-office-settings.md)
-   + Communicatie-API&#39;s gebruiken {#using-communications}
+         + [Revisies maken en beheren](/help/forms/create-reviews-forms.md)
+   + Formuliergegevensmodel {#use-form-data-model}
+      + [Verbind uw gegevensbronnen met Cloud Service](/help/forms/data-integration.md)
+      + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
+      + [Configureren [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+      + [Configureren [!DNL Azure] opslag](/help/forms/configure-azure-storage.md)
+      + [Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
+      + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
+      + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
+      + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
+   + Forms Centric Workflows {#create-form-centric-workflows}
+      + [Forms-centric stappen gebruiken in een workflow + stapsgewijze verwijzing](/help/forms/aem-forms-workflow-step-reference.md)
+      + [Variabelen gebruiken in een Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
+      + [De optie Buiten kantoor gebruiken](/help/forms/configure-out-of-office-settings.md)
+   + Communicatie-API&#39;s {#using-communications}
       + [Inleiding tot communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Communicatie-API&#39;s - Synchrone verwerking](/help/forms/aem-forms-cloud-service-communications.md)
       + [Communicatie-API&#39;s - Batch-verwerking](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

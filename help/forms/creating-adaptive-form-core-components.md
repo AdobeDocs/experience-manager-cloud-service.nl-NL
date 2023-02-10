@@ -4,9 +4,9 @@ description: Leer hoe u een adaptief formulier maakt met [!DNL Experience Manage
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1314'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Een adaptief formulier maken (kerncomponenten) {#creating-an-adaptive-form-core-components}
 
-Met Adaptieve Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een gebruiksvriendelijke wizard voor zakelijke gebruikers om snel een Adaptive Forms te maken. De wizard beschikt over een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken. Adaptive Forms biedt twee typen componenten:
+Met Adaptieve Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een gebruiksvriendelijke wizard voor zakelijke gebruikers om snel een Adaptive Forms te maken. De wizard beschikt over een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken.
 
-* Adaptieve Forms Core-componenten zijn gestandaardiseerde componenten voor het vastleggen van gegevens. Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring. Een ontwikkelaar kan deze componenten gemakkelijk aanpassen. Adobe raadt aan deze moderne en uitbreidbare componenten te gebruiken om Adaptive Forms te ontwikkelen.
+Voordat u begint, moet u meer weten over het type Forms-componenten waarover u beschikt:
 
-* Aangepaste Forms Foundation-componenten zijn klassieke (oude) componenten voor het vastleggen van gegevens.
+* [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): Dit zijn gestandaardiseerde componenten voor het vastleggen van gegevens. Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring. Een ontwikkelaar kan deze componenten eenvoudig aanpassen en opmaken. Adobe raadt aan deze moderne en uitbreidbare componenten te gebruiken om Adaptive Forms te ontwikkelen.
 
-In dit artikel wordt een beschrijving gegeven van de meest recente aanpak voor het maken van een adaptief formulier. Voor het maken van een adaptieve Forms op basis van een oude aanpak raadpleegt u [Een adaptief formulier maken (basiscomponenten)](creating-adaptive-form.md)
+* [Aangepaste Forms Foundation-componenten](creating-adaptive-form.md): Dit zijn klassieke (oude) componenten voor gegevensvastlegging. U kunt deze blijven gebruiken om uw bestaande basiscomponenten te bewerken op basis van adaptief formulier. Adobe raadt u aan nieuwe formulieren te gebruiken als u nieuwe formulieren maakt  [Adaptieve Forms Core-componenten](creating-adaptive-form-core-components.md) om een Adaptieve Forms te maken.
 
 ![Wizard voor het maken van een adaptief formulier](/help/release-notes/assets/wizard.png)
 
@@ -89,30 +89,7 @@ Nu kunt u de container Adaptive Forms Core Components naar Adaptive Forms slepen
 
 ## Beschikbare adaptieve Forms Core-componenten
 
-Adaptieve Forms Core-componenten zijn gestandaardiseerde componenten voor het vastleggen van gegevens. Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring. De volgende Core Components zijn beschikbaar uit-van-de-doos:
-
-* Adaptieve Forms-accordeon: Met de accordeonfunctie kan de gebruiker gedeelten van gerelateerde inhoud op een adaptief formulier weergeven en verbergen.
-
-* Aangepaste Forms-knop
-* Aangepaste Forms Checkbox-groep
-* Aangepaste Forms-datumkiezer
-* Aangepaste Forms-vervolgkeuzelijst
-* Adaptieve Forms-e-mailinvoer
-* Aangepaste Forms-bestandsbijlagen
-* Adaptieve horizontale Forms-tabs
-* Adaptieve Forms-afbeelding
-* Invoer adaptief Forms-nummer
-* Aangepast Forms-deelvenster
-* Aangepaste Forms-keuzerondje
-* Knop Adaptief Forms herstellen
-* Knop Adaptief Forms verzenden
-* Adaptieve Forms-telefooninvoer
-* Adaptieve Forms-tekst
-* Adaptief Forms-tekstvak
-* Aangepaste Forms-titel
-* Aangepaste Forms Wizard Layout
-* Koptekst
-* Voettekst
+Adaptieve Forms Core-componenten zijn gestandaardiseerde componenten voor het vastleggen van gegevens. Deze componenten bieden aanpassingsmogelijkheden, helpen de ontwikkelingstijd te verminderen en lagere onderhoudskosten voor uw digitale inschrijvingservaring. [Adaptive Forms Core Components documentatie](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) bevat een gedetailleerde lijst met beschikbare componenten, samen met gedetailleerde informatie over de mogelijkheden van elke component. U kunt ook [https://aemcomponents.dev/](https://aemcomponents.dev/) om beschikbare kerncomponenten in actie te bekijken.
 
 ## Eigenschappen van een formuliermodel bewerken in een adaptief formulier {#edit-form-model}
 

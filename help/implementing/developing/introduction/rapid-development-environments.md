@@ -1,9 +1,9 @@
 ---
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '2903'
+source-wordcount: '2898'
 ht-degree: 0%
 
 ---
@@ -452,7 +452,7 @@ Een tussenliggend model is een model waarbij een organisatie een aantal RDE&#39;
 
 ## Hoe verschilt een AEM Forms Cloud Service Rapid Development Environment (RDE) van andere omgevingen? {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms-ontwikkelaars kunnen AEM Forms Cloud Service Rapid Development Environment gebruiken om snel Adaptive Forms, Workflows en aanpassingen te ontwikkelen, zoals het aanpassen van kerncomponenten, integratie met systemen van derden en meer. De AEM Forms Cloud Service Rapid Development Environment (RDE) biedt geen ondersteuning voor functies en mogelijkheden waarvoor een Document of Record vereist is, zoals het genereren van een Document of Record bij het verzenden van een adaptief formulier. Voor de onderstaande functies wordt Document of Record gebruikt. Deze zijn niet beschikbaar voor een Rapid Development Environment (RDE):
+Forms-ontwikkelaars kunnen AEM Forms Cloud Service Rapid Development Environment gebruiken om snel Adaptive Forms, Workflows en aanpassingen te ontwikkelen, zoals het aanpassen van kerncomponenten, integratie met systemen van derden en meer. De AEM Forms Cloud Service Rapid Development Environment (RDE) heeft geen ondersteuning voor communicatie-API&#39;s en voor functies en mogelijkheden die Documenten met records vereisen, zoals het genereren van een Document of Record bij het verzenden van een adaptief formulier. De hieronder vermelde AEM Forms-functies zijn niet beschikbaar in een Rapid Development Environment (RDE):
 
 * Een recorddocument configureren voor een adaptief formulier
 * Een document met records genereren bij het indienen van een adaptief formulier of met een workflowstap
@@ -460,9 +460,7 @@ Forms-ontwikkelaars kunnen AEM Forms Cloud Service Rapid Development Environment
 * Adobe Sign gebruiken in een adaptief formulier of in een workflowstap
 * Communicatie-API&#39;s
 
-Er worden foutberichten weergegeven wanneer u een functie gebruikt waarvoor Document of Record is vereist.
-
 >[!NOTE]
 >
-> De interface van Rapid Development Environment (RDE) en andere Cloud Service-omgevingen voor Forms veranderen niet. Alle aan het document van Verslag verwante opties, zoals het selecteren van een document van verslagmalplaatje voor een adaptief vorm, blijven in UI verschijnen. Deze omgevingen hebben geen Document of Record-mogelijkheden om dergelijke opties te testen. Wanneer u dus een optie Document of Record kiest, wordt geen actie uitgevoerd en wordt een foutbericht weergegeven of geretourneerd.
+> De interface van Rapid Development Environment (RDE) en andere Cloud Service-omgevingen voor Forms veranderen niet. Alle aan het document van Verslag verwante opties, zoals het selecteren van een document van verslagmalplaatje voor een adaptief vorm, blijven in UI verschijnen. Deze omgevingen hebben geen communicatie-API&#39;s en documentmogelijkheden om dergelijke opties te testen. Als u dus een optie kiest waarvoor communicatie-API&#39;s of de functie Document of Record vereist is, wordt geen actie uitgevoerd en wordt een foutbericht weergegeven of geretourneerd.
 
