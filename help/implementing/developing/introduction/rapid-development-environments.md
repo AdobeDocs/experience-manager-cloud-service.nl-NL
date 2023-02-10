@@ -1,9 +1,9 @@
 ---
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '3062'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ Zodra de veranderingen in RDE zijn getest, kunnen zij aan een regelmatige milieu
 RDEs kan voor code, inhoud, en Apache of Dispatcher configuraties worden gebruikt. In tegenstelling tot gewone Cloud Development-omgevingen kunnen ontwikkelaars lokale opdrachtregelprogramma&#39;s gebruiken om code die lokaal is gemaakt te synchroniseren met een RDE.
 
 Elk programma wordt voorzien van RDE. In het geval van Sandbox-accounts worden ze na enkele uren niet meer gebruikt gehiberneerd.
+
+Bij het maken worden RDE&#39;s ingesteld op de meest recente beschikbare AEM. Een RDE-reset, die kan worden uitgevoerd met Cloud Manager, doorloopt de RDE en stelt deze in op de meest recente beschikbare AEM versie.
 
 Typisch, zou RDE door één enkele ontwikkelaar in een bepaalde tijd, voor het testen en het zuiveren van een specifieke eigenschap worden gebruikt. Wanneer de ontwikkelingszitting wordt gedaan, kan RDE in een standaardstaat voor het volgende gebruik worden teruggesteld.
 
@@ -64,6 +66,8 @@ Ga als volgt te werk om Cloud Manager te gebruiken om een RDE voor uw programma 
 1. Klikken **Opslaan** om de opgegeven omgeving toe te voegen.
 
 De **Overzicht** het scherm toont nu uw nieuwe milieu in **Omgevingen** kaart.
+
+Bij het maken worden RDE&#39;s ingesteld op de meest recente beschikbare AEM. Een RDE-reset, die ook kan worden uitgevoerd met Cloud Manager, doorloopt de RDE en stelt deze in op de meest recente beschikbare AEM versie.
 
 Ga voor meer informatie over het gebruik van Cloud Manager om omgevingen te maken, te beheren wie er toegang toe heeft en aangepaste domeinen toe te wijzen naar [de documentatie van Cloud Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
@@ -141,7 +145,12 @@ Adobe raadt de volgende workflow aan voor het ontwikkelen van een nieuwe functie
 
 * Wanneer een tussentijdse mijlpaal wordt bereikt en met succes plaatselijk met de AEM as a Cloud Service SDK wordt bevestigd, zou de code aan een de eigenschaptak van de it moeten worden begaan die nog geen deel van de belangrijkste lijn uitmaakt, hoewel het toezeggen aan git facultatief is. Wat een &quot;tussenliggende mijlpaal&quot; is, varieert op basis van teamgewoonten. Voorbeelden zijn enkele nieuwe coderegels, een halve werkdag of het voltooien van een subfunctie.
 
-* Herstel RDE als het door een andere eigenschap is gebruikt en u wilt [herstellen naar standaardstaat](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Het opnieuw instellen duurt een paar minuten en alle bestaande inhoud en code worden verwijderd. U kunt het RDE statusbevel gebruiken om RDE klaar te bevestigen.
+* Herstel RDE als het door een andere eigenschap is gebruikt en u wilt [herstellen naar standaardstaat](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Het opnieuw instellen duurt een paar minuten en alle bestaande inhoud en code worden verwijderd. U kunt het RDE statusbevel gebruiken om RDE klaar te bevestigen. RDE zal met de meest recente versie van de AEM terugkomen.
+
+   >[!IMPORTANT]
+   >
+   > Als uw het opvoeren en productiemilieu&#39;s geen automatische AEM versie-updates ontvangen en ver achter de meest recente AEM versieversie zijn, ben in gedachten dat de code die op RDE loopt niet kan aanpassen hoe de code op het opvoeren en productie zal functioneren. In dat geval, is het vooral belangrijk om grondig het testen van de code op het opvoeren uit te voeren alvorens het aan productie op te stellen.
+
 
 * Gebruikend RDE bevel-lijn interface, synchroniseer lokale code aan RDE. U kunt onder andere een inhoudspakket, een specifieke bundel, een configuratiebestand voor SDAB, een inhoudsbestand en een ZIP-bestand van een Apache/Dispatcher-configuratie installeren. Het is ook mogelijk te verwijzen naar een extern inhoudspakket. Zie de [RDE-opdrachtregelprogramma&#39;s](#rde-cli-commands) voor meer informatie. U kunt het statusbevel gebruiken om te bevestigen dat de plaatsing succesvol was. Gebruik optioneel Package Manager om inhoudspakketten te installeren.
 
@@ -337,6 +346,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 ## Herstellen {#reset-rde}
 
 Als u de RDE opnieuw instelt, verwijdert u alle aangepaste code, configuraties en inhoud van zowel de auteur- als de publicatieversie. Dit kan nuttig zijn, bijvoorbeeld, als RDE is gebruikt om een specifieke eigenschap te testen en u het aan een standaardstaat wilt terugstellen om een verschillende eigenschap te testen.
+
+Met een reset wordt de RDE ingesteld op de laatst beschikbare AEM versie.
 
 <!-- Alexandru: hiding for now, please don't delete
 
