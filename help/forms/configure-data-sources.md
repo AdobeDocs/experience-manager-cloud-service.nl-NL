@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e353fd386d2dfbc39c76a0ab56b50c44f3c54afc
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '1965'
 ht-degree: 0%
 
 ---
@@ -18,14 +18,13 @@ ht-degree: 0%
 
 [!DNL Experience Manager Forms] Met gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden. De volgende typen worden buiten de box ondersteund:
 
-<!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
-* [!DNL Experience Manager] user profile  -->
+* Relationele databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], en [!DNL Oracle RDBMS]
 * RESTful-webservices
 * SOAP-webservices
 * OData-diensten (versie 4.0)
-* Microsoft Dynamics
+* Microsoft® Dynamics
 * SalesForce
-* Microsoft Azure Blob Storage
+* Microsoft® Azure Blob Storage
 
 De integratie van gegevens steunt OAuth2.0, Basisauthentificatie, en API Zeer belangrijke authentificatietypes out-of-the-box, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl de RESTful, op SOAP-Gebaseerde, en de diensten OData binnen worden gevormd [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> en aansluiting voor [!DNL Experience Manager] gebruikersprofiel is geconfigureerd in [!DNL Experience Manager] webconsole.
 
@@ -35,9 +34,12 @@ De integratie van gegevens steunt OAuth2.0, Basisauthentificatie, en API Zeer be
 
 ## Relationele database configureren {#configure-relational-database}
 
-### Vereiste
+### Vereisten
 
-Voordat u relationele databases configureert met [!DNL Experience Manager] Webconsoleconfiguratie: [geavanceerde netwerken inschakelen via de cloud Manager-API](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), omdat poorten standaard zijn uitgeschakeld.
+Voordat u relationele databases configureert met [!DNL Experience Manager] Webconsoleconfiguratie:
+* [Geavanceerde netwerken inschakelen via de cloud Manager-API](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), omdat poorten standaard zijn uitgeschakeld.
+* [JDBC-stuurprogramma-afhankelijkheden toevoegen in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
+
 
 ### Stappen om relationele database te configureren
 
@@ -45,27 +47,30 @@ U kunt relationele databases configureren met [!DNL Experience Manager] Webconso
 
 1. Ga naar [!DNL Experience Manager] webconsole op `https://server:host/system/console/configMgr`.
 1. Zoeken **[!UICONTROL Day Commons JDBC Connections Pools]** configuratie. Tik om de configuratie te openen in de bewerkingsmodus.
-<br>
 
-![JDBC-connectorpool](/help/forms/assets/jdbc_connector.png)
-<br>
+   ![JDBC-connectorpool](/help/forms/assets/jdbc_connector.png)
+
 1. In de configuratiedialoog, specificeer de details voor het gegevensbestand u, zoals wilt vormen:
 
-   * Java-klassenaam voor het JDBC-stuurprogramma
+   * Java™-klassenaam voor het JDBC-stuurprogramma
    * URI voor JDBC-verbinding
    * Gebruikersnaam en wachtwoord om verbinding te maken met het JDBC-stuurprogramma
    * Geef een SQL SELECT-query op in het dialoogvenster **[!UICONTROL Validation Query]** veld voor het valideren van verbindingen vanuit de pool. De query moet ten minste één rij retourneren. Geef op basis van uw database een van de volgende opties op:
       * SELECT 1 (MySQL en MS SQL)
       * SELECTEER 1 uit twee items (Oracle)
-   * Selecteer **Standaard alleen-lezen** selectievakje zodat deze niet kan worden gewijzigd.
-   * Selecteren **Standaard automatisch vastleggen** Schakel het selectievakje in om de wijzigingen automatisch vast te leggen.
-   * Geef de poolgrootte op en wacht de pool in milliseconden.
    * Naam van de gegevensbron
-   * Het bezit van de gegevensbrondienst dat de naam van de gegevensbron opslaat
+
+   Voorbeeldtekenreeksen voor het configureren van relationele database:
+
+   ```text
+      "datasource.name": "sqldatasourcename-mysql",
+      "jdbc.driver.class": "com.mysql.jdbc.Driver",
+      "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
+   ```
 
    >[!NOTE]
    >
-   > Vernieuwen [SQL-verbindingen met JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html#mysql-driver-dependencies) voor meer gedetailleerde informatie.
+   > Vernieuwen [SQL-verbindingen met JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) voor meer gedetailleerde informatie.
 
 1. Tikken **[!UICONTROL Save]** om de configuratie op te slaan.
 
@@ -111,14 +116,14 @@ De map configureren voor configuraties van cloudservices:
    1. Tikken **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
 
 1. In de **[!UICONTROL Configuration Browser]**, tikken **[!UICONTROL Create]**.
-1. In de **[!UICONTROL Create Configuration]** een titel voor de map opgeven en inschakelen **[!UICONTROL Cloud Configurations]**.
+1. In de **[!UICONTROL Create Configuration]** , geeft u een titel voor de map op en schakelt u **[!UICONTROL Cloud Configurations]**.
 1. Tikken **[!UICONTROL Create]** om de map te maken die is ingeschakeld voor configuraties van de cloudservice.
 
 ## RESTful-webservices configureren {#configure-restful-web-services}
 
 RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https://swagger.io/specification/v2/) in JSON- of YAML-indeling in een [!DNL Swagger] definitiebestand. RESTful-webservice configureren in [!DNL Experience Manager] as a Cloud Service, zorg ervoor dat u of [!DNL Swagger] file ([Versie 2.0](https://swagger.io/specification/v2/)) of [!DNL Swagger] file ([Tagvormige versie 3.0](https://swagger.io/specification/v3/)) op uw bestandssysteem of de URL waar het bestand wordt gehost.
 
-### RESTful-services configureren voor Open API Specification versie 2.0 {#configure-restful-services-swagger-version2.0}
+### RESTful-services configureren voor Open API Specification versie 2.0 {#configure-restful-services-open-api-2.0}
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
@@ -142,7 +147,7 @@ RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https:
 
 1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst tot stand te brengen.
 
-### RESTful-services Open API Specification versie 2.0 configureren {#configure-restful-services-swagger-version3.0}
+### RESTful-services configureren voor Open API Specification versie 3.0 {#configure-restful-services-open-api-3.0}
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
@@ -152,7 +157,7 @@ RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https:
 1. Specificeer de volgende details voor de RESTful dienst:
 
    * Selecteer URL of Bestand in het menu [!UICONTROL Swagger Source] vervolgkeuzelijst en geeft dienovereenkomstig de [!DNL Swagger 3.0 URL] aan de[!DNL  Swagger] definitiebestand uploaden of [!DNL Swagger] van uw lokale bestandssysteem.
-   * Op basis van de[!DNL  Swagger] Broninvoer. De naam van de server wordt automatisch weergegeven.
+   * Op basis van de[!DNL  Swagger] De broninvoer, de verbindingsinformatie met de doelserver wordt getoond.
    * Selecteer het authentificatietype — niets, OAuth2.0, Basisauthentificatie, API Sleutel, of de Authentificatie van de Douane — om tot de dienst toegang te hebben RESTful, en dienovereenkomstig details voor authentificatie te verstrekken.
 
    Als u **[!UICONTROL API Key]** Geef als verificatietype de waarde voor de API-sleutel op. De API-sleutel kan als aanvraagheader of als queryparameter worden verzonden. Selecteer een van deze opties in het menu **[!UICONTROL Location]** vervolgkeuzelijst en geef de naam van de header of de parameter query op in de **[!UICONTROL Parameter Name]** veld dienovereenkomstig.
@@ -161,10 +166,11 @@ RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https:
 
 1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst tot stand te brengen.
 
-Sommige bewerkingen die niet worden ondersteund door RESTful Services Swagger versie 3.0 zijn:
+Sommige bewerkingen die niet worden ondersteund door RESTful-services Open API Specification versie 3.0 zijn:
 * Callbacks
 * één of meer
 * Externe referentie
+* Koppelingen
 * Verschillende aanvraagorganen voor verschillende MIME-typen voor één enkele bewerking
 
 U kunt verwijzen naar [OpenAPI 3.0-specificatie](https://swagger.io/specification/v3/) voor nadere informatie.
@@ -187,6 +193,7 @@ Stel de volgende eigenschappen van de **[!UICONTROL Form Data Model HTTP Client 
 
 In het volgende JSON-bestand wordt een voorbeeld weergegeven:
 
+
 ```json
 {   
    "http.connection.keep.alive.duration":"15",   
@@ -198,20 +205,13 @@ In het volgende JSON-bestand wordt een voorbeeld weergegeven:
 } 
 ```
 
-Om waarden van een configuratie te plaatsen, [OSGi-configuraties genereren met de AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [stel de configuratie op](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) naar de instantie Cloud Service.
-
-
-Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te configureren:
-
-1. Aanmelden bij [!DNL Experience Manager Forms] Instantie van auteur als beheerder en ga naar [!DNL Experience Manager] bundels voor webconsoles. De standaard-URL is [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
 1. Tik op **[!UICONTROL Form Data Model HTTP Client Configuration for REST data source]**.
 
 1. In de [!UICONTROL Form Data Model HTTP Client Configuration for REST data source] dialoogvenster:
 
    * Geef het maximale aantal toegestane verbindingen op tussen het gegevensmodel van het formulier en de RESTful-webservices in het dialoogvenster **[!UICONTROL Connection limit in total]** veld. De standaardwaarde is 20 verbindingen.
 
-   * Specificeer het maximumaantal toegestane verbindingen voor elke route in **[!UICONTROL Connection limit on per route basis]** veld. De standaardwaarde is 2 verbindingen.
+   * Specificeer het maximumaantal toegestane verbindingen voor elke route in **[!UICONTROL Connection limit on per route basis]** veld. De standaardwaarde is twee verbindingen.
 
    * Geef de duur op, gedurende welke een blijvende HTTP-verbinding in leven blijft in het dialoogvenster **[!UICONTROL Keep alive]** veld. De standaardwaarde is 15 seconden.
 
@@ -249,11 +249,13 @@ U kunt een reguliere expressie opgeven die fungeert als filter voor absolute URL
 
 Stel de `importAllowlistPattern` eigendom van de **[!UICONTROL Form Data Model SOAP Web Services Import Allowlist]** configuratie om de reguliere expressie op te geven. In het volgende JSON-bestand wordt een voorbeeld weergegeven:
 
+
 ```json
 {
   "importAllowlistPattern": ".*"
 }
 ```
+
 
 Om waarden van een configuratie te plaatsen, [OSGi-configuraties genereren met de AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [stel de configuratie op](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) naar de instantie Cloud Service.
 
@@ -264,7 +266,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Een OData-
 >[!NOTE]
 >
 > Formuliergegevensmodel ondersteunt [OData versie 4](https://www.odata.org/documentation/).
->Voor geleidelijke gids om te vormen [!DNL Microsoft Dynamics 365], online of ter plaatse, zie [[!DNL Microsoft Dynamics] OData-configuratie](ms-dynamics-odata-configuration.md).
+>Voor geleidelijke gids om te vormen [!DNL Microsoft® Dynamics 365], online of ter plaatse, zie [[!DNL Microsoft® Dynamics] OData-configuratie](ms-dynamics-odata-configuration.md).
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
@@ -280,7 +282,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Een OData-
 
    >[!NOTE]
    >
-   >U moet OAuth 2.0 authentificatietype selecteren om met te verbinden [!DNL Microsoft Dynamics] diensten die eindpunt OData als de dienstwortel gebruiken.
+   >U moet OAuth 2.0 authentificatietype selecteren om met te verbinden [!DNL Microsoft® Dynamics] diensten die eindpunt OData als de dienstwortel gebruiken.
 
 1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de dienst te creëren OData.
 
@@ -299,4 +301,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## Volgende stappen {#next-steps}
 
-U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een formuliergegevensmodel maken of als u al een formuliergegevensmodel zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de gegevensbronnen die u zojuist hebt geconfigureerd. Zie [Formuliergegevensmodel maken](create-form-data-models.md) voor meer informatie.
+U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een formuliergegevensmodel maken of als u al een formuliergegevensmodel zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de gegevensbronnen die u hebt geconfigureerd. Zie [Formuliergegevensmodel maken](create-form-data-models.md) voor meer informatie.
