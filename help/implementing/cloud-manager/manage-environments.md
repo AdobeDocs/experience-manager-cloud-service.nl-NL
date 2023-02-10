@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
+source-git-commit: 2af14814a4e8af22cfdc1caa2ff656020c79ce77
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1826'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,13 @@ Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voo
 
 Een gebruiker met de vereiste toestemmingen kan de volgende milieutypes (binnen de grenzen van wat aan de specifieke huurder beschikbaar is) tot stand brengen.
 
-* **Productie en fase** - De productie- en testomgevingen zijn als twee beschikbaar en worden respectievelijk voor productie- en testdoeleinden gebruikt.
+* **Productie + werkgebied** - De productie- en testomgevingen zijn als twee beschikbaar en worden respectievelijk voor productie- en testdoeleinden gebruikt.
 
 * **Ontwikkeling** - Er kan een ontwikkelomgeving worden gecreëerd voor zowel ontwikkelings- als testdoeleinden en deze kan alleen worden geassocieerd met niet-productiepijpleidingen.
 
+* **Snelle ontwikkeling** - Een snelle ontwikkelomgeving (RDE) stelt een ontwikkelaar in staat snel wijzigingen te implementeren en te evalueren, waardoor de tijd die nodig is om functies te testen waarvan is aangetoond dat ze werken in een lokale ontwikkelomgeving, tot een minimum wordt beperkt. Zie [documentatie over de snelle ontwikkelomgeving](/help/implementing/developing/introduction/rapid-development-environments.md) voor details over hoe te om RDE te gebruiken.
 
-De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen die in het besturingssysteem zijn ingeschakeld [programma.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen die in de [programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) van het milieu.
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -49,15 +50,16 @@ De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen 
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
+1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
 
-   * Selecteer een **Type omgeving**.
-      * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes weergegeven achter het omgevingstype Ontwikkeling.
-   * Een **Omgevingsnaam**.
-   * Een **Omgevingsbeschrijving**.
-   * Selecteer een **Cloud Region**.
-
-   ![Omgevingsdialoogvenster toevoegen](assets/add-environment2.png)
+   * Selecteer een [**omgevingstype**.](#environment-types)
+      * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter de naam van het omgevingstype weergegeven.
+   * Een omgeving bieden **Naam**.
+   * Een omgeving bieden **Beschrijving**.
+   * Selecteer een **Primair gebied** in de vervolgkeuzelijst.
+      * Dit kan na het maken niet meer worden gewijzigd.
+   * Als u een **Productie + werkgebied** -omgeving, moet u een omgevingsnaam en -beschrijving opgeven voor zowel uw productie- als staging-omgeving.
+      ![Omgevingsdialoogvenster toevoegen](assets/add-environment2.png)
 
 1. Klikken **Opslaan** om de opgegeven omgeving toe te voegen.
 
@@ -101,7 +103,7 @@ Op verwezenlijking, zal de voorproefdienst een standaardIP lijst van gewenste pe
 
 ![De dienst van de voorproef en zijn lijst van gewenste personen](assets/preview-ip-allow.png)
 
-Een gebruiker met de vereiste machtigingen moet de stappen van de volgende opties voltooien voordat de URL van de voorvertoningsservice met een van uw teams kan worden gedeeld. Op deze manier hebt u toegang tot de URL van de voorvertoning.
+Een gebruiker met de vereiste machtigingen moet de volgende stappen uitvoeren voordat de URL van de voorbeeldservice wordt gedeeld om ervoor te zorgen dat deze toegankelijk is.
 
 1. Creeer een aangewezen IP lijst van gewenste personen, pas het op de voorproefdienst toe, en unapply onmiddellijk `Preview Default [<envId>]` lijst van gewenste personen.
 
@@ -115,7 +117,7 @@ Nadat de functie is geactiveerd, kunt u inhoud publiceren naar de voorbeeldservi
 
 >[!NOTE]
 >
->Uw omgeving moet zijn AEM versie `2021.05.5368.20210529T101701Z` of hoger. Zorg ervoor dat er een updatepijpleiding op uw omgeving is uitgevoerd om dit te doen.
+>Uw omgeving moet zijn AEM versie `2021.05.5368.20210529T101701Z` of hoger om de voorvertoningsservice te gebruiken. Zorg ervoor dat er een updatepijpleiding op uw omgeving is uitgevoerd om dit te doen.
 
 ## Omgevingen bijwerken {#updating-dev-environment}
 
