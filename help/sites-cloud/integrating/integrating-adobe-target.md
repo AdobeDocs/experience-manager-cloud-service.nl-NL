@@ -4,9 +4,9 @@ description: Integreren met Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 9df5c3326d80e1a6c1726395722d86556af1ee29
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1042'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel 
 
 ### IMS-configuratie {#ims-configuration}
 
-Een configuratie IMS voor zowel de Lancering als Doel is noodzakelijk om Doel met AEM en Lancering behoorlijk te integreren. Terwijl de configuratie IMS voor Lancering vooraf in AEM as a Cloud Service wordt gevormd, moet de configuratie van doel IMS worden gecreeerd (nadat het Doel provisioned is). Zie [deze video](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) en [deze pagina](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) om te leren hoe te om de configuratie van het Doel te creëren IMS.
+Een configuratie IMS voor zowel de Lancering als Doel is noodzakelijk om Doel met AEM en Lancering behoorlijk te integreren. Terwijl de configuratie IMS voor Lancering vooraf in AEM as a Cloud Service wordt gevormd, moet de configuratie van doel IMS worden gecreeerd (nadat het Doel provisioned is). Zie [IMS-configuratie voor gebruik bij integratie met Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) en de video [Experience Platform Launch en AEM integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) om te leren hoe te om de configuratie van het Doel te creëren IMS.
 
 ### Adobe Target Tenant ID and Adobe Target Client Code {#tenant-client}
 
