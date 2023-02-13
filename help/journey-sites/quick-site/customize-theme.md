@@ -2,9 +2,9 @@
 title: Het sitethema aanpassen
 description: Leer hoe u het sitethema hebt gemaakt, hoe u het kunt aanpassen en hoe u het kunt testen met live AEM-inhoud.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9f5930fce8c2a7768cad696746a7c9fa3d8c2f9e
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,10 @@ Zodra u met de structuur van het themaproject vertrouwd bent, begin de lokale vo
 1. Wanneer de proxyserver wordt gestart, wordt automatisch een browser geopend voor `http://localhost:7001/`. Tik of klik op **LOKAAL AANMELDEN (ALLEEN TAKEN BEHEREN)** en meld u aan met de gegevens van de proxygebruiker die u van de AEM beheerder hebt ontvangen.
 
    ![Lokaal aanmelden](assets/sign-in-locally.png)
+
+   >[!TIP]
+   >
+   >Als u deze geloofsbrieven niet hebt, spreek met uw beheerder die van verwijzingen voorzien [Sectie Proxy-gebruiker instellen van het artikel Site maken van sjabloon](/help/journey-sites/quick-site/create-site.md#proxy-user) tijdens deze reis.
 
 1. Als u zich eenmaal hebt aangemeld, wijzigt u de URL in de browser zodat deze verwijst naar het pad naar de voorbeeldinhoud die de AEM aan u heeft gegeven.
 
