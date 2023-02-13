@@ -2,7 +2,7 @@
 title: Hoe maakt u een adaptieve formuliersjabloon?
 description: Maak adaptieve formuliersjablonen om de basisstructuur en eerste inhoud te definiëren met de Sjablooneditor.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
+source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
@@ -158,7 +158,7 @@ Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt 
 
 
 
-### Een formuliergegevensmodelschema koppelen aan een sjabloon {#associating-form-data-model-schema-in-template}
+## Een formuliergegevensmodelschema koppelen aan een sjabloon {#associating-form-data-model-schema-in-template}
 
 Auteurs kunnen een [!UICONTROL Form Data Model Schema] naar een sjabloon voor een adaptief formulier in de sjablooneditor. Auteurs kunnen een schema in de sjablooneditor selecteren. Wanneer u een schema aan een sjabloon koppelt en een auteur van een formulier een formulier maakt op basis van de sjabloon, wordt het schema vooraf geselecteerd voor het formulier. Hiermee kunnen auteurs van formulieren het gebruik van schema&#39;s reguleren en besparen ze ook tijd voor de auteur van formulieren. Een formuliergegevensmodelschema selecteren in een sjablooneditor:
 
