@@ -2,9 +2,9 @@
 title: Hoe maakt u een adaptieve formuliersjabloon?
 description: Maak adaptieve formuliersjablonen om de basisstructuur en eerste inhoud te definiëren met de Sjablooneditor.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1952'
 ht-degree: 0%
 
 ---
@@ -50,8 +50,7 @@ Bevat de volgende opties:
    * **Pagina-informatie**: Hier kunt u informatie opgeven, zoals de publicatie-/publicatietijd, miniaturen, bibliotheken aan de clientzijde, het paginabeleid en de clientbibliotheek van het paginaontwerp.
 
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Modus selecteren:** Hiermee kunt u de modus wijzigen.
-U kunt **[!UICONTROL Structure]** modus, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** in. In de structuurmodus kunt u de kop- en voettekst toevoegen en aanpassen. In de modus Initiële inhoud kunt u de inhoud van het formulier aanpassen.
+   * **Modus selecteren:** Hiermee kunt u de modus wijzigen. U kunt **[!UICONTROL Structure]** modus, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** in. In de structuurmodus kunt u de kop- en voettekst toevoegen en aanpassen. In de modus Initiële inhoud kunt u de inhoud van het formulier aanpassen.
    * **Voorvertoning:** Hiermee kunt u een voorvertoning weergeven van het uiterlijk van de sjabloon wanneer u de sjabloon publiceert. U kunt Laagkiezer en Voorvertoning gebruiken om de bewerkings- en voorvertoningsmodi in en uit te schakelen.
 * **Zijbalk:** Verstrekt de Inhoud, Eigenschappen, Activa, en de browsers van Componenten.
 * **Component, werkbalk:** Wanneer u een component selecteert, ziet u een werkbalk waarin u de component kunt aanpassen.
@@ -151,12 +150,24 @@ Wanneer u een adaptief formulier maakt, wordt de sjabloon weergegeven wanneer u 
 
 ## Een sjabloon importeren of exporteren {#importing-or-exporting-a-template}
 
-Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt dat is gemaakt met een aangepaste sjabloon, wordt de sjabloon niet gedownload. Wanneer u het font importeert op een andere [!DNL AEM Forms] wordt geïmporteerd zonder de sjabloon. Als een formulier wordt geïmporteerd maar de sjabloon ervan niet beschikbaar is, wordt het formulier niet gegenereerd. U kunt de aangepaste sjabloon verpakken vanuit `/conf` node in `https://<server>:<port>/crx/packmgr`en deze in de [!DNL AEM Forms] -instantie waarin u het formulier wilt uploaden. U kunt ook [Creeer een malplaatje gebruikend AEM Archeype en stel het in uw instantie van Cloud Services op](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt dat is gemaakt met een aangepaste sjabloon, wordt de sjabloon niet gedownload. Wanneer u het formulier importeert op een ander formulier [!DNL AEM Forms] wordt geïmporteerd zonder de sjabloon. Als een formulier wordt geïmporteerd maar de sjabloon ervan niet beschikbaar is, wordt het formulier niet gegenereerd. U kunt de aangepaste sjabloon verpakken vanuit `/conf` node in `https://<server>:<port>/crx/packmgr`en deze in de [!DNL AEM Forms] -instantie waarin u het formulier wilt uploaden. U kunt ook [Creeer een malplaatje gebruikend AEM Archeype en stel het in uw instantie van Cloud Services op](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >
-> * U kunt een [!UICONTROL Form Data Model Schema] naar een sjabloon voor een adaptief formulier in een sjablooneditor. Zie [Een adaptief formulier maken](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) voor meer informatie .
 > * U kunt ook de [!UICONTROL Document of Record] rechtstreeks vanuit de editor voor adaptieve formulieren of de sjablooneditor voor adaptieve formulieren. Zie voor meer informatie [Document met record genereren voor adaptieve Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
+### Een formuliergegevensmodelschema koppelen aan een sjabloon {#associating-form-data-model-schema-in-template}
+
+Auteurs kunnen een [!UICONTROL Form Data Model Schema] naar een sjabloon voor een adaptief formulier in de sjablooneditor. Auteurs kunnen een schema in de sjablooneditor selecteren. Wanneer u een schema aan een sjabloon koppelt en een auteur van een formulier een formulier maakt op basis van de sjabloon, wordt het schema vooraf geselecteerd voor het formulier. Hiermee kunnen auteurs van formulieren het gebruik van schema&#39;s reguleren en besparen ze ook tijd voor de auteur van formulieren. Een formuliergegevensmodelschema selecteren in een sjablooneditor:
+
+1. Tikken **[!UICONTROL Content Browser]** aan de linkerkant.
+1. Ga naar de formuliercontainer **[!UICONTROL Setting]**.
+1. Selecteer **[!UICONTROL Data Model]**.
+1. Kies het formuliergegevensmodel via **[!UICONTROL Select Form Data Model]** en sla de configuratie op.
+
+![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
 
 
 

@@ -2,9 +2,9 @@
 title: Document met record genereren voor adaptieve Forms
 description: Verklaart hoe u een malplaatje voor een Document van Verslag (DoR) voor Aangepast Forms kunt produceren.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
 workflow-type: tm+mt
-source-wordcount: '3112'
+source-wordcount: '3070'
 ht-degree: 1%
 
 ---
@@ -116,11 +116,16 @@ Na enige tijd het gebruiken van het malplaatje, besluit de organisatie anders te
 
 ![Bijgewerkte sjabloon](assets/we-retail-new-invoice.png)
 
-De ontwikkelaar uploadt en past de bijgewerkte sjabloon toe op het adaptieve formulier. Het adaptieve formulier detecteert automatisch velden waarvan de binding is gewijzigd en geeft een lijst weer.
+<!--
 
-![Bindingsfout](assets/we-retail-binding-error.png)
+The developer uploads and applies to the updated template to the adaptive form. The adaptive form automatically detects and displays list of fields where binding has changed.
 
-De formulierontwikkelaar bindt adaptieve Forms-velden aan het overeenkomstige Document of Record-sjabloon.
+![Binding Error](assets/we-retail-binding-error.png)
+
+The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+
+-->
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Wanneer het adaptieve formulier wordt verzonden, wordt nu een bijgewerkt document met records gegenereerd.
