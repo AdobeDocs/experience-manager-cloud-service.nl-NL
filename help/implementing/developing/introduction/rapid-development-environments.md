@@ -1,9 +1,9 @@
 ---
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
-source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
+source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3069'
 ht-degree: 0%
 
 ---
@@ -447,6 +447,7 @@ Om deze redenen, adviseert men dat na het bevestigen van code op een milieu RDE,
 
 Let ook op het volgende:
 
+* RDE&#39;s bevatten geen voorvertoningsniveau
 * RDEs steunt momenteel niet het bekijken en het zuiveren voorste code die gebruikend de Voorste-EindPijl van de Manager van de Wolk wordt opgesteld.
 * RDEs steunt momenteel niet het prereleasekanaal.
 
