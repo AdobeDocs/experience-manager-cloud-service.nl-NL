@@ -3,9 +3,9 @@ title: Implementeren naar AEM as a Cloud Service
 description: Implementeren naar AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
+source-git-commit: 0481267958fe8ac4b28b2742924d2bc2c337eebc
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3497'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-De grondbeginselen van codeontwikkeling zijn in AEM as a Cloud Service vergelijkbaar met de oplossingen AEM On Premise en Managed Services. Ontwikkelaars schrijven code en testen deze lokaal, wat vervolgens wordt doorgegeven aan externe AEM as a Cloud Service omgevingen. Cloud Manager, een optioneel hulpprogramma voor het leveren van inhoud voor Managed Services, is vereist. Dit is nu het enige mechanisme voor het opstellen van code aan AEM as a Cloud Service milieu&#39;s.
+De grondbeginselen van codeontwikkeling zijn in AEM as a Cloud Service vergelijkbaar met de oplossingen AEM On Premise en Managed Services. Ontwikkelaars schrijven code en testen deze lokaal, wat vervolgens wordt doorgegeven aan externe AEM as a Cloud Service omgevingen. Cloud Manager, een optioneel hulpprogramma voor het leveren van inhoud voor Managed Services, is vereist. Dit is nu het enige mechanisme voor het opstellen van code aan AEM as a Cloud Service ontwikkelings, stadium, en productiemilieu&#39;s. Voor snelle functiebevestiging en het zuiveren voorafgaand aan het opstellen van die bovengenoemde milieu&#39;s, kan de code van een lokale milieu aan een worden gesynchroniseerd [Snelle ontwikkelomgeving](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 De bijwerking van de [AEM](/help/implementing/deploying/aem-version-updates.md) is altijd een afzonderlijke implementatiegebeurtenis van &#39;push&#39; [aangepaste code](#customer-releases). Op een andere manier bekeken, zouden de versies van de douanecode tegen de AEM versie moeten worden getest die op productie is aangezien dat is wat het bovenop zal worden opgesteld. AEM versies worden bijgewerkt die daarna plaatsvinden. Deze worden regelmatig en automatisch toegepast. Ze zijn bedoeld om achterwaarts compatibel te zijn met de reeds geïmplementeerde klantcode.
 
@@ -170,7 +170,6 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Pakketbeheer - Meerdere inhoudspakketten migreren"
->abstract="Gebruik van pakketbeheer verkennen voor gebruik waarbij een inhoudspakket als &#39;één uit&#39; moet worden geïnstalleerd, waaronder het importeren van specifieke inhoud van productie naar staging om een productieprobleem op te lossen, het overbrengen van een klein inhoudspakket van een on-premise omgeving naar AEM Cloud-omgevingen en meer."
 >abstract="Gebruik van pakketbeheer verkennen voor gebruik waarbij een inhoudspakket moet worden geïnstalleerd als &#39;één uit&#39;, dat het importeren van specifieke inhoud van productie naar staging omvat om een productieprobleem op te lossen, het overbrengen van kleine inhoudspakketten van on-premise omgeving naar AEM Cloud-omgevingen en meer."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="De tool Content Transfer"
 
@@ -279,6 +278,12 @@ Als er wijzigingen in indexen worden aangebracht, is het belangrijk dat de blauw
 ### Conservatieve codering voor terugdraaiversies {#conservative-coding-for-rollbacks}
 
 Als een mislukking na de plaatsing wordt gemeld of ontdekt, is het mogelijk dat een terugschroeven van prijzen aan de Blauwe versie zal worden vereist. Het zou verstandig zijn om ervoor te zorgen dat de blauwe code compatibel is met nieuwe structuren die door de groene versie worden gecreëerd, aangezien de nieuwe structuren (muteerbare inhoud) niet worden teruggedraaid. Als de oude code niet compatibel is, moeten fixes worden toegepast in volgende versies van de klant.
+
+## Rapid Development Environment (RDE) {#rde}
+
+[Snelle ontwikkelomgevingen](/help/implementing/developing/introduction/rapid-development-environments.md) (of RDEs voor kort) staat ontwikkelaars toe om veranderingen snel op te stellen en te herzien, die de hoeveelheid tijd minimaliseren nodig om eigenschappen te testen die reeds aan een lokale ontwikkelomgeving worden bewezen te werken.
+
+In tegenstelling tot gewone ontwikkelomgevingen, die code via de pijplijn van de Manager van de Wolk opstellen, gebruiken de ontwikkelaars bevellijnhulpmiddelen om code van een lokale ontwikkelomgeving aan RDE te synchroniseren. Zodra de veranderingen met succes in een RDE zijn getest, zouden zij aan een regelmatige milieu van de Ontwikkeling van de Wolk door de pijpleiding van de Manager van de Wolk moeten worden opgesteld, die de code door de aangewezen kwaliteitsspoorten zal zetten.
 
 ## Runmodi {#runmodes}
 

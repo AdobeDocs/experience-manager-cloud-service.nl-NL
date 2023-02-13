@@ -2,10 +2,10 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 82%
+source-wordcount: '1797'
+ht-degree: 81%
 
 ---
 
@@ -79,6 +79,8 @@ Er zijn drie soorten milieu&#39;s beschikbaar met AEM as a Cloud Service:
 
    Zie [Omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) voor meer informatie .
 
+* **Snelle ontwikkelomgeving**: maakt snelle ontwikkelherhalingen mogelijk voor foutopsporing in nieuwe of bestaande code.
+
 ## Programma&#39;s {#programs}
 
 Elk nieuw AEM-project is altijd gebonden aan precies één specifieke codebase, waar u zowel de configuratie als de aangepaste code voor uw project kunt opslaan. Deze informatie wordt opgeslagen in een code-repository die via de gebruikelijke Git-clients toegankelijk is. De repository is voor u beschikbaar wanneer nieuwe programma&#39;s worden gemaakt.
@@ -90,7 +92,7 @@ Een AEM-programma is de container die het volgende bevat:
 | Code-repository (Git) |  1 |
 | Basisinstallatiekopie (Sites of Assets) |  1 |
 | Fase- en productieomgevingset (1:1) | 0 of 1 |
-| Niet-productieomgevingen (ontwikkeling of demonstratie) | 0 tot en met N |
+| Niet-productieomgevingen (RDE, ontwikkeling of demonstratie) | 0 tot en met N |
 | Pijplijn voor elke omgeving | 0 of 1 |
 
 Er zijn aanvankelijk twee typen programma&#39;s beschikbaar voor AEM as a Cloud Service:

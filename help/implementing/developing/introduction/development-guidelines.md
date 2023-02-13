@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2591'
 ht-degree: 1%
 
 ---
@@ -162,7 +162,7 @@ Klanten hebben toegang tot de CRXDE-lijst in de ontwikkelomgeving van de auteur,
 
 In plaats daarvan kan de Repository Browser worden gestart vanuit de Developer Console, waarmee een alleen-lezen weergave in de opslagplaats wordt geboden voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen. Meer informatie over de Repository Browser [hier](/help/implementing/developing/tools/repository-browser.md).
 
-In de Developer Console for dev, stage, and production environment is een set tools beschikbaar voor foutopsporing AEM as a Cloud Service ontwikkelaarsomgevingen. De URL kan worden bepaald door de URL van de service Auteur of Publiceren als volgt aan te passen:
+Een reeks hulpmiddelen voor het zuiveren AEM as a Cloud Service ontwikkelaarmilieu&#39;s zijn beschikbaar in de Console van de Ontwikkelaar voor RDE, dev, stadium, en productiemilieu&#39;s. De URL kan worden bepaald door de URL van de service Auteur of Publiceren als volgt aan te passen:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
