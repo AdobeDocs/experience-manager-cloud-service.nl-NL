@@ -2,9 +2,9 @@
 title: Document met record genereren voor adaptieve Forms
 description: Verklaart hoe u een malplaatje voor een Document van Verslag (DoR) voor Aangepast Forms kunt produceren.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
+source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
 workflow-type: tm+mt
-source-wordcount: '3070'
+source-wordcount: '3007'
 ht-degree: 1%
 
 ---
@@ -326,8 +326,10 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
       * **Sjabloon**: Als u een aangepaste sjabloon wilt selecteren, bladert u en selecteert u een XDP in het dialoogvenster [!DNL AEM Forms] server. Als u een sjabloon wilt gebruiken die niet beschikbaar is op uw [!DNL AEM Forms] server, moet u de XDP eerst uploaden naar uw [!DNL AEM Forms] server.
       * **Accentkleur**: De kleur waarin koptekst en scheidingslijnen worden gerenderd in het document van record PDF.
       * **Lettertypefamilie**: Lettertypefamilie van de tekst in Document of Record PDF.
+
       * **Formulierobjecten opnemen die niet aan het gegevensmodel zijn gebonden**: Als u de eigenschap instelt, worden niet-gebonden velden van het op schema gebaseerde adaptieve formulier opgenomen in het document of record.
-      * **Verborgen velden uitsluiten van het document of record**: Als u de eigenschap instelt, worden de verborgen velden aangegeven die u wilt uitsluiten van Document of Record.
+      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+
       * **Beschrijving van deelvensters verbergen**: Als u de eigenschap instelt, wordt de beschrijving van het deelvenster/de tabel niet opgenomen in het document met records. Toepasselijk voor paneel en lijst.
    1. **Eigenschappen van formulierveld**:
       * **Geef voor de componenten Selectievakje en Keuzerondje alleen de geselecteerde waarden weer**: Als u de eigenschap instelt, worden alleen geselecteerde waarden van selectievakje en keuzerondje weergegeven in [!UICONTROL Document of Record].
@@ -341,7 +343,6 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
       * **Label voor afwijzing**: Label van disclaimer.
       * **Disclaimer**: Tekst die de reikwijdte van de rechten en verplichtingen in het document van registratie aangeeft.
       * **Disclaimtekst**: Tekst van disclaimer.
-
       ![Master pagina-eigenschappen](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
@@ -394,4 +395,4 @@ De instelling van de component Document of Record is beschikbaar onder de eigens
 **Instellingen voor formulierniveau**
 
 * **Inclusief niet-gebonden velden in DoR:** Als u de eigenschap instelt, worden niet-gebonden velden van op schema gebaseerde adaptieve vorm opgenomen in Document of Record. Standaard is dit waar.
-* **Velden uitsluiten van DoR indien verborgen:** Stel de eigenschap in om de verborgen velden bij het verzenden van het formulier uit te sluiten van Document of Record. Wanneer u [Revalidate op server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), worden de verborgen velden opnieuw berekend voordat deze worden uitgesloten van het Document of Record.
+<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
