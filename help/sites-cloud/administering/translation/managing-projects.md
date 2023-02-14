@@ -4,9 +4,9 @@ description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM ku
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
+source-git-commit: c9d901db6873965643f5ababe544be3aa635a8e4
 workflow-type: tm+mt
-source-wordcount: '3992'
+source-wordcount: '4086'
 ht-degree: 0%
 
 ---
@@ -445,6 +445,16 @@ U kunt als volgt master taalkopieën vergelijken met de taal:
 
 1. De twee pagina&#39;s (opstart en bron) worden naast elkaar geopend.
    * Voor volledige informatie over het gebruik van deze functie raadpleegt u [Pagina grijs](/help/sites-cloud/authoring/features/page-diff.md).
+
+## Een bronpagina verplaatsen of de naam ervan wijzigen {#move-source}
+
+Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)Als u de pagina na de verplaatsing opnieuw vertaalt, wordt er een nieuwe taalkopie gemaakt op basis van de nieuwe paginanaam/locatie. De oude taalkopie op basis van de vorige naam/locatie blijft aanwezig.
+
+De beste praktijk in dit scenario is deze procedure te volgen:
+1. Publiceer de taalkopieën die zijn gekoppeld aan de bronpagina die u wilt verplaatsen.
+1. Verwijder ze.
+1. Maak nieuwe taalkopieën van de nieuw verplaatste bronpagina.
+1. Publiceer de zojuist gemaakte taalkopieën.
 
 ## Vertaaltaken importeren en exporteren {#import-export}
 
