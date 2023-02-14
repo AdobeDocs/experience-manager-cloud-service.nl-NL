@@ -4,9 +4,9 @@ description: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
+source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,6 @@ Als u een end-to-end validatie van de code en het proces wilt uitvoeren, inclusi
 | Elementen extraheren uit ZIP-archief | Niet ondersteund | Zie [ZIP-extractie in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Waarderingen activa | Niet ondersteund | De beoordelingswidget in de schema-editor voor metagegevens wordt niet ondersteund. |
 | Inhoudsverwijderingsfilter | Niet ondersteund | Een veelgebruikte optie voor `ContentDispositionFilter` is om beheerders te laten configureren [!DNL Experience Manager] om HTML-bestanden te bedienen en PDF-bestanden inline te openen in plaats van deze te downloaden. In de publicatie-instanties kunt u de indeling beheren met de Dispatcher-configuratie. In de instanties van de Auteur, adviseert Adobe geen wijziging in de kopbal van de Verplaatsing van de Inhoud. Zie [Filter Inhoud verplaatsen in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
-| [Rapport downloaden](/help/assets/asset-reports.md) | Niet ondersteund | Momenteel is het downloadrapport met informatie over het gebruik van middelen niet beschikbaar. Zie [rapport downloaden in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Fotosjabloon voor product | Niet ondersteund | Zie [productfotosjabloon in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | Slimme omzetting | Niet ondersteund | [Slimme vertaling](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) wordt niet ondersteund in [!DNL Experience Manager] als [!DNL Cloud Service]. |
 | WebDAV | Niet ondersteund | Voor alternatieven, zie [[!DNL Creative Cloud] integratie](/help/assets/aem-cc-integration-best-practices.md) of [Referentiemateriaal voor ontwikkelaars](/help/assets/developer-reference-material-apis.md). |
