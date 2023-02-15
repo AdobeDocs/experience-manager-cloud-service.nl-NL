@@ -1,9 +1,9 @@
 ---
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
-source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
+source-git-commit: e5a9f497e753f328ff14487f4985541c1c77ae0e
 workflow-type: tm+mt
-source-wordcount: '3069'
+source-wordcount: '3259'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,11 @@ Om veranderingen op te stellen, vereisen de huidige milieu&#39;s van de Ontwikke
 RDEs staat ontwikkelaars toe om veranderingen snel op te stellen en te herzien, die de hoeveelheid tijd minimaliseren nodig om eigenschappen te testen die aan een lokale ontwikkelomgeving blijken te werken.
 
 Zodra de veranderingen in RDE zijn getest, kunnen zij aan een regelmatige milieu van de Ontwikkeling van de Wolk door de pijpleiding van de Manager van de Wolk worden opgesteld.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
+
+
+U kunt aanvullende video&#39;s weergeven [instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)en de [ontwikkelingscyclus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) RDE gebruiken.
 
 ## Inleiding {#introduction}
 
@@ -138,6 +143,7 @@ Nadat u een RDE voor uw programma hebt toegevoegd met gebruik van Cloud Manager,
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
+Zie voor meer informatie en demonstratie de [hoe te opstelling RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) videozelfstudie.
 
 ## RDE gebruiken terwijl het Ontwikkelen van een Nieuwe Eigenschap {#using-rde-while-developing-a-new-feature}
 
@@ -256,13 +262,23 @@ waar de reactie voor een succesvolle plaatsing op het volgende lijkt:
 
 <u>Een Apache/Dispatcher-configuratie implementeren</u>
 
-Voor dit type configuratie moet de volledige mapstructuur de vorm hebben van een ZIP-bestand. U kunt het in werking stellen door dit bevel van de wortel van een de configuratiemap van de verzender in werking te stellen:
+Voor dit type configuratie moet de volledige mapstructuur de vorm hebben van een ZIP-bestand.
 
-`zip -y -r dispatcher.zip`
+Van de `dispathcer` van een AEM project, kunt u de verzender configuratie door het hieronder Gemaakt bevel in werking te stellen zip:
+
+`mvn clean package`
+
+of met de opdracht onder zip van het `src` map van de `dispatcher` module:
+
+`zip -y -r dispatcher.zip .`
 
 dan stel de configuratie door dit bevel op:
 
-`aio aem:rde:install -t dispatcher-config dispatcher-wknd-2.1.0.zip`
+`aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-X.X.X-SNAPSHOT.zip`
+
+>[!TIP]
+>
+>Het bovenstaande bevel veronderstelt u opstelt [WKND](https://github.com/adobe/aem-guides-wknd) de verzendersconfiguraties van het project. Vervang de `X.X.X` met het overeenkomstige WKND aantal van de projectversie of uw project-specifiek versieaantal wanneer het opstellen van de de vraagconfiguratie van uw project.
 
 Een succesvolle plaatsing zal een reactie op het volgende produceren lijken:
 
@@ -342,6 +358,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
+
+Zie voor meer informatie en demonstratie de [RDE-opdrachten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html) videozelfstudie.
 
 ## Herstellen {#reset-rde}
 
@@ -464,7 +482,7 @@ Een tussenliggend model is een model waarbij een organisatie een aantal RDE&#39;
 
 ## Hoe verschilt een AEM Forms Cloud Service Rapid Development Environment (RDE) van andere omgevingen? {#how-are-forms-rds-different-from-cloud-development-environments}
 
-Forms-ontwikkelaars kunnen AEM Forms Cloud Service Rapid Development Environment gebruiken om snel Adaptive Forms, Workflows en aanpassingen te ontwikkelen, zoals het aanpassen van kerncomponenten, integratie met systemen van derden en meer. De AEM Forms Cloud Service Rapid Development Environment (RDE) heeft geen ondersteuning voor communicatie-API&#39;s en voor functies en mogelijkheden die Documenten met records vereisen, zoals het genereren van een Document of Record bij het verzenden van een adaptief formulier. De hieronder vermelde AEM Forms-functies zijn niet beschikbaar in een Rapid Development Environment (RDE):
+Forms-ontwikkelaars kunnen AEM Forms Cloud Service Rapid Development Environment gebruiken om snel Adaptive Forms, Workflows en aanpassingen te ontwikkelen, zoals het aanpassen van kerncomponenten, integratie met systemen van derden en meer. De AEM Forms Cloud Service Rapid Development Environment (RDE) biedt geen ondersteuning voor communicatie-API&#39;s en voor functies en mogelijkheden die Documenten van Record vereisen, zoals het genereren van een Document of Record bij het verzenden van een adaptief formulier. De hieronder vermelde AEM Forms-functies zijn niet beschikbaar in een Rapid Development Environment (RDE):
 
 * Een recorddocument configureren voor een adaptief formulier
 * Een document met records genereren bij het indienen van een adaptief formulier of met een workflowstap
@@ -474,5 +492,9 @@ Forms-ontwikkelaars kunnen AEM Forms Cloud Service Rapid Development Environment
 
 >[!NOTE]
 >
-> De interface van Rapid Development Environment (RDE) en andere Cloud Service-omgevingen voor Forms veranderen niet. Alle aan het document van Verslag verwante opties, zoals het selecteren van een document van verslagmalplaatje voor een adaptief vorm, blijven in UI verschijnen. Deze omgevingen hebben geen communicatie-API&#39;s en documentmogelijkheden om dergelijke opties te testen. Als u dus een optie kiest waarvoor communicatie-API&#39;s of de functie Document of Record vereist is, wordt geen actie uitgevoerd en wordt een foutbericht weergegeven of geretourneerd.
+> Er is geen verschil tussen de interface van Rapid Development Environment (RDE) en andere Cloud Service omgevingen voor Forms. Alle aan het document van Verslag verwante opties, zoals het selecteren van een document van verslagmalplaatje voor een adaptief vorm, blijven in UI verschijnen. Deze omgevingen hebben geen communicatie-API&#39;s en documentmogelijkheden om dergelijke opties te testen. Als u dus een optie kiest waarvoor communicatie-API&#39;s of de functie Document of Record vereist is, wordt geen actie uitgevoerd en wordt een foutbericht weergegeven of geretourneerd.
+
+## RDE-zelfstudie
+
+Raadpleeg voor meer informatie over RDE in AEM as a Cloud Service [videozelfstudie die laat zien hoe u het programma kunt instellen, gebruiken en de ontwikkelingscyclus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
