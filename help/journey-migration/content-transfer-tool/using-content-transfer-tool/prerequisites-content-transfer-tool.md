@@ -2,7 +2,7 @@
 title: Voorwaarden voor het gereedschap Inhoud overbrengen
 description: Voorwaarden voor het gereedschap Inhoud overbrengen
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 4ccebe19d38f1ece58ea7170344ef2fd86a513d2
+source-git-commit: 048f358ed125e3627896aeeb86242340e2db9272
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Controleer alle onderstaande overwegingen:
 | Overwegingen | Wat wordt momenteel ondersteund |
 |--- |--- |
 | AEM | Het gereedschap Inhoud overbrengen kan alleen worden uitgevoerd in AEM 6.3 of hoger. |
-| Grootte van segmentwinkel | Een bestaande opslagplaats met minder dan 55 miljoen JCR-knooppunten en maximaal 83 GB (gecomprimeerde onlinegrootte) op *Auteur* en 50 GB aan *Publiceren* worden momenteel ondersteund. Creeer een steunkaartje met de Zorg van de Klant van Adobe om opties voor de grootte van de segmentopslag boven deze grenzen te bespreken. |
+| Grootte van segmentwinkel | Een bestaande opslagplaats met minder dan 55 miljoen JCR-knooppunten en maximaal 250 GB (gecomprimeerde onlinegrootte) op *Auteur* en 50 GB aan *Publiceren* worden momenteel ondersteund. Creeer een steunkaartje met de Zorg van de Klant van Adobe om opties voor de grootte van de segmentopslag boven deze grenzen te bespreken. |
 | Totale grootte van opslagplaats voor inhoud <br>*(segmentopslag + gegevensopslag)* | Content Transfer Tool is ontworpen om inhoud van maximaal 20 TB over te brengen voor het type gegevensopslag van bestandsgegevens. Hoger dan 20 TB wordt momenteel niet ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor inhoud groter dan 20 TB te bespreken. <br>Als u het proces voor het overdragen van inhoud voor grote opslagplaatsen aanzienlijk wilt versnellen, kunt u [voorkopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) kan worden gebruikt. Dit geldt voor File Data Store, Amazon S3 en Azure Data Store. Voor Amazon S3 en Azure Data Store wordt opslagruimte van meer dan 20 TB ondersteund. |
 | Totale indexgrootte van Lucene | Totale Lucene Index-grootte van maximaal 25 GB, exclusief `/oak:index/lucene` en `/oak:index/damAssetLucene` wordt momenteel ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor indexgrootte boven deze limiet te bespreken. |
 | Lengte knooppuntnaam | De lengte van een knooppuntnaam moet 150 bytes of minder zijn wanneer de knoop ouderweg >= (gelijk of groter dan) 350 bytes is. Deze knooppuntnamen moeten worden ingekort tot &lt;= 150 bytes om door de opslag van de knoop van het Document in AEM as a Cloud Service te worden gesteund. De oplossingen mislukken als deze lange knooppuntnamen niet vast zijn. |
