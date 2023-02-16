@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2022.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Als u oudere versies van TLS blijft gebruiken als 1.0 of 1.1, kan de toegang tot
 
 ## Cloud Manager {#cloud-manager}
 
-U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+U vindt een volledige lijst met maandreleases van Cloud Manager [hier.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Migratiehulpmiddelen {#migration-tools}
 

@@ -1,13 +1,13 @@
 ---
 title: Opmerkingen bij de release 2022.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 6a4e9015e18556c04a71cba0dfa6c7f688c36cb6
+exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
 
 ---
-
 
 # Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -78,7 +78,7 @@ Bekijk de video Overzicht van de release van augustus 2022 voor een overzicht va
 
 ## Cloud Manager {#cloud-manager}
 
-U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+U vindt een volledige lijst met maandreleases van Cloud Manager [hier.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Migratiehulpmiddelen {#migration-tools}
 

@@ -1,13 +1,13 @@
 ---
 title: Opmerkingen bij de release 2022.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: b1c4706d2d148c136eed66b0bff6f792a89e9d8c
+exl-id: b339ab48-e836-4589-a573-9c50917b9280
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
 
 ---
-
 
 # Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -120,7 +120,7 @@ U kunt nu Adobe Experience Manager Assets configureren voor [het type elementen 
 
 ## Cloud Manager {#cloud-manager}
 
-U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+U vindt een volledige lijst met maandreleases van Cloud Manager [hier.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Migratiehulpmiddelen {#migration-tools}
 
