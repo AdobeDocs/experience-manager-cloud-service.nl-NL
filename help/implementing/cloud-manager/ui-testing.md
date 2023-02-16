@@ -2,9 +2,9 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 00cbf0b9fa50ab3f42a0a3917caf40708c7209b9
+source-git-commit: b1eacc8432a73f015529975e6960afbe9dee7565
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '2143'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ Het testen van de gebruikersinterface van de douane is een facultatieve eigensch
 
 ## Overzicht {#custom-ui-testing}
 
-AEM biedt een geïntegreerde suite [Kwaliteitspates van Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) voor vloeiende updates van aangepaste toepassingen. Met name wordt met de IT-test al begonnen met het maken en automatiseren van aangepaste tests met behulp van AEM API&#39;s.
+AEM biedt een geïntegreerde suite [Kwaliteitspates van Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) voor vloeiende updates van aangepaste toepassingen. Met name ondersteunen IT-testpoorten al het maken en automatiseren van aangepaste tests met behulp van AEM API&#39;s.
 
-De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd). Bovendien kan een UI testproject gemakkelijk door te gebruiken worden geproduceerd [het AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd). Bovendien, kan een UI testproject gemakkelijk door te gebruiken worden geproduceerd [het AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
 UI-tests worden uitgevoerd als onderdeel van een specifieke kwaliteitspoort voor elke Cloud Manager-pijplijn met een [toegewijd **Aangepaste UI-tests** stap.](/help/implementing/cloud-manager/deploy-code.md) Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten laten fouten toe om worden ontdekt en worden gemeld.
 
@@ -32,45 +32,40 @@ In tegenstelling tot aangepaste functionele tests, die HTTP-tests zijn die in Ja
 >[!TIP]
 >
 >Adobe raadt u aan de structuur en taal (JavaScript en WDIO) te volgen die in het dialoogvenster [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
-
-### Klanten kiezen {#customer-opt-in}
-
-Als u wilt dat Cloud Manager uw UI-tests kan uitvoeren, moet u zich aanmelden voor deze functie door een bestand aan uw opslagplaats toe te voegen.
-
-* De bestandsnaam moet `testing.properties`.
-* De bestandsinhoud moet `ui-tests.version=1`.
-* Het bestand moet zich onder de toegewezen submodule voor UI-tests bevinden naast de `pom.xml` dossier van UI test submodule.
-* Het bestand moet de basis van de ingebouwde `tar.gz` bestand.
-
-De UI-tests worden uitgevoerd en uitgevoerd als dit bestand niet aanwezig is.
-
-Als u een `testing.properties` bestand in het constructieartefact toevoegen `include` in de `assembly-ui-test-docker-context.xml` bestand.
-
-```xml
-[...]
-<includes>
-    <include>Dockerfile</include>
-    <include>wait-for-grid.sh</include>
-    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
-</includes>
-[...]
-```
-
->[!NOTE]
 >
->Als uw project deze lijn niet omvat, zult u het dossier moeten uitgeven om in het testen UI te kiezen.
->
->Het bestand kan een regel bevatten die u adviseert het bestand niet te bewerken. Dit is toe te schrijven aan het worden geïntroduceerd in uw project alvorens het opt-in testen UI werd geïntroduceerd en de cliënt was niet bedoeld om het dossier uit te geven. Dit kan veilig worden genegeerd.
+>Adobe verstrekt ook een UI testmodulevoorbeeld dat op Java en WebDriver wordt gebaseerd. Raadpleeg de [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) voor meer informatie.
+
+## Aan de slag met gebruikersinterfacetests {#get-started-ui-tests}
+
+In deze sectie worden de stappen beschreven die zijn vereist voor het instellen van UI-tests voor uitvoering in Cloud Manager.
+
+1. Bepaal de programmeertaal die u wilt gebruiken.
+
+   * Gebruik voor JavaScript en WDIO de voorbeeldcode die automatisch wordt gegenereerd in het dialoogvenster `ui.tests` van uw opslagplaats voor Cloud Manager.
+
+      >[!NOTE]
+      >
+      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+
+   * Gebruik voor Java en WebDriver de voorbeeldcode van het dialoogvenster [AEM opslagplaats voor testvoorbeelden.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
+
+   * Voor andere programmeertalen raadpleegt u de sectie [UI-tests samenstellen](#building-ui-tests) in dit document aan opstelling het testproject.
+
+1. Zorg ervoor dat de UI-test wordt geactiveerd volgens de sectie [Klanten kiezen](#customer-opt-in) in dit document.
+
+1. Ontwikkel uw testdoosjes en [Voer ze lokaal uit.](#run-ui-tests-locally)
+
+1. Leg uw code vast in de gegevensopslagruimte van Cloud Manager en voer een pijplijn van Cloud Manager uit.
 
 ## UI-tests samenstellen {#building-ui-tests}
 
-Een Maven project produceert een Docker bouwt context. In deze docker wordt de bouwcontext beschreven hoe u een Docker-afbeelding kunt maken die de UI-tests bevat en die gebruikers van Cloud Manager kunnen gebruiken om een Docker-afbeelding te genereren die de werkelijke UI-tests bevat.
+Een Maven project produceert een Docker bouwt context. In deze docker wordt de bouwcontext beschreven hoe u een Docker-afbeelding kunt maken die de UI-tests bevat en die door Cloud Manager wordt gebruikt om een Docker-afbeelding te genereren die de werkelijke UI-tests bevat.
 
 In deze sectie worden de stappen beschreven die nodig zijn om een UI-testproject toe te voegen aan uw opslagplaats.
 
 >[!TIP]
 >
->De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) Kan een project van de Tests UI produceren voor u geen speciale vereisten voor de programmeertaal hebt.
+>De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) Kan een project van de Tests UI voor u produceren, dat aan de volgende beschrijving volgzaam is, als u geen speciale vereisten voor de programmeertaal hebt.
 
 ### Een docker Build-context genereren {#generate-docker-build-context}
 
@@ -159,6 +154,49 @@ Het archief met de Docker-build-context wordt automatisch opgehaald door Cloud M
 
 De build moet nul of één archief produceren. Als het nul archieven produceert, gaat de teststap door gebrek over. Als de build meer dan één archief produceert, is het geselecteerde archief niet-deterministisch.
 
+### Klanten kiezen {#customer-opt-in}
+
+Als u wilt dat Cloud Manager uw UI-tests kan uitvoeren, moet u zich aanmelden voor deze functie door een bestand aan uw opslagplaats toe te voegen.
+
+* De bestandsnaam moet `testing.properties`.
+* De bestandsinhoud moet `ui-tests.version=1`.
+* Het bestand moet zich onder de toegewezen submodule bevinden voor UI-tests naast de `pom.xml` dossier van UI test submodule.
+* Het bestand moet de basis van de ingebouwde `tar.gz` bestand.
+
+De UI-tests worden uitgevoerd en uitgevoerd als dit bestand niet aanwezig is.
+
+Als u een `testing.properties` bestand in het constructieartefact toevoegen `include` in de `assembly-ui-test-docker-context.xml` bestand.
+
+```xml
+[...]
+<includes>
+    <include>Dockerfile</include>
+    <include>wait-for-grid.sh</include>
+    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
+</includes>
+[...]
+```
+
+>[!NOTE]
+>
+>Als uw project deze lijn niet omvat, zult u het dossier moeten uitgeven om in het testen UI te kiezen.
+>
+>Het bestand kan een regel bevatten die u adviseert het bestand niet te bewerken. Dit is toe te schrijven aan het worden geïntroduceerd in uw project alvorens het opt-in testen UI werd geïntroduceerd en de cliënt was niet bedoeld om het dossier uit te geven. Dit kan veilig worden genegeerd.
+
+Als u de voorbeelden gebruikt die door Adobe worden verstrekt:
+
+* Voor het JavaScript-veld `ui.tests` op basis van de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests), kunt u onder bevel uitvoeren om de vereiste configuratie toe te voegen.
+
+   ```shell
+   echo "ui-tests.version=1" > testing.properties
+   
+   if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
+     awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
+   fi
+   ```
+
+* Voor de Java-testvoorbeelden die al worden aangeboden, is de markering voor aanmelden ingesteld.
+
 ## Tests voor gebruikersinterface schrijven {#writing-ui-tests}
 
 Deze sectie beschrijft de overeenkomsten die het beeld van de Docker dat uw tests UI bevat moet volgen. De Docker-afbeelding is gemaakt op basis van de constructiecontext van Docker die in de vorige sectie is beschreven.
@@ -173,12 +211,17 @@ De volgende omgevingsvariabelen worden tijdens runtime aan de Docker-afbeelding 
 | `SELENIUM_BROWSER` | `chrome` | De browserimplementatie die wordt gebruikt door de seleniumserver |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | De URL van de AEM instantie van de auteur |
 | `AEM_AUTHOR_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt om u aan te melden bij de instantie van de AEM auteur |
-| `AEM_AUTHOR_PASSWORD` | `admin` | Het wachtwoord om zich aan te melden bij de instantie van de AEM auteur |
+| `AEM_AUTHOR_PASSWORD` | `admin` | Het wachtwoord om u aan te melden bij de AEM |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | De URL van de AEM-publicatie-instantie |
-| `AEM_PUBLISH_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt voor aanmelding bij de AEM-publicatie-instantie |
+| `AEM_PUBLISH_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt om u aan te melden bij de AEM-publicatie-instantie |
 | `AEM_PUBLISH_PASSWORD` | `admin` | Het wachtwoord voor aanmelding bij de AEM-publicatie-instantie |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Het pad waar het XML-rapport van de testresultaten moet worden opgeslagen |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | De URL waarnaar het bestand moet worden geüpload om het toegankelijk te maken voor Selenium |
+
+De Adobe testmonsters verstrekken helperfuncties om tot de configuratieparameters toegang te hebben:
+
+* JavaScript: Zie de [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) module
+* Java: Zie de [Config](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
 
 ### Wachten op klaar voor selenium {#waiting-for-selenium}
 
@@ -189,17 +232,32 @@ Alvorens de tests beginnen, is het de verantwoordelijkheid van het beeld van de 
 
 Zodra het statuseindpunt van Selenium met een positieve reactie beantwoordt, kunnen de tests beginnen.
 
+De Adobe UI teststeekproeven behandelen dit met het manuscript `wait-for-grid.sh`, die wordt uitgevoerd bij het opstarten van Docker en de daadwerkelijke testuitvoering pas begint wanneer het net klaar is.
+
 ### Testrapporten genereren {#generate-test-reports}
 
 De Docker-afbeelding moet testrapporten genereren in de XML-indeling JUnit en deze opslaan in het pad dat is opgegeven door de omgevingsvariabele `REPORTS_PATH`. De indeling JUnit XML is een veelgebruikte indeling voor het rapporteren van de resultaten van tests. Als de Docker-afbeelding gebruikmaakt van Java en Maven, gebruikt u standaardtestmodules zoals [Maven Surefire-plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) en [Maven Failsafe-insteekmodule](https://maven.apache.org/surefire/maven-failsafe-plugin/) kan dergelijke rapporten uit de doos produceren.
 
 Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geïmplementeerd, controleert u de documentatie voor de gekozen hulpmiddelen op hoe u JUnit-XML-rapporten kunt genereren.
 
+>[!NOTE]
+>
+>Het resultaat van de teststap voor de gebruikersinterface wordt alleen op basis van de testrapporten geëvalueerd. Zorg ervoor dat u het rapport overeenkomstig voor de uitvoering van de test genereert.
+>
+>De beweringen van het gebruik in plaats van enkel het registreren van een fout aan STDERR of het terugkeren van een niet-nul uitgangscode anders kan uw plaatsingspijpleiding normaal te werk gaan.
+
 ### Schermafbeeldingen en video&#39;s vastleggen {#capture-screenshots}
 
-De Docker-afbeelding kan aanvullende testuitvoer genereren (bijvoorbeeld screenshots, video&#39;s) en deze opslaan in het pad dat wordt aangegeven door de omgevingsvariabele `REPORTS_PATH`. Alle bestanden gevonden onder de `REPORTS_PATH` worden opgenomen in het archief van de testresultaten.
+De Docker-afbeelding kan aanvullende testuitvoer genereren (bijvoorbeeld screenshots of video&#39;s) en deze opslaan in het pad dat wordt aangegeven door de omgevingsvariabele `REPORTS_PATH`. Alle bestanden gevonden onder de `REPORTS_PATH` worden opgenomen in het archief van de testresultaten.
 
-Als een archief van het testresultaat tijdens een UI testuitvoering is gecreeerd, bevat het dossier van het testlogboek aan het eind een verwijzing naar de plaats van het archief van het testresultaat.
+De teststeekproeven die door Adobe door gebrek worden verstrekt leiden tot schermafbeeldingen voor om het even welke ontbroken test.
+
+U kunt de hulpfuncties gebruiken om schermafbeeldingen tot stand te brengen door uw tests.
+
+* JavaScript: [takeScreenshot, opdracht](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
+* Java: [Opdrachten](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+
+Als een archief van het testresultaat tijdens een UI testuitvoering wordt gecreeerd, bevat het dossier van het testlogboek een verwijzing naar de plaats van het archief van het testresultaat aan het eind.
 
 ```
 [...]
@@ -222,6 +280,68 @@ Tests moeten soms bestanden uploaden naar de toepassing die wordt getest. Om de 
    * Het formulier met meerdere delen moet één bestandsveld hebben.
    * Dit is gelijk aan `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
    * Raadpleeg de documentatie en bibliotheken van de programmeertaal die in het beeld van de Docker wordt gebruikt om te weten hoe te om zulk een HTTP- verzoek uit te voeren.
+   * De monsters van de Adobe test verstrekken helperfuncties voor het uploaden van dossiers:
+      * JavaScript: Zie de [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) gebruiken.
+      * Java: Zie de [FileHandler](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) klasse.
 1. Als het uploaden is gelukt, retourneert de aanvraag een `200 OK` reactie van het type `text/plain`.
    * De inhoud van de reactie is een ondoorzichtige bestandshandgreep.
    * U kunt deze greep gebruiken in plaats van een bestandspad in een `<input>` -element om het uploaden van bestanden in uw toepassing te testen.
+
+## UI-tests lokaal uitvoeren {#run-ui-tests-locally}
+
+Alvorens tests UI in een pijpleiding van de Manager van de Wolk te activeren, adviseert het om de tests UI plaatselijk in werking te stellen in de richting van [as a Cloud Service SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) of in een werkelijk AEM as a Cloud Service instantie.
+
+### Vereisten {#prerequisites}
+
+De tests in Cloud Manager worden uitgevoerd met een technische beheerder.
+
+Voor het uitvoeren van de tests UI van uw lokale machine, creeer een gebruiker met admin-als toestemmingen om het zelfde gedrag te bereiken.
+
+### JavaScript-testvoorbeeld {#javascript-sample}
+
+1. Open een shell en navigeer naar de `ui.tests` map in uw opslagplaats
+
+1. Voer hieronder bevel uit om de tests te beginnen gebruikend Maven
+
+   ```shell
+   mvn verify -Pui-tests-local-execution \
+   -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+   -DAEM_AUTHOR_USERNAME=<user> \
+   -DAEM_AUTHOR_PASSWORD=<password> \
+   -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+   -DAEM_PUBLISH_USERNAME=<user> \
+   -DAEM_PUBLISH_PASSWORD=<password> \
+   -DHEADLESS_BROWSER=true \
+   -DSELENIUM_BROWSER=chrome
+   ```
+
+>[!NOTE]
+>
+>* Dit begint een standalone selenium instantie en voert de tests tegen het uit.
+>* De logbestanden worden opgeslagen in het dialoogvenster `target/reports` map van uw opslagplaats
+>* U moet ervoor zorgen dat de nieuwste Chrome-versie actief is wanneer de test de meest recente release van ChromeDriver automatisch downloadt voor tests.
+>
+>Zie voor meer informatie de [AEM opslagplaats voor projectarchetype.](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)
+
+### Java Test Sample {#java-sample}
+
+1. Open een shell en navigeer naar de `ui.tests/test-module` map in uw opslagplaats
+
+1. Voer hieronder bevel uit om de tests te beginnen gebruikend Maven
+
+   ```shell
+   # Start selenium docker image (for x64 CPUs)
+   docker run --platform linux/amd64 -d -p 4444:4444 selenium/standalone-chrome-debug:latest
+   
+   # Start selenium docker image (for ARM CPUs)
+   docker run -d -p 4444:4444 seleniarm/standalone-chromium
+   
+   # Run the tests using the previously started Selenium instance
+   mvn verify -Pui-tests-local-execution -DSELENIUM_BASE_URL=http://<server>:<port>
+   ```
+
+>[!NOTE]
+>
+>* De logbestanden worden opgeslagen in het dialoogvenster `target/reports` van uw opslagplaats.
+>
+>Zie voor meer informatie de [AEM opslagplaats voor testvoorbeelden.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/README.MD)

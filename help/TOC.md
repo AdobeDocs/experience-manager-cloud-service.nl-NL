@@ -8,7 +8,7 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ef617b38c8dec355a0fa8ca72af652f37d6668a4
+source-git-commit: 5eeece66bb4d13ac9d40a18514332133dc980325
 workflow-type: tm+mt
 source-wordcount: '3931'
 ht-degree: 21%
@@ -773,8 +773,8 @@ ht-degree: 21%
          + [Testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + [Functionele tests](/help/implementing/cloud-manager/functional-testing.md)
-         + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
+         + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA-rapportage](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
