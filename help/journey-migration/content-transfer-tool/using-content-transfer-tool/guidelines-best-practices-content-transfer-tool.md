@@ -2,10 +2,10 @@
 title: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 description: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b0d219f712b1dbbfa70d66ac14c0a66dc89ebbab
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 19%
+source-wordcount: '1613'
+ht-degree: 18%
 
 ---
 
@@ -24,9 +24,10 @@ Er is een nieuwe versie van het gereedschap Inhoud overbrengen beschikbaar waari
 
 * Zelfbediening om een migratieset één keer uit te pakken en tegelijkertijd in meerdere omgevingen in te voeren
 * Verbeterde gebruikerservaring dankzij betere laadstatussen, hulplijnen en foutafhandeling
-* Logbestanden voor congestie blijven bestaan en zijn altijd beschikbaar voor probleemoplossing
+* Logbestanden voor insluiting blijven bestaan en zijn altijd beschikbaar voor probleemoplossing
 
 Als u de nieuwe versie wilt gebruiken, moet u de installatie van oudere versies van het gereedschap Inhoud overbrengen ongedaan maken. Dit is nodig omdat de nieuwe versie een grote architectonische verandering heeft. Met v2.0.10 moet u nieuwe migratiesets maken en de extractie en opname opnieuw uitvoeren op de nieuwe migratiesets. Als er al een migratie wordt uitgevoerd, kunt u de vorige versie van CTT blijven gebruiken totdat de migratie is voltooid.
+Versies die ouder zijn dan 2.0.0 worden niet meer ondersteund en het is raadzaam de meest recente versie te gebruiken.
 
 De volgende Richtlijnen en Beste praktijken zijn op de nieuwe versie van het Hulpmiddel van de Overdracht van de Inhoud van toepassing:
 
