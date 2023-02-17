@@ -4,9 +4,9 @@ description: Leer hoe u workflowinstanties beheert
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
+source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,12 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
+   >[!NOTE]
+   >
+   >
+   >Als u een workflow wilt beëindigen of afbreken, moet deze in een toestand verkeren waarin wordt gewacht op tussenkomst van de gebruiker, zoals in een stap Deelnemer. Als u probeert een workflow af te breken die momenteel taken uitvoert (actieve threads die worden uitgevoerd), krijgt u mogelijk niet de verwachte resultaten.
+
+
 ## Gearchiveerde workflows weergeven {#viewing-archived-workflows}
 
 1. Navigatie selecteren **Gereedschappen** vervolgens **Workflow**.
@@ -76,6 +82,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
    >
    >* gebruik van de **Beëindigen** action
    >* als een pagina die onderworpen is aan een workflow (geforceerd) wordt verwijderd, wordt de workflow beëindigd
+
 
 
 1. Selecteer vervolgens een specifiek item **Historie openen** voor meer informatie :
