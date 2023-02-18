@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '4084'
+source-wordcount: '4252'
 ht-degree: 8%
 
 ---
@@ -440,6 +440,19 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor de Carouse
 
 1. (Optioneel) Selecteer boven aan de pagina Voorinstelling viewer bewerken de optie **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]**, of **[!UICONTROL Phone]** Hiermee definieert u unieke visuele stijlen voor verschillende apparaat- en schermtypen.
 1. Selecteer op de pagina Viewer Preset Editor de optie **[!UICONTROL Behavior]** tab. U kunt ook elk visueel element in de viewer selecteren om het te selecteren voor configuratie.
+Bijvoorbeeld voor *VideoPlayer* tekst, onder **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]** kunt u kiezen uit een van de drie adaptieve streamingopties:
+
+   * **[!UICONTROL dash]** - Video&#39;s worden alleen als streepje gestreamd.
+   * **[!UICONTROL hls]** - Video&#39;s worden alleen als hls gestreamd.
+   * **[!UICONTROL auto]** - Beste praktijken. Het maken van DASH- en HLS-streams is geoptimaliseerd voor opslag. Daarom raadt Adobe u aan altijd **[!UICONTROL auto]** als het afspeeltype. Video&#39;s worden als strepen, hls of progressief gestreamd, zoals in het volgende voorbeeld:
+      * Als de browser DASH ondersteunt, wordt eerst DASH-streaming gebruikt.
+      * Als de browser geen ondersteuning biedt voor DASH, wordt vervolgens HLS-streaming gebruikt.
+      * Als de browser DASH of HLS niet ondersteunt, wordt progressief afspelen gebruikt, tot slot.
+
+   >[!NOTE]
+   >
+   >Om de **[!UICONTROL dash]** moet deze optie eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](/help/assets/dynamic-media/video.md#enable-dash).
+
 1. Selecteer in het vervolgkeuzemenu **[!UICONTROL Selected Type]** een component waarvan u het gedrag wilt wijzigen.
 
    Veel componenten in de visuele editor hebben een gedetailleerde beschrijving. Deze beschrijvingen worden weergegeven in blauwe vakken wanneer u een component uitbreidt om de bijbehorende parameters weer te geven.
@@ -454,9 +467,13 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor de Carouse
    >Nadat u een waarde in het tekstgebied typt, selecteer elders in het gebruikersinterface om de verandering voor te leggen en het virtuele toetsenbord te sluiten. Als u **[!UICONTROL Enter]**, treedt geen actie op.
 
 1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Save]**.
-1. Publiceer uw nieuwe viewervoorinstelling. U moet de voorinstelling publiceren voordat u deze op uw website kunt gebruiken.
+1. Publiceer uw nieuwe viewervoorinstelling. U moet de voorinstelling publiceren zodat u de resulterende URL op uw website kunt gebruiken.
 
    Zie [Voorinstellingen van viewer publiceren](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >Voor oude video&#39;s die een adaptief streamingprofiel gebruiken, blijft de URL op de gebruikelijke manier — met HLS-streaming — worden afgespeeld totdat u [de video-elementen opnieuw verwerken](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Na de verwerking blijft dezelfde URL werken, maar nu met *beide* DASH- en HLS-streaming ingeschakeld.
 
 ### Speciale overwegingen voor het maken van een interactieve viewervoorinstelling {#special-considerations-for-creating-an-interactive-viewer-preset}
 

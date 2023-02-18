@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '3479'
+source-wordcount: '3528'
 ht-degree: 6%
 
 ---
 
 # Dynamic Media-videoprofielen{#video-profiles}
 
-Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. Wanneer u uw primaire bronvideo&#39;s codeert met behulp van het profiel Adaptieve videocodering, past de videospeler tijdens het afspelen automatisch de kwaliteit van de videostream aan op basis van de snelheid van de internetverbinding van uw klanten. Deze handeling wordt adaptieve streaming genoemd.
+Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. Wanneer u tijdens het afspelen uw primaire bronvideo&#39;s codeert met het profiel Adaptieve videocodering, past de videospeler automatisch de kwaliteit van de videostream aan op basis van de snelheid van de internetverbinding van uw klanten. Deze handeling wordt adaptieve streaming genoemd.
 
 Hier volgen nog andere factoren die de kwaliteit van uw video&#39;s bepalen:
 
@@ -45,7 +45,7 @@ Zie ook [Profielen voor het verwerken van metagegevens, afbeeldingen en video&#3
 
 ## Voorinstellingen voor adaptieve videocodering {#adaptive-video-encoding-presets}
 
-In de volgende tabel vindt u de beste praktijken voor het coderen van profielen voor adaptieve videostreaming naar mobiele apparaten en tabletapparaten en bureaubladcomputers. U kunt deze voorinstellingen gebruiken voor elke video met de hoogte-breedteverhouding.
+In de volgende tabel vindt u de aanbevolen procedures voor het coderen van profielen voor adaptieve videostreaming naar mobiele apparaten en tablets en bureaubladcomputers. U kunt deze voorinstellingen gebruiken voor elke video met de hoogte-breedteverhouding.
 
 <table>
  <tbody>
@@ -112,7 +112,7 @@ Adobe Sensei is beperkt tot 9000 frames. Dat wil zeggen, vijf minuten bij 30 FPS
 >
 >Als u slimme videoclips alleen wilt gebruiken, moet u een of meer voorinstellingen voor videocodering opnemen in uw videoprofiel.
 
-Als u SmartCrop voor video wilt gebruiken, maakt u een adaptief of progressief videocoderingsprofiel. Als onderdeel van uw profiel gebruikt u de opdracht **[!UICONTROL Smart Crop Ratio]** om vooraf gedefinieerde hoogte-breedteverhoudingen te selecteren. Nadat u bijvoorbeeld de videocoderingsvoorinstellingen hebt gedefinieerd, kunt u een definitie &quot;Mobiel liggend&quot; toevoegen met een hoogte-breedteverhouding van 16 x 9 en een definitie &quot;Mobiel staand&quot; met een hoogte-breedteverhouding van 9 x 16. Andere hoogte-breedteverhoudingen of uitsnijdverhoudingen waaruit u kunt kiezen, zijn onder andere 1x1, 4x3 en 4x5.
+Als u SmartCrop voor video wilt gebruiken, maakt u een adaptief of progressief videocoderingsprofiel. Als onderdeel van uw profiel gebruikt u de opdracht **[!UICONTROL Smart Crop Ratio]** om vooraf gedefinieerde hoogte-breedteverhoudingen te selecteren. Nadat u bijvoorbeeld de videocoderingsvoorinstellingen hebt gedefinieerd, kunt u een definitie &quot;Mobiel liggend&quot; toevoegen met een hoogte-breedteverhouding van 16 x 9 en een definitie &quot;Mobiel staand&quot; met een hoogte-breedteverhouding van 9 x 16. Andere hoogte-breedteverhoudingen of uitsnijdverhoudingen waaruit u 1x1, 4x3 en 4x5 kunt kiezen.
 
 ![Een videocoderingsprofiel bewerken met slim uitsnijden](assets/edit-smart-crop-video2.png)
 
@@ -128,7 +128,7 @@ Zie ook [Slim uitsnijden voor afbeeldingen](image-profiles.md).
 
 Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel - een groep video-uploadinstellingen voor MP4 H.264-systeem dat is geoptimaliseerd voor de beste kijkervaring. U kunt dit profiel gebruiken wanneer u uw video&#39;s uploadt.
 
-Als dit vooraf gedefinieerde profiel echter niet aan uw behoeften voldoet, kunt u zelf een adaptief videocoderingsprofiel maken. Als beste praktijken, wanneer u het plaatsen gebruikt **[!UICONTROL Encode for adaptive streaming]** Alle coderingsvoorinstellingen die u aan het profiel toevoegt, worden gevalideerd. Deze functionaliteit zorgt ervoor dat alle video&#39;s dezelfde hoogte-breedteverhouding hebben. Bovendien worden de gecodeerde video&#39;s beschouwd als een set met multibitsnelheden voor streaming.
+Als dit vooraf gedefinieerde profiel echter niet aan uw behoeften voldoet, kunt u zelf een adaptief videocoderingsprofiel maken. Als beste praktijken, wanneer u het plaatsen gebruikt **[!UICONTROL Encode for adaptive streaming]** Alle coderingsvoorinstellingen die u aan het profiel toevoegt, worden gevalideerd. Deze functionaliteit zorgt ervoor dat alle video&#39;s dezelfde hoogte-breedteverhouding hebben. Bovendien worden de gecodeerde video&#39;s beschouwd als een multibitsnelheid die is ingesteld voor streaming.
 
 Wanneer u het videocoderingsprofiel maakt, ziet u dat de meeste coderingsopties vooraf zijn gevuld met de aanbevolen standaardinstellingen. Als u echter een andere waarde selecteert dan de aanbevolen standaardwaarde, kan dit resulteren in een slechte videokwaliteit tijdens het afspelen en andere prestatieproblemen.
 
@@ -243,7 +243,7 @@ U kunt het profiel nu toepassen op mappen die video&#39;s bevatten. Zie [Een vid
 
 ## Parameters voor aangepaste videocodering gebruiken {#using-custom-added-video-encoding-parameters}
 
-U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van geavanceerde videocoderingsparameters die niet in de gebruikersinterface worden gevonden wanneer u een videoprofiel maakt of bewerkt in Experience Manager. U kunt een of meer geavanceerde parameters, zoals minBitrate en maxBitrate, aan uw bestaand profiel toevoegen.
+U kunt een bestaand coderingsprofiel voor video bewerken om te profiteren van geavanceerde videocoderingsparameters die niet in de gebruikersinterface worden gevonden wanneer u een videoprofiel maakt of bewerkt in Experience Manager. U kunt een of meer geavanceerde parameters, zoals minBitrate en maxBitrate, aan uw bestaand profiel toevoegen.
 
 **Parameters voor aangepaste videocodering gebruiken:**
 
@@ -274,7 +274,7 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van geavance
    <td><code>keyframe</code></td>
    <td>Het doelaantal frames tussen hoofdframes. Bereken deze waarde zodat u een hoofdframe elke 2-10 seconden kunt genereren. Bij 30 frames per seconde is het hoofdframe-interval bijvoorbeeld 60-300.<br /> <br /> De lagere keyframe intervallen verbeteren stroom het zoeken en stroom omschakelingsgedrag voor adaptieve videocoderingen en kunnen de kwaliteit voor video's ook verbeteren die veel motie hebben. Omdat hoofdframes de grootte van een bestand echter vergroten, resulteert een lager hoofdframe-interval meestal in een lagere algemene videokwaliteit bij een bepaalde bitsnelheid.</td>
    <td><code>String</code></td>
-   <td><p>Positief getal.</p> <p>De standaardwaarde is 300.</p> <p>De aanbevolen waarde voor HLS (Live HTTP-streaming) is 60-90.</p> </td>
+   <td><p>Positief getal.</p> <p>De standaardwaarde is 300.</p> <p>De aanbevolen waarde voor HLS of DASH (adaptieve streaming) is 60-90. (Als u DASH wilt zien of gebruiken, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH inschakelen voor uw account</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -292,7 +292,7 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van geavance
    <td><code>audioBitrateCustom</code></td>
    <td>Waarde instellen op <code>true</code> om een constante bitsnelheid voor de audiostream te forceren, indien ondersteund door audiocodec.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Standaard is <code>false</code>.</p> <p>Aanbevolen waarde voor HLS (Live HTTP-streaming) is <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Standaard is <code>false</code>.</p> <p>Aanbevolen waarde voor HLS of DASH is <code>false</code>. (Als u DASH wilt zien of gebruiken, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH inschakelen voor uw account</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
