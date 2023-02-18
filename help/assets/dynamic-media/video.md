@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d711057024e62aab00d76f40a729ee59590bbb59
+source-git-commit: 1fb28674df6ea45589d3b44237edfb51ef167756
 workflow-type: tm+mt
 source-wordcount: '9893'
 ht-degree: 3%
@@ -112,7 +112,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -1409,8 +1409,7 @@ dependency>
 </dependency> 
 ```
 
-+++
-**Sample-servlet**
++++**Sample-servlet**
 
 ```java
 @Component
@@ -1487,8 +1486,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
-+++
-**Responsklasse voor servlet**
++++**Responsklasse voor servlet**
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1516,9 +1514,7 @@ public abstract class VideoResponse {
 
 +++
 
-
-+++
-**Constantenbestand waarnaar wordt verwezen in servlet**
++++**Constantenbestand waarnaar wordt verwezen in servlet**
 
 ```java
 public final class Constants { 
@@ -1535,8 +1531,7 @@ public final class Constants {
 
 +++
 
-+++
-**ServletContext**
++++**ServletContext**
 
 Bovenstaande servlet koppelen met een `servletContext`. Hier volgt een voorbeeld van `servletContext`.
 
