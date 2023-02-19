@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
+source-git-commit: 41e17fdae57244d83c8ee715326a0ee41488ba60
 workflow-type: tm+mt
-source-wordcount: '3528'
+source-wordcount: '3530'
 ht-degree: 6%
 
 ---
@@ -274,7 +274,7 @@ U kunt een bestaand coderingsprofiel voor video bewerken om te profiteren van ge
    <td><code>keyframe</code></td>
    <td>Het doelaantal frames tussen hoofdframes. Bereken deze waarde zodat u een hoofdframe elke 2-10 seconden kunt genereren. Bij 30 frames per seconde is het hoofdframe-interval bijvoorbeeld 60-300.<br /> <br /> De lagere keyframe intervallen verbeteren stroom het zoeken en stroom omschakelingsgedrag voor adaptieve videocoderingen en kunnen de kwaliteit voor video's ook verbeteren die veel motie hebben. Omdat hoofdframes de grootte van een bestand echter vergroten, resulteert een lager hoofdframe-interval meestal in een lagere algemene videokwaliteit bij een bepaalde bitsnelheid.</td>
    <td><code>String</code></td>
-   <td><p>Positief getal.</p> <p>De standaardwaarde is 300.</p> <p>De aanbevolen waarde voor HLS of DASH (adaptieve streaming) is 60-90. (Als u DASH wilt zien of gebruiken, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH inschakelen voor uw account</a>.)</p> </td>
+   <td><p>Positief getal.</p> <p>De standaardwaarde is 300.</p> <p>De aanbevolen waarde voor HLS of DASH (adaptieve streaming) is 60-90. (Als u DASH wilt gebruiken, moet het programma voor uw video's eerst zijn ingeschakeld door Adobe Technical Support op uw account. Zie <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH inschakelen voor uw account</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -292,7 +292,7 @@ U kunt een bestaand coderingsprofiel voor video bewerken om te profiteren van ge
    <td><code>audioBitrateCustom</code></td>
    <td>Waarde instellen op <code>true</code> om een constante bitsnelheid voor de audiostream te forceren, indien ondersteund door audiocodec.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Standaard is <code>false</code>.</p> <p>Aanbevolen waarde voor HLS of DASH is <code>false</code>. (Als u DASH wilt zien of gebruiken, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH inschakelen voor uw account</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Standaard is <code>false</code>.</p> <p>Aanbevolen waarde voor HLS of DASH is <code>false</code>. (Als u DASH wilt gebruiken voor uw video's, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH inschakelen voor uw account</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

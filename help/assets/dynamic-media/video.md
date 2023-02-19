@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 4b51ace98d547a6a31f30d6348508a71266dbfed
+source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
 workflow-type: tm+mt
-source-wordcount: '9929'
+source-wordcount: '9947'
 ht-degree: 3%
 
 ---
@@ -157,9 +157,9 @@ Aan de ontwerpkant van de speler, kunt u de functionaliteit van de videospeler o
 
 Aan de afspeelzijde van de viewer wordt automatisch de videocapaciteit van de browser gedetecteerd. Vervolgens wordt de video afgespeeld met HLS of DASH, ook wel adaptieve videostreaming genoemd. Of als deze leveringsmethoden niet aanwezig zijn, wordt in plaats daarvan HTML5 progressief gebruikt.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Als u DASH wilt zien of gebruiken, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).)
+>Als u DASH wilt gebruiken voor uw video&#39;s, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).)
 
 U kunt de mogelijkheid om de afspeelcomponenten te ontwerpen met behulp van HTML5 en CSS combineren tot één speler. Het kan het afspelen ingesloten hebben en adaptief en progressief streamen gebruiken, afhankelijk van de mogelijkheden van de browser. Met al deze functionaliteit kunt u het bereik van uw uitgebreide media-inhoud uitbreiden voor zowel gebruikers op het bureaublad als mobiele apparaten en een gestroomlijnde videobeleving garanderen.
 
@@ -174,9 +174,9 @@ Het afspelen van video vindt plaats met HLS of DASH of met progressieve videodow
 
 In Experience Manager 6.3 en hoger worden video&#39;s nu gestreamd via HTTPS (dat wil zeggen, HLS of DASH) omdat de URL van de DM-gatewayservice altijd HTTPS gebruikt. Dit standaardgedrag heeft geen gevolgen voor de klant. Videostreaming vindt altijd plaats via HTTPS, tenzij dit niet door de browser wordt ondersteund. (zie de volgende tabel).
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Als u DASH wilt zien of gebruiken, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).)
+>Als u DASH wilt gebruiken voor uw video&#39;s, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).)
 
 Op grond daarvan wordt met
 
@@ -256,7 +256,7 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
 
 >[!IMPORTANT]
 >
->*Als u DASH wilt zien of gebruiken, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).)
+>*Als u DASH wilt gebruiken voor uw video&#39;s, moet DASH eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).)
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -1396,9 +1396,13 @@ De API retourneert null als er fouten zijn. Uitzonderingen worden geregistreerd 
 * `IOException` wordt geregistreerd als er een probleem is dat verbinding maakt met Dynamic Media.
 * `UnsupportedOperationException` wordt geregistreerd wanneer een `manifestType` doorgegeven parameter is `ManifestType.DASH`, terwijl de video niet is verwerkt met de indeling DASH.
 
-Hieronder ziet u een voorbeeld van de bovenstaande API met behulp van servlets die in zijn geschreven *HTTPWhiteBoard* specificatie.
+Hieronder ziet u een voorbeeld van de bovenstaande API met behulp van servlets die in zijn geschreven *HTTPWhiteBoard* specificatie. Selecteer elk tabblad voor de codesyntaxis.
 
-**Afhankelijkheid toevoegen in pom.xml**
+>[!BEGINTABS]
+
+>[!TAB Afhankelijkheid toevoegen in pom.xml]
+
++++**Afhankelijkheid toevoegen in pom.xml**
 
 ```java
 dependency> 
@@ -1409,7 +1413,7 @@ dependency>
 </dependency> 
 ```
 
->[!BEGINTABS]
++++
 
 >[!TAB Sample-servlet]
 
@@ -1650,6 +1654,19 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 +++
 
 >[!ENDTABS]
+
++++**Afhankelijkheid toevoegen in pom.xml**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
 
 +++**Sample-servlet**
 
