@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
+source-git-commit: f3d8f0a7a5c41ecca7bced1d5de9017ada422f7a
 workflow-type: tm+mt
-source-wordcount: '9947'
+source-wordcount: '9951'
 ht-degree: 3%
 
 ---
@@ -112,7 +112,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -204,7 +204,7 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>In Windows® 8 en Windows® 10 - Gebruik HTTPS geforceerd wanneer om HLS wordt gevraagd. Bekende beperking: HTTP op HLS werkt niet in deze browser/werkend systeemcombinatie<br /> <br /> Windows® 7 - Progressief downloaden. Gebruikt de standaardlogica voor het selecteren van het protocol HTTP versus HTTPS.</td>
+   <td>In Windows® 8 en Windows® 10 - Gebruik HTTPS geforceerd wanneer DASH of HLS wordt aangevraagd. Bekende beperking: HTTP op DASH of HLS werkt niet in deze combinatie van browser en besturingssysteem<br /> <br /> Windows® 7 - Progressief downloaden. Gebruikt de standaardlogica voor het selecteren van het protocol HTTP versus HTTPS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -448,8 +448,7 @@ Maak een ondersteuningskwestie zoals hieronder wordt beschreven. In het onderste
 1. De Steun van de Klant van Adobe voegt u aan de DASH klant toe wachtlijst die op de orde wordt gebaseerd waarin de verzoeken worden voorgelegd.
 1. Wanneer Adobe klaar is om uw verzoek te behandelen, contacteert de Steun van de Klant u om een doeldatum voor DASH toe te voegen te coördineren en te plaatsen.
 1. Klantenondersteuning stuurt u een melding nadat deze is voltooid.
-1. Maak uw [videoviewervoorinstelling](#creating-a-new-viewer-preset) zoals gebruikelijk.
-
+1. Maak uw [videoviewervoorinstelling](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) zoals gebruikelijk.
 
 ## Video&#39;s publiceren naar YouTube {#publishing-videos-to-youtube}
 
