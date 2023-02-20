@@ -4,9 +4,9 @@ description: Leer hoe u een adaptief formulier maakt met [!DNL Experience Manage
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Voordat u begint, moet u meer weten over het type Forms-componenten waarover u b
 
 U hebt het volgende nodig om een adaptief formulier te maken:
 
+* **Adaptieve Forms Core-componenten inschakelen voor uw omgeving**: Als u het op Archetype versie 40 of later gebaseerde programma van AEM gebruikt, worden de Componenten van de Kern auto toegelaten voor uw milieu. Als u Adaptive Forms Core Components wilt inschakelen voor uw as a Cloud Service AEM Forms-omgeving op basis van oudere versies van Archetype, raadpleegt u: [Adaptieve Forms Core-componenten inschakelen voor uw omgeving](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
 * **Een adaptieve formuliersjabloon**: Een sjabloon biedt een basisstructuur en definieert de vormgeving (lay-outs en stijlen) van een adaptief formulier. Het heeft vooraf opgemaakte componenten die bepaalde eigenschappen en inhoudsstructuur bevatten. Het biedt ook de opties om een thema en een verzendactie te definiëren. In het thema wordt de actie look and feel and submit gedefinieerd voor de actie die moet worden ondernomen bij het verzenden van een adaptief formulier. Bijvoorbeeld, verzendend de verzamelde gegevens naar een gegevensbron. De cloudservice biedt een OOTB-sjabloon met de naam blank:
 
    * De `blank` de sjabloon wordt bij elk nieuw as a Cloud Service AEM Forms-programma meegeleverd.
