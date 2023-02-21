@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f3de5a5a39ca993f0191d9b4d1436e25f5cf673f
+source-git-commit: 1b9817005ec40d61e9fa613dbd8c56912605040b
 workflow-type: tm+mt
-source-wordcount: '3935'
+source-wordcount: '3944'
 ht-degree: 21%
 
 ---
@@ -697,8 +697,10 @@ ht-degree: 21%
       + [GraphQL API voor inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL-eindpunten beheren](/help/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
-      + [Voorbeeld van GraphQL-query&#39;s](/help/headless/graphql-api/sample-queries.md)
       + [Blijvende GraphQL-query&#39;s](/help/headless/graphql-api/persisted-queries.md)
+      + [GraphQL-query&#39;s optimaliseren](/help/headless/graphql-api/graphql-optimization.md)
+      + [Inhoudsfragmenten bijwerken voor GraphQL-filters](/help/headless/graphql-api/graphql-paging-sorting-content-update.md)
+      + [Voorbeeld van GraphQL-query&#39;s](/help/headless/graphql-api/sample-queries.md)
    + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + Beveiliging {#security}
       + [Machtigingen](/help/headless/security/permissions.md)
