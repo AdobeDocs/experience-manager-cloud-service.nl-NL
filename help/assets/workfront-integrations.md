@@ -4,9 +4,9 @@ description: Inleiding tot integratie tussen [!DNL Assets] en [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 269dff32b41dba86fb048418da3f3b3ef8a6781e
+source-git-commit: 1631ec4b7174c9d98747fe290e21db3839777fcb
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1224'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Hieronder volgen de details van de functies die beschikbaar zijn via verschillen
 
 | Functie | Beschrijving | [!DNL Workfront] en [!DNL Assets Essentials] *Geen aansluiting (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Vereist connector* | Workfront en [!DNL Experience Manager as a Cloud Service] *Geen aansluiting (OOTB)* |
 |----|----|----|-----|-----|
-| Implementatiemethoden | Geschikt voor [!DNL Assets] aanbieden. | Assets Essentials | Cloud Service, beheerde services van Adobe, op locatie | Cloud Service |
+| Implementatiemethoden | Geschikt voor [!DNL Assets] aanbieden. | Assets Essentials | Beheerde services van Adobe, op locatie | Cloud Service |
 | **Algemeen** |
 | Digitale bestanden verzenden vanuit [!DNL Workfront] tot [!DNL Assets] | De nieuwste versie van een WF-document kan worden geüpload naar AEM Assets, dat als een nieuwe versie van het document wordt gekoppeld. | ✓ | ✓ | ✓ |
 | Mappen handmatig koppelen AEM aan Workfront-objecten | Bestaande AEM mappen kunnen worden gekoppeld als een Workfront-map en de onderliggende elementen ervan worden gekoppeld als nieuwe Workfront-documenten. | ✓ | ✓ | ✓ |
