@@ -1,7 +1,7 @@
 ---
 title: Inhoudsfragmenten bijwerken voor pagineren en sorteren
 description: Leer hoe u de inhoudsfragmenten voor pagineren en sorteren in Adobe Experience Manager as a Cloud Service kunt bijwerken voor levering van inhoud zonder kop.
-source-git-commit: 130f653a1b0db55ea6d49a87be1215001223bf78
+source-git-commit: d12e2c3c23b5c0eebe35038c6c461c7f05dedc55
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 4%
@@ -32,7 +32,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
 
    De beschikbare variabelen zijn:
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
