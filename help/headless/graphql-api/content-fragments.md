@@ -3,7 +3,7 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e156ed7348815e02c942cb8feace70c675956752
+source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
 workflow-type: tm+mt
 source-wordcount: '4203'
 ht-degree: 0%
@@ -558,7 +558,7 @@ Zie voor meer voorbeelden:
 
 >[!NOTE]
 >
->Voor de beste prestaties moet u [Inhoudsfragmenten bijwerken voor pagineren en sorteren in GraphQL-filters](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+>Voor de beste prestaties moet u [Inhoudsfragmenten bijwerken voor pagineren en sorteren in GraphQL-filters](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Met deze functie kunt u de queryresultaten sorteren op een opgegeven veld.
 
@@ -625,7 +625,7 @@ query {
 
 >[!NOTE]
 >
->Voor de beste prestaties moet u [Inhoudsfragmenten bijwerken voor pagineren en sorteren in GraphQL-filters](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+>Voor de beste prestaties moet u [Inhoudsfragmenten bijwerken voor pagineren en sorteren in GraphQL-filters](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Met deze functie kunt u pagineren uitvoeren op querytypen die een lijst retourneren. Er zijn twee methoden:
 
