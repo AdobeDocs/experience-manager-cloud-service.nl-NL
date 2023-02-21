@@ -1,7 +1,7 @@
 ---
 title: Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters
 description: Leer hoe u de inhoudsfragmenten voor geoptimaliseerde GraphQL-filters in Adobe Experience Manager as a Cloud Service kunt bijwerken voor levering van inhoud zonder kop.
-source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
+source-git-commit: 7c6dcf4548972740803d64e21a74e885caf8b487
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 5%
@@ -158,7 +158,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
 
    Nadat de updateprocedure is uitgevoerd, stelt u de omgevingsvariabele van de cloud opnieuw in `CF_MIGRATION_ENABLED` tot &#39;0&#39;, om de recycling van alle pods te starten.
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
