@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
+source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
@@ -245,7 +245,7 @@ Zie [hoe te vormen [!DNL Assets] gebruiken met [!DNL Adobe Asset Link]](https://
 ## Beste werkwijzen en probleemoplossing {#bestpractices}
 
 * Elementmappen of -verzamelingen die in hun naam een witruimte bevatten, worden mogelijk niet gedeeld.
-* Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de beheerder van de Experience Manager om [downloadlimieten](#maxdatasize) zijn.
+* Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de beheerder van de Experience Manager om de downloadlimieten. De standaardwaarde is 100 MB.
 * Een gebruiker kan alleen een voorvertoning weergeven van een video die wordt gedeeld via het delen van koppelingen als voor de video een statische video-uitvoering beschikbaar is op `/jcr:content/renditions` locatie in het knooppunt van de video in de opslagplaats. De voorvertoning is niet afhankelijk van de beschikbaarheid van een [!DNL Dynamic Media] uitvoering.
 * Wanneer u een video-element downloadt via gedeelde koppelingen, wordt de [!DNL Dynamic Media] Uitvoeringen worden niet opgenomen in het gedownloade archief.
 
