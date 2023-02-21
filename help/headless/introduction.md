@@ -1,19 +1,19 @@
 ---
-title: Inleiding tot AEM zonder kop
-description: Meer informatie over Adobe Experience Manager (AEM) als een headless CMS met een combinatie van gedetailleerde documentatie en ritten zonder kop. Leer hoe u functies als Content Models, Content Fragments en een GraphQL-API kunt gebruiken om een headless-ervaring in te schakelen.
-landing-page-description: Begrijp hoe u Experience Manager zonder hoofd as a Cloud Service kunt gebruiken en toedienen.
+title: Inleiding tot headless voor AEM
+description: Meer informatie over Headless in Adobe Experience Manager (AEM) met een combinatie van gedetailleerde documentatie en ritten zonder kop. Meer informatie over hoe functies zoals contentmodellen, contentfragmenten en GraphQL-API worden gebruikt om headless-ervaringen mogelijk te maken.
+landing-page-description: Begrijp hoe u Headless in Adobe Experience Manager as a Cloud Service kunt gebruiken en gebruiken.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
+source-git-commit: 58a7886e32664dddfd3ca9c888717452ed5d362a
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 0%
+source-wordcount: '675'
+ht-degree: 3%
 
 ---
 
 
 # Inleiding tot Adobe Experience Manager als een headless CMS {#introduction-aem-headless}
 
-Leer hoe u Adobe Experience Manager (AEM) gebruikt als een headless CMS met functies zoals Content Models, Content Fragments en een GraphQL API die ervoor zorgen dat headless ervaringen op schaal worden uitgevoerd.
+Leer hoe u Adobe Experience Manager (AEM) gebruikt als een headless CMS, met functies zoals Content Models, Content Fragments en een GraphQL API die ervoor zorgen dat u overal mee kunt werken.
 
 U kunt gedetailleerde documentatie van de verschillende betrokken eigenschappen lezen en/of de selectie volgen [Headless Reizen voor een overzicht van de eerste stappen](#first-steps).
 
@@ -23,13 +23,13 @@ U kunt gedetailleerde documentatie van de verschillende betrokken eigenschappen 
 
 ## Overzicht {#overview}
 
-AEM Headless is een CMS-oplossing van Experience Manager waarmee gestructureerde inhoud (Content Fragments) in AEM kan worden verbruikt door een toepassing via HTTP met behulp van GraphQL. Met een headless-implementatie kunt u ervaringen op verschillende platforms en kanalen op schaal aanbieden.
+AEM Headless is een CMS-oplossing van Experience Manager waarmee gestructureerde inhoud (Content Fragments) in AEM kan worden verbruikt door elke toepassing via HTTP met GraphQL. Met een headless-implementatie kunt u ervaringen op verschillende platforms en kanalen op schaal aanbieden.
 
 Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals gebruikelijk is in oplossingen voor volledige stapels en hybride oplossingen, en wordt de nadruk gelegd op het maken van kanaalneutrale, herbruikbare fragmenten van inhoud en hun levering over het kanaal. Het is een modern en dynamisch ontwikkelingspatroon voor het implementeren van webervaringen.
 
 ![Implementatiemodellen AEM](assets/aem-implementation-models.png)
 
-## Functies van AEM zonder kop {#aem-headless-features}
+## Functies {#aem-headless-features}
 
 AEM as a Cloud Service is een flexibel hulpmiddel voor het implementatiemodel zonder kop door drie krachtige functies te bieden:
 
@@ -42,11 +42,11 @@ AEM as a Cloud Service is een flexibel hulpmiddel voor het implementatiemodel zo
    * Gemaakt door auteurs van inhoud met de AEM Content Fragment-editor.
    * Inhoudsfragmenten worden opgeslagen in AEM Assets en beheerd in de interface voor middelenbeheer.
 1. **Inhoud-API voor levering**
-   * De AEM GraphQL API ondersteunt de levering van contentfragmenten.
+   * De AEM GraphQL API ondersteunt de levering van inhoudsfragmenten.
    * De AEM Assets REST-API ondersteunt CRUD-bewerkingen voor inhoudsfragmenten.
    * Directe levering van inhoud is ook mogelijk met de [JSON-export van de Content Fragment Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html).
 
-## Uw eerste stappen met AEM zonder kop {#first-steps}
+## Uw eerste stappen {#first-steps}
 
 Er zijn verschillende bronnen beschikbaar om aan de slag te gaan met AEM functies zonder kop. Elke hulplijn is op maat gemaakt voor verschillende gebruiksgevallen en verschillende soorten publiek.
 
