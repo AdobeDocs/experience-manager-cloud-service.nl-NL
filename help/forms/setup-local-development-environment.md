@@ -2,9 +2,9 @@
 title: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 description: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 55a53f23ee81877bd3a6ba3b9b0a1c3c98edb764
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '2954'
 ht-degree: 1%
 
 ---
@@ -257,7 +257,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    Open de opdrachtprompt en voer de onderstaande opdracht uit om een [!DNL Experience Manager Forms] as a Cloud Service project.
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
    ```
 
    Wijzig de `appTitle`, `appId`, en `groupId` in het bovenstaande bevel om uw milieu te weerspiegelen. Stel ook de waarde voor includeFormsenrollment, includeFormscommunications en includeFormsheadless in op `y` of `n` afhankelijk van uw licentie en vereisten. IncludeFormadless is verplicht om Adaptive Forms te creëren die op de Componenten van de Kern wordt gebaseerd.
@@ -265,8 +265,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    * Gebruik de `includeFormsenrollment=y` voor Forms-specifieke configuraties, -thema&#39;s, -sjablonen, -kerncomponenten en -afhankelijkheden die vereist zijn voor het maken van een adaptieve Forms. Als u Forms Portal gebruikt, stelt u de optie `includeExamples=y` optie. Het voegt ook de kerncomponenten van Forms Portal aan het project toe.
 
    * Gebruik de `includeFormscommunications=y` -optie om Forms Core-componenten en -afhankelijkheden op te nemen die vereist zijn om de functionaliteit voor communicatie van de klant op te nemen.
-
-   * Gebruik de `includeFormsheadless` toevoegen om artefacten en bibliotheken toe te voegen die nodig zijn om Headless Adaptive Forms te maken.
 
 1. Implementeer het project in uw lokale ontwikkelomgeving. U kunt het volgende bevel gebruiken om aan uw lokale ontwikkelomgeving op te stellen
 
