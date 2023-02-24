@@ -7,9 +7,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
+source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1743'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,21 @@ U kunt uw Adaptieve Forms-, thema-, sjablonen- en cloudconfiguraties migreren va
 * De service helpt inhoud alleen te migreren van [!DNL AEM Forms] in OSGi-omgevingen. Inhoud migreren uit [!DNL AEM Forms] op JEE aan een milieu van de Cloud Service wordt niet gesteund.
 
 * (Alleen voor AEM 6.3 Forms of een eerdere versie van de omgeving die is bijgewerkt naar AEM 6.4 Forms of AEM 6.5 Forms) Aangepaste Forms op basis van out-of-the-box sjablonen en thema&#39;s die beschikbaar zijn in AEM 6.3 Forms of vorige versie worden niet ondersteund op [!DNL AEM Forms] as a Cloud Service.
+
+* De stap Verifiëren is niet beschikbaar. Verwijder de stap Verifiëren uit uw bestaande Adaptief Forms voordat u dergelijke formulieren naar een Cloud Service-omgeving verplaatst.
+
+* De stap Handtekening voor Adaptief Forms is niet beschikbaar. Verwijder de stap Handtekening uit een bestaand adaptief formulier. Configureer uw adaptieve formulier voor gebruik in de ondertekeningservaring in de browser. De Adobe Sign-overeenkomst wordt weergegeven om de overeenkomst in de browser te ondertekenen wanneer een adaptief formulier wordt verzonden. Ondertekeningservaring in de browser helpt de ondertekenaar sneller te ondertekenen en bespaart tijd.
+
+## Verschil met AEM 6.5 Forms
+
+| Functie | Verschil met AEM 6.5 Forms |
+|--------------|-----------|
+| HTML5 Forms (Mobile Forms) | De service biedt geen ondersteuning voor HTML5 Forms (Mobile Forms). Als u uw op XDP gebaseerde formulieren weergeeft als HTML5 Forms, kunt u de functie blijven gebruiken op AEM 6.5 Forms. |
+| Adaptieve Forms | <li><b>Adaptieve Forms op basis van XSD:</b> De service biedt geen ondersteuning voor HTML5 Forms (Mobile Forms). Als u uw op XDP gebaseerde formulieren weergeeft als HTML5 Forms, kunt u de functie blijven gebruiken op AEM 6.5 Forms. </li> <li><b> Aangepaste formuliersjablonen:</b> Gebruik de build-pijplijn en de bijbehorende Git-opslagplaats van uw programma om bestaande adaptieve formuliersjablonen te importeren. </li><li><b>Regeleditor:</b> AEM Forms as a Cloud Service biedt een harde [Regeleditor](rule-editor.md#visual-rule-editor). De code-editor is niet beschikbaar in Forms as a Cloud Service. Met het migratiehulpprogramma kunt u formulieren migreren die aangepaste regels hebben (die in de code-editor zijn gemaakt). Het hulpprogramma converteert dergelijke regels naar aangepaste functies die worden ondersteund op as a Cloud Service Forms. U kunt de herbruikbare functies met de redacteur van de Regel gebruiken om resultaten te blijven verkrijgen die met regelmanuscripten worden verkregen `onSubmitError` of `onSubmitSuccess` functies zijn nu beschikbaar als handelingen in de Editor voor regels. </li> <li><b>Concepten en opmerkingen:</b> De service behoudt geen metagegevens voor concepten en verzonden Adaptive Forms. </li> <li><b> Prefill-service:</b> Standaard voegt de Prefill-service gegevens samen met een Adaptief formulier op de client in plaats van gegevens op de server samen te voegen in AEM 6.5 Forms. De functie helpt de tijd te verbeteren die nodig is om een adaptief formulier vooraf in te vullen. U kunt altijd configureren om de samenvoegactie op de Adobe Experience Manager Forms-server uit te voeren. </li><li><b>Handelingen verzenden:</b> De **E-mailen als PDF** actie is niet beschikbaar. De **E-mail** Verzenden bevat opties voor het verzenden van bijlagen en het toevoegen van een e-mail aan het Document of Record (DoR). </li> |
+| Formuliergegevensmodel | <li>Forms-gegevensmodel ondersteunt alleen HTTP- en HTTP-eindpunten voor het verzenden van gegevens. </li><li>Met Forms as a Cloud Service kunt u Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive en services die algemene CRUD-bewerkingen (Maken, Lezen, Bijwerken en Verwijderen) ondersteunen, gebruiken als gegevensopslag. De service biedt geen ondersteuning voor JDBC-connector, wederzijdse SSL voor rustconnector en op x509-certificaten gebaseerde verificatie voor SOAP-gegevensbronnen. </li> |
+| automatede form conversion Service | De dienst verstrekt meta-model voor de Dienst van de Automatede form conversion niet. U kunt [download het van de documentatie van de Dienst van de Automatede form conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model). |
+| Configuraties | <li>E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [Contact opnemen met het ondersteuningsteam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) om havens voor het verzenden van e-mail toe te laten en SMTP protocol voor uw milieu toe te laten. </li> <li>Als u aangepaste bundels gebruikt, moet u de code opnieuw compileren met de nieuwste versie van adobe-aemfd-docmanager voordat u deze bundels gebruikt met Forms as a Cloud Service.</li> |
+| Document Manipulation APIs (Assembler Service) | De dienst steunt geen verrichtingen afhankelijk van andere diensten of toepassingen: <li>De conversie van documenten in een andere indeling dan PDF naar een PDF-indeling wordt niet ondersteund. Microsoft Word naar PDF, Microsoft Excel naar PDF en HTML naar PDF worden bijvoorbeeld niet ondersteund</li><li>Op Adobe Distiller gebaseerde conversies worden niet ondersteund. PostScript(PS) bijvoorbeeld op PDF</li><li>Op Forms Service gebaseerde conversies worden niet ondersteund. Bijvoorbeeld XDP naar PDF forms.</li><li>De service biedt geen ondersteuning voor het converteren van een PDF van het type Signed PDF of Transparent naar een andere PDF-indeling.</li> |
 
 ## Vereisten {#prerequisites}
 
