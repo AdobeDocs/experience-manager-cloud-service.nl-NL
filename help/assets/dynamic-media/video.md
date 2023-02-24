@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '9695'
+source-wordcount: '9731'
 ht-degree: 3%
 
 ---
@@ -245,7 +245,7 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
   <tr>
    <td>Mobiel</td>
    <td>Chrome (iOS)</td>
-   <td>Adaptieve streaming HLS of DASH*</td>
+   <td>Aangepaste streaming HLS</td>
   </tr>
  </tbody>
 </table>
@@ -414,7 +414,7 @@ Dynamic Media raadt u aan voorinstellingen voor MP4 H.264-videocodering te gebru
 
 ### DASH inschakelen voor uw account {#enable-dash}
 
-DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Wanneer u DASH inschakelt, kunt u kiezen uit HLS of DASH voor adaptieve videostreaming. U kunt ook voor beide kiezen met automatische omschakeling tussen spelers.
+DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Als DASH op uw account is ingeschakeld, kunt u kiezen uit DASH of HLS voor adaptieve videostreaming. Of u kunt kiezen voor beide opties met automatische schakeling tussen spelers wanneer **[!UICONTROL auto]** is geselecteerd als het afspeeltype in de voorinstelling Viewer.
 
 Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
 
@@ -425,13 +425,13 @@ Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
 * Helpt de levering van video toegankelijker te maken voor uw klanten.
 * U kunt de URL voor streaming ook ophalen via API&#39;s.
 
+   >[!IMPORTANT]
+   >
+   >DASH inschakelen op uw account is momenteel alleen beschikbaar in Noord-Amerika.
+
 U stelt een verzoek in om DASH te gebruiken; het wordt niet automatisch ingeschakeld voor uw account.
 
->[!IMPORTANT]
->
->DASH inschakelen op uw account is momenteel alleen beschikbaar in Noord-Amerika.
-
-Maak een ondersteuningskwestie zoals hieronder wordt beschreven. In het ondersteuningsgeval moet u vermelden dat u DASH wilt inschakelen voor uw account.
+Als u DASH op uw account wilt inschakelen, maakt u een geval voor klantenondersteuning zoals hieronder wordt beschreven. Geef in uw geval van ondersteuning op dat u DASH wilt inschakelen voor uw Dynamic Media-account en op Experience Manager.
 
 **DASH inschakelen voor uw account:**
 
@@ -439,7 +439,8 @@ Maak een ondersteuningskwestie zoals hieronder wordt beschreven. In het onderste
 1. Volg de instructies om een steungeval tot stand te brengen terwijl het verzekeren van u de volgende informatie verstrekt:
 
    * Primaire contactpersoon, e-mail, telefoon.
-   * U wilt DASH inschakelen op uw Dynamic Media-account.
+   * Naam van je Dynamic Media-account.
+   * Geef op of u DASH wilt inschakelen op uw Dynamic Media-account en op de Experience Manager.
 
 1. De Steun van de Klant van Adobe voegt u aan de DASH klant toe wachtlijst die op de orde wordt gebaseerd waarin de verzoeken worden voorgelegd.
 1. Wanneer Adobe klaar is om uw verzoek te behandelen, contacteert de Steun van de Klant u om een doeldatum voor DASH toe te voegen te coördineren en te plaatsen.

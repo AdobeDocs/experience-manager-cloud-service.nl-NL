@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '4252'
-ht-degree: 8%
+source-wordcount: '4264'
+ht-degree: 7%
 
 ---
 
@@ -442,8 +442,8 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor de Carouse
 1. Selecteer op de pagina Viewer Preset Editor de optie **[!UICONTROL Behavior]** tab. U kunt ook elk visueel element in de viewer selecteren om het te selecteren voor configuratie.
 Bijvoorbeeld voor *VideoPlayer* tekst, onder **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]** kunt u kiezen uit een van de drie adaptieve streamingopties:
 
-   * **[!UICONTROL dash]** - Video&#39;s worden alleen als streepje gestreamd.
-   * **[!UICONTROL hls]** - Video&#39;s worden alleen als hls gestreamd.
+   * **[!UICONTROL dash]** - Video&#39;s worden alleen als DASH gestreamd. Op Safari/iOS-apparaten moet u echter **[!UICONTROL hls]** als het type.
+   * **[!UICONTROL hls]** - Video&#39;s worden alleen als HLS gestreamd.
    * **[!UICONTROL auto]** - Beste praktijken. Het maken van DASH- en HLS-streams is geoptimaliseerd voor opslag. Daarom raadt Adobe u aan altijd **[!UICONTROL auto]** als het afspeeltype. Video&#39;s worden als strepen, hls of progressief gestreamd, zoals in het volgende voorbeeld:
       * Als de browser DASH ondersteunt, wordt eerst DASH-streaming gebruikt.
       * Als de browser geen ondersteuning biedt voor DASH, wordt vervolgens HLS-streaming gebruikt.
