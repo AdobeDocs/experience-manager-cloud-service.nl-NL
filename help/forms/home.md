@@ -3,10 +3,10 @@ title: Inleiding tot [!DNL AEM Forms] as a Cloud Service
 description: Ontdek AEM Forms en leer hoe u hiermee bedrijfsklare documenten en formuliercontent kunt maken. Leer meer over Platform-as-a-Service (PaaS) en hoe u digitale formulieren en bedrijfsprocessen op ondernemingsniveau beheert en hoe u Forms verbindt met actuele gegevensbronnen.
 landing-page-description: Inzicht in hoe u formulieren in AEM as a Cloud Service kunt gebruiken.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: f8e229820bb7aef3923e955c928033ef7d3d9460
+source-git-commit: 95e1981faf9532aa56cc8a2e18166d08f35ecf29
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,9 +44,11 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-| Adaptieve Forms | automatede form conversion Service | Communicatie-API&#39;s | Forms Analytics |
-|---|---|---|---|
-| Met Adaptive Forms kunnen bedrijven interactieve, gegevensgestuurde formulieren maken en beheren voor hun websites en andere digitale kanalen die reageren op mobiele formulieren. | Met automatede form conversion Service kunnen bedrijven formulieren op basis van oudere PDF omzetten in interactieve, digitale formulieren die eenvoudig online kunnen worden beheerd en gedistribueerd. | Communicatie APIs is een reeks RESTful APIs (de Interfaces van de Programmering van de Toepassing) die ondernemingen toelaten om de verwezenlijking, het beheer, en de levering van gepersonaliseerde, gegeven-gedreven mededelingen te automatiseren. | De service biedt OOTB-ondersteuning voor verbinding met Adobe Analytics. Het verbinden van formulieren met Adobe Analytics biedt verschillende voordelen voor bedrijven, zoals een beter begrip van het gebruikersgedrag, een betere gerichtheid op marketing, een verminderde foutstatus en een beter rendement. |
+
+| Adaptieve Forms | automatede form conversion Service | Communicatie-API&#39;s | Integrations | Forms Workflows |
+|---|---|---|---|---|
+| Met Adaptive Forms kunnen bedrijven interactieve, gegevensgestuurde formulieren maken en beheren voor hun websites en andere digitale kanalen die reageren op mobiele formulieren. | Met automatede form conversion Service kunnen bedrijven formulieren op basis van oudere PDF omzetten in interactieve, digitale formulieren die eenvoudig online kunnen worden beheerd en gedistribueerd. | Communicatie APIs is een reeks RESTful APIs (de Interfaces van de Programmering van de Toepassing) die ondernemingen toelaten om de verwezenlijking, het beheer, en de levering van gepersonaliseerde, gegeven-gedreven mededelingen te automatiseren. | Het platform kan worden geïntegreerd met Adobe Sign en DocuSign, waardoor het voor gebruikers eenvoudig is om aanvragen voor digitale handtekeningen rechtstreeks vanuit hun aangepaste formulieren te verzenden en bij te houden. </br></br>Bovendien kan het platform integreren met Adobe Analytics, waardoor organisaties waardevolle inzichten kunnen krijgen in gebruikersgedrag en -voorkeuren. </br></br> Tot slot kunnen gebruikers met AEM Forms Cloud Service adaptieve formulieren rechtstreeks insluiten in AEM Sites-pagina&#39;s, waardoor een naadloze gebruikerservaring ontstaat | Forms-gerichte workflows in Adobe Experience Manager (AEM) Forms zijn ontworpen om bedrijfsprocessen met formulieren te automatiseren. Deze werkschema&#39;s automatiseren het verpletteren, het overzicht, en de goedkeuring van vormen aangezien zij zich door verschillende stadia van een bedrijfsproces bewegen. Forms-gerichte workflows kunnen visueel worden gemaakt met de AEM Forms Workflow Designer en kunnen worden geïntegreerd met AEM Forms om workflows te activeren wanneer een formulier wordt verzonden. Workflows kunnen worden geconfigureerd om formulieren naar verschillende gebruikers of groepen te leiden op basis van specifieke criteria en kunnen automatische meldingen en herinneringen bevatten om ervoor te zorgen dat formulieren tijdig worden verwerkt. Over het algemeen helpen formuliergerichte workflows in AEM Forms organisaties hun bedrijfsprocessen te stroomlijnen, de efficiëntie te verbeteren en fouten te verminderen. |
+
 
 <!--
 | | |
