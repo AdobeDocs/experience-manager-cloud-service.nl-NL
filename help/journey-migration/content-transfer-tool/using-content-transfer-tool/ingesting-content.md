@@ -2,10 +2,10 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
+source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 8%
+source-wordcount: '1660'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 >id="aemcloud_ctt_ingestion"
 >title="Inktatie van inhoud"
 >abstract="Ingestie verwijst naar het opnemen van inhoud van de migratie die is ingesteld in de Cloud Service-instantie van het doel. De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Opname aanvullen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="Opname aanvullen"
 
 Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool op te nemen:
 >[!NOTE]
@@ -135,11 +135,28 @@ U kunt een opname alleen afschoppen in de doelomgeving als u tot de lokale omgev
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
+### Kan de migratieservice niet bereiken {#unable-to-reach-migration-service}
+
+Nadat een opname wordt gevraagd, kan een bericht als het volgende aan de gebruiker worden voorgesteld: &quot;De migratiedienst op het bestemmingsmilieu is momenteel onbereikbaar. Probeer het later opnieuw of neem contact op met de Adobe-ondersteuning.&quot;
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+
+Dit geeft aan dat de Cloud Acceleration Manager de migratieservice van de doelomgeving niet kan bereiken om de opname te starten. Dit kan om verschillende redenen gebeuren.
+
+>[!NOTE]
+> 
+> Het veld &quot;Migratietoken&quot; wordt weergegeven omdat het ophalen van dat token in sommige gevallen niet is toegestaan. Door het handmatig aanbrengen van de injectie toe te staan, kan de gebruiker de opname snel starten, zonder extra hulp. Als het token is opgegeven en het bericht nog steeds wordt weergegeven, was het ophalen van het token niet het probleem.
+
+* AEM as a Cloud Service handhaaft de milieustaat, en kan af en toe de migratiedienst om een aantal normale redenen moeten opnieuw beginnen. Als die dienst opnieuw begint, kan het niet worden bereikt, maar zal spoedig beschikbaar zijn.
+* Het is mogelijk dat er een ander proces wordt uitgevoerd op de instantie. Bijvoorbeeld, als het Orchestrator van de Versie een update toepast, kan het systeem bezig zijn en de migratiedienst regelmatig niet beschikbaar. Daarom wordt het ten zeerste aanbevolen om updates tijdens een opname te pauzeren, en de mogelijkheid om het werkgebied of de productie-instantie te beschadigen.
+* Als een [IP de Lijst van gewenste personen is toegepast](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager wordt de toegang tot de migratieservice geblokkeerd door Cloud Acceleration Manager. Een IP adres kan niet voor ingesties worden toegevoegd omdat zijn adres zeer dynamisch is. Momenteel, is de enige oplossing de IP lijst van gewenste personen onbruikbaar te maken terwijl de opname loopt.
+* Er kunnen andere redenen zijn die een onderzoek vereisen. Neem contact op met de klantenservice van Adobe als de opname nog steeds mislukt.
+
 ### Automatische updates via Release Orchestrator zijn nog steeds ingeschakeld
 
 De Orchestrator van de versie houdt automatisch milieu-bijgewerkt door updates automatisch toe te passen. Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving. Dat is één van de redenen een steunkaartje zou moeten worden geregistreerd alvorens een opname (zie &quot;Nota&quot;hierboven) te beginnen, zodat tijdelijk het onbruikbaar maken van Orchestrator van de Versie kan worden gepland.
 
-Als het Orchestrator van de Versie nog loopt wanneer een opname wordt begonnen, zal UI dit foutenbericht voorstellen. U kunt desondanks doorgaan, waarbij u het risico accepteert, door het veld te controleren en nogmaals op de knop te drukken.
+Als het Orchestrator van de Versie nog loopt wanneer een opname wordt begonnen, zal UI dit bericht voorstellen. U kunt desondanks doorgaan, waarbij u het risico accepteert, door het veld te controleren en nogmaals op de knop te drukken.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
