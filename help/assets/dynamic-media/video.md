@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '9731'
+source-wordcount: '9750'
 ht-degree: 3%
 
 ---
@@ -151,7 +151,7 @@ Zie ook [Viewers voor Experience Manager Assets en Dynamic Media Classic](https:
 
 ## Beste praktijken: De HTML5-videoviewer gebruiken {#best-practice-using-the-html-video-viewer}
 
-De Dynamic Media HTML5 Video viewer-voorinstellingen zijn robuuste videospelers. U kunt ze gebruiken om veel voorkomende problemen te voorkomen die te maken hebben met het afspelen van HTML5-video en met problemen die te maken hebben met mobiele apparaten. Bijvoorbeeld een gebrek aan adaptieve streaminglevering en een beperkt bereik van de desktopbrowser.
+De Dynamic Media HTML5 Video viewer-voorinstellingen zijn robuuste videospelers. U kunt ze gebruiken om veel voorkomende problemen te voorkomen die te maken hebben met het afspelen van HTML5-video en met problemen die te maken hebben met mobiele apparaten. Bijvoorbeeld een gebrek aan adaptieve streaminglevering met bitsnelheid en een beperkt bereik van de desktopbrowser.
 
 Aan de ontwerpkant van de speler, kunt u de functionaliteit van de videospeler ontwerpen gebruikend standaardWeb ontwikkelingshulpmiddelen. U kunt bijvoorbeeld de knoppen, besturingselementen en de achtergrond van een aangepaste posterafbeelding ontwerpen met behulp van HTML5 en CSS om u te helpen uw klanten te bereiken met een aangepaste weergave.
 
@@ -179,7 +179,7 @@ Op grond daarvan wordt met
 * Als u een HTTPS-website met HTTPS-videostreaming hebt, is streaming prima.
 * Als u een HTTP-website met HTTPS-videostreaming hebt, is streaming prima en zijn er geen problemen met gemengde inhoud in de webbrowser.
 
-HLS is een Apple-standaard voor adaptieve videostreaming die het afspelen automatisch aanpast op basis van de capaciteit van de netwerkbandbreedte. Het laat de klant ook &quot;zoeken&quot;aan om het even welk punt in de video zonder de behoefte om op de rest van de video te wachten te downloaden.
+DASH is de internationale standaard en HLS is een Apple-standaard. Beide worden gebruikt voor adaptieve videostreaming. En, passen beide technologieën automatisch playback aan die op de capaciteit van de netwerkbandbreedte wordt gebaseerd. Het laat de klant ook &quot;zoeken&quot;aan om het even welk punt in de video zonder de behoefte om op de rest van de video te wachten te downloaden.
 
 Progressieve video wordt geleverd door de video lokaal te downloaden en op het desktopsysteem of mobiele apparaat van de gebruiker op te slaan.
 
@@ -210,17 +210,17 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 of hoger</td>
-   <td>Adaptieve streaming HLS of DASH*</td>
+   <td>HLS of DASH* adaptieve bitsnelheidstreaming</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chroom</td>
-   <td>Adaptieve streaming HLS of DASH*</td>
+   <td>HLS of DASH* adaptieve bitsnelheidstreaming</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>Aangepaste streaming HLS</td>
+   <td>HLS adaptieve bitsnelheidstreaming</td>
   </tr>
   <tr>
    <td>Mobiel</td>
@@ -230,7 +230,7 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
   <tr>
    <td>Mobiel</td>
    <td>Chrome (Android™ 7 of hoger)</td>
-   <td>HLS of DASH* adaptieve streaming/td&gt;
+   <td>HLS of DASH* adaptieve bitsnelheidstreaming/td&gt;
   </tr>
   <tr>
    <td>Mobiel</td>
@@ -240,12 +240,12 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
   <tr>
    <td>Mobiel</td>
    <td>Safari (iOS)</td>
-   <td>Aangepaste streaming HLS</td>
+   <td>HLS adaptieve bitsnelheidstreaming</td>
   </tr>
   <tr>
    <td>Mobiel</td>
    <td>Chrome (iOS)</td>
-   <td>Aangepaste streaming HLS</td>
+   <td>HLS adaptieve bitsnelheidstreaming</td>
   </tr>
  </tbody>
 </table>
@@ -418,7 +418,7 @@ DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor v
 
 Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
 
-* Pakket DASH-streamvideo voor adaptieve streaming. Deze methode leidt tot een efficiëntere levering. Adaptieve streaming zorgt voor de beste kijkervaring voor uw klanten.
+* Pakket DASH-streamvideo voor adaptieve bitsnelheidstreaming. Deze methode leidt tot een efficiëntere levering. Adaptieve streaming zorgt voor de beste kijkervaring voor uw klanten.
 * Bij voor browsers geoptimaliseerde streaming met Dynamic Media-spelers wordt geschakeld tussen HLS- en DASH-streaming voor de beste kwaliteit van de service. Wanneer een Safari-browser wordt gebruikt, schakelt de videospeler automatisch over naar HLS.
 * U kunt uw voorkeursstreammethode (HLS of DASH) configureren door de voorinstelling voor de videoviewer te bewerken.
 * Geoptimaliseerde videocodering zorgt ervoor dat er geen extra opslagruimte wordt gebruikt terwijl DASH-mogelijkheden worden ingeschakeld. Er wordt één set videocoderingscodes gemaakt voor zowel HLS als DASH om de opslagkosten voor video te optimaliseren.

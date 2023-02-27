@@ -4,9 +4,9 @@ description: Leer hoe u URL's koppelt aan uw webtoepassing in Dynamic Media.
 contentOwner: Rick Brough
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1212'
 ht-degree: 5%
 
 ---
@@ -152,7 +152,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 
    Dit pad is de volledige video-URL voor een gepubliceerde video-uitvoering.
 
-## Een video-URL ophalen voor adaptieve streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Een video-URL verkrijgen voor adaptieve bitsnelheidstreaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Navigeer in Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Op de **[!UICONTROL Cloud Services]** pagina, omlaag schuiven naar de **[!UICONTROL Dynamic Media Cloud Services]** kop selecteert u vervolgens **[!UICONTROL Show Configurations]**.

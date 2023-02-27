@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '3530'
+source-wordcount: '3539'
 ht-degree: 6%
 
 ---
 
 # Dynamic Media-videoprofielen{#video-profiles}
 
-Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. Wanneer u tijdens het afspelen uw primaire bronvideo&#39;s codeert met het profiel Adaptieve videocodering, past de videospeler automatisch de kwaliteit van de videostream aan op basis van de snelheid van de internetverbinding van uw klanten. Deze handeling wordt adaptieve streaming genoemd.
+Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel. De instellingen in dit out-of-the-box profiel zijn geoptimaliseerd om uw klanten de beste kijkervaring mogelijk te maken. Wanneer u tijdens het afspelen uw primaire bronvideo&#39;s codeert met het profiel Adaptieve videocodering, past de videospeler automatisch de kwaliteit van de videostream aan op basis van de snelheid van de internetverbinding van uw klanten. Deze handeling wordt &#39;adaptieve bitsnelheidstreaming&#39; genoemd.
 
 Hier volgen nog andere factoren die de kwaliteit van uw video&#39;s bepalen:
 
@@ -124,7 +124,7 @@ Zie [Videoprofielen toepassen op specifieke mappen](#applying-video-profiles-to-
 
 Zie ook [Slim uitsnijden voor afbeeldingen](image-profiles.md).
 
-## Een videoprofiel maken voor adaptieve streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## Een videoprofiel maken voor adaptieve streaming bitsnelheid {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel - een groep video-uploadinstellingen voor MP4 H.264-systeem dat is geoptimaliseerd voor de beste kijkervaring. U kunt dit profiel gebruiken wanneer u uw video&#39;s uploadt.
 
@@ -132,7 +132,7 @@ Als dit vooraf gedefinieerde profiel echter niet aan uw behoeften voldoet, kunt 
 
 Wanneer u het videocoderingsprofiel maakt, ziet u dat de meeste coderingsopties vooraf zijn gevuld met de aanbevolen standaardinstellingen. Als u echter een andere waarde selecteert dan de aanbevolen standaardwaarde, kan dit resulteren in een slechte videokwaliteit tijdens het afspelen en andere prestatieproblemen.
 
-Voor alle MP4 H.264-videocoderingsvoorinstellingen in het profiel worden dus de volgende waarden gevalideerd om ervoor te zorgen dat deze voor afzonderlijke coderingsvoorinstellingen in het profiel hetzelfde zijn, zodat adaptief streamen mogelijk is:
+Voor alle MP4 H.264-videocoderingsvoorinstellingen in het profiel worden dus de volgende waarden gevalideerd om ervoor te zorgen dat deze voor afzonderlijke coderingsvoorinstellingen in het profiel hetzelfde zijn, zodat adaptieve bitsnelheidstreaming mogelijk wordt:
 
 * Video-indelingscodec - MP4 H.264 (.mp4)
 * Audiocodec
@@ -143,7 +143,7 @@ Voor alle MP4 H.264-videocoderingsvoorinstellingen in het profiel worden dus de 
 * H264-profiel
 * Samplingfrequentie audio
 
-Als de waarden niet gelijk zijn, kunt u doorgaan met het maken van het profiel. Aangepaste streaming is echter niet mogelijk. In plaats daarvan ervaren gebruikers het streamen met één bitsnelheid. Het wordt aanbevolen de coderingsinstellingen te bewerken om dezelfde waarden te gebruiken voor afzonderlijke coderingsvoorinstellingen in het profiel. (De editor Videoprofiel/Voorinstelling past de pariteit van de aangepaste instellingen voor videocodering toe als &quot;Coderen voor adaptief streamen&quot; is ingeschakeld.)
+Als de waarden niet gelijk zijn, kunt u doorgaan met het maken van het profiel. Adaptieve bitsnelheidstreaming is echter niet mogelijk. In plaats daarvan ervaren gebruikers het streamen met één bitsnelheid. Het wordt aanbevolen de coderingsinstellingen te bewerken om dezelfde waarden te gebruiken voor afzonderlijke coderingsvoorinstellingen in het profiel. (De editor Videoprofiel/Voorinstelling past de pariteit van de aangepaste instellingen voor videocodering toe als &quot;Coderen voor adaptief streamen&quot; is ingeschakeld.)
 
 Zie ook [Een videocoderingsprofiel voor progressieve streaming maken](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -151,7 +151,7 @@ Zie ook [Aanbevolen procedures voor videocodering](/help/assets/dynamic-media/vi
 
 Zie voor meer informatie over het definiëren van geavanceerde verwerkingsparameters voor andere elementtypen [Elementverwerking configureren](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Een videoprofiel maken voor adaptieve streaming**,
+**Een videoprofiel maken voor adaptieve streaming bitsnelheid**,
 
 1. Selecteer het logo van de Experience Manager en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Selecteer **[!UICONTROL Create]**.
@@ -194,7 +194,7 @@ Als u ervoor kiest de optie niet te gebruiken **[!UICONTROL Encode for adaptive 
 
 De ondersteunde video-indelingscodecs zijn H.264 (.mp4) en WebM.
 
-Zie ook [Een videocoderingsprofiel maken voor adaptieve streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
+Zie ook [Een videocoderingsprofiel maken voor adaptieve streaming bitsnelheid](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
 Zie ook [Aanbevolen procedures voor videocodering](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -274,7 +274,7 @@ U kunt een bestaand coderingsprofiel voor video bewerken om te profiteren van ge
    <td><code>keyframe</code></td>
    <td>Het doelaantal frames tussen hoofdframes. Bereken deze waarde zodat u een hoofdframe elke 2-10 seconden kunt genereren. Bij 30 frames per seconde is het hoofdframe-interval bijvoorbeeld 60-300.<br /> <br /> De lagere keyframe intervallen verbeteren stroom het zoeken en stroom omschakelingsgedrag voor adaptieve videocoderingen en kunnen de kwaliteit voor video's ook verbeteren die veel motie hebben. Omdat hoofdframes de grootte van een bestand echter vergroten, resulteert een lager hoofdframe-interval meestal in een lagere algemene videokwaliteit bij een bepaalde bitsnelheid.</td>
    <td><code>String</code></td>
-   <td><p>Positief getal.</p> <p>De standaardwaarde is 300.</p> <p>De aanbevolen waarde voor HLS of DASH (adaptieve streaming) is 60-90. (Als u DASH wilt gebruiken voor uw video's, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH inschakelen voor uw account</a>.)</p> </td>
+   <td><p>Positief getal.</p> <p>De standaardwaarde is 300.</p> <p>De aanbevolen waarde voor HLS of DASH (adaptieve bitsnelheidstreaming) is 60-90. (Als u DASH wilt gebruiken voor uw video's, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH inschakelen voor uw account</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -324,7 +324,7 @@ Zie voor meer informatie over het definiëren van geavanceerde verwerkingsparame
 1. Selecteer op de werkbalk de optie **[!UICONTROL Edit]**.
 1. Bewerk de naam en beschrijving op de pagina Profiel videocodering.
 1. U kunt het beste het selectievakje **[!UICONTROL Encode for adaptive streaming]** inschakelen.
-Selecteer het informatiepictogram voor een beschrijving van adaptieve streaming. (Schakel dit selectievakje niet in als u een progressief videoprofiel bewerkt.)
+Selecteer het informatiepictogram voor een beschrijving van adaptieve bitsnelheidstreaming. (Schakel dit selectievakje niet in als u een progressief videoprofiel bewerkt.)
 1. Onder de kop Voorinstellingen videocodering kunt u voorinstellingen voor videocodering die het profiel vormen, toevoegen, bewerken of verwijderen.
 
    Selecteer het informatiepictogram naast elke optie in het dialoogvenster **[!UICONTROL Basic]** en **[!UICONTROL Advanced]** tabbladen voor meer beschrijvingen of aanbevolen instellingen op basis van de geselecteerde video-indelingscodec.
@@ -337,7 +337,7 @@ Selecteer het informatiepictogram voor een beschrijving van adaptieve streaming.
 1. Controleer op de pagina Videoprofielen de naam van één videoprofiel.
 1. Selecteer op de werkbalk de optie **[!UICONTROL Copy]**.
 1. Voer op de pagina Profiel videocodering een nieuwe naam in voor het profiel.
-1. U kunt het beste het selectievakje **[!UICONTROL Encode for adaptive streaming]** inschakelen. Selecteer het informatiepictogram voor een beschrijving van adaptieve streaming. (Schakel het selectievakje niet in als u een progressief videoprofiel kopieert.)
+1. U kunt het beste het selectievakje **[!UICONTROL Encode for adaptive streaming]** inschakelen. Selecteer het informatiepictogram voor een beschrijving van adaptieve bitsnelheidstreaming. (Schakel het selectievakje niet in als u een progressief videoprofiel kopieert.)
 
    Als in de modus Dynamic Media - hybride een WebM-videovoorinstelling deel uitmaakt van het videoprofiel, **[!UICONTROL Encode for adaptive streaming]** is niet mogelijk omdat alle voorinstellingen MP4 moeten zijn.
 1. Onder de kop Voorinstellingen videocodering kunt u voorinstellingen voor videocodering die het profiel vormen, toevoegen, bewerken of verwijderen.
