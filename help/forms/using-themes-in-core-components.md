@@ -1,7 +1,7 @@
 ---
 title: Thema's maken en gebruiken
 description: U kunt thema's gebruiken om een adaptief formulier te stileren en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
-source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
+source-git-commit: 1357b36dc3d14d2ceceb6761cb005b592472890a
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 0%
@@ -86,7 +86,7 @@ De `src/components` de map bevat JavaScript- en CSS-bestanden die specifiek zijn
 
 Als u het thema wilt aanpassen, kunt u de lokale proxyserver starten om de themaaanpassingen in real-time weer te geven op basis van de werkelijke AEM.
 
-### 4. Naam wijzigen in het thema package.json en package_lock.json van Canvas {#changename-packagelock-packagelockjson}
+### 3. Naam wijzigen in het thema package.json en package_lock.json van Canvas {#changename-packagelock-packagelockjson}
 
 De naam en versie van het Canvas-thema bijwerken in het dialoogvenster `package.json` en `package_lock.json` bestanden.
 
@@ -96,7 +96,7 @@ De naam en versie van het Canvas-thema bijwerken in het dialoogvenster `package.
 
 ![Canvasthema-onderwerp](/help/forms/assets/changename_canvastheme.png)
 
-### 3. Het .env-bestand maken in een themamap {#creating-env-file-theme-folder}
+### 4. Het .env-bestand maken in een themamap {#creating-env-file-theme-folder}
 
 Een `.env` in de themamap en voeg de volgende parameters toe:
 
@@ -112,7 +112,7 @@ AEM_PROXY_PORT=7000
 
 ![Structuur van canvasthema](/help/forms/assets/env-file-canvas-theme.png)
 
-### 4. Een lokale proxyserver starten {#starting-a-local-proxy-server}
+### 5. Een lokale proxyserver starten {#starting-a-local-proxy-server}
 
 1. Navigeer vanaf de opdrachtregel naar de basis van het thema op uw lokale computer.
 1. Uitvoeren `npm install` en npm wint gebiedsdelen terug en installeert het project.
@@ -139,7 +139,7 @@ AEM_PROXY_PORT=7000
 
 Navigeer naar een adaptief formulier om het Canvas-thema weer te geven dat is toegepast op een adaptief formulier.
 
-### 5. Het thema aanpassen {#customize-theme}
+### 6. Het thema aanpassen {#customize-theme}
 
 1. Open het bestand in de editor `<your-theme-sources>/src/site/_variables.scss`.
 
@@ -173,7 +173,7 @@ De themaontwerper bekijkt de veranderingen in de lokale volmachtsserver en past 
 
 Voordat u de wijzigingen doorvoert in de AEM Git-opslagplaats, hebt u toegang nodig tot uw [Gegevens opslagplaats ophalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
 
-### 6. De wijzigingen vastleggen {#committing-the-changes}
+### 7. De wijzigingen vastleggen {#committing-the-changes}
 
 Nadat u wijzigingen in het thema hebt aangebracht en het met een lokale proxyserver hebt getest, past u de wijzigingen toe op de Git-opslagplaats van uw AEM Forms-Cloud Service. Het maakt het aangepaste thema beschikbaar in uw Forms Cloud Service-omgeving voor gebruik door Adaptive Forms-auteurs.
 
@@ -216,7 +216,7 @@ Gebruik bijvoorbeeld deze opdracht
 Uw aanpassingen worden nu veilig opgeslagen in de Git-opslagplaats.
 
 
-### 7. De frontend pijpleiding in werking stellen {#deploy-pipeline}
+### 8. De frontend pijpleiding in werking stellen {#deploy-pipeline}
 
 1. Creeer de front-end pijpleiding om het aangepaste thema op te stellen. Meer informatie [hoe te opstelling een frontline pijpleiding om aangepast thema op te stellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
 1. Stel de gecreeerde frontend pijpleiding in werking om aangepaste themamap onder te stellen **[!UICONTROL Style]** van een wizard voor het maken van adaptieve formulieren.
