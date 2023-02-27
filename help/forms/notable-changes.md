@@ -1,9 +1,9 @@
 ---
 title: Wat is er veranderd tussen AEM 6.5 Forms en AEM Cloud Services
 description: Bent u een Experience Manager Forms-gebruiker en wilt u een upgrade uitvoeren naar Adobe Experience Manager Forms as a Cloud Service? Leer de opvallendste wijzigingen voordat u gaat upgraden of migreren naar Cloud Service.
-contentOwner: khsingh
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
-source-git-commit: d77b8d389be4b5c0ffa262ad6f1ff8b4d899e82b
+contentOwner: khsingh
+source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 0%
@@ -16,39 +16,39 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 | Functie/mogelijkheid | [!DNL AEM Forms] as a Cloud Service | AEM 6,5 Forms |
 |---|---|---|
-| Systeemeigen architectuur voor cloud | ☑ | ☒ |
-| Automatisch schalen op basis van laden | ☑ | ☒ |
-| Geen downtime voor upgrades | ☑ | ☒ |
+| Systeemeigen architectuur voor cloud | ✅ | ⛌ |
+| Automatisch schalen op basis van laden | ✅ | ⛌ |
+| Geen downtime voor upgrades | ✅ | ⛌ |
 | Uitrolfrequentie van functies | Agile* | Driemaandelijks |
-| CDN (content delivery network) opgenomen | ☑ | ☒ |
-| Topologieën geoptimaliseerd voor maximale veerkracht en efficiëntie | ☑ | ☒ |
-| Eigen ontwikkelomgeving voor cloud | ☑ | ☒ |
-| Self-Service via Cloud Manager | ☑ | ☒ |
-| Geautomatiseerde upgrades met continue integratie en continue levering (CI/CD) | ☑ | ☒ |
-| Integratie met [!DNL Micosoft Power Automate] | ☑ | ☒ |
-| Integratie met [!DNL DocuSign] | ☑ | ☒ |
-| Eenvoudige connectiviteit met Microsoft Dynamics en Salesforce | ☑ | ☒ |
-| Eenvoudige connectiviteit met Microsoft Azure-gegevensopslag | ☑ | ☒ |
-| Hardened Rule Editor | ☑ | ☒ |
-| Wizard Formulier maken | ☑ | ☒ |
-| Aangepaste XCI-ondersteuning voor document of record | ☑ | ☒ |
-| Adaptieve Forms <sup>1</sup> | ☑ | ☑ |
-| Gegevensintegratie met meerdere gegevensbronnen | ☑ | ☑ |
-| Communicatie-API&#39;s (Document Services) <sup>2,3</sup> | ☑ | ☑ |
-| automatede form conversion Service <sup>4</sup> | ☑ | ☑ |
-| Integratie met [!DNL Adobe Sign] | ☑ | ☑ |
-| Integratie met [!DNL AEM Sites] | ☑ | ☑ |
-| Integratie met [!DNL Adobe Launch] | ☑ | ☑ |
-| Integratie met [!DNL Adobe Analytics] | ☑ | ☑ |
-| Forms Portal <sup>5</sup> | ☑ | ☑ |
-| Workflows AEM | ☑ | ☑ |
-| Document van record | ☑ | ☑ |
-| Onzichtbare Captcha | ☑ | ☑ |
-| Herbruikbare formuliergegevensmodelconfiguraties | ☑ | ☑ |
-| Op acroform gebaseerd document of record | ☑ | ☑ |
-| Identiteitsverificatie op basis van overheidsidentiteitskaart voor met Adobe Sign ingeschakelde Adaptieve Forms | ☑ | ☑ |
-| HTML5 <sup>6</sup> | ☒ | ☑ |
-| Documentbeveiliging | ☒ | ☑ |
+| CDN (content delivery network) opgenomen | ✅ | ⛌ |
+| Topologieën geoptimaliseerd voor maximale veerkracht en efficiëntie | ✅ | ⛌ |
+| Eigen ontwikkelomgeving voor cloud | ✅ | ⛌ |
+| Self-Service via Cloud Manager | ✅ | ⛌ |
+| Geautomatiseerde upgrades met continue integratie en continue levering (CI/CD) | ✅ | ⛌ |
+| Integratie met [!DNL Micosoft Power Automate] | ✅ | ⛌ |
+| Integratie met [!DNL DocuSign] | ✅ | ⛌ |
+| Eenvoudige connectiviteit met Microsoft Dynamics en Salesforce | ✅ | ⛌ |
+| Eenvoudige connectiviteit met Microsoft Azure-gegevensopslag | ✅ | ⛌ |
+| Hardened Rule Editor | ✅ | ⛌ |
+| Wizard Formulier maken | ✅ | ⛌ |
+| Aangepaste XCI-ondersteuning voor document of record | ✅ | ⛌ |
+| Adaptieve Forms <sup>1</sup> | ✅ | ✅ |
+| Gegevensintegratie met meerdere gegevensbronnen | ✅ | ✅ |
+| Communicatie-API&#39;s (Document Services) <sup>2,3</sup> | ✅ | ✅ |
+| automatede form conversion Service <sup>4</sup> | ✅ | ✅ |
+| Integratie met [!DNL Adobe Sign] | ✅ | ✅ |
+| Integratie met [!DNL AEM Sites] | ✅ | ✅ |
+| Integratie met [!DNL Adobe Launch] | ✅ | ✅ |
+| Integratie met [!DNL Adobe Analytics] | ✅ | ✅ |
+| Forms Portal <sup>5</sup> | ✅ | ✅ |
+| Workflows AEM | ✅ | ✅ |
+| Document van record | ✅ | ✅ |
+| Onzichtbare Captcha | ✅ | ✅ |
+| Herbruikbare formuliergegevensmodelconfiguraties | ✅ | ✅ |
+| Op acroform gebaseerd document of record | ✅ | ✅ |
+| Identiteitsverificatie op basis van overheidsidentiteitskaart voor met Adobe Sign ingeschakelde Adaptieve Forms | ✅ | ✅ |
+| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| Documentbeveiliging | ⛌ | ✅ |
 
 Houd rekening met de volgende uitzonderlijke gevallen voordat u verdergaat met de dienst:
 
