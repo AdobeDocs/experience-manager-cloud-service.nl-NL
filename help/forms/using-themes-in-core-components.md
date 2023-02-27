@@ -1,9 +1,9 @@
 ---
 title: Thema's maken en gebruiken
 description: U kunt thema's gebruiken om een adaptief formulier te stileren en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1657'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,7 @@ Als u een thema wilt aanpassen,
 Een Canvasthema aanpassen:
 1. [Het thema Canvas klonen](#1-download-canvas-theme-download-canvas-theme)
 1. [De structuur van het thema begrijpen](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [Naam wijzigen in package.json en package_lock.json](#changename-packagelock-packagelockjson)
 1. [Maak de ](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
 1. [De lokale proxyserver starten](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
 1. [Het thema aanpassen](#customize-the-theme-customizing-theme)
@@ -67,7 +68,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 >[!NOTE]
 >
-> Op het tabblad Stijl van de wizard Formulier maken wordt dezelfde themanaam weergegeven als package.json.
+> Op het tabblad Stijl van de wizard Formulier maken wordt dezelfde themanaam weergegeven als in het bestand package.json.
 
 ### 2. De structuur van het thema begrijpen {#structure-of-canvas-theme}
 
@@ -79,18 +80,28 @@ Een adaptief formulierthema is een pakket met de CSS-, JavaScript- en statische 
 * `src/theme.ts`: Het belangrijkste ingangspunt van uw thema JavaScript en CSS
 * `src\theme.scss`: JavaScript- en CSS-bestanden die van toepassing zijn op het hele thema
 
-De `src/components` de map bevat JavaScript- en CSS-bestanden die specifiek zijn voor alle AEM kerncomponenten, zoals knop, selectievakje, container, voettekst, enzovoort. U kunt een stijl voor de knop of het selectievakje instellen door het CSS-bestand te bewerken dat specifiek is voor de AEM.
+De `src/components` de map bevat JavaScript- en CSS-bestanden die specifiek zijn voor alle AEM kerncomponenten, zoals knop, selectievakje, container, voettekst enzovoort. U kunt een stijl voor de knop of het selectievakje instellen door het CSS-bestand te bewerken dat specifiek is voor de AEM.
 
 ![Het thema bewerken](/help/forms/assets/theme_structure.png)
 
 Als u het thema wilt aanpassen, kunt u de lokale proxyserver starten om de themaaanpassingen in real-time weer te geven op basis van de werkelijke AEM.
+
+### 4. Naam wijzigen in het thema package.json en package_lock.json van Canvas {#changename-packagelock-packagelockjson}
+
+De naam en versie van het Canvas-thema bijwerken in het dialoogvenster `package.json` en `package_lock.json` bestanden.
+
+>[!NOTE]
+>
+> Namen mogen niet `@aemforms` tag. Het moet eenvoudige tekst zijn als door de gebruiker opgegeven naam.
+
+![Canvasthema-onderwerp](/help/forms/assets/changename_canvastheme.png)
 
 ### 3. Het .env-bestand maken in een themamap {#creating-env-file-theme-folder}
 
 Een `.env` in de themamap en voeg de volgende parameters toe:
 
 * **AEM URL**
-AEM_URL=https://[auteur-instance] of http://localhost:[poort]/
+AEM_URL=https://[auteur-instance]
 
 * **AEM sitenaam**
 AEM_ADAPTIVE_FORM=Form_name
@@ -109,7 +120,7 @@ AEM_PROXY_PORT=7000
 
    ![npm live](/help/forms/assets/theme_proxy.png)
 
-1. Wanneer de proxyserver wordt gestart, wordt automatisch een browser geopend voor `http://localhost:[port]/`.
+
 1. Tik of klik op **LOKAAL AANMELDEN (ALLEEN TAKEN BEHEREN)** en meld u aan met de gegevens van de proxygebruiker die u van de AEM beheerder hebt ontvangen.
 
    ![Lokaal aanmelden](/help/forms/assets/local_signin.png)
@@ -166,20 +177,35 @@ Voordat u de wijzigingen doorvoert in de AEM Git-opslagplaats, hebt u toegang no
 
 Nadat u wijzigingen in het thema hebt aangebracht en het met een lokale proxyserver hebt getest, past u de wijzigingen toe op de Git-opslagplaats van uw AEM Forms-Cloud Service. Het maakt het aangepaste thema beschikbaar in uw Forms Cloud Service-omgeving voor gebruik door Adaptive Forms-auteurs.
 
-Voordat u wijzigingen aanbrengt in de git-opslagplaats van uw AEM Forms-Cloud Service, hebt u een kloon van de opslagplaats op uw lokale computer nodig. De gegevensopslagruimte klonen:
+Voordat u wijzigingen aanbrengt in de Git-opslagplaats van uw AEM Forms-Cloud Service, hebt u een kloon van de opslagplaats op uw lokale computer nodig. De gegevensopslagruimte klonen:
 
-1. Open de opdrachtprompt en voer de onderstaande opdracht uit na het vervangen [my-org] en [mijn-programma] met waarden die door uw AEM beheerder worden verstrekt. U kunt ook details vinden in uw [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git):
+1. Maak een nieuwe themaopslagplaats door op de knop **[!UICONTROL Repositories]** optie.
+
+   ![nieuwe themarepo maken](/help/forms/assets/createrepo_canvastheme.png)
+
+1. Klikken **[!UICONTROL Add Repository]** en de **Naam opslagplaats** in de **Opslagplaats toevoegen** in. Klik op **[!UICONTROL Save]**.
+
+   ![Repo Canvasthema toevoegen](/help/forms/assets/addcanvasthemerepo.png)
+
+1. Klikken **[!UICONTROL Copy Repository URL]** om de URL van de gemaakte opslagplaats te kopiëren.
+
+   ![URL van Canvasthema](/help/forms/assets/copyurl_canvastheme.png)
+
+1. Open de opdrachtprompt en kloon de hierboven gemaakte cloudopslagplaats.
 
    ```
-   git clone https://git.cloudmanager.adobe.com/[my-org]/[my-org]/
+   git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
    ```
-1. Verplaats het themaproject dat u bewerkt naar de gekloonde reactie met een opdracht die lijkt op `mv <theme-sources> <cloned-repo>`.
-1. Breng de gewenste wijzigingen aan in de mappen met themacomponenten door het CSS-bestand ervan te wijzigen.
-1. Wijs in de directory van de gekloonde opslagplaats de themabestanden toe waarnaar u zojuist bent verplaatst met de volgende opdrachten.
+
+1. Verplaats de bestanden van de themaopslagplaats die u bewerkt naar de cloudopslagplaats met een opdracht die lijkt op
+   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
+Gebruik bijvoorbeeld deze opdracht 
+`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+1. Wijs in de directory van de cloudopslagplaats de themabestanden waar u naartoe hebt verplaatst toe met de volgende opdrachten.
 
    ```text
-   git add <theme-file-name>
-   git commit -m "Adding theme sources"
+   git add .
+   git commit -a -m "Adding theme files"
    git push
    ```
 
@@ -190,10 +216,10 @@ Voordat u wijzigingen aanbrengt in de git-opslagplaats van uw AEM Forms-Cloud Se
 Uw aanpassingen worden nu veilig opgeslagen in de Git-opslagplaats.
 
 
-### 7. Implementeer de frontend-pijpleiding {#deploy-pipeline}
+### 7. De frontend pijpleiding in werking stellen {#deploy-pipeline}
 
-Stel uw aangepast thema op gebruikend de front-end pijpleiding. Meer informatie [hoe te opstelling een frontline pijpleiding om aangepast thema op te stellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
-
+1. Creeer de front-end pijpleiding om het aangepaste thema op te stellen. Meer informatie [hoe te opstelling een frontline pijpleiding om aangepast thema op te stellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
+1. Stel de gecreeerde frontend pijpleiding in werking om aangepaste themamap onder te stellen **[!UICONTROL Style]** van een wizard voor het maken van adaptieve formulieren.
 
 >[!NOTE]
 >
@@ -205,13 +231,13 @@ Stel uw aangepast thema op gebruikend de front-end pijpleiding. Meer informatie 
 1. Open een adaptief formulier dat is gemaakt met behulp van kerncomponenten.
 1. Start de lokale proxyserver met de opdrachtprompt en klik op **LOKAAL AANMELDEN (ALLEEN TAKEN BEHEREN)**.
 1. Nadat u zich hebt aangemeld, wordt u omgeleid naar de browser en ziet u het toegepaste thema.
-1. Download het Canvas-thema en extraheer de gedownloade ZIP-map.
+1. Download de [Canvasthema](https://github.com/adobe/aem-forms-theme-canvas) en extraheer de gedownloade ZIP-map.
 1. Open de uitgepakte ZIP-map in de gewenste editor.
 1. Een `.env` bestand in de themamap en voeg parameters toe: **URL AEM**, **AEM_ADAPTIVE_FORM** en **AEM_PROXY_PORT**.
 1. Open het CSS-bestand van het tekstvak in de themamap Canvas en wijzig de kleur van de rand in &#39;&#39;Zeg&#39;&#39; `red` kleur en sla de wijzigingen op.
 1. Open de browser opnieuw en u ziet dat de wijzigingen direct zichtbaar zijn in een adaptief formulier.
 1. Verplaats de canvasthemamap in uw gekloonde opslagplaats.
-1. Leg de wijzigingen vast en implementeer de frontpijplijn.
+1. Leg de wijzigingen vast en voer de pijplijn naar voren uit.
 
 Zodra de pijpleiding wordt uitgevoerd, is het thema beschikbaar onder het lusje van de Stijl.
 
