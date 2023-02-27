@@ -1,10 +1,10 @@
 ---
-title: Belangrijke functies en mogelijkheden van Adobe Experience Manager (AEM) Forms as a Cloud Service
-description: "[!DNL AEM Forms] as a Cloud Service is een platform voor het maken, beheren en publiceren van formulieren en bedrijfsprocessen op bedrijfsniveau."
+title: Nieuwste innovaties van Adobe Experience Manager (AEM Forms as a Cloud Service)
+description: "Ontdek de nieuwste mogelijkheden van [!DNL AEM Forms] as a Cloud Service voor het maken, beheren en publiceren van bedrijfsformulieren en bedrijfsprocessen op bedrijfsniveau."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: d77b8d389be4b5c0ffa262ad6f1ff8b4d899e82b
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
@@ -19,33 +19,48 @@ The organization can use [!DNL AEM Forms] as a Cloud Service to create digital f
 
 An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start using all these features without waiting to buy and set up a local infrastructure. The service also frees the organizations from the cycle of upgrades as it is always up to date and always offers the latest feature.  -->
 
-# Belangrijke functies en mogelijkheden {#key-features}
 
-[!DNL AEM Forms] as a Cloud Service biedt verschillende mogelijkheden in de cloud, zoals een eigen architectuur in de cloud, automatisch schalen, geen downtime voor upgrades, een CDN (Content Delivery Network), een ontwikkelomgeving in de cloud en de mogelijkheid om de omgevingen via Cloud Manager zelf te onderhouden. U kunt de service gebruiken om:
+# Nieuwste innovaties {#latest-innovations}
 
-* [Adaptieve Forms maken](creating-adaptive-form.md#strong-create-an-adaptive-form-strong) die automatisch worden weergegeven voor het apparaat en de browser van een gebruiker.
+Tot de meest recente innovaties in AEM Forms as a Cloud Service behoren:
 
-   ![Adaptieve Forms](assets/rule-editor-example.gif)
+|  |  |
+|---|---|
+| Forms zonder hoofdadapter | Maken en beheren [Forms zonder hoofdadapter](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) op het Adobe Experience Manager-platform. Laat uw ontwikkelaars toe om, interactieve vormen tot stand te brengen te publiceren en te beheren die met door APIs, eerder dan door een traditionele grafische gebruikersinterface kunnen worden betreden en met. communiceren. <br/> <br/> Deze formulieren zijn ontworpen om te worden ingediend zonder dat er een traditionele interface voor HTML-formulieren nodig is. Met andere woorden, u kunt hiermee formuliergegevens programmatisch verzenden via een API of een code met een backend-code zonder dat zichtbare formulierelementen aan de voorkant nodig zijn. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)<br/> Formulieren zonder kop zijn handig in verschillende scenario&#39;s, zoals bij het ontwikkelen van toepassingen van één pagina, progressieve webapps of mobiele toepassingen, waarbij een traditionele HTML-formulierinterface niet altijd nodig of praktisch is. Door ontwikkelaars toe te staan formuliergegevens rechtstreeks via API&#39;s of backendcode te verzenden, helpen headless formulieren workflows te stroomlijnen en de algehele prestaties van webtoepassingen te verbeteren. |
+| Kernonderdelen | De [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) zijn 24 open-source, BEM-compatibele componenten die op de basis van de Adobe Experience Manager WCM Core Components zijn gebouwd. Deze zijn speciaal ontworpen voor het maken van Adaptief Forms. Dit zijn formulieren die worden aangepast aan het apparaat, de browser en de schermgrootte van de gebruiker. <br/> <br/> Deze componenten kunnen worden gebruikt om buitengewone ervaringen met het vastleggen en inschrijven van gegevens te maken door een groot aantal opties voor formuliervelden te bieden, zoals tekstvelden, selectievakjes, vervolgkeuzemenu&#39;s en nog veel meer. Ze bevatten ook functies zoals validatie, voorwaardelijke logica en responsief ontwerp, waarmee u formulieren kunt maken die gebruiksvriendelijk en gebruiksvriendelijk zijn. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>  Bovendien, aangezien deze componenten open-bron zijn, hebben de ontwikkelaars de capaciteit om de componenten gemakkelijk aan te passen en uit te breiden om aan de specifieke behoeften van hun organisatie te passen. Deze componenten zijn gebaseerd op BEM-methoden die ervoor zorgen dat ze schaalbaar en onderhoudsbaar zijn. |
+| Microsoft PowerAutomate-connector | Met de AEM Forms Power Automate Connector kunt u Adobe Experience Manager (AEM) Forms integreren met Microsoft Power Automate (voorheen bekend als Microsoft Flow). Power Automate is een cloudgebaseerde service waarmee u geautomatiseerde workflows kunt maken tussen verschillende toepassingen en services.  <br/> <br/> Met AEM Form Power Automate Connector kunt u workflows maken die automatisch worden geactiveerd op basis van verzending van een adaptief formulier. U kunt bijvoorbeeld een workflow maken die automatisch een e-mailbericht naar een specifieke persoon stuurt wanneer een gebruiker een formulier verzendt of een taak maakt in Microsoft Planner wanneer een gebruiker een formulier invult.  <br/> ![](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&amp;px=999) <br/> De AEM Forms Power Automate Connector is een krachtig hulpmiddel waarmee u uw Adaptive Forms kunt automatiseren en integreren met andere toepassingen en services die aansluiten op Microsoft Power Automate, zodat u met een groter aantal tools kunt werken. U kunt workflows maken die zijn afgestemd op uw specifieke behoeften, met de mogelijkheid om aangepaste handelingen, voorwaarden en triggers toe te voegen. Daarnaast biedt Power Automate gedetailleerde analyses en rapportage, waarmee u uw workflows in de loop der tijd kunt bewaken en optimaliseren. |
+| Microsoft Storage Connectors | AEM Forms Microsoft Storage Connectors voor <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-sharedrive">OneDrive</a>, <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-sharedrive"> SharePoint </a> en <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-azure-blob-storage"> Azure Blob Storage </a> zijn connectors waarmee u Adobe Experience Manager (AEM) Forms kunt integreren met Microsoft OneDrive en SharePoint. Met deze connector kunt u gegevensbestanden en bijlagen rechtstreeks vanaf Adaptive Forms uploaden naar OneDrive en SharePoint. <br/> ![](/help/forms/assets/onedrive-and-sharepoint.jpg) <br/>OneDrive en SharePoint kunnen integreren met andere bedrijfstoepassingen, zoals CRM-systemen, boekhoudsoftware en tools voor projectbeheer. Hierdoor kunt u uw bedrijfsprocessen stroomlijnen, handmatige gegevensinvoer verminderen en de algehele efficiëntie verbeteren. |
 
-* [Pixelperfecte PDF forms maken](use-forms-designer.md#create-an-adaptive-form) dat lijkt bijna op papier .
 
-* Gebruiken [automatede form conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) Hiermee converteert u een PDF-formulier naar een adaptief formulier. Het helpt u de digitalisering en de modernisering van gegevens versnellen vangt ervaringen van uw organisatie.
+<!-- 
 
-   ![automatede form conversion](assets/pdf-to-adaptive-form-gitx50.gif)
+# Key features and capabilities {#key-features}
 
-* [Bedrijfsprocessen maken](aem-forms-workflow-step-reference.md#create-form-centric-workflows). U kunt bijvoorbeeld een goedkeurings- en afwijzingsworkflow maken en activeren bij het verzenden van een adaptief formulier.
+[!DNL AEM Forms] as a Cloud Service provides several cloud-native capabilities such as a cloud-native architecture, auto-scaling, zero downtime for upgrades, a CDN (Content Delivery Network), cloud-native development environment, and ability to self-Service the environments via Cloud Manager. You can use the service to: 
 
-Naast het bovenstaande [!DNL AEM Forms] as a Cloud Service biedt de volgende functies en mogelijkheden:
+* [Create Adaptive Forms](creating-adaptive-form.md#strong-create-an-adaptive-form-strong) that automatically render for a user's device and browser.
 
-* Een gebruiksvriendelijke grafische gebruikersinterface waarmee zakelijke gebruikers eenvoudig formulieren kunnen importeren, beheren, voorvertonen en publiceren
-* Een responsieve formuliermap met krachtige zoekfuncties die trefwoorden, tags en metagegevens gebruiken
-* Dynamische detectie van het apparaat en de locatie van een gebruiker om het formulier op de juiste wijze te genereren via internet en mobiele kanalen
-* [Integratie met Adobe Sign](adobe-sign-integration-adaptive-forms.md) diensten of krabbelen om documenten met vertrouwelijke informatie elektronisch te ondertekenen
-* Vermogen [verbind de dienst met diverse types van gegevensbronnen](data-integration.md#create-an-adaptive-form) om gegevens te verzenden en op te halen. De service ondersteunt het verzenden en ophalen van gegevens van RESTful-webservices, SOAP-webservices en OData-services.
-* Integratie met AEM Sites. Hiermee kunt u een adaptief formulier insluiten in een AEM Sites-pagina. U kunt ook een adaptief formulier integreren met elke webpagina.
-* Mogelijkheid om een Document of Record (DoR) te maken om een record bij te houden van de gegevens die u opgeeft en verzendt in een adaptief formulier, zodat u er later naar kunt verwijzen. Een DoR is een PDF-versie van een formulier. Dit omvat zowel een sjabloon als gegevens. De dienst verstrekt een malplaatje standaardDoR en hulpmiddelen om een douanemalplaatje te ontwikkelen.
-* Mogelijkheid om adaptieve Forms te maken voor het produceren van schema-compatibele gegevens. Hierdoor kunt u vastgelegde gegevens zonder enige of minimale wijziging verzenden naar bestaande processen en gegevensbronnen.
-* Mogelijkheid om een vooraf ingevulde service te maken en een formulier in te vullen met bestaande klantgegevens op basis van criteria. Hiermee kunt u het invullen van het formulier versnellen en de snelheid waarmee het formulier wordt verlaten, verlagen.
+    ![Adaptive Forms](assets/rule-editor-example.gif)
+
+* [Create pixel-perfect PDF forms](use-forms-designer.md#create-an-adaptive-form) that look almost like paper.
+
+* Use [Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) to convert a PDF Form to an Adaptive Form. It helps you accelerate digitization and modernization of data capture experiences of your organization.
+
+    ![Automated Forms Conversion service](assets/pdf-to-adaptive-form-gitx50.gif)
+
+* [Create business processes](aem-forms-workflow-step-reference.md#create-form-centric-workflows). For example, You can create and trigger an approval and rejection workflow on submission of an Adaptive Form.
+
+In addition to above [!DNL AEM Forms] as a Cloud Service offers the following features and capabilities:
+
+* An easy-to-use graphical user interface to let business users easily import, manage, preview, and publish forms
+* A responsive forms directory with powerful search features using keywords, tags, and metadata
+* Dynamic detection of a user's device and location to render the form appropriately across web and mobile channels
+* [Integration with Adobe Sign](adobe-sign-integration-adaptive-forms.md) services or Scribble to electronically sign documents containing confidential information
+* Ability to [connect the service to various types of data sources](data-integration.md#create-an-adaptive-form) to send and retrieve data. The service supports sending and retrieving data from RESTful web services, SOAP-based web services, and OData enabled services.
+* Integration with AEM Sites. It allows to embed an adaptive form in an AEM Sites page. You can also integrate an adaptive form to any webpage. 
+* Ability to create a Document of Record (DoR) to keep a record of the information that you provide and submit in an Adaptive Form so that you can refer to it later. A DoR is a PDF version of a form. It includes both a template and data. The service provides a default DoR template and tools to develop a custom template.
+* Ability to create Adaptive Forms to produce schema-compliant data. It helps you submit captured data to existing processes and data sources without any or minimal modifications.
+* Ability to create a prefill service to fill a form with existing customer data based on a criteria. It helps fasten the form filling process and reduce the abandon rate.
 
 
 <!-- 
