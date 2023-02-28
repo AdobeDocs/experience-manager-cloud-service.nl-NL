@@ -3,9 +3,9 @@ title: Wat is er veranderd tussen AEM 6.5 Forms en AEM Cloud Services
 description: Bent u een Experience Manager Forms-gebruiker en wilt u een upgrade uitvoeren naar Adobe Experience Manager Forms as a Cloud Service? Leer de opvallendste wijzigingen voordat u gaat upgraden of migreren naar Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -103,14 +103,18 @@ Ondersteuning voor anoniem gebruik van de Forms-portal is niet beschikbaar buite
 
 +++ 6. HTML5 Forms (Mobile Forms)
 
-De service biedt geen ondersteuning voor HTML5 Forms (Mobile Forms). Als u uw op XDP gebaseerde formulieren weergeeft als HTML5 Forms, kunt u de functie blijven gebruiken op AEM 6.5 Forms.
+* De service biedt geen ondersteuning voor HTML5 Forms (Mobile Forms). Als u uw op XDP gebaseerde formulieren weergeeft als HTML5 Forms, kunt u de functie blijven gebruiken op AEM 6.5 Forms.
+
+* Als u een gebruiker hebt om gegevens offline vast te leggen en deze de volgende keer dat u online terugkeert te synchroniseren, kunt u de functie [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) op AEM 6.5 Forms.
 
 +++
 
 
 +++ 7. Formuliergegevensmodel
 
-Forms-gegevensmodel ondersteunt alleen HTTP- en HTTP-eindpunten voor het verzenden van gegevens. De service biedt geen ondersteuning voor wederzijdse SSL voor REST-connector en op x509-certificaten gebaseerde verificatie voor SOAP-gegevensbronnen. * Met Forms as a Cloud Service kunt u Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive en services die algemene CRUD-bewerkingen (Maken, Lezen, Bijwerken en Verwijderen) ondersteunen, gebruiken als gegevensopslagsystemen. Zowel de Open API-specificatie 2.0 als de Open API-specificatie worden ondersteund. De service biedt ook ondersteuning voor JDBC-connector.
+* Forms-gegevensmodel ondersteunt alleen HTTP- en HTTP-eindpunten voor het verzenden van gegevens. De service biedt geen ondersteuning voor wederzijdse SSL voor REST-connector en op x509-certificaten gebaseerde verificatie voor SOAP-gegevensbronnen.
+
+* Met Forms as a Cloud Service kunt u Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive en services die algemene CRUD-bewerkingen (Maken, Lezen, Bijwerken en Verwijderen) ondersteunen, gebruiken als gegevensopslagsystemen. Zowel de Open API-specificatie 2.0 als de Open API-specificatie worden ondersteund. De service biedt ook ondersteuning voor JDBC-connector.
 
 +++
 
