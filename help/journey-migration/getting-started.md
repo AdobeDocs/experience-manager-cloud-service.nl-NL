@@ -1,11 +1,11 @@
 ---
 title: Aan de slag met de migratiereis om as a Cloud Service te AEM
-description: Start uw migratiereis door uzelf vertrouwd te maken met de basis van de overgang naar AEM as a Cloud Service
+description: De migratiejourney starten door u vertrouwd te maken met de basis van de overgang naar AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 

@@ -1,12 +1,12 @@
 ---
 title: AEM Screens as a Cloud Service
 description: Lees meer over AEM Screens en hoe deze oplossing voor digitale handtekeningen werkt.
-landing-page-description: Begrijp de as a Cloud Service AEM Screens.
+landing-page-description: Begrijp de AEM Screens as a Cloud Service.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 46%
+ht-degree: 50%
 
 ---
 

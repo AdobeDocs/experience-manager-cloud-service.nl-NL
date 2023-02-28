@@ -1,18 +1,18 @@
 ---
-title: AEM Inhoud en Handel
-description: Begrijp hoe te om de Inhoud en de Handel van de Experience Manager as a Cloud Service te gebruiken en te beheren.
-landing-page-description: Begrijp hoe te om de Inhoud en de Handel van de Experience Manager as a Cloud Service te gebruiken en te beheren.
+title: AEM Content en Commerce
+description: Begrijp hoe u Experience Manager Content en Commerce as a Cloud Service kunt gebruiken en beheren.
+landing-page-description: Begrijp hoe u Experience Manager Content en Commerce as a Cloud Service kunt gebruiken en beheren.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 52%
+ht-degree: 66%
 
 ---
 
-# AEM Inhoud en Handel {#commerce-guide}
+# AEM Content en Commerce {#commerce-guide}
 
-Begrijp hoe te om de Inhoud en de Handel van de Experience Manager as a Cloud Service te gebruiken en te beheren.
+Begrijp hoe u Experience Manager Content en Commerce as a Cloud Service kunt gebruiken en beheren.
 
 >[!NOTE]
 >

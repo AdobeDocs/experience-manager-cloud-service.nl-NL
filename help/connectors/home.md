@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service-connector
-description: Leer over Connectors, wat zij kunnen doen, en hoe te om deze waardevolle hulpmiddelen in Experience Manager uit te voeren.
-landing-page-description: Leer over Connectors, wat zij kunnen doen, en hoe te om deze waardevolle hulpmiddelen in Experience Manager uit te voeren.
+description: Meer informatie over connectoren, wat ze kunnen doen en hoe u deze waardevolle tools implementeert in Experience Manager.
+landing-page-description: Meer informatie over connectoren, wat ze kunnen doen en hoe u deze waardevolle tools implementeert in Experience Manager.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 60%
+ht-degree: 68%
 
 ---
 

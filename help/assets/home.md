@@ -1,6 +1,6 @@
 ---
 title: as a Cloud Service hulplijn voor middelen
-description: Meer informatie over as a Cloud Service middelen en meer informatie over nieuwe functies.
+description: Meer informatie over Assets as a Cloud Service en nieuwe functies.
 landing-page-description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 feature: Asset Management
 role: User,Leader
@@ -8,7 +8,7 @@ exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 24%
+ht-degree: 28%
 
 ---
 

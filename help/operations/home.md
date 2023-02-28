@@ -1,18 +1,18 @@
 ---
 title: Bewerkingen en onderhoud van Adobe Experience Manager as a Cloud Service
-description: Kom over de achterste-eindverrichtingen van as a Cloud Service Experience Manager, zoals het indexeren en onderhoudstaken, en krijg antwoorden aan uw vragen.
-landing-page-description: Kom over de achterste-eindverrichtingen van as a Cloud Service Experience Manager, zoals het indexeren en onderhoudstaken, en krijg antwoorden aan uw vragen.
+description: Ontdek meer over de back-end operations van Experience Manager as a Cloud Service, zoals het indexeren en onderhoudstaken, en krijg antwoorden op uw vragen.
+landing-page-description: Ontdek meer over de back-end operations van Experience Manager as a Cloud Service, zoals het indexeren en onderhoudstaken, en krijg antwoorden op uw vragen.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 57%
+ht-degree: 76%
 
 ---
 
 # Bewerkingen en onderhoud in Experience Manager as a Cloud Service {#aem-operations-guide}
 
-Kom over de achterste-eindverrichtingen van as a Cloud Service Experience Manager, zoals het indexeren en onderhoudstaken, en krijg antwoorden aan uw vragen.
+Ontdek meer over de back-end operations van Experience Manager as a Cloud Service, zoals het indexeren en onderhoudstaken, en krijg antwoorden op uw vragen.
 
 ## Belangrijke artikelen over bewerkingen {#key-articles}
 

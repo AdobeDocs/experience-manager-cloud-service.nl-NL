@@ -1,12 +1,12 @@
 ---
 title: De middelen van de steun voor Experience Manager as a Cloud Service Plaatsen
-description: Ontvang een volledige lijst met al onze ondersteuningsbronnen voor AEM Cloud Services. Zoek antwoorden op je AEM Sites als Cloud Service vragen.
+description: Ontvang een volledige lijst met al onze AEM Cloud Services-ondersteuningsbronnen. Zoek antwoorden op uw vragen over AEM Sites as Cloud Service.
 landing-page-description: Begrijp hoe u met AEM Sites as a Cloud Service kunt ontwerpen en beheren.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '405'
-ht-degree: 61%
+ht-degree: 69%
 
 ---
 
