@@ -3,7 +3,7 @@ title: Inleiding tot [!DNL AEM Forms] as a Cloud Service
 description: Ontdek AEM Forms en leer hoe u hiermee bedrijfsklare documenten en formuliercontent kunt maken. Leer meer over Platform-as-a-Service (PaaS) en hoe u digitale formulieren en bedrijfsprocessen op ondernemingsniveau beheert en hoe u Forms verbindt met actuele gegevensbronnen.
 landing-page-description: Inzicht in hoe u formulieren in AEM as a Cloud Service kunt gebruiken.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 6861f83b292dfb8a8e62e685830289e3a2eded2d
+source-git-commit: c51aa20a37e27252a8c1e6a72d4bc6ffacea46f7
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 5%
@@ -20,7 +20,7 @@ Met deze service kunt u interactieve en aantrekkelijke digitale formulieren make
 
 De organisatie kan [!DNL AEM Forms] as a Cloud Service voor het maken van digitale formulieren, het verbinden van formulieren met bestaande gegevensbronnen, het integreren van formulieren met [!DNL Adobe Sign] om e-handtekeningen toe te voegen aan formulieren en om Ingesloten formulieren als PDF-bestanden te archiveren. De organisatie kan de service ook gebruiken om bestaande PDF forms om te zetten in digitale formulieren.
 
-![Gegevensverzameling - responsief formulierontwerp](/help/forms/assets/data-collection.jpeg)
+![Gegevensverzameling - responsief formulierontwerp](/help/forms/assets/data-collection.jpeg){width="40%"}
 Responsief formulierontwerp
 
 In grote bedrijven worden formulieren vaak één keer gemaakt en opnieuw gebruikt door te kopiëren naar een contentbeheersysteem. Het kan een grote uitdaging zijn om een grote databank van formulieren up-to-date te houden en te ontdekken. AEM biedt een aanpasbaar Forms Portal dat ervoor zorgt dat klanten formulieren vinden en openen die ze nodig hebben, zowel via het web als via mobiele kanalen.
@@ -34,7 +34,7 @@ Met AEM Forms kunnen zakelijke gebruikers aansprekende persoonlijke gebruikerser
 Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, kunnen eenvoudig worden gegenereerd. Organisaties kunnen het verkeer naar gepersonaliseerde webportalen sturen, wat leidt tot inschrijving of aankoop van extra services.
 
 
-![Persoonlijke communicatie - responsief ontwerp](/help/forms/assets/personalized-communication.jpeg)
+![Persoonlijke communicatie - responsief ontwerp](/help/forms/assets/personalized-communication.jpeg){width="40%"}
 Persoonlijke factuur
 
 De dienst is altijd huidig, altijd beschikbaar, en altijd het leren. Organisaties kunnen [!DNL AEM Forms] as a Cloud Service en ontvang al deze functies in de cloud zonder dat u hiervoor een lokale infrastructuur nodig hebt. De dienst bevrijdt organisaties van complexe verbeteringscycli aangezien het altijd met de recentste eigenschappen bijgewerkt is.
