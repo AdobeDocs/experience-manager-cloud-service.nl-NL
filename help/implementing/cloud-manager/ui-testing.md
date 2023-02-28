@@ -2,9 +2,9 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: b1eacc8432a73f015529975e6960afbe9dee7565
+source-git-commit: 3e31b065999d36717b81253d2773e41b76949954
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2141'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ In deze sectie worden de stappen beschreven die zijn vereist voor het instellen 
 
       >[!NOTE]
       >
-      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de meest recente versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
    * Gebruik voor Java en WebDriver de voorbeeldcode van het dialoogvenster [AEM opslagplaats voor testvoorbeelden.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
 
@@ -221,7 +221,7 @@ De volgende omgevingsvariabelen worden tijdens runtime aan de Docker-afbeelding 
 De Adobe testmonsters verstrekken helperfuncties om tot de configuratieparameters toegang te hebben:
 
 * JavaScript: Zie de [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) module
-* Java: Zie de [Config](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+* Java: Zie de [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
 
 ### Wachten op klaar voor selenium {#waiting-for-selenium}
 
@@ -255,21 +255,9 @@ De teststeekproeven die door Adobe door gebrek worden verstrekt leiden tot scher
 U kunt de hulpfuncties gebruiken om schermafbeeldingen tot stand te brengen door uw tests.
 
 * JavaScript: [takeScreenshot, opdracht](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [Opdrachten](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+* Java: [Opdrachten](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Als een archief van het testresultaat tijdens een UI testuitvoering wordt gecreeerd, bevat het dossier van het testlogboek een verwijzing naar de plaats van het archief van het testresultaat aan het eind.
-
-```
-[...]
-
-===============================================================
-The detailed test results can be downloaded from the URL below.
-Note: the link will expire after 60 days
-
-    https://results-host/test-results.zip
-
-===============================================================
-```
+Als een archief met testresultaten wordt gemaakt tijdens een uitvoering van een UI-test, kunt u dit archief downloaden vanuit Cloud Manager met de opdracht `Download Details` onder de knop [**Aangepaste UI-tests** stap.](/help/implementing/cloud-manager/deploy-code.md)
 
 ### Bestanden uploaden {#upload-files}
 
@@ -282,7 +270,7 @@ Tests moeten soms bestanden uploaden naar de toepassing die wordt getest. Om de 
    * Raadpleeg de documentatie en bibliotheken van de programmeertaal die in het beeld van de Docker wordt gebruikt om te weten hoe te om zulk een HTTP- verzoek uit te voeren.
    * De monsters van de Adobe test verstrekken helperfuncties voor het uploaden van dossiers:
       * JavaScript: Zie de [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) gebruiken.
-      * Java: Zie de [FileHandler](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) klasse.
+      * Java: Zie de [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) klasse.
 1. Als het uploaden is gelukt, retourneert de aanvraag een `200 OK` reactie van het type `text/plain`.
    * De inhoud van de reactie is een ondoorzichtige bestandshandgreep.
    * U kunt deze greep gebruiken in plaats van een bestandspad in een `<input>` -element om het uploaden van bestanden in uw toepassing te testen.
@@ -344,4 +332,4 @@ Voor het uitvoeren van de tests UI van uw lokale machine, creeer een gebruiker m
 >
 >* De logbestanden worden opgeslagen in het dialoogvenster `target/reports` van uw opslagplaats.
 >
->Zie voor meer informatie de [AEM opslagplaats voor testvoorbeelden.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/README.MD)
+>Zie voor meer informatie de [AEM opslagplaats voor testvoorbeelden.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)

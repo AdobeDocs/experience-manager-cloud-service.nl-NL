@@ -3,9 +3,9 @@ title: Wat is er veranderd tussen AEM 6.5 Forms en AEM Cloud Services
 description: Bent u een Experience Manager Forms-gebruiker en wilt u een upgrade uitvoeren naar Adobe Experience Manager Forms as a Cloud Service? Leer de opvallendste wijzigingen voordat u gaat upgraden of migreren naar Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -33,21 +33,11 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 | Wizard Formulier maken | ✅ | ⛌ |
 | Aangepaste XCI-ondersteuning voor document of record | ✅ | ⛌ |
 | Adaptieve Forms <sup>1</sup> | ✅ | ✅ |
-| Gegevensintegratie met meerdere gegevensbronnen | ✅ | ✅ |
 | Communicatie-API&#39;s (Document Services) <sup>2,3</sup> | ✅ | ✅ |
 | automatede form conversion Service <sup>4</sup> | ✅ | ✅ |
-| Integratie met [!DNL Adobe Sign] | ✅ | ✅ |
-| Integratie met [!DNL AEM Sites] | ✅ | ✅ |
-| Integratie met [!DNL Adobe Launch] | ✅ | ✅ |
-| Integratie met [!DNL Adobe Analytics] | ✅ | ✅ |
 | Forms Portal <sup>5</sup> | ✅ | ✅ |
-| Workflows AEM | ✅ | ✅ |
-| Document van record | ✅ | ✅ |
-| Onzichtbare Captcha | ✅ | ✅ |
-| Herbruikbare formuliergegevensmodelconfiguraties | ✅ | ✅ |
-| Op acroform gebaseerd document of record | ✅ | ✅ |
-| Identiteitsverificatie op basis van overheidsidentiteitskaart voor met Adobe Sign ingeschakelde Adaptieve Forms | ✅ | ✅ |
-| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| Forms-gegevensmodel <sup>6</sup> | ✅ | ✅ |
+| HTML5 Forms <sup>7</sup> | ⛌ | ✅ |
 | Documentbeveiliging | ⛌ | ✅ |
 
 Houd rekening met de volgende uitzonderlijke gevallen voordat u verdergaat met de dienst:
@@ -96,27 +86,29 @@ De dienst verstrekt meta-model voor de Dienst van de Automatede form conversion 
 
 +++ 5. Forms Portal
 
-Ondersteuning voor anoniem gebruik van de Forms-portal is niet beschikbaar buiten de verpakking (OOTB). U kunt de portal Formulieren aanpassen om de weergave van formulieren voor niet-aangemelde gebruikers in te schakelen.
+Ondersteuning voor anoniem gebruik van Forms Portal is niet beschikbaar via de verpakking (OOTB). U kunt de Forms Portal aanpassen om de weergave van formulieren voor niet-aangemelde gebruikers in te schakelen.
 
 +++
 
-
-+++ 6. HTML5 Forms (Mobile Forms)
-
-* De service biedt geen ondersteuning voor HTML5 Forms (Mobile Forms). Als u uw op XDP gebaseerde formulieren weergeeft als HTML5 Forms, kunt u de functie blijven gebruiken op AEM 6.5 Forms.
-
-* Als u een gebruiker hebt om gegevens offline vast te leggen en deze de volgende keer dat u online terugkeert te synchroniseren, kunt u de functie [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) op AEM 6.5 Forms.
-
-+++
-
-
-+++ 7. Formuliergegevensmodel
++++ 6. Formuliergegevensmodel
 
 * Forms-gegevensmodel ondersteunt alleen HTTP- en HTTP-eindpunten voor het verzenden van gegevens. De service biedt geen ondersteuning voor wederzijdse SSL voor REST-connector en op x509-certificaten gebaseerde verificatie voor SOAP-gegevensbronnen.
 
 * Met Forms as a Cloud Service kunt u Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive en services die algemene CRUD-bewerkingen (Maken, Lezen, Bijwerken en Verwijderen) ondersteunen, gebruiken als gegevensopslagsystemen. Zowel de Open API-specificatie 2.0 als de Open API-specificatie worden ondersteund. De service biedt ook ondersteuning voor JDBC-connector.
 
 +++
+
+
++++ 7. HTML5 Forms (Mobile Forms)
+
+* De service biedt geen ondersteuning voor HTML5 Forms (Mobile Forms). Als u uw op XDP gebaseerde formulieren weergeeft als HTML5 Forms, kunt u de functie blijven gebruiken op AEM 6.5 Forms.
+
+* Als u een gebruiksgeval hebt om gegevens offline vast te leggen en deze de volgende keer dat u online terugkeert te synchroniseren, kunt u doorgaan met het gebruik van [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) op AEM 6.5 Forms.
+
++++
+
+
+
 
 
 +++ 8. Ontwikkelomgeving
