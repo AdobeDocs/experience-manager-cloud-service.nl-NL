@@ -4,7 +4,7 @@ description: Leer hoe u de structuur maakt die fungeert als basis voor alle inho
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: fa36470e50abdf6dd019a91665945ff6e68e40c2
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## Een model maken {#create-model}
 
-De console van de Modellen van het Fragment van de Inhoud opent in een nieuw lusje. Beschouw de modelconsole van het inhoudsfragment als uw bibliotheek met modellen, waar u nieuwe modellen maakt en bestaande modellen beheert.
+De console van het model van het Fragmentmodel van de Inhoud opent in een nieuw lusje. Beschouw de modelconsole van het inhoudsfragment als uw bibliotheek met modellen, waar u nieuwe modellen maakt en bestaande modellen beheert.
 
 1. Klik op de knop **Maken** aan de rechterbovenhoek van het scherm om een model voor inhoudsfragmenten te maken.
 
