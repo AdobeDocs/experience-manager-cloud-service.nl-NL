@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 4416c43b408f576a547590796141a6b551e25681
 workflow-type: tm+mt
-source-wordcount: '3946'
+source-wordcount: '3952'
 ht-degree: 21%
 
 ---
@@ -509,9 +509,8 @@ ht-degree: 21%
    + Instellen en migreren {#setup-configure-migrate}
       + [Boordomgeving naar Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Een lokale ontwikkelomgeving instellen](/help/forms/setup-local-development-environment.md)
-      + [Forms Designer installeren en configureren](/help/forms/installing-configuring-designer.md)
       + [Unified Storage Connector configureren](/help/forms/configure-unified-storage-connector.md)
-      + [Migreren naar [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [Migreren van [!DNL AEM 6.5 Forms] of eerder [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groepen en machtigingen](/help/forms/forms-groups-privileges-tasks.md)
       + [Aangepaste Forms, PDF forms en andere middelen importeren, exporteren en organiseren](/help/forms/import-export-forms-templates.md)
    + Integreren {#integrate}
@@ -548,7 +547,6 @@ ht-degree: 21%
             + [Een thema maken](/help/forms/themes.md)
             + [Referentie-elementen](/help/forms/reference-assets.md)
             + [JSON-schema ontwerpen voor een adaptief formulier](/help/forms/adaptive-form-json-schema-form-model.md)
-            + [Forms Designer gebruiken](/help/forms/use-forms-designer.md)
             + [Verbeter de prestaties van grote formulieren met het laden van de formulieren](/help/forms/lazy-loading-adaptive-forms.md)
          + Componenten toevoegen aan een adaptief formulier {#add-components-to-an-adaptive-form}
             + [CAPTCHA gebruiken in een adaptieve vorm](/help/forms/captcha-adaptive-forms.md)
@@ -588,6 +586,8 @@ ht-degree: 21%
       + [Inleiding tot communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Communicatie-API&#39;s - Synchrone verwerking](/help/forms/aem-forms-cloud-service-communications.md)
       + [Communicatie-API&#39;s - Batch-verwerking](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Forms Designer installeren en configureren](/help/forms/installing-configuring-designer.md)
+      + [Forms Designer gebruiken om sjablonen te maken](/help/forms/use-forms-designer.md)
       + [Aangepaste lettertypen gebruiken in PDF-documenten](/help/forms/use-custom-fonts.md)
       + [Bekende problemen, aanbevolen procedures en veelgestelde vragen](/help/forms/communications-known-issues-limitations.md)
    + Referentie ontwikkelings-API {#aem-forms-developer-api-reference}
