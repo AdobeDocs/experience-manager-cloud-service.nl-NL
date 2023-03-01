@@ -5,7 +5,7 @@ description: Met de component Tabel in AEM Forms kunt u tabellen maken in adapti
 seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
-source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2404'
 ht-degree: 0%
@@ -53,6 +53,7 @@ U kunt een rij of kolom toevoegen en verwijderen en een rij omhoog en omlaag ver
 #### Een rij toevoegen, verwijderen of verplaatsen
 
 Als u de rij wilt toevoegen, verwijderen of verplaatsen, klikt u op een cel van de rij. de inhoudbrowser openen ![Inhoudsbrowser](/help/forms/assets/Smock_Layers_18_N.svg) en selecteert u de desbetreffende rij, wordt de geselecteerde rij gemarkeerd met de werkbalkoptie waaruit u de rij omhoog of omlaag kunt toevoegen, verwijderen of verplaatsen.
+
 * De **[!UICONTROL Move Up]** en **[!UICONTROL Move Down]** Hiermee verplaatst u de geselecteerde rij omhoog en omlaag.
 
 * De **[!UICONTROL Add Column]** voegt een rij onder de geselecteerde rij toe.

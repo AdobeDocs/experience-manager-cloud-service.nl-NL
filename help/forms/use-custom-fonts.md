@@ -2,7 +2,7 @@
 title: Aangepaste lettertypen gebruiken
 description: Aangepaste lettertypen gebruiken
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -47,7 +47,6 @@ Aangepaste lettertypen toevoegen aan uw Cloud Service-omgeving:
        </configuration>
    </plugin>
    ```
-
 
 1. Voeg de `<Font-Archive-Version>` manifesteer ingang het .pom dossier en vastgestelde waarde van versie aan 1:
 

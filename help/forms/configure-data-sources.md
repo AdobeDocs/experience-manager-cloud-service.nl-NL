@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: e353fd386d2dfbc39c76a0ab56b50c44f3c54afc
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '1965'
 ht-degree: 0%
@@ -281,8 +281,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Een OData-
    Als u **[!UICONTROL API Key]** Geef als verificatietype de waarde voor de API-sleutel op. De API-sleutel kan als aanvraagheader of als queryparameter worden verzonden. Selecteer een van deze opties in het menu **[!UICONTROL Location]** vervolgkeuzelijst en geef de naam van de header of de parameter query op in de **[!UICONTROL Parameter Name]** veld dienovereenkomstig.
 
    >[!NOTE]
-   >
-   >U moet OAuth 2.0 authentificatietype selecteren om met te verbinden [!DNL Microsoft® Dynamics] diensten die eindpunt OData als de dienstwortel gebruiken.
+   U moet OAuth 2.0 authentificatietype selecteren om met te verbinden [!DNL Microsoft® Dynamics] diensten die eindpunt OData als de dienstwortel gebruiken.
 
 1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de dienst te creëren OData.
 
