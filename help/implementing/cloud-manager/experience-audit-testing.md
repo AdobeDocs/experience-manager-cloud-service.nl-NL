@@ -2,9 +2,9 @@
 title: Experience Audit Testing
 description: Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
+source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,10 @@ De controleresultaten zijn informatief en staan de plaatsingsmanager toe om de s
 
 Experience Audit wordt aangedreven door Google Lighthouse, een opensource tool van Google, en wordt ingeschakeld in alle productiepijpleidingen van Cloud Manager.
 
+>[!TIP]
+>
+>U vormt welke pagina&#39;s inbegrepen in de Controle van de Ervaring wanneer u [zet uw pijpleiding op.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+
 ## Werken met de resultaten van Experience Audit {#understanding-experience-audit-results}
 
 De Audit van de ervaring verstrekt geaggregeerde en gedetailleerde testresultaten op paginaniveau via [pagina voor de uitvoering van de productiepijplijn.](/help/implementing/cloud-manager/deploy-code.md)
@@ -59,7 +63,6 @@ De metrische wijziging kan een van de volgende waarden hebben.
 * **N.v.t.** - Er was geen vorige score beschikbaar om te vergelijken.
 
 ![Resultaten van controle door ervaring](/help/implementing/cloud-manager/assets/exp-audit-1.png)
-
 
 ### Scores op paginaniveau {#page-level-scores}
 
