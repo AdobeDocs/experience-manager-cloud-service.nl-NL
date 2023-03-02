@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b81ac7529e7757fbd9f9fbc48e47e740ab9ecbf3
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 0%
@@ -52,7 +52,7 @@ In deze gearchiveerde nieuwsbrief van één-loketwinkel kunt u waardevolle kenni
    * Bekijk de webinars van de Bouwer van de Vaardigheid op bestelling voor Dynamic Media Classic.
    * Bekijk de Dynamic Media-sessies vanuit Online Adobe Summit 2020.
    * Meer weten over gratis Dynamic Media Classic-controles voor Adobe?
-   * Meet `John Monroe`, Senior Program Manager for Customer Success Services.
+   * Meet `John Monroe`, Senior Program Manager for Adobe Account Team.
 
 * **[Februari 2020, uitgave 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
