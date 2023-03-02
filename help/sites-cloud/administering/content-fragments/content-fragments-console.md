@@ -5,9 +5,9 @@ landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fr
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
+source-git-commit: db81eac064d4616cb6b1beae85abc0c55a993fce
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
             * Informatie over verwijzingen weergeven
             * Informatie weergeven over taalversies van het fragment
          * U kunt [Selecteer een of meer inhoudsfragmenten om de beschikbare acties weer te geven](#actions-selected-content-fragment)
-      * U kunt een kolomkop selecteren om de tabel te sorteren op basis van die kolom. opnieuw selecteren om te schakelen tussen oplopend en aflopend
+      * U kunt een kolomkop selecteren om de tabel te sorteren op basis van die kolom. Selecteer nogmaals om te schakelen tussen oplopend en aflopend. Sorteren wordt momenteel ondersteund op de **Titel**, **Gewijzigd**, en **Gewijzigd door** kolommen.
    * **[Maken](#creating-new-content-fragment)** een nieuw inhoudsfragment
    * [Filter](#filtering-fragments) de Inhoudsfragmenten op basis van een selectie van voorspelling en sla het filter op voor toekomstig gebruik
    * [Zoeken](#searching-fragments) de inhoudsfragmenten
