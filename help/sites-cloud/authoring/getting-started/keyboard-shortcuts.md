@@ -2,9 +2,9 @@
 title: Sneltoetsen voor consoles
 description: Bespaar tijd bij het ontwerpen met deze sneltoetsen
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '376'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Assets, Users, 
 |  | `Left Arrow` | Navigeren naar de boomstructuur/knooppunt van de boomstructuur samenvouwen |
 |  | `Down Arrow` | Een lijst met pagina&#39;s op hetzelfde niveau omlaag verplaatsen |
 |  | `Up Arrow` | Een lijst met pagina&#39;s op hetzelfde niveau omhoog verplaatsen |
-| Console - kolomweergave | `Shift-Up/Down Arrow` | Een lijst met pagina&#39;s op hetzelfde niveau omhoog verplaatsen |
+| Console - kolomweergave | `Shift-Up/Down Arrow` | Een lijst met pagina&#39;s op hetzelfde niveau omhoog/omlaag verplaatsen en selecteren |
 |  | `Esc` | Een lijst met pagina&#39;s op hetzelfde niveau omhoog verplaatsen |
 | Consoles | `?` | Help bij sneltoetsen |
 |  | `/` | Invoeden [zoeken](/help/sites-cloud/authoring/getting-started/search.md) |
