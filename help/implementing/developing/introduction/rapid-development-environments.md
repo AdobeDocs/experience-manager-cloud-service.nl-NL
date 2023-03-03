@@ -1,9 +1,9 @@
 ---
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
-source-git-commit: e5a9f497e753f328ff14487f4985541c1c77ae0e
+source-git-commit: 74ccf3a22043bfc7ac47e8fa1c9d064ad88a886e
 workflow-type: tm+mt
-source-wordcount: '3259'
+source-wordcount: '3293'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Deze functie zal naar verwachting gedurende de maand februari geleidelijk aan aan aan de klanten worden geleverd.
+>Dit onderdeel is bedoeld om geleidelijk aan aan de klanten te worden geleverd.
 
 Om veranderingen op te stellen, vereisen de huidige milieu&#39;s van de Ontwikkeling van de Wolk het gebruik van een proces dat uitgebreide codeveiligheid en kwaliteitsregels gebruikt genoemd een pijpleiding CI/CD. Voor situaties waar snelle en iteratieve veranderingen nodig zijn, heeft Adobe de Milieu&#39;s van de Snelle Ontwikkeling (RDEs voor kort) geïntroduceerd.
 
@@ -264,7 +264,7 @@ waar de reactie voor een succesvolle plaatsing op het volgende lijkt:
 
 Voor dit type configuratie moet de volledige mapstructuur de vorm hebben van een ZIP-bestand.
 
-Van de `dispathcer` van een AEM project, kunt u de verzender configuratie door het hieronder Gemaakt bevel in werking te stellen zip:
+Van de `dispatcher` van een AEM project, kunt u de verzender configuratie door het hieronder Gemaakt bevel in werking te stellen zip:
 
 `mvn clean package`
 
@@ -279,6 +279,10 @@ dan stel de configuratie door dit bevel op:
 >[!TIP]
 >
 >Het bovenstaande bevel veronderstelt u opstelt [WKND](https://github.com/adobe/aem-guides-wknd) de verzendersconfiguraties van het project. Vervang de `X.X.X` met het overeenkomstige WKND aantal van de projectversie of uw project-specifiek versieaantal wanneer het opstellen van de de vraagconfiguratie van uw project.
+
+>[!NOTE]
+>
+>RDE ondersteunt de configuratie van de &quot;Flexible mode&quot;verzender, maar niet de &quot;Legacy mode&quot;verzender configuratie. Zie [verzendingsdocumentatie](/help/implementing/dispatcher/disp-overview.md#validation-debug) voor informatie over de twee modi. U kunt ook de documentatie raadplegen over [migreren naar flexibele modus](/help/implementing/dispatcher/validation-debug.md#migrating), als u dat nog niet hebt gedaan.
 
 Een succesvolle plaatsing zal een reactie op het volgende produceren lijken:
 
