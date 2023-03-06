@@ -2,9 +2,9 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: c4809bcbeae5339427b1da588021606d18b482a5
+source-git-commit: d848c1a9369a91cbfd0105e4acf2fb390ca20b1a
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '673'
 ht-degree: 4%
 
 ---
@@ -60,6 +60,8 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | [!DNL Foundation] | Ondersteuning voor Apache Sling-gegevensbronnen (OSGi bundle org.apache.sling.datasource) | N.v.t. | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor JST-scriptsjablonen (OSGi bundle org.apache.sling.scripting.jst) | N.v.t. | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor het Apache Felix Http-whiteboard | OSGi Http-whiteboard | maart 2022 |
+| [!DNL Foundation] | Ondersteuning voor com.adobe.granite.oauth.server | Adobe IMS-integratie | maart 2023 |
+
 
 ## Java API {#java-api}
 
