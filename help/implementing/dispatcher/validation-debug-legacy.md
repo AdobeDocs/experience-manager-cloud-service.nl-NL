@@ -4,7 +4,7 @@ description: Validatie en foutopsporing met Dispatcher Tools (verouderd)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: deb604c6edfe4feb2ded00827fd2f96638e9335b
+source-git-commit: 37c948b8906bcf6dd7ee3acdc6c6b7d211a33058
 workflow-type: tm+mt
 source-wordcount: '2345'
 ht-degree: 1%
@@ -393,23 +393,23 @@ De logbestandniveaus voor deze modules worden bepaald door de variabelen `DISP_L
 ```
 # Log level for the dispatcher
 #
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
+# Possible values are: error, warn, info, debug and trace1
+# Default value: warn
 #
-# Define DISP_LOG_LEVEL Warn
+# Define DISP_LOG_LEVEL warn
  
 # Log level for mod_rewrite
 #
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
+# Possible values are: error, warn, info, debug and trace1 - trace8
+# Default value: warn
 #
 # To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
+# level to trace2.
 #
 # More information can be found at:
 # https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
 #
-# Define REWRITE_LOG_LEVEL Warn
+# Define REWRITE_LOG_LEVEL warn
 ```
 
 Wanneer het runnen van Verzender plaatselijk, worden de logboeken gedrukt direct aan de eindoutput. Meestal, wilt u deze logboeken in DEBUG zijn, die kan worden gedaan door het Debug niveau als parameter over te gaan wanneer het runnen van Docker. Bijvoorbeeld: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.

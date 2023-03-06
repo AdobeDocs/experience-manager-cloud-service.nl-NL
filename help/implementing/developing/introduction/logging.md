@@ -2,7 +2,7 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 37c948b8906bcf6dd7ee3acdc6c6b7d211a33058
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 2%
@@ -112,7 +112,7 @@ AEM de niveaus van het Logboek worden geplaatst per milieutype via configuratie 
 <tbody>
 <tr>
 <td>Datum en tijd</td>
-<td>29.4.2020 21:50:13,398</td>
+<td>29.04.2020 21:50:13.398</td>
 </tr>
 <tr>
 <td>as a Cloud Service node-id AEM</td>
@@ -396,23 +396,23 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 De mod_rewrite logboekniveaus worden bepaald door veranderlijke REWRITE_LOG_LEVEL in het dossier `conf.d/variables/global.var`.
 
-Deze kan worden ingesteld op Fout, Waarschuwen, Info, Foutopsporing en Traceren1 - Trace8, met de standaardwaarde voor Waarschuwen. Om uw te zuiveren RewriteRules, wordt het geadviseerd om het logboekniveau aan Trace2 op te heffen.
+Het kan aan fout worden geplaatst, waarschuwen, info, zuiveren en spoor1 - trace8, met een standaardwaarde van waarschuwen. Om uw te zuiveren RewriteRules, wordt het geadviseerd om het logboekniveau aan trace2 op te heffen.
 
 Zie de [mod_rewrite module documentatie](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) voor meer informatie .
 
 Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in het bestand global.var, zoals hieronder wordt beschreven:
 
 ```
-Define REWRITE_LOG_LEVEL Debug
+Define REWRITE_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define REWRITE_LOG_LEVEL Warn
+  Define REWRITE_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define REWRITE_LOG_LEVEL Error
+  Define REWRITE_LOG_LEVEL error
   ...
 </IfDefine>
 ```
@@ -453,7 +453,7 @@ Define REWRITE_LOG_LEVEL Debug
 </tr>
 <tr>
 <td>Duur</td>
-<td>1949 ms</td>
+<td>1949ms</td>
 </tr>
 <tr>
 <td>Landbouwbedrijf</td>
@@ -474,23 +474,23 @@ Define REWRITE_LOG_LEVEL Debug
 
 De niveaus van het berichtchermlogboek worden bepaald door veranderlijke DISP_LOG_LEVEL in het dossier `conf.d/variables/global.var`.
 
-Deze kan worden ingesteld op Fout, Waarschuwen, Info, Foutopsporing en Traceren1, met de standaardwaarde Waarschuwing.
+Het kan aan fout worden geplaatst, waarschuwen, info, zuiveren en spoor1, met een standaardwaarde om te waarschuwen.
 
 Hoewel het registreren van de Ontvanger verscheidene andere niveaus van registrerende granulariteit steunt, adviseert de AEM as a Cloud Service gebruikend de hieronder beschreven niveaus.
 
 Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in het dialoogvenster `global.var` bestand, zoals hieronder beschreven:
 
 ```
-Define DISP_LOG_LEVEL Debug
+Define DISP_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define DISP_LOG_LEVEL Warn
+  Define DISP_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define DISP_LOG_LEVEL Error
+  Define DISP_LOG_LEVEL error
   ...
 </IfDefine>
 ```
