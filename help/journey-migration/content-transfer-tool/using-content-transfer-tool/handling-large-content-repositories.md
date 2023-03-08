@@ -2,9 +2,9 @@
 title: Afhandeling van grote opslagplaatsen voor inhoud
 description: In deze sectie wordt de verwerking van grote opslagplaatsen voor inhoud beschreven
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 5043caa54c3ba4553245a948758ee7da40c1e227
+source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1846'
 ht-degree: 0%
 
 ---
@@ -37,9 +37,6 @@ Volg de onderstaande sectie om de belangrijke overwegingen te begrijpen voordat 
 * U hebt toegang nodig om te installeren [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) op de instantie (of VM) die de bron AEM instantie uitvoert.
 
 * De Inzameling van het huisvuil van de Opslag van gegevens is in de voorafgaande 7 dagen in werking gesteld op de bron. Raadpleeg voor meer informatie [Opruiming voor dataopslag](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
-
->[!NOTE]
->Momenteel werken tekstuitvoeringen niet correct op Windows-computers en dit is een bekend probleem. We zullen dit probleem echter in de komende release aanpakken en er een oplossing voor bieden.
 
 ### Extra overwegingen als de bron AEM instantie wordt gevormd om een opslag van de Gegevens van de Opslag van de Opslag van Amazon S3 of van Azure te gebruiken {#additional-considerations-amazons3-azure}
 
