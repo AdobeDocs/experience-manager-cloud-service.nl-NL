@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 59cc80d66880398bb7c7a065a7c9d4baee5141db
+source-git-commit: d6d7fefce814063476aae8cdafc9cc6b084361a3
 workflow-type: tm+mt
-source-wordcount: '3960'
+source-wordcount: '3967'
 ht-degree: 21%
 
 ---
@@ -201,16 +201,17 @@ ht-degree: 21%
          + [Aan de slag met het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Inhoudsoverdrachten valideren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Afhandeling van grote opslagplaatsen voor inhoud](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+         + [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [Inhoud uit bron extraheren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Inhoud in doel invoegen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Logboeken voor een migratieset weergeven](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Een migratieset verwijderen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Het gereedschap Inhoud overbrengen uitvoeren op een publicatie-instantie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Problemen met het gereedschap Inhoud overbrengen oplossen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + Gereedschap Toewijzing gebruiker {#user-mapping-tool}
-            + [Overzicht](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
-            + [Belangrijke overwegingen](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
-            + [Gebruikerstoewijzing gebruiken](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+         + Verouderd gereedschap Toewijzing gebruiker (verouderd){#legacy-user-mapping-tool}
+            + [Overzicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+            + [Belangrijke overwegingen](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
+            + [Gebruikerstoewijzing gebruiken](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
          + Verouderd gereedschap voor het overbrengen van inhoud {#legacy}
             + [Overzicht](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
             + [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)

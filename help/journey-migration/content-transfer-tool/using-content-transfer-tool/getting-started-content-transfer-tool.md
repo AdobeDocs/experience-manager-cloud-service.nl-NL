@@ -2,9 +2,9 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
+source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1328'
 ht-degree: 6%
 
 ---
@@ -37,7 +37,6 @@ Alleen versie 2.0.0 en hoger wordt ondersteund en het is raadzaam de meest recen
 De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u een extractie wilt uitvoeren, moeten de volgende eindpunten toegankelijk zijn vanaf de instantie die AEM uitvoert:
 
 * De Azure-opslagservice: `casstorageprod.blob.core.windows.net`
-* Het eindpunt van de Toewijzing van de Gebruiker IO: `usermanagement.adobe.io`
 
 >[!NOTE]
 >Indien extractie mislukt als gevolg van de volgende fout: &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX-pad samenstellen mislukt: sun.security.provider.certpath.SunCertPathBuilderException: kan geen geldig certificatiepad vinden naar gevraagd doel&quot;, dan kan dit worden opgelost door het desbetreffende CA-certificaat te importeren.
@@ -195,4 +194,4 @@ Voer de onderstaande stappen uit om een groottecontrole uit te voeren:
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Voordat u deze processen leert, moet u controleren [Afhandeling van grote opslagplaatsen voor inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) om de extractie- en innamefasen van de activiteit voor de overdracht van inhoud aanzienlijk te versnellen en de inhoud naar AEM as a Cloud Service te verplaatsen.
+Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Voordat u deze processen leert, moet u controleren [Afhandeling van grote opslagplaatsen voor inhoud](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) om de extractie- en innamefasen van de activiteit voor de overdracht van inhoud aanzienlijk te versnellen en de inhoud naar AEM as a Cloud Service te verplaatsen.

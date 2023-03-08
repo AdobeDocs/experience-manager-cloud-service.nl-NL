@@ -2,10 +2,10 @@
 title: Inhoud uit bron extraheren
 description: Inhoud uit bron extraheren
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
+source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 19%
+source-wordcount: '676'
+ht-degree: 22%
 
 ---
 
@@ -17,16 +17,13 @@ ht-degree: 19%
 >id="aemcloud_ctt_extraction"
 >title="Inhoud extraheren"
 >abstract="Extractie heeft betrekking op het extraheren van inhoud van de bron AEM instantie naar een tijdelijk gebied dat migratieset wordt genoemd. Een migratieset is een opslaggebied op de cloud dat door Adobe wordt geleverd om overgedragen content tijdelijk op te slaan tussen de AEM-broninstantie en de AEM Cloud Service-instantie."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extractie naar boven"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="Extractie naar boven"
 
 
 Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content Transfer-tool:
 
 >[!NOTE]
->Als Amazon S3, Azure Data Store of File Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase aanzienlijk te versnellen. De pre-copy stap is het meest effectief voor de eerste volledige extractie en inname. Om dit te doen zult u moeten vormen en `azcopy.config` bestand voordat extractie wordt uitgevoerd. Zie [Afhandeling van grote opslagplaatsen voor inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) voor meer informatie .
-
->[!IMPORTANT]
->Voer het gereedschap Toewijzing gebruiker uit voordat u inhoud uit de bron extraheert. Zie [Het gereedschap Toewijzing gebruiker gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) voor meer informatie .
+>Als Amazon S3, Azure Data Store of File Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase aanzienlijk te versnellen. De pre-copy stap is het meest effectief voor de eerste volledige extractie en inname. Om dit te doen zult u moeten vormen en `azcopy.config` bestand voordat extractie wordt uitgevoerd. Zie [Afhandeling van grote opslagplaatsen voor inhoud](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) voor meer informatie .
 
 1. Een migratieset selecteren vanuit **Inhoud overbrengen** wizard en klik op **Extraheren** om de extractie te starten.
 
@@ -43,9 +40,6 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
 
    >[!NOTE]
    >U kunt de container tijdens de extractiefase overschrijven. Indien **Stapelcontainer overschrijven** is uitgeschakeld, kan het extracties versnellen voor volgende migraties waarbij de paden van de inhoud of de instellingen van versies niet zijn gewijzigd. Als de instellingen voor de inhoudspaden of de include-versies echter zijn gewijzigd, **Stapelcontainer overschrijven** moet zijn ingeschakeld.
-
-   >[!IMPORTANT]
-   >Als de gebruikerstoewijzing niet is uitgevoerd op deze migratieset voordat de inhoud uit de bron is geëxtraheerd, wordt een waarschuwing weergegeven met de melding dat de stap Gebruikerstoewijzing in behandeling is, zoals in de bovenstaande afbeelding wordt getoond. Klikken op **Kaartgebruikers** om het gereedschap Toewijzing gebruiker uit te voeren.
 
 1. De **Extractie** wordt nu het veld weergegeven **UITVOEREN** status om aan te geven dat de extractie wordt uitgevoerd.
 

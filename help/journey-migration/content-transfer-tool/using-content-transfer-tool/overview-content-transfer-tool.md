@@ -2,10 +2,10 @@
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8a55e011a93ce069f067192f58bd36399a39130b
+source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 43%
+source-wordcount: '581'
+ht-degree: 47%
 
 ---
 
@@ -39,14 +39,14 @@ De overdracht van content bestaat uit twee fasen:
 
 1. **Extractie**: Dit heeft betrekking op het extraheren van content van de AEM-broninstantie naar een tijdelijke locatie, de zogenaamde *migratieset*. Een *migratieset* is een opslaggebied op de cloud dat door Adobe wordt geleverd om overgedragen content tijdelijk op te slaan tussen de AEM-broninstantie en de AEM Cloud Service-instantie.
 
-   Raadpleeg [Extractieproces in Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html) voor meer informatie.
+   Raadpleeg [Extractieproces in Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) voor meer informatie.
 
    >[!NOTE]
-   > Het wordt aanbevolen het gereedschap Toewijzing gebruiker uit te voeren als onderdeel van de extractiefase. Zie [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) voor meer informatie .
+   >Toewijzing van gebruikers wordt nu automatisch uitgevoerd als onderdeel van de extractiefase bij de auteur (maar kan optioneel worden uitgeschakeld bij de auteur of ingeschakeld bij publicatie). Zie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) voor meer informatie .
 
 1. **Opname**: Dit verwijst naar het verplaatsen en opnemen van content uit de *migratieset* naar de Cloud Service-doelinstantie.
 
-   Zie [Ingestieproces in inhoudsoverdracht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html) voor meer informatie .
+   Zie [Ingestieproces in inhoudsoverdracht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) voor meer informatie .
 
 ## Attributen van een migratieset {#attributes-migration-set}
 
@@ -60,10 +60,10 @@ De Content Transfer-tool heeft een functie die ondersteuning biedt voor differen
 >[!NOTE]
 >Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
 
-Als u in de extractiefase een bestaande migratieset wilt ***aanvullen***, moet de optie voor *overschrijven* zijn uitgeschakeld. Raadpleeg [Extractie aanvullen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en#top-up-extraction-process) voor meer informatie.
+Als u in de extractiefase een bestaande migratieset wilt ***aanvullen***, moet de optie voor *overschrijven* zijn uitgeschakeld. Raadpleeg [Extractie aanvullen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) voor meer informatie.
 
-Als u in de opnamefase de deltacontent boven op de huidige content wilt toepassen, moet de optie voor *wissen* zijn uitgeschakeld. Zie [Opname aanvullen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en#top-up-ingestion-process) voor meer informatie.
+Als u in de opnamefase de deltacontent boven op de huidige content wilt toepassen, moet de optie voor *wissen* zijn uitgeschakeld. Zie [Opname aanvullen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) voor meer informatie.
 
 ## Volgende functies {#whats-next}
 
-Als u eenmaal over Content Transfer Tool hebt geleerd en het bijbehorende overzicht waarin dit gereedschap wordt beschreven, kunt u bestaande inhoud verplaatsen van een bron-AEM-instantie (on-premise of AMS) naar de AEM Cloud Service-doelinstantie, moet u de inhoud controleren [Voorwaarden voor het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
+Als u eenmaal over Content Transfer Tool hebt geleerd en het bijbehorende overzicht waarin dit gereedschap wordt beschreven, kunt u bestaande inhoud verplaatsen van een bron-AEM-instantie (on-premise of AMS) naar de AEM Cloud Service-doelinstantie, moet u de inhoud controleren [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).

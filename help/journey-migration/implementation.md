@@ -2,9 +2,9 @@
 title: Implementatiefase
 description: Zorg ervoor dat uw code en inhoud klaar zijn voor de migratie naar de cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
 workflow-type: tm+mt
-source-wordcount: '2416'
+source-wordcount: '2353'
 ht-degree: 8%
 
 ---
@@ -160,7 +160,12 @@ Het verzamelen van gegevens kan u helpen de migratieactiviteiten en bijbehorende
 * Totale hoeveelheid tijd die voor de aanvulling is vereist [extractie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
 * Totale hoeveelheid tijd die voor de aanvulling is vereist [ingestie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
 
-Nog belangrijker datapoint is de hoeveelheid tijd die nodig is om de [gebruikerstoewijzing](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), als dit gekoppeld is aan de migratie van inhoud. U kunt dit gegevenspunt in overweging nemen voor realistischere ramingen, aangezien het aan de algemene extractiechronologie zal worden toegevoegd en het niet kan worden vereist om het tijdens verhogingen in werking te stellen.
+
+<!-- Alexandru: hiding this for now
+
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+
+-->
 
 Deze gegevenspunten kunnen u ook helpen [KPI&#39;s instellen](/help/journey-migration/readiness.md#establish-kpis) en andere taken in verband met migratie.
 
@@ -238,7 +243,7 @@ In de volgende sectie worden de belangrijke stappen en bijbehorende taken weerge
    * Clones auteur en publish - één knoop elk in het geval van een cluster of publiceer landbouwbedrijf
 * Kies een subset van de inhoud die wordt gemigreerd, zodat:
    * Het is een mix van alle beschikbare inhoudstypen
-   * Bevat alle gebruikers en groepen voor het geval dat [gebruikerstoewijzing](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) is vereist
+   * Bevat alle gebruikers en groepen
 * Bevat 25% van de inhoud of maximaal 1 TB aan inhoud, afhankelijk van welke waarde lager is.
 * ten minste één volledig uitvoeren en [top-up](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) migratie, van de productiekloon naar de AEM as a Cloud Service niet-productieomgeving
 * Los mogelijke problemen op zoals:
