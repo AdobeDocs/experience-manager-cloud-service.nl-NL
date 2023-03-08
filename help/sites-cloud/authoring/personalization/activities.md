@@ -2,9 +2,9 @@
 title: Activiteiten beheren
 description: Met de activiteitenconsole kunt u de marketingactiviteiten van uw merken maken, organiseren en beheren
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '2019'
 ht-degree: 18%
 
 ---
@@ -81,6 +81,10 @@ Voeg een activiteit toe of bewerk een bestaande activiteit om uw marketing inspa
 * **Duur:** De periode waarin de activiteit wordt toegepast.
 * **Prioriteit:** De relatieve prioriteit van de activiteit. Wanneer de activiteiten content voor dezelfde gebruikerssegmenten bieden, krijgt de activiteit met de hogere prioriteit voorrang.
 * **Metrische data van doel:** Als Adobe Target is geselecteerd als de doelengine, kunt u metrische data van successen aan de activiteit toevoegen. Eén metrische waarde van successen is vereist.
+
+>[!NOTE]
+>
+>Om in staat te zijn **Selecteer een doelconfiguratie** u moet in **Auteurs doelactiviteit** groep.
 
 >[!NOTE]
 >
