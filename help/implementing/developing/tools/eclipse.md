@@ -2,35 +2,35 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: cac6692e10da4b271610edd495d4cb38507a726b
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1190'
 ht-degree: 1%
 
 ---
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
-![](assets/eclipse-logo.png)
+![Experience Manager Developer Tools for Eclipse-logo](assets/eclipse-logo.png)
 
 ## Overzicht {#overview}
 
-De AEM Developer Tools for Eclipse is een Eclipse-plug-in die is gebaseerd op de [Eclipse-insteekmodule voor Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) vrijgegeven onder de Apache-licentie 2.
+_Experience Manager Developer Tools for Eclipse_ is een Eclipse-insteekmodule op basis van de [Eclipse-insteekmodule voor Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) vrijgegeven onder de Apache-licentie 2.
 
 Het biedt verschillende functies die AEM ontwikkeling vergemakkelijken:
 
 * Naadloze integratie met AEM instanties via Eclipse Server Connector
 * Synchronisatie voor zowel inhoud als OSGi-bundels
 * Ondersteuning voor foutopsporing met functie voor hot-swapping van code
-* Eenvoudige laarzentrekker van AEM projecten via een specifieke Tovenaar van de Aanmaak van het Project
+* Eenvoudige Bootstrap van AEM Projecten door middel van een specifieke Tovenaar van de Aanmaak van het Project
 * Eenvoudig bewerken van JCR-eigenschappen
 
 ## Vereisten {#requirements}
 
 Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
-* Downloaden en installeren [Eclipse IDE voor Enterprise Java-ontwikkelaars](https://www.eclipse.org/downloads/packages/).
-* Configureer uw overdrukinstallatie om ervoor te zorgen dat u ten minste 1 gigabyte heapgeheugen hebt door uw `eclipse.ini` configuratiebestand als beschreven in [Veelgestelde vragen over Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse).
+* Downloaden en installeren [Eclipse IDE voor Enterprise Java™-ontwikkelaars](https://www.eclipse.org/downloads/packages/).
+* Configureer de lipse-installatie om ervoor te zorgen dat u ten minste 1 GB heapgeheugen hebt door uw `eclipse.ini` configuratiebestand als beschreven in [Veelgestelde vragen over Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
 Wanneer u aan [vereisten](#requirements) hierboven kunt u de plug-in als volgt installeren:
 
-1. Open de [Website AEM Developer Tools](https://eclipse.adobe.com/aem/dev-tools/). <!-- RB: This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. Open de [Website AEM Developer Tools](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Kopieer de **Installatiekoppeling**.
 
@@ -49,8 +49,8 @@ Wanneer u aan [vereisten](#requirements) hierboven kunt u de plug-in als volgt i
 1. Open in Eclipse de **Help** -menu.
 1. Klikken **Nieuwe software installeren**.
 1. Klikken **Toevoegen...**.
-1. In **Naam** enter `AEM Developer Tools`.
-1. In **Locatie** kopieer de installatie-URL.
+1. In de **Naam** veld, Enter `AEM Developer Tools`.
+1. In de **Locatie** , kopieert u de installatie-URL.
 1. Klikken **Toevoegen**.
 1. Beide controleren **AEM** en **Sling** plug-ins.
 1. Klik op **Next**.
@@ -60,9 +60,9 @@ Wanneer u aan [vereisten](#requirements) hierboven kunt u de plug-in als volgt i
 
 ## Het AEM perspectief {#the-aem-perspective}
 
-In Eclipse bepaalt een perspectief de acties en meningen beschikbaar binnen een venster en laat taakgerichte interactie met middelen in Verduistering toe. Zie voor meer informatie over Perspectief de [Eclipse-documentatie.](https://help.eclipse.org)
+In Eclipse, bepaalt het Perspectief de acties en de meningen beschikbaar binnen een venster en laat taakgerichte interactie met middelen in Verduistering toe. Zie voor meer informatie over Perspectief de [Eclipse-documentatie.](https://help.eclipse.org/latest/index.jsp)
 
-De hulpmiddelen van de Ontwikkeling van de AEM voor Verduistering verstrekt een AEM Perspectief dat u volledige controle over uw AEM projecten en instanties biedt. Het AEM perspectief openen:
+_Experience Manager Development Tools for Eclipse_ Geef een AEM perspectief dat u volledige controle over uw AEM Projecten en instanties biedt. Het AEM perspectief openen:
 
 1. Selecteer in de menubalk Eclipse de optie **Venster** -> **Perspectief** -> **Perspectief openen** -> **Overige**.
 1. Selecteren **AEM** in het dialoogvenster en klik op **Openen**.
@@ -71,7 +71,7 @@ De hulpmiddelen van de Ontwikkeling van de AEM voor Verduistering verstrekt een 
 
 ## Monster nemen van meermoduleproject {#sample-multi-module-project}
 
-De AEM Hulpmiddelen van de Ontwikkelaar voor Eclipse komen met een steekproef, multi-moduleproject dat u snel aan snelheid met een projectopstelling in Verduistering helpt, evenals dienst als best-praktijkgids aan verscheidene AEM eigenschappen. [Meer informatie over de projectarchetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+De _Experience Manager Developer Tools for Eclipse_ komt met een steekproef, multi-moduleproject dat u snel met een projectopstelling in Verduistering helpt te versnellen. Het dient ook als gids voor beste praktijken aan verscheidene AEM eigenschappen. [Meer informatie over de projectarchetype](https://github.com/adobe/aem-project-archetype).
 
 Ga als volgt te werk om het voorbeeldproject te maken:
 
@@ -104,7 +104,7 @@ Ga als volgt te werk om het voorbeeldproject te maken:
 
 1. Vervolgens configureert u een AEM server waarmee Eclipse verbinding maakt.
 
-   Om de debugger eigenschap te gebruiken, moet u AEM op zuivert wijze begonnen zijn - die kan worden bereikt bijvoorbeeld door het volgende aan de bevellijn toe te voegen:
+   Om de debugger eigenschap te gebruiken, moet u AEM op zuivert wijze begonnen zijn - die kan worden bereikt, voor door het volgende aan de bevellijn toe te voegen:
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
@@ -116,17 +116,17 @@ Ga als volgt te werk om het voorbeeldproject te maken:
 
    >[!NOTE]
    >
-   >Op een nieuwe installatie (meer specifiek, wanneer bepaalde gebiedsdelen nooit zijn gedownload) zou u het project kunnen krijgen dat met fouten wordt gecreeerd. In dit geval volgt u de procedure die in [Ongeldige projectdefinitie oplossen](#resolving-invalid-project-definition).
+   >Op een nieuwe installatie (meer specifiek, wanneer bepaalde gebiedsdelen nooit zijn gedownload) zou u het project kunnen krijgen dat met fouten wordt gecreeerd. In dit geval, gelieve de procedure te volgen die in [Ongeldige projectdefinitie oplossen](#resolving-invalid-project-definition).
 
 ## Bestaande projecten importeren {#how-to-import-existing-projects}
 
 U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
 
-1. Volg de instructies om een [Monster nemen van meermoduleproject](#sample-multi-module-project) en u zult de volgende projecten voor u hebben gecreeerd, die gezonde scheiding van zorgen zullen toestaan:
+1. Volg de instructies om een [Monster nemen van meermoduleproject](#sample-multi-module-project) en u hebt de volgende projecten gecreeerd voor u, die een gezonde scheiding van zorgen toelaten:
 
    * `PROJECT.ui.apps` for `/apps` en `/etc` content
    * `PROJECT.ui.content` for `/content` die is gemaakt
-   * `PROJECT.core` voor Java-bundels (deze worden interessant zodra u Java-code wilt toevoegen)
+   * `PROJECT.core` voor Java™-bundels (deze worden interessant wanneer u Java™-code wilt toevoegen)
    * `PROJECT.it.launcher` en `PROJECT.it.tests` voor integratietests
 
 1. De inhoud van uw `PROJECT.ui.apps` met de `apps` en `etc` mappen van het pakket:
@@ -136,7 +136,7 @@ U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
    1. Verwijder de `apps` en `etc` mappen die u nu moet zien en hier plaatsen `apps` en `etc` mappen van het inhoudspakket.
    1. Klik in Eclipse met de rechtermuisknop op de knop `PROJECT.ui.apps` project en kies **Vernieuwen**.
 
-1. Doe dan het zelfde voor `PROJECT.ui.content` en vervang de inhoudsmap door het pakket:
+1. Doe dan het zelfde voor `PROJECT.ui.content` en vervang de inhoudsmap door een van de pakketten:
 
    1. In het paneel van de Ontdekkingsreiziger van het Project, ontvouw `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
    1. Klik met de rechtermuisknop op de diepere inhoudsmap en kies **Tonen in** -> **Systeemverkenner**.
@@ -216,12 +216,12 @@ Eclipse downloadt de vereiste afhankelijkheden. Dit kan even duren.
 
 Op de officiële Apache Sling IDE-website voor Eclipse vindt u nuttige informatie:
 
-* De [**Apache Sling IDE-gereedschap voor Eclipse** Handboek](https://sling.apache.org/documentation/development/ide-tooling.html), begeleidt deze documentatie u door de algemene concepten, serverintegratie en plaatsingsmogelijkheden die door de Hulpmiddelen van de Ontwikkeling van de AEM worden gesteund.
+* De [**Apache Sling IDE-gereedschap voor Eclipse** Handboek](https://sling.apache.org/documentation/development/ide-tooling.html), begeleidt deze documentatie u door de algemene concepten, serverintegratie, en plaatsingsmogelijkheden die door de Hulpmiddelen van de Ontwikkeling van de AEM worden gesteund.
 * De [Sectie Problemen oplossen](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * De [Lijst met bekende problemen](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
-De volgende ambtenaar [Eclipse](https://eclipse.org/) documentatie kan u helpen uw omgeving in te stellen:
+De volgende ambtenaar [Eclipse](https://www.eclipse.org/) documentatie kan u helpen uw omgeving in te stellen:
 
-* [Aan de slag met Eclipse](https://eclipse.org/users/)
-* [Help-systeem Eclipse Luna](https://help.eclipse.org/luna/index.jsp)
+* [Aan de slag met Eclipse](https://www.eclipse.org/getting-started/)
+* [Help-systeem Eclipse Luna](https://help.eclipse.org/latest/index.jsp)
 * [Maven Integration (m2eclipse)](https://www.eclipse.org/m2e/)

@@ -3,9 +3,9 @@ title: Hoe kan ik een workflow toewijzen aan andere gebruikers, e-mail verzenden
 description: Met Forms-gerichte workflows kunt u snel adaptieve, op Forms gebaseerde workflows maken. Met Adobe Sign kunt u documenten elektronisch ondertekenen, op formulieren gebaseerde bedrijfsprocessen maken, gegevens ophalen en verzenden naar meerdere gegevensbronnen en e-mailmeldingen verzenden
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '6561'
+source-wordcount: '6541'
 ht-degree: 0%
 
 ---
@@ -162,14 +162,14 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 
 ## Omzetten in stap PDF/A {#convert-pdfa}
 
-PDF/A is een archiefindeling voor langetermijnbehoud van de inhoud van het document, door de lettertypen in te sluiten en de compressie van het bestand ongedaan te maken. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. U kunt de ***Omzetten in PDF/A*** stap in een AEM Workflow om uw PDF documenten in PDF/A formaat om te zetten.
+PDF/A is een archiefindeling voor langdurige bewaring van de inhoud van het document, door de lettertypen in te sluiten en de compressie van het bestand op te heffen. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. U kunt de ***Omzetten in PDF/A*** stap in een AEM Workflow om uw PDF documenten in PDF/A formaat om te zetten.
 
 De stap Omzetten in PDF/A heeft de volgende eigenschappen:
 
 **[!UICONTROL Input Document]**: Het invoerdocument kan relatief zijn ten opzichte van de lading, een absoluut pad hebben, kunnen worden opgegeven als lading of opgeslagen in een variabele van het gegevenstype Document.
 
 **[!UICONTROL Conversion Options]**: Met deze eigenschap worden de instellingen opgegeven voor het converteren van PDF-documenten naar PDF/A-documenten. Onder dit tabblad zijn verschillende opties beschikbaar:
-* **[!UICONTROL Compliance]**: Hiermee wordt de standaard opgegeven waaraan het PDF/A-uitvoerdocument moet voldoen. Het steunt verschillende normen van PDF zoals PDF/A-1b, PDF/A-2b of PDF/A-3b.
+* **[!UICONTROL Compliance]**: Hiermee wordt de standaard opgegeven waaraan het PDF/A-uitvoerdocument moet voldoen. Het steunt verschillende normen van PDF zoals PDF/A-1b, PDF/A-2b, of PDF/A-3b.
 * **[!UICONTROL Result Level]**: Hiermee geeft u het resultaatniveau op als PassFail, Summary of Gedetailleerd voor de conversie-uitvoer.
 * **[!UICONTROL Color Space]**: Hiermee wordt de vooraf gedefinieerde kleurruimte opgegeven als S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED of SWOP, die kan worden gebruikt voor uitvoer van PDF/A-bestanden.
 * **[!UICONTROL Optional Content]**: Toestaan dat specifieke grafische objecten en/of annotaties alleen zichtbaar zijn in uitvoer-PDF/A-document als aan een bepaalde set criteria wordt voldaan.
@@ -181,7 +181,7 @@ De stap Omzetten in PDF/A heeft de volgende eigenschappen:
 
 Gebruik de stap E-mail om een e-mail te verzenden, bijvoorbeeld een e-mail met een Document of Record, koppeling van een adaptief formulier <!-- , link of an interactive communication-->of met een bijgevoegd PDF-document. E-mailstapondersteuning verzenden [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de weergave, het kleurenschema en het gedrag van de e-mail definiëren.
 
-In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [Contact opnemen met het ondersteuningsteam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email) om havens voor het verzenden van e-mail toe te laten en SMTP protocol voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
+In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [Contact opnemen met het ondersteuningsteam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) om havens voor het verzenden van e-mail toe te laten en SMTP protocol voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
 
 De e-mailstap heeft de volgende eigenschappen:
 
@@ -211,7 +211,7 @@ De e-mailstap heeft de volgende eigenschappen:
 
 * **[!UICONTROL Image]**: Gebruik de optie om een afbeelding in te sluiten in de e-mail. Blader en kies de afbeelding nadat u de optie hebt geselecteerd. De afbeeldingsoptie is alleen beschikbaar voor de afbeeldingstags (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) die beschikbaar zijn in de e-mailsjabloon.&#42;
 
-**[!UICONTROL Sender’s / Recipient's Email Address]**: Selecteer **[!UICONTROL Literal]** om handmatig een e-mailadres op te geven of selecteer de optie **[!UICONTROL Retrieve from Workflow metadata]** om het e-mailadres op te halen uit een eigenschap metadata. U kunt ook een lijst met arrays met metagegevenseigenschappen opgeven voor de **[!UICONTROL Retrieve from Workflow metadata]** optie. Selecteer **[!UICONTROL Variable]** om het e-mailadres op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String.
+**[!UICONTROL Sender's / Recipient's Email Address]**: Selecteer **[!UICONTROL Literal]** om handmatig een e-mailadres op te geven of selecteer de optie **[!UICONTROL Retrieve from Workflow metadata]** om het e-mailadres op te halen uit een eigenschap metadata. U kunt ook een lijst met arrays met metagegevenseigenschappen opgeven voor de **[!UICONTROL Retrieve from Workflow metadata]** optie. Selecteer **[!UICONTROL Variable]** om het e-mailadres op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String.
 
 * **[!UICONTROL File Attachment]**: Het middel dat op de opgegeven locatie beschikbaar is, wordt als bijlage aan de e-mail toegevoegd. Het pad van het element kan relatief zijn ten opzichte van de payload of het absolute pad. Een voorbeeldpad is [Payload_Directory]/bijlagen/.
 
@@ -238,22 +238,22 @@ Als u bijvoorbeeld het pad van een map opgeeft, worden alle bestanden die rechts
 
 **[!UICONTROL Save Generated Document of Record using below options]**: Geef de locatie op waar u een document van een recordbestand wilt bewaren. U kunt ervoor kiezen om de payload-map te overschrijven, Document of Record op een locatie in de payload-map te plaatsen of het Document of Record op te slaan in een variabele van het documentgegevenstype.
 
-**[!UICONTROL Locale]**: Geef de taal van het document met records op. Selecteren **[!UICONTROL Literal]** om de landinstelling te selecteren in een vervolgkeuzelijst of selecteer **[!UICONTROL Variable]** om de landinstelling op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String. U moet de landinstellingscode definiëren terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **nl_NL** voor het Engels en **fr_FR** voor Frans.
+**[!UICONTROL Locale]**: Geef de taal van het document met records op. Selecteren **[!UICONTROL Literal]** om de landinstelling te selecteren in een vervolgkeuzelijst of selecteer **[!UICONTROL Variable]** om de landinstelling op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String. Definieer de landinstellingscode terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **nl_NL** voor het Engels en **fr_FR** voor Frans.
 
 ## DDX-stap aanroepen {#invokeddx}
 
-XML (DDX) van de Beschrijving van het document is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX definieert een set bewerkingen die op een of meer invoerdocumenten kan worden toegepast om een of meer uitvoerdocumenten te genereren.  Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de ***DDX-stap aanroepen*** in een AEM Workflow voor het uitvoeren van diverse bewerkingen, zoals het samenstellen van documenten, het maken en wijzigen van Acrobat en XFA Forms, en andere bewerkingen die worden beschreven in [DDX-naslagdocumentatie](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+XML (DDX) van de Beschrijving van het document is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX definieert een set bewerkingen die op een of meer invoerdocumenten kan worden toegepast om een of meer uitvoerdocumenten te genereren. Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de ***DDX-stap aanroepen*** in een AEM Workflow voor het uitvoeren van diverse bewerkingen, zoals het samenstellen van documenten, het maken en wijzigen van Acrobat en XFA Forms, en andere bewerkingen die worden beschreven in [DDX-naslagdocumentatie](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
 
 De aanroepende DDX-stap heeft de volgende eigenschappen:
 
 **[!UICONTROL Input Documents]**: Wordt gebruikt om eigenschappen van een invoerdocument in te stellen. Onder dit tabblad zijn verschillende opties beschikbaar:
 * **[!UICONTROL Specify DDX Using]**: Hiermee geeft u het invoerdocument op dat betrekking heeft op de lading, een absoluut pad heeft, als lading kan worden opgegeven of in een variabele van het gegevenstype Document kan worden opgeslagen.
 * **[!UICONTROL Create Map from Payload]**: Voeg alle documenten onder de ladingsomslag aan de Kaart van het Document van de Input voor aan te halen API in Assembler. De knooppuntnaam voor elk document wordt gebruikt als sleutel in de kaart.
-* **[!UICONTROL Input Document’s Map]**: Option wordt gebruikt om meerdere items toe te voegen met **[!UICONTROL ADD]** knop. Elk item vertegenwoordigt de sleutel van het document in de kaart en de bron van het document.
+* **[!UICONTROL Input Document's Map]**: Option wordt gebruikt om meerdere items toe te voegen met **[!UICONTROL ADD]** knop. Elk item vertegenwoordigt de sleutel van het document in de kaart en de bron van het document.
 
 **[!UICONTROL Environment Options]**: Deze optie wordt gebruikt om verwerkingsinstellingen in te stellen voor het aanroepen van de API. Onder dit tabblad zijn verschillende opties beschikbaar:
 * **[!UICONTROL Validate Only]**: Hiermee wordt de geldigheid van het invoer-DDX-document gecontroleerd.
-* **[!UICONTROL Fail on Error]**: Booleaanse waarde die aangeeft of de API-service aanroepen mislukt, in het geval van een fout of niet. De standaardwaarde is False.
+* **[!UICONTROL Fail on Error]**: Booleaanse waarde die aangeeft of de API-service aanroepen mislukt, als er een fout is of niet. De standaardwaarde is False.
 * **[!UICONTROL First Bates Number]**: Geeft het getal aan dat automatisch wordt verhoogd. Dit zelf-stijgende aantal wordt automatisch getoond op elke opeenvolgende pagina.
 * **[!UICONTROL Default Style]**: Hiermee stelt u de standaardstijl voor het uitvoerbestand in.
 
@@ -263,7 +263,7 @@ De aanroepende DDX-stap heeft de volgende eigenschappen:
 
 **[!UICONTROL Output Documents]**: Hier geeft u de locatie op waar het uitvoerbestand moet worden opgeslagen. Onder dit tabblad zijn verschillende opties beschikbaar:
 * **[!UICONTROL Save Output in Payload]**: Hiermee slaat u uitvoerdocumenten op onder de payload-map of overschrijft u de payload als de payload een bestand is.
-* **[!UICONTROL Output Document’s Map]**: Hiermee geeft u de locatie op waar elk documentbestand expliciet moet worden opgeslagen door één item per document toe te voegen. Elk item vertegenwoordigt het document en de locatie waar het moet worden opgeslagen. Als er meerdere uitvoerdocumenten zijn, wordt deze optie gebruikt.
+* **[!UICONTROL Output Document's Map]**: Hiermee geeft u de locatie op waar elk documentbestand expliciet moet worden opgeslagen door één item per document toe te voegen. Elk item vertegenwoordigt het document en de locatie waar het moet worden opgeslagen. Als er meerdere uitvoerdocumenten zijn, wordt deze optie gebruikt.
 
 ## De stap Service van het formuliergegevensmodel aanroepen {#invoke-form-data-model-service-step}
 
@@ -485,12 +485,12 @@ Encrypt, Sign, and certify a document. [!DNL AEM Forms] supports both password b
 Send a document directly to a printer. It supports the following printing access mechanisms:
 
 * **[!UICONTROL Direct accessible printer]**: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.
-* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
+* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX&reg; printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server's IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
     -->
 
 ## Afgedrukte uitvoerstap genereren {#generatePrintedOutput}
 
-De stap genereert een PCL-, PostScript-, ZPL-, IPL-, TPCL- of DPL-uitvoer op basis van een formulierontwerp en een gegevensbestand. Het gegevensbestand wordt samengevoegd met het formulierontwerp en voor afdrukken opgemaakt. De uitvoer die door deze stap wordt gegenereerd, kan rechtstreeks naar een printer worden verzonden of als bestand worden opgeslagen. U wordt aangeraden deze stap te gebruiken als u formulierontwerpen of gegevens uit een toepassing wilt gebruiken. Als uw formulierontwerpen of formulierontwerpen zich op het netwerk, het lokale bestandssysteem of de HTTP-locatie bevinden, gebruikt u de bewerking generatePrintedOutput.
+De stap genereert een PCL-, PostScript-, ZPL-, IPL-, TPCL- of DPL-uitvoer op basis van een formulierontwerp en een gegevensbestand. Het gegevensbestand wordt samengevoegd met het formulierontwerp en voor afdrukken opgemaakt. De uitvoer die door deze stap wordt gegenereerd, kan rechtstreeks naar een printer worden verzonden of als bestand worden opgeslagen. U wordt aangeraden deze stap te gebruiken als u formulierontwerpen of gegevens uit een toepassing wilt gebruiken. Als uw formulierontwerpen zich op het netwerk, het lokale bestandssysteem of de HTTP-locatie bevinden, gebruikt u de bewerking generatePrintedOutput.
 
 Uw toepassing vereist bijvoorbeeld dat u een formulierontwerp samenvoegt met een gegevensbestand. De gegevens bevatten honderden records. Bovendien moet de uitvoer worden verzonden naar een printer die ZPL ondersteunt. Het formulierontwerp en uw invoergegevens bevinden zich in een toepassing. Met de bewerking generatePrintedOutput kunt u elke record samenvoegen met een formulierontwerp en de uitvoer verzenden naar een printer die ZPL ondersteunt.
 
@@ -524,16 +524,16 @@ De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 
 **[!UICONTROL Advanced Properties]**
 
-* **[!UICONTROL Select Content Root location using]**: De inhoudsbasis is een tekenreekswaarde die de URI, absolute referentie of locatie in de gegevensopslagruimte opgeeft voor het ophalen van relatieve elementen die door het formulierontwerp worden gebruikt. Als het formulierontwerp bijvoorbeeld relatief verwijst naar een afbeelding, zoals ../myImage.gif, moet myImage.gif zich op repository:// bevinden. De standaardwaarde is repository://. Deze verwijst naar het hoofdniveau van de opslagplaats.
+* **[!UICONTROL Select Content Root location using]**: De inhoudsbasis is een tekenreekswaarde die de URI, absolute referentie of locatie in de gegevensopslagruimte opgeeft voor het ophalen van relatieve elementen die door het formulierontwerp worden gebruikt. Als het formulierontwerp bijvoorbeeld relatief verwijst naar een afbeelding, zoals `../myImage.gif`, `myImage.gif` moet `repository://`. De standaardwaarde is `repository://`, die verwijst naar het hoofdniveau van de gegevensopslagruimte.
 
-   Wanneer u een element kiest uit uw toepassing, moet het pad van de URI van de inhoudsbasis de juiste structuur hebben. Als bijvoorbeeld een formulier wordt gekozen uit een toepassing met de naam SampleApp en wordt geplaatst op SampleApp/1.0/forms/Test.xdp, moet de URI van de inhoudswortel worden opgegeven als repository://administrator@password/Applications/SampleApp/1.0/forms/ of gegevensopslagruimte:/Applications/SampleApp/1.0/forms/ (als de bevoegdheid null is). Wanneer de URI voor de inhoudsbasis op deze manier wordt opgegeven, worden de paden van alle middelen waarnaar wordt verwezen in het formulier, omgezet met deze URI.
+   Wanneer u een element kiest uit uw toepassing, moet het pad van de URI van de inhoudsbasis de juiste structuur hebben. Als een formulier bijvoorbeeld wordt gekozen uit een toepassing met de naam SampleApp en wordt geplaatst op `SampleApp/1.0/forms/Test.xdp`, moet de URI van de inhoudswortel worden gespecificeerd zoals `repository://administrator@password/Applications/SampleApp/1.0/forms/`, of `repository:/Applications/SampleApp/1.0/forms/` (als deze waarde null is). Wanneer de URI voor de inhoudsbasis op deze manier wordt opgegeven, worden de paden van alle middelen waarnaar wordt verwezen in het formulier, omgezet met deze URI.
 
 * **[!UICONTROL Select XCI file using]**: XCI-bestanden worden gebruikt om lettertypen en andere eigenschappen te beschrijven die voor formulierontwerpelementen worden gebruikt. U kunt een XCI-bestand relatief ten opzichte van de payload, op een absoluut pad houden of een variabele van het gegevenstype Document gebruiken.
 
 * **[!UICONTROL Locale]**: Hier geeft u de taal op die wordt gebruikt voor het genereren van het PDF-document. Als u een letterlijke waarde opgeeft, selecteert u een taal in de lijst of selecteert u een van de volgende waarden:
-   * **[!UICONTROL To use server default]**: (Standaard) Gebruik de landinstelling die is geconfigureerd op het tabblad [!DNL AEM Forms] Server. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [Help bij Designer](http://www.adobe.com/go/learn_aemforms_designer_65).)
+   * **[!UICONTROL To use server default]**: (Standaard) Gebruik de landinstelling die is geconfigureerd op het tabblad [!DNL AEM Forms] Server. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [Help bij Designer](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
-   * **[!UICONTROL To use custom value]**: Typ de landinstellingscode in het letterlijke vak of selecteer een tekenreeksvariabele die de landinstellingscode bevat. Ga naar http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html voor een volledige lijst met ondersteunde landinstellingscodes.
+   * **[!UICONTROL To use custom value]**: Typ de landinstellingscode in het letterlijke vak of selecteer een tekenreeksvariabele die de landinstellingscode bevat. Ga naar https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html voor een volledige lijst met ondersteunde landinstellingscodes.
 
 * **[!UICONTROL Copies]**: Een geheel getal dat aangeeft hoeveel exemplaren voor de uitvoer moeten worden gegenereerd. De standaardwaarde is 1.
 
