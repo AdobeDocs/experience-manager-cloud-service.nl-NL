@@ -2,10 +2,10 @@
 title: Een migratieset verwijderen in het gereedschap Inhoud overbrengen
 description: Een migratieset verwijderen in het gereedschap Inhoud overbrengen
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: b10fab405ae3afad36c727c91dd52ad3b8cee5f6
+source-git-commit: c61407d70fb65a7fdc72174881b23db4deca556a
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 4%
+source-wordcount: '232'
+ht-degree: 3%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_delete_migrationset"
->title="Een migratieset verwijderen"
->abstract="Leer hoe u een migratieset verwijdert."
+>title="Verwijderen van een migratieset"
+>abstract="Meer informatie over het verwijderen van een migratieset."
 
 U kunt migratiesets verwijderen uit Cloud Acceleration Manager.
 

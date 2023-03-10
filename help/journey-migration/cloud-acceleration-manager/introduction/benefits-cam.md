@@ -2,9 +2,9 @@
 title: Voordelen van het gebruik van Cloud Acceleration Manager
 description: Deze pagina benadrukt de belangrijkste voordelen van het gebruik van Cloud Acceleration Manager.
 exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >id="aemcloud_cam_benefits"
 >title="Voordelen van het gebruik van Cloud Acceleration Manager"
 >abstract="Met CAM (Cloud Acceleration Manager) worden uw teams uitgerust met een begeleide ervaring met aanbevolen Adobe-methoden en methoden om uw teams te helpen bij het plannen, implementeren en uitvoeren van uw werk. Ga met vertrouwen naar Live."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en" text="Aan de slag met Cloud Acceleration Manager"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html" text="Aan de slag met Cloud Acceleration Manager"
 
 Met een groot aantal bedrijfsvereisten en aanpassingen kan het overstappen naar cloud een betrokken project zijn. Met CAM (Cloud Acceleration Manager) worden uw teams uitgerust met een begeleide ervaring met aanbevolen Adobe-methoden en methoden om uw teams te helpen bij het plannen, implementeren en uitvoeren van uw werk. Ga met vertrouwen naar Live.
 

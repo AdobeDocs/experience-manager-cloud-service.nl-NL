@@ -2,10 +2,10 @@
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 47%
+source-wordcount: '708'
+ht-degree: 38%
 
 ---
 
@@ -63,6 +63,25 @@ De Content Transfer-tool heeft een functie die ondersteuning biedt voor differen
 Als u in de extractiefase een bestaande migratieset wilt ***aanvullen***, moet de optie voor *overschrijven* zijn uitgeschakeld. Raadpleeg [Extractie aanvullen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) voor meer informatie.
 
 Als u in de opnamefase de deltacontent boven op de huidige content wilt toepassen, moet de optie voor *wissen* zijn uitgeschakeld. Zie [Opname aanvullen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) voor meer informatie.
+
+## Vervaldatum migratieset {#migration-set-expiry}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_migrationset_expiry"
+>title="Verlopen van een migratieset"
+>abstract="Meer informatie over het verlopen van een migratieset."
+
+Alle migratiesets zullen uiteindelijk verlopen na een langdurige periode van inactiviteit van ongeveer 90 dagen. Nadat de indicatoren gedurende een bepaalde periode op de projectkaart en de rijen van de migratietabel worden getoond, zal de migratieset verlopen en zijn gegevens zullen niet meer beschikbaar zijn. De verlooptijd kan eenvoudig worden verlengd door op de migratie te reageren die wordt ingesteld door:
+
+* beschrijving bewerken
+* extractietoets
+* een extractie uitvoeren
+* er een inname van maken
+
+Het verstrijken van een migratieset kan op de rij van de Plaats van de Migratie worden gecontroleerd. Een nuttige visuele indicator dat een migratieset zijn vervaldatum nadert voegde ook de kaart van het project toe.
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
+
 
 ## Volgende functies {#whats-next}
 

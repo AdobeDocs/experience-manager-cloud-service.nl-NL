@@ -2,9 +2,9 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1388'
 ht-degree: 6%
 
 ---
@@ -60,7 +60,7 @@ Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optred
 >title="Gereedschap Inhoud overbrengen uitvoeren"
 >abstract="Leer hoe u Inhoud overbrengen kunt gebruiken om de inhoud te migreren naar AEM as a Cloud Service (Auteur/Publiceren)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Zie demo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
 
 De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inhoud overbrengen. Ga als volgt te werk om te leren hoe u met het gereedschap Inhoud overbrengen inhoud kunt migreren naar AEM as a Cloud Service:
 
@@ -69,8 +69,8 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction_setup"
 >title="Installatiefase voor extractie"
->abstract="Leer hoe u een migratieset maakt en de extractietoets kopieert."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
+>abstract="Leer hoe u een migratieset maakt en beheert en hoe u de extractiesleutel kopieert."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
@@ -84,9 +84,11 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
    >[!NOTE]
    >
-   >Per project kunnen maximaal vijf migratiesets worden gemaakt in Cloud Acceleration Manager.
+   >Per project kunnen maximaal vijf migratiesets, inclusief verlopen sets, worden gemaakt in Cloud Acceleration Manager.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
+
+   Het volgende dialoogvenster wordt weergegeven. Een migratieset verloopt na een langdurige periode van inactiviteit. Nadat de waarschuwingen op de projectkaart en de rijen van de de lijstlijst van de migratiebaan voor een periode worden getoond, zal de migratiereeks verlopen en zijn gegevens zullen niet meer beschikbaar zijn. Controleren [Vervaldatum migratieset](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor meer informatie.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 

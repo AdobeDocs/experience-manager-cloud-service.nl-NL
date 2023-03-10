@@ -2,9 +2,9 @@
 title: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 description: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1554'
 ht-degree: 19%
 
 ---
@@ -30,7 +30,7 @@ Er is een nieuwe versie van het gereedschap Inhoud overbrengen beschikbaar waari
 * Verbeterde gebruikerservaring dankzij betere laadstatussen, hulplijnen en foutafhandeling
 * Logbestanden voor insluiting blijven bestaan en zijn altijd beschikbaar voor probleemoplossing
 
-Als u de nieuwe versie wilt gebruiken, moet u de installatie van oudere versies van het gereedschap Inhoud overbrengen ongedaan maken. Dit is nodig omdat de nieuwe versie een grote architectonische verandering heeft. Met v2.0.10 moet u nieuwe migratiesets maken en de extractie en opname opnieuw uitvoeren op de nieuwe migratiesets. Als er al een migratie wordt uitgevoerd, kunt u de vorige versie van CTT blijven gebruiken totdat de migratie is voltooid.
+Als u de nieuwe versie wilt gebruiken, moet u de installatie van oudere versies van het gereedschap Inhoud overbrengen ongedaan maken. Dit is nodig omdat de nieuwe versie een grote architectonische verandering heeft. Met versie 2.x moet u nieuwe migratiesets maken en de extractie en inname van de nieuwe migratiesets opnieuw uitvoeren.
 Versies die ouder zijn dan 2.0.0 worden niet meer ondersteund en het is raadzaam de meest recente versie te gebruiken.
 
 De volgende Richtlijnen en Beste praktijken zijn op de nieuwe versie van het Hulpmiddel van de Overdracht van de Inhoud van toepassing:
@@ -87,11 +87,13 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Wanneer u `Amazon S3` of `Azure` aangezien de gegevensopslag op het bron AEM systeem, de gegevensopslag zou moeten worden gevormd zodat de opgeslagen vlekken niet kunnen worden geschrapt (huisvuil verzameld). Dit verzekert integriteit van indexgegevens en het nalaten om deze manier te vormen kan in ontbroken extracties wegens gebrek aan integriteit van deze indexgegevens resulteren.
 
-* Als u douaneindexen gebruikt, moet u ervoor zorgen om de douaneindexen te vormen met `tika` knooppunt voordat u Content Transfer Tool uitvoert. Zie [De nieuwe indexdefinitie voorbereiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) voor meer informatie .
+* Als u douaneindexen gebruikt, moet u ervoor zorgen om de douaneindexen te vormen met `tika` knooppunt voordat u Content Transfer Tool uitvoert. Zie [De nieuwe indexdefinitie voorbereiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) voor meer informatie .
 
 * Als u aanvullende onderdelen wilt maken, is het van essentieel belang dat de inhoudstructuur van bestaande inhoud niet wordt gewijzigd vanaf het moment dat de eerste extractie wordt uitgevoerd tot het moment dat de aanvullende extractie wordt uitgevoerd. Top-ups kunnen niet worden uitgevoerd op inhoud waarvan de structuur is gewijzigd sinds de eerste extractie. Zorg ervoor dat u dit tijdens het migratieproces beperkt.
 
 * Als u van plan bent versies op te nemen als onderdeel van een migratieset en als u aanvullende versies uitvoert met `wipe=false`Vervolgens moet u versiebeheer uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld wilt houden en extra-ups wilt uitvoeren in een migratieset, moet u de opname uitvoeren als `wipe=true`.
+
+* Een migratieset verloopt na een langdurige periode van inactiviteit, waarna de gegevens ervan niet langer beschikbaar zijn. Controleer [Vervaldatum migratieset](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) voor meer informatie .
 
 ## Volgende functies {#whats-next}
 

@@ -2,9 +2,9 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
+source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1693'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,8 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
 1. Geef de vereiste informatie op om een nieuwe opname te maken.
 
-   * Selecteer de migratieset die u net als bron hebt geëxtraheerd
+   * Selecteer de migratieset die de geëxtraheerde gegevens als bron bevat.
+      * De Reeksen van de migratie zullen verlopen na een lange periode van inactiviteit, zodat wordt verwacht dat de inname vrij snel na de extractie plaatsvindt. Controleren [Vervaldatum migratieset](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor meer informatie.
    * Selecteer de doelomgeving. Dit is waar de inhoud van de migratieset wordt opgenomen. Selecteer de laag. (Auteur/Publicatie).
 
    >[!NOTE]
@@ -90,7 +91,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
    
-   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) to learn more.
+   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
 

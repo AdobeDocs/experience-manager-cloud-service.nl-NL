@@ -2,9 +2,9 @@
 title: Inhoud uit bron extraheren
 description: Inhoud uit bron extraheren
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '663'
 ht-degree: 22%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 22%
 Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content Transfer-tool:
 
 >[!NOTE]
->Als Amazon S3, Azure Data Store of File Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase aanzienlijk te versnellen. De pre-copy stap is het meest effectief voor de eerste volledige extractie en inname. Om dit te doen zult u moeten vormen en `azcopy.config` bestand voordat extractie wordt uitgevoerd. Zie [Afhandeling van grote opslagplaatsen voor inhoud](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) voor meer informatie .
+>Als Amazon S3, Azure Data Store of File Data Store wordt gebruikt als het type gegevensopslag, kunt u de optionele stap voor het kopiëren uitvoeren om de extractiefase aanzienlijk te versnellen. De pre-copy stap is het meest effectief voor de eerste volledige extractie en inname. Zie [Afhandeling van grote opslagplaatsen voor inhoud](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) voor meer informatie .
 
 1. Een migratieset selecteren vanuit **Inhoud overbrengen** wizard en klik op **Extraheren** om de extractie te starten.
 
