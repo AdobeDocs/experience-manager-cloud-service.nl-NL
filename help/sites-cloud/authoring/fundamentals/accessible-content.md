@@ -2,9 +2,9 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager as a Cloud Service maken (WCAG 2.1-compatibiliteit)
 description: Gebruik AEM as a Cloud Service om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '13853'
+source-wordcount: '13870'
 ht-degree: 3%
 
 ---
@@ -100,7 +100,7 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 * Pictogrammen: Dit zijn kleine pictogrammen (afbeeldingen) die specifieke informatie bevatten. Ze moeten consistent worden gebruikt op een pagina en site. Alle exemplaren van het pictogram op een pagina of site moeten hetzelfde korte en korte tekstalternatief hebben, tenzij dit leidt tot onnodige duplicatie van aangrenzende tekst.
 * Grafieken en grafieken: Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Geef zo nodig ook een meer gedetailleerde beschrijving in de tekst met behulp van de **Beschrijving** in het **Geavanceerd** tabblad Eigenschappen van afbeelding. U kunt de brongegevens ook elders op de pagina of site in tabelvorm opgeven.
 * Kaarten, diagrammen, stroomdiagrammen: Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), moet u ervoor zorgen dat het sleutelbericht wordt weergegeven in de tekstindeling en dat deze tekstinformatie bij elk gekoppeld gegevenspunt wordt geplaatst. Voor kaarten is het onpraktisch om een volledige tekstequivalent te bieden, maar als de kaart wordt verstrekt als een manier om mensen te helpen hun weg naar een bepaalde plaats vinden, dan kan de alternatieve tekst van het kaartafbeelding kort wijzen op *Kaart van X* en geeft u vervolgens aanwijzingen voor die locatie op in tekst elders op de pagina of via de **Beschrijving** in het **Geavanceerd** tabblad van het dialoogvenster **Afbeelding** component.
-* CAPTCHA&#39;s: Een CAPTCHA is een *Volledig geautomatiseerde openbare trainingstest om computers en mensen te informeren*. Het is een veiligheidscontrole die op webpagina&#39;s wordt gebruikt om mensen van kwaadaardige software te onderscheiden, maar die toegankelijkheidsbarrières kan veroorzaken. Dit zijn afbeeldingen waarvoor gebruikers een beschrijving moeten geven van wat ze zien om een beveiligingstest te kunnen doorstaan. Het is niet mogelijk om een tekstalternatief voor de afbeelding te bieden, dus u moet alternatieve niet-grafische oplossingen overwegen. Het W3C biedt verschillende suggesties. Elk van deze benaderingen heeft hun eigen verdiensten en nadelen.
+* CAPTCHA: Een CAPTCHA is een *Volledig geautomatiseerde openbare trainingstest om computers en mensen te informeren*. Het is een veiligheidscontrole die op webpagina&#39;s wordt gebruikt om mensen van kwaadaardige software te onderscheiden, maar die toegankelijkheidsbarrières kan veroorzaken. Dit zijn afbeeldingen waarvoor gebruikers een beschrijving moeten geven van wat ze zien om een beveiligingstest te kunnen doorstaan. Het is niet mogelijk om een tekstalternatief voor de afbeelding te bieden, dus u moet alternatieve niet-grafische oplossingen overwegen. Het W3C biedt verschillende suggesties. Elk van deze benaderingen heeft hun eigen verdiensten en nadelen.
 
    * Logische puzzels
    * Het gebruik van geluidsuitvoer in plaats van afbeeldingen
@@ -115,7 +115,7 @@ Er moet een passend contrastniveau zijn tussen de achtergrond en de voorgrondtek
 
 * [Werken met succescriteria 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Voldoen aan criteria 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [W3C-uitleg van en alternatieven voor CAPTCHA&#39;s](https://www.w3.org/TR/turingtest/)
+* [W3C-uitleg over en alternatieven voor CAPTCHA](https://www.w3.org/TR/turingtest/)
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -197,10 +197,10 @@ Sluit de tekst in de videotrack in als u open bijschriften moet gebruiken. Dit k
 * [Werken met succescriteria 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [Voldoen aan criteria 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-<!--
-* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
-* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
--->
+c
+* [W3C: Gesynchroniseerde multimedia](https://www.w3.org/AudioVideo/)
+* [Bijschriften, transcripties en audiobeschrijvingen - door WebAIM](https://webaim.org/techniques/captions/)
+—>
 
 ### Audiobeschrijving of media-alternatief (vooraf opgenomen) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
@@ -251,7 +251,7 @@ Volg de aanwijzingen voor [Bijschriften (vooraf opgenomen)](#captions-prerecorde
 
 Gedetailleerde instructies vallen buiten het bereik van dit document, maar de volgende bronnen bieden nuttige informatie:
 
-* [WebAIM: Real Time Captioning](https://webaim.org/techniques/captions/realtime)
+* [WebAIM: Ondertiteling in realtime](https://webaim.org/techniques/captions/realtime)
 
 * [AccessComputing-project (University of Washington): Kunnen de titels automatisch worden geproduceerd gebruikend toespraakerkenning?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -538,13 +538,13 @@ Vergeet niet dat lettertypen kunnen verschillen in de manier waarop ze de equiva
 Gebruik een goede beoordeling en fout aan de kant van leesbaarheid en bruikbaarheid wanneer u de juiste lettertypen selecteert en de grootte instelt voor webinhoud.
 
 >[!NOTE]
-Met de volgende gereedschappen kunt u converteren naar andere eenheden:
-* [Px naar Em-calculator](https://www.omnicalculator.com/conversion/px-to-em)
-* [Omzetting lettergrootte: pixel-point-em-rem-percent](https://www.websemantics.uk/tools/)
-* [Pixel naar EM-converter](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+Voer een webzoekopdracht uit in de volgende zinnen om gereedschappen te zoeken die u kunnen helpen bij het omzetten in andere eenheden:
+* Px naar Em-calculator <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+* Omzetting lettergrootte: pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+* Pixel naar EM-converter <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 
-Als u contrastverhoudingen wilt controleren, gebruikt u een gereedschap voor kleurcontrast, zoals het gereedschap [Paciello Group Color Contrast Analyse](https://www.tpgi.com/resources/contrast-analyser.html) of de [Controle van webAIM-kleurcontrast](https://webaim.org/resources/contrastchecker/). Met deze gereedschappen kunt u kleurenparen controleren en contrastproblemen melden.
+Als u contrastverhoudingen wilt controleren, gebruikt u een gereedschap voor kleurcontrast, zoals het gereedschap [Paciello Group Color Contrast Analyzer](https://www.tpgi.com/resources/contrast-analyser.html) of de [Controle van webAIM-kleurcontrast](https://webaim.org/resources/contrastchecker/). Met deze gereedschappen kunt u kleurenparen controleren en contrastproblemen melden.
 
 Als u zich minder zorgen maakt over het opgeven van de vormgeving van de pagina, kunt u er ook voor kiezen geen kleur voor de achtergrond en de voorgrondtekst op te geven. Er is geen controle op het contrast vereist, omdat de browser van de gebruiker de kleuren van de tekst en de achtergrond bepaalt.
 
@@ -846,7 +846,7 @@ John Smith's publications
 >[!NOTE]
 Het bovenstaande fragment is een illustratie. Het wordt aanbevolen de **Afbeelding** component.
 
-Hoewel het raadzaam is om koppelingstekst te verstrekken die het doel van de verbinding zonder extra context identificeert, wordt erkend dat dit niet altijd mogelijk is. Contextvrije koppelingen kunnen in de volgende gevallen worden gebruikt, waarvan HTML-voorbeelden te vinden zijn in [Voldoen aan criterium 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Hoewel u aangeraden wordt koppelingstekst te verschaffen die het doel van de koppeling aangeeft zonder dat u een extra context nodig hebt, wordt wel herkend dat dit niet altijd mogelijk is. Contextvrije koppelingen kunnen in de volgende gevallen worden gebruikt, waarvan HTML-voorbeelden te vinden zijn in [Voldoen aan criterium 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Waar de koppelingstekst deel uitmaakt van een lijst met nauw verwante koppelingen en wanneer het lijstitem dat de koppeling omsluit voldoende context biedt.
 * Wanneer het doel van een koppeling duidelijk kan worden vastgesteld aan de hand van de *voorafgaand* (niet de volgende) alineatekst.
