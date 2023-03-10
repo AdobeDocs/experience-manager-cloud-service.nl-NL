@@ -3,10 +3,10 @@ title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Se
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2022.03.0
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 5815dacd2806cc7886aa0c7c5c9fd329306b3e1b
+source-git-commit: b2681113f5565e4f63c76abeaf46d5f4b1a8a8ea
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 1%
+source-wordcount: '320'
+ht-degree: 2%
 
 ---
 
@@ -28,3 +28,19 @@ De releasedatum voor de analyse van best practices v2.1.40 is 3 maart 2023.
 ### Opgeloste problemen {#bug-fixes-bpa}
 
 * BPA rapporteerde valse positieven op `grouprendercondition`. Dit is opgelost.
+
+## De tool Content Transfer {#ctt-release}
+
+### Releasedatum {#release-date-ctt}
+
+De releasedatum voor Content Transfer Tool v2.0.16 is 8 maart 2022.
+
+### Wat is er nieuw? {#what-is-new-ctt}
+
+* Toewijzing van gebruikers is gestroomlijnd en geïntegreerd in de extractiestap voor inhoud. Er is geen installatie nodig en door de standaardgebruikerstoewijzing wordt automatisch uitgevoerd wanneer de gebruiker inhoud afhaalt. De gebruiker heeft de optie om gebruikerstoewijzing indien nodig onbruikbaar te maken. Meer informatie [hier.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
+* De precopstap met [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) is geïntegreerd met het gereedschap Inhoud overbrengen om inhoud aanzienlijk sneller te extraheren. De precopy wordt automatisch gevormd en geïnstalleerd wanneer deze versie van CTT wordt geïnstalleerd. Wanneer de extractie wordt gestart, wordt de migratie standaard automatisch uitgevoerd voor migratiesets die groter zijn dan 200 GB. De gebruiker heeft de optie om het onbruikbaar te maken indien nodig. Meer informatie [hier.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)
+* CTT kan nu op de servers van Vensters worden gebruikt.
+
+### Opgeloste problemen {#bug-fixes-ctt}
+
+* Meerdere correcties om de weerbaarheid van extractie van inhoud te verbeteren.
