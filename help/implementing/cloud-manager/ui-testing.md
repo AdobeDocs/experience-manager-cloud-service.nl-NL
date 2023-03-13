@@ -2,7 +2,7 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 3e31b065999d36717b81253d2773e41b76949954
+source-git-commit: 6de0b7c961083d9be00837439757da95326a96da
 workflow-type: tm+mt
 source-wordcount: '2141'
 ht-degree: 0%
@@ -45,7 +45,7 @@ In deze sectie worden de stappen beschreven die zijn vereist voor het instellen 
 
       >[!NOTE]
       >
-      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de meest recente versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
    * Gebruik voor Java en WebDriver de voorbeeldcode van het dialoogvenster [AEM opslagplaats voor testvoorbeelden.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
 
