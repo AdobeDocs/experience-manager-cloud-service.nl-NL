@@ -5,7 +5,7 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -43,9 +43,9 @@ De structuur van het inhoudsmodel is:
 
 >[!NOTE]
 >
->De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de AEM Schema GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in de Reis van de Ontwikkelaar wordt gebruikt.
+>De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de AEM Schema&#39;s van GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in de Reis van de Ontwikkelaar worden gebruikt.
 
-Verzoeken om uw inhoud worden gemaakt met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. AEM GraphQL API staat toepassingen toe om (complexe) vragen op uw Fragments van de Inhoud uit te voeren, met elke vraag die volgens een specifiek modeltype is.
+Verzoeken om uw inhoud worden ingediend met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. Met de AEM GraphQL API kunnen toepassingen (complexe) query&#39;s uitvoeren op uw Content Fragments, waarbij elke query op een specifiek modeltype is gebaseerd.
 
 De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
 

@@ -59,9 +59,9 @@ Bepalen welke mogelijkheden moeten worden gebruikt
 | Detecteren - zoeken naar middelen | Ja | Experience Manager, webinterface en bureaubladacties |  |
 | Gebruiken - element openen | Ja | Ja, voor elke app | [Openen vanuit webinterface](/help/assets/manage-digital-assets.md#previewing-assets) of van Finder |
 | Gebruiken - element van Experience Manager in een document plaatsen | Ja - insluiten | Ja - koppelen of insluiten | De desktop-app van de Experience Manager biedt toegang tot elementen als bestanden op het lokale bestandssysteem. Deze koppelingen in de native apps worden weergegeven door lokale paden. |
-| Bewerken - openen voor bewerking | Ja, uitchecken, actie | Ja - Handeling openen (in netwerkshare) | [Uitchecken in AAL](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) Hiermee slaat u het element standaard op in de Creative Cloud Storage-account (gesynchroniseerd door de Creative Cloud-app) van de gebruiker. |
+| Bewerken - openen voor bewerking | Ja, uitchecken, actie | Ja - Handeling openen (in netwerkshare) | [Uitchecken in AAL](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) Hiermee slaat u het element standaard op in de Creative Cloud Storage-account (gesynchroniseerd door de Creative Cloud-app) van de gebruiker. |
 | Bewerken - Bezig met werk buiten Experience Manager | Ja - Asset beschikbaar in de Creative Cloud-opslagaccount van de gebruiker gesynchroniseerd met desktop. | Ja |  |
-| Bewerken - wijzigingen uploaden | Ja - [Inchecken, actie](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) met optionele opmerking | Ja |  |
+| Bewerken - wijzigingen uploaden | Ja - [Inchecken, actie](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) met optionele opmerking | Ja |  |
 | Uploaden - één bestand | Ja - het actieve document wordt geüpload | Ja | [Uploaden via webinterface](/help/assets/manage-digital-assets.md#uploading-assets) |
 | Uploaden - meerdere bestanden / hiërarchische mapstructuren | Nee | Ja | [Uploaden via webinterface](/help/assets/manage-digital-assets.md#uploading-assets); Aangepaste scripts of gereedschappen |
 | Diverse - gebruiker en aanmelding | Creative Cloud-gebruiker die zich heeft aangemeld bij Creative Cloud-bureaublad wordt herkend (SSO) | Experience Manager gebruiker/aanmelding | Gebruikers van beide oplossingen tellen mee voor de gebruikersquota van de Experience Manager. |
@@ -205,7 +205,7 @@ Adobe Asset Link biedt een goede ondersteuning voor dit gebruiksgeval:
 
 De desktop-app van de Experience Manager biedt een gedeelde netwerkbestanden voor bestanden die in de native app worden geopend. Standaard worden alle lokaal uitgevoerde wijzigingen na een korte tijd automatisch geüpload naar de Experience Manager. Met zo een configuratie, zou het frequente sparen tijdens de werk-in-lopende fase allen in Experience Manager en versioned worden geupload, die tot veel netwerkverkeer en potentiële scalability uitdagingen - om onnodige versies in Experience Manager te noemen leiden.
 
-Hier kunt u het beste een optie in de bureaubladtoepassing van de Experience Manager gebruiken om geautomatiseerde updates uit te schakelen en wijzigingen in  handmatig te uploaden naar Experience Manager. Hierbij wordt gebruikgemaakt van de actie voor uploadwijzigingen in de statusinterface van de app voor bedrijfsmiddelen.
+Hier kunt u het beste een optie in de bureaubladtoepassing van de Experience Manager gebruiken om geautomatiseerde updates uit te schakelen en wijzigingen in  handmatig te uploaden naar de Experience Manager. Hierbij wordt gebruikgemaakt van de actie voor uploadwijzigingen in de statusinterface van de app voor bedrijfsmiddelen.
 
 #### Bulkupload naar DAM {#bulk-upload-to-dam}
 

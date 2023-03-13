@@ -93,7 +93,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
    ![workflow-editor](assets/workflow-editor.png)
 
-   Configureer voor het voorbeeld van de hypotheektoepassing de taakstap voor toewijzen om een alleen-lezen adaptief formulier te gebruiken en PDF Document weer te geven zodra de taak is voltooid. Selecteer ook voor gebruikersgroep die de aanvraag voor een lening mag goedkeuren. Op de **Handelingen** tabblad, schakelt u de **Verzenden** optie. Een **actionTake** variabele van het gegevenstype String en geef de variabele op als de **Route Variable**. Bijvoorbeeld actionTake. Voeg ook de routes Goedkeuren en Afwijzen toe. De routes worden getoond als afzonderlijke acties (knopen) in AEM Inbox. De werkstroom selecteert een vertakking op basis van de actie (knoop) een gebruiker tikt.
+   Configureer voor het voorbeeld van de hypotheektoepassing de taakstap toewijzen zodat een adaptief formulier met het kenmerk Alleen-lezen wordt gebruikt en het PDF-document wordt weergegeven zodra de taak is voltooid. Selecteer ook voor gebruikersgroep die de aanvraag voor een lening mag goedkeuren. Op de **Handelingen** tabblad, schakelt u de **Verzenden** optie. Een **actionTake** variabele van het gegevenstype String en geef de variabele op als de **Route Variable**. Bijvoorbeeld actionTake. Voeg ook de routes Goedkeuren en Afwijzen toe. De routes worden getoond als afzonderlijke acties (knopen) in AEM Inbox. De werkstroom selecteert een vertakking op basis van de actie (knoop) een gebruiker tikt.
 
    U kunt het voorbeeldpakket importeren, dat u kunt downloaden vanaf het begin van de sectie, voor de volledige set waarden van alle velden van de taakstap toewijzen die is geconfigureerd, bijvoorbeeld hypotheektoepassing.
 

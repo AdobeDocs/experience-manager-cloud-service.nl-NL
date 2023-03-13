@@ -1,13 +1,13 @@
 ---
 title: Infrastructuur- en servicecontrole in AEM as a Cloud Service
 description: Infrastructuur- en servicecontrole in AEM as a Cloud Service
-source-git-commit: 8121d2e9cd98b4cc6e848f6cd6c3fa4359988053
+exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
+source-git-commit: eb4c49b8d173d1d402d22824bc98e4713ab54c31
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
 
 ---
-
 
 # Infrastructuur- en servicecontrole in AEM as a Cloud Service {#monitoring-in-aem-as-a-cloud-service}
 
@@ -49,10 +49,10 @@ Extra controles worden toegevoegd aan omgevingen die zijn ingericht voor Forms. 
 
 ## Waarmerking van de klant {#customer-observability}
 
-Klanten kunnen de [Nieuwe Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) -suite met prestatiegegevens in real-time die worden verzameld en in kaart gebracht voor analyse en probleemoplossing. Met behulp van de monitorsuite kunnen klanten rechtstreeks verschillende meetgegevens observeren, zoals: De prestatiesmetriek van JVM, transactietijd voor Java, achtergrond externe vraag en gegevensbestandvraag.
+Klanten kunnen de [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) -suite met prestatiegegevens in real-time die worden verzameld en in kaart gebracht voor analyse en probleemoplossing. Met behulp van de monitorsuite kunnen klanten rechtstreeks verschillende meetgegevens observeren, zoals: De prestatiesmetriek van JVM, transactietijd voor Java, achtergrond externe vraag en gegevensbestandvraag.
 
 ## Aanvullende bronnen {#resources}
 
-* [Nieuwe Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
+* [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
 * [Aanmelden voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
 * [Monitoringomgevingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)

@@ -2,7 +2,7 @@
 title: Exporteren van ervaringsfragmenten naar Adobe Target
 description: Exporteren van ervaringsfragmenten naar Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
+source-git-commit: 6127d86ad174979506f36bb345129e4a130d35c8
 workflow-type: tm+mt
 source-wordcount: '2249'
 ht-degree: 0%

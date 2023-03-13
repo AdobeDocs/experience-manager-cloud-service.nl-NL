@@ -46,11 +46,11 @@ Volg de onderstaande aanbevolen procedures om uw AEM toepassing zonder koppen kl
 
 ## CDN-hoogte-breedteverhouding in cache maximaliseren {#maximize-cdn}
 
-* Gebruik geen directe vragen GraphQL, tenzij u levende inhoud van de oppervlakte verzoekt.
+* Gebruik geen directe GraphQL-query&#39;s, tenzij u live-inhoud vanaf het oppervlak aanvraagt.
    * Gebruik waar mogelijk doorlopende query&#39;s.
    * Verstrek CDN TTL boven 600 seconden zodat CDN hen in het voorgeheugen onderbrengt.
    * AEM kan het effect van een modelwijziging op bestaande query&#39;s berekenen.
-* Splits JSON- dossiers/GraphQL vragen tussen laag en hoge tarief van de inhoudsverandering om cliëntverkeer aan CDN te verminderen en hogere TTL toe te wijzen. Dit minimaliseert CDN die JSON met de oorsprongserver opnieuw bevestigt.
+* Splits JSON-bestanden/GraphQL-query&#39;s tussen lage en hoge wijzigingssnelheid voor inhoud om het clientverkeer naar CDN te beperken en een hogere TTL toe te wijzen. Dit minimaliseert CDN die JSON met de oorsprongserver opnieuw bevestigt.
 * Als u de inhoud van de CDN actief ongeldig wilt maken, gebruikt u Zacht wissen. Hierdoor kan de CDN de inhoud opnieuw downloaden zonder dat een cache-fout optreedt.
 
 ## Verbeter de tijd om inhoud zonder kop te downloaden {#improve-download-time}
@@ -97,7 +97,7 @@ Volg deze beste praktijken als algemene benadering van het zuiveren:
 * Functionaliteit en prestaties valideren met de productieversie van de toepassing
 * Valideren met de JSON-voorvertoning van de Content Fragment Editor
 * Inspect de JSON in de clienttoepassing om te controleren of er problemen zijn met de clienttoepassing of levering
-* Inspect de JSON met GraphQL om te controleren of er problemen zijn met inhoud of AEM in cache.
+* Inspect de JSON met GraphQL om te controleren of er problemen zijn met inhoud in de cache of AEM
 
 ### Een probleem aanmelden met ondersteuning {#logging-a-bug-with-support}
 

@@ -2,7 +2,7 @@
 title: Inleiding aan IP Lijsten van gewenste personen
 description: Leer hoe IP de lijsten van gewenste personen kunnen beperken waarvan de adressen gebruikers tot uw AEM as a Cloud Service domeinen kunnen toegang hebben.
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: 18ecf3394ff575213756fced84a3b08795188240
+source-git-commit: 286bc8e206b7a54cc1869e3965e55852cf62946d
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%

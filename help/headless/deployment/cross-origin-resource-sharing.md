@@ -1,6 +1,6 @@
 ---
 title: Configuratie voor het delen van bronnen van verschillende oorsprong (CORS) met AEM headless
-description: Met CORS (Cross-Origin Resource Sharing) van Adobe Experience Manager kunnen webtoepassingen zonder kop aanroepen naar AEM uitvoeren. Een configuratie CORS is nodig om toegang tot het eindpunt toe te laten GraphQL.
+description: Met CORS (Cross-Origin Resource Sharing) van Adobe Experience Manager kunnen webtoepassingen zonder kop aanroepen naar AEM uitvoeren. Een configuratie CORS is nodig om toegang tot het eindpunt van GraphQL toe te laten.
 feature: GraphQL API
 exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
@@ -16,13 +16,13 @@ ht-degree: 0%
 >
 >Voor een gedetailleerd overzicht van het beleid voor het delen van bronnen in AEM zie [Werken met het delen van bronnen tussen verschillende bronnen (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
 
-Om tot het eindpunt toegang te hebben GraphQL, moet een beleid CORS worden gevormd en aan een AEM Project worden toegevoegd dat is [geïmplementeerd op AEM via Cloud Manager](/help/implementing/cloud-manager/deploy-code.md). Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen. Meerdere CORS-configuraties kunnen worden gemaakt en geïmplementeerd in verschillende omgevingen. Voorbeelden vindt u in het dialoogvenster [WKND-naslagsite](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig)
+Om tot het eindpunt van GraphQL toegang te hebben, moet een beleid CORS worden gevormd en aan een AEM Project worden toegevoegd dat is [geïmplementeerd op AEM via Cloud Manager](/help/implementing/cloud-manager/deploy-code.md). Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen. Meerdere CORS-configuraties kunnen worden gemaakt en geïmplementeerd in verschillende omgevingen. Voorbeelden vindt u in het dialoogvenster [WKND-naslagsite](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig)
 
 De CORS-configuratie moet een vertrouwde website-oorsprong opgeven `alloworigin` of `alloworiginregexp` waarvoor toegang moet worden verleend.
 
 Het configuratiebestand moet de volgende naam hebben: `com.adobe.granite.cors.impl.CORSPolicyImpl~appname-graphql.cfg.json` waar `appname` geeft de naam van uw toepassing weer.
 
-Bijvoorbeeld, om toegang tot het eindpunt te verlenen GraphQL `/content/cq:graphql/wknd/endpoint` en voortgeduurde vragen eindpunt voor `https://my.domain` u kunt gebruiken:
+Bijvoorbeeld om toegang tot het eindpunt van GraphQL te verlenen `/content/cq:graphql/wknd/endpoint` en voortgeduurde vragen eindpunt voor `https://my.domain` u kunt gebruiken:
 
 ```json
 {

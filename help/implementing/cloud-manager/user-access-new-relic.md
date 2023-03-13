@@ -1,8 +1,8 @@
 ---
-title: Nieuwe Relic One
+title: New Relic One
 description: Meer informatie over de service voor het controleren van de prestaties van New Relic One-toepassingen (APM) voor AEM as a Cloud Service en over hoe u deze service kunt gebruiken.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: c265ce6f29dee1760049a8d296f00a3c2484fb77
+source-git-commit: 6a633881be57b79ee167c3a16d514b903bc460ad
 workflow-type: tm+mt
 source-wordcount: '1603'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Nieuwe Relic One {#user-access}
+# New Relic One {#user-access}
 
 Meer informatie over de service voor het controleren van de prestaties van New Relic One-toepassingen (APM) voor AEM as a Cloud Service en over hoe u deze service kunt gebruiken.
 
@@ -90,7 +90,7 @@ Als je geen bevestigingsbericht van New Relic hebt ontvangen, raadpleeg dan de [
 
 Zodra u [je New Relic-account heeft geactiveerd,](#activate-account) u kunt New Relic One openen via Cloud Manager of rechtstreeks.
 
-Ga als volgt te werk om toegang te krijgen tot nieuwe versie van Relic One via Cloud Manager:
+New Relic One openen via Cloud Manager:
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
@@ -120,13 +120,13 @@ Voor meer hulp, gelieve een steunkaartje via te openen [Ondersteuningsportaal vo
 
 ## Problemen met New Relic One Access oplossen {#troubleshooting}
 
-Als u als Nieuwe Relic Één gebruiker zoals die in de sectie wordt beschreven werd toegevoegd [New Relic One-gebruikers beheren](#manage-users) en kan de originele accountbevestigingsmail niet vinden volg deze stappen.
+Als u bent toegevoegd als New Relic One-gebruiker, zoals beschreven in de sectie [New Relic One-gebruikers beheren](#manage-users) en kan de originele accountbevestigingsmail niet vinden volg deze stappen.
 
 1. Ga naar de aanmeldingspagina van New Relic op [`login.newrelic.com/login`](https://login.newrelic.com/login).
 
 1. Selecteren **Bent u uw wachtwoord vergeten?**.
 
-   ![Nieuwe aanmelding voor Relic](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+   ![Aanmelden bij New Relic](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
 1. Voer het e-mailadres in dat is gebruikt om uw account te maken en selecteer **Mijn terugstelkoppeling verzenden**.
 
@@ -158,7 +158,7 @@ Voor meer hulp of extra begeleiding over New Relic One-aanbiedingen voor uw AEM 
 
 Adobe bewaakt de AEM as a Cloud Service auteur, publiceert en voorproef (indien beschikbaar) services via de New Relic One Java-plug-in. Adobe maakt aangepaste New Relic One APM-telemetrie en bewaking mogelijk in niet-productie- en productieomgevingen AEM as a Cloud Service omgevingen.
 
-Uw Nieuwe Relic One-account is gekoppeld aan een primaire Adobe-account en heeft meerdere toepassingen die erin rapporteren: drie per AEM as a Cloud Service omgeving.
+Uw New Relic One-account is gekoppeld aan een account met een primair Adobe-onderhoud en heeft meerdere toepassingen die erin rapporteren: drie per AEM as a Cloud Service omgeving.
 
 * Eén toepassing voor de auteurservice per omgeving
 * Eén toepassing voor de publicatieservice per omgeving (inclusief Golden Publish)
@@ -167,7 +167,7 @@ Uw Nieuwe Relic One-account is gekoppeld aan een primaire Adobe-account en heeft
 Opmerking:
 
 * Elke toepassing gebruikt één licentiecode.
-* AEM as a Cloud Service milieu&#39;s rapporteren aan slechts één Nieuwe Relic Één rekening.
+* AEM as a Cloud Service omgevingen rapporteren slechts aan één New Relic One-account.
 * De volledige meetgegevens en gebeurtenissen voor de bewaking van beide New Relic One worden zeven dagen bewaard.
 
 ### Wie heeft toegang tot de gegevens van de New Relic One Cloud Service? {#access-new-relic-cloud}
@@ -176,11 +176,11 @@ Volledige leestoegang wordt verleend voor maximaal 30 leden van uw team. Leestoe
 
 ### Wordt aangepaste SSO-configuratie ondersteund? {#custom-sso}
 
-De configuratie van SSO van de douane wordt niet gesteund voor Nieuwe Relic Één rekening die door Adobe wordt voorzien.
+Aangepaste SSO-configuratie wordt niet ondersteund voor de New Relic One-account die is ingericht door Adobe.
 
 ### Wat gebeurt er als ik al een New Relic-abonnement heb op de locatie? {#new-relic-subscription}
 
-Nieuwe Relic Één is het nieuwe observability platform van Nieuw Relic en het laat de steun van Adobe en uw teams toe om, metriek en gebeurtenissen, allen op één plaats waar te waarnemen te controleren en te bekijken.
+New Relic One is het nieuwe platform voor waarneming vanuit New Relic en biedt ondersteuning van Adobe en uw teams de mogelijkheid om metingen en gebeurtenissen op één plaats te observeren, te controleren en weer te geven.
 
 New Relic One biedt gebruikers de mogelijkheid om te zoeken in alle accounts waar ze toegang hebben tot de gegevens van alle services en hosts in één weergave en deze zichtbaar te maken.
 

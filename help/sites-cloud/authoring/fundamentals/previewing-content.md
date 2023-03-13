@@ -2,7 +2,7 @@
 title: Inhoud voorvertonen
 description: Leer hoe u de AEM voorvertoningsservice gebruikt om inhoud voor te vertonen voordat u live gaat.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
+source-git-commit: dc55bd43641c03dd022a891c8b85569d9be28ebe
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

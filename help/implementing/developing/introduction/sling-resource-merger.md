@@ -210,7 +210,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
          Dit specificeert de knoop (zoals in `/libs`) dat het huidige knooppunt moet worden geplaatst voor:
 
          * type: `String`
-         * waarde: `<before-SiblingName>`
+         * value: `<before-SiblingName>`
 
 ### Het aanroepen van de Verschuivende Fusie van het Middel van uw code {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -235,7 +235,7 @@ De samenvoeging van het Verspreide Middel omvat twee leveranciers van douanemidd
 
    * doel: samenvoegbronnen op basis van hun supertype
    * koppelpunt: `/mnt/overide`
-   * gebruik: `mount point + absolute path`
+   * usage: `mount point + absolute path`
    * voorbeeld:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`

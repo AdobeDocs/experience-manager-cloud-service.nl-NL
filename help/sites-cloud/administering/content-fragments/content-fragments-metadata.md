@@ -4,10 +4,10 @@ description: Leer hoe u de eigenschappen van metagegevens in AEM Content Fragmen
 feature: Content Fragments
 role: User
 exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -37,4 +37,4 @@ U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewer
       * [Tags](/help/sites-cloud/authoring/features/tags.md) bijzonder krachtig zijn wanneer het organiseren van uw fragmenten aangezien zij voor inhoudclassificatie en taxonomie kunnen worden gebruikt. Tags kunnen worden gebruikt om inhoud (door tags) te zoeken en om bewerkingen in bulk toe te passen.
 U kunt bijvoorbeeld relevante fragmenten labelen als &#39;kerstlancering&#39; om alleen deze fragmenten als een subset te kunnen doorbladeren, of om ze te kopiëren voor gebruik met een andere toekomstige start in een nieuwe map.
    * Gemaakt (alleen weergave)
-   ![metagegevens](assets/cfm-metadata-02.png)
+   ![metadata](assets/cfm-metadata-02.png)

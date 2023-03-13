@@ -2,7 +2,7 @@
 title: Werken met Dynamic Media
 description: Dynamic Media helpt bij het leveren van rijke visuele merchandising- en marketingmiddelen op aanvraag, die automatisch worden geschaald voor consumptie op internet, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, geoptimaliseerde netwerk
 contentOwner: Rick Brough
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%

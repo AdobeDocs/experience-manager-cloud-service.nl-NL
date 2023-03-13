@@ -36,7 +36,7 @@ Het diagram hierboven toont dit gemeenschappelijke plaatsingspatroon.
 1. De **Inhoudsauteur** en andere interne gebruikers kunnen de inhoud rechtstreeks op de service Auteur voorvertonen. Er kan een voorvertoningsversie van de toepassing worden ingesteld die verbinding maakt met de service Auteur.
 1. Nadat de inhoud is goedgekeurd, kan deze worden gepubliceerd naar de AEM-publicatieservice.
 1. De **Dispatcher** is een laag voor de **Publiceren** de dienst die bepaalde verzoeken in het voorgeheugen onderbrengen en een laag van veiligheid verstrekt.
-1. Eindgebruikers hebben interactie met de productieversie van de toepassing. De productietoepassing maakt verbinding met de publicatieservice via de Dispatcher en gebruikt de GraphQL API&#39;s om inhoud aan te vragen en te verbruiken.
+1. Eindgebruikers hebben interactie met de productieversie van de toepassing. De productietoepassing maakt verbinding met de publicatieservice via de Dispatcher en gebruikt de GraphQL API&#39;s om inhoud aan te vragen en te gebruiken.
 
 ## Implementatie van publicatievoorvertoning voor auteur
 
@@ -48,4 +48,4 @@ Een andere optie voor headless plaatsingen is een **Voorvertoning AEM** service.
 1. Inhoud wordt eerst gepubliceerd naar de service AEM.
 1. Er kan een voorvertoningsversie van de toepassing worden ingesteld die verbinding maakt met de service Voorvertoning.
 1. Nadat de inhoud is gereviseerd en goedgekeurd, kan deze worden gepubliceerd naar de AEM-publicatieservice.
-1. Eindgebruikers hebben interactie met de productieversie van de toepassing. De productietoepassing maakt verbinding met de publicatieservice via de Dispatcher en gebruikt de GraphQL API&#39;s om inhoud aan te vragen en te verbruiken.
+1. Eindgebruikers hebben interactie met de productieversie van de toepassing. De productietoepassing maakt verbinding met de publicatieservice via de Dispatcher en gebruikt de GraphQL API&#39;s om inhoud aan te vragen en te gebruiken.

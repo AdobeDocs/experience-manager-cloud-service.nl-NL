@@ -2,7 +2,7 @@
 title: WKND SPA Project
 description: Ga in SPA ontwikkeling met dit meerdelige leerprogramma binnen dat u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing verplettert om uw eigen SPA uit te voeren gebruikend zowel React als Angular.
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
-source-git-commit: 173f6cd2c07ddc3a3a343696b166af88bc2631ed
+source-git-commit: f9ebd60892ae2cdaf844b7978f53a76b6e5cb137
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%

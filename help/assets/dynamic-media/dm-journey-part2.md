@@ -13,7 +13,7 @@ hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
 workflow-type: tm+mt
-source-wordcount: '2872'
+source-wordcount: '2848'
 ht-degree: 0%
 
 ---
@@ -47,26 +47,26 @@ De ID of naam van het element `AdobeStock_28563982` is groen. Merk op dat het el
 
 Tot slot zijn er enkele parameters voor beeldverwerking. `?wid=1000&fmt=jpeg&qlt=85`geel aan het uiteinde.
 
-Het volledige URL-pad is live. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target=&quot;_blank&quot;}.
+Het volledige URL-pad is live. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target="_blank"}.
 
 Zorg dat uw browservenster nog steeds open is voor de Dynamic Media URL en de gecontroleerde afbeelding. Laten we nader kijken hoe u uitvoeringen van de afbeelding kunt maken door alleen de URL te wijzigen.
 
 ### De gecontroleerde afbeelding renderen via de URL
 
-Begin door slechts de beeldverwerkingsregels in de weg URL manueel te schrappen; de servernaam, accountnaam en de element-id of afbeeldingsnaam behouden. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target=&quot;_blank&quot;}.
+Begin door slechts de beeldverwerkingsregels in de weg URL manueel te schrappen; de servernaam, accountnaam en de element-id of afbeeldingsnaam behouden. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target="_blank"}.
 
-Voeg nu een afbeeldingsverwerkingsparameter toe aan het einde van de URL. Typ rechts van de naam van de afbeelding in het veld URL het volgende: `?wid=500`en vervolgens drukt u op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target=&quot;_blank&quot;}.
+Voeg nu een afbeeldingsverwerkingsparameter toe aan het einde van de URL. Typ rechts van de naam van de afbeelding in het veld URL het volgende: `?wid=500`en vervolgens drukt u op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target="_blank"}.
 
 U ziet dat er een nieuwe uitvoering van het horloge wordt gegenereerd. Een belangrijke stap voorwaarts om te begrijpen dat u met deze eenvoudige oefening van het wijzigen van de afbeeldingsbreedte de afbeelding volledig dynamisch genereert.
 
-Wijzig nu de breedtewaarde van `500` pixels naar `1000` pixels en druk vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
+Wijzig nu de breedtewaarde van `500` pixels naar `1000` pixels en druk vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}.
 Het moment waarop u drukt **[!UICONTROL Enter]** gaat de browser terug naar de Dynamic Media Image Server. Het produceert een gloednieuwe vertoning van het horloge, die op de nieuwe breedtewaarde wordt gebaseerd u enkel inging, dan levert het nieuwe beeld terug aan browser, en caches het.
 
 Dynamic Media beschikt over een groot aantal parameters voor beeldverwerking waarmee u uw afbeeldingselementen op webpagina&#39;s kunt perfectioneren. U kunt [zie hier een lijst](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
-Voeg nu een rotatieparameter toe aan de gecontroleerde afbeelding. En het einde van het URL-pad, onmiddellijk na `wid=1000`, type `&rotate=90`en drukt u vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target=&quot;_blank&quot;}.
+Voeg nu een rotatieparameter toe aan de gecontroleerde afbeelding. En het einde van het URL-pad, onmiddellijk na `wid=1000`, type `&rotate=90`en drukt u vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
 
-Het horloge wordt nog steeds enigszins schuingetrokken naar links. De rotatiewaarde wijzigen van `90` tot `92`en drukt u vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target=&quot;_blank&quot;}.
+Het horloge wordt nog steeds enigszins schuingetrokken naar links. De rotatiewaarde wijzigen van `90` tot `92`en drukt u vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
 
 Nogmaals, het moment waarop u drukt **[!UICONTROL Enter]** Er wordt bijna onmiddellijk een nieuwe uitvoering van het horloge gegenereerd. U kunt zien wat voor prestaties u krijgt, wat verklaart waarom Dynamic Media meer dan 800.000 afbeeldingsverzoeken kan indienen, _per seconde_, op een druk weekend of een grote vakantie.
 
@@ -128,7 +128,7 @@ Als u klaar bent, slaat u de voorinstelling op en is deze nu beschikbaar voor al
 ![De voorinstelling voor afbeeldingen toepassen *Normaal* om een uitvoering van een afbeelding te genereren](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Door de voorinstelling Medium voor afbeeldingen toe te passen, wordt een uitvoering van een afbeelding gegenereerd._
 
-U kopieert de URL en plakt deze in uw browser om de weergave van de afbeelding te controleren. [Probeer het](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}.
+U kopieert de URL en plakt deze in uw browser om de weergave van de afbeelding te controleren. [Probeer het](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}.
 
 Let op de naam van de voorinstelling voor de afbeelding in uw browser _Normaal_ in het volledige URL-pad.
 
@@ -161,7 +161,7 @@ _Het begin van het maken van een Afbeeldingsset._
 
 Als u de afbeeldingsset wilt maken, kiest u **[!UICONTROL Image Set]** van de **[!UICONTROL Create]** keuzemenu. In het menu ziet u dat er ook opties zijn om een **[!UICONTROL Mixed Media Set]**, **[!UICONTROL Spin Set]** en **[!UICONTROL Carousel Set]**. U maakt deze sets op ongeveer dezelfde manier als een afbeeldingsset.
 
-Een gemengde mediaset kan afbeeldingen, stalensets, centrifuges, video&#39;s en adaptieve videosets bevatten. [Probeer het](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Een reeks van de Draai simuleert de echte handeling van het draaien van een voorwerp om het te onderzoeken. Met centrifuges kunt u de belangrijkste visuele details vanuit elke hoek bekijken. [Probeer het](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target=&quot;_blank&quot;}.
+Een gemengde mediaset kan afbeeldingen, stalensets, centrifuges, video&#39;s en adaptieve videosets bevatten. [Probeer het](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Een reeks van de Draai simuleert de echte handeling van het draaien van een voorwerp om het te onderzoeken. Met centrifuges kunt u de belangrijkste visuele details vanuit elke hoek bekijken. [Probeer het](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target="_blank"}.
 
 Het maken van een afbeeldingsset is eenvoudig. U voegt gewoon de afbeeldingselementen toe die u in de set wilt opnemen.
 
@@ -187,13 +187,13 @@ In het voorbeeld kunt u de actieve schoenstalen selecteren en in- en uitzoomen o
 ![De uitvoerafbeelding die is ingesteld met de Flyout-viewer erop is toegepast](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _De `Running` Afbeelding ingesteld met de Flyout-viewer erop toegepast._
 
-In dit geval worden de `Flyout` viewer is geselecteerd. Op dit punt kunt u een voorvertoning van de afbeeldingsset weergeven in de viewer. Maar het is beter om het in uw browser te zien, enkel hoe een klant het ziet. U selecteert **[!UICONTROL URL]** linksonder, kopieert u de URL en plakt u deze in uw browser. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target=&quot;_blank&quot;}.
+In dit geval worden de `Flyout` viewer is geselecteerd. Op dit punt kunt u een voorvertoning van de afbeeldingsset weergeven in de viewer. Maar het is beter om het in uw browser te zien, enkel hoe een klant het ziet. U selecteert **[!UICONTROL URL]** linksonder, kopieert u de URL en plakt u deze in uw browser. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}.
 
 Met de enkele URL kunt u de afbeeldingsset en de viewer gebruiken waar u deze nodig hebt op uw website. In het vorige voorbeeld hebt u wellicht opgemerkt dat: **[!UICONTROL Embed]** bevindt zich rechts van de URL-knop. Door **[!UICONTROL Embed]** kunt u de code voor deze afbeeldingsset/viewer kopiëren en toevoegen aan een webpagina of een Experience Manager Sites-component.
 
 De Flyout-viewer is een standaardviewer zonder vak waarvan u de eigenschappen kunt bewerken. U kunt ook, net als bij het maken van een voorinstelling voor afbeeldingen, uw eigen aangepaste viewer maken.
 
-Vermeend dat uw verkoop- en marketingteam de Flyout-viewer niet leuk vindt. Ze houden van de zoomfunctie, maar ze willen dat klanten het zoomeffect direct boven de schoenen zien. In dat geval past u gewoon de InlineZoom-viewer toe op de afbeeldingsset en kopieert en plakt u de URL in uw browser om te zien hoe deze zich gedraagt. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target=&quot;_blank&quot;}.
+Vermeend dat uw verkoop- en marketingteam de Flyout-viewer niet leuk vindt. Ze houden van de zoomfunctie, maar ze willen dat klanten het zoomeffect direct boven de schoenen zien. In dat geval past u gewoon de InlineZoom-viewer toe op de afbeeldingsset en kopieert en plakt u de URL in uw browser om te zien hoe deze zich gedraagt. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
 
 Wanneer u de muisaanwijzer over de schoen beweegt, zoomt u in op die afbeelding en ziet u meer details wanneer u de aanwijzer verplaatst. En de reden daarvoor is gewoon de grootte van de afbeelding die aanvankelijk in Dynamic Media werd geüpload.
 
@@ -203,8 +203,8 @@ U leest gewoon wat over sets afbeeldingen en viewers. Laten we naar een paar and
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* `ZoomVertical_dark` viewer toegepast op een afbeeldingselement. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target=&quot;_blank&quot;}.
-* `Zoom_light` viewer die op een afbeelding is toegepast. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target=&quot;_blank&quot;}.
+* `ZoomVertical_dark` viewer toegepast op een afbeeldingselement. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target="_blank"}.
+* `Zoom_light` viewer die op een afbeelding is toegepast. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target="_blank"}.
 
 ## Optioneel - Meer informatie
 

@@ -1,10 +1,10 @@
 ---
 title: Inhoudsfragmenten - Configuratiebrowser
-description: Leer hoe te om de functionaliteit van het Fragment van de Inhoud en van GraphQL in Browser van de Configuratie toe te laten om AEM koploze leveringseigenschappen te gebruiken.
+description: Leer hoe u de functionaliteit van Inhoudsfragment en GraphQL in de configuratiegrowser kunt inschakelen om functies voor het leveren van AEM koploze inhoud te gebruiken.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 14%
@@ -20,7 +20,7 @@ Leer hoe te om specifieke functionaliteit van het Fragment van de Inhoud in Brow
 Voordat u Inhoudsfragmenten kunt gebruiken, moet u de opdracht **Configuratiebrowser** inschakelen:
 
 * **Modellen van inhoudsfragmenten** - verplicht
-* **GrafiekQL Blijvende query&#39;s** - facultatief
+* **Aangehouden GraphQL-query&#39;s** - facultatief
 
 >[!CAUTION]
 >
@@ -45,14 +45,14 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
 
 >[!NOTE]
 >
->[Subconfiguraties](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (een configuratie die in een andere configuratie is genest), wordt volledig ondersteund voor gebruik met Content Fragments, Content Fragment Models en GraphQL-query&#39;s.
+>[Subconfiguraties](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (een configuratie die in een andere configuratie is genest), wordt volledig ondersteund voor gebruik met Content Fragments, Content Fragment Models en GraphQL query&#39;s.
 >
 >Ik wil alleen opmerken dat:
 >
 >
 >* Na het creëren van modellen in een subconfiguratie, is het NIET mogelijk om het model naar een andere subconfiguratie te bewegen of te kopiëren.
 >
->* Een eindpunt GraphQL zal (nog) op een ouder (wortel) configuratie worden gebaseerd.
+>* Een eindpunt van GraphQL zal (nog) op een ouder (wortel) configuratie worden gebaseerd.
 >
 >* Blijvende query&#39;s worden (nog) als relevant voor de bovenliggende (basis)configuratie opgeslagen.
 
@@ -68,7 +68,7 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
       * U kunt deze desgewenst aanpassen.
    1. Selecteer
       * **Modellen van contentfragmenten**
-      * **GrafiekQL Blijvende query&#39;s**
+      * **Aangehouden GraphQL-query&#39;s**
 
       ![Configuratie definiëren](assets/cfm-conf-01.png)
 

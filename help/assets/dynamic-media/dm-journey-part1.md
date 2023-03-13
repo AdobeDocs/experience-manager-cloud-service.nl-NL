@@ -13,7 +13,7 @@ hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 source-git-commit: 803c4dc44189d58ddbd2669b00dd8107b2a926ae
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3705'
 ht-degree: 0%
 
 ---
@@ -254,14 +254,14 @@ Na het uploaden zijn er verschillende manieren om een voorvertoning van de uitvo
 ![Een voorvertoning weergeven van een element op basis van de voorinstelling Grote afbeelding](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Een voorvertoning weergeven van een uitvoering van een element op basis van de geselecteerde voorinstelling voor &quot;Grote&quot; afbeeldingen. Er is op de knop URL geklikt. Het resulterende URL-pad bevat de naam van de &quot;Grote&quot; afbeeldingsvoorinstelling en kan in een webpagina worden gebruikt._
 
-Bovenstaande URL is live! [Probeer het](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target=&quot;_blank&quot;}.
+Bovenstaande URL is live! [Probeer het](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
 Een andere methode om een voorvertoning van een element weer te geven, is het selecteren van het afbeeldingselement en vervolgens het selecteren van een _Viewers_ zoals in het volgende wordt getoond.
 
 ![Een voorvertoning weergeven van een element op basis van de voorinstelling voor de weergave Verticaal licht zoomen](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Een voorvertoning weergeven van een element op basis van de geselecteerde voorinstelling voor de viewer &quot;ZoomVertical_light&quot;. De muisaanwijzer (`+`) is over het horloge verplaatst om in te zoomen. Let op de knoppen URL en Insluiten._
 
-De bovenstaande vertoning is live! [Probeer het](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}.
+De bovenstaande vertoning is live! [Probeer het](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## Optioneel - Meer informatie
 

@@ -91,7 +91,7 @@ De oplossing is om een [Configuratie RepositoryInitializer OSGi](/help/implement
 
 In de vorige voorbeeldfout wordt het pakket `myapp-base.ui.content-*.zip` bevat inhoud onder `/conf` en `/var/workflow`. Om de plaatsing te slagen, toestemmingen voor `sling-distribution-importer` onder deze paden is het noodzakelijk .
 
-Hier is een voorbeeld van een [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi-configuratie die extra toestemmingen voor de `sling-distribution-importer` gebruiker.  De configuratie voegt toestemmingen onder toe `/var`.  Een dergelijke configuratie moet worden toegevoegd aan het toepassingspakket onder `/apps/myapp/config` (waarbij myapp de map is waarin uw toepassingscode is opgeslagen).
+Hier is een voorbeeld van een [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) De configuratie OSGi die extra toestemmingen voor de configuratie toevoegt `sling-distribution-importer` gebruiker.  De configuratie voegt toestemmingen onder toe `/var`.  Een dergelijke configuratie moet worden toegevoegd aan het toepassingspakket onder `/apps/myapp/config` (waarbij myapp de map is waarin uw toepassingscode is opgeslagen).
 
 ## Mijn plaatsing van de Manager van de Wolk ontbreekt bij de opstellen stap in AEM as a Cloud Service en ik voegde reeds een configuratie RepositoryInitializer OSGi toe. Wat kan ik nog meer doen? {#build-failures}
 

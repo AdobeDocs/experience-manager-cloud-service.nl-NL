@@ -173,7 +173,7 @@ Dynamic Media bevat een Dynamic Media 3D-mediacomponent die u kunt gebruiken in 
 1. Als u de sjabloon wilt openen, selecteert u **[!UICONTROL Edit]**.
 1. Selecteer in de rechterbovenhoek van de pagina in het keuzemenu de optie **[!UICONTROL Structure]** als deze nog niet actief is.
 
-   ![3d-media-component-structuur](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
+   ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
 
 1. Als u een leeg gebied wilt selecteren en de bijbehorende werkbalk wilt openen, selecteert u het lege gebied in het dialoogvenster **[!UICONTROL Layout Container]** regio.
 1. Selecteer op de werkbalk de optie **[!UICONTROL Policy]** pictogram om het **[!UICONTROL Policy Editor]**.
@@ -197,7 +197,7 @@ Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynami
 
 1. Selecteer in het zijpaneel het pictogram met het plusteken om het dialoogvenster **[!UICONTROL Components]** lijst.
 
-   ![3d-media-component-slepen-neerzetten](/help/assets/dynamic-media/assets/3d-assets-filtera.png)
+   ![3d-media-component-drag-drop](/help/assets/dynamic-media/assets/3d-assets-filtera.png)
 
 1. Sleep de **[!UICONTROL 3D Media]** uit de **[!UICONTROL Components]** Hiermee geeft u een lijst weer naar de locatie op de pagina waar u de 3D-viewer wilt weergeven.
 

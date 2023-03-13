@@ -68,7 +68,7 @@ Voer de volgende stappen uit om u te abonneren op de gebeurtenissen:
 
 ### Mapmetagegevenstoewijzing configureren {#folder-metadata-mapping}
 
-Metagegevenstoewijzing tussen Workfront-projecten en AEM mappen wordt gedefinieerd in AEM schema&#39;s met metagegevens van mappen. Metagegevensschema&#39;s voor mappen moeten op de gebruikelijke wijze in AEM worden gemaakt en geconfigureerd. Workfront Tools voegt een automatisch aanvullen vervolgkeuzelijst toe aan het tabblad Settings-configuratie van elk formulierveld voor het schema van metagegevens van de map. In dit keuzemenu voor automatisch aanvullen kunt u opgeven aan welk Workfront-veld elke AEM mapeigenschap moet worden toegewezen.
+Metagegevenstoewijzing tussen Workfront-projecten en AEM mappen wordt gedefinieerd in AEM schema&#39;s met metagegevens van mappen. Metagegevensschema&#39;s voor mappen moeten op de gebruikelijke wijze in AEM worden gemaakt en geconfigureerd. Workfront Tools voegt een automatisch aanvullen vervolgkeuzelijst toe aan het tabblad Settings-configuratie van elk formulierveld voor het metagegevensschema van de map. In dit keuzemenu voor automatisch aanvullen kunt u opgeven aan welk Workfront-veld elke AEM mapeigenschap moet worden toegewezen.
 
 Voer de volgende stappen uit om de toewijzingen te configureren:
 

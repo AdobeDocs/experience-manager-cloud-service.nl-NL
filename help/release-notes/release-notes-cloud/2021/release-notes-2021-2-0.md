@@ -23,7 +23,7 @@ De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
 
 ### Beheer van inhoud zonder hoofd {#headless}
 
-* **[GraphQL API voor levering van inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)**: Mogelijkheid om inhoudsfragmenten op te vragen met de syntaxis GraphQL en schema&#39;s die zijn gebaseerd op modellen van inhoudsfragmenten, voor uitvoer in JSON-indeling.
+* **[GraphQL API voor levering van inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)**: Mogelijkheid om inhoudsfragmenten te controleren met GraphQL-syntaxis en schema&#39;s op basis van modellen van inhoudsfragmenten, voor uitvoer in JSON-indeling.
 
 * **[Verificatieondersteuning voor GraphQL API-verzoeken](/help/headless/security/authentication.md)**: Mogelijkheid om GraphQL API-aanvragen te verifiëren met toegangstokens voor server-side API&#39;s.
 
@@ -31,7 +31,7 @@ De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
 
 * **[Een externe SPA bewerken in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Mogelijkheid toegevoegd om een zelfstandige toepassing van één pagina naar een AEM instantie te uploaden, bewerkbare gedeelten van inhoud toe te voegen en het schrijven van inhoud in te schakelen.
 
-* Verbeterde JSON-uitvoer van GraphQL API, inclusief de mogelijkheid om RTF-tekst uit te voeren in JSON-indeling en landinstellingen.
+* Verbeterde JSON-uitvoer van de GraphQL API, inclusief de mogelijkheid om RTF-tekst uit te voeren in JSON-indeling en landinstellingen.
 
 * Ondersteuning voor het nesten van modellen van inhoudsfragmenten om het maken van geneste structuren voor inhoudsfragmenten mogelijk te maken, via specifieke gegevenstypen van Content Fragment Reference of inline verwijzingen van inhoudsfragmenten in tekstvelden met meerdere regels.
 
@@ -95,7 +95,7 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.2.0 is 11 febr
 
 * Het AEM Project Archetype dat in Project en Sandbox creatie wordt gebruikt is bijgewerkt aan versie 25.
 
-* De lijst met afgekeurde API&#39;s die tijdens het scannen van code zijn geïdentificeerd, is verfijnd en bevat nu extra klassen en methoden die zijn afgekeurd in de meest recente Cloud Service SDK-releases.
+* De lijst met afgekeurde API&#39;s die tijdens het scannen van code zijn geïdentificeerd, is verfijnd en bevat nu extra klassen en methoden die zijn afgekeurd in de meest recente SDK-versies van de Cloud Service.
 
 * SonarQube-profiel voor Cloud Manager bijgewerkt om Sonar rule squid:S2142 te verwijderen. Dit is niet langer in conflict met de controles van de Onderbreking van de thread.
 

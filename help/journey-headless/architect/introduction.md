@@ -68,7 +68,7 @@ Dit is meer een ontwikkelingsdetail - maar het zou u kunnen interesseren, enkel 
 
 Nadat u de modellen voor inhoudsfragmenten hebt gemaakt en de auteurs deze hebben gebruikt om de inhoud te genereren, hebben de toepassingen zonder kop toegang tot deze inhoud nodig.
 
-Adobe Experience Manager (AEM) as a Cloud Service, kan tot uw Inhoudsfragmenten selectief toegang hebben gebruikend AEM GraphQL API, om slechts de inhoud terug te keren die nodig is. Met de API kan een ontwikkelaar query&#39;s formuleren die specifieke inhoud selecteren. Dit selectieproces is gebaseerd op *uw* Modellen van inhoudsfragmenten.
+Adobe Experience Manager (AEM) as a Cloud Service, kan tot uw Contentfragmenten selectief toegang hebben gebruikend de AEM GraphQL API, om slechts de inhoud terug te keren die nodig is. Met de API kan een ontwikkelaar query&#39;s formuleren die specifieke inhoud selecteren. Dit selectieproces is gebaseerd op *uw* Modellen van inhoudsfragmenten.
 
 Dit betekent dat uw project zonder kop gestructureerde inhoud voor gebruik in uw toepassingen kan realiseren.
 

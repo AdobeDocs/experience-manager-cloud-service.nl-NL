@@ -73,7 +73,7 @@ Naar Weigeren:
 
 ## Analytics Foundation {#analytics-foundation}
 
-AEM Sites biedt een optionele integratie met de Analytics Foundation, die gebruik maakt van functionaliteit binnen de Adobe Analytics On-demand Service.
+AEM Sites biedt optionele integratie met de Analytics Foundation, die gebruik maakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
 Zie voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Analytics [Adobe Analytics en gegevensbescherming](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 

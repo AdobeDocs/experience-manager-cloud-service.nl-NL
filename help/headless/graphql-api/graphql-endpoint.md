@@ -1,5 +1,5 @@
 ---
-title: GrafiekQL-eindpunten beheren in AEM
+title: GraphQL-eindpunten beheren in AEM
 description: Leer hoe u GraphQL-eindpunten in Adobe Experience Manager as a Cloud Service beheert voor levering van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# GrafiekQL-eindpunten beheren in AEM {#graphql-aem-endpoint}
+# GraphQL-eindpunten beheren in AEM {#graphql-aem-endpoint}
 
-Het eindpunt is de weg die wordt gebruikt om tot GraphQL voor AEM toegang te hebben. Met dit pad kunt u (of uw app) het volgende doen:
+Het eindpunt is het pad dat wordt gebruikt om toegang te krijgen tot GraphQL voor AEM. Met dit pad kunt u (of uw app) het volgende doen:
 
 * toegang tot het GraphQL-schema;
-* verzend uw vragen GraphQL,
-* ontvangt de reacties (op uw vragen GraphQL).
+* je GraphQL query&#39;s sturen,
+* de antwoorden ontvangen (op je GraphQL-vragen).
 
 Er zijn twee soorten eindpunten in AEM:
 
@@ -37,7 +37,7 @@ Er zijn twee soorten eindpunten in AEM:
 >
 >De inhoudauteur zou dit scenario moeten controleren; Het kan bijvoorbeeld handig zijn om gedeelde modellen van inhoudsfragmenten onder de configuratie Algemene sites te plaatsen.
 
-De bewaarplaatspad van GraphQL voor AEM globale eindpunt is:
+Het pad naar de opslagplaats van de GraphQL voor AEM globale eindpunt is:
 
 `/content/cq:graphql/global/endpoint`
 
@@ -47,12 +47,12 @@ Voor welke toepassing uw toepassing het volgende pad in de aanvraag-URL kan gebr
 
 Om een eindpunt voor GraphQL voor AEM toe te laten moet u:
 
-* [GrafiekQL-eindpunt inschakelen](#enabling-graphql-endpoint)
-* [Uw GraphQL-eindpunt publiceren](#publishing-graphql-endpoint)
+* [GraphQL Endpoint inschakelen](#enabling-graphql-endpoint)
+* [GraphQL-eindpunt publiceren](#publishing-graphql-endpoint)
 
-## GrafiekQL-eindpunt inschakelen {#enabling-graphql-endpoint}
+## GraphQL Endpoint inschakelen {#enabling-graphql-endpoint}
 
-Om een Eindpunt te toelaten GraphQL moet u eerst een aangewezen configuratie hebben. Zie [Inhoudsfragmenten - Configuratiebrowser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
+Om een Eindpunt van GraphQL toe te laten moet u eerst een aangewezen configuratie hebben. Zie [Inhoudsfragmenten - Configuratiebrowser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
 
 >[!CAUTION]
 >
@@ -64,13 +64,13 @@ Om het overeenkomstige eindpunt toe te laten:
 1. Selecteer **Maken**.
 1. De **Nieuw GraphQL-eindpunt maken** wordt geopend. Hier kunt u opgeven:
    * **Naam**: naam van het eindpunt; U kunt elke gewenste tekst invoeren.
-   * **GrafiekQL-schema gebruiken dat is opgegeven door**: Gebruik de vervolgkeuzelijst om de gewenste site of het vereiste project te selecteren.
+   * **GraphQL-schema gebruiken dat wordt geleverd door**: Gebruik de vervolgkeuzelijst om de gewenste site of het vereiste project te selecteren.
 
    >[!NOTE]
    >
    >De volgende waarschuwing wordt weergegeven in het dialoogvenster:
    >
-   >* *De eindpunten van GraphQL kunnen gegevensveiligheid en prestatieskwesties introduceren als niet zorgvuldig beheerd. Gelieve te verzekeren om aangewezen toestemmingen te plaatsen na het creëren van een eindpunt.*
+   >* *GraphQL-eindpunten kunnen problemen met gegevensbeveiliging en -prestaties veroorzaken als deze niet zorgvuldig worden beheerd. Gelieve te verzekeren om aangewezen toestemmingen te plaatsen na het creëren van een eindpunt.*
 
 
 1. Bevestigen met **Maken**.
@@ -78,11 +78,11 @@ Om het overeenkomstige eindpunt toe te laten:
 
    >[!CAUTION]
    >
-   >Het eindpunt is toegankelijk voor iedereen. Dit kan - vooral bij publiceer instanties - een veiligheidszorg veroorzaken, aangezien de vragen GraphQL een zware lading op de server kunnen opleggen.
+   >Het eindpunt is toegankelijk voor iedereen. Dit kan - vooral bij publicatieinstanties - een veiligheidszorg veroorzaken, aangezien de vragen van GraphQL een zware lading op de server kunnen opleggen.
    >
    >U kunt opstelling ACLs, aangewezen aan uw gebruiksgeval, op het eindpunt.
 
-## Het Eindpunt GraphQL publiceren {#publishing-graphql-endpoint}
+## GraphQL Endpoint publiceren {#publishing-graphql-endpoint}
 
 Selecteer het nieuwe eindpunt en **Publiceren** om het volledig beschikbaar te maken in alle milieu&#39;s.
 
@@ -90,6 +90,6 @@ Selecteer het nieuwe eindpunt en **Publiceren** om het volledig beschikbaar te m
 >
 >Het eindpunt is toegankelijk voor iedereen.
 >
->Bij het publiceren van instanties kan dit een veiligheidszorg veroorzaken, aangezien de vragen GraphQL een zware lading op de server kunnen opleggen.
+>Bij het publiceren van instanties kan dit een veiligheidszorg veroorzaken, aangezien de vragen van GraphQL een zware lading op de server kunnen opleggen.
 >
 >U moet instellen [ACLs aangewezen aan uw gebruiksgeval](/help/headless/security/permissions.md) op het eindpunt.

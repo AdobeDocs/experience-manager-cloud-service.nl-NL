@@ -4,7 +4,7 @@ description: Begrijp hoe u met behulp van variaties inhoud voor het fragment kun
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
+source-git-commit: 0361ae6e7de7b92f8c3ebbf531e9382df44c246f
 workflow-type: tm+mt
 source-wordcount: '2310'
 ht-degree: 11%

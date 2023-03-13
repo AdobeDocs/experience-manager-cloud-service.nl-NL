@@ -2,7 +2,7 @@
 title: Sites ontwikkelen met behulp van de voorste pijplijn
 description: Met de front-end pijpleiding wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijk sneller worden. In dit document worden enkele specifieke aspecten beschreven van het constructieproces aan de voorzijde die moeten worden vermeld.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
+source-git-commit: a6b228023d7bd2a40e4db3a1d2c3900a5c24031c
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 0%

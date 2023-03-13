@@ -1,5 +1,5 @@
 ---
-title: Blijvende query's voor GraphQL
+title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# Blijvende query&#39;s voor GraphQL {#persisted-queries-caching}
+# Blijvende GraphQL-query&#39;s {#persisted-queries-caching}
 
-De gepersisteerde vragen zijn vragen GraphQL die op de as a Cloud Service server van Adobe Experience Manager (AEM) worden gecreeerd en worden opgeslagen. Ze kunnen worden aangevraagd met een GET-aanvraag door clienttoepassingen. De reactie van een verzoek van de GET kan bij de verzender en lagen CDN in het voorgeheugen ondergebracht worden, die uiteindelijk de prestaties van de het verzoeken cliënttoepassing verbeteren. Dit verschilt van standaardvragen GraphQL, die gebruikend POST verzoeken worden uitgevoerd waar de reactie niet gemakkelijk in het voorgeheugen kan worden opgeslagen.
+Blijvende query&#39;s zijn GraphQL query&#39;s die worden gemaakt en opgeslagen op de Adobe Experience Manager (AEM) as a Cloud Service server. Ze kunnen worden aangevraagd met een GET-aanvraag door clienttoepassingen. De reactie van een verzoek van de GET kan bij de verzender en lagen CDN in het voorgeheugen ondergebracht worden, die uiteindelijk de prestaties van de het verzoeken cliënttoepassing verbeteren. Dit verschilt van standaard GraphQL query&#39;s, die worden uitgevoerd met behulp van POST-aanvragen waarbij de reactie niet gemakkelijk in cache kan worden geplaatst.
 
 >[!NOTE]
 >
->Blijvende query&#39;s worden aanbevolen. Zie [Best practices voor GraphQL-query (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) voor details, en de verwante configuratie van de Verzender.
+>Blijvende query&#39;s worden aanbevolen. Zie [Aanbevolen werkwijzen voor GraphQL-query (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) voor details, en de verwante configuratie van de Verzender.
 
-De [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is beschikbaar in AEM voor u om, uw vragen te ontwikkelen te testen en voort te zetten GraphQL, alvorens [overbrengen naar uw productieomgeving](#transfer-persisted-query-production). Voor gevallen die aanpassing vereisen (bijvoorbeeld wanneer [cache aanpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) u kunt de API gebruiken; zie het curvevoorbeeld in [Hoe te om een vraag te handhaven GraphQL](#how-to-persist-query).
+De [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is beschikbaar in AEM voor u om uw GraphQL-query&#39;s te ontwikkelen, te testen en voort te zetten voordat [overbrengen naar uw productieomgeving](#transfer-persisted-query-production). Voor gevallen die aanpassing vereisen (bijvoorbeeld wanneer [cache aanpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) u kunt de API gebruiken; zie het curvevoorbeeld in [Een GraphQL-query laten doorgaan](#how-to-persist-query).
 
 ## Blijvende query&#39;s en eindpunten {#persisted-queries-and-endpoints}
 
@@ -32,7 +32,7 @@ Bijvoorbeeld, om een voortgeduurde vraag specifiek voor de configuratie van Plaa
 >
 >Zie [Functionaliteit van inhoudsfragment inschakelen in configuratievenster](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) voor meer informatie .
 >
->De **GrafiekQL Blijvende query&#39;s** moet worden toegelaten, voor de aangewezen configuratie van Plaatsen.
+>De **Aangehouden GraphQL-query&#39;s** moet worden toegelaten, voor de aangewezen configuratie van Plaatsen.
 
 Als er bijvoorbeeld een bepaalde query wordt uitgevoerd, `my-query`, die een model gebruikt `my-model` vanuit de configuratie Sites `my-conf`:
 
@@ -47,7 +47,7 @@ Als er bijvoorbeeld een bepaalde query wordt uitgevoerd, `my-query`, die een mod
 >
 >Ze gebruiken gewoon hetzelfde model, maar via verschillende eindpunten.
 
-## Hoe te om een vraag te handhaven GraphQL {#how-to-persist-query}
+## Een GraphQL-query laten doorgaan {#how-to-persist-query}
 
 Aanbevolen wordt om query&#39;s in een AEM ontwerpomgeving in eerste instantie voort te zetten en vervolgens [de query overdragen](#transfer-persisted-query-production) naar uw productie AEM publicatieomgeving, voor gebruik door toepassingen.
 
@@ -272,10 +272,10 @@ Deze waarde is ingesteld op:
 
 Als u TTL voor uw vraag wilt veranderen GraphLQ, dan moet de vraag of zijn:
 
-* aanhouden na het beheren van de [HTTP Cache headers - van de GraphQL IDE](#http-cache-headers)
+* aanhouden na het beheren van de [HTTP Cache headers - van GraphQL IDE](#http-cache-headers)
 * blijft bestaan met de [API-methode](#cache-api).
 
-### De kopballen van het Geheime voorgeheugen van HTTP in GraphQL beheren  {#http-cache-headers-graphql}
+### HTTP-cachekoppen beheren in GraphQL  {#http-cache-headers-graphql}
 
 GraphiQL IDE - zie [Blijvende query&#39;s opslaan](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
@@ -294,7 +294,7 @@ curl -X PUT \
 '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
 ```
 
-De `cache-control` kan worden ingesteld tijdens het maken (PUT) of later (bijvoorbeeld via een aanvraag voor een POST). Het cache-control is optioneel wanneer u de aanhoudend query maakt, omdat AEM de standaardwaarde kan opgeven. Zie [Hoe te om een vraag te handhaven GraphQL](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), bijvoorbeeld om een vraag voort te zetten gebruikend krullen.
+De `cache-control` kan worden ingesteld tijdens het maken (PUT) of later (bijvoorbeeld via een aanvraag voor een POST). Het cache-control is optioneel wanneer u de aanhoudend query maakt, omdat AEM de standaardwaarde kan opgeven. Zie [Een GraphQL-query laten doorgaan](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), bijvoorbeeld om een vraag voort te zetten gebruikend krullen.
 
 ## De URL van de query coderen voor gebruik door een app {#encoding-query-url}
 

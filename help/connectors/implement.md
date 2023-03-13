@@ -2,7 +2,7 @@
 title: Een AEM-connector implementeren
 description: Een AEM-connector implementeren
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 7%

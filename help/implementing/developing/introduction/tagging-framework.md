@@ -2,7 +2,7 @@
 title: Kader voor tags AEM
 description: Taginhoud en gebruik de AEM Taginginfrastructuur om deze te categoriseren en te ordenen.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 0%
@@ -91,7 +91,7 @@ In de volgende tabel ziet u een voorbeeld `TagID`s, hun elementen en hoe `TagID`
 | `dam:fruit/apple/braeburn` | `dam` | `fruit/apple/braeburn` | `fruit`,`apple` | `braeburn` | `content/cq:tags/dam/fruit/apple/braeburn` |
 | `color/red` | `default` | `color/red` | `color` | `red` | `/content/cq:tags/default/color/red` |
 | `sky` | `default` | `sky` | (none) | `sky` | `/content/cq:tags/default/sky` |
-| `dam:` | `dam` | (geen) | (geen) | (geen) | `/content/cq:tags/dam` |
+| `dam:` | `dam` | (none) | (none) | (none) | `/content/cq:tags/dam` |
 | `content/cq:tags/category/car` | `category` | `car` | `car` | `car` | `content/cq:tags/category/car` |
 
 ### Localisatie van tagtitel {#localization-of-tag-title}

@@ -23,11 +23,11 @@ De volgende release (2021.2.0) vindt plaats op 25 februari 2021.
 
 * **[HTTP-API voor inhoudsfragment](/help/assets/content-fragments/assets-api-content-fragments.md)**: Voeg de mogelijkheid toe om variaties van inhoudsfragmenten toe te voegen/bij te werken en te verwijderen met de HTTP-API.
 
-* **[GraphQL API voor levering van inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)**: Mogelijkheid om inhoudsfragmenten op te vragen met de syntaxis GraphQL en schema&#39;s die zijn gebaseerd op modellen van inhoudsfragmenten, voor uitvoer in JSON-indeling.
+* **[GraphQL API voor levering van inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)**: Mogelijkheid om inhoudsfragmenten te controleren met GraphQL-syntaxis en schema&#39;s op basis van modellen van inhoudsfragmenten, voor uitvoer in JSON-indeling.
 
 * **[Verificatieondersteuning voor GraphQL API-verzoeken](/help/headless/security/authentication.md)**: Mogelijkheid om GraphQL API-aanvragen te verifiëren met toegangstokens voor server-side API&#39;s.
 
-* Verbeterde JSON-uitvoer van GraphQL API, inclusief de mogelijkheid om RTF-tekst uit te voeren in JSON-indeling en landinstellingen.
+* Verbeterde JSON-uitvoer van de GraphQL API, inclusief de mogelijkheid om RTF-tekst uit te voeren in JSON-indeling en landinstellingen.
 
 * Ondersteuning voor het nesten van modellen van inhoudsfragmenten om het maken van geneste structuren voor inhoudsfragmenten mogelijk te maken, via specifieke gegevenstypen van Content Fragment Reference of inline verwijzingen van inhoudsfragmenten in tekstvelden met meerdere regels.
 

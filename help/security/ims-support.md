@@ -2,7 +2,7 @@
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 description: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 90%
@@ -92,7 +92,7 @@ Met deze tool kan de systeembeheerder gebruikersgroepen in de directory van de k
 
 Voor het instellen van User Sync moet de organisatie een set referenties maken op dezelfde manier als voor het gebruik van de [User Management-API](https://www.adobe.io/apis/experienceplatform/umapi-new.html).
 
-![Gereedschap Gebruikerssynchronisatie](/help/security/assets/ims5.png)
+![User Sync Tool](/help/security/assets/ims5.png)
 
 De User Sync Tool wordt [op deze locatie](https://github.com/adobe-apiplatform/user-sync.py/releases/latest) gedistribueerd via de Adobe Github-repository.
 

@@ -2,7 +2,7 @@
 title: AEM-projectrepositorystructuurpakket
 description: Voor Adobe Experience Manager as a Cloud Service Maven-projecten is een definitie vereist van subpakketten voor de structuur van de opslagplaats met als enig doel de wortels van de JCR-opslagplaats te bepalen waarin de subpakketten voor de code van het project worden geïmplementeerd.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 9%

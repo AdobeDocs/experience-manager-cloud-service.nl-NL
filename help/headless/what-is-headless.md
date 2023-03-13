@@ -2,7 +2,7 @@
 title: Wat is een headless CMS?
 description: Meer informatie over Headless CMS. Hoe werken ze? Wat zijn de alternatieven en verschillen? Waarom zou u een Headless CMS willen gebruiken?
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
-source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
+source-git-commit: 3306bde7b94b9f863b57d36542e8822df38c79ba
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Een CMS zonder kop kan een of meerdere manieren bieden om inhoud toegankelijk te
 
 Hoewel een REST API vaak een eenvoudigere manier lijkt om inhoud aan te vragen (bijvoorbeeld door JSON te bieden voor alle inhoud die aan een criterium voldoet), leveren deze doorgaans te veel inhoud aan een clienttoepassing. Dit kan ertoe leiden dat de client de inhoud moet parseren en uitfilteren die werkelijk nodig is voor rendering.
 
-GrafiekQL door contrast is een gerichter mechanisme om cliënttoepassingen toe te staan om voor precies de inhoud te vragen die nodig is om een ervaring terug te geven.
+GraphQL daarentegen is een meer gericht mechanisme waarmee clienttoepassingen kunnen zoeken naar exact de inhoud die nodig is om een ervaring te renderen.
 
 ## CMS volledig stapelen {#fullstack-cms}
 

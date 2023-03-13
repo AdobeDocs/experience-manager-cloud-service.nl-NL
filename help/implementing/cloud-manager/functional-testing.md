@@ -2,7 +2,7 @@
 title: Functionele tests
 description: Leer over de drie verschillende types van functionele tests die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 73a73f2f6c56386f3058d89e66b036e8f5e5a17b
+source-git-commit: 1e75a9a8ba4eff030d079d4b7adf7fc8588b8cc1
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Nadat u een nieuwe gegevensopslagruimte voor code hebt gemaakt in Cloud Manager,
 
 >[!NOTE]
 >
->Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de meest recente versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
 Wanneer u de inhoud van de `it.tests` kunt u de map gebruiken als basis voor uw eigen tests en vervolgens:
 

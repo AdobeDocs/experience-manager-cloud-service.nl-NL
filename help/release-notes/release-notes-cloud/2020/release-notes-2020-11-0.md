@@ -79,7 +79,7 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
 
 ### Opgeloste problemen {#bug-fixes-commerce}
 
-* De de cliëntconfig van GraphQL werd niet correct gelezen wanneer config niet direct in het Verdelen CA config wordt gespecificeerd, maar in één van de ouder vormt. Dit is opgelost.
+* GraphQL client config is niet goed gelezen wanneer de config niet rechtstreeks in de Sling CA config is opgegeven, maar in een van de bovenliggende configuraties. Dit is opgelost.
 
 ## Cloud Manager {#cloud-manager}
 

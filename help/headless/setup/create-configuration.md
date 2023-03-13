@@ -33,7 +33,7 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
       * Deze kan zo nodig worden aangepast.
 1. Controleer de volgende opties:
    * **Modellen van contentfragmenten**
-   * **GrafiekQL Blijvende query&#39;s**
+   * **Aangehouden GraphQL-query&#39;s**
 
    ![Configuratie maken](../assets/create-configuration.png)
 
@@ -43,7 +43,7 @@ Indien nodig kunt u meerdere configuraties maken. Configuraties kunnen ook worde
 
 >[!NOTE]
 >
->Configuratieopties naast **Modellen van inhoudsfragmenten** en **GrafiekQL Blijvende query&#39;s** kan nodig zijn, afhankelijk van uw implementatievereisten.
+>Configuratieopties naast **Modellen van inhoudsfragmenten** en **Aangehouden GraphQL-query&#39;s** kan nodig zijn, afhankelijk van uw implementatievereisten.
 
 ## Volgende stappen {#next-steps}
 

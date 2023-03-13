@@ -34,7 +34,7 @@ Toepassingen op één pagina (SPA) zijn vaak de bestemming voor inhoud die zonde
 Stel dat u een bestaande webshop hebt voor uw bedrijf als SPA. Hierin staan al uw productdetails en afbeeldingen. Vervolgens introduceert u AEM om uw marketingactiviteiten, zoals promotiesites, blogs en inhoud van campagnes, kracht bij te zetten. Hoe integreer je deze twee? AEM maakt een spectrum van opties mogelijk:
 
 * **De systemen onafhankelijk laten werken.**
-* **Bied de webshop beperkte inhoud van AEM via GraphQL.** Inhoud kan door auteurs in AEM worden gemaakt, maar kan alleen via de SPA van de webshop worden bekeken.
+* **Bied de webshop met beperkte inhoud van AEM via GraphQL.** Inhoud kan door auteurs in AEM worden gemaakt, maar kan alleen via de SPA van de webshop worden bekeken.
 * **Sluit de SPA van de webshop in AEM in.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de webshop worden weergegeven, maar niet worden gemanipuleerd.
 * **Sluit de SPA van de webshop in AEM in en schakel bewerkbare punten in.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de context van de webshop worden weergegeven. De auteurs hebben slechts beperkte mogelijkheden om de inhoud van de webshop SPA binnen AEM te manipuleren.
 * **Sluit de webwinkel in AEM in en schakel volledige zones in voor bewerking.** Inhoud kan door auteurs in AEM worden gemaakt en in AEM in de context van de webshop worden weergegeven. De auteurs hebben slechts beperkte mogelijkheden om de inhoud van de webshop SPA binnen AEM te manipuleren.

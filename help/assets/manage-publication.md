@@ -103,8 +103,8 @@ In de volgende tabel wordt uitgelegd hoe de publicatie plaatsvindt afhankelijk v
 | [!UICONTROL Destination] | [!UICONTROL Dynamic Media Publish mode] | [!UICONTROL Publish Target] | Toegestane inhoud |
 | --- | --- | --- | --- |
 | Publicatie | Selectieve publicatie | `AEM` | Middelen en mappen |
-| Publicatie | Meteen | `AEM` en `Dynamic Media` | Middelen en mappen |
-| Publicatie | Bij activering | `AEM` en `Dynamic Media` | Middelen en mappen |
+| Publicatie | Meteen | `AEM` and `Dynamic Media` | Middelen en mappen |
+| Publicatie | Bij activering | `AEM` and `Dynamic Media` | Middelen en mappen |
 |  Dynamic Media  | Selectieve publicatie | `Dynamic Media` | Assets |
 |  Dynamic Media  | Meteen | `None` | Kan de elementen niet publiceren |
 |  Dynamic Media  | Bij activering | `None` | Kan de elementen niet publiceren |

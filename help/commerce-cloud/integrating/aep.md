@@ -146,7 +146,7 @@ Ga naar de `ui.frontend` en de `webpack.common.js` bestand om de volgende regel 
 
 ### Apollo-client configureren
 
-De [Apollo-client](https://www.apollographql.com/docs/react/) wordt gebruikt voor het beheer van lokale en externe gegevens met GraphQL. Het slaat ook de resultaten van vragen GraphQL in een lokaal, genormaliseerd, in-geheugengeheime voorgeheugen op.
+De [Apollo-client](https://www.apollographql.com/docs/react/) wordt gebruikt voor het beheer van lokale en externe gegevens met GraphQL. De resultaten van GraphQL-query&#39;s worden ook opgeslagen in een lokale, genormaliseerde cache in het geheugen.
 
 Voor [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) om effectief te werken hebt u een `possibleTypes.js` bestand. Als u dit bestand wilt genereren, raadpleegt u [Mogelijke typen automatisch genereren](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Zie ook de [PWA Studio-referentieimplementatie](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) en een voorbeeld van een [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) bestand.
 

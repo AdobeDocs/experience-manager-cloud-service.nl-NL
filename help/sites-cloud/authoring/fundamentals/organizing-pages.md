@@ -2,7 +2,7 @@
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 5%
@@ -102,7 +102,7 @@ De minimaal toegestane tekens zijn:
 * `_` (onderstrepingsteken)
 * `-` (afbreekstreepje/minteken)
 
-Alle tekens die zijn toegestaan, kunt u vinden in [de naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md).
+Alle tekens die zijn toegestaan, zijn beschikbaar in [de naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md).
 
 >[!NOTE]
 >

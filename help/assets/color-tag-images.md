@@ -25,11 +25,11 @@ In de volgende afbeelding ziet u de volgorde van taken die u uitvoert voor het c
 
 | Bestandsindeling | Extensie | MIME-type | Invoerkleurruimte | Maximale ondersteunde bronbestandsgrootte | Maximaal ondersteunde resolutie voor bestandsgrootte |
 |---|---|---|---|---|---|
-| JPEG | .jpg, .jpeg | image/jpeg | sRGB | 15 GB | 20000px X, 20000px |
-| PNG | .png | image/png | sRGB | 15 GB | 20000px X, 20000px |
+| JPEG | .jpg, .jpeg | image/jpeg | sRGB | 15GB | 20000px X, 20000px |
+| PNG | .png | image/png | sRGB | 15GB | 20000px X, 20000px |
 | TIFF | .tif, .tiff | image/tiff | sRGB | 4 GB (beperkt door indelingsspecificaties) | 20000px X, 20000px |
 | PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 GB (beperkt door indelingsspecificaties) | 20000px X, 20000px |
-| GIF | .gif | image/gif | sRGB | 15 GB | 20000px X, 20000px |
+| GIF | .gif | image/gif | sRGB | 15GB | 20000px X, 20000px |
 | BMP | .bmp | image/bmp | sRGB | 4 GB (beperkt door indelingsspecificaties) | 20000px X, 20000px |
 
 ## Kleurtageigenschappen beheren {#manage-color-tagging-properties}

@@ -2,7 +2,7 @@
 title: De Gids van de migratie aan Experience Manager as a Cloud Service voor Partners
 description: De Gids van de migratie aan Experience Manager as a Cloud Service voor Partners
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
 workflow-type: tm+mt
 source-wordcount: '2122'
 ht-degree: 6%
@@ -187,7 +187,7 @@ In de fase na Go-Live moet u ervoor zorgen dat tijdelijke bestanden worden opges
 
 >[!TIP]
 > Er zijn hulpprogramma&#39;s beschikbaar voor het oplossen van problemen AEM as a Cloud Service omgeving
->1. [Ontwerpconsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en)
+>1. [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en)
 >2. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=en)
 >3. [Tool voor beheren van logbestanden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=en)
 

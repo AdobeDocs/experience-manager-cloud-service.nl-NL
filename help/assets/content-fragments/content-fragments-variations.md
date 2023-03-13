@@ -2,7 +2,7 @@
 title: Variaties - Fragmentinhoud ontwerpen (elementen - Inhoudsfragmenten)
 description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler kunnen maken door u toe te staan om inhoud voor het fragment te ontwerpen en dan variaties van die inhoud volgens doel tot stand te brengen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
 workflow-type: tm+mt
 source-wordcount: '2288'
 ht-degree: 11%

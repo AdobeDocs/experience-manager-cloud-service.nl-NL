@@ -2,7 +2,7 @@
 title: Meldingen
 description: Leer hoe te om informatie over pijpleidingsplaatsingen te ontvangen gebruikend het het berichtsysteem van Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
+source-git-commit: 6f390df560e9eeb76a8c4f1904e500aa5ed2bd65
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%

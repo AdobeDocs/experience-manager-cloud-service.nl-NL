@@ -4,7 +4,7 @@ description: Gebruik de functie Structuur van de Content Fragment Editor in AEM 
 feature: Content Fragments
 role: User
 exl-id: 7e55d7b7-3a82-4665-b4aa-9b47094d91c9
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%

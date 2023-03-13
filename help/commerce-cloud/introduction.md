@@ -3,7 +3,7 @@ title: Inleiding en overzicht
 description: Inleiding en overzicht van inhoud en handel. Het Kader van de Integratie van de Handel van de Experience Manager (CIF) wordt geadviseerd Adobe om de handelsdiensten van Adobe Commerce en andere derde handelsoplossingen met de Experience Cloud te integreren en uit te breiden.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%

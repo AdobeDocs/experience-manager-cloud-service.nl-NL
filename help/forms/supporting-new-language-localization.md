@@ -3,7 +3,7 @@ title: Ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief for
 seo-title: Learn to add support for new locales to your adaptive forms
 description: Met AEM Forms kunt u nieuwe landinstellingen toevoegen voor het lokaliseren van adaptieve formulieren. Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaanse (ko-KR) landinstellingen.
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 659484f80d1f31794512af5e4d190b04a9f3e4e8
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%

@@ -1,7 +1,7 @@
 ---
 title: Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters
 description: Leer hoe u de inhoudsfragmenten voor geoptimaliseerde GraphQL-filters in Adobe Experience Manager as a Cloud Service kunt bijwerken voor levering van inhoud zonder kop.
-source-git-commit: 7c6dcf4548972740803d64e21a74e885caf8b487
+source-git-commit: 44f39df675ff7b3bd40d76e1ebb0e0f17f1e128b
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 5%

@@ -56,7 +56,7 @@ De Hulpprogramma&#39;s van de Demo van de zelfbediening verstrekken een aantal h
 * **Cache primaire auteur** - Hiermee worden verschillende bronnen opgehaald in het Adobe Experience Manager-exemplaar, waardoor de ophaaltijden worden verkort. Het kan enkele seconden duren.
 * **Android-toepassing** - Gereedschappen voor het installeren en starten van de Android-demonstratieapp. Een site maken op basis van de **WKND App met één pagina** om deze pagina te vullen. Gebruiken vanaf een Android-apparaat, emulator of Bluestacks.
 * **Gebruikersvoorkeuren** - Pop-updialoogvensters met zelfstudies uitschakelen.
-* **GrafiekQL instellen** - Zet snel het globale eindpunt GraphQL op.
+* **GraphQL instellen** - Het algemene GraphQL-eindpunt snel instellen.
 
 ## Demosites en sjablonen verwijderen {#deleting}
 

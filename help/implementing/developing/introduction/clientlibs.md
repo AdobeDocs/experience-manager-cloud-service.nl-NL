@@ -2,7 +2,7 @@
 title: Client-Side bibliotheken gebruiken op AEM as a Cloud Service
 description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientlibs) in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden verzonden
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
+source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 0%

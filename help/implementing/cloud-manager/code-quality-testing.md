@@ -2,7 +2,7 @@
 title: Testen van de codekwaliteit
 description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ae586cc2f576aa4aee4cc611b5184e2bbda6696c
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 1%

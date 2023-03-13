@@ -74,7 +74,7 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
   <tr>
    <td><p>Label</p> </td>
    <td><p>Dimension en positie &gt; breedte</p> </td>
-   <td><p>100 px</p> </td>
+   <td><p>100px</p> </td>
    <td><p>Hiermee stelt u de breedte in op 100 px voor het label</p> </td>
   </tr>
   <tr>

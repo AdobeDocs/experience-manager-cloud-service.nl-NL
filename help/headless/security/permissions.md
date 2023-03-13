@@ -73,9 +73,9 @@ Als u wenst om een groep tot stand te brengen die de Modellen van het Fragment v
 
 ## Servicemachtigingen publiceren
 
-De publicatieservice wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans wat gebruikers van GraphQL API gebruiken. Inhoud wordt na bewerking en goedkeuring in de service Auteur gepubliceerd naar de service Publiceren. De toepassing zonder kop gebruikt vervolgens de goedgekeurde inhoud van de service Publiceren via GraphQL API&#39;s.
+De publicatieservice wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de interactie tussen GraphQL API-gebruikers en andere gebruikers. Inhoud wordt na bewerking en goedkeuring in de service Auteur gepubliceerd naar de service Publiceren. De toepassing zonder koppen gebruikt vervolgens de goedgekeurde inhoud van de publicatieservice via GraphQL API&#39;s.
 
-Standaard is inhoud die via de eindpunten van GraphQL van de AEM-publicatieservice wordt weergegeven, toegankelijk voor iedereen, inclusief niet-geverifieerde gebruikers.
+Standaard is inhoud die via de GraphQL-eindpunten van de AEM-publicatieservice wordt weergegeven, toegankelijk voor iedereen, inclusief niet-geverifieerde gebruikers.
 
 ### Machtigingen voor inhoud
 
@@ -86,7 +86,7 @@ CUG&#39;s met middelen werken op:
 * Eerst, ontken al toegang tot de omslag en subfolders
 * Dan, die leestoegang tot de omslag en subfolders voor alle AEM Gebruikersgroepen verlenen die in de lijst van KUGs worden vermeld
 
-CUG&#39;s kunnen worden ingesteld op middelenmappen die inhoud bevatten die via GraphQL API&#39;s beschikbaar wordt gemaakt. De toegang tot de omslagen van activa op publiceren AEM zou via Gebruikersgroepen, eerder dan gebruiker direct moeten worden gecontroleerd. Maak (of hergebruik) een AEM gebruikersgroep die toegang verleent tot mappen met elementen die inhoud bevatten die door GraphQL-API&#39;s beschikbaar is gemaakt.
+CUG&#39;s kunnen worden ingesteld in middelenmappen die inhoud bevatten die via GraphQL API&#39;s beschikbaar wordt gemaakt. De toegang tot de omslagen van activa op publiceren AEM zou via Gebruikersgroepen, eerder dan gebruiker direct moeten worden gecontroleerd. Maak (of hergebruik) een AEM gebruikersgroep die toegang verleent tot mappen met elementen die inhoud bevatten die door GraphQL API&#39;s beschikbaar is gemaakt.
 
 #### Het verificatieschema selecteren{#publish-permissions-users}
 
@@ -95,6 +95,6 @@ De [AEM headless SDK](https://github.com/adobe/aem-headless-client-js#create-aem
 * [Op token gebaseerde verificatie](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) het gebruiken van de dienstgeloofsbrieven verbindend aan één enkele technische rekening.
 * Standaardverificatie met AEM gebruikers.
 
-### Toegang krijgen tot de API GraphQL
+### De GraphQL API openen
 
-HTTP-aanvragen die de [juiste verificatiereferenties](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) op de eindpunten van de GraphQL API van de AEM-publicatieservice bevat inhoud die de referenties mogen lezen en die anoniem toegankelijk is. Andere gebruikers van de GraphQL API kunnen de inhoud in de met CUG&#39;s beveiligde mappen niet lezen.
+HTTP-aanvragen die de [juiste verificatiereferenties](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) aan de GraphQL API-eindpunten van de AEM Publish-service bevat inhoud die de aanmeldingsgegevens mogen lezen en die anoniem toegankelijk is. Andere gebruikers van de GraphQL API kunnen de inhoud in de door CUG&#39;s beveiligde mappen niet lezen.

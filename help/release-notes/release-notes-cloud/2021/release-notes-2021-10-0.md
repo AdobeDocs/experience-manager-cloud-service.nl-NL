@@ -77,7 +77,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* De toe:voegen-on CIF steunt recentste Handel v2.4.3 met nieuwe GraphQL APIs en schema&#39;s
+* De invoegtoepassing CIF ondersteunt de nieuwste versie Commerce 2.4.3 met nieuwe GraphQL API&#39;s en schema&#39;s
 
 * Auteurs kunnen koppelingen naar product- en cataloguspagina&#39;s in tekstvelden toevoegen met de RTE (RTE). Er is een CIF-pictogram toegevoegd aan de RTE-werkbalk waarmee de kiezers snel het product of de categorie kunnen zoeken en selecteren zonder de context te verlaten.
 

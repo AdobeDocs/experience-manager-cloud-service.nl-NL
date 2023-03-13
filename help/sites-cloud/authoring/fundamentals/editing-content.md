@@ -2,7 +2,7 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
+source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
 workflow-type: tm+mt
 source-wordcount: '3019'
 ht-degree: 6%
@@ -541,5 +541,5 @@ U kunt de volgende typen paginawijzigingen ongedaan maken en opnieuw uitvoeren:
 >* Er zijn speciale machtigingen vereist voor het ongedaan maken en opnieuw uitvoeren van wijzigingen in bestanden en afbeeldingen.
 >* De geschiedenis van wijzigingen in bestanden en afbeeldingen duurt minimaal tien uur. Na deze tijd is het ongedaan maken van de wijzigingen echter niet gegarandeerd. De beheerder kan de standaardtijd van tien uur wijzigen.
 >* Uw systeembeheerder kan diverse aspecten van Undo/Opnieuw eigenschappen volgens de vereisten voor uw instantie vormen.
+   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
 
-<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

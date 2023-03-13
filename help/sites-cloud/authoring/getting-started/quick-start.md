@@ -2,7 +2,7 @@
 title: Handleiding Snel aan de slag met de authoring van pagina's
 description: Een snelle gids op hoog niveau waarmee u pagina-inhoud kunt gaan ontwerpen
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
+source-git-commit: 07702fbebc768ee877d68219eff5551b09c7ff3e
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 4%

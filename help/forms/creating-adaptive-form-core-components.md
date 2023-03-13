@@ -4,7 +4,7 @@ description: Leer hoe u een adaptief formulier maakt met [!DNL Experience Manage
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
+source-git-commit: ae208e9ac35c3c464d9beeaa3bc2bddc0ecf52bb
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 0%

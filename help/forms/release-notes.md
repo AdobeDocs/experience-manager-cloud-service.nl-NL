@@ -27,7 +27,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service ontvangt voortduren
 >
 >Voor versienota&#39;s van alle andere AEM as a Cloud Service versiecomponenten, zie [Opmerkingen bij de huidige release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
-## 2021 10,0 {#sep-2021-10-0}
+## 2021.10.0 {#sep-2021-10-0}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service ontvangt voortduren
 
 U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het bètaprogramma.
 
-## 2021,9,0 {#sep-2021-09-0}
+## 2021.9.0 {#sep-2021-09-0}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-sep-2021}
 
@@ -61,7 +61,6 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 ### Bètafuncties van [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
 - **Unified Storage-connector:** Gebruik Unified Storage Connector om procesgegevens in door de klant beheerde opslagruimten extern te maken. Bijvoorbeeld, kunt u in-proces AEM de gegevens van Werkstromen (AEM gegevens van de Variabelen van het Werkschema) opslaan die Gevoelige Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats bevatten.
-
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](aem-forms-cloud-service-communications.md) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus. Met de API&#39;s kunt u toepassingen maken waarmee u:
@@ -95,7 +94,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
   -->
 
-## 2021,8,0 {#aug-2021-08-0}
+## 2021.8.0 {#aug-2021-08-0}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-aug-2021}
 
@@ -129,7 +128,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 - **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce**: De dienst verstrekt uit de doos gegevensbronconfiguratie en gegevensmodellen voor de Dynamica en Salesforce van Microsoft, makend het [ontwikkelaars kunnen Microsoft Dynamics en Salesforce sneller en eenvoudiger configureren als gegevensbronnen voor een adaptief formulier](configure-msdynamics-salesforce.md).
 
-## 2021,7,0 {#july-2021-07-0}
+## 2021.7.0 {#july-2021-07-0}
 
 ### Nieuwe functies in [!DNL Forms] {#july-what-is-new-forms}
 
@@ -151,7 +150,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
    - Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    - Afdruk-PDF-bestanden genereren op basis van een XFA-formulier met PDF en Adobe Acrobat-formulier.
 
-## 2021,6,0 {#july-2021-06-0}
+## 2021.6.0 {#july-2021-06-0}
 
 ### Nieuwe functies in [!DNL Forms] {#june-what-is-new-forms}
 
@@ -177,7 +176,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 - Wanneer een veld wordt gevalideerd voordat gegevens worden verzonden naar de service Back-end via het Form Data Model (FDM), slagen validaties erin, maar wordt postvalidatie niet aangeroepen door de service Form Data Model.
 - Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 byte ontvangen. Apple iOS 15.1 biedt een oplossing voor het probleem.
 
-## 2021,5,0 {#may-2021-05-0}
+## 2021.5.0 {#may-2021-05-0}
 
 ## [!DNL Adobe Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
@@ -202,7 +201,7 @@ U kunt schrijven naar formscsbeta@adobe.com om u aan te melden voor het bètapro
 - Als u in de lay-outlaag het aantal kolommen wijzigt, de bewerkingslaag opent en enkele componenten in een deelvenster sleept, verschijnen er vierkante blauwe vakken in het inhoudsgebied van de adaptieve formuliereditor en reageert de editor niet meer.
 - Foutbericht van een optie voor een regeleditor die betrekking heeft op het opgeven van een URL van een adaptief of extern element, is te lang en is niet gebruikersvriendelijk.
 
-## 2021,4,0 {#april-2021-04-0}
+## 2021.4.0 {#april-2021-04-0}
 
 ### Nieuwe functies in [!DNL Forms] {#april-what-is-new-forms}
 

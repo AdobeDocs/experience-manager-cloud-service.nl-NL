@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 4%
@@ -37,7 +37,7 @@ De CIF Add-On wordt verstrekt als Sling Feature archief. Het ZIP-bestand dat bes
 
 Het volgende moet lokaal worden geïnstalleerd:
 
-- [as a Cloud Service SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 of hoger)
 - [Node.js v10+](https://nodejs.org/en/)
@@ -68,7 +68,7 @@ Voor lokale ontwikkeling van de CIF Add-on met behulp van de AEM as a Cloud Serv
 
    Het ZIP-bestand voor de CIF-invoegtoepassing bevat twee Sling Feature-archiefbestanden `.far` bestanden. Zorg ervoor dat u de juiste SDK gebruikt voor AEM-auteur of AEM-publicatie, afhankelijk van hoe u de lokale AEM as a Cloud Service SDK wilt uitvoeren.
 
-1. Een lokale besturingssysteemomgevingsvariabele maken met de naam `COMMERCE_ENDPOINT` Houd het Adobe Commerce GraphQL-eindpunt vast.
+1. Een lokale besturingssysteemomgevingsvariabele maken met de naam `COMMERCE_ENDPOINT` het Adobe Commerce GraphQL-eindpunt vast te houden.
 
    Voorbeeld Mac OSX:
 
@@ -82,7 +82,7 @@ Voor lokale ontwikkeling van de CIF Add-on met behulp van de AEM as a Cloud Serv
    set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
-   Deze variabele wordt gebruikt door AEM om met uw handelssysteem te verbinden. Bovendien omvat de toe:voegen-on CIF een lokale omgekeerde volmacht om het eindpunt van GraphQL van de Handel plaatselijk beschikbaar te maken. Dit wordt gebruikt door de CIF auteurshulpmiddelen (productconsole en plukkers) en voor CIF cliënt-zijcomponenten die directe vraag GraphQL doen.
+   Deze variabele wordt gebruikt door AEM om met uw handelssysteem te verbinden. Bovendien omvat de toe:voegen-on CIF lokale reverse volmacht om het eindpunt van GraphQL van de Handel plaatselijk beschikbaar te maken. Dit wordt gebruikt door de CIF auteurshulpmiddelen (productconsole en plukkers) en voor CIF cliënt-zijcomponenten die directe vraag van GraphQL doen.
 
    Deze variabele moet ook voor de AEM as a Cloud Service omgeving worden ingesteld. Zie voor meer informatie over variabelen [Het vormen OSGi voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 

@@ -2,7 +2,7 @@
 title: Toegangstokens genereren voor server-side API's (verouderd)
 description: Leer hoe u communicatie tussen een externe server en AEM as a Cloud Service vergemakkelijkt door een beveiligd JWT Token te genereren
 hidefromtoc: true
-source-git-commit: aad1033828e400aaf4d9418f8e57afb61f05eecc
+source-git-commit: 75eb7919c437fe21ceeba934f264c653597aace5
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 0%

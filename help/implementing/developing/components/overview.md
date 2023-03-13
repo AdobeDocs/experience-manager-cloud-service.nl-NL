@@ -42,7 +42,7 @@ Elke AEM component:
 * Is een inzameling van manuscripten die een specifieke functie volledig realiseren.
 * Kan afzonderlijk functioneren, wat ofwel binnen AEM ofwel een portaal betekent.
 
-## AEM kerncomponenten {#aem-core-components}
+## AEM-kerncomponenten {#aem-core-components}
 
 [De AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) zijn een reeks gestandaardiseerde WCM-componenten (Web Content Management) voor AEM om de ontwikkelingstijd te versnellen en de onderhoudskosten van uw websites te verlagen.
 

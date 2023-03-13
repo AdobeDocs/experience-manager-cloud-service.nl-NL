@@ -1,7 +1,7 @@
 ---
 title: GraphQL-query's optimaliseren
 description: Leer hoe u uw GraphQL-query's kunt optimaliseren tijdens het filteren, pagineren en sorteren van uw Content Fragments in Adobe Experience Manager as a Cloud Service voor levering van inhoud zonder kop.
-source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
+source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%

@@ -3,7 +3,7 @@ title: Het gebruiken van GrahiQL winde in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 6e6bdc539f07fd15649a4f99d491f0486a511bdc
+source-git-commit: 68b16052bd050d881e82be4ef57b9623f6021a89
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 0%

@@ -98,7 +98,7 @@ Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke 
 >
 >Als een auteur een inhoudsfragment probeert te publiceren waarvoor het model nog niet is gepubliceerd, zal een selectielijst dit vermelden en het model zal met het fragment worden gepubliceerd.
 
-Zodra een model is gepubliceerd, wordt het *vergrendeld* in de modus ALLEEN-LEZEN bij de auteur. Dit is bedoeld om veranderingen te verhinderen die in fouten aan bestaande schema&#39;s en vragen GraphQL, vooral op het publicatiemilieu zouden resulteren. Het wordt in de console aangegeven door **Vergrendeld**.
+Zodra een model is gepubliceerd, wordt het *vergrendeld* in de modus ALLEEN-LEZEN bij de auteur. Dit is bedoeld om wijzigingen te voorkomen die zouden leiden tot fouten in bestaande GraphQL-schema&#39;s en query&#39;s, met name in de publicatieomgeving. Het wordt in de console aangegeven door **Vergrendeld**.
 
 Wanneer het model **Vergrendeld** (in de modus ALLEEN-LEZEN) kunt u de inhoud en structuur van modellen zien, maar niet rechtstreeks bewerken; hoewel u kunt beheren **Vergrendeld** modellen van of de console, of de modelredacteur.
 

@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2021.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 8f4b504898b1332c21f3cb82ab9bbf663c9dc312
+source-git-commit: a2c844d6f72c22ed085690ff98572a52e97de40d
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 0%
@@ -35,7 +35,7 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 ### Nieuwe functies in [!DNL Sites] {#what-is-new-sites}
 
-* Eindpunten GraphQL - het is nu mogelijk om AEM GraphQL API voor individuele configuraties van AEM Sites toe te laten en om de eindpunten van douaneGraphQL voor die configuraties tot stand te brengen door een nieuwe console te gebruiken GraphQL UI. UI staat ook het beheren van eindpunten GraphQL toe.
+* GraphQL Endpoints - het is nu mogelijk om de AEM GraphQL API voor afzonderlijke AEM Sites-configuraties in te schakelen en aangepaste GraphQL-eindpunten voor die configuraties te maken met een nieuwe GraphQL Console-interface. Met de gebruikersinterface kunt u ook GraphQL-eindpunten beheren.
 
 * Inhoudsmodellen, verbeterd gegevenstype Datum&amp;tijd - het is nu mogelijk het datum&amp;tijdtype te configureren om alleen datum-, alleen tijd- of datum- en tijdgegevens voor het schrijven toe te staan.
 
@@ -47,7 +47,7 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 * Inhoudsfragmenten: het verplaatsen van inhoudsfragmenten of -mappen werkt nu geneste verwijzingen in het fragment bij (CQ-4320815)
 
-* GraphQL - voortgezette vragen steunen nu user-defined eindpunten die voor configuraties AEM Sites specifiek zijn (CQ-4315928)
+* GraphQL - Aanhoudende vragen ondersteunen nu door de gebruiker gedefinieerde eindpunten die specifiek zijn voor AEM Sites-configuraties (CQ-4315928)
 
 ## [!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 

@@ -4,7 +4,7 @@ description: Leer instellen en configureren van een [!DNL AEM Forms] as a Cloud 
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Persoonlijke beslissingen nemen {#personas-aem-forms-project}
 
-<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Before onboarding to an [!DNL AEM Forms] as a Cloud Service environment, decide personas and structure a team for your project. A typical [!DNL AEM Forms] project team has the following personas:
+<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Voordat u een [!DNL AEM Forms] as a Cloud Service omgeving, kunt u personen kiezen en een team voor uw project structureren. Een standaard [!DNL AEM Forms] projectteam heeft de volgende personen:
 
 * **UX-ontwerper (User Experience)**: Een ontwerper van de Ervaring van de Gebruiker (UX) bepaalt stijl, lay-out, en branding voor [!DNL AEM Forms] activa.
 

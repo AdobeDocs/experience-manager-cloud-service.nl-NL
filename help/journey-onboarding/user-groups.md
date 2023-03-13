@@ -3,13 +3,13 @@ title: Gebruikersgroepen voor meldingen
 description: Leer hoe u een gebruikersgroep in de Admin Console kunt maken om de ontvangst van belangrijke e-mailberichten te beheren.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: b56bb15f8330deefc11d19e784e36590ef674dd8
+exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
+source-git-commit: 57477a041c51b3e1fe120ec94e1420b49af56f12
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikersgroepen voor meldingen {#user-groups}
 

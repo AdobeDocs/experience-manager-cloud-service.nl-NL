@@ -45,7 +45,7 @@ In deze sectie worden de stappen beschreven die zijn vereist voor het instellen 
 
       >[!NOTE]
       >
-      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de meest recente versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
    * Gebruik voor Java en WebDriver de voorbeeldcode van het dialoogvenster [AEM opslagplaats voor testvoorbeelden.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
 

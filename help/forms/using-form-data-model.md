@@ -27,7 +27,7 @@ Een formuliergegevensmodel is een uitbreiding van het JSON-schema waarmee u:
 
 * [Adaptieve Forms en fragmenten maken](#create-af)
 
-<!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
+   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
 * [Voorvertonen met voorbeeldgegevens](#preview-ic)
 * [met de service Formuliergegevensmodel](#prefill)
 * [Verzonden adaptieve formuliergegevens terugschrijven naar gegevensbronnen](#write-af)

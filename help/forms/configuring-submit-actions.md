@@ -2,7 +2,7 @@
 title: Een verzendhandeling configureren voor een adaptief formulier
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 7a608304dc93e53815b488de4087f26e346be4b5
+source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
 workflow-type: tm+mt
 source-wordcount: '2959'
 ht-degree: 0%
@@ -89,7 +89,7 @@ U kunt ook **[!UICONTROL Enable POST request]** en geef een URL op om de aanvraa
 
 ## E-mail verzenden {#send-email}
 
-U kunt de **[!UICONTROL Send Email]** Verzend Actie om een e-mail naar een of meer ontvangers te verzenden wanneer het formulier met succes is verzonden. Het gegenereerde e-mailbericht kan formuliergegevens in een vooraf gedefinieerde indeling bevatten. In de volgende sjabloon worden bijvoorbeeld de naam van de klant, het verzendadres, de naam van de staat en de postcode opgehaald uit de verzonden formuliergegevens.
+U kunt de **[!UICONTROL Send Email]** Verzend Actie om een e-mail naar een of meer ontvangers te verzenden wanneer het formulier met succes is verzonden. Het gegenereerde e-mailbericht kan formuliergegevens in een vooraf gedefinieerde indeling bevatten. In de volgende sjabloon worden bijvoorbeeld de naam van de klant, het verzendadres, de naam van de staat en de postcode opgehaald uit de ingediende formuliergegevens.
 
     &quot;
     

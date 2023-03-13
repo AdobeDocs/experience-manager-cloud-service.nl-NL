@@ -1,6 +1,6 @@
 ---
 title: Installatie zonder koppen
-description: Met deze snelle startgids, leer de grondbeginselen van AEM krachtige headless mogelijkheden van de as a Cloud Service zoals de Modellen van de Inhoud, de Fragments van de Inhoud, en GraphQL API.
+description: Met deze snelstartgids leert u de basisprincipes van AEM krachtige, koploze functies, zoals Content Models, Content Fragments en de GraphQL API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
 workflow-type: tm+mt

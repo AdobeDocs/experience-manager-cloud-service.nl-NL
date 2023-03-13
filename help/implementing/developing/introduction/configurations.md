@@ -2,7 +2,7 @@
 title: Configuraties en de Configuratiebrowser
 description: Begrijp AEM configuraties en hoe zij werkruimtemontages in AEM beheren.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 8f94d7ee3cfe436b5d41f2428b901ee1a5002993
+source-git-commit: 3be936be09f205a73dd053ac28df936d58e50919
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 0%
@@ -52,7 +52,7 @@ De beheerder kan vervolgens de WKND-General koppelen aan alle inhoud van de WKND
 Op deze manier:
 
 * Wanneer een inhoudsauteur een nieuwe pagina voor het tijdschrift maakt, kan de auteur kiezen uit algemene sjablonen (WKND-Algemeen) of tijdschriftsjablonen (WKND-Magazine).
-* Wanneer een auteur van inhoud een nieuwe pagina maakt voor een ander gedeelte van de site dat niet het tijdschrift is, kan de auteur alleen kiezen uit de algemene sjablonen (WKND-Algemeen).
+* Wanneer een auteur van inhoud een nieuwe pagina maakt voor een ander deel van de site dat niet het tijdschrift is, kan de auteur alleen kiezen uit de algemene sjablonen (WKND-Algemeen).
 
 De gelijkaardige montages zijn mogelijk niet alleen voor Bewerkbare Malplaatjes maar ook voor de Configuraties van de Wolk, Segmenten ContextHub, en Modellen van het Fragment van de Inhoud.
 

@@ -2,7 +2,7 @@
 title: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 description: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 
-## 1. Wordt CIF GraphQL slechts gebruikt voor handel of zal dit voor het vragen van inhoud beschikbaar zijn authored op AEM JCR?
+## 1. Wordt CIF GraphQL alleen gebruikt voor handel of is dit beschikbaar voor het opvragen van inhoud die is geschreven op AEM JCR?
 
-Adobe heeft Adobe Commerce GraphQL APIs als zijn officiële handel API voor alle handel-verwante gegevens goedgekeurd. Daarom gebruikt AEM GraphQL om handelsgegevens met Adobe Commerce en met om het even welke handelingsmotor via I/O Runtime uit te wisselen. Deze GraphQL API is onafhankelijk van AEM GraphQL API om tot Inhoudsfragmenten toegang te hebben.
+Adobe heeft GraphQL API&#39;s van Adobe Commerce aangenomen als officiële API voor de handel voor alle handelsgerelateerde gegevens. Daarom gebruikt AEM GraphQL om handelsgegevens met Adobe Commerce en met om het even welke handelmotor via I/O Runtime uit te wisselen. Deze GraphQL API is onafhankelijk van AEM GraphQL API voor toegang tot Content Fragments.
 
 ## 2. Kunnen de activa van het Product (beelden) van AEM via Adobe Commerce worden opgeslagen en van verwijzingen voorzien admin? Hoe kunnen activa van Dynamic Media worden verbruikt?
 
@@ -43,7 +43,7 @@ PIM-gegevens worden via GraphQL-verzoeken aan AEM en clients beschikbaar gesteld
 
 ## 8. Verzendt u ook de prijzen en andere gegevens in cache via Dispatcher. Vormt dat een veelvuldige uitdaging voor het ongeldig maken van cache?
 
-Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen op de Dispatcher. Dynamische gegevens worden via GraphQL API&#39;s direct opgehaald aan de clientzijde met webcomponenten. Alleen statische gegevens (zoals product- of categoriegegevens) worden in cache geplaatst op de Dispatcher. Als de productgegevens veranderen, is er behoefte aan geheim voorgeheugenbevestiging.
+Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen op de Dispatcher. Dynamische gegevens worden via GraphQL API&#39;s rechtstreeks via de client-side opgehaald met webcomponenten. Alleen statische gegevens (zoals product- of categoriegegevens) worden in cache geplaatst op de Dispatcher. Als de productgegevens veranderen, is er behoefte aan geheim voorgeheugenbevestiging.
 
 ## 9. Hoe werkt cachevervalsing voor AEM Dispatcher met AEM en handel?
 
@@ -55,7 +55,7 @@ Er is een verwijzingsimplementatie voor productzoekopdrachten beschikbaar, maar 
 
 ## 11. Hoe werkt Search met AEM en handel die CIF gebruiken?
 
-CIF verstrekt de bar van het Onderzoek en de componenten van het Resultaat van het Onderzoek. De component van de bar van het Onderzoek verzendt een verzoek GraphQL met de onderzoekstermijn naar de handels oplossing die dan een productlijst terugkeert die productnaam, prijs, SLUG, etc. omvat. De component van het Resultaat van het Onderzoek toont dan de onderzoeksresultaten in een galeriemening op een pagina van het onderzoeksresultaat die in AEM wordt gecreeerd. De zoekfunctie ondersteunt standaard zoeken in volledige tekst. Wij gebruiken de sleutel SLUG/url om een verwijzing naar PDP te bouwen.
+CIF verstrekt de bar van het Onderzoek en de componenten van het Resultaat van het Onderzoek. De component van de bar van het Onderzoek verzendt een verzoek van GraphQL met de onderzoekstermijn naar de handelsoplossing die dan een productlijst terugkeert die productnaam, prijs, SLUG, etc. omvat. De component van het Resultaat van het Onderzoek toont dan de onderzoeksresultaten in een galeriemening op een pagina van het onderzoeksresultaat die in AEM wordt gecreeerd. De zoekfunctie ondersteunt standaard zoeken in volledige tekst. Wij gebruiken de sleutel SLUG/url om een verwijzing naar PDP te bouwen.
 
 ## 12. Hoe kunnen productgegevens in MSM of vertalingen worden gebruikt?
 

@@ -3,7 +3,8 @@ title: Uw PDF-documenten beheren in [!DNL Adobe Experience Manager].
 description: PDF-documenten beheren in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 feature: Asset Management
 role: User,Admin
-source-git-commit: 9a600fb744c7064274fb4d849a5e01de2b83f575
+exl-id: 29660869-6902-4093-845b-cd629be59d4d
+source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 0%
@@ -124,5 +125,5 @@ Voer de volgende stappen uit voor de voorvertoning van meerdere pagina&#39;s van
 > OPMERKING
 > * De maximale grootte van een element waarvan u een voorbeeld kunt bekijken, is 100 MB.
 > * De maximale grootte van XLS- of XLSX-bestanden die u wilt voorvertonen, is 20 MB.
-> 
+>
 

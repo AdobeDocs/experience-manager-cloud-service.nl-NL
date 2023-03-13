@@ -23,7 +23,7 @@ In dit artikel worden de bekende problemen van [!DNL Adobe Experience Manager] a
 
 Sommige bekende problemen in [!DNL Sites] zijn:
 
-* In GrafiekQL winde kunt u [beheer het geheime voorgeheugen voor uw voortgezette vragen](/help/headless/graphql-api/graphiql-ide.md##managing-cache).
+* In de GraphQL-IDE kunt u [beheer het geheime voorgeheugen voor uw voortgezette vragen](/help/headless/graphql-api/graphiql-ide.md##managing-cache).
    * Bij de eerste keer sparen de waarden voor de kopballen worden bewaard geplaatst aan `0` (in plaats van de standaardwaarden) - als de gebruiker deze waarden in het dialoogvenster niet heeft gewijzigd.
    * Bij het opslaan worden de waarden correct opgeslagen.
    * Daarom moet de gebruiker de kopballen tweemaal bewaren.

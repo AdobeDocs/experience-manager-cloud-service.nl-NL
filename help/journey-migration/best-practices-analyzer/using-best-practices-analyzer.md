@@ -4,7 +4,7 @@ description: Analysator van best practices gebruiken
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2490'
 ht-degree: 41%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="De Analysator van Beste praktijken gebruiken"
 >abstract="Bekijk de documentatie voor het gebruik van de Analysator voor best practices (voorheen Cloud Readiness Analyzer) en het gegenereerde rapport. Het Rapport van de Analysator van Beste praktijken wordt gebruikt om een inzicht op hoog niveau van algemene verbeteringsbereidheid te bereiken."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introductie van tools om de reis naar Adobe Experience Manager as a Cloud Service te versnellen"
 
 ## Belangrijke overwegingen voor het Gebruiken van Analyzer van Beste praktijken {#imp-considerations}
 
@@ -28,12 +28,12 @@ Volg de sectie hieronder om de belangrijke overwegingen voor het runnen van de A
 * BPA wordt ondersteund op AEM instanties met versie 6.1 en hoger.
 
    >[!NOTE]
-Zie [Installeren op AEM 6.1](#installing-on-aem61) voor speciale voorschriften voor de installatie van BPA op AEM 6.1.
+   > Zie [Installeren op AEM 6.1](#installing-on-aem61) voor speciale voorschriften voor de installatie van BPA op AEM 6.1.
 
 * BPA kan op om het even welk milieu lopen, maar het wordt verkiest om het te hebben op een lopen *Werkgebied* milieu.
 
    >[!NOTE]
-Om een effect op bedrijfskritieke instanties te vermijden, wordt u aangeraden BPA op een *Auteur* milieu dat zo dicht mogelijk bij *Productie* omgeving op het gebied van aanpassingen, configuraties, inhoud en gebruikerstoepassingen. CRA kan ook worden uitgevoerd op een kloon van de *auteur* laag van de productieomgeving.
+   >Om een effect op bedrijfskritieke instanties te vermijden, wordt u aangeraden BPA op een *Auteur* milieu dat zo dicht mogelijk bij *Productie* omgeving op het gebied van aanpassingen, configuraties, inhoud en gebruikerstoepassingen. CRA kan ook worden uitgevoerd op een kloon van de *auteur* laag van de productieomgeving.
 
 * Het genereren van de inhoud van het BPA-rapport kan een aanzienlijke hoeveelheid tijd in beslag nemen, van enkele minuten tot enkele uren. De benodigde tijd is in hoge mate afhankelijk van de grootte en aard van de AEM-repository-content, de AEM-versie en andere factoren.
 
@@ -41,15 +41,15 @@ Om een effect op bedrijfskritieke instanties te vermijden, wordt u aangeraden BP
 
 ## Beschikbaarheid {#availability}
 
-[!CONTEXTUALHELP]
-id="aemcloud_bpa_download"
-title="Download de Analyzer van Beste praktijken"
-abstract="De Analysator van Beste praktijken kan als zip dossier van het portaal van de Distributie van de Software worden gedownload. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager)."
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_download"
+>title="Download de Analyzer van Beste praktijken"
+>abstract="De Analysator van Beste praktijken kan als zip dossier van het portaal van de Distributie van de Software worden gedownload. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager)."
 
 De Analysator van Beste praktijken kan als zip dossier van het portaal van de Distributie van de Software worden gedownload. U kunt het pakket installeren via [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) op uw Adobe Experience Manager-bronexemplaar (AEM).
 
 >[!NOTE]
-Download de Best Practices Analyzer van de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portaal.
+>Download de Best Practices Analyzer van de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portaal.
 
 ## Het Rapport van de Analysator van Beste praktijken bekijken {#viewing-report}
 
@@ -83,12 +83,12 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-U kunt BPA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door te klikken **Rapport vernieuwen**.
+   >U kunt BPA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door te klikken **Rapport vernieuwen**.
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
-Tijdens het genereren van het rapport wordt de voortgang weergegeven in procenten dat is voltooid, zoals in de onderstaande afbeelding wordt getoond.
+   >Tijdens het genereren van het rapport wordt de voortgang weergegeven in procenten dat is voltooid, zoals in de onderstaande afbeelding wordt getoond.
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
@@ -103,14 +103,14 @@ Bevindingen met betrekking tot [ACS-opdrachten](https://adobe-consulting-service
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-Het linkerspoorpictogram zal verschijnen slechts als BPA het gebruik van ACSCommons ontdekt.
+   > Het linkerspoorpictogram zal verschijnen slechts als BPA het gebruik van ACSCommons ontdekt.
 
 1. Schakel het selectievakje uit om alle bevindingen met betrekking tot ACS-opdrachten uit te filteren. U dient een **Aantal gefilterde zoekopdrachten** in het rapport zoals weergegeven in onderstaande afbeelding. Het filter wordt ook toegepast op het rapport wanneer het in een komma-gescheiden-waarde (CSV) formaat wordt uitgevoerd.
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-De bevindingen van de ACS-Gemeenschappelijke Gemeenschap moeten niet worden genegeerd. Zie [documentatie](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) om de verenigbaarheid met AEM as a Cloud Service te bepalen.
+   > De bevindingen van de ACS-Gemeenschappelijke Gemeenschap moeten niet worden genegeerd. Zie [documentatie](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) om de verenigbaarheid met AEM as a Cloud Service te bepalen.
 
 
 <!--
@@ -126,12 +126,12 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 ## Het rapport met de analyse van best practices interpreteren {#cra-report}
 
-[!CONTEXTUALHELP]
-id="aemcloud_bpa_interpreting"
-title="Het rapport met de analyse van best practices interpreteren"
-abstract="Er zijn twee opties om BPA- rapportoutput te bekijken: UI en CSV. Wanneer het hulpmiddel van de Analysator van Beste praktijken in de AEM instantie in werking wordt gesteld, wordt het rapport UI getoond als resultaten in het hulpmiddelvenster. De CSV-indeling van het rapport bevat informatie die wordt gegenereerd op basis van de Pattern Detector-uitvoer. Deze informatie is gesorteerd en ingedeeld op categorietype, subtype en belang."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Rapport Analyse van beste praktijken"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="De categorieën van het Rapport van de Analyse van Beste praktijken begrijpen"
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_interpreting"
+>title="Het rapport met de analyse van best practices interpreteren"
+>abstract="Er zijn twee opties om BPA- rapportoutput te bekijken: UI en CSV. Wanneer het hulpmiddel van de Analysator van Beste praktijken in de AEM instantie in werking wordt gesteld, wordt het rapport UI getoond als resultaten in het hulpmiddelvenster. De CSV-indeling van het rapport bevat informatie die wordt gegenereerd op basis van de Pattern Detector-uitvoer. Deze informatie is gesorteerd en ingedeeld op categorietype, subtype en belang."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Rapport Analyse van beste praktijken"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="De categorieën van het Rapport van de Analyse van Beste praktijken begrijpen"
 
 Wanneer het hulpmiddel van de Analysator van Beste praktijken in de AEM instantie in werking wordt gesteld, wordt het rapport getoond als resultaten in het hulpmiddelvenster.
 
@@ -148,7 +148,7 @@ Het rapport is als volgt ingedeeld:
 Aan elke bevinding wordt een belangniveau toegewezen als ruwe prioriteit voor de benodigde actie.
 
 >[!NOTE]
-Voor meer informatie over elke zoekcategorie raadpleegt u [Categorieën patroondetector](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>Voor meer informatie over elke zoekcategorie raadpleegt u [Categorieën patroondetector](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 Bekijk de onderstaande tabel om inzicht te krijgen in de belangniveaus:
 

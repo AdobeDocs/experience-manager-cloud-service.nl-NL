@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
+source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 0%
@@ -34,14 +34,14 @@ De tweede stap is zelfbediening voor elke AEM as a Cloud Service omgeving. Er zi
 
 ## AEM verbinden met een Oplossing van de Handel {#solution}
 
-De CIF-invoegtoepassing en de [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) met een handelsoplossing, moet u het eindpunt GraphicsQL eindpunt URL via een de omgevingsvariabele van de Manager van de Wolk verstrekken. De variabelenaam is `COMMERCE_ENDPOINT`. Er moet een beveiligde verbinding via HTTPS worden geconfigureerd.
+De CIF-invoegtoepassing en de [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) met een handelsoplossing, moet u het eindpunt URL van GraphQL via een de omgevingsvariabele van de Manager van de Wolk verstrekken. De variabelenaam is `COMMERCE_ENDPOINT`. Er moet een beveiligde verbinding via HTTPS worden geconfigureerd.
 
 Deze omgevingsvariabele wordt op twee plaatsen gebruikt:
 
-- GraphQL roept van AEM aan handels achterste deel, via één of andere gemeenschappelijke cliënt GraphQl, die door de AEM componenten van de Kern van CIF en componenten van het klantenproject wordt gebruikt.
-- Opstelling een proxyURL GraphQL op elke AEM milieu de variabele beschikbaar bij wordt geplaatst `/api/graphql`. Dit wordt gebruikt door de AEM handels auteurshulpmiddelen (toe:voegen-aan CIF) en cliënt-zijcomponenten CIF.
+- De vraag van GraphQL van AEM aan handelsafstand, via één of andere gemeenschappelijke cliënt GraphQl, die door de AEM Componenten van de Kern van CIF en componenten van het klantenproject wordt gebruikt.
+- Stel een GraphQL-proxy-URL in voor elke AEM omgeving waarin de variabele beschikbaar is `/api/graphql`. Dit wordt gebruikt door de AEM handels auteurshulpmiddelen (toe:voegen-aan CIF) en cliënt-zijcomponenten CIF.
 
-Een verschillend eindpuntURL GraphQL kan voor elke AEM as a Cloud Service milieu worden gebruikt. Zo kunnen projecten AEM het opvoeren milieu&#39;s met handel het opvoeren systemen en AEM productiemilieu met een handelsproductiesysteem verbinden. Dat eindpunt GraphQL openbaar moet zijn, privé VPN of lokale verbindingen worden niet gesteund. Naar keuze, kan een authentificatiekopbal worden verstrekt om extra eigenschappen te gebruiken CIF die authentificatie vereisen.
+Voor elke AEM as a Cloud Service omgeving kan een andere URL voor het eindpunt van GraphQL worden gebruikt. Zo kunnen projecten AEM het opvoeren milieu&#39;s met handel het opvoeren systemen en AEM productiemilieu met een handelsproductiesysteem verbinden. Dat het eindpunt van GraphQL openbaar moet zijn, privé VPN of lokale verbindingen worden niet gesteund. Naar keuze, kan een authentificatiekopbal worden verstrekt om extra eigenschappen te gebruiken CIF die authentificatie vereisen.
 
 De CIF-invoegtoepassing (optioneel en alleen voor Adobe Commerce Enterprise/Cloud) ondersteunt het gebruik van gefaseerde catalogusgegevens voor AEM auteurs. Dit vereist om een vergunningskopbal te vormen. Deze koptekst is alleen beschikbaar en wordt uit veiligheidsoverwegingen gebruikt bij AEM auteur-instanties. AEM publicatie-instanties kunnen geen gefaseerde gegevens weergeven.
 
@@ -81,7 +81,7 @@ Om AEM met een handelsoplossing via Adobe I/O CLI te verbinden, volg deze stappe
 
    Zie [CLI-documenten](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) voor meer informatie.
 
-   De het eindpunt URL van GraphQL van de handel eindpunt moet aan de dienst van GraphQl van de handel richten en een veilige verbinding gebruiken HTTPS. Bijvoorbeeld: `https://<yourcommercesystem>/graphql`.
+   De handel GraphQL eindpunt URL moet aan de dienst van GraphQl van de handel richten en een veilige verbinding gebruiken HTTPS. Bijvoorbeeld: `https://<yourcommercesystem>/graphql`.
 
 4. Catalogusfuncties met status inschakelen die verificatie vereisen (optioneel)
 
@@ -117,16 +117,16 @@ Deze configuratie kan voor het project via CIF Cloud Service config worden aange
 
 De volgende eigenschappen kunnen worden geconfigureerd:
 
-- Cliënt GraphQL - selecteer de gevormde cliënt GraphQL voor handel achterste mededeling. Dit zou typisch bij gebrek moeten blijven.
+- GraphQL Client - selecteer de geconfigureerde GraphQL-client voor commerciële back-endcommunicatie. Dit zou typisch bij gebrek moeten blijven.
 - Winkelweergave - de weergave-id van de winkel. Als dit leeg is, wordt de standaardwinkelweergave gebruikt.
-- GraphQL de Weg van de Volmacht - de Volmacht van GraphQL van de weg URL in AEM gebruik aan volmachtsverzoeken aan het commerciële achterste eindpunt GraphQL.
+- GraphQL Proxy Path - de Volmacht van GraphQL van de weg URL in AEM gebruik aan volmachtsverzoeken aan het commerciële achterste eindpunt van GraphQL.
    >[!NOTE]
    >
-   > In de meeste instellingen is de standaardwaarde `/api/graphql` mogen niet worden gewijzigd. Alleen geavanceerde instellingen die de geleverde GraphQL-proxy niet gebruiken, moeten deze instelling wijzigen.
-- De Steun van UID van de Catalogus van de inschakelen - laat steun voor UID in plaats van identiteitskaart in de handel achterste vraag GraphQL toe.
+   > In de meeste instellingen is de standaardwaarde `/api/graphql` mogen niet worden gewijzigd. Alleen geavanceerde instellingen die de opgegeven GraphQL-proxy niet gebruiken, moeten deze instelling wijzigen.
+- Schakel ondersteuning voor UID-catalogus in - schakel ondersteuning voor UID in in plaats van voor ID in de commerciële back-end GraphQL-aanroepen.
    >[!NOTE]
    >
-   > Ondersteuning voor UID&#39;s is geïntroduceerd in Adobe Commerce 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
+   > Ondersteuning voor UID&#39;s is geïntroduceerd in Adobe Commerce 2.4.2. Schakel deze optie alleen in als uw commerciële backend een GraphQL-schema van versie 2.4.2 of hoger ondersteunt.
 - Hoofdcategorie-id van catalogus - de id (UID of ID) van de hoofdmap van de opslagcatalogus
    >[!CAUTION]
    >

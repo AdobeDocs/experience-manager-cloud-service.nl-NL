@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van inhoudsfragmenten en AEM middelen REST API voor het beheer van inhoudsfragmenten.
 
-## Wat zijn GraphQL- en Assets REST-API&#39;s? {#what-are-the-apis}
+## Wat zijn GraphQL en Assets REST API&#39;s? {#what-are-the-apis}
 
 [Nu u enkele inhoudsfragmenten hebt gemaakt,](create-content-fragment.md) u kunt AEM API&#39;s gebruiken om ze zonder kop te leveren.
 
@@ -21,17 +21,17 @@ Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van in
    * Om dit te gebruiken, [eindpunten moeten worden gedefinieerd en ingeschakeld in AEM](/help/headless/graphql-api/graphql-endpoint.md)en, indien nodig, de [GraphiQL-interface geïnstalleerd](/help/headless/graphql-api/graphiql-ide.md).
 * [De REST-API voor middelen](/help/assets/content-fragments/assets-api-content-fragments.md) Hiermee kunt u inhoudsfragmenten (en andere elementen) maken en wijzigen.
 
-De rest van deze gids zal zich op toegang GraphQL en de levering van het Fragment van de Inhoud concentreren.
+De rest van deze handleiding is gericht op GraphQL-toegang en levering van inhoudsfragmenten.
 
 ## GraphQL-eindpunt inschakelen {#enable-graphql-endpoint}
 
-Alvorens GraphQL APIs kan worden gebruikt, moet een eindpunt GraphQL worden gecreeerd.
+Voordat de GraphQL API&#39;s kunnen worden gebruikt, moet een GraphQL-eindpunt worden gemaakt.
 
 1. Navigeren naar **Gereedschappen**, **Algemeen** selecteert u vervolgens **GraphQL**.
 1. Selecteer **Maken**.
 1. De **Nieuw GraphQL-eindpunt maken** wordt geopend. Hier kunt u opgeven:
    * **Naam**: naam van het eindpunt; U kunt elke gewenste tekst invoeren.
-   * **GrafiekQL-schema gebruiken dat is opgegeven door**: gebruik dropdown om de vereiste configuratie te selecteren.
+   * **GraphQL-schema gebruiken dat wordt geleverd door**: gebruik dropdown om de vereiste configuratie te selecteren.
 1. Bevestigen met **Maken**.
 1. In de console a **Pad** wordt nu weergegeven op basis van de eerder gemaakte configuratie. Dit is het pad dat wordt gebruikt om GraphQL-query&#39;s uit te voeren.
 
@@ -39,9 +39,9 @@ Alvorens GraphQL APIs kan worden gebruikt, moet een eindpunt GraphQL worden gecr
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-Meer informatie over inschakelen [De eindpunten van GraphQL zijn hier te vinden](/help/headless/graphql-api/graphql-endpoint.md).
+Meer informatie over inschakelen [Hier vindt u GraphQL-eindpunten](/help/headless/graphql-api/graphql-endpoint.md).
 
-## Vraag inhoud gebruikend GraphQL met GraphiQL
+## Inhoud opvragen met GraphQL met GraphiQL
 
 De architecten van de informatie zullen vragen voor hun kanaaleindpunten moeten ontwerpen om inhoud te leveren. Deze vragen zullen over het algemeen slechts eens per eindpunt per model moeten worden overwogen. Met het oog op deze gids om aan de slag te gaan, zullen wij slechts één gids moeten creëren.
 
@@ -54,7 +54,7 @@ GraphiQL is een IDE, inbegrepen in uw AEM milieu; het is na u toegankelijk/zicht
    * **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
    * rechtstreeks; bijvoorbeeld: `http://localhost:4502/aem/graphiql.html`
 
-1. GrahiQL winde is een in-browser vraagredacteur voor GraphQL. U kunt het gebruiken om vragen te bouwen om de Fragmenten van de Inhoud terug te winnen om hen zonder hoofd als JSON te leveren.
+1. GraphiQL winde is een in-browser vraagredacteur voor GraphQL. U kunt het gebruiken om vragen te bouwen om de Fragmenten van de Inhoud terug te winnen om hen zonder hoofd als JSON te leveren.
    * Met de vervolgkeuzelijst rechtsboven kunt u het eindpunt selecteren.
    * Een uiterst linker paneel maakt een lijst van de voortgezette vragen (indien beschikbaar)
    * In het deelvenster links in het midden kunt u uw query samenstellen.
@@ -90,7 +90,7 @@ GraphiQL is een IDE, inbegrepen in uw AEM milieu; het is na u toegankelijk/zicht
 
 GraphQL laat gestructureerde vragen toe die niet alleen specifieke gegevensreeksen of individuele gegevensvoorwerpen kunnen richten, maar ook specifieke elementen van de voorwerpen, genestelde resultaten kunnen leveren, biedt steun voor vraagvariabelen, en veel meer.
 
-GraphQL kan iteratieve API-verzoeken en overlevering vermijden en maakt in plaats daarvan bulklevering mogelijk van exact wat nodig is voor rendering als reactie op één API-query. De resulterende JSON kan worden gebruikt om gegevens te leveren aan andere sites of apps.
+GraphQL kan herhalende API-aanvragen en overlevering voorkomen en in plaats daarvan kan bulksgewijs worden geleverd wat precies nodig is voor rendering als reactie op één API-query. De resulterende JSON kan worden gebruikt om gegevens te leveren aan andere sites of apps.
 
 ## Volgende stappen {#next-steps}
 

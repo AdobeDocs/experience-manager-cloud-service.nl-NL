@@ -2,7 +2,7 @@
 title: Document met record genereren voor adaptieve Forms
 description: Verklaart hoe u een malplaatje voor een Document van Verslag (DoR) voor Aangepast Forms kunt produceren.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
+source-git-commit: 3adbad13a9b60c3a89e681cdf97c9af3f195fe70
 workflow-type: tm+mt
 source-wordcount: '3007'
 ht-degree: 1%
