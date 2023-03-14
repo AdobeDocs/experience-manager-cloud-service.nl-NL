@@ -3,9 +3,9 @@ title: Inleiding tot [!DNL AEM Forms] as a Cloud Service
 description: Ontdek AEM Forms en leer hoe u hiermee bedrijfsklare documenten en formulieren kunt maken. Leer meer over Platform-as-a-Service (PaaS) en hoe u digitale formulieren en bedrijfsprocessen op ondernemingsniveau beheert en hoe u Forms verbindt met Adobe Sign en actuele gegevensbronnen.
 landing-page-description: Inzicht in hoe u formulieren in AEM as a Cloud Service kunt gebruiken.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: fa8629fefe3ad29f70213b15bb31623a2f7d5420
+source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1092'
 ht-degree: 5%
 
 ---
@@ -25,9 +25,6 @@ Met deze service kunt u interactieve en aantrekkelijke digitale formulieren make
 
 De organisatie kan [!DNL AEM Forms] as a Cloud Service voor het maken van digitale formulieren, het verbinden van formulieren met bestaande gegevensbronnen, het integreren van formulieren met [!DNL Adobe Sign] om e-handtekeningen toe te voegen aan formulieren en om Ingesloten formulieren als PDF-bestanden te archiveren. De organisatie kan de service ook gebruiken om bestaande PDF forms om te zetten in digitale formulieren.
 
-![Responsief formulierontwerp](/help/forms/assets/data-collection.jpeg "Adaptieve Forms-ervaringen voor meerdere apparaten"){width="70%" align="center"}
-
-
 In grote bedrijven worden formulieren vaak één keer gemaakt en opnieuw gebruikt door te kopiëren naar een contentbeheersysteem. Het kan een grote uitdaging zijn om een grote databank van formulieren up-to-date te houden en te ontdekken. AEM biedt een aanpasbaar Forms Portal dat ervoor zorgt dat klanten formulieren vinden en openen die ze nodig hebben, zowel via het web als via mobiele kanalen. U kunt vormgeving, branding en logo&#39;s van Forms Portal aanpassen aan de specifieke vereisten van uw organisatie.
 
 ## Lever gepersonaliseerde mededelingen
@@ -36,16 +33,13 @@ Een belangrijke component van een efficiënte zelfbedienings digitale ervaring m
 
 Met AEM Forms kunnen zakelijke gebruikers aansprekende persoonlijke gebruikerservaringen maken door documentsjablonen aan te passen en informatie van back-endprocessen op te nemen in de sjablonen. Een reeks intuïtieve APIs helpt zaken vastgestelde regels die beslissen wanneer om een mededeling te produceren die op een onderzoek wordt gebaseerd, of met regelmatige tussenpozen in partijen.
 
-![Persoonlijke factuur](/help/forms/assets/personalized-communication.jpeg "Op verzoek gegenereerde persoonlijke PDF facturen"){width="70%" align="center"}
 
 Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, kunnen eenvoudig worden gegenereerd. Organisaties kunnen het verkeer naar gepersonaliseerde webportalen sturen, wat leidt tot inschrijving of aankoop van extra services.
 
 
 ## Back-office workflows automatiseren
 
-Gebruik formulieren-centrische workflows om de verwerking en routering van formuliergegevens naar verschillende belanghebbenden, zoals beheerders of afdelingen, te automatiseren voor revisie, goedkeuring of verdere verwerking.
-
-Deze workflows helpen uw organisatie risico&#39;s te minimaliseren en naleving te handhaven door consistente en controleerbare verwerking van formuliergegevens te garanderen, handmatige taken te automatiseren, op rol gebaseerde toegangscontrole te bieden en te helpen voldoen aan wettelijke vereisten.
+Gebruik formulieren-centrische workflows om de verwerking en routering van formuliergegevens naar verschillende belanghebbenden, zoals beheerders of afdelingen, te automatiseren voor revisie, goedkeuring of verdere verwerking. Deze workflows helpen uw organisatie risico&#39;s te minimaliseren en naleving te handhaven door consistente en controleerbare verwerking van formuliergegevens te garanderen, handmatige taken te automatiseren, op rol gebaseerde toegangscontrole te bieden en te helpen voldoen aan wettelijke vereisten.
 
 
 ## Prestaties van formulieren optimaliseren
