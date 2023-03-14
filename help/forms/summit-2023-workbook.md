@@ -5,9 +5,10 @@ description: Forms inschakelen met behulp van kerncomponenten en zonder hoofd
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
-source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
+hidefromtoc: true
+source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2465'
 ht-degree: 0%
 
 ---
@@ -242,8 +243,6 @@ Stel de lokale opslagruimte van het thema in:
 
    ![](/help/forms/assets/screenshot2028116429.png)
 
-   ![](/help/forms/assets/screenshot20228116569.png)
-
 
 1. Voer in het venster Opdrachtprompt de volgende opdracht uit:
 
@@ -271,8 +270,7 @@ Stel de lokale opslagruimte van het thema in:
 
    >[!NOTE]
    >
-   >Als u een leeg scherm in browser ervaart nadat u de opdracht `npm run live` opdracht, wijzigen `localhost` in browser URL naar 127.0.0.1 en druk op **Enter**.
-
+   >Als u een leeg scherm in browser ervaart nadat u de opdracht `npm run live` gebruiken voor meer dan 3-4 minuten, wijzigen `localhost` in browser URL naar 127.0.0.1 en druk op **Enter**.
 
 
    ![](/help/forms/assets/screenshot2028115129.png)
@@ -381,7 +379,8 @@ U kunt als volgt het formulier weergeven dat wordt gehost op uw cloudservice-pub
 
    >[!NOTE]
    >
-   >Als u een leeg scherm in browser ervaart nadat u de opdracht `npm start` opdracht, wijzigen `localhost` in browser URL naar 127.0.0.1 en druk op **Enter**.
+   > 
+   > Als u een leeg scherm in browser ervaart nadat u de opdracht `npm start` gebruiken voor meer dan 3-4 minuten, wijzigen `localhost` in browser URL naar 127.0.0.1 en druk op **Enter**.
 
    ![](/help/forms/assets/screenshot2028118229.png)
 
@@ -529,7 +528,7 @@ U kunt als volgt het formulier weergeven dat wordt gehost op uw cloudservice-pub
 
    >[!NOTE]
    >
-   >Als u een leeg scherm in browser ervaart nadat u de opdracht `npm start` opdracht, wijzigen `localhost` in browser URL naar 127.0.0.1 en druk op **Enter**.
+   >Als u een leeg scherm in browser ervaart nadat u de opdracht `npm start` gebruiken voor meer dan 3-4 minuten, wijzigen `localhost` in browser URL naar 127.0.0.1 en druk op **Enter**.
 
    ![](/help/forms/assets/screenshot2028127229.png)
 
