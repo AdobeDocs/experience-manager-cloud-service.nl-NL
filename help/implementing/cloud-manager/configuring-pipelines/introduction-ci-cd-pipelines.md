@@ -3,9 +3,9 @@ title: CI/CD-pijpleidingen
 description: Leer meer over de CI/CD-pijpleidingen van Cloud Manager en hoe deze kunnen worden gebruikt om uw code efficiënt te implementeren.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1367'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ De volledig-stapelpijpleidingen kunnen de pijpleidingen of plaatsing van de code
 
 ## Pijpleidingen aan de voorzijde {#front-end}
 
-Voorste-eindcode is om het even welke code die als statische dossiers wordt gediend. Het is gescheiden van UI code die door AEM wordt gediend en kan plaatsthema&#39;s, klant-bepaalde SPA, Frefly SPA, en andere oplossingen omvatten.
+Voorste-eindcode is om het even welke code die als statische dossiers wordt gediend. Het is verschillend van code UI die door AEM wordt gediend en kan plaatsthema&#39;s, klant-bepaalde SPA, SPA, en andere oplossingen omvatten.
 
 De front-end pijpleidingen helpen uw teams uw ontwerp en ontwikkelingsproces stroomlijnen door versnelde plaatsing van front-end code asynchroon van achterste-eindontwikkeling toe te laten. Deze speciale pijpleiding stelt JavaScript en CSS aan de AEM distributielaag als thema op, resulterend in een nieuwe themaversie die van pagina&#39;s door AEM kan worden van verwijzingen voorzien.
 

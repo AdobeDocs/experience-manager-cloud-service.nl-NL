@@ -2,16 +2,16 @@
 title: Uitbreiden [!DNL Adobe Experience Manager] as a Cloud Service met Adobe Developer App Builder.
 description: Uitbreiden [!DNL Adobe Experience Manager] as a Cloud Service met Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
 # Uitbreiden [!DNL Adobe Experience Manager] as a Cloud Service met Adobe Developer App Builder {#extend-using-app-builder}
 
-## Wat is App Builder voor AEM as a Cloud Service {#project-firefly}
+## Wat is App Builder voor AEM as a Cloud Service {#project-appbuilder}
 
 De nieuwe Adobe Developer App Builder biedt een uitbreidingsframework waarmee een ontwikkelaar eenvoudig AEM as a Cloud Service functies kan uitbreiden.
 
@@ -23,7 +23,7 @@ App Builder biedt klanten een manier om Adobe Experience Manager in verschillend
 * De Uitbreidbaarheid van de Diensten van de kern - breid kerntoepassingsmogelijkheden door het standaardgedrag met douaneeigenschappen &amp; bedrijfslogica uit te breiden.
 * Gebruikerservaring Uitbreidbaarheid: breid de kernervaring uit om bedrijfsvereisten te ondersteunen of klantspecifieke digitale eigenschappen, winkelcentra en back-office toepassingen te ontwikkelen.
 
-App Builder (voorheen Project Firefly genoemd) is sinds zomer 2020 beschikbaar voor zakelijke klanten en partners via onze Voorvertoning voor ontwikkelaars. De algemene beschikbaarheid (GA) van App Builder is gepland voor december 2021. We verwelkomen ontwikkelaars om App Builder uit te proberen via onze [Proefprogramma](https://adobe.ly/appbuilder-trial).
+App Builder is sinds zomer 2020 beschikbaar voor zakelijke klanten en partners via onze Developer Preview. De algemene beschikbaarheid (GA) van App Builder is gepland voor december 2021. We verwelkomen ontwikkelaars om App Builder uit te proberen via onze [Proefprogramma](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ In plaats van een out-of-the-box oplossing biedt Adobe Developer App Builder een
 
 In het volgende diagram ziet u hoe een standaardtoepassing die is gebaseerd op App Builder, deze functies gebruikt:
 
-![Architectuur](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
+![Architectuur](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
 Voor meer details over de architectuur van App Builder, heb een blik bij [Overzicht van architectuur](https://www.adobe.io/app-builder/docs/guides/).
 
@@ -62,7 +62,3 @@ App Builder biedt video&#39;s en documentatie voor ontwikkelaars, waaronder hulp
 Klaar om te beginnen met ontwikkelen? We hebben veel voorbeeldtoepassingen waarmee u snel aan de slag kunt:
 
 * [Code-labels voor App Builder op de Adobe Developer-website](https://www.adobe.io/app-builder/docs/resources/)
-
-## Ondersteuning {#support}
-
-Voor het type ondersteuningsverzoeken voor ontwikkelaars raden we ontwikkelaars aan om onze [Forum Experience League](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly).

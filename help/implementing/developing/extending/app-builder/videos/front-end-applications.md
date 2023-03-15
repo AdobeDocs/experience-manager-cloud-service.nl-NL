@@ -9,18 +9,14 @@ level: Beginner
 kt: 9459,9483
 thumbnail: 339244.jpg
 exl-id: 0e5319ea-b053-44bf-ac9c-9b0dee51eac4
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '63'
 ht-degree: 0%
 
 ---
 
 # Geavanceerde toepassingen voor App Builder
-
->[!IMPORTANT]
->
-> _Adobe Project Firefly, zoals vermeld in de video&#39;s in deze reeks, heet nu App Builder_
 
 ## Inleiding tot front-end App Builder-toepassingen
 

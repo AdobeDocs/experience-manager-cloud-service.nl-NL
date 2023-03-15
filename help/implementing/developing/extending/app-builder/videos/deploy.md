@@ -9,18 +9,14 @@ level: Beginner
 kt: 9461
 thumbnail: 339250.jpg
 exl-id: 54ad1cbc-a8b5-44b2-b12c-24c530a5a929
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '36'
 ht-degree: 0%
 
 ---
 
 # App Builder-toepassingen implementeren
-
->[!IMPORTANT]
->
-> _Adobe Project Firefly, zoals vermeld in de video&#39;s in deze reeks, heet nu App Builder_
 
 Leer wat opstellen betekent voor App Builder, en hoe te om uw toepassing op te stellen App Builder gebruikend Adobe I/O CLI.
 
