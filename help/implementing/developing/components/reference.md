@@ -2,7 +2,7 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 0%
@@ -360,7 +360,7 @@ De onderliggende node van type `cq:DropTargetConfig` Hiermee definieert u een ne
 
 ### Op plaats bewerken - cq:inplaceEditing {#cq-inplaceediting}
 
-Met een interne editor kan de gebruiker inhoud rechtstreeks in de inhoudsstroom bewerken, zonder dat een dialoogvenster hoeft te worden geopend. De standaard **Tekst** en **Titel** de componenten hebben allebei een inp-kant redacteur.
+Met een interne editor kan de gebruiker inhoud rechtstreeks in de inhoudsstroom bewerken, zonder dat een dialoogvenster hoeft te worden geopend. De standaard **Tekst** en **Titel** de componenten hebben allebei een op zijn plaats redacteur.
 
 Een interne editor is niet nodig/zinvol voor elk componenttype.
 
@@ -372,7 +372,7 @@ De `cq:inplaceEditing` node (type node) `cq:InplaceEditingConfig`) definieert ee
 | `configPath` | `String` | Pad van de editorconfiguratie, die door een configuratieknooppunt kan worden gespecificeerd |
 | `editorType` | `String` | De beschikbare typen zijn: `plaintext` voor niet-HTML-inhoud, `title` zet grafische titels om in een gewone tekst voordat het bewerken begint, en `text` gebruikt de Rich Text Editor |
 
-De volgende configuratie laat het inp-plaats uitgeven van de component toe en bepaalt `plaintext` als het editortype:
+De volgende configuratie laat het op zijn plaats uitgeven van de component toe en bepaalt `plaintext` als het editortype:
 
 ```text
     <cq:inplaceEditing
