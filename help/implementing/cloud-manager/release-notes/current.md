@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2023.2.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.2.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2023.3.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.3.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a38eb247fd90197f23bfaea59b8fc734ff9e4942
+source-git-commit: bfd2cbd574cac8de226903f923e774875a54ca4b
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2023.2.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2023.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release 2023.2.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
+Op deze pagina worden de opmerkingen bij de release 2023.3.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
 
 >[!NOTE]
 >
@@ -21,16 +21,9 @@ Op deze pagina worden de opmerkingen bij de release 2023.2.0 van Cloud Manager i
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2023.2.0 in AEM as a Cloud Service is 16 februari 2023. De volgende release is gepland voor 16 maart 2023.
+De releasedatum voor Cloud Manager versie 2023.3.0 in AEM as a Cloud Service is 16 maart 2023. De volgende release is gepland voor 13 april 2023.
 
-## Wat is er nieuw? {#what-is-new}
+## Opgeloste problemen {#bug-fixes}
 
-* Gebruikers kunnen downloaden [aangepaste UI-test](/help/implementing/cloud-manager/ui-testing.md) resulteert uit de gebruikersinterface.
-* [Snelle ontwikkelomgevingen](/help/implementing/developing/introduction/rapid-development-environments.md) (RDEs) is een nieuw type van het Milieu van de Wolk bedoeld als snelle, verenigbare, en verlengbare manier om die code te bevestigen die plaatselijk ook werkt functioneert zoals verwacht in de Wolk.
-   * RDEs laat ontwikkelaars toe om kwesties snel problemen op te lossen en nieuwe eigenschappen op AEM as a Cloud Service op te stellen.
-   * Met behulp van opdrachtregelprogramma&#39;s kunnen ontwikkelaars inhoudspakketten, bundels, inhoudsbestanden, OSGi-configuraties of verzendersconfiguraties snel synchroniseren naar RDE&#39;s.
-
-## API-wijzigingen {#api-changes}
-
-* API-wijzigingen zijn aangebracht voor ondersteuning [RDE&#39;s.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Rapid-Development-Environments)
-* De API staat nu terugwinning van toe [uitvoeringsartefacten.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Execution-Artifacts)
+* Er is een probleem opgetreden waarbij de go-live widget de eerder ingestelde datum onjuist instelde.
+* De titel van de handel op de **Meer informatie** van Cloud Manager navigeert de gebruiker nu naar de juiste pagina.
