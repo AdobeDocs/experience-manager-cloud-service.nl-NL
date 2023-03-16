@@ -2,9 +2,9 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 6de0b7c961083d9be00837439757da95326a96da
+source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
 workflow-type: tm+mt
-source-wordcount: '2141'
+source-wordcount: '2147'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ AEM biedt een geïntegreerde suite [Kwaliteitspates van Cloud Manager](/help/imp
 
 De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd). Bovendien, kan een UI testproject gemakkelijk door te gebruiken worden geproduceerd [het AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
-UI-tests worden uitgevoerd als onderdeel van een specifieke kwaliteitspoort voor elke Cloud Manager-pijplijn met een [toegewijd **Aangepaste UI-tests** stap.](/help/implementing/cloud-manager/deploy-code.md) Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten laten fouten toe om worden ontdekt en worden gemeld.
+UI-tests worden uitgevoerd als onderdeel van een specifieke kwaliteitspoort voor elke Cloud Manager-pijplijn met een [**Aangepaste UI-tests** stap](/help/implementing/cloud-manager/deploy-code.md) in [productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) of optioneel [niet-productiepijpleidingen.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten laten fouten toe om worden ontdekt en worden gemeld.
 
 In tegenstelling tot aangepaste functionele tests, die HTTP-tests zijn die in Java zijn geschreven, kunnen UI-tests een Docker-afbeelding zijn met tests die in elke taal zijn geschreven, mits ze de conventies volgen die in de sectie zijn gedefinieerd [UI-tests maken.](#building-ui-tests)
 
@@ -45,7 +45,7 @@ In deze sectie worden de stappen beschreven die zijn vereist voor het instellen 
 
       >[!NOTE]
       >
-      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de meest recente versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
    * Gebruik voor Java en WebDriver de voorbeeldcode van het dialoogvenster [AEM opslagplaats voor testvoorbeelden.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
 

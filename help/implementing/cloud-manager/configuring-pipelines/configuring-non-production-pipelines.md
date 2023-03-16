@@ -3,9 +3,9 @@ title: Niet-productiepijpleidingen configureren
 description: Leer hoe te om niet-productiepijpleidingen te vormen om de kwaliteit van uw code te testen alvorens aan productiemilieu's op te stellen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1369'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,10 @@ Nadat u uw programma hebt ingesteld en minstens één omgeving hebt gebruikt met
 
    ![Niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Op de **Configuratie** tabblad van het dialoogvenster **Niet-productiepijpleiding toevoegen** selecteert u het type niet-productiepijplijn dat u wilt toevoegen, of **Codekwaliteit, pijplijn** of **Implementatiepijp**.
+1. Op de **Configuratie** tabblad van het dialoogvenster **Niet-productiepijpleiding toevoegen** selecteert u het type niet-productiepijplijn dat u wilt toevoegen.
+
+   * **Codekwaliteit, pijplijn** - Creeer een pijpleiding die uw code bouwt, eenheidstests in werking stelt, en codekwaliteit evalueert maar NIET opstelt.
+   * **Implementatiepijp** - Creeer een pijpleiding die uw code bouwt, eenheidstests in werking stelt, codekwaliteit evalueert, en aan een milieu opstelt.
 
    ![Dialoogvenster Niet-productiepijplijn toevoegen](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -48,6 +51,12 @@ Nadat u uw programma hebt ingesteld en minstens één omgeving hebt gebruikt met
 
       * **Handmatig** - Gebruik deze optie om de pijpleiding manueel te beginnen.
       * **Wijzigingen in Git** - Deze opties beginnen de pijpleiding CI/CD wanneer de bemoeienis aan de gevormde git tak wordt toegevoegd. Met deze optie, kunt u de pijpleiding nog manueel zoals vereist beginnen.
+
+1. Als u een **Implementatiepijp** u zult ook moeten bepalen **Belangrijk gedrag metrische fouten**.
+
+   * **Telkens vragen** - Dit is de standaardinstelling en u moet handmatig ingrijpen bij belangrijke fouten.
+   * **Direct mislukken** - Indien geselecteerd, zal de pijpleiding worden geannuleerd wanneer een belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
+   * **Direct doorgaan** - Indien geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 1. Klikken **Doorgaan**.
 
@@ -106,6 +115,12 @@ Om de configuratie van de full-stack code non-production pijpleiding te beëindi
    * **Git Branch** - Deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
       * Voer de eerste paar tekens van de naam van de vertakking in en met de functie voor automatisch aanvullen van dit veld kunt u de overeenkomende vertakkingen vinden om u te helpen selecteren.
    * **Configuratie van web-Tier negeren** - Wanneer gecontroleerd, zal de pijpleiding niet uw configuratie van de Webrij opstellen.
+
+   * **Pijpleiding** - Als uw pijpleiding een plaatsingspijpleiding is, kunt u verkiezen om een het testen fase in werking te stellen. Controleer de opties die u in deze fase wilt inschakelen. Als geen van de opties wordt geselecteerd, zal de het testen fase niet tijdens pijpleidingsuitvoering worden getoond.
+
+      * **Functioneel testen van producten** - Uitvoeren [functionele producttests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) tegen de ontwikkelomgeving.
+      * **Aangepaste functionele tests** - Uitvoeren [aangepaste functionele tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) tegen de ontwikkelomgeving.
+      * **Aangepaste UI-tests** - Uitvoeren [aangepaste UI-tests](/help/implementing/cloud-manager/ui-testing.md) voor aangepaste toepassingen.
 
    ![Volledige pijplijn](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

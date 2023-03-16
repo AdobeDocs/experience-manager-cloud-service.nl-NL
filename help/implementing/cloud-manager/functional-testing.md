@@ -2,9 +2,9 @@
 title: Functionele tests
 description: Leer over de drie verschillende types van functionele tests die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 1e75a9a8ba4eff030d079d4b7adf7fc8588b8cc1
+source-git-commit: cd0b40ffa54eac0d7488b23329c4d2666c992da7
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,14 @@ Zowel de functionele tests van het product als de aangepaste functionele tests z
 
 De functionele tests van het product zijn een reeks stabiele HTTP integratietests (ITs) van kernfunctionaliteit in AEM zoals creatie en replicatietaken. Deze tests worden gehandhaafd door Adobe en zijn bedoeld om veranderingen in de code van de douanetoepassing te verhinderen worden opgesteld als het kernfunctionaliteit breekt.
 
-Functionele tests voor producten worden automatisch uitgevoerd wanneer u nieuwe code implementeert in Cloud Manager en kunnen niet worden overgeslagen.
+* [Productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): Functionele tests voor producten worden automatisch uitgevoerd wanneer u nieuwe code implementeert in Cloud Manager en kunnen niet worden overgeslagen.
+* [Niet-productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): De functionele tests van het product kunnen naar keuze worden geselecteerd om te lopen wanneer u uw niet productiepijplijn uitvoert.
 
 De functionele tests van het product worden gehandhaafd als open-source-project. Zie [functionele producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub voor meer informatie.
 
 ### Aangepaste functionele tests {#custom-functional-testing}
 
-Terwijl het functionele testen van producten door Adobe wordt bepaald, kunt u uw eigen kwaliteitstests voor uw eigen toepassing schrijven. Dit zal als douane functionele tests als deel van de productiepijplijn worden uitgevoerd om de kwaliteit van uw toepassing te verzekeren.
+Terwijl het functionele testen van producten door Adobe wordt bepaald, kunt u uw eigen kwaliteitstests voor uw eigen toepassing schrijven. Dit wordt uitgevoerd als aangepaste functionele tests in het kader van de [productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) of optioneel [niet-productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) om de kwaliteit van uw toepassing te garanderen.
 
 Het functionele testen van de douane wordt uitgevoerd zowel voor douanecode plaatsingen als duw verbeteringen, die het vooral belangrijk maken om goede functionele tests te schrijven die AEM codeveranderingen verhinderen uw toepassingscode te breken. De aangepaste functionele teststap is altijd aanwezig en kan niet worden overgeslagen.
 
@@ -59,7 +60,7 @@ Nadat u een nieuwe gegevensopslagruimte voor code hebt gemaakt in Cloud Manager,
 
 >[!NOTE]
 >
->Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de meest recente versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
 Wanneer u de inhoud van de `it.tests` kunt u de map gebruiken als basis voor uw eigen tests en vervolgens:
 
