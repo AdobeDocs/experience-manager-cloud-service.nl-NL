@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 050491bb8d2e9387719bea35a3869a0fb9a7f726
+source-git-commit: c37c1c3eca0ae9d457f422efdaf5e29be03e6014
 workflow-type: tm+mt
-source-wordcount: '3978'
+source-wordcount: '4006'
 ht-degree: 21%
 
 ---
@@ -902,7 +902,7 @@ ht-degree: 21%
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
          + [SDK&#39;s en CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
          + [Een toepassing maken](/help/implementing/developing/extending/app-builder/videos/create.md)
-         + [Acties](/help/implementing/developing/extending/app-builder/videos/actions.md)
+         + [Handelingen](/help/implementing/developing/extending/app-builder/videos/actions.md)
          + [Opslagbibliotheken](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
          + [Toepassingen die aan gebeurtenissen zijn gerelateerd](/help/implementing/developing/extending/app-builder/videos/event-driven-applications.md)
          + [Voorste toepassingen](/help/implementing/developing/extending/app-builder/videos/front-end-applications.md)
@@ -961,3 +961,10 @@ ht-degree: 21%
    + Toegankelijkheid {#accessibility}
       + [AEM as a Cloud Service en Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
       + [Snelgids voor WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
++ Universele editor {#universal-editor}
+   + [Introductie van Universal Editor](/help/implementing/universal-editor/introduction.md)
+   + [Inhoud ontwerpen met de Universal Editor](/help/implementing/universal-editor/authoring.md)
+   + [Aan de slag met de Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+   + [Architectuur van Universal Editor](/help/implementing/universal-editor/architecture.md)
+   + [Kenmerken en typen](/help/implementing/universal-editor/attributes-types.md)
+   + [Universal Editor-verificatie](/help/implementing/universal-editor/authentication.md)
