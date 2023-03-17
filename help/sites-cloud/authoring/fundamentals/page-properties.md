@@ -2,10 +2,10 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: d0a698a8f8685b1e5957a9d93d805ca3f825354a
+source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 5%
+source-wordcount: '2428'
+ht-degree: 4%
 
 ---
 
@@ -37,10 +37,12 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Voor deze functionaliteit is het gebruik van de component Pagina vanaf versie 2.14.0 of hoger van het dialoogvenster [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-   * **Negeren** - Schakel dit selectievakje in om de merkwitruimte op deze pagina te definiëren.
-      * De waarde wordt overgeërfd door onderliggende pagina&#39;s, tenzij deze ook hun **Negeren** ingestelde waarden.
-   * **Waarde overschrijven** - De tekst van de merkmarkering die aan de paginatitel moet worden toegevoegd.
-      * De waarde wordt toegevoegd aan de paginatitel na een pipe-teken, zoals &quot;Cycling Tuscany&quot; | Altijd klaar voor de WKND&quot;
+   * **Brand Slug**
+
+      * **Negeren** - Schakel dit selectievakje in om de merkwitruimte op deze pagina te definiëren.
+         * De waarde wordt overgeërfd door onderliggende pagina&#39;s, tenzij deze ook hun **Negeren** ingestelde waarden.
+      * **Waarde overschrijven** - De tekst van de merkmarkering die aan de paginatitel moet worden toegevoegd.
+         * De waarde wordt toegevoegd aan de paginatitel na een pipe-teken, zoals &quot;Cycling Tuscany&quot; | Altijd klaar voor de WKND&quot;
 
 * **HTML-id**
 
@@ -105,14 +107,13 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
       * Als u bijvoorbeeld een alias definieert van `private` voor de pagina `/content/wknd/us/en/magazine/members-only`, kan deze pagina ook worden geopend via `/content/wknd/us/en/magazine/private`
       * Het creëren van een aliasreeksen `sling:alias` eigenschap op het paginaknooppunt, die alleen invloed heeft op de bron, niet op het pad naar de opslagplaats.
       * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [Publicatieopties](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
-
-   <!--
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-  -->
+      * Zie voor meer informatie [Gelokaliseerde paginanamen onder SEO- en URL-beheertips](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuratie**
 
-   * **Cloud Configuration** - Het pad naar de configuratie
+   * **Overgenomen van &lt;path>** - overname in- en uitschakelen; schakelen tussen beschikbaarheid van **Cloud Configuration** voor selectie
+
+   * **Cloud Configuration** - Het pad naar de geselecteerde configuratie
 
 * **Sjablooninstellingen**
 
@@ -132,14 +133,40 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    * **Configuratie exporteren** - Geeft een exportconfiguratie op
 
-### Miniatuur {#thumbnail}
+* **SEO**
 
-De paginaminiatuur configureren
+   * **Canonical Url** - kan worden gebruikt om de canonieke URL van de pagina te overschrijven; als de URL van de pagina leeg wordt gelaten, is deze de canonieke URL
 
-* **Voorvertoning genereren** - Genereer een voorvertoning van de pagina die u als miniatuur wilt gebruiken
-* **Afbeelding uploaden** - Upload een afbeelding die u als miniatuur wilt gebruiken
-* **Afbeelding selecteren** - Selecteer een bestaand element dat u als miniatuur wilt gebruiken
-* **Vorige versie** - Deze optie wordt beschikbaar nadat u een wijziging in de miniatuur hebt aangebracht. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
+   * **Robots-tags** - selecteer de robots-tags om het gedrag van zoekprogrammacrawlers te bepalen.
+
+      >[!NOTE]
+      >
+      >Sommige opties veroorzaken een conflict met elkaar. In geval van een conflict krijgt de meer permissieve optie voorrang.
+
+   * **Sitemap genereren** - als deze optie is geselecteerd, wordt een sitemap.xml gegenereerd voor deze pagina en de onderliggende elementen ervan
+
+### Afbeeldingen {#images}
+
+* **Aanbevolen afbeelding**
+
+   Selecteer en configureer de afbeelding die u wilt weergeven. Dit wordt gebruikt in componenten die naar de pagina verwijzen; bijvoorbeeld stramienen, paginalijsten, enz.
+
+   * **Afbeelding**
+
+      U kunt **Selecteren** een middel, of doorblader voor een dossier om te uploaden, dan **Bewerken**, of **Wissen**.
+
+   * **Alternatieve tekst** - een tekst die wordt gebruikt om de betekenis en/of functie van de afbeelding weer te geven; bijvoorbeeld voor schermlezers.
+
+   * **Overnemen - Uit het DAM-activum overgenomen waarde** - als deze optie wordt ingeschakeld, wordt de alternatieve tekst gevuld met de waarde van de optie `dc:description`metagegevens in DAM
+
+* **Miniatuur**
+
+   De paginaminiatuur configureren
+
+   * **Voorvertoning genereren** - Genereer een voorvertoning van de pagina die u als miniatuur wilt gebruiken
+   * **Afbeelding uploaden** - Upload een afbeelding die u als miniatuur wilt gebruiken
+   * **Afbeelding selecteren** - Selecteer een bestaand element dat u als miniatuur wilt gebruiken
+   * **Vorige versie** - Deze optie wordt beschikbaar nadat u een wijziging in de miniatuur hebt aangebracht. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
 
 ### Sociale media {#social-media}
 
@@ -156,12 +183,11 @@ De paginaminiatuur configureren
 
 * **Configuraties van Cloud Servicen** - Eigenschappen definiëren voor cloudservices
 
-   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
-  -->
-
 ### Personalisatie {#personalization}
 
 * **ContextHub-configuraties**
+
+   * **Overgenomen van &lt;path>** - overname in- en uitschakelen; schakelen tussen beschikbaarheid van **ContextHub Pathn** en **Segmentpad** voor selectie
 
    * **ContextHub-pad** - Definieer de [ContextHub-configuratie](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **Segmentpad** - Definieer de [Segmentpad](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -176,15 +202,9 @@ De paginaminiatuur configureren
 
 * **Machtigingen**
 
-   * Machtigingen toevoegen
-   * Gesloten gebruikersgroep bewerken
-   * Effectieve machtigingen weergeven
-
-   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-
-   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-
-   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * **Machtigingen toevoegen**
+   * **Gesloten gebruikersgroep bewerken**
+   * De weergave van **Effectieve machtigingen**
 
 ### Blauwdruk {#blueprint}
 
@@ -195,6 +215,8 @@ Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren.
 * **Rollout Configs** - Controleert de omstandigheden waaronder de wijzigingen aan Levende Exemplaar zullen worden verspreid
 
 ### Live kopie {#live-copy}
+
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën.
 
 * **Synchroniseren** - Actieve kopie synchroniseren met vervagen, lokale wijzigingen behouden
 * **Herstellen** - Actieve kopie opnieuw instellen op de status Vervagen, lokale wijzigingen verwijderen
@@ -220,6 +242,33 @@ Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren.
 Wanneer een voorvertoningsomgeving is ingeschakeld, ziet u:
 
 * Voorbeeld-URL - de URL die wordt gebruikt voor toegang tot de inhoud in de voorvertoningsomgeving
+
+### Progressieve webtoepassing {#progressive-web-app}
+
+Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) voor progressieve webtoepassingen inschakelen voor ervaringen die zijn gemaakt in AEM Sites.
+
+>[!NOTE]
+>
+>Zie voor meer informatie [Progressieve webtoepassingsfuncties inschakelen](/help/sites-cloud/authoring/features/enable-pwa.md).
+
+* **Installeerbare ervaring configureren**
+
+   * **PWA inschakelen** - de functie in-/uitschakelen; staat gebruikers toe om de plaats als PWA te installeren
+   * **StartupURL** - de voorkeursopstarthURL
+   * **Weergavemodus** - hoe de browser moet worden verborgen of op een andere manier aan de gebruiker moet worden getoond op het lokale apparaat
+   * **Schermoriëntatie** - hoe de PWA de oriëntatie van het apparaat zal verwerken
+   * **Themakleur** - de kleur van de toepassing die van invloed is op de manier waarop het besturingssysteem van de lokale gebruiker de native UI-werkbalk en navigatiebesturingselementen weergeeft.
+   * **Achtergrondkleur** - de achtergrondkleur van de app, die wordt weergegeven terwijl de app wordt geladen
+   * **Pictogram** - het pictogram dat de toepassing op het apparaat van de gebruiker vertegenwoordigt
+
+* **Cachebeheer (geavanceerd)**
+
+   * **Caching strategie en frequentie van inhoudvernieuwing** - definieert het cachemodel voor uw PWA
+   * **Bestanden die in cache moeten worden geplaatst voor offline gebruik**
+      * **Bestanden vooraf in cache plaatsen (technische voorvertoning)** - bestanden die op AEM worden gehost, worden in de lokale browsercache opgeslagen wanneer de serviceworker wordt geïnstalleerd en voordat deze wordt gebruikt
+      * **Client-side bibliotheken** - clientbibliotheken die in cache moeten worden geplaatst voor offline ervaring
+      * **Padinsluitingen** - de netwerkverzoeken voor de bepaalde wegen worden onderschept en de caching inhoud is teruggekeerd in overeenstemming met de gevormde Caching strategie en de frequentie van inhoud verfrissen zich
+      * **Paduitsluitingen** - deze bestanden worden nooit in de cache geplaatst, ongeacht de instellingen onder Bestanden vooraf in cache plaatsen en Pad-insluiting
 
 ## Pagina-eigenschappen bewerken {#editing-page-properties-1}
 
