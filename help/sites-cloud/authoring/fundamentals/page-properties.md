@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2387'
 ht-degree: 4%
 
 ---
@@ -168,17 +168,6 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    * **Afbeelding selecteren** - Selecteer een bestaand element dat u als miniatuur wilt gebruiken
    * **Vorige versie** - Deze optie wordt beschikbaar nadat u een wijziging in de miniatuur hebt aangebracht. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
 
-### Sociale media {#social-media}
-
-* **Delen via sociale media**
-
-   Definieert de opties voor delen die beschikbaar zijn op de pagina. Hiermee geeft u de opties weer die beschikbaar zijn voor de [De kerncomponent delen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
-
-   * **Delen door gebruikers voor Facebook inschakelen**
-   * **Delen door gebruikers voor Pinterest inschakelen**
-   * **Voorkeurswijziging XF**
-      * De fragmentvariatie definiëren die wordt gebruikt voor het genereren van metagegevens voor de pagina
-
 ### Cloud Services {#cloud-services}
 
 * **Configuraties van Cloud Servicen** - Eigenschappen definiëren voor cloudservices
@@ -208,7 +197,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 ### Blauwdruk {#blueprint}
 
-Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. Blauwdrukken dienen als basis voor Actieve kopieën maken deel uit van [Beheer van meerdere sites.](/help/sites-cloud/administering/msm/overview.md)
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. Blauwdrukken dienen als basis voor actieve kopieën en maken deel uit van [Beheer van meerdere sites.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Huidige actieve kopieën** - Hiermee geeft u pagina&#39;s weer die op deze blauwdrukpagina zijn gebaseerd (dat wil zeggen: Live kopieën van deze pagina zijn)
 
@@ -216,7 +205,7 @@ Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren.
 
 ### Live kopie {#live-copy}
 
-Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën.
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën. Net als bij Blauwdrukken maken actieve kopieën deel uit van [Beheer van meerdere sites.](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchroniseren** - Actieve kopie synchroniseren met vervagen, lokale wijzigingen behouden
 * **Herstellen** - Actieve kopie opnieuw instellen op de status Vervagen, lokale wijzigingen verwijderen
