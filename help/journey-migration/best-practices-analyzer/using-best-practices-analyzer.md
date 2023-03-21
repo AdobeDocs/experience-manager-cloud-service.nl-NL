@@ -2,7 +2,7 @@
 title: Analysator van best practices gebruiken
 description: Analysator van best practices gebruiken
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 41%
@@ -69,7 +69,6 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-
 1. Zodra het BPA- rapport wordt geproduceerd, toont het een samenvatting en het aantal bevindingen in een tabelformaat dat door het type van bevinding en het belangrijkheidsniveau wordt georganiseerd. Voor meer informatie over een bepaalde bevinding kunt u op het nummer klikken dat overeenkomt met het type bevinding in de tabel.
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
@@ -92,8 +91,6 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
-
-
 #### Het gebruiken van Filters in het Rapport van de Analysator van Beste praktijken {#bpa-filters}
 
 Bevindingen met betrekking tot [ACS-opdrachten](https://adobe-consulting-services.github.io/acs-aem-commons/)volgt u de onderstaande stappen:
@@ -111,7 +108,6 @@ Bevindingen met betrekking tot [ACS-opdrachten](https://adobe-consulting-service
 
    >[!NOTE]
    > De bevindingen van de ACS-Gemeenschappelijke Gemeenschap moeten niet worden genegeerd. Zie [documentatie](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) om de verenigbaarheid met AEM as a Cloud Service te bepalen.
-
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -158,7 +154,6 @@ Bekijk de onderstaande tabel om inzicht te krijgen in de belangniveaus:
 | ADVISORY | Deze bevinding vormt mogelijk een upgradeprobleem. Vervolgonderzoek wordt aanbevolen. |
 | MAJOR | Deze bevinding is waarschijnlijk een upgradeprobleem dat moet worden aangepakt. |
 | CRITICAL | Deze bevinding is waarschijnlijk een upgradeprobleem dat moet worden aangepakt om functie- of prestatieverlies te voorkomen. |
-
 
 ## Het CSV-rapport van de Analysator van best practices interpreteren {#cra-csv-report}
 
