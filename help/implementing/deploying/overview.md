@@ -3,9 +3,9 @@ title: Implementeren naar AEM as a Cloud Service
 description: Implementeren naar AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 0d586bf7e9ad6653f9a45c2fe9f0f8a156de5133
+source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
-source-wordcount: '3497'
+source-wordcount: '3509'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Na de overgang naar de nieuwe versie van de toepassing:
    * Mappen (toevoegen, wijzigen, verwijderen)
    * Bewerkbare sjablonen (toevoegen, wijzigen, verwijderen)
    * Contextbewuste configuratie (alles onder `/conf`) (toevoegen, wijzigen, verwijderen)
-   * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. <!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. --> Merk op dat AEM CS momenteel FileVault versie 3.4.0 gebruikt, die installatiekoppen aan admin gebruikers, systeemgebruikers, en lid van de beheerdersgroep beperkt).
+   * Scripts (pakketten kunnen installatiekoppen activeren in verschillende stadia van het installatieproces van de pakketinstallatie. Zie de [Jackrabbit filevault-documentatie](https://jackrabbit.apache.org/filevault/installhooks.html) over het installeren van haken. Merk op dat AEM CS momenteel FileVault versie 3.4.0 gebruikt, die installatiekoppen aan admin gebruikers, systeemgebruikers, en lid van de beheerdersgroep beperkt).
 
 Het is mogelijk de installatie van veranderbare inhoud te beperken tot auteur of te publiceren door pakketten in een install.auteur of install.publish omslag in te bedden onder `/apps`. Herstructurering om deze scheiding te weerspiegelen vond plaats in AEM 6.5 en nadere bijzonderheden over de aanbevolen projectherstructurering zijn te vinden in de [AEM 6.5-documentatie.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
@@ -285,16 +285,16 @@ Als een mislukking na de plaatsing wordt gemeld of ontdekt, is het mogelijk dat 
 
 In tegenstelling tot gewone ontwikkelomgevingen, die code via de pijplijn van de Manager van de Wolk opstellen, gebruiken de ontwikkelaars bevellijnhulpmiddelen om code van een lokale ontwikkelomgeving aan RDE te synchroniseren. Zodra de veranderingen met succes in een RDE zijn getest, zouden zij aan een regelmatige milieu van de Ontwikkeling van de Wolk door de pijpleiding van de Manager van de Wolk moeten worden opgesteld, die de code door de aangewezen kwaliteitsspoorten zal zetten.
 
-## Runmodi {#runmodes}
+## Modi uitvoeren {#runmodes}
 
 In bestaande AEM oplossingen hebben klanten de mogelijkheid instanties uit te voeren met willekeurige uitvoeringsmodi en om OSGI-configuratie toe te passen of om OSGI-bundels op die specifieke instanties te installeren. De uitvoermodi die gewoonlijk worden gedefinieerd, omvatten de *service* (auteur en publicatie) en het milieu (rood, dev, podium, pod).
 
 AEM as a Cloud Service is daarentegen meer mening over welke uitvoeringsmodi beschikbaar zijn en hoe OSGI-bundels en OSGI-configuratie aan hen kunnen worden toegewezen:
 
 * De de configuratieloopwijzen van OSGI moeten RDE, dev, stadium, prod voor het milieu of auteur, publiceren voor de dienst van verwijzingen voorzien. Een combinatie van `<service>.<environment_type>` wordt gesteund terwijl deze in deze specifieke orde moeten worden gebruikt (bijvoorbeeld `author.dev` of `publish.prod`). Er moet rechtstreeks vanuit de code naar de OSGI-tokens worden verwezen in plaats van de `getRunModes` , die niet langer de `environment_type` bij uitvoering. Zie voor meer informatie [Het vormen OSGi voor AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
-* De de bundelloopwijzen van OSGI zijn beperkt tot de dienst (auteur, publiceer). OSGI-bundels per run-modus moeten in het inhoudspakket worden geïnstalleerd onder een van beide `install/author` of `install/publish`.
+* De de bundelloopwijzen van OSGI zijn beperkt tot de dienst (auteur, publiceer). OSGI-bundels per run-modus moeten in het inhoudspakket worden geïnstalleerd onder een van beide `install.author` of `install.publish`.
 
-Net als bij de bestaande AEM, is er geen manier om runmodi te gebruiken om alleen inhoud voor specifieke omgevingen of services te installeren. Als u een ontwikkelomgeving wilt laten doorlopen met gegevens of HTML die zich niet in het werkgebied of de productie bevinden, kan de pakketmanager worden gebruikt.
+AEM as a Cloud Service staat het gebruik van uitvoeringsmodi niet toe om inhoud voor specifieke milieu&#39;s of de diensten te installeren. Als een ontwikkelomgeving moet worden voorzien van gegevens of HTML die zich niet in de testomgeving of productieomgeving bevinden, kan de pakketbeheerder worden gebruikt.
 
 De ondersteunde runmode configuraties zijn:
 

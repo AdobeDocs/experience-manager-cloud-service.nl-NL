@@ -3,9 +3,9 @@ title: OSGi configureren voor Adobe Experience Manager as a Cloud Service
 description: OSGi-configuratie met geheime waarden en milieu-specifieke waarden
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 3a6e46e99ca205bca405660fc83c7037a00140b6
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3312'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ Adobe Experience Manager as a Cloud Service vereist het gebruik van omgevingspec
 
 Gebruik geheime milieu-specifieke configuraties om de waarde voor geheimen op alle milieu&#39;s van Adobe Experience Manager as a Cloud Service, met inbegrip van Stadium en Productie op te slaan.
 
-## OSGi-configuraties maken {#creating-sogi-configurations}
+## OSGi-configuraties maken {#creating-osgi-configurations}
 
 Er zijn twee manieren om configuraties tot stand te brengen OSGi, zoals hieronder beschreven. De eerste benadering wordt typisch gebruikt voor het vormen van componenten van douaneOSGi die bekende eigenschappen OSGi en waarden door de ontwikkelaar, en laatstgenoemde voor AEM-verstrekte componenten OSGi hebben.
 
@@ -189,8 +189,8 @@ De AEM QuickStart Jar&#39;s AEM Web Console van SDK kan worden gebruikt vormt co
 >
 >De configuratie-interface van de AEM webconsole schrijft `.cfg.json` in de opslagplaats. Daarom ben me hiervan bewust om potentieel onverwacht gedrag tijdens lokale ontwikkeling te vermijden, wanneer de AEM project-bepaalde configuraties OSGi van de geproduceerde configuraties kunnen verschillen.
 
-1. Meld u als beheerder aan bij de AEM webconsole van QuickStart Jar van de AEM SDK
-1. Navigeer naar OSGi > Configuratie
+1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als beheerder
+1. Navigeren naar **OSGi** > **Configuratie**
 1. Om te vormen, bepaal de plaats van de component OSGi en tik zijn titel om uit te geven
    ![OSGi-configuratie](./assets/configuring-osgi/configuration.png)
 1. Bewerk indien nodig de OSGi-waarden van het configuratiebezit via de webinterface

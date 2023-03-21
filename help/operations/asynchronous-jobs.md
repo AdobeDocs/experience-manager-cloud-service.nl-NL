@@ -1,17 +1,17 @@
 ---
 title: Asynchrone taken
-description: Adobe Experience Manager optimaliseert prestaties door sommige resource-intensieve taken asynchroon te voltooien.
+description: Adobe Experience Manager optimaliseert de prestaties door sommige hulpbronintensieve taken als achtergrondbewerkingen asynchroon te voltooien.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 97%
+source-wordcount: '905'
+ht-degree: 71%
 
 ---
 
 # Asynchrone bewerkingen {#asynchronous-operations}
 
-Om negatieve gevolgen voor de prestaties te verminderen verwerkt Adobe Experience Manager bepaalde langlopende en resource-intensieve bewerkingen asynchroon. Bij asynchrone verwerking worden meervoudige taken in wachtrijen geplaatst en serieel uitgevoerd, afhankelijk van de beschikbaarheid van systeembronnen.
+Om negatieve gevolgen voor de prestaties te beperken, verwerkt Adobe Experience Manager bepaalde langlopende en middelintensieve bewerkingen asynchroon als achtergrondbewerkingen. Bij asynchrone verwerking worden meervoudige taken in wachtrijen geplaatst en serieel uitgevoerd, afhankelijk van de beschikbaarheid van systeembronnen.
 
 Deze bewerkingen omvatten:
 
@@ -22,7 +22,7 @@ Deze bewerkingen omvatten:
 * Pagina’s verplaatsen
 * Actieve exemplaren uitrollen
 
-U kunt de status van asynchrone taken weergeven vanaf het **[!UICONTROL Async Job Status]**-dashboard via **Algemene navigatie** -> **Tools** -> **Bewerkingen** -> **Taken**.
+U kunt de status van asynchrone taken weergeven in het menu **[!UICONTROL Background Operations]** dashboard op **Algemene navigatie** -> **Gereedschappen** -> **Algemeen** -> **Taken**.
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ U kunt de status van asynchrone taken weergeven vanaf het **[!UICONTROL Async Jo
 
 Wanneer AEM een bewerking asynchroon verwerkt, ontvangt u een bericht in uw [inbox](/help/sites-cloud/authoring/getting-started/inbox.md) en via e-mail (mits ingeschakeld).
 
-Navigeer naar de pagina **[!UICONTROL Async Job Status]** om de status van de asynchrone bewerkingen in detail weer te geven.
+Navigeer naar de pagina **[!UICONTROL Background Operations]** om de status van de asynchrone bewerkingen in detail weer te geven.
 
-1. Klik in de Experience Manager-interface op **[!UICONTROL Operations]** > **[!UICONTROL Jobs]**.
+1. Selecteer in de interface Experience Manager **Algemene navigatie** -> **Gereedschappen** -> **Algemeen** -> **Taken**.
 
-1. Controleer op de pagina **[!UICONTROL Async Job Status]** de details van de bewerkingen.
+1. Controleer op de pagina **[!UICONTROL Background Operations]** de details van de bewerkingen.
 
    ![Status en details van asynchrone bewerkingen](assets/async-operation-status.png)
 
@@ -70,13 +70,22 @@ Navigeer naar de pagina **[!UICONTROL Async Job Status]** om de status van de as
    >
    >U kunt een taak niet verwijderen als de status **Actief** of **In wachtrij** is.
 
-## Voltooide taken wissen {#purging-completed-jobs}
+## Opties voor asynchrone taakverwerking configureren {#configure}
 
-AEM voert elke dag om 01:00 een opschoontaak uit om voltooide, asynchrone taken te wissen die meer dan een dag oud zijn.
+Er zijn een aantal opties rond asynchrone banen die kunnen worden gevormd. De volgende voorbeelden tonen hoe dit kan worden gedaan gebruikend de configuratiemanager op een lokaal ontwikkelingssysteem.
+
+>[!NOTE]
+>
+>[OSGi-configuraties](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) worden beschouwd als muteerbare inhoud en dergelijke configuraties moeten worden geïmplementeerd als een inhoudspakket voor een productieomgeving.
+
+### Voltooide taken wissen {#purging-completed-jobs}
+
+AEM voert elke dag om 10:00 een zuiveringstaak uit om voltooide asynchrone banen te schrappen die meer dan een dag oud zijn.
 
 U kunt het schema wijzigen voor de opschoontaak en hoe lang details van voltooide taken bewaard blijven voordat ze worden verwijderd. U kunt ook het maximum aantal voltooide taken configureren waarvoor de details tot een gewenst tijdstip bewaard blijven.
 
-1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder.
+1. Navigeren naar **OSGi** > **Configuratie**
 1. Open de taak **[!UICONTROL Adobe Granite Async Jobs Purge Scheduled Job]**.
 1. Geef het volgende op:
    * Het maximum aantal dagen waarna voltooide taken worden verwijderd.
@@ -87,15 +96,12 @@ U kunt het schema wijzigen voor de opschoontaak en hoe lang details van voltooid
 
 1. Sla de wijzigingen op.
 
-## Asynchrone verwerking configureren {#configuring-asynchronous-processing}
-
-U kunt configureren wat het maximum aantal assets, pagina’s of verwijzingen voor AEM is om een bepaalde bewerking asynchroon te verwerken en om e-mailmeldingen over de verwerking van taken in en uit te schakelen.
-
 ### Asynchrone verwijderingsbewerkingen van assets configureren {#configuring-synchronous-delete-operations}
 
 Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wordt de verwijderingsbewerking asynchroon uitgevoerd.
 
-1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder.
+1. Navigeren naar **OSGi** > **Configuratie**
 1. Open vanuit de webconsole de **[!UICONTROL Async Process Default Queue Configuration.]**
 1. Geef in het vak **[!UICONTROL Threshold number of assets]** het drempelaantal assets/mappen op voor de asynchrone verwerking van verwijderingsbewerkingen.
 
@@ -108,7 +114,8 @@ Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wo
 
 Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 
-1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder.
+1. Navigeren naar **OSGi** > **Configuratie**
 1. Open vanuit de webconsole de **[!UICONTROL Async Move Operation Job Processing Configuration.]**
 1. Geef in het vak **[!UICONTROL Threshold number of assets/references]** het drempelaantal assets/mappen of verwijzingen op voor de asynchrone verwerkings- of verplaatsingsbewerkingen.
 
@@ -121,7 +128,8 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 
 Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 
-1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder.
+1. Navigeren naar **OSGi** > **Configuratie**
 1. Open vanuit de webconsole de **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
 1. Geef in het veld **[!UICONTROL Threshold number of references]** het drempelaantal verwijzingen op voor asynchrone verwerking van paginaverplaatsingsbewerkingen.
 
@@ -132,7 +140,8 @@ Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de
 
 ### Asynchrone MSM-bewerkingen configureren {#configuring-asynchronous-msm-operations}
 
-1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder.
+1. Navigeren naar **OSGi** > **Configuratie**
 1. Open vanuit de webconsole de **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
 1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld, succes, mislukt.
 
