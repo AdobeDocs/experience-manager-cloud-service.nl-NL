@@ -1,17 +1,17 @@
 ---
-title: Introductie van Universal Editor
-description: Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken om buitengewone ervaringen te bieden, de snelheid van de inhoud te verhogen en een geavanceerde ontwikkelaarservaring te bieden.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+title: Universal Visual Editor Introductie
+description: Leer hoe de Universele Visuele Redacteur (a.k.a. Met de Universal Editor) kunt u WYSIWYG-bewerkingen (what-you-see-is-what-you-get) zonder kop en met veel titel uitvoeren. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
+source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
 
 
-# Introductie van Universal Editor {#introduction}
+# Universal Visual Editor Introductie {#introduction}
 
-Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken om buitengewone ervaringen te bieden, de snelheid van de inhoud te verhogen en een geavanceerde ontwikkelaarservaring te bieden.
+Leer hoe de Universele Visuele Redacteur (a.k.a. Met de Universal Editor) kunt u WYSIWYG-bewerkingen (what-you-see-is-what-you-get) zonder kop en met veel titel uitvoeren. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
 
 ## Achtergrond {#background}
 
@@ -42,17 +42,14 @@ De vereisten voor een implementatie om gebruik te maken van de Universal Editor 
 De auteur van een inhoud moet dezelfde krachtige bewerkingservaring hebben als de AEM pagina-editor. Maar in de Universal Editor kunnen auteurs van inhoud bewerken **alle** inhoud visueel en in context en ondersteunt:
 
 * **Paginastructuren AEM** - Genest `cq:Components` van `cq:Pages`, met inbegrip van ervaringsfragmenten
-* **Inhoudsfragmenten AEM** - Inhoud uit inhoudsfragmenten bewerken zoals deze in de context van de ervaring worden weergegeven
-* **Documenten** - Word, Excel, Google Docs, Markdown, of zelfs duidelijke HTML voortgeduurd, bijvoorbeeld op GitHub
-* **Inhoud van derden** - Met een insteekmodulesysteem kunt u alle externe inhoudsbronnen bewerkbaar maken.
+* **Inhoudsfragmenten AEM** - Inhoud uit inhoudsfragmenten bewerken zoals deze in de context van de ervaring worden weergegeven.
+* **Documenten** - Het bewijs van concepten heeft getoond dat ook Word, Excel, de Documenten van Google of van de Prijsverhoging de zelfde manier (dit is WIP) kunnen worden uitgegeven.
 
 ### Willekeurig aspect {#any-aspect}
 
 Voor de auteur van inhoud gaat de inhoud niet alleen over de informatie in de inhoud, maar ook over de manier waarop deze wordt gerenderd en ontvangen. De inhoud wordt geleverd met extra meta-gegevens en instrumentatieregels, die de Universele Redacteur kan begrijpen en uitgeven met inbegrip van:
 
-* **Lay-out en stijl toepassen** - Door gebruik te maken van een stijlsysteem kunnen de marketingdeskundige en de auteur van de inhoud verschillende stijlen toepassen op de inhoud ervan en verschillende lay-outs maken, zoals kolommen, carrousels, tabbladen, accordeons, enz.
-* **Experimentatie uitvoeren** - Door een nieuwe inhoudsversie te publiceren die de bestaande inhoud uitdaagt, kan de marketingdeskundige experimenteren met verbeteringen in de inhoud en de impact meten.
-* **Variaties aanpassen** - Door inhoudvariaties te maken en te beheren die specifiek zijn voor een bepaald publiek, kunnen marketingspecialisten de geleverde inhoud personaliseren.
+* **Lay-out en stijl toepassen** - Door gebruik te maken van een stijlsysteem kunnen de marketingdeskundige en de auteur van de inhoud verschillende stijlen toepassen op de inhoud ervan en verschillende lay-outs maken voor de inhoud, zoals kolommen, carrousels, tabs, accordeons, enz.
 
 ## Waarde {#value}
 
@@ -64,9 +61,9 @@ Door de ervaring voor het bewerken van inhoud los te koppelen van een bepaald sy
 * **Snelheid inhoud verhogen** - Als u de beheerworkflow van artsen wilt stroomlijnen, kunt u met de Universal Editor inhoud bewerken in de voorvertoning. Zo kunt u artsen begeleiden door alleen de opties weer te geven die relevant zijn voor die context en de workflow onafhankelijk te maken van de inhoudsbronnen.
 * **Recentere ontwikkelaarservaring** - Om het heterogene toepassingslandschap in de wereld te ondersteunen, is de Universal Editor volledig ontkoppeld en is hij technologisch gezien niet-afhankelijk, zodat ontwikkelaars hun voorkeurstechnologie kunnen gebruiken om de ervaring te implementeren.
 
-## De Universal Editor en de Content Fragment Editor {#universal-editor-content-fragment-editor}
+## Universal Visual Editor en de Content Fragment Editor {#universal-editor-content-fragment-editor}
 
-Op het eerste gezicht lijken de Universal Editor en de Content Fragment Editor vergelijkbare bewerkingsmogelijkheden. Deze editors bieden echter zeer verschillende mogelijkheden en vervullen verschillende taken van de marketingdeskundige.
+Op het eerste gezicht lijkt het misschien alsof de Universal Visual Editor en de Content Fragment Editor vergelijkbare bewerkingsmogelijkheden bieden. Deze editors bieden echter zeer verschillende mogelijkheden en vervullen verschillende taken van de marketingdeskundige.
 
 ### Inhoudsfragmenteditor {#content-fragment-editor}
 
@@ -74,7 +71,7 @@ Een marketingdeskundige wil inhoud maken zonder de layout ervan te hoeven omschr
 
 * De onderliggende taak die moet worden uitgevoerd, is het schalen van de inhoudsstrategie.
 
-### Universele editor {#universal-editor}
+### Universal Visual Editor {#universal-editor}
 
 Een marketingdeskundige wil inhoud maken die is toegesneden op de lay-out van een bepaalde context en die een uitzonderlijke ervaring biedt.
 
@@ -82,9 +79,9 @@ Een marketingdeskundige wil inhoud maken die is toegesneden op de lay-out van ee
 
 ## Wegenkaart {#road-map}
 
-Het is belangrijk om op te merken dat de Universele Redacteur een werk in uitvoering is en de mogelijkheden die in dit document worden beschreven een visie van de definitieve redacteur en niet noodzakelijk van zijn huidige mogelijkheden zijn.
+Het is belangrijk om op te merken dat de Universele Redacteur een werk in uitvoering is en sommige van de mogelijkheden die in dit document worden beschreven een visie van de definitieve redacteur zijn en niet noodzakelijk representatief voor zijn huidige mogelijkheden zijn.
 
-Neem contact op met uw Adobe-contactpersoon voor meer informatie over de functies die u voor de Universal Editor wilt gaan gebruiken
+Neem contact op met uw Adobe-contactpersoon voor meer informatie over de functies die u voor de Universal Editor wilt gaan gebruiken.
 
 ## Aanvullende bronnen {#additional-resources}
 
