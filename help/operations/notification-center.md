@@ -2,7 +2,7 @@
 title: Meldingscentrum
 description: Gebruikmaken van het kennisgevingscentrum om gemakkelijk actie te ondernemen tegen incidenten en andere belangrijke informatie
 hidefromtoc: true
-source-git-commit: a5977c667d831c47d41cd86b68e9196fbe726899
+source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Van het scherm van het Centrum van het Bericht, kunt u een specifiek programma e
 
 U kunt de volgende stappen volgen om het ontvangen berichten te vormen:
 
-1. De volgende productprofielen maken, zoals beschreven [in dit artikel](/help/journey-onboarding/user-groups.md), door de juiste Adobe-id&#39;s van uw organisatie toe te wijzen aan die profielen.
+1. De volgende productprofielen maken, zoals beschreven [in dit artikel](/help/journey-onboarding/notification-profiles.md), door de juiste Adobe-id&#39;s van uw organisatie toe te wijzen aan die profielen.
 1. Bepaal de instellingen voor de berichtconfiguratie. [Op deze pagina](https://experience.adobe.com/preferences/notification-section), zorg ervoor het Abonnement van de Experience Manager wordt toegelaten en **Overige** selectievakje is ingeschakeld. Daarnaast wordt aangeraden de sectie E-mails in te stellen op **Directe meldingen** dus ontvangt u meldingen direct nadat een incident heeft plaatsgevonden.
 
 >[!NOTE]
