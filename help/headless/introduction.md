@@ -1,19 +1,19 @@
 ---
 title: Inleiding tot headless voor AEM
-description: Meer informatie over Headless in Adobe Experience Manager (AEM) met een combinatie van gedetailleerde documentatie en headless reizen. Ontdek hoe functies zoals contentmodellen, contentfragmenten en GraphQL-API worden gebruikt om headless-ervaringen mogelijk te maken.
+description: Meer informatie over Headless in Adobe Experience Manager (AEM) met een combinatie van gedetailleerde documentatie en headless reizen. Leer hoe u functies als Content Fragment Models, Content Fragments en een GraphQL API kunt gebruiken voor een ontelbare ervaring.
 landing-page-description: Inzicht in gebruik en beheer van Headless in Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 597bb3b92159c685d3692f11359e13f8642a0857
+source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Inleiding tot Adobe Experience Manager als een headless CMS {#introduction-aem-headless}
 
-Leer hoe u Adobe Experience Manager (AEM) gebruikt als een headless CMS, met functies zoals Content Models, Content Fragments en een GraphQL API die ervoor zorgen dat u overal mee kunt werken.
+Leer hoe u Adobe Experience Manager (AEM) kunt gebruiken als een CMS zonder hoofd (Content Management System), met functies zoals modellen van inhoudsfragmenten, contentfragmenten en een GraphQL API die samen een krachtige ervaring zonder hoofd op schaal bieden.
 
 U kunt gedetailleerde documentatie van de verschillende betrokken eigenschappen lezen en/of de selectie volgen [Headless Reizen voor een overzicht van de eerste stappen](#first-steps).
 
@@ -25,7 +25,7 @@ U kunt gedetailleerde documentatie van de verschillende betrokken eigenschappen 
 
 AEM Headless is een CMS-oplossing van Experience Manager waarmee gestructureerde inhoud (Content Fragments) in AEM kan worden verbruikt door elke toepassing via HTTP met GraphQL. Met een headless-implementatie kunt u ervaringen op verschillende platforms en kanalen op schaal aanbieden.
 
-Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals gebruikelijk is in oplossingen voor volledige stapels en hybride oplossingen, en wordt de nadruk gelegd op het maken van kanaalneutrale, herbruikbare fragmenten van inhoud en hun levering over het kanaal. Het is een modern en dynamisch ontwikkelingspatroon voor het implementeren van webervaringen.
+Bij implementatie zonder kop gaat het beheer van pagina&#39;s en componenten verloren, zoals gebruikelijk is bij oplossingen met volledige stapel en hybride oplossingen. In plaats daarvan richt het programma zich op het maken van kanaalneutrale, herbruikbare fragmenten van inhoud en de levering van deze fragmenten over het kanaal. Het is een modern en dynamisch ontwikkelingspatroon voor het implementeren van webervaringen.
 
 ![Implementatiemodellen AEM](assets/aem-implementation-models.png)
 
@@ -33,14 +33,14 @@ Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals geb
 
 AEM as a Cloud Service is een flexibel hulpmiddel voor het implementatiemodel zonder kop door drie krachtige functies te bieden:
 
-1. **Inhoudsmodellen**
-   * Inhoudsmodellen zijn een gestructureerde weergave van inhoud.
-   * Inhoudsmodellen worden gedefinieerd door informatiearchitecten in de AEM Content Fragment Model-editor.
-   * Inhoudsmodellen dienen als basis voor inhoudsfragmenten.
+1. **Modellen van contentfragmenten**
+   * Content Fragment Models is gestructureerde representaties van inhoud.
+   * Modellen van inhoudsfragmenten worden gedefinieerd door informatiearchitecten in de AEM Content Fragment Model-editor.
+   * Modellen van inhoudsfragmenten dienen als basis voor inhoudsfragmenten.
 1. **Contentfragmenten**
-   * Inhoudsfragmenten worden gemaakt op basis van een inhoudsmodel.
-   * Gemaakt door auteurs van inhoud met de AEM Content Fragment-editor.
-   * Inhoudsfragmenten worden opgeslagen in AEM Assets en beheerd in de interface voor middelenbeheer.
+   * Er wordt een inhoudsfragment gemaakt op basis van een inhoudsfragmentmodel.
+   * Inhoudsfragmenten worden gemaakt door auteurs van inhoud met de AEM Content Fragment-editor.
+   * Inhoudsfragmenten worden opgeslagen als AEM Assets, maar kunnen worden beheerd via de middelenconsole of via de [Console voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
 1. **Inhoud-API voor levering**
    * De AEM GraphQL API ondersteunt de levering van inhoudsfragmenten.
    * De AEM Assets REST-API ondersteunt CRUD-bewerkingen voor inhoudsfragmenten.
@@ -50,7 +50,7 @@ AEM as a Cloud Service is een flexibel hulpmiddel voor het implementatiemodel zo
 
 Er zijn verschillende bronnen beschikbaar om aan de slag te gaan met AEM functies zonder kop. Elke hulplijn is op maat gemaakt voor verschillende gebruiksgevallen en verschillende soorten publiek.
 
-| Resource | Beschrijving | Type | Publiek | Oost. Time |
+| Resource | Beschrijving | Type | Publiek | Oost. Tijd |
 |---|---|---|---|---|
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | **Voor nieuwe ontwikkelaars AEM en zonder kop** technologieën, begin hier voor een uitvoerige inleiding aan AEM en zijn headless eigenschappen van de theorie van headless door met uw eerste hoofdloze project te leven. | Handleiding | Ontwikkelaars **nieuw tot AEM en zonder kop** | 1 uur |
 | [Installatie zonder koppen](/help/headless/setup/introduction.md) | **Voor ervaren AEM** Voor een kort overzicht van de belangrijkste functies voor het AEM zonder kop, bekijkt u dit snelstartoverzicht. | Referentie-instelling | Ontwikkelaars, beheerders **met AEM ervaring** | 20 minuten |
