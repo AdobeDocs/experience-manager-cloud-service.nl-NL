@@ -1,9 +1,9 @@
 ---
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1152'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Hiervoor beschikken inhoudsauteurs over een intuïtieve gebruikersinterface die 
 
 >[!NOTE]
 >
->De Universal Editor is nog in ontwikkeling en kan momenteel alleen tekst schrijven.
+>De Universal Editor is nog in ontwikkeling en kan momenteel niet alle inhoudstypen bewerken.
 
 ## De app voorbereiden {#prepare-app}
 
@@ -106,11 +106,11 @@ Het hamburgermenu is nog niet geïmplementeerd.
 
 ![Hambuger-menu](assets/hamburger-menu.png)
 
-#### Adresbalk {#address-bar}
+#### Locatiebalk {#Location-bar}
 
-In de adresbalk ziet u de locatie van de pagina die u bewerkt. Tik of klik om het adres in te voeren van een andere pagina die u wilt bewerken.
+Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Tik of klik om het adres in te voeren van een andere pagina die u wilt bewerken.
 
-![Adresbalk](assets/address-bar.png)
+![Locatiebalk](assets/address-bar.png)
 
 >[!TIP]
 >
@@ -119,12 +119,6 @@ In de adresbalk ziet u de locatie van de pagina die u bewerkt. Tik of klik om he
 >[!NOTE]
 >
 >Elke pagina die u wilt bewerken met de universele editor moet [van instrumenten voorzien om de Universele Redacteur te steunen.](getting-started.md)
-
-#### Samenwerkingsindicator {#collaboration}
-
-Als er andere auteurs zijn met dezelfde pagina die in de Universal Editor is geladen, worden de afbeeldingen van die auteurs weergegeven. Houd de muis boven een afbeelding om de volledige gebruikersnaam weer te geven
-
-![Samenwerkingsindicator](assets/collaboration.png)
 
 #### App-voorvertoning openen {#open-app-preview}
 
@@ -141,6 +135,10 @@ Tik of klik op het pictogram met de voorvertoning van de geopende app om de pagi
 Tik of klik op de knop Publiceren om de wijzigingen in de live inhoud voor gebruik door uw lezers te publiceren.
 
 ![Knop Publiceren](assets/publish.png)
+
+>[!TIP]
+>
+>Zie het document [Inhoud publiceren met de Universal Visual Editor](publishing.md) voor meer informatie over publiceren met de Universele Redacteur.
 
 ### Het spoor {#rail}
 
@@ -195,6 +193,7 @@ Houd er rekening mee dat in de voorvertoningsmodus tikken of klikken op inhoud r
 Zie deze documenten voor meer informatie over de Universal Editor.
 
 * [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken om buitengewone ervaringen te bieden, de snelheid van de inhoud te verhogen en een geavanceerde ontwikkelaarservaring te bieden.
+* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Aan de slag met de Universal Editor in AEM](getting-started.md) - Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 * [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [Kenmerken en typen](attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.

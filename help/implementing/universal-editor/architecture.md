@@ -1,9 +1,9 @@
 ---
 title: Architectuur van Universal Editor
 description: Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ Zie deze documenten voor meer informatie over de Universal Editor.
 
 * [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken om buitengewone ervaringen te bieden, de snelheid van de inhoud te verhogen en een geavanceerde ontwikkelaarservaring te bieden.
 * [Inhoud ontwerpen met de Universal Editor](authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
+* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Aan de slag met de Universal Editor in AEM](getting-started.md) - Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 * [Kenmerken en typen](attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.
 * [Universal Editor-verificatie](authentication.md) - Leer hoe de Universal Editor wordt geverifieerd.

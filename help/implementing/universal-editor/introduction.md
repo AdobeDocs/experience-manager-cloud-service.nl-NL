@@ -1,9 +1,9 @@
 ---
 title: Universal Visual Editor Introductie
 description: Leer hoe de Universele Visuele Redacteur (a.k.a. Met de Universal Editor) kunt u WYSIWYG-bewerkingen (what-you-see-is-what-you-get) zonder kop en met veel titel uitvoeren. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
-source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,7 @@ Neem contact op met uw Adobe-contactpersoon voor meer informatie over de functie
 Zie deze documenten voor meer informatie over de Universal Editor.
 
 * [Inhoud ontwerpen met de Universal Editor](authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
+* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Aan de slag met de Universal Editor in AEM](getting-started.md) - Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 * [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [Kenmerken en typen](attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.

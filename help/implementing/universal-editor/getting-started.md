@@ -1,9 +1,9 @@
 ---
 title: Aan de slag met de Universal Editor in AEM
 description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
-source-git-commit: acafa752c354781e41b11e46ac31a59feb8d94e7
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternatief voor toepassingen die niet reageren {#alternative}
 
-Als u geen React app implementeert en/of rendering op de server vereist, moet u de volgende methode opnemen in de hoofdtekst van het document.
+Als u geen React app implementeert en/of rendering op de server vereist, kunt u ook het volgende opnemen in de hoofdtekst van het document.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -157,50 +157,6 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-### Universal Editor-vertaalservice {#translation}
-
-De Universal Editor voert een vertaling uit op basis van de metagegevens van de instrumenten.
-
-#### Basisbeginsel van vertaling {#principle}
-
-Bekijk de volgende selectie uit het vorige voorbeeld.
-
-```html
-<meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-```
-
-De redacteur zal vervangingen en intern uitvoeren `itemid` wordt opnieuw naar het volgende geschreven.
-
-```html
-itemid="urn:aem:https://localhost:4502/content/example/list"
-```
-
-Dit resulteert in de term `aemconnection` worden vervangen door de inhoud van de `<meta>` tag.
-
-#### Query-kiezer {#query-selector}
-
-Deze vervanging zal in het volgende vraagkoord voor John Smith resulteren.
-
-```html
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-  <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="urn:fcs:type/fragment">.  
-    <p itemprop="name" itemtype="text">John Smith</p>
-    <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-    <img itemprop="avatar" src="urn:fcs:missing" itemtype="image" alt="avatar"/>
-  </li>
-```
-
-`[itemid="urn:fcs:https://example.franklin.adobe.com/345fcdd/content/example/list][itemprop="name"]`
-
-Als u de tegel van John Smith wilt veranderen, zal de selecteur het volgende zijn.
-
-`[itemid="urn:aem:https://localhost:4502/content/example/another-source"][itemprop="title"]`
-
-In plaats van erfenis van `itemid`De Universal Editor werkt met het bereik. Een werkingsgebied kan op een knoopniveau worden bepaald en door de volledige substructuur worden geërft.
-
-Wanneer een substructuur binnen de structuur of een bepaald verlof een ander toepassingsgebied nodig heeft, moet een andere `itemid` kan worden gedefinieerd.
-
 ## U bent klaar om de Universele Redacteur te gebruiken {#youre-ready}
 
 Uw app is nu van instrumenten voorzien om de Universal Editor te gebruiken.
@@ -213,6 +169,7 @@ Zie deze documenten voor meer informatie over de Universal Editor.
 
 * [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken om buitengewone ervaringen te bieden, de snelheid van de inhoud te verhogen en een geavanceerde ontwikkelaarservaring te bieden.
 * [Inhoud ontwerpen met de Universal Editor](authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
+* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [Kenmerken en typen](attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.
 * [Universal Editor-verificatie](authentication.md) - Leer hoe de Universal Editor wordt geverifieerd.
