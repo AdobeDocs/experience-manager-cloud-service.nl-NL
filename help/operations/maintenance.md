@@ -2,7 +2,7 @@
 title: Onderhoudstaken in AEM as a Cloud Service
 description: Onderhoudstaken in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
+source-git-commit: 020d9a73141f650ebafcdec0a5976e5060fd16c2
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 0%
@@ -75,7 +75,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
     <td>Ad-hoc taak wissen</td>
     <td>Klant</td>
     <td>
-    <p>Moet in de put worden gedaan. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> of <code>granite_daily</code>.</p>
+    <p>Moet in de put worden gedaan. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code>.</p>
     <p>Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen. Naam geven <code>granite_TaskPurgeTask</code>, met kenmerk <code>sling:resourceType</code> instellen op <code>granite/operations/components/maintenance/task</code> en kenmerk <code>granite.maintenance.name</code> instellen op <code>TaskPurge</code>. Vorm de eigenschappen OSGI, zie <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> voor de lijst met eigenschappen.</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
     <td>Werkstroom leegmaken</td>
     <td>Klant</td>
     <td>
-    <p>Moet in de put worden gedaan. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> of <code>granite_daily</code>. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
+    <p>Moet in de put worden gedaan. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code>. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
     <p>Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven toe te voegen (noem het) <code>granite_WorkflowPurgeTask</code>) met de juiste eigenschappen. De eigenschappen van OSGI configureren <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">AEM 6.5 Onderhoudstaken</a>.</p>
   </td>
   </tr>
@@ -91,7 +91,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
     <td>Project wissen</td>
     <td>Klant</td>
     <td>
-    <p>Moet in de put worden gedaan. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> of <code>granite_daily</code>. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
+    <p>Moet in de put worden gedaan. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code>. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
     <p>Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven toe te voegen (noem het) <code>granite_ProjectPurgeTask</code>) met de juiste eigenschappen. Zie de lijst van eigenschappen OSGI onder "Adobe Projecten zuivert Configuratie".</p>
   </td>
   </tr>
@@ -132,12 +132,12 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
     <td>
-    <p><strong>windowSchedule=daily</strong> (deze waarde mag niet worden gewijzigd)</p>
+    <p><strong>windowSchedule=month</strong> (deze waarde mag niet worden gewijzigd)</p>
     <p><strong>windowStartTime=HH:MM</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die aan het Maandelijkse Onderhoudsvenster zijn gekoppeld, moeten worden uitgevoerd.</p>
     <p><strong>windowEndTime=HH:MM</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die zijn gekoppeld aan het venster Maandelijks onderhoud niet meer worden uitgevoerd als deze nog niet zijn voltooid.</p>
     <p><strong>windowScheduleWeekdays=Array van 2 waarden van 1-7 (bijvoorbeeld [5,5])</strong> De eerste waarde van de array is de startdag waarop de taak is gepland en de tweede waarde is de einddag waarop de taak wordt gestopt. De exacte tijd van het begin en het einde wordt bepaald door respectievelijk windowStartTime en windowEndTime.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 naar schema op de eerste week van de maand of 1 naar schema op de laatste week van de maand. Het ontbreken van een waarde zou banen effectief plannen elke dag zoals die door windowScheduleWeekdays elke maand wordt geregeld.</p>
-    </td> 
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 naar schema op de eerste week van de maand of 1 naar schema op de laatste week van de maand. Het ontbreken van een waarde zou banen effectief plannen op de dag die door windowScheduleWeekdays (elke maand) wordt geregeld.</p>
+    </td>
     </tr>
     </tbody>
 </table>
