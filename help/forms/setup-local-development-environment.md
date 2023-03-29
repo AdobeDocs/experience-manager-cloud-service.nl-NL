@@ -2,7 +2,7 @@
 title: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 description: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a118273243ab506e3c4db318f409c125f1c555c0
+source-git-commit: dea6c266e5c10135a320f923dc77d0fd2050988e
 workflow-type: tm+mt
 source-wordcount: '2954'
 ht-degree: 1%
@@ -258,6 +258,8 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
    ```shell
    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
+   
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="41" -D appTitle=mysite -D appId=mysite -D groupId=com.mysite -D includeFormsenrollment="y" -D aemVersion="cloud"
    ```
 
    Wijzig de `appTitle`, `appId`, en `groupId` in het bovenstaande bevel om uw milieu te weerspiegelen. Stel ook de waarde voor includeFormsenrollment, includeFormscommunications en includeFormsheadless in op `y` of `n` afhankelijk van uw licentie en vereisten. IncludeFormadless is verplicht om Adaptive Forms te creëren die op de Componenten van de Kern wordt gebaseerd.
@@ -415,7 +417,7 @@ Als u Adaptive Forms Core Components wilt inschakelen voor uw as a Cloud Service
    `<groupId>com.adobe.aem</groupId>`
    `<artifactId>core-forms-components-apps</artifactId>`
    `</dependency>`
-   and
+   en
    `<dependency>`
    `<groupId>com.adobe.aem</groupId>`
    `<artifactId>core-forms-components-core</artifactId>`
