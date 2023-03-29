@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 7e66c9f26211bd92119c74f311f3e9b3195a8d98
+source-git-commit: c6acdd922c052d0db5bf1f05bc03329fbc44ca33
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '306'
 ht-degree: 1%
 
 ---
@@ -27,6 +27,11 @@ Functie-activering voor deze onderhoudsrelease biedt u de volledige functieset. 
 #### Sites {#sites-issues}
 
 - SITES-7796 - Mogelijkheid voor de auteur van de inhoud om het Master inhoudsfragment en de respectieve Variaties te publiceren wanneer het uitvoeren naar doel
+- SITES-97 - GraphQL: Paginering en sorteren, hybride filtering
+
+>[!NOTE]
+>
+> In SITES-97 zijn enkele verbeteringen aangebracht in de GraphQL-implementatie die tot onverwacht gedrag kunnen leiden. Zie [GraphQL-wijzigingen AEM met betrekking tot de verwerking van null-waarden](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html) voor meer informatie .
 
 #### Assets {#assets-issues}
 
