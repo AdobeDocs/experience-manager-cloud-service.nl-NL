@@ -2,10 +2,10 @@
 title: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
 description: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 71a691a6fea3cd43545eaa01113823d54f7c70b1
+source-git-commit: 9a00889f06a5ecf277cd99d4adbc8341480caa17
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 33%
+source-wordcount: '643'
+ht-degree: 32%
 
 ---
 
@@ -39,10 +39,10 @@ Een release voorbereiden:
 
 ## Informatie over sleutelrelease {#key-articles}
 
-* [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Opmerkingen bij de release met functies](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Opmerkingen bij de onderhoudsrelease](/help/release-notes/maintenance/latest.md)
 * [Nieuwe functies](what-is-new.md)
 * [Belangrijke wijzigingen](aem-cloud-changes.md)
-* [Bekende problemen](known-issues.md)
 * [Verouderde en verwijderde functies](deprecated-removed-features.md)
 
 ## Handleidingen voor Experience Manager as a Cloud Service {#aem-guides}

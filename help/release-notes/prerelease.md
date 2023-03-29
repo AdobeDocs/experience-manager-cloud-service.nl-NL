@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service Prerelease-kanaal
 description: Leer hoe u het pre-releasekanaal gebruikt om een voorvertoning van aanstaande functies te AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: 9a76a1c2b5e3b7986654b0843842b015811679a2
+source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
@@ -16,22 +16,22 @@ Leer hoe u het pre-releasekanaal gebruikt om een voorvertoning van aanstaande fu
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager as a Cloud Service biedt elke maand nieuwe functies, volgens de [Experience Manager geeft routekaart vrij.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Adobe Experience Manager as a Cloud Service biedt nieuwe functies op een normale manier, volgens de [Experience Manager geeft roadmap vrij.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
-Als u vertrouwd wilt raken met de functies die gepland zijn om de volgende maand live te gaan, kunt u zich abonneren op het pre-releasekanaal. Dit kanaal is toegankelijk door uw ontwikkelomgevingen of elke sandboxomgeving te configureren. U kunt een voorvertoning weergeven van wijzigingen die toegankelijk zijn via de AEM-gebruikersinterface en code maken op basis van nieuwe prerelease-API&#39;s.
+Als u vertrouwd wilt raken met de functies die gepland zijn om live te gaan met de volgende functieversie, kunt u zich abonneren op het pre-releasekanaal. Dit kanaal is toegankelijk door uw ontwikkelomgevingen of elke sandboxomgeving te configureren. U kunt een voorvertoning weergeven van wijzigingen die toegankelijk zijn via de AEM-gebruikersinterface en code maken op basis van nieuwe prerelease-API&#39;s.
 
-De lijst met pre-releasefuncties voor een bepaalde maand wordt geplaatst in het dialoogvenster [maandelijkse opmerkingen bij de release.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+De lijst met pre-releasefuncties voor een bepaalde functieversie wordt gepubliceerd in het gedeelte [opmerkingen bij de release.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## AEM as a Cloud Service releases {#releases}
 
 AEM as a Cloud Service heeft twee soorten versies.
 
-* **Maandelijkse releases** functies en mogelijkheden toevoegen aan AEM as a Cloud Service
-* **Kritieke updates** voeg veiligheidsupdates, prestatiesverhogingen, en insectenmoeilijke situaties toe, en worden toegepast op een dagelijkse basis.
+* **Functiereleases** functies en mogelijkheden toevoegen aan AEM as a Cloud Service, na activering
+* **onderhoudsreleases** Voeg beveiligingsupdates, prestatieverbeteringen en foutoplossingen toe en wordt regelmatig en frequent toegepast.
 
 Dit patroon verzekert ononderbroken versies zonder onderbreking van de dienst.
 
-Met het pre-releasekanaal kunt u functies die voor de komende maandelijkse release zijn gepland, voorvertonen om de komende functionaliteit te evalueren en te plannen voor de mogelijke implementatie ervan voor uw eigen projecten. Hiermee kunt u plannen voor de volgende maandelijkse release.
+Met het pre-releasekanaal kunt u functies voorvertonen die zijn gepland voor de aanstaande functieversie om de komende functionaliteit te evalueren en de mogelijke implementatie voor uw eigen projecten te plannen. Zo kunt u plannen voor de volgende release met functies.
 
 Als het bijvoorbeeld mei is en u bent geabonneerd op het pre-releasekanaal, kunt u functies evalueren in de aanstaande release van juni.
 
@@ -48,7 +48,7 @@ Voor het effectief benutten van de voordelen van het prereleasekanaal zijn vier 
 
 ## Uw kalenders markeren {#mark-calendars}
 
-Maandelijkse releases zijn ruim van tevoren gepland en de releasedatums worden gepubliceerd op [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+De versies van de eigenschap zijn gepland lang van tevoren en de data van de activering van de eigenschapversie worden gepubliceerd op [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
 Neem nota van de versiedata zodat kunt u tijd plannen om de aanstaande eigenschappen te herzien en te testen.
 
@@ -58,7 +58,7 @@ Wanneer u de releasedatums hebt gemarkeerd in uw kalender, moet u de optie [Adob
 
 Elke versie gaat vergezeld van releaseopmerkingen die niet alleen nieuw zijn in die versie, maar ook de functies die beschikbaar zijn voor pre-releaseevaluatie. Lees uw kennis op voorhand en gebruik de nieuwste functies van AEMaaCS!
 
-U kunt ook [de bekende problemen controleren](/help/release-notes/known-issues.md) die samen met elke versie worden gepubliceerd zodat u zich ook van om het even welke technische kwesties kunt bewust zijn die een uitdaging voor uw evaluatie of uiteindelijke goedkeuring van om het even welke nieuwe eigenschappen kunnen inhouden.
+U kunt ook [de bekende problemen controleren](/help/release-notes/maintenance/latest.md) die samen met elke versie worden gepubliceerd zodat u zich ook van om het even welke technische kwesties kunt bewust zijn die een uitdaging voor uw evaluatie of uiteindelijke goedkeuring van om het even welke nieuwe eigenschappen kunnen inhouden.
 
 ## Laat het Kanaal van de Prerelease toe om tot Nieuwe Eigenschappen toegang te hebben en uit te proberen {#new-features}
 

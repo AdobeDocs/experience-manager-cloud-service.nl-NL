@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: efc0f317cf4540db49b6caf7bb9f6fd31b311583
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Bedrijven hebben ondersteuning nodig voor een groot aantal verschillende bestand
 
 Om te beginnen, begrijp [voordelen van een cloudeigen aanbod](#solution-benefits). Uitchecken wat er in de tabel staat [wijzigingen in Experience Manager als een [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) die ook gevolgen had voor Experience Manager Assets, gevolgd door de opmerkelijke [wijzigingen in elementen](/help/assets/assets-cloud-changes.md).
 
-Lees verder om de [details van de nieuwe middelenmogelijkheden](#whats-new-assets) en de [bekende problemen](/help/release-notes/known-issues.md). Zie een lijst met [vervangen of verwijderde functionaliteit](/help/release-notes/deprecated-removed-features.md) om te weten wat in deze versie wordt verwijderd en dit te zien [lijst met toekomstige mogelijkheden](/help/release-notes/known-issues.md#upcoming-assets-capabilities) om te weten wat er binnenkort komt. Tot slot, begrijp de termen van de Experience Manager met behulp van dit [woordenlijst](/help/overview/terminology.md).
+Lees verder om de [details van de nieuwe middelenmogelijkheden](#whats-new-assets) en de [bekende problemen](/help/release-notes/maintenance/latest.md). Zie een lijst met [vervangen of verwijderde functionaliteit](/help/release-notes/deprecated-removed-features.md) om te weten wat er is verwijderd uit deze release. Tot slot, begrijp de termen van de Experience Manager met behulp van dit [woordenlijst](/help/overview/terminology.md).
 
 ## Oplossingsvoordelen {#solution-benefits}
 

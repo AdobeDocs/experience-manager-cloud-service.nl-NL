@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c5395c9c844744655054bb15e1b9b2178792b8b5
+source-git-commit: 1d192c1b568aeec2fd40ff47e63fe9dae9a9932b
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4009'
 ht-degree: 21%
 
 ---
@@ -133,7 +133,6 @@ ht-degree: 21%
       + [Opmerkingen bij de huidige release van Workfront for Experience Manager Enhanced Connector](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Wat is nieuw?](/help/release-notes/what-is-new.md)
    + [Opvallende wijzigingen in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
-   + [Bekende problemen](/help/release-notes/known-issues.md)
    + [Verouderde en verwijderde functies](/help/release-notes/deprecated-removed-features.md)
    + [Verouderde API&#39;s](/help/release-notes/deprecated-apis.md)
    + [Prerelease-kanaal](/help/release-notes/prerelease.md)
