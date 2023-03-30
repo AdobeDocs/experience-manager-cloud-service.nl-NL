@@ -3,9 +3,9 @@ title: Het gebruiken van GrahiQL winde in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 68b16052bd050d881e82be4ef57b9623f6021a89
+source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,6 @@ In beide gevallen is de query die wordt weergegeven in het editorpaneel de query
 
 ## Query-variabelen {#query-variables}
 
-<!-- more details needed here? -->
-
 Met GraphiQL IDE kunt u ook uw [Query-variabelen](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Bijvoorbeeld:
@@ -99,6 +97,10 @@ Bijvoorbeeld:
 ## Het beheren van geheime voorgeheugen voor uw persistente vragen {#managing-cache}
 
 [Blijvende query&#39;s](/help/headless/graphql-api/persisted-queries.md) worden aanbevolen, omdat deze in de verzender- en CDN-lagen in het cachegeheugen kunnen worden opgeslagen, waardoor de prestaties van de toepassing die de aanvraag indient, uiteindelijk worden verbeterd. Standaard maakt AEM de CDN-cache (Content Delivery Network) ongeldig op basis van een standaardtijd tot live (TTL).
+
+>[!NOTE]
+>
+>Zie voor meer informatie [Door uw doorlopende query&#39;s in cache te plaatsen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >

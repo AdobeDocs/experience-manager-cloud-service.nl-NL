@@ -3,10 +3,10 @@ title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: 872fe7a96f58df0e1e9cce29367cc71778fedb78
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 0%
+source-wordcount: '1541'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ Blijvende query&#39;s zijn GraphQL query&#39;s die worden gemaakt en opgeslagen 
 >
 >Blijvende query&#39;s worden aanbevolen. Zie [Aanbevolen werkwijzen voor GraphQL-query (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) voor details, en de verwante configuratie van de Verzender.
 
-De [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is beschikbaar in AEM voor u om uw GraphQL-query&#39;s te ontwikkelen, te testen en voort te zetten voordat [overbrengen naar uw productieomgeving](#transfer-persisted-query-production). Voor gevallen die aanpassing vereisen (bijvoorbeeld wanneer [cache aanpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) u kunt de API gebruiken; zie het curvevoorbeeld in [Een GraphQL-query laten doorgaan](#how-to-persist-query).
+De [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is beschikbaar in AEM voor u om uw GraphQL-query&#39;s te ontwikkelen, te testen en voort te zetten voordat [overbrengen naar uw productieomgeving](#transfer-persisted-query-production). Voor gevallen die aanpassing vereisen (bijvoorbeeld wanneer [cache aanpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) u kunt de API gebruiken; zie het cURL-voorbeeld in [Een GraphQL-query laten doorgaan](#how-to-persist-query).
 
 ## Blijvende query&#39;s en eindpunten {#persisted-queries-and-endpoints}
 
@@ -54,10 +54,10 @@ Aanbevolen wordt om query&#39;s in een AEM ontwerpomgeving in eerste instantie v
 Er zijn verschillende methoden om query&#39;s te blijven uitvoeren, waaronder:
 
 * GraphiQL IDE - zie [Blijvende query&#39;s opslaan](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (voorkeursmethode)
-* krullen - zie het volgende voorbeeld
+* cURL - zie het volgende voorbeeld
 * Andere gereedschappen, inclusief [Postman](https://www.postman.com/)
 
-GraphiQL IDE is de **voorkeur** methode voor het voortduren van vragen. Om een bepaalde vraag voort te zetten gebruikend **krullen** opdrachtregelgereedschap:
+GraphiQL IDE is de **voorkeur** methode voor het voortduren van vragen. Om een bepaalde vraag voort te zetten gebruikend **cURL** opdrachtregelgereedschap:
 
 1. Bereid de vraag door PUTing het aan het nieuwe eindpunt URL voor `/graphql/persist.json/<config>/<persisted-label>`.
 
@@ -259,42 +259,110 @@ Let op: `%3B` is de UTF-8-codering voor `;` en `%3D` is de codering voor `=`. De
 
 ## Door uw doorlopende query&#39;s in cache te plaatsen {#caching-persisted-queries}
 
-Aanbevolen wordt om query&#39;s door te voeren omdat deze in het cachegeheugen kunnen worden opgeslagen bij de verzender- en CDN-lagen, waardoor de prestaties van de toepassing die de aanvraag indient uiteindelijk verbeteren.
+De blijvende vragen worden geadviseerd aangezien zij in het voorgeheugen onder kunnen brengen bij [Dispatcher](/help/headless/deployment/dispatcher.md) en de lagen van het Netwerk van de Levering van de Inhoud (CDN), uiteindelijk verbeterend de prestaties van de het vragen cliënttoepassing.
 
-Standaard maakt AEM de CDN-cache (Content Delivery Network) ongeldig op basis van een standaardtijd tot live (TTL).
+AEM maakt de cache standaard ongeldig op basis van de definitie Tijd tot live (TTL). Deze TTLs kan door de volgende parameters worden bepaald. Deze parameters zijn op verschillende manieren toegankelijk, waarbij de namen variëren volgens het gebruikte mechanisme:
 
-Deze waarde is ingesteld op:
+| Cachetype | [HTTP-header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-configuratie  | Cloud Manager |
+|--- |--- |--- |--- |--- |
+| Browser | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
+| CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
+| CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
+| CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
-* 7200 seconden is standaardTTL voor de Verzender en CDN; ook bekend als *gedeelde cache*
-   * standaard: s-maxage=7200
-* 60 is standaard TTL voor de cliënt (bijvoorbeeld, browser)
-   * standaard: maxage=60
+### Auteursinstanties {#author-instances}
 
-Als u TTL voor uw vraag wilt veranderen GraphLQ, dan moet de vraag of zijn:
+Voor auteur-instanties zijn de standaardwaarden:
 
-* aanhouden na het beheren van de [HTTP Cache headers - van GraphQL IDE](#http-cache-headers)
-* blijft bestaan met de [API-methode](#cache-api).
+* `max-age`  : 60
+* `s-maxage` : 60
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
 
-### HTTP-cachekoppen beheren in GraphQL  {#http-cache-headers-graphql}
+Hiervoor gold het volgende:
+
+* kan niet worden overschreven:
+   * met een OSGi-configuratie
+* kan worden overschreven:
+   * door een aanvraag die HTTP-headerinstellingen definieert met cURL; het zou geschikte montages moeten omvatten voor `cache-control` en/of `surrogate-control`; voor voorbeelden , zie [Het beheren van Geheime voorgeheugen op het Aanhoudende Niveau van de Vraag](#cache-persisted-query-level)
+   * als u waarden opgeeft in het dialoogvenster **Kopteksten** dialoog [GraphiQL IDE](#http-cache-headers-graphiql-ide)
+
+### Exemplaren publiceren {#publish-instances}
+
+Voor publicatie-instanties zijn de standaardwaarden:
+
+* `max-age`  : 60
+* `s-maxage` : 7200
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
+
+Deze kunnen worden overschreven:
+
+* [van de GraphQL IDE](#http-cache-headers-graphiql-ide)
+
+* [op het niveau van de Vraag Blijven](#cache-persisted-query-level); dit impliceert het posten van de vraag aan AEM gebruikend cURL in uw interface van de bevellijn, en het publiceren van de Verlengde Vraag.
+
+* [met variabelen van Cloud Manager](#cache-cloud-manager-variables)
+
+* [met een OSGi-configuratie](#cache-osgi-configration)
+
+### Het beheren van de Kopballen van het Geheime voorgeheugen van HTTP in GrahiQL winde {#http-cache-headers-graphiql-ide}
 
 GraphiQL IDE - zie [Blijvende query&#39;s opslaan](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
-### Cache beheren vanuit de API {#cache-api}
+### Het beheren van Geheime voorgeheugen op het Aanhoudende Niveau van de Vraag {#cache-persisted-query-level}
 
-Dit impliceert het posten van de vraag aan AEM gebruikend CURL in uw interface van de bevellijn.
+Dit omvat het posten van de vraag aan AEM gebruikend cURL in uw interface van de bevellijn.
 
-Een voorbeeld:
+Een voorbeeld van de methode PUT (create):
 
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```bash
+curl -u admin:admin -X PUT \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-De `cache-control` kan worden ingesteld tijdens het maken (PUT) of later (bijvoorbeeld via een aanvraag voor een POST). Het cache-control is optioneel wanneer u de aanhoudend query maakt, omdat AEM de standaardwaarde kan opgeven. Zie [Een GraphQL-query laten doorgaan](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), bijvoorbeeld om een vraag voort te zetten gebruikend krullen.
+Een voorbeeld van de methode POST (update):
+
+```bash
+curl -u admin:admin -X POST \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
+```
+
+De `cache-control` kan worden ingesteld tijdens het maken (PUT) of later (bijvoorbeeld via een aanvraag voor een POST). Het cache-control is optioneel wanneer u de aanhoudend query maakt, omdat AEM de standaardwaarde kan opgeven. Zie [Een GraphQL-query laten doorgaan](#how-to-persist-query), bijvoorbeeld om een query met cURL voort te zetten.
+
+### Cache beheren met variabelen van Cloud Manager {#cache-cloud-manager-variables}
+
+[Omgevingsvariabelen van Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) U kunt de vereiste waarden definiëren in Cloud Manager:
+
+| Naam | Waarde | Toegepaste service | Type |
+|--- |--- |--- |--- |
+| `graphqlStaleIfError` | 86400 | *passend* | *passend* |
+| `graphqlSurrogateControl` | 600 | *passend* | *passend* |
+
+### Het beheren van Geheime voorgeheugen met een configuratie OSGi {#cache-osgi-configration}
+
+Als u de cache wereldwijd wilt beheren, kunt u [vorm de montages OSGi](/help/implementing/deploying/configuring-osgi.md) voor de **Configuratie van blijvende query-service**.
+
+>[!NOTE]
+>
+>De configuratie OSGi is slechts aangewezen voor publiceer instanties. De configuratie bestaat bij de instanties van de auteur, maar wordt genegeerd.
+
+De standaard configuratie OSGi voor publiceer instanties:
+
+* leest de variabelen van de Manager van de Wolk als beschikbaar:
+
+   | OSGi-configuratieeigenschap | leest dit | Variabele voor wolkenbeheer |
+   |--- |--- |--- |
+   | `cacheControlMaxAge` | lezen | `graphqlCacheControl` |
+   | `surrogateControlMaxAge` | lezen | `graphqlSurrogateControl` |
+   | `surrogateControlStaleWhileRevalidate` | lezen | `graphqlStaleWhileRevalidate` |
+   | `surrogateControlStaleIfError` | lezen | `graphqlStaleIfError` |
+
+* en als niet beschikbaar, gebruikt de configuratie OSGi [standaardwaarden voor publicatie-instanties](#publish-instances).
 
 ## De URL van de query coderen voor gebruik door een app {#encoding-query-url}
 
