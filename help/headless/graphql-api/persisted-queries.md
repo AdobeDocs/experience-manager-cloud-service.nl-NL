@@ -3,7 +3,7 @@ title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 872fe7a96f58df0e1e9cce29367cc71778fedb78
+source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 1%
@@ -270,6 +270,8 @@ AEM maakt de cache standaard ongeldig op basis van de definitie Tijd tot live (T
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
+{style="table-layout:auto"}
+
 ### Auteursinstanties {#author-instances}
 
 Voor auteur-instanties zijn de standaardwaarden:
@@ -343,6 +345,8 @@ De `cache-control` kan worden ingesteld tijdens het maken (PUT) of later (bijvoo
 | `graphqlStaleIfError` | 86400 | *passend* | *passend* |
 | `graphqlSurrogateControl` | 600 | *passend* | *passend* |
 
+{style="table-layout:auto"}
+
 ### Het beheren van Geheime voorgeheugen met een configuratie OSGi {#cache-osgi-configration}
 
 Als u de cache wereldwijd wilt beheren, kunt u [vorm de montages OSGi](/help/implementing/deploying/configuring-osgi.md) voor de **Configuratie van blijvende query-service**.
@@ -361,6 +365,8 @@ De standaard configuratie OSGi voor publiceer instanties:
    | `surrogateControlMaxAge` | lezen | `graphqlSurrogateControl` |
    | `surrogateControlStaleWhileRevalidate` | lezen | `graphqlStaleWhileRevalidate` |
    | `surrogateControlStaleIfError` | lezen | `graphqlStaleIfError` |
+
+   {style="table-layout:auto"}
 
 * en als niet beschikbaar, gebruikt de configuratie OSGi [standaardwaarden voor publicatie-instanties](#publish-instances).
 
