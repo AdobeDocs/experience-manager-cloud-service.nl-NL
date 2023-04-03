@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+source-git-commit: 936aa33ca334523aa84300f540bde9543eb7ffb4
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,7 @@ ht-degree: 0%
 * SalesForce
 * Microsoft® Azure Blob Storage
 
-De integratie van gegevens steunt OAuth2.0, Basisauthentificatie, en API Zeer belangrijke authentificatietypes out-of-the-box, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl de RESTful, op SOAP-Gebaseerde, en de diensten OData binnen worden gevormd [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> en aansluiting voor [!DNL Experience Manager] gebruikersprofiel is geconfigureerd in [!DNL Experience Manager] webconsole.
-
->[!NOTE]
->
->[!UICONTROL Experience Manager Forms] ondersteunt geen relationele database.
+De integratie van gegevens steunt OAuth2.0, Basisauthentificatie, en API Zeer belangrijke authentificatietypes out-of-the-box, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl de RESTful, op SOAP-Gebaseerde, en de diensten OData binnen worden gevormd [!DNL Experience Manager] as a Cloud Service, JDBC voor relationele gegevensbanken en schakelaar voor [!DNL Experience Manager] gebruikersprofiel is geconfigureerd in [!DNL Experience Manager] webconsole.
 
 ## Relationele database configureren {#configure-relational-database}
 
