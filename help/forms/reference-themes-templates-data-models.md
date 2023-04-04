@@ -1,0 +1,127 @@
+---
+title: Referentiethema's, sjablonen en modellen formuliergegevens
+seo-title: Reference Themes, Templates, and Form Data models
+description: AEM Forms biedt adaptieve formulierthema's, sjablonen en formuliergegevensmodellen die u kunt ophalen via softwaredistributie
+seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
+source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 0%
+
+---
+
+# Referentiethema&#39;s, sjablonen en modellen formuliergegevens {#reference-themes-templates-and-data-models}
+
+AEM Forms as a Cloud Service biedt meerdere referentiethema&#39;s, sjablonen en formuliergegevensmodellen waarmee u snel kunt beginnen met het maken van Adaptief Forms. U kunt de [referentie-inhoudspakket van de portal voor softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) en gebruiken de [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) om de [inhoudsopgave-pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in uw productie-, ontwikkelings- of lokale ontwikkelomgeving om deze referentie-elementen naar uw omgeving te brengen.
+
+De thema&#39;s, sjablonen en modellen van formuliergegevens die in het pakket met referentie-inhoud zijn opgenomen, zijn:
+
+
+| Thema&#39;s | Sjablonen | Formuliergegevensmodellen |
+---------|----------|---------
+| Canvas 3.0 | Basis | Microsoft Dynamics 365 |
+| Tranquil | Leeg | Salesforce |
+| Urbane |  |  |
+| Ultramarijn |  |  |
+| Beryl |  |  |
+| Gezondheidszorg |  |  |
+| FSI |  |  |
+
+## Referentiethema&#39;s {#reference-themes}
+
+[Thema&#39;s](/help/forms/themes.md) Hiermee kunt u uw formulieren opmaken zonder diepgaande kennis van CSS. U kunt de volgende thema&#39;s krijgen door de [Referentie-inhoudspakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+
+* Beryl
+* Canvas 3.0
+* Tranquil
+* Urbane
+* Ultramarijn
+* Gezondheidszorg
+* FSI (Financiële diensten en verzekeringen)
+
+Elk thema bevat een unieke en elegante stijl waarmee u aanpasbare formulieren voor uw gebruikers kunt maken. Het bevat unieke opmaak voor kiezers, zoals het deelvenster, het tekstvak, het numerieke vak, het keuzerondje, de tabel en de schakelaar. De stijlen in deze thema&#39;s zijn gebaseerd op vereisten. In een bepaald scenario hebt u bijvoorbeeld een minimalistisch thema met schone lettertypen nodig. Met het thema van de vrijheid kun je dat uiterlijk bereiken.
+
+![Referentiethema&#39;s](assets/ref-themes.png)
+
+De thema&#39;s in dit pakket reageren snel en de stijl in deze thema&#39;s is gedefinieerd voor mobiele schermen en desktopschermen. De meeste moderne browsers op verschillende apparaten kunnen formulieren die met een van deze thema&#39;s zijn toegepast, zonder problemen weergeven.
+
+Voor meer informatie over het installeren van het pakket raadpleegt u [Werken met pakketten](/help/implementing/developing/tools/package-manager.md).
+
+## Beryl {#beryl}
+
+In het thema Beryl wordt het gebruik van achtergrondafbeeldingen, transparantie en grote, platte pictogrammen benadrukt. In de onderstaande schermafbeelding kunt u zien hoe het Beryl-thema eruitziet en hoe het de opmaak van uw formulier kan verbeteren.
+
+![Berylthema](assets/beryl.png)
+
+## Canvas 3.0 {#canvas}
+
+Canvas 3.0 is het standaardthema voor Adaptief Forms en benadrukt het gebruik van basiskleuren, transparantie en platte pictogrammen. In de onderstaande schermafbeelding kunt u zien hoe het thema Canvas 3.0 eruitziet.
+
+![Berylthema](assets/canvas.png)
+
+
+## Tranquil {#tranquil}
+
+Het thema Tranquil biedt lichte en donkere tinten van het schema Tranquil om verschillende componenten van een formulier te benadrukken. Keuzerondjes, deelvensters en tabs krijgen bijvoorbeeld een andere groene tint.
+
+![Transparante thema](assets/tranquil.png)
+
+
+## Urbane {#urbane}
+
+Met het thema Urbane wordt de nadruk gelegd op een minimalistische en functionele vormgeving. Wanneer u het thema Urbane op uw formulier toepast, ziet u dat de componenten plat zijn. De deelvensters krijgen dunne omtrekken om een modern uiterlijk te krijgen.
+
+![Urbane thema](assets/urbane.png)
+
+
+## Ultramarijn {#ultramarine}
+
+Het thema Ultramarijn gebruikt diepe blauwe schaduwen om componenten zoals lusjes, panelen, tekstvakjes, en knopen te benadrukken.
+
+![Ultramarijnthema](assets/ultramarine.png)
+
+## Gezondheidszorg {#healthcare}
+
+In het thema Gezondheid worden diepe groene tinten gebruikt om componenten zoals tabbladen, deelvensters, tekstvakken en knoppen te markeren.
+
+![FSI-thema](assets/healthcare.png)
+
+
+## FSI (Financiële diensten en verzekeringen)
+
+In het FSI-thema wordt de nadruk gelegd op een minimalistische en functionele weergave van uw formulier. Wanneer u het FSI-thema toepast op uw formulier, ziet u dat deelvenstercomponenten geel zijn.
+
+![FSI-thema](assets/fsi.png)
+
+## Referentiesjablonen {#reference-templates}
+
+
+[Sjablonen](/help/forms/themes.md) Hiermee kunt u de initiële formulierstructuur, inhoud en handelingen voor uw formulieren definiëren. U kunt de volgende sjablonen ophalen door de [Referentie-inhoudspakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+
+* Basis
+* Leeg
+
+Met de standaardsjabloon kunt u snel een inschrijvingsformulier maken. U kunt deze ook gebruiken om een voorvertoning weer te geven van de functionaliteit van Aanpassings Forms-stichtingscomponenten. Het verstrekt een tovenaar lay-out voor sectie-door-sectie presentatie van gegevens. Gebruik de sjabloon Blanco om een adaptief formulier te maken op een leeg canvas.
+
+
+## Referentieformuliergegevensmodellen {#reference-models}
+
+De Adaptive Forms kan vervolgens communiceren met Microsoft Dynamics 365 en Salesforce-servers om bedrijfsworkflows mogelijk te maken. Bijvoorbeeld:
+
+* Schrijf gegevens naar Microsoft Dynamics 365 en Salesforce bij het verzenden van adaptieve formulieren.
+* Schrijf gegevens in de Dynamica 365 van Microsoft en Salesforce door douaneentiteiten die in het Model van de Gegevens van het Vorm en vice versa worden bepaald.
+* Vraag Microsoft Dynamics 365 en Salesforce-server naar gegevens en vul Adaptive Forms vooraf in.
+* Lees gegevens van Microsoft Dynamics 365 en Salesforce-server.
+
+U kunt de volgende modellen van de Gegevens van het Vorm krijgen door te installeren [Referentie-inhoudspakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+
+* Microsoft® Dynamics 365
+* Salesforce
+
+Voor informatie over het gebruik van deze modellen raadpleegt u [Microsoft Dynamics 365 en Salesforce-cloudservices configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+
+
+
+
+
+
