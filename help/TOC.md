@@ -8,10 +8,10 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
+source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
-source-wordcount: '4015'
-ht-degree: 21%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -517,7 +517,6 @@ ht-degree: 21%
       + [Migreren van [!DNL AEM 6.5 Forms] of eerder [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groepen en machtigingen](/help/forms/forms-groups-privileges-tasks.md)
       + [Aangepaste Forms, PDF forms en andere middelen importeren, exporteren en organiseren](/help/forms/import-export-forms-templates.md)
-      + [Referentiethema&#39;s, sjablonen en gegevensmodellen](/help/forms/reference-themes-templates-data-models.md)
    + Integreren {#integrate}
       + Services {#services}
          + [AEM Forms as a Cloud Service met Adobe Sign integreren](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -549,9 +548,9 @@ ht-degree: 21%
          + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
             + [Inleiding tot het ontwerpen van een adaptieve Forms](/help/forms/introduction-forms-authoring.md)
             + [Een adaptief formulier maken](/help/forms/creating-adaptive-form.md)
+            + [Referentiethema&#39;s, sjablonen en gegevensmodellen](/help/forms/reference-themes-templates-data-models.md)
             + [Een sjabloon maken](/help/forms/template-editor.md)
             + [Een thema maken](/help/forms/themes.md)
-            + [Referentie-elementen](/help/forms/reference-assets.md)
             + [JSON-schema ontwerpen voor een adaptief formulier](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Verbeter de prestaties van grote formulieren met het laden van de formulieren](/help/forms/lazy-loading-adaptive-forms.md)
          + Componenten toevoegen aan een adaptief formulier {#add-components-to-an-adaptive-form}
