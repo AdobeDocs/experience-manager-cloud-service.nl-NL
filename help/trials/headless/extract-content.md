@@ -4,9 +4,9 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 30fca14949e379fb427252f43d9f31d062e7e445
+source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 0%
 U start in GraphQL Explorer op een nieuw tabblad. Hier kunt u query&#39;s samenstellen en valideren op basis van uw inhoud zonder kop voordat u deze gebruikt om de inhoud van uw app of website van stroom te voorzien.
 
 1. Uw AEM proefversie zonder kop wordt geleverd met een eindpunt dat is voorgeladen met Content Fragments waaruit u inhoud voor testdoeleinden kunt extraheren. Zorg ervoor dat de **AEM Demo-elementen** het eindpunt wordt geselecteerd in het dialoogvenster **Endpoint** vervolgkeuzelijst in de rechterbovenhoek van de editor.
+
+1. Bekend probleem: als de **AEM Demo-elementen** het eindpunt is niet aanwezig in drop-down menu, navigeer aan de Manager van het Pakket (`/crx/packmgr` het pad naar uw AEM (en de `aem-demo-assets.ui.content-{VERSION}.zip` pakket:
+
+   ![Pakket opnieuw installeren](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. Kopieer het volgende codefragment voor een lijstvraag van vooraf geladen **AEM Demo-elementen** eindpunt. Een lijstvraag keert een lijst van alle inhoud terug die een specifiek model van het Fragment van de Inhoud gebruikt. De inventaris en de categoriepagina&#39;s gebruiken typisch dit vraagformaat.
 
