@@ -1,9 +1,9 @@
 ---
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
-source-git-commit: f4b9aafc3f805a8f19f35b8a8447cae6c537076a
+source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
 workflow-type: tm+mt
-source-wordcount: '3293'
+source-wordcount: '3314'
 ht-degree: 0%
 
 ---
@@ -218,6 +218,8 @@ U kunt desgewenst naar een externe opslagplaats verwijzen:
 `aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 Artefacten worden standaard geïmplementeerd op zowel auteur- als publicatieniveaus, maar de markering &#39;-s&#39; kan worden gebruikt om een specifieke laag als doel in te stellen.
+
+Elk AEM pakket kan worden geïmplementeerd, zoals pakketten met code, inhoud of een [containerpakket](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (ook wel het &quot;all&quot;-pakket genoemd).
 
 >[!IMPORTANT]
 >
