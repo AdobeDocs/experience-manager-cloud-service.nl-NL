@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 5da3ca6a175e7e6d8a2c3ca568885ceeee5c3d06
+source-git-commit: 7c67b72a5dd10dd6c9db8be1812f66dc20e0f85a
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -166,7 +166,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## Problemen oplossen {#tips-troubleshoot}
 
-* Als de [!UICONTROL Disk Usage Report] genereert niet en als u gebruikt [!DNL Dynamic Media], zorgt u ervoor dat alle elementen correct worden uitgevoerd. U lost de problemen op door de elementen opnieuw te verwerken en het rapport opnieuw te genereren.
+* Als de [!UICONTROL Disk Usage Report] genereert niet en als u gebruikt [!DNL Dynamic Media], zorgt u ervoor dat alle elementen correct worden verwerkt. U lost de problemen op door de elementen opnieuw te verwerken en het rapport opnieuw te genereren.
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
