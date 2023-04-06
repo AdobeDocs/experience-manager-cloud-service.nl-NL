@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
+source-git-commit: 26f697dab03e0a3387669304b7f7f14dc2182a6d
 workflow-type: tm+mt
-source-wordcount: '3213'
+source-wordcount: '3240'
 ht-degree: 0%
 
 ---
@@ -195,9 +195,13 @@ De volgende elementtypen en -functies worden momenteel niet ondersteund:
 * Web-to-print
 * UGC-services (door de gebruiker gegenereerde inhoud)
 
->[!IMPORTANT]
->
->De ondersteuning voor nieuwe of bestaande UGC-vectorafbeeldingselementen in Adobe Dynamic Media is afgelopen op 30 september 2021.
+   >[!IMPORTANT]
+   >
+   >Vanaf 1 mei 2023 zijn UGC-middelen in Dynamic Media beschikbaar voor gebruik tot 60 dagen na de uploaddatum. Na 60 dagen worden de middelen verwijderd.
+
+   >[!NOTE]
+   >
+   >De ondersteuning voor nieuwe of bestaande UGC-vectorafbeeldingselementen in Adobe Dynamic Media is afgelopen op 30 september 2021.
 
 ### De service Beveiligde tests testen {#test-secure-testing-service}
 
