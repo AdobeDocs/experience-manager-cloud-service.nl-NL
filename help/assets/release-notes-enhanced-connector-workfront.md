@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: a65f736f922bcb58c09773ff9c6d6f7104b6157d
+source-git-commit: 2fb929cae03fa9ac0bf6d18d5eb3cf19bb35fa37
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ De releasedatum voor de laatste versie 1.9.9 van [!DNL Workfront for Experience 
 
 ## Geen hooglichten {#release-highlights}
 
-De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de updates:
+De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de volgende updates:
 
 * Experience Manager geeft een `DateTimeParseException` een uitzondering wanneer de laatste gewijzigde datum wordt ontvangen van Workfront tijdens het maken van een gekoppelde map.
 
