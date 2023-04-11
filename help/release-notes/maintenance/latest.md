@@ -1,10 +1,10 @@
 ---
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: c56ed1878b89a1f31c5b7b44696511d51cfa5351
+source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '402'
+ht-degree: 1%
 
 ---
 
@@ -22,6 +22,8 @@ Functie-activering voor deze onderhoudsrelease biedt u de volledige functieset. 
 ### Bekende problemen {#known-issues-11382}
 
 - SITES-12573 - GraphQL query&#39;s die variabelen binnen een filter gebruiken, zullen mislukken als er geen variabele is opgegeven. Werk de versie niet bij als je GraphQL met AEM as a Cloud Service wilt gebruiken.
+- SKYOPS-51970 - Identified regression of the FACT version used in the buildImage step, leading to un-matching user mapping.
+- GRANITE-44542 - Er zijn problemen gemeld voor klanten die geen pakketnotatietype hebben opgegeven (door een .content.xml op te geven met jcr:primaryType) voor mappen die in het pakketfilter zijn opgenomen. Hierdoor werden deze mappen behandeld als nt:folder, waardoor er in verschillende gevallen problemen ontstonden.
 
 ### Opgeloste problemen {#fixed-issues-11382}
 
