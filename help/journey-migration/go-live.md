@@ -2,7 +2,7 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
+source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 0%
@@ -107,7 +107,7 @@ Houd er rekening mee dat de volledige inname mislukt als een van de volgende bep
 Vergeleken met de sectie boven de ingestie **niet** mislukt vanwege de volgende problemen met activa. Het wordt echter ten zeerste aanbevolen om in deze scenario&#39;s de juiste stappen te ondernemen:
 
 * Elk element met de oorspronkelijke uitvoering ontbreekt
-* Een map waarin een map ontbreekt `jcr:content` node
+* Een map waarin een map ontbreekt `jcr:content` knooppunt.
 
 Beide items worden geïdentificeerd en gerapporteerd in de [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) verslag.
 
