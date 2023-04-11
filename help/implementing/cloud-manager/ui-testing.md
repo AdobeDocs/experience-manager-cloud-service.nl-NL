@@ -2,7 +2,7 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
+source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
 workflow-type: tm+mt
 source-wordcount: '2147'
 ht-degree: 0%
@@ -23,15 +23,15 @@ Het testen van de gebruikersinterface van de douane is een facultatieve eigensch
 
 AEM biedt een geïntegreerde suite [Kwaliteitspates van Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) voor vloeiende updates van aangepaste toepassingen. Met name ondersteunen IT-testpoorten al het maken en automatiseren van aangepaste tests met behulp van AEM API&#39;s.
 
-De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd). Bovendien, kan een UI testproject gemakkelijk door te gebruiken worden geproduceerd [het AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd). Bovendien, kan een UI testproject gemakkelijk door te gebruiken worden geproduceerd [het AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
 
-UI-tests worden uitgevoerd als onderdeel van een specifieke kwaliteitspoort voor elke Cloud Manager-pijplijn met een [**Aangepaste UI-tests** stap](/help/implementing/cloud-manager/deploy-code.md) in [productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) of optioneel [niet-productiepijpleidingen.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten laten fouten toe om worden ontdekt en worden gemeld.
+UI-tests worden uitgevoerd als onderdeel van een specifieke kwaliteitspoort voor elke Cloud Manager-pijplijn met een [**Aangepaste UI-tests** stap](/help/implementing/cloud-manager/deploy-code.md) in [productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) of optioneel [niet-productieleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten laten fouten toe om worden ontdekt en worden gemeld.
 
-In tegenstelling tot aangepaste functionele tests, die HTTP-tests zijn die in Java zijn geschreven, kunnen UI-tests een Docker-afbeelding zijn met tests die in elke taal zijn geschreven, mits ze de conventies volgen die in de sectie zijn gedefinieerd [UI-tests maken.](#building-ui-tests)
+In tegenstelling tot aangepaste functionele tests, die HTTP-tests zijn die in Java zijn geschreven, kunnen UI-tests een Docker-afbeelding zijn met tests die in elke taal zijn geschreven, mits ze de conventies volgen die in de sectie zijn gedefinieerd [UI-tests samenstellen](#building-ui-tests).
 
 >[!TIP]
 >
->Adobe raadt u aan de structuur en taal (JavaScript en WDIO) te volgen die in het dialoogvenster [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
+>Adobe raadt u aan de structuur en taal (JavaScript en WDIO) te volgen die in het dialoogvenster [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
 >
 >Adobe verstrekt ook een UI testmodulevoorbeeld dat op Java en WebDriver wordt gebaseerd. Raadpleeg de [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) voor meer informatie.
 
@@ -45,15 +45,15 @@ In deze sectie worden de stappen beschreven die zijn vereist voor het instellen 
 
       >[!NOTE]
       >
-      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
-   * Gebruik voor Java en WebDriver de voorbeeldcode van het dialoogvenster [AEM opslagplaats voor testvoorbeelden.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
+   * Gebruik voor Java en WebDriver de voorbeeldcode van het dialoogvenster [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Voor andere programmeertalen raadpleegt u de sectie [UI-tests samenstellen](#building-ui-tests) in dit document aan opstelling het testproject.
 
 1. Zorg ervoor dat de UI-test wordt geactiveerd volgens de sectie [Klanten kiezen](#customer-opt-in) in dit document.
 
-1. Ontwikkel uw testdoosjes en [Voer ze lokaal uit.](#run-ui-tests-locally)
+1. Ontwikkel uw testdoosjes en [ze lokaal uitvoeren](#run-ui-tests-locally).
 
 1. Leg uw code vast in de gegevensopslagruimte van Cloud Manager en voer een pijplijn van Cloud Manager uit.
 
@@ -257,7 +257,7 @@ U kunt de hulpfuncties gebruiken om schermafbeeldingen tot stand te brengen door
 * JavaScript: [takeScreenshot, opdracht](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Opdrachten](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Als een archief met testresultaten wordt gemaakt tijdens een uitvoering van een UI-test, kunt u dit archief downloaden vanuit Cloud Manager met de opdracht `Download Details` onder de knop [**Aangepaste UI-tests** stap.](/help/implementing/cloud-manager/deploy-code.md)
+Als een archief met testresultaten wordt gemaakt tijdens een uitvoering van een UI-test, kunt u dit archief downloaden vanuit Cloud Manager met de opdracht `Download Details` onder de knop [**Aangepaste UI-tests** stap](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Bestanden uploaden {#upload-files}
 
@@ -309,7 +309,7 @@ Voor het uitvoeren van de tests UI van uw lokale machine, creeer een gebruiker m
 >* De logbestanden worden opgeslagen in het dialoogvenster `target/reports` map van uw opslagplaats
 >* U moet ervoor zorgen dat de nieuwste Chrome-versie actief is wanneer de test de meest recente release van ChromeDriver automatisch downloadt voor tests.
 >
->Zie voor meer informatie de [AEM opslagplaats voor projectarchetype.](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)
+>Zie voor meer informatie de [Opslagplaats voor projectarchetype AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Java Test Sample {#java-sample}
 
@@ -332,4 +332,4 @@ Voor het uitvoeren van de tests UI van uw lokale machine, creeer een gebruiker m
 >
 >* De logbestanden worden opgeslagen in het dialoogvenster `target/reports` van uw opslagplaats.
 >
->Zie voor meer informatie de [AEM opslagplaats voor testvoorbeelden.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
+>Zie voor meer informatie de [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
