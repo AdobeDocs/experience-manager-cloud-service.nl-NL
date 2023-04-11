@@ -1,9 +1,9 @@
 ---
 title: Toewijzing van gebruikers en belangrijkste migratie
 description: Overzicht van de toewijzing van gebruikers en de belangrijkste migratie
-source-git-commit: aeb8f633b45908a87f15f9feeb3723f90470be92
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '757'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 Als onderdeel van de as a Cloud Service overgang naar Adobe Experience Manager (AEM) moet u gebruikers en groepen verplaatsen van uw bestaande AEM naar AEM as a Cloud Service. Dit wordt gedaan door het Hulpmiddel van de Overdracht van de Inhoud.
 
-Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag. Hiervoor moet gebruik worden gemaakt van de [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) voor het beheren van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS) dat Single Sign-On biedt voor alle Adobe-cloudtoepassingen. Raadpleeg voor meer informatie [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Vanwege deze wijziging moeten bestaande gebruikers worden toegewezen aan hun IMS-id&#39;s om dubbele gebruikers op de auteur-instantie van de Cloud Service te voorkomen. Aangezien groepen in traditionele AEM fundamenteel verschillen van groepen in IMS, worden groepen niet in kaart gebracht, maar moeten de twee groepen na de migratie met elkaar in overeenstemming worden gebracht.
+Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag. Hiervoor moet gebruik worden gemaakt van de [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) voor het beheren van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS) dat Single Sign-On biedt voor alle Adobe-cloudtoepassingen. Raadpleeg voor meer informatie [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html#identity-management). Vanwege deze wijziging moeten bestaande gebruikers worden toegewezen aan hun IMS-id&#39;s om dubbele gebruikers op de auteur-instantie van de Cloud Service te voorkomen. Aangezien groepen in traditionele AEM fundamenteel verschillen van groepen in IMS, worden groepen niet in kaart gebracht, maar moeten de twee groepen na de migratie met elkaar in overeenstemming worden gebracht.
 
 ## Gebruikerstoewijzing en migratiegegevens {#user-mapping-detail}
 
@@ -49,6 +49,6 @@ De volgende specifieke gevallen worden geregistreerd:
 
 ## Aanvullende overwegingen {#additional-considerations}
 
-* Als de instelling **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** is ingesteld, worden reeds overgedragen gebruikers op de instantie Cloud Service samen met de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt om inhoud in te voeren. Hiermee worden ook alle instellingen opnieuw ingesteld, inclusief de machtigingen voor de Cloud Service-instantie van het doel. Dit geldt ook voor een beheerder die aan de **beheerders** groep. De gebruiker van admin moet aan de **beheerders** groep om het toegangstoken voor CTT terug te winnen.
+* Als de instelling **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** is ingesteld, worden reeds overgedragen gebruikers op de instantie Cloud Service samen met de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt om inhoud in te voeren. Hiermee worden ook alle instellingen opnieuw ingesteld, inclusief de machtigingen voor de Cloud Service-instantie van het doel. Dit geldt ook voor een beheerder die aan de **beheerders** groep. De gebruiker van admin moet aan opnieuw worden toegevoegd **beheerders** groep om het toegangstoken voor CTT terug te winnen.
 * Wanneer de inhoud toevoegt wordt uitgevoerd, als de inhoud niet wordt overgebracht omdat het sinds de vorige overdracht niet is veranderd, worden de gebruikers en de groepen verbonden aan die inhoud ook niet overgebracht, zelfs als de gebruikers en de groepen ondertussen zijn veranderd. Dit komt doordat gebruikers en groepen worden gemigreerd met de inhoud waaraan ze zijn gekoppeld.
 * Als het doel-AEM Cloud Service-exemplaar een gebruiker heeft met een andere gebruikersnaam maar hetzelfde e-mailadres als een van de gebruikers op de bron AEM instantie en de functie Toewijzing gebruiker is ingeschakeld, wordt een foutbericht geschreven in de logboeken en wordt de bron AEM gebruiker niet overgebracht, aangezien slechts één gebruiker met een opgegeven e-mailadres op het doelsysteem is toegestaan.

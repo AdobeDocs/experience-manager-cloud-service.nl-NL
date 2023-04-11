@@ -2,10 +2,10 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
    * Selecteer de migratieset die de geëxtraheerde gegevens als bron bevat.
       * De Reeksen van de migratie zullen verlopen na een lange periode van inactiviteit, zodat wordt verwacht dat de inname vrij snel na de extractie plaatsvindt. Controleren [Vervaldatum migratieset](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor meer informatie.
-   * Selecteer de doelomgeving. Dit is waar de inhoud van de migratieset wordt opgenomen. Selecteer de laag. (Auteur/Publicatie).
+   * Selecteer de doelomgeving. Dit is waar de inhoud van de migratieset wordt opgenomen. Selecteer de laag. (Auteur/Publicatie). Snelle ontwikkelomgevingen worden niet ondersteund.
 
    >[!NOTE]
    >
@@ -55,9 +55,13 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
    > 
    >Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om de opname van de Auteur eerst alleen in werking te stellen. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
 
+   >[!NOTE]
+   >
+   >Ingesties steunen geen Snelle bestemming van de Milieu van de Ontwikkeling (RDE). Zij zullen niet als mogelijke bestemmingskeus verschijnen, zelfs als de gebruiker toegang tot het heeft.
+
    >[!IMPORTANT]
    >
-   >U kunt een opname alleen afschoppen in de doelomgeving als u tot de lokale omgeving behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u geen inname kunt starten, raadpleegt u [Kan inname niet starten](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) voor meer informatie .
+   >U kunt alleen een opname in de doelomgeving starten als u tot de lokale omgeving behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u geen inname kunt starten, raadpleegt u [Kan inname niet starten](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) voor meer informatie .
 
    >[!IMPORTANT]
    >
@@ -103,7 +107,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 >id="aemcloud_ctt_ingestion_topup"
 >title="Opname aanvullen"
 >abstract="Gebruik de functie Boven om gewijzigde inhoud te verplaatsen sinds de vorige activiteit voor inhoudsoverdracht. Na voltooiing van Ingestie, controleer de logboeken om het even welke fout/waarschuwingen. Eventuele fouten moeten onmiddellijk worden opgelost door de gemelde problemen te verhelpen of door contact op te nemen met de klantenservice van Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Logbestanden weergeven"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Logbestanden weergeven"
 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële *aanvulling* van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
 
@@ -132,7 +136,7 @@ U moet het migratietoken handmatig ophalen door op de koppeling &#39;Token ophal
 
 ### Kan inname niet starten {#unable-to-start-ingestion}
 
-U kunt een opname alleen afschoppen in de doelomgeving als u tot de lokale omgeving behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u niet tot de groep van AEM beheerders behoort, zult u een fout zoals hieronder getoond zien wanneer u probeert om een opname te beginnen. U kunt de beheerder vragen om u toe te voegen aan de lokale **AEM** of vraag om de token zelf, die u vervolgens in de **Invoer van migratietoken** veld.
+U kunt alleen een opname in de doelomgeving starten als u tot de lokale omgeving behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u niet tot de groep van AEM beheerders behoort, zult u een fout zoals hieronder getoond zien wanneer u probeert om een opname te beginnen. U kunt de beheerder vragen om u toe te voegen aan de lokale **AEM** of vraag om de token zelf, die u vervolgens in de **Invoer van migratietoken** veld.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -175,4 +179,4 @@ Dit conflict moet handmatig worden opgelost. Iemand die bekend is met de inhoud,
 
 ## Volgende functies {#whats-next}
 
-Nadat u Ingesting Content in Target hebt voltooid, kunt u logboeken van elke stap (extractie en opname) weergeven en op fouten zoeken. Zie [Logboeken voor een migratieset weergeven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) voor meer informatie.
+Nadat u Ingesting Content in Target hebt voltooid, kunt u logboeken van elke stap (extractie en opname) weergeven en op fouten zoeken. Zie [Logboeken voor een migratieset weergeven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) voor meer informatie.

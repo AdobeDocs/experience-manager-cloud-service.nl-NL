@@ -2,9 +2,9 @@
 title: Voorwaarden voor het gereedschap Inhoud overbrengen
 description: Voorwaarden voor het gereedschap Inhoud overbrengen
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ In de volgende tabel staan de voorwaarden voor het gebruik van het gereedschap I
 Controleer alle onderstaande overwegingen:
 
 | Overwegingen | Wat wordt momenteel ondersteund |
-|--- |--- |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AEM | Het gereedschap Inhoud overbrengen kan alleen worden uitgevoerd in AEM 6.3 of hoger. |
 | Grootte van segmentwinkel | Een bestaande opslagplaats met minder dan 55 miljoen JCR-knooppunten en maximaal 250 GB (gecomprimeerde onlinegrootte) op *Auteur* en 50 GB aan *Publiceren* worden momenteel ondersteund. Creeer een steunkaartje met de Zorg van de Klant van Adobe om opties voor de grootte van de segmentopslag boven deze grenzen te bespreken. |
 | Totale grootte van opslagplaats voor inhoud <br>*(segmentopslag + gegevensopslag)* | Content Transfer Tool is ontworpen om inhoud van maximaal 20 TB over te brengen voor het type gegevensopslag van bestandsgegevens. Hoger dan 20 TB wordt momenteel niet ondersteund. Maak een ondersteuningsticket met de klantenservice van Adobe om opties voor inhoud groter dan 20 TB te bespreken. <br>Als u het proces voor het overdragen van inhoud voor grote opslagplaatsen aanzienlijk wilt versnellen, kunt u [voorkopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step) kan worden gebruikt. Dit geldt voor File Data Store, Amazon S3 en Azure Data Store. Voor Amazon S3 en Azure Data Store wordt opslagruimte van meer dan 20 TB ondersteund. |
@@ -34,4 +34,4 @@ Controleer alle onderstaande overwegingen:
 
 ## Volgende functies {#whats-next}
 
-Zodra u de eerste vereisten hebt herzien en hebt bepaald of u het Hulpmiddel van de Overdracht van de Inhoud in uw migratieproject kunt gebruiken, verwijs naar [Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).
+Zodra u de eerste vereisten hebt herzien en hebt bepaald of u het Hulpmiddel van de Overdracht van de Inhoud in uw migratieproject kunt gebruiken, verwijs naar [Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html).

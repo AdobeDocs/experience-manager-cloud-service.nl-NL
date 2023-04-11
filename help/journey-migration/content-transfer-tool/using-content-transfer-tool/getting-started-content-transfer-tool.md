@@ -2,10 +2,10 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +43,7 @@ De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde ga
 
 ### SSL-registratie inschakelen {#enable-ssl-logging}
 
-Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optreden. Als u verbindingsproblemen tijdens een extractieproces wilt oplossen, kunt u SSL-registratie inschakelen via de systeemconsole van de AEM omgeving door de volgende stappen uit te voeren:
+Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optreden. Als u verbindingsproblemen wilt oplossen tijdens een extractieproces, kunt u SSL-logboekregistratie inschakelen via de systeemconsole van de AEM omgeving door de volgende stappen uit te voeren:
 
 1. Navigeer naar de Adobe Experience Manager Web Console op uw broninstantie door naar **Gereedschappen - Bewerkingen - Webconsole** of rechtstreeks naar de URL op *https://serveraddress:serverport/system/console/configMgr*
 1. Zoeken naar **Configuratie van de service Content Transfer Tool Extraction**
@@ -177,7 +177,7 @@ Voer de onderstaande stappen uit om een groottecontrole uit te voeren:
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Klikken op **Formaat controleren** om het proces te starten. Vervolgens keert u terug naar de lijstweergave van de migratieset. Er wordt dan een bericht weergegeven dat aangeeft dat **Formaat controleren** wordt uitgevoerd.
+1. Klikken op **Formaat controleren** om het proces te starten. Vervolgens gaat u terugkeren naar de lijstweergave van de migratieset. Er wordt dan een bericht weergegeven dat aangeeft dat **Formaat controleren** wordt uitgevoerd.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
