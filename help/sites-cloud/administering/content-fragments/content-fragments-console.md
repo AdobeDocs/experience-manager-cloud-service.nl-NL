@@ -5,7 +5,7 @@ landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fr
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 13e75e8b0f08463f5fd941263497f5cf0a31129c
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
    * **[Maken](#creating-new-content-fragment)** een nieuw inhoudsfragment
    * [Filter](#filtering-fragments) de Inhoudsfragmenten op basis van een selectie van voorspelling en sla het filter op voor toekomstig gebruik
    * [Zoeken](#searching-fragments) de inhoudsfragmenten
-   * [De tabelweergave aanpassen om geselecteerde kolommen met informatie weer te geven](#selectuse-available-columns)
+   * [De tabelweergave aanpassen om geselecteerde kolommen met informatie weer te geven](#select-available-columns)
    * Gebruiken **Openen in elementen** om de huidige locatie rechtstreeks te openen in het dialoogvenster **Activa** console
 
       >[!NOTE]

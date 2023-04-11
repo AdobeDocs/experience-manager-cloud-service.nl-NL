@@ -2,10 +2,10 @@
 title: Inhoudsfragmenten beheren (elementen - Inhoudsfragmenten)
 description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -131,10 +131,6 @@ Uw fragment openen voor bewerken:
 >[!CAUTION]
 >
 >Als u een inhoudsfragment wilt bewerken, hebt u [de juiste machtigingen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Neem contact op met de systeembeheerder als er problemen optreden.
-
->[!CAUTION]
->
->U hebt de juiste machtigingen nodig om een inhoudsfragment te bewerken. Neem contact op met de systeembeheerder als er problemen optreden.
 
 1. Gebruik de **Activa** -console om naar de locatie van het inhoudsfragment te navigeren.
 1. Open het fragment voor bewerking door:
