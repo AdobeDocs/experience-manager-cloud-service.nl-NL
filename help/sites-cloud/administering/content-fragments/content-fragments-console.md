@@ -5,9 +5,9 @@ landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fr
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,7 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
 * Het linkerdeelvenster
    * Hier kunt u de mappenstructuur verbergen of weergeven
    * U kunt een specifieke vertakking van de boomstructuur selecteren
+   * Dit kan worden aangepast om geneste mappen weer te geven
 * Het hoofd-/rechterdeelvenster - vanaf hier kunt u:
    * Zie de lijst met alle inhoudsfragmenten in de geselecteerde vertakking van de structuur:
       * De plaats wordt aangegeven door de broodkruimels; deze kunnen ook worden gebruikt om de locatie te wijzigen
@@ -64,8 +65,10 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
             * Open het gewenste fragment in de editor
             * Informatie over verwijzingen weergeven
             * Informatie weergeven over taalversies van het fragment
-         * U kunt [Selecteer een of meer inhoudsfragmenten om de beschikbare acties weer te geven](#actions-selected-content-fragment)
-      * U kunt een kolomkop selecteren om de tabel te sorteren op basis van die kolom. Selecteer nogmaals om te schakelen tussen oplopend en aflopend. Sorteren wordt momenteel ondersteund op de **Titel**, **Gewijzigd**, en **Gewijzigd door** kolommen.
+      * Als u de muisaanwijzer op de kolomkoppen gebruikt, worden een vervolgkeuzelijst met handelingen en schuifregelaars voor de breedte weergegeven. Met deze opties kunt u:
+         * Sorteren - selecteer de gewenste actie voor oplopend of aflopend. De volledige tabel wordt op basis van die kolom gesorteerd. Sorteren is alleen beschikbaar voor de desbetreffende kolommen.
+         * De grootte van de kolom wijzigen - met de actie of de breedtegraadregelaars
+      * U kunt [Selecteer een of meer inhoudsfragmenten om de beschikbare acties weer te geven](#actions-selected-content-fragment)
    * **[Maken](#creating-new-content-fragment)** een nieuw inhoudsfragment
    * [Filter](#filtering-fragments) de Inhoudsfragmenten op basis van een selectie van voorspelling en sla het filter op voor toekomstig gebruik
    * [Zoeken](#searching-fragments) de inhoudsfragmenten
@@ -154,7 +157,7 @@ Selecteren **Maken** opent de compacte **Nieuw inhoudsfragment** dialoogvenster:
 
 Het deelvenster Filter biedt de volgende opties:
 
-* een selectie van voorspelling die kan worden geselecteerd en gecombineerd
+* een selectie van de voorspelling; een of meer voorspelden kunnen worden geselecteerd en gecombineerd om het filter te maken
 * de mogelijkheid **Opslaan** uw configuratie
 * de optie om een opgeslagen zoekfilter op te halen voor hergebruik
 
