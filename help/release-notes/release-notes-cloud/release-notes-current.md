@@ -2,9 +2,9 @@
 title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
-source-git-commit: 411de178588ca94a0bdb60567b3c0a6b718edce1
+source-git-commit: 085ce15ebe4d48d32a437f13e728f60cfc57d0fa
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -26,86 +26,70 @@ In de volgende sectie worden de opmerkingen bij de release met functies voor de 
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2023.1.0) is 9 februari 2023. De volgende release met functies (2023.2.0) is gepland voor 12 april 2023.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2023.2.0) is 12 april 2023. De volgende release met functies (2023.4.0) is gepland voor 27 april 2023.
 
 ## Video vrijgeven {#release-video}
 
-Bekijk de video Overzicht van de release van januari 2023 voor een overzicht van de functies die in de release van 2023.1.0 zijn toegevoegd:
+Bekijk de video Overzicht van de release van februari 2023 voor een overzicht van de functies die zijn toegevoegd in de release van 2023.2.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3416885/?quality=12)
 
 ## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
 
-### Nieuwe functies in [!DNL Sites] prerelease {#prerelease-features-sites}
+### Nieuwe functies in [!DNL Experience Manager Sites] prelease {#prerelease-sites}
 
-* De API voor het leveren van AEM GraphQL-inhoud biedt nu ondersteuning voor GraphQL [Paginering](/help/headless/graphql-api/content-fragments.md#paging) en [Sorteren](/help/headless/graphql-api/content-fragments.md#sorting)om het ophalen en renderen van grote content efficiënter te maken. De paginering van GraphQL staat toe om de tijd van de vraagreactie te verbeteren door resultaten in subsets in tegenstelling tot allen in één keer terug te keren. Met GraphQL-sortering kunnen inhoudssets in de gewenste volgorde worden geplaatst, waardoor het voor een clienttoepassing eenvoudiger wordt om de inhoud te verwerken.  De responstijd van de query wordt verder verbeterd met Hybride filters in de AEM GraphQL-engine. Inhoud wordt nu vanuit JCR gelezen in kleinere sets die overeenkomen met queryfilters.
+* Exporteer inhoudsfragmenten van AEM als cloudservice naar Adobe target zoals JSON biedt.
+* Ondersteuning voor paginering en sortering van GraphQL en verbeteringen in de interne cache helpen nu de prestaties van losgekoppelde clienttoepassingen te verbeteren wanneer u grote inhoudssets ophaalt van AEM met behulp van complexe GraphQL-query&#39;s en -filters.
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* In middelenrapporten is nu de mogelijkheid opgenomen voor beheerders om [downloadrapporten voor bestanden genereren](/help/assets/asset-reports.md) van de as a Cloud Service Experience Manager Assets-implementatie. Deze gegevens stellen Admins verder in staat om inzichten af te leiden van belangrijke succesmaatstaven om de acceptatie van Activa binnen uw onderneming en door klanten te meten.
+* Ondersteuning voor het nieuwe protocol (DASH - Dynamic Adaptive Streaming via HTTP) dat is gestart voor Adaptive streaming in Dynamic Media-video (met CMAF ingeschakeld):
+   * Adaptief streamen (DASH/HLS) zorgt voor een betere weergave voor eindgebruikers voor video&#39;s
+   * DASH is het internationale standaardprotocol voor adaptieve videostreaming en wordt op grote schaal toegepast in de branche
+   * Beschikbaar in NA, beschikbaar via een ondersteuningsticket, binnenkort verkrijgbaar in APAC, EMEA
 
-   ![PDF-uitvoering voor andere indelingen](/help/release-notes/assets/choose_report.png)
-
-* Experience Manager Assets nu [ondersteunt SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) naast de toegangstoets voor verificatie bij de verbinding met de Azure Blob Storage-gegevensbron voor het opnemen van elementen met het Bulk Import-gereedschap.
-
-* Verbeterd beheer van CMYK-afbeeldingen in Asset compute, zodat u slimme uitsnijdtags en slimme tags voor CMYK-afbeeldingen kunt genereren.
-
-### Nieuwe functies in [!DNL Assets] prerelease {#prerelease-features-assets}
-
-* Experience Manager Assets biedt nu ondersteuning voor [grootschalige ingebruikname van middelen van het Google Cloud-Platform](/help/assets/add-assets.md#asset-bulk-ingestor) met het gereedschap Bulk importeren.
+* Extra ondersteuning voor WebP-afbeeldingen om automatisch metagegevens te extraheren, miniaturen en aangepaste uitvoeringen te genereren. De mogelijkheden Slimme tags en Slim uitsnijden worden nu ook ondersteund voor deze bestanden.
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Workflowstappen om niet-interactieve PDF-documenten en afdrukbare uitvoer te genereren](/help/forms/aem-forms-workflow-step-reference.md)**: Automatiseer het maken van niet-interactieve PDF-documenten en afdrukbare uitvoer voor uw bedrijfsprocessen met AEM workflowstappen, stroomlijnt het genereren van documenten en bespaart tijd.
-* **[Gebruik voetnoten om citaten of extra informatie te verstrekken in Adaptief Forms](/help/forms/footnotes-richtextsupport.md)**: Gebruik voetnoten in een adaptief formulier om de informatie weer te geven over het invullen of gebruiken van een formulier. U kunt het ook gebruiken om tussen haakjes informatie, auteursrechttoestemmingen, en andere nuttige informatie te verstrekken.
-
-### Nieuwe functies in [!DNL Forms] prerelease {#prerelease-features-forms}
-
 * **[Gebruik kerncomponenten voor gegevensvastlegging om Adaptive Forms te bouwen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Adaptieve Forms-editor gebruiken](/help/forms/creating-adaptive-form-core-components.md) formulieren maken op basis van gestandaardiseerde componenten voor het vastleggen van gegevens (Core Components). Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring.
-* **[Ondersteuning voor de front-end pijpleiding voor de styling van de core component, gebaseerd op Adaptive Forms](/help/forms/using-themes-in-core-components.md)**: Gebruik eenvoudig aanpasbare BEM-gebaseerde thema&#39;s voor op Core Components-Gebaseerde Aangepaste Forms door hen met de pijpleiding van de Plaatsing van Frontend op te stellen om de blik en het gevoel van uw vormen te verbeteren.
-* **[Document met record genereren voor op kerncomponenten gebaseerde adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)**: Maak een record voor een op kerncomponenten gebaseerd adaptief formulier bij verzending voor langetermijnarchivering, afdrukken of in documentindeling.
+
+* **[Ondersteuning voor de front-end pijpleiding voor de styling van de core component, gebaseerd op Adaptive Forms](/help/forms/using-themes-in-core-components.md)**: Gebruik gestandaardiseerde BEM-gebaseerde thema&#39;s voor Core Components-based Adaptive Forms door deze te implementeren met Front-end Deployment-pijplijn om de vormgeving van uw formulieren te verbeteren en zich aan te passen aan de door uw organisatie goedgekeurde ontwerprichtlijnen.
+
+* **[Document met record genereren voor op kerncomponenten gebaseerde adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)**: Maak een recorddocument met overgelegde gegevens voor Adaptive Forms die zijn gemaakt met kerncomponenten voor archivering of referentie voor eindgebruikers, in gedrukte vorm of in documentindeling.
 
 ![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **[Adaptieve Forms verzenden naar Microsoft SharePoint en Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Stroomlijn de gegevensverzending met de mogelijkheid om adaptieve formuliergegevens rechtstreeks naar Microsoft SharePoint en Microsoft OneDrive te verzenden. U kunt zowel schema-gebaseerde als schema-loze gegevens voorleggen. Deze verzendacties vormen een aanvulling op de reeds beschikbare verzendacties.
-* **[Efficiënt formulieren maken met de functie Een adaptief formulier opslaan als sjabloon](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Stroomlijn het proces voor het maken van formulieren door een adaptief formulier op te slaan als een sjabloon en de sjablonen voor het volgende adaptieve formulier opnieuw te gebruiken.
-* **[AEM Forms verbinden met databases die door JDBC worden ondersteund](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Sluit uw AEM Forms-gegevensmodel eenvoudig aan op databases die JDBC ondersteunen, zodat u gegevens naadloos kunt lezen en schrijven.
-* **[Integreer met REST Endpoints die Open API 3.0 gebruiken](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Verbind AEM Forms as a Cloud Service Modellen van de Gegevens van de Vorm met REST eindpunten die Open API specificatieversie 3.0 steunen, die u toestaat om gegevens te verzenden en te ontvangen.
+* **[Efficiënt formulieren maken met de functie Een adaptief formulier opslaan als sjabloon](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: De ontwikkeling van formulieren versnellen en standaardiseren door bestaande, door een merk goedgekeurde formulieren op te slaan als formuliersjablonen en deze snel weer te gebruiken.
+
+* **[AEM Forms verbinden met databases die door JDBC worden ondersteund](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Maak rechtstreeks vanuit AEM Cloud-service verbinding met bedrijfsdatabases via het JDBC-protocol, zonder dat u deze via de REST API toegankelijk hoeft te maken.
+
+* **[Integreer met REST Endpoints die Open API 3.0 gebruiken](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Naadloos integreren in recordsystemen die Open API 3.0 ondersteunen voor het opslaan en ophalen van gegevens met behulp van formuliergegevensmodellen.
+
 * **[Een adaptief formulier delen voor revisie](/help/forms/create-reviews-forms.md)**: Met het mechanisme voor adaptieve Forms-revisie kan een of meer revisoren het formulier reviseren.
 
 
-## CIF-invoegtoepassing {#cloud-services-cif}
+### Functies in [!DNL Forms] prerelease {#prerelease-features-forms}
 
-### Nieuwe functies {#what-is-new-cif}
+* **[Adaptieve Forms verzenden naar Microsoft SharePoint en Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Verbeter de flexibiliteit van zakelijke gebruikers om snel nieuwe formulieren te starten en verzonden gegevens op te slaan in de dagelijkse tools die ze gebruiken, zoals de Microsoft SharePoint-site of de OneDrive-map.
 
-* Auteurs kunnen productlijsten dynamisch verrijken met Experience Fragments (voorbeeld: banner plaatsen tussen productaanbiedingen).
-* De component List ondersteunt nu gekoppelde product-/categoriepagina&#39;s om gerelateerde pagina&#39;s dynamisch weer te geven.
-* Er is ondersteuning toegevoegd voor Peregrine 12.5-componenten.
-* Er is steun toegevoegd voor het laden van de prijs aan de clientzijde in productgummetje en carrousel.
+![Adaptieve Forms verzenden naar Microsoft SharePoint en Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
-## [!DNL Experience Manager as a Cloud Service] Stichting {#foundation}
 
-### Nieuwe functies {#what-is-new-foundation}
+## Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
 
-* [Snelle ontwikkelomgevingen](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE&#39;s stellen ontwikkelaars in staat om problemen snel op te lossen en nieuwe functies op AEM as a Cloud Service te implementeren.
+Gebruik Headless Adaptive Forms om uw ontwikkelaars in staat te stellen interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden geopend en gebruikt in plaats van via een traditionele grafische gebruikersinterface. Met behulp van hoofdloze adaptieve formulieren kunt u:
 
-   Snelle ontwikkelomgevingen zijn een nieuw type cloudomgeving dat is ontworpen als een snelle, consistente en uitbreidbare manier om die code te valideren en die lokaal werkt, en werken ook zoals wordt verwacht in de cloud. Gebruik de Hulpmiddelen van de Lijn van het Bevel, snel &quot;synchroniseer&quot;inhoudspakketten, bundels, inhoudsdossiers, configuratie OSGI, of berichtconfiguratie aan RDE. Zie dit in actie in de video hieronder:
+* multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
+* U kunt zelf formulieren integreren in uw bureaublad en mobiele apps, websites en chattoepassingen
+* gebruik uw eigen UI-componenten opnieuw met formuliertoepassingen
+* de kracht van Adobe Experience Manager Forms benutten
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
-
-   Nadat code in de RDE met succes is gevalideerd, wordt het aangeraden om te worden geïmplementeerd in een Cloud Dev Environment om de kwaliteitspoorten van Cloud Manager uit te oefenen voordat u de code via productiepijplijn naar stadium- en productieomgevingen implementeert.
-
-   Elk programma omvat één RDE en naar keuze, kunnen meer worden vergunning gegeven.
-
-   >[!NOTE]
-   >
-   >De RDE&#39;s zullen in de komende weken geleidelijk worden ingevoerd; u kunt een e-mail naar aemcs-rde-support@adobe.com verzenden om aan de voorzijde van de lijn over te slaan.
-
-* [Uitgebreide ondersteuning voor API-toegangstokens aan de serverzijde](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) - U kunt nu meerdere referenties genereren. Dit is handig voor scenario&#39;s waarin API&#39;s verschillende kenmerken hebben. Het is nu ook mogelijk om geloofsbrieven op een zelfbediening manier in te trekken.
+U kunt vanaf uw officiële e-mailadres een e-mail sturen naar aem-forms-headless@adobe.com om deel te nemen aan het programma voor vroegtijdige adoptie.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 

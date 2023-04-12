@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
+source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
 workflow-type: tm+mt
-source-wordcount: '4203'
+source-wordcount: '4768'
 ht-degree: 0%
 
 ---
@@ -223,7 +223,7 @@ Wanneer Inhoudsfragmenten zijn genest, kan een bovenliggend inhoudsfragmentmodel
 
 Wanneer dit gebeurt, genereert AEM een *onvolledig* Schema voor het bovenliggende inhoudsfragmentmodel. Dit betekent dat de fragmentverwijzing, die afhankelijk is van het niet-gepubliceerde model, uit het schema wordt verwijderd.
 
-## Fields {#fields}
+## Velden {#fields}
 
 Binnen het schema zijn er afzonderlijke velden, van twee basiscategorieën:
 
@@ -246,8 +246,8 @@ GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen
 | Getal | Float [Float] | Wordt gebruikt om het zwevende-kommagetal en de reguliere getallen weer te geven |
 | Boolean | Boolean | Gebruikt om selectievakjes weer te geven → eenvoudige true/false-instructies |
 | Datum en tijd | Kalender | Wordt gebruikt om datum en tijd weer te geven in de indeling ISO 8601. Afhankelijk van het geselecteerde type zijn er drie kleuren beschikbaar voor gebruik in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
-| Opsomming | Tekenreeks | Wordt gebruikt om een optie weer te geven uit een lijst met opties die bij het maken van het model zijn gedefinieerd |
-| Tags | [Tekenreeks] | Wordt gebruikt om een lijst weer te geven met tekenreeksen die tags vertegenwoordigen die in AEM worden gebruikt |
+| Opsomming | String | Wordt gebruikt om een optie weer te geven uit een lijst met opties die bij het maken van het model zijn gedefinieerd |
+| Tags | [String] | Wordt gebruikt om een lijst weer te geven met tekenreeksen die tags vertegenwoordigen die in AEM worden gebruikt |
 | Content Reference | String, [String] | Wordt gebruikt om het pad naar een ander element in AEM weer te geven |
 | Fragmentverwijzing | *Een modeltype* | Wordt gebruikt om te verwijzen naar een ander inhoudsfragment van een bepaald modeltype, dat is gedefinieerd toen het model werd gemaakt. |
 
@@ -460,7 +460,7 @@ Bij het filteren wordt een syntaxis gebruikt die is gebaseerd op logische operat
 
 Het meest atomische deel bestaat uit één expressie die kan worden toegepast op de inhoud van een bepaald veld. De inhoud van het veld wordt vergeleken met een bepaalde constante waarde.
 
-De volgende expressie
+De expressie
 
 ```graphql
 {
@@ -703,6 +703,208 @@ query {
 >* Vanwege interne technische beperkingen zullen de prestaties afnemen als sorteren en filteren wordt toegepast op geneste velden. Daarom wordt aangeraden filter-/sorteervelden te gebruiken die op hoofdniveau zijn opgeslagen. Dit is ook de geadviseerde manier als u grote gepagineerde resultaatreeksen wilt vragen.
 
 
+## Webgeoptimaliseerde afbeeldingslevering in GraphQL-query&#39;s {#web-optimized-image-delivery-in-graphql-queries}
+
+Voor Web-geoptimaliseerde afbeeldingslevering kunt u een grafische query gebruiken om:
+
+* Een URL aanvragen voor een AEM-elementafbeelding
+
+* Geef parameters door met de query, zodat er automatisch een specifieke uitvoering van de afbeelding wordt gegenereerd en geretourneerd
+
+   >[!NOTE]
+   >
+   >De opgegeven vertoning wordt niet opgeslagen in AEM Assets. De vertoning wordt geproduceerd en in geheim voorgeheugen voor een korte periode gehouden.
+
+* De URL retourneren als onderdeel van de JSON-levering
+
+U kunt AEM gebruiken om:
+
+* Voldoende [Webgeoptimaliseerde afbeeldingslevering](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) in GraphQL-query&#39;s.
+
+Dit betekent dat de opdrachten worden toegepast tijdens de uitvoering van de query, op dezelfde manier als URL-parameters bij GET-aanvragen voor die afbeeldingen.
+
+Op deze manier kunt u dynamisch afbeeldingsuitvoeringen maken voor JSON-levering, zodat u deze uitvoeringen niet handmatig hoeft te maken en op te slaan in de opslagplaats.
+
+Met de oplossing in GraphQL kunt u:
+
+* gebruiken `_dynamicUrl` op de `ImageRef` referentie
+
+* toevoegen `_assetTransform` aan de lijstkopbal waar uw filters worden bepaald
+
+### Structuur van het transformatieverzoek {#structure-transformation-request}
+
+`AssetTransform` (`_assetTransform`) wordt gebruikt om de URL-transformatieaanvragen in te dienen.
+
+De structuur en syntaxis zijn:
+
+* `format`: een opsomming met alle ondersteunde indelingen door de extensie: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL of WEBPLL
+* `seoName`: een tekenreeks die wordt gebruikt als bestandsnaam in plaats van de knooppuntnaam
+* `crop`: een substructuur van een frame, als breedte of hoogte wordt weggelaten, wordt de hoogte of breedte gebruikt als dezelfde waarde
+   * `xOrigin`: de x-oorsprong van het frame en is verplicht
+   * `yOrigin`: de y-oorsprong van het frame en is verplicht
+   * `width`: de breedte van het kader
+   * `height`: de hoogte van het frame
+* `size`: een dimensiesubstructuur; als breedte of hoogte wordt weggelaten, wordt de hoogte of breedte gebruikt als dezelfde waarde
+   * `width`: de breedte van de dimensie
+   * `height`: de hoogte van de dimensie
+* `rotation`: een opsomming van alle ondersteunde rotaties: R90, R180, R270
+* `flip`: een opsomming van HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
+* `quality`: een geheel getal tussen 1 en 100 dat het percentage van de afbeeldingskwaliteit aangeeft
+* `width`: een geheel getal dat de breedte van de uitvoerafbeelding definieert, maar door de afbeeldingsgenerator wordt genegeerd
+* `preferWebp`: een Booleaanse waarde die aangeeft of de voorkeur wordt gegeven aan een webpagina (de standaardwaarde is false)
+
+De transformatie URL is beschikbaar voor alle vraagtypes: per pad, lijst of gepagineerd.
+
+### Voor het web geoptimaliseerde afbeeldingslevering met volledige parameters {#web-optimized-image-delivery-full-parameters}
+
+Hier volgt een voorbeeldquery met een volledige set parameters:
+
+```graphql
+{
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:"test"
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Web-geoptimaliseerde beeldlevering met één enkele vraagvariabele {#web-optimized-image-delivery-single-query-variable}
+
+In het volgende voorbeeld wordt het gebruik van één queryvariabele getoond:
+
+```graphql
+query ($seoName: String!) {
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Webgeoptimaliseerde afbeeldingslevering met meerdere queryvariabelen {#web-optimized-image-delivery-multiple-query-variables}
+
+In het volgende voorbeeld wordt het gebruik van meerdere queryvariabelen getoond:
+
+```graphql
+query ($seoName: String!, $format: AssetTransformFormat!) {
+  articleList(
+    _assetTransform: {
+      format:$format
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Voor het web geoptimaliseerde aanvraag voor het leveren van afbeeldingen via URL {#web-optimized-image-delivery-request-url}
+
+Als u de query opslaat als een doorlopende query (bijvoorbeeld met de naam `dynamic-url-x`) kunt u vervolgens [De voortgezette query rechtstreeks uitvoeren](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+
+Gebruik bijvoorbeeld de volgende URL&#39;s om de vorige voorbeelden (opgeslagen als voortgeduurde query&#39;s) rechtstreeks uit te voeren:
+
+* [Enkele parameter](#dynamic-image-delivery-single-specified-parameter); Blijvende query genaamd `dynamic-url-x`
+
+   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
+
+      Het antwoord ziet er als volgt uit:
+
+      ![Afbeeldingen leveren met behulp van parameters](assets/cfm-graphiql-sample-image-delivery.png "Afbeeldingen leveren met behulp van parameters")
+
+* [Meerdere parameters](#dynamic-image-delivery-multiple-specified-parameters); Blijvende query genaamd `dynamic`
+
+   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
+
+      >[!CAUTION]
+      >
+      >De navolgende `;`is verplicht de lijst met parameters zorgvuldig te beëindigen.
+
+### Beperkingen van het leveren van afbeeldingen {#image-delivery-limitations}
+
+De volgende beperkingen bestaan:
+
+* Modifiers die worden toegepast op alle afbeeldingen die deel uitmaken van de query (globale parameters)
+
+* Koppen in cache plaatsen
+
+   * Geen caching op auteur
+   * Caching bij publicatie - maximale leeftijd van 10 minuten (kan niet worden gewijzigd door client)
+
 ## GraphQL for AEM - Overzicht van extensies {#graphql-extensions}
 
 De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspecificatie van GraphQL. Voor GraphQL-query&#39;s met AEM zijn er een paar extensies:
@@ -733,7 +935,7 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
    * Zie [Voorbeeldquery - Alle informatie over alle steden](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * Als u logische OR wilt gebruiken:
-   * use ` _logOp: OR`
+   * gebruiken ` _logOp: OR`
    * Zie [Voorbeeldquery - Alle personen met de naam &quot;Jobs&quot; of &quot;Smith&quot;](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * Logische AND bestaat ook, maar is (vaak) impliciet
@@ -761,7 +963,18 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
          >
          >Als de opgegeven variatie niet bestaat voor een inhoudsfragment, wordt de master variatie geretourneerd als standaard (fallback).
 
-         * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](#sample-cities-named-variation)
+         * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+   * Voor [levering van afbeelding](#image-delivery):
+
+      * `_dynamicUrl`: op de `ImageRef` referentie
+
+      * `_assetTransform`: in de lijst waar de filters zijn gedefinieerd
+
+      * Zie:
+
+         * [Voorbeeldquery voor levering van afbeelding met volledige parameters](#image-delivery-full-parameters)
+
+         * [Voorbeeldquery voor beeldlevering met één opgegeven parameter](#image-delivery-single-specified-parameter)
    * En bewerkingen:
 
       * `_operator` : specifieke exploitanten toepassen; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -780,9 +993,10 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
 
 
 
+
 * GraphQL-union-typen worden ondersteund:
 
-   * use `... on`
+   * gebruiken `... on`
       * Zie [Voorbeeldquery voor een inhoudsfragment van een specifiek model met een inhoudsverwijzing](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)
 
 * Extra fallback bij het opvragen van geneste fragmenten:

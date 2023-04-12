@@ -1,17 +1,17 @@
 ---
 title: Opmerkingen bij de release 2022.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 9a08514f11c86b783ae68940a0c3c58fcada3dc2
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 2022.10.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de opmerkingen bij de release met functies voor de versie 2022.10.0 van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >

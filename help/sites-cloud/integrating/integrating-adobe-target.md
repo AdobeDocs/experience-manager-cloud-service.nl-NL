@@ -4,9 +4,9 @@ description: Integreren met Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: c69f0b838638b4a2c2ea9f54836954f72710594f
+source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1047'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,9 @@ Als onderdeel van de Adobe Marketing Cloud kunt u met Adobe Target de relevantie
 * het gebruiken van Touch UI om een Configuratie van het Doel in AEM as a Cloud Service (vereiste configuratie IMS) tot stand te brengen.
 * Adobe Target toevoegen en configureren als extensie in [Adobe starten](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
-Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). De integratie met Launch is echter noodzakelijk voor &quot;ervaring richtend&quot;. Voor de uitvoer van de Fragmenten van de Ervaring naar Doel, hebt u slechts de Configuratie van Adobe Target en IMS nodig.
+Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). De integratie met Launch is echter noodzakelijk voor &quot;ervaring richtend&quot;.
+
+Voor het uitvoeren van de Fragmenten van de Ervaring en/of de Fragmenten van de Inhoud aan Doel, hebt u slechts nodig [Adobe Target Configuration and IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >
