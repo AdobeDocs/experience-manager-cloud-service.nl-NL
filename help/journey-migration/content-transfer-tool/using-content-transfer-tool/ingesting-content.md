@@ -2,10 +2,10 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 6%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="Opname aanvullen"
 
 Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool op te nemen:
->[!NOTE]
->U kunt de optionele pre-copy stap uitvoeren om de innamefase aanzienlijk te versnellen. De pre-copy stap is het meest effectief voor de eerste volledige extractie en inname. Zie [Inschakelen met AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer informatie .
 
 >[!NOTE]
 >Heb je een ondersteuningsticket voor deze inname onthouden? Zie [Belangrijke overwegingen voordat u het gereedschap Inhoud overbrengen gebruikt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) om die reden en om andere redenen kan de inname succesvol zijn .
@@ -29,7 +27,6 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 1. Ga naar Cloud Acceleration Manager. Klik op uw projectkaart en klik op de kaart van de Overdracht van de Inhoud. Navigeren naar **Ingestietaken** en klik op **Nieuwe inname**
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
-
 
 1. Controleer de innamecontrolelijst en zorg ervoor dat alle stappen zijn voltooid. Dit zijn noodzakelijke stappen om een succesvolle inname te waarborgen. U kunt doorgaan naar de **Volgende** stap alleen als de checklist is voltooid.
 
