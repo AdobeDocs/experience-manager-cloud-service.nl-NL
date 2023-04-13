@@ -1,9 +1,9 @@
 ---
 title: Inhoudsfragmenten exporteren naar Adobe Target
 description: Inhoudsfragmenten exporteren naar Adobe Target
-source-git-commit: 78840c83d91d6e4f35ec7ca8d14f52024d3535ff
+source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -321,7 +321,7 @@ Een inhoudsfragment exporteren van AEM naar doel (nadat u de cloudconfiguratie h
 1. Ga naar het inhoudsfragment in het dialoogvenster **Activa** console.
 1. Selecteer het inhoudsfragment dat u wilt exporteren als doel.
 
-1. Tikken/klikken **Exporteren naar Adobe Target**.
+1. Tikken/klikken **Exporteren naar Adobe Target-aanbiedingen**.
 
    ![Exporteren naar Adobe Target](assets/cfm-export-target-01.png)
 
@@ -339,7 +339,13 @@ Een inhoudsfragment exporteren van AEM naar doel (nadat u de cloudconfiguratie h
 
    >[!NOTE]
    >
-   >Selecteren **Publiceren** Hiermee publiceert u het inhoudsfragment direct en verzendt u het naar Doel.
+   >De werkelijke weergegeven acties zijn afhankelijk van de status van het fragment en de bijbehorende elementen.
+   >
+   >Als alles al gepubliceerd is en er sindsdien niets gewijzigd is, dan wordt deze stap overgenomen.
+
+   >[!NOTE]
+   >
+   >Selecteren **Publiceren** publiceert het inhoudsfragment onmiddellijk en verzendt het naar Doel.
 
 1. Tikken/klikken **OK** in het bevestigingsdialoogvenster.
 
