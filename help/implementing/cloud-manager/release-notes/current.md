@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2023.3.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.3.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2023.4.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.4.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: bfd2cbd574cac8de226903f923e774875a54ca4b
+source-git-commit: be39b09b609cccff916db462af9a84149d23a698
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 0%
+source-wordcount: '186'
+ht-degree: 1%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2023.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2023.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release 2023.3.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
+Op deze pagina worden de opmerkingen bij de release 2023.4.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
 
 >[!NOTE]
 >
@@ -21,9 +21,14 @@ Op deze pagina worden de opmerkingen bij de release 2023.3.0 van Cloud Manager i
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2023.3.0 in AEM as a Cloud Service is 16 maart 2023. De volgende release is gepland voor 13 april 2023.
+De releasedatum voor Cloud Manager versie 2023.4.0 in AEM as a Cloud Service is 13 april 2023. De volgende release is gepland voor 11 mei 2023.
+
+## Wat is er nieuw? {#what-is-new}
+
+* [Het AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) is bijgewerkt naar versie 41.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* Er is een probleem opgetreden waarbij de go-live widget de eerder ingestelde datum onjuist instelde.
-* De titel van de handel op de **Meer informatie** van Cloud Manager navigeert de gebruiker nu naar de juiste pagina.
+* Wanneer een [certificaat](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) verloopt, [domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md) en [IP-lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) gekoppeld aan het certificaat wordt niet meer verwijderd uit de CDN.  In dergelijke gevallen, zal de plaats bereikbaar blijven.
+* De gebruikersinterface van Cloud Manager biedt meer zichtbare voorafgaande waarschuwingen dat de [SSL-certificaat](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) bijna verlopen.
+* Er is een zeldzame situatie vastgesteld waarin klanten geen nieuwe omgeving konden creëren of een omgeving konden verwijderen.
