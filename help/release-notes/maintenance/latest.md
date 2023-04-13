@@ -1,9 +1,9 @@
 ---
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
+source-git-commit: fb9b735c44dddda9572d3a1f90d49452c6ddc094
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '436'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,11 @@ In de volgende sectie worden de opmerkingen bij de technische release voor de hu
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 11382 samengevat, die op 28 maart 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 11289.
 
 Functie-activering voor deze onderhoudsrelease biedt u de volledige functieset. Zie de [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md) voor volledige informatie.
+
+>[!IMPORTANT]
+>
+> Er kan een discrepantie worden opgemerkt in de interface van CloudManager, met daarin &quot;2023.3.11382&quot;, terwijl de officiële versie &quot;2023.02&quot; is. Dit is te wijten aan de vertraagde activering van de functies 2023.02.
+> We werken eraan dit voor komende releases te verhelpen.
 
 ### Bekende problemen {#known-issues-11382}
 
