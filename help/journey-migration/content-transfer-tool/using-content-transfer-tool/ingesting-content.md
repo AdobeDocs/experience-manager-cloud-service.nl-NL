@@ -2,10 +2,10 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
+source-git-commit: b0723faa23d77ac6b747f189e0643db59ddb2802
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1702'
+ht-degree: 6%
 
 ---
 
@@ -39,30 +39,19 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
    * Selecteer de doelomgeving. Dit is waar de inhoud van de migratieset wordt opgenomen. Selecteer de laag. (Auteur/Publicatie). Snelle ontwikkelomgevingen worden niet ondersteund.
 
    >[!NOTE]
-   >
-   >Als de bron Auteur was, wordt het geadviseerd om het in de rij van de Auteur op het doel op te nemen. Als de bron Publiceren was, zou het doel ook Publiceren moeten zijn.
-
-   >[!NOTE]
-   >
-   >Als de doellaag `Author`, wordt de instantie van de auteur afgesloten tijdens de duur van de opname en is niet beschikbaar voor gebruikers (bijvoorbeeld auteurs of personen die onderhoud uitvoeren, enz.). Dit is om het systeem te beschermen, en om het even welke veranderingen te verhinderen die of zouden kunnen of een innameconflict veroorzaken. Zorg ervoor dat uw team zich hiervan bewust is. Houd er ook rekening mee dat de omgeving tijdens het opnemen door de auteur wordt gehiberiseerd.
-
-   >[!NOTE]
-   >
-   >U kunt de optionele pre-copy stap uitvoeren om de innamefase aanzienlijk te versnellen. Zie [Inschakelen met AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer informatie .
-   > 
-   >Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om de opname van de Auteur eerst alleen in werking te stellen. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
-
-   >[!NOTE]
-   >
-   >Ingesties steunen geen Snelle bestemming van de Milieu van de Ontwikkeling (RDE). Zij zullen niet als mogelijke bestemmingskeus verschijnen, zelfs als de gebruiker toegang tot het heeft.
+   >De volgende opmerkingen zijn van toepassing op het opnemen van inhoud:
+   * Als de bron Auteur was, wordt het geadviseerd om het in de rij van de Auteur op het doel op te nemen. Als de bron Publiceren was, zou het doel ook Publiceren moeten zijn.
+   * Als de doellaag `Author`, wordt de instantie van de auteur afgesloten tijdens de duur van de opname en is niet beschikbaar voor gebruikers (bijvoorbeeld auteurs of personen die onderhoud uitvoeren, enz.). Dit is om het systeem te beschermen, en om het even welke veranderingen te verhinderen die of zouden kunnen of een innameconflict veroorzaken. Zorg ervoor dat uw team zich hiervan bewust is. Houd er ook rekening mee dat de omgeving tijdens het opnemen door de auteur wordt gehiberiseerd.
+   * U kunt de optionele pre-copy stap uitvoeren om de innamefase aanzienlijk te versnellen. Zie [Inschakelen met AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer informatie .
+   * Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om de opname van de Auteur eerst alleen in werking te stellen. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
+   * Ingesties steunen geen Snelle bestemming van de Milieu van de Ontwikkeling (RDE). Zij zullen niet als mogelijke bestemmingskeus verschijnen, zelfs als de gebruiker toegang tot het heeft.
 
    >[!IMPORTANT]
-   >
-   >U kunt alleen een opname in de doelomgeving starten als u tot de lokale omgeving behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u geen inname kunt starten, raadpleegt u [Kan inname niet starten](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) voor meer informatie .
+   > De volgende belangrijke kennisgevingen zijn van toepassing op het opnemen van inhoud:
+   * U kunt alleen een opname in de doelomgeving starten als u tot de lokale omgeving behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u geen inname kunt starten, raadpleegt u [Kan inname niet starten](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) voor meer informatie .
+   * Als de instelling **Sluitereffect** wordt ingeschakeld voordat de inhoud wordt ingevoerd, wordt de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt ingevoerd. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die is toegevoegd aan de **beheerders** groep. U zult aan de beheerdersgroep opnieuw moeten worden toegevoegd om een opname te beginnen.
 
-   >[!IMPORTANT]
-   >
-   >Als de instelling **Sluitereffect** wordt ingeschakeld voordat de inhoud wordt ingevoerd, wordt de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt ingevoerd. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die is toegevoegd aan de **beheerders** groep. U zult aan de beheerdersgroep opnieuw moeten worden toegevoegd om een opname te beginnen.
+
 
 1. Klikken op **Ingest**
 
