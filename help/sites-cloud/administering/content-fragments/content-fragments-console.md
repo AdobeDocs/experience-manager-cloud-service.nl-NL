@@ -5,7 +5,7 @@ landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fr
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
+source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -162,6 +162,22 @@ Het deelvenster Filter biedt de volgende opties:
 * de optie om een opgeslagen zoekfilter op te halen voor hergebruik
 
 ![Content Fragments console - Filteren](assets/cfc-console-filter.png)
+
+### Snel filteren {#fast-filtering}
+
+U kunt ook een voorspelling selecteren door op een specifieke kolomwaarde in de lijst te klikken. U kunt een of meer waarden selecteren om voorspellingen te combineren.
+
+Selecteer bijvoorbeeld **Gepubliceerd** in de **Status** kolom:
+
+>[!NOTE]
+>
+>Snel filteren wordt alleen ondersteund voor de **Model**, **Status**, **Gewijzigd door**, en **Gepubliceerd door** kolommen.
+
+![Content Fragments console - Filteren](assets/cfc-console-fast-filter-01.png)
+
+Wanneer deze optie is geselecteerd, wordt deze weergegeven als een filtervoorspelling en wordt de lijst dienovereenkomstig gefilterd:
+
+![Content Fragments console - Filteren](assets/cfc-console-fast-filter-02.png)
 
 ## Fragmenten zoeken {#searching-fragments}
 
