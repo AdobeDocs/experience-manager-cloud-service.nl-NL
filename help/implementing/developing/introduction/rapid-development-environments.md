@@ -1,19 +1,15 @@
 ---
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
-source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
+source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3304'
 ht-degree: 0%
 
 ---
 
 
 # Snelle ontwikkelomgevingen {#rapid-development-environments}
-
->[!AVAILABILITY]
->
->Dit onderdeel is bedoeld om geleidelijk aan aan de klanten te worden geleverd.
 
 Om veranderingen op te stellen, vereisen de huidige milieu&#39;s van de Ontwikkeling van de Wolk het gebruik van een proces dat uitgebreide codeveiligheid en kwaliteitsregels gebruikt genoemd een pijpleiding CI/CD. Voor situaties waar snelle en iteratieve veranderingen nodig zijn, heeft Adobe de Milieu&#39;s van de Snelle Ontwikkeling (RDEs voor kort) geïntroduceerd.
 
