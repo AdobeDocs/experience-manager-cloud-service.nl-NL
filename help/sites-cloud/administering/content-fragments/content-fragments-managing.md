@@ -4,9 +4,9 @@ description: Leer hoe te om de console van Fragmenten van de Inhoud te gebruiken
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: b351582a405f5c419f3aa386faddccd6ecef3a43
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1907'
 ht-degree: 1%
 
 ---
@@ -244,7 +244,7 @@ U kunt de eigenschappen van een fragment weergeven en bewerken met de opdracht [
 Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat de [model is gepubliceerd](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
 
-Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving. Dit gebeurt met de standaardfunctionaliteit Middelen
+Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving.
 
 * Van de **Publiceren** op de werkbalk van het dialoogvenster [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
    * **Nu** - na bevestiging wordt het fragment onmiddellijk gepubliceerd
