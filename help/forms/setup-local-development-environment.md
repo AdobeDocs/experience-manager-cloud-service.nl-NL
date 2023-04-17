@@ -2,9 +2,9 @@
 title: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 description: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: dea6c266e5c10135a320f923dc77d0fd2050988e
+source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
 workflow-type: tm+mt
-source-wordcount: '2954'
+source-wordcount: '3014'
 ht-degree: 1%
 
 ---
@@ -333,7 +333,7 @@ Uw lokale ontwikkelomgeving is klaar.
 
 ## Aangepaste Forms Core-componenten inschakelen voor een bestaand project op basis van AEM archetype {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
 
-Als u het op Archetype versie 40 of later gebaseerde programma van AEM gebruikt voor AEM Forms as a Cloud Service, worden de Componenten van de Kern auto toegelaten voor uw milieu.
+Als u het op Archetype versie 40 of later gebaseerde programma van AEM gebruikt voor AEM Forms as a Cloud Service, worden de Componenten van de Kern auto toegelaten voor uw milieu. Als u de Core Components voor uw omgeving inschakelt, **Adaptieve Forms (Core Component)** sjabloon en canvasthema worden toegevoegd aan uw omgeving. Als uw AEM SDK-versie ouder is dan 2023.02.0, [zorg ervoor dat u `prerelease` markering ingeschakeld in uw omgeving](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) omdat Adaptive Forms Core Components deel uitmaakten van de pre-lease vóór de release van 2023.02.0.
 
 Als u Adaptive Forms Core Components wilt inschakelen voor uw as a Cloud Service AEM Forms-omgeving op basis van oudere versies van Archetype, sluit u zowel artefacten van WCM Core-componenten als artefacten van Forms Core-componenten (zoals voorbeelden) in uw project in:
 
