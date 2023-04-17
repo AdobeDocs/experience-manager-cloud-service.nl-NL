@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 57666d474cd2ae41048e2d30eb27b0719a447005
+source-git-commit: 13a1915e9aca812024e8eb27c131500cdc8e01b2
 workflow-type: tm+mt
-source-wordcount: '5858'
+source-wordcount: '5846'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,6 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
       * Video integreren met gebruik van ingesloten code op webpagina:
          [De videoviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
-   * [Video&#39;s publiceren naar YouTube](#publishing-videos-to-youtube).
    * [Videorapporten genereren](#viewing-video-reports).
 
    * [Bijschriften toevoegen aan video](#adding-captions-to-video).
@@ -273,7 +272,7 @@ In de volgende afbeelding ziet u de algemene ontwerpworkflow voor video&#39;s di
 
 ## Aanbevolen werkwijzen voor het coderen van video&#39;s {#best-practices-for-encoding-videos}
 
-De **Dynamic Media-video coderen** als u Dynamic Media hebt ingeschakeld en video-Cloud Services hebt ingesteld, codeert de workflow video. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Zie [Video-codering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress). Als u Dynamic Media hebt ingeschakeld en video-Cloud Services hebt ingesteld, kunt u **[!UICONTROL Dynamic Media Encode Video]** de workflow wordt automatisch van kracht wanneer u een video uploadt. (Als u Dynamic Media niet gebruikt, wordt **[!UICONTROL DAM Update Asset]** workflow wordt van kracht.)
+De **Dynamic Media-video coderen** als u Dynamic Media hebt ingeschakeld en video-Cloud Services hebt ingesteld, codeert de workflow video. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Als u Dynamic Media hebt ingeschakeld en video-Cloud Services hebt ingesteld, kunt u **[!UICONTROL Dynamic Media Encode Video]** de workflow wordt automatisch van kracht wanneer u een video uploadt. (Als u Dynamic Media niet gebruikt, wordt **[!UICONTROL DAM Update Asset]** workflow wordt van kracht.)
 
 Hier volgt een overzicht van tips voor het coderen van bronvideobestanden.
 
