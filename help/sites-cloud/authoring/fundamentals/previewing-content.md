@@ -2,9 +2,9 @@
 title: Inhoud voorvertonen
 description: Leer hoe u de AEM voorvertoningsservice gebruikt om inhoud voor te vertonen voordat u live gaat.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: dc55bd43641c03dd022a891c8b85569d9be28ebe
+source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,7 @@ AEM biedt een Sites Preview-service, waarmee ontwikkelaars en makers van inhoud 
 
 Het vergemakkelijkt het voorvertonen van paginaervaringen die anders niet zichtbaar zouden zijn vanuit de auteursomgeving, zoals paginaovergangen en andere alleen inhoud aan de publiczijde.
 
-Meer informatie over de voorvertoningsomgevingen vindt u in het document [Omgevingen beheren.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
-
->[!NOTE]
->
->Het publiceren van een Fragment van de Ervaring aan Voorproef volgt eigenlijk de zelfde procedure zoals voor een pagina, hoewel van de console of de redacteur van de Fragmenten van de Ervaring.
+Meer informatie over de voorvertoningsomgevingen vindt u in het document [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Inhoud publiceren voor voorvertoning {#publishing-content-to-preview}
 
@@ -52,26 +48,10 @@ Publiceren van inhoud vanuit uw **Voorvertoning** milieu is in wezen hetzelfde p
 
 Het enige verschil is dat u de **Doel** te worden **Voorvertoning**.
 
-## OSGi-instellingen configureren voor de voorbeeldreeks {#configuring-osgi-settings-for-the-preview-tier}
+## Aanvullende informatie {#further-information}
 
-De OSGi-eigenschapswaarden van de voorvertoningslaag worden overgenomen van de publicatielijst. De waarden van de voorvertoningslaag kunnen echter afwijken van die van de publicatielaag door het instellen van de optie `service` parameter voor de waarde `preview`. Het volgende voorbeeld van een bezit OSGi bepaalt URL van een integratieeindpunt.
+Zie ook:
 
-```
-[
-{
-"name":"INTEGRATION_URL",
-"type":"string",
-"value":"http://s2.integrationvendor.com",
-"service": "preview"
-}
-]
-```
+* [OSGi-instellingen configureren voor de voorbeeldreeks](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
-Zie voor meer informatie [deze sectie](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) van de OSGi-configuratiedocumentatie.
-
-## Foutopsporingsvoorbeeld met de ontwikkelaarsconsole {#debugging-preview-using-the-developer-console}
-
-Voer de volgende stappen uit om fouten op te sporen in de voorvertoningslaag met de Developer Console:
-
-* In de [Ontwerpconsole](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)Selecteer een van de **— Alle voorvertoningen —** of een productieomgeving die **prev** in zijn naam
-* De relevante informatie voor de voorbeeldinstantie genereren Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over hoe u de URL&#39;s voor uw omgevingen kunt ophalen.
+* [Foutopsporingsvoorbeeld met de ontwikkelaarsconsole](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
