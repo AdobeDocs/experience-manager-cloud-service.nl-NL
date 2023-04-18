@@ -2,9 +2,9 @@
 title: Inleiding tot aangepaste domeinnamen
 description: Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbediening te identificeren aan de hand van een unieke merknaam.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
+source-git-commit: 5649f083c55cd84296f38acbff3f395e77a7e422
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '672'
 ht-degree: 1%
 
 ---
@@ -37,13 +37,13 @@ U kunt een domeinnaam kopen van een registrar van domeinnamen, een bedrijf of or
 
 Er gelden een aantal beperkingen voor het gebruik van aangepaste domeinnamen met AEMaaCS.
 
-* Aangepaste domeinnamen worden ondersteund in Cloud Manager voor zowel de publicatieservices als de voorvertoningsservices voor Sites-programma&#39;s. Aangepaste domeinen aan de zijde van de auteur worden niet ondersteund.
+* Aangepaste domeinnamen worden ondersteund in Cloud Manager voor zowel publicatie- als voorvertoningsservices voor Sites-programma&#39;s. Aangepaste domeinen voor auteursservices worden niet ondersteund.
 * Elke Cloud Manager-omgeving kan maximaal 500 aangepaste domeinen per omgeving hosten.
-* AEM as a Cloud Service ondersteunt geen jokertekendomeinen.
-* Voordat u een aangepaste domeinnaam kunt toevoegen, moet een geldig SSL-certificaat met de aangepaste domeinnaam voor uw programma zijn geïnstalleerd. Raadpleeg Een SSL-certificaat toevoegen voor meer informatie.
-* De namen van het domein kunnen niet aan milieu&#39;s worden toegevoegd terwijl er een huidige lopende pijpleiding verbonden aan die milieu&#39;s is.
-* Er kan slechts één domeinnaam tegelijk worden toegevoegd.
+* De namen van het domein kunnen niet aan milieu&#39;s worden toegevoegd terwijl er een huidige lopende pijpleiding in bijlage aan die milieu&#39;s is.
 * Dezelfde domeinnaam kan niet op meer dan één omgeving worden gebruikt.
+* Er kan slechts één domeinnaam tegelijk worden toegevoegd.
+* AEM as a Cloud Service ondersteunt geen jokertekendomeinen zoals `*.example.com`.
+* Voordat u een aangepaste domeinnaam kunt toevoegen, moet een geldig SSL-certificaat met de aangepaste domeinnaam (jokertekens zijn geldig) voor uw programma zijn geïnstalleerd. Zie [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer informatie.
 
 >[!NOTE]
 >
