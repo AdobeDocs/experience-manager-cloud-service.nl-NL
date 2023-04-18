@@ -2,9 +2,9 @@
 title: Inleiding tot Sandbox-programma's
 description: Leer welke sandboxprogramma's verschillen van productieprogramma's.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -69,3 +69,9 @@ De omgevingen in een sandboxprogramma worden na 8 uur inactiviteit automatisch g
 Sandbox-programma&#39;s worden verwijderd na 6 maanden van continuhibernatiemodus, waarna ze opnieuw kunnen worden gemaakt.
 
 Zie [Sluiende en ontsmette zandbakomgevingen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) voor meer informatie .
+
+### Geen technische ondersteuning {#no-support}
+
+Aangezien een sandboxprogramma doorgaans wordt gemaakt voor trainingsdoeleinden, het uitvoeren van demo&#39;s, activering of concepttest (POC&#39;s), is technische ondersteuning niet beschikbaar voor problemen die worden ervaren in een sandboxprogramma.
+
+Als u problemen ondervindt bij het maken en beheren van uw sandboxprogramma&#39;s, kunt u dit alsnog doen met technische ondersteuning.
