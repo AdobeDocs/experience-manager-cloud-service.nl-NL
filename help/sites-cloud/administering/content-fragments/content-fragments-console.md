@@ -5,9 +5,9 @@ landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fr
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
+source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -68,22 +68,33 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
       * Als u de muisaanwijzer op de kolomkoppen gebruikt, worden een vervolgkeuzelijst met handelingen en schuifregelaars voor de breedte weergegeven. Met deze opties kunt u:
          * Sorteren - selecteer de gewenste actie voor oplopend of aflopend. De volledige tabel wordt op basis van die kolom gesorteerd. Sorteren is alleen beschikbaar voor de desbetreffende kolommen.
          * De grootte van de kolom wijzigen - met de actie of de breedtegraadregelaars
-      * U kunt [Selecteer een of meer inhoudsfragmenten om de beschikbare acties weer te geven](#actions-selected-content-fragment)
-   * **[Maken](#creating-new-content-fragment)** een nieuw inhoudsfragment
-   * [Filter](#filtering-fragments) de Inhoudsfragmenten op basis van een selectie van voorspelling en sla het filter op voor toekomstig gebruik
-   * [Zoeken](#searching-fragments) de inhoudsfragmenten
-   * [De tabelweergave aanpassen om geselecteerde kolommen met informatie weer te geven](#select-available-columns)
-   * Gebruiken **Openen in elementen** om de huidige locatie rechtstreeks te openen in het dialoogvenster **Activa** console
 
-      >[!NOTE]
-      >
-      >De **Activa** wordt gebruikt om toegang te krijgen tot elementen, zoals afbeeldingen, video&#39;s, enz.  Deze console is toegankelijk:
-      >
-      >* met de **Openen in elementen** koppeling (in de console Inhoudsfragmenten)
-      >* rechtstreeks vanuit het globale navigatievenster
+## Handelingen {#actions}
+
+Binnen de console is er een reeks acties die u kunt gebruiken, of direct, of na het selecteren van een specifiek fragment:
+
+* Verschillende acties zijn rechtstreeks [beschikbaar via de console](#available-actions)
+* U kunt [Selecteer een of meer inhoudsfragmenten om de juiste handelingen weer te geven](#actions-selected-content-fragment)
+
+### Handelingen (niet geselecteerd) {#actions-unselected}
+
+Bepaalde acties zijn beschikbaar via de console, zonder een specifiek inhoudsfragment te selecteren:
+
+* **[Maken](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** een nieuw inhoudsfragment
+* [Filter](#filtering-fragments) de Inhoudsfragmenten op basis van een selectie van voorspelling en sla het filter op voor toekomstig gebruik
+* [Zoeken](#searching-fragments) de inhoudsfragmenten
+* [De tabelweergave aanpassen om geselecteerde kolommen met informatie weer te geven](#select-available-columns)
+* Gebruiken **Openen in elementen** om de huidige locatie rechtstreeks te openen in het dialoogvenster **Activa** console
+
+   >[!NOTE]
+   >
+   >De **Activa** wordt gebruikt om toegang te krijgen tot elementen, zoals afbeeldingen, video&#39;s, enz.  Deze console is toegankelijk:
+   >
+   >* met de **Openen in elementen** koppeling (in de console Inhoudsfragmenten)
+   >* rechtstreeks vanuit het globale navigatievenster
 
 
-## Handelingen voor een (geselecteerd) inhoudsfragment {#actions-selected-content-fragment}
+### Handelingen voor een (geselecteerd) inhoudsfragment {#actions-selected-content-fragment}
 
 Als u een specifiek fragment selecteert, wordt een werkbalk geopend die is toegespitst op de acties die beschikbaar zijn voor dat fragment. U kunt ook meerdere fragmenten selecteren. De selectie van acties wordt dienovereenkomstig aangepast.
 
@@ -146,12 +157,6 @@ Zoals met andere consoles kunt u de kolommen vormen die zichtbaar, en beschikbaa
 Dit zal een lijst van kolommen voorstellen die u kunt verbergen of tonen:
 
 ![Content Fragments console - column configuration](assets/cfc-console-column-selection.png)
-
-## Een nieuw inhoudsfragment maken {#creating-new-content-fragment}
-
-Selecteren **Maken** opent de compacte **Nieuw inhoudsfragment** dialoogvenster:
-
-![Content Fragments console - Een nieuw fragment maken](assets/cfc-console-create.png)
 
 ## Fragmenten filteren {#filtering-fragments}
 
