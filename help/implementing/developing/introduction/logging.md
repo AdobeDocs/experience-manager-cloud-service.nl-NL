@@ -2,10 +2,10 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
 workflow-type: tm+mt
-source-wordcount: '2351'
-ht-degree: 2%
+source-wordcount: '2382'
+ht-degree: 1%
 
 ---
 
@@ -494,6 +494,10 @@ Define DISP_LOG_LEVEL debug
   ...
 </IfDefine>
 ```
+
+>[!NOTE]
+>
+>Voor AEM as a Cloud Service omgevingen is foutopsporing het maximale breedtepunt. Het niveau van het spoorlogboek wordt niet gesteund zodat zou u moeten vermijden plaatsend het wanneer het werken in wolkenmilieu&#39;s.
 
 ## Hoe te om Logs toegang te hebben {#how-to-access-logs}
 
