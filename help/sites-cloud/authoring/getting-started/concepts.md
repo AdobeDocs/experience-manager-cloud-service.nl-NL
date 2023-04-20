@@ -2,9 +2,9 @@
 title: Authoring van concepten
 description: Concepten van ontwerpen in AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '385'
 ht-degree: 1%
 
 ---
@@ -51,6 +51,12 @@ Daarnaast zijn er beheertaken die u helpen uw inhoud te beheren:
 >[!NOTE]
 >
 >AEM wordt ook vanuit de auteursomgeving beheerd.
+
+## Inhoud voorvertonen {#previewing-content}
+
+AEM biedt ook een Sites Preview-service waarmee ontwikkelaars en makers van inhoud de uiteindelijke ervaring van een website kunnen voorvertonen voordat deze de publicatieomgeving bereikt en openbaar beschikbaar is.
+
+Zie [Inhoud voorvertonen](/help/sites-cloud/authoring/fundamentals/previewing-content.md) voor nadere bijzonderheden.
 
 ## Publicatie-omgeving {#publish-environment}
 
