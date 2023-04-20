@@ -3,9 +3,9 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Validatie en foutopsporing met Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: 614834961c23348cd97e367074db0a767d31bba9
 workflow-type: tm+mt
-source-wordcount: '2701'
+source-wordcount: '2732'
 ht-degree: 0%
 
 ---
@@ -266,7 +266,7 @@ Er zijn twee secties in uw landbouwbedrijfconfiguratie die **moet** een specifie
 }
 ```
 
-and:
+en:
 
 ```
 /allowedClients {
@@ -276,7 +276,7 @@ and:
 
 **bestand opgenomen op onbekende locatie: ...**
 
-Er zijn vier secties in uw landbouwbedrijfconfiguratie waar u uw eigen dossier mag omvatten: `/clientheaders`, `filters`, `/rules` in `/cache` en `/virtualhosts`. De opgenomen bestanden moeten als volgt worden benoemd:
+Er zijn vier secties in uw landbouwbedrijfconfiguratie waar u uw eigen dossiers mag omvatten: `/clientheaders`, `filters`, `/rules` in `/cache` en `/virtualhosts`. De opgenomen bestanden moeten als volgt worden benoemd:
 
 | Sectie | Bestandsnaam opnemen |
 |------------------|--------------------------------------|
@@ -438,6 +438,10 @@ De logbestandniveaus voor deze modules worden bepaald door de variabelen `DISP_L
 Wanneer het runnen van Verzender plaatselijk, worden de logboeken gedrukt direct aan de eindoutput. Meestal, wilt u deze logboeken in DEBUG zijn, die kan worden gedaan door het Debug niveau als parameter over te gaan wanneer het runnen van Docker. Bijvoorbeeld: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 Logbestanden voor cloudomgevingen worden weergegeven via de logbestandsservice die beschikbaar is in Cloud Manager.
+
+>[!NOTE]
+>
+>Voor AEM as a Cloud Service omgevingen is foutopsporing het maximale breedtepunt. Het niveau van het spoorlogboek wordt niet gesteund zodat zou u moeten vermijden plaatsend het wanneer het werken in wolkenmilieu&#39;s.
 
 ### Automatisch opnieuw laden en valideren {#automatic-reloading}
 
