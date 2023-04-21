@@ -2,10 +2,10 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 81%
+source-wordcount: '1807'
+ht-degree: 77%
 
 ---
 
@@ -56,11 +56,11 @@ Dit:
 
 * Zorgt ervoor dat AEM as a Cloud Service zich kan aanpassen aan uw veranderende verkeerspatronen.
 
-De schaling van instanties per tenant van de service kan automatisch of handmatig worden uitgevoerd, op beide assen:
+Het schrapen van per-huurderinstanties van de dienst is op de twee assen van toepassing:
 
-* Verticaal: toegewezen geheugen en CPU-capaciteit kunnen worden vergroot of verkleind voor een vast aantal nodes.
+* Horizontaal: het aantal knopen voor een bepaalde dienst wordt verhoogd of automatisch verlaagd, nog toestaand voor individuele standaardconfiguraties.
 
-* Horizontaal: het aantal nodes voor een bepaalde service kan worden verhoogd of verlaagd.
+* Verticaal: toegewezen geheugen en CPU-capaciteit kunnen worden vergroot of verkleind door een configuratie voor een vast aantal knooppunten om aan de individuele vereisten te voldoen.
 
 ## Omgevingen {#environments}
 
