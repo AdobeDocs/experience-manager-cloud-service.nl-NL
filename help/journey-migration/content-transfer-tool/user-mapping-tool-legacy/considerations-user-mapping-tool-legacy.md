@@ -4,14 +4,14 @@ description: Belangrijke overwegingen voor het Hulpmiddel van de Toewijzing van 
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
-source-git-commit: 69dfe7f98628ab67cc3a994c32b1530550ec6a01
+source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
 
-# Belangrijke overwegingen voor het gereedschap Toewijzing van gebruikers {#important-considerations}
+# Belangrijke overwegingen voor het Hulpmiddel van de Toewijzing van de Gebruiker (Verouderd) {#important-considerations}
 
 
 ## Uitzonderlijke gevallen {#exceptional-cases}

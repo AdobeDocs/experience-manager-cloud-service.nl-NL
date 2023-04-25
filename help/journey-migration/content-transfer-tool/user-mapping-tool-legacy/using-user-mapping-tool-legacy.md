@@ -4,14 +4,14 @@ description: Gebruikerstoewijzing gebruiken (verouderd)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: fb961ee6c369f5488deb794892caf9785d6b3068
+source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '819'
 ht-degree: 3%
 
 ---
 
-# Het gereedschap Toewijzing gebruiker gebruiken {#using-user-mapping-tool}
+# Het gereedschap Toewijzing gebruiker gebruiken (verouderd) {#using-user-mapping-tool}
 
 Het hulpmiddel van de Toewijzing van de Gebruiker gebruikt API die het toestaat om gebruikers van het Systeem van Adobe Identity Management (IMS) per e-mail op te zoeken en hun IMS IDs terug te keren. Deze API vereist de gebruiker om een identiteitskaart van de Cliënt voor hun organisatie, een Geheim van de Cliënt, en een Token van de Toegang of van de Drager tot stand te brengen.
 
