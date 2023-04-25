@@ -4,9 +4,9 @@ description: Gebruik het model Inhoudsfragment dat u eerder hebt gemaakt om inho
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 436356aabb9d4849f255bf521b35db5dab0c01b5
+source-git-commit: 73ff4edc591e64e797e14d00d6f87759e3f1301a
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -31,19 +31,25 @@ ht-degree: 0%
 
 ## Een inhoudsfragment maken {#create-fragment}
 
-Inhoudsfragmenten vertegenwoordigen uw inhoud zonder kop en zijn gebaseerd op vooraf gedefinieerde structuren, de zogenaamde Content Fragment-modellen. U kunt de Content Fragment-console beschouwen als een bibliotheek met inhoud zonder kop. Gebruik dit besturingselement om nieuwe inhoudsfragmenten te maken en bestaande fragmenten te beheren.
+Inhoudsfragmenten vertegenwoordigen uw inhoud zonder kop en zijn gebaseerd op vooraf gedefinieerde structuren, de zogenaamde Content Fragment-modellen. U hebt al een model gemaakt in een vorige module.
+
+In deze module maakt u een nieuw inhoudsfragment op basis van dat model met behulp van de console voor inhoudsfragmenten. U kunt de Content Fragment-console beschouwen als een bibliotheek met inhoud zonder kop. Gebruik dit besturingselement om nieuwe inhoudsfragmenten te maken en bestaande fragmenten te beheren.
 
 1. Tik of klik op de knop **Maken** knoop bij top-right van de console.
 
 1. De **Nieuw inhoudsfragment** wordt geopend waar u kunt beginnen met het maken van een nieuw inhoudsfragment. **Locatie** wordt automatisch gevuld met de locatie waar de nieuwe inhoud wordt opgeslagen.
 
-1. In de **Inhoudsfragmentmodel** Selecteer het model Inhoudsfragment dat u eerder hebt gemaakt.
+1. In de **Inhoudsfragmentmodel** vervolgkeuzelijst, selecteert u de **Adventure** Model voor inhoudsfragment dat u eerder hebt gemaakt.
 
-1. Voeg een **Titel** voor het inhoudsfragment.
+1. Toevoegen `Tuscany` als beschrijvend **Titel** voor het inhoudsfragment. Hiermee identificeert u het fragment in de console.
 
 1. Tik of klik op **Maken en openen**.
 
-![Een nieuw inhoudsfragment maken](assets/do-not-localize/create-content-3-4-5.png)
+![Een nieuw inhoudsfragment maken](assets/do-not-localize/create-content.png)
+
+>[!TIP]
+>
+>Afhankelijk van de browserinstellingen kan het nieuwe browsertabblad worden onderdrukt door een pop-upblokkering. Als het nieuwe fragment niet wordt geopend nadat u op **Maken en openen**, controleer de browserinstellingen.
 
 ## Inhoud toevoegen aan uw inhoudsfragment {#add-content}
 
@@ -51,15 +57,39 @@ Nadat u het nieuwe inhoudsfragment hebt opgeslagen en geopend, wordt de editor v
 
 1. In de inhoudsfragmenteditor worden de velden weergegeven die u in het geselecteerde model hebt gedefinieerd. Hier kunt u inhoud toevoegen aan elk veld om het inhoudsfragment te voltooien. Uw voortgang wordt automatisch opgeslagen.
 
-1. Tik of klik op de knop **Publiceren** in de rechterbovenhoek van de editor. Hierdoor is uw inhoudsfragment beschikbaar voor gebruik door externe apps.
+1. Een **Titel** voor uw fragment door `Tuscan adventure`.
 
-1. Selecteren **Nu** in de vervolgkeuzelijst. U kunt ook plannen dat het later wordt gepubliceerd.
+1. Een **Beschrijving** voor het fragment door in de volgende tekst te plakken.
 
-   ![Inhoud maken](assets/do-not-localize/add-content-1-2.png)
+   ```text
+   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
+   ```
+
+1. Een **Prijs** voor uw fragment door in te voeren `$700`.
+
+1. Een **Afbeelding** dat representatief is voor de reis door te tikken of te klikken **Element toevoegen** in de **Afbeelding** veld.
+
+1. Tik of klik in het element-pop-upvenster op **Zoeken in middelen** om een bestaand element in de bibliotheek met elementen te selecteren.
+
+   ![Element toevoegen](assets/do-not-localize/add-asset.png)
+
+1. De **Element selecteren** wordt geopend. Navigeer met de structuurnavigator in het linkerdeelvenster naar **Alle elementen** > **aem-demo-assets** > **en** > **avonturen** > **wielrennen**.
+
+1. De inhoud van de **wielrennen** aan de rechterkant. Selecteer de afbeelding `ADOBESTOCK_141786166.JPEG`.
+
+1. Tik of klik op **Selecteren**.
+
+   ![Element selecteren](assets/do-not-localize/select-asset.png)
+
+1. De geselecteerde afbeelding wordt weergegeven in het inhoudsfragment. De editor slaat de wijzigingen automatisch op.
+
+1. Tik of klik op de knop **Publiceren** in de rechterbovenhoek van de editor. Hierdoor is uw inhoudsfragment beschikbaar voor gebruik door externe apps. Selecteer vervolgens **Nu** in de vervolgkeuzelijst. U kunt ook plannen dat het later wordt gepubliceerd.
+
+   ![Inhoud publiceren](assets/do-not-localize/publish.png)
 
 1. De **Inhoudsfragmenten publiceren** wordt weergegeven. AEM voert automatisch een verwijzingscontrole uit om ervoor te zorgen dat alle noodzakelijke middelen voor uw Inhoudsfragment worden gepubliceerd. In dit geval moet u ook het model publiceren dat u hebt gemaakt. Tik of klik op **Publiceren**.
 
-   ![Publiceren en referentiecontrole](assets/do-not-localize/publish-4.png)
+   ![Publiceren en referentiecontrole](assets/do-not-localize/publish-confirm.png)
 
 1. De publicatie wordt bevestigd in een banner.
 

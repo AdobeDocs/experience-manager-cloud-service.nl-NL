@@ -4,9 +4,9 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -34,10 +34,6 @@ ht-degree: 0%
 U start in GraphQL Explorer op een nieuw tabblad. Hier kunt u query&#39;s samenstellen en valideren op basis van uw inhoud zonder kop voordat u deze gebruikt om de inhoud van uw app of website van stroom te voorzien.
 
 1. Uw AEM proefversie zonder kop wordt geleverd met een eindpunt dat is voorgeladen met Content Fragments waaruit u inhoud voor testdoeleinden kunt extraheren. Zorg ervoor dat de **AEM Demo-elementen** het eindpunt wordt geselecteerd in het dialoogvenster **Endpoint** vervolgkeuzelijst in de rechterbovenhoek van de editor.
-
-1. Bekend probleem: als de **AEM Demo-elementen** het eindpunt is niet aanwezig in drop-down menu, navigeer aan de Manager van het Pakket (`/crx/packmgr` het pad naar uw AEM (en de `aem-demo-assets.ui.content-{VERSION}.zip` pakket:
-
-   ![Pakket opnieuw installeren](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. Kopieer het volgende codefragment voor een lijstvraag van vooraf geladen **AEM Demo-elementen** eindpunt. Een lijstvraag keert een lijst van alle inhoud terug die een specifiek model van het Fragment van de Inhoud gebruikt. De inventaris en de categoriepagina&#39;s gebruiken typisch dit vraagformaat.
 
@@ -71,6 +67,10 @@ U start in GraphQL Explorer op een nieuw tabblad. Hier kunt u query&#39;s samens
    ![Lijstquery](assets/do-not-localize/list-query-1-3-4-5.png)
 
 U hebt net een lijstvraag voor een volledige lijst van alle Fragments van de Inhoud bevestigd. Dit proces helpt ervoor te zorgen dat de reactie is wat uw app verwacht, met resultaten die aantonen hoe uw apps en websites de in AEM gemaakte inhoud zullen ophalen.
+
+>[!NOTE]
+>
+>Als u de optie **AEM Demo-elementen** van de drop-down, gelieve te contacteren de Zorg van de Klant van Adobe of uit te reiken op de [AEM het kanaal Slack.](https://adobe-dx-support.slack.com/)
 
 ## Query voor een specifiek deel van de voorbeeldinhoud {#bypath-query}
 
@@ -132,3 +132,64 @@ Nu u de twee primaire soorten vragen in werking hebt gesteld, bent u bereid om u
    ![Aangepaste query uitvoeren](assets/do-not-localize/custom-query-3-4-5-6.png)
 
 Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen.
+
+## Blijvende query&#39;s {#persisted-queries}
+
+Blijvende query&#39;s zijn het voorkeursmechanisme voor het toegankelijk maken van de GraphQL API voor clienttoepassingen. Zodra een vraag is voortgeduurd, kan het worden gevraagd gebruikend een verzoek van de GET en in het voorgeheugen ondergebracht voor snelle herwinning.
+
+U maakt een doorlopende query die gegevens bevat die u van uw clienttoepassing wilt gebruiken.
+
+1. U gebruikt de gegevens die u eerder hebt gemaakt als een inhoudsfragment, dus zorg ervoor dat de **Uw project** het eindpunt wordt geselecteerd in het dialoogvenster **Endpoint** vervolgkeuzelijst in de rechterbovenhoek van de editor.
+
+1. Kopieer het volgende codefragment.
+
+   ```text
+      {
+      adventureList {
+       items {
+         title
+         description {
+           plaintext
+         }
+         title
+         price
+         image {
+           ... on ImageRef {
+             _publishUrl
+             mimeType
+           }
+         }
+       }
+     }
+   }
+   ```
+
+1. Vervang de bestaande inhoud in de vraagredacteur door de gekopieerde code te kleven.
+
+   >[!NOTE]
+   >
+   >Als u niet de zelfde gebiedsbeschrijvingen gebruikte zoals die in de vorige modules worden beschreven, zult u de gebiedsnamen in deze vraag moeten bijwerken.
+   >
+   >Gebruik de GraphQL-functie voor automatisch aanvullen (Ctrl+Spatiebalk of Option+Spatiebalk), zoals eerder beschreven, om de beschikbare eigenschappen beter te kunnen identificeren.
+
+1. Klik op de knop **Afspelen** knoop bij de bovenkant verlaten van de vraagredacteur om de vraag uit te voeren.
+
+1. De resultaten worden getoond in het juiste paneel, naast de vraagredacteur. Als de query onjuist is, wordt een fout weergegeven in het rechterdeelvenster.
+
+   ![Eigen query maken](assets/do-not-localize/own-query.png)
+
+1. Als u tevreden bent met de query, klikt u op de knop **Opslaan als** knoop bij de bovenkant van de vraagredacteur om de vraag voort te zetten.
+
+1. In de **Naam query** pop-up, geef uw vraag de naam `adventure-list`.
+
+1. Tik of klik op **Opslaan als**.
+
+   ![Query voortzetten](assets/do-not-localize/persist-query.png)
+
+1. De vraag wordt voortgeduurd zoals bevestigd door een bannerbericht bij de bodem van het scherm. De query wordt nu ook weergegeven in het linkerdeelvenster met aanhoudende query&#39;s in het venster.
+
+1. Opdat de persistente query openbaar beschikbaar is, moet deze worden gepubliceerd, ongeveer zoals hoe de Content Fragments moeten worden gepubliceerd. Klik op de knop **Publiceren** knoop bij het hoogste recht van de vraagredacteur om de vraag te publiceren.
+
+1. De publicatie wordt bevestigd door een bannerkennisgeving.
+
+Er is nu een nieuwe, voortgezette query die alleen de specifieke eigenschappen en indelingen bevat die u hebt gedefinieerd.

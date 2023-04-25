@@ -4,7 +4,7 @@ description: Gebruik een voorbeeld van een React-app om te leren hoe u inhoud ku
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%
@@ -41,7 +41,7 @@ U start in de editor voor inhoudsfragmenten met de voorbeeldtoepassing die bij d
 
 ![Een voorvertoning van de app weergeven](assets/do-not-localize/preview-app-1.png)
 
-## Een koptekst in de app bewerken {#edit-app}
+## Een koptekst bewerken in de app {#edit-app}
 
 In de editor voor inhoudsfragmenten wordt de basislay-out van de app weergegeven als een pagina-inhoudsfragment. De **Deelvensters** vertegenwoordigen verschillende pagina&#39;s van de app, die elk een eigen inhoudsfragment zijn. Door deze fragmenten te wijzigen, kunt u de inhoud van de app wijzigen.
 
@@ -63,7 +63,7 @@ In de editor voor inhoudsfragmenten wordt de basislay-out van de app weergegeven
 
 Zo eenvoudig is het om inhoud in een React-app bij te werken wanneer deze is geïntegreerd in AEM CMS zonder kop.
 
-## Een afbeelding in de app wisselen {#change-image}
+## Een afbeelding wisselen in de app {#change-image}
 
 Nu u een kopregel in de app hebt gewijzigd, kunt u proberen een afbeelding te wijzigen.
 
