@@ -2,9 +2,9 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
+source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2238'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ In deze sectie worden de stappen beschreven die zijn vereist voor het instellen 
 
       >[!NOTE]
       >
-      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
+      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de meest recente versie genereren met de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
    * Gebruik voor Java en WebDriver de voorbeeldcode van het dialoogvenster [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
@@ -275,15 +275,32 @@ Tests moeten soms bestanden uploaden naar de toepassing die wordt getest. Om de 
    * De inhoud van de reactie is een ondoorzichtige bestandshandgreep.
    * U kunt deze greep gebruiken in plaats van een bestandspad in een `<input>` -element om het uploaden van bestanden in uw toepassing te testen.
 
-## UI-tests lokaal uitvoeren {#run-ui-tests-locally}
-
-Alvorens tests UI in een pijpleiding van de Manager van de Wolk te activeren, adviseert het om de tests UI plaatselijk in werking te stellen in de richting van [as a Cloud Service SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) of in een werkelijk AEM as a Cloud Service instantie.
-
 ### Vereisten {#prerequisites}
 
-De tests in Cloud Manager worden uitgevoerd met een technische beheerder.
+1. De tests in Cloud Manager worden uitgevoerd met een technische beheerder.
 
-Voor het uitvoeren van de tests UI van uw lokale machine, creeer een gebruiker met admin-als toestemmingen om het zelfde gedrag te bereiken.
+>[!NOTE]
+>
+>Voor het uitvoeren van de functionele tests van uw lokale computer, creeer een gebruiker met admin-als toestemmingen om het zelfde gedrag te bereiken.
+
+1. De containerinfrastructuur die is bestemd voor functionele tests, wordt beperkt door de volgende grenzen:
+
+| Type | Waarde | Beschrijving |
+|----------------------|-------|--------------------------------------------------------------------|
+| CPU | 2.0 | Hoeveelheid CPU-tijd gereserveerd per testuitvoering |
+| Geheugen | 1Gi | Hoeveelheid geheugen dat aan de test is toegewezen, waarde in bytes |
+| Time-out | 30m | De duur waarna de test wordt beëindigd. |
+| Aanbevolen duur | 15m | Wij adviseren om de tests te schrijven om niet langer dan deze tijd te nemen. |
+
+>[!NOTE]
+>
+> Indien u meer middelen nodig hebt, maak dan een geval voor de klantenservice en beschrijf uw gebruikscase. ons team zal uw verzoek beoordelen en passende hulp verlenen .
+
+
+## UI-tests lokaal uitvoeren {#run-ui-tests-locally}
+
+Alvorens tests UI in een pijpleiding van de Manager van de Wolk te activeren, adviseert het om de tests UI plaatselijk tegen te stellen [as a Cloud Service SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+of tegen een werkelijk AEM as a Cloud Service instantie.
 
 ### JavaScript-testvoorbeeld {#javascript-sample}
 
