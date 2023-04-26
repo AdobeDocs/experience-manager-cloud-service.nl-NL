@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1d7cbec55c5f3fcfbc217bf53d006a56bdf37f4e
+source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
 workflow-type: tm+mt
-source-wordcount: '4746'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -241,15 +241,17 @@ GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen
 
 | Inhoudsfragmentmodel - Gegevenstype | GraphQL-type | Beschrijving |
 |--- |--- |--- |
-| Tekst met één regel | String, [String] | Wordt gebruikt voor eenvoudige tekenreeksen, zoals namen van auteurs, locaties, enzovoort. |
-| Tekst met meerdere regels | String, [String] | Wordt gebruikt voor het uitvoeren van tekst, zoals de hoofdtekst van een artikel |
-| Getal | Float [Float] | Wordt gebruikt om het zwevende-kommagetal en de reguliere getallen weer te geven |
-| Boolean | Boolean | Gebruikt om selectievakjes weer te geven → eenvoudige true/false-instructies |
-| Datum en tijd | Kalender | Wordt gebruikt om datum en tijd weer te geven in de indeling ISO 8601. Afhankelijk van het geselecteerde type zijn er drie kleuren beschikbaar voor gebruik in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
-| Opsomming | String | Wordt gebruikt om een optie weer te geven uit een lijst met opties die bij het maken van het model zijn gedefinieerd |
-| Tags | [String] | Wordt gebruikt om een lijst weer te geven met tekenreeksen die tags vertegenwoordigen die in AEM worden gebruikt |
-| Content Reference | String, [String] | Wordt gebruikt om het pad naar een ander element in AEM weer te geven |
-| Fragmentverwijzing | *Een modeltype* | Wordt gebruikt om te verwijzen naar een ander inhoudsfragment van een bepaald modeltype, dat is gedefinieerd toen het model werd gemaakt. |
+| Tekst met één regel | `String`, `[String]` | Wordt gebruikt voor eenvoudige tekenreeksen, zoals namen van auteurs, locaties, enzovoort. |
+| Tekst met meerdere regels | `String`, `[String]` | Wordt gebruikt voor het uitvoeren van tekst, zoals de hoofdtekst van een artikel |
+| Getal | `Float`, `[Float]` | Wordt gebruikt om het zwevende-kommagetal en de reguliere getallen weer te geven |
+| Boolean | `Boolean` | Gebruikt om selectievakjes weer te geven → eenvoudige true/false-instructies |
+| Datum en tijd | `Calendar` | Wordt gebruikt om datum en tijd weer te geven in de indeling ISO 8601. Afhankelijk van het geselecteerde type zijn er drie kleuren beschikbaar voor gebruik in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
+| Opsomming | `String` | Wordt gebruikt om een optie weer te geven uit een lijst met opties die bij het maken van het model zijn gedefinieerd |
+| Tags | `[String]` | Wordt gebruikt om een lijst weer te geven met tekenreeksen die tags vertegenwoordigen die in AEM worden gebruikt |
+| Content Reference | `String`, `[String]` | Wordt gebruikt om het pad naar een ander element in AEM weer te geven |
+| Fragmentverwijzing |  *Een modeltype* <br><br>Enkel veld: `Model` - Modeltype, rechtstreeks verwezen <br><br>Meerdere velden, met één type waarnaar wordt verwezen: `[Model]` - Array van type `Model`, rechtstreeks vanaf array <br><br>Meerdere velden, met meerdere typen waarnaar wordt verwezen: `[AllFragmentModels]` - Array van alle modeltypen, met verwijzing van array met type union |  Gebruikt om één, of meer, de Fragmenten van de Inhoud van bepaalde ModelTypes van Verwijzing van verwijzingen te voorzien, die toen het model werd gecreeerd |
+
+{style="table-layout:auto"}
 
 ### Helpervelden {#helper-fields}
 
