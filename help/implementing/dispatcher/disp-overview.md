@@ -3,9 +3,9 @@ title: Dispatcher in de cloud
 description: Dispatcher in de cloud
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 6ea869b3067d168c661ea925e112857c4bbd70e9
+source-git-commit: c61cd92acd416b1c463f5359f66be8199acf08c3
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1009'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ De Dispatcher Tools maken deel uit van de algemene AEM as a Cloud Service SDK en
 
 De Dispatcher-gereedschappen maken deel uit van de [as a Cloud Service SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), kan worden gedownload van een ZIP-bestand op het [Softwaredistributie](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portaal. Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools kan worden gebruikt om te worden geïmplementeerd in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
 
-Pak de SDK uit, die de Dispatcher Tools voor zowel macOS, Linux als Windows bundelt.
+Pak de SDK uit, die Dispatcher Tools voor macOS, Linux en Windows bundelt.
 
 **Voor macOS/Linux**, maakt u het artefact van het gereedschap Dispatcher uitvoerbaar en voert u dit uit. De Dispatcher Tools-bestanden worden automatisch geëxtraheerd onder de map waarin u het hebt opgeslagen (waar `version` is de versie van de Dispatcher Tools).
 

@@ -3,9 +3,9 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Validatie en foutopsporing met Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 614834961c23348cd97e367074db0a767d31bba9
+source-git-commit: a56b0ed1efff7b8d04e65921ee9dd25ae7030dbd
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2865'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,27 @@ U kunt een of meer van deze bestanden hebben. Zij bevatten `<VirtualHost>` verme
 >
 >In de flexibele modus moet u relatieve paden gebruiken in plaats van absolute paden.
 
+Zorg ervoor dat er altijd ten minste één virtuele host beschikbaar is die overeenkomt met ServerAlias `\*.local`, `localhost` en `127.0.0.1` die nodig zijn voor de validatie van de verzender. De serveraliassen `*.adobeaemcloud.net` en `*.adobeaemcloud.com` zijn ook vereist in minstens één gastheerconfiguratie en zijn nodig voor interne processen van Adobe.
+
+Als u precies dezelfde host wilt gebruiken omdat u meerdere hostbestanden hebt, kunt u het volgende voorbeeld volgen:
+
+```
+<VirtualHost *:80>
+	ServerName	"example.com"
+	# Put names of which domains are used for your published site/content here
+	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+	# Use a document root that matches the one in conf.dispatcher.d/default.farm
+	DocumentRoot "${DOCROOT}"
+	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+	AllowEncodedSlashes NoDecode
+	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+	<IfModule mod_headers.c>
+		Header add X-Vhost "publish-example-com"
+	</IfModule>
+  ...
+</VirtualHost>
+```
+
 * `conf.d/rewrites/rewrite.rules`
 
 Dit bestand wordt vanuit uw `.vhost` bestanden. Er is een set herschrijfregels voor `mod_rewrite`.
@@ -135,7 +156,7 @@ Het wordt aanbevolen dat de bovenstaande bestanden verwijzen naar de hieronder v
 Bevat een virtuele voorbeeldhost. Voor uw eigen virtuele host maakt u een kopie van dit bestand, past u het aan, gaat u naar `conf.d/enabled_vhosts` en maak een symbolische koppeling naar uw aangepaste kopie.
 Kopieer het bestand default.vhost niet rechtstreeks naar `conf.d/enabled_vhosts`.
 
-Zorg ervoor dat er altijd een virtuele host beschikbaar is die overeenkomt met ServerAlias `\*.local` en ook localhost, nodig voor interne Adobe-processen.
+Zorg ervoor dat er altijd een virtuele host beschikbaar is die overeenkomt met ServerAlias `\*.local`, `localhost` en `127.0.0.1` die nodig zijn voor de validatie van de verzender. De serveraliassen `*.adobeaemcloud.net` en `*.adobeaemcloud.com` nodig zijn voor interne Adobe-processen.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -228,8 +249,8 @@ Phase 3 finished
 Het script heeft de volgende drie fasen:
 
 1. De validator wordt uitgevoerd. Als de configuratie ongeldig is, ontbreekt het manuscript.
-2. Het voert het `httpd -t` om te testen of de syntaxis correct is, zodat apache httpd kan starten. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
-3. Controleert of de subset van de Dispatcher SDK-configuratiebestanden, die zijn bedoeld om onveranderbaar te zijn zoals beschreven in het dialoogvenster [Sectie Bestandsstructuur](##flexible-mode-file-structure), niet gewijzigd.
+2. Het voert het `httpd -t` gebruiken om te testen of de syntaxis correct is, zodat apache httpd kan starten. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
+3. Controleert of de subset van de Dispatcher SDK-configuratiebestanden, die zijn bedoeld om onveranderbaar te zijn zoals beschreven in het dialoogvenster [Sectie Bestandsstructuur](##flexible-mode-file-structure), is niet gewijzigd en komt overeen met de huidige SDK-versie.
 
 Tijdens een implementatie van Cloud Manager kunt u de `httpd -t` syntaxiscontrole wordt ook uitgevoerd en eventuele fouten worden opgenomen in Cloud Manager `Build Images step failure` log.
 
@@ -370,11 +391,12 @@ Vermijd deze fout door de weg van de Ontdekkingsreiziger van Vensters en dan op 
 
 ### Fase 2 {#second-phase}
 
-Deze fase controleert de pijnsyntaxis door Docker in een beeld te beginnen. Docker moet lokaal zijn geïnstalleerd, maar AEM hoeft niet te worden uitgevoerd.
+Deze fase controleert de apache syntaxis door Apache HTTPD in een docker container te starten. Docker moet lokaal zijn geïnstalleerd, maar AEM hoeft niet te worden uitgevoerd.
 
 >[!NOTE]
 >
 >Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Dit is een vereiste voor het uitvoeren van en het zuiveren van Dispatcher op een lokale computer.
+>Voor zowel Windows als macOS raden we u aan Docker Desktop te gebruiken.
 
 Deze fase kan ook onafhankelijk worden uitgevoerd `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -402,6 +424,8 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 ```
 
 Deze fase kan ook onafhankelijk worden uitgevoerd `bin/docker_immutability_check.sh src/dispatcher`.
+
+Uw lokale, onveranderbare bestanden kunnen worden bijgewerkt door het dialoogvenster `bin/update_maven.sh src/dispatcher` script in uw verzendermap, waar `src/dispatcher` is uw de configuratiefolder van de verzender. Hierdoor wordt ook elk bestand pom.xml in de bovenliggende map bijgewerkt, zodat de gemaakte controles op de immuniteitsstatus ook worden bijgewerkt.
 
 ## Fouten opsporen in uw Apache- en Dispatcher-configuratie {#debugging-apache-and-dispatcher-configuration}
 
