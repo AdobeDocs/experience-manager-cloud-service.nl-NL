@@ -2,10 +2,10 @@
 title: Logbestanden voor een migratieset weergeven in het gereedschap Inhoud overbrengen
 description: Logbestanden voor een migratieset weergeven in het gereedschap Inhoud overbrengen
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 11%
 >title="Logbestanden weergeven"
 >abstract="Na voltooiing van Extractie van Ingestie, controleer de logboeken om het even welke fout/waarschuwingen. Fouten moeten onmiddellijk worden verholpen, hetzij door de gemelde problemen te verhelpen, hetzij door contact op te nemen met de ondersteuning van Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="Problemen oplossen"
->additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="Contact opnemen met Adobe-ondersteuning"
+>additional-url="https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html" text="Contact opnemen met Adobe-ondersteuning"
 
 Controleer na elke stap (extractie en inname) de logboeken en zoek op fouten.  Fouten moeten onmiddellijk worden verholpen, hetzij door de gemelde problemen te verhelpen, hetzij door contact op te nemen met de ondersteuning van Adobe.
 
