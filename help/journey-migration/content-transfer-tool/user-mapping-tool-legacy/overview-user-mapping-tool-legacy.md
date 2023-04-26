@@ -4,15 +4,18 @@ description: Overzicht van het Hulpprogramma voor het toewijzen van gebruikers (
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
-source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
+source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '306'
 ht-degree: 9%
 
 ---
 
 # Overzicht van het Hulpprogramma voor het toewijzen van gebruikers (verouderd) {#overview-user-mapping-tool}
 
+>[!INFO]
+>
+>Deze documentatie verwijst naar een verouderde versie van dit hulpmiddel. Voor meer informatie over de meest recente versie raadpleegt u [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 <!-- Alexandru: drafting this for now
 
