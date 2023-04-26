@@ -4,9 +4,9 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
@@ -117,19 +117,19 @@ Nu u de twee primaire soorten vragen in werking hebt gesteld, bent u bereid om u
 
 1. Om vragen tegen uw eigen Fragmenten van de Inhoud in werking te stellen, verander het eindpunt van **AEM Demo-elementen** aan de **Uw project** map.
 
-1. Verwijder alle bestaande inhoud in de query-editor. Typ vervolgens open haakje `{` en druk Ctrl+Space of Option+Space voor een automatisch aangevulde lijst van de modellen die in uw eindpunt werden bepaald. Selecteer het model dat u hebt gemaakt en waarin u eindigt `List` van de opties.
+1. Verwijder alle bestaande inhoud in de query-editor. Typ vervolgens open haakje `{` en druk Ctrl+Space of Option+Space voor een automatisch aangevulde lijst van de modellen die in uw eindpunt werden bepaald. Selecteer het model dat u hebt gemaakt en waarin u eindigt `List` van de opties. Als u de voorbeelden in de vorige modules volgde, zou u moeten vinden `adventureList` in de lijst voor automatisch aanvullen.
 
-   ![Aangepaste query starten](assets/do-not-localize/custom-query-1-2.png)
+   ![Aangepaste query starten](assets/do-not-localize/custom-query-1.png)
 
 1. Definieer de items die de query moet bevatten voor het model Inhoudsfragment dat u hebt geselecteerd. Typ nogmaals haakje openen `{`Druk vervolgens op Ctrl+Space of Option+Space voor een lijst die automatisch wordt voltooid. Selecteren `items` van de opties.
 
 1. Tik of klik op de knop **prettiseren** om de code automatisch op te maken zodat deze gemakkelijker kan worden gelezen.
 
-1. Tik of klik op de knop **Afspelen** knoop bij de bovenkant verlaten van de redacteur om de vraag in werking te stellen. De redacteur auto voltooit `items` en de query wordt uitgevoerd.
+1. Tik of klik op de knop **Afspelen** knoop bij de bovenkant verlaten van de redacteur om de vraag in werking te stellen. De redacteur auto voltooit `items`, die kort geel worden gemarkeerd, en de query wordt uitgevoerd.
 
 1. De resultaten worden getoond in het juiste paneel, naast de vraagredacteur.
 
-   ![Aangepaste query uitvoeren](assets/do-not-localize/custom-query-3-4-5-6.png)
+   ![Aangepaste query uitvoeren](assets/do-not-localize/custom-query-2.png)
 
 Zo kunt u uw inhoud leveren aan alominakanale digitale ervaringen.
 
@@ -151,7 +151,6 @@ U maakt een doorlopende query die gegevens bevat die u van uw clienttoepassing w
          description {
            plaintext
          }
-         title
          price
          image {
            ... on ImageRef {

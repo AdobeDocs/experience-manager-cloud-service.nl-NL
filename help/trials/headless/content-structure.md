@@ -4,9 +4,9 @@ description: Leer hoe u AEM modellen van inhoudsfragmenten kunt gebruiken om uw 
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 49301c21e3b97b4bdf29fdccc53339149ac5a63b
+source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -68,11 +68,9 @@ In de editor van het inhoudsfragmentmodel configureert u de gegevenstypen en eig
 
 1. Wanneer u de eigenschappen van het veld hebt gedefinieerd, kunt u terugschakelen naar het tabblad **Gegevenstypen** in het rechterdeelvenster en voeg aanvullende velden toe door te slepen en neer te zetten.
 
-1. Tik of klik op **Opslaan** om uw model op te slaan.
-
 Op deze manier kunt u zoveel velden toevoegen als nodig zijn voor het ondersteunen van elke gegevensstructuur die u nodig hebt. De typen gegevensvelden variëren, maar het proces om deze aan uw model toe te voegen, blijft ongewijzigd.
 
-Ga verder met de volgende sectie om de velden toe te voegen die nodig zijn om de **Adventure** model.
+Ga verder met de volgende sectie om de velden toe te voegen die nodig zijn om de **Adventure** model
 
 ![Stap 1, 2 en 3 van het toevoegen van velden aan het model](assets/do-not-localize/define-model-fields.png)
 
@@ -104,4 +102,3 @@ Voer dezelfde stappen uit als hierboven om deze extra velden toe te voegen. Het 
 1. Als u alle velden hebt toegevoegd die nodig zijn voor het model Inhoudsfragment, klikt u op **Opslaan** rechtsboven in het venster.
 
 1. Het model wordt opgeslagen en u keert terug naar de Console van het model van het Fragment van de Inhoud.
-
