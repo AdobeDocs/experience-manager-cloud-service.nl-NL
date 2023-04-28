@@ -1,26 +1,26 @@
 ---
-title: Digitale middelen maken en beheren in meerdere talen
-description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
+title: Hoe te om activa in AEM te vertalen?
+description: Leer hoe u workflows automatiseert voor het vertalen van middelen in AEM, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2437'
+source-wordcount: '2473'
 ht-degree: 19%
 
 ---
 
-# Meertalige activa {#multilingual-assets}
+# Elementen vertalen in AEM {#multilingual-assets}
 
-Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten. Met Adobe Experience Manager Assets kunt u vertaalworkflows automatiseren voor middelen (inclusief binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
+Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten. Met Adobe Experience Manager Assets kunt u workflows automatiseren voor het vertalen van elementen (waaronder binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
 
-Om vertaalworkflows te automatiseren, integreert u de leveranciers van vertaaldiensten met Experience Manager en creeert projecten voor het vertalen van activa in veelvoudige talen. Experience Manager ondersteunt workflows voor het vertalen van mensen en machines.
+Om AEM middelenvertaling te automatiseren, integreert u de leveranciers van vertaaldiensten met Experience Manager en creeert projecten voor het vertalen van activa in veelvoudige talen. Experience Manager ondersteunt workflows voor het vertalen van mensen en machines.
 
-Menselijke vertaling: De vertaalde elementen worden geretourneerd en in Experience Manager geïmporteerd. Wanneer uw vertaalbureau met Experience Manager wordt geïntegreerd, worden de activa automatisch verzonden tussen Experience Manager en de vertaalleverancier.
+Vertaling van menselijk kapitaal in AEM: De vertaalde elementen worden geretourneerd en in Experience Manager geïmporteerd. Wanneer uw vertaalbureau met Experience Manager wordt geïntegreerd, worden de activa automatisch verzonden tussen Experience Manager en de vertaalleverancier.
 
-Machinevertaling: De vertaalservice zet de metagegevens en tags voor elementen direct om.
+Vertaling van systeemmiddelen in AEM: De vertaalservice zet de metagegevens en tags voor elementen direct om.
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -48,7 +48,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 -->
 
-## Elementen voorbereiden voor vertaling {#prepare-assets-for-translation}
+## Vertalen van middelen voorbereiden {#prepare-to-translate-assets}
 
 Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten.
 
@@ -70,7 +70,7 @@ De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de primaire taal. 
         |- zh
 ```
 
-Voer de volgende stappen uit om uw middelen voor vertaling voor te bereiden:
+Voer de volgende stappen uit om het vertalen van elementen voor te bereiden:
 
 1. Maak de hoofdtaalhoofdmap van uw primaire taal. De hoofdmap van de kopie van de Engelse taal in de voorbeeldmaphiërarchie is bijvoorbeeld `/content/dam/en`. Zorg ervoor dat de taalwortel correct volgens de informatie in wordt gevormd [Een hoofdmap voor talen maken](#create-a-language-root).
 
@@ -276,3 +276,17 @@ Als u een aangepaste connector wilt toepassen voor de vertaalservices die u wilt
 1. Voer een vertaalworkflow uit die in het maken van vertaalprojecten wordt beschreven nadat u de aangepaste connector hebt toegepast. Verifieer de details van de connector in de tegel **[!UICONTROL Translation Summary]** van het vertaalproject in de **[!UICONTROL Projects]**-console.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
+
+**Zie ook**
+
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)

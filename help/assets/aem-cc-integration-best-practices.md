@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3473'
 ht-degree: 14%
 
 ---
@@ -228,3 +228,18 @@ U kunt de volgende uploadmogelijkheden gebruiken:
 Als u Delen van netwerkbestanden gebruikt om digitale elementen te beheren, kan het gebruik van de netwerkshare die is toegewezen door de desktop-app van de Experience Manager, worden beschouwd als een handige vervanging. Bij de overgang van netwerkbestanden biedt de webinterface van de Experience Manager een uitgebreide reeks mogelijkheden voor beheer van digitale bedrijfsmiddelen die veel verder gaan dan wat mogelijk is bij het delen van een netwerk (zoeken, verzamelingen, metagegevens, samenwerking, voorvertoningen enzovoort) en de desktop-app van de Experience Manager biedt een handige koppeling om de DAM-opslagplaats aan de serverzijde te verbinden met het werk op een desktopcomputer.
 
 Vermijd het gebruik van de bureaubladtoepassing van de Experience Manager voor het rechtstreeks beheren van middelen in het netwerkaandeel van Experience Manager Assets. Vermijd bijvoorbeeld het gebruik van de bureaubladtoepassing van de Experience Manager om meerdere bestanden te verplaatsen/kopiëren. Gebruik in plaats daarvan de Experience Manager Assets-webinterface om mappen van Finder/Explorer naar het gedeelde netwerk te slepen of gebruik de Experience Manager Assets-functie voor het uploaden van mappen.
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 0ba6ce129322df9ad108822e86e5acfdbf99e613
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4544'
+source-wordcount: '4574'
 ht-degree: 5%
 
 ---
@@ -590,6 +590,20 @@ MXF-video-indeling wordt nog niet ondersteund met aantekeningen van video-elemen
       * 8 GB voor 720p-transcodering.
    * De maximale bestandsgrootte die u kunt transcoderen naar een resolutie van 4 k is 2,55 GB MP4-bestand met een resolutie van 4 k, een bitsnelheid van 12 Mbps en 23 fps.
 
+   **Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 * [Dynamic Media-videodocumentatie](/help/assets/dynamic-media/video.md).

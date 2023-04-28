@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '666'
 ht-degree: 10%
 
 ---
@@ -76,6 +76,20 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
    ![Dialoogvenster voor het downloaden van het CSV-bestand met metagegevens die bulksgewijs zijn geëxporteerd](assets/csv_download.png)
 
    *Afbeelding: Dialoogvenster voor het downloaden van het CSV-bestand met metagegevens die bulksgewijs zijn geëxporteerd.*
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
 
 >[!MORELIKETHIS]
 >

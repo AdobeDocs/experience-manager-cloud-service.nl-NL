@@ -11,9 +11,9 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 4edf66127696ce91466811e2ffdcfbbd73f7cc2c
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1633'
 ht-degree: 0%
 
 ---
@@ -166,3 +166,18 @@ De volgende indelingen voor audio- en videobestanden worden ondersteund voor tra
 ## Tips voor probleemoplossing {#troubleshooting}
 
 Meld u aan bij uw [!DNL Azure Media Services] account met de zelfde geloofsbrieven (die u voor configuratie) hebt gebruikt om de verzoekstatus te verifiëren. Contact [!DNL Azure] als uw verzoek niet met succes wordt verwerkt.
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)

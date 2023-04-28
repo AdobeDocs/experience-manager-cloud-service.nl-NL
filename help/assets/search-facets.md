@@ -4,10 +4,10 @@ description: In dit artikel wordt beschreven hoe u zoekfacetten in de Experience
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 17%
+source-wordcount: '2308'
+ht-degree: 16%
 
 ---
 
@@ -236,7 +236,7 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Date</p> </td>
+   <td><p>Datum</p> </td>
    <td><p>Zoeken voorspelt hoe elementen op basis van een schuifregelaar worden doorzocht op basis van een eigenschap date.</p> </td>
    <td>
     <ul>
@@ -317,11 +317,25 @@ Voer de volgende stappen uit om de standaardzoekfacet te herstellen:
 
 Als er geen beheerdersrol aan u is toegewezen, volgt hier een lijst met machtigingen die u nodig hebt voor het uitvoeren van bewerkingen, verwijderen en voorvertoningen van handelingen met zoekfacetten.
 
-| Actie | Machtiging |
+| Handeling | Machtiging |
 |---|---|
 | Bewerken | Lezen en schrijven toestemmingen op `/apps` in CRX. |
 | Verwijderen | De lees-, schrijf- en schrappingsmachtigingen op de `/apps` in CRX. |
 | Voorvertoning | De lees-, schrijf- en schrappingsmachtigingen op de `/var/dam/content` in CRX. Ook lees- en schrijfmachtigingen voor `/apps` knooppunt. |
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

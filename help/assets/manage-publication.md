@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 4%
+source-wordcount: '1381'
+ht-degree: 5%
 
 ---
 
@@ -78,7 +78,7 @@ Klik op **[!UICONTROL Include Folder Settings]**:
    * Ingeschakeld: Alle elementen van de geselecteerde map, submappen (inclusief alle elementen van de submappen) en verwijzingen worden gepubliceerd.
    * Uitgeschakeld: Alleen de geselecteerde map (leeg) en verwijzingen worden gepubliceerd. De elementen van de geselecteerde map worden niet gepubliceerd.
 
-* `Include folder contents` and `Include only immediate folder contents`
+* `Include folder contents` en `Include only immediate folder contents`
 
    Als beide opties zijn geselecteerd, worden alle elementen van de geselecteerde map, submappen (leeg) en verwijzingen gepubliceerd. De elementen van de submappen worden niet gepubliceerd.
 
@@ -103,8 +103,8 @@ In de volgende tabel wordt uitgelegd hoe de publicatie plaatsvindt afhankelijk v
 | [!UICONTROL Destination] | [!UICONTROL Dynamic Media Publish mode] | [!UICONTROL Publish Target] | Toegestane inhoud |
 | --- | --- | --- | --- |
 | Publicatie | Selectieve publicatie | `AEM` | Middelen en mappen |
-| Publicatie | Meteen | `AEM` and `Dynamic Media` | Middelen en mappen |
-| Publicatie | Bij activering | `AEM` and `Dynamic Media` | Middelen en mappen |
+| Publicatie | Meteen | `AEM` en `Dynamic Media` | Middelen en mappen |
+| Publicatie | Bij activering | `AEM` en `Dynamic Media` | Middelen en mappen |
 |  Dynamic Media  | Selectieve publicatie | `Dynamic Media` | Assets |
 |  Dynamic Media  | Meteen | `None` | Kan de elementen niet publiceren |
 |  Dynamic Media  | Bij activering | `None` | Kan de elementen niet publiceren |
@@ -183,3 +183,18 @@ U kunt elementen, mappen en verzamelingen publiceren naar de [!DNL Experience Ma
 * Lege mappen worden niet gepubliceerd.
 * Als u een element publiceert dat wordt verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
 * Verwijder tijdens het verwijderen van de publicatie van een complex element alleen de publicatie van het element. Maak de publicatie van de referenties niet ongedaan, omdat ze door andere gepubliceerde elementen kunnen worden doorverwezen.
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)

@@ -4,10 +4,10 @@ description: Opvallende wijzigingen in [!DNL Adobe Experience Manager Assets] in
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 86941606cba81ebff21e3db70967f862eabf7515
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 0%
+source-wordcount: '1027'
+ht-degree: 1%
 
 ---
 
@@ -66,6 +66,21 @@ Als u een end-to-end validatie van de code en het proces wilt uitvoeren, inclusi
 | Slimme omzetting | Niet ondersteund | [Slimme vertaling](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) wordt niet ondersteund in [!DNL Experience Manager] als [!DNL Cloud Service]. |
 | WebDAV | Niet ondersteund | Voor alternatieven, zie [[!DNL Creative Cloud] integratie](/help/assets/aem-cc-integration-best-practices.md) of [Referentiemateriaal voor ontwikkelaars](/help/assets/developer-reference-material-apis.md). |
 | Klassieke interface | Niet ondersteund | Alleen een gebruikersinterface met aanraakbediening is beschikbaar. |
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

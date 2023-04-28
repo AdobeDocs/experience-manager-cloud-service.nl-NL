@@ -4,10 +4,10 @@ description: Experience Manager voegt contextafhankelijke en beschrijvende slimm
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 0%
+source-wordcount: '1172'
+ht-degree: 1%
 
 ---
 
@@ -130,9 +130,24 @@ Om de configuratie van de betrouwbaarheidsscoreOSGI aan het project toe te voege
 
 * De voortgang van de codering wordt niet weergegeven.
 
-* Alleen video&#39;s die kleiner zijn dan 300 MB, worden automatisch gecodeerd. De [!DNL Adobe Sensei] De dienst slaat videodossiers over die in grootte groter zijn.
+* Alleen video&#39;s die kleiner zijn dan 300 MB, worden automatisch gecodeerd. De [!DNL Adobe Sensei] de dienst slaat videodossiers over die in grootte groter zijn.
 
 * Alleen de video&#39;s in de bestandsindelingen en ondersteunde codecs die worden vermeld in [Slimme tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats) zijn gelabeld.
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

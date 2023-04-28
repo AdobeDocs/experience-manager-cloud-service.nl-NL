@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4848'
+source-wordcount: '4876'
 ht-degree: 5%
 
 ---
@@ -154,7 +154,7 @@ U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, z
 | Metagegevensveld | Facetwaarde en gebruik |
 |---|---|
 | Titel | titel:John |
-| Creator | maker:John |
+| Maker | maker:John |
 | Locatie | locatie:NA |
 | Beschrijving | beschrijving:&quot;Voorbeeldafbeelding&quot; |
 | Gereedschap Maker | creatortool:&quot;Adobe Photoshop&quot; |
@@ -168,12 +168,12 @@ U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, z
 | Tijdsbereik (verloopt dateontime, offtime) | facetveld: lager gebonden..bovenaan |
 | Pad | /content/dam/&lt;folder name=&quot;&quot;> |
 | PDF-titel | pdftitle:&quot;Adobe-document&quot; |
-| Subject | onderwerp: &quot;Opleiding&quot; |
+| Onderwerp | onderwerp: &quot;Opleiding&quot; |
 | Tags | tags:&quot;Locatie en reizen&quot; |
 | Type | type:&quot;image\png&quot; |
 | Breedte van afbeelding | breedte:ondergrens..bovenaan |
 | Hoogte van afbeelding | hoogte:ondergrens..bovenaan |
-| Person | persoon:John |
+| Persoon | persoon:John |
 
 De eigenschappen `path`, `limit`, `size`, en `orderby` kan niet worden gecombineerd met `OR` met een andere eigenschap.
 
@@ -463,6 +463,20 @@ U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen ontbreekt een verwachte afbeelding. | <ul><li>Afbeelding is niet beschikbaar in [!DNL Experience Manager].</li><li>Afbeelding is niet geïndexeerd. Doorgaans wanneer het onlangs is geüpload.</li><li>Afbeelding heeft geen slimme tags.</li></ul> | <ul><li>Voeg de afbeelding toe aan [!DNL Assets].</li><li>Neem contact op met de beheerder om de gegevensopslagruimte opnieuw te indexeren. Zorg er ook voor dat u de juiste index gebruikt.</li><li>Neem contact op met de beheerder om de relevante elementen een slimme tag te geven.</li></ul> |
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt een irrelevante afbeelding weergegeven. | Zichtbaar zoekgedrag. | [!DNL Experience Manager] geeft zoveel mogelijk relevante activa weer. Eventuele minder relevante afbeeldingen worden aan de resultaten toegevoegd, maar met een lagere zoekpositie. De kwaliteit van de overeenkomsten en de relevantie van de gezochte elementen nemen af wanneer u de zoekresultaten omlaag schuift. |
 | Wanneer u zoekresultaten selecteert en gebruikt, wordt niet op alle gezochte elementen ingegaan. | De [!UICONTROL Select All] Hiermee selecteert u alleen de eerste 100 zoekresultaten in de kaartweergave en de eerste 200 zoekresultaten in de lijstweergave. |  |
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 627befb2fb1463ed2e3aad02f5e37b43f869b17c
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
@@ -160,14 +160,14 @@ Voor meer informatie over het uploadalgoritme, zie [officiële functiedocumentat
 
 Nadat alle delen van een binair dossier worden geupload, leg een verzoek van de POST van HTTP aan volledige URI voor die door de initiatiegegevens wordt verstrekt. Het inhoudstype van de aanvraaginstantie moet `application/x-www-form-urlencoded` formuliergegevens, die de volgende velden bevatten.
 
-| Fields | Type | Vereist of niet | Beschrijving |
+| Velden | Type | Vereist of niet | Beschrijving |
 |---|---|---|---|
-| `fileName` | Tekenreeks | Vereist | De naam van het element, zoals deze werd verstrekt in de inleidingsgegevens. |
-| `mimeType` | Tekenreeks | Vereist | Het HTTP-inhoudstype van het binaire getal, zoals is opgegeven door de initiatiegegevens. |
-| `uploadToken` | Tekenreeks | Vereist | Upload token voor het binaire bestand, zoals werd opgegeven in de initiatiegegevens. |
+| `fileName` | String | Vereist | De naam van het element, zoals deze werd verstrekt in de inleidingsgegevens. |
+| `mimeType` | String | Vereist | Het HTTP-inhoudstype van het binaire getal, zoals is opgegeven door de initiatiegegevens. |
+| `uploadToken` | String | Vereist | Upload token voor het binaire bestand, zoals werd opgegeven in de initiatiegegevens. |
 | `createVersion` | Boolean | Optioneel | Indien `True` en er een element met de opgegeven naam bestaat, dan [!DNL Experience Manager] maakt een nieuwe versie van het element. |
-| `versionLabel` | Tekenreeks | Optioneel | Als er een nieuwe versie wordt gemaakt, wordt het label gekoppeld aan de nieuwe versie van een element. |
-| `versionComment` | Tekenreeks | Optioneel | Als er een nieuwe versie wordt gemaakt, worden de opmerkingen gekoppeld aan de versie. |
+| `versionLabel` | String | Optioneel | Als er een nieuwe versie wordt gemaakt, wordt het label gekoppeld aan de nieuwe versie van een element. |
+| `versionComment` | String | Optioneel | Als er een nieuwe versie wordt gemaakt, worden de opmerkingen gekoppeld aan de versie. |
 | `replace` | Boolean | Optioneel | Indien `True` en er een element met de opgegeven naam bestaat, [!DNL Experience Manager] Hiermee verwijdert u het element en maakt u het opnieuw. |
 | `uploadDuration` | Getal | Optioneel | De totale hoeveelheid tijd, in milliseconden, voor het dossier om in zijn geheel te uploaden. Indien opgegeven, wordt de uploadduur opgenomen in de logbestanden van het systeem voor de analyse van de overdrachtssnelheid. |
 | `fileSize` | Getal | Optioneel | De grootte van het bestand, in bytes. Indien opgegeven, wordt de bestandsgrootte opgenomen in de logbestanden van het systeem voor de analyse van de overdrachtssnelheid. |
@@ -289,6 +289,21 @@ De volgende technische workflowmodellen worden vervangen door asset microservice
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 * [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

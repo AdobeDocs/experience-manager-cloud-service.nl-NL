@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2316'
 ht-degree: 3%
 
 ---
@@ -154,7 +154,7 @@ Om de geloofsbrieven van de de dienstrekening en JWT lading te produceren:
 
 1. In de **[!UICONTROL Project overview]** tabblad, klikt u op **[!UICONTROL Add API]**.
 
-1. In de **[!UICONTROL Add an API window]**, selecteert u **[!UICONTROL Adobe Stock]**. Klikken **[!UICONTROL Next]**.
+1. In de **[!UICONTROL Add an API window]**, selecteert u **[!UICONTROL Adobe Stock]**. Klik op **[!UICONTROL Next]**.
 
 1. In de **[!UICONTROL Configure API]** venster, selecteert u **[!UICONTROL Service Account (JWT)]** verificatie. Klik op **[!UICONTROL Next]**.
 
@@ -311,7 +311,7 @@ Als u het dialoogvenster [!DNL Adobe Stock] cloudconfiguratie:
 
 In de volgende tabel wordt uitgelegd hoe de gebruikersmachtigingen werken bij het openen van de [!DNL Adobe Stock] activa:
 
-| Gebruiker | Groeperen | Machtigingen | Stock-configuratie accepteren in de gebruikersvoorkeuren | Toegangsmiddelen | Toegang tot Adobe Stock |
+| Gebruiker | Groep | Machtigingen | Stock-configuratie accepteren in de gebruikersvoorkeuren | Toegangsmiddelen | Toegang tot Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
 | beheerder | N.v.t. | Alles | N.v.t. | Ja | Ja |
 | test-doc1 | DAM-gebruiker | /conf/global/settings/stock/cloud-config | Ja | Ja | Ja |
@@ -451,6 +451,21 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 * **Reference fields and metadata are not synced**: When a user updates a license reference field, the license reference information is updated in [!DNL Experience Manager] but not on the [!DNL Adobe Stock] website. Similarly, if the user updates the reference fields on the [!DNL Adobe Stock] website, the updates are not synchronized in [!DNL Experience Manager].
 -->
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

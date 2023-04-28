@@ -2,10 +2,10 @@
 title: Metagegevenstoewijzing tussen Workfront en Experience Manager Assets configureren
 description: Wijs de gebieden van activa meta-gegevens tussen Adobe Workfront en Experience Manager as a Cloud Service toepassingen toe. Als u metagegevensvelden toewijst aan Experience Manager Assets en een element verzendt van Workfront naar, kunt u de metagegevens van de toegewezen elementen weergeven in Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 1%
+source-wordcount: '948'
+ht-degree: 2%
 
 ---
 
@@ -128,3 +128,18 @@ Instellingen voor metagegevens toepassen op de afbeeldingsmap:
 1. Selecteer de doelmap waarnaar [de afbeelding wordt verzonden vanuit de Adobe Workfront-toepassing](#send-image-workfront-assets) en klik op **[!UICONTROL Apply]**.
 
 U kunt naar de afbeelding navigeren in Experience Manager Assets en de metagegevens bekijken die aan de afbeelding zijn gekoppeld. Selecteer de afbeelding en klik op **[!UICONTROL Properties]** om de metagegevens van de afbeelding weer te geven.
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)

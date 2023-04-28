@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '937'
 ht-degree: 11%
 
 ---
@@ -20,7 +20,7 @@ Gebruik schema&#39;s voor metagegevens om regels voor de weergave van trapsgewij
 
 Hier volgen enkele gebruiksgevallen waarvoor u trapsgewijze metagegevens kunt definiëren:
 
-* Indien de gebruikerslocatie vereist is, relevante plaatsnaam weergeven op basis van de keuze van het land en de staat van de gebruiker.
+* Indien een gebruikerslocatie is vereist, relevante plaatsnaam weergeven op basis van de keuze van het land en de staat van de gebruiker.
 * Laad relevante merknamen in een lijst op basis van de door de gebruiker gekozen productcategorie.
 * Schakel de zichtbaarheid van een bepaald veld in of uit op basis van de waarde die in een ander veld is opgegeven. Geef bijvoorbeeld afzonderlijke velden voor het verzendadres weer als de gebruiker de verzending op een ander adres wil laten uitvoeren.
 * Wijs een veld aan als verplicht op basis van de waarde die in een ander veld is opgegeven.
@@ -113,3 +113,18 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![Trapsgewijze metagegevens voor documentelementen](assets/doc_type_fields.png)
    *Afbeelding: Trapsgewijze metagegevens voor documentelementen*
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)

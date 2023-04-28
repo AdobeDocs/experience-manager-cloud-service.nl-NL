@@ -2,9 +2,9 @@
 title: Kleurlabels voor afbeeldingen
 description: Met Experience Manager Assets kunt u onderscheid maken tussen kleuren in een afbeelding en deze automatisch als tags toepassen. Vervolgens kunt u deze tags gebruiken om afbeeldingen te zoeken en te filteren.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1124'
 ht-degree: 2%
 
 ---
@@ -181,3 +181,18 @@ Zo zoekt u afbeeldingen op basis van kleuren:
    U kunt afbeeldingen filteren op basis van de selectie van één kleur. De afbeeldingen met de geselecteerde kleur als een van de slimme-kleurtags en boven de [Dekking/Dominantiedrempel %](#manage-color-tagging-settings) in het rechterdeelvenster.
 
 1. Klik op x in de zoekbalk om het filter te wissen.
+
+**Zie ook**
+
+* [Elementen vertalen](translate-assets.md)
+* [HTTP-API voor assets](mac-api-assets.md)
+* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets doorzoeken](search-assets.md)
+* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
+* [Rapporten over assets](asset-reports.md)
+* [Metagegevensschema&#39;s](metadata-schemas.md)
+* [Elementen downloaden](download-assets-from-aem.md)
+* [Metagegevens beheren](manage-metadata.md)
+* [Facetten doorzoeken](search-facets.md)
+* [Verzamelingen beheren](manage-collections.md)
+* [Bulkmetagegevens importeren](metadata-import-export.md)
