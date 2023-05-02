@@ -2,9 +2,9 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: cab182a7998be6a569cf16e4000184f7235082da
+source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1722'
 ht-degree: 6%
 
 ---
@@ -146,6 +146,10 @@ Dit geeft aan dat de Cloud Acceleration Manager de migratieservice van de doelom
 De Orchestrator van de versie houdt automatisch milieu-bijgewerkt door updates automatisch toe te passen. Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving. Dat is één van de redenen een steunkaartje zou moeten worden geregistreerd alvorens een opname (zie &quot;Nota&quot;hierboven) te beginnen, zodat tijdelijk het onbruikbaar maken van Orchestrator van de Versie kan worden gepland.
 
 Als het Orchestrator van de Versie nog loopt wanneer een opname wordt begonnen, zal UI dit bericht voorstellen. U kunt desondanks doorgaan, waarbij u het risico accepteert, door het veld te controleren en nogmaals op de knop te drukken.
+
+>[!NOTE]
+>
+> De Orchestrator van de versie wordt nu opgesteld aan de milieu&#39;s van de Ontwikkeling, zodat zou het pauzeren updates op die milieu&#39;s eveneens moeten worden gedaan.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 

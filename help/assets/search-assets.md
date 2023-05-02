@@ -1,25 +1,25 @@
 ---
-title: Digitale middelen en afbeeldingen zoeken in [!DNL Adobe Experience Manager]
-description: Leer hoe u de vereiste middelen kunt vinden in [!DNL Adobe Experience Manager] met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
+title: Hoe te om activa in AEM te zoeken?
+description: Leer hoe u elementen in AEM kunt zoeken met het deelvenster Filters en hoe u de resultaten kunt gebruiken die worden weergegeven bij het zoeken naar elementen.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
 workflow-type: tm+mt
-source-wordcount: '4876'
+source-wordcount: '4882'
 ht-degree: 5%
 
 ---
 
-# Middelen zoeken in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Middelen zoeken in AEM {#search-assets-in-aem}
 
-[!DNL Adobe Experience Manager Assets] biedt robuuste methoden voor het detecteren van bedrijfsmiddelen die u helpen een hogere snelheid van de inhoud te bereiken. Uw teams kunnen tijd aan markt met naadloze, intelligente onderzoekservaring verminderen gebruikend out-of-the-box functionaliteit en douanemethodes. Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders. Eenvoudige, geavanceerde en aangepaste zoekopdrachten die u kunt uitvoeren via [!DNL Assets] In deze gebruiksgevallen kunt u met gebruikersinterface of andere apps en oppervlakken gemakkelijker aan de slag gaan.
+[!DNL Adobe Experience Manager Assets] biedt robuuste methoden voor het zoeken naar elementen waarmee u een hogere snelheid van de inhoud kunt bereiken. Uw teams kunnen tijd aan markt met naadloze, intelligente ervaring van middelenonderzoek verminderen gebruikend out-of-the-box functionaliteit en douanemethodes. De mogelijkheid van zoekmiddelen staat centraal in het gebruik van een systeem voor het beheer van digitale middelen — of het nu gaat om verder gebruik door klanten, voor een robuust beheer van bedrijfsmiddelen door zakelijke gebruikers en marketeers of voor beheer door DAM-beheerders. Eenvoudige, geavanceerde en aangepaste zoekopdrachten die u kunt uitvoeren via [!DNL Assets] In deze gebruiksgevallen kunt u met gebruikersinterface of andere apps en oppervlakken gemakkelijker aan de slag gaan.
 
-[!DNL Experience Manager Assets] steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, de concepten, de configuraties, de beperkingen, en het oplossen van problemen voor deze gebruiksgevallen.
+[!DNL Experience Manager Assets] steunt de volgende gebruiksgevallen om activa te zoeken en dit artikel beschrijft het gebruik, de concepten, de configuraties, de beperkingen, en het oplossen van problemen voor deze gebruiksgevallen.
 
-| Middelen zoeken | Zoekfuncties configureren en beheren | Werken met zoekresultaten |
+| Assets doorzoeken | Zoekfuncties configureren en beheren | Werken met resultaten voor middelenzoekopdrachten |
 |---|---|---|
 | [Standaardzoekopdrachten](#searchbasics) | [Zoekindex](#searchindex) | [Resultaten sorteren](#sort) |
 | [Gebruiksinterface voor zoeken begrijpen](#searchui) | [Tekst extraheren](#extracttextupload) | [Eigenschappen en metagegevens van een element controleren](#checkinfo) |
