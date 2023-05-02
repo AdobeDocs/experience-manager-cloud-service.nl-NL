@@ -2,9 +2,9 @@
 title: Sluiende en ontsmette zandbakomgevingen
 description: Leer hoe omgevingen van een sandboxprogramma automatisch overschakelen op een hibernatiemodus en hoe u deze kunt deorganiseren.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
+source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -114,5 +114,9 @@ In gesluimerde omgevingen zijn implementaties en handmatige AEM nog steeds mogel
 
 * De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genormaliseerd.
    * Inactiviteit wordt gedefinieerd als het ontvangen van aanvragen door de auteurservice of door voorvertonings- of publicatieservices.
-   * Na de hiberatie kunnen ze handmatig worden gedehiberneerd.
+   * Als ze eenmaal zijn gehiberd, kunnen ze [handmatig ontbonden.](#de-hibernation-introduction)
 * Sandboxprogramma&#39;s worden verwijderd na zes maanden van continuhibernatiemodus, waarna ze opnieuw kunnen worden gemaakt.
+
+>[!NOTE]
+>
+>Alleen sandboxomgevingen worden automatisch verwijderd na zes maanden doorlopende hibernatie. Het sandboxprogramma met de bijbehorende opslagplaats en code blijft behouden.

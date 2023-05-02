@@ -2,9 +2,9 @@
 title: Inleiding tot Sandbox-programma's
 description: Leer welke sandboxprogramma's verschillen van productieprogramma's.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: e43dd379169b4048347ecce6d10652e9f8835333
+source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -64,15 +64,9 @@ Raadpleeg het document [Omgeving bijwerken](/help/implementing/cloud-manager/man
 
 ### Sluimerstand en verwijdering {#hibernation}
 
-De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genormaliseerd. Na de hiberatie kunnen ze handmatig worden gedehiberneerd.
+De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genormaliseerd. Sandbox-omgevingen worden verwijderd na zes opeenvolgende maanden van hibernatie.
 
-Sandbox-omgevingen worden verwijderd na zes opeenvolgende maanden van hibernatie, waarna ze opnieuw gemaakt kunnen worden.
-
->[!NOTE]
->
->Alleen sandboxomgevingen worden automatisch verwijderd na zes maanden doorlopende hibernatie. Het sandboxprogramma met de bijbehorende opslagplaats en code blijft behouden.
-
-Zie [Sluiende en ontsmette zandbakomgevingen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) voor meer informatie .
+Zie [Sluiende en ontsmette zandbakomgevingen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) voor meer informatie over hoe u omgevingen kunt dehiberneren en het automatisch verwijderen van sandboxen.
 
 ### Geen technische ondersteuning {#no-support}
 
