@@ -2,10 +2,10 @@
 title: Inleiding tot aangepaste domeinnamen
 description: Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbediening te identificeren aan de hand van een unieke merknaam.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: cc6910bad0d0a62232bd66e0080b6802b9a1110b
+source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,21 +33,16 @@ U kunt een domeinnaam kopen van een registrar van domeinnamen, een bedrijf of or
 >
 >Cloud Manager is geen registrar voor domeinnamen en biedt geen DNS-services.
 
-## Beperkingen {#limitations}
+## Aangepaste domeinnamen en BYO CDN&#39;s {#byo-cdn}
 
-Er gelden een aantal beperkingen voor het gebruik van aangepaste domeinnamen met AEMaaCS.
+AEM as a Cloud Service biedt de ingebouwde dienst van het netwerk van de inhoudslevering (CDN) aan, maar staat u ook toe om (BYO) CDN aan gebruik met AEM te brengen. Aangepaste domeinen kunnen worden geïnstalleerd in de CDN met AEM beheer of in een CDN die u beheert.
 
-* Aangepaste domeinnamen worden ondersteund in Cloud Manager voor zowel publicatie- als voorvertoningsservices voor Sites-programma&#39;s. Aangepaste domeinen voor auteursservices worden niet ondersteund.
-* Elke Cloud Manager-omgeving kan maximaal 500 aangepaste domeinen per omgeving hosten.
-* De namen van het domein kunnen niet aan milieu&#39;s worden toegevoegd terwijl er een huidige lopende pijpleiding in bijlage aan die milieu&#39;s is.
-* Dezelfde domeinnaam kan niet op meer dan één omgeving worden gebruikt.
-* Er kan slechts één domeinnaam tegelijk worden toegevoegd.
-* AEM as a Cloud Service ondersteunt geen jokertekendomeinen zoals `*.example.com`.
-* Voordat u een aangepaste domeinnaam kunt toevoegen, moet een geldig SSL-certificaat met de aangepaste domeinnaam (jokertekens zijn geldig) voor uw programma zijn geïnstalleerd. Zie [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer informatie.
+* De domeinnamen van de douane (en certificaten) die in AEM-beheerde CDN worden geïnstalleerd worden beheerd via de Manager van de Wolk.
+* De domeinnamen van de douane (en certificaten) die in uw eigen CDN worden geïnstalleerd worden beheerd in die specifieke CDN.
 
->[!NOTE]
->
->Aangepaste domeinen worden ondersteund in Cloud Manager **alleen** als u AEM beheerde CDN gebruikt. Als u uw eigen CDN en [wijs het aan AEM beheerde CDN](/help/implementing/dispatcher/cdn.md) u moet die specifieke CDN gebruiken om domeinen te beheren die geen Cloud Manager zijn.
+Domeinen die in uw eigen CDN worden beheerd, hoeven niet via Cloud Manager te worden geïnstalleerd. Zij zullen aan AEM via x-Door:sturen-Gastheer ter beschikking worden gesteld en zullen de gastheren aanpassen die in de verzender worden bepaald. [Zie de CDN-documentatie voor meer informatie.](/help/implementing/dispatcher/cdn.md)
+
+In één milieu kunt u beide domeinen hebben die in AEM-beheerde CDN worden geïnstalleerd en in uw eigen CDN worden geïnstalleerd.
 
 ## Workflow {#workflow}
 
@@ -68,3 +63,15 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 >[!TIP]
 >
 >Het instellen van aangepaste domeinnamen met AEM als cloudservice is doorgaans een eenvoudig proces. Nochtans bij gelegenheid kunnen de kwesties van de domeindelegatie voorkomen die 1 tot 2 werkdagen kunnen vergen om op te lossen. Daarom wordt het ten zeerste aanbevolen de domeinen ruim vóór hun live datum te installeren. Zie het document [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer informatie .
+
+## Beperkingen {#limitations}
+
+Er gelden een aantal beperkingen voor het gebruik van aangepaste domeinnamen met AEMaaCS.
+
+* Aangepaste domeinnamen worden ondersteund in Cloud Manager voor zowel publicatie- als voorvertoningsservices voor Sites-programma&#39;s. Aangepaste domeinen voor auteursservices worden niet ondersteund.
+* Elke Cloud Manager-omgeving kan maximaal 500 aangepaste domeinen per omgeving hosten.
+* De namen van het domein kunnen niet aan milieu&#39;s worden toegevoegd terwijl er een huidige lopende pijpleiding in bijlage aan die milieu&#39;s is.
+* Dezelfde domeinnaam kan niet op meer dan één omgeving worden gebruikt.
+* Er kan slechts één domeinnaam tegelijk worden toegevoegd.
+* AEM as a Cloud Service ondersteunt geen jokertekendomeinen zoals `*.example.com`.
+* Voordat u een aangepaste domeinnaam kunt toevoegen, moet een geldig SSL-certificaat met de aangepaste domeinnaam (jokertekens zijn geldig) voor uw programma zijn geïnstalleerd. Zie [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer informatie.
