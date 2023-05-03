@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 13a1915e9aca812024e8eb27c131500cdc8e01b2
+source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
 workflow-type: tm+mt
 source-wordcount: '5846'
 ht-degree: 1%
@@ -111,7 +111,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -158,7 +158,7 @@ Aan de afspeelzijde van de viewer wordt automatisch de videocapaciteit van de br
 
 >[!NOTE]
 >
->Als u DASH wilt gebruiken voor uw video&#39;s, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).)
+>Als u DASH wilt gebruiken voor uw video&#39;s, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).
 
 U kunt de mogelijkheid om de afspeelcomponenten te ontwerpen met behulp van HTML5 en CSS combineren tot één speler. Het kan het afspelen ingesloten hebben en adaptief en progressief streamen gebruiken, afhankelijk van de mogelijkheden van de browser. Met al deze functionaliteit kunt u het bereik van uw uitgebreide media-inhoud uitbreiden voor zowel gebruikers op het bureaublad als mobiele apparaten en een gestroomlijnde videobeleving garanderen.
 
