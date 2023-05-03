@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 9abafe051672de65f042332314445b239f95852b
 workflow-type: tm+mt
-source-wordcount: '2389'
+source-wordcount: '2371'
 ht-degree: 4%
 
 ---
@@ -236,7 +236,7 @@ Verbeterde slimme tags zijn gebaseerd op leermodellen van afbeeldingen en hun ta
 
 * Kan subtiele verschillen in afbeeldingen niet herkennen. Bijvoorbeeld dunne of standaard passend overhemden.
 * Kan geen tags identificeren op basis van kleine patronen of delen van een afbeelding. Bijvoorbeeld logo&#39;s op hemden.
-* Tags worden ondersteund in de talen die [!DNL Experience Manager] ondersteunt. Voor een lijst met talen raadpleegt u [Opmerkingen bij de release Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* Tags worden ondersteund in de talen die [!DNL Experience Manager] ondersteunt.
 * De tags die niet worden verwerkt, hebben betrekking op:
 
    * Niet-visuele, abstracte aspecten. Bijvoorbeeld het jaar of het seizoen waarin een product wordt uitgebracht, de sfeer van of de emotie die door een beeld wordt opgeroepen, en een subjectieve connotatie van een video.

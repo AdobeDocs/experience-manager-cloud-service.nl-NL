@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 2fb929cae03fa9ac0bf6d18d5eb3cf19bb35fa37
+source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -182,4 +182,4 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 >[!MORELIKETHIS]
 >
 >* [Integreren [!DNL Workfront for Experience Manager enhanced connector] met Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
->* [Integreren [!DNL Workfront for Experience Manager enhanced connector] met Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-integrations.html?lang=en)
+

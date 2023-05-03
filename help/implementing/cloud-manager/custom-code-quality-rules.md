@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit
 description: Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 0b71e15c956cd39907440be319347bd1a749eb0b
+source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3473'
 ht-degree: 1%
 
 ---
@@ -757,7 +757,7 @@ Vergelijkbaar met de [De pakketten zouden geen dubbele OSGi configuratieregel mo
 * **Ernst**: Klein
 * **Sinds**: Versie 2020.5.0
 
-De OSGi-configuratie `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definieert de standaardontwerpmodus in Experience Manager. Omdat [de klassieke gebruikersinterface is afgekeurd sinds Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html), wordt een kwestie nu opgeheven wanneer de standaard auteurswijze aan Klassieke UI wordt gevormd.
+De OSGi-configuratie `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definieert de standaardontwerpmodus in Experience Manager. Omdat Klassieke UI sinds Experience Manager 6.4 is afgekeurd, wordt een kwestie nu opgeheven wanneer de standaard auteurswijze aan Klassieke UI wordt gevormd.
 
 ### Componenten met dialoogvensters moeten een interface-aanraakdialoogvensters hebben {#oakpal-components-dialogs}
 
@@ -860,7 +860,7 @@ De migratie van statische aan editable malplaatjes kan grotendeels worden geauto
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-De oudere Componenten van de Stichting (d.w.z. componenten onder `/libs/foundation`) zijn [afgekeurd voor verscheidene versies van de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) ten gunste van de Core Components. Het gebruik van de Componenten van de Stichting als basis voor douanecomponenten (hetzij door bedekking of erfenis) wordt ontmoedigd en zou in de overeenkomstige Componenten van de Kern moeten worden omgezet.
+De oudere Componenten van de Stichting (d.w.z. componenten onder `/libs/foundation`) zijn vervangen voor verschillende versies van Experience Managers ten gunste van Core Components. Het gebruik van de Componenten van de Stichting als basis voor douanecomponenten (hetzij door bedekking of erfenis) wordt ontmoedigd en zou in de overeenkomstige Componenten van de Kern moeten worden omgezet.
 
 Deze conversie kan worden vergemakkelijkt door de [Moderniseringsgereedschappen voor Experience Managers.](https://opensource.adobe.com/aem-modernize-tools/)
 
