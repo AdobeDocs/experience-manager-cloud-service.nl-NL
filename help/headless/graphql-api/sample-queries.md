@@ -3,10 +3,10 @@ title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
 description: Leer GraphQL met AEM gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 2%
+source-wordcount: '1596'
+ht-degree: 0%
 
 ---
 
@@ -1146,7 +1146,7 @@ Deze voorbeeldquery vraagt om:
 Deze query vraagt om:
 
 * voor alle inhoudfragmenten van het type `adventure`
-* metadata
+* metagegevens
 
 **Voorbeeldquery**
 
@@ -1291,16 +1291,40 @@ Deze query vraagt om:
 
 ### Voorbeeldquery voor een geneste inhoudsfragment - Meerdere modeltypen{#sample-wknd-nested-fragment-multiple-model}
 
+#### Type model waarnaar wordt verwezen
+
 Deze query vraagt om:
 
 * voor meerdere inhoudsfragmenten van het type `bookmark`
-   * met fragmentverwijzingen naar andere fragmenten van de specifieke modeltypen `article` en `adventure`
+   * met fragmentverwijzingen naar ander fragment van het specifieke modeltype `article`
 
 >[!NOTE]
 >
->Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met de modellen `Article`, `Adventure` geselecteerd.
+>Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met het model `Article` geselecteerd. Query levert `fragments` als een array van `[Article]`
 
-<!-- need replacement query -->
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Meerdere moduletypen waarnaar wordt verwezen
+
+Deze query vraagt om:
+
+* voor meerdere inhoudsfragmenten van het type `bookmark`
+   * met fragmentverwijzingen naar andere fragmenten van de specifieke modeltypen `Article` en `Adventure`
+
+>[!NOTE]
+>
+>Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met de modellen `Article`, `Adventure` geselecteerd. Query uitvoeren `fragments` als een array van `[AllFragmentModels]` die wordt afgeweken van het type union.
 
 ```graphql
 {
@@ -1613,10 +1637,10 @@ De basisvelden voor het bedrijf zijn:
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
 | Bedrijfsnaam | Tekst met één regel |  |
-| CEO | Fragmentverwijzing (enkele) | [Person](#model-person) |
-| Werknemers | Fragmentverwijzing (meerdere velden) | [Person](#model-person) |
+| CEO | Fragmentverwijzing (enkele) | [Persoon](#model-person) |
+| Werknemers | Fragmentverwijzing (meerdere velden) | [Persoon](#model-person) |
 
-#### Person {#model-person}
+#### Persoon {#model-person}
 
 De velden waarin een persoon wordt gedefinieerd, die ook een werknemer kan zijn:
 
@@ -1658,7 +1682,7 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 | Little Pony Inc. | Adam Smith | Lara Croft<br>Trekslade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
-#### Person {#fragment-person}
+#### Persoon {#fragment-person}
 
 | Naam | Voornaam | Awards |
 |--- |--- |--- |
