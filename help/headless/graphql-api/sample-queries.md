@@ -3,7 +3,7 @@ title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
 description: Leer GraphQL met AEM gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
+source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 0%
@@ -1296,11 +1296,11 @@ Deze query vraagt om:
 Deze query vraagt om:
 
 * voor meerdere inhoudsfragmenten van het type `bookmark`
-   * met fragmentverwijzingen naar ander fragment van het specifieke modeltype `article`
+   * met fragmentverwijzingen naar andere fragmenten van het specifieke modeltype `Article`
 
 >[!NOTE]
 >
->Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met het model `Article` geselecteerd. Query levert `fragments` als een array van `[Article]`
+>Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met het model `Article` geselecteerd. Query levert `fragments` als een array van `[Article]`.
 
 ```graphql
 {
@@ -1315,7 +1315,7 @@ Deze query vraagt om:
 }
 ```
 
-#### Meerdere moduletypen waarnaar wordt verwezen
+#### Meerdere modeltypen waarnaar wordt verwezen
 
 Deze query vraagt om:
 
@@ -1324,7 +1324,7 @@ Deze query vraagt om:
 
 >[!NOTE]
 >
->Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met de modellen `Article`, `Adventure` geselecteerd. Query uitvoeren `fragments` als een array van `[AllFragmentModels]` die wordt afgeweken van het type union.
+>Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met de modellen `Article`, `Adventure` geselecteerd. Query levert `fragments` als een array van `[AllFragmentModels]`, die wordt afgeweken van het type union.
 
 ```graphql
 {
