@@ -4,9 +4,9 @@ description: Ontdek het ophalen van JSON-inhoud uit uw testomgeving met een Code
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
+source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="De voorbeeldtoepassing CodePen starten"
->abstract="In deze handleiding worden JSON-gegevens uit uw testomgeving opgevraagd in een standaard JavaScript-webapp. We gebruiken de Content Fragments die u hebt gemodelleerd en gemaakt in de eerdere leermodules. Werk deze gidsen dus eerst door voordat u naar deze gaat.<br><br>Om te laten zien hoe inhoud kan worden opgevraagd vanuit een JavaScript-webapp, hebben we een CodePen ingesteld die u ongewijzigd kunt gebruiken, of een vork in uw eigen account om verder aan te passen."
+>abstract="In deze handleiding worden JSON-gegevens uit uw testomgeving opgevraagd in een standaard JavaScript-webapp. We gebruiken de Content Fragments die u hebt gemodelleerd en gemaakt in de eerdere leermodules. Werk deze gidsen dus eerst door voordat u naar deze gaat."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -61,7 +61,7 @@ import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headles
 
 Op regel 6 lezen we uw publicatiehostgegevens van de `publishHost` queryparameter. Dit is de host waarop de AEM Headless-client gegevens kan ophalen. Dit wordt doorgaans gecodeerd in uw app, maar we gebruiken een queryparameter om het voor de CodePen-app eenvoudiger te maken met verschillende omgevingen te werken.
 
-Wij vormen de Zwaardeloze Cliënt van de AEM op lijn 12 om een volmachtAdobe IO Runtime functie te gebruiken om CORS kwesties te vermijden. Dit is niet vereist voor uw eigen projecten, maar is vereist voor de CodePen-app voor uw testomgeving. De volmachtsfunctie wordt gevormd om te gebruiken `publishHost` waarde die is opgegeven in de queryparameter.
+Wij vormen de Zwaarloze Cliënt van de AEM op lijn 12:
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -72,6 +72,10 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
   }
 });
 ```
+
+>[!NOTE]
+>
+>De **serviceURL** is ingesteld om een Adobe IO-runtime-proxyfunctie te gebruiken om CORS-problemen te voorkomen. Dit is niet vereist voor uw eigen projecten, maar is vereist voor de CodePen-app voor uw testomgeving. De volmachtsfunctie wordt gevormd om te gebruiken **publishHost** waarde die is opgegeven in de queryparameter.
 
 Ten slotte, de functie `fetchJsonFromGraphQL()` wordt gebruikt om het ophaalverzoek uit te voeren gebruikend de Zwaarloze Cliënt van de AEM. Deze wordt telkens aangeroepen wanneer de code wordt gewijzigd of kan worden geactiveerd door op de knop **Herstellen** koppeling. De werkelijke `aemHeadlessClient.runPersistedQuery(..)` de vraag komt op lijn 34 voor. Een beetje later gaan we een wijziging aanbrengen in de manier waarop deze JSON-gegevens worden weergegeven, maar voorlopig zullen we deze alleen afdrukken op de `#output` div gebruiken `resultToPreTag(queryResult)` functie.
 
