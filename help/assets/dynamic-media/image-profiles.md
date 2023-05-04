@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: fa29504ba4abf68131d96a5a8ecbd62b7a9299f9
+source-git-commit: c15486fb3de73773fa7e255809ffaa36715cea05
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3383'
+ht-degree: 3%
 
 ---
 
@@ -72,25 +72,15 @@ Voor elke slimme uitsnijdgeneratie die u maakt, is extra verwerkingstijd nodig. 
 **Richtlijnen voor het definiëren van SmartCrop in een afbeeldingsprofiel**
 Adobe raadt de volgende richtlijnen en tips aan om het gebruik van Smart Crop onder controle te houden en de verwerkingstijd en opslag van gewassen te optimaliseren:
 
-* Maak geen dubbele slimme uitsnijdprofielen met dezelfde breedte- en hoogtewaarden.
+* Op afbeeldingselementen waarop een slimme uitsnijding wordt toegepast, moet minimaal 50 x 50 pixels of groter zijn.
+* In het ideale geval hebt u 10-15 slimme gewassen per afbeelding om de beeldverhoudingen en de verwerkingstijd te optimaliseren.
 * Noem slimme gewassen die op gewassenafmetingen worden gebaseerd, niet op eindgebruik. Dit helpt u te optimaliseren voor duplicaten waarbij één dimensie op meerdere pagina&#39;s wordt gebruikt.
 * Maak paginagewijs/middelengewijs afbeeldingsprofielen voor specifieke mappen en submappen in plaats van een algemeen profiel voor slimme uitsnijdingen dat wordt toegepast op alle mappen of alle elementen.
 * Een afbeeldingsprofiel dat u op submappen toepast, overschrijft een afbeeldingsprofiel dat op de map is toegepast.
-* Maak paginagewijs/middelengewijs afbeeldingsprofielen voor specifieke mappen en submappen in plaats van een algemeen profiel voor slimme uitsnijdingen dat wordt toegepast op alle mappen of alle elementen.
-* Een afbeeldingsprofiel dat u toepast op submappen, overschrijft een afbeeldingsprofiel dat is toegepast op de map.
-* In het ideale geval hebt u 10-15 slimme gewassen per afbeelding om de beeldverhoudingen en de verwerkingstijd te optimaliseren.
+* Een afbeeldingsprofiel dat dubbele slimme-uitsnijdafmetingen bevat, is niet toegestaan.
+* Dubbele benoemde afbeeldingsprofielen waarvoor opties voor slim uitsnijden zijn ingesteld, zijn niet toegestaan.
 
-<!--
-* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
-* An Image Profile that contains duplicate smart crop dimensions is not permitted. CQDOC-20087
-* Duplicate named Image Profiles that have smart crop options set are not permitted. CQDOC-20087
-* Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
-* An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
-* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time. -->
-<!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
-* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
-
-U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren of de snijinhoud in de verschillende doelresoluties te behouden.
+U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen: Pixeluitsnede en Slim uitsnijden. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren of de snijinhoud in de verschillende doelresoluties te behouden.
 
 >[!IMPORTANT]
 >
@@ -188,7 +178,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 #### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit eigenschappen {#applying-image-profiles-to-folders-from-properties}
 
-1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]**.
+1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]**.
 1. Naar een *map* (geen element) waarop u een afbeeldingsprofiel wilt toepassen.
 1. Voer afhankelijk van de weergave waarin u zich bevindt een van de volgende handelingen uit:
    * Houd de aanwijzer in de kaartweergave boven op de map en selecteer het vinkje om het te selecteren.
