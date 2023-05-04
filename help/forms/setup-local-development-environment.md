@@ -2,7 +2,7 @@
 title: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 description: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 2a2becb12b7724720821f895b0631d8d82e4cd79
+source-git-commit: a1b186fec2d6de0934ffebc96967d36a967c044e
 workflow-type: tm+mt
 source-wordcount: '3036'
 ht-degree: 1%
@@ -523,7 +523,7 @@ Als u Adaptive Forms Core Components wilt inschakelen voor uw as a Cloud Service
    `<artifactId>core-forms-components-core</artifactId>`
    `</dependency>`
 
-1. [De pijplijn uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). Na de succesvolle pijpleiding, worden de Adaptive Forms Core Componenten toegelaten voor uw milieu. Ook de adaptieve Forms-sjabloon (Core Componets) en het Canvas-thema worden toegevoegd aan de as a Cloud Service Forms-omgeving.
+1. [De pijplijn uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). Na de succesvolle pijpleiding, worden de Adaptive Forms Core Componenten toegelaten voor uw milieu. Ook de adaptieve Forms-sjabloon (Core Components) en het Canvas-thema worden toegevoegd aan uw as a Cloud Service Forms-omgeving.
 
 
 ## Upgrade uw lokale ontwikkelomgeving {#upgrade-your-local-development-environment}
