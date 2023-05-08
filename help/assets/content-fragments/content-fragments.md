@@ -2,9 +2,9 @@
 title: Werken met inhoudsfragmenten (elementen - inhoudsfragmenten)
 description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service inhoud kunt ontwerpen, maken, curven en gebruiken die onafhankelijk is van pagina's. Dit is ideaal voor het ontwerpen van pagina's en het leveren zonder kop.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 3c287425441db2eac19149a3080df333afff0e86
+source-git-commit: ca41657057211cb0736a866771253b166fa139b4
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2063'
 ht-degree: 3%
 
 ---
@@ -105,10 +105,6 @@ Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructu
 >[!NOTE]
 >
 >Zie [Koploos en AEM](/help/headless/introduction.md) voor een inleiding op Headless Development voor AEM Sites as a Cloud Service.
-
->[!NOTE]
->
->AEM ondersteunt ook het vertalen van fragmentinhoud.
 
 >[!NOTE]
 >
