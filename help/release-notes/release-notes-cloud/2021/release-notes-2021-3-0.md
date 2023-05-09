@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.3.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1297'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms heeft veel organisaties geholpen om in de loop der jaren geweldige ervaring op het gebied van instapweigering en inschrijving te bieden. Deze ervaringen hebben organisaties geholpen bij het omzetten van leads naar verkoop, het verwerken van vastgelegde klantgegevens, het leveren van responsieve ervaringen op basis van het profiel van het publiek en nog veel meer. AEM Forms is nu beschikbaar als cloudservice.
 
-U kunt [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) Als u digitale formulieren wilt maken, sluit u formulieren aan op bestaande gegevensbronnen, integreert u formulieren met Adobe Sign om e-handtekeningen aan formulieren toe te voegen, genereert u Document of Record (DoR) om verzonden formulieren als PDF-bestanden te archiveren. De service kan uw bestaande PDF forms ook converteren naar digitale formulieren. Naast de standaard AEM Forms-functies biedt de service verschillende mogelijkheden in de cloud, zoals automatisch schalen, geen downtime voor upgrades en ontwikkelomgeving in de cloud. Lezen [dit blogbericht](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) voor meer informatie over de mogelijkheden en functies van AEM Forms as a Cloud Service.
+U kunt [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) Als u digitale formulieren wilt maken, sluit u formulieren aan op bestaande gegevensbronnen, integreert u formulieren met Adobe Sign om e-handtekeningen aan formulieren toe te voegen, genereert u Document of Record (DoR) om verzonden formulieren als PDF-bestanden te archiveren. De service kan uw bestaande PDF forms ook converteren naar digitale formulieren. Naast de standaard AEM Forms-functies biedt de service verschillende mogelijkheden in de cloud, zoals automatisch schalen, geen downtime voor upgrades en ontwikkelomgeving in de cloud.
 
 U kunt een demo afspelen bij uw Adobe-medewerker of u aanmelden voor de service.
 

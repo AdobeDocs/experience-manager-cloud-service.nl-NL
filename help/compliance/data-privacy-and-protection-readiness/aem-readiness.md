@@ -2,9 +2,9 @@
 title: Regels voor gegevensbescherming en gegevensbescherming - Adobe Experience Manager as a Cloud Service-gereedheid
 description: Meer informatie over Adobe Experience Manager as a Cloud Service-ondersteuning voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuw AEM as a Cloud Service project moet worden uitgevoerd.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -94,6 +94,6 @@ Zie [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/hel
 Deze Adobe Experience Manager as a Cloud Service-integratie is mogelijk met services die geschikt zijn voor gegevensbescherming en privacy (bijvoorbeeld GDPR). Er worden geen persoonsgegevens van Adobe Target of Adobe Analytics in AEM opgeslagen met betrekking tot de integratie.
 Zie voor meer informatie:
 
-* [Adobe Target - Overzicht van privacy](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html)
+* [Adobe Target - Overzicht van privacy](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
 
 * [Adobe Analytics Data Privacy Workflow](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html)

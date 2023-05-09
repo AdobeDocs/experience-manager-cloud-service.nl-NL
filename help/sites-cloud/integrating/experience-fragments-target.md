@@ -2,9 +2,9 @@
 title: Exporteren van ervaringsfragmenten naar Adobe Target
 description: Exporteren van ervaringsfragmenten naar Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 6127d86ad174979506f36bb345129e4a130d35c8
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2250'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
 
       >[!NOTE]
       >
-      >het doelbibliotheekbestand, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html), is een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel gangbare webimplementaties als toepassingen die uit één pagina bestaan.
+      >het doelbibliotheekbestand, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), is een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel gangbare webimplementaties als toepassingen die uit één pagina bestaan.
       >
       >mbox.js is afgekeurd en wordt in een later stadium verwijderd.
       >

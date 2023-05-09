@@ -1,9 +1,10 @@
 ---
 title: Inhoudsfragmenten exporteren naar Adobe Target
 description: Inhoudsfragmenten exporteren naar Adobe Target
-source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
+exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -193,7 +194,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
 
       >[!NOTE]
       >
-      >het doelbibliotheekbestand, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html), is een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel gangbare webimplementaties als toepassingen die uit één pagina bestaan.
+      >het doelbibliotheekbestand, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), is een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel gangbare webimplementaties als toepassingen die uit één pagina bestaan.
       >
       >mbox.js is afgekeurd en wordt in een later stadium verwijderd.
       >

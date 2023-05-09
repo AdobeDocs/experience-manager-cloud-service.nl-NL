@@ -5,7 +5,7 @@ description: Revisie is een mechanisme waarmee revisoren verschillende taken voo
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -29,8 +29,8 @@ Met de [Stap toewijzen](https://experienceleague.adobe.com/docs/experience-manag
 1. Tikken ![settings_icon](assets/settings_icon.png) op de actiebalk. De **[!UICONTROL Assign Task]** wordt geopend.
 1. Openen [!UICONTROL Form and Document] tab en open [!UICONTROL Pre-populated] vervolgkeuzelijst en geef op:
 
-* Invoergegevensbestand selecteren met
-* Invoerbijlagen selecteren met
+   * Invoergegevensbestand selecteren met
+   * Invoerbijlagen selecteren met
 
    ![Revisiestap](/help/forms/assets/assigntask-review1.gif)
 

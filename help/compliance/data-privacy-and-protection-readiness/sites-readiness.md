@@ -2,10 +2,10 @@
 title: Regels voor gegevensbescherming en gegevensbescherming - gereedheid voor Adobe Experience Manager as a Cloud Service-sites
 description: Meer informatie over de ondersteuning van Adobe Experience Manager as a Cloud Service Sites voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuw AEM as a Cloud Service project moet worden uitgevoerd.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 1%
+source-wordcount: '1031'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Naar Weigeren:
 
 ## Analytics Foundation {#analytics-foundation}
 
-AEM Sites biedt optionele integratie met de Analytics Foundation, die gebruik maakt van functionaliteit binnen de Adobe Analytics On-demand Service.
+AEM Sites biedt een optionele integratie met de Analytics Foundation, die gebruik maakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
 Zie voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Analytics [Adobe Analytics en gegevensbescherming](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
@@ -81,7 +81,7 @@ Zie voor meer informatie over het beheer van verzoeken van betrokkenen met betre
 
 AEM Sites bevat een optionele integratie met Personalization Foundation by Target die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
 
-Zie voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Target [Adobe Target - Privacy- en algemene gegevensbeschermingsverordening](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Zie voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Target [Adobe Target - Privacy- en algemene gegevensbeschermingsverordening](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -168,7 +168,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
 
    * ContextHub biedt de volgende gegevenspersistentielagen:
 
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaardwaarde)
+      * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaard)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
@@ -198,7 +198,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
 
    * ContextHub biedt de volgende gegevenspersistentielagen:
 
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaardwaarde)
+      * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaard)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
@@ -243,7 +243,7 @@ Om de persistentie te ontruimen ContextHub:
 
 * Om alle persistentielagen te ontruimen ContextHub, moet de aangewezen code voor alle lagen worden geroepen:
 
-   * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaardwaarde)
+   * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaard)
    * `ContextHub.Utils.Persistence.Modes.SESSION`
    * `ContextHub.Utils.Persistence.Modes.COOKIE`
    * `ContextHub.Utils.Persistence.Modes.WINDOW`

@@ -6,13 +6,13 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
 hidefromtoc: true
-source-git-commit: f65c5241e1e61e5a0bd9981778939caa313de76a
+exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '3412'
+source-wordcount: '3360'
 ht-degree: 3%
 
 ---
-
 
 # Forms inschakelen met behulp van kerncomponenten en zonder hoofd
 
@@ -60,8 +60,7 @@ In deze les, vertrouwt u zich met het as a Cloud Service milieu van AEM Forms do
 
 ### Uitoefening
 
-1. Open uw browser en ga URL van het auteursmilieu van de Cloud Service in. Bijvoorbeeld:
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. Open uw browser en ga URL van het auteursmilieu van de Cloud Service in.
 
 1. Meld u aan bij de ontwikkelomgeving van de Cloud Service. De login geloofsbrieven voor uw auteursmilieu zullen met u tijdens het laboratorium worden gedeeld.
 
@@ -407,8 +406,8 @@ Laten we de uitvoering van regels in deze vorm zonder kop controleren:
 
 We brengen wijzigingen aan in het formulier op de server als een zakelijke gebruiker. Wijzigingen worden dan automatisch doorgevoerd in het formulier zonder kop.
 
-1. Open de AEM Forms-beheerinterface in de browser. Bijvoorbeeld: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
-
+1. Open de AEM Forms-beheerinterface in de browser.
+\
 1. Selecteer **registratie** formulier en klik op **Bewerken.** Het formulier wordt geopend in de editor voor adaptieve formulieren.
 
    ![](/help/forms/assets/screenshot2028118529.png)
@@ -513,7 +512,7 @@ U kunt als volgt het formulier weergeven dat wordt gehost op uw cloudservice-pub
 
 1. Stel de volgende waarden in voor de variabelen in het .env-bestand. Sla het bestand op nadat u de variabelen hebt bijgewerkt. Gebruik de **CTRL + S** overschakelen op een andere combinatie om het bestand op te slaan.
 
-   * **AEM_URL**: Geef de URL van de publicatieomgeving van de cloudservice op. Bijvoorbeeld: [https://publish-p105303-e986623.adobeaemcloud.com](https://publish-p105303-e986623.adobeaemcloud.com/)
+   * **AEM_URL**: Geef de URL van de publicatieomgeving van de cloudservice op.
 
    * **AEM_FORM_PATH**: Geef het pad op van het adaptieve formulier dat in de vorige les is gemaakt. Bijvoorbeeld: /content/forms/af/registration/
 
@@ -639,12 +638,10 @@ Nu u hebt geleerd hoe u adaptieve formulieren kunt maken en deze op meerdere kan
 
 * [Inleiding van de kerncomponenten van Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
 
-* [Adaptief formulier maken met behulp van kerncomponenten](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [Adaptief formulier maken met behulp van kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 * [Update styling voor kern op component-gebaseerde AF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=en)
 
 * [Hoofdloze adaptieve formulieren](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=en)
 
 * [Startkit voor Headless React gebruiken](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=en)
-
-

@@ -1,10 +1,10 @@
 ---
-title: Thema's maken en gebruiken
+title: Thema's maken en gebruiken om een adaptief formulier te stileren
 description: Met thema's kunt u een adaptief formulier stileren en een visuele identiteit geven. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '5357'
+source-wordcount: '5362'
 ht-degree: 0%
 
 ---

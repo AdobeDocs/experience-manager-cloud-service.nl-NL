@@ -1,11 +1,11 @@
 ---
-title: Document met record genereren voor adaptieve Forms
+title: Opnamedocument genereren voor Adaptive Forms
 description: Verklaart hoe u een malplaatje voor een Document van Verslag (DoR) voor Aangepast Forms kunt produceren.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 3adbad13a9b60c3a89e681cdf97c9af3f195fe70
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
 source-wordcount: '3007'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -162,7 +162,7 @@ When you select a form model, configure Document of Record using options availab
 
 In de volgende tabel worden de componenten Adaptief formulier en de corresponderende XFA-componenten beschreven en wordt aangegeven of deze in een Document of Record worden weergegeven.
 
-### Fields {#fields}
+### Velden {#fields}
 
 <table>
  <tbody>
@@ -170,7 +170,7 @@ In de volgende tabel worden de componenten Adaptief formulier en de corresponder
    <th>Component Adaptief formulier</th>
    <th>Overeenkomende XFA-component</th>
    <th>Standaard opgenomen in Document of Record Template?</th>
-   <th>Opmerkingen</th>
+   <th>Notities</th>
   </tr>
   <tr>
    <td>Knop</td>
@@ -221,8 +221,8 @@ In de volgende tabel worden de componenten Adaptief formulier en de corresponder
    <td> </td>
   </tr>
   <tr>
-   <td>Verzendknop</td>
-   <td><p>Knop Verzenden via e-mail</p> <p>Knop HTTP verzenden</p> </td>
+   <td>Verzenden, knop</td>
+   <td><p>Knop E-mail verzenden</p> <p>Knop HTTP verzenden</p> </td>
    <td>false</td>
    <td> </td>
   </tr>
@@ -242,7 +242,7 @@ In de volgende tabel worden de componenten Adaptief formulier en de corresponder
   <tr>
    <th>Component Adaptief formulier</th>
    <th>Overeenkomende XFA-component</th>
-   <th>Opmerkingen</th>
+   <th>Notities</th>
   </tr>
   <tr>
    <td>Deelvenster<br /> </td>
@@ -254,7 +254,7 @@ In de volgende tabel worden de componenten Adaptief formulier en de corresponder
 
 ### Statische componenten {#static-components}
 
-| Component Adaptief formulier | Overeenkomende XFA-component | Opmerkingen |
+| Component Adaptief formulier | Overeenkomende XFA-component | Notities |
 |---|---|---|
 | Afbeelding | Afbeelding | De componenten TextDraw en Afbeelding, zowel gebonden als niet gebonden, worden altijd in het Document of Record weergegeven voor een adaptief XSD-formulier, tenzij ze worden uitgesloten met de instellingen Document of Record. |
 | Tekst | Tekst |

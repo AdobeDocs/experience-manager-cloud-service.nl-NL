@@ -1,20 +1,20 @@
 ---
-title: Hoe maakt u een adaptief formulier?
+title: Een adaptief formulier maken
 description: Leer hoe u een adaptief formulier maakt met [!DNL Experience Manager Forms]. Adaptieve Forms zijn responsieve HTML5-formulieren die het verzamelen en verwerken van informatie stroomlijnen. Dig dieper in op het maken van een adaptief formulier op basis van een formuliergegevensmodel en een XML- of JSON-schema.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
+exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
 
-
 # Een adaptief formulier maken (kerncomponenten) {#creating-an-adaptive-form-core-components}
 
-Met Adaptieve Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een gebruiksvriendelijke wizard voor zakelijke gebruikers om snel een Adaptive Forms te maken. De wizard beschikt over een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken.
+Met Adaptive Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een gebruiksvriendelijke wizard voor zakelijke gebruikers om snel een Adaptive Forms te maken. De wizard beschikt over een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken.
 
 Voordat u begint, moet u meer weten over het type Forms-componenten waarover u beschikt:
 
