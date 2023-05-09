@@ -1,32 +1,41 @@
 ---
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 4aa4954f214545dcd768fdf955f1fc2f776da939
+exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
+source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 1%
+source-wordcount: '208'
+ht-degree: 2%
 
 ---
-
 
 # Opmerkingen bij de onderhoudsrelease {#maintenance-release-notes}
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 11835 {#release-11835}
+## Release 11873 {#release-11873}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 11835 samengevat, die op 19 april 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 11382.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 11873 samengevat, die op 3 mei 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 11835.
 
 Functie-activering voor deze onderhoudsrelease biedt u de volledige functieset. Zie de [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md) voor volledige informatie.
 
-### Opgeloste problemen {#fixed-issues-11835}
+### Verbeteringen {#enhancements}
 
-- SITES-12573 - GraphQL query&#39;s die variabelen binnen een filter gebruiken, zullen mislukken als er geen variabele is opgegeven. Werk de versie niet bij als je GraphQL met AEM as a Cloud Service wilt gebruiken.
-- SKYOPS-51970 - Identified regression of the FACT version used in the buildImage step, leading to un-matching user mapping.
-- GRANITE-44542 - Er zijn problemen gemeld voor klanten die geen pakketnotatietype hebben opgegeven (door een .content.xml op te geven met jcr:primaryType) voor mappen die in het pakketfilter zijn opgenomen. Hierdoor werden deze mappen behandeld als nt:folder, waardoor er in verschillende gevallen problemen ontstonden.
-- SKYOPS-56928 - Apache HTTPD-regressie kan 404 fouten veroorzaken. Als u deze problemen ondervindt, wordt het om veiligheidsredenen aanbevolen om terug te keren naar de vorige versie en om te voorkomen dat er gedurende die periode een pijplijn loopt.
+- SITES-1200 - API-verbeteringen doorzoeken met filteren op basis van tags
+- GRANITE-42939 - Voeg afbrekingsannotaties en waarschuwingen toe aan code op de server van de server
 
-### Ingesloten technologieën {#embedded-tech-11835}
+### Bekende problemen {#known-issues-11873}
+
+Geen.
+
+### Opgeloste problemen {#fixed-issues-11873}
+
+- SKYSI-1984/SKYOPS-53745 - Het probleem is opgelost met PublishPageRenderingErrorsHigh
+- GRANITE-4388 - Vaste de productiedaling na groot aantal DAM asset-writes op Mongo
+- SITES-11922 - Correctie van probleem waarbij de publicatie uit de voorvertoning werd ongedaan gemaakt en de synchronisatiestatus niet werd verwijderd
+- ACTIVA-21648 - Vaste machtigingskwestie met de functie Relate van activa
+
+### Ingesloten technologieën {#embedded-tech-11873}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
