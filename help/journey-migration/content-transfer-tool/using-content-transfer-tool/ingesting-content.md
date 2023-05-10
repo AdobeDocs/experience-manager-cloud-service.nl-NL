@@ -2,9 +2,9 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
+source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1753'
 ht-degree: 6%
 
 ---
@@ -59,7 +59,9 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Nadat de inname is voltooid, klikt u op de knop i) in de rechterbovenhoek van het scherm voor meer informatie over de innametaak.
+1. Klikken op **i)** in de rij voor meer informatie over de innametaak. U kunt de duur van elke stap van de Ingestie zien wanneer deze wordt uitgevoerd of voltooid door op **...** en vervolgens **Duur weergeven**. Uit de informatie over de extractie blijkt ook dat men zich realiseert wat er wordt ingeslikt.
+
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 

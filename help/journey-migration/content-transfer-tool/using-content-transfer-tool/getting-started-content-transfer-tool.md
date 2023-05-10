@@ -2,9 +2,9 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1406'
 ht-degree: 6%
 
 ---
@@ -91,6 +91,10 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
    Het volgende dialoogvenster wordt weergegeven. Een migratieset verloopt na een langdurige periode van inactiviteit. Nadat de waarschuwingen op de projectkaart en de rijen van de de lijstlijst van de migratiebaan voor een periode worden getoond, zal de migratiereeks verlopen en zijn gegevens zullen niet meer beschikbaar zijn. Controleren [Vervaldatum migratieset](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor meer informatie.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+
+   >[!NOTE]
+   >
+   >De naam moet dezelfde conventies van een AEM gebruiken, zodat deze geen van de volgende tekens kan bevatten: . / : [ ] | *
 
 1. De migratielijst wordt nu weergegeven in de lijstweergave. Klik op het symbool van de drie stippen (**...**) om het vervolgkeuzemenu te openen en op **Extractietoets kopiëren**. U hebt deze sleutel nodig tijdens de extractiefase. Kopieer deze extractietoets.
 

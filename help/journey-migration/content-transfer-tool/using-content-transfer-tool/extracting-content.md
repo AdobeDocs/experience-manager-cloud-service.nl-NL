@@ -2,10 +2,10 @@
 title: Inhoud uit bron extraheren
 description: Inhoud uit bron extraheren
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -49,13 +49,13 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   U kunt de voortgang van de extractiefase ook controleren vanuit Cloud Acceleration Manager door de pagina Content Transfer te bezoeken.
+   U kunt de voortgang van de extractiefase ook controleren vanuit Cloud Acceleration Manager door de pagina Content Transfer te bezoeken en deze meer in detail te bekijken door op **...** en vervolgens **Details weergeven**.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. Als de extractie is voltooid, controleert u de overige kolommen zoals **Bron** en **Paden** voor details van de migratieset die u hebt gevuld door op te klikken **...** en vervolgens **Details weergeven**.
+1. Als de extractie is voltooid, controleert u de overige kolommen zoals **Bron** en **Paden** voor details van de migratieset die u hebt gevuld door op te klikken **...** en vervolgens **Details weergeven** nadere gegevens te zien, met inbegrip van de duur van elke extractiestap. Bekijk dit dialoogvenster tijdens het uitnemen om te zien hoe de stappen vorderen.
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
 ## Extractie aanvullen {#top-up-extraction-process}
