@@ -3,9 +3,9 @@ title: Meldingscentrum
 description: Gebruikmaken van het kennisgevingscentrum om gemakkelijk actie te ondernemen tegen incidenten en andere belangrijke informatie
 hidefromtoc: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: b72d22e8788c04ab4faa3616a4a0ce5e6d8ce991
+source-git-commit: 283493187142e1aeaaf272818bb9b7921841ed67
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,9 @@ Van het Centrum van het Bericht, kunt u een specifiek programma en een milieu se
 Voer de onderstaande stappen uit om ontvangende meldingen te configureren:
 
 1. De volgende productprofielen maken, zoals beschreven [in dit artikel](/help/journey-onboarding/notification-profiles.md), ook door de juiste Adobe-id&#39;s van uw organisatie toe te wijzen aan die profielen. Hierdoor kan een beheerder bepalen welke gebruikers in aanmerking komen om deze meldingen te ontvangen.
-1. Elke toegewezen gebruiker die in de vorige stap wordt toegewezen kan vormen hoe zij hun berichten zouden willen ontvangen. Op de [Pagina met voorkeuren voor Experience Cloud](https://experience.adobe.com/preferences/notification-section), zorgt u ervoor dat het abonnement op de Experience Manager is ingeschakeld en **Operationele incidenten** en **Proactieve aanbevelingen** selectievakjes zijn ingeschakeld. Daarnaast wordt aangeraden de sectie E-mails in te stellen op **Directe meldingen** dus worden meldingen onmiddellijk ontvangen wanneer zich een incident voordoet.
+1. Elke toegewezen gebruiker die in de vorige stap wordt toegewezen kan vormen hoe zij hun berichten zouden willen ontvangen. Op de [Pagina met voorkeuren voor Experience Cloud](https://experience.adobe.com/preferences/notification-section), zorgt u ervoor dat het abonnement op de Experience Manager is ingeschakeld en **Operationele incidenten** en **Proactieve aanbevelingen** selectievakjes zijn ingeschakeld voor zowel de kolommen in de app als de e-mailkolommen (zie onderstaande afbeelding). Daarnaast wordt aangeraden de sectie E-mails in te stellen op **Directe meldingen** dus worden meldingen onmiddellijk ontvangen wanneer zich een incident voordoet.
+
+![Abonnementen configureren](/help/operations/assets/configure-subscriptions.png)
 
 >[!NOTE]
 >Meldingen functioneren op organisatieniveau, zodat abonnees meldingen ontvangen voor alle programma&#39;s en omgevingen binnen die programma&#39;s.
