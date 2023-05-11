@@ -3,9 +3,9 @@ title: Configureer de Rich Text Editor naar de auteur van inhoud in [!DNL Adobe 
 description: Rich Text Editor configureren voor het schrijven van inhoud in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1876'
 ht-degree: 0%
 
 ---
@@ -95,14 +95,14 @@ In de volgende tabel worden de huidige plug-ins weergegeven:
 | Plug-in-id | functies | Beschrijving |
 |--- |--- |--- |
 | bewerken | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [De drie plakmodi knippen, kopiëren en plakken](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`, `replace` | Zoeken en vervangen. |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [Basistekstopmaak](configure-rich-text-editor-plug-ins.md#textstyles). |
-| [afbeelding](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Inhoudszoeker). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
-| [toetsen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | Zie voor het definiëren van deze waarde [tabgrootte](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | Alinea-uitlijning. |
-| [koppelingen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [Hyperlinks en ankers](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [lijsten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | Deze insteekmodule bestuurt beide [inspringing en lijsten](configure-rich-text-editor-plug-ins.md#indentmargin); inclusief geneste lijsten. |
-| [misverstanden](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | Met diverse gereedschappen kunnen auteurs items invoeren [speciale tekens](configure-rich-text-editor-plug-ins.md#spchar) of bewerk de HTML-bron. U kunt ook een [bereik van speciale tekens](configure-rich-text-editor-plug-ins.md#definerangechar) als u uw eigen lijst wilt bepalen. |
+| findreplace | `find`, `replace` | Zoeken en vervangen. |
+| format | `bold`, `italic`, `underline` | [Basistekstopmaak](configure-rich-text-editor-plug-ins.md#textstyles). |
+| afbeelding | `image` | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Inhoudszoeker). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
+| toetsen | - | Zie voor het definiëren van deze waarde [tabgrootte](configure-rich-text-editor-plug-ins.md#tabsize). |
+| uitvullen | `justifyleft`, `justifycenter`, `justifyright` | Alinea-uitlijning. |
+| koppelingen | `modifylink`, `unlink`, `anchor` | [Hyperlinks en ankers](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| lijsten | `ordered`, `unordered`, `indent`, `outdent` | Deze insteekmodule bestuurt beide [inspringing en lijsten](configure-rich-text-editor-plug-ins.md#indentmargin); inclusief geneste lijsten. |
+| misverstanden | `specialchars`, `sourceedit` | Met diverse gereedschappen kunnen auteurs items invoeren [speciale tekens](configure-rich-text-editor-plug-ins.md#spchar) of bewerk de HTML-bron. U kunt ook een [bereik van speciale tekens](configure-rich-text-editor-plug-ins.md#definerangechar) als u uw eigen lijst wilt bepalen. |
 | Paraformat | `paraformat` | De standaardindelingen voor alinea&#39;s zijn Alinea, Kop 1, Kop 2 en Kop 3 (`<p>`, `<h1>`, `<h2>`, en `<h3>`). U kunt [meer alineaopmaak toevoegen](configure-rich-text-editor-plug-ins.md#paraformats) of breid de lijst uit. |
 | spellingcontrole | `checktext` | [Spellingcontrole taalbewust](configure-rich-text-editor-plug-ins.md#adddict). |
 | stijlen | `styles` | Ondersteuning voor opmaak met behulp van een CSS-klasse. [Nieuwe tekststijlen toevoegen](configure-rich-text-editor-plug-ins.md#textstyles) als u uw eigen reeks stijlen wilt toevoegen (of uitbreiden) voor gebruik met tekst. |
