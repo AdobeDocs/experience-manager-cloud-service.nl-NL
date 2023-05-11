@@ -2,9 +2,9 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
+source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
 workflow-type: tm+mt
-source-wordcount: '2238'
+source-wordcount: '2305'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,9 @@ Het testen van de gebruikersinterface van de douane is een facultatieve eigensch
 
 AEM biedt een geïntegreerde suite [Kwaliteitspates van Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) voor vloeiende updates van aangepaste toepassingen. Met name ondersteunen IT-testpoorten al het maken en automatiseren van aangepaste tests met behulp van AEM API&#39;s.
 
-De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd). Bovendien, kan een UI testproject gemakkelijk door te gebruiken worden geproduceerd [het AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
+De tests UI worden verpakt in een beeld van de Docker om een brede keus in taal en kaders (zoals Cypress.IO, Selenium, Java en Maven, en Javascript) toe te staan. Bovendien, kan een UI testproject gemakkelijk door te gebruiken worden geproduceerd [het AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+
+Adobe raadt het gebruik van Cypress.IO aan, omdat het in real time opnieuw laden en automatisch wachten aanbiedt, wat tijd bespaart en de productiviteit tijdens het testen verbetert. Cypress.IO verstrekt ook een eenvoudige en intuïtieve syntaxis, die het gemakkelijk maken om te leren en te gebruiken, zelfs voor degenen die nieuw aan het testen zijn.
 
 UI-tests worden uitgevoerd als onderdeel van een specifieke kwaliteitspoort voor elke Cloud Manager-pijplijn met een [**Aangepaste UI-tests** stap](/help/implementing/cloud-manager/deploy-code.md) in [productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) of optioneel [niet-productieleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten laten fouten toe om worden ontdekt en worden gemeld.
 
@@ -45,7 +47,7 @@ In deze sectie worden de stappen beschreven die zijn vereist voor het instellen 
 
       >[!NOTE]
       >
-      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de meest recente versie genereren met de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
+      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
    * Gebruik voor Java en WebDriver de voorbeeldcode van het dialoogvenster [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
@@ -203,20 +205,20 @@ Deze sectie beschrijft de overeenkomsten die het beeld van de Docker dat uw test
 
 ### Omgevingsvariabelen {#environment-variables}
 
-De volgende omgevingsvariabelen worden tijdens runtime aan de Docker-afbeelding doorgegeven.
+De volgende omgevingsvariabelen worden bij uitvoering aan de Docker-afbeelding doorgegeven, afhankelijk van uw framework.
 
-| Variabele | Voorbeelden | Beschrijving |
-|---|---|---|
-| `SELENIUM_BASE_URL` | `http://my-ip:4444` | De URL van de seleniumserver |
-| `SELENIUM_BROWSER` | `chrome` | De browserimplementatie die wordt gebruikt door de seleniumserver |
-| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | De URL van de AEM instantie van de auteur |
-| `AEM_AUTHOR_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt om u aan te melden bij de instantie van de AEM auteur |
-| `AEM_AUTHOR_PASSWORD` | `admin` | Het wachtwoord om u aan te melden bij de AEM |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | De URL van de AEM-publicatie-instantie |
-| `AEM_PUBLISH_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt om u aan te melden bij de AEM-publicatie-instantie |
-| `AEM_PUBLISH_PASSWORD` | `admin` | Het wachtwoord voor aanmelding bij de AEM-publicatie-instantie |
-| `REPORTS_PATH` | `/usr/src/app/reports` | Het pad waar het XML-rapport van de testresultaten moet worden opgeslagen |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | De URL waarnaar het bestand moet worden geüpload om het toegankelijk te maken voor Selenium |
+| Variabele | Voorbeelden | Beschrijving | Testframework |
+|---|---|---|---|
+| `SELENIUM_BASE_URL` | `http://my-ip:4444` | De URL van de seleniumserver | Alleen selenium |
+| `SELENIUM_BROWSER` | `chrome` | De browserimplementatie die wordt gebruikt door de seleniumserver | Alleen selenium |
+| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | De URL van de AEM instantie van de auteur | Alles |
+| `AEM_AUTHOR_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt om u aan te melden bij de instantie van de AEM auteur | Alles |
+| `AEM_AUTHOR_PASSWORD` | `admin` | Het wachtwoord om u aan te melden bij de AEM | Alles |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | De URL van de AEM-publicatie-instantie | Alles |
+| `AEM_PUBLISH_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt om u aan te melden bij de AEM-publicatie-instantie | Alles |
+| `AEM_PUBLISH_PASSWORD` | `admin` | Het wachtwoord voor aanmelding bij de AEM-publicatie-instantie | Alles |
+| `REPORTS_PATH` | `/usr/src/app/reports` | Het pad waar het XML-rapport van de testresultaten moet worden opgeslagen | Alles |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | De URL waarnaar het bestand moet worden geüpload om het toegankelijk te maken voor het testframework | Alles |
 
 De Adobe testmonsters verstrekken helperfuncties om tot de configuratieparameters toegang te hebben:
 
@@ -224,6 +226,10 @@ De Adobe testmonsters verstrekken helperfuncties om tot de configuratieparameter
 * Java: Zie de [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
 
 ### Wachten op klaar voor selenium {#waiting-for-selenium}
+
+>[!NOTE]
+>
+>Dit punt is alleen van toepassing wanneer Selenium de gekozen testinfrastructuur is.
 
 Alvorens de tests beginnen, is het de verantwoordelijkheid van het beeld van de Docker om ervoor te zorgen dat de server van Selenium in gebruik is. Wachten op de seleniumservice is een proces in twee stappen.
 
@@ -310,14 +316,12 @@ of tegen een werkelijk AEM as a Cloud Service instantie.
 
    ```shell
    mvn verify -Pui-tests-local-execution \
-   -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
-   -DAEM_AUTHOR_USERNAME=<user> \
-   -DAEM_AUTHOR_PASSWORD=<password> \
-   -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
-   -DAEM_PUBLISH_USERNAME=<user> \
-   -DAEM_PUBLISH_PASSWORD=<password> \
-   -DHEADLESS_BROWSER=true \
-   -DSELENIUM_BROWSER=chrome
+    -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_AUTHOR_USERNAME=<user> \
+    -DAEM_AUTHOR_PASSWORD=<password> \
+    -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_PUBLISH_USERNAME=<user> \
+    -DAEM_PUBLISH_PASSWORD=<password> \
    ```
 
 >[!NOTE]

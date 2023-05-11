@@ -3,9 +3,9 @@ title: Niet-productiepijpleidingen configureren
 description: Leer hoe te om niet-productiepijpleidingen te vormen om de kwaliteit van uw code te testen alvorens aan productiemilieu's op te stellen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 0dd1cfba81eb8dfab3e002333868ec79ebc5e96c
+source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1369'
 ht-degree: 0%
 
 ---
@@ -94,12 +94,6 @@ Om de configuratie van de front-end code non-production pijpleiding te beëindig
 De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managing-pipelines.md) op de **Pijpleidingen** kaart op **Programmaoverzicht** pagina.
 
 ### Volledige stapelcode {#full-stack-code}
-
->[!NOTE]
->
->* Deze functie is nog niet algemeen beschikbaar. Naar verwachting zal dit in juni 2023 gebeuren.
->* Neem contact op met uw Adobe als u de functie wilt uitproberen en feedback voor verbetering wilt geven.
-
 
 Een full-stack codepijpleiding stelt gelijktijdig achterste en front-end codebouwstijlen op die één of meerdere AEM servertoepassingen samen met configuratie HTTPD/Dispatcher bevatten. Zie het document [CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) voor meer informatie over dit type pijpleiding .
 
