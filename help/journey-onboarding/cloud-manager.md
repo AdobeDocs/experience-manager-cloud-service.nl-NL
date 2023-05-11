@@ -3,9 +3,9 @@ title: Cloud Manager openen
 description: Leer hoe u toegang krijgt tot Cloud Manager zodat u uw projectbronnen kunt instellen.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 225b34f081a942d67dfc1f6faeb09763ea9fde03
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,8 @@ U moet uw instapreis voortzetten door het document opnieuw te bekijken [Een prog
 
 ## Aanvullende bronnen {#additional-resources}
 
-Volg de aanvullende bronnen voor meer informatie over:
+Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
 * [Inleiding tot Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - Meer informatie over Cloud Manager, Cloud Manager-programma&#39;s en omgevingen.
 * [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md) - Leer hoe AEM as a Cloud Service teams en productprofielen toegang tot uw gelicentieerde Adobe-oplossingen kunnen verlenen en beperken.
+* [AEM Champion Tips and Tricks - Cloud Manager-interface](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md) - Bekijk deze video voor een overzicht van de gebruikersinterface van Cloud Manager van een AEM kampioen.

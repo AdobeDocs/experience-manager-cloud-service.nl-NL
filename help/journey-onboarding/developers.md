@@ -4,9 +4,9 @@ description: Zodra zij de systeembeheerder opstelling de noodzakelijke wolkenmid
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -143,6 +143,8 @@ Als u geïnteresseerd bent in de manier waarop auteurs van inhoud toegang krijge
 >Nu je aan boord bent, kun je [Leer hoe te om de AEMInvoegtoepassing van de Demo van de Verwijzing gemakkelijk toe te voegen](/help/journey-sites/demos-add-on/overview.md) in een sandbox-omgeving met minimale AEM configuratie en de krachtige functies van AEM kunnen testen met uitgebreide voorbeelden op basis van best practices.
 
 ## Aanvullende bronnen {#additional-resources}
+
+Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
 * [Toegang tot opslagplaatsen](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Leer hoe u uw git-opslagplaats kunt openen en beheren met behulp van het beheer van een git-account voor zelfbediening vanuit Cloud Manager.
 * [Git gebruiken met Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Leer hoe u de git-opslagruimten van Cloud Manager kunt gebruiken en hoe u uw eigen, door de klant beheerde git-opslagplaats op locatie kunt integreren met Cloud Manager.

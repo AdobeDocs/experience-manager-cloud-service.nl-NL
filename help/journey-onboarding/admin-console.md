@@ -2,9 +2,9 @@
 title: De Admin Console openen
 description: Zodra u de voorbereiding noodzakelijk aan het aan boord gaan en de grondbeginselen van structuur AEMaaCS begrijpt, bent u bereid om in de Admin Console voor het eerst te registreren.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1111'
 ht-degree: 0%
 
 ---
@@ -104,6 +104,8 @@ Nu u dit document hebt gelezen, moet u:
 U bent klaar om uw instapreis voort te zetten door te leren hoe te [teamleden toewijzen aan productprofielen van Cloud Manager](assign-profiles-cloud-manager.md) zodat uw collega&#39;s ook toegang hebben tot AEMaaCS.
 
 ## Aanvullende bronnen {#additional-resources}
+
+Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
 * [Overzicht van Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) - Een uitgebreid overzicht van de Admin Console
 * [Adobe ID maken of bijwerken](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Leer hoe u een Adobe ID maakt, wijzigt en meerdere Adobe-id&#39;s beheert.

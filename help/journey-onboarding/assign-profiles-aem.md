@@ -4,9 +4,9 @@ description: Zodra u uw wolkenmiddelen hebt gevormd, zult u uw teamtoegang tot A
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: fd0716a95d66908e215ed44bc773ed3c26e0382b
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,8 @@ Als u echter beter wilt begrijpen hoe auteurs en ontwikkelaars het systeem gebru
 * [AEM](aem-users.md) - Waar leert u hoe u toegang krijgt tot de AEM omgeving waar u inhoud kunt gaan maken.
 
 ## Aanvullende bronnen {#additional-resources}
+
+Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
 * [Producten en gebruikerstoegang in Admin Console beheren](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Leer hoe u de Admin Console kunt gebruiken voor het beheer van de toegang tot het gebruik.
 * [Toegang tot AEM doorlopen configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en) - Bekijk deze verkorte analyse om meer te leren over het configureren van Adobe IMS-gebruikers, gebruikersgroepen en productprofielen in de Admin Console.

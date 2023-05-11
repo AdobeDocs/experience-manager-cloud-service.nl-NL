@@ -3,9 +3,9 @@ title: Omgevingen maken
 description: Leer hoe u Cloud Manager kunt gebruiken om uw eerste omgevingen te maken.
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -30,12 +30,13 @@ De omgevingen bevinden zich onder de programma&#39;s in de hiërarchie van Cloud
 
 Als u het voorbeeld van de theoretische Onderneming van het WKND Reizen en van het Avontuur herinnert, die een huurder is die zich op reisgerelateerde media concentreert, zouden zij twee programma&#39;s kunnen hebben: één Sites-programma voor de afdeling WKND Magazine en één Assets-programma voor de afdeling WKND Media. Elk programma zou waarschijnlijk een paar milieu&#39;s zoals één productiemilieu hebben die het daadwerkelijke verkeer van de plaats en één ontwikkelomgeving voor het testen van nieuwe toepassingscode dienen.
 
-Er zijn drie verschillende typen omgevingen:
+Er zijn vier verschillende typen omgevingen:
 
 * **Productie en fase** - De productie- en testomgevingen zijn als twee beschikbaar en worden respectievelijk voor productie- en testdoeleinden gebruikt.
 * **Ontwikkeling** - Er kan een ontwikkelomgeving worden gecreëerd voor zowel ontwikkelings- als testdoeleinden en deze kan alleen worden geassocieerd met niet-productiepijpleidingen.
+* **Snelle ontwikkeling** - Een snelle ontwikkelomgeving (RDE) stelt een ontwikkelaar in staat snel wijzigingen te implementeren en te evalueren, waardoor de tijd die nodig is om functies te testen waarvan is aangetoond dat ze werken in een lokale ontwikkelomgeving, tot een minimum wordt beperkt.
 
-Voor deze instapreis creëert u een ontwikkelomgeving.
+In het kader van deze instapreis creëert u, om u zo snel mogelijk aan de slag te krijgen, een ontwikkelomgeving die u kunt gebruiken om de mogelijkheden van AEM as a Cloud Service te verkennen.
 
 ## Omgevingen maken {#creating-environments}
 
@@ -81,7 +82,9 @@ Daarom moet u de instapreis voortzetten door het document opnieuw te bekijken [T
 
 ## Aanvullende bronnen {#additional-resources}
 
-Volg de aanvullende bronnen voor meer informatie over:
+Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
 * [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) - Meer informatie over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project
 * [Adobe Cloud Manager gebruiken - omgevingen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) - Cloud Manager-omgevingen bestaan uit AEM services voor schrijven, publiceren en verzenden. Leer hoe de verschillende milieu&#39;s rollen steunen en kunnen worden betrokken gebruikend verschillende CI/CD pijpleidingen.
+* [AEM Champion Tips en Tricks - Cloud Manager-omgevingstypen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Bekijk deze video voor een overzicht van de omgevingstypen van Cloud Manager van een AEM kampioen.
+* [Snelle ontwikkelomgevingen](/help/implementing/developing/introduction/rapid-development-environments.md) - Zie deze documentatie voor details over hoe te om RDE te gebruiken
