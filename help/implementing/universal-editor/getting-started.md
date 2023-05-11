@@ -1,13 +1,13 @@
 ---
 title: Aan de slag met de Universal Editor in AEM
 description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
-source-git-commit: 031117db4154dc605ae8b0c95f87b829bb5cacd8
+exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
+source-git-commit: a933073346e6b7c3b4256269f5796a64a6dfbfa8
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met de Universal Editor in AEM {#getting-started}
 
@@ -109,7 +109,7 @@ De instrumentatiekenmerken die aan de pagina worden toegevoegd, bestaan voorname
 Verbindingen die in de app worden gebruikt, worden opgeslagen als `<meta>` -tags in de pagina&#39;s `<head>`.
 
 ```html
-<meta name="urn:auecon:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>` - Dit is een korte naam die opnieuw wordt gebruikt in het document om de verbinding te identificeren. Bijv. `aemconnection`
