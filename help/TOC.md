@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
+source-git-commit: 6e451739a2d2f9cd045824658fe0f3c5bd1d245b
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4068'
 ht-degree: 21%
 
 ---
@@ -888,6 +888,7 @@ ht-degree: 21%
    + Gereedschappen voor ontwikkelaars {#developer-tools}
       + [Ontwerpmodus](/help/implementing/developing/tools/developer-mode.md)
       + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
+      + [Inhoud kopiëren](/help/implementing/developing/tools/content-copy.md)
       + [Inhoudspakket gemaakt met insteekmodule](/help/implementing/developing/tools/maven-plugin.md)
       + [AEM](/help/implementing/developing/tools/repo-tool.md)
       + [CRXDE Lite gebruiken](/help/implementing/developing/tools/crxde.md)
