@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
+source-git-commit: 3823b9369c612058998e265346b3f727001aef4b
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '238'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,10 @@ Functie-activering voor deze onderhoudsrelease biedt u de volledige functieset. 
 
 ### Bekende problemen {#known-issues-11873}
 
-Geen.
+- SITES-13253 - RecursionTooDeepException in Core Components v2.22.6
+- SITES-13256 - Core WCM Teaser geconfigureerd met speciale URL-einden, pagina weergeven
+- GRANITE-45462 - Configuratie van meerdere regio&#39;s voor communicatie
+- GRANITE-45562 - Problemen met combinatie van afbeeldingen die 200 in plaats van 404 retourneren
 
 ### Opgeloste problemen {#fixed-issues-11873}
 
