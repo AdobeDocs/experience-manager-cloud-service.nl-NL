@@ -3,9 +3,9 @@ title: Een programma maken
 description: Leer hoe u Cloud Manager gebruikt om uw eerste programma te maken.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -51,11 +51,15 @@ Ga als volgt te werk om een sandboxprogramma te maken.
 
 1. Klik op de landingspagina van Cloud Manager op **Programma toevoegen** in de rechterbovenhoek van het scherm.
 
-   ![Openingspagina van Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![Openingspagina van Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. Selecteer in de wizard Programma maken de optie **Een sandbox instellen**, geef een naam voor het programma op en klik op **Maken**.
+1. Selecteer in de wizard Programma maken de optie **Een sandbox instellen** en geef een programmanaam op en tik of klik op **Doorgaan**.
 
    ![Programma-type maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+
+1. In de **Sandbox instellen** kunt u kiezen welke oplossingen u wilt inschakelen in uw sandboxprogramma. De **Sites** en **Activa** oplossingen worden altijd opgenomen in sandboxprogramma&#39;s en worden automatisch geselecteerd. Dat is voldoende voor ons voorbeeld van instapweigering. Klikken **Maken**.
+
+   ![Selectie van oplossing](assets/set-up-sandbox-onboarding.png)
 
 Naarmate het installatieproces vordert, wordt op de bestemmingspagina een nieuwe sandbox-programmakaart met een statusindicator weergegeven.
 

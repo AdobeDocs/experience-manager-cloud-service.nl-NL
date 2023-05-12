@@ -2,9 +2,9 @@
 title: Sandbox-programma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen sandboxprogramma te maken voor training, demo, POC of andere niet-productiedoeleinden.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,31 @@ Ga als volgt te werk om een sandboxprogramma te maken.
 
 1. Klik op de landingspagina van Cloud Manager op **Programma toevoegen** in de rechterbovenhoek van het scherm.
 
-   ![Openingspagina van Cloud Manager](assets/first_timelogin1.png)
+   ![Openingspagina van Cloud Manager](assets/cloud-manager-my-programs.png)
 
-1. Selecteer in de wizard Programma maken de optie **Een sandbox instellen**, geef een naam voor het programma op en klik op **Maken**.
+1. Selecteer in de wizard Programma maken de optie **Een sandbox instellen** en geef een programmanaam op.
 
    ![Programma-type maken](assets/create-sandbox.png)
 
+1. U kunt desgewenst een afbeelding aan het programma toevoegen door een afbeeldingsbestand naar het **Een programmaafbeelding toevoegen** Selecteer een afbeelding in een bestandenbrowser of klik erop. Tik of klik op **Doorgaan**.
+
+   * De afbeelding fungeert alleen als de tegel in het venster met het programmaoverzicht en helpt het programma te identificeren.
+
+1. In de **Sandbox instellen** kiest u welke oplossingen u wilt inschakelen in uw sandboxprogramma door de opties in het dialoogvenster **Oplossingen en invoegtoepassingen** tabel.
+
+   * Gebruik de chevrons naast de oplossingsnamen om extra, facultatieve toe:voegen-ons voor de oplossingen te tonen.
+
+   * De **Sites** en **Activa** -oplossingen worden altijd opgenomen in sandboxprogramma&#39;s en kunnen niet worden uitgeschakeld.
+
+   ![Oplossingen en invoegtoepassingen selecteren voor een sandbox](assets/sandbox-solutions-add-ons.png)
+
+1. Tik op **Maken**.
+
 Naarmate het installatieproces vordert, wordt op de bestemmingspagina een nieuwe sandbox-programmakaart met een statusindicator weergegeven.
 
-![Sandbox-ontwerp van overzichtspagina](assets/program-create-setupdemo2.png)
+![Sandbox-ontwerp van overzichtspagina](assets/sandbox-setup.png)
 
-## Toegang tot uw sandbox {#access}
+## Toegang tot sandbox {#access}
 
 U kunt de details van de configuratie van uw sandbox bekijken en de omgeving openen (zodra deze beschikbaar is) door de overzichtspagina van het programma te bekijken.
 

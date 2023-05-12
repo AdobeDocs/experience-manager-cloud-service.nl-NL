@@ -2,9 +2,9 @@
 title: Programma's bewerken
 description: Leer hoe u uw productie- en sandboxprogramma's kunt bewerken om de opties aan te passen nadat u deze hebt gemaakt.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 3e2635ff34f66c9f7504799204091ef921ccd860
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ Voer de volgende stappen uit om een programma te bewerken.
    ![Instellingen voor go-live bewerken](assets/edit-program-go-live.png)
 
    * Deze datum is alleen bedoeld voor informatief gebruik en activeert de widget Go Live op de overzichtspagina van het programma om op tijd koppelingen naar AEM as a Cloud Service documentatie over best practices te bieden, zodat deze op de juiste manier kunnen worden afgestemd op uw reis en een geslaagde en vloeiende Go Live-ervaring tot resultaat hebben.
+   * Dit tabblad is niet beschikbaar voor sandboxprogramma&#39;s.
 
 1. Klikken op **Bijwerken** om uw wijzigingen in het programma op te slaan.
 

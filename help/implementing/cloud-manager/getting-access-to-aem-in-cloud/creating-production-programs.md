@@ -2,9 +2,9 @@
 title: Productieprogramma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen productieprogramma te maken voor het hosten van liveverkeer.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -16,14 +16,6 @@ Een productieprogramma is bedoeld voor een gebruiker die vertrouwd is met AEM en
 
 Meer informatie over programmatypen in het document [Het begrip van Programma en de Types van Programma.](program-types.md)
 
-## Video-Tutorials {#video-tutorials}
-
-U kunt deze twee zelfstudievideo&#39;s bekijken om te leren hoe u een programma maakt in Cloud Manager of [Volg onze gedocumenteerde instructies.](#create)
-
->[!VIDEO](https://video.tv.adobe.com/v/334953)
-
->[!VIDEO](https://video.tv.adobe.com/v/334954)
-
 ## Een productieprogramma maken {#create}
 
 Ga als volgt te werk om een productieprogramma te maken.
@@ -34,13 +26,11 @@ Ga als volgt te werk om een productieprogramma te maken.
 
    ![Stationspagina van Cloud Manager](assets/log-in.png)
 
-1. Selecteren **Instellen voor productie** in de wizard Programma maken om een productieprogramma te maken.
-
-   1. U kunt de standaardnaam van het programma accepteren of bewerken.
-   1. U kunt desgewenst een miniatuurafbeelding slepen en neerzetten om uw programma te identificeren.
-   1. Tik of klik op **Doorgaan**.
+1. Selecteren **Instellen voor productie** in de wizard Programma maken om een productieprogramma te maken en een programmanaam op te geven.
 
    ![Programmawizard maken](assets/create-production-program.png)
+
+1. U kunt desgewenst een afbeelding aan het programma toevoegen door een afbeeldingsbestand naar het **Een programmaafbeelding toevoegen** Selecteer een afbeelding in een bestandenbrowser of klik erop. Tik of klik op **Doorgaan**.
 
 1. Als u verbeterde beveiligingsrechten hebt, kunt u **Uitgebreide beveiliging** biedt de optie om **Uitgebreide beveiliging inschakelen** voor uw productieprogramma. Controleer indien nodig de optie om de uitgebreide beveiliging in te schakelen en tik of klik op **Doorgaan**.
 
@@ -51,6 +41,7 @@ Ga als volgt te werk om een productieprogramma te maken.
 
 1. Op de **Oplossingen en invoegtoepassingen** selecteert u de oplossingen die u in het programma wilt opnemen.
 
+   * Als u niet zeker weet of u een of meerdere programma&#39;s nodig hebt voor de verschillende beschikbare oplossingen, selecteert u de meest interessante oplossing. U kunt aanvullende oplossingen activeren door [bewerken van het programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later. Zie de [Inleiding tot het document Productieprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer aanbevelingen voor programmaopstelling.
    * Als u **Uitgebreide beveiliging inschakelen** eerder, zult u worden toegestaan om slechts zo vele oplossingen te selecteren waarvoor de aanspraken van HIPAA beschikbaar zijn.
 
    ![Oplossingen selecteren](assets/setup-prod-select.png)
