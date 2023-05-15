@@ -4,7 +4,7 @@ description: Gebruik het model Inhoudsfragment dat u eerder hebt gemaakt om inho
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 73ff4edc591e64e797e14d00d6f87759e3f1301a
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Nadat u het nieuwe inhoudsfragment hebt opgeslagen en geopend, wordt de editor v
 
 1. In de inhoudsfragmenteditor worden de velden weergegeven die u in het geselecteerde model hebt gedefinieerd. Hier kunt u inhoud toevoegen aan elk veld om het inhoudsfragment te voltooien. Uw voortgang wordt automatisch opgeslagen.
 
-1. Een **Titel** voor uw fragment door `Tuscan adventure`.
+1. Een **Titel** voor uw fragment door `Tuscan Adventure`.
 
 1. Een **Beschrijving** voor het fragment door in de volgende tekst te plakken.
 

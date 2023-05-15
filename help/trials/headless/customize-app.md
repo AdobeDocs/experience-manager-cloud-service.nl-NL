@@ -4,9 +4,9 @@ description: Gebruik een voorbeeld van een React-app om te leren hoe u inhoud ku
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="De editor voor inhoudsfragmenten starten"
->abstract="Uw proefversie zonder AEM is geïntegreerd met een voorbeeldtoepassing React, zodat u kunt zien hoe eenvoudig het voor iedereen is om inhoud onafhankelijk te beheren zonder ontwikkelingstijd.<br><br>Start deze module op een nieuw tabblad door hieronder te klikken en volg deze handleiding."
+>abstract="Laten we nu eens bekijken hoe creatie van inhoud zonder kop werkt. Uw proefversie zonder AEM is geïntegreerd met een voorbeeldtoepassing React, zodat u kunt zien hoe eenvoudig het voor iedereen is om inhoud onafhankelijk te beheren zonder ontwikkelingstijd.<br><br>Start deze module op een nieuw tabblad door hieronder te klikken en volg deze handleiding."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
