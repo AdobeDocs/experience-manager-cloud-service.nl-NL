@@ -3,16 +3,16 @@ title: Omgevingen maken
 description: Leer hoe u Cloud Manager kunt gebruiken om uw eerste omgevingen te maken.
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
-source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
+source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
 # Omgevingen maken {#create-environments}
 
-In dit deel van het [aan boord gaan,](overview.md) u leert hoe u Cloud Manager kunt gebruiken om uw eerste omgevingen te maken.
+In dit deel van het [aan boord gaan,](overview.md) U leert hoe u Cloud Manager kunt gebruiken om uw eerste omgevingen te maken.
 
 ## Doelstelling {#objective}
 
@@ -28,23 +28,23 @@ Na het lezen van dit document zult u:
 
 De omgevingen bevinden zich onder de programma&#39;s in de hiërarchie van Cloud Manager. Terwijl de programma&#39;s u toestaan om uw oplossing te organiseren en toegang tot bepaalde teamleden aan die programma&#39;s te verlenen, behoren de milieu&#39;s tot specifieke programma&#39;s en zijn de individuele instanties van de Adobe oplossingen binnen die programma&#39;s. Omgevingen worden gebruikt voor een specifiek doel, zoals het ontwerpen van inhoud of het testen van nieuwe ontwikkelingen. De CI/CD-pijpleidingen van Cloud Manager vergemakkelijken de implementatie van code vanuit it-opslagruimten naar deze omgevingen.
 
-Als u het voorbeeld van de theoretische Onderneming van het WKND Reizen en van het Avontuur herinnert, die een huurder is die zich op reisgerelateerde media concentreert, zouden zij twee programma&#39;s kunnen hebben: één Sites-programma voor de afdeling WKND Magazine en één Assets-programma voor de afdeling WKND Media. Elk programma zou waarschijnlijk een paar milieu&#39;s zoals één productiemilieu hebben die het daadwerkelijke verkeer van de plaats en één ontwikkelomgeving voor het testen van nieuwe toepassingscode dienen.
+Als u het voorbeeld van de theoretische Onderneming van het WKND Reizen en van het Avontuur herinnert, die een huurder is die zich op reis-verwante media concentreert, zouden zij twee programma&#39;s kunnen hebben. Namelijk één programma van Plaatsen voor zijn afdeling van het Tijdschrift WKND, en één programma van Activa voor de afdeling van Media WKND. Elk programma zou waarschijnlijk een paar milieu&#39;s zoals één productiemilieu hebben die het daadwerkelijke verkeer van de plaats en één ontwikkelomgeving voor het testen van nieuwe toepassingscode dienen.
 
 Er zijn vier verschillende typen omgevingen:
 
 * **Productie en fase** - De productie- en testomgevingen zijn als twee beschikbaar en worden respectievelijk voor productie- en testdoeleinden gebruikt.
-* **Ontwikkeling** - Er kan een ontwikkelomgeving worden gecreëerd voor zowel ontwikkelings- als testdoeleinden en deze kan alleen worden geassocieerd met niet-productiepijpleidingen.
+* **Ontwikkeling** - Een ontwikkelomgeving kan worden gecreëerd voor ontwikkelings- en testdoeleinden en kan alleen worden geassocieerd met niet-productiepijpleidingen.
 * **Snelle ontwikkeling** - Een snelle ontwikkelomgeving (RDE) stelt een ontwikkelaar in staat snel wijzigingen te implementeren en te evalueren, waardoor de tijd die nodig is om functies te testen waarvan is aangetoond dat ze werken in een lokale ontwikkelomgeving, tot een minimum wordt beperkt.
 
-In het kader van deze instapreis creëert u, om u zo snel mogelijk aan de slag te krijgen, een ontwikkelomgeving die u kunt gebruiken om de mogelijkheden van AEM as a Cloud Service te verkennen.
+In het kader van deze instapreis creëert u een ontwikkelomgeving die u kunt gebruiken om de mogelijkheden van AEM as a Cloud Service te verkennen.
 
 ## Omgevingen maken {#creating-environments}
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Meld u aan bij Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Klik op het programma waaraan u een omgeving wilt toevoegen.
+1. Selecteer het programma waaraan u een omgeving wilt toevoegen.
 
-1. Van de **Programmaoverzicht** pagina, klik op **Omgeving toevoegen** op de **Omgevingen** kaart om een omgeving toe te voegen.
+1. Om een milieu toe te voegen, van **Programmaoverzicht** pagina, op de **Omgevingen** kaart, selecteren **Omgeving toevoegen**.
 
    ![Milieukaart](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -54,7 +54,7 @@ In het kader van deze instapreis creëert u, om u zo snel mogelijk aan de slag t
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
+1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
 
    * Selecteer een **Type omgeving**.
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes weergegeven achter het omgevingstype Ontwikkeling.
@@ -76,9 +76,9 @@ Nu je dit deel van de instapreis hebt gelezen, moet je:
 * Weet het verschil tussen de verschillende omgevingen.
 * U kunt uw eigen omgeving maken.
 
-Uw cloudbronnen zijn gemaakt en zijn klaar om te worden geopend door uw team. Als systeembeheerder moet u uw teamleden eerst aan AEM as a Cloud Service productprofielen van Adobe Admin Console toewijzen om tot die middelen toegang te hebben.
+Uw cloudbronnen zijn gemaakt en zijn klaar om te worden geopend door uw team. Als systeembeheerder, moet u uw teamleden aan productprofielen in AEM as a Cloud Service van Adobe Admin Console eerst toewijzen zodat zij tot die middelen kunnen toegang hebben.
 
-Daarom moet u de instapreis voortzetten door het document opnieuw te bekijken [Teamleden toewijzen aan AEM as a Cloud Service productprofielen.](assign-profiles-aem.md)  In dat document zult u leren hoe te om uw teamleden de rechten te verlenen zij hebben om tot uw nieuwe milieu&#39;s toegang te hebben.
+Daarom moet u de instapreis voortzetten door het document opnieuw te bekijken [Teamleden toewijzen aan AEM as a Cloud Service productprofielen](assign-profiles-aem.md). In dat document, leert u hoe te om uw teamleden rechten te verlenen om tot uw nieuwe milieu&#39;s toegang te hebben.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -86,5 +86,7 @@ Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de in
 
 * [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) - Meer informatie over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project
 * [Adobe Cloud Manager gebruiken - omgevingen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) - Cloud Manager-omgevingen bestaan uit AEM services voor schrijven, publiceren en verzenden. Leer hoe de verschillende milieu&#39;s rollen steunen en kunnen worden betrokken gebruikend verschillende CI/CD pijpleidingen.
-* [AEM Champion Tips en Tricks - Cloud Manager-omgevingstypen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Bekijk deze video voor een overzicht van de omgevingstypen van Cloud Manager van een AEM kampioen.
 * [Snelle ontwikkelomgevingen](/help/implementing/developing/introduction/rapid-development-environments.md) - Zie deze documentatie voor details over hoe te om RDE te gebruiken
+
+<!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
+
