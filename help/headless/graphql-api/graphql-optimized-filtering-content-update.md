@@ -2,10 +2,10 @@
 title: Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters
 description: Leer hoe u de inhoudsfragmenten voor geoptimaliseerde GraphQL-filters in Adobe Experience Manager as a Cloud Service kunt bijwerken voor levering van inhoud zonder kop.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
+source-git-commit: a18742abdd4693ab1e97d7db3ed6854b735bc0f9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '913'
+ht-degree: 2%
 
 ---
 
@@ -50,18 +50,9 @@ Voer de volgende stappen uit om de procedure uit te voeren:
       <th>Type</th>
       <th>Notities</th>
      </tr>
-     <tr>
+
+   <tr>
       <td>1</td>
-      <td>` AEM_RELEASE_CHANNEL` </td>
-      <td>"prerelease" </td>
-      <td> </td>
-      <td>Alles </td>
-      <td> </td>
-      <td>Variabele </td>
-      <td>Vereist om de functie in te schakelen. </td>
-     </tr>
-     <tr>
-      <td>2</td>
       <td>"CF_MIGRATION_ENABLED" </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -71,7 +62,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
       <td>Schakelt in(!=0) of schakelt (0) het activeren van de migratietaak voor inhoudsfragmenten uit. </td>
      </tr>
      <tr>
-      <td>3</td>
+      <td>2</td>
       <td>"CF_MIGRATION_ENFORCE" </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -81,7 +72,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
       <td>Afdwingen (!=0) hermigratie van inhoudsfragmenten.<br>Het plaatsen van deze vlag aan 0 zal een stijgende migratie van CFs doen. Dit betekent dat als de taak om welke reden dan ook wordt beëindigd, de volgende taak de migratie start vanaf het punt waar deze is beëindigd. De allereerste migratie wordt aanbevolen (waarde=1). </td>
      </tr>
      <tr>
-      <td>4</td>
+      <td>3</td>
       <td>"CF_MIGRATION_BATCH" </td>
       <td>`50` </td>
       <td>`50` </td>
@@ -91,7 +82,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
       <td>Grootte van de batch voor het opslaan van het aantal inhoudsfragmenten na de migratie.<br>Dit is relevant voor hoeveel CFs aan bewaarplaats in één partij zal worden bewaard, en kan worden gebruikt om aantal te optimaliseren schrijft aan bewaarplaats. </td>
      </tr>
      <tr>
-      <td>5</td>
+      <td>4</td>
       <td>"CF_MIGRATION_LIMIT" </td>
       <td>`1000` </td>
       <td>`1000` </td>
@@ -101,7 +92,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
       <td>Max. aantal te verwerken inhoudsfragmenten.<br>Zie ook nota's voor "CF_MIGRATION_INTERVAL". </td>
      </tr>
      <tr>
-      <td>6</td>
+      <td>5</td>
       <td>"CF_MIGRATION_INTERVAL" </td>
       <td>`60` </td>
       <td>`600` </td>
