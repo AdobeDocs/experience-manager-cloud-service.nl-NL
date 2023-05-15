@@ -1,13 +1,13 @@
 ---
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
-source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
+exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
+source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
 workflow-type: tm+mt
-source-wordcount: '3304'
+source-wordcount: '3325'
 ht-degree: 0%
 
 ---
-
 
 # Snelle ontwikkelomgevingen {#rapid-development-environments}
 
@@ -451,6 +451,8 @@ Wanneer een RDE wordt teruggesteld, wordt al inhoud verwijderd en zo zo, zo moet
 
 1. Plaats en wijs de steekproefinhoud in git binnen een install.rde omslag onder /apps toe en synchroniseer dan het overkoepelende inhoudspakket aan RDE gebruikend het hulpmiddel van de bevellijn.
 
+1. Gebruik de [kopiëren van inhoud, gereedschap](/help/implementing/developing/tools/content-copy.md) om een bepaalde inhoudenset van prod, stadium, of ontwikkelmilieu&#39;s, of van een andere RDE te kopiëren.
+
 1. Pakketbeheer gebruiken
 
 U kunt maximaal 1 GB gebruiken voor het synchroniseren van inhoudspakketten.
@@ -499,4 +501,3 @@ Forms-ontwikkelaars kunnen AEM Forms Cloud Service Rapid Development Environment
 ## RDE-zelfstudie
 
 Raadpleeg voor meer informatie over RDE in AEM as a Cloud Service [videozelfstudie die laat zien hoe u het programma kunt instellen, gebruiken en de ontwikkelingscyclus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
-
