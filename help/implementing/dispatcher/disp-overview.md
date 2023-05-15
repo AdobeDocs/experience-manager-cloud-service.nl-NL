@@ -3,9 +3,9 @@ title: Dispatcher in de cloud
 description: Dispatcher in de cloud
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: c61cd92acd416b1c463f5359f66be8199acf08c3
+source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '983'
 ht-degree: 1%
 
 ---
@@ -15,25 +15,25 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispoverview"
 >title="Dispatcher in de cloud"
->abstract="Op deze pagina wordt beschreven hoe u de verzendingsprogramma&#39;s, de ondersteunde apache-modules kunt downloaden en uitpakken. Ook vindt u een overzicht op hoog niveau van de oude en flexibele modi."
+>abstract="Op deze pagina wordt beschreven hoe u de Dispatcher-gereedschappen, de ondersteunde Apache-modules kunt downloaden en uitpakken. Ook vindt u een overzicht op hoog niveau van de oude en flexibele modi."
 
 ## Inleiding {#apache-and-dispatcher-configuration-and-testing}
 
-Deze pagina beschrijft de verzendingsprogramma&#39;s en hoe u deze kunt downloaden en uitpakken, de ondersteunde apache-modules en biedt een overzicht op hoog niveau van de oude en flexibele modi. Daarnaast zijn er meer verwijzingen naar validatie en foutopsporing en het migreren van de Dispatcher-configuratie van AMS naar AEM as a Cloud Service. Zie ook [deze video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) voor meer informatie over de implementatie van verzenderbestanden in een cloudservicemilieu.
+Op deze pagina worden de Dispatcher-gereedschappen beschreven, evenals de manier waarop deze kunnen worden gedownload en uitgepakt, de ondersteunde Apache-modules en een overzicht op hoog niveau van de oude en flexibele modi. Er zijn ook meer verwijzingen naar validatie en foutopsporing en naar het migreren van de Dispatcher-configuratie van AMS naar AEM as a Cloud Service. <!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
 
 ## Verzendgereedschappen {#dispatcher-sdk}
 
 De Dispatcher Tools maken deel uit van de algemene AEM as a Cloud Service SDK en bieden:
 
 * Een vanilla-bestandsstructuur met de configuratiebestanden die moeten worden opgenomen in een toegewezen project voor Dispatcher.
-* Tooling voor klanten om te bevestigen dat de configuratie van de Verzender slechts AEM as a Cloud Service gesteunde richtlijnen omvat.        Bovendien controleert het gereedschap ook of de syntaxis correct is, zodat de pijn correct kan beginnen.
+* Tooling voor klanten om te bevestigen dat de configuratie van de Verzender slechts AEM as a Cloud Service-gesteunde richtlijnen omvat. Bovendien controleert de werkbalk of de syntaxis correct is, zodat Apache correct kan worden gestart.
 * Een Docker-afbeelding waarmee de Dispatcher lokaal wordt weergegeven.
 
 ## De gereedschappen downloaden en uitpakken {#extracting-the-sdk}
 
 De Dispatcher-gereedschappen maken deel uit van de [as a Cloud Service SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), kan worden gedownload van een ZIP-bestand op het [Softwaredistributie](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portaal. Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools kan worden gebruikt om te worden geïmplementeerd in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
 
-Pak de SDK uit, die Dispatcher Tools voor macOS, Linux en Windows bundelt.
+Pak de SDK uit, die Dispatcher Tools voor macOS, Linux® en Windows bundelt.
 
 **Voor macOS/Linux**, maakt u het artefact van het gereedschap Dispatcher uitvoerbaar en voert u dit uit. De Dispatcher Tools-bestanden worden automatisch geëxtraheerd onder de map waarin u het hebt opgeslagen (waar `version` is de versie van de Dispatcher Tools).
 
@@ -48,17 +48,17 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## Validatie en foutopsporing met de Dispatcher Tools {#validation-debug}
 
-De dispatcherhulpmiddelen worden gebruikt om de configuratie van de Verzender van uw project te bevestigen en te zuiveren. Leer meer over hoe te om die hulpmiddelen op de pagina&#39;s te gebruiken die hieronder worden vermeld, op basis van of de de vraagersconfiguratie van uw project op flexibele wijze of erfeniswijze gestructureerd is:
+De hulpmiddelen van de Verzender worden gebruikt om de configuratie van de Verzender van uw project te bevestigen en te zuiveren. Leer meer over hoe te om die hulpmiddelen in de pagina&#39;s te gebruiken die hieronder worden vermeld, op basis van of de configuratie van de Ontvanger van uw project op flexibele wijze of erfeniswijze gestructureerd is:
 
 * **Flexibele modus** - de aanbevolen modus en de standaardinstelling voor [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) en hoger, die ook wordt gebruikt door Cloud Manager voor nieuwe omgevingen die zijn gemaakt na de release van Cloud Manager 2021.7.0. Klanten kunnen deze modus activeren door de map en het bestand toe te voegen `opt-in/USE_SOURCES_DIRECTLY`. Door deze flexibelere modus te gebruiken, zijn er geen beperkingen in de bestandsstructuur onder de map rewrites waarvoor in de oude modus slechts één bestand nodig was `rewrite.rules` bestand. Bovendien is er geen beperking op het aantal regels dat u kunt toevoegen. Zie voor meer informatie over de mapstructuur en lokale validatie [Validatie en foutopsporing met Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md).
 
-* **Oudere modus** - voor details over de omslagstructuur en lokale bevestiging voor de verouderde wijze van de configuratie van de verzender [Validatie en foutopsporing met Dispatcher Tools (verouderd)](/help/implementing/dispatcher/validation-debug-legacy.md)
+* **Oudere modus** - voor meer informatie over de mapstructuur en lokale validatie voor de verouderde modus van de Dispatcher-configuratie raadpleegt u [Validatie en foutopsporing met Dispatcher Tools (verouderd)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 Voor meer informatie over hoe te van het model van de erfenisconfiguratie aan flexibelere te migreren, die van AEM archetype 28 wordt voorzien, zie [deze documentatie](/help/implementing/dispatcher/validation-debug.md#migrating).
 
 ## Inhoud verplaatsen {#content-disposition}
 
-Voor de publicatielaag is de standaardinstelling voor het weergeven van lobs een bijlage. Dit kan worden overschreven met de standaard [koptekst voor inhoudspositie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in de verzender.
+Voor de publicatielaag is de standaardinstelling voor het weergeven van lobs een bijlage. Deze instelling overschrijven met de standaard [koptekst voor inhoudspositie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in de Dispatcher.
 
 Hieronder ziet u een voorbeeld van hoe de configuratie eruit moet zien:
 
@@ -71,7 +71,7 @@ Hieronder ziet u een voorbeeld van hoe de configuratie eruit moet zien:
 
 ## Ondersteunde Apache-modules {#supported-directives}
 
-In de onderstaande tabel staan de ondersteunde apache-modules:
+In de onderstaande tabel staan de ondersteunde Apache-modules:
 
 | Modulenaam | Referentiepagina |
 |---|---|
@@ -119,7 +119,7 @@ Allowlisted directives:
 
 ## Mapstructuur {#folder-structure}
 
-De mappenstructuur van de applaus en de verzender van het project verschilt enigszins, afhankelijk van de modus die het project gebruikt, zoals beschreven in het dialoogvenster [Validatie en foutopsporing met de Dispatcher Tools](#validation-debug) hierboven.
+De mapstructuur Apache en Dispatcher van het project verschillen enigszins afhankelijk van de modus die het project gebruikt, zoals wordt beschreven in het dialoogvenster [Validatie en foutopsporing met de Dispatcher Tools](#validation-debug) hierboven.
 
 ## De Dispatcher-configuratie migreren van AMS {#ams-aem}
 
