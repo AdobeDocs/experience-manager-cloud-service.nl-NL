@@ -3,7 +3,7 @@ title: Versie-updates AEM
 description: Leer hoe AEM as a Cloud Service ononderbroken integratie en levering (CI/CD) gebruikt om u projecten op de recentste versie te houden.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 59bc2b5af22ef23775195f098517cec40d98d66b
+source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 1%
@@ -51,6 +51,6 @@ Als de update naar de productieomgeving mislukt, wordt de testomgeving automatis
 
 Updates worden meestal zonder downtime uitgevoerd, ook voor de ontwerpinstantie, die een cluster met knooppunten is. Rolling-updates zijn mogelijk vanwege [de samengestelde eigenschap van de knoopopslag in Eak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Met deze functie kunnen AEM tegelijkertijd verwijzen naar meerdere opslagplaatsen. Bij het rollen [blauwgroene implementatie,](/help/implementing/deploying/overview.md#index-management-using-blue-green-deployments) de nieuwe groene AEM bevat een eigen versie `/libs` (de op TarMK gebaseerde onveranderlijke opslagplaats), verschillend van de oudere blauwe AEM versie, hoewel beide verwijzen naar een gedeelde op DocumentMK gebaseerde veranderbare opslagplaats die gebieden zoals `/content` , `/conf` , `/etc` en andere.
+Met deze functie kunnen AEM tegelijkertijd verwijzen naar meerdere opslagplaatsen. Bij het rollen [blauwgroene implementatie,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) de nieuwe groene AEM bevat een eigen versie `/libs` (de op TarMK gebaseerde onveranderlijke opslagplaats), verschillend van de oudere blauwe AEM versie, hoewel beide verwijzen naar een gedeelde op DocumentMK gebaseerde veranderbare opslagplaats die gebieden zoals `/content` , `/conf` , `/etc` en andere.
 
 Omdat zowel blauw als groen hun eigen versies hebben `/libs`, kunnen zij allebei actief tijdens de het rollen update zijn, allebei die verkeer opnemen tot het blauw volledig door groen wordt vervangen.
