@@ -5,9 +5,10 @@ description: U kunt een formulier met Adaptief formulier (Core Components) op ee
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
+source-git-commit: 0d21b4ba2e7ce7592e3f2c57e4d320adc0af1008
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2084'
 ht-degree: 0%
 
 ---
@@ -22,22 +23,16 @@ U kunt een van de volgende methoden kiezen om een adaptief formulier te ontwerpe
 
 * **Een adaptief formulier maken door formuliercomponenten naar de Adaptive Forms Container-component te slepen en neer te zetten**: Gebruik de [Aangepaste Forms-container](#af-container-component) om een ruimte op uw webpagina te maken die als host fungeert voor het adaptieve formulier. U kunt de component Adaptief formulier naar deze ruimte slepen om een formulier te maken. Bekijk bijvoorbeeld de onderstaande video voor meer informatie over het maken van een adaptief formulier met [!UICONTROL Adaptive Forms Container] component:
 
->[!VIDEO](/help/forms/assets/formcreationbyadaptiveformcontainer.mp4)
-
 De [Aangepaste formuliercontainer](#af-container-component) kunt u digitale inschrijvingen maken door Adaptive Forms-componenten rechtstreeks in de AEM Sites-editor te gebruiken. Deze integratie biedt een naadloze ervaring voor AEM Sites-auteurs die formulieren op hun AEM Sites-pagina&#39;s willen maken en beheren.
 
-* **Een bestaand adaptief formulier insluiten**: De [Adaptieve Forms - Insluiten](#embed-existing-af) kunt u een reeds bestaand adaptief formulier eenvoudig opnemen in een pagina in AEM Sites. U kunt bijvoorbeeld een adaptief formulier insluiten met de opdracht [!UICONTROL Adaptive Forms - Embed] component op de pagina van de Site, zoals geïllustreerd in de volgende video:
-
->[!VIDEO](/help/forms/assets/embednewform_embed.mp4)
+* **Een bestaand adaptief formulier insluiten**: De [Adaptieve Forms - Embed(V2)](#embed-existing-af) kunt u een reeds bestaand adaptief formulier eenvoudig opnemen in een pagina in AEM Sites. U kunt bijvoorbeeld een adaptief formulier insluiten met de opdracht [!UICONTROL Adaptive Forms - Embed] component op de pagina van de Site, zoals geïllustreerd in de volgende video:
 
 Deze functie verbetert het aanpassingsvermogen en de herbruikbaarheid van Adaptive Forms. Deze integratie biedt klanten een handige manier om Adaptive Forms die ze al hebben gemaakt opnieuw te gebruiken.
 
 * **De wizard Adaptieve Forms gebruiken om een formulier te maken**:
 
-   Gebruik de [Adaptieve Forms - Insluiten](#embed-new-af) een adaptief formulier maken vanuit de AEM Sites-editor met de wizard Formulier maken. Het formulier wordt opgeslagen als een externe entiteit. U kunt dit formulier ook hergebruiken in andere sitepagina&#39;s en op zichzelf staande formulieren.
+   Gebruik de [Adaptieve Forms - Embed(v2)](#embed-new-af) een adaptief formulier maken vanuit de AEM Sites-editor met de wizard Formulier maken. Het formulier wordt opgeslagen als een externe entiteit. U kunt dit formulier ook hergebruiken in andere sitepagina&#39;s en op zichzelf staande formulieren.
 Zie bijvoorbeeld de onderstaande video voor informatie over het maken en insluiten van een nieuw, adaptief formulier met de [!UICONTROL Adaptive Forms - Embed] op de pagina van de Site.
-
->[!VIDEO](/help/forms/assets/createnewform_embed.mp4)
 
 ### Overwegingen {#considerations}
 
@@ -52,11 +47,12 @@ De [!UICONTROL Adaptive Form Container] maakt het mogelijk om digitale inschrijv
 +++ Inschakelen **[!UICONTROL Adaptive Forms Container]** in het bijbehorende sjabloonbeleid.
 
 Inschakelen [!UICONTROL Adaptive Forms Container] in het sjabloonbeleid voert u de volgende stappen uit:
-1. Ga naar de [!UICONTROL Page Information] > [!UICONTROL Edit Template]
-1. Klik op de knop [!UICONTROL Policy] en selecteert u de **Voorbeelden van kerncomponenten - adaptief formulier** selectievakje.
-1. Klik op [!UICONTROL Done].
 
->[!VIDEO](/help/forms/assets/adaptiveformcontainer.mp4)
+1. Ga naar de [!UICONTROL Page Information] > [!UICONTROL Edit Template]
+1. Klik op de knop [!UICONTROL Policy] en selecteert u de **[!UICONTROL Adaptive Forms Container]**  selectievakje onder **[Projectnaam AEM] - Adaptief formulier**.
+1. Klik op **[!UICONTROL Done]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 
@@ -104,7 +100,7 @@ Een adaptief formulier maken met [!UICONTROL Adaptive Forms Container] component
 1. Maak een adaptief formulier met de Adaptief Forms-componenten.
 1. Sla de instellingen op.
 
->[!VIDEO](/help/forms/assets/af-container.mp4)
+>[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 Uw formulier is klaar. Wanneer u de AEM Sites-pagina publiceert, worden automatisch een adaptief formulier en de bijbehorende middelen waarnaar wordt verwezen, gepubliceerd.
 
@@ -148,9 +144,9 @@ In de [!UICONTROL Edit Adaptive Forms Container] kunt u het volgende opgeven.
 * **Bericht tonen**
    * **Berichtinhoud**: Schrijf een bericht met de teksteditor Rich die moet worden weergegeven bij het verzenden van formulieren. Deze optie is alleen beschikbaar als u een bedankbericht wilt weergeven.
 
-## Een bestaand adaptief formulier insluiten  {#aem-container-component}
+## Een adaptief formulier insluiten  {#aem-container-component}
 
-Gebruiken **[!UICONTROL Adaptive Forms - Embed]** kunt u een nieuw adaptief formulier insluiten of een bestaand adaptief formulier insluiten op de pagina van de site. De [!UICONTROL Adaptive Forms - Embed] kunt u:
+Gebruiken **[!UICONTROL Adaptive Forms - Embed (V2)]** kunt u een nieuw adaptief formulier insluiten of een bestaand adaptief formulier insluiten op de pagina van de site. De [!UICONTROL Adaptive Forms - Embed] kunt u:
 
 * [Een bestaand adaptief formulier insluiten](#embed-new-af)
 
@@ -160,12 +156,14 @@ Gebruiken **[!UICONTROL Adaptive Forms - Embed]** kunt u een nieuw adaptief form
 
 +++ De optie **Adaptieve Forms - Insluiten** in het bijbehorende sjabloonbeleid.
 
-Inschakelen [!UICONTROL Adaptive Forms - Embed] in het sjabloonbeleid voert u de volgende stappen uit:
-1. Ga naar de [!UICONTROL Page Information] > [!UICONTROL Edit Template]
-1. Klik op de knop [!UICONTROL Policy] en selecteert u de **Basisinhoud** selectievakje.
-1. Klik op [!UICONTROL Done].
+Inschakelen [!UICONTROL Adaptive Forms - Embed(v2)] in het sjabloonbeleid voert u de volgende stappen uit:
 
->[!VIDEO](/help/forms/assets/enableadaptiveform-embedtemplate.mp4)
+1. Ga naar de [!UICONTROL Page Information] > [!UICONTROL Edit Template]
+
+1. Klik op de knop [!UICONTROL Policy] en selecteert u de **[!UICONTROL Adaptive Form - Embed (v2)]** selectievakje onder **[!UICONTROL [AEM Archetype Project Name] - Forms]** groep .
+1. Klik op **[!UICONTROL Done]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 +++
 
@@ -212,7 +210,7 @@ Als u Aangepaste Forms-componenten op een AEM Sites-pagina wilt gebruiken, neemt
 ### Nieuw adaptief formulier insluiten {#embed-new-af}
 
 1. Open de AEM Sites-pagina in de bewerkingsmodus.
-1. Sleep vanuit het deelvenster Componentbrowser de knop [!UICONTROL Adaptive Forms - Embed] op de pagina.
+1. Sleep vanuit het deelvenster Componentbrowser de knop [!UICONTROL Adaptive Forms - Embed(v2)] op de pagina.
 1. Klik op de knop **Plus** en wordt u omgeleid naar de wizard Formulier maken.
 
    ![Adaptieve Forms - component insluiten](/help/forms/assets/aemformcontainer.png)
@@ -220,6 +218,8 @@ Als u Aangepaste Forms-componenten op een AEM Sites-pagina wilt gebruiken, neemt
 1. Maak een nieuw adaptief formulier van de [!UICONTROL Form Creation] wizard.
 1. De [!UICONTROL Asset Path] bevat al het pad van een gemaakt adaptief formulier
 1. Sla de instellingen op. Het adaptieve formulier is nu ingesloten in de pagina.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
 ### Bestaand adaptief formulier insluiten {#embed-existing-af}
 
@@ -229,9 +229,12 @@ Als u Aangepaste Forms-componenten op een AEM Sites-pagina wilt gebruiken, neemt
 1. Blader naar het adaptieve formulier dat u wilt insluiten in het dialoogvenster [!UICONTROL Asset Path].
 1. Sla de instellingen op. Het adaptieve formulier is nu ingesloten in de pagina.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+
 #### Aangepast formulier configureren _ eigenschappen insluiten
 
-U kunt de geavanceerde instellingen van het dialoogvenster [!UICONTROL Adaptive Form - Embed] component. In de [!UICONTROL Edit Adaptive Forms - Embed] kunt u het volgende opgeven.
+U kunt de geavanceerde instellingen van het dialoogvenster [!UICONTROL Adaptive Form - Embed(v2)] component. In de [!UICONTROL Edit Adaptive Forms - Embed(v2)] kunt u het volgende opgeven.
+
 * **Middelpad**: Blader naar het adaptieve formulier dat u wilt insluiten en selecteer dit. Deze wordt automatisch ingevuld als u deze uit de middelenbrowser hebt verwijderd.
 * **Verzending na verzending** : Selecteer de actie die moet worden geactiveerd bij het verzenden van het formulier. U kunt ervoor kiezen om een bedankbericht of een pagina voor bedankt weer te geven.
    * **Bericht met dank weergeven**: Schrijf een bericht met de teksteditor Rich die moet worden weergegeven bij het verzenden van formulieren. Deze optie is alleen beschikbaar als u een bedankbericht wilt weergeven.
@@ -272,4 +275,3 @@ Voer een van de volgende handelingen uit om een configuratie of eigenschap van h
 ![AF-layout-support](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM sitepagina bevat een verwijzing naar het adaptieve formulier. Wanneer u een AEM Sites-pagina vertaalt, worden automatisch een adaptief formulier en de bijbehorende middelen waarnaar wordt verwezen, omgezet met de [vertaalprojecten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) in andere talen.
-
