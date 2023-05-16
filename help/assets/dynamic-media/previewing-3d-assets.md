@@ -5,14 +5,19 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 0%
+source-wordcount: '581'
+ht-degree: 1%
 
 ---
 
 # 3D-elementen voorvertonen in Adobe Experience Manager{#previewing-3d-assets}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
+| AEM as a Cloud Service | Dit artikel |
 
 Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-elementen als onderdeel van het ontwerpproces.
 
@@ -24,7 +29,7 @@ De interactieve 3D-viewer is beschikbaar op de pagina met elementdetails in Expe
 
 Interactieve 3D-voorvertoning in Experience Manager ondersteunt de volgende bestandsindelingen:
 
-| 3D-bestandsextensie | Bestandsindeling | MIME-type | Opmerkingen |
+| 3D-bestandsextensie | Bestandsindeling | MIME-type | Notities |
 |---|---|---|---|
 | GLB | Binaire GL-transmissie | model/gltf-binair |  |
 | GLTF | GL-indeling voor verzending | model/gltf+json | Zie de **Opmerking** hieronder. |
