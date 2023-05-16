@@ -2,10 +2,10 @@
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 description: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 90%
+source-wordcount: '2054'
+ht-degree: 87%
 
 ---
 
@@ -142,11 +142,15 @@ Er wordt een lijst met bestaande instanties weergegeven:
 
 Onder elke instantie van de Context van het Product, zullen er instanties zijn die de diensten van de Auteur of van de Publicatie over Productie, Stadium, of milieu&#39;s van de Ontwikkeling overspannen. Elke instantie wordt gekoppeld aan de rollen Productprofielen of Cloud Manager. Deze productprofielen worden gebruikt om toegang toe te wijzen aan Gebruikers en Groepen met de vereiste voorrechten.
 
-Het profiel **Administrator_xxx** wordt gebruikt om beheerdersrechten toe te kennen in de bijbehorende AEM-instantie, terwijl het profiel **User_xxx** wordt gebruikt om standaardgebruikers toe te voegen.
+De **AEM Beheerders_xxx** profiel wordt gebruikt om beheerdersrechten te verlenen in de bijbehorende AEM-instantie terwijl de **AEM Users_xxx** wordt gebruikt om gewone gebruikers toe te voegen.
 
 Gebruikers en groepen die zijn toegevoegd onder dit productprofiel, kunnen zich aanmelden bij deze instantie, zoals in het onderstaande voorbeeld wordt getoond:
 
 ![Productprofiel](/help/security/assets/ims8.png)
+
+>[!WARNING]
+>
+>De **AEM** de naam van het productprofiel mag niet worden gewijzigd. De naam van de **AEM** met het productprofiel worden de beheerdersrechten verwijderd van alle gebruikers die aan dat profiel zijn toegewezen.
 
 ### Aanmelden bij Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
