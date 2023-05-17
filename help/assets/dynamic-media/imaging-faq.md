@@ -6,9 +6,9 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5cc750b3ea9a911355220f8b95f769000be9f41a
 workflow-type: tm+mt
-source-wordcount: '3472'
+source-wordcount: '3577'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,17 @@ En nu een betere Google Core Web Vital score voor LCP (de grootste Inhoudelijke 
 >
 >Voor Smart Imaging moet u de CDN (Content Delivery Network) gebruiken die buiten de box valt en die is meegeleverd bij Adobe Experience Manager - Dynamic Media. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
 
+>[!TIP]
+>
+>Uitproberen en ontdekken wat de voordelen zijn van Dynamic Media-beeldmodifiers en Smart Imaging met Dynamic Media [_Opname_](https://snapshot.scene7.com/).
+>
+> Momentopname is een visueel demonstratieprogramma dat is ontworpen om de kracht van Dynamic Media te illustreren voor geoptimaliseerde en dynamische beeldlevering. Experimenteer met testafbeeldingen of Dynamic Media-URL&#39;s om visueel de uitvoer van verschillende Dynamic Media-afbeeldingsmodifiers en Smart Imaging-optimalisaties te bekijken voor:
+>* Bestandsgrootte (met WebP en AVIF levering)
+>* Netwerkbandbreedte
+>* DPR (pixelverhouding apparaat)
+>
+>Als u wilt weten hoe eenvoudig het is om Momentopname te gebruiken, speelt u de opdracht [Video over momentopnamen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en) (3 minuten en 17 seconden).
+
 De slimme Beeldvorming profiteert van de extra prestatiesverhoging van volledig geïntegreerd zijn met de dienst van het Netwerk van de Levering van de Inhoud van de Adobe best-in-klasse CDN (Content Delivery Network). Deze dienst vindt de optimale route van Internet tussen servers, netwerken, en peerpunten. Het vindt een route die de laagste latentie en het laagste tarief van het pakketverlies in plaats van het gebruiken van de standaardroute op Internet heeft.
 
 De volgende voorbeelden van afbeeldingselementen geven de toegevoegde optimalisatie van Smart Imaging aan:
@@ -40,7 +51,7 @@ Net als hierboven voerde Adobe ook een test uit met een grotere set monsters. He
 
 Vergelijk WebP en AVIF met PNG, kunt u een 84% groottevermindering met WebP en 87% met AVIF zien. En omdat zowel WebP- als AVIF-indelingen transparantie en meerdere afbeeldingsanimaties ondersteunen, is dit een goede vervanging voor transparante PNG- en GIF-bestanden.
 
-Zie ook [Afbeelding optimaliseren met de volgende afbeeldingsindelingen (WebP en AVIF)](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+Zie ook [Afbeelding optimaliseren met de volgende afbeeldingsindelingen (WebP en AVIF)](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
 <!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
@@ -73,7 +84,7 @@ Zie ook [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-re
 
 Pixelverhouding van apparaat (DPR) - ook wel CSS-pixelverhouding genoemd - is de relatie tussen de fysieke pixels van een apparaat en logische pixels. Vooral met de komst van Retina-schermen groeit de pixelresolutie van moderne mobiele apparaten snel.
 
-Als u de pixelverhouding van het apparaat inschakelt, wordt de afbeelding weergegeven met de oorspronkelijke resolutie van het scherm, waardoor deze er scherp uitziet.
+Als u de pixelverhouding van het apparaat inschakelt, wordt de afbeelding weergegeven met de oorspronkelijke resolutie van het scherm, waardoor deze scherp wordt.
 
 Momenteel is de pixeldichtheid van het beeldscherm afkomstig van Akamai CDN-headerwaarden.
 
@@ -152,7 +163,7 @@ Voor afbeeldingsbestandsindelingen die transparantie ondersteunen, zoals PNG, ku
 
 Slimme afbeeldingen werken met uw bestaande voorinstellingen voor afbeeldingen en nemen alle afbeeldingsinstellingen in acht. De afbeeldingsindeling, de kwaliteitsinstelling of beide worden gewijzigd. Voor conversie van indelingen behoudt Smart Imaging volledige visuele getrouwheid zoals gedefinieerd door de vooraf ingestelde instellingen van de afbeelding, maar met een kleinere bestandsgrootte.
 
-Stel dat een voorinstelling voor een afbeelding is gedefinieerd met de indeling JPEG, de grootte 500 x 500, de kwaliteit=85 en het onscherpe masker=0,1,1,5. Wanneer Slim beeld ontdekt dat een gebruiker op browser van Chrome is, wordt het beeld omgezet in formaat WebP, met grootte 500 x 500, en onscherp masker=0.1.1.5 bij een kwaliteit WebP die een kwaliteit van JPEG van 85 zo dicht mogelijk aanpast. De voetafdruk van die omzetting WebP wordt vergeleken met de JPEG, en kleiner van twee is teruggekeerd.
+Stel dat een voorinstelling voor een afbeelding is gedefinieerd met de indeling JPEG, de grootte 500 x 500, de kwaliteit=85 en het onscherpe masker=0,1,1,5. Wanneer Slim beeld ontdekt dat een gebruiker op browser van Chrome is, wordt het beeld omgezet in formaat WebP, met grootte 500 x 500. Onscherp masker=0,1,1,5 is bij een kwaliteit WebP die een kwaliteit van JPEG van 85 zo dicht mogelijk aanpast. De voetafdruk van die omzetting WebP wordt vergeleken met de JPEG, en kleiner van twee is teruggekeerd.
 
 ## Moet ik URL&#39;s, afbeeldingsvoorinstellingen wijzigen of nieuwe code op mijn site implementeren voor Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
