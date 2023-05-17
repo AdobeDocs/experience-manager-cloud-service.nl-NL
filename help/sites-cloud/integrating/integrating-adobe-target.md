@@ -4,7 +4,7 @@ description: Integreren met Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
+source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 1%
@@ -150,7 +150,7 @@ Raadpleeg deze voor meer informatie over het maken en publiceren van [page](http
   <tr>
     <td>Plaats van de Configuratie van het Doel.</td>
     <td>/etc/cloudservices/testandtarget/</td>
-    <td>/conf/huurder/settings/cloudservices/target/</td>
+    <td>/conf/huurder/settings/cloudconfigs/target/</td>
     <td> Eerder waren de veelvoudige configuraties aanwezig onder /etc/cloudservices/testandtarget maar nu is één enkele configuratie aanwezig onder een huurder.</td>
   </tr>
 </table>
