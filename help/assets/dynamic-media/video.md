@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
+source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
 workflow-type: tm+mt
-source-wordcount: '5846'
+source-wordcount: '5827'
 ht-degree: 1%
 
 ---
@@ -424,10 +424,6 @@ Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
 * Helpt de levering van video toegankelijker te maken voor uw klanten.
 * U kunt de URL voor streaming ook ophalen via API&#39;s.
 
-   >[!IMPORTANT]
-   >
-   >Het inschakelen van DASH voor uw account is momenteel alleen beschikbaar in Azië, Stille Oceaan en Noord-Amerika. binnenkort in Europa-Midden-Oosten-Afrika.
-
 U stelt een verzoek in om DASH te gebruiken; het wordt niet automatisch ingeschakeld voor uw account.
 
 Als u DASH op uw account wilt inschakelen, maakt u een geval voor klantenondersteuning zoals hieronder wordt beschreven. Geef in uw geval van ondersteuning op dat u DASH wilt inschakelen voor uw Dynamic Media-account en op Experience Manager.
@@ -435,7 +431,7 @@ Als u DASH op uw account wilt inschakelen, maakt u een geval voor klantenonderst
 **DASH inschakelen voor uw account:**
 
 1. [Gebruik de Admin Console om een nieuwe steungeval te beginnen](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Volg de instructies om een steungeval tot stand te brengen terwijl het verzekeren van u de volgende informatie verstrekt:
+1. Als u een ondersteuningsgeval wilt maken, volgt u de instructies en zorgt u ervoor dat u de volgende informatie opgeeft:
 
    * Primaire contactpersoon, e-mail, telefoon.
    * Naam van je Dynamic Media-account.
