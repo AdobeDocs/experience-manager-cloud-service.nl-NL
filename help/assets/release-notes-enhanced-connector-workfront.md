@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
+source-git-commit: 3a00faaf285be693243e3fb55159149520293610
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -15,21 +15,18 @@ In de volgende sectie worden de algemene opmerkingen bij de release beschreven v
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor de laatste versie 1.9.9 van [!DNL Workfront for Experience Manager enhanced connector] is 10 april 2023.
+De releasedatum voor de laatste versie 1.9.10 van [!DNL Workfront for Experience Manager enhanced connector] is 18 mei 2023.
 
 ## Geen hooglichten {#release-highlights}
 
 De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de volgende updates:
 
-* Experience Manager geeft een `DateTimeParseException` een uitzondering wanneer de laatste gewijzigde datum wordt ontvangen van Workfront tijdens het maken van een gekoppelde map.
+* Workfront retourneert een 409 HTTP-reactie voor dubbele gebeurtenisabonnementen op basis van een REST-aanroep van Experience Manager naar Workfront. Dit leidt tot een null pointer-uitzondering.
 
-* Problemen tijdens het maken van meerdere gekoppelde projectmappen binnen een korte periode.
-
-* Kan geen drempellimiet configureren voor het aantal nieuwe set met aan een project gekoppelde mappen.
 
 >[!IMPORTANT]
 >
->Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.9](../assets/update-workfront-enhanced-connector.md) van de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.10](../assets/update-workfront-enhanced-connector.md) van de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekende problemen {#known-issues}
 
@@ -38,6 +35,16 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 * Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** in de vervolgkeuzelijst kunt u de doelbestemming in de Experience Manager niet selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** keuzelijst beschikbaar in de nieuwe Workfront-ervaring.
 
 ## Eerdere versies {#previous-releases}
+
+### Release van april 2023 {#april-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] versie 1.9.9, die op 10 april 2023 is uitgebracht, bevat de volgende updates:
+
+* Experience Manager geeft een `DateTimeParseException` een uitzondering wanneer de laatste gewijzigde datum wordt ontvangen van Workfront tijdens het maken van een gekoppelde map.
+
+* Problemen tijdens het maken van meerdere gekoppelde projectmappen binnen een korte periode.
+
+* Kan geen drempellimiet configureren voor het aantal nieuwe set met aan een project gekoppelde mappen.
 
 ### Release van maart 2023 {#march-2023-release}
 
