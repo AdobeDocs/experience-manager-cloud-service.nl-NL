@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a29ef2aa19d37a56e521524b931818a08cf0cb75
+source-git-commit: cf927f5cc1fca3720716349b1758a47c7b395218
 workflow-type: tm+mt
-source-wordcount: '4071'
+source-wordcount: '4074'
 ht-degree: 21%
 
 ---
@@ -386,6 +386,7 @@ ht-degree: 21%
    + [Overzicht van microservices voor assets](/help/assets/asset-microservices-overview.md)
    + [Toegankelijkheid in [!DNL Assets]](/help/assets/accessibility.md)
    + Digitale middelen beheren {#manage}
+      + [Micro-Frontend element selecteren](/help/assets/asset-selector.md)
       + [Assets delen](/help/assets/share-assets.md)
       + [Activiteiten en DAM-taken bewaken](/help/assets/assets-activity-history.md)
       + [Aan de slag met microservices voor assets](/help/assets/asset-microservices-configure-and-use.md)
