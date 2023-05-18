@@ -2,9 +2,9 @@
 title: Infrastructuur- en servicecontrole in AEM as a Cloud Service
 description: Infrastructuur- en servicecontrole in AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: eb4c49b8d173d1d402d22824bc98e4713ab54c31
+source-git-commit: 34fed4e64b49ab32e7025c9654d930e3fa362a52
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ Alle AEM as a Cloud Service omgevingen worden gecontroleerd op beschikbaarheid. 
 ### Aangepaste controle {#custom-monitoring}
 
 Met Aangepaste controle kunnen klanten maximaal vijf verschillende URL&#39;s voor westeigenschappen opgeven voordat ze [live gaan](/help/journey-migration/go-live.md). Deze URL&#39;s moeten geldig zijn en een HTTP 200-antwoordcode retourneren. Deze monitoren ondersteunen klanten die [hun eigen CDN plaatsen](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) voor Adobe CDN en om het even welk extern verkeer dat vóór AEM as a Cloud Service verplettert die niet onder de controle van Adobe is. Het alarm resulterend de controles van de Controle van de Controle van de Controle van de Douane zal Adobe steunteams en processen in dienst nemen.
+
+>[!NOTE]
+>
+> Deze functionaliteit wordt alleen aangeboden voor klanten met Advanced Cloud Support. Als u vragen hebt, kunt u een ondersteuningskwestie aankaarten via de beheerconsole.
 
 ## Interne modulemonitoring {#module-monitoring}
 
