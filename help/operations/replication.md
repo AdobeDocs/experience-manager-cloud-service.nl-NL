@@ -2,10 +2,10 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1a42cfaa1010686279bc11ca92f50afc75d89e9d
+source-git-commit: 6b2ce7a4fb355e9ce78fbd7e0efee65c09fed932
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 1%
+source-wordcount: '1381'
+ht-degree: 0%
 
 ---
 
@@ -70,7 +70,7 @@ U kunt dit ook bereiken door een workflowmodel te maken dat gebruikmaakt van de 
    ![Processtap](/help/operations/assets/processstep.png)
 
 1. Klik op de stap Proces in de flow en selecteer **Configureren** door op het moersleutelpictogram te drukken
-1. Klik op de knop **Proces** en selecteert u `Publish Content Tree` in de vervolgkeuzelijst
+1. Klik op de knop **Proces** en selecteert u `Publish Content Tree` in de vervolgkeuzelijst, controleert u vervolgens de **Handler Advance** selectievakje
 
    ![Treeactivation](/help/operations/assets/newstep.png)
 
