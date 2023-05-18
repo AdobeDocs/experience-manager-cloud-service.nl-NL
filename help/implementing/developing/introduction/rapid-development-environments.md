@@ -2,7 +2,7 @@
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
+source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
 workflow-type: tm+mt
 source-wordcount: '3325'
 ht-degree: 0%
@@ -118,13 +118,7 @@ Nadat u een RDE voor uw programma hebt toegevoegd met gebruik van Cloud Manager,
    3. Workspace: <no workspace selected>
    ```
 
-1. Controleren of de aanmelding is voltooid door uitvoering
-
-   `aio cloudmanager:list-programs`
-
-   Dit zou alle programma&#39;s onder uw gevormde organisatie moeten een lijst maken.
-
-   Houd er rekening mee dat u lid moet zijn van Cloud Manager **Ontwikkelaar - Cloud Service** Productprofiel. Zie [deze pagina](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer informatie .
+   Voor deze stap moet u lid zijn van Cloud Manager **Ontwikkelaar - Cloud Service** Productprofiel. Zie [deze pagina](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer informatie .
 
    Alternatief, kunt u bevestigen dat u deze ontwikkelaarrol hebt als u login aan de ontwikkelaarsconsole kunt door dit bevel in werking te stellen:
 
@@ -138,6 +132,13 @@ Nadat u een RDE voor uw programma hebt toegevoegd met gebruik van Cloud Manager,
    ```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
+
+1. Controleren of de aanmelding is voltooid door uitvoering
+
+   `aio cloudmanager:list-programs`
+
+   Dit zou alle programma&#39;s onder uw gevormde organisatie moeten een lijst maken.
+
 
 Zie voor meer informatie en demonstratie de [hoe te opstelling RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) videozelfstudie.
 
