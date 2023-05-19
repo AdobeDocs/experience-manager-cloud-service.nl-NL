@@ -3,9 +3,9 @@ title: Asset Selector voor [!DNL Adobe Experience Manager] als [!DNL Cloud Servi
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 22d2a2235c8696fce76369d3ffe369bcbaa3f6f2
+source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
 workflow-type: tm+mt
-source-wordcount: '2343'
+source-wordcount: '2366'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ De Kiezer van activa verstrekt vele voordelen, zoals:
 * Mogelijkheid om opslagruimten binnen een IMS-organisatie te verplaatsen voor het selecteren van bedrijfsmiddelen.
 
 * De mogelijkheid om elementen te sorteren op naam, afmetingen en grootte en ze weer te geven in de weergave Lijst, Raster, Galerie of Waterval.
+
+Het toepassingsgebied van dit artikel is aan te tonen hoe u Asset Selector kunt gebruiken met een [!DNL Adobe] toepassing onder Verenigde Shell of wanneer u reeds een imsToken hebt die voor authentificatie wordt geproduceerd. Deze workflows worden in dit artikel niet-SUSI-stromen genoemd.
 
 Voer de volgende taken uit om Asset Selector te integreren en te gebruiken in uw [!DNL Experience Manager Assets as a Cloud Service] opslagplaats:
 
@@ -361,8 +363,8 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 |---|---|---|---|---|
 | *spoor* | boolean | Nee | false | Indien gemarkeerd `true`, Asset Selector wordt weergegeven in een linkerspoorweergave. Als het is gemarkeerd `false`, wordt de Asset Selector weergegeven in de modale weergave. |
 | *imsOrg* | string | Ja |  | Adobe Identity Management System-id (IMS) die tijdens de provisioning is toegewezen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] voor uw organisatie. De `imsOrg` is vereist om te verifiëren of de organisatie waartoe u toegang hebt onder Adobe IMS valt of niet. |
-| *imsToken* | string | Nee |  | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is niet vereist als u de SUSI-flow gebruikt. Nochtans, wordt het vereist als u niet-SUSI stroom gebruikt. |
-| *apiKey* | string | Nee |  | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is niet vereist als u de SUSI-flow gebruikt. Dit is echter vereist in niet-SUSI-stromen. |
+| *imsToken* | string | Nee |  | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is vereist als u de niet-SUSI flow gebruikt. |
+| *apiKey* | string | Nee |  | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is vereist als u de niet-SUSI flow gebruikt. |
 | *rootPath* | string | Nee | /content/dam/ | Mappad waaruit de middelen worden weergegeven door de Asset Selector. `rootPath` kan ook in de vorm van inkapseling worden gebruikt. Voorbeeld: `/content/dam/marketing/subfolder/`Met Asset Selector kunt u niet door een bovenliggende map bladeren, maar alleen de onderliggende mappen weergeven. |
 | *pad* | string | Nee |  | Pad dat wordt gebruikt om naar een specifieke map met elementen te navigeren wanneer de Asset Selector wordt weergegeven. |
 | *filterSchema* | array | Nee |  | Model dat wordt gebruikt om filtereigenschappen te vormen. Dit is handig wanneer u bepaalde filteropties in de Asset Selector wilt beperken. |
