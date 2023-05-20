@@ -31,7 +31,7 @@ Gebruiken **Zoeken in Forms** kunt u deze deelvensters aanpassen en uitbreiden, 
 
 De **Zoeken in Forms** een selectie buiten de box van [voorspellen](#predicates-and-their-settings) die u kunt combineren en definiëren. De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) kan worden geraadpleegd via:
 
-* **Opties**
+* **Gereedschappen**
    * **Algemeen**
       * **Zoeken in formulieren**
 
@@ -201,7 +201,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
     </ul> </td>
   </tr>
   <tr>
-   <td>Groeperen</td>
+   <td>Groep</td>
    <td>Zoeken naar voorspellingen voor groep (alleen gebruikt binnen het voorvoegsel Inzichten).</td>
    <td>
     <ul>
@@ -224,7 +224,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
    <td>Zoek volgens een selectie van parameters van Inzichten.</td>
    <td>Dit is een complexe predikaat die uit veelvoudige predikaten wordt samengesteld:
     <ul>
-     <li>Groeperen</li>
+     <li>Groep</li>
      <li>Bereik</li>
      <li>Opties</li>
     </ul> 
@@ -688,7 +688,7 @@ In de volgende tabel worden de machtigingen weergegeven die vereist zijn voor he
 <table>
  <thead>
   <tr>
-   <td><strong>Actie</strong></td>
+   <td><strong>Handeling</strong></td>
    <td><strong>Machtigingen</strong></td>
   </tr>
  </thead>

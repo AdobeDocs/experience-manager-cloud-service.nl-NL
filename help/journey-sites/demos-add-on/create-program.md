@@ -82,7 +82,7 @@ Nadat u zich hebt aangemeld bij Cloud Manager, kunt u een nieuw sandboxprogramma
 
 1. Invoegtoepassing wordt nu toegelaten als optie, maar zijn inhoud moet aan AEM worden opgesteld om beschikbaar te zijn. Tik of klik op de pagina met het programmaoverzicht **Start** om de pijpleiding te beginnen om de toe:voegen-on inhoud aan AEM op te stellen.
 
-   ![Begin](assets/deploy.png)
+   ![Start](assets/deploy.png)
 
 1. De pijpleiding begint en u wordt genomen aan een pagina die de vooruitgang van de plaatsing detailleert. U kunt bij het maken van het programma weg van dit scherm navigeren en indien nodig later terugkeren.
 

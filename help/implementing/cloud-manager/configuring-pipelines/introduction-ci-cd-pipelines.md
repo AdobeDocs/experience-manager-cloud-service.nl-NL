@@ -68,7 +68,7 @@ Deze worden later in dit document uitgebreid beschreven.
 
 In de volgende tabel vindt u een overzicht van alle pijpleidingen die beschikbaar zijn in Cloud Manager en het gebruik ervan.
 
-| Type pijpleiding | Implementatie- of codekwaliteit | Broncode | Doel | Opmerkingen |
+| Type pijpleiding | Implementatie- of codekwaliteit | Broncode | Doel | Notities |
 |--- |--- |--- |---|---|
 | Productie of niet-productie | Implementatie | Volledige stapel | Plaatst gelijktijdig achter-eind en front-end code bouwt samen met configuraties HTTPD/Dispatcher | Wanneer front-end code met AEM servercode moet worden opgesteld.<br>Wanneer de pijpleidingen aan de voorzijde of de configuratieleidingen aan de Webzijde nog niet zijn goedgekeurd. |
 | Productie of niet-productie | Implementatie | Voorkant | Implementeert front-end code-build die een of meer client-side UI-toepassingen bevat | Ondersteunt meerdere, gelijktijdige front-end pijpleidingen<br>Veel sneller dan implementaties op volledige stapel |

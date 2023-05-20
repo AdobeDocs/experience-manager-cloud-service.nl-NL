@@ -52,7 +52,7 @@ Het is belangrijk te begrijpen dat voor de front-end ontwikkelaar geen AEM toega
 
 Voor de front-end ontwikkelaar is geen AEM kennis nodig.
 
-### Opties {#tools}
+### Gereedschappen {#tools}
 
 | Gereedschap | Rol |
 |---|---|

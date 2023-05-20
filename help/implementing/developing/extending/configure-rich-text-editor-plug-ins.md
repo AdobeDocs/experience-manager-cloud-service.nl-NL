@@ -62,7 +62,7 @@ Nadat u een plug-in hebt geactiveerd, volgt u deze richtlijnen om de `features` 
 |  | Alle functies inschakelen | Schakel een aantal specifieke functies in. | Alle functies uitschakelen. |
 |---|---|---|---|
 | Naam | functies | functies | functies |
-| Type | Tekenreeks | `String` (meerdere tekenreeksen; Type instellen op `String` en klik op `Multi` in CRXDE Lite) | Tekenreeks |
+| Type | String | `String` (meerdere tekenreeksen; Type instellen op `String` en klik op `Multi` in CRXDE Lite) | String |
 | Waarde | `*` (een sterretje) | Instellen op een of meer functiewaarden. | - |
 
 ## Begrijp de findreplace plug-in {#findreplace}

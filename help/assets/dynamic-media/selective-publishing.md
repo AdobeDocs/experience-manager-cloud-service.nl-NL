@@ -10,7 +10,7 @@ exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '2544'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -111,7 +111,7 @@ Zie [Een Dynamic Media-configuratie maken](#configuring-dynamic-media-cloud-serv
 
 1. In de **[!UICONTROL Manage Publication - Options]** pagina, onder **[!UICONTROL Action]**, selecteert u het gewenste activeringstype.
 
-   | Actie | Beschrijving |
+   | Handeling | Beschrijving |
    | --- | --- |
    | **[!UICONTROL Publish]** (naar Experience Manager) | Selecteer deze optie als u elementen naar de Experience Manager wilt publiceren voor een beveiligde voorvertoning. |
    | **[!UICONTROL Publish to Dynamic Media]** | Selecteer deze optie als u elementen naar Dynamic Media wilt publiceren voor levering in het publieke domein of als u functies wilt gebruiken, zoals Slim uitsnijden of Dynamische vertoningen.<br>Deze optie is alleen beschikbaar als **[!UICONTROL Dynamic Media Publish mode]** is ingesteld op **[!UICONTROL Selective Publish]** in de eigenschappen van de map. |
@@ -142,7 +142,7 @@ Zie [Een Dynamic Media-configuratie maken](#configuring-dynamic-media-cloud-serv
 
 1. In de **[!UICONTROL Manage Publication - Options]** pagina, onder **[!UICONTROL Action]** Selecteer het gewenste type deactivering.
 
-   | Actie | Beschrijving |
+   | Handeling | Beschrijving |
    | --- | --- |
    | **[!UICONTROL Unpublish]** (van Experience Manager) | Selecteer deze optie als u de publicatie van elementen uit Experience Manager wilt opheffen. |
    | **[!UICONTROL Unpublish from Dynamic Media]** | Als u de publicatie van elementen uit Dynamic Media wilt opheffen, selecteert u deze optie.<br>Deze optie is alleen beschikbaar als **[!UICONTROL Dynamic Media Publish mode]** is ingesteld op **[!UICONTROL Selective Publish]** in de eigenschappen van de map. |
@@ -229,7 +229,7 @@ U kunt deze selectievakjes desgewenst ook gebruiken met de **[!UICONTROL Publish
 
 1. Onder **[!UICONTROL Schedule]**, stelt u de timing van de deactivering in.
 
-   | Geselecteerd schema | Wat er gebeurt |
+   | Geselecteerd schema | Wat gebeurt er? |
    | --- | --- |
    | Nu | De geselecteerde actie wordt onmiddellijk uitgevoerd. |
    | Later | De geselecteerde actie wordt uitgevoerd op de geselecteerde bepaalde datum en tijd. |

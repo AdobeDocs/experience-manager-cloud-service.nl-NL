@@ -127,7 +127,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
 1. De wizard **Publicatie beheren** wordt gestart. De eerste stap, **Opties**, kunt u:
 
-   * **Actie**
+   * **Handeling**
 
       Kies of u de geselecteerde pagina&#39;s wilt publiceren of de publicatie ervan ongedaan wilt maken.
 

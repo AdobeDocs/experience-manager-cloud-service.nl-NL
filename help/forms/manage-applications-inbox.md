@@ -75,7 +75,7 @@ Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitv
 De gedetailleerde taakmening omvat de volgende secties:
 
 * Taakdetails
-* formulier
+* Formulier
 * Workflowdetails
 * Werkbalk Handelingen
 
@@ -83,7 +83,7 @@ De gedetailleerde taakmening omvat de volgende secties:
 
 In de sectie Taakdetails wordt informatie over de taak weergegeven. De weergegeven informatie is afhankelijk van de configuratie-instellingen van de [Taakstap toewijzen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) in de workflow. In het bovenstaande voorbeeld worden de beschrijving, de status, de begindatum en de workflow weergegeven die voor de taak worden gebruikt. U kunt ook een bestand aan de taak koppelen.
 
-#### formulier {#form}
+#### Formulier {#form}
 
 Op het tabblad Formulier in het hoofdinhoudsgebied worden het verzonden formulier en eventuele bijlagen op veldniveau weergegeven.
 

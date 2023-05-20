@@ -5,7 +5,7 @@ exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 9%
+ht-degree: 0%
 
 ---
 
@@ -16,8 +16,8 @@ Designer is een toepassing waarmee u met eenvoudige muisfuncties grafische formu
 De volgende documenten bevatten instructies voor het gebruik van ontwerper voor het maken van XDP-sjablonen en -PDF forms:
 
 + [Designer gebruiken](assets/using-designer-cs.pdf)
-+ [Zelfstudies om snel aan de slag te gaan met Designer ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
-+ [Voorbeelden in Designer ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-samples.pdf)
-+ [Grondbeginselen van scripts voor Designer ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
-+ [Scriptreferentie in Designer ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
-+ [Referentiehandleiding van FormCalc voor Designer ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)
++ [Tutorials voor snel aan de slag met Designer](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
++ [Voorbeelden voor Designer](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-samples.pdf)
++ [Grondbeginselen van scripts in Designer](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
++ [Scriptreferentie in Designer](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
++ [Referentiehandleiding van FormCalc in Designer](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)

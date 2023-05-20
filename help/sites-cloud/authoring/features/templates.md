@@ -5,7 +5,7 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '4596'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
@@ -234,7 +234,7 @@ De **Modus** in de werkbalk kunt u het juiste aspect van de sjabloon selecteren 
 
 * [Structuur](#editing-a-template-structure-template-author)
 * [Oorspronkelijke inhoud](#editing-a-template-initial-content-author)
-* [Indeling](#editing-a-template-layout-template-author)
+* [Layout](#editing-a-template-layout-template-author)
 
 ![Sjabloonbewerkingsmodus selecteren](/help/sites-cloud/authoring/assets/templates-mode.png)
 
@@ -268,7 +268,7 @@ Wanneer een component is ontgrendeld, kunt u de [initiële inhoud](#editing-a-te
 >
 >In **Oorspronkelijke inhoud** zowel in de modus als op de resulterende pagina&#39;s kunnen alle ontgrendelde onderdelen die een toegankelijk bovenliggend element hebben (d.w.z. onderdelen in een lay-outcontainer) worden verwijderd.
 
-#### Indeling {#template-layout}
+#### Layout {#template-layout}
 
 Met de [lay-out](#editing-a-template-layout-template-author) kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf bepalen. De modus **Lay-out** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus [**Lay-out** voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
 
@@ -450,7 +450,7 @@ Onder de **Eigenschappen** kunt u kiezen welke componenten beschikbaar zijn voor
 Op de **Toegestane componenten** -tab, definieert u welke componenten beschikbaar zijn voor de lay-outcontainer.
 
 * De componenten worden gegroepeerd op hun componentgroepen, die kunnen worden uitgevouwen en samengevouwen.
-* U kunt een hele groep selecteren door de naam van de groep te controleren. U kunt de selectie van alle groepen ongedaan maken door de selectie uit te schakelen.
+* U kunt een hele groep selecteren door de naam van de groep te controleren en u kunt de selectie van alle groepen opheffen door de selectie uit te schakelen.
 * Een min vertegenwoordigt minstens één maar niet alle punten in een groep worden geselecteerd.
 * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
 * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.

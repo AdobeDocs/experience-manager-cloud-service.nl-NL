@@ -1,13 +1,13 @@
 ---
 title: Thema's maken en gebruiken
 description: U kunt thema's gebruiken om een adaptief formulier te stileren en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
-source-git-commit: ca61b72fd442cf50319861d5d8e6d23343056358
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 0%
 
 ---
-
 
 # Thema&#39;s in adaptieve Forms (kerncomponenten) {#themes-for-af-using-core-components}
 

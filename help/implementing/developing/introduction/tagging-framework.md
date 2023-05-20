@@ -90,8 +90,8 @@ In de volgende tabel ziet u een voorbeeld `TagID`s, hun elementen en hoe `TagID`
 |---|---|---|---|---|---|
 | `dam:fruit/apple/braeburn` | `dam` | `fruit/apple/braeburn` | `fruit`,`apple` | `braeburn` | `content/cq:tags/dam/fruit/apple/braeburn` |
 | `color/red` | `default` | `color/red` | `color` | `red` | `/content/cq:tags/default/color/red` |
-| `sky` | `default` | `sky` | (none) | `sky` | `/content/cq:tags/default/sky` |
-| `dam:` | `dam` | (none) | (none) | (none) | `/content/cq:tags/dam` |
+| `sky` | `default` | `sky` | (geen) | `sky` | `/content/cq:tags/default/sky` |
+| `dam:` | `dam` | (geen) | (geen) | (geen) | `/content/cq:tags/dam` |
 | `content/cq:tags/category/car` | `category` | `car` | `car` | `car` | `content/cq:tags/category/car` |
 
 ### Localisatie van tagtitel {#localization-of-tag-title}

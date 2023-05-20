@@ -82,7 +82,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    Voor technische details over de initiële inhoud raadpleegt u [Oorspronkelijke inhoud](#initial-content) in dit document.
 
-   **Indeling**
+   **Layout**
 
    * U kunt de sjabloonlay-out voor een reeks apparaten definiëren.
    * De responsieve indeling voor sjablonen werkt op dezelfde manier als voor het ontwerpen van pagina&#39;s.
@@ -246,7 +246,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
-   <td>read</td>
+   <td>lezen</td>
    <td>De anonieme Gebruiker van het Web moet malplaatjes lezen terwijl het teruggeven van een pagina</td>
   </tr>
   <tr>
@@ -262,7 +262,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
-   <td>read</td>
+   <td>lezen</td>
    <td>De anonieme Gebruiker van het Web moet beleid lezen terwijl het teruggeven van een pagina</td>
   </tr>
   <tr>
@@ -273,7 +273,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
   <tr>
    <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td>
    <td>Sjabloonauteur</td>
-   <td>read</td>
+   <td>lezen</td>
    <td>Sjabloonauteur maakt een nieuwe sjabloon op basis van een van de vooraf gedefinieerde sjabloontypen.</td>
   </tr>
   <tr>
@@ -450,7 +450,7 @@ Definieert de eerste inhoud die een nieuwe pagina krijgt wanneer deze wordt gema
 * De `root` node bevat een lijst met componenten om te definiëren wat er beschikbaar is op de resulterende pagina.
 * Als er inhoud wordt toegevoegd aan een component in de structuurmodus en die component vervolgens wordt ontgrendeld (of vice versa), wordt deze inhoud gebruikt als initiële inhoud.
 
-### Indeling {#layout}
+### Layout {#layout}
 
 Wanneer [bewerken van een sjabloon die u kunt definiëren](/help/sites-cloud/authoring/features/templates.md)gebruikt [standaardresponsieve indeling](/help/sites-cloud/authoring/features/responsive-layout.md).
 

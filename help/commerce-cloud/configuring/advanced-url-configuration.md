@@ -13,7 +13,7 @@ exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0
 source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
 workflow-type: tm+mt
 source-wordcount: '2211'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -39,7 +39,7 @@ Om het `UrlProvider` de dienst volgens SEO vereisten en vereist een project een 
 
 Hiermee configureert u de URL&#39;s van de productpagina&#39;s en ondersteunt u de volgende opties:
 
-* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (standaardwaarde)
+* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (standaard)
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
@@ -63,7 +63,7 @@ Met de bovenstaande voorbeeldgegevens ziet een product-variant-URL die is opgema
 
 Hiermee configureert u de URL&#39;s van de pagina&#39;s in de categorie- of productlijst en ondersteunt u de volgende opties:
 
-* `{{page}}.html/{{url_path}}.html` (standaardwaarde)
+* `{{page}}.html/{{url_path}}.html` (standaard)
 * `{{page}}.html/{{url_key}}.html`
 
 In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):

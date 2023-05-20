@@ -18,7 +18,7 @@ Zodra u hebt ingesteld [!DNL AEM Forms] as a Cloud Service, de groepen die in on
 <table>
  <tbody>
   <tr>
-   <td>Groeperen</td> 
+   <td>Groep</td> 
    <td>Machtigingen</td> 
   </tr>
   <tr>

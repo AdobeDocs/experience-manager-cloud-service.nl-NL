@@ -148,7 +148,7 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` zijn mogel
    <td>Als dit een ontwerpknooppunt is (<code>cq:Page</code>).</td>
   </tr>
   <tr>
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Template.html">Sjabloonmodel</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Template.html">Sjabloon</a></td>
    <td>Als dit een <code>cq:Template</code> knooppuntbron.</td>
   </tr>  
   <tr>
@@ -355,6 +355,6 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 | [Knooppunt](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knooppunt van de tag. |
 | ... | Alles waaraan de bron van de tag kan worden aangepast. |
 
-#### Overig {#other}
+#### Overige {#other}
 
 Daarnaast biedt Sling / JCR / OCM ook een [`AdapterFactory`](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory) voor aangepaste OCM ([Objectinhoud toewijzen](https://jackrabbit.apache.org/object-content-mapping.html)).

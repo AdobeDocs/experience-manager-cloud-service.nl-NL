@@ -5,7 +5,7 @@ exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
 workflow-type: tm+mt
 source-wordcount: '3019'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -238,7 +238,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
    >
    >Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet u de pagina vernieuwen om de geplakte inhoud te zien.
 
-* **Groeperen**
+* **Groep**
 
    Hierdoor kunt u meerdere componenten tegelijk selecteren. Hetzelfde kan worden bereikt op een desktopapparaat met een **Ctrl+klikken** of **Command+klikken**.
 
@@ -250,7 +250,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
    ![Bovenliggende knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
-* **Indeling**
+* **Layout**
 
    Hierdoor kunt u de [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) van de geselecteerde component. Dit geldt alleen voor de geselecteerde component en activeert de component [Lay-outmodus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) voor de gehele pagina.
 

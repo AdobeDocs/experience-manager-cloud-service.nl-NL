@@ -50,7 +50,7 @@ Voor een grafische illustratie hiervan, verwijs naar de voorbeelden hieronder:
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
-* **Opmerkingen**
+* **Notities**
 
    Deze combinatie van &quot;Overschrijven&quot; en &quot;Sluitereffect&quot; resulteert in consistente validatieresultaten, zelfs voor herhaalde inname.
 
@@ -64,7 +64,7 @@ Voor een grafische illustratie hiervan, verwijs naar de voorbeelden hieronder:
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
-* **Opmerkingen**
+* **Notities**
 
    Deze combinatie van &quot;Overschrijven&quot; en &quot;Sluitereffect&quot; resulteert in consistente validatieresultaten voor de eerste opname.
 

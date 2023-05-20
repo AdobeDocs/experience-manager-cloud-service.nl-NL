@@ -55,7 +55,7 @@ Pakketstructuurregels
 Om het rollen plaatsingen te steunen, hebben AEM as a Cloud Service pakketten, waarvan schakelaars voorbeelden zijn, een strikte scheiding tussen &quot;onveranderlijke&quot;en &quot;veranderbare&quot;inhoud. Pakketten moeten zorgvuldig worden gescheiden tussen de volgende verpakkingseenheden:
 
 * `/apps`
-* `/content` and `/conf`
+* `/content` en `/conf`
 
 De aansluitingen moeten zich houden aan deze verpakkingsrichtlijnen, die worden beschreven in [dit artikel](/help/implementing/developing/introduction/aem-project-content-package-structure.md). De bestaande schakelaars zouden moeten worden gerefactored om, eveneens in overeenstemming te zijn.
 

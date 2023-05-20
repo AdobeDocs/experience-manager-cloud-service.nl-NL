@@ -8,7 +8,7 @@ exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1228'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -639,7 +639,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><p><code>maximum</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee geeft u de bovengrens voor numerieke waarden en datums op. Standaard wordt de maximumwaarde opgenomen.</p> </td>
    <td>
     <ul>
@@ -650,7 +650,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><p><code>minimum</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee geeft u de ondergrens voor numerieke waarden en datums op. Standaard wordt de minimumwaarde opgenomen.</p> </td>
    <td>
     <ul>
@@ -683,7 +683,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><p><code>minLength</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee wordt het minimale aantal tekens opgegeven dat in een component is toegestaan. De minimumlengte moet gelijk zijn aan of groter zijn dan nul.</p> </td>
    <td>
     <ul>
@@ -692,7 +692,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><code>maxLength</code></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Hiermee wordt het maximale aantal tekens opgegeven dat in een component is toegestaan. De maximumlengte moet gelijk zijn aan of groter zijn dan nul.</td>
    <td>
     <ul>
@@ -701,7 +701,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><p><code>pattern</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee geeft u de volgorde van de tekens op. Een component accepteert de tekens als de tekens overeenkomen met het opgegeven patroon.</p> <p>De eigenschap pattern verwijst naar het validatiepatroon van de overeenkomstige component Adaptief formulier.</p> </td>
    <td>
     <ul>
@@ -710,13 +710,13 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><code>maxItems</code></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Geeft het maximale aantal items in een array op. De maximale items moeten gelijk zijn aan of groter zijn dan nul.</td>
    <td> </td>
   </tr>
   <tr>
    <td><code>minItems</code></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Geeft het minimale aantal items in een array op. De minimale items moeten gelijk zijn aan of groter zijn dan nul.</td>
    <td> </td>
   </tr>

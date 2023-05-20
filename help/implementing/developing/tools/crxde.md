@@ -145,7 +145,7 @@ De **Naam knop wijzigen** wijzigt de naam van het geselecteerde knooppunt.
 
 De **Mixins, knop** staat u toe om mixingstypes aan het knooptype toe te voegen. De mixintypen worden meestal gebruikt om geavanceerde functies toe te voegen.
 
-### Opties {#tools-button}
+### Gereedschappen {#tools-button}
 
 De **Gereedschapknop** is een vervolgkeuzemenu met de volgende gereedschappen beschikbaar:
 

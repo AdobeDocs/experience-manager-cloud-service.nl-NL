@@ -100,7 +100,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
 #### Vitale eigenschappen {#vital-properties}
 
-* **Basisknooppunt**:
+* **Hoofdknooppunt**:
    * `<mycomponent> (cq:Component)` - Hiërarchieknooppunt van component.
 * **Vitale eigenschappen**:
    * `jcr:title` - titel van de component; wordt bijvoorbeeld als label gebruikt wanneer de component in het dialoogvenster [Browser voor componenten](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) en [Componentenconsole](/help/sites-cloud/authoring/features/components-console.md)

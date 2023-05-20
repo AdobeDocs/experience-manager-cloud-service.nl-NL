@@ -1,13 +1,13 @@
 ---
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud ontwerpen met de Universal Editor {#authoring}
 

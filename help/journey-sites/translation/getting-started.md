@@ -49,7 +49,7 @@ Er zijn een aantal vereisten voordat u begint met het vertalen van AEM inhoud.
 >
 >Als u niet vertrouwd bent met het gebruik van een grootschalig CMS als AEM, kunt u overwegen om de [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentatie voordat u verdergaat. De documentatie voor basisverwerking maakt geen deel uit van de reis. Ga daarom na voltooiing terug naar deze pagina.
 
-### Opties {#tools}
+### Gereedschappen {#tools}
 
 * Sandbox-toegang voor het testen van het vertalen van uw inhoud
 * Credentials om verbinding te maken met uw voorkeursvertaalservice

@@ -239,7 +239,7 @@ U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk 
 
 1. Definieer de vereiste eigenschappen:
 
-   * **Sjabloonmodel**
+   * **Sjabloon**
    * **Titel**
    * **Naam** - indien niet ingevuld, wordt het afgeleid van de titel
    * **Beschrijving**

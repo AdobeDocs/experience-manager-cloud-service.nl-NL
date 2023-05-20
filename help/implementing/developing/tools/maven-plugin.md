@@ -5,7 +5,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
 source-wordcount: '1851'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -132,7 +132,7 @@ Naast de volgende parameters, zie de beschrijvingen in [Algemene parameters](#co
 | `project` | `org.apache.maven.project.MavenProject` | Ja | Het project waarvoor de insteekmodule is geconfigureerd | Het Maven-project dat impliciet is omdat het project de plug-inconfiguratie bevat |
 | `repositoryId` (POM), `repoID` (opdrachtregel) | `String` | Nee | `temp` | De id van de opslagplaats waarvan het artefact wordt opgehaald |
 | `repositoryUrl` (POM), `repoURL` (opdrachtregel) | `String` | Nee | Geen | De URL van de opslagplaats waarvan het artefact wordt opgehaald |
-| version | Tekenreeks | Nee | Geen | De versie van het artefact dat moet worden geïnstalleerd |
+| versie | String | Nee | Geen | De versie van het artefact dat moet worden geïnstalleerd |
 
 ### ls {#ls}
 

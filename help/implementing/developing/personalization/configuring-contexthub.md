@@ -214,7 +214,7 @@ Bewerk de configuratie van ContextHub en controleer de optie **Foutopsporing**
 
 CRXDE Lite gebruiken om de eigenschap in te stellen `debug` tot **true** onder:
 
-* `/conf/global/settings/cloudsettings` or
+* `/conf/global/settings/cloudsettings` of
 * `/conf/<site>/settings/cloudsettings`
 
 ### Het registreren zuivert Berichten voor ContextHub {#logging-debug-messages-for-contexthub}
@@ -248,6 +248,6 @@ ContextHub kan worden onbruikbaar gemaakt om het te verhinderen js/css te laden 
    1. Selecteer **ContextHub-configuratie** en klik of tik **Geselecteerd element bewerken**
    1. Klikken of tikken **ContextHub uitschakelen** en klik of tik **Opslaan**
 
-or
+of
 
 * CRXDE Lite gebruiken om de eigenschap in te stellen `disabled` tot **true** krachtens `/conf/global/settings/cloudsettings/<configName>/contexthub`

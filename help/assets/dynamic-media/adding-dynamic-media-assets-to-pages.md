@@ -91,7 +91,7 @@ U kunt Dynamic Media-componenten op twee manieren lokaliseren:
 
    >[!NOTE]
    >
-   >Niet alle talen die beschikbaar zijn in de **[!UICONTROL Language]** zijn tokens toegewezen.
+   >Niet alle talen die beschikbaar zijn in de **[!UICONTROL Language]** aan het menu zijn tokens toegewezen.
 
 ## Beschikbare Dynamic Media-componenten {#dynamic-media-components}
 

@@ -279,7 +279,7 @@ Voor de wijziging van het Fragment van de Ervaring die door het herschrijven pro
 De methode ontvangt de parameters als invoer:
 
 * `link`
-The 
+De 
 `String` een weergave van de koppeling die momenteel wordt verwerkt. Dit is meestal een relatieve URL die naar de bron op de auteurinstantie verwijst.
 
 * `tag`

@@ -4,7 +4,8 @@ seo-title: Creating and managing reviews in forms
 description: Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen kunnen maken over een element dat beschikbaar is in een formulier.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 topic-tags: forms-manager
-source-git-commit: 659484f80d1f31794512af5e4d190b04a9f3e4e8
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
@@ -112,5 +113,3 @@ In deze sectie wordt beschreven wat er gebeurt bij het bijwerken/beëindigen van
    1. **Initiator**: De taak die is toegewezen aan de aanvrager van de revisie is gemarkeerd als voltooid. De taak wordt verwijderd uit de sectie Melding van de revisieaanvrager.
    1. **Alles**: De revisie wordt weergegeven in de sectie Vorige revisies. Er kunnen geen verdere opmerkingen worden toegevoegd.
       ![revisie voltooid](assets/review-complete-imgg.png)
-
-

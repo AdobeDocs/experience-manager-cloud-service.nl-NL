@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '2308'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -48,7 +48,7 @@ Op basis van de laarzentrekker definieert de volgende set CSS-eigenschappen het 
 * Lettertypekleur
 * Opvulling
 * Marge
-* Fontgrootte
+* Tekengrootte
 * LineHeight
 
 Momenteel zijn LESS-variabelen alleen gedefinieerd voor deze eigenschappen van de verschillende elementen in een adaptief formulier.
@@ -354,7 +354,7 @@ De Voorwaarden (TnC) `` ``) kunt u voorwaarden en bepalingen opgeven. U kunt de 
 Knoppen zijn ook widgets. Hun opmaak wijkt echter enigszins af van die van de widgets. In Adaptive Forms bestaat een van de volgende mogelijkheden uit een knop:
 
 * input[type = tekst]
-* button
+* knop
 * element with class.button
 
 HTML code voor knop:

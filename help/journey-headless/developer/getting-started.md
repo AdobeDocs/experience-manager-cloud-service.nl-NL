@@ -127,7 +127,7 @@ Er zijn een aantal vereisten voordat u begint met een project zonder kop AEM.
 * Ervaring op het gebied van ontwikkeling die SPA maakt met React of Angular
 * Basisvaardigheden AEM het creëren van de Fragmenten van de Inhoud en het gebruiken van de redacteur
 
-### Opties {#tools}
+### Gereedschappen {#tools}
 
 * Sandbox-toegang voor het testen van de implementatie van uw project
 * Local development instance for data modelling and testing

@@ -386,9 +386,9 @@ Onder een Web.Retail pagina van het Ontwerp van de Looppas wordt gecreeerd die a
 
    | Naam | Type | Waarde |
    |---|---|---|
-   | jcr:titel | Tekenreeks | We.Retail Run |
-   | sling:resourceType | Tekenreeks | wcm/core/components/ontwerper |
-   | cq:doctype | Tekenreeks | html_5 |
+   | jcr:titel | String | We.Retail Run |
+   | sling:resourceType | String | wcm/core/components/ontwerper |
+   | cq:doctype | String | html_5 |
 
    ![Ontwerppagina bij /apps/settings/wcm/designs/we-Retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1219pm.png)
 

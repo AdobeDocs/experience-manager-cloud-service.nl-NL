@@ -5,7 +5,7 @@ exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
 source-wordcount: '4622'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -74,7 +74,7 @@ Retourneert alle geregistreerde ContextHub-winkels.
 
 Deze functie heeft geen parameters.
 
-##### Geeft als resultaat {#returns-}
+##### Retourneert {#returns-}
 
 Een voorwerp dat alle opslag ContextHub bevat. Elke winkel is een object met dezelfde naam als de winkel.
 
@@ -95,7 +95,7 @@ Hiermee wordt een winkel opgehaald als een JavaScript-object.
 
 * **`name`:** De naam waarmee de winkel is geregistreerd.
 
-##### Geeft als resultaat {#returns-getstore-name}
+##### Retourneert {#returns-getstore-name}
 
 Een object dat de winkel vertegenwoordigt.
 
@@ -131,7 +131,7 @@ Verleent toegang tot segmenten ContextHub.
 
 Retourneert de segmenten die zijn omgezet in de huidige context. Deze functie heeft geen parameters.
 
-##### Geeft als resultaat {#returns-getresolvedsegments}
+##### Retourneert {#returns-getresolvedsegments}
 
 Een array van `ContextHub.SegmentEngine.Segment` objecten.
 
@@ -169,7 +169,7 @@ Waarden kunnen objecten zijn.
 * **`tree`:** (Object of array) De gegevens die aan de winkel moeten worden toegevoegd.
 * **`options`:** (Object) Een optioneel object met opties dat wordt doorgegeven aan de functie setItem. Zie voor meer informatie de `options` parameter van [`setItem(key,value,options)`](#setitem-key-value-options).
 
-##### Geeft als resultaat {#returns-addallitems}
+##### Retourneert {#returns-addallitems}
 
 A `boolean` waarde:
 
@@ -186,7 +186,7 @@ Maakt een verwijzing van de ene toets naar de andere. Een sleutel kan niet naar 
 
 * **`anotherkey`:** De sleutel waarnaar wordt verwezen door `key`.
 
-##### Geeft als resultaat {#returns-addreference}
+##### Retourneert {#returns-addreference}
 
 A `boolean` waarde:
 
@@ -209,7 +209,7 @@ Retourneert de waarde die aan een toets is gekoppeld.
 
 * **`key`:** (String) De sleutel waarvoor de waarde moet worden geretourneerd.
 
-##### Geeft als resultaat {#returns-getitem}
+##### Retourneert {#returns-getitem}
 
 Een object dat de waarde voor de toets vertegenwoordigt.
 
@@ -221,7 +221,7 @@ Haalt de sleutels uit de opslag op. Naar keuze kunt u de sleutels terugwinnen di
 
 * **`includeInternals`:** Een waarde van `true` neemt intern gebruikte sleutels in de resultaten op. Deze toetsen beginnen met het onderstrepingsteken (`_`). De standaardwaarde is `false`.
 
-##### Geeft als resultaat {#returns-getkeys}
+##### Retourneert {#returns-getkeys}
 
 Een array met sleutelnamen ( `string` waarden).
 
@@ -229,7 +229,7 @@ Een array met sleutelnamen ( `string` waarden).
 
 Haalt de verwijzingen uit de opslag op.
 
-##### Geeft als resultaat {#returns-getreferences}
+##### Retourneert {#returns-getreferences}
 
 Een array die naar toetsen verwijst als indexen voor de toetsen waarnaar wordt verwezen:
 
@@ -244,7 +244,7 @@ Hiermee wordt de gegevensstructuur uit de opslagruimte opgehaald. Naar keuze kun
 
 * `includeInternals:` Een waarde van `true` neemt intern-gebruikte sleutel/waardeparen in de resultaten op. De sleutels van deze gegevens beginnen met het onderstrepingsteken (`_`). De standaardwaarde is `false`.
 
-##### Geeft als resultaat {#returns-gettree}
+##### Retourneert {#returns-gettree}
 
 Een object dat de gegevensstructuur vertegenwoordigt. De sleutels zijn de bezitsnamen van het voorwerp.
 
@@ -269,7 +269,7 @@ Initialiseert de winkel.
 
 Bepaalt of de gebeurtenis voor deze opslag wordt gepauzeerd.
 
-##### Geeft als resultaat {#returns-iseventingpaused}
+##### Retourneert {#returns-iseventingpaused}
 
 Een Booleaanse waarde:
 
@@ -294,7 +294,7 @@ U kunt desgewenst het activeren van de `data` gebeurtenis.
 * **`options`:** (Object) Een object met opties. De volgende objecteigenschappen zijn geldig:
    * stil: Een waarde van `true` voorkomt dat de `data` gebeurtenis. De standaardwaarde is `false`.
 
-##### Geeft als resultaat {#returns-removeitem}
+##### Retourneert {#returns-removeitem}
 
 A `boolean` waarde:
 
@@ -309,7 +309,7 @@ Hiermee verwijdert u een verwijzing uit de winkel.
 
 * **`key`:** De belangrijkste verwijzing om te verwijderen. Deze parameter komt overeen met `key` parameter van de `addReference` functie.
 
-##### Geeft als resultaat {#returns-removereference}
+##### Retourneert {#returns-removereference}
 
 A `boolean` waarde:
 
@@ -335,7 +335,7 @@ Hiermee wordt een toets waarnaar wordt verwezen, opgehaald. U kunt desgewenst he
 * **`key`:** (String) De sleutel waarvoor de verwijzing moet worden opgelost. Dit `key` parameter komt overeen met `key` parameter van de `addReference` functie.
 * **`retry`:** (Number) Het aantal herhalingen dat moet worden gebruikt.
 
-##### Geeft als resultaat {#returns-resolvereference}
+##### Retourneert {#returns-resolvereference}
 
 A `string` waarde die de referenced sleutel vertegenwoordigt. Als er geen verwijzing wordt gevonden, wordt de waarde van de optie `key` parameter wordt geretourneerd.
 
@@ -358,7 +358,7 @@ De gebeurtenisgegevens omvatten de opslagnaam, de sleutel, de vorige waarde, de 
    * `silent`: Een waarde van `true` voorkomt dat de `data` gebeurtenis. De standaardwaarde is `false`.
 * **`value`:** (Object) De waarde die aan de sleutel moet worden gekoppeld.
 
-##### Geeft als resultaat {#returns-setitem}
+##### Retourneert {#returns-setitem}
 
 A `boolean` waarde:
 
@@ -397,7 +397,7 @@ Vormt de details voor het verbinden met de dienst JSONP die dit voorwerp gebruik
 
 Keert de ruwe reactie terug die sinds de laatste vraag aan de dienst JSONP in het voorgeheugen ondergebracht is. De functie vereist geen parameters.
 
-##### Geeft als resultaat {#returns-getrawresponse}
+##### Retourneert {#returns-getrawresponse}
 
 Een object dat de onbewerkte reactie vertegenwoordigt.
 
@@ -405,7 +405,7 @@ Een object dat de onbewerkte reactie vertegenwoordigt.
 
 Hiermee wordt het serviceobject voor dit ContextHub.Store.JSONPStore-object opgehaald. Het serviceobject bevat alle informatie die nodig is om de service-URL te maken.
 
-##### Geeft als resultaat {#returns-getservicedetails}
+##### Retourneert {#returns-getservicedetails}
 
 Een object met de volgende eigenschappen:
 
@@ -427,7 +427,7 @@ Haalt URL van de dienst JSONP op.
 
 * **`resolve`:** (Boolean) Hiermee wordt bepaald of omgezette parameters in de URL moeten worden opgenomen. Een waarde van `true` stelt parameters op, en `false` niet.
 
-##### Geeft als resultaat {#returns-getserviceurl}
+##### Retourneert {#returns-getserviceurl}
 
 A `string` waarde die de service-URL vertegenwoordigt.
 
@@ -529,7 +529,7 @@ Hiermee wordt bepaald of een cookie bestaat.
 
 * **`key`:** A `String` die de sleutel bevat van het cookie waarvoor u test.
 
-##### Geeft als resultaat {#returns-exists}
+##### Retourneert {#returns-exists}
 
 A `boolean` De waarde true geeft aan dat het cookie bestaat.
 
@@ -553,7 +553,7 @@ Retourneert alle cookies met sleutels die overeenkomen met een filter.
    * Een RegExp-object: De testfunctie van het object wordt gebruikt om cookies aan te passen.
    * Een functie: Een functie die een koekjessleutel voor een gelijke test. De functie moet de koekjessleutel als parameter nemen en waar terugkeren als de test een gelijke bevestigt.
 
-##### Geeft als resultaat {#returns-getallitems}
+##### Retourneert {#returns-getallitems}
 
 Een object van cookies. Objecteigenschappen zijn cookie sleutels en sleutelwaarden zijn cookie waarden.
 
@@ -571,7 +571,7 @@ Retourneert een cookiewaarde.
 
 * **`key`:** De sleutel van het koekje waarvoor u de waarde wilt.
 
-##### Geeft als resultaat {#returns-getitem-1}
+##### Retourneert {#returns-getitem-1}
 
 De waarde van het cookie, of `null` als er geen cookie is gevonden voor de toets.
 
@@ -593,7 +593,7 @@ Retourneert een array met de sleutels van bestaande cookies die overeenkomen met
    * Een RegExp-object: De testfunctie van het object wordt gebruikt om cookies aan te passen.
    * Een functie: Een functie die een koekjessleutel voor een gelijke test. De functie moet de cookiesleutel als parameter nemen en terugkeren `true` als de test een gelijke bevestigt.
 
-##### Geeft als resultaat {#returns-getkeys-1}
+##### Retourneert {#returns-getkeys-1}
 
 Een array van tekenreeksen waarbij elke tekenreeks de sleutel is van een cookie die overeenkomt met het filter.
 
@@ -612,7 +612,7 @@ Hiermee verwijdert u een cookie. Als u het cookie wilt verwijderen, wordt de waa
 * **`key`:** A `String` waarde die staat voor de sleutel van het cookie dat moet worden verwijderd.
 * **`options`:** Een object dat eigenschapwaarden bevat voor het configureren van de cookie-kenmerken. Zie de [`setItem`](#setitem-key-value-options) functie voor informatie. De `expires` eigenschap heeft geen effect.
 
-##### Geeft als resultaat {#returns-removeitem-1}
+##### Retourneert {#returns-removeitem-1}
 
 Deze functie retourneert geen waarde.
 
@@ -635,7 +635,7 @@ Hiermee maakt u een cookie van de opgegeven sleutel en waarde en voegt u het coo
    * `secure`: A `boolean` waarde die de `Secure` kenmerk van de cookie. De standaardwaarde is `false`.
    * `path`: A `String` te gebruiken waarde als de `Path` kenmerk van de cookie. De standaardwaarde is `undefined`.
 
-##### Geeft als resultaat {#returns-setitem-1}
+##### Retourneert {#returns-setitem-1}
 
 Het cookie met de ingestelde waarde.
 
@@ -659,7 +659,7 @@ Hiermee verwijdert u alle cookies die overeenkomen met een opgegeven filter. Coo
 * **`filter`:** De `filter` in de oproep tot [`getKeys`](#getkeys-filter) functie.
 * **`options`:** De `options` in de oproep tot [`removeItem`](#removeitem-key-options) functie.
 
-##### Geeft als resultaat {#returns-vanish}
+##### Retourneert {#returns-vanish}
 
 Deze functie retourneert geen waarde.
 
@@ -678,7 +678,7 @@ Hiermee wordt de binding van een functie met een gebeurtenis opgeheven.
 * **`name`:** De [naam van de gebeurtenis](#contexthub-utils-eventing) waarvoor u de binding van de functie ongedaan maakt.
 * **`selector`:** De kiezer die de binding aangeeft. (Zie de `selector` parameter voor de [`on`](#on-name-handler-selector-triggerforpastevents) en [`once`](#once-name-handler-selector-triggerforpastevents) functies).
 
-##### Geeft als resultaat {#returns-off}
+##### Retourneert {#returns-off}
 
 Deze functie retourneert geen waarde.
 
@@ -693,7 +693,7 @@ Bindt een functie aan een gebeurtenis. De functie wordt aangeroepen telkens wann
 * **`selector`:** (Tekenreeks) Een unieke id voor de binding. U hebt de kiezer nodig om de binding te identificeren als u de `off` functie om de binding te verwijderen.
 * **`triggerForPastEvents`:** (Boolean) Geeft aan of de handler moet worden uitgevoerd voor gebeurtenissen die zich in het verleden hebben voorgedaan. Een waarde van `true` roept de manager voor vroegere gebeurtenissen aan. Een waarde van `false` roept de manager voor toekomstige gebeurtenissen aan. De standaardwaarde is `true`.
 
-##### Geeft als resultaat {#returns-on}
+##### Retourneert {#returns-on}
 
 Wanneer de `triggerForPastEvents` argument is `true`Deze functie retourneert een `boolean` waarde die aangeeft of de gebeurtenis in het verleden heeft plaatsgevonden:
 
@@ -733,7 +733,7 @@ Bindt een functie aan een gebeurtenis. De functie wordt slechts eenmaal aangeroe
 * **`selector`:** (Tekenreeks) Een unieke id voor de binding. U hebt de kiezer nodig om de binding te identificeren als u de `off` functie om de binding te verwijderen.
 * **`triggerForPastEvents`:** (Boolean) Geeft aan of de handler moet worden uitgevoerd voor gebeurtenissen die zich in het verleden hebben voorgedaan. Een waarde van `true` roept de manager voor vroegere gebeurtenissen aan. Een waarde van `false` roept de manager voor toekomstige gebeurtenissen aan. De standaardwaarde is `true`.
 
-##### Geeft als resultaat {#returns-once}
+##### Retourneert {#returns-once}
 
 Wanneer de `triggerForPastEvents` argument is `true`Deze functie retourneert een `boolean` waarde die aangeeft of de gebeurtenis in het verleden heeft plaatsgevonden:
 
@@ -771,7 +771,7 @@ Parseert een tekenreekswaarde als JSON en zet deze om in een javascript-object.
 
 * **`data`:** Een tekenreekswaarde in JSON-indeling.
 
-##### Geeft als resultaat {#returns-parse}
+##### Retourneert {#returns-parse}
 
 Een JavaScript-object.
 
@@ -801,7 +801,7 @@ Serializes Javascript-waarden en -objecten in tekenreekswaarden in de JSON-indel
 
 * **`data`:** De waarde of het object waarop serienummering moet worden toegepast. Deze functie ondersteunt booleaanse waarden, arrays, getallen, tekenreeksen en datumwaarden.
 
-##### Geeft als resultaat {#returns-stringify}
+##### Retourneert {#returns-stringify}
 
 De geserialiseerde tekenreekswaarde. Wanneer `data` is een R `egExp` waarde, retourneert deze functie een leeg object. Wanneer `data` is een functie, retourneert `undefined`.
 
@@ -817,7 +817,7 @@ ContextHub.Utils.JSON.stringify({
 });
 ```
 
-Geeft als resultaat:
+Retourneert:
 
 ```javascript
 "{'city':'Basel','country':'Switzerland','population':'173330'}":
@@ -838,7 +838,7 @@ Maakt een kopie van een gegevensobject en voegt er vanuit een tweede object de g
 * **`tree`:** Het object dat wordt gekopieerd.
 * **`secondTree`:** Het object dat wordt samengevoegd met de kopie van het dialoogvenster `tree` object.
 
-##### Geeft als resultaat {#returns-addallitems-1}
+##### Retourneert {#returns-addallitems-1}
 
 Een object dat de samengevoegde gegevens bevat.
 
@@ -850,7 +850,7 @@ Maakt een kopie van een object, zoekt en verwijdert items in de gegevensstructuu
 
 * **`tree`:** Het object dat moet worden gewist.
 
-##### Geeft als resultaat {#returns-cleanup}
+##### Retourneert {#returns-cleanup}
 
 Een kopie van de boom die is schoongemaakt.
 
@@ -863,7 +863,7 @@ Hiermee wordt de waarde opgehaald van een object voor de toets A.
 * **`tree`:** Het gegevensobject.
 * **`key`:** De sleutel voor de waarde die u wilt terugwinnen.
 
-##### Geeft als resultaat {#returns-getitem-2}
+##### Retourneert {#returns-getitem-2}
 
 De waarde die overeenkomt met de toets. Wanneer de toets onderliggende toetsen heeft, retourneert deze functie een complex object. Wanneer het type van de waarde voor de toets `undefined`, `null` wordt geretourneerd.
 
@@ -921,7 +921,7 @@ Hiermee worden alle sleutels opgehaald uit de gegevensstructuur van een object. 
 * **`parent`:** (Optioneel) De sleutel van een item in de gegevensstructuur waarvoor u de sleutels van de onderliggende items wilt ophalen.
 * **`order`:** (Optioneel) Een functie die de sorteervolgorde van de geretourneerde toetsen bepaalt. (Zie [`Array.prototype.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) op het Mozilla Developer Network.)
 
-##### Geeft als resultaat {#returns-getkeys-2}
+##### Retourneert {#returns-getkeys-2}
 
 Een array met sleutels.
 
@@ -961,7 +961,7 @@ Maakt een kopie van een bepaald object, verwijdert de opgegeven vertakking uit d
 * **`tree`:** Een gegevensobject.
 * **`key`:** De toets die moet worden verwijderd.
 
-##### Geeft als resultaat {#returns-removeitem-2}
+##### Retourneert {#returns-removeitem-2}
 
 Een kopie van het oorspronkelijke gegevensobject waarbij de toets is verwijderd.
 
@@ -1015,7 +1015,7 @@ Gebruik de resulterende array om een bruikbare sleutel te maken.
 
 * **`key`:** De `string` om te ontsmetten.
 
-##### Geeft als resultaat {#returns-sanitizekey}
+##### Retourneert {#returns-sanitizekey}
 
 Een array van `string` waarden waarbij elke tekenreeks het deel van de `key` dat werd afgebakend door slashes . vertegenwoordigt de geanimeerde sleutel. Als de geanimeerde array een lengte van nul heeft, retourneert deze functie `null`.
 
@@ -1039,7 +1039,7 @@ Hiermee voegt u een sleutel-/waardepaar toe aan de gegevensstructuur van een kop
 * **`key`:** De sleutel die moet worden gekoppeld aan de waarde die u toevoegt. De sleutel is het pad naar het item in de gegevensstructuur. Deze functie roept `ContextHub.Utils.JSON.tree.sanitize` om de toets te ontsmetten voordat u deze toevoegt.
 * **`value`:** De waarde die aan de gegevensstructuur moet worden toegevoegd.
 
-##### Geeft als resultaat {#returns-setitem-2}
+##### Retourneert {#returns-setitem-2}
 
 Een kopie van de `tree` object dat het `key`/ `value` paar.
 
@@ -1080,7 +1080,7 @@ Retourneert de winkeltypen die zijn geregistreerd als opslagkandidaten. Of wint 
 
 * **`storeType`:** (String) De naam van het winkeltype. Zie de `storeType` parameter van de [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) functie.
 
-##### Geeft als resultaat {#returns-getregisteredcandidates}
+##### Retourneert {#returns-getregisteredcandidates}
 
 Een object van winkeltypen. De objecteigenschappen zijn de namen van opslagtypen en de eigenschapswaarden zijn een array van geregistreerde opslagkandidaten.
 
@@ -1092,7 +1092,7 @@ Retourneert een winkeltype van de geregistreerde kandidaten. Als meer dan één 
 
 * `storeType`: (String) De naam van de opslagkandidaat. Zie de `storeType` parameter van de [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#registerstorecandidate-store-storetype-priority-applies) functie.
 
-##### Geeft als resultaat {#returns-getstorefromcandidates}
+##### Retourneert {#returns-getstorefromcandidates}
 
 Een object dat de geregistreerde opslagkandidaat vertegenwoordigt. Als het gewenste opslagtype niet is geregistreerd, wordt een fout gegenereerd.
 
@@ -1100,7 +1100,7 @@ Een object dat de geregistreerde opslagkandidaat vertegenwoordigt. Als het gewen
 
 Retourneert de namen van de winkeltypen die als opslagkandidaten zijn geregistreerd. Deze functie vereist geen parameters.
 
-##### Geeft als resultaat {#returns-getsupportedstoretypes}
+##### Retourneert {#returns-getsupportedstoretypes}
 
 Een array van tekenreekswaarden, waarbij elke tekenreeks het opslagtype is waarmee een opslagkandidaat is geregistreerd. Zie de `storeType` parameter van de [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) functie.
 

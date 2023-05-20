@@ -273,7 +273,7 @@ Deze architectuur staat u toe om het Verkopen met toepassing specifieke modules 
 Hierdoor kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw installatie:
 
 * Installeren
-* Begin
+* Start
 * Stoppen
 * Bijwerken
 * Verwijderen

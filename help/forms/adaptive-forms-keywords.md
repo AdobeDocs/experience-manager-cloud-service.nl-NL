@@ -10,7 +10,7 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 14%
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ Adaptieve Forms-trefwoorden zijn vooraf gedefinieerde, gereserveerde id&#39;s di
   </tr>
   <tr>
    <td><p>checkIfNull</p> </td>
-   <td><p>initialize</p> </td>
+   <td><p>initialiseren</p> </td>
    <td><p>instanceTemplateId</p> </td>
   </tr>
   <tr>
@@ -57,7 +57,7 @@ Adaptieve Forms-trefwoorden zijn vooraf gedefinieerde, gereserveerde id&#39;s di
    <td><p>instances</p> </td>
   </tr>
   <tr>
-   <td><p>title</p> </td>
+   <td><p>titel</p> </td>
    <td><p>resolveNode</p> </td>
    <td><p>syncXFAProps</p> </td>
   </tr>
@@ -102,7 +102,7 @@ Adaptieve Forms-trefwoorden zijn vooraf gedefinieerde, gereserveerde id&#39;s di
    <td><p>name</p> </td>
   </tr>
   <tr>
-   <td><p>mandatory</p> </td>
+   <td><p>verplicht</p> </td>
    <td><p>deelvenster</p> </td>
    <td><p>templateId</p> </td>
   </tr>
@@ -197,7 +197,7 @@ Adaptieve Forms-trefwoorden zijn vooraf gedefinieerde, gereserveerde id&#39;s di
    <td><p>activePart</p> </td>
   </tr>
   <tr>
-   <td><p>toolbar</p> </td>
+   <td><p>werkbalk</p> </td>
    <td><p>completionBeforeMessage</p> </td>
    <td><p>isLastPart</p> </td>
   </tr>

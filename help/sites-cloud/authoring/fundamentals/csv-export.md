@@ -5,7 +5,7 @@ exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 29%
+ht-degree: 28%
 
 ---
 
@@ -28,7 +28,7 @@ Met de wizard **CSV-export maken** kunt u het volgende selecteren:
       * Naam
       * Gewijzigd
       * Gepubliceerd
-      * Sjabloonmodel
+      * Sjabloon
       * Workflow
    * Vertaling
       * Vertaald

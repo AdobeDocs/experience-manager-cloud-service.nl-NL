@@ -303,7 +303,7 @@ Een preprocessorconfiguratie op de clientlib knoop neemt belangrijkheid over de 
 
 #### Indeling en voorbeelden {#format-and-examples}
 
-##### Format {#format}
+##### Indeling {#format}
 
 ```javascript
 config:= mode ":" processorName options*;

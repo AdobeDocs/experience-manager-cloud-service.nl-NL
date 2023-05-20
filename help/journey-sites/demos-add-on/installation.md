@@ -43,7 +43,7 @@ Er zijn minimale vereisten om over te leren en beginnen te gebruiken de Toevoegi
 
 * Basiskennis van Cloud Manager
 
-### Opties {#tools}
+### Gereedschappen {#tools}
 
 * Lid zijn van **Zakelijke eigenaar** rol in Cloud Manager voor uw organisatie
 

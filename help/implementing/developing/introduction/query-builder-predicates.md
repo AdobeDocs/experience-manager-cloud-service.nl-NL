@@ -5,7 +5,7 @@ exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 source-git-commit: 14aafcb6c4acc798b0f0e0c51ecb0726f8d567aa
 workflow-type: tm+mt
 source-wordcount: '2283'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -174,7 +174,7 @@ Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex ge
 
 * **`hasPermission`** - door komma&#39;s gescheiden JCR-bevoegdheden die de huidige gebruikerssessie ALLE moet hebben voor het desbetreffende knooppunt; bijvoorbeeld `jcr:write`, `jcr:modifyAccessControl`
 
-### language {#language}
+### taal {#language}
 
 Dit voorspelt vindt AEM pagina&#39;s in een specifieke taal. Hierbij wordt zowel naar de eigenschap language van de pagina als naar het paginapad gekeken, dat vaak de taal of landinstelling in een sitestructuur op hoofdniveau bevat.
 
@@ -233,7 +233,7 @@ Het ondersteunt facetextractie op dezelfde manier als [`daterange`](#daterange) 
 * **`notexpired`** - Booleaans, `true` nog niet verstreken (datum in de toekomst of gelijk aan), `false` voor verlopen (datum in het verleden) (vereist)
 * **`property`** - relatief pad naar `DATE` te controleren eigenschap (vereist)
 
-### path {#path}
+### pad {#path}
 
 Dit voorspelt onderzoeken binnen een bepaalde weg.
 
