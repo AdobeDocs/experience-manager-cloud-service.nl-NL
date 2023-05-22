@@ -2,9 +2,9 @@
 title: Infrastructuur- en servicecontrole in AEM as a Cloud Service
 description: Infrastructuur- en servicecontrole in AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: 34fed4e64b49ab32e7025c9654d930e3fa362a52
+source-git-commit: f55439552e253b8b71b40525454130c6f163e6d4
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Met Aangepaste controle kunnen klanten maximaal vijf verschillende URL&#39;s voo
 
 >[!NOTE]
 >
-> Deze functionaliteit wordt alleen aangeboden voor klanten met Advanced Cloud Support. Als u vragen hebt, kunt u een ondersteuningskwestie aankaarten via de beheerconsole.
+> Deze functionaliteit wordt alleen aangeboden voor klanten met [Geavanceerde cloudondersteuning.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Als u vragen hebt, kunt u een ondersteuningskwestie aankaarten via de beheerconsole.
 
 ## Interne modulemonitoring {#module-monitoring}
 
