@@ -1,19 +1,19 @@
 ---
-title: Elementen automatisch labelen met [!DNL Adobe Sensei] intelligente service
-description: Elementen labelen met een kunstmatige intelligente service die contextuele en beschrijvende bedrijfstags toepast.
+title: Hoe kunt u slimme tags toevoegen aan elementen in AEM?
+description: Voeg slimme tags toe aan elementen in AEM met een kunstmatige intelligente service die contextafhankelijke en beschrijvende bedrijfstags toepast.
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
 workflow-type: tm+mt
-source-wordcount: '2393'
+source-wordcount: '2410'
 ht-degree: 4%
 
 ---
 
 
-# Slimme tags toevoegen aan uw elementen en zoekervaring verbeteren {#smart-tag-assets-for-faster-search}
+# Slimme tags toevoegen aan elementen in AEM {#smart-tags-assets-aem}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -24,13 +24,13 @@ Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebru
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
-Op de achtergrond gebruikt de functionaliteit het kunstmatig intelligente framework van [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) om het algoritme voor imageherkenning op te leiden in de codestructuur en de taxonomie van het bedrijf. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. [!DNL Experience Manager Assets] past automatisch slimme tags toe op geüploade elementen.
+Op de achtergrond gebruikt de functionaliteit het kunstmatig intelligente framework van [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) om het algoritme voor imageherkenning op te leiden in de codestructuur en de taxonomie van het bedrijf. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen. AEM past automatisch slimme tags toe op geüploade elementen.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## Ondersteunde elementtypen {#smart-tags-supported-file-formats}
+## Ondersteunde elementtypen voor slimme tags in AEM {#smart-tags-supported-file-formats}
 
 U kunt de volgende typen elementen labelen:
 
@@ -59,7 +59,7 @@ U kunt de volgende typen elementen labelen:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-[!DNL Experience Manager] Hiermee voegt u de slimme tags standaard toe aan de op tekst gebaseerde elementen en aan video&#39;s. Als u slimme tags automatisch wilt toevoegen aan afbeeldingen, voert u de volgende taken uit.
+AEM voegt de slimme tags standaard toe aan de op tekst gebaseerde elementen en aan video&#39;s. Als u slimme tags automatisch wilt toevoegen aan afbeeldingen, voert u de volgende taken uit.
 
 * [Leer labelmodellen en -richtlijnen](#understand-tag-models-guidelines).
 * [Het model trainen](#train-model).
@@ -189,9 +189,9 @@ Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de 
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Elementen labelen met slimme tags {#tag-assets}
+## Elementen labelen met slimme tags in AEM {#tag-assets}
 
-Alle typen ondersteunde elementen worden automatisch gelabeld door [!DNL Experience Manager Assets] wanneer geüpload. Tags worden standaard ingeschakeld en werkt. [!DNL Experience Manager] past de juiste tags toe in bijna real-time. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Alle typen ondersteunde elementen worden automatisch gelabeld door [!DNL Experience Manager Assets] wanneer geüpload. Tags worden standaard ingeschakeld en werkt. AEM past de juiste slimme tags toe in bijna real-time. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * Voor afbeeldingen en video&#39;s zijn de slimme tags gebaseerd op een visueel aspect.
 
