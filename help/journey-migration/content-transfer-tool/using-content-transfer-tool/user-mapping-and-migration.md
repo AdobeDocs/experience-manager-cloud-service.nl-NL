@@ -2,9 +2,9 @@
 title: Toewijzing van gebruikers en belangrijkste migratie
 description: Overzicht van de toewijzing van gebruikers en de belangrijkste migratie
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '788'
 ht-degree: 3%
 
 ---
@@ -53,3 +53,7 @@ De volgende specifieke gevallen worden geregistreerd:
 * Als de instelling **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** is ingesteld, worden reeds overgedragen gebruikers op de instantie Cloud Service samen met de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt om inhoud in te voeren. Hiermee worden ook alle instellingen opnieuw ingesteld, inclusief de machtigingen voor de Cloud Service-instantie van het doel. Dit geldt ook voor een beheerder die aan de **beheerders** groep. De gebruiker van admin moet aan opnieuw worden toegevoegd **beheerders** groep om het toegangstoken voor CTT terug te winnen.
 * Wanneer de inhoud toevoegt wordt uitgevoerd, als de inhoud niet wordt overgebracht omdat het sinds de vorige overdracht niet is veranderd, worden de gebruikers en de groepen verbonden aan die inhoud ook niet overgebracht, zelfs als de gebruikers en de groepen ondertussen zijn veranderd. Dit komt doordat gebruikers en groepen worden gemigreerd met de inhoud waaraan ze zijn gekoppeld.
 * Als het doel-AEM Cloud Service-exemplaar een gebruiker heeft met een andere gebruikersnaam maar hetzelfde e-mailadres als een van de gebruikers op de bron AEM instantie en de functie Toewijzing gebruiker is ingeschakeld, wordt een foutbericht geschreven in de logboeken en wordt de bron AEM gebruiker niet overgebracht, aangezien slechts één gebruiker met een opgegeven e-mailadres op het doelsysteem is toegestaan.
+
+## Laatste samenvatting en rapport {#final-report}
+
+Nadat de extractie en inname met succes zijn voltooid, wordt een rapport gegenereerd met de belangrijkste migratiedetails. Zie [Hoe te om de Belangrijkste Migratie te bevestigen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-principal-migration) voor nadere bijzonderheden.

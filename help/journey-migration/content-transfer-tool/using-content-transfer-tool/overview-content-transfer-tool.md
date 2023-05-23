@@ -2,9 +2,9 @@
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '717'
 ht-degree: 38%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 38%
 
 De tool Content Transfer is door Adobe ontwikkeld. Hiermee kunt u bestaande content van een AEM-broninstantie (On-Premise of AMS) verplaatsen naar de doelinstantie van AEM Cloud Service.
 
-Met de tool worden &#39;principals&#39; (gebruikers of groepen) automatisch overgedragen.
+Met de tool worden &#39;principals&#39; (gebruikers of groepen) automatisch overgedragen.  Zie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) voor meer informatie .
 
 Er is een nieuwe versie van het gereedschap Inhoud overbrengen beschikbaar waarin het proces voor de overdracht van inhoud wordt geïntegreerd met het programma voor de versnelling van de cloud. Het wordt ten zeerste aanbevolen over te schakelen op deze nieuwe versie om alle voordelen van deze versie te benutten:
 

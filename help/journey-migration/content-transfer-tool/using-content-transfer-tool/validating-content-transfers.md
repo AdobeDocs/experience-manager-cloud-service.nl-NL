@@ -2,9 +2,9 @@
 title: Inhoudsoverdrachten valideren
 description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten te valideren
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
+source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '1070'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ De bovenkant van het innamelogboek zal een ingang bevatten, gelijkend op `aem-et
 Zodra de opname volledig is en de bevestiging begint, zal de volgende logboekingang in het innamelogboek worden genoteerd:
 
 ```
-Gathering artifacts for migration validation...  
+Gathering artifacts for migration validation...
 ```
 
 De details van de validatie volgen op deze vermelding. Hier vindt u een voorbeeld van een grote migratie:
@@ -131,6 +131,24 @@ Het validatierapport kan niet alleen worden opgenomen in het innamelogboek, maar
 
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+
+## Hoe te om de Belangrijkste Migratie te bevestigen {#how-to-validate-principal-migration}
+
+Zie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) de belangrijkste migratiegegevens te lezen en de redenen daarvoor .
+
+Zodra de extractie en inname met succes zijn voltooid, zullen een samenvatting en rapport van de belangrijkste migratie beschikbaar zijn. Deze informatie kan worden gebruikt om te valideren welke gebruikers en groepen met succes zijn gemigreerd, en misschien om te bepalen waarom sommige niet.
+
+Ga naar Cloud Acceleration Manager om deze informatie te bekijken. Klik op uw projectkaart en klik op de kaart van de Overdracht van de Inhoud. Navigeren naar **Ingestietaken** en zoek de inname die u wilt controleren. Klik op de drie stippen (**...**) voor die opname, klikt u op **Hoofdoverzicht weergeven** in de vervolgkeuzelijst.
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
+
+Er wordt een dialoogvenster weergegeven met de overzichtsgegevens. Gebruik de Help-pictogrammen om een meer volledige beschrijving te lezen. Klik op de knop **Rapport downloaden** om het volledige door komma&#39;s gescheiden (CSV) rapport te downloaden.
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
+
+>[!NOTE]
+>
+>Als gebruikerstoewijzing is uitgeschakeld, wordt een andere variant van dit dialoogvenster weergegeven. Dit geeft aan dat gebruikerstoewijzing is uitgeschakeld en dat de drie velden met gebruikerstoewijzingswaarden niet worden weergegeven.
 
 ## Problemen oplossen {#troubleshooting}
 
