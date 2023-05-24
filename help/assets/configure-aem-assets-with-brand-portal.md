@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 42927eec458553121f70b74a54f0f26eb616a13e
 workflow-type: tm+mt
 source-wordcount: '2388'
 ht-degree: 11%
@@ -410,7 +410,7 @@ De IP&#39;s van de uitgang zijn als volgt:
 | **Regio** | **IP van de uitgang** |
 |--- |--- |
 | NA | 130.248.160.68, 20.94.203.130 |
-| EMEA | 185.34.189.3, 51.132.146.75 |
+| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212 |
 | APAC | 63.140.44.54 |
 
 <!--
