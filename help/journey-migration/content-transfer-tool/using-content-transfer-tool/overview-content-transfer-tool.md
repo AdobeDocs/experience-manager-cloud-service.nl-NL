@@ -2,10 +2,10 @@
 title: Overzicht van de tool Content Transfer
 description: Overzicht van de tool Content Transfer
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
+source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 38%
+source-wordcount: '648'
+ht-degree: 37%
 
 ---
 
@@ -14,24 +14,19 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Overzicht"
->abstract="Het hulpmiddel van de Overdracht van de inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om bestaande inhoud over van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service te bewegen. Met de tool worden &#39;principals&#39; (gebruikers of groepen) automatisch overgedragen."
+>abstract="Het hulpmiddel van de Overdracht van de inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om de migratie van bestaande inhoud van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service in werking te stellen. Met de tool worden &#39;principals&#39; (gebruikers of groepen) automatisch overgedragen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Richtlijnen en best practices"
 
-De tool Content Transfer is door Adobe ontwikkeld. Hiermee kunt u bestaande content van een AEM-broninstantie (On-Premise of AMS) verplaatsen naar de doelinstantie van AEM Cloud Service.
+Het hulpmiddel van de Overdracht van de Inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om de migratie van bestaande inhoud van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service in werking te stellen.
 
 Met de tool worden &#39;principals&#39; (gebruikers of groepen) automatisch overgedragen.  Zie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) voor meer informatie .
 
-Er is een nieuwe versie van het gereedschap Inhoud overbrengen beschikbaar waarin het proces voor de overdracht van inhoud wordt geïntegreerd met het programma voor de versnelling van de cloud. Het wordt ten zeerste aanbevolen over te schakelen op deze nieuwe versie om alle voordelen van deze versie te benutten:
+Met het gereedschap Inhoud overbrengen kunt u het proces voor inhoudsoverdracht integreren met Cloud Acceleration Manager. Hierdoor krijgt de gebruiker alle voordelen die het biedt:
 
 * Zelfbediening om een migratieset één keer uit te pakken en tegelijkertijd in meerdere omgevingen in te voeren
-* Verbeterde gebruikerservaring dankzij betere laadstatussen, hulplijnen en foutafhandeling
+* Verbeterde gebruikerservaring dankzij betere laadstatussen, instructies en foutafhandeling
 * Logbestanden voor insluiting blijven bestaan en zijn altijd beschikbaar voor probleemoplossing
-
-Als u de nieuwe versie wilt gaan gebruiken, moet u oudere versies van het gereedschap Inhoud overbrengen verwijderen, omdat het programma een belangrijke architecturale wijziging heeft ondergaan.
-
->[!NOTE]
->
-> In situaties waarin al een migratie wordt uitgevoerd, kunt u de vorige versie van CTT blijven gebruiken totdat de migratie is voltooid. Voor documentatie met betrekking tot de vorige versie van CTT raadpleegt u de [oudere documentatie](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+* Validatie- en hoofdmigratierapporten zijn beschikbaar voor validatie
 
 ## Fasen in gereedschap Inhoud overbrengen {#phases-content-transfer-tool}
 

@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: cf927f5cc1fca3720716349b1758a47c7b395218
+source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
-source-wordcount: '4074'
+source-wordcount: '4011'
 ht-degree: 21%
 
 ---
@@ -219,19 +219,6 @@ ht-degree: 21%
             + [Overzicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Belangrijke overwegingen](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Gebruikerstoewijzing gebruiken](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
-         + Verouderd gereedschap voor het overbrengen van inhoud {#legacy}
-            + [Overzicht](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
-            + [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
-            + [Richtlijnen en beste praktijken voor het gebruiken van het Hulpmiddel van de Overdracht van de Inhoud](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
-            + [Aan de slag met het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
-            + [Inhoudsoverdrachten valideren](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
-            + [Afhandeling van grote opslagplaatsen voor inhoud](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
-            + [Inhoud uit bron extraheren](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
-            + [Inhoud in doel invoegen](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
-            + [Logboeken voor een migratieset weergeven](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
-            + [Een migratieset verwijderen](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
-            + [Het gereedschap Inhoud overbrengen uitvoeren op een publicatie-instantie](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
-            + [Problemen met het gereedschap Inhoud overbrengen oplossen](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
    + Tools voor herstructurering van code {#refactoring-tools}
       + [Unieke ervaring](/help/journey-migration/unified-experience.md)
       + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
