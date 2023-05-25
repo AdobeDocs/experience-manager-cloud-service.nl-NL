@@ -4,9 +4,9 @@ description: Leer hoe Smart Imaging met Adobe Sensei AI de unieke weergavekenmer
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: 3
+mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 5cc750b3ea9a911355220f8b95f769000be9f41a
+source-git-commit: 2b1030a32733154491aa178f390038ef7d552151
 workflow-type: tm+mt
 source-wordcount: '3577'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Smart Imaging {#smart-imaging}
 
-## Wat is &quot;Smart Imaging&quot;? {#what-is-smart-imaging}
++++**Wat is &quot;Smart Imaging&quot;?** {#what-is-smart-imaging}
 
 Smart Imaging-technologie past Adobe Sensei AI-mogelijkheden toe en werkt met bestaande &quot;voorinstellingen voor afbeeldingen&quot;. De functie verbetert de prestaties van de afbeeldingslevering door de afbeeldingsindeling, grootte en kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
@@ -60,7 +60,9 @@ Zie ook [Afbeelding optimaliseren met de volgende afbeeldingsindelingen (WebP en
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-## Wat zijn de belangrijkste voordelen van de nieuwste Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
++++
+
++++## Wat zijn de belangrijkste voordelen van de nieuwste Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
 Slimme afbeeldingen zorgen voor betere prestaties bij het leveren van afbeeldingen doordat de bestandsgrootte van afbeeldingen automatisch wordt geoptimaliseerd op basis van de clientbrowser die wordt gebruikt, de apparaatweergave en de netwerkvoorwaarden. Omdat de beelden het grootste deel van de ladingstijd van een pagina vormen, kan om het even welke prestatiesverbetering een diepgaande invloed op zaken KPIs zoals hogere omzettingspercentages, tijd die aan een plaats wordt doorgebracht, en lagere plaats hebben stuitende tarieven.
 
@@ -72,7 +74,9 @@ De nieuwste belangrijkste voordelen van de nieuwste Smart Imaging zijn onder and
 * Pixelverhouding apparaat (`dpr`)
 * Netwerkbandbreedte (`network`)
 
-### Over Omzetting browserindeling (bfc) {#bfc}
++++
+
+**Over Omzetting browserindeling (bfc)** {#bfc}
 
 Omzetting browserformaat inschakelen door toevoegen `bfc=on` in de URL van de afbeelding worden JPEG en PNG voor verschillende browsers automatisch omgezet in AVIF, WebP met verlies, JPEGXR met verlies en JPEG2000 met verlies. Voor browsers die deze indelingen niet ondersteunen, blijft Smart Imaging de JPEG of PNG gebruiken. De kwaliteit van de nieuwe indeling wordt samen met de indeling opnieuw berekend door Smart Imaging.
 
@@ -80,7 +84,7 @@ Slimme afbeeldingen kunnen ook worden uitgeschakeld door toevoegen `bfc=off` naa
 
 Zie ook [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) in de Dynamic Media Image Serving and Rendering API.
 
-### Informatie over dpr-optimalisatie (Device Pixel Ratio) {#dpr}
+**Informatie over apparaatpixelverhouding (dpr)** optimalisatie {#dpr}
 
 Pixelverhouding van apparaat (DPR) - ook wel CSS-pixelverhouding genoemd - is de relatie tussen de fysieke pixels van een apparaat en logische pixels. Vooral met de komst van Retina-schermen groeit de pixelresolutie van moderne mobiele apparaten snel.
 
@@ -106,7 +110,7 @@ Momenteel is de pixeldichtheid van het beeldscherm afkomstig van Akamai CDN-head
 
 Zie ook [Wanneer u met afbeeldingen werkt](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [Wanneer u werkt met Slim uitsnijden](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### Info over netwerkbandbreedte optimaliseren {#network}
+**Info over netwerkbandbreedte optimaliseren** {#network}
 
 Als u Netwerkbandbreedte inschakelt, wordt automatisch de beeldkwaliteit aangepast die wordt aangeboden op basis van de werkelijke netwerkbandbreedte. Voor een slechte netwerkbandbreedte wordt DPR (Device Pixel Ratio)-optimalisatie automatisch uitgeschakeld, zelfs als deze al is ingeschakeld.
 
@@ -118,7 +122,7 @@ Uw bedrijf kan desgewenst de optimalisatie van de netwerkbandbreedte op het indi
 
 DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliënt-zijwaarden van gebundelde CDN. Deze waarden zijn soms onjuist. iPhone5 met DPR=2 en iPhone12 met `dpr=3`, beide presentaties `dpr=2`. Stilstaand, voor apparaten met hoge resolutie, verzenden `dpr=2` is beter dan verzenden `dpr=1`. De beste manier om deze onnauwkeurigheid te overwinnen, is echter door DPR op de client-side te gebruiken om u 100% nauwkeurige waarden te geven. En het werkt voor elk apparaat, of het nu Apple is of een ander apparaat dat gelanceerd werd. Zie [Slimme beeldverwerking gebruiken met pixelverhouding van client-side apparaat](/help/assets/dynamic-media/client-side-dpr.md).
 
-### Extra belangrijke voordelen van Smart Imaging
+**Extra belangrijke voordelen van Smart Imaging**
 
 * Verbeterde Google SEO-classificatie voor webpagina&#39;s die gebruikmaken van de nieuwste Smart Imaging.
 * Hiermee wordt geoptimaliseerde inhoud direct (bij uitvoering) weergegeven.
@@ -127,7 +131,9 @@ DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliën
 * Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. Bij de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een cachevalidatieproces in één stap mogelijk is.
 * Klanten die aangepaste koppen in hun linialen gebruiken, profiteren van de nieuwste functie voor Smart Imaging, omdat deze koppen, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd. Bijvoorbeeld &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; zoals voorgesteld in [Een aangepaste koptekstwaarde toevoegen aan reacties op afbeeldingen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Zijn er licentiekosten verbonden aan Smart Imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
++++
+
++++**Zijn er licentiekosten verbonden aan Smart Imaging?** {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
 Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt voor Dynamic Media Classic of Experience Manager - Dynamic Media (On-prem, AMS en as a Cloud Service Experience Manager).
 
@@ -135,7 +141,9 @@ Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt
 >
 >Smart Imaging is niet beschikbaar voor Dynamic Media - Hybride klanten.
 
-## Hoe werkt Smart Imaging? {#how-does-smart-imaging-work}
++++
+
++++**Hoe werkt Smart Imaging?** {#how-does-smart-imaging-work}
 
 Wanneer een consument om een afbeelding vraagt, controleert Smart Imaging de gebruikerskenmerken en wordt deze op basis van de gebruikte browser omgezet in de juiste afbeeldingsindeling. Deze formaatomzettingen worden gedaan op een manier die geen visuele getrouwheid degradeert. Met Slimme afbeeldingen worden afbeeldingen op de volgende manier automatisch omgezet in verschillende indelingen op basis van browsermogelijkheden.
 
@@ -147,6 +155,8 @@ Wanneer een consument om een afbeelding vraagt, controleert Smart Imaging de geb
 * Voor browsers die deze indelingen niet ondersteunen, wordt de oorspronkelijk aangevraagde afbeeldingsindeling weergegeven.
 
 Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
+
++++
 
 ## Welke afbeeldingsindelingen worden ondersteund? {#what-image-formats-are-supported}
 
