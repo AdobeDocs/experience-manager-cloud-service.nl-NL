@@ -4,14 +4,19 @@ description: Configureren [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 109f07c7273cc9a4890e41bf29a1509f738d130b
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1607'
 ht-degree: 0%
 
 ---
 
 # Configureren [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM as a Cloud Service | Dit artikel |
 
 Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] als [!DNL Cloud Service] vormt de verbeterde schakelaar na het installeren van het. Voor instructies voor installatie raadpleegt u [De connector installeren](/help/assets/workfront-integrations.md).
 
@@ -124,14 +129,14 @@ Met deze workflowstap kan een gebruiker een eigenschap toewijzen aan een [!DNL W
    * Een AEM-eigenschap. Deze verwijzing moet relatief zijn ten opzichte van de lading van de workflow.
    * Een benoemde waarde. Deze moeten tussen haakjes staan.
    * Een samenvoeging van de bovenstaande drie items. Opgeven met `{+}`.
-   * Een wijziging van de bovenstaande drie posten door de waarde met `{replace(<value>,”old-char”,”new-char”)}`.
+   * Een wijziging van de bovenstaande drie posten door de waarde met `{replace(<value>,"old-char","new-char")}`.
 
 * Voorbeelden zijn:
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Configuratie aan kaarteigenschap](/help/assets/assets/wf-map-property-config.png)
 
