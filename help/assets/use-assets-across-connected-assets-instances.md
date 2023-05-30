@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
 workflow-type: tm+mt
-source-wordcount: '3704'
+source-wordcount: '3717'
 ht-degree: 14%
 
 ---
@@ -316,6 +316,7 @@ U kunt elementen toevoegen aan de [!DNL Sites] implementatie, maar deze middelen
 ## Beperkingen en aanbevolen procedures {#tip-and-limitations}
 
 * Om inzichten over activagebruik te krijgen, vorm [Middelen Insight](/help/assets/assets-insights.md) op de [!DNL Sites] -instantie.
+* Het gebruik van padbrowser in ontwerpcomponenten wordt niet ondersteund in verbonden elementen.
 
 ### Machtigingen en vermogensbeheer {#permissions-and-managing-assets}
 
