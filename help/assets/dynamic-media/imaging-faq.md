@@ -4,11 +4,11 @@ description: Leer hoe Smart Imaging met Adobe Sensei AI de unieke weergavekenmer
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: null
+mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
+source-git-commit: c7555ef31d7657b4a90764224f4c8c58a6228157
 workflow-type: tm+mt
-source-wordcount: '3478'
+source-wordcount: '3486'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Slimme afbeeldingen kunnen ook worden uitgeschakeld door toevoegen `bfc=off` naa
 
 Zie ook [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) in de Dynamic Media Image Serving and Rendering API.
 
-### Info over Pixelverhoudingen apparaat optimaliseren** {#dpr}
+### Info over Pixelverhoudingen apparaat {#dpr}
 
 Pixelverhouding van apparaat (DPR) - ook wel CSS-pixelverhouding genoemd - is de relatie tussen de fysieke pixels van een apparaat en logische pixels. Vooral met de komst van Retina-schermen groeit de pixelresolutie van moderne mobiele apparaten snel.
 
@@ -127,17 +127,7 @@ DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliën
 * Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. Bij de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een cachevalidatieproces in één stap mogelijk is.
 * Klanten die aangepaste koppen in hun linialen gebruiken, profiteren van de nieuwste functie voor Smart Imaging, omdat deze koppen, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd. Bijvoorbeeld &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; zoals voorgesteld in [Een aangepaste koptekstwaarde toevoegen aan reacties op afbeeldingen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-+++**Zijn er licentiekosten verbonden aan Smart Imaging?**
-
-Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt voor Dynamic Media Classic of Experience Manager - Dynamic Media (On-prem, AMS en as a Cloud Service Experience Manager).
-
->[!IMPORTANT]
->
->Smart Imaging is niet beschikbaar voor Dynamic Media - Hybride klanten.
-
-+++
-
-+++**Hoe werkt Smart Imaging?**
+## Hoe Smart Imaging werkt**
 
 Wanneer een consument om een afbeelding vraagt, controleert Smart Imaging de gebruikerskenmerken en wordt deze op basis van de gebruikte browser omgezet in de juiste afbeeldingsindeling. Deze formaatomzettingen worden gedaan op een manier die geen visuele getrouwheid degradeert. Met Slimme afbeeldingen worden afbeeldingen op de volgende manier automatisch omgezet in verschillende indelingen op basis van browsermogelijkheden.
 
@@ -149,6 +139,30 @@ Wanneer een consument om een afbeelding vraagt, controleert Smart Imaging de geb
 * Voor browsers die deze indelingen niet ondersteunen, wordt de oorspronkelijk aangevraagde afbeeldingsindeling weergegeven.
 
 Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
+
+## Ondersteunde afbeeldingsindelingen in Smart Imaging
+
+De volgende afbeeldingsindelingen worden ondersteund voor Smart Imaging:
+
+* JPEG
+* PNG
+
+Voor de indeling van JPEG-afbeeldingsbestanden wordt de kwaliteit van de nieuwe indeling opnieuw berekend door Smart Imaging.
+
+Voor afbeeldingsbestandsindelingen die transparantie ondersteunen, zoals PNG, kunt u Smart Imaging configureren om AVIF en WebP met verlies te leveren. Voor de omzetting van de verliesindeling wordt bij Smart Imaging de kwaliteit gebruikt die wordt vermeld in de URL van de afbeelding, of anders de kwaliteit die is geconfigureerd in het Dynamic Media-bedrijfsaccount.
+
+## Opdrachten voor het bedienen van afbeeldingen die worden genegeerd en ondersteund door Smart Imaging
+
+De enige opdrachten voor Beeldbewerking die door Slimme beeldverwerking worden genegeerd, zijn `fmt` en `qlt`. Alle resterende opdrachten worden ondersteund.
+
+
++++**Zijn er licentiekosten verbonden aan Smart Imaging?**
+
+Nee. Smart Imaging wordt meegeleverd bij uw bestaande licentie. Deze regel geldt voor Dynamic Media Classic of Experience Manager - Dynamic Media (On-prem, AMS en as a Cloud Service Experience Manager).
+
+>[!IMPORTANT]
+>
+>Smart Imaging is niet beschikbaar voor Dynamic Media - Hybride klanten.
 
 +++
 
@@ -169,19 +183,6 @@ Ja. Slimme afbeeldingen hebben drie opties die u kunt in- of uitschakelen.
 * [Conversie browserindeling](#bfc)
 * [Pixelverhouding apparaat](#dpr)
 * [Netwerkbandbreedte](#network)
-
-+++
-
-+++**Welke afbeeldingsindelingen worden ondersteund?**
-
-De volgende afbeeldingsindelingen worden ondersteund voor Smart Imaging:
-
-* JPEG
-* PNG
-
-Voor de indeling van JPEG-afbeeldingsbestanden wordt de kwaliteit van de nieuwe indeling opnieuw berekend door Smart Imaging.
-
-Voor afbeeldingsbestandsindelingen die transparantie ondersteunen, zoals PNG, kunt u Smart Imaging configureren om AVIF en WebP met verlies te leveren. Voor de omzetting van de verliesindeling wordt bij Smart Imaging de kwaliteit gebruikt die wordt vermeld in de URL van de afbeelding, of anders de kwaliteit die is geconfigureerd in het Dynamic Media-bedrijfsaccount.
 
 +++
 
@@ -390,12 +391,6 @@ Nee. Op dit moment bestaat een dergelijke voorziening niet.
 +++**Pas Smart Imaging de uitvoerinstelling voor de percentagekwaliteit aan?**
 
 Ja. Met Slimme afbeeldingen wordt het kwaliteitspercentage automatisch aangepast. Dit kwaliteitspercentage wordt bepaald met behulp van een machinaal leeralgoritme ontwikkeld door Adobe. Dit percentage is niet bereikspecifiek.
-
-+++
-
-+++**Welke opdrachten voor het bedienen van afbeeldingen worden ondersteund of genegeerd?**
-
-De enige opdrachten die worden genegeerd, worden `fmt` en `qlt`. Alle resterende opdrachten worden ondersteund.
 
 +++
 
