@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 18%
@@ -106,7 +106,7 @@ U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevenspr
 
 **Voer een van de volgende handelingen uit als u een metagegevensprofiel globaal wilt toepassen**
 
-* Navigeren naar `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` en pas het juiste profiel toe en klik op **[!UICONTROL Save]**.
+* Navigeren naar `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` en pas het juiste profiel toe en klik op **[!UICONTROL Save]**.
 
 * Navigeer naar CRXDE Lite naar het volgende knooppunt: `/content/dam/jcr:content`. De eigenschap toevoegen `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Klikken **Alles opslaan**.
 
