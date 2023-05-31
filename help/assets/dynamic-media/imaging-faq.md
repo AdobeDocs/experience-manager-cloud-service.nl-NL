@@ -6,16 +6,16 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: c48885dc11b0162f0288962a53e1d95574a3d406
+source-git-commit: 6f9ddcf31a1869bb8bebb566d05c371e996fe354
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3482'
 ht-degree: 0%
 
 ---
 
-# Veelgestelde vragen over Smart Imaging {#smart-imaging}
+# Smart Imaging {#smart-imaging}
 
-## Slimme afbeeldingen
+## Slimme afbeeldingen{#about-smart-imaging}
 
 Smart Imaging-technologie past Adobe Sensei AI-mogelijkheden toe en werkt met bestaande &quot;voorinstellingen voor afbeeldingen&quot;. De functie verbetert de prestaties van de afbeeldingslevering door de afbeeldingsindeling, grootte en kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
@@ -127,7 +127,7 @@ DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliën
 * Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. Bij de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een cachevalidatieproces in één stap mogelijk is.
 * Klanten die aangepaste koppen in hun linialen gebruiken, profiteren van de nieuwste functie voor Smart Imaging, omdat deze koppen, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd. Bijvoorbeeld &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; zoals voorgesteld in [Een aangepaste koptekstwaarde toevoegen aan reacties op afbeeldingen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Hoe Smart Imaging werkt
+## Hoe Smart Imaging werkt{#how-smart-imaging-works}
 
 Wanneer een consument om een afbeelding vraagt, controleert Smart Imaging de gebruikerskenmerken en wordt deze op basis van de gebruikte browser omgezet in de juiste afbeeldingsindeling. Deze formaatomzettingen worden gedaan op een manier die geen visuele getrouwheid degradeert. Met Slimme afbeeldingen worden afbeeldingen op de volgende manier automatisch omgezet in verschillende indelingen op basis van browsermogelijkheden.
 
@@ -140,7 +140,7 @@ Wanneer een consument om een afbeelding vraagt, controleert Smart Imaging de geb
 
 Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
 
-## Ondersteuning voor afbeeldingsindeling in Smart Imaging
+## Ondersteuning voor afbeeldingsindeling in Smart Imaging{#image-format-support}
 
 De volgende afbeeldingsindelingen worden ondersteund voor Smart Imaging:
 
@@ -151,11 +151,11 @@ Voor de indeling van JPEG-afbeeldingsbestanden wordt de kwaliteit van de nieuwe 
 
 Voor afbeeldingsbestandsindelingen die transparantie ondersteunen, zoals PNG, kunt u Smart Imaging configureren om AVIF en WebP met verlies te leveren. Voor de omzetting van de verliesindeling wordt bij Smart Imaging de kwaliteit gebruikt die wordt vermeld in de URL van de afbeelding, of anders de kwaliteit die is geconfigureerd in het Dynamic Media-bedrijfsaccount.
 
-## Ondersteuning van de opdracht Beeldserving in Smart Imaging
+## Ondersteuning van de opdracht Beeldserving in Smart Imaging{#imaging-serving-command-support}
 
 De opdrachten Afbeeldingsservice `fmt` en `qlt` niet worden ondersteund; alle resterende opdrachten worden ondersteund.
 
-## Veelgestelde vragen over Smart Imaging
+## Veelgestelde vragen over Smart Imaging{#smart-imaging-faq}
 
 +++**Zijn er licentiekosten verbonden aan Smart Imaging?**
 
