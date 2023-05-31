@@ -2,7 +2,7 @@
 title: Ontwerpen voor AEM als een headless CMS - Een inleiding
 description: Een inleiding tot het gebruiken van de eigenschappen van Adobe Experience Manager as a Cloud Service als Zwaardeloze CMS om inhoud voor uw project te ontwerpen.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 1%
@@ -12,6 +12,8 @@ ht-degree: 1%
 # Ontwerpen voor AEM als een headless CMS - Een inleiding {#author-headless-introduction}
 
 In dit deel van het [AEM Schrijverreis zonder kopinhoud](overview.md), kunt u de (basis)concepten en de terminologie leren noodzakelijk om auteursinhoud te begrijpen wanneer het gebruiken van Adobe Experience Manager (AEM) as a Cloud Service als Zwaardeloze CMS. Dit betekent dat u inhoud zonder kop moet structureren en maken.
+
+{{headless-trials-promotion}}
 
 ## Doelstelling {#objective}
 
