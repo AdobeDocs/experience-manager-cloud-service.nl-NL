@@ -8,10 +8,10 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
+source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
 workflow-type: tm+mt
-source-wordcount: '4011'
-ht-degree: 21%
+source-wordcount: '4027'
+ht-degree: 20%
 
 ---
 
@@ -509,6 +509,7 @@ ht-degree: 21%
    + Instellen en migreren {#setup-configure-migrate}
       + [Boordomgeving naar Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Een lokale ontwikkelomgeving instellen](/help/forms/setup-local-development-environment.md)
+      + [Adaptieve Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
       + [Unified Storage Connector configureren](/help/forms/configure-unified-storage-connector.md)
       + [Migreren van [!DNL AEM 6.5 Forms] of eerder [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groepen en machtigingen](/help/forms/forms-groups-privileges-tasks.md)
@@ -970,3 +971,4 @@ ht-degree: 21%
    + [Architectuur van Universal Editor](/help/implementing/universal-editor/architecture.md)
    + [Kenmerken en typen](/help/implementing/universal-editor/attributes-types.md)
    + [Universal Editor-verificatie](/help/implementing/universal-editor/authentication.md)
+
