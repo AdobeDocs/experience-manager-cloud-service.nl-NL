@@ -1,0 +1,81 @@
+---
+title: Handelingencentrum
+description: Gebruik het actiecentrum om gemakkelijk actie te ondernemen tegen incidenten en andere belangrijke informatie
+hidefromtoc: true
+hide: true
+exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
+source-git-commit: ca7cad567a5f83cd1edc14def6d961b8ba3b7f1f
+workflow-type: tm+mt
+source-wordcount: '705'
+ht-degree: 0%
+
+---
+
+# Handelingencentrum {#actions-center}
+
+>[!NOTE]
+>Deze functie is niet vrijgegeven.
+
+AEM als Cloud Service verzendt de e-mailberichten van het Centrum van Acties wanneer de kritieke incidenten voorkomen die onmiddellijke actie vereisen, evenals pro-actieve aanbevelingen voor optimalisaties. De voorbeelden omvatten een geblokkeerde rij, of een het verlopen reeks geloofsbrieven; de volledige reeks kennisgevingen van het actiecentrum kan worden weergegeven in het gedeelte [tabel hieronder](#supported-notification-types), die na verloop van tijd zal toenemen.
+
+Wanneer een e-mailbericht van het Centrum van Acties wordt ontvangen, kan het worden geklikt om AEM Centrum van Acties van het as a Cloud Service met popup te openen die extra context toont die de actie voor een klant verklaart te nemen.
+
+Naast het weergeven van informatie over het zojuist geklikte e-mailbericht, fungeert het Actions Center als een hub waarin u de set met huidige en oudere meldingen kunt weergeven en beheren. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+
+Er zijn twee categorieën meldingen op hoog niveau die in het Actions Center worden weergegeven:
+
+1. Operationele incidenten - er is een gebeurtenis opgetreden waarvoor meestal een snelle oplossing vereist is. Bijvoorbeeld het oplossen van een geblokkeerde wachtrij.
+1. Proactieve aanbevelingen - Adobe heeft een aanbeveling voor een actie een klant in de nabije toekomst zou moeten nemen. Bijvoorbeeld, ophouden verwijzend naar een afgekeurde UI.
+
+Zie de [tabel hieronder](#supported-notification-types) voor de meldingen die momenteel worden ondersteund in het Actions Center.
+
+Vanuit het Actions Center kunt u een specifiek programma en een specifieke omgeving selecteren die het effect hebben van filteren voor dat bereik.
+
+## Configuratie {#configuration}
+
+Om het ontvangen van de e-mailberichten van het Centrum van Acties te vormen, creeer de beschreven Profielen van het Product [in dit artikel](/help/journey-onboarding/notification-profiles.md), namelijk kennisgeving van incidenten - Cloud Service en proactieve kennisgeving - Cloud Service. Wijs ook de juiste Adobe-id&#39;s van uw organisatie toe aan die profielen. Hierdoor kan een beheerder bepalen welke gebruikers in aanmerking komen om deze e-mailberichten te ontvangen.
+
+>[!NOTE]
+>De e-mailberichten van het Centrum van acties functioneren op het organisatieniveau zodat zullen de abonnees berichten voor alle programma&#39;s en milieu&#39;s binnen die programma&#39;s ontvangen.
+
+## Gedetailleerde gebruikersstroom {#detailed-user-flow}
+
+Als u op de e-mail klikt, verschijnt een pop-up met de context van de melding waarop u hebt geklikt en in sommige gevallen koppelingen naar aanvullende informatie met een beschrijving van hoe u corrigerende maatregelen kunt nemen.
+
+![Gegevens over incidenten](/help/operations/assets/incident-details.png)
+
+Klik op de knop **Meer informatie** de verbinding navigeert de gebruiker aan dit artikel, waar het berichttype in kan van verwijzingen worden voorzien [tabel met ondersteunde berichttypen](#supported-notification-types) hieronder, dat een leidraad biedt voor de te nemen maatregelen.
+
+In het Centrum van Acties, kunt u een lijst van andere recente berichten zien. U wordt aangeraden dat u met de lijst Handelingen een melding bevestigt om aan de Adobe te laten weten dat uw organisatie zich bewust is van de taak en om de melding later op te lossen wanneer corrigerende actie is ondernomen.
+
+![Lijst met meldingen](/help/operations/assets/notification-list.png)
+
+In de meeste gevallen moet de popup alle noodzakelijke context bieden om het probleem op te lossen. Als er echter vragen zijn voor ondersteuning van Adobe, kunt u op de knop **Contact opnemen met ondersteuning** in de pop-up. Dit zal omhoog een vorm van waar u de vraag kunt beschrijven en het voorleggen om een kaartje van de Steun te creëren, dat ook een verwijzing naar de specifieke kennisgeving zal omvatten zodat heeft een Ingenieur van de Steun van Adobe de relevante context.
+
+![Contact opnemen met ondersteuning 1](/help/operations/assets/contact-support1.png)
+
+![Contact opnemen met ondersteuning 2](/help/operations/assets/contact-support2.png)
+
+Zoals alle steunkaartjes, zal het in [Tabblad Adobe Admin Console-ondersteuningsgevallen](https://helpx.adobe.com/enterprise/using/support-for-enterprise.html), waar u het kunt bijhouden en aanvullende opmerkingen kunt toevoegen.
+
+![Ondersteuning voor Admin Consoles](/help/operations/assets/admin-console-support.png)
+
+## Welke meldingen worden weergegeven? {#which-notification}
+
+AEM as a Cloud Service heeft verschillende soorten meldingen, maar er wordt alleen een subset weergegeven in het Actions Center, zoals in de onderstaande tabel wordt geïllustreerd.
+
+| Meldingstype | Beschrijving | Hoe te vormen | Wordt weergegeven in Waarschuwingencentrum |
+|---|---|---|---|
+| Operationele incidenten | Kritieke incidenten die onmiddellijke actie vereisen | Gebruiker toegewezen aan productprofiel &quot;Incident Notification - Cloud Service&quot; | X |
+| Proactieve aanbevelingen | Optimalisaties die moeten worden gepland | Gebruiker toegewezen aan productprofiel &quot;Proactieve kennisgeving - Cloud Service&quot; | X |
+| Klassepijplusstatussen van Cloud Manager | Informatie over de toestand van uw pijpleidingen | Gebruiker met de rollen Bedrijfs van de Eigenaar, van de Manager van het Programma, of van de Manager van de Plaatsing, &quot;Andere&quot;checkbox binnen geselecteerd [Voorkeuren Experience Cloud](https://experience.adobe.com/preferences), als [hier beschreven](/help/implementing/cloud-manager/notifications.md). |  |
+
+## Ondersteunde berichttypen {#supported-notification-types}
+
+In de volgende tabel worden de berichttypen weergegeven die momenteel worden ondersteund in het Actions Center.
+
+| Meldingstype | Verwante productprofiel | Correctieve actie |
+|---|---|---|
+| Geblokkeerde replicatiewachtrij | Incident | Blokkeren van wachtrij opheffen door instructies in het dialoogvenster [Replicatiedocumentatie](/help/operations/replication.md#troubleshooting) |
+| S2S-certificaat vervalt | Proactief | Leer hoe u een referentie kunt vernieuwen in het dialoogvenster [Access Tokens genereren voor documentatie van server-side API&#39;s](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) |
+
