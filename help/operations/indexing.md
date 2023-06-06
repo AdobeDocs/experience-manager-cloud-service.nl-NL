@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Inhoud zoeken en indexeren
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6fd5f8e7a9699f60457e232bb3cfa011f34880e9
+source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2491'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 
 1. Klanten kunnen waarschuwingen instellen op basis van hun behoeften.
 1. SRE&#39;s bewaken de systeemgezondheid 24/7 en zullen zo nodig en zo vroeg mogelijk actie ondernemen.
 1. Indexconfiguratie wordt gewijzigd via implementaties. Wijzigingen in indexdefinities worden net als andere wijzigingen in de inhoud geconfigureerd.
-1. Op hoog niveau voor AEM as a Cloud Service, met de invoering van de [Blauw-groen implementatiemodel](#index-management-using-blue-green-deployments) er zullen twee indexen bestaan : één set voor de oude versie (blauw) en één set voor de nieuwe versie (groen).
+1. Op hoog niveau voor AEM as a Cloud Service, met de invoering van de [rolmodel](#index-management-using-rolling-deployments) er zullen twee indexen bestaan : één set voor de oude versie en één set voor de nieuwe versie.
 1. Klanten kunnen zien of de indexeertaak is voltooid op de pagina voor het samenstellen van de cloud Manager en ontvangen een melding wanneer de nieuwe versie gereed is voor verkeer.
 
 Beperkingen:
@@ -143,7 +143,7 @@ In `ui.apps.structure/pom.xml`de `filters` voor deze insteekmodule moet als volg
 <filter><root>/oak:index</root></filter>
 ```
 
-Nadat de nieuwe indexdefinitie is toegevoegd, moet de nieuwe toepassing worden geïmplementeerd via Cloud Manager. Na de implementatie worden twee taken gestart, die verantwoordelijk zijn voor het toevoegen (en indien nodig samenvoegen) van de indexdefinities aan respectievelijk MongoDB en Azure Segment Store voor auteur en publicatie. De onderliggende repository&#39;s worden opnieuw gedestilleerd met de nieuwe indexdefinities, voordat de Blauw-Groen omschakeling plaatsvindt.
+Nadat de nieuwe indexdefinitie is toegevoegd, moet de nieuwe toepassing worden geïmplementeerd via Cloud Manager. Na de implementatie worden twee taken gestart die verantwoordelijk zijn voor het toevoegen (en indien nodig samenvoegen) van de indexdefinities aan respectievelijk MongoDB en Azure Segment Store voor auteur en publicatie. De onderliggende repository&#39;s worden opnieuw gedefiniëerd met de nieuwe indexdefinities, voordat de switch-ondernemingen worden geplaatst.
 
 ### OPMERKING
 
@@ -207,19 +207,19 @@ Hieronder ziet u waar u de bovenstaande configuratie in de pom wilt plaatsen.
 >
 >Zie het document voor meer informatie over de vereiste pakketstructuur voor AEM as a Cloud Service [AEM projectstructuur.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
-## Indexbeheer met Blauw-groene implementaties {#index-management-using-blue-green-deployments}
+## Indexbeheer met behulp van rollende implementaties {#index-management-using-rolling-deployments}
 
 ### Wat is indexbeheer {#what-is-index-management}
 
 Indexbeheer gaat over het toevoegen, verwijderen en wijzigen van indexen. Het wijzigen van *definitie* van een index is snel, maar het toepassen van de wijziging (vaak &#39;&#39;een index samenstellen&#39;&#39; genoemd, of, voor bestaande indexen, &#39;&#39;opnieuw indexeren&#39;&#39;) vereist tijd. Het is niet onmiddellijk: de gegevensopslagruimte moet worden gescand om de gegevens te indexeren.
 
-### Wat is een blauw-groene implementatie {#what-is-blue-green-deployment}
+### Wat zijn de Rolling Plaatsingen {#what-are-rolling-deployments}
 
-Met blauw-groene implementatie kunt u downtime verminderen. Het staat ook voor nul downtime verbeteringen toe en verstrekt snelle terugdraaiversies. De oude versie van de toepassing (blauw) wordt tegelijk met de nieuwe versie van de toepassing uitgevoerd (groen).
+Een rolplaatsing kan onderbreking verminderen. Het staat ook voor nul downtime verbeteringen toe en verstrekt snelle terugdraaiversies. De oude versie van de toepassing wordt tegelijk met de nieuwe versie van de toepassing uitgevoerd.
 
 ### Alleen-lezen en Gebieden lezen/schrijven {#read-only-and-read-write-areas}
 
-Bepaalde delen van de opslagplaats (alleen-lezen onderdelen van de opslagplaats) kunnen verschillend zijn in de oude (blauwe) en de nieuwe (groene) versie van de toepassing. De gebieden met het kenmerk Alleen-lezen in de gegevensopslagruimte zijn doorgaans &quot;`/app`&quot; en &quot;`/libs`&quot;. In het volgende voorbeeld wordt cursief gebruikt voor het markeren van alleen-lezen gebieden, terwijl vet wordt gebruikt voor lezen-schrijven gebieden.
+Bepaalde delen van de opslagplaats (alleen-lezen onderdelen van de opslagplaats) kunnen verschillend zijn in de oude en de nieuwe versie van de toepassing. De gebieden met het kenmerk Alleen-lezen van de gegevensopslagruimte zijn doorgaans `/app` en `/libs`. In het volgende voorbeeld wordt cursief gebruikt voor het markeren van alleen-lezen gebieden, terwijl vet wordt gebruikt voor lezen-schrijven gebieden.
 
 * **/**
 * */apps (alleen-lezen)*
@@ -233,13 +233,13 @@ Bepaalde delen van de opslagplaats (alleen-lezen onderdelen van de opslagplaats)
 
 De read-write gebieden van de bewaarplaats worden gedeeld tussen alle versies van de toepassing, terwijl voor elke versie van de toepassing, er een specifieke reeks is van `/apps` en `/libs`.
 
-### Indexbeheer zonder blauw-groene implementatie {#index-management-without-blue-green-deployment}
+### Indexbeheer zonder doorlopende implementaties {#index-management-without-rolling-deployments}
 
 Tijdens de ontwikkeling, of wanneer het gebruiken op gebouwinstallaties, kunnen indexen worden toegevoegd, worden verwijderd, of bij runtime worden veranderd. Indexen worden gebruikt zodra ze beschikbaar zijn. Als een index nog niet in de oude versie van de toepassing moet worden gebruikt, dan wordt de index typisch gebouwd tijdens een geplande onderbreking. Hetzelfde geldt wanneer u een index verwijdert of een bestaande index wijzigt. Wanneer u een index verwijdert, wordt deze niet meer beschikbaar zodra deze wordt verwijderd.
 
-### Indexbeheer met blauw-groene implementatie {#index-management-with-blue-green-deployment}
+### Indexbeheer met doorlopende implementaties {#index-management-with-rolling-deployments}
 
-Met blauwgroene implementaties is er geen downtime. Tijdens een upgrade worden gedurende enige tijd zowel de oude versie (bijvoorbeeld versie 1) van de toepassing als de nieuwe versie (versie 2) tegelijk uitgevoerd tegen dezelfde opslagplaats. Als voor versie 1 een bepaalde index beschikbaar moet zijn, mag deze index niet worden verwijderd in versie 2: de index moet later worden verwijderd, bijvoorbeeld in versie 3, waarna gegarandeerd is dat versie 1 van de toepassing niet meer wordt uitgevoerd. Ook, zouden de toepassingen zodanig moeten worden geschreven dat versie 1 goed werkt, zelfs als versie 2 loopt, en als de indexen van versie 2 beschikbaar zijn.
+Met het rollen plaatsingen, is er geen onderbreking. Gedurende een update worden zowel de oude versie (bijvoorbeeld versie 1) van de toepassing als de nieuwe versie (versie 2) tegelijkertijd uitgevoerd op dezelfde opslagplaats. Als voor versie 1 een bepaalde index beschikbaar moet zijn, mag deze index niet worden verwijderd in versie 2. De index moet later worden verwijderd, bijvoorbeeld in versie 3, waarna gegarandeerd is dat versie 1 van de toepassing niet meer wordt uitgevoerd. Ook, zouden de toepassingen zodanig moeten worden geschreven dat versie 1 goed werkt, zelfs als versie 2 loopt, en als de indexen van versie 2 beschikbaar zijn.
 
 Nadat de upgrade naar de nieuwe versie is voltooid, kunnen oude indexen door het systeem worden opgeschoond. De oude indexen blijven misschien nog een tijdje, om terugdraaiversies te versnellen (als een terugdraaiing nodig zou moeten zijn).
 

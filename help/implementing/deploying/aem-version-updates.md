@@ -3,7 +3,7 @@ title: Versie-updates AEM
 description: Leer hoe AEM as a Cloud Service ononderbroken integratie en levering (CI/CD) gebruikt om u projecten op de recentste versie te houden.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
+source-git-commit: dd1560aa4d260320f565ad993a8b3650c3ee5288
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 1%
@@ -49,8 +49,8 @@ Als de update naar de productieomgeving mislukt, wordt de testomgeving automatis
 
 ## Composite Node Store {#composite-node-store}
 
-Updates worden meestal zonder downtime uitgevoerd, ook voor de ontwerpinstantie, die een cluster met knooppunten is. Rolling-updates zijn mogelijk vanwege [de samengestelde eigenschap van de knoopopslag in Eak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+In de meeste gevallen worden updates zonder downtime uitgevoerd, ook voor de ontwerpinstantie, die een cluster met knooppunten is. Rolling-updates zijn mogelijk vanwege [de samengestelde eigenschap van de knoopopslag in Eak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Met deze functie kunnen AEM tegelijkertijd verwijzen naar meerdere opslagplaatsen. Bij het rollen [blauwgroene implementatie,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) de nieuwe groene AEM bevat een eigen versie `/libs` (de op TarMK gebaseerde onveranderlijke opslagplaats), verschillend van de oudere blauwe AEM versie, hoewel beide verwijzen naar een gedeelde op DocumentMK gebaseerde veranderbare opslagplaats die gebieden zoals `/content` , `/conf` , `/etc` en andere.
+Met deze functie kunnen AEM tegelijkertijd verwijzen naar meerdere opslagplaatsen. In een [stationering,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) de nieuwe AEM bevat een eigen `/libs` (de op TarMK gebaseerde onveranderlijke opslagplaats), verschillend van de oudere AEM versie, hoewel beide verwijzen naar een gedeelde op DocumentMK gebaseerde veranderbare opslagplaats die gebieden zoals `/content` , `/conf` , `/etc` en andere.
 
-Omdat zowel blauw als groen hun eigen versies hebben `/libs`, kunnen zij allebei actief tijdens de het rollen update zijn, allebei die verkeer opnemen tot het blauw volledig door groen wordt vervangen.
+Omdat zowel de oude als de nieuwe versie hun eigen versies hebben `/libs`, kunnen zij zowel tijdens de het rollen update actief zijn, en allebei verkeer nemen tot oud volledig door nieuw wordt vervangen.
