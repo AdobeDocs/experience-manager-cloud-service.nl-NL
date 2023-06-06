@@ -3,9 +3,9 @@ title: Implementeren naar AEM as a Cloud Service
 description: Implementeren naar AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
+source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
 workflow-type: tm+mt
-source-wordcount: '3509'
+source-wordcount: '3541'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,10 @@ De volgende video biedt een overzicht op hoog niveau over hoe u code kunt implem
 
 ### Implementaties via Cloud Manager {#deployments-via-cloud-manager}
 
+<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+
 Klanten implementeren aangepaste code in cloudomgevingen via Cloud Manager. Cloud Manager transformeert lokaal geassembleerde inhoudspakketten naar een artefact dat voldoet aan het Sling Feature Model (Sling Feature Model). Zo wordt een AEM as a Cloud Service toepassing beschreven wanneer deze wordt uitgevoerd in een cloudomgeving. Als gevolg hiervan worden de verpakkingen in [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) In cloudomgevingen bevat de naam &quot;cp2fm&quot; en zijn alle metagegevens verwijderd uit de getransformeerde pakketten. Er kan geen interactie met deze toepassingen plaatsvinden, wat betekent dat ze niet kunnen worden gedownload, gerepliceerd of geopend. Gedetailleerde documentatie over de converter kan [hier gevonden](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Inhoudspakketten die voor AEM as a Cloud Service toepassingen zijn geschreven, moeten een duidelijke scheiding hebben tussen onveranderbare en veranderbare inhoud. Cloud Manager installeert alleen de veranderbare inhoud en voert ook een bericht uit zoals:
@@ -63,7 +67,7 @@ In de rest van deze sectie worden de samenstelling en de gevolgen van onverander
 
 Alle inhoud en code die in de onveranderlijke gegevensopslagplaats voortkomen, moeten in git worden gecontroleerd en door de Manager van de Wolk worden opgesteld. Met andere woorden, in tegenstelling tot huidige AEM oplossingen, wordt de code nooit direct opgesteld aan een lopende AEM instantie. Dit zorgt ervoor dat de code die voor een bepaalde release in een Cloud-omgeving wordt uitgevoerd, identiek is, waardoor het risico van onbedoelde codevariatie bij de productie wordt uitgesloten. Als voorbeeld, zou de configuratie OSGI aan broncontrole eerder dan beheerd bij runtime via de de configuratiemanager van de AEM Webconsole moeten worden geëngageerd.
 
-Aangezien de toepassingsveranderingen toe te schrijven aan het blauw-Groene plaatsingspatroon door een schakelaar worden toegelaten, kunnen zij niet van veranderingen in de veranderbare bewaarplaats met uitzondering van de dienstgebruikers, hun ACLs, nodetypes en de veranderingen van de indexdefinitie afhangen.
+Aangezien de toepassingsveranderingen toe te schrijven aan het plaatsingspatroon door een schakelaar worden toegelaten, kunnen zij niet van veranderingen in de veranderlijke bewaarplaats met uitzondering van de dienstgebruikers, hun ACLs, nodetypes, en de veranderingen van de indexdefinitie afhangen.
 
 Voor klanten met bestaande codebases is het van essentieel belang dat de in AEM documentatie beschreven herstructureringsoefening in de opslagplaats wordt doorlopen om ervoor te zorgen dat inhoud die voorheen onder de /etc. viel, naar de juiste locatie wordt verplaatst.
 
@@ -235,23 +239,23 @@ Het volgende Gemaakt `POM.xml` codefragment toont hoe pakketten van derden kunne
 
 ## Hoe de Rolling Inzet werkt {#how-rolling-deployments-work}
 
-Als AEM updates, worden de klantenversies opgesteld gebruikend een het rollen plaatsingsstrategie om de onderbreking van de auteurcluster in de juiste omstandigheden te elimineren. De algemene volgorde van gebeurtenissen is zoals hieronder beschreven, waarbij **Blauw** is de oude versie van de klantcode en **Groen** is de nieuwe versie. Met zowel Blauw als Groen wordt dezelfde versie van AEM code uitgevoerd.
+Als AEM updates, worden de klantenversies opgesteld gebruikend een het rollen plaatsingsstrategie om de onderbreking van de auteurcluster in de juiste omstandigheden te elimineren. De algemene volgorde van gebeurtenissen wordt hieronder beschreven, waarbij knooppunten met zowel de oude als de nieuwe versie van de klantcode dezelfde versie van AEM code uitvoeren.
 
-* De blauwe versie is actief en er is een releasekandidaat voor Groen gemaakt en beschikbaar
-* Als er nieuwe of bijgewerkte indexdefinities zijn, worden de overeenkomstige indexen verwerkt. Merk op dat de blauwe plaatsing altijd de oude indexen zal gebruiken, terwijl groen altijd de nieuwe indexen zal gebruiken.
-* Groen begint terwijl blauw nog steeds werkt
-* Blauw wordt uitgevoerd en gebruikt terwijl Groen via gezondheidscontroles op gereedheid wordt gecontroleerd
-* Groene knopen die klaar verkeer goedkeuren en Blauwe knopen vervangen, die worden onderdrukt
-* In de loop der tijd worden blauwe knooppunten vervangen door groene knooppunten totdat alleen de groene knooppunten overblijven, zodat de implementatie wordt voltooid
-* Nieuwe of gewijzigde inhoud die kan worden gemuteerd, wordt geïmplementeerd
+* De knopen met de oude versie zijn actief en een versiekandidaat voor de nieuwe versie wordt gebouwd en beschikbaar gesteld.
+* Als er nieuwe of bijgewerkte indexdefinities zijn, worden de overeenkomstige indexen verwerkt. De knopen met de oude versie zullen altijd de oude indexen gebruiken, terwijl de knopen met de nieuwe versie altijd de nieuwe indexen zullen gebruiken.
+* De knopen met de nieuwe versieopstarten terwijl de oude versies nog verkeer dienen.
+* Knooppunten met de oude versie worden uitgevoerd en blijven werken terwijl knooppunten met de nieuwe versie op gereedheid worden gecontroleerd via gezondheidscontroles.
+* De knopen met de nieuwe versie die klaar zijn zullen verkeer goedkeuren en de knopen met de oude versie vervangen, die worden ondergebracht.
+* In tijd, worden de knopen met de oude versie vervangen door knopen met de nieuwe versie tot slechts knopen met nieuwe versies overblijven, waarbij de plaatsing wordt voltooid.
+* Alle nieuwe of gewijzigde veranderbare inhoud wordt vervolgens geïmplementeerd.
 
 ## Indexen {#indexes}
 
-De nieuwe of gewijzigde indexen zullen een extra indexerende of re-indexerende stap veroorzaken alvorens de nieuwe (Groene) versie verkeer kan nemen. Details over indexbeheer in AEM as a Cloud Service vindt u in [dit artikel](/help/operations/indexing.md). U kunt de status van de indexeertaak controleren op de bouwstijlpagina van Cloud Manager en ontvangt een melding wanneer de nieuwe versie klaar is om verkeer te nemen.
+De nieuwe of gewijzigde indexen zullen een extra indexerende of re-indexerende stap veroorzaken alvorens de nieuwe versie verkeer kan nemen. Details over indexbeheer in AEM as a Cloud Service vindt u in [dit artikel](/help/operations/indexing.md). U kunt de status van de indexeertaak controleren op de bouwstijlpagina van Cloud Manager en ontvangt een melding wanneer de nieuwe versie klaar is om verkeer te nemen.
 
 >[!NOTE]
 >
->De tijd nodig voor een het rollen plaatsing zal afhankelijk van de grootte van de index variëren, aangezien de Groene versie geen verkeer kan goedkeuren tot de nieuwe index is geproduceerd.
+>De tijd nodig voor een het rollen plaatsing zal afhankelijk van de grootte van de index variëren, aangezien de nieuwe versie geen verkeer kan goedkeuren tot de nieuwe index is geproduceerd.
 
 Op dit moment werkt AEM as a Cloud Service niet met hulpmiddelen voor indexbeheer, zoals ACS-opdrachten, voor het gereedschap eikenindex.
 
@@ -269,15 +273,15 @@ Bovendien moet de oude versie worden getest op compatibiliteit met eventuele nie
 
 ### De Gebruikers van de dienst en ACL Veranderingen {#service-users-and-acl-changes}
 
-Het veranderen van de dienstgebruikers of ACLs nodig om tot inhoud of code toegang te hebben kon tot fouten in de oudere AEM versies leiden resulterend in toegang tot die inhoud of code met verouderde de dienstgebruikers. Om dit te verhelpen, is het raadzaam om wijzigingen door minstens 2 versies te laten spreiden, waarbij de eerste release als een brug fungeert voordat de release wordt opgeschoond.
+Het veranderen van de dienstgebruikers of ACLs nodig om tot inhoud of code toegang te hebben kon tot fouten in de oudere AEM versies leiden resulterend in toegang tot die inhoud of code met verouderde de dienstgebruikers. Om dit te verhelpen, wordt aanbevolen wijzigingen door ten minste twee releases te laten doorlopen, waarbij de eerste release als brug fungeert voordat de release wordt opgeschoond.
 
 ### Indexwijzigingen {#index-changes}
 
-Als er wijzigingen in indexen worden aangebracht, is het belangrijk dat de blauw-versie de indexen blijft gebruiken totdat deze worden beëindigd, terwijl de groene versie een eigen aangepaste set indexen gebruikt. De ontwikkelaar moet de beschreven technieken voor indexbeheer volgen [in dit artikel](/help/operations/indexing.md).
+Als er wijzigingen in indexen worden aangebracht, is het belangrijk dat de nieuwe versie de indexen blijft gebruiken totdat deze worden beëindigd, terwijl de oude versie een eigen aangepaste set indexen gebruikt. De ontwikkelaar moet de beschreven technieken voor indexbeheer volgen [in dit artikel](/help/operations/indexing.md).
 
 ### Conservatieve codering voor terugdraaiversies {#conservative-coding-for-rollbacks}
 
-Als een mislukking na de plaatsing wordt gemeld of ontdekt, is het mogelijk dat een terugschroeven van prijzen aan de Blauwe versie zal worden vereist. Het zou verstandig zijn om ervoor te zorgen dat de blauwe code compatibel is met nieuwe structuren die door de groene versie worden gecreëerd, aangezien de nieuwe structuren (muteerbare inhoud) niet worden teruggedraaid. Als de oude code niet compatibel is, moeten fixes worden toegepast in volgende versies van de klant.
+Als een mislukking na de plaatsing wordt gemeld of ontdekt, is het mogelijk dat het terugschroeven van prijzen aan de oude versie zal worden vereist. Aanbevolen wordt ervoor te zorgen dat de nieuwe code compatibel is met nieuwe structuren die door die nieuwe versie worden gemaakt, aangezien de nieuwe structuren (alle inhoud met mutaties) niet worden teruggedraaid. Als de oude code niet compatibel is, moeten fixes worden toegepast in volgende versies van de klant.
 
 ## Rapid Development Environment (RDE) {#rde}
 
