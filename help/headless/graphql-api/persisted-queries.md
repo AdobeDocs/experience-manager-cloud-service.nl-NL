@@ -3,9 +3,9 @@ title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
+source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1687'
 ht-degree: 1%
 
 ---
@@ -353,7 +353,11 @@ Als u de cache wereldwijd wilt beheren, kunt u [vorm de montages OSGi](/help/imp
 
 >[!NOTE]
 >
->De configuratie OSGi is slechts aangewezen voor publiceer instanties. De configuratie bestaat bij de instanties van de auteur, maar wordt genegeerd.
+>Voor geheim voorgeheugencontrole, is de configuratie OSGi slechts aangewezen voor publiceer instanties. De configuratie bestaat bij de instanties van de auteur, maar wordt genegeerd.
+
+>[!NOTE]
+>
+>De **Configuratie van blijvende query-service** wordt ook gebruikt voor [configureren van antwoordcode voor query](#configuring-query-response-code).
 
 De standaard configuratie OSGi voor publiceer instanties:
 
@@ -369,6 +373,26 @@ De standaard configuratie OSGi voor publiceer instanties:
    {style="table-layout:auto"}
 
 * en als niet beschikbaar, gebruikt de configuratie OSGi [standaardwaarden voor publicatie-instanties](#publish-instances).
+
+## De antwoordcode voor de query configureren {#configuring-query-response-code}
+
+Standaard worden de `PersistedQueryServlet` verzendt `200` reactie wanneer het een vraag uitvoert, ongeacht het daadwerkelijke resultaat.
+
+U kunt [vorm de montages OSGi](/help/implementing/deploying/configuring-osgi.md) voor de **Configuratie van blijvende query-service** om te bepalen welke statuscode door wordt geretourneerd `/execute.json/persisted-query` eindpunt, wanneer er een fout in de persisted vraag is.
+
+>[!NOTE]
+>
+>De **Configuratie van blijvende query-service** wordt ook gebruikt voor [cache beheren](#cache-osgi-configration).
+
+Het veld `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) kan worden gedefinieerd als vereist:
+
+* `false` (standaardwaarde): Het maakt niet uit of de voortgezette query succesvol is of niet. De `/execute.json/persisted-query` retourneert de statuscode `200` en de `Content-Type` header returned will be `application/json`.
+
+* `true`: Het eindpunt zal terugkeren `400` of `500` zoals aangewezen wanneer er om het even welke vorm van fout bij het runnen van de persisted vraag is. Ook de geretourneerde `Content-Type` wordt `application/graphql-response+json`.
+
+   >[!NOTE]
+   >
+   >Zie voor meer informatie https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## De URL van de query coderen voor gebruik door een app {#encoding-query-url}
 

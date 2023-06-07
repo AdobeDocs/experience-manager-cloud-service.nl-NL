@@ -4,9 +4,9 @@ description: Maak kennis met de introductie van het hergebruik van inhoud met AE
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2710'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Deze pagina biedt een overzicht van het hergebruiken van inhoud met MSM. Op de v
 * [Synchronisatie van actieve kopie configureren](live-copy-sync-config.md)
 * [Conflicten MSM-rollout](rollout-conflicts.md)
 * [Aanbevolen MSM-procedures](best-practices.md)
+
+>[!NOTE]
+>
+>MSM kan ook voor Activa, met inbegrip van Inhoudsfragmenten worden gebruikt. Zie voor meer informatie [Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen](/help/assets/reuse-assets-using-msm.md) (alleen beschikbaar via de middelenconsole).
 
 ## Mogelijke scenario&#39;s {#possible-scenarios}
 

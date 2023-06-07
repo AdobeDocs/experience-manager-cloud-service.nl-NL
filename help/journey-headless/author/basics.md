@@ -2,9 +2,9 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
+source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1711'
 ht-degree: 1%
 
 ---
@@ -28,16 +28,19 @@ Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw eigen inhoud voor uw A
 
 Voordat u de inhoud van fragmenten gaat beheren, volgt een (zeer) korte inleiding op het gebruik van AEM....maar niets vervangt echt de ervaring van het aanmelden en het proberen om het systeem te gebruiken.
 
-### Auteur en publicatie {#author-preview-publish}
+### Auteur, Voorvertoning en Publiceren {#author-preview-publish}
 
-Een AEM installatie bestaat meestal uit minstens twee omgevingen:
+Een AEM-installatie bestaat meestal uit drie omgevingen:
 
 * Auteur
 * Publicatie
+* Voorvertoning
 
 U meldt zich aan, en gebruikt het auteursmilieu om uw inhoud te produceren. Wanneer u klaar bent, publiceert u de inhoud zodat deze algemeen beschikbaar wordt. Voor koploze gebruikers is dit voor andere toepassingen, voor webpagina&#39;s is dit voor lezers op het web.
 
 Zie Concepten ontwerpen voor meer informatie.
+
+Van de **Inhoudsfragmenten** -console, kunt u ook publiceren naar de **Voorvertoningsservice**, voor testen en voorvertonen, voordat u publiceert. Zie Een fragment publiceren en voorvertonen.
 
 ### Aanmelden {#signing-in}
 
@@ -263,9 +266,13 @@ Modellen van inhoudsfragmenten zijn in feite van vitaal belang voor inhoudsfragm
 
 Nadat u het fragment hebt voltooid, kunt u **Publiceren** zodat deze beschikbaar is voor toepassingen zonder koppen.
 
-De publicatieacties zijn beschikbaar in de editor (of op de werkbalk van het **Inhoudsfragmenten** of de **Activa** console):
+De publicatieacties zijn beschikbaar in de editor:
 
 ![Inhoudsfragmenteditor - Mijn fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+
+>[!NOTE]
+>
+>U kunt het fragment ook publiceren via het dialoogvenster **Activa** of **Inhoudsfragmenten** console.
 
 ## Volgende functies {#whats-next}
 
@@ -289,21 +296,26 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
    * [Spoorwegkiezer](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-   * Publiceren
-
-      * [Snel publiceren](/help/assets/manage-publication.md#quick-publish)
-
-      * [Publicatie beheren](/help/assets/manage-publication.md#manage-publication)
-
 * [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
    * [Contentfragmenten beheren](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [De configuratie toepassen op de middelenmap](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [De configuratie toepassen op de middelenmap](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Een inhoudsfragment maken](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Een inhoudsfragment maken](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Variaties - Inhoudsfragmenten ontwerpen](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
+   * Publiceren
+
+      * vanuit de editor, of **Activa** console
+
+         * [Snel publiceren](/help/assets/manage-publication.md#quick-publish)
+
+         * [Publicatie beheren](/help/assets/manage-publication.md#manage-publication)
+      * Van de **Inhoudsfragmenten** Console
+
+         * [Een inhoudsfragment publiceren en voorvertonen](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
    * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
@@ -311,6 +323,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
       * [Modellen van inhoudsfragmenten - eigenschappen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
       * [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+
 
 
 * Aan de slag - hulplijnen

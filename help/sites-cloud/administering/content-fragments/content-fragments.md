@@ -4,9 +4,9 @@ description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) 
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2127'
 ht-degree: 3%
 
 ---
@@ -59,6 +59,7 @@ Om dit te helpen, kunt u een voorvertoning weergeven van de [Boomstructuur](/hel
 >* [Contentfragmenten die componenten voor rendering configureren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
+>* [Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen](/help/assets/reuse-assets-using-msm.md) (alleen beschikbaar via de **Activa** console)
 
 
 Het aantal communicatiekanalen neemt jaarlijks toe. Doorgaans verwijzen kanalen naar het leveringsmechanisme, als:
@@ -112,6 +113,16 @@ Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructu
 >[!NOTE]
 >
 >AEM ondersteunt ook het vertalen van fragmentinhoud. Zie [Vertaalmiddelen](/help/assets/translate-assets.md) voor nadere informatie.
+
+## Publiceren en voorvertonen {#publish-and-preview}
+
+Net als bij alle inhoud wilt u uiteindelijk de inhoudsfragmenten publiceren naar de **[Service voor publiceren](/help/overview/architecture.md#runtime-architecture)**.
+
+Voorafgaand aan dat, kunt u ook voorproef een ervaring die gebruikend de Fragmenten van de Inhoud wordt geleverd, door [het publiceren van uw Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) aan de AEM **[Voorvertoningsservice](/help/overview/architecture.md#runtime-architecture)**.
+
+>[!CAUTION]
+>
+>Publiceren naar de **Voorvertoningsservice** is alleen beschikbaar via **Inhoudsfragmenten** console.
 
 ## Inhoudstype {#content-type}
 

@@ -2,7 +2,7 @@
 title: Contentfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Content Fragments kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 7ce05d282d553c5552cd828d08aaf6b7b5fb4e05
+source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 3%
@@ -183,7 +183,7 @@ Andere wijzigingen, zoals verplaatsen, kopiëren en verwijderen, moeten worden a
 
 Fragmenten moeten worden gepubliceerd zodat ze op gepubliceerde webpagina&#39;s kunnen worden gebruikt:
 
-* Een fragment kan na [het fragment maken in de console Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
+* Een fragment kan na [het fragment maken in de console Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment).
 * Als een *niet-gepubliceerd fragment* wordt gebruikt op een pagina die wordt gepubliceerd, kan het fragment ook op dit moment worden gepubliceerd.
 
 ## Inhoudsfragmenten exporteren {#exporting-content-fragments}

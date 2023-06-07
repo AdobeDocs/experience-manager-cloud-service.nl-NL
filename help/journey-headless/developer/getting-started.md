@@ -2,9 +2,9 @@
 title: Aan de slag met AEM headless as a Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3090'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,10 @@ Inhoud begint op de instantie van de auteur. Op deze manier maken auteurs van in
 ### Exemplaar publiceren {#publish}
 
 Wanneer de inhoud in de auteur is gemaakt, moet deze worden gepubliceerd om beschikbaar te zijn voor andere services. Een publicatie-instantie bevat alle inhoud die is gepubliceerd.
+
+### Voorvertoningsservice {#preview}
+
+Voordat u publiceert naar de instantie Publiceren, kunt u ook het inhoudsfragment publiceren naar de **Voorvertoningsservice** voor het testen en beoordelen. Dit wordt gedaan van **Inhoudsfragmenten** console.
 
 ### Replicatie {#replication}
 

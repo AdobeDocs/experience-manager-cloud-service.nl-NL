@@ -5,9 +5,9 @@ landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fr
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
+source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -101,11 +101,11 @@ Als u een specifiek fragment selecteert, wordt een werkbalk geopend die is toege
 ![Content Fragments console - toolbar voor een geselecteerd fragment](assets/cfc-fragment-toolbar.png)
 
 * **Open**
-* **Publiceren** (en **Publiceren ongedaan maken**)
+* **[Publiceren](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)** (en **[Publiceren ongedaan maken](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**)
 * **Kopiëren**
 * **Verplaatsen**
 * **Naam wijzigen**
-* **Verwijderen**
+* **[Verwijderen](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
 
 >[!NOTE]
 >
@@ -124,6 +124,11 @@ Het hoofd/juiste paneel (lijstmening) van de console verstrekt een waaier van in
 Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 * **Status**
    * Alleen informatie
+* **Voorvertoning**
+   * Alleen informatie:
+      * **synchroon**: Inhoudsfragment wordt gesynchroniseerd op het tabblad **Auteur** en **Voorvertoning** diensten.
+      * **Niet meer gesynchroniseerd**: Inhoudsfragment is niet meer synchroon op het tabblad **Auteur** en ****Voorvertoning** diensten. U moet **Publiceren** tot **Voorvertoning** om ervoor te zorgen dat beide instanties weer synchroon zijn.
+      * leeg: Het inhoudsfragment bestaat niet in het dialoogvenster **Voorvertoning** service.
 * **Gewijzigd**
    * Alleen informatie
 * **Gewijzigd door**

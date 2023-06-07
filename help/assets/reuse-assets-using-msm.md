@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '3162'
+source-wordcount: '3291'
 ht-degree: 10%
 
 ---
@@ -25,6 +25,16 @@ Multisite Manager (MSM)-functionaliteit in [!DNL Adobe Experience Manager] Hierm
 * Maak een keer elementen en maak vervolgens kopieën van deze elementen die u opnieuw kunt gebruiken in andere gebieden van de site.
 * Houd meerdere kopieën gesynchroniseerd en werk de originele primaire kopie één keer bij om de wijzigingen in de onderliggende kopieën door te voeren.
 * Breng lokale wijzigingen aan door de koppeling tussen bovenliggende en onderliggende elementen tijdelijk of permanent op te schorten.
+
+>[!NOTE]
+>
+>Het MSM voor [!DNL Assets] functionaliteit omvat inhoudsfragmenten die zijn opgeslagen als [!DNL Assets] (hoewel beschouwd als een functie Sites).
+
+>[!CAUTION]
+>
+>MSM voor inhoudsfragmenten is alleen beschikbaar wanneer u Content Fragments gebruikt via de **[!UICONTROL Assets]** console.
+>
+>MSM-functionaliteit is *niet* beschikbaar bij gebruik van de **[!UICONTROL Content Fragments]** console.
 
 ## Begrijp de voordelen en de concepten MSM {#concepts}
 
@@ -43,7 +53,7 @@ MSM onderhoudt een live relatie tussen het bronelement en zijn live kopieën, zo
 
 **Live kopie:** De kopie van de bronelementen/mappen die in synchronisatie zijn met de bron ervan. Actieve kopieën kunnen een bron zijn van verdere live kopieën. LC&#39;s maken.
 
-**Overerving:** Een koppeling/verwijzing tussen een live kopie van het middel/de map en de bron ervan die het systeem gebruikt om te onthouden waar de updates moeten worden verzonden. Overerving bestaat op granulair niveau voor metagegevensvelden. Overerving kan worden verwijderd voor selectieve metagegevensvelden, terwijl de live relatie tussen bron en live kopie behouden blijft.
+**Overerving:** Een koppeling/verwijzing tussen een live kopie van het middel/de map en de bron ervan die het systeem gebruikt om te onthouden waar de updates moeten worden verzonden. Overerving bestaat op granulair niveau voor metagegevensvelden, maar ook voor variaties en velden van inhoudsfragmenten. Overerving kan voor geselecteerde items worden verwijderd, terwijl de live relatie tussen bron en live kopie behouden blijft.
 
 **Uitvoeren:** Een handeling die de wijzigingen aan de bron stroomafwaarts doorvoert naar de live kopieën. Het is mogelijk om één of meerdere levende exemplaren in één keer bij te werken gebruikend rollout actie. Zie rollout.
 
@@ -66,7 +76,7 @@ Voer een van de volgende twee handelingen uit om een live kopie van een of meer 
 * Methode 1: Selecteer de bronelementen en klik op **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** van de werkbalk bovenaan.
 * Methode 2: In [!DNL Experience Manager] gebruikersinterface, klik **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** in de rechterbovenhoek van de interface.
 
-U kunt live kopieën van een middel of map één voor één maken. U kunt live kopieën maken die zijn afgeleid van een middel of een map die zelf een live kopie is. Inhoudsfragmenten (CF&#39;s) worden niet ondersteund voor de gebruikszaak. Wanneer het proberen om hun levende exemplaren tot stand te brengen, worden CFs gekopieerd over zoals is zonder enige verhouding. De gekopieerde CF&#39;s zijn een momentopname in de tijd en worden niet bijgewerkt wanneer oorspronkelijke CF&#39;s worden bijgewerkt.
+U kunt live kopieën van een middel of map één voor één maken. U kunt live kopieën maken die zijn afgeleid van een middel of een map die zelf een live kopie is.
 
 Ga als volgt te werk om live kopieën te maken met de eerste methode:
 
@@ -233,6 +243,38 @@ Zie [Informatie en status van een livekopie](#status-lc-asset) en [Informatie en
 >
 >Als de relatie wordt onderbroken, is de synchronisatiehandeling niet beschikbaar op de werkbalk. Terwijl de synchronisatieactie in de spoorwegen van Verwijzingen beschikbaar is, worden de wijzigingen niet verspreid zelfs op een succesvolle implementatie.
 
+## Overerving voor afzonderlijke items annuleren en opnieuw inschakelen {#canceling-reenabling-inheritance-individual-items}
+
+U kunt de overerving van Live kopie annuleren voor een:
+
+* metagegevensveld
+* Variatie van inhoudsfragment
+* Gegevensveld Inhoudsfragment
+
+Dit betekent dat het item niet meer wordt gesynchroniseerd met de broncomponent. Indien nodig kunt u overerving later inschakelen.
+
+### Overerving annuleren {#cancel-inheritance}
+
+Overerving annuleren:
+
+1. Selecteer **Overerving annuleren** pictogram, naast het vereiste item:
+
+   ![Synchroniseer actie trekt de veranderingen aan de bron aan](assets/cancel-inheritance-icon.png)
+
+1. Bevestig de handeling met Ja in het dialoogvenster Overerving annuleren.
+
+### Overerving opnieuw inschakelen {#reenable-inheritance}
+
+Overerving opnieuw inschakelen:
+
+1. Als u overerving voor een item wilt inschakelen, selecteert u de optie **Overerving opnieuw inschakelen** pictogram naast het vereiste item:
+
+   ![Synchroniseer actie trekt de veranderingen aan de bron aan](assets/re-enable-inheritance-icon.png)
+
+   >[!NOTE]
+   >
+   >Wanneer u overerving weer inschakelt, wordt het item niet automatisch gesynchroniseerd met de bron. U kunt handmatig een synchronisatie aanvragen als dit vereist is.
+
 ## Onderbreek en hervat de relatie {#suspend-resume}
 
 U kunt de relatie tijdelijk onderbreken om te voorkomen dat een live kopie wijzigingen ontvangt die zijn aangebracht in het bronelement of de bronmap. De relatie kan ook worden hervat voor live kopiëren om de wijzigingen van de bron te ontvangen.
@@ -319,11 +361,13 @@ In meer scenario&#39;s, MSM voor [!DNL Assets] past het gedrag van MSM voor de f
 * Het vormen van MSM sloten op paginaeigenschappen wordt niet gesteund in MSM voor [!DNL Assets].
 * Voor MSM voor [!DNL Assets]alleen de **[!UICONTROL Standard rollout config]**. De andere rollout configuraties zijn niet beschikbaar voor MSM voor [!DNL Assets].
 
+>[!NOTE]
+>
+>Onthoud dat MSM voor inhoudsfragmenten (die via de **[!UICONTROL Assets]** console) gebruikt de functionaliteit Middelen; dit komt doordat ze als elementen worden opgeslagen (hoewel ze wel als een functie Sites worden beschouwd).
+
 ## Beperkingen en bekende problemen met MSM voor [!DNL Assets] {#limitations}
 
 Hieronder vindt u beperkingen van MSM voor [!DNL Assets].
-
-* Inhoudsfragmenten worden niet ondersteund. Wanneer u probeert live kopieën te maken, worden Content Fragments gekopieerd, net als zonder relatie. De gekopieerde inhoudsfragmenten vormen een momentopname in de tijd en worden niet bijgewerkt wanneer u de oorspronkelijke inhoudsfragmenten bijwerkt.
 
 * MSM werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
 
@@ -341,3 +385,4 @@ Hieronder vindt u beperkingen van MSM voor [!DNL Assets].
 * [Facetten doorzoeken](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
+* [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)

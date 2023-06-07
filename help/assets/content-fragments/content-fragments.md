@@ -2,10 +2,10 @@
 title: Werken met inhoudsfragmenten (elementen - inhoudsfragmenten)
 description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service inhoud kunt ontwerpen, maken, curven en gebruiken die onafhankelijk is van pagina's. Dit is ideaal voor het ontwerpen van pagina's en het leveren zonder kop.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: ca41657057211cb0736a866771253b166fa139b4
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 3%
+source-wordcount: '2135'
+ht-degree: 2%
 
 ---
 
@@ -46,6 +46,7 @@ Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren,
 * [Gekoppelde inhoud gebruiken](/help/assets/content-fragments/content-fragments-assoc-content.md) - gekoppelde inhoud toevoegen
 * [Metagegevens - Fragmenteigenschappen](/help/assets/content-fragments/content-fragments-metadata.md) - de fragmenteigenschappen weergeven en bewerken
 * Gebruiken [Inhoudsfragmenten, samen met GraphQL, voor het leveren van inhoud](/help/assets/content-fragments/content-fragments-graphql.md) voor gebruik in uw toepassingen. Om dit te helpen, kunt u een voorvertoning weergeven [JSON-uitvoer](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
 >
@@ -109,6 +110,16 @@ Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructu
 >[!NOTE]
 >
 >AEM ondersteunt ook het vertalen van fragmentinhoud. Zie [Vertaalmiddelen](/help/assets/translate-assets.md) voor nadere informatie.
+
+## Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen {#reusing-content-fragments-with-msm-assets}
+
+Indien benaderd via de **Activa** kunt u MSM gebruiken en Actieve kopieën maken voor uw fragmenten.
+
+Zie voor meer informatie [Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen](/help/assets/reuse-assets-using-msm.md).
+
+>[!CAUTION]
+>
+>Als u MSM (dat tot exemplaren van Inhoudsfragmenten leidt) wilt gebruiken, dan om het even welk **Uniek** de beperkingen moeten worden verwijderd uit alle gegevenstypen die in de respectieve [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md).
 
 ## Inhoudstype {#content-type}
 

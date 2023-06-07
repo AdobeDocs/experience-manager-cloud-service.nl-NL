@@ -4,9 +4,9 @@ description: Leer hoe te om de console van Fragmenten van de Inhoud te gebruiken
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: b351582a405f5c419f3aa386faddccd6ecef3a43
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '2071'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ De [Inhoudsfragmenteditor](#opening-the-fragment-editor) biedt diverse [modi](#m
 
 >[!NOTE]
 >
->Inhoudsfragmenten worden opgeslagen als **Activa**. Zij worden hoofdzakelijk beheerd vanuit de **Inhoudsfragmenten** console, maar kan ook vanuit de **Activa** console.
+>Inhoudsfragmenten worden opgeslagen als **Activa**. Zij worden hoofdzakelijk beheerd vanuit de **Inhoudsfragmenten** console, maar kan ook vanuit de [Activa](/help/assets/content-fragments/content-fragments-managing.md) console.
 
 ## De console met inhoudsfragmenten {#content-fragments-console}
 
@@ -166,8 +166,8 @@ Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 * De drie stippen (**...**) biedt toegang tot extra handelingen:
    * **Paginaverwijzingen bijwerken**
       * Hiermee werkt u alle paginaverwijzingen bij.
-   * **[Snel publiceren](#publishing-and-referencing-a-fragment)**
-   * **[Publicatie beheren](#publishing-and-referencing-a-fragment)**
+   * **[Snel publiceren](/help/assets/manage-publication.md#quick-publish)**
+   * **[Publicatie beheren](/help/assets/manage-publication.md#manage-publication)**
 
 <!--
 This updates any page references and ensures that the Dispatcher is flushed as required. -->
@@ -238,36 +238,62 @@ U kunt ook [gekoppelde inhoud](/help/sites-cloud/administering/content-fragments
 
 U kunt de eigenschappen van een fragment weergeven en bewerken met de opdracht [Metagegevens](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md) tab.
 
-## Een fragment publiceren en ernaar verwijzen {#publishing-and-referencing-a-fragment}
+## Een fragment publiceren en voorvertonen {#publishing-and-previewing-a-fragment}
+
+U kunt inhoudsfragmenten publiceren naar:
+
+* de **[Service voor publiceren](/help/overview/architecture.md#runtime-architecture)** - voor volledige toegang van het publiek
+
+* de **[Voorvertoningsservice](/help/overview/architecture.md#runtime-architecture)** - om de inhoud voor te vertonen voordat deze volledig beschikbaar is
+
+   >[!CAUTION]
+   Inhoudsfragmenten publiceren naar de **Voorvertoningsservice** is alleen beschikbaar via [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); met de **Publiceren** handeling.
+
+   >[!NOTE]
+   Voor meer informatie over de Voorvertoningsomgevingen raadpleegt u:
+   * [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+   * [OSGi-instellingen configureren voor de voorbeeldreeks](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+   * [Foutopsporingsvoorbeeld met de ontwikkelaarsconsole](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+
+
+Als u inhoudsfragmenten wilt publiceren met de opdracht **Publiceren** op de werkbalk van het dialoogvenster [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
 Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat de [model is gepubliceerd](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
 
-Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving.
+1. Selecteer een of meer fragmenten in de lijst.
 
-* Van de **Publiceren** op de werkbalk van het dialoogvenster [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
-   * **Nu** - na bevestiging wordt het fragment onmiddellijk gepubliceerd
-   * **Schema** - u kunt de datum en tijd selecteren waarop het fragment wordt gepubliceerd
+1. Selecteer op de werkbalk de optie **Publiceren** en vervolgens een van de volgende opties om het desbetreffende dialoogvenster te openen:
 
-   Indien nodig moet u de **Activeringsdatum** en welke verwijzingen naar publiceren. Bijvoorbeeld:
+   * **Nu** - selecteer een van de **Service voor publiceren** of de **Voorvertoningsservice**; na bevestiging wordt het fragment onmiddellijk gepubliceerd
+   * **Schema** - naast de vereiste service kunt u ook de datum en tijd selecteren waarop het fragment wordt gepubliceerd
+
+   Indien nodig moet u de te publiceren referenties opgeven. Standaard worden verwijzingen ook gepubliceerd naar de voorvertoningsservice om ervoor te zorgen dat de inhoud niet wordt afgebroken.
+Bijvoorbeeld voor een gepland publicatieverzoek:
    ![Het dialoogvenster Publiceren](assets/cfm-publish-01.png)
 
-* Van de [Inhoudsfragmenteditor](#toolbar-actions-in-the-content-fragment-editor)
-   * [**Snel publiceren**](/help/assets/manage-publication.md#quick-publish)
-   * [**Publicatie beheren**](/help/assets/manage-publication.md#manage-publication)
+1. Bevestig de handeling Publiceren.
 
-Wanneer u [Een pagina publiceren die het fragment gebruikt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); het fragment wordt weergegeven in de paginaverwijzingen.
+U kunt ook publiceren naar de **Service voor publiceren** van de [Inhoudsfragmenteditor](#toolbar-actions-in-the-content-fragment-editor) gebruiken:
+* **Snel publiceren**
+* **Publicatie beheren**
+
+>[!NOTE]
+Na u [Een pagina publiceren die het fragment gebruikt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); het fragment wordt weergegeven in de paginaverwijzingen.
 
 >[!CAUTION]
 Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
 ## Publicatie van een fragment ongedaan maken {#unpublishing-a-fragment}
 
-Als u de publicatie van inhoudsfragmenten ongedaan wilt maken, selecteert u een of meer fragmenten en vervolgens **Publiceren ongedaan maken**.
+Als u de publicatie van inhoudsfragmenten ongedaan wilt maken, selecteert u een of meer fragmenten en vervolgens **Publiceren ongedaan maken** op de werkbalk van de [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). U kunt **Nu** of **Gepland**.
+
+Wanneer het relevante dialoogvenster wordt geopend, kunt u de juiste service selecteren:
+![Dialoogvenster Publiceren ongedaan maken](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
-De **Publiceren ongedaan maken** actie is zichtbaar wanneer gepubliceerde fragmenten beschikbaar zijn.
+De **Publiceren ongedaan maken** actie is alleen zichtbaar wanneer gepubliceerde fragmenten beschikbaar zijn.
 
 >[!CAUTION]
 Als er al vanuit een ander fragment of een pagina naar het fragment wordt verwezen, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan.

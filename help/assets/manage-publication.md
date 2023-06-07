@@ -1,21 +1,20 @@
 ---
 title: Publicatie beheren
 description: Elementen publiceren naar of verwijderen uit Experience Manager Assets, Dynamic Media en Brand Portal
-contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 5%
+source-wordcount: '1548'
+ht-degree: 2%
 
 ---
 
 # Publicaties beheren in Experience Manager Assets {#manage-publication-in-aem}
 
-Als [!DNL Adobe Experience Manager Assets] beheerder, kunt u activa en omslagen publiceren die activa van uw auteursinstantie aan bevatten [!DNL Experience Manager Assets], [!DNL Dynamic Media], en [!DNL Brand Portal]. Bovendien kunt u de publicatieworkflow van een asset of map op een latere datum of tijd plannen. Na publicatie kunnen de gebruikers de elementen openen en verder verspreiden onder andere gebruikers. Standaard kunt u elementen en mappen publiceren naar [!DNL Experience Manager Assets]. Nochtans, kunt u vormen [!DNL Experience Manager Assets] publiceren inschakelen in [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) en [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+Als [!DNL Adobe Experience Manager Assets] beheerder, kunt u activa en omslagen publiceren die activa van uw auteursinstantie aan bevatten [!DNL Experience Manager Assets], [!DNL Dynamic Media], en [!DNL Brand Portal]. Ook kunt u plannen om een middel of een omslag op een recentere datum of een tijd te publiceren. Na publicatie kunnen de gebruikers de elementen openen en verder verspreiden onder andere gebruikers. Standaard kunt u elementen en mappen publiceren naar [!DNL Experience Manager Assets]. Nochtans, kunt u vormen [!DNL Experience Manager Assets] publiceren inschakelen in [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) en [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 U kunt elementen op het niveau van middelen of mappen publiceren of de publicatie ervan ongedaan maken met behulp van **[!UICONTROL Quick Publish]** of **[!UICONTROL Manage Publication]** beschikbaar in het dialoogvenster [!DNL Experience Manager Assets] interface. Als u volgende wijzigingen aanbrengt in het oorspronkelijke middel of de oorspronkelijke map in [!DNL Experience Manager Assets], worden de wijzigingen pas in het publicatieexemplaar doorgevoerd als u het document opnieuw publiceert vanaf [!DNL Experience Manager Assets]. Hiermee zorgt u ervoor dat wijzigingen die in uitvoering zijn, niet beschikbaar zijn in het publicatieexemplaar. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in de publicatie-instantie.
 
@@ -24,6 +23,7 @@ U kunt elementen op het niveau van middelen of mappen publiceren of de publicati
 * [Assets later publiceren](#publish-assets-later)
 * [Elementen publiceren naar Dynamic Media](#publish-assets-to-dynamic-media)
 * [Assets publiceren naar Brand Portal](#publish-assets-to-brand-portal)
+* [Aanvraag voor publicatie](#request-publication)
 * [Beperkingen en tips](#limitations-and-tips)
 
 ## Elementen publiceren met Snel publiceren {#quick-publish}
@@ -61,7 +61,7 @@ Klik op **[!UICONTROL Next]**. Op basis van de selectie **[!UICONTROL Scope]** b
 
 ### Inhoud toevoegen {#add-content}
 
-Publiceren naar [!DNL Experience Manager Assets] kunt u meer inhoud (elementen en mappen) toevoegen aan de publicatielijst. U kunt meer elementen of mappen aan de lijst toevoegen via de opslagplaatsen voor dam. Klikken op **[!UICONTROL Add Content]** om meer inhoud toe te voegen.
+Publiceren naar [!DNL Experience Manager Assets] kunt u meer inhoud (elementen en mappen) toevoegen aan de publicatielijst. U kunt meer elementen of mappen aan de lijst toevoegen via de opslagplaatsen voor dam. Klikken **[!UICONTROL Add Content]** om meer inhoud toe te voegen.
 
 U kunt meerdere elementen uit een map toevoegen of meerdere mappen tegelijk toevoegen. U kunt echter geen elementen uit meerdere mappen tegelijk toevoegen.
 
@@ -177,24 +177,27 @@ U kunt elementen, mappen en verzamelingen publiceren naar de [!DNL Experience Ma
 * [Mappen publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
 * [Verzamelingen publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
 
+## Aanvraag voor publicatie {#request-publication}
+
+De `Request Publication` Deze optie helpt bij het verifiëren van de workflow van Middelen voordat deze worden gepubliceerd op [!DNL AEM] Elementenomgeving. [!DNL AEM] biedt verschillende machtigingsniveaus voor verschillende gebruikers. U kunt een *contribuant* die elementen uploadt, maar deze pas kunnen publiceren nadat de uploads zijn geverifieerd. Bovendien, zijn *Beheer* u kunt workflows van de Elementen lezen en schrijven.
+
+De optie Publicatie aanvragen is beschikbaar voor de volgende gebruikers:
+* **Medewerker:** Als u een gebruiker bent die kan bijdragen aan [!DNL AEM] Middelen, dan hebt u beperkte toegang tot de [!DNL AEM] Workflow Elementen. `Manage publication` is verborgen voor u. Als medewerker kunt u alleen een bijdrage leveren door Elementen toe te voegen, maar u kunt deze niet publiceren of hebt geen leestoegang tot de workflow.
+
+* **Werkstroomgebruiker:** Deze gebruiker kan geen elementen publiceren, maar heeft wel leestoegang tot de workflow. Als workflowgebruiker kunt u het volgende doen:
+   * verzoek om publicatie
+   * weergave `Manage publication` knop
+   * de workflow plannen en de opties bekijken `schedule now` en `schedule later`
+
+* **Beheerder:** Als beheerder kunt u de algemene workflowstappen voor de Middelen beheren. `Manage publication` is zichtbaar voor u. Als de bestemming `publish` is geselecteerd, kunt u later een element voor de workflowstap plannen.
+
+>[!NOTE]
+>
+>Indien [!DNL Dynamic Media] is geselecteerd als een doel en wordt vervolgens de workflowstap uitgeschakeld voor **workflowgebruiker** en **beheerder** gebruikers.
+
 ## Beperkingen en tips {#limitations-and-tips}
 
-* De optie [!UICONTROL Manage Publication] is beschikbaar slechts aan de gebruikersrekeningen die replicatiemachtigingen hebben.
+* `Manage publication` is beschikbaar voor de gebruikers die beschikken over ten minste Leesmachtigingen voor de workflow.
 * Lege mappen worden niet gepubliceerd.
 * Als u een element publiceert dat wordt verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
 * Verwijder tijdens het verwijderen van de publicatie van een complex element alleen de publicatie van het element. Maak de publicatie van de referenties niet ongedaan, omdat ze door andere gepubliceerde elementen kunnen worden doorverwezen.
-
-**Zie ook**
-
-* [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
-* [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
-* [Metagegevensschema&#39;s](metadata-schemas.md)
-* [Elementen downloaden](download-assets-from-aem.md)
-* [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
-* [Verzamelingen beheren](manage-collections.md)
-* [Bulkmetagegevens importeren](metadata-import-export.md)

@@ -4,9 +4,9 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '2939'
 ht-degree: 3%
 
 ---
@@ -181,6 +181,10 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
    >[!NOTE]
    >
    >Variaties kunnen hetzelfde hebben *uniek* waarde als variaties van hetzelfde fragment, maar niet dezelfde waarde als bij variaties van andere fragmenten.
+
+   >[!CAUTION]
+   >
+   >Als u MSM (dat tot exemplaren van Inhoudsfragmenten leidt) wilt gebruiken, dan om het even welk **Uniek** de beperkingen zouden uit om het even welke Types moeten worden verwijderd die van Gegevens in de respectieve Modellen van het Fragment van de Inhoud worden gebruikt. MSM voor inhoudsfragmenten is alleen beschikbaar via de **Activa** console.
 
 * Zie **[Content Reference](#content-reference)** voor meer details over dat specifieke gegevenstype en zijn eigenschappen.
 

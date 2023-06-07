@@ -2,9 +2,9 @@
 title: Content Fragment Models (Assets - Content Fragments)
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2887'
+source-wordcount: '2917'
 ht-degree: 3%
 
 ---
@@ -179,6 +179,10 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
    >[!NOTE]
    >
    >Variaties kunnen hetzelfde hebben *uniek* waarde als variaties van hetzelfde fragment, maar niet dezelfde waarde als bij variaties van andere fragmenten.
+
+   >[!CAUTION]
+   >
+   >Als u MSM (dat tot exemplaren van Inhoudsfragmenten leidt) wilt gebruiken, dan om het even welk **Uniek** de beperkingen zouden uit om het even welke Types moeten worden verwijderd die van Gegevens in de respectieve Modellen van het Fragment van de Inhoud worden gebruikt.
 
 * Zie **[Content Reference](#content-reference)** voor meer details over dat specifieke gegevenstype en zijn eigenschappen.
 

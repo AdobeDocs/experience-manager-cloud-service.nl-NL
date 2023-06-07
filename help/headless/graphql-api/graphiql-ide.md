@@ -3,9 +3,9 @@ title: Het gebruiken van GrahiQL winde in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ Tenuitvoerlegging van de norm [GraphiQL](https://graphql.org/learn/serving-over-
 >[!NOTE]
 >U moet [Uw eindpunten geconfigureerd](/help/headless/graphql-api/graphql-endpoint.md) in de [configuratievenster](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) voordat u GraphiQL IDE gebruikt.
 
-
 De **GraphiQL** kunt u uw GraphQL-query&#39;s testen en er fouten in opsporen door het volgende in te stellen:
 * Selecteer de **Endpoint** aangewezen aan de configuratie van Plaatsen die u voor uw vragen wilt gebruiken
 * direct nieuwe query&#39;s invoeren
@@ -31,7 +30,7 @@ De **GraphiQL** kunt u uw GraphQL-query&#39;s testen en er fouten in opsporen do
 * stel uw vragen in werking om de resultaten onmiddellijk te zien
 * beheren **Query-variabelen**
 * opslaan en beheren **Blijvende query&#39;s**
-* publiceren of publiceren ongedaan maken, **Blijvende query&#39;s** (bijvoorbeeld van/naar `dev-publish`)
+* publiceren of publiceren ongedaan maken, **Blijvende query&#39;s**, aan uw **Publiceren** of **Voorvertoning** dienst; bijvoorbeeld van/naar `dev-publish`
 * zie **Historie** van uw vorige vragen
 * gebruiken **Documentatieverkenner** toegang tot de documentatie; helpen u te leren en te begrijpen welke methoden beschikbaar zijn.
 
@@ -131,13 +130,27 @@ In geval van een fout of een fout van de oorsprong kan het optreden van een cach
 
 1. Selecteren **Opslaan** om de wijzigingen voort te zetten.
 
-## Het publiceren van voortgeduurde vragen {#publishing-persisted-queries}
+## Doorlopende query&#39;s publiceren en voorvertonen {#publishing-previewing-persisted-queries}
 
-Als u de doorlopende query in de lijst hebt geselecteerd (linkerdeelvenster), kunt u de opdracht **Publiceren** en **Publiceren ongedaan maken** handelingen. Hiermee worden ze geactiveerd in uw publicatieomgeving (bijvoorbeeld `dev-publish`) voor eenvoudige toegang door uw toepassingen tijdens het testen.
+Als u de doorlopende query in de lijst hebt geselecteerd (linkerdeelvenster), kunt u de opdracht **Publiceren** handeling.
+
+Hierdoor wordt de query geactiveerd naar de omgeving die u selecteert. U kunt kiezen tussen **Publiceren** milieu (bijvoorbeeld `dev-publish`) of uw **Voorvertoning** omgeving voor eenvoudige toegang door uw toepassingen tijdens het testen.
+
+![GraphiQL -Published Persisted Query](assets/cfm-graphiql-publish.png "GraphiQL - Doorlopende query publiceren")
 
 >[!NOTE]
 >
 >De definitie van het voorgeheugen van de persisted query `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} heeft een standaardwaarde van 2 uur (7200 seconden).
+
+## Publiceren van doorlopende query&#39;s ongedaan maken {#unpublishing-persisted-queries}
+
+Als bij het publiceren, kunt u, zodra u uw voortgezette vraag van de lijst (linkerpaneel) hebt geselecteerd, **Publiceren ongedaan maken** handeling.
+
+Hierdoor wordt de query gedeactiveerd vanuit de omgeving die u selecteert. ofwel **Publiceren** of uw **Voorvertoning** milieu.
+
+>[!NOTE]
+>
+>Zorg er ook voor dat u de benodigde wijzigingen in uw clienttoepassing hebt aangebracht om mogelijke problemen te voorkomen.
 
 ## URL kopiëren om rechtstreeks toegang te krijgen tot de query {#copy-url}
 
