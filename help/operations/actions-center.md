@@ -4,7 +4,7 @@ description: Gebruik het actiecentrum om gemakkelijk actie te ondernemen tegen i
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: ca7cad567a5f83cd1edc14def6d961b8ba3b7f1f
+source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Om het ontvangen van de e-mailberichten van het Centrum van Acties te vormen, cr
 
 ## Gedetailleerde gebruikersstroom {#detailed-user-flow}
 
-Als u op de e-mail klikt, verschijnt een pop-up met de context van de melding waarop u hebt geklikt en in sommige gevallen koppelingen naar aanvullende informatie met een beschrijving van hoe u corrigerende maatregelen kunt nemen.
+Als u op de e-mail klikt, gaat u naar het Actions Center, met een pop-up waarin de context wordt weergegeven van de melding waarop u hebt geklikt en in sommige gevallen koppelingen naar aanvullende informatie waarin wordt beschreven hoe u corrigerende maatregelen kunt nemen.
 
 ![Gegevens over incidenten](/help/operations/assets/incident-details.png)
 
@@ -64,7 +64,7 @@ Zoals alle steunkaartjes, zal het in [Tabblad Adobe Admin Console-ondersteunings
 
 AEM as a Cloud Service heeft verschillende soorten meldingen, maar er wordt alleen een subset weergegeven in het Actions Center, zoals in de onderstaande tabel wordt geïllustreerd.
 
-| Meldingstype | Beschrijving | Hoe te vormen | Wordt weergegeven in Waarschuwingencentrum |
+| Meldingstype | Beschrijving | Hoe te vormen | Wordt weergegeven in actiecentrum |
 |---|---|---|---|
 | Operationele incidenten | Kritieke incidenten die onmiddellijke actie vereisen | Gebruiker toegewezen aan productprofiel &quot;Incident Notification - Cloud Service&quot; | X |
 | Proactieve aanbevelingen | Optimalisaties die moeten worden gepland | Gebruiker toegewezen aan productprofiel &quot;Proactieve kennisgeving - Cloud Service&quot; | X |
