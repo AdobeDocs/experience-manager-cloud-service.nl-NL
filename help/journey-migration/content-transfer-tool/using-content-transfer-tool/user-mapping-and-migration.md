@@ -2,9 +2,9 @@
 title: Toewijzing van gebruikers en belangrijkste migratie
 description: Overzicht van de toewijzing van gebruikers en de belangrijkste migratie
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: caa04391077d594a828a42a1a5a6a03daa107168
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '832'
 ht-degree: 3%
 
 ---
@@ -25,9 +25,13 @@ Als onderdeel van de as a Cloud Service overgang naar Adobe Experience Manager (
 
 Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag. Voor dit proces moet gebruik worden gemaakt van de [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) voor het beheren van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS), dat één aanmelding voor alle Adobe-cloudtoepassingen biedt. Raadpleeg voor meer informatie [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Vanwege deze wijziging moeten bestaande gebruikers worden toegewezen aan hun IMS-id&#39;s om dubbele gebruikers op de auteur-instantie van de Cloud Service te voorkomen. Aangezien groepen in traditionele AEM fundamenteel verschillen van groepen in IMS, worden groepen niet in kaart gebracht, maar moeten de twee groepen na de migratie met elkaar in overeenstemming worden gebracht.
 
-## Gebruikerstoewijzing en migratiegegevens {#user-mapping-detail}
+## Gegevens gebruikersmigratie {#user-migration-detail}
 
-Met het gereedschap Inhoud overbrengen en het programma voor cloudversnelling kunt u alle gebruikers migreren die zijn gekoppeld aan de inhoud die wordt gemigreerd. Deze toewijzing wordt automatisch uitgevoerd en of dit gebeurt, kan worden geregeld door een schakelknop voordat de extractie wordt gestart. De standaardinstelling van de schakeloptie kan door de gebruiker worden genegeerd wanneer de extractie wordt gestart.
+Met het gereedschap Inhoud overbrengen en het beheer van cloudversnelling migreert u naar het cloudsysteem voor alle gebruikers die zijn gekoppeld aan de inhoud die wordt gemigreerd.
+
+## Details gebruikerstoewijzing {#user-mapping-detail}
+
+AEM gebruikers kunnen worden toegewezen aan overeenkomstige gebruikers van Adobe IMS met hetzelfde e-mailadres.  Deze toewijzing kan automatisch in CTT worden uitgevoerd, en of het wordt gedaan kan door een knevel worden gecontroleerd alvorens de extractie wordt begonnen. De standaardinstelling van de schakeloptie kan door de gebruiker worden genegeerd wanneer de extractie wordt gestart.
 
 * Als het bronsysteem een auteurinstantie is, door gebrek is de keus om de afbeelding te doen _op_, omdat dit het aanbevolen proces is.
 * Als het bronsysteem een publicatie-instantie is, kunt u de toewijzing standaard uitvoeren _uit_, omdat gebruikers gewoonlijk niet worden gemigreerd of gebruikt op publicatieinstanties.
