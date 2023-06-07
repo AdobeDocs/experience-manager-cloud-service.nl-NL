@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fa178192d74dfa9eb44835e31a111daf00f6d7d1
+source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
 workflow-type: tm+mt
-source-wordcount: '4789'
+source-wordcount: '4934'
 ht-degree: 0%
 
 ---
@@ -936,6 +936,13 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
 
 
 
+
+* Het filter `includeVariations` is opgenomen in de `List` en `Paginated` querytypen.  Als u Variaties in inhoudsfragmenten wilt ophalen in de queryresultaten, voert u de opdracht `includeVariations` filter moet worden ingesteld op `true`.
+
+   * Zie [Voorbeeldquery voor meerdere inhoudsfragmenten en de bijbehorende variaties van een bepaald model](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   >[!CAUTION]
+   >Het filter `includeVariations` en het door het systeem gegenereerde veld `_variation` kan niet samen in de zelfde vraagdefinitie worden gebruikt.
+
 * Als u logische OR wilt gebruiken:
    * gebruiken ` _logOp: OR`
    * Zie [Voorbeeldquery - Alle personen met de naam &quot;Jobs&quot; of &quot;Smith&quot;](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
@@ -965,6 +972,10 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
          >
          >Als de opgegeven variatie niet bestaat voor een inhoudsfragment, wordt de master variatie geretourneerd als standaard (fallback).
 
+         >[!CAUTION]
+         >
+         >Het door het systeem gegenereerde veld `_variation` kan niet samen met het filter worden gebruikt `includeVariations`.
+
          * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
    * Voor [levering van afbeelding](#image-delivery):
 
@@ -977,6 +988,17 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
          * [Voorbeeldquery voor levering van afbeelding met volledige parameters](#image-delivery-full-parameters)
 
          * [Voorbeeldquery voor beeldlevering met één opgegeven parameter](#image-delivery-single-specified-parameter)
+   * `_tags` : om de id&#39;s weer te geven van inhoudsfragmenten of variaties die codes bevatten; this is an array of `cq:tags` id&#39;s.
+
+      * Zie [Voorbeeldquery - Namen van alle steden die zijn getagd als stadseinden](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * Zie [Voorbeeldquery voor inhoudfragmentvariaties van een bepaald model waaraan een specifieke tag is gekoppeld](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * Zie [Voorbeeldquery met filtering op _tags-id en exclusief variaties](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * Zie [Voorbeeldquery met filteren op _tags-id en inclusief variaties](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+      >[!NOTE]
+      >
+      >Tags kunnen ook worden opgevraagd door de metagegevens van een inhoudsfragment weer te geven.
+
    * En bewerkingen:
 
       * `_operator` : specifieke exploitanten toepassen; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -986,6 +1008,7 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
          * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : om de zaak te negeren bij het vragen
          * Zie [Voorbeeldquery - Alle steden met SAN in naam, ongeacht het geval](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+
 
 
 

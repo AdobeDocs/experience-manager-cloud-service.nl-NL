@@ -4,10 +4,10 @@ description: Begrijp hoe u met behulp van variaties inhoud voor het fragment kun
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 0361ae6e7de7b92f8c3ebbf531e9382df44c246f
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 10%
+source-wordcount: '2480'
+ht-degree: 9%
 
 ---
 
@@ -40,24 +40,37 @@ Voer een reeks andere acties uit afhankelijk van het gegevenstype dat wordt uitg
 
 ## Inhoud ontwerpen {#authoring-your-content}
 
-Wanneer u het inhoudsfragment opent voor bewerking, worden de **Variaties** is standaard geopend. Hier kunt u de inhoud ontwerpen, voor Master of andere variaties. Het gestructureerde fragment bevat verschillende velden van diverse gegevenstypen die zijn gedefinieerd in het inhoudsmodel.
+Wanneer u het inhoudsfragment opent voor bewerking, worden de **Variaties** is standaard geopend. Hier kunt u de inhoud ontwerpen, voor Master of andere variaties. Het gestructureerde fragment bevat diverse velden, van verschillende gegevenstypen, die zijn gedefinieerd in het inhoudsmodel.
 
 Bijvoorbeeld:
 
 ![volledige schermeditor](assets/cfm-variations-02.png)
+
 U kunt:
 
-* direct wijzigingen aanbrengen in het dialoogvenster **Variaties** tab
+* Bewerk de inhoud rechtstreeks in het dialoogvenster **Variaties** tab; elk gegevenstype biedt verschillende bewerkingsopties , bijvoorbeeld :
 
-   * elk gegevenstype biedt verschillende bewerkingsopties
+   * for **Tekst met meerdere regels** velden die u ook kunt openen [full-screen redacteur](#full-screen-editor) tot:
 
-* for **Tekst met meerdere regels** velden die u ook kunt openen [full-screen redacteur](#full-screen-editor) tot:
+      * Selecteer de [Indeling](#formats)
+      * zie meer bewerkingsopties (voor [RTF](#rich-text) bestandsindeling)
+      * toegang tot een reeks [handelingen](#actions)
+   * Voor **Fragmentverwijzing** velden [Inhoudsfragment bewerken](#fragment-references-edit-content-fragment) Deze optie kan beschikbaar zijn, afhankelijk van de modeldefinitie.
 
-   * Selecteer de [Indeling](#formats)
-   * zie meer bewerkingsopties (voor [RTF](#rich-text) bestandsindeling)
-   * toegang tot een reeks [handelingen](#actions)
 
-* Voor **Fragmentverwijzing** velden **[Inhoudsfragment bewerken](#fragment-references-edit-content-fragment)** Deze optie kan beschikbaar zijn, afhankelijk van de modeldefinitie.
+* Toewijzen **Tags** de huidige wijziging; de tags kunnen worden toegevoegd, bijgewerkt en verwijderd
+
+   * [Tags](/help/sites-cloud/authoring/features/tags.md) bijzonder krachtig zijn wanneer het organiseren van uw fragmenten aangezien zij voor inhoudclassificatie en taxonomie kunnen worden gebruikt. Tags kunnen worden gebruikt om inhoud (door tags) te zoeken en om bewerkingen in bulk toe te passen.
+
+      * Als u zoekt naar een tag, wordt het fragment geretourneerd, met de gemarkeerde variatie.
+      * Variatietags kunnen ook worden gebruikt om variaties te groeperen voor een specifiek CDN-profiel (Content Delivery Network) (voor CDN-caching) in plaats van de variatienaam te gebruiken.
+
+      U kunt bijvoorbeeld relevante fragmenten labelen als &#39;kerstlancering&#39; om alleen deze fragmenten als een subset te kunnen doorbladeren, of om ze te kopiëren voor gebruik met een andere toekomstige start in een nieuwe map.
+   >[!NOTE]
+   >
+   >**Tags** kan ook worden toegevoegd (aan **Master** wijziging) als onderdeel van de [Metagegevens](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+
+* [Variaties maken en beheren](#managing-variations) van de **Master** inhoud.
 
 ### Volledige schermeditor {#full-screen-editor}
 
@@ -391,6 +404,10 @@ Een nieuwe variatie maken:
    >[!NOTE]
    Bij het maken van een nieuwe variatie is dit altijd **Master** dat wordt gekopieerd, niet de variatie die momenteel open is.
 
+
+   >[!NOTE]
+   Wanneer u een nieuwe variatie maakt, alles **Tags** momenteel toegewezen aan **Master** variatie wordt naar de nieuwe variatie gekopieerd.
+
 ### Een variatie bewerken {#editing-a-variation}
 
 U kunt wijzigingen aanbrengen in de inhoud van de variatie nadat:
@@ -437,7 +454,7 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
 >[!CAUTION]
 De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
 Alleen het huidige element van de variatie wordt gesynchroniseerd.
-Synchronisatie werkt alleen op het datatype **Tekst met meerdere regels**.
+Synchronisatie werkt alleen op de **Tekst met meerdere regels** gegevenstype.
 Het overbrengen van wijzigingen *van een variatie naar **master*** is niet beschikbaar als optie.
 
 1. Open het inhoudsfragment in de fragmenteditor. Zorg ervoor dat de **Master** is bewerkt.

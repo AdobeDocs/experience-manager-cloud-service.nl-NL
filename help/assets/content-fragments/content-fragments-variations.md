@@ -2,10 +2,10 @@
 title: Variaties - Fragmentinhoud ontwerpen (elementen - Inhoudsfragmenten)
 description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler kunnen maken door u toe te staan om inhoud voor het fragment te ontwerpen en dan variaties van die inhoud volgens doel tot stand te brengen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
-source-wordcount: '2288'
-ht-degree: 10%
+source-wordcount: '2455'
+ht-degree: 9%
 
 ---
 
@@ -43,19 +43,32 @@ Wanneer u het inhoudsfragment opent voor bewerking, worden de **Variaties** is s
 Bijvoorbeeld:
 
 ![volledige schermeditor](assets/cfm-variations-02.png)
+
 U kunt:
 
-* direct wijzigingen aanbrengen in het dialoogvenster **Variaties** tab
+* Bewerk de inhoud rechtstreeks in het dialoogvenster **Variaties** tab; elk gegevenstype biedt verschillende bewerkingsopties , bijvoorbeeld :
 
-   * elk gegevenstype biedt verschillende bewerkingsopties
+   * for **Tekst met meerdere regels** velden die u ook kunt openen [full-screen redacteur](#full-screen-editor) tot:
 
-* for **Tekst met meerdere regels** velden die u ook kunt openen [full-screen redacteur](#full-screen-editor) tot:
+      * Selecteer de [Indeling](#formats)
+      * zie meer bewerkingsopties (voor [RTF](#rich-text) bestandsindeling)
+      * toegang tot een reeks [handelingen](#actions)
+   * Voor **Fragmentverwijzing** velden [Inhoudsfragment bewerken](#fragment-references-edit-content-fragment) Deze optie kan beschikbaar zijn, afhankelijk van de modeldefinitie.
 
-   * Selecteer de [Indeling](#formats)
-   * zie meer bewerkingsopties (voor [RTF](#rich-text) bestandsindeling)
-   * toegang tot een reeks [handelingen](#actions)
 
-* Voor **Fragmentverwijzing** velden **[Inhoudsfragment bewerken](#fragment-references-edit-content-fragment)** Deze optie kan beschikbaar zijn, afhankelijk van de modeldefinitie.
+* Toewijzen **Tags** de huidige wijziging; de tags kunnen worden toegevoegd, bijgewerkt en verwijderd
+
+   * [Tags](/help/sites-cloud/authoring/features/tags.md) bijzonder krachtig zijn wanneer het organiseren van uw fragmenten aangezien zij voor inhoudclassificatie en taxonomie kunnen worden gebruikt. Tags kunnen worden gebruikt om inhoud (door tags) te zoeken en om bewerkingen in bulk toe te passen.
+
+      * Als u zoekt naar een tag, wordt het fragment geretourneerd, met de gemarkeerde variatie.
+      * Variatietags kunnen ook worden gebruikt om variaties te groeperen voor een specifiek CDN-profiel (Content Delivery Network) (voor CDN-caching) in plaats van de variatienaam te gebruiken.
+
+      U kunt bijvoorbeeld relevante fragmenten labelen als &#39;kerstlancering&#39; om alleen deze fragmenten als een subset te kunnen doorbladeren, of om ze te kopiëren voor gebruik met een andere toekomstige start in een nieuwe map.
+   >[!NOTE]
+   >
+   >**Tags** kan ook worden toegevoegd (aan **Master** wijziging) als onderdeel van de [Metagegevens](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Variaties maken en beheren](#managing-variations) van de **Master** inhoud.
 
 ### Volledige schermeditor {#full-screen-editor}
 
@@ -382,6 +395,9 @@ Een nieuwe variatie maken:
 
    >[!NOTE]
    Bij het maken van een nieuwe variatie is dit altijd **Master** dat wordt gekopieerd, niet de variatie die momenteel open is.
+
+   >[!NOTE]
+   Wanneer u een nieuwe variatie maakt, alles **Tags** momenteel toegewezen aan **Master** variatie wordt naar de nieuwe variatie gekopieerd.
 
 ### Een variatie bewerken {#editing-a-variation}
 

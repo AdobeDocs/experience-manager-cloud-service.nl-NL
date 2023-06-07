@@ -3,9 +3,9 @@ title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
 description: Leer GraphQL met AEM gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
+source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1760'
 ht-degree: 0%
 
 ---
@@ -356,6 +356,58 @@ Als u een nieuwe variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_c
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Voorbeeldquery - Namen van alle steden die zijn getagd als stadseinden {#sample-names-all-cities-tagged-city-breaks}
+
+Als u:
+
+* diverse tags maken, met de naam `Tourism` : `Business`, `City Break`, `Holiday`
+* en deze toe te wijzen aan de Master variatie van diverse `City` instances
+
+Dan kunt u een vraag gebruiken om details van terug te keren `name` en `tags`van alle items die zijn getagd als Stadseinden in het dialoogvenster `city`schema.
+
+**Voorbeeldquery**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**Voorbeeldresultaten**
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
           ]
         }
       ]
@@ -1533,6 +1585,62 @@ Deze query vraagt om:
 }
 ```
 
+### Voorbeeldquery voor meerdere inhoudsfragmenten en de bijbehorende variaties van een bepaald model {#sample-wknd-multiple-fragment-variations-given-model}
+
+Deze query vraagt om:
+
+* voor inhoudfragmenten van het type `article` en alle variaties
+
+**Voorbeeldquery**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### Voorbeeldquery voor inhoudfragmentvariaties van een bepaald model waaraan een specifieke tag is gekoppeld{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+Deze query vraagt om:
+
+* voor inhoudfragmenten van het type `article` met een of meer variaties met de tag `WKND : Activity / Hiking`
+
+**Voorbeeldquery**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
 ### Voorbeeldquery voor meerdere inhoudsfragmenten van een bepaalde landinstelling {#sample-wknd-multiple-fragments-given-locale}
 
 Deze query vraagt om:
@@ -1610,6 +1718,84 @@ Deze query vraagt om:
         }
     }
 }
+```
+
+### Voorbeeldquery met filtering op _tags-id en exclusief variaties {#sample-filtering-tag-not-variations}
+
+Deze query vraagt om:
+
+* voor inhoudfragmenten van het type `vehicle` met de tag `big-block`
+* exclusief wijzigingen
+
+**Voorbeeldquery**
+
+```graphql
+query {
+  vehicleList(
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    items {
+      _variation
+      _path
+      type
+      name
+      model
+      fuel
+      _tags
+    }
+  }
+} 
+```
+
+### Voorbeeldquery met filteren op _tags-id en inclusief variaties {#sample-filtering-tag-with-variations}
+
+Deze query vraagt om:
+
+* voor inhoudfragmenten van het type `vehicle` met de tag `big-block`
+* inclusief variaties
+
+**Voorbeeldquery**
+
+```graphql
+{
+  enginePaginated(after: "SjkKNmVkODFmMGQtNTQyYy00NmQ4LTljMzktMjhlNzQwZTY1YWI2Cmo5", first: 9 ,includeVariations:true, sort: "name",
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    edges{
+    node {
+        _variation
+        _path
+        name
+        type
+        size
+        _tags
+        _metadata {
+          stringArrayMetadata {
+            name
+            value
+          }
+        }
+    }
+      cursor
+    }
+  }
+} 
 ```
 
 ## De structuur voor het voorbeeldinhoudfragment (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
