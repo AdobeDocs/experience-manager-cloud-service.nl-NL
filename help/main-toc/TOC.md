@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
+source-git-commit: 344013ed479f72b7097177cce911fc683f1dbed9
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4033'
 ht-degree: 20%
 
 ---
@@ -949,6 +949,7 @@ ht-degree: 20%
    + [Handelingencentrum](/help/operations/actions-center.md)
    + [Inhoud zoeken en indexeren](/help/operations/indexing.md)
    + [Service voor contentreplicatie](/help/operations/replication.md)
+   + [Aanvullende publicatiegebieden](/help/operations/additional-publish-regions.md)
    + [Infrastructuur- en servicecontrole in AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Onderhoudstaken](/help/operations/maintenance.md)
    + [Back-up en herstel](/help/operations/backup.md)
@@ -972,4 +973,3 @@ ht-degree: 20%
    + [Architectuur van Universal Editor](/help/implementing/universal-editor/architecture.md)
    + [Kenmerken en typen](/help/implementing/universal-editor/attributes-types.md)
    + [Universal Editor-verificatie](/help/implementing/universal-editor/authentication.md)
-

@@ -2,12 +2,13 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4631ab86ae1b4405e31d8bb8eae8edbbe2272c2c
+source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '2302'
 ht-degree: 0%
 
 ---
+
 
 # Omgevingen beheren {#managing-environments}
 
@@ -56,14 +57,67 @@ De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen 
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter de naam van het omgevingstype weergegeven.
    * Een omgeving bieden **Naam**.
    * Een omgeving bieden **Beschrijving**.
+   * Als u een **Productie + werkgebied** -omgeving, moet u een omgevingsnaam en -beschrijving opgeven voor zowel uw productie- als staging-omgeving.
    * Selecteer een **Primair gebied** in de vervolgkeuzelijst.
       * Dit kan na het maken niet meer worden gewijzigd.
-   * Als u een **Productie + werkgebied** -omgeving, moet u een omgevingsnaam en -beschrijving opgeven voor zowel uw productie- als staging-omgeving.
-      ![Omgevingsdialoogvenster toevoegen](assets/add-environment2.png)
+      * Afhankelijk van uw beschikbare rechten, kunt u kunnen vormen [meerdere gebieden.](#multiple-regions)
+
+   ![Omgevingsdialoogvenster toevoegen](assets/add-environment2.png)
 
 1. Klikken **Opslaan** om de opgegeven omgeving toe te voegen.
 
 De **Overzicht** het scherm toont nu uw nieuwe milieu in **Omgevingen** kaart. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
+
+## Meerdere publicatieregio&#39;s {#multiple-regions}
+
+Een gebruiker met de **Zakelijke eigenaar** Met Rol kunt u prod- en staging-omgevingen zodanig configureren dat er naast het primaire gebied maximaal drie extra publicatiegebieden worden opgenomen. Aanvullende publicatiegebieden kunnen de beschikbaarheid verbeteren. Zie de [Aanvullende documentatie voor publicatiegebieden](/help/operations/additional-publish-regions.md) voor meer informatie .
+
+>[!TIP]
+>
+>U kunt de [Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) om een huidige lijst van beschikbare gebieden te vragen.
+
+### Meerdere publicatiegebieden toevoegen aan een nieuwe omgeving {#add-regions}
+
+Wanneer u een nieuwe omgeving toevoegt, kunt u ervoor kiezen om naast het primaire gebied ook andere gebieden te configureren.
+
+1. Selecteer **Primair gebied**.
+   * Dit kan niet worden gewijzigd nadat de omgeving is gemaakt.
+1. Selecteer de optie **Extra publicatiegebieden toevoegen** en een nieuwe **Aanvullende publicatiegebieden** wordt weergegeven.
+1. In de **Aanvullende publicatiegebieden** selecteert u een extra gebied.
+1. Het geselecteerde gebied wordt onder de vervolgkeuzelijst toegevoegd om de selectie ervan aan te geven.
+   * Tik of klik op de X naast het geselecteerde gebied om de selectie ongedaan te maken.
+1. Selecteer een ander gebied in het menu **Aanvullende publicatiegebieden** vervolgkeuzelijst om een ander gebied toe te voegen.
+1. Tik of klik op **Opslaan** als u klaar bent om uw omgeving te maken.
+
+![Meerdere gebieden selecteren](assets/select-multiple-regions.png)
+
+De geselecteerde gebieden zijn van toepassing op zowel productie- als testomgevingen.
+
+Als u geen extra gebieden opgeeft, [dat kunt u later doen nadat de omgevingen zijn gemaakt.](#edit-regions)
+
+Indien u een voorziening wenst [geavanceerde netwerken](/help/security/configuring-advanced-networking.md) voor het programma is het raadzaam dit te doen voordat u aanvullende publicatiegebieden toevoegt aan de omgevingen met de API voor Cloud Manager. Anders zal het extra publicatiegebiedsverkeer door de volmacht van het primaire gebied gaan.
+
+### Meerdere publicatiegebieden bewerken {#edit-regions}
+
+Als u in eerste instantie geen extra gebieden hebt opgegeven, kunt u dat doen nadat de omgevingen zijn gemaakt als u over de benodigde rechten beschikt.
+
+U kunt ook extra publicatiegebieden verwijderen. U kunt echter slechts gebieden in één transactie toevoegen of verwijderen. Als u één gebied wilt toevoegen en één gebied wilt verwijderen, voegt u eerst de wijziging toe, slaat u deze op en verwijdert u (of vice versa).
+
+1. Van de console van het Overzicht van het Programma van uw programma, klik de ellipsknoop voor uw productiemilieu en selecteer **Bewerken** in het menu.
+
+   ![Omgeving bewerken](assets/select-edit-environment.png)
+
+1. In de **Productieomgeving bewerken** de benodigde wijzigingen aanbrengen in de aanvullende publicatiegebieden.
+   * Gebruik de **Aanvullende publicatiegebieden** vervolgkeuzelijst om extra gebieden te selecteren.
+   * Klik op de X naast de geselecteerde aanvullende publicatiegebieden om deze te desselecteren.
+
+   ![Omgeving bewerken](assets/edit-environment.png)
+
+1. Tik of klik op **Opslaan** om de wijzigingen op te slaan.
+
+Wijzigingen in de productieomgeving zijn van toepassing op zowel de productie- als de testomgeving. Wijzigingen in meerdere publicatiegebieden kunnen alleen worden bewerkt in de productieomgeving.
+
+Indien u een voorziening wenst [geavanceerde netwerken](/help/security/configuring-advanced-networking.md) voor het programma is het raadzaam dit te doen voordat u aanvullende publicatiegebieden aan de omgevingen toevoegt . Anders zal het extra publicatiegebiedsverkeer door de volmacht van het primaire gebied gaan.
 
 ## Omgevingsdetails {#viewing-environment}
 

@@ -2,10 +2,10 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
+source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 77%
+source-wordcount: '1827'
+ht-degree: 75%
 
 ---
 
@@ -124,7 +124,15 @@ Deze nieuwe architectuur bestaat uit verschillende hoofdonderdelen:
       * Integratie en de verwerking van Assets maken gebruik van een specifieke Assets Compute Service.
    * De voorvertoningslaag bestaat uit één voorvertoningsknooppunt. Dit wordt gebruikt voor kwaliteitscontrole van inhoud voordat deze wordt gepubliceerd naar de publicatielijst.
 
-   * De publicatielaag bestaat uit twee of meer nodes binnen één publicatiefarm: ze kunnen onafhankelijk van elkaar werken. Elke node bestaat uit een AEM-uitgever en een webserver die is uitgerust met de AEM Dispatcher-module. De schaal wordt automatisch aan het siteverkeer aangepast.
+   * De publicatielijst bestaat uit twee of meer knopen binnen één enkel publicatielandbouwbedrijf.
+
+      * De knooppunten kunnen onafhankelijk van elkaar werken.
+
+      * Elke node bestaat uit een AEM-uitgever en een webserver die is uitgerust met de AEM Dispatcher-module.
+
+      * De schaal wordt automatisch aan het siteverkeer aangepast.
+
+      * Door gebrek is er één enkel publiceer landbouwbedrijf in het primaire gebied, echter [extra publicatiegebieden](/help/operations/additional-publish-regions.md) mag een vergunning worden verleend.
 
       * Eindgebruikers of sitebezoekers bezoeken de website via de AEM Publish Service.
 

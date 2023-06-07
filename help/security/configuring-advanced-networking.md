@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 67e801cc22adfbe517b769e829e534eadb1806f5
+source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
 workflow-type: tm+mt
-source-wordcount: '3053'
+source-wordcount: '3595'
 ht-degree: 0%
 
 ---
@@ -538,3 +538,34 @@ Het is mogelijk om tussen geavanceerde voorzien van een netwerktypes te migreren
 > Deze procedure zal in een onderbreking van de geavanceerde voorzien van een netwerkdiensten tussen schrapping en recreatie resulteren
 
 Als de onderbreking significante bedrijfsgevolgen zou veroorzaken, contacteer klantensteun voor hulp, beschrijvend wat reeds is gecreeerd en de reden voor de verandering.
+
+## Geavanceerde netwerkconfiguratie voor extra publicatiegebieden {#advanced-networking-configuration-for-additional-publish-regions}
+
+Wanneer een extra gebied aan een milieu wordt toegevoegd dat reeds gevormd geavanceerd voorzien van een netwerk heeft, zal het verkeer van het extra publiceer gebied dat de geavanceerde voorzien van een netwerkregels aanpast door standaardroute door het primaire gebied. Als het primaire gebied echter niet meer beschikbaar is, wordt het geavanceerde netwerkverkeer verwijderd als geavanceerde netwerken niet zijn ingeschakeld in het extra gebied. Als u de latentie wilt optimaliseren en de beschikbaarheid wilt verhogen in het geval dat een van de regio&#39;s een onderbreking ondergaat, is het noodzakelijk geavanceerde netwerken in te schakelen voor de aanvullende publicatiegebieden. In de volgende secties worden twee verschillende scenario&#39;s beschreven.
+
+>[!NOTE]
+>
+>Alle regio&#39;s delen hetzelfde [omgeving geavanceerde netwerkconfiguratie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), zodat is het niet mogelijk om verkeer aan verschillende bestemmingen te leiden die op het gebied worden gebaseerd het verkeer uit wegglijdt.
+
+### Specifieke IP van de Eis Adressen {#additional-publish-regions-dedicated-egress}
+
+#### Geavanceerde netwerken zijn al ingeschakeld in het primaire gebied {#already-enabled}
+
+Als een geavanceerde voorzien van een netwerkconfiguratie reeds in het primaire gebied wordt toegelaten, volg deze stappen:
+
+1. Als u uw infrastructuur zodanig hebt vergrendeld dat het toegewezen AEM IP-adres is toegestaan in de lijst, wordt aanbevolen om regels in die infrastructuur tijdelijk uit te schakelen. Als dit niet wordt gedaan, zal er een korte periode zijn waarin de verzoeken van de IP van het nieuwe gebied adressen door uw eigen infrastructuur zullen worden ontkend. Merk op dat dit niet noodzakelijk is als u uw infrastructuur via FQDN (Fully Qualified Domain Name) hebt vergrendeld, (`p1234.external.adobeaemcloud.com`, bijvoorbeeld), aangezien alle AEM gebieden geavanceerd voorzien van een netwerkverkeer van zelfde FQDN ontspannen
+1. Creeer programma-scoped voorzien van een netwerkinfrastructuur voor het secundaire gebied door een vraag van de POST aan de Manager van de Wolk creeert de Infrastructuur API van het Netwerk, zoals die in geavanceerde voorzien van een netwerkdocumentatie wordt beschreven. Het enige verschil in de configuratie JSON van de nuttige lading met betrekking tot primair gebied zal het gebiedsbezit zijn
+1. Als uw infrastructuur door IP moet worden gesloten om AEM verkeer toe te staan, voeg IPs toe die aanpassen `p1234.external.adobeaemcloud.com`. Er zou één per regio moeten zijn.
+
+#### Geavanceerde netwerken nog niet geconfigureerd in een regio {#not-yet-configured}
+
+De procedure is grotendeels vergelijkbaar met de voorgaande instructies. Nochtans, als het productiemilieu nog niet voor geavanceerd voorzien van een netwerk is toegelaten, is er een kans om de configuratie te testen door het in een het opvoeren milieu eerst toe te laten:
+
+1. Maak voorzien van een netwerkinfrastructuur voor alle gebieden door de vraag van de POST aan [Cloud Manager API voor netwerkinfrastructuur maken](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Het enige verschil in de configuratie JSON van de nuttige lading met betrekking tot primair gebied zal het gebiedbezit zijn.
+1. Voor het opvoeren milieu, laat en vormt het milieu binnen bereik geavanceerd voorzien van een netwerk toe door te lopen `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Raadpleeg de API-documentatie voor meer informatie [hier](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. Indien nodig, externe infrastructuur vergrendelen, bij voorkeur met een FQDN (bijvoorbeeld `p1234.external.adobeaemcloud.com`). U kunt het anders doen door IP adres
+1. Als het het opvoeren milieu zoals verwacht werkt, laat en vormt de milieu-scoped geavanceerde voorzien van een netwerkconfiguratie voor productie toe.
+
+#### VPN {#vpn-regions}
+
+De procedure is bijna identiek aan de specifieke uitgangIP adresinstructies. Het enige verschil is dat naast het gebiedsbezit dat verschillend van het primaire gebied wordt gevormd, `connections.gateway` Het gebied kan naar keuze aan route aan een verschillend eindpunt worden gevormd dat van VPN door uw organisatie wordt in werking gesteld, misschien geografisch dichter aan het nieuwe gebied.
