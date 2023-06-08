@@ -4,15 +4,18 @@ description: Ontdek hoe u moeiteloos een adaptief formulier kunt maken of toevoe
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3134'
 ht-degree: 0%
 
 ---
 
 
 # Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+|Voorzichtigheid|[!BADGE pre-releasedocumentatie]{type=Caution tooltip="Gele status"}
+<span class="preview"> Dit is pre-releasedocumentatie en kan worden gewijzigd.</span>
 
 Met AEM Forms kunt u naadloos adaptieve formulieren opnemen in uw webpagina&#39;s. Zo kunnen bezoekers formulieren op een gemakkelijke manier invullen en verzenden zonder de pagina waarop ze staan te verlaten. Op die manier kunnen ze moeiteloos betrokken blijven bij andere elementen van de website terwijl ze actief met het formulier communiceren.
 
@@ -122,7 +125,7 @@ Om volledige functionaliteit van de Adaptive Forms Container component toe te la
 
 +++
 
-+++ ** inschakelen[!UICONTROL Adaptive Forms Container]
++++ Adaptieve Forms-container inschakelen
 
 Inschakelen [!UICONTROL Adaptive Forms Container] in het sjabloonbeleid voert u de volgende stappen uit:
 
@@ -246,7 +249,7 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
 
 ### Vooraf ingevulde service voor Forms Portal gebruiken {#forms-portal-prefill-service}
 
-U kunt de service Vooraf invullen in Forms Portal gebruiken om velden van een formulier vooraf in te vullen met een concept van het opgeslagen adaptieve formulier. Voordat u de service Vooraf invullen van Forms Portal gebruikt, moet u controleren of [Aangepaste Forms Portal-componenten worden ingeschakeld en geconfigureerd ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) voor uw omgeving.
+U kunt de service Vooraf invullen in Forms Portal gebruiken om velden van een formulier vooraf in te vullen met een concept van het opgeslagen adaptieve formulier. Voordat u de service Vooraf invullen van concept van Forms Portal gebruikt, moet u ervoor zorgen dat [Aangepaste Forms Portal-componenten worden ingeschakeld en geconfigureerd](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) voor uw omgeving.
 
 1. Open de AEM Sites-pagina-editor of Experience Fragment dat het adaptieve formulier bevat.
 1. Open de eigenschappen van de pagina en configureer de Cloud Configuration.
