@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2023.6.0 in Adobe Experience Man
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.6.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 80a5f58119dc304161d324491cd65c50e981ccd4
+source-git-commit: 6dac8611cba8d924eb4509e699350be5b159e3d2
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,7 @@ De releasedatum voor Cloud Manager versie 2023.6.0 in AEM as a Cloud Service is 
 
 ## Wat is er nieuw? {#what-is-new}
 
+* Klanten kunnen naast het primaire gebied aanvullende secundaire publicatiegebieden aanschaffen, wat voordelen oplevert als gevolg van een lagere latentie en een hogere beschikbaarheid. Opmerking: Bepaalde beperkingen kunnen van toepassing zijn.
 * Bij het maken van een nieuwe [programma of milieu;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) de naam mag nu alleen alfanumerieke tekens en een beperkte set speciale tekens bevatten .
 * Bij het hervatten van een [productiepijpleiding,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) er wordt nu een bevestigingsvenster weergegeven bij de stap Goedkeuren.
 * Voor de **[Functionele tests van de klant](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** en **[Aangepaste UI-tests](/help/implementing/cloud-manager/ui-testing.md)** pijpleidingstappen, een nieuwe `INCOMPLETE` de status is nu mogelijk , hetgeen erop wijst dat dergelijke tests niet aanwezig waren en dus niet werden uitgevoerd .
