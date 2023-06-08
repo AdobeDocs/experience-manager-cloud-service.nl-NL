@@ -1,13 +1,13 @@
 ---
 title: Het gereedschap Inhoud kopiëren
 description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van hun AEM as a Cloud Service productieomgeving naar lagere omgevingen voor testdoeleinden.
-source-git-commit: 4a5470ae8fe5a8e7f615009bf5f6b180aee4669b
+exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
+source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
-
 
 # Het gereedschap Inhoud kopiëren {#content-copy}
 
@@ -102,6 +102,9 @@ Wanneer u de inhoudenset bewerkt, moet u mogelijk de geconfigureerde paden uitbr
 
 Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëren. Ga als volgt te werk om inhoud te kopiëren.
 
+>[!NOTE]
+> Inhoudskopie mag niet worden gestart in een omgeving terwijl een [inhoudsoverdracht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) de bewerking wordt uitgevoerd in die omgeving.
+
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
@@ -159,7 +162,7 @@ Wanneer u begint inhoud te kopiëren, kan het proces een van de volgende statuss
 | Voltooid | Kopie van inhoud voltooid |
 | Geannuleerd | Gebruiker annuleert een bewerking voor het kopiëren van inhoud nadat deze is gestart |
 
-### Een kopieerproces annuleren {#cancelling}
+### Een kopieerproces annuleren {#canceling}
 
 Als u een bewerking voor het kopiëren van inhoud moet afbreken nadat u deze hebt gestart, kunt u deze annuleren.
 
