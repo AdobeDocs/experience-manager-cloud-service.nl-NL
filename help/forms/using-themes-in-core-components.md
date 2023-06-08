@@ -2,7 +2,7 @@
 title: Thema's maken en gebruiken
 description: U kunt thema's gebruiken om een adaptief formulier te stileren en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 0%
@@ -49,6 +49,7 @@ Als u een thema wilt aanpassen,
 * U moet een [basiskennis van Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git) en Cloud Service Git repositories.
 
 Een Canvasthema aanpassen:
+
 1. [Het thema Canvas klonen](#1-download-canvas-theme-download-canvas-theme)
 1. [De structuur van het thema begrijpen](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [Naam wijzigen in package.json en package_lock.json](#changename-packagelock-packagelockjson)

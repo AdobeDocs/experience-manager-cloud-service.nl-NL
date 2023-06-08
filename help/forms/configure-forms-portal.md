@@ -2,7 +2,7 @@
 title: Een Forms Portal maken op een Experience Manager Sites-pagina
 description: Leer hoe u een Forms Portal kunt maken en de kerncomponenten van een AEM Sites-pagina kunt gebruiken die niet in de verpakking staan.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: a243664302c75fcb3125d68838353bd87cf24de3
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 0%
@@ -39,8 +39,11 @@ AEM Forms biedt de volgende poortcomponenten uit de verpakking:
 * Koppeling: Met deze component kunt u overal op de pagina een koppeling naar een formulier maken.
 
 U kunt [de uit-van-de-doos Forms Portal-componenten importeren](#import-forms-portal-components-aem-archetype) van het AEM Project Archetype. Voer na het importeren de volgende configuraties uit:
+
 * [Een externe opslag configureren](#configure-azure-storage-adaptive-forms)
+
 * [De Forms Portal-componenten inschakelen](#enable-forms-portal-components)
+
 * [De Forms Portal-componenten configureren](#configure-forms-portal-components)
 
 ## Forms Portal-componenten importeren {#import-forms-portal-components-aem-archetype}
