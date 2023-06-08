@@ -4,9 +4,9 @@ description: Ontdek hoe u moeiteloos een adaptief formulier kunt maken of toevoe
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3121'
+source-wordcount: '3117'
 ht-degree: 0%
 
 ---
@@ -277,4 +277,4 @@ Bij het verzenden van een formulier kunt u de gebruiker omleiden naar een andere
 * [Stijl voor uw kerncomponenten op basis van adaptieve Forms](using-themes-in-core-components.md)
 * [Gebruik de regeleditor om dynamisch gedrag toe te voegen aan Adaptief Forms](rule-editor.md)
 * [Lay-out van een adaptief formulier wijzigen](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [Document met record genereren](generate-document-of-record-core-components.md)
+

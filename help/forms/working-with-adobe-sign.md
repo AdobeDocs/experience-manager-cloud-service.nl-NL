@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2928'
 ht-degree: 0%
 
 ---
@@ -194,11 +194,7 @@ U kunt een of meerdere ontvangers voor een Adobe Sign-overeenkomst hebben. Wanne
       >
       >Zorg ervoor dat het e-mailadres van de eerste ontvanger of de enige ontvanger (als er één ontvanger is) niet hetzelfde is als [!DNL Adobe Sign] account dat wordt gebruikt om AEM Cloud Services te configureren.
 
-   * **[!UICONTROL Recipient Authentication Method]:** Geef de methode op voor het verifiëren van een ontvanger voordat u de Adobe Sign-overeenkomst opent. U kunt kiezen tussen telefoon, kennisbasis, sociale op identiteit-gebaseerde authentificatie, en [Overheids-id](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) for [!DNL Adobe Acrobat Sign].
-
-      <!-- 
-      For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
-      -->
+   * **[!UICONTROL Recipient Authentication Method]:** Geef de methode op voor het verifiëren van een ontvanger voordat u de Adobe Sign-overeenkomst opent. U kunt kiezen tussen telefoon, kennisbasis, sociale op identiteit-gebaseerde authentificatie, en [Overheids-id](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) for [!DNL Adobe Acrobat Sign]. Voor [!DNL Adobe Acrobat Sign for Government] u kunt tussen telefoon en op kennis-gebaseerde authentificatie kiezen.
    >[!NOTE]
    >
    >    * Standaard biedt verificatie op basis van sociale identiteit een optie voor verificatie met behulp van Facebook, Google en LinkedIn. U kunt contact opnemen met [!DNL Adobe Sign] ondersteuning om andere aanbieders van sociale authenticatie mogelijk te maken.
@@ -314,11 +310,9 @@ Na [Adaptief formulier-eigenschappen bewerken voor Adobe Sign](working-with-adob
    * Wolkhandtekeningen: Ondertekenen met een [digitale id](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) gehost door een vertrouwde serviceprovider.
    * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met een smartcard, USB-token of een digitale id op basis van een bestand.
 
-      <!-- 
       >[!NOTE]
       >
-      > * [!DNL Adobe Acrobat Sign for Government] can use Digitial Signature but can not use Cloud Signatures in the current version.
-      -->
+      > Digitale handtekening is ook van toepassing op [!DNL Adobe Acrobat Sign for Government] maar u kunt dit niet toepassen met gebruik van Cloud-handtekeningen.
    Nadat u het handtekeningveld voor de cloud aan het adaptieve formulier hebt toegevoegd, voert u de volgende stappen uit om het configuratieproces te voltooien:
 
    * [Adobe Sign inschakelen voor een adaptief formulier](#enableadobsignforanadaptiveform)
