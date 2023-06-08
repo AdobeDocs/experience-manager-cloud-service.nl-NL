@@ -4,7 +4,7 @@ description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM ku
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
+source-git-commit: d3194e646b326009dc204838ac74fc880952f286
 workflow-type: tm+mt
 source-wordcount: '4086'
 ht-degree: 0%
@@ -311,7 +311,7 @@ In de volgende tabel wordt elke status beschreven die een taak of een item in de
 
 | Status | Beschrijving |
 |---|---|
-| **Concept** | De vertaaltaak is niet gestart. Vertaaltaken bevinden zich in **Concept**** status wanneer ze worden gemaakt. |
+| **Concept** | De vertaaltaak is niet gestart. Vertaaltaken bevinden zich in **Concept** status wanneer ze worden gemaakt. |
 | **Verzonden** | Bestanden in de vertaaltaak hebben deze status wanneer ze naar de vertaalservice zijn verzonden. Deze status kan optreden na de **Toepassingsgebied aanvragen** of de **Start** wordt uitgegeven. |
 | **Gevraagd bereik** | Voor de workflow voor menselijke vertaling zijn de bestanden in de taak voor bereiking naar de leverancier van de vertaling verzonden. Deze status wordt weergegeven na de **Toepassingsgebied aanvragen** wordt uitgegeven. |
 | **Bereik voltooid** | De leverancier heeft het bereik van de vertaaltaak. |
