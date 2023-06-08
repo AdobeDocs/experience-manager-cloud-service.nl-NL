@@ -5,7 +5,7 @@ landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fr
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
+source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%
@@ -127,7 +127,7 @@ Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 * **Voorvertoning**
    * Alleen informatie:
       * **synchroon**: Inhoudsfragment wordt gesynchroniseerd op het tabblad **Auteur** en **Voorvertoning** diensten.
-      * **Niet meer gesynchroniseerd**: Inhoudsfragment is niet meer synchroon op het tabblad **Auteur** en ****Voorvertoning** diensten. U moet **Publiceren** tot **Voorvertoning** om ervoor te zorgen dat beide instanties weer synchroon zijn.
+      * **Niet meer gesynchroniseerd**: Inhoudsfragment is niet meer synchroon op het tabblad **Auteur** en **Voorvertoning** diensten. U moet **Publiceren** tot **Voorvertoning** om ervoor te zorgen dat beide instanties weer synchroon zijn.
       * leeg: Het inhoudsfragment bestaat niet in het dialoogvenster **Voorvertoning** service.
 * **Gewijzigd**
    * Alleen informatie
