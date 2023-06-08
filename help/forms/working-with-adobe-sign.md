@@ -5,10 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 3d713304512065819ed16bbc9604f2cf9d1cf43f
+source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
 workflow-type: tm+mt
-source-wordcount: '2903'
+source-wordcount: '2904'
 ht-degree: 0%
 
 ---
@@ -195,7 +194,11 @@ U kunt een of meerdere ontvangers voor een Adobe Sign-overeenkomst hebben. Wanne
       >
       >Zorg ervoor dat het e-mailadres van de eerste ontvanger of de enige ontvanger (als er één ontvanger is) niet hetzelfde is als [!DNL Adobe Sign] account dat wordt gebruikt om AEM Cloud Services te configureren.
 
-   * **[!UICONTROL Recipient Authentication Method]:** Geef de methode op voor het verifiëren van een ontvanger voordat u de Adobe Sign-overeenkomst opent. U kunt kiezen tussen telefoon, kennisbasis, sociale op identiteit-gebaseerde authentificatie, en [Overheids-id](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html).
+   * **[!UICONTROL Recipient Authentication Method]:** Geef de methode op voor het verifiëren van een ontvanger voordat u de Adobe Sign-overeenkomst opent. U kunt kiezen tussen telefoon, kennisbasis, sociale op identiteit-gebaseerde authentificatie, en [Overheids-id](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) for [!DNL Adobe Acrobat Sign].
+
+      <!-- 
+      For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
+      -->
    >[!NOTE]
    >
    >    * Standaard biedt verificatie op basis van sociale identiteit een optie voor verificatie met behulp van Facebook, Google en LinkedIn. U kunt contact opnemen met [!DNL Adobe Sign] ondersteuning om andere aanbieders van sociale authenticatie mogelijk te maken.
@@ -255,7 +258,7 @@ U kunt ook een bindref aan overeenkomst-id (agreementId) koppelen. Er wordt een 
          </afUnboundData>
          <afBoundData>
             <config xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-               <agreementID>3AAABLblqZhC2MWu7GFauKh45j_t2ih8mAtmbdIcNSl1HgQubhMJfDaDfylyN7NQiYRam_44ISKm45enIOafHqWZrdaxShf9r</agreementID>
+               <userName>3AAABLblqZhC2MWu7GFauKh45j_t2ih8mAtmbdIcNSl1HgQubhMJfDaDfylyN7NQiYRam_44ISKm45enIOafHqWZrdaxShf9r</userName>
                <dateOfBirth>0001-01-01</dateOfBirth>
             </config>
          </afBoundData>
@@ -311,6 +314,11 @@ Na [Adaptief formulier-eigenschappen bewerken voor Adobe Sign](working-with-adob
    * Wolkhandtekeningen: Ondertekenen met een [digitale id](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) gehost door een vertrouwde serviceprovider.
    * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met een smartcard, USB-token of een digitale id op basis van een bestand.
 
+      <!-- 
+      >[!NOTE]
+      >
+      > * [!DNL Adobe Acrobat Sign for Government] can use Digitial Signature but can not use Cloud Signatures in the current version.
+      -->
    Nadat u het handtekeningveld voor de cloud aan het adaptieve formulier hebt toegevoegd, voert u de volgende stappen uit om het configuratieproces te voltooien:
 
    * [Adobe Sign inschakelen voor een adaptief formulier](#enableadobsignforanadaptiveform)
