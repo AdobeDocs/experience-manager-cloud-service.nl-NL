@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
+source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ In de volgende sectie worden de opmerkingen bij de release met functies voor de 
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2021, 2022, enzovoort.
+>Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2021 of 2022, vrij te geven.
 >
 >Kijk eens naar de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie over de volgende activering van functies voor [!DNL Experience Manager] as a Cloud Service.
 
@@ -54,43 +54,47 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
 * [Verbeterde zoekervaring](/help/assets/search-assets.md#aftersearch) - U kunt nu snel de volgende bewerkingen uitvoeren op de elementen die in de zoekresultaten worden weergegeven:
 
    * Een workflow maken
-   * Een nieuwe versie maken
+   * Een versie maken
    * Relatieve of niet-gerelateerde elementen
 
      U hoeft niet naar de middelenlocatie te navigeren en de eigenschappen ervan te bekijken om deze bewerkingen uit te voeren.
 
 * Verbeteringen in de gebruiksvriendelijkheid van Color Search facet - Invoerveld voor kleurwaarden kan nu worden bewerkt en zoekresultaten worden alleen bijgewerkt wanneer u de kleurkiezer afsluit.
 
-* Ondersteuning voor het nieuwe protocol (DASH - Dynamic Adaptive Streaming via HTTP) dat is gestart voor Adaptive streaming in Dynamic Media-video (met CMAF ingeschakeld):
+* Nieuwe protocolondersteuning gestart (DASH - Dynamic Adaptive Streaming via HTTP) voor Adaptive streaming in Dynamic Media-video (met CMAF ingeschakeld):
    * Adaptief streamen (DASH/HLS) zorgt voor een betere weergave voor eindgebruikers voor video&#39;s
    * DASH is het internationale standaardprotocol voor adaptieve videostreaming en wordt op grote schaal toegepast in de branche
    * Beschikbaar in alle regio&#39;s, in te schakelen via een ondersteuningsticket
 
-* Dynamic Media _Opname_ - Experimenteer met testafbeeldingen of Dynamic Media-URL&#39;s om de uitvoer van verschillende afbeeldingsmodifiers en Smart Imaging-optimalisaties voor de bestandsgrootte (met WebP- en AVIF-levering), de netwerkbandbreedte en de pixelverhouding van het apparaat te bekijken. Zie [Dynamic Media-momentopname](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* Dynamic Media _Opname_ - Experimenteer met testafbeeldingen of Dynamic Media-URL&#39;s om de uitvoer van verschillende afbeeldingsmodifiers te bekijken en de optimalisaties voor Smart Imaging voor de bestandsgrootte (met WebP- en AVIF-levering), de netwerkbandbreedte en de pixelverhouding van het apparaat te beoordelen. Zie [Dynamic Media-momentopname](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+
+### Functie in [!DNL Assets] prerelease {#prerelease-feature-assets}
+
+* Dynamic Media - De gebruikersinterface voor bepaalde velden met betrekking tot Slim uitsnijden in een afbeeldingsprofiel wordt nu bijgewerkt met de huidige richtlijnen voor het definiëren van een slim uitsnijden. Zie [Opties voor uitsnijden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Adaptieve Forms verzenden naar Microsoft SharePoint en Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Verbeter de flexibiliteit van zakelijke gebruikers om snel nieuwe formulieren te starten en verzonden gegevens op te slaan in de dagelijkse tools die ze gebruiken, zoals de Microsoft SharePoint-site of de OneDrive-map.
+* **[Adaptieve Forms verzenden naar Microsoft® SharePoint en Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: Verbeter de flexibiliteit van zakelijke gebruikers, zodat u snel nieuwe formulieren kunt starten en verzonden gegevens kunt opslaan in de dagelijkse tools die ze gebruiken, zoals de Microsoft® SharePoint-site of de OneDrive-map.
 
 ### Functies in [!DNL Forms] prerelease {#prerelease-features-forms}
 
 * [Adaptieve Forms in AEM paginaeditor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): U kunt nu AEM Pagina-editor gebruiken om snel meerdere formulieren te maken en aan uw sitepagina&#39;s toe te voegen. Dankzij deze functie kunnen auteurs van inhoud naadloze ervaringen met gegevensvastlegging maken op sitepagina&#39;s met behulp van de kracht van adaptieve formuliercomponenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van registratie- en bedrijfsprocesautomatisering. U kunt:
 
    * Maak een adaptief formulier door formuliercomponenten te slepen en neer te zetten op Adaptive Forms Container Component in AEM Sites Editor of Experience Fragments.
-   * Met de wizard Adaptive Forms in de AEM Sites-editor kunt u formulieren maken die onafhankelijk zijn van elke sitepagina, zodat u deze formulieren op meerdere pagina&#39;s kunt hergebruiken.
+   * Met de wizard Adaptive Forms in de AEM Sites-editor kunt u onafhankelijk van elke sitepagina formulieren maken die u de vrijheid geven dergelijke formulieren op meerdere pagina&#39;s opnieuw te gebruiken.
    * Voeg meerdere formulieren toe aan een sitepagina, zodat de gebruikerservaring wordt gestroomlijnd en er meer flexibiliteit wordt geboden.
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Verbeterde Adobe Acrobat Sign-integratie en compatibiliteit](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms is nu geïntegreerd met Adobe Acrobat Sign for Government en biedt een geavanceerd niveau van naleving en beveiliging voor e-handtekeningen met Adaptive Form-verzendingen voor met de overheid verband houdende rekeningen (overheidsdiensten en agentschappen).
+* [Verbeterde Adobe Acrobat Sign-integratie en compatibiliteit](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms is nu geïntegreerd met Adobe Acrobat Sign voor de regering. Deze integratie biedt een geavanceerd niveau van naleving en beveiliging voor e-handtekeningen met Adaptief formulier-inzendingen voor met de overheid verband houdende rekeningen (overheidsdiensten en agentschappen).
 
-  Dankzij de integratie met Adobe Acrobat Sign for Government kunnen onze partners en klanten van de overheid in Adaptive Forms elektronische handtekeningen gebruiken voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met Matige naleving FedRAMP zijn, die onze overheidsklanten van gemoedsrust voorzien.
+  Dankzij de integratie met Adobe Acrobat Sign for Government kunnen Adobe en klanten van de overheid elektronische handtekeningen gebruiken in Adaptive Forms voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met de Matige naleving FedRAMP zijn, die Adobe klanten van vrede van mening voorzien.
 
-* Verbeter fout behandeling met de managers van de douanefout in regelredacteur: U kunt een douanefunctie (gebruikend de Bibliotheek van de Cliënt) nu aanhalen als antwoord op een fout die door de externe dienst is teruggekeerd en een op maat gemaakte reactie verstrekken aan eind - gebruikers of specifieke acties voor fouten nemen die door de dienst zijn teruggekeerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is.
+* Verbeterde foutafhandeling met aangepaste fouthandlers in de regeleditor. U kunt nu een aangepaste functie (met behulp van de clientbibliotheek) activeren als reactie op een fout die door een externe service is geretourneerd, en eindgebruikers een op maat gemaakte reactie geven. Of u kunt specifieke acties uitvoeren voor fouten die door een service worden geretourneerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is.
 
-  Dit helpt uw algemene fout-behandelend vermogen verbeteren door op norm-gebaseerde foutenreacties in te voeren, die achterwaarts compatibel met OOTB foutenmanagers, met grotere flexibiliteit en controle zijn.
+  Deze functionaliteit verbetert uw algemene fout-behandelend vermogen door op norm-gebaseerde foutenreacties in te voeren die achterwaarts compatibel met OOTB foutenmanagers, met grotere flexibiliteit en controle zijn.
 
 ### Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
 
@@ -99,7 +103,7 @@ Gebruik Headless Adaptive Forms om uw ontwikkelaars in staat te stellen interact
 * multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
 * U kunt zelf formulieren integreren in uw bureaublad en mobiele apps, websites en chattoepassingen
 * gebruik uw eigen UI-componenten opnieuw met formuliertoepassingen
-* de kracht van Adobe Experience Manager Forms benutten
+* de kracht van Adobe Experience Manager Forms gebruiken
 
 U kunt een e-mail verzenden naar `aem-forms-headless@adobe.com` van uw officiële e-mailadres om deel te nemen aan het vroege adoptieprogramma.
 
@@ -107,7 +111,7 @@ U kunt een e-mail verzenden naar `aem-forms-headless@adobe.com` van uw officiël
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* Extra publicatieregio&#39;s: Klanten van sites kunnen maximaal drie publicatiegebieden in licentie geven, naast het primaire gebied. Het verkeer wordt verpletterd aan extra te publiceren landbouwbedrijven, die in verminderde latentie voor bepaalde verzoeken, evenals grotere veerkracht tegen regionale stroomonderbrekingen resulteren. Neem contact op met uw Adobe-accountmanager voor informatie over licenties [Aanvullende publicatiegebieden](/help/operations/additional-publish-regions.md) voor uw programma&#39;s.
+* Extra publicatieregio&#39;s: Klanten van sites kunnen maximaal drie publicatiegebieden in licentie geven, naast het primaire gebied. Het verkeer wordt verpletterd aan extra te publiceren landbouwbedrijven, die in verminderde latentie voor bepaalde verzoeken, en verhoogde veerkracht tegen regionale stroomonderbrekingen resulteren. Neem contact op met uw Adobe-accountmanager voor informatie over licenties [Aanvullende publicatiegebieden](/help/operations/additional-publish-regions.md) voor uw programma&#39;s.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
