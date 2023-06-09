@@ -2,9 +2,9 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Leer hoe u een aangepaste domeinnaam kunt toevoegen met Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 0febf4b4a59617e6cc4f8414963c4a91fcf8765e
+source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -82,11 +82,11 @@ Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Omge
    1. Selecteer het SSL-certificaat dat aan deze naam is gekoppeld in de vervolgkeuzelijst.
    1. Klikken op **+Toevoegen**.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+   ![Aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
 1. Controleer de waarden die zijn geselecteerd in het dialoogvenster **Domeinnaam toevoegen** en klik op **Doorgaan**.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+   ![Venster Domeinnaam](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
    >

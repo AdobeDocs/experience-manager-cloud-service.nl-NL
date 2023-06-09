@@ -2,9 +2,9 @@
 title: IMS-configuratie voor gebruik bij integratie met Adobe Target
 description: Meer informatie over IMS Configuration voor gebruik bij Integratie met Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '863'
 ht-degree: 1%
 
 ---
@@ -72,9 +72,9 @@ Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM
 1. Alle projecten die u hebt, worden weergegeven. Selecteren **Nieuw project maken** - de locatie en het gebruik zijn afhankelijk van:
 
    * Als u nog geen project hebt, **Nieuw project maken** wordt midden onderaan weergegeven.
-      ![Nieuw project maken - eerste project](assets/integration-target-ims-02.png)
+     ![Nieuw project maken - eerste project](assets/integration-target-ims-02.png)
    * Als u al bestaande projecten hebt, worden deze weergegeven en **Nieuw project maken** is helemaal rechts.
-      ![Nieuw project maken - Meerdere projecten](assets/integration-target-ims-03.png)
+     ![Nieuw project maken - Meerdere projecten](assets/integration-target-ims-03.png)
 
 
 1. Selecteren **Toevoegen aan project** gevolgd door **API**:
@@ -87,7 +87,7 @@ Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM
    >
    >Als je bent geabonneerd op Adobe Target, maar deze niet ziet, moet je de knop [Vereisten](#prerequisites).
 
-   ![](assets/integration-target-ims-12.png)
+   ![Adobe Target selecteren](assets/integration-target-ims-12.png)
 
 1. **Uw openbare sleutel uploaden** en, indien voltooid, doorgaan met **Volgende**:
 
@@ -105,7 +105,6 @@ Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM
    >
    >* Adobe Target Standard - alleen **Standaardwerkruimte** is beschikbaar
    >* Adobe Target Premium - alle beschikbare werkruimten worden weergegeven, zoals hieronder wordt weergegeven
-
 
    ![Productprofielen selecteren en de geconfigureerde API opslaan](assets/integration-target-ims-16.png)
 
@@ -185,7 +184,6 @@ Om te bevestigen dat de configuratie zoals verwacht werkt:
    Bijvoorbeeld:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. Selecteer uw configuratie.
 1. Selecteren **Health controleren** van de werkbalk, gevolgd door **Controleren**.
