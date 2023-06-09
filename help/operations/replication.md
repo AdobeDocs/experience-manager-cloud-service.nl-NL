@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ U vindt meer gedetailleerde informatie over Publicatie beheren op het tabblad [P
 
 U kunt een boomreplicatie teweegbrengen door te kiezen **Tools - Workflow - Modellen** en het kopiëren van de **Inhoudsstructuur publiceren** out-of-the-box workflowmodel, zoals hieronder getoond:
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![De werkstroomkaart van de inhoudsstructuur publiceren](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Wijzig het originele model niet of activeer het niet. In plaats daarvan, zorg ervoor om het model eerst te kopiëren en dan die exemplaar te wijzigen of aan te halen.
 

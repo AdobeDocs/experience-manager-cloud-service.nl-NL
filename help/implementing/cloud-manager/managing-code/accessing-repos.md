@@ -2,9 +2,9 @@
 title: Toegang tot opslagplaatsen
 description: Leer hoe u uw git-opslagplaats kunt openen en beheren met behulp van het beheer van een git-account voor zelfbediening vanuit Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Met Cloud Manager kunt u eenvoudig gegevens van uw opslagplaats ophalen met de *
    * De git-gebruikersnaam.
    * Het wachtwoord voor de it, waarvan de waarde wordt weergegeven wanneer de optie **Wachtwoord genereren** wordt geklikt.
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
+   ![Weergave Info herhalen](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
 Met behulp van deze referenties kan de gebruiker een lokale kopie van de opslagplaats klonen en wijzigingen aanbrengen in die lokale opslagplaats, en wanneer hij klaar is, alle wijzigingen in de code terugsturen naar de externe opslagplaats voor code in Cloud Manager.
 

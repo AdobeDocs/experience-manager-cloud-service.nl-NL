@@ -2,9 +2,9 @@
 title: OAuth2 Steun voor de Dienst van de Post
 description: Oauth2-ondersteuning voor de Mail Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 4997c506e1cd467255fe11cb596fb64d74a511af
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Voor meer informatie over de AEM as a Cloud Service Dienst van de Post, zie [E-m
 1. Zoeken naar **Azure Active Directory** in de zoekbalk en klik op het resultaat. U kunt ook rechtstreeks bladeren naar [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Klikken op **Toepassingsregistratie** - **Nieuwe registratie**
 
-   ![](assets/oauth-outlook1.png)
+   ![Toepassingsregistratieproces starten](assets/oauth-outlook1.png)
 
 1. Vul de gegevens naar wens in en klik op **Registreren**
 1. Ga naar de nieuwe app en selecteer **API-machtigingen**
@@ -135,8 +135,7 @@ Alvorens te werk te gaan om OAuth op de AEM kant te vormen, zorg ervoor om zowel
    * `email`
    * `profile`
 1. Een OSGI-eigenschappenbestand maken `called com.day.cq.mailer.DefaultMailService.cfg.json`
-krachtens 
-`/apps/<my-project>/osgiconfig/config`  met de volgende syntaxis:
+krachtens `/apps/<my-project>/osgiconfig/config`  met de volgende syntaxis:
 
    ```
    {

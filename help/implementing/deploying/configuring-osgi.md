@@ -3,9 +3,9 @@ title: OSGi configureren voor Adobe Experience Manager as a Cloud Service
 description: OSGi-configuratie met geheime waarden en milieu-specifieke waarden
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3323'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ Er zijn drie soorten OSGi configuratiewaarden die met Adobe Experience Manager a
 
 Het algemene geval voor OSGi gebruikt inline OSGi configuratiewaarden. Milieu-specifieke configuraties worden gebruikt slechts voor specifieke gebruiksgevallen waar een waarde tussen dev milieu&#39;s verschilt.
 
-![](assets/choose-configuration-value-type_res1.png)
+![De beslissende boom op hoe te om het aangewezen type van configuratiewaarde te gebruiken](assets/choose-configuration-value-type_res1.png)
 
 De milieu-specifieke configuraties breiden de traditionele, statisch bepaalde configuraties OSGi uit die gealigneerde waarden bevatten, die de capaciteit verstrekken om de OSGi configuratiewaarden extern via de Manager API van de Wolk te beheren. Het is belangrijk om te begrijpen wanneer de gemeenschappelijke en traditionele benadering van het bepalen van gealigneerde waarden en het opslaan van hen in Git, zou moeten worden gebruikt, tegenover het abstraheren van de waarden in milieu-specifieke configuraties.
 
@@ -265,8 +265,7 @@ Waarden voor de variabelen mogen niet meer dan 2048 tekens bevatten.
 >1. Klanten mogen niet verwijzen naar variabelen vooraf met `INTERNAL_` of `ADOBE_` ofwel.
 >
 >1. Omgevingsvariabelen met het voorvoegsel `AEM_` worden door het product gedefinieerd als Public API die door klanten moet worden gebruikt en ingesteld.
-   >   Terwijl klanten omgevingsvariabelen kunnen gebruiken en instellen die beginnen met het voorvoegsel `AEM_` zij zouden hun eigen variabelen niet met dit voorvoegsel moeten bepalen.
-
+>   Terwijl klanten omgevingsvariabelen kunnen gebruiken en instellen die beginnen met het voorvoegsel `AEM_` zij zouden hun eigen variabelen niet met dit voorvoegsel moeten bepalen.
 
 ### Standaardwaarden {#default-values}
 
@@ -317,7 +316,7 @@ Als een bezit OSGi verschillende waarden voor auteur tegenover publiceert vereis
 * Apart `config.author` en `config.publish` U dient OSGi-mappen te gebruiken, zoals beschreven in het dialoogvenster [Sectie Resolutie van uitvoermodus](#runmode-resolution).
 * Er zijn twee opties om de onafhankelijke variabelennamen te maken die moeten worden gebruikt:
    * de eerste optie, die wordt aanbevolen: in alle OSGi-mappen (zoals `config.author` en `config.publish`) gedeclareerd om verschillende waarden te definiëren, dezelfde variabelenaam gebruiken. Bijvoorbeeld
-      `$[env:ENV_VAR_NAME;default=<value>]`, waarbij de standaardwaarde overeenkomt met de standaardwaarde voor die laag (auteur of publicatie). Wanneer u de omgevingsvariabele instelt via [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) of via een client, onderscheid maken tussen de lagen aan de hand van de parameter &quot;service&quot; zoals in dit [API-naslagdocumentatie](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). De &quot;dienst&quot;parameter zal de waarde van de variabele aan de aangewezen OSGi rij binden. Het kan &quot;auteur&quot;, &quot;publish&quot; of &quot;preview&quot; zijn.
+     `$[env:ENV_VAR_NAME;default=<value>]`, waarbij de standaardwaarde overeenkomt met de standaardwaarde voor die laag (auteur of publicatie). Wanneer u de omgevingsvariabele instelt via [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) of via een client, onderscheid maken tussen de lagen aan de hand van de parameter &quot;service&quot; zoals in dit [API-naslagdocumentatie](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). De &quot;dienst&quot;parameter zal de waarde van de variabele aan de aangewezen OSGi rij binden. Het kan &quot;auteur&quot;, &quot;publish&quot; of &quot;preview&quot; zijn.
    * de tweede optie is het declareren van verschillende variabelen met een voorvoegsel, zoals `author_<samevariablename>` en `publish_<samevariablename>`
 
 ### Configuratievoorbeelden {#configuration-examples}
