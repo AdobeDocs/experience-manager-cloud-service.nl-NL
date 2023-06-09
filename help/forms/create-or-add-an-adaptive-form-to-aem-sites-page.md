@@ -4,9 +4,9 @@ description: Ontdek hoe u moeiteloos een adaptief formulier kunt maken of toevoe
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
-source-wordcount: '2999'
+source-wordcount: '3011'
 ht-degree: 0%
 
 ---
@@ -136,14 +136,15 @@ Inschakelen [!UICONTROL Adaptive Forms Container] in het sjabloonbeleid voert u 
 
 ## Een adaptief formulier maken {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
-U kunt een geheel nieuw nieuw formulier maken, dat u specifiek aanpast aan uw vereisten en ontwerpvoorkeuren, rechtstreeks op een pagina met AEM sites of in Experience Fragment. Voor formulieren voor eenmalig gebruik wordt het aanbevolen om rechtstreeks naar een pagina met AEM sites te schrijven, terwijl Experience Fragments ideaal is voor formulieren die opnieuw moeten worden gebruikt op meerdere pagina&#39;s op uw website.
+U kunt een geheel nieuw formulier maken en dit aanpassen aan uw vereisten en ontwerpvoorkeuren, rechtstreeks op een AEM Sites-pagina of in Experience Fragment. Voor formulieren voor eenmalig gebruik wordt direct schrijven naar een AEM Sites-pagina aanbevolen, terwijl Experience Fragments ideaal zijn voor formulieren die opnieuw moeten worden gebruikt op meerdere pagina&#39;s op uw website.
 
 * [Een formulier maken op een AEM Sites-pagina](#create-an-adaptive-form-in-sites-editor)
 * [Een formulier maken in een ervaringsfragment](#create-an-adaptive-form-in-experience-fragment)
+* [Een adaptief formulier in AEM Sites-pagina converteren naar een Experience-fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
 
 ### Een formulier maken op een AEM Sites-pagina {#create-an-adaptive-form-in-sites-editor}
 
-U kunt de component Adaptief formuliercontainer in de AEM Sites-editor gebruiken om een aangepast formulier te maken. Met deze component kunt u een formulier maken door de formuliercomponenten te slepen en neer te zetten. De formuliercomponenten zijn gebaseerd op kerncomponenten. U kunt deze instellingen eenvoudig aanpassen aan de vereisten van uw organisatie.
+Met de component Aangepaste formuliercontainer in AEM paginaeditor kunt u een aangepast formulier maken. Met deze component kunt u een formulier maken door de formuliercomponenten te slepen en neer te zetten. De formuliercomponenten zijn gebaseerd op kerncomponenten. U kunt deze instellingen eenvoudig aanpassen aan de vereisten van uw organisatie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -169,7 +170,7 @@ Een adaptief formulier maken in een ervaringsfragment:
 
 Volgende [De handeling Verzenden instellen](#configure-submit-action-for-form) en geavanceerde eigenschappen.
 
-### Een adaptief formulier in AEM Sites-pagina converteren naar een Experience-fragment
+### Een adaptief formulier in AEM Sites-pagina converteren naar een Experience-fragment {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 U kunt een bestaand adaptief formulier in een sitepagina-editor converteren naar een ervaringsfragment om het formulier te hergebruiken op meerdere pagina&#39;s of sites.
 
