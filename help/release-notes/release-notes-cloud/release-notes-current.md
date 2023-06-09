@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
    * Een nieuwe versie maken
    * Relatieve of niet-gerelateerde elementen
 
-      U hoeft niet naar de middelenlocatie te navigeren en de eigenschappen ervan te bekijken om deze bewerkingen uit te voeren.
+     U hoeft niet naar de middelenlocatie te navigeren en de eigenschappen ervan te bekijken om deze bewerkingen uit te voeren.
 
 * Verbeteringen in de gebruiksvriendelijkheid van Color Search facet - Invoerveld voor kleurwaarden kan nu worden bewerkt en zoekresultaten worden alleen bijgewerkt wanneer u de kleurkiezer afsluit.
 
@@ -78,21 +78,21 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
 
 * [Verbeterde Adobe Acrobat Sign-integratie en compatibiliteit](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms is nu geïntegreerd met Adobe Acrobat Sign for Government en biedt een geavanceerd niveau van naleving en beveiliging voor e-handtekeningen met Adaptive Form-verzendingen voor met de overheid verband houdende rekeningen (overheidsdiensten en agentschappen).
 
-   Dankzij de integratie met Adobe Acrobat Sign for Government kunnen onze partners en klanten van de overheid in Adaptive Forms elektronische handtekeningen gebruiken voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met Matige naleving FedRAMP zijn, die onze overheidsklanten van gemoedsrust voorzien.
+  Dankzij de integratie met Adobe Acrobat Sign for Government kunnen onze partners en klanten van de overheid in Adaptive Forms elektronische handtekeningen gebruiken voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met Matige naleving FedRAMP zijn, die onze overheidsklanten van gemoedsrust voorzien.
 
-* [Adaptieve Forms in AEM Sites-editor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): U kunt nu AEM Sites Editor gebruiken om snel meerdere formulieren te maken en aan uw sitepagina&#39;s toe te voegen. Dankzij deze functie kunnen auteurs van inhoud naadloze ervaringen met gegevensvastlegging maken op sitepagina&#39;s met behulp van de kracht van adaptieve formuliercomponenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van registratie- en bedrijfsprocesautomatisering. U kunt:
+* [Adaptieve Forms in AEM paginaeditor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): U kunt nu AEM Pagina-editor gebruiken om snel meerdere formulieren te maken en aan uw sitepagina&#39;s toe te voegen. Dankzij deze functie kunnen auteurs van inhoud naadloze ervaringen met gegevensvastlegging maken op sitepagina&#39;s met behulp van de kracht van adaptieve formuliercomponenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van registratie- en bedrijfsprocesautomatisering. U kunt:
 
    * Maak een adaptief formulier door formuliercomponenten te slepen en neer te zetten op Adaptive Forms Container Component in AEM Sites Editor of Experience Fragments.
    * Met de wizard Adaptive Forms in de AEM Sites-editor kunt u formulieren maken die onafhankelijk zijn van elke sitepagina, zodat u deze formulieren op meerdere pagina&#39;s kunt hergebruiken.
    * Voeg meerdere formulieren toe aan een sitepagina, zodat de gebruikerservaring wordt gestroomlijnd en er meer flexibiliteit wordt geboden.
 
-      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * Verbeter fout behandeling met de managers van de douanefout in regelredacteur: U kunt een douanefunctie (gebruikend de Bibliotheek van de Cliënt) nu aanhalen als antwoord op een fout die door de externe dienst is teruggekeerd en een op maat gemaakte reactie verstrekken aan eind - gebruikers of specifieke acties voor fouten nemen die door de dienst zijn teruggekeerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is.
 
-   Dit helpt uw algemene fout-behandelend vermogen verbeteren door op norm-gebaseerde foutenreacties in te voeren, die achterwaarts compatibel met OOTB foutenmanagers, met grotere flexibiliteit en controle zijn.
+  Dit helpt uw algemene fout-behandelend vermogen verbeteren door op norm-gebaseerde foutenreacties in te voeren, die achterwaarts compatibel met OOTB foutenmanagers, met grotere flexibiliteit en controle zijn.
 
-## Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
+### Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
 
 Gebruik Headless Adaptive Forms om uw ontwikkelaars in staat te stellen interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden geopend en gebruikt in plaats van via een traditionele grafische gebruikersinterface. Met behulp van hoofdloze adaptieve formulieren kunt u:
 

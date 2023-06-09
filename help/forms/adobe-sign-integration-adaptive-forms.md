@@ -4,9 +4,9 @@ description: Leer hoe u Adobe Acrobat Sign for configureert [!DNL AEM Forms] as 
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
+source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Nu kunt u [Adobe Acrobat Sign-velden toevoegen aan een adaptief formulier](worki
 
 ## Connect AEM Forms met Adobe Acrobat Sign Solutions for Government {#adobe-acrobat-sign-for-government}
 
-|Voorzichtigheid|[!BADGE pre-releasedocumentatie]{type=Caution tooltip="Gele status"}
+[!BADGE pre-releasedocumentatie]{type=Caution tooltip="Gele status"}
 <span class="preview"> Deze sectie bevat pre-releasedocumentatie en kan worden gewijzigd.</span>
 
 AEM Forms verbinden met Adobe Acrobat Sign Solutions voor de overheid is een proces dat uit meerdere stappen bestaat. Het gaat om:
