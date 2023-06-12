@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2602'
 ht-degree: 1%
 
 ---
@@ -71,9 +71,11 @@ Naast het verstrekken van onderbrekingen ook zou een juiste behandeling van derg
 
 AEM as a Cloud Service ondersteunt alleen de Touch UI voor klantcode van derden. Klassieke UI is niet beschikbaar voor aanpassing.
 
-## Native binaire getallen vermijden {#avoid-native-binaries}
+## Geen eigen binaire of native bibliotheken {#avoid-native-binaries}
 
-Code kan geen binaire bestanden downloaden tijdens runtime en deze niet wijzigen. Het kan bijvoorbeeld niet uitpakken `jar` of `tar` bestanden.
+Native binaire bestanden en bibliotheken mogen niet worden geïmplementeerd of geïnstalleerd in cloudomgevingen.
+
+Bovendien mag de code niet proberen native binaire bestanden of native Java-extensies (bijvoorbeeld JNI) te downloaden tijdens runtime.
 
 ## Geen streamingbinders via AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -128,7 +130,11 @@ Laat het logbestand op het niveau van het DEBUG-logbestand niet langer dan nodig
 
 De discrete logboekniveaus kunnen voor de verschillende AEM milieu&#39;s worden geplaatst gebruikend runtime op wijze-gebaseerde configuratie OSGi die als het wenselijk is om altijd bij te registreren `DEBUG` tijdens de ontwikkeling. Bijvoorbeeld:
 
-| Milieu | OSGi-configuratielocatie per uitvoeringsmodus | `org.apache.sling.commons.log.level` eigenschapswaarde | | - | - | - | | Ontwikkeling | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | | Fase | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WAARSCHUWING | | Productie | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | FOUT |
+| Omgeving | OSGi-configuratielocatie per uitvoeringsmodus | `org.apache.sling.commons.log.level` eigenschapswaarde |
+| - | - | - |
+| Ontwikkeling | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
+| Werkgebied | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WAARSCHUWING |
+| Productie | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | FOUT |
 
 Een lijn in zuivert dossier begint gewoonlijk met DEBUG, en verstrekt dan het logboekniveau, de installeractie en het logboekbericht. Bijvoorbeeld:
 
