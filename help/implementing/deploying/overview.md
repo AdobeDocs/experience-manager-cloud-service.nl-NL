@@ -3,9 +3,9 @@ title: Implementeren naar AEM as a Cloud Service
 description: Implementeren naar AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
+source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
 workflow-type: tm+mt
-source-wordcount: '3541'
+source-wordcount: '3542'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Het is mogelijk de installatie van veranderbare inhoud te beperken tot auteur of
 >[!NOTE]
 >Inhoudspakketten worden geïmplementeerd op alle omgevingstypen (dev, stage, prod). Het is niet mogelijk de implementatie te beperken tot een specifieke omgeving. Deze beperking is van toepassing om ervoor te zorgen dat een testrun van geautomatiseerde uitvoering mogelijk is. Inhoud die specifiek is voor een omgeving, moet handmatig worden geïnstalleerd via [Pakketbeheer.](/help/implementing/developing/tools/package-manager.md)
 
-Ook, is er geen mechanisme om de veranderlijke veranderingen van het inhoudspakket terug te draaien nadat zij zijn toegepast. Als klanten een probleem ontdekken, kunnen zij verkiezen om het in hun volgende codeversie of als laatste redmiddel te bevestigen, het volledige systeem aan een punt in tijd vóór de plaatsing herstellen.
+Er is ook geen mechanisme om wijzigingen in het veranderbare inhoudspakket terug te draaien nadat deze zijn toegepast. Als klanten een probleem ontdekken, kunnen zij verkiezen om het in hun volgende codeversie of als laatste redmiddel te bevestigen, het volledige systeem aan een punt in tijd vóór de plaatsing herstellen.
 
 Alle meegeleverde pakketten van derden moeten worden gevalideerd als zijnde compatibel met AEM as a Cloud Service service, anders leidt de opname ervan tot een implementatiefout.
 
@@ -130,9 +130,9 @@ In de volgende gevallen verdient het de voorkeur de methode voor het handmatig c
 * Gebruikers maken/verwijderen
 * Voeg ACLs toe
 
-   >[!NOTE]
-   >
-   >De definitie van ACLs vereist dat de knoopstructuren reeds aanwezig zijn. Het is dus mogelijk dat u padinstructies moet maken.
+  >[!NOTE]
+  >
+  >De definitie van ACLs vereist dat de knoopstructuren reeds aanwezig zijn. Het is dus mogelijk dat u padinstructies moet maken.
 
 * Pad toevoegen (bijvoorbeeld voor basismapstructuren)
 * CND&#39;s toevoegen (geen typedefinities)

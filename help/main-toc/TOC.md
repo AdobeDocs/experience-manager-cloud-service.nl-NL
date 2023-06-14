@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
+source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
 workflow-type: tm+mt
-source-wordcount: '4064'
+source-wordcount: '4079'
 ht-degree: 20%
 
 ---
@@ -73,6 +73,7 @@ ht-degree: 20%
    + Opmerkingen bij de release AEMaaCS-onderhoud {#maintenance}
       + [Opmerkingen bij de release voor huidige onderhoud](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [Opmerkingen bij de onderhoudsrelease voor 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Opmerkingen bij de release van Cloud Manager {#cloud-manager}
@@ -546,6 +547,7 @@ ht-degree: 20%
             + [Thema&#39;s maken voor een adaptief formulier - Core Components](/help/forms/using-themes-in-core-components.md)
             + [Document met record genereren voor adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)
             + [Een adaptieve Forms - Core Components maken op een AEM Sites-pagina](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Een adaptief formulier vertalen met behulp van automatische vertaling of menselijke vertaling](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Pagina omleiden of bedankbericht configureren](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + Aangepaste Forms ontwerpen - Elementaire componenten {#authoring-adaptive-forms-foundation-components}
          + Uw PDF forms converteren naar Adaptieve Forms {#afcs}

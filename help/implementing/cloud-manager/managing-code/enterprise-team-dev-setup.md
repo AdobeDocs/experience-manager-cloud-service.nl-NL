@@ -2,9 +2,9 @@
 title: Team instellen voor bedrijfsontwikkeling
 description: Leer hoe u uw ontwikkelingsteam voor bedrijven kunt instellen en schalen en hoe AEM as a Cloud Service uw ontwikkelingsproces kan ondersteunen.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
+source-git-commit: f19c4c71cf3b70331b9ccc56adf0bfd31e7edb2c
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1445'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Met de git-opslagplaats van Cloud Manager en de productiepijplijn wordt de volle
 
 Zonder een dergelijk systeem is er daarentegen een risico dat een update van één team tot problemen met productiestabiliteit kan leiden, omdat elk team afzonderlijk kan implementeren. Daarnaast is coördinatie en geplande uitvaltijd nodig om updates uit te voeren. Met een toenemend aantal teams zal de coördinatie-inspanning veel complexer en sneller onbeheersbaar worden.
 
-Als er een probleem wordt vastgesteld in de kwaliteitskates, heeft dit geen invloed op de productie en kan het probleem worden opgespoord en opgelost zonder dat Adobe personeel nodig is om in te stappen. Zonder Cloud Service en zonder altijd de volledige plaatsing te testen, kunnen de gedeeltelijke plaatsingen stroomonderbrekingen veroorzaken die een verzoek om terugschroeven van prijzen of zelfs een volledig herstel van een steun vereisen. De gedeeltelijke tests kunnen ook leiden tot andere problemen die vervolgens moeten worden opgelost nadat opnieuw coördinatie en steun van het personeel van de Adobe vereist is.
+Als er een probleem wordt vastgesteld in de kwaliteitskates, heeft dit geen invloed op de productie en kan het probleem worden opgespoord en opgelost zonder dat Adobe personeel nodig is om in te stappen. Zonder Cloud Service en zonder altijd de volledige plaatsing te testen, kunnen de gedeeltelijke plaatsingen stroomonderbrekingen veroorzaken die een verzoek vereisen om terug te draaien of zelfs volledig te herstellen van een steun. De gedeeltelijke tests kunnen ook leiden tot andere problemen die vervolgens moeten worden opgelost nadat opnieuw coördinatie en steun van het personeel van de Adobe vereist is.
 
 >[!TIP]
 >
