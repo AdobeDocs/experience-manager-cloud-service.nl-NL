@@ -4,9 +4,9 @@ description: Zodra u uw wolkenmiddelen hebt gevormd, zult u uw teamtoegang tot A
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,12 @@ Als u AEM wilt gebruiken, moeten uw teamleden worden toegewezen aan ten minste Ã
 * `AEM Users` - Tot deze groep behoren normale gebruikers die dagelijkse taken voor het schrijven van inhoud uitvoeren.
 * `AEM Administrators` - Deze groep omvat gebruikers die verantwoordelijk zijn voor geavanceerde functies of AEM.
 
-Elke gebruiker die is toegewezen aan een AEM productprofiel krijgt ook alleen-lezen toegang tot Cloud Manager. Schrijftoegang tot Cloud Manager wordt mogelijk verleend via andere productprofielen.
+>[!NOTE]
+>
+>Elke gebruiker die is toegewezen aan een AEM as a Cloud Service productprofiel heeft alleen-lezentoegang tot Cloud Manager via de **Gebruiker van Cloud Manager** rol.
+>
+>Gebruikers met de **Cloud Manager** De rol van de gebruiker kan slechts login in de Manager van de Wolk en navigeer aan de AEM auteursmilieu&#39;s (als zij bestaan) door de het menuopties van Programma&#39;s te gebruiken. De **Gebruiker van Cloud Manager** de rol is niet voldoende om toegang te krijgen tot de programmagegevens . Als dergelijke toegang nodig is, moeten de gebruikers extra rollen door hun systeembeheerder worden verleend.
+>Zie de [Sectie Aanvullende bronnen hieronder](#additional-resources) voor meer informatie over gebruikersrollen van Cloud Manager.
 
 >[!CAUTION]
 >
@@ -108,6 +113,7 @@ Als u echter beter wilt begrijpen hoe auteurs en ontwikkelaars het systeem gebru
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
+* [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md) - Leer hoe AEM as a Cloud Service teams en productprofielen toegang tot uw gelicentieerde Adobe-oplossingen kunnen verlenen en beperken.
 * [Producten en gebruikerstoegang in Admin Console beheren](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Leer hoe u de Admin Console kunt gebruiken voor het beheer van de toegang tot het gebruik.
-* [Toegang tot AEM doorlopen configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en) - Bekijk deze verkorte analyse om meer te leren over het configureren van Adobe IMS-gebruikers, gebruikersgroepen en productprofielen in de Admin Console.
+* [Toegang tot AEM doorlopen configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - Bekijk deze verkorte analyse om meer te leren over het configureren van Adobe IMS-gebruikers, gebruikersgroepen en productprofielen in de Admin Console.
 

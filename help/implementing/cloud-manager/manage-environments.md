@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen 
 
    * De **Omgeving toevoegen** deze optie is ook beschikbaar op de **Omgevingen** tab.
 
-      ![Het tabblad Omgevingen](assets/environments-tab.png)
+     ![Het tabblad Omgevingen](assets/environments-tab.png)
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
@@ -129,7 +129,7 @@ U kunt de **Omgevingen** kaart op de overzichtspagina om op twee manieren toegan
 
    * U kunt ook op de knop **Alles tonen** op de knop **Omgevingen** kaart om rechtstreeks naar de **Omgevingen** tab.
 
-      ![Alle opties tonen](assets/environment-showall.png)
+     ![Alle opties tonen](assets/environment-showall.png)
 
 1. De **Omgevingen** wordt geopend en worden alle omgevingen voor het programma weergegeven.
 
@@ -231,12 +231,15 @@ De optie Verwijderen is ook beschikbaar via het dialoogvenster **Omgevingen** ta
 >* De productie en het opvoeren milieu&#39;s die in een productieprogramma worden gecreeerd kunnen niet worden geschrapt.
 >* Productie- en staging-omgevingen in een sandboxprogramma kunnen worden verwijderd.
 
-
 ## Toegang beheren {#managing-access}
 
 Selecteren **Toegang beheren** in het ovaalmenu van de omgeving op het **Omgevingen** kaart. U kunt rechtstreeks naar de instantie van de auteur navigeren en de toegang voor uw omgeving beheren.
 
 ![Toegangsoptie beheren](assets/environ-access.png)
+
+>[!TIP]
+>
+>Zie het document [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md) om te leren hoe AEM as a Cloud Service team en productprofielen toegang tot uw vergunning gegeven oplossingen van de Adobe kunnen verlenen en beperken.
 
 ## Toegang tot de ontwikkelaarsconsole {#accessing-developer-console}
 
