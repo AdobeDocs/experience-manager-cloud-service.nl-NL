@@ -4,9 +4,9 @@ description: Leer de grondbeginselen van AE; pakketbeheer met Package Manager.
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3788'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,37 @@ Inhoudspakketten die voor AEM as a Cloud Service toepassingen worden gemaakt, mo
 >Probeer de installatie niet opnieuw als er een dergelijke fout optreedt. De installatie verloopt op de juiste wijze op de achtergrond. Als u de installatie opnieuw start, kunnen er conflicten optreden tijdens meerdere importprocessen tegelijk.
 
 Voor meer informatie over het beheren van pakketten voor AEMaaCS raadpleegt u het document [Distribueren naar AEM as a Cloud Service](/help/implementing/deploying/overview.md) in de het opstellen gebruikershandleiding.
+
+## Pakketgrootte {#package-size}
+
+Adobe raadt u aan geen grote pakketten te maken. Zo voorkomt u time-outproblemen bij het uploaden en downloaden van pakketten.
+
+In het algemeen moet een pakket in zijn geheel binnen 60 seconden worden verzonden. Dit verstrekt de volgende formule als gids.
+
+```text
+MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
+```
+
+Aangezien het netwerkverkeer variabel is en altijd kleiner is dan de geadverteerde maximale theoretische waarde, kunt u proberen een online testtool voor de snelheid van internetverbinding te gebruiken.
+
+Internetsnelheden zijn bijna altijd verschillend voor uploads en downloads. Ervan uitgaande dat u pakketten moet uploaden en downloaden, moet u de lagere waarde (doorgaans uploadsnelheid) gebruiken in uw berekening.
+
+### Voorbeeld {#example}
+
+Gebruikend een hulpmiddel van de de snelheidstest van Internet, zie ik dat mijn huidige uploadsnelheid ongeveer 100 Mbps is.
+
+```text
+100 Mbps = 12.5 MB/s
+12.5 MB/s * 60 s = 750 MB
+```
+
+Alle pakketten die ik maak, moeten dus kleiner zijn dan 750 MB.
+
+>[!NOTE]
+>
+>De snelheden van het netwerk zijn onderworpen aan huidige, lokale voorwaarden. Zelfs met een recente snelheidstest, kan uw daadwerkelijke productie variëren.
+>
+>Daarom is de geleverde formule slechts een richtlijn en kan de werkelijke maximale aanbevolen verpakkingsgrootte variëren.
 
 ## Pakketbeheer {#package-manager}
 
@@ -237,6 +268,10 @@ Er zijn vele acties die op een pakket kunnen worden ondernomen.
 
 Het is niet verplicht om het pakket onmiddellijk na het maken ervan te bouwen. Een ongebouwd pakket bevat geen inhoud en bestaat alleen uit de filtergegevens en andere metagegevens van het pakket.
 
+>[!TIP]
+>
+>Om onderbrekingen te voorkomen, raadt Adobe aan [geen grote pakketten maken.](#package-size)
+
 ### Een pakket maken {#building-a-package}
 
 Een pakket wordt vaak op hetzelfde moment als u gemaakt [Maak het pakket](#creating-a-new-package), maar u kunt op een later tijdstip terugkeren om het pakket samen te stellen of opnieuw samen te stellen. Dit kan nuttig zijn als de inhoud in de opslagplaats is gewijzigd of de pakketfilters zijn gewijzigd.
@@ -248,6 +283,10 @@ Een pakket wordt vaak op hetzelfde moment als u gemaakt [Maak het pakket](#creat
 1. Klikken **Opbouwen**. Er wordt een dialoogvenster weergegeven waarin u moet bevestigen dat u het pakket wilt maken, aangezien bestaande pakketinhoud wordt overschreven.
 
 1. Klikken **OK**. AEM bouwt het pakket en geeft alle inhoud weer die aan het pakket is toegevoegd, zoals dit gebeurt in de lijst met activiteiten. Na voltooiing AEM wordt bevestigd dat het pakket is gemaakt en (wanneer u het dialoogvenster sluit) worden de gegevens in de pakketlijst bijgewerkt.
+
+>[!TIP]
+>
+>Om onderbrekingen te voorkomen, raadt Adobe aan [geen grote pakketten maken.](#package-size)
 
 ### Een pakket bewerken {#edit-package}
 
@@ -313,6 +352,10 @@ Nadat een pakket is samengesteld, kunt u de inhoud bekijken.
 
 1. AEM downloadt het pakket naar uw computer.
 
+>[!TIP]
+>
+>Om onderbrekingen te voorkomen, raadt Adobe aan [geen grote pakketten maken.](#package-size)
+
 ### Pakketten uploaden vanuit uw bestandssysteem {#uploading-packages-from-your-file-system}
 
 1. [Access Package Manager.](#accessing)
@@ -331,6 +374,10 @@ Nadat een pakket is samengesteld, kunt u de inhoud bekijken.
 1. Klikken **OK** en het geselecteerde pakket wordt geüpload en de pakketlijst wordt dienovereenkomstig bijgewerkt.
 
 De pakketinhoud bestaat nu op AEM, maar als u de inhoud beschikbaar wilt maken voor gebruik, moet u [het pakket installeren](#installing-packages).
+
+>[!TIP]
+>
+>Om onderbrekingen te voorkomen, raadt Adobe aan [geen grote pakketten maken.](#package-size)
 
 ### Pakketten valideren {#validating-packages}
 
