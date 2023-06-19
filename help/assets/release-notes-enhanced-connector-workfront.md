@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 3a00faaf285be693243e3fb55159149520293610
+source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1112'
 ht-degree: 0%
 
 ---
@@ -15,18 +15,22 @@ In de volgende sectie worden de algemene opmerkingen bij de release beschreven v
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor de laatste versie 1.9.10 van [!DNL Workfront for Experience Manager enhanced connector] is 18 mei 2023.
+De releasedatum voor de laatste versie 1.9.11 van [!DNL Workfront for Experience Manager enhanced connector] is 19 juni 2023.
 
 ## Geen hooglichten {#release-highlights}
 
 De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de volgende updates:
 
-* Workfront retourneert een 409 HTTP-reactie voor dubbele gebeurtenisabonnementen op basis van een REST-aanroep van Experience Manager naar Workfront. Dit leidt tot een null pointer-uitzondering.
+* Wanneer u geavanceerde netwerken hebt geconfigureerd, zijn er problemen bij het verzenden van inhoud van Adobe Workfront naar AEM as a Cloud Service.
+
+>[!NOTE]
+>
+>AEM 6.4 is het einde van de uitgebreide steun bereikt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
 >
->Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.10](../assets/update-workfront-enhanced-connector.md) van de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe raadt u aan [upgrade naar de nieuwste versie 1.9.11](../assets/update-workfront-enhanced-connector.md) van de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekende problemen {#known-issues}
 
@@ -35,6 +39,10 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 * Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** in de vervolgkeuzelijst kunt u de doelbestemming in de Experience Manager niet selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** keuzelijst beschikbaar in de nieuwe Workfront-ervaring.
 
 ## Eerdere versies {#previous-releases}
+
+### Release mei 2023 {#may-2023-release}
+
+* Workfront retourneert een 409 HTTP-reactie voor dubbele gebeurtenisabonnementen op basis van een REST-aanroep van Experience Manager naar Workfront. Dit leidt tot een null pointer-uitzondering.
 
 ### Release van april 2023 {#april-2023-release}
 
@@ -95,7 +103,7 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 
 * Het inschakelen van de **[!UICONTROL Publish Assets to Brand Portal]** op de Workfront Enhanced Connector Configuration-pagina wordt een onjuiste gebeurtenis gemaakt. De gebeurtenis wordt niet verwijderd, zelfs niet nadat de optie is uitgeschakeld.
 
-   U lost het probleem als volgt op:
+  U lost het probleem als volgt op:
 
    1. Voer een upgrade uit naar versie 1.9.5 van de verbeterde connector.
 
@@ -123,9 +131,9 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
       1. Verwijder het verkeerde gebeurtenisabonnement. API-aanroep van verwijderen uitvoeren op `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
          `200` als de antwoordcode aangeeft dat onjuiste gebeurtenisabonnementen met succes zijn verwijderd.
-   >[!NOTE]
-   >
-   >Als u reeds de verkeerde gebeurtenisabonnementen vóór het uitvoeren van de stappen hebt geschrapt die in deze procedure worden vermeld, kunt u de laatste stap van deze procedure overslaan.
+  >[!NOTE]
+  >
+  >Als u reeds de verkeerde gebeurtenisabonnementen vóór het uitvoeren van de stappen hebt geschrapt die in deze procedure worden vermeld, kunt u de laatste stap van deze procedure overslaan.
 
 ### Release oktober 2022 {#october-2022-release}
 
@@ -189,4 +197,3 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 >[!MORELIKETHIS]
 >
 >* [Integreren [!DNL Workfront for Experience Manager enhanced connector] met Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
-
