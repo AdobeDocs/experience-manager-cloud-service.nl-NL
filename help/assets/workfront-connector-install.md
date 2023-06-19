@@ -4,10 +4,10 @@ description: Installeren [!DNL Workfront for Experience Manager enhanced connect
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 21f33c0b8710dd9d9db30543defff7dae9942c06
+source-git-commit: aa183901e80ba414fc3db5af01fbc49d082af7b6
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 1%
+source-wordcount: '754'
+ht-degree: 0%
 
 ---
 
@@ -30,14 +30,28 @@ Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] als [!DNL 
 >
 >* Zie [Partnercertificatieexamen voor Workfront voor verbeterde connector voor Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie [Handleiding voor Examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 Volg de volgende stappen voordat u de aansluiting installeert:
 
-1. [De firewall configureren](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html). Om de IP cluster binnen te kennen [!DNL Workfront], navigeer naar [!UICONTROL Setup] > [!UICONTROL System] > [!UICONTROL Customer Info].
+1. Als uw AEM as a Cloud Service Programma Geavanceerde Voorzien van een netwerk heeft gevormd en IP toe:staan-Lijst toegelaten, dan moet u Workfront IPs aan dit toestaan-lijst toevoegen om de Abonnementen van de Gebeurtenis en diverse API vraag toe te laten om in AEM over te gaan.
 
-1. Toestaan dat in de verzender HTTP-headers met de naam `authorization`, `username`, en `apikey`. Toestaan `GET`, `POST`, en `PUT` verzoeken om `/bin/workfront-tools`.
+   * [Workfront Cluster IP&#39;s](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Om de IP cluster binnen te kennen [!DNL Workfront], navigeer naar **[!UICONTROL Setup]** > **[!UICONTROL System]** > **[!UICONTROL Customer Info]**.
 
-1. Controleer of de volgende paden niet bestaan in [!DNL Experience Manager] opslagplaats:
+   * [API&#39;s voor Workfront Event Subscription](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
+
+   >[!IMPORTANT]
+   >
+   >* Als u Geavanceerde netwerken hebt geconfigureerd voor uw programma en IP Allow Listing gebruikt, moet u vanwege een beperking met de verbeterde Workfront Connector-architectuur ook de IP van de programmaegress toevoegen aan de allow-list in Cloud Manager.
+   >
+   >* p{PROGRAM_ID}.external.adobeaemcloud.com
+   >
+   >* Om IP van uw programma te vinden, open een eindvenster en stel een bevel in werking, zoals:
+   >
+   >    ```TXT
+   >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
+   >
+   >    ```
+
+1. Zorg ervoor dat de volgende overlays niet bestaan in [!DNL Experience Manager] opslagplaats. Als u bestaande overlays op deze paden hebt, moet u de overlays verwijderen of de delta van wijzigingen tussen de twee overlays samenvoegen:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
