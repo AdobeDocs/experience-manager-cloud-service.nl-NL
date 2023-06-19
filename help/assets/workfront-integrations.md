@@ -4,9 +4,9 @@ description: Inleiding tot integratie tussen [!DNL Assets] en [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: e8607f5dfc9ad5fd5ababec47b4933bee131e566
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,8 @@ Raadpleeg de platformondersteuning en [eerste vereisten voor de verbeterde aansl
 
 >[!IMPORTANT]
 >
+>* Vanaf juni 2022 heeft Adobe een nieuwe native integratie uitgebracht voor de aansluiting van Workfront op Adobe Experience Manager Assets as a Cloud Service. Deze integratie is de vereiste methode geworden om deze twee oplossingen aan te sluiten. Elke toekomstige nieuwe implementatie van de verbeterde connector (1.9.8 en hoger) voor het aansluiten van Workfront op AEM Assets as a Cloud Service wordt geblokkeerd. Voor meer informatie over hoe te om deze integratie te plaatsen, zie [De as a Cloud Service integratie met Experience Manager Assets configureren](workfront-connector-configure.md).
+>
 >* Adobe vereist plaatsing en configuratie van [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services]. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt deze niet ondersteund door Adobe.
 >
 >* Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] die deze aansluiting overbodig maken; als dit voorkomt, kunnen de klanten worden vereist om van het gebruik van deze schakelaar over te gaan.
@@ -47,7 +49,6 @@ Raadpleeg de platformondersteuning en [eerste vereisten voor de verbeterde aansl
 >* Adobe steunt verbeterde schakelaarversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Zie stap 5(a) van [Uitgebreide installatie-instructies](workfront-connector-install.md).
 >
 >* Zie [Partnercertificatieexamen voor Workfront voor verbeterde connector voor Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie [Handleiding voor Examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
-
 
 ## Verschillende integraties vergelijken tussen [!DNL Assets] en [!DNL Workfront] {#feature-parity-matrix}
 
