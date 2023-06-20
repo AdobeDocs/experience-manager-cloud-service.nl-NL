@@ -4,7 +4,7 @@ description: Inleiding tot integratie tussen [!DNL Assets] en [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 0%
@@ -34,13 +34,14 @@ Met de geïntegreerde native Experience Manager en [!DNL Workfront for Experienc
 
 Zie de [hieronder ondersteunde functies voor een vergelijking](#feature-parity-matrix) tussen native integratie of integratie met behulp van connectors tussen de twee oplossingen.
 
-
+>[!IMPORTANT]
+>
+>Vanaf juni 2022 heeft Adobe een nieuwe native integratie uitgebracht voor de aansluiting van Workfront op Adobe Experience Manager Assets as a Cloud Service. Deze integratie is de vereiste methode geworden om deze twee oplossingen aan te sluiten. Elke toekomstige nieuwe implementatie van de verbeterde connector (1.9.8 en hoger) voor het aansluiten van Workfront op AEM Assets as a Cloud Service wordt geblokkeerd. Voor meer informatie over hoe te om deze integratie te plaatsen, zie [De as a Cloud Service integratie met Experience Manager Assets configureren](workfront-connector-configure.md).
+>
 
 Raadpleeg de platformondersteuning en [eerste vereisten voor de verbeterde aansluiting](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
->
->* Vanaf juni 2022 heeft Adobe een nieuwe native integratie uitgebracht voor de aansluiting van Workfront op Adobe Experience Manager Assets as a Cloud Service. Deze integratie is de vereiste methode geworden om deze twee oplossingen aan te sluiten. Elke toekomstige nieuwe implementatie van de verbeterde connector (1.9.8 en hoger) voor het aansluiten van Workfront op AEM Assets as a Cloud Service wordt geblokkeerd. Voor meer informatie over hoe te om deze integratie te plaatsen, zie [De as a Cloud Service integratie met Experience Manager Assets configureren](workfront-connector-configure.md).
 >
 >* Adobe vereist plaatsing en configuratie van [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services]. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt deze niet ondersteund door Adobe.
 >
