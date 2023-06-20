@@ -2,9 +2,9 @@
 title: Overzicht van ervaringsfragmenten
 description: Breid de Fragmenten van de Ervaring van Adobe Experience Manager as a Cloud Service uit.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1648'
 ht-degree: 0%
 
 ---
@@ -85,8 +85,7 @@ Een ervaringsfragmentsjabloon maken die wordt gedetecteerd door de **Experience 
 
    1. De naam van de sjabloon moet beginnen met:
       `experience-fragments`
-Hierdoor kunnen gebruikers ervaringsfragmenten maken in /content/experience-fragments als de 
-`cq:allowedTemplates` eigenschap van deze map bevat alle sjablonen met namen die beginnen met `experience-fragment`. Klanten kunnen deze eigenschap bijwerken en hun eigen naamgevingsschema of sjabloonlocaties opnemen.
+Hierdoor kunnen gebruikers ervaringsfragmenten maken in /content/experience-fragments als de `cq:allowedTemplates` eigenschap van deze map bevat alle sjablonen met namen die beginnen met `experience-fragment`. Klanten kunnen deze eigenschap bijwerken en hun eigen naamgevingsschema of sjabloonlocaties opnemen.
 
 1. [Toegestane sjablonen](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) kan in de console van de Fragmenten van de Ervaring worden gevormd.
 
@@ -201,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Om de interface te gebruiken moet u eerst een bundel tot stand brengen die een nieuwe de dienstcomponent bevat die de interface van de Leverancier van Rewriter van de Verbinding uitvoert.
 
-Deze service wordt gebruikt om de functie Exporteren naar doel van fragment uit ervaring in te sluiten voor toegang tot de verschillende koppelingen.
+Deze service wordt gebruikt om in het dialoogvenster Exporteren naar doel van fragment uit ervaring op te nemen zodat deze toegang kan hebben tot de verschillende koppelingen.
 
 Bijvoorbeeld, `ComponentService`:
 
@@ -266,7 +265,7 @@ In het bovenstaande voorbeeld willen we het volgende herschrijven:
 * `href` alleen kenmerken
 
 * voor een specifiek ervaringsfragment:
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Eventuele andere Erviteitsfragmenten die door het systeem Exporteren naar doel worden doorgegeven, worden genegeerd en niet beïnvloed door wijzigingen die in deze service worden geïmplementeerd.
 
@@ -279,8 +278,7 @@ Voor de wijziging van het Fragment van de Ervaring die door het herschrijven pro
 De methode ontvangt de parameters als invoer:
 
 * `link`
-De 
-`String` een weergave van de koppeling die momenteel wordt verwerkt. Dit is meestal een relatieve URL die naar de bron op de auteurinstantie verwijst.
+De `String` een weergave van de koppeling die momenteel wordt verwerkt. Dit is meestal een relatieve URL die naar de bron op de auteurinstantie verwijst.
 
 * `tag`
 De naam van het HTML-element dat momenteel wordt verwerkt.

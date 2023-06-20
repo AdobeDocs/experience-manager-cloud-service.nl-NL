@@ -5,9 +5,9 @@ landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fr
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1103'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,6 @@ De console van de Fragmenten van de Inhoud wordt gewijd aan het beheren van, het
 >
 >* dit **Inhoudsfragmenten** console
 >* de **Activa** console - zie [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md)
-
 
 >[!NOTE]
 >
@@ -65,7 +64,7 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
             * Open het gewenste fragment in de editor
             * Informatie over verwijzingen weergeven
             * Informatie weergeven over taalversies van het fragment
-      * Als u de muisaanwijzer op de kolomkoppen gebruikt, worden een vervolgkeuzelijst met handelingen en schuifregelaars voor de breedte weergegeven. Met deze opties kunt u:
+      * Door muis-over op de kolomkopballen te gebruiken, worden een drop-down actieselector, en breedteschuiven, getoond. Hiermee kunt u het volgende doen:
          * Sorteren - selecteer de gewenste actie voor oplopend of aflopend. De volledige tabel wordt op basis van die kolom gesorteerd. Sorteren is alleen beschikbaar voor de desbetreffende kolommen.
          * De grootte van de kolom wijzigen - met de actie of de breedtegraadregelaars
 
@@ -86,13 +85,12 @@ Bepaalde acties zijn beschikbaar via de console, zonder een specifiek inhoudsfra
 * [De tabelweergave aanpassen om geselecteerde kolommen met informatie weer te geven](#select-available-columns)
 * Gebruiken **Openen in elementen** om de huidige locatie rechtstreeks te openen in het dialoogvenster **Activa** console
 
-   >[!NOTE]
-   >
-   >De **Activa** wordt gebruikt om toegang te krijgen tot elementen, zoals afbeeldingen, video&#39;s, enz.  Deze console is toegankelijk:
-   >
-   >* met de **Openen in elementen** koppeling (in de console Inhoudsfragmenten)
-   >* rechtstreeks vanuit het globale navigatievenster
-
+  >[!NOTE]
+  >
+  >De **Activa** wordt gebruikt om toegang te krijgen tot elementen, zoals afbeeldingen, video&#39;s, enz.  Deze console is toegankelijk:
+  >
+  >* met de **Openen in elementen** koppeling (in de console Inhoudsfragmenten)
+  >* rechtstreeks vanuit het globale navigatievenster
 
 ### Handelingen voor een (geselecteerd) inhoudsfragment {#actions-selected-content-fragment}
 
@@ -141,17 +139,17 @@ Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 
    * Verstrekt een verbinding die een dialoog opent die van alle ouderverwijzingen van dat fragment een lijst maakt; inclusief verwijzen naar inhoudsfragmenten, ervaringsfragmenten en pagina&#39;s. Als u een specifieke verwijzing wilt openen, klikt u op de knop **Titel** in het dialoogvenster.
 
-      ![Content Fragments console - References dialog](assets/cfc-console-references-dialog.png)
+     ![Content Fragments console - References dialog](assets/cfc-console-references-dialog.png)
 
 * **Taal**
 
    * Geeft de landinstelling van het inhoudsfragment aan, samen met het totale aantal landinstellingen/taalkopieën dat aan het inhoudsfragment is gekoppeld.
 
-      ![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
+     ![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
 
       * Klik/tik op de telling om een dialoog te openen die alle taalexemplaren toont. Als u een specifieke taalkopie wilt openen, klikt u op de knop **Titel** in het dialoogvenster.
 
-         ![Content Fragments console - Language dialog](assets/cfc-console-languages-dialog.png)
+        ![Content Fragments console - Language dialog](assets/cfc-console-languages-dialog.png)
 
 ## Beschikbare kolommen selecteren {#select-available-columns}
 
@@ -185,7 +183,7 @@ Selecteer bijvoorbeeld **Gepubliceerd** in de **Status** kolom:
 
 ![Content Fragments console - Filteren](assets/cfc-console-fast-filter-01.png)
 
-Wanneer deze optie is geselecteerd, wordt deze weergegeven als een filtervoorspelling en wordt de lijst dienovereenkomstig gefilterd:
+Na de selectie wordt de voorspelling weergegeven als een filtervoorspelling en wordt de lijst dienovereenkomstig gefilterd:
 
 ![Content Fragments console - Filteren](assets/cfc-console-fast-filter-02.png)
 

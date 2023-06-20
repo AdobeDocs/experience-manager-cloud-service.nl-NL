@@ -4,9 +4,9 @@ description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM ku
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: d3194e646b326009dc204838ac74fc880952f286
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4086'
+source-wordcount: '4085'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Met vertaalprojecten kunt u de vertaling van AEM inhoud beheren. Een vertaalproj
 
 >[!TIP]
 >
->Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md) Dit is een geleid pad door uw AEM Sites-inhoud te vertalen met de krachtige vertaalgereedschappen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
+>Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md) Dit is een geleid pad door uw AEM Sites-inhoud te vertalen met AEM krachtige vertaalhulpmiddelen, ideaal voor mensen zonder AEM of vertaalervaring.
 
 Wanneer middelen aan een vertaalproject worden toegevoegd, wordt een vertaalbaan gecreeerd voor hen. Taken bieden opdrachten en statusinformatie die u gebruikt om de workflows voor het vertalen van mensen en computers die op de bronnen worden uitgevoerd, te beheren.
 
@@ -374,7 +374,7 @@ U kunt ook alle vertaaltaken voor een project starten.
 
 1. In de projectconsole, selecteer het vertaalproject.
 1. Tik of klik op de gereedschapsbalk **Vertaaltaak(en) starten**.
-1. Controleer in het dialoogvenster de lijst met taken die u wilt starten en bevestig vervolgens met **Start** of afbreken met **Annuleren**.
+1. Controleer in het dialoogvenster de lijst met taken die zijn gestart en bevestig vervolgens met **Start** of afbreken met **Annuleren**.
 
 ### Een vertaaltaak annuleren {#canceling-a-translation-job}
 

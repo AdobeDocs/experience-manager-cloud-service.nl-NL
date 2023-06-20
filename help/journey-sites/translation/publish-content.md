@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Uw vertaalde inhoud is nu gepubliceerd! Het kan nu worden betreden en worden ver
 
 >[!TIP]
 >
->U kunt bij het publiceren meerdere items selecteren (dat wil zeggen meerdere taalmappen) om meerdere vertalingen tegelijk te publiceren.
+>U kunt meerdere items selecteren (dat wil zeggen meerdere taalmappen) wanneer u publiceert om meerdere vertalingen tegelijk te publiceren.
 
 Er zijn extra opties wanneer het publiceren van uw inhoud, zoals het plannen van een publicatietijd, die buiten het werkingsgebied van deze reis zijn. Zie de [Aanvullende bronnen](#additional-resources) aan het einde van het document voor meer informatie.
 

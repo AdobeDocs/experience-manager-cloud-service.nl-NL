@@ -2,7 +2,7 @@
 title: as a Cloud Service veelgestelde vragen weergeven
 description: Op deze pagina worden as a Cloud Service veelgestelde vragen over schermen beschreven.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
@@ -43,7 +43,7 @@ De afbeeldingen in de indeling `*.tif` (Bestandsindeling voor tagafbeeldingen) w
 
 ## Wat moet ik doen als een Kanaal in de modus Ontwikkelaar (online) niet wordt weergegeven op AEM Screens Player?{#screens-cloud-online-channel-blank-iframe}
 
-Het wordt aanbevolen om AEM Screens-caching-mogelijkheden te benutten, maar als u uw Channel in de modus Ontwikkelaar moet uitvoeren en de AEM Screens Player een leeg scherm moet weergeven, controleert u de ontwikkelaarsgereedschappen van uw speler en zoekt u naar `X-Frame-Options` of `frame-ancestors` fouten. De resolutie is om de dispatcher te configureren zodat inhoud in iFrames kan worden uitgevoerd. Meestal werkt de volgende configuratie:
+Het wordt aanbevolen om AEM Screens-caching-mogelijkheden te gebruiken, maar als u uw Kanaal in de modus Ontwikkelaar moet uitvoeren en de AEM Screens Player een leeg scherm moet weergeven, controleert u de ontwikkelaarsgereedschappen van uw speler en zoekt u naar `X-Frame-Options` of `frame-ancestors` fouten. De resolutie is om de dispatcher te configureren zodat inhoud in iFrames kan worden uitgevoerd. Meestal werkt de volgende configuratie:
 
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"

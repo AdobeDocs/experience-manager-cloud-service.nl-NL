@@ -2,9 +2,9 @@
 title: GraphQL-query's optimaliseren
 description: Leer hoe u uw GraphQL-query's kunt optimaliseren tijdens het filteren, pagineren en sorteren van uw Content Fragments in Adobe Experience Manager as a Cloud Service voor levering van inhoud zonder kop.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Het past een filter JCR (in de vorm van een vraagbeperking) toe alvorens het res
 
 >[!NOTE]
 >
->Om technische redenen (bijvoorbeeld flexibiliteit, nesten van fragmenten) kan AEM het filteren niet volledig delegeren aan het JCR.
+>Om technische redenen (bijvoorbeeld flexibiliteit, nesten van fragmenten), kan AEM niet het volledige filtreren aan JCR delegeren.
 
 Met deze techniek blijft de flexibiliteit behouden die GraphQL-filters bieden, terwijl tegelijkertijd zoveel mogelijk filters worden gedelegeerd aan JCR.
 
@@ -49,20 +49,19 @@ Met deze techniek blijft de flexibiliteit behouden die GraphQL-filters bieden, t
 GraphQL in AEM biedt ondersteuning voor twee typen paginering:
 
 * [paginering op basis van limiet/verschuiving](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-Dit wordt gebruikt voor lijstvragen; met 
-`List`; bijvoorbeeld: `articleList`.
+Dit wordt gebruikt voor lijstvragen; met `List`; bijvoorbeeld: `articleList`.
 Als u dit wilt gebruiken, moet u de positie opgeven van het eerste item dat moet worden geretourneerd (de `offset`) en het aantal objecten dat moet worden geretourneerd (de `limit`, of paginaformaat).
 
 * [cursorpaginering](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (vertegenwoordiger `first`en `after`) Dit levert een unieke id voor elk object; wordt ook wel de cursor genoemd.
 In de vraag, specificeert u de curseur van het laatste punt van de vorige pagina, plus de paginagrootte (het maximumaantal punten dat moet worden teruggekeerd).
 
-   Aangezien op curseur-gebaseerde paginering niet binnen de gegevensstructuren van op lijst-gebaseerde vragen past, heeft AEM geïntroduceerd `Paginated` type query; bijvoorbeeld: `articlePaginated`. De gebruikte gegevensstructuren en parameters volgen [GraphQL Cursor ConnectionSpecification](https://relay.dev/graphql/connections.htm).
+  Aangezien op curseur-gebaseerde paginering niet binnen de gegevensstructuren van op lijst-gebaseerde vragen past, heeft AEM geïntroduceerd `Paginated` type query; bijvoorbeeld: `articlePaginated`. De gebruikte gegevensstructuren en parameters volgen [GraphQL Cursor ConnectionSpecification](https://relay.dev/graphql/connections.htm).
 
-   >[!NOTE]
-   >
-   >AEM biedt momenteel ondersteuning voor doorsturen van paginering (met `after`/`first` parameters).
-   >
-   >Achterwaartse paginering (gebruiken `before`/`last` parameters) wordt niet ondersteund.
+  >[!NOTE]
+  >
+  >AEM biedt momenteel ondersteuning voor doorsturen van paginering (met `after`/`first` parameters).
+  >
+  >Achterwaartse paginering (gebruiken `before`/`last` parameters) wordt niet ondersteund.
 
 ## Sorteren {#sorting}
 
@@ -129,7 +128,7 @@ Als u in de eerste plaats in slechts het terugwinnen van de eerste paar pagina&#
 
 ### Logische bewerkingen in filterexpressies {#logical-operations-in-filter-expressions}
 
-Als u filtert op geneste fragmenten, kunt u nog steeds JCR-filters gebruiken door een bijbehorend filter op te geven voor een veld op hoofdniveau dat wordt gecombineerd met het gereedschap `AND` operator.
+Als u filtert op geneste fragmenten, kunt u nog steeds JCR-filtering toepassen door een bijbehorend filter op te geven voor een veld op hoofdniveau dat wordt gecombineerd met het `AND` operator.
 
 Een typisch gebruik-geval zou het werkingsgebied van de vraag moeten beperken gebruikend een filter op `_path` van het fragment op het hoogste niveau en filtert vervolgens op aanvullende velden op het hoogste niveau of op een genest fragment.
 

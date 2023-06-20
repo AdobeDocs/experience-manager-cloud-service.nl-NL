@@ -2,9 +2,9 @@
 title: Aanbiedingen maken en beheren (console Aanbiedingen)
 description: Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen kunt gebruiken
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: c27870c39da80d664f208d658994eec83a19589f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1393'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,6 @@ A **Omzetten in ervaring met fragmentvariatie** en workflow zijn geïmplementeer
 >
 >* De **Aanbiedingen** console is niet meer beschikbaar.
 >* Het doelpictogram in de werkbalkbalk van andere betrokken componenten wordt niet meer weergegeven.
-
 
 1. Open een pagina die de aanbieding voor bewerking bevat.
 

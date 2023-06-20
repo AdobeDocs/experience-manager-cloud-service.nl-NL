@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2308'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Kennis van CSS en het LESS-framework.
 
 ## Wat kan worden aangepast {#what-can-be-customized}
 
-Het artikel bevat een lijst met algemeen beschikbare CSS-klassen van Adaptive Forms. U kunt deze klassen gebruiken om diverse componenten van een adaptief formulier op te maken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze opmaakconstructies alleen om stijlen te maken (met CSS of Minder) wanneer u geen stijl kunt toepassen op componenten die [themaeditor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+Het artikel bevat een lijst met algemeen beschikbare CSS-klassen van Adaptive Forms. Met deze klassen kunt u diverse componenten van een adaptief formulier opmaken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze opmaakconstructies alleen om stijlen te maken (met CSS of Minder) wanneer u geen stijl kunt toepassen op componenten die [themaeditor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Stijlen aanpassen in Adaptive Forms {#customizing-styles-in-adaptive-forms}
 

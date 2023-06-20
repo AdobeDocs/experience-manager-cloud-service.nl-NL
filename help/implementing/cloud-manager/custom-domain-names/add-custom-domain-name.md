@@ -2,9 +2,9 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Leer hoe u een aangepaste domeinnaam kunt toevoegen met Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Dome
    >
    >Niet opnemen `http://`, `https://`of spaties bij het invoeren in uw domein.
 
-1. Selecteer **Omgeving** waarvan de dienst met de domeinnaam zal worden geassocieerd.
+1. Selecteer **Omgeving** waarvan de dienst met de domeinnaam wordt geassocieerd.
 
 1. Selecteer een van de **Publiceren** of **Voorvertoning** service.
 

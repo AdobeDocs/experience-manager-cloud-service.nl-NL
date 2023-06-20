@@ -2,9 +2,9 @@
 title: Uw pijplijn instellen
 description: Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Nu u Cloud Manager hebt benaderd, kunt u een pijplijn voor front-end implementat
    * Zorg ervoor dat de juiste omgeving is geselecteerd onder **In aanmerking komende implementatieomgevingen**.
    * Selecteer de juiste **Bewaarplaats**.
    * Definiëren welke **Git Branch** de pijpleiding moet worden gekoppeld .
-   * Definieer de **Codelocatie** als de front-end ontwikkeling zich onder een bepaald pad in de geselecteerde opslagplaats bevindt. De standaardwaarde is de wortel van de bewaarplaats, maar vaak front-end ontwikkeling en achtereind zullen onder verschillende wegen zijn.
+   * Definieer de **Codelocatie** als de front-end ontwikkeling zich onder een bepaald pad in de geselecteerde opslagplaats bevindt. De standaardwaarde is de wortel van de bewaarplaats, maar vaak front-end ontwikkeling en achtereind zijn onder verschillende wegen.
 
    ![Broncode-info voor het toevoegen van pijpleidingen](assets/add-pipeline-source-code.png)
 

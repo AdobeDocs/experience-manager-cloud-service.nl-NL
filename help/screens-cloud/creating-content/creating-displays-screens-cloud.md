@@ -2,9 +2,9 @@
 title: Weergaven maken en beheren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u weergaven in as a Cloud Service schermen maakt en beheert.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '663'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 Nadat u uw kanaal hebt gepubliceerd, is het nu tijd om uw weergave te maken in de Screens Services Provider.
 
-Een weergave is een virtuele groep schermen die gewoonlijk naast elkaar worden geplaatst. Het beeldscherm is gewoonlijk permanent ten opzichte van een installatie. Dit zijn de objecten inhoudsauteurs waarmee en verwijzen altijd naar logische weergave in plaats van naar hun fysieke tegenonderdelen.
+Een weergave is een virtuele groep schermen die gewoonlijk naast elkaar worden geplaatst. Het beeldscherm is gewoonlijk permanent ten opzichte van een installatie. Deze objectinhoud is de inhoud waarmee auteurs werken en waarnaar altijd wordt verwezen als logische weergave in plaats van hun fysieke tegenonderdelen.
 
 ## Doelstelling {#objective}
 
@@ -128,7 +128,7 @@ Alle mapbewerkingen zijn toegankelijk via de selectieactiebalk in de overzichtsw
 
 1. Selecteer in de overzichtsweergave de gewenste onderliggende map die u wilt verwijderen en zorg ervoor dat deze leeg is.
 
-1. Klik op de knop **Verwijderen** in de actiebalk van de selectie. De handeling wordt uitgeschakeld als de map niet leeg is.
+1. Klikken **Verwijderen** in de actiebalk van de selectie. De handeling is uitgeschakeld als de map niet leeg is.
 
 
 ## Volgende functies {#whats-next}

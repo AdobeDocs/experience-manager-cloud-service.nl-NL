@@ -4,9 +4,9 @@ description: Leer de grondbeginselen van AE; pakketbeheer met Package Manager.
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3782'
 ht-degree: 0%
 
 ---
@@ -280,7 +280,7 @@ Een pakket wordt vaak op hetzelfde moment als u gemaakt [Maak het pakket](#creat
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
-1. Klikken **Opbouwen**. Er wordt een dialoogvenster weergegeven waarin u moet bevestigen dat u het pakket wilt maken, aangezien bestaande pakketinhoud wordt overschreven.
+1. Klikken **Opbouwen**. Er wordt een dialoogvenster weergegeven waarin u moet bevestigen dat u het pakket wilt maken, omdat bestaande pakketinhoud wordt overschreven.
 
 1. Klikken **OK**. AEM bouwt het pakket en geeft alle inhoud weer die aan het pakket is toegevoegd, zoals dit gebeurt in de lijst met activiteiten. Na voltooiing AEM wordt bevestigd dat het pakket is gemaakt en (wanneer u het dialoogvenster sluit) worden de gegevens in de pakketlijst bijgewerkt.
 
@@ -445,7 +445,7 @@ U kunt dit probleem oplossen door het bestand met de overlay in `/apps` moet de 
 
 **Wat wordt gecontroleerd**
 
-Deze bevestiging controleert welke toestemmingen worden toegevoegd, hoe zij zullen worden behandeld (samenvoegen/vervangen), en als de huidige toestemmingen zullen worden beïnvloed.
+Deze bevestiging controleert welke toestemmingen worden toegevoegd, hoe zij (fusie/vervanging) worden behandeld, en als de huidige toestemmingen worden beïnvloed.
 
 **Hoe het is gemeld**
 
@@ -453,7 +453,7 @@ De toestemmingen worden beschreven in het Logboek van de Activiteit van de Manag
 
 **Foutstatussen**
 
-Er kunnen geen expliciete fouten worden opgegeven. De bevestiging wijst eenvoudig erop of om het even welke nieuwe ACL toestemmingen zullen worden toegevoegd of beïnvloed door het pakket te installeren.
+Er kunnen geen expliciete fouten worden opgegeven. De bevestiging wijst eenvoudig erop of om het even welke nieuwe ACL toestemmingen worden toegevoegd of beïnvloed door het pakket te installeren.
 
 **Foutresolutie**
 
@@ -528,7 +528,7 @@ Wanneer u een pakket uploadt, wordt alleen de pakketinhoud aan de opslagplaats t
 >
 >Wanneer u een pakket installeert, kan bestaande inhoud worden overschreven of verwijderd. Upload een pakket alleen als u zeker weet dat de benodigde inhoud niet wordt verwijderd of overschreven.
 
-Voordat u het pakket installeert, maakt Package Manager automatisch een pakket met momentopnamen dat de inhoud bevat die wordt overschreven. Deze momentopname wordt opnieuw geïnstalleerd als u het pakket verwijdert.
+Voordat u het pakket installeert, maakt Package Manager automatisch een pakket met momentopnamen dat de overschreven inhoud bevat. Deze momentopname wordt opnieuw geïnstalleerd als u uw pakket verwijdert.
 
 1. [Access Package Manager.](#accessing)
 

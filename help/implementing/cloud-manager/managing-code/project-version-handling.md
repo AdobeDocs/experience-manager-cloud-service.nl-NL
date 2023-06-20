@@ -2,10 +2,10 @@
 title: Maven-projectversiebeheer
 description: Voor implementatie van AEM as a Cloud Service in fasen en productie genereert Cloud Manager een unieke, incrementele versie.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
-source-git-commit: 21607fadf33dac038c7f794b933b92f60b8e20a9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 2%
+source-wordcount: '266'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ Als de oorspronkelijke projectversie aan bepaalde criteria voldoet, voegt de bij
 >
 >Deze oorspronkelijke versie van het project moet statisch worden ingesteld in het dialoogvenster `<version>` element van het hoogste niveau `pom.xml` bestand in de vertakking van de it-opslagplaats.
 
-Als de originele versie aan deze criteria voldoet, dan zal de geproduceerde versie aan de originele versie als nieuw versiesegment worden toegevoegd. De gegenereerde versie wordt ook enigszins aangepast, zodat de versie correct wordt gesorteerd en verwerkt. Bijvoorbeeld, veronderstellend een geproduceerde versie van `2019.926.121356.0000020490` zou de volgende resultaten opleveren.
+Als de originele versie aan deze criteria voldoet, dan wordt de geproduceerde versie toegevoegd aan de originele versie als nieuw versiesegment. De gegenereerde versie wordt ook enigszins aangepast, zodat de versie correct wordt gesorteerd en verwerkt. Bijvoorbeeld, veronderstellend een geproduceerde versie van `2019.926.121356.0000020490` zou de volgende resultaten opleveren.
 
 | Versie | Versie in `pom.xml` | Opmerking |
 |---|---|---|

@@ -2,9 +2,9 @@
 title: CRXDE Lite gebruiken
 description: CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor u om toegang te krijgen tot en wijzigingen aan te brengen in de opslagruimte in uw lokale ontwikkelomgevingen in de browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Met het structuurnavigatiefilter (het binoculars-pictogram) kunt u de knooppunte
 
 ### Venster bewerken {#edit-pane}
 
-De **Venster bewerken** Hiermee kunt u de inhoud van het geselecteerde bestand weergeven in de opslagplaats. Elk geopend bestand wordt in het deelvenster weergegeven als een eigen tabblad.
+De **Venster bewerken** Hiermee kunt u de inhoud van het geselecteerde bestand in de opslagplaats bekijken. Elk geopend bestand wordt in het deelvenster weergegeven als een eigen tabblad.
 
 De **Home** kunt u zoeken in inhoud en/of documentatie en toegang krijgen tot de documentatie van de ontwikkelaar en tot de steun van de Adobe.
 
@@ -88,6 +88,7 @@ De machtigingen zijn onderverdeeld in de volgende categorieën.
 * **Effectief beleid voor toegangscontrole** - Het huidige beleid dat wordt toegepast voor de huidige selectie, die lokaal kan worden ingesteld of kan worden overgeërfd van bovenliggende knooppunten
 
 >[!NOTE]
+>
 Om toegangsbeheerinformatie te kunnen zien, moet de gebruiker het programma opent aan CRXDE Lite rechten hebben om ACL ingangen te lezen.
 
 ### Tabblad Replicatie {#replication-tab}
@@ -108,7 +109,7 @@ De **Knop Vernieuwen** Hiermee vernieuwt u de huidige selectie. Wijzigingen van 
 
 ### Alle knoppen opslaan {#save-all-button}
 
-De **Alle knoppen opslaan** Hiermee slaat u alle aangebrachte wijzigingen op. Tot u verkiest om te bewaren, zijn de veranderingen tijdelijk, en zullen verloren gaan wanneer u de console weggaat.
+De **Alle knoppen opslaan** Hiermee slaat u alle aangebrachte wijzigingen op. Tot u verkiest om te bewaren, zijn de veranderingen tijdelijk, en verloren wanneer u de console weggaat.
 
 * **Vorige versie** - Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in het geselecteerde knooppunt sinds de laatste opslaghandeling en wordt vervolgens de huidige status van de opslagplaats voor het geselecteerde knooppunt opnieuw geladen
 * **Alles herstellen** - Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in de gehele opslagplaats sinds de laatste opslaghandeling, en wordt vervolgens de huidige status van de opslagplaats opnieuw geladen
@@ -188,7 +189,9 @@ Een knooppunt maken met CRXDE Lite:
 U kunt het knooppunt nu aan uw behoeften aanpassen door eigenschappen te wijzigen of nieuwe knooppunten te maken.
 
 >[!NOTE]
+>
 De meeste bewerkingen, inclusief **Knooppunt maken**, houdt alle wijzigingen in het geheugen bij en slaat deze alleen op in de opslagplaats wanneer deze worden opgeslagen (met behulp van de [**Alle knoppen opslaan**](#save-all-button)). Sommige bewerkingen, zoals verplaatsen, worden echter automatisch voortgezet.
+>
 De validatie met betrekking tot het al dan niet toestaan van het nieuwe knooppunt door het knooppunttype van het bovenliggende knooppunt wordt ook uitgevoerd door de gegevensopslagruimte wanneer wijzigingen worden opgeslagen. Als u een foutbericht ontvangt tijdens het opslaan van een knooppunt, moet u controleren of de inhoudsstructuur geldig is (u kunt bijvoorbeeld geen `nt:unstructured` knooppunt als onderliggend element van `nt:folder` knooppunt).
 
 ## Een eigenschap maken {#creating-a-property}
@@ -222,7 +225,7 @@ Een definitie van een knooptype exporteren in CRXDE Lite:
 1. Open CRXDE Lite in uw browser.
 1. Selecteer het vereiste knooppunt.
 1. Selecteren **Gereedschappen** dan **Notitietype exporteren**.
-1. De definitie wordt in de CND-notatie weergegeven op een nieuw tabblad in uw browser.
+1. De definitie wordt weergegeven in CND-notatie op een nieuw tabblad in uw browser.
 1. Sla de gegevens indien nodig op.
 
 Een definitie van het knooppunttype importeren:

@@ -2,9 +2,9 @@
 title: Functionele Java-tests
 description: Leer hoe u functioneel Java-tests schrijft voor AEM as a Cloud Service
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: cda1f51c89a98cfb75d63f8bd9b54e76ee745aa7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -130,11 +130,11 @@ De systeemeigenschappen zijn als volgt.
 | `sling.it.instance.url.1` | moet worden ingesteld op de URL van de auteur | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | de runmode van de eerste instantie moet worden ingesteld op `author` | `author` |
 | `sling.it.instance.adminUser.1` | moet worden ingesteld op de scriptgebruiker. | `admin` |
-| `sling.it.instance.adminPassword.1` | moet worden ingesteld op het beheerderswachtwoord van de auteur. |  |
+| `sling.it.instance.adminPassword.1` | moet worden ingesteld op het beheerderswachtwoord van de auteur. |                         |
 | `sling.it.instance.url.2` | moet worden ingesteld op de publicatie-URL | `http://localhost:4503` |
 | `sling.it.instance.runmode.2` | de runmode van de tweede instantie moet worden ingesteld op `publish` | `publish` |
 | `sling.it.instance.adminUser.2` | moet worden ingesteld op de gebruiker van de publicatiebeheerder. | `admin` |
-| `sling.it.instance.adminPassword.2` | moet worden ingesteld op het wachtwoord voor publicatiebeheer. |  |
+| `sling.it.instance.adminPassword.2` | moet worden ingesteld op het wachtwoord voor publicatiebeheer. |                         |
 
 
 

@@ -4,9 +4,9 @@ description: Leer hoe u problemen met de uitrol van meerdere sitebeheer kunt beh
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Wanneer conflicterende pagina&#39;s wel bestaan (in de vertakkingen Bladeren en 
 Om ervoor te zorgen dat de rollout niet wordt geblokkeerd, kunnen mogelijke definities omvatten:
 
 * Welke pagina (blauwdruk of Live kopie) prioriteit krijgt tijdens de rollout
-* Welke pagina&#39;s worden hernoemd (en hoe)
+* Welke pagina&#39;s worden hernoemd en hoe
 * Hoe dit effect heeft op gepubliceerde inhoud
 
 Het standaardgedrag van AEM out-of-the-box is dat gepubliceerde inhoud niet wordt beïnvloed. Dus als een pagina die handmatig is gemaakt in de vertakking Live kopie is gepubliceerd, wordt die inhoud nog steeds gepubliceerd na de conflictafhandeling en -rollout.
@@ -35,11 +35,11 @@ In de volgende secties gebruiken we het voorbeeld van een nieuwe pagina `b`, die
 
 * blauwdruk: `/b`
 
-   Een master pagina met 1 onderliggende pagina, `bp-level-1`
+  Een master pagina met 1 onderliggende pagina, `bp-level-1`
 
 * Live kopie: `/b`
 
-   Een pagina die handmatig is gemaakt in de vertakking Live kopie met 1 onderliggende pagina, `lc-level-1`
+  Een pagina die handmatig is gemaakt in de vertakking Live kopie met 1 onderliggende pagina, `lc-level-1`
 
    * Geactiveerd bij publiceren als `/b`, samen met de onderliggende pagina
 
@@ -83,13 +83,13 @@ Deze conflicthandler geeft voorrang aan de blauwdruk. Voorbeeld: de pagina Live 
 
 * Live kopie: `/b`
 
-   Wordt verplaatst binnen de live kopie naar `/b_msm_moved`. Dit fungeert als back-up en zorgt ervoor dat er geen inhoud verloren gaat.
+  Wordt verplaatst binnen de live kopie naar `/b_msm_moved`. Dit fungeert als back-up en zorgt ervoor dat er geen inhoud verloren gaat.
 
    * `lc-level-1` wordt niet verplaatst.
 
 * Blauwdruk: `/b`
 
-   Is uitgevouwen naar de pagina Live kopie `/b`.
+  Is uitgevouwen naar de pagina Live kopie `/b`.
 
    * `bp-level-1` wordt uitgerold naar de live kopie.
 
@@ -127,11 +127,11 @@ In dit geval heeft Live Copy voorrang. De blauwdrukpagina `/b` wordt niet gekopi
 
 * Blauwdruk: `/b`
 
-   Wordt helemaal niet gekopieerd, maar wordt genegeerd.
+  Wordt helemaal niet gekopieerd, maar wordt genegeerd.
 
 * Live kopie: `/b`
 
-   Dat blijft zo.
+  Dat blijft zo.
 
 #### Na rollout {#after-rollout-no-conflict}
 

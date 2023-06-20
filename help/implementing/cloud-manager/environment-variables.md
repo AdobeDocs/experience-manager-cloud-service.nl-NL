@@ -2,9 +2,9 @@
 title: Omgevingsvariabelen van Cloud Manager
 description: De standaardmilieuvariabelen kunnen via de Manager van de Wolk worden gevormd en worden beheerd en aan het runtime milieu worden verstrekt, dat in configuratie OSGi moet worden gebruikt.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ De meest gangbare gebruiksgevallen voor het gebruik van omgevingsvariabelen zijn
 
 1. Selecteren **Opslaan** om de variabelen te behouden.
 
-Een indicator met de status **Bijwerken** wordt getoond bij de bovenkant van de lijst en naast de onlangs toegevoegde variabele om erop te wijzen dat het milieu met de configuratie wordt bijgewerkt. Wanneer de bewerking is voltooid, is de nieuwe omgevingsvariabele zichtbaar in de tabel.
+Een indicator met de status **Bijwerken** wordt getoond bij de bovenkant van de lijst en naast de onlangs toegevoegde variabele om erop te wijzen dat het milieu met de configuratie wordt bijgewerkt. Na voltooiing, is de nieuwe milieuvariabele zichtbaar in de lijst.
 
 ![Variabelen bijwerken](assets/updating-variables.png)
 
@@ -90,7 +90,7 @@ Nadat u omgevingsvariabelen hebt gemaakt, kunt u deze bijwerken met de opdracht 
 
 1. Nadat u alle vereiste configuratiewijzigingen hebt aangebracht, selecteert u **Opslaan**.
 
-[Zoals bij het toevoegen van variabelen](#add-variables) een indicator met de status **Bijwerken** boven aan de tabel en naast de nieuw bijgewerkte variabele(n) wordt weergegeven dat de omgeving wordt bijgewerkt met de configuratie. Na voltooiing zullen de bijgewerkte omgevingsvariabelen zichtbaar zijn in de tabel.
+[Zoals bij het toevoegen van variabelen](#add-variables) een indicator met de status **Bijwerken** boven aan de tabel en naast de nieuw bijgewerkte variabele(n) wordt weergegeven dat de omgeving wordt bijgewerkt met de configuratie. Na voltooiing, zijn de bijgewerkte milieuvariabelen zichtbaar in de lijst.
 
 >[!TIP]
 >

@@ -4,16 +4,16 @@ description: Leer hoe u Actieve kopieën maakt en synchroniseert om uw inhoud op
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4322'
+source-wordcount: '4308'
 ht-degree: 0%
 
 ---
 
 # Actieve kopieën maken en synchroniseren {#creating-and-synchronizing-live-copies}
 
-U kunt een Live kopie maken van een pagina of configuratie van een blauwdruk om die inhoud op uw site opnieuw te gebruiken. Overerving en synchronisatie beheren, kunt u bepalen hoe wijzigingen in de inhoud worden doorgegeven.
+U kunt een live kopie maken van een pagina of een blauwdrukconfiguratie om die inhoud op uw site opnieuw te gebruiken. Overerving en synchronisatie beheren, kunt u bepalen hoe wijzigingen in de inhoud worden doorgegeven.
 
 ## Browserconfiguraties beheren {#managing-blueprint-configurations}
 
@@ -101,7 +101,7 @@ U kunt een actieve kopie van elke pagina maken:
 
 Het enige verschil is dat de beschikbaarheid van de **Uitrol** bevel op de bron/blauwdruk pagina&#39;s is afhankelijk van of de bron door een blauwdrukconfiguratie van verwijzingen wordt voorzien:
 
-* Als u de live kopie maakt op basis van een bronpagina die **is** die in een blauwdrukconfiguratie van verwijzingen worden voorzien, dan zal het bevel van de Uitvoer op de bron/blauwdruk pagina(s) beschikbaar zijn.
+* Als u de live kopie maakt op basis van een bronpagina die **is** die in een blauwdrukconfiguratie van verwijzingen worden voorzien, dan is het bevel van de Uitvoer beschikbaar op de bron/blauwdruk pagina(s).
 * Als u de live kopie maakt op basis van een bronpagina die **is niet** waarnaar in een blauwdrukconfiguratie wordt verwezen, is de opdracht Uitvoeren niet beschikbaar op de pagina(&#39;s) van de bron/blauwdruk.
 
 Een actieve kopie maken:
@@ -256,17 +256,17 @@ Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op 
 
    ![Uitvoeren van blauwdruk van referentieslep](../assets/rollout-blueprint-from-references.png)
 
-1. U wordt gevraagd de details van de rollout te bevestigen:
+1. U wordt gevraagd de details van de uitrol te bevestigen:
 
    * **Uitrolbereik**:
 
-      Geef op of het bereik alleen voor de geselecteerde pagina is of dat subpagina&#39;s moeten worden opgenomen.
+     Geef op of het bereik alleen voor de geselecteerde pagina is of dat subpagina&#39;s moeten worden opgenomen.
 
    * **Schema**:
 
-      Opgeven of de rollout-taak onmiddellijk moet worden uitgevoerd (**Nu**) of op een latere datum of tijd (**Later**).
+     Opgeven of de rollout-taak onmiddellijk moet worden uitgevoerd (**Nu**) of op een latere datum of tijd (**Later**).
 
-      ![Implementatiebereik en -schema definiëren](../assets/rollout-scope-schedule.png)
+     ![Implementatiebereik en -schema definiëren](../assets/rollout-scope-schedule.png)
 
 1. Nadat u deze details hebt bevestigd, selecteert u **Uitrol** om de handeling uit te voeren.
 
@@ -309,7 +309,7 @@ Synchroniseer een actieve kopie om wijzigingen van de bron naar de actieve kopie
 
    ![Knop Synchroniseren](../assets/synchronize.png)
 
-   Bevestiging wordt aangevraagd, gebruik **Synchroniseren** om verder te gaan.
+   Bevestiging is aangevraagd, gebruik **Synchroniseren** om verder te gaan.
 
 #### Een actieve kopie synchroniseren vanuit het overzicht Live kopie {#synchronize-a-live-copy-from-the-live-copy-overview}
 
@@ -335,7 +335,7 @@ Als u inhoud van Live kopie wilt wijzigen, kunt u:
 >
 >Als u handmatig een nieuwe pagina maakt in Live Copy, is de nieuwe pagina lokaal bij Live kopie. Dit betekent dat de pagina geen bijbehorende bronpagina heeft waaraan de pagina is gekoppeld.
 >
->Als beste praktijken om een lokale pagina tot stand te brengen die deel van de verhouding uitmaakt, moet de lokale pagina in de bron tot stand brengen en een diepe uitrol uitvoeren. Hiermee wordt de pagina lokaal gemaakt als Live kopieën.
+>Als beste praktijken zodat kunt u een lokale pagina tot stand brengen die deel van de verhouding uitmaakt is de lokale pagina in de bron tot stand te brengen en een diep uitzettingsproces uit te voeren. Hiermee wordt de pagina lokaal gemaakt als Live kopieën.
 
 >[!NOTE]
 >
@@ -403,7 +403,7 @@ Wanneer u overerving weer inschakelt, wordt de pagina niet automatisch gesynchro
 
 * In de **Hervatten**/**Vorige versie** dialoog; bijvoorbeeld:
 
-   ![Hervatten en synchroniseren](../assets/resume-and-synch.png)
+  ![Hervatten en synchroniseren](../assets/resume-and-synch.png)
 
 * In een later stadium, door de synchronisatieactie manueel te selecteren.
 
@@ -423,7 +423,7 @@ Als deze optie is geselecteerd, wordt het dialoogvenster weergegeven. U kunt des
 
 De [Handeling voor hervatten is ook beschikbaar via het Live Copy-overzicht](live-copy-overview.md#using-the-live-copy-overview), wanneer u een pagina voor live kopiëren hebt geselecteerd.
 
-1. Open de [Overzicht van live kopiëren](live-copy-overview.md#using-the-live-copy-overview) en selecteer een Live Copy-pagina die is opgeschort. De pagina wordt weergegeven als **OVERERVING GEANNULEERD**.
+1. Open de [Overzicht van live kopiëren](live-copy-overview.md#using-the-live-copy-overview) en selecteer een geschorste Live Copy-pagina. De pagina wordt weergegeven als **OVERERVING GEANNULEERD**.
 1. Selecteren **Hervatten** op de werkbalk.
 1. Geef aan of u de pagina wilt synchroniseren nadat u de overerving hebt omgekeerd. Bevestig vervolgens de optie **Hervatten** in de **Live kopie hervatten** .
 
@@ -498,7 +498,7 @@ Als u overerving voor een component wilt inschakelen, klikt of tikt u op de knop
 Als een live kopie componenten bevat die deel uitmaken van een alineasysteem, gelden voor de overerving van dat alineasysteem de volgende regels:
 
 * De volgorde van componenten in een overgeërfd alineasysteem kan worden gewijzigd, zelfs als overerving is ingesteld.
-* Bij rollout wordt de volgorde van de componenten hersteld op basis van de blauwdruk. Als nieuwe componenten vóór de rollout aan Live Copy zijn toegevoegd, worden deze samen met de componenten opnieuw geordend waarboven ze zijn toegevoegd.
+* Bij rollout wordt de volgorde van de componenten hersteld op basis van de blauwdruk. Als nieuwe componenten vóór de rollout aan Live Copy zijn toegevoegd, worden ze samen met de componenten opnieuw geordend waarboven ze zijn toegevoegd.
 * Als de overerving van het alineasysteem wordt geannuleerd, wordt de volgorde van componenten niet hersteld bij de rollout en blijft deze in de Live Copy ongewijzigd.
 
 >[!NOTE]
@@ -544,7 +544,7 @@ Als u overerving voor een eigenschap wilt inschakelen, klikt of tikt u op de kno
 
 ### Live Copy-pagina opnieuw instellen {#resetting-a-live-copy-page}
 
-U kunt een pagina van Actieve kopie opnieuw instellen om:
+U kunt een pagina van Live kopie opnieuw instellen voor het volgende:
 
 * Alle annuleringen van overerving verwijderen en
 * Hiermee keert u de pagina terug naar hetzelfde frame als de bronpagina.
@@ -608,27 +608,28 @@ Er zijn implicaties voor waar binnen de boom die u gebruikt **Loskoppelen**:
 
 * **Koppelen op een basispagina van een actieve kopie**
 
-   Wanneer deze bewerking wordt uitgevoerd op de hoofdpagina van een live kopie, wordt de live relatie tussen alle pagina&#39;s van de blauwdruk en de bijbehorende actieve kopie verwijderd.
+  Wanneer deze bewerking wordt uitgevoerd op de hoofdpagina van een live kopie, wordt de live relatie tussen alle pagina&#39;s van de blauwdruk en de bijbehorende actieve kopie verwijderd.
 
-   Meer wijzigingen in de pagina&#39;s van de blauwdruk **niet** heeft invloed op Live kopie.
+  Meer wijzigingen in de pagina&#39;s van de blauwdruk **niet** heeft invloed op Live kopie.
 
 * **Koppelen op een subpagina van een actieve kopie**
 
-   Wanneer deze bewerking wordt uitgevoerd op een subpagina (of vertakking) in een actieve kopie:
+  Wanneer deze bewerking wordt uitgevoerd op een subpagina (of vertakking) in een actieve kopie:
 
    * De live relatie wordt verwijderd voor die subpagina (of vertakking) en
    * De (sub)pagina&#39;s in de Levende tak van het Exemplaar worden behandeld alsof zij manueel waren gecreeerd.
 
-   De subpagina&#39;s zijn echter nog steeds onderhevig aan de live relatie van de bovenliggende vertakking, zodat een verdere uitrol van de blauwdrukpagina(&#39;s) beide:
+  De subpagina&#39;s zijn echter nog steeds onderhevig aan de live relatie van de bovenliggende vertakking, zodat een verdere uitrol van de blauwdrukpagina(&#39;s) beide:
 
    1. Wijzig de naam van de losgekoppelde pagina(&#39;s):
 
       * Dit komt omdat MSM deze pagina&#39;s beschouwt als handmatig gemaakte pagina&#39;s die een conflict veroorzaken omdat ze dezelfde naam hebben als de pagina&#39;s van Live Copy die ze proberen te maken.
+
    1. Maak een nieuwe Live Copy-pagina met de oorspronkelijke naam die de wijzigingen bevat die u tijdens de rollout hebt aangebracht.
 
-   >[!NOTE]
-   >
-   >Zie [Conflicten MSM-rollout](rollout-conflicts.md) voor nadere bijzonderheden over dergelijke situaties.
+  >[!NOTE]
+  >
+  >Zie [Conflicten MSM-rollout](rollout-conflicts.md) voor nadere bijzonderheden over dergelijke situaties.
 
 ### Een actieve pagina voor kopiëren loskoppelen van de pagina-eigenschappen {#detach-a-live-copy-page-from-the-page-properties}
 

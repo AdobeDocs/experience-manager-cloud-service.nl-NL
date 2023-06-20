@@ -1,10 +1,10 @@
 ---
 title: SPA
-description: In dit document wordt het algemene, kaderonafhankelijke contract beschreven dat elk SPA kader moet vervullen om bewerkbare SPA binnen AEM te implementeren.
+description: In dit document wordt het algemene, raamonafhankelijke contract beschreven dat door elk SPA framework moet worden uitgevoerd, zodat u bewerkbare SPA binnen AEM kunt implementeren.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2056'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Om de auteur toe te laten om de AEM SPARedacteur te gebruiken om de inhoud van e
 
 ## Inleiding {#introduction}
 
-In dit document wordt het algemene contract beschreven waaraan elk SPA kader moet voldoen (d.w.z. het soort AEM steunlaag) om bewerkbare SPA binnen AEM te implementeren.
+In dit document wordt het algemene contract beschreven dat door elk SPA framework moet worden uitgevoerd (dat wil zeggen, het type AEM supportlaag), zodat u bewerkbare SPA binnen AEM kunt implementeren.
 
 Om de auteur toe te laten om de AEM Redacteur van de Pagina te gebruiken om de gegevens uit te geven die door één enkel kader van de Toepassing van de Pagina worden blootgesteld, moet een project de structuur van het model kunnen interpreteren die de semantische die gegevens vertegenwoordigt voor een toepassing binnen de AEM bewaarplaats worden opgeslagen. Om dit doel te bereiken, worden twee raamwerk-agnostische bibliotheken verstrekt: de `PageModelManager` en de `ComponentMapping`.
 
@@ -67,7 +67,7 @@ De SPA componenten moeten synchroon zijn met het paginamodel en worden bijgewerk
 
 ### Meta-velden {#meta-fields}
 
-Het paginamodel gebruikt de JSON Model Exporter, die zelf gebaseerd is op de [Verkoopmodel](https://sling.apache.org/documentation/bundles/models.html) API. De exporteerbare slingmodellen stellen de volgende lijst van gebieden bloot om de onderliggende bibliotheken toe te laten het gegevensmodel interpreteren:
+Het paginamodel gebruikt de JSON Model Exporter, die zelf gebaseerd is op de [Verkoopmodel](https://sling.apache.org/documentation/bundles/models.html) API. De exporteerbare kiesmodellen geven de volgende lijst met velden weer, zodat de onderliggende bibliotheken het gegevensmodel kunnen interpreteren:
 
 * `:type`: Type van de AEM (gebrek = middeltype)
 * `:children`: Hierarchische onderliggende elementen van de huidige bron. Onderliggende items maken geen deel uit van de binneninhoud van de huidige bron (vindt u bij items die een pagina vertegenwoordigen)
@@ -175,7 +175,6 @@ Bijvoorbeeld:
 >* `"aem-Grid-newComponent"`: Hiermee wordt de component genormaliseerd voor het ontwerpen van de lay-out
 >
 
-
 #### Componenttoewijzing {#component-mapping}
 
 De onderliggende waarde [`Component Mapping`](#componentmapping) bibliotheek en `MapTo` Deze functie kan worden ingekapseld en uitgebreid om de functionaliteit met betrekking tot te verstrekken uitgeeft configuratie die naast de huidige componentenklasse wordt verstrekt.
@@ -204,7 +203,7 @@ In de bovenstaande implementatie wordt de projectcomponent uitgebreid met de leg
 
 ```javascript
 /**
- * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
+ * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data is decorating the associated component
  *
  * @typedef {{}} EditConfig
  * @property {String} [dragDropName]       If defined, adds a specific class name enabling the drag and drop functionality

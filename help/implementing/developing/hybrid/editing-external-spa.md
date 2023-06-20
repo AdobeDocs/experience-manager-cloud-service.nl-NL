@@ -2,9 +2,9 @@
 title: Een externe SPA bewerken in AEM
 description: In dit document worden de aanbevolen stappen beschreven voor het uploaden van een zelfstandige SPA naar een AEM-instantie, het toevoegen van bewerkbare gedeelten van inhoud en het inschakelen van ontwerpen.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2456'
+source-wordcount: '2447'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ De voorwaarden zijn eenvoudig.
 
 * Zorg ervoor dat een instantie van AEM lokaal wordt uitgevoerd.
 * Een basis AEM SPA project maken met [het AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)
-   * Dit zal de basis vormen van het AEM project dat zal worden bijgewerkt met de externe SPA.
+   * Forms de basis van het AEM project dat wordt bijgewerkt om de externe SPA op te nemen.
    * Voor de voorbeelden in dit document gebruiken we het beginpunt van [het WKND-SPA-project.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)
 * Heb de werkende, externe Reactie SPA die u bij hand wilt integreren.
 
@@ -81,7 +81,7 @@ In dit voorbeeld wordt `ModelManager` is geïnitialiseerd en is leeg `ModelStore
 
 ### AEM authorable Leaf Components {#authorable-leaf-components}
 
-1. Maak/identificeer een AEM component waarvoor een authorable React component zal worden gecreeerd. In dit voorbeeld, gebruiken wij de de tekstcomponent van het WKND-project.
+1. Maak/identificeer een AEM component waarvoor een authorable React component wordt gecreeerd. In dit voorbeeld, gebruiken wij de de tekstcomponent van het WKND-project.
 
    ![WKND-tekstcomponent](assets/external-spa-text-component.png)
 
@@ -253,7 +253,7 @@ Er zijn een aantal vereisten om virtuele bladcomponenten en enkele beperkingen t
 * Het paginaknooppunt dat is opgegeven op het pad in `pagePath` moet in het AEM-project bestaan.
 * De naam van het knooppunt dat moet worden gemaakt, moet worden opgegeven in het dialoogvenster `itemPath`.
 * De component kan op elk niveau worden gemaakt.
-   * Als wij een `itemPath='text_20'` in het vorige voorbeeld wordt het nieuwe knooppunt direct onder de pagina gemaakt, dus `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+   * Als wij een `itemPath='text_20'` in het vorige voorbeeld wordt het nieuwe knooppunt direct onder de pagina gemaakt, d.w.z. `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * Het pad naar het knooppunt waar een nieuw knooppunt wordt gemaakt, moet geldig zijn als het wordt opgegeven via `itemPath`.
    * In dit voorbeeld: `root/responsivegrid` moet bestaan zodat de nieuwe knoop `text_20` kan daar worden gecreëerd.
 * Alleen het maken van bladcomponenten wordt ondersteund. Virtuele container en pagina worden in toekomstige versies ondersteund.
@@ -282,13 +282,13 @@ Nadat de auteur een onderliggende component aan de container heeft toegevoegd, w
 
 ![Container met inhoud in JCR](assets/container-with-content-jcr.png)
 
-Meer componenten en inhoud kunnen nu aan de container worden toegevoegd zoals de auteur vereist en de wijzigingen zullen worden voortgezet.
+Meer componenten en inhoud kunnen nu aan de container worden toegevoegd zoals de auteur vereist en de wijzigingen worden voortgezet.
 
 #### Eisen en beperkingen {#container-limitations}
 
 Er zijn een aantal vereisten om virtuele containers en enkele beperkingen toe te voegen.
 
-* Het beleid om te bepalen welke componenten kunnen worden toegevoegd zal van de oudercontainer worden geërft.
+* Het beleid om te bepalen welke componenten kunnen worden toegevoegd wordt geërft van de oudercontainer.
 * Het directe bovenliggende element van de container die moet worden gemaakt, moet al in AEM bestaan.
    * Als de container `root/responsivegrid` bestaat al in de AEM container, dan kan een nieuwe container tot stand worden gebracht door het weg te verstrekken `root/responsivegrid/newContainer`.
    * Niettemin `root/responsivegrid/newContainer/secondNewContainer` is niet mogelijk.
@@ -351,9 +351,8 @@ Om het uitgeven binnen AEM voor dit SPA toe te laten, zijn de volgende stappen v
       * De weg die voor het verpletteren wordt vereist
       * De oorsprong-URL van de AEM instantie waar de SPA wordt bewerkt
       * De projectwortel op AEM zoals bepaald in eerste stap
+
    * Deze waarden kunnen worden ingesteld als omgevingsvariabelen voor meer flexibiliteit.
-
-
 
 1. Verifieer het uitgeven van de pagina in AEM.
 

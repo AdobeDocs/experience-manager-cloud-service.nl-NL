@@ -2,9 +2,9 @@
 title: Registratie, aanmelding en gebruikersprofiel
 description: Meer informatie over registratie, aanmelding, gebruikersgegevens en groepssynchronisatie voor AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1170'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Realtime toegang tot services van derden om profielkenmerken op te halen is moge
 
 ## Machtigingen (gesloten gebruikersgroepen) {#permissions-closed-user-groups}
 
-Beleid voor toegang op de publicatielaag, ook wel &#39;Closed User Group&#39; (CUG&#39;s) genoemd, wordt in de auteur van de AEM gedefinieerd als [hier beschreven](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=en#applying-your-closed-user-group-to-content-pages). Om bepaalde secties of pagina&#39;s van een website van sommige gebruikers te beperken, pas CUGs toe zoals nodig gebruikend de AEM auteur, zoals hier beschreven, en herhaling hen aan de publicatielaag.
+Beleid voor toegang op de publicatielaag, ook wel &#39;Closed User Group&#39; (CUG&#39;s) genoemd, wordt in de auteur van de AEM gedefinieerd als [hier beschreven](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=en#applying-your-closed-user-group-to-content-pages). Als u bepaalde gedeelten of pagina&#39;s van een website van bepaalde gebruikers wilt beperken, past u de CUG&#39;s waar nodig toe met de auteur van de AEM, zoals hier beschreven. U kopieert deze secties of pagina&#39;s vervolgens naar de publicatielijst.
 
 * Als de gebruikers login door met een identiteitsleverancier (IdP) het gebruiken van SAML voor authentiek te verklaren, zal de authentificatiemanager de groepslidmaatschappen van de gebruiker identificeren (die CUGs op publiceren rij zouden moeten aanpassen), en zal de vereniging tussen de gebruiker en de groep door een verslag van de bewaarplaats aanhouden
 * Als login zonder integratie IdP wordt verwezenlijkt, kan de douanecode de zelfde de structuurverhoudingen van de bewaarplaats toepassen.

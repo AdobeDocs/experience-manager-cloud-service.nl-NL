@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4934'
+source-wordcount: '4925'
 ht-degree: 0%
 
 ---
@@ -30,22 +30,21 @@ Door de GraphQL API in AEM te gebruiken, kunt u inhoudsfragmenten efficiënt aan
 >* [AEM Commerce gebruikt gegevens van een Commerce-platform via GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* AEM Content Fragments werken samen met de AEM GraphQL API (een aangepaste implementatie op basis van standaard GraphQL) voor gestructureerde inhoud voor gebruik in uw toepassingen.
 
-
 ## De GraphQL API {#graphql-api}
 
 GraphQL is:
 
 * &quot;*...een querytaal voor API&#39;s en een runtime voor het uitvoeren van deze query&#39;s met uw bestaande gegevens. GraphQL biedt een volledige en begrijpelijke beschrijving van de gegevens in uw API, geeft clients de mogelijkheid om precies te vragen wat ze nodig hebben en niets meer, maakt het gemakkelijker om API&#39;s in de loop der tijd te ontwikkelen en maakt krachtige ontwikkelaarsgereedschappen mogelijk.*&quot;.
 
-   Zie [GraphQL.org](https://graphql.org)
+  Zie [GraphQL.org](https://graphql.org)
 
 * &quot;*...een open specificatie voor een flexibele API-laag. Plaats GraphQL over uw bestaande achtergronden om producten sneller dan ooit te bouwen....*&quot;.
 
-   Zie [GraphQL verkennen](https://www.graphql.com).
+  Zie [GraphQL verkennen](https://www.graphql.com).
 
 * *&quot;...een taal en specificatie voor gegevensquery die in 2012 intern door Facebook zijn ontwikkeld, voordat deze in 2015 openbaar is uitbesteed. Het biedt een alternatief voor op REST gebaseerde architecturen met als doel de productiviteit van ontwikkelaars te verhogen en de hoeveelheden overgedragen gegevens te minimaliseren. GraphQL wordt gebruikt in productie door honderden organisaties van elke omvang...&quot;*
 
-   Zie [GraphQL Foundation](https://foundation.graphql.org/).
+  Zie [GraphQL Foundation](https://foundation.graphql.org/).
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
@@ -125,7 +124,6 @@ Hoewel GraphQL ook GET-aanvragen ondersteunt, kunnen deze limieten bereiken (bij
 >* Een [Omgevingsvariabele Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) gebeld `ENABLE_GRAPHQL_ENDPOINT`
 >* met de waarde `true`
 
-
 >[!NOTE]
 >
 >De capaciteit om directe vragen uit te voeren kan op een bepaald punt in de toekomst worden verouderd.
@@ -201,7 +199,7 @@ Als u bijvoorbeeld:
 
 1. Een pakket installeren met `Content-Fragment-Model-1` en `Content-Fragment-Model-2`:
 
-   1. GraphQL-typen voor `Model-1` en `Model-2` wordt gegenereerd.
+   1. GraphQL-typen voor `Model-1` en `Model-2` worden gegenereerd.
 
 1. Vervolgens wijzigen `Content-Fragment-Model-2`:
 
@@ -233,7 +231,7 @@ Binnen het schema zijn er afzonderlijke velden, van twee basiscategorieën:
 
 * Velden die u genereert.
 
-   Een selectie van [Gegevenstypen](#Data-types) worden gebruikt om velden te maken die zijn gebaseerd op de manier waarop u het inhoudsfragmentmodel configureert. De veldnamen zijn afkomstig uit het **Eigenschapnaam** van het **Gegevenstype** tab.
+  Een selectie van [Gegevenstypen](#Data-types) worden gebruikt om velden te maken die zijn gebaseerd op de manier waarop u het inhoudsfragmentmodel configureert. De veldnamen zijn afkomstig uit het **Eigenschapnaam** van het **Gegevenstype** tab.
 
    * Er is ook **Renderen als** rekening houden met de instelling, aangezien gebruikers bepaalde gegevenstypen kunnen configureren. U kunt bijvoorbeeld een tekstveld bestaande uit een enkele regel zo configureren dat het meerdere tekstregels bevat door `multifield` in de vervolgkeuzelijst.
 
@@ -259,7 +257,7 @@ GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen
 
 ### Helpervelden {#helper-fields}
 
-Naast de gegevenstypen voor door de gebruiker gegenereerde velden, genereert GraphQL for AEM ook een aantal *helper* velden voor het herkennen van een inhoudsfragment of voor het verschaffen van aanvullende informatie over een inhoudsfragment.
+Naast de gegevenstypen voor door de gebruiker gegenereerde velden, genereert GraphQL for AEM ook een aantal *helper* velden voor het herkennen van een inhoudsfragment of voor aanvullende informatie over een inhoudsfragment.
 
 Deze [helpervelden](#helper-fields) zijn gemarkeerd met een voorgaande `_` om onderscheid te maken tussen wat door de gebruiker is gedefinieerd en wat automatisch is gegenereerd.
 
@@ -571,7 +569,7 @@ Met deze functie kunt u de queryresultaten sorteren op een opgegeven veld.
 De sorteercriteria:
 
 * is een door komma&#39;s gescheiden lijst met waarden die het veldpad aangeven
-   * het eerste veld in de lijst definieert de primaire sorteervolgorde, het tweede veld wordt gebruikt wanneer twee waarden van het primaire sorteercriterium gelijk zijn, het derde indien de eerste twee criteria gelijk zijn, enz.
+   * het eerste veld in de lijst definieert de primaire sorteervolgorde, het tweede veld wordt gebruikt als twee waarden van het primaire sorteercriterium gelijk zijn, het derde als de eerste twee criteria gelijk zijn, enz.
    * puntnotatie, d.w.z. veld1.subveld.subveld enz..
 * met een optionele bestelrichting
    * ASC (oplopend) of DESC (aflopend); als standaard-ASC wordt toegepast
@@ -670,7 +668,6 @@ query {
 >
 >* Hoe hoger de verschuiving, des te meer tijd neemt het om de items van de volledige set JCR-queryresultaten over te slaan. Een alternatieve oplossing voor grote resultaatreeksen is de gepagineerde vraag met te gebruiken `first` en `after` methode.
 
-
 ### Gepagineerde query - eerste en volgende {#paginated-first-after}
 
 De `...Paginated` het vraagtype gebruikt het grootste deel van `...List` functies voor querytypen (filteren, sorteren), maar in plaats van `offset`/`limit` argumenten, gebruikt het de `first`/`after` argumenten zoals gedefinieerd door [de GraphQL Cursor Connections Specification](https://relay.dev/graphql/connections.htm). U vindt een minder formele introductie in het dialoogvenster [Inleiding GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
@@ -708,7 +705,6 @@ query {
 >
 >* Vanwege interne technische beperkingen zullen de prestaties afnemen als sorteren en filteren wordt toegepast op geneste velden. Daarom wordt aangeraden filter-/sorteervelden te gebruiken die op hoofdniveau zijn opgeslagen. Dit is ook de geadviseerde manier als u grote gepagineerde resultaatreeksen wilt vragen.
 
-
 ## Webgeoptimaliseerde afbeeldingslevering in GraphQL-query&#39;s {#web-optimized-image-delivery-in-graphql-queries}
 
 Voor Web-geoptimaliseerde afbeeldingslevering kunt u een grafische query gebruiken om:
@@ -717,9 +713,9 @@ Voor Web-geoptimaliseerde afbeeldingslevering kunt u een grafische query gebruik
 
 * Geef parameters door met de query, zodat er automatisch een specifieke uitvoering van de afbeelding wordt gegenereerd en geretourneerd
 
-   >[!NOTE]
-   >
-   >De opgegeven vertoning wordt niet opgeslagen in AEM Assets. De vertoning wordt geproduceerd en in geheim voorgeheugen voor een korte periode gehouden.
+  >[!NOTE]
+  >
+  >De opgegeven vertoning wordt niet opgeslagen in AEM Assets. De vertoning wordt geproduceerd en in geheim voorgeheugen voor een korte periode gehouden.
 
 * De URL retourneren als onderdeel van de JSON-levering
 
@@ -756,7 +752,7 @@ De structuur en syntaxis zijn:
 * `rotation`: een opsomming van alle ondersteunde rotaties: R90, R180, R270
 * `flip`: een opsomming van HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: een geheel getal tussen 1 en 100 dat het percentage van de afbeeldingskwaliteit aangeeft
-* `width`: een geheel getal dat de breedte van de uitvoerafbeelding definieert, maar door de afbeeldingsgenerator wordt genegeerd
+* `width`: een geheel getal dat de breedte van de uitvoerafbeelding definieert, maar dat door de afbeeldingsgenerator wordt genegeerd
 * `preferWebp`: een Booleaanse waarde die aangeeft of de voorkeur wordt gegeven aan een webpagina (de standaardwaarde is false)
 
 De transformatie URL is beschikbaar voor alle vraagtypes: per pad, lijst of gepagineerd.
@@ -888,17 +884,17 @@ Gebruik bijvoorbeeld de volgende URL&#39;s om de vorige voorbeelden (opgeslagen 
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
-      Het antwoord ziet er als volgt uit:
+     Het antwoord ziet er als volgt uit:
 
-      ![Afbeeldingen leveren met behulp van parameters](assets/cfm-graphiql-sample-image-delivery.png "Afbeeldingen leveren met behulp van parameters")
+     ![Afbeeldingen leveren met behulp van parameters](assets/cfm-graphiql-sample-image-delivery.png "Afbeeldingen leveren met behulp van parameters")
 
 * [Meerdere parameters](#dynamic-image-delivery-multiple-specified-parameters); Blijvende query genaamd `dynamic`
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
-      >[!CAUTION]
-      >
-      >De navolgende `;`is verplicht de lijst met parameters zorgvuldig te beëindigen.
+     >[!CAUTION]
+     >
+     >De navolgende `;`is verplicht de lijst met parameters zorgvuldig te beëindigen.
 
 ### Beperkingen van het leveren van afbeeldingen {#image-delivery-limitations}
 
@@ -922,26 +918,26 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
    * toevoegen `List` de modelnaam; bijvoorbeeld:  `cityList`
    * Zie [Voorbeeldquery - Alle informatie over alle steden](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-   U kunt dan:
+  U kunt dan:
 
    * [De resultaten sorteren](#sorting)
 
       * `ASC` : Oplopend
       * `DESC` : Aflopend
+
    * Retourneer een pagina met resultaten met:
 
       * [Een lijstvraag met compensatie en grens](#list-offset-limit)
       * [Een gepagineerde query met eerste en volgende](#paginated-first-after)
+
    * Zie [Voorbeeldquery - Alle informatie over alle steden](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
-
-
-
 
 * Het filter `includeVariations` is opgenomen in de `List` en `Paginated` querytypen.  Als u Variaties in inhoudsfragmenten wilt ophalen in de queryresultaten, voert u de opdracht `includeVariations` filter moet worden ingesteld op `true`.
 
    * Zie [Voorbeeldquery voor meerdere inhoudsfragmenten en de bijbehorende variaties van een bepaald model](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
-   >[!CAUTION]
-   >Het filter `includeVariations` en het door het systeem gegenereerde veld `_variation` kan niet samen in de zelfde vraagdefinitie worden gebruikt.
+
+  >[!CAUTION]
+  >Het filter `includeVariations` en het door het systeem gegenereerde veld `_variation` kan niet samen in de zelfde vraagdefinitie worden gebruikt.
 
 * Als u logische OR wilt gebruiken:
    * gebruiken ` _logOp: OR`
@@ -958,25 +954,31 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
 
       * `_locale` : de taal te onthullen; gebaseerd op Taalbeheer
          * Zie [Voorbeeldquery voor meerdere inhoudsfragmenten van een bepaalde landinstelling](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
+
       * `_metadata` : om metagegevens voor uw fragment weer te geven
          * Zie [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+
       * `_model` : toestaan dat wordt gezocht naar een inhoudsfragmentmodel (pad en titel)
          * Zie [Voorbeeldquery voor een inhoudsfragmentmodel op basis van een model](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
+
       * `_path` : het pad naar het inhoudsfragment in de repository
          * Zie [Voorbeeldquery - één specifiek stedenfragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+
       * `_reference` : verwijzingen zichtbaar te maken; inline-verwijzingen opnemen in de Rich Text Editor
          * Zie [Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
+
       * `_variation` : om specifieke variaties in het inhoudsfragment weer te geven
 
-         >[!NOTE]
-         >
-         >Als de opgegeven variatie niet bestaat voor een inhoudsfragment, wordt de master variatie geretourneerd als standaard (fallback).
+        >[!NOTE]
+        >
+        >Als de opgegeven variatie niet bestaat voor een inhoudsfragment, wordt de master variatie geretourneerd als standaard (fallback).
 
-         >[!CAUTION]
-         >
-         >Het door het systeem gegenereerde veld `_variation` kan niet samen met het filter worden gebruikt `includeVariations`.
+        >[!CAUTION]
+        >
+        >Het door het systeem gegenereerde veld `_variation` kan niet samen met het filter worden gebruikt `includeVariations`.
 
          * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+
    * Voor [levering van afbeelding](#image-delivery):
 
       * `_dynamicUrl`: op de `ImageRef` referentie
@@ -988,6 +990,7 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
          * [Voorbeeldquery voor levering van afbeelding met volledige parameters](#image-delivery-full-parameters)
 
          * [Voorbeeldquery voor beeldlevering met één opgegeven parameter](#image-delivery-single-specified-parameter)
+
    * `_tags` : om de id&#39;s weer te geven van inhoudsfragmenten of variaties die codes bevatten; this is an array of `cq:tags` id&#39;s.
 
       * Zie [Voorbeeldquery - Namen van alle steden die zijn getagd als stadseinden](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
@@ -995,29 +998,21 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
       * Zie [Voorbeeldquery met filtering op _tags-id en exclusief variaties](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
       * Zie [Voorbeeldquery met filteren op _tags-id en inclusief variaties](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
 
-      >[!NOTE]
-      >
-      >Tags kunnen ook worden opgevraagd door de metagegevens van een inhoudsfragment weer te geven.
+     >[!NOTE]
+     >
+     >Tags kunnen ook worden opgevraagd door de metagegevens van een inhoudsfragment weer te geven.
 
    * En bewerkingen:
 
       * `_operator` : specifieke exploitanten toepassen; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Zie [Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot;](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
          * Zie [Voorbeeldquery - Alle avonturen waar de `_path` begint met een bepaald voorvoegsel](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
+
       * `_apply` : specifieke voorwaarden toe te passen; bijvoorbeeld:  `AT_LEAST_ONCE`
          * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
+
       * `_ignoreCase` : om de zaak te negeren bij het vragen
          * Zie [Voorbeeldquery - Alle steden met SAN in naam, ongeacht het geval](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
 
 * GraphQL-union-typen worden ondersteund:
 
@@ -1050,4 +1045,4 @@ AEM is van plan om in de AEM GraphQL API te investeren.*&quot;
 
 ## Zelfstudie - Aan de slag met AEM Headless en GraphQL {#tutorial}
 
-Op zoek naar een praktische zelfstudie? Uitchecken [Aan de slag met AEM Headless en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt ontwikkelen en beschikbaar maken met de GraphQL-API&#39;s van AEM en die door een externe toepassing wordt verbruikt.
+Op zoek naar een praktische zelfstudie? Uitchecken [Aan de slag met AEM Headless en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt ontwikkelen en beschikbaar maken met behulp van AEM GraphQL API&#39;s en die door een externe toepassing wordt verbruikt.

@@ -3,9 +3,9 @@ title: Aanbevolen werkwijzen voor query en indexering
 description: Leer hoe u indexen en query's optimaliseert op basis van de richtlijnen voor aanbevolen Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1558'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Aangezien de vragen één van de meer het belasten verrichtingen op een AEM syst
 
 ### Doorlopende knooppunten {#traversing-nodes}
 
-Als de gegevensopslagplaats op een dergelijke manier wordt ontworpen dat vroegere kennis van de plaats van de vereiste gegevens toestaat, kan de code die deze gegevens van de noodzakelijke wegen terugwint worden opgesteld zonder het moeten vragen in werking stellen om het te vinden.
+Als de opslagplaats op een manier wordt ontworpen die vroegere kennis van de plaats van de vereiste gegevens toestaat, kan de code die deze gegevens van de noodzakelijke wegen terugwint worden opgesteld zonder het moeten vragen in werking stellen om het te vinden.
 
 Een voorbeeld hiervan is het renderen van inhoud die binnen een bepaalde categorie past. Een manier is om de inhoud te ordenen met een categorie-eigenschap die kan worden gevraagd om een component te vullen die items in een categorie weergeeft.
 
@@ -77,7 +77,7 @@ Dit diagram illustreert de algemene stroom om het Hulpmiddel van de Prestaties v
 
 Elke vraag zou een index moeten gebruiken om optimale prestaties te leveren. In de meeste gevallen, zouden de bestaande out-of-box indexen moeten voldoende zijn om vragen te behandelen.
 
-Soms moeten aangepaste eigenschappen worden toegevoegd aan een bestaande index, zodat aanvullende beperkingen kunnen worden gevraagd met de index. Zie het document [Inhoud zoeken en indexeren](/help/operations/indexing.md#changing-an-index) voor meer informatie . De [JCR-query-controle](#jcr-query-cheatsheet) in dit document wordt beschreven hoe een eigenschapdefinitie op een index eruit moet zien om een specifiek querytype te ondersteunen.
+Soms moeten aangepaste eigenschappen worden toegevoegd aan een bestaande index, zodat aanvullende beperkingen kunnen worden gevraagd met de index. Zie het document [Inhoud zoeken en indexeren](/help/operations/indexing.md#changing-an-index) voor meer informatie . De [JCR-query-controle](#jcr-query-cheatsheet) in dit document wordt beschreven hoe een eigenschapdefinitie op een index moet kijken om een specifiek querytype te ondersteunen.
 
 ### De juiste criteria gebruiken {#use-the-right-criteria}
 

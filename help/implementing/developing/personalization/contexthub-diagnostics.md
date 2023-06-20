@@ -2,9 +2,9 @@
 title: ContextHub Diagnostics
 description: ContextHub verstrekt een diagnostische pagina waar u een overzicht van het kader ContextHub kunt zien
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ De pagina van de Diagnostiek ContextHub verstrekt informatie over de opslag en m
 
 >[!NOTE]
 >
->De foutopsporingsmodus moet zijn ingeschakeld om diagnostische gegevens te kunnen retourneren. Als dit niet het geval is, is de pagina Diagnostics leeg. Zie [dit document](configuring-contexthub.md#debugging-contexthub) voor details over hoe te om te toelaten zuiveren wijze.
+>Om diagnostische informatie terug te geven moet de foutopsporingsmodus zijn ingeschakeld, anders is de diagnostische pagina leeg. Zie [dit document](configuring-contexthub.md#debugging-contexthub) voor details over hoe te om te toelaten zuiveren wijze.
 
 ## Winkels {#stores}
 

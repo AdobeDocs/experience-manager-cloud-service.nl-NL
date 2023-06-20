@@ -2,7 +2,7 @@
 title: Progressieve webtoepassingsfuncties inschakelen
 description: AEM Sites stelt de auteur van de inhoud in staat om via eenvoudige configuratie progressieve webtoepassingsmogelijkheden voor elke site in te schakelen in plaats van codering.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) 
 >* Begrip van cachestrategieën
 >* Ondersteuning van uw ontwikkelingsteam
 >
->Voordat u deze functie gebruikt, wordt u aangeraden dit met uw ontwikkelingsteam te bespreken om de beste manier te definiëren om deze voor uw project te gebruiken.
+>Alvorens deze eigenschap te gebruiken wordt geadviseerd dat u dit met uw ontwikkelingsteam bespreekt om de beste manier te bepalen om het voor uw project te gebruiken.
 
 ## Inleiding {#introduction}
 
@@ -50,7 +50,7 @@ Dit zijn technische stappen die de auteur met het ontwikkelingsteam zal moeten c
 
 ### Basiscomponenten gebruiken {#adjust-components}
 
-Core Components versie 2.15.0 en hoger biedt volledige ondersteuning voor de PWA-functies van AEM sites. Aangezien AEMaaCS altijd de nieuwste versie van de Core Components bevat, kunt u de functies van PWA offline benutten. Uw AEMaaCS-project voldoet automatisch aan deze vereiste.
+Core Components versie 2.15.0 en hoger biedt volledige ondersteuning voor de PWA-functies van AEM sites. Aangezien AEMaaCS altijd de nieuwste versie van de Core Components bevat, kunt u de functies van PWA uit-van-de-doos gebruiken. Uw AEMaaCS-project voldoet automatisch aan deze vereiste.
 
 >[!NOTE]
 >
@@ -122,7 +122,6 @@ Met [de voorwaarden](#prerequisites) , is het heel eenvoudig voor de auteur van 
       * `/etc/clientlibs/<sitename>`
 
       ![Offline PWA-paden definiëren](../assets/pwa-offline.png)
-
 
 1. Tik of klik op **Opslaan en sluiten**.
 

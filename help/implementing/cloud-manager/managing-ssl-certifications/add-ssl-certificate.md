@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen
 description: Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma's van Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: d0d4b22cdca02d81ca755e4045ffccb110739303
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -25,21 +25,21 @@ Het volgende `openssl` U kunt opdrachten gebruiken om niet-PEM-certificaten om t
 
 * PFX converteren naar PEM
 
-   ```shell
-   openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-   ```
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
 
 * P7B converteren naar PEM
 
-   ```shell
-   openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-   ```
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
 
 * DER converteren naar PEM
 
-   ```shell
-   openssl x509 -inform der -in certificate.cer -out certificate.pem
-   ```
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## Een certificaat toevoegen {#adding-a-cert}
 
@@ -64,7 +64,6 @@ Ga als volgt te werk om een certificaat toe te voegen met gebruik van Cloud Mana
    * Eventuele fouten worden weergegeven.
       * U moet alle fouten aanpakken voordat uw certificaat kan worden opgeslagen.
       * Zie de [Certificaatfouten](#certificate-errors) voor meer informatie over het aanpakken van algemene fouten.
-
 
 1. Klikken **Opslaan** om uw certificaat op te slaan.
 
@@ -154,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->De uitvoer van deze twee opdrachten moet exact hetzelfde zijn. Als u geen overeenkomende persoonlijke sleutel voor uw `main/server` -certificaat, moet u het certificaat opnieuw coderen door een nieuwe CSR te genereren en/of een bijgewerkt certificaat aan te vragen bij uw SSL-leverancier.
+>De uitvoer van deze twee opdrachten moet exact hetzelfde zijn. Als u geen overeenkomende persoonlijke sleutel voor uw `main/server` -certificaat, moet u het certificaat opnieuw sleutelken door een nieuwe CSR te genereren en/of een bijgewerkt certificaat aan te vragen bij uw SSL-leverancier.
 
 ### Geldigheidsdatums certificaat {#certificate-validity-dates}
 

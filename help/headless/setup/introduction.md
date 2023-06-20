@@ -2,9 +2,9 @@
 title: Installatie zonder koppen
 description: Met deze snelstartgids leert u de basisprincipes van AEM krachtige, koploze functies, zoals Content Models, Content Fragments en de GraphQL API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ Hieronder ziet u een eenvoudig pad voor het maken, beheren en leveren van ervari
 >* [Reis voor architect zonder hoofdinhoud](/help/journey-headless/architect/overview.md)
 >* [Schrijverreis zonder kopinhoud](/help/journey-headless/author/overview.md)
 >* [Dagboekreis zonder hoofd](/help/journey-headless/translation/overview.md).
-
 
 ## Publiek {#audience}
 

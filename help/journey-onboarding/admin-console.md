@@ -2,9 +2,9 @@
 title: De Admin Console openen
 description: Zodra u de voorbereiding noodzakelijk aan het aan boord gaan en de grondbeginselen van structuur AEMaaCS begrijpt, bent u bereid om in de Admin Console voor het eerst te registreren.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ De Adobe Admin Console is een centrale plaats voor het beheer en beheer van uw A
 
 Als u zich wilt aanmelden bij de Admin Console, hebt u een Adobe ID nodig. En Adobe ID is een account die is gekoppeld aan een specifiek e-mailadres dat vereist is voor aanmelding en toegang AEM as a Cloud Service of een van uw Adobe-oplossingen. Door je Adobe ID te gebruiken, bewaar je al je Adobe-plannen en -producten die aan één account zijn gekoppeld.
 
-Wanneer u als systeembeheerder opstelling uw team in de Admin Console bent, specificeert u het e-mailadres dat als Adobe ID zal worden gebruikt.
+Wanneer u als systeembeheerder uw team instelt in de Admin Console, geeft u het e-mailadres op dat als Adobe ID wordt gebruikt.
 
 Er zijn drie typen Adobe-id&#39;s:
 

@@ -2,9 +2,9 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1720'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Zoals eerder vermeld, moet u een periode voor het bevriezen van code en inhoud p
 * Hoe lang moet ik de creatie van content bevriezen?
 * Voor hoe lang zou ik mijn leveringsteam moeten vragen om op te houden toevoegend nieuwe eigenschappen?
 
-Als u de eerste vraag wilt beantwoorden, moet u rekening houden met de tijd die nodig is om proefversies uit te voeren in omgevingen waar geen productie plaatsvindt. Om de tweede vraag te beantwoorden, hebt u nauwe samenwerking tussen het team nodig dat nieuwe eigenschappen toevoegt en het team dat de code opnieuw in beweging brengt. Het doel zou moeten zijn ervoor te zorgen al code die aan de bestaande plaatsing wordt toegevoegd, wordt getest en, aan de tak van de wolkendiensten wordt opgesteld. In het algemeen betekent dit dat de hoeveelheid code die vastloopt, lager zal zijn.
+Als u de eerste vraag wilt beantwoorden, moet u rekening houden met de tijd die nodig is om proefversies uit te voeren in omgevingen waar geen productie plaatsvindt. Om de tweede vraag te beantwoorden, hebt u nauwe samenwerking tussen het team nodig dat nieuwe eigenschappen toevoegt en het team dat de code opnieuw in beweging brengt. Het doel is ervoor te zorgen alle code die aan de bestaande plaatsing wordt toegevoegd, wordt getest en, aan de tak van de wolkendiensten wordt opgesteld. In het algemeen betekent dit dat de hoeveelheid code die vastloopt, lager is.
 
 Bovendien moet u plannen dat de inhoud wordt vastgezet wanneer de laatste aanvulling op de inhoud gepland is.
 
@@ -81,12 +81,12 @@ Zorg ervoor dat wanneer u live gaat, u de migratie van inhoud uitvoert op produc
 
 Wanneer u de productiemigratie uitvoert, moet u het gereedschap Inhoud overbrengen niet vanuit een kloon uitvoeren omdat:
 
-* Als een klant tijdens aanvullende migraties versies van inhoud moet migreren, worden de versies niet gemigreerd wanneer de klant het gereedschap Inhoud overbrengen van een kloon uitvoert. Zelfs als de kloon regelmatig van live auteur wordt ontspannen, telkens als een kloon wordt gecreeerd zullen de controlepunten die door het Hulpmiddel van de Overdracht van de Inhoud zullen worden gebruikt om de delta&#39;s te berekenen worden teruggesteld.
+* Als een klant tijdens aanvullende migraties versies van inhoud moet migreren, worden de versies niet gemigreerd wanneer de klant het gereedschap Inhoud overbrengen van een kloon uitvoert. Zelfs als de kloon regelmatig van live auteur wordt ontspannen, telkens als een kloon wordt gecreeerd, worden de controlepunten die door het Hulpmiddel van de Overdracht van de Inhoud worden gebruikt om de delta&#39;s te berekenen teruggesteld.
 * Aangezien een kloon niet als geheel kan worden verfrist, moet het ACL pakket van de Vraag worden gebruikt om de inhoud te verpakken en te installeren die van productie aan kloon wordt toegevoegd of wordt uitgegeven. Het probleem met deze aanpak is dat verwijderde inhoud op de broninstantie nooit naar de kloon wordt gebracht, tenzij deze handmatig wordt verwijderd uit zowel de bron als de kloon. Hierdoor wordt de mogelijkheid geïntroduceerd dat de verwijderde inhoud op de productie niet wordt verwijderd op de kloon en AEM as a Cloud Service.
 
 **De belasting van de AEM optimaliseren tijdens het migreren van de inhoud**
 
-Vergeet niet dat de belasting op de AEM tijdens de extractiefase groter zal zijn. U moet weten dat:
+Vergeet niet dat de belasting op de AEM tijdens de extractiefase groter is. U moet weten dat:
 
 * Het gereedschap Inhoud overbrengen is een extern Java-proces dat een JVM-heap van 4 GB gebruikt
 * De niet-AzCopy versie downloadt binaire getallen, slaat hen op een tijdelijke ruimte op de bron AEM auteur, verbruikt schijf I/O, dan uploadt in de Azure container die netwerkbandbreedte verbruikt

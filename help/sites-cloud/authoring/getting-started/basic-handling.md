@@ -2,9 +2,9 @@
 title: Basisbewerkingen
 description: Geniet van gemak bij het navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2994'
+source-wordcount: '2993'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,6 @@ Dit document is ontworpen om een overzicht te geven van de basisafhandeling bij 
 >
 >* Bepaalde functionaliteit is niet in alle consoles beschikbaar en in sommige consoles is mogelijk aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit zal op andere pagina&#39;s nader worden besproken.
 >* Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [consoles gebruiken](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) en [pagina&#39;s bewerken](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
-
 
 ## Een interface met aanraakbediening {#a-touch-enabled-ui}
 
@@ -89,79 +88,79 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
 * [Algemene navigatie](#global-navigation)
 
-   Selecteer **Adobe Experience Manager** koppeling om tussen consoles te navigeren.
+  Selecteer **Adobe Experience Manager** koppeling om tussen consoles te navigeren.
 
-   ![Algemene navigatie](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Algemene navigatie](/help/sites-cloud/authoring/assets/global-navigation.png)
 
 * [Zoeken](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Zoekpictogram](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Zoekpictogram](/help/sites-cloud/authoring/assets/search-icon.png)
 
-   U kunt ook de opdracht [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) om het zoeken vanuit elke console aan te roepen.
+  U kunt ook de opdracht [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) om het zoeken vanuit elke console aan te roepen.
 
 * [Oplossingen](https://www.adobe.com/experience-cloud.html)
 
-   ![Oplossingen, knop](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Oplossingen, knop](/help/sites-cloud/authoring/assets/solutions.png)
 
 * [Help](#accessing-help)
 
-   ![Help, knop](/help/sites-cloud/authoring/assets/help.png)
+  ![Help, knop](/help/sites-cloud/authoring/assets/help.png)
 
 * [Meldingen](/help/sites-cloud/authoring/getting-started/inbox.md)
 
-   ![Knop Meldingen](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Knop Meldingen](/help/sites-cloud/authoring/assets/notifications.png)
 
-   Dit pictogram wordt gemarkeerd met het aantal momenteel toegewezen onvolledige meldingen.
+  Dit pictogram wordt gemarkeerd met het aantal momenteel toegewezen onvolledige meldingen.
 
 * [Gebruikerseigenschappen](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
-   ![Gebruikerseigenschappen, knop](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![Gebruikerseigenschappen, knop](/help/sites-cloud/authoring/assets/user-properties.png)
 
 * [Spoorwegkiezer](#rail-selector)
 
-   ![Selectieknop per spoor](/help/sites-cloud/authoring/assets/rail-selector.png)
+  ![Selectieknop per spoor](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-   Welke opties worden weergegeven, is afhankelijk van uw huidige console. Bijvoorbeeld in **Sites** u kunt alleen inhoud (standaard), de tijdlijn, verwijzingen of het filterzijpaneel selecteren.
+  Welke opties worden weergegeven, is afhankelijk van uw huidige console. Bijvoorbeeld in **Sites** u kunt alleen inhoud (standaard), de tijdlijn, verwijzingen of het filterzijpaneel selecteren.
 
-   ![Voorbeeld van een spoorstaafkiezer](/help/sites-cloud/authoring/assets/rail-selector-example.png)
+  ![Voorbeeld van een spoorstaafkiezer](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
 * Broodkruimels
 
-   ![Broodkruimels in navigatiebalk](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
+  ![Broodkruimels in navigatiebalk](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-   In het midden van de spoorstaaf, en altijd tonend de beschrijving van het momenteel geselecteerde punt, staan de broodkruimels u toe om binnen een specifieke console te navigeren. In de **Sites** kunt u door de niveaus van uw website navigeren.
+  In het midden van de spoorstaaf, en altijd tonend de beschrijving van het momenteel geselecteerde punt, staan de broodkruimels u toe om binnen een specifieke console te navigeren. In de **Sites** kunt u door de niveaus van uw website navigeren.
 
-   Klik gewoon op de tekst van de broodkruimel om een vervolgkeuzelijst weer te geven met de niveaus van de hiërarchie van het momenteel geselecteerde item. Klik op een bericht om naar die locatie te gaan.
+  Klik gewoon op de tekst van de broodkruimel om een vervolgkeuzelijst weer te geven met de niveaus van de hiërarchie van het momenteel geselecteerde item. Klik op een bericht om naar die locatie te gaan.
 
-   ![Voorbeeld van uitvouwen broodkruimels](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
+  ![Voorbeeld van uitvouwen broodkruimels](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
 * **Maken** knop
 
-   ![Knop Maken](/help/sites-cloud/authoring/assets/create.png)
+  ![Knop Maken](/help/sites-cloud/authoring/assets/create.png)
 
-   Zodra geklikt, zijn de getoonde opties aangewezen aan de console/de context.
+  Zodra geklikt, zijn de getoonde opties aangewezen aan de console/de context.
 
 * [Weergaven](#viewing-and-selecting-resources)
 
-   Het weergavepictogram bevindt zich helemaal rechts van de AEM werkbalk. De huidige weergave wordt ook gewijzigd. In de standaardweergave bijvoorbeeld **Kolomweergave** het laat zien :
+  Het weergavepictogram bevindt zich helemaal rechts van de AEM werkbalk. De huidige weergave wordt ook gewijzigd. In de standaardweergave bijvoorbeeld **Kolomweergave** het laat zien :
 
-   ![Knop Weergaven](/help/sites-cloud/authoring/assets/views-button.png)
+  ![Knop Weergaven](/help/sites-cloud/authoring/assets/views-button.png)
 
-   U kunt schakelen tussen de kolomweergave, de kaartweergave en de lijstweergave. In de lijstweergave worden ook de weergave-instellingen weergegeven.
+  U kunt schakelen tussen de kolomweergave, de kaartweergave en de lijstweergave. In de lijstweergave worden ook de weergave-instellingen weergegeven.
 
-   ![Weergaven](/help/sites-cloud/authoring/assets/view.png)
+  ![Weergaven](/help/sites-cloud/authoring/assets/view.png)
 
-   >[!NOTE]
-   >
-   >De optie **Instellingen weergeven** is alleen beschikbaar in de modus **Lijstweergave**.
+  >[!NOTE]
+  >
+  >De optie **Instellingen weergeven** is alleen beschikbaar in de modus **Lijstweergave**.
 
 * Toetsenbordnavigatie
 
-   U kunt alleen met het toetsenbord door een website navigeren. Hierbij wordt de standaardbrowserfunctionaliteit van het **TAB** toets (of **OPT+TAB**) om u te verplaatsen tussen elementen op de pagina die u kunt focussen.
+  U kunt alleen met het toetsenbord door een website navigeren. Hierbij wordt de standaardbrowserfunctionaliteit van het **TAB** toets (of **OPT+TAB**) om u te verplaatsen tussen elementen op de pagina die u kunt focussen.
 
-   In de **Sites** console daar is de toegevoegde optie aan **Overslaan naar hoofdinhoud**. Dit wordt zichtbaar aangezien u door de kopbalopties van labels voorziet, en versnelt uw navigatie door u toe te staan om de standaardelementen in de (product) toolbar over te slaan en u rechtstreeks aan de belangrijkste inhoud te nemen.
+  In de **Sites** console daar is de toegevoegde optie aan **Overslaan naar hoofdinhoud**. Dit wordt zichtbaar aangezien u door de kopbalopties van labels voorziet, en versnelt uw navigatie door u toe te staan om de standaardelementen in de (product) toolbar over te slaan en u rechtstreeks aan de belangrijkste inhoud te nemen.
 
-   ![Overslaan naar hoofdinhoud](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+  ![Overslaan naar hoofdinhoud](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
 ## Toegang tot Help {#accessing-help}
 
@@ -169,42 +168,41 @@ Er zijn verschillende beschikbare Help-bronnen:
 
 * **Console, werkbalk**
 
-   Afhankelijk van uw locatie **Help** het pictogram zal de aangewezen middelen openen:
+  Afhankelijk van uw locatie **Help** het pictogram zal de aangewezen middelen openen:
 
-   ![Help-pictogram](/help/sites-cloud/authoring/assets/help-console.png)
+  ![Help-pictogram](/help/sites-cloud/authoring/assets/help-console.png)
 
 * **Navigatie**
 
-   De eerste keer dat u door het systeem navigeert, [een reeks dia&#39;s introduceert AEM navigatie](#product-navigation).
+  De eerste keer dat u door het systeem navigeert, [een reeks dia&#39;s introduceert AEM navigatie](#product-navigation).
 
-   ![Zelfstudie](/help/sites-cloud/authoring/assets/tutorial.png)
+  ![Zelfstudie](/help/sites-cloud/authoring/assets/tutorial.png)
 
 * **Pagina-editor**
 
-   De eerste keer dat u een pagina bewerkt, introduceert een reeks dia&#39;s de pagina-editor.
+  De eerste keer dat u een pagina bewerkt, introduceert een reeks dia&#39;s de pagina-editor.
 
-   ![Editor-zelfstudie](/help/sites-cloud/authoring/assets/editor-tutorial.png)
+  ![Editor-zelfstudie](/help/sites-cloud/authoring/assets/editor-tutorial.png)
 
-   Navigeren in dit overzicht zoals u [overzicht van productnavigatie](#product-navigation) wanneer eerst het openen van om het even welke console.
+  Navigeren in dit overzicht zoals u [overzicht van productnavigatie](#product-navigation) wanneer eerst het openen van om het even welke console.
 
-   Van de [**Pagina-informatie** menu dat u kunt selecteren **Help**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) om dit op elk moment weer te tonen.
+  Van de [**Pagina-informatie** menu dat u kunt selecteren **Help**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) om dit op elk moment weer te tonen.
 
 * **Tools Console**
 
-   Van de **Gereedschappen** console u tot de externe **Bronnen**:
+  Van de **Gereedschappen** console u tot de externe **Bronnen**:
 
    * **Documentatie** - Bekijk de documentatie van het Web Experience Management
    * **Bronnen voor ontwikkelaars** - Bronnen en downloads voor ontwikkelaars
 
-   >[!NOTE]
-   >
-   >Met de sneltoets hebt u op elk gewenst moment toegang tot een overzicht van de beschikbare sneltoetsen `?` (vraagteken) wanneer in een console.
-   >
-   >Raadpleeg de volgende documentatie voor een overzicht van alle sneltoetsen:
-   >
-   >* [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Sneltoetsen voor consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
+  >[!NOTE]
+  >
+  >Met de sneltoets hebt u op elk gewenst moment toegang tot een overzicht van de beschikbare sneltoetsen `?` (vraagteken) wanneer in een console.
+  >
+  >Raadpleeg de volgende documentatie voor een overzicht van alle sneltoetsen:
+  >
+  >* [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+  >* [Sneltoetsen voor consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 ## Werkbalk Handelingen {#actions-toolbar}
 
@@ -303,7 +301,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
    * De naam en het chevron van de bron worden gemarkeerd wanneer hierop wordt getikt of erop wordt geklikt.
    * De kinderen van het geklikte/geplakte middel worden getoond in de kolom rechts van het aangeklikte/geplakte middel.
-   * Als u op een middelnaam tikt of klikt die geen kinderen heeft, zullen zijn details in de definitieve kolom worden getoond.
+   * Als u op een middelnaam tikt of klikt die geen kinderen heeft, worden zijn details getoond in de definitieve kolom.
 
 * Als u op de miniatuur tikt of erop klikt, wordt de bron geselecteerd.
 
@@ -311,7 +309,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
    * De details van de geselecteerde bron worden weergegeven in de laatste kolom.
    * De werkbalk Handeling wordt beschikbaar.
 
-   Wanneer een pagina in kolomweergave is geselecteerd, wordt de geselecteerde pagina samen met de volgende details weergegeven in de definitieve kolom:
+  Wanneer een pagina in kolomweergave is geselecteerd, wordt de geselecteerde pagina samen met de volgende details weergegeven in de definitieve kolom:
 
    * Paginatitel
    * Paginanaam (onderdeel van de URL van de pagina)
@@ -319,7 +317,6 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
    * Wijzigingsdetails
    * Paginataal
    * Publicatie- en voorvertoningsgegevens
-
 
 ### Kaartweergave {#card-view}
 
@@ -336,7 +333,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
 * [Snelle acties](#quick-actions) zijn ook beschikbaar in deze weergave, zoals selectie en algemene handelingen zoals bewerken.
 
-   ![Snelle acties](/help/sites-cloud/authoring/assets/quick-actions.png)
+  ![Snelle acties](/help/sites-cloud/authoring/assets/quick-actions.png)
 
 * U kunt door de boom omlaag navigeren door op kaarten te tikken of erop te klikken (zorg dat u de snelle acties voorkomt) of u kunt weer omhoog gaan met de [broodkruimels in de koptekst](#the-header).
 
@@ -348,16 +345,16 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 * U kunt omlaag door de boom navigeren door op de middelnaam te tikken/te klikken en file door te gebruiken [broodkruimels in de koptekst](#the-header).
 * Als u alle items in de lijst gemakkelijk wilt selecteren, gebruikt u het selectievakje linksboven in de lijst.
 
-   ![Lijstweergave selecteren alles](/help/sites-cloud/authoring/assets/list-view-select-all.png)
+  ![Lijstweergave selecteren alles](/help/sites-cloud/authoring/assets/list-view-select-all.png)
 
    * Wanneer alle items in de lijst zijn geselecteerd, wordt dit selectievakje ingeschakeld.
 
       * Klik of tik checkbox om allen te schrappen.
+
    * Wanneer slechts enkele punten worden geselecteerd, verschijnt het met een minteken.
 
       * Klik of tik checkbox om allen te selecteren.
       * Klik of tik opnieuw checkbox om allen te schrappen.
-
 
 * Selecteer de kolommen die u wilt weergeven **Instellingen weergeven** onder de knop Weergaven. De volgende kolommen zijn beschikbaar voor weergave:
 
@@ -371,20 +368,21 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
    * **Unieke bezoekers**
    * **Tijd op pagina**
 
-      ![Kolommen selecteren](/help/sites-cloud/authoring/assets/select-columns.png)
-   Standaard worden de **Naam** wordt een kolom weergegeven die een deel van de URL voor de pagina uitmaakt. In sommige gevallen moet de auteur pagina&#39;s openen die in een andere taal zijn en kan het nuttig zijn de naam van de pagina (die gewoonlijk onveranderlijk is) te zien als de auteur de taal van de pagina niet kent.
+     ![Kolommen selecteren](/help/sites-cloud/authoring/assets/select-columns.png)
+
+  Standaard worden de **Naam** wordt een kolom weergegeven die een deel van de URL voor de pagina uitmaakt. In sommige gevallen moet de auteur pagina&#39;s openen die in een andere taal zijn en kan het nuttig zijn de naam van de pagina (die gewoonlijk onveranderlijk is) te zien als de auteur de taal van de pagina niet kent.
 
 * Wijzig de volgorde van de items met de gestippelde verticale balk helemaal rechts van elk item in de lijst.
 
-   >[!NOTE]
-   >
-   >Het wijzigen van de volgorde werkt alleen in een geordende map die `jcr:primaryType` waarde als `sling:OrderedFolder`.
+  >[!NOTE]
+  >
+  >Het wijzigen van de volgorde werkt alleen in een geordende map die `jcr:primaryType` waarde als `sling:OrderedFolder`.
 
-   ![Kolomvolgorde](/help/sites-cloud/authoring/assets/column-order.png)
+  ![Kolomvolgorde](/help/sites-cloud/authoring/assets/column-order.png)
 
-   Klik of tik op de verticale selectiebalk en sleep het item naar een nieuwe positie in de lijst.
+  Klik of tik op de verticale selectiebalk en sleep het item naar een nieuwe positie in de lijst.
 
-   ![Orderlijst](/help/sites-cloud/authoring/assets/order-list.png)
+  ![Orderlijst](/help/sites-cloud/authoring/assets/order-list.png)
 
 ## Spoorwegkiezer {#rail-selector}
 

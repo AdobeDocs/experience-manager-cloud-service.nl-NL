@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3595'
+source-wordcount: '3579'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ De per milieuhaven die regels door:sturen kan opnieuw worden bijgewerkt door opn
 
 ### Flexibele poortuitgang uitschakelen {#disabling-flexible-port-egress-provision}
 
-Om **disable** flexibele havenuitgang uit een bepaalde omgeving, aanroepen `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Naar **disable** flexibele havenuitgang uit een bepaalde omgeving, aanroepen `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 Zie voor meer informatie over de API&#39;s de [Documentatie voor API voor cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -195,7 +195,7 @@ Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM as a Clo
 
 Het vormen van specifiek uitgang IP adres is identiek aan [flexibel poortbereik](#configuring-flexible-port-egress-provision).
 
-Het belangrijkste verschil is dat het verkeer altijd van specifieke, unieke IP zal weggaan. Om dat IP te vinden, gebruik een DNS resolver om het IP adres te identificeren verbonden aan `p{PROGRAM_ID}.external.adobeaemcloud.com`. Het IP adres zal naar verwachting niet veranderen, maar als het in de toekomst moet veranderen, zal het geavanceerde bericht worden verstrekt.
+Het belangrijkste verschil is dat het verkeer altijd van specifieke, unieke IP zal weggaan. Om dat IP te vinden, gebruik een DNS resolver om het IP adres te identificeren verbonden aan `p{PROGRAM_ID}.external.adobeaemcloud.com`. Het IP adres wordt niet verwacht te veranderen, maar als het in de toekomst moet veranderen, wordt het geavanceerde bericht verstrekt.
 
 Naast de verpletterende regels die door flexibele havenuitgang in worden gesteund `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` eindpunt, specifiek uitgangIP adres steunt a `nonProxyHosts` parameter. Dit staat u toe om een reeks gastheren te verklaren die door een gedeelde IPs adreswaaier eerder dan specifieke IP zou moeten leiden, die nuttig kan zijn aangezien het verkeer dat door gedeelde IPs wordt behandeld verder kan worden geoptimaliseerd. De `nonProxyHost` URL&#39;s kunnen de patronen volgen van `example.com` of `*.example.com`, waarbij het jokerteken alleen wordt ondersteund aan het begin van het domein.
 
@@ -203,7 +203,7 @@ Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres
 
 ### Het onbruikbaar maken van toegewezen IP van de Eis Adres {#disabling-dedicated-egress-IP-address}
 
-Om **disable** Het specifieke IP van de Eis Adres van een bepaald milieu, haalt aan `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Naar **disable** Het specifieke IP van de Eis Adres van een bepaald milieu, haalt aan `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 Zie voor meer informatie over de API&#39;s de [Documentatie voor API voor cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -331,7 +331,7 @@ Het zelfde specifieke IP wordt toegepast op alle programma&#39;s van een klant i
 
 ### Foutopsporingsoverwegingen {#debugging-considerations}
 
-Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres uitgaande is, controlelogboeken in de bestemmingsdienst, als beschikbaar. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals te roepen [https://ifconfig.me/IP](https://ifconfig.me/IP), die het roepende IP adres zal terugkeren.
+Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres, controlelogboeken binnen de bestemmingsdienst, als beschikbaar gaat. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals te roepen [https://ifconfig.me/IP](https://ifconfig.me/IP), die het roepende IP adres zal terugkeren.
 
 ## Verouderde, specifieke klanten van het Adres van de Afstuwing {#legacy-dedicated-egress-address-customers}
 
@@ -420,7 +420,7 @@ De lijst beschrijft hieronder verkeer dat verplettert.
     <td>Als het OT in <i>VPN-gatewayadres</i> ruimtewaaier, en door de volmachtsconfiguratie van http (die door gebrek voor verkeer http/s gebruikend standaard de cliëntbibliotheek van HTTP van Java wordt gevormd)</td>
     <td>Alle</td>
     <td>Door VPN</td>
-    <td><code>10.0.0.1:443</code>Het kan ook een hostname zijn.</td>
+    <td><code>10.0.0.1:443</code><br>Het kan ook een hostname zijn.</td>
   </tr>
   <tr>
     <td></td>
@@ -449,7 +449,7 @@ De lijst beschrijft hieronder verkeer dat verplettert.
     <td>Als het OT in <i>VPN-gatewayadresruimte</i> bereik en de client maakt verbinding met <code>AEM_PROXY_HOST</code> env-variabele met behulp van een <code>portOrig</code> gedeclareerd in de <code>portForwards</code> API-parameter</td>
     <td>Alle</td>
     <td>Door VPN</td>
-    <td><code>10.0.0.1:3306</code>Het kan ook een hostname zijn.</td>
+    <td><code>10.0.0.1:3306</code><br>Het kan ook een hostname zijn.</td>
   </tr>
   <tr>
     <td></td>
@@ -523,6 +523,7 @@ Naar **delete** de netwerkinfrastructuur voor een programma, roept `DELETE /prog
 >[!NOTE]
 >
 > Met Verwijderen wordt de infrastructuur alleen verwijderd als de geavanceerde netwerken van alle omgevingen zijn uitgeschakeld.
+> 
 
 ## Overgang tussen de Geavanceerde Types van Voorzien van een netwerk {#transitioning-between-advanced-networking-types}
 
@@ -536,12 +537,13 @@ Het is mogelijk om tussen geavanceerde voorzien van een netwerktypes te migreren
 >[!WARNING]
 >
 > Deze procedure zal in een onderbreking van de geavanceerde voorzien van een netwerkdiensten tussen schrapping en recreatie resulteren
+> 
 
 Als de onderbreking significante bedrijfsgevolgen zou veroorzaken, contacteer klantensteun voor hulp, beschrijvend wat reeds is gecreeerd en de reden voor de verandering.
 
 ## Geavanceerde netwerkconfiguratie voor extra publicatiegebieden {#advanced-networking-configuration-for-additional-publish-regions}
 
-Wanneer een extra gebied aan een milieu wordt toegevoegd dat reeds gevormd geavanceerd voorzien van een netwerk heeft, zal het verkeer van het extra publiceer gebied dat de geavanceerde voorzien van een netwerkregels aanpast door standaardroute door het primaire gebied. Als het primaire gebied echter niet meer beschikbaar is, wordt het geavanceerde netwerkverkeer verwijderd als geavanceerde netwerken niet zijn ingeschakeld in het extra gebied. Als u de latentie wilt optimaliseren en de beschikbaarheid wilt verhogen in het geval dat een van de regio&#39;s een onderbreking ondergaat, is het noodzakelijk geavanceerde netwerken in te schakelen voor de aanvullende publicatiegebieden. In de volgende secties worden twee verschillende scenario&#39;s beschreven.
+Wanneer een extra gebied aan een milieu wordt toegevoegd dat reeds gevormd geavanceerd voorzien van een netwerk heeft, zal het verkeer van het extra publiceer gebied dat de geavanceerde voorzien van een netwerkregels aanpast door standaardroute door het primaire gebied. Nochtans, als het primaire gebied niet beschikbaar wordt, wordt het geavanceerde voorzien van een netwerkverkeer gelaten vallen als het geavanceerde voorzien van een netwerk niet in het extra gebied is toegelaten. Als u de latentie wilt optimaliseren en de beschikbaarheid wilt verhogen in het geval dat een van de regio&#39;s een onderbreking ondergaat, is het noodzakelijk geavanceerde netwerken in te schakelen voor de aanvullende publicatiegebieden. In de volgende secties worden twee verschillende scenario&#39;s beschreven.
 
 >[!NOTE]
 >
@@ -553,15 +555,15 @@ Wanneer een extra gebied aan een milieu wordt toegevoegd dat reeds gevormd geava
 
 Als een geavanceerde voorzien van een netwerkconfiguratie reeds in het primaire gebied wordt toegelaten, volg deze stappen:
 
-1. Als u uw infrastructuur zodanig hebt vergrendeld dat het toegewezen AEM IP-adres is toegestaan in de lijst, wordt aanbevolen om regels in die infrastructuur tijdelijk uit te schakelen. Als dit niet wordt gedaan, zal er een korte periode zijn waarin de verzoeken van de IP van het nieuwe gebied adressen door uw eigen infrastructuur zullen worden ontkend. Merk op dat dit niet noodzakelijk is als u uw infrastructuur via FQDN (Fully Qualified Domain Name) hebt vergrendeld, (`p1234.external.adobeaemcloud.com`, bijvoorbeeld), aangezien alle AEM gebieden geavanceerd voorzien van een netwerkverkeer van zelfde FQDN ontspannen
-1. Creeer programma-scoped voorzien van een netwerkinfrastructuur voor het secundaire gebied door een vraag van de POST aan de Manager van de Wolk creeert de Infrastructuur API van het Netwerk, zoals die in geavanceerde voorzien van een netwerkdocumentatie wordt beschreven. Het enige verschil in de configuratie JSON van de nuttige lading met betrekking tot primair gebied zal het gebiedsbezit zijn
+1. Als u uw infrastructuur zodanig hebt vergrendeld dat het toegewezen AEM IP-adres is toegestaan in de lijst, wordt aanbevolen om regels in die infrastructuur tijdelijk uit te schakelen. Als dit niet wordt gedaan, is er een korte periode waarin de verzoeken van de IP van het nieuwe gebied adressen door uw eigen infrastructuur worden ontkend. Merk op dat dit niet noodzakelijk is als u uw infrastructuur via FQDN (Fully Qualified Domain Name) hebt vergrendeld, (`p1234.external.adobeaemcloud.com`, bijvoorbeeld), omdat alle AEM regio&#39;s geavanceerd netwerkverkeer vanaf dezelfde FQDN overschrijven
+1. Creeer programma-scoped voorzien van een netwerkinfrastructuur voor het secundaire gebied door een vraag van de POST aan de Manager van de Wolk creeert de Infrastructuur API van het Netwerk, zoals die in geavanceerde voorzien van een netwerkdocumentatie wordt beschreven. Het enige verschil in de configuratie JSON van de nuttige lading met betrekking tot primair gebied is het gebiedsbezit
 1. Als uw infrastructuur door IP moet worden gesloten om AEM verkeer toe te staan, voeg IPs toe die aanpassen `p1234.external.adobeaemcloud.com`. Er zou één per regio moeten zijn.
 
 #### Geavanceerde netwerken nog niet geconfigureerd in een regio {#not-yet-configured}
 
 De procedure is grotendeels vergelijkbaar met de voorgaande instructies. Nochtans, als het productiemilieu nog niet voor geavanceerd voorzien van een netwerk is toegelaten, is er een kans om de configuratie te testen door het in een het opvoeren milieu eerst toe te laten:
 
-1. Maak voorzien van een netwerkinfrastructuur voor alle gebieden door de vraag van de POST aan [Cloud Manager API voor netwerkinfrastructuur maken](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Het enige verschil in de configuratie JSON van de nuttige lading met betrekking tot primair gebied zal het gebiedbezit zijn.
+1. Maak voorzien van een netwerkinfrastructuur voor alle gebieden door de vraag van de POST aan [Cloud Manager API voor netwerkinfrastructuur maken](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Het enige verschil in de configuratie JSON van de nuttige lading met betrekking tot primair gebied is het gebiedbezit.
 1. Voor het opvoeren milieu, laat en vormt het milieu binnen bereik geavanceerd voorzien van een netwerk toe door te lopen `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Raadpleeg de API-documentatie voor meer informatie [hier](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. Indien nodig, externe infrastructuur vergrendelen, bij voorkeur met een FQDN (bijvoorbeeld `p1234.external.adobeaemcloud.com`). U kunt het anders doen door IP adres
 1. Als het het opvoeren milieu zoals verwacht werkt, laat en vormt de milieu-scoped geavanceerde voorzien van een netwerkconfiguratie voor productie toe.

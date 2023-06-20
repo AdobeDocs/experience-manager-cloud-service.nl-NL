@@ -1,10 +1,10 @@
 ---
 title: Paginasjablonen
-description: Paginasjablonen worden gebruikt bij het maken van een pagina die wordt gebruikt als basis voor de nieuwe pagina
+description: Paginasjablonen worden gebruikt bij het maken van een pagina die als basis voor de nieuwe pagina wordt gebruikt
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3293'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
    * Het inhoudsbeleid definieert de ontwerpeigenschappen van een component.
 
       * Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen.
+
    * Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
    Zie voor meer informatie over de manier waarop een sjabloonauteur beleid definieert [Paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -432,11 +433,11 @@ Dit knooppunt bevat eigenschappen voor de sjabloon:
 Hiermee definieert u de structuur van de resulterende pagina:
 
 * Is samengevoegd met de oorspronkelijke inhoud ( `/initial`) bij het maken van een nieuwe pagina.
-* Wijzigingen in de structuur worden weerspiegeld in alle pagina&#39;s die met de sjabloon worden gemaakt.
-* De `root` ( `structure/jcr:content/root`) definieert de lijst met componenten die beschikbaar zullen zijn op de resulterende pagina.
+* Wijzigingen in de structuur worden weerspiegeld in alle pagina&#39;s die met de sjabloon zijn gemaakt.
+* De `root` ( `structure/jcr:content/root`) definieert de lijst met componenten die beschikbaar zijn op de resulterende pagina.
    * Componenten die zijn gedefinieerd in de sjabloonstructuur kunnen niet worden verplaatst op of verwijderd van resulterende pagina&#39;s.
-   * Als een component eenmaal is ontgrendeld, wordt het `editable` eigenschap is ingesteld op `true`.
-   * Wanneer een component die al inhoud bevat, is ontgrendeld, wordt deze inhoud naar de `initial` vertakking.
+   * Nadat een component is ontgrendeld, `editable` eigenschap is ingesteld op `true`.
+   * Nadat een component die al inhoud bevat, is ontgrendeld, wordt deze inhoud naar de `initial` vertakking.
 
 * De `cq:responsive` node bevat definities voor de responsieve lay-out.
 
@@ -447,7 +448,7 @@ Definieert de eerste inhoud die een nieuwe pagina krijgt wanneer deze wordt gema
 * Bevat een `jcr:content` knooppunt dat naar nieuwe pagina&#39;s wordt gekopieerd.
 * Is samengevoegd met de structuur ( `/structure`) bij het maken van een nieuwe pagina.
 * Bestaande pagina&#39;s worden niet bijgewerkt als de oorspronkelijke inhoud na het maken wordt gewijzigd.
-* De `root` node bevat een lijst met componenten om te definiëren wat er beschikbaar is op de resulterende pagina.
+* De `root` het knooppunt bevat een lijst met componenten om te definiëren wat beschikbaar is in de resulterende pagina.
 * Als er inhoud wordt toegevoegd aan een component in de structuurmodus en die component vervolgens wordt ontgrendeld (of vice versa), wordt deze inhoud gebruikt als initiële inhoud.
 
 ### Layout {#layout}
@@ -461,13 +462,13 @@ Wanneer [bewerken van een sjabloon die u kunt definiëren](/help/sites-cloud/aut
 Het inhoudsbeleid definieert de ontwerpeigenschappen van een component. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt). Het inhoudsbeleid kan worden gemaakt en geselecteerd in de sjablooneditor.
 
 * De eigenschap `cq:policy`over de `root` node
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Verstrekt een relatieve verwijzing naar het inhoudsbeleid voor het de paragraafsysteem van de pagina.
 
 * De eigenschap `cq:policy`, op de componentexpliciete knooppunten onder `root`koppelingen naar het beleid voor de afzonderlijke componenten te verschaffen.
 
 * De feitelijke beleidsdefinities worden opgeslagen onder:
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ Met paginabeleid kunt u de [inhoudsbeleid](#content-policies) voor de pagina (be
    * De statuseigenschap instellen op de knop `jcr:content` knooppunt.
 
       * Bijvoorbeeld op:
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definieer de eigenschap:
 
@@ -500,9 +501,9 @@ Met paginabeleid kunt u de [inhoudsbeleid](#content-policies) voor de pagina (be
 
    * [Definieer de toegestane sjabloonpaden op het tabblad **Pagina-eigenschappen**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) van de desbetreffende pagina of basispagina van een subvertakking.
    * Stel de eigenschap in:
-      `cq:allowedTemplates`
-Op de 
-`jcr:content` knooppunt van de vereiste vertakking.
+     `cq:allowedTemplates`
+Op de `jcr:content` knooppunt van de vereiste vertakking.
+
    Bijvoorbeeld met een waarde van:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -532,7 +533,7 @@ Bij het weergeven van een pagina:
 
 * **Sjablonen**:
 
-   * De `cq:template` eigendom van zijn `jcr:content` Het knooppunt wordt opgeroepen om toegang te krijgen tot de sjabloon die overeenkomt met die pagina.
+   * De `cq:template` eigendom van zijn `jcr:content` node wordt referenced to access the template that corresponding to that page.
 
 * **Onderdelen**:
 

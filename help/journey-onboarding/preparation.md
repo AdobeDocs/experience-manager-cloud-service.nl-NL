@@ -2,9 +2,9 @@
 title: Voorbereiding aan boord
 description: Alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Na het lezen van dit document zult u begrijpen
 * Hoe dat contract het instapproces beïnvloedt.
 * Hoe te op uw onboarding vraag voor te bereiden.
 
-Maak u geen zorgen als u niet vertrouwd bent met alle termen die op deze pagina worden gebruikt. Deze zullen in het volgende deel van de reis worden toegelicht.
+Maak u geen zorgen als u niet vertrouwd bent met alle termen die op deze pagina worden gebruikt. De voorwaarden worden uitgelegd in het volgende deel van de reis.
 
 ## Video {#video}
 
@@ -48,7 +48,7 @@ Zodra het contract wordt ondertekend, voorziet de Adobe uw milieu&#39;s, wordt e
 
 ## Systeemprovisioning {#provisioning}
 
-Zodra het contract is ondertekend, zullen alle AEM cloudomgevingen die onder het contract vallen automatisch door Adobe worden voorzien. Deze omgevingen worden ook gekoppeld aan uw programma&#39;s in Cloud Manager (meer over dit onderwerp verderop in de reis). Deze AEM wolkenmilieu&#39;s zijn inbegrepen in elk AEM as a Cloud Service abonnement, en zijn gewoonlijk samengesteld uit minstens één productiemilieu, één het opvoeren milieu, en naar keuze één of meerdere ontwikkelings of testmilieu&#39;s.
+Nadat het contract is ondertekend, worden alle AEM cloudomgevingen die onder het contract vallen automatisch door Adobe voorzien. Deze omgevingen worden ook gekoppeld aan uw programma&#39;s in Cloud Manager (meer over dit onderwerp verderop in de reis). Deze AEM wolkenmilieu&#39;s zijn inbegrepen in elk AEM as a Cloud Service abonnement, en zijn gewoonlijk samengesteld uit minstens één productiemilieu, één het opvoeren milieu, en naar keuze één of meerdere ontwikkelings of testmilieu&#39;s.
 
 ## On-boarding Call {#onboarding-call}
 

@@ -2,9 +2,9 @@
 title: Client-Side bibliotheken gebruiken op AEM as a Cloud Service
 description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientlibs) in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden verzonden
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2562'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Clientbibliotheekmappen bevatten de volgende items:
 
 ## Clientzijbibliotheekmappen maken {#creating-clientlib-folders}
 
-Clientbibliotheken moeten zich onder `/apps`. Dit is om code beter van inhoud en configuratie te isoleren.
+Clientbibliotheken moeten zich onder `/apps`. Deze regel is nodig om code beter te isoleren van inhoud en configuratie.
 
 Voor de clientbibliotheken onder `/apps` om toegankelijk te zijn, wordt een volmachtsserver gebruikt. ACLs wordt nog afgedwongen op de omslag van de cliëntbibliotheek, maar servlet laat voor de inhoud toe om via worden gelezen `/etc.clientlibs/` als de `allowProxy` eigenschap is ingesteld op `true`.
 
@@ -135,7 +135,7 @@ This is possible. Still need detail.
 
 ## Clientbibliotheken op auteur versus publiceren {#clientlibs-author-publish}
 
-De meeste clientlibs zijn vereist voor de AEM-publicatie-instantie. Dat wil zeggen dat de meeste clientlibs-doeleinden de eindgebruikerservaring van de inhoud moeten opleveren. Voor clientlibs bij publicatie-instanties [front-end constructiegereedschappen](#fed-for-aemaacs) kan worden gebruikt en geïmplementeerd via [clientbibliotheekmappen zoals hierboven beschreven.](#creating-clientlib-folders)
+De meeste clientlibs zijn vereist op de AEM-publicatie-instantie. Dat wil zeggen dat de meeste clientlibs-doeleinden de eindgebruikerservaring van de inhoud moeten opleveren. Voor clientlibs bij publicatie-instanties [front-end constructiegereedschappen](#fed-for-aemaacs) kan worden gebruikt en geïmplementeerd via [clientbibliotheekmappen zoals hierboven beschreven.](#creating-clientlib-folders)
 
 Er zijn echter momenten waarop clientbibliotheken nodig kunnen zijn om de ontwerpervaring aan te passen. Als u bijvoorbeeld een dialoogvenster aanpast, moet u mogelijk kleine CSS- of JS-bits implementeren in de AEM ontwerpinstantie.
 
@@ -185,7 +185,7 @@ Extra instellingen voor de clientbibliotheek kunt u beheren via de **Adobe Grani
 De extra omslageigenschappen omvatten staan controle van gebiedsdelen en bedden toe, maar zijn over het algemeen niet meer nodig en hun gebruik wordt ontmoedigd:
 
 * `dependencies`: Dit is een lijst van andere categorieën van de cliëntbibliotheek waarvan deze bibliotheekomslag afhangt. Bijvoorbeeld, gegeven twee `cq:ClientLibraryFolder` knooppunten `F` en `G`, als een bestand zich in `F` vereist een ander bestand in `G` ten minste een van de `categories` van `G` behoort tot de `dependencies` van `F`.
-* `embed`: Wordt gebruikt om code uit andere bibliotheken in te sluiten. If node `F` insluiten, knooppunten `G` en `H`, zal de resulterende HTML een aaneenschakeling van inhoud van knopen zijn `G` en `H`.
+* `embed`: Wordt gebruikt om code uit andere bibliotheken in te sluiten. If node `F` insluiten, knooppunten `G` en `H`, is de resulterende HTML een samenvoeging van inhoud van knooppunten `G` en `H`.
 
 ### Koppeling naar afhankelijke instellingen {#linking-to-dependencies}
 

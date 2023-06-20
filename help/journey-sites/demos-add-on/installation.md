@@ -2,9 +2,9 @@
 title: Invoegtoepassing demodemodus begrijpen
 description: Leer meer over Cloud Manager en hoe deze wordt gebruikt om de invoegtoepassing te installeren.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Programma&#39;s kunnen productieprogramma&#39;s of sandboxprogramma&#39;s zijn.
 * **Een productieprogramma** wordt gecreeerd om levend verkeer uiteindelijk toe te staan wanneer uw programma klaar is om te leven.
 * **Een sandboxprogramma** is gemaakt voor training, lopende demo&#39;s, activering, concepttest, enz. en is niet bedoeld voor levend verkeer.
 
-Voor de installatie van de AEM Add-on voor demo&#39;s van naslaggids moet u een nieuw sandboxprogramma maken.
+Maak een sandboxprogramma om de AEM Reference Demos Add-On te installeren.
 
 >[!NOTE]
 >

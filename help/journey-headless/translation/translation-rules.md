@@ -2,7 +2,7 @@
 title: Vertaalregels configureren voor inhoud zonder kop
 description: Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -29,7 +29,6 @@ Nu uw schakelaar opstelling is, neemt dit artikel u door de volgende stap van he
 >* De **Vertaalbaar** markering maakt automatisch vertaalregels voor u en vereist geen interventie.
 >* De **Vertaalbaar** de vlag wordt slechts gebruikt als de configuratie van het Kader van de Integratie van de Vertaling wordt geplaatst aan **[Velden inhoudsmodel inschakelen voor vertaling.](/help/sites-cloud/administering/translation/integration-framework.md)**
 >* Het toelaten van deze optie in de configuratie van TIF zal om het even welke manueel-gecreeerde vertaalregels vervangen.|
-
 
 ## Doelstelling {#objective}
 
@@ -77,7 +76,7 @@ In de **Configuratie vertaling** UI, zijn er een aantal opties beschikbaar voor 
 1. AEM slaat de configuratie op.
 1. Selecteer de context die u zojuist hebt gemaakt en tik of klik op **Bewerken**. Hierdoor wordt het **Editor voor omzettingsregels** om de eigenschappen te configureren.
    ![Editor voor vertaalregels](assets/translation-rules-editor.png)
-1. Standaard worden alle configuraties overgeërfd van het bovenliggende pad, in dit geval `/content/dam`. Schakel de optie uit **Overnemen van`/content/dam`** om extra gebieden aan de configuratie toe te voegen.
+1. Standaard worden alle configuraties overgeërfd van het bovenliggende pad, in dit geval `/content/dam`. Schakel de optie uit **Overnemen van`/content/dam`** zodat kunt u extra gebieden aan de configuratie toevoegen.
 1. Als deze optie is uitgeschakeld, onder de knop **Algemeen** in de lijst, voegt u de eigenschapnamen toe van de Content Fragment Model(s) die u [eerder geïdentificeerd als velden voor vertaling.](getting-started.md#content-models)
    1. Voer de naam van de eigenschap in het dialoogvenster **Nieuwe eigenschap** veld.
    1. De opties **Vertalen** en **Overnemen** worden automatisch ingeschakeld.

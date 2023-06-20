@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2022.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -72,7 +72,7 @@ U wordt ten zeerste aangeraden uw gemaakte project bij te werken met de nieuwste
 
 ### TLS 1.0, 1.1-afleiding
 
-Vanaf 30 juni 2022 is voor as a Cloud Service Experience Manager een veiligere netwerkcommunicatie en gegevensuitwisseling met gebruikerssystemen vereist. AEM zal uitsluitend de Veiligheid van de Laag van het Vervoer (TLS), 1.2 protocol gebruiken. Oudere TLS versies 1.0 en 1.1 worden vervangen.
+Vanaf 30 juni 2022 is voor as a Cloud Service Experience Manager een veiligere netwerkcommunicatie en gegevensuitwisseling met gebruikerssystemen vereist. AEM is van plan om exclusief de Veiligheid van de Laag van het Vervoer (TLS), 1.2 protocol te gebruiken. Oudere TLS versies 1.0 en 1.1 zijn nu afgekeurd.
 
 Als u oudere versies van TLS blijft gebruiken als 1.0 of 1.1, kan de toegang tot as a Cloud Service Experience Manager verloren gaan.
 

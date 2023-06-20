@@ -2,9 +2,9 @@
 title: Uw inbox
 description: Taken beheren met de Postvak IN
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '909'
 ht-degree: 15%
 
 ---
@@ -30,7 +30,6 @@ U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en acti
 >* [Projecten](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projecten - werken met taken](/help/sites-cloud/authoring/projects/tasks.md)
 >* [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
-
 
 ## Postvak IN van koptekst {#inbox-in-the-header}
 
@@ -86,26 +85,26 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
 * **Kalenderweergave**
 
-   Voor **Kalenderweergave** u kunt configureren:
+  Voor **Kalenderweergave** u kunt configureren:
 
    * **Groeperen op**
    * **Planning** of **Geen**
    * **Kaartgrootte**
 
-   ![Instellingen voor de postkalenderweergave in het vak](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+  ![Instellingen voor de postkalenderweergave in het vak](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Lijstweergave**
 
-   Voor **Lijstweergave** u kunt het sorteermechanisme configureren:
+  Voor **Lijstweergave** u kunt het sorteermechanisme configureren:
 
    * **Sorteren op**
    * **Sorteervolgorde**
 
-   ![Weergave-instellingen in de keuzelijst](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+  ![Weergave-instellingen in de keuzelijst](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   U kunt uw agenda ook delegeren aan andere gebruikers, u kunt verzoeken om delegatie van andere gebruikers en uw delegaties beheren.
+  U kunt uw agenda ook delegeren aan andere gebruikers, u kunt verzoeken om delegatie van andere gebruikers en uw delegaties beheren.
 
-   ![Instellingen voor delegatie van weergave in de keuzelijst](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![Instellingen voor delegatie van weergave in de keuzelijst](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## Actie ondernemen op een item {#taking-action-on-an-item}
 
@@ -126,6 +125,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
       * Eigenschappen van item weergeven
       * Open een geschikt dashboard of een geschikte wizard voor verdere actie
       * Gerelateerde documentatie openen
+
    * **Stap terug** naar een vorige stap
    * De lading voor een werkstroom weergeven
    * Een project maken van het item
@@ -135,7 +135,6 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    >Zie voor meer informatie:
    >
    >* Workflowitems - [Deelnemen aan workflows](/help/sites-cloud/authoring/workflows/participating.md)
-
 
 2. Afhankelijk van het geselecteerde item wordt een handeling gestart, bijvoorbeeld:
 
@@ -152,7 +151,6 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    * Bevestig de juiste actie, bijvoorbeeld door opnieuw toe te wijzen.
    * De handeling annuleren
    * Selecteer de pijl Vorige om terug te keren naar het Postvak IN, bijvoorbeeld als een handelingstovenaar of documentatiepagina is geopend, kunt u terugkeren naar het Postvak In.
-
 
 ## Een taak maken {#creating-a-task}
 
@@ -176,7 +174,7 @@ In het Postvak IN kunt u taken maken:
 
    * **Geavanceerd**
 
-      * **Naam**:Dit wordt gebruikt om de URL te vormen en als deze leeg is, wordt deze gebaseerd op de **Titel**.
+      * **Naam**: Wordt gebruikt om de URL te vormen en als deze leeg is, is deze gebaseerd op de **Titel**.
 
    ![Geavanceerde opties voor Inbox Add task](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -205,9 +203,11 @@ Voor bepaalde taken kunt u een [Project](/help/sites-cloud/authoring/projects/ov
       * **Begindatum**
       * **Vervaldatum**
       * **Gebruiker** en rol
+
    * **Geavanceerd**
 
       * **Naam**
+
    >[!NOTE]
    >
    >Zie [Een project maken](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) voor volledige informatie.

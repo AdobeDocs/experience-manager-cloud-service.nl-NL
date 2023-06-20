@@ -2,10 +2,10 @@
 title: Analysator van best practices gebruiken
 description: Analysator van best practices gebruiken
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: df1fdbe0f3590708e1da44864b6e08075a521b51
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 41%
+source-wordcount: '2479'
+ht-degree: 38%
 
 ---
 
@@ -27,13 +27,13 @@ Volg de sectie hieronder om de belangrijke overwegingen voor het runnen van de A
 
 * BPA wordt ondersteund op AEM instanties met versie 6.1 en hoger.
 
-   >[!NOTE]
-   >Zie [Installeren op AEM 6.1](#installing-on-aem61) voor speciale voorschriften voor de installatie van BPA op AEM 6.1.
+  >[!NOTE]
+  >Zie [Installeren op AEM 6.1](#installing-on-aem61) voor speciale voorschriften voor de installatie van BPA op AEM 6.1.
 
 * BPA kan op om het even welk milieu lopen, maar het wordt verkiest om het te hebben op een lopen *Werkgebied* milieu.
 
-   >[!NOTE]
-   >Om een effect op bedrijfskritieke instanties te vermijden, wordt u aangeraden BPA op een *Auteur* milieu dat zo dicht mogelijk bij *Productie* omgeving op het gebied van aanpassingen, configuraties, inhoud en gebruikerstoepassingen. CRA kan ook worden uitgevoerd op een kloon van de *auteur* laag van de productieomgeving.
+  >[!NOTE]
+  >Om een effect op bedrijfskritieke instanties te vermijden, wordt u aangeraden BPA op een *Auteur* milieu dat zo dicht mogelijk bij *Productie* omgeving op het gebied van aanpassingen, configuraties, inhoud en gebruikerstoepassingen. CRA kan ook worden uitgevoerd op een kloon van de *auteur* laag van de productieomgeving.
 
 * Het genereren van de inhoud van het BPA-rapport kan een aanzienlijke hoeveelheid tijd in beslag nemen, van enkele minuten tot enkele uren. De benodigde tijd is in hoge mate afhankelijk van de grootte en aard van de AEM-repository-content, de AEM-versie en andere factoren.
 
@@ -157,9 +157,9 @@ Bekijk de onderstaande tabel om inzicht te krijgen in de belangniveaus:
 
 ## Het CSV-rapport van de Analysator van best practices interpreteren {#cra-csv-report}
 
-Wanneer u op de knop **CSV** van uw AEM instantie, wordt het formaat CSV van het rapport van de Analysator van Beste praktijken gebouwd van het inhoudsgeheime voorgeheugen en teruggekeerd aan uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam `results.csv`.
+Wanneer u op de knop **CSV** van uw AEM instantie, wordt het formaat CSV van het rapport van de Analysator van Beste praktijken gebouwd van het inhoudsgeheime voorgeheugen en teruggekeerd aan uw browser. Afhankelijk van de browserinstellingen wordt dit rapport automatisch gedownload als een bestand met de standaardnaam: `results.csv`.
 
-Als het cachegeheugen is verlopen, wordt het rapport opnieuw gegenereerd voordat het CSV-bestand wordt gemaakt en gedownload.
+Als het geheime voorgeheugen is verlopen, dan wordt het rapport opnieuw geproduceerd alvorens het Csv- dossier wordt gebouwd en gedownload.
 
 De CSV-indeling van het rapport bevat informatie die wordt gegenereerd op basis van de Pattern Detector-uitvoer. Deze informatie is gesorteerd en ingedeeld op categorietype, subtype en belang. De indeling is geschikt voor weergave en bewerking in een applicatie zoals Microsoft Excel. De bedoeling is om alle bevindingen toegankelijk te maken in een herhaalbare indeling, zodat rapporten in de loop der tijd kunnen worden vergeleken om de vooruitgang te meten.
 
@@ -207,11 +207,11 @@ De volgende HTTP-headers worden door deze interface gebruikt:
 
 De volgende handige HTTP-queryparameters zijn beschikbaar wanneer HTTP-headers niet gemakkelijk kunnen worden gebruikt:
 
-* `max-age` (nummer, optioneel): Geeft de levensduur van de cachevervaging in seconden aan. Dit getal moet 0 of hoger zijn. De standaard versheidslevensduur is 86400 seconden. Zonder deze parameter of de overeenkomstige kopbal zal een vers geheime voorgeheugen worden gebruikt om verzoeken gedurende 24 uren te dienen, waarbij het geheime voorgeheugen moet worden opnieuw geproduceerd. Gebruiken `max-age=0` zal dwingen het geheime voorgeheugen wordt ontruimd en een regeneratie van het rapport in werking stellen, gebruikend het vorige niet-nul freshness leven voor het pas geproduceerde geheime voorgeheugen.
+* `max-age` (nummer, optioneel): Geeft de levensduur van de cachevervaging in seconden aan. Dit getal moet 0 of hoger zijn. De standaard versheidslevensduur is 86400 seconden. Zonder deze parameter of de overeenkomstige kopbal, wordt een vers geheime voorgeheugen gebruikt om verzoeken voor 24 uren te dienen, waarbij het geheime voorgeheugen moet worden opnieuw geproduceerd. Gebruiken `max-age=0` zal dwingen het geheime voorgeheugen wordt ontruimd en een regeneratie van het rapport in werking stellen, gebruikend het vorige niet-nul freshness leven voor het pas geproduceerde geheime voorgeheugen.
 * `respond-async` (Booleaans, optioneel): Geeft op dat de reactie asynchroon moet worden opgegeven. Gebruiken `respond-async=true` wanneer de cache leeg is, retourneert de server een reactie van `202 Accepted` zonder te wachten op het geheime voorgeheugen om worden verfrist en op het rapport wordt geproduceerd. Als de cache vernieuwd is, heeft deze parameter geen effect. De standaardwaarde is `false`. Zonder deze parameter of de overeenkomstige kopbal zal de server synchroon antwoorden, die een significante hoeveelheid tijd kan vereisen en een aanpassing van de maximumreactietijd voor de cliënt van HTTP vereisen.
-* `may-refresh-cache` (Booleaans, optioneel): Geeft aan dat de server de cache kan vernieuwen als reactie op een aanvraag als de huidige cache leeg, leeg of bijna leeg is. Indien `may-refresh-cache=true`of als deze niet is opgegeven, kan de server een achtergrondtaak starten die de Patroondetector oproept en de cache vernieuwt. Indien `may-refresh-cache=false` dan zal de server geen verfrissingstaak in werking stellen die anders zou gedaan zijn als het geheime voorgeheugen leeg of verouderd is, in welk geval het rapport leeg zal zijn. Deze parameter heeft geen invloed op vernieuwingstaken die al in uitvoering zijn.
-* `return-minimal` (Booleaans, optioneel): Geeft aan dat de reactie van de server alleen de status moet bevatten die de voortgangsindicatie en cachestatus in de JSON-indeling bevat. Indien `return-minimal=true`en wordt de responsinstantie beperkt tot het statusobject. Indien `return-minimal=false`, of als het niet wordt gespecificeerd, zal een volledige reactie worden verstrekt.
-* `log-findings` (Booleaans, optioneel): Specificeert dat de server de inhoud van het geheime voorgeheugen zou moeten registreren wanneer het eerst wordt gebouwd of verfrist. Elke bevinding in de cache wordt geregistreerd als een JSON-tekenreeks. Dit registreren zal slechts voorkomen als `log-findings=true` en de aanvraag genereert een nieuwe cache.
+* `may-refresh-cache` (Booleaans, optioneel): Geeft aan dat de server de cache kan vernieuwen als reactie op een aanvraag als de huidige cache leeg, leeg of bijna leeg is. Indien `may-refresh-cache=true`of als deze niet is opgegeven, kan de server een achtergrondtaak starten die de Patroondetector oproept en de cache vernieuwt. Indien `may-refresh-cache=false` dan zal de server geen verfrissingstaak in werking stellen die anders zou gedaan zijn als het geheime voorgeheugen leeg of verouderd is, in welk geval het rapport leeg is. Deze parameter heeft geen invloed op vernieuwingstaken die al in uitvoering zijn.
+* `return-minimal` (Booleaans, optioneel): Geeft aan dat de reactie van de server alleen de status moet bevatten die de voortgangsindicatie en cachestatus in de JSON-indeling bevat. Indien `return-minimal=true`dan is de hoofdtekst van de reactie beperkt tot het statusobject. Indien `return-minimal=false`, of als het niet wordt gespecificeerd, dan wordt een volledige reactie verstrekt.
+* `log-findings` (Booleaans, optioneel): Specificeert dat de server de inhoud van het geheime voorgeheugen zou moeten registreren wanneer het eerst wordt gebouwd of verfrist. Elke bevinding via de cache wordt geregistreerd als een JSON-tekenreeks. Dit registreren zal slechts voorkomen als `log-findings=true` en de aanvraag genereert een nieuwe cache.
 
 Wanneer zowel de HTTP-header en de overeenkomstige queryparameter aanwezig zijn, heeft de queryparameter prioriteit.
 
@@ -235,7 +235,7 @@ De volgende responswaarden zijn mogelijk:
 
 ### Levensduur van cache aanpassen {#cache-adjustment}
 
-De standaardlevensduur van de BPA-cache is 24 uur. Met de optie om een rapport te verfrissen, en het geheime voorgeheugen, in zowel de AEM instantie als de interface van HTTP te regenereren, zal deze standaardwaarde waarschijnlijk voor de meeste toepassingen van BPA aangewezen zijn. Als het erg lang duurt om een rapport te maken in de AEM-instantie, kunt u de levensduur van de cache aanpassen om de regeneratie van het rapport te minimaliseren.
+De standaardlevensduur van de BPA-cache is 24 uur. Met de optie om een rapport te verfrissen, en het geheime voorgeheugen, in zowel de AEM instantie als de interface van HTTP te regenereren, zal deze standaardwaarde waarschijnlijk voor de meeste toepassingen van BPA aangewezen zijn. Als de tijd van de rapportgeneratie voor uw AEM instantie bijzonder lang is, kunt u het geheim voorgeheugenleven willen aanpassen om de regeneratie van het rapport te minimaliseren.
 
 De langetermijnwaarde is opgeslagen als de eigenschap `maxCacheAge` op de volgende repository-node:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`

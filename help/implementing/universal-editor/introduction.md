@@ -2,9 +2,9 @@
 title: Universal Visual Editor Introductie
 description: Leer hoe de Universele Visuele Redacteur (a.k.a. Met de Universal Editor) kunt u WYSIWYG-bewerkingen (what-you-see-is-what-you-get) zonder kop en met veel titel uitvoeren. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ De Universal Editor kan van instrumenten worden voorzien voor elke implementatie
 
 ### Willekeurige implementatie {#any-implementation}
 
-Omdat ervaringen op verschillende manieren kunnen worden opgebouwd, kan elke implementatie gebruikmaken van de Universal Editor, zodat ontwerpers in hun context kunnen bewerken.
+Omdat de ervaringen op vele verschillende manieren kunnen worden gebouwd, kan om het even welke implementatie de Universele Redacteur gebruiken zodat kunnen de auteurs in-context het uitgeven uitvoeren.
 
-Gebruikers denken vaak dat een implementatie zonder kop de auteurs beperkt tot het bewerken van alle inhoud in een op formulieren gebaseerde gebruikersinterface, maar dat geldt niet voor de universele editor
+Gebruikers denken vaak dat een implementatie zonder kop de auteurs beperkt tot het bewerken van alle inhoud in een op formulieren gebaseerde gebruikersinterface, maar dit is niet waar met de universele editor
 
-De vereisten voor een implementatie om gebruik te maken van de Universal Editor zijn zeer duidelijk en ondersteunen:
+De vereisten voor een implementatie om de Universele Redacteur te gebruiken zijn recht-voorwaarts en steunen het volgende:
 
 * **Elke architectuur** - Server-side rendering, edge-side rendering, client-side rendering, enzovoort.
 * **Willekeurig kader** - Vanilla AEM, of een ander raamwerk van derden zoals React, Next.js, Angular, enz.

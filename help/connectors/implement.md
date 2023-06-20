@@ -2,9 +2,9 @@
 title: Een AEM-connector implementeren
 description: Een AEM-connector implementeren
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '966'
 ht-degree: 7%
 
 ---
@@ -74,7 +74,7 @@ Configuraties van Cloud Services
 Contextbewuste configuraties
 -----------------------------
 
-[Contextbewuste configuraties](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) staat toe aan laagconfiguratie over verschillende omslagen, met inbegrip van `/libs`, `/apps`, `/conf` en submappen onder `/conf`. Het steunt overerving zodat kan een klant globale configuratie vormen terwijl het aanbrengen van specifieke veranderingen voor elke microsite. Omdat het mogelijk is om deze eigenschap voor de Configuraties van Cloud Services te hefboomwerking, zou de schakelaarcode configuratie moeten van verwijzingen voorzien gebruikend context-Aware Configuratie API in plaats van het verwijzen naar een specifieke configuratieknooppunt.
+[Contextbewuste configuraties](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) staat toe aan laagconfiguratie over verschillende omslagen, met inbegrip van `/libs`, `/apps`, `/conf` en submappen onder `/conf`. Het steunt overerving zodat kan een klant globale configuratie vormen terwijl het aanbrengen van specifieke veranderingen voor elke microsite. Omdat het mogelijk is om deze eigenschap voor de Configuraties van Cloud Services te gebruiken, zou de schakelaarcode configuratie moeten van verwijzingen voorzien gebruikend context-Aware Configuratie API in plaats van het van verwijzingen voorzien van een specifieke configuratieknoop.
 
 Als de gewijzigde configuraties in de Schakelaar worden gebruikt, architect de Schakelaar om het omvatten van/het samenvoegen van om het even welke toekomstige updates aan schakelaar-verstrekte standaardconfiguraties met om het even welke klantenconfiguraties te behandelen. Herinner dat het veranderen van aangepaste (zoals in veranderd door de klant) inhoud of configuratie zonder klantenwaarschuwing en toestemming (of tot onverwacht gedrag) met hun Schakelaar kan breken.
 

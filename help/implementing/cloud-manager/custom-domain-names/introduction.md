@@ -2,9 +2,9 @@
 title: Inleiding tot aangepaste domeinnamen
 description: Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbediening te identificeren aan de hand van een unieke merknaam.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ AEM as a Cloud Service biedt de ingebouwde dienst van het netwerk van de inhouds
 * De domeinnamen van de douane (en certificaten) die in AEM-beheerde CDN worden geïnstalleerd worden beheerd via de Manager van de Wolk.
 * De domeinnamen van de douane (en certificaten) die in uw eigen CDN worden geïnstalleerd worden beheerd in die specifieke CDN.
 
-Domeinen die in uw eigen CDN worden beheerd, hoeven niet via Cloud Manager te worden geïnstalleerd. Zij zullen aan AEM via x-Door:sturen-Gastheer ter beschikking worden gesteld en zullen de gastheren aanpassen die in de verzender worden bepaald. [Zie de CDN-documentatie voor meer informatie.](/help/implementing/dispatcher/cdn.md)
+Domeinen die in uw eigen CDN worden beheerd, hoeven niet via Cloud Manager te worden geïnstalleerd. Zij worden ter beschikking gesteld aan AEM als x-Door:sturen-Gastheer en passen de gastheren aan die in de Verzender worden bepaald. Zie de [CDN-documentatie](/help/implementing/dispatcher/cdn.md).
 
 In één milieu kunt u beide domeinen hebben die in AEM-beheerde CDN worden geïnstalleerd en in uw eigen CDN worden geïnstalleerd.
 

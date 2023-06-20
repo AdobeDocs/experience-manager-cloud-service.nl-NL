@@ -1,7 +1,7 @@
 ---
 title: Opmerkingen bij de release 2023.2.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.2.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 937921e0310a659f52803de3d6895db8fcac4d2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Gebruik Headless Adaptive Forms om uw ontwikkelaars in staat te stellen interact
 * multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
 * U kunt zelf formulieren integreren in uw bureaublad en mobiele apps, websites en chattoepassingen
 * gebruik uw eigen UI-componenten opnieuw met formuliertoepassingen
-* de kracht van Adobe Experience Manager Forms benutten
+* de kracht van Adobe Experience Manager Forms gebruiken
 
 U kunt vanaf uw officiële e-mailadres een e-mail sturen naar aem-forms-headless@adobe.com om deel te nemen aan het programma voor vroegtijdige adoptie.
 

@@ -2,9 +2,9 @@
 title: Lanceringen promoten
 description: U moet opstartiepagina's promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '816'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,6 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 >* [Starten - de volgorde van gebeurtenissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) voor meer informatie over automatische promotie en publicatie.
 >
 
-
 U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** console:
 
 1. Open:
@@ -65,13 +64,13 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
       * **Huidige pagina promoten**
       * **Huidige pagina en subpagina&#39;s promoten**
 
-      Als u bijvoorbeeld alleen gewijzigde pagina&#39;s wilt promoten:
+     Als u bijvoorbeeld alleen gewijzigde pagina&#39;s wilt promoten:
 
-      ![Promotie starten](/help/sites-cloud/authoring/assets/launches-promote.png)
+     ![Promotie starten](/help/sites-cloud/authoring/assets/launches-promote.png)
 
-      >[!NOTE]
-      >
-      >Dit geldt voor één keer starten, als u geneste lanceringen hebt, zie [Een geneste start bevorderen](#promoting-a-nested-launch).
+     >[!NOTE]
+     >
+     >Dit geldt voor één keer starten, als u geneste lanceringen hebt, zie [Een geneste start bevorderen](#promoting-a-nested-launch).
 1. Selecteren **Volgende** om verder te gaan.
 1. U kunt de pagina&#39;s bekijken die u wilt promoten. deze zijn afhankelijk van het gekozen paginabereik:
 
@@ -119,7 +118,7 @@ Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de b
    >
    >De weergegeven pagina&#39;s zijn afhankelijk van de **Toepassingsgebied** gedefinieerde en mogelijk de pagina&#39;s die daadwerkelijk zijn bewerkt.
 
-1. Uw wijzigingen worden bevorderd en weerspiegeld in de **Starten** console:
+1. Je wijzigingen worden gepropageerd en weerspiegeld in de **Starten** console:
 
    ![In-startconsole](/help/sites-cloud/authoring/assets/launches-console.png)
 

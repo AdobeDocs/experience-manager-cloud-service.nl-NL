@@ -2,9 +2,9 @@
 title: Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial
 description: Nieuw bij het ontwikkelen van AEM? Wilt u de beste praktijken vernieuwen? Dit is de plaats om te beginnen! Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,7 @@ Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren A
 
 ## Kernbegrippen {#core-concepts}
 
-De tutorial-implementatie maakt gebruik van vele krachtige functies van AEM. De site wordt geïmplementeerd met:
+De zelfstudie-implementatie gebruikt veel krachtige functies voor AEM. De site wordt geïmplementeerd met:
 
 * [Maven AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

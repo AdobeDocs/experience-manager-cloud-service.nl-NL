@@ -3,9 +3,9 @@ title: Implementeren naar AEM as a Cloud Service
 description: Implementeren naar AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3542'
+source-wordcount: '3523'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 De grondbeginselen van codeontwikkeling zijn in AEM as a Cloud Service vergelijkbaar met de oplossingen AEM On Premise en Managed Services. Ontwikkelaars schrijven code en testen deze lokaal, wat vervolgens wordt doorgegeven aan externe AEM as a Cloud Service omgevingen. Cloud Manager, een optioneel hulpprogramma voor het leveren van inhoud voor Managed Services, is vereist. Dit is nu het enige mechanisme voor het opstellen van code aan AEM as a Cloud Service ontwikkelings, stadium, en productiemilieu&#39;s. Voor snelle functiebevestiging en het zuiveren voorafgaand aan het opstellen van die bovengenoemde milieu&#39;s, kan de code van een lokale milieu aan een worden gesynchroniseerd [Snelle ontwikkelomgeving](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-De bijwerking van de [AEM](/help/implementing/deploying/aem-version-updates.md) is altijd een afzonderlijke implementatiegebeurtenis van &#39;push&#39; [aangepaste code](#customer-releases). Op een andere manier bekeken, zouden de versies van de douanecode tegen de AEM versie moeten worden getest die op productie is aangezien dat is wat het bovenop zal worden opgesteld. AEM versies worden bijgewerkt die daarna plaatsvinden. Deze worden regelmatig en automatisch toegepast. Ze zijn bedoeld om achterwaarts compatibel te zijn met de reeds geïmplementeerde klantcode.
+De bijwerking van de [AEM](/help/implementing/deploying/aem-version-updates.md) is altijd een afzonderlijke implementatiegebeurtenis van &#39;push&#39; [aangepaste code](#customer-releases). Op een andere manier bekeken, zouden de versies van de douanecode tegen de AEM versie moeten worden getest die op productie is omdat dat is wat het op de bovenkant wordt opgesteld. AEM versies die daarna plaatsvinden, die regelmatig voorkomen en automatisch worden toegepast. Ze zijn bedoeld om achterwaarts compatibel te zijn met de reeds geïmplementeerde klantcode.
 
 In de rest van dit document wordt beschreven hoe ontwikkelaars hun werkwijzen moeten aanpassen zodat zij zowel met de AEM van de Versie van de as a Cloud Service als met de updates van de klant werken.
 
@@ -31,12 +31,12 @@ In de rest van dit document wordt beschreven hoe ontwikkelaars hun werkwijzen mo
 
 Voor vorige AEM oplossingen, veranderde de huidigste AEM versie niet vaak (ruwweg jaarlijks met driemaandelijkse de dienstpakken) en de klanten zouden de productieinstanties aan de recentste snelstartversie op hun eigen tijd bijwerken, verwijzend naar API Jar. Nochtans, AEM as a Cloud Service toepassingen automatisch aan de recentste versie van AEM worden bijgewerkt vaker, zodat zou de douanecode voor interne versies tegen de recentste AEM versie moeten worden gebouwd.
 
-Net als bij bestaande niet-cloud AEM versies, wordt een lokale, offline ontwikkeling op basis van een specifieke snelstart ondersteund en wordt verwacht dat deze in de meeste gevallen het juiste middel is om foutopsporing uit te voeren.
+Net als bij bestaande niet-cloud AEM versies, wordt een lokale, offline ontwikkeling ondersteund op basis van een specifieke QuickStart en wordt verwacht dat deze in de meeste gevallen het juiste middel is om fouten op te sporen.
 
 >[!NOTE]
 >Er zijn subtiele operationele verschillen tussen de werking van de toepassing op een lokale computer en die van de Adobe Cloud. Deze architecturale verschillen moeten tijdens de lokale ontwikkeling worden gerespecteerd en kunnen bij de implementatie op de cloudinfrastructuur tot een ander gedrag leiden. Vanwege deze verschillen is het belangrijk om de uitgebreide tests uit te voeren op ontwikkelings- en werkgebiedomgevingen voordat nieuwe aangepaste code in productie wordt geïmplementeerd.
 
-Voor het ontwikkelen van aangepaste code voor een interne release wordt de relevante versie van de [as a Cloud Service SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) moet worden gedownload en geïnstalleerd. Voor meer informatie over het gebruiken van de AEM as a Cloud Service Hulpmiddelen van de Verzender, zie [deze pagina](/help/implementing/dispatcher/disp-overview.md).
+Als u aangepaste code voor een interne release wilt ontwikkelen, moet u de relevante versie van de [as a Cloud Service SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) moet worden gedownload en geïnstalleerd. Voor meer informatie over het gebruiken van de AEM as a Cloud Service Hulpmiddelen van de Verzender, zie [deze pagina](/help/implementing/dispatcher/disp-overview.md).
 
 De volgende video biedt een overzicht op hoog niveau over hoe u code kunt implementeren om as a Cloud Service te AEM:
 
@@ -86,7 +86,7 @@ Lees meer over de configuratie van OSGI op [Het vormen OSGi voor AEM as a Cloud 
 
 In sommige gevallen is het handig om wijzigingen in de inhoud voor te bereiden in bronbeheer, zodat dit kan worden geïmplementeerd door Cloud Manager wanneer een omgeving is bijgewerkt. Het kan bijvoorbeeld redelijk zijn om bepaalde basismapstructuren of regelwijzigingen in bewerkbare sjablonen toe te staan om beleid in te schakelen voor componenten die door de implementatie van de toepassing zijn bijgewerkt.
 
-Er zijn twee strategieën om de inhoud te beschrijven die door Cloud Manager aan de veranderlijke bewaarplaats, veranderbare inhoudspakketten zal worden opgesteld en verklaringen opnieuw richt.
+Er zijn twee strategieën om de inhoud te beschrijven die door Cloud Manager aan de veranderlijke bewaarplaats, veranderbare inhoudspakketten wordt opgesteld en verklaringen opnieuw richt.
 
 ### Mabelinhoudspakketten {#mutable-content-packages}
 
@@ -140,9 +140,9 @@ In de volgende gevallen verdient het de voorkeur de methode voor het handmatig c
 Het is aan te raden deze gevallen van wijziging van inhoud opnieuw te plaatsen om de volgende voordelen te bieden:
 
 * Herpoinit leidt tot middelen bij opstarten zodat de logica het bestaan van die middelen voor vanzelfsprekend kan nemen. In de veranderlijke benadering van het inhoudspakket, worden de middelen gecreeerd na opstarten, zodat de toepassingscode die op hen baseert kan ontbreken.
-* Opnieuw aanwijzen is een relatief veilige instructieset aangezien u uitdrukkelijk de te nemen actie controleert. Bovendien zijn de enige ondersteunde bewerkingen additief, met uitzondering van een paar beveiligingsgerelateerde gevallen die verwijdering van Gebruikers, Gebruikers en Groepen toestaan. Daarentegen is het expliciet schrappen van iets in de aanpak van het veranderbare inhoudspakket; als u een filter definieert, wordt alles wat aanwezig is en door een filter wordt bedekt, verwijderd. Toch moet voorzichtigheid worden betracht, aangezien er scenario&#39;s zijn waarin de aanwezigheid van nieuwe inhoud het gedrag van de toepassing kan veranderen.
+* Opnieuw aanwijzen is een relatief veilige instructieset aangezien u uitdrukkelijk de te nemen actie controleert. Bovendien zijn de enige ondersteunde bewerkingen additief, met uitzondering van een paar beveiligingsgerelateerde gevallen die verwijdering van Gebruikers, Gebruikers en Groepen toestaan. Daarentegen is het expliciet schrappen van iets in de aanpak van het veranderbare inhoudspakket; Wanneer u een filter definieert, wordt alle aanwezige elementen die door een filter worden bedekt, verwijderd. Toch moet voorzichtigheid worden betracht, aangezien er scenario&#39;s zijn waarin de aanwezigheid van nieuwe inhoud het gedrag van de toepassing kan veranderen.
 * Repoinit voert snelle en atomische bewerkingen uit. De uitvoerbare inhoudspakketten in tegenstelling tot kunnen sterk afhankelijk van prestaties van de structuren die door een filter worden behandeld. Zelfs als u één knooppunt bijwerkt, kan een momentopname van een grote boomstructuur worden gemaakt.
-* Het is mogelijk om opnieuw richt verklaringen op een lokaal dev milieu bij runtime te bevestigen aangezien zij zullen worden uitgevoerd wanneer de configuratie OSGi wordt geregistreerd.
+* Het is mogelijk om opnieuw richt verklaringen op een lokaal dev milieu bij runtime te bevestigen omdat zij in werking worden gesteld wanneer de configuratie OSGi wordt geregistreerd.
 * Herpointe-instructies zijn atomisch en expliciet en worden overgeslagen als de status al overeenkomt.
 
 Wanneer de toepassing wordt geïmplementeerd in Cloud Manager, worden deze instructies onafhankelijk van de installatie van inhoudspakketten uitgevoerd.
@@ -174,7 +174,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Pakketbeheer - Meerdere inhoudspakketten migreren"
->abstract="Gebruik van pakketbeheer verkennen voor gebruik waarbij een inhoudspakket moet worden geïnstalleerd als &#39;één uit&#39;, dat het importeren van specifieke inhoud van productie naar staging omvat om een productieprobleem op te lossen, het overbrengen van kleine inhoudspakketten van on-premise omgeving naar AEM Cloud-omgevingen en meer."
+>abstract="Gebruik van pakketbeheer verkennen in gevallen waarin een inhoudspakket als &#39;één uit&#39; moet worden geïnstalleerd, waaronder het importeren van specifieke inhoud van de productie naar de ophaling om een productieprobleem op te lossen, het overbrengen van een klein inhoudspakket van de on-premise omgeving naar AEM Cloud-omgevingen en meer."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="De tool Content Transfer"
 
 Er zijn gebruiksgevallen waarin een inhoudspakket als &quot;één uit&quot; moet worden geïnstalleerd. Bijvoorbeeld het invoeren van specifieke inhoud van productie aan het opvoeren om een productiekwestie te zuiveren. Voor deze scenario&#39;s [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) kan worden gebruikt in AEM as a Cloud Service omgevingen.
@@ -263,7 +263,7 @@ Op dit moment werkt AEM as a Cloud Service niet met hulpmiddelen voor indexbehee
 
 Het publicatiemechanisme is achterwaarts compatibel met het [Java API&#39;s voor replicatie AEM](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html).
 
-Voor het ontwikkelen en testen van replicatie met de cloud gereed AEM QuickStart, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Auteur/Publish-instelling. Als het UI-ingangspunt op AEM Author is verwijderd voor de cloud, gaan gebruikers naar `http://localhost:4502/etc/replication` voor configuratie.
+Om te ontwikkelen en te testen met replicatie met de cloud klaar AEM QuickStart, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Auteur/Publish opstelling. Als het UI-ingangspunt op AEM Author is verwijderd voor de cloud, gaan gebruikers naar `http://localhost:4502/etc/replication` voor configuratie.
 
 ## Achterwaarts Compatibele Code voor het Draaien Plaatsingen {#backwards-compatible-code-for-rolling-deployments}
 
@@ -281,7 +281,7 @@ Als er wijzigingen in indexen worden aangebracht, is het belangrijk dat de nieuw
 
 ### Conservatieve codering voor terugdraaiversies {#conservative-coding-for-rollbacks}
 
-Als een mislukking na de plaatsing wordt gemeld of ontdekt, is het mogelijk dat het terugschroeven van prijzen aan de oude versie zal worden vereist. Aanbevolen wordt ervoor te zorgen dat de nieuwe code compatibel is met nieuwe structuren die door die nieuwe versie worden gemaakt, aangezien de nieuwe structuren (alle inhoud met mutaties) niet worden teruggedraaid. Als de oude code niet compatibel is, moeten fixes worden toegepast in volgende versies van de klant.
+Als een mislukking na de plaatsing wordt gemeld of ontdekt, is het mogelijk dat het terugschroeven van prijzen aan de oude versie wordt vereist. Aanbevolen wordt ervoor te zorgen dat de nieuwe code compatibel is met nieuwe structuren die door die nieuwe versie worden gemaakt, aangezien de nieuwe structuren (alle inhoud met mutaties) niet worden teruggedraaid. Als de oude code niet compatibel is, moeten fixes worden toegepast in volgende versies van de klant.
 
 ## Rapid Development Environment (RDE) {#rde}
 

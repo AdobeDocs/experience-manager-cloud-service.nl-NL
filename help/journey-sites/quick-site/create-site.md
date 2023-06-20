@@ -2,9 +2,9 @@
 title: Site maken van sjabloon
 description: Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1485'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Het is heel eenvoudig om een nieuwe site te maken met een sjabloon.
 
    ![Een sjabloon selecteren](assets/select-site-template.png)
 
-1. Geef een titel op voor uw site. Er kan een sitenaam worden opgegeven of deze wordt gegenereerd op basis van de titel als deze wordt weggelaten.
+1. Geef een titel op voor uw site. U kunt een sitenaam opgeven of genereren op basis van de titel, als u deze weglaat.
 
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.

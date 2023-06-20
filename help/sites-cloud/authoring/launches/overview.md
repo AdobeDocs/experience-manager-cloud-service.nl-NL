@@ -2,9 +2,9 @@
 title: Lanceringen
 description: Met behulp van opstartprogramma's kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze sjablonen kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '906'
 ht-degree: 5%
 
 ---
@@ -51,7 +51,7 @@ Met Launches kunt u:
    * De bronpagina&#39;s op het hoogste niveau worden **Productie** genoemd.
       * De bronpagina&#39;s kunnen uit meerdere (afzonderlijke) vertakkingen worden genomen.
 
-   ![Volgorde van de lanceringen](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![Volgorde van de lanceringen](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * De startconfiguratie bewerken:
    * Voeg pagina&#39;s en/of vertakkingen toe aan/van de lancering of verwijder deze.
@@ -65,22 +65,22 @@ Met Launches kunt u:
       * De **Starten**(**Live**) **date** veld: dit kan worden ingesteld wanneer u een opstart maakt of bewerkt.
       * De **Gereed voor productie** markering: dit kan alleen worden ingesteld wanneer u een opstart bewerkt.
       * Als de **Gereed voor productie** markering is ingesteld, wordt de lancering automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **Starten**(**Live**) **date**. Na de promotie worden de productiepagina’s automatisch gepubliceerd.\
-         Als er geen datum is ingesteld, heeft de markering geen effect.
+        Als er geen datum is ingesteld, heeft de markering geen effect.
 * Werk de bron- en startpagina&#39;s parallel bij:
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze zijn ingesteld op basis van overerving); d.w.z. als een live kopie).
    * U kunt wijzigingen aanbrengen in de opstartafbeelding zonder deze automatische updates of de bronpagina&#39;s te onderbreken.
 
-   ![Parallel uitgevoerde acties](/help/sites-cloud/authoring/assets/launches-parallel.png)
+  ![Parallel uitgevoerde acties](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [Een geneste start maken](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - een lancering binnen een lancering:
    * De bron is een bestaande opstart.
    * U kunt [een geneste introductie promoten](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) aan alle doelgroepen; Dit kan een bovenliggende opstart of de bronpagina&#39;s op het hoogste niveau (Productie) zijn.
 
-   ![Een geneste start](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![Een geneste start](/help/sites-cloud/authoring/assets/launches-nested.png)
 
-   >[!CAUTION]
-   >
-   >Als u een opstart verwijdert, wordt de opstart zelf en alle afstammende geneste opstarties verwijderd.
+  >[!CAUTION]
+  >
+  >Als u een opstart verwijdert, wordt de opstart zelf en alle afstammende geneste opstarties verwijderd.
 
 >[!NOTE]
 >
@@ -108,11 +108,11 @@ De console van Lanceringen verstrekt een overzicht van uw lanceringen en staat u
 
 * **Opstartconsole** onder aan het dialoogvenster **Starten** van de **Verwijzingen** spoorstaaf wanneer het navigeren van broninhoud in de console van Plaatsen.
 
-   ![Start Console in References of launds in Sites-console](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![Start Console in References of launds in Sites-console](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * De **Starten** knoop bij hoogste recht, wanneer het navigeren van lanceringsinhoud in de console van Plaatsen:
 
-   ![Optie Starten in Sites-console](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![Optie Starten in Sites-console](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * of rechtstreeks; bijvoorbeeld met:
-   `https://<host>:<port>/libs/launches/content/launches.html`
+  `https://<host>:<port>/libs/launches/content/launches.html`

@@ -2,9 +2,9 @@
 title: Opslagplaatsen voor Cloud Manager
 description: Leer hoe u uw git-opslagruimten maakt, weergeeft en verwijdert in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Er is één enkele primaire bewaarplaats of een tak voor om het even welke bepaa
 Als u een opslagplaats verwijdert, gebeurt het volgende:
 
 * Maak de verwijderde opslagplaats onbruikbaar voor nieuwe opslagplaatsen die in de toekomst kunnen worden gecreeerd.
-   * Het foutbericht `Repository name should be unique within organization.` in dergelijke gevallen worden getoond.
+   * Het foutbericht `Repository name should be unique within organization.` in dergelijke gevallen wordt aangetoond.
 * Maak de verwijderde opslagplaats niet beschikbaar in Cloud Manager en niet beschikbaar voor het koppelen naar een pijpleiding.
 
 Ga als volgt te werk om een opslagplaats in Cloud Manager te verwijderen.

@@ -4,9 +4,9 @@ description: Gebruik het actiecentrum om gemakkelijk actie te ondernemen tegen i
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Als u op de e-mail klikt, gaat u naar het Actions Center, met een pop-up waarin 
 
 Klik op de knop **Meer informatie** de verbinding navigeert de gebruiker aan dit artikel, waar het berichttype in kan van verwijzingen worden voorzien [tabel met ondersteunde berichttypen](#supported-notification-types) hieronder, dat een leidraad biedt voor de te nemen maatregelen.
 
-In het Centrum van Acties, kunt u een lijst van andere recente berichten zien. U wordt aangeraden dat u met de lijst Handelingen een melding bevestigt om aan de Adobe te laten weten dat uw organisatie zich bewust is van de taak en om de melding later op te lossen wanneer corrigerende actie is ondernomen.
+In het Centrum van Acties, kunt u een lijst van andere recente berichten zien. Men adviseert dat het gebruiken van de lijst van Acties, u een bericht bevestigt om aan Adobe te signaleren dat uw organisatie zich van de taak bewust is, en het bericht later op te lossen wanneer de correctieve actie is ondernomen.
 
 ![Lijst met meldingen](/help/operations/assets/notification-list.png)
 
@@ -68,7 +68,7 @@ AEM as a Cloud Service heeft verschillende soorten meldingen, maar er wordt alle
 |---|---|---|---|
 | Operationele incidenten | Kritieke incidenten die onmiddellijke actie vereisen | Gebruiker toegewezen aan productprofiel &quot;Incident Notification - Cloud Service&quot; | X |
 | Proactieve aanbevelingen | Optimalisaties die moeten worden gepland | Gebruiker toegewezen aan productprofiel &quot;Proactieve kennisgeving - Cloud Service&quot; | X |
-| Klassepijplusstatussen van Cloud Manager | Informatie over de toestand van uw pijpleidingen | Gebruiker met de rollen Bedrijfs van de Eigenaar, van de Manager van het Programma, of van de Manager van de Plaatsing, &quot;Andere&quot;checkbox binnen geselecteerd [Voorkeuren Experience Cloud](https://experience.adobe.com/preferences), als [hier beschreven](/help/implementing/cloud-manager/notifications.md). |  |
+| Klassepijplusstatussen van Cloud Manager | Informatie over de toestand van uw pijpleidingen | Gebruiker met de rollen Bedrijfs van de Eigenaar, van de Manager van het Programma, of van de Manager van de Plaatsing, &quot;Andere&quot;checkbox binnen geselecteerd [Voorkeuren Experience Cloud](https://experience.adobe.com/preferences), als [hier beschreven](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## Ondersteunde berichttypen {#supported-notification-types}
 

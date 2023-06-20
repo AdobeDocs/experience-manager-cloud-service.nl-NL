@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service SDK
 description: Een overzicht van de AEM as a Cloud Service Software Development Kit
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1172'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Hieronder volgt de aanbevolen procedure voor het vernieuwen van een lokale omgev
 1. De inhoud van de test van de lokale ontwikkeling moet afzonderlijk worden opgeslagen zodat het niet als deel van de pijpleiding van de Manager van de Wolk wordt opgesteld. Dat komt omdat het alleen gebruikt moet worden voor lokale ontwikkeling
 1. De huidige snelstart stoppen
 1. Verplaats de `crx-quickstart` map naar een andere map voor veilig beheer
-1. Let op de nieuwe AEM die wordt vermeld in Cloud Manager (deze versie wordt gebruikt om de nieuwe QuickStart Jar-versie aan te duiden die u verder kunt downloaden).
+1. Noteer de nieuwe AEM die in Cloud Manager wordt vermeld (deze versie wordt gebruikt om de nieuwe QuickStart Jar-versie te identificeren die u verder kunt downloaden).
 1. Download QuickStart JAR waarvan de versie overeenkomt met de versie AEM de versie van de Software Distribution Portal
 1. Een gloednieuwe map maken en de nieuwe QuickStart Jar in de map plaatsen
 1. Start de nieuwe QuickStart met de gewenste uitvoermodi (wijzig de naam van het bestand of geef de runmodi door via `-r`).
@@ -83,7 +83,7 @@ Als er inhoud is die met elke nieuwe AEM quickstart versie zou moeten worden ge√
 
 De aanbeveling is om de SDK regelmatig bij te werken (bijvoorbeeld om de twee weken) en elke dag een volledige lokale staat te verwijderen om niet per ongeluk afhankelijk te zijn van gegevens van een ander land in de toepassing.
 
-Voor het geval u van CryptoSupport ([of door de geloofsbrieven van de Diensten van de Wolk of de dienst SMTP van de Post in AEM te vormen of door CryptoSupport API in uw toepassing te gebruiken](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), worden de gecodeerde eigenschappen versleuteld met een sleutel die automatisch wordt gegenereerd bij de eerste start van een AEM. Terwijl de cloudsetup ervoor zorgt dat automatisch de milieu-specifieke CryptoKey wordt hergebruikt, is het noodzakelijk om de cryptokey in de lokale ontwikkelomgeving te injecteren.
+Voor het geval u van CryptoSupport ([of door de geloofsbrieven van de Diensten van de Wolk of de dienst SMTP van de Post in AEM te vormen of door CryptoSupport API in uw toepassing te gebruiken](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), worden de gecodeerde eigenschappen gecodeerd door een sleutel die automatisch wordt gegenereerd bij de eerste start van een AEM. Terwijl de cloudsetup ervoor zorgt dat automatisch de milieu-specifieke CryptoKey wordt hergebruikt, is het noodzakelijk om de cryptokey in de lokale ontwikkelomgeving te injecteren.
 
 AEM is standaard geconfigureerd om de sleutelgegevens op te slaan in de gegevensmap van een map, maar voor het gemak van hergebruik in de ontwikkeling kan het AEM worden ge√Ønitialiseerd bij het eerste opstarten met &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Hierdoor worden de coderingsgegevens gegenereerd op &quot;`/etc/key`&quot;.
 
@@ -91,5 +91,5 @@ Als u inhoudspakketten met de gecodeerde waarden wilt hergebruiken, moet u de vo
 
 * Wanneer u eerst de lokale quickstart.jar start, moet u de onderstaande parameter toevoegen: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Het wordt aanbevolen, maar optioneel, om deze altijd toe te voegen.
 * De allereerste keer dat u een instantie start, maakt u een pakket dat een filter voor de hoofdmap bevat &quot;`/etc/key`&quot;. Dit zal het geheim houden om over alle milieu&#39;s opnieuw te worden gebruikt waarvoor u hen zou willen hergebruiken
-* Exporteer alle inhoud die geheimen bevat of zoek de gecodeerde waarden op via `/crx/de` om het aan het pakket toe te voegen dat over installaties opnieuw zal worden gebruikt
-* Wanneer u een nieuw exemplaar (of om met een nieuwe versie te vervangen of als veelvoudige dev milieu&#39;s de geloofsbrieven voor het testen zouden moeten delen) uitdraait, installeer het pakket dat in stap 2 en 3 wordt geproduceerd om de inhoud te kunnen opnieuw gebruiken zonder de behoefte om manueel aan te passen. Dit komt omdat de cryptokey nu synchroon is.
+* Exporteer alle inhoud die geheimen bevat of zoek de gecodeerde waarden op via `/crx/de` om het aan het pakket toe te voegen dat over installaties opnieuw wordt gebruikt
+* Wanneer u een nieuw exemplaar (of om met een nieuwe versie te vervangen of als veelvoudige dev milieu&#39;s de geloofsbrieven voor het testen zouden moeten delen) uitdraait, installeer het pakket dat in stap 2 en 3 wordt geproduceerd de inhoud zonder de behoefte om manueel aan te passen opnieuw te kunnen gebruiken. Deze reden is omdat de cryptosleutel nu synchroon is.

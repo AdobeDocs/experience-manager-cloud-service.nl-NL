@@ -2,9 +2,9 @@
 title: Stijlsysteem
 description: Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1320'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Op dezelfde manier hebben inhoudsauteurs niet alleen de mogelijkheid nodig om de
 Het systeem van de Stijl verstrekt een verenigde oplossing aan zowel de vereisten van de malplaatjeauteur als van de inhoudauteur:
 
 * Sjabloonauteurs kunnen stijlklassen definiëren in het inhoudsbeleid van componenten.
-* Inhoudsauteurs kunnen deze klassen vervolgens selecteren in een vervolgkeuzelijst wanneer ze de component op een pagina bewerken om de bijbehorende stijlen toe te passen.
+* Inhoudsauteurs kunnen deze klassen vervolgens selecteren in een vervolgkeuzelijst wanneer ze de component op een pagina bewerken, zodat ze de bijbehorende stijlen kunnen toepassen.
 
 De stijlklasse wordt dan opgenomen op het decoratie omslagelement van de component zodat de componentenontwikkelaar zich niet met de behandeling van de stijlen moet bezighouden voorbij het verstrekken van hun CSS regels.
 
@@ -104,7 +104,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 >[!CAUTION]
 >
->De CSS klassen (evenals om het even welk noodzakelijk Javascript) die als stijleigenschappen van het beleid van een component worden gevormd moeten worden opgesteld zoals [Clientbibliotheken](/help/implementing/developing/introduction/clientlibs.md) om te werken.
+>De CSS klassen - en om het even welke noodzakelijke Javascript - gevormd als stijleigenschappen van het beleid van een component, moeten worden opgesteld zoals [Clientbibliotheken](/help/implementing/developing/introduction/clientlibs.md) om te werken.
 
 ## Instellen {#setup}
 
@@ -120,9 +120,9 @@ Een component werkt alleen met AEM Stijlsysteem en geeft het stijltabblad weer i
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Dit gebruikt [bedekkingen](/help/implementing/developing/introduction/overlays.md)door [Samenvoegen van verkoopbronnen](/help/implementing/developing/introduction/sling-resource-merger.md).
+Dit gebruikt [bedekkingen](/help/implementing/developing/introduction/overlays.md)door [Samenvoegen van verkoopbronnen](/help/implementing/developing/introduction/sling-resource-merger.md).
 
-Met de gevormde component, zullen de stijlen die door de paginaauteurs worden gevormd automatisch door AEM op het decoratie element worden opgenomen dat AEM automatisch rond elke editable component verpakt. De component zelf hoeft niets anders te doen om dit te bewerkstelligen.
+Met de gevormde component, worden de stijlen die door de paginaauteurs worden gevormd automatisch opgenomen door AEM op het decoratie element dat AEM automatisch rond elke editable component verpakt. De component zelf hoeft niets anders te doen om dit te bewerkstelligen.
 
 ### Het tabblad Stijlen inschakelen in het dialoogvenster Bewerken {#enable-styles-tab-edit}
 
@@ -134,11 +134,11 @@ Het tabblad Bewerken van het dialoogvenster kan op vergelijkbare wijze worden op
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Dit gebruikt [bedekkingen](/help/implementing/developing/introduction/overlays.md)door [Samenvoegen van verkoopbronnen](/help/implementing/developing/introduction/sling-resource-merger.md).
+Dit gebruikt [bedekkingen](/help/implementing/developing/introduction/overlays.md)door [Samenvoegen van verkoopbronnen](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
->Het tabblad Stijlen in het dialoogvenster Bewerken is niet standaard ingeschakeld.
+Het tabblad Stijlen in het dialoogvenster Bewerken is niet standaard ingeschakeld.
 
 ### Stijlen met elementnamen {#styles-with-element-names}
 
@@ -150,15 +150,13 @@ Deze eigenschap is ingesteld op het tabblad `cq:Component` knooppunt. Bijvoorbee
 
 >[!CAUTION]
 >
->Definieer geen elementnamen voor stijlen die kunnen worden gecombineerd. Wanneer meerdere elementnamen zijn gedefinieerd, is de volgorde van prioriteit:
+Definieer geen elementnamen voor stijlen die kunnen worden gecombineerd. Wanneer meerdere elementnamen zijn gedefinieerd, is de volgorde van prioriteit:
 >
->1. HTML heeft voorrang op alles: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
->1. Dan onder veelvoudige actieve stijlen, wordt de eerste stijl in de lijst van stijlen die in het beleid van de component worden gevormd genomen.
->1. Tot slot de componenten `cq:htmlTag`/ `cq:tagName` wordt beschouwd als een terugvalwaarde.
-
+1. HTML heeft voorrang op alles: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+1. Dan onder veelvoudige actieve stijlen, wordt de eerste stijl in de lijst van stijlen die in het beleid van de component worden gevormd genomen.
+1. Tot slot de componenten `cq:htmlTag`/ `cq:tagName` wordt beschouwd als een terugvalwaarde.
 >
 
-
-Deze mogelijkheid om stijlnamen te definiëren is handig voor zeer algemene componenten, zoals de container van de layout of de component Content Fragment, zodat ze een extra betekenis krijgen.
+Deze mogelijkheid om stijlnamen te definiëren is handig voor algemene componenten, zoals de container van de layout of de component Content Fragment, zodat ze een extra betekenis krijgen.
 
 Zo kan een container voor lay-out bijvoorbeeld semantiek krijgen `<main>`, `<aside>`, `<nav>`, enz.

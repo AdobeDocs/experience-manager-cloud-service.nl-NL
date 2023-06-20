@@ -7,9 +7,9 @@ topic-tags: develop
 hide: true
 hidefromtoc: true
 exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3359'
 ht-degree: 3%
 
 ---
@@ -62,7 +62,7 @@ In deze les, vertrouwt u zich met het as a Cloud Service milieu van AEM Forms do
 
 1. Open uw browser en ga URL van het auteursmilieu van de Cloud Service in.
 
-1. Meld u aan bij de ontwikkelomgeving van de Cloud Service. De login geloofsbrieven voor uw auteursmilieu zullen met u tijdens het laboratorium worden gedeeld.
+1. Meld u aan bij de ontwikkelomgeving van de Cloud Service. De login geloofsbrieven voor uw auteursmilieu worden gedeeld met u tijdens het laboratorium.
 
 1. Nadat u bent aangemeld, navigeert u naar de gebruikersinterface van AEM Forms. Klikken **Forms**.
 
@@ -267,7 +267,6 @@ Stel de lokale opslagruimte van het thema in:
    > * Als u een bericht ontvangt waarin u wordt gevraagd om Npm bij te werken via het dialoogvenster `npm notice Run npm nstall -g npm@9.6.0`, negeert u het bericht.
    > * Stel geen andere npm bevelen in werking tenzij geïnstrueerd in het werkboek.
 
-
 1. Voer nu de volgende opdracht uit om een voorbeeld van het formulier te bekijken.
 
    ```Shell
@@ -366,7 +365,7 @@ U kunt als volgt het formulier weergeven dat wordt gehost op uw cloudservice-pub
 
    * **AEM_FORM_PATH**: Geef het pad op van het adaptieve formulier dat in de vorige les is gemaakt. Bijvoorbeeld, `/content/forms/af/registration/`
 
-      ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
+     ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
 1. Open het opdrachtvenster, controleer of u zich in de map met formulieren zonder hoofdletter en hoofdletter bevindt voor de reactie en voer de volgende opdracht uit:
 
@@ -516,7 +515,7 @@ U kunt als volgt het formulier weergeven dat wordt gehost op uw cloudservice-pub
 
    * **AEM_FORM_PATH**: Geef het pad op van het adaptieve formulier dat in de vorige les is gemaakt. Bijvoorbeeld: /content/forms/af/registration/
 
-      ![](/help/forms/assets/screenshot2028126929.png)
+     ![](/help/forms/assets/screenshot2028126929.png)
 
 1. Open het opdrachtvenster en zorg dat u zich bij de **response-starter-kit-aem-headless-forms** en voer de volgende opdracht uit:
 

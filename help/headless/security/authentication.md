@@ -1,11 +1,11 @@
 ---
 title: Verificatie voor externe AEM GraphQL-query's op inhoudsfragmenten
-description: Begrijp de authentificatie die voor de vragen van de Verre AEM GraphQL wordt vereist om uw inhoud zonder kop te beveiligen.
+description: Begrijp de authentificatie die voor de vragen van de Verre AEM GraphQL wordt vereist om uw hoofdloze inhoudslevering te beveiligen.
 feature: Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---

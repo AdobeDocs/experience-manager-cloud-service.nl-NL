@@ -2,9 +2,9 @@
 title: Handleiding Snel aan de slag met de authoring van pagina's
 description: Een snelle gids op hoog niveau waarmee u pagina-inhoud kunt gaan ontwerpen
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 07702fbebc768ee877d68219eff5551b09c7ff3e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1578'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ Voordat u met de snelstartgids begint, volgt hier een kleine verzameling algemen
 
 * Pagina&#39;s opnieuw ordenen
 
-   * Dit kan worden gedaan in [Lijstweergave](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). De wijzigingen worden toegepast en zijn zichtbaar in andere weergaven.
+   * Dit kan worden gedaan in [Lijstweergave](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). De wijzigingen worden toegepast en zichtbaar in andere weergaven.
 
 ### Pagina&#39;s ontwerpen {#page-authoring}
 
@@ -52,7 +52,6 @@ Voordat u met de snelstartgids begint, volgt hier een kleine verzameling algemen
 >
 >* [Sneltoetsen bij het bewerken van pagina&#39;s](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [Sneltoetsen voor consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
 
 ### Uw pagina zoeken {#finding-your-page}
 
@@ -103,6 +102,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
       * Op een mobiel apparaat: Tik en houd de kaart vast
       * Op een desktopapparaat: gebruiken [snelle actie](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) aangeduid met het verdeelstreepje:
+
    * De kaart wordt bedekt met een vinkje om aan te geven dat de pagina is geselecteerd.
 
    ![Voorbeeldkaart](/help/sites-cloud/authoring/assets/card.png)
@@ -138,9 +138,9 @@ Uw pagina bewerken:
       * Het tabblad Componenten selecteren (het tabblad [componentenbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser))
       * De vereiste component naar de pagina slepen.
 
-      Het zijpaneel kan worden geopend (en gesloten) met:
+     Het zijpaneel kan worden geopend (en gesloten) met:
 
-      ![Keuzerondje voor zijpaneel](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+     ![Keuzerondje voor zijpaneel](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
    * [De inhoud van een bestaande component bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) op de pagina:
 
@@ -148,17 +148,21 @@ Uw pagina bewerken:
       * Open de editor op plaats voor de component met Tikken en vasthouden of dubbelklikken. De beschikbare acties worden weergegeven (voor sommige componenten is dit een beperkte selectie).
       * U kunt als volgt alle beschikbare acties weergeven:
 
-         ![Knop Volledig scherm](/help/sites-cloud/authoring/assets/full-screen.png)
+        ![Knop Volledig scherm](/help/sites-cloud/authoring/assets/full-screen.png)
+
    * [De eigenschappen van een bestaande component configureren](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
       * Open de werkbalk van de component met Tik of klik. Gebruik de **Configureren** (moersleutel) om het dialoogvenster te openen.
+
    * [Een component verplaatsen](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) ofwel:
 
       * Sleep de vereiste component naar de nieuwe locatie.
       * Open de werkbalk van de component met Tik of klik. Gebruik de **Knippen** dan **Plakken** pictogrammen indien nodig.
+
    * [Kopiëren (en Plakken)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) een component:
 
       * Open de werkbalk van de component met Tik of klik. Gebruik de **Kopiëren** dan **Plakken** pictogrammen naar wens.
+
    >[!NOTE]
    >
    >U kunt **Plakken** op dezelfde pagina of op een andere pagina. Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet de pagina worden vernieuwd.
@@ -166,14 +170,17 @@ Uw pagina bewerken:
    * [Verwijderen](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) een component:
 
       * Open de werkbalk van de component met Tik of klik en gebruik vervolgens de knop **Verwijderen** pictogram.
+
    * [Annotaties toevoegen](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) op de pagina:
 
       * Selecteer **Annoteren** (pictogram spraakballon). Annotaties toevoegen met de opdracht **Annotatie toevoegen** (plus). Sluit de annotatiemodus af met behulp van de X rechtsboven.
 
-         ![Knop Annotaties](/help/sites-cloud/authoring/assets/annotations.png)
+        ![Knop Annotaties](/help/sites-cloud/authoring/assets/annotations.png)
+
    * [Een voorvertoning van een pagina weergeven](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) (om te zien hoe het in het publicatiemilieu zal verschijnen)
 
       * Selecteren **Voorvertoning** op de werkbalk.
+
    * Ga terug naar de bewerkingsmodus (of selecteer een andere modus) met de opdracht **Bewerken** keuzelijst.
 
    >[!NOTE]
@@ -196,7 +203,6 @@ Er zijn twee (belangrijkste) methoden [bewerken, pagina-eigenschappen](/help/sit
 
    1. De pagina-eigenschappen worden weergegeven. U kunt naar wens updates uitvoeren en vervolgens Opslaan gebruiken om deze bij te houden
 
-
 * Wanneer [bewerken van uw pagina](#editing-your-page-content):
 
    1. Open de **Pagina-informatie** -menu.
@@ -218,7 +224,6 @@ Er zijn twee hoofdmethoden [publiceren, uw pagina](/help/sites-cloud/authoring/f
 
       ![Knop Snel publiceren](/help/sites-cloud/authoring/assets/quick-publish.png)
 
-
 * Wanneer [bewerken van uw pagina](#editing-your-page-content):
 
    1. Open de **Pagina-informatie** -menu.
@@ -226,11 +231,11 @@ Er zijn twee hoofdmethoden [publiceren, uw pagina](/help/sites-cloud/authoring/f
 
 * U kunt het publiceren van een pagina vanuit de console alleen ongedaan maken via de optie **Publicatie beheren**, die alleen beschikbaar is op de werkbalk (niet via de snelle acties).
 
-   ![Knop Publicatie beheren](/help/sites-cloud/authoring/assets/manage-publication.png)
+  ![Knop Publicatie beheren](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-   De **Publicatie van pagina ongedaan maken** deze optie is nog steeds beschikbaar via de **Pagina-informatie** in de editor.
+  De **Publicatie van pagina ongedaan maken** deze optie is nog steeds beschikbaar via de **Pagina-informatie** in de editor.
 
-   Zie [Pagina&#39;s publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) voor meer informatie .
+  Zie [Pagina&#39;s publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) voor meer informatie .
 
 ### De pagina verplaatsen, kopiëren en plakken of verwijderen {#move-copy-and-paste-or-delete-your-page}
 
@@ -247,12 +252,15 @@ Deze acties kunnen allemaal worden geactiveerd door:
    * [Kopiëren](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
       * Vervolgens moet u naar de nieuwe locatie navigeren en plakken.
+
    * [Verplaatsen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
       * De wizard wordt geopend om de gegevens te verzamelen die nodig zijn om de pagina te verplaatsen. Volg de aanwijzingen op het scherm.
+
    * [Verwijderen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
       * U wordt gevraagd de actie te bevestigen.
+
    >[!NOTE]
    >
    >Verwijderen is niet beschikbaar als een snelle handeling.
@@ -312,6 +320,7 @@ Hetzelfde basismechanisme wordt gebruikt bij het herstellen en/of vergelijken va
    * **Deze versie herstellen**
 
       * De versie wordt hersteld.
+
    * **Verschillen tonen**
 
       * De pagina wordt geopend met de verschillen (tussen de twee versies) gemarkeerd.

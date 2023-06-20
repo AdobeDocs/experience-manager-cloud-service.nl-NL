@@ -10,10 +10,10 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2550'
+source-wordcount: '2544'
 ht-degree: 0%
 
 ---
@@ -192,7 +192,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de `u
 
    >[!NOTE]
    >
-   > Alleen de basisbibliotheken zijn &#39;hard-coded&#39; als onderdeel van de paginascripts. `venia.site` is niet opgenomen in deze bestanden en wordt in plaats daarvan opgenomen als onderdeel van de paginasjabloon voor meer flexibiliteit. Dit wordt later geïnspecteerd.
+   > Alleen de basisbibliotheken zijn &#39;hard-coded&#39; als onderdeel van de paginascripts. `venia.site` is niet opgenomen in deze bestanden en wordt in plaats daarvan opgenomen als onderdeel van de paginasjabloon voor meer flexibiliteit. Dit proces wordt later geïnspecteerd.
 
 1. Van de terminal, bouw en stel het volledige project aan een lokaal geval van AEM op:
 
@@ -277,14 +277,14 @@ Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientz
 
    ![Paginabeleid - bestemmingspagina](../assets/style-cif-component/page-policy-properties.png)
 
-   Rechts ziet u een lijst met Client Libraries **categorieën** die worden opgenomen op alle pagina&#39;s die deze sjabloon gebruiken.
+   Rechts ziet u een lijst met Client Libraries **categorieën** die zijn opgenomen op alle pagina&#39;s die deze sjabloon gebruiken.
 
    * `venia.dependencies` - Biedt leveranciers die `venia.site` is afhankelijk van.
    * `venia.site` - Dit is de categorie voor `clientlib-site` de `ui.frontend` wordt gegenereerd.
 
    Merk op dat andere malplaatjes het zelfde beleid gebruiken, **Inhoudspagina**, **Openingspagina**, enz. Door hetzelfde beleid opnieuw te gebruiken, kunnen we ervoor zorgen dat dezelfde clientbibliotheken op alle pagina&#39;s worden opgenomen.
 
-   Het voordeel van het gebruiken van Malplaatjes en het beleid van de Pagina om de opneming van cliëntbibliotheken te beheren is dat u het beleid per malplaatje kunt veranderen. U beheert bijvoorbeeld twee verschillende merken binnen dezelfde AEM. Elk merk heeft zijn eigen unieke stijl of *thema* maar de basisbibliotheken en de code zullen het zelfde zijn. Een ander voorbeeld: als u een grotere clientbibliotheek had die u alleen op bepaalde pagina&#39;s wilde weergeven, kon u een uniek paginabeleid maken, alleen voor die sjabloon.
+   Het voordeel van het gebruiken van Malplaatjes en het beleid van de Pagina om de opneming van cliëntbibliotheken te beheren is dat u het beleid per malplaatje kunt veranderen. U beheert bijvoorbeeld twee verschillende merken binnen dezelfde AEM. Elk merk heeft zijn eigen unieke stijl of *thema* maar de basisbibliotheken en de code zijn hetzelfde . Een ander voorbeeld: als u een grotere clientbibliotheek had die u alleen op bepaalde pagina&#39;s wilde weergeven, kon u een uniek paginabeleid maken, alleen voor die sjabloon.
 
 ## Lokale WebPack-ontwikkeling {#local-webpack-development}
 
@@ -317,7 +317,7 @@ Met de webpack-dev-server worden afbeeldingen en sommige van de CSS/JavaScript-c
    </body>
    ```
 
-   Deze worden verwijderd omdat ze de gecompileerde versie vertegenwoordigen van de CSS en JavaScript die zijn gegenereerd door de `ui.frontend` module. Laat de andere clientbibliotheken ongewijzigd, omdat ze van de actieve AEM worden proxy&#39;s.
+   Deze worden verwijderd omdat ze de gecompileerde versie vertegenwoordigen van de CSS en JavaScript die zijn gegenereerd door de `ui.frontend` module. Laat de andere clientbibliotheken ongewijzigd, omdat ze vanaf de actieve AEM worden proxy.
 
 1. Open een nieuw terminalvenster en navigeer in de `ui.frontend` map. De opdracht uitvoeren `npm start`:
 
@@ -336,7 +336,7 @@ Met de webpack-dev-server worden afbeeldingen en sommige van de CSS/JavaScript-c
 
    ![Webpack-ontwikkelserver op poort 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
-   Laat de webpack-dev-server actief. Het zal in de volgende oefening worden gebruikt.
+   Laat de webpack-dev-server actief. Het wordt gebruikt in de volgende oefening.
 
 ## Kaartstijl voor productteam implementeren {#update-css-product-teaser}
 

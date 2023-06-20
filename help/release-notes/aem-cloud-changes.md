@@ -2,9 +2,9 @@
 title: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
 description: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '845'
 ht-degree: 8%
 
 ---
@@ -28,7 +28,6 @@ AEM Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer va
 >* De [architectuur](/help/overview/architecture.md) van Adobe Experience Manager as a Cloud Service
 >* [Belangrijke wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 >* [Belangrijke wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
-
 
 De belangrijkste verschillen zijn te vinden op de volgende gebieden:
 
@@ -57,7 +56,7 @@ Alle inhoud en submappen in `/apps` en `/libs` is alleen-lezen. Om het even welk
 * Bedekkingen voor gebieden in `/libs` die mogen worden overschreden, zijn nog steeds toegestaan binnen `/apps`.
    * Dergelijke overlays moeten afkomstig zijn van Git via de CI/CD-leiding.
 * Statische het ontwerpinformatie van het Malplaatje die in wordt opgeslagen `/apps` kan niet via UI worden bewerkt.
-   * Het wordt aanbevolen bewerkbare sjablonen te gebruiken.
+   * Het wordt aanbevolen Bewerkbare sjablonen te gebruiken.
    * Als de Statische Malplaatjes nog worden vereist, moet de configuratieinformatie uit Git via de pijpleiding CI/CD komen.
 * MSM de Vervaging en de douaneMSM uitrolconfiguraties moeten van Git via de pijpleiding worden geïnstalleerd CI/CD.
 * I18n vertalingsveranderingen moeten van Git via de CI/CD pijpleiding komen.

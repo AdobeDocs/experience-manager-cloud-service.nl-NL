@@ -2,9 +2,9 @@
 title: Implementatiefase
 description: Zorg ervoor dat uw code en inhoud klaar zijn voor de migratie naar de cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2337'
 ht-degree: 8%
 
 ---
@@ -25,7 +25,7 @@ Dit document heeft tot doel:
 
 * Introduceer u tot de Manager van de Wolk, AEM ononderbroken integratie en leveringskader dat wordt gebruikt om code aan AEM as a Cloud Service op te stellen
 * Krijg u aan snelheid met het hulpmiddel van de inhoudoverdracht
-* Beschrijf de hulpmiddelen van het coderefactoring u moet gebruiken om uw code voor AEM as a Cloud Service te moderniseren
+* Beschrijf de hulpmiddelen van het coderefactoring u moet gebruiken zodat kunt u uw code voor AEM as a Cloud Service moderniseren
 
 ## Cloud Manager gebruiken {#using-cloud-manager}
 
@@ -49,7 +49,7 @@ Het volgende cijfer toont de belangrijkste stappen betrokken in de fase die uw c
 
 ![afbeelding](/help/journey-migration/assets/exec-image1.png)
 
-We zullen in de onderstaande hoofdstukken beginnen met de instrumenten die u nodig hebt om dit te bereiken.
+We gaan de gereedschappen die u nodig hebt, in detail beschrijven, zodat u dit kunt bereiken in de onderstaande hoofdstukken.
 
 ## Inhoud migreren {#content-migration}
 
@@ -67,7 +67,7 @@ Voor een volledige informatie over de werking van het gereedschap en de manier w
 
 Het is tijd om de bestaande eigenschappen te beginnen reactoring om met Cloud Services compatibel te zijn.
 
-Om dit te doen, moet u een blik bij de documentatie nemen die het basistooling detailleert u zult moeten beginnen refactoring uw code:
+Eerst, bekijk de documentatie detailleert het basistooling, en begin het refactoring van uw code:
 
 
 * Tijdens planning, is het een goed idee om een lijst van gebieden te hebben die moeten worden bewaakt om met AEM as a Cloud Service compatibel te zijn. U kunt revisie [Richtlijnen voor ontwikkeling](/help/implementing/developing/introduction/development-guidelines.md) voor meer informatie over hoe te om code voor Cloud Service te beproeven en te optimaliseren.
@@ -79,11 +79,11 @@ Bovendien kunt u ook:
 
 * Bekijk deze video om te begrijpen hoe u de Dispatcher SDK lokaal kunt installeren:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+  >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * Bekijk deze video om te begrijpen hoe u Dispatcher SDK kunt configureren:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### Een wijziging in de inspringing {#a-change-in-mindset}
 
@@ -163,7 +163,7 @@ Het verzamelen van gegevens kan u helpen de migratieactiviteiten en bijbehorende
 
 <!-- Alexandru: hiding this for now
 
-One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 
 -->
 
@@ -177,8 +177,8 @@ De volgende tabel illustreert een typisch migratieplan:
 
 | Migratie-herhaling | Begindatum | Geschatte einddatum | Afhankelijkheden | Geschatte duur (in dagen) | Aanvullende details/actiepunten |
 |---|---|---|---|---|---|
-| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |  |  |  |  |  |
-| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |  |  |  |  |  |
+| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
+| PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |
 
 Zoals u in de bovenstaande tabel kunt zien, is het nuttig om een specifieke naamgevingsindeling te gebruiken om de migratieherhalingen te identificeren, bijvoorbeeld: **PRDCLONE** voor de bron AEM omgeving, **AUTEUR/PUBLICEREN** voor de AEM as a Cloud Service omgeving, **CSSTAGE-AUTEUR** voor de AEM as a Cloud Service instantie enzovoort.
 
@@ -209,7 +209,7 @@ De volgende tabel illustreert een functionele migratiecontracker:
 
 | Bron (Omgeving / Instantie / URL) | Doel (omgeving / instantie / URL) | Naam migratieset, type (bij openen of boven) | Grootte migratieset (MB) | Gebruikerstoewijzing (Ja/Nee) | Duur van extractie (begin, eind, genomen tijd) | Ingestieduur (begin, einde, tijd genomen) | Problemen/resoluties/details |
 |---|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |  |
+|   |   |   |   |   |   |   |   |
 
 ## Strategie en tijdlijn voor migratie van inhoud {#content-strategyand-timeline}
 

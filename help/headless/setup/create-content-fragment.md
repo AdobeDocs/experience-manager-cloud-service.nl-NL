@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten maken - Instellingen zonder kop
 description: Leer hoe u AEM inhoudsfragmenten kunt gebruiken voor het ontwerpen, maken, beheren en gebruiken van pagina-onafhankelijke inhoud voor levering zonder kop.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Inhoudsfragmenten bevatten gestructureerde inhoud en kunnen in JSON-indeling wor
 
 ## Een inhoudsfragment maken {#how-to-create-a-content-fragment}
 
-Inhoudsauteurs maken een willekeurig aantal Inhoudsfragmenten om de inhoud te vertegenwoordigen die zij maken. Dit zal hun belangrijkste taak in AEM zijn. Met het oog op deze gids voor het op gang brengen van de werkzaamheden zullen we slechts één gids hoeven te maken.
+Inhoudsauteurs maken een willekeurig aantal Inhoudsfragmenten om de inhoud te vertegenwoordigen die zij maken. Dat is hun belangrijkste taak in AEM. Met het oog op deze gids voor het op gang brengen van de werkzaamheden zullen we slechts één gids hoeven te maken.
 
 1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Navigatie** -> **Inhoudsfragmenten**.
 

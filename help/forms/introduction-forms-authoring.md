@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2393'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 Met Adaptieve Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. [!DNL AEM Forms] biedt een intuïtieve gebruikersinterface en kant-en-klare componenten voor het maken en werken met Adaptive Forms. U kunt desgewenst een adaptief formulier maken op basis van een formuliermodel of -schema of zonder formuliermodel. Het is belangrijk om zorgvuldig het formuliermodel te kiezen dat niet alleen aan uw vereisten voldoet, maar ook uw bestaande infrastructurele investeringen en middelen uitbreidt. U kunt uit de volgende opties kiezen om een adaptief formulier te maken:
 
 * **Een formuliergegevensmodel gebruiken**
-   [Gegevensintegratie](data-integration.md) Hiermee kunt u entiteiten en services integreren van verschillende gegevensbronnen in een formuliergegevensmodel dat u kunt gebruiken voor het maken van een adaptieve Forms. Kies Formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
+  [Gegevensintegratie](data-integration.md) Hiermee kunt u entiteiten en services integreren van verschillende gegevensbronnen in een formuliergegevensmodel dat u kunt gebruiken voor het maken van een adaptieve Forms. Kies Formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
 
 * **Een XDP-formuliersjabloon gebruiken**
 Het is een ideaal formuliermodel als u investeert in XFA-gebaseerde of XDP-formulieren. Het biedt een directe manier om uw XFA-formulieren om te zetten in Adaptive Forms. Bestaande XFA-regels blijven behouden in de gekoppelde Adaptive Forms. De resulterende Adaptieve Forms ondersteunt XFA-constructies, zoals validaties, gebeurtenissen, eigenschappen en patronen.
@@ -35,9 +35,9 @@ De schema&#39;s van XML en JSON vertegenwoordigen de structuur waarin de gegeven
 * **Geen of geen formuliermodel gebruiken**
 Adaptieve Forms die met deze optie is gemaakt, gebruikt geen formuliermodel. De XML-gegevens die op basis van dergelijke formulieren worden gegenereerd, hebben een vlakke structuur met velden en bijbehorende waarden.
 
-   >[!NOTE]
-   >
-   > U kunt de eigenschappen van het formuliermodel wijzigen in de sjablooneditor voor Adaptief formulier of Adaptief formulier. Zie voor meer informatie [Eigenschappen van een formuliermodel bewerken in een adaptief formulier](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  >[!NOTE]
+  >
+  > U kunt de eigenschappen van het formuliermodel wijzigen in de sjablooneditor voor Adaptief formulier of Adaptief formulier. Zie voor meer informatie [Eigenschappen van een formuliermodel bewerken in een adaptief formulier](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Als u een adaptief formulier wilt maken, raadpleegt u [Een adaptief formulier maken](creating-adaptive-form.md).
 
@@ -91,17 +91,17 @@ Hiermee kunt u formuliermodelelementen naar het adaptieve formulier slepen en ne
 
 * **Eigenschappenbrowser**
 
-   Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van een component. Eigenschappen van de container van het Adaptief formulier weergeven:
+  Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van een component. Eigenschappen van de container van het Adaptief formulier weergeven:
 
-   Selecteer een component en tik vervolgens op ![op veldniveau](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Adaptive Form Container]** en tikt u vervolgens op ![eigenschappen](assets/Smock_Wrench_18_N.svg).
+  Selecteer een component en tik vervolgens op ![op veldniveau](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Adaptive Form Container]** en tikt u vervolgens op ![eigenschappen](assets/Smock_Wrench_18_N.svg).
 
 * **Bandenbrowser**
 
-   Hiermee kunt u verschillende typen inhoud segmenteren, zoals afbeeldingen, documenten, pagina&#39;s, films, enzovoort.
+  Hiermee kunt u verschillende typen inhoud segmenteren, zoals afbeeldingen, documenten, pagina&#39;s, films, enzovoort.
 
 * **Browser voor componenten**
 
-   Bevat componenten die u kunt gebruiken om een adaptief formulier te maken. U kunt componenten van naar het Aangepaste formulier slepen om formulierelementen toe te voegen en toegevoegde elementen te configureren volgens de vereisten. In de volgende tabel worden de componenten beschreven die in de componentbrowser worden weergegeven.
+  Bevat componenten die u kunt gebruiken om een adaptief formulier te maken. U kunt componenten van naar het Aangepaste formulier slepen om formulierelementen toe te voegen en toegevoegde elementen te configureren volgens de vereisten. In de volgende tabel worden de componenten beschreven die in de componentbrowser worden weergegeven.
 
 <table>
  <tbody>
@@ -151,7 +151,7 @@ Hiermee kunt u formuliermodelelementen naar het adaptieve formulier slepen en ne
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Hiermee voegt u een veld toe waarin u het e-mailadres kunt vastleggen. De component Email valideert standaard e-mailadressen met de volgende reguliere expressie.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Hiermee voegt u een veld toe waarin u het e-mailadres kunt vastleggen. De component Email valideert standaard e-mailadressen met de volgende reguliere expressie.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Bestandsbijlage</td>
@@ -191,7 +191,7 @@ Hiermee kunt u formuliermodelelementen naar het adaptieve formulier slepen en ne
   </tr>
   <tr>
    <td>Deelvenster</td>
-   <td><p>Hiermee voegt u een deelvenster of subdeelvenster toe.</p> <p>U kunt ook een deelvenstercomponent toevoegen vanaf de werkbalk van het bovenliggende deelvenster met de opdracht <span class="uicontrol">Deelvenster Onderliggend element toevoegen</code> knop. Op dezelfde manier kunt u een paneelspecifieke toolbar toevoegen gebruikend <span class="uicontrol">Werkbalk Deelvenster toevoegen</code> knop. U kunt de positie van de paneelwerkbalk configureren met behulp van het dialoogvenster Deelvenster bewerken.</code></code></p> </td>
+   <td><p>Hiermee voegt u een deelvenster of subdeelvenster toe.</p> <p>U kunt ook een deelvenstercomponent toevoegen vanaf de werkbalk van het bovenliggende deelvenster met de opdracht <span class="uicontrol">Deelvenster Onderliggend element toevoegen</code> knop. Op dezelfde manier kunt u een paneelspecifieke toolbar toevoegen gebruikend <span class="uicontrol">Werkbalk Deelvenster toevoegen</code> knop. U kunt de positie van de paneelwerkbalk configureren met behulp van het dialoogvenster Deelvenster bewerken.</p> </td>
   </tr>
   <tr>
    <td>Wachtwoordvak</td>

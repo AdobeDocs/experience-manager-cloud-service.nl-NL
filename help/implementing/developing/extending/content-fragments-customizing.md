@@ -2,9 +2,9 @@
 title: Contentfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1808'
 ht-degree: 1%
 
 ---
@@ -32,13 +32,13 @@ De afzonderlijke inhoudsfragmenten zijn gebaseerd op modellen van inhoudsfragmen
 * Modellen zijn samengesteld uit gegevenstypen.
 * Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
 
-   >[!NOTE]
-   >
-   >Als u een inhoudsfragment wilt weergeven/renderen, moet uw account `read` machtigingen voor het model.
+  >[!NOTE]
+  >
+  >Als u een inhoudsfragment wilt weergeven/renderen, moet uw account `read` machtigingen voor het model.
 
-   >[!CAUTION]
-   >
-   >Wijzigingen in een bestaand inhoudsfragmentmodel kunnen van invloed zijn op afhankelijke fragmenten. dit kan leiden tot weeseigenschappen in die fragmenten .
+  >[!CAUTION]
+  >
+  >Wijzigingen in een bestaand inhoudsfragmentmodel kunnen van invloed zijn op afhankelijke fragmenten. dit kan leiden tot weeseigenschappen in die fragmenten .
 
 ### Integratie van sites met middelen {#integration-of-sites-with-assets}
 
@@ -61,15 +61,14 @@ Inhoudsfragmenten, gebaseerd op een inhoudsfragmentmodel, worden toegewezen aan 
 * Alle inhoud wordt opgeslagen onder de `jcr:content/data` knooppunt van het element:
 
    * De elementgegevens worden opgeslagen onder het master subknooppunt:
-      `jcr:content/data/master`
+     `jcr:content/data/master`
 
    * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie: bijvoorbeeld: `jcr:content/data/myvariation`
 
    * De gegevens van elk element worden in het desbetreffende subknooppunt opgeslagen als een eigenschap met de elementnaam: bijvoorbeeld de inhoud van het element `text` is opgeslagen als eigenschap `text` op `jcr:content/data/master`
 
 * Metagegevens en bijbehorende inhoud worden hieronder opgeslagen `jcr:content/metadata`
-Met uitzondering van de titel en de beschrijving, die niet als traditionele metagegevens worden beschouwd en op 
-`jcr:content`
+Met uitzondering van de titel en de beschrijving, die niet als traditionele metagegevens worden beschouwd en op `jcr:content`
 
 #### Locatie van element {#asset-location}
 
@@ -129,24 +128,25 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 * **Vertalingen**
 
-   Inhoudsfragmenten zijn volledig geïntegreerd met de [AEM vertaalworkflow](/help/sites-cloud/administering/translation/overview.md). Op architectonisch niveau betekent dit:
+  Inhoudsfragmenten zijn volledig geïntegreerd met de [AEM vertaalworkflow](/help/sites-cloud/administering/translation/overview.md). Op architectonisch niveau betekent dit:
 
    * De afzonderlijke vertalingen van een inhoudsfragment zijn eigenlijk afzonderlijke fragmenten. bijvoorbeeld:
 
       * zij zijn in verschillende taalgebieden gevestigd; maar deel exact hetzelfde relatieve pad onder de relevante taalbasis:
 
-         `/content/dam/<path>/en/<to>/<fragment>`
+        `/content/dam/<path>/en/<to>/<fragment>`
 
-         vs
+        vs
 
-         `/content/dam/<path>/de/<to>/<fragment>`
+        `/content/dam/<path>/de/<to>/<fragment>`
+
    * Naast de op regel gebaseerde paden bestaat er geen verdere verbinding tussen de verschillende taalversies van een inhoudsfragment. ze worden behandeld als twee afzonderlijke fragmenten, hoewel de interface de mogelijkheid biedt om tussen de taalvarianten te navigeren.
-   >[!NOTE]
-   >
-   >De AEM vertaalworkflow werkt met `/content`:
-   >
-   >* Terwijl de modellen van het inhoudsfragment zich bevinden in `/conf`, worden deze niet in dergelijke vertalingen opgenomen. U kunt de UI-tekenreeksen internationaliseren.
 
+  >[!NOTE]
+  >
+  >De AEM vertaalworkflow werkt met `/content`:
+  >
+  >* Terwijl de modellen van het inhoudsfragment zich bevinden in `/conf`, worden deze niet in dergelijke vertalingen opgenomen. U kunt de UI-tekenreeksen internationaliseren.
 
 * **Metagegevensschema&#39;s**
 
@@ -154,9 +154,9 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
    * CFM biedt een eigen, specifiek schema:
 
-      `/libs/dam/content/schemaeditors/forms/contentfragment`
+     `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      dit kan zo nodig worden verlengd .
+     dit kan zo nodig worden verlengd .
 
    * Het respectievelijke schema-formulier is geïntegreerd met de fragmenteditor.
 
@@ -176,9 +176,9 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
 * **Inhoudsfragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-   Met deze interface kunt u op abstracte wijze werken met een inhoudsfragment.
+  Met deze interface kunt u op abstracte wijze werken met een inhoudsfragment.
 
-   De interface voorziet u van de middelen:
+  De interface voorziet u van de middelen:
 
    * Standaardgegevens beheren (bijvoorbeeld naam ophalen; get/set titel/beschrijving)
    * Toegang tot metagegevens
@@ -189,6 +189,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Nieuwe elementen maken (zie [Caveats](#caveats))
 
       * Gegevens over toegangselementen (zie `ContentElement`)
+
    * Variaties weergeven die zijn gedefinieerd voor het fragment
    * Nieuwe variaties wereldwijd maken
    * Gekoppelde inhoud beheren:
@@ -196,9 +197,10 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Lijstverzamelingen
       * Verzamelingen toevoegen
       * Verzamelingen verwijderen
+
    * Het model van het fragment openen
 
-   De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
+  De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
 
    * **Inhoud-element** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
@@ -211,24 +213,20 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
          * Nieuwe variaties maken (zie [Caveats](#caveats))
          * Variaties verwijderen (zie [Caveats](#caveats))
          * Gegevens betreffende variatie van de toegang (zie `ContentVariation`)
+
       * Sneltoets voor het oplossen van variaties (door een aanvullende, implementatiespecifieke fallback-logica toe te passen als de opgegeven variatie niet beschikbaar is voor een element)
+
    * **Inhoudsvariatie** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
       * Eenvoudige synchronisatie, gebaseerd op laatst gewijzigde informatie
 
-   Alle drie de interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) de `Versionable` interface, die versiemogelijkheden toevoegt, vereist voor inhoudsfragmenten:
+  Alle drie de interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) de `Versionable` interface, die versiemogelijkheden toevoegt, vereist voor inhoudsfragmenten:
 
    * Nieuwe versie van het element maken
    * Versies van het element weergeven
    * Hiermee wordt de inhoud opgehaald van een specifieke versie van het element met versiebeheer
-
-
-
-
-
-
 
 ### Aanpassen - Using adjustTo() {#adapting-using-adaptto}
 
@@ -258,7 +256,7 @@ Er zij op gewezen dat:
 
 * Taken die extra inspanning zouden kunnen vereisen:
 
-   * Het wordt ten zeerste aanbevolen nieuwe variaties te maken op basis van `ContentFragment`. Dit zorgt ervoor dat alle elementen deze variatie zullen delen en dat de aangewezen globale gegevensstructuren zonodig zullen worden bijgewerkt om de pas gecreëerde variatie in de inhoudsstructuur te weerspiegelen.
+   * Het wordt ten zeerste aanbevolen nieuwe variaties te maken op basis van `ContentFragment`. Dit zorgt ervoor dat alle elementen deze variatie delen en dat de juiste algemene gegevensstructuren zo nodig worden bijgewerkt om de nieuwe variatie in de inhoudsstructuur te weerspiegelen.
 
    * Bestaande variaties verwijderen door een element, gebruiken `ContentElement.removeVariation()`, worden de algemene gegevensstructuren die aan de variatie zijn toegewezen, niet bijgewerkt. Om ervoor te zorgen dat deze gegevensstructuren synchroon blijven, gebruikt u `ContentFragment.removeVariation()` in plaats daarvan, die een variatie globaal verwijdert.
 
@@ -274,7 +272,7 @@ Zie het volgende:
 
 * `filter.xml`
 
-   De `filter.xml` voor inhoudsfragmentbeheer is zo geconfigureerd dat dit niet overlapt met het elementeninhoudspakket.
+  De `filter.xml` voor inhoudsfragmentbeheer is zo geconfigureerd dat dit niet overlapt met het elementeninhoudspakket.
 
 ## Sessies bewerken {#edit-sessions}
 

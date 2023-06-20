@@ -2,9 +2,9 @@
 title: Zoekformulieren configureren
 description: Zoeken in Forms voor Adobe Experience Manager as a Cloud Service configureren.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2037'
 ht-degree: 2%
 
 ---
@@ -495,47 +495,46 @@ Afhankelijk van de voorspelling zijn er verschillende instellingen beschikbaar v
 
 * **Veldlabel**
 
-   Het label dat wordt weergegeven als de inklapbare koptekst of als veldlabel van de voorspelling.
+  Het label dat wordt weergegeven als de inklapbare koptekst of als veldlabel van de voorspelling.
 
 * **Beschrijving**
 
-   Beschrijvende details voor de gebruiker.
+  Beschrijvende details voor de gebruiker.
 
 * **Plaatsaanduiding**
 
-   Lege tekst of de plaatsaanduiding van de voorspelling voor het geval er geen filtertekst wordt ingevoerd.
+  Lege tekst of de plaatsaanduiding van de voorspelling voor het geval er geen filtertekst wordt ingevoerd.
 
 * **Eigenschapnaam**
 
-   De eigenschap waarop moet worden gezocht. Er wordt een relatief pad en de jokertekens gebruikt `*/*/*` Geef de diepte van de eigenschap op ten opzichte van de `jcr:content` knooppunt (elke asterisk vertegenwoordigt één knooppuntniveau).
+  De eigenschap waarop moet worden gezocht. Er wordt een relatief pad en de jokertekens gebruikt `*/*/*` Geef de diepte van de eigenschap op ten opzichte van de `jcr:content` knooppunt (elke asterisk vertegenwoordigt één knooppuntniveau).
 
-   Als u slechts op een eerste niveaukindknoop van het middel wilt zoeken dat heeft `x` eigenschap op de `jcr:content` knooppuntgebruik `*/jcr:content/x`
+  Als u slechts op een eerste niveaukindknoop van het middel wilt zoeken dat heeft `x` eigenschap op de `jcr:content` knooppuntgebruik `*/jcr:content/x`
 
 * **Diepte van eigenschap**
 
-   De maximumdiepte om naar dat bezit binnen de middelen te zoeken. Een zoekopdracht naar die eigenschap kan dus worden uitgevoerd op een resource en recursieve onderliggende elementen totdat het niveau van de onderliggende elementen overeenkomt met de opgegeven diepte.
+  De maximumdiepte om naar dat bezit binnen de middelen te zoeken. Een zoekopdracht naar die eigenschap kan dus worden uitgevoerd op een resource en recursieve onderliggende elementen totdat het niveau van de onderliggende elementen overeenkomt met de opgegeven diepte.
 
 * **Waarde van eigenschap**
 
-   De eigenschapswaarde als een absolute tekenreeks of als expressietaal; bijvoorbeeld: `cq:Page` of
+  De eigenschapswaarde als een absolute tekenreeks of als expressietaal; bijvoorbeeld: `cq:Page` of
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Bereik tekst**
 
-   Het label van het bereikveld in het dialoogvenster **Datumbereik** voorspellen.
+  Het label van het bereikveld in het dialoogvenster **Datumbereik** voorspellen.
 
 * **Optiepad**
 
-   De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Na het selecteren van **+** wordt gebruikt om de selectie toe te voegen aan de lijst met geldige opties (en **-** pictogram dat moet worden verwijderd, indien vereist).
+  De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Na het selecteren van **+** wordt gebruikt om de selectie toe te voegen aan de lijst met geldige opties (en **-** pictogram dat moet worden verwijderd, indien vereist).
 
-   De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt en die de volgende structuur hebben:
+  De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt en die de volgende structuur hebben:
 
-   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
+  `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Pad naar knooppunt Opties**
-In feite hetzelfde als 
-**Pad naar opties** Alleen dit gebeurt in het gemeenschappelijke voorspelde veld, het andere is specifiek voor elementen.
+In feite hetzelfde als **Pad naar opties** Alleen dit gebeurt in het gemeenschappelijke voorspelde veld, het andere is specifiek voor elementen.
 
 * **Enkel selecteren**
 Als deze optie is ingeschakeld, worden de opties weergegeven als selectievakjes die slechts één selectie toestaan. Als u per ongeluk een selectievakje hebt ingeschakeld, kan dit worden uitgeschakeld.
@@ -563,7 +562,6 @@ De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifie
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
-
 ### Een voorspelbaar veld toevoegen/bewerken en veldinstellingen definiëren {#add-edit-a-predicate-field-and-define-field-settings}
 
 U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bijwerken:
@@ -577,11 +575,12 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
    * U voegt een nieuw veld toe:
 
-      Na het toevoegen van predikaat **Instellingen** worden de eigenschappen die kunnen worden gedefinieerd, geopend en weergegeven.
+     Na het toevoegen van predikaat **Instellingen** worden de eigenschappen die kunnen worden gedefinieerd, geopend en weergegeven.
 
    * U wilt een bestaande voorspelling bijwerken:
 
-      Selecteer het voorloopveld (rechts) en open vervolgens het **Instellingen** tab.
+     Selecteer het voorloopveld (rechts) en open vervolgens het **Instellingen** tab.
+
    De instellingen voor de **Datumbereik**:
 
    ![voorspellen wijzigen](assets/csf-modify-predicate.png)
@@ -594,7 +593,7 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
    ![voorvertoningspictogram](assets/csf-preview-icon.png)
 
-1. Hierdoor worden de zoekformulieren weergegeven zoals deze worden weergegeven (volledig uitgevouwen) in de kolom Zoeken van de desbetreffende console.
+1. Hiermee geeft u de zoekformulieren weer zoals deze worden weergegeven (volledig uitgevouwen) in de kolom Zoeken van de desbetreffende console.
 
    ![voorbeeldformulier](assets/csf-preview-form.png)
 
@@ -656,7 +655,6 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Breng wijzigingen aan in `/apps.`
 
-
 1. Open de **Zoeken in Forms** console en selecteer de configuratie u wilt bijwerken. Bijvoorbeeld: **Sites Admin Search Rail**. Selecteer vervolgens **Bewerken**.
 
 1. Afhankelijk van de configuratie voegt u een **Opties** of **Opties, eigenschap** naar de configuratie.
@@ -664,19 +662,20 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
    * **Eigenschapnaam**
 
-      Specifiek het knoopbezit dat op de doelknopen moet worden gezocht. Bijvoorbeeld:
+     Specifiek het knoopbezit dat op de doelknopen moet worden gezocht. Bijvoorbeeld:
 
-      `jcr:content/cq:template`
+     `jcr:content/cq:template`
 
    * **Pad naar knooppunt Option**
 
-      Selecteer het pad naar de locatie waar uw opties staan. Bijvoorbeeld:
+     Selecteer het pad naar de locatie waar uw opties staan. Bijvoorbeeld:
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
+     `/apps/cq/gui/content/common/options/predicates/templatetype`
+
    ![Voorspelden van optie](assets/csf-options-predicate-02.png)
 
 1. Selecteren **Gereed** om uw configuratie op te slaan.
-1. Navigeer aan de aangewezen console (in dit voorbeeld, **Sites**) en opent u de **Zoeken - Filters** spoorwegen. De nieuwe zoekformulieren worden samen met de verschillende opties weergegeven. Selecteer de gewenste optie om de zoekresultaten weer te geven.
+1. Navigeer aan de aangewezen console (in dit voorbeeld, **Sites**) en opent u de **Zoeken - Filters** spoorwegen. De nieuwe zoekformulieren en de verschillende opties zijn zichtbaar. Selecteer de gewenste optie om de zoekresultaten weer te geven.
 
    ![gebruikte opties](assets/csf-options-usage.png)
 

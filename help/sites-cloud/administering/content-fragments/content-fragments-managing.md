@@ -4,10 +4,10 @@ description: Leer hoe te om de console van Fragmenten van de Inhoud te gebruiken
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 1%
+source-wordcount: '2053'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,6 @@ De [Inhoudsfragmenteditor](#opening-the-fragment-editor) biedt diverse [modi](#m
 >
 >* bij het ontwerpen van pagina&#39;s; zie [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* for [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
-
 
 >[!NOTE]
 >
@@ -71,10 +70,10 @@ Een inhoudsfragment maken:
 
 1. De **Nieuw inhoudsfragment** wordt geopend, vanaf hier kunt u het volgende opgeven:
 
-   * **Locatie** - deze wordt automatisch ingevuld met de huidige locatie, maar u kunt desgewenst een andere locatie selecteren
+   * **Locatie** - automatisch ingevuld met de huidige locatie, maar u kunt desgewenst een andere locatie selecteren
    * **Inhoudsfragmentmodel** - selecteer in de vervolgkeuzelijst het model dat u als basis voor het fragment wilt gebruiken
    * **Titel**
-   * **Naam** - dit wordt automatisch voltooid op basis van de **Titel**, maar u kunt deze desgewenst bewerken
+   * **Naam** - automatisch ingevuld op basis van de **Titel**, maar u kunt deze desgewenst bewerken
    * **Beschrijving**
 
    ![Dialoogvenster Nieuw inhoudsfragment](assets/cfm-managing-new-cf-01.png)
@@ -145,7 +144,7 @@ Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 
 ![modi](assets/cfm-managing-top-toolbar.png)
 
-* Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina. U kunt **Sluiten** het bericht.
+* Er wordt een bericht weergegeven wanneer er al naar het fragment wordt verwezen op een inhoudspagina. U kunt **Sluiten** het bericht.
 
 * Het zijpaneel kan worden verborgen of weergegeven met de opdracht **Zijpaneel in-/uitschakelen** pictogram.
 
@@ -185,23 +184,23 @@ De editor heeft verschillende opties:
    * **Opslaan** slaat de laatste wijzigingen op en blijft deze in de editor.
    * **Opslaan en sluiten** slaat de laatste wijzigingen op en sluit de editor af.
 
-   >[!CAUTION]
-   >
-   >Als u een inhoudsfragment wilt bewerken, hebt u [de juiste machtigingen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Neem contact op met de systeembeheerder als er problemen optreden.
+  >[!CAUTION]
+  >
+  >Als u een inhoudsfragment wilt bewerken, hebt u [de juiste machtigingen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Neem contact op met de systeembeheerder als er problemen optreden.
 
-   >[!NOTE]
-   >
-   >Het is mogelijk om in de redacteur te blijven, makend een reeks veranderingen, alvorens te bewaren.
+  >[!NOTE]
+  >
+  >Het is mogelijk om in de redacteur te blijven, makend een reeks veranderingen, alvorens te bewaren.
 
-   >[!CAUTION]
-   >
-   >Naast het eenvoudig opslaan van uw wijzigingen, werken de acties ook verwijzingen bij en zorgen ervoor dat de Dispatcher wordt leeggemaakt zoals vereist. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
-   >
-   >Houd hier rekening mee wanneer u **Opslaan en sluiten** en voert u vervolgens snel de fragmenteditor opnieuw in om verdere wijzigingen aan te brengen en op te slaan.
+  >[!CAUTION]
+  >
+  >Naast het eenvoudig opslaan van uw wijzigingen, werken de acties ook verwijzingen bij en zorgen ervoor dat de Dispatcher wordt leeggemaakt zoals vereist. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
+  >
+  >Houd hier rekening mee wanneer u **Opslaan en sluiten** en voert u vervolgens snel de fragmenteditor opnieuw in om verdere wijzigingen aan te brengen en op te slaan.
 
 * **Sluiten**
 
-   Sluit de editor af zonder de laatste wijzigingen op te slaan (dat wil zeggen sinds de laatste **Opslaan**).
+  Sluit de editor af zonder de laatste wijzigingen op te slaan (dat wil zeggen sinds de laatste **Opslaan**).
 
 AEM tijdens het bewerken van het inhoudsfragment automatisch versies maken om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u de wijzigingen annuleert (met **Sluiten** zonder opslaan):
 
@@ -246,21 +245,25 @@ U kunt inhoudsfragmenten publiceren naar:
 
 * de **[Voorvertoningsservice](/help/overview/architecture.md#runtime-architecture)** - om de inhoud voor te vertonen voordat deze volledig beschikbaar is
 
-   >[!CAUTION]
-   Inhoudsfragmenten publiceren naar de **Voorvertoningsservice** is alleen beschikbaar via [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); met de **Publiceren** handeling.
+  >[!CAUTION]
+  >
+  Inhoudsfragmenten publiceren naar de **Voorvertoningsservice** is alleen beschikbaar via [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); met de **Publiceren** handeling.
 
-   >[!NOTE]
-   Voor meer informatie over de Voorvertoningsomgevingen raadpleegt u:
-   * [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-   * [OSGi-instellingen configureren voor de voorbeeldreeks](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-   * [Foutopsporingsvoorbeeld met de ontwikkelaarsconsole](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
-
+  >[!NOTE]
+  >
+  Voor meer informatie over de Voorvertoningsomgevingen raadpleegt u:
+  >
+  * [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+  * [OSGi-instellingen configureren voor de voorbeeldreeks](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  * [Foutopsporingsvoorbeeld met de ontwikkelaarsconsole](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
 Als u inhoudsfragmenten wilt publiceren met de opdracht **Publiceren** op de werkbalk van het dialoogvenster [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
+>
 Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat de [model is gepubliceerd](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
-Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
+>
+Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, geeft een selectielijst dit aan en wordt het model gepubliceerd met het fragment.
 
 1. Selecteer een of meer fragmenten in de lijst.
 
@@ -280,10 +283,12 @@ U kunt ook publiceren naar de **Service voor publiceren** van de [Inhoudsfragmen
 * **Publicatie beheren**
 
 >[!NOTE]
-Na u [Een pagina publiceren die het fragment gebruikt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); het fragment wordt weergegeven in de paginaverwijzingen.
+>
+Na u [Een pagina publiceren die het fragment gebruikt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), wordt het fragment weergegeven in de paginaverwijzingen.
 
 >[!CAUTION]
-Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
+>
+Nadat een fragment is gepubliceerd, waarnaar wordt verwezen, of beide, AEM een waarschuwing wordt weergegeven wanneer een auteur het fragment opent om opnieuw te bewerken. De auteur wordt gewaarschuwd dat wijzigingen in het fragment ook van invloed zullen zijn op pagina&#39;s waarnaar wordt verwezen.
 
 ## Publicatie van een fragment ongedaan maken {#unpublishing-a-fragment}
 
@@ -293,9 +298,11 @@ Wanneer het relevante dialoogvenster wordt geopend, kunt u de juiste service sel
 ![Dialoogvenster Publiceren ongedaan maken](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
+>
 De **Publiceren ongedaan maken** actie is alleen zichtbaar wanneer gepubliceerde fragmenten beschikbaar zijn.
 
 >[!CAUTION]
+>
 Als er al vanuit een ander fragment of een pagina naar het fragment wordt verwezen, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan.
 
 ## Een fragment verwijderen {#deleting-a-fragment}
@@ -306,13 +313,15 @@ Een fragment verwijderen:
 2. Selecteer het fragment.
 
    >[!NOTE]
+   >
    De **Verwijderen** Handeling is niet beschikbaar als een snelle handeling.
 
 3. Selecteren **Verwijderen** op de werkbalk.
 4. Bevestig de **Verwijderen** handeling.
 
    >[!CAUTION]
-   Als er al vanuit een ander fragment of een pagina naar het fragment wordt verwezen, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met een **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
+   >
+   Als er al vanuit een ander fragment of een pagina naar het fragment wordt verwezen, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met een **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor inhoudsfragmenten verwijderd uit alle inhoudspagina&#39;s.
 
 ## Bovenliggende verwijzingen van het fragment zoeken {#parent-references-fragment}
 
@@ -325,6 +334,7 @@ Nadere bijzonderheden over de taalkopieën zijn te vinden op het tabblad **Taal*
 ## Tijdlijn voor inhoudsfragmenten {#timeline-for-content-fragments}
 
 >[!NOTE]
+>
 Deze functionaliteit is alleen beschikbaar in het dialoogvenster **Activa** console
 
 Naast de standaardopties [Tijdlijn](/help/assets/manage-digital-assets.md#timeline) biedt zowel informatie als acties die specifiek zijn voor inhoudsfragmenten:
@@ -345,16 +355,18 @@ Naast de standaardopties [Tijdlijn](/help/assets/manage-digital-assets.md#timeli
    * **Verwijderen**
 
 >[!NOTE]
+>
 Opmerkingen zijn:
+>
 * Standaardfunctionaliteit voor alle elementen
 * Gemaakt in tijdlijn
 * Verwant aan het fragmentelement
 >
 Annotaties (voor inhoudsfragmenten) zijn:
+>
 * Opgegeven in de fragmenteditor
 * Specifiek voor een geselecteerd tekstsegment binnen het fragment
 >
-
 
 Bijvoorbeeld:
 
@@ -363,6 +375,7 @@ Bijvoorbeeld:
 ## Fragmentversies vergelijken {#comparing-fragment-versions}
 
 >[!NOTE]
+>
 Deze functionaliteit is alleen beschikbaar in het dialoogvenster **Activa** console
 
 De **Vergelijken met huidige** actie is beschikbaar via [Tijdlijn](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
@@ -373,7 +386,7 @@ Hiermee wordt het volgende geopend:
 
 * de geselecteerde versie **v&lt;*x.y*>** (rechts)
 
-Zij worden naast elkaar weergegeven, waarbij:
+Zij worden naast elkaar getoond, waarbij:
 
 * Eventuele verschillen worden gemarkeerd
 
@@ -386,6 +399,7 @@ Zij worden naast elkaar weergegeven, waarbij:
 * **Gereed** zult u aan de console terugkeren
 
 >[!NOTE]
+>
 U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
 
 ![vergelijking](assets/cfm-managing-06.png)
@@ -393,12 +407,13 @@ U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
 ## Een versie herstellen  {#reverting-to-a-version}
 
 >[!NOTE]
+>
 Deze functionaliteit is alleen beschikbaar in het dialoogvenster **Activa** console
 
 U kunt terugkeren naar een specifieke versie van het fragment:
 
 * Rechtstreeks vanuit de [Tijdlijn](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-   Selecteer de gewenste versie en klik vervolgens op **Deze versie herstellen** handeling.
+  Selecteer de gewenste versie en klik vervolgens op **Deze versie herstellen** handeling.
 
 * while [een versie vergelijken met de huidige versie](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **Vorige versie** naar de geselecteerde versie.

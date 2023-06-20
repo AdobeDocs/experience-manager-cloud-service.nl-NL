@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2022.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -48,16 +48,16 @@ Bekijk de video Overzicht van de release van oktober 2022 voor een overzicht van
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* Met Experience Manager Assets kunt u nu documenten in andere ondersteunde bestandsindelingen uploaden en[ een voorvertoning ervan weergeven met de meegeleverde viewer voor Documenten Cloud](/help/assets/manage-pdf-documents.md). Tot de ondersteunde indelingstypen behoren TXT, RTF, DOC, DOCX, PPT, PPTX, XLS en XLSX.
+* Met Experience Manager Assets kunt u nu documenten in andere ondersteunde bestandsindelingen uploaden en[een voorvertoning ervan weergeven met de meegeleverde viewer voor Documenten Cloud](/help/assets/manage-pdf-documents.md). Tot de ondersteunde indelingstypen behoren TXT, RTF, DOC, DOCX, PPT, PPTX, XLS en XLSX.
 
-   ![PDF-uitvoering voor andere indelingen](/help/release-notes/assets/multi-page-other-formats.png)
+  ![PDF-uitvoering voor andere indelingen](/help/release-notes/assets/multi-page-other-formats.png)
 
 
 ### Nieuwe functies in [!DNL Assets] prerelease {#prerelease-features-assets}
 
 * Experience Manager Assets maakt nu gebruik van een verbeterd kunstmatig intelligentiekader voor slimme tags voor afbeeldingen. Deze inhoudsinfo geeft een betere relevantie en nauwkeurigheid van slimme tags die beschikbaar zijn voor alle afbeeldingselementen bij opname. Bovendien wordt de richtingsinformatie ingevuld in `cq:tags`, waarmee u betere zoekresultaten kunt bereiken met het filter Richting.
 
-   Als u geïnteresseerd bent in deelname aan de bètaversie, [Dit formulier invullen](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) uiterlijk op 14 november.
+  Als u geïnteresseerd bent in deelname aan de bètaversie, [Dit formulier invullen](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) uiterlijk op 14 november.
 
 * Experience Manager Assets nu [ondersteunt SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) naast de toegangstoets voor verificatie bij de verbinding met de Azure Blob Storage-gegevensbron voor het opnemen van elementen met het Bulk Import-gereedschap.
 
@@ -87,7 +87,7 @@ Bekijk de video Overzicht van de release van oktober 2022 voor een overzicht van
 
 * AEM as a Cloud Service (de Dienst van de Auteur) is nu geïntegreerd met Verenigde Shell om de gebruikerservaring te verbeteren en het met alle andere toepassingen van Experience Cloud te verenigen. Zie AEM als een [Cloud Service op Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) voor meer informatie .
 
-* Zoals eerder vermeld in versienota&#39;s, wordt het gebruiken van het scherm van de replicatieagent of replicatie API voor het verspreiden van inhoudspakketten groter dan 10 MB (knopen met eigenschappen, exclusief binaire getallen) afgekeurd en zal in de komende dagen worden afgedwongen. Zie [Publicatie beheren](/help/operations/replication.md#manage-publication) of de [Workflow Inhoudsstructuur publiceren](/help/operations/replication.md#publish-content-tree-workflow) voor de voorgestelde benaderingen voor het repliceren van deze grote inhoudspakketten.
+* Zoals eerder vermeld in versienota&#39;s, wordt het gebruiken van het scherm van de replicatieagent of replicatie API voor het verspreiden van inhoudspakketten groter dan 10 MB (knopen met eigenschappen, exclusief binaire getallen) nu afgekeurd en afgedwongen. Zie [Publicatie beheren](/help/operations/replication.md#manage-publication) of de [Workflow Inhoudsstructuur publiceren](/help/operations/replication.md#publish-content-tree-workflow) voor gesuggereerde benaderingen voor het repliceren van deze grote inhoudspakketten.
 
 * De configuratie van de afzender verwijst nu naar een dossier dat van gemeenschappelijke de vraagparameters van de marketing campagne een lijst maakt. Klanten kunnen ervoor kiezen om de commentaarmarkering van de parameters die voor hen relevant zijn, ongedaan te maken, wat resulteert in betere caching. Zie [Parameters van de marketingcampagne](/help/implementing/dispatcher/caching.md#marketing-parameters) voor meer informatie .
 

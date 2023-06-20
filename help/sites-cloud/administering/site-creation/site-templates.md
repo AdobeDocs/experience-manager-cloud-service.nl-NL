@@ -4,9 +4,9 @@ description: Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructu
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Sjablonen zijn krachtig omdat ze herbruikbaar en aanpasbaar zijn. En aangezien u
 >
 >AEM sitesjablonen mogen niet worden verward met [paginasjablonen.](/help/sites-cloud/authoring/features/templates.md) Sitesjablonen definiëren de algehele structuur van een site. Een paginasjabloon definieert de structuur en initiële inhoud van een afzonderlijke pagina.
 >
->AEM sitesjablonen mogen niet worden verward met [AEM sitethema&#39;s.](site-themes.md) AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. Met AEM sitesjablonen kunt u de sitestructuur en de initiële inhoud definiëren en een AEM sitethema bevatten om het mogelijk te maken [snel websites maken.](create-site.md)
+>AEM sitesjablonen mogen niet worden verward met [AEM sitethema&#39;s.](site-themes.md) AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. Met AEM sitesjablonen definieert u de sitestructuur en de initiële inhoud. Sjablonen bevatten een AEM sitethema dat het mogelijk maakt [snel websites maken.](create-site.md)
 
 ## Een sitesjabloon toevoegen aan AEM {#adding}
 

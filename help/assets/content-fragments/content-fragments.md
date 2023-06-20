@@ -2,9 +2,9 @@
 title: Werken met inhoudsfragmenten (elementen - inhoudsfragmenten)
 description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service inhoud kunt ontwerpen, maken, curven en gebruiken die onafhankelijk is van pagina's. Dit is ideaal voor het ontwerpen van pagina's en het leveren zonder kop.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2132'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,6 @@ Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren,
 >* [Contentfragmenten die componenten voor rendering configureren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
-
 
 Het aantal communicatiekanalen neemt jaarlijks toe. Doorgaans verwijzen kanalen naar het leveringsmechanisme, als:
 
@@ -157,9 +156,9 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
    * De positie van het element definiëren.
    * Zie [Elementen invoegen in uw fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) in de fragmenteditor voor meer informatie.
 
-   >[!NOTE]
-   >
-   >Visuele elementen die in het inhoudsfragment zelf zijn ingevoegd, worden aan de voorafgaande alinea gekoppeld. Wanneer het fragment aan een pagina wordt toegevoegd, worden deze elementen ten opzichte van die alinea verplaatst wanneer tussenliggende inhoud wordt toegevoegd.
+  >[!NOTE]
+  >
+  >Visuele elementen die in het inhoudsfragment zelf zijn ingevoegd, worden aan de voorafgaande alinea gekoppeld. Wanneer het fragment aan een pagina wordt toegevoegd, worden deze elementen ten opzichte van die alinea verplaatst wanneer tussenliggende inhoud wordt toegevoegd.
 
 * **Gekoppelde inhoud**
 
@@ -202,13 +201,13 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Kan alleen worden toegevoegd aan tekstelementen met meerdere regels (elk fragmenttype).
    * Aan de voorgaande tekst (alinea) worden toegevoegd.
 
-      >[!CAUTION]
-      >
-      >Elementen kunnen (onbedoeld) uit een fragment worden verwijderd door over te schakelen op de indeling Onbewerkte tekst.
+     >[!CAUTION]
+     >
+     >Elementen kunnen (onbedoeld) uit een fragment worden verwijderd door over te schakelen op de indeling Onbewerkte tekst.
 
-      >[!NOTE]
-      >
-      >Elementen kunnen ook worden toegevoegd als [extra inhoud (tussen)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) bij het gebruik van een fragment op een pagina; het gebruiken van of Bijbehorende Inhoud of activa van browser van Activa.
+     >[!NOTE]
+     >
+     >Elementen kunnen ook worden toegevoegd als [extra inhoud (tussen)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) bij het gebruik van een fragment op een pagina; het gebruiken van of Bijbehorende Inhoud of activa van browser van Activa.
 
 * **Gekoppelde inhoud**
 
@@ -231,9 +230,9 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
          * Door het fragment weer te geven/te bewerken **Eigenschappen** vanaf de console
          * Door de **Metagegevens** wanneer in de fragmenteditor
 
-   >[!CAUTION]
-   >
-   >Metagegevensverwerkingsprofielen zijn niet van toepassing op inhoudsfragmenten.
+  >[!CAUTION]
+  >
+  >Metagegevensverwerkingsprofielen zijn niet van toepassing op inhoudsfragmenten.
 
 * **Master**
 
@@ -241,9 +240,9 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
       * Elk inhoudsfragment heeft één instantie van Master.
       * Master kan niet worden verwijderd.
+
    * Master is toegankelijk in de fragmenteditor onder **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)**.
    * Master is geen variatie als zodanig, maar is de basis van alle variaties.
-
 
 * **Variaties**
 
@@ -296,7 +295,7 @@ Als u de Content Fragments wilt gebruiken voor het ontwerpen van pagina&#39;s, h
 
 ## Voorbeeldgebruik {#example-usage}
 
-Een fragment met de elementen en variaties kan worden gebruikt om coherente inhoud voor meerdere kanalen te maken. Bij het ontwerpen van het fragment moet u rekening houden met de plaats waar het fragment wordt gebruikt.
+Een fragment met de elementen en variaties kan worden gebruikt om coherente inhoud voor meerdere kanalen te maken. Houd bij het ontwerpen van het fragment rekening met wat wordt gebruikt en waar.
 
 ### WKND-voorbeeld {#wknd-sample}
 
@@ -305,7 +304,7 @@ De [WKND-site](/help/implementing/developing/introduction/develop-wknd-tutorial.
 Het WKND-project omvat:
 
 * Modellen voor inhoudsfragmenten zijn beschikbaar onder:
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Inhoudsfragmenten (en andere inhoud) beschikbaar onder:
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`

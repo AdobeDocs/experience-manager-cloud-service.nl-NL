@@ -2,9 +2,9 @@
 title: Thema's maken en gebruiken
 description: U kunt thema's gebruiken om een adaptief formulier te stileren en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Wanneer u [een adaptief formulier maken](/help/forms/creating-adaptive-form.md) 
 
 >[!NOTE]
 >
->Een adaptief formulierthema mag niet worden verward met [Aangepaste formuliersjablonen.](/help/forms/template-editor.md) De thema&#39;s Adaptief formulier bevatten alleen de opmaakgegevens voor een adaptief formulier. Aangepaste formuliersjablonen definiëren de formulierstructuur en de initiële inhoud en bevatten een thema voor het maken van nieuwe [Adaptief formulier.](/help/forms/creating-adaptive-form.md)
+>Een adaptief formulierthema mag niet worden verward met [Aangepaste formuliersjablonen.](/help/forms/template-editor.md) De thema&#39;s Adaptief formulier bevatten alleen de opmaakgegevens voor een adaptief formulier. Aangepaste formuliersjablonen definiëren de formulierstructuur en de initiële inhoud en bevatten een thema waarmee u nieuwe formulieren kunt maken [Adaptief formulier.](/help/forms/creating-adaptive-form.md)
 
 ## Canvas-thema gebruiken in Adaptief Forms met behulp van kerncomponenten {#using-theme-in-adaptive-form}
 
@@ -131,7 +131,6 @@ AEM_PROXY_PORT=7000
    > * Maak een lokale gebruiker om zich lokaal aan te melden. Bied de rol van contribuant aan de themaontwerper.
    > * Als u de AEM-URL opgeeft als `http://localhost:[port]/` in de `.env` bestand met Canvas-thema. U wordt rechtstreeks omgeleid naar de browser.
 
-
 1. Als u zich eenmaal hebt aangemeld, wijzigt u de URL in de browser zodat deze verwijst naar het pad naar de voorbeeldinhoud die de AEM aan u heeft gegeven.
 
    * Als het opgegeven pad bijvoorbeeld `/content/formname.html?wcmmode=disabled`wijzigt u de URL in `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
@@ -200,8 +199,7 @@ Voordat u wijzigingen aanbrengt in de Git-opslagplaats van uw AEM Forms-Cloud Se
 
 1. Verplaats de bestanden van de themaopslagplaats die u bewerkt naar de cloudopslagplaats met een opdracht die lijkt op
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
-Gebruik bijvoorbeeld deze opdracht 
-`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+Gebruik bijvoorbeeld deze opdracht `cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
 1. Wijs in de directory van de cloudopslagplaats de themabestanden waar u naartoe hebt verplaatst toe met de volgende opdrachten.
 
    ```text
@@ -246,15 +244,15 @@ Zodra de pijpleiding wordt uitgevoerd, is het thema beschikbaar onder het lusje 
 
 * **Elementen uit een ander thema verwijderen**
 
-   Wanneer u een thema bewerkt, kunt u door elementen (zoals afbeeldingen) bladeren en elementen uit andere thema&#39;s toevoegen. U bewerkt bijvoorbeeld de achtergrond van een pagina. Wanneer u bijvoorbeeld **[!UICONTROL Page]** ![bewerken, knop](assets/edit-button.png)> **[!UICONTROL Background]** > **[!UICONTROL Add]** > **[!UICONTROL Image]** Er wordt een dialoogvenster weergegeven waarin u afbeeldingen in andere thema&#39;s kunt zoeken en toevoegen.
+  Wanneer u een thema bewerkt, kunt u door elementen (zoals afbeeldingen) bladeren en elementen uit andere thema&#39;s toevoegen. U bewerkt bijvoorbeeld de achtergrond van een pagina. Wanneer u bijvoorbeeld **[!UICONTROL Page]** ![bewerken, knop](assets/edit-button.png)> **[!UICONTROL Background]** > **[!UICONTROL Add]** > **[!UICONTROL Image]** Er wordt een dialoogvenster weergegeven waarin u afbeeldingen in andere thema&#39;s kunt zoeken en toevoegen.
 
-   U kunt problemen met uw huidige thema oplossen als een element wordt toegevoegd uit een ander thema en het andere thema wordt verplaatst of verwijderd. U wordt aangeraden te voorkomen dat u bladeren en elementen uit andere thema&#39;s toevoegt.
+  U kunt problemen met uw huidige thema oplossen als een element wordt toegevoegd uit een ander thema en het andere thema wordt verplaatst of verwijderd. U wordt aangeraden te voorkomen dat u bladeren en elementen uit andere thema&#39;s toevoegt.
 
 * **De lay-outbreedte van het containervenster wijzigen**
 
-   Het wordt niet aanbevolen de lay-outbreedte van het containervenster te wijzigen. Wanneer u de breedte van een containerdeelvenster opgeeft, wordt het statisch en wordt het niet aangepast aan verschillende weergaven.
+  Het wordt niet aanbevolen de lay-outbreedte van het containervenster te wijzigen. Wanneer u de breedte van een containerdeelvenster opgeeft, wordt het statisch en wordt het niet aangepast aan verschillende weergaven.
 
 * **Formuliereditor of themaeditor gebruiken voor het werken met kop- en voettekst**
 
-   Gebruik de themaeditor als u koptekst en voettekst wilt opmaken met opmaakopties zoals letterstijl, achtergrond en transparantie.
+  Gebruik de themaeditor als u koptekst en voettekst wilt opmaken met opmaakopties zoals letterstijl, achtergrond en transparantie.
 Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals een logoafbeelding, een bedrijfsnaam in de koptekst en copyrightinformatie in de voettekst.

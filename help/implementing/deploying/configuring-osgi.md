@@ -3,9 +3,9 @@ title: OSGi configureren voor Adobe Experience Manager as a Cloud Service
 description: OSGi-configuratie met geheime waarden en milieu-specifieke waarden
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3318'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Als AEM bijvoorbeeld de auteur en dev van de runmodi gebruikt, worden configurat
 
 Als meerdere configuraties voor dezelfde PID van toepassing zijn, wordt de configuratie met het hoogste aantal overeenkomende uitvoeringsmodi toegepast.
 
-De granulariteit van deze regel staat op een PID-niveau. Dit betekent dat u geen eigenschappen voor dezelfde PID kunt definiëren in `/apps/example/config.author/` en meer specifieke `/apps/example/config.author.dev/` voor dezelfde PID. De configuratie met het hoogste aantal passende runmodes zal voor volledige PID efficiënt zijn.
+De granulariteit van deze regel staat op een PID-niveau. Dit betekent dat u geen eigenschappen voor dezelfde PID kunt definiëren in `/apps/example/config.author/` en meer specifieke `/apps/example/config.author.dev/` voor dezelfde PID. De configuratie met het hoogste aantal passende runmodes is effectief voor volledige PID.
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ De AEM QuickStart Jar&#39;s AEM Web Console van SDK kan worden gebruikt vormt co
 
 >[!NOTE]
 >
->De configuratie-interface van de AEM webconsole schrijft `.cfg.json` in de opslagplaats. Daarom ben me hiervan bewust om potentieel onverwacht gedrag tijdens lokale ontwikkeling te vermijden, wanneer de AEM project-bepaalde configuraties OSGi van de geproduceerde configuraties kunnen verschillen.
+>De configuratie-interface van de AEM webconsole schrijft `.cfg.json` in de opslagplaats. Daarom ben zich van dit werkschema bewust om potentieel onverwacht gedrag tijdens lokale ontwikkeling te vermijden, wanneer de AEM project-bepaalde configuraties OSGi van de geproduceerde configuraties kunnen verschillen.
 
 1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als beheerder
 1. Navigeren naar **OSGi** > **Configuratie**
@@ -260,7 +260,7 @@ Waarden voor de variabelen mogen niet meer dan 2048 tekens bevatten.
 >
 >Er zijn regels met betrekking tot het gebruik van bepaalde voorvoegsels voor variabelennamen:
 >
->1. Variabelennamen, voorafgegaan door `INTERNAL_`, `ADOBE_`, of `CONST_` zijn gereserveerd door Adobe. Om het even welke klant-vastgestelde variabelen die met deze prefixen beginnen zullen worden genegeerd.
+>1. Variabelennamen, voorafgegaan door `INTERNAL_`, `ADOBE_`, of `CONST_` zijn gereserveerd door Adobe. Om het even welke klant-vastgestelde variabelen die met deze prefixen beginnen worden genegeerd.
 >
 >1. Klanten mogen niet verwijzen naar variabelen vooraf met `INTERNAL_` of `ADOBE_` ofwel.
 >
@@ -480,7 +480,7 @@ Zie [deze pagina](https://developer.adobe.com/experience-cloud/cloud-manager/doc
 
 ### Waarden instellen via API {#setting-values-via-api}
 
-Het roepen van API stelt de nieuwe variabelen en de waarden aan een milieu van de Wolk op, gelijkend op een typische pijpleiding van de de plaatsing van de klantencode. De auteur- en publicatieservices worden opnieuw gestart en er wordt een verwijzing naar de nieuwe waarden opgenomen. Dit duurt meestal een paar minuten.
+Het roepen van API stelt de nieuwe variabelen en de waarden aan een milieu van de Wolk op, gelijkend op een typische pijpleiding van de de plaatsing van de klantencode. De auteur- en publicatieservices worden opnieuw gestart en er wordt een verwijzing naar de nieuwe waarden gemaakt. Dit duurt meestal enkele minuten.
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -558,7 +558,7 @@ Er kunnen maximaal 200 variabelen per omgeving worden gedeclareerd.
 
 Omdat de geheime en milieu-specifieke configuratiewaarden buiten Git leven, en daarom geen deel van de formele de plaatsingsmechanismen van Adobe Experience Manager as a Cloud Service uitmaken, zou de klant, in het plaatsingsproces van Adobe Experience Manager as a Cloud Service moeten leiden beheren en integreren.
 
-Zoals hierboven vermeld, voert het roepen van API de nieuwe variabelen en waarden aan de milieu&#39;s van de Wolk, gelijkend op een typische pijpleiding van de de plaatsing van de klantencode op. De auteur- en publicatieservices worden opnieuw gestart en er wordt een verwijzing naar de nieuwe waarden opgenomen. Dit duurt meestal een paar minuten. Merk op dat de kwaliteitspoorten en tests die tijdens een normale implementatie van code door Cloud Manager worden uitgevoerd, niet tijdens dit proces worden uitgevoerd.
+Zoals hierboven vermeld, voert het roepen van API de nieuwe variabelen en waarden aan de milieu&#39;s van de Wolk, gelijkend op een typische pijpleiding van de de plaatsing van de klantencode op. De auteur- en publicatieservices worden opnieuw gestart en er wordt een verwijzing naar de nieuwe waarden gemaakt. Dit duurt meestal enkele minuten. Merk op dat de kwaliteitspoorten en tests die tijdens een normale implementatie van code door Cloud Manager worden uitgevoerd, niet tijdens dit proces worden uitgevoerd.
 
 Klanten bellen de API doorgaans om omgevingsvariabelen in te stellen voordat ze code implementeren die op hen is gebaseerd in Cloud Manager. In sommige situaties, zou men een bestaande variabele kunnen willen wijzigen nadat de code reeds is opgesteld.
 

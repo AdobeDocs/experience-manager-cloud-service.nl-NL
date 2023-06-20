@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit
 description: Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '3508'
+source-wordcount: '3504'
 ht-degree: 1%
 
 ---
@@ -811,7 +811,7 @@ De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve op
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-Clientbibliotheken van Experience Managers kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in het document [Voorprocessoren gebruiken](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) bij het gebruik van proxy-clientbibliotheken moeten deze statische bronnen zich in een onderliggende map bevinden met de naam `resources` om effectief naar de publicatie-instanties te kunnen verwijzen.
+Clientbibliotheken van Experience Managers kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in het document [Voorprocessoren gebruiken](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) bij het gebruik van proxy-clientbibliotheken moeten deze statische bronnen zich in een onderliggende map bevinden met de naam `resources` om effectief van verwijzingen te worden voorzien op de publicatie instanties.
 
 #### Niet-compatibele code {#non-compliant-proxy-enabled}
 

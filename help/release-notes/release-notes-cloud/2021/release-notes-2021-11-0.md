@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.11.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.11.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -84,10 +84,10 @@ De volgende release is gepland voor 9 december 2021.
 
 ### Wat is er nieuw? {#what-is-new-cm-nov}
 
-* Gebruikers kunnen nu nieuwe Front End-pijpleidingen gebruiken om front-end code op een versnelde manier uitsluitend te implementeren. Zie [Cloud Manager frontend Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) voor meer informatie.
+* De gebruikers kunnen nieuwe pijpleidingen van het Eind van de Voorzijde nu gebruiken om vooreind code op een versnelde manier uitsluitend op te stellen. Zie [Cloud Manager frontend Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) voor meer informatie.
 
-   >[!IMPORTANT]
-   >U moet AEM versie hebben `2021.10.5933.20211012T154732Z` of hoger om nieuwe Front End-pijpleidingen te gebruiken.
+  >[!IMPORTANT]
+  >U moet AEM versie hebben `2021.10.5933.20211012T154732Z` of hoger voor het gebruik van nieuwe Front End-pijpleidingen.
 
 * De duur van de pijpleiding van de Kwaliteit van de code wordt beduidend verminderd door de codeanalyse op een efficiëntere manier uit te voeren zonder de behoefte om een volledig AEM beeld te bouwen. Deze verandering zal geleidelijk plaatsvinden in de weken na de release.
 

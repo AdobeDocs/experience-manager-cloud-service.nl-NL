@@ -2,9 +2,9 @@
 title: IP-Lijsten van gewenste personen toepassen en niet toepassen
 description: Leer hoe te om IP lijsten van gewenste personen op milieu's toe te passen en ongedaan te maken.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Een gebruiker in de **Zakelijke eigenaar** of **Implementatiebeheer** De rol kan
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 1. Navigeer naar de pagina met specifieke omgevingsdetails op het tabblad **Omgevingen** en navigeer naar het **IP-Lijst van gewenste personen** tabel.
 1. Gebruik de invoervelden boven aan de tabel om de IP-lijst van gewenste personen en de auteur of publicatieservice te selecteren waarop u deze wilt toepassen.
-   * De IP-Lijst van gewenste personen moet bestaan in Cloud Manager om deze te kunnen toepassen.
+   * De IP-Lijst van gewenste personen moet bestaan in Cloud Manager om deze toe te passen.
 1. Klikken **Toepassen** en bevestig uw inzending.
 
 ## Lijsten van gewenste personen niet toepassen {#un-applying}

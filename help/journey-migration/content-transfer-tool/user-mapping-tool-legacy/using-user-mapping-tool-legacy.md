@@ -4,9 +4,9 @@ description: Gebruikerstoewijzing gebruiken (verouderd)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '831'
 ht-degree: 3%
 
 ---
@@ -61,17 +61,17 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
 
    * **Org-id**: Voer de Adobe Identity Management System (IMS) Org ID in voor de organisatie waarin de gebruikers worden gemigreerd.
 
-      >[!NOTE]
-      >Als u de organisatie-id wilt ophalen, meldt u zich aan bij de [Admin Console](https://adminconsole.adobe.com/) en kies uw organisatie (in het hoogste juiste gebied) als u tot meer dan één behoort. De organisatie-id staat in de URL van die pagina, in de notatie `xx@AdobeOrg`, waarbij xx de IMS Org ID is.  U kunt de organisatie-id ook vinden in het dialoogvenster [Adobe Developer Console](https://console.adobe.io) pagina waar u het Token van de Toegang produceert.
+     >[!NOTE]
+     >Als u de organisatie-id wilt ophalen, meldt u zich aan bij de [Admin Console](https://adminconsole.adobe.com/) en kies uw organisatie (in het hoogste juiste gebied) als u tot meer dan één behoort. De organisatie-id staat in de URL van die pagina, in de notatie `xx@AdobeOrg`, waarbij xx de IMS Org ID is.  U kunt de organisatie-id ook vinden in het dialoogvenster [Adobe Developer Console](https://console.adobe.io) pagina waar u het Token van de Toegang produceert.
 
    * **Client-id**: Ga identiteitskaart van de Cliënt in die u van de stap van de Opstelling bewaarde.
 
    * **Toegangstoken**: Ga het Token van de Toegang in dat u van de stap van de Opstelling bewaarde.
 
-      >[!NOTE]
-      >Het toegangstoken verloopt elke 24 uur en er moet een nieuwe worden gemaakt. Ga terug naar [Adobe Developer Console](https://console.adobe.io), kiest u uw project, klikt u op **Gebruikersbeheer-API** en plak dezelfde persoonlijke sleutel in het vak.
+     >[!NOTE]
+     >Het toegangstoken verloopt elke 24 uur en er moet een nieuwe worden gemaakt. Ga terug naar [Adobe Developer Console](https://console.adobe.io), kies uw project, klik **Gebruikersbeheer-API** en plak dezelfde persoonlijke sleutel in het vak.
 
-1. Nadat u de velden hebt gevuld, klikt u op **Configuratie testen** om de verbinding met de API-service voor gebruikersbeheer te testen. Als de verbinding tot stand is gebracht, kunt u klikken op **Opslaan** om de configuratie op te slaan.
+1. Nadat u de velden hebt gevuld, klikt u op **Configuratie testen** om de verbinding met de API-service voor gebruikersbeheer te testen. Als de verbinding tot stand is gebracht, kunt u op **Opslaan** om de configuratie op te slaan.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
@@ -88,13 +88,12 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. Nadat de gebruikerstoewijzing is voltooid, klikt u op **Resultaten** om de samenvatting te bekijken.
+1. Klik op **Resultaten** om de samenvatting te bekijken.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >* Zodra de Toewijzing van de Gebruiker volledig is, kunt u terug naar de pagina van de Migratie van de Inhoud navigeren gebruikend breadcrumb. Op de kaart met gebruikerstoewijzing worden de status en het tijdstempel weergegeven. Klikken op **Inhoud overbrengen** om een migratieset te maken die wordt uitgevoerd. Zie [Het gereedschap Inhoud overbrengen uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) voor meer informatie .
-
+   >* Nadat de Toewijzing van de Gebruiker volledig is, kunt u terug naar de pagina van de Migratie van de Inhoud navigeren gebruikend breadcrumb. Op de kaart met gebruikerstoewijzing worden de status en het tijdstempel weergegeven. Klikken op **Inhoud overbrengen** om een migratieset te maken die wordt uitgevoerd. Zie [Het gereedschap Inhoud overbrengen uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) voor meer informatie .
 
 ### De gebruikerstoewijzingsprocedure hervatten {#resume-user-mapping-process}
 
@@ -104,26 +103,26 @@ Als het proces voor het toewijzen van gebruikersgegevens is gestopt vanwege een 
 * het toegangstoken is verlopen tijdens het proces of
 * een andere reden
 
-   >[!NOTE]
-   >De voortgang wordt opgeslagen vanaf het punt waar het proces is gestopt.
+  >[!NOTE]
+  >De voortgang wordt opgeslagen vanaf het punt waar het proces is gestopt.
 
 Voer de onderstaande stappen uit om het proces voor het toewijzen van gebruikers te hervatten:
 
-1. Klikken op **Logboek weergeven** om het logbestand met gebruikerstoewijzing te bekijken om de opgeslagen voortgang te controleren.
+1. Klikken **Logboek weergeven** om het logbestand met gebruikerstoewijzing te bekijken om de opgeslagen voortgang te controleren.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
-1. Klik op de knop **Gebruikerstoewijzing starten** opnieuw om te hervatten vanaf het punt waar deze was uitgeschakeld.
+1. Klikken **Gebruikerstoewijzing starten** opnieuw om te hervatten vanaf het punt waar deze was uitgeschakeld.
 
    >[!NOTE]
    >Zorg ervoor alvorens opnieuw te beginnen dat het toegangstoken nog geldig is of is verfrist.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
 
-1. Klikken op **Start** in het dialoogvenster om het proces Gebruikerstoewijzing te hervatten.
+1. Klikken **Start** in het dialoogvenster om het proces Gebruikerstoewijzing te hervatten.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   Nadat het proces voor het toewijzen van gebruikersgegevens is voltooid, kunt u de **Status** als **VOLTOOID** voor die specifieke configuratie.
+   Nadat het proces voor gebruikerstoewijzing is voltooid, kunt u de **Status** als **VOLTOOID** voor die specifieke configuratie.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

@@ -2,9 +2,9 @@
 title: De vertaalconnector configureren voor inhoud zonder kop
 description: Leer hoe u verbinding AEM maken met een vertaalservice.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Als u een andere leverancier kiest, moet uw beheerder het aansluitingspakket ins
 >
 >Als u ervoor kiest de Microsoft Translator-aansluiting te gebruiken voor testdoeleinden, hoeft u de stappen in de volgende twee secties niet uit te voeren: [Een configuratie voor vertaalintegratie maken](#create-config) en [Koppel de configuratie aan uw inhoud.](#associate) Nochtans wordt u geadviseerd om hen te lezen zodat u met de stappen vertrouwd bent voor wanneer u uw aangewezen schakelaar moet vormen.
 >
->De proeflicentie van de Microsoft Translator-aansluiting is niet bedoeld voor productiedoeleinden en als u besluit een licentie te verlenen, moet de systeembeheerder de stappen volgen die in het dialoogvenster [Aanvullende bronnen](#additional-resources) aan het einde van dit document om die licentie te configureren.
+>De proeflicentie van de Microsoft Translator-aansluiting is niet bedoeld voor productiedoeleinden en als u besluit een licentie te verlenen, moet de systeembeheerder de stappen volgen die in het dialoogvenster [Aanvullende bronnen](#additional-resources) aan het einde van dit document, zodat u die licentie kunt configureren.
 
 ## Een configuratie voor vertaalintegratie maken {#create-config}
 
@@ -99,7 +99,7 @@ Een nieuwe vertaalconfiguratie maken:
    1. **Metagegevens vertalen** - Schakel deze optie in om metagegevens van elementen te vertalen.
    1. **Tags vertalen** - Schakel dit selectievakje in om codes te vertalen die aan het element zijn gekoppeld.
    1. **Vertaling automatisch uitvoeren** - Schakel deze eigenschap in als u vertalingen automatisch naar uw vertaalservice wilt verzenden.
-   1. **Alleen bijwerken uitschakelen** - Als deze optie is ingeschakeld, worden bij het bijwerken van het vertaalproject alle vertaalbare velden voor vertaling ingediend, en niet alleen de velden die zijn gewijzigd sinds de laatste vertaling. Het bijwerken van uw vertaalproject zal later in de reis worden besproken.
+   1. **Alleen bijwerken uitschakelen** - Als deze optie is ingeschakeld, worden bij het bijwerken van het vertaalproject alle vertaalbare velden voor vertaling ingediend, en niet alleen de velden die zijn gewijzigd sinds de laatste vertaling. Het bijwerken van uw vertaalproject wordt later in de reis besproken.
    1. **Velden voor inhoudsmodellen inschakelen voor vertaling** - Schakel deze optie in zodat de vertaalconfiguratie automatisch velden in de inhoudsmodellen herkent die zijn gebaseerd op de **Vertaalbaar** markering.
 
 1. Tik of klik op **Opslaan en sluiten**.

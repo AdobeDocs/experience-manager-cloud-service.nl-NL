@@ -2,9 +2,9 @@
 title: Ontwerpen voor AEM als een headless CMS - Een inleiding
 description: Een inleiding tot het gebruiken van de eigenschappen van Adobe Experience Manager as a Cloud Service als Zwaardeloze CMS om inhoud voor uw project te ontwerpen.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '664'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ Dit betekent dat uw inhoud een groot aantal apparaten kan bereiken, in een groot
 (Deze fragmenten kunnen desgewenst ook worden gebruikt bij het samenstellen van AEM webpagina&#39;s.)
 
 * &quot;Traditioneel&quot; CMS
-   * Inhoud is ontworpen voor webpagina&#39;s en gebruikt een reeks componenten die bepalen hoe de inhoud op uw website wordt weergegeven. Zelfs hier is AEM uiterst flexibel aangezien uw projectteam aangepaste componenten kan ontwikkelen.
+   * Inhoud wordt gemaakt voor webpagina&#39;s met behulp van een reeks componenten die definiëren hoe de inhoud op uw website wordt weergegeven. Zelfs hier is AEM uiterst flexibel aangezien uw projectteam aangepaste componenten kan ontwikkelen.
 
 ## Inhoud modelleren {#content-modeling}
 

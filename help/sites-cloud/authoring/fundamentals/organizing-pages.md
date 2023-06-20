@@ -2,9 +2,9 @@
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2556'
 ht-degree: 4%
 
 ---
@@ -112,7 +112,7 @@ Alle tekens die zijn toegestaan, zijn beschikbaar in [de naamgevingsconventies](
 
 Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam**[ van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd.](/help/implementing/developing/introduction/naming-conventions.md)
 
-A **Titel** het veld met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
+A **Titel** veld met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
@@ -199,6 +199,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
    * **Titel**:
 
       * Dit wordt aan de gebruiker getoond en is verplicht.
+
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
@@ -326,6 +327,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
       * Selecteer de bestemming door de duimnagel van de bestemming te klikken.
       * Klikken **Volgende** om door te gaan.
+
    * Gebruiken **Vorige** om terug te keren naar de specificatie van de paginanaam.
 
    >[!NOTE]
@@ -379,7 +381,7 @@ Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een ge
       * **Nu** Hiermee wordt direct begonnen met de uitvoering van de asynchrone taak.
       * **Later** Hiermee kan de gebruiker definiëren wanneer de asynchrone taak wordt gestart.
 
-         ![Asynchrone verplaatsing van pagina](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+        ![Asynchrone verplaatsing van pagina](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
 De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [**Async-taakstatus** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) om **Algemene navigatie** -> **Gereedschappen** -> **Bewerkingen** -> **Taken**
 
@@ -443,4 +445,3 @@ U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 >* Mappen kunnen alleen direct onder **Sites** of onder andere mappen. Ze kunnen niet onder een pagina worden gemaakt.
 >* Met de standaardhandelingen kunt u eigenschappen verplaatsen, kopiëren, plakken, verwijderen, publiceren, verwijderen en weergeven/bewerken uitvoeren op een map.
 >* Mappen zijn niet beschikbaar voor selectie in een live kopie.
-

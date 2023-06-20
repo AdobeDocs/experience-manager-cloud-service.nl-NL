@@ -2,9 +2,9 @@
 title: SSL-certificaten beheren
 description: Leer hoe u Cloud Manager gebruikt om de status van uw SSL-certificaten te controleren en hoe u deze kunt bewerken, vervangen, bijwerken en verwijderen.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ De status van uw SSL-certificaten kan in één oogopslag worden geïnterpreteerd
 * **Groen** - Deze status geeft aan dat uw certificaat ten minste 60 dagen geldig is vanaf de huidige datum.
 
 * **Oranje** - Deze status geeft aan dat uw certificaat over minder dan 60 dagen verloopt.
-   * Het is tijd om ervoor te zorgen dat u een abonnement hebt om uw certificaat te vernieuwen en dit te vervangen via de interface van Cloud Manager om mogelijke toegang tot of uitval van sites te voorkomen.
+   * Het wordt tijd om ervoor te zorgen dat u een abonnement hebt om uw certificaat te vernieuwen en dit te vervangen door de gebruikersinterface van Cloud Manager om mogelijke toegang tot of uitval van sites te voorkomen.
    * Cloud Manager verzendt regelmatig meldingen in de gebruikersinterface om u te waarschuwen voor het binnenkort verlopen van een certificaat.
 
 * **Rood** - Deze status geeft aan dat het SSL-certificaat is verlopen.
@@ -63,7 +63,7 @@ Ga als volgt te werk om een SSL-certificaat te verwijderen.
 
 ## Bestaande CDN-configuraties {#pre-existing-cdn}
 
-Als u een reeds bestaande CDN configuratie voor uw SSL certificaat hebt, zal er een informatief bericht op het **SSL-certificaten** , waarbij u wordt aangemoedigd deze configuraties toe te voegen via de gebruikersinterface, zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
+Als u een reeds bestaande CDN configuratie voor uw SSL certificaat hebt, is er een informatief bericht op het **SSL-certificaten** , waarbij u wordt aangemoedigd deze configuraties toe te voegen via de gebruikersinterface, zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
 
 Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 

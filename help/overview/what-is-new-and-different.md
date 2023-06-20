@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 80%
+source-wordcount: '1899'
+ht-degree: 77%
 
 ---
 
@@ -192,7 +192,7 @@ Dankzij de duidelijke scheiding van code en content kunnen ontwikkelaars een bep
 
 ### Lokale ontwikkeling {#aem-as-a-cloud-service-developing-local-development}
 
-Om snelle herhalingen en ontwikkeling te ondersteunen is het ook mogelijk om AEM-applicaties buiten de context van AEM as a Cloud Service te ontwikkelen. Daarvoor worden de volgende artefacten aan de ontwikkelaars ter beschikking gesteld:
+Om snelle herhalingen en ontwikkeling te ondersteunen, is het ook mogelijk om AEM toepassingen buiten de AEM as a Cloud Service context te ontwikkelen. Daarvoor worden de volgende artefacten aan de ontwikkelaars ter beschikking gesteld:
 
 * AEM as a Cloud Service QuickStart: een `.jar`-gebaseerd, zelfstandig installatieprogramma van de nieuwste AEM-codebase, met hetzelfde functionele en API-oppervlak.
 
@@ -242,7 +242,7 @@ Dit biedt een combinatie van de volgende voordelen:
 >
 >Voor meer informatie is de sectie [Basisbewerkingen](/help/sites-cloud/authoring/getting-started/basic-handling.md) een goed uitgangspunt.
 
-De basisbeginselen van de authoringgebruikersinterface (UI), zowel voor Sites als Assets, zullen heel vertrouwd zijn voor iedereen die AEM vroeger heeft gebruikt.
+De basisbeginselen van het auteursgebruikersinterface (UI), voor zowel Plaatsen als Activa, zullen aan iedereen vertrouwd zijn die in het verleden AEM heeft gebruikt.
 
 Het belangrijkste verschil is dat de gebruikersinterface alleen met aanraking werkt. De klassieke interface is niet meer beschikbaar. Verder zijn de basisbeginselen ongewijzigd, met alleen kleine zichtbare wijzigingen.
 

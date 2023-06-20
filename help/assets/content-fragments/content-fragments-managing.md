@@ -2,10 +2,10 @@
 title: Inhoudsfragmenten beheren (elementen - Inhoudsfragmenten)
 description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 6%
+source-wordcount: '1754'
+ht-degree: 5%
 
 ---
 
@@ -31,7 +31,6 @@ De [Inhoudsfragmenteditor](#opening-the-fragment-editor) biedt diverse [modi](#m
 >
 >* bij het ontwerpen van pagina&#39;s; zie [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* for [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-
 
 >[!NOTE]
 >
@@ -65,21 +64,21 @@ De methode voor het maken van een inhoudsfragment is:
 
       * **Titel**
 
-         De fragmenttitel.
+        De fragmenttitel.
 
-         Verplicht.
+        Verplicht.
 
       * **Beschrijving**
 
       * **Tags**
+
    * **Geavanceerd**
 
       * **Naam**
 
-         de naam; wordt gebruikt om de URL te vormen.
+        de naam; wordt gebruikt om de URL te vormen.
 
-         Verplicht; wordt automatisch afgeleid van de titel, maar kan worden bijgewerkt.
-
+        Verplicht; wordt automatisch afgeleid van de titel, maar kan worden bijgewerkt.
 
 1. Selecteer **Maken** om de actie te voltooien en **open** vervolgens het fragment voor het bewerken of keer terug naar de console met **Gereed**.
 
@@ -176,7 +175,7 @@ Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 
 ![modi](assets/cfm-managing-top-toolbar.png)
 
-* Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina. U kunt **Sluiten** het bericht.
+* Er wordt een bericht weergegeven wanneer er al naar het fragment wordt verwezen op een inhoudspagina. U kunt **Sluiten** het bericht.
 
 * Het zijpaneel kan worden verborgen of weergegeven met de opdracht **Zijpaneel in-/uitschakelen** pictogram.
 
@@ -216,23 +215,23 @@ De editor heeft verschillende opties:
    * **Opslaan** slaat de laatste wijzigingen op en blijft deze in de editor.
    * **Opslaan en sluiten** slaat de laatste wijzigingen op en sluit de editor af.
 
-   >[!CAUTION]
-   >
-   >Als u een inhoudsfragment wilt bewerken, hebt u [de juiste machtigingen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Neem contact op met de systeembeheerder als er problemen optreden.
+  >[!CAUTION]
+  >
+  >Als u een inhoudsfragment wilt bewerken, hebt u [de juiste machtigingen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Neem contact op met de systeembeheerder als er problemen optreden.
 
-   >[!NOTE]
-   >
-   >Het is mogelijk om in de redacteur te blijven, makend een reeks veranderingen, alvorens te bewaren.
+  >[!NOTE]
+  >
+  >Het is mogelijk om in de redacteur te blijven, makend een reeks veranderingen, alvorens te bewaren.
 
-   >[!CAUTION]
-   >
-   >Naast het eenvoudig opslaan van uw wijzigingen, werken de acties ook verwijzingen bij en zorgen ervoor dat de Dispatcher wordt leeggemaakt zoals vereist. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
-   >
-   >Houd hier rekening mee wanneer u **Opslaan en sluiten** en voert u vervolgens snel de fragmenteditor opnieuw in om verdere wijzigingen aan te brengen en op te slaan.
+  >[!CAUTION]
+  >
+  >Naast het eenvoudig opslaan van uw wijzigingen, werken de acties ook verwijzingen bij en zorgen ervoor dat de Dispatcher wordt leeggemaakt zoals vereist. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
+  >
+  >Houd hier rekening mee wanneer u **Opslaan en sluiten** en voert u vervolgens snel de fragmenteditor opnieuw in om verdere wijzigingen aan te brengen en op te slaan.
 
 * **Sluiten**
 
-   Sluit de editor af zonder de laatste wijzigingen op te slaan (dat wil zeggen sinds de laatste **Opslaan**).
+  Sluit de editor af zonder de laatste wijzigingen op te slaan (dat wil zeggen sinds de laatste **Opslaan**).
 
 AEM tijdens het bewerken van het inhoudsfragment automatisch versies maken om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u de wijzigingen annuleert (met **Sluiten** zonder opslaan):
 
@@ -289,16 +288,18 @@ Naast de standaardopties [Tijdlijn](/help/assets/manage-digital-assets.md#timeli
    * **Verwijderen**
 
 >[!NOTE]
+>
 Opmerkingen zijn:
+>
 * Standaardfunctionaliteit voor alle elementen
 * Gemaakt in tijdlijn
 * Verwant aan het fragmentelement
 >
 Annotaties (voor inhoudsfragmenten) zijn:
+>
 * Opgegeven in de fragmenteditor
 * Specifiek voor een geselecteerd tekstsegment binnen het fragment
 >
-
 
 Bijvoorbeeld:
 
@@ -314,7 +315,7 @@ Hiermee wordt het volgende geopend:
 
 * de geselecteerde versie **v&lt;*x.y*>** (rechts)
 
-Zij worden naast elkaar weergegeven, waarbij:
+Zij worden naast elkaar getoond, waarbij:
 
 * Eventuele verschillen worden gemarkeerd
 
@@ -327,6 +328,7 @@ Zij worden naast elkaar weergegeven, waarbij:
 * **Gereed** zult u aan de console terugkeren
 
 >[!NOTE]
+>
 U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
 
 ![vergelijking](assets/cfm-managing-06.png)
@@ -337,14 +339,16 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 
 * Rechtstreeks vanuit de [Tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-   Selecteer de gewenste versie en klik vervolgens op **Deze versie herstellen** handeling.
+  Selecteer de gewenste versie en klik vervolgens op **Deze versie herstellen** handeling.
 
 * while [een versie vergelijken met de huidige versie](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **Vorige versie** naar de geselecteerde versie.
 
 ## Een fragment publiceren en ernaar verwijzen {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
+>
 Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat de [model is gepubliceerd](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>
 Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
 
 Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving. Dit wordt gedaan gebruikend de standaardfunctionaliteit van Activa:
@@ -360,6 +364,7 @@ Dit is toegankelijk:
 Wanneer u [Een pagina publiceren die het fragment gebruikt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); het fragment wordt weergegeven in de paginaverwijzingen.
 
 >[!CAUTION]
+>
 Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
 ## Een fragment verwijderen {#deleting-a-fragment}
@@ -370,10 +375,12 @@ Een fragment verwijderen:
 2. Selecteer het fragment.
 
    >[!NOTE]
+   >
    De **Verwijderen** Handeling is niet beschikbaar als een snelle handeling.
 
 3. Selecteren **Verwijderen** op de werkbalk.
 4. Bevestig de **Verwijderen** handeling.
 
    >[!CAUTION]
-   Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
+   >
+   Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor inhoudsfragmenten verwijderd uit alle inhoudspagina&#39;s.

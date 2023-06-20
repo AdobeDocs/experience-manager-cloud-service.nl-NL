@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -47,19 +47,19 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
 * U kunt de gedeelde elementen downloaden met de functie voor delen van koppeling. Deze download gebruikt nu een asynchrone service die sneller en ononderbroken downloads biedt, zelfs voor zeer grote downloads. Zie [downloadmiddelen](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![Postvak IN downloaden](/help/assets/assets/download-inbox.png)
+  ![Postvak IN downloaden](/help/assets/assets/download-inbox.png)
 
 ### Nieuwe functies beschikbaar in het prerelease-kanaal {#what-is-new-assets-prerelease}
 
 * Metagegevensschema&#39;s kunnen rechtstreeks op de mapeigenschappen worden toegepast.
 
-   ![Metagegevensschema toevoegen uit mapeigenschappen](/help/assets/assets/metadata-schema-folder-properties.png)
+  ![Metagegevensschema toevoegen uit mapeigenschappen](/help/assets/assets/metadata-schema-folder-properties.png)
 
 * Met het gereedschap Asset Bulk Ingestor kunt u metagegevens toevoegen tijdens een grote opname.
 
 * Dankzij de verbeteringen in de gebruikerservaring wordt het aantal elementen in een map weergegeven. Voor meer dan 1000 elementen in een map: [!DNL Assets] geeft 1000+ weer.
 
-   ![Het aantal elementen in een map wordt weergegeven op de interface](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![Het aantal elementen in een map wordt weergegeven op de interface](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### Buizen vastgesteld in [!DNL Assets] {#assets-bugs-fixed}
 
@@ -110,7 +110,7 @@ De volgende release is gepland voor 3 juni 2021.
 
 * Het eindpunt van de repository in de Public API bevat nu de Git URL.
 
-* Het implementatielogboek dat door een gebruiker van Cloud Manager wordt gedownload, is begrijpelijker en bevat nu details over fouten en successcenario&#39;s.
+* Het implementatielogboek dat door een gebruiker van Cloud Manager is gedownload, is begrijpelijker en bevat details over fouten en successcenario&#39;s.
 
 * Intermitterende fouten die werden aangetroffen tijdens het doorvoeren van code naar Adobe-it, zijn nu opgelost.
 
@@ -148,7 +148,7 @@ De releasedatum voor Content Transfer Tool v1.4.6 is 27 mei 2021.
 
 * De nieuwe logboekverklaring werd toegevoegd aan het foutenlogboek van QuickStart, als de gebruiker geen toestemming op uitvoerbaar Java heeft.
 
-* Wanneer een gebruiker een migratieset verwijdert uit de CTT UI, waar een extractie is uitgevoerd, wordt `tmp` de map die aan die migratieset is gekoppeld, wordt verwijderd om ruimte te besparen.
+* Wanneer een gebruiker een migratieset verwijdert uit de CTT-gebruikersinterface, waar een extractie is uitgevoerd, wordt `tmp` de map die aan die migratieset is gekoppeld, wordt verwijderd om ruimte te besparen.
 
 ### Opgeloste problemen {#bug-fixes-ctt-latest}
 

@@ -3,9 +3,9 @@ title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1681'
 ht-degree: 1%
 
 ---
@@ -36,10 +36,10 @@ Bijvoorbeeld, om een voortgeduurde vraag specifiek voor de configuratie van Plaa
 
 Als er bijvoorbeeld een bepaalde query wordt uitgevoerd, `my-query`, die een model gebruikt `my-model` vanuit de configuratie Sites `my-conf`:
 
-* U kunt een query maken met de opdracht `my-conf` specifiek eindpunt, en dan zal de vraag als volgt worden bewaard:
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* U kunt dezelfde query maken met `global` eindpunt, maar dan zal de vraag als volgt worden bewaard:
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+* U kunt een query maken met de opdracht `my-conf` specifiek eindpunt, en dan wordt de vraag bewaard als volgt:
+  `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+* U kunt dezelfde query maken met `global` eindpunt, maar dan wordt de vraag bewaard als volgt:
+  `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
@@ -363,14 +363,14 @@ De standaard configuratie OSGi voor publiceer instanties:
 
 * leest de variabelen van de Manager van de Wolk als beschikbaar:
 
-   | OSGi-configuratieeigenschap | leest dit | Variabele voor wolkenbeheer |
-   |--- |--- |--- |
-   | `cacheControlMaxAge` | lezen | `graphqlCacheControl` |
-   | `surrogateControlMaxAge` | lezen | `graphqlSurrogateControl` |
-   | `surrogateControlStaleWhileRevalidate` | lezen | `graphqlStaleWhileRevalidate` |
-   | `surrogateControlStaleIfError` | lezen | `graphqlStaleIfError` |
+  | OSGi-configuratieeigenschap | leest dit | Variabele voor wolkenbeheer |
+  |--- |--- |--- |
+  | `cacheControlMaxAge` | lezen | `graphqlCacheControl` |
+  | `surrogateControlMaxAge` | lezen | `graphqlSurrogateControl` |
+  | `surrogateControlStaleWhileRevalidate` | lezen | `graphqlStaleWhileRevalidate` |
+  | `surrogateControlStaleIfError` | lezen | `graphqlStaleIfError` |
 
-   {style="table-layout:auto"}
+  {style="table-layout:auto"}
 
 * en als niet beschikbaar, gebruikt de configuratie OSGi [standaardwaarden voor publicatie-instanties](#publish-instances).
 
@@ -386,13 +386,13 @@ U kunt [vorm de montages OSGi](/help/implementing/deploying/configuring-osgi.md)
 
 Het veld `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) kan worden gedefinieerd als vereist:
 
-* `false` (standaardwaarde): Het maakt niet uit of de voortgezette query succesvol is of niet. De `/execute.json/persisted-query` retourneert de statuscode `200` en de `Content-Type` header returned will be `application/json`.
+* `false` (standaardwaarde): Het maakt niet uit of de voortgezette query succesvol is of niet. De `/execute.json/persisted-query` retourneert de statuscode `200` en de `Content-Type` header returned is `application/json`.
 
-* `true`: Het eindpunt zal terugkeren `400` of `500` zoals aangewezen wanneer er om het even welke vorm van fout bij het runnen van de persisted vraag is. Ook de geretourneerde `Content-Type` wordt `application/graphql-response+json`.
+* `true`: Het eindpunt zal terugkeren `400` of `500` zoals aangewezen wanneer er om het even welke vorm van fout bij het runnen van de persisted vraag is. De geretourneerde `Content-Type` is `application/graphql-response+json`.
 
-   >[!NOTE]
-   >
-   >Zie voor meer informatie https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >[!NOTE]
+  >
+  >Zie voor meer informatie https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## De URL van de query coderen voor gebruik door een app {#encoding-query-url}
 
@@ -438,7 +438,7 @@ Een pakket maken:
 1. Een nieuw pakket maken door te tikken **Pakket maken**. Hiermee wordt een dialoogvenster geopend waarin het pakket wordt gedefinieerd.
 1. In het dialoogvenster Pakketdefinitie, onder **Algemeen** Voer een **Naam** zoals &quot;wknd-persistent-questions&quot;.
 1. Voer een versienummer in, bijvoorbeeld &quot;1.0&quot;.
-1. Onder **Filters** een nieuwe **Filter**. Gebruik de Finder van de Weg om te selecteren `persistentQueries` onder de configuratie. Bijvoorbeeld voor de `wknd` configuratie het volledige weg zal zijn `/conf/wknd/settings/graphql/persistentQueries`.
+1. Onder **Filters** een nieuwe **Filter**. Gebruik de Finder van de Weg om te selecteren `persistentQueries` onder de configuratie. Bijvoorbeeld voor `wknd` configuratie, het volledige pad is `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tikken **Opslaan** om de nieuwe pakketdefinitie op te slaan en het dialoogvenster te sluiten.
 1. Tik op de knop **Opbouwen** in de nieuw gecreëerde definitie van het Pakket.
 

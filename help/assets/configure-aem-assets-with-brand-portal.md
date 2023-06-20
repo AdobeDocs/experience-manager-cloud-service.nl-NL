@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 42927eec458553121f70b74a54f0f26eb616a13e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2388'
+source-wordcount: '2387'
 ht-degree: 11%
 
 ---
@@ -61,7 +61,7 @@ U kunt Brand Portal activeren terwijl u de productieomgevingen voor uw Experienc
 >
 >Brand Portal moet op dezelfde IMS org als de Experience Manager Assets worden geactiveerd als een [!DNL Cloud Service] -instantie.
 >
->Als u een bestaande Brand Portal-cloudconfiguratie hebt ([handmatig geconfigureerd met Adobe Developer Console](#manual-configuration)) voor een IMS org (org1-bestaand) en uw Experience Manager Assets als een [!DNL Cloud Service] -instantie is geconfigureerd voor een andere IMS-org (org2-new). Als u Brand Portal activeert vanuit Cloud Manager, wordt de Brand Portal IMS-org opnieuw ingesteld op `org2-new`. Hoewel de manueel gevormde wolkenconfiguratie op `org1-existing` wordt weergegeven in de ontwerpversie van Experience Manager Assets, maar wordt niet meer gebruikt nadat u Brand Portal hebt geactiveerd via Cloud Manager.
+>Als u een bestaande Brand Portal-cloudconfiguratie hebt ([handmatig geconfigureerd met Adobe Developer Console](#manual-configuration)) voor een IMS org (org1-bestaand) en uw Experience Manager Assets als een [!DNL Cloud Service] -instantie is geconfigureerd voor een andere IMS-org (org2-new). Als u Brand Portal activeert vanuit Cloud Manager, wordt de Brand Portal IMS-org opnieuw ingesteld op `org2-new`. Hoewel de manueel gevormde wolkenconfiguratie op `org1-existing` wordt weergegeven in de auteur van Experience Manager Assets, maar wordt niet meer gebruikt nadat u Brand Portal hebt geactiveerd via Cloud Manager.
 >
 >Als de bestaande Brand Portal-cloudconfiguratie en Experience Manager Assets als een [!DNL Cloud Service] -instantie dezelfde IMS org (org1) gebruikt, hoeft u Brand Portal alleen te activeren via Cloud Manager.
 >
@@ -116,6 +116,7 @@ Voer de volgende stappen uit om de verbinding tussen uw Experience Manager Asset
    * **verwerkingswachtrij**: voor de distributie van assets naar Brand Portal.
 
    * **foutenwachtrij**: voor de assets waarvoor de distributie is mislukt.
+
    >[!NOTE]
    >
    >Het wordt aanbevolen om de fouten te controleren en de **foutenwachtrij** regelmatig te wissen.
@@ -339,7 +340,7 @@ U kunt nu de client-id (API-sleutel), het clientgeheim en de JWT-payload gebruik
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information is used to create IMS account configuration.
 
 -->
 

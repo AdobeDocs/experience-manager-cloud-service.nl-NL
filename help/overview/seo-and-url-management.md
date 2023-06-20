@@ -2,10 +2,10 @@
 title: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 description: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3714'
-ht-degree: 55%
+source-wordcount: '3709'
+ht-degree: 54%
 
 ---
 
@@ -46,9 +46,8 @@ Hier volgen enkele algemene tips voor het samenstellen van URL&#39;s voor SEO:
    * Wanneer u selectors op een pagina gebruikt, hebben selectors die semantische waarde bieden, de voorkeur.
    * Als mensen uw URL niet kunnen lezen, kan een zoekmachine dat ook niet.
    * Bijvoorbeeld:
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-heeft de voorkeur boven 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+heeft de voorkeur boven `mybrand.com/products/product-detail.1234.html`
 
 * Vermijd waar mogelijk subdomeinen, aangezien de onderzoeksmotoren hen als verschillende entiteiten behandelen, die de SEO waarde van de plaats verdelen.
 
@@ -78,7 +77,7 @@ heeft de voorkeur boven
 
 * Zorg ervoor dat elke pagina slechts vanaf één protocol wordt aangeboden.
 
-   * Soms worden sites aangeboden via `http` totdat een gebruiker een pagina bereikt met bijvoorbeeld een uitcheckformulier of een aanmeldingsformulier, waarna naar `https` wordt omgeschakeld. Wanneer de gebruiker een koppeling maakt vanaf deze pagina, als de gebruiker kan terugkeren naar `http` pagina&#39;s en open deze via `https`Deze worden door het zoekprogramma bijgehouden als twee afzonderlijke pagina&#39;s.
+   * Soms worden sites langer gebruikt `http` totdat een gebruiker een pagina bereikt met bijvoorbeeld een uitcheckformulier of een aanmeldingsformulier, waarna de gebruiker naar `https`. Wanneer de gebruiker een koppeling maakt vanaf deze pagina, als de gebruiker kan terugkeren naar `http` pagina&#39;s en open deze via `https`Deze worden door het zoekprogramma bijgehouden als twee afzonderlijke pagina&#39;s.
 
    * Google geeft momenteel de voorkeur aan `https`-pagina&#39;s boven `http`-pagina&#39;s. Daarom maakt het het voor iedereen vaak gemakkelijker om de hele site te bedienen `https`.
 
@@ -151,7 +150,7 @@ Met **Sling**-servlets kunt u uw servlet op de omgekeerde manier registreren. In
 De SCR-annotatie voor dit type servlet ziet er ongeveer als volgt uit:
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
 In dit geval is de bron die door de URL wordt aangesproken (een instantie van de bron `myPageType`), automatisch toegankelijk in de servlet. Om toegang te krijgen roept u het volgende aan:
@@ -186,20 +185,20 @@ Als een auteur wil dat een pagina voor promotiedoeleinden vanaf een tweede locat
 U kunt gelokaliseerde paginanamen aan gebruikers van vertaalde inhoud willen tonen. Bijvoorbeeld:
 
 * In plaats van een Spaanstalige gebruiker te laten navigeren naar:
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * Zou het beter zijn als de URL er als volgt uitziet:
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
-De uitdaging bij het lokaliseren van de naam van de pagina is dat veel van de lokalisatieprogramma&#39;s die beschikbaar zijn op het AEM-platform, erop vertrouwen dat de paginanamen in verschillende landinstellingen overeenkomen, zodat de content gesynchroniseerd blijft.
+De uitdaging bij het lokaliseren van de naam van de pagina is dat veel van de lokalisatieprogramma&#39;s die beschikbaar zijn op het AEM-platform, erop vertrouwen dat de paginanamen in verschillende landinstellingen overeenkomen, zodat de inhoud gesynchroniseerd blijft.
 
 Dankzij de `sling:alias` eigenschap kunt u echt het onderste uit de kan halen. `sling:alias` kan als eigenschap aan om het even welke bron worden toegevoegd om een aliasnaam voor de bron mogelijk te maken. In het vorige voorbeeld hebt u het volgende:
 
 * Een pagina in het JCR op:
-   `…/es/home`
+  `…/es/home`
 
 * Voeg er vervolgens een eigenschap aan toe:
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 Hierdoor kunnen de vertaalhulpmiddelen van AEM, zoals Multi-Site Manager, een relatie blijven onderhouden tussen:
 
@@ -218,12 +217,11 @@ Tegelijk kunnen eindgebruikers ook in hun eigen taal met de paginanaam communice
 In een standaard AEM-installatie:
 
 * Voor de OSGi-configuratie
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * Is de eigenschap
-   **Mapping Location** ( `resource.resolver.map.location`)
+  **Mapping Location** ( `resource.resolver.map.location`)
 
 * standaard ingesteld op `/etc/map`.
 
@@ -252,8 +250,8 @@ Er is echter ook een eenvoudigere manier om dit te beheren:
    Met behulp van de webconsole (bijvoorbeeld localhost:4502/system/console/configMgr) kunt u de Sling Resource Resolver configureren:
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    We raden u aan de toewijzingen die nodig zijn voor het verkorten van URL&#39;s als reguliere expressies, samen te stellen en vervolgens deze configuraties onder een OsgiConfignode, `config.publish`, die in uw build is inbegrepen, te definiëren.
 
    In plaats van uw toewijzingen te definiëren in `/etc/map`, kunt u deze rechtstreeks toewijzen aan de eigenschap **URL Mappings** (`resource.resolver.mapping`):
@@ -315,7 +313,7 @@ Voorbeelden:
 Beide zouden de volgende tag op de kop van de pagina toepassen:
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 ```
 
 De `href` kan relatief of absoluut zijn. De code moet worden opgenomen in de paginamarkering om de canonieke URL voor de pagina te bepalen en deze tag uit te voeren.
@@ -373,7 +371,7 @@ Neem bijvoorbeeld een site die een sitemaproot op hoofdniveau definieert op `my-
 
 In de standaardconfiguratie biedt het dialoogvenster Pagina-eigenschappen een optie om een pagina te markeren als een sitemaproot en genereert u dus, zoals hierboven beschreven, een sitemap van zichzelf en de onderliggende elementen. Dit gedrag wordt geïmplementeerd door implementaties van de `SitemapGenerator` en kan worden uitgebreid door alternatieve implementaties toe te voegen. Aangezien de frequentie waarop de XML-sitemaps opnieuw moeten worden gegenereerd sterk afhankelijk is van de workflows en werklasten voor het schrijven van inhoud, wordt het product echter niet verzonden `SitemapScheduler` configuratie. Dit maakt de functie effectief opt-in.
 
-Om de achtergrondtaak in te schakelen die de XML-sitemaps genereert, kunt u een `SitemapScheduler` moet worden geconfigureerd. Om dit te doen, creeer een configuratie OSGI voor PID `org.apache.sling.sitemap.impl.SitemapScheduler`. De planneruitdrukking `0 0 0 * * ?` U kunt dit gebruiken als beginpunt om alle XML-sitemaps eenmaal per dag om middernacht opnieuw te genereren.
+Als u de achtergrondtaak die de XML-sitemaps genereert, wilt inschakelen: `SitemapScheduler` moet worden geconfigureerd. Om dit te doen, creeer een configuratie OSGI voor PID `org.apache.sling.sitemap.impl.SitemapScheduler`. De planneruitdrukking `0 0 0 * * ?` U kunt dit gebruiken als beginpunt om alle XML-sitemaps eenmaal per dag om middernacht opnieuw te genereren.
 
 ![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png)
 

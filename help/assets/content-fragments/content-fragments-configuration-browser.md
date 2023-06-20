@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten - Configuratie-browser (middelen - Inhoudsfragmenten)
 description: Leer hoe te om de functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '360'
 ht-degree: 14%
 
 ---
@@ -26,7 +26,6 @@ Voordat u Inhoudsfragmenten kunt gebruiken, moet u de opdracht **Configuratiebro
 >
 >* de **Maken** Deze optie is niet beschikbaar voor het maken van nieuwe modellen.
 >* u kunt niet [Selecteer de configuratie van Plaatsen om het verwante eindpunt tot stand te brengen](/help/headless/graphql-api/graphql-endpoint.md).
-
 
 Voor het inschakelen van de functionaliteit voor inhoudsfragmenten moet u:
 
@@ -55,21 +54,19 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
 >* Blijvende query&#39;s worden (nog) als relevant voor de bovenliggende (basis)configuratie opgeslagen.
 
 
-
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
 
 1. Gebruiken **Maken** om het dialoogvenster te openen, waarin u:
 
    1. Geef een **Titel**.
-   1. De **Naam** wordt de knooppuntnaam in de repository.
-      * Het wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
+   1. De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
+      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
       * U kunt deze desgewenst aanpassen.
    1. Selecteer
       * **Modellen van contentfragmenten**
       * **Aangehouden GraphQL-query&#39;s**
 
       ![Configuratie definiëren](assets/cfm-conf-01.png)
-
 
 1. Selecteren **Maken** om de definitie op te slaan.
 

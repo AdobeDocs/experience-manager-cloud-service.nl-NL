@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2020.11.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.11.0."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1254'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
 
 ### Nieuwe functies in [!DNL Assets] en [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Opname van bulkactiva**: Klanten een schaalbare, in de cloud geïntegreerde service bieden die gebruik maakt van [!DNL Experience Manager] as a Cloud Service architectuur, met inbegrip van de diensten van de activamicrofoon. Belangrijke gebruiksgevallen zijn onder andere schaling op schaal met bewaking, rapportage en planning, terwijl de mogelijkheid bestaat om middelen eerst over te brengen naar de gegevensopslag in de cloud met gebruik van de gebruikelijke tools voor uploaden naar de cloud. Zie [gereedschap voor bulkopname](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Opname van bulkactiva**: Klanten een schaalbare, in de cloud geïntegreerde service bieden die [!DNL Experience Manager] as a Cloud Service architectuur, met inbegrip van de diensten van de activamicrofoon. Belangrijke gebruiksgevallen zijn onder andere schaling op schaal met bewaking, rapportage en planning, terwijl de mogelijkheid bestaat om middelen eerst over te brengen naar de gegevensopslag in de cloud met gebruik van de gebruikelijke tools voor uploaden naar de cloud. Zie [gereedschap voor bulkopname](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-   Dit hulpmiddel is voor systeembeheerder, adviseur, of de persona&#39;s van de implementatiepartner. Deze functie maakt het mogelijk om op grote schaal in te nemen en wordt bij voorkeur gebruikt tijdens de eerste opname of bij incidentele grote inname. Gebruik voor kleinere taken de opdracht [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) of [uploaden met de gebruikersinterface van Elementen](/help/assets/add-assets.md#upload-assets).
+  Dit hulpmiddel is voor systeembeheerder, adviseur, of de persona&#39;s van de implementatiepartner. Deze functie maakt het mogelijk om op grote schaal in te nemen en wordt bij voorkeur gebruikt tijdens de eerste opname of bij incidentele grote inname. Gebruik voor kleinere taken de opdracht [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) of [uploaden met de gebruikersinterface van Elementen](/help/assets/add-assets.md#upload-assets).
 
-   ![Configuratie van bulkimporteur](/help/assets/assets/bulk-import-config-low-res.png)
+  ![Configuratie van bulkimporteur](/help/assets/assets/bulk-import-config-low-res.png)
 
 * Gebruikers kunnen de digitale elementen nu sorteren in de Kaart- en kolomweergave.
 
-   ![sorteerelementen](/help/assets/assets/asset-sort-options.png)
+  ![sorteerelementen](/help/assets/assets/asset-sort-options.png)
 
 * De volgende verbeteringen zijn aangebracht voor toegankelijkheid in [!DNL Experience Manager Assets] in deze release. Zie voor meer informatie [toegankelijkheidsfuncties in [!DNL Assets]](/help/assets/accessibility.md).
 
@@ -54,7 +54,7 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
 
 * **Voorinstellingen batchset in Dynamic Media**: Nu kunt u het maken en ordenen van meerdere elementen in een afbeeldingsset automatiseren of de elementen laten draaien die zijn ingesteld op het moment dat u elementbestanden uploadt naar een map, afzonderlijk of met behulp van bulkopname.
 
-   Zie [Voorinstellingen batchset](/help/assets/dynamic-media/batch-set-presets-dm.md).
+  Zie [Voorinstellingen batchset](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 * De volgende toegankelijkheidsverbeteringen zijn nu beschikbaar in [!DNL Dynamic Media]:
 
@@ -67,7 +67,7 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
    * Gebruikers van het toetsenbord en de schermlezer kunnen de uitsnijdfunctionaliteit gebruiken.
    * De gebruikers van het toetsenbord kunnen de hotspots beter beheren.
 
-   Zie [Toegankelijkheid in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+  Zie [Toegankelijkheid in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -99,7 +99,7 @@ Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md
 * Voor het laden van afhankelijkheden die zijn uitgevoerd voordat de build werd uitgevoerd, moest een Maven-plug-in worden gedownload.
 * Met de koppeling in de voettekst van Cloud Manager om een taal te selecteren, gaat u nu naar de juiste locatie.
 * Soms wordt tijdens het scannen van code het SonarQube-proces niet gestart. Dit wordt nu automatisch gedetecteerd en er wordt geprobeerd opnieuw te starten.
-* Alle bestaande productiepijpleidingen worden automatisch ingeschakeld met behulp van de stap Experience Audit.
+* Alle bestaande productiepijpleidingen worden automatisch ingeschakeld met de stap Experience Audit.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 

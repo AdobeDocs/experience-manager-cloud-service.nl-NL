@@ -4,9 +4,9 @@ description: Kom te weten hoe te om de gemeenschappelijkste MSM-verwante kwestie
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 7c0be1a7bdc9ccb788ba41eb6ee83b89df94f500
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -27,12 +27,12 @@ MSM registreert verscheidene servers die met selecteurs op middel URLs kunnen wo
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Gebruik deze optie op een blauwdrukpagina om de lijst op te halen met alle Live-kopieën die eraan zijn gekoppeld, met extra statusinformatie voor Live Copy.
    * bijvoorbeeld:
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Gebruik deze optie op Live Copy-pagina&#39;s om geavanceerde informatie op te halen over de verbinding met de bijbehorende pagina&#39;s. Als de pagina geen live kopie is, wordt er niets geretourneerd.
    * bijvoorbeeld:
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Deze servers genereren FOUTOPSPORING-logberichten via de `com.day.cq.wcm.msm` registreerapparaat dat ook nuttig kan zijn.
 
@@ -55,7 +55,7 @@ De vroegere servlets teruggekeerde gegevens verwerkte die informatie op de MSM-s
 
 De informatie aanwezig in deze eigenschappen zou in UI moeten worden weerspiegeld, nochtans wanneer het oplossen van problemen het kan nuttig zijn om gedrag MSM direct in de bewaarplaats waar te nemen aangezien de acties MSM voorkomen.
 
-Kennis van die eigenschappen kan ook nuttig zijn om een query uit te voeren op uw opslagplaats en om te kijken welke paginasets zich in bepaalde staten bevinden. Bijvoorbeeld:
+Het kan ook handig zijn om deze eigenschappen te weten te komen, zodat u een query kunt uitvoeren op uw opslagplaats en informatie kunt krijgen over paginasets die zich in bepaalde staten bevinden. Bijvoorbeeld:
 
 * `select * from cq:LiveSync` Hiermee worden alle hoofdpagina&#39;s van Live Copy geretourneerd.
 
@@ -82,7 +82,7 @@ Als alternatief kunt u:
 
 Als een blauwdrukpagina wordt uitgevouwen, wordt de Live Copy-pagina bijgewerkt of wordt er een nieuwe Live Copy-pagina gemaakt als deze nog niet bestond (bijvoorbeeld wanneer de pagina voor de eerste keer wordt uitgevouwen of wanneer de Live Copy-pagina handmatig is verwijderd).
 
-In dit laatste geval echter, indien een pagina zonder `cq:LiveRelationship` Er bestaat al een eigenschap met dezelfde naam. De naam van deze pagina wordt overeenkomstig gewijzigd voordat de pagina Live Copy wordt gemaakt.
+In dit laatste geval echter, indien een pagina zonder `cq:LiveRelationship` Er bestaat al een eigenschap met dezelfde naam. De naam van deze pagina wordt overeenkomstig gewijzigd voordat de pagina Live kopie wordt gemaakt.
 
 Standaard wordt bij de rollout een gekoppelde Live Copy-pagina verwacht, waarop de updates van de blauwdrukken worden uitgevoerd, of geen pagina bij, wanneer een Live Copy-pagina wordt gemaakt.
 

@@ -2,9 +2,9 @@
 title: Uw accountomgeving configureren
 description: AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '488'
 ht-degree: 4%
 
 ---
@@ -40,36 +40,36 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Taal**
 
-   Dit bepaalt de taal voor UI van het auteursmilieu te gebruiken. Selecteer de gewenste taal in de beschikbare lijst.
+  Dit bepaalt de taal voor UI van het auteursmilieu te gebruiken. Selecteer de gewenste taal in de beschikbare lijst.
 
 * **Vensterbeheer**
 
-   Hiermee definieert u het gedrag voor het openen van vensters. Selecteer een van de volgende opties:
+  Hiermee definieert u het gedrag voor het openen van vensters. Selecteer een van de volgende opties:
 
    * **Meerdere vensters** (Standaard)
 
-      * Pagina&#39;s worden in een nieuw venster geopend.
+      * Pagina&#39;s worden geopend in een nieuw venster.
+
    * **Eén venster**
 
       * Pagina&#39;s worden geopend in het huidige venster.
 
-
 * **Bureaubladhandelingen voor elementen weergeven**
 
-   Voor deze optie moet AEM bureaubladtoepassing worden gebruikt.
+  Voor deze optie moet AEM bureaubladtoepassing worden gebruikt.
 
 * **Annotatiekleur**
 
-   Hiermee definieert u de standaardkleur die wordt gebruikt bij het maken van annotaties.
+  Hiermee definieert u de standaardkleur die wordt gebruikt bij het maken van annotaties.
 
    * Klik op het kleurblok om de staalkiezer te openen en een kleur te selecteren.
    * U kunt ook de hexadecimale code voor de gewenste kleur in het veld invoeren.
 
 * **Relatieve datumpresentatie**
 
-   Om de leesbaarheid te verbeteren, worden AEM datums in de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
+  Om de leesbaarheid te verbeteren, worden AEM datums in de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
 
-   Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
+  Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 
    * **Altijd exacte datum weergeven**: De exacte datum wordt altijd weergegeven (nooit een relatieve datum).
    * **1 dag**: De relatieve datum wordt weergegeven voor datums binnen één dag, anders wordt een exacte datum weergegeven.
@@ -80,17 +80,17 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Sneltoetsen inschakelen**
 
-   AEM ondersteunt een aantal sneltoetsen die het ontwerpen efficiënter maken.
+  AEM ondersteunt een aantal sneltoetsen die het ontwerpen efficiënter maken.
 
    * [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Sneltoetsen voor consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-   Met deze optie schakelt u sneltoetsen in. Deze worden standaard ingeschakeld, maar kunnen worden uitgeschakeld, bijvoorbeeld als een gebruiker bepaalde toegankelijkheidsvereisten heeft.
+  Met deze optie schakelt u sneltoetsen in. Deze worden standaard ingeschakeld, maar kunnen worden uitgeschakeld, bijvoorbeeld als een gebruiker bepaalde toegankelijkheidsvereisten heeft.
 
 * **Introductiepagina van middelen inschakelen**
 
-   Deze optie is alleen beschikbaar als uw systeembeheerder de functie voor het introductiepagina van middelen heeft ingeschakeld voor de hele organisatie.
+  Deze optie is alleen beschikbaar als uw systeembeheerder de functie voor het introductiepagina van middelen heeft ingeschakeld voor de hele organisatie.
 
 * **Bestandsconfiguratie**
 
-   Met deze optie kunt u de voorkeursconfiguratie van Adobe Stock opgeven. Deze optie is alleen beschikbaar als uw systeembeheerder heeft ingeschakeld [Adobe Stock-integratie](/help/assets/aem-assets-adobe-stock.md).
+  Met deze optie kunt u de voorkeursconfiguratie van Adobe Stock opgeven. Deze optie is alleen beschikbaar als uw systeembeheerder heeft ingeschakeld [Adobe Stock-integratie](/help/assets/aem-assets-adobe-stock.md).

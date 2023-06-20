@@ -2,9 +2,9 @@
 title: AEM-projectrepositorystructuurpakket
 description: Voor Adobe Experience Manager as a Cloud Service Maven-projecten is een definitie vereist van subpakketten voor de structuur van de opslagplaats met als enig doel de wortels van de JCR-opslagplaats te bepalen waarin de subpakketten voor de code van het project worden geïmplementeerd.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 9%
 
 ---
@@ -69,12 +69,12 @@ Zorg ervoor om dit nieuwe Maven subproject aan de ouderprojecten toe te voegen `
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                     <cloudManagerTarget>none</cloudManagerTarget>
                 </properties>
                 <configuration>
                     <properties>
-                        <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                        <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
                     <filters>
@@ -171,7 +171,7 @@ In dit geval:
 
 ## Fouten en fouten opsporen
 
-Als de opslagplaatsstructuurpakketten niet correct zijn ingesteld, wordt bij Maven een fout gerapporteerd:
+Als de opslagplaatsstructuurpakketten niet correct zijn ingesteld, wordt bij Maven een fout gemeld:
 
 ```
 1 error(s) detected during dependency analysis.

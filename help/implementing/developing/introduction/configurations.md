@@ -2,9 +2,9 @@
 title: Configuraties en de Configuratiebrowser
 description: Begrijp AEM configuraties en hoe zij werkruimtemontages in AEM beheren.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 3be936be09f205a73dd053ac28df936d58e50919
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1498'
+source-wordcount: '1492'
 ht-degree: 0%
 
 ---
@@ -75,8 +75,8 @@ Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen doo
    ![Configuratie maken](assets/configuration-create.png)
 
    * De **Titel** moeten beschrijvend zijn.
-   * De **Naam** wordt de knooppuntnaam in de repository.
-      * Het wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](naming-conventions.md)
+   * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
+      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](naming-conventions.md)
       * Deze kan zo nodig worden aangepast.
 1. Controleer het type configuraties dat u wilt toestaan.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -91,7 +91,7 @@ Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen doo
 
 #### Configuraties en hun toegangsrechten bewerken {#access-rights}
 
-Als u configuraties als werkruimten beschouwt, kunnen de toegangsrechten op die configuraties worden geplaatst om af te dwingen wie tot die werkruimten kan en mag toegang hebben.
+Als u configuraties als werkruimten beschouwt, kunnen de toegangsrechten op die configuraties worden geplaatst om af te dwingen wie tot die werkruimten kan en niet kan toegang hebben.
 
 1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** -> **Algemeen** -> **Configuratiebrowser**.
 1. Selecteer de configuratie die u wilt wijzigen en tik of klik op **Eigenschappen** in de werkbalk.

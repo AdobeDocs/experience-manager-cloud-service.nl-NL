@@ -2,9 +2,9 @@
 title: as a Cloud Service teams en productprofielen AEM
 description: Leer hoe AEM as a Cloud Service team en productprofielen toegang tot uw gelicentieerde oplossingen van de Adobe kunnen verlenen en beperken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ Wanneer het verlenen van een gebruikerstoegang tot een specifieke oplossing van 
 
 AEM as a Cloud Service is een volledig cloudeigen aanbod dat AEM als service biedt. Het levert AEM op een wolkeninheemse manier, met nieuwe attributen zoals altijd, altijd huidig, altijd veilig, en altijd op schaal. Tezelfdertijd behoudt het het belangrijkste waardevoorstel dat AEM als klantgericht platform aan klanten verstrekt en ondernemingscoreteams toestaat om in hun ontwikkeling en leveringsprocedure te integreren. Zie [Inleiding tot Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md) voor meer informatie over AEM as a Cloud Service.
 
-Uw AEM as a Cloud Service teamleden worden tijdens het instappen toegevoegd aan en toegewezen aan een of meer van de volgende productprofielen via de Admin Console.
+Uw AEM as a Cloud Service teamleden worden tijdens het instappen toegevoegd en toegewezen aan een of meer van de volgende productprofielen via de Admin Console.
 
-* **AEM**: Een AEM beheerder wordt typisch toegewezen aan ontwikkelaars, in het bijzonder ontwikkelaars die toegang tot, bijvoorbeeld, de ontwikkelomgevingen zullen moeten hebben. Het het productprofiel van de AEM beheerder zal worden gebruikt om beheerdervoorrechten in de bijbehorende AEM instantie te verlenen.
+* **AEM**: Een AEM beheerder wordt typisch toegewezen aan ontwikkelaars, in het bijzonder ontwikkelaars die toegang tot, bijvoorbeeld, de ontwikkelomgevingen zullen moeten hebben. Het het productprofiel van de AEM beheerder wordt gebruikt om beheerdervoorrechten in de bijbehorende AEM instantie te verlenen.
 
 * **AEM**: AEM gebruikers zijn de gebruikers in uw organisatie die AEM over het algemeen as a Cloud Service gebruiken om inhoud tot stand te brengen. Deze gebruikers moeten toegang krijgen tot AEM om hun taken uit te voeren. Het profiel van het AEM gebruikersproduct wordt doorgaans toegewezen aan een auteur van AEM inhoud die de inhoud maakt en bekijkt. Deze inhoud kan van vele soorten zoals pagina&#39;s, activa, publicaties, etc. zijn. Het hieronder weergegeven profiel voor AEM gebruikers wordt toegewezen aan deze leden.
 
@@ -43,7 +43,6 @@ Uw AEM as a Cloud Service teamleden worden tijdens het instappen toegevoegd aan 
 >
 >* Meer informatie over AEM productprofielen vindt u in het document [AEM productprofielen toewijzen.](/help/journey-onboarding/assign-profiles-aem.md)
 >* Raadpleeg voor meer informatie over het instapproces de [op instapreis.](/help/journey-onboarding/overview.md)
-
 
 ## Productprofielen van Cloud Manager {#cloud-manager-product-profiles}
 
@@ -76,4 +75,3 @@ Uw team van Cloud Manager omvat ten minste:
 >
 >* Raadpleeg het document voor meer informatie over productprofielen van Cloud Manager [Teamleden toewijzen aan productprofielen van Cloud Manager.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
 >* Raadpleeg voor meer informatie over het instapproces de [op instapreis.](/help/journey-onboarding/overview.md)
-

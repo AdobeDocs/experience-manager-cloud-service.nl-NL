@@ -1,10 +1,10 @@
 ---
 title: Snelle ontwikkelomgevingen
-description: Leer hoe u Rapid Development Environment (Rapid Development-omgevingen) kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
+description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3325'
+source-wordcount: '3317'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ U kunt aanvullende video&#39;s weergeven [instellen](https://experienceleague.ad
 
 RDEs kan voor code, inhoud, en Apache of Dispatcher configuraties worden gebruikt. In tegenstelling tot gewone Cloud Development-omgevingen kunnen ontwikkelaars lokale opdrachtregelprogramma&#39;s gebruiken om code die lokaal is gemaakt te synchroniseren met een RDE.
 
-Elk programma wordt voorzien van RDE. In het geval van Sandbox-accounts worden ze na enkele uren niet meer gebruikt gehiberneerd.
+Elk programma wordt voorzien van RDE. In het geval van Sandbox-accounts worden ze na een paar uur niet gebruikt gehiberneerd.
 
 Bij het maken worden RDE&#39;s ingesteld op de meest recente beschikbare AEM. Een RDE-reset, die kan worden uitgevoerd met Cloud Manager, doorloopt de RDE en stelt deze in op de meest recente beschikbare AEM versie.
 
@@ -50,11 +50,11 @@ Ga als volgt te werk om Cloud Manager te gebruiken om een RDE voor uw programma 
 
    * De **Omgeving toevoegen** deze optie is ook beschikbaar op de **Omgevingen** tab.
 
-      ![Het tabblad Omgevingen](/help/implementing/cloud-manager/assets/environments-tab.png)
+     ![Het tabblad Omgevingen](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
+1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
 
    * Selecteren **Snelle ontwikkeling** onder de **Omgevingstype selecteren** kop.
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter het omgevingstype weergegeven.
@@ -128,8 +128,7 @@ Nadat u een RDE voor uw programma hebt toegevoegd met gebruik van Cloud Manager,
    >
    >Als u de `Warning: cloudmanager:list-programs is not a aio command.` fout, moet u installeren [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) door de onderstaande opdracht uit te voeren:
    >
-   >
-   ```
+   >```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
@@ -148,11 +147,11 @@ Adobe raadt de volgende workflow aan voor het ontwikkelen van een nieuwe functie
 
 * Wanneer een tussentijdse mijlpaal wordt bereikt en met succes plaatselijk met de AEM as a Cloud Service SDK wordt bevestigd, zou de code aan een de eigenschaptak van de it moeten worden begaan die nog geen deel van de belangrijkste lijn uitmaakt, hoewel het toezeggen aan git facultatief is. Wat een &quot;tussenliggende mijlpaal&quot; is, varieert op basis van teamgewoonten. Voorbeelden zijn enkele nieuwe coderegels, een halve werkdag of het voltooien van een subfunctie.
 
-* Herstel RDE als het door een andere eigenschap is gebruikt en u wilt [herstellen naar standaardstaat](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Het opnieuw instellen duurt een paar minuten en alle bestaande inhoud en code worden verwijderd. U kunt het RDE statusbevel gebruiken om RDE klaar te bevestigen. RDE zal met de meest recente versie van de AEM terugkomen.
+* Herstel RDE als het door een andere eigenschap is gebruikt en u wilt [herstellen naar standaardstaat](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Het opnieuw instellen duurt een paar minuten en alle bestaande inhoud en code wordt verwijderd. U kunt het RDE statusbevel gebruiken om RDE klaar te bevestigen. RDE zal met de meest recente versie van de AEM terugkomen.
 
-   >[!IMPORTANT]
-   >
-   > Als uw het opvoeren en productiemilieu&#39;s geen automatische AEM versie-updates ontvangen en ver achter de meest recente AEM versieversie zijn, ben in gedachten dat de code die op RDE loopt niet kan aanpassen hoe de code op het opvoeren en productie zal functioneren. In dat geval, is het vooral belangrijk om grondig het testen van de code op het opvoeren uit te voeren alvorens het aan productie op te stellen.
+  >[!IMPORTANT]
+  >
+  > Als uw het opvoeren en productiemilieu&#39;s geen automatische AEM versie-updates ontvangen en ver achter de meest recente AEM versieversie zijn, ben in gedachten dat de code die op RDE loopt niet kan aanpassen hoe de code op het opvoeren en productie zal functioneren. In dat geval, is het vooral belangrijk om grondig het testen van de code op het opvoeren uit te voeren alvorens het aan productie op te stellen.
 
 
 * Gebruikend RDE bevel-lijn interface, synchroniseer lokale code aan RDE. U kunt onder andere een inhoudspakket, een specifieke bundel, een configuratiebestand voor SDAB, een inhoudsbestand en een ZIP-bestand van een Apache/Dispatcher-configuratie installeren. Het is ook mogelijk te verwijzen naar een extern inhoudspakket. Zie de [RDE-opdrachtregelprogramma&#39;s](#rde-cli-commands) voor meer informatie. U kunt het statusbevel gebruiken om te bevestigen dat de plaatsing succesvol was. Gebruik optioneel Package Manager om inhoudspakketten te installeren.
@@ -185,11 +184,11 @@ Met zorgvuldige coördinatie is het echter mogelijk dat meerdere ontwikkelaars e
 
 * Voor een lijst met opdrachten typt u:
 
-   `aio aem:rde`
+  `aio aem:rde`
 
 * Voor gedetailleerde hulp voor een bevel, type:
 
-   `aio aem rde <command> --help`
+  `aio aem rde <command> --help`
 
 ### Implementeren op RDE {#deploying-to-rde}
 
@@ -366,17 +365,17 @@ Zie voor meer informatie en demonstratie de [RDE-opdrachten gebruiken](https://e
 
 ## Herstellen {#reset-rde}
 
-Als u de RDE opnieuw instelt, verwijdert u alle aangepaste code, configuraties en inhoud van zowel de auteur- als de publicatieversie. Dit kan nuttig zijn, bijvoorbeeld, als RDE is gebruikt om een specifieke eigenschap te testen en u het aan een standaardstaat wilt terugstellen om een verschillende eigenschap te testen.
+Als u de RDE opnieuw instelt, verwijdert u alle aangepaste code, configuraties en inhoud van zowel de auteur- als de publicatieversie. Dit terugstellen is bijvoorbeeld nuttig, als RDE is gebruikt om een specifieke eigenschap te testen en u het aan een standaardstaat wilt terugstellen zodat kunt u een verschillende eigenschap testen.
 
 Met een reset wordt de RDE ingesteld op de laatst beschikbare AEM versie.
 
 <!-- Alexandru: hiding for now, please don't delete
 
-Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code will be deleted from the RDE.
+Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
 >[NOTE!]
 >
->You must be assigned the Cloud Manager Developer role in order to be able to use the reset feature. If not, a reset action will result in an error.
+>You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
 
 ### Reset the RDE via Command Line {#reset-the-rde-command-line}
 
@@ -400,7 +399,7 @@ U kunt Cloud Manager gebruiken om uw RDE opnieuw in te stellen door de volgende 
 
    * U kunt ook op de knop **Alles tonen** op de knop **Omgevingen** kaart om rechtstreeks naar de **Omgevingen** tab.
 
-      ![Alle opties tonen](/help/implementing/cloud-manager/assets/environment-showall.png)
+     ![Alle opties tonen](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. De **Omgevingen** wordt geopend en worden alle omgevingen voor het programma weergegeven.
 
@@ -464,7 +463,7 @@ De niveaus van het logboek kunnen worden geplaatst door configuraties te wijzige
 
 ## Hoe verschillen RDE&#39;s van Cloud Development Environment? {#how-are-rds-different-from-cloud-development-environments}
 
-Hoewel RDE in vele opzichten gelijkaardig aan een Milieu van de Ontwikkeling van de Wolk is, zijn er sommige kleine architecturale verschillen om voor snelle synchronisatie van code toe te staan. Het mechanisme om code aan RDE te krijgen is verschillend — voor RDEs, één synchroniseert code van een lokale ontwikkelomgeving, terwijl voor de Milieu&#39;s van de Ontwikkeling van de Wolk, één code via de Manager van de Wolk opstelt.
+Terwijl RDE in vele opzichten gelijkaardig aan een Milieu van de Ontwikkeling van de Wolk is, zijn er sommige kleine architecturale verschillen om voor snelle synchronisatie van code toe te staan. Het mechanisme om code aan RDE te krijgen is verschillend — voor RDEs, één synchroniseert code van een lokale ontwikkelomgeving, terwijl voor de Milieu&#39;s van de Ontwikkeling van de Wolk, één code via de Manager van de Wolk opstelt.
 
 Om deze redenen, adviseert men dat na het bevestigen van code op een milieu RDE, u de code aan een Milieu van de Ontwikkeling van de Wolk zou moeten opstellen gebruikend de niet productiepijplijn. Tot slot test de code alvorens met de productiepijpleiding op te stellen.
 

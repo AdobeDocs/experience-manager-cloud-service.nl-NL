@@ -2,9 +2,9 @@
 title: Kanalen maken en beheren in as a Cloud Service schermen
 description: In deze pagina wordt beschreven hoe u kanalen in as a Cloud Service schermen maakt en beheert.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ In deze tegel wordt de volgende informatie weergegeven:
 
 ### De standaardtoewijzingsdetails gebruiken bij het toewijzen aan een weergave {#default-display}
 
-Kanalen met standaardtoewijzingsdetails kunnen op dezelfde manier worden weergegeven als gewone kanalen, met de toegevoegde optie om de standaardtoewijzingsdetails te benutten in plaats van telkens handmatig aangepaste details te definiëren.
+Kanalen met standaardtoewijzingsdetails kunnen op dezelfde manier worden weergegeven als gewone kanalen, met de toegevoegde optie om de standaardtoewijzingsdetails te gebruiken in plaats van telkens handmatig aangepaste details te definiëren.
 
 1. Navigeer naar de pagina met weergavedetails waaraan u het kanaal wilt toewijzen en klik op de knop **Kanaal toewijzen**.
 Of selecteer de gewenste weergave in de overzichtsweergave en klik op de knop **Kanaal toewijzen**.
@@ -141,7 +141,7 @@ Of selecteer de gewenste weergave in de overzichtsweergave en klik op de knop **
 
    ![afbeelding](/help/screens-cloud/assets/display/Assignments8.png)
 
-**Opmerking:** Een kanaaltoewijzing die gebruikmaakt van de standaardtoewijzingsdetails, kan in de context van de weergave niet worden bewerkt.
+**Opmerking:** Een kanaaltoewijzing die de standaardtoewijzingsdetails gebruikt, kan niet worden bewerkt in de context van de weergave.
 
 * Als u het in een douanetoewijzing moet veranderen, zult u het eerst moeten verwijderen en dan het opnieuw toevoegen gebruikend **Aangepaste toewijzingsdetails instellen** optie.
 * Als u de eigenschappen van de standaardtoewijzingsdetails moet wijzigen, moet u dit rechtstreeks doen vanaf de pagina met kanaaldetails.
@@ -154,7 +154,7 @@ Of selecteer de gewenste weergave in de overzichtsweergave en klik op de knop **
 
    ![afbeelding](/help/screens-cloud/assets/display/Assignments9.png)
 
-1. Er wordt een bevestigingsdialoogvenster weergegeven waarin de details overeenkomen met een van de volgende voorwaarden:
+1. Er wordt een bevestigingsdialoogvenster weergegeven en de details komen overeen met een van de volgende voorwaarden:
    **a.** Kanaal wordt in geen enkele weergave gebruikt.
 
    ![afbeelding](/help/screens-cloud/assets/display/Assignments10.png)

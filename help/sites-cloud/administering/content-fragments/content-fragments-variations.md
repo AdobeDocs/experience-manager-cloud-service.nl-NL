@@ -4,10 +4,10 @@ description: Begrijp hoe u met behulp van variaties inhoud voor het fragment kun
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2480'
-ht-degree: 9%
+source-wordcount: '2469'
+ht-degree: 7%
 
 ---
 
@@ -40,7 +40,7 @@ Voer een reeks andere acties uit afhankelijk van het gegevenstype dat wordt uitg
 
 ## Inhoud ontwerpen {#authoring-your-content}
 
-Wanneer u het inhoudsfragment opent voor bewerking, worden de **Variaties** is standaard geopend. Hier kunt u de inhoud ontwerpen, voor Master of andere variaties. Het gestructureerde fragment bevat diverse velden, van verschillende gegevenstypen, die zijn gedefinieerd in het inhoudsmodel.
+Wanneer u het inhoudsfragment opent voor bewerking, worden de **Variaties** wordt standaard geopend. Hier kunt u de inhoud ontwerpen, voor Master of andere variaties. Het gestructureerde fragment bevat diverse velden, van verschillende gegevenstypen, die zijn gedefinieerd in het inhoudsmodel.
 
 Bijvoorbeeld:
 
@@ -55,8 +55,8 @@ U kunt:
       * Selecteer de [Indeling](#formats)
       * zie meer bewerkingsopties (voor [RTF](#rich-text) bestandsindeling)
       * toegang tot een reeks [handelingen](#actions)
-   * Voor **Fragmentverwijzing** velden [Inhoudsfragment bewerken](#fragment-references-edit-content-fragment) Deze optie kan beschikbaar zijn, afhankelijk van de modeldefinitie.
 
+   * Voor **Fragmentverwijzing** velden [Inhoudsfragment bewerken](#fragment-references-edit-content-fragment) Deze optie kan beschikbaar zijn, afhankelijk van de modeldefinitie.
 
 * Toewijzen **Tags** de huidige wijziging; de tags kunnen worden toegevoegd, bijgewerkt en verwijderd
 
@@ -65,10 +65,11 @@ U kunt:
       * Als u zoekt naar een tag, wordt het fragment geretourneerd, met de gemarkeerde variatie.
       * Variatietags kunnen ook worden gebruikt om variaties te groeperen voor een specifiek CDN-profiel (Content Delivery Network) (voor CDN-caching) in plaats van de variatienaam te gebruiken.
 
-      U kunt bijvoorbeeld relevante fragmenten labelen als &#39;kerstlancering&#39; om alleen deze fragmenten als een subset te kunnen doorbladeren, of om ze te kopiëren voor gebruik met een andere toekomstige start in een nieuwe map.
-   >[!NOTE]
-   >
-   >**Tags** kan ook worden toegevoegd (aan **Master** wijziging) als onderdeel van de [Metagegevens](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+     U kunt bijvoorbeeld relevante fragmenten labelen als &#39;kerstlancering&#39; om alleen deze fragmenten als een subset te kunnen doorbladeren, of om ze te kopiëren voor gebruik met een andere toekomstige start in een nieuwe map.
+
+  >[!NOTE]
+  >
+  >**Tags** kan ook worden toegevoegd (aan **Master** wijziging) als onderdeel van de [Metagegevens](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [Variaties maken en beheren](#managing-variations) van de **Master** inhoud.
 
@@ -228,14 +229,16 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
+>
 Engels is beschikbaar buiten de box.
+>
 Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van de Distributie van de Software:
+>
 * [Frans (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 * [Duits (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [Italiaans (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [Spaans (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
-
 
 1. Selecteren **Master** of de vereiste wijziging.
 1. Open de editor voor het volledige scherm.
@@ -301,14 +304,15 @@ Annotaties:
 
 * Deze worden aangegeven door de markering in de tekst, zowel in de modus Volledig scherm als in de normale modus van de editor. Alle details van een annotatie kunnen vervolgens worden weergegeven, bewerkt en/of verwijderd door op de gemarkeerde tekst te klikken, waarna het dialoogvenster opnieuw wordt geopend.
 
-   >[!NOTE]
-   Er is een keuzekiezer beschikbaar als er meerdere annotaties zijn toegepast op één stuk tekst.
+  >[!NOTE]
+  >
+  Er is een keuzekiezer beschikbaar als er meerdere annotaties zijn toegepast op één stuk tekst.
 
 * Wanneer u de volledige tekst verwijdert waarop de annotatie is toegepast, wordt de annotatie ook verwijderd.
 
 * Kan worden weergegeven en verwijderd door het selectievakje **Annotaties** in de fragmenteditor.
 
-   ![annotaties](assets/cfm-variations-08.png)
+  ![annotaties](assets/cfm-variations-08.png)
 
 * Kan worden weergegeven en verwijderd in [Tijdlijn](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) voor het geselecteerde fragment.
 
@@ -319,10 +323,13 @@ U kunt toevoegen om het ontwerpen van inhoudsfragmenten te vereenvoudigen [Activ
 Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. de opmaak kan worden uitgevoerd wanneer de [fragment wordt gebruikt of er wordt naar verwezen op een pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
+>
 Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
+>
 De opmaak van het element (bijvoorbeeld de grootte) moet echter worden uitgevoerd in het dialoogvenster [paginaeditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
 
 >[!NOTE]
+>
 Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
 
 1. Plaats de cursor op de positie waar u de afbeelding wilt toevoegen.
@@ -340,25 +347,30 @@ Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/sites-cloud
 1. Gebruik **Selecteren** om de asset op de huidige locatie toe te voegen aan het alineasysteem van het contentfragment.
 
    >[!CAUTION]
+   >
    Als u na het toevoegen van een asset de indeling wijzigt in:
-   * **Tekst zonder opmaak**: wordt de asset volledig uit het fragment verwijderd.
-   * **Markdown**: is de asset niet zichtbaar, maar blijft deze aanwezig wanneer u terugkeert naar **Tekst met opmaak**.
-
+   >
+   * **Onbewerkte tekst**: het element volledig uit het fragment wordt verwijderd.
+   * **Markering**: het element is niet zichtbaar, maar is er nog steeds wanneer u terugkeert naar **RTF**.
 
 ### Een inhoudsfragment invoegen in uw fragment {#inserting-content-fragment-into-your-fragment}
 
 U kunt ook een ander inhoudsfragment aan het fragment toevoegen om het maken van inhoudsfragmenten te vereenvoudigen.
 
-Deze worden als referentie toegevoegd op de huidige locatie in het fragment.
+Ze worden als referentie toegevoegd op de huidige locatie in het fragment.
 
 >[!NOTE]
+>
 Deze optie is beschikbaar als **Tekst met meerdere regels** is geconfigureerd met **Fragmentverwijzing toestaan**.
 
 >[!CAUTION]
+>
 Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
+>
 De opmaak van het element (bijvoorbeeld de grootte) moet echter worden uitgevoerd in het dialoogvenster [paginaeditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
 
 >[!NOTE]
+>
 Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
 
 1. Plaats de cursor op de positie waar u het fragment wilt toevoegen.
@@ -376,10 +388,11 @@ Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/sites-cloud
 1. Gebruiken **Selecteren** om een verwijzing naar het geselecteerde inhoudsfragment toe te voegen aan het huidige inhoudsfragment (op de huidige locatie).
 
    >[!CAUTION]
+   >
    Als u na het toevoegen van een verwijzing naar een ander fragment de opmaak wijzigt in:
+   >
    * **Onbewerkte tekst**: de verwijzing gaat volledig verloren uit het fragment.
    * **Markering**: de referentie blijft .
-
 
 ## Variaties beheren {#managing-variations}
 
@@ -399,13 +412,15 @@ Een nieuwe variatie maken:
 1. Selecteren **Variaties** in de pictogrambalk in het zijpaneel.
 1. Selecteren **Variatie maken**.
 1. Er wordt een dialoogvenster geopend waarin u de **titel** en de **beschrijving** voor de nieuwe variatie kunt opgeven.
-1. Selecteer **Toevoegen**. De **fragmentmaster** wordt gekopieerd naar de nieuwe variatie, die nu kan worden [bewerkt](#editing-a-variation).
+1. Selecteren **Toevoegen**; het fragment **Master** wordt gekopieerd naar de nieuwe variatie waarvoor nu een [bewerken](#editing-a-variation).
 
    >[!NOTE]
+   >
    Bij het maken van een nieuwe variatie is dit altijd **Master** dat wordt gekopieerd, niet de variatie die momenteel open is.
 
 
    >[!NOTE]
+   >
    Wanneer u een nieuwe variatie maakt, alles **Tags** momenteel toegewezen aan **Master** variatie wordt naar de nieuwe variatie gekopieerd.
 
 ### Een variatie bewerken {#editing-a-variation}
@@ -430,6 +445,7 @@ Een bestaande variatie een andere naam geven:
 1. Bevestig de **Naam wijzigen** handeling.
 
 >[!NOTE]
+>
 Dit heeft alleen invloed op de variatie **Titel**.
 
 ### Een variatie verwijderen {#deleting-a-variation}
@@ -443,6 +459,7 @@ Een bestaande wijziging verwijderen:
 1. Bevestig de **Verwijderen** in het dialoogvenster.
 
 >[!NOTE]
+>
 U kunt niet verwijderen **Master**.
 
 ### Synchroniseren met Master {#synchronizing-with-master}
@@ -452,9 +469,13 @@ U kunt niet verwijderen **Master**.
 Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchroniseren van het huidige element van de variatie met Master. Op deze manier kunt u automatisch wijzigingen kopiëren die u hebt aangebracht in de Master variatie.
 
 >[!CAUTION]
+>
 De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
+>
 Alleen het huidige element van de variatie wordt gesynchroniseerd.
+>
 Synchronisatie werkt alleen op de **Tekst met meerdere regels** gegevenstype.
+>
 Het overbrengen van wijzigingen *van een variatie naar **master*** is niet beschikbaar als optie.
 
 1. Open het inhoudsfragment in de fragmenteditor. Zorg ervoor dat de **Master** is bewerkt.
@@ -463,13 +484,13 @@ Het overbrengen van wijzigingen *van een variatie naar **master*** is niet besch
 
    * de **Handelingen** keuzelijst - **Huidig element synchroniseren met master**
 
-      ![synchroniseren met master](assets/cfm-variations-11a.png)
+     ![synchroniseren met master](assets/cfm-variations-11a.png)
 
    * de werkbalk van de volledige schermweergave - **Synchroniseren met master**
 
-      ![synchroniseren met master](assets/cfm-variations-11b.png)
+     ![synchroniseren met master](assets/cfm-variations-11b.png)
 
-1. Master en de variatie wordt naast elkaar weergegeven:
+1. Master en de variatie worden naast elkaar weergegeven:
 
    * groen geeft de inhoud aan die is toegevoegd (aan de variatie)
    * rood geeft aan dat inhoud is verwijderd (uit de variatie)
@@ -477,4 +498,4 @@ Het overbrengen van wijzigingen *van een variatie naar **master*** is niet besch
 
    ![synchroniseren met master](assets/cfm-variations-11c.png)
 
-1. Selecteren **Synchroniseren**, wordt de wijziging bijgewerkt en weergegeven.
+1. Selecteren **Synchroniseren**, wordt de variatie bijgewerkt en weergegeven.

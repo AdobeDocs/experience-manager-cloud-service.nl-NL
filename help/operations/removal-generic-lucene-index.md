@@ -2,9 +2,9 @@
 title: Generieke Lucene-index verwijderen
 description: Leer over de geplande verwijdering van generische indexen van Lucene en hoe u kan worden beïnvloed.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ In AEM, zijn de volledige tekstvragen die die de volgende functies gebruiken:
 
 Dergelijke vragen kunnen geen resultaten zonder een index terugkeren. In tegenstelling tot een vraag die slechts weg of bezitsbeperkingen bevat, zal een vraag die een volledige tekstbeperking bevat waarvoor geen index kan worden gevonden (en zo wordt een traversal uitgevoerd) altijd nul resultaten terugkeren.
 
-De generieke Lucene-index (`/oak:index/lucene-*`) bestaat al sinds AEM 6.0 / Eak 1.0 om een volledige tekstzoekopdracht te bieden in de meeste repository hiërarchie, hoewel sommige paden, zoals `/jcr:system` en `/var` zijn hier altijd van uitgesloten. Deze index is echter grotendeels vervangen door indexen op meer specifieke knooppunttypen (bijvoorbeeld `damAssetLucene-*` voor de `dam:Asset` knooppunttype), die zowel volledige tekst als bezitsonderzoeken steunen.
+De generieke Lucene-index (`/oak:index/lucene-*`) bestaat al sinds AEM 6.0 / Eak 1.0 voor een volledige tekstzoekopdracht in de meeste opslagplaats-hiërarchie, hoewel sommige paden, zoals `/jcr:system` en `/var` zijn hier altijd van uitgesloten. Deze index is echter grotendeels vervangen door indexen op meer specifieke knooppunttypen (bijvoorbeeld `damAssetLucene-*` voor de `dam:Asset` knooppunttype), die zowel volledige tekst als bezitsonderzoeken steunen.
 
 In AEM 6.5 werd de generische index van Lucene gemerkt zoals afgekeurd, erop wijzend dat het in toekomstige versies zou worden verwijderd. Sindsdien, is WARN geregistreerd wanneer de index is gebruikt zoals geïllustreerd door het volgende logboekfragment:
 
@@ -38,30 +38,30 @@ Zoekopdrachten voor verwijzingen, zoals in het volgende voorbeeld, moeten nu bij
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Om grotere volumes van klantengegevens te steunen, zal Adobe niet meer de generische index van Lucene op nieuwe AEM as a Cloud Service milieu&#39;s creëren. Daarnaast wordt Adobe gestart met het verwijderen van de index uit bestaande opslagruimten. [Zie de tijdlijn](#timeline) aan het einde van dit document voor meer informatie.
+Om grotere volumes van klantengegevens te steunen, leidt Adobe niet meer tot de generische index van Lucene op nieuwe AEM as a Cloud Service milieu&#39;s. Daarnaast verwijdert Adobe de index uit bestaande opslagruimten. [Zie de tijdlijn](#timeline) aan het einde van dit document voor meer informatie.
 
 Adobe heeft de indexkosten al aangepast via de `costPerEntry` en `costPerExecution` eigenschappen om ervoor te zorgen dat andere indexen, zoals `/oak:index/pathreference` worden waar mogelijk bij voorkeur gebruikt.
 
-De toepassingen van de klant die vragen gebruiken die nog van deze index afhangen zouden onmiddellijk moeten worden bijgewerkt om andere bestaande indexen te gebruiken, die kunnen worden aangepast indien nodig. U kunt ook nieuwe aangepaste indexen toevoegen aan de klanttoepassing. Volledige instructies voor indexbeheer in AEM as a Cloud Service zijn te vinden in de [indexeringsdocumentatie.](/help/operations/indexing.md)
+De toepassingen van de klant die vragen gebruiken die nog van deze index afhangen zouden onmiddellijk moeten worden bijgewerkt om andere bestaande indexen te gebruiken, die indien nodig kunnen worden aangepast. U kunt ook nieuwe aangepaste indexen toevoegen aan de klanttoepassing. Volledige instructies voor indexbeheer in AEM as a Cloud Service zijn te vinden in de [indexeringsdocumentatie.](/help/operations/indexing.md)
 
 ## Betrokken bent u? {#are-you-affected}
 
-De generische index van Lucene wordt momenteel gebruikt als reserve als geen andere volledige tekstindex een vraag kan onderhouden. Wanneer deze afgekeurde index wordt gebruikt, zal een bericht als dit op WARN niveau worden geregistreerd:
+De generische index van Lucene wordt momenteel gebruikt als reserve als geen andere volledige tekstindex een vraag kan onderhouden. Wanneer deze afgekeurde index wordt gebruikt, wordt een bericht gelijkend op het volgende geregistreerd op het WARN niveau:
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
 ```
 
-In sommige gevallen probeert het eiken een andere volledige tekstindex te gebruiken (zoals `/oak:index/pathreference`) om de volledige tekstvraag te steunen, maar als het vraagkoord niet de regelmatige uitdrukking op de indexdefinitie aanpast, zal een bericht op WARN niveau worden geregistreerd en de vraag zal waarschijnlijk geen resultaten terugkeren.
+In sommige gevallen probeert het eiken een andere volledige tekstindex te gebruiken (zoals `/oak:index/pathreference`) om de volledige tekstvraag te steunen, maar als het vraagkoord niet de regelmatige uitdrukking op de indexdefinitie aanpast, wordt een bericht geregistreerd op WARN niveau en de vraag zal waarschijnlijk geen resultaten terugkeren.
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
 ```
 
-Zodra de generische index van Lucene is verwijderd, zal een bericht zoals hieronder getoond op WARN niveau worden geregistreerd als een volledige tekstvraag van geen geschikte indexdefinitie kan de plaats bepalen:
+Zodra de generische index van Lucene is verwijderd, wordt een bericht zoals hieronder getoond geregistreerd op WARN niveau als een volledige tekstvraag van geen geschikte indexdefinitie kan de plaats bepalen:
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -80,7 +80,7 @@ Er zijn een aantal gebieden waar uw toepassingen en AEM installaties van generis
 
 #### Aangepaste query&#39;s voor toepassingen {#custom-application-queries}
 
-De gemeenschappelijkste bron van vragen die de generische index van Lucene op publiceer instantie gebruiken zal de vragen van de douanetoepassing zijn.
+De gemeenschappelijkste bron van vragen gebruikend de generische index van Lucene op publiceer instantie is de vragen van de douanetoepassing.
 
 In de eenvoudigste gevallen kunnen deze query&#39;s zijn zonder opgegeven knooppunttype, waardoor dit wordt geïmpliceerd `nt:base` of `nt:base` expliciet vermeld, zoals:
 
@@ -117,7 +117,7 @@ Als dusdanig, valt de vraag terug op de generische volledige tekstindex waar all
 >
 >**Actie van klant vereist**
 >
->De `jcr:content/metadata/@cq:tags` eigenschap zoals geanalyseerd in een aangepaste versie van het dialoogvenster `damAssetLucene` De index zal in deze vraag resulteren die door deze index wordt behandeld, en geen WARN zal worden geregistreerd.
+>De `jcr:content/metadata/@cq:tags` eigenschap zoals geanalyseerd in een aangepaste versie van het dialoogvenster `damAssetLucene` De indexresultaten in deze vraag die door deze index wordt behandeld, en geen WARN wordt geregistreerd.
 
 ### Instantie van auteur {#author-instance}
 
@@ -157,7 +157,6 @@ Voordat de generieke Lucene-index wordt verwijderd, moet de `pathfield` wordt bi
 > * Momenteel voeren deze vragen zonder gespecificeerde knooptypes uit, resulterend in WARN die wegens gebruik van de generische index van Lucene worden geregistreerd.
 > * Instanties van deze componenten worden binnenkort automatisch standaard `cq:Page` en `dam:Asset` knooptypes zonder verdere klantenactie.
 > * De `nodeTypes` Deze eigenschap kan worden toegevoegd om deze standaardknooppunttypen te overschrijven.
-
 
 ## Tijdlijn voor algemene Lucene-verwijdering {#timeline}
 

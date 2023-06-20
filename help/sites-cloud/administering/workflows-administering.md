@@ -3,9 +3,9 @@ title: Workflowinstanties beheren
 description: Leer hoe u workflowinstanties beheert
 feature: Administering
 role: Admin
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,6 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
    ![status-ongezond](/help/sites-cloud/administering/assets/status-unhealthy.png)
 1. Voor **Statusdetails** van workflowinstanties klikt u op **Details** om de **aantal actieve workflows**, **voltooide workflowinstanties**, **afgebroken workflowinstanties**, **mislukte werkstroominstanties**, enzovoort. hieronder ziet u bijvoorbeeld de afbeeldingen die u ziet **Statusdetails** with **Status: Gezonde** en **Status: Ongezond**.
    ![status-details-gezond](/help/sites-cloud/administering/assets/status-details-healthy.png)
-
    ![status-details-ongezond](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -93,7 +92,6 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
    >* gebruik van de **Beëindigen** action
    >* als een pagina, die onderworpen is aan een werkstroom, (geforceerd) wordt geschrapt, dan wordt het werkschema geëindigd.
 
-
 1. Selecteer vervolgens een specifiek item **Historie openen** voor meer informatie :
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
@@ -103,8 +101,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 Wanneer een werkstroom mislukt, AEM de **Mislukt** console om u toe te staan om aangewezen actie te onderzoeken en te nemen zodra de originele oorzaak is behandeld:
 
 * **Foutgegevens**
-Hiermee opent u een venster waarin de 
-**Foutbericht**, **Stap, en **Stapel mislukt**.
+Hiermee opent u een venster waarin de **Foutbericht**, **Stap, en **Stapel mislukt**.
 
 * **Historie openen**
 Geeft details van de workflowgeschiedenis weer.
@@ -192,7 +189,7 @@ Gegevens die door workflows worden verwerkt, worden opgeslagen in de door Adobe 
 
 Op het niveau van het workflowmodel wordt een markering opgegeven die aangeeft dat het model (en de runtimeinstanties) externe opslag van metagegevens heeft. Workflowvariabelen blijven niet behouden in JCR voor de workflowinstanties van de modellen die zijn gemarkeerd voor externe opslag.
 
-De eigenschap *userMetadataPersistenceEnabled* wordt opgeslagen op de *jcr:inhoudsknooppunt* van het workflowmodel. Deze markering blijft behouden in de metagegevens van de workflow als *cq:userMetaDataCustomPersistenceEnabled*.
+De eigenschap *userMetadataPersistenceEnabled* wordt opgeslagen op de *jcr:inhoudsknooppunt* van het workflowmodel. Deze markering wordt in metagegevens van de workflow als *cq:userMetaDataCustomPersistenceEnabled*.
 
 In de onderstaande afbeelding ziet u hoe u de markering op een workflow moet instellen.
 

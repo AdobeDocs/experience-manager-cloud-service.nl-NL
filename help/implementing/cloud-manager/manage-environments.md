@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2325'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ Op verwezenlijking, zal de voorproefdienst een standaardIP lijst van gewenste pe
 
 ![De dienst van de voorproef en zijn lijst van gewenste personen](assets/preview-ip-allow.png)
 
-Een gebruiker met de vereiste machtigingen moet de volgende stappen uitvoeren voordat de URL van de voorbeeldservice wordt gedeeld om ervoor te zorgen dat deze toegankelijk is.
+Een gebruiker met de vereiste machtigingen moet de volgende stappen uitvoeren voordat de URL van de voorvertoningsservice wordt gedeeld om ervoor te zorgen dat deze toegankelijk is.
 
 1. Creeer een aangewezen IP lijst van gewenste personen, pas het op de voorproefdienst toe, en unapply onmiddellijk `Preview Default [<envId>]` lijst van gewenste personen.
 
@@ -216,7 +216,7 @@ De **Bijwerken** het gedrag van de optie is afhankelijk van de configuratie en d
 
 ## Ontwikkelomgeving verwijderen {#deleting-environment}
 
-De gebruiker met de vereiste toestemmingen zal een ontwikkelomgeving kunnen schrappen.
+De gebruiker met de vereiste toestemming kan een ontwikkelomgeving schrappen.
 
 Van de **Overzicht** scherm van het programma op het **Omgevingen** -kaart, klikt u op de knop voor weglatingen van de ontwikkelomgeving die u wilt verwijderen.
 
@@ -290,7 +290,7 @@ Om IP lijsten van gewenste personen te beheren, navigeer aan **Omgevingen** tabb
 
 ### Een IP-Lijst van gewenste personen toepassen {#apply-ip-allow-list}
 
-Het toepassen van een IP lijst van gewenste personen associeert alle IP waaiers inbegrepen in de definitie van de lijst van gewenste personen met een auteur of publiceer de dienst in een milieu. Een gebruiker in de **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet worden het programma geopend om een IP lijst van gewenste personen kunnen toepassen.
+Het toepassen van een IP lijst van gewenste personen associeert alle IP waaiers inbegrepen in de definitie van de lijst van gewenste personen met een auteur of publiceer de dienst in een milieu. Een gebruiker in de **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet het programma worden geopend om een IP lijst van gewenste personen kunnen toepassen.
 
 De IP lijst van gewenste personen moet in de Manager van de Wolk bestaan om het op een milieu toe te passen. Raadpleeg het document voor meer informatie over IP-lijsten van gewenste personen in Cloud Manager[Inleiding tot IP-Lijsten van gewenste personen in Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
@@ -302,7 +302,7 @@ Voer de volgende stappen uit om een IP-lijst van gewenste personen toe te passen
 
 ### Een IP-Lijst van gewenste personen niet toepassen {#unapply-ip-allow-list}
 
-Wanneer u een IP-lijst van gewenste personen niet toepast, worden alle IP-bereiken die zijn opgenomen in de definitie van de lijst van gewenste personen losgekoppeld van een auteur- of uitgeversservice in een omgeving. Een gebruiker in de **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet worden het programma geopend om een IP lijst van gewenste personen niet-toe te passen.
+Wanneer u een IP-lijst van gewenste personen niet toepast, worden alle IP-bereiken die zijn opgenomen in de definitie van de lijst van gewenste personen losgekoppeld van een auteur- of uitgeversservice in een omgeving. Een gebruiker in de **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet het programma worden geopend om een IP lijst van gewenste personen kunnen ongedaan maken-toepassen.
 
 Voer de volgende stappen uit om een IP-lijst van gewenste personen niet toe te passen.
 

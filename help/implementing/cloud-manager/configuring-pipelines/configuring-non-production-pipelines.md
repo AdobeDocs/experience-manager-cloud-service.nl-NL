@@ -3,9 +3,9 @@ title: Niet-productiepijpleidingen configureren
 description: Leer hoe te om niet-productiepijpleidingen te vormen om de kwaliteit van uw code te testen alvorens aan productiemilieu's op te stellen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1362'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Nadat u uw programma hebt ingesteld en minstens één omgeving hebt gebruikt met
 1. Als u een **Implementatiepijp** u zult ook moeten bepalen **Belangrijk gedrag metrische fouten**.
 
    * **Telkens vragen** - Dit is de standaardinstelling en u moet handmatig ingrijpen bij belangrijke fouten.
-   * **Direct mislukken** - Indien geselecteerd, zal de pijpleiding worden geannuleerd wanneer een belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
+   * **Direct mislukken** - Indien geselecteerd, wordt de pijpleiding geannuleerd wanneer een belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
    * **Direct doorgaan** - Indien geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
 1. Klikken **Doorgaan**.
@@ -99,7 +99,7 @@ Een full-stack codepijpleiding stelt gelijktijdig achterste en front-end codebou
 
 >[!NOTE]
 >
->Als er al een &#39;full-stack&#39;-codepijplijn voor de geselecteerde omgeving bestaat, wordt deze selectie uitgeschakeld.
+>Als er al een &#39;full-stack&#39;-codepijplijn voor de geselecteerde omgeving bestaat, is deze selectie uitgeschakeld.
 
 Om de configuratie van de full-stack code non-production pijpleiding te beëindigen, volg deze stappen.
 
@@ -134,7 +134,7 @@ Een configuratiepijplijn van de Webrij stelt configuraties HTTPD/Dispatcher op. 
 
 >[!NOTE]
 >
->Als er voor de geselecteerde omgeving al een pijpleiding voor code in de weblaag bestaat, wordt deze selectie uitgeschakeld.
+>Als er voor de geselecteerde omgeving al een pijpleiding voor code in de weblaag bestaat, is deze selectie uitgeschakeld.
 
 Voer de volgende stappen uit om de configuratie van de niet-productiepijplijn voor code op het web te voltooien.
 
@@ -166,7 +166,7 @@ De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managin
 
 Met frontend pijpleidingen wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en kan het ontwikkelingsproces worden versneld.
 
-Raadpleeg het document [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces werkt samen met enkele overwegingen om zich bewust te zijn van het nut van dit proces.
+Zie het document [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces samen met enkele overwegingen werkt , moet u zich ervan bewust zijn dat dit proces alle mogelijkheden biedt .
 
 ## Verzendpakketten overslaan {#skip-dispatcher-packages}
 

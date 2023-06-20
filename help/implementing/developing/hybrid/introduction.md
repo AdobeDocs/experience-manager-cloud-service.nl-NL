@@ -2,9 +2,9 @@
 title: SPA Inleiding en Analyse
 description: Dit artikel introduceert de concepten SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2074'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SP
 
 >[!TIP]
 >
->Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK.
+>Voor elk AEM project moet het [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten steunt die React of Angular gebruiken en SPA SDK gebruikt.
 
 ### Wat is een SPA? {#what-is-a-spa}
 
@@ -75,7 +75,7 @@ Door sneller, vloeiend en meer als een native toepassing te zijn, wordt een SPA 
 
 ### Hoe werkt een SPA? {#how-does-a-spa-work}
 
-Het primaire idee achter een SPA is dat de vraag aan en de afhankelijkheid van een server worden verminderd om vertragingen te minimaliseren die door serverlatentie worden veroorzaakt zodat de SPA de ontvankelijkheid van een inheemse toepassing benadert.
+Het primaire idee achter een SPA is dat de vraag aan, en de afhankelijkheid van, een server worden verminderd om vertragingen te minimaliseren die door serverlatentie worden veroorzaakt zodat de SPA de ontvankelijkheid van een inheemse toepassing benadert.
 
 In een traditionele, opeenvolgende webpagina worden alleen de gegevens geladen die nodig zijn voor de directe pagina. Dit betekent dat wanneer de bezoeker naar een andere pagina gaat, de server om de extra bronnen wordt gevraagd. Aanvullende aanroepen kunnen nodig zijn wanneer de bezoeker werkt met elementen op de pagina. Deze veelvoudige vraag kan een gevoel van vertraging of vertraging geven aangezien de pagina met de verzoeken van de bezoeker moet inhalen.
 
@@ -94,10 +94,9 @@ Door de pagina op de client te renderen, reageren de pagina-elementen sneller en
 >Raadpleeg het artikel voor een nadere uitleg van het ontwerp, de architectuur en de technische workflow van de SPA Editor:
 >* [Overzicht SPA Editor](editor-overview.md).
 
-
 ## Ervaring voor het bewerken van inhoud met SPA {#content-editing-experience-with-spa}
 
-Wanneer een SPA is gemaakt om gebruik te maken van de AEM SPA Editor, merkt de auteur van de inhoud op dat er geen verschil is bij het bewerken en maken van inhoud. Er is algemene AEM beschikbaar en er zijn geen wijzigingen in de workflow van de auteur vereist.
+Wanneer een SPA is gemaakt om de AEM SPA Editor te gebruiken, merkt de auteur van de inhoud op dat er geen verschil is bij het bewerken en maken van inhoud. Er is algemene AEM beschikbaar en er zijn geen wijzigingen in de workflow van de auteur vereist.
 
 1. Bewerk de WKND SPA Project-app in AEM.
 
@@ -242,7 +241,7 @@ In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur to
 
 ## Hoofdletters en headless in AEM {#headful-headless}
 
-SPA kunnen worden ingeschakeld met flexibele integratieniveaus binnen AEM, met inbegrip van SPA die buiten AEM zijn ontwikkeld en onderhouden. Bovendien kan SPA worden gebruikt binnen AEM terwijl ook AEM wordt gebruikt om inhoud aan extra eindpunten zonder problemen te leveren.
+SPA kunnen worden ingeschakeld met flexibele integratieniveaus binnen AEM, met inbegrip van SPA die buiten AEM zijn ontwikkeld en onderhouden. Bovendien, kan SPA binnen AEM worden gebruikt terwijl ook het gebruiken van AEM om inhoud aan extra eindpunten zonder oprecht te leveren.
 
 >[!TIP]
 >

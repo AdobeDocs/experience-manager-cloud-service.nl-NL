@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Er zijn een aantal vereisten voordat u begint met het vertalen van AEM inhoud.
 
 ## Hoe AEM inhoud opslaat {#content-in-aem}
 
-Voor de vertaalspecialist is het niet belangrijk om diepgaand te begrijpen hoe AEM inhoud beheert. Het is echter nuttig bekend te zijn met de basisbeginselen en -terminologie, aangezien u later AEM vertaalhulpmiddelen gebruikt. Het belangrijkste is dat u uw eigen inhoud begrijpt en hoe deze is gestructureerd om deze effectief te kunnen vertalen.
+Voor de vertaalspecialist is het niet belangrijk om diepgaand te begrijpen hoe AEM inhoud beheert. Het is echter nuttig bekend te zijn met de basisbeginselen en -terminologie, aangezien u later AEM vertaalhulpmiddelen gebruikt. Het belangrijkste is dat u uw eigen inhoud begrijpt en hoe deze gestructureerd is om deze effectief te vertalen.
 
 ### Sites-console {#sites-console}
 
@@ -175,7 +175,7 @@ De uiteindelijke structuur kan er ongeveer als volgt uitzien.
     |- ...
 ```
 
-Let op het specifieke pad van uw inhoud, want dit zal later nodig zijn om uw vertaling te configureren.
+Let op het specifieke pad van uw inhoud, omdat dit later nodig is om uw vertaling te configureren.
 
 >[!NOTE]
 >

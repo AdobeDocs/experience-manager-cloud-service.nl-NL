@@ -2,9 +2,9 @@
 title: Zoeken
 description: Vind sneller uw inhoud dankzij uitgebreide zoekopdracht
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '492'
 ht-degree: 6%
 
 ---
@@ -33,16 +33,16 @@ Met de zoekrail kunt u:
 
 U kunt als volgt uw bronnen zoeken en filteren:
 
-1. Openen **Zoeken** (met het vergrootglas in de werkbalk) en voer uw zoekterm in. Er worden voorstellen gedaan die kunnen worden geselecteerd:
+1. Openen **Zoeken** (met het vergrootglas in de werkbalk) en voer uw zoekterm in. Er worden suggesties gedaan en deze kunnen worden geselecteerd:
 
    ![Zoekterm](/help/sites-cloud/authoring/assets/search-term.png)
 
-   Standaard worden de zoekresultaten beperkt tot uw huidige locatie (dat wil zeggen console en het gerelateerde type resource):
+   Door gebrek zijn de onderzoeksresultaten beperkt tot uw huidige plaats (namelijk console en verwant middeltype):
 
    ![Zoeklocatie](/help/sites-cloud/authoring/assets/search-term-location.png)
 
 1. Indien nodig kunt u het locatiefilter verwijderen (selecteer **X** op het filter dat u wilt verwijderen) om te zoeken in alle consoles/middeltypen.
-1. De resultaten zullen worden getoond, gegroepeerd volgens console en verwant middeltype.
+1. De resultaten worden getoond, gegroepeerd volgens console en verwant middeltype.
 
    U kunt of een specifieke middel selecteren (voor verdere actie), of boren neer door het vereiste middeltype te selecteren; bijvoorbeeld **Alle sites weergeven**:
 
@@ -67,7 +67,6 @@ U kunt als volgt uw bronnen zoeken en filteren:
    >
    >* Afhankelijk van het type resource dat u hebt geselecteerd; Zo zijn bijvoorbeeld de activa- en Gemeenschapscriteria begrijpelijkerwijs gespecialiseerd.
    >* Uw exemplaar als Zoeken in Forms kan worden aangepast (afhankelijk van de locatie in AEM).
-
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).

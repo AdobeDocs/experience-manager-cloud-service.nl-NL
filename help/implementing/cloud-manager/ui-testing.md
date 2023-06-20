@@ -2,9 +2,9 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2411'
+source-wordcount: '2401'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Het testen van de gebruikersinterface van de douane is een facultatieve eigensch
 
 AEM biedt een geïntegreerde suite [Kwaliteitspates van Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) voor vloeiende updates van aangepaste toepassingen. Met name ondersteunen IT-testpoorten al het maken en automatiseren van aangepaste tests met behulp van AEM API&#39;s.
 
-UI-tests worden verpakt in een Docker-afbeelding om een ruime keuze in taal en frameworks (zoals Cypress, Selenium, Java en Maven en JavaScript) mogelijk te maken. Bovendien, kan een UI testproject gemakkelijk door te gebruiken worden geproduceerd [het AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+UI-tests worden verpakt in een Docker-afbeelding, zodat u een ruime keuze kunt maken in taal en frameworks (zoals Cypress, Selenium, Java en Maven en JavaScript). Bovendien, kan een UI testproject gemakkelijk door te gebruiken worden geproduceerd [het AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
 Adobe moedigt het gebruik van Cypress aan, aangezien het in real time herladen en automatisch wachten aanbiedt, die hulp tijd bespaart en productiviteit tijdens het testen verbetert. Cypress biedt ook een eenvoudige en intuïtieve syntaxis, waardoor het gemakkelijk is om te leren en te gebruiken, zelfs voor mensen die nog niet aan tests hebben gewerkt.
 
@@ -47,9 +47,9 @@ In deze sectie worden de stappen beschreven die zijn vereist voor het instellen 
 
    * Gebruik voor JavaScript en WDIO de voorbeeldcode die automatisch wordt gegenereerd in het dialoogvenster `ui.tests` van uw opslagplaats voor Cloud Manager.
 
-      >[!NOTE]
-      >
-      >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `ui.tests` mappen, kunt u ook de nieuwste versie genereren met de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
+     >[!NOTE]
+     >
+     >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `ui.tests` mappen, kunt u ook de nieuwste versie genereren met de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
 
    * Gebruik voor Java en WebDriver de voorbeeldcode van het dialoogvenster [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
@@ -191,13 +191,13 @@ Als u de voorbeelden gebruikt die door Adobe worden verstrekt:
 
 * Voor het JavaScript-veld `ui.tests` op basis van de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests), kunt u onder bevel uitvoeren om de vereiste configuratie toe te voegen.
 
-   ```shell
-   echo "ui-tests.version=1" > testing.properties
-   
-   if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
-     awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
-   fi
-   ```
+  ```shell
+  echo "ui-tests.version=1" > testing.properties
+  
+  if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
+    awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
+  fi
+  ```
 
 * Voor de Cypress- en Java Selenium-testmonsters die door Adobe worden geleverd, is de aanmeldingsmarkering al ingesteld.
 
@@ -220,7 +220,7 @@ De volgende omgevingsvariabelen worden bij uitvoering aan de Docker-afbeelding d
 | `AEM_PUBLISH_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt om u aan te melden bij de AEM-publicatie-instantie | Alles |
 | `AEM_PUBLISH_PASSWORD` | `admin` | Het wachtwoord voor aanmelding bij de AEM-publicatie-instantie | Alles |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Het pad waar het XML-rapport van de testresultaten moet worden opgeslagen | Alles |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | De URL waarnaar het bestand moet worden geüpload om het toegankelijk te maken voor het testframework | Alles |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | De URL waarnaar het bestand moet worden geüpload om deze toegankelijk te maken voor het testframework | Alles |
 
 De Adobe testmonsters verstrekken helperfuncties om tot de configuratieparameters toegang te hebben:
 

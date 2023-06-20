@@ -2,9 +2,9 @@
 title: Reis AEM Commerce Content Author
 description: Begin hier voor een geleide reis door AEM Commerce Authoring
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '457'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Als u wilt weten hoe Adobe adviseert om plaatszaken met AEM op te lossen, zijn d
 
 Deze reis wordt ontworpen voor de AEM Inhoudsauteur van de Handel. Deze reis beschrijft de vereisten, de stappen, en de benadering om aan de slag te gaan en cataloguspagina&#39;s, malplaatjes en volledige productervaringen te beheren.
 
-Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar sommige informatie zal overbodig zijn voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
+Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar sommige informatie is overbodig voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
 
 ## De reis {#the-journey}
 

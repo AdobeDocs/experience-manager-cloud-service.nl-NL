@@ -2,10 +2,10 @@
 title: Content Fragment Models (Assets - Content Fragments)
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2917'
-ht-degree: 3%
+source-wordcount: '2903'
+ht-degree: 2%
 
 ---
 
@@ -56,7 +56,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
    >[!NOTE]
    >
-   >Als een veld **Vereist** is, wordt het **label** in het linkerdeelvenster gemarkeerd met een sterretje (**&#42;**).
+   >Wanneer een veld als **Vereist** de **Label** aangegeven in het linkerdeelvenster is gemarkeerd met een asterix (**&#42;**).
 
 ![eigenschappen](assets/cfm-models-03.png)
 
@@ -64,22 +64,22 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
    * Sleep een vereist gegevenstype naar de vereiste locatie voor een veld:
 
-      ![gegevenstype naar veld](assets/cfm-models-04.png)
+     ![gegevenstype naar veld](assets/cfm-models-04.png)
 
    * Nadat een veld aan het model is toegevoegd, wordt in het rechterdeelvenster het volgende weergegeven: **Eigenschappen** die voor dat bepaalde gegevenstype kunnen worden gedefinieerd. Hier kunt u definiëren wat voor dat veld is vereist.
 
       * Veel eigenschappen zijn niet-verklarend, voor meer details zie [Eigenschappen](#properties).
       * Een **Veldlabel** zal automatisch de **Eigenschapnaam**  - indien leeg, en het kan achteraf handmatig worden bijgewerkt.
 
-         >[!CAUTION]
-         >
-         >Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype, merk op dat de namen slechts A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
-         >
-         >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
-      Bijvoorbeeld:
+        >[!CAUTION]
+        >
+        >Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype, merk op dat de namen slechts A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
+        >
+        >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
 
-      ![veldeigenschappen](assets/cfm-models-05.png)
+     Bijvoorbeeld:
 
+     ![veldeigenschappen](assets/cfm-models-05.png)
 
 1. **Een veld verwijderen**
 
@@ -126,12 +126,11 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
       * Neemt JSON-syntaxismarkering, automatisch aanvullen en foutmarkering op in de inhoudsfragmenteditor.
 * **Tijdelijke aanduiding voor tab**
    * Hiermee kunt u tabbladen invoeren die u kunt gebruiken bij het bewerken van de inhoud van het inhoudsfragment.
-Dit zal als verdeler in de modelredacteur worden getoond, scheidend secties van de lijst van de types van inhoudsgegevens. Elke instantie vertegenwoordigt het begin van een nieuw lusje.
+Dit wordt getoond als verdeler in de modelredacteur, die secties van de lijst van inhoudstypes scheidt. Elke instantie vertegenwoordigt het begin van een nieuw lusje.
 In de fragmenteditor wordt elke instantie weergegeven als een tab.
-
-      >[!NOTE]
-      >
-      >Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het schema AEM GraphQL.
+     >[!NOTE]
+     >
+     >Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het schema AEM GraphQL.
 
 ## Eigenschappen {#properties}
 
@@ -139,18 +138,17 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
 * **Eigenschapnaam**
 
-   Wanneer u deze eigenschap handmatig bijwerkt voor een gegevenstype, moet u opletten dat namen **moet** bevatten *alleen* A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot; als speciaal teken.
+  Wanneer u deze eigenschap handmatig bijwerkt voor een gegevenstype, moet u opletten dat namen **moet** bevatten *alleen* A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot; als speciaal teken.
 
-   >[!CAUTION]
-   >
-   >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
+  >[!CAUTION]
+  >
+  >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
 
 * **Renderen als**
-De verschillende opties voor het realiseren/renderen van het veld in een fragment. Hierdoor kunt u vaak definiëren of de auteur één exemplaar van het veld ziet of meerdere exemplaren mag maken.
+De verschillende opties voor het realiseren/renderen van het veld in een fragment. Met deze eigenschap kunt u vaak definiëren of de auteur één instantie van het veld ziet of meerdere instanties mag maken.
 
 * **Veldlabel**
-Een 
-**Veldlabel** zal automatisch een **Eigenschapnaam**, die indien nodig handmatig kan worden bijgewerkt.
+Een **Veldlabel** zal automatisch een **Eigenschapnaam**, die indien nodig handmatig kan worden bijgewerkt.
 
 * **Validatie**
 De basisbevestiging is beschikbaar door mechanismen zoals **Vereist** eigenschap. Sommige gegevenstypen hebben extra validatievelden. Zie [Validatie](#validation) voor nadere bijzonderheden.
@@ -161,28 +159,28 @@ De basisbevestiging is beschikbaar door mechanismen zoals **Vereist** eigenschap
    * **Markering**
    * **Onbewerkte tekst**
 
-   Indien niet opgegeven, wordt de standaardwaarde **RTF** wordt gebruikt voor dit veld.
+  Indien niet opgegeven, wordt de standaardwaarde **RTF** wordt gebruikt voor dit veld.
 
-   Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
+  Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
 
 * **Uniek**
 De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten die op basis van het huidige model zijn gemaakt.
 
-   Dit wordt gebruikt om ervoor te zorgen dat inhoudsauteurs geen inhoud kunnen herhalen die al in een ander fragment van hetzelfde model is toegevoegd.
+  Dit wordt gebruikt om ervoor te zorgen dat inhoudsauteurs geen inhoud kunnen herhalen die al in een ander fragment van hetzelfde model is toegevoegd.
 
-   Bijvoorbeeld een **Tekst met één regel** veld aangeroepen `Country` in het inhoudsfragmentmodel kan de waarde niet hebben `Japan` in twee afhankelijke inhoudsfragmenten. Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
+  Bijvoorbeeld een **Tekst met één regel** veld aangeroepen `Country` in het inhoudsfragmentmodel kan de waarde niet hebben `Japan` in twee afhankelijke inhoudsfragmenten. Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
 
-   >[!NOTE]
-   >
-   >Er wordt gezorgd voor uniformiteit per taalwortel.
+  >[!NOTE]
+  >
+  >Er wordt gezorgd voor uniformiteit per taalwortel.
 
-   >[!NOTE]
-   >
-   >Variaties kunnen hetzelfde hebben *uniek* waarde als variaties van hetzelfde fragment, maar niet dezelfde waarde als bij variaties van andere fragmenten.
+  >[!NOTE]
+  >
+  >Variaties kunnen hetzelfde hebben *uniek* waarde als variaties van hetzelfde fragment, maar niet dezelfde waarde als bij variaties van andere fragmenten.
 
-   >[!CAUTION]
-   >
-   >Als u MSM (dat tot exemplaren van Inhoudsfragmenten leidt) wilt gebruiken, dan om het even welk **Uniek** de beperkingen zouden uit om het even welke Types moeten worden verwijderd die van Gegevens in de respectieve Modellen van het Fragment van de Inhoud worden gebruikt.
+  >[!CAUTION]
+  >
+  >Als u MSM (dat tot exemplaren van Inhoudsfragmenten leidt) wilt gebruiken, dan om het even welk **Uniek** de beperkingen zouden uit om het even welke Types moeten worden verwijderd die van Gegevens in de respectieve Modellen van het Fragment van de Inhoud worden gebruikt.
 
 * Zie **[Content Reference](#content-reference)** voor meer details over dat specifieke gegevenstype en zijn eigenschappen.
 
@@ -190,7 +188,7 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
 
 * **Vertaalbaar**
 
-   De **Vertaalbaar** Schakel het selectievakje in een veld in de editor van het inhoudsfragmentmodel in:
+  De **Vertaalbaar** Schakel het selectievakje in een veld in de editor van het inhoudsfragmentmodel in:
 
    * Zorg ervoor dat de eigenschapsnaam van het veld wordt toegevoegd aan de vertaalconfiguratie, context `/content/dam/<sites-configuration>`, indien nog niet aanwezig.
    * Voor GraphQL: instellen `<translatable>` eigenschap in het veld Inhoudsfragment naar `yes`, om GraphQL-queryfilter toe te staan voor JSON-uitvoer met alleen vertaalbare inhoud.
@@ -221,10 +219,9 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 * **[Fragmentverwijzing](#fragment-reference-nested-fragments)** (Geneste fragmenten)
    * Verwijzingen naar andere fragmenten, afhankelijk van de opgegeven modellen.
    * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
-
-      >[!NOTE]
-      >
-      >Deze methode is van bijzonder belang in samenhang met [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     >[!NOTE]
+     >
+     >Deze methode is van bijzonder belang in samenhang met [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
 >[!NOTE]
@@ -232,11 +229,10 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 >AEM heeft een terugkerende bescherming voor:
 >
 >* Content References
-   >  Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
+>  Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
 >* Fragmentverwijzingen in GraphQL
-   >  Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, wordt null geretourneerd bij de eerste instantie.
-
+>  Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, wordt null geretourneerd bij de eerste instantie.
 
 ### Content Reference {#content-reference}
 
@@ -296,11 +292,11 @@ Geeft een hoofdpad aan voor alle fragmenten waarnaar wordt verwezen.
 
 * **Fragment maken toestaan**
 
-   Hierdoor kan de auteur van het fragment een nieuw fragment maken op basis van het juiste model.
+  Hierdoor kan de auteur van het fragment een nieuw fragment maken op basis van het juiste model.
 
    * **fragmentreferencecomponent** - stelt de auteur van het fragment in staat een samenstelling samen te stellen door meerdere fragmenten te selecteren
 
-   ![Fragmentverwijzing](assets/cfm-fragment-reference.png)
+  ![Fragmentverwijzing](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
 >
@@ -375,15 +371,16 @@ Om het **Beleid** for **Modellen voor toegestane inhoudsfragmenten**:
 
    * **Overgenomen van`<folder>`**
 
-      Het beleid wordt automatisch geërft wanneer het creëren van nieuwe kindomslagen; het beleid kan worden aangepast (en de overerving wordt verbroken) als submappen andere modellen dan de bovenliggende map moeten toestaan.
+     Het beleid wordt automatisch geërft wanneer het creëren van nieuwe kindomslagen; het beleid kan worden aangepast (en de overerving wordt verbroken) als submappen andere modellen dan de bovenliggende map moeten toestaan.
 
    * **Modellen van inhoudsfragmenten op pad toestaan**
 
-      U kunt meerdere modellen toestaan.
+     U kunt meerdere modellen toestaan.
 
    * **Modellen voor inhoudsfragmenten zijn toegestaan op tag**
 
-      U kunt meerdere modellen toestaan.
+     U kunt meerdere modellen toestaan.
+
    ![Beleid inhoudsfragmentmodel](assets/cfm-model-policy-assets-folder.png)
 
 1. **Opslaan** eventuele wijzigingen.
@@ -421,11 +418,11 @@ Een fragmentmodel voor inhoud publiceren:
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
 1. Selecteer uw model, gevolgd door **Publiceren** op de werkbalk.
-De gepubliceerde status wordt aangegeven in de console.
+De gepubliceerde status wordt vermeld in de console.
 
    >[!NOTE]
    >
-   >Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
+   >Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, geeft een selectielijst dit aan en wordt het model gepubliceerd met het fragment.
 
 ## Publicatie van een inhoudsfragmentmodel ongedaan maken {#unpublishing-a-content-fragment-model}
 
@@ -437,7 +434,7 @@ Publicatie van een inhoudsfragmentmodel ongedaan maken:
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
 1. Selecteer uw model, gevolgd door **Publiceren ongedaan maken** op de werkbalk.
-De gepubliceerde status wordt aangegeven in de console.
+De gepubliceerde status wordt vermeld in de console.
 
 Als u probeert de publicatie ongedaan te maken van een model dat momenteel wordt gebruikt door een of meer fragmenten, wordt u hiervan op de hoogte gesteld door een foutwaarschuwing:
 
@@ -483,16 +480,16 @@ U kunt **Vergrendeld** modellen van of de console, of modelredacteur:
 
 * Console
 
-   Vanuit de console kunt u de modus ALLEEN-LEZEN beheren met de **Ontgrendelen** en **Vergrendelen** acties op de werkbalk:
+  Vanuit de console kunt u de modus ALLEEN-LEZEN beheren met de **Ontgrendelen** en **Vergrendelen** acties op de werkbalk:
 
-   ![Werkbalk van het vergrendelde inhoudsfragmentmodel](assets/cfm-model-locked.png)
+  ![Werkbalk van het vergrendelde inhoudsfragmentmodel](assets/cfm-model-locked.png)
 
    * U kunt **Ontgrendelen** een model om bewerkingen in te schakelen.
 
-      Als u **Ontgrendelen** er wordt een waarschuwing weergegeven en u moet de **Ontgrendelen** handeling:
-      ![Bericht bij ontgrendelen van inhoudsfragmentmodel](assets/cfm-model-unlock-message.png)
+     Als u **Ontgrendelen**, wordt een waarschuwing weergegeven en moet u de **Ontgrendelen** handeling:
+     ![Bericht bij ontgrendelen van inhoudsfragmentmodel](assets/cfm-model-unlock-message.png)
 
-      Vervolgens kunt u het model openen en bewerken.
+     Vervolgens kunt u het model openen en bewerken.
 
    * U kunt ook **Vergrendelen** het model daarna.
    * Als u het model opnieuw publiceert, wordt het meteen weer opgenomen in **Vergrendeld** (ALLEEN-LEZEN) modus.
@@ -501,18 +498,18 @@ U kunt **Vergrendeld** modellen van of de console, of modelredacteur:
 
    * Wanneer u een vergrendeld model opent, wordt u gewaarschuwd en krijgt u de volgende drie acties te zien: **Annuleren**, **Alleen-lezen weergeven**, **Bewerken**:
 
-      ![Bericht bij weergave van een vergrendeld inhoudsfragmentmodel](assets/cfm-model-editor-lock-message.png)
+     ![Bericht bij weergave van een vergrendeld inhoudsfragmentmodel](assets/cfm-model-editor-lock-message.png)
 
    * Als u **Alleen-lezen weergeven** u kunt de inhoud en de structuur van het model zien:
 
-      ![Alleen-lezen weergeven - Vergrendeld inhoudsfragmentmodel](assets/cfm-model-editor-locked-view-only.png)
+     ![Alleen-lezen weergeven - Vergrendeld inhoudsfragmentmodel](assets/cfm-model-editor-locked-view-only.png)
 
    * Als u **Bewerken** u kunt uw updates bewerken en opslaan:
 
-      ![Bewerken - Vergrendeld inhoudsfragmentmodel](assets/cfm-model-editor-locked-edit.png)
+     ![Bewerken - Vergrendeld inhoudsfragmentmodel](assets/cfm-model-editor-locked-edit.png)
 
-      >[!NOTE]
-      >
-      >Mogelijk staat er nog een waarschuwing boven aan het scherm, maar dat is wanneer het model al wordt gebruikt door bestaande inhoudsfragmenten.
+     >[!NOTE]
+     >
+     >Mogelijk staat er nog een waarschuwing boven aan het scherm, maar dat is wanneer het model al wordt gebruikt door bestaande inhoudsfragmenten.
 
    * **Annuleren** Hiermee keert u terug naar de console.

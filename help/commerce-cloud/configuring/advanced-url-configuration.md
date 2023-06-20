@@ -9,10 +9,10 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2197'
 ht-degree: 2%
 
 ---
@@ -50,10 +50,10 @@ Hiermee configureert u de URL&#39;s van de productpagina&#39;s en ondersteunt u 
 In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` wordt vervangen door `/content/venia/us/en/products/product-page`
-* `{{sku}}` worden vervangen door bijvoorbeeld de sku van het product, `VP09`
-* `{{url_key}}` worden vervangen door de `url_key` eigenschap, bijvoorbeeld `lenora-crochet-shorts`
-* `{{url_path}}` worden vervangen door de `url_path`, bijvoorbeeld `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` worden vervangen door bijvoorbeeld de geselecteerde variant; `VP09-KH-S`
+* `{{sku}}` wordt bijvoorbeeld vervangen door de sku van het product; `VP09`
+* `{{url_key}}` wordt vervangen door `url_key` eigenschap, bijvoorbeeld `lenora-crochet-shorts`
+* `{{url_path}}` wordt vervangen door `url_path`, bijvoorbeeld `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` wordt vervangen door bijvoorbeeld de geselecteerde variant; `VP09-KH-S`
 
 Aangezien `url_path` verouderd zijn, de vooraf gedefinieerde product-URL-indelingen gebruiken de `url_rewrites` en kies het pad met de meeste padsegmenten als alternatief als de optie `url_path` is niet beschikbaar.
 
@@ -69,8 +69,8 @@ Hiermee configureert u de URL&#39;s van de pagina&#39;s in de categorie- of prod
 In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` wordt vervangen door `/content/venia/us/en/products/category-page`
-* `{{url_key}}` worden vervangen door de categorie `url_key` eigenschap
-* `{{url_path}}` worden vervangen door de categorie `url_path`
+* `{{url_key}}` wordt vervangen door de categorie `url_key` eigenschap
+* `{{url_path}}` wordt vervangen door de categorie `url_path`
 
 Met de bovenstaande voorbeeldgegevens ziet een categoriepagina-URL die is opgemaakt met de standaard-URL-indeling eruit als `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
@@ -229,7 +229,7 @@ _**Balans tussen URL-lengte en gecodeerde informatie.**_
 
 Afhankelijk van de grootte van de catalogus, met name de grootte en diepte van de categoriestructuur, is het wellicht niet verstandig om de volledige `url_path` van categorieën in de URL. In dat geval kan de lengte van de URL worden verminderd door alleen de categorie&#39;s op te nemen `url_key` in plaats daarvan. De meeste functies die beschikbaar zijn bij het gebruik van de categorie worden ondersteund `url_path`.
 
-Gebruik bovendien [Sling Mappings](#sling-mapping) om de sku met het product te combineren `url_key`. In de meeste e-commercesystemen volgt de sku een bepaalde indeling en wordt de sku van de `url_key` voor binnenkomende verzoeken moet gemakkelijk mogelijk zijn. Daarom moet het mogelijk zijn de URL van een productpagina te herschrijven naar `/p/{{category}}/{{sku}}-{{url_key}}.html`en een categorie-URL naar `/c/{{url_key}}.html` respectievelijk. De `/p` en `/c` voorvoegsel is nog steeds nodig om product - en categoriepagina &#39; s te onderscheiden van andere inhoudspagina &#39; s .
+Gebruik bovendien [Sling Mappings](#sling-mapping) om de sku met het product te combineren `url_key`. In de meeste e-commercesystemen volgt de sku een bepaalde indeling en wordt de sku van de `url_key` voor binnenkomende verzoeken moet gemakkelijk mogelijk zijn. Daarom moet het mogelijk zijn de URL van een productpagina te herschrijven naar `/p/{{category}}/{{sku}}-{{url_key}}.html`en een categorie-URL naar `/c/{{url_key}}.html` respectievelijk. De `/p` en `/c` voorvoegsel is nog steeds nodig om product- en categoriepagina&#39;s te onderscheiden van andere inhoudspagina&#39;s.
 
 ### Migreren naar een nieuwe URL-indeling {#migrate-url-formats}
 

@@ -9,10 +9,10 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
-exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
    * Selecteer de basisconfiguratie die u hebt gemaakt
    * Een nieuwe configuratie maken met de stappen die hierboven in punt 2 worden beschreven
 
-   Deze nieuwe configuratie zal als kindconfiguratie van de basis worden gecreeerd. U kunt nu naar Extra -> Algemeen -> Browser van de Configuratie gaan en de configuratiemontages creëren.
+   Deze nieuwe configuratie wordt gecreeerd als kindconfiguratie van de basis. U kunt nu naar Extra -> Algemeen -> Browser van de Configuratie gaan en de configuratiemontages creëren.
 
    >[!TIP]
    >

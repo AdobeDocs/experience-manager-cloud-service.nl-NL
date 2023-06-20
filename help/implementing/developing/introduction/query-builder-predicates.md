@@ -2,9 +2,9 @@
 title: Voorlopige naslaggids voor Query Builder
 description: Predicate reference for the Query Builder API.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 14aafcb6c4acc798b0f0e0c51ecb0726f8d567aa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2280'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag, het is impliciet.
 * **`p.hits`** - (alleen voor de JSON-servlet) selecteer de manier waarop de treffers als JSON worden geschreven, met de volgende standaardtreffers (uitbreidbaar via de service ResultHitWriter):
    * **`simple`** - minimale objecten zoals `path`, `title`, `lastmodified`, `excerpt` (indien ingesteld)
    * **`full`** - JSON-rendering van het knooppunt met `jcr:path` het pad van de treffer aangeven: door gebrek maakt enkel een lijst van de directe eigenschappen van de knoop, omvat een diepere boom met `p.nodedepth=N`, waarbij 0 de gehele oneindige subboom betekent; toevoegen `p.acls=true` om de JCR-machtigingen van de huidige sessie op te nemen voor het opgegeven resultaatitem (toewijzingen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
-   * **`selective`** - alleen eigenschappen die zijn opgegeven in `p.properties`, dat een spatie gescheiden is (gebruik `+` in URL&#39;s) lijst van relatieve paden; als het relatieve pad een diepte heeft `>1` deze worden weergegeven als onderliggende objecten; de bijzondere `jcr:path` eigenschap bevat het pad van de hit
+   * **`selective`** - alleen eigenschappen die zijn opgegeven in `p.properties`, dat een spatie gescheiden is (gebruik `+` in URL&#39;s) lijst van relatieve paden; als het relatieve pad een diepte heeft `>1` deze worden vertegenwoordigd als onderliggende voorwerpen; de bijzondere `jcr:path` eigenschap bevat het pad van de hit
 
 ### groep {#group}
 
@@ -108,7 +108,7 @@ Hierdoor wordt het resultaat beperkt tot inhoudsfragmenten.
 
 In deze voorspelling worden twee JCR-datumeigenschappen met elkaar vergeleken. Kan testen of ze gelijk, ongelijk, groter dan of groter dan of gelijk zijn.
 
-Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex gebruiken.
+Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt.
 
 #### Eigenschappen {#properties-2}
 
@@ -143,7 +143,7 @@ Filteren wordt niet ondersteund.
 
 In deze voorspelling worden knooppunten uitgesloten van het resultaat wanneer hun pad overeenkomt met een reguliere expressie.
 
-Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex gebruiken.
+Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt.
 
 Het ondersteunt geen facetextractie.
 
@@ -168,7 +168,7 @@ Het ondersteunt geen facetextractie.
 
 Dit voorspel beperkt het resultaat tot punten waar de huidige zitting gespecificeerde heeft [JCR-bevoegdheden.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
-Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex gebruiken. Het ondersteunt geen facetextractie.
+Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt. Het ondersteunt geen facetextractie.
 
 #### Eigenschappen {#properties-7}
 
@@ -178,7 +178,7 @@ Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex ge
 
 Dit voorspelt vindt AEM pagina&#39;s in een specifieke taal. Hierbij wordt zowel naar de eigenschap language van de pagina als naar het paginapad gekeken, dat vaak de taal of landinstelling in een sitestructuur op hoofdniveau bevat.
 
-Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex gebruiken.
+Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt.
 
 Het steunt facetextractie en verstrekt emmers voor elke unieke taalcode.
 
@@ -190,7 +190,7 @@ Het steunt facetextractie en verstrekt emmers voor elke unieke taalcode.
 
 Deze voorspelling controleert of een knooppunt een DAM-hoofdactief is en geen subactief. Dit is eigenlijk elk knooppunt dat zich niet binnen een knooppunt sub assets bevindt. Dit controleert niet op de `dam:Asset` knooppunttype. Om dit te gebruiken predikaat, eenvoudig reeks `mainasset=true` of `mainasset=false`. Er zijn geen eigenschappen meer.
 
-Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex gebruiken.
+Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt.
 
 Zij ondersteunt facetextractie en voorziet in twee emmers voor hoofd- en subactiva.
 
@@ -202,7 +202,7 @@ Zij ondersteunt facetextractie en voorziet in twee emmers voor hoofd- en subacti
 
 Dit voorspelt vindt punten die lid van een specifiek zijn [slingerbronverzameling](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
-Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex gebruiken.
+Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt.
 
 Het ondersteunt geen facetextractie.
 
@@ -244,8 +244,7 @@ Het ondersteunt geen facetextractie.
 * **`path`** - Hiermee definieert u het padpatroon.
    * Afhankelijk van de `exact` eigenschap, de gehele substructuur komt overeen (net als bij het toevoegen) `//*` in xpath, maar merk op dat dit het basispad niet bevat) of alleen een exact pad dat overeenkomt met het pad, dat jokertekens kan bevatten (`*`).
       * Standaardwaarden: `true`
-&lt;!>— * Als de 
-`self`eigenschap is ingesteld, wordt de volledige substructuur, inclusief het basisknooppunt, doorzocht.—>
+&lt;!>— * Als de `self`eigenschap is ingesteld, wordt de volledige substructuur, inclusief het basisknooppunt, doorzocht.—>
 * **`exact`** - als `exact` is `true`, moet het exacte pad overeenkomen, maar het kan eenvoudige jokertekens bevatten (`*`), die gelijke namen, maar niet `/`; indien `false` (standaard) alle afstammingen worden opgenomen (optioneel)
 * **`flat`** - alleen de directe kinderen doorzoekt (zoals toevoegen) `/*` in xpath) (alleen gebruikt als `exact` is niet waar (optioneel)
 * **`self`** - zoekt in de substructuur, maar neemt het basisknooppunt op dat als pad is opgegeven (geen jokertekens).
@@ -267,7 +266,7 @@ Het steunt facetextractie en verstrekt emmers voor elke unieke bezitswaarde in d
    * `equals` voor exacte overeenkomst (standaard)
    * `unequals` voor ongelijkheidsvergelijking
    * `like` voor het gebruik van de `jcr:like` xpath, functie (optioneel)
-   * `not` voor geen overeenkomst (bijvoorbeeld `not(@prop)` in xpath, value param will be ignored)
+   * `not` voor geen overeenkomst (bijvoorbeeld `not(@prop)` in xpath, value param wordt genegeerd)
    * `exists` Bestaande controle
       * `true` de eigenschap moet bestaan
       * `false` is gelijk aan `not` en is de standaardinstelling

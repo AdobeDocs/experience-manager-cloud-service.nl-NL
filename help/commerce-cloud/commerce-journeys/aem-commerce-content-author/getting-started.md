@@ -2,9 +2,9 @@
 title: Aan de slag met CIF Authoring
 description: Aan de slag met CIF Authoring
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Op de resterende tabbladen ziet u alle AEM inhoud die aan het product is gekoppe
 Het gebruik van Omnissearch is een eenvoudige manier om AEM inhoud te zoeken met behulp van full-text zoekopdrachten. CIF breidt Omnissearch uit met full-text onderzoek van productcatalogi met zijn bijbehorende AEM inhoud.
 ![menu-item handel](assets/omnisearch.png)
 
-Het onderzoek zal een full-text onderzoek in de handelskolterug in werking stellen om alle verwante producten te vinden. Het resultaat wordt onder **Alle producten weergeven**. InSearch wordt ook AEM gezocht naar inhoud die is gekoppeld aan het doorzochte product. De resultaten worden vermeld in de respectieve AEM. In dit voorbeeld is één inhoudsfragment gerelateerd aan het product.
+Het onderzoek zal een full-text onderzoek in de handelskolterug in werking stellen om alle verwante producten te vinden. Het resultaat wordt onder **Alle producten weergeven**. InSearch wordt ook AEM gezocht naar inhoud die is gekoppeld aan het doorzochte product. De resultaten worden vermeld in de respectieve AEM categorieën. In dit voorbeeld is één inhoudsfragment gerelateerd aan het product.
 
 ## Volgende functies {#what-is-next}
 

@@ -4,7 +4,7 @@ description: Experience Manager voegt contextafhankelijke en beschrijvende slimm
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Videocodering is standaard ingeschakeld in [!DNL Adobe Experience Manager] als [
 
 ## Slimme tags toepassen op video&#39;s tijdens het uploaden {#smart-tag-assets-on-ingestion}
 
-Wanneer u [video-elementen uploaden](add-assets.md#upload-assets) tot [!DNL Adobe Experience Manager] als [!DNL Cloud Service], worden de video&#39;s verwerkt. Als de verwerking is voltooid, raadpleegt u de [!UICONTROL Basic] tabblad van element [!UICONTROL Properties] pagina. Slimme tags worden automatisch toegevoegd aan de video onder [!UICONTROL Smart Tags]. Middelenmicroservices gebruiken [!DNL Adobe Sensei] om deze slimme tags te maken.
+Wanneer u [video-elementen uploaden](add-assets.md#upload-assets) tot [!DNL Adobe Experience Manager] als [!DNL Cloud Service], worden de video&#39;s verwerkt. Als de verwerking is voltooid, raadpleegt u de [!UICONTROL Basic] tabblad van element [!UICONTROL Properties] pagina. Slimme tags worden automatisch toegevoegd aan de video onder [!UICONTROL Smart Tags]. Gebruik van Asset Microservices [!DNL Adobe Sensei] om deze slimme tags te maken.
 
 ![Slimme tags worden toegevoegd aan video&#39;s en weergegeven op het tabblad Standaard van de Eigenschappen van elementen](assets/smart-tags-added-to-videos.png)
 
@@ -153,4 +153,3 @@ Om de configuratie van de betrouwbaarheidsscoreOSGI aan het project toe te voege
 >
 >* [Slimme tags beheren en zoeken naar middelen](smart-tags.md#manage-smart-tags-and-searches)
 >* [De service Slimme tags toepassen en uw afbeeldingen labelen](smart-tags.md)
-

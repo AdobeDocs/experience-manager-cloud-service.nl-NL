@@ -2,9 +2,9 @@
 title: Insteekmodule Adobe-inhoudspakket
 description: Gebruik de Content Package Maven plug-in om AEM toepassingen te implementeren
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,6 @@ In dit document wordt beschreven hoe u deze taken beheert met de Maven. Het is e
 >Pakket **creatie** is nu eigendom van de [Apache Jackrabbit FileVault Package Maven plugin.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
 >* De `content-package-maven-plugin` ondersteunt geen pakket meer uit versie 1.0.2.
 >* In dit artikel worden de **implementatie** van de geconstrueerde pakketten die moeten worden AEM, wordt uitgevoerd door de plug-in Adobe Content Package Maven.
-
 
 ## Pakketten en de AEM projectstructuur {#aem-project-structure}
 
@@ -95,7 +94,7 @@ De parameters in de volgende tabel zijn gemeenschappelijk voor alle doelstelling
 | `serverId` | `String` | Nee | De server-id waarvan de gebruikersnaam en het wachtwoord voor verificatie moeten worden opgehaald | Alle doelstellingen behalve `package` |
 | `targetURL` | `String` | Ja | `http://localhost:4502/crx/packmgr/service.jsp` | De URL van de HTTP-service-API van het AEM pakketbeheer | Alle doelstellingen behalve `package` |
 | `timeout` | `int` | Nee | `5` | De verbindingstijd voor communicatie met de pakketbeheerservice, in seconden | Alle doelstellingen behalve `package` |
-| `useProxy` | `boolean` | Nee | `true` | Een waarde van `true` veroorzaakt Maven om de eerste actieve volmachtsconfiguratie te gebruiken die wordt gevonden om volmachtsverzoeken aan de Manager van het Pakket te richten. | Alle doelstellingen behalve `package` |
+| `useProxy` | `boolean` | Nee | `true` | Een waarde van `true` oorzaken Maven om de eerste actieve volmachtsconfiguratie te gebruiken die aan volmachtsverzoeken aan de Manager van het Pakket wordt gevonden. | Alle doelstellingen behalve `package` |
 | `userId` | `String` | Ja | `admin` | De gebruikersnaam die moet worden geverifieerd met AEM | Alle doelstellingen behalve `package` |
 | `verbose` | `boolean` | Nee | `false` | Schakelt uitgebreide logboekregistratie in of uit | Alle doelstellingen behalve `package` |
 
@@ -182,7 +181,7 @@ Naast de volgende parameters, zie de beschrijving van `name` in de [Algemene par
 | `prefix` | `java.lang.String` | Nee | Geen |  |
 | `project` | `org.apache.maven.project.MavenProject` | Ja | Geen | Het Maven-project |
 | `properties` | `java.util.Map` | Nee | Geen | Deze parameters definiëren aanvullende eigenschappen die u kunt instellen in het dialoogvenster `properties.xml` bestand. Deze eigenschappen kunnen de volgende vooraf gedefinieerde eigenschappen niet overschrijven: `group` (gebruik `group` in te stellen parameter), `name` (gebruik `name` in te stellen parameter), `version` (gebruik `version` in te stellen parameter), `description` (op basis van de projectbeschrijving), `groupId` (`groupId` van de Maven-projectdescriptor), `artifactId` (`artifactId` van de Maven-projectdescriptor), `dependencies` (gebruik `dependencies` in te stellen parameter), `createdBy` (de waarde van de `user.name` systeemeigenschap), `created` (de huidige systeemtijd), `requiresRoot` (gebruik `requiresRoot` in te stellen parameter), `packagePath` (wordt automatisch gegenereerd op basis van de groep en de pakketnaam) |
-| `requiresRoot` | `boolean` | Ja | false | Definieert of het pakket root vereist. Dit wordt de `requiresRoot` eigendom van de `properties.xml` bestand. |
+| `requiresRoot` | `boolean` | Ja | false | Definieert of het pakket root vereist. Wordt de `requiresRoot` eigendom van de `properties.xml` bestand. |
 | `subPackages` | `java.util.List` | Nee | Geen |  |
 | `version` | `java.lang.String` | Ja | De versie die is gedefinieerd in het Maven-project | De versie van het inhoudspakket |
 | `workDirectory` | `java.io.File` | Ja | De folder die in het Maven project (bouwstijlfase wordt bepaald) | De map met de inhoud die in het pakket moet worden opgenomen |

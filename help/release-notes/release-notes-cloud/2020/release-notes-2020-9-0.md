@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2020.9.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.9.0."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '721'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] Versie 2020.9.0 is 3 september 2
 
 * De controle van de inhoud is opnieuw geëtiketteerd als ErvingsControle.
 * Het bouwstijlproces is gescheiden in drie afzonderlijke Maven bevelen.
-* Als de Git Repository niet wordt gekloond, zal het tot drie keer worden herhaald.
+* Als de Git Repository niet wordt gekloond, wordt het tot drie keer opnieuw gemaakt.
 
 ### Opgeloste problemen {#bug-fixes-cm}
 
@@ -118,8 +118,8 @@ Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen v
 
 * De insteekmodule AIO-CLI ondersteunt Repository Modernizer en stelt gebruikers in staat het gereedschap uit te voeren met de insteekmodule.
 
-   Zie [Git-bron: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie .
+  Zie [Git-bron: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie .
 
 * Het nut van de Modernizer van de Bewaarplaats kan worden gebruikt om bestaande projectpakketten in pakketten te herstructureren die met de projectstructuur compatibel zijn die voor AEM as a Cloud Service wordt bepaald.
 
-   Zie [Git-bron: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie .
+  Zie [Git-bron: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie .

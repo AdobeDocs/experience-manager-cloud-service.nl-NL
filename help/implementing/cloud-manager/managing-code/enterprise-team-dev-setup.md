@@ -2,9 +2,9 @@
 title: Team instellen voor bedrijfsontwikkeling
 description: Leer hoe u uw ontwikkelingsteam voor bedrijven kunt instellen en schalen en hoe AEM as a Cloud Service uw ontwikkelingsproces kan ondersteunen.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: f19c4c71cf3b70331b9ccc56adf0bfd31e7edb2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1444'
 ht-degree: 0%
 
 ---
@@ -70,13 +70,13 @@ De installatie in de git-opslagplaats van Cloud Manager heeft twee vertakkingen.
 * Een stabiele releasetak bevat de productiecode van alle teams.
 * Een ontwikkelingstak bevat de ontwikkelingscode van alle teams.
 
-Elke duw aan de gokbewaarplaats van een team in of de ontwikkeling of de stabiele tak teweegbrengt een [GitHub, actie.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+Elke duw aan de gokbewaarplaats van een team in of de ontwikkeling of de stabiele tak teweegbrengt [GitHub, actie.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
 
 Alle projecten volgen de zelfde opstelling voor de stabiele tak. Een duw naar de stabiele tak van een project wordt automatisch geduwd aan de stabiele tak in de gokbewaarplaats van de Manager van de Wolk. De productiepijplijn in de Manager van de Wolk wordt gevormd om door een duw aan de stabiele tak worden teweeggebracht. De productiepijpleiding wordt daarom uitgevoerd door elke duw van om het even welk team in een stabiele tak en de productieleiding wordt bijgewerkt als alle kwaliteitstoegangspoorten overgaan.
 
 ![Push-diagram](/help/implementing/cloud-manager/assets/team-setup2.png)
 
-Penselen naar de ontwikkelingsvertakking worden anders verwerkt. Terwijl een duw aan een ontwikkelaarstak in de it bewaarplaats van een team een actie GitHub eveneens teweegbrengt en de code automatisch in de ontwikkelingstak in de git bewaarplaats van de Manager van de Wolk wordt geduwd, wordt de niet productiepijpleiding niet automatisch teweeggebracht door de codeduw. Dit wordt geactiveerd door een aanroep van de API van Cloud Manager.
+Penselen naar de ontwikkelingsvertakking worden anders verwerkt. Terwijl een duw aan een ontwikkelaarstak in de git bewaarplaats van een team een actie GitHub eveneens teweegbrengt en de code automatisch in de ontwikkelingstak in de git bewaarplaats van de Manager van de Wolk wordt geduwd, wordt de niet productiepijpleiding niet automatisch teweeggebracht door de codeduw. Dit wordt geactiveerd door een aanroep van de API van Cloud Manager.
 
 Het runnen van de productiepijpleiding omvat het controleren van de code van alle teams via de verstrekte kwaliteitsspoortaten. Zodra de code aan stadium wordt opgesteld, worden de tests en de controles uitgevoerd om ervoor te zorgen alles zoals verwacht werkt. Wanneer alle poorten zijn doorgegeven, worden de wijzigingen zonder onderbreking of downtime omgezet in productie.
 
@@ -86,7 +86,7 @@ De leden van elk team controleren gewoonlijk de code van de gedeelde git voor ev
 
 ![Lokale uitchecken en SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
-Deze real-world opstelling kan als blauwdruk worden gebruikt en dan aan de behoeften van een onderneming worden aangepast. Het flexibele vertakkings en het samenvoegen concept van it staat voor variaties van de bovengenoemde werkschema&#39;s toe, die aan de behoeften van elk team worden aangepast. AEM as a Cloud Service ondersteunt al deze variaties zonder dat dit ten koste gaat van de kernwaarde van de geadviseerde Cloud Manager-pijplijn.
+Deze real-world opstelling kan als blauwdruk worden gebruikt en dan aan de behoeften van een onderneming worden aangepast. Het flexibele vertakkings- en samenvoegingsconcept van git maakt variaties mogelijk van de bovenstaande workflows, die zijn aangepast aan de behoeften van elk team. AEM as a Cloud Service ondersteunt al deze variaties zonder dat dit ten koste gaat van de kernwaarde van de geadviseerde Cloud Manager-pijplijn.
 
 >[!TIP]
 >
@@ -96,7 +96,7 @@ Deze real-world opstelling kan als blauwdruk worden gebruikt en dan aan de behoe
 
 Met de git-opslagplaats van Cloud Manager en de productiepijplijn wordt de volledige productiecode altijd door alle kwaliteitspoorten geleid, waarbij deze als één implementatieeenheid wordt behandeld. Op deze manier is het productiesysteem altijd zonder onderbreking of onderbreking.
 
-Zonder een dergelijk systeem is er daarentegen een risico dat een update van één team tot problemen met productiestabiliteit kan leiden, omdat elk team afzonderlijk kan implementeren. Daarnaast is coördinatie en geplande uitvaltijd nodig om updates uit te voeren. Met een toenemend aantal teams zal de coördinatie-inspanning veel complexer en sneller onbeheersbaar worden.
+Zonder een dergelijk systeem is er daarentegen een risico dat een update van één team tot problemen met productiestabiliteit kan leiden, omdat elk team afzonderlijk kan implementeren. Daarnaast is coördinatie en geplande uitvaltijd nodig om updates uit te voeren. Met een toenemend aantal teams wordt de coördinatie-inspanning veel complexer en snel onbeheersbaar.
 
 Als er een probleem wordt vastgesteld in de kwaliteitskates, heeft dit geen invloed op de productie en kan het probleem worden opgespoord en opgelost zonder dat Adobe personeel nodig is om in te stappen. Zonder Cloud Service en zonder altijd de volledige plaatsing te testen, kunnen de gedeeltelijke plaatsingen stroomonderbrekingen veroorzaken die een verzoek vereisen om terug te draaien of zelfs volledig te herstellen van een steun. De gedeeltelijke tests kunnen ook leiden tot andere problemen die vervolgens moeten worden opgelost nadat opnieuw coördinatie en steun van het personeel van de Adobe vereist is.
 

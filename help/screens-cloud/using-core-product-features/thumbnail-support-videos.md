@@ -3,9 +3,9 @@ title: Ondersteuning voor miniaturen voor video's in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u ondersteuning voor miniaturen voor video's in as a Cloud Service schermen toevoegt.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -62,13 +62,13 @@ Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 
 1. Klikken op **Voorvertoning**.
 
-1. Als een video op de component wordt geplaatst, zal de video spelen. Als dat niet het geval is en de miniatuur is ingesteld, wordt de miniatuur afgespeeld. Anders wordt de component beschouwd als niet gevormd en zal worden overgeslagen.
+1. Wanneer een video op de component is ingesteld, wordt de video afgespeeld. Als dat niet het geval is en de miniatuur is ingesteld, wordt de miniatuur afgespeeld. Anders, wordt de component beschouwd als niet gevormd en overgeslagen.
 
 ## Ondersteunde gevallen voor gebruik tijdens het gebruik van miniaturen in video&#39;s {#understand-use-case}
 
 Miniatuur in video&#39;s biedt ondersteuning voor de volgende gebruiksscenario&#39;s:
 
-* Een video-onderdeel zonder installatie wordt overgeslagen.
+* Een video-component zonder installatie wordt overgeslagen.
 
 * De miniatuur wordt afgespeeld in een video-onderdeel met alleen de miniatuurset.
 

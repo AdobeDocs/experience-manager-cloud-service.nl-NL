@@ -1,8 +1,8 @@
 ---
 title: API-referentiematerialen
-description: AEM heeft uitgebreide en krachtige API's die u kunt gebruiken voor uw digitale-ervaringsproject.
+description: AEM beschikt over uitgebreide en krachtige API's die u kunt gebruiken voor uw digitale-ervaringsproject.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 3%

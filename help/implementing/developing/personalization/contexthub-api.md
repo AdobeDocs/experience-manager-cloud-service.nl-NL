@@ -2,9 +2,9 @@
 title: ContextHub JavaScript API-naslaggids
 description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de component ContextHub aan de pagina is toegevoegd
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4620'
 ht-degree: 0%
 
 ---
@@ -697,7 +697,7 @@ Bindt een functie aan een gebeurtenis. De functie wordt aangeroepen telkens wann
 
 Wanneer de `triggerForPastEvents` argument is `true`Deze functie retourneert een `boolean` waarde die aangeeft of de gebeurtenis in het verleden heeft plaatsgevonden:
 
-* `true`: De gebeurtenis vond in het verleden plaats en de handler wordt aangeroepen.
+* `true`: De gebeurtenis vond in het verleden plaats en de manager wordt geroepen.
 * `false`: De gebeurtenis heeft zich in het verleden niet voorgedaan.
 
 Indien `triggerForPastEvents` is `false`, retourneert deze functie geen waarde.
@@ -737,7 +737,7 @@ Bindt een functie aan een gebeurtenis. De functie wordt slechts eenmaal aangeroe
 
 Wanneer de `triggerForPastEvents` argument is `true`Deze functie retourneert een `boolean` waarde die aangeeft of de gebeurtenis in het verleden heeft plaatsgevonden:
 
-* `true`: De gebeurtenis vond in het verleden plaats en de handler wordt aangeroepen.
+* `true`: De gebeurtenis vond in het verleden plaats en de manager wordt geroepen.
 * `false`: De gebeurtenis heeft zich in het verleden niet voorgedaan.
 
 Indien `triggerForPastEvents` is `false`, retourneert deze functie geen waarde.

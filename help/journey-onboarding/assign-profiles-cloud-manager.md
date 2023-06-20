@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u teamleden kunt toewijzen aan pro
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1532'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Als u weet wat deze rollen zijn en wat ze doen, controleert u uw lijst met teaml
 
 U kunt nu gebruikers toevoegen en deze toewijzen aan de **Zakelijke eigenaar** productprofiel.
 
-1. Bepaal de gebruiker(s) die Cloud Manager-programma&#39;s moet beheren. Dit zijn uw **Bedrijfseigenaren**.
+1. Identificeer de gebruikers die Cloud Manager-programma&#39;s moeten beheren. Dit zijn uw **Bedrijfseigenaren**.
 
 1. Meld u aan bij de Admin Console op `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **Overzicht** pagina, selecteert u **Adobe Experience Manager as a Cloud Service** product van **Producten en diensten** kaart.
 
@@ -185,5 +185,5 @@ Het verdient aanbeveling de hierboven beschreven instapreis voort te zetten. Dit
 
 * [Introductie van Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - Meer informatie over Cloud Manager, Cloud Manager-programma&#39;s en omgevingen.
 * [Productprofielen van Cloud Manager](/help/onboarding/aem-cs-team-product-profiles.md) - Meer informatie over AEM as a Cloud Service teams en productprofielen.
-* [Identiteitstypen in Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Met het identiteitsbeheersysteem van Adobe kunnen beheerders de toegang van gebruikers tot toepassingen en services maken en beheren. Adobe biedt deze identiteitstypen of accounts aan om gebruikers te verifiëren en autoriseren.
+* [Identiteitstypen in Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Adobe identiteitsbeheer maakt en beheert gebruikerstoegang tot toepassingen en services. Adobe biedt deze identiteitstypen of accounts aan om gebruikers te verifiëren en autoriseren.
 

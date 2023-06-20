@@ -3,9 +3,9 @@ title: Productiepijpleidingen configureren
 description: Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu's te bouwen en op te stellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Als u uw programma hebt ingesteld en ten minste één omgeving hebt die de [!UIC
    **Belangrijk gedrag metrische fouten** - Tijdens het instellen of bewerken van pijpleidingen **Implementatiebeheer** heeft de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitspoorten wordt ontmoet. De beschikbare opties zijn:
 
    * **Telkens vragen** - Dit is de standaardinstelling en u moet handmatig ingrijpen bij belangrijke fouten.
-   * **Direct mislukken** - Indien geselecteerd, zal de pijpleiding worden geannuleerd wanneer een belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
+   * **Direct mislukken** - Indien geselecteerd, wordt de pijpleiding geannuleerd wanneer een belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
    * **Direct doorgaan** - Indien geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
    ![Configuratie productiepijplijn](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -73,6 +73,7 @@ Om de configuratie van de front eind codeproductiepijplijn te beëindigen, volg 
 1. Op de **Broncode** moet u de volgende opties definiëren.
 
    * **Bewaarplaats** - Deze optie bepaalt waarvan git repo de pijpleiding de code zou moeten terugwinnen.
+
    >[!TIP]
    > 
    >Zie het document [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
@@ -94,13 +95,14 @@ Een full-stack codepijpleiding stelt gelijktijdig achterste en front-end codebou
 
 >[!NOTE]
 >
->Als er al een &#39;full-stack&#39;-codepijplijn voor de geselecteerde omgeving bestaat, wordt deze selectie uitgeschakeld.
+>Als er al een &#39;full-stack&#39;-codepijplijn voor de geselecteerde omgeving bestaat, is deze selectie uitgeschakeld.
 
 Om de configuratie van de full-stack de productiepijplijn van de codeproductie te beëindigen, volg deze stappen.
 
 1. Op de **Broncode** moet u de volgende opties definiëren.
 
    * **Bewaarplaats** - Deze optie bepaalt waarvan git repo de pijpleiding de code zou moeten terugwinnen.
+
    >[!TIP]
    > 
    >Zie het document [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
@@ -135,7 +137,7 @@ Om de configuratie van de full-stack de productiepijplijn van de codeproductie t
 
 1. Klikken op **Opslaan** om uw pijpleiding te redden.
 
-De wegen die voor de Controle van de Ervaring worden gevormd zullen aan de dienst worden voorgelegd en zullen worden geëvalueerd volgens de prestaties, de toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests wanneer de pijpleiding loopt. Zie [Werken met de resultaten van Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie .
+De wegen die voor de Controle van de Ervaring worden gevormd worden voorgelegd aan de dienst en worden geëvalueerd volgens de prestaties, de toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests wanneer de pijpleiding loopt. Zie [Werken met de resultaten van Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie .
 
 De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managing-pipelines.md) op de **Pijpleidingen** kaart op **Programmaoverzicht** pagina.
 
@@ -148,6 +150,7 @@ Om de configuratie van de full-stack de productiepijplijn van de codeproductie t
 1. Op de **Broncode** moet u de volgende opties definiëren.
 
    * **Bewaarplaats** - Deze optie bepaalt waarvan git repo de pijpleiding de code zou moeten terugwinnen.
+
    >[!TIP]
    > 
    >Zie het document [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
@@ -174,7 +177,7 @@ De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managin
 
 Met frontend pijpleidingen wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en kan het ontwikkelingsproces worden versneld.
 
-Raadpleeg het document [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces werkt samen met enkele overwegingen om zich bewust te zijn van het nut van dit proces.
+Raadpleeg het document [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces samen met enkele overwegingen werkt , moet u zich ervan bewust zijn dat dit proces alle mogelijkheden biedt .
 
 ## Verzendpakketten overslaan {#skip-dispatcher-packages}
 

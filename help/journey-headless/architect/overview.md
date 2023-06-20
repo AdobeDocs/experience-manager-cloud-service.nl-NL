@@ -2,9 +2,9 @@
 title: Reis van architect zonder hoofdinhoud AEM
 description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
@@ -37,11 +37,11 @@ Als u wilt weten hoe Adobe adviseert hoe te om hoofdloze zaken met AEM op te los
 
 ## Publiek {#audience}
 
-Deze reis is ontworpen voor de persona van de Content Architect. Als Content Architect definieert u de structuur van de inhoud. Deze definities worden vervolgens gebruikt door de makers van inhoud wanneer deze de werkelijke inhoud maken.
+Deze reis is ontworpen voor de persona van de Content Architect. Als Content Architect definieert u de structuur van de inhoud. Deze definities worden vervolgens gebruikt door de inhoudsauteurs wanneer deze de werkelijke inhoud maken.
 
 De reis bepaalt de vereisten, de stappen, en de benadering van een AEM Zwaardeloos project vanuit het perspectief van een Architect van de Inhoud. De reis zal extra persona&#39;s bepalen waarmee de inhoudarchitect voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is dat van de inhoudarchitect.
 
-Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar sommige informatie zal overbodig zijn voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
+Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar sommige informatie is overbodig voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
 
 ## De tocht van de Architect zonder inhoud {#the-journey}
 

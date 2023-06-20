@@ -2,9 +2,9 @@
 title: Inhoudsoverdrachten valideren
 description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten te valideren
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1062'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inh
 >
 >Deze functie is beschikbaar vanaf versie 1.8.x van het Content Transfer Tool (CTT). De AEM Cloud Service-doelomgeving moet ten minste versie 6158 of hoger zijn. Het vereist ook het bronmilieu om opstelling te zijn om in werking te stellen [voorkopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). De bevestigingseigenschap zoekt het azcopy.config- dossier op de bron. Als dit bestand niet wordt gevonden, wordt de validatie niet uitgevoerd. Meer over leren hoe te om een dossier te vormen azcopy.config, zie [deze pagina](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze functie inschakelt, duurt het langer om zowel een extractie als een opname uit te voeren. Om de eigenschap te gebruiken, laat het in de Console van het Systeem van het bron AEM milieu door deze stappen toe te volgen:
+Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze functie inschakelt, duurt het langer om zowel een extractie als een opname uit te voeren. Om de eigenschap te gebruiken, laat het in de Console van het Systeem van de bron AEM milieu door deze stappen toe te volgen:
 
 1. Navigeer naar de Adobe Experience Manager Web Console op uw broninstantie door naar **Gereedschappen - Bewerkingen - Webconsole** of rechtstreeks naar de URL op *https://serveraddress:serverport/system/console/configMgr*
 1. Zoeken naar **Configuratie van de service Content Transfer Tool Extraction**
@@ -36,7 +36,7 @@ Voor meer informatie over het installeren van het gereedschap Inhoud overbrengen
 
 Als migratievalidatie is ingeschakeld in de AEM bronomgeving, begint u met extraheren.
 
-Indien **Stapelcontainer overschrijven tijdens extractie** wordt toegelaten, zullen alle knopen die met de extractie betrokken zijn aan de samenvatting van de extractiepad worden geregistreerd. Wanneer deze instelling wordt gebruikt, is het belangrijk om de optie **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** instelling tijdens inname, anders lijken er wellicht knooppunten te ontbreken in de ingeslipsamenvatting. Dit zijn de knooppunten die al aanwezig zijn op het doel na eerdere inname.
+Indien **Stapelcontainer overschrijven tijdens extractie** wordt toegelaten, worden alle knopen die met de extractie betrokken zijn geregistreerd aan de samenvatting van de extractiepad. Wanneer deze instelling wordt gebruikt, is het belangrijk om de optie **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** instelling tijdens inname, anders lijken er wellicht knooppunten te ontbreken in de ingeslipsamenvatting. Dit zijn de knooppunten die al aanwezig zijn op het doel na eerdere inname.
 
 Voor een grafische illustratie hiervan, verwijs naar de voorbeelden hieronder:
 
@@ -44,37 +44,37 @@ Voor een grafische illustratie hiervan, verwijs naar de voorbeelden hieronder:
 
 * **Extractie (overschrijven)**
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **Verontreiniging (sluitereffect)**
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+  ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **Notities**
 
-   Deze combinatie van &quot;Overschrijven&quot; en &quot;Sluitereffect&quot; resulteert in consistente validatieresultaten, zelfs voor herhaalde inname.
+  Deze combinatie van &quot;Overschrijven&quot; en &quot;Sluitereffect&quot; resulteert in consistente validatieresultaten, zelfs voor herhaalde inname.
 
 ### Voorbeeld 2 {#example-2}
 
 * **Extractie**
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **Inname**
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+  ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **Notities**
 
-   Deze combinatie van &quot;Overschrijven&quot; en &quot;Sluitereffect&quot; resulteert in consistente validatieresultaten voor de eerste opname.
+  Deze combinatie van &quot;Overschrijven&quot; en &quot;Sluitereffect&quot; resulteert in consistente validatieresultaten voor de eerste opname.
 
-   Als inname wordt herhaald, is de innamesamenvatting leeg en lijkt de validatie te zijn mislukt. De controlesamenvatting is leeg omdat alle knooppunten van deze extractie al aanwezig zijn op het doel.
+  Als inname wordt herhaald, is de innamesamenvatting leeg en lijkt de validatie te zijn mislukt. De controlesamenvatting is leeg omdat alle knooppunten van deze extractie al aanwezig zijn op het doel.
 
 Zodra de extractie is voltooid, begint u met innemen.
 
 De bovenkant van het innamelogboek zal een ingang bevatten, gelijkend op `aem-ethos/tools:1.2.438`. Controleer of dit versienummer **1.2.438** of hoger, anders wordt de bevestiging niet gesteund door de versie van AEM as a Cloud Service die u gebruikt.
 
-Zodra de opname volledig is en de bevestiging begint, zal de volgende logboekingang in het innamelogboek worden genoteerd:
+Nadat de opname volledig is en de bevestiging begint, wordt de volgende logboekingang genoteerd in het innamelogboek:
 
 ```
 Gathering artifacts for migration validation...
@@ -136,7 +136,7 @@ Het validatierapport kan niet alleen worden opgenomen in het innamelogboek, maar
 
 Zie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) de belangrijkste migratiegegevens te lezen en de redenen daarvoor .
 
-Zodra de extractie en inname met succes zijn voltooid, zullen een samenvatting en rapport van de belangrijkste migratie beschikbaar zijn. Deze informatie kan worden gebruikt om te valideren welke gebruikers en groepen met succes zijn gemigreerd, en misschien om te bepalen waarom sommige niet.
+Nadat de extractie en inname met succes zijn voltooid, is een samenvatting en rapport van de belangrijkste migratie beschikbaar. Deze informatie kan worden gebruikt om te valideren welke gebruikers en groepen met succes zijn gemigreerd, en misschien om te bepalen waarom sommige niet.
 
 Ga naar Cloud Acceleration Manager om deze informatie te bekijken. Klik op uw projectkaart en klik op de kaart van de Overdracht van de Inhoud. Navigeren naar **Ingestietaken** en zoek de inname die u wilt controleren. Klik op de drie stippen (**...**) voor die opname, klikt u op **Hoofdoverzicht weergeven** in de vervolgkeuzelijst.
 

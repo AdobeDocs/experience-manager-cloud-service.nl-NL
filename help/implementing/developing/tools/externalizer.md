@@ -2,9 +2,9 @@
 title: URL's extern maken
 description: ExternalAlizer is de dienst OSGi die u toestaat om een middelweg in externe en absolute URL programmatically om te zetten.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,8 @@ Om een domeinafbeelding voor de dienst te bepalen Externalzer:
    * **`scheme`** is meestal http of https, maar kan een ander protocol zijn.
 
       * Het wordt aanbevolen https te gebruiken om https-koppelingen af te dwingen.
-      * Deze wordt gebruikt als de clientcode het schema niet overschrijft wanneer u vraagt om externalisatie van een URL.
+      * Deze wordt gebruikt als de clientcode het schema niet overschrijft wanneer wordt gevraagd om externalisatie van een URL.
+
    * **`server`** is de gastheernaam (of een domeinnaam of ip adres).
    * **`port`** (optioneel) is het poortnummer.
    * **`contextpath`** (optioneel) wordt alleen ingesteld als AEM is geïnstalleerd als een webapp onder een ander contextpad.
@@ -102,11 +103,11 @@ Deze sectie toont een paar voorbeelden van hoe de dienst Externalzer kan worden 
 
 * **Een pad extern maken met het domein &#39;publish&#39;:**
 
-   ```java
-   String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
+  ```
 
-   Het veronderstellen van de domeinafbeelding:
+  Het veronderstellen van de domeinafbeelding:
 
    * `publish https://www.website.com`
 
@@ -116,11 +117,11 @@ Deze sectie toont een paar voorbeelden van hoe de dienst Externalzer kan worden 
 
 * **Een pad extern maken met het domein &#39;auteur&#39;:**
 
-   ```java
-   String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
+  ```
 
-   Het veronderstellen van de domeinafbeelding:
+  Het veronderstellen van de domeinafbeelding:
 
    * `author https://author.website.com`
 
@@ -130,11 +131,11 @@ Deze sectie toont een paar voorbeelden van hoe de dienst Externalzer kan worden 
 
 * **Een pad extern maken met het &#39;lokale&#39; domein:**
 
-   ```java
-   String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
+  ```
 
-   Het veronderstellen van de domeinafbeelding:
+  Het veronderstellen van de domeinafbeelding:
 
    * `local https://publish-3.internal`
 

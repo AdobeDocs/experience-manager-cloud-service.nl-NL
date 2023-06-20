@@ -2,9 +2,9 @@
 title: Een Forms Portal maken op een Experience Manager Sites-pagina
 description: Leer hoe u een Forms Portal kunt maken en de kerncomponenten van een AEM Sites-pagina kunt gebruiken die niet in de verpakking staan.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1682'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Voer de volgende stappen uit om de Verenigde Verbinding van de Opslag voor AEM W
 
 ## Forms Portal-componenten inschakelen {#enable-forms-portal-components}
 
-Als u een kerncomponent (inclusief de onderdelen van de out-of-the-box portal) wilt gebruiken op een Adobe Experience Manager-site (AEM), moet u een proxycomponent maken en deze inschakelen voor uw site. Voor het creëren van een volmachtscomponent en het toelaten van poortcomponenten, zie [Basiscomponenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components).
+Als u een kerncomponent (inclusief de onderdelen van de out-of-the-box portal) op een Adobe Experience Manager-site (AEM) wilt gebruiken, moet u een proxycomponent maken en deze inschakelen voor uw site. Voor het creëren van een volmachtscomponent en het toelaten van poortcomponenten, zie [Basiscomponenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=en#create-proxy-components).
 
 Zodra een poortcomponent wordt toegelaten, kunt u het in de auteursinstantie van uw plaatspagina gebruiken.
 

@@ -2,9 +2,9 @@
 title: Het gebruiken van de Verzameling van Middel in Adobe Experience Manager as a Cloud Service
 description: De het Verdelen Samenvoeging van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1158'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
 * ervoor zorgen dat er geen wijzigingen in de aanpassing worden aangebracht in `/libs`.
 * de structuur reduceren waarvan een replicatie wordt uitgevoerd `/libs`.
 
-   Wanneer het gebruiken van de Verzameling van het Middel wordt het niet geadviseerd om de volledige structuur van te kopiëren `/libs` aangezien dit zou leiden tot te veel informatie in de aanpassing (gewoonlijk `/apps`). Het dupliceren van informatie vergroot onnodig de kans op problemen wanneer het systeem op om het even welke manier wordt verbeterd.
+  Wanneer het gebruiken van de Verzameling van het Middel wordt het niet geadviseerd om de volledige structuur van te kopiëren `/libs` aangezien dit zou leiden tot te veel informatie in de aanpassing (gewoonlijk `/apps`). Het dupliceren van informatie vergroot onnodig de kans op problemen wanneer het systeem op om het even welke manier wordt verbeterd.
 
 >[!CAUTION]
 >
@@ -56,23 +56,23 @@ De resourcefusie biedt de volgende eigenschappen:
 
 * `sling:hideProperties` ( `String` of `String[]`)
 
-   Geeft de eigenschap op, of een lijst met eigenschappen, die moet worden verborgen.
+  Geeft de eigenschap op, of een lijst met eigenschappen, die moet worden verborgen.
 
-   Het jokerteken `*` verbergt alles.
+  Het jokerteken `*` verbergt alles.
 
 * `sling:hideResource` ( `Boolean`)
 
-   Geeft aan of de bronnen volledig verborgen moeten zijn, inclusief de onderliggende elementen.
+  Geeft aan of de bronnen volledig verborgen moeten zijn, inclusief de onderliggende elementen.
 
 * `sling:hideChildren` ( `String` of `String[]`)
 
-   Bevat het onderliggende knooppunt of de lijst met onderliggende knooppunten die moet worden verborgen. De eigenschappen van het knooppunt blijven behouden.
+  Bevat het onderliggende knooppunt of de lijst met onderliggende knooppunten die moet worden verborgen. De eigenschappen van het knooppunt blijven behouden.
 
-   Het jokerteken `*` verbergt alles.
+  Het jokerteken `*` verbergt alles.
 
 * `sling:orderBefore` ( `String`)
 
-   Bevat de naam van de sibling knoop die de huidige knoop voor van zou moeten worden geplaatst.
+  Bevat de naam van de sibling knoop die de huidige knoop voor van zou moeten worden geplaatst.
 
 Deze eigenschappen beïnvloeden hoe de overeenkomstige/originele middelen/eigenschappen (van `/libs`) worden gebruikt door de bedekking/overschrijving (vaak in `/apps`).
 
@@ -84,23 +84,23 @@ Als u een bedekking wilt maken of overschrijven, moet u het oorspronkelijke knoo
 
    * De definitie van het navigatie-item voor de Sites-console, zoals weergegeven in de spoorstaaf, is gedefinieerd op:
 
-      `/libs/cq/core/content/nav/sites/jcr:title`
+     `/libs/cq/core/content/nav/sites/jcr:title`
 
    * Als u dit wilt bedekken, maakt u het volgende knooppunt:
 
-      `/apps/cq/core/content/nav/sites`
+     `/apps/cq/core/content/nav/sites`
 
-      Vervolgens werkt u de eigenschap bij `jcr:title` zoals vereist.
+     Vervolgens werkt u de eigenschap bij `jcr:title` zoals vereist.
 
 * Negeren
 
    * De definitie van het aanraakdialoogvenster voor de tekstconsole is als volgt:
 
-      `/libs/foundation/components/text/cq:dialog`
+     `/libs/foundation/components/text/cq:dialog`
 
    * Als u dit wilt overschrijven, maakt u het volgende knooppunt, bijvoorbeeld:
 
-      `/apps/the-project/components/text/cq:dialog`
+     `/apps/the-project/components/text/cq:dialog`
 
 Als u een van deze opties wilt maken, hoeft u alleen de skeletstructuur opnieuw te maken. Om de recreatie van de structuur te vereenvoudigen kunnen alle intermediaire knopen van type zijn `nt:unstructured` (zij hoeven niet op het oorspronkelijke knooppunttype te wijzen; bijvoorbeeld in `/libs`).
 
@@ -125,14 +125,14 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
 
 * **Een eigenschap toevoegen**
 
-   De eigenschap bestaat niet in het dialoogvenster `/libs` , maar is vereist in de `/apps` bedekking/overschrijving.
+  De eigenschap bestaat niet in het dialoogvenster `/libs` , maar is vereist in de `/apps` bedekking/overschrijving.
 
    1. Maak het corresponderende knooppunt binnen `/apps`
    1. Maak de nieuwe eigenschap op dit knooppunt &quot;
 
 * **Een eigenschap opnieuw definiëren (geen automatisch gemaakte eigenschappen)**
 
-   De eigenschap wordt gedefinieerd in `/libs`, maar in de `/apps` bedekking/overschrijving.
+  De eigenschap wordt gedefinieerd in `/libs`, maar in de `/apps` bedekking/overschrijving.
 
    1. Maak het corresponderende knooppunt binnen `/apps`
    1. Maak de overeenkomende eigenschap op dit knooppunt (onder / `apps`)
@@ -140,14 +140,15 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
       * Het bezit zal een prioriteit hebben die op de het Verspreiden configuratie van de Resolver van het Middel wordt gebaseerd.
       * Het wijzigen van het type eigenschap wordt ondersteund.
 
-         Als u een ander type eigenschap gebruikt dan het type dat wordt gebruikt in `/libs`Vervolgens wordt het door u gedefinieerde type eigenschap gebruikt.
-   >[!NOTE]
-   >
-   >Het wijzigen van het type eigenschap wordt ondersteund.
+        Als u een ander type eigenschap gebruikt dan het type dat wordt gebruikt in `/libs`Vervolgens wordt het door u gedefinieerde type eigenschap gebruikt.
+
+  >[!NOTE]
+  >
+  >Het wijzigen van het type eigenschap wordt ondersteund.
 
 * **Een automatisch gemaakte eigenschap opnieuw definiëren**
 
-   Automatisch gemaakte eigenschappen (zoals `jcr:primaryType`) niet onderworpen zijn aan een bedekking/overschrijving om ervoor te zorgen dat het knooptype dat momenteel onder `/libs` wordt nageleefd. Als u een bedekking/overschrijving wilt toepassen, moet u het knooppunt opnieuw maken in `/apps`, de eigenschap expliciet verbergen en opnieuw definiëren:
+  Automatisch gemaakte eigenschappen (zoals `jcr:primaryType`) niet onderworpen zijn aan een bedekking/overschrijving om ervoor te zorgen dat het knooptype dat momenteel onder `/libs` wordt nageleefd. Als u een bedekking/overschrijving wilt toepassen, moet u het knooppunt opnieuw maken in `/apps`, de eigenschap expliciet verbergen en opnieuw definiëren:
 
    1. Maak het corresponderende knooppunt onder `/apps` met het gewenste `jcr:primaryType`
    1. De eigenschap maken `sling:hideProperties` op dat knooppunt, met de waarde ingesteld op die van de eigenschap auto-created; bijvoorbeeld: `jcr:primaryType`
@@ -156,7 +157,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
 
 * **Een knooppunt en de onderliggende knooppunten opnieuw definiëren**
 
-   De knoop en zijn kinderen worden bepaald in `/libs`, maar in de `/apps` bedekking/overschrijving.
+  De knoop en zijn kinderen worden bepaald in `/libs`, maar in de `/apps` bedekking/overschrijving.
 
    1. Combineer de handelingen van:
 
@@ -165,7 +166,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
 
 * **Een eigenschap verbergen**
 
-   De eigenschap wordt gedefinieerd in `/libs`, maar niet vereist in de `/apps` bedekking/overschrijving.
+  De eigenschap wordt gedefinieerd in `/libs`, maar niet vereist in de `/apps` bedekking/overschrijving.
 
    1. Maak het corresponderende knooppunt binnen `/apps`
    1. Een eigenschap maken `sling:hideProperties` van het type `String` of `String[]`. Met deze optie geeft u de eigenschappen op die moeten worden verborgen of genegeerd. Jokertekens kunnen ook worden gebruikt. Bijvoorbeeld:
@@ -177,7 +178,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
 
 * **Een knooppunt en de onderliggende knooppunten verbergen**
 
-   De knoop en zijn kinderen worden bepaald in `/libs`, maar niet vereist in de `/apps` bedekking/overschrijving.
+  De knoop en zijn kinderen worden bepaald in `/libs`, maar niet vereist in de `/apps` bedekking/overschrijving.
 
    1. Het corresponderende knooppunt maken onder /apps
    1. Een eigenschap maken `sling:hideResource`
@@ -187,7 +188,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
 
 * **Onderliggende items van een knooppunt verbergen (terwijl de eigenschappen van het knooppunt behouden blijven)**
 
-   De knoop, zijn eigenschappen en zijn kinderen worden bepaald in `/libs`. Het knooppunt en de eigenschappen ervan zijn vereist in het dialoogvenster `/apps` bedekken/overschrijven, maar sommige of alle onderliggende knooppunten zijn niet vereist in de `/apps` bedekking/overschrijving.
+  De knoop, zijn eigenschappen en zijn kinderen worden bepaald in `/libs`. Het knooppunt en de eigenschappen ervan zijn vereist in het dialoogvenster `/apps` bedekken/overschrijven, maar sommige of alle onderliggende knooppunten zijn niet vereist in de `/apps` bedekking/overschrijving.
 
    1. Maak het corresponderende knooppunt onder `/apps`
    1. De eigenschap maken `sling:hideChildren`:
@@ -197,10 +198,9 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
 
       Jokerteken&amp;st; kan worden gebruikt om alle onderliggende knooppunten te verbergen/te negeren.
 
-
 * **Knooppunten opnieuw ordenen**
 
-   De knoop en zijn siblings worden bepaald in `/libs`. Een nieuwe positie wordt vereist zodat wordt de knoop opnieuw gemaakt in `/apps` bedekking/overschrijving, waarbij de nieuwe positie wordt gedefinieerd ten opzichte van het juiste knooppunt op hetzelfde niveau in `/libs`.
+  De knoop en zijn siblings worden bepaald in `/libs`. Een nieuwe positie wordt vereist zodat wordt de knoop opnieuw gemaakt in `/apps` bedekking/overschrijving, waarbij de nieuwe positie wordt gedefinieerd ten opzichte van het juiste knooppunt op hetzelfde niveau in `/libs`.
 
    * Gebruik de `sling:orderBefore` eigenschap:
 

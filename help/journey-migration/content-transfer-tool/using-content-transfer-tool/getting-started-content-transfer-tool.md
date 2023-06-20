@@ -2,9 +2,9 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1396'
 ht-degree: 6%
 
 ---
@@ -34,7 +34,7 @@ Alleen versie 2.0.0 en hoger wordt ondersteund en het is raadzaam de meest recen
 >
 >Er kan ook een verbindingsfout optreden als een migratieset is verwijderd uit Cloud Acceleration Manager.
 
-De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u een extractie wilt uitvoeren, moeten de volgende eindpunten toegankelijk zijn vanaf de instantie die AEM uitvoert:
+De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u een extractie wilt uitvoeren, moeten de volgende eindpunten toegankelijk zijn vanuit de instantie die AEM uitvoert:
 
 * De Azure-opslagservice: `casstorageprod.blob.core.windows.net`
 
@@ -120,7 +120,7 @@ Als u de migratieset wilt vullen die u hebt gemaakt in de Cloud Acceleration Man
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Plak de extractietoets die eerder uit CAM is gekopieerd naar het invoerveld Extractietoets van **Migratieset maken** formulier. Als u dit doet, worden de namen van de migratieset en de projectnamen van de CAM (Cloud Acceleration Manager) automatisch ingevuld. Deze zouden de Vastgestelde naam van de Migratie in CAM en het CAM projectnaam moeten aanpassen die u creeerde. U kunt nu inhoudspaden toevoegen. Nadat u inhoudspaden hebt toegevoegd, kunt u de migratieset opslaan. U kunt de extractie uitvoeren met inbegrepen of uitgesloten versies.
+1. Plak de extractietoets die eerder uit CAM is gekopieerd naar het invoerveld Extractietoets van **Migratieset maken** formulier. Hierna worden de velden Naam migratieset en Naam CAM-project (Cloud Acceleration Manager) automatisch ingevuld. Deze zouden de Vastgestelde naam van de Migratie in CAM en het CAM projectnaam moeten aanpassen die u creeerde. U kunt nu inhoudspaden toevoegen. Nadat u inhoudspaden hebt toegevoegd, slaat u de migratieset op. U kunt de extractie uitvoeren met inbegrepen of uitgesloten versies.
 
    >[!NOTE]
    >
@@ -147,7 +147,6 @@ Als u de migratieset wilt vullen die u hebt gemaakt in de Cloud Acceleration Man
       >* `/home`
       >* `/etc` (sommige `/etc` paden mogen worden geselecteerd in CTT)
 
-
 1. Klikken op **Opslaan** nadat u alle velden in het dialoogvenster **Migratieset maken** detailscherm.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
@@ -168,6 +167,7 @@ Als u de migratieset wilt vullen die u hebt gemaakt in de Cloud Acceleration Man
 
 Nadat u een migratieset hebt gemaakt, wordt u ten zeerste aangeraden de migratieset te controleren voordat u een extractieproces start.
 Als u een formaatcontrole uitvoert op de migratieset, kunt u:
+
 * Bepalen of er voldoende schijfruimte is in het dialoogvenster `crx-quickstart` subdirectory om extractie te voltooien.
 * Bepaal of de grootte van de migratieset binnen de ondersteunde productgrenzen valt en vermijd mislukte inname van inhoud.
 
@@ -185,11 +185,11 @@ Voer de onderstaande stappen uit om een groottecontrole uit te voeren:
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Eenmaal **Formaat controleren** -proces is voltooid, verandert de status in **VOLTOOID**. Selecteer dezelfde migratieset en klik op **Formaat controleren** om de resultaten weer te geven. Hieronder ziet u een voorbeeld van **Formaat controleren** resultaten zonder waarschuwingen.
+1. Na **Formaat controleren** proces is voltooid, verandert de status in **VOLTOOID**. Selecteer dezelfde migratieset en klik op **Formaat controleren** om de resultaten weer te geven. Hieronder ziet u een voorbeeld van **Formaat controleren** resultaten zonder waarschuwingen.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Als de **Formaat controleren** de resultaten wijzen erop dat er onvoldoende schijfruimte is en/of dat de migratie de productlimieten overschrijdt; **WAARSCHUWING** status wordt weergegeven.
+1. Als de **Formaat controleren** de resultaten geven aan dat er onvoldoende schijfruimte is of dat de migratie-set de productlimieten of beide overschrijdt. **WAARSCHUWING** status wordt weergegeven.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stan
 
 ## Inleiding {#introduction}
 
-Met de Universal Editor kunt u alle aspecten van inhoud in elke implementatie bewerken, zodat u over uitzonderlijke ervaringen beschikt, de snelheid van de inhoud verhoogt en een geavanceerde ontwikkelaarservaring hebt.
+Met de Universal Editor kunt u elk aspect van elke inhoud in een implementatie bewerken, zodat u uitzonderlijke ervaringen kunt bieden, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
 
 Hiervoor beschikken inhoudsauteurs over een intuïtieve gebruikersinterface die minimale training vereist om eenvoudig in de inhoud te kunnen springen en te kunnen beginnen bewerken.
 
@@ -29,7 +29,7 @@ Hiervoor beschikken inhoudsauteurs over een intuïtieve gebruikersinterface die 
 
 ## De app voorbereiden {#prepare-app}
 
-Als u inhoud voor een app wilt ontwerpen met de Universal Editor, moet de app van instrumenten worden voorzien door een ontwikkelaar om de editor te ondersteunen.
+Als u inhoud voor een app wilt ontwerpen met de Universal Editor, moet de app van instrumenten zijn voorzien door een ontwikkelaar om de editor te ondersteunen.
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Als u inhoud voor een app wilt ontwerpen met de Universal Editor, moet de app va
 
 Wanneer de app van instrumenten is voorzien om met de Universal Editor te werken, moet u zich aanmelden bij de Universal Editor. U hebt een Adobe ID nodig om u aan te melden en [toegang hebben tot de Universal Editor.](getting-started.md#request-access)
 
-Wanneer u bent aangemeld, voert u de URL in van de pagina die u wilt bewerken in het dialoogvenster [adresbalk.](#address-bar) om te beginnen [bewerken van de inhoud.](#edit-content)
+Nadat u bent aangemeld, voert u de URL van de pagina die u wilt bewerken in het dialoogvenster [adresbalk.](#address-bar) zodat u kunt beginnen [bewerken van de inhoud.](#edit-content)
 
 ## De gebruikersinterface begrijpen {#ui}
 
@@ -84,13 +84,13 @@ Met het Help-pictogram hebt u snel toegang tot leermiddelen en ondersteuningsbro
 
 #### Meldingen {#notifications}
 
-Dit pictogram wordt gemarkeerd met het aantal momenteel toegewezen onvolledige [meldingen.](/help/implementing/cloud-manager/notifications.md)
+Dit pictogram is gemarkeerd met het aantal momenteel toegewezen onvolledige [meldingen.](/help/implementing/cloud-manager/notifications.md)
 
 ![Meldingen](assets/notifications.png)
 
 #### Gebruikerseigenschappen {#user-properties}
 
-Tik of klik op het pictogram dat uw gebruiker vertegenwoordigt om toegang te krijgen tot uw gebruikersinstellingen. Als u geen gebruikersbeeld hebt gevormd, zal een pictogram willekeurig worden toegewezen.
+Tik of klik op het pictogram dat uw gebruiker vertegenwoordigt om toegang te krijgen tot uw gebruikersinstellingen. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
 
 ![Gebruikerseigenschappen](assets/user-properties.png)
 
@@ -132,7 +132,7 @@ Tik of klik op het pictogram met de voorvertoning van de geopende app om de pagi
 
 #### Publicatie {#publish}
 
-Tik of klik op de knop Publiceren om de wijzigingen in de live inhoud voor gebruik door uw lezers te publiceren.
+Tik of klik op de knop Publiceren zodat u de wijzigingen in de live inhoud kunt publiceren voor gebruik door uw lezers.
 
 ![Knop Publiceren](assets/publish.png)
 
@@ -172,7 +172,7 @@ Afhankelijk van of de editor is ingesloten [bewerkingsmodus](#edit-mode) of [voo
 
 ## Inhoud bewerken {#editing-content}
 
-Inhoud bewerken is eenvoudig en intuïtief. In [bewerkingsmodus,](#edit-mode) terwijl u de muis over de inhoud in de editor beweegt, wordt de bewerkbare inhoud gemarkeerd met een blauw vak.
+Inhoud bewerken is eenvoudig en intuïtief. In [bewerkingsmodus,](#edit-mode) terwijl u de muis boven de inhoud in de editor houdt, wordt bewerkbare inhoud gemarkeerd met een blauw vak.
 
 ![Bewerkbare inhoud wordt gemarkeerd door een blauw vak](assets/editable-content.png)
 
@@ -192,7 +192,7 @@ Houd er rekening mee dat in de voorvertoningsmodus tikken of klikken op inhoud r
 
 Zie deze documenten voor meer informatie over de Universal Editor.
 
-* [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken om buitengewone ervaringen te bieden, de snelheid van de inhoud te verhogen en een geavanceerde ontwikkelaarservaring te bieden.
+* [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken, zodat u uitzonderlijke ervaringen kunt opdoen, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
 * [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Aan de slag met de Universal Editor in AEM](getting-started.md) - Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 * [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.

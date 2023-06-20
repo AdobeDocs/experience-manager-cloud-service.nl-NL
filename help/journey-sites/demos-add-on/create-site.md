@@ -2,9 +2,9 @@
 title: Demo-site maken
 description: Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde sjablonen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Zodra de pijpleiding toe:voegen-aan van de Demo van de Verwijzing heeft opgestel
 
    ![Wizard Site maken](assets/site-creation-wizard.png)
 
-1. Geef in het volgende scherm een titel op voor uw site of schermproject. Er kan een sitenaam worden opgegeven of deze wordt gegenereerd op basis van de titel als deze wordt weggelaten. Tik of klik op **Maken**.
+1. Geef in het volgende scherm een titel op voor uw site of schermproject. U kunt een sitenaam opgeven of genereren op basis van de titel, als u deze weglaat. Tik of klik op **Maken**.
 
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.

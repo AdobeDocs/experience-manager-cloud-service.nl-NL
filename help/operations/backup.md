@@ -2,9 +2,9 @@
 title: Back-up en herstel in AEM as a Cloud Service
 description: Back-up en herstel in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Als de plaatsing van een klant, die de opgestelde toepassingscode betekent of ge
 
 >[!CAUTION]
 >
->Deze functie moet alleen worden gebruikt bij ernstige problemen met code of inhoud. De recente gegevens tussen het tijdstip van de herstelde back-up en het moment waarop deze wordt gemaakt, gaan verloren. Het opvoeren zal ook aan de oude versie worden hersteld.
+>Deze functie moet alleen worden gebruikt bij ernstige problemen met code of inhoud. De recente gegevens tussen het tijdstip van de herstelde back-up en het moment waarop deze wordt gemaakt, gaan verloren. Het opvoeren wordt ook hersteld aan de oude versie.
 
 ## Het gebruik {#how-to-use}
 
@@ -34,7 +34,7 @@ AEM as a Cloud Service ondersteuning:
 * 24-uurs herstel, wat betekent dat het systeem in de laatste 24 uur op elk punt kan worden hersteld.
 * Herstel van een specifieke, door Adobe gedefinieerde tijdstempel die tweemaal per dag is genomen gedurende de laatste 7 dagen.  Alle replicatieberichten (verwijderen, bijwerken, maken) blijven behouden.
 
-In alle gevallen, zal de versie van de douanecode van de laatste succesvolle plaatsing vóór het terugzetpunt worden genomen.
+In alle gevallen, is de versie van de douanecode genomen van de laatste succesvolle plaatsing vóór herstellen punt.
 
 De hersteltijddoelstelling (RTO) kan variëren, maar als algemene richtlijn duurt de herstelvolgorde gemiddeld tussen 60 en 90 minuten, afhankelijk van verschillende factoren, zoals de grootte van de opslagplaats. Voorvertoningen van omgevingen en meerdere regio&#39;s kunnen de hersteltijddoelstelling verlengen.
 

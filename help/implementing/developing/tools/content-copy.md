@@ -2,9 +2,9 @@
 title: Het gereedschap Inhoud kopiëren
 description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van hun AEM as a Cloud Service productieomgeving naar lagere omgevingen voor testdoeleinden.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -29,12 +29,12 @@ De inhoud die moet worden gekopieerd, wordt gedefinieerd door een inhoudsset. Ee
 
 Wanneer het kopiëren van inhoud, is het bronmilieu de bron van waarheid.
 
-* Als de inhoud in de bestemmingsmilieu is gewijzigd, zal het door inhoud in de bron worden beschreven, als de wegen het zelfde zijn.
-* Als de paden verschillend zijn, wordt de inhoud van de bron samengevoegd met de inhoud in de bestemming.
+* Als de inhoud in de bestemmingsmilieu is gewijzigd, wordt het beschreven door inhoud in de bron, als de wegen het zelfde zijn.
+* Als de paden verschillend zijn, wordt inhoud van de bron samengevoegd met de inhoud in de bestemming.
 
 ## Machtigingen {#permissions}
 
-Voor het gebruik van het gereedschap Inhoud kopiëren zijn bepaalde machtigingen vereist in zowel de bronomgeving als de doelomgeving.
+Als u het gereedschap Inhoud kopiëren wilt gebruiken, zijn bepaalde machtigingen vereist in zowel de bronomgeving als de doelomgeving.
 
 | Functie voor kopiëren van inhoud | Beheerdersgroep AEM | Implementatiebeheerfunctie |
 |---|---|---|
@@ -122,7 +122,6 @@ Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëre
    >* De gebruiker beschikt niet over de juiste machtigingen.
    >* Het milieu heeft een lopende pijpleiding of een verrichting van de exemplaarinhoud lopend.
    >* Het milieu is aan het huren of opstarten.
-
 
 1. In de **Inhoud kopiëren** geeft u de bron en de bestemming op voor de actie Kopiëren van inhoud.
 

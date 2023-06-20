@@ -2,9 +2,9 @@
 title: IP-Lijsten van gewenste personen beheren
 description: Leer hoe u de status van uw IP-lijsten van gewenste personen in Cloud Manager kunt weergeven, bewerken, verwijderen en controleren.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Voer de volgende stappen uit om de status van IP-lijsten van gewenste personen t
 * **Verwijderen is mislukt** - Een of meer niet-toepassingen zijn tijdens het verwijderen mislukt.
 
    * Elke niet-toepassing wordt samen met de status vermeld **Voltooid** of **Mislukt**.
-   * De status **Verwijderen is mislukt** als één niet-toepassing mislukt.
+   * De status wordt **Verwijderen is mislukt** als één niet-toepassing mislukt.
    * De status blijft ongewijzigd **Verwijderen is mislukt** totdat alle fouten zijn gewist.
       * U moet **Verwijderen** in het menu met ovalen helemaal rechts van de rij in de tabel om eventuele fouten te wissen.
    * U kunt geen IP lijst van gewenste personen bijwerken terwijl de status **Mislukt**.
@@ -90,7 +90,7 @@ Als u een IP-lijst van gewenste personen verwijdert, wordt deze automatisch van 
 
 ## Bestaande CDN-configuraties {#pre-existing-cdn}
 
-Als u een reeds bestaande configuratie CDN voor uw IP lijsten van gewenste personen hebt, zal er een informatief bericht op het **IP-Lijst van gewenste personen** , waarbij u wordt aangemoedigd deze configuraties toe te voegen via de gebruikersinterface, zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
+Als u een reeds bestaande configuratie CDN voor uw IP lijsten van gewenste personen hebt, is er een informatief bericht op het **IP-Lijst van gewenste personen** , waarbij u wordt aangemoedigd deze configuraties toe te voegen via de gebruikersinterface, zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
 
 Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 

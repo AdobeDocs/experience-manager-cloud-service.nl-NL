@@ -2,9 +2,9 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2927'
 ht-degree: 11%
 
 ---
@@ -74,7 +74,7 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 
 >[!NOTE]
 >
->Dezelfde code moet in alle omgevingen worden geïmplementeerd. Dit is nodig om ervoor te zorgen dat ook in productie een niveau van betrouwbaarheidsvalideringen in de werkgebiedomgeving wordt uitgevoerd. Zie de sectie over [Runmodi](/help/implementing/deploying/overview.md#runmodes).
+>Dezelfde code moet in alle omgevingen worden geïmplementeerd. Deze code is nodig om ervoor te zorgen dat ook in productie een niveau van betrouwbaarheidsvalidering op de werkgebiedomgeving wordt uitgevoerd. Zie de sectie over [Runmodi](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Inhoudspakketten
@@ -93,11 +93,11 @@ De aanbevolen implementatiestructuur voor toepassingen is als volgt:
 
 + De `all` pakket is een containerpakket dat ALLEEN inzetbare artefacten, het SGI-bundelJar-bestand, bevat. `ui.apps`, `ui.config` en `ui.content` pakketten als insluitingen. De `all` pakket mag niet **enige inhoud of code** van zijn eigen, maar delegeer eerder al plaatsing aan de bewaarplaats aan zijn sub-pakketten of OSGi bundel Jar dossiers.
 
-   De pakketten zijn nu inbegrepen gebruikend Maven [Ingesloten configuratie van FileVault-pakket met Maven-plug-in](#embeddeds), in plaats van de `<subPackages>` configuratie.
+  De pakketten zijn nu inbegrepen gebruikend Maven [Ingesloten configuratie van FileVault-pakket met Maven-plug-in](#embeddeds), in plaats van de `<subPackages>` configuratie.
 
-   Voor complexe plaatsingen van de Experience Manager, kan het wenselijk zijn om veelvoudige te creëren `ui.apps`, `ui.config` en `ui.content` projecten/pakketten die specifieke sites of huurders in AEM vertegenwoordigen. Als dit wordt gedaan, zorg ervoor dat de splitsing tussen veranderbare en onveranderlijke inhoud wordt geëerbiedigd, en de vereiste inhoudspakketten en OSGi bundel Jar dossiers worden ingebed als subpakketten in `all` containerinhoudspakket.
+  Voor complexe plaatsingen van de Experience Manager, kan het wenselijk zijn om veelvoudige te creëren `ui.apps`, `ui.config` en `ui.content` projecten/pakketten die specifieke sites of huurders in AEM vertegenwoordigen. Als dit wordt gedaan, zorg ervoor dat de splitsing tussen veranderbare en onveranderlijke inhoud wordt geëerbiedigd, en de vereiste inhoudspakketten en OSGi bundel Jar dossiers worden ingebed als subpakketten in `all` containerinhoudspakket.
 
-   Bijvoorbeeld, zou een complexe het pakketstructuur van de plaatsingsinhoud als dit kunnen kijken:
+  Bijvoorbeeld, zou een complexe het pakketstructuur van de plaatsingsinhoud als dit kunnen kijken:
 
    + `all` met het inhoudspakket worden de volgende pakketten ingesloten om een unieke implementatie-artefact te maken
       + `common.ui.apps` implementeert code die vereist is door **beide** site A en site B
@@ -231,12 +231,12 @@ Deze mappenstructuur omlaag splitsen:
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
 
-   >[!WARNING]
-   >
-   >Op basis van conventies krijgen ingesloten mappen in subpakketten een naam met het achtervoegsel `-packages`. Dit zorgt ervoor dat de code- en contentpakketten van de implementatie **niet** worden geïmplementeerd op de doelmappen van een subpakket `/apps/<app-name>/...`, hetgeen resulteert in destructief en cyclisch installatiegedrag.
+  >[!WARNING]
+  >
+  >Op basis van conventies krijgen ingesloten mappen in subpakketten een naam met het achtervoegsel `-packages`. Dit zorgt ervoor dat de code- en contentpakketten van de implementatie **niet** worden geïmplementeerd op de doelmappen van een subpakket `/apps/<app-name>/...`, hetgeen resulteert in destructief en cyclisch installatiegedrag.
 
 + De map op het derde niveau moet ofwel
-   `application`, `content` of `container`
+  `application`, `content` of `container`
    + De `application` map bevat codepakketten
    + De `content` map bevat inhoudspakketten
    + De `container` map bevat alle [extra toepassingspakketten](#extra-application-packages) die door de AEM toepassing kunnen worden opgenomen.
@@ -286,7 +286,7 @@ Het toevoegen van Geweven gebiedsdelen volgt standaard Geweven praktijken, en he
 
 ## Pakketafhankelijke onderdelen tussen de `ui.apps` van `ui.content` Pakketten {#package-dependencies}
 
-Om een correcte installatie van de pakketten te waarborgen, wordt aanbevolen om afhankelijkheden tussen pakketten tot stand te brengen.
+Om een correcte installatie van de pakketten te verzekeren, wordt het geadviseerd interpackage gebiedsdelen worden gevestigd.
 
 De algemene regel is dat pakketten met een veranderbaar gehalte (`ui.content`) moet afhankelijk zijn van de onveranderlijke code (`ui.apps`) die het renderen en gebruiken van de veranderbare inhoud ondersteunt.
 

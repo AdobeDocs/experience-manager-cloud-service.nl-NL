@@ -2,10 +2,10 @@
 title: Snelgids voor WCAG 2.1
 description: Snelgids voor WCAG 2.1
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1776'
-ht-degree: 98%
+source-wordcount: '1774'
+ht-degree: 92%
 
 ---
 
@@ -42,8 +42,7 @@ Met andere woorden, richtlijnen die kunnen worden toegepast op verschillende web
 Elke richtlijn is zodanig opgesteld dat het op objectieve manier kan worden getest om te garanderen dat een groep toegankelijkheidsdeskundigen het er in het algemeen over eens is dat aan de richtlijn is voldaan. Een van de uitdagingen van toegankelijkheidsrichtlijnen is dat sommige richtlijnen technisch getest kunnen worden, terwijl andere vereisen dat mensen oordelen of de richtlijn al dan niet succesvol is nageleefd.
 
 * **Prioritaire en contextafhankelijke implementatie ondersteunen:**
-De richtlijnen van WCAG 2.1 krijgen een prioriteitsniveau en hebben betrekking op de mogelijke gevolgen van het niet volgen van een richtlijn voor een bepaalde groep gebruikers met een handicap. Op die manier kunnen auteurs een geïnformeerde beslissing nemen over de belangrijkste richtlijnen voor hun specifieke situatie. Daarnaast wordt het begrip 
-*ondersteuning van toegankelijkheid* geïntroduceerd. Op deze manier kunnen auteurs beslissen hoe ze webtechnologieën die mogelijk geen volledige toegankelijkheidsondersteuning bieden, het beste kunnen gebruiken, of van gebruikers verlangen dat ze over specifieke ondersteunende technologische hulpmiddelen en/of browsers beschikken om te kunnen profiteren van toegankelijkheidsfuncties.
+De richtlijnen van WCAG 2.1 krijgen een prioriteitsniveau en hebben betrekking op de mogelijke gevolgen van het niet volgen van een richtlijn voor een bepaalde groep gebruikers met een handicap. Op die manier kunnen auteurs een geïnformeerde beslissing nemen over de belangrijkste richtlijnen voor hun specifieke situatie. Daarnaast wordt het concept van *ondersteunde toegankelijkheid* geïntroduceerd. Op deze manier kunnen auteurs besluiten hoe webtechnologieën het beste kunnen worden gebruikt zonder volledige toegankelijkheidsondersteuning, of dat gebruikers specifieke ondersteunende hulpmiddelen en browsers nodig kunnen hebben, of beide om te profiteren van toegankelijkheidsfuncties.
 
 Deze doelstellingen hebben de structuur van WCAG 2.1 aanzienlijk beïnvloed.
 
@@ -115,7 +114,7 @@ Elke techniek heeft een uniek getal dat betrekking heeft op de verzameling ervan
 
 Technieken kunnen Sufficient (toereikend), Advisory (adviserend) of een Failure (mislukking) zijn:
 
-* Een *toereikende techniek* is een techniek die, als ze wordt gevolgd, voldoende is om aan een bepaald succescriterium te voldoen.
+* A *Voldoende techniek* is er een, die, als ze wordt gevolgd, voldoende is om aan een bepaald succescriterium te voldoen.
 * Een *adviserende techniek* is een techniek die, als ze wordt gevolgd, een positief effect zal hebben op de toegankelijkheid, maar op zich misschien niet voldoende is om te garanderen dat aan een bepaald succescriterium wordt voldaan.
 * Een *mislukking* is een techniek die een specifiek voorbeeld beschrijft waarbij niet aan een succescriterium is voldaan.
 
@@ -127,15 +126,15 @@ De lijst met technieken is niet volledig en WAI werkt de lijst voortdurend bij m
 
 Dit verwijst naar een reeks documenten die lezers advies geven zodat zij het doel van specifieke richtlijnen en succescriteria beter begrijpen. U kunt [een inleiding downloaden en vindt hier ook koppelingen naar meer gedetailleerde informatie](https://www.w3.org/WAI/WCAG21/Understanding/).
 
-Elke afzonderlijke richtlijn en elk succescriterium heeft ook een eigen pagina &quot;Understanding&quot; (Begrijpen) met informatie over:
+Elk afzonderlijk richtsnoer en succescriterium heeft ook een eigen pagina &quot;Understanding&quot;, met informatie over:
 
 * De intentie van de richtlijn;
 * Specifieke succescriteria;
 * Adviserende technieken die helpen te voldoen aan de vereisten van de richtlijnen, maar die niet onder een specifiek succescriterium vallen.
 
-De afzonderlijke pagina Begrijpen van elk succescriterium bevat informatie over:
+De afzonderlijke pagina &quot;Understanding&quot; van elk succescriterium bevat informatie over:
 
-* De intentie van het succescriterium;
+* de bedoeling van het succescriterium;
 * Algemene voorbeelden van de wijze waarop aan het succescriterium kan worden voldaan;
 * Gerelateerde bronnen (niet-W3C) over hoe aan het succescriterium kan worden voldaan;
 * Technieken en fouten: specifieke en gedetailleerde voorbeelden van de manier waarop aan het succescriterium kan worden voldaan (hieronder nader beschreven);
@@ -145,7 +144,7 @@ Een voorbeeld is te vinden op: [Succescriterium 1.1.1 (&quot;Niet-tekstuele cont
 
 ### Voldoen aan WCAG 2.1 {#how-to-meet-wcag}
 
-De sectie &quot;Voldoen&quot; is beschikbaar op de pagina [Hoe kan ik voldoen aan WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Deze sectie biedt een alternatieve presentatie van WCAG, waardoor lezers de content van de richtlijnen kunnen verfijnen tot de richtlijnen die het meest relevant zijn voor de eigen belangen of omstandigheden van de lezer. Lezers kunnen de technieken voor succescriteria die ze willen bekijken, filteren door bepaalde webcontenttechnologieën op te geven, zoals CSS-opmaakprofielen (Cascading Style Sheets) of scripting, of door bepaalde prioriteitsniveaus op te geven.
+Het gedeelte &#39;Hoe kan ik? is beschikbaar op het tabblad [Hoe te om WCAG 2.1 te ontmoeten](https://www.w3.org/WAI/WCAG21/quickref/) pagina. Deze sectie biedt een alternatieve presentatie van WCAG, waardoor lezers de content van de richtlijnen kunnen verfijnen tot de richtlijnen die het meest relevant zijn voor de eigen belangen of omstandigheden van de lezer. Lezers kunnen de technieken voor succescriteria die ze willen bekijken, filteren door bepaalde webcontenttechnologieën op te geven, zoals CSS-opmaakprofielen (Cascading Style Sheets) of scripting, of door bepaalde prioriteitsniveaus op te geven.
 
 Zonder filteren biedt deze bron alle succescriteria gegroepeerd op richtlijn. Voor elk succescriterium wordt het volgende verstrekt:
 

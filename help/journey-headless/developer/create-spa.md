@@ -2,9 +2,9 @@
 title: Optioneel - Hoe kunt u toepassingen voor één pagina maken (SPA) met AEM
 description: In deze optionele vervolg van de AEM Headless Developer Journey leert u hoe AEM koploze levering kunt combineren met traditionele full-stack CMS-functies en hoe u bewerkbare SPA kunt maken met AEM Editor-framework.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Er zijn een aantal vereisten voordat u begint met SPA in AEM.
 
 * Ervaring op het gebied van ontwikkeling die SPA maakt met React of Angular
 * Basisvaardigheden AEM het creëren van de Fragmenten van de Inhoud en het gebruiken van de redacteur
-* Controleer of u het document wilt reviseren [Hoofdletters en headless in AEM](/help/implementing/developing/headful-headless.md) om inzicht te krijgen in de verschillende niveaus van SPA mogelijke integratie.
+* Controleer of u het document wilt reviseren [Hoofdletters en headless in AEM](/help/implementing/developing/headful-headless.md) u kunt dus de verschillende mogelijke niveaus van SPA integratie begrijpen .
 
 ### Gereedschappen {#tools}
 
@@ -72,7 +72,7 @@ Voor een volledige beschrijving van SPA en waarom u deze zou gebruiken, raadplee
 
 ## Hoe AEM handgrepen SPA
 
-Bij het ontwikkelen van toepassingen voor één pagina op AEM wordt ervan uitgegaan dat de ontwikkelaar aan de voorzijde de beste werkwijzen volgt bij het maken van een SPA. Als u als front-end ontwikkelaar deze algemene beste praktijken evenals weinig AEM-specifieke principes volgt, zal uw SPA met AEM en zijn inhoud-creatie mogelijkheden functioneel zijn.
+Bij het ontwikkelen van toepassingen voor één pagina op AEM wordt ervan uitgegaan dat de ontwikkelaar aan de voorzijde de beste werkwijzen volgt bij het maken van een SPA. Als u als front end ontwikkelaar deze algemene beste praktijken evenals een paar AEM-specifieke principes volgt, wordt uw SPA functioneel met AEM en zijn inhoud-creatie mogelijkheden.
 
 * **Overdraagbaarheid** - De onderdelen van de SPA moeten zo draagbaar mogelijk zijn, net als alle andere onderdelen. De SPA moet met draagbare en herbruikbare onderdelen worden gebouwd.
 * **Sitestructuur AEM stations** - De front-end ontwikkelaar maakt componenten en bezit hun interne structuur, maar vertrouwt op AEM om de inhoudsstructuur van de site te bepalen.
@@ -93,7 +93,7 @@ Voor een volledige beschrijving van de AEM SPA Editor raadpleegt u de [extra mid
 
 ## Bestaande SPA aanpassen {#existing-spas}
 
-Als u een bestaande SPA hebt, AEM ondersteuning voor het insluiten ervan in AEM, zodat deze zichtbaar is voor de auteurs van de inhoud in de AEM editor. Dit kan zeer nuttig zijn om de inhoud te bekijken die zij via Inhoudsfragmenten in context van de eindtoepassing creëren waar het zal worden verbruikt.
+Als u een bestaande SPA hebt, AEM ondersteuning voor het insluiten ervan in AEM, zodat deze zichtbaar is voor de auteurs van de inhoud in de AEM editor. Dit kan zeer nuttig zijn om de inhoud te bekijken die zij door middel van tevreden Fragments in context van de eindtoepassing creëren waar het wordt verbruikt.
 
 Bovendien, met slechts kleine veranderingen, kunt u bepaalde het uitgeven capaciteit aan de externe SPA binnen de AEM redacteur toelaten.
 

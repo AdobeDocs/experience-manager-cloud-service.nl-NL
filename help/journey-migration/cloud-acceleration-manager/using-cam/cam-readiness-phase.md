@@ -2,9 +2,9 @@
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1055'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
 1. Voer de volgende stappen uit om BPA (Best Practices Analyzer) te downloaden.
 
    >[!NOTE]
-   >Om een effect op zaken kritieke instanties te vermijden, adviseert men dat u BPA op een milieu van de Auteur in werking stelt dat zo dicht mogelijk aan de milieu van de Productie op de gebieden van aanpassingen, configuraties, inhoud en gebruikerstoepassingen is. CRA kan ook worden uitgevoerd op een kloon van de auteurlaag van de productieomgeving.
+   >Om een effect op bedrijfskritieke instanties te vermijden, wordt u geadviseerd om BPA op een milieu van de Auteur in werking te stellen dat zo dicht mogelijk bij de milieu van de Productie op de gebieden van aanpassingen, configuraties, inhoud en gebruikerstoepassingen is. CRA kan ook worden uitgevoerd op een kloon van de auteurlaag van de productieomgeving.
 
    1. Navigeren naar [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) de Analysator van Beste praktijken als zip dossier openen en downloaden.
 
@@ -83,7 +83,6 @@ Voer de onderstaande stappen uit:
    >* De optie **Opslaan als PDF** wordt aanbevolen en ondersteund voor de bovenstaande functionaliteit.
    >* Als de knop Afdrukken van de browser wordt gebruikt, wordt slechts één pagina afgedrukt.
 
-
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Trendline weergeven gebruiken {#trendline-view-cam}
@@ -121,7 +120,6 @@ Voer de onderstaande stappen uit om rapporten van de optie Trendline weer te gev
    >Er worden twee grafieken weergegeven met de trend van de:
    >1. **Trend van bevindingen rapport**
    >1. **Aangepaste componenten en sjabloontrend**
-
    >
    >U kunt de grafische weergave toevoegen of wijzigen via de vervolgkeuzelijst, zoals in de onderstaande afbeelding wordt getoond:
    >![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
@@ -138,7 +136,6 @@ Onderzoek de volgende kaarten beschikbaar in de pagina van het Rapport van de An
 >* klik op elke kaart om het bijbehorende tabblad te openen
 >* bladwijzer alle rapportlusjes (met inbegrip van het filtreren) voor het delen of toekomstige herwinning
 >* gebruik het detailspictogram om de details van elk rapport te bekijken vinden
-
 
 #### Rapporteigenschappen {#report-properties}
 
@@ -183,7 +180,7 @@ U kunt de volgende informatie bekijken vanaf dit tabblad:
 * Beoordeling
 * Overwegingen bij migratie van inhoud
 
-   ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Planning en de Kaart van de Opstelling gebruiken {#planning-setup}
 

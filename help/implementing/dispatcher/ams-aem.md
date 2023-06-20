@@ -3,9 +3,9 @@ title: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 description: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1445'
 ht-degree: 14%
 
 ---
@@ -18,7 +18,7 @@ De Apache- en Dispatcher-configuratie in AEM as a Cloud Service lijkt sterk op d
 
 * In AEM as a Cloud Service kunnen sommige Apache-richtlijnen niet worden gebruikt (bijvoorbeeld `Listen` of `LogLevel`)
 * In AEM as a Cloud Service, slechts kunnen sommige stukken van de configuratie van de Verzender in omvat dossiers worden gezet en hun het noemen is belangrijk. Bijvoorbeeld, moeten de filterregels die u over verschillende gastheren wilt hergebruiken in een dossier worden gezet genoemd `filters/filters.any`. Zie de referentiepagina voor meer informatie.
-* In AEM as a Cloud Service is er extra validatie om filterregels die zijn geschreven met `/glob` om beveiligingsproblemen te voorkomen. Sinds `deny *` wordt gebruikt in plaats van `allow *` (wat niet kan worden gebruikt), zullen de klanten van het runnen van de Verzender plaatselijk profiteren en het doen van proef en fout, die de logboeken bekijken om precies te weten welke wegen de filters van de Verzender blokkeren opdat die kunnen worden toegevoegd.
+* In AEM as a Cloud Service is er extra validatie om filterregels die zijn geschreven met `/glob` om beveiligingsproblemen te voorkomen. Omdat `deny *` wordt gebruikt in plaats van `allow *` (wat niet kan worden gebruikt), profiteren klanten van het uitvoeren van de Dispatcher plaatselijk en het doen van proef en fout, die de logboeken bekijken om precies te weten welke wegen de filters van de Verzender blokkeren opdat die kunnen worden toegevoegd.
 
 ## Richtlijnen voor het migreren van de configuratie van de verzender van AMS naar AEM as a Cloud Service
 

@@ -4,9 +4,9 @@ description: Integreren met Adobe Analytics
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: e950f2399553c301c97c4fcac549a7ef6a234164
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '562'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Door Adobe Analytics en AEM as a Cloud Service te integreren, kunt u uw webpaginageactiviteit volgen. De integratie vereist:
 
-* met de aanraakinterface een analytische configuratie maken in AEM as a Cloud Service. Houd er rekening mee dat IMS-verificatie vereist is om Adobe Analytics te integreren met AEM as a Cloud Service.
+* met de aanraakinterface een analytische configuratie maken in AEM as a Cloud Service. IMS-verificatie is vereist om Adobe Analytics te integreren met AEM as a Cloud Service.
 * Adobe Analytics toevoegen en configureren als extensie in [Adobe starten](#analytics-launch). Ga voor meer informatie over het starten van Adobe naar [deze pagina](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
 Vergeleken met vorige versies van AEM, wordt de kadersteun niet verstrekt in de Configuratie van Analytics in AEM as a Cloud Service. In plaats daarvan wordt het nu gedaan door Adobe Launch, dat het feitelijk hulpmiddel is om een AEM plaats met Analytische mogelijkheden (bibliotheken JS) van instrumenten te voorzien. In Adobe Launch, wordt een bezit gecreeerd waar de uitbreiding van Adobe Analytics kan worden gevormd en de regels worden gecreeerd om gegevens naar Adobe Analytics te verzenden. Adobe Launch heeft in de plaats getreden van de door de sitecatalyst geleverde analytische taak.
@@ -47,7 +47,7 @@ De velden in het configuratievenster zijn als volgt:
 
 ### Adobe Analytics met IMS-verificatie {#configuration-parameters-ims}
 
-Er is een IMS-configuratie vereist om Adobe Analytics op de juiste manier te integreren met AEM as a Cloud Service. Deze configuratie moet worden gemaakt, dus raadpleeg deze [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) om te leren hoe te om de configuratie van Analytics IMS tot stand te brengen.
+Een IMS-configuratie is vereist om Adobe Analytics op de juiste manier te integreren met AEM as a Cloud Service. Deze configuratie moet worden gemaakt, dus raadpleeg deze [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) om te leren hoe te om de configuratie van Analytics IMS tot stand te brengen.
 
 ### Een configuratie toevoegen aan een site {#add-configuration}
 

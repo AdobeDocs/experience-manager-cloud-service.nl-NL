@@ -4,9 +4,9 @@ description: Begrijp hoe de bijbehorende inhoudseigenschap voor de Fragmenten va
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '240'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Als u de koppeling wilt maken, moet u eerst [media-elementen toevoegen aan een v
 
 1. Afhankelijk van het feit of er al verzamelingen zijn gekoppeld of niet, selecteert u een van de volgende opties:
 
-   * **Inhoud koppelen** - dit wordt de eerste bijbehorende verzameling
+   * **Inhoud koppelen** - de eerste bijbehorende verzameling
    * **Verzameling koppelen** - bijbehorende verzamelingen zijn al geconfigureerd
 
 1. Selecteer de gewenste verzameling.

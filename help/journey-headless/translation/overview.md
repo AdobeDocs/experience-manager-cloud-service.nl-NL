@@ -2,7 +2,7 @@
 title: AEM doorlopende vertaalreis
 description: Begin hier voor een begeleide reis door uw inhoud zonder kop te vertalen met AEM krachtige vertaalhulpmiddelen.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 1%

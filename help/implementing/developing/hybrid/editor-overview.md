@@ -2,9 +2,9 @@
 title: Overzicht SPA Editor
 description: In dit artikel wordt een uitgebreid overzicht gegeven van de SPA Editor en van de manier waarop dit werkt. In dit artikel zijn gedetailleerde workflows opgenomen van interactie tussen de SPA Editor in AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1630'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ De paginacomponent voor een SPA verstrekt niet de HTML elementen van zijn kindco
 
 ### Paginamodel beheren {#page-model-management}
 
-De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven `PageModel` bibliotheek. De SPA moet de bibliotheek Paginamodel gebruiken om te worden geïnitialiseerd en door de SPA Editor te worden ontworpen. De bibliotheek Paginamodel die indirect via de `aem-react-editable-components` npm. Het paginamodel is een tolk tussen AEM en de SPA en moet daarom altijd aanwezig zijn. Wanneer de pagina is gemaakt, voegt u een extra bibliotheek toe `cq.authoring.pagemodel.messaging` moet worden toegevoegd om de communicatie met de paginaeditor mogelijk te maken.
+De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven `PageModel` bibliotheek. De SPA moet de bibliotheek Paginamodel gebruiken, zodat deze kan worden geïnitialiseerd en geschreven door de SPA Editor. De bibliotheek Paginamodel die indirect via de `aem-react-editable-components` npm. Het paginamodel is een tolk tussen AEM en de SPA en moet daarom altijd aanwezig zijn. Wanneer de pagina is gemaakt, voegt u een extra bibliotheek toe `cq.authoring.pagemodel.messaging` moet worden toegevoegd om communicatie met de paginaeditor mogelijk te maken.
 
 Als de SPA paginacomponent overerft van de hoofdcomponent van de pagina, zijn er twee opties voor het maken van de component `cq.authoring.pagemodel.messaging` beschikbare categorie voor clientbibliotheek:
 
@@ -89,7 +89,6 @@ Met inachtneming van de belangrijkste elementen van de SPA Editor, ziet de auteu
 >* De SPA is altijd verantwoordelijk voor de weergave.
 >* De SPA Editor staat los van de SPA zelf.
 >* In productie (publiceren), wordt de SPA redacteur nooit geladen.
-
 
 ### Workflow voor paginabewerking op client-server {#client-server-page-editing-workflow}
 
@@ -160,7 +159,7 @@ Eerdere versies van deze frameworks werken mogelijk met de AEM SPA Editor SDK, m
 
 ### Aanvullende kaders {#additional-frameworks}
 
-Er kunnen aanvullende SPA worden geïmplementeerd om te werken met de AEM SPA Editor SDK. Zie de [SPA](blueprint.md) document voor de vereisten waaraan een kader moet voldoen om tot een kader-specifieke laag te leiden die uit modules, componenten, en de diensten wordt samengesteld om met de AEM SPA Redacteur te werken.
+Er kunnen aanvullende SPA worden geïmplementeerd om te werken met de AEM SPA Editor SDK. Zie de [SPA](blueprint.md) document voor de vereisten die een kader moet vervullen om tot een kader-specifieke laag te leiden die uit modules, componenten, en de diensten wordt samengesteld om met de Redacteur van de SPA van de AEM te werken.
 
 ### Meerdere kiezers gebruiken {#multiple-selectors}
 

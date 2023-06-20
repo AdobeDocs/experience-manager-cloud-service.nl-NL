@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Se
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.7.0
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: cc52dfac1e7495d6a792bc7525720695022db8eb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '429'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ De releasedatum voor Content Transfer Tool v2.0.12 is 19 juli 2022.
 * Gebruikers kunnen SSL-logboekregistratie nu inschakelen om problemen met SSL/TLS-verbindingen tijdens extracties te verhelpen.
 * Om te helpen bronconnectiviteitskwesties zuiveren, worden de subdomeinnamen nu gedrukt in logboeken wanneer de verbinding aan Azure ontbreekt.
 * Om problemen met foutopsporing tijdens de precopy te helpen oplossen, worden AzCopy-logboeken nu toegevoegd aan de extractielogboeken wanneer de precopy mislukt.
-* Als u wilt voorkomen dat de resultaten van Grootte van de schaalcontrole worden weergegeven, kunnen gebruikers de optie Grootte controleren pas opnieuw uitvoeren nadat de vorige grootte van de controle is voltooid.
+* Als u wilt voorkomen dat de resultaten van de groottecontrole worden weergegeven, kunnen gebruikers de optie Grootte controleren pas opnieuw uitvoeren nadat de vorige grootte van de controle is voltooid.
 
 ### Opgeloste problemen {#bug-fixes-ctt}
 

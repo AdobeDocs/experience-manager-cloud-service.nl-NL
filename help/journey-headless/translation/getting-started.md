@@ -2,9 +2,9 @@
 title: Ga aan de slag met AEM headless Translation
 description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1407'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ AEM inhoud, of het nu kranteloze of traditionele webpagina&#39;s zijn, wordt aan
 
 ## Hoe AEM inhoud zonder kop opslaat {#headless-content-in-aem}
 
-Voor de vertaalspecialist is het niet belangrijk om diepgaand te begrijpen hoe AEM inhoud zonder kop beheert. Het is echter nuttig bekend te zijn met de basisbeginselen en -terminologie, aangezien u later AEM vertaalhulpmiddelen gebruikt. Het belangrijkste is dat u uw eigen inhoud begrijpt en hoe deze is gestructureerd om deze effectief te kunnen vertalen.
+Voor de vertaalspecialist is het niet belangrijk om diepgaand te begrijpen hoe AEM inhoud zonder kop beheert. Het is echter nuttig bekend te zijn met de basisbeginselen en -terminologie, aangezien u later AEM vertaalhulpmiddelen gebruikt. Het belangrijkste is dat u uw eigen inhoud begrijpt en hoe deze is gestructureerd, zodat u deze effectief kunt vertalen.
 
 ### Inhoudsmodellen {#content-models}
 
@@ -153,7 +153,7 @@ De uiteindelijke structuur kan er ongeveer als volgt uitzien.
         |- ...
 ```
 
-Let op het specifieke pad van uw inhoud, want dit zal later nodig zijn om uw vertaling te configureren.
+Houd rekening met het specifieke pad van uw inhoud, omdat dit later nodig is om uw vertaling te configureren.
 
 >[!NOTE]
 >

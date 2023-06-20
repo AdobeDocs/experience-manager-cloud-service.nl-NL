@@ -4,9 +4,9 @@ description: Leer de beste praktijken die door Adobe engineering en raadplegende
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Houd er rekening mee dat een Live kopie kan worden gemaakt met [gewone pagina&#3
 De extra voordelen van het gebruiken van een blauwdrukconfiguratie zijn dat zij:
 
 * Laat de auteur het **Uitrol** op een blauwdruk om expliciet wijzigingen door te voeren in Actieve kopieën die van deze blauwdruk overerven.
-* Laat de auteur gebruiken **Site maken** om eenvoudig talen te selecteren en de structuur van de Live Copy te configureren.
+* Laat de auteur gebruiken **Site maken** om eenvoudig talen te selecteren en de structuur van Live Copy te configureren.
 * Definieer een standaardconfiguratie voor rollout voor actieve kopieën die een relatie hebben met de blauwdruk.
 
 Als er niet naar een blauwdrukconfiguratie wordt verwezen, kunnen rollouts alleen worden geïnitieerd vanuit de live kopieën zelf, waarbij inhoud van de bron wordt opgehaald.

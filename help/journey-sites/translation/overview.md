@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '931'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Begin hier voor een begeleide reis door uw AEM Sites-inhoud te vertalen met AEM 
 
 ## Inleiding {#introduction}
 
-AEM Sites is een krachtig hulpmiddel voor het maken en beheren van digitale ervaringen. Inhoudsauteurs kunnen eenvoudig digitale ervaringen maken met de siteeditor en de inhoud indelen met de siteconsole, terwijl ze de inhoud live kunnen zien zoals deze via AEM aan uw publiek via kanalen wordt geleverd.
+AEM Sites is een krachtig hulpmiddel voor het maken en beheren van digitale ervaringen. Inhoudsauteurs kunnen eenvoudig digitale ervaringen maken met de siteeditor en de inhoud indelen met de siteconsole, terwijl ze de inhoud live kunnen zien zoals deze via AEM aan uw publiek wordt geleverd.
 
 AEM biedt even krachtige hulpmiddelen om uw inhoud te vertalen die u toestaat om het aan uw publiek in andere regio&#39;s of scènes zo snel mogelijk te leveren. Deze documentatierit introduceert u aan de auteurshulpmiddelen zodat u begrijpt hoe de inhoud in AEM wordt gecreeerd en wordt beheerd en dan duikt in wat u moet weten om uw eigen vertaalproject te beheren.
 

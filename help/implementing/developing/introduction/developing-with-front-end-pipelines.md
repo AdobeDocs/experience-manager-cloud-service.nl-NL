@@ -2,9 +2,9 @@
 title: Sites ontwikkelen met behulp van de voorste pijplijn
 description: Met de front-end pijpleiding wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijk sneller worden. In dit document worden enkele specifieke aspecten beschreven van het constructieproces aan de voorzijde die moeten worden vermeld.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: a6b228023d7bd2a40e4db3a1d2c3900a5c24031c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Sites ontwikkelen met behulp van de voorste pijplijn {#developing-site-with-front-end-pipeline}
 
-[Met de front-end pijpleiding,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) meer onafhankelijkheid wordt gegeven aan de front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijk sneller verlopen. In dit document wordt beschreven hoe dit proces werkt en worden enkele overwegingen beschreven die u in acht moet nemen om het volledige potentieel van dit proces te benutten.
+[Met de front-end pijpleiding,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) meer onafhankelijkheid wordt gegeven aan de front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijk sneller verlopen. In dit document wordt beschreven hoe dit proces werkt, samen met een aantal overwegingen, zodat u optimaal kunt profiteren van dit proces.
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Vergelijkbaar met de [volledige-stapelomgeving,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) de front-end pijpleiding heeft een eigen omgeving. Ontwikkelaars hebben enige flexibiliteit in deze pijpleiding zolang het volgende front-end bouwcontract wordt waargenomen.
 
-De front-end pijpleiding vereist het front-end project Node.js om het te gebruiken `build` manuscriptrichtlijn om de bouwstijl te produceren die door de front-end pijpleiding zal worden opgesteld. Cloud Manager gebruikt de opdracht `npm run build` om het plaatsbare project aan te produceren `dist` map.
+De front-end pijpleiding vereist het front-end project Node.js om het te gebruiken `build` manuscriptrichtlijn om de bouwstijl te produceren die door de front-end pijpleiding wordt opgesteld. Cloud Manager gebruikt de opdracht `npm run build` om het plaatsbare project aan te produceren `dist` map.
 
 De inhoud van de `dist` Deze map is de map die uiteindelijk wordt geïmplementeerd om AEM as a Cloud Service te maken via de Cloud Manager-pijplijn.
 
@@ -68,7 +68,7 @@ De volgende stappen worden over het algemeen aanbevolen wanneer het nodig is om 
    1. Zoals gebruikelijk, om plaatselijk te ontwikkelen:
       1. De `npx aem-site-theme-builder proxy` wordt uitgevoerd binnen de front-end module begint een volmachtsserver die om de inhoud van een AEM milieu verzoekt, terwijl het vervangen van de CSS en JS dossiers van de front-end module met degenen van de lokale `dist` map.
       1. Het vormen van `AEM_URL` variabele in het verborgen `.env` kan het bestand bepalen vanuit welke AEM omgeving de lokale proxyserver de inhoud gebruikt.
-      1. De waarde van dit wijzigen `AEM_URL` kan daarom worden overgeschakeld tussen de productie- en ontwikkelomgevingen om de CSS en JS aan te passen aan beide omgevingen.
+      1. De waarde van dit wijzigen `AEM_URL` kunt u daarom schakelen tussen de productie- en ontwikkelomgevingen om de CSS en JS aan te passen aan beide omgevingen.
       1. Het moet met de ontwikkelomgeving werken die de nieuwe output teruggeeft en met het productiemilieu dat de oude output teruggeeft.
    1. Het front-end werk wordt voltooid wanneer de bijgewerkte front-end module voor beide milieu&#39;s werkt, en aan allebei wordt opgesteld.
 1. Het back-end team kan de productieomgeving dan bijwerken door de code in te voeren die de nieuwe HTML en/of JSON-uitvoer via de full-stack pijplijn rendert.

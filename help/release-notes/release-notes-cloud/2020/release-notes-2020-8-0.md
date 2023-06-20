@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2020.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1035'
 ht-degree: 1%
 
 ---
@@ -76,13 +76,13 @@ De releasedatum voor [!UICONTROL Cloud Manager] Versie 2020.8.0 is 6 augustus 20
 
 ### Wat is er nieuw? {#what-is-new-cloud-manager}
 
-* De Controle van de inhoud is een eigenschap die op de Pijpleidingen van de Productie van de Plaatsen van de Manager van de Wolk wordt toegelaten. De configuratie van de Pijpleiding van de Productie voor programma&#39;s met Plaatsen omvat nu een derde genoemd lusje **Controle van inhoud**. Wanneer een productiepijpleiding in werking wordt gesteld, zal een nieuwe stap van de Controle van de Inhoud in de pijpleiding na douane functionele tests worden omvat die de plaats tegen een aantal dimensies met inbegrip van prestaties, SEO (de Optimalisering van de Motor van het Onderzoek), toegankelijkheid, beste praktijken en PWA (Progressieve App van het Web) zullen evalueren.
+* De Controle van de inhoud is een eigenschap die op de Pijpleidingen van de Productie van de Plaatsen van de Manager van de Wolk wordt toegelaten. De configuratie van de Pijpleiding van de Productie voor programma&#39;s met Plaatsen omvat nu een derde genoemd lusje **Controle van inhoud**. Wanneer een productiepijpleiding in werking wordt gesteld, is een nieuwe stap van de Controle van de Inhoud inbegrepen in de pijpleiding na douane functioneel testen die de plaats tegen een aantal dimensies met inbegrip van prestaties, SEO (de Optimalisering van de Motor van het Onderzoek), toegankelijkheid, beste praktijken en PWA (Progressieve App van het Web) evalueert.
 
 
-   >[!NOTE]
-   >De naam van Content Audit is sindsdien gewijzigd in Experience Audit.
+  >[!NOTE]
+  >De naam van Content Audit is sindsdien gewijzigd in Experience Audit.
 
-   Zie [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie .
+  Zie [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie .
 
 * Nieuw gemaakte omgevingen in middelenprogramma&#39;s worden nu automatisch geconfigureerd met Smart Content Services.
 

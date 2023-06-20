@@ -2,9 +2,9 @@
 title: Een kanaal publiceren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u een kanaal in as a Cloud Service schermen publiceert.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 U kunt inhoud publiceren vanuit AEM Screens. Met de functie Publicatie beheren kunt u inhoud-updates van auteur leveren en publiceren naar speler. U kunt inhoud voor uw gehele AEM Screens-project publiceren of de publicatie ervan ongedaan maken, of alleen voor een van uw kanalen, locatie, speler of toepassing.
 
 >[!IMPORTANT]
->Wanneer u uw kanaal of kanalen in uw project hebt gemaakt, is het verplicht de kanalen te publiceren om het kanaal of de kanalen in de overzichtslijstweergave in de AEM Screens Services Provider weer te geven.
+>Nadat u uw kanaal of kanalen in uw project creeert, is het verplicht om de kanalen te publiceren om het kanaal/de kanalen in de mening van de inventarislijst in de Leverancier van de Diensten van AEM Screens te tonen.
 
 ## Doelstelling {#objective}
 
@@ -40,7 +40,7 @@ Voer de onderstaande stappen uit om het kanaal te publiceren:
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >Klikken **+ Inclusief onderliggende items** in de actiebalk en schakel alle opties uit om alle modules in uw project te publiceren en klik op Toevoegen om te publiceren. Door gebrek, zullen alle dozen worden gecontroleerd en u zult manueel uncheck de dozen moeten om alle modules in uw project te publiceren.
+   >Klikken **Inclusief onderliggende items** in de actiebalk en schakel alle opties uit om alle modules in uw project te publiceren en klik op Toevoegen om te publiceren. Door gebrek, worden alle dozen gecontroleerd en u moet manueel uncheck de dozen om alle modules in uw project te publiceren.
 
 1. Nadat u het kanaal hebt geselecteerd in het menu **Publicatie beheren** wizard, klik op **Publiceren** om het kanaal te publiceren.
 

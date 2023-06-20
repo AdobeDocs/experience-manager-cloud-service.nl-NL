@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6287'
+source-wordcount: '6274'
 ht-degree: 8%
 
 ---
@@ -292,7 +292,7 @@ De volgende tabel bevat een lijst met Dynamic Media Viewer-gebeurtenissen en de 
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -487,7 +487,7 @@ Zie ook [Handleiding voor analytische implementatie](https://experienceleague.ad
 
 ## Experience Platform-tags configureren voor integratie {#configuring-adobe-launch-for-the-integration}
 
-Nadat u de Markeringen van het Experience Platform vormt, zal het volgende opstelling voor de integratie zijn:
+Nadat u de Markeringen van het Experience Platform vormt, wordt het volgende opstelling voor de integratie:
 
 * Het creëren van een nieuw Bezit om al uw configuraties samen te houden.
 * De installatie en installatie van extensies. De client-side code van alle extensies die in de eigenschap zijn geïnstalleerd, wordt samen gecompileerd in een bibliotheek. Deze bibliotheek wordt later door de webpagina gebruikt.
@@ -748,7 +748,7 @@ De configuratie van de Experience Manager bestaat uit de volgende twee belangrij
    * **[!UICONTROL Title]** - Voer een beschrijvende accounttitel in.
    * **[!UICONTROL Authorization Server]** - Ga terug naar de pagina met integratiegegevens die u eerder hebt geopend. Selecteer **[!UICONTROL JWT]** tab. Kopieer de servernaam - zonder het pad - zoals hieronder gemarkeerd.
 
-(De naam van de voorbeeldserver is alleen ter uitleg)   Ga terug naar de pagina **[!UICONTROL Account]** en plak de naam in het desbetreffende veld.
+   Ga terug naar de pagina **[!UICONTROL Account]** en plak de naam in het desbetreffende veld.
 Bijvoorbeeld: `https://ims-na1.adobelogin.com/`
 (De naam van de voorbeeldserver is alleen ter uitleg)
 

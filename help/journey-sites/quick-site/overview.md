@@ -2,10 +2,10 @@
 title: Reis voor snel maken van site AEM
 description: Begin hier voor een begeleide reis door het makkelijk te gebruiken AEM Snelle hulpmiddel van de Aanmaak van de Plaats om de front-end ontwikkeling van uw AEM Plaats te stroomlijnen en snel uw plaats aan te passen zonder AEM achtergrondkennis.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 0%
+source-wordcount: '1035'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ Begin hier voor een begeleide reis door het makkelijk te gebruiken AEM Snelle hu
 
 ## Inleiding {#introduction}
 
-AEM Sites is een krachtig hulpmiddel voor het maken en beheren van digitale ervaringen. Inhoudsauteurs kunnen eenvoudig digitale ervaringen maken met de siteeditor en de inhoud indelen met de siteconsole, terwijl ze de inhoud live kunnen zien zoals deze via AEM aan uw publiek via kanalen wordt geleverd.
+AEM Sites is een krachtig hulpmiddel voor het maken en beheren van digitale ervaringen. Inhoudsauteurs kunnen eenvoudig digitale ervaringen maken met de siteeditor en de inhoud indelen met de siteconsole, terwijl ze de inhoud live kunnen zien zoals deze via AEM aan uw publiek wordt geleverd.
 
 Met het gereedschap AEM Snel site maken kunnen niet-ontwikkelaars snel een nieuwe site maken met behulp van sitesjablonen. Nadat u de site hebt gemaakt, kunt u met het gereedschap Snel site maken het thema en de opmaak van de AEM site (JavaScript, CSS en statische bronnen) snel aanpassen. Hierdoor kan de front-end ontwikkelaar, die geen kennis van AEM nodig heeft, onafhankelijk van en parallel met de makers van de inhoud werken. De AEM beheerder downloadt eenvoudig het plaatsthema en verstrekt het aan de front-end ontwikkelaar die het gebruikend hun favoriete hulpmiddelen aanpast en dan de veranderingen in de AEM codebewaarplaats vastlegt, die dan wordt opgesteld.
 
@@ -50,7 +50,16 @@ Deze reis beschrijft de vereisten, de stappen, en de benadering om de thema&#39;
 
 U zult vele onderwerpen in deze reis onderzoeken. De volgende artikelen bieden u basiskennis van het maken en aanpassen van AEM sites met het gereedschap Snel site maken en bieden een koppeling naar gedetailleerde technische documentatie.
 
-|#|Artikel|Beschrijving|Verantwoordelijke rol| |—|—|—|—| |0|AEM Snel site-ontwerppad|Dit document|AEM &amp; Cloud Manager-beheerders| |1|[Inzicht krijgen in Cloud Manager en de workflow voor snel maken van sites](cloud-manager.md)|Leer meer over Cloud Manager en hoe deze functie het nieuwe proces voor het maken van snelle sites samenbrengt.|AEM Beheerder| |2|[Site maken van sjabloon](create-site.md)|Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon.|AEM Beheerder| |3|[De pijplijn instellen](pipeline-setup.md)|Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.|Beheerder van wolkenbeheer| |4|[Toegang verlenen aan de front-end ontwikkelaar](grant-access.md)|Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toegang tot uw AEM plaats git bewaarplaats en pijpleiding.|Beheerder van wolkenbeheer| |5|[Toegangsgegevens van opslagplaats ophalen](retrieve-access.md)|Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot informatie in de git-opslagplaats.|Front-endontwikkelaar| |6|[Het sitethema aanpassen](customize-theme.md)|Leer hoe een site-thema is gemaakt, hoe u het kunt aanpassen en hoe u het kunt testen met live AEM-inhoud.|Front-endontwikkelaar| |7|[Uw aangepaste thema implementeren](deploy-theme.md)|Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.|Front-endontwikkelaar|
+| Aantal | Artikel | Beschrijving | Verantwoordelijke rol |
+|---|---|---|--|
+| 0 | Reis voor snel maken van site AEM | Dit document | Beheerders van AEM &amp; cloud Manager |
+| 1 | [Inzicht krijgen in Cloud Manager en de workflow voor snel maken van sites](cloud-manager.md) | Leer meer over Cloud Manager en hoe dit het nieuwe proces voor het maken van de Snelle site samenbrengt. | AEM-beheerder |
+| 2 | [Site maken van sjabloon](create-site.md) | Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon. | AEM-beheerder |
+| 3 | [De pijplijn instellen](pipeline-setup.md) | Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren. | Cloud Manager-beheerder |
+| 4 | [Toegang verlenen aan de front-end ontwikkelaar](grant-access.md) | Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toegang tot uw AEM plaats git bewaarplaats en pijpleiding. | Cloud Manager-beheerder |
+| 5 | [Toegangsgegevens van opslagplaats ophalen](retrieve-access.md) | Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot gegevensopslagruimte. | Front-endontwikkelaar |
+| 6 | [Het sitethema aanpassen](customize-theme.md) | Leer hoe u een site-thema maakt, aanpast en test met live AEM-inhoud. | Front-endontwikkelaar |
+| 7 | [Uw aangepaste thema implementeren](deploy-theme.md) | Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding. | Front-endontwikkelaar |
 
 ## Volgende functies {#what-is-next}
 

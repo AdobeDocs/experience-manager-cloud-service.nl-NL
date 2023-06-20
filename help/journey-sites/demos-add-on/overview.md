@@ -2,9 +2,9 @@
 title: AEM Referentie demos Add-on-reis
 description: Begin hier voor een geleide reis door hoe te om de AEM toe:voegen-aan van de Demo van de Verwijzing aan een zandbakmilieu met minimale AEM configuratie gemakkelijk toe te voegen en de krachtige eigenschappen van AEM met rijke voorbeelden te kunnen testen die op best-praktijken worden gebaseerd.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '852'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ Begin hier voor een geleide reis door hoe te om de AEM toe:voegen-aan van de Dem
 
 ## Inleiding {#introduction}
 
-AEM is een krachtig hulpmiddel voor het creëren en beheren van digitale ervaringen. Inhoudsauteurs kunnen eenvoudig digitale ervaringen maken met de siteeditor en de inhoud indelen met de siteconsole, terwijl ze de inhoud live kunnen zien zoals deze via AEM aan uw publiek via kanalen wordt geleverd.
+AEM is een krachtig hulpmiddel voor het creëren en beheren van digitale ervaringen. Inhoudsauteurs kunnen eenvoudig digitale ervaringen maken met de siteeditor en de inhoud indelen met de siteconsole, terwijl ze de inhoud live kunnen zien zoals deze via AEM aan uw publiek wordt geleverd.
 
 Zonder steekproefinhoud en configuratie, kan het moeilijk zijn om de krachtige eigenschappen van AEM voor nieuwe en ervaren cliënten te testen. Met de AEM Reference Demos Add-On kunt u eenvoudig sandboxomgevingen maken die vooraf zijn geladen met voorbeeldinhoud en die vooraf zijn geconfigureerd met de nieuwste richtlijnen voor best practices voor Adobe. Met de add-on kunt u eenvoudig AEM Sites- en AEM Screens-functies evalueren in context en met vrijwel geen configuratie.
 
@@ -34,7 +34,7 @@ Als u wilt weten hoe Adobe adviseert om plaatszaken met AEM op te lossen, zijn d
 
 ## Publiek {#audience}
 
-Deze reis beschrijft de vereisten, de stappen, en de benadering om een nieuw programma tot stand te brengen en een AEM zandbak met de AEM toe:voegen-aan van de Demo van de Verwijzing met inbegrip van Plaatsen en/of de inhoud van de de demo van Schermen op te zetten. Het belangrijkste publiek is **systeembeheerder** wie de rol krijgt toegewezen **Zakelijke eigenaar** in Cloud Manager. Dit is meestal dezelfde persoon die verantwoordelijk is voor milieubeheer. Nochtans zodra toe:voegen-aan van de Demos van de Verwijzing wordt geïnstalleerd, kan die beheerder andere gebruikers toegang tot het AEM milieu verlenen om de eigenschappen te testen die door toe:voegen-op zijn toegelaten.
+Deze reis beschrijft de vereisten, de stappen, en de benadering om een nieuw programma tot stand te brengen en een AEM zandbak met de AEM toe:voegen-aan van de Demo van de Verwijzing met inbegrip van Plaatsen en/of de inhoud van de de demo van Schermen op te zetten. Het belangrijkste publiek is **systeembeheerder** wie de rol krijgt toegewezen **Zakelijke eigenaar** in Cloud Manager. Dit is meestal dezelfde persoon die verantwoordelijk is voor milieubeheer. Nochtans, nadat toe:voegen-aan van de Demo van de Verwijzing wordt geïnstalleerd, kan die beheerder andere gebruikers toegang tot het AEM milieu verlenen om de eigenschappen te testen die door toe:voegen-op zijn toegelaten.
 
 ## De AEM Reference Demo Add-on-reis {#the-journey}
 

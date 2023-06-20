@@ -4,9 +4,9 @@ description: Leer hoe AEM sitethema's kunnen worden gebruikt om de stijl en het 
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: a77c31ebfce01834325bfdb806793dcd8ba169d4
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Sites die zijn gemaakt met AEM sitesjablonen maken het eenvoudig downloaden, aan
 
 >[!NOTE]
 >
->AEM sitethema&#39;s mogen niet worden verward met [AEM sitesjablonen.](site-templates.md) AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. Met AEM sitesjablonen kunt u de sitestructuur en de initiële inhoud definiëren en een AEM sitethema bevatten om het mogelijk te maken [snel websites maken.](create-site.md)
+>AEM sitethema&#39;s mogen niet worden verward met [AEM sitesjablonen.](site-templates.md) AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. Met AEM sitesjablonen definieert u de sitestructuur en de initiële inhoud. Sjablonen bevatten een AEM sitethema dat het mogelijk maakt [snel websites maken.](create-site.md)
 
 ## Sitethema&#39;s gebruiken {#using-themes}
 

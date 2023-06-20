@@ -2,9 +2,9 @@
 title: Ontwerpomgeving en -gereedschappen
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2154'
 ht-degree: 11%
 
 ---
@@ -60,21 +60,21 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
 * **Mobiel apparaat (bijvoorbeeld iPad)**
 
-   De componentbrowser beslaat volledig de pagina die wordt bewerkt.
+  De componentbrowser beslaat volledig de pagina die wordt bewerkt.
 
-   Als u een component aan de pagina wilt toevoegen, houdt u de vereiste component ingedrukt en verplaatst u deze naar rechts (de componentbrowser wordt dan gesloten om de pagina weer weer te geven), waar u de component kunt plaatsen.
+  Als u een component aan de pagina wilt toevoegen, houdt u de vereiste component ingedrukt en verplaatst u deze naar rechts (de componentbrowser wordt dan gesloten om de pagina weer weer te geven), waar u de component kunt plaatsen.
 
-   ![Componentbrowser op mobiel](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
+  ![Componentbrowser op mobiel](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **Bureaubladapparaat**
 
-   De componentbrowser wordt links in het venster geopend.
+  De componentbrowser wordt links in het venster geopend.
 
-   Als u een component aan de pagina wilt toevoegen, klikt u op de gewenste component en sleept u deze naar de gewenste locatie.
+  Als u een component aan de pagina wilt toevoegen, klikt u op de gewenste component en sleept u deze naar de gewenste locatie.
 
-   ![Componentbrowser op bureaublad](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+  ![Componentbrowser op bureaublad](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-   Componenten worden vertegenwoordigd door
+  Componenten worden vertegenwoordigd door
 
    * Componentnaam
    * Componentgroep (grijs)
@@ -82,16 +82,16 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
       * De standaardcomponentpictogrammen zijn monochroom.
       * Afkortingen zijn altijd de eerste twee tekens van de componentnaam.
 
-   Vanaf de bovenste werkbalk in het dialoogvenster **Componenten** browser die u kunt:
+  Vanaf de bovenste werkbalk in het dialoogvenster **Componenten** browser die u kunt:
 
    * Componenten filteren op naam.
    * Beperk de weergave tot een specifieke groep met behulp van de keuzelijst.
 
-   Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor **Inhoudsfragment**:
+  Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor **Inhoudsfragment**:
 
-   ![Informatie over Componentbrowser](/help/sites-cloud/authoring/assets/component-browser-information.png)
+  ![Informatie over Componentbrowser](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
-   Voor nog meer informatie over de componenten waarover u beschikt, ziet u de [Component Console](/help/sites-cloud/authoring/features/components-console.md).
+  Voor nog meer informatie over de componenten waarover u beschikt, ziet u de [Component Console](/help/sites-cloud/authoring/features/components-console.md).
 
 >[!NOTE]
 >
@@ -136,19 +136,19 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
 * **Mobiel apparaat**
 
-   De elementenbrowser beslaat volledig de pagina die wordt bewerkt.
+  De elementenbrowser beslaat volledig de pagina die wordt bewerkt.
 
-   Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de vereiste component kunt toevoegen.
+  Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de vereiste component kunt toevoegen.
 
-   ![Berichtenbrowser op mobiele apparaten](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
+  ![Berichtenbrowser op mobiele apparaten](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **Bureaubladapparaat**
 
-   De middelenbrowser wordt links in het venster geopend.
+  De middelenbrowser wordt links in het venster geopend.
 
-   Als u een element aan de pagina wilt toevoegen, klikt u op het gewenste element en sleept u het naar de gewenste component of locatie.
+  Als u een element aan de pagina wilt toevoegen, klikt u op het gewenste element en sleept u het naar de gewenste component of locatie.
 
-   ![Elementenbrowser op bureaublad](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
+  ![Elementenbrowser op bureaublad](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
@@ -182,13 +182,13 @@ Wanneer u op de component klikt, wordt de component in de pagina-editor gemarkee
 
 * Bijvoorbeeld een basispagina:
 
-   ![Inhoudsstructuur gemarkeerd](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
+  ![Inhoudsstructuur gemarkeerd](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
-   De componenten van een basispagina hebben de gebruikelijke opties.
+  De componenten van een basispagina hebben de gebruikelijke opties.
 
-   Als de component waarop u klikt in de structuur bewerkbaar is, wordt er een moersleutelpictogram rechts van de naam weergegeven. Als u op dit pictogram klikt, wordt het dialoogvenster Bewerken voor de component direct gestart.
+  Als de component waarop u klikt in de structuur bewerkbaar is, wordt er een moersleutelpictogram rechts van de naam weergegeven. Als u op dit pictogram klikt, wordt het dialoogvenster Bewerken voor de component direct gestart.
 
-   ![Knop Inhoudsstructuur bewerken](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+  ![Knop Inhoudsstructuur bewerken](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
 * Een pagina die deel uitmaakt van een [livecopy](/help/sites-cloud/administering/msm/overview.md), waarbij componenten van een andere pagina worden overgeërfd.
 
@@ -285,7 +285,6 @@ U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pi
 >* Er is een [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Layout**, enz.).
 >
 
-
 ## Padselectie {#path-selection}
 
 Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina of bron definieert of een afbeelding selecteert. Om een pad gemakkelijk te selecteren, [padvelden](#path-fields) aanbieden en [padbrowser](#path-browser) maakt een robuustere selectie mogelijk.
@@ -316,7 +315,7 @@ De padbrowser is geordend als de [kolomweergave](/help/sites-cloud/authoring/get
 * U kunt op elk gewenst moment het zoekveld boven in het dialoogvenster gebruiken. Klik op de knop **X** in het zoekveld om de zoekopdracht te wissen.
 * Als u uw zoekopdracht wilt beperken, kunt u de filteropties zichtbaar maken en de resultaten filteren op basis van een bepaald pad.
 
-   ![Filters, optie](/help/sites-cloud/authoring/assets/filters-option.png)
+  ![Filters, optie](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## Sneltoetsen {#keyboard-shortcuts}
 

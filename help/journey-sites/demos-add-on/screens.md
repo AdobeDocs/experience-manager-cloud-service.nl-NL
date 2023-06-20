@@ -2,9 +2,9 @@
 title: AEM Screens inschakelen voor uw demo-site
 description: Leer de stappen om de volledige as a Cloud Service AEM Screens-ervaring op uw demo-site in te schakelen.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: '2696'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ De laatste afbeelding op de ingangskanalen wordt ook gericht (d.w.z. dynamisch g
 
 ## Een demo-rasterproject implementeren {#deploy-project}
 
-Als u de demo-inhoud wilt gebruiken in de sandbox die u in het dialoogvenster [Programma maken](create-program.md) stap, moet een plaats worden gecreeerd gebaseerd op een malplaatje.
+De demo-inhoud gebruiken in de sandbox die u in het dialoogvenster [Programma maken](create-program.md) stap, moet een plaats worden gecreeerd gebaseerd op een malplaatje.
 
 Als u nog geen Web.Cafe demo-site hebt gemaakt, voert u gewoon dezelfde stappen uit als in het dialoogvenster [Demo-site maken](create-site.md) sectie. Als u de sjabloon selecteert, kiest u gewoon de **We.Cafe-websitesjabloon**.
 
@@ -207,7 +207,7 @@ Nu u uw gegevensbron hebt gemaakt als een Google Sheets-spreadsheet en toegang v
    }
    ```
 
-AEM Screens kan deze zelfde dienst gebruiken om tot de gesimuleerde weergegevens toegang te hebben. Dit zal in de volgende stap worden gevormd.
+AEM Screens kan deze zelfde dienst gebruiken om tot de gesimuleerde weergegevens toegang te hebben die in de volgende stap wordt gevormd.
 
 ### ContextHub configureren {#configure-contexthub}
 

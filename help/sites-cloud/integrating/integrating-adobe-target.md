@@ -4,9 +4,9 @@ description: Integreren met Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1046'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,6 @@ Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM as a Cloud
 > 1. Voer de huurder-id opnieuw in.
 > 2. Maak opnieuw verbinding met Doel.
 > 3. Sla de configuratie op.
-
 
 ### De doelconfiguratie bewerken {#edit-target-configuration}
 
@@ -157,4 +156,4 @@ Raadpleeg deze voor meer informatie over het maken en publiceren van [page](http
 
 >[!NOTE]
 >
->Oudere configuraties worden nog steeds ondersteund voor bestaande klanten (zonder de optie om nieuwe configuraties te bewerken of te maken). Oudere configuraties maken deel uit van inhoudspakketten die door klanten met VSTS worden geüpload.
+>Oudere configuraties worden nog steeds ondersteund voor bestaande klanten (zonder de optie om nieuwe configuraties te bewerken of te maken). Verouderde configuraties maken deel uit van inhoudspakketten die door klanten met VSTS worden geüpload.

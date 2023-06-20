@@ -4,9 +4,9 @@ description: Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt to
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De front-end pijpleiding is een mechanisme dat enkel de front-end code van uw we
 
 In plaats van de full-stack te implementeren, wordt alleen front-end code afgehandeld door deze pijplijn waardoor het proces sneller verloopt en ontwikkelaars aan de voorkant ook in staat zijn uw site eenvoudig en snel aan te passen zonder kennis van AEM.
 
-De plaatsen die op plaatsmalplaatjes worden gebaseerd kunnen hefboomwerking de front-end pijpleiding door gebrek. Dit document beschrijft hoe u uw bestaande plaatsen kunt aanpassen om uit de front-end pijpleiding voordeel te halen.
+De plaatsen die op plaatsmalplaatjes worden gebaseerd kunnen de front-end pijpleiding door gebrek gebruiken. Dit document beschrijft hoe u uw bestaande plaatsen kunt aanpassen om uit de front-end pijpleiding voordeel te halen.
 
 >[!TIP]
 >

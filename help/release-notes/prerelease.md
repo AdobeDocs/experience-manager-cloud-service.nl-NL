@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service Prerelease-kanaal
 description: Leer hoe u het pre-releasekanaal gebruikt om een voorvertoning van aanstaande functies te AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ AEM as a Cloud Service heeft twee soorten versies.
 
 Dit patroon verzekert ononderbroken versies zonder onderbreking van de dienst.
 
-Met het pre-releasekanaal kunt u functies voorvertonen die zijn gepland voor de aanstaande functieversie om de komende functionaliteit te evalueren en de mogelijke implementatie voor uw eigen projecten te plannen. Zo kunt u plannen voor de volgende release met functies.
+Met het prereleasekanaal kunt u functies voorvertonen die zijn gepland voor de aanstaande functieversie, zodat u de komende functionaliteit kunt evalueren en de mogelijke implementatie voor uw eigen projecten kunt plannen. Hiermee kunt u vooruit plannen voor de volgende release met functies.
 
 Als het bijvoorbeeld mei is en u bent geabonneerd op het pre-releasekanaal, kunt u functies evalueren in de aanstaande release van juni.
 
@@ -97,22 +97,22 @@ U kunt ook de API en CLI van Cloud Manager gebruiken om de omgevingsvariabelen b
 
 * Gebruiken [het eindpunt van de omgevingsvariabelen van de API voor cloudbeheer,](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables) instellen `AEM_RELEASE_CHANNEL` omgevingsvariabele voor de waarde `prerelease`.
 
-   ```text
-   PATCH /program/{programId}/environment/{environmentId}/variables
-   [
-           {
-                   "name" : "AEM_RELEASE_CHANNEL",
-                   "value" : "prerelease",
-                   "type" : "string"
-           }
-   ]
-   ```
+  ```text
+  PATCH /program/{programId}/environment/{environmentId}/variables
+  [
+          {
+                  "name" : "AEM_RELEASE_CHANNEL",
+                  "value" : "prerelease",
+                  "type" : "string"
+          }
+  ]
+  ```
 
 * [De CLI voor Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) kan ook worden gebruikt
 
-   ```shell
-   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease
-   ```
+  ```shell
+  aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
+  ```
 
 De variabele kan worden verwijderd of op een andere waarde worden ingesteld als u wilt dat de omgeving wordt hersteld naar het gedrag van het gewone (niet-pre-)releasekanaal.
 
@@ -157,7 +157,7 @@ JavaDocs wordt gepubliceerd aan Centrale Maven.
      </dependency>
    ```
 
-   Als u wilt overstappen op de prerelease SDK, wijzigt u eenvoudig de afhankelijkheid van `com.adobe.aem:aem-sdk-api` tot `com.adobe.aem:aem-prerelease-sdk-api` zoals hieronder vermeld :
+   Om in prerelease SDK te veranderen, verander eenvoudig de gebiedsdeel van `com.adobe.aem:aem-sdk-api` tot `com.adobe.aem:aem-prerelease-sdk-api` zoals hieronder vermeld :
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ De [AEM CS SDK-build Analysemodus plug-in v1.0 en hoger](https://experienceleagu
 
 ## Uw gebruikers trainen {#train-users}
 
-Nadat u de nieuwe functies in het prereleasekanaal hebt getest en hebt besloten deze te gebruiken voor uw projecten, moet u de gebruikers trainen.
+Nadat u de nieuwe functies in het prereleasekanaal hebt getest en u hebt besloten deze in uw projecten te gebruiken, moet u de gebruikers trainen.
 
 Adobe Experience League biedt veel bronnen om AEMaaCS te leren.
 

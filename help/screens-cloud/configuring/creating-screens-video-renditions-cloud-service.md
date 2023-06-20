@@ -2,9 +2,9 @@
 title: Video-uitvoeringen maken in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u video-uitvoeringen kunt maken in as a Cloud Service schermen.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Voer de onderstaande stappen uit om video-uitvoeringen te maken in rasters die z
    >Zorg ervoor dat u de coderingsnaam gebruikt die begint met &quot;screens-&quot;. Alleen deze video-uitvoeringen worden beschouwd als zijnde een afspeelvideo in as a Cloud Service schermen. Voer de bitsnelheid in die voor uw video&#39;s geschikt is (2500 kbps voor 720 px video en 5000 kbps voor 1080 px).
 
    >[!NOTE]
-   >U kunt meerdere video-uitvoeringen met verschillende breedte/hoogte/bitsnelheid toevoegen om uw video&#39;s te kunnen bewerken. Houd er rekening mee dat alle schermen- uitvoeringen worden gedownload door de apparaten Screens, ook al speelt het apparaat alleen video-uitvoering af.
+   >U kunt meerdere video-uitvoeringen met verschillende breedte/hoogte/bitsnelheid toevoegen om uw video&#39;s te kunnen bewerken. Alle schermen, vertoningen worden gedownload door de apparaten van de Schermen, alhoewel het apparaat slechts videovertoning speelt.
 
 1. Klikken op **Opslaan**.
 
@@ -66,4 +66,3 @@ Voer de onderstaande stappen uit om video-uitvoeringen te maken in rasters die z
    >[!NOTE]
    >* U kunt meerdere verwerkingsprofielen maken en deze toepassen op de corresponderende mappen, zodat de video&#39;s in die mappen de specifieke video-uitvoeringen krijgen.
    >* Wanneer u video&#39;s uploadt naar de map waar het verwerkingsprofiel is toegepast, worden video&#39;s verwerkt en geconfigureerde vertoningen gemaakt, die verder worden gebruikt door de schermapparaten om de video&#39;s af te spelen.
-

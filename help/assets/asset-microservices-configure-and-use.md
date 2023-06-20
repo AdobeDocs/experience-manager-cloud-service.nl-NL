@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2868'
 ht-degree: 1%
@@ -161,7 +161,7 @@ Pas verwerkingsprofielen toe op mappen met een van de volgende methoden:
 
 * Beheerders kunnen een definitie van het verwerkingsprofiel selecteren in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** en gebruik **[!UICONTROL Apply Profile to Folder(s)]** handeling. Er wordt een inhoudbrowser geopend waarmee u naar specifieke mappen kunt navigeren, deze kunt selecteren en de toepassing van het profiel kunt bevestigen.
 * Gebruikers kunnen een map in de gebruikersinterface Middelen selecteren en **[!UICONTROL Properties]** handeling om het scherm met mapeigenschappen te openen, klikt u op de knop **[!UICONTROL Asset Processing]** en in de [!UICONTROL Processing Profile] selecteert u het juiste verwerkingsprofiel voor die map. Klik op **[!UICONTROL Save & Close]**.
-   ![Een verwerkingsprofiel toepassen op een map op het tabblad Eigenschappen van element](assets/folder-properties-processing-profile.png)
+  ![Een verwerkingsprofiel toepassen op een map op het tabblad Eigenschappen van element](assets/folder-properties-processing-profile.png)
 
 * Gebruikers kunnen mappen of specifieke elementen in de gebruikersinterface Middelen selecteren om een verwerkingsprofiel toe te passen. Selecteer vervolgens ![pictogram voor opnieuw verwerken van elementen](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Reprocess Assets]** van de opties beschikbaar bovenaan.
 
@@ -287,7 +287,6 @@ Voer de stappen uit die in [een workflowmodel toepassen op een map](#apply-workf
 >* [Begrijp rekbaarheid en wanneer om het te gebruiken](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 >* [Aangepaste toepassingen maken](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
 >* [Ondersteunde MIME-typen voor verschillende gebruiksgevallen](/help/assets/file-format-support.md).
-
 
 <!-- TBD: 
 * How/where can admins check what's already configured and provisioned.

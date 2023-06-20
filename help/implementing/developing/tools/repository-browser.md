@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: De repository browser biedt een alleen-lezen weergave in de repository voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 43429562ea4292f38d3459e03185270ec950a58a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## Inleiding {#introduction}
 
-De browser van de repository is een ontwikkelaarsprogramma dat een alleen-lezen weergave in de repository biedt voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen. Het is ontworpen om het weergeven van de inhoudsstructuur te vergemakkelijken, zodat het eenvoudiger wordt om inhoud te zien of er fouten in op te sporen.
+De browser van de repository is een ontwikkelaarsprogramma dat een alleen-lezen weergave in de repository biedt voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen. Deze is ontworpen om het weergeven van de inhoudsstructuur te vergemakkelijken, zodat u de inhoud beter kunt zien of fouten erin kunt opsporen.
 
 Toegankelijk vanuit de ontwikkelaarsconsole, kan deze worden gebruikt om door de opslagplaats van een auteur te bladeren of instantie voor een geselecteerde omgeving te publiceren.
 
@@ -31,12 +31,12 @@ Toegankelijk vanuit de ontwikkelaarsconsole, kan deze worden gebruikt om door de
 
 Aan de volgende voorwaarden moet zijn voldaan om toegang te krijgen tot de Developer Console of de Repository-browser
 
-Voor toegang tot Developer Console:
+Ga als volgt te werk om Developer Console te openen:
 
 * Voor productieprogramma&#39;s moeten gebruikers beschikken over **Cloud Manager - Rol voor ontwikkelaars** in de Admin Console
 * Voor zandbakprogramma&#39;s, is het beschikbaar aan om het even welke gebruiker met een productprofiel die hen toegang tot AEM as a Cloud Service geeft.
 
-Voor toegang tot de Inhoudsbrowser:
+Toegang tot de browser voor gegevensopslagruimte:
 
 * Gebruikers moeten beschikken over de **Cloud Manager - Ontwikkelaar** Rol in de Admin Console om instanties van Auteur en van de Publicatie te bekijken.
 * Bovendien kunnen gebruikers met het AEM Gebruikersprofiel de browser van de gegevensopslagruimte met minimale leestoegang bekijken. de machtigingen van de gebruiker worden gerespecteerd bij het bladeren in de opslagplaats. Gebruikers met het productprofiel AEM Beheerders kunnen de browser van de opslagplaats bekijken met volledige leestoegang.
@@ -76,7 +76,7 @@ Wanneer u op een map klikt, wordt bovendien de URL dynamisch gewijzigd en wordt 
 
 Voor publiceren, door gebrek, zal Browser van de Bewaarplaats slechts openbare inhoud tonen, zo bepaalde omslagen zoals `/conf` of `/home` is niet zichtbaar.
 
-Om deze locaties zichtbaar te maken, moet u de onderstaande procedure volgen.
+Ga als volgt te werk om deze locaties zichtbaar te maken.
 
 1. Klik op de drie stippen naast de omgeving van uw keuze en selecteer **Toegang beheren**
 

@@ -4,9 +4,9 @@ seo-title: Developer Mode
 description: In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,6 @@ Deze hulp een ontwikkelaar om:
 >* Is niet beschikbaar op mobiele apparaten of kleine vensters op het bureaublad (vanwege ruimtebeperkingen).
 >  * Dit gebeurt wanneer de breedte minder dan 1024 px is.
 >* Is alleen beschikbaar voor gebruikers die lid zijn van de `administrators` groep.
-
 
 ## Ontwerpmodus openen {#opening-developer-mode}
 
@@ -73,7 +72,7 @@ Elk componentitem kan de volgende opties hebben:
    * Alle componentscripts die worden gebruikt om de component te renderen.
    * Het inhoudspad van de opslagplaats voor deze specifieke component.
 
-      ![Details weergeven](assets/developer-mode-view-details.png)
+     ![Details weergeven](assets/developer-mode-view-details.png)
 
 * **Script bewerken:** Een koppeling waarmee het componentscript in CRXDE Lite wordt geopend.
 

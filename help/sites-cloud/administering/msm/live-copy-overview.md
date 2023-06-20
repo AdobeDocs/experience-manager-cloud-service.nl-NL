@@ -4,9 +4,9 @@ description: Leer meer over de basisbeginselen van de overzichtsconsole van Live
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Een rollout-configuratie wordt bijvoorbeeld gedefinieerd als `targetActivate`. D
 De **Overzicht van live kopiëren** kan ook worden gebruikt voor het uitvoeren van handelingen op Live Copy:
 
 1. Open de **Overzicht van live kopiëren**.
-1. Selecteer de gewenste blauwdruk of pagina Live kopie en de werkbalk wordt bijgewerkt met de beschikbare acties. De [handelingen](overview.md#terms-used) afhankelijk van de vraag of u een [blauwdruk](#actions-for-a-blueprint-page) of [Live kopie](#actions-for-a-live-copy-page) pagina.
+1. Selecteer de gewenste blauwdruk of pagina Live kopie en de werkbalk wordt bijgewerkt om de beschikbare acties weer te geven. De [handelingen](overview.md#terms-used) afhankelijk van de vraag of u een [blauwdruk](#actions-for-a-blueprint-page) of [Live kopie](#actions-for-a-live-copy-page) pagina.
 
 ### Handelingen voor een vervagingspagina {#actions-for-a-blueprint-page}
 

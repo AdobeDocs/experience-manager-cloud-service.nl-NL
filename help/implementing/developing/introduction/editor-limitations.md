@@ -2,9 +2,9 @@
 title: Editor-beperkingen
 description: De editor in de interface met aanraakbediening maakt gebruik van overlays voor interactie met inhoud die zich in een iframe bevindt. Deze interactie leidt tot sommige beperkingen in zowel gebruik van de redacteur als ook voor ontwikkelaars.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Vaste achtergrondafbeeldingen worden mogelijk niet als vast weergegeven tijdens 
 
 100% hoogte wordt niet ondersteund op het tekstelement van een pagina.
 
-* U kunt de hoofdtekst van een volledig scherm opnieuw instellen door het hoofdelement als volgt uit te rekken:
+* U kunt doorwerken om een hoofdtekst voor een volledig scherm te implementeren door het tekstelement als volgt uit te rekken:
 
 ```xml
 body {

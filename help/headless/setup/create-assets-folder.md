@@ -2,9 +2,9 @@
 title: Een middelenmap maken - Instellingen zonder kop
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,14 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
 1. Tik of klik op **Maken -> Map**.
 1. Een **Titel** en **Naam** voor uw map.
    * De **Titel** moeten beschrijvend zijn.
-   * De **Naam** wordt de knooppuntnaam in de repository.
-      * Het wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
+   * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
+      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
       * Deze kan zo nodig worden aangepast.
 
    ![Map maken](../assets/assets-folder-create.png)
 1. Selecteer de map die u zojuist hebt gemaakt door de muis boven het vinkje te houden en erop te tikken. Selecteer vervolgens **Eigenschappen** van de werkbalk (of gebruik de `p` [sneltoets.](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))
 1. In de **Eigenschappen** venster, selecteert u de **Cloud Services** tab.
 1. Voor de **Cloud Configuration** Selecteer [configuratie die u eerder hebt gemaakt.](create-configuration.md)
-
    ![Map met middelen configureren](../assets/assets-folder-configure.png)
 1. Tik of klik op **Opslaan en sluiten**.
 1. Tik of klik op **OK** in het bevestigingsvenster.

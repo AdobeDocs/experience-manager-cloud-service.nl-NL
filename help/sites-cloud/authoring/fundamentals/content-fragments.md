@@ -2,10 +2,10 @@
 title: Contentfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Content Fragments kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 3%
+source-wordcount: '1226'
+ht-degree: 1%
 
 ---
 
@@ -73,7 +73,6 @@ Met de inhoudsfragmenten kunt u:
    >* [Responsieve lay-out](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [Paginacontent bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
-
 ### Het element of de variatie selecteren {#selecting-the-element-or-variation}
 
 De fragmentinstellingen openen **Configuratie** om het fragment te configureren voor gebruik op de huidige pagina. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
@@ -92,9 +91,9 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
 * **Element**
    * Afhankelijk van het gebruikte model is een selectie beschikbaar.
 
-   >[!NOTE]
-   >
-   >Welke elementen beschikbaar zijn, is afhankelijk van het gebruikte model.
+  >[!NOTE]
+  >
+  >Welke elementen beschikbaar zijn, is afhankelijk van het gebruikte model.
 
 * **Variatie**
    * De standaard **master** is altijd beschikbaar.
@@ -147,10 +146,9 @@ Voor tussenliggende inhoud kunt u:
 >  Hierdoor kan het lijken alsof de relatieve positionering is gewijzigd, aangezien de tussenliggende alinea&#39;s geen contextafhankelijke relatie hebben met de (fragment)alinea&#39;s naast de alinea&#39;s.
 >* Tenzij de twee alinea&#39;s met elkaar in strijd zijn; in dat geval wordt de tussenliggende inhoud niet weergegeven (hoewel deze inhoud intern nog steeds aanwezig is).
 
-
 ### Gekoppelde inhoud gebruiken {#using-associated-content}
 
-Als u [content hebt gekoppeld](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) aan het [contentfragment](/help/sites-cloud/administering/content-fragments/content-fragments.md), zijn deze assets beschikbaar in het zijpaneel (nadat u het fragment op de contentpagina hebt geplaatst). Gekoppelde inhoud is in feite een speciale inhoudsbron voor [tussenliggende inhoud](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Als u [gekoppelde inhoud](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) met de [inhoudsfragment](/help/sites-cloud/administering/content-fragments/content-fragments.md) deze elementen zijn beschikbaar in het zijpaneel (nadat u het fragment op de inhoudspagina hebt geplaatst). Gekoppelde inhoud is in feite een speciale inhoudsbron voor [tussenliggende inhoud](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >

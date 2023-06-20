@@ -4,9 +4,9 @@ description: Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructu
 feature: Administering
 role: Admin
 exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructuur en de init
 
 ## Overzicht {#overview}
 
-Om AEM beheerders in staat te stellen snel sites te maken die zijn aangepast aan de bedrijfsbehoeften, AEM ondersteunt het maken van nieuwe sites met behulp van sitesjablonen en sitethema&#39;s.
+Om AEM beheerders toe te staan om plaatsen snel tot stand te brengen die aan bedrijfsbehoeften worden aangepast, AEM steunt het creëren van nieuwe plaatsen door plaatsmalplaatjes en plaatsthema&#39;s te gebruiken.
 
 * An **Sjabloon AEM** bevat over het algemeen inhoud en structuur van de basissite en informatie over de sitestijl, het thema van de site genoemd, zodat de nieuwe site snel kan worden gestart. Sjablonen zijn krachtig omdat ze herbruikbaar en aanpasbaar zijn. En aangezien u veelvoudige malplaatjes beschikbaar in uw AEM installatie kunt hebben, hebt u de flexibiliteit om verschillende plaatsen tot stand te brengen om aan diverse bedrijfsbehoeften te voldoen.
 * An **AEM** is een pakket met de CSS-, JavaScript- en statische bronnen die de opmaak van uw AEM site definiëren en die voldoet aan de structuur van een AEM-sitethema.

@@ -2,9 +2,9 @@
 title: Ervaringen maken met producten
 description: Leer hoe u productervaringen kunt opbouwen.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Sleep nu de **Fragment met commerciële inhoud** op de sjabloon en open het conf
 
 Dit dialoogvenster wordt opnieuw gebruikt in het dialoogvenster Inhoud van kerncomponent fragment. Meer informatie vindt u onder extra bronnen. Het enige verschil is **Element koppelen** eigenschap die het id-veld (product-SKU of categorie-UID) in het model Inhoudsfragment configureert.
 
-Bekijk nu een productpagina met een bijbehorend inhoudsfragment en/of ervaringsfragment. Wanneer AEM een pagina rendert, wordt gezocht naar elke plaatsaanduiding op basis van het type (Content or Experience Fragment), de id en de plaatsaanduidingsnaam voor Experience Fragments. AEM gebruikt een URL-oplosser om de id op te halen (SKU voor producten, UID voor categorieën). Als een Experience- of Content-fragment wordt geretourneerd, wordt het gerenderd naar de plaatsaanduidingslocatie, anders wordt de plaatsaanduiding genegeerd.
+Bekijk nu een productpagina met een bijbehorend inhoudsfragment en/of ervaringsfragment. Wanneer AEM een pagina rendert, wordt gezocht naar elke plaatsaanduiding op basis van het type (Content or Experience Fragment), de id en de plaatsaanduidingsnaam voor Experience Fragments. AEM gebruikt een URL-oplosser om de id op te halen (SKU voor producten, UID voor categorieën). Als een Experience of Content Fragment wordt geretourneerd, wordt het gerenderd naar de plaatsaanduidingslocatie, anders wordt de plaatsaanduiding genegeerd.
 
 ![peperresultaat](assets/pem-result.png)
 

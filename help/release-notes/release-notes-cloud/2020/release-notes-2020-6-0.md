@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release van Adobe Experience Manager as a Cloud Service voor 2020.6.0
 description: Opmerkingen bij de release van Experience Manager voor 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1917'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Release 2.9.0 van de [Kernonderdelen](https://experienceleague.adobe.com/docs/ex
 
 ## Nieuwe functies in stichtingen in AEM as a Cloud Service {#foundations}
 
-AEM project bouwt tijden zal verbeteren door alle verwijzingen in pom.xml van het AEM project aan de verre bewaarplaats te verwijderen `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+AEM project bouwt tijden zal verbeteren door alle verwijzingen in het AEM project pom.xml aan de verre bewaarplaats te verwijderen `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
 De AEM as a Cloud Service SDK API Jar, die voorheen op die locatie werd gehost, bevindt zich nu in Maven Central, de standaardopslagplaats van Maven.
 
@@ -60,11 +60,11 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 * Een gebruiker in de *Zakelijke eigenaar* rol in Cloud Manager kan nu een Sandbox-programma verwijderen van de bestemmingspagina (via de knop voor snelle actie op de programmakaart) of van binnen het programma.
 
-   Zie [Een Sandbox-programma verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer informatie .
+  Zie [Een Sandbox-programma verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer informatie .
 
 * Een gebruiker van het Sandbox-programma in *Zakelijke eigenaar* of *Implementatiebeheer* rol in Cloud Manager kan nu hun productie- en werkgebiedomgeving verwijderen die is ingesteld via de interface van Cloud Manager. De verwijderoptie is nu beschikbaar via de milieucaart op de **Overzicht van programma&#39;s** en de **Omgevingen** pagina. Als u de verwijderoptie in Productie of Werkgebied selecteert, wordt ook de andere optie uit de set verwijderd.
 
-   Zie [Een Sandbox-programma verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer informatie .
+  Zie [Een Sandbox-programma verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer informatie .
 
 * Op de landingspagina worden de aanvoermarkeringen aangebracht om de gebruiker te informeren en te informeren over de basisnavigatie.
 
@@ -72,15 +72,15 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 * A **LEREN** Deze pagina is nu beschikbaar in Cloud Manager en is toegankelijk via de bovenste navigatie. Deze pagina bevat bronnen die gebruikers helpen bij het leren van de meestgebruikte workflows die relevant zijn voor hun rollen die zijn toegewezen in Cloud Manager.
 
-* Sandbox-programma&#39;s worden nu geïdentificeerd door middel van een **Sandbox** badge die wordt weergegeven op de programmakaart op de landingspagina en naast de naam van het programma in de **Programmaoverzicht** pagina.
+* Sandbox-programma&#39;s worden nu geïdentificeerd door middel van een **Sandbox** badge die wordt weergegeven op de programmakaart op de landingspagina en naast de naam van het programma in het dialoogvenster **Programmaoverzicht** pagina.
 
 * Een gebruiker in de rol SysAdmin heeft nu met één klik toegang tot de plaats in Admin Console van waar de gebruikersrollen of de toestemmingen aan de Manager van de Wolk kunnen worden beheerd. A **Toegang beheren** Deze knop is nu beschikbaar op de landingspagina naast de **Programma toevoegen** knop.
 
-   Zie [SysAdmin-taken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer informatie .
+  Zie [SysAdmin-taken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) voor meer informatie .
 
 * Een gebruiker met de rol SysAdmin heeft nu met één klik rechtstreeks vanuit Cloud Manager toegang tot de instantie van de auteur.
 
-   Zie [Toegang tot instantie Auteur beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) voor meer informatie .
+  Zie [Toegang tot instantie Auteur beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) voor meer informatie .
 
 * Het logbestand Build bevat nu een lijst met ontdekte artefacten, waaronder overgeslagen inhoudspakketten.
 
@@ -98,7 +98,7 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 ### Bekende problemen {#known-issues-cm}
 
-* De omgevingen in een Sandbox-programma worden gehiberd wanneer gedurende een bepaalde periode geen activiteit wordt gedetecteerd. Deze status wordt niet waargenomen in Cloud Manager. De status kan echter worden waargenomen via de Developer Console. Dit probleem wordt in een komende release opgelost.
+* De omgevingen in een Sandbox-programma zijn gehiberd wanneer gedurende een bepaalde periode geen activiteit wordt gedetecteerd. Deze status wordt niet waargenomen in Cloud Manager. De status kan echter worden waargenomen via de Developer Console. Dit probleem wordt in een komende release opgelost.
 
 * De koppeling naar de ontwikkelaarsconsole rechtstreeks vanuit Cloud Manager geeft de optie voor het dehiberneren/hberneren van de omgeving van een Sandbox-programma niet weer. Voeg het patroon toe om dit probleem te verhelpen, eenmaal in de Developer Console `#release-cm-p1234-e5678` aan het einde van de URL, waarbij *1234* is de programma-id en *5678* is de milieu-id. Dit probleem wordt in een komende release opgelost.
 
@@ -176,7 +176,7 @@ De release biedt de volgende andere verbeteringen:
 * Mogelijkheid om elementen opnieuw te verwerken met profielen voor middelenverwerking, zodat gebruikers volledige controle hebben over het proces (volledige verwerking van bedrijfsmiddelen uitvoeren, gewoon een specifiek verwerkingsprofiel toepassen en beslissen of de naverwerkingsworkflow moet worden uitgevoerd).
 * Zoekopdrachten retourneren nu sneller resultaten wanneer de onderliggende clusterinstantie achter de schermen opnieuw is gestart (de eerste zoekopdracht kan in een dergelijk geval langer duren).
 * Sorteren op &#39;Naam&#39; wanneer elementen in de lijstweergave in de interface Middelen en in de zoekresultaten worden weergegeven. Zie [zoekelementen](/help/assets/search-assets.md#sort).
-* Sorteren op &#39;Gemaakt&#39; (Datum) wanneer elementen worden weergegeven in de lijstweergave in de interface Middelen en in de zoekresultaten. Zie [zoekelementen](/help/assets/search-assets.md#sort).
+* Sorteer op &#39;Gemaakt&#39; (Datum) wanneer u elementen weergeeft in de lijstweergave in de interface Middelen en in de zoekresultaten. Zie [zoekelementen](/help/assets/search-assets.md#sort).
 * Ondersteuning voor het converteren van EPS-bestanden naar afbeeldingen met behulp van de asset microservices.
 
 ### Opgeloste problemen {#assets-bug-fixes}

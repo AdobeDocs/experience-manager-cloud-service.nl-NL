@@ -1,15 +1,15 @@
 ---
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 # Richtlijnen voor het bijdragen aan de documentatie van Adobe Experience Manager
 
 ## Documentatiefilosofie
 
-We weten dat Adobe Experience Manager-gebruikers werken in zeer concurrerende omgevingen en streven naar het creëren van digitale ervaringen die hen onderscheiden van hun concurrenten. Daarom is het van essentieel belang dat wanneer Adobe geavanceerde nieuwe hulpmiddelen in AEM levert, deze hulpmiddelen met nauwkeurige en duidelijke documentatie worden aangevuld om de klant toe te staan om hun AEM investering onmiddellijk te hefboomwerking en het rendement te maximaliseren.
+We weten dat Adobe Experience Manager-gebruikers werken in zeer concurrerende omgevingen en streven naar het creëren van digitale ervaringen die hen onderscheiden van hun concurrenten. Daarom is het van essentieel belang dat wanneer Adobe geavanceerde nieuwe hulpmiddelen in AEM levert, deze hulpmiddelen met nauwkeurige en duidelijke documentatie worden aangevuld om de klant toe te staan om hun AEM investering onmiddellijk te gebruiken en ROI te maximaliseren.
 
 Het doel van de AEM is zo snel mogelijk documentatie in de handen van AEM gebruikers te plaatsen. Daarom geven wij prioriteit aan nauwkeurige, bruikbare documentatie en streven wij ernaar deze voortdurend bij te werken en te verbeteren.
 
@@ -35,11 +35,11 @@ De uitzonderingen op deze regel zijn op de versienota&#39;s van toepassing waar 
 
 ### De bijdragen van de documentatie zijn niet voor het beantwoorden van technische vragen.
 
-Alle ideeën die u eventueel nodig hebt om AEM documentatie te verbeteren, zijn welkom als bijdragen. Opmerkingen, problemen en pull-aanvragen zijn echter alleen bedoeld voor *bijdragen*. Ze zijn niet bedoeld om u te helpen uw vragen te beantwoorden over het gebruik van AEM, het implementeren van uw AEM-project of het oplossen van technische problemen.
+Alle ideeën die u eventueel nodig hebt om AEM documentatie te verbeteren, zijn welkom als bijdragen. Opmerkingen, problemen en intrekkingsverzoeken zijn echter bedoeld voor *bijdragen* alleen. Ze zijn niet bedoeld om u te helpen uw vragen te beantwoorden over het gebruik van AEM, het implementeren van uw AEM-project of het oplossen van technische problemen.
 
-Vragen over het gebruik van AEM of technische fouten die u mogelijk hebt gemaakt, moeten via het normale supportproces worden gerapporteerd via het [portal voor ondersteuning van Experience Managers](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) of worden besproken in de [community voor Experience Managers](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+Eventuele vragen over het gebruik van AEM of technische fouten moeten via het normale supportproces via het [Experience Manager Support-portal](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) of in de [Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
-***AEM documentatiebijdragen zijn geen vervanging voor*** Klantenondersteuning en dergelijke bijdragen die antwoorden op supportgerelateerde vragen zoeken, zullen worden afgewezen.
+***De bijdragen van AEM documentatie zijn geen vervanging voor de klantenondersteuning van Adobe*** en dergelijke bijdragen die antwoorden op ondersteunende vragen willen, zullen worden afgewezen.
 
 ### Bijdragen moeten duidelijk verwijzen naar betrokken documentatiepagina&#39;s.
 
@@ -65,7 +65,7 @@ Alle lezers van AEM documentatie zijn wereldwijd en kunnen niet verwachten dat z
 
 #### Handleiding Microsoft volgen
 
-[De Microsoft Manual of ](https://docs.microsoft.com/en-us/style-guide/welcome/) Style is een vrij beschikbare documentatiestijlgids die zich concentreert op softwaredocumentatie en AEM documentatie volgt deze gids waar mogelijk.
+[De Microsoft-stijlhandleiding](https://docs.microsoft.com/en-us/style-guide/welcome/) is een vrij beschikbare gids van de documentatiestijl die zich op softwaredocumentatie en AEM documentatie concentreert waar mogelijk deze gids volgt.
 
 ### Opmaak
 
@@ -87,6 +87,6 @@ Probeer zo veel mogelijk directe verwijzingen naar een specifieke versie in de d
 
 ### Gebruik van Dag, AEM, CQ, CRX
 
-Voor het eerst in een artikel moet altijd naar het product worden verwezen met de volledige naam **Adobe Experience Manager** en kan daarna worden verwezen naar **AEM**.
+Het product moet altijd worden aangeduid met de volledige naam **Adobe Experience Manager** voor het eerst in een artikel en kan daarna worden verwezen naar **AEM**.
 
 De software van de dag, de Dag, CQ, en CRX zouden niet moeten worden gebruikt behalve waar onvermijdbaar zoals in klassennamen of verwijzend naar de geschiedenis van AEM.

@@ -2,9 +2,9 @@
 title: Hoe u met uw headless toepassing kunt gaan werken
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u een toepassing zonder kop kunt implementeren door uw lokale code in Git te nemen en deze naar Cloud Manager Git voor de CI/CD-pijplijn te verplaatsen.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Volg de onderstaande aanbevolen procedures om uw AEM toepassing zonder koppen kl
    * Gebruik waar mogelijk doorlopende query&#39;s.
    * Verstrek CDN TTL boven 600 seconden zodat CDN hen in het voorgeheugen onderbrengt.
    * AEM kan het effect van een modelwijziging op bestaande query&#39;s berekenen.
-* Splits JSON-bestanden/GraphQL-query&#39;s tussen lage en hoge wijzigingssnelheid voor inhoud om het clientverkeer naar CDN te beperken en een hogere TTL toe te wijzen. Dit minimaliseert CDN die JSON met de oorsprongserver opnieuw bevestigt.
+* Splits JSON-bestanden/GraphQL-query&#39;s tussen lage en hoge wijzigingssnelheid voor inhoud, zodat u het clientverkeer naar CDN kunt verminderen en een hogere TTL kunt toewijzen. Dit minimaliseert CDN die JSON met de oorsprongserver opnieuw bevestigt.
 * Als u de inhoud van de CDN actief ongeldig wilt maken, gebruikt u Zacht wissen. Hierdoor kan de CDN de inhoud opnieuw downloaden zonder dat een cache-fout optreedt.
 
 ## Verbeter de tijd om inhoud zonder kop te downloaden {#improve-download-time}
@@ -101,7 +101,7 @@ Volg deze beste praktijken als algemene benadering van het zuiveren:
 
 ### Een probleem aanmelden met ondersteuning {#logging-a-bug-with-support}
 
-Volg de onderstaande stappen om een bug efficiënt te kunnen aanmelden bij Support voor het geval u verdere hulp nodig hebt:
+Om een insect met Steun efficiënt te registreren voor het geval u verdere hulp nodig hebt, doe het volgende:
 
 * Maak, indien nodig, screenshots van het probleem
 * Een manier documenteren om het probleem te reproduceren

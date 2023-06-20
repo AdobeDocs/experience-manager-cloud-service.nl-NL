@@ -2,9 +2,9 @@
 title: Paginasjablonen maken
 description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4595'
 ht-degree: 10%
 
 ---
@@ -91,7 +91,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 >
 >Voer nooit informatie in die u wilt internationaliseren in een sjabloon. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Voor sjabloonelementen zoals kop- en voetteksten die moeten worden gelokaliseerd, kunt u de opdracht [lokalisatiefuncties van de kerncomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>Voor sjabloonelementen zoals kop- en voetteksten die moeten worden gelokaliseerd, gebruikt u de opdracht [lokalisatiefuncties van de kerncomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### Sjabloonmap maken - Beheer {#creating-a-template-folder-admin}
 
@@ -202,7 +202,7 @@ Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaal
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-   De volgorde van de paden is irrelevant, alle paden worden gescand en sjablonen worden opgehaald.
+   De volgorde van de paden is irrelevant. Alle paden worden gescand en sjablonen worden opgehaald.
 
    >[!NOTE]
    >
@@ -450,7 +450,7 @@ Onder de **Eigenschappen** kunt u kiezen welke componenten beschikbaar zijn voor
 Op de **Toegestane componenten** -tab, definieert u welke componenten beschikbaar zijn voor de lay-outcontainer.
 
 * De componenten worden gegroepeerd op hun componentgroepen, die kunnen worden uitgevouwen en samengevouwen.
-* U kunt een hele groep selecteren door de naam van de groep te controleren en u kunt de selectie van alle groepen opheffen door de selectie uit te schakelen.
+* U kunt een hele groep selecteren door de naam van de groep te controleren. U kunt de selectie van alle groepen ongedaan maken door de selectie uit te schakelen.
 * Een min vertegenwoordigt minstens één maar niet alle punten in een groep worden geselecteerd.
 * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
 * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.
@@ -513,18 +513,18 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 
 * Ontgrendelde componenten die beschikbaar zijn voor bewerking, worden gemarkeerd. Als deze optie is geselecteerd, hebben ze een blauwe rand:
 
-   ![Modus Eerste inhoud](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
+  ![Modus Eerste inhoud](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
 
 * Ontgrendelde componenten beschikken over een werkbalk waarmee u de inhoud kunt bewerken en configureren:
 
-   ![Ontgrendelde component](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
+  ![Ontgrendelde component](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
 * Als een containercomponent is ontgrendeld (in de modus **Structuur**), kunt u nieuwe componenten aan de container toevoegen (in de modus **Initiële content**). Componenten die in de modus **Initiële content** zijn toegevoegd, kunnen worden verplaatst naar of verwijderd uit de resulterende pagina&#39;s.
 
-   U kunt een component toevoegen met behulp van het gebied **Componenten hierheen slepen** of de optie **Nieuwe component invoegen** op de werkbalk van de betreffende container.
+  U kunt een component toevoegen met behulp van het gebied **Componenten hierheen slepen** of de optie **Nieuwe component invoegen** op de werkbalk van de betreffende container.
 
-   ![Component toevoegen](/help/sites-cloud/authoring/assets/templates-add-component.png)
-   ![Component toevoegen](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
+  ![Component toevoegen](/help/sites-cloud/authoring/assets/templates-add-component.png)
+  ![Component toevoegen](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
 
 * Als de initiële inhoud van de sjabloon wordt bijgewerkt nadat pagina&#39;s zijn gemaakt op basis van de sjabloon, worden deze pagina&#39;s niet beïnvloed door wijzigingen in de oorspronkelijke inhoud van de sjabloon.
 
@@ -566,24 +566,24 @@ U kunt een inhoudsbeleid toepassen op de sjabloon of de resulterende pagina&#39;
 
 * U kunt een bestaand beleid voor de pagina selecteren in het menu **Beleid selecteren** vervolgkeuzelijst.
 
-   ![Beleidskiezer](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+  ![Beleidskiezer](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld.
+  Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld.
 
-   ![Beleidsknop toevoegen](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+  ![Beleidsknop toevoegen](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
+  Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
 
-   ![De knop Beleid kopiëren](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+  ![De knop Beleid kopiëren](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 * Definieer een titel voor het beleid in het dialoogvenster **Beleidstitel** veld. Een beleid moet een titel hebben zodat het gemakkelijk kan worden geselecteerd in het **Beleid selecteren** vervolgkeuzelijst.
 
-   ![Beleidstitel](/help/sites-cloud/authoring/assets/templates-policy-title.png)
+  ![Beleidstitel](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * Een beschrijving van het beleid is optioneel in het gedeelte **Beleidsomschrijving** veld.
 * In de **Andere sjablonen gebruiken ook het geselecteerde beleid** kunt u gemakkelijk zien welke andere sjablonen het beleid gebruiken dat is geselecteerd in het dialoogvenster **Beleid selecteren** vervolgkeuzelijst.
 
-   ![Beleidsgebruik](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+  ![Beleidsgebruik](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### Pagina-eigenschappen {#page-properties}
 
@@ -593,17 +593,17 @@ Met pagina-eigenschappen kunt u de vereiste clientbibliotheken definiëren met d
 
 * Geef de clientbibliotheken op die u wilt toepassen op pagina&#39;s die met deze sjabloon zijn gemaakt. De naam van een bibliotheek invoeren in het tekstveld in het dialoogvenster **Client Side Libraries** sectie.
 
-   ![Bibliotheken op de client](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+  ![Bibliotheken op de client](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * Als er meerdere bibliotheken nodig zijn, klikt u op de knop Toevoegen om een extra tekstveld voor de naam van de bibliotheek toe te voegen.
 
-   ![Knop Toevoegen](/help/sites-cloud/authoring/assets/templates-add-button.png)
+  ![Knop Toevoegen](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-   Voeg zoveel tekstvelden toe als nodig zijn voor uw clientbibliotheken.
+  Voeg zoveel tekstvelden toe als nodig zijn voor uw clientbibliotheken.
 
 * Definieer zo nodig de relatieve positie van de bibliotheken door de velden te slepen met de sleepgreep.
 
-   ![Sleepgreep](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
+  ![Sleepgreep](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
 
 >[!NOTE]
 >
@@ -633,13 +633,16 @@ Houd bij het maken van sjablonen rekening met:
 
       * Deze worden direct toegepast op de resulterende pagina&#39;s.
       * Bezoekers moeten de wijzigingen nog steeds kunnen zien door de gewijzigde sjabloon te publiceren.
+
    * Wijzigingen in inhoudsbeleid en ontwerpconfiguraties:
 
       * Deze zijn direct van toepassing op de resulterende pagina&#39;s.
       * De wijzigingen moeten worden gepubliceerd zodat bezoekers de wijzigingen kunnen zien.
+
    * Wijzigingen in de oorspronkelijke inhoud:
 
       * Deze zijn alleen van toepassing op pagina&#39;s die na de wijzigingen in de sjabloon worden gemaakt.
+
    * Wijzigingen in de layout zijn afhankelijk van of de gewijzigde component deel uitmaakt van:
 
       * Alleen structuur - onmiddellijk toegepast

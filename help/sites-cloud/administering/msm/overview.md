@@ -4,9 +4,9 @@ description: Maak kennis met de introductie van het hergebruik van inhoud met AE
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2710'
+source-wordcount: '2705'
 ht-degree: 0%
 
 ---
@@ -40,74 +40,73 @@ Er zijn vele gebruiksgevallen voor MSM en Levende Exemplaren. Enkele scenario&#3
 
 * **Multinationals - wereldwijd tot lokaal bedrijf**
 
-   Een typisch gebruiksgeval dat MSM steunt is inhoud in verscheidene multinationale plaatsen van het zelfde-Taal opnieuw te gebruiken. Hierdoor kan de kerninhoud opnieuw worden gebruikt en kunnen nationale variaties worden toegestaan.
+  Een typisch gebruiksgeval dat MSM steunt is inhoud in verscheidene multinationale plaatsen van het zelfde-Taal opnieuw te gebruiken. Hierdoor kan de kerninhoud opnieuw worden gebruikt en kunnen nationale variaties worden toegestaan.
 
-   Bijvoorbeeld de Engelse sectie van het [WKND-lesbestand](/help/implementing/developing/introduction/develop-wknd-tutorial.md) is opgericht voor klanten in de VS. De meeste inhoud op deze site kan ook worden gebruikt voor andere WKND-sites die geschikt zijn voor Engelstalige klanten van verschillende landen en culturen. De kerninhoud blijft voor alle sites hetzelfde, terwijl regionale aanpassingen kunnen worden aangebracht.
+  Bijvoorbeeld de Engelse sectie van het [WKND-lesbestand](/help/implementing/developing/introduction/develop-wknd-tutorial.md) is opgericht voor klanten in de VS. De meeste inhoud op deze site kan ook worden gebruikt voor andere WKND-sites die geschikt zijn voor Engelstalige klanten van verschillende landen en culturen. De kerninhoud blijft voor alle sites hetzelfde, terwijl regionale aanpassingen kunnen worden aangebracht.
 
-   De volgende structuur kan voor plaatsen voor de Verenigde Staten en Canada worden gebruikt. Let op: `language-masters` node behoudt de master kopie van niet alleen Engelstalige maar ook andere taalinhoud. Deze inhoud kan worden gebruikt als basis voor aanvullende regionale taalinhoud naast het Engels.
+  De volgende structuur kan voor plaatsen voor de Verenigde Staten en Canada worden gebruikt. Let op: `language-masters` node behoudt de master kopie van niet alleen Engelstalige maar ook andere taalinhoud. Deze inhoud kan worden gebruikt als basis voor aanvullende regionale taalinhoud naast het Engels.
 
-   ```xml
-   /content
-       |- wknd
-           |- language-masters
-               |- en
-               |- es
-               |- fr
-           |- us
-               |- en
-               |- es
-           |- ca
-               |- en
-               |- fr
-   ```
+  ```xml
+  /content
+      |- wknd
+          |- language-masters
+              |- en
+              |- es
+              |- fr
+          |- us
+              |- en
+              |- es
+          |- ca
+              |- en
+              |- fr
+  ```
 
-   >[!NOTE]
-   >
-   >MSM vertaalt de inhoud niet. Het wordt gebruikt om de vereiste structuur tot stand te brengen en de inhoud op te stellen.
-   >
-   >
-   >Zie [Inhoud vertalen voor meertalige sites](/help/sites-cloud/administering/translation/overview.md) voor een dergelijk voorbeeld.
+  >[!NOTE]
+  >
+  >MSM vertaalt de inhoud niet. Het wordt gebruikt om de vereiste structuur tot stand te brengen en de inhoud op te stellen.
+  >
+  >
+  >Zie [Inhoud vertalen voor meertalige sites](/help/sites-cloud/administering/translation/overview.md) voor een dergelijk voorbeeld.
 
 * **Nationaal — Hoofdkantoor van regionale afdelingen**
 
-   Een onderneming met een netwerk van dealers zou ook aparte websites willen voor haar afzonderlijke dealers, die elk een variant zijn van de hoofdsite die door het hoofdkantoor wordt aangeboden. Dit kan het geval zijn voor één enkele onderneming met meerdere regionale kantoren, of voor een nationaal franchisesysteem dat bestaat uit een centrale franchisegever en meerdere lokale franchisehouders.
+  Een onderneming met een netwerk van dealers zou ook aparte websites willen voor haar afzonderlijke dealers, die elk een variant zijn van de hoofdsite die door het hoofdkantoor wordt aangeboden. Dit kan het geval zijn voor één enkele onderneming met meerdere regionale kantoren, of voor een nationaal franchisesysteem dat bestaat uit een centrale franchisegever en meerdere lokale franchisehouders.
 
-   Het hoofdkantoor kan de kerninformatie verstrekken, terwijl de regionale entiteiten lokale informatie kunnen toevoegen, zoals contactgegevens, openingstijden en evenementen.
+  Het hoofdkantoor kan de kerninformatie verstrekken, terwijl de regionale entiteiten lokale informatie kunnen toevoegen, zoals contactgegevens, openingstijden en evenementen.
 
-   ```xml
-   /content
-       |- head-office-berlin
-       |- branch-hamburg
-       |- branch-stuttgart
-       |- branch-munich
-       |- branch-frankfurt
-   ```
+  ```xml
+  /content
+      |- head-office-berlin
+      |- branch-hamburg
+      |- branch-stuttgart
+      |- branch-munich
+      |- branch-frankfurt
+  ```
 
 * **Meerdere versies**
 
-   MSM kan versies van een specifieke subtak tot stand brengen. Een subsite voor ondersteuning kan bijvoorbeeld details bevatten over de verschillende versies van een specifiek product, waarbij de basisinformatie constant blijft en alleen de bijgewerkte functies moeten worden gewijzigd:
+  MSM kan versies van een specifieke subtak tot stand brengen. Een subsite voor ondersteuning kan bijvoorbeeld details bevatten over de verschillende versies van een specifiek product, waarbij de basisinformatie constant blijft en alleen de bijgewerkte functies moeten worden gewijzigd:
 
-   ```xml
-   /content
-       |- game-support
-           |- polybius
-               |- v5.0
-               |- v4.0
-               |- v3.0
-               |- v2.0
-               |- v1.0
-   ```
+  ```xml
+  /content
+      |- game-support
+          |- polybius
+              |- v5.0
+              |- v4.0
+              |- v3.0
+              |- v2.0
+              |- v1.0
+  ```
 
-   >[!TIP]
-   >
-   >In een dergelijk geval gaat het om de vraag of er een eenvoudige kopie moet worden gemaakt of dat er gebruik moet worden gemaakt van Actieve kopieën, wat een evenwicht is tussen:
-   >
-   >* Hoeveel van de kerninhoud moet worden bijgewerkt in meerdere versies.
-   >
-   >Tegen:
-   >
-   >* Hoeveel van de afzonderlijke kopieën moeten worden aangepast.
-
+  >[!TIP]
+  >
+  >In een dergelijk geval gaat het om de vraag of er een eenvoudige kopie moet worden gemaakt of dat er gebruik moet worden gemaakt van Actieve kopieën, wat een evenwicht is tussen:
+  >
+  >* Hoeveel van de kerninhoud moet worden bijgewerkt in meerdere versies.
+  >
+  >Tegen:
+  >
+  >* Hoeveel van de afzonderlijke kopieën moeten worden aangepast.
 
 ## MSM van UI {#msm-from-the-ui}
 
@@ -149,7 +148,7 @@ MSM is direct toegankelijk in UI gebruikend diverse opties van de aangewezen con
 
 ### Gebruikte termen {#terms-used}
 
-Als inleiding, verstrekt de volgende lijst een overzicht van de belangrijkste termen die met MSM worden gebruikt. Deze zullen in de volgende secties en pagina&#39;s in meer detail worden behandeld.
+Als inleiding, verstrekt de volgende lijst een overzicht van de belangrijkste termen die met MSM worden gebruikt. Deze worden in de volgende secties en pagina&#39;s nader beschreven.
 
 | Term | Definitie | Meer details |
 |---|---|---|
@@ -232,7 +231,7 @@ Wanneer u een live kopie maakt in AEM, kunt u de vertakking Live kopie zien en d
 Wanneer u (of een proces) een [nieuwe pagina in een bestaande live kopie](#live-copy-with-non-live-copy-pages) Deze nieuwe pagina kan ook worden ingesteld als een live kopie van een andere blauwdruk. Dit wordt een geneste live kopie genoemd. In geneste live kopieën wordt het gedrag van de tweede of binnenste live kopie op de volgende manieren beïnvloed door de eerste of buitenste live kopie:
 
 * Een uitgebreide rollout die wordt geactiveerd voor Live Copy op hoofdniveau, kan worden doorgevoerd in de geneste Live Copy.
-* Eventuele koppelingen tussen de bronnen worden in de Live kopieën herschreven.
+* Alle koppelingen tussen de bronnen worden herschreven in Live kopieën.
 
 Koppelingen die bijvoorbeeld van de tweede naar de eerste blauwdruk wijzen, worden herschreven als koppelingen die van de geneste/tweede live kopie naar de eerste live kopie wijzen.
 
@@ -240,7 +239,7 @@ Koppelingen die bijvoorbeeld van de tweede naar de eerste blauwdruk wijzen, word
 
 >[!NOTE]
 >
->Als u een pagina verplaatst of de naam van een pagina wijzigt in de vertakking Live kopie, wordt deze behandeld als een geneste Live kopie zodat AEM de relaties kan bijhouden.
+>Als u een pagina verplaatst of de naam ervan wijzigt in de vertakking Live kopie, wordt deze behandeld als een geneste Live kopie zodat AEM de relaties kan bijhouden.
 
 #### Gestapelde actieve kopieën {#stacked-live-copies}
 
@@ -269,12 +268,12 @@ Een rollout is de centrale actie MSM die Levende Kopieën met hun bronnen synchr
 * Wanneer u een pagina met een blauwdruk maakt, kunt u de opdracht **[Uitrol](creating-live-copies.md#rolling-out-a-blueprint)** om wijzigingen door te voeren in Live Copy.
    * De **Uitrol** is beschikbaar op een pagina van de blauwdruk die door een blauwdrukconfiguratie van verwijzingen wordt voorzien.
 
-   ![Uitrol](../assets/live-copy-rollout.png)
+  ![Uitrol](../assets/live-copy-rollout.png)
 
 * Wanneer u een pagina voor Live kopie maakt, kunt u de opdracht **[Synchroniseren](creating-live-copies.md#synchronizing-a-live-copy)** gebruiken om wijzigingen van de bron naar Live kopie over te brengen.
    * De **Synchroniseren** Deze opdracht is altijd beschikbaar op de pagina Live kopiëren, ongeacht of de bron-/blauwdrukpagina is ingesloten door een blauwdrukconfiguratie.
 
-   ![Synchroniseren](../assets/live-copy-synchronize.png)
+  ![Synchroniseren](../assets/live-copy-synchronize.png)
 
 ### Uitrolconfiguraties {#rollout-configurations}
 

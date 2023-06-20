@@ -2,7 +2,7 @@
 title: OSGi-instellingen configureren voor de voorbeeldreeks
 description: Leer hoe u de AEM voorvertoningsservice configureert voor een voorvertoning van inhoud voordat u live gaat.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Zie voor meer informatie [deze sectie](/help/implementing/deploying/configuring-
 
 ## Foutopsporingsvoorbeeld met de ontwikkelaarsconsole {#debugging-preview-using-the-developer-console}
 
-Voer de volgende stappen uit om fouten op te sporen in de voorvertoningslaag met de Developer Console:
+Voer de volgende stappen uit, zodat u foutopsporing kunt uitvoeren op de voorvertoningslaag met de Developer Console:
 
 * In de [Ontwerpconsole](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)Selecteer een van de **— Alle voorvertoningen —** of een productieomgeving die **prev** in zijn naam
 * De relevante informatie voor de voorbeeldinstantie genereren Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over hoe u de URL&#39;s voor uw omgevingen kunt ophalen.

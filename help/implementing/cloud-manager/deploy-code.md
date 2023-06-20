@@ -2,9 +2,9 @@
 title: Uw code implementeren
 description: Leer hoe u uw code implementeert met gebruik van Cloud Manager-pijpleidingen in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 63e38485e2f15c6947c7fba1848d47eda4cc900e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ De **Werkgebied testen** Deze stappen worden in de fase beschreven.
 * **Experience Audit** - Deze stap in de pijplijn wordt altijd uitgevoerd en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen.
    * De pagina&#39;s die worden gevormd worden voorgelegd aan de dienst en geëvalueerd.
    * De resultaten zijn informatief en tonen de scores en de verandering tussen de huidige en vorige scores.
-   * Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing zal worden geïntroduceerd.
+   * Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing wordt geïntroduceerd.
    * Raadpleeg het document [De resultaten van Experience Audit begrijpen](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie .
 
 ![Werkgebiedtests](assets/stage-testing.png)
@@ -149,7 +149,7 @@ Beperkingen:
 
 ### Identificatie van een uitvoering van de uitvoering
 
-Om te bepalen of een uitvoering een uitvoering is die opnieuw wordt uitgevoerd, kan het triggerveld worden gecontroleerd. De waarde ervan zal *RE_EXECUTE*.
+Om te bepalen of een uitvoering een uitvoering is die opnieuw wordt uitgevoerd, kan het triggerveld worden gecontroleerd. De waarde is *RE_EXECUTE*.
 
 ### Nieuwe uitvoering activeren
 
@@ -193,4 +193,4 @@ Om een heruitvoering te activeren, moet een verzoek van de PUT aan de Verbinding
 
 De syntaxis van de HAL-koppeling _href_  bovenstaande waarde is niet bedoeld als referentiepunt. De werkelijke waarde moet altijd worden gelezen van de HAL-koppeling en niet worden gegenereerd.
 
-Een *PUT* verzoek aan dit eindpunt zal resulteren in een *201* de nieuwe executie zal , indien succesvol en als responsinstantie , worden voorgesteld . Dit is vergelijkbaar met het starten van een normale uitvoering via de API.
+Een *PUT* verzoek aan dit eindpunt resulteert in een *201* reactie indien succesvol, en de responsinstantie is de representatie van de nieuwe uitvoering. Dit is vergelijkbaar met het starten van een normale uitvoering via de API.

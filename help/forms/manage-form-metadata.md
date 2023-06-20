@@ -4,9 +4,9 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1640'
 ht-degree: 0%
 
 ---
@@ -178,9 +178,9 @@ Elementen hebben bestaande eigenschapswaarden, die kunnen worden weergegeven in 
 
    * Klik op de knop **[!UICONTROL Properties]** ![Eigenschappen](assets/Smock_Info_18_N.svg) uit Snelle handelingen.
 
-      >[!NOTE]
-      >
-      >Snelle acties zijn de actiepunten die over een duimnagel worden getoond wanneer de muiswijzer.
+     >[!NOTE]
+     >
+     >Snelle acties zijn de actiepunten die over een duimnagel worden getoond wanneer de muiswijzer.
 
    * Selecteer het formulier en klik op de knop **[!UICONTROL Properties]** ![Eigenschappen](assets/Smock_Info_18_N.svg) in de werkbalk.
    * Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Klik nu op de knop ![Eigenschappen](assets/Smock_Info_18_N.svg) oogpictogram rechtsboven en klik vervolgens op Eigenschappen in de lijst eronder.
@@ -234,7 +234,6 @@ Voor Adaptive Forms is een extra functionaliteit beschikbaar waarmee de gebruike
 >* Nadat een nieuwe afbeelding is geüpload of gegenereerd, wordt de miniatuur vervangen door deze afbeelding en kan deze niet opnieuw worden ingesteld op de vorige afbeelding.
 >
 
-
 ## Aangepaste metagegevens toevoegen {#add-custom-metadata}
 
 Behalve de in het vak vermelde metagegevens, [!DNL AEM Forms] ondersteunt nieuwe aangepaste metagegevens.
@@ -284,12 +283,12 @@ Er is een hulpmiddel (de Editor voor het metagegevensschema) beschikbaar waarmee
 
 1. Klik op een component die u net hebt gesleept. Vul op het tabblad Instellingen dat in het rechterdeelvenster wordt geopend de gegevens in voor de volgende velden:
 
-   1. Geef een veldlabel op dat wordt gebruikt als een weergavenaam boven het veld dat in het schema wordt geplaatst (bijvoorbeeld: Afdeling)
-   1. Onder Kaart aan bezitsgebied, kunt u een vooraf ingevulde waarde zien **&quot;./jcr:content/metadata/default&#39;**. Wijzig de ‘**default**&quot; aan een gewenste eigenschapsnaam, die wordt gebruikt om de eigenschap op te slaan in crx-opslagplaats (bijvoorbeeld: &quot;./jcr:content/metadata/department&#39;)
+   1. Geef een veldlabel op dat als een weergavenaam boven het veld in het schema moet worden gebruikt (bijvoorbeeld: Afdeling)
+   1. Onder Kaart aan bezitsgebied, kunt u een vooraf ingevulde waarde zien **&quot;./jcr:content/metadata/default&#39;**. Wijzig de &#39;**default**&#39; aan een gewenste bezitsnaam, die wordt gebruikt om het bezit in crx bewaarplaats op te slaan (bijvoorbeeld: &quot;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >Wijzig het voorvoegsel ‘ niet./jcr:content/metadata/’ as it define the path where the property is stored.
+      >Wijzig het voorvoegsel &#39; niet./jcr:content/metadata/&#39; zoals deze het pad definieert waar de eigenschap wordt opgeslagen.
       >
       >De eigenschapsnaam moet ook uniek zijn om te voorkomen dat waarden worden geschreven voor twee of meer eigenschappen op dezelfde locatie in de opslagplaats. Het wordt daarom aanbevolen de waarde &#39;default&#39; te wijzigen.
 

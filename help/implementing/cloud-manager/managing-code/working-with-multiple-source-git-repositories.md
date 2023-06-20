@@ -2,9 +2,9 @@
 title: Meerdere opslagplaatsen gebruiken
 description: Leer hoe u meerdere git-opslagruimten beheert wanneer u werkt met Cloud Manager.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: 5ea5c3f03642ae2f7471165d4d0ee33c2cc31b6b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Hoewel een dergelijke automatisering voor één enkele klant-eigenlijke git bewa
 
 Hier volgt een voorbeeld `pom.xml` bestand voor twee in eigendom van de klant zijnde it-opslagruimten.
 
-* Het eerste project wordt in de genoemde directory geplaatst `project-a`.
+* Het eerste project wordt in de genoemde folder gezet `project-a`.
 * Het tweede project wordt in de genoemde folder gezet `project-b`.
 
 ```xml

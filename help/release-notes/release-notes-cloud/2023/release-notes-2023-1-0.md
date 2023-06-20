@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2023.1.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.1.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Bekijk de video Overzicht van de release van januari 2023 voor een overzicht van
 
 * In middelenrapporten is nu de mogelijkheid opgenomen voor beheerders om [downloadrapporten voor bestanden genereren](/help/assets/asset-reports.md) van de as a Cloud Service Experience Manager Assets-implementatie. Deze gegevens stellen Admins verder in staat om inzichten af te leiden van belangrijke succesmaatstaven om de acceptatie van Activa binnen uw onderneming en door klanten te meten.
 
-   ![PDF-uitvoering voor andere indelingen](/help/release-notes/assets/choose_report.png)
+  ![PDF-uitvoering voor andere indelingen](/help/release-notes/assets/choose_report.png)
 
 * Experience Manager Assets nu [ondersteunt SAS Token](/help/assets/add-assets.md#asset-bulk-ingestor) naast de toegangstoets voor verificatie bij de verbinding met de Azure Blob Storage-gegevensbron voor het opnemen van elementen met het Bulk Import-gereedschap.
 
@@ -82,17 +82,17 @@ Bekijk de video Overzicht van de release van januari 2023 voor een overzicht van
 
 * [Snelle ontwikkelomgevingen](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE&#39;s stellen ontwikkelaars in staat om problemen snel op te lossen en nieuwe functies op AEM as a Cloud Service te implementeren.
 
-   Snelle ontwikkelomgevingen zijn een nieuw type cloudomgeving dat is ontworpen als een snelle, consistente en uitbreidbare manier om die code te valideren en die lokaal werkt, en werken ook zoals wordt verwacht in de cloud. Gebruik de Hulpmiddelen van de Lijn van het Bevel, snel &quot;synchroniseer&quot;inhoudspakketten, bundels, inhoudsdossiers, configuratie OSGI, of berichtconfiguratie aan RDE. Zie dit in actie in de video hieronder:
+  Snelle ontwikkelomgevingen zijn een nieuw type cloudomgeving dat is ontworpen als een snelle, consistente en uitbreidbare manier om die code te valideren en die lokaal werkt, en werken ook zoals wordt verwacht in de cloud. Gebruik de Hulpmiddelen van de Lijn van het Bevel, snel &quot;synchroniseer&quot;inhoudspakketten, bundels, inhoudsdossiers, configuratie OSGI, of berichtconfiguratie aan RDE. Zie dit in actie in de video hieronder:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   Nadat code in de RDE met succes is gevalideerd, wordt het aangeraden om te worden geïmplementeerd in een Cloud Dev Environment om de kwaliteitspoorten van Cloud Manager uit te oefenen voordat u de code via productiepijplijn naar stadium- en productieomgevingen implementeert.
+  Nadat code in de RDE met succes is gevalideerd, wordt het aangeraden om te worden geïmplementeerd in een Cloud Dev Environment om de kwaliteitspoorten van Cloud Manager uit te oefenen voordat u de code via productiepijplijn naar stadium- en productieomgevingen implementeert.
 
-   Elk programma omvat één RDE en naar keuze, kunnen meer worden vergunning gegeven.
+  Elk programma omvat één RDE en naar keuze, kunnen meer worden vergunning gegeven.
 
-   >[!NOTE]
-   >
-   >De RDE&#39;s zullen in de komende weken geleidelijk worden ingevoerd; u kunt een e-mail naar aemcs-rde-support@adobe.com verzenden om aan de voorzijde van de lijn over te slaan.
+  >[!NOTE]
+  >
+  >De RDE&#39;s zullen in de komende weken geleidelijk worden ingevoerd; u kunt een e-mail naar aemcs-rde-support@adobe.com verzenden om aan de voorzijde van de lijn over te slaan.
 
 * [Uitgebreide ondersteuning voor API-toegangstokens aan de serverzijde](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) - U kunt nu meerdere referenties genereren. Dit is handig voor scenario&#39;s waarin API&#39;s verschillende kenmerken hebben. Het is nu ook mogelijk om geloofsbrieven op een zelfbediening manier in te trekken.
 

@@ -2,9 +2,9 @@
 title: Query Builder-API
 description: De functionaliteit van de Asset Share Query Builder wordt weergegeven via een Java API en een REST API.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Wat wordt geretourneerd, verfijnen {#refining-what-is-returned}
 
-Door gebrek, zal QueryBuilder JSON Servlet een standaardreeks eigenschappen voor elke knoop in het onderzoeksresultaat (bijvoorbeeld, weg, naam, titel, enz.) terugkeren. Als u de controle wilt krijgen over de eigenschappen die worden geretourneerd, kunt u een van de volgende handelingen uitvoeren:
+Door gebrek, zal QueryBuilder JSON Servlet een standaardreeks eigenschappen voor elke knoop in het onderzoeksresultaat (bijvoorbeeld, weg, naam, en titel) terugkeren. Als u de controle wilt verkrijgen over de eigenschappen die worden geretourneerd, kunt u een van de volgende handelingen uitvoeren:
 
 Geef het volgende op
 
@@ -287,7 +287,7 @@ Geef het volgende op
 p.hits=full
 ```
 
-In dat geval worden alle eigenschappen voor elk knooppunt opgenomen:
+In dat geval worden alle eigenschappen opgenomen voor elk knooppunt:
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
@@ -320,7 +320,7 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-Een ander ding u kunt doen is kindknopen in de reactie van de Bouwer van de Vraag omvatten. Om dit te doen moet u specificeren
+Een ander ding u kunt doen is kindknopen in de reactie van de Bouwer van de Vraag omvatten. Hiervoor moet u opgeven
 
 ```xml
 p.nodedepth=n

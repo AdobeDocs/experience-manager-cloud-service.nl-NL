@@ -1,10 +1,10 @@
 ---
 title: Gereedheidsfase
-description: Meer informatie over de stappen die u moet nemen om ervoor te zorgen dat uw AEM-installatie klaar is om naar de cloud te worden verplaatst
+description: Leer meer over de stappen die u moet nemen om ervoor te zorgen dat uw AEM installatie klaar is om naar de cloud te worden verplaatst
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2074'
 ht-degree: 6%
 
 ---
@@ -21,11 +21,11 @@ In deze fase van de AEM as a Cloud Service Migratiereis, zult u zich met AEM as 
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Het vorige document, [Aan de slag met Verplaatsen naar AEM as a Cloud Service](/help/journey-migration/getting-started.md), wordt een lijst met fasen beschreven die u moet ondergaan om te migreren naar AEM as a Cloud Service, en de voordelen hiervan.
+Het vorige document, [Aan de slag met Verplaatsen naar AEM as a Cloud Service](/help/journey-migration/getting-started.md)schetst u een lijst met fasen die u moet ondergaan om te kunnen migreren naar AEM as a Cloud Service en de voordelen hiervan.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u te begrijpen welke factoren u in overweging moet nemen om ervoor te zorgen dat uw AEM installatie klaar is om naar de cloud te worden verplaatst:
+Dit document helpt u te begrijpen welke factoren u moet overwegen zodat u ervoor kunt zorgen dat uw AEM installatie klaar is om naar de cloud te worden verplaatst:
 
 * Meer informatie over opmerkelijke wijzigingen en verouderde functies
 * Begrijp hoe te om voor de migratie aan AEM as a Cloud Service te plannen
@@ -90,7 +90,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   <tr>
     <td>Overschakelen naar asynchrone bewerkingen</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">Asynchrone bewerkingen configureren</a></td>
-    <td>Om de algehele prestaties van uw omgevingen te verbeteren, worden bepaalde bewerkingen uitgevoerd in de asynchrone modus. De async banen zullen een rij worden gevormd en worden uitgevoerd wanneer de systeembronnen beschikbaar zijn.</td>
+    <td>Om de algehele prestaties van uw omgevingen te verbeteren, worden bepaalde bewerkingen uitgevoerd in de asynchrone modus. De async banen worden een rij gevormd en lopen wanneer de systeembronnen beschikbaar zijn.</td>
   </tr>
   <tr>
     <td>Tokengebaseerde verificatie- en integratiestrategieën</td>
@@ -150,7 +150,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   <tr>
     <td>Wijzigingen in verificatie</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">IMS-ondersteuning voor AEM as a Cloud Service</td>
-    <td>Als u eerder SAML 2.0-integratie gebruikte op zowel auteur als publicatie voordat u naar de Cloud Service ging, is de belangrijkste wijziging dat AEM as a Cloud Service auteur alleen integreert met Adobe IMS. Nochtans, AEM de as a Cloud Service Publish rij kan hefboomwerking nog SAML of andere authentificatieintegratie. AEM as a Cloud Service biedt alleen ondersteuning voor IMS-verificatie voor authoring-, beheer- en ontwikkelaargebruikers. De IMS-verificatie biedt geen ondersteuning voor externe eindgebruikers van klantsites zoals sitebezoekers.</td>
+    <td>Als u eerder SAML 2.0-integratie gebruikte op zowel auteur als publicatie voordat u naar de Cloud Service ging, is de belangrijkste wijziging dat AEM as a Cloud Service auteur alleen integreert met Adobe IMS. Nochtans, AEM de as a Cloud Service Publish rij kan nog SAML of andere authentificatieintegratie gebruiken. AEM as a Cloud Service biedt alleen ondersteuning voor IMS-verificatie voor authoring-, beheer- en ontwikkelaargebruikers. De IMS-verificatie biedt geen ondersteuning voor externe eindgebruikers van klantsites zoals sitebezoekers.</td>
   </tr>
 </tbody>
 </table>
@@ -163,7 +163,7 @@ We raden u aan de [Verouderde functies](https://experienceleague.adobe.com/docs/
 
 ## Plan voor een Herziening van uw AEM Installatie {#review-planning}
 
-Zodra u zich met de veranderingen vertrouwd hebt gemaakt die met AEM as a Cloud Service worden geïntroduceerd, is het tijd om te beginnen voor een overzicht van uw bestaande installatie, om het niveau van veranderingen te meten die worden vereist om het naar de wolk te bewegen.
+Nadat u zich met de veranderingen vertrouwd hebt gemaakt die met AEM as a Cloud Service worden geïntroduceerd, is het tijd beginnen voor een overzicht van uw bestaande installatie te plannen. Op deze manier kunt u het niveau van de vereiste wijzigingen voor het verplaatsen naar de cloud meten.
 
 In de volgende afbeelding ziet u de belangrijkste stappen die tijdens de beoordelingsfase zijn ondernomen:
 
@@ -173,7 +173,7 @@ Vervolgens zullen we in detail bekijken wat elk van deze stappen betekent.
 
 ### Gereedheid van Cloud Service beoordelen {#assess-cloud-readiness}
 
-De eerste stap is uw bereidheid te beoordelen om zich van uw bestaande AEM aan Cloud Service te bewegen en gebieden te bepalen die refactoring zullen vereisen om met AEM as a Cloud Service compatibel te zijn.
+De eerste stap is uw bereidheid te beoordelen om zich van uw bestaande AEM aan Cloud Service te bewegen en gebieden te bepalen die refactoring vereisen om met AEM as a Cloud Service compatibel te zijn.
 
 U zult een uitvoerige beoordeling van uw huidige AEM broncode tegen de opmerkelijke veranderingen en verouderde eigenschappen moeten uitvoeren om het niveau van inspanning te bepalen die in de overgangsreis wordt verwacht.
 
@@ -198,7 +198,7 @@ Een typisch rapport moet deze input bevatten:
 
 **Het verslag socialiseren**
 
-Nadat de rapporten van de Analysator van Beste praktijken volledig zijn, deel hen met de relevante teams om uw bevindingen te bevestigen en voor uw volgende stappen te plannen. Afhankelijk van de voorkeur, kunt u een gedrukte versie van het rapport ook verspreiden door te gebruiken [Afdrukvoorbeeld](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
+Nadat de rapporten van de Analysator van Beste praktijken volledig zijn, deel hen met de relevante teams zodat kunt u uw bevindingen bevestigen en voor uw volgende stappen plannen. Afhankelijk van de voorkeur, kunt u een gedrukte versie van het rapport ook verspreiden door te gebruiken [Afdrukvoorbeeld](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
 
 ### Resourceplanning controleren {#review-resource-planning}
 

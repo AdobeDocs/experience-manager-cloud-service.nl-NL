@@ -2,9 +2,9 @@
 title: Vertaalde inhoud zonder kop publiceren
 description: Leer hoe u uw vertaalde inhoud publiceert en de vertalingen bijwerkt terwijl de inhoud wordt bijgewerkt.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Uw vertaalde inhoud zonder kop is nu gepubliceerd! Het kan nu door uw headless d
 
 >[!TIP]
 >
->U kunt bij het publiceren meerdere items selecteren (dat wil zeggen meerdere taalmappen) om meerdere vertalingen tegelijk te publiceren.
+>U kunt meerdere items selecteren (dat wil zeggen meerdere taalmappen) wanneer u publiceert, zodat u meerdere vertalingen tegelijk kunt publiceren.
 
 Er zijn extra opties wanneer het publiceren van uw inhoud, zoals het plannen van een publicatietijd, die buiten het werkingsgebied van deze reis zijn. Zie de [Aanvullende bronnen](#additional-resources) aan het einde van het document voor meer informatie.
 

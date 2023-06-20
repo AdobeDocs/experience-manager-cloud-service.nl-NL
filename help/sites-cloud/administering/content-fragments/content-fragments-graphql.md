@@ -4,9 +4,9 @@ description: Leer de basisconcepten van het realiseren van een AEM CMS zonder ko
 feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -25,14 +25,12 @@ Dit wordt bereikt door gebruik te maken van Content Fragments, samen met de AEM 
 >
 >* [Koploos en AEM](/help/headless/introduction.md) voor een inleiding op Headless Development voor AEM Sites as a Cloud Service.
 
-
 >[!NOTE]
 >
 >GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM) as a Cloud Service:
 >
 >* [AEM Commerce gebruikt gegevens van een handelsplatform via GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* [AEM Content Fragments werken samen met de AEM GraphQL API (een aangepaste implementatie, gebaseerd op standaard GraphQL) om gestructureerde inhoud te leveren voor gebruik in uw toepassingen](/help/headless/graphql-api/content-fragments.md).
-
 
 ## CMS zonder hoofd {#headless-cms}
 
@@ -50,7 +48,7 @@ GraphQL is:
 
 * &quot;*...een querytaal voor API&#39;s en een runtime voor het uitvoeren van deze query&#39;s met uw bestaande gegevens.*&quot;.
 
-   Zie [GraphQL.org](https://graphql.org)
+  Zie [GraphQL.org](https://graphql.org)
 
 De [GraphQL API AEM](#aem-graphql-api) staat u toe om (complexe) vragen op uw uit te voeren [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md); met elke vraag die volgens een specifiek modeltype is. De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
 

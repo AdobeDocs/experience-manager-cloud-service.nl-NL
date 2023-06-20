@@ -2,9 +2,9 @@
 title: Aangepaste foutpagina's
 description: AEM wordt geleverd met een standaardfouthandler voor de afhandeling van HTTP-fouten, die kan worden aangepast.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Als u op fouten wilt reageren, biedt AEM een `404.jsp` script onder `/libs/sling
 
 ## Hoe te om Pagina&#39;s aan te passen die door de Handler van de Fout worden getoond {#how-to-customize-pages-shown-by-the-error-handler}
 
-U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de fouthandler worden weergegeven wanneer een fout optreedt. Hiervoor gebruikt u [AEM standaardbedekkingsmechanisme](/help/implementing/developing/introduction/overlays.md) zodat uw aangepaste pagina&#39;s onder `/apps` en bedekken de standaardpagina&#39;s die onder zijn `/libs`.
+U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de fouthandler worden weergegeven wanneer een fout optreedt. Om dit te doen gebruikt u [AEM standaardbedekkingsmechanisme](/help/implementing/developing/introduction/overlays.md) zodat uw aangepaste pagina&#39;s onder `/apps` en bedekken de standaardpagina&#39;s die onder zijn `/libs`.
 
 1. Kopieer het standaardscript of de standaardscripts in de gegevensopslagruimte:
 
@@ -70,7 +70,7 @@ Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fou
 
 >[!NOTE]
 >
->In AEM als Cloud Service, dient CDN een generische foutenpagina wanneer een 5XX fout van het achtereind wordt ontvangen. Om de daadwerkelijke reactie van de backend toe te staan om door te gaan moet u de volgende kopbal aan de reactie toevoegen: `x-aem-error-pass: true`.
+>In AEM als Cloud Service, dient CDN een generische foutenpagina wanneer een 5XX fout van het achtereind wordt ontvangen. Als u de werkelijke reactie van de backend wilt laten doorgeven, moet u de volgende koptekst toevoegen aan de reactie: `x-aem-error-pass: true`.
 >Dit werkt alleen voor reacties die afkomstig zijn van AEM of de laag Apache/Dispatcher. Andere onverwachte fouten die uit tussenliggende infrastructuurlagen komen zullen nog de generische foutenpagina tonen.
 
 >[!CAUTION]

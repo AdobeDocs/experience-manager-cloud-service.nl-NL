@@ -2,10 +2,10 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2363'
-ht-degree: 4%
+source-wordcount: '2357'
+ht-degree: 3%
 
 ---
 
@@ -35,7 +35,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Branding**
 
-   Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Voor deze functionaliteit is het gebruik van de component Pagina vanaf versie 2.14.0 of hoger van het dialoogvenster [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+  Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Voor deze functionaliteit is het gebruik van de component Pagina vanaf versie 2.14.0 of hoger van het dialoogvenster [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
    * **Brand Slug**
 
@@ -57,42 +57,40 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Aan/Uit-tijd**
 
-   >[!NOTE]
-   >
-   > Zie [Aan- en uittijden - Configuratie activeren](/help/operations/replication.md#on-and-off-times-trigger-configuration) voor details van hoe te om de verwante automatische replicatie te vormen.
+  >[!NOTE]
+  >
+  > Zie [Aan- en uittijden - Configuratie activeren](/help/operations/replication.md#on-and-off-times-trigger-configuration) voor details van hoe te om de verwante automatische replicatie te vormen.
 
-   >[!NOTE]
-   >Indien **Op tijd** of **Uit-tijd** is in het verleden, en de automatische replicatie wordt gevormd, dan zal de relevante actie onmiddellijk teweeggebracht worden.
+  >[!NOTE]
+  >Indien **Op tijd** of **Uit-tijd** is in het verleden, en de automatische replicatie wordt gevormd, dan zal de relevante actie onmiddellijk teweeggebracht worden.
 
    * **Op tijd** - De datum en het tijdstip waarop de gepubliceerde pagina zichtbaar (weergegeven) wordt gemaakt in de publicatieomgeving. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
 
       * Indien al [gepubliceerd (handmatig)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) deze pagina wordt slapend (verborgen) gehouden totdat deze op het opgegeven tijdstip wordt weergegeven.
       * Als niet gepubliceerd, en gevormd voor auto-replicatie, zal de pagina automatisch worden gepubliceerd, dan, op de gespecificeerde tijd teruggegeven.
       * Als niet gepubliceerd, en niet gevormd voor auto-replicatie, zal de pagina niet automatisch gepubliceerd worden, zodat zal 404 worden gezien wanneer een poging om tot de pagina toegang te hebben wordt gemaakt.
+
    * **Uit-tijd** - Vergelijkbaar met en vaak gebruikt in combinatie met **Op tijd** Hiermee bepaalt u de tijd waarop de gepubliceerde pagina wordt verborgen in de publicatieomgeving.
 
    * Deze velden behouden (**Op tijd** en **Uit-tijd**) is leeg voor pagina&#39;s die u direct wilt publiceren en die beschikbaar zijn in de publicatieomgeving totdat ze zijn gedeactiveerd (het normale scenario).
-
 
 * **Vanity URL**
 
    * Hiermee kunt u een vanity-URL voor deze pagina invoeren, waarmee u een kortere en/of expressieve URL kunt hebben.
    * Als bijvoorbeeld de URL voor Vanity is ingesteld op `welcome` naar de pagina die wordt aangeduid door het pad `/v1.0/startpage` voor de website `http://example.com`vervolgens `http://example.com/welcome` zou de vanzelf-URL zijn van `http://example.com/content/v1.0/startpage`
 
-   >[!CAUTION]
-   >
-   >Vanity-URL&#39;s:
-   >
-   >* Dit moet uniek zijn, dus zorg ervoor dat de waarde niet al door een andere pagina wordt gebruikt.
-   >* Geen ondersteuning voor regex-patronen.
-   >* Deze mag niet op een bestaande pagina worden ingesteld.
-
+  >[!CAUTION]
+  >
+  >Vanity-URL&#39;s:
+  >
+  >* Dit moet uniek zijn, dus zorg ervoor dat de waarde niet al door een andere pagina wordt gebruikt.
+  >* Geen ondersteuning voor regex-patronen.
+  >* Deze mag niet op een bestaande pagina worden ingesteld.
 
    * **Toevoegen** - Tik of klik om een veld weer te geven waarin een vanity-URL voor de pagina wordt gedefinieerd.
       * Tik of klik nogmaals om meerdere items toe te voegen.
       * Tik of klik op de knop **Verwijderen** pictogram om de vanity URL te verwijderen.
    * **Redirect Vanity URL** - Geeft aan of de pagina de vanity-URL moet gebruiken.
-
 
 ### Geavanceerd {#advanced}
 
@@ -123,9 +121,9 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    * **Inschakelen** - Gebruik van verificatie toestaan om toegang te krijgen tot de pagina
 
-      >[!NOTE]
-      >
-      >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op de **[Machtigingen](#permissions)** tab.
+     >[!NOTE]
+     >
+     >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op de **[Machtigingen](#permissions)** tab.
 
    * **Aanmeldingspagina** - De pagina die moet worden gebruikt voor aanmelding
 
@@ -139,9 +137,9 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    * **Robots-tags** - selecteer de robots-tags om het gedrag van zoekprogrammacrawlers te bepalen.
 
-      >[!NOTE]
-      >
-      >Sommige opties veroorzaken een conflict met elkaar. In geval van een conflict krijgt de meer permissieve optie voorrang.
+     >[!NOTE]
+     >
+     >Sommige opties veroorzaken een conflict met elkaar. In geval van een conflict krijgt de meer permissieve optie voorrang.
 
    * **Sitemap genereren** - als deze optie is geselecteerd, wordt een sitemap.xml gegenereerd voor deze pagina en de onderliggende elementen ervan
 
@@ -149,11 +147,11 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Aanbevolen afbeelding**
 
-   Selecteer en configureer de afbeelding die u wilt weergeven. Dit wordt gebruikt in componenten die naar de pagina verwijzen; bijvoorbeeld stramienen, paginalijsten, enz.
+  Selecteer en configureer de afbeelding die u wilt weergeven. Dit wordt gebruikt in componenten die naar de pagina verwijzen; bijvoorbeeld stramienen, paginalijsten, enz.
 
    * **Afbeelding**
 
-      U kunt **Selecteren** een middel, of doorblader voor een dossier om te uploaden, dan **Bewerken**, of **Wissen**.
+     U kunt **Selecteren** een middel, of doorblader voor een dossier om te uploaden, dan **Bewerken**, of **Wissen**.
 
    * **Alternatieve tekst** - een tekst die wordt gebruikt om de betekenis en/of functie van de afbeelding weer te geven; bijvoorbeeld voor schermlezers.
 
@@ -161,7 +159,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Miniatuur**
 
-   De paginaminiatuur configureren
+  De paginaminiatuur configureren
 
    * **Voorvertoning genereren** - Genereer een voorvertoning van de pagina die u als miniatuur wilt gebruiken
    * **Afbeelding uploaden** - Upload een afbeelding die u als miniatuur wilt gebruiken
@@ -184,8 +182,9 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 * **Doelconfiguratie**
 
    * **Merk** - Definieert een [Merk om een werkingsgebied voor het richten te specificeren](/help/sites-cloud/authoring/personalization/targeted-content.md).
-   >[!NOTE]
-   >Deze optie vereist dat de gebruikersaccount zich in de `Target Administrators`groep.
+
+  >[!NOTE]
+  >Deze optie vereist dat de gebruikersaccount zich in de `Target Administrators`groep.
 
 ### Machtigingen {#permissions}
 
@@ -201,7 +200,7 @@ Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren.
 
 * **Huidige actieve kopieën** - Hiermee geeft u pagina&#39;s weer die op deze blauwdrukpagina zijn gebaseerd (dat wil zeggen: Live kopieën van deze pagina zijn)
 
-* **Rollout Configs** - Controleert de omstandigheden waaronder de wijzigingen aan Levende Exemplaar zullen worden verspreid
+* **Rollout Configs** - Controleert de omstandigheden waaronder de wijzigingen aan Levende Exemplaar worden verspreid
 
 ### Live kopie {#live-copy}
 
@@ -224,7 +223,7 @@ Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als li
 
    * **Overerving van Actieve kopie** - Als deze optie is ingeschakeld, is de Live Copy-configuratie effectief voor alle onderliggende toepassingen
    * **Inherit Rollout Configs from Parent** - Als deze optie is ingeschakeld, wordt de rollout-configuratie overgenomen van het bovenliggende item van de pagina
-   * **Uitrolconfiguratie kiezen** - Definieert de omstandigheden waaronder wijzigingen via het blauwdruk worden doorgegeven en alleen beschikbaar zijn wanneer **Inherit Rollout Configs from Parent** is niet geselecteerd
+   * **Uitrolconfiguratie kiezen** - Definieert de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdrukken en alleen beschikbaar zijn wanneer **Inherit Rollout Configs from Parent** is niet geselecteerd
 
 ### Voorvertoning {#preview}
 
@@ -313,7 +312,7 @@ U kunt meerdere pagina&#39;s selecteren voor bulkbewerking op verschillende mani
 * Wanneer u door de **Sites** console
 * Na gebruik van **Zoeken** om een set pagina&#39;s te zoeken
 
-Nadat u de pagina&#39;s hebt geselecteerd en op de optie **Eigenschappen** hebt geklikt of getikt, worden de bulkeigenschappen weergegeven:
+Nadat u de pagina&#39;s hebt geselecteerd en vervolgens op de knop **Eigenschappen, optie**, worden de eigenschappen voor bulkgoederen weergegeven:
 
 ![Pagina-eigenschappen voor bulkbewerking](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -344,4 +343,4 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
    * U kunt de waarden in de beschikbare velden bijwerken.
       * De nieuwe waarden worden toegepast op alle geselecteerde pagina&#39;s wanneer u **Gereed**.
       * Wanneer het veld meerdere waarden heeft (bijvoorbeeld Codes), kunt u een nieuwe waarde toevoegen of een gemeenschappelijke waarde verwijderen.
-   * Velden die veel voorkomen, maar verschillende waarden op de verschillende pagina&#39;s hebben, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>`.
+   * Velden die veel voorkomen, maar die verschillende waarden op de verschillende pagina&#39;s hebben, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>`.

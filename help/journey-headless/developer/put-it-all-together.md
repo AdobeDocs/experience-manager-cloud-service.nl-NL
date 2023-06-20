@@ -2,9 +2,9 @@
 title: Alles bij elkaar plaatsen - uw app en uw inhoud in AEM headless
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw AEM Project met inbegrip van Inhoudsfragmenten, uw GraphQL-aanroepen, uw REST API-aanroepen en uw toepassing kunt uitvoeren en voorbereiden op live gaan.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Dit artikel is bedoeld om u te helpen begrijpen hoe u uw AEM toepassing zonder k
 
 ## De AEM SDK {#the-aem-sdk}
 
-De AEM SDK wordt gebruikt om aangepaste code te maken en in te voeren. Het is het belangrijkste hulpmiddel dat u nodig hebt om uw toepassing zonder kop te ontwikkelen en te testen voordat u live gaat. Het bevat de volgende artefacten:
+De AEM SDK wordt gebruikt om aangepaste code te maken en in te voeren. Het is het belangrijkste hulpmiddel dat u nodig hebt, zodat u uw toepassing zonder kop kunt ontwikkelen en testen voordat u live gaat. Het bevat de volgende artefacten:
 
 * De QuickStart-jar - een uitvoerbaar JAR-bestand dat kan worden gebruikt om een auteur- en een publicatie-instantie in te stellen
 * De hulpmiddelen van de verzending - de module van de Dispatcher en zijn gebiedsdelen voor Vensters en op UNIX® gebaseerde systemen
@@ -64,7 +64,7 @@ Node.js is een runtimeomgeving van JavaScript die wordt gebruikt om met de front
 
 Laten we nu eens kijken naar de onderdelen van een AEM omgeving.
 
-Een volledige AEM omgeving bestaat uit een Auteur, Publish en Dispatcher. Deze componenten worden ook beschikbaar gesteld in de lokale ontwikkelruntime, zodat u gemakkelijker een voorvertoning van uw code en inhoud kunt bekijken voordat u live gaat.
+Een volledige AEM omgeving bestaat uit een Auteur, Publish en Dispatcher. Deze componenten worden ook beschikbaar gesteld in de lokale ontwikkelruntime, zodat u gemakkelijker een voorvertoning van uw code en inhoud kunt weergeven voordat u live gaat.
 
 * **De service Auteur** In dit deelvenster kunnen interne gebruikers inhoud maken, beheren en voorvertonen.
 
@@ -74,7 +74,7 @@ Een volledige AEM omgeving bestaat uit een Auteur, Publish en Dispatcher. Deze c
 
 ## De workflow voor lokale ontwikkeling {#the-local-development-workflow}
 
-Het lokale ontwikkelingsproject is gebaseerd op Apache Maven en gebruikt Git voor broncontrole. Om het project bij te werken, kunnen de ontwikkelaars hun aangewezen geïntegreerde ontwikkelomgeving, zoals Eclipse, de Code van Visual Studio, of IntelliJ, onder anderen gebruiken.
+Het lokale ontwikkelingsproject is gebaseerd op Apache Maven en gebruikt Git voor broncontrole. Om het project bij te werken, kunnen de ontwikkelaars hun aangewezen geïntegreerde ontwikkelomgeving, zoals Verduistering, de Code van Visual Studio, of IntelliJ, onder anderen gebruiken.
 
 Als u code- of inhoudsupdates wilt testen die door uw toepassing zonder kop worden opgenomen, moet u de updates implementeren naar de lokale AEM runtime, die lokale instanties van de AEM auteur en publicatieservices bevat.
 

@@ -2,9 +2,9 @@
 title: Toegangstokens genereren voor server-side API's
 description: Leer hoe u communicatie tussen een externe server en AEM as a Cloud Service vergemakkelijkt door een beveiligd JWT Token te genereren
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: dd869397feca593f93ee8ed5030828e01cc45c4d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2123'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ De server-aan-server stroom impliceert de volgende stappen:
 
 Gebruikers met toegang tot de AEM as a Cloud Service ontwikkelaarsconsole zien het tabblad Integraties in de Developer Console voor een bepaalde omgeving. Een gebruiker met de AEM as a Cloud Service rol van de Beheerder van het Milieu kan geloofsbrieven creëren, bekijken of beheren.
 
-Klik op de knop **Nieuwe technische account maken** er wordt een nieuwe set referenties gemaakt met de id van de client, het clientgeheim, de persoonlijke sleutel, het certificaat en de configuratie voor auteur- en publicatieniveaus van de omgeving, ongeacht de podselectie.
+Klik op de knop **Nieuwe technische account maken** er wordt een nieuwe set referenties gemaakt met client-id, clientgeheim, persoonlijke sleutel, certificaat en configuratie voor auteur- en publicatieniveaus van de omgeving, ongeacht de podselectie.
 
 ![Een nieuwe technische account maken](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -67,7 +67,7 @@ De toepassing die vraag aan AEM maakt zou tot de AEM as a Cloud Service geloofsb
 
 ### Genereer een JWT-token en verander dit voor een Access Token {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-Gebruik de geloofsbrieven om een teken JWT in een vraag aan de dienst van Adobe IMS tot stand te brengen om een toegangstoken terug te winnen, dat 24 uur geldig is.
+Gebruik de geloofsbrieven om een teken JWT in een vraag aan de dienst van Adobe te creëren IMS om een toegangstoken terug te winnen, dat 24 uur geldig is.
 
 De AEM CS Service Credentials kunnen worden uitgewisseld voor een toegangstoken met behulp van clientbibliotheken die voor dit doel zijn ontworpen. De clientbibliotheken zijn beschikbaar via [Adobe](https://github.com/adobe/aemcs-api-client-lib), die gedetailleerdere richtsnoeren en de meest recente informatie bevat.
 
@@ -162,7 +162,7 @@ U kunt ook controleren of de technische account wordt weergegeven in de lijst me
 
 <u>**Stel de juiste machtigingen voor groepen in**</u>
 
-Tot slot vorm de groep met de aangewezen toestemmingen nodig aan om uw APIs aan te halen of te sluiten geschikt. U kunt dit doen door:
+Tot slot vorm de groep met de aangewezen toestemmingen nodig om uw APIs aan te halen of te sluiten geschikt. U kunt dit doen door:
 
 1. Aanmelden bij de juiste instantie van de auteur en naar **Instellingen** - **Beveiliging** - **Machtigingen**
 1. Zoek de naam van de groep die overeenkomt met het productprofiel in het linkerdeelvenster (in dit geval alleen-lezen API&#39;s) en klik erop:
@@ -217,7 +217,7 @@ Om dit te bereiken, kunt u:
 
 * Gebruik de **Certificaat toevoegen** knop onder **Integraties** - **Technische rekeningen** in de ontwikkelaarsconsole, zoals hieronder getoond
 
-   ![Referentie vernieuwen](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
+  ![Referentie vernieuwen](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
 * Nadat u op de knop hebt gedrukt, wordt een set referenties gegenereerd die een nieuw certificaat bevat. Installeer de nieuwe geloofsbrieven op uw off-AEM server en zorg ervoor dat de connectiviteit zoals verwacht is, zonder de oude geloofsbrieven te verwijderen 
 * Zorg ervoor de nieuwe geloofsbrieven in plaats van de oude worden gebruikt wanneer het produceren van het toegangstoken
@@ -229,7 +229,7 @@ Als de persoonlijke sleutel in het gedrang komt, moet u referenties maken met ee
 
 U kunt dit doen door deze stappen te volgen:
 
-1. Voeg eerst de nieuwe toets toe. Hiermee worden referenties gegenereerd met een nieuwe persoonlijke sleutel en een nieuw certificaat. De nieuwe persoonlijke sleutel wordt in de gebruikersinterface gemarkeerd als **huidig** en zal dus worden gebruikt voor alle nieuwe geloofsbrieven voor deze technische rekening. De referenties die aan de oudere persoonlijke sleutels zijn gekoppeld, zijn nog steeds geldig tot ze zijn ingetrokken. Om dit te bereiken drukt u op de drie puntjes (**...**) onder uw huidige technische account en druk op **Nieuwe persoonlijke sleutel toevoegen**:
+1. Voeg eerst de nieuwe toets toe. Met deze sleutel worden referenties gegenereerd met een nieuwe persoonlijke sleutel en een nieuw certificaat. De nieuwe persoonlijke sleutel wordt in de gebruikersinterface gemarkeerd als **huidig** en zal dus worden gebruikt voor alle nieuwe geloofsbrieven voor deze technische rekening. De referenties die aan de oudere persoonlijke sleutels zijn gekoppeld, zijn nog steeds geldig tot ze zijn ingetrokken. Om dit te bereiken drukt u op de drie puntjes (**...**) onder uw huidige technische account en druk op **Nieuwe persoonlijke sleutel toevoegen**:
 
    ![Nieuwe persoonlijke sleutel toevoegen](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
@@ -237,7 +237,7 @@ U kunt dit doen door deze stappen te volgen:
 
    ![Toevoegen van nieuwe persoonlijke sleutel bevestigen](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   Er wordt een nieuw tabblad voor bladeren geopend met de nieuwe onderliggende items en de gebruikersinterface wordt bijgewerkt met de privétoetsen, waarbij de nieuwe wordt gemarkeerd als **huidig**:
+   Er wordt een nieuw bladertabblad geopend met de nieuwe referenties en de gebruikersinterface wordt bijgewerkt zodat zowel de persoonlijke sleutel als de nieuwe wordt weergegeven met de code **huidig**:
 
    ![Persoonlijke sleutels in de gebruikersinterface](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 

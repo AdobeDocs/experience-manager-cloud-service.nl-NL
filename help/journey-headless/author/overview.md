@@ -2,9 +2,9 @@
 title: AEM Schrijverreis zonder kopinhoud
 description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om inhoud voor uw project te ontwerpen.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '865'
 ht-degree: 1%
 
 ---
@@ -39,11 +39,11 @@ Als u wilt weten hoe Adobe adviseert hoe te om hoofdloze zaken met AEM op te los
 
 ## Publiek {#audience}
 
-Deze reis is ontworpen voor de persoon van de Inhoudsauteur. Als Inhoudsauteur maakt u de feitelijke inhoud in Inhoudsfragmenten.
+Deze reis is ontworpen voor de persoon van de Inhoudsauteur. Als inhoudsauteur maakt u de feitelijke inhoud in inhoudsfragmenten.
 
 De reis bepaalt de vereisten, de stappen, en de benadering voor creatie inhoud voor een AEM Zwaardeloos project. De reis zal extra karakters bepalen waarmee de auteur voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is die van de inhoudauteur.
 
-Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar sommige informatie zal overbodig zijn voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
+Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar sommige informatie is overbodig voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
 
 ## De Headless Content Author Reis {#the-journey}
 

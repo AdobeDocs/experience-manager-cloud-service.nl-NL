@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.2.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
 
 * [!DNL Experience Manager Assets] als [!DNL Cloud Service] heeft het recht om een pre-gevormde [!DNL Brand Portal] -instantie. De [!DNL Cloud Manager] gebruiker kan activeren [!DNL Brand Portal] op [!DNL Experience Manager Assets] als [!DNL Cloud Service]. Zie [Brand Portal activeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
 
-* Bedrijven kunnen nu elementen bronnen met [!DNL Brand Portal]. hefboomwerkingen voor de functie voor het aanschaffen van bedrijfsmiddelen [!DNL Brand Portal] om klanten te helpen bij het aantrekken van middelen voor nieuwe marketingcampagnes, foto&#39;s en projecten. Zie [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* Bedrijven kunnen nu elementen bronnen met [!DNL Brand Portal]. Functie voor het aanschaffen van bedrijfsmiddelen gebruikt [!DNL Brand Portal] om klanten te helpen bij het aantrekken van middelen voor nieuwe marketingcampagnes, foto&#39;s en projecten. Zie [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * De [!DNL Brand Portal] in het gebruiksrapport worden nu alleen de actieve gebruikers weergegeven. De inactieve gebruikers worden nu niet weergegeven. Actieve gebruikers zijn de gebruikers van wie de account is toegewezen aan een productprofiel in de [!DNL Admin Console]. Zie [[!DNL Brand Portal] rapporten](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -101,7 +101,7 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.2.0 is 11 febr
 
 * De interface van Cloud Manager zal de gebruiker informeren die tijdelijk niet domeinnaam kan toevoegen/bijwerken omdat het bijbehorende milieu of een lopende pijpleiding in bijlage aan het of momenteel in het wachten op de goedkeuringsstap heeft.
 
-* Eigenschappen ingesteld in klant `pom.xml` bestanden die vooraf met sonar zijn gemaakt , worden nu dynamisch verwijderd om fouten met het maken van opbouwen en het scannen van kwaliteit te voorkomen .
+* Eigenschappen ingesteld in klant `pom.xml` bestanden die vooraf met sonar zijn gemaakt, worden nu dynamisch verwijderd om fouten met het maken van een build en het scannen van kwaliteit te voorkomen.
 
 * De interface van Cloud Manager zal de gebruiker informeren die tijdelijk geen SSL certificaat kan selecteren als het door een Naam van het Domein in gebruik is die momenteel wordt opgesteld.
 

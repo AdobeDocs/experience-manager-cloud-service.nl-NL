@@ -2,9 +2,9 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager as a Cloud Service maken (WCAG 2.1-compatibiliteit)
 description: Gebruik AEM as a Cloud Service om webinhoud toegankelijk te maken voor en bruikbaar te maken voor personen met een handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '13870'
+source-wordcount: '13864'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,6 @@ De volgende sectie presenteert [lagen van de WCAG 2.1-richtsnoeren](https://www.
 >* De [korte namen voor de WCAG 2.1-richtsnoeren](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* De [nummering die wordt gebruikt in de WCAG 2.1-richtsnoeren](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) kruisverwijzingen met de WCAG-website te ondersteunen.
 
-
 ## Beginsel 1: Perceerbaar {#principle-perceivable}
 
 [Beginsel 1: Mogelijkheid - De informatie en gebruikersinterfacecomponenten moeten aan gebruikers op manieren presenteerbaar zijn zij kunnen waarnemen.](https://www.w3.org/TR/WCAG/#perceivable)
@@ -73,6 +72,7 @@ Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalterna
 >[!NOTE]
 >
 >Enkele out-of-the-box Core-componenten, zoals **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)** - geen **Alternatieve tekst** veld voor het toevoegen van alternatieve tekstbeschrijvingen aan afzonderlijke afbeeldingen, hoewel er een **Label** field (**[Toegankelijkheid](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)** ) voor de gehele component.
+>
 Wanneer het uitvoeren van versies van deze voor uw AEM instantie, moet uw ontwikkelingsteam dergelijke componenten vormen om `alt` kenmerk. Hiermee zorgt u ervoor dat auteurs het aan de inhoud kunnen toevoegen (zie [Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 AEM vereist **Alternatieve tekst** veld dat standaard moet worden ingevuld. Als de afbeelding zuiver decoratief is en alternatieve tekst overbodig is, wordt de **Afbeelding is decoratief** Deze optie kan worden ingeschakeld.
@@ -100,7 +100,7 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 * Pictogrammen: Dit zijn kleine pictogrammen (afbeeldingen) die specifieke informatie bevatten. Ze moeten consistent worden gebruikt op een pagina en site. Alle exemplaren van het pictogram op een pagina of site moeten hetzelfde korte en korte tekstalternatief hebben, tenzij dit leidt tot onnodige duplicatie van aangrenzende tekst.
 * Grafieken en grafieken: Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Geef zo nodig ook een meer gedetailleerde beschrijving in de tekst met behulp van de **Beschrijving** in het **Geavanceerd** tabblad Eigenschappen van afbeelding. U kunt de brongegevens ook elders op de pagina of site in tabelvorm opgeven.
 * Kaarten, diagrammen, stroomdiagrammen: Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), moet u ervoor zorgen dat het sleutelbericht wordt weergegeven in de tekstindeling en dat deze tekstinformatie bij elk gekoppeld gegevenspunt wordt geplaatst. Voor kaarten is het onpraktisch om een volledige tekstequivalent te bieden, maar als de kaart wordt verstrekt als een manier om mensen te helpen hun weg naar een bepaalde plaats vinden, dan kan de alternatieve tekst van het kaartafbeelding kort wijzen op *Kaart van X* en geeft u vervolgens aanwijzingen voor die locatie op in tekst elders op de pagina of via de **Beschrijving** in het **Geavanceerd** tabblad van het dialoogvenster **Afbeelding** component.
-* CAPTCHA: Een CAPTCHA is een *Volledig geautomatiseerde openbare trainingstest om computers en mensen te informeren*. Het is een veiligheidscontrole die op webpagina&#39;s wordt gebruikt om mensen van kwaadaardige software te onderscheiden, maar die toegankelijkheidsbarrières kan veroorzaken. Dit zijn afbeeldingen waarvoor gebruikers een beschrijving moeten geven van wat ze zien om een beveiligingstest te kunnen doorstaan. Het is niet mogelijk om een tekstalternatief voor de afbeelding te bieden, dus u moet alternatieve niet-grafische oplossingen overwegen. Het W3C biedt verschillende suggesties. Elk van deze benaderingen heeft hun eigen verdiensten en nadelen.
+* CAPTCHA: Een CAPTCHA is een *Volledig geautomatiseerde openbare trainingstest om computers en mensen te informeren*. Het is een veiligheidscontrole die op webpagina&#39;s wordt gebruikt om mensen van kwaadaardige software te onderscheiden, maar die toegankelijkheidsbarrières kan veroorzaken. Dit zijn afbeeldingen waarvoor gebruikers een beschrijving moeten geven van wat ze zien om een beveiligingstest te doorstaan. Het is niet mogelijk om een tekstalternatief voor de afbeelding te bieden, dus u moet alternatieve niet-grafische oplossingen overwegen. Het W3C biedt verschillende suggesties. Elk van deze benaderingen heeft hun eigen verdiensten en nadelen.
 
    * Logische puzzels
    * Het gebruik van geluidsuitvoer in plaats van afbeeldingen
@@ -109,6 +109,7 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 * Achtergrondafbeeldingen: Deze worden bereikt met CSS (Cascading Style Sheets) in plaats van met HTML. Dit betekent dat het niet mogelijk is een alternatieve tekstwaarde op te geven. Achtergrondafbeeldingen mogen daarom geen belangrijke tekstgegevens opleveren. Als dat het geval is, moet deze informatie ook in de paginatekst worden vermeld. Het is echter belangrijk dat een andere achtergrond wordt weergegeven wanneer de afbeelding niet kan worden weergegeven.
 
 >[!NOTE]
+>
 Er moet een passend contrastniveau zijn tussen de achtergrond en de voorgrondtekst. dit wordt nader besproken [Contrast (minimaal) (1.4.3)](#contrast-minimum).
 
 #### Meer informatie - Niet-tekstuele inhoud (1.1.1) {#more-information-non-text-content}
@@ -156,12 +157,15 @@ Als u deze informatie in een andere indeling verstrekt, zoals tekst (of audio vo
    * Of een equivalente audiobeschrijving in een veelgebruikte audio-indeling, zoals MP3.
 
 >[!NOTE]
+>
 Als de audio- of video-inhoud wordt aangeboden als alternatief voor inhoud die in een andere indeling op dezelfde webpagina bestaat, is mogelijk geen extra alternatief vereist.
+>
 De richtsnoeren, [WCAG 1.2.1 begrijpen](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html), aanvullende informatie te verstrekken.
 
 Het invoegen van multimedia in AEM webpagina&#39;s lijkt op het invoegen van een afbeelding. Aangezien multimedia-inhoud echter veel meer is dan een stilstaand beeld, zijn er verschillende instellingen en opties om te bepalen hoe de multimedia wordt afgespeeld.
 
 >[!NOTE]
+>
 Als u multimedia gebruikt met informatieve inhoud, moet u ook koppelingen naar alternatieven maken. Als u bijvoorbeeld een teksttranscriptie wilt opnemen, maakt u een HTML-pagina waarop de transcriptie wordt weergegeven en voegt u vervolgens een koppeling toe naast of onder de audio-inhoud.
 
 #### Meer informatie - alleen audio en alleen video (vooraf opgenomen) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
@@ -221,7 +225,7 @@ Er zijn twee manieren om aan dit succescriterium te voldoen. Beide zijn acceptab
    * Geef een nieuwe, aanvullende en optionele audiotrack op die de oorspronkelijke soundtrack bevat, maar ook aanvullende audiogegevens over wijzigingen in de scène bevat.
       * Hierdoor kunnen gebruikers schakelen tussen de bestaande audiotrack (die *niet* bevat een audiobeschrijving) en de nieuwe audiotrack (die *doet* bevat een audiobeschrijving).
       * Hiermee voorkomt u onderbrekingen voor gebruikers die de aanvullende beschrijving niet nodig hebben.
-   * Maak een tweede versie van de video-inhoud voor uitgebreide audiobeschrijvingen. Dit vermindert de moeilijkheden verbonden aan het verstrekken van gedetailleerde audiobeschrijvingen binnen de hiaten tussen bestaande dialoog, door de audio en video op aangewezen punten tijdelijk te pauzeren. Hierdoor kan een veel langere audiobeschrijving worden gegeven voordat de handeling opnieuw wordt gestart. Zoals in het vorige voorbeeld, wordt dit het best verstrekt als facultatieve extra audiospoor om verstoring voor gebruikers te verhinderen die niet de extra beschrijving nodig hebben.
+   * Maak een tweede versie van de video-inhoud voor uitgebreide audiobeschrijvingen. Dit vermindert de moeilijkheden verbonden aan het verstrekken van gedetailleerde audiobeschrijvingen binnen de hiaten tussen bestaande dialoog, door de audio en video op aangewezen punten tijdelijk te pauzeren. Hierdoor kan een veel langere audiobeschrijving worden gegeven voordat de handeling opnieuw wordt gestart. Zoals in het vorige voorbeeld, is dit best verstrekt als facultatieve extra audiospoor om verstoring voor gebruikers te verhinderen die niet de extra beschrijving nodig hebben.
 1. Verstrek een tekstranscriptie die een geschikt tekstequivalent van de audio en visuele elementen van de video of de animatie is. Dit moet, indien van toepassing, een indicatie bevatten van wie spreekt, een beschrijving van de instelling, gebeurtenissen, of visueel gepresenteerde informatie en mondelinge expressies. Afhankelijk van de lengte kunt u de transcriptie op dezelfde pagina plaatsen als de video of animatie, of op een aparte pagina. Als u de laatste optie kiest, geeft u een koppeling op naar de transcriptie naast de video of animatie.
 
 Exacte details over het maken van video met een audiobeschrijving vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren.
@@ -313,9 +317,9 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur krijgen door, wa
    * Het element `<ul>` wordt gebruikt voor *ongeordende* lijsten (met opsommingstekens). Afzonderlijke lijstitems worden geïdentificeerd aan de hand van de `<li>` element. In RTE, gebruik **Lijst met opsommingstekens** pictogram.
    * De `<ol>` element is gebruikt voor *genummerd* lijsten. Afzonderlijke lijstitems worden geïdentificeerd aan de hand van de `<li>` element. In RTE, gebruik **Genummerde lijst** pictogram.
 
-   Als u bestaande inhoud wilt wijzigen in een specifiek lijsttype, markeert u de desbetreffende tekst en selecteert u het gewenste lijsttype. Zoals in het vorige voorbeeld wordt getoond hoe de paragraaftekst wordt ingegaan, worden de aangewezen lijstelementen automatisch toegevoegd aan uw HTML.
+  Als u bestaande inhoud wilt wijzigen in een specifiek lijsttype, markeert u de desbetreffende tekst en selecteert u het gewenste lijsttype. Zoals in het vorige voorbeeld wordt getoond hoe de paragraaftekst wordt ingegaan, worden de aangewezen lijstelementen automatisch toegevoegd aan uw HTML.
 
-   In de volledige-schermmodus zijn de afzonderlijke pictogrammen **Lijst met opsommingstekens** en **Genummerde lijst** zichtbaar. Als de volledige-schermmodus niet is geactiveerd, zijn de twee opties beschikbaar achter het enkele pictogram **Lijsten**.
+  In de volledige-schermmodus zijn de afzonderlijke pictogrammen **Lijst met opsommingstekens** en **Genummerde lijst** zichtbaar. Als de volledige-schermmodus niet is geactiveerd, zijn de twee opties beschikbaar achter het enkele pictogram **Lijsten**.
 
 * **Tabellen**: Gegevenstabellen moeten worden geïdentificeerd met behulp van HTML-tabelelementen:
    * één `<table>` element
@@ -323,71 +327,76 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur krijgen door, wa
    * a `<th>` element voor elke rij en kolomkop
    * a `<td>` element voor elke gegevenscel
 
-   Toegankelijke tabellen gebruiken ook de volgende elementen en kenmerken:
+  Toegankelijke tabellen gebruiken ook de volgende elementen en kenmerken:
 
    * De `<caption>` -element wordt gebruikt om een zichtbaar bijschrift voor de tabel te maken. Bijschriften worden standaard gecentreerd boven de tabel weergegeven, maar kunnen op de juiste wijze worden geplaatst met CSS. Het bijschrift is via programmacode gekoppeld aan de tabel en is daarom een handige methode om inhoud te introduceren.
    * De `<summary>` het element helpt niet-waargenomen gebruikers om de informatie gemakkelijker te begrijpen die binnen een lijst wordt voorgesteld, door een synopsis van te verstrekken wat een waargenomen gebruiker kan zien. Deze workflow is handig wanneer complexe of onconventionele tabellay-outs worden gebruikt (dit kenmerk wordt niet weergegeven in de browser, het wordt alleen voorgelezen naar ondersteunende hulpmiddelen).
    * De `scope` kenmerk van de `<th>` -element wordt gebruikt om aan te geven of een cel een koptekst voor een bepaalde rij of voor een bepaalde kolom vertegenwoordigt. Een vergelijkbare aanpak is het gebruik van de kenmerken header en id in complexe tabellen, waarbij gegevenscellen aan een of meer kopteksten kunnen worden gekoppeld.
 
-   >[!NOTE]
-   Deze elementen en kenmerken zijn standaard niet rechtstreeks beschikbaar, maar de systeembeheerder kan wel ondersteuning voor deze waarden toevoegen in het dialoogvenster **Tabeleigenschappen**[ (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+  >[!NOTE]
+  >
+  Deze elementen en kenmerken zijn standaard niet rechtstreeks beschikbaar, maar de systeembeheerder kan wel ondersteuning voor deze waarden toevoegen in het dialoogvenster **Tabeleigenschappen**[ (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
-   Als u het dialoogvenster **Tabel** het dialoogvenster waarin u **Tabeleigenschappen** tab:
+  Als u het dialoogvenster **Tabel** het dialoogvenster waarin u **Tabeleigenschappen** tab:
 
    * Definieer een geschikte **Bijschrift**.
    * U kunt het beste standaardwaarden voor **Breedte**, **Hoogte**, **Rand**, **Celopvulling** en **Celafstand** verwijderen aangezien deze eigenschappen in een globaal opmaakmodel kunnen worden ingesteld.
 
-   U kunt dan de **Celeigenschappen** om te kiezen of de cel een gegevens- of een kopcel is:
+  U kunt dan de **Celeigenschappen** om te kiezen of de cel een gegevens- of een kopcel is:
 
 * **Nadruk**: Gebruik de `<strong>` of `<em>` element om nadruk te geven. Gebruik geen koppen om tekst in alinea&#39;s te markeren.
    * Markeer de tekst die u wilt benadrukken.
    * Klik op het pictogram **B** (voor `<strong>`) of het pictogram **I** (voor `<em>`) dat wordt weergegeven in het deelvenster **Eigenschappen** (zorg ervoor dat HTML is geselecteerd).
 
-      >[!NOTE]
-      RTE in een standaard AEM installatie is opstelling aan gebruik:
-      * `<b>` for `<strong>`
-      * `<i>` for `<em>`
-
-      Ze zijn in feite hetzelfde, maar `<strong>` en `<em>` verdienen de voorkeur, aangezien deze semantisch correct HTML zijn. Uw ontwikkelingsteam kan RTE vormen om te gebruiken `<strong>` en `<em>` (in plaats van `<b>` en `<i>`) wanneer u uw projectinstantie ontwikkelt.
+     >[!NOTE]
+     >
+     RTE in een standaard AEM installatie is opstelling aan gebruik:
+     >
+     * `<b>` for `<strong>`
+     * `<i>` for `<em>`
+     >
+     Ze zijn in feite hetzelfde, maar `<strong>` en `<em>` verdienen de voorkeur, aangezien deze semantisch correct HTML zijn. Uw ontwikkelingsteam kan RTE vormen om te gebruiken `<strong>` en `<em>` (in plaats van `<b>` en `<i>`) wanneer u uw projectinstantie ontwikkelt.
 
 * **Complexe gegevenstabellen**: Soms, wanneer er complexe lijsten met twee of meer niveaus van kopballen zijn, kunnen de basiseigenschappen van de Lijst niet genoeg zijn om alle noodzakelijke structurele informatie te verstrekken. Voor dit soort complexe tabellen moeten er directe relaties worden gemaakt tussen de koppen en de bijbehorende cellen met behulp van de kenmerken **header** en **id.**
 
-   >[!NOTE]
-   Het kenmerk id is niet beschikbaar in een installatie buiten de box. Het kan worden toegelaten door de regels van HTML en serializer in RTE te vormen.
+  >[!NOTE]
+  >
+  Het kenmerk id is niet beschikbaar in een installatie buiten de box. Het kan worden toegelaten door de regels van HTML en serializer in RTE te vormen.
 
-   In de onderstaande tabel worden de koppen en id&#39;s bijvoorbeeld aangepast om een programmatische koppeling te maken voor gebruikers van ondersteunende technologie.
+  In de onderstaande tabel worden de koppen en id&#39;s bijvoorbeeld aangepast om een programmatische koppeling te maken voor gebruikers van ondersteunende technologie.
 
-   ```xml
-     <table>
-       <tr>
-         <th rowspan="2" id="h">Homework</th>
-         <th colspan="3" id="e">Exams</th>
-         <th colspan="3" id="p">Projects</th>
-       </tr>
-       <tr>
-         <th id="e1" headers="e">1</th>
-         <th id="e2" headers="e">2</th>
-         <th id="ef" headers="e">Final</th>
-         <th id="p1" headers="p">1</th>
-         <th id="p2" headers="p">2</th>
-         <th id="pf" headers="p">Final</th>
-       </tr>
-       <tr>
-         <td headers="h">15%</td>
-         <td headers="e e1">15%</td>
-         <td headers="e e2">15%</td>
-         <td headers="e ef">20%</td>
-         <td headers="p p1">10%</td>
-         <td headers="p p2">10%</td>
-         <td headers="p pf">15%</td>
-       </tr>
-     </table>
-   ```
+  ```xml
+    <table>
+      <tr>
+        <th rowspan="2" id="h">Homework</th>
+        <th colspan="3" id="e">Exams</th>
+        <th colspan="3" id="p">Projects</th>
+      </tr>
+      <tr>
+        <th id="e1" headers="e">1</th>
+        <th id="e2" headers="e">2</th>
+        <th id="ef" headers="e">Final</th>
+        <th id="p1" headers="p">1</th>
+        <th id="p2" headers="p">2</th>
+        <th id="pf" headers="p">Final</th>
+      </tr>
+      <tr>
+        <td headers="h">15%</td>
+        <td headers="e e1">15%</td>
+        <td headers="e e2">15%</td>
+        <td headers="e ef">20%</td>
+        <td headers="p p1">10%</td>
+        <td headers="p p2">10%</td>
+        <td headers="p pf">15%</td>
+      </tr>
+    </table>
+  ```
 
-   U bereikt dit in AEM door de markering rechtstreeks toe te voegen met de bronbewerkingsmodus.
+  U bereikt dit in AEM door de markering rechtstreeks toe te voegen met de bronbewerkingsmodus.
 
-   >[!NOTE]
-   Deze functionaliteit is niet onmiddellijk beschikbaar in een standaardinstallatie. Het vereist configuratie van RTE, de regels van HTML, en serializer.
+  >[!NOTE]
+  >
+  Deze functionaliteit is niet onmiddellijk beschikbaar in een standaardinstallatie. Het vereist configuratie van RTE, de regels van HTML, en serializer.
 
 #### Meer informatie - Informatie en relaties (1.3.1) {#more-information-info-and-relationships}
 
@@ -426,6 +435,7 @@ Ontwerpers richten zich vaak op visuele ontwerpfuncties, zoals kleur, vorm, teks
 Op dezelfde manier biedt informatie die onderscheid moet maken tussen verschillende geluiden (bijvoorbeeld mannelijke of vrouwelijke gesproken inhoud) toegankelijkheidsbelemmeringen voor mensen met gehoorstoornissen, als deze informatie niet wordt weerspiegeld in een tekstalternatief voor de audio-inhoud.
 
 >[!NOTE]
+>
 Raadpleeg voor vereisten met betrekking tot alternatieven voor kleur [Gebruik van kleur](#use-of-color).
 
 #### Voldoen aan sensorische kenmerken (1.3.3) {#how-to-meet-sensory-characteristics}
@@ -436,6 +446,7 @@ Zorg ervoor dat alle informatie die afhankelijk is van visuele kenmerken van pag
 * Vertrouw niet op tekstopmaak (bijvoorbeeld vette of cursieve tekst) als enige manier om informatie over te brengen.
 
 >[!NOTE]
+>
 Het gebruik van beschrijvende termen is aanvaardbaar als ze in een niet-visuele context zinvol worden geacht. Als u bijvoorbeeld *boven* en *onder* in het algemeen aanvaardbaar zou zijn, aangezien zij inhoud vóór en na een bepaald inhoudselement inhouden; dit zou nog steeds zinvol zijn wanneer de inhoud hardop wordt gehoord .
 
 #### Meer informatie - Sensorische kenmerken (1.3.3) {#more-information-sensory-characteristics}
@@ -454,6 +465,7 @@ Het gebruik van beschrijvende termen is aanvaardbaar als ze in een niet-visuele 
 * Gebruik van kleur: Kleur wordt niet gebruikt als de enige visuele manier om informatie over te brengen, een handeling aan te geven, een reactie te vragen of een visueel element te onderscheiden.
 
 >[!NOTE]
+>
 Dit succescriterium richt zich specifiek op kleurwaarneming. Andere vormen van perceptie worden behandeld in [Aanpasbaar (1.3)](#adaptable); inclusief programmatische toegang tot kleur en andere codering van de visuele presentatie.
 
 #### Doel - Gebruik van kleur (1.4.1) {#purpose-use-of-color}
@@ -492,6 +504,7 @@ Personen die schermleessoftware gebruiken, kunnen het moeilijk vinden om de spra
 Daarom is het belangrijk dat de gebruiker het achtergrondgeluid kan uitschakelen.
 
 >[!NOTE]
+>
 Als u het volume wilt regelen, kunt u het volume tot nul terugbrengen.
 
 #### Ontmoeten - Audiocontrole (1.4.2) {#how-to-meet-audio-control}
@@ -512,8 +525,9 @@ Volg de onderstaande richtlijnen [Voldoen aan criteria 1.4.2](https://www.w3.org
    * Incidental: Tekst of afbeeldingen van tekst die deel uitmaken van een niet-actieve gebruikersinterfacecomponent, die [puur versieren](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), die voor niemand zichtbaar zijn of die deel uitmaken van een afbeelding die belangrijke andere visuele inhoud bevat, hebben geen contrastvereisten.
    * Logotypes: Voor tekst die deel uitmaakt van een logo of merknaam is geen minimaal contrast vereist.
 
-   >[!NOTE]
-   Zie [Werken met niet-tekstcontrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) voor meer informatie, om ervoor te zorgen dat de auteurs van inhoud de extra vereisten rond niet-tekstelementen (met inbegrip van pictogrammen, interface elementen, onder andere) begrijpen.
+  >[!NOTE]
+  >
+  Zie [Werken met niet-tekstcontrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) voor meer informatie, om ervoor te zorgen dat de auteurs van inhoud de extra vereisten rond niet-tekstelementen (met inbegrip van pictogrammen, interface elementen, onder andere) begrijpen.
 
 #### Doel - Contrast (minimaal) (1.4.3) {#purpose-contrast-minimum}
 
@@ -523,6 +537,7 @@ Mensen met een bepaalde visuele handicap kunnen mogelijk geen onderscheid maken 
 * De kleurcodering van tekst (zoals koppelingstekst en niet-koppelingstekst) is belangrijk voor het maken van onderscheid tussen gegevens.
 
 >[!NOTE]
+>
 Tekst die uitsluitend voor decoratiedoeleinden wordt gebruikt, valt niet onder dit succescriterium.
 
 #### Hoe moet ik voldoen - Contrast (minimaal) (1.4.3) {#how-to-meet-contrast-minimum}
@@ -534,15 +549,18 @@ Zorg ervoor dat de tekst voldoende contrasteert met de achtergrond. Contrastverh
 * Als een achtergrond een patroon krijgt, moet de achtergrond rondom elke tekst worden gearceerd, zodat de verhouding van 4,5:1 of 3:1 behouden blijft.
 
 >[!NOTE]
+>
 Vergeet niet dat lettertypen kunnen verschillen in de manier waarop ze de equivalente PT/PX/EM-grootte weergeven.
+>
 Gebruik een goede beoordeling en fout aan de kant van leesbaarheid en bruikbaarheid wanneer u de juiste lettertypen selecteert en de grootte instelt voor webinhoud.
 
 >[!NOTE]
+>
 Voer een webzoekopdracht uit in de volgende zinnen om gereedschappen te zoeken die u kunnen helpen bij het omzetten in andere eenheden:
+>
 * Px naar Em-calculator <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
 * Omzetting lettergrootte: pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
 * Pixel naar EM-converter <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
-
 
 Als u contrastverhoudingen wilt controleren, gebruikt u een gereedschap voor kleurcontrast, zoals het gereedschap [Paciello Group Color Contrast Analyzer](https://www.tpgi.com/resources/contrast-analyser.html) of de [Controle van webAIM-kleurcontrast](https://webaim.org/resources/contrastchecker/). Met deze gereedschappen kunt u kleurenparen controleren en contrastproblemen melden.
 
@@ -583,6 +601,7 @@ Naast de toepassing van de richtsnoeren [Voldoen aan criteria 1.4.4](https://www
    * Essentieel: Een bepaalde presentatie van de tekst is van essentieel belang voor de informatie die wordt doorgegeven.
 
 >[!NOTE]
+>
 Logotypen (tekst die deel uitmaakt van een logo of merknaam) worden als essentieel beschouwd.
 
 #### Doel - Afbeeldingen van tekst (1.4.5) {#purpose-images-of-text}
@@ -718,6 +737,7 @@ Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggest
 * Drie Flash of onder drempelwaarde: Webpagina&#39;s bevatten niets dat meer dan drie keer knippert in een periode van één seconde, of de flits is onder de algemene flash- en rode flitsdrempels.
 
 >[!NOTE]
+>
 Omdat inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van een gebruiker om de hele pagina te gebruiken kan beïnvloeden, moet alle inhoud op de webpagina (of deze nu wordt gebruikt om aan andere succescriteria te voldoen of niet) aan dit succescriterium voldoen. Zie [Conformiteitseis 5: Niet-interferentie](https://www.w3.org/TR/WCAG/#cc5).
 
 #### Doel - Drie Flash of onder de drempelwaarde (2.3.1) {#purpose-three-flashes-or-below-threshold}
@@ -844,6 +864,7 @@ John Smith's publications
 ```
 
 >[!NOTE]
+>
 Het bovenstaande fragment is een illustratie. Het wordt aanbevolen de **Afbeelding** component.
 
 Hoewel u aangeraden wordt koppelingstekst te verschaffen die het doel van de koppeling aangeeft zonder dat u een extra context nodig hebt, wordt wel herkend dat dit niet altijd mogelijk is. Contextvrije koppelingen kunnen in de volgende gevallen worden gebruikt, waarvan HTML-voorbeelden te vinden zijn in [Voldoen aan criterium 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
@@ -953,14 +974,15 @@ Het doel van dit succescriterium is ervoor te zorgen dat tekst en andere taalkun
 Om aan dit succescriterium te voldoen, kan de standaardtaal van een webpagina worden geïdentificeerd met behulp van de `lang` attribuut binnen `<html>` -element boven aan de pagina. Bijvoorbeeld:
 
 * Als een pagina in het Engels is geschreven, `<html>` Het element moet als volgt worden gelezen:
-   `<html lang = "en">`
+  `<html lang = "en">`
 
 * Overwegende dat voor een in het Spaans af te geven pagina de volgende norm moet worden vastgesteld:
-   `<html lang = "es">`
+  `<html lang = "es">`
 
 AEM wordt de standaardtaal van de pagina ingesteld bij het maken van de pagina, maar kan ook worden gewijzigd bij het bewerken [Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md).
 
 >[!NOTE]
+>
 AEM voorziet in verdere verfijning voor variaties van een worteltaal; bijvoorbeeld Amerikaans Engels - en-us, Brits Engels - en-gb en Canadees Engels - en-ca. Dit detailniveau is vaak overbodig voor ondersteunende hulpmiddelen, maar kan worden gebruikt voor regionale variaties in pagina-inhoud.
 
 #### Meer informatie - Taal van pagina (3.1.1) {#more-information-language-of-page}
@@ -996,6 +1018,7 @@ De `lang` kan worden gebruikt om wijzigingen in de taal van de inhoud te identif
 ```
 
 >[!NOTE]
+>
 Blockquotes worden niet ondersteund in een out-of-the-box-instantie. Een aangepaste component kan worden ontwikkeld ter ondersteuning van de functie.
 
 Op dezelfde manier kan de browser een ongewoon woord of een ongewone woordgroep correct weergeven als de `span` element wordt als volgt gebruikt:
@@ -1005,6 +1028,7 @@ Op dezelfde manier kan de browser een ongewoon woord of een ongewone woordgroep 
 ```
 
 >[!NOTE]
+>
 Dit succescriterium hoeft niet te worden gevolgd wanneer namen of steden in verschillende talen worden opgenomen of wanneer leningswoorden of woordgroepen worden gebruikt die in de standaardtaal gangbaar zijn geworden (zoals *overlijden* in het Engels).
 
 Om het spanwijdtelement, met een aangewezen taal toe te voegen, kunt u uw prijsverhoging van HTML op de bron uitgeven wijze van RTE zodat het zoals hierboven leest. Als alternatief `lang` attributen kunnen in RTE door een systeembeheerder worden omvat (zie [Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).

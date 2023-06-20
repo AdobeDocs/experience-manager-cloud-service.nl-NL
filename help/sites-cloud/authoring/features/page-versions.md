@@ -2,10 +2,10 @@
 title: Werken met paginaversies
 description: Versies van een pagina maken, vergelijken en herstellen
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 4%
+source-wordcount: '1512'
+ht-degree: 3%
 
 ---
 
@@ -64,17 +64,17 @@ Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op vers
 
 * de **Deze versie herstellen** van de [Tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) spoor
 
-   Vorige versie van geselecteerde pagina opnieuw installeren.
+  Vorige versie van geselecteerde pagina opnieuw installeren.
 
 * de **Herstellen** opties van boven [werkbalk Handelingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
 
    * **Versie herstellen**
 
-      Hiermee herstelt u versies van opgegeven pagina&#39;s in de geselecteerde map. dit kan ook het herstellen van pagina&#39;s omvatten die eerder zijn verwijderd.
+     Hiermee herstelt u versies van opgegeven pagina&#39;s in de geselecteerde map. dit kan ook het herstellen van pagina&#39;s omvatten die eerder zijn verwijderd.
 
    * **Boom herstellen**
 
-      Zet een versie van een volledige boom op een gespecificeerde datum en tijd opnieuw op; hieronder kunnen pagina&#39;s vallen die eerder zijn verwijderd.
+     Zet een versie van een volledige boom op een gespecificeerde datum en tijd opnieuw op; hieronder kunnen pagina&#39;s vallen die eerder zijn verwijderd.
 
 >[!NOTE]
 >
@@ -87,7 +87,6 @@ Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op vers
 >1. De eerste versie opnieuw installeren; d.w.z. 1.0.
 >1. Maak opnieuw nieuwe versies.
 >1. De gegenereerde labels en knooppuntnamen zijn nu 1.0.0, 1.0.1, 1.0.2 enzovoort.
-
 
 ### Versie herstellen {#revert-to-a-version}
 
@@ -115,7 +114,6 @@ Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de hui
    >Indien:
    >* u één pagina hebt geselecteerd die nooit onderliggende pagina&#39;s heeft gehad,
    >* of geen van de pagina&#39;s in de map een versie heeft,
-
    >
    >Dan zal de vertoning leeg zijn aangezien er geen toepasselijke versies zijn.
 
@@ -153,7 +151,7 @@ Deze methode kan worden gebruikt om een versie van een boom op een gespecificeer
 
    * Als deze optie actief is (geselecteerd), blijven niet-versioned pagina&#39;s behouden en worden deze niet beïnvloed door het terugzetten.
 
-   * Als de optie inactief (niet geselecteerd) is, worden alle pagina&#39;s zonder versiebeheer verwijderd, omdat deze niet in de versiestructuur bestonden.
+   * Als de optie inactief (niet geselecteerd) is, worden niet-versioned pagina&#39;s verwijderd, omdat deze niet in de versioned boom bestonden.
 
 1. Selecteren **Herstellen** voor de geselecteerde versie van de boomstructuur die moet worden hersteld als de *huidig* versie.
 
@@ -197,7 +195,7 @@ Timewarp is een eigenschap die wordt ontworpen om het *gepubliceerd* staat van e
 >
 >[Tijdverdraaiing kan ook worden gebruikt bij Startpagina&#39;s om een voorvertoning van de toekomst weer te geven.](/help/sites-cloud/authoring/launches/preview.md)
 
-Omdat content creation een doorlopend en gezamenlijk proces is, is het doel van Timewarp om auteurs in staat te stellen de gepubliceerde website in de loop van de tijd bij te houden om te begrijpen hoe de inhoud is gewijzigd. Deze functie gebruikt de paginaversies om de status van de publicatieomgeving te bepalen.
+Omdat content creation een doorlopend en gezamenlijk proces is, is het doel van Timewarp om auteurs in staat te stellen de gepubliceerde website in de loop van de tijd bij te houden, zodat ze kunnen begrijpen hoe de inhoud is gewijzigd. Deze functie gebruikt de paginaversies om de status van de publicatieomgeving te bepalen.
 
 Dit doet u als volgt:
 

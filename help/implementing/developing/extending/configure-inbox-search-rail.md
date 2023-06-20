@@ -2,9 +2,9 @@
 title: Hoe te om onderzoeksfilters voor Inbox te vormen?
 description: Leer hoe u zoekfilters voor Inbox-items configureert.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '915'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ De configuratiewijzigingen worden weerspiegeld wanneer u de pagina Filters opent
 
 >[!NOTE]
 >
->In het artikel worden de meest recente gebruikersinterfaceopties weergegeven. De optienamen worden in de volgende release bijgewerkt in de gebruikersinterface.
+>In het artikel worden de meest recente gebruikersinterfaceopties weergegeven. De optienamen worden bijgewerkt in de gebruikersinterface van de volgende release.
 
 ## Tekstvoorspelling configureren {#text-predicate}
 

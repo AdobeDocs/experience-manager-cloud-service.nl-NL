@@ -2,9 +2,9 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1732'
 ht-degree: 6%
 
 ---
@@ -28,7 +28,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. Controleer de innamecontrolelijst en zorg ervoor dat alle stappen zijn voltooid. Dit zijn noodzakelijke stappen om een succesvolle inname te waarborgen. U kunt doorgaan naar de **Volgende** stap alleen als de checklist is voltooid.
+1. Controleer de innamecontrolelijst en zorg ervoor dat alle stappen zijn voltooid. Dit zijn noodzakelijke stappen om een succesvolle inname te waarborgen. Ga door naar de **Volgende** stap alleen als de checklist is voltooid.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -36,20 +36,20 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
    * Selecteer de migratieset die de geëxtraheerde gegevens als bron bevat.
       * De Reeksen van de migratie zullen verlopen na een lange periode van inactiviteit, zodat wordt verwacht dat de inname vrij snel na de extractie plaatsvindt. Controleren [Vervaldatum migratieset](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor meer informatie.
-   * Selecteer de doelomgeving. Dit is waar de inhoud van de migratieset wordt opgenomen. Selecteer de laag. (Auteur/Publicatie). Snelle ontwikkelomgevingen worden niet ondersteund.
+   * Selecteer de doelomgeving. In deze omgeving wordt de inhoud van de migratieset opgenomen. Selecteer de laag. (Auteur/Publicatie). Snelle ontwikkelomgevingen worden niet ondersteund.
 
    >[!NOTE]
    >De volgende opmerkingen zijn van toepassing op het opnemen van inhoud:
    > Als de bron Auteur was, wordt het geadviseerd om het in de rij van de Auteur op het doel op te nemen. Als de bron Publiceren was, zou het doel ook Publiceren moeten zijn.
-   > Als de doellaag `Author`, wordt de instantie van de auteur afgesloten tijdens de duur van de opname en is niet beschikbaar voor gebruikers (bijvoorbeeld auteurs of personen die onderhoud uitvoeren, enz.). Dit is om het systeem te beschermen, en om het even welke veranderingen te verhinderen die of zouden kunnen of een innameconflict veroorzaken. Zorg ervoor dat uw team zich hiervan bewust is. Houd er ook rekening mee dat de omgeving tijdens het opnemen door de auteur wordt gehiberiseerd.
+   > Als de doellaag `Author`, is de auteursinstantie sluiting tijdens de lengte van de opname en niet beschikbaar voor gebruikers (bijvoorbeeld auteurs of iedereen die onderhoud uitvoert). De reden is om het systeem te beschermen en om eventuele veranderingen te voorkomen die verloren zouden kunnen gaan of een innameconflict zouden kunnen veroorzaken. Zorg ervoor dat uw team zich hiervan bewust is. Houd er ook rekening mee dat de omgeving tijdens de opname door de auteur wordt genegeerd.
    > U kunt de optionele pre-copy stap uitvoeren om de innamefase aanzienlijk te versnellen. Zie [Inschakelen met AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer informatie .
-   > Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om de opname van de Auteur eerst alleen in werking te stellen. Hierdoor wordt de opname voor publiceren sneller wanneer deze later wordt uitgevoerd.
-   > Ingesties steunen geen Snelle bestemming van de Milieu van de Ontwikkeling (RDE). Zij zullen niet als mogelijke bestemmingskeus verschijnen, zelfs als de gebruiker toegang tot het heeft.
+   > Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om de opname van de Auteur eerst alleen in werking te stellen. Als u dit doet, wordt de opname Publish sneller wanneer deze later wordt uitgevoerd.
+   > De oplossingen steunen geen bestemming van de Milieu van de Snelle Ontwikkeling (RDE) en verschijnen niet als mogelijke bestemmingskeus, zelfs als de gebruiker toegang tot het heeft.
 
    >[!IMPORTANT]
    > De volgende belangrijke kennisgevingen zijn van toepassing op het opnemen van inhoud:
-   > U kunt alleen een opname in de doelomgeving starten als u tot de lokale omgeving behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u geen inname kunt starten, raadpleegt u [Kan inname niet starten](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) voor meer informatie .
-   > Als de instelling **Sluitereffect** wordt ingeschakeld voordat de inhoud wordt ingevoerd, wordt de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt ingevoerd. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die is toegevoegd aan de **beheerders** groep. U zult aan de beheerdersgroep opnieuw moeten worden toegevoegd om een opname te beginnen.
+   > U kunt een opname aan het bestemmingsmilieu in werking stellen slechts als u tot lokaal behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u geen inname kunt starten, raadpleegt u [Kan inname niet starten](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) voor meer informatie .
+   > Als de instelling **Sluitereffect** wordt ingeschakeld voordat de inhoud wordt ingevoerd, wordt de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt ingevoerd. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die is toegevoegd aan de **beheerders** groep. U moet aan de beheerdersgroep opnieuw worden toegevoegd om een opname te beginnen.
 
 1. Klikken op **Ingest**
 
@@ -118,11 +118,11 @@ U moet het migratietoken handmatig ophalen door op de koppeling &#39;Token ophal
 
 >[!NOTE]
 >
->Het token is beschikbaar voor gebruikers die tot de lokale server behoren **AEM** groep op de de auteursdienst van de bestemmingsCloud Service.
+>De token is beschikbaar voor gebruikers die tot de lokale server behoren **AEM** groep op de de auteursdienst van de bestemmingsCloud Service.
 
 ### Kan inname niet starten {#unable-to-start-ingestion}
 
-U kunt alleen een opname in de doelomgeving starten als u tot de lokale omgeving behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u niet tot de groep van AEM beheerders behoort, zult u een fout zoals hieronder getoond zien wanneer u probeert om een opname te beginnen. U kunt de beheerder vragen om u toe te voegen aan de lokale **AEM** of vraag om de token zelf, die u vervolgens in de **Invoer van migratietoken** veld.
+U kunt een opname aan het bestemmingsmilieu in werking stellen slechts als u tot lokaal behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u niet tot de groep van AEM beheerders behoort, zult u een fout zoals hieronder getoond zien wanneer u probeert om een opname te beginnen. U kunt de beheerder vragen om u toe te voegen aan de lokale **AEM** of vraag om de token zelf, die u vervolgens in de **Invoer van migratietoken** veld.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -138,7 +138,7 @@ Dit geeft aan dat de Cloud Acceleration Manager de migratieservice van de doelom
 > 
 > Het veld &quot;Migratietoken&quot; wordt weergegeven omdat het ophalen van dat token in sommige gevallen niet is toegestaan. Door het handmatig aanbrengen van de injectie toe te staan, kan de gebruiker de opname snel starten, zonder extra hulp. Als het token is opgegeven en het bericht nog steeds wordt weergegeven, was het ophalen van het token niet het probleem.
 
-* AEM as a Cloud Service handhaaft de milieustaat, en kan af en toe de migratiedienst om een aantal normale redenen moeten opnieuw beginnen. Als die dienst opnieuw begint, kan het niet worden bereikt, maar zal spoedig beschikbaar zijn.
+* AEM as a Cloud Service handhaaft de milieustaat, en kan af en toe de migratiedienst om een aantal normale redenen moeten opnieuw beginnen. Als die dienst opnieuw begint, kan het niet worden bereikt, maar is gewoonlijk beschikbaar spoedig.
 * Het is mogelijk dat er een ander proces wordt uitgevoerd op de instantie. Bijvoorbeeld, als het Orchestrator van de Versie een update toepast, kan het systeem bezig zijn en de migratiedienst regelmatig niet beschikbaar. Daarom wordt het ten zeerste aanbevolen om updates tijdens een opname te pauzeren, en de mogelijkheid om het werkgebied of de productie-instantie te beschadigen.
 * Als een [IP de Lijst van gewenste personen is toegepast](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager wordt de toegang tot de migratieservice geblokkeerd door Cloud Acceleration Manager. Een IP adres kan niet voor ingesties worden toegevoegd omdat zijn adres zeer dynamisch is. Momenteel, is de enige oplossing de IP lijst van gewenste personen onbruikbaar te maken terwijl de opname loopt.
 * Er kunnen andere redenen zijn die een onderzoek vereisen. Neem contact op met de klantenservice van Adobe als de opname nog steeds mislukt.

@@ -2,9 +2,9 @@
 title: Kenmerken en typen
 description: Leer over de gegevensattributen en de types die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '659'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 | `richtext` | Tekst kan worden bewerkt met volledige tekstopties. RTE wordt weergegeven in het rechterdeelvenster | Optioneel | Vereist | n.v.t. | Optioneel | n.v.t. | Optioneel |
 | `media` | Het bewerkbare element is een element, bijvoorbeeld een afbeelding of video | Optioneel | Vereist | Optioneel<br>lijst met afbeeldings- of videofiltercriteria die worden doorgegeven aan de elementenkiezer | Optioneel | n.v.t. | Optioneel |
 | `container` | Het bewerkbare gedrag gedraagt zich als container voor componenten o.a. het Systeem van de Paragraaf. | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>een lijst met toegestane componenten | Optioneel | n.v.t. | n.v.t. |
-| `component` | Het bewerkbare item is een component. Hiermee wordt geen aanvullende functionaliteit toegevoegd, vereist om beweegbare/verplaatsbare delen van het DOM aan te geven en om de spoorweg en de velden van de eigendommen te openen | Vereist | n.v.t. | n.v.t. | Optioneel | Optioneel | n.v.t. |
+| `component` | Het bewerkbare item is een component. Toevoegt geen extra functionaliteit, is vereist om beweegbare/delfbare delen van het DOM en voor het openen van het vastgoed per spoor en zijn gebieden aan te geven | Vereist | n.v.t. | n.v.t. | Optioneel | Optioneel | n.v.t. |
 | `reference` | Het bewerkbare item is een verwijzing, bijvoorbeeld een inhoudsfragment, een ervaringsfragment of een product | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>lijst met filtercriteria voor Content Fragment, Product of Experience Fragment die worden doorgegeven aan de referentiekiezer | Optioneel | Optioneel | n.v.t. |
 
 Afhankelijk van het gebruiksgeval `itemprop` of `itemid` al dan niet verplicht zijn. Bijvoorbeeld:
@@ -59,7 +59,7 @@ Afhankelijk van het gebruiksgeval `itemprop` of `itemid` al dan niet verplicht z
 
 Zie deze documenten voor meer informatie over de Universal Editor.
 
-* [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken om buitengewone ervaringen te bieden, de snelheid van de inhoud te verhogen en een geavanceerde ontwikkelaarservaring te bieden.
+* [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken, zodat u uitzonderlijke ervaringen kunt opdoen, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
 * [Inhoud ontwerpen met de Universal Editor](authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
 * [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Aan de slag met de Universal Editor in AEM](getting-started.md) - Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.

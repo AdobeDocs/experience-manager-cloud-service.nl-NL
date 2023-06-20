@@ -4,9 +4,9 @@ description: Belangrijke beveiligingsoverwegingen bij het gebruik van AEM as a C
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## AEM Trust Store {#aem-trust-store}
 
-Om asymmetrische, cryptografische verrichtingen te steunen, AEM certificaten binnen de inhoudsbewaarplaats, in een globaal vertrouwen-opslag op. De inhoud is openbaar en is standaard anoniem toegankelijk voor iedereen op uitgeversexemplaren.
+Om asymmetrische, cryptografische verrichtingen te steunen, AEM slaat certificaten binnen de inhoudsbewaarplaats, in een globaal vertrouwen-opslag op. De inhoud is openbaar en is standaard anoniem toegankelijk voor iedereen op uitgeversexemplaren.
 
 ### Kenmerken van de Trust Store {#truststore-characteristics}
 
@@ -24,7 +24,7 @@ Om asymmetrische, cryptografische verrichtingen te steunen, AEM certificaten bin
 * Klanten kunnen het in hun eigen code gebruiken door [sleutelarchief-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * De trust-opslag kan door UI bij worden beheerd **Gereedschappen** - **Beveiliging** - **Trust Store** of door toegang *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, zoals hieronder weergegeven:
 
-   ![Betrouwbaarheidswinkelbeheer](/help/security/assets/global-trust-store-modified.png)
+  ![Betrouwbaarheidswinkelbeheer](/help/security/assets/global-trust-store-modified.png)
 
 * De toegang tot de trust-opslag kan verder worden beperkt door de toegangscontrole van de bewaarplaats afhankelijk van het gebruik-geval.
 

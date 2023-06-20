@@ -2,9 +2,9 @@
 title: DNS-instellingen configureren
 description: DNS-instellingen configureren
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 60b496024b3d012033309632999851c08f43c5d7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Nadat uw naam van het douanedomein met succes wordt geverifieerd en opgesteld, b
 
 ## Wat zijn DNS-instellingen? {#dns-settings}
 
-A `CNAME` of Een record: wanneer provisioned is, wordt al het internetverkeer voor het domein doorgestuurd naar de locatie waar het naartoe wijst. Als die plaats niet provisioned is om het verkeer te dienen, zal er een stroomonderbreking zijn. Als het niet is getest, kunnen er fouten in de inhoud optreden. Daarom wordt deze stap altijd uitgevoerd nadat het testen is voltooid en u klaar bent om live te gaan.
+A `CNAME` of Een record: wanneer provisioned is, wordt al het internetverkeer voor het domein doorgestuurd naar de locatie waar het naartoe wijst. Als die plaats niet provisioned is om het verkeer te dienen, is er een stroomonderbreking. Als het niet is getest, kunnen er fouten in de inhoud optreden. Daarom wordt deze stap altijd uitgevoerd nadat het testen is voltooid en u klaar bent om live te gaan.
 
 Om deze montages te vormen, moet u bepalen als `CNAME` of Apex-record moet zo zijn geconfigureerd dat uw aangepaste domeinnaam naar de domeinnaam van Cloud Manager wordt verwezen. De volgende secties zullen u helpen bepalen welk type van verslag voor uw DNS configuratie aangewezen is.
 

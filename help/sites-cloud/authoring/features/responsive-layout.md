@@ -2,9 +2,9 @@
 title: Responsieve lay-out
 description: AEM kunt u een responsieve lay-out voor uw pagina's maken
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1764'
 ht-degree: 7%
 
 ---
@@ -28,11 +28,11 @@ AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinati
 
 * [**Layout Container**](#adding-a-layout-container-and-its-content-edit-mode) component
 
-   Deze component is beschikbaar in het dialoogvenster [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) en biedt een rasteralineasysteem waarmee u componenten kunt toevoegen en positioneren binnen een responsief raster. Deze kan ook als het standaardalineasysteem op de pagina worden ingesteld.
+  Deze component is beschikbaar in het dialoogvenster [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) en biedt een rasteralineasysteem waarmee u componenten kunt toevoegen en positioneren binnen een responsief raster. Deze kan ook als het standaardalineasysteem op de pagina worden ingesteld.
 
 * [**Lay-outmodus**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
-   Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht **Layout** om inhoud binnen het responsieve raster te plaatsen.
+  Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht **Layout** om inhoud binnen het responsieve raster te plaatsen.
 
 * [**Emulator**](#selecting-a-device-to-emulate)
 Zo kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat of venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
@@ -124,7 +124,6 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
    * De lijn voor de vouwlijn wordt niet weergegeven als de hoogte van het geëmuleerde apparaat groter is dan de schermgrootte.
    * De vouw wordt getoond voor het gemak van de auteur en niet op de gepubliceerde pagina getoond.
 
-
 ## Een lay-outcontainer en de bijbehorende content toevoegen (modus Bewerken) {#adding-a-layout-container-and-its-content-edit-mode}
 
 A **Layout Container** is een alineasysteem dat:
@@ -160,7 +159,7 @@ Net als bij andere componenten kunt u een Layout Container selecteren en vervolg
 
 1. Als de lay-outcomponent genest is, selecteert u de **Bovenliggend** bevat een vervolgkeuzelijst, waarmee u de geneste lay-outcontainer of de bovenliggende container(s) kunt selecteren.
 
-   Wanneer u de muis boven de containernamen in de vervolgkeuzelijst plaatst, wordt de omtrek van de namen op de pagina weergegeven.
+   Wanneer u de muis boven de containernamen in de vervolgkeuzelijst plaatst, worden de contouren ervan weergegeven op de pagina.
 
    * De laagst geneste container voor de layout wordt omgeven door een blauwe omtrek.
    * Elke volgende container zal een lichtere schaduw van blauw zijn.
@@ -190,53 +189,54 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 
 * Wijzig de grootte van de inhoudcomponenten met de blauwe stippen. Het resizing zal altijd breken-aan-net. Wanneer u het formaat van het achtergrondraster wijzigt, wordt dit weergegeven als hulp bij het uitlijnen:
 
-   ![Formaat van componenten wijzigen](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+  ![Formaat van componenten wijzigen](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
-   >[!NOTE]
-   >
-   >Verhoudingen en verhoudingen blijven behouden wanneer componenten zoals **Afbeeldingen** worden vergroot of verkleind.
+  >[!NOTE]
+  >
+  >Verhoudingen en verhoudingen blijven behouden wanneer componenten zoals **Afbeeldingen** worden vergroot of verkleind.
 
 * Klik/tik op een inhoudscomponent, op de werkbalk kunt u:
    * **Bovenliggend** - Hiermee kunt u de volledige containercomponent voor de lay-out selecteren om actie te ondernemen over het geheel.
    * **Zweven naar nieuwe regel** - De component wordt naar een nieuwe regel verplaatst, afhankelijk van de ruimte die beschikbaar is in het raster.
    * **Component verbergen** - De component wordt onzichtbaar gemaakt (u kunt deze herstellen vanaf de werkbalk van de container voor lay-outs).
 
-   ![Component verbergen](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
+  ![Component verbergen](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
 * In **Layout** modus waarop u kunt tikken of klikken op de knop **Componenten hierheen slepen** om de volledige component te selecteren. De werkbalk voor deze modus wordt dan weergegeven.
 
-   De werkbalk heeft verschillende opties, afhankelijk van de status van de lay-outcomponent en de onderdelen ervan. Bijvoorbeeld:
+  De werkbalk heeft verschillende opties, afhankelijk van de status van de lay-outcomponent en de onderdelen ervan. Bijvoorbeeld:
 
    * **Bovenliggend** - Selecteer de bovenliggende component.
 
-      ![Bovenliggende knop](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+     ![Bovenliggende knop](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
    * **Verborgen componenten tonen** - Alle of afzonderlijke componenten tonen. Het getal geeft aan hoeveel verborgen componenten er momenteel zijn. De teller toont hoeveel componenten verborgen zijn.
 
-      ![Knop Verborgen componenten tonen](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
+     ![Knop Verborgen componenten tonen](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
    * **De indeling van het onderbrekingspunt herstellen** - De standaardlay-out herstellen. Dit betekent dat er geen aangepaste indeling wordt opgelegd.
 
-      ![De knop voor de indeling van onderbrekingspunten herstellen](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+     ![De knop voor de indeling van onderbrekingspunten herstellen](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
    * **Zweven naar nieuwe regel** - Verplaats de component omhoog als de afstand dit toestaat.
 
-      ![Zweven naar nieuwe regelknop](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+     ![Zweven naar nieuwe regelknop](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
    * **Component verbergen** - Verberg de huidige component.
 
-      ![Component-knop verbergen](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-   >[!NOTE]
-   >
-   >In het bovenstaande voorbeeld zijn de acties voor zweven en verbergen beschikbaar omdat deze container van de layout is genest in een bovenliggende container van de layout.
+     ![Component-knop verbergen](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
+
+  >[!NOTE]
+  >
+  >In het bovenstaande voorbeeld zijn de acties voor zweven en verbergen beschikbaar omdat deze container van de layout is genest in een bovenliggende container van de layout.
 
    * **Componenten zichtbaar maken**
-Selecteer de bovenliggende componenten om de actiewerkbalk weer te geven met de opdracht 
-**Verborgen componenten tonen** optie. In dit voorbeeld zijn twee componenten verborgen.
+Selecteer de bovenliggende componenten om de actiewerkbalk weer te geven met de opdracht **Verborgen componenten tonen** optie. In dit voorbeeld zijn twee componenten verborgen.
 
-      ![Componenten zichtbaar maken](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-   Als u de optie **Verborgen componenten weergeven** selecteert, worden de componenten die momenteel op hun oorspronkelijke positie zijn verborgen, blauw weergegeven.
+     ![Componenten zichtbaar maken](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 
-   ![Alle knoppen herstellen](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+  Als u de optie **Verborgen componenten weergeven** selecteert, worden de componenten die momenteel op hun oorspronkelijke positie zijn verborgen, blauw weergegeven.
 
-   Selecteren **Alles herstellen** alle verborgen componenten zichtbaar maken.
+  ![Alle knoppen herstellen](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+
+  Selecteren **Alles herstellen** alle verborgen componenten zichtbaar maken.

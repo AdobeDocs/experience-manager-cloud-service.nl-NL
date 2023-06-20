@@ -1,9 +1,9 @@
 ---
 title: AEM Documentenreizen
-description: Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en verschillende functies te koppelen om een zakelijk doel op een manier van best practices op te lossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
+description: Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en ongelijke functies te koppelen, zodat u een zakelijk doel op een manier van best practices kunt oplossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AEM Documentenreizen {#aem-documentation-journeys}
 
-Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en verschillende functies te koppelen om een zakelijk doel op een manier van best practices op te lossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
+Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en ongelijke functies te koppelen, zodat u een zakelijk doel op een manier van best practices kunt oplossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
 
 ## Wat is een documentatiereis? {#what-is}
 
@@ -82,7 +82,7 @@ Documentatiereizen zijn bedoeld als aanvulling op bestaande AEM technische docum
 
 ## Welke reizen zijn er? {#journeys}
 
-Er zijn een aantal Documentatiereizen reeds beschikbaar aan u. Aangezien elke reis als verhaal wordt ontworpen, gelieve met de inleiding te beginnen en volledig te lezen om een volledig inzicht in het onderwerp in de context van AEM te krijgen.
+Er zijn een aantal Documentatiereizen reeds beschikbaar aan u. Aangezien elke reis als verhaal wordt ontworpen, gelieve met de inleiding te beginnen en volledig door te lezen zodat kunt u een volledig inzicht van het onderwerp in de context van AEM krijgen.
 
 | Reis | Beschrijving |
 |---|---|

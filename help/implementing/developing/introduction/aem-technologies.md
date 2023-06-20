@@ -2,9 +2,9 @@
 title: Technische stichtingen AEM
 description: Een overzicht van de technische fundamenten van AEM, inclusief hoe AEM is gestructureerd en fundamentele technologieën zoals JCR, Sling en OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ De beginselen van URL-decompositie gebruiken:
 * In de toewijzing wordt het inhoudspad gebruikt dat uit de aanvraag is geëxtraheerd om de bron te zoeken.
 * Wanneer het aangewezen middel wordt gevestigd, wordt het sling middeltype gehaald, en gebruikt om van het manuscript de plaats te bepalen dat voor het teruggeven van de inhoud moet worden gebruikt.
 
-De volgende afbeelding illustreert het gebruikte mechanisme, dat in de volgende secties nader zal worden besproken.
+De volgende afbeelding illustreert het gebruikte mechanisme, dat in de volgende secties nader wordt besproken.
 
 ![URL-toewijzingsmechanisme](assets/url-mapping.png)
 
@@ -142,7 +142,7 @@ Het pad dat door de `sling:resourceType` kunnen:
 >
 >Relatieve paden worden aanbevolen door Adobe omdat ze de draagbaarheid verhogen.
 
-Alle verkoopscripts worden opgeslagen in submappen van `/apps` (veranderbaar, gebruikersmanuscripten) of `/libs` (onveranderlijk, systeemmanuscripten), die in deze orde zullen worden gezocht.
+Alle verkoopscripts worden opgeslagen in submappen van `/apps` (veranderbaar, gebruikersmanuscripten) of `/libs` (onveranderlijk, systeemmanuscripten), die in deze orde wordt gezocht.
 
 Een paar andere punten die u kunt opmerken zijn:
 
@@ -154,22 +154,22 @@ De lijst met scriptengines die door de opgegeven AEM worden ondersteund, wordt w
 Wanneer u het vorige voorbeeld gebruikt, `sling:resourceType` is `hr/jobs` vervolgens voor:
 
 * GET/HEAD-aanvragen en URL&#39;s die eindigen in `.html` (standaardaanvraagtypen, standaardindeling)
-   * Het script wordt `/apps/hr/jobs/jobs.esp`; de laatste sectie van de `sling:resourceType` vormt de bestandsnaam.
+   * Het script is `/apps/hr/jobs/jobs.esp`; de laatste sectie van de `sling:resourceType` vormt de bestandsnaam.
 * Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
-   * POST wordt gebruikt in de scriptnaam.
-   * Het script wordt `/apps/hr/jobs/jobs.POST.esp`.
+   * POST wordt gebruikt in de manuscriptnaam.
+   * Het script is `/apps/hr/jobs/jobs.POST.esp`.
 * URL&#39;s in andere indelingen, die niet eindigen met `.html`
    * Bijvoorbeeld `../content/corporate/jobs/developer.pdf`
-   * Het script wordt `/apps/hr/jobs/jobs.pdf.esp`; het achtervoegsel wordt toegevoegd aan de manuscriptnaam.
+   * Het script is `/apps/hr/jobs/jobs.pdf.esp`; het achtervoegsel wordt toegevoegd aan de manuscriptnaam.
 * URL&#39;s met kiezers
    * Kiezers kunnen worden gebruikt om dezelfde inhoud in een andere indeling weer te geven. Bijvoorbeeld een printervriendelijke versie, een rss-feed of een overzicht.
    * Als we naar een printervriendelijke versie kijken waarin de kiezer mogelijk `print`; zoals in `../content/corporate/jobs/developer.print.html`
-   * Het script wordt `/apps/hr/jobs/jobs.print.esp`; de kiezer wordt toegevoegd aan de scriptnaam.
+   * Het script is `/apps/hr/jobs/jobs.print.esp`; de kiezer wordt toegevoegd aan de scriptnaam.
 * Indien niet `sling:resourceType` is toen gedefinieerd:
    * Het inhoudspad wordt gebruikt om te zoeken naar een geschikt script (als het pad is gebaseerd op `ResourceTypeProvider` is actief).
    * Het script voor `../content/corporate/jobs/developer.html` zou een zoekopdracht genereren in `/apps/content/corporate/jobs/`.
-   * Het primaire knooppunttype zal worden gebruikt.
-* Als er helemaal geen script wordt gevonden, wordt het standaardscript gebruikt.
+   * Het primaire knooppunttype wordt gebruikt.
+* Als er geen script wordt gevonden, wordt het standaardscript gebruikt.
    * De standaardvertoning wordt momenteel ondersteund als onbewerkte tekst (`.txt`), HTML (`.html`) en JSON (`.json`), die allemaal de eigenschappen van de knoop (geschikt geformatteerd) zullen vermelden. De standaarduitvoering voor de extensie `.res`, of aanvragen zonder een verzoek om verlenging, de bron spool (waar mogelijk).
 * Voor http-foutafhandeling (codes 403 of 404) wordt met Sling gezocht naar een script op:
    * De locatie `/apps/sling/servlet/errorhandler` voor aangepaste scripts

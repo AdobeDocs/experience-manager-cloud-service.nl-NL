@@ -2,16 +2,16 @@
 title: OAuth2 Steun voor de Dienst van de Post
 description: Oauth2-ondersteuning voor de Mail Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 57667c1dda50b2a6a4ac2fccc428f5ccb252563c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
 
 # OAuth2 Steun voor de Dienst van de Post {#oauth2-support-for-the-mail-service}
 
-AEM as a Cloud Service biedt OAuth2-ondersteuning voor zijn geïntegreerde e-mailservice, zodat organisaties zich aan de vereisten voor e-mail kunnen houden.
+AEM as a Cloud Service biedt OAuth2-ondersteuning voor de geïntegreerde e-mailservice om organisaties in staat te stellen zich aan de vereisten voor e-mail te houden.
 
 U kunt OAuth voor veelvoudige e-mailleveranciers vormen. Hieronder zijn geleidelijke instructies voor het vormen van de AEMDienst van de Post via OAuth2 met Microsoft Office 365 Vooruitzichten voor authentiek te verklaren. Andere verkopers kunnen op een gelijkaardige manier worden gevormd.
 
@@ -46,15 +46,15 @@ Voor meer informatie over de AEM as a Cloud Service Dienst van de Post, zie [E-m
 
 Om opnieuw te verpakken, zult u aan de volgende informatie nodig hebben om OAuth2 voor de dienst van de Post op de AEM te vormen:
 
-* Auth URL, die met huurderidentiteitskaart zal worden geconstrueerd. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* Auth URL, die met huurderidentiteitskaart wordt geconstrueerd. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * De token-URL, die wordt samengesteld met de huurder-id. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* Vernieuwen URL, die met huurder identiteitskaart zal worden geconstrueerd. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* De vernieuwings-URL, die wordt samengesteld met de huurder-id. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * Client-id
 * Het clientgeheim
 
 ### Het genereren van het token Vernieuwen {#generating-the-refresh-token}
 
-Daarna, moet u verfrissen teken produceren, dat een deel van de configuratie OSGi in een verdere stap zal zijn.
+Daarna, moet u verfrissen teken produceren, dat een deel van de configuratie OSGi in een verdere stap is.
 
 U kunt dit doen door deze stappen te volgen:
 

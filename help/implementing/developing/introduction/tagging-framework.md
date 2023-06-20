@@ -1,10 +1,10 @@
 ---
 title: Kader voor tags AEM
-description: Taginhoud en gebruik de AEM Taginginfrastructuur om deze te categoriseren en te ordenen.
+description: Taginhoud en gebruik de AEM Tags toevoegen-infrastructuur om de inhoud te categoriseren en in te delen.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Dit artikel richt zich op het onderliggende kader dat het etiketteren in AEM ste
 
 ## Inleiding {#introduction}
 
-U kunt als volgt de inhoud labelen en de infrastructuur voor AEM tags gebruiken:
+U kunt als volgt de inhoud labelen en de AEM Tags toevoegen-infrastructuur gebruiken:
 
 * De tag moet bestaan als een knooppunt van het type [`cq:Tag`](#cq-tag-node-type) onder de [taxonomie root node.](#taxonomy-root-node)
 * Het knooppunt voor gecodeerde inhoud `NodeType` moet de [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin.
@@ -128,7 +128,6 @@ De `cq:OwnerTaggable` mixin, dat overerft van `cq:Taggable`, is bedoeld om aan t
 >* Pagina&#39;s (`cq:Page`) waarbij de `jcr:content`node is type `cq:PageContent`, met inbegrip van de `cq:Taggable` mixin.
 >* Activa (`cq:Asset`) waarbij de `jcr:content/metadata` node heeft altijd de `cq:Taggable` mixin.
 
-
 ### Node Type Notation (CND) {#node-type-notation-cnd}
 
 Node Type definities bestaan in de bewaarplaats als Cnd- dossiers. De CND-notatie wordt gedefinieerd als onderdeel van de [JCR-documentatie.](https://jackrabbit.apache.org/node-type-notation.html).
@@ -156,7 +155,7 @@ De `cq:tags` eigenschap is een `String` array die wordt gebruikt om een of meer 
 
 >[!NOTE]
 >
->Als u AEM tagfuncties wilt gebruiken, mogen door aangepaste toepassingen geen andere tageigenschappen worden gedefinieerd dan `cq:tags`.
+>Als u AEM coderingsfunctionaliteit wilt gebruiken, mogen door aangepaste toepassingen alleen eigenschappen van tags worden gedefinieerd `cq:tags`.
 
 ## Labels verplaatsen en samenvoegen {#moving-and-merging-tags}
 
@@ -171,25 +170,22 @@ Wanneer tag A wordt verplaatst of samengevoegd met tag B onder `/content/cq:tags
    * Tag A is dus verborgen en wordt alleen in de opslagplaats bewaard om tag-id&#39;s op te lossen in inhoudsknooppunten die verwijzen naar tag A.
    * De opschoonfunctie voor ongewenste details verwijdert tags zoals tag A, als er geen inhoudsknooppunten meer naar wijzen.
    * Een speciale waarde voor de `cq:movedTo` eigenschap is `nirvana`, die wordt toegepast wanneer de tag wordt verwijderd, maar niet kan worden verwijderd uit de opslagplaats omdat er subtags zijn met een `cq:movedTo` dat moet worden bewaard.
-
-      >[!NOTE]
-      >
-      >De `cq:movedTo` De eigenschap wordt alleen aan de verplaatste of samengevoegde tag toegevoegd als aan een van deze voorwaarden wordt voldaan:
-      >
-      > 1. De tag wordt gebruikt in inhoud (wat betekent dat de tag een referentie heeft). OF
-      > 1. De tag bevat onderliggende elementen die al zijn verplaatst.
-
+     >[!NOTE]
+     >
+     >De `cq:movedTo` De eigenschap wordt alleen aan de verplaatste of samengevoegde tag toegevoegd als aan een van deze voorwaarden wordt voldaan:
+     >
+     > 1. De tag wordt gebruikt in inhoud (wat betekent dat de tag een referentie heeft). OF
+     > 1. De tag bevat onderliggende elementen die al zijn verplaatst.
+     >
 * Label B wordt gemaakt (in het geval van een verplaatsing) en ontvangt een `cq:backlinks` eigenschap.
    * `cq:backlinks` houdt de verwijzingen in de andere richting, d.w.z. het houdt een lijst bij van alle markeringen die zijn verplaatst naar of samengevoegd met markering B.
    * Dit is meestal vereist om te behouden `cq:movedTo` eigenschappen zijn up-to-date wanneer tag B wordt verplaatst/samengevoegd/verwijderd of wanneer tag B wordt geactiveerd; in dat geval moeten ook alle tags met de achtergrond worden geactiveerd.
-
-      >[!NOTE]
-      >
-      >De `cq:backlinks` De eigenschap wordt alleen aan de verplaatste of samengevoegde tag toegevoegd als aan een van deze voorwaarden wordt voldaan:
-      >
-      > 1. De tag wordt gebruikt in inhoud (wat betekent dat de tag een referentie heeft). OF
-      > 1. De tag bevat onderliggende elementen die al zijn verplaatst.
-
+     >[!NOTE]
+     >
+     >De `cq:backlinks` De eigenschap wordt alleen aan de verplaatste of samengevoegde tag toegevoegd als aan een van deze voorwaarden wordt voldaan:
+     >
+     > 1. De tag wordt gebruikt in inhoud (wat betekent dat de tag een referentie heeft). OF
+     > 1. De tag bevat onderliggende elementen die al zijn verplaatst.
 
 Een `cq:tags` Voor eigenschap van een inhoudsknooppunt wordt de volgende resolutie gebruikt:
 

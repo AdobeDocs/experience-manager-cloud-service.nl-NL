@@ -4,9 +4,9 @@ description: Zodra zij de systeembeheerder opstelling de noodzakelijke wolkenmid
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Afhankelijk van uw organisatorische behoeften kunnen dezelfde gebruikers beide r
 Voordat u begint met de taken die in dit document worden beschreven als ontwikkelaar of implementatiebeheerder, moet u controleren of uw systeembeheerder alle stappen in deze instapreis heeft uitgevoerd. Dit betekent dat:
 
 * Uw systeembeheerder heeft ontwikkelaars en plaatsingsmanagers aan hun respectieve productprofielen toegewezen.
-* Ontwikkelaars moeten ook worden toegewezen aan **AEM** of **AEM** productprofielen om ook AEM te gebruiken.
+* Ontwikkelaars moeten ook worden toegewezen aan **AEM** of **AEM** ook de productprofielen gebruiken AEM.
 * Er zijn bronnen voor de cloud ingesteld.
 
 ## Toegang tot it {#accessing-git}

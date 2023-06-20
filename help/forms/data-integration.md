@@ -3,7 +3,7 @@ title: Hoe te om een gegevensbestand met te verbinden [!DNL AEM Forms] as a Clou
 seo-title: AEM Forms Data Integration
 description: U kunt gegevens ophalen en opslaan in RESTful-webservices, SOAP-webservices en OData-services van [!DNL AEM Forms] as a Cloud Service. De service biedt een speciaal hulpmiddel voor het ophalen, testen, valideren en verzenden van gegevens naar verschillende typen gegevensbronnen.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%

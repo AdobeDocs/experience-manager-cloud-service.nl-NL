@@ -2,16 +2,16 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3659'
+source-wordcount: '3649'
 ht-degree: 0%
 
 ---
 
 # Referentiehandleiding voor componenten {#components-reference-guide}
 
-Componenten vormen de kern van het opbouwen van een ervaring in AEM. De [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) maak het eenvoudig om aan de slag te gaan met een gereedschapsset kant-en-klare, robuuste componenten. De [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md) neemt de ontwikkelaar door hoe te om deze hulpmiddelen te gebruiken en hoe te om douanecomponenten te bouwen om een nieuwe AEM plaats tot stand te brengen.
+Componenten vormen de kern van het opbouwen van een ervaring in AEM. De [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) maak het eenvoudig om aan de slag te gaan met een gereedschapsset kant-en-klare, robuuste componenten. De [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md) neemt de ontwikkelaar door hoe te om deze hulpmiddelen te gebruiken en hoe te om douanecomponenten te bouwen om een AEM plaats tot stand te brengen.
 
 >[!TIP]
 >
@@ -55,7 +55,7 @@ Dit betekent dat u alleen de vereiste verschillen opnieuw hoeft te definiëren i
 
 ### Opmaak voor Content Logic en rendering  {#content-logic-and-rendering-markup}
 
-Uw component wordt weergegeven met [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Uw component moet de HTML definiëren die nodig is om de vereiste inhoud te nemen en deze vervolgens naar wens weer te geven, zowel in de auteur- als in de publicatieomgeving.
+Uw component wordt weergegeven met [HTML](https://www.w3schools.com/htmL/html_intro.asp). Uw component moet de HTML definiëren die nodig is om de vereiste inhoud te nemen en deze vervolgens naar wens weer te geven, zowel in de auteur- als in de publicatieomgeving.
 
 Het wordt aanbevolen de code die verantwoordelijk is voor opmaak en rendering, gescheiden te houden van de code die de logica regelt die wordt gebruikt om de inhoud van de component te selecteren.
 
@@ -108,7 +108,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
    * Zie de sectie [Pictogram Component](#component-icon) voor meer informatie
 * **Vital Child Nodes**:
    * `cq:editConfig (cq:EditConfig)` - Definieert de bewerkingseigenschappen van de component en zorgt ervoor dat de component wordt weergegeven in de Componentbrowser
-      * Als de component een dialoogvenster heeft, wordt dit automatisch weergegeven in de browser Components of Sidetrap, zelfs als cq:editConfig niet bestaat.
+      * Als de component een dialoogvenster heeft, wordt dit automatisch weergegeven in de browser of Sidekick Componenten, zelfs als cq:editConfig niet bestaat.
    * `cq:childEditConfig (cq:EditConfig)` - Bepaalt de UI-aspecten van de auteur van onderliggende componenten die hun eigen componenten niet definiëren `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
    * `cq:design_dialog (nt:unstructured)` - Ontwerpbewerking voor deze component
@@ -123,7 +123,7 @@ Het pictogram of de afkorting voor de component wordt gedefinieerd via JCR-eigen
    * De afkorting moet worden beperkt tot twee tekens.
    * Als u een lege tekenreeks opgeeft, wordt de afkorting opgebouwd van de eerste twee tekens van het `jcr:title` eigenschap.
       * Bijvoorbeeld &quot;Im&quot; voor &quot;Image&quot;
-      * De gelokaliseerde titel wordt gebruikt om de afkorting samen te stellen.
+      * De gelokaliseerde titel wordt gebruikt om de afkorting te bouwen.
    * De afkorting wordt alleen vertaald als de component een `abbreviation_commentI18n` eigenschap, die vervolgens wordt gebruikt als vertaalhint.
 1. `cq:icon.png` of `cq:icon.svg` - Pictogram voor deze component, die wordt weergegeven in de Componentbrowser
    * 20 x 20 pixels is de grootte van pictogrammen van standaardcomponenten.
@@ -173,7 +173,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
 | `cq:editConfig` | `cq:EditConfig` | Dit bepaalt [de configuratie van de component bewerken.](#edit-behavior) |
 | `cq:htmlTag` | `nt:unstructured` | Hiermee worden extra tagkenmerken geretourneerd die aan de omringende HTML-tag worden toegevoegd. Hiermee schakelt u het toevoegen van kenmerken aan de automatisch gegenereerde div-elementen in. |
 | `cq:noDecoration` | `Boolean` | Indien waar (true), wordt de component niet gerenderd met automatisch gegenereerde div- en css-klassen. |
-| `cq:template` | `nt:unstructured` | Indien gevonden, zal dit knooppunt als inhoudsmalplaatje worden gebruikt wanneer de component van Browser van Componenten wordt toegevoegd. |
+| `cq:template` | `nt:unstructured` | Indien gevonden, wordt dit knooppunt gebruikt als een inhoudssjabloon wanneer de component vanuit de Componentbrowser wordt toegevoegd. |
 | `jcr:created` | `Date` | Dit is de datum waarop de component is gemaakt. |
 | `jcr:description` | `String` | Dit is de beschrijving van de component. |
 | `jcr:title` | `String` | Dit is de titel van de component. |
@@ -272,11 +272,11 @@ U kunt ook rendervoorwaarden gebruiken (`rendercondition`) om te bepalen wie toe
 
 ## Componenten gebruiken {#using-components}
 
-Wanneer u een component hebt gemaakt, moet u deze inschakelen om deze te kunnen gebruiken. Het gebruiken van het toont hoe de structuur van de component op de structuur van de resulterende inhoud in de bewaarplaats betrekking heeft.
+Nadat u een component hebt gecreeerd, moet u het toelaten om het te gebruiken. Het gebruiken van het toont hoe de structuur van de component op de structuur van de resulterende inhoud in de bewaarplaats betrekking heeft.
 
 ### De component toevoegen aan de sjabloon {#adding-your-component-to-the-template}
 
-Wanneer een component is gedefinieerd, moet deze beschikbaar worden gesteld voor gebruik. Als u een component beschikbaar wilt maken voor gebruik in een sjabloon, moet u de component inschakelen in het beleid van de lay-outcontainer van de sjabloon.
+Nadat een component is gedefinieerd, moet deze beschikbaar worden gesteld voor gebruik. Als u een component beschikbaar wilt maken voor gebruik in een sjabloon, moet u de component inschakelen in het beleid van de lay-outcontainer van de sjabloon.
 
 Zie de [sjabloondocumentatie](/help/sites-cloud/authoring/features/templates.md) voor meer informatie over hoe sjablonen worden gemaakt.
 
@@ -415,7 +415,6 @@ De `cq:listeners` node (type node) `cq:EditListenersConfig`) definieert wat er v
 >
 >* `aftermove`
 >* `aftercopy`
-
 
 De gebeurtenishandler kan worden geïmplementeerd met een aangepaste implementatie. Bijvoorbeeld: `project.customerAction` is een statische methode):
 

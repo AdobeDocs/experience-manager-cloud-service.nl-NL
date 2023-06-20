@@ -2,10 +2,10 @@
 title: Enterprise DevOps
 description: Leer over de processen, methoden en communicatie die zijn vereist om implementatie en samenwerking te vereenvoudigen.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 97%
+source-wordcount: '1000'
+ht-degree: 94%
 
 ---
 
@@ -86,7 +86,7 @@ Auteurinstanties bevinden zich gewoonlijk achter de interne firewall. Dit is de 
 
 Content die is geactiveerd, wordt in een pakket geplaatst en naar de replicatiewachtrij van de auteuromgeving verzonden. Het replicatieproces verplaatst de content dan naar de publicatieomgeving.
 
-Om gegevens die in een publicatieomgeving zijn geproduceerd te repliceren en terug te sturen naar de auteuromgeving, moet een replicatielistener in de auteuromgeving pollingbewerkingen uitvoeren in de publicatieomgeving en dergelijke content ophalen uit het postvak UIT voor omgekeerde replicatie van de publicatieomgeving.
+Als u gegevens die in een publicatieomgeving zijn gegenereerd, wilt terugkeren naar de auteursomgeving, zal een replicatielistener in de auteuromgeving de publicatieomgeving opiniepeilen en deze inhoud ophalen vanuit de omgekeerde replicatieoutbox van de publicatieomgeving.
 
 #### Publicatie {#publish}
 
