@@ -2,9 +2,9 @@
 title: Het vormen Segmentatie met ContextHub
 description: Leer hoe te om segmentatie te vormen gebruikend ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ De volgende segmentvergelijkingen zijn beschikbaar uit-van-de-doos om segmenteig
 >
 >Daarom [een segment maken](#creating-a-new-segment)selecteert u een **gegevenstype** wanneer de typen van de vergeleken waarden bekend zijn. Bijvoorbeeld:
 >
->Bij vergelijking van de eigenschap `profile/age`, weet u reeds dat het vergeleken type zal zijn **getal**, zelfs als `profile/age` is niet ingesteld, een vergelijking `profile/age` minder dan 30 wordt geretourneerd **false**, zoals u zou verwachten.
+>Bij vergelijking van de eigenschap `profile/age`, weet u al dat het vergeleken type een **getal**, zelfs als `profile/age` is niet ingesteld, een vergelijking `profile/age` kleiner dan 30 wordt geretourneerd **false**, zoals u zou verwachten.
 
 ### Verwijzingen {#references}
 
@@ -96,7 +96,7 @@ Het nieuwe segment definiëren:
 
    ![Nieuw segment](../assets/contexthub-new-segment.png)
 
-   Elk segment heeft een verhogingsparameter die als weegfactor wordt gebruikt. Een hoger getal geeft aan dat het segment bij voorkeur wordt geselecteerd boven een segment met een lager getal in gevallen waarin meerdere segmenten geldig zijn.
+   Elk segment heeft een verhogingsparameter die als weegfactor wordt gebruikt. Een hoger getal geeft aan dat het segment wordt geselecteerd bij voorkeur boven een segment met een lager getal in gevallen waarin meerdere segmenten geldig zijn.
 
    * Minimumwaarde: `0`
    * Maximumwaarde: `1000000`
@@ -199,8 +199,8 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
 1. Een **Titel** en **Naam** voor uw map.
    * De **Titel** moeten beschrijvend zijn.
-   * De **Naam** wordt de knooppuntnaam in de repository.
-      * Het wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
+   * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
+      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
       * Deze kan zo nodig worden aangepast.
 
    ![Map maken](../assets/contexthub-create-folder.png)
@@ -212,7 +212,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 1. De map wordt weergegeven in de lijst met segmenten.
    * Hoe u de kolommen sorteert, is van invloed op de plaats in de lijst waar de nieuwe map wordt weergegeven.
    * Tik of klik op de kolomkoppen om de sortering aan te passen.
-      ![De nieuwe map](../assets/contexthub-folder.png)
+     ![De nieuwe map](../assets/contexthub-folder.png)
 
 ### Bestaande mappen wijzigen {#modify-folders}
 

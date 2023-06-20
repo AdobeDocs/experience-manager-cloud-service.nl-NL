@@ -2,9 +2,9 @@
 title: Deelnemen aan workflows
 description: Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit op een pagina of element uitvoert.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1542'
 ht-degree: 1%
 
 ---
@@ -26,11 +26,11 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
 
 * Uw [melding](/help/sites-cloud/authoring/getting-started/inbox.md) indicator (werkbalk) wordt verhoogd:
 
-   ![Berichtwerkbalk](/help/sites-cloud/authoring/assets/workflows-notifications.png)
+  ![Berichtwerkbalk](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
 * Het object wordt aangeboden in je bericht [Inbox](/help/sites-cloud/authoring/getting-started/inbox.md):
 
-   ![Meldingen in Postvak IN](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+  ![Meldingen in Postvak IN](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Wanneer u de pagina-editor gebruikt, wordt de statusbalk weergegeven:
    * de naam van de workflow(en) die op de pagina wordt toegepast; bijvoorbeeld Verzoek om activering.
@@ -39,18 +39,18 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
       * Gebruik de pijlen links/rechts om door de statusinformatie van de verschillende workflows te navigeren.
       * Klik/tik op het daadwerkelijke aantal om een drop-down lijst van alle toepasselijke werkschema&#39;s te openen, dan selecteer het werkschema u in de statusbar wilt tonen.
 
-   ![Pagina met meerdere workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![Pagina met meerdere workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
-   >[!NOTE]
-   >
-   >De statusbalk is alleen zichtbaar voor gebruikers met workflowbevoegdheden. bijvoorbeeld leden van de `workflow-users` groep.
-   >
-   >
-   >Handelingen worden weergegeven wanneer de huidige gebruiker rechtstreeks betrokken is bij de huidige stap van de workflow.
+  >[!NOTE]
+  >
+  >De statusbalk is alleen zichtbaar voor gebruikers met workflowbevoegdheden. bijvoorbeeld leden van de `workflow-users` groep.
+  >
+  >
+  >Handelingen worden weergegeven wanneer de huidige gebruiker rechtstreeks betrokken is bij de huidige stap van de workflow.
 
-* Wanneer **Tijdlijn** is geopend voor de bron, wordt de workflowstap weergegeven. Wanneer u op de waarschuwingsbanner klikt of tikt, worden ook de beschikbare acties weergegeven:
+* Wanneer **Tijdlijn** is open voor het middel, wordt de werkschemastap getoond. Wanneer u op de waarschuwingsbanner klikt of tikt, worden ook de beschikbare acties weergegeven:
 
-   ![Workflow in de tijdlijn](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+  ![Workflow in de tijdlijn](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### Een deelnemersstap voltooien {#completing-a-participant-step}
 
@@ -219,19 +219,19 @@ De workflowdetails worden weergegeven op tabbladen en de juiste acties zijn besc
 
 * **WORKITEM** tab:
 
-   ![Tabblad WORKITEM](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+  ![Tabblad WORKITEM](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
 * **WORKFLOW-INFO** tab:
 
-   ![WORKFLOW, tabblad](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+  ![WORKFLOW, tabblad](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   Als de Stages van het Werkschema voor het model zijn gevormd, kunt u de vooruitgang volgens deze bekijken: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+  Als de Stages van het Werkschema voor het model zijn gevormd, kunt u de vooruitgang volgens deze bekijken: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-   ![Workflowfasen](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+  ![Workflowfasen](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
 * **OPMERKINGEN** tab:
 
-   ![Tabblad Opmerkingen](/help/sites-cloud/authoring/assets/workflows-comments.png)
+  ![Tabblad Opmerkingen](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 U kunt de details van het werkitem openen vanuit:
 

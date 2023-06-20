@@ -2,9 +2,9 @@
 title: Contentfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Content Fragments kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Met de inhoudsfragmenten kunt u:
    >
    >Een andere methode is om een specifiek inhoudsfragment rechtstreeks naar de pagina te slepen. Hiermee wordt automatisch de bijbehorende component (inhoudsfragment) gemaakt.
 
-4. De inhoud van de **Hoofd** Element en **Master** (variatie) wordt weergegeven. U kunt [andere elementen en/of variaties selecteren](#selecting-the-element-or-variation) zoals vereist.
+4. In eerste instantie de inhoud van de **Hoofd** Element en **Master** (variatie) worden weergegeven. U kunt [andere elementen en/of variaties selecteren](#selecting-the-element-or-variation) zoals vereist.
 
    ![Inhoudsfragmenten in de middelenbrowser](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -89,14 +89,14 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
    * **Element voor één tekst**
    * **Meerdere elementen**
 * **Element**
-   * Afhankelijk van het gebruikte model is een selectie beschikbaar.
+   * Een selectie is beschikbaar afhankelijk van het gebruikte model.
 
   >[!NOTE]
   >
   >Welke elementen beschikbaar zijn, is afhankelijk van het gebruikte model.
 
 * **Variatie**
-   * De standaard **master** is altijd beschikbaar.
+   * De standaardwaarde **Master** is altijd beschikbaar.
    * Er is een selectie beschikbaar als er variaties zijn gemaakt voor het fragment.
 
 * **ID**
@@ -160,7 +160,7 @@ Als u [gekoppelde inhoud](/help/sites-cloud/administering/content-fragments/cont
 
 Nadat u een fragment met de bijbehorende inhoud aan de pagina hebt toegevoegd, wordt een nieuw tabblad toegevoegd (**Gekoppelde inhoud**) wordt geopend in het zijpaneel.
 
-Van hieruit kunt u de elementen naar de gewenste locatie slepen (naar een bestaande component of naar de gewenste positie waar de juiste component wordt gemaakt):
+Van hieruit kunt u de elementen naar de gewenste locatie slepen (naar een bestaande component of naar de gewenste positie waar de desbetreffende component is gemaakt):
 
 ![Een afbeelding invoegen](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

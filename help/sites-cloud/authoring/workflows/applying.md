@@ -2,9 +2,9 @@
 title: Workflows toepassen op pagina's
 description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. het is ook mogelijk meerdere werkschema's toe te passen.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '661'
 ht-degree: 11%
 
 ---
@@ -31,7 +31,6 @@ Workflows kunnen worden gestart vanaf:
 >
 >* Hoe te om werkschema&#39;s op activa toe te passen DAM.
 >* [Werken met projectworkflows](/help/sites-cloud/authoring/projects/workflows.md).
-
 
 <!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
@@ -104,6 +103,7 @@ U kunt details opgeven:
    * **Pakkettitel**
 
       * U kunt een titel voor het pakket opgeven om het te identificeren.
+
    >[!NOTE]
    >
    >De optie **Workflowpakket bijhouden** is beschikbaar wanneer de workflow is geconfigureerd voor ondersteuning van meerdere resources en er meerdere resources zijn geselecteerd.
@@ -122,14 +122,14 @@ U kunt details opgeven:
 
    * Een bestaande bron voor het weergeven van extra handelingen:
 
-      * **Inclusief kinderen** om te specificeren dat de kinderen van die bron in het werkschema zullen worden omvat.
+      * **Inclusief kinderen** om te specificeren dat de kinderen van die bron in het werkschema inbegrepen zijn.
 Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis van:
 
          * Alleen directe kinderen opnemen.
          * Alleen gewijzigde pagina&#39;s opnemen.
          * Alleen al gepubliceerde pagina&#39;s opnemen.
 
-         Alle opgegeven onderliggende items worden toegevoegd aan de lijst met bronnen waarop de workflow van toepassing is.
+        Alle opgegeven onderliggende items worden toegevoegd aan de lijst met bronnen waarop de workflow van toepassing is.
 
       * **Selectie verwijderen** om die bron uit de workflow te verwijderen.
 

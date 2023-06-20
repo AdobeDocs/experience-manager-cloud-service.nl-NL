@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten exporteren naar Adobe Target
 description: Inhoudsfragmenten exporteren naar Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2227'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,6 @@ ht-degree: 0%
 >
 >* De AEM inhoudsfragmenten worden geëxporteerd naar de standaardwerkruimte van Adobe Target.
 >* AEM moet in Adobe Target worden geïntegreerd volgens de instructies in [Integreren met Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
-
 
 U kunt exporteren [Inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md), gemaakt in Adobe Experience Manager as a Cloud Service (AEM), naar Adobe Target (Target). Zij kunnen dan als aanbiedingen in de activiteiten van het Doel worden gebruikt, om ervaringen op schaal te testen en te personaliseren.
 
@@ -70,7 +69,7 @@ Voordat u een fragment exporteert, moet u de opdracht **Cloud Configuration** fo
 * een doelwerkruimte selecteren als doel
 * Selecteer een extern domein om verwijzingen in het inhoudsfragment te herschrijven (optioneel)
 
-U kunt de vereiste opties selecteren in **Pagina-eigenschappen** van de vereiste map en/of het vereiste fragment; het productdossier zal zo nodig worden geërfd .
+U kunt de vereiste opties selecteren in **Pagina-eigenschappen** van de vereiste map of het vereiste fragment, of beide; het productdossier wordt, indien nodig, overgeërfd.
 
 1. Ga naar de **Activa** console.
 
@@ -182,7 +181,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
 
    * **A4T Analytics Cloud-configuratie**: Selecteer de de wolkenconfiguratie van de Analyse die voor de doelstellingen en metriek van de doelactiviteit wordt gebruikt. Dit is nodig als u Adobe Analytics als rapportagebron gebruikt wanneer u inhoud als doel instelt.
 
-      <!-- Is this needed?
+     <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
@@ -192,37 +191,36 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
 
    * **Clientbibliotheek:** dit gebrek aan AT.js (mbox.js wordt afgekeurd)
 
-      >[!NOTE]
-      >
-      >het doelbibliotheekbestand, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), is een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel gangbare webimplementaties als toepassingen die uit één pagina bestaan.
-      >
-      >mbox.js is afgekeurd en wordt in een later stadium verwijderd.
-      >
-      >Adobe raadt u aan AT.js te gebruiken in plaats van mbox.js als clientbibliotheek.
-      >
-      >AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
-      >
-      >* Verbeterde laadtijden voor webimplementaties
-      >* Verbeterde beveiliging
-      >* Betere implementatieopties voor toepassingen van één pagina
-      >* AT.js bevat de componenten die in target.js inbegrepen waren, zodat is er niet meer een vraag aan target.js
-
-      >
-      >U kunt AT.js of mbox.js in selecteren **Clientbibliotheek** vervolgkeuzemenu.
+     >[!NOTE]
+     >
+     >het doelbibliotheekbestand, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), is een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel gangbare webimplementaties als toepassingen die uit één pagina bestaan.
+     >
+     >mbox.js is afgekeurd en wordt in een later stadium verwijderd.
+     >
+     >Adobe raadt u aan AT.js te gebruiken in plaats van mbox.js als clientbibliotheek.
+     >
+     >AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
+     >
+     >* Verbeterde laadtijden voor webimplementaties
+     >* Verbeterde beveiliging
+     >* Betere implementatieopties voor toepassingen van één pagina
+     >* AT.js bevat de componenten die in target.js inbegrepen waren, zodat is er niet meer een vraag aan target.js
+     >
+     >U kunt AT.js of mbox.js in selecteren **Clientbibliotheek** vervolgkeuzemenu.
 
    * **Tag Management System gebruiken om clientbibliotheek te leveren** - Selecteer deze optie als u de clientbibliotheek van Adobe Launch of een ander systeem voor tagbeheer (of DTM, dat is afgekeurd) wilt gebruiken.
 
    * **Aangepaste AT.js**: Blader om uw aangepaste AT.js te uploaden. Leeg laten om de standaardbibliotheek te gebruiken.
 
-      >[!NOTE]
-      >
-      >Wanneer u zich aanmeldt bij de Adobe Target-configuratietovenaar, wordt Accurate gericht inschakelen.
-      >
-      >Nauwkeurige het richten betekent dat de configuratie van de wolkendienst op de context wacht te laden alvorens inhoud te laden. Hierdoor kan het, in termen van prestaties, nauwkeuriger richten tot een paar milliseconde vertraging leiden alvorens inhoud te laden.
-      >
-      >Nauwkeurige het richten wordt altijd toegelaten op de auteursinstantie. Op de publicatie-instantie kunt u er echter voor kiezen om nauwkeurig afstemmen globaal uit te schakelen door het vinkje naast Accurate Targeting in de cloudserviceconfiguratie (**http://localhost:4502/etc/cloudservices.html**). U kunt nauwkeurige het richten voor individuele componenten ook nog uitzetten ongeacht uw plaatsen in de configuratie van de wolkendienst.
-      >
-      >Als u ***reeds*** Als u deze instelling wijzigt, hebben de wijzigingen geen invloed op de componenten die u hebt gemaakt. U moet om het even welke veranderingen in die component direct aanbrengen.
+     >[!NOTE]
+     >
+     >Wanneer u zich aanmeldt bij de Adobe Target-configuratietovenaar, wordt Accurate gericht inschakelen.
+     >
+     >Nauwkeurige het richten betekent dat de configuratie van de wolkendienst op de context wacht te laden alvorens inhoud te laden. Hierdoor kan het, in termen van prestaties, nauwkeuriger richten tot een paar milliseconde vertraging leiden alvorens inhoud te laden.
+     >
+     >Nauwkeurige het richten wordt altijd toegelaten op de auteursinstantie. Op de publicatie-instantie kunt u er echter voor kiezen om nauwkeurig afstemmen globaal uit te schakelen door het vinkje naast Accurate Targeting in de cloudserviceconfiguratie (**http://localhost:4502/etc/cloudservices.html**). U kunt nauwkeurige het richten voor individuele componenten ook nog uitzetten ongeacht uw plaatsen in de configuratie van de wolkendienst.
+     >
+     >Als u ***reeds*** Als u deze instelling wijzigt, hebben de wijzigingen geen invloed op de componenten die u hebt gemaakt. U moet om het even welke veranderingen in die component direct aanbrengen.
 
 1. Klikken **Verbinding maken met Adobe Target** om de verbinding met Doel te initialiseren. Als de verbinding tot stand is gebracht, wordt het bericht **Verbinding gelukt** wordt weergegeven. Klikken **OK** op het bericht en vervolgens **OK** in het dialoogvenster.
 
@@ -387,14 +385,14 @@ Om dergelijke situaties te voorkomen:
 * Als het inhoudsfragment momenteel niet wordt gebruikt in een activiteit, AEM kan de gebruiker het fragment zonder een waarschuwingsbericht verwijderen.
 * Als het inhoudsfragment momenteel wordt gebruikt door een activiteit in Doel, wordt de AEM gebruiker een foutbericht gegeven over de mogelijke gevolgen die het verwijderen van het fragment kan hebben voor de activiteit.
 
-   Het foutbericht in AEM verbiedt de gebruiker niet om het inhoudsfragment (geforceerd) te verwijderen. Als het inhoudsfragment wordt verwijderd:
+  Het foutbericht in AEM verbiedt de gebruiker niet om het inhoudsfragment (geforceerd) te verwijderen. Als het inhoudsfragment wordt verwijderd:
 
    * De aanbieding van het Doel met AEM de Fragment van de Inhoud kan ongewenste gedrag tonen
 
       * De aanbieding wordt waarschijnlijk nog steeds weergegeven, aangezien het inhoudsfragment naar Target is geduwd
       * Verwijzingen in het inhoudsfragment werken mogelijk niet correct als middelen waarnaar wordt verwezen ook in AEM worden verwijderd.
-   * Uiteraard zijn verdere wijzigingen van het inhoudsfragment niet mogelijk omdat het inhoudsfragment niet meer in AEM bestaat.
 
+   * Uiteraard zijn verdere wijzigingen van het inhoudsfragment niet mogelijk omdat het inhoudsfragment niet meer in AEM bestaat.
 
 ## Aanvullende bronnen {#further-resources}
 

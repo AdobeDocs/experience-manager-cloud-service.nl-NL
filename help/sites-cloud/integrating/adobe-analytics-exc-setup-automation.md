@@ -4,9 +4,9 @@ description: De Automatisering van de Opstelling van de Experience Cloud verstre
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: f91885a7d15c0ff927c6e10f65852f787cf26eb3
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ De omgeving moet nu gereed zijn voor Experience Cloud Setup Automation.
 1. Tik op de knop **Analyse integreren** knop.
 1. Geef in het dialoogvenster dat wordt weergegeven een naam op voor de **ID van rapportsuite**.
 
-   Deze tekenreeks wordt gebruikt om een nieuwe [ID van rapportsuite](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) in Adobe Analytics als de gegevensopslagruimte voor de analysegegevens voor de geselecteerde AEM. De opgegeven tekenreeks wordt toegevoegd met omgeving- en tier-id&#39;s om ervoor te zorgen dat deze uniek zijn.
+   Deze tekenreeks wordt gebruikt om een nieuwe tekenreeks te maken [ID van rapportsuite](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) in Adobe Analytics als de gegevensopslagruimte voor de analysegegevens voor de geselecteerde AEM. De opgegeven tekenreeks wordt toegevoegd met omgeving- en tier-id&#39;s om ervoor te zorgen dat deze uniek zijn.
 
 1. Pagina en venster vernieuwen en tikken **Integratiestatus controleren** de status van de automatisering te controleren.
 

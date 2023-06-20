@@ -2,10 +2,10 @@
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 4%
+source-wordcount: '2542'
+ht-degree: 3%
 
 ---
 
@@ -121,7 +121,7 @@ A **Titel** veld met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide
 
 #### Naam {#name}
 
-Wanneer u een pagina opgeeft **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) opgelegd door AEM en JCR. U kunt geen ongeldige tekens verzenden in het dialoogvenster **Naam** veld. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een verklarende melding.
+Wanneer u een pagina opgeeft **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) opgelegd door AEM en JCR. U kunt geen ongeldige tekens verzenden in het dialoogvenster **Naam** veld. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een uitleg.
 
 ![Voorbeeld van het invoeren van een ongeldige paginanaam](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -280,7 +280,7 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
 
 >[!NOTE]
 >
->Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Bijvoorbeeld: `beach` bestaat al een nieuwe pagina met de naam `beach` wordt `beach1`.
+>Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Bijvoorbeeld: `beach` bestaat al `beach` wordt `beach1`.
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    >[!NOTE]
    >
-   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Bijvoorbeeld: `beach` bestaat al een nieuwe pagina met de naam `beach` wordt `beach1`.
+   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `beach` bestaat al `beach` wordt `beach1`.
 
 1. Van de **Doel selecteren** het werkgebied van de wizard dat u kunt instellen:
 
@@ -332,13 +332,13 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    >[!NOTE]
    >
-   >Standaard wordt het bovenliggende element van de pagina waarvan u de naam verplaatst of wijzigt, geselecteerd als het doel.
+   >Standaard is het bovenliggende element van de pagina die u verplaatst of waarvan u de naam wijzigt, geselecteerd als het doel.
 
    ![Doel pagina verplaatsen selecteren](/help/sites-cloud/authoring/assets/move-page-destination.png)
 
    >[!NOTE]
    >
-   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Bijvoorbeeld: `winter` bestaat al `winter` wordt `winter1`.
+   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `winter` bestaat al, `winter` wordt `winter1`.
 
 1. Als de pagina is gekoppeld aan of waarnaar wordt verwezen, of is gepubliceerd, worden de details weergegeven in het dialoogvenster **Aanpassen/Opnieuw publiceren** stap.
 
@@ -354,7 +354,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 >[!NOTE]
 >
->Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. Deze wordt standaard opnieuw gepubliceerd wanneer de verplaatsing is voltooid, maar u kunt dit veranderen door het veld **Opnieuw publiceren** uit te schakelen in de stap **Aanpassen/opnieuw publiceren**.
+>Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. Standaard wordt de animatie opnieuw gepubliceerd wanneer de verplaatsing is voltooid, maar dit kan veranderen door de controle op de knop **Opnieuw publiceren** in het **Aanpassen/Opnieuw publiceren** stap.
 
 >[!NOTE]
 >
@@ -372,7 +372,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 Normaal gesproken wordt de handeling Pagina verplaatsen of Naam wijzigen onmiddellijk uitgevoerd. Dit wordt beschouwd als synchrone verwerking en verdere actie in UI wordt geblokkeerd tot de actie volledig is.
 
-Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een gedefinieerde limiet ligt, wordt de actie asynchroon verwerkt, zodat de gebruiker in de gebruikersinterface kan blijven ontwerpen zonder dat dit wordt belemmerd door de actie Pagina verplaatsen of hernoemen.
+Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een gedefinieerde limiet ligt, wordt de actie asynchroon verwerkt, zodat de gebruiker het ontwerpen in de gebruikersinterface kan voortzetten zonder dat dit wordt belemmerd door de actie Verplaatsen of Naam wijzigen van de pagina.
 
 * Wanneer u klikt **Verplaatsen** in de laatste stap hierboven, controleert AEM de gevormde grens.
 * Als het aantal pagina&#39;s waarop de actie betrekking heeft, onder de limiet ligt, wordt een synchrone bewerking uitgevoerd.
@@ -404,13 +404,13 @@ De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [*
 
    ![Dialoogvenster Verwijderen](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **Wilt u de pagina&#39;s archiveren voordat u ze verwijdert?** - Als deze optie is ingeschakeld, worden bij het verwijderen versies gemaakt van de pagina&#39;s die voor verwijdering zijn geselecteerd.
+   * **Wilt u de pagina&#39;s archiveren voordat u ze verwijdert?** - Als deze optie is ingeschakeld, worden tijdens het verwijderen versies gemaakt van de pagina&#39;s die voor verwijdering zijn geselecteerd.
       * [Versies kunnen later worden hersteld.](/help/sites-cloud/authoring/features/page-versions.md)
       * Pagina&#39;s die zonder vorige versies zijn verwijderd, kunnen niet worden hersteld.
    * **Annuleren** om de handeling af te breken
    * **Verwijderen** ter bevestiging van de actie :
 
-      * Als de pagina geen verwijzingen heeft, wordt de pagina verwijderd.
+      * Als de pagina geen verwijzingen heeft, wordt de pagina geschrapt.
       * Als de pagina verwijzingen heeft, zal een berichtvakje u meedelen dat **Naar een of meer pagina&#39;s wordt verwezen.** U kunt **Verwijderen forceren** of **Annuleren**.
 
 >[!NOTE]

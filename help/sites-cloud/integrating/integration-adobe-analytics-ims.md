@@ -2,9 +2,9 @@
 title: IMS-configuratie voor gebruik bij integratie met Adobe Analytics
 description: Meer informatie over IMS Configuration voor gebruik bij Integratie met Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '887'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 
    >[!CAUTION]
    >
-   >Zorg dat deze configuratie geopend blijft, dat deze opnieuw nodig is wanneer [De IMS-configuratie voltooien in AEM](#completing-the-ims-configuration-in-aem).
+   >Zorg dat deze configuratie geopend blijft en dat deze opnieuw nodig is wanneer [De IMS-configuratie voltooien in AEM](#completing-the-ims-configuration-in-aem).
 
    ![Download Certificate](assets/integrate-analytics-ims-02.png)
 
@@ -73,9 +73,9 @@ Open de Adobe Developer-console om een project te maken met Adobe Analytics dat 
 
 1. Alle projecten die u hebt, worden weergegeven. Selecteren **Nieuw project maken** - de locatie en het gebruik zijn afhankelijk van:
 
-   * Als u nog geen project hebt, **Nieuw project maken** wordt midden onderaan weergegeven.
+   * Als u nog geen project hebt, **Nieuw project maken** is gecentreerd, onder.
      ![Nieuw project maken - eerste project](assets/integration-analytics-ims-02.png)
-   * Als u al bestaande projecten hebt, worden deze weergegeven en **Nieuw project maken** is helemaal rechts.
+   * Als u reeds bestaande projecten hebt, zijn deze vermeld en **Nieuw project maken** is rechtsboven.
      ![Nieuw project maken - Meerdere projecten](assets/integration-analytics-ims-03.png)
 
 
@@ -219,5 +219,5 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Complete other parameters as required, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that will be sent to Adobe Analytics. 
+1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that are sent to Adobe Analytics. 
 -->

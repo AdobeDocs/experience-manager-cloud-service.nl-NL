@@ -4,9 +4,9 @@ description: Ontdek het ophalen van JSON-inhoud uit uw testomgeving met een Code
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---

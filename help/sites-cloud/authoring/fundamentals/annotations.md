@@ -2,9 +2,9 @@
 title: Pagina-annotaties toevoegen
 description: Annotatiemodus gebruiken om annotaties en schetsen op pagina's te laten zoals u notities gebruikt om het revisieproces van de inhoud te begeleiden
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 64d801b108229866394e993811a67f983be5df6c
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -66,13 +66,13 @@ In de modus Annotatie kunt u niet alleen notities weergeven, maar ook annotaties
    * Voer de annotatietekst in.
    * Maak een schets (lijnen en vormen) om een gebied van de component te markeren.
 
-      ![Knop Annotatieschets](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![Knop Annotatieschets](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      De cursor verandert in een dradenkruis wanneer u een schets maakt. U kunt meerdere afzonderlijke lijnen tekenen. De schetslijn geeft de annotatiekleur weer en kan een pijl, cirkel of ovaal zijn.
+     De cursor verandert in een dradenkruis wanneer u een schets maakt. U kunt meerdere afzonderlijke lijnen tekenen. De schetslijn geeft de annotatiekleur weer en kan een pijl, cirkel of ovaal zijn.
 
    * Kies of wijzig de kleur:
 
-      ![Knop Kleurstaal notitie](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+     ![Knop Kleurstaal notitie](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
 1. U kunt het dialoogvenster met annotaties sluiten door buiten het dialoogvenster te klikken of erop te tikken. Er wordt een afgekapte weergave van de annotatie getoond, samen met eventuele schetsen:
 

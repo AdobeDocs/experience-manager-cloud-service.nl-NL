@@ -2,16 +2,16 @@
 title: Integreren met Adobe Target
 description: Integreren met Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: f40a2db6616aeaaf13f8ae19ab429a7301e6c05a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '726'
 ht-degree: 1%
 
 ---
 
 # Integreren met Adobe Target{#integrating-with-adobe-target}
 
-In het kader van de Adobe Marketing Cloud [Adobe Target](https://www.adobe.com/solutions/testing-targeting/testandtarget.html) Hiermee kunt u de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Adobe Target wordt door marketers gebruikt voor het ontwerpen en uitvoeren van online tests, het maken van on-the-fly publiekssegmenten (gebaseerd op gedrag) en het automatiseren van het richten van inhoud en online ervaringen. AEM as a Cloud Service heeft de doelworkflow overgenomen die wordt gebruikt in Adobe Target Standard. Als u Doel gebruikt, zult u met het richten het uitgeven milieu in AEM as a Cloud Service vertrouwd zijn.
+In het kader van de Adobe Marketing Cloud [Adobe Target](https://www.adobe.com/solutions/testing-targeting/testandtarget.html) Hiermee kunt u de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Adobe Target wordt door marketers gebruikt voor het ontwerpen en uitvoeren van online tests, het maken van on-the-fly publiekssegmenten (gebaseerd op gedrag) en het automatiseren van het richten van inhoud en online ervaringen. AEM as a Cloud Service heeft de doelworkflow overgenomen die wordt gebruikt in Adobe Target Standard. Als u Doel gebruikt, bent u vertrouwd met het richten van het uitgeven milieu in AEM as a Cloud Service.
 
 Integreer uw AEM met Adobe Target om inhoud op uw pagina&#39;s aan te passen:
 
@@ -54,7 +54,6 @@ Voer de volgende taken uit om met Doel te integreren:
 >* 4.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
-
 >[!CAUTION]
 >
 >U moet het knooppunt met activiteiteninstellingen beveiligen **cq:ActivitySettings** op de publicatie-instantie zodat deze niet toegankelijk is voor normale gebruikers. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
@@ -83,4 +82,3 @@ Voor de integratie van AEM as a Cloud Service met Adobe Target is kennis van Ado
 >* 2.000 ervaringen
 >* 50 metriek
 >* 50 rapporteringssegmenten
-

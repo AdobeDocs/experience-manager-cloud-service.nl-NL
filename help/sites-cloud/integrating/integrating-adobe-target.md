@@ -4,9 +4,9 @@ description: Integreren met Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1042'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Houd er in beide gevallen rekening mee dat:
 
 * Door gebrek, wordt de Code van de Cliënt (als eerst toegevoegd) ook automatisch gekopieerd in het gebied van identiteitskaart van de Aannemer.
 * U kunt de standaard huurder-id wijzigen.
-* Dienovereenkomstig, zal de achterste vraag aan Doel op identiteitskaart van de Aannemer en de cliënt zijvraag aan Doel worden gebaseerd op de Code van de Cliënt.
+* Dienovereenkomstig, zijn de achterste vraag aan Doel gebaseerd op identiteitskaart van de Aannemer en de cliënt zijvraag aan Doel is gebaseerd op de Code van de Cliënt.
 
 Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM as a Cloud Service. Zorg ervoor dat **beide** de velden bevatten de juiste gegevens, afhankelijk van uw vereisten.
 
@@ -112,7 +112,7 @@ Een eigenschap is een container die is gevuld met extensies, regels en gegevense
 3. Selecteer **Configureren** knop. Bericht het configuratievenster met de ingevoerde de rekeningsgeloofsbrieven van het Doel, en de versie at.js voor deze uitbreiding.
 4. Selecteren **Opslaan** om de uitbreiding van het Doel aan uw bezit van de Lancering toe te voegen. U zou de uitbreiding van het Doel moeten kunnen zien onder **Geïnstalleerde extensies** lijst.
    ![Extensie opslaan](assets/configure_extension1.png "Extensie opslaan")
-5. Herhaal bovenstaande stappen om te zoeken naar de **Adobe ContextHub** extensie en installeer deze extensie (dit is vereist voor de integratie met contexthub-parameters, op basis waarvan u zich gaat richten).
+5. Herhaal bovenstaande stappen om te zoeken naar de **Adobe ContextHub** extensie en installeer deze extensie (dit is vereist voor de integratie met contexthub-parameters, op basis waarvan u het doel opgeeft).
 
 ### Een gegevenselement maken {#data-element}
 
@@ -130,7 +130,7 @@ In **Regel** we definiëren en ordenen een reeks acties , die ter plaatse worden
 
 1. Voeg een set handelingen toe zoals wordt getoond in de schermafbeelding.
    ![Handelingen](assets/rules1.png "Handelingen")
-2. In Add Params aan Alle Mboxes voegt het gegevenselement toe dat vroeger wordt gevormd (zie gegevenselement hierboven), aan de parameter die in de mbox vraag zal worden verzonden.
+2. In Add Params aan Alle Mboxes, voeg het gegevenselement toe dat vroeger (zie gegevenselement hierboven) wordt gevormd, aan de parameter die in de mbox vraag wordt verzonden.
    ![Mbox](assets/map_data1.png "Handelingen")
 
 ### Samenstellen en publiceren {#build-publish}

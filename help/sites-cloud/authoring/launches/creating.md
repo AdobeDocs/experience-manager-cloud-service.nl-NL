@@ -2,9 +2,9 @@
 title: Lanceringen maken
 description: U kunt een lancering tot stand brengen om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1042'
 ht-degree: 12%
 
 ---
@@ -28,7 +28,6 @@ U kunt desgewenst de **Startdatum** (en -tijd) opgeven om te bepalen wanneer de 
 >Deze pagina&#39;s kunnen niet worden bewerkt. Het bericht wordt weergegeven:
 >
 >* **Deze pagina maakt geen deel uit van de opstart. Ga naar productiepagina**
-
 
 ## Starten maken {#creating-a-launch}
 
@@ -80,7 +79,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 1. In de **Eigenschappen** stap van de wizard die u kunt opgeven:
 
    * **Titel starten**: De naam van de Launch. De naam moet zinvol zijn voor auteurs.
-   * **met bestaande inhoud**: de oorspronkelijke inhoud wordt gebruikt om de opstart te maken.
+   * **met bestaande inhoud**: de oorspronkelijke inhoud wordt gebruikt om de lancering tot stand te brengen.
    * **een nieuwe sjabloon gebruiken om de pagina te vervangen**: Zie [Starten met nieuwe sjabloon maken](#create-launch-with-new-template) voor meer informatie .
    * **Live-gegevens van bronpagina overnemen**: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Met deze optie bereikt u dit door de introductie van [Live kopie](/help/sites-cloud/administering/msm/overview.md). Deze optie is standaard geselecteerd.—>
    * **Opstartdatum**: De datum en het tijdstip waarop de opstartafbeelding moet worden geactiveerd (afhankelijk van de **Gereed voor productie** vlag; zie [Starten - de volgorde van gebeurtenissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
@@ -113,7 +112,7 @@ Selecteer deze optie:
 
 >[!CAUTION]
 >
->Aangezien een andere sjabloon wordt gebruikt, is de nieuwe pagina leeg. Vanwege de verschillende paginastructuur wordt er geen inhoud over gekopieerd.
+>Omdat een andere sjabloon wordt gebruikt, is de nieuwe pagina leeg. Vanwege de verschillende paginastructuur wordt er geen inhoud over gekopieerd.
 >
 >Dit mechanisme kan worden gebruikt om de sjabloon van een [bestaande pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) - het verlies van inhoud moet echter in overweging worden genomen.
 

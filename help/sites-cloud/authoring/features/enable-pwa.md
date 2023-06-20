@@ -2,9 +2,9 @@
 title: Progressieve webtoepassingsfuncties inschakelen
 description: AEM Sites stelt de auteur van de inhoud in staat om via eenvoudige configuratie progressieve webtoepassingsmogelijkheden voor elke site in te schakelen in plaats van codering.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ Nu hebt u [Uw site geconfigureerd voor ondersteuning van PWA,](#enabling-pwa-for
 1. Er verschijnt een nieuw pictogram op de adresbalk van de browser om aan te geven dat de site kan worden geïnstalleerd als een lokale app.
    * Afhankelijk van de browser kan het pictogram variëren en kan de browser ook een melding (zoals een banner of een dialoogvenster) weergeven die aangeeft dat het mogelijk is om de toepassing als een lokale app te installeren.
 1. Installeer de toepassing.
-1. De app wordt geïnstalleerd op het beginscherm van uw apparaat.
+1. De app is geïnstalleerd op het beginscherm van uw apparaat.
 1. Open de app, blader een beetje, en zie dat de pagina&#39;s offline beschikbaar zijn.
 
 ## Gedetailleerde opties {#detailed-options}
@@ -181,7 +181,7 @@ Deze instellingen stellen delen van deze site offline beschikbaar en lokaal besc
 
 * **Caching strategie en frequentie van inhoudvernieuwing** - Deze instelling definieert het cachemodel voor uw PWA.
    * **Matig** - [Deze instelling](https://web.dev/stale-while-revalidate/) is het geval voor de meeste plaatsen en is de standaardwaarde.
-      * Met deze instelling wordt de inhoud die eerst door de gebruiker wordt weergegeven, vanuit de cache geladen en terwijl de gebruiker die inhoud gebruikt, wordt de rest van de inhoud in de cache opnieuw gevalideerd.
+      * Met deze instelling wordt de inhoud die de gebruiker voor het eerst bekijkt, geladen uit de cache en terwijl de gebruiker die inhoud gebruikt, wordt de rest van de inhoud in de cache opnieuw gevalideerd.
    * **Vaak** - Dit is het geval voor sites die updates nodig hebben, om heel snel te zijn, zoals veilinghuizen.
       * Met deze instelling zoekt de toepassing eerst naar de meest recente inhoud via het netwerk en als deze niet beschikbaar is, wordt de lokale cache hersteld.
    * **Zelden** - Dit is het geval voor plaatsen die bijna statisch zijn zoals verwijzingspagina&#39;s.

@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Pagina's publiceren en verwijderen met AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1804'
 ht-degree: 5%
 
 ---
@@ -48,8 +48,7 @@ Afhankelijk van uw locatie kunt u publiceren:
 >
 >* Er wordt een workflow gestart om de juiste persoon op de hoogte te stellen van uw verzoek om te publiceren.
 >* Deze workflow is mogelijk aangepast door uw ontwikkelingsteam.
->* Er wordt kort een bericht weergegeven om u te laten weten dat de workflow is geactiveerd.
-
+>* Er wordt kort een bericht weergegeven om u te melden dat de workflow is geactiveerd.
 
 >[!NOTE]
 >
@@ -66,13 +65,13 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 1. Afhankelijk van het feit of de pagina verwijzingen bevat die moeten worden gepubliceerd:
 
    * De pagina wordt rechtstreeks gepubliceerd als er geen referenties zijn die moeten worden gepubliceerd.
-   * Als de pagina verwijzingen bevat die moeten worden gepubliceerd, worden deze weergegeven in het dialoogvenster **Publiceren** wizard, waarbij u:
+   * Als de pagina verwijzingen bevat die moeten worden gepubliceerd, worden deze vermeld in de **Publiceren** wizard, waarbij u:
       * Geef aan welke elementen/tags/etc. u wilt samen met de pagina publiceren, dan gebruiken **Publiceren** om het proces te voltooien.
       * Gebruiken **Annuleren** om de handeling af te breken.
 
    ![Referenties publiceren met de pagina](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. Selecteren **Publiceren** wordt de pagina gerepliceerd naar de publicatieomgeving. In de paginaeditor wordt een informatiebanner weergegeven die de publicatieactie bevestigt.
+1. Selecteren **Publiceren** wordt de pagina gerepliceerd naar de publicatieomgeving. In de paginaredacteur, wordt een informatiebanner getoond die de publicatieactie bevestigen.
 
    ![Statusinformatiebanner publiceren](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -129,17 +128,18 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    * **Handeling**
 
-      Kies of u de geselecteerde pagina&#39;s wilt publiceren of de publicatie ervan ongedaan wilt maken.
+     Kies of u de geselecteerde pagina&#39;s wilt publiceren of de publicatie ervan ongedaan wilt maken.
 
    * **Planning**
 
-      Kies of u deze handeling nu of op een latere datum wilt uitvoeren.
+     Kies of u deze handeling nu of op een latere datum wilt uitvoeren.
 
-      Als u later publiceert, wordt een workflow gestart om de geselecteerde pagina of pagina&#39;s op het opgegeven tijdstip te publiceren. Als u de publicatie later ongedaan maakt, wordt een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald moment ongedaan te maken.
+     Als u later publiceert, wordt een workflow gestart om de geselecteerde pagina of pagina&#39;s op het opgegeven tijdstip te publiceren. Als u de publicatie later ongedaan maakt, wordt een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald moment ongedaan te maken.
 
-      >[!NOTE]
-      >
-      >Als u een publicatie/publicatie later wilt annuleren, gaat u naar de [Workflowconsole](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) om de corresponderende workflow te beëindigen.
+     >[!NOTE]
+     >
+     >Als u een publicatie/publicatie later wilt annuleren, gaat u naar de [Workflowconsole](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) om de corresponderende workflow te beëindigen.
+
    ![Publicatieopties beheren](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Klikken **Volgende** om door te gaan.
@@ -168,11 +168,11 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![Publicatieopties beheren](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   De **Gepubliceerde verwijzingen** geeft de referenties voor de geselecteerde inhoud weer. Standaard zijn ze allemaal geselecteerd en worden ze gepubliceerd/niet gepubliceerd, maar u kunt de selectie van ze opheffen, zodat ze niet worden opgenomen in de handeling.
+   De **Gepubliceerde verwijzingen** geeft de referenties voor de geselecteerde inhoud weer. Deze zijn standaard allemaal geselecteerd en worden gepubliceerd/niet gepubliceerd, maar u kunt de selectie opheffen zodat ze niet in de handeling worden opgenomen.
 
    Klikken **Gereed** om uw wijzigingen op te slaan of **Annuleren** om de selectie te annuleren en terug te keren naar de wizard.
 
-   Terug in de wizard **Verwijzingen** wordt de kolom bijgewerkt met de verwijzingen die u hebt geselecteerd voor publicatie of publicatie.
+   Terug in de wizard **Verwijzingen** wordt bijgewerkt om uw selectie van te publiceren of niet-gepubliceerde verwijzingen te weerspiegelen.
 
    ![Publicatie beheren door pagina&#39;s te selecteren](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -203,7 +203,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    >[!NOTE]
    >
-   >De **Workflows** Deze stap wordt weergegeven op basis van de rechten die de gebruiker heeft of niet. Zie de vorige opmerking op deze pagina over publicatiebevoegdheden en het beheren van toegang tot workflows en [Workflows toepassen op pagina&#39;s](/help/sites-cloud/authoring/workflows/applying.md) voor meer informatie.
+   >De **Workflows** deze stap wordt weergegeven op basis van de rechten die de gebruiker al dan niet heeft. Zie de vorige opmerking op deze pagina over publicatiebevoegdheden en het beheren van toegang tot workflows en [Workflows toepassen op pagina&#39;s](/help/sites-cloud/authoring/workflows/applying.md) voor meer informatie.
 
    De bronnen worden gegroepeerd op basis van de workflows die worden geactiveerd en elke optie heeft de volgende opties:
 
@@ -287,14 +287,14 @@ U kunt de publicatiestatus van een pagina bepalen:
 
 * In de [resource overview information on the sites console](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 
-   ![Status van publicatie in de kaartweergave](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
+  ![Status van publicatie in de kaartweergave](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
-   De publicatiestatus wordt weergegeven in [kaart](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)-, [kolom](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)- en [lijstweergaven](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) in de Sites-console.
+  De publicatiestatus wordt weergegeven in [kaart](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)-, [kolom](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)- en [lijstweergaven](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) in de Sites-console.
 
 * In de [tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
-   ![Status van publicatie in tijdlijnweergave](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
+  ![Status van publicatie in tijdlijnweergave](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
 * In de [Menu Paginagegevens](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) bij het bewerken van een pagina
 
-   ![Status van publicatie in het menu Pagina-informatie](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)
+  ![Status van publicatie in het menu Pagina-informatie](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)

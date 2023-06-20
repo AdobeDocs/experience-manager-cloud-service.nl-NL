@@ -2,9 +2,9 @@
 title: Werken met paginaversies
 description: Versies van een pagina maken, vergelijken en herstellen
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1502'
 ht-degree: 3%
 
 ---
@@ -112,10 +112,11 @@ Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de hui
    >[!NOTE]
    >
    >Indien:
+   >
    >* u één pagina hebt geselecteerd die nooit onderliggende pagina&#39;s heeft gehad,
    >* of geen van de pagina&#39;s in de map een versie heeft,
    >
-   >Dan zal de vertoning leeg zijn aangezien er geen toepasselijke versies zijn.
+   >De weergave wordt leeg omdat er geen toepasselijke versies zijn.
 
 1. De beschikbare versies worden weergegeven:
 

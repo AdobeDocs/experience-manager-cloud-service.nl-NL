@@ -2,9 +2,9 @@
 title: Basisbewerkingen
 description: Geniet van gemak bij het navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2986'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ Dit document is ontworpen om een overzicht te geven van de basisafhandeling bij 
 
 >[!NOTE]
 >
->* Bepaalde functionaliteit is niet in alle consoles beschikbaar en in sommige consoles is mogelijk aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit zal op andere pagina&#39;s nader worden besproken.
+>* Bepaalde functionaliteit is niet in alle consoles beschikbaar en in sommige consoles is mogelijk aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit wordt meer in detail besproken op andere pagina&#39;s.
 >* Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [consoles gebruiken](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) en [pagina&#39;s bewerken](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 ## Een interface met aanraakbediening {#a-touch-enabled-ui}
@@ -110,7 +110,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   ![Knop Meldingen](/help/sites-cloud/authoring/assets/notifications.png)
 
-  Dit pictogram wordt gemarkeerd met het aantal momenteel toegewezen onvolledige meldingen.
+  Dit pictogram is gemarkeerd met het aantal momenteel toegewezen onvolledige meldingen.
 
 * [Gebruikerseigenschappen](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
@@ -299,14 +299,14 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
 * U kunt omhoog en omlaag in de boom navigeren door op de middelnaam of chevron rechts van de middelnaam te tikken of te klikken.
 
-   * De naam en het chevron van de bron worden gemarkeerd wanneer hierop wordt getikt of erop wordt geklikt.
+   * De naam en het chevron van de bron worden benadrukt wanneer getikt of geklikt.
    * De kinderen van het geklikte/geplakte middel worden getoond in de kolom rechts van het aangeklikte/geplakte middel.
    * Als u op een middelnaam tikt of klikt die geen kinderen heeft, worden zijn details getoond in de definitieve kolom.
 
 * Als u op de miniatuur tikt of erop klikt, wordt de bron geselecteerd.
 
    * Als deze optie is geselecteerd, wordt een vinkje op de miniatuur geplaatst en wordt de naam van de bron ook gemarkeerd.
-   * De details van de geselecteerde bron worden weergegeven in de laatste kolom.
+   * De details van de geselecteerde bron worden getoond in de definitieve kolom.
    * De werkbalk Handeling wordt beschikbaar.
 
   Wanneer een pagina in kolomweergave is geselecteerd, wordt de geselecteerde pagina samen met de volgende details weergegeven in de definitieve kolom:

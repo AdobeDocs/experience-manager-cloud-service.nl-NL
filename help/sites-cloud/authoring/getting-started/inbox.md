@@ -2,9 +2,9 @@
 title: Uw inbox
 description: Taken beheren met de Postvak IN
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '905'
 ht-degree: 15%
 
 ---
@@ -138,8 +138,8 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
 2. Afhankelijk van het geselecteerde item wordt een handeling gestart, bijvoorbeeld:
 
-   * Er wordt een dialoog geopend die geschikt is voor de actie
-   * Er wordt een wizard Handelingen gestart
+   * Er wordt een dialoogvenster geopend dat geschikt is voor de handeling
+   * Een wizard Handelingen is gestart
    * Er wordt een documentatiepagina geopend
 
    Bijvoorbeeld: **Delegeren** wordt een dialoogvenster geopend:

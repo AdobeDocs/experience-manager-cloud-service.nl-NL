@@ -2,9 +2,9 @@
 title: Lanceringen promoten
 description: U moet opstartiepagina's promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
       1. Selecteren **Starten bevorderen** om de wizard te openen.
    * De **Sites** console bij navigeren door opstartiepagina&#39;s:
       1. Selecteer de vereiste startpagina met [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md).
-      1. De **Bevorderen** actie is beschikbaar op de werkbalk.
+      1. De **Bevorderen** Deze handeling is beschikbaar op de werkbalk.
    * De **Starten** console:
       1. Selecteer de start (tik op de miniatuur of klik erop).
       1. Selecteren **Bevorderen**.
@@ -99,7 +99,7 @@ Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de b
 1. Voer de vereiste gegevens in:
    * **Doel**
       * **Promotiedoel** - U kunt een van de bronnen promoten.
-      * **Starten na promotie verwijderen** - Na de promotie worden de geselecteerde lancering en alle daarin geneste lanceringen verwijderd.
+      * **Starten na promotie verwijderen** - Na de promotie worden de geselecteerde start en alle daarin geneste lanceringen verwijderd.
    * **Toepassingsgebied** - Hier kunt u kiezen of u de volledige opstart wilt promoten of alleen pagina&#39;s die daadwerkelijk zijn bewerkt. In het laatste geval kunt u opgeven of u subpagina&#39;s wilt opnemen of uitsluiten. De standaardconfiguratie is dat alleen paginawijzigingen voor de huidige pagina worden bevorderd:
       * **Volledige introductie bevorderen**
       * **Gewijzigde pagina&#39;s promoten**

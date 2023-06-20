@@ -2,9 +2,9 @@
 title: Registratie, aanmelding en gebruikersprofiel
 description: Meer informatie over registratie, aanmelding, gebruikersgegevens en groepssynchronisatie voor AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Webtoepassingen bieden veelal functies voor accountbeheer waarmee eindgebruikers
 
 >[!IMPORTANT]
 >
->De functionaliteit die in dit artikel wordt beschreven werkt alleen als de functie Gebruikersgegevens synchroniseren is ingeschakeld. Op dit moment is een verzoek aan de klantenondersteuning vereist waarin het juiste programma en de juiste omgevingen worden aangegeven. Als deze optie niet is ingeschakeld, worden de gebruikersgegevens slechts gedurende een korte periode (1 tot 24 uur) bewaard voordat ze worden verwijderd.
+>De functionaliteit die in dit artikel wordt beschreven werkt alleen als de functie Gebruikersgegevens synchroniseren is ingeschakeld. Op dit moment is een verzoek aan de klantenondersteuning vereist waarin het juiste programma en de juiste omgevingen worden aangegeven. Als deze optie niet is ingeschakeld, worden de gebruikersgegevens slechts gedurende een korte periode (1 tot 24 uur) bewaard voordat ze worden verdwenen.
 
 ## Registratie {#registration}
 
@@ -83,7 +83,7 @@ De `com.adobe.granite.auth.oauth.provider` De interface kan met de leverancier O
 
 ### Vaste sessies en ingekapselde tokens {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service heeft op cookie-gebaseerde kleverige zittingen toegelaten, die ervoor zorgt dat een eindgebruiker aan het zelfde publicatieknooppunt op elke verzoek wordt verpletterd. Om de prestaties te verbeteren, wordt de ingekapselde symbolische eigenschap toegelaten door gebrek zodat te hoeven het gebruikersverslag in de bewaarplaats niet om op elke verzoek worden van verwijzingen voorzien. Als het publicatieknooppunt dat een eindgebruiker een affiniteit heeft om wordt vervangen, zal hun verslag van gebruikersidentificatie beschikbaar op het nieuwe publicatieknooppunt zijn, zoals die in de hieronder sectie van de gegevenssynchronisatie wordt beschreven.
+AEM as a Cloud Service heeft op cookie-gebaseerde kleverige zittingen toegelaten, die ervoor zorgt dat een eindgebruiker aan het zelfde publicatieknooppunt op elke verzoek wordt verpletterd. Om de prestaties te verbeteren, wordt de ingekapselde symbolische eigenschap toegelaten door gebrek zodat te hoeven het gebruikersverslag in de bewaarplaats niet om op elke verzoek worden van verwijzingen voorzien. Als het publicatieknooppunt waaraan een eindgebruiker een affiniteit heeft te worden vervangen, zijn het verslag van hun gebruiker identiteitskaart beschikbaar op het nieuwe publicatieknooppunt, zoals die in de hieronder sectie van de gegevenssynchronisatie wordt beschreven.
 
 ## Gebruikersprofiel {#user-profile}
 

@@ -2,9 +2,9 @@
 title: Lanceringen
 description: Met behulp van opstartprogramma's kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze sjablonen kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '903'
 ht-degree: 5%
 
 ---
@@ -64,7 +64,7 @@ Met Launches kunt u:
    * Automatisch - dit omvat het volgende:
       * De **Starten**(**Live**) **date** veld: dit kan worden ingesteld wanneer u een opstart maakt of bewerkt.
       * De **Gereed voor productie** markering: dit kan alleen worden ingesteld wanneer u een opstart bewerkt.
-      * Als de **Gereed voor productie** markering is ingesteld, wordt de lancering automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **Starten**(**Live**) **date**. Na de promotie worden de productiepagina’s automatisch gepubliceerd.\
+      * Als de **Gereed voor productie** markering is ingesteld, de lancering wordt automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **Starten**(**Live**) **date**. Na de promotie worden de productiepagina’s automatisch gepubliceerd.\
         Als er geen datum is ingesteld, heeft de markering geen effect.
 * Werk de bron- en startpagina&#39;s parallel bij:
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze zijn ingesteld op basis van overerving); d.w.z. als een live kopie).
@@ -92,7 +92,7 @@ Met Launches kunt u:
 
 1. In de **Sites** navigeer naar de bron van de opstart(en).
 1. Open de **Verwijzingen** rails en selecteer de bronpagina.
-1. Selecteren **Starten** worden de bestaande lancering(en) vermeld, samen met de toegang tot **Opstartconsole**:
+1. Selecteren **Starten**, worden de bestaande lanceringen vermeld samen met toegang tot **Opstartconsole**:
 
    ![Referenties van lanceringen in plaatsenconsole](/help/sites-cloud/authoring/assets/launches-references.png)
 

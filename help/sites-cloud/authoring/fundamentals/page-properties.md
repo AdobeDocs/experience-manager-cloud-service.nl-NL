@@ -2,16 +2,16 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2340'
 ht-degree: 3%
 
 ---
 
 # Pagina-eigenschappen bewerken {#editing-page-properties}
 
-U kunt de vereiste eigenschappen voor een pagina definiëren. Deze kunnen afhankelijk van de aard van de pagina variëren. Sommige pagina&#39;s kunnen bijvoorbeeld zijn verbonden met een live kopie, andere niet en de live kopie-informatie is beschikbaar, indien van toepassing.
+U kunt de vereiste eigenschappen voor een pagina definiëren. Deze kunnen afhankelijk van de aard van de pagina variëren. Sommige pagina&#39;s kunnen bijvoorbeeld zijn verbonden met een live kopie, andere niet en de live kopie-informatie is op de juiste wijze beschikbaar.
 
 ## Pagina-eigenschappen {#page-properties}
 
@@ -50,7 +50,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Meer titels en beschrijving**
 
-   * **Paginatitel** - Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Als de **Titel** wordt gebruikt.
+   * **Paginatitel** - Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Indien leeg, **Titel** wordt gebruikt.
    * **Navigatietitel** - U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Indien leeg, **Titel** wordt gebruikt.
    * **Ondertitel** - Een ondertitel voor gebruik op de pagina.
    * **Beschrijving** - Uw beschrijving van de pagina, het doel of andere details die u wilt toevoegen.
@@ -62,13 +62,13 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
   > Zie [Aan- en uittijden - Configuratie activeren](/help/operations/replication.md#on-and-off-times-trigger-configuration) voor details van hoe te om de verwante automatische replicatie te vormen.
 
   >[!NOTE]
-  >Indien **Op tijd** of **Uit-tijd** is in het verleden, en de automatische replicatie wordt gevormd, dan zal de relevante actie onmiddellijk teweeggebracht worden.
+  >Indien **Op tijd** of **Uit-tijd** is in het verleden, en de automatische replicatie wordt gevormd, dan wordt de relevante actie onmiddellijk teweeggebracht.
 
-   * **Op tijd** - De datum en het tijdstip waarop de gepubliceerde pagina zichtbaar (weergegeven) wordt gemaakt in de publicatieomgeving. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
+   * **Op tijd** - De datum en het tijdstip waarop de gepubliceerde pagina zichtbaar wordt gemaakt (weergegeven) in de publicatieomgeving. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
 
       * Indien al [gepubliceerd (handmatig)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) deze pagina wordt slapend (verborgen) gehouden totdat deze op het opgegeven tijdstip wordt weergegeven.
-      * Als niet gepubliceerd, en gevormd voor auto-replicatie, zal de pagina automatisch worden gepubliceerd, dan, op de gespecificeerde tijd teruggegeven.
-      * Als niet gepubliceerd, en niet gevormd voor auto-replicatie, zal de pagina niet automatisch gepubliceerd worden, zodat zal 404 worden gezien wanneer een poging om tot de pagina toegang te hebben wordt gemaakt.
+      * Als niet gepubliceerd, en gevormd voor auto-replicatie, wordt de pagina automatisch gepubliceerd, dan teruggegeven, op de gespecificeerde tijd.
+      * Als niet gepubliceerd, en niet gevormd voor auto-replicatie, wordt de pagina niet automatisch gepubliceerd, zodat wordt 404 gezien wanneer een poging om tot de pagina toegang te hebben wordt gemaakt.
 
    * **Uit-tijd** - Vergelijkbaar met en vaak gebruikt in combinatie met **Op tijd** Hiermee bepaalt u de tijd waarop de gepubliceerde pagina wordt verborgen in de publicatieomgeving.
 
@@ -115,7 +115,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Sjablooninstellingen**
 
-   * **Toegestane sjablonen** - [Hiermee definieert u de lijst met sjablonen die beschikbaar zijn](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) binnen dit subbijkantoor
+   * **Toegestane sjablonen** - [Hiermee definieert u de lijst met beschikbare sjablonen](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) binnen dit subbijkantoor
 
 * **Verificatievereiste**
 
@@ -133,7 +133,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **SEO**
 
-   * **Canonical Url** - kan worden gebruikt om de canonieke URL van de pagina te overschrijven; als de URL van de pagina leeg wordt gelaten, is deze de canonieke URL
+   * **Canonical Url** - kan worden gebruikt om de canonieke URL van de pagina te overschrijven; indien leeg gelaten, is de URL van de pagina de canonieke URL
 
    * **Robots-tags** - selecteer de robots-tags om het gedrag van zoekprogrammacrawlers te bepalen.
 
@@ -253,7 +253,7 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) 
 
    * **Caching strategie en frequentie van inhoudvernieuwing** - definieert het cachemodel voor uw PWA
    * **Bestanden die in cache moeten worden geplaatst voor offline gebruik**
-      * **Bestanden vooraf in cache plaatsen (technische voorvertoning)** - bestanden die op AEM worden gehost, worden in de lokale browsercache opgeslagen wanneer de serviceworker wordt geïnstalleerd en voordat deze wordt gebruikt
+      * **Bestanden vooraf in cache plaatsen (technische voorvertoning)** - bestanden die worden gehost op AEM worden opgeslagen in de lokale browsercache wanneer de serviceworker wordt geïnstalleerd en voordat deze wordt gebruikt
       * **Client-side bibliotheken** - clientbibliotheken die in cache moeten worden geplaatst voor offline ervaring
       * **Padinsluitingen** - de netwerkverzoeken voor de bepaalde wegen worden onderschept en de caching inhoud is teruggekeerd in overeenstemming met de gevormde Caching strategie en de frequentie van inhoud verfrissen zich
       * **Paduitsluitingen** - deze bestanden worden nooit in de cache geplaatst, ongeacht de instellingen onder Bestanden vooraf in cache plaatsen en Pad-insluiting

@@ -2,9 +2,9 @@
 title: IMS-configuratie voor gebruik bij integratie met Adobe Target
 description: Meer informatie over IMS Configuration voor gebruik bij Integratie met Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '856'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 
    >[!CAUTION]
    >
-   >Zorg dat deze configuratie geopend blijft, dat deze opnieuw nodig is wanneer [De IMS-configuratie voltooien in AEM](#completing-the-ims-configuration-in-aem).
+   >Zorg dat deze configuratie geopend blijft en dat deze opnieuw nodig is wanneer [De IMS-configuratie voltooien in AEM](#completing-the-ims-configuration-in-aem).
 
    ![Certificaat downloaden](assets/integrate-target-ims-02.png)
 
@@ -71,9 +71,9 @@ Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM
 
 1. Alle projecten die u hebt, worden weergegeven. Selecteren **Nieuw project maken** - de locatie en het gebruik zijn afhankelijk van:
 
-   * Als u nog geen project hebt, **Nieuw project maken** wordt midden onderaan weergegeven.
+   * Als u nog geen project hebt, **Nieuw project maken** is gecentreerd, onder.
      ![Nieuw project maken - eerste project](assets/integration-target-ims-02.png)
-   * Als u al bestaande projecten hebt, worden deze weergegeven en **Nieuw project maken** is helemaal rechts.
+   * Als u reeds bestaande projecten hebt, zijn deze vermeld en **Nieuw project maken** is rechtsboven.
      ![Nieuw project maken - Meerdere projecten](assets/integration-target-ims-03.png)
 
 
@@ -108,10 +108,10 @@ Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM
 
    ![Productprofielen selecteren en de geconfigureerde API opslaan](assets/integration-target-ims-16.png)
 
-1. De oprichting zal worden bevestigd.
+1. De oprichting wordt bevestigd.
 
 <!--
-1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
+1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
    ![](assets/integrate-target-ims-07.png)
 -->
@@ -265,7 +265,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Select **OK** on the message, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
+1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that are sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
 
 ### Tenant ID and Client Code {#tenant-client}
 
@@ -281,7 +281,7 @@ In both cases, be aware that:
 
 * By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.
-* Accordingly, the backend calls to Target will be based on the **Tenant ID** and the client side calls to Target will be based on the **Client Code**.
+* Accordingly, the backend calls to Target are based on the **Tenant ID** and the client side calls to Target are based on the **Client Code**.
 
 As stated previously, the default case is the most common for AEM as a Cloud Service. Either way, make sure **both** fields contain the correct information depending on your requirements.
 

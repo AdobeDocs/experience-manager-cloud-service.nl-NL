@@ -2,10 +2,10 @@
 title: Paginasjablonen maken
 description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '4595'
-ht-degree: 10%
+source-wordcount: '4579'
+ht-degree: 9%
 
 ---
 
@@ -180,7 +180,7 @@ Een sjabloon kan worden in- of uitgeschakeld, zodat deze beschikbaar of niet bes
 
 >[!CAUTION]
 >
->Zodra een malplaatje wordt toegelaten zal een waarschuwing worden getoond wanneer een malplaatjeauteur begint om het malplaatje verder bij te werken. Dit moet de gebruiker informeren dat naar de sjabloon kan worden verwezen, zodat wijzigingen van invloed kunnen zijn op de pagina&#39;s die naar de sjabloon verwijzen.
+>Nadat een sjabloon is ingeschakeld, wordt een waarschuwing weergegeven wanneer een sjabloonauteur de sjabloon verder gaat bijwerken. Dit moet de gebruiker informeren dat naar de sjabloon kan worden verwezen, zodat wijzigingen van invloed kunnen zijn op de pagina&#39;s die naar de sjabloon verwijzen.
 
 1. In de **Sjabloonconsole** selecteert u de sjabloon.
 1. Selecteren **Inschakelen** of **Uitschakelen** op de werkbalk en nogmaals in het bevestigingsdialoogvenster.
@@ -262,7 +262,7 @@ Wanneer componenten zijn vergrendeld, kunt u inhoud toevoegen die niet kan worde
 
 #### Oorspronkelijke inhoud {#template-initial-content}
 
-Wanneer een component is ontgrendeld, kunt u de [initiële inhoud](#editing-a-template-initial-content-author) die worden gekopieerd naar de resulterende pagina(&#39;s) die op basis van de sjabloon zijn gemaakt. Deze niet-vergrendelde componenten kunnen op de resulterende pagina(&#39;s) worden bewerkt.
+Wanneer een component is ontgrendeld, kunt u de [initiële inhoud](#editing-a-template-initial-content-author) die wordt gekopieerd naar de resulterende pagina(&#39;s) die op basis van de sjabloon zijn gemaakt. Deze niet-vergrendelde componenten kunnen op de resulterende pagina(&#39;s) worden bewerkt.
 
 >[!NOTE]
 >
@@ -427,7 +427,7 @@ Het beleid en de eigenschappen van een lay-outcontainer zijn gelijkaardig aan he
 
 >[!NOTE]
 >
->Het vormen van een beleid is verplicht voor containercomponenten aangezien het u toelaat om componenten te bepalen die in de container beschikbaar zullen zijn.
+>Het vormen van een beleid is verplicht voor containercomponenten aangezien het u toelaat om componenten te bepalen die in de container beschikbaar zijn.
 
 Het configuratievenster wordt verdeeld in twee delen, enkel zoals in het algemene gebruik van het venster.
 
@@ -485,7 +485,7 @@ Wanneer een component is ontgrendeld:
 
 ![Component-knop vergrendelen](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële content** of op de resulterende pagina&#39;s. Als u al componenten/content aan de container hebt toegevoegd voordat u de container ontgrendelt, worden deze niet meer weergegeven in de modus **Structuur**, maar in de modus **Initiële content**. In de **modus Structuur** wordt alleen de containercomponent zelf weergegeven met de lijst **Toegestane componenten**.
+Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële content** of op de resulterende pagina&#39;s. Als u al componenten/inhoud aan de container hebt toegevoegd voordat u de container ontgrendelt, worden deze niet meer weergegeven wanneer u in **Structuur** , maar worden weergegeven in **Oorspronkelijke inhoud** in. In **Structuurmodus** wordt alleen de containercomponent zelf weergegeven met de lijst met **Toegestane componenten**.
 
 ![Toegestane componenten](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
@@ -540,7 +540,7 @@ U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [Responsieve ind
 
 >[!NOTE]
 >
->Wijzigingen in de lay-out worden weergegeven in **Oorspronkelijke inhoud** , maar er zijn geen wijzigingen in **Structuur** in.
+>Wijzigingen in de indeling worden weerspiegeld in **Oorspronkelijke inhoud** , maar er zijn geen wijzigingen in **Structuur** in.
 
 ![Sjabloonindeling bewerken](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
@@ -653,7 +653,7 @@ Houd bij het maken van sjablonen rekening met:
    * Componenten op ingeschakelde sjablonen vergrendelen of ontgrendelen.
    * Dit kan bijwerkingen hebben, aangezien bestaande pagina&#39;s het reeds kunnen gebruiken. Doorgaans:
 
-      * Ontgrendelingscomponenten (die vergrendeld waren) ontbreken op bestaande pagina&#39;s.
+      * Ontgrendelingscomponenten (die zijn vergrendeld) ontbreken op bestaande pagina&#39;s.
       * Door componenten te vergrendelen (die bewerkbaar waren) wordt die inhoud niet op de pagina&#39;s weergegeven.
 
    >[!NOTE]

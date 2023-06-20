@@ -2,9 +2,9 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '3019'
+source-wordcount: '3004'
 ht-degree: 5%
 
 ---
@@ -42,51 +42,51 @@ De werkbalk biedt toegang tot een groot aantal opties. Afhankelijk van uw huidig
 
 * **Zijpaneel in-/uitschakelen**
 
-   Hiermee opent/sluit u het zijpaneel, dat de [Middelenbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), [Componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser), en [Inhoudsstructuur](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
+  Hiermee opent/sluit u het zijpaneel, dat de [Middelenbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), [Componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser), en [Inhoudsstructuur](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
 
-   ![Zijpaneel in-/uitschakelen](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+  ![Zijpaneel in-/uitschakelen](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
 * **Pagina-informatie**
 
-   Biedt toegang tot de [Pagina-informatie](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) menu met paginagegevens en handelingen die op de pagina kunnen worden uitgevoerd, zoals het weergeven en bewerken van pagina-informatie, het weergeven van pagina-eigenschappen en het publiceren/ongedaan maken van de publicatie van de pagina.
+  Biedt toegang tot de [Pagina-informatie](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) menu met paginagegevens en handelingen die op de pagina kunnen worden uitgevoerd, zoals het weergeven en bewerken van pagina-informatie, het weergeven van pagina-eigenschappen en het publiceren/ongedaan maken van de publicatie van de pagina.
 
-   ![Paginagegevens, knop](/help/sites-cloud/authoring/assets/page-information-icon.png)
+  ![Paginagegevens, knop](/help/sites-cloud/authoring/assets/page-information-icon.png)
 
 * **Emulator**
 
-   Hiermee schakelt u het [emulator, werkbalk](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate), die wordt gebruikt om het uiterlijk van de pagina op een ander apparaat na te bootsen. Dit wordt automatisch in- en uitgeschakeld in de lay-outmodus.
+  Hiermee schakelt u het [emulator, werkbalk](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate), die wordt gebruikt om het uiterlijk van de pagina op een ander apparaat na te bootsen. Dit wordt automatisch in- en uitgeschakeld in de lay-outmodus.
 
-   ![Emulator-knop](/help/sites-cloud/authoring/assets/emulator.png)
+  ![Emulator-knop](/help/sites-cloud/authoring/assets/emulator.png)
 
 * **ContextHub**
 
-   Hiermee opent u de [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). Alleen beschikbaar in de modus Voorbeeld.
+  Hiermee opent u de [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). Alleen beschikbaar in de modus Voorbeeld.
 
-   ![Knop Contexthub](/help/sites-cloud/authoring/assets/context-hub.png)
+  ![Knop Contexthub](/help/sites-cloud/authoring/assets/context-hub.png)
 
 * **Paginatitel**
 
-   Dit is puur informatief.
+  Dit is puur informatief.
 
-   ![Paginatitel](/help/sites-cloud/authoring/assets/page-title.png)
+  ![Paginatitel](/help/sites-cloud/authoring/assets/page-title.png)
 
 * **Modus selecteren**
 
-   Geeft de huidige [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en kunt u een andere modus selecteren, zoals bewerken, lay-out, tijdverdraaiing of doelversie.
+  Geeft de huidige [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en kunt u een andere modus selecteren, zoals bewerken, lay-out, tijdverdraaiing of doelversie.
 
-   ![Modus selecteren, knop](/help/sites-cloud/authoring/assets/mode-selector.png)
+  ![Modus selecteren, knop](/help/sites-cloud/authoring/assets/mode-selector.png)
 
 * **Voorvertoning**
 
-   Inschakelen [voorbeeldmodus](#preview-mode). Hiermee wordt de pagina weergegeven zoals deze wordt weergegeven bij publicatie.
+  Inschakelen [voorbeeldmodus](#preview-mode). Hiermee wordt de pagina weergegeven zoals deze wordt weergegeven bij publicatie.
 
-   ![Knop Voorvertoning](/help/sites-cloud/authoring/assets/preview.png)
+  ![Knop Voorvertoning](/help/sites-cloud/authoring/assets/preview.png)
 
 * **Annoteren**
 
-   Hiermee kunt u [annotaties](/help/sites-cloud/authoring/fundamentals/annotations.md) naar de pagina wanneer een pagina wordt gecontroleerd. Na de eerste annotatie schakelt het pictogram over naar een getal dat het aantal annotaties op de pagina aangeeft.
+  Hiermee kunt u [annotaties](/help/sites-cloud/authoring/fundamentals/annotations.md) naar de pagina wanneer een pagina wordt gecontroleerd. Na de eerste annotatie schakelt het pictogram over naar een getal dat het aantal annotaties op de pagina aangeeft.
 
-   ![Knop Annotatie](/help/sites-cloud/authoring/assets/annotations.png)
+  ![Knop Annotatie](/help/sites-cloud/authoring/assets/annotations.png)
 
 ### Statusmelding {#status-notification}
 
@@ -112,21 +112,21 @@ Als de pagina aan veelvoudige werkschema&#39;s onderworpen is, wordt het aantal 
 
 ## Tijdelijke aanduiding voor onderdeel {#component-placeholder}
 
-De tijdelijke aanduiding van de component is een indicator waarmee wordt aangegeven waar een component wordt geplaatst wanneer u deze neerzet - boven de component waarover u momenteel heft.
+De tijdelijke aanduiding van de component is een indicator waarmee wordt aangegeven waar een component zich bevindt wanneer u deze neerzet - boven de component waarover u momenteel beweegt.
 
 * Bij het toevoegen van een nieuwe component aan de pagina (slepen vanuit de componentbrowser):
 
-   ![Tijdelijke aanduiding bij het toevoegen van een nieuwe component aan een pagina](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
+  ![Tijdelijke aanduiding bij het toevoegen van een nieuwe component aan een pagina](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
 
 * Bij het verplaatsen van een bestaande component:
 
-   ![Tijdelijke aanduiding bij het verplaatsen van een bestaande component op een pagina](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
+  ![Tijdelijke aanduiding bij het verplaatsen van een bestaande component op een pagina](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
 
 ## Een component invoegen {#inserting-a-component}
 
 ### Een component invoegen vanuit de Componentbrowser {#inserting-a-component-from-the-components-browser}
 
-U kunt een nieuwe component toevoegen door de [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). De [tijdelijke aanduiding voor onderdeel](#component-placeholder) toont u waar de component zal worden geplaatst:
+U kunt een nieuwe component toevoegen door de [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). De [tijdelijke aanduiding voor onderdeel](#component-placeholder) toont u waar de component wordt geplaatst:
 
 1. Zorg ervoor dat de pagina zich bevindt in [**Bewerken** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Open de [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
@@ -146,13 +146,13 @@ U kunt een nieuwe component toevoegen door de **Componenten hierheen slepen** va
 
    * Selecteer **Component invoegen** van de werkbalk van een bestaande component of van de **Componenten hierheen slepen** doos.
 
-      ![Een component invoegen](/help/sites-cloud/authoring/assets/editing-insert-component.png)
+     ![Een component invoegen](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
    * Als u zich op een desktopapparaat bevindt, kunt u dubbelklikken op de knop **Componenten hierheen slepen** doos.
 
    * De **Nieuwe component invoegen** wordt geopend zodat u de gewenste component kunt selecteren:
 
-      ![Dialoogvenster Nieuwe component invoegen](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
+     ![Dialoogvenster Nieuwe component invoegen](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
 1. De geselecteerde component wordt onder aan de pagina toegevoegd. [Bewerken](#edit-content) de component naar wens.
 
@@ -166,9 +166,9 @@ Een component maken door een van de bovenstaande elementtypen te slepen:
 
 1. Zorg ervoor dat de pagina zich bevindt in [**Bewerken** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Open de [middelenbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
-1. Sleep het vereiste element naar de gewenste positie. De [tijdelijke aanduiding voor onderdeel](#component-placeholder) Hiermee kunt u zien waar de component wordt geplaatst.
+1. Sleep het vereiste element naar de gewenste positie. De [tijdelijke aanduiding voor onderdeel](#component-placeholder) Hiermee kunt u zien waar de component zich bevindt.
 
-   Een component die geschikt is voor het type element, wordt op de vereiste locatie gemaakt. De component bevat het geselecteerde element.
+   Een component die geschikt is voor het type element, wordt op de vereiste locatie gemaakt en bevat het geselecteerde element.
 
 1. [Bewerken](#edit-content) de component, indien vereist.
 
@@ -190,77 +190,77 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
 * **Bewerken**
 
-   [Afhankelijk van het componenttype](/help/sites-cloud/authoring/fundamentals/components.md) op die manier kunt u [de inhoud van de component bewerken](#edit-content). Er wordt vaak een werkbalk weergegeven.
+  [Afhankelijk van het componenttype](/help/sites-cloud/authoring/fundamentals/components.md)kunt u [de inhoud van de component bewerken](#edit-content). Er wordt vaak een werkbalk weergegeven.
 
-   ![Bewerken, knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
+  ![Bewerken, knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **Configureren**
 
-   [Afhankelijk van het componenttype](/help/sites-cloud/authoring/fundamentals/components.md) hierdoor kunt u de eigenschappen van de component bewerken en configureren. Vaak wordt een dialoogvenster geopend.
+  [Afhankelijk van het componenttype](/help/sites-cloud/authoring/fundamentals/components.md)Hiermee kunt u de eigenschappen van de component bewerken en configureren. Er wordt vaak een dialoogvenster geopend.
 
-   ![Knop Configureren](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
+  ![Knop Configureren](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
 * **Kopiëren**
 
-   Hiermee wordt de component naar het klembord gekopieerd. Na de plakactie, zal de originele component blijven.
+  Hiermee wordt de component naar het klembord gekopieerd. Na de plakactie, zal de originele component blijven.
 
-   ![Kopiëren, knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
+  ![Kopiëren, knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
 
 * **Knippen**
 
-   Hiermee wordt de component naar het klembord gekopieerd. Na de plakhandeling wordt de oorspronkelijke component verwijderd.
+  Hiermee wordt de component naar het klembord gekopieerd. Na de plakhandeling wordt de oorspronkelijke component verwijderd.
 
-   ![Knop Knippen](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
+  ![Knop Knippen](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
 * **Verwijderen**
 
-   Hiermee verwijdert u de component van de pagina met uw bevestiging.
+  Hiermee verwijdert u de component van de pagina met uw bevestiging.
 
-   ![Knop Verwijderen](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
+  ![Knop Verwijderen](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
 
 * **Component invoegen**
 
-   Hiermee wordt het dialoogvenster geopend voor [een nieuwe component toevoegen](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  Hiermee wordt het dialoogvenster geopend voor [een nieuwe component toevoegen](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![De knop Invoegen](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
+  ![De knop Invoegen](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
 
 * **Plakken**
 
-   Hiermee wordt de component van het klembord naar de pagina geplakt. Of het origineel overblijft, hangt af van het feit of u de kopie of het knipsel hebt gebruikt.
+  Hiermee wordt de component van het klembord naar de pagina geplakt. Of het origineel overblijft, hangt af van het feit of u de kopie of het knipsel hebt gebruikt.
 
    * U kunt op dezelfde pagina of op een andere pagina plakken.
    * Het geplakte item wordt boven het item geplakt waar u de plakactie selecteert.
    * De handeling Pate wordt alleen weergegeven als er inhoud op het klembord staat.
 
-   ![Knop Plakken](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
+  ![Knop Plakken](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
-   >[!NOTE]
-   >
-   >Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet u de pagina vernieuwen om de geplakte inhoud te zien.
+  >[!NOTE]
+  >
+  >Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet u de pagina vernieuwen om de geplakte inhoud te zien.
 
 * **Groep**
 
-   Hierdoor kunt u meerdere componenten tegelijk selecteren. Hetzelfde kan worden bereikt op een desktopapparaat met een **Ctrl+klikken** of **Command+klikken**.
+  Hierdoor kunt u meerdere componenten tegelijk selecteren. Hetzelfde kan worden bereikt op een desktopapparaat met een **Ctrl+klikken** of **Command+klikken**.
 
-   ![Groeperen, knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
+  ![Groeperen, knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **Bovenliggend**
 
-   Hierdoor kunt u de bovenliggende component van de geselecteerde component selecteren.
+  Hierdoor kunt u de bovenliggende component van de geselecteerde component selecteren.
 
-   ![Bovenliggende knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
+  ![Bovenliggende knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **Layout**
 
-   Hierdoor kunt u de [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) van de geselecteerde component. Dit geldt alleen voor de geselecteerde component en activeert de component [Lay-outmodus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) voor de gehele pagina.
+  Hierdoor kunt u de [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) van de geselecteerde component. Dit geldt alleen voor de geselecteerde component en activeert de component [Lay-outmodus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) voor de gehele pagina.
 
-   ![Indeling, knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+  ![Indeling, knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **Omzetten in een ervaringsfragmentvariatie**
 
-   Zo kunt u een nieuwe [ervaren, fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) van de geselecteerde component of voeg het aan een bestaand ervaringsfragment toe.
+  Zo kunt u een nieuwe [ervaren, fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) van de geselecteerde component of voeg het aan een bestaand ervaringsfragment toe.
 
-   ![Omzetten in knop Fragment ervaren](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+  ![Omzetten in knop Fragment ervaren](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
 ## Inhoud bewerken {#edit-content}
 
@@ -277,23 +277,23 @@ De exacte bewerkingsopties zijn afhankelijk van de component. Voor sommige compo
 
 * Tekstcomponent
 
-   ![Werkbalk van de tekstcomponent](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
+  ![Werkbalk van de tekstcomponent](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
 
 * Afbeeldingscomponent
 
-   ![Werkbalk van de afbeeldingscomponent](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
+  ![Werkbalk van de afbeeldingscomponent](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
 
-   >[!NOTE]
-   >
-   >Bewerken werkt niet op een lege afbeeldingscomponent.
-   >
-   >U moet een afbeelding naar de component slepen of uploaden voordat u deze kunt bewerken.
+  >[!NOTE]
+  >
+  >Bewerken werkt niet op een lege afbeeldingscomponent.
+  >
+  >U moet een afbeelding naar de component slepen of uploaden voordat u deze kunt bewerken.
 
 * Afbeeldingscomponent - volledig scherm
 
-   [Door de volledige-schermmodus te openen](#edit-content-full-screen-mode) voor de afbeeldingscomponent kunt u meer ruimte vrijmaken voor het bewerken van de afbeelding en kunt u extra bewerkingsopties weergeven, zoals **Kaart starten** en **Zoomen opnieuw instellen**. Bovendien kunt u op het volledige scherm voorinstellingen voor bijsnijden selecteren.
+  [Door de volledige-schermmodus te openen](#edit-content-full-screen-mode) voor de afbeeldingscomponent kunt u meer ruimte vrijmaken voor het bewerken van de afbeelding en kunt u extra bewerkingsopties weergeven, zoals **Kaart starten** en **Zoomen opnieuw instellen**. Bovendien kunt u op het volledige scherm voorinstellingen voor bijsnijden selecteren.
 
-   ![De modus Volledig scherm van de component Image](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
+  ![De modus Volledig scherm van de component Image](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
 * Componenten die zijn samengesteld uit meerdere basiscomponenten vragen u eerst om te bevestigen welke set bewerkingsopties u wilt:
 
@@ -377,15 +377,15 @@ Bijvoorbeeld:
 
 * Overerving annuleren
 
-   ![Overerving annuleren, knop](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
+  ![Overerving annuleren, knop](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
 
 * Overerving opnieuw inschakelen (als overerving al is geannuleerd)
 
-   ![Knop Overerving opnieuw inschakelen](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
+  ![Knop Overerving opnieuw inschakelen](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
 
 * De handeling Uitvoeren is ook beschikbaar in de blauwdruk of de bron van Actieve kopie
 
-   ![De knop Uitvoeren](/help/sites-cloud/authoring/assets/editing-rollout.png)
+  ![De knop Uitvoeren](/help/sites-cloud/authoring/assets/editing-rollout.png)
 
 ## De paginasjabloon bewerken {#editing-the-page-template}
 
@@ -420,7 +420,6 @@ Er zijn twee opties voor het voorvertonen van een pagina:
 >* Koppelingen in de inhoud zijn zichtbaar, maar niet toegankelijk in de bewerkingsmodus.
 >* Gebruik een van de voorvertoningsopties als u door de koppelingen wilt navigeren.
 >* Gebruik de [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` om te schakelen tussen de voorvertoning en de laatst geselecteerde modus.
-
 
 >[!NOTE]
 >
@@ -511,7 +510,6 @@ Met de volgende pictogrammen kunt u een handeling ongedaan maken of opnieuw uitv
 >* De [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` is ook beschikbaar voor het ongedaan maken van paginabewerkingsacties.
 >* De sneltoets `Ctrl-Y` is ook beschikbaar voor het opnieuw uitvoeren van paginabewerkingsacties.
 
-
 >[!NOTE]
 >
 >Zie [Paginabewerkingen ongedaan maken en opnieuw uitvoeren - De theorie](#undoing-and-redoing-page-edits-the-theory) voor de volledige details van wat mogelijk is wanneer het ongedaan maken van en het opnieuw doen van paginaedetingen.
@@ -541,5 +539,4 @@ U kunt de volgende typen paginawijzigingen ongedaan maken en opnieuw uitvoeren:
 >* Er zijn speciale machtigingen vereist voor het ongedaan maken en opnieuw uitvoeren van wijzigingen in bestanden en afbeeldingen.
 >* De geschiedenis van wijzigingen in bestanden en afbeeldingen duurt minimaal tien uur. Na deze tijd is het ongedaan maken van de wijzigingen echter niet gegarandeerd. De beheerder kan de standaardtijd van tien uur wijzigen.
 >* Uw systeembeheerder kan diverse aspecten van Undo/Opnieuw eigenschappen volgens de vereisten voor uw instantie vormen.
-   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
-
+<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

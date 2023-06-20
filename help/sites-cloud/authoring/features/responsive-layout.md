@@ -2,9 +2,9 @@
 title: Responsieve lay-out
 description: AEM kunt u een responsieve lay-out voor uw pagina's maken
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1745'
 ht-degree: 7%
 
 ---
@@ -74,9 +74,9 @@ Het apparaat **Desktop**, die geen specifieke breedte heeft, heeft betrekking op
 >
 >Het zou mogelijk zijn om breekpunten voor elk individueel apparaat te bepalen, maar dit zou drastisch de inspanning die voor lay-outdefinitie en onderhoud wordt vereist verhogen.
 
-Wanneer u de emulator gebruikt, selecteert u een specifiek apparaat voor de definitie van emulatie en layout en wordt het desbetreffende onderbrekingspunt ook gemarkeerd. Alle layoutwijzigingen die u aanbrengt, zijn van toepassing op andere apparaten waarop het onderbrekingspunt van toepassing is, dat wil zeggen apparaten die links van de actieve onderbrekingspuntmarkering zijn geplaatst, maar vóór de volgende onderbrekingspuntmarkering.
+Wanneer u de emulator gebruikt, selecteert u een specifiek apparaat voor emulatie- en layoutdefinitie en wordt het verwante onderbrekingspunt ook gemarkeerd. Alle layoutwijzigingen die u aanbrengt, zijn van toepassing op andere apparaten waarop het onderbrekingspunt van toepassing is. Namelijk om het even welke apparaten die aan de linkerzijde van de actieve breekpuntteller worden geplaatst, maar vóór de volgende breekpuntteller.
 
-Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd met een breedte van 540 pixels) voor emulatie en lay-out, het onderbrekingspunt **Telefoon** (gedefinieerd als 768 pixels) wordt ook geactiveerd. Alle indelingswijzigingen die u aanbrengt voor de **iPhone 6** van toepassing zijn op andere voorzieningen in het kader van de **Telefoons** onderbrekingspunten, zoals **iPhone 5** (gedefinieerd als 320 pixels).
+Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd met een breedte van 540 pixels) voor emulatie en lay-out, het onderbrekingspunt **Telefoon** (gedefinieerd als 768 pixels) wordt ook geactiveerd. Alle indelingswijzigingen die u aanbrengt voor de **iPhone 6** van toepassing zijn op andere voorzieningen onder de **Telefoons** onderbrekingspunten, zoals **iPhone 5** (gedefinieerd als 320 pixels).
 
 ![Emulators](/help/sites-cloud/authoring/assets/responsive-layout-emulators.png)
 
@@ -157,16 +157,16 @@ Net als bij andere componenten kunt u een Layout Container selecteren en vervolg
 
    ![Bovenliggende knop](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-1. Als de lay-outcomponent genest is, selecteert u de **Bovenliggend** bevat een vervolgkeuzelijst, waarmee u de geneste lay-outcontainer of de bovenliggende container(s) kunt selecteren.
+1. Als de lay-outcomponent genest is, selecteert u de **Bovenliggend** wordt een vervolgkeuzelijst weergegeven, waarin u de geneste lay-outcontainer of de bovenliggende items kunt selecteren.
 
    Wanneer u de muis boven de containernamen in de vervolgkeuzelijst plaatst, worden de contouren ervan weergegeven op de pagina.
 
-   * De laagst geneste container voor de layout wordt omgeven door een blauwe omtrek.
-   * Elke volgende container zal een lichtere schaduw van blauw zijn.
+   * De laagst geneste container voor de layout is blauw.
+   * Elke volgende container krijgt een omtrek van een lichtere kleur met blauw.
 
    ![Geneste containers](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-1. Hierdoor wordt het volledige raster met de inhoud gemarkeerd. De werkbalk Handeling wordt weergegeven, waar u een handeling kunt selecteren, zoals **Verwijderen.**
+1. Het volledige raster wordt gemarkeerd met de inhoud ervan. De werkbalk Handeling wordt weergegeven, waar u een handeling kunt selecteren, zoals **Verwijderen.**
 
 ## Indelingen definiëren (modus Indeling) {#defining-layouts-layout-mode}
 
@@ -187,7 +187,7 @@ Om de lay-out van een ontvankelijk net te vormen dat met de Container van de Lay
 
 In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 
-* Wijzig de grootte van de inhoudcomponenten met de blauwe stippen. Het resizing zal altijd breken-aan-net. Wanneer u het formaat van het achtergrondraster wijzigt, wordt dit weergegeven als hulp bij het uitlijnen:
+* Wijzig de grootte van de inhoudcomponenten met de blauwe stippen. Het resizing zal altijd breken-aan-net. Bij het wijzigen van de grootte wordt het achtergrondraster weergegeven als hulpmiddel bij de uitlijning:
 
   ![Formaat van componenten wijzigen](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
@@ -198,11 +198,11 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 * Klik/tik op een inhoudscomponent, op de werkbalk kunt u:
    * **Bovenliggend** - Hiermee kunt u de volledige containercomponent voor de lay-out selecteren om actie te ondernemen over het geheel.
    * **Zweven naar nieuwe regel** - De component wordt naar een nieuwe regel verplaatst, afhankelijk van de ruimte die beschikbaar is in het raster.
-   * **Component verbergen** - De component wordt onzichtbaar gemaakt (u kunt deze herstellen vanaf de werkbalk van de container voor lay-outs).
+   * **Component verbergen** - De component is onzichtbaar gemaakt (u kunt deze herstellen vanaf de werkbalk van de container voor lay-outs).
 
   ![Component verbergen](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In **Layout** modus waarop u kunt tikken of klikken op de knop **Componenten hierheen slepen** om de volledige component te selecteren. De werkbalk voor deze modus wordt dan weergegeven.
+* In **Layout** modus waarop u kunt tikken of klikken op de knop **Componenten hierheen slepen** om de volledige component te selecteren. De werkbalk wordt weergegeven voor deze modus.
 
   De werkbalk heeft verschillende opties, afhankelijk van de status van de lay-outcomponent en de onderdelen ervan. Bijvoorbeeld:
 
@@ -214,7 +214,7 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 
      ![Knop Verborgen componenten tonen](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
-   * **De indeling van het onderbrekingspunt herstellen** - De standaardlay-out herstellen. Dit betekent dat er geen aangepaste indeling wordt opgelegd.
+   * **De indeling van het onderbrekingspunt herstellen** - De standaardlay-out herstellen. Er wordt geen aangepaste indeling opgelegd.
 
      ![De knop voor de indeling van onderbrekingspunten herstellen](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 

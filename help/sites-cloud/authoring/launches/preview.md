@@ -2,9 +2,9 @@
 title: Toekomst voorvertonen met uw introductie
 description: Met Timewarp kunt u uw inhoud bekijken die op uw lanceringen wordt gebaseerd.
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '97'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 1. Als u **Timewarp** in de pagina-editor wordt u om een datum gevraagd. Selecteer een datum die na de promotiedatum van de introductie valt:
    ![Navigeren door Starten vanuit de Pagina-editor](/help/sites-cloud/authoring/assets/launches-timewarp-01.png)
 
-1. De op die datum toepasselijke inhoud wordt weergegeven:
+1. De inhoud die op die datum van toepassing is, wordt weergegeven:
    ![Navigeren door Starten vanuit de Pagina-editor](/help/sites-cloud/authoring/assets/launches-timewarp-02.png)
 
    >[!NOTE]
    >
-   >Welke introductiedatum dan ook het dichtst bij en vóór de geselecteerde datum ligt, is van toepassing en de inhoud ervan wordt weergegeven.
+   >Welke introductiedatum dan ook het dichtst in de buurt komt van - en vóór - de geselecteerde datum is van toepassing en de inhoud ervan wordt weergegeven.
