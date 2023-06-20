@@ -4,7 +4,7 @@ description: Installeren [!DNL Workfront for Experience Manager enhanced connect
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
+source-git-commit: 393ec79e820632e879a377e697ecd09f4571c0b7
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 0%
@@ -22,7 +22,10 @@ Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] als [!DNL 
 
 >[!IMPORTANT]
 >
->* Vanaf juni 2022 heeft Adobe een nieuwe native integratie uitgebracht voor de aansluiting van Workfront op Adobe Experience Manager Assets as a Cloud Service. Deze integratie is de vereiste methode geworden om deze twee oplossingen aan te sluiten. Elke toekomstige nieuwe implementatie van de verbeterde connector (1.9.8 en hoger) voor het aansluiten van Workfront op AEM Assets as a Cloud Service wordt geblokkeerd. Voor meer informatie over hoe te om deze integratie te plaatsen, zie [De as a Cloud Service integratie met Experience Manager Assets configureren](workfront-connector-configure.md).
+>Vanaf juni 2022 heeft Adobe een nieuwe native integratie uitgebracht voor de aansluiting van Workfront op Adobe Experience Manager Assets as a Cloud Service. Deze integratie is de vereiste methode geworden om deze twee oplossingen aan te sluiten. Elke toekomstige nieuwe implementatie van de verbeterde connector (1.9.8 en hoger) voor het aansluiten van Workfront op AEM Assets as a Cloud Service wordt geblokkeerd. Voor meer informatie over hoe te om deze integratie te plaatsen, zie [De as a Cloud Service integratie met Experience Manager Assets configureren](workfront-connector-configure.md).
+
+>[!IMPORTANT]
+>
 >* Adobe vereist plaatsing en configuratie van [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services]. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt deze niet ondersteund door Adobe.
 >
 >* Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] die deze aansluiting overbodig maken; als dit voorkomt, kunnen de klanten worden vereist om van het gebruik van deze schakelaar over te gaan.
