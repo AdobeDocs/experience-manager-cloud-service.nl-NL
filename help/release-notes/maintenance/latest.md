@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: beb6ac3dbb036559510e6a2e2700b28c433ef98d
+source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -27,6 +27,7 @@ Geen.
 
 - ASSETS-25729 - Het menu Weergave schakelt uit
 - ACTIVA-25728 - Optie voor herverwerking van activa niet beschikbaar in de zoekweergave
+- ASSETS-22603 - sommige Download-type kolommen van het Rapport van Activa tonen &quot;ongeldige&quot;waarden in UI. Dit heeft geen invloed op downloadbare CSV.
 
 ### Opgeloste problemen {#fixed-issues-12255}
 
