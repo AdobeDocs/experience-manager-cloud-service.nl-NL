@@ -2,9 +2,9 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Aan de slag met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1439'
 ht-degree: 6%
 
 ---
@@ -52,6 +52,8 @@ Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optred
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
+>[!NOTE]
+>Deze markering is alleen voor foutopsporing in SSL-problemen. Zorg ervoor dat de markering is uitgeschakeld voordat u de extractie uitvoert, omdat dit veel schijfruimte kan vereisen. Hierdoor kan de stationscapaciteit worden gevuld en kan het extractieproces mislukken.
 
 ## De Content Transfer-tool uitvoeren {#running-tool}
 
