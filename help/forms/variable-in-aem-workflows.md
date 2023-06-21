@@ -2,9 +2,9 @@
 title: Hoe te om variabelen in AEM stappen van het Werkschema toe te voegen?
 description: Leer een variabele te maken, stel een waarde voor de variabele in en gebruik deze in [!DNL AEM Forms] Workflowstappen.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2047'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Het gegevenstype ArrayList van het gebruik om veranderlijke inzamelingen tot sta
 
 Een variabele maken:
 
-1. Navigeer in een AEM naar Gereedschappen ![](assets/hammer-icon.svg) > Workflow > Modellen.
+1. Navigeer in een AEM naar Gereedschappen ![Hammerpictogram](assets/hammer-icon.svg) > Workflow > Modellen.
 1. Tikken **[!UICONTROL Create]** en geeft u de titel en een optionele naam voor het workflowmodel op. Selecteer het model en tik op **[!UICONTROL Edit]**.
 1. Tik op het pictogram Variabelen dat beschikbaar is in de assistent van het workflowmodel en tik op **[!UICONTROL Add Variable]**.
 

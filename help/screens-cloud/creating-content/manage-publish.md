@@ -2,9 +2,9 @@
 title: Een kanaal publiceren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u een kanaal in as a Cloud Service schermen publiceert.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -31,20 +31,20 @@ Voer de onderstaande stappen uit om het kanaal te publiceren:
 
 1. Navigeer en selecteer het kanaal van uw project, zoals **FirstDigitalExperience** —> **Kanalen** —> **LoopingChannelOne**.
 
-   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
+   ![Kanaal selecteren](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. Klikken op **Publicatie beheren** in de actiebalk.
 
 1. Selecteer **Handeling** als **Publiceren** en **Planning** als **Nu** van de **De wizard Publicatie beheren** en klik op **Volgende**.
 
-   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+   ![Publicatieactie selecteren](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
    >Klikken **Inclusief onderliggende items** in de actiebalk en schakel alle opties uit om alle modules in uw project te publiceren en klik op Toevoegen om te publiceren. Door gebrek, worden alle dozen gecontroleerd en u moet manueel uncheck de dozen om alle modules in uw project te publiceren.
 
 1. Nadat u het kanaal hebt geselecteerd in het menu **Publicatie beheren** wizard, klik op **Publiceren** om het kanaal te publiceren.
 
-   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
+   ![Het kanaal publiceren](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Volgende functies {#whats-next}

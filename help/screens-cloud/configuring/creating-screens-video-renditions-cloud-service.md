@@ -2,9 +2,9 @@
 title: Video-uitvoeringen maken in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u video-uitvoeringen kunt maken in as a Cloud Service schermen.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Voer de onderstaande stappen uit om video-uitvoeringen te maken in rasters die z
 
 1. Klik op de sectie Gereedschappen in de linkernavigatiebalk en klik op **Activa** en klik vervolgens op **Profielen verwerken**.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![Klik op Profielen verwerken](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Klikken op **Maken** om een nieuw verwerkingsprofiel te maken.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![Klik op Maken](/help/screens-cloud/assets/configure/screens-video-2.png)
 
 1. Voer de **Naam**, zoals **ScreensProcessingProfile**.
 
@@ -57,11 +57,11 @@ Voer de onderstaande stappen uit om video-uitvoeringen te maken in rasters die z
 
 1. Selecteer het verwerkingsprofiel en klik op **Profiel toepassen op map(pen)**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
+   ![Profiel toepassen op map](/help/screens-cloud/assets/configure/screens-video-5.png)
 
 1. Selecteer de map(pen) waar de video&#39;s op het scherm worden opgeslagen en klik op **Toepassen**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![Klik op Toepassen](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
    >* U kunt meerdere verwerkingsprofielen maken en deze toepassen op de corresponderende mappen, zodat de video&#39;s in die mappen de specifieke video-uitvoeringen krijgen.

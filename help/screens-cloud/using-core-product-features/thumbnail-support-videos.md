@@ -3,9 +3,9 @@ title: Ondersteuning voor miniaturen voor video's in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u ondersteuning voor miniaturen voor video's in as a Cloud Service schermen toevoegt.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -42,19 +42,19 @@ Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 
 1. Selecteer het kanaal en klik op **Bewerken** in de actiebalk om de editor te openen.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![De editor openen](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. Voeg of geef een bestaande videocomponent, zoals aangetoond in hieronder figuur toe uit.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![De component bewerken](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
 1. Selecteer de video en klik op de knop *moersleutel* om de video-eigenschappen te openen.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![Klik op de moersleutel](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
 1. De **Video** wordt het dialoogvenster geopend waarin u het dialoogvenster **Miniatuur** dropzone.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![De miniatuur weergeven](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
 1. Sleep een afbeelding van de elementkiezer naar de **Miniatuur** dropzone en klik op **Gereed**.
 

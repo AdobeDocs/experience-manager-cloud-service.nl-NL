@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen 
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
+1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
 
    * Selecteer een [**omgevingstype**.](#environment-types)
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter de naam van het omgevingstype weergegeven.
@@ -245,7 +245,7 @@ Selecteren **Toegang beheren** in het ovaalmenu van de omgeving op het **Omgevin
 
 Selecteren **Ontwerpconsole** in het ovaalmenu van de omgeving op het **Omgevingen** kaart. Er wordt een nieuw tabblad geopend in uw browser met de aanmeldingspagina op de **Ontwerpconsole**.
 
-![](assets/environ-devconsole.png)
+![Aanmelden bij de ontwikkelaarsconsole](assets/environ-devconsole.png)
 
 Alleen een gebruiker met de **Ontwikkelaar** de rol heeft toegang tot **Ontwerpconsole**. Voor sandboxprogramma&#39;s heeft elke gebruiker die toegang heeft tot het sandboxprogramma echter toegang tot **Ontwerpconsole**.
 
