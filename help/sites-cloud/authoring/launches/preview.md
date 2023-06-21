@@ -1,8 +1,8 @@
 ---
 title: Toekomst voorvertonen met uw introductie
-description: Met Timewarp kunt u uw inhoud bekijken die op uw lanceringen wordt gebaseerd.
+description: Met Timewarp, kunt u uw inhoud bekijken die op uw lanceringen wordt gebaseerd.
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%

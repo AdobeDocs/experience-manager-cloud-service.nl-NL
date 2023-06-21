@@ -3,9 +3,9 @@ title: Dispatcher-configuratie met AEM headless
 description: De Dispatcher is een caching- en beveiligingslaag voor Adobe Experience Manager-publicatieomgevingen. Verschillende configuraties worden gebruikt om GraphQL-eindpunten te openen voor toepassingen zonder kop.
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ De [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispa
 
 >[!NOTE]
 >
->Voor gedetailleerde documentatie over de Dispatcher raadpleegt u de [Handleiding voor verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+>Voor gedetailleerde documentatie over de Dispatcher raadpleegt u de [Handleiding voor verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
 
-Als deel van een AEM Project is een verzender module inbegrepen die configuraties voor de verzender bevat. Nieuw gegenereerde projecten van de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) automatisch opnemen [filters](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?#defining-a-filter) dat GraphQL-eindpunten mogelijk maakt.
+Als deel van een AEM Project is een module van de Verzender inbegrepen die configuraties voor de Verzender bevat. Nieuw gegenereerde projecten van de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) automatisch opnemen [filters](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?#defining-a-filter) die GraphQL-eindpunten mogelijk maken.
 
-## GraphQL-eindpunt(en)
+## GraphQL-eindpunten
 
 Als onderdeel van de standaardfilters, [GraphQL-eindpunten](/help/headless/graphql-api/graphql-endpoint.md) worden geopend met de volgende regel:
 
@@ -28,14 +28,14 @@ Als onderdeel van de standaardfilters, [GraphQL-eindpunten](/help/headless/graph
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-De `*` jokerteken opent meerdere eindpunten van de AEM-instantie. Het vragen gebruikend een eindpunt van GraphQL wordt gemaakt gebruikend `POST` en de reactie **niet** in cache worden geplaatst.
+De `*` jokerteken opent meerdere eindpunten van de AEM-instantie. Het vragen gebruikend een eindpunt van GraphQL wordt gemaakt gebruikend `POST` en de reactie **niet** in cache geplaatst.
 
 ## Aangehouden GraphQL-query&#39;s
 
-Het verzoek om Persisted vragen wordt gemaakt tegen een verschillend eindpunt. Als deel van de standaardfilterconfiguratie, url voor [Blijvende query&#39;s](/help/headless/graphql-api/persisted-queries.md) worden geopend met de volgende regel:
+Het verzoek om Persisted query wordt ingediend tegen een verschillend eindpunt. Als deel van de standaardfilterconfiguratie, url voor [Blijvende query&#39;s](/help/headless/graphql-api/persisted-queries.md) wordt geopend met de volgende regel:
 
 ```
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-U kunt blijvende query&#39;s aanvragen met `GET`, waarbij de reactie op Dispatcher- en CDN-niveau in de cache wordt geplaatst. Meer informatie over caching en cachevalidatie vindt u [hier](/help/implementing/dispatcher/caching.md).
+U kunt blijvende query&#39;s aanvragen met `GET`, door de reactie op Dispatcher en CDN-niveau in cache te plaatsen. Meer informatie over caching en cachevalidatie vindt u [hier](/help/implementing/dispatcher/caching.md).
