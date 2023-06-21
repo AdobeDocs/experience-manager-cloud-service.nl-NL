@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
+source-git-commit: ca4046a94301cebae9e7a46e055977419fedd14e
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
 * Exporteer inhoudsfragmenten van AEM als cloudservice naar Adobe target zoals JSON biedt.
 * Ondersteuning voor paginering en sortering van GraphQL en verbeteringen in de interne cache helpen nu de prestaties van losgekoppelde clienttoepassingen te verbeteren wanneer u grote inhoudssets ophaalt van AEM met behulp van complexe GraphQL-query&#39;s en -filters.
 
-### Nieuwe functies in [!DNL Experience Manager Sites] prelease {#prerelease-sites}
+### Nieuwe functies in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
 
 * Inhoudsfragmenten en de bijbehorende verwijzingen kunnen nu worden gepubliceerd naar de [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) met de [Console voor inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), zodat gebruikers een voorvertoning van de uiteindelijke ervaring kunnen bekijken in een ontkoppelde voorvertoningstoepassing voordat ze live gaan.
 
