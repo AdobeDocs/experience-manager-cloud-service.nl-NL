@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '2819'
+source-wordcount: '2793'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 # Inleiding {#intro}
 
 Het verkeer gaat door CDN tot een Apache laag van de Webserver over, die modules met inbegrip van Dispatcher steunt. Om de prestaties te verbeteren, wordt Dispatcher vooral gebruikt als cache om de verwerking op de publicatieknooppunten te beperken.
-De regels kunnen op de configuratie van de Ontvanger worden toegepast om het even welke montages van de standaardgeheim voorgeheugenvervalsing te wijzigen, resulterend in caching bij CDN. Merk op dat de Verzender ook de resulterende kopballen van de geheim voorgeheugenvervalsing eerbiedigt als `enableTTL` wordt toegelaten in de configuratie van de Verzender, die impliceert dat het specifieke inhoud zelfs buiten inhoud zal verfrissen die opnieuw wordt gepubliceerd.
+De regels kunnen op de configuratie van de Ontvanger worden toegepast om het even welke montages van de standaardgeheim voorgeheugenvervalsing te wijzigen, resulterend in caching bij CDN. Dispatcher respecteert ook de resulterende headers voor het verlopen van de cache als `enableTTL` wordt toegelaten in de configuratie van de Verzender, die impliceert dat het specifieke inhoud zelfs buiten inhoud vernieuwt die opnieuw wordt gepubliceerd.
 
-Op deze pagina wordt ook beschreven hoe de Dispatcher-cache ongeldig wordt gemaakt en hoe caching werkt op browserniveau met betrekking tot bibliotheken aan de clientzijde.
+Op deze pagina wordt ook beschreven hoe de Dispatcher-cache ongeldig wordt gemaakt en hoe caching werkt op browserniveau met betrekking tot client-side bibliotheken.
 
 ## Caching {#caching}
 
@@ -28,7 +28,7 @@ Op deze pagina wordt ook beschreven hoe de Dispatcher-cache ongeldig wordt gemaa
 Define DISABLE_DEFAULT_CACHING
 ```
 
-Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van de leeftijdskopbal (met een waarde die op kalenderdag wordt gebaseerd) vereist omdat door gebrek de leeftijdskopbal aan 0 wordt geplaatst. Dat gezegd hebbende, **Wees voorzichtig bij het uitschakelen van standaardcaching.**
+Deze methode is bijvoorbeeld handig wanneer uw bedrijfslogica een nauwkeurige afstemming van de paginakoptekst vereist (met een waarde die op kalenderdag is gebaseerd), omdat de paginakoptekst standaard op 0 is ingesteld. Dat gezegd hebbende, **Wees voorzichtig bij het uitschakelen van standaardcaching.**
 
 * kan worden overschreven voor alle HTML-/tekstinhoud door het definiëren van de `EXPIRATION_TIME` variabele in `global.vars` met de AEM as a Cloud Service SDK Dispatcher-gereedschappen.
 * kan worden overschreven op een fijner korrelig niveau, inclusief het onafhankelijk beheren van de CDN en de browsercache, met de volgende Apache `mod_headers` richtlijnen:
@@ -42,9 +42,9 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
   ```
 
   >[!NOTE]
-  >De header Surrogate-Control is van toepassing op de door Adobe beheerde CDN. Als u een [door klant beheerde CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), kan een verschillende kopbal afhankelijk van uw leverancier CDN worden vereist.
+  >De header Surrogate-Control is van toepassing op de door Adobe beheerde CDN. Als u een [door de klant beheerde CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), kan een verschillende kopbal afhankelijk van uw leverancier CDN worden vereist.
 
-  Wees voorzichtig bij het instellen van algemene cachebeheerkoppen of van headers die overeenkomen met een brede regex, zodat ze niet worden toegepast op inhoud die u privé moet houden. Overweeg meerdere richtlijnen te gebruiken om ervoor te zorgen dat regels op een fijnkorrelige manier worden toegepast. Met dat gezegd, AEM as a Cloud Service zal de geheim voorgeheugenkopbal verwijderen als het ontdekt dat het is toegepast op wat het ontdekt om door Dispatcher oncacheable te zijn, zoals die in de documentatie van de Verzender wordt beschreven. Als u AEM wilt dwingen om altijd de in cache plaatsen koppen toe te passen, kunt u de opdracht **altijd** optie als volgt:
+  Wees voorzichtig bij het instellen van algemene cachebeheerkoppen of vergelijkbare cachekoppen die overeenkomen met een brede regex, zodat deze niet worden toegepast op inhoud die u privé moet houden. Overweeg meerdere richtlijnen te gebruiken om ervoor te zorgen dat regels op een fijnkorrelige manier worden toegepast. Met dit gezegd, verwijdert AEM as a Cloud Service de geheim voorgeheugenkopbal als het ontdekt dat het is toegepast op wat het ontdekt om door Dispatcher oncacheable te zijn, zoals die in de documentatie van de Verzender wordt beschreven. Als u AEM wilt dwingen om altijd de in cache plaatsen koppen toe te passen, kunt u de opdracht **`always`** optie als volgt:
 
   ```
   <LocationMatch "^/content/.*\.(html)$">
@@ -55,7 +55,7 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
   </LocationMatch>
   ```
 
-  U moet ervoor zorgen dat een bestand onder `src/conf.dispatcher.d/cache` heeft de volgende regel (die in de standaardconfiguratie is):
+  Zorg ervoor dat een bestand onder `src/conf.dispatcher.d/cache` heeft de volgende regel (die in de standaardconfiguratie is):
 
   ```
   /0000
@@ -72,17 +72,17 @@ Dit kan nuttig zijn, bijvoorbeeld, wanneer uw bedrijfslogica het verfijnen van d
     </LocationMatch>
   ```
 
-* Terwijl HTML-inhoud die is ingesteld op Private niet in de cache van de CDN wordt geplaatst, kan deze bij de dispatcher in de cache worden geplaatst als [Machtigingsgevoelige caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) is geconfigureerd, zodat alleen geautoriseerde gebruikers de inhoud kunnen ontvangen.
+* Terwijl HTML-inhoud die is ingesteld op Private niet in de cache van de CDN wordt opgeslagen, kan deze inhoud in de cache van Dispatcher worden geplaatst als [Machtigingsgevoelige caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) is geconfigureerd, zodat alleen geautoriseerde gebruikers de inhoud kunnen ontvangen.
 
   >[!NOTE]
-  >De andere methoden, waaronder de [verzender-ttl AEM ACS-Commons-project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), overschrijft de waarden niet.
+  >De andere methoden, waaronder de [Dispatcher-ttl AEM ACS Commons-project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), worden waarden niet genegeerd.
 
   >[!NOTE]
-  >Houd er rekening mee dat Dispatcher inhoud nog steeds in cache plaatst op basis van zijn eigen [caching-regels](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Als u de inhoud echt privé wilt maken, moet u ervoor zorgen dat deze niet in de cache wordt opgeslagen door Dispatcher.
+  >De Dispatcher plaatst de inhoud mogelijk nog steeds in de cache volgens zijn eigen [caching-regels](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Als u de inhoud echt privé wilt maken, moet u ervoor zorgen dat deze niet in de cache wordt opgeslagen door Dispatcher.
 
 ### Client-Side bibliotheken (js,css) {#client-side-libraries}
 
-* Wanneer u AEM clientbibliotheekframework gebruikt, worden JavaScript- en CSS-code zodanig gegenereerd dat browsers deze oneindig in cache kunnen plaatsen, aangezien elke wijziging zich voordoet als nieuwe bestanden met een uniek pad.  Met andere woorden, HTML dat verwijzingen de cliëntbibliotheken worden geproduceerd zoals nodig zodat de klanten nieuwe inhoud kunnen ervaren aangezien het wordt gepubliceerd. Het cache-control wordt ingesteld op &#39;onveranderlijk&#39; of op 30 dagen voor oudere browsers die de waarde &#39;onveranderlijk&#39; niet respecteren.
+* Wanneer u AEM clientbibliotheekframework gebruikt, worden JavaScript- en CSS-code zodanig gegenereerd dat browsers deze oneindig in cache kunnen plaatsen, aangezien elke wijziging zich voordoet als nieuwe bestanden met een uniek pad. Met andere woorden, HTML dat verwijzingen de cliëntbibliotheken worden geproduceerd zoals nodig zodat de klanten nieuwe inhoud kunnen ervaren aangezien het wordt gepubliceerd. Het cache-control wordt ingesteld op &#39;onveranderlijk&#39; of op 30 dagen voor oudere browsers die de waarde &#39;onveranderlijk&#39; niet respecteren.
 * zie de sectie [Bibliotheken aan de clientzijde en consistentie van versies](#content-consistency) voor meer informatie.
 
 ### Afbeeldingen en inhoud die groot genoeg is om in blokopslag te worden opgeslagen {#images}
@@ -98,11 +98,11 @@ In beide gevallen kunnen de in cache plaatsen koppen op een fijner korrelig nive
    </LocationMatch>
 ```
 
-Wanneer het wijzigen van de caching kopballen bij de laag van de Verzender, gelieve voorzichtig te zijn om niet te wijd in het voorgeheugen onder te brengen, zie de bespreking in de HTML/tekstsectie [boven](#html-text). Zorg er ook voor dat elementen die bedoeld zijn om privé te blijven (in plaats van in cache te worden geplaatst), geen deel uitmaken van de `LocationMatch` richtingsfilters.
+Wanneer het wijzigen van de caching kopballen bij de laag van de Verzender, ben voorzichtig om niet te wijd in het voorgeheugen onder te brengen. Zie de discussie in de sectie HTML/tekst [boven](#html-text). Zorg er ook voor dat elementen die bedoeld zijn om privé te blijven (in plaats van in cache te worden geplaatst), geen deel uitmaken van de `LocationMatch` richtingsfilters.
 
 #### Nieuw standaardgedrag voor in cache plaatsen {#new-caching-behavior}
 
-De AEM laag zal geheim voorgeheugenkopballen plaatsen afhankelijk van of de geheim voorgeheugenkopbal reeds is geplaatst en de waarde van het verzoektype. Merk op dat als geen kopbal van de geheim voorgeheugencontrole is geplaatst, openbare inhoud in het voorgeheugen wordt opgeslagen en voor authentiek verklaard verkeer wordt geplaatst aan privé. Als een kopbal van de geheim voorgeheugencontrole is geplaatst, worden de geheim voorgeheugenkopballen verlaten onveranderd.
+De AEM laag plaatst geheim voorgeheugenkopballen afhankelijk van of de geheim voorgeheugenkopbal reeds is geplaatst en de waarde van het verzoektype. Als geen kopbal van de geheim voorgeheugencontrole wordt geplaatst, wordt de openbare inhoud in het voorgeheugen ondergebracht, en voor authentiek verklaard verkeer wordt geplaatst aan privé. Als een kopbal van de geheim voorgeheugencontrole wordt geplaatst, worden de geheim voorgeheugenkopballen verlaten onveranderd.
 
 | Besturingsheader voor cache bestaat? | Type aanvraag | AEM stelt cachekoppen in op |
 |------------------------------|---------------|------------------------------------------------|
@@ -114,15 +114,15 @@ Hoewel niet aanbevolen, is het mogelijk om het nieuwe standaardgedrag te wijzige
 
 #### Oudere standaardcaching, gedrag {#old-caching-behavior}
 
-De AEM laag plaatst blob-inhoud niet standaard in het cachegeheugen.
+In de AEM-laag wordt blob-inhoud niet standaard in de cache opgeslagen.
 
 >[!NOTE]
->Het wordt aanbevolen het oudere standaardgedrag te wijzigen om consistent te zijn met het nieuwe gedrag (programma-id&#39;s die hoger zijn dan 65000) door de omgevingsvariabele AEM_BLOB_ENABLE_CACHING_HEADERS van Cloud Manager in te stellen op true. Als het programma al actief is, controleert u of de inhoud zich na de wijzigingen gedraagt zoals u verwacht.
+>Wijzig het oudere standaardgedrag om consistent te zijn met het nieuwe gedrag (programma-id&#39;s die hoger zijn dan 65000) door de omgevingsvariabele AEM_BLOB_ENABLE_CACHING_HEADERS van Cloud Manager in te stellen op true. Als het programma al actief is, controleert u of de inhoud zich na de wijzigingen gedraagt zoals u verwacht.
 
-Afbeeldingen in blob-opslag die als private zijn gemarkeerd, kunnen op dit moment niet in cache worden geplaatst met [Machtigingsgevoelige caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). De afbeelding wordt altijd opgevraagd bij de AEM oorsprong en wordt weergegeven als de gebruiker geautoriseerd is.
+Nu kunnen afbeeldingen in blob-opslag die als private zijn gemarkeerd, niet in cache worden geplaatst op de Dispatcher die [Machtigingsgevoelige caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). De afbeelding wordt altijd opgevraagd bij de AEM oorsprong en wordt weergegeven als de gebruiker geautoriseerd is.
 
 >[!NOTE]
->De andere methoden, waaronder de [verzender-ttl AEM ACS-Commons-project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), worden de waarden niet overschreven.
+>De andere methoden, waaronder de [verzender-ttl AEM ACS-Commons-project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), overschrijf de waarden niet.
 
 ### Andere inhoudstypen in nodenarchief {#other-content}
 
@@ -132,15 +132,15 @@ Afbeeldingen in blob-opslag die als private zijn gemarkeerd, kunnen op dit momen
 
 ### Verdere optimalisaties {#further-optimizations}
 
-* Vermijd het gebruik `User-Agent` als onderdeel van de `Vary` header. Oudere versies van de standaardinstallatie van de Dispatcher (vóór archetype versie 28) bevatten dit en wij adviseren u het verwijderen door de hieronder stappen te gebruiken.
+* Vermijd het gebruik `User-Agent` als onderdeel van de `Vary` header. Oudere versies van de standaardinstallatie van Dispatcher (vóór archetype versie 28) bevatten deze en Adobe raadt u aan deze versie te verwijderen door de onderstaande stappen uit te voeren.
    * Zoek de hostbestanden in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
-   * Verwijder of verwijder de regel: `Header append Vary User-Agent env=!dont-vary` van alle vhost-bestanden, met uitzondering van default.vhost, dat alleen-lezen is
+   * Verwijder of verwijder de regel: `Header append Vary User-Agent env=!dont-vary` van alle vhost-bestanden, behalve default.vhost, dat alleen-lezen is
 * Gebruik de `Surrogate-Control` header om CDN in cache te plaatsen onafhankelijk van browser caching
 * Overweeg toepassing toe te passen [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) en [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) richtlijnen waarmee u op de achtergrond kunt vernieuwen en cachefouten kunt voorkomen, zodat uw inhoud snel en vers blijft voor gebruikers.
-   * Er zijn veel manieren om deze richtlijnen toe te passen, maar er wordt een minuut toegevoegd `stale-while-revalidate` aan alle kopballen van de geheim voorgeheugencontrole is een goed uitgangspunt.
+   * Er zijn vele manieren om deze richtlijnen toe te passen, maar het toevoegen van een minuut `stale-while-revalidate` aan alle kopballen van de geheim voorgeheugencontrole is een goed uitgangspunt.
 * Hier volgen enkele voorbeelden voor verschillende inhoudstypen, die u kunt gebruiken als richtlijn bij het instellen van uw eigen regels voor het in cache plaatsen. Overweeg en test zorgvuldig uw specifieke instellingen en vereisten:
 
-   * Mogelijke clientbibliotheekbronnen voor 12 uur in cache opslaan en de achtergrond vernieuwen na 12 uur.
+   * Mogelijke clientbibliotheekbronnen gedurende 12 uur in cache opslaan en de achtergrond na 12 uur vernieuwen.
 
      ```
      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
@@ -158,7 +158,7 @@ Afbeeldingen in blob-opslag die als private zijn gemarkeerd, kunnen op dit momen
      </LocationMatch>
      ```
 
-   * Plaats HTML-pagina&#39;s voor 5 minuten in cache, waarbij de achtergrond 1 uur in de browser en 12 uur in de CDN vernieuwt. De geheime voorgeheugen-controle kopballen zullen altijd worden toegevoegd zodat is het belangrijk om ervoor te zorgen dat de aanpassing van HTML- pagina&#39;s onder /content/* bestemd zijn om openbaar te zijn. Als niet, overweeg het gebruiken van een specifiekere regex.
+   * Plaats HTML-pagina&#39;s gedurende vijf minuten in de cache, waarbij de achtergrond één uur in de browser en 12 uur in de CDN vernieuwt. De cache-Control headers worden altijd toegevoegd, dus het is belangrijk om ervoor te zorgen dat overeenkomende HTML-pagina&#39;s onder /content/* openbaar moeten zijn. Als niet, overweeg het gebruiken van een specifiekere regex.
 
      ```
      <LocationMatch "^/content/.*\.html$">
@@ -169,7 +169,7 @@ Afbeeldingen in blob-opslag die als private zijn gemarkeerd, kunnen op dit momen
      </LocationMatch>
      ```
 
-   * Cache content services/Sling model exporter json responses for 5min met background refresh 1h op browser en 12h op CDN.
+   * De diensten van de inhoud van het geheime voorgeheugen/Sling model exporter json reacties voor vijf minuten met achtergrond verfrissen zich één uur op browser en 12 uren op CDN.
 
      ```
      <LocationMatch "^/content/.*\.model\.json$">
@@ -188,7 +188,7 @@ Afbeeldingen in blob-opslag die als private zijn gemarkeerd, kunnen op dit momen
      </LocationMatch>
      ```
 
-   * Mutabele bronnen van de DAM in de cache opslaan, zoals afbeeldingen en video voor 24 uur en de achtergrond vernieuwen na 12 uur om MISS te voorkomen
+   * Mutabele bronnen van de DAM in cache plaatsen, zoals afbeeldingen en video, gedurende 24 uur en de achtergrond vernieuwen na 12 uur om MISS te voorkomen.
 
      ```
      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
@@ -199,11 +199,11 @@ Afbeeldingen in blob-opslag die als private zijn gemarkeerd, kunnen op dit momen
 
 ### HEAD-aanvraaggedrag {#request-behavior}
 
-Wanneer een verzoek van HEAD bij Adobe CDN voor een middel wordt ontvangen dat **niet** in de cache wordt het verzoek getransformeerd en door de instantie Dispatcher en/of AEM ontvangen als een GET-verzoek. Als de reactie cacheable is, dan worden de verdere verzoeken van HEAD van CDN gediend. Als de reactie niet cacheable is, dan worden de verdere verzoeken van HEAD overgegaan tot de Dispatcher, of AEM instantie, of allebei, voor een periode die van `Cache-Control` TTL.
+Wanneer een verzoek van HEAD bij Adobe CDN voor een middel wordt ontvangen dat **niet** in de cache wordt het verzoek getransformeerd en door de instantie Dispatcher en/of AEM ontvangen als een GET-verzoek. Als de reactie cacheable is, dan worden de verdere verzoeken van HEAD van CDN gediend. Als de reactie niet cacheable is, dan worden de verdere verzoeken van HEAD overgegaan tot de Dispatcher, of AEM instantie, of allebei, voor een tijd die van `Cache-Control` TTL.
 
 ### Parameters van de marketingcampagne {#marketing-parameters}
 
-URL&#39;s van websites bevatten vaak parameters voor marketingcampagnes die worden gebruikt om het succes van een campagne te volgen. Als u het cachegeheugen van de verzender effectief wilt gebruiken, wordt u aangeraden de configuratie van de verzender te configureren `ignoreUrlParams` eigenschap as [hier gedocumenteerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+URL&#39;s van websites bevatten vaak parameters voor marketingcampagnes die worden gebruikt om het succes van een campagne te volgen. Om het geheime voorgeheugen van de Verzender effectief te gebruiken, adviseert men dat u de configuratie van de Verzender vormt `ignoreUrlParams` eigenschap as [hier gedocumenteerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
 De `ignoreUrlParams` mag geen opmerkingen bevatten en moet verwijzen naar het bestand `conf.dispatcher.d/cache/marketing_query_parameters.any`. U kunt het bestand wijzigen door de opmerkingen van de regels die overeenkomen met de parameters die relevant zijn voor uw marketingkanalen ongedaan te maken. U kunt ook andere parameters toevoegen.
 
@@ -223,23 +223,23 @@ Over het algemeen is het niet nodig om de Dispatcher-cache ongeldig te maken. In
 Net als bij eerdere versies van AEM worden bij het publiceren of verwijderen van pagina&#39;s de inhoud uit de Dispatcher-cache gewist. Als een cacheprobleem wordt vermoed, moet u de pagina&#39;s in kwestie opnieuw publiceren en ervoor zorgen dat er een virtuele host beschikbaar is die overeenkomt met de `ServerAlias` localhost, wat vereist is voor de ongeldigverklaring van het cachegeheugen van Dispatcher.
 
 >[!NOTE]
->Voor een correcte validatie van de verzender moet u ervoor zorgen dat aanvragen van &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;.local&quot;, &quot;.adobeaemcloud.com&quot; en &quot;.adobeaemcloud.net&quot; allemaal overeenkomen en worden afgehandeld door een hostconfiguratie zodat deze aanvragen kunnen worden uitgevoerd. U kunt dit doen door globale overeenkomst &quot;*&quot; in een catch-all vhost configuratie na het patroon in de verwijzing te kiezen [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) of door ervoor te zorgen dat de eerder genoemde lijst door een van de gastheren wordt afgevangen.
+>Voor een correcte validatie van de Verzender moet u ervoor zorgen dat aanvragen van &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;.local&quot;, &quot;.adobeaemcloud.com&quot; en &quot;.adobeaemcloud.net&quot; allemaal overeenkomen en worden afgehandeld door een hostconfiguratie zodat de aanvraag kan worden uitgevoerd. U kunt deze taak doen door globale aanpassing &quot;*&quot; in een catch-all vhost configuratie volgens het patroon in de verwijzing [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). U kunt er ook voor zorgen dat de eerder vermelde lijst wordt afgevangen door een van de hosts.
 
-Wanneer de publicatieinstantie een nieuwe versie van een pagina of element van de auteur ontvangt, gebruikt deze de agent flush om de juiste paden op de Dispatcher ongeldig te maken. Het bijgewerkte pad wordt samen met de bovenliggende elementen uit de Dispatcher-cache verwijderd tot een niveau (u kunt dit configureren met de [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
+Wanneer de publicatieinstantie een nieuwe versie van een pagina of element van de auteur ontvangt, gebruikt deze de agent flush om de juiste paden op de Dispatcher ongeldig te maken. Het bijgewerkte pad wordt samen met de bovenliggende elementen uit de Dispatcher-cache verwijderd tot een niveau (u kunt dit niveau configureren met de [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
 ## Expliciete ongeldigmaking van de Dispatcher-cache {#explicit-invalidation}
 
-Adobe raadt aan om de levenscyclus van de levering van inhoud te regelen op standaard cacheheaders. Indien nodig is het echter mogelijk inhoud rechtstreeks in Dispatcher ongeldig te maken.
+Adobe raadt aan dat u de levenscyclus van de levering van inhoud beheert met behulp van standaard cacheheaders. Indien nodig is het echter mogelijk inhoud rechtstreeks in Dispatcher ongeldig te maken.
 
 De volgende lijst bevat scenario&#39;s waar u uitdrukkelijk het geheime voorgeheugen zou kunnen willen invalideren (terwijl naar keuze het luisteren naar de voltooiing van de ongeldigverklaring):
 
-* Na het publiceren van inhoud zoals ervaringsfragmenten of inhoudsfragmenten, het ongeldig maken van gepubliceerde en in de cache opgeslagen inhoud die naar die elementen verwijst.
+* Na het publiceren van inhoud zoals ervaringsfragmenten of inhoudsfragmenten, het ongeldig maken van gepubliceerde en in cache geplaatste inhoud die naar die elementen verwijst.
 * Een extern systeem waarschuwen wanneer pagina&#39;s waarnaar wordt verwezen, zijn ongeldig gemaakt.
 
 Er zijn twee benaderingen om het geheime voorgeheugen uitdrukkelijk ongeldig te maken:
 
 * De voorkeursbenadering is het gebruik van de Sling Content Distribution (SCD) van de auteur.
-* Door de replicatie-API te gebruiken om de publicatieagent voor Dispatcher te activeren.
+* De andere benadering is de Replicatie API te gebruiken om publiceer Dispatcher te roepen flush replicatieagent.
 
 De benaderingen verschillen in termen van laagbeschikbaarheid, de capaciteit om gebeurtenissen en gebeurtenisverwerkingsgarantie te dedupliceren. In de onderstaande tabel staan de volgende opties:
 
@@ -313,20 +313,20 @@ De benaderingen verschillen in termen van laagbeschikbaarheid, de capaciteit om 
   </tbody>
 </table>
 
-Houd er rekening mee dat de twee acties die rechtstreeks verband houden met de invalidatie van de cache, de API voor invalidatie en replicatie van inhoud (Sling Content Distribution, SCD)-API deactiveren zijn.
+De twee acties die rechtstreeks verband houden met cachevalidatie zijn Sling Content Distribution (SCD) API Invalidate and Replication API Deactivate.
 
-Uit de tabel blijkt ook dat:
+Uit de tabel kunt u ook het volgende optekenen:
 
 * SCD API is nodig wanneer elke gebeurtenis moet worden gegarandeerd, bijvoorbeeld synchroniseren met een extern systeem dat nauwkeurige kennis vereist. Als er een publicatielaag upscaling-gebeurtenis is op het moment van de validatieaanroep, wordt een extra gebeurtenis weergegeven wanneer elke nieuwe publicatie de validatie verwerkt.
 
-* Het gebruik van de API voor replicatie is geen gangbaar gebruiksgeval, maar moet worden gebruikt in gevallen waarin de trigger voor het ongeldig maken van de cache afkomstig is uit de publicatielaag en niet uit de auteurslaag. Dit zou nuttig kunnen zijn als de verzender TTL wordt gevormd.
+* Het gebruik van de API voor replicatie is geen gangbaar gebruiksgeval, maar kan worden gebruikt in gevallen waarin de trigger voor het ongeldig maken van de cache afkomstig is uit de publicatielaag en niet uit de auteurslaag. Deze methode zou nuttig kunnen zijn als de Verzender TTL wordt gevormd.
 
-Als u de Dispatcher-cache wilt invalideren, kunt u het beste de actie SCD API Invalidate van de auteur gebruiken. Bovendien kunt u ook naar de gebeurtenis luisteren, zodat u vervolgens verdere downstreamacties kunt activeren.
+Als u de Dispatcher-cache wilt invalideren, kunt u het beste de actie SCD API Invalidate van de auteur gebruiken. U kunt ook luisteren naar de gebeurtenis, zodat u vervolgens verdere downstreamacties kunt activeren.
 
 ### Verdelen van inhoud (SCD) {#sling-distribution}
 
 >[!NOTE]
->Houd er rekening mee dat u de aangepaste code in een AEM Cloud Service Dev-omgeving en niet lokaal moet testen wanneer u de onderstaande instructies gebruikt.
+>Wanneer u de onderstaande instructies gebruikt, test u de aangepaste code in een AEM Cloud Service Dev-omgeving en niet lokaal.
 
 Bij gebruik van de SCD-actie van Auteur ziet het implementatiepatroon er als volgt uit:
 
@@ -454,15 +454,15 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## Client-Side bibliotheken en consistentie van versies {#content-consistency}
 
-Pagina&#39;s bestaan uit HTML, JavaScript, CSS en afbeeldingen. Klanten worden aangeraden de [Client-Side Libraries (clientlibs)-framework](/help/implementing/developing/introduction/clientlibs.md) om Javascript en CSS middelen in HTML pagina&#39;s in te voeren, rekening houdend met gebiedsdelen tussen bibliotheken JS.
+Pagina&#39;s bestaan uit HTML, JavaScript, CSS en afbeeldingen. Klanten worden aangeraden de [Client-Side Libraries (clientlibs)-framework](/help/implementing/developing/introduction/clientlibs.md) om JavaScript- en CSS-bronnen te importeren in HTML-pagina&#39;s, rekening houdend met afhankelijkheden tussen JS-bibliotheken.
 
-Het clientlibs-framework biedt automatisch versiebeheer, wat betekent dat ontwikkelaars wijzigingen in JS-bibliotheken kunnen inchecken in broncontrole en dat de nieuwste versie beschikbaar wordt gesteld wanneer een klant zijn release opdringt. Zonder dit, zouden de ontwikkelaars HTML met verwijzingen naar de nieuwe versie van de bibliotheek manueel moeten veranderen, wat vooral bezwaarlijk is als vele malplaatjes van HTML de zelfde bibliotheek delen.
+Het clientlibs-framework biedt automatisch versiebeheer. Dit houdt in dat ontwikkelaars wijzigingen in JS-bibliotheken in broncontrole kunnen inchecken en dat de nieuwste versie beschikbaar wordt gesteld wanneer een klant zijn release onder druk zet. Zonder deze workflow moeten ontwikkelaars HTML handmatig wijzigen met verwijzingen naar de nieuwe versie van de bibliotheek. Dit is vooral lastig als dezelfde bibliotheek veel HTML-sjablonen deelt.
 
-Wanneer de nieuwe versies van bibliotheken worden vrijgegeven voor productie, worden de HTML-pagina&#39;s waarnaar wordt verwezen, bijgewerkt met nieuwe koppelingen naar die bijgewerkte bibliotheekversies. Nadat de browsercache voor een bepaalde HTML-pagina is verlopen, is er geen bezorgdheid dat de oude bibliotheken vanuit de browsercache worden geladen, aangezien de vernieuwde pagina (van AEM) nu gegarandeerd naar de nieuwe versies van de bibliotheken verwijst. Met andere woorden, een vernieuwde HTML-pagina bevat alle meest recente bibliotheekversies.
+Wanneer de nieuwe versies van bibliotheken worden vrijgegeven voor productie, worden de HTML-pagina&#39;s waarnaar wordt verwezen, bijgewerkt met nieuwe koppelingen naar die bijgewerkte bibliotheekversies. Nadat de browsercache voor een bepaalde HTML-pagina is verlopen, is er geen bezorgdheid dat de oude bibliotheken vanuit de browsercache worden geladen. De reden hiervoor is dat de vernieuwde pagina (van AEM) nu gegarandeerd verwijst naar de nieuwe versies van de bibliotheken. Een vernieuwde HTML-pagina bevat dus alle meest recente bibliotheekversies.
 
-Het mechanisme hiervoor is een geserialiseerde hash, die aan de verbinding van de cliëntbibliotheek wordt toegevoegd, die een unieke, versioned url voor browser verzekert om CSS/JS in het voorgeheugen onder te brengen. De geserialiseerde hash wordt alleen bijgewerkt wanneer de inhoud van de clientbibliotheek wordt gewijzigd. Dit betekent dat als er niet-verwante updates optreden (dat wil zeggen geen wijzigingen in de onderliggende css/js van de clientbibliotheek), zelfs met een nieuwe implementatie, de verwijzing ongewijzigd blijft, waardoor de browsercache minder wordt verstoord.
+Het mechanisme achter deze mogelijkheid is een geserialiseerde hash, die aan de verbinding van de cliëntbibliotheek wordt toegevoegd. Hiermee wordt een unieke, versiegekoppelde URL voor de browser gegarandeerd die de CSS/JS in cache plaatst. De geserialiseerde hash wordt alleen bijgewerkt wanneer de inhoud van de clientbibliotheek wordt gewijzigd. Dit houdt in dat als er niet-gerelateerde updates optreden (dat wil zeggen dat er geen wijzigingen zijn aangebracht in de onderliggende css/js van de clientbibliotheek) zelfs met een nieuwe implementatie, de verwijzing ongewijzigd blijft. Hierdoor wordt de browsercache minder verstoord.
 
-### Longcache-versies van Client Side Libraries inschakelen - AEM as a Cloud Service SDK QuickStart {#enabling-longcache}
+### Longcache-versies van Client-Side Libraries inschakelen - AEM as a Cloud Service SDK QuickStart {#enabling-longcache}
 
 De standaard clientlib omvat op een pagina van HTML kijkt als het volgende voorbeeld:
 
@@ -476,13 +476,13 @@ Wanneer strikte clientlib-versioning is ingeschakeld, wordt een lange-termijnhas
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.lc-7c8c5d228445ff48ab49a8e3c865c562-lc.css" type="text/css">
 ```
 
-Strikte clientlib-versioning is standaard ingeschakeld in alle AEM as a Cloud Service omgevingen.
+Strikte clientlib-versioning wordt standaard ingeschakeld in alle AEM as a Cloud Service omgeving.
 
-Om strikte clientlib versioning in lokale SDK toe te laten voert QuickStart de volgende acties uit:
+Ga als volgt te werk om strikte clientlib-versioning in te schakelen in de lokale SDK QuickStart:
 
 1. Navigeer aan de Manager van de Configuratie OSGi `<host>/system/console/configMgr`
 1. Vind OSGi Config voor de Manager van de Bibliotheek van de HTML van Adobe Granite:
-   * Schakel het selectievakje in om Strikte versie in te schakelen
-   * Voer in het veld met het label Long-term client side cache key de waarde /.*;hash
-1. Sla de wijzigingen op. Het is niet noodzakelijk om deze configuratie in broncontrole te bewaren aangezien AEM as a Cloud Service deze configuratie in dev, stadium en productiemilieu&#39;s automatisch toelaat.
+   * Schakel het selectievakje in, zodat u de strikte versie inschakelt
+   * In het veld met het label **Cachetoets op lange termijn clientzijde**, voert u de waarde van / in.*;hash
+1. Sla de wijzigingen op. Het is niet noodzakelijk om deze configuratie in broncontrole te bewaren aangezien AEM as a Cloud Service deze configuratie in dev, stadium, en productiemilieu&#39;s automatisch toelaat.
 1. Telkens wanneer de inhoud van de clientbibliotheek wordt gewijzigd, wordt een nieuwe hash-toets gegenereerd en wordt de HTML-verwijzing bijgewerkt.

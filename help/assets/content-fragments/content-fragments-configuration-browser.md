@@ -2,10 +2,10 @@
 title: Inhoudsfragmenten - Configuratie-browser (middelen - Inhoudsfragmenten)
 description: Leer hoe te om de functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 14%
+source-wordcount: '358'
+ht-degree: 3%
 
 ---
 
@@ -24,21 +24,21 @@ Voordat u Inhoudsfragmenten kunt gebruiken, moet u de opdracht **Configuratiebro
 >
 >Als u deze optie niet inschakelt **Modellen van inhoudsfragmenten**:
 >
->* de **Maken** Deze optie is niet beschikbaar voor het maken van nieuwe modellen.
->* u kunt niet [Selecteer de configuratie van Plaatsen om het verwante eindpunt tot stand te brengen](/help/headless/graphql-api/graphql-endpoint.md).
+>* de **Maken** is niet beschikbaar voor het maken van modellen.
+>* u kunt [Selecteer de configuratie van Plaatsen om het verwante eindpunt tot stand te brengen](/help/headless/graphql-api/graphql-endpoint.md).
 
-Voor het inschakelen van de functionaliteit voor inhoudsfragmenten moet u:
+U moet het volgende doen om de functionaliteit van inhoudsfragmenten in te schakelen:
 
-* Het gebruik van de functionaliteit voor inhoudsfragmenten inschakelen via de configuratiesbrowser
+* Het gebruik van de functionaliteit voor inhoudsfragmenten inschakelen via de configuratiebrowser
 * De configuratie toepassen op de map Middelen
 
 ### Functionaliteit van inhoudsfragment inschakelen in configuratievenster {#enable-content-fragment-functionality-in-configuration-browser}
 
-Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-content-fragment-model) u **moet** ze eerst via de **Configuratiebrowser**:
+Als u bepaalde [Functionaliteit van inhoudsfragment](#creating-a-content-fragment-model), u **moet** eerst de **Configuratiebrowser**:
 
 >[!NOTE]
 >
->Zie ook voor meer informatie [Configuratiebrowser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Zie voor meer informatie [Configuratiebrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
@@ -47,11 +47,11 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
 >Ik wil alleen opmerken dat:
 >
 >
->* Na het creëren van modellen in een subconfiguratie, is het NIET mogelijk om het model naar een andere subconfiguratie te bewegen of te kopiëren.
+>* Na het creëren van modellen in een subconfiguration, is het NIET mogelijk om het model aan een andere subconfiguration te bewegen of te kopiëren.
 >
->* Een eindpunt van GraphQL zal (nog) op een ouder (wortel) configuratie worden gebaseerd.
+>* Een eindpunt van GraphQL is (nog) gebaseerd op een ouder (wortel) configuratie.
 >
->* Blijvende query&#39;s worden (nog) als relevant voor de bovenliggende (basis)configuratie opgeslagen.
+>* Blijvende query&#39;s worden (nog) opgeslagen als relevant voor de bovenliggende (basis)configuratie.
 
 
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
@@ -76,6 +76,6 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
 
 Wanneer de configuratie **globaal** is ingeschakeld voor de functionaliteit van inhoudsfragmenten en wordt vervolgens toegepast op elke map Middelen.
 
-Als u andere configuraties (dat wil zeggen exclusief globaal) wilt gebruiken met een vergelijkbare map met assets, moet u de verbinding definiëren. U doet dit door de juiste **Configuratie** te selecteren op het tabblad **Cloud Services** van de **Mapeigenschappen** van de juiste map.
+Als u andere configuraties (behalve algemene configuraties) wilt gebruiken in een vergelijkbare map Elementen, moet u de verbinding definiëren. Deze verbinding wordt tot stand gebracht door de juiste **Configuratie** in de **Cloud Services** tabblad van het dialoogvenster **Eigenschappen van map** van de desbetreffende map.
 
 ![Configuratie toepassen](assets/cfm-conf-02.png)

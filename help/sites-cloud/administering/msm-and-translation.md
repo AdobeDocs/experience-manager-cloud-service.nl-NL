@@ -4,9 +4,9 @@ description: Leer hoe u uw inhoud kunt hergebruiken in uw project en meertalige 
 feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -24,35 +24,35 @@ Deze twee functies kunnen worden gecombineerd om te kunnen werken met websites d
 
 >[!TIP]
 >
->Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md) Dit is een geleid pad door uw AEM Sites-inhoud te vertalen met de krachtige vertaalgereedschappen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
+>Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u [Vertaalreis naar sites](/help/journey-sites/translation/overview.md). Het is een geleide weg door uw inhoud van AEM Sites te vertalen gebruikend AEM krachtige vertaalhulpmiddelen; ideaal als u geen AEM of vertaalervaring hebt.
 
 ## Meertalige en meertalige sites {#multinational-and-multilingual-sites}
 
 U kunt op efficiënte wijze inhoud maken voor multinationale en meertalige sites door het gecombineerde gebruik van de Multi-Site Manager en de vertaalworkflow.
 
-Doorgaans maakt u een master site in één taal en voor een specifiek land en gebruikt u die inhoud als basis voor de andere sites, waar nodig met vertaling.
+Doorgaans maakt u een primaire site in één taal en voor een specifiek land en gebruikt u die inhoud als basis voor de andere sites, waar nodig met vertaling.
 
-1. [Vertalen](translation/overview.md) de master site in verschillende talen.
+1. [Vertalen](translation/overview.md) de primaire site in verschillende talen.
 1. Gebruiken [Beheer van meerdere sites](msm/overview.md) tot:
-   1. Inhoud van de master site en de vertalingen ervan hergebruiken om sites te maken voor andere landen en culturen.
+   1. Inhoud van de primaire site en de bijbehorende vertalingen opnieuw gebruiken om sites te maken voor andere landen en culturen.
    1. Koppel zo nodig elementen van de actieve kopieën los om lokalisatiegegevens toe te voegen.
 
 >[!TIP]
 >
 >Beperk het gebruik van beheer van meerdere sites tot inhoud in één taal.
 >
->Gebruik bijvoorbeeld de master Engelse versie om de Engelse versie van pagina&#39;s te maken voor de VS, Canada, het Verenigd Koninkrijk, enzovoort. pagina&#39;s en gebruik de master Franse versie om de Franse versie van pagina&#39;s voor Frankrijk, Zwitserland, Canada, enz. te maken.
+>Gebruik bijvoorbeeld het primaire Engels om de Engelse versie van pagina&#39;s voor de pagina&#39;s VS, Canada en VK te maken. Gebruik vervolgens de primaire Fransen om de Franse versie van pagina&#39;s voor Frankrijk, Zwitserland, Canada enzovoort te maken.
 
 In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet alle niveaus/elementen in kwestie weergeven):
 
 ![Overzicht van lokalisatie](assets/localization-overview.png)
 
-In dit, en vergelijkbaar, scenario&#39;s MSM beheert niet de verschillende taalversies als dusdanig.
+In dit scenario, en vergelijkbare, beheert MSM niet de verschillende taalversies als dusdanig.
 
-* [MSM](msm/overview.md) beheert de implementatie van vertaalde inhoud van een blauwdruk (d.w.z. een wereldwijd master) naar de live kopieën (d.w.z. de lokale sites), binnen de grenzen van een taal.
-* De [vertalen](translation/overview.md) de integratiemogelijkheden van AEM, in combinatie met de vertaaldiensten van derden, beheren de talen en vertalen van inhoud in deze verschillende talen.
+* [MSM](msm/overview.md) beheert de implementatie van vertaalde inhoud van een blauwdruk (dat wil zeggen een primaire globale blauwdruk) tot de Actieve Exemplaren (dat wil zeggen, de lokale plaatsen), binnen de grenzen van een taal.
+* De [vertalen](translation/overview.md) de integratiemogelijkheden van AEM, met de vertaalbeheerservices van derden, beheren de talen en vertalen van inhoud in deze verschillende talen.
 
-Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden gebruikt.
+Voor geavanceerdere gebruiksgevallen kan MSM ook in de primaire talen worden gebruikt.
 
 >[!TIP]
 >
@@ -60,4 +60,3 @@ Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden g
 >
 >* [Beste praktijken voor MSM](msm/best-practices.md)
 >* [Aanbevolen procedures voor vertaling](translation/best-practices.md)
-
