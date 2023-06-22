@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
+source-git-commit: 46f0f8ba51b328bef1061d574b0d378a510fcf38
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
@@ -17,17 +17,11 @@ In de volgende sectie worden de opmerkingen bij de technische release voor de hu
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12255 samengevat, die op 13 juni 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 12142.
 
-Functie-activering voor deze onderhoudsrelease biedt u de volledige functieset. Zie de [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md) voor volledige informatie.
+Functie-activering voor deze onderhoudsrelease biedt u de volledige functieset met functieactivering 2023.6.0. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
 ### Verbeteringen {#enhancements-12255}
 
 Geen.
-
-### Bekende problemen {#known-issues-12255}
-
-- ASSETS-25729 - Het menu Weergave schakelt uit
-- ACTIVA-25728 - Optie voor herverwerking van activa niet beschikbaar in de zoekweergave
-- ASSETS-22603 - sommige Download-type kolommen van het Rapport van Activa tonen &quot;ongeldige&quot;waarden in UI. Dit heeft geen invloed op downloadbare CSV.
 
 ### Opgeloste problemen {#fixed-issues-12255}
 
@@ -49,6 +43,12 @@ Geen.
 - ASSETS-23981 - Sorteerfunctie voor titels die niet werken in verzamelingskoppelingen
 - ACTIVA-24723 - Gepubliceerde activa werden opnieuw verwerkt zonder tussenkomst van de gebruiker
 - GRANITE-45385 - Boomactivering migreren om een afdruktaak te gebruiken in plaats van een workflow
+
+### Bekende problemen {#known-issues-12255}
+
+- ASSETS-25729 - Het menu Weergave schakelt uit
+- ACTIVA-25728 - Optie voor herverwerking van activa niet beschikbaar in de zoekweergave
+- ASSETS-22603 - sommige Download-type kolommen van het Rapport van Activa tonen &quot;ongeldige&quot;waarden in UI. Dit heeft geen invloed op downloadbare CSV.
 
 ### Ingesloten technologieën {#embedded-tech-12255}
 
