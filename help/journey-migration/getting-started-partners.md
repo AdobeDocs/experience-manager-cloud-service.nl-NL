@@ -98,7 +98,6 @@ Zie zelf-hulp middelen over hoe te om aan AEM as a Cloud Service milieu&#39;s te
 >1. [Neem contact op met het ondersteuningsteam van de Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
 >2. Verkennen [Experience Managers en forums](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
-
 <br>
 
 ## Verplaatsen naar Adobe Experience Manager as a Cloud Service {#move-to-cloud}
@@ -191,7 +190,6 @@ In de fase na Go-Live moet u ervoor zorgen dat tijdelijke bestanden worden opges
 >2. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=en)
 >3. [Tool voor beheren van logbestanden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=en)
 
-
 <br>
 
 ### Hulpmiddelen &amp; Middelen
@@ -204,4 +202,3 @@ In de fase na Go-Live moet u ervoor zorgen dat tijdelijke bestanden worden opges
 > Voor extra hulp, kunt u willen:
 >1. [Neem contact op met het ondersteuningsteam van de Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en)
 >2. Verkennen [Experience Managers en forums](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
-

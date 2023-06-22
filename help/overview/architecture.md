@@ -77,7 +77,7 @@ Er zijn drie soorten milieu&#39;s beschikbaar met AEM as a Cloud Service:
 
 * **Ontwikkelomgeving**: hier kunnen ontwikkelaars AEM-applicaties implementeren onder dezelfde runtimevoorwaarden als de fase- en productieomgeving.
 
-   Zie [Omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) voor meer informatie .
+  Zie [Omgevingen beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) voor meer informatie .
 
 * **Snelle ontwikkelomgeving**: maakt snelle ontwikkelherhalingen mogelijk voor foutopsporing in nieuwe of bestaande code.
 
@@ -122,6 +122,7 @@ Deze nieuwe architectuur bestaat uit verschillende hoofdonderdelen:
       * Aanmelding bij de authoringlaag wordt beheerd door de Adobe Identity Management Services (IMS).
 
       * Integratie en de verwerking van Assets maken gebruik van een specifieke Assets Compute Service.
+
    * De voorvertoningslaag bestaat uit één voorvertoningsknooppunt. Dit wordt gebruikt voor kwaliteitscontrole van inhoud voordat deze wordt gepubliceerd naar de publicatielijst.
 
    * De publicatielijst bestaat uit twee of meer knopen binnen één enkel publicatielandbouwbedrijf.
@@ -135,7 +136,6 @@ Deze nieuwe architectuur bestaat uit verschillende hoofdonderdelen:
       * Door gebrek is er één enkel publiceer landbouwbedrijf in het primaire gebied, echter [extra publicatiegebieden](/help/operations/additional-publish-regions.md) mag een vergunning worden verleend.
 
       * Eindgebruikers of sitebezoekers bezoeken de website via de AEM Publish Service.
-
 
 * Voor AEM Assets as a Cloud Service:
 
@@ -151,9 +151,9 @@ Deze nieuwe architectuur bestaat uit verschillende hoofdonderdelen:
 
    * Wanneer inhoud wordt goedgekeurd van de auteursrij, is dit een aanwijzing dat het kan worden geactiveerd, daarom aan de publicatielaag persistence laag worden geduwd; of naar keuze naar de voorvertoningslaag. Dit gebeurt via de Replication Service, een middleware-pijplijn. Deze pijpleiding ontvangt de nieuwe inhoud, met de individuele publiceerdienst (of voorproefdienst) knopen die aan de inhoud intekenen die aan de pijpleiding wordt geduwd.
 
-      >[!NOTE]
-      >
-      >Zie [Replicatie](/help/operations/replication.md) voor meer details.
+     >[!NOTE]
+     >
+     >Zie [Replicatie](/help/operations/replication.md) voor meer details.
 
    * Ontwikkelaars en beheerders beheren de applicatie AEM as a Cloud Service met behulp van een CI/CD-service (Continuous Integration/Continuous Delivery), die beschikbaar wordt gesteld via de [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager)). Dit omvat code- en configuratie-implementaties die gebruikmaken van de CCI/CD-pijplijn van de Cloud Manager. Alles wat te maken heeft met bewaking, onderhoud en probleemoplossing (bijvoorbeeld logbestanden), wordt aan klanten binnen Cloud Manager beschikbaar gesteld.
 
