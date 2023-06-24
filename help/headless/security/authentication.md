@@ -1,11 +1,11 @@
 ---
 title: Verificatie voor externe AEM GraphQL-query's op inhoudsfragmenten
-description: Begrijp de authentificatie die voor de vragen van de Verre AEM GraphQL wordt vereist om uw hoofdloze inhoudslevering te beveiligen.
+description: Begrijp de vereiste verificatie voor externe Adobe Experience Manager GraphQL-query's om de levering van inhoud zonder kop te beveiligen.
 feature: Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Een hoofdgebruik voor het [Adobe Experience Manager as a Cloud Service (AEM) Gra
 
 >[!NOTE]
 >
->Voor testen en ontwikkeling kunt u ook de AEM GraphQL API rechtstreeks openen met de [GraphiQL-interface](/help/headless/graphql-api/graphiql-ide.md) interface.
+>Voor test- en ontwikkelingsdoeleinden hebt u ook rechtstreeks toegang tot de AEM GraphQL API via de [GraphiQL-interface](/help/headless/graphql-api/graphiql-ide.md).
 
-Voor verificatie moet de service van derden [een toegangstoken ophalen](#retrieving-access-token), die dan [gebruikt in de GraphQL-aanvraag](#use-access-token-in-graphql-request).
+Voor authentificatie, moet de derdedienst [een toegangstoken ophalen](#retrieving-access-token) dat kan [gebruikt in de GraphQL-aanvraag](#use-access-token-in-graphql-request).
 
 ## Een toegangstoken ophalen {#retrieving-access-token}
 
@@ -36,8 +36,8 @@ Authorization: Bearer <access_token>
 
 ## Machtigingsvereisten {#permission-requirements}
 
-Alle verzoeken die met behulp van het toegangstoken worden gedaan zullen eigenlijk worden gemaakt *door de gebruikersaccount die het token heeft gegenereerd*.
+Alle verzoeken die met behulp van het toegangstoken worden gedaan worden gemaakt *door de gebruikersaccount die het token heeft gegenereerd*.
 
-Dit betekent dat u moet controleren of de account de machtigingen heeft die vereist zijn om GraphQL-query&#39;s uit te voeren.
+Dit gebruikersaccount houdt in dat u moet controleren of de account de machtigingen heeft die vereist zijn om GraphQL-query&#39;s uit te voeren.
 
-U kunt dit controleren door GraphiQL op de lokale instantie te gebruiken. Meer informatie over [hier kunt u rechten vinden](/help/headless/security/permissions.md).
+U kunt deze toestemmingen controleren door GraphiQL op de lokale instantie te gebruiken. Meer informatie over [hier kunt u rechten vinden](/help/headless/security/permissions.md).

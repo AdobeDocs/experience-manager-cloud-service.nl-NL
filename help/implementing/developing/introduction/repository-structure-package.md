@@ -1,19 +1,19 @@
 ---
 title: AEM-projectrepositorystructuurpakket
-description: Voor Adobe Experience Manager as a Cloud Service Maven-projecten is een definitie vereist van subpakketten voor de structuur van de opslagplaats met als enig doel de wortels van de JCR-opslagplaats te bepalen waarin de subpakketten voor de code van het project worden geïmplementeerd.
+description: Gemaakte projecten op Adobe Experience Manager as a Cloud Service vereisen een definitie van subpakket van de Structuur van de Bewaarplaats met als enig doel de wortels van de bewaarplaats van JCR te bepalen waarin de Codepakketten van het project in subpakketten van de Code van het project opstellen.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 9%
+source-wordcount: '535'
+ht-degree: 2%
 
 ---
 
 # AEM-projectrepositorystructuurpakket
 
-Gemaakte projecten voor Adobe Experience Manager as a Cloud Service vereisen een subpakketdefinitie van de structuur van de repository met als enig doel het definiëren van de wortels van de JCR-opslagplaats waarin de codecopakketten van het project worden geïmplementeerd. Dit zorgt ervoor dat de installatie van pakketten in as a Cloud Service Experience Manager automatisch door JCR middelgebiedsdelen wordt bevolen. Ontbrekende afhankelijkheden kunnen leiden tot scenario&#39;s waarbij substructuren worden geïnstalleerd vóór hun bovenliggende structuren en daarom onverwacht worden verwijderd, waardoor de implementatie wordt verbroken.
+Gemaakte projecten voor Adobe Experience Manager as a Cloud Service vereisen een definitie van het subpakket van de opslagplaats met als enig doel het bepalen van de wortels van de bewaarplaats JCR waarin de code van het project subpackages opstelt. Deze methode zorgt ervoor dat de installatie van pakketten in as a Cloud Service Experience Manager automatisch door JCR middelgebiedsdelen wordt bevolen. Ontbrekende afhankelijkheden kunnen leiden tot scenario&#39;s waarbij substructuren worden geïnstalleerd vóór hun bovenliggende structuren en daarom onverwacht worden verwijderd, waardoor de implementatie wordt verbroken.
 
-Als uw codepakket wordt geïmplementeerd op een locatie die **niet door het codepakket wordt gedekt**, dan moeten bovenliggende resources (JCR-resources die zich dichter bij de JCR-root bevinden) in het pakket van de dataopslagstructuur worden opgesomd om deze afhankelijkheden tot stand te brengen.
+Als uw codepakket in een plaats opstelt **niet gedekt** door het codepakket moeten eventuele bronnen van voorouders (JCR-bronnen die dichter bij de JCR-basis liggen) worden opgesomd in het structuurpakket van de repository. Dit proces is noodzakelijk om deze gebiedsdelen te vestigen.
 
 ![Structuurpakket opslagplaats](./assets/repository-structure-packages.png)
 
@@ -29,11 +29,11 @@ Dit subpakket **heeft geen** alle inhoud en die uitsluitend bestaat uit een `pom
 
 ## Het Repository Structure Package maken
 
-Als u een pakket gegevensopslagstructuur wilt maken voor uw Maven-project, maakt u een nieuw leeg Maven-subproject met het volgende `pom.xml`, die de projectmeta-gegevens bijwerken om met uw ouder Maven project in overeenstemming te brengen.
+Maak een leeg Maven-subproject als u een pakket gegevensopslagstructuur voor uw Maven-project wilt maken, met het volgende `pom.xml`, die de projectmeta-gegevens bijwerken om met uw ouder Maven project in overeenstemming te brengen.
 
 Werk de `<filters>` om alle pad naar de JCR-opslagplaats op te nemen, zodat uw codepakketten worden geïmplementeerd.
 
-Zorg ervoor om dit nieuwe Maven subproject aan de ouderprojecten toe te voegen `<modules>` lijst.
+Zorg ervoor dit nieuwe Gemaakt subproject aan de ouderprojecten toevoegt `<modules>` lijst.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -116,7 +116,7 @@ Zorg ervoor om dit nieuwe Maven subproject aan de ouderprojecten toe te voegen `
 
 ## Verwijzen naar het Repository Structure Package
 
-Als u het structuurpakket van de repository wilt gebruiken, moet u ernaar verwijzen via alle codepakketten (de subpakketten die worden geïmplementeerd om `/apps`) GeMaven projecten via het FileVault-inhoudspakket Maven plug-ins `<repositoryStructurePackage>` configuratie.
+Als u het structuurpakket van de repository wilt gebruiken, moet u ernaar verwijzen via alle codepakketten (de subpakketten die worden geïmplementeerd op `/apps`) GeMaven projecten via het FileVault-inhoudspakket Maven plug-ins `<repositoryStructurePackage>` configuratie.
 
 In de `ui.apps/pom.xml`en elk ander codepakket `pom.xml`s, voeg een verwijzing naar het de structuurpakket van de bewaarplaats van het project (#repository-structure-package) configuratie aan het pakket FileVault Maven stop-in toe.
 
@@ -162,7 +162,7 @@ Bijvoorbeeld:
 + Codepakket A wordt geïmplementeerd in `/apps/a`
 + Codepakket B wordt geïmplementeerd in `/apps/a/b`
 
-Als een op pakketniveau gebiedsdeel niet van codepakket B op codepakket A wordt gevestigd, kan het codepakket B eerst in `/apps/a`, gevolgd door codepakket B, waarin `/apps/a`, waardoor de eerder geïnstalleerde `/apps/a/b`.
+Als een op pakketniveau gebiedsdeel niet van codepakket B op codepakket A wordt gevestigd, kan het codepakket B eerst in `/apps/a`. Het zou dan door codepakket B worden gevolgd, dat in opstelt `/apps/a`. Het resultaat is dat de eerder geïnstalleerde `/apps/a/b`.
 
 In dit geval:
 
@@ -178,7 +178,7 @@ Als de opslagplaatsstructuurpakketten niet correct zijn ingesteld, wordt bij Mav
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-Dit geeft aan dat het pakket voor het afbreken van code geen `<repositoryStructurePackage>` die lijsten `/apps/some/path` in de filterlijst.
+Deze fout geeft aan dat het pakket voor het afbreken van code geen `<repositoryStructurePackage>` die lijsten `/apps/some/path` in de filterlijst.
 
 ## Aanvullende bronnen
 

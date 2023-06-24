@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: De repository browser biedt een alleen-lezen weergave in de repository voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## Inleiding {#introduction}
 
-De browser van de repository is een ontwikkelaarsprogramma dat een alleen-lezen weergave in de repository biedt voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen. Deze is ontworpen om het weergeven van de inhoudsstructuur te vergemakkelijken, zodat u de inhoud beter kunt zien of fouten erin kunt opsporen.
+De verslagbrowser is een ontwikkelaarshulpmiddel dat een read-only mening in de bewaarplaats voor alle milieu&#39;s op auteur, publiceert, en voorproefrijen verstrekt. Deze is ontworpen om het weergeven van de inhoudsstructuur te vergemakkelijken, zodat u de inhoud beter kunt zien of fouten erin kunt opsporen.
 
 Toegankelijk vanuit de ontwikkelaarsconsole, kan deze worden gebruikt om door de opslagplaats van een auteur te bladeren of instantie voor een geselecteerde omgeving te publiceren.
 
@@ -41,7 +41,7 @@ Toegang tot de browser voor gegevensopslagruimte:
 * Gebruikers moeten beschikken over de **Cloud Manager - Ontwikkelaar** Rol in de Admin Console om instanties van Auteur en van de Publicatie te bekijken.
 * Bovendien kunnen gebruikers met het AEM Gebruikersprofiel de browser van de gegevensopslagruimte met minimale leestoegang bekijken. de machtigingen van de gebruiker worden gerespecteerd bij het bladeren in de opslagplaats. Gebruikers met het productprofiel AEM Beheerders kunnen de browser van de opslagplaats bekijken met volledige leestoegang.
 
-Voor meer informatie over het instellen van gebruikersmachtigingen raadpleegt u de [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Voor meer informatie over het instellen van gebruikersmachtigingen raadpleegt u de [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### De gegevensopslagbrowser starten {#launching-the-repository-browser}
 
@@ -52,29 +52,29 @@ De browser van de repository kan worden gestart door de onderstaande stappen te 
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. Klik op de knop **Browser voor opslagplaats** tab
-1. Kies een pod die overeenkomt met de auteur, de publicatie of de voorvertoning door op de knop **Pod** vervolgkeuzelijst.
+1. Kies een pod die correspondeert met auteur, publicatie of voorvertoning door op de knop **Pod** vervolgkeuzelijst.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. Start de browser van de repository door te klikken op de knop **Browser voor opslagplaats openen** koppeling verder omlaag. Hiermee wordt de browser gestart die hoort bij een representatieve instantie (pod) voor de gekozen laag. Hiermee wordt de browser gestart die hoort bij een representatieve instantie (pod) voor de gekozen laag. U kunt de specifieke pod voor die laag die wordt gestart niet besturen.
+1. Start de browser van de repository door te klikken op de knop **Browser voor opslagplaats openen** koppeling verder omlaag. De browser die correspondeert met een representatieve instantie (pod) voor de gekozen laag wordt gestart. U kunt de specifieke pod voor de laag die wordt gestart niet besturen.
 
 ## Functies {#features}
 
 ### Navigeren door de hiërarchie {#navigate-the-hierarchy}
 
-Met het navigatievenster aan de linkerkant kunt u de inhoudshiërarchie doorlopen. Als u op elke map of elk knooppunt klikt, worden de onderliggende items van de map of het knooppunt weergegeven. De mappenstructuur weerspiegelt de boomstructuur Sling Resource, een superset van de JCR Node-structuur.
+U kunt het navigatievenster aan de linkerkant gebruiken om door de inhoudshiërarchie te navigeren. Als u op elke map of elk knooppunt klikt, worden de onderliggende items van dat knooppunt weergegeven. De mappenstructuur weerspiegelt de boomstructuur Sling Resource, een superset van de JCR Node-structuur.
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-U kunt ook rechtstreeks naar een pad navigeren door dit in te voeren in het dialoogvenster **Pad** veld, zoals hieronder weergegeven. Hierdoor wordt de locatie ook uitgebreid in de weergave met de inhoudshiërarchie aan de linkerkant.
+U kunt ook rechtstreeks naar een pad navigeren door dit in te voeren in het dialoogvenster **Pad** veld, zoals hieronder weergegeven. Dit pad vergroot ook de locatie in de weergave met de inhoudshiërarchie aan de linkerkant.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-Wanneer u op een map aan de linkerkant klikt, wordt het veld Pad automatisch gevuld met de locatie. Dit is handig als u de waarde wilt kopiëren en plakken voor later gebruik.
+Wanneer u op een map aan de linkerkant klikt, wordt het veld Pad automatisch gevuld met de locatie. Deze functionaliteit is handig voor het kopiëren en plakken van de waarde voor later gebruik.
 
-Wanneer u op een map klikt, wordt bovendien de URL dynamisch gewijzigd en wordt het pad naar die map opgenomen. Dit staat voor boekhandelbare URLs toe.
+Wanneer u op een map klikt, wordt de URL dynamisch gewijzigd en wordt het pad naar die map opgenomen. Deze functionaliteit staat voor boekhandelbare URLs toe.
 
-Voor publiceren, door gebrek, zal Browser van de Bewaarplaats slechts openbare inhoud tonen, zo bepaalde omslagen zoals `/conf` of `/home` is niet zichtbaar.
+Voor publiceren, door gebrek, toont Browser van de Bewaarplaats slechts openbare inhoud, daarom bepaalde omslagen zoals `/conf` of `/home` zijn niet zichtbaar.
 
 Ga als volgt te werk om deze locaties zichtbaar te maken.
 
@@ -86,7 +86,7 @@ Ga als volgt te werk om deze locaties zichtbaar te maken.
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Maak een nieuw productprofiel voor publicatiebeheerders. In het onderstaande voorbeeld wordt het **DEV - AEM Beheerders publiceren**
+1. Een productprofiel maken voor publicatiebeheerders. In het onderstaande voorbeeld wordt het **DEV - AEM Beheerders publiceren**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
@@ -95,7 +95,7 @@ Ga als volgt te werk om deze locaties zichtbaar te maken.
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
 1. Wacht een paar minuten en open vervolgens de knop **AEM auteur** console
-1. Voeg de groep die overeenkomt met het nieuwe productprofiel toe als lid van de beheerdersgroep. U kunt dit doen door op **Gereedschappen - Beveiliging - Groepen op auteur** klikt u vervolgens op de knop **beheerders** groep. Voeg vervolgens de groep toe zoals hieronder wordt weergegeven
+1. Voeg de groep die overeenkomt met het nieuwe productprofiel toe als lid van de beheerdersgroep door op **Gereedschappen - Beveiliging - Groepen op auteur** en klik vervolgens op de knop **beheerders** groep. Voeg vervolgens de groep toe zoals hieronder wordt weergegeven
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
@@ -103,7 +103,7 @@ Ga als volgt te werk om deze locaties zichtbaar te maken.
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Als goede veiligheidspraktijk, verwijder nieuwe **DEV - AEM Beheerders publiceren** groep met beheerders in **auteur** de nieuwe groep is dus geïsoleerd om te publiceren
+1. Als goede veiligheidspraktijk, verwijder nieuwe **DEV - AEM Beheerders publiceren** groep van de beheerdersgroep in **auteur** de nieuwe groep is dus geïsoleerd om te publiceren
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
@@ -111,17 +111,17 @@ Ga als volgt te werk om deze locaties zichtbaar te maken.
 
 ### JCR-eigenschappen weergeven {#view-jcr-properties}
 
-Als u op een knooppunt klikt, worden de JCR-eigenschappen van dat knooppunt weergegeven in het rechterdeelvenster van de navigatiefunctie. Hieronder ziet u een voorbeeld voor de `experience-fragments` knooppunt.
+Wanneer u op een knooppunt klikt, worden de JCR-eigenschappen van dat knooppunt in het rechterdeelvenster van de navigatiefunctie weergegeven. Hieronder ziet u een voorbeeld voor de `experience-fragments` knooppunt.
 
 ![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
 ### Inhoud weergeven {#view-content}
 
-U kunt de browser van de gegevensopslagruimte gebruiken om inhoud te bekijken door op een bron in het navigatievenster te klikken. Hiermee wordt een voorvertoning aan de rechterkant van de browser geopend onder een tab die naar de desbetreffende bron is vernoemd.
+U kunt de browser van de repository gebruiken om inhoud weer te geven. Klik op een bron in het navigatievenster, zodat u een voorvertoning aan de rechterkant van de browser opent onder een tab die naar de respectievelijke bron wordt genoemd.
 
 ![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
-Voorvertoning is momenteel beschikbaar voor afbeeldingstypen in de onderstaande lijst:
+Voorvertoning is beschikbaar voor de volgende afbeeldingstypen:
 
 * apng
 * avif

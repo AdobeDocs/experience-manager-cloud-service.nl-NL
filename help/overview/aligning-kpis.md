@@ -2,9 +2,9 @@
 title: KPI's uitlijnen
 description: KPI's uitlijnen
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -14,29 +14,29 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_alignkpis"
 >title="KPI&#39;s uitlijnen"
->abstract="In een digitale wereld kun je bijna alles meten. Het kiezen van juiste KPIs voor uw implementatie van Adobe Experience Manager zal uw team helpen zich op wat het belangrijkst richten."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="KPI&#39;s evalueren"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Het juiste team kiezen"
+>abstract="In een digitale wereld kun je bijna alles meten. Het kiezen van juiste KPIs voor uw implementatie van Adobe Experience Manager helpt uw team zich op te concentreren wat het belangrijkst is."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=en" text="KPI&#39;s evalueren"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=en" text="Het juiste team kiezen"
 
-In een digitale wereld kun je bijna alles meten. Het kiezen van drie KPIs voor uw implementatie van Adobe Experience Manager zal uw team helpen zich op wat het belangrijkst richten.
-
-
-## **Voer de volgende 6 stappen uit om te bepalen wat u moet meten en hoe**
+In een digitale wereld kun je bijna alles meten. Als u drie KPI&#39;s kiest voor uw Adobe Experience Manager-implementatie, helpt u uw team zich te richten op wat het belangrijkst is.
 
 
-1. **Begin met uw bedrijfsdoelstellingen.** Uw bedrijfsdoelstellingen kunnen bijvoorbeeld zijn om uw online-inkomsten te verhogen, de operationele kosten te verlagen of de juridische kosten in verband met schendingen van digitale rechten (DRM) te verlagen.
+## **Voer deze zes stappen uit om te bepalen wat u moet meten en hoe u kunt bepalen**
 
-1. **Bepaal op basis van uw doelstellingen uw doelen.** Uw doelstellingen zijn de specifieke resultaten u hoopt te bereiken door Experience Manager als uw platform van het inhoudsbeheer aan te nemen. Als uw doelstelling is om online opbrengst te groeien, zou uw doel kunnen zijn om een 2 punttoename in omzetting voor alle pagina&#39;s met marketing inhoud te bereiken. Als u uw operationele uitgaven wilt verlagen, kunt u de productiviteit van teams die digitale inhoud maken met 20% verhogen.
 
-   Idealiter heeft elk doel een basisnummer, zoals de huidige conversiesnelheid voor een specifieke paginacategorie. Basisnummers met betrekking tot bezoeken ter plaatse of conversie of online-inkomsten zijn relatief gemakkelijk te vinden. Voor doelstellingen met betrekking tot productiviteit of tijd aan markt, zal het waarschijnlijk wat werk vergen om een basislijn te berekenen. Het is echter de moeite waard, omdat duidelijke doelen u helpen meer waarde te krijgen van uw investering in Experience Manager.
+1. **Begin met uw bedrijfsdoelstellingen.** Uw bedrijfsdoelstellingen kunnen bijvoorbeeld zijn om uw online-inkomsten te verhogen, de operationele kosten te verlagen of de juridische kosten te verlagen die samenhangen met schendingen van Digital Rights Managementen (DRM).
 
-1. **Voor elk doel, identificeer prestatiesindicatoren.** Als uw doel bijvoorbeeld is de juridische kosten voor DRM-overtredingen met $100.000 te verlagen, is het mogelijk dat een goede prestatie-indicator wordt gebruikt: &quot;100% van de verlopen elementen worden verwijderd uit digitale eigenschappen op of vóór de vervaldatum.&quot; Probeer om met veelvoudige indicatoren voor elk doel te komen. Als u met 2-3 bedrijfsdoelstellingen en 3-5 doelstellingen bent begonnen, zou u een lijst van 15-20 prestatiesindicatoren kunnen hebben.
+1. **Bepaal op basis van uw doelstellingen uw doelen.** Uw doelstellingen zijn de specifieke resultaten die u wilt bereiken door Experience Manager als uw platform voor inhoudsbeheer aan te nemen. Als uw doelstelling is om online opbrengst te groeien, zou uw doel kunnen zijn om een 2 punttoename in omzetting voor alle pagina&#39;s met marketing inhoud te bereiken. Als u uw operationele uitgaven wilt verlagen, kunt u de productiviteit van teams die digitale inhoud maken met 20% verhogen.
 
-1. **Kies de 3 indicatoren die het belangrijkst voor uw zaken zijn.** Dit zijn je PI&#39;s. Zij zouden zich aan 3 bedrijfsdoelstellingen kunnen richten — elk die door een verschillende manager op C-niveau worden gesteund — of alle 3 KPIs zouden het zelfde doel kunnen steunen, als iedereen het eens is het belangrijkste.
+   Idealiter heeft elk doel een basisnummer, zoals de huidige conversiesnelheid voor een specifieke paginacategorie. Basisnummers met betrekking tot bezoeken ter plaatse of conversie of online-inkomsten zijn relatief gemakkelijk te vinden. Voor doelstellingen met betrekking tot productiviteit of tijd aan markt, vergt het waarschijnlijk wat werk om een basislijn te berekenen. Het is echter de moeite waard, omdat heldere doelen u helpen meer waarde te krijgen van uw investering in Experience Manager.
 
-1. **Maak een meetbare methode voor elke PKI.** Als u uw KPI&#39;s hebt gekozen, downloadt u onze sjabloon voor de KPI-methodologie, die u door de rest van het proces zal begeleiden.
+1. **Voor elk doel, identificeer prestatiesindicatoren.** Het kan bijvoorbeeld uw doel zijn om de juridische kosten voor DRM-overtredingen met $100.000 te verlagen. Een goede prestatie-indicator kan zijn &quot;100% van de verlopen elementen worden verwijderd uit digitale eigenschappen op of vóór de vervaldatum.&quot; Probeer om met veelvoudige indicatoren voor elk doel te komen. Als u met 2-3 bedrijfsdoelstellingen en 3-5 doelstellingen bent begonnen, zou u een lijst van 15-20 prestatiesindicatoren kunnen hebben.
 
-1. **Bepaal het publiek voor elke KPI.** Uw laatste stap voor deze week is het identificeren van de groep belanghebbenden die het meest om elk KPI geeft. Volgende week gaat u met elke groep de KPI bevestigen, de methodologie verfijnen en overeenstemming bereiken over de indeling en het tijdstip van uw rapporten.
+1. **Kies de drie indicatoren die het belangrijkst voor uw zaken zijn.** Deze indicatoren zijn uw KPIs. Ze zouden zich kunnen richten op drie bedrijfsdoelstellingen — elk bepleit door een verschillende manager op C-niveau — of alle drie KPI&#39;s zouden hetzelfde doel kunnen ondersteunen, als iedereen het ermee eens is dat het de belangrijkste is.
+
+1. **Maak een meetbare methode voor elke PKI.** Nadat u hebt gekozen, download uw malplaatje van Methodologie KPI, dat u door de rest van het proces begeleidt.
+
+1. **Bepaal het publiek voor elke KPI.** Uw laatste stap voor deze week is het identificeren van de groep belanghebbenden die het meest om elk KPI geeft. De volgende week zult u met elke groep werken om KPI te bevestigen, de methodologie te verfijnen, en over de formaat en de timing van uw rapporten akkoord te gaan.
 
 >[!TIP]
 >

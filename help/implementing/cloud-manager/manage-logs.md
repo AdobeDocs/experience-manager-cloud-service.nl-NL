@@ -2,9 +2,9 @@
 title: Logbestanden openen en beheren
 description: Leer hoe u logboeken kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '266'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ U kunt een lijst met beschikbare logbestanden voor de geselecteerde omgeving ope
 
 ## Logbestanden downloaden {#download-logs}
 
-Voer de volgende stappen uit om logbestanden te downloaden.
+Ga als volgt te werk om logbestanden te downloaden.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
@@ -40,7 +40,7 @@ U kunt uw logbestanden ook openen via het dialoogvenster **Omgevingen** pagina.
 
 ## Logbestanden via API {#logs-through-api}
 
-Naast het downloaden van logboeken door UI, zijn de logboeken beschikbaar door API en de interface van de bevellijn.
+Naast het downloaden van logboeken door UI, zijn de logboeken beschikbaar door API en bevel-lijn interface.
 
 Als u de logbestanden voor een specifieke omgeving wilt downloaden, lijkt de opdracht op het volgende.
 
@@ -48,13 +48,13 @@ Als u de logbestanden voor een specifieke omgeving wilt downloaden, lijkt de opd
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-U kunt logboeken ook staart via de interface van de bevellijn.
+Ook, kunt u logboeken als bevel-lijn interface staart.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-U kunt de volgende opdrachten gebruiken om de milieu-id (1884 in dit voorbeeld) en de beschikbare service- of lognaamoties op te halen.
+U kunt de volgende opdrachten gebruiken om de milieu-id (1884 in dit voorbeeld) en de beschikbare service- of lognaamaopties te verkrijgen.
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### Aanvullende bronnen {#resources}
 
-Raadpleeg de volgende aanvullende bronnen voor meer informatie over de API en Adobe I/O CLI van Cloud Manager:
+Raadpleeg de volgende aanvullende bronnen voor meer informatie over de Cloud Manager API en Adobe Developer CLI:
 
-* [Documentatie voor API voor cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Documentatie voor API voor cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [Adobe Developer CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
