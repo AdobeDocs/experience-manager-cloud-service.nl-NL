@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1019'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ De hoogtepunten voor activaomzetting die de diensten van activa microservices ge
 * Sleutel [Adobe-bestandsindelingen](#adobe-formats) geproduceerd door Adobe-toepassingen en -diensten, waaronder [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], en [!DNL Adobe Acrobat] of PDF.
 * Sleutel [afbeeldingsbestandsindelingen](#image-formats).
 * [Camera Raw bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
-* Vaak [documentindelingen](#document-formats), waaronder Microsoft Office- en Open Document-indelingen.
+* Vaak [documentindelingen](#document-formats), inclusief Microsoft® Office en Open Document-indelingen.
 * Breed scala aan [video](#video-formats)- en [audio](#audio-formats)-indelingen.
 
 De volgende legenda beschrijft het niveau van steun voor elk formaat.
@@ -41,6 +41,7 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 | AI | ✓ | - | ✓ | ✓ |
 | KLLAGE | - | - | ✓ | - |
 | DN | ✓ | - | ✓ | ✓ |
+| SBSAR | ✓ | - | ✓ | ✓ |
 | IDEAS | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
@@ -50,7 +51,7 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Voor [!DNL Adobe InDesign] bestanden (INDD), wordt de grootte van de vertoning bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Voorkeuren configureren in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**) om een grotere uitvoering in te sluiten.
+\* Voor [!DNL Adobe InDesign] bestanden (INDD), wordt de grootte van uitvoeringen bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Voorkeuren configureren in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**), zodat u grotere uitvoeringen kunt insluiten.
 
 ## Afbeeldingsindelingen {#image-formats}
 
@@ -63,7 +64,7 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | RGB | ✓ | ✓ | ✓ | ✓ |
 | RGBA | ✓ | ✓ | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
+| SGI™ | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 | WebP | ✓ | ✓ | ✓ | ✓ |
@@ -77,13 +78,16 @@ Zie ook [Werken met 3D-middelen in Dynamic Media](/help/assets/dynamic-media/ass
 | Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamic Media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
-## [!DNL Camera RAW] formaten {#camera-raw-formats}
+## [!DNL Camera Raw] formaten {#camera-raw-formats}
 
 | Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -181,20 +185,20 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 * Windows Media Video (WMV)/ASF (.wmv, .asf)
 * AVI (niet-gecomprimeerd 8 bits/10 bits) (.avi)
 * MP4 (.mp4, .m4a, .m4v)
-* Microsoft Digital Video Recording (DVR-MS) (.dvr-ms)
+* Microsoft® Digital Video Recording (DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
 ## Tips en beperkingen {#limitations-and-tips}
 
-* De maximale bestandsgrootte voor het uitnemen van metagegevens is momenteel ongeveer 15 GB. Wanneer u zeer grote elementen uploadt, mislukt het uitnemen van metagegevens soms.
+* De maximale bestandsgrootte voor het uitnemen van metagegevens is momenteel ongeveer 15 GB. Wanneer u grote elementen uploadt, mislukt het uitnemen van metagegevens soms.
 
 ## Dynamic Media - Ondersteunde invoervideo-indelingen voor transcodering {#video-dynamic-media-transcoding}
 
 | Videobestandsextensie | Container | Aanbevolen videocodecs | Niet-ondersteunde video-codecs |
 | --- | --- | --- | --- |
-| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vectoranimatiebestanden) |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
@@ -202,9 +206,9 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | MP4 | MPEG-4 | H264/AVC (alle profielen) | − |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
 | MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
+| OGV, OGG | OGG | Theora, VP3, Dirac | − |
 | WebM | WebM | Google VP8 | − |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 
 ‡ Deze video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media of voor gebruik met annotatie in Experience Manager Assets.
 
@@ -253,9 +257,9 @@ Zie ook [Ondersteunde 3D-indelingen](/help/assets/file-format-support.md#support
 | 3D-bestandsextensie | Bestandsindeling | MIME-type | Notities |
 |---|---|---|---|
 | GLB | Binaire GL-transmissie | model/gltf-binair | Hiermee neemt u de materialen en structuren op als één enkel element. |
-| OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |
-| STL | Stereolithografie | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Alleen ondersteuning voor inname; er is geen weergave of interactie beschikbaar.* USDZ is een eigen 3D-indeling die door Safari of iOS kan worden weergegeven. |
+| OBJ | WaveFront 3D-objectbestand | application/x-tgif | |
+| STL | Stereolithografie | application/vnd.ms-pki.stl | |
+| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Ondersteuning voor het genereren van ingewanden en miniaturen; 3D-voorvertoningen worden nog niet ondersteund.* USDZ is een 3D-indeling die door Safari of iOS kan worden weergegeven. |
 
 **Zie ook**
 
@@ -275,4 +279,3 @@ Zie ook [Ondersteunde 3D-indelingen](/help/assets/file-format-support.md#support
 >
 >* [Verwerking van bedrijfsmiddelen met behulp van asset-microservices](asset-microservices-overview.md)
 >* [Ondersteunde bestandsindelingen voor slimme tags van op tekst gebaseerde elementen](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
-

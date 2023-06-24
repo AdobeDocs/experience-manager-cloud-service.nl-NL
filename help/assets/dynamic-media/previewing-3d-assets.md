@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '625'
 ht-degree: 1%
 
 ---
@@ -19,15 +19,27 @@ ht-degree: 1%
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-elementen als onderdeel van het ontwerpproces.
+Experience Manager Assets ondersteunt het opnemen, beheren, voorvertonen en leveren van 3D-elementen.
 
-De interactieve 3D-viewer is beschikbaar op de pagina met elementdetails in Experience Manager. De viewer bevat onder andere een verzameling interactieve besturingselementen voor camera waarmee u het 3D-element kunt draaien, zoomen en pannen.
+U kunt een voorvertoning van 3D-elementen weergeven met de automatisch gegenereerde miniatuuruitvoeringen of de interactieve 3D-viewer. De interactieve 3D-viewer is beschikbaar op de pagina met elementdetails in Experience Manager. De viewer bevat onder andere een verzameling interactieve besturingselementen voor camera waarmee u de 3D-scène kunt roteren, zoomen en pannen.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Ondersteunde indelingen voor 3D-voorvertoning in Experience Manager{#supported-3d-previewing-assets}
+## Ondersteunde indelingen voor miniatuurvoorvertoning in Experience Manager{#supported-thumbnail-previewing-assets}
 
-Interactieve 3D-voorvertoning in Experience Manager ondersteunt de volgende bestandsindelingen:
+Experience Manager genereert standaard miniaturen voor de volgende bestandsindelingen:
+
+| 3D-bestandsextensie | Bestandsindeling | MIME-type | Notities |
+|---|---|---|---|
+| GLB | Binaire GL-transmissie | model/gltf-binair |  |
+| FBX | Autodesk FBX | application/octet-stream |  |
+| OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |
+| 3DS | 3D Studio-model | application/x-3ds |  |
+| USDz | Universal Scene Description | model/vnd.usdz+zip |  |
+
+## Ondersteunde indelingen voor interactieve 3D-voorvertoning in Experience Manager{#supported-3d-previewing-assets}
+
+Experience Manager biedt native ondersteuning voor interactieve 3D-voorvertoningen voor de volgende bestandsindelingen:
 
 | 3D-bestandsextensie | Bestandsindeling | MIME-type | Notities |
 |---|---|---|---|
@@ -35,8 +47,7 @@ Interactieve 3D-voorvertoning in Experience Manager ondersteunt de volgende best
 | GLTF | GL-indeling voor verzending | model/gltf+json | Zie de **Opmerking** hieronder. |
 | OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | Alleen ondersteuning voor inname; voorvertoning niet beschikbaar. |
-| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | Alleen ondersteuning voor inname; voorvertoning niet beschikbaar. |
+
 
 >[!NOTE]
 >
@@ -80,7 +91,7 @@ Zie [Ondersteunde indelingen voor 3D-voorvertoning](#supported-3d-previewing-ass
    | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
    | **Uw camera zoomen** | Ga in en uit gebieden van de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
    | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
-   | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |  |  |
-   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |  |  |
+   | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |   |   |
+   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |   |   |
 
 1. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Close]**.
