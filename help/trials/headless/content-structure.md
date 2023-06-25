@@ -4,9 +4,9 @@ description: Leer hoe u AEM modellen van inhoudsfragmenten kunt gebruiken om uw 
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="De modelconsole starten"
->abstract="Laten we onderzoeken hoe u een herbruikbaar schema, een zogenaamd Content Fragment-model, kunt maken voor uw inhoud in Adobe Experience Manager as a Cloud Service. Bekijk de video om te begrijpen waarom dit een belangrijke stap is. <br><br>In deze het leren module zullen wij een reisplaats als ons voorbeeld gebruiken en door het creëren van een model lopen dat een reis vertegenwoordigt.<br><br>Start deze module op een nieuw tabblad door op de onderstaande knop te klikken en volg deze handleiding."
+>abstract="Laten we onderzoeken hoe u een herbruikbaar schema, een zogenaamd Content Fragment-model, kunt maken voor uw inhoud in Adobe Experience Manager as a Cloud Service. Bekijk de video zodat u begrijpt waarom deze stap belangrijk is. <br><br>In deze het leren module, gebruikt u een reisplaats als voorbeeld en loopt door het creëren van een model dat een reis vertegenwoordigt.<br><br>Start deze module op een nieuw tabblad door op de onderstaande knop te klikken en volg deze handleiding."
 >additional-url="https://video.tv.adobe.com/v/3413261" text="Video over intro-inhoud"
 
 >[!CONTEXTUALHELP]
@@ -32,45 +32,45 @@ ht-degree: 0%
 
 ## Een model maken {#create-model}
 
-De console van het model van het Fragmentmodel van de Inhoud opent in een nieuw lusje. Beschouw de modelconsole van het inhoudsfragment als uw bibliotheek met modellen, waar u nieuwe modellen maakt en bestaande modellen beheert.
+De console van het model van het Fragmentmodel van de Inhoud opent in een nieuw lusje. U kunt de modelconsole van het inhoudsfragment beschouwen als uw bibliotheek met modellen, waarin u modellen maakt en bestaande modellen beheert.
 
-Voor ons voorbeeld, zullen wij een model creëren dat de gegevensstructuur van een reis vertegenwoordigt die op een reiswebsite wordt voorzien. We verwijzen naar een reis waarbij dit model wordt gebruikt als een **Adventure**.
+Bijvoorbeeld, creeert u een model dat de gegevensstructuur van een reis vertegenwoordigt die op een reiswebsite wordt voorzien. Een reis die dit model gebruikt wordt bedoeld als **Adventure**.
 
-1. Klik op de knop **Maken** aan de rechterbovenhoek van het scherm om een model voor inhoudsfragmenten te maken.
+1. Klik in de rechterbovenhoek van het scherm op **Maken** om te beginnen met het maken van een model voor een inhoudsfragment.
 
-1. De wizard Model maken begint en begeleidt u bij het maken van uw model. Geef de verplichte informatie op.
+1. De wizard Model maken begeleidt u bij het maken van uw model. Geef de verplichte informatie op.
 
-   * **Modeltitel** - Dit is een kort label van het model en geeft meestal het doel van het model aan. We noemen ons nieuwe model `Adventure`.
+   * **Modeltitel** - Een kort label van het model en geeft meestal het doel van het model aan. U kunt het nieuwe model roepen `Adventure`.
    * **Model inschakelen** - Deze optie is standaard ingeschakeld en moet zijn ingeschakeld om op dit model gebaseerde inhoudsfragmenten te kunnen maken.
 
-1. Als de verplichte velden zijn ingevuld, klikt u op **Maken** boven aan links om het model te maken.
+1. Nadat de verplichte velden zijn ingevuld, klikt u op **Maken** boven aan links om het model te maken.
 
-1. De **Succes** bevestigt dat het model is gemaakt. Klikken **Openen** in het dialoogvenster om het nieuwe inhoudsfragmentmodel in de editor te openen op een nieuw tabblad. Ga vervolgens verder met de volgende stap om gegevensvelden aan uw model toe te voegen.
+1. De **Succes** bevestigt dat het model is gemaakt. Klikken **Openen** in het dialoogvenster zodat u het nieuwe inhoudsfragmentmodel in de editor kunt openen op een nieuw tabblad. Ga vervolgens verder met de volgende stap om gegevensvelden aan uw model toe te voegen.
 
 ![Stap 2 en 3 van het creëren van een model van het Fragment van de Inhoud](assets/do-not-localize/create-model.png)
 
 ## De modeleditor gebruiken {#configure-model}
 
-We hebben nu een model genaamd **Adventure**, maar het heeft geen details zoals duur, bestemming, activiteiten, enz. Voordat u het model kunt gebruiken, moet u de structuur van de gegevens definiëren.
+U hebt nu een model genaamd **Adventure**, maar het heeft geen details zoals duur, bestemming, en activiteiten. Voordat u het model kunt gebruiken, moet u de structuur van de gegevens definiëren.
 
 In de editor van het inhoudsfragmentmodel configureert u de gegevenstypen en eigenschappen die de inhoud van het model definiëren.
 
 >[!TIP]
 >
->Het is belangrijk dat u de naamgevingsschema&#39;s in de volgende instructies opvolgt, aangezien we in latere modules naar deze specifieke namen zullen verwijzen.
+>Het is belangrijk om de noemende schema&#39;s in de volgende instructies te volgen omdat deze specifieke namen in recentere modules worden bedoeld.
 
 1. Sleep een **Tekst met één regel** veld van **Gegevenstypen** aan de rechterkant van de editor en zet deze neer op het model Inhoudsfragment.
 
-1. Wanneer een gegevenstype is geplaatst, wordt de **Gegevenstypen** automatisch gewijzigd in **Eigenschappen** , waarin u de details kunt definiëren van het gegevenstype dat u net hebt geplaatst. Voor dit eerste veld willen we de titel van de reis of het avontuur opslaan. Voer de volgende eigenschappen in.
+1. Wanneer een gegevenstype is geplaatst, wordt de **Gegevenstypen** automatisch gewijzigd in **Eigenschappen** , waarin u de details kunt definiëren van het gegevenstype dat u hebt geplaatst. Voor dit eerste gebied, wilt u de titel van de reis of het avontuur opslaan. Voer de volgende eigenschappen in.
 
-   * **Renderen als:** **Tekstveld** - Wanneer u een avontuur creeert, zal dit gebied de titel van het avontuur opslaan.
-   * **Veldlabel:** `Title` - Dit is het label dat voor dit veld wordt weergegeven wanneer u een nieuw avontuur maakt.
+   * **Renderen als:** **Tekstveld** - Wanneer u een avontuur creeert, slaat dit gebied de titel van het avontuur op.
+   * **Veldlabel:** `Title` - Het label dat voor dit veld wordt weergegeven wanneer u een avontuur maakt.
 
-1. Wanneer u de eigenschappen van het veld hebt gedefinieerd, kunt u terugschakelen naar het tabblad **Gegevenstypen** in het rechterdeelvenster en voeg aanvullende velden toe door te slepen en neer te zetten.
+1. Nadat u de eigenschappen van het veld hebt gedefinieerd, kunt u terugschakelen naar het tabblad **Gegevenstypen** in het rechterdeelvenster en voeg aanvullende velden toe door te slepen en neer te zetten.
 
-Op deze manier kunt u zoveel velden toevoegen als nodig zijn voor het ondersteunen van elke gegevensstructuur die u nodig hebt. De typen gegevensvelden variëren, maar het proces om deze aan uw model toe te voegen, blijft ongewijzigd.
+Op deze manier kunt u zoveel velden toevoegen als nodig zijn voor het ondersteunen van de gegevensstructuur die u nodig hebt. De typen gegevensvelden variëren, maar het proces om deze aan uw model toe te voegen, blijft ongewijzigd.
 
-Ga verder met de volgende sectie om de velden toe te voegen die nodig zijn om de **Adventure** model
+Ga door naar de volgende sectie zodat u de gebieden kunt toevoegen noodzakelijk om te voltooien en sparen **Adventure** model
 
 ![Stap 1, 2 en 3 van het toevoegen van velden aan het model](assets/do-not-localize/define-model-fields.png)
 
@@ -82,23 +82,23 @@ U hebt al een veld voor de titel van het avontuur. Nu moet u velden toevoegen om
 >
 >De **Adventure** model is gebaseerd op de WKND-voorbeeldsite voor AEM. U kunt [bezoek hier de site](https://wknd.site/us/en/adventures/yosemite-backpacking.html) om inhoud te zien die het **Adventure** model.
 
-Voer dezelfde stappen uit als hierboven om deze extra velden toe te voegen. Het enige verschil zijn de eigenschappen die u moet instellen.
+Voer dezelfde stappen uit als hierboven om deze extra velden toe te voegen. Het enige verschil is de eigenschappen die u moet instellen.
 
-1. Voeg een veld toe waarin u de beschrijving van het avontuur kunt opslaan door een **Tekst met meerdere regels** en voer de volgende eigenschappen in:
+1. Voeg een veld toe, zodat u de beschrijving van het avontuur kunt opslaan door een **Tekst met meerdere regels** en voer de volgende eigenschappen in:
 
-   * **Renderen als:** **Tekstgebied** - Wanneer u een avontuur creeert, zal dit gebied een korte beschrijving van de reis opslaan.
-   * **Veldlabel:** `Description` - Dit is het label dat voor dit veld wordt weergegeven wanneer u een nieuw avontuur maakt.
+   * **Renderen als:** **Tekstgebied** - Wanneer u een avontuur creeert, slaat dit gebied een korte beschrijving van de reis op.
+   * **Veldlabel:** `Description` - Het label dat voor dit veld wordt weergegeven wanneer u een avontuur maakt.
 
-1. Voeg een veld toe om de prijs van het avontuur op te slaan door een **Tekst met één regel** en voer de volgende eigenschappen in:
+1. Voeg een veld toe, zodat u de prijs van het avontuur kunt opslaan door een **Tekst met één regel** en voer de volgende eigenschappen in:
 
-   * **Renderen als:** **Tekstveld** - Wanneer u een avontuur creeert, zal dit gebied de prijs van de reis opslaan.
-   * **Veldlabel:** `Price` - Dit is het label dat voor dit veld wordt weergegeven wanneer u een nieuw avontuur maakt.
+   * **Renderen als:** **Tekstveld** - Wanneer u een avontuur creeert, slaat dit gebied de prijs van de reis op.
+   * **Veldlabel:** `Price` - Het label dat voor dit veld wordt weergegeven wanneer u een avontuur maakt.
 
-1. Voeg een veld toe waarin u een afbeelding voor de tijdelijke conversie wilt opslaan. Afbeeldingen in AEM worden opgeslagen als een ander type inhoud, ook wel **Activa**. Als u een veld voor ze wilt maken, moet u een veld slepen en neerzetten **Content Reference** veld dat verwijst naar het element van de afbeelding.
+1. Voeg een veld toe zodat u een afbeelding voor de tijdelijke conversie kunt opslaan. Afbeeldingen in AEM worden opgeslagen als een ander type inhoud, ook wel **Activa**. Als u een veld voor de velden wilt maken, sleept u een **Content Reference** veld dat verwijst naar het element van de afbeelding.
 
-   * **Renderen als:** **Content Reference** - Wanneer u een avontuur creeert, zal dit gebied aan beeldactiva richten die deze reis vertegenwoordigen.
-   * **Veldlabel:** `Image` - Dit is het label dat voor dit veld wordt weergegeven wanneer u een nieuw avontuur maakt.
+   * **Renderen als:** **Content Reference** - Wanneer u een avontuur creeert, wijst dit gebied aan beeldactiva die deze reis vertegenwoordigen.
+   * **Veldlabel:** `Image` - Het label dat voor dit veld wordt weergegeven wanneer u een avontuur maakt.
 
-1. Als u alle velden hebt toegevoegd die nodig zijn voor het model Inhoudsfragment, klikt u op **Opslaan** rechtsboven in het venster.
+1. Nadat u de vereiste velden voor het model Inhoudsfragment hebt toegevoegd, klikt u rechtsboven in het venster op **Opslaan**.
 
 1. Het model wordt opgeslagen en u keert terug naar de Console van het model van het Fragment van de Inhoud.
