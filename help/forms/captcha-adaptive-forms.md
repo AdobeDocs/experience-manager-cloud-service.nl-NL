@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
+source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1358'
 ht-degree: 0%
 
 ---
@@ -29,12 +29,11 @@ CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apar
 >* CAPTCHA in Adaptive Forms wordt niet ondersteund in de offline modus [!DNL AEM Forms] app.
 >
 
-
-## De ReCAPTCHA-service door Google configureren {#google-recaptcha}
+## De reCAPTCHA-service van Google configureren {#google-reCAPTCHA}
 
 Auteurs van formulieren kunnen de reCAPTCHA-service van Google gebruiken om CAPTCHA te implementeren in Adaptive Forms. Het biedt geavanceerde CAPTCHA-mogelijkheden om uw site te beschermen. Voor meer informatie over hoe reCAPTCHA werkt, zie [Google reCAPTCHA](https://developers.google.com/recaptcha/).
 
-![Recaptcha](assets/recaptcha_new.png)
+![reCAPTCHA](assets/recaptcha_new.png)
 
 De reCAPTCHA-service implementeren in [!DNL AEM Forms]:
 
@@ -49,10 +48,10 @@ De reCAPTCHA-service implementeren in [!DNL AEM Forms]:
 
       1. Schakel in het dialoogvenster Configuratieeigenschappen de optie **[!UICONTROL Cloud Configurations]**.
       1. Tikken **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
+
    1. Tik in de configuratiebrowser op **[!UICONTROL Create]**.
    1. Geef in het dialoogvenster Configuratie maken een titel op voor de map en schakel **[!UICONTROL Cloud Configurations]**.
    1. Tikken **[!UICONTROL Create]** om de map te maken die is ingeschakeld voor configuraties van de cloudservice.
-
 
 1. Configureer de cloudservice voor reCAPTCHA.
 
@@ -85,14 +84,14 @@ CAPTCHA gebruiken in Adaptive Forms:
 
 1. Selecteer de Captcha-component die u hebt toegevoegd en tik op ![cmppr](assets/configure-icon.svg) om de eigenschappen te bewerken.
 1. Geef een titel op voor de CAPTCHA-widget. De standaardwaarde is **[!UICONTROL Captcha]**. Selecteren **[!UICONTROL Hide title]** als u de titel niet wilt weergeven.
-1. Van de **[!UICONTROL Captcha service]** vervolgkeuzelijst, selecteert u **[!UICONTROL reCaptcha]** om de dienst reCAPTCHA toe te laten als u het zoals die in vormde [De dienst van ReCAPTCHA door Google](#google-recaptcha). Selecteer een configuratie in het keuzemenu Instellingen.
+1. Van de **[!UICONTROL Captcha service]** vervolgkeuzelijst, selecteert u **[!UICONTROL reCAPTCHA]** om de dienst reCAPTCHA toe te laten als u het zoals die in vormde [reCAPTCHA-service van Google](#google-reCAPTCHA). Selecteer een configuratie in het keuzemenu Instellingen.
 1. Selecteer de tekst als **[!UICONTROL Normal]** of **[!UICONTROL Compact]** voor de reCAPTCHA-widget. U kunt ook de **[!UICONTROL Invisible]** optie om de CAPTCHA-uitdaging alleen aan te tonen in het geval van een verdachte activiteit. Het symbool dat wordt beveiligd door de reCAPTCHA-badge, hieronder, wordt weergegeven op de beveiligde formulieren.
 
    ![Google beveiligd door reCAPTCHA-badge](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >Niet selecteren **[!UICONTROL Default]** van de de dienstdrop-down van Captcha aangezien de standaard Experience ManagerCAPTCHA dienst wordt afgekeurd.
+   >* Niet selecteren **[!UICONTROL Default]** van de de dienstdrop-down van Captcha aangezien de standaard Experience ManagerCAPTCHA dienst wordt afgekeurd.
 
 1. Sla de eigenschappen op.
 
@@ -107,6 +106,10 @@ De component CAPTCHA moet bijvoorbeeld alleen in een adaptief formulier worden w
 Tik op de knop **[!UICONTROL Currency Value]** in het formulier en stel de volgende regels in:
 
 ![Regels tonen of verbergen](assets/rules-show-hide-captcha.png)
+
+>[!NOTE]
+>
+>* Als u de v2-configuratie reCAPTCHA selecteert met de grootte als [!UICONTROL Invisible] de optie tonen/verbergen is dan niet van toepassing.
 
 ### CAPTCHA valideren {#validate-captcha}
 
@@ -206,7 +209,7 @@ public interface GuideCaptchaValidator {
 
 `userResponseToken` verwijst naar de `g_recaptcha_response` die wordt gegenereerd nadat een CAPTCHA in een formulier is opgelost.
 
-### reCAPTCHA-servicedomein bewerken {#recaptcha-service-domain}
+### reCAPTCHA-servicedomein bewerken {#reCAPTCHA-service-domain}
 
 reCAPTCHA-service gebruikt `https://www.recaptcha.net/` als het standaarddomein. U kunt de in te stellen instellingen wijzigen `https://www.google.com/` of een aangepaste domeinnaam voor het laden, renderen en valideren van de reCAPTCHA-service.
 
