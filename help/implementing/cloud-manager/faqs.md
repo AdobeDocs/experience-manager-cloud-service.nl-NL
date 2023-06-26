@@ -2,9 +2,9 @@
 title: Veelgestelde vragen over Cloud Manager
 description: Zoek antwoorden op de meest gestelde vragen over Cloud Manager in AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ Het proces wordt gedocumenteerd [hier](/help/implementing/cloud-manager/getting-
 
 Zie bijvoorbeeld de [projectcode van wknwdd-project](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-## Mijn build mislukt met een fout over maven-scr-plugin na het schakelen van Java 8 naar Java 11. Wat kan ik doen? {#build-fails-maven-scr-plugin}
+## Mijn build mislukt met een fout over maven-scr-plugin na het schakelen van Java 8 via Java 11. Wat kan ik doen? {#build-fails-maven-scr-plugin}
 
-Het is mogelijk dat de build van uw AEM Cloud Manager mislukt wanneer u probeert de build over te schakelen van Java 8 naar 11. Als de volgende fout optreedt, moet u `maven-scr-plugin` en zet alle OSGi-annotaties om in OSGi R6-annotaties.
+Het is mogelijk dat de build van uw AEM Cloud Manager mislukt wanneer u probeert de build over te schakelen van Java 8 tot en met 11. Als de volgende fout optreedt, moet u `maven-scr-plugin` en zet alle OSGi-annotaties om in OSGi R6-annotaties.
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
@@ -32,7 +32,7 @@ Het is mogelijk dat de build van uw AEM Cloud Manager mislukt wanneer u probeert
 
 Voor instructies over het verwijderen van deze plug-in raadpleegt u [hier.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
 
-## Mijn build mislukt met een fout met betrekking tot RequireJavaVersion na het schakelen van Java 8 naar Java 11. Wat kan ik doen? {#build-fails-requirejavaversion}
+## Mijn build mislukt met een fout met betrekking tot RequireJavaVersion na het schakelen van Java 8 via Java 11. Wat kan ik doen? {#build-fails-requirejavaversion}
 
 Voor builds van Cloud Manager worden de `maven-enforcer-plugin` kan mislukken met deze fout.
 
@@ -91,7 +91,7 @@ De oplossing is om een [Configuratie RepositoryInitializer OSGi](/help/implement
 
 In de vorige voorbeeldfout wordt het pakket `myapp-base.ui.content-*.zip` bevat inhoud onder `/conf` en `/var/workflow`. Om de plaatsing te slagen, toestemmingen voor `sling-distribution-importer` onder deze paden is het noodzakelijk .
 
-Hier is een voorbeeld van een [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) De configuratie OSGi die extra toestemmingen voor de configuratie toevoegt `sling-distribution-importer` gebruiker.  De configuratie voegt toestemmingen onder toe `/var`.  Een dergelijke configuratie moet worden toegevoegd aan het toepassingspakket onder `/apps/myapp/config` (waarbij myapp de map is waarin uw toepassingscode is opgeslagen).
+Hier is een voorbeeld van een [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi-configuratie die extra toestemmingen voor de `sling-distribution-importer` gebruiker.  De configuratie voegt toestemmingen onder toe `/var`.  Een dergelijke configuratie moet worden toegevoegd aan het toepassingspakket onder `/apps/myapp/config` (waarbij myapp de map is waarin uw toepassingscode is opgeslagen).
 
 ## Mijn plaatsing van de Manager van de Wolk ontbreekt bij de opstellen stap in AEM as a Cloud Service en ik voegde reeds een configuratie RepositoryInitializer OSGi toe. Wat kan ik nog meer doen? {#build-failures}
 

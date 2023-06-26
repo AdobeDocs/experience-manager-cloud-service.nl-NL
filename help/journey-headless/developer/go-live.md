@@ -2,9 +2,9 @@
 title: Hoe u met uw headless toepassing kunt gaan werken
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u een toepassing zonder kop kunt implementeren door uw lokale code in Git te nemen en deze naar Cloud Manager Git voor de CI/CD-pijplijn te verplaatsen.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Volg de onderstaande aanbevolen procedures om uw AEM toepassing zonder koppen kl
 
 * Maak geen query&#39;s die meer dan 15 kB van JSON uitvoeren (gecomprimeerd gzip). Lange JSON-bestanden zijn bronintensief, zodat de clienttoepassing kan parseren.
 * Vermijd meer dan vijf geneste niveaus van fragmenthiërarchieën. Met extra niveaus kunnen auteurs van inhoud de gevolgen van hun wijzigingen moeilijk in overweging nemen.
-* Gebruik multiobject query&#39;s in plaats van query&#39;s met afhankelijkheidshiërarchieën binnen de modellen te modelleren. Hierdoor is meer flexibiliteit op lange termijn mogelijk om JSON-uitvoer te herstructureren zonder dat er veel wijzigingen in de inhoud moeten worden aangebracht.
+* Gebruik multiobject query&#39;s in plaats van query&#39;s met afhankelijkheidshiërarchieën binnen de modellen te modelleren. Hierdoor is meer flexibiliteit op lange termijn mogelijk om JSON-uitvoer te herstructureren zonder dat u veel inhoudswijzigingen hoeft aan te brengen.
 
 ## CDN-hoogte-breedteverhouding in cache maximaliseren {#maximize-cdn}
 

@@ -2,9 +2,9 @@
 title: Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten
 description: Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud, voor inhoud, andere fragmenten en andere activa (media). Introduceer de noodzaak voor en de mechaniek van geneste fragmenten voor CMS-creatie zonder koppen.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '731'
 ht-degree: 1%
 
 ---
@@ -117,6 +117,7 @@ Nu u over verwijzingen en structuur in Inhoudsfragmenten hebt geleerd, is de vol
       * [De configuratie toepassen op de middelenmap](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Een inhoudsfragment maken](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Variaties - Inhoudsfragmenten ontwerpen](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
    * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
@@ -124,7 +125,6 @@ Nu u over verwijzingen en structuur in Inhoudsfragmenten hebt geleerd, is de vol
       * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
       * [Modellen van inhoudsfragmenten - eigenschappen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
-
 
 * Aan de slag - hulplijnen
    * [Een middelenmap maken - Instellingen zonder kop](/help/headless/setup/create-assets-folder.md)

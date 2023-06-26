@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3496'
 ht-degree: 14%
 
 ---
@@ -208,7 +208,7 @@ Adobe Asset Link biedt een goede ondersteuning voor dit gebruiksgeval:
 * Aangezien het element zich in de Creative Cloud-account bevindt, is het ook beschikbaar op andere apparaten die de gebruiker mogelijk heeft (kunnen bijvoorbeeld worden geopend of bewerkt in een speciale mobiele Creative Cloud-app) en kan het voor samenwerkingsdoeleinden worden gedeeld met andere Creative Cloud-gebruikers.
 * Wanneer de creatieve gebruiker klaar is met de wijzigingen, kan hij of zij een incheckbewerking op dat bestand uitvoeren in zijn of haar Creative Cloud-toepassing, met een optionele opmerking. De overeenkomstige activa in Experience Manager zijn versioned en bijgewerkt aan met het nieuwe binaire getal. Gebruikers van Experience Managers, zoals Marketers of LOB-gebruikers, hebben via de tijdlijngebruikersinterface van Experience Managers toegang tot belangrijke wijzigingen in bedrijfsmiddelen of mijlpalen.
 
-De desktop-app van de Experience Manager biedt een gedeelde netwerkbestanden voor bestanden die in de native app worden geopend. Standaard worden alle lokaal uitgevoerde wijzigingen na een korte tijd automatisch geüpload naar de Experience Manager. Met zo een configuratie, zou het frequente sparen tijdens de werk-in-lopende fase allen in Experience Manager en versioned worden geupload, die tot veel netwerkverkeer en potentiële scalability uitdagingen - om onnodige versies in Experience Manager te noemen leiden.
+De desktop-app van de Experience Manager biedt een gedeelde netwerkbestanden voor bestanden die in de native app worden geopend. Standaard worden alle lokaal uitgevoerde wijzigingen na een korte tijd automatisch geüpload naar de Experience Manager. Met zulk een configuratie, zou het frequente sparen tijdens de werk-in-lopende fase allen in Experience Manager en versioned worden geupload, die tot een grote hoeveelheid netwerkverkeer en potentiële scalability uitdagingen - om onnodige versies in Experience Manager te noemen.
 
 Hier kunt u het beste een optie in de bureaubladtoepassing van de Experience Manager gebruiken om geautomatiseerde updates uit te schakelen en wijzigingen in  handmatig te uploaden naar de Experience Manager. Hierbij wordt gebruikgemaakt van de actie voor uploadwijzigingen in de statusinterface van de app voor bedrijfsmiddelen.
 

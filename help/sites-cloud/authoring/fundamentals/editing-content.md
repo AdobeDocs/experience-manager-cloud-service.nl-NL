@@ -2,9 +2,9 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3004'
+source-wordcount: '3002'
 ht-degree: 5%
 
 ---
@@ -443,7 +443,7 @@ De **Weergeven als gepubliceerd** Deze optie is beschikbaar via de [Pagina-infor
 
 ## Een pagina vergrendelen {#locking-a-page}
 
-AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
+AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan bewerken. Deze vergrendeling is handig wanneer u meerdere bewerkingen op een bepaalde pagina uitvoert of wanneer u een pagina kort wilt stilzetten.
 
 Een pagina kan worden vergrendeld vanuit:
 

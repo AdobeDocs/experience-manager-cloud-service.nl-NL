@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3968'
+source-wordcount: '3967'
 ht-degree: 0%
 
 ---
@@ -195,10 +195,9 @@ Gebruik het verzoekattribuut om de bijbehorende eigenschappen van de gegevensbro
    >[!NOTE]
    >
    > * Als u een statische sjabloon gebruikt, bedekt u head.jsp bij:
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Als u een bewerkbare sjabloon gebruikt, bedekt u de aftemplatedpage.jsp op:
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. Set [!DNL paramMap] voor het aanvraagkenmerk. Neem bijvoorbeeld de volgende code op in het .jsp-bestand in de map apps:
 
@@ -292,7 +291,8 @@ Eigenschappen bewerken:
    * **[!UICONTROL Property]**: Geef het type, subtype en de indeling voor de eigenschap op. U kunt ook opgeven of de geselecteerde eigenschap de primaire sleutel voor het gegevensmodelobject is.
    * **[!UICONTROL Service]**: Geef het invoermodelobject, het uitvoertype en de argumenten voor de service op. Voor de Get dienst, kunt u specificeren als het wordt verwacht om een serie terug te keren.
 
-      ![edit-properties-service](assets/edit-properties-service.png)
+     ![edit-properties-service](assets/edit-properties-service.png)
+
    Dialoogvenster Eigenschappen bewerken voor een get-service
 
 1. Tikken **[!UICONTROL Done]** om eigenschappen op te slaan en vervolgens **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
@@ -419,7 +419,7 @@ De markering kan op om het even welke volgende waarden worden geplaatst:
 
 * **VOLLEDIG**: FDM voert de validatie uit op basis van alle beperkingen
 * **UIT**: Geen validatie
-* **BASIC**: FDM voert de validatie uit op basis van de beperkingen &quot;required&quot; en &quot;nullable&quot;
+* **BASIC**: FDM voert de validatie uit op basis van &#39;required&#39; en &#39;nullable&#39; beperkingen
 
 Als er geen waarde is ingesteld voor de `ValidationOptions`vlag, **BASIC** De validatie wordt uitgevoerd op de invoergegevens.
 
@@ -518,7 +518,7 @@ In de volgende tabel worden de beperkingen voor invoergegevens weergegeven die z
  </tbody> 
 </table>
 
-In dit voorbeeld worden de invoergegevens gevalideerd op basis van maximum-, minimum- en vereiste beperkingen die zijn gedefinieerd in het Swagger-bestand. De invoergegevens voldoen alleen aan de validatiecriteria als Order-id aanwezig is en de waarde tussen 1 en 10 ligt.
+In dit voorbeeld worden de invoergegevens gevalideerd op basis van maximum-, minimum- en vereiste beperkingen die zijn gedefinieerd in het Swagger-bestand. De invoergegevens voldoen alleen aan de validatiecriteria als Order-id aanwezig is en de waarde 1-10 is.
 
 ```json
    parameters: [

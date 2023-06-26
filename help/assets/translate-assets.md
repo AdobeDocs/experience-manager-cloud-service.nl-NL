@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2499'
 ht-degree: 19%
 
 ---
@@ -147,7 +147,6 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
    >* Als u Machine Translation gebruikt, worden binaire bestanden met elementen niet vertaald.
    >* Als het element dat u toevoegt aan de vertaaltaak subelementen bevat, selecteert u de subelementen en verwijdert u deze zodat de vertaling zonder scheuren kan worden uitgevoerd.
 
-
 1. Als u de vertaling voor de elementen wilt starten, klikt of tikt u op de pijl op de knop **[!UICONTROL Translation Job]** tegel en selecteer **[!UICONTROL Start]** in de lijst. Een bericht brengt het begin van de vertaalbaan op de hoogte.
 1. Als u de status van de vertaaltaak wilt weergeven, klikt of tikt u op de ellips onder aan het dialoogvenster **[!UICONTROL Translation Job]** tegel. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. Nadat de vertaling is voltooid, verandert de status in Ready to Review. Navigeer naar de interface Middelen en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
@@ -174,7 +173,7 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 
 ### Tijdelijke taalkopieën maken {#creating-temporary-language-copies}
 
-Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. [!DNL Assets] Hiermee slaat u de nieuw vertaalde middelen op een tijdelijke locatie op en werkt u de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
+Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. [!DNL Assets] Hiermee slaat u de nieuw vertaalde elementen op een tijdelijke locatie op en werkt u de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
 
 1. Klik of tik op de hoofdmap van de bron onder **[!UICONTROL Language Copies]** waarvoor u al een taalkopie hebt gemaakt, en klik of tik vervolgens op **[!UICONTROL Reveal in Assets]** om de map te openen in [!DNL Assets].
 1. Selecteer in de interface Elementen een element dat u al hebt vertaald en klik op **[!UICONTROL Edit]** van de werkbalk om het element in de bewerkingsmodus te openen.

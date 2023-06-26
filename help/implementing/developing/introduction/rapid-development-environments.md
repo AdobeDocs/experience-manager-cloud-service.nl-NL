@@ -2,9 +2,9 @@
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3318'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Ga als volgt te werk om Cloud Manager te gebruiken om een RDE voor uw programma 
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
+1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
 
    * Selecteren **Snelle ontwikkeling** onder de **Omgevingstype selecteren** kop.
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter het omgevingstype weergegeven.
@@ -104,7 +104,7 @@ Nadat u een RDE voor uw programma hebt toegevoegd met gebruik van Cloud Manager,
 
    `aio config:set cloudmanager_environmentid 123456`
 
-1. Nadat u de insteekmodule hebt geconfigureerd, meldt u zich aan door
+1. Nadat u klaar bent met het configureren van de insteekmodule, meldt u zich aan door
 
    `aio login`
 

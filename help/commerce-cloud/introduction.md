@@ -2,10 +2,10 @@
 title: Inleiding en overzicht
 description: Inleiding en overzicht van inhoud en handel. Het Kader van de Integratie van de Handel van de Experience Manager (CIF) wordt geadviseerd Adobe om de handelsdiensten van Adobe Commerce en andere derde handelsoplossingen met de Experience Cloud te integreren en uit te breiden.
 thumbnail: introducing-aem-commerce.jpg
-exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Met meer dan 200 klanten, heeft CIF zich als succesvol ingrediënt voor een succ
 
 ## CIF-uitkeringen {#cif-benefits}
 
-CIF verstrekt out-of-the-box belangrijkste componenten van de handel die de behoefte aan douanecode verminderen, die de tijd aan markt voor merken versnelt. Alle kerncomponenten zijn geïntegreerd uit de doos met de cliënt-zijgegevenslaag van Adobe om klantenprofielen, zoals het verenigde profiel te drijven. Dit profiel vangt in detail het gedrag van een bezoeker, dat kan worden gebruikt om de klantenreis in echt te voorspellen en te personaliseren - tijd.
+CIF verstrekt out-of-the-box belangrijkste componenten van de handel die de behoefte aan douanecode verminderen, die de tijd aan markt voor merken versnelt. Alle kerncomponenten van de doos met Adobe-zijgegevenslaag aan hydraatklantenprofielen, zoals het verenigde profiel zijn geïntegreerd. Dit profiel legt in detail het gedrag van een bezoeker vast, dat kan worden gebruikt om de reis van de klant in real time te voorspellen en te personaliseren.
 
 De toe:voegen-on CIF brengt productcontext in Experience Manager en verstrekt auteurshulpmiddelen zoals een productconsole en product/categoriekiezers die de marktleider machtigen om onvoorstelbare ervaringen in Experience Manager tot stand te brengen en te leveren zonder op de ontwikkelaar te vertrouwen. De voordelen zijn:
 

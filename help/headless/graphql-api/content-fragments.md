@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4925'
+source-wordcount: '4924'
 ht-degree: 0%
 
 ---
@@ -751,7 +751,7 @@ De structuur en syntaxis zijn:
    * `height`: de hoogte van de dimensie
 * `rotation`: een opsomming van alle ondersteunde rotaties: R90, R180, R270
 * `flip`: een opsomming van HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
-* `quality`: een geheel getal tussen 1 en 100 dat het percentage van de afbeeldingskwaliteit aangeeft
+* `quality`: een geheel getal van 1-100 dat het percentage van de afbeeldingskwaliteit aangeeft
 * `width`: een geheel getal dat de breedte van de uitvoerafbeelding definieert, maar dat door de afbeeldingsgenerator wordt genegeerd
 * `preferWebp`: een Booleaanse waarde die aangeeft of de voorkeur wordt gegeven aan een webpagina (de standaardwaarde is false)
 

@@ -4,9 +4,9 @@ description: Leer de grondbeginselen van AE; pakketbeheer met Package Manager.
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3782'
+source-wordcount: '3780'
 ht-degree: 0%
 
 ---
@@ -244,7 +244,7 @@ Er zijn vele acties die op een pakket kunnen worden ondernomen.
 
    >[!TIP]
    >
-   >Als uw instantie veel pakketten bevat, is er mogelijk een mapstructuur aanwezig. In dergelijke gevallen is het eenvoudiger om naar de vereiste doelmap te navigeren voordat u het nieuwe pakket maakt.
+   >Als uw instantie vele pakketten heeft, zou er een omslagstructuur op zijn plaats kunnen zijn. In dergelijke gevallen is het eenvoudiger om naar de vereiste doelmap te navigeren voordat u het nieuwe pakket maakt.
 
 1. In de **Nieuw pakket** voert u de volgende velden in:
 

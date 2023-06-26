@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Bekijk de video Overzicht van de release van juni 2022 voor een overzicht van de
 
 * Een nieuwe [gebruikersinterface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is nu beschikbaar voor beheerders van inhoud en auteurs van inhoud om efficiënt te beheren (acties zoals publiceren, ongedaan maken, kopiëren, verplaatsen, enz.), zoek-/filterfragmenten te maken voor gebruik in hoofdletters.
 
-   ![Console voor inhoudsfragment](/help/release-notes/assets/cf-ui.png)
+  ![Console voor inhoudsfragment](/help/release-notes/assets/cf-ui.png)
 
 * De nieuwe [Component Inhoudsopgave](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) werkt niet alleen met de Componenten van de Kern maar met alle componenten, automatisch teruggevend ToCs op inhoudspagina&#39;s. En omdat het server-kant wordt teruggegeven en volledig in het voorgeheugen ondergebracht door de verzender, is het ook efficiënt om te laden.
 
@@ -57,7 +57,7 @@ Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [ond
 
 * **Wizard voor het maken van een adaptief formulier**: Met een gebruiksvriendelijke wizard kunt u snel Adaptive Forms ontwerpen. De wizard biedt een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken.
 
-   ![Wizard voor het maken van een adaptief formulier](/help/release-notes/assets/wizard.png)
+  ![Wizard voor het maken van een adaptief formulier](/help/release-notes/assets/wizard.png)
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
@@ -94,7 +94,7 @@ Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [ond
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* Zoals vermeld in de versienota&#39;s van mei (2022.5.0), voegt de &quot;boom&quot;optie onder het scherm van de replicatieagent admin toe **Distribueren** is verwijderd. Pakketten met een boomstructuur van inhoud moeten in plaats daarvan worden gerepliceerd met [Publicatie beheren](/help/operations/replication.md#manage-publication) of de [Inhoudsstructuur publiceren](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
+* Zoals vermeld in de de versienota&#39;s van mei (2022.5.0), &quot;voeg boom&quot;optie onder het scherm van de replicatieagent admin toe **Distribueren** is verwijderd. Pakketten met een boomstructuur van inhoud moeten in plaats daarvan worden gerepliceerd met [Publicatie beheren](/help/operations/replication.md#manage-publication) of de [Inhoudsstructuur publiceren](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
 
 ## Cloud Manager {#cloud-manager}
 

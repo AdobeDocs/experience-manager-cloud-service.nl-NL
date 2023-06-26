@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 7%
 
 ---
@@ -39,7 +39,7 @@ Om te vormen [!DNL Experience Manager] op watermerkelementen:
 
    >[!NOTE]
    >
-   >Als u een systeemwatermerkingsprofiel hebt geconfigureerd met `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` configuratiedossier (configuratie OSGi), kunt u het blijven gebruiken, nochtans, adviseert Adobe om de nieuwe methode te gebruiken.
+   >Als u een systeemwatermerkingsprofiel hebt geconfigureerd met `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` configuratiedossier (configuratie OSGi), kunt u het blijven gebruiken, nochtans, adviseert Adobe het gebruiken van de nieuwe methode.
 
 
 1. [Een verwerkingsprofiel maken](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) gebruik te maken van asset microservices om het watermerk toe te passen.

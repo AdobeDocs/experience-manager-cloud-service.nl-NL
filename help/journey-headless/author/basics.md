@@ -2,9 +2,9 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1709'
 ht-degree: 1%
 
 ---
@@ -141,7 +141,7 @@ Er wordt een dialoogvenster geopend waarin u de details kunt invoeren en vervolg
 
 #### Paden en tags gebruiken om de in de map beschikbare modellen van inhoudsfragmenten te beperken {#tags-paths-for-models-in-folder}
 
-Deze sectie is iets geavanceerder. Je hebt het niet echt nodig als je gewoon begint en dingen probeert, maar het is *zeer* Dit is handig als u veel fragmenten hebt. Dus het is goed om over te weten - zelfs als je het nog niet helemaal gebruikt.
+Deze sectie is iets geavanceerder. U hebt het niet echt nodig als u gewoon begint en dingen probeert, maar het is *zeer* Dit is handig wanneer u veel fragmenten hebt. Dus het is goed om over te weten - zelfs als je het nog niet helemaal gebruikt.
 
 Uw Content Architect zal alle Content Fragment Models hebben gecreeerd die voor uw huidige project worden vereist, en misschien ook sommige andere projecten. Om de zaken voor zich, en andere auteurs eenvoudig te houden, kunt u de lijst van modellen beperken beschikbaar voor een specifieke omslag.
 

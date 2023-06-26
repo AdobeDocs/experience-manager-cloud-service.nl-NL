@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -36,24 +36,24 @@ Kijk eens naar de [Overzicht release augustus 2021](https://video.tv.adobe.com/v
 
 * Wanneer gebruikers digitale elementen delen als een koppeling, kunnen ze de URL direct naar het klembord kopiëren. Dankzij deze verbetering kunt u elementen sneller en gemakkelijker delen. Dankzij deze functionaliteit kunt u sneller en handig elementen delen.
 
-   ![De optie URL kopiëren wanneer een element wordt gedeeld als een koppeling](/help/assets/assets/link-share-copy-URL-option.png)
-   *Afbeelding: Wanneer u een element deelt als een koppeling, kunt u de URL nu kopiëren en afzonderlijk delen.*
+  ![De optie URL kopiëren wanneer een element wordt gedeeld als een koppeling](/help/assets/assets/link-share-copy-URL-option.png)
+  *Afbeelding: Wanneer u een element deelt als een koppeling, kunt u de URL nu kopiëren en afzonderlijk delen.*
 
 * Wanneer u TXT-bestanden uploadt, genereert de elementmicroservices automatisch een miniatuur. De PNG-miniatuur is een uitvoering van het TXT-bestand waarmee gebruikers de inhoud of de bestanden tot op zekere hoogte kunnen identificeren zonder de bestanden te openen. Deze functionaliteit vereist geen configuratie en werkt standaard.
 
-   ![Er wordt automatisch een uitvoering van een TXT-bestand gegenereerd door [!DNL Assets] in PNG-indeling](/help/assets/assets/thumbnail-rendition-txt-file.png)
-   *Afbeelding: Er wordt automatisch een uitvoering van een TXT-bestand gegenereerd om u te helpen het bestand te identificeren zonder het te openen.*
+  ![Er wordt automatisch een uitvoering van een TXT-bestand gegenereerd door [!DNL Assets] in PNG-indeling](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  *Afbeelding: Er wordt automatisch een uitvoering van een TXT-bestand gegenereerd om u te helpen het bestand te identificeren zonder het te openen.*
 
 ### Nieuwe functie in het dialoogvenster [!DNL Assets] prerelease-kanaal {#assets-prerelease-features}
 
 * Gebruikers kunnen de elementen die in de zoekresultaten worden weergegeven nu sorteren in de kolom- en kaartweergave. Het sorteren werkt op de kolommen Naam, Gemaakt, Gewijzigd of Geen.
 
-   ![De zoekresultaten sorteren in [!DNL Assets] in kolom- en kaartweergaven](/help/assets/assets/sort-searched-assets.png)
-   *Afbeelding: De zoekresultaten sorteren in [!DNL Assets] in de kolom- en kaartweergave.*
+  ![De zoekresultaten sorteren in [!DNL Assets] in kolom- en kaartweergaven](/help/assets/assets/sort-searched-assets.png)
+  *Afbeelding: De zoekresultaten sorteren in [!DNL Assets] in de kolom- en kaartweergave.*
 
 ### Buizen vastgesteld in [!DNL Assets] {#assets-bugs-fixed}
 
-* Wanneer een lid van de contributiegroep naar de [!DNL Assets] Console, een extra `POST` Er wordt een aanvraag gegenereerd om een verzameling te maken. Dit verzoek wordt niet vereist, het ontbreekt wegens toestemmingskwesties, en leidt tot veel fouten in de logboeken. (CQ-4328856)
+* Wanneer een lid van de contributiegroep naar de [!DNL Assets] Console, een extra `POST` Er wordt een aanvraag gegenereerd om een verzameling te maken. Dit verzoek is niet vereist; het ontbreekt vanwege problemen met machtigingen en het veroorzaakt veel fouten in de logbestanden. (CQ-4328856)
 * Wanneer gebruikers een element weergeven en de optie [!UICONTROL Timeline] in het pop-upmenu in het linkerdeelvenster wordt een fout weergegeven. In de logboeken, worden vele waarschuwingen geregistreerd toe te schrijven aan een slechte vraag. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
@@ -80,7 +80,7 @@ Kijk eens naar de [Overzicht release augustus 2021](https://video.tv.adobe.com/v
 
 * De nieuwe interface van de Categoriekiezer voor betere gebruikerservaring, verhoogde efficiency en betere steun voor complexe productcatalogus
 
-   ![Nieuwe rubriekkiezer](/help/assets/CIF/category-picker.png)
+  ![Nieuwe rubriekkiezer](/help/assets/CIF/category-picker.png)
 
 * Betere A11Y-ondersteuning voor CIF Core-componenten
 

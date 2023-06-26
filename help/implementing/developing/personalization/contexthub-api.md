@@ -2,7 +2,7 @@
 title: ContextHub JavaScript API-naslaggids
 description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de component ContextHub aan de pagina is toegevoegd
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 0%
@@ -347,7 +347,7 @@ Hervat de gebeurtenis voor deze opslag zodat de gebeurtenissen worden teweeggebr
 
 Voegt een sleutel/waardepaar aan de opslag toe.
 
-Hiermee wordt het dialoogvenster `data` alleen als de waarde voor de toets anders is dan de waarde die momenteel voor de toets is opgeslagen. U kunt desgewenst voorkomen dat het `data` gebeurtenis.
+Hiermee wordt het dialoogvenster `data` alleen als de waarde voor de toets afwijkt van de waarde die momenteel voor de toets is opgeslagen. U kunt desgewenst voorkomen dat het `data` gebeurtenis.
 
 De gebeurtenisgegevens omvatten de opslagnaam, de sleutel, de vorige waarde, de nieuwe waarde en het actietype van `set`.
 

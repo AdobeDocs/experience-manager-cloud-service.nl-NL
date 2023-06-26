@@ -4,7 +4,7 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1640'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers
 
 [!DNL AEM Forms]Standaard beschikt u over een gedefinieerde set metagegevens voor elk elementtype. Naast de standaardmetagegevens kunt u ook aangepaste metagegevens toevoegen aan elk elementtype. [!DNL AEM Forms] biedt u ook de juiste middelen om al deze metagegevens efficiënt voor uw formulieren te maken, te beheren en uit te wisselen.
 
-<!-- If you're a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you're using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
+<!-- If you are a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you are using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
 ## Metagegevens in [!DNL AEM Forms] {#metadata-in-aem-forms}
 

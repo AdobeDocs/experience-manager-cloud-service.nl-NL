@@ -2,9 +2,9 @@
 title: Progressieve webtoepassingsfuncties inschakelen
 description: AEM Sites stelt de auteur van de inhoud in staat om via eenvoudige configuratie progressieve webtoepassingsmogelijkheden voor elke site in te schakelen in plaats van codering.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '1998'
 ht-degree: 0%
 
 ---
@@ -217,7 +217,7 @@ Clientbibliotheken worden geleverd met de toevoeging van een cacheselectiekader,
 
 De afbeeldingscomponent van de AEM Core Components bepaalt een van de voorste uiteinden van de beste uitvoering die moet worden opgehaald. Dit mechanisme bevat ook een tijdstempel die overeenkomt met de laatste gewijzigde tijd van die bron. Dit mechanisme compliceert de configuratie van PWA pre-geheime voorgeheugen.
 
-Wanneer het vormen van pre-geheime voorgeheugen, moet de gebruiker alle wegvariaties vermelden die kunnen worden gehaald. Deze variaties bestaan uit parameters zoals kwaliteit en breedte. Het wordt ten zeerste aanbevolen het aantal van deze variaties te beperken tot maximaal drie - klein, middelgroot, groot. U kunt dat doen via de inhoudspolitieke dialoog van het [Afbeeldingscomponent.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
+Wanneer het vormen van pre-geheime voorgeheugen, moet de gebruiker alle wegvariaties vermelden die kunnen worden gehaald. Deze variaties bestaan uit parameters zoals kwaliteit en breedte. Het wordt aanbevolen het aantal van deze variaties te verminderen tot maximaal drie - klein, middelgroot, groot. U kunt dat doen via de inhoudspolitieke dialoog van het [Afbeeldingscomponent.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
 
 Als niet zorgvuldig gevormd, kunnen het geheugen en het netwerkgebruik de prestaties van uw PWA ernstig beïnvloeden. Ook als u bijvoorbeeld 50 afbeeldingen wilt vooraf instellen en 3 breedten per afbeelding wilt hebben, moet de gebruiker die de site beheert een lijst met maximaal 150 items bijhouden in de sectie PWA pre-cache van de pagina-eigenschappen.
 

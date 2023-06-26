@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2003'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,6 @@ Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 >
 >* Keuzerondje en selectievakje kunnen slechts twee toegankelijkheidsopties hebben, namelijk Aangepaste tekst en Titel.
 >* Voor op XFA gebaseerde Adaptieve Forms wordt de toegankelijkheidsoptie overgenomen van de toegankelijkheidsopties die zijn ingesteld in de XDP. Knopinfo van XDP wordt toegewezen aan Korte beschrijving en Bijschrift wordt toegewezen aan Titel. De andere opties werken zoals is.
-
 
 ### 3. Verstrek tekstequivalenten voor beelden {#provide-text-equivalents-for-images}
 

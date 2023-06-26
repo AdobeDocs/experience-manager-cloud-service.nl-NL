@@ -3,9 +3,9 @@ title: Doelkiezer voor AEM as a Cloud Service
 description: Met de AEM Doelkiezer kunt u elementen weergeven en selecteren die u als een kopie van het oorspronkelijke element kunt gebruiken.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Voor een volledige lijst met eigenschappen en een gedetailleerd voorbeeld gaat u
 
 In dit voorbeeld wordt getoond hoe u de optie Doelkiezer kunt gebruiken met een niet-SUSI-stroom wanneer u een [!DNL Adobe] toepassing onder Verenigde Shell of wanneer u reeds hebt `imsToken` gegenereerd voor verificatie.
 
-Neem het pakket Doelkiezer in de code op met het gereedschap `script` tag, zoals weergegeven in _lijnen 6 tot en met 15_ van het onderstaande voorbeeld. Wanneer het script is geladen, wordt het `PureJSSelectors` algemene variabele is beschikbaar voor gebruik. De doelkiezer definiëren [eigenschappen](#destination-selector-properties) zoals getoond in _lijnen 16 tot en met 23_. De `imsOrg` en `imsToken` beide eigenschappen zijn vereist voor verificatie in niet-SUSI-stroom. De `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Om de Selector van de Bestemming terug te geven, roep `renderDestinationSelector` functie als vermeld in _lijn 17_. De doelkiezer wordt weergegeven in het dialoogvenster `<div>` containerelement, zoals getoond in _lijnen 21 en 22_.
+Neem het pakket Doelkiezer in de code op met het gereedschap `script` tag, zoals weergegeven in _lijnen 6-15_ van het onderstaande voorbeeld. Nadat het script is geladen, wordt het `PureJSSelectors` algemene variabele is beschikbaar voor gebruik. De doelkiezer definiëren [eigenschappen](#destination-selector-properties) zoals getoond in _lijnen 16-23_. De `imsOrg` en `imsToken` beide eigenschappen zijn vereist voor verificatie in niet-SUSI-stroom. De `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Om de Selector van de Bestemming terug te geven, roep `renderDestinationSelector` functie als vermeld in _lijn 17_. De doelkiezer wordt weergegeven in het dialoogvenster `<div>` containerelement, zoals getoond in _lijnen 21 en 22_.
 
 Als u deze stappen uitvoert, kunt u de doelkiezer gebruiken met een niet-SUSI-stroom in uw [!DNL Adobe] toepassing.
 
@@ -185,22 +185,22 @@ U kunt de eigenschappen van de Selector van de Bestemming gebruiken om de manier
 
 | Eigenschap | Type | Vereist | Standaard | Beschrijving |
 |---|---|---|---|---|
-| *imsOrg* | string | Ja |  | Adobe Identity Management System-id (IMS) die tijdens de provisioning is toegewezen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] voor uw organisatie. De `imsOrg` is vereist om te verifiëren of de organisatie waartoe u toegang hebt onder Adobe IMS valt of niet. |
-| *imsToken* | string | Nee |  | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is niet vereist als u de SUSI-flow gebruikt. Nochtans, wordt het vereist als u niet-SUSI stroom gebruikt. |
-| *apiKey* | string | Nee |  | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is niet vereist als u de SUSI-flow gebruikt. Dit is echter vereist in niet-SUSI-stromen. |
+| *imsOrg* | string | Ja | | Adobe Identity Management System-id (IMS) die tijdens de provisioning is toegewezen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] voor uw organisatie. De `imsOrg` is vereist om te controleren of de organisatie waartoe u toegang hebt, onder Adobe IMS valt of niet. |
+| *imsToken* | string | Nee | | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is niet vereist als u de SUSI-flow gebruikt. Dit is echter vereist als u de niet-SUSI-flow gebruikt. |
+| *apiKey* | string | Nee | | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is niet vereist als u de SUSI-flow gebruikt. Dit is echter vereist in niet-SUSI-stromen. |
 | *rootPath* | string | Nee | /content/dam/ | Het pad naar de map waarin de doelkiezer uw elementen weergeeft. `rootPath` kan ook in de vorm van inkapseling worden gebruikt. Voorbeeld: `/content/dam/marketing/subfolder/`Met Doelselectie kunt u niet door een bovenliggende map bladeren, maar alleen de onderliggende mappen. |
-| *hasMore* | boolean | Nee |  | Wanneer de toepassing meer inhoud heeft om weer te geven, kunt u deze eigenschap gebruiken om een lader toe te voegen die de inhoud laadt om deze zichtbaar te maken in de toepassing. Het is een indicator die aangeeft dat inhoud wordt geladen. |
-| *orgName* | boolean | Nee |  | Het is de naam van org (waarschijnlijk orgID) verbonden aan AEM |
-| *initRepoID* | string | Nee |  | Het is het pad van de gegevensopslagruimte die u wilt gebruiken in een standaardbeginweergave |
-| *onCreateFolder* | string | Nee |  | De `onCreateFolder` kunt u een pictogram toevoegen waarmee een nieuwe map in de toepassing wordt toegevoegd. |
-| *onConfirm* | string | Nee |  | Dit is een callback wanneer u op de knop Bevestigen klikt. |
-| *confirmDisabled* | string | Nee |  | This property controls the toggle of the confirm button. |
-| *viewType* | string | Nee |  | De `viewType` Deze eigenschap wordt gebruikt om de weergaven op te geven die u gebruikt om elementen weer te geven. |
-| *viewTypeOptions* | string | Nee |  | Deze eigenschap is gerelateerd aan `viewType` eigenschap. u kunt een of meer weergaven opgeven om elementen weer te geven. Beschikbare viewTypeOptions zijn: Lijstweergave, Rasterweergave, Galerieweergave, Watervalweergave en Boomweergave. |
-| *itemNameFormatter* | string | Nee |  | Met deze eigenschap kunt u de itemnaam opmaken |
+| *hasMore* | boolean | Nee | | Wanneer de toepassing meer inhoud heeft om weer te geven, kunt u deze eigenschap gebruiken om een lader toe te voegen die de inhoud laadt om deze zichtbaar te maken in de toepassing. Het is een indicator die aangeeft dat inhoud wordt geladen. |
+| *orgName* | boolean | Nee | | Het is de naam van org (waarschijnlijk orgID) verbonden aan AEM |
+| *initRepoID* | string | Nee | | Het is het pad van de gegevensopslagruimte die u wilt gebruiken in een standaardbeginweergave |
+| *onCreateFolder* | string | Nee | | De `onCreateFolder` kunt u een pictogram toevoegen waarmee een nieuwe map in de toepassing wordt toegevoegd. |
+| *onConfirm* | string | Nee | | Dit is een callback wanneer u op de knop Bevestigen klikt. |
+| *confirmDisabled* | string | Nee | | This property controls the toggle of the confirm button. |
+| *viewType* | string | Nee | | De `viewType` Deze eigenschap wordt gebruikt om de weergaven op te geven die u gebruikt om elementen weer te geven. |
+| *viewTypeOptions* | string | Nee | | Deze eigenschap is gerelateerd aan `viewType` eigenschap. u kunt een of meer weergaven opgeven om elementen weer te geven. Beschikbare viewTypeOptions zijn: Lijstweergave, Rasterweergave, Galerieweergave, Watervalweergave en Boomweergave. |
+| *itemNameFormatter* | string | Nee | | Met deze eigenschap kunt u de itemnaam opmaken |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |  | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen aangepaste gelokaliseerde waarden kunt doorgeven via de `i18nSymbols` prop. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Als u de overschrijving wilt uitvoeren, moet u een geldige waarde opgeven [Berichtbeschrijving](https://formatjs.io/docs/react-intl/api/#message-descriptor) naar de toets van `i18nSymbols` die u wilt overschrijven. |
-| *inlineAlertSetup* | string | Nee |  | Er wordt een waarschuwingsbericht toegevoegd dat u in de toepassing wilt doorgeven. U kunt bijvoorbeeld een waarschuwingsbericht toevoegen dat u geen toestemming hebt om deze map te openen. |
-| *intl* | Object | Nee |  | Doelselectie biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige tekenreeks voor de landinstelling op te geven via het dialoogvenster `intl.locale` prop. Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> De landinstellingstekenreeksen die worden ondersteund, volgen de [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
+| *inlineAlertSetup* | string | Nee | | Er wordt een waarschuwingsbericht toegevoegd dat u in de toepassing wilt doorgeven. U kunt bijvoorbeeld een waarschuwingsbericht toevoegen dat u geen toestemming hebt om deze map te openen. |
+| *intl* | Object | Nee | | Doelselectie biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige tekenreeks voor de landinstelling op te geven via het dialoogvenster `intl.locale` prop. Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> De landinstellingstekenreeksen die worden ondersteund, volgen de [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
 
 ## Voorbeelden voor het gebruik van de eigenschappen van de doelkiezer {#usage-examples}
 

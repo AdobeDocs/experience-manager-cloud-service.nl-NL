@@ -2,7 +2,7 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2591'
 ht-degree: 1%
@@ -101,7 +101,7 @@ In cloudomgevingen kunnen ontwikkelaars logbestanden downloaden via Cloud Manage
 
 **Logniveau instellen**
 
-Om de logboekniveaus voor de milieu&#39;s van de Wolk te veranderen, zou de het Registreren van de Sling configuratie OSGI moeten worden gewijzigd, gevolgd door een volledige herplaatsing. Aangezien dit niet onmiddellijk is, ben voorzichtig om uitgebreide logboeken op productiemilieu&#39;s toe te laten die veel verkeer ontvangen. In de toekomst is het mogelijk dat er mechanismen zijn om het logniveau sneller te wijzigen.
+Om de logboekniveaus voor de milieu&#39;s van de Wolk te veranderen, zou de het Registreren van de Sling configuratie OSGI moeten worden gewijzigd, gevolgd door een volledige herplaatsing. Omdat dit niet onmiddellijk is, ben voorzichtig over het toelaten van breedband logboeken op productiemilieu&#39;s die veel verkeer ontvangen. In de toekomst is het mogelijk dat er mechanismen zijn om het logniveau sneller te wijzigen.
 
 >[!NOTE]
 >

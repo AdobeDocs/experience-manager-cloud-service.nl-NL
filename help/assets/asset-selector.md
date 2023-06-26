@@ -4,9 +4,9 @@ description: Gebruik de functie Asset Selector om de metagegevens en vertoningen
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2363'
 ht-degree: 0%
 
 ---
@@ -208,7 +208,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 ### ImsAuthService {#ims-auth-service}
 
-`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager (AEM) CS Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you're using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
+`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager (AEM) CS Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
 
 | Function Name | Description |
 |---|---|
@@ -223,7 +223,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 In dit voorbeeld wordt getoond hoe u Asset Selector kunt gebruiken met een niet-SUSI-stroom wanneer u een [!DNL Adobe] toepassing onder Verenigde Shell of wanneer u reeds hebt `imsToken` gegenereerd voor verificatie.
 
-Neem het pakket Asset Selector in uw code op met het `script` tag, zoals weergegeven in _lijnen 6 tot en met 15_ van het onderstaande voorbeeld. Wanneer het script is geladen, wordt het `PureJSSelectors` algemene variabele is beschikbaar voor gebruik. De middelenkiezer definiëren [eigenschappen](#asset-selector-properties) zoals getoond in _lijnen 16 tot en met 23_. De `imsOrg` en `imsToken` beide eigenschappen zijn vereist voor verificatie in niet-SUSI-stroom. De `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Als u de Asset Selector wilt renderen, roept u de `renderAssetSelector` functie als vermeld in _lijn 17_. De Asset Selector wordt weergegeven in het dialoogvenster `<div>` containerelement, zoals getoond in _lijnen 21 en 22_.
+Neem het pakket Asset Selector in uw code op met het `script` tag, zoals weergegeven in _lijnen 6-15_ van het onderstaande voorbeeld. Wanneer het script is geladen, wordt het `PureJSSelectors` algemene variabele is beschikbaar voor gebruik. De middelenkiezer definiëren [eigenschappen](#asset-selector-properties) zoals getoond in _lijnen 16-23_. De `imsOrg` en `imsToken` beide eigenschappen zijn vereist voor verificatie in niet-SUSI-stroom. De `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Als u de Asset Selector wilt renderen, roept u de `renderAssetSelector` functie als vermeld in _lijn 17_. De Asset Selector wordt weergegeven in het dialoogvenster `<div>` containerelement, zoals getoond in _lijnen 21 en 22_.
 
 Als u deze stappen uitvoert, kunt u Asset Selector gebruiken met een niet-SUSI-stroom in uw [!DNL Adobe] toepassing.
 
@@ -361,7 +361,7 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | Eigenschap | Type | Vereist | Standaard | Beschrijving |
 |---|---|---|---|---|
 | *spoor* | boolean | Nee | false | Indien gemarkeerd `true`, Asset Selector wordt weergegeven in een linkerspoorweergave. Als het is gemarkeerd `false`, wordt de Asset Selector weergegeven in de modale weergave. |
-| *imsOrg* | string | Ja | | Adobe Identity Management System-id (IMS) die tijdens de provisioning is toegewezen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] voor uw organisatie. De `imsOrg` is vereist om te verifiëren of de organisatie waartoe u toegang hebt onder Adobe IMS valt of niet. |
+| *imsOrg* | string | Ja | | Adobe Identity Management System-id (IMS) die tijdens de provisioning is toegewezen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] voor uw organisatie. De `imsOrg` is vereist om te controleren of de organisatie waartoe u toegang hebt, onder Adobe IMS valt of niet. |
 | *imsToken* | string | Nee | | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is vereist als u de niet-SUSI flow gebruikt. |
 | *apiKey* | string | Nee | | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is vereist als u de niet-SUSI flow gebruikt. |
 | *rootPath* | string | Nee | /content/dam/ | Mappad waaruit de middelen worden weergegeven door de Asset Selector. `rootPath` kan ook in de vorm van inkapseling worden gebruikt. Voorbeeld: `/content/dam/marketing/subfolder/`Met Asset Selector kunt u niet door een bovenliggende map bladeren, maar alleen de onderliggende mappen weergeven. |

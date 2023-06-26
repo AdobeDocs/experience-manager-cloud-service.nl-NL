@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2868'
+source-wordcount: '2869'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Ga als volgt te werk om een standaard verwerkingsprofiel te maken:
 
 1. Toegang voor beheerders **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Klik op **[!UICONTROL Create]**.
 1. Geef een naam op waarmee u het profiel op unieke wijze kunt identificeren wanneer u het toepast op een map.
-1. Als u FPO-uitvoeringen wilt genereren, klikt u op de knop **[!UICONTROL Image]** tab, enable **[!UICONTROL Create FPO Rendition]**. Invoer een **[!UICONTROL Quality]** waarde tussen 1 en 100.
+1. Als u FPO-uitvoeringen wilt genereren, klikt u op de knop **[!UICONTROL Image]** tab, enable **[!UICONTROL Create FPO Rendition]**. Invoer een **[!UICONTROL Quality]** waarde van 1-100.
 1. Als u andere vertoningen wilt genereren, klikt u op **[!UICONTROL Add New]** en verstrekt de volgende informatie:
 
    * Bestandsnaam van elke vertoning.
@@ -101,7 +101,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Aangepast profiel en gebruik hoofdletters en kleine letters {#custom-config}
 
-De [!DNL Asset Compute Service] ondersteunt een groot aantal gebruiksgevallen, zoals standaardverwerking, het verwerken van Adobe-specifieke indelingen zoals Photoshop-bestanden en het implementeren van aangepaste of organisatie-specifieke verwerking. De in het verleden vereiste aanpassing van de DAM-updateworkflow voor middelen wordt automatisch of via de configuratie van verwerkingsprofielen afgehandeld. Als de bedrijfsbehoeften niet door deze verwerkingsopties worden vervuld, raadt Adobe aan om te ontwikkelen en te gebruiken [!DNL Asset Compute Service] om de standaardmogelijkheden uit te breiden. Voor een overzicht raadpleegt u [begrijpelijkheid van uitbreidbaarheid en wanneer deze wordt gebruikt](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
+De [!DNL Asset Compute Service] ondersteunt een groot aantal gebruiksgevallen, zoals standaardverwerking, het verwerken van Adobe-specifieke indelingen zoals Photoshop-bestanden en het implementeren van aangepaste of organisatie-specifieke verwerking. De in het verleden vereiste aanpassing van de DAM-updateworkflow voor middelen wordt automatisch verwerkt of als configuratie van verwerkingsprofielen. Als de bedrijfsbehoeften niet door deze verwerkingsopties worden vervuld, raadt Adobe aan om te ontwikkelen en te gebruiken [!DNL Asset Compute Service] om de standaardmogelijkheden uit te breiden. Voor een overzicht raadpleegt u [begrijpelijkheid van uitbreidbaarheid en wanneer deze wordt gebruikt](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ Voer de stappen uit die in [een workflowmodel toepassen op een map](#apply-workf
 
 ## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
-* Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen veel opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u ofwel [!DNL Experience Manager] om specifieke vertoningen te verwijderen of de activa te schrappen en die opnieuw te uploaden.
+* Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen grote hoeveelheden opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u ofwel [!DNL Experience Manager] om specifieke vertoningen te verwijderen of de activa te schrappen en die opnieuw te uploaden.
 * Momenteel is de ondersteuning beperkt tot het genereren van uitvoeringen. Het genereren van nieuwe elementen wordt niet ondersteund.
 * De maximale bestandsgrootte voor het uitnemen van metagegevens is momenteel ongeveer 15 GB. Wanneer u zeer grote elementen uploadt, mislukt het uitnemen van metagegevens soms.
 

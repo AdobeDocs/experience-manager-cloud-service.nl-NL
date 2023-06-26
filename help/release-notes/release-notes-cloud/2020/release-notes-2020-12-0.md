@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2020.12.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2020.12.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2020.12.0 is 10 dec
 
 ### Nieuwe functies in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Beheer van zelfbediening [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Zelfbediening [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Beheer van zelfbediening [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Zelfbediening [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * Bijgewerkt **Omgeving** De detailspagina staat nu gebruikers toe om de Namen van het Domein van de Douane en IP Lijsten van gewenste personen op hun milieu&#39;s te beheren.
 

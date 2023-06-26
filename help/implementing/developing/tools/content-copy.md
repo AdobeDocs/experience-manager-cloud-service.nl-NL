@@ -2,9 +2,9 @@
 title: Het gereedschap Inhoud kopiëren
 description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van hun AEM as a Cloud Service productieomgeving naar lagere omgevingen voor testdoeleinden.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Als
    1. Voer het pad in het dialoogvenster **Inclusief pad toevoegen** veld.
    1. Tik of klik op de knop **Pad toevoegen** om het pad aan de inhoudenset toe te voegen.
    1. Tik of klik op de knop **Pad toevoegen** nogmaals indien nodig.
-      * Er zijn maximaal vijftig paden toegestaan.
+      * Er zijn maximaal 50 paden toegestaan.
 
    ![Paden toevoegen aan inhoudsset](assets/add-content-set-paths.png)
 
@@ -183,7 +183,7 @@ Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen.
 * Inhoud kan alleen van en naar ontwerpservices worden gekopieerd.
 * Kopiëren van inhoud tussen programma&#39;s is niet mogelijk.
 * Het uitvoeren van gelijktijdige bewerkingen voor het kopiëren van inhoud in dezelfde omgeving is niet mogelijk.
-* Per inhoudenset kunnen maximaal vijftig paden worden opgegeven. Uitgesloten paden zijn niet beperkt.
+* Per inhoudenset kunnen maximaal 50 paden worden opgegeven. Uitgesloten paden zijn niet beperkt.
 * Het gereedschap voor het kopiëren van inhoud mag niet worden gebruikt als een kloon- of spiegelgereedschap omdat het geen verplaatste of verwijderde inhoud van de bron kan bijhouden.
 * Het gereedschap voor het kopiëren van inhoud heeft geen versiemogelijkheid en kan niet automatisch gewijzigde inhoud of nieuw gemaakte inhoud detecteren in de bronomgeving in een inhoudenset sinds de laatste bewerking voor het kopiëren van inhoud.
    * Als u de doelomgeving pas wilt bijwerken nadat de inhoud voor het laatst is gekopieerd, moet u een inhoudsset maken en de paden opgeven in de broninstantie waar wijzigingen zijn aangebracht sinds de laatste bewerking voor het kopiëren van inhoud.

@@ -2,9 +2,9 @@
 title: Sneltoetsen voor paginabewerking
 description: In AEM zijn verschillende sneltoetsen beschikbaar, waaronder enkele voor paginabewerking
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,8 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
 | **Bewerken** mode | `Ctrl-z` | [Laatste wijziging ongedaan maken](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Laatste wijziging opnieuw](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Meerdere alinea&#39;s selecteren |
-|  | `Ctrl-c` | Geselecteerde alinea(&#39;s) kopiëren |
-|  | `Ctrl-x` | Geselecteerde alinea(&#39;s) knippen (alinea&#39;s knippen verdwijnt pas in de gebruikersinterface als deze worden geplakt) |
+|  | `Ctrl-c` | Geselecteerde alinea&#39;s kopiëren |
+|  | `Ctrl-x` | Geselecteerde alinea&#39;s knippen (verwijderde alinea&#39;s verdwijnen pas in de gebruikersinterface als deze wordt geplakt) |
 |  | `Ctrl-v` | Eerder geknipte of gekopieerde alinea&#39;s plakken |
 |  | `Ctrl-Backspace` | Geselecteerde alinea(&#39;s) verwijderen |
 | **Bewerken** modus - RTF-editor | `Ctrl-b` | Vet |

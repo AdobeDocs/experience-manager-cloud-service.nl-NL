@@ -3,9 +3,9 @@ title: Configureer de Rich Text Editor naar de auteur van inhoud in [!DNL Adobe 
 description: Rich Text Editor configureren voor het schrijven van inhoud in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1875'
 ht-degree: 0%
 
 ---
@@ -282,4 +282,3 @@ Hieronder ziet u een voorbeeldfragment voor het toewijzen van de opdracht `Bold`
 >* [RTE-plug-ins configureren](configure-rich-text-editor-plug-ins.md)
 >* [Rich Text Editor gebruiken voor ontwerpen](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [RTE voor toegankelijke sites configureren](rte-accessible-content.md)
-

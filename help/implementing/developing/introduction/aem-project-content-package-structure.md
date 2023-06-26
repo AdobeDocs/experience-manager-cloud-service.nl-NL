@@ -2,7 +2,7 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 11%
@@ -223,7 +223,7 @@ Als u AEM auteur als doel wilt instellen, AEM publiceren of beide, wordt het pak
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
-Deze mappenstructuur omlaag splitsen:
+Deze mapstructuur indelen:
 
 + De map op het eerste niveau **moet** `/apps`.
 + De map op het tweede niveau vertegenwoordigt de toepassing met `-packages` gepost-fixed aan de omslagnaam. Vaak is er slechts één map op het tweede niveau waarin alle subpakketten zijn ingesloten. Elk aantal mappen op het tweede niveau kan echter zo worden gemaakt dat dit de logische structuur van de toepassing het best weerspiegelt:

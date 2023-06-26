@@ -2,9 +2,9 @@
 title: Hoofdletters en headless in AEM
 description: AEM projecten kunnen worden uitgevoerd in een krachtig en zonder kop model, maar de keuze is niet binair. AEM biedt de flexibiliteit om de voordelen van beide modellen in één project te benutten.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ In de volgende sectie worden deze integratieniveaus nader beschreven.
 
 >[!NOTE]
 >
->Natuurlijk kunt u de SPA van de webshop ook opnieuw implementeren als een volledig functionerende AEM SPA [het AEM SPA Editor-framework gebruiken.](/help/implementing/developing/hybrid/introduction.md) Als u al een nieuwe webshop of andere SPA hebt AEM en wilt maken, is dit de aanbevolen methode, maar valt deze buiten het bereik van dit document.
+>Natuurlijk kunt u ook de SPA van de webshop opnieuw implementeren als een volledig functionerende AEM SPA [het AEM SPA Editor-framework gebruiken.](/help/implementing/developing/hybrid/introduction.md) Als u al een nieuwe webshop of andere SPA hebt AEM en wilt maken, is dit de aanbevolen methode, maar valt deze buiten het bereik van dit document.
 
 ## SPA integratieniveaus {#integration-levels}
 

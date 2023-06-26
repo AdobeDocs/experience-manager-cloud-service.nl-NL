@@ -2,7 +2,7 @@
 title: Rechts personen, juiste rollen
 description: Rechts personen, juiste rollen
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 0%
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 Het is mogelijk dat in uw organisatie verschillende afdelingen verschillende aspecten van de digitale ervaring hebben. Zonder governance is het stadium van eindeloze discussie, strijd en verwarring.
 
-Digitaal bestuur begint met het uitzoeken wie verantwoordelijk is voor wat en wie digitaal gerichte taken uitvoert. Mogelijk moet u een aantal strategische aannemers maken om de benodigde vaardigheden toe te voegen. Een nog grotere uitdaging is het aansturen van een cultuurverschuiving — het opbouwen van brede steun voor de nieuwe technologie en het helpen van mensen om gewend te raken aan nieuwe manieren om dingen te doen. Een belangrijk onderdeel van die inspanning is het creëren van een digitale gemeenschap, die mensen van elkaar laat leren en steunen.
+Digitaal bestuur begint met uitzoeken wie verantwoordelijk is voor wat en wie die digitaal gerichte baan doet. Mogelijk moet u een aantal strategische aannemers maken om de benodigde vaardigheden toe te voegen. Een nog grotere uitdaging is het aansturen van een cultuurverschuiving — het opbouwen van brede steun voor de nieuwe technologie en het helpen van mensen om gewend te raken aan nieuwe manieren om dingen te doen. Een belangrijk onderdeel van die inspanning is het creëren van een digitale gemeenschap, die mensen van elkaar laat leren en steunen.
 
-We zullen ons momenteel concentreren op het plaatsen van de juiste mensen in de juiste taken om uw Adobe Experience Manager-implementatie te helpen sturen. Voor elk basisproduct — Experience Manager Sites en Experience Manager Assets — hebben we een lijst met rollen beschikbaar gesteld die u moet vervullen, samen met de vaardigheden, expertiseniveaus en kenmerken die mensen effectief maken in de verschillende rollen.
+Voorlopig zullen we ons richten op het plaatsen van de juiste mensen in de juiste banen om uw Adobe Experience Manager-implementatie te helpen stimuleren. Voor elk kernproduct — Experience Manager Sites en Experience Manager Assets — hebben we een lijst met rollen beschikbaar gesteld die u moet vervullen, samen met de vaardigheden, expertiseniveaus en kenmerken die mensen effectief maken in de verschillende rollen.
 
 Uw taak deze week is om beide lijsten met uw implementatieteam te evalueren en ervoor te zorgen dat u in elke rol personen met relevante kwalificaties hebt.
 
@@ -54,7 +54,7 @@ Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wa
 
 Van architect tot ScrumMaster, elke rol in dit team is onmisbaar — inclusief de DAM-bibliotheek.
 
-Mogelijk hebt u al de meeste mensen die u nodig hebt om een geslaagde Adobe Experience Manager Assets-implementatie uit te voeren. Deze lijst is vergelijkbaar met die voor Adobe Experience Manager Sites, met één belangrijke toevoeging: u hebt een bibliothecaris nodig om ervoor te zorgen dat uw digitale elementen op een zodanige manier zijn geordend en gelabeld dat ze gemakkelijk te vinden zijn.
+Mogelijk hebt u al de meeste mensen die u nodig hebt om een geslaagde Adobe Experience Manager Assets-implementatie uit te voeren. Deze lijst is vergelijkbaar met die voor Adobe Experience Manager Sites, met één belangrijke toevoeging: u hebt een bibliothecaris nodig om ervoor te zorgen dat uw digitale middelen op een manier worden georganiseerd en geëtiketteerd die hen gemakkelijk maken te vinden.
 
 | Rol | Vaardigheden | Capaciteitsniveau | Kwaliteit |
 |--- |--- |--- |--- |

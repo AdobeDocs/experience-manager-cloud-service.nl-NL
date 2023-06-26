@@ -2,9 +2,9 @@
 title: Kleurlabels voor afbeeldingen
 description: Met Experience Manager Assets kunt u onderscheid maken tussen kleuren in een afbeelding en deze automatisch als tags toepassen. Vervolgens kunt u deze tags gebruiken om afbeeldingen te zoeken en te filteren.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1119'
 ht-degree: 2%
 
 ---
@@ -44,13 +44,13 @@ De eigenschappen voor kleurlabels voor afbeeldingen beheren:
 
 1. Geef het aantal kleuren op dat u wilt labelen voor de afbeeldingen in het dialoogvenster **[!UICONTROL Limit]** veld. Deze kleuren worden weergegeven wanneer u de eigenschappen van een afbeelding bekijkt.  U kunt een getal tussen 1 en 40 definiëren in dit veld. De standaardwaarde voor dit veld is tien kleuren.
 
-1. Geef het minimale percentage voor kleurdekking op om een kleurcode op te nemen in de zoekresultaten in het dialoogvenster **[!UICONTROL Coverage/Dominance Threshold %]** veld. Als de dekking van de rode kleur in een afbeelding bijvoorbeeld tien procent is en u in dit veld negen procent definieert, wordt de afbeelding opgenomen wanneer u naar afbeeldingen met rode kleur zoekt. Als de dekking van de rode kleur in een afbeelding echter tien procent is en u in dit veld elf procent definieert, wordt de afbeelding niet opgenomen wanneer u naar afbeeldingen met rode kleur zoekt.
+1. Geef het minimale percentage voor kleurdekking op om een kleurcode op te nemen in de zoekresultaten in het dialoogvenster **[!UICONTROL Coverage/Dominance Threshold %]** veld. Als de dekking van de rode kleur in een afbeelding bijvoorbeeld tien procent is en u in dit veld negen procent definieert, wordt de afbeelding opgenomen wanneer u naar afbeeldingen met rode kleur zoekt. Als de dekking van de rode kleur in een afbeelding echter tien procent is en u in dit veld 11 procent definieert, wordt de afbeelding niet opgenomen wanneer u naar afbeeldingen met rode kleur zoekt.
 
-   U kunt een willekeurig getal tussen vijf en honderd opgeven in dit veld. De standaardwaarde is elf.
+   U kunt een willekeurig getal tussen vijf en honderd opgeven in dit veld. De standaardwaarde is 11.
 
    >[!NOTE]
    >
-   >Adobe raadt u aan een waarde te gebruiken die de standaardwaarde in dit veld benadert. Als u een hoge getalwaarde instelt voor dit veld (bijvoorbeeld hoger dan 25), worden mogelijk zeer weinig zoekresultaten geretourneerd. Als u een lage getalwaarde instelt (bijvoorbeeld lager dan 6), worden mogelijk te veel zoekresultaten geretourneerd. Dit is mogelijk niet nuttig.
+   >Adobe raadt u aan een waarde te gebruiken die dicht bij de standaardwaarde in dit veld ligt. Als u een hoge getalwaarde instelt voor dit veld (bijvoorbeeld hoger dan 25), worden mogelijk zeer weinig zoekresultaten geretourneerd. Als u een lage getalwaarde instelt (bijvoorbeeld lager dan 6), worden mogelijk te veel zoekresultaten geretourneerd. Dit is mogelijk niet nuttig.
 
 1. Klik op **[!UICONTROL Save]**.
 

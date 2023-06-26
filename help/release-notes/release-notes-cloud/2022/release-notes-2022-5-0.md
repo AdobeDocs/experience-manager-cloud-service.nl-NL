@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2022.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Bekijk de video Overzicht van de release van mei 2022 voor een overzicht van de 
 
 * [Dynamic Media Smart Imaging](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) biedt nu ondersteuning voor AVIF-bestandsindeling - verdere verbetering van Google Core Web Vital (Grootste voorwaardelijke verf), waarbij AVIF een extra reductie van 20% biedt ten opzichte van WebP. In totaal kan AVIF tot 41% reductie van gemiddelde grootte bieden in vergelijking met JPEG (in sommige afbeeldingen zelfs tot 76%).
 
-* [!UICONTROL Experience Manager Assets Brand Portal] Voert nu om de twaalf uur automatische taken uit om alle Brand Portal-middelen te verwijderen die naar AEM worden gepubliceerd. U hoeft daarom de middelen in de map Contribution niet handmatig te verwijderen om de mapgrootte onder de drempelwaarde te houden. Zie [Nieuwe functies in Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+* [!UICONTROL Experience Manager Assets Brand Portal] Voert nu elke 12 uur automatische taken uit om alle Brand Portal-middelen te verwijderen die naar AEM worden gepubliceerd. U hoeft daarom de middelen in de map Contribution niet handmatig te verwijderen om de mapgrootte onder de drempelwaarde te houden. Zie [Nieuwe functies in Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 ### Nieuwe functies beschikbaar in [!DNL Assets] prerelease-kanaal {#prerelease-features-assets}
 
@@ -91,7 +91,7 @@ Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [ond
 
 ### TLS 1.0, 1.1-afleiding
 
-Vanaf 30 juni 2022 is voor as a Cloud Service Experience Manager een veiligere netwerkcommunicatie en gegevensuitwisseling met gebruikerssystemen vereist. AEM zal uitsluitend de Veiligheid van de Laag van het Vervoer (TLS), 1.2 protocol gebruiken. Oudere TLS versies 1.0 en 1.1 zijn nu afgekeurd.
+Vanaf 30 juni 2022 vereist as a Cloud Service Experience Manager een veiligere netwerkcommunicatie en gegevensuitwisseling met gebruikerssystemen. AEM zal uitsluitend de Veiligheid van de Laag van het Vervoer (TLS), 1.2 protocol gebruiken. Oudere TLS versies 1.0 en 1.1 zijn nu afgekeurd.
 
 Als u oudere versies van TLS blijft gebruiken als 1.0 of 1.1, kan de toegang tot as a Cloud Service Experience Manager verloren gaan.
 

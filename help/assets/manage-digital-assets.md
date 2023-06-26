@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4219'
 ht-degree: 9%
 
 ---
@@ -66,7 +66,7 @@ De functie inschakelen:
 
 >[!NOTE]
 >
->Als u Duplicatiedetector hebt geconfigureerd met `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuratiedossier (configuratie OSGi), kunt u het blijven gebruiken, nochtans, adviseert Adobe om de nieuwe methode te gebruiken.
+>Als u Duplicatiedetector hebt geconfigureerd met `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuratiedossier (configuratie OSGi), kunt u het blijven gebruiken, nochtans, adviseert Adobe het gebruiken van de nieuwe methode.
 
 
 Zodra toegelaten, verzendt de Experience Manager berichten van dubbele activa naar Experience Manager Inbox. Het is een geaggregeerd resultaat voor meerdere duplicaten. Gebruikers kunnen de elementen op basis van de resultaten verwijderen.

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2848'
+source-wordcount: '2845'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Als u echter verschillende voorinstellingen voor afbeeldingen hebt in Dynamic Me
 ![Primaire bestandenbenadering](/help/assets/dynamic-media/assets/dm-onefile.png)
 _Best: één bestand met meerdere uitvoeringen die direct met behulp van voorinstellingen voor afbeeldingen zijn gemaakt, zoals `Search_Grid` en `Thumbnail`._
 
-| **Waarom voorinstellingen voor afbeeldingen gebruiken?** |  |
+| **Waarom voorinstellingen voor afbeeldingen gebruiken?** | |
 |---|---|
 | Normen | Met voorinstellingen voor afbeeldingen wordt een standaardbehandeling voor afbeeldingsverwerking toegepast op elke afbeelding waarmee de voorinstelling wordt gemaakt. |
 | Wijzigingsbeheer | Als u de afbeeldingsverwerking moet wijzigen, bewerkt u gewoon de parameter van de bestaande voorinstelling. De bijgewerkte definitie wordt automatisch doorgegeven aan alle aanvragen. |
@@ -199,7 +199,7 @@ Wanneer u de muisaanwijzer over de schoen beweegt, zoomt u in op die afbeelding 
 
 Als je denkt dat je als consument leeft, of als je je dagelijkse rol vervult, en als je naar verschillende websites gaat, zie je dit soort dingen. Denk na over hoe dat gebeurt en hoe je de kracht van Dynamic Media kunt gebruiken in je eigen werk en op de website van je bedrijf.
 
-U leest gewoon wat over sets afbeeldingen en viewers. Laten we naar een paar andere kijkers kijken en ze uitproberen op één manier. Als u de viewer opnieuw wilt instellen, klikt u op de knop **[!UICONTROL Refresh]** in de linkerbenedenhoek.
+U leest alleen over afbeeldingssets en viewers. Laten we naar een paar andere kijkers kijken en ze uitproberen op één manier. Als u de viewer opnieuw wilt instellen, klikt u op de knop **[!UICONTROL Refresh]** in de linkerbenedenhoek.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 

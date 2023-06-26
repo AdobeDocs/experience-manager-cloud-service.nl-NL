@@ -2,9 +2,9 @@
 title: AEM Referentie demos Add-on-reis
 description: Begin hier voor een geleide reis door hoe te om de AEM toe:voegen-aan van de Demo van de Verwijzing aan een zandbakmilieu met minimale AEM configuratie gemakkelijk toe te voegen en de krachtige eigenschappen van AEM met rijke voorbeelden te kunnen testen die op best-praktijken worden gebaseerd.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '853'
 ht-degree: 1%
 
 ---
@@ -19,10 +19,10 @@ AEM is een krachtig hulpmiddel voor het creëren en beheren van digitale ervarin
 
 Zonder steekproefinhoud en configuratie, kan het moeilijk zijn om de krachtige eigenschappen van AEM voor nieuwe en ervaren cliënten te testen. Met de AEM Reference Demos Add-On kunt u eenvoudig sandboxomgevingen maken die vooraf zijn geladen met voorbeeldinhoud en die vooraf zijn geconfigureerd met de nieuwste richtlijnen voor best practices voor Adobe. Met de add-on kunt u eenvoudig AEM Sites- en AEM Screens-functies evalueren in context en met vrijwel geen configuratie.
 
-* **Als u nog niet eerder hebt AEM**, is deze reis de eenvoudigste manier om in een echte, volledig functionerende AEM omgeving aan de slag te gaan met echte inhoud, zodat u de functionaliteit kunt testen en de mogelijkheden van AEM kunt leren kennen.
+* **Als u nog niet eerder hebt AEM**, na deze reis is de eenvoudigste manier om in een echte, volledig functionerende AEM omgeving aan de slag te gaan met echte inhoud, zodat u de functionaliteit kunt testen en de mogelijkheden van AEM kunt kennen.
 * **Als u een ervaren AEM gebruiker bent** Na deze reis is het de eenvoudigste manier om een aparte demomgeving op te zetten voor testdoeleinden of om een concepttest te maken met behulp van nieuwe functionaliteit.
 
-Wat u ook nodig hebt, als u een AEM omgeving nodig hebt die gevuld is met realistische, volledig functionerende, voorbeeldinhoud, kunt u een sandbox instellen met de AEM Demo Add-On van de Referentie. Lezen!
+Wat u ook nodig hebt, als u een AEM nodig hebt die gevuld is met realistische, volledig functionerende voorbeeldinhoud, is het instellen van een sandbox met de AEM Demo Add-On van de Referentie voor u. Lezen!
 
 ## AEM Documentenreizen {#documentation-journeys}
 

@@ -2,7 +2,7 @@
 title: Uw inhoud modelleren
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw inhoud voor AEM levering zonder kop kunt modelleren met behulp van Content Modeling with Content Fragment Models and Content Fragments.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u hoe te om uw eig
 
 *Het is een grote, slechte wereld daar*.
 
-Misschien niet, maar het is zeker een grote ***ingewikkeld*** en datamodellering wordt gebruikt om een vereenvoudigde weergave van een zeer (zeer) kleine subsectie te definiëren, met gebruikmaking van de specifieke informatie die voor een bepaald doel nodig is.
+Misschien, maar misschien niet. Het is zeker een ***ingewikkeld*** en datamodellering wordt gebruikt om een vereenvoudigde weergave van een zeer (zeer) kleine subsectie te definiëren, met gebruikmaking van de specifieke informatie die voor een bepaald doel nodig is.
 
 >[!NOTE]
 >

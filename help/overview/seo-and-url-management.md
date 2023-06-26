@@ -2,7 +2,7 @@
 title: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 description: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '3709'
 ht-degree: 54%
@@ -349,7 +349,7 @@ Disallow: /
 
 In een liveomgeving kunt u ervoor kiezen om bepaalde paden die u niet wilt indexeren, niet toe te staan.
 
-Het caveat met het plaatsen van `robots.txt` bestand in de hoofdmap van de site is dat aanvragen voor het leegmaken van de Dispatcher dit bestand kunnen wissen en dat URL-toewijzingen waarschijnlijk de hoofdmap van de site anders plaatsen dan `DOCROOT` zoals gedefinieerd in de configuratie van Apache HTTP Server. Daarom is het gebruikelijk om dit bestand op de auteurinstantie in de hoofdmap van de site te plaatsen en het te repliceren naar de publicatie-instantie.
+Het caveat met het plaatsen van `robots.txt` Het bestand in de hoofdmap van de site is dat aanvragen voor het leegmaken van de Dispatcher dit bestand kunnen wissen en dat URL-toewijzingen waarschijnlijk de hoofdmap van de site anders plaatsen dan `DOCROOT` zoals gedefinieerd in de configuratie van Apache HTTP Server. Daarom is het gebruikelijk om dit bestand op de auteurinstantie in de hoofdmap van de site te plaatsen en het te repliceren naar de publicatie-instantie.
 
 ### Een XML-sitemap maken op AEM {#building-an-xml-sitemap-on-aem}
 

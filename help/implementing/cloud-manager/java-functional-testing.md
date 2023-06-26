@@ -2,9 +2,9 @@
 title: Functionele Java-tests
 description: Leer hoe u functioneel Java-tests schrijft voor AEM as a Cloud Service
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Nadat u een nieuwe gegevensopslagruimte voor code hebt gemaakt in Cloud Manager,
 
 >[!NOTE]
 >
->Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de meest recente versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
 Wanneer u de inhoud van de `it.tests` kunt u de map gebruiken als basis voor uw eigen tests en vervolgens:
 
@@ -105,7 +105,7 @@ Raadpleeg de [`aem-testing-clients` GitHub-repo](https://github.com/adobe/aem-te
 | CPU | 0.5 | Hoeveelheid CPU-tijd gereserveerd per testuitvoering |
 | Geheugen | 0.5Gi | Hoeveelheid geheugen dat aan de test is toegewezen, waarde in bytes |
 | Time-out | 30m | De duur waarna de test wordt beëindigd. |
-| Aanbevolen duur | 15m | Wij adviseren om de tests te schrijven om niet langer dan deze tijd te nemen. |
+| Aanbevolen duur | 15m | Adobe raadt aan de tests te schrijven om deze tijd niet langer te laten duren. |
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ De systeemeigenschappen zijn als volgt.
 
 | Eigenschap | Beschrijving | Voorbeeld |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | aantal instanties, zodat deze overeenkomen met de cloudservice, moet worden ingesteld op `2` | `2` |
+| `sling.it.instances` | aantal instanties dat moet worden ingesteld op `2` | `2` |
 | `sling.it.instance.url.1` | moet worden ingesteld op de URL van de auteur | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | de runmode van de eerste instantie moet worden ingesteld op `author` | `author` |
 | `sling.it.instance.adminUser.1` | moet worden ingesteld op de scriptgebruiker. | `admin` |

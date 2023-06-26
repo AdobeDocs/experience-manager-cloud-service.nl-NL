@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2411'
 ht-degree: 4%
 
 ---
@@ -51,8 +51,8 @@ U kunt de volgende typen elementen labelen:
 | image/x-portable-graymap | SRT |  |
 | image/x-portable-pixmap | TXT |  |
 | image/x-rgb | VTT |  |
-| image/x-xbitmap |  |  |
-| image/x-xpixmap |  |  |
+| image/x-xbitmap | |  |
+| image/x-xpixmap | |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -82,7 +82,7 @@ Zorg ervoor dat de afbeeldingen in de trainingsset voldoen aan de volgende richt
 
 ![Illustratieve afbeeldingen ter illustratie van de richtlijnen voor training](assets/do-not-localize/coherence.png)
 
-**Dekking**: De beelden in de training moeten voldoende uiteenlopend zijn. Het is de bedoeling om een paar maar redelijk uiteenlopende voorbeelden te geven, zodat [!DNL Experience Manager] leert u te focussen op de juiste zaken . Als u dezelfde tag toepast op visueel verschillende afbeeldingen, moet u ten minste vijf voorbeelden van elke soort opnemen. Bijvoorbeeld voor de tag *model-down-pose* neemt u meer trainingsafbeeldingen op die lijken op de gemarkeerde afbeelding hieronder, zodat u vergelijkbare afbeeldingen tijdens het labelen nauwkeuriger kunt identificeren.
+**Dekking**: De beelden in de training moeten voldoende uiteenlopend zijn. Het is de bedoeling om een paar maar redelijk uiteenlopende voorbeelden te geven, zodat [!DNL Experience Manager] leert u te focussen op de juiste zaken . Als u dezelfde tag toepast op visueel ongelijke afbeeldingen, moet u ten minste vijf voorbeelden van elke soort opnemen. Bijvoorbeeld voor de tag *model-down-pose* neemt u meer trainingsafbeeldingen op die lijken op de gemarkeerde afbeelding hieronder, zodat u vergelijkbare afbeeldingen tijdens het labelen nauwkeuriger kunt identificeren.
 
 ![Illustratieve afbeeldingen ter illustratie van de richtlijnen voor training](assets/do-not-localize/coverage_1.png)
 
@@ -277,4 +277,3 @@ Als u bestanden met slimme tags wilt zoeken (normaal of verbeterd), gebruikt u d
 >
 >* [Begrijp hoe slimme tags helpen uw digitale bestanden te beheren](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [Slimme tags gebruiken voor video&#39;s](smart-tags-video-assets.md)
-

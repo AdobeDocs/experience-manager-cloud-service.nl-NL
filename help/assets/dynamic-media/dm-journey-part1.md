@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 803c4dc44189d58ddbd2669b00dd8107b2a926ae
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3705'
+source-wordcount: '3706'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Dynamic Media integreert de workflows van de oplossing voor het beheer van digit
 
 Een van de belangrijkste punten die we moeten begrijpen over Dynamic Media is het concept _Eén primair elementbestand met eindeloze mogelijkheden_.
 
-Om dit concept beter te begrijpen, denk over de manier u traditioneel met één enkel middel, zoals een beeld of een video werkt. Meestal maakt u één primair middel. Vervolgens maakt u handmatig versies van hetzelfde element voor elke ervaring, elk apparaat dat nodig is, elke webpagina en elke eigenschap waar het wordt gebruikt. Met tijd, kan dat enige middel tot 20, 30, of meer versies groeien, zonder versiegeschiedenis in bijlage aan hen. Stel je voor dat je dat doet voor elk beeld of elke video die je hebt. Het aantal versies van middelen zou snel overweldigend worden om te onderhouden en bij te werken, om nog maar te zwijgen van de stijging van opslagkosten.
+Om dit concept beter te begrijpen, denk over de manier u traditioneel met één enkel middel, zoals een beeld of een video werkt. Meestal maakt u één primair middel. Vervolgens maakt u handmatig versies van hetzelfde element voor elke ervaring, elk apparaat dat nodig is, elke webpagina en elke eigenschap waar het wordt gebruikt. Met tijd, kan dat enige middel tot 20 groeien, 30, of meer versies, zonder versiegeschiedenis in bijlage aan hen. Stel je voor dat je dat doet voor elk beeld of elke video die je hebt. Het aantal versies van middelen zou snel overweldigend worden om te onderhouden en bij te werken, om nog maar te zwijgen van de stijging van opslagkosten.
 
 Dynamic Media is echter fundamenteel anders dan andere systemen omdat u het gebruikt om uw media te leveren _dynamisch_ van enkele, primaire elementen en van URL-aanroepen. De Dynamic Media URL-paden die u aanvraagt, bevatten instructies die de publicatieserver van de Adobe vertellen hoe het element moet worden weergegeven wanneer het op het scherm van de klant wordt weergegeven. Als u bijvoorbeeld hetzelfde primaire element gebruikt, kunt u het onmiddellijk in onbeperkte uitvoeringen laten leveren, waarbij de grootte, indeling, resolutie, gewicht, kleur, uitsnijden en effecten zoals een zoomweergave worden gewijzigd.
 
@@ -102,7 +102,7 @@ Maar als u meer waarde aan Dynamic Media wilt toevoegen dan voorinstellingen voo
 
 Smart Imaging biedt nog betere prestaties bij het leveren van afbeeldingselementen door de indeling en bestandsgrootte van een afbeelding automatisch te optimaliseren op basis van de browsermogelijkheden van de klant. Het werkt met uw bestaande voorinstellingen voor afbeeldingen (voorinstellingen voor afbeeldingen worden besproken in deel II van deze reis) en gebruikt intelligentie bij levering.
 
-Deze intelligentie vermindert verder de grootte van het beelddossier die op browser en de snelheid van de netwerkverbinding wordt gebaseerd. Omdat de beeldactiva het grootste deel van de ladingstijd van een pagina uitmaken, kan de prestatiesverbetering een grondige invloed op zeer belangrijke bedrijfsindicatoren, zoals hebben:
+Deze intelligentie vermindert verder de grootte van het beelddossier die op browser en de snelheid van de netwerkverbinding wordt gebaseerd. Omdat imageelementen het grootste deel van de laadtijd van een pagina uitmaken, kan de prestatieverbetering een grondige invloed hebben op belangrijke bedrijfsindicatoren, zoals:
 
 * Hogere conversie
 * Tijd doorgebracht op de locatie
@@ -128,7 +128,7 @@ U begint met uw originele, primaire video, die u in het systeem uploadt. Dynamic
 
 Op een mobiel iOS-apparaat wordt bijvoorbeeld een bandbreedte zoals 4G, 5G of Wi-Fi gedetecteerd. Vervolgens wordt automatisch de naar rechts gecodeerde video geselecteerd bij de verschillende bitsnelheden van de video in de adaptieve videoset. De video wordt gestreamd naar mobiele apparaten, tablets of desktopcomputers.
 
-Bovendien wordt de videokwaliteit dynamisch geschakeld automatisch als de netwerkvoorwaarden veranderen. En als een klant de modus Volledig scherm op een desktopcomputer inschakelt, reageert de Adaptive Video Set met een betere resolutie, waardoor de kijkervaring van de klant verbetert.
+Bovendien wordt de videokwaliteit dynamisch geschakeld automatisch als de netwerkvoorwaarden veranderen. En als een klant in de modus Volledig scherm op een desktopcomputer komt, reageert de Adaptive Video Set met een betere resolutie, waardoor de kijkervaring van de klant wordt verbeterd.
 
 Het gebruik van Adaptieve videosets zorgt voor een vloeiende, hoogwaardige weergave voor klanten die Dynamic Media-video op meerdere schermen en apparaten afspelen. Het neemt de complexiteit van video echt weg.
 
@@ -157,9 +157,9 @@ Laten we nader kijken naar de problemen die Dynamic Media oplost met het ene bes
 | Maak elk element en sla dit op. | Gebruik één afbeeldingsbestand, waarbij de vereiste uitvoeringen alleen automatisch worden gemaakt op het moment van levering. |
 | Hoge opslagkosten. | Hiermee voorkomt u dat meerdere kopieën van een element moeten worden gemaakt en opgeslagen. |
 | Moeilijkheden om de voogdijketen in stand te houden. | Garandeert de levering van apparaat-geoptimaliseerde en verenigbare ervaringen. |
-| Geen versiegeschiedenis. |  |
-| Inconsistente merkervaringen op verschillende apparaten. |  |
-| Onnodige kosten voor het maken van dubbele elementen. |  |
+| Geen versiegeschiedenis. | |
+| Inconsistente merkervaringen op verschillende apparaten. | |
+| Onnodige kosten voor het maken van dubbele elementen. | |
 
 Wanneer u aan één dossier denkt, creeert u activa voor elke soort ervaring. U hebt misschien één beginafbeelding, en dan moet u 20, 30 of 40 variaties van die afbeelding maken, die u uiteindelijk moet opslaan en betalen voor die opslag.
 
@@ -178,11 +178,11 @@ Een ander gebruiksgeval waarvoor Dynamic Media oplost is video. Video is complex
 | Moeilijk om video te beheren en te leveren die voor diverse apparaten wordt geoptimaliseerd. | Gebruik één video waarvan de grootte automatisch voor alle apparaten wordt aangepast. |
 | Video&#39;s worden vastgezet of worden afgespeeld met een lage kwaliteit vanwege de beschikbare bandbreedte van de eindgebruiker. | Lever video via een HTML-speler die de beschikbare bandbreedte automatisch detecteert en de kwaliteit aanpast om een hoge kwaliteit en een vloeiende weergave te garanderen. |
 | Onuitvoerbaar en tijdrovend om alle versies van een video handmatig te maken, alleen voor een goede weergave en weergave op verschillende apparaten. | Elimineer de uren van vervelende transcoderingswerk met een vereenvoudigde werkstroom. |
-|  | Maak tijd vrij voor werk van hogere waarde. |
+| | Maak tijd vrij voor werk van hogere waarde. |
 
 Klanten komen naar Dynamic Media met het volgende probleem dat ze hopen op te lossen:
 
-&quot;_We hebben de video en we hebben er veel geld aan besteed. Maar we hebben het afgeschermd van het plaatsen op pagina&#39;s, of het leveren, want door onze tests kunnen we de kwaliteit van de video echt niet garanderen, of als het echt gaat spelen. En uiteindelijk beïnvloedt dat onze merken en mogelijk onze rol voor zelfs conversie._&quot;
+&quot;_We hebben de video, en we hebben er veel geld aan besteed. Maar we hebben het afgeschermd van het plaatsen op pagina&#39;s, of het leveren, want door onze tests kunnen we de kwaliteit van de video echt niet garanderen, of als het echt gaat spelen. En uiteindelijk beïnvloedt dat onze merken en mogelijk onze rol voor zelfs conversie._&quot;
 
 Dynamic Media&#39;s oplossing is dat één primair videobestand wordt gebruikt en dat Dynamic Media alle grootten door het transcoderingsproces laat maken. Dan, paar dat met Dynamische Media&#39;s intelligente videospeler. Deze workflow garandeert dat de video die u gebruikt op de hoofdbestemmingspagina of op een categorie- of productdetailpagina, overal consistent zal zijn en van hoge kwaliteit zal worden geleverd.
 

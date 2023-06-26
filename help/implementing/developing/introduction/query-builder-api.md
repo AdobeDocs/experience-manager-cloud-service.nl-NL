@@ -2,7 +2,7 @@
 title: Query Builder-API
 description: De functionaliteit van de Asset Share Query Builder wordt weergegeven via een Java API en een REST API.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 0%
@@ -78,7 +78,7 @@ orderby=path
 
 ### Het gebruiken van p.radenTotal om de Resultaten terug te keren {#using-p-guesstotal-to-return-the-results}
 
-Het doel van de `p.guessTotal` de parameter moet het juiste aantal resultaten opleveren dat kan worden aangetoond door de minimale levensvatbare waarde te combineren `p.offset` en `p.limit` waarden. Het voordeel van deze parameter is dat de prestaties van grote resultaatsets verbeterd zijn. Hiermee vermijdt u het volledige totaal te berekenen (bijvoorbeeld `result.getSize()`) en het lezen van de volledige resultaatset, volledig tot aan de OAK-engine en -index geoptimaliseerd. Dit kan een belangrijk verschil zijn wanneer er honderdduizenden resultaten zijn, zowel in uitvoeringstijd als in geheugengebruik.
+Het doel van de `p.guessTotal` de parameter moet het juiste aantal resultaten opleveren dat kan worden aangetoond door de minimaal haalbare `p.offset` en `p.limit` waarden. Het voordeel van deze parameter is dat de prestaties van grote resultaatsets verbeterd zijn. Hiermee vermijdt u het volledige totaal te berekenen (bijvoorbeeld `result.getSize()`) en het lezen van de volledige resultaatset, volledig tot aan de OAK-engine en -index geoptimaliseerd. Dit kan een belangrijk verschil zijn wanneer er honderdduizenden resultaten zijn, zowel in uitvoeringstijd als in geheugengebruik.
 
 Het nadeel van de parameter is dat gebruikers het exacte totaal niet zien. Maar u kunt een minimumaantal instellen zoals `p.guessTotal=1000` het zal altijd tot 1000 lezen, zodat krijgt u nauwkeurige totalen voor kleinere resultaatreeksen, maar als het meer is dan dat, kunt u slechts &quot;en meer&quot;tonen.
 
