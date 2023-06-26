@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
+source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 0%
@@ -70,17 +70,14 @@ CAPTCHA gebruiken in Adaptive Forms:
 
    >[!NOTE]
    >
-   >Zorg ervoor dat de configuratiecontainer die is geselecteerd bij het maken van het adaptieve formulier, de reCAPTCHA-cloudservice bevat. U kunt ook de eigenschappen van Adaptief formulier bewerken om de configuratiecontainer die aan het formulier is gekoppeld, te wijzigen.
+   > Zorg ervoor dat de configuratiecontainer die is geselecteerd bij het maken van het adaptieve formulier, de reCAPTCHA-cloudservice bevat. U kunt ook de eigenschappen van Adaptief formulier bewerken om de configuratiecontainer die aan het formulier is gekoppeld, te wijzigen.
 
 1. Sleep vanuit de componentbrowser de **[!UICONTROL Captcha]** naar het adaptieve formulier.
 
    >[!NOTE]
    >
-   >Het gebruik van meerdere Captcha-componenten in een adaptief formulier wordt niet ondersteund. Het wordt ook afgeraden om CAPTCHA te gebruiken in een deelvenster dat is gemarkeerd voor wazig laden of in een fragment.
-
-   >[!NOTE]
-   >
-   >Captcha is tijdgevoelig en verloopt over ongeveer een minuut. Daarom wordt aangeraden de component Captcha vlak voor de knop Verzenden in het adaptieve formulier te plaatsen.
+   > * Het gebruik van meerdere Captcha-componenten in een adaptief formulier wordt niet ondersteund. Het wordt ook afgeraden om CAPTCHA te gebruiken in een deelvenster dat is gemarkeerd voor wazig laden of in een fragment.
+   > * Captcha is tijdgevoelig en verloopt over ongeveer een minuut. Daarom wordt aangeraden de component Captcha vlak voor de knop Verzenden in het adaptieve formulier te plaatsen.
 
 1. Selecteer de Captcha-component die u hebt toegevoegd en tik op ![cmppr](assets/configure-icon.svg) om de eigenschappen te bewerken.
 1. Geef een titel op voor de CAPTCHA-widget. De standaardwaarde is **[!UICONTROL Captcha]**. Selecteren **[!UICONTROL Hide title]** als u de titel niet wilt weergeven.
@@ -91,7 +88,7 @@ CAPTCHA gebruiken in Adaptive Forms:
 
    >[!NOTE]
    >
-   >* Niet selecteren **[!UICONTROL Default]** van de de dienstdrop-down van Captcha aangezien de standaard Experience ManagerCAPTCHA dienst wordt afgekeurd.
+   > Niet selecteren **[!UICONTROL Default]** van de de dienstdrop-down van Captcha aangezien de standaard Experience ManagerCAPTCHA dienst wordt afgekeurd.
 
 1. Sla de eigenschappen op.
 
@@ -109,7 +106,7 @@ Tik op de knop **[!UICONTROL Currency Value]** in het formulier en stel de volge
 
 >[!NOTE]
 >
->* Als u de v2-configuratie reCAPTCHA selecteert met de grootte als [!UICONTROL Invisible] de optie tonen/verbergen is dan niet van toepassing.
+> Als u de v2-configuratie reCAPTCHA selecteert met de grootte als [!UICONTROL Invisible] de optie tonen/verbergen is dan niet van toepassing.
 
 ### CAPTCHA valideren {#validate-captcha}
 
