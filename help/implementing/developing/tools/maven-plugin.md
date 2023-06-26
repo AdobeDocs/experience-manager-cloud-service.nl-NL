@@ -2,9 +2,9 @@
 title: Insteekmodule Adobe-inhoudspakket
 description: Gebruik de Content Package Maven plug-in om AEM toepassingen te implementeren
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ De `mode` element definieert hoe de inhoud van de opslagplaats wordt beïnvloed 
 
 * **Samenvoegen:** Inhoud in het pakket die zich nog niet in de opslagplaats bevindt, wordt toegevoegd. De inhoud in zowel het pakket als de opslagplaats blijft ongewijzigd. Er wordt geen inhoud uit de opslagplaats verwijderd.
 * **Vervangen:** Inhoud in het pakket die zich niet in de opslagplaats bevindt, wordt toegevoegd aan de opslagplaats. Inhoud in de opslagplaats wordt vervangen door overeenkomende inhoud in het pakket. Inhoud wordt verwijderd uit de opslagplaats wanneer deze niet bestaat in het pakket.
-* **Bijwerken:** Inhoud in het pakket die zich niet in de opslagplaats bevindt, wordt toegevoegd aan de opslagplaats. Inhoud in de opslagplaats wordt vervangen door overeenkomende inhoud in het pakket. Bestaande inhoud wordt verwijderd uit de opslagplaats.
+* **Bijwerken:** Inhoud in het pakket die zich niet in de opslagplaats bevindt, wordt toegevoegd aan de opslagplaats. Inhoud in de opslagplaats wordt vervangen door overeenkomende inhoud in het pakket.
 
 Wanneer het filter geen `mode` -element, de standaardwaarde van `replace` wordt gebruikt.
 
