@@ -3,9 +3,9 @@ title: Workflowinstanties beheren
 description: Leer hoe u workflowinstanties beheert
 feature: Administering
 role: Admin
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -28,12 +28,21 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 1. Navigatie selecteren **Gereedschappen** vervolgens **Workflow**.
 1. Selecteren **Instanties** om een lijst weer te geven met actieve workflowinstanties die momenteel worden uitgevoerd.
 1. Op de bovenste rail, in de rechterhoek, tonen de werkschemainstanties **Workflows uitvoeren**, **Status**, en **Details**.
-1. **Workflows uitvoeren** toont het aantal actieve workflows, en hun status. in de gegeven afbeeldingen is de getoonde waarde bijvoorbeeld het aantal **Workflows uitvoeren** en de **Status** AEM.
-   ![status-gezond](/help/sites-cloud/administering/assets/status-healthy.png)
-   ![status-ongezond](/help/sites-cloud/administering/assets/status-unhealthy.png)
-1. Voor **Statusdetails** van workflowinstanties klikt u op **Details** om de **aantal actieve workflows**, **voltooide workflowinstanties**, **afgebroken workflowinstanties**, **mislukte werkstroominstanties**, enzovoort. hieronder ziet u bijvoorbeeld de afbeeldingen die u ziet **Statusdetails** with **Status: Gezonde** en **Status: Ongezond**.
-   ![status-details-gezond](/help/sites-cloud/administering/assets/status-details-healthy.png)
-   ![status-details-ongezond](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+1. **Workflows uitvoeren** toont het aantal actieve workflows, en hun status. in de gegeven afbeeldingen is de getoonde waarde bijvoorbeeld het aantal **Workflows uitvoeren** en de **Status** van AEM instantie:
+
+   * **Status: Gezonde**
+     ![status-gezond](/help/sites-cloud/administering/assets/status-healthy.png)
+
+   * **Status: Ongezond**
+     ![status-ongezond](/help/sites-cloud/administering/assets/status-unhealthy.png)
+
+1. Voor **Statusdetails** van workflowinstanties klikt u op **Details** om de **aantal actieve workflows**, **voltooide workflowinstanties**, **afgebroken workflowinstanties**, **mislukte werkstroominstanties**, enzovoort. hieronder ziet u bijvoorbeeld de afbeeldingen die u ziet **Statusdetails** met:
+
+   * **Statusdetails: Gezonde**
+     ![status-details-gezond](/help/sites-cloud/administering/assets/status-details-healthy.png)
+
+   * **Statusdetails: Ongezond**
+     ![status-details-ongezond](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
@@ -191,7 +200,7 @@ Op het niveau van het workflowmodel wordt een markering opgegeven die aangeeft d
 
 De eigenschap *userMetadataPersistenceEnabled* wordt opgeslagen op de *jcr:inhoudsknooppunt* van het workflowmodel. Deze markering wordt in metagegevens van de workflow als *cq:userMetaDataCustomPersistenceEnabled*.
 
-In de onderstaande afbeelding ziet u hoe u de markering op een workflow moet instellen.
+In de onderstaande afbeelding ziet u hoe u de markering op een workflow instelt.
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
