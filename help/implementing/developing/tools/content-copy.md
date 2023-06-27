@@ -2,9 +2,9 @@
 title: Het gereedschap Inhoud kopiëren
 description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud uit hun productieomgeving kopiëren op AEM as a Cloud Service naar lagere omgevingen voor testdoeleinden.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1203'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek
 
 ## Inleiding {#introduction}
 
-De huidige, echte gegevens zijn waardevol voor het testen, de bevestiging, en de gebruiker-aanvaarding doeleinden. Met het gereedschap voor het kopiëren van inhoud kunt u inhoud kopiëren van een productie AEM omgeving naar een staging-, ontwikkelings- of [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) omgeving voor dergelijke tests.
+De huidige, echte gegevens zijn waardevol voor het testen, de bevestiging, en de gebruiker-aanvaarding doeleinden. Met het gereedschap Inhoud kopiëren kunt u inhoud kopiëren van een productie AEM een as a Cloud Service omgeving naar een testomgeving, ontwikkeling of [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) omgeving voor dergelijke tests.
 
 De inhoud die moet worden gekopieerd, wordt gedefinieerd door een inhoudsset. Een inhoudenset bestaat uit een lijst met JCR-paden die de veranderbare inhoud bevatten die van een ontwerpomgeving van een bron naar een ontwerpomgeving van een doel binnen hetzelfde Cloud Manager-programma moet worden gekopieerd. De volgende paden zijn toegestaan in een inhoudsset.
 
