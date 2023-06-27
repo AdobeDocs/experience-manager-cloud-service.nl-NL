@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service op Verenigde Shell
 description: AEM as a Cloud Service op Verenigde Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 24ae6187813de801813236f0bbcb2ea51e8fe5e1
+source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '395'
 ht-degree: 2%
 
 ---
@@ -32,19 +32,19 @@ Uit de doos, AEM as a Cloud Service verenigde shell toegelaten heeft. Nochtans, 
 >[!NOTE]
 >De verenigde Shell kan slechts door een rekening met administratieve voorrechten worden onbruikbaar gemaakt.
 
-1. Ga naar **Gereedschappen - Cloud Services**.
+1. Klikken **Gereedschappen > Cloud Services**.
 
-   Een admin gebruiker zal de Verenigde kaart van de Configuratie van Shell zien zoals hieronder getoond:
+   Een admin gebruiker ziet de Verenigde kaart van de Configuratie van Shell zoals hieronder getoond:
 
    ![afbeelding](/help/overview/assets/unifiedshell2.png)
 
-1. Klikken op **Unified Shell-configuratie**. Dan, schrap checkbox hieronder wordt getoond om Verenigde Shell onbruikbaar te maken:
+1. Klikken **Unified Shell-configuratie**. Dan, schrap checkbox hieronder wordt getoond om Verenigde Shell onbruikbaar te maken:
 
    ![afbeelding](/help/overview/assets/unifiedshell3.png)
 
 ## Wijzigen in donker thema {#changing-to-dark-theme}
 
-Als u het thema donker wilt weergeven, klikt u op het profielpictogram. Er wordt dan een pop-up weergegeven, zoals hieronder wordt weergegeven. U kunt de knevel gebruiken om aan een donker thema voor Verenigde Shell over te schakelen.
+Klik op het profielpictogram om het donkere thema te wijzigen. Deze actie toont popover zoals hieronder getoond. U kunt de knevel gebruiken om aan een donker thema voor Verenigde Shell over te schakelen.
 
 >[!INFO]
 >
@@ -68,6 +68,6 @@ U kunt het AEM Inbox openen door op het belpictogram in de verenigde shell te kl
 
 ![afbeelding](/help/overview/assets/unifiedshell5.png)
 
-Klik op de knop Inbox in het pop-upvenster om naar uw AEM Inbox te gaan:
+Klik op de knop Inbox in de pop-up zodat u naar de AEM Inbox kunt gaan:
 
 ![afbeelding](/help/overview/assets/unifiedshell6.png)
