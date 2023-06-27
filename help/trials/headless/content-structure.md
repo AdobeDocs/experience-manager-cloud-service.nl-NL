@@ -4,7 +4,7 @@ description: Leer hoe u AEM modellen van inhoudsfragmenten kunt gebruiken om uw 
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Bijvoorbeeld, creeert u een model dat de gegevensstructuur van een reis vertegen
    * **Modeltitel** - Een kort label van het model en geeft meestal het doel van het model aan. U kunt het nieuwe model roepen `Adventure`.
    * **Model inschakelen** - Deze optie is standaard ingeschakeld en moet zijn ingeschakeld om op dit model gebaseerde inhoudsfragmenten te kunnen maken.
 
-1. Nadat de verplichte velden zijn ingevuld, klikt u op **Maken** boven aan links om het model te maken.
+1. Nadat de verplichte velden zijn ingevuld, klikt u op **Maken** rechtsboven om het model te maken.
 
 1. De **Succes** bevestigt dat het model is gemaakt. Klikken **Openen** in het dialoogvenster zodat u het nieuwe inhoudsfragmentmodel in de editor kunt openen op een nieuw tabblad. Ga vervolgens verder met de volgende stap om gegevensvelden aan uw model toe te voegen.
 
