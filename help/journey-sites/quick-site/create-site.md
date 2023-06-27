@@ -2,9 +2,9 @@
 title: Site maken van sjabloon
 description: Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1513'
 ht-degree: 0%
 
 ---
@@ -184,3 +184,4 @@ Terwijl u wordt aangeraden naar het volgende gedeelte van de reis Snel site make
 * [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - In deze handleiding wordt beschreven hoe u pagina&#39;s van uw AEM Site kunt beheren als u deze verder wilt aanpassen nadat u deze vanuit de sjabloon hebt gemaakt.
 * [Hoe te met Pakket werken](/help/implementing/developing/tools/package-manager.md) - Pakketten maken het importeren en exporteren van inhoud in de opslagplaats mogelijk. In dit document wordt uitgelegd hoe u met pakketten werkt in AEM 6.5. Dit geldt ook voor AEMaaCS.
 * [Documentatie voor sitebeheer](/help/sites-cloud/administering/site-creation/create-site.md) - Ontdek de technische documentatie bij het maken van de site voor meer informatie over de functies van het gereedschap Snel maken.
+* [Formulieren maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Leer stapsgewijze technieken en tips en trucs voor het integreren van formulieren in uw website, zodat u uw digitale ervaringen optimaal kunt benutten.

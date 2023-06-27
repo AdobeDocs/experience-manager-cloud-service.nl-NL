@@ -2,9 +2,9 @@
 title: Onderdelen
 description: Componenten vormen de fundamentele bouwsteen voor inhoudspagina's in AEM
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ De [Componentenconsole](/help/sites-cloud/authoring/features/components-console.
 De [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) bieden flexibele en functies met veel functies, die essentiële inhoudstypen bieden voor het maken van pagina&#39;s.
 
 Zij bouwen gebruikend AEM beste praktijken en zijn de basis van de AEM creatieve ervaring. De Componenten van de kern kunnen gemakkelijk door ontwikkelaars worden uitgebreid om aan specifieke projectbehoeften te voldoen.
+
+Samen met de componenten van de Kern WCM kunt u ook gebruiken [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Deze Core Components bieden standaard en eenvoudigere methoden voor [formulieren maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Sjablonen configureren {#configuring-templates}
 

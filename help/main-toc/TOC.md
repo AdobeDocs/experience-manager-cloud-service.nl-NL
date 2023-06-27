@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '4079'
+source-wordcount: '4081'
 ht-degree: 20%
 
 ---
@@ -530,7 +530,6 @@ ht-degree: 20%
          + [AEM Forms as a Cloud Service met Adobe Analytics integreren](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Een adaptief formulier integreren met Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Een adaptieve Forms insluiten in een AEM Sites-pagina](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Formuliergegevensmodel {#use-form-data-model}
          + [Verbind uw gegevensbronnen met Cloud Service](/help/forms/data-integration.md)
          + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
@@ -541,6 +540,7 @@ ht-degree: 20%
          + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
          + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
    + Adaptieve Forms {#adaptive-forms-authoring}
+      + [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Aangepaste Forms ontwerpen - Core-componenten {#authoring-adaptive-forms-core-components}
          + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
             + [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
