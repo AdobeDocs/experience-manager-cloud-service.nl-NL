@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f075c6032edb23f9cf52ad53ae2a628915e76ec2
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 2%
+source-wordcount: '738'
+ht-degree: 1%
 
 ---
 
@@ -36,6 +36,22 @@ Hieronder worden de belangrijkste voordelen van activa als een [!DNL Cloud Servi
 * **Altijd online**: Geen downtime (0dt), dankzij de instantie die in een cluster met back-ups en redundantie is geïmplementeerd. Upgrades zijn ook 0dt.
 * **Constante bewaking**: De controle van het systeem is geautomatiseerde en ingebouwde controles en trekkers helpen de prestaties, de beschikbaarheid, en algemene robuustheid handhaven.
 * **Hapeloze implementaties**: Experience Manager in de Cloud-bewerkingen wordt volledig geautomatiseerd en hoeft niet handmatig te worden uitgevoerd. Voor geautomatiseerde implementaties automatiseert de component Cloud Manager (CM) de opbouw van implementeerbare Docker-afbeeldingen die uw aangepaste code bevatten.
+
+## Beschikbare persoonlijke ervaringen
+
+Adobe biedt robuuste DAM-oplossingen (Digital Asset Management) waarmee u optimaal kunt profiteren van uw digitale middelen. Adobe Experience Manager Assets heeft twee aparte ervaringen die dezelfde gegevensopslagruimte voor Cloud Services gebruiken:
+
+* **Admin View**: De bestaande Assets as a Cloud Service gebruikersinterface. Gebruik de beheerweergave voor alle geavanceerde mogelijkheden voor middelenbeheer, zoals integratie, workflows, automatisering van inhoud, publicatie en meer.
+
+* **Weergave Elementen**: Adobe-tweight-beheerervaring voor opslag, beheer, detectie en gebruik van digitale elementen. Gestroomlijnde gebruikersinterface met essentiële mogelijkheden voor middelenbeheer. Ontworpen voor de lichtgewicht DAM-gebruikers met focus op uploaden, metagegevensbeheer, zoeken, downloaden en delen.
+
+Gebruikers met toegang tot de beheerweergave hebben ook toegang tot de weergave Middelen. De weergave Elementen biedt een vereenvoudigde gebruikersinterface waarmee u uw digitale elementen eenvoudig kunt beheren, ontdekken en distribueren. Een brede reeks gebruikers van verschillende functies, met inbegrip van creatieve, marketing en brancheteams kunnen aan activa samenwerken en tot het recht toegang hebben, erkende activa wanneer en waar zij hen nodig hebben. Veel incidentele DAM-gebruikers geven de voorkeur aan de weergave Middelen, omdat deze alleen een subset functies bevat. De ervaring is gericht op creatieve personen, alleen-lezen klanten en minder belangrijke DAM-gebruikers.
+
+DAM-bibliotheken, ontwikkelaars en supergebruikers kunnen de Admin-weergave blijven gebruiken of, indien nodig, schakelen tussen de gebruikersinterfaces. U kunt de ervaring selecteren die het beste voor uw rol werkt.
+
+![add-tags](assets/newui-overview.svg)
+
+Zie de weergave Elementen voor informatie over hoe u toegang kunt krijgen tot de weergave Middelen en over enkele vereenvoudigingen die deze aanbiedt via de beheerweergave.
 
 ## Nieuwe middelenmogelijkheden {#whats-new-assets}
 
