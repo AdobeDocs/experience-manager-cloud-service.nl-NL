@@ -2,9 +2,9 @@
 title: Toegangstokens genereren voor server-side API's
 description: Leer hoe u communicatie tussen een externe server en AEM as a Cloud Service vergemakkelijkt door een beveiligd JWT Token te genereren
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '2123'
+source-wordcount: '2090'
 ht-degree: 0%
 
 ---
@@ -23,25 +23,25 @@ De server-aan-server stroom wordt hieronder beschreven, samen met een vereenvoud
 
 ## De server-naar-server stroom {#the-server-to-server-flow}
 
-Een gebruiker met een IMS org beheerderrol, en die ook een lid van het Profiel van het Product van de Gebruikers of van AEM op Auteur AEM is, kan een reeks AEM as a Cloud Service geloofsbrieven produceren, elk waarvan een nuttige lading JSON is die een certificaat (de openbare sleutel), een privé sleutel, en een technische rekening omvat die uit een `clientId` en `clientSecret`. Die geloofsbrieven kunnen later door een gebruiker met de AEM as a Cloud Service de beheerderrol van het Milieu worden teruggewonnen en zouden op een niet-AEM server moeten worden geïnstalleerd en zorgvuldig behandeld als geheime sleutel. Dit JSON-indelingsbestand bevat alle gegevens die vereist zijn voor integratie met een AEM as a Cloud Service API. De gegevens worden gebruikt om een getekende JWT-token te maken, dat wordt uitgewisseld met de Adobe Identity Management Services (IMS) voor een IMS-toegangstoken. Dit toegangstoken kan dan als het authentificatietoken van de Drager worden gebruikt om verzoeken aan AEM as a Cloud Service te maken. Het certificaat in de geloofsbrieven verlopen na één jaar door gebrek, maar zij kunnen worden vernieuwd wanneer nodig, zoals beschreven [hier](#refresh-credentials).
+Gebruikers met een IMS org-beheerdersrol en die lid zijn van het profiel AEM gebruikers of AEM Beheerders van productprofielen op AEM-auteur, kunnen een set referenties genereren op basis van AEM as a Cloud Service. Elke referentie is een JSON-payload die een certificaat (de openbare sleutel), een persoonlijke sleutel en een technische account bevat die bestaat uit een `clientId` en `clientSecret`. Die geloofsbrieven kunnen later door een gebruiker met de AEM as a Cloud Service de beheerderrol van het Milieu worden teruggewonnen en zouden op een niet-AEM server moeten worden geïnstalleerd en zorgvuldig als geheime sleutel worden behandeld. Dit JSON-indelingsbestand bevat alle gegevens die vereist zijn voor integratie met een AEM as a Cloud Service API. De gegevens worden gebruikt om een getekende JWT-token te maken, dat wordt uitgewisseld met de Adobe Identity Management Services (IMS) voor een IMS-toegangstoken. Dit toegangstoken kan dan als het authentificatietoken van de Drager worden gebruikt om verzoeken aan AEM as a Cloud Service te maken. Het certificaat in de geloofsbrieven verloopt na één jaar door gebrek, maar zij kunnen worden vernieuwd wanneer nodig, zoals beschreven [hier](#refresh-credentials).
 
 De server-aan-server stroom impliceert de volgende stappen:
 
-* De AEM as a Cloud Service gegevens ophalen uit de ontwikkelaarsconsole
-* Installeer de AEM as a Cloud Service geloofsbrieven op een niet AEM server die vraag aan AEM maken
+* De referenties ophalen op AEM as a Cloud Service via de ontwikkelaarsconsole
+* Installeer de geloofsbrieven voor AEM as a Cloud Service op een niet AEM server die vraag aan AEM doet
 * Een JWT-token genereren en dat token uitwisselen voor een toegangstoken met behulp van Adobe API&#39;s
 * De AEM-API aanroepen met het toegangstoken als een token voor Dradenverificatie
 * Stel de juiste machtigingen in voor de gebruiker van de technische account in de AEM-omgeving
 
 ### De AEM as a Cloud Service referenties ophalen {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Gebruikers met toegang tot de AEM as a Cloud Service ontwikkelaarsconsole zien het tabblad Integraties in de Developer Console voor een bepaalde omgeving. Een gebruiker met de AEM as a Cloud Service rol van de Beheerder van het Milieu kan geloofsbrieven creëren, bekijken of beheren.
+Gebruikers met toegang tot de AEM as a Cloud Service ontwikkelaarsconsole zien het tabblad Integraties in de Developer Console voor een bepaalde omgeving. Een gebruiker met de AEM as a Cloud Service de beheerderrol van het Milieu kan geloofsbrieven creëren, bekijken of beheren.
 
-Klik op de knop **Nieuwe technische account maken** er wordt een nieuwe set referenties gemaakt met client-id, clientgeheim, persoonlijke sleutel, certificaat en configuratie voor auteur- en publicatieniveaus van de omgeving, ongeacht de podselectie.
+Klikken **Nieuwe technische account maken** Er wordt een set met referenties gemaakt die client-id, clientgeheim, persoonlijke sleutel, certificaat en configuratie voor auteur- en publicatieniveaus van de omgeving bevat, ongeacht de podselectie.
 
 ![Een nieuwe technische account maken](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
-Er wordt een nieuw browsertabblad geopend met de referenties. U kunt deze weergave gebruiken om de referenties te downloaden door op het downloadpictogram naast de statustitel te drukken:
+Er wordt een nieuw browsertabblad geopend waarin de referenties worden weergegeven. U kunt deze weergave gebruiken om de referenties te downloaden door op het downloadpictogram naast de statustitel te drukken:
 
 ![Credentials downloaden](/help/implementing/developing/introduction/assets/s2s-credentialdownload.png)
 
@@ -49,21 +49,21 @@ Nadat de geloofsbrieven worden gecreeerd, zullen zij onder verschijnen **Technis
 
 ![Credentials weergeven](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-Gebruikers kunnen de referenties later weergeven met de actie Weergave. Bovendien kunnen gebruikers, zoals verderop in het artikel wordt beschreven, de referenties voor dezelfde technische account wijzigen door een nieuwe persoonlijke sleutel of een nieuw certificaat te maken, voor gevallen waarin het certificaat moet worden vernieuwd of ingetrokken.
+Gebruikers kunnen de referenties later weergeven met de actie Weergave. Bovendien kunnen gebruikers, zoals verderop in het artikel wordt beschreven, de referenties voor dezelfde technische account bewerken. Ze kunnen deze bewerking uitvoeren door een nieuwe persoonlijke sleutel of nieuw certificaat te maken, voor gevallen waarin het certificaat moet worden vernieuwd of ingetrokken.
 
-Gebruikers met de AEM as a Cloud Service rol Beheerder van het Milieu kunnen later nieuwe geloofsbrieven voor extra technische rekeningen tot stand brengen. Dit is handig wanneer verschillende API&#39;s verschillende toegangsvereisten hebben. Bijvoorbeeld lezen versus lezen-schrijven.
+Gebruikers met de AEM rol Beheerder van het Milieu kunnen later geloofsbrieven voor extra technische rekeningen tot stand brengen. Deze mogelijkheid is handig wanneer verschillende API&#39;s verschillende toegangsvereisten hebben. Bijvoorbeeld lezen versus lezen-schrijven.
 
 >[!NOTE]
 >
->Klanten kunnen maximaal 10 technische accounts maken, waaronder accounts die al zijn verwijderd.
+>Klanten kunnen maximaal tien technische accounts maken, waaronder de accounts die al zijn verwijderd.
 
 >[!IMPORTANT]
 >
->Een IMS org-beheerder (doorgaans dezelfde gebruiker die de omgeving heeft ingericht via Cloud Manager), die ook lid moet zijn van het productprofiel AEM gebruikers of AEM beheerders van AEM-auteur, moet eerst toegang krijgen tot de Developer Console en op de knop **Nieuwe technische account maken** om de geloofsbrieven te produceren en later terug te winnen door een gebruiker met admin toestemmingen aan het AEM as a Cloud Service milieu. Als de IMS org beheerder dit niet heeft gedaan, zal een bericht hen informeren dat zij de rol van de Beheerder IMS org nodig hebben.
+>Een IMS org beheerder (typisch de zelfde gebruiker die het milieu door middel van de Manager van de Wolk) leverde, die ook een lid van het Profiel van het Product van de Gebruikers of AEM van de Beheerders op AEM Auteur is, moet eerst tot de Console van de Ontwikkelaar toegang hebben. Klik vervolgens op **Nieuwe technische account maken** voor de geloofsbrieven die moeten worden geproduceerd en later teruggewonnen door een gebruiker met admintoestemmingen aan het AEM as a Cloud Service milieu. Als de IMS org beheerder nog niet de technische rekening heeft gecreeerd, deelt een bericht hen mee dat zij de IMS org rol van de Beheerder nodig hebben.
 
-### Installeer de AEM servicereferenties op een niet-AEM server {#install-the-aem-service-credentials-on-a-non-aem-server}
+### Installeer de AEM servicereferentials op een niet-AEM server {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-De toepassing die vraag aan AEM maakt zou tot de AEM as a Cloud Service geloofsbrieven moeten kunnen toegang hebben, behandelend het als geheim.
+De toepassing die vraag aan AEM maakt zou tot de geloofsbrieven voor AEM as a Cloud Service moeten kunnen toegang hebben, behandelend het als geheim.
 
 ### Genereer een JWT-token en verander dit voor een Access Token {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
@@ -91,10 +91,10 @@ exchange(config).then(accessToken => {
 
 De zelfde uitwisseling kan in om het even welke taal worden uitgevoerd die een ondertekend Token JWT met het correcte formaat kan produceren en IMS Symbolische Uitwisseling APIs roepen.
 
-Het toegangstoken zal bepalen wanneer het verloopt, wat typisch 24 uren is. Er is steekproefcode in de git bewaarplaats om een toegangstoken te beheren en het te verfrissen alvorens het verloopt.
+Het toegangstoken bepaalt wanneer het verloopt, die typisch 24 uren is. Er is steekproefcode in de git bewaarplaats om een toegangstoken te beheren en het te verfrissen alvorens het verloopt.
 
 >[!NOTE]
->Als er veelvoudige geloofsbrieven zijn, zorg ervoor om het aangewezen jsdossier voor de API vraag aan AEM van verwijzingen te voorzien die later zal worden aangehaald.
+>Als er veelvoudige geloofsbrieven zijn, zorg ervoor om het aangewezen jsdossier voor de API vraag aan AEM van verwijzingen te voorzien die later wordt aangehaald.
 
 ### De AEM-API aanroepen {#calling-the-aem-api}
 
@@ -106,25 +106,25 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ### Stel de juiste machtigingen voor de gebruiker van de technische account in AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
-Ten eerste moet er een nieuw productprofiel worden gemaakt in de Adobe Admin Console. U kunt dit bereiken door deze stappen te volgen:
+Ten eerste moet er een nieuw productprofiel worden gemaakt in de Adobe Admin Console.
 
-1. Ga naar de Adobe Admin Console op [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/)
+1. Ga naar de Adobe Admin Console op [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
 1. Druk op **Beheren** koppeling onder de **Producten en services** links.
-1. Selecteren **AEM as a Cloud Service**
-1. Druk op **Nieuw profiel** knop
+1. Selecteren **AEM as a Cloud Service**.
+1. Druk op **Nieuw profiel** knop.
 
    ![Nieuw profiel](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
 
-1. Geef het profiel een naam en druk op **Opslaan**
+1. Geef het profiel een naam en druk op **Opslaan**.
 
    ![Profiel opslaan](/help/implementing/developing/introduction/assets/s2s-saveprofile.png)
 
-1. Selecteer het profiel dat u zojuist hebt gemaakt in de profiellijst
-1. Druk op **Gebruiker toevoegen** knop
+1. Selecteer het profiel dat u hebt gemaakt in de profiellijst.
+1. Selecteren **Gebruiker toevoegen**.
 
    ![Gebruiker toevoegen](/help/implementing/developing/introduction/assets/s2s-addusers.png)
 
-1. Voeg de technische account toe die u zojuist hebt gemaakt (in dit geval `84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`) en drukken op **Opslaan**
+1. Voeg de technische account toe die u hebt gemaakt (in dit geval `84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`) en klik op **Opslaan**.
 
    ![Technisch account toevoegen](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
 
@@ -135,10 +135,10 @@ Ten eerste moet er een nieuw productprofiel worden gemaakt in de Adobe Admin Con
 
 Nadat u de API-aanroep hebt gemaakt, wordt het productprofiel weergegeven als een gebruikersgroep in de AEM as a Cloud Service auteur-instantie, met de juiste technische account als lid van die groep.
 
-Om dit te controleren, moet u:
+Ga als volgt te werk om deze informatie te controleren:
 
-1. Aanmelden bij de instantie van de auteur
-1. Ga naar **Gereedschappen** - **Beveiliging** en klik op de knop **Groepen** kaart
+1. Meld u aan bij de instantie van de auteur.
+1. Ga naar **Gereedschappen** > **Beveiliging** klikt u op de knop **Groepen** kaart.
 1. Zoek de naam van het profiel dat u in de lijst met groepen hebt gemaakt en klik erop:
 
    ![Groepsprofiel](/help/implementing/developing/introduction/assets/s2s-groupprofile.png)
@@ -148,24 +148,24 @@ Om dit te controleren, moet u:
    ![Tabblad Leden](/help/implementing/developing/introduction/assets/s2s-techaccountmembers.png)
 
 
-U kunt ook controleren of de technische account wordt weergegeven in de lijst met gebruikers door de onderstaande stappen uit te voeren op de instantie van de auteur:
+U kunt ook controleren of de technische account in de lijst van de gebruiker wordt weergegeven door de onderstaande stappen uit te voeren op de instantie van de auteur:
 
-1. Ga naar **Gereedschappen** - **Beveiliging** - **Gebruikers**
-1. Controleer of uw technische account de gebruikerslijst is en klik erop
-1. Klik op de knop **Groepen** om te controleren of de gebruiker deel uitmaakt van de groep die overeenkomt met uw productprofiel. Deze gebruiker is ook lid van een handvol andere groepen, waaronder Medewerkers:
+1. Ga naar **Gereedschappen** > **Beveiliging** > **Gebruikers**.
+1. Controleer of uw technische account de gebruikerslijst is en selecteer deze.
+1. Klik op de knop **Groepen** zodat u kunt controleren of de gebruiker deel uitmaakt van de groep die overeenkomt met uw productprofiel. Deze gebruiker is ook lid van een handvol andere groepen, waaronder Medewerkers:
 
    ![Groepslidmaatschap](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
 
 >[!NOTE]
 >
->Vóór medio 2023, alvorens het mogelijk was om veelvoudige geloofsbrieven tot stand te brengen, werden de klanten niet geleid om een productprofiel in de console van Admin van de Adobe tot stand te brengen en zo werd de technische rekening niet geassocieerd met een groep buiten &quot;Medewerkers&quot;in de AEM as a Cloud Service instantie. Ter wille van de consistentie wordt aanbevolen voor deze technische account een nieuw productprofiel in de Adobe Admin Console te maken zoals hierboven beschreven, en de bestaande technische account aan die groep toe te voegen.
+>Vóór medio 2023, voordat het mogelijk was meerdere referenties te maken, kregen klanten geen instructies om een productprofiel te maken in de Adobe Admin Console. Als zodanig was de technische rekening in AEM as a Cloud Service instantie niet geassocieerd met een andere groep dan &quot;Medewerkers&quot;. Ter wille van de consistentie wordt aanbevolen voor deze technische account een productprofiel in de Adobe Admin Console te maken zoals hierboven beschreven, en de bestaande technische account aan die groep toe te voegen.
 
-<u>**Stel de juiste machtigingen voor groepen in**</u>
+<u>**De juiste machtigingen voor groepen instellen**</u>
 
-Tot slot vorm de groep met de aangewezen toestemmingen nodig om uw APIs aan te halen of te sluiten geschikt. U kunt dit doen door:
+Tot slot vorm de groep met de aangewezen toestemmingen noodzakelijk zodat kunt u uw APIs roepen of sluiten geschikt.
 
-1. Aanmelden bij de juiste instantie van de auteur en naar **Instellingen** - **Beveiliging** - **Machtigingen**
-1. Zoek de naam van de groep die overeenkomt met het productprofiel in het linkerdeelvenster (in dit geval alleen-lezen API&#39;s) en klik erop:
+1. Meld u aan bij de juiste instantie van de auteur en navigeer naar **Instellingen** > **Beveiliging** > **Machtigingen**
+1. Zoek de naam van de groep die overeenkomt met het productprofiel in het linkerdeelvenster (in dit geval alleen-lezen API&#39;s) en selecteer de naam:
 
    ![Zoeken naar groep](/help/implementing/developing/introduction/assets/s2s-searchforgroup.png)
 
@@ -179,11 +179,11 @@ Tot slot vorm de groep met de aangewezen toestemmingen nodig om uw APIs aan te h
 
 >[!INFO]
 >
->Meer informatie over het Adobe Identity Management System (IMS) en AEM gebruikers en groepen vindt u in het [documentatie](/help/security/ims-support.md).
+>Meer informatie over het Adobe Identity Management System (IMS) en AEM gebruikers en groepen. Zie de [documentatie](/help/security/ims-support.md).
 
 ## Developer Flow {#developer-flow}
 
-Ontwikkelaars willen waarschijnlijk testen met een ontwikkelingsexemplaar van hun niet-AEM toepassing (die op hun laptop wordt uitgevoerd of wordt gehost) die aanvragen doet voor een ontwikkelomgeving AEM as a Cloud Service ontwikkelomgeving. Nochtans, aangezien de ontwikkelaars niet noodzakelijk IMS beheerdersroltoestemmingen hebben, kunnen wij niet veronderstellen zij de drager JWT die in de regelmatige server-aan-server stroom wordt beschreven kunnen produceren. Aldus, verstrekken wij een mechanisme voor een ontwikkelaar om een toegangstoken direct te produceren die in verzoeken aan AEM as a Cloud Service milieu&#39;s kan worden gebruikt waar zij toegang tot hebben.
+Ontwikkelaars willen waarschijnlijk testen met een ontwikkelingsexemplaar van hun niet-AEM toepassing (die op hun laptop wordt uitgevoerd of wordt gehost) die aanvragen doet voor een ontwikkelomgeving AEM as a Cloud Service ontwikkelomgeving. Omdat ontwikkelaars echter niet noodzakelijkerwijs beschikken over IMS-beheerdersmachtigingen, kan Adobe niet aannemen dat zij de JWT-toonder kunnen genereren die in de reguliere server-naar-server-flow wordt beschreven. Daarom verstrekt Adobe een mechanisme voor een ontwikkelaar om een toegangstoken direct te produceren dat in verzoeken aan milieu&#39;s op AEM as a Cloud Service kan worden gebruikt waarop zij toegang hebben.
 
 Zie de [Documentatie ontwikkelaarsrichtlijnen](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) voor informatie over de vereiste toestemmingen om de AEM as a Cloud Service ontwikkelaarsconsole te gebruiken.
 
@@ -191,7 +191,7 @@ Zie de [Documentatie ontwikkelaarsrichtlijnen](/help/implementing/developing/int
 >
 >Het token voor lokale ontwikkelingstoegang is maximaal 24 uur geldig waarna het opnieuw moet worden gegenereerd met dezelfde methode.
 
-Ontwikkelaars kunnen dit token gebruiken om aanroepen uit te voeren vanuit hun niet-AEM testtoepassing naar een AEM as a Cloud Service omgeving. De ontwikkelaar gebruikt dit token doorgaans samen met de niet-AEM toepassing op zijn eigen laptop. Bovendien is de AEM als Cloud doorgaans een omgeving die geen productie heeft.
+Ontwikkelaars kunnen dit token gebruiken om aanroepen uit te voeren vanuit hun niet-AEM testtoepassing naar een AEM as a Cloud Service omgeving. De ontwikkelaar gebruikt dit token doorgaans met de niet-AEM toepassing op zijn eigen laptop. Bovendien is de AEM als Cloud doorgaans een omgeving die geen productie heeft.
 
 De ontwikkelaarsstroom omvat de volgende stappen:
 
@@ -203,7 +203,7 @@ Ontwikkelaars kunnen ook API-aanroepen uitvoeren naar een AEM project dat op hun
 ### Het produceren van het Token van de Toegang {#generating-the-access-token}
 
 1. Ga naar de **Lokaal token** krachtens **Integraties**
-1. Klik op de knop **Token voor lokale ontwikkeling ophalen** in de Ontwikkelaarsconsole om een toegangstoken te produceren.
+1. Klikken **Token voor lokale ontwikkeling ophalen** in de Console van de Ontwikkelaar zodat kunt u een toegangstoken produceren.
 
 ### Roep de AEM Toepassing met een Token van de Toegang aan {#call-the-aem-application-with-an-access-token}
 
@@ -211,38 +211,36 @@ Maak de aangewezen server-aan-server API vraag van de niet-AEM toepassing aan ee
 
 ## Referenties vernieuwen {#refresh-credentials}
 
-Standaard verlopen de AEM as a Cloud Service gegevens na een jaar. Om de dienstcontinuïteit te verzekeren, hebben de ontwikkelaars de optie om de geloofsbrieven te verfrissen, die hun beschikbaarheid voor een extra jaar uitbreiden.
+Standaard verlopen de referenties op AEM as a Cloud Service na een jaar. Om de dienstcontinuïteit te verzekeren, hebben de ontwikkelaars de optie om de geloofsbrieven te verfrissen, die hun beschikbaarheid voor een extra jaar uitbreiden.
 
-Om dit te bereiken, kunt u:
+Ga als volgt te werk om deze vernieuwingsextensie te bereiken:
 
 * Gebruik de **Certificaat toevoegen** knop onder **Integraties** - **Technische rekeningen** in de ontwikkelaarsconsole, zoals hieronder getoond
 
   ![Referentie vernieuwen](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* Nadat u op de knop hebt gedrukt, wordt een set referenties gegenereerd die een nieuw certificaat bevat. Installeer de nieuwe geloofsbrieven op uw off-AEM server en zorg ervoor dat de connectiviteit zoals verwacht is, zonder de oude geloofsbrieven te verwijderen 
-* Zorg ervoor de nieuwe geloofsbrieven in plaats van de oude worden gebruikt wanneer het produceren van het toegangstoken
+* Nadat u op de knop hebt gedrukt, wordt een set referenties gegenereerd die een nieuw certificaat bevat. Installeer de nieuwe geloofsbrieven op uw off-AEM server en zorg ervoor dat de connectiviteit zoals verwacht is, zonder de oude geloofsbrieven te verwijderen.
+* Zorg ervoor dat de nieuwe geloofsbrieven in plaats van de oude worden gebruikt wanneer het produceren van het toegangstoken.
 * U kunt desgewenst het vorige certificaat intrekken (en vervolgens verwijderen), zodat het niet langer kan worden gebruikt voor verificatie met AEM as a Cloud Service.
 
 ## Intrekking van referenties {#credentials-revocation}
 
-Als de persoonlijke sleutel in het gedrang komt, moet u referenties maken met een nieuw certificaat en een nieuwe persoonlijke sleutel. Nadat uw toepassing de nieuwe geloofsbrieven gebruikt om toegangstokens te produceren, kunt u de oude certificaten intrekken en schrappen.
+Als de persoonlijke sleutel in het gedrang komt, moet u referenties maken met een nieuw certificaat en een nieuwe persoonlijke sleutel. Nadat uw toepassing de nieuwe geloofsbrieven gebruikt zodat kunt u toegangstokens produceren, kunt u de oude certificaten intrekken en schrappen door het volgende te doen:
 
-U kunt dit doen door deze stappen te volgen:
-
-1. Voeg eerst de nieuwe toets toe. Met deze sleutel worden referenties gegenereerd met een nieuwe persoonlijke sleutel en een nieuw certificaat. De nieuwe persoonlijke sleutel wordt in de gebruikersinterface gemarkeerd als **huidig** en zal dus worden gebruikt voor alle nieuwe geloofsbrieven voor deze technische rekening. De referenties die aan de oudere persoonlijke sleutels zijn gekoppeld, zijn nog steeds geldig tot ze zijn ingetrokken. Om dit te bereiken drukt u op de drie puntjes (**...**) onder uw huidige technische account en druk op **Nieuwe persoonlijke sleutel toevoegen**:
+1. Voeg eerst de nieuwe toets toe. Met deze sleutel worden referenties gegenereerd met een nieuwe persoonlijke sleutel en een nieuw certificaat. De nieuwe persoonlijke sleutel wordt in de gebruikersinterface gemarkeerd als **huidig** en wordt daarom gebruikt voor alle nieuwe geloofsbrieven voor deze technische rekening die verder gaat. De referenties die aan de oudere persoonlijke sleutels zijn gekoppeld, zijn nog steeds geldig tot ze zijn ingetrokken. Selecteer de drie stippen (**...**) onder uw huidige technische account, selecteert u **Nieuwe persoonlijke sleutel toevoegen**:
 
    ![Nieuwe persoonlijke sleutel toevoegen](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
-1. Druk **Toevoegen** op het volgende tijdstip:
+1. Selecteren **Toevoegen** op het volgende tijdstip:
 
    ![Toevoegen van nieuwe persoonlijke sleutel bevestigen](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   Er wordt een nieuw bladertabblad geopend met de nieuwe referenties en de gebruikersinterface wordt bijgewerkt zodat zowel de persoonlijke sleutel als de nieuwe wordt weergegeven met de code **huidig**:
+   Er wordt een nieuw tabblad voor bladeren geopend met de nieuwe referenties en de gebruikersinterface wordt bijgewerkt zodat zowel de persoonlijke sleutel als de nieuwe wordt weergegeven met de code **huidig**:
 
    ![Persoonlijke sleutels in de gebruikersinterface](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 
-1. Installeer de nieuwe referenties op de niet-AEM server en zorg ervoor dat de connectiviteit naar behoren functioneert. Zie de [Server naar server, sectie Stroom](#the-server-to-server-flow) voor meer informatie over hoe u dit kunt doen
-1. Intrekken van het oude certificaat. U kunt dit doen door de drie puntjes te selecteren (**...**) rechts van het certificaat en door te drukken op **Intrekken**:
+1. Installeer de nieuwe referenties op de niet-AEM server en zorg ervoor dat de connectiviteit naar behoren functioneert. Zie [Server naar server, sectie Stroom](#the-server-to-server-flow) voor meer informatie.
+1. Het oude certificaat intrekken door de drie stippen te selecteren (**...**) rechts van het certificaat en selecteert u **Intrekken**:
 
    ![Certificaat intrekken](/help/implementing/developing/introduction/assets/s2s-revokecert.png)
 

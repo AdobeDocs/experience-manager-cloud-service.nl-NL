@@ -2,9 +2,9 @@
 title: Structuur van de AEM-interface
 description: De AEM UI heeft verschillende onderliggende beginselen en bestaat uit verschillende sleutelelementen
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '893'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ De AEM UI heeft verschillende onderliggende beginselen en bestaat uit verschille
 
 De interface biedt ruimte voor zowel mobiele apparaten als bureaubladapparaten, in plaats van twee stijlen te maken, AEM gebruikt één stijl die voor alle schermen en apparaten werkt.
 
-Alle modules gebruiken de zelfde basislay-out, in AEM dit kan worden gezien als:
+Alle modules gebruiken de zelfde basislay-out:
 
 ![AEM Sites-console](assets/ui-sites-console.png)
 
-De lay-out voldoet aan een responsieve ontwerpstijl en past zich aan de grootte van het apparaat/venster aan dat u gebruikt.
+De lay-out volgt een ontvankelijke ontwerpstijl en past zich aan de grootte van het apparaat, of venster, of allebei aan, dat u gebruikt.
 
-Als de resolutie bijvoorbeeld lager is dan 1024 px (zoals op een mobiel apparaat), wordt het beeldscherm dienovereenkomstig aangepast:
+Als de resolutie bijvoorbeeld lager is dan 1024 pixels (zoals op een mobiel apparaat), wordt het beeldscherm dienovereenkomstig aangepast:
 
 ![Mobiele weergave van Sites-console](assets/ui-sites-mobile.png)
 
@@ -35,11 +35,11 @@ Als de resolutie bijvoorbeeld lager is dan 1024 px (zoals op een mobiel apparaat
 
 De kopbalbar toont globale elementen met inbegrip van:
 
-* Het logo en het specifieke product/de specifieke oplossing die u momenteel gebruikt; voor AEM vormt dit ook een link naar de globale navigatie
+* Het logo en het specifieke product/de oplossing die u momenteel gebruikt. Voor AEM vormt dit element ook een koppeling naar de globale navigatie
 * Zoeken
 * Pictogram voor toegang tot de Help-bronnen
 * Pictogram voor toegang tot andere oplossingen
-* Een indicator van (en toegang tot) om het even welke alarm of Inbox punten die op u wachten
+* Een indicator van - en toegang tot - om het even welke alarm of Inbox punten die op u wachten
 * Het gebruikerspictogram, samen met een koppeling naar uw profielbeheer
 
 ### Werkbalk {#toolbar}
@@ -50,7 +50,7 @@ Op de werkbalk ziet u de acties die momenteel beschikbaar zijn.
 
 ![AEM Sites, werkbalk](assets/ui-sites-toolbar.png)
 
-Ook afhankelijk van of een bron momenteel is geselecteerd:
+Ook afhankelijk van of een bron is geselecteerd:
 
 ![AEM Sites-werkbalk geselecteerd](assets/ui-sites-toolbar-selected.png)
 
@@ -74,7 +74,7 @@ Bij het ontwerpen van pagina&#39;s ziet u de volgende structurele gebieden.
 
 ### Inhoudskader {#content-frame}
 
-De pagina-inhoud wordt weergegeven in het inhoudskader. Het inhoudskader is volledig onafhankelijk van de editor - om ervoor te zorgen dat er geen conflicten zijn die te wijten zijn aan CSS of javascript.
+De pagina-inhoud wordt weergegeven in het inhoudskader. Het inhoudsframe is onafhankelijk van de editor - om ervoor te zorgen dat er geen conflicten optreden vanwege CSS of JavaScript.
 
 Het inhoudskader bevindt zich in de rechtersectie van het venster, onder de werkbalk.
 
@@ -95,9 +95,9 @@ Het editorframe is een container (abstract) voor alle pagina-ontwerpelementen. H
 
 ### Zijpaneel {#side-panel}
 
-Dit bevat drie standaardtabbladen. De **Activa** en **Componenten** Met tabs kunt u dergelijke elementen selecteren en ze uit het deelvenster slepen en op de pagina neerzetten. De **Inhoudsstructuur** kunt u de hiërarchie van inhoud op de pagina controleren.
+Bevat drie standaardtabbladen. De **Activa** en **Componenten** Met tabs kunt u dergelijke elementen selecteren en ze uit het deelvenster slepen en op de pagina neerzetten. De **Inhoudsstructuur** kunt u de hiërarchie van inhoud op de pagina controleren.
 
-Het zijpaneel is standaard verborgen. Als deze optie is geselecteerd, wordt deze links weergegeven of schuift deze over om het hele venster te bedekken wanneer het vensterformaat kleiner is dan 1024 px; zoals bijvoorbeeld op een mobiel apparaat.
+Het zijpaneel is standaard verborgen. Als deze optie is geselecteerd, wordt deze links weergegeven of als de vensterbreedte kleiner is dan 1024 pixels, schuift deze over om het hele venster te bedekken, bijvoorbeeld op een mobiel apparaat.
 
 ![Zijpaneel](assets/ui-side-panel.png)
 
@@ -127,7 +127,7 @@ Op het tabblad Inhoudsstructuur kunt u de hiërarchie van inhoud op de pagina we
 
 ### Bedekkingen {#overlays}
 
-Deze bedekken het inhoudsframe en worden gebruikt door de [lagen](#layer) om te realiseren hoe u (volledig transparant) kunt communiceren met de componenten en hun inhoud.
+Bedekt het inhoudsframe en wordt gebruikt door de [lagen](#layer) om de mechanica te realiseren van hoe u op transparante wijze met de componenten en hun inhoud kunt communiceren.
 
 De overlays bevinden zich in het editorframe (met alle andere pagina-ontwerpelementen), hoewel ze de juiste componenten in het inhoudsframe bedekken.
 
@@ -146,19 +146,19 @@ AEM wordt geleverd met verschillende lagen die al zijn geïmplementeerd voor het
 
 >[!NOTE]
 >
->Lagen zijn een krachtig concept dat invloed heeft op de weergave van de gebruiker en de interactie met de pagina-inhoud. Wanneer u uw eigen lagen ontwikkelt, moet u ervoor zorgen dat de laag wordt opgeschoond wanneer deze wordt afgesloten.
+>Lagen zijn een krachtig concept dat invloed heeft op de weergave van en interactie met de pagina-inhoud. Wanneer u uw eigen lagen ontwikkelt, moet u ervoor zorgen dat de laag wordt opgeschoond wanneer deze wordt afgesloten.
 
 ### Laagschakelaar {#layer-switcher}
 
 Met de laagschakeloptie kunt u de laag kiezen die u wilt gebruiken. Als u deze optie sluit, wordt de laag weergegeven die momenteel wordt gebruikt.
 
-De laagschakelaar is beschikbaar als daling onderaan van de toolbar (bij de bovenkant van het venster, binnen het redacteurskader).
+De laagschakelaar is beschikbaar als drop-down van de toolbar (bij de bovenkant van het venster, binnen het redacteurskader).
 
 ![Laagschakelaar](assets/ui-layer-switcher.png)
 
 ### Werkbalk Component {#component-toolbar}
 
-Elke instantie van een component zal zijn toolbar tonen wanneer geklikt (of eens of met een langzaam tweemaal klikken). De werkbalk bevat de specifieke handelingen (bijvoorbeeld kopiëren, plakken, open editor) die beschikbaar zijn voor de componentinstantie op de pagina.
+Elke instantie van een component toont zijn toolbar wanneer geklikt (of eens of met een langzaam tweemaal klikken). De werkbalk bevat de specifieke handelingen (bijvoorbeeld kopiëren, plakken, open editor) die beschikbaar zijn voor de componentinstantie op de pagina.
 
 Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst bij de bovenkant, of bodem, juiste hoek van de aangewezen component.
 
@@ -168,4 +168,4 @@ Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst b
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Voor meer technische informatie raadpleegt u de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor de pagina-editor.
+Voor meer technische informatie raadpleegt u de [JS-documentatieset](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) voor de pagina-editor.

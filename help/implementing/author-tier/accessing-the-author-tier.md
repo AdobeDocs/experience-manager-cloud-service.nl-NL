@@ -2,18 +2,18 @@
 title: Toegang tot de auteurlaag
 description: Toegang tot de auteurlaag
 exl-id: 4143a125-3d46-4c44-b52c-f55c5194fb9c
-source-git-commit: ebc80a68d250ce5e95657f42419e6b40b843f25b
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 78%
+source-wordcount: '49'
+ht-degree: 24%
 
 ---
 
 # Toegang tot de auteurlaag {#accessing-the-author-tier}
 
-Via een standaard, niet-aanpasbare URL hebt u toegang tot de auteurlaag van AEM as a Cloud Service.
+Toegang tot de auteurslaag van een AEM as a Cloud Service milieu wordt gedaan door een standaard en niet-klantgerichte URL.
 
-De indeling van de URL is momenteel als volgt:
+De URL-indeling is als volgt:
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 

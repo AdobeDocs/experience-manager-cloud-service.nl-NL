@@ -1,17 +1,17 @@
 ---
 title: Het gereedschap Inhoud kopiëren
-description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van hun AEM as a Cloud Service productieomgeving naar lagere omgevingen voor testdoeleinden.
+description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud uit hun productieomgeving kopiëren op AEM as a Cloud Service naar lagere omgevingen voor testdoeleinden.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
 
 # Het gereedschap Inhoud kopiëren {#content-copy}
 
-Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van hun AEM as a Cloud Service productieomgeving naar lagere omgevingen voor testdoeleinden.
+Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud uit hun productieomgeving kopiëren op AEM as a Cloud Service naar lagere omgevingen voor testdoeleinden.
 
 ## Inleiding {#introduction}
 
@@ -43,15 +43,15 @@ Als u het gereedschap Inhoud kopiëren wilt gebruiken, zijn bepaalde machtiginge
 
 ## Een inhoudsset maken {#create-content-set}
 
-Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Als deze eenmaal is gedefinieerd, kunnen inhoudssets opnieuw worden gebruikt om inhoud te kopiëren. Ga als volgt te werk om een inhoudenset te maken.
+Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nadat deze is gedefinieerd, kunnen inhoudssets opnieuw worden gebruikt om inhoud te kopiëren. Voer de volgende stappen uit, zodat u een inhoudsset kunt maken.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Meld u aan bij Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 
 1. Ga naar de **Inhoudssets** pagina van **Omgevingen** scherm.
 
-1. Tik of klik op de knop **Inhoudsset toevoegen** aan de rechterbovenhoek van het scherm.
+1. Klik rechtsboven in het scherm op **Inhoudsset toevoegen**.
 
    ![Inhoudssets](assets/content-sets.png)
 
@@ -62,15 +62,15 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Als
 1. Op de **Inhoudspaden** van de wizard, geeft u de paden op van de inhoud die u wilt wijzigen.
 
    1. Voer het pad in het dialoogvenster **Inclusief pad toevoegen** veld.
-   1. Tik of klik op de knop **Pad toevoegen** om het pad aan de inhoudenset toe te voegen.
-   1. Tik of klik op de knop **Pad toevoegen** nogmaals indien nodig.
+   1. Klikken **Pad toevoegen** om het pad aan de inhoudenset toe te voegen.
+   1. Klikken **Pad toevoegen** nogmaals indien nodig.
       * Er zijn maximaal 50 paden toegestaan.
 
    ![Paden toevoegen aan inhoudsset](assets/add-content-set-paths.png)
 
 1. Als u de inhoudenset moet verfijnen of beperken, kunnen subpaden worden uitgesloten.
 
-   1. Tik of klik op de knop **Subpaden uitsluiten toevoegen** pictogram naast het pad dat u moet beperken.
+   1. Klik in de lijst met opgenomen paden op **Subpaden uitsluiten toevoegen** naast het pad dat u wilt beperken.
    1. Voer het subpad in dat u onder het geselecteerde pad wilt uitsluiten.
    1. Tik of klik op **Pad uitsluiten**.
    1. Tik of klik op **Subpaden uitsluiten toevoegen** nogmaals om extra paden toe te voegen om deze uit te sluiten.
@@ -79,10 +79,10 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Als
 
    ![Paden uitsluiten](assets/add-content-set-paths-excluded.png)
 
-1. U kunt de opgegeven paden desgewenst wijzigen.
+1. U kunt de opgegeven paden desgewenst bewerken.
 
-   1. Tik of klik op de X naast de uitgesloten subpaden om deze te verwijderen.
-   1. Tik of klik op de knop Ovaal naast de paden die u wilt tonen **Bewerken** en **Verwijderen** opties.
+   1. Klik op de X naast de uitgesloten subpaden, zodat u deze kunt verwijderen.
+   1. Klik op de knop Ovaal naast paden zodat u deze kunt tonen **Bewerken** en **Verwijderen** opties.
 
    ![Padlijst bewerken](assets/add-content-set-excluded-paths.png)
 
@@ -92,18 +92,18 @@ De inhoudenset kan nu worden gebruikt om inhoud tussen omgevingen te kopiëren.
 
 ## Een inhoudsset bewerken {#edit-content-set}
 
-Voer vergelijkbare stappen uit als bij het maken van een stap Inhoud. In plaats van te tikken of te klikken **Inhoudsset toevoegen** selecteert u een bestaande set in de console en selecteert u **Bewerken** in het ovaalmenu.
+Voer vergelijkbare stappen uit als bij het maken van een stap Inhoud. In plaats van te klikken **Inhoudsset toevoegen**, selecteert u een bestaande set in de console en selecteert u **Bewerken** in het ovaalmenu.
 
 ![Inhoudsset bewerken](assets/edit-content-set.png)
 
-Wanneer u de inhoudenset bewerkt, moet u mogelijk de geconfigureerde paden uitbreiden om de uitgesloten subpaden zichtbaar te maken.
+Wanneer u de inhoudenset bewerkt, kunt u de geconfigureerde paden uitbreiden om de uitgesloten subpaden zichtbaar te maken.
 
 ## Inhoud kopiëren {#copy-content}
 
-Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëren. Ga als volgt te werk om inhoud te kopiëren.
+Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëren. Voer de volgende stappen uit om inhoud te kopiëren.
 
 >[!NOTE]
-> Inhoudskopie mag niet worden gestart in een omgeving terwijl een [inhoudsoverdracht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) de bewerking wordt uitgevoerd in die omgeving.
+> Gebruik Inhoud kopiëren niet in een omgeving als een [inhoudsoverdracht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) de bewerking wordt uitgevoerd in die omgeving.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
@@ -163,7 +163,7 @@ Wanneer u begint inhoud te kopiëren, kan het proces een van de volgende statuss
 
 ### Een kopieerproces annuleren {#canceling}
 
-Als u een bewerking voor het kopiëren van inhoud moet afbreken nadat u deze hebt gestart, kunt u deze annuleren.
+Als u een bewerking voor het kopiëren van inhoud moet afbreken nadat u deze hebt gestart, kunt u deze desgewenst annuleren.
 
 Daartoe **Inhoudsactiviteit kopiëren** pagina, selecteert u de **Annuleren** actie van het elliptische menu van het exemplaarproces u eerder begon.
 
@@ -171,7 +171,7 @@ Daartoe **Inhoudsactiviteit kopiëren** pagina, selecteert u de **Annuleren** ac
 
 >[!NOTE]
 >
->Wanneer u een bewerking voor het kopiëren van inhoud annuleert, kan dit resulteren in een gedeeltelijke kopie van de inhoud in de doelomgeving. Dit kan het bestemmingsmilieu in een onbruikbaar te maken staat verlaten.
+>Wanneer u een bewerking voor het kopiëren van inhoud annuleert, kan dit resulteren in een gedeeltelijke kopie van de inhoud in de doelomgeving. Deze situatie kan het bestemmingsmilieu in een onbruikbaar geval verlaten.
 >
 >Als uw omgeving zich in een dergelijke toestand bevindt als gevolg van annulering, neemt u contact op met de klantenservice van Adobe voor hulp.
 
@@ -186,5 +186,5 @@ Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen.
 * Per inhoudenset kunnen maximaal 50 paden worden opgegeven. Uitgesloten paden zijn niet beperkt.
 * Het gereedschap voor het kopiëren van inhoud mag niet worden gebruikt als een kloon- of spiegelgereedschap omdat het geen verplaatste of verwijderde inhoud van de bron kan bijhouden.
 * Het gereedschap voor het kopiëren van inhoud heeft geen versiemogelijkheid en kan niet automatisch gewijzigde inhoud of nieuw gemaakte inhoud detecteren in de bronomgeving in een inhoudenset sinds de laatste bewerking voor het kopiëren van inhoud.
-   * Als u de doelomgeving pas wilt bijwerken nadat de inhoud voor het laatst is gekopieerd, moet u een inhoudsset maken en de paden opgeven in de broninstantie waar wijzigingen zijn aangebracht sinds de laatste bewerking voor het kopiëren van inhoud.
+   * Als u uw doelomgeving alleen wilt bijwerken met wijzigingen in de inhoud, moet u sinds de laatste bewerking voor het kopiëren van inhoud een inhoudsset maken. Geef vervolgens de paden op in de broninstantie waar wijzigingen zijn aangebracht sinds de laatste bewerking voor het kopiëren van inhoud.
 * Versiegegevens worden niet opgenomen in een inhoudskopie.

@@ -2,9 +2,9 @@
 title: Navigeren naar de Serviceverlener voor schermen
 description: In deze pagina wordt beschreven hoe u naar de Serviceverlener voor schermen kunt navigeren.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
@@ -15,21 +15,21 @@ ht-degree: 1%
 
 **Schermserviceprovider**, stelt de auteur van de inhoud, ontwikkelaars en beheerders in staat om weergaven en spelers voor het afspelen van inhoud te beheren zodra de inhoud aan de kanalen is toegevoegd. Zodra de gebruikers toegang tot AEM Cloud Service krijgen, moeten zij zich kunnen aanmelden bij Screens Services Provider.
 
-In deze sectie wordt beschreven hoe u Screens Services Provider kunt instellen.
+In deze sectie wordt beschreven hoe u de Serviceprovider voor schermen instelt.
 
 
 ## Doelstelling {#objective}
 
 De volgende sectie om de Dienstverlener van de Diensten van Schermen te vormen en te plaatsen.
 
-## Stappen aan de Leverancier van de Diensten van de Opstelling van de Schermen {#screens-services-provider}
+## Stappen om de Dienstverlener van de Diensten van het scherm te vestigen {#screens-services-provider}
 
-Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
+Voer de onderstaande stappen uit om de Serviceprovider voor schermen in te stellen:
 
 1. Ga vanuit [hier](https://experience.adobe.com/screens).
 
    >[!CAUTION]
-   >Als u toegang hebt tot meerdere organisaties, moet u ervoor zorgen dat u zich hebt aangemeld bij de juiste organisatie. Als u uw organisatie wilt wijzigen, klikt u op de naam van de organisatie in de rechterbovenhoek van het scherm en kiest u de gewenste organisatie waartoe u toegang wilt hebben.
+   >Als u toegang tot veelvoudige organisaties hebt, zorg ervoor dat u in correcte Organisatie hebt geregistreerd. Als u uw organisatie wilt wijzigen, klikt u op de naam van de organisatie in de rechterbovenhoek van het scherm en kiest u de gewenste organisatie waartoe u toegang nodig hebt.
 
 2. Klik op het tandwielpictogram naast Project (linkerbovenhoek)
 
@@ -41,7 +41,7 @@ Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Klikken op **Opslaan** verbinding maken met de inhoudprovider van schermen
+4. Klikken **Opslaan** verbinding maken met de inhoudprovider van schermen
 
 5. Selecteren **Kanalen** van de linkernavigatiebalk en klik op **openen in inhoudsprovider**.
 
@@ -53,4 +53,4 @@ Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u de Scherm Services Provider kunt instellen, kunt u naar [Scherminhoudprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) voor meer informatie .
+Nadat u hebt geleerd hoe u de Serviceverlener voor schermen instelt, navigeert u naar [Scherminhoudprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) voor meer informatie .

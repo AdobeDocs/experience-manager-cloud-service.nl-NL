@@ -2,9 +2,9 @@
 title: Repository Modernizer
 description: Repository Modernizer
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Repository Modernizer is een hulpprogramma dat is ontwikkeld om bestaande projec
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager as a Cloud Service voegt veel nieuwe functies en mogelijkheden toe aan uw AEM. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om verenigbaar te zijn met AEM Cloud Service. Op hoog niveau vereist AEM een scheiding van **content** en **code** in afzonderlijke subpakketten om de splitsing tussen muteerbare en onveranderlijke inhoud te eerbiedigen. Zie [AEM projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) voor meer informatie over de nieuwe AEM projectstructuur voor Cloud Service.
+Adobe Experience Manager as a Cloud Service voegt veel nieuwe functies en mogelijkheden toe aan uw AEM. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om verenigbaar te zijn met AEM Cloud Service. Op hoog niveau vereist AEM een scheiding van **content** en **code** in afzonderlijke subpakketten om de splitsing tussen muteerbare en onveranderlijke inhoud te respecteren. Zie [AEM projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) voor meer informatie over de nieuwe AEM projectstructuur voor Cloud Service.
 
 Met Repository Modernizer wordt een compatibele AEM Cloud Service-projectstructuur gemaakt door de volgende implementatiestructuur te maken:
 
@@ -32,14 +32,14 @@ Met Repository Modernizer wordt een compatibele AEM Cloud Service-projectstructu
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Via Adobe I/O CLI: Het wordt aanbevolen de Repository Modernizer te gebruiken via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor de Adobe I/O CLI).
+* Adobe Developer CLI : Het wordt aanbevolen de Repository Modernizer te gebruiken via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor Adobe Developer CLI).
 
-   Zie **[Git-bron: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** voor informatie over het installeren en gebruiken van de plug-in.
+  Zie **[Git-bron: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** zodat u leert installeren en gebruiken de stop.
 
 * Als zelfstandig hulpprogramma: De Repository Modernizer kan ook als standalone nut worden uitgevoerd.
 
-   Zie **[Git-bron: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** voor meer informatie over het gebruik van dit gereedschap.
+  Zie **[Git-bron: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** zodat u kunt leren hoe u dit gereedschap kunt gebruiken.
 
-   >[!NOTE]
-   >
-   >De Repository Modernizer wordt ontwikkeld met NodeJS. Het wordt aanbevolen NodeJS 10.0+ te installeren.
+  >[!NOTE]
+  >
+  >De Repository Modernizer wordt ontwikkeld met NodeJS. Het wordt aanbevolen NodeJS 10.0+ te installeren.

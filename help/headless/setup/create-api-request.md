@@ -2,9 +2,9 @@
 title: Een API-verzoek maken - headless Setup
 description: Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van inhoudsfragmenten en AEM middelen REST API voor het beheer van inhoudsfragmenten.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '654'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,8 @@ Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van in
 
 [Nu u enkele inhoudsfragmenten hebt gemaakt,](create-content-fragment.md) u kunt AEM API&#39;s gebruiken om ze zonder kop te leveren.
 
-* [De GraphQL API](/help/headless/graphql-api/content-fragments.md) staat u toe om verzoeken tot toegang te creëren en inhoudsfragmenten te leveren. Deze API biedt de meest robuuste set mogelijkheden voor het opvragen en gebruiken van inhoud met fragmentinhoud.
-   * Om dit te gebruiken, [eindpunten moeten worden gedefinieerd en ingeschakeld in AEM](/help/headless/graphql-api/graphql-endpoint.md)en, indien nodig, de [GraphiQL-interface geïnstalleerd](/help/headless/graphql-api/graphiql-ide.md).
+* [De GraphQL API](/help/headless/graphql-api/content-fragments.md) Hiermee kunt u aanvragen maken voor toegang tot en levering van inhoudsfragmenten. Deze API biedt de meest robuuste set mogelijkheden voor het opvragen en gebruiken van inhoud met fragmentinhoud.
+   * Om API te gebruiken, [eindpunten definiëren en inschakelen in AEM](/help/headless/graphql-api/graphql-endpoint.md)en, indien nodig, de [GraphiQL-interface geïnstalleerd](/help/headless/graphql-api/graphiql-ide.md).
 * [De REST-API voor middelen](/help/assets/content-fragments/assets-api-content-fragments.md) Hiermee kunt u inhoudsfragmenten (en andere elementen) maken en wijzigen.
 
 De rest van deze handleiding is gericht op GraphQL-toegang en levering van inhoudsfragmenten.
@@ -33,7 +33,7 @@ Voordat de GraphQL API&#39;s kunnen worden gebruikt, moet een GraphQL-eindpunt w
    * **Naam**: naam van het eindpunt; U kunt elke gewenste tekst invoeren.
    * **GraphQL-schema gebruiken dat wordt geleverd door**: gebruik dropdown om de vereiste configuratie te selecteren.
 1. Bevestigen met **Maken**.
-1. In de console a **Pad** wordt nu weergegeven op basis van de eerder gemaakte configuratie. Dit is het pad dat wordt gebruikt om GraphQL-query&#39;s uit te voeren.
+1. In de console **Pad** wordt weergegeven op basis van de eerder gemaakte configuratie. Dit pad wordt gebruikt om GraphQL-query&#39;s uit te voeren.
 
    ```
    /content/cq:graphql/<configuration-name>/endpoint
@@ -43,7 +43,7 @@ Meer informatie over inschakelen [Hier vindt u GraphQL-eindpunten](/help/headles
 
 ## Inhoud opvragen met GraphQL met GraphiQL
 
-De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerpen om inhoud te leveren. Deze vragen zullen over het algemeen slechts eens per eindpunt per model moeten worden overwogen. Met het oog op deze gids om aan de slag te gaan, zullen wij slechts één gids moeten creëren.
+De architecten van informatie ontwerpen vragen voor hun kanaal eindpunten om inhoud te leveren. Overweeg deze vragen slechts eenmaal per eindpunt, per model. In deze gids Aan de slag hoeft u slechts één gids te maken.
 
 GraphiQL is een IDE, inbegrepen in uw AEM milieu; het is na u toegankelijk/zichtbaar [uw eindpunten configureren](#enable-graphql-endpoint).
 
@@ -63,7 +63,7 @@ GraphiQL is een IDE, inbegrepen in uw AEM milieu; het is na u toegankelijk/zicht
 
    ![GraphiQL-editor](../assets/graphiql.png)
 
-1. Ervan uitgaande dat het model dat we hebben gemaakt, werd aangeroepen `person` met velden `firstName`, `lastName`, en `position`, kunnen wij een eenvoudige vraag bouwen om de inhoud van ons Inhoudsfragment terug te winnen.
+1. Ervan uitgaande dat het model dat u hebt gemaakt, werd aangeroepen `person` met velden `firstName`, `lastName`, en `position`kunt u een eenvoudige query maken om de inhoud van het inhoudsfragment op te halen.
 
    ```text
    query 
@@ -85,16 +85,16 @@ GraphiQL is een IDE, inbegrepen in uw AEM milieu; het is na u toegankelijk/zicht
 1. Klik op de knop **Query uitvoeren** of de knop `Ctrl-Enter` en de resultaten worden als JSON weergegeven in het rechterdeelvenster.
    ![GraphiQL-resultaten](../assets/graphiql-results.png)
 
-1. Klik op de knop **Docs** Klik op de koppeling rechtsboven op de pagina om documentatie in de context weer te geven waarmee u query&#39;s kunt maken die u kunt aanpassen aan uw eigen modellen.
+1. Klik in de rechterbovenhoek van de pagina op de knop **Docs** verbinding om in-context documentatie te tonen zodat kunt u uw vragen bouwen die aan uw eigen modellen aanpassen.
    ![GraphiQL-documentatie](../assets/graphiql-documentation.png)
 
-GraphQL laat gestructureerde vragen toe die niet alleen specifieke gegevensreeksen of individuele gegevensvoorwerpen kunnen richten, maar ook specifieke elementen van de voorwerpen, genestelde resultaten kunnen leveren, biedt steun voor vraagvariabelen, en veel meer.
+GraphQL laat gestructureerde vragen toe die niet alleen specifieke gegevensreeksen of individuele gegevensvoorwerpen kunnen richten, maar ook specifieke elementen van de voorwerpen, genestelde resultaten, biedt steun voor vraagvariabelen, en veel meer kunnen leveren.
 
-GraphQL kan herhalende API-aanvragen en overlevering voorkomen en in plaats daarvan kan bulksgewijs worden geleverd wat precies nodig is voor rendering als reactie op één API-query. De resulterende JSON kan worden gebruikt om gegevens te leveren aan andere sites of apps.
+GraphQL kan herhalende API-aanvragen en overlevering voorkomen en maakt het in plaats daarvan mogelijk om in grote hoeveelheden te leveren wat precies nodig is voor rendering als reactie op één API-query. De resulterende JSON kan worden gebruikt om gegevens te leveren aan andere sites of apps.
 
 ## Volgende stappen {#next-steps}
 
-Dat is het! U hebt nu een basiskennis van beheer van inhoud zonder kop in AEM. Natuurlijk zijn er veel meer middelen waar u zich verdiept voor een uitgebreid inzicht in de beschikbare functies.
+Dat is het! U hebt nu een basiskennis van beheer van inhoud zonder kop in AEM. Er zijn veel meer bronnen waar u dieper kunt duiken voor een volledig begrip van de beschikbare functies.
 
 * **[Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)** - Meer informatie over het maken en beheren van inhoudsfragmenten
 * **[Ondersteuning voor inhoudsfragmenten in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)** - Voor meer informatie over het rechtstreeks benaderen van AEM inhoud via de HTTP-API, via CRUD-bewerkingen (Maken, Lezen, Bijwerken, Verwijderen)

@@ -2,10 +2,10 @@
 title: Werken met paginaversies
 description: Versies van een pagina maken, vergelijken en herstellen
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
 source-wordcount: '1502'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,7 @@ U kunt een versie van uw bron maken op basis van:
    ![Versies in de tijdlijn](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
 1. Selecteren **Opslaan als versie**.
-1. Voer een **Label** en **Opmerking** indien nodig.
+1. Voer een **Label** en **Opmerking**, indien nodig.
 
    ![Label toevoegen voor een versie](/help/sites-cloud/authoring/assets/versions-add-label.png)
 
@@ -53,7 +53,7 @@ U kunt een versie van uw bron maken op basis van:
 1. Navigeer naar de pagina waarvoor u een versie wilt maken.
 1. Selecteer de pagina in [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Selecteer **Maken** van de werkbalk.
-1. Hetzelfde dialoogvenster wordt geopend. U kunt een **Label** en **Opmerking** indien nodig.
+1. Hetzelfde dialoogvenster wordt geopend. U kunt een **Label** en **Opmerking**, indien nodig.
 1. De nieuwe versie bevestigen met **Maken**.
 
 De tijdlijn wordt geopend met de informatie die wordt bijgewerkt om de nieuwe versie aan te geven.
@@ -70,11 +70,11 @@ Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op vers
 
    * **Versie herstellen**
 
-     Hiermee herstelt u versies van opgegeven pagina&#39;s in de geselecteerde map. dit kan ook het herstellen van pagina&#39;s omvatten die eerder zijn verwijderd.
+     Hiermee herstelt u versies van opgegeven pagina&#39;s in de geselecteerde map. Het kan ook het terugzetten van pagina&#39;s omvatten die eerder zijn geschrapt.
 
    * **Boom herstellen**
 
-     Zet een versie van een volledige boom op een gespecificeerde datum en tijd opnieuw op; hieronder kunnen pagina&#39;s vallen die eerder zijn verwijderd.
+     Zet een versie van een volledige boom op een gespecificeerde datum en tijd opnieuw op. Het kan ook pagina&#39;s bevatten die eerder zijn verwijderd.
 
 >[!NOTE]
 >
@@ -84,8 +84,8 @@ Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op vers
 >
 >1. Maak versies van een willekeurige pagina.
 >1. De initiële labels en namen van versieknooppunten zijn 1.0, 1.1, 1.2 enzovoort.
->1. De eerste versie opnieuw installeren; d.w.z. 1.0.
->1. Maak opnieuw nieuwe versies.
+>1. De eerste versie opnieuw installeren; dat wil zeggen, 1.0.
+>1. Maak opnieuw versies.
 >1. De gegenereerde labels en knooppuntnamen zijn nu 1.0.0, 1.0.1, 1.0.2 enzovoort.
 
 ### Versie herstellen {#revert-to-a-version}
@@ -103,7 +103,7 @@ Naar **Vorige versie** de geselecteerde pagina naar een vorige versie:
 
 ### Versie herstellen {#restore-version}
 
-Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de huidige map te herstellen. dit kan ook het herstellen van eerder verwijderde pagina&#39;s omvatten:
+Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de huidige map te herstellen. Het kan ook het terugzetten van pagina&#39;s omvatten die eerder zijn geschrapt:
 
 1. Navigeren naar en [selecteren](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), de vereiste map.
 
@@ -111,9 +111,9 @@ Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de hui
 
    >[!NOTE]
    >
-   >Indien:
+   >Als u één van beiden hebt:
    >
-   >* u één pagina hebt geselecteerd die nooit onderliggende pagina&#39;s heeft gehad,
+   >* één pagina heeft geselecteerd die nooit onderliggende pagina&#39;s heeft gehad,
    >* of geen van de pagina&#39;s in de map een versie heeft,
    >
    >De weergave wordt leeg omdat er geen toepasselijke versies zijn.
@@ -138,7 +138,7 @@ Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de hui
 
 ### Boom herstellen {#restore-tree}
 
-Deze methode kan worden gebruikt om een versie van een boom op een gespecificeerde datum en tijd te herstellen; hieronder kunnen pagina&#39;s vallen die eerder zijn verwijderd:
+Deze methode kan worden gebruikt om een versie van een boom op een gespecificeerde datum en tijd te herstellen. Deze pagina kan pagina&#39;s bevatten die eerder zijn verwijderd:
 
 1. Navigeren naar en [selecteren](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), de vereiste map.
 
@@ -146,7 +146,7 @@ Deze methode kan worden gebruikt om een versie van een boom op een gespecificeer
 
    ![Boom herstellen](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
-1. De datum- en tijdkiezer gebruiken op **Laatste versies op datum** om een andere versie van de structuur te selecteren - de versie die moet worden hersteld.
+1. De datum- en tijdkiezer gebruiken op **Laatste versies op datum** u kunt dus een andere versie van de structuur selecteren - de versie die u wilt herstellen.
 
 1. Markering instellen **Bewaarde niet-versioned pagina&#39;s** indien vereist:
 
@@ -198,12 +198,12 @@ Timewarp is een eigenschap die wordt ontworpen om het *gepubliceerd* staat van e
 
 Omdat content creation een doorlopend en gezamenlijk proces is, is het doel van Timewarp om auteurs in staat te stellen de gepubliceerde website in de loop van de tijd bij te houden, zodat ze kunnen begrijpen hoe de inhoud is gewijzigd. Deze functie gebruikt de paginaversies om de status van de publicatieomgeving te bepalen.
 
-Dit doet u als volgt:
+Deze functie gebruiken:
 
 * Het systeem zoekt naar de paginaversie die op het geselecteerde tijdstip actief was.
 * Dit betekent dat de weergegeven versie is gemaakt/geactiveerd *voor* het punt in tijd dat in Timewarp wordt geselecteerd.
-* Wanneer u naar een verwijderde pagina navigeert, wordt deze ook weergegeven, zolang de oude versies van de pagina nog beschikbaar zijn in de opslagplaats.
-* Als geen gepubliceerde versie wordt gevonden, dan zal Timewarp aan de huidige staat van de pagina op het auteursmilieu terugkeren (dit is om een fout/404 pagina te verhinderen, die het doorbladeren zou verhinderen).
+* Wanneer u naar een pagina navigeert die is verwijderd, wordt deze ook weergegeven, zolang de oude versies van de pagina nog beschikbaar zijn in de opslagplaats.
+* Als geen gepubliceerde versie wordt gevonden, keert Timewarp aan de huidige staat van de pagina op het auteursmilieu terug (de reden is om een fout/404 pagina te verhinderen, die het doorbladeren zou verhinderen).
 
 ### Tijdverdraaiing gebruiken {#using-timewarp}
 
@@ -213,23 +213,23 @@ Timewaring is een [mode](/help/sites-cloud/authoring/fundamentals/environment-to
 
    ![Modus Tijdlijn verdraaien](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. Stel in het dialoogvenster een doeldatum en -tijd in en klik of tik op **Datum instellen**. Als u geen tijd selecteert, wordt de huidige tijd standaard ingesteld.
+1. Stel in het dialoogvenster een datum en tijd in voor het doel en klik op **Datum instellen**. Als u geen tijd selecteert, wordt standaard de huidige tijd gebruikt.
 
    ![Tijdlijndatum tijdverdraaiingsdoel](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
-1. De pagina wordt weergegeven op basis van de datumset. De modus Tijdlijn verdraaien wordt aangegeven via de blauwe statusbalk boven in het venster. Gebruik de koppelingen op de statusbalk om een nieuwe doeldatum of einddatum voor de tijdverdraaiingsmodus te selecteren.
+1. De pagina wordt weergegeven op basis van de datumset. De modus Tijdlijn verdraaien wordt aangegeven met de blauwe statusbalk boven in het venster. Gebruik de koppelingen op de statusbalk, zodat u een nieuwe doeldatum kunt selecteren of de modus Tijdwijziging kunt afsluiten.
 
    ![In de modus Tijdlijn verdraaien](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 
 ### Beperkingen voor tijdverdraaiing {#timewarp-limitations}
 
-Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de tijd te reproduceren. Vanwege de complexiteit van het voortdurend ontwerpen van inhoud in AEM is dit echter niet altijd mogelijk. Deze beperkingen moeten in gedachten worden gehouden wanneer u Tijdverdraaiing gebruikt.
+Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de tijd te reproduceren. Vanwege de complexiteit van het voortdurend ontwerpen van inhoud in AEM is deze reproductie echter niet altijd mogelijk. Houd deze beperkingen in mening aangezien u Timewarp gebruikt.
 
-* **Tijdlijn verdraaien werkt op basis van gepubliceerde pagina&#39;s** - Tijdlijn-verdraaiing werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt de huidige pagina in de auteursomgeving weergegeven.
+* **Tijdlijn verdraaien werkt op basis van gepubliceerde pagina&#39;s** - Tijdlijn verdraaien werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt bij Timewarp de huidige pagina in de auteursomgeving weergegeven.
 * **Timewaring gebruikt paginaversies** - Als u navigeert naar een pagina die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als de oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
 * **Verwijderde versies beïnvloeden Timewarp** - Als versies uit de opslagplaats worden verwijderd, kan Timewarp niet de juiste weergave tonen.
 * **Timewarp is read-only** - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [terugzetten](#revert-to-a-version).
-* **Tijdlijn verdraaien is alleen gebaseerd op pagina-inhoud** - Als elementen (zoals code, css, assets/images, enz.) voor het renderen van de website zijn gewijzigd, zal de weergave afwijken van wat oorspronkelijk het geval was, aangezien deze items niet zijn geversieerd in de opslagplaats.
+* **Tijdverdraaiing is gebaseerd op pagina-inhoud** - Als elementen voor het renderen van de website zijn gewijzigd, zoals code, css en elementen, verschilt de weergave van wat oorspronkelijk was. Deze items zijn niet in de gegevensopslagruimte geversiveerd.
 
 >[!CAUTION]
 >

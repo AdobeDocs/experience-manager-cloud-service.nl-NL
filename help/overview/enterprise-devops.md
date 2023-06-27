@@ -1,20 +1,20 @@
 ---
 title: Enterprise DevOps
-description: Leer over de processen, methoden en communicatie die zijn vereist om implementatie en samenwerking te vereenvoudigen.
+description: Leer over de processen, de methodes, en de mededeling die worden vereist om plaatsing te verlichten en samenwerking te vereenvoudigen.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 94%
+source-wordcount: '1009'
+ht-degree: 48%
 
 ---
 
 # Enterprise DevOps{#enterprise-devops}
 
-DevOps omvat de processen, methoden en communicatie die nodig zijn voor de volgende stappen:
+DevOps omvat de processen, de methodes, en de mededeling die worden vereist om:
 
 * Eenvoudige implementatie van uw software in verschillende omgevingen.
-* Eenvoudige samenwerking tussen de ontwikkelings-, test- en implementatieteams.
+* Vereenvoudig de samenwerking tussen de ontwikkelings-, test- en implementatieteams.
 
 DevOps heeft als doel om de onderstaande problemen te voorkomen:
 
@@ -39,16 +39,16 @@ Adobe Experience Manager (AEM) as a Cloud Service bestaat gewoonlijk uit meerder
 
 ### Ontwikkeling {#development}
 
-Ontwikkelaars zijn verantwoordelijk voor het ontwikkelen en aanpassen van het voorgestelde project (website, mobiele apps, DAM-implementatie, enz.) met alle vereiste functionaliteit. Ontwikkelaars:
+De ontwikkelaars zijn verantwoordelijk voor het ontwikkelen en aanpassen van het voorgestelde project (website, mobiele toepassingen, DAM-implementatie, enzovoort), met alle vereiste functionaliteit. Ontwikkelaars:
 
 * ontwikkelen alle benodigde elementen en maken deze op maat, bijvoorbeeld sjablonen, componenten, workflows, applicaties
 * realiseren het ontwerp
-* ontwikkelen de services en scripts die nodig zijn voor de implementatie van de vereiste functionaliteit
+* ontwikkelen de noodzakelijke diensten en de manuscripten zodat kunt u de vereiste functionaliteit uitvoeren
 
-De configuratie van de [ontwikkelomgeving](/help/implementing/developing/introduction/development-guidelines.md) is afhankelijk van verschillende factoren, hoewel deze meestal bestaat uit:
+De configuratie van de [ontwikkeling](/help/implementing/developing/introduction/development-guidelines.md) het milieu kan van diverse factoren afhangen, hoewel het typisch bestaat uit:
 
-* Een geïntegreerd ontwikkelingssysteem met versiebeheer dat dient als een geïntegreerde codebasis. Dit systeem wordt gebruikt om de code van de individuele ontwikkelomgevingen van de verschillende ontwikkelaars samen te voegen en te consolideren.
-* Een persoonlijke omgeving voor elke ontwikkelaar; gewoonlijk op hun lokale machine. Op geplande tijdstippen wordt de code gesynchroniseerd met het versiebeheersysteem
+* Een geïntegreerd ontwikkelingssysteem met versiecontrole om een geïntegreerde codebasis te verstrekken. Deze geïntegreerde codebasis wordt gebruikt om code van de individuele ontwikkelomgevingen samen te voegen en te consolideren die door elke ontwikkelaar worden gebruikt.
+* Een persoonlijke omgeving voor elke ontwikkelaar; gewoonlijk op hun lokale machine. Met de juiste intervallen wordt de code gesynchroniseerd met het versiebeheersysteem
 
 Afhankelijk van de schaal van uw systeem kan de ontwikkelomgeving beschikken over zowel auteur- als publicatie-instanties.
 
@@ -58,26 +58,26 @@ Deze omgeving wordt door het team voor kwaliteitsborging gebruikt om uw nieuwe s
 
 ### Staging {#staging}
 
-De stagingomgeving moet een spiegel zijn van de productieomgeving: configuratie, code en content:
+De testomgeving moet een spiegel zijn van de productieomgeving - configuratie, code en inhoud:
 
 * In deze omgeving worden scripts getest waarmee de daadwerkelijke implementatie wordt uitgevoerd.
-* Deze omgeving kan worden toegepast voor definitieve tests (ontwerp, functionaliteit en interfaces) voorafgaand aan de implementatie op productieomgevingen.
+* Het kan voor definitieve tests (ontwerp, functionaliteit, en interfaces) worden gebruikt alvorens aan de productiemilieu&#39;s op te stellen.
 * Hoewel de stagingomgeving nooit identiek kan zijn aan de productieomgeving, moet deze zo dicht mogelijk bij de uiteindelijk gewenste niveaus voor prestaties en belasting liggen.
 
 ### Productie - Auteur en Publicatie {#production-author-and-publish}
 
-De productieomgeving bestaat uit de omgevingen die nodig zijn om uw implementatie daadwerkelijk te [ontwerpen en te publiceren](/help/sites-cloud/authoring/getting-started/concepts.md).
+De productieomgeving bestaat uit de omgevingen die [auteur en publicatie](/help/sites-cloud/authoring/getting-started/concepts.md) uw implementatie.
 
 Een productieomgeving bestaat uit ten minste één auteurinstantie en één publicatie-instantie:
 
 * Een [auteurinstantie](#author) voor de invoer van content.
 * Een [publicatie-instantie](#publish) voor content die aan uw bezoekers/gebruikers ter beschikking wordt gesteld.
 
-Afhankelijk van de schaal van het project, bestaat een project vaak uit verscheidene auteur- en/of publicatie-instanties. Op een lager niveau kan de repository ook naar meerdere instanties worden geclusterd.
+Afhankelijk van de schaal van het project, bestaat het vaak uit verscheidene auteurs, of uitgevers, of allebei. Op een lager niveau kan de repository ook naar meerdere instanties worden geclusterd.
 
 #### Auteur {#author}
 
-Auteurinstanties bevinden zich gewoonlijk achter de interne firewall. Dit is de omgeving waarin u en uw collega&#39;s ontwerptaken uitvoeren, zoals:
+Gewoonlijk bevinden de instanties van de auteur zich achter de interne firewall. Deze interne firewall is de omgeving waarin u en uw collega&#39;s ontwerptaken uitvoeren, zoals:
 
 * het volledige systeem beheren
 * uw content invoeren
@@ -86,34 +86,34 @@ Auteurinstanties bevinden zich gewoonlijk achter de interne firewall. Dit is de 
 
 Content die is geactiveerd, wordt in een pakket geplaatst en naar de replicatiewachtrij van de auteuromgeving verzonden. Het replicatieproces verplaatst de content dan naar de publicatieomgeving.
 
-Als u gegevens die in een publicatieomgeving zijn gegenereerd, wilt terugkeren naar de auteursomgeving, zal een replicatielistener in de auteuromgeving de publicatieomgeving opiniepeilen en deze inhoud ophalen vanuit de omgekeerde replicatieoutbox van de publicatieomgeving.
+Als u gegevens die in een publicatieomgeving zijn gegenereerd, wilt terugkeren naar de auteursomgeving, pollt een replicatielistener in de auteuromgeving de publicatieomgeving en haalt deze inhoud op uit de omgekeerde replicatieoutbox van de publicatieomgeving.
 
 #### Publicatie {#publish}
 
-Een publicatieomgeving bevindt zich gewoonlijk in de &#39;gedemilitariseerde zone&#39; (DMZ). In deze omgeving hebben bezoekers toegang tot uw content (bijvoorbeeld via een website of in de vorm van een mobiele app) en kunnen ze met de content aan de slag, ofwel via een openbaar netwerk, of binnen uw intranet. Een publicatieomgeving:
+Meestal bevindt een publicatie-omgeving zich in de DMZ (Demilitarisated Zone). In deze omgeving hebben bezoekers toegang tot uw inhoud (bijvoorbeeld via een website of in de vorm van een mobiele toepassing) en communiceren ze hiermee via het openbare programma of via uw intranet. Een publicatieomgeving:
 
 * bevat content die is gerepliceerd vanuit de auteuromgeving
 * stelt die content ter beschikking van de bezoekers
 * slaat gebruikersgegevens op die door uw bezoekers worden gegenereerd, zoals opmerkingen of andere formulierverzendingen
 * kan worden geconfigureerd zodat dergelijke gebruikersgegevens via een postvak UIT voor omgekeerde replicatie kan worden teruggestuurd naar de auteuromgeving
 
-De publicatieomgeving genereert uw content dynamisch in realtime. Ook kan de content voor elke gebruiker afzonderlijk worden aangepast.
+De publicatieomgeving genereert uw inhoud dynamisch in real-time en de inhoud kan voor elke gebruiker afzonderlijk worden aangepast.
 
 ## Codeverplaatsing {#code-movement}
 
-Code moet altijd van beneden naar boven worden doorgegeven:
+Code altijd van beneden naar boven doorgeven:
 
 * de code wordt aanvankelijk ontwikkeld op de lokale omgeving en vervolgens geïntegreerd in de ontwikkelomgevingen
-* gevolgd door grondig testen van de kwaliteitscontroleomgeving(en)
+* gevolgd door grondig testen op de QA-omgevingen
 * vervolgens opnieuw getest op testomgevingen
 * en pas hierna kan de code worden geïmplementeerd in de productieomgevingen
 
-De code (bijvoorbeeld aangepaste functionaliteit van webtoepassingen en ontwerpsjablonen) wordt meestal overgedragen door pakketten te exporteren en te importeren tussen de verschillende opslagplaatsen voor inhoud. Waar zinvol kan deze replicatie als automatisch proces worden geconfigureerd.
+Doorgaans wordt de code (bijvoorbeeld aangepaste functionaliteit van webtoepassingen en ontwerpsjablonen) overgedragen door pakketten te exporteren en te importeren tussen de verschillende opslagruimten voor inhoud. Waar zinvol kan deze replicatie als automatisch proces worden geconfigureerd.
 
-Code-implementatie wordt vaak geactiveerd door AEM as a Cloud Service-projecten:
+Projecten op AEM as a Cloud Service activeren vaak de implementatie van code:
 
 * Automatisch: voor overdracht naar de ontwikkelings- en kwaliteitscontroleomgevingen.
-* Handmatig: implementaties in de staging- en productieomgevingen gebeurt op een meer beheerste en vaak handmatige manier; automatisering is echter mogelijk als dat nodig is.
+* Handmatig: de implementatie in de staging- en productieomgevingen gebeurt op een meer beheerste en vaak handmatige manier; automatisering is echter mogelijk , indien nodig .
 
 ![Codeverplaatsing](assets/code-movement.png)
 
@@ -121,17 +121,17 @@ Code-implementatie wordt vaak geactiveerd door AEM as a Cloud Service-projecten:
 
 Content die is bedoeld voor productie, moet **altijd** worden geschreven op de productieauteurinstantie.
 
-Content mag geen code volgen die van een lagere naar een hogere omgeving gaat. Als dit zou gebeuren, en auteurs content maken op lokale computers of lagere omgevingen en de content vervolgens overbrengen naar de productieomgeving, is de kans groot dat er fouten en inconsistenties ontstaan.
+Inhoud mag geen code volgen die van lagere naar hogere omgevingen overgaat. Dat wil zeggen dat auteurs inhoud maken op lokale computers of lagere omgevingen en deze vervolgens naar de productieomgeving verplaatsen geen goede praktijk is. De reden is dat het fouten en inconsistenties kan introduceren.
 
 Productiecontent moet van de productieomgeving naar de stagingomgeving worden verplaatst. Zo biedt de stagingomgeving een efficiënte en nauwkeurige testomgeving.
 
 >[!NOTE]
 >
->Dit betekent niet dat stagingcontent voortdurend moet worden gesynchroniseerd met productiecontent (regelmatige updates zijn voldoende), maar met name voordat een nieuwe code-iteratie wordt getest. Content in de kwaliteitscontrole- en ontwikkelingsomgevingen hoeft niet zo vaak te worden bijgewerkt, maar moet alleen een goede representatie van de productiecontent zijn.
+>Deze methode betekent niet dat de halteplaatsen voortdurend moeten worden gesynchroniseerd met de productie; regelmatige updates zijn voldoende , maar vooral voordat een nieuwe versie van code wordt getest . Inhoud in de QA- en ontwikkelomgevingen hoeft niet zo vaak te worden bijgewerkt. Het moet alleen een goede weergave zijn van de productie-inhoud.
 
-Content kan worden overgedragen:
+Inhoud kan worden overgedragen:
 
 * Tussen de verschillende omgevingen: door pakketten te exporteren en te importeren.
-* Tussen verschillende instanties: door de content rechtstreeks te repliceren (AEM as a Cloud Service) via een HTTP- of HTTPS-verbinding.
+* Tussen verschillende instanties - door de inhoud rechtstreeks te repliceren (AEM as a Cloud Service replicatie) (via een HTTP- of HTTPS-verbinding).
 
 ![Content verplaatsen](assets/content-movement.png)

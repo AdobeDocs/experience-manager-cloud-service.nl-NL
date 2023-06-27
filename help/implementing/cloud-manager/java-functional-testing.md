@@ -1,17 +1,17 @@
 ---
-title: Functionele Java-tests
-description: Leer hoe u functioneel Java-tests schrijft voor AEM as a Cloud Service
+title: Java&trade; Functionele tests
+description: Leer hoe u Java&trade schrijft; functionele tests voor AEM as a Cloud Service
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
 
-# Functioneel testen in Java
+# Functioneel testen in Java™
 
-Leer hoe u functioneel Java-tests schrijft voor AEM as a Cloud Service
+Meer informatie over het schrijven van functionele Java™-tests voor AEM as a Cloud Service
 
 ## Aan de slag met functionele tests {#getting-started-functional-tests}
 
@@ -19,7 +19,7 @@ Nadat u een nieuwe gegevensopslagruimte voor code hebt gemaakt in Cloud Manager,
 
 >[!NOTE]
 >
->Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de nieuwste versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de meest recente versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
 Wanneer u de inhoud van de `it.tests` kunt u de map gebruiken als basis voor uw eigen tests en vervolgens:
 
@@ -31,13 +31,13 @@ Wanneer u de inhoud van de `it.tests` kunt u de map gebruiken als basis voor uw 
 
 De zelfde hulpmiddelen die Adobe gebruikt om product functionele tests te schrijven kunnen worden gebruikt om uw douane functionele tests te schrijven. Gebruik de [functionele producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als voorbeeld van hoe te om uw tests te schrijven.
 
-De code voor een aangepaste functionele test is Java-code in het dialoogvenster `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. [Zie het AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor monstertests.
+De code voor een aangepaste functionele test is Java™-code in het dialoogvenster `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. [Zie het AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor monstertests.
 
-De tests worden uitgevoerd op door Adobe onderhouden testinfrastructuren met minimaal twee auteurinstanties, twee publiceerinstanties en een dispatcherconfiguratie. Dit betekent dat uw aangepaste functionele tests worden uitgevoerd tegen de gehele AEM stapel.
+De tests worden in werking gesteld op Adobe-handhaven testinfrastructuur met inbegrip van minstens twee auteurinstanties, twee publiceer instanties, en een configuratie van de Verzender. Deze opstelling betekent dat uw douane functionele tests tegen de volledige AEM stapel lopen.
 
 ### Structuur van functionele tests {#functional-tests-structure}
 
-Aangepaste functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden ingezet voor AEM. Over het algemeen zou dit een afzonderlijke module Maven zijn. Het resulterende JAR-bestand moet alle vereiste afhankelijkheden bevatten en wordt gewoonlijk gemaakt met de opdracht `maven-assembly-plugin` met de `jar-with-dependencies` descriptor.
+Aangepaste functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden ingezet voor AEM. Over het algemeen zou deze build een aparte module Maven zijn. Het resulterende JAR-bestand moet alle vereiste afhankelijkheden bevatten en wordt gewoonlijk gemaakt met de opdracht `maven-assembly-plugin` met de `jar-with-dependencies` descriptor.
 
 Bovendien moet de JAR de `Cloud-Manager-TestType` manifestkoptekst ingesteld op `integration-test`.
 
@@ -81,9 +81,9 @@ Een klasse met de naam `com.myco.tests.aem.it.ExampleIT` zou worden uitgevoerd, 
 
 Bovendien moet de testcode onder een pakket met de naam `it` (Het filter voor uitsluitingen van dekking is `**/it/**/*.java`).
 
-De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is zodanig ontworpen en geconfigureerd dat deze compatibel is met de conventies die door de `aem-testing-clients` testbibliotheek. Ontwikkelaars worden ten zeerste aangeraden deze bibliotheek te gebruiken en de best practices ervan te volgen.
+De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is zodanig ontworpen en geconfigureerd dat deze compatibel is met de conventies die door de `aem-testing-clients` testbibliotheek. Ontwikkelaars worden aangeraden deze bibliotheek te gebruiken en de beste praktijken ervan te volgen.
 
-Raadpleeg de [`aem-testing-clients` GitHub-repo](https://github.com/adobe/aem-testing-clients) voor meer informatie .
+Zie [`aem-testing-clients` GitHub-repo](https://github.com/adobe/aem-testing-clients) voor meer informatie .
 
 >[!TIP]
 >
@@ -103,13 +103,13 @@ Raadpleeg de [`aem-testing-clients` GitHub-repo](https://github.com/adobe/aem-te
 | Type | Waarde | Beschrijving |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | Hoeveelheid CPU-tijd gereserveerd per testuitvoering |
-| Geheugen | 0.5Gi | Hoeveelheid geheugen dat aan de test is toegewezen, waarde in bytes |
-| Time-out | 30m | De duur waarna de test wordt beëindigd. |
-| Aanbevolen duur | 15m | Adobe raadt aan de tests te schrijven om deze tijd niet langer te laten duren. |
+| Geheugen | 0,5 Gi | Hoeveelheid geheugen dat aan de test is toegewezen, waarde in bytes |
+| Time-out | 30 m | De duur waarna de test wordt beëindigd. |
+| Aanbevolen duur | 15 m | Adobe raadt aan de tests te schrijven om deze tijd niet langer te laten duren. |
 
 >[!NOTE]
 >
-> Indien u meer middelen nodig hebt, maak dan een geval voor de klantenservice en beschrijf uw gebruikscase. ons team zal uw verzoek beoordelen en passende hulp verlenen .
+> Als u meer middelen nodig hebt, maakt u een geval voor de klantenservice en beschrijft u uw gebruiksscenario. Hulp nodig bij uw aanvraag en -aanbod
 
 
 ### Uitvoering lokale test {#local-test-execution}
@@ -118,9 +118,9 @@ Voordat u functionele tests activeert in een Cloud Manager-pijplijn, is het raad
 
 #### Het lopen in winde {#running-in-an-ide}
 
-Omdat testklassen JUnit-tests zijn, kunnen ze vanuit gangbare Java IDE&#39;s zoals Eclipse, IntelliJ en NetBeans worden uitgevoerd. Omdat zowel de functionele tests van het product als de douane functionele tests op de zelfde technologie gebaseerd zijn, kunnen allebei plaatselijk worden in werking gesteld door de producttests in uw douanetests te kopiëren.
+Omdat testklassen JUnit-tests zijn, kunnen ze worden uitgevoerd vanuit mainstream Java™ IDE&#39;s zoals Eclipse, IntelliJ en NetBeans. Omdat zowel de functionele tests van het product als de douane functionele tests op de zelfde technologie gebaseerd zijn, kunnen allebei plaatselijk worden in werking gesteld door de producttests in uw douanetests te kopiëren.
 
-Bij het uitvoeren van deze tests is het echter noodzakelijk een aantal verschillende systeemeigenschappen in te stellen die door de `aem-testing-clients` (en de onderliggende Sling Testing Clients)-bibliotheek.
+Bij het uitvoeren van deze tests is het echter noodzakelijk verschillende systeemeigenschappen in te stellen die door de `aem-testing-clients` (en de onderliggende Sling Testing Clients)-bibliotheek.
 
 De systeemeigenschappen zijn als volgt.
 
@@ -128,11 +128,11 @@ De systeemeigenschappen zijn als volgt.
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
 | `sling.it.instances` | aantal instanties dat moet worden ingesteld op `2` | `2` |
 | `sling.it.instance.url.1` | moet worden ingesteld op de URL van de auteur | `http://localhost:4502` |
-| `sling.it.instance.runmode.1` | de runmode van de eerste instantie moet worden ingesteld op `author` | `author` |
+| `sling.it.instance.runmode.1` | uitvoeringsmodus van de eerste instantie, moet worden ingesteld op `author` | `author` |
 | `sling.it.instance.adminUser.1` | moet worden ingesteld op de scriptgebruiker. | `admin` |
 | `sling.it.instance.adminPassword.1` | moet worden ingesteld op het beheerderswachtwoord van de auteur. |                         |
 | `sling.it.instance.url.2` | moet worden ingesteld op de publicatie-URL | `http://localhost:4503` |
-| `sling.it.instance.runmode.2` | de runmode van de tweede instantie moet worden ingesteld op `publish` | `publish` |
+| `sling.it.instance.runmode.2` | uitvoeringsmodus van de tweede instantie, moet worden ingesteld op `publish` | `publish` |
 | `sling.it.instance.adminUser.2` | moet worden ingesteld op de gebruiker van de publicatiebeheerder. | `admin` |
 | `sling.it.instance.adminPassword.2` | moet worden ingesteld op het wachtwoord voor publicatiebeheer. |                         |
 
@@ -142,7 +142,7 @@ De systeemeigenschappen zijn als volgt.
 
 1. Open een shell en navigeer naar de `it.tests` in uw opslagplaats.
 
-1. Voer het volgende bevel uit die de noodzakelijke vangers verstrekken om de tests te beginnen gebruikend Maven.
+1. Voer het volgende bevel uit die de noodzakelijke parameters verstrekken om de tests te beginnen gebruikend Maven.
 
 ```shell
 mvn verify -Plocal \
