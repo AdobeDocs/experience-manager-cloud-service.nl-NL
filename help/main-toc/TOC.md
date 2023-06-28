@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 9e8ad6d9fe0cf749b0f7981164d05e051d531248
 workflow-type: tm+mt
-source-wordcount: '4094'
+source-wordcount: '4139'
 ht-degree: 20%
 
 ---
@@ -501,6 +501,23 @@ ht-degree: 20%
       + [Veelgestelde vragen over HTTP2-levering van content](/help/assets/dynamic-media/http2faq.md)
       + [Flash Viewers end of Life](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Einde levensduur DHTML-viewers](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+
++ Werken met de middelenweergave {#assets-view}
+   + [Aan de slag](/help/assets/get-started-assets-view.md)
+   + [Mijn werkruimte](/help/assets/my-workspace-assets-view.md)
+   + [Ondersteunde bestandstypen en gebruiksgevallen](/help/assets/supported-file-formats-assets-view.md)
+   + [Elementen weergeven](/help/assets/navigate-assets-view.md)
+   + [Elementen uploaden en toevoegen](/help/assets/add-delete-assets-view.md)
+   + [Elementen zoeken en ontdekken](/help/assets/search-assets-view.md)
+   + [Taken voor middelenbeheer](/help/assets/manage-organize-assets-view.md)
+   + [Afbeeldingen bewerken](/help/assets/edit-images-assets-view.md)
+   + [Metagegevens van elementen beheren](/help/assets/metadata-assets-view.md)
+   + [Assets delen](/help/assets/share-links-for-assets-view.md)
+   + [Verzamelingen beheren](/help/assets/manage-collections-assets-view.md)
+   + [Middelen, mappen en verzamelingen controleren](/help/assets/manage-notifications-assets-view.md)
+   + [Rapporten beheren](/help/assets/manage-reports-assets-view.md)
+   + [Tags beheren](/help/assets/tagging-management-assets-view.md)
+
    + Integratie met Adobe Workfront {#integrations}
       + [Integratie met [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Toewijzing van metagegevens van elementen configureren](/help/assets/configure-asset-metadata-mapping.md)
