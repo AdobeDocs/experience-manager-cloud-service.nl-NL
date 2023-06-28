@@ -2,10 +2,10 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
+source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 2%
+source-wordcount: '604'
+ht-degree: 0%
 
 ---
 
@@ -22,6 +22,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12441 same
 ### Verbeteringen {#enhancements-12441}
 
 - SITES-8769: StijlImpl-aanroepen in ResponsiveGrid verbeteren
+- Forms-5054: Toegevoegde ondersteuning voor alle [beelden](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) ondersteund door Adobe Sign.
 
 ### Opgeloste problemen {#fixed-issues-12441}
 
@@ -37,6 +38,21 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12441 same
 - SITES-13559: MSM: &#39;Is niet wijzigbaar&#39;-uitzondering gegenereerd bij uitrollen van onderdeel
 - SITES-11757: MSM: Inherit rollout configuration from Parent wordt not reverback for child pages
 - SITES-14073: Sites-beheerder: CSV-rapport mislukt bij 500 wanneer u geen eigenschap selecteert om te exporteren
+- Forms-7648: Validatie voor het veld Maximum aantal cijfers werkt niet voor de component Numerieke vak.
+- Forms-8177: Wanneer de Forms-service actief is, worden de foutmeldingen &#39;com.adobe.adobe.formsndocuments.publish.AssetReferenceProvider Kan de instellingen voor middelenafhankelijkheden niet ophalen&#39; weergegeven.
+- Forms-8300: Wanneer een gebruiker probeert om een taak te delegeren na het openen van het, herlaadt de afgevaardigde reactie de taak, in plaats van het openen van AEM Inbox UI van de gebruiker.
+- Forms-8500: In Microsoft® Edge-browser met de optie IE-modus ingeschakeld, kan HTML5 Forms niet worden geopend.
+- Forms-8541: Bij het renderen van een adaptieve Forms treedt een uitzondering op bij Null-aanwijzer.
+- Forms-8964: Wanneer een formulier wordt geopend op een Android™-apparaat op Google Chrome of Mozilla Firefox, kan de tekst die is ingevoerd in de component Tekstvak niet worden verwijderd.
+- Forms-9026: Wanneer een gebruiker een adaptief formulier maakt op basis van een complex en geldig JSON-schema, gerelateerde JSON-schemavelden naar de Adaptive Forms Editor sleept om adaptieve Forms-velden te maken en het venster Adaptive Forms Editor vernieuwt, worden alle velden verwijderd en wordt de Adaptive Forms-editor leeg weergegeven.
+- Forms-9263: Wanneer de weergavetekst van een optie voor selectievakjes een speciaal teken bevat, kunnen gebruikers dergelijke selectievakjes niet selecteren.
+- Forms-8668: Tijdens het weergeven van een voorbeeld van een PDF van een formulier worden enkele niet-vereiste Java™-stackdumps weergegeven in de foutlogboeken. Er zijn echter geen problemen met de weergave van het formulier.
+- Forms-8116: Wanneer regels worden toegepast op de adaptieve Forms Container-component, worden de toegepaste regels niet opgeslagen.
+- Forms-7906: Wanneer een adaptief formulier wordt toegevoegd aan een AEM Sites Container-component, kan de regeleditor niet worden geopend.
+- Forms-8846: De eigenschap Bind reference werkt niet voor de component Adaptive Forms attachments.
+- Forms-9072: Als u een schema doorzoekt terwijl u een formulierfragment maakt, retourneert het zoekresultaat geen schema voor selectie.
+- Forms: Oplossing voor problemen met betrekking tot toegankelijkheid om de toegankelijkheid van AEM Forms-functies te verbeteren.
+
 
 ### Bekende problemen {#known-issues-12441}
 
