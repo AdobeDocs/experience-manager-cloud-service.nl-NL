@@ -4,9 +4,9 @@ description: Zodra u uw wolkenmiddelen hebt gevormd, zult u uw teamtoegang tot A
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
 >title="AEM productprofielen toewijzen"
->abstract="Je mag Experience Manager Assets niet gebruiken. Neem contact op met uw beheerder."
+>abstract="Je mag Experience Manager Assets niet gebruiken. Neem contact op met de beheerder."
 
 In dit deel van het [aan boord gaan,](overview.md) u zult leren hoe te om u teamtoegang tot AEM te verlenen gebruikend AEM productprofielen.
 
