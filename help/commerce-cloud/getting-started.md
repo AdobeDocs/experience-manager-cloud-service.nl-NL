@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -63,15 +63,15 @@ Nadat het eindpunt en naar keuze een vergunningskopbal voor gefaseerde catalogus
 
 ![CM-omgevingsinformatie](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### Als Adobe Developer CLI  {#adobe-cli}
+### Als Adobe I/O CLI  {#adobe-cli}
 
-Ga als volgt te werk om AEM te verbinden met een handelsoplossing via Adobe Developer CLI:
+Om AEM met een handelsoplossing door middel van Adobe I/O CLI te verbinden, volg deze stappen:
 
-1. De Adobe Developer CLI ophalen met de plug-in Cloud Manager
+1. De Adobe I/O CLI ophalen met de plug-in Cloud Manager
 
-   Controleer de [Adobe Cloud Manager-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) over het downloaden, instellen en gebruiken van de [Adobe Developer CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager CLI-insteekmodule](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Controleer de [Adobe Cloud Manager-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) over het downloaden, instellen en gebruiken van de [Adobe I/O CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager CLI-insteekmodule](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-2. Verifieer Adobe Developer CLI met het AEM as a Cloud Service programma
+2. Verifieer Adobe I/O CLI met het AEM as a Cloud Service programma
 
 3. Stel de `COMMERCE_ENDPOINT` variabele in Cloud Manager
 

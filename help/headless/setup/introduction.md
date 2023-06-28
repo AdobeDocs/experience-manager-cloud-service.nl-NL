@@ -2,9 +2,9 @@
 title: Installatie zonder koppen
 description: Met deze snelstartgids leert u de basisprincipes van AEM krachtige, koploze functies, zoals Content Models, Content Fragments en de GraphQL API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Hieronder ziet u een eenvoudig pad voor het maken, beheren en leveren van ervari
 >
 >Deze gids aan de slag veronderstelt kennis van zowel AEM als headless technologieën.
 >
->Als u niet bekend bent met AEM of zonder kop, raadpleegt u onze Headless Documentation Journey voor een complete inleiding op zowel de kop als de AEM.
+>Als u nieuw bent om zonder kop te zijn, zie of de Dagbladen van de Documentatie van begin tot eind voor een inleiding van begin tot eind aan zowel hoofd als hoe AEM het steunt.
 >
 >* [Headless Developer Journey](/help/journey-headless/developer/overview.md)
 >* [Reis voor architect zonder hoofdinhoud](/help/journey-headless/architect/overview.md)
@@ -36,9 +36,9 @@ De beschreven taken zijn noodzakelijk voor een basisdemonstratie van begin tot e
 
 In een productiesituatie worden de taken echter meerdere malen door verschillende personen uitgevoerd. Bijvoorbeeld:
 
-* **Beheerders** hoeft u de initiële configuratie en mapstructuur voor de inhoud normaal slechts eenmaal of sporadisch in te stellen.
-* **Informatiearchitecten** in het algemeen zullen nieuwe modellen worden toegevoegd naarmate de behoeften van de organisatie zich ontwikkelen .
-* **Inhoudsauteurs** Hiermee wordt voortdurend nieuwe inhoud gemaakt als Inhoudsfragmenten op basis van de modellen die door de architecten zijn gedefinieerd.
+* **Beheerders** moet de initiële configuratie en mapstructuur voor de inhoud normaal slechts eenmaal of sporadisch instellen.
+* **Informatiearchitecten** Voeg over het algemeen nieuwe modellen toe aangezien de behoeften van de organisatie evolueren.
+* **Inhoudsauteurs** voortdurend inhoud maken als inhoudsfragmenten op basis van de modellen die door de architecten zijn gedefinieerd.
 
 ## Volgende stap {#next-step}
 

@@ -1,27 +1,26 @@
 ---
 title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
-description: Leer GraphQL met AEM gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query's te verkennen.
+description: Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen kunt bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1752'
 ht-degree: 0%
 
 ---
 
 # GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s {#learn-graphql-with-aem-sample-content-queries}
 
-Leer GraphQL met AEM gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query&#39;s te verkennen.
+Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen kunt bedienen door voorbeeldinhoud en query&#39;s te verkennen.
 
 >[!NOTE]
 >
->Deze pagina moet samen met:
+>Lees deze pagina samen met het volgende:
 >
 >* [Contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 >* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
-
 
 Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, helpt het om enkele praktische voorbeelden te zien.
 
@@ -42,13 +41,12 @@ Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekpr
 
 >[!NOTE]
 >
->Afhankelijk van uw instantie kunt u rechtstreeks toegang krijgen tot de [GraphiQL-interface inbegrepen bij AEM GraphQL API](/help/headless/graphql-api/graphiql-ide.md) voor het indienen van en het testen van vragen.
+>Afhankelijk van uw instantie kunt u rechtstreeks toegang krijgen tot [GraphiQL-interface inbegrepen bij AEM GraphQL API](/help/headless/graphql-api/graphiql-ide.md) voor het indienen van en het testen van vragen.
 >
 >U kunt tot de vraagredacteur van één van beiden toegang hebben:
 >
 >* **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
 >* rechtstreeks; bijvoorbeeld: `http://localhost:4502/aem/graphiql.html`
-
 
 >[!NOTE]
 >
@@ -56,7 +54,7 @@ Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekpr
 
 ### Voorbeeldquery - Alle beschikbare schema&#39;s en datatypen {#sample-all-schemes-datatypes}
 
-Dit alles wordt geretourneerd `types` voor alle beschikbare schema&#39;s.
+Retourneert alles `types` voor alle beschikbare schema&#39;s.
 
 **Voorbeeldquery**
 
@@ -149,7 +147,7 @@ Dit alles wordt geretourneerd `types` voor alle beschikbare schema&#39;s.
 
 ### Voorbeeldquery - Alle informatie over alle steden {#sample-all-information-all-cities}
 
-Om alle informatie over alle steden terug te winnen, kunt u de zeer basisvraag gebruiken:
+Om alle informatie over alle steden terug te winnen, kunt u de volgende basisvraag gebruiken:
 **Voorbeeldquery**
 
 ```graphql
@@ -160,7 +158,7 @@ Om alle informatie over alle steden terug te winnen, kunt u de zeer basisvraag g
 }
 ```
 
-Wanneer uitgevoerd, zal het systeem automatisch de vraag uitbreiden om alle gebieden te omvatten:
+Bij uitvoering wordt de query automatisch uitgebreid met alle velden:
 
 ```graphql
 {
@@ -232,7 +230,7 @@ Wanneer uitgevoerd, zal het systeem automatisch de vraag uitbreiden om alle gebi
 
 ### Voorbeeldquery - Namen van alle steden {#sample-names-all-cities}
 
-Dit is een eenvoudige vraag om terug te keren `name`van alle vermeldingen in de `city`schema.
+Een eenvoudige query om de `name`van alle vermeldingen in de `city`schema.
 
 **Voorbeeldquery**
 
@@ -282,7 +280,7 @@ query {
 
 ### Voorbeeldquery - één specifiek stedenfragment {#sample-single-specific-city-fragment}
 
-Dit is een query om de details van één fragmentitem te retourneren op een specifieke locatie in de opslagplaats.
+Een query om de details van één fragmentitem te retourneren op een specifieke locatie in de opslagplaats.
 
 **Voorbeeldquery**
 
@@ -323,7 +321,7 @@ Dit is een query om de details van één fragmentitem te retourneren op een spec
 
 ### Voorbeeldquery - Alle steden met een benoemde variatie {#sample-cities-named-variation}
 
-Als u een nieuwe variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`), voor de `city` Berlijn, dan kunt u een vraag gebruiken om details van de variatie terug te keren.
+Als u een variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`), voor de `city` Berlijn, dan kunt u een vraag gebruiken om details van de variatie terug te keren.
 
 **Voorbeeldquery**
 
@@ -368,7 +366,7 @@ Als u een nieuwe variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_c
 
 Als u:
 
-* diverse tags maken, met de naam `Tourism` : `Business`, `City Break`, `Holiday`
+* verschillende tags maken, met de naam `Tourism` : `Business`, `City Break`, `Holiday`
 * en deze toe te wijzen aan de Master variatie van diverse `City` instances
 
 Dan kunt u een vraag gebruiken om details van terug te keren `name` en `tags`van alle items die zijn getagd als Stadseinden in het dialoogvenster `city`schema.
@@ -546,7 +544,7 @@ query {
 
 ### Voorbeeldquery - Alle personen met de naam &quot;Jobs&quot; of &quot;Smith&quot; {#sample-all-persons-jobs-smith}
 
-Hiermee filtert u alles `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
+Een query die alles filtert `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
 
 **Voorbeeldquery**
 
@@ -600,7 +598,7 @@ query {
 
 ### Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot; {#sample-all-persons-not-jobs}
 
-Hiermee filtert u alles `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
+Een query die alles filtert `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
 
 **Voorbeeldquery**
 
@@ -1154,19 +1152,18 @@ query {
 
 ## Voorbeeldquery&#39;s met het WKND-project {#sample-queries-using-wknd-project}
 
-Deze steekproefvragen zijn gebaseerd op het project WKND. Dit heeft:
+Deze steekproefvragen zijn gebaseerd op het project WKND. Het heeft het volgende:
 
 * Modellen voor inhoudsfragmenten zijn beschikbaar onder:
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Inhoudsfragmenten (en andere inhoud) beschikbaar onder:
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
-
-   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
 
 >[!NOTE]
 >
->Aangezien de resultaten omvangrijk kunnen zijn, worden ze hier niet weergegeven.
+>Omdat de resultaten extensief kunnen zijn, worden ze hier niet gereproduceerd.
 
 ### Voorbeeldquery voor alle inhoudsfragmenten van een bepaald model met de opgegeven eigenschappen {#sample-wknd-all-model-properties}
 
@@ -1259,7 +1256,7 @@ Deze query vraagt om:
 Deze voorbeeldquery vraagt om:
 
 * voor één inhoudsfragment van type `article` op een bepaald pad
-   * alle indelingen van inhoud:
+   * in dat fragment, alle indelingen van inhoud:
       * HTML
       * Markering
       * Onbewerkte tekst
@@ -1318,7 +1315,7 @@ Deze voorbeeldquery vraagt om:
 Deze query vraagt om:
 
 * voor één inhoudsfragment van type `article` op een bepaald pad
-   * binnen dat, de weg en de auteur van het referenced (genestelde) fragment
+   * binnen dat fragment, het pad en de auteur van het fragment waarnaar wordt verwezen (geneste fragment)
 
 >[!NOTE]
 >
@@ -1541,7 +1538,7 @@ Deze query vraagt om:
 Deze query vraagt om:
 
 * voor één inhoudsfragment van type `author` op een bepaald pad
-   * binnen dat kader de gegevens betreffende de wijziging: `another`
+   * binnen dat fragment, de gegevens met betrekking tot de variatie: `another`
 
 **Voorbeeldquery**
 
@@ -1567,7 +1564,7 @@ Deze query vraagt om:
 
 >[!NOTE]
 >
->Dit zal reserve voor de Fragmenten van de Inhoud tonen die geen a hebben [Variatie](/help/headless/graphql-api/content-fragments.md#variations) van de opgegeven naam.
+>Deze query toont fallback voor Content Fragments die geen [Variatie](/help/headless/graphql-api/content-fragments.md#variations) van de opgegeven naam.
 
 **Voorbeeldquery**
 
@@ -1808,7 +1805,7 @@ De steekproefvragen zijn gebaseerd op de volgende structuur, die gebruikt:
 
 ### Voorbeeld van modellen van inhoudsfragmenten (schema&#39;s) {#sample-content-fragment-models-schemas}
 
-Voor de steekproefvragen, zullen wij de volgende Modellen van de Inhoud, en hun onderlinge relaties (verwijzingen ->) gebruiken:
+Voor de steekproefvragen, gebruikt u de volgende Modellen van Inhoud, en hun onderlinge relaties (verwijzingen ->):
 
 * [Bedrijf](#model-company)
 -> [Persoon](#model-person)
@@ -1822,7 +1819,7 @@ De basisvelden voor het bedrijf zijn:
 
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
-| Bedrijfsnaam | Tekst met één regel |  |
+| Bedrijfsnaam | Tekst met één regel | |
 | CEO | Fragmentverwijzing (enkele) | [Persoon](#model-person) |
 | Werknemers | Fragmentverwijzing (meerdere velden) | [Persoon](#model-person) |
 
@@ -1832,8 +1829,8 @@ De velden waarin een persoon wordt gedefinieerd, die ook een werknemer kan zijn:
 
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
-| Naam | Tekst met één regel |  |
-| Voornaam | Tekst met één regel |  |
+| Naam | Tekst met één regel | |
+| Voornaam | Tekst met één regel | |
 | Awards | Fragmentverwijzing (meerdere velden) | [Uitreiking](#model-award) |
 
 #### Uitreiking {#model-award}
@@ -1842,8 +1839,8 @@ De velden waarin een onderscheiding wordt gedefinieerd, zijn:
 
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
-| Sneltoets/id | Tekst met één regel |  |
-| Titel | Tekst met één regel |  |
+| Sneltoets/id | Tekst met één regel | |
+| Titel | Tekst met één regel | |
 
 #### Plaats {#model-city}
 
@@ -1851,10 +1848,10 @@ De velden voor het definiëren van een stad zijn:
 
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
-| Naam | Tekst met één regel |  |
-| Land | Tekst met één regel |  |
-| Bevolking | Getal |  |
-| Categorieën | Tags |  |
+| Naam | Tekst met één regel | |
+| Land | Tekst met één regel | |
+| Bevolking | Getal | |
+| Categorieën | Tags | |
 
 ### Voorbeeldinhoudsfragmenten {#sample-content-fragments}
 
@@ -1872,14 +1869,14 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 
 | Naam | Voornaam | Awards |
 |--- |--- |--- |
-| Lincoln | Abe |  |
-| Smith | Adam |  |
+| Lincoln | Abe | |
+| Smith | Adam | |
 | Slade | Tussenruimte | Gameblitz<br>Gamestar |
-| Marsh | Duke |  |
-| Smith | Joe |  |
+| Marsh | Duke | |
+| Smith | Joe | |
 | Uitsnijden | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |
-| Taken | Steve |  |
+| Taken | Steve | |
 
 #### Uitreiking {#fragment-award}
 
