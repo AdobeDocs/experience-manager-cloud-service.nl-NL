@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Tik op de knop **[!UICONTROL Currency Value]** in het formulier en stel de volge
 
 >[!NOTE]
 >
-> Als u de v2-configuratie reCAPTCHA selecteert met de grootte als [!UICONTROL Invisible] de optie tonen/verbergen is dan niet van toepassing.
+> Wanneer u een reCAPTCHA v2-configuratie selecteert en de grootte is ingesteld op [!UICONTROL Invisible], blijft de optie weergeven/verbergen uitgeschakeld.
 
 ### CAPTCHA valideren {#validate-captcha}
 

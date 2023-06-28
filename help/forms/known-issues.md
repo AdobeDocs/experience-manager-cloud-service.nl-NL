@@ -6,9 +6,9 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -31,8 +31,9 @@ Voordat u begint met [!DNL AEM Forms] as a Cloud Service, herzie de volgende bek
 
 * AEM Forms as a Cloud Service genereert geen miniaturen voor XDP- en JSON-schemabestanden. De service geeft standaardpictogrammen weer in plaats van miniaturen.
 
-   ![Bekende uitgave van Forms-miniatuur](/help/forms/assets/forms-tumbnail-known-issue.png)
+  ![Bekende uitgave van Forms-miniatuur](/help/forms/assets/forms-tumbnail-known-issue.png)
 
+* Wanneer u een schema met herhaalbare elementen gebruikt om een op kerncomponenten gebaseerde adaptieve vorm te maken, werkt de optie om herhaalbare elementen uit gegevensmodelstructuur te slepen en neer te zetten in de Adaptieve Forms Editor niet.
 
 ## Beperkingen {#limitations}
 
