@@ -2,10 +2,10 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39696141a50bf8204d37341a85a4f4a8acae69db
+source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 1%
+source-wordcount: '297'
+ht-degree: 2%
 
 ---
 
@@ -13,44 +13,36 @@ ht-degree: 1%
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 12255 {#release-12255}
+## Release 12441 {#release-12441}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12255 samengevat, die op 13 juni 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 12142.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12441 samengevat, die op 27 juni 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 12255.
 
-2023.6.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
+2023.7.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
-### Verbeteringen {#enhancements-12255}
+### Verbeteringen {#enhancements-12441}
+
+- SITES-8769: StijlImpl-aanroepen in ResponsiveGrid verbeteren
+
+### Opgeloste problemen {#fixed-issues-12441}
+
+- Verschillende updates met betrekking tot toegankelijkheid
+- SITES-12688: Pagina-editor: Logische operator OF werkt niet correct in zoekopdracht met Asset Finder
+- SITES-4951: Pagina-editor: Bij zoeken met tags in paginaeditor worden geen subtags gevonden
+- SITES-12465: Geniet van fragmenten: Pijltoetsen werken niet in het dialoogvenster Experience-fragmentcomponent
+- SITES-12893: Geniet van fragmenten: Cirkelverwijzingsvalidatie toepassen voor ervaringsfragmenten
+- SITES-12715: Geniet van fragmenten: Cloud-serviceconfiguraties die zijn toegepast op de map Experience fragments blijven niet behouden
+- SITES-13097: Geniet van fragmenten: Kan ervaringsfragmenten niet toevoegen aan een vertaalproject
+- SITES-13165: GraphQL: Standaardgedrag voor filteren van null-waarden herstellen
+- SITES-12577: Koppelingencontrole: Transformer not rewriting links
+- SITES-13559: MSM: &#39;Is niet wijzigbaar&#39;-uitzondering gegenereerd bij uitrollen van onderdeel
+- SITES-11757: MSM: Inherit rollout configuration from Parent wordt not reverback for child pages
+- SITES-14073: Sites-beheerder: CSV-rapport mislukt bij 500 wanneer u geen eigenschap selecteert om te exporteren
+
+### Bekende problemen {#known-issues-12441}
 
 Geen.
 
-### Opgeloste problemen {#fixed-issues-12255}
-
-- Verschillende updates met betrekking tot toegankelijkheid
-- ASSETS-15116 - &quot;Ga naar locatie&quot;-optie beschikbaar in de weergave Middelen zoeken
-- ASSETS-17453 - (Dynamic Media) Kan geen aangepaste miniatuur voor video&#39;s selecteren
-- ASSETS-19279 - Assets download archive voor grote bestanden
-- ACTIVA-19544 - Laatst gewijzigd door gebruiker voor updates van activa
-- ASSETS-20146 - (Touch UI) Assets Download Report Failed Reports due to validation errors up always on the top of the list page for reports
-- ASSETS-21056 - Optimize Asset Reference Performance to minimize writes
-- ASSETS-21909 - Smart crop video kan niet worden weergegeven wanneer de video niet kan worden gedownload
-- ASSETS-22261 - LinkShare downloadt de mapstructuur die inconsistent is met het downloaden van de interface Middelen
-- ASSETS-22550 - Deelvenster met zoekfilters wordt nu standaard geopend
-- ASSETS-22920 - Unpublishing folder from Brand Portal does not mark the assets within as unpublished
-- ASSETS-22922 - Uitgeschakelde voorinstellingen van viewer worden weergegeven in de Dynamic Media-component
-- ASSETS-23461 - Brand Portal Quick Publish from Assets search view
-- ASSETS-23466 - InDesign Server ontoegankelijke koppelingsafhandeling kan AAL-koppelingen met spaties niet oplossen
-- ASSETS-23469 - Default Asset Filters botsen met aangepaste filters
-- ASSETS-23981 - Sorteerfunctie voor titels die niet werken in verzamelingskoppelingen
-- ACTIVA-24723 - Gepubliceerde activa werden opnieuw verwerkt zonder tussenkomst van de gebruiker
-- GRANITE-45385 - Boomactivering migreren om een afdruktaak te gebruiken in plaats van een workflow
-
-### Bekende problemen {#known-issues-12255}
-
-- ASSETS-25729 - Het menu Weergave schakelt uit
-- ACTIVA-25728 - Optie voor herverwerking van activa niet beschikbaar in de zoekweergave
-- ASSETS-22603 - sommige Download-type kolommen van het Rapport van Activa tonen &quot;ongeldige&quot;waarden in UI. Dit heeft geen invloed op downloadbare CSV.
-
-### Ingesloten technologieën {#embedded-tech-12255}
+### Ingesloten technologieën {#embedded-tech-12441}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
