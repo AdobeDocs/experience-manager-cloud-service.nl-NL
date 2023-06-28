@@ -4,9 +4,9 @@ description: Gebruik het model Inhoudsfragment dat u eerder hebt gemaakt om inho
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Nieuwe inhoud maken"
->abstract="Gebruikend het model dat u in de vorige module creeerde, zult u leren hoe te om inhoud tot stand te brengen die voor paginaontwerp, of als basis van uw inhoud zonder kop kan worden gebruikt."
+>abstract="Gebruikend het model dat u in de vorige module creeerde, leert u hoe te om inhoud tot stand te brengen die voor paginauteurs, of als basis van uw inhoud zonder kop kan worden gebruikt."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 Inhoudsfragmenten vertegenwoordigen uw inhoud zonder kop en zijn gebaseerd op vooraf gedefinieerde structuren, de zogenaamde Content Fragment-modellen. U hebt al een model gemaakt in een vorige module.
 
-In deze module maakt u een nieuw inhoudsfragment op basis van dat model met behulp van de console voor inhoudsfragmenten. U kunt de Content Fragment-console beschouwen als een bibliotheek met inhoud zonder kop. Gebruik dit besturingselement om nieuwe inhoudsfragmenten te maken en bestaande fragmenten te beheren.
+In deze module maakt u een nieuw inhoudsfragment op basis van dat model met de console voor inhoudsfragmenten. U kunt de Content Fragment-console beschouwen als een bibliotheek met inhoud zonder kop. Gebruik dit besturingselement om nieuwe inhoudsfragmenten te maken en bestaande fragmenten te beheren.
 
 1. Tik of klik op de knop **Maken** knoop bij top-right van de console.
 
@@ -49,7 +49,7 @@ In deze module maakt u een nieuw inhoudsfragment op basis van dat model met behu
 
 >[!TIP]
 >
->Afhankelijk van de browserinstellingen kan het nieuwe browsertabblad worden onderdrukt door een pop-upblokkering. Als het nieuwe fragment niet wordt geopend nadat u op **Maken en openen**, controleer de browserinstellingen.
+>Afhankelijk van de browserinstellingen kan het nieuwe browsertabblad worden onderdrukt door een pop-upblokkering. Als het nieuwe fragment niet wordt geopend nadat u op **Maken en openen**, controleer uw browserinstellingen.
 
 ## Inhoud toevoegen aan uw inhoudsfragment {#add-content}
 
