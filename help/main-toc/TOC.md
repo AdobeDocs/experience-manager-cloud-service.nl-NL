@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 40393340131a72a86503c00a0a2e9e78a28b7e69
+source-git-commit: 9424bef8a9a2c7ab4afb06e2a08e15336f858b7b
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4139'
 ht-degree: 20%
 
 ---
@@ -501,23 +501,22 @@ ht-degree: 20%
       + [Veelgestelde vragen over HTTP2-levering van content](/help/assets/dynamic-media/http2faq.md)
       + [Flash Viewers end of Life](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Einde levensduur DHTML-viewers](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-
-+ Werken met de middelenweergave {#assets-view}
-   + [Aan de slag](/help/assets/get-started-assets-view.md)
-   + [Mijn werkruimte](/help/assets/my-workspace-assets-view.md)
-   + [Ondersteunde bestandstypen en gebruiksgevallen](/help/assets/supported-file-formats-assets-view.md)
-   + [Elementen weergeven](/help/assets/navigate-assets-view.md)
-   + [Elementen uploaden en toevoegen](/help/assets/add-delete-assets-view.md)
-   + [Elementen zoeken en ontdekken](/help/assets/search-assets-view.md)
-   + [Taken voor middelenbeheer](/help/assets/manage-organize-assets-view.md)
-   + [Afbeeldingen bewerken](/help/assets/edit-images-assets-view.md)
-   + [Metagegevens van elementen beheren](/help/assets/metadata-assets-view.md)
-   + [Assets delen](/help/assets/share-links-for-assets-view.md)
-   + [Verzamelingen beheren](/help/assets/manage-collections-assets-view.md)
-   + [Middelen, mappen en verzamelingen controleren](/help/assets/manage-notifications-assets-view.md)
-   + [Rapporten beheren](/help/assets/manage-reports-assets-view.md)
-   + [Tags beheren](/help/assets/tagging-management-assets-view.md)
-
+   + Werken met de middelenweergave {#assets-view}
+      + [Inductie](/help/assets/assets-view-introduction.md)
+      + [Aan de slag](/help/assets/get-started-assets-view.md)
+      + [Mijn werkruimte](/help/assets/my-workspace-assets-view.md)
+      + [Ondersteunde bestandstypen en gebruiksgevallen](/help/assets/supported-file-formats-assets-view.md)
+      + [Elementen weergeven](/help/assets/navigate-assets-view.md)
+      + [Elementen uploaden en toevoegen](/help/assets/add-delete-assets-view.md)
+      + [Elementen zoeken en ontdekken](/help/assets/search-assets-view.md)
+      + [Taken voor middelenbeheer](/help/assets/manage-organize-assets-view.md)
+      + [Afbeeldingen bewerken](/help/assets/edit-images-assets-view.md)
+      + [Metagegevens van elementen beheren](/help/assets/metadata-assets-view.md)
+      + [Assets delen](/help/assets/share-links-for-assets-view.md)
+      + [Verzamelingen beheren](/help/assets/manage-collections-assets-view.md)
+      + [Middelen, mappen en verzamelingen controleren](/help/assets/manage-notifications-assets-view.md)
+      + [Rapporten beheren](/help/assets/manage-reports-assets-view.md)
+      + [Tags beheren](/help/assets/tagging-management-assets-view.md)
    + Integratie met Adobe Workfront {#integrations}
       + [Integratie met [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Toewijzing van metagegevens van elementen configureren](/help/assets/configure-asset-metadata-mapping.md)
@@ -525,6 +524,7 @@ ht-degree: 20%
       + [Externe afhankelijkheden voor bestaande installaties verwijderen](/help/assets/remove-external-dependencies.md)
       + [Configureren [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Bijwerken [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+
 + Forms {#forms}
    + Overzicht {#forms-overview}
       + [Inleiding](/help/forms/home.md)

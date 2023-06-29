@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: f075c6032edb23f9cf52ad53ae2a628915e76ec2
+source-git-commit: d0deca8acbf6049d5be6c27275eedf9b52b27658
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '740'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Hieronder worden de belangrijkste voordelen van activa als een [!DNL Cloud Servi
 * **Constante bewaking**: De controle van het systeem is geautomatiseerde en ingebouwde controles en trekkers helpen de prestaties, de beschikbaarheid, en algemene robuustheid handhaven.
 * **Hapeloze implementaties**: Experience Manager in de Cloud-bewerkingen wordt volledig geautomatiseerd en hoeft niet handmatig te worden uitgevoerd. Voor geautomatiseerde implementaties automatiseert de component Cloud Manager (CM) de opbouw van implementeerbare Docker-afbeeldingen die uw aangepaste code bevatten.
 
-## Beschikbare persoonlijke ervaringen
+## Beschikbare persoonlijke ervaringen {#persona-based-experiences}
 
 Adobe biedt robuuste DAM-oplossingen (Digital Asset Management) waarmee u optimaal kunt profiteren van uw digitale middelen. Adobe Experience Manager Assets heeft twee aparte ervaringen die dezelfde gegevensopslagruimte voor Cloud Services gebruiken:
 
@@ -51,7 +51,7 @@ DAM-bibliotheken, ontwikkelaars en supergebruikers kunnen de Admin-weergave blij
 
 ![add-tags](assets/newui-overview.svg)
 
-Zie de weergave Elementen voor informatie over hoe u toegang kunt krijgen tot de weergave Middelen en over enkele vereenvoudigingen die deze aanbiedt via de beheerweergave.
+Voor informatie over hoe u toegang krijgt tot de weergave Middelen en enkele van de vereenvoudigingen die deze weergeeft via de beheerweergave, raadpleegt u [Inleiding tot de weergave Middelen](/help/assets/assets-view-introduction.md).
 
 ## Nieuwe middelenmogelijkheden {#whats-new-assets}
 
