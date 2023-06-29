@@ -2,10 +2,10 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
+source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 0%
+source-wordcount: '600'
+ht-degree: 1%
 
 ---
 
@@ -38,8 +38,8 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12441 same
 - SITES-13559: MSM: &#39;Is niet wijzigbaar&#39;-uitzondering gegenereerd bij uitrollen van onderdeel
 - SITES-11757: MSM: Inherit rollout configuration from Parent wordt not reverback for child pages
 - SITES-14073: Sites-beheerder: CSV-rapport mislukt bij 500 wanneer u geen eigenschap selecteert om te exporteren
-- Forms-7648: Validatie voor het veld Maximum aantal cijfers werkt niet voor de component Numerieke vak.
-- Forms-8177: Wanneer de Forms-service actief is, worden de foutmeldingen &#39;com.adobe.adobe.formsndocuments.publish.AssetReferenceProvider Kan de instellingen voor middelenafhankelijkheden niet ophalen&#39; weergegeven.
+- Forms-7648: Kan maximum aantal cijfers in een component Numeriek vak niet valideren. Het validatiescript werkt niet.
+- Forms-8177: Wanneer de Forms-service actief is, wordt `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` foutmeldingen.
 - Forms-8300: Wanneer een gebruiker probeert om een taak te delegeren na het openen van het, herlaadt de afgevaardigde reactie de taak, in plaats van het openen van AEM Inbox UI van de gebruiker.
 - Forms-8500: In Microsoft® Edge-browser met de optie IE-modus ingeschakeld, kan HTML5 Forms niet worden geopend.
 - Forms-8541: Bij het renderen van een adaptieve Forms treedt een uitzondering op bij Null-aanwijzer.
@@ -52,7 +52,6 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12441 same
 - Forms-8846: De eigenschap Bind reference werkt niet voor de component Adaptive Forms attachments.
 - Forms-9072: Als u een schema doorzoekt terwijl u een formulierfragment maakt, retourneert het zoekresultaat geen schema voor selectie.
 - Forms: Oplossing voor problemen met betrekking tot toegankelijkheid om de toegankelijkheid van AEM Forms-functies te verbeteren.
-
 
 ### Bekende problemen {#known-issues-12441}
 
