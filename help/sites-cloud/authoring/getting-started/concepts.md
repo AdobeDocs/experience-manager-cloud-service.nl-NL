@@ -2,9 +2,9 @@
 title: Authoring van concepten
 description: Concepten van ontwerpen in AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Deze omgevingen hebben invloed op het beschikbaar stellen van inhoud op uw websi
 
 De auteursomgeving verstrekt de mechanismen om, deze inhoud tot stand te brengen bij te werken en te herzien alvorens het daadwerkelijk te publiceren:
 
-* Een auteur maakt de inhoud en bekijkt deze. Inhoud kan van vele verschillende typen zijn, zoals pagina&#39;s, elementen en publicaties.
+* Een auteur maakt de inhoud en bekijkt deze. Inhoud kan van verschillende typen zijn, zoals pagina&#39;s, elementen en publicaties.
 * Deze inhoud wordt op een gegeven moment gepubliceerd op uw website.
 
 ![Diagram van auteur, uitgever, en verzenders](/help/sites-cloud/authoring/assets/author-publish.png)

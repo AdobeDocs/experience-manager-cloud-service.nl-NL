@@ -4,9 +4,9 @@ description: Begrijp hoe u met behulp van variaties inhoud voor het fragment kun
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 7%
 
 ---
@@ -197,8 +197,12 @@ U kunt dan een nieuw fragment maken door:
 1. Eigenschappen specificeren; bijvoorbeeld **Titel**.
 1. Selecteren **Maken**.
 1. Tot slot:
-   1. **Gereed** retourneert (naar het oorspronkelijke fragment) en verwijst naar het nieuwe fragment.
-   1. **Openen** verwijst naar het nieuwe fragment en opent het nieuwe fragment, voor bewerking, op een nieuw browsertabblad.
+   1. **Gereed**:
+      * retourneert (naar het oorspronkelijke fragment)
+      * verwijst naar het nieuwe fragment
+   1. **Open**:
+      * verwijst naar het nieuwe fragment
+      * opent het nieuwe fragment, voor bewerking, op een nieuw browsertabblad
 
 ### Belangrijkste statistieken weergeven {#viewing-key-statistics}
 

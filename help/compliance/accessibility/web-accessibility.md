@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines
 description: Een inleiding in Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '384'
 ht-degree: 97%
 
 ---
@@ -64,4 +64,4 @@ Met Adobe Experience Manager kunnen contentauteurs en/of website-eigenaars webco
 
 ## Toegankelijkheid in Adobe {#accessibility-at-adobe}
 
-Zie voor meer informatie [Adobe Toegankelijkheidsinformatiecentrum](https://www.adobe.com/accessibility/).
+Zie voor meer informatie de [Adobe Toegankelijkheidsinformatiecentrum](https://www.adobe.com/accessibility/).

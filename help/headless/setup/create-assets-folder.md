@@ -2,9 +2,9 @@
 title: Een middelenmap maken - Instellingen zonder kop
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten def
 
 U moet echter eerst een map met middelen maken waarin u deze wilt opslaan.
 
-Elementenmappen worden gebruikt om [traditionele inhoudselementen ordenen](/help/assets/manage-digital-assets.md) zoals afbeeldingen en video- en inhoudsfragmenten.
+Elementenmappen worden gebruikt om [traditionele inhoudselementen ordenen](/help/assets/manage-digital-assets.md) zoals afbeeldingen en video&#39;s, samen met inhoudsfragmenten.
 
 ## Een middelenmap maken {#how-to-create-an-assets-folder}
 

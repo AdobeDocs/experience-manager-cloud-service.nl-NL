@@ -4,7 +4,7 @@ description: Integreren met Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Houd rekening met het volgende wanneer u de velden Adobe Target Tenant ID en Ado
 In beide gevallen:
 
 * Door gebrek, wordt de Code van de Cliënt (als eerst toegevoegd) ook automatisch gekopieerd in het gebied van identiteitskaart van de Aannemer.
-* U kunt naar keuze de standaardIdentiteitskaart veranderen van de Haan.
+* Indien nodig, kunt u de standaard reeks van identiteitskaart van de Huurder veranderen.
 * De achtergrond vraag aan Doel is gebaseerd op huuridentiteitskaart en de cliënt zijvraag aan Doel is gebaseerd op de Code van de Cliënt.
 
 Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM as a Cloud Service. Zorg ervoor dat **beide** de velden bevatten de juiste gegevens, afhankelijk van uw vereisten.
@@ -156,4 +156,4 @@ Ga voor meer informatie over het samenstellen en publiceren naar [page](https://
 
 >[!NOTE]
 >
->Oudere configuraties worden nog steeds ondersteund voor bestaande klanten (zonder de optie om deze te bewerken of te maken). Verouderde configuraties maken deel uit van inhoudspakketten die door klanten met VSTS worden geüpload.
+>Oudere configuraties worden nog steeds ondersteund voor bestaande klanten (zonder de optie om te bewerken of te maken). Verouderde configuraties maken deel uit van inhoudspakketten die door klanten met VSTS worden geüpload.

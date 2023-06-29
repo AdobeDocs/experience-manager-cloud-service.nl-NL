@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters
 description: Leer hoe u de inhoudsfragmenten voor geoptimaliseerde GraphQL-filters in Adobe Experience Manager as a Cloud Service kunt bijwerken voor levering van inhoud zonder kop.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '909'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
       <td>Alles </td>
       <td> </td>
       <td>Variabele </td>
-      <td>Interval (seconden) om resterende inhoudsfragmenten tot de volgende limiet te verwerken<br>Dit interval wordt ook beschouwd als een wachttijd alvorens de baan te beginnen, en een vertraging tussen verwerking van elk verdere aantal CF_MIGRATION_LIMIT van CFs.<br>(*)</td>
+      <td>Interval (seconden) om resterende inhoudsfragmenten tot de volgende limiet te verwerken<br>Dit interval wordt ook beschouwd als zowel een wachttijd alvorens de baan te beginnen, als een vertraging tussen verwerking van elk verdere aantal CF_MIGRATION_LIMIT van CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>

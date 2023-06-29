@@ -2,9 +2,9 @@
 title: Variaties - Fragmentinhoud ontwerpen (elementen - Inhoudsfragmenten)
 description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler kunnen maken door u toe te staan om inhoud voor het fragment te ontwerpen en dan variaties van die inhoud volgens doel tot stand te brengen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2438'
 ht-degree: 8%
 
 ---
@@ -195,8 +195,12 @@ U kunt dan een nieuw fragment maken door:
 1. Eigenschappen specificeren; bijvoorbeeld **Titel**.
 1. Selecteren **Maken**.
 1. Tot slot:
-   1. **Gereed** retourneert (naar het oorspronkelijke fragment) en verwijst naar het nieuwe fragment.
-   1. **Openen** verwijst naar het nieuwe fragment en opent het nieuwe fragment, voor bewerking, op een nieuw browsertabblad.
+   1. **Gereed**:
+      * retourneert (naar het oorspronkelijke fragment)
+      * verwijst naar het nieuwe fragment
+   1. **Open**:
+      * verwijst naar het nieuwe fragment
+      * Hiermee opent u het nieuwe fragment om het te bewerken in een nieuw browsertabblad
 
 ### Belangrijkste statistieken weergeven {#viewing-key-statistics}
 

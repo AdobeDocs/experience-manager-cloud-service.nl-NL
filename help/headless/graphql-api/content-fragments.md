@@ -3,7 +3,7 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '4918'
 ht-degree: 0%
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 Deze query retourneert de volledige lijst met auteurs. Auteurs zonder de `another` de wijziging wordt teruggebracht naar de oorspronkelijke gegevens (`_variation` rapporteren `master` in dit geval).
 
-Als u de lijst wilt beperken tot auteurs die de opgegeven variatie leveren (en auteurs overslaan die terugvallen op de oorspronkelijke gegevens), past u een [filter](#filtering):
+Een [filter](#filtering), als u de lijst wilt beperken tot auteurs die de opgegeven variatie leveren (en auteurs overslaan die terugvallen naar de oorspronkelijke gegevens):
 
 ```graphql
 query($variation: String!) {
