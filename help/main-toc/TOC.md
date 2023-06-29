@@ -8,7 +8,7 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9424bef8a9a2c7ab4afb06e2a08e15336f858b7b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 20%
@@ -502,7 +502,7 @@ ht-degree: 20%
       + [Flash Viewers end of Life](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Einde levensduur DHTML-viewers](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Werken met de middelenweergave {#assets-view}
-      + [Inductie](/help/assets/assets-view-introduction.md)
+      + [Inleiding](/help/assets/assets-view-introduction.md)
       + [Aan de slag](/help/assets/get-started-assets-view.md)
       + [Mijn werkruimte](/help/assets/my-workspace-assets-view.md)
       + [Ondersteunde bestandstypen en gebruiksgevallen](/help/assets/supported-file-formats-assets-view.md)

@@ -3,14 +3,14 @@ title: Aan de slag met [!DNL Assets View]
 description: Hoe kan ik toegang krijgen tot, login ervaring van, gesteunde gebruiksgevallen van, en bekende kwesties van [!DNL Assets View].
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 5af7f9160b0028d0eff5358c3c1a43729b86883b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
-# Aan de slag met [!DNL Adobe Experience Manager Assets View] {#assets-view-get-started}
+# Aan de slag met de weergave Middelen {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -25,11 +25,9 @@ Te gebruiken [!DNL Assets View], aanmelden bij [https://experience.adobe.com/#/a
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## Toegang ontvangen tot [!DNL Assets View] {#get-access}
+## Weergave Toegangselementen {#access-assets-view}
 
-Adobe voorziet de oplossing en voegt de aangewezen persoon van uw organisatie als beheerder toe. De beheerders kunnen toegang tot diverse gebruikers van de organisatie verlenen door te gebruiken [[!DNL Admin Console]](https://helpx.adobe.com/nl/enterprise/using/admin-console.html). Voor verzoeken met betrekking tot uw toegang, contacteer de beheerder van uw organisatie.
-
-Wanneer het programma openen, na het verstrekken van de geloofsbrieven, [!DNL Assets View] vraagt u een account te selecteren. In dit geval selecteert u `Company or School Account` om verder te gaan.
+Zie [Weergave Elementen openen](/help/assets/assets-view-introduction.md#how-to-access-assets-view) voor gedetailleerde instructies over hoe te om tot de mening van Activa toegang te hebben.
 
 ## Configureren [!DNL Assets View] {#configuration}
 

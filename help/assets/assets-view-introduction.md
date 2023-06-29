@@ -2,9 +2,9 @@
 title: Wat zijn de voordelen van uw middelenweergave?
 description: Meer informatie over de belangrijkste voordelen van de weergave Middelen
 mini-toc-levels: 3
-source-git-commit: 4e31a57a6bcbc6783398c205075bb8e1b1a5dc74
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,11 @@ Naast deze functies kunt u in de weergave Middelen ook de volgende functies uitv
 * Upload een nieuwe versie van een element, met een andere naam, van uw lokale bestandssysteem naar de gegevensopslagruimte. Het geüploade element is beschikbaar als een nieuwe versie met dezelfde naam als het oorspronkelijke element.
 
 * Wijzig de naam van elementen en mappen die beschikbaar zijn in de opslagplaats.
+
+Gebruik de volgende koppelingen om snel aan de slag te gaan met de weergave Middelen:
+
+* [Mijn werkruimte](/help/assets/my-workspace-assets-view.md)
+* [Aan de slag met de middelenweergave](/help/assets/get-started-assets-view.md)
 
 ## Conclusie {#conclusion}
 
