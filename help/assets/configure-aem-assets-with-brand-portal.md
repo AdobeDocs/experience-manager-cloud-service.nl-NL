@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2416'
 ht-degree: 11%
 
 ---
@@ -101,11 +101,11 @@ Voer de volgende stappen uit om de verbinding tussen uw Experience Manager Asset
 
 1. Van de **Gereedschappen** deelvenster, navigeren naar **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-   ![](assets/test-bpconfig1.png)
+   ![AEM Assets as a Cloud Service met Brand Portal configureren](assets/test-bpconfig1.png)
 
    A Brand Portal Distribution Agent (**[!UICONTROL bpdistributionagent0]**) is gemaakt onder **[!UICONTROL Publish to Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![Distributieagent maken](assets/test-bpconfig2.png)
 
 
 1. Klikken **[!UICONTROL Publish to Brand Portal]** om de distributieagent te openen.
@@ -121,11 +121,11 @@ Voer de volgende stappen uit om de verbinding tussen uw Experience Manager Asset
    >
    >Het wordt aanbevolen om de fouten te controleren en de **foutenwachtrij** regelmatig te wissen.
 
-   ![](assets/test-bpconfig3.png)
+   ![Wachtrij verwerken voor de distributie van elementen](assets/test-bpconfig3.png)
 
 1. Om de verbinding tussen Experience Manager Assets als a te verifiëren [!DNL Cloud Service] en Brand Portal klikt u op de knop **[!UICONTROL Test Connection]** pictogram.
 
-   ![](assets/test-bpconfig4.png)
+   ![Verbinding tussen AEM en Brand Portal controleren](assets/test-bpconfig4.png)
 
    Er verschijnt een bericht dat uw *testpakket is afgeleverd*.
 
@@ -156,7 +156,7 @@ Laten we nu een middel van Experience Manager Assets naar Brand Portal publicere
 1. Voer de stappen uit (van 1 tot en met 4) die in het dialoogvenster **Verbinding testen** en navigeer aan de pagina van de distributiegagent.
 1. Klikken **[!UICONTROL Logs]** om de logbestanden met de verwerking en fouten weer te geven.
 
-   ![](assets/test-bpconfig5.png)
+   ![Logbestanden van verwerking en fouten](assets/test-bpconfig5.png)
 
 De distributieagent heeft de volgende logboeken geproduceerd:
 
