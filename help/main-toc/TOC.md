@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
 workflow-type: tm+mt
-source-wordcount: '4139'
+source-wordcount: '4144'
 ht-degree: 20%
 
 ---
@@ -567,6 +567,7 @@ ht-degree: 20%
             + [Een adaptieve Forms - Core Components maken op een AEM Sites-pagina](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Een adaptief formulier vertalen met behulp van automatische vertaling of menselijke vertaling](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Pagina omleiden of bedankbericht configureren](/help/forms/configure-redirect-page-or-thank-you-message.md)
+            + [Formulieren maken met herhaalbare secties](/help/forms/create-forms-repeatable-sections.md)
       + Aangepaste Forms ontwerpen - Elementaire componenten {#authoring-adaptive-forms-foundation-components}
          + Uw PDF forms converteren naar Adaptieve Forms {#afcs}
             + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
