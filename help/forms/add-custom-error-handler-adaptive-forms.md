@@ -7,9 +7,9 @@ keywords: Voeg een manager van de douanefout toe, voeg een standaardfoutenmanage
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1962'
 ht-degree: 0%
 
 ---
@@ -119,9 +119,7 @@ Waar:
 
 Enkele opties om de foutreacties weer te geven zijn:
 
-+++
-
-+++  Gebaseerd op de naam van het veld Adaptief formulier
++++  Gebaseerd op de eigenschap Adaptive Form fieldName
 
 
 * **`Header:`** `content-type:application/problem+json`
@@ -148,7 +146,7 @@ Enkele opties om de foutreacties weer te geven zijn:
 +++
 
 
-+++ Gebaseerd op de gegevensverwijzing van het adaptieve formulier
++++ Gebaseerd op de eigenschap Adaptive Form dataRef
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
@@ -171,8 +169,8 @@ Enkele opties om de foutreacties weer te geven zijn:
 
 U kunt de waarde van dataRef bekijken in **[!UICONTROL Properties]** venster van een formuliercomponent.
 
-
 +++
+
 
 ## Fouthandler toevoegen met gebruik van de regeleditor {#add-error-handler-using-rule-editor}
 

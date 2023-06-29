@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 32fb0942b8007aeee8afa6378a9293eecd7d7700
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1385'
 ht-degree: 0%
 
 ---
@@ -26,22 +26,17 @@ In de volgende sectie worden de opmerkingen bij de release met functies voor de 
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2023.4.0) is 7 juni 2023. De volgende release met functies (2023.6.0) is gepland voor 29 juni 2023.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2023.6.0) is 29 juni 2023. De volgende release met functies (2023.7.0) is gepland voor 27 juli 2023.
 
 ## Video vrijgeven {#release-video}
 
-Bekijk de video Overzicht van de release van april 2023 voor een overzicht van de functies die zijn toegevoegd in de release van 2023.4.0:
+Bekijk de video Overzicht van de release van juni 2023 voor een overzicht van de functies die in de release van 2023.6.0 zijn toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/3418681/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3420971/?quality=12)
 
 ## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
 
 ### Nieuwe functies in [!DNL Experience Manager Sites] {#sites-features}
-
-* Exporteer inhoudsfragmenten van AEM as a Cloud Service naar Adobe Target in JSON-indeling en maak overeenkomende JSON-aanbiedingen in Target.
-* Ondersteuning voor paginering en sortering van GraphQL en verbeteringen in de interne cache helpen nu de prestaties van losgekoppelde clienttoepassingen te verbeteren wanneer u grote inhoudssets ophaalt van AEM met behulp van complexe GraphQL-query&#39;s en -filters.
-
-### Nieuwe functies in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
 
 * Inhoudsfragmenten en de bijbehorende verwijzingen kunnen nu worden gepubliceerd naar de [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) met de [Console voor inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), zodat gebruikers een voorvertoning van de uiteindelijke ervaring kunnen bekijken in een ontkoppelde voorvertoningstoepassing voordat ze live gaan.
 * Afbeeldingen kunnen nu dynamisch worden geoptimaliseerd voor weergave op het web in scenario&#39;s zonder kop met AEM GraphQL. [Query-variabelen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) kan worden gedefinieerd in GraphQL-query&#39;s zodat ontkoppelde clienttoepassingen aangepaste geoptimaliseerde afbeeldingen van AEM kunnen aanvragen.
@@ -51,36 +46,72 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* Extra ondersteuning voor WebP-afbeeldingen om automatisch metagegevens te extraheren, miniaturen en aangepaste uitvoeringen te genereren. De functie Slimme tags wordt nu ook ondersteund voor deze bestanden. Dynamic Media-mogelijkheden worden niet ondersteund voor WebP als invoerindeling.
+**Beschikbaarheid van de weergave Nieuwe elementen**
 
-* [Verbeterde zoekervaring](/help/assets/search-assets.md#aftersearch) - U kunt nu snel de volgende bewerkingen uitvoeren op de elementen die in de zoekresultaten worden weergegeven:
+De [nieuwe middelenweergave](/help/assets/assets-view-introduction.md) is nu beschikbaar in Experience Manager Assets. De weergave Elementen biedt een vereenvoudigde gebruikersinterface, waarmee u uw digitale elementen eenvoudig kunt beheren, detecteren en distribueren. De ervaring is gericht op creatieve personen, alleen-lezen klanten en minder belangrijke DAM-gebruikers.
 
-   * Een workflow maken
-   * Een versie maken
-   * Relatieve of niet-gerelateerde elementen
+![Tagbeheer](/help/assets/assets/my-workspace.png)
 
-     U hoeft niet naar de middelenlocatie te navigeren en de eigenschappen ervan te bekijken om deze bewerkingen uit te voeren.
+**Verbeterde zoekervaring**
 
-* Verbeteringen in de gebruiksvriendelijkheid van Color Search facet - Invoerveld voor kleurwaarden kan nu worden bewerkt en zoekresultaten worden alleen bijgewerkt wanneer u de kleurkiezer afsluit.
+Met Experience Manager Assets kunt u nu meer doen vanuit de gebruikersinterface voor zoekresultaten: U kunt nu:
 
-* Nieuwe protocolondersteuning gestart (DASH - Dynamic Adaptive Streaming via HTTP) voor Adaptive streaming in Dynamic Media-video (met CMAF ingeschakeld):
-   * Adaptief streamen (DASH/HLS) zorgt voor een betere weergave voor eindgebruikers voor video&#39;s
-   * DASH is het internationale standaardprotocol voor adaptieve videostreaming en wordt op grote schaal toegepast in de branche
-   * Beschikbaar in alle regio&#39;s, in te schakelen via een ondersteuningsticket
+* U kunt standaard zoeken op de huidige locatie in de repository in plaats van te zoeken naar het trefwoord in de gehele repository.
 
-* Dynamic Media _Opname_ - Experimenteer met testafbeeldingen of Dynamic Media-URL&#39;s om de uitvoer van verschillende afbeeldingsmodifiers te bekijken en de optimalisaties voor Smart Imaging voor de bestandsgrootte (met WebP- en AVIF-levering), de netwerkbandbreedte en de pixelverhouding van het apparaat te beoordelen. Zie [Dynamic Media-momentopname](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* Navigeer naar de maplocatie voor elementen die in de zoekresultaten worden weergegeven.
 
-### Functie in [!DNL Assets] prerelease {#prerelease-feature-assets}
+**Voorvertoningen van miniaturen voor 3D-elementen**
 
-* Dynamic Media - De gebruikersinterface voor bepaalde velden met betrekking tot Slim uitsnijden in een afbeeldingsprofiel wordt nu bijgewerkt met de huidige richtlijnen voor het definiëren van een slim uitsnijden. Zie [Opties voor uitsnijden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+[!DNL Experience Manager Assets] wordt nu gegenereerd [miniatuurvoorvertoningen van veelgebruikte 3D-bestandsindelingen](/help/assets/file-format-support.md) inclusief gLB, USDz, FBX, 3DS, OBJ en SBSAR. Wanneer deze bestanden worden geüpload, worden automatisch miniaturen gegenereerd.
+
+**Configuratie van delen koppelen**
+
+Een nieuwe verbeterde gebruikerservaring voor [koppelingen maken](/help/assets/share-assets.md) samen met een gloednieuwe set configuraties waarmee beheerders het standaardgedrag van deze functie voor uw gebruikers kunnen aanpassen.
+
+![Tagbeheer](/help/assets/assets/config-email-service.png)
+
+**Dynamic Media: Aan slim uitsnijden gerelateerde velden in afbeeldingsprofiel bijgewerkt**
+
+De gebruikersinterface voor bepaalde velden met betrekking tot Slim uitsnijden in een afbeeldingsprofiel wordt nu bijgewerkt met de huidige richtlijnen voor het definiëren van een slim uitsnijden. Zie [Opties voor uitsnijden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+
+### Nieuwe functies in de middelenweergave {#assets-view-features}
+
+**Hiërarchische codering van elementen voor sneller zoeken**
+
+Vlakke lijsten met gecontroleerde woordenboeken worden in de loop der tijd onbeheersbaar. De weergave Middelen ondersteunt nu [hiërarchische coderingsstructuur](/help/assets/tagging-management-assets-view.md), die het toepassen van relevante metagegevens, het indelen van elementen, het ondersteunen van zoeken, het hergebruiken van tags, het verbeteren van de detecteerbaarheid, enzovoort, vergemakkelijkt.
+
+![Tagbeheer](/help/assets/assets/tags-hierarchy.png)
+
+**Bestanden, mappen en verzamelingen vastzetten voor snelle toegang**
+
+U kunt nu [bestanden, mappen en verzamelingen vastzetten voor snellere toegang](/help/assets/my-workspace-assets-view.md) op deze objecten te plaatsen als je ze later nodig hebt. De vastgezette items worden weergegeven in het dialoogvenster **Snelle toegang** van Mijn werkruimte. U kunt ze openen met Mijn werkruimte in plaats van naar de locatie te navigeren waar ze zijn opgeslagen in de opslagplaats.
+
+![Taken in de werkruimte](/help/assets/assets/quick-access.png)
+
+**Elementen filteren in de map Prullenbak**
+
+In de middelenweergave kunt u nu [filterelementen beschikbaar in de map Prullenbak](/help/assets/navigate-assets-view.md). U kunt standaard- of aangepaste filters toepassen om te zoeken in de juiste middelen in de map met prullenmand om deze te herstellen of permanent te verwijderen.
+
+**Voorvertoningen van miniaturen voor 3D-elementen**
+
+In de weergave Elementen worden nu miniatuurvoorvertoningen gegenereerd voor veelgebruikte 3D-bestandsindelingen, zoals gLB, USDz, FBX, 3DS, OBJ en SBSAR. Wanneer deze bestanden worden geüpload naar de weergave Middelen, worden standaard automatisch miniaturen gegenereerd door het systeem.
+
+![Taken in de werkruimte](/help/assets/assets/3d-preview.png)
+
+**Bovenste gezochte termen weergeven**
+
+De weergave Middelen ondersteunt nu [het bekijken van hoogste gezochte termijnen binnen uw plaatsing](/help/assets/my-workspace-assets-view.md) met de **Inzichten** van Mijn werkruimte. U kunt ook naar gedetailleerde inzichten navigeren om de belangrijkste zoekopdrachten in de afgelopen 30 dagen of 12 maanden weer te geven.
+
+![Taken in de werkruimte](/help/assets/assets/insights-top-searches.png)
+
+**Verbeteringen in metagegevensformulieren**
+
+In de middelenweergave kunt u nu [toevoegen, tekst met meerdere waarden en eigenschappencomponenten voor vervolgkeuzelijsten](/help/assets/metadata-assets-view.md#property-components) op de metagegevensformulieren.
+
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] {#new-features-available-in-channel}
-
-* **[Adaptieve Forms verzenden naar Microsoft® SharePoint en Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: Verbeter de flexibiliteit van zakelijke gebruikers, zodat u snel nieuwe formulieren kunt starten en verzonden gegevens kunt opslaan in de dagelijkse tools die ze gebruiken, zoals de Microsoft® SharePoint-site of de OneDrive-map.
-
-### Functies in [!DNL Forms] prerelease {#prerelease-features-forms}
 
 * [Adaptieve Forms in AEM paginaeditor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): U kunt nu AEM Pagina-editor gebruiken om snel meerdere formulieren te maken en aan uw sitepagina&#39;s toe te voegen. Dankzij deze functie kunnen auteurs van inhoud naadloze ervaringen met gegevensvastlegging maken op sitepagina&#39;s met behulp van de kracht van adaptieve formuliercomponenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van registratie- en bedrijfsprocesautomatisering. U kunt:
 
@@ -92,15 +123,23 @@ Bekijk de video Overzicht van de release van april 2023 voor een overzicht van d
 
 * [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms is nu geïntegreerd met Adobe Acrobat Sign Solutions voor de regering. Deze integratie biedt een geavanceerd niveau van naleving en beveiliging voor e-handtekeningen met Adaptief formulier-inzendingen voor met de overheid verband houdende rekeningen (overheidsdiensten en agentschappen).
 
-  Dankzij de integratie met Adobe Acrobat Sign for Government kunnen Adobe en klanten van de overheid elektronische handtekeningen gebruiken in Adaptive Forms voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met de Matige naleving FedRAMP zijn, die Adobe klanten van vrede van mening voorzien.
+  Dankzij de integratie met Adobe Acrobat Sign Solutions for Government kunnen Adobe en klanten van de overheid elektronische handtekeningen gebruiken in Adaptive Forms voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met de Matige naleving FedRAMP zijn, die Adobe klanten van vrede van mening voorzien.
 
-* Verbeterde foutafhandeling met aangepaste fouthandlers in de regeleditor: U kunt nu een aangepaste functie (met behulp van de clientbibliotheek) activeren als reactie op een fout die door een externe service is geretourneerd, en eindgebruikers een op maat gemaakte reactie geven. Of u kunt specifieke acties uitvoeren voor fouten die door een service worden geretourneerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is.
+* [Verbeterde foutafhandeling met aangepaste fouthandlers in de regeleditor](/help/forms/add-custom-error-handler-adaptive-forms.md): U kunt nu een aangepaste functie (met behulp van de clientbibliotheek) activeren als reactie op een fout die door een externe service is geretourneerd, en eindgebruikers een op maat gemaakte reactie geven. Of u kunt specifieke acties uitvoeren voor fouten die door een service worden geretourneerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is.
 
   Deze functionaliteit verbetert uw algemene fout-behandelend vermogen door op norm-gebaseerde foutenreacties in te voeren die achterwaarts compatibel met OOTB foutenmanagers, met grotere flexibiliteit en controle zijn.
 
+* [Verbeterde verificatiemethoden voor het formuliergegevensmodel](/help/forms/configure-data-sources.md): Ervaar verhoogde veiligheid met de introductie van op cliëntgeloofsbrieven gebaseerde authentificatie voor het verbinden van AEM Forms met compatibele gegevensbronnen. Deze verbetering elimineert de behoefte aan imitatie of gebruikerslogin, die de bescherming van uw gegevens verstevigt.
+
+* Adaptieve Forms-secties herhaalbaar maken: U kunt nu [Accordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Deelvenster](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), en [Horizontale tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componenten van een adaptief formulier herhaalbaar.
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
+
+  Met deze herhaalbare secties kunt u een onbeperkt aantal items opgeven zonder een vast aantal velden. Dit is handig wanneer de vereiste instanties van gegevens vooraf onbekend zijn. Forms-gebruikers kunnen eenvoudig secties toevoegen of verwijderen, waardoor formulieren kunnen worden aangepast aan verschillende scenario&#39;s voor gegevensinvoer en de verzameling van meerdere exemplaren van dezelfde gegevens kan worden vereenvoudigd.
+
 ### Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
 
-Gebruik Headless Adaptive Forms om uw ontwikkelaars in staat te stellen interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden geopend en gebruikt in plaats van via een traditionele grafische gebruikersinterface. Met behulp van hoofdloze adaptieve formulieren kunt u:
+Gebruiken [Forms zonder hoofdadapter](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) om uw ontwikkelaars in staat te stellen om interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden benaderd en waarmee interactie mogelijk is, in plaats van via een traditionele grafische gebruikersinterface. Met behulp van hoofdloze adaptieve formulieren kunt u:
 
 * multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
 * U kunt zelf formulieren integreren in uw bureaublad en mobiele apps, websites en chattoepassingen
@@ -109,11 +148,6 @@ Gebruik Headless Adaptive Forms om uw ontwikkelaars in staat te stellen interact
 
 U kunt een e-mail verzenden naar `aem-forms-headless@adobe.com` van uw officiële e-mailadres om deel te nemen aan het vroege adoptieprogramma.
 
-## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
-
-### Nieuwe functies {#what-is-new-foundation}
-
-* Extra publicatieregio&#39;s: Klanten van sites kunnen maximaal drie publicatiegebieden in licentie geven, naast het primaire gebied. Het verkeer wordt verpletterd aan extra te publiceren landbouwbedrijven, die in verminderde latentie voor bepaalde verzoeken, en verhoogde veerkracht tegen regionale stroomonderbrekingen resulteren. Neem contact op met uw Adobe-accountmanager voor informatie over licenties [Aanvullende publicatiegebieden](/help/operations/additional-publish-regions.md) voor uw programma&#39;s.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
