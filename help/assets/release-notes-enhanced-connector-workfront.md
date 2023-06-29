@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
+source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1103'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,13 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 
 >[!IMPORTANT]
 >
->Adobe raadt u aan [upgrade naar de nieuwste versie 1.9.11](../assets/update-workfront-enhanced-connector.md) van de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe raadt u aan [upgrade naar de nieuwste versie 1.9.11](/help/assets/workfront-connector-install.md) van de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekende problemen {#known-issues}
 
 * Tijdens het vormen van project verbonden omslagen met AEM 6.4, slaat de Experience Manager niet de waarden voor **[!UICONTROL sub-folders]** en **[!UICONTROL Create linked folder in projects with portfolio]** velden. De waarde voor de **[!UICONTROL sub-folders]** veld bijwerken naar **[!UICONTROL undefined]** en de waarde voor de **[!UICONTROL Create linked folder in projects with portfolio]** veld bijwerken naar **[!UICONTROL Default Portfolio]** automatisch na het opslaan van de configuratie.
 
-* Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** in de vervolgkeuzelijst kunt u de doelbestemming in de Experience Manager niet selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** keuzelijst beschikbaar in de nieuwe Workfront-ervaring.
+* Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** in de vervolgkeuzelijst kunt u de doelbestemming in de Experience Manager niet selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** vervolgkeuzelijst beschikbaar in de nieuwe Workfront-ervaring.
 
 ## Eerdere versies {#previous-releases}
 
@@ -139,7 +139,7 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 
 [!DNL Workfront for Experience Manager enhanced connector] versie 1.9.4, die in oktober 2007 is uitgebracht, bevat de volgende updates:
 
-* Kan het tabblad Gebeurtenisabonnementen niet weergeven op de verbeterde pagina voor schakelaarconfiguratie vanwege een groot aantal gebeurtenissen.
+* Kan tabblad Gebeurtenisabonnementen niet weergeven op de verbeterde pagina voor schakelaarconfiguratie vanwege vele gebeurtenissen.
 
 * Workfront kan de lijst met bestaande mappen in een project niet ophalen. Dit leidt tot het maken van dubbele mappen.
 
@@ -147,7 +147,7 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 
 [!DNL Workfront for Experience Manager enhanced connector] versie 1.9.3, uitgebracht op 16 september, bevat de volgende updates:
 
-* Kan geen bestand uploaden dat groter is dan 8 GB.
+* Kan geen bestand van meer dan 8 GB uploaden.
 * Problemen bij het automatisch publiceren van middelen die van Workfront naar AEM worden verzonden.
 * Het veld Basispad is niet beschikbaar voor het veld Codes tijdens het bewerken van een standaardformulier voor een metagegevensschema.
 * Problemen tijdens het toevoegen van nieuwe versies in Workfront via AEM workflows.
