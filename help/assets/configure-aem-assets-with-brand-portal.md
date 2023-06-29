@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
+source-git-commit: 6d445943fb8a79eb549c954bb88daf61242a8b10
 workflow-type: tm+mt
-source-wordcount: '2416'
+source-wordcount: '2411'
 ht-degree: 11%
 
 ---
@@ -101,7 +101,7 @@ Voer de volgende stappen uit om de verbinding tussen uw Experience Manager Asset
 
 1. Van de **Gereedschappen** deelvenster, navigeren naar **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-   ![AEM Assets as a Cloud Service met Brand Portal configureren](assets/test-bpconfig1.png)
+   ![Navigeren naar de distributie-optie](assets/test-bpconfig1.png)
 
    A Brand Portal Distribution Agent (**[!UICONTROL bpdistributionagent0]**) is gemaakt onder **[!UICONTROL Publish to Brand Portal]**.
 
