@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 32fb0942b8007aeee8afa6378a9293eecd7d7700
+source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1427'
 ht-degree: 0%
 
 ---
@@ -131,11 +131,13 @@ In de middelenweergave kunt u nu [toevoegen, tekst met meerdere waarden en eigen
 
 * [Verbeterde verificatiemethoden voor het formuliergegevensmodel](/help/forms/configure-data-sources.md): Ervaar verhoogde veiligheid met de introductie van op cliëntgeloofsbrieven gebaseerde authentificatie voor het verbinden van AEM Forms met compatibele gegevensbronnen. Deze verbetering elimineert de behoefte aan imitatie of gebruikerslogin, die de bescherming van uw gegevens verstevigt.
 
-* Adaptieve Forms-secties herhaalbaar maken: U kunt nu [Accordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Deelvenster](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), en [Horizontale tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componenten van een adaptief formulier herhaalbaar.
+* [Adaptieve Forms met herhaalbare secties](/help/forms/create-forms-repeatable-sections.md): U kunt nu [Accordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Deelvenster](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), en [Horizontale tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) in een op kerncomponenten gebaseerde adaptieve vorm om herhaalbare secties te maken.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   Met deze herhaalbare secties kunt u een onbeperkt aantal items opgeven zonder een vast aantal velden. Dit is handig wanneer de vereiste instanties van gegevens vooraf onbekend zijn. Forms-gebruikers kunnen eenvoudig secties toevoegen of verwijderen, waardoor formulieren kunnen worden aangepast aan verschillende scenario&#39;s voor gegevensinvoer en de verzameling van meerdere exemplaren van dezelfde gegevens kan worden vereenvoudigd.
+
+* **[Adaptieve Forms verzenden naar Microsoft® SharePoint en Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: Verbeter de flexibiliteit van zakelijke gebruikers, zodat u snel nieuwe formulieren kunt starten en verzonden gegevens kunt opslaan in de dagelijkse tools die ze gebruiken, zoals de Microsoft® SharePoint-site of de OneDrive-map.
 
 ### Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
 
