@@ -2,9 +2,9 @@
 title: Responsieve lay-out
 description: AEM kunt u een responsieve lay-out voor uw pagina's maken
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1748'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ Dit biedt een alineasysteem waarmee u componenten binnen een responsief raster k
 De container layout:
 
 * Biedt een horizontale uitlijning op het raster, samen met de mogelijkheid om componenten naast elkaar in het raster te plaatsen en te bepalen wanneer ze moeten samenvouwen/opnieuw plaatsen.
-* Gebruikt vooraf gedefinieerde onderbrekingspunten (bijvoorbeeld voor telefoon, tablet, enz.) waarmee u het vereiste gedrag van inhoud voor verwante apparaten/oriëntatie kunt definiëren.
+* Gebruikt vooraf gedefinieerde onderbrekingspunten (bijvoorbeeld voor telefoon, tablet, enzovoort) om het vereiste gedrag van inhoud voor verwante apparaten/oriëntatie te definiëren.
    * U kunt bijvoorbeeld de grootte van de component aanpassen of de component zichtbaar is op bepaalde apparaten.
 * Kan worden genest om kolombesturing toe te staan.
 
@@ -68,7 +68,7 @@ AEM kunt u lay-outs definiëren die afhankelijk zijn van de breedte van het appa
    * Het bereik van een onderbrekingspunt loopt door tot het volgende onderbrekingspunt.
    * U kunt het onderbrekingspunt niet specifiek selecteren, zal selecteren een apparaat en de richtlijn automatisch het aangewezen breekpunt selecteren.
 
-Het apparaat **Desktop**, die geen specifieke breedte heeft, heeft betrekking op het standaardonderbrekingspunt (d.w.z. alles boven het laatste gevormde breekpunt).
+Het apparaat **Desktop**, die geen specifieke breedte heeft, heeft betrekking op het standaardbreekpunt (dat wil zeggen alles boven het laatst geconfigureerde onderbrekingspunt).
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ Om de lay-out van een ontvankelijk net te vormen dat met de Container van de Lay
 * Gebruik het [modusmenu op de werkbalk](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en kies de modus **Lay-out**
    * Selecteer de modus **Lay-out** op dezelfde manier als wanneer u schakelt naar de modus **Bewerken** of de modus **Targeting**.
    * De modus **Lay-out** is permanent en u verlaat de modus **Lay-out** pas wanneer u een andere modus selecteert via de moduskiezer.
-* Wanneer [bewerken van een afzonderlijke component.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+* Wanneer [bewerken van een afzonderlijke component](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
    * Met de **Layout** in het snelmenu van de component kunt u schakelen naar **Layout** in.
    * **Layout** modus blijft bestaan tijdens het bewerken van de component en keert terug naar **Bewerken** modus als focus verandert in een andere component.
 

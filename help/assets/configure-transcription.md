@@ -2,7 +2,7 @@
 title: Abonnementsservice configureren
 seo-title: Configure transcription service
 description: Adobe Experience Manager Assets is geconfigureerd met [!DNL Azure Media Services] waarmee automatisch teksttranscriptie van de gesproken taal wordt gegenereerd in een ondersteund audio- of videobestand in de indeling WebVTT (Vtt).
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization.
+seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1631'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 # Abonnement configureren in [!DNL Experience Manager Assets] {#configure-transcription-service}
 
 Transcriptie is het proces waarbij de audio van een audio- of videobestand in tekst (spraak naar tekst) wordt omgezet met behulp van de spraakherkenningstechnologie.
-[!DNL Adobe Experience Manager Assets] is geconfigureerd met [!DNL Azure Media Services] waarmee automatisch teksttranscriptie van de gesproken taal wordt gegenereerd in een ondersteund audio- of videobestand in de WebVTT-indeling (.vtt). Wanneer een audio- of videoelement wordt verwerkt in [!DNL Experience Manager Assets], genereert de transcriptieservice automatisch de tekstranscriptie-uitvoering van het audio- of videoelement en slaat deze op dezelfde locatie op in de gegevensopslagruimte waar het oorspronkelijke element zich bevindt. De [!DNL Experience Manager Assets] Met de transcriptieservice kunnen marketers hun audio- en video-inhoud effectief beheren met extra ontdekkingsmogelijkheden voor de tekstinhoud en kunnen ze de ROI van deze elementen verhogen door toegankelijkheid en lokalisatie te ondersteunen.
+[!DNL Adobe Experience Manager Assets] is geconfigureerd met [!DNL Azure Media Services] waarmee automatisch teksttranscriptie van de gesproken taal wordt gegenereerd in een ondersteund audio- of videobestand in de WebVTT-indeling (.vtt). Wanneer een audio- of videoelement wordt verwerkt in [!DNL Experience Manager Assets], genereert de transcriptieservice automatisch de tekstranscriptie-uitvoering van het audio- of videoelement en slaat deze op dezelfde locatie op in de gegevensopslagruimte waar het oorspronkelijke element zich bevindt. De [!DNL Experience Manager Assets] Met de transcriptieservice kunnen marketers hun audio- en video-inhoud effectief beheren met extra ontdekkingsmogelijkheden voor de tekstinhoud en de ROI van deze elementen verhogen door toegankelijkheid en lokalisatie te ondersteunen.
 
 Transcripties zijn tekstversies van gesproken inhoud. een voorbeeld hiervan is een film die u bekijkt op elk OTT-platform dat vaak bijschriften of ondertitels bevat om de toegankelijkheid te verbeteren of de inhoud in andere talen te consumeren. Of een audio- of videobestand dat wordt gebruikt voor marketing, leren of entertainment. Deze ervaringen beginnen met een transcriptie die vervolgens wordt opgemaakt of waar nodig wordt vertaald. Het transcripten van audio of video is een tijdsintensief en foutgevoelig proces wanneer manueel uitgevoerd. Het is ook een uitdaging om het handmatige proces te schalen, gezien de steeds toenemende behoefte aan audio-video-inhoud. [!DNL Experience Manager Assets] gebruikt de op AI-gebaseerde transcriptie van Azure die het op grote schaal verwerken van de audio- en video-elementen toestaat en de tekstranscripties (.vtt-bestanden) samen met de tijdstempelgegevens genereert. De transcriptie functie wordt samen met Assets ook ondersteund in Dynamic Media.
 
@@ -88,7 +88,7 @@ Als het verwerkingsprofiel is geconfigureerd voor het transcripten van audio- en
 * Selecteer een definitie van het verwerkingsprofiel in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** en gebruik **[!UICONTROL Apply Profile to Folder(s)]** handeling. In de inhoudbrowser kunt u naar een specifieke map navigeren, map selecteren en de toepassing van het profiel bevestigen.
 * Selecteer een map in de gebruikersinterface Elementen en klik op **[!UICONTROL Properties]** handeling om mapeigenschappen te openen. Klik op de knop **[!UICONTROL Asset Processing]** en selecteert u het juiste verwerkingsprofiel voor de map in het menu **[!UICONTROL Processing Profile]** lijst. Klik op **[!UICONTROL Save & Close]**.
 
-   ![configure-transcriptie-dienst](assets/video-processing-profile3.png)
+  ![configure-transcriptie-dienst](assets/video-processing-profile3.png)
 
 * Gebruikers kunnen mappen of specifieke elementen in de gebruikersinterface Middelen selecteren om een verwerkingsprofiel toe te passen. Selecteer vervolgens **[!UICONTROL Reprocess Assets]** van de opties beschikbaar bovenaan.
 

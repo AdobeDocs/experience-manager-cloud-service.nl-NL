@@ -2,9 +2,9 @@
 title: KPI's openen
 description: KPI's openen
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -34,21 +34,21 @@ Bij het beoordelen van uw KPIs, zorg ervoor dat:
 1. KPI heeft specifiek betrekking op terug naar de oplossing (Experience Manager).
 1. De KPI is nauw verbonden met een doelstelling die het uitvoerend team van cruciaal belang acht.
 1. Dat doel ondersteunt rechtstreeks een bedrijfsdoelstelling die wordt bepleit door ten minste één uitvoerend orgaan op C-niveau.
-1. U hebt de basisgegevens die u nodig hebt om de huidige situatie te vergelijken met de resultaten die u ziet als de Experience Manager wordt gestart.
+1. U hebt de basislijngegevens om de huidige situatie te vergelijken met de resultaten die u ziet na het starten van de Experience Manager.
 1. De KPI zal iets volgen dat gemakkelijk met regelmatige intervallen kan worden gemeten.
 
-Zodra u hebt bevestigd dat u de juiste KPI&#39;s hebt, moet u uitzoeken hoe en wanneer u over elke KPI aan de relevante belanghebbenden rapporteert.
+Nadat u hebt bevestigd dat u juiste KPIs hebt, moet u uitzoeken hoe en wanneer u over elke KPI aan de relevante belanghebbenden gaat melden.
 
 Houd rekening met de volgende vragen bij het definiëren van het rapportageproces:
 
-1. Wie is het publiek voor dit PKI-rapport? Zorg ervoor dat u voor elke KPI een sponsor hebt geïdentificeerd — iemand die u en de rest van het team verantwoordelijk zal stellen voor die meting — en een bredere lijst met personen die regelmatig rapporten moeten ontvangen.
+1. Wie is het publiek voor dit PKI-rapport? Voor elke KPI, zorg ervoor u een uitvoerende sponsor - iemand hebt die u en de rest van het team voor die metrische waarde kan houden - en een bredere lijst van mensen hebt geïdentificeerd die regelmatige rapporten zouden moeten ontvangen.
 1. Hoe vaak zult u over dit KPI rapporteren?
 1. Hoe wordt deze KPI bijgehouden? Wie haalt de gegevens? Welke gegevensbronnen zal die persoon of dat team gebruiken? Is er iets wat je nu kunt doen om dat proces te vergemakkelijken?
 1. Wat zal de vorm van het verslag zijn?
 1. Hoe zal het verslag worden opgesteld?
 
-Nadat u de Experience Manager hebt gestart, krijgt u met een sterke set KPI&#39;s snel het idee of u op de juiste weg bent. Als u niet aan een van uw KPI&#39;s voldoet, moet u de manier aanpassen waarop uw teams Experience Manager gebruiken. Als u snel een van uw KPI-doelen overschrijdt, is dat iets om te vieren — maar dan wilt u uw doel opnieuw kalibreren om een nog beter resultaat te behalen.
+Nadat uw Experience Manager lanceert, zal een sterke reeks KPIs u snel een idee geven van of u op het juiste spoor bent. Als u niet aan één van uw KPIs ontmoet, moet u aanpassingen in aanbrengen hoe uw teams Experience Manager gebruiken. Als je snel een van je KPI-doelen overschrijdt, is dat iets om te vieren — maar dan moet je je doel opnieuw kalibreren om een nog beter resultaat te behalen.
 
 >[!TIP]
 >
-> Neem contact op met als u extra hulp nodig hebt bij je KPI&#39;s. [Adobe Consulting Services](https://www.adobe.com/experience-cloud/consulting-services.html) of uw implementatiepartner.
+> Neem contact op met [Adobe Consulting Services](https://www.adobe.com/experience-cloud/consulting-services.html) of uw implementatiepartner.

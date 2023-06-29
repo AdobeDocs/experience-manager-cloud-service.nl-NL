@@ -2,9 +2,9 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1712'
 ht-degree: 1%
 
 ---
@@ -141,7 +141,7 @@ Er wordt een dialoogvenster geopend waarin u de details kunt invoeren en vervolg
 
 #### Paden en tags gebruiken om de in de map beschikbare modellen van inhoudsfragmenten te beperken {#tags-paths-for-models-in-folder}
 
-Deze sectie is iets geavanceerder. U hebt het niet echt nodig als u gewoon begint en dingen probeert, maar het is *zeer* Dit is handig wanneer u veel fragmenten hebt. Dus het is goed om over te weten - zelfs als je het nog niet helemaal gebruikt.
+Deze sectie is iets geavanceerder. U hebt het niet echt nodig als u gewoon begint en dingen probeert, maar het is *zeer* Dit is handig wanneer u veel fragmenten hebt. Het is dus goed om dat te weten, ook al gebruikt u het nog niet helemaal.
 
 Uw Content Architect zal alle Content Fragment Models hebben gecreeerd die voor uw huidige project worden vereist, en misschien ook sommige andere projecten. Om de zaken voor zich, en andere auteurs eenvoudig te houden, kunt u de lijst van modellen beperken beschikbaar voor een specifieke omslag.
 
@@ -203,7 +203,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 U kunt een fragment direct openen nadat u het hebt gemaakt, of door het te selecteren vanuit de console Inhoudsfragmenten (ook vanaf de console Elementen).
 
-Wanneer de redacteur eerst opent zult u zien:
+Wanneer de redacteur eerst opent ziet u:
 
 * Een lijst met pictogrammen aan de linkerkant - hiermee hebt u toegang tot verschillende functies. De editor wordt geopend in het dialoogvenster **Variaties** -tabblad, vindt u hier de meeste bewerkingen plaats. U bent wellicht ook geïnteresseerd in de **Annotaties** en **Metagegevens** tabs.
 
@@ -213,7 +213,7 @@ Wanneer de redacteur eerst opent zult u zien:
 
 Als voorbeelden:
 
-* Een fragment dat alleen meerdere gegevens vereist, waarvan sommige een specifiek type hebben. Voor inhoud zonder kop zijn verwijzingen van essentieel belang. U leert hierover later tijdens uw reis.
+* Een fragment dat alleen meerdere gegevens vereist, waarvan sommige een specifiek type hebben. Voor inhoud zonder kop zijn verwijzingen essentieel. Daar leert u later over.
 
   ![Inhoudsfragmenteditor - Mijn fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -235,7 +235,7 @@ Bevestig uw updates met of **Opslaan** of **Opslaan en sluiten**.
 
 #### Wat u (waarschijnlijk) niet hoeft te maken {#what-you-probably-do-not-need-to-worry-about}
 
-Dit lijkt misschien een iets vreemde sectie, maar als u de Content Fragment Editor opent en gaat onderzoeken, ziet u verschillende opties die (waarschijnlijk) niet van toepassing zijn op de tocht zonder kop als Content Author. Dit is dus slechts een kort overzicht van wat je zou moeten kunnen negeren in de context zonder kop:
+Dit lijkt misschien een iets vreemde sectie, maar nadat u de Content Fragment Editor hebt geopend en begint te verkennen, ziet u verschillende opties die (waarschijnlijk) niet van toepassing zijn op de tocht zonder kop als Content Author. Dit is dus slechts een kort overzicht van wat je zou moeten kunnen negeren in de context zonder kop:
 
 * **Modellen van contentfragmenten**
 
@@ -258,7 +258,7 @@ Modellen van inhoudsfragmenten zijn in feite van vitaal belang voor inhoudsfragm
 
 * **Paginaverwijzingen bijwerken**
 
-  Deze handeling is beschikbaar via de **...** (ellipsen). Het is niet interessant voor headless auteurs aangezien het op paginascreatie betrekking heeft.
+  Deze handeling is beschikbaar via de **...** (ellipsen) drop-down. Het is niet interessant voor headless auteurs aangezien het op paginascreatie betrekking heeft.
 
 ### Publiceren {#publishing}
 

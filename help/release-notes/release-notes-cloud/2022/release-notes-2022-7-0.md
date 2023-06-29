@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2022.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ U kunt nu Adobe Experience Manager Assets configureren voor [het type elementen 
 ### Nieuwe functies {#what-is-new-foundation}
 
 * De [Browser voor opslagplaats](/help/implementing/developing/tools/repository-browser.md) heeft nu een veld voor padinvoer, zodat u rechtstreeks naar een specifieke map in de hiërarchie van de opslagplaats kunt gaan
-* SCD (Sling Content Distribution) ondersteunt nu een expliciete &#39;invalidatie&#39;-actie om inhoud ongeldig te maken zonder dat die inhoud wordt gepubliceerd. Zie de [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) voor meer informatie.
+* SCD (Sling Content Distribution) ondersteunt nu een expliciete &#39;invalidatie&#39;-actie om inhoud ongeldig te maken zonder dat die inhoud wordt gepubliceerd. Zie [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) voor meer informatie.
 * mod_macro is nu beschikbaar in AEM as a Cloud Service. Zie [deze tabel](/help/implementing/dispatcher/disp-overview.md) voor een lijst met ondersteunde Apache-modules.
 
 ### Verbeteringen AEM as a Cloud Service SDK Dispatcher Tools {#dispatcher-tools-enhancements}
@@ -120,7 +120,7 @@ U kunt nu Adobe Experience Manager Assets configureren voor [het type elementen 
 
 ## Cloud Manager {#cloud-manager}
 
-U vindt een volledige lijst met maandreleases van Cloud Manager [hier.](/help/implementing/cloud-manager/release-notes/current.md)
+U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migratiehulpmiddelen {#migration-tools}
 

@@ -2,9 +2,9 @@
 title: Een TXT-record toevoegen
 description: Leer hoe u TXT-record toevoegt om een aangepaste domeinnaam toe te voegen in Cloud Manager.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 491e710223c5878bfa81c4b0a57d18ec0ec29479
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '329'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Wanneer u domeinverificatie start, geeft Cloud Manager u de naam en de TXT-waard
 1. Meld u aan bij uw domeinhost en zoek de DNS-recordsectie.
 1. Toevoegen `_aemverification.[yourdomainname]` als de **Naam** en voeg de TXT-waarde precies zo toe als deze wordt weergegeven.
 
-Raadpleeg de voorbeelden in deze tabel.
+Zie de voorbeelden in deze tabel.
 
 | Domein | Naam | TXT-waarde |
 |--- |--- |---|

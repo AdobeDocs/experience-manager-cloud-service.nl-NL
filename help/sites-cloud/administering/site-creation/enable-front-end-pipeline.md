@@ -4,9 +4,9 @@ description: Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt to
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De plaatsen die op plaatsmalplaatjes worden gebaseerd kunnen de front-end pijple
 
 >[!TIP]
 >
->Als u niet vertrouwd met de front-end pijpleiding bent en hoe te om plaatsen snel op te stellen gebruikend het en plaatssjablonen, te herzien gelieve [Reis voor snel maken van sites](/help/journey-sites/quick-site/overview.md) voor een inleiding.
+>Als u niet vertrouwd met de front-end pijpleiding bent en hoe te om plaatsen snel op te stellen gebruikend het en plaatssjablonen, zie [Reis voor snel maken van sites](/help/journey-sites/quick-site/overview.md) voor een inleiding.
 
 Als u uw bestaande site niet hebt gemaakt op basis van sitesjablonen en -thema&#39;s, kunt AEM uw site zodanig configureren dat de thema&#39;s worden geladen die worden geïmplementeerd met de Front End Pipeline boven op de bestaande clientbibliotheken.
 

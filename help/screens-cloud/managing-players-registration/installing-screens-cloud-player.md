@@ -2,9 +2,9 @@
 title: Players in as a Cloud Service schermen installeren en configureren
 description: In deze pagina wordt beschreven hoe u spelers in as a Cloud Service schermen kunt installeren en configureren.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -88,4 +88,4 @@ Hieronder worden enkele beperkingen weergegeven voor elementaire afspeelcontrole
 
 ## Volgende functies {#whats-next}
 
-Nu u de speler hebt geïnstalleerd en geconfigureerd voor de cloud-modus, gaat u door met de as a Cloud Service reis naar de schermen. Het document controleren [Afspeellagen registreren in as a Cloud Service schermen](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van Screens Services Provider.
+Nu u de speler hebt geïnstalleerd en geconfigureerd voor de cloud-modus, gaat u door met de as a Cloud Service reis naar de schermen. Zie [Afspeellagen registreren in as a Cloud Service schermen](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van Screens Services Provider.

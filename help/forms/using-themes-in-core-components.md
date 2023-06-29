@@ -2,7 +2,7 @@
 title: Thema's maken en gebruiken
 description: U kunt thema's gebruiken om een adaptief formulier te stileren en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Wanneer u [een adaptief formulier maken](/help/forms/creating-adaptive-form.md) 
 
 >[!NOTE]
 >
->Een adaptief formulierthema mag niet worden verward met [Aangepaste formuliersjablonen.](/help/forms/template-editor.md) De thema&#39;s Adaptief formulier bevatten alleen de opmaakgegevens voor een adaptief formulier. Aangepaste formuliersjablonen definiëren de formulierstructuur en de initiële inhoud en bevatten een thema waarmee u nieuwe formulieren kunt maken [Adaptief formulier.](/help/forms/creating-adaptive-form.md)
+>Een adaptief formulierthema mag niet worden verward met [Aangepaste formuliersjablonen](/help/forms/template-editor.md). De thema&#39;s Adaptief formulier bevatten alleen de opmaakgegevens voor een adaptief formulier. Aangepaste formuliersjablonen definiëren de formulierstructuur en de initiële inhoud en bevatten een thema waarmee u nieuwe formulieren kunt maken [Adaptief formulier](/help/forms/creating-adaptive-form.md).
 
 ## Canvas-thema gebruiken in Adaptief Forms met behulp van kerncomponenten {#using-theme-in-adaptive-form}
 

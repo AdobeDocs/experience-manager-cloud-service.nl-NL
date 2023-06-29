@@ -2,9 +2,9 @@
 title: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 description: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1544'
 ht-degree: 14%
 
 ---
@@ -77,7 +77,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
-* Na het voltooien van de *Extractie* fase van het proces voor de overdracht van inhoud en vóór het begin van de *Ingestiefase* om inhoud in uw as a Cloud Service AEM in te voeren *Werkgebied* of *Productie* instanties, zult u een steunkaartje moeten registreren om Adobe van uw voornemen op de hoogte te brengen om te lopen *Inname* zodat Adobe ervoor kan zorgen dat er geen onderbrekingen optreden tijdens de *Inname* proces. U zult het steunkaartje 1 week voorafgaand aan uw gepland moeten registreren *Inname* datum. Zodra, hebt u het steunkaartje voorgelegd, zal het ondersteuningsteam begeleiding op volgende stappen verstrekken. U kunt een steunkaartje met de volgende details registreren:
+* Na het voltooien van de *Extractie* fase van het proces voor de overdracht van inhoud en vóór het begin van de *Ingestiefase* om inhoud in uw as a Cloud Service AEM in te voeren *Werkgebied* of *Productie* instanties, zult u een steunkaartje moeten registreren om Adobe van uw voornemen op de hoogte te brengen om te lopen *Inname* zodat Adobe ervoor kan zorgen dat er geen onderbrekingen optreden tijdens de *Inname* proces. U zult het steunkaartje 1 week voorafgaand aan uw gepland moeten registreren *Inname* datum. Nadat u het steunkaartje hebt voorgelegd, verstrekt het ondersteuningsteam begeleiding bij volgende stappen. U kunt een steunkaartje met de volgende details registreren:
 
    * De exacte datum en geschatte tijd (met uw tijd-streek) wanneer u van plan bent om te beginnen *Inname* fase.
    * Omgevingstype (werkgebied of productie) waarin u gegevens wilt opnemen.
@@ -93,7 +93,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Als u van plan bent versies op te nemen als onderdeel van een migratieset en als u aanvullende versies uitvoert met `wipe=false`Vervolgens moet u versiebeheer uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld wilt houden en extra-ups wilt uitvoeren in een migratieset, moet u de opname uitvoeren als `wipe=true`.
 
-* Een migratieset verloopt na een langdurige periode van inactiviteit, waarna de gegevens ervan niet langer beschikbaar zijn. Controleer [Vervaldatum migratieset](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) voor meer informatie .
+* Een migratieset verloopt na een langdurige periode van inactiviteit, waarna de gegevens ervan niet langer beschikbaar zijn. Controleren [Vervaldatum migratieset](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) voor meer informatie .
 
 ## Volgende functies {#whats-next}
 

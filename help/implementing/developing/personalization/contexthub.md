@@ -2,16 +2,16 @@
 title: ContextHub
 description: ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
 # ContextHub {#contexthub}
 
-ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. De belangrijkste functie is de mogelijkheid om [contextgegevens weergeven tijdens het simuleren en schakelen tussen verschillende personen.](/help/sites-cloud/authoring/personalization/contexthub.md)
+ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. De belangrijkste functie is de mogelijkheid om [contextgegevens weergeven tijdens het simuleren en schakelen tussen verschillende personen](/help/sites-cloud/authoring/personalization/contexthub.md).
 
 ContextHub die u toestaat:
 
@@ -19,7 +19,7 @@ ContextHub die u toestaat:
 * [Contextgegevens behouden](#persistence) op uw website als een representatie van een gegevenslaag.
 * [Segmenten beheren](#segmentation) voor de geselecteerde context.
 
-Met de JavaScript-API aan de clientzijde hebt u toegang tot de gegevens voor het aanpassen van de inhoud.
+Met de client-side JavaScript API hebt u toegang tot de gegevens voor het aanpassen van inhoud.
 
 ## Presentatie {#presentation}
 
@@ -35,14 +35,14 @@ Ontwikkelaars moeten [Voeg de component ContextHub aan de pagina toe](configurin
 
 ## Persistentie {#persistence}
 
-De opslag ContextHub handhaaft contextgegevens over de cliënt. De JavaScript API van ContextHub laat u toe om tot opslag toegang te hebben om, gegevens tot stand te brengen bij te werken en te schrappen zonodig. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina&#39;s.
+De opslag ContextHub handhaaft contextgegevens over de cliënt. Met de JavaScript-API van ContextHub hebt u toegang tot opslagruimten om gegevens te maken, bij te werken en te verwijderen. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina&#39;s.
 
 Elke opslag ContextHub is een geval van een vooraf bepaald opslagtype:
 
 * ContextHub biedt verschillende [voorbeeldwinkeltypen](sample-stores.md).
 * Consoles AEM gebruiken voor [winkels maken](configuring-contexthub.md#creating-a-contexthub-store).
 * Ontwikkelaars kunnen [aangepaste winkeltypen maken](extending-contexthub.md#creating-custom-store-candidates).
-* Ontwikkelaars kunnen [toegang opslaggegevens](adding-contexthub.md#interacting-with-contexthub-stores) via Javascript.
+* Ontwikkelaars kunnen [toegang opslaggegevens](adding-contexthub.md#interacting-with-contexthub-stores) in JavaScript.
 
 ## Segmentering {#segmentation}
 

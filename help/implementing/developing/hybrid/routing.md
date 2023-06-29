@@ -2,9 +2,9 @@
 title: SPA
 description: Voor toepassingen van één pagina in AEM, is app verantwoordelijk voor het verpletteren. Dit document beschrijft het verpletterende mechanisme, het contract, en beschikbare opties.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ App bezit het verpletteren en dan uitgevoerd door de ontwikkelaars van het proje
 
 ## Architectuur {#architecture}
 
-Voor een gedetailleerde beschrijving raadpleegt u de [PageModelManager](blueprint.md#pagemodelmanager) van het document SPA blauwdruk.
+Voor een gedetailleerde beschrijving raadpleegt u [PageModelManager](blueprint.md#pagemodelmanager) van het document SPA blauwdruk.
 
 ## ModelRouter {#modelrouter}
 
@@ -31,7 +31,7 @@ De `ModelRouter` automatiseert het ophalen van fragmenten van het model. Maar zo
 
 >[!CAUTION]
 >
->De huidige versie van de `ModelRouter` alleen ondersteuning voor het gebruik van URL&#39;s die verwijzen naar het feitelijke bronnenpad van verzendmodel-entry-punten. Het steunt niet het gebruik van Vanity URLs of aliassen.
+>De huidige versie van de `ModelRouter` alleen ondersteuning voor het gebruik van URL&#39;s die verwijzen naar het feitelijke bronnenpad van verzendmodel-entry-punten. Het ondersteunt het gebruik van URL&#39;s of aliassen van het type Vanity niet.
 
 ## Routeringscontract {#routing-contract}
 

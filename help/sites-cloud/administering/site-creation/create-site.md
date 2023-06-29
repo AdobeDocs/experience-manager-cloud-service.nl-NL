@@ -4,9 +4,9 @@ description: Leer hoe u AEM kunt gebruiken om een site te maken met behulp van s
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ Met het gereedschap AEM Snel site maken kunnen niet-ontwikkelaars snel een nieuw
 
 Nadat u de site hebt gemaakt, kunt u met het gereedschap Snel site maken het thema en de opmaak van de AEM site (JavaScript, CSS en statische bronnen) snel aanpassen. Hierdoor kan de front-end ontwikkelaar, die geen kennis van AEM nodig heeft, onafhankelijk van en parallel met de makers van de inhoud werken. De AEM beheerder downloadt eenvoudig het plaatsthema en verstrekt het aan de front-end ontwikkelaar die het gebruikend hun favoriete hulpmiddelen aanpast en dan de veranderingen in de AEM codebewaarplaats vastlegt, die dan wordt opgesteld.
 
-Dit document richt zich op het maken van sites met het gereedschap Snel site maken. Als u een overzicht wilt van de workflow voor het maken en aanpassen van de site, raadpleegt u de [Reis voor snel maken van site AEM](/help/journey-sites/quick-site/overview.md)
+Dit document richt zich op het maken van sites met het gereedschap Snel site maken. Als u een overzicht wilt van het maken en aanpassen van de site, raadpleegt u [Reis voor snel maken van site AEM](/help/journey-sites/quick-site/overview.md)
 
 ## Sitestructuur plannen {#structure}
 
-Neem de tijd om ruim van tevoren rekening te houden met het doel en de geplande inhoud van uw site. Zo kunt u de structuur van de site ontwerpen. Een goede sitestructuur ondersteunt eenvoudige navigatie en detectie van inhoud voor uw sitebezoekers en ondersteunt diverse AEM functies, zoals [beheer en vertaling op meerdere locaties.](/help/sites-cloud/administering/msm-and-translation.md)
+Neem de tijd om ruim van tevoren rekening te houden met het doel en de geplande inhoud van uw site. Zo kunt u de structuur van de site ontwerpen. Een goede sitestructuur ondersteunt eenvoudige navigatie en het detecteren van inhoud voor bezoekers van uw site en ondersteunt diverse AEM, zoals [multisite beheer en vertaling](/help/sites-cloud/administering/msm-and-translation.md).
 
 >[!TIP]
 >
@@ -37,11 +37,11 @@ Neem de tijd om ruim van tevoren rekening te houden met het doel en de geplande 
 
 Omdat de sitestructuur zo belangrijk is voor het succes van een site, is het handig om vooraf gedefinieerde structuren beschikbaar te hebben om snel een nieuwe site te implementeren op basis van een set bestaande standaarden. Sitesjablonen zijn een manier om basissite-inhoud te combineren tot een handig en herbruikbaar pakket.
 
-Sitesjablonen bevatten over het algemeen inhoud en structuur van de basissite en informatie over de sitestijl om snel met de nieuwe site aan de slag te kunnen gaan. Sjablonen zijn krachtig omdat ze herbruikbaar en aanpasbaar zijn. En aangezien u veelvoudige malplaatjes beschikbaar in uw AEM installatie kunt hebben, hebt u de flexibiliteit om verschillende plaatsen tot stand te brengen om aan diverse bedrijfsbehoeften te voldoen.
+Sitesjablonen bevatten over het algemeen inhoud en structuur van de basissite en informatie over de siteopmaak om snel met de nieuwe site aan de slag te kunnen gaan. Sjablonen zijn krachtig omdat ze opnieuw kunnen worden gebruikt en aanpasbaar zijn. En aangezien u veelvoudige malplaatjes beschikbaar in uw AEM installatie kunt hebben, hebt u de flexibiliteit om verschillende plaatsen tot stand te brengen om aan diverse bedrijfsbehoeften te voldoen.
 
 >[!TIP]
 >
->Voor meer informatie over sitesjablonen raadpleegt u de [Sitesjablonen](site-templates.md) artikel.
+>Voor meer informatie over sitesjablonen raadpleegt u [Sitesjablonen](site-templates.md).
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Het is eenvoudig om een site te maken met een sjabloon.
 
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.
-   * De sitenaam moet voldoen aan [AEM naamconventies voor pagina&#39;s.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
+   * De sitenaam moet voldoen aan [Naamconventies voor pagina&#39;s AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
 
 1. Tik of klik op **Maken** en de site wordt gemaakt op basis van de sitesjabloon.
 
@@ -95,8 +95,8 @@ Inhoudsauteurs kunnen nu beginnen met ontwerpen!
 
 Als voor uw site aanpassingen nodig zijn die verder gaan dan de beschikbare sjablonen, hebt u een aantal opties.
 
-* Als de sitestructuur of initiële inhoud moet worden aangepast, [De sitesjabloon kan aan uw vereisten worden aangepast.](site-templates.md)
-* Als de sitestijl moet worden aangepast, [het site-thema kan worden gedownload en aangepast.](/help/journey-sites/quick-site/overview.md)
-* Als de functionaliteit van de site moet worden aangepast, [de site kan volledig worden aangepast.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+* Als de sitestructuur of initiële inhoud moet worden aangepast, [de sitesjabloon kan aan uw vereisten worden aangepast](site-templates.md).
+* Als de sitestijl moet worden aangepast, [het site-thema kan worden gedownload en aangepast](/help/journey-sites/quick-site/overview.md).
+* Als de functionaliteit van de site moet worden aangepast, [de site kan volledig worden aangepast](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Elke aanpassing moet plaatsvinden met de steun van een ontwikkelingsteam.

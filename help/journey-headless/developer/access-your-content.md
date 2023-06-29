@@ -2,9 +2,9 @@
 title: Hoe te om tot Uw Inhoud via AEM levering APIs toegang te hebben
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u GraphQL-query's kunt gebruiken om toegang te krijgen tot de inhoud van Content Fragments.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Dit artikel bouwt verder op die grondbeginselen zodat u begrijpt hoe te om tot u
    * Dive into the details of the AEM GraphQL API.
    * Bekijk sommige steekproefvragen om te zien hoe de dingen in praktijk werken.
 
-## Wilt u toegang tot uw inhoud? {#so-youd-like-to-access-your-content}
+## Wilt u dus toegang tot uw inhoud? {#so-youd-like-to-access-your-content}
 
-Dus...u hebt al deze inhoud, netjes gestructureerd (in inhoudsfragmenten), en enkel wachtend om uw nieuwe app te voeren. De vraag is: hoe kan het daar komen?
+Dus...u hebt al deze inhoud, netjes gestructureerd (in Content Fragments), en enkel wachtend om uw nieuwe app te voeren. De vraag is: hoe kan het daar komen?
 
 U hebt een manier nodig om specifieke inhoud als doel in te stellen, te selecteren wat u nodig hebt en terug te sturen naar uw app voor verdere verwerking.
 

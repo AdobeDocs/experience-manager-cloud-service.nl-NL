@@ -2,9 +2,9 @@
 title: Het vormen Segmentatie met ContextHub
 description: Leer hoe te om segmentatie te vormen gebruikend ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ AEM kunt u de ervaringen van uw gebruikers eenvoudig aanpassen. Het staat u ook 
 
 ## Segmenten openen {#accessing-segments}
 
-De [Soorten publiek](audiences.md) console wordt gebruikt om segmenten voor ContextHub evenals publiek voor uw rekening van Adobe Target te beheren. Deze documentatie behandelt het beheren van segmenten voor ContextHub.
+De [Soorten publiek](audiences.md) console wordt gebruikt om segmenten voor ContextHub en publiek voor uw rekening van Adobe Target te beheren. Deze documentatie behandelt het beheren van segmenten voor ContextHub.
 
 Om tot uw segmenten toegang te hebben, in globale navigatie selecteer **Navigation > Personalisatie > Soorten publiek**. Selecteer uw configuratie (bijvoorbeeld, Plaats WKND) om uw segmenten te zien:
 
@@ -65,7 +65,7 @@ De volgende segmentvergelijkingen zijn beschikbaar uit-van-de-doos om segmenteig
 
 >[!NOTE]
 >
->Wanneer het vergelijken van waarden, als het gegevenstype van de vergelijking niet (d.w.z. wordt geplaatst om auto te ontdekken) wordt geplaatst, zal de segmenteringsmotor van ContextHub eenvoudig de waarden zoals javascript vergelijken. Er worden geen waarden naar de verwachte typen gecast, wat tot misleidende resultaten kan leiden. Bijvoorbeeld:
+>Wanneer het vergelijken van waarden, als het gegevenstype van de vergelijking niet wordt geplaatst (d.w.z. wordt geplaatst om auto te ontdekken), zal de de segmenteringsmotor van ContextHub eenvoudig de waarden zoals javascript vergelijken. Er worden geen waarden naar de verwachte typen gecast, wat tot misleidende resultaten kan leiden. Bijvoorbeeld:
 >
 >`null < 30 // will return true`
 >
@@ -92,7 +92,7 @@ Het nieuwe segment definiëren:
 
    ![Segment toevoegen](../assets/contexthub-create-segment.png)
 
-1. In de **Nieuw ContextHub-segment** Voer een titel voor het segment in en geef indien nodig een ophaalwaarde op en tik of klik op **Maken**.
+1. In de **Nieuw ContextHub-segment** Voer een titel voor het segment in en geef desgewenst een opstartitewaarde op en tik of klik op **Maken**.
 
    ![Nieuw segment](../assets/contexthub-new-segment.png)
 
@@ -200,7 +200,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 1. Een **Titel** en **Naam** voor uw map.
    * De **Titel** moeten beschrijvend zijn.
    * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
-      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies](/help/implementing/developing/introduction/naming-conventions.md).
       * Deze kan zo nodig worden aangepast.
 
    ![Map maken](../assets/contexthub-create-folder.png)
@@ -279,7 +279,7 @@ Of indien deze niet is opgelost:
 
 Dergelijke tests kunnen ook worden uitgevoerd op inhoudspagina&#39;s en in combinatie met gerichte inhoud en verwante **Activiteiten** en **Ervaringen**.
 
-Als u een activiteit en ervaring hebt ingesteld, kunt u uw segment gemakkelijk testen met de activiteit. Voor meer informatie over het instellen van een activiteit raadpleegt u de verwante [documentatie over het ontwerpen van gerichte inhoud](targeted-content.md).
+Als u een activiteit en ervaring hebt ingesteld, kunt u uw segment gemakkelijk testen met de activiteit. Voor meer informatie over het instellen van een activiteit raadpleegt u de [documentatie over het ontwerpen van gerichte inhoud](targeted-content.md).
 
 1. In de bewerkingsmodus van een pagina waarop u doelinhoud hebt ingesteld, ziet u dat de inhoud als doel is ingesteld via het pijlpictogram op de inhoud.
 1. De schakelaar aan voorproefwijze en het gebruiken van de contexthub, schakelaar aan een persoon die niet de segmentatie aanpast die voor de ervaring wordt gevormd.

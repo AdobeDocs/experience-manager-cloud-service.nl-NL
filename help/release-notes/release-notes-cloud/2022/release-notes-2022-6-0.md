@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Bekijk de video Overzicht van de release van juni 2022 voor een overzicht van de
 
 ### Nieuwe functies in [!DNL Sites] {#sites-features}
 
-* Een nieuwe [gebruikersinterface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is nu beschikbaar voor beheerders van inhoud en auteurs van inhoud om efficiënt te beheren (acties zoals publiceren, ongedaan maken, kopiëren, verplaatsen, enz.), zoek-/filterfragmenten te maken voor gebruik in hoofdletters.
+* Een nieuwe [gebruikersinterface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is nu beschikbaar voor inhoudsbeheerders en inhoudsauteurs om efficiënt te beheren (acties als publiceren, verwijderen, kopiëren, verplaatsen enzovoort), te zoeken/filteren en inhoudsfragmenten te maken voor gebruik in hoofdletters.
 
   ![Console voor inhoudsfragment](/help/release-notes/assets/cf-ui.png)
 
@@ -67,7 +67,7 @@ Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [ond
 
 ![overzicht van de eigenschappen van productcockpit](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Verbeterde compatibiliteit en robuustheid voor connectors van andere leveranciers op I/O Runtime
+* Verbeterde compatibiliteit en robuustheid voor connectors van derden op I/O Runtime
 
 * Verbeterde ondersteuning voor overschreven GQL Client-configuratie (bijvoorbeeld aangepaste caching-functionaliteit instellen)
 
@@ -98,7 +98,7 @@ Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [ond
 
 ## Cloud Manager {#cloud-manager}
 
-U vindt een volledige lijst met maandreleases van Cloud Manager [hier.](/help/implementing/cloud-manager/release-notes/current.md)
+U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migratiehulpmiddelen {#migration-tools}
 

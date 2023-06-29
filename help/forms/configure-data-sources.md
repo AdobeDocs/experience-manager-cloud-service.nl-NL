@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2021'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ U kunt relationele databases configureren met [!DNL Experience Manager] Webconso
 
    >[!NOTE]
    >
-   > Vernieuwen [SQL-verbindingen met JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) voor meer gedetailleerde informatie.
+   > Zie [SQL-verbindingen met JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) voor meer gedetailleerde informatie.
 
 1. Tikken **[!UICONTROL Save]** om de configuratie op te slaan.
 
@@ -170,7 +170,7 @@ Sommige bewerkingen die niet worden ondersteund door RESTful-services Open API S
 * Koppelingen
 * Verschillende aanvraagorganen voor verschillende MIME-typen voor één enkele bewerking
 
-U kunt verwijzen naar [OpenAPI 3.0-specificatie](https://swagger.io/specification/v3/) voor nadere informatie.
+Zie [OpenAPI 3.0-specificatie](https://swagger.io/specification/v3/) voor nadere informatie.
 
 ### Het model van de gegevens van de vormHTTP cliëntconfiguratie om prestaties te optimaliseren {#fdm-http-client-configuration}
 

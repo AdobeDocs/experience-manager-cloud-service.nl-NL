@@ -2,9 +2,9 @@
 title: Product Cockpit
 description: Werken met productcoating
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ De gefaseerde productgegevens omvatten om het even welke mutatie in de toekomst 
 
 ## Configuratie {#configuration}
 
-Productcatalogi moeten in AEM worden geconfigureerd. Zie [configureren, winkel en catalogi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?#catalog) voor meer informatie .
+Productcatalogi moeten in AEM worden geconfigureerd. Zie [configureren, winkel en catalogi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) voor meer informatie .
 
-Voor het inschakelen van niet-actieve catalogusfuncties is verificatie vereist. Zie [Aan de slag](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) voor meer informatie .
+Voor het inschakelen van niet-actieve catalogusfuncties is verificatie vereist. Zie [Aan de slag](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) voor meer informatie .
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ In het linkerfiltertabblad vindt u een zoekopdracht in volledige tekst over de v
 
 ## Bladeren door gefaseerde productcatalogus {#staged-product-catalogs}
 
-Standaard worden in de productcockpit de catalogusgegevens van het live product weergegeven. Als u de &quot;STAGED CATALOG&quot; op het linkerfiltertabblad gebruikt, wordt de productcatalogus voor elke geselecteerde datum geladen.
+Standaard worden in de productcockpit de catalogusgegevens van het live product weergegeven. Met de &quot;STAGED CATALOG&quot; in het linkerfiltertabblad wordt de productcatalogus voor een geselecteerde datum geladen.
 
 ![gefaseerde catalogus](../assets/staged-cockpit.png)
 

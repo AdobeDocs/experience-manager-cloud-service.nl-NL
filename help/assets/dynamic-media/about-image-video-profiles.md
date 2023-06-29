@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: a641903bf47634cd969f23840c5e6e6fa5a3693b
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 0%
@@ -75,13 +75,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Selecteer in de vervolgkeuzelijst in de linkerbovenhoek van de pagina de optie **[!UICONTROL Timeline]**.
 1. Vlak de linkerbenedenhoek van de pagina, rechts van de pagina [!UICONTROL Comment] veld, selecteer het pictogram van het karaat ( **^** ).
 
-   ![Schermafbeelding van middelen in Experience Manager met een geselecteerde map met elementen, de vervolgkeuzelijst Tijdlijn gemarkeerd, de knop Workflow starten gemarkeerd en het karatpictogram rechts van het veld Opmerking eveneens gemarkeerd.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Screenshot van middelen in Experience Manager met een geselecteerde map met elementen, de vervolgkeuzelijst Tijdlijn gemarkeerd, de knop Workflow starten gemarkeerd en het karatpictogram rechts van het veld Opmerking gemarkeerd.](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Selecteer **[!UICONTROL Start Workflow]**.
 1. Van de **[!UICONTROL Start Workflow]** vervolgkeuzelijst kiest u **[!UICONTROL Scene7: Reprocess Assets]**.
 1. (Optioneel) In het dialoogvenster **Titel van workflow invoeren** in het tekstveld een naam voor de workflow invoeren. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
 
-   ![Schermafbeelding van de tijdlijngebruikersinterface met &quot;Scene7: Elementen opnieuw verwerken&quot; geselecteerd in de vervolgkeuzelijst Workflow starten en de knop Start gemarkeerd.](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![Schermafbeelding van de tijdlijngebruikersinterface met &quot;Scene7: Elementen opnieuw verwerken&quot; geselecteerd in de vervolgkeuzelijst Workflow starten en de knop Start gemarkeerd](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. Selecteren **[!UICONTROL Start]** selecteert u vervolgens **[!UICONTROL Confirm]**.
 
@@ -96,13 +96,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. In [!DNL Experience Manager], selecteert u **[!UICONTROL Adobe Experience Manager]** om tot de globale navigatieconsole toegang te hebben, dan selecteer **[!UICONTROL Tools]** (hamer) pictogram > **[!UICONTROL Workflow > Models]**.
 1. Selecteer op de pagina Workflowmodellen in Kaartweergave of Lijstweergave de optie **[!UICONTROL Scene7: Reprocess Assets]**.
 
-   ![Screenshot van de pagina Workflowmodellen met &quot;Scene7: Workflow Assets&quot; geselecteerd in de Kaartweergave van Experience Manager.](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![Screenshot van de pagina Workflowmodellen met &quot;Scene7: Workflow voor opnieuw verwerken van middelen&quot; die is geselecteerd in de Kaartweergave van Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
 
 1. Selecteer in de werkbalk de optie **[!UICONTROL Edit]**. Met een nieuw browsertabblad wordt de Scene7 geopend: Modelpagina voor middelenwerkstroom opnieuw verwerken.
 1. Op de Scene7: De pagina met de workflow Elementen opnieuw verwerken, in de rechterbovenhoek, selecteert u **[!UICONTROL Edit]** om de workflow te &quot;ontgrendelen&quot;.
 1. Selecteer in de workflow de Scene7-component Batch uploaden om de werkbalk te openen en selecteer vervolgens **[!UICONTROL Configure]** in de werkbalk.
 
-   ![Screenshot van de component &quot;Scene7 Batch Upload&quot; op de &quot;Scene7: Pagina Middelen opnieuw verwerken&quot; met de muisaanwijzer boven het pictogram &quot;Configureren&quot;.](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![Screenshot van de component &quot;Scene7 Batch Upload&quot; op de &quot;Scene7: Pagina Middelen opnieuw verwerken&quot; met de muisaanwijzer boven het pictogram &quot;Configureren&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
 
 1. Op de **[!UICONTROL Batch Upload to Scene7—Step Properties]** stelt u het volgende in:
    * In de **[!UICONTROL Title]** en **[!UICONTROL Description]** tekstvelden, voer desgewenst een nieuwe titel en beschrijving voor de taak in.
@@ -112,13 +112,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * In de **[!UICONTROL Batch field]** Voer het maximumaantal elementen (50-1000) in dat u wilt verwerken in een uploadtaak voor batchverwerking van een Dynamic Media-server.
    * Selecteren **[!UICONTROL Advance on timeout]** als u verder wilt gaan wanneer de time-out is bereikt. Schakel deze optie uit als u wilt doorgaan naar het Postvak IN wanneer de time-out is bereikt.
 
-   ![Screenshot van de pagina &quot;Batch Upload to Scene7 - Step Properties&quot;.](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![Screenshot van de pagina &quot;Batch Upload to Scene7 - Step Properties&quot;](/help/assets/dynamic-media/assets/reprocess-assets3.png).
 
 1. In de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialoogvenster selecteert u **[!UICONTROL Done]**.
 
 1. In de rechterbovenhoek van de Scene7: Pagina met het workflowmodel voor middelen opnieuw verwerken, selecteert u **[!UICONTROL Sync]**. Wanneer u ziet **[!UICONTROL Synced]**, is het workflowruntimemodel gesynchroniseerd en klaar om elementen in een map opnieuw te verwerken.
 
-   ![Schermafbeelding van middelen in Experience Manager met een geselecteerde map met elementen, de vervolgkeuzelijst Tijdlijn gemarkeerd, de knop Workflow starten gemarkeerd en het karatpictogram rechts van het veld Opmerking eveneens gemarkeerd.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Screenshot van middelen in Experience Manager met een geselecteerde map met elementen, de vervolgkeuzelijst Tijdlijn gemarkeerd, de knop Workflow starten gemarkeerd en het karatpictogram rechts van het veld Opmerking gemarkeerd.](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Sluit het browsertabblad waarin de Scene7 wordt weergegeven: Workflowmodel voor opnieuw verwerken van middelen.
 

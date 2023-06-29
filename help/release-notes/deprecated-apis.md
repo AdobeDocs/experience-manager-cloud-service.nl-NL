@@ -2,9 +2,9 @@
 title: Verouderde API's
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde API's in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 9e722de86e925cb8de626dc16624954dfac063cc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1116'
 ht-degree: 5%
 
 ---
@@ -158,13 +158,13 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Het Apache Felix Http-whiteboard wordt niet meer ondersteund. Migreer uw code naar het OSGi Http-whiteboard.</td>
+    <td>Het Apache Felix Http-whiteboard wordt niet meer ondersteund. Migreer uw code naar het whiteboard van OSGi Http.</td>
     <td>1/27/2022</td>
     <td>03/24/2022</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>Deze API is verouderd. Migreer uw code naar de XML API's die worden geleverd door de JDK.</td>
+    <td>Deze API is vervangen, migreer uw code aan XML APIs die door JDK worden verstrekt.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
@@ -206,7 +206,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>Deze API is afgekeurd. Gebruik in plaats hiervan de builders van Apache Sling.</td>
+    <td>Deze API is afgekeurd. Gebruik in plaats hiervan Apache Sling's Builders.</td>
     <td>10/31/2022</td>
     <td>01/01/2023</td>
   </tr>

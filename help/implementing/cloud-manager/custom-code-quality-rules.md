@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit
 description: Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3504'
+source-wordcount: '3502'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die do
 
 >[!NOTE]
 >
->Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege Adobe-eigen informatie. U kunt de volledige lijst met regels downloaden [gebruiken van deze verbinding.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
+>Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege Adobe-eigen informatie. U kunt de volledige lijst met regels downloaden [gebruiken van deze verbinding](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
 
 >[!NOTE]
 >
@@ -560,7 +560,7 @@ public class DontDoThis implements Page {
 
 De veelvoudige uit-van-de-doos indexen van het Eak van de Experience Manager omvatten een configuratie van de Tika en de aanpassingen van deze indexen moeten een configuratie van de Tika omvatten. Deze regel controleert aanpassingen van `damAssetLucene`, `lucene`, en `graphqlConfig` indexeert en roept een kwestie aan de orde als of `tika`  knooppunt ontbreekt of als het `tika` node mist een onderliggende node genaamd `config.xml`.
 
-Zie de [indexeringsdocumentatie](/help/operations/indexing.md#preparing-the-new-index-definition) voor meer informatie over het aanpassen van indexdefinities.
+Zie [indexeringsdocumentatie](/help/operations/indexing.md#preparing-the-new-index-definition) voor meer informatie over het aanpassen van indexdefinities.
 
 #### Niet-compatibele code {#non-compliant-code-indextikanode}
 
@@ -773,7 +773,7 @@ De OSGi-configuratie `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` defin
 Componenten van Experience Managers die een Klassieke UI-dialoogvenster hebben, moeten altijd een overeenkomstig dialoogvenster Touch UI hebben. Beide bieden een optimale ontwerpervaring en zijn compatibel met het implementatiemodel van de Cloud Service, waarbij de klassieke interface niet wordt ondersteund. Deze regel verifieert de volgende scenario&#39;s:
 
 * Een component met een klassieke UI-dialoogvenster (een `dialog` onderliggende node) moet een corresponderend Touch UI-dialoogvenster hebben (dat wil zeggen een `cq:dialog` onderliggende node).
-* Een component met een dialoogvenster voor het ontwerpen van een klassieke gebruikersinterface (d.w.z. een `design_dialog` knooppunt) moet een corresponderend dialoogvenster voor het ontwerpen van een aanraakinterface hebben (dat wil zeggen een `cq:design_dialog` onderliggende node).
+* Een component met een dialoogvenster voor het ontwerpen van een klassieke gebruikersinterface (dat wil zeggen een `design_dialog` knooppunt) moet een corresponderend dialoogvenster voor het ontwerpen van een aanraakinterface hebben (dat wil zeggen een `cq:design_dialog` onderliggende node).
 * Een component met zowel een dialoogvenster voor klassieke gebruikersinterface als een dialoogvenster voor klassieke gebruikersinterface moet zowel een corresponderend dialoogvenster voor aanraakinterface als een overeenkomstig dialoogvenster voor aanraakgebruikersinterface hebben.
 
 De documentatie van de Hulpmiddelen van de Modernisering van de Experience Manager verstrekt documentatie en tooling voor hoe te om componenten van Klassieke UI in Aanraakinterface om te zetten. Zie [de documentatie van de Moderniseringshulpmiddelen van de Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) voor meer informatie .
@@ -800,7 +800,7 @@ Zie [Projectstructuur Experience Manager](/help/implementing/developing/introduc
 * **Ernst**: Klein
 * **Sinds**: Versie 2020.5.0
 
-De steun voor omgekeerde replicatie is niet beschikbaar in de plaatsingen van de Cloud Service, zoals die als deel van as a Cloud Service Experience Manager wordt beschreven [opmerkingen bij de release.](/help/release-notes/aem-cloud-changes.md#replication-agents)
+De steun voor omgekeerde replicatie is niet beschikbaar in de plaatsingen van de Cloud Service, zoals die als deel van as a Cloud Service Experience Manager wordt beschreven [releaseopmerkingen](/help/release-notes/aem-cloud-changes.md#replication-agents).
 
 De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve oplossingen moeten contacteren.
 
@@ -853,7 +853,7 @@ Het migratiehulpmiddel in [Experience Manager as a Cloud Service Assets GitHub-o
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-Terwijl het gebruik van statische malplaatjes historisch algemeen in de projecten van de Experience Manager is, adviseert Adobe editable malplaatjes omdat zij de meeste flexibiliteit verstrekken en extra eigenschappen steunen die niet in statische malplaatjes aanwezig zijn. Meer informatie vindt u in het document [Paginasjablonen.](/help/implementing/developing/components/templates.md)
+Terwijl het gebruik van statische malplaatjes historisch algemeen in de projecten van de Experience Manager is, adviseert Adobe editable malplaatjes omdat zij de meeste flexibiliteit verstrekken en extra eigenschappen steunen die niet in statische malplaatjes aanwezig zijn. Meer informatie vindt u in het document [Paginasjablonen](/help/implementing/developing/components/templates.md).
 
 De migratie van statische aan editable malplaatjes kan grotendeels worden geautomatiseerd gebruikend [Moderniseringsgereedschappen voor Experience Managers.](https://opensource.adobe.com/aem-modernize-tools/)
 
@@ -864,7 +864,7 @@ De migratie van statische aan editable malplaatjes kan grotendeels worden geauto
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-De oudere Componenten van de Stichting (d.w.z. componenten onder `/libs/foundation`) zijn vervangen voor verschillende versies van Experience Managers ten gunste van Core Components. Het gebruik van de Componenten van de Stichting als basis voor douanecomponenten (hetzij door bedekking of erfenis) wordt ontmoedigd en zou in de overeenkomstige Componenten van de Kern moeten worden omgezet.
+De componenten van de erfenisStichting (namelijk componenten onder `/libs/foundation`) zijn vervangen voor verschillende versies van Experience Managers ten gunste van Core Components. Het gebruik van de Componenten van de Stichting als basis voor douanecomponenten (hetzij door bedekking of erfenis) wordt ontmoedigd en zou in de overeenkomstige Componenten van de Kern moeten worden omgezet.
 
 Deze conversie kan worden vergemakkelijkt door de [Moderniseringsgereedschappen voor Experience Managers.](https://opensource.adobe.com/aem-modernize-tools/)
 
@@ -884,7 +884,7 @@ as a Cloud Service Experience Manager dwingt een strikt naamgevingsbeleid voor n
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (d.w.z. knooppunten van het type) `oak:QueryIndexDefinition`) zijn directe onderliggende knooppunten van `/oak:index`. De indexen in andere plaatsen moeten worden bewogen om met as a Cloud Service Experience Manager compatibel te zijn. Meer informatie over zoekindexen vindt u in het document [Inhoud zoeken en indexeren.](/help/operations/indexing.md)
+as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) zijn directe onderliggende knooppunten van `/oak:index`. De indexen in andere plaatsen moeten worden bewogen om met as a Cloud Service Experience Manager compatibel te zijn. Meer informatie over zoekindexen vindt u in het document [Inhoud zoeken en indexeren](/help/operations/indexing.md).
 
 ### Definitieknooppunten van aangepaste zoekindex moeten een compatVersion van 2 hebben {#oakpal-custom-search-compatVersion}
 
@@ -893,7 +893,7 @@ as a Cloud Service Experience Manager vereist dat definities van de aangepaste z
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (zoals knooppunten van het type) `oak:QueryIndexDefinition`) moet de `compatVersion` eigenschap ingesteld op `2`. Een andere waarde wordt niet ondersteund door as a Cloud Service Experience Manager. Meer informatie over zoekindexen vindt u op [Inhoud zoeken en indexeren.](/help/operations/indexing.md)
+as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (zoals knooppunten van het type) `oak:QueryIndexDefinition`) moet de `compatVersion` eigenschap ingesteld op `2`. Een andere waarde wordt niet ondersteund door as a Cloud Service Experience Manager. Meer informatie over zoekindexen vindt u op [Inhoud zoeken en indexeren](/help/operations/indexing.md).
 
 ### Afstammende knooppunten van de definitieknooppunten van de aangepaste zoekindex moeten van het type &#39;niet-gestructureerd&#39; zijn {#oakpal-descendent-nodes}
 
@@ -920,7 +920,7 @@ Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex mo
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) moet een naam krijgen volgens een specifiek patroon dat in het document wordt beschreven [Inhoud zoeken en indexeren.](/help/operations/indexing.md)
+as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) moet een naam krijgen volgens een specifiek patroon dat in het document wordt beschreven [Inhoud zoeken en indexeren](/help/operations/indexing.md).
 
 ### De de definitieknooppunten van de onderzoeksindex van de douane moeten het indextype Lucene gebruiken  {#oakpal-index-type-lucene}
 
@@ -929,7 +929,7 @@ as a Cloud Service Experience Manager vereist dat definities van de aangepaste z
 * **Ernst**: Blocker
 * **Sinds**: Versie 2021.2.0 (type en ernst gewijzigd in 2021.8.0)
 
-as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (d.w.z. knooppunten van het type) `oak:QueryIndexDefinition`) een `type` eigenschap met de waarde ingesteld op `lucene`. Indexering met behulp van verouderde indextypen moet worden bijgewerkt voordat de migratie naar Experience Manager as a Cloud Service is. Zie [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
+as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) een `type` eigenschap met de waarde ingesteld op `lucene`. Indexering met behulp van verouderde indextypen moet worden bijgewerkt voordat de migratie naar Experience Manager as a Cloud Service is. Zie [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
 
 ### Definitieknooppunten van aangepaste zoekindex mogen geen eigenschap met de naam zaad bevatten {#oakpal-property-name-seed}
 

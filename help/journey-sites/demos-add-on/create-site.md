@@ -2,9 +2,9 @@
 title: Demo-site maken
 description: Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde sjablonen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -110,5 +110,5 @@ U kunt nu de functies van AEM testen met add-on inhoud. U hebt twee opties om uw
 
 * [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Als u meer informatie wilt over de functies van Cloud Manager, kunt u de diepgaande technische documenten direct raadplegen.
 * [Site maken](/help/sites-cloud/administering/site-creation/create-site.md) - Leer hoe u AEM kunt gebruiken om een site te maken met behulp van sitesjablonen om de stijl en structuur van uw site te definiëren.
-* [AEM naamconventies voor pagina&#39;s.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices) - Raadpleeg deze pagina voor meer informatie over de conventies voor het ordenen van AEM pagina&#39;s.
+* [Naamconventies voor pagina&#39;s AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Zie deze pagina voor meer informatie over de conventies voor het ordenen van AEM pagina&#39;s.
 * [AEM basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Onderzoek dit document als u nieuw bent om basisconcepten zoals navigatie en consoleorganisatie AEM te begrijpen.

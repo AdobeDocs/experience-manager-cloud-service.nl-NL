@@ -2,7 +2,7 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die als basis voor de nieuwe pagina wordt gebruikt
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3294'
 ht-degree: 0%
@@ -197,7 +197,7 @@ Als u een nieuwe map wilt maken, kunt u het volgende doen:
 
 ### De configuratiebrowser gebruiken {#using-the-configuration-browser}
 
-1. Ga naar **Algemene navigatie** -> **Gereedschappen** > [**Configuratiebrowser**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+1. Ga naar **Algemene navigatie** -> **Gereedschappen** > [**Configuratiebrowser**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    De bestaande mappen worden links weergegeven, inclusief `global` map.
 
@@ -304,7 +304,7 @@ Wanneer u een nieuwe sjabloon maakt, moet u een sjabloontype opgeven:
 
 * AEM biedt een kleine selectie van sjabloontypen die buiten het vak vallen, zoals HTML5 Pagina en Aangepaste formulierpagina.
 
-   * Als onderdeel van het [WKND-zelfstudie.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+   * Als onderdeel van het [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * Sjabloontypen worden meestal gedefinieerd door ontwikkelaars.
 
@@ -328,7 +328,7 @@ De definities voor uw aangepaste malplaatjetypes zouden in user-defined omslagen
 
 >[!CAUTION]
 >
->De sjabloontypen moeten de juiste mapstructuur in acht nemen (d.w.z. `/settings/wcm/...`), anders worden de sjabloontypen niet gevonden.
+>De sjabloontypen moeten de juiste mapstructuur in acht nemen (dat wil zeggen: `/settings/wcm/...`), anders worden de sjabloontypen niet gevonden.
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -540,7 +540,7 @@ Bij het weergeven van een pagina:
    * De component page voegt de `structure/jcr:content` structuur van de sjabloon met de `jcr:content` boomstructuur van de pagina.
       * Met de paginacomponent kan de auteur alleen de knooppunten van de sjabloonstructuur bewerken die als bewerkbaar zijn gemarkeerd (en eventuele onderliggende knooppunten).
       * Wanneer u een component op een pagina rendert, wordt het relatieve pad van die component overgenomen van de `jcr:content` knooppunt; hetzelfde pad onder `policies/jcr:content` het knooppunt van de sjabloon wordt doorzocht.
-         * De `cq:policy` Het bezit van deze knoop wijst aan het daadwerkelijke inhoudsbeleid (d.w.z. het houdt de ontwerpconfiguratie voor die component).
+         * De `cq:policy` Het bezit van deze knoop wijst aan het daadwerkelijke inhoudsbeleid (namelijk houdt het de ontwerpconfiguratie voor die component).
             * Dit staat u toe om veelvoudige malplaatjes te hebben die de zelfde configuraties van het inhoudsbeleid opnieuw gebruiken.
 
 ### Beschikbaarheid sjabloon {#template-availability}

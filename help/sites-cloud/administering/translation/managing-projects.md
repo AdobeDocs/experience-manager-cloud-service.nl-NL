@@ -4,9 +4,9 @@ description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM ku
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4085'
+source-wordcount: '4078'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Met vertaalprojecten kunt u de vertaling van AEM inhoud beheren. Een vertaalproj
 
 >[!TIP]
 >
->Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md) Dit is een geleid pad door uw AEM Sites-inhoud te vertalen met AEM krachtige vertaalhulpmiddelen, ideaal voor mensen zonder AEM of vertaalervaring.
+>Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u [Sites Translation Journey,](/help/journey-sites/translation/overview.md) Dit is een geleid pad door uw AEM Sites-inhoud te vertalen met AEM krachtige vertaalhulpmiddelen, ideaal voor mensen zonder AEM of vertaalervaring.
 
 Wanneer middelen aan een vertaalproject worden toegevoegd, wordt een vertaalbaan gecreeerd voor hen. Taken bieden opdrachten en statusinformatie die u gebruikt om de workflows voor het vertalen van mensen en computers die op de bronnen worden uitgevoerd, te beheren.
 
@@ -196,7 +196,7 @@ De updates van het vertaalgeheugen kunnen worden onderschept en naar een douaneb
 
 Een bezit kan in de lijstmening van de plaatsenconsole worden geselecteerd die toont als een pagina is vertaald, in vertaling is, of nog niet is vertaald.
 
-1. Schakel in de siteconsole over naar [lijstweergave.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. Schakel in de siteconsole over naar [lijstweergave](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Tik of klik, **Instellingen weergeven** in de weergave-vervolgkeuzelijst.
 1. Controleer in het dialoogvenster de **Vertaald** eigenschap en tik of klik op **Bijwerken**.
 
@@ -210,7 +210,7 @@ Vele vertaaltaken en geavanceerde opties kunnen in de projectenconsole worden be
 
 ### De projectenconsole begrijpen
 
-De vertaalprojecten in AEM gebruiken de norm [AEM projectenconsole.](/help/sites-cloud/authoring/projects/overview.md) Als u niet bekend bent met AEM projecten, raadpleegt u die documentatie.
+De vertaalprojecten in AEM gebruiken de norm [AEM Projectconsole](/help/sites-cloud/authoring/projects/overview.md). Als u niet vertrouwd met AEM projecten bent, herzie die documentatie.
 
 Net als elk ander project bestaat een vertaalproject uit tegels die een overzicht geven van de projecttaken.
 
@@ -277,7 +277,7 @@ U kunt pagina&#39;s, elementen of codes toevoegen aan de vertaaltaak van uw vert
 
 ### Tags toevoegen aan een vertaaltaak {#adding-tags-to-a-translation-job}
 
-U kunt labels toevoegen aan een vertaalproject dat lijkt op [hoe u elementen en pagina&#39;s aan een project toevoegt.](#adding-pages-assets-to-a-translation-job) Alleen selecteren **Tags** onder de **Toevoegen** en voert u vervolgens dezelfde stappen uit.
+U kunt labels toevoegen aan een vertaalproject dat lijkt op [hoe u elementen en pagina&#39;s toevoegt aan een project](#adding-pages-assets-to-a-translation-job). Alleen selecteren **Tags** onder de **Toevoegen** en voert u vervolgens dezelfde stappen uit.
 
 ### Details van vertaalproject bekijken {#seeing-translation-project-details}
 
@@ -437,7 +437,7 @@ Wanneer de inhoud voor een bestaand taalexemplaar wordt vertaald, herzie de vert
 U kunt als volgt master taalkopieën vergelijken met de taal:
 
 1. In de plaatsenconsole, navigeer aan het taalexemplaar u wilt vergelijken.
-1. Open de [Referenties spoorstaaf.](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)
+1. Open de [Referenties spoorstaaf](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
 1. Onder de **Kopieën** kop selecteren **Taalkopieën.**
 1. Selecteer uw specifieke taalkopie en klik op **Vergelijken met Master** of **Vergelijken met vorige** indien van toepassing.
 

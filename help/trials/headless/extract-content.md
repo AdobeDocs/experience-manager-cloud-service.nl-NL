@@ -4,9 +4,9 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -66,11 +66,11 @@ U start in GraphQL Explorer op een nieuw tabblad. Hier kunt u query&#39;s samens
 
    ![Lijstquery](assets/do-not-localize/list-query-1-3-4-5.png)
 
-U hebt net een lijstvraag voor een volledige lijst van alle Fragments van de Inhoud bevestigd. Dit proces helpt ervoor te zorgen dat de reactie is wat uw app verwacht, met resultaten die aantonen hoe uw apps en websites de in AEM gemaakte inhoud zullen ophalen.
+U hebt zojuist een lijstquery voor een volledige lijst met alle inhoudsfragmenten gevalideerd. Dit proces helpt ervoor te zorgen dat de reactie is wat uw app verwacht, met resultaten die aantonen hoe uw apps en websites de in AEM gemaakte inhoud zullen ophalen.
 
 >[!NOTE]
 >
->Als u de optie **AEM Demo-elementen** van de drop-down, gelieve te contacteren de Zorg van de Klant van Adobe of uit te reiken op de [AEM het kanaal Slack.](https://adobe-dx-support.slack.com/)
+>Als u de optie **AEM Demo-elementen** eindpunt van drop-down, contacteer de Zorg van de Klant van de Adobe of reik uit op het [AEM het kanaal Slack.](https://adobe-dx-support.slack.com/)
 
 ## Query voor een specifiek deel van de voorbeeldinhoud {#bypath-query}
 
@@ -109,7 +109,7 @@ Als u een query van het type byPath uitvoert, kunt u inhoud voor een bepaald inh
 
    ![byPath-queryresultaten](assets/do-not-localize/bypath-query-2-3-4.png)
 
-U hebt zojuist een query byPath gevalideerd om een specifiek inhoudsfragment op te halen dat wordt aangegeven door het pad van dat fragment.
+U hebt zojuist een bytepadquery gevalideerd om een specifiek inhoudsfragment op te halen dat wordt aangeduid door het pad van dat fragment.
 
 ## Vraag uw eigen inhoud op {#own-queries}
 

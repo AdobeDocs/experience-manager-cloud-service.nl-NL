@@ -2,7 +2,7 @@
 title: Projectinstelling
 description: Leer hoe AEM projecten met Maven en de normen worden gebouwd u moet waarnemen wanneer het creëren van uw eigen project.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1404'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer hoe AEM projecten met Maven en de normen worden gebouwd u moet waarnemen wa
 Voor een geslaagde ontwikkeling en implementatie met Cloud Manager moeten AEM projecten zich aan de volgende richtlijnen houden:
 
 * De projecten moeten worden gebouwd gebruikend [Apache Maven.](https://maven.apache.org)
-* Er moet een `pom.xml` in de hoofdmap van de it-opslagplaats. Dit `pom.xml` bestand kan verwijzen naar zoveel submodules (die op hun beurt weer andere submodules kunnen hebben, enz.) indien nodig.
+* Er moet een `pom.xml` in de hoofdmap van de it-opslagplaats. Dit `pom.xml` bestand kan verwijzen naar zoveel submodules (die op hun beurt weer andere submodules kunnen hebben, enzovoort) als dat nodig is.
 * U kunt verwijzingen toevoegen naar extra gegevensopslagruimten voor vervormingen in uw `pom.xml` bestanden.
    * Toegang tot [met wachtwoord beveiligde gegevensbanken voor artefacten](#password-protected-maven-repositories) wordt gesteund wanneer gevormd. Toegang tot door het netwerk beveiligde gegevensbestanden voor artefacten wordt echter niet ondersteund.
 * Implementeerbare inhoudspakketten worden gedetecteerd door te zoeken naar een inhoudspakket `.zip` bestanden, die zich in een map met de naam `target`.
@@ -32,7 +32,7 @@ Voor een geslaagde ontwikkeling en implementatie met Cloud Manager moeten AEM pr
 
 In sommige beperkte gevallen moet u het constructieproces mogelijk enigszins variëren wanneer u werkt in Cloud Manager, in tegenstelling tot wanneer u werkt op ontwikkelaarswerkstations. In deze gevallen [Geweven profielen](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) kan worden gebruikt om te definiëren hoe de build in verschillende omgevingen moet verschillen, waaronder Cloud Manager.
 
-Als u een Maven-profiel activeert in de ontwerpomgeving van Cloud Manager, moet u zoeken naar de `CM_BUILD` [omgevingsvariabele.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) Op dezelfde manier moet een profiel dat alleen buiten de buildomgeving van Cloud Manager moet worden gebruikt, worden uitgevoerd door te zoeken naar de afwezigheid van deze variabele.
+Als u een Maven-profiel activeert in de ontwerpomgeving van Cloud Manager, moet u zoeken naar de `CM_BUILD` [omgevingsvariabele](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Op dezelfde manier moet een profiel dat alleen buiten de buildomgeving van Cloud Manager moet worden gebruikt, worden uitgevoerd door te zoeken naar de afwezigheid van deze variabele.
 
 Als u bijvoorbeeld alleen een eenvoudig bericht wilt uitvoeren wanneer de build wordt uitgevoerd in Cloud Manager, doet u dit.
 
@@ -110,11 +110,11 @@ En als u een eenvoudig bericht wilt uitvoeren slechts wanneer de bouwstijl buite
 
 >[!NOTE]
 >
->Artefacten van een met wachtwoord beveiligde Maven-opslagplaats mogen alleen zeer voorzichtig worden gebruikt, aangezien code die via dit mechanisme wordt geïmplementeerd momenteel niet door alle [code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) geïmplementeerd in de kwaliteitspoort van Cloud Manager. Daarom mag het alleen worden gebruikt in zeldzame gevallen en voor code die niet aan AEM is gekoppeld. Het wordt geadviseerd om de bronnen van Java evenals de volledige code van de projectbron samen met het binaire getal op te stellen.
+>Artefacten van een met wachtwoord beveiligde Maven-opslagplaats mogen alleen zeer voorzichtig worden gebruikt, aangezien code die via dit mechanisme wordt geïmplementeerd momenteel niet door alle [code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) geïmplementeerd in de kwaliteitspoort van Cloud Manager. Daarom mag het alleen worden gebruikt in zeldzame gevallen en voor code die niet aan AEM is gekoppeld. Het wordt geadviseerd om de bronnen van Java en de volledige code van de projectbron samen met het binaire getal op te stellen.
 
 Een met wachtwoord beveiligde Maven-opslagplaats gebruiken in Cloud Manager:
 
-1. Geef het wachtwoord (en eventueel de gebruikersnaam) op als geheim [pijpleidingvariabele.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+1. Geef het wachtwoord (en eventueel de gebruikersnaam) op als geheim [pijpleidingvariabele](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md).
 1. Verwijs dan naar dat geheim binnen een dossier genoemd `.cloudmanager/maven/settings.xml` in de git-opslagplaats, die volgt op de [Maven Settings-bestand](https://maven.apache.org/settings.html) schema.
 
 Wanneer het buildproces van Cloud Manager wordt gestart:

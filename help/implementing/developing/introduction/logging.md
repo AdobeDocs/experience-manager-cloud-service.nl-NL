@@ -2,9 +2,9 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2375'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Ontwikkeling</td>
 DEBUG</td>
 <td>
 Beschrijft wat in de toepassing gebeurt.<br>
-Wanneer het DEBUG registreren actief is, worden de verklaringen die een duidelijk beeld van verstrekken welke activiteiten voorkomen evenals om het even welke zeer belangrijke parameters die verwerking beïnvloeden geregistreerd.</td>
+Wanneer het DEBUG registreren actief is, worden de verklaringen die een duidelijk beeld verstrekken van welke activiteiten voorkomen en om het even welke zeer belangrijke parameters die verwerking beïnvloeden geregistreerd.</td>
 <td>
 <ul>
 <li> Lokale ontwikkeling</li>

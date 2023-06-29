@@ -4,9 +4,9 @@ description: Kom te weten hoe te om de gemeenschappelijkste MSM-verwante kwestie
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Als alternatief kunt u:
 
 ### Waarom zie ik Live Copy-pagina&#39;s met het achtervoegsel &quot;_msm_moving&quot;? {#moved-pages}
 
-Als een blauwdrukpagina wordt uitgevouwen, wordt de Live Copy-pagina bijgewerkt of wordt er een nieuwe Live Copy-pagina gemaakt als deze nog niet bestond (bijvoorbeeld wanneer de pagina voor de eerste keer wordt uitgevouwen of wanneer de Live Copy-pagina handmatig is verwijderd).
+Als een pagina met een blauwdruk wordt uitgevouwen, wordt de pagina Live kopie bijgewerkt of wordt een pagina Live kopie gemaakt als deze nog niet bestaat (bijvoorbeeld wanneer de pagina voor de eerste keer wordt uitgevouwen of wanneer de pagina Live kopie handmatig is verwijderd).
 
 In dit laatste geval echter, indien een pagina zonder `cq:LiveRelationship` Er bestaat al een eigenschap met dezelfde naam. De naam van deze pagina wordt overeenkomstig gewijzigd voordat de pagina Live kopie wordt gemaakt.
 

@@ -2,7 +2,7 @@
 title: Werken met projectworkflows
 description: Een verscheidenheid van projectwerkschema's is beschikbaar uit de doos.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 10%
@@ -21,18 +21,18 @@ De projectworkflows die beschikbaar zijn uit het vak zijn onder andere:
 
 Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows beschikbaar:
 
-|  | **Eenvoudig project** | **Omzettingsproject** |
+|   | **Eenvoudig project** | **Omzettingsproject** |
 |---|:-:|:-:|
 | Projectgoedkeuringswerkstroom | x |  |
 | Verzoek starten | x |  |
 | Openingspagina aanvragen | x |  |
-| E-mail aanvragen | x |  |
+| E-mail aanvragen | x | |
 | DAM Create Language Copy&amp;ast; |  | x |
-| DAM &amp;Create and Translate Language Copy |  | x |
+| DAM &amp;Create and Translate Language Copy |   | x |
 
 >[!NOTE]
 >
->&amp;asteren; Deze workflows worden niet gestart vanuit de **Workflow** tegel in projecten. Zie [Taalkopieën voor middelen maken.](/help/sites-cloud/administering/translation/managing-projects.md)
+>&amp;asteren; Deze workflows worden niet gestart vanuit de **Workflow** tegel in projecten. Zie [Taalkopieën voor middelen maken](/help/sites-cloud/administering/translation/managing-projects.md).
 
 De stappen voor het starten en voltooien van workflows zijn hetzelfde, ongeacht de workflow die u kiest. Alleen de stappen worden gewijzigd.
 
@@ -70,4 +70,4 @@ Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 
 ## Workflow voor taalkopieën maken (en vertalen) voor middelen {#create-and-translate-language-copy-workflow-for-assets}
 
-De workflows **Taalkopie maken** en **Taalkopie maken en vertalen**[ worden uitgebreid besproken bij het maken van taalkopieën voor assets.](/help/assets/translate-assets.md)
+De workflows **Taalkopie maken** en **Taalkopie maken en vertalen**[ worden uitgebreid besproken bij het maken van taalkopieën voor assets](/help/assets/translate-assets.md).

@@ -2,10 +2,10 @@
 title: Post Go-Live
 description: Leer hoe u op problemen kunt controleren en de prestaties kunt verbeteren
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 20%
+source-wordcount: '482'
+ht-degree: 9%
 
 ---
 
@@ -36,7 +36,7 @@ In dit document worden de gereedschappen beschreven die beschikbaar zijn om prob
 
 Foutopsporing AEM as a Cloud Service ontwikkelaarsomgevingen is beschikbaar in de Developer Console voor ontwikkelings-, stage- en productieomgevingen.
 
-Raadpleeg [Implementeren voor AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) voor meer informatie over ontwikkelingstools.
+Zie [Implementatie van AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) voor meer informatie over ontwikkelingsinstrumenten.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -45,13 +45,13 @@ Als gebruiker hebt u toegang tot CRXDE Lite in de ontwikkelomgeving, maar niet i
 >[!IMPORTANT]
 >Schrijven naar onveranderlijke opslagplaatsen zoals `/libs` en `/apps` resulteert in fouten. Bovendien hebt u geen toegang tot ontwikkelaarstools voor testomgevingen en productieomgevingen.
 
-Raadpleeg [Ontwikkelen met CRXDE Lite](/help/implementing/developing/tools/crxde.md) voor meer informatie over het ontwikkelen van uw AEM-applicatie met gebruik van CRXDE Lite.
+Zie [Ontwikkelen met CRXDE Lite](/help/implementing/developing/tools/crxde.md) om te leren hoe u uw AEM toepassing kunt ontwikkelen met behulp van CRXDE Lite.
 
 ## Logbestanden beheren {#managing-logs}
 
 Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
 
-Raadpleeg [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie over het openen en beheren van logbestanden via de gebruikersinterface of met de API via Cloud Manager.
+Zie [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie over het openen en beheren van logbestanden via de gebruikersinterface of via de API via Cloud Manager.
 
 ## Contact opnemen met ondersteuning {#contacting-support}
 

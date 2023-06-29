@@ -2,16 +2,16 @@
 title: ContextHub configureren
 description: Leer hoe te om de Hub van de Context te vormen.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1680'
 ht-degree: 0%
 
 ---
 
 # ContextHub configureren {#configuring-contexthub}
 
-ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. Voor meer detail op ContextHub, gelieve te zien [Overzicht van ContextHub-ontwikkelaars](contexthub.md).
+ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. Voor meer details op ContextHub, zie [Overzicht van ContextHub-ontwikkelaars](contexthub.md).
 
 U kunt de toolbar vormen ContextHub om te controleren of het op de wijze van de Voorproef verschijnt, om opslag te creëren ContextHub, en modules toe te voegen UI.
 
@@ -71,7 +71,7 @@ De eigenschappen van de module UI omvatten een detailconfiguratie waar u waarden
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | Een generiek type UI-module | Gevormd in de eigenschappen van de UI module |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | Hiermee wordt informatie over de browser weergegeven | `surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | Datum- en tijdgegevens weergeven | `datetime` |
-| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | Hiermee geeft u de breedte en lengte van de client en de locatie op een kaart weer. Hiermee kunt u de locatie wijzigen. | `geolocation` |
+| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | Geeft de breedte en lengte van de client en de locatie op een kaart weer. Hiermee kunt u de locatie wijzigen. | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | Geeft de schermstand van het apparaat (liggend of staand) weer | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Statistieken over paginatags weergeven | `tagcloud` |
 | [graniet.profile](sample-modules.md#granite-profile-ui-module-type) | Hiermee geeft u de profielgegevens voor de huidige gebruiker weer, inclusief `authorizableID`, `displayName` en `familyName`. U kunt de waarde wijzigen van `displayName` en `familyName`. | `profile` |
@@ -149,7 +149,7 @@ Een contexthub.generic-jsonp-opslag is geconfigureerd zodat deze gegevens opslaa
 
 De contextthub.generic-jsonp-voorbeeldopslagkandidaat stelt u in staat gegevens op te halen uit een JSONP-service of een webservice die JSON-gegevens retourneert. Voor deze opslagkandidaat, gebruik de opslagconfiguratie om details over de dienst te verstrekken JSONP aan gebruik.
 
-De [init](contexthub-api.md#init-name-config) de functie van de `ContextHub.Store.JSONPStore` De klasse JavaScript definieert een `config` object dat deze winkelkandidaat initialiseert. De `config` object bevat een `service` object dat details over de JSONP-service bevat. Om de opslag te vormen, verstrekt u `service` object in JSON-indeling als de waarde voor de eigenschap Detail Configuration.
+De [init](contexthub-api.md#init-name-config) de functie van de `ContextHub.Store.JSONPStore` JavaScript-klasse definieert een `config` object dat deze winkelkandidaat initialiseert. De `config` object bevat een `service` object dat details over de JSONP-service bevat. Om de opslag te vormen, verstrekt u `service` object in JSON-indeling als de waarde voor de eigenschap Detail Configuration.
 
 Als u gegevens wilt opslaan van de MD5-service van de site jsontest.com, gebruikt u de procedure in [Een ContextHub-winkel maken](#creating-a-contexthub-store) de volgende eigenschappen gebruiken:
 
@@ -159,21 +159,21 @@ Als u gegevens wilt opslaan van de MD5-service van de site jsontest.com, gebruik
 * **Ingeschakeld:** Selecteren
 * **Detailconfiguratie (JSON):**
 
-   ```javascript
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```javascript
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### Een UI-module toevoegen voor de md5-gegevens {#adding-a-ui-module-for-the-md-data}
 
@@ -187,15 +187,15 @@ Gebruik de procedure in [UI-modules toevoegen](#adding-a-ui-module) om de module
 * **Moduletype:** contexthub.base
 * **Detailconfiguratie (JSON):**
 
-   ```javascript
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Conversion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```javascript
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Conversion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## Foutopsporing in ContextHub {#debugging-contexthub}
 

@@ -4,9 +4,9 @@ description: Ontdek het ophalen van JSON-inhoud uit uw testomgeving met een Code
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -120,4 +120,4 @@ Deze query levert een JSON-reactie op die afbeeldingen bevat, en de `resultToDom
 
 ![Resultaat van de adventures-all-query en de resultToDom-renderfunctie](assets/do-not-localize/adventures-all-query-result.png)
 
-Nu u het werk hebt gedaan om de modellen en vragen te bouwen, kan uw inhoudsteam gemakkelijk overnemen. In de volgende module, toont u van de stroom van de inhoudauteur.
+Nu u het werk hebt gedaan om de modellen en vragen te bouwen, kan uw inhoudsteam overnemen met gemak. In de volgende module, toont u van de stroom van de inhoudauteur.

@@ -4,7 +4,7 @@ description: Leer hoe u Actieve kopieën maakt en synchroniseert om uw inhoud op
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
 workflow-type: tm+mt
 source-wordcount: '4308'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Wanneer uw blauwdrukconfiguratie wordt gebruikt, kunt u het met een rollout conf
 
 Vervagingsconfiguraties worden beschouwd als onveranderlijke gegevens en kunnen daarom niet worden bewerkt tijdens runtime. Om deze reden, moeten om het even welke configuratieveranderingen via Git worden opgesteld gebruikend de pijpleiding CI/CD.
 
-Meer informatie vindt u in het artikel [Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+Meer informatie vindt u in het artikel [Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 De volgende stappen zijn alleen voor test- en ontwikkelingsdoeleinden beschikbaar voor een beheerder van een lokale ontwikkelingsinstantie. Deze opties zijn niet beschikbaar in een AEMaaCS-cloudinstantie.
 
@@ -245,7 +245,7 @@ Leer een blauwdrukpagina om wijzigingen in de inhoud door te voeren in Live kopi
 
    ![Uitvoeringstijd definiëren](../assets/rollout-now-later.png)
 
-Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op de knop [***Async-taakstatus** pagina.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op de knop [***Async-taakstatus** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Een vervaging uitrollen vanuit de referentierail {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -270,7 +270,7 @@ Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op 
 
 1. Nadat u deze details hebt bevestigd, selecteert u **Uitrol** om de handeling uit te voeren.
 
-Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op de knop [**Async-taakstatus** pagina.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op de knop [**Async-taakstatus** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Een vervaging uitrollen met het overzicht van Actieve kopie {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ De [**Uitrol** Actie is ook beschikbaar via het Live Copy-overzicht](live-copy-o
 
    ![Implementatieschema definiëren](../assets/rollout-now-later.png)
 
-Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op de knop [**Async-taakstatus** pagina.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op de knop [**Async-taakstatus** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### Een actieve kopie synchroniseren {#synchronizing-a-live-copy}
 
@@ -429,7 +429,7 @@ De [Handeling voor hervatten is ook beschikbaar via het Live Copy-overzicht](liv
 
 ### Overervingsdiepte wijzigen (Ondiep/Ondiep) {#changing-inheritance-depth-shallow-deep}
 
-Op een bestaande Live kopie kunt u de diepte van een pagina wijzigen, zodat u kunt opgeven of onderliggende pagina&#39;s moeten worden opgenomen.
+Op een bestaande live kopie kunt u de diepte van een pagina wijzigen, dat wil zeggen of onderliggende pagina&#39;s al dan niet worden opgenomen.
 
 * Schakelen naar een oppervlakkige live kopie:
 
@@ -575,7 +575,7 @@ De [**Herstellen** Actie is ook beschikbaar via het Live Copy-overzicht](live-co
 
 Als u de aangebrachte wijzigingen wilt bijhouden, kunt u de blauwdrukpagina weergeven in **Verwijzingen** en deze vergelijken met de bijbehorende pagina Live Copy:
 
-1. In de **Sites** console, [navigeer naar een blauwdruk of pagina Live kopie en selecteer deze.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. In de **Sites** console, [navigeer naar een blauwdruk- of Live Copy-pagina en selecteer deze](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open de **[Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** en afhankelijk van de context:
 
    * **Blauwdruk**

@@ -2,9 +2,9 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1826'
 ht-degree: 75%
 
 ---
@@ -65,7 +65,7 @@ Het schrapen van per-huurderinstanties van de dienst is op de twee assen van toe
 ## Omgevingen {#environments}
 
 >[!NOTE]
->Zie [Implementeren - Runmodi](/help/implementing/deploying/overview.md#runmodes) voor meer informatie
+>Zie voor meer informatie [Implementeren - Runmodi](/help/implementing/deploying/overview.md#runmodes)
 
 AEM as a Cloud Service wordt beschikbaar gesteld als afzonderlijke instanties waarbij elke instantie een volledige AEM-omgeving vertegenwoordigt.
 

@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Er zijn een aantal vereisten voordat u begint met het vertalen van AEM inhoud.
 
 >[!TIP]
 >
->Als u niet vertrouwd bent met het gebruik van een grootschalig CMS als AEM, kunt u overwegen om de [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentatie voordat u verdergaat. De documentatie voor basisverwerking maakt geen deel uit van de reis. Ga daarom na voltooiing terug naar deze pagina.
+>Als u niet vertrouwd bent met het gebruik van een grootschalig CMS als AEM, kunt u overwegen om de [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentatie voordat u verdergaat. De documentatie van de Basisbehandeling maakt geen deel uit van de reis. Ga daarom terug naar deze pagina wanneer u klaar bent.
 
 ### Gereedschappen {#tools}
 
@@ -61,7 +61,7 @@ Voor de vertaalspecialist is het niet belangrijk om diepgaand te begrijpen hoe A
 
 ### Sites-console {#sites-console}
 
-De siteconsole biedt een overzicht van de structuur van uw inhoud waardoor u eenvoudig door uw inhoud kunt navigeren en deze kunt beheren door nieuwe pagina&#39;s te maken, pagina&#39;s te verplaatsen en te kopiëren en door inhoud te publiceren.
+De siteconsole biedt een overzicht van de structuur van uw inhoud waardoor u eenvoudig door uw inhoud kunt navigeren en deze kunt beheren door nieuwe pagina&#39;s te maken, pagina&#39;s te verplaatsen en te kopiëren en inhoud te publiceren.
 
 Toegang tot de siteconsole:
 
@@ -75,7 +75,7 @@ Toegang tot de siteconsole:
 
    ![Inhoudshiërarchie](assets/sites-console-hierarchy.png)
 
-1. Door op het selectievakje van een item in een kolom te tikken of erop te klikken, wordt dat item geselecteerd en worden de details van het geselecteerde item in de kolom rechts weergegeven, en wordt een aantal beschikbare acties voor het geselecteerde item op de bovenstaande werkbalk weergegeven.
+1. Door op het selectievakje van een item in een kolom te tikken of erop te klikken, wordt dat item geselecteerd en worden de details van het geselecteerde item in de kolom rechts weergegeven, zodat een aantal beschikbare acties voor het geselecteerde item op de bovenstaande werkbalk zichtbaar wordt.
 
    ![Inhoud selecteren](assets/sites-console-selection.png)
 

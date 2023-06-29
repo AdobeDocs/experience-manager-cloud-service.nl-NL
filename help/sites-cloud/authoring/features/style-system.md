@@ -2,9 +2,9 @@
 title: Stijlsysteem
 description: Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1320'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Het systeem van de Stijl verstrekt een verenigde oplossing aan zowel de vereiste
 * Sjabloonauteurs kunnen stijlklassen definiëren in het inhoudsbeleid van componenten.
 * Inhoudsauteurs kunnen deze klassen vervolgens selecteren in een vervolgkeuzelijst wanneer ze de component op een pagina bewerken, zodat ze de bijbehorende stijlen kunnen toepassen.
 
-De stijlklasse wordt dan opgenomen op het decoratie omslagelement van de component zodat de componentenontwikkelaar zich niet met de behandeling van de stijlen moet bezighouden voorbij het verstrekken van hun CSS regels.
+De stijlklasse wordt dan opgenomen op het decoratie omslagelement van de component zodat de componentenontwikkelaar zich niet met de behandeling van de stijlen hoeft bezig te houden voorbij het verstrekken van hun CSS regels.
 
 ## Overzicht {#overview}
 
@@ -46,7 +46,7 @@ Het gebruik van het Stijlsysteem heeft doorgaans de volgende vorm.
 
 1. De auteur van de AEM pagina kan vervolgens de ontworpen stijlen in de pagina-editor kiezen via het stijlmenu van de werkbalk van de component.
 
-Merk op dat slechts de laatste drie stappen daadwerkelijk in AEM worden uitgevoerd. Dit betekent dat alle ontwikkeling van de vereiste CSS en Javascript zonder AEM kan worden uitgevoerd.
+Merk op dat slechts de laatste drie stappen daadwerkelijk in AEM worden uitgevoerd. Dit betekent dat alle ontwikkeling van de vereiste CSS en JavaScript zonder AEM kan worden uitgevoerd.
 
 Voor een feitelijke implementatie van de stijlen is alleen implementatie op AEM en selectie binnen de componenten van de gewenste sjablonen vereist.
 
@@ -104,7 +104,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 >[!CAUTION]
 >
->De CSS klassen - en om het even welke noodzakelijke Javascript - gevormd als stijleigenschappen van het beleid van een component, moeten worden opgesteld zoals [Clientbibliotheken](/help/implementing/developing/introduction/clientlibs.md) om te werken.
+>De CSS-klassen - en eventueel noodzakelijke JavaScript - die zijn geconfigureerd als stijleigenschappen van het beleid van een component, moeten worden geïmplementeerd als [Clientbibliotheken](/help/implementing/developing/introduction/clientlibs.md) om te werken.
 
 ## Instellen {#setup}
 

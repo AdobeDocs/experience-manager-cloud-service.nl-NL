@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines
 description: Een inleiding in Adobe Experience Manager as a Cloud Service en de Web Accessibility Guidelines
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ Toegankelijke websites en content maken met AEM as a Cloud Service heeft betrekk
 
 * Auteurs die deze functies gebruiken om toegankelijke websites te maken.
 
-   Het maken van toegankelijke content is een proces. AEM biedt veel mogelijkheden, maar contentauteurs moeten ervoor zorgen dat zij de technieken volgen die nodig zijn om toegankelijke content te creëren.
+  Het maken van toegankelijke content is een proces. AEM biedt veel mogelijkheden, maar contentauteurs moeten ervoor zorgen dat zij de technieken volgen die nodig zijn om toegankelijke content te creëren.
 
 * Sjabloonontwikkelaars dienen zich bij de implementatie van het websiteontwerp ook bewust te zijn van dergelijke problemen.
 
@@ -64,4 +64,4 @@ Met Adobe Experience Manager kunnen contentauteurs en/of website-eigenaars webco
 
 ## Toegankelijkheid in Adobe {#accessibility-at-adobe}
 
-Ga voor meer informatie naar het [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+Zie voor meer informatie [Adobe Toegankelijkheidsinformatiecentrum](https://www.adobe.com/accessibility/).

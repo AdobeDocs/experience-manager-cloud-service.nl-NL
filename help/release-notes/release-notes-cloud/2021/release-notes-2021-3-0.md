@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.3.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ De releasedatum voor de analyse van best practices v2.1.8 is 22 maart 2021.
 
 ### Nieuw in Analyzer van Beste praktijken {#what-is-new-bpa}
 
-* Mogelijkheid om ACS-gemeenschappelijke bevindingen uit het BPA- rapport in UI evenals uit het rapport uit te filteren dat als CSV- dossier wordt uitgevoerd.
+* Mogelijkheid om ACS-gemeenschappelijke bevindingen uit het BPA- rapport in het gebruikersinterface en uit het rapport uit te filteren dat als CSV- dossier wordt uitgevoerd.
 
 ## Tools voor herstructurering van code {#code-refactoring-tools}
 

@@ -2,9 +2,9 @@
 title: Projecten
 description: Met projecten kunt u bronnen groeperen in één entiteit waarvan de gemeenschappelijke, gedeelde omgeving het eenvoudig maakt om uw projecten te beheren
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1255'
 ht-degree: 9%
 
 ---
@@ -95,7 +95,7 @@ Met de tegel Koppelingen kunt u externe koppelingen aan uw project koppelen.
 
 ![Koppelingen](/help/sites-cloud/authoring/assets/project-links.png)
 
-U kunt de koppeling een naam geven die gemakkelijk herkenbaar is en u kunt de miniatuur wijzigen.
+U kunt de koppeling een naam geven die gemakkelijk herkenbaar is en de miniatuur wijzigen.
 
 ![Koppeling toevoegen](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -105,7 +105,7 @@ De tegel Projectinformatie bevat algemene informatie over het project, zoals een
 
 ![Projectinfo](/help/sites-cloud/authoring/assets/project-info.png)
 
-De leden van het team kunnen van deze tegel (of hebben hun rollen veranderd) evenals de tegel van het Team worden toegewezen en worden geschrapt.
+De leden van het team kunnen van deze tegel (of hebben hun rollen veranderd) en de tegel van het Team worden toegewezen en worden geschrapt.
 
 ![Teamleden toevoegen aan project](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -137,11 +137,11 @@ U kunt uw project toewijzen om bepaalde workflows te volgen. Als er workflows ac
 
 U kunt uw project toewijzen om bepaalde workflows te volgen. Afhankelijk van welk project u kiest, hebt u verschillende beschikbare werkschema&#39;s.
 
-Deze worden beschreven in [Werken met projectworkflows.](/help/sites-cloud/authoring/projects/workflows.md)
+Deze worden beschreven in [Werken met projectworkflows](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### Lanceringen {#launches}
 
-In de tegel Startpagina worden alle opstarten weergegeven die zijn aangevraagd met een [Verzoek indienen om workflow te starten.](/help/sites-cloud/authoring/projects/workflows.md)
+In de tegel Startpagina worden alle opstarten weergegeven die zijn aangevraagd met een [Verzoek indienen om workflow te starten](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![Lanceringen](/help/sites-cloud/authoring/assets/project-launches.png)
 

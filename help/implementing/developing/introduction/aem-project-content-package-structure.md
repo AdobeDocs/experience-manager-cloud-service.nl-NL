@@ -2,7 +2,7 @@
 title: AEM-projectstructuur
 description: Leer hoe u pakketstructuren definieert voor implementatie op Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2918'
 ht-degree: 3%
@@ -558,7 +558,7 @@ In het reactorproject `pom.xml`voegt u de benodigde instructies voor openbare ge
   ...
   <repository>
       <id>3rd-party-repository</id>
-      <name>Public 3rd Party Repository</name>
+      <name>Public Third-Party Repository</name>
       <url>https://repo.3rdparty.example.com/...</url>
       <releases>
           <enabled>true</enabled>

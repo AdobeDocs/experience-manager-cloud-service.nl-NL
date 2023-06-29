@@ -2,9 +2,9 @@
 title: Uw aangepaste thema implementeren
 description: Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Gefeliciteerd! U hebt de AEM Quick Site Creation-reis voltooid! Nu moet u:
 * Hoe te om een thema aan te passen en te testen gebruikend vooraf bepaalde AEM inhoud en die veranderingen in AEM greep te begaan.
 * Hoe te om front-end aanpassing op te stellen gebruikend de pijpleiding.
 
-U kunt nu de thema&#39;s van uw eigen AEM site aanpassen. Voordat u echter begint met het maken van verschillende werkstromen met behulp van meerdere front-end pijpleidingen, moet u het document controleren [Sites ontwikkelen met behulp van de Front-End Pipeline.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) Het zal u helpen optimaal uit uw front-end ontwikkeling door te halen:
+U kunt nu de thema&#39;s van uw eigen AEM site aanpassen. Voordat u echter verschillende werkstromen gaat maken met behulp van meerdere front-end pijpleidingen, moet u het document controleren [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Het kan u helpen optimaal uit uw front-end ontwikkeling door te halen:
 
 * Eén bron van waarheid behouden.
 * Handhaving van een scheiding van zorgen.
@@ -105,7 +105,7 @@ Hieronder vindt u een aantal aanvullende bronnen die dieper ingaan op bepaalde c
 * [Het Siterail gebruiken om uw Sitethema te beheren](/help/sites-cloud/administering/site-creation/site-rail.md) - Leer de krachtige functies van de Site-rail om u te helpen uw site eenvoudig aan te passen en te beheren, zoals het downloaden van themabronnen en het beheren van themaversies.
 * [as a Cloud Service technische documentatie AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - Als u al een duidelijk inzicht hebt in AEM, kunt u de diepgaande technische documenten direct raadplegen.
 * [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Als u meer informatie wilt over de functies van Cloud Manager, kunt u de diepgaande technische documenten direct raadplegen.
-* [Op rollen gebaseerde machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Raadpleeg dit document voor meer informatie over deze rollen en hoe u deze kunt beheren.
+* [Op rollen gebaseerde machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Zie dit document voor details over deze rollen en hoe te om hen te beheren.
 * [Opslagplaatsen voor Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Raadpleeg dit document als u meer informatie nodig hebt over het instellen en beheren van git-opslagruimten voor uw AEMaaCS-project.
 * [CI/CD-pijpleiding configureren - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - Meer informatie over het instellen van pijpleidingen, zowel volledige stapel als front-end, vindt u in dit document.
 * [Standaardsitemplate AEM](https://github.com/adobe/aem-site-template-standard) - Dit is de bewaarplaats GitHub van het AEM Standaardmalplaatje van de Plaats.

@@ -4,9 +4,9 @@ description: Leer hoe u inhoud voorbereidt voor vertaling.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Meertalige websites bieden over het algemeen inhoud in meerdere talen. De site i
 
 >[!TIP]
 >
->Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md) Dit is een geleid pad door uw AEM Sites-inhoud te vertalen met de krachtige vertaalgereedschappen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
+>Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u [Sites Translation Journey,](/help/journey-sites/translation/overview.md) Dit is een geleid pad door uw AEM Sites-inhoud te vertalen met AEM krachtige vertaalhulpmiddelen, ideaal voor mensen zonder AEM of vertaalervaring.
 
 De [WKND-zelfstudiesite](/help/implementing/developing/introduction/develop-wknd-tutorial.md) bevat verschillende taalvertakkingen en gebruikt de volgende structuur:
 
@@ -92,7 +92,7 @@ AEM biedt een **Verwijzingen** rail die een lijst toont van taalwortels die zijn
 
 ![Taalwortels](../assets/language-roots.png)
 
-Gebruik de volgende procedure om de taalkopieën voor een pagina te bekijken met de [spoorkiezer.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+Gebruik de volgende procedure om de taalkopieën voor een pagina te bekijken met de [spoorwegkiezer](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 1. Selecteer in de siteconsole een pagina van de site en klik of tik op **Verwijzingen**.
 

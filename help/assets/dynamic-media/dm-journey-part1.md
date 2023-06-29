@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3706'
+source-wordcount: '3705'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Deze unieke leveringsmethode zorgt ervoor dat de verenigbare kwaliteitservaringe
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media levert dezelfde primaire afbeelding aan verschillende mediums in verschillende formaten en formaten.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media levert dezelfde primaire afbeelding aan verschillende media in verschillende formaten en formaten](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _Adobe Dynamic Media zorgt voor consistentie, kwaliteit wordt geleverd aan elk scherm, ongeacht grootte of bandbreedte._
 
 Terwijl u doorleest, gaat u meer leren over waarom dit concept van &quot;één primair elementenbestand, eindeloze mogelijkheden&quot; belangrijk is.
@@ -182,7 +182,7 @@ Een ander gebruiksgeval waarvoor Dynamic Media oplost is video. Video is complex
 
 Klanten komen naar Dynamic Media met het volgende probleem dat ze hopen op te lossen:
 
-&quot;_We hebben de video, en we hebben er veel geld aan besteed. Maar we hebben het afgeschermd van het plaatsen op pagina&#39;s, of het leveren, want door onze tests kunnen we de kwaliteit van de video echt niet garanderen, of als het echt gaat spelen. En uiteindelijk beïnvloedt dat onze merken en mogelijk onze rol voor zelfs conversie._&quot;
+&quot;_We hebben de video, en we hebben er veel geld aan besteed. Maar we kozen ervoor om het niet op pagina&#39;s te zetten, of te leveren, omdat we de kwaliteit van de video niet kunnen garanderen, of dat het echt gaat spelen. En uiteindelijk beïnvloedt dat onze merken en mogelijk onze rol voor zelfs conversie._&quot;
 
 Dynamic Media&#39;s oplossing is dat één primair videobestand wordt gebruikt en dat Dynamic Media alle grootten door het transcoderingsproces laat maken. Dan, paar dat met Dynamische Media&#39;s intelligente videospeler. Deze workflow garandeert dat de video die u gebruikt op de hoofdbestemmingspagina of op een categorie- of productdetailpagina, overal consistent zal zijn en van hoge kwaliteit zal worden geleverd.
 
@@ -265,7 +265,7 @@ De bovenstaande vertoning is live! [Probeer het](https://s7d1.scene7.com/s7viewe
 
 ## Optioneel - Meer informatie
 
-Deel I van deze reis ging over de grondbeginselen van een verscheidenheid aan Dynamic Media-onderwerpen. Als je meer wilt weten over wat je net leest, gebruik dan de onderstaande materialen om meer in detail concepten te verkennen. Anders kunt u doorgaan met deel II van uw reis. Zie [Hoe verder in deze Dynamic Media-reis](#whats-next).
+Deel I van deze reis ging over de grondbeginselen van een verscheidenheid aan Dynamic Media-onderwerpen. Als u meer wilt weten over wat u net leest, gebruikt u de onderstaande materialen om concepten in detail te verkennen. Anders kunt u doorgaan met deel II van uw reis. Zie [Hoe verder in deze Dynamic Media-reis](#whats-next).
 
 _Dynamic Media Help-onderwerpen_
 
@@ -291,7 +291,7 @@ _Dynamic Media-viewers_
 
 ## Hoe verder in deze Dynamic Media-reis {#whats-next}
 
-In deel II van deze reis, zult u Dynamic Media URLs een wat dichterbij bekijken om beter te begrijpen wat aan de hand is wanneer een activa wordt geleverd. U leert ook meer over de grondbeginselen van het maken van voorinstellingen voor afbeeldingen om elementen te renderen, en meer over Afbeeldingssets, Spin-sets en Gemengde-mediasets en hoe deze worden gemaakt.
+In deel II van deze reis, bekijkt u Dynamic Media URLs een wat dichter om beter te begrijpen wat aan de hand is wanneer een activa wordt geleverd. U leert ook meer over de grondbeginselen van het maken van voorinstellingen voor afbeeldingen om elementen te renderen, en leert over Afbeeldingssets, Spin-sets en Gemengde-mediasets en hoe deze worden gemaakt.
 
 Neem me mee naar [Dynamic Media-reis: Basisbeginselen, Deel II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 

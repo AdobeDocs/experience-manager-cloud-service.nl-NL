@@ -2,7 +2,7 @@
 title: AEM doorlopende vertaalreis
 description: Begin hier voor een begeleide reis door uw inhoud zonder kop te vertalen met AEM krachtige vertaalhulpmiddelen.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Het volgende is de persoon die in deze reis interactie heeft.
 | Beheerder | Beheert de basisopstelling en configuratie van AEM | De vertaalspecialist werkt met de beheerder om configuratieveranderingen nodig voor vertaling zoals het installeren van een vertaalschakelaar aan te brengen. |
 | Content Architect | Analyseert de vereisten voor de gegevens die zonder kop moeten worden geleverd en bepaalt de structuur voor deze gegevens | Vertaalspecialisten werken samen met de inhoudarchitect om de organisatie van de inhoud te bepalen zodat het gemakkelijk kan worden vertaald. |
 
-Informatie op deze reis kan natuurlijk nuttig zijn voor iedereen, maar sommige informatie kan voor bepaalde rollen overbodig zijn. Blijf op de hoogte voor [komende reizen die bijkomende rollen bestrijken.](/help/journey-documentation/documentation-journeys.md#journeys)
+Informatie op deze reis kan natuurlijk nuttig zijn voor iedereen, maar sommige informatie kan voor bepaalde rollen overbodig zijn. Blijf op de hoogte voor [komende reizen met bijkomende rollen](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## De Headless Translation Reis {#the-journey}
 

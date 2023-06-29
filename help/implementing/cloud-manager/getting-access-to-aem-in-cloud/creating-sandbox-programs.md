@@ -2,9 +2,9 @@
 title: Sandbox-programma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen sandboxprogramma te maken voor training, demo, POC of andere niet-productiedoeleinden.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,9 @@ Meer informatie over programmatypen in het document [Het begrip van Programma en
 
 ## Een Sandbox-programma maken {#create}
 
-Ga als volgt te werk om een sandboxprogramma te maken.
+1. Meld u aan bij Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
-
-1. Klik op de landingspagina van Cloud Manager op **Programma toevoegen** in de rechterbovenhoek van het scherm.
+1. Vanuit de openingspagina van Cloud Manager klikt u in de rechterbovenhoek van het scherm op **Programma toevoegen**.
 
    ![Openingspagina van Cloud Manager](assets/cloud-manager-my-programs.png)
 
@@ -35,21 +33,21 @@ Ga als volgt te werk om een sandboxprogramma te maken.
 
 1. In de **Sandbox instellen** kiest u welke oplossingen u wilt inschakelen in uw sandboxprogramma door de opties in het dialoogvenster **Oplossingen en invoegtoepassingen** tabel.
 
-   * Gebruik de chevrons naast de oplossingsnamen om extra, facultatieve toe:voegen-ons voor de oplossingen te tonen.
+   * Gebruik de chevrons naast de oplossingsnamen zodat kunt u extra, facultatieve toe:voegen-ons voor de oplossingen zien.
 
    * De **Sites** en **Activa** -oplossingen worden altijd opgenomen in sandboxprogramma&#39;s en kunnen niet worden uitgeschakeld.
 
    ![Oplossingen en invoegtoepassingen selecteren voor een sandbox](assets/sandbox-solutions-add-ons.png)
 
-1. Tik op **Maken**.
+1. Als u de oplossingen en invoegtoepassingen voor uw sandboxprogramma hebt geselecteerd, klikt u op **Maken**.
 
-Naarmate het installatieproces vordert, wordt op de bestemmingspagina een nieuwe sandbox-programmakaart met een statusindicator weergegeven.
+U ziet een nieuwe zandbakprogrammakaart op de landingspagina met een statusindicator aangezien het opstellingsproces vordert.
 
 ![Sandbox-ontwerp van overzichtspagina](assets/sandbox-setup.png)
 
 ## Toegang tot sandbox {#access}
 
-U kunt de details van de configuratie van uw sandbox bekijken en de omgeving openen (zodra deze beschikbaar is) door de overzichtspagina van het programma te bekijken.
+U kunt de details van uw zandbakopstelling bekijken en tot het milieu (zodra beschikbaar) toegang hebben door de pagina van het programmaoverzicht te bekijken.
 
 1. Klik op de landingspagina van Cloud Manager op de knop voor weglatingen in het zojuist gemaakte programma.
 
@@ -61,7 +59,7 @@ U kunt de details van de configuratie van uw sandbox bekijken en de omgeving ope
 
    >[!TIP]
    >
-   >Raadpleeg het document voor meer informatie over het openen en beheren van de git-opslagplaats [Toegang tot Git.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   >Ga voor meer informatie over toegang tot en beheer van uw it-opslagplaats naar [Toegang tot it](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 1. Als de ontwikkelomgeving eenmaal is gemaakt, kunt u de **AEM** koppeling om u aan te melden bij AEM.
 
@@ -71,6 +69,6 @@ U kunt de details van de configuratie van uw sandbox bekijken en de omgeving ope
 
    ![Sandbox implementeren](assets/create-program-setup-deploy.png)
 
-Als u op een bepaald moment naar een ander programma moet schakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om het **Navigeren naar** optie.
+Als u naar een ander programma moet overschakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om de **Navigeren naar** optie.
 
 ![Ga naar](assets/create-program-a1.png)

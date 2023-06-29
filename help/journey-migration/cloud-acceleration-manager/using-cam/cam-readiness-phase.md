@@ -2,9 +2,9 @@
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1049'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
    ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >Zie Een project maken en beheren in de Cloud Acceleration Manager voor meer informatie.
+   >Zie Een project maken en beheren in Cloud Acceleration Manager voor meer informatie.
 
 ## De kaart van de Analyse van Beste praktijken gebruiken {#best-practices-analysis}
 
@@ -62,7 +62,7 @@ Volg de stappen hieronder om de kaart van de Analyse van Beste praktijken te geb
 
    ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. Het dashboard van de Analyse van Beste praktijken van het overzicht en onderzoek in CAM. Zie de onderstaande sectie [Rapport Analyse van beste praktijken](#analysis-report) voor meer informatie .
+1. Het dashboard van de Analyse van Beste praktijken van het overzicht en onderzoek in CAM. Zie [Rapport Analyse van beste praktijken](#analysis-report) voor meer informatie .
 
    >[!NOTE]
    >Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld.

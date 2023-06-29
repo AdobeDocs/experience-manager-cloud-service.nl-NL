@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Pagina's publiceren en verwijderen met AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1802'
 ht-degree: 5%
 
 ---
@@ -112,11 +112,11 @@ Een pagina publiceren met Snel publiceren:
 
 >[!NOTE]
 >
->Snel publiceren is een oppervlakkige publicatie, d.w.z. alleen de geselecteerde pagina of pagina&#39;s worden gepubliceerd en onderliggende pagina&#39;s niet.
+>Snel publiceren is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina of pagina&#39;s worden gepubliceerd en onderliggende pagina&#39;s niet.
 
 #### Publicatie beheren {#manage-publication}
 
-**Publicatie beheren** biedt meer opties dan **Snel publiceren**, zodat onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en alle toepasselijke workflows kunnen worden gestart, en de mogelijkheid kan worden geboden om op een latere datum te publiceren.
+**Publicatie beheren** biedt meer opties dan **Snel publiceren**, zodat onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en alle toepasselijke workflows kunnen worden gestart en de optie kan worden geboden om op een latere datum te publiceren.
 
 Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beheren:
 

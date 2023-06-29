@@ -2,9 +2,9 @@
 title: AEM
 description: Het gereedschap AEM repo is een eenvoudige oplossing voor het overbrengen van JCR-inhoud tussen uw lokale bestandssysteem en de AEM server via een opdrachtregel die vergelijkbaar is met FTP.
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ Het gereedschap biedt geen ondersteuning voor meerdere filterpaden of FileVault-
 
 >[!CAUTION]
 >
->Houd er rekening mee dat het gereedschap AEM repo altijd het volledige opgegeven bestand of de opgegeven map overschrijft.
+>Met het gereedschap AEM repo overschrijft u altijd het gehele opgegeven bestand of de opgegeven map.
 
 ## Downloaden en documentatie {#download-and-documentation}
 
 De [AEM Repo Tool is beschikbaar op GitHub via deze koppeling](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) samen met gedetailleerde installatie- en gebruiksinstructies.
 
-Als u wenst om de bron van het AEM Hulpmiddel van de Repo te downloaden, verwijs naar het hieronder verbonden project GitHub.
+Als u wenst om de bron van het AEM Hulpmiddel van de Repo te downloaden, zie het hieronder verbonden project GitHub.
 
 CODE VOOR GITHUB
 

@@ -2,9 +2,9 @@
 title: DNS-recordstatus controleren
 description: Leer hoe te om te bepalen of uw DNS montages behoorlijk door de Manager van de Wolk te gebruiken oplossen.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Cloud Manager voert een DNS raadpleging voor uw domeinnaam uit en toont één va
 
 * **DNS lost onjuist op** - Dit wijst erop dat of de DNS archiefconfiguratie niet heeft opgelost of onjuist is.
 
-   * Het document raadplegen [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) voor meer informatie.
+   * Zie [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) voor meer informatie.
    * Wanneer u klaar bent, moet u de optie **Opnieuw oplossen** naast de status.
 
 * **DNS-resolutie in uitvoering** - De resolutie is in behandeling.

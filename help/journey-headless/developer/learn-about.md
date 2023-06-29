@@ -2,9 +2,9 @@
 title: Meer informatie over CMS Headless Development
 description: In dit deel van de AEM Headless Developer Journey, leer over technologie zonder kop en waarom je het zou gebruiken.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1621'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Met headless hebt u de beschikking over een wereld van flexibiliteit om uw digit
 
 Als er veel verschillende kanalen zijn, kan dat betekenen dat ze elk hun eigen presentatiesystemen hebben. Hoewel ze allemaal dezelfde inhoud gebruiken via dezelfde API&#39;s, kan de ervaring verschillen vanwege de verschillende presentaties. De consistentie van de ervaring van de klant moet in het oog worden gehouden en er moet zorg voor worden gedragen.
 
-Door zorgvuldige ontwerpsystemen, het delen van patroonbibliotheken, en het gebruiken van herbruikbare ontwerpcomponenten evenals gevestigde, open cliënt-kant kaders, kunnen de verenigbare ervaringen worden gewaarborgd, maar dit moet worden gepland.
+Door zorgvuldige ontwerpsystemen in te voeren, patroonbibliotheken te delen, herbruikbare ontwerpcomponenten te gebruiken en bestaande open client-side frameworks te gebruiken, kunnen consistente ervaringen worden gegarandeerd, maar dit moet worden gepland.
 
 ## De toekomst is zonder kop en de toekomst is nu {#future}
 

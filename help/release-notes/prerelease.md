@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service Prerelease-kanaal
 description: Leer hoe u het pre-releasekanaal gebruikt om een voorvertoning van aanstaande functies te AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Experience Manager as a Cloud Service biedt nieuwe functies op een normale
 
 Als u vertrouwd wilt raken met de functies die gepland zijn om live te gaan met de volgende functieversie, kunt u zich abonneren op het pre-releasekanaal. Dit kanaal is toegankelijk door uw ontwikkelomgevingen of elke sandboxomgeving te configureren. U kunt een voorvertoning weergeven van wijzigingen die toegankelijk zijn via de AEM-gebruikersinterface en code maken op basis van nieuwe prerelease-API&#39;s.
 
-De lijst met pre-releasefuncties voor een bepaalde functieversie wordt gepubliceerd in het gedeelte [opmerkingen bij de release.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+De lijst met pre-releasefuncties voor een bepaalde functieversie wordt gepubliceerd in het gedeelte [releaseopmerkingen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## AEM as a Cloud Service releases {#releases}
 
@@ -37,7 +37,7 @@ Als het bijvoorbeeld mei is en u bent geabonneerd op het pre-releasekanaal, kunt
 
 ![Prerelease, cadence, afbeelding](assets/prerelease-cadence.png)
 
-Prerelease geeft u een het rollen venster van één maand in aanstaande eigenschappen AEMaaCS, die u tijd geven om het effect van om het even welke nieuwe eigenschappen aan uw projecten en aanpassingen te beoordelen evenals planintroductie van dergelijke eigenschappen, het testen, en gebruikersopleiding.
+Prerelease geeft u een het rollen venster van één maand in aanstaande eigenschappen AEMaaCS, die u tijd geven om het effect van om het even welke nieuwe eigenschappen aan uw projecten en aanpassingen te beoordelen en de introductie van plannen dergelijke eigenschappen, het testen, en gebruikersopleiding te plannen.
 
 Voor het effectief benutten van de voordelen van het prereleasekanaal zijn vier stappen vereist.
 
@@ -122,7 +122,7 @@ U kunt nieuwe eigenschappen in de console van Plaatsen in lokale Quickstart SDK 
 
 #### Quickstart SDK starten in pre-releasemodus {#prerelease-mode}
 
-1. Download de SDK van de portal voor softwaredistributie en installeer de SDK zoals beschreven in [Toegang tot de AEM as a Cloud Service SDK.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+1. Download de SDK van de portal voor softwaredistributie en installeer de SDK zoals beschreven in [Toegang tot de AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 1. Neem het argument op wanneer u de SDK Quickstart start `-r prerelease`.
 
 De waarde blijft behouden, zodat deze alleen bij het eerste opstarten kan worden geselecteerd. Installeer de SDK opnieuw om de opdrachtregeloptie te wijzigen.

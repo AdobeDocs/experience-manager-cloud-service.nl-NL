@@ -4,9 +4,9 @@ description: Leer de beste praktijken die door Adobe engineering en raadplegende
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1425'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Wanneer u een nieuwe site maakt met Live Copy, is het handig om blauwdrukconfigu
 
 >[!NOTE]
 >
-> CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
+>CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan deze regel bij het configureren van Live Copy.
 
 ## Componenten en containersynchronisatie {#components-and-container-synchronization}
 
@@ -81,13 +81,13 @@ MSM kan op twee manieren helpen bij het maken van meertalige websites:
 
 Houd bij het maken van taalstramienen rekening met het volgende:
 
-* Terwijl MSM zelf **biedt geen vertaling van inhoud**, kan het met derde vertaalschakelaars worden geïntegreerd die doen. Houd er rekening mee dat:
+* Terwijl MSM zelf **biedt geen vertaling van inhoud**, kan het met derde vertaalschakelaars worden geïntegreerd die doen. Let op het volgende:
    * Met MSM kunt u overerving op pagina- en/of componentniveau annuleren. Zo voorkomt u bij de volgende rollout dat u vertaalde inhoud overschrijft (van een Live Copy met nog niet-vertaalde inhoud van een blauwdruk).
       * Sommige vertalingsconnectors van derden automatiseren dit beheer van MSM-overerving.
-      * Neem contact op met uw vertaalserviceprovider voor meer informatie.
+      * Vraag uw vertaalservicebureau om meer informatie.
       * Een alternatieve benadering voor het maken en vertalen van taalmeesters is het gebruik van taalkopieën in combinatie met AEM kader voor vertaalintegratie buiten de doos.
 
-Zie voor meer informatie [Inhoud vertalen voor meertalige sites](/help/sites-cloud/administering/translation/overview.md) en de [Aanbevolen procedures voor vertaling.](/help/sites-cloud/administering/translation/best-practices.md)
+Zie voor meer informatie [Inhoud vertalen voor meertalige sites](/help/sites-cloud/administering/translation/overview.md) en de [Aanbevolen werkwijzen voor vertaling](/help/sites-cloud/administering/translation/best-practices.md).
 
 ## Structuurwijzigingen en rollouts {#structure-changes-and-rollouts}
 

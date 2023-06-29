@@ -2,9 +2,9 @@
 title: Team instellen voor bedrijfsontwikkeling
 description: Leer hoe u uw ontwikkelingsteam voor bedrijven kunt instellen en schalen en hoe AEM as a Cloud Service uw ontwikkelingsproces kan ondersteunen.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Leer hoe u uw ontwikkelingsteam voor bedrijven kunt instellen en schalen en hoe 
 
 ## Inleiding {#introduction}
 
-Om klanten met bedrijfsontwikkelingsmontages te steunen, AEM as a Cloud Service volledig met de Manager van de Wolk en zijn doelgericht-gebouwd integreren, [geopinioneerde CI/CD-pijpleidingen.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Deze pijpleidingen en diensten zijn gebaseerd op de beste praktijken en zorgen voor een degelijke [testen en de hoogste codekwaliteit.](/help/implementing/cloud-manager/code-quality-testing.md)
+Om klanten met bedrijfsontwikkelingsmontages te steunen, AEM as a Cloud Service volledig met de Manager van de Wolk en zijn doelgericht-gebouwd integreren, [Eiwitpijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Deze pijpleidingen en diensten zijn gebaseerd op de beste praktijken en zorgen voor een degelijke [testen en de hoogste codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md).
 
 ## De Steun van de Manager van de wolk in de Opstelling van de Ontwikkeling van het Team van de Onderneming {#cloud-manager}
 
@@ -70,7 +70,7 @@ De installatie in de git-opslagplaats van Cloud Manager heeft twee vertakkingen.
 * Een stabiele releasetak bevat de productiecode van alle teams.
 * Een ontwikkelingstak bevat de ontwikkelingscode van alle teams.
 
-Elke duw aan de gokbewaarplaats van een team in of de ontwikkeling of de stabiele tak teweegbrengt [GitHub, actie.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+Elke duw aan de gokbewaarplaats van een team in of de ontwikkeling of de stabiele tak teweegbrengt [GitHub, actie](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
 
 Alle projecten volgen de zelfde opstelling voor de stabiele tak. Een duw naar de stabiele tak van een project wordt automatisch geduwd aan de stabiele tak in de gokbewaarplaats van de Manager van de Wolk. De productiepijplijn in de Manager van de Wolk wordt gevormd om door een duw aan de stabiele tak worden teweeggebracht. De productiepijpleiding wordt daarom uitgevoerd door elke duw van om het even welk team in een stabiele tak en de productieleiding wordt bijgewerkt als alle kwaliteitstoegangspoorten overgaan.
 
@@ -82,7 +82,7 @@ Het runnen van de productiepijpleiding omvat het controleren van de code van all
 
 Voor lokale ontwikkeling [SDK voor AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing) wordt gebruikt. Met de SDK kan een lokale auteur, publicateur en verzender worden ingesteld. Dit maakt offline ontwikkeling en snelle doorlooptijden mogelijk. Soms wordt alleen de auteursomgeving gebruikt voor ontwikkeling, maar als u snel een verzender- en publicatieomgeving instelt, kunt u alles lokaal testen voordat u naar de opslagplaats voor kompas gaat.
 
-De leden van elk team controleren gewoonlijk de code van de gedeelde git voor evenals hun eigen projectcode. Andere projecten hoeven niet te worden gecontroleerd omdat de projecten onafhankelijk zijn.
+De leden van elk team controleren gewoonlijk de code van de gedeelde git voor hun eigen projectcode. Andere projecten hoeven niet te worden gecontroleerd omdat de projecten onafhankelijk zijn.
 
 ![Lokale uitchecken en SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
@@ -90,7 +90,7 @@ Deze real-world opstelling kan als blauwdruk worden gebruikt en dan aan de behoe
 
 >[!TIP]
 >
->Raadpleeg het document [Werken met Meerdere opslagplaatsen voor Git-bronnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) voor meer informatie over deze installatie.
+>Zie [Werken met Meerdere opslagplaatsen voor Git-bronnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) voor meer informatie over deze installatie.
 
 ### Overwegingen voor een Opstelling van het Meerdere Team {#considerations}
 

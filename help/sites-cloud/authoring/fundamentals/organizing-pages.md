@@ -2,10 +2,10 @@
 title: Pagina's maken en indelen
 description: Pagina's maken en ordenen met AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 3%
+source-wordcount: '2539'
+ht-degree: 2%
 
 ---
 
@@ -176,7 +176,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 
 1. Open de Sites-console (bijvoorbeeld `https://<host>:<port>/sites.html/content`.
 1. Navigeer naar de locatie waar u de nieuwe pagina wilt maken.
-1. Open de vervolgkeuzelijst met **Maken** op de werkbalk en selecteer vervolgens **Pagina** in de lijst:
+1. De keuzelijst openen met **Maken** in de werkbalk selecteert u vervolgens **Pagina** in de lijst:
 
    ![Een pagina maken](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -220,7 +220,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 
    >[!NOTE]
    >
-   >Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Bijvoorbeeld: `beach` bestaat al `beach1`.
+   >Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `beach` bestaat al `beach1`.
 
 1. Als u terugkeert naar de console, zult u uw nieuwe pagina zien:
 
@@ -280,7 +280,7 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
 
 >[!NOTE]
 >
->Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Bijvoorbeeld: `beach` bestaat al `beach` wordt `beach1`.
+>Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Als `beach` bestaat al `beach` wordt `beach1`.
 
 >[!NOTE]
 >
@@ -387,7 +387,7 @@ De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [*
 
 >[!NOTE]
 >
->Voor meer informatie over asynchrone baanverwerking en hoe te om de grens voor paginabeweging te vormen/noem acties anders, gelieve te zien [Asynchrone taken](/help/operations/asynchronous-jobs.md) document in de gebruikershandleiding van Verrichtingen.
+>Voor meer informatie over asynchrone baanverwerking en hoe te om de grens voor de beweging van de pagina te vormen/acties anders te noemen, zie [Asynchrone taken](/help/operations/asynchronous-jobs.md) document in de gebruikershandleiding van Verrichtingen.
 
 ### Een pagina verwijderen {#deleting-a-page}
 
@@ -405,7 +405,7 @@ De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [*
    ![Dialoogvenster Verwijderen](/help/sites-cloud/authoring/assets/delete-page.png)
 
    * **Wilt u de pagina&#39;s archiveren voordat u ze verwijdert?** - Als deze optie is ingeschakeld, worden tijdens het verwijderen versies gemaakt van de pagina&#39;s die voor verwijdering zijn geselecteerd.
-      * [Versies kunnen later worden hersteld.](/help/sites-cloud/authoring/features/page-versions.md)
+      * [Versies kunnen later worden hersteld](/help/sites-cloud/authoring/features/page-versions.md).
       * Pagina&#39;s die zonder vorige versies zijn verwijderd, kunnen niet worden hersteld.
    * **Annuleren** om de handeling af te breken
    * **Verwijderen** ter bevestiging van de actie :

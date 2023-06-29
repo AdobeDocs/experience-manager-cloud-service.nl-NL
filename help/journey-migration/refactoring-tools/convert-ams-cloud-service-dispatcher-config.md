@@ -1,10 +1,10 @@
 ---
 title: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service Dispatcher-configuratie
 description: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service Dispatcher-configuratie
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 44%
+source-wordcount: '1278'
+ht-degree: 39%
 
 ---
 
@@ -22,7 +22,7 @@ Deze sectie biedt stapsgewijze instructies voor het omzetten van een AMS-configu
 
 1. **Het archief extraheren en een eventueel voorvoegsel verwijderen**
 
-   Extraheer het archief naar een map en zorg ervoor dat de directe submappen beginnen met conf, conf.d, conf.dispatcher.d en conf.modules.d. Als ze dat niet doen, verplaats ze omhoog in de hiërarchie.
+   Extraheer het archief naar een map en zorg ervoor dat de directe submappen beginnen met conf, conf.d, conf.dispatcher.d en conf.modules.d. Als ze dat niet doen, verplaatst u ze omhoog in de hiërarchie.
 
 1. **Ongebruikte submappen en bestanden verwijderen**
 
@@ -49,7 +49,7 @@ verwijder deze dan of plaats een opmerking. Instructies in deze secties worden n
 
    * Verwijder alle bestanden met de naam base_rewrite.rules en xforwarded_forcessl_rewrite.rules en verwijder alle Include-instructies in de virtuele hostbestanden die hiernaar verwijzen.
 
-   * Als conf.d/rewrites nu een enkel bestand bevat, moet dit worden hernoemd naar rewrite.rules. Vergeet niet om de Include-instructies die naar dat bestand verwijzen in de virtuele hostbestanden aan te passen.
+   * Als conf.d/rewrites nu één enkel dossier bevat, zou het moeten worden anders genoemd om.rules te herschrijven en vergeet niet ook om de Include verklaringen aan te passen die naar dat dossier in de virtuele gastheerdossiers verwijzen.
 
    * Als de map echter meerdere, virtuele hostspecifieke bestanden bevat, moet de inhoud ervan worden gekopieerd naar de instructie Include die naar deze bestanden in de virtuele hostbestanden verwijst.
 
@@ -59,7 +59,7 @@ verwijder deze dan of plaats een opmerking. Instructies in deze secties worden n
 
    1. Verwijder alle bestanden met de naam ams_default.vars en verwijder alle Include-instructies in de virtuele hostbestanden die hiernaar verwijzen.
 
-   1. Als conf.d/variables nu een enkel bestand bevat, moet dit worden hernoemd naar custom.vars. Vergeet niet om de Include-instructies die naar dat bestand verwijzen in de virtuele hostbestanden aan te passen.
+   1. Als conf.d/variables nu één enkel dossier bevat, zou het aan custom.vars moeten worden anders genoemd en vergeet niet ook om de Include verklaringen aan te passen die naar dat dossier in de virtuele gastheerdossiers verwijzen.
 
    1. Als de map echter meerdere, virtuele hostspecifieke bestanden bevat, moet de inhoud ervan worden gekopieerd naar de instructie Include die naar deze bestanden in de virtuele hostbestanden verwijst.
 

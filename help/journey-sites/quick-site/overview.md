@@ -2,9 +2,9 @@
 title: Reis voor snel maken van site AEM
 description: Begin hier voor een begeleide reis door het makkelijk te gebruiken AEM Snelle hulpmiddel van de Aanmaak van de Plaats om de front-end ontwikkeling van uw AEM Plaats te stroomlijnen en snel uw plaats aan te passen zonder AEM achtergrondkennis.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1034'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ U zult vele onderwerpen in deze reis onderzoeken. De volgende artikelen bieden u
 
 U kunt nu aan de slag met uw Adobe Quick Site Creation-reis.
 
-* Als u een beheerder van de Manager van de AEM of van de Wolk bent, of als u zowel front-end ontwikkelaar als beheerderrollen dient, of als u eenvoudig het proces van begin tot eind in AEM wilt begrijpen, te beginnen bij het begin van de reis met [Cloud Manager begrijpen](cloud-manager.md) zoals hieronder uiteengezet.
+* Als u een beheerder van de Manager van de AEM of van de Wolk bent, of als u zowel front-end ontwikkelaar als beheerderrollen dient, of als u eenvoudig het proces van begin tot eind in AEM wilt begrijpen, begin bij het begin van de reis met [Cloud Manager begrijpen](cloud-manager.md) zoals hieronder uiteengezet.
 * Als u alleen verantwoordelijk bent voor de ontwikkeling op de voorgrond en met de beheerders van AEM en Cloud Manager werkt, kunt u rechtstreeks overslaan naar [Toegangsgegevens van opslagplaats ophalen](retrieve-access.md) toegang krijgen tot de AEM git-opslagplaats en beginnen met aanpassen.
 * Als u al begrijpt dat AEM Sites en Cloud Manager samenwerken en rechtstreeks met de configuratie willen beginnen, kunt u [Ga direct over naar het maken van een nieuwe site vanuit een sjabloon.](create-site.md)
 

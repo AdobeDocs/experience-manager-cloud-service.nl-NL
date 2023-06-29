@@ -2,9 +2,9 @@
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3313'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Zodra de veranderingen in RDE zijn getest, kunnen zij aan een regelmatige milieu
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-U kunt aanvullende video&#39;s weergeven [instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)en de [ontwikkelingscyclus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) RDE gebruiken.
+U ziet aanvullende video&#39;s waarin u kunt demonstreren [instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)en de [ontwikkelingscyclus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) RDE gebruiken.
 
 ## Inleiding {#introduction}
 
@@ -42,7 +42,7 @@ Ga als volgt te werk om Cloud Manager te gebruiken om een RDE voor uw programma 
 
 1. Klik op het programma waaraan u een RDE wilt toevoegen om zijn details te tonen.
 
-   * RDE&#39;s kunnen aan beide worden toegevoegd [sandboxprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) en [productieprogramma&#39;s.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+   * RDE&#39;s kunnen aan beide worden toegevoegd [sandboxprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) en [productieprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
 1. Van de **Programmaoverzicht** pagina, klik op **Omgeving toevoegen** op de **Omgevingen** kaart om een omgeving toe te voegen.
 
@@ -70,11 +70,11 @@ De **Overzicht** het scherm toont nu uw nieuwe milieu in **Omgevingen** kaart.
 
 Bij het maken worden RDE&#39;s ingesteld op de meest recente beschikbare AEM. Een RDE-reset, die ook kan worden uitgevoerd met Cloud Manager, doorloopt de RDE en stelt deze in op de meest recente beschikbare AEM versie.
 
-Ga voor meer informatie over het gebruik van Cloud Manager om omgevingen te maken, te beheren wie er toegang toe heeft en aangepaste domeinen toe te wijzen naar [de documentatie van Cloud Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Ga voor meer informatie over het gebruik van Cloud Manager om omgevingen te maken, te beheren wie er toegang toe heeft en aangepaste domeinen toe te wijzen naar [de documentatie van Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## De RDE Command-Lijn hulpmiddelen installeren {#installing-the-rde-command-line-tools}
 
-Nadat u een RDE voor uw programma hebt toegevoegd met gebruik van Cloud Manager, kunt u ermee communiceren door de opdrachtregelprogramma&#39;s in te stellen zoals in de volgende stappen wordt beschreven:
+Nadat u een RDE voor uw programma hebt toegevoegd gebruikend de Manager van de Wolk, kunt u met het in wisselwerking staan door de bevel-lijn hulpmiddelen te plaatsen zoals die in de volgende stappen worden beschreven:
 
 >[!IMPORTANT]
 >
@@ -147,7 +147,7 @@ Adobe raadt de volgende workflow aan voor het ontwikkelen van een nieuwe functie
 
 * Wanneer een tussentijdse mijlpaal wordt bereikt en met succes plaatselijk met de AEM as a Cloud Service SDK wordt bevestigd, zou de code aan een de eigenschaptak van de it moeten worden begaan die nog geen deel van de belangrijkste lijn uitmaakt, hoewel het toezeggen aan git facultatief is. Wat een &quot;tussenliggende mijlpaal&quot; is, varieert op basis van teamgewoonten. Voorbeelden zijn enkele nieuwe coderegels, een halve werkdag of het voltooien van een subfunctie.
 
-* Herstel RDE als het door een andere eigenschap is gebruikt en u wilt [herstellen naar standaardstaat](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Het opnieuw instellen duurt een paar minuten en alle bestaande inhoud en code wordt verwijderd. U kunt het RDE statusbevel gebruiken om RDE klaar te bevestigen. RDE zal met de meest recente versie van de AEM terugkomen.
+* Herstel RDE als het door een andere eigenschap is gebruikt en u wilt [herstellen naar standaardstaat](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Het opnieuw instellen duurt een paar minuten en alle bestaande inhoud en code wordt verwijderd. U kunt het RDE statusbevel gebruiken om RDE klaar te bevestigen. RDE zal met de meest recente versie van de AEM terugkomen.
 
   >[!IMPORTANT]
   >
@@ -276,7 +276,7 @@ dan stel de configuratie door dit bevel op:
 
 >[!TIP]
 >
->Het bovenstaande bevel veronderstelt u opstelt [WKND](https://github.com/adobe/aem-guides-wknd) de verzendersconfiguraties van het project. Vervang de `X.X.X` met het overeenkomstige WKND aantal van de projectversie of uw project-specifiek versieaantal wanneer het opstellen van de de vraagconfiguratie van uw project.
+>Het bovenstaande bevel veronderstelt u opstelt [WKND](https://github.com/adobe/aem-guides-wknd) de verzendersconfiguraties van het project. Zorg ervoor dat u de `X.X.X` met het overeenkomstige WKND aantal van de projectversie of uw project-specifiek versieaantal wanneer het opstellen van de de vraagconfiguratie van uw project.
 
 >[!NOTE]
 >
@@ -308,7 +308,7 @@ The analyser found the following errors for publish :
 [api-regions-exportsimports] com.adobe.aem.temp:org.apache.felix.gogo.jline:1.1.8: Bundle org.apache.felix.gogo.jline:1.1.8 is importing package(s) [org.jline.builtins, org.jline.utils, org.apache.felix.service.command, org.apache.felix.service.threadio, org.jline.terminal, org.jline.reader, org.apache.felix.gogo.runtime, org.jline.reader.impl] in start level 20 but no bundle is exporting these for that start level.
 ```
 
-Het bovenstaande codevoorbeeld illustreert het gedrag als een bundel niet oplost, in welk geval het &quot;gefaseerd&quot;is en slechts geïnstalleerd als zijn vereisten (ontbrekende invoer, in dit geval) door installatie van andere code wordt voldaan.
+Het bovenstaande codevoorbeeld illustreert het gedrag als een bundel niet oplost, in welk geval het &quot;gefaseerd&quot;is en slechts geïnstalleerd als zijn vereisten (ontbrekende invoer, in dit geval) door installatie van andere code worden voldaan.
 
 ### De status van de RDE controleren {#checking-rde-status}
 
@@ -369,7 +369,7 @@ Als u de RDE opnieuw instelt, verwijdert u alle aangepaste code, configuraties e
 
 Met een reset wordt de RDE ingesteld op de laatst beschikbare AEM versie.
 
-<!-- Alexandru: hiding for now, please don't delete
+<!-- Alexandru: hiding for now, do not delete
 
 Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
@@ -417,7 +417,7 @@ U kunt Cloud Manager gebruiken om uw RDE opnieuw in te stellen door de volgende 
 
    ![Bannermelding opnieuw instellen](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-Nadat het RDE-herstelproces is gestart, duurt het meestal enkele minuten om te voltooien en de standaardinstelling van de omgeving te herstellen. De status van het herstelproces kan op elk gewenst moment worden weergegeven in het dialoogvenster **Status** kolom van de **Omgevingen** of in de **Omgevingen** venster.
+Nadat het RDE-herstelproces is gestart, duurt het meestal een paar minuten om de omgeving te voltooien en terug te zetten naar de standaardtoestand. De status van het herstelproces kan op elk gewenst moment worden weergegeven in het dialoogvenster **Status** kolom van de **Omgevingen** of in de **Omgevingen** venster.
 
 ![Status RDE opnieuw instellen](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -425,7 +425,7 @@ U kunt RDE ook opnieuw instellen gebruikend de ellipsknoop direct van **Omgeving
 
 ![RDE herstellen van de kaart van Milieu](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Ga voor meer informatie over hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren naar [de documentatie van Cloud Manager.](/help/implementing/cloud-manager/manage-environments.md)
+Ga voor meer informatie over het gebruik van Cloud Manager om uw omgevingen te beheren naar [de documentatie van Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Modi uitvoeren {#runmodes}
 
@@ -500,4 +500,4 @@ Forms-ontwikkelaars kunnen AEM Forms Cloud Service Rapid Development Environment
 
 ## RDE-zelfstudie
 
-Raadpleeg voor meer informatie over RDE in AEM as a Cloud Service [videozelfstudie die laat zien hoe u het programma kunt instellen, gebruiken en de ontwikkelingscyclus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
+Voor meer informatie over RDE in AEM as a Cloud Service raadpleegt u [videozelfstudie die laat zien hoe u het programma kunt instellen, gebruiken en de ontwikkelingscyclus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)

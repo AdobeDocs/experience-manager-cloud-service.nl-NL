@@ -3,9 +3,9 @@ title: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 description: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1451'
 ht-degree: 16%
 
 ---
@@ -31,11 +31,11 @@ In de volgende sectie vindt u stapsgewijze instructies voor het omzetten van een
 ### Het archief extraheren en een eventueel voorvoegsel verwijderen
 
 Het archief naar een map extraheren en controleren of de directe submappen beginnen met `conf`, `conf.d`,
-`conf.dispatcher.d` en `conf.modules.d`. Als ze dat niet doen, verplaats ze omhoog in de hiërarchie.
+`conf.dispatcher.d` en `conf.modules.d`. Als ze dat niet doen, verplaatst u ze omhoog in de hiërarchie.
 
 ### Ongebruikte submappen en bestanden verwijderen
 
-Submappen verwijderen `conf` en `conf.modules.d`en bestanden die overeenkomen `conf.d/*.conf`.
+Submappen verwijderen `conf` en `conf.modules.d`, en bestanden die overeenkomen `conf.d/*.conf`.
 
 ### Alle niet-gepubliceerde virtuele hosts verwijderen
 
@@ -60,7 +60,7 @@ Map invoeren `conf.d/rewrites`.
 
 Bestandsnaam verwijderen `base_rewrite.rules` en `xforwarded_forcessl_rewrite.rules` en vergeet niet te verwijderen `Include` instructies in de virtuele hostbestanden die naar deze bestanden verwijzen.
 
-Indien `conf.d/rewrites` bevat nu één bestand. Wijzig de naam van dit bestand in `rewrite.rules` en vergeet niet om de `Include` instructies die naar dat bestand verwijzen, ook in de virtuele hostbestanden.
+Indien `conf.d/rewrites` bevat nu één bestand. Wijzig de naam van dit bestand in `rewrite.rules` en vergeet niet de `Include` instructies die naar dat bestand verwijzen, ook in de virtuele hostbestanden.
 
 Als de map echter meerdere, virtuele hostspecifieke bestanden bevat, moet de inhoud ervan naar de `Include` in de virtuele hostbestanden.
 
@@ -70,7 +70,7 @@ Map invoeren `conf.d/variables`.
 
 Bestandsnaam verwijderen `ams_default.vars` en vergeet niet te verwijderen `Include` instructies in de virtuele hostbestanden die naar deze bestanden verwijzen.
 
-Indien `conf.d/variables` bevat nu één bestand. Wijzig de naam van dit bestand in `custom.vars` en vergeet niet om de `Include` instructies die naar dat bestand verwijzen, ook in de virtuele hostbestanden.
+Indien `conf.d/variables` bevat nu één bestand. Wijzig de naam van dit bestand in `custom.vars` en vergeet niet de `Include` instructies die naar dat bestand verwijzen, ook in de virtuele hostbestanden.
 
 Als de map echter meerdere, virtuele hostspecifieke bestanden bevat, moet de inhoud ervan naar de `Include` in de virtuele hostbestanden.
 
@@ -116,7 +116,7 @@ Indien `conf.dispatcher.d/cache` is nu leeg, kopieert u het bestand `conf.dispat
 vanuit de standaardconfiguratie voor Dispatcher naar deze map. De standaardconfiguratie voor Dispatcher vindt u in de map `src` van deze SDK. Vergeet niet de
 `$include` verklaringen die verwijzen naar de `ams_*_cache.any` ook regelbestanden in de bestanden van de farm.
 
-Indien in `conf.dispatcher.d/cache` bevat nu één bestand met achtervoegsel `_cache.any`, moet de naam worden gewijzigd in `rules.any` en vergeet niet om de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
+Indien in `conf.dispatcher.d/cache` bevat nu één bestand met achtervoegsel `_cache.any`, moet de naam worden gewijzigd in `rules.any` en vergeet niet de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
 
 Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan moeten worden gekopieerd `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
 
@@ -136,7 +136,7 @@ Map invoeren `conf.dispatcher.d/clientheaders`.
 
 Verwijder alle bestanden met het voorvoegsel `ams_`.
 
-Indien `conf.dispatcher.d/clientheaders` bevat nu één bestand met achtervoegsel `_clientheaders.any`, moet de naam worden gewijzigd in `clientheaders.any` en vergeet niet om de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
+Indien `conf.dispatcher.d/clientheaders` bevat nu één bestand met achtervoegsel `_clientheaders.any`, moet de naam worden gewijzigd in `clientheaders.any` en vergeet niet de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
 
 Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan moeten worden gekopieerd `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
 
@@ -162,7 +162,7 @@ Map invoeren `conf.dispatcher.d/filters`.
 Verwijder alle bestanden met het voorvoegsel `ams_`.
 
 Indien `conf.dispatcher.d/filters` bevat nu één bestand waarnaar de naam moet worden gewijzigd
-`filters.any` en vergeet niet om de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
+`filters.any` en vergeet niet de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
 
 Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan moeten worden gekopieerd `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
 
@@ -201,7 +201,7 @@ De naam van de map wijzigen `conf.dispatcher.d/vhosts` tot `conf.dispatcher.d/vi
 Verwijder alle bestanden met het voorvoegsel `ams_`.
 
 Indien `conf.dispatcher.d/virtualhosts` bevat nu één bestand waarnaar de naam moet worden gewijzigd
-`virtualhosts.any` en vergeet niet om de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
+`virtualhosts.any` en vergeet niet de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
 
 Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan moeten worden gekopieerd `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
 

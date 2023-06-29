@@ -2,9 +2,9 @@
 title: Variaties - Fragmentinhoud ontwerpen (elementen - Inhoudsfragmenten)
 description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler kunnen maken door u toe te staan om inhoud voor het fragment te ontwerpen en dan variaties van die inhoud volgens doel tot stand te brengen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2440'
 ht-degree: 8%
 
 ---
@@ -88,7 +88,7 @@ De teksteditor voor volledig scherm biedt:
 
 ### Handelingen {#actions}
 
-De volgende acties zijn ook beschikbaar (voor alle [formaten](#formats)) als de volledige-schermeditor (d.w.z. tekst met meerdere regels) is geopend:
+De volgende acties zijn ook beschikbaar (voor alle [formaten](#formats)) als de volledige-schermeditor (dat wil zeggen tekst met meerdere regels) is geopend:
 
 * Selecteer [format](#formats) ([RTF](#rich-text), [Onbewerkte tekst,](#plain-text) [Markering](#markdown))
 
@@ -195,7 +195,7 @@ U kunt dan een nieuw fragment maken door:
 1. Eigenschappen specificeren; bijvoorbeeld **Titel**.
 1. Selecteren **Maken**.
 1. Tot slot:
-   1. **Gereed** wordt teruggezet (naar het oorspronkelijke fragment) en verwijst naar het nieuwe fragment.
+   1. **Gereed** retourneert (naar het oorspronkelijke fragment) en verwijst naar het nieuwe fragment.
    1. **Openen** verwijst naar het nieuwe fragment en opent het nieuwe fragment, voor bewerking, op een nieuw browsertabblad.
 
 ### Belangrijkste statistieken weergeven {#viewing-key-statistics}
@@ -471,7 +471,7 @@ Het overbrengen van wijzigingen *van een variatie naar **master*** is niet besch
 
 1. Selecteer een specifieke variant en kies vervolgens de gewenste synchronisatiehandeling uit:
 
-   * de **Handelingen** keuzelijst - **Huidig element synchroniseren met master**
+   * de **Handelingen** drop-down kiezer - **Huidig element synchroniseren met master**
 
      ![synchroniseren met master](assets/cfm-variations-11a.png)
 

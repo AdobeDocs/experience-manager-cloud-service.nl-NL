@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters
 description: Leer hoe u de inhoudsfragmenten voor geoptimaliseerde GraphQL-filters in Adobe Experience Manager as a Cloud Service kunt bijwerken voor levering van inhoud zonder kop.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '908'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
       <td>Alles </td>
       <td> </td>
       <td>Variabele </td>
-      <td>Interval (seconden) om resterende inhoudsfragmenten tot de volgende limiet te verwerken<br>Dit interval wordt ook beschouwd als een wachttijd alvorens de baan, evenals een vertraging tussen verwerking van elk verdere aantal CF_MIGRATION_LIMIT van CFs te beginnen.<br>(*)</td>
+      <td>Interval (seconden) om resterende inhoudsfragmenten tot de volgende limiet te verwerken<br>Dit interval wordt ook beschouwd als een wachttijd alvorens de baan te beginnen, en een vertraging tussen verwerking van elk verdere aantal CF_MIGRATION_LIMIT van CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -146,7 +146,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   De klanten, die toegang tot de milieulogboeken gebruikend Splunk toeliet, kunnen de voorbeeldvraag hieronder gebruiken om het verbeteringsproces te controleren. Voor details over het toelaten van het registreren van het Splunk gelieve te zien [Fouten opsporen in productie en werkgebied](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) pagina.
+   De klanten, die toegang tot de milieulogboeken gebruikend Splunk toeliet, kunnen de voorbeeldvraag hieronder gebruiken om het verbeteringsproces te controleren. Voor details over het toelaten van het registreren van het Splunk, zie [Fouten opsporen in productie en werkgebied](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) pagina.
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 

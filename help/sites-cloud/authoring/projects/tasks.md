@@ -2,9 +2,9 @@
 title: Werken met taken
 description: De taken vertegenwoordigen punten van werk dat op inhoud moet worden gedaan en in projecten worden gebruikt om het niveau van volledigheid van huidige taken te bepalen
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '576'
 ht-degree: 11%
 
 ---
@@ -23,7 +23,7 @@ U kunt projectvooruitgang volgen door de actieve/voltooide taken binnen een proj
 
 * **Taaklijst:** Wanneer u op de Taaktegel klikt, wordt een lijst met taken weergegeven. Deze lijst bevat gedetailleerde informatie over alle taken met betrekking tot het project.
 
-Zowel taken voor de lijstwerkstroom als taken die u rechtstreeks maakt in het dialoogvenster **Taken** tegel.
+Zowel de taken van het lijstwerkschema als taken u direct in creeert **Taken** tegel.
 
 ### Taaktegel {#task-tile}
 

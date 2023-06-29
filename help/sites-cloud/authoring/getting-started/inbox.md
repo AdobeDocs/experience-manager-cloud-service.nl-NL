@@ -2,9 +2,9 @@
 title: Uw inbox
 description: Taken beheren met de Postvak IN
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '906'
 ht-degree: 15%
 
 ---
@@ -25,7 +25,7 @@ U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en acti
 
 >[!NOTE]
 >
->Zie ook voor meer informatie over de objecttypen:
+>Raadpleeg de volgende secties voor meer informatie over de itemtypen:
 >
 >* [Projecten](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projecten - werken met taken](/help/sites-cloud/authoring/projects/tasks.md)
@@ -102,7 +102,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
   ![Weergave-instellingen in de keuzelijst](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  U kunt uw agenda ook delegeren aan andere gebruikers, u kunt verzoeken om delegatie van andere gebruikers en uw delegaties beheren.
+  U kunt uw agenda ook delegeren aan andere gebruikers en vragen om delegatie van andere gebruikers en uw delegaties beheren.
 
   ![Instellingen voor delegatie van weergave in de keuzelijst](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -132,7 +132,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
    >[!NOTE]
    >
-   >Zie voor meer informatie:
+   >Raadpleeg de volgende secties voor meer informatie:
    >
    >* Workflowitems - [Deelnemen aan workflows](/help/sites-cloud/authoring/workflows/participating.md)
 

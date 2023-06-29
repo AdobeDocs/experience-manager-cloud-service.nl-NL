@@ -4,27 +4,27 @@ description: Integreren met Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
 
 # Integreren met Adobe Target{#integrating-with-adobe-target}
 
-Als onderdeel van de Adobe Marketing Cloud kunt u met Adobe Target de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Voor de integratie van Adobe Target en AEM as a Cloud Service is het volgende vereist:
+Als onderdeel van de Adobe Experience Cloud kunt u met Adobe Target de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Voor de integratie van Adobe Target en AEM as a Cloud Service is het volgende vereist:
 
 * het gebruiken van Touch UI om een Configuratie van het Doel in AEM as a Cloud Service (vereiste configuratie IMS) tot stand te brengen.
 * Adobe Target toevoegen en configureren als extensie in [Adobe starten](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
-Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). De integratie met Launch is echter noodzakelijk voor &quot;ervaring richtend&quot;.
+Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). Dat gezegd hebbende, is de integratie met Lancering nodig voor &quot;Ervaring gericht&quot;.
 
 Voor het uitvoeren van de Fragmenten van de Ervaring en/of de Fragmenten van de Inhoud aan Doel, hebt u slechts nodig [Adobe Target Configuration and IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >
->De klanten van Adobe Experience Manager as a Cloud Service die geen bestaand rekening van het Doel hebben, kunnen om toegang tot het Pak van de Stichting van het Doel voor Experience Cloud verzoeken. Het Pak van de Stichting verstrekt volume beperkt gebruik van Doel.
+>Klanten die geen bestaande rekening van het Doel hebben, kunnen om toegang tot het Pak van de Stichting van het Doel voor Experience Cloud verzoeken. Het Pak van de Stichting verstrekt volume beperkt gebruik van Doel.
 
 ## Adobe Target-configuratie maken {#create-configuration}
 
@@ -38,20 +38,20 @@ Voor het uitvoeren van de Fragmenten van de Ervaring en/of de Fragmenten van de 
 
 ### IMS-configuratie {#ims-configuration}
 
-Een configuratie IMS voor zowel de Lancering als Doel is noodzakelijk om Doel met AEM en Lancering behoorlijk te integreren. Terwijl de configuratie IMS voor Lancering vooraf in AEM as a Cloud Service wordt gevormd, moet de configuratie van doel IMS worden gecreeerd (nadat het Doel provisioned is). Zie [IMS-configuratie voor gebruik bij integratie met Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) en de video [Experience Platform Launch en AEM integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) om te leren hoe te om de configuratie van het Doel te creëren IMS.
+Een configuratie IMS voor zowel de Lancering als Doel is noodzakelijk om Doel met AEM en Lancering behoorlijk te integreren. Terwijl de configuratie IMS voor Lancering vooraf in AEM as a Cloud Service wordt gevormd, moet de configuratie van doel IMS worden gecreeerd (nadat het Doel provisioned is). Zie [IMS-configuratie voor gebruik bij integratie met Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) en de video [Experience Platform Launch en AEM integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) om te leren hoe te om de configuratie van het Doel te creëren IMS.
 
 ### Adobe Target Tenant ID and Adobe Target Client Code {#tenant-client}
 
 Houd rekening met het volgende wanneer u de velden Adobe Target Tenant ID en Adobe Target Client Code configureert:
 
-1. Voor de meeste klanten, zijn identiteitskaart van de Aannemer en de Code van de Cliënt het zelfde. Dit betekent dat beide velden dezelfde informatie bevatten en identiek zijn. Zorg ervoor dat u de id van de huurder in beide velden invoert.
+1. Voor de meeste klanten, zijn identiteitskaart van de Aannemer en de Code van de Cliënt het zelfde. Dat wil zeggen dat beide velden dezelfde informatie bevatten en identiek zijn. Zorg ervoor dat u de id van de huurder in beide velden invoert.
 2. Voor oudere doeleinden kunt u ook verschillende waarden invoeren in de velden Tenant ID en Client Code.
 
-Houd er in beide gevallen rekening mee dat:
+In beide gevallen:
 
 * Door gebrek, wordt de Code van de Cliënt (als eerst toegevoegd) ook automatisch gekopieerd in het gebied van identiteitskaart van de Aannemer.
-* U kunt de standaard huurder-id wijzigen.
-* Dienovereenkomstig, zijn de achterste vraag aan Doel gebaseerd op identiteitskaart van de Aannemer en de cliënt zijvraag aan Doel is gebaseerd op de Code van de Cliënt.
+* U kunt naar keuze de standaardIdentiteitskaart veranderen van de Haan.
+* De achtergrond vraag aan Doel is gebaseerd op huuridentiteitskaart en de cliënt zijvraag aan Doel is gebaseerd op de Code van de Cliënt.
 
 Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM as a Cloud Service. Zorg ervoor dat **beide** de velden bevatten de juiste gegevens, afhankelijk van uw vereisten.
 
@@ -59,8 +59,8 @@ Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM as a Cloud
 >
 > Als u een bestaande Configuratie van het Doel wilt veranderen:
 >
-> 1. Voer de huurder-id opnieuw in.
-> 2. Maak opnieuw verbinding met Doel.
+> 1. Voer de id van de huurder opnieuw in.
+> 2. Opnieuw verbinden met doel.
 > 3. Sla de configuratie op.
 
 ### De doelconfiguratie bewerken {#edit-target-configuration}
@@ -74,7 +74,7 @@ Ga als volgt te werk om de doelconfiguratie te bewerken:
 
 ### Een configuratie toevoegen aan een site {#add-configuration}
 
-Ga naar: **Sites** → **Een sitepagina selecteren** → **Eigenschappen** → **Geavanceerd** → **Configuratie** → Selecteer de configuratiehuurder.
+Ga naar: **Sites** > **Een sitepagina selecteren** > **Eigenschappen** > **Geavanceerd** > **Configuratie** > Selecteer de configuratieteuse.
 
 ## Adobe Target integreren op AEM sites met behulp van Adobe starten {#integrate-target-launch}
 
@@ -82,7 +82,7 @@ AEM biedt een out of the box integratie met Experience Platform Launch. Door de 
 
 >[!NOTE]
 >
->Bestaande (verouderde) frameworks werken nog, maar kunnen niet worden geconfigureerd in de aanraakinterface. Het is raadzaam om de configuraties van de veranderlijke afbeelding in Lancering opnieuw op te bouwen.
+>Bestaande (verouderde) frameworks werken nog, maar kunnen niet worden geconfigureerd in de aanraakinterface. Adobe raadt u aan de configuraties voor variabele toewijzingen opnieuw samen te stellen in Launch.
 
 Als algemeen overzicht, zijn de integratiestappen:
 
@@ -104,7 +104,7 @@ Een eigenschap is een container die is gevuld met extensies, regels en gegevense
 
 ### De vereiste extensies toevoegen {#add-extension}
 
-**Extensies** is de container die de kernbibliotheekinstellingen beheert. De extensie Adobe Target ondersteunt client-side implementaties door Target JavaScript SDK te gebruiken voor het moderne web, at.js. U moet beide **Adobe Target** en **Adobe ContextHub** extensies.
+**Extensies** Dit is de container die de kernbibliotheekinstellingen beheert. De extensie Adobe Target ondersteunt client-side implementaties door Target JavaScript SDK te gebruiken voor het moderne web, at.js. Voeg beide toe **Adobe Target** en **Adobe ContextHub** extensies.
 
 1. Selecteer de optie Extension Catalog en zoek naar Target in het filter.
 2. Selecteren **Adobe Target** om.js en klik op de Install optie.
@@ -112,7 +112,7 @@ Een eigenschap is een container die is gevuld met extensies, regels en gegevense
 3. Selecteer **Configureren** knop. Bericht het configuratievenster met de ingevoerde de rekeningsgeloofsbrieven van het Doel, en de versie at.js voor deze uitbreiding.
 4. Selecteren **Opslaan** om de uitbreiding van het Doel aan uw bezit van de Lancering toe te voegen. U zou de uitbreiding van het Doel moeten kunnen zien onder **Geïnstalleerde extensies** lijst.
    ![Extensie opslaan](assets/configure_extension1.png "Extensie opslaan")
-5. Herhaal bovenstaande stappen om te zoeken naar de **Adobe ContextHub** extensie en installeer deze extensie (dit is vereist voor de integratie met contexthub-parameters, op basis waarvan u het doel opgeeft).
+5. Herhaal bovenstaande stappen om te zoeken naar de **Adobe ContextHub** extensie en installeer deze extensie (deze extensie is vereist voor de integratie met contexthub-parameters, op basis waarvan u het doel opgeeft).
 
 ### Een gegevenselement maken {#data-element}
 
@@ -126,7 +126,7 @@ Een eigenschap is een container die is gevuld met extensies, regels en gegevense
 
 ### Een paginalijn maken {#page-rule}
 
-In **Regel** we definiëren en ordenen een reeks acties , die ter plaatse worden uitgevoerd , om het doel te bereiken .
+In **Regel**, wordt een reeks acties gedefinieerd en geordend, die ter plaatse worden uitgevoerd, om het doel te bereiken.
 
 1. Voeg een set handelingen toe zoals wordt getoond in de schermafbeelding.
    ![Handelingen](assets/rules1.png "Handelingen")
@@ -135,7 +135,7 @@ In **Regel** we definiëren en ordenen een reeks acties , die ter plaatse worden
 
 ### Samenstellen en publiceren {#build-publish}
 
-Raadpleeg deze voor meer informatie over het maken en publiceren van [page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
+Ga voor meer informatie over het samenstellen en publiceren naar [page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
 
 ## Wijzigingen in de inhoudsstructuur tussen Klassieke en Touch UI-configuraties {#changes-content-structure}
 
@@ -156,4 +156,4 @@ Raadpleeg deze voor meer informatie over het maken en publiceren van [page](http
 
 >[!NOTE]
 >
->Oudere configuraties worden nog steeds ondersteund voor bestaande klanten (zonder de optie om nieuwe configuraties te bewerken of te maken). Verouderde configuraties maken deel uit van inhoudspakketten die door klanten met VSTS worden geüpload.
+>Oudere configuraties worden nog steeds ondersteund voor bestaande klanten (zonder de optie om deze te bewerken of te maken). Verouderde configuraties maken deel uit van inhoudspakketten die door klanten met VSTS worden geüpload.

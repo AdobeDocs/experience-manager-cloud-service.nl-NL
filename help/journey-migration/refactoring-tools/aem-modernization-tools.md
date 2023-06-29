@@ -2,10 +2,10 @@
 title: AEM-moderniseringstools
 description: AEM-moderniseringstools
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 77%
+source-wordcount: '129'
+ht-degree: 51%
 
 ---
 
@@ -26,8 +26,8 @@ Met de AEM-moderniseringstools kunt u eenvoudig de volgende taken uitvoeren:
 >[!NOTE]
 >De AEM-moderniseringstools worden gemaakt door leden van onze community. De tools worden niet ondersteund of gewaarborgd door Adobe.
 
-Zie **[Inleiding tot AEM-moderniseringstools](https://opensource.adobe.com/aem-modernize-tools/)** om meer te leren over planning, configuratie en ontwikkeling voor de AEM-moderniseringstools.
+Zie **[Introductie van AEM moderniseringsinstrumenten](https://opensource.adobe.com/aem-modernize-tools/)** voor meer informatie over planning, configuratie en ontwikkeling voor AEM moderniseringssuite met gereedschappen.
 
 ## De suite met AEM-moderniseringstools installeren en implementeren {#installing-implementing}
 
-Zie **[Git Resource: AEM Modernize Tools-suite](https://github.com/adobe/aem-modernize-tools)** voor meer informatie over de installatie en implementatie.
+Zie **[Git-bron: AEM Tools Suite moderniseren](https://github.com/adobe/aem-modernize-tools)** voor meer informatie over installatie en implementatie.

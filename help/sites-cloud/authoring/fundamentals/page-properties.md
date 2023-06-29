@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: De vereiste eigenschappen voor een pagina definiëren
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2341'
 ht-degree: 3%
 
 ---
@@ -196,15 +196,15 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 ### Blauwdruk {#blueprint}
 
-Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. Blauwdrukken dienen als basis voor actieve kopieën en maken deel uit van [Beheer van meerdere sites.](/help/sites-cloud/administering/msm/overview.md)
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. Blauwdrukken dienen als basis voor actieve kopieën en maken deel uit van [Beheer van meerdere sites](/help/sites-cloud/administering/msm/overview.md).
 
-* **Huidige actieve kopieën** - Hiermee geeft u pagina&#39;s weer die op deze blauwdrukpagina zijn gebaseerd (dat wil zeggen: Live kopieën van deze pagina zijn)
+* **Huidige actieve kopieën** - Hiermee geeft u pagina&#39;s weer waarop deze blauwdrukpagina is gebaseerd (dat wil zeggen, Live kopieën van deze pagina zijn)
 
 * **Rollout Configs** - Controleert de omstandigheden waaronder de wijzigingen aan Levende Exemplaar worden verspreid
 
 ### Live kopie {#live-copy}
 
-Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën. Net als bij Blauwdrukken maken actieve kopieën deel uit van [Beheer van meerdere sites.](/help/sites-cloud/administering/msm/overview.md).
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën. Net als bij Blauwdrukken maken actieve kopieën deel uit van [Beheer van meerdere sites](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchroniseren** - Actieve kopie synchroniseren met vervagen, lokale wijzigingen behouden
 * **Herstellen** - Actieve kopie opnieuw instellen op de status Vervagen, lokale wijzigingen verwijderen

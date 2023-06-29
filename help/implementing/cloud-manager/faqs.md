@@ -2,7 +2,7 @@
 title: Veelgestelde vragen over Cloud Manager
 description: Zoek antwoorden op de meest gestelde vragen over Cloud Manager in AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 0%
@@ -58,11 +58,11 @@ Met deze waarde kan de volgende implementatie nog steeds worden geïnstalleerd w
 
 U kunt de versie ook instellen op `-SNAPSHOT` voor stadium- en productiegebouwen of -implementaties. Cloud Manager stelt automatisch een correct versienummer in en maakt een tag voor u in de it. Indien nodig kunt u later naar dit label verwijzen.
 
-Meer informatie over versiebeheer vindt u op [Hier gedocumenteerd.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+Meer informatie over versiebeheer vindt u op [hier gedocumenteerd](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Hoe werkt het pakket en de bundelversioning voor stadium en productieplaatsingen? {#snapshot-version}
 
-In werkgebied- en productieimplementaties wordt een automatische versie gegenereerd als [Hier gedocumenteerd.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+In werkgebied- en productieimplementaties wordt een automatische versie gegenereerd als [hier gedocumenteerd](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Voor aangepaste versioning in werkgebied- en productieimplementaties stelt u een correcte versie met drie delen in, zoals `1.0.0`. Verhoog de versie telkens wanneer u aan productie opstelt.
 
@@ -91,7 +91,7 @@ De oplossing is om een [Configuratie RepositoryInitializer OSGi](/help/implement
 
 In de vorige voorbeeldfout wordt het pakket `myapp-base.ui.content-*.zip` bevat inhoud onder `/conf` en `/var/workflow`. Voor een succesvolle implementatie zijn machtigingen voor de `sling-distribution-importer` onder deze paden is het noodzakelijk .
 
-Hier is een voorbeeld van een [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi-configuratie die extra toestemmingen voor de `sling-distribution-importer` gebruiker. De configuratie voegt toestemmingen onder toe `/var`. Een dergelijke configuratie moet worden toegevoegd aan het toepassingspakket onder `/apps/myapp/config` (waarbij myapp de map is waarin uw toepassingscode is opgeslagen).
+Hier is een voorbeeld van een [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) De configuratie OSGi die extra toestemmingen voor de configuratie toevoegt `sling-distribution-importer` gebruiker. De configuratie voegt toestemmingen onder toe `/var`. Een dergelijke configuratie moet worden toegevoegd aan het toepassingspakket onder `/apps/myapp/config` (waarbij myapp de map is waarin uw toepassingscode is opgeslagen).
 
 ## Mijn plaatsing van de Manager van de Wolk ontbreekt bij de opstellen stap in AEM as a Cloud Service en ik voegde reeds een configuratie RepositoryInitializer OSGi toe. Wat kan ik nog meer doen? {#build-failures}
 

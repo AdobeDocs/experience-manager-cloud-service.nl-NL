@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2795'
 ht-degree: 0%
 
 ---
@@ -233,7 +233,7 @@ Adobe raadt aan dat u de levenscyclus van de levering van inhoud beheert met beh
 
 De volgende lijst bevat scenario&#39;s waar u uitdrukkelijk het geheime voorgeheugen zou kunnen willen invalideren (terwijl naar keuze het luisteren naar de voltooiing van de ongeldigverklaring):
 
-* Na het publiceren van inhoud zoals ervaringsfragmenten of inhoudsfragmenten, het ongeldig maken van gepubliceerde en in cache geplaatste inhoud die naar die elementen verwijst.
+* Na het publiceren van inhoud zoals ervaringsfragmenten of inhoudsfragmenten, het ongeldig maken van gepubliceerde en in de cache opgeslagen inhoud die naar die elementen verwijst.
 * Een extern systeem waarschuwen wanneer pagina&#39;s waarnaar wordt verwezen, zijn ongeldig gemaakt.
 
 Er zijn twee benaderingen om het geheime voorgeheugen uitdrukkelijk ongeldig te maken:
@@ -319,7 +319,7 @@ Uit de tabel kunt u ook het volgende optekenen:
 
 * SCD API is nodig wanneer elke gebeurtenis moet worden gegarandeerd, bijvoorbeeld synchroniseren met een extern systeem dat nauwkeurige kennis vereist. Als er een publicatielaag upscaling-gebeurtenis is op het moment van de validatieaanroep, wordt een extra gebeurtenis weergegeven wanneer elke nieuwe publicatie de validatie verwerkt.
 
-* Het gebruik van de API voor replicatie is geen gangbaar gebruiksgeval, maar kan worden gebruikt in gevallen waarin de trigger voor het ongeldig maken van de cache afkomstig is uit de publicatielaag en niet uit de auteurslaag. Deze methode zou nuttig kunnen zijn als de Verzender TTL wordt gevormd.
+* Het gebruik van de API voor replicatie is niet gebruikelijk, maar kan worden gebruikt in gevallen waarin de trigger voor het ongeldig maken van de cache afkomstig is uit de publicatielaag en niet uit de auteurslaag. Deze methode zou nuttig kunnen zijn als de Verzender TTL wordt gevormd.
 
 Als u de Dispatcher-cache wilt invalideren, kunt u het beste de actie SCD API Invalidate van de auteur gebruiken. U kunt ook luisteren naar de gebeurtenis, zodat u vervolgens verdere downstreamacties kunt activeren.
 
@@ -448,7 +448,7 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
 The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 

@@ -2,9 +2,9 @@
 title: Registratie, aanmelding en gebruikersprofiel
 description: Meer informatie over registratie, aanmelding, gebruikersgegevens en groepssynchronisatie voor AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Gebruikersprofielgegevens kunnen op twee manieren worden geschreven en gelezen:
 
 Eindgebruikersgegevens kunnen naar externe leveranciers, zoals CRM&#39;s, worden verzonden en via API&#39;s worden opgehaald wanneer de gebruiker zich aanmeldt om AEM te maken en te blijven (of te vernieuwen) op het profielknooppunt van de AEM gebruiker en door AEM worden gebruikt.
 
-Realtime toegang tot services van derden om profielkenmerken op te halen is mogelijk, maar het is belangrijk ervoor te zorgen dat dit de verwerking van verzoeken in AEM niet wezenlijk beïnvloedt.
+Realtime toegang tot derdediensten om profielattributen terug te winnen is mogelijk, echter, is het belangrijk om ervoor te zorgen dit verzoekverwerking in AEM niet wezenlijk beïnvloedt.
 
 ## Machtigingen (gesloten gebruikersgroepen) {#permissions-closed-user-groups}
 

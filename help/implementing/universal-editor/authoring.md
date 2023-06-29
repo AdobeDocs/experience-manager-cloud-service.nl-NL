@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Als u inhoud voor een app wilt ontwerpen met de Universal Editor, moet de app va
 
 >[!TIP]
 >
->Zie het document [Aan de slag met de Universal Editor in AEM](getting-started.md) voor een voorbeeld van hoe u een AEM toepassing configureert voor gebruik met de Universal Editor.
+>Zie [Aan de slag met de Universal Editor in AEM](getting-started.md) voor een voorbeeld van hoe u een AEM toepassing configureert voor gebruik met de Universal Editor.
 
 ## Aanmelden {#sign-in}
 
@@ -84,7 +84,7 @@ Met het Help-pictogram hebt u snel toegang tot leermiddelen en ondersteuningsbro
 
 #### Meldingen {#notifications}
 
-Dit pictogram is gemarkeerd met het aantal momenteel toegewezen onvolledige [meldingen.](/help/implementing/cloud-manager/notifications.md)
+Dit pictogram is gemarkeerd met het aantal momenteel toegewezen onvolledige [meldingen](/help/implementing/cloud-manager/notifications.md).
 
 ![Meldingen](assets/notifications.png)
 
@@ -96,7 +96,7 @@ Tik of klik op het pictogram dat uw gebruiker vertegenwoordigt om toegang te kri
 
 ### De koptekst van de Universal Editor {#universal-editor-header}
 
-De Universal Editor-koptekst bevindt zich altijd boven aan het scherm net onder [de koptekst van de Experience Cloud.](#experience-cloud-header) Hiermee kunt u snel naar een andere pagina navigeren om te bewerken en de huidige pagina publiceren.
+De Universal Editor-koptekst bevindt zich altijd boven aan het scherm net onder [de koptekst van de Experience Cloud.](#experience-cloud-header) Hiermee kunt u snel naar een andere pagina navigeren om deze te bewerken en te publiceren.
 
 ![De koptekst van de Universal Editor](assets/universal-editor-header.png)
 

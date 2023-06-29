@@ -2,7 +2,7 @@
 title: KPI's uitlijnen
 description: KPI's uitlijnen
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -36,7 +36,7 @@ In een digitale wereld kun je bijna alles meten. Als u drie KPI&#39;s kiest voor
 
 1. **Maak een meetbare methode voor elke PKI.** Nadat u hebt gekozen, download uw malplaatje van Methodologie KPI, dat u door de rest van het proces begeleidt.
 
-1. **Bepaal het publiek voor elke KPI.** Uw laatste stap voor deze week is het identificeren van de groep belanghebbenden die het meest om elk KPI geeft. De volgende week zult u met elke groep werken om KPI te bevestigen, de methodologie te verfijnen, en over de formaat en de timing van uw rapporten akkoord te gaan.
+1. **Bepaal het publiek voor elke KPI.** Uw laatste stap voor deze week is het identificeren van de groep belanghebbenden die het meest om elk KPI geeft. Volgende week werkt u met elke groep om KPI te bevestigen, de methodologie te verfijnen en akkoord te gaan over de indeling en het tijdstip van uw rapporten.
 
 >[!TIP]
 >

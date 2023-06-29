@@ -2,9 +2,9 @@
 title: Aan de slag met de Universal Editor in AEM
 description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Dit document begeleidt u door deze stappen.
 
 ## Toegang tot de universele editor aanvragen {#request-access}
 
-U moet eerst om toegang tot de Universele Redacteur verzoeken. Ga naar [https://experience.adobe.com/#/aem/editor,](https://experience.adobe.com/#/aem/editor) aanmelden en valideren als u toegang hebt tot de Universal Editor.
+U moet eerst om toegang tot de Universele Redacteur verzoeken. Zie [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)aanmelden en valideren als u toegang hebt tot de Universal Editor.
 
 Als u geen toegang hebt, kunt u een aanvraag indienen via een formulier dat is gekoppeld op dezelfde pagina.
 
@@ -66,7 +66,7 @@ Als u geen React app implementeert en/of rendering op de server vereist, kunt u 
 
 Als u AEM inhoud met uw app wilt bewerken met de Universal Editor, moeten de instellingen voor CORS en cookie binnen AEM zijn uitgevoerd.
 
-Het volgende [OSGi configuraties moeten op de AEM auteursinstantie worden geplaatst.](/help/implementing/deploying/configuring-osgi.md)
+Het volgende [OSGi-configuraties moeten worden ingesteld op de AEM-ontwerpinstantie](/help/implementing/deploying/configuring-osgi.md).
 
 * `SameSite Cookies = None` in `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 * X-FRAME-OPTIONS verwijderen: SAMEORIGIN-koptekst in `org.apache.sling.engine.impl.SlingMainServlet`
@@ -165,7 +165,7 @@ itemid="urn:<referenceName>:<resource>"
 
 Uw app is nu van instrumenten voorzien om de Universal Editor te gebruiken.
 
-Raadpleeg het document [Inhoud ontwerpen met de Universal Editor](authoring.md) om te leren hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
+Zie [Inhoud ontwerpen met de Universal Editor](authoring.md) om te leren hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
 
 ## Aanvullende bronnen {#additional-resources}
 

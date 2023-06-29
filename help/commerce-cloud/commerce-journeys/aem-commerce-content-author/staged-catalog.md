@@ -2,9 +2,9 @@
 title: Ervaringen met gefaseerde productcatalogi beheren
 description: Leer hoe u ervaringen met gefaseerde productcatalogi beheert.
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '493'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Dit document helpt u te begrijpen hoe u de ervaring van de productcatalogus kunt
 
     >[!OPMERKING]
     >
-    >Deze functie is alleen beschikbaar voor connectors van Adobe Commerce of Cloud Edition en andere leveranciers die tokenverificatie ondersteunen. Zie [Aan de slag] (https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) voor meer informatie.
+    >Deze functie is alleen beschikbaar bij Adobe Commerce of Cloud Edition en connectors van derden die tokenverificatie ondersteunen. Zie [Aan de slag] (https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) voor meer informatie.
 
 Eerst, zien hoe de auteurs tot gefaseerde productgegevens met CIF kunnen toegang hebben.
 

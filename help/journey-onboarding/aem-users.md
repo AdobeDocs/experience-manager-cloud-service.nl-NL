@@ -4,9 +4,9 @@ description: Zodra zij de systeembeheerder opstelling de noodzakelijke wolkenmid
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Nu u dit document hebt gelezen, moet u weten hoe te:
 * Ga naar Cloud Manager.
 * Meld u aan bij een AEM as a Cloud Service instantie.
 
-Gefeliciteerd! U kunt nu AEM inhoud ontwerpen en publiceren. Zie de [Aanvullende bronnen](#additional-resources) voor meer informatie over het schrijven van inhoud in AEM en het beheren van inhoud.
+Gefeliciteerd! U kunt nu AEM inhoud ontwerpen en publiceren. Zie [Aanvullende bronnen](#additional-resources) voor meer informatie over het schrijven van inhoud in AEM en het beheren van inhoud.
 
 Als u geïnteresseerd bent in de manier waarop ontwikkelaars en implementatiemanagers aangepaste toepassingen voor AEM als Cloud-service maken en beheren, gaat u verder met het tweede optionele gedeelte van de instapreis. [AEM ontwikkelaarstaken.](developers.md)
 

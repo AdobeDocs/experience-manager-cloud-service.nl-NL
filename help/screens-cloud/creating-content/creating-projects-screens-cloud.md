@@ -1,43 +1,43 @@
 ---
 title: Een project maken in as a Cloud Service schermen
-description: Op deze pagina wordt beschreven hoe u een project maakt in as a Cloud Service schermen.
+description: Leer hoe u een project maakt in as a Cloud Service schermen.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 7a11ce1ce5862068b3087848065b661b13bed1e0
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
 # Een project maken en beheren in as a Cloud Service schermen {#creating-project-screens-cloud}
 
-De eerste stap bij het uitvoeren van een nieuw project in as a Cloud Service Schermen is een nieuw project tot stand te brengen.
+De eerste stap bij het uitvoeren van een nieuw project in as a Cloud Service Schermen is een project tot stand te brengen.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen hoe u een nieuw AEM Screens-project kunt maken in de Inhoudsprovider voor schermen. Na het lezen moet u uw AEM Screens-project in termen van bereik kunnen maken.
+Met dit document kunt u begrijpen hoe u een AEM Screens-project maakt in de Inhoudsprovider voor schermen. Na het lezen, zou u uw AEM Screens project, in termen van werkingsgebied moeten kunnen tot stand brengen.
 
 ## Een nieuw project maken {#create-new-project}
 
-Voer de onderstaande stappen uit om een nieuw project te maken in as a Cloud Service schermen:
+Voer de onderstaande stappen uit om een project te maken in as a Cloud Service schermen:
 
 1. Navigeer naar de Inhoudsprovider voor schermen.
 
    >[!NOTE]
-   >Zie [Scherminhoudprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) om te leren hoe te tot de Leverancier van de Inhoud van Schermen voor het creëren van uw project toegang hebben.
+   >Zie [Scherminhoudprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) om te leren hoe te tot de Leverancier van de Inhoud van Schermen voor het creëren van uw project toegang hebben.
 
-1. Klikken op **Schermproject maken** in de rechterbovenhoek van de actiebalk.
+1. Klik in de rechterbovenhoek van de actiebalk op **Schermproject maken**.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
-1. Voer de **Titel** van uw project in **Schermproject maken** bijvoorbeeld *FirstDigitalExperience*.
+1. Voer de **Titel** van uw project in **Schermproject maken** in. Bijvoorbeeld: *FirstDigitalExperience*.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
    >De **Naam** veld wordt automatisch ingevuld in het dialoogvenster **Schermproject maken** op de titel die u kiest.
 
-1. Klikken op **Opslaan**. U zult uw project van Schermen zien, genoemd als *FirstDigitalExperience* in de Inhoudsprovider voor schermen. U ziet uw project in de Inhoudsprovider voor schermen, met twee mappen genaamd, **Locaties** en **Kanalen**.
+1. Klikken **Opslaan**. U ziet uw project van Schermen, genoemd als *FirstDigitalExperience* in de Inhoudsprovider voor schermen. U ziet uw project ook in de Leverancier van de Inhoud van het Scherm, met twee omslagen noemden, **Locaties** en **Kanalen**.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
@@ -45,20 +45,19 @@ Voer de onderstaande stappen uit om een nieuw project te maken in as a Cloud Ser
 
 ### Een bestaand project verwijderen {#deleting-project}
 
-U kunt een bestaand as a Cloud Service project voor schermen verwijderen.
-Voer de onderstaande stappen uit om een bestaand project te verwijderen uit de Inhoudsprovider voor schermen:
+Bestaande projecten in as a Cloud Service schermen kunnen worden verwijderd.
 
 1. Navigeer naar de Inhoudsprovider voor schermen.
 1. Selecteer het project dat u wilt verwijderen.
-1. Klikken op **Verwijderen** van de actiebar om het project te schrappen.
+1. Klik op de actiebalk op **Verwijderen**.
 
    ![](/help/screens-cloud/assets/create-content/create-project5.png)
 
-1. Klikken op **Verwijderen** de schrapping van het project te bevestigen.
+1. Klikken **Verwijderen** de schrapping van het project te bevestigen.
 
    >[!NOTE]
    >U kunt veelvoudige projecten selecteren en daarom veelvoudige projecten in één enkele stap schrappen.
 
 ## Volgende functies {#whats-next}
 
-Nu u een AEM Screens-project hebt ingesteld, kunt u een nieuw kanaal maken en inhoud aan de kanalen toevoegen. Zie [Een kanaal maken en beheren](creating-channels-screens-cloud.md) om te leren om inhoud in Kanalen tot stand te brengen en te beheren.
+Nu u een AEM Screens-project hebt ingesteld, kunt u een kanaal maken en inhoud toevoegen aan de kanalen. Zie [Een kanaal maken en beheren](creating-channels-screens-cloud.md) zodat u kunt leren om inhoud in Kanalen tot stand te brengen en te beheren.

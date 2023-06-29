@@ -2,9 +2,9 @@
 title: Hoe te om variabelen in AEM stappen van het Werkschema toe te voegen?
 description: Leer een variabele te maken, stel een waarde voor de variabele in en gebruik deze in [!DNL AEM Forms] Workflowstappen.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---

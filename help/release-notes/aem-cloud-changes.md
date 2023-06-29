@@ -2,9 +2,9 @@
 title: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
 description: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '846'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ AEM Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer va
 
 
 >[!NOTE]
->Dit document benadrukt de opmerkelijke veranderingen in AEM als geheel. Voor meer informatie en oplossingsspecifieke veranderingen zie:
+>Dit document benadrukt de opmerkelijke veranderingen in AEM als geheel. Voor meer informatie en oplossing-specifieke veranderingen zie:
 >
 >* [Inleiding tot Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Nieuwe functies en verschillen](/help/overview/what-is-new-and-different.md) tussen Adobe Experience Manager as a Cloud Service en eerdere versies

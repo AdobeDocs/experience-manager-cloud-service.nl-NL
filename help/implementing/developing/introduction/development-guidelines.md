@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2586'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Alternatieven waarvan bekend is dat ze werken, maar waarvoor de afhankelijkheid 
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (niet aanbevolen omdat het verouderd is en wordt vervangen door versie 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Niet verstrekt door AEM)
 
-Naast het verstrekken van onderbrekingen ook zou een juiste behandeling van dergelijke onderbrekingen evenals onverwachte HTTP- statuscodes moeten worden uitgevoerd.
+Naast het verstrekken van onderbrekingen ook zou een juiste behandeling van dergelijke onderbrekingen en onverwachte HTTP- statuscodes moeten worden uitgevoerd.
 
 ## Geen Klassieke UI-aanpassingen {#no-classic-ui-customizations}
 
@@ -152,7 +152,7 @@ De logniveaus zijn als volgt:
 
 ### Thread Dumps {#thread-dumps}
 
-Thread dumps op Cloud-omgevingen worden voortdurend verzameld, maar kunnen op dit moment niet op een zelfserverende manier worden gedownload. Ondertussen, gelieve te contacteren AEM steun als de draaddumps voor het zuiveren van een kwestie nodig zijn, specificerend het nauwkeurige tijdvenster.
+Thread dumps op Cloud-omgevingen worden voortdurend verzameld, maar kunnen op dit moment niet op een zelfserverende manier worden gedownload. Ondertussen, AEM de steun van het contact als de draaddumps voor het zuiveren van een kwestie nodig zijn, die het nauwkeurige tijdvenster specificeren.
 
 ## CRX/DE Lite en de Console van de Ontwikkelaar {#crxde-lite-and-developer-console}
 
@@ -286,4 +286,4 @@ Zie de [Apache Oak-documentatie](https://jackrabbit.apache.org/oak/docs/dos_and_
 
 ## [!DNL Assets] ontwikkelingsrichtsnoeren en gebruiksgevallen {#use-cases-assets}
 
-Raadpleeg voor meer informatie over de gevallen, aanbevelingen en referentiematerialen voor as a Cloud Service middelen van het ontwikkelingstoepassingsprogramma de [Referenties voor ontwikkelaars voor Middelen.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+Raadpleeg voor meer informatie over de gevallen, aanbevelingen en referentiematerialen voor as a Cloud Service middelen van het ontwikkelingstoepassingsprogramma de [Referenties voor ontwikkelaars van middelen](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

@@ -2,16 +2,16 @@
 title: Programma's bewerken
 description: Leer hoe u uw productie- en sandboxprogramma's kunt bewerken om de opties aan te passen nadat u deze hebt gemaakt.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
 
 # Programma&#39;s bewerken {#editing-programs}
 
-Gebruikers met de vereiste machtigingen kunnen bewerken [productieprogramma&#39;s die in uw organisatie zijn gemaakt](creating-production-programs.md) alsmede [sandboxprogramma&#39;s die in uw organisatie zijn gemaakt.](creating-sandbox-programs.md) Door een programma te bewerken kunt u:
+Gebruikers met de vereiste machtigingen kunnen bewerken [productieprogramma&#39;s die in uw organisatie zijn gemaakt](creating-production-programs.md) en [sandboxprogramma&#39;s die in uw organisatie zijn gemaakt.](creating-sandbox-programs.md) Door een programma te bewerken kunt u:
 
 * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa en vice versa toe.
 * Sites of middelen verwijderen uit een bestaand programma met zowel Sites als Middelen.
@@ -63,7 +63,7 @@ Als de uitgebreide beveiliging van uw productieprogramma is ingeschakeld, kunt u
 
 ![Uitgebreide beveiliging actief voor een programma](assets/edit-program-enhanced.png)
 
-Deze instelling kan niet worden gewijzigd nadat het programma is gemaakt. Voor meer informatie over de uitgebreide beveiligingsoptie raadpleegt u de [Productieprogramma&#39;s maken](creating-production-programs.md) document.
+Deze instelling kan niet worden gewijzigd nadat het programma is gemaakt. Voor meer informatie over de verbeterde beveiligingsoptie raadpleegt u [Productieprogramma&#39;s maken](creating-production-programs.md) document.
 
 ## Sandbox-programma&#39;s verwijderen {#delete-sandbox-program}
 

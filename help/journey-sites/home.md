@@ -2,9 +2,9 @@
 title: AEM Sites-reizen
 description: Begin hier voor een overzicht van de geleide reizen beschikbaar om AEM krachtige plaatseigenschappen te begrijpen.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -43,4 +43,4 @@ De volgende Documentatiereizen zijn beschikbaar voor de onderwerpen van AEM Site
 | [Referentie demos Add-on-reis](/help/journey-sites/demos-add-on/overview.md) | Begin hier voor een geleide reis door hoe te om de AEM toe:voegen-aan van de Demo van de Verwijzing aan een zandbakmilieu met minimale AEM configuratie gemakkelijk toe te voegen en de krachtige eigenschappen van AEM met rijke voorbeelden te kunnen testen die op best-praktijken worden gebaseerd. | Systeembeheerder |
 | [Vertaalreis naar sites](/help/journey-sites/translation/overview.md) | Leer over de technologieën van AEM Sites, hoe zij in uw project zouden kunnen worden gebruikt, en hoe te om vertaalprojecten in AEM van A tot Z te creëren en bij te werken. | Vertaalspecialisten |
 
-Blijf op de hoogte voor [komende reizen die bijkomende rollen bestrijken.](/help/journey-documentation/documentation-journeys.md#journeys)
+Blijf op de hoogte voor [komende reizen met bijkomende rollen](/help/journey-documentation/documentation-journeys.md#journeys).

@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ De `ReplicationStatus` van een middel wordt slechts gewijzigd als de replicatiea
 
 ### Methoden voor het ongeldig maken van inhoud {#invalidating-content}
 
-U kunt inhoud direct ongeldig maken door of de Verschuivende Invalidatie van de Inhoud (SCD) van auteur (de aangewezen methode) te gebruiken of door de Replicatie API te gebruiken om te roepen publiceert Dispatcher leegmaken replicatieagent. Zie de [Caching](/help/implementing/dispatcher/caching.md) voor meer informatie.
+U kunt inhoud direct ongeldig maken door of de Verschuivende Invalidatie van de Inhoud (SCD) van auteur (de aangewezen methode) te gebruiken of door de Replicatie API te gebruiken om te roepen publiceert Dispatcher leegmaken replicatieagent. Zie [Caching](/help/implementing/dispatcher/caching.md) voor meer informatie.
 
 **Limieten voor replicatie-API**
 

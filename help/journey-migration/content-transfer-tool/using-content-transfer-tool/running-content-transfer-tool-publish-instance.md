@@ -2,9 +2,9 @@
 title: Het gereedschap Inhoud overbrengen uitvoeren op een publicatie-instantie
 description: Het gereedschap Inhoud overbrengen uitvoeren op een publicatie-instantie
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,6 @@ Volg de onderstaande aanbevolen aanpak:
 * Tijdens het publiceren wordt de publicatielaag niet verkleind (in tegenstelling tot de auteur).
 
   >[!IMPORTANT]
-  >Als voorzorgsmaatregel, gelieve te vermijden om het even welke gebruiker in werking gestelde schrijven verrichtingen, zoals:
+  >Als voorzorgsmaatregel, vermijd om het even welke gebruiker in werking gestelde schrijven verrichtingen, zoals:
   > * Distributie van inhoud van AEM as a Cloud Service auteur naar Publiceren in die omgeving
   > * Gebruikerssynchronisatie tussen publicatie-instanties

@@ -2,9 +2,9 @@
 title: SPA Inleiding en Analyse
 description: Dit artikel introduceert de concepten SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2068'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SP
 
 ### Wat is een SPA? {#what-is-a-spa}
 
-Een toepassing van één pagina (SPA) verschilt van een conventionele pagina in zoverre dat het cliënt-kant wordt teruggegeven en hoofdzakelijk JavaScript-gedreven is, die op Ajax vraag baseert om gegevens te laden en dynamisch de pagina bij te werken. De meeste of alle inhoud wordt één keer opgehaald in één pagina die wordt geladen met extra bronnen die asynchroon worden geladen, afhankelijk van gebruikersinteractie met de pagina.
+Een toepassing van één pagina (SPA) verschilt van een conventionele pagina in die zin dat deze wordt weergegeven op de client en voornamelijk door JavaScript wordt aangedreven. Hierbij wordt uitgegaan van Ajax-aanroepen om gegevens te laden en de pagina dynamisch bij te werken. De meeste of alle inhoud wordt één keer opgehaald in één pagina die wordt geladen met extra bronnen die asynchroon worden geladen, afhankelijk van gebruikersinteractie met de pagina.
 
 Hierdoor is het minder nodig pagina&#39;s te vernieuwen en wordt de gebruiker een ervaring geboden die naadloos, snel is en meer lijkt op een native app-ervaring.
 
@@ -71,7 +71,7 @@ Door sneller, vloeiend en meer als een native toepassing te zijn, wordt een SPA 
 #### Ontwikkelaars {#developers}
 
 * Ontwikkelaars willen een duidelijke scheiding tussen inhoud en presentatie.
-* Schone scheiding maakt het systeem uitbreidbaarder en maakt een onafhankelijke ontwikkeling aan de voorzijde mogelijk.
+* Schone scheiding maakt het systeem meer uitbreidbaar en maakt een onafhankelijke ontwikkeling aan de voorzijde mogelijk.
 
 ### Hoe werkt een SPA? {#how-does-a-spa-work}
 
@@ -177,7 +177,7 @@ de volgende afdeling, [Een SPA-toepassing laden](#loading-a-spa-application), ga
 
 1. Ga naar het tabblad Netwerk in de Inspecteur en laad de pagina opnieuw.
 
-   Afbeeldingsverzoeken negeren. De primaire bronnen die voor de pagina worden geladen, zijn de pagina zelf, CSS, het React JavaScript, de afhankelijkheden en JSON-gegevens voor de pagina.
+   Afbeeldingsverzoeken negeren. De primaire bronnen die voor de pagina worden geladen, zijn de pagina zelf, CSS, de React JavaScript, de afhankelijkheden en JSON-gegevens voor de pagina.
 
    ![WKND SPA Projectnetwerkactiviteit](assets/wknd-network.png)
 
@@ -189,7 +189,7 @@ de volgende afdeling, [Een SPA-toepassing laden](#loading-a-spa-application), ga
 
    De AEM SPA Editor gebruikt [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) om de volledige inhoud van de pagina als JSON-model te leveren.
 
-   Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan de SPA. De levering van de JSON-gegevens wordt naar beneden gedelegeerd aan elke component (van pagina, alinea, component, enz.).
+   Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan de SPA. De levering van de JSON-gegevens wordt omlaag gedelegeerd aan elke component (van pagina, alinea, component, enzovoort).
 
    Elke component kiest wat het blootstelt en hoe het (server-kant met HTML of cliënt-kant met React of Angular) wordt teruggegeven. Dit artikel richt zich op client-side rendering met React.
 
@@ -207,7 +207,7 @@ de volgende afdeling, [Een SPA-toepassing laden](#loading-a-spa-application), ga
 
 ### Interactie met de SPA Editor {#interaction-with-the-spa-editor}
 
-Met behulp van de voorbeeldtoepassing WKND SPA Project is het duidelijk hoe de app zich gedraagt en wordt geladen wanneer deze wordt gepubliceerd, waarbij gebruik wordt gemaakt van inhoudsservices voor het leveren van JSON-inhoud en het asynchroon laden van bronnen.
+Met behulp van de voorbeeldtoepassing van WKND SPA Project is het duidelijk hoe de app zich gedraagt en wordt geladen wanneer deze wordt gepubliceerd, waarbij gebruik wordt gemaakt van inhoudsservices voor het leveren van JSON-inhoud en het asynchroon laden van bronnen.
 
 Voor de auteur van de inhoud is het maken van inhoud met een SPA-editor bovendien naadloos in AEM.
 
@@ -254,4 +254,4 @@ Nu u de SPA het uitgeven ervaring in AEM begrijpt en hoe een SPA op de SPA Redac
 * [Aan de slag met SPA in AEM met Reageren](getting-started-react.md) toont hoe een basis SPA wordt gebouwd om met de SPARedacteur in AEM het gebruiken van React te werken
 * [Aan de slag met SPA in AEM met Angular](getting-started-angular.md) toont hoe een basis SPA wordt gebouwd om met de SPARedacteur in AEM het gebruiken van Angular te werken
 * [Overzicht SPA Editor](editor-overview.md) gaat dieper in het communicatie model tussen AEM en de SPA.
-* [SPA ontwikkelen voor AEM](developing.md) beschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een SPA voor AEM te ontwikkelen evenals hoe SPA met AEM architectuur in wisselwerking staan.
+* [SPA ontwikkelen voor AEM](developing.md) beschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een SPA voor AEM te ontwikkelen en hoe SPA met AEM architectuur in wisselwerking staan.

@@ -2,9 +2,9 @@
 title: Site maken van sjabloon
 description: Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Dit deel van de reis is op de AEM beheerder van toepassing.
 
 ## Sitesjablonen {#site-templates}
 
-Sitesjablonen zijn een manier om basissite-inhoud te combineren tot een handig en herbruikbaar pakket. Sitesjablonen bevatten over het algemeen inhoud en structuur van de basissite en informatie over de sitestijl om snel met de nieuwe site aan de slag te kunnen gaan. De werkelijke structuur is als volgt:
+Sitesjablonen zijn een manier om basissite-inhoud te combineren tot een handig en herbruikbaar pakket. Sitesjablonen bevatten over het algemeen inhoud en structuur van de basissite en informatie over de siteopmaak om snel met de nieuwe site aan de slag te kunnen gaan. De werkelijke structuur is als volgt:
 
 * `files`: Map met de UI-kit, XD bestand en mogelijk andere bestanden
 * `previews`: Map met screenshots van de sitesjabloon
@@ -57,11 +57,11 @@ Nadat u het bestand hebt gedownload, kunt u het net als elk ander pakket uploade
 
 >[!TIP]
 >
->Het AEM Standaard Sjabloon van de Plaats kan worden aangepast aan de behoeften van uw project en kan verdere aanpassing overbodig maken. Dit onderwerp valt echter buiten het bereik van deze reis. Gelieve te verwijzen naar de documentatie GitHub van het StandaardMalplaatje van de Plaats voor meer informatie.
+>Het AEM Standaard Sjabloon van de Plaats kan worden aangepast aan de behoeften van uw project en kan verdere aanpassing overbodig maken. Dit onderwerp valt echter buiten het bereik van deze reis. Zie de documentatie GitHub van het StandaardMalplaatje van de Plaats voor meer informatie.
 
 >[!TIP]
 >
->U kunt het malplaatje van bron als deel van uw projectwerkschema ook verkiezen om te bouwen. Dit onderwerp valt echter buiten het bereik van deze reis. Gelieve te verwijzen naar de documentatie GitHub van het StandaardMalplaatje van de Plaats voor meer informatie.
+>U kunt het malplaatje van bron als deel van uw projectwerkschema ook verkiezen om te bouwen. Dit onderwerp valt echter buiten het bereik van deze reis. Zie de documentatie GitHub van het StandaardMalplaatje van de Plaats voor meer informatie.
 
 ## Sjabloon van site installeren {#installing-template}
 
@@ -109,7 +109,7 @@ Inhoudsauteurs kunnen nu beginnen met ontwerpen.
 Sitesjablonen zijn zeer krachtig en flexibel en elk gewenst aantal kan worden gemaakt voor een project, zodat u gemakkelijk sitescheidingen kunt maken. Afhankelijk van het niveau van aanpassing die reeds op het plaatsmalplaatje wordt uitgevoerd u gebruikt, kunt u zelfs geen extra front-end aanpassing nodig hebben.
 
 * Gefeliciteerd als uw site geen extra aanpassing vereist! Uw reis eindigt hier!
-* Als u nog extra front-end aanpassing nodig hebt, of als u eenvoudig het volledige proces wilt begrijpen voor het geval u toekomstige aanpassing nodig hebt, gelieve te blijven lezen.
+* Als u nog extra front-end aanpassing nodig hebt, of als u eenvoudig het volledige proces wilt begrijpen voor het geval u toekomstige aanpassing nodig hebt, blijft het lezen.
 
 ## Voorbeeld van pagina {#example-page}
 

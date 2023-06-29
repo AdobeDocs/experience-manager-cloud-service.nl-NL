@@ -2,9 +2,9 @@
 title: Omgevingsvariabelen van Cloud Manager
 description: De standaardmilieuvariabelen kunnen via de Manager van de Wolk worden gevormd en worden beheerd en aan het runtime milieu worden verstrekt, dat in configuratie OSGi moet worden gebruikt.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1018'
 ht-degree: 0%
 
 ---
@@ -128,8 +128,8 @@ Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` richtlijnen
 
 ### OSGi-configuraties {#osgi}
 
-Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in [OSGi-configuraties.](/help/implementing/deploying/configuring-osgi.md)
+Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in [OSGi-configuraties](/help/implementing/deploying/configuring-osgi.md).
 
 ### Pipetvariabelen {#pipeline}
 
-Naast milieuvariabelen, zijn er ook pijpleidingsvariabelen, die tijdens de bouwstijlfase worden blootgesteld. [Klik hier voor meer informatie over pijpleidingvariabelen.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+Naast milieuvariabelen, zijn er ook pijpleidingsvariabelen, die tijdens de bouwstijlfase worden blootgesteld. [Meer informatie over pijpleidingvariabelen hier](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

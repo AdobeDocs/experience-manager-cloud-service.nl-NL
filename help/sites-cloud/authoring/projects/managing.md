@@ -2,9 +2,9 @@
 title: Projecten beheren
 description: De projecten laten u uw project organiseren door middelen in één entiteit te groeperen die in de console van Projecten kan worden betreden en worden geleid
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '893'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ In de **Projecten** console, hebt toegang tot en voert actie op uw projecten:
 
 ![De projectenconsole](/help/sites-cloud/authoring/assets/projects-console.png)
 
-In Projecten, kunt u een project tot stand brengen, middelen met uw project associëren, en ook een project of verbindingen van het Middel schrappen. U kunt een tegel openen om de inhoud van de tegel weer te geven en items aan een tegel toe te voegen. In dit onderwerp worden deze procedures beschreven.
+In Projecten, kunt u een project tot stand brengen, middelen met uw project associëren, en ook een project of verbindingen van het Middel schrappen. U kunt een tegel openen om de inhoud ervan weer te geven en items aan een tegel toe te voegen. In dit onderwerp worden deze procedures beschreven.
 
 ## Een project maken {#creating-a-project}
 
@@ -57,7 +57,7 @@ Bronnen aan uw project koppelen:
 
    >[!NOTE]
    >
-   >De tegels van het project die met een project kunnen worden geassocieerd worden beschreven in detail [Projectelementen.](/help/sites-cloud/authoring/projects/overview.md#project-tiles)
+   >De tegels van het project die met een project kunnen worden geassocieerd worden beschreven in detail [Projectelementen](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 1. Tikken/klikken **Maken**. Uw bron is gekoppeld aan uw project en vanaf nu hebt u toegang tot deze bron vanuit uw project.
 
@@ -134,6 +134,7 @@ Een project inactief (of actief) maken:
 1. In de **Projecten** console, open uw project en dan vind **Projectinformatie** tegel.
 
    >[!NOTE]
+   >
    Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie [Tegels toevoegen](#adding-items-to-a-tile).
 
 1. Tikken/klikken **Bewerken**.

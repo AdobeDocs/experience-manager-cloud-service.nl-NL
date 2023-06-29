@@ -2,9 +2,9 @@
 title: Insteekmodule Adobe-inhoudspakket
 description: Gebruik de Content Package Maven plug-in om AEM toepassingen te implementeren
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1838'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ Naast de volgende parameters, zie de beschrijvingen in [Algemene parameters](#co
 
 ### ls {#ls}
 
-Maakt een lijst van de pakketten die worden opgesteld aan [Pakketbeheer.](/help/implementing/developing/tools/package-manager.md)
+Maakt een lijst van de pakketten die worden opgesteld aan [Pakketbeheer](/help/implementing/developing/tools/package-manager.md).
 
 #### Parameters {#parameters-2}
 
@@ -143,7 +143,7 @@ Alle parameters van het doel ls worden beschreven in [Algemene parameters](#comm
 
 ### rm {#rm}
 
-Hiermee wordt een pakket verwijderd uit [Pakketbeheer.](/help/implementing/developing/tools/package-manager.md)
+Hiermee wordt een pakket verwijderd uit [Pakketbeheer](/help/implementing/developing/tools/package-manager.md).
 
 #### Parameters {#parameters-3}
 
@@ -229,7 +229,7 @@ Wanneer het filter geen `mode` -element, de standaardwaarde van `replace` wordt 
 
 ## Een miniatuurafbeelding of eigenschappenbestand opnemen in het pakket {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-Vervang de standaardpakketconfiguratiebestanden om de pakketeigenschappen aan te passen. Neem bijvoorbeeld een miniatuurafbeelding om het pakket te onderscheiden in [Pakketbeheer.](/help/implementing/developing/tools/package-manager.md)
+Vervang de standaardpakketconfiguratiebestanden om de pakketeigenschappen aan te passen. Neem bijvoorbeeld een miniatuurafbeelding om het pakket te onderscheiden in [Pakketbeheer](/help/implementing/developing/tools/package-manager.md).
 
 U kunt de bronbestanden overal in uw bestandssysteem vinden. Definieer in het POM-bestand build-bronnen om de bronbestanden naar de `target/vault-work/META-INF` voor opname in het pakket.
 
@@ -238,7 +238,7 @@ De volgende POM-code voegt de bestanden toe aan de `META-INF` map van de project
 ```xml
 <build>
     <resources>
-        <!-- vault META-INF resources (thumbnail etc.) -->
+        <!-- vault META-INF resources (thumbnail and so on) -->
         <resource>
             <directory>${basedir}/src/main/content/META-INF</directory>
             <targetPath>../vault-work/META-INF</targetPath>

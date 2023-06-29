@@ -2,10 +2,10 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3002'
-ht-degree: 5%
+source-wordcount: '2990'
+ht-degree: 4%
 
 ---
 
@@ -291,7 +291,7 @@ De exacte bewerkingsopties zijn afhankelijk van de component. Voor sommige compo
 
 * Afbeeldingscomponent - volledig scherm
 
-  [Door de volledige-schermmodus te openen](#edit-content-full-screen-mode) voor de afbeeldingscomponent kunt u meer ruimte vrijmaken voor het bewerken van de afbeelding en kunt u extra bewerkingsopties weergeven, zoals **Kaart starten** en **Zoomen opnieuw instellen**. Bovendien kunt u op het volledige scherm voorinstellingen voor bijsnijden selecteren.
+  [Modus Volledig scherm activeren](#edit-content-full-screen-mode) voor de afbeeldingscomponent is er meer ruimte voor het bewerken van de afbeelding en het weergeven van extra bewerkingsopties, zoals **Toewijzing starten** en **Zoomen herstellen**. Bovendien kunt u op het volledige scherm voorinstellingen voor bijsnijden selecteren.
 
   ![De modus Volledig scherm van de component Image](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -469,7 +469,7 @@ Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt e
 >
 >Pagina&#39;s kunnen niet worden ontgrendeld door zich voor te doen als de gebruiker die de pagina heeft vergrendeld.
 >
->Als de gebruiker die de pagina heeft vergrendeld niet beschikbaar is om de pagina te ontgrendelen, vraagt u de klantenondersteuning om opties voor het verwijderen van de vergrendeling te evalueren.
+>Als de gebruiker die de pagina heeft vergrendeld niet beschikbaar is om de pagina te ontgrendelen, neemt u contact op met de Klantenondersteuning om de opties voor het verwijderen van de vergrendeling te evalueren.
 
 ## Een pagina ontgrendelen {#unlocking-a-page}
 
@@ -485,7 +485,7 @@ In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en he
 >
 >Pagina&#39;s kunnen niet worden ontgrendeld door zich voor te doen als de gebruiker die de pagina heeft vergrendeld.
 >
->Als de gebruiker die de pagina heeft vergrendeld niet beschikbaar is om de pagina te ontgrendelen, vraagt u de klantenondersteuning om opties voor het verwijderen van de vergrendeling te evalueren.
+>Als de gebruiker die de pagina heeft vergrendeld niet beschikbaar is om de pagina te ontgrendelen, neemt u contact op met de Klantenondersteuning om de opties voor het verwijderen van de vergrendeling te evalueren.
 
 <!--
 >[!CAUTION]
@@ -516,7 +516,7 @@ Met de volgende pictogrammen kunt u een handeling ongedaan maken of opnieuw uitv
 
 ## Paginabewerkingen ongedaan maken en opnieuw uitvoeren - De theorie {#undoing-and-redoing-page-edits-the-theory}
 
-AEM slaat een geschiedenis van acties op die u uitvoert en de opeenvolging waarin u hen uitvoerde zodat u veelvoudige acties in de orde ongedaan kunt maken dat u hen uitvoerde evenals hen opnieuw doet om één of meerdere acties indien nodig opnieuw toe te passen.
+AEM slaat een geschiedenis van acties op die u uitvoert en de opeenvolging waarin u hen uitvoerde zodat u veelvoudige acties in de orde ongedaan kunt maken dat u hen uitvoerde en hen opnieuw doet om één of meerdere acties indien nodig opnieuw toe te passen.
 
 Als een element op de inhoudspagina wordt geselecteerd (zoals een tekstcomponent), dan is het ongedaan maken en opnieuw bevel op het geselecteerde punt van toepassing.
 

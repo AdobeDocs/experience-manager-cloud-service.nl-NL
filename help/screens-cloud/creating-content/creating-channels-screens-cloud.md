@@ -2,9 +2,9 @@
 title: Kanalen maken en beheren in as a Cloud Service schermen
 description: In deze pagina wordt beschreven hoe u kanalen in as a Cloud Service schermen maakt en beheert.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Met dit document krijgt u meer inzicht in het maken en beheren van kanalen voor 
 
 >[!NOTE]
 >**Vereisten**
->Lees voordat u begint met deze sectie van de Guide [Projecten maken en beheren in as a Cloud Service schermen](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+>Voordat u deze sectie van de Guide start, moet u [Projecten maken en beheren in as a Cloud Service schermen](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 Voer de onderstaande stappen uit om een nieuw volgnummer te maken in as a Cloud Service schermen:
 
@@ -42,7 +42,7 @@ Voer de onderstaande stappen uit om een nieuw volgnummer te maken in as a Cloud 
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > De **Maken** biedt verschillende typen sjablonen tijdens het maken van een kanaal. Zie de sectie [Beschikbare sjablonen](#available-templates) in de wizard Maken voor meer informatie.
+   > De **Maken** biedt verschillende typen sjablonen tijdens het maken van een kanaal. Zie [Beschikbare sjablonen](#available-templates) in de wizard Maken voor meer informatie.
 
 1. Voer de naam van het volgnummer in, bijvoorbeeld: **LoopingChannelOne** en klik op **Maken**.
 
@@ -111,7 +111,7 @@ Met deze functie kunt u een standaard activeringsschema voor een kanaal definië
 In deze tegel wordt de volgende informatie weergegeven:
 * Standaardprioriteit van het kanaal in de weergave.
 * De begin- en einddatum van de activering wanneer het kanaal volgens de planning moet worden afgespeeld.
-* Synthetisch overzicht van de herhaling (Uur/Dagelijks/Wekelijks/Maandelijks/Jaarlijks en naam die aan die herhaling is gegeven).
+* Synthetisch overzicht van de herhaling (Uur/Daily/Weekly/Maandelijks/Jaarlijks en naam die aan die herhaling wordt gegeven).
 
 ### De standaardtoewijzingsdetails gebruiken bij het toewijzen aan een weergave {#default-display}
 
@@ -143,8 +143,8 @@ Of selecteer de gewenste weergave in de overzichtsweergave en klik op de knop **
 
 **Opmerking:** Een kanaaltoewijzing die de standaardtoewijzingsdetails gebruikt, kan niet worden bewerkt in de context van de weergave.
 
-* Als u het in een douanetoewijzing moet veranderen, zult u het eerst moeten verwijderen en dan het opnieuw toevoegen gebruikend **Aangepaste toewijzingsdetails instellen** optie.
-* Als u de eigenschappen van de standaardtoewijzingsdetails moet wijzigen, moet u dit rechtstreeks doen vanaf de pagina met kanaaldetails.
+* Als u deze in een aangepaste toewijzing moet wijzigen, verwijdert u deze eerst en voegt u deze vervolgens opnieuw toe met de opdracht **Aangepaste toewijzingsdetails instellen** optie.
+* Als u de eigenschappen van de standaardtoewijzingsdetails moet wijzigen, doet u dit rechtstreeks vanaf de pagina met kanaaldetails.
 
 ### Standaardtoewijzingsgegevens uit een kanaal verwijderen {#remove-display}
 

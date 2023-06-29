@@ -2,10 +2,10 @@
 title: Basisbewerkingen
 description: Geniet van gemak bij het navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2986'
-ht-degree: 4%
+source-wordcount: '2978'
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ Het overzicht zal de volgende keer opnieuw beginnen u tot een console toegang he
 
 ## Algemene navigatie {#global-navigation}
 
-U kunt tussen de consoles navigeren met het algemene navigatievenster. Dit wordt geactiveerd als een vervolgkeuzelijst met volledig scherm wanneer u op de Adobe Experience Manager-koppeling klikt of tikt linksboven in het scherm.
+U kunt tussen de consoles navigeren met het algemene navigatievenster. Deze wordt geactiveerd als een vervolgkeuzelijst op volledig scherm wanneer u op de Adobe Experience Manager-koppeling klikt of tikt linksboven in het scherm.
 
 U kunt het globale navigatievenster sluiten door te klikken of te tikken **Sluiten** om terug te keren naar uw vorige locatie.
 
@@ -71,7 +71,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
 | Sites | Met de siteconsoles kunt u [sites maken, weergeven en beheren](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) uitvoeren op uw AEM. Via deze console kunt u pagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren. |
 | Ervaringsfragmenten | An [Ervaar fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een stand-alone ervaring die kan worden hergebruikt over kanalen en variaties hebben, die het probleem van het herhaaldelijk kopiëren en het kleven ervaringen of delen van ervaringen bespaart. |
 | Assets | Met de middelenconsole kunt u importeren en beheren [digitale elementen, zoals afbeeldingen, video&#39;s, documenten en audiobestanden](/help/assets/overview.md). Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM wordt uitgevoerd. U kunt ook [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) vanaf de middelenconsole. |
-| Personalisatie | Deze console biedt een raamwerk van gereedschappen voor [het ontwerpen van gerichte inhoud en het presenteren van gepersonaliseerde ervaringen.](/help/sites-cloud/authoring/personalization/overview.md) |
+| Personalisatie | Deze console biedt een raamwerk van gereedschappen voor [doelgerichte inhoud ontwerpen en persoonlijke ervaringen presenteren](/help/sites-cloud/authoring/personalization/overview.md). |
 | Contentfragmenten | [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Met deze sjablonen kunt u gestructureerde inhoud voorbereiden, klaar voor gebruik op meerdere locaties/via meerdere kanalen, en ideaal voor zowel paginaontwerp als levering zonder kop. |
 
 ## Deelvenster Gereedschappen {#tools-panel}
@@ -216,7 +216,7 @@ De actie die beschikbaar is op de werkbalk, wijzigt in de richting van de acties
 
 Hoe u [een bron selecteren](#viewing-and-selecting-resources) is afhankelijk van de weergave.
 
-Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden er extra opties weergegeven. Als u op het beletselteken (de drie stippen of **...**) klikt of tikt, wordt een vervolgkeuzelijst geopend met alle resterende acties. Nadat u bijvoorbeeld een pagina hebt geselecteerd in de **Sites**-console:
+Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden er extra opties weergegeven. Klikken of tikken op de ellips (de drie stippen of **...**) opent u een vervolgkeuzelijst met alle resterende handelingen. Nadat u bijvoorbeeld een pagina hebt geselecteerd in de **Sites**-console:
 
 ![Aanvullende opties](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -226,7 +226,7 @@ Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer wor
 
 ## Snelle handelingen {#quick-actions}
 
-In [Kaartweergave](#card-view) bepaalde acties zijn beschikbaar als snelactiepictogrammen en op de werkbalk. Er zijn snelactiepictogrammen beschikbaar voor één item tegelijk, zodat u geen voorselectie hoeft te maken.
+In [Kaartweergave](#card-view) bepaalde acties zijn beschikbaar als snelactiepictogrammen en staan op de werkbalk. Er zijn snelactiepictogrammen beschikbaar voor één item tegelijk, zodat u geen voorselectie hoeft te maken.
 
 De snelle acties zijn zichtbaar wanneer u de muis boven een resourcepard (bureaubladapparaat) houdt. De snelle beschikbare acties kunnen van de console en de context afhangen. Hier ziet u bijvoorbeeld de snelle acties voor een pagina in het dialoogvenster **Sites** console:
 
@@ -281,7 +281,7 @@ In alle weergaven kunt u de selectie van alle items opheffen door op escape op h
 
 #### Voorbeeld selecteren {#selecting-example}
 
-1. Bijvoorbeeld in de kaartweergave:
+1. In de kaartweergave bijvoorbeeld:
 
    ![Kaartweergave selecteren](/help/sites-cloud/authoring/assets/card-view-select.png)
 
@@ -402,7 +402,7 @@ Als alleen inhoud wordt geselecteerd, wordt alleen het pictogram van de spoorsta
 
 Met de inhoudsstructuur kunt u snel door de sitehiërarchie in het zijpaneel navigeren en veel informatie over de pagina&#39;s in de huidige map bekijken.
 
-Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijstmening of kaartmening, kunnen de gebruikers gemakkelijk de hiërarchische structuur van het project zien en gemakkelijk over de inhoudsstructuur met de kant-paneel van de inhoudsboom navigeren, evenals gedetailleerde paginainformatie in de lijstmening.
+Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijstmening of kaartmening, kunnen de gebruikers gemakkelijk de hiërarchische structuur van het project zien en gemakkelijk over de inhoudsstructuur met de zijpaneel van de inhoudsboom navigeren, en gedetailleerde paginainformatie in de lijstmening bekijken.
 
 ![Inhoudsstructuur](/help/sites-cloud/authoring/assets/content-tree.png)
 
@@ -410,7 +410,7 @@ Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijst
 >
 >Wanneer een item in de hiërarchische weergave is geselecteerd, kunt u met de pijltoetsen snel door de hiërarchie navigeren.
 >
->Zie de [sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) voor meer informatie .
+>Zie [sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) voor meer informatie .
 
 ### Tijdlijn {#timeline}
 
@@ -460,15 +460,15 @@ Deze opties zijn toegankelijk via de chevron naast de **Opmerking** veld.
 
 ### Site {#site}
 
-**Site** toont details van plaatsen [gemaakt met een sitesjabloon.](/help/sites-cloud/administering/site-creation/create-site.md)
+**Site** toont details van plaatsen [gemaakt met een sitesjabloon](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Sitemon](../assets/site-rail.png)
 
-Zie het document [Het Siterail gebruiken om uw Sitethema te beheren](/help/sites-cloud/administering/site-creation/site-rail.md) voor meer informatie over hoe u de spoorstaaf kunt gebruiken om de [thema van uw site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Zie het document [Het Siterail gebruiken om uw Sitethema te beheren](/help/sites-cloud/administering/site-creation/site-rail.md) voor meer informatie over hoe u de spoorstaaf kunt gebruiken om de [thema van uw site](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 >[!TIP]
 >
->Een end-to-end beschrijving van het proces om een nieuwe plaats van een malplaatje te creëren en zijn thema aan te passen kan in worden gevonden [Reis voor snel maken van site.](/help/journey-sites/quick-site/overview.md)
+>Een end-to-end beschrijving van het proces om een nieuwe plaats van een malplaatje te creëren en zijn thema aan te passen kan in worden gevonden [Reis voor snel maken van site](/help/journey-sites/quick-site/overview.md).
 
 ### Filter {#filter}
 

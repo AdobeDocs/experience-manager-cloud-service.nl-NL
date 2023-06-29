@@ -3,9 +3,9 @@ title: Aanbevolen werkwijzen voor query en indexering
 description: Leer hoe u indexen en query's optimaliseert op basis van de richtlijnen voor aanbevolen Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Zie de sectie [Zoekopdrachten met grote resultaten](#queries-with-large-result-s
 
 Ter ondersteuning van de creatie van efficiënte JCR-query&#39;s en indexdefinities [JCR-query - Cheat Sheet](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) kan tijdens de ontwikkeling worden gedownload en gebruikt als referentie.
 
-Het bevat steekproefvragen voor QueryBuilder, XPath, en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van het Eak te bouwen of aan te passen. De inhoud van dit Cheat Sheet is van toepassing op zowel AEM as a Cloud Service als AEM 6.5.
+Het bevat steekproefvragen voor QueryBuilder, XPath, en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van het Eak te bouwen of aan te passen. De inhoud van dit Cheat Sheet is van toepassing op AEM as a Cloud Service en AEM 6.5.
 
 ## Vragen met grote resultaatsets {#queries-with-large-result-sets}
 

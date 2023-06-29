@@ -4,7 +4,7 @@ description: Leer hoe te om de functionaliteit van het Fragment van de Inhoud en
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 3%
@@ -62,7 +62,7 @@ Als u bepaalde [Functionaliteit van inhoudsfragment](#creating-a-content-fragmen
 
    1. Geef een **Titel**.
    1. De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
-      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies](/help/implementing/developing/introduction/naming-conventions.md).
       * U kunt deze desgewenst aanpassen.
    1. Selecteer
       * **Modellen van contentfragmenten**

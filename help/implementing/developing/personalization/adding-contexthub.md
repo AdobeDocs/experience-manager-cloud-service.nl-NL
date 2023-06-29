@@ -1,23 +1,23 @@
 ---
 title: ContextHub toevoegen aan Pagina's en Toegang tot Sporen
-description: Voeg ContextHub aan uw pagina's toe om de eigenschappen ContextHub toe te laten en aan de bibliotheken te verbinden JavaScript van ContextHub
+description: Voeg ContextHub aan uw pagina's toe om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
 
 # ContextHub toevoegen aan Pagina&#39;s en Toegang tot Sporen {#adding-contexthub-to-pages-and-accessing-stores}
 
-Voeg ContextHub aan uw pagina&#39;s toe om de eigenschappen ContextHub toe te laten en aan de bibliotheken te verbinden ContextHub Javascript.
+Voeg ContextHub aan uw pagina&#39;s toe om de eigenschappen ContextHub toe te laten en met de bibliotheken van JavaScript te verbinden ContextHub.
 
 De JavaScript-API van ContextHub biedt toegang tot de contextgegevens die door ContextHub worden beheerd. Deze pagina beschrijft kort de belangrijkste eigenschappen van API voor de toegang tot van en het manipuleren van contextgegevens. Volg de koppelingen naar de API-naslagdocumentatie voor gedetailleerde informatie en codevoorbeelden.
 
 ## ContextHub toevoegen aan een component Page {#adding-contexthub-to-a-page-component}
 
-Om de eigenschappen ContextHub toe te laten en aan de bibliotheken te verbinden ContextHub Javascript, omvat `contexthub` in de `head` van uw pagina. De HTML-code voor uw paginacomponent moet op het volgende voorbeeld lijken:
+Om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub, omvat `contexthub` in de `head` van uw pagina. De HTML-code voor uw paginacomponent moet op het volgende voorbeeld lijken:
 
 ```xml
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
@@ -44,7 +44,7 @@ De opslag van de Hub van de context gebruikt één van de volgende persistentiem
 * **Sessie:** Gebruikt HTML5 sessionStorage om gegevens te handhaven. De opslag van de zitting wordt voortgeduurd voor de browser zitting en is beschikbaar aan alle browser vensters.
 * **Koekje:** Gebruikt de native ondersteuning van de browser voor cookies voor gegevensopslag. De gegevens van het koekje worden verzonden naar en van de server in HTTP- verzoeken.
 * **Window.name:** Gebruikt de eigenschap window.name om gegevens te behouden.
-* **Geheugen:** Gebruikt een Javascript-object om gegevens te behouden.
+* **Geheugen:** Gebruikt een JavaScript-object om gegevens te behouden.
 
 Door gebrek, gebruikt de Hub van de Context de Lokale persistentiemodus. Als de browser geen ondersteuning biedt voor HTML5 localStorage of als dit niet is toegestaan, wordt de sessiepersistentie gebruikt. Als de browser HTML5 sessionStorage niet ondersteunt of toestaat, wordt Window.name persistence gebruikt.
 
@@ -83,17 +83,17 @@ De boomstructuur bepaalt gegevenspunten in de opslag als sleutel/waardeparen. In
 
 ### Objecten bewerken {#manipulating-objects}
 
-ContextHub biedt de [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) klasse voor het bewerken van Javascript-objecten. Gebruik de functies van deze klasse voor het manipuleren van voorwerpen Javascript alvorens u hen aan een opslag toevoegt, of nadat u hen van een opslag verkrijgt.
+ContextHub biedt de [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) klasse voor het bewerken van JavaScript-objecten. Gebruik de functies van deze klasse voor het bewerken van JavaScript-objecten voordat u deze toevoegt aan een winkel of nadat u ze hebt opgehaald uit een winkel.
 
 Daarnaast worden de [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) klasse biedt functies voor het serieel ordenen van objecten op tekenreeksen en het ongedaan maken van tekenreeksen op objecten. Gebruik deze klasse voor het verwerken van JSON-gegevens ter ondersteuning van browsers die zelf geen `JSON.parse` en `JSON.stringify` functies.
 
 ## Interactief werken met ContextHub-winkels {#interacting-with-contexthub-stores}
 
-Gebruik de [`ContextHub`](contexthub-api.md#ui-event-constants) Javascript-object om een winkel als een JavaScript-object te verkrijgen. Nadat u het opslagobject hebt verkregen, kunt u de gegevens in het object bewerken. Gebruik de [`getAllStores`](contexthub-api.md#getallstores) of de [`getStore`](contexthub-api.md#getstore-name) om de winkel te verkrijgen.
+Gebruik de [`ContextHub`](contexthub-api.md#ui-event-constants) JavaScript-object om een winkel te verkrijgen als een JavaScript-object. Nadat u het opslagobject hebt verkregen, kunt u de gegevens in het object bewerken. Gebruik de [`getAllStores`](contexthub-api.md#getallstores) of de [`getStore`](contexthub-api.md#getstore-name) om de winkel te verkrijgen.
 
 ### Winkelgegevens openen {#accessing-store-data}
 
-De [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) De Javascript-klasse definieert verschillende functies voor interactie met opslaggegevens. Met de volgende functies worden meerdere gegevensitems in objecten opgeslagen en opgehaald:
+De [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) JavaScript-klasse definieert verschillende functies voor interactie met opslaggegevens. Met de volgende functies worden meerdere gegevensitems in objecten opgeslagen en opgehaald:
 
 * [addAllItems](contexthub-api.md#addallitems-tree-options)
 * [getTree](contexthub-api.md#gettree-includeinternals)
@@ -113,7 +113,7 @@ Merk op dat de kandidaten van de douaneopslag extra functies kunnen bepalen die 
 
 ### ContextHub Event {#contexthub-eventing}
 
-ContextHub omvat een gebeurteniskader dat u toelaat om automatisch te reageren om gebeurtenissen op te slaan. Elk winkelobject bevat een [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object dat beschikbaar is als de opslagruimte [`eventing`](contexthub-api.md#eventing) eigenschap. Gebruik de [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) of [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) functie om een functie JavaScript aan een archiefgebeurtenis te binden.
+ContextHub omvat een gebeurteniskader dat u toelaat om automatisch te reageren om gebeurtenissen op te slaan. Elk winkelobject bevat een [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object dat beschikbaar is als de opslagruimte [`eventing`](contexthub-api.md#eventing) eigenschap. Gebruik de [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) of [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) om een JavaScript-functie aan een store-gebeurtenis te binden.
 
 ## Contexthub gebruiken om cookies te manipuleren {#using-context-hub-to-manipulate-cookies}
 
@@ -127,7 +127,7 @@ De ContextHub segmentmotor laat u toe om te bepalen welke van de geregistreerde 
 
 ContextHub-segmenten worden onder de `/conf/<site>/settings/wcm/segments` knooppunt.
 
-De volgende segmenten worden geïnstalleerd met de [WKND-zelfstudiesite.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+De volgende segmenten worden geïnstalleerd met de [WKND-zelfstudiesite](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * zomer
 * winter

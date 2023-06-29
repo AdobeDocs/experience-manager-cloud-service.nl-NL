@@ -2,7 +2,7 @@
 title: Universal Visual Editor Introductie
 description: Leer hoe de Universele Visuele Redacteur (a.k.a. Met de Universal Editor) kunt u WYSIWYG-bewerkingen (what-you-see-is-what-you-get) zonder kop en met veel titel uitvoeren. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -29,7 +29,7 @@ De Universal Editor kan van instrumenten worden voorzien voor elke implementatie
 
 Omdat de ervaringen op vele verschillende manieren kunnen worden gebouwd, kan om het even welke implementatie de Universele Redacteur gebruiken zodat kunnen de auteurs in-context het uitgeven uitvoeren.
 
-Gebruikers denken vaak dat een implementatie zonder kop de auteurs beperkt tot het bewerken van alle inhoud in een op formulieren gebaseerde gebruikersinterface, maar dit is niet waar met de universele editor
+Gebruikers denken vaak dat een implementatie zonder kop de auteurs beperkt tot het bewerken van alle inhoud in een op formulieren gebaseerde gebruikersinterface, maar dit geldt niet voor de universele editor
 
 De vereisten voor een implementatie om de Universele Redacteur te gebruiken zijn recht-voorwaarts en steunen het volgende:
 

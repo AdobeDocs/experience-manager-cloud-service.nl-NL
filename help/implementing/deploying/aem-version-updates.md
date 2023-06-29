@@ -3,7 +3,7 @@ title: Versie-updates AEM
 description: Leer hoe AEM as a Cloud Service ononderbroken integratie en levering (CI/CD) gebruikt om uw projecten op de recentste versie te houden.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Leer hoe AEM as a Cloud Service ononderbroken integratie en levering (CI/CD) geb
 
 AEM as a Cloud Service gebruik ononderbroken integratie en ononderbroken levering (CI/CD) om ervoor te zorgen dat uw projecten op de huidigste AEM versie zijn. Dit betekent dat de productie en het opvoeren instanties aan de recentste AEM versie zonder enige onderbreking van de dienst voor gebruikers worden bijgewerkt.
 
-De updates van de versie worden automatisch toegepast op productie en het opvoeren slechts instanties. [AEM updates moeten handmatig op alle andere instanties worden toegepast.](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)
+De updates van de versie worden automatisch toegepast op productie en het opvoeren slechts instanties. [AEM updates moeten handmatig op alle andere instanties worden toegepast](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
 
 ## Type updates {#update-types}
 

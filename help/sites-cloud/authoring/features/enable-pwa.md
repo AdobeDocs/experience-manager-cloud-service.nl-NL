@@ -2,9 +2,9 @@
 title: Progressieve webtoepassingsfuncties inschakelen
 description: AEM Sites stelt de auteur van de inhoud in staat om via eenvoudige configuratie progressieve webtoepassingsmogelijkheden voor elke site in te schakelen in plaats van codering.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '1997'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ Met [de voorwaarden](#prerequisites) , is het heel eenvoudig voor de auteur van 
       * `/content/<sitename>`
       * `/content/experiencefragements/<sitename>`
       * `/content/dam/<sitename>`
-      * Alle fontverwijzingen van derden
+      * Eventuele verwijzingen naar lettertypen van derden
       * `/etc/clientlibs/<sitename>`
 
       ![Offline PWA-paden definiëren](../assets/pwa-offline.png)
@@ -160,20 +160,20 @@ Met deze instellingen kan uw site zich gedragen als een native app door deze te 
    * **Minimale interface** - De browser is meestal verborgen, zoals een native app, maar de standaardbesturingselementen voor navigatie worden weergegeven.
    * **Volledig scherm** - De browser is volledig verborgen, zoals een native app, maar wordt weergegeven in de modus Volledig scherm.
       * Met deze optie moet toepassingsnavigatie volledig door uw inhoud gebruikend verbindingen en componenten op de pagina&#39;s van de plaats zonder de browser navigatiecontroles mogelijk zijn.
-* **Schermoriëntatie** - Als lokale app moet de PWA weten hoe ze moet omgaan [apparaatoriëntaties.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
+* **Schermoriëntatie** - Als lokale app moet de PWA weten hoe ze moet omgaan [apparaatoriëntaties](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
    * **Alle** - De app past de oriëntatie van het apparaat van de gebruiker aan. Dit is de standaardwaarde.
    * **Staand** - Hierdoor wordt de toepassing met een staande lay-out geopend, ongeacht de richting van het apparaat van de gebruiker.
    * **Liggend** - Hierdoor wordt de toepassing gedwongen liggend te openen, ongeacht de richting van het apparaat van de gebruiker.
 * **Themakleur** - Hiermee worden de [kleur van de app](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) dat beïnvloedt hoe het werkende systeem van de lokale gebruiker de inheemse toolbar UI en navigatiecontroles toont. Afhankelijk van de browser kan dit invloed hebben op andere presentatie-elementen van de app.
    * Gebruik het pop-upvenster Kleurenvak om een kleur te selecteren.
    * De kleur kan ook worden gedefinieerd door hexadecimale waarde of door de waarde RGB.
-* **Achtergrondkleur** - Hiermee worden de [achtergrondkleur van de app,](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) wordt weergegeven terwijl de toepassing wordt geladen.
+* **Achtergrondkleur** - Hiermee worden de [achtergrondkleur van de app](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), die wordt weergegeven terwijl de toepassing wordt geladen.
    * Gebruik het pop-upvenster Kleurenvak om een kleur te selecteren.
    * De kleur kan ook worden gedefinieerd door hexadecimale waarde of door de waarde RGB.
    * Bepaalde browsers [automatisch een welkomstscherm maken](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens) in de toepassingsnaam, achtergrondkleur en pictogram.
 * **Pictogram** - Deze definitie [het pictogram](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) die de toepassing op het apparaat van de gebruiker vertegenwoordigt.
    * Het pictogram moet een png-bestand van 512x512 pixels zijn.
-   * Het pictogram moet [opgeslagen in DAM.](/help/assets/overview.md)
+   * Het pictogram moet [opgeslagen in DAM](/help/assets/overview.md).
 
 ### Cachebeheer (geavanceerd) {#offline-configuration}
 

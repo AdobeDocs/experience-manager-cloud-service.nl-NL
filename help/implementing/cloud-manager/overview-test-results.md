@@ -2,7 +2,7 @@
 title: Overzicht van tests in Cloud Manager
 description: Bekijk een overzicht van de drie typen tests die automatisch worden uitgevoerd in Cloud Manager om de kwaliteit van uw aangepaste code te garanderen.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: 94f818b7622e0f878d15ba30e2f07a169bd114c3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Er zijn drie testcategorieën die worden ondersteund door Cloud Manager voor Clo
 
 1. [Functionele tests](/help/implementing/cloud-manager/functional-testing.md)
 
-   * Functionele tests maken deel uit van de testfase van een [productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en eventueel onderdeel van de testfase van een [niet-productiepijpleiding.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * Functionele tests maken deel uit van de testfase van een [productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en eventueel onderdeel van de testfase van een [niet-productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 1. [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
 

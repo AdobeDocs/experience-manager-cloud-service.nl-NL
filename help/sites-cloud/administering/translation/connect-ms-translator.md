@@ -4,9 +4,9 @@ description: Leer hoe u AEM kunt verbinden met Microsoft Translator vanuit de ve
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Een configuratie maken voor de [Microsoft Vertaler](https://www.microsoft.com/en
 
 >[!TIP]
 >
->Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u onze [Sites Translation Journey,](/help/journey-sites/translation/overview.md) Dit is een geleid pad door uw AEM Sites-inhoud te vertalen met de krachtige vertaalgereedschappen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
+>Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u [Sites Translation Journey,](/help/journey-sites/translation/overview.md) Dit is een geleid pad door uw AEM Sites-inhoud te vertalen met AEM krachtige vertaalhulpmiddelen, ideaal voor mensen zonder AEM of vertaalervaring.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ De volgende procedure leidt tot een configuratie van de Vertaler van Microsoft.
 1. Tik of klik op de knop **Maken** knop.
 1. Definieer uw configuratie.
    1. Selecteren **Microsoft Vertaler** in de vervolgkeuzelijst.
-   1. Typ een titel voor de configuratie. De titel identificeert de configuratie in de console van Cloud Services evenals in de drop-down lijsten van het paginabezit.
+   1. Typ een titel voor de configuratie. De titel identificeert de configuratie in de console van Cloud Services en in de drop-down lijsten van het paginabezit.
    1. Typ desgewenst een naam die u wilt gebruiken voor het knooppunt in de opslagplaats dat de configuratie opslaat.
 
    ![Vertaalconfiguratie maken](../assets/create-translation-config.png)

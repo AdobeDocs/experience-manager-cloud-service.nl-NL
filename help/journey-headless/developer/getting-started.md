@@ -2,9 +2,9 @@
 title: Aan de slag met AEM headless as a Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3087'
+source-wordcount: '3084'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ AEM biedt twee robuuste API&#39;s om uw inhoud zonder problemen te wijzigen.
 * Met de GraphQL API kunt u aanvragen maken voor toegang tot en levering van inhoudsfragmenten.
 * Met de REST API voor middelen kunt u inhoudsfragmenten (en andere elementen) maken en wijzigen.
 
-U leert over deze API&#39;s en hoe u deze kunt gebruiken in een later deel van de AEM headless-tocht. Of verwijs naar de [extra middelen](#additional-resources) voor aanvullende documentatie.
+U leert over deze API&#39;s en hoe u deze kunt gebruiken in een later deel van de AEM headless-tocht. Of zie [extra middelen](#additional-resources) voor aanvullende documentatie.
 
 ## Niveaus voor toploze integratie {#integration-levels}
 

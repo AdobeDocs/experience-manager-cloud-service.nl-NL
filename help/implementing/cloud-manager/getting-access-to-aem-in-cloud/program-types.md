@@ -2,9 +2,9 @@
 title: Programma's en programmatypen
 description: Leer meer over de hiërarchie van Cloud Manager en hoe de verschillende typen programma's in de structuur passen en hoe ze verschillen.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Er wordt automatisch een programma voor Cloud Manager geleverd met een eigen git
 
 Om tot de gegevensopslagplaats van de Manager van de Wolk toegang te hebben, zullen de gebruikers een git cliënt met een bevel-lijn hulpmiddel, een standalone visuele git cliënt, of winde van de gebruiker van keus zoals Eclipse, IntelliJ, of NetBeans moeten gebruiken.
 
-Zodra een client is ingesteld, kunt u de gegevensopslagruimte van uw it beheren vanuit de interface van Cloud Manager. Raadpleeg het document voor meer informatie over het beheren van git met de interface van Cloud Manager [Toegang tot Git.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+Zodra een client is ingesteld, kunt u de git-opslagruimte beheren vanuit de gebruikersinterface van Cloud Manager. Ga voor meer informatie over het beheren van git met de gebruikersinterface van Cloud Manager naar [Toegang tot it](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 Als u de AEM Cloud-toepassing wilt gaan ontwikkelen, moet u een lokale kopie van de toepassingscode maken door deze uit te checken van de opslagplaats van Cloud Manager naar een locatie op uw lokale computer.
 
@@ -56,8 +56,8 @@ Het enige verschil is dat de externe git-opslagplaats deel uitmaakt van Cloud Ma
 Een gebruiker kan een **productie** programma of een **sandbox** programma.
 
 * A **productieprogramma** wordt gemaakt om live verkeer voor uw site in te schakelen.
-   * Raadpleeg het document [Inleiding tot productieprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer informatie .
+   * Zie [Inleiding tot productieprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer informatie .
 * A **sandboxprogramma** wordt typisch gecreeerd ten behoeve van opleiding, lopende demo&#39;s, enablement, POCs, of documentatie.
    * Een zandbakomgeving is niet bedoeld voor het vervoer van levend verkeer en zal beperkingen hebben die een productieprogramma niet zal hebben.
    * Het omvat Plaatsen en Activa en wordt geleverd automatisch bevolkt met een git tak die steekproefcode, een ontwikkelomgeving, en een niet productiepijplijn omvat.
-   * Raadpleeg het document [Inleiding tot Sandbox-programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) voor meer informatie .
+   * Zie [Inleiding tot Sandbox-programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) voor meer informatie .

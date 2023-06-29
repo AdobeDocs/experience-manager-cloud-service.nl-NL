@@ -2,9 +2,9 @@
 title: Inhoudsoverdrachten valideren
 description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten te valideren
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1055'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inh
 >
 >Deze functie is beschikbaar vanaf versie 1.8.x van het Content Transfer Tool (CTT). De AEM Cloud Service-doelomgeving moet ten minste versie 6158 of hoger zijn. Het vereist ook het bronmilieu om opstelling te zijn om in werking te stellen [voorkopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). De bevestigingseigenschap zoekt het azcopy.config- dossier op de bron. Als dit bestand niet wordt gevonden, wordt de validatie niet uitgevoerd. Meer over leren hoe te om een dossier te vormen azcopy.config, zie [deze pagina](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze functie inschakelt, duurt het langer om zowel een extractie als een opname uit te voeren. Om de eigenschap te gebruiken, laat het in de Console van het Systeem van de bron AEM milieu door deze stappen toe te volgen:
+Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze functie inschakelt, duurt het langer om een extractie en opname uit te voeren. Om de eigenschap te gebruiken, laat het in de Console van het Systeem van de bron AEM milieu door deze stappen toe te volgen:
 
 1. Navigeer naar de Adobe Experience Manager Web Console op uw broninstantie door naar **Gereedschappen - Bewerkingen - Webconsole** of rechtstreeks naar de URL op *https://serveraddress:serverport/system/console/configMgr*
 1. Zoeken naar **Configuratie van de service Content Transfer Tool Extraction**
@@ -38,7 +38,7 @@ Als migratievalidatie is ingeschakeld in de AEM bronomgeving, begint u met extra
 
 Indien **Stapelcontainer overschrijven tijdens extractie** wordt toegelaten, worden alle knopen die met de extractie betrokken zijn geregistreerd aan de samenvatting van de extractiepad. Wanneer deze instelling wordt gebruikt, is het belangrijk om de optie **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** instelling tijdens inname, anders lijken er wellicht knooppunten te ontbreken in de ingeslipsamenvatting. Dit zijn de knooppunten die al aanwezig zijn op het doel na eerdere inname.
 
-Voor een grafische illustratie hiervan, verwijs naar de voorbeelden hieronder:
+Zie de volgende voorbeelden voor een grafische illustratie hiervan:
 
 ### Voorbeeld 1 {#example-1}
 
@@ -115,7 +115,7 @@ EXTRACTION: Number of nodes extracted: 4635
 INGESTION: Number of nodes ingested: 0
 ----------------------------------------------------------
 Validation failed. However, the following nodes may already be present in the target environment.
-Please refer to our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
+See our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
 There are 4635 entries present in the extraction digest that are missing from the ingestion digest.
 /content/dam/bruce
 /content/dam/bruce-assets

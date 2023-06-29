@@ -2,9 +2,9 @@
 title: OSGi-instellingen configureren voor de voorbeeldreeks
 description: Leer hoe u de AEM voorvertoningsservice configureert voor een voorvertoning van inhoud voordat u live gaat.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ De OSGi-eigenschapswaarden van de voorvertoningslaag worden overgenomen van de p
 
 >[!NOTE]
 >
->Meer informatie over de voorvertoningsomgevingen vindt u in het document [Omgevingen beheren.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Voor meer informatie over de voorvertoningsomgevingen raadpleegt u [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Het vormen van de Montages OSGi voor de Rij van de Voorproef {#configuring-osgi-settings-for-the-preview-tier}
 

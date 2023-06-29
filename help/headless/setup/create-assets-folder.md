@@ -2,9 +2,9 @@
 title: Een middelenmap maken - Instellingen zonder kop
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten def
 
 U moet echter eerst een map met middelen maken waarin u deze wilt opslaan.
 
-Elementenmappen worden gebruikt om [traditionele inhoudselementen ordenen](/help/assets/manage-digital-assets.md) zoals afbeeldingen en video en als inhoudsfragmenten.
+Elementenmappen worden gebruikt om [traditionele inhoudselementen ordenen](/help/assets/manage-digital-assets.md) zoals afbeeldingen en video- en inhoudsfragmenten.
 
 ## Een middelenmap maken {#how-to-create-an-assets-folder}
 
@@ -30,11 +30,11 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
 1. Een **Titel** en **Naam** voor uw map.
    * De **Titel** moeten beschrijvend zijn.
    * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
-      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies](/help/implementing/developing/introduction/naming-conventions.md).
       * Deze kan zo nodig worden aangepast.
 
    ![Map maken](../assets/assets-folder-create.png)
-1. Selecteer de map die u zojuist hebt gemaakt door de muis boven het vinkje te houden en erop te tikken. Selecteer vervolgens **Eigenschappen** van de werkbalk (of gebruik de `p` [sneltoets.](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))
+1. Selecteer de map die u zojuist hebt gemaakt door de muis boven het vinkje te houden en erop te tikken. Selecteer vervolgens **Eigenschappen** van de werkbalk (of gebruik de `p` [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
 1. In de **Eigenschappen** venster, selecteert u de **Cloud Services** tab.
 1. Voor de **Cloud Configuration** Selecteer [configuratie die u eerder hebt gemaakt.](create-configuration.md)
    ![Map met middelen configureren](../assets/assets-folder-configure.png)

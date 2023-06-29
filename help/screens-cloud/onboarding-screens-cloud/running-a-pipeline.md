@@ -2,9 +2,9 @@
 title: Een pijplijn uitvoeren
 description: Deze pagina beschrijft het runnen van een pijpleiding voor Schermen als project van de Cloud Service in de Manager van de Wolk.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '309'
 ht-degree: 1%
 
 ---
@@ -35,14 +35,14 @@ De volgende sectie beschrijft hoe te om de pijpleiding te vormen CI/CD en uw cod
 1. Selecteer uw opties in het menu **Pipet instellen** wizard. Klikken **Opslaan**.
 
    >[!NOTE]
-   >Om over de opties in de tovenaar van de Pijl van de Opstelling te leren, verwijs naar [Instellingen voor de pijplijn configureren vanuit Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) voor meer informatie .
+   >Om over de opties in de tovenaar van de Pijl van de Opstelling te leren, zie [Instellingen voor de pijplijn configureren vanuit Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) voor meer informatie .
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Nadat de opstellingspijpleiding volledig is, wordt de vraag-aan-actie kaart bijgewerkt.
 
    >[!NOTE]
-   >Raadpleeg voor meer informatie over de fasen in de implementatie in Cloud Manager de volgende bronnen: [Uw code implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) voor meer informatie .
+   >Ga voor meer informatie over de fasen in de implementatie in Cloud Manager naar [Uw code implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) voor meer informatie .
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

@@ -2,10 +2,10 @@
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 description: Ondersteuning voor Image Management System voor Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 38%
+source-wordcount: '1993'
+ht-degree: 37%
 
 ---
 
@@ -106,7 +106,7 @@ Meer informatie over de nieuwe groepsfuncties vindt u [op deze locatie](https://
 
 **User Sync-documentatie**
 
-Raadpleeg de [UST-documentatie](https://adobe-apiplatform.github.io/user-sync.py/en/) voor meer informatie.
+Zie [MOET documentatie](https://adobe-apiplatform.github.io/user-sync.py/en/) voor meer informatie .
 
 Het Hulpmiddel van de Synchronisatie van de Gebruiker moet als cliëntUMAPI van Adobe Developer registreren gebruikend de procedure [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
@@ -214,10 +214,10 @@ Zoals hieronder getoond, de groep **AEM-GRP_008** erft de machtigingen en rechte
 
 Als u toegang wilt tot Cloud Manager of tot omgevingen AEM as a Cloud Service, moet u zijn toegewezen aan profielen van het product Cloud Manager.
 
-Raadpleeg Roldefinities voor meer informatie over rollen voor gebruikers die de beschikbaarheid van specifieke functies in Cloud Manager bepalen.
+Zie Roldefinities voor meer informatie over rollen voor gebruikers die de beschikbaarheid van specifieke functies in Cloud Manager bepalen.
 
 >[!NOTE]
->Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Om over elk van de rollen met specifieke toestemmingen, pre-gevormde taken, of toestemmingen, verbonden aan elke rol te leren, verwijs naar [Op rollen gebaseerde machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).
+>Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Om over elk van de rollen met specifieke toestemmingen, pre-gevormde taken, of toestemmingen, verbonden aan elke rol te leren, zie [Op rollen gebaseerde machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).
 
 **Stappen voor het toevoegen van een gebruiker**
 

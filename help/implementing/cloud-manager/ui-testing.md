@@ -2,9 +2,9 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2389'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ In tegenstelling tot aangepaste functionele tests, die HTTP-tests zijn die in Ja
 >
 >Adobe raadt u aan Cypress te gebruiken voor het testen van de gebruikersinterface, volgens de code in het dialoogvenster [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 > 
->Adobe biedt ook voorbeelden van UI-testmodules die zijn gebaseerd op JavaScript met WebdriverIO (raadpleeg de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) en Java met WebDriver (raadpleeg de [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
+>Adobe biedt ook voorbeelden van UI-testmodules die zijn gebaseerd op JavaScript met WebdriverIO (zie [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) en Java met WebDriver (zie [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
 
 ## Aan de slag met gebruikersinterfacetests {#get-started-ui-tests}
 
@@ -69,7 +69,7 @@ In deze sectie worden de stappen beschreven die nodig zijn om een UI-testproject
 
 >[!TIP]
 >
->De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) Kan een project van de Tests UI voor u produceren, dat aan de volgende beschrijving volgzaam is, als u geen speciale vereisten voor de programmeertaal hebt.
+>De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) U kunt een project van Tests UI voor u produceren, dat aan de volgende beschrijving volgzaam is, als u geen speciale vereisten voor de programmeertaal hebt.
 
 ### Een docker Build-context genereren {#generate-docker-build-context}
 
@@ -236,7 +236,7 @@ Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geï
 
 >[!NOTE]
 >
->Het resultaat van de teststap voor de gebruikersinterface wordt alleen op basis van de testrapporten geëvalueerd. Zorg ervoor dat u het rapport overeenkomstig voor de uitvoering van de test genereert.
+>Het resultaat van de teststap voor de gebruikersinterface wordt alleen op basis van de testrapporten geëvalueerd. Zorg ervoor dat u het rapport dienovereenkomstig voor uw testuitvoering produceert.
 >
 >De beweringen van het gebruik in plaats van enkel het registreren van een fout aan STDERR of het terugkeren van een niet-nul uitgangscode anders kan uw plaatsingspijpleiding normaal te werk gaan.
 
@@ -259,7 +259,7 @@ Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geï
 
 >[!NOTE]
 >
-> Indien u meer middelen nodig hebt, maak dan een geval voor de klantenservice en beschrijf uw gebruikscase. Adobe zal uw verzoek beoordelen en de nodige assistentie verlenen.
+> Als u meer middelen nodig hebt, maakt u een geval voor de klantenservice en beschrijft u uw gebruikscase. Adobe zal uw verzoek beoordelen en de nodige assistentie verlenen.
 
 ## Seleniumspecifieke details
 
@@ -345,7 +345,7 @@ Alvorens tests UI in een pijpleiding van de Manager van de Wolk te activeren, ad
 >
 >De logbestanden worden opgeslagen in het dialoogvenster `target/` van uw opslagplaats.
 >
->Raadpleeg voor meer informatie de [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+>Zie voor meer informatie [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
 ### Voorbeeld van JavaScript WebdriverIO-test {#javascript-sample}
 
@@ -369,7 +369,7 @@ Alvorens tests UI in een pijpleiding van de Manager van de Wolk te activeren, ad
 >* De logbestanden worden opgeslagen in het dialoogvenster `target/reports` map van uw opslagplaats
 >* U moet ervoor zorgen dat op uw computer de nieuwste Chrome-versie wordt uitgevoerd terwijl de test de meest recente release van ChromeDriver automatisch downloadt voor tests.
 >
->Raadpleeg voor meer informatie de [Opslagplaats voor projectarchetype AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>Zie voor meer informatie [Opslagplaats voor projectarchetype AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Voorbeeld van Java Selenium WebDriver-test {#java-sample}
 
@@ -392,4 +392,4 @@ Alvorens tests UI in een pijpleiding van de Manager van de Wolk te activeren, ad
 >
 >De logbestanden worden opgeslagen in het dialoogvenster `target/reports` van uw opslagplaats.
 >
->Raadpleeg voor meer informatie de [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>Zie voor meer informatie [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

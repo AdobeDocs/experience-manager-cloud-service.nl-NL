@@ -2,9 +2,9 @@
 title: Rechts personen, juiste rollen
 description: Rechts personen, juiste rollen
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Het is mogelijk dat in uw organisatie verschillende afdelingen verschillende asp
 
 Digitaal bestuur begint met uitzoeken wie verantwoordelijk is voor wat en wie die digitaal gerichte baan doet. Mogelijk moet u een aantal strategische aannemers maken om de benodigde vaardigheden toe te voegen. Een nog grotere uitdaging is het aansturen van een cultuurverschuiving — het opbouwen van brede steun voor de nieuwe technologie en het helpen van mensen om gewend te raken aan nieuwe manieren om dingen te doen. Een belangrijk onderdeel van die inspanning is het creëren van een digitale gemeenschap, die mensen van elkaar laat leren en steunen.
 
-Voorlopig zullen we ons richten op het plaatsen van de juiste mensen in de juiste banen om uw Adobe Experience Manager-implementatie te helpen stimuleren. Voor elk kernproduct — Experience Manager Sites en Experience Manager Assets — hebben we een lijst met rollen beschikbaar gesteld die u moet vervullen, samen met de vaardigheden, expertiseniveaus en kenmerken die mensen effectief maken in de verschillende rollen.
+Momenteel is het belangrijk dat de juiste mensen in de juiste banen worden gezet om uw Adobe Experience Manager-implementatie te helpen stimuleren. Voor elk kernproduct — Experience Manager Sites en Experience Manager Assets — heeft Adobe een lijst van rollen verstrekt u moet vullen, samen met de vaardigheden, de niveaus van deskundigheid, en attributen die mensen in de diverse rollen effectief maken.
 
 Uw taak deze week is om beide lijsten met uw implementatieteam te evalueren en ervoor te zorgen dat u in elke rol personen met relevante kwalificaties hebt.
 

@@ -2,9 +2,9 @@
 title: Pad naar uw eerste ervaring met AEM zonder kop
 description: In dit deel van de AEM Headless Developer Journey zult u de stappen begrijpen voor het implementeren van uw eerste headless ervaring in AEM met planningsoverwegingen en leert u ook best practices om uw pad zo vloeiend mogelijk te maken.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2012'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Inhoudsauteurs maken inhoud op basis van de inhoudsmodellen die zijn gedefinieer
 
 Voordat u aan de slag gaat met headless in AEM, moet u ervoor zorgen dat alle vereiste functies zijn ingeschakeld. In deze sectie wordt beschreven wat er nodig is. De daadwerkelijke stappen om deze stappen te verwezenlijken worden later gedetailleerd in [AEM Headless Developer Journey.](#overview.md)
 
-U kunt ook optioneel verwijzen naar de [extra middelen](#additional-resources) voor meer informatie over de afzonderlijke onderwerpen .
+U kunt ook optioneel zien [extra middelen](#additional-resources) voor meer informatie over de afzonderlijke onderwerpen .
 
 ### Configuratie {#configuration}
 

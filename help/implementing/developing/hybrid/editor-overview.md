@@ -2,7 +2,7 @@
 title: Overzicht SPA Editor
 description: In dit artikel wordt een uitgebreid overzicht gegeven van de SPA Editor en van de manier waarop dit werkt. In dit artikel zijn gedetailleerde workflows opgenomen van interactie tussen de SPA Editor in AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Raadpleeg de volgende documenten voor meer informatie over SPA in AEM:
 
 ## Ontwerp {#design}
 
-De paginacomponent voor een SPA verstrekt niet de HTML elementen van zijn kindcomponenten via het JSP of HTML- dossier. Deze bewerking wordt gedelegeerd aan het SPA. De representatie van onderliggende componenten of modellen wordt opgehaald als een JSON-gegevensstructuur van het JCR. De SPA componenten worden vervolgens volgens die structuur aan de pagina toegevoegd. Dit gedrag onderscheidt de aanvankelijke lichaamssamenstelling van de paginacomponent van niet-SPA tegenhangers.
+De paginacomponent voor een SPA biedt de HTML-elementen van de onderliggende componenten niet via het JSP- of HTML-bestand. Deze bewerking wordt gedelegeerd aan het SPA. De representatie van onderliggende componenten of modellen wordt opgehaald als een JSON-gegevensstructuur van het JCR. De SPA componenten worden vervolgens volgens die structuur aan de pagina toegevoegd. Dit gedrag onderscheidt de aanvankelijke lichaamssamenstelling van de paginacomponent van niet-SPA tegenhangers.
 
 ### Paginamodel beheren {#page-model-management}
 
@@ -63,7 +63,7 @@ U kunt de stroom van de interactie tussen de SPA en AEM begrijpen door de SPA Re
 * De communicatie tussen de pagina-editor en de SPA wordt gemaakt met JSON in plaats van met HTML.
 * De pagina-editor biedt de meest recente versie van het paginamodel aan de SPA via de iframe- en messaging-API.
 * De manager van het paginamodel brengt de redacteur op de hoogte het klaar voor uitgave is en gaat het paginamodel als structuur JSON over.
-* De editor wijzigt de DOM-structuur van de pagina die wordt gemaakt niet of opent deze zelfs niet, maar biedt het nieuwste paginamodel.
+* De editor wijzigt de DOM-structuur van de pagina die wordt gemaakt niet of opent deze zelfs niet, maar biedt wel het nieuwste paginamodel.
 
 ![SPA](assets/workflow.png)
 
@@ -172,7 +172,7 @@ Als u de op plaats-editor wilt gebruiken van een tekstcomponent die in SPA is ge
 1. Stel een willekeurig kenmerk in op het containerelement dat de tekst HTML bevat. In het geval van het WKND SPA Project, is het een `<div>` element en de kiezer die is gebruikt, is `data-rte-editelement`.
 1. De configuratie instellen `editElementQuery` op de overeenkomstige AEM tekstcomponent `cq:InplaceEditingConfig` dat bijvoorbeeld naar die kiezer wijst, `data-rte-editelement`. Dit laat de redacteur weten welk element van HTML de HTML tekst verpakt.
 
-Voor meer informatie over de `editElementQuery` eigenschap en de configuratie van de teksteditor met opmaak, raadpleegt u [Configureer de Rich Text Editor.](/help/implementing/developing/extending/rich-text-editor.md)
+Voor meer informatie over de `editElementQuery` eigenschap en de configuratie van de teksteditor met opmaak, raadpleegt u [De Rich Text Editor configureren](/help/implementing/developing/extending/rich-text-editor.md).
 
 ### Beperkingen {#limitations}
 

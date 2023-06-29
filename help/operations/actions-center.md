@@ -4,9 +4,9 @@ description: Gebruik het actiecentrum om gemakkelijk actie te ondernemen tegen i
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 >[!NOTE]
 >Deze functie is niet vrijgegeven.
 
-AEM als Cloud Service verzendt de e-mailberichten van het Centrum van Acties wanneer de kritieke incidenten voorkomen die onmiddellijke actie vereisen, evenals pro-actieve aanbevelingen voor optimalisaties. De voorbeelden omvatten een geblokkeerde rij, of een het verlopen reeks geloofsbrieven; de volledige reeks kennisgevingen van het actiecentrum kan worden weergegeven in het gedeelte [tabel hieronder](#supported-notification-types), die na verloop van tijd zal toenemen.
+AEM als Cloud Service verzendt de e-mailberichten van het Centrum van Acties wanneer de kritieke incidenten voorkomen die onmiddellijke actie vereisen, en pro-actieve aanbevelingen voor optimalisaties. De voorbeelden omvatten een geblokkeerde rij, of een het verlopen reeks geloofsbrieven; de volledige reeks kennisgevingen van het actiecentrum kan worden weergegeven in het gedeelte [tabel hieronder](#supported-notification-types), die na verloop van tijd zal toenemen.
 
 Wanneer een e-mailbericht van het Centrum van Acties wordt ontvangen, kan het worden geklikt om AEM Centrum van Acties van het as a Cloud Service met popup te openen die extra context toont die de actie voor een klant verklaart te nemen.
 
-Naast het weergeven van informatie over het zojuist geklikte e-mailbericht, fungeert het Actions Center als een hub waarin u de set met huidige en oudere meldingen kunt weergeven en beheren. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+Naast het weergeven van informatie over het zojuist geklikte e-mailbericht, fungeert het Actions Center als een hub waarin u de set met huidige en oudere meldingen kunt weergeven en beheren. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
 Er zijn twee categorieën meldingen op hoog niveau die in het Actions Center worden weergegeven:
 

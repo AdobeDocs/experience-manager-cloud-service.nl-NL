@@ -2,9 +2,9 @@
 title: Page Diff-optie
 description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -98,4 +98,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Zie voor meer informatie over de werking van het mechanisme voor pagina-diff en de beperkingen die invloed kunnen hebben op pagina-diff de [ontwikkelaarsdocumentatie](/help/implementing/developing/introduction/page-diff.md) van deze functie.
+>Zie voor meer informatie over de werking van het mechanisme voor pagina-diff en de beperkingen die paginadiff kunnen beïnvloeden [ontwikkelaarsdocumentatie](/help/implementing/developing/introduction/page-diff.md) van deze functie.

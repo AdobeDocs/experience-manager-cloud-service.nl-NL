@@ -2,9 +2,9 @@
 title: Toegang tot Git Repository ophalen
 description: Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot gegevensopslagruimte.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '891'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen 
 
 Als u een front-end ontwikkelaar bent die slechts verantwoordelijk voor de aanpassing van het plaatsthema bent, hebt u geen kennis van nodig hoe AEM opstelling was en aan kan overslaan [Doelstelling](#objective) van dit document.
 
-Als u ook de rol van Cloud Manager of AEM beheerder en front-end ontwikkelaar vervult, hebt u geleerd in het vorige document van de AEM Quick Site Creation-reis. [Toegang verlenen aan de Front-End Developer,](grant-access.md) hoe u de front-end ontwikkelaar aan boord kunt nemen, zodat ze toegang hebben tot de git-opslagplaats, en u moet nu weten:
+Als u ook de rol van Cloud Manager of AEM beheerder en front-end ontwikkelaar vervult, hebt u in het vorige document van de AEM Quick Site Creation-reis geleerd, [Toegang verlenen aan de Front-End Developer,](grant-access.md) hoe u de front-end ontwikkelaar aan boord kunt nemen, zodat ze toegang hebben tot de git-opslagplaats, en u moet nu weten:
 
 * Hoe te om een front-end ontwikkelaar als gebruiker toe te voegen.
 * Hoe te om de vereiste rollen aan de front-end ontwikkelaar te verlenen.
@@ -50,9 +50,9 @@ Met het gereedschap Snel site maken kunnen ontwikkelaars aan de voorkant onafhan
    * Een welkomstbericht van Cloud Manager waarin u op de hoogte wordt gesteld van toegang
    * De naam van het programma of de URL in Cloud Manager
 
-Neem contact op met de beheerder van de AEM of met de beheerder van de cloud als u een van deze items ontbreekt.
+Neem contact op met de beheerder van de AEM of de beheerder van de cloud als u een van deze items ontbreekt.
 
-Aangenomen wordt dat de front-end ontwikkelaar uitgebreide ervaring heeft met front-end ontwikkelingsworkflows en met algemene geïnstalleerde gereedschappen, waaronder:
+Aangenomen wordt dat de front-end ontwikkelaar uitgebreide ervaring heeft met front-end ontwikkelingsworkflows en gangbare geïnstalleerde gereedschappen, waaronder:
 
 * git
 * npm

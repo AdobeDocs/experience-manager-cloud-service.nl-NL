@@ -2,9 +2,9 @@
 title: De Admin Console openen
 description: Zodra u de voorbereiding noodzakelijk aan het aan boord gaan en de grondbeginselen van structuur AEMaaCS begrijpt, bent u bereid om in de Admin Console voor het eerst te registreren.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Alvorens u de Admin Console kunt gebruiken om gebruikers binnen uw team te beher
 
    ![De Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. Als u toegang hebt tot meerdere organisaties, moet u ervoor zorgen dat u zich hebt aangemeld bij de juiste organisatie. Als u uw organisatie wilt wijzigen, klikt u in de rechterbovenhoek op de naam van de organisatie en kiest u de gewenste organisatie waartoe u toegang nodig hebt.
+1. Als u toegang tot veelvoudige organisaties hebt, zorg ervoor dat u in correcte organisatie hebt geregistreerd. Als u uw organisatie wilt wijzigen, klikt u in de rechterbovenhoek op de naam van de organisatie en kiest u de gewenste organisatie waartoe u toegang nodig hebt.
 
    ![org wijzigen](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 

@@ -2,9 +2,9 @@
 title: Inleiding tot Cloud Manager
 description: Meer informatie over hoe Cloud Manager uw AEM project ondersteunt via programma's, omgevingen en pijpleidingen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Cloud Manager is een essentieel onderdeel van AEM as a Cloud Service en fungeert als één ingangspunt voor uw team. De speciaal gebouwde CI/CD-pijpleidingen zijn uitgerust om grondig te testen en de hoogste codekwaliteit te verzekeren om uitzonderlijke ervaringen te bieden. Om ervoor te zorgen dat klanten hun projecten snel kunnen starten, biedt Cloud Manager alles wat vereist is op een zelfbediening manier, zoals de mogelijkheid om cloudbronnen en -omgevingen te maken en toegang te krijgen tot uw git-opslagruimten. Deze functies ondersteunen instellingen voor bedrijfsontwikkeling, zodat teams regelmatig wijzigingen kunnen doorvoeren, snel uitzonderlijke digitale ervaringen kunnen opdoen en tijd-naar-waarde kunnen versnellen.
 
-Uw systeembeheerder is verantwoordelijk voor het instellen van uw Cloud Manager-team. Dit team omvat personen die uw cloudbronnen en -ontwikkelaars maken. Raadpleeg het document voor meer informatie over het instellen en schalen van uw ontwikkelingsteam voor ondernemingen en zie hoe AEM as a Cloud Service uw ontwikkelingsproces kan ondersteunen. [De Opstelling van de Ontwikkeling van het Team van de onderneming voor AEM as a Cloud Service.](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+Uw systeembeheerder is verantwoordelijk voor het instellen van uw Cloud Manager-team. Dit team omvat personen die uw cloudbronnen en -ontwikkelaars maken. Voor meer informatie over hoe te opstelling en schaal uw team van de ondernemingsontwikkeling en zie hoe AEM as a Cloud Service uw ontwikkelingsproces kan steunen, zie [Enterprise Team Development Setup voor AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).
 
 ## Navigeren naar de overzichtspagina van Cloud Manager {#navigate-cloud-manager}
 
@@ -23,7 +23,7 @@ Ga als volgt te werk om naar Cloud Manager te navigeren.
 
 1. Selecteer het programma in Cloud Manager **Programma&#39;s en producten** pagina om de **Overzicht** pagina.
 
-U kunt ook vanuit de Adobe Experience Cloud-startpagina naar de pagina Programma&#39;s en producten van Cloud Manager navigeren door deze stappen uit te voeren.
+U kunt ook vanuit de startpagina van Adobe Experience Cloud naar de pagina Programma&#39;s en producten van Cloud Manager navigeren door deze stappen uit te voeren.
 
 1. Ga naar Adobe Experience Cloud op [`https://experience.adobe.com`](https://experience.adobe.com) en meld u aan met uw Adobe ID.
 
@@ -54,7 +54,7 @@ U kunt ook vanuit de Adobe Experience Cloud-startpagina naar de pagina Programma
 
 >[!NOTE]
 >
->Een gebruiker kan aan veelvoudige rollen worden toegewezen. Bijvoorbeeld beide toewijzen **Zakelijke eigenaar** en **Implementatiebeheer** rollen aan een gebruiker geven de gebruiker de som deze toestemmingen.
+>Een gebruiker kan aan veelvoudige rollen worden toegewezen. Als u bijvoorbeeld beide toewijst **Zakelijke eigenaar** en **Implementatiebeheer** rollen aan een gebruiker geven de gebruiker de som deze toestemmingen.
 
 ## Cloud Manager-programma&#39;s {#cloud-manager-programs}
 
@@ -66,12 +66,12 @@ Dit bekijken [video](https://experienceleague.adobe.com/docs/experience-manager-
 Een gebruiker kan een **Sandbox** of **Productie** programma.
 
 * A **productieprogramma** wordt gecreeerd om levend verkeer op het aangewezen tijdstip in de toekomst toe te laten.
-   * Raadpleeg het document [Inleiding tot productieprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer informatie .
+   * Zie [Inleiding tot productieprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer informatie .
 
 * A **sandboxprogramma** wordt typisch gecreeerd ten behoeve van opleiding, lopende demo&#39;s, enablement, het creëren van POCs, of voor documentatie.
    * Het is niet de bedoeling om levend verkeer te vervoeren en zal beperkingen hebben die een productieprogramma niet zal hebben.
    * Het omvat Plaatsen en Activa en wordt geleverd automatisch bevolkt met een git tak die steekproefcode, een ontwikkelomgeving, en een niet productiepijplijn omvat.
-   * Raadpleeg het document [Inleiding tot Sandbox-programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) voor meer informatie .
+   * Zie [Inleiding tot Sandbox-programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) voor meer informatie .
 
 ## Cloud Manager-omgevingen {#cloud-manager-environments}
 
@@ -83,9 +83,9 @@ Uw cloudomgevingen worden gemaakt, geopend en weergegeven via Cloud Manager. Dez
 
 >[!TIP]
 >
-> De video raadplegen [Adobe Cloud Manager-omgevingen gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) een overzicht van de beschikbare omgevingen.
+> De video bekijken [Adobe Cloud Manager-omgevingen gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) een overzicht van de beschikbare omgevingen.
 >
->Het document raadplegen [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over typen omgevingen die een gebruiker kan maken en over de manier waarop de gebruiker een omgeving kan maken.
+>Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie over typen omgevingen die een gebruiker kan maken en over de manier waarop de gebruiker een omgeving kan maken.
 
 ### AEM Authoring {#author-services}
 

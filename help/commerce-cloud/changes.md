@@ -2,16 +2,16 @@
 title: Opvallende wijzigingen van de add-on van het kader voor de integratie van de handel (CIF)
 description: Opvallende veranderingen van het Kader voor de Integratie van de Handel (CIF) in vergelijking met de oude CIF-versies.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 6c9a44940ea9e52bd27a233c7aa24e320a24076c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
 # Opvallende veranderingen in de toe:voegen-on van het Kader van de Integratie van de Handel (CIF){#notable-changes}
 
-Adobe Experience Manager as a Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM Projecten te beheren. Als u meer wilt weten over deze mogelijkheden, volgt u de koppeling voor [wijzigingen in as a Cloud Service Experience Manager](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM Projecten te beheren. Als u meer wilt weten over deze mogelijkheden, klikt u op de koppeling voor [wijzigingen in as a Cloud Service Experience Manager](/help/release-notes/aem-cloud-changes.md).
 
 Dit document benadrukt de belangrijke verschillen tussen de toe:voegen-op en oude versies van het Kader van de Integratie van de Handel (CIF), die als Klassieke CIF (Quickstart) en open-source CIF worden bekend.
 
@@ -63,4 +63,4 @@ AEM geeft de ervaringen van de productcatalogus direct weer met behulp van AEM c
 
 >[!NOTE]
 >
->Voor extra documentatie over hoe te om CIF met AEM Beheerde Dienst of AEM On-premisse te gebruiken, verwijs naar [Kader voor integratie in de handel](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Voor extra documentatie over hoe te om CIF met AEM Beheerde Dienst of AEM On-premisse te gebruiken, zie [Kader voor integratie in de handel](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

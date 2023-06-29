@@ -2,10 +2,10 @@
 title: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 description: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
-ht-degree: 54%
+source-wordcount: '3706'
+ht-degree: 53%
 
 ---
 
@@ -459,7 +459,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Bovendien kan de functionaliteit die voor de sitemaps van XML wordt uitgevoerd ook in verschillende gebruiksgevallen worden gebruikt, bijvoorbeeld om de canonieke verbinding of de taalalternatieven aan het hoofd van een pagina toe te voegen. Raadpleeg de [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface voor meer informatie.
+Bovendien kan de functionaliteit die voor de sitemaps van XML wordt uitgevoerd ook in verschillende gebruiksgevallen worden gebruikt, bijvoorbeeld om de canonieke verbinding of de taalalternatieven aan het hoofd van een pagina toe te voegen. Zie de [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface voor meer informatie.
 
 ### 301-omleidingen maken voor verouderde URL&#39;s {#creating-redirects-for-legacy-urls}
 
@@ -472,7 +472,7 @@ Controleer of de sectie met extra bronnen die volgt op instructies voor het impl
 
 ## Aanvullende bronnen {#additional-resources}
 
-Raadpleeg de volgende aanvullende bronnen voor meer informatie:
+Zie de volgende aanvullende bronnen voor meer informatie:
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

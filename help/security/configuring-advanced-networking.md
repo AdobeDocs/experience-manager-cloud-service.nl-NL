@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3579'
+source-wordcount: '3571'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ AEM as a Cloud Service biedt verschillende soorten geavanceerde netwerkmogelijkh
 * [IP-adres van specifiek egress](#dedicated-egress-IP-address) - vorm verkeer uit AEM as a Cloud Service om uit unieke IP voort te komen
 * [Virtual Private Network (VPN)](#vpn) - veilig verkeer tussen de infrastructuur van een klant en AEM as a Cloud Service, voor klanten die de technologie van VPN hebben
 
-Dit artikel beschrijft elk van deze opties in detail, met inbegrip van hoe zij kunnen worden gevormd. Als algemene configuratiestrategie `/networkInfrastructures` Het API eindpunt wordt aangehaald op het programmaniveau om het gewenste type van geavanceerd voorzien van een netwerk te verklaren, dat door een vraag aan het `/advancedNetworking` eindpunt voor elke milieu om de infrastructuur toe te laten en milieu-specifieke parameters te vormen. Raadpleeg de desbetreffende eindpunten in de API-documentatie van Cloud Manager voor elke formele syntaxis, evenals voorbeeldaanvragen en reacties.
+Dit artikel beschrijft elk van deze opties in detail, met inbegrip van hoe zij kunnen worden gevormd. Als algemene configuratiestrategie `/networkInfrastructures` Het API eindpunt wordt aangehaald op het programmaniveau om het gewenste type van geavanceerd voorzien van een netwerk te verklaren, dat door een vraag aan het `/advancedNetworking` eindpunt voor elke milieu om de infrastructuur toe te laten en milieu-specifieke parameters te vormen. Verwijs naar de desbetreffende eindpunten in de API-documentatie van Cloud Manager voor elke formele syntaxis en naar voorbeeldaanvragen en -antwoorden.
 
 Een programma kan één enkele geavanceerde voorzien van een netwerkvariatie verstrekken. Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres, wordt het geadviseerd u flexibele havenuitgang kiest als een specifiek IP adres niet wordt vereist omdat Adobe prestaties van flexibel havenuitgang verkeer kan optimaliseren.
 
@@ -36,7 +36,7 @@ Een programma kan één enkele geavanceerde voorzien van een netwerkvariatie ver
 
 >[!NOTE]
 >
->Klanten die al beschikken over een verouderde, toegewijde egress-technologie en die een van deze opties moeten configureren, zouden dat niet moeten doen of de connectiviteit van de site kan hierdoor worden beïnvloed. Neem contact op met de Adobe-ondersteuning voor hulp.
+>Klanten die al beschikken over een verouderde, toegewijde egress-technologie en die een van deze opties moeten configureren, zouden dat niet moeten doen of de connectiviteit van de site kan hierdoor worden beïnvloed. Neem contact op met de ondersteuning van Adobe.
 
 ## Flexibele poortuitgang {#flexible-port-egress}
 
@@ -48,7 +48,7 @@ De flexibele havenuitgang is de geadviseerde keus als u geen VPN nodig hebt en g
 
 ### Configuratie {#configuring-flexible-port-egress-provision}
 
-Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` eindpunt wordt aangehaald, eenvoudig overgaand de waarde van `flexiblePortEgress` voor de `kind` parameter en regio. Het eindpunt reageert met het `network_id`, alsmede andere informatie met inbegrip van de status. De volledige set parameters en de exacte syntaxis, evenals belangrijke informatie zoals welke parameters later niet kunnen worden gewijzigd, [kan worden verwezen in de API-documenten.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` eindpunt wordt aangehaald, eenvoudig overgaand de waarde van `flexiblePortEgress` voor de `kind` parameter en regio. Het eindpunt reageert met het `network_id`en andere informatie, waaronder de status. De volledige set parameters en de exacte syntaxis en belangrijke informatie zoals welke parameters later niet kunnen worden gewijzigd, [kan worden verwezen in de API-documenten.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 Zodra geroepen, vergt het typisch ongeveer 15 minuten voor de voorzien van een netwerkinfrastructuur om worden provisioned. Een oproep aan de Cloud Manager [GET netwerkinfrastructuur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) zou de status &quot;ready&quot; aangeven.
 
@@ -179,7 +179,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->Als u vóór de release van september 2021 een speciale IP-adres hebt ingericht (10/6/21), kunt u de [Verouderde, specifieke klanten van het Adres van de Afstuwing](#legacy-dedicated-egress-address-customers).
+>Als u van een specifieke uitgang IP vóór de versie van september 2021 (10/6/21) bent voorzien, zie [Verouderde, specifieke klanten van het Adres van de Afstuwing](#legacy-dedicated-egress-address-customers).
 
 ### Voordelen {#benefits}
 
@@ -353,7 +353,7 @@ De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de 
 
 ### Maken {#vpn-creation}
 
-Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` het eindpunt wordt aangehaald, die in een lading van configuratieinformatie overgaan met inbegrip van: de waarde van &quot;vpn&quot; voor de `kind` parameter, gebied, adresruimte (lijst van CIDRs - merk op dat dit niet later kan worden gewijzigd), DNS oplossers (voor het oplossen van namen in het netwerk van de klant), en de verbindingsinformatie van VPN zoals gatewayconfiguratie, gedeelde sleutel van VPN, en het IP Veiligheidsbeleid. Het eindpunt reageert met het `network_id`, alsmede andere informatie met inbegrip van de status. Naar de volledige set parameters en de exacte syntaxis moet worden verwezen in het gedeelte [API-documentatie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` het eindpunt wordt aangehaald, die in een lading van configuratieinformatie overgaan met inbegrip van: de waarde van &quot;vpn&quot; voor de `kind` parameter, gebied, adresruimte (lijst van CIDRs - merk op dat dit niet later kan worden gewijzigd), DNS oplossers (voor het oplossen van namen in het netwerk van de klant), en de verbindingsinformatie van VPN zoals gatewayconfiguratie, gedeelde sleutel van VPN, en het IP Veiligheidsbeleid. Het eindpunt reageert met het `network_id`en andere informatie, waaronder de status. Naar de volledige set parameters en de exacte syntaxis moet worden verwezen in het gedeelte [API-documentatie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
 Zodra geroepen, zal het typisch tussen 45 en 60 minuten voor de voorzien van een netwerkinfrastructuur duren. De methode van de GET van de API kan worden geroepen om de huidige status terug te keren, die uiteindelijk zal draaien van `creating` tot `ready`. Raadpleeg de API-documentatie voor alle staten.
 
@@ -424,7 +424,7 @@ De lijst beschrijft hieronder verkeer dat verplettert.
   </tr>
   <tr>
     <td></td>
-    <td>Als het IP-adres niet in het deelvenster <i>VPN-gatewayadresruimte</i> waaier, en door de volmachtsconfiguratie van http (die door gebrek voor verkeer http/s gebruikend standaard de cliëntbibliotheek van HTTP van Java wordt gevormd)</td>
+    <td>Als het OT niet in het <i>VPN-gatewayadresruimte</i> waaier, en door de volmachtsconfiguratie van http (die door gebrek voor verkeer http/s gebruikend standaard de cliëntbibliotheek van HTTP van Java wordt gevormd)</td>
     <td>Alle</td>
     <td>Door specifieke uitgang IP</td>
     <td></td>
@@ -453,7 +453,7 @@ De lijst beschrijft hieronder verkeer dat verplettert.
   </tr>
   <tr>
     <td></td>
-    <td>Als het IP-adres niet in het deelvenster <i>VPN-gatewayadresruimte</i> bereik en clientverbinding met <code>AEM_PROXY_HOST</code> env-variabele met behulp van een <code>portOrig</code> gedeclareerd in de <code>portForwards</code> API-parameter</td>
+    <td>Als het OT niet in het <i>VPN-gatewayadresruimte</i> bereik en clientverbinding met <code>AEM_PROXY_HOST</code> env-variabele met behulp van een <code>portOrig</code> gedeclareerd in de <code>portForwards</code> API-parameter</td>
     <td>Alle</td>
     <td>Door specifieke uitgang IP</td>
     <td></td>
@@ -564,7 +564,7 @@ Als een geavanceerde voorzien van een netwerkconfiguratie reeds in het primaire 
 De procedure is grotendeels vergelijkbaar met de voorgaande instructies. Nochtans, als het productiemilieu nog niet voor geavanceerd voorzien van een netwerk is toegelaten, is er een kans om de configuratie te testen door het in een het opvoeren milieu eerst toe te laten:
 
 1. Maak voorzien van een netwerkinfrastructuur voor alle gebieden door de vraag van de POST aan [Cloud Manager API voor netwerkinfrastructuur maken](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Het enige verschil in de configuratie JSON van de nuttige lading met betrekking tot primair gebied is het gebiedbezit.
-1. Voor het opvoeren milieu, laat en vormt het milieu binnen bereik geavanceerd voorzien van een netwerk toe door te lopen `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Raadpleeg de API-documentatie voor meer informatie [hier](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. Voor het opvoeren milieu, laat en vormt het milieu binnen bereik geavanceerd voorzien van een netwerk toe door te lopen `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Zie de API-documentatie voor meer informatie [hier](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. Indien nodig, externe infrastructuur vergrendelen, bij voorkeur met een FQDN (bijvoorbeeld `p1234.external.adobeaemcloud.com`). U kunt het anders doen door IP adres
 1. Als het het opvoeren milieu zoals verwacht werkt, laat en vormt de milieu-scoped geavanceerde voorzien van een netwerkconfiguratie voor productie toe.
 

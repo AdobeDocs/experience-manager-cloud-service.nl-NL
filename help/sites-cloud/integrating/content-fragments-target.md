@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten exporteren naar Adobe Target
 description: Inhoudsfragmenten exporteren naar Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2222'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ De volgende actie is vereist:
 
 1. U moet [AEM integreren met Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-<!-- link rewriter - targets in content-fragments-customizing don't exist yet
+<!-- link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -324,7 +324,7 @@ Een inhoudsfragment exporteren van AEM naar doel (nadat u de cloudconfiguratie h
 
    ![Exporteren naar Adobe Target](assets/cfm-export-target-01.png)
 
-   <!-- this note doesn't seem to be accurate for CFs -->
+   <!-- this note does not seem to be accurate for CFs -->
 
    <!--
    
@@ -364,7 +364,7 @@ Een inhoudsfragment exporteren van AEM naar doel (nadat u de cloudconfiguratie h
 
 ## Inhoudsfragmenten in Adobe Target gebruiken {#using-your-content-fragments-in-adobe-target}
 
-Nadat u de voorgaande taken hebt uitgevoerd, wordt het inhoudsfragment weergegeven op de pagina Aanbiedingen in Doel. Kijk eens naar de [specifieke doeldocumentatie](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) om te leren wat je daar kunt bereiken.
+Nadat u de voorgaande taken hebt uitgevoerd, wordt het inhoudsfragment weergegeven op de pagina Aanbiedingen in Doel. Zie [specifieke doeldocumentatie](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) om te leren wat je daar kunt bereiken.
 
 >[!NOTE]
 >
@@ -396,7 +396,7 @@ Om dergelijke situaties te voorkomen:
 
 ## Aanvullende bronnen {#further-resources}
 
-Zie ook voor meer informatie:
+Raadpleeg de volgende secties voor meer informatie:
 
 <!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)

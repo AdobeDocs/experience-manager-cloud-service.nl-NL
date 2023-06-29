@@ -2,9 +2,9 @@
 title: Voorbereiding aan boord
 description: Alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Aan boord gaan op AEM as a Cloud Service begint met een ondertekend contract tus
 * Uw Premier Support-niveau (indien van toepassing).
 * Uw contacten voor aan boord gaan.
 
-Neem contact op met het contracterende team binnen uw organisatie als u deze gegevens niet kent.
+Als u niet op de hoogte bent van deze gegevens, neemt u contact op met het contracterende team binnen uw organisatie.
 
 Zodra het contract wordt ondertekend, voorziet de Adobe uw milieu&#39;s, wordt een welkome e-mail verzonden naar de onboarding contacten die in het contract worden bepaald, en een onboarding vraag wordt georganiseerd door Adobe. Dit gebeurt gewoonlijk een paar dagen na het sluiten van het contract, tenzij een toekomstige datum van de de dienstaanvang wordt geschikt.
 
@@ -88,4 +88,4 @@ U zou nu een basisbegrip moeten hebben van:
 * Hoe dat contract het instapproces beïnvloedt.
 * Hoe te op uw onboarding vraag voor te bereiden.
 
-Nu u bekend bent met deze voorbereidingsstappen, bent u bijna klaar om u aan te melden bij het systeem zelf. Maar eerst zult u een kort overzicht van hoe AEM as a Cloud Service uit het standpunt van een systeembeheerder gestructureerd zijn en zult om wat belangrijke terminologie te leren kennen. Ga door naar het volgende gedeelte van de reis. [AEM as a Cloud Service terminologie.](terminology.md)
+Nu u bekend bent met deze voorbereidingsstappen, bent u bijna klaar om u aan te melden bij het systeem zelf. Maar eerst zult u een kort overzicht van hoe AEM as a Cloud Service uit het standpunt van een systeembeheerder gestructureerd zijn en zult om wat belangrijke terminologie te leren kennen. Doorgaan naar het volgende deel van de reis, [as a Cloud Service terminologie AEM](terminology.md).

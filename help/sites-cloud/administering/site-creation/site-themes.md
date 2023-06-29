@@ -4,7 +4,7 @@ description: Leer hoe AEM sitethema's kunnen worden gebruikt om de stijl en het 
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Sites die zijn gemaakt met AEM sitesjablonen maken het eenvoudig downloaden, aan
 
 >[!NOTE]
 >
->AEM sitethema&#39;s mogen niet worden verward met [AEM sitesjablonen.](site-templates.md) AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. Met AEM sitesjablonen definieert u de sitestructuur en de initiële inhoud. Sjablonen bevatten een AEM sitethema dat het mogelijk maakt [snel websites maken.](create-site.md)
+>AEM sitethema&#39;s mogen niet worden verward met [Sitesjablonen AEM](site-templates.md). AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. Met AEM sitesjablonen definieert u de sitestructuur en de initiële inhoud. Sjablonen bevatten een AEM sitethema dat het mogelijk maakt [snel site maken](create-site.md).
 
 ## Sitethema&#39;s gebruiken {#using-themes}
 
@@ -34,7 +34,7 @@ Sitethema&#39;s worden op twee verschillende manieren gebruikt:
 
 >[!TIP]
 >
->Een end-to-end beschrijving van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in worden gevonden [Reis voor snel maken van site.](/help/journey-sites/quick-site/overview.md)
+>Een end-to-end beschrijving van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in worden gevonden [Reis voor snel maken van site](/help/journey-sites/quick-site/overview.md).
 
 ## Structuur van sitethema {#structure}
 
@@ -53,4 +53,4 @@ Adobe biedt een verwijzingsthema voor tips en trucs dat u kunt gebruiken als bas
 
 Adobe biedt een AEM Site Theme Builder als een set scripts voor het maken van nieuwe sitethema&#39;s.
 
-[De Bouwer van het Thema van de Plaats van de AEM is beschikbaar samen met gebruiksdocumentatie op GitHub.](https://github.com/adobe/aem-site-theme-builder) Voor het aanpassen van het thema is ontwikkelervaring op de voorgrond vereist.
+[De Bouwer van het Thema van de Plaats van de AEM is beschikbaar samen met gebruiksdocumentatie op GitHub](https://github.com/adobe/aem-site-theme-builder). Voor het aanpassen van het thema is ontwikkelervaring op de voorgrond vereist.

@@ -2,9 +2,9 @@
 title: Client-Side bibliotheken gebruiken op AEM as a Cloud Service
 description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientlibs) in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden verzonden
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2556'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ Clientlibs zijn de ingebouwde oplossing voor het leveren van CSS en JavaScript v
 
 >[!TIP]
 >
->Ontwikkelaars aan de voorzijde die CSS en Javascript voor AEM projecten maken, moeten zich ook vertrouwd maken met de [AEM Project Archetype en zijn geautomatiseerd front-end bouwproces.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>Ontwikkelaars aan de voorzijde die CSS en JavaScript voor AEM projecten maken, moeten zich ook vertrouwd maken met de [AEM Project Archetype en zijn geautomatiseerd front-end bouwproces.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
 ## Wat zijn clientbibliotheken? {#what-are-clientlibs}
 
-Voor sites moeten JavaScript en CSS en statische bronnen zoals pictogrammen en weblettertypen op de client worden verwerkt. Een clientlib is AEM mechanisme om (per categorie indien vereist) naar dergelijke middelen te verwijzen en te dienen.
+Voor sites moeten JavaScript- en CSS-bronnen en statische bronnen, zoals pictogrammen en weblettertypen, op de client worden verwerkt. Een clientlib is AEM mechanisme om (per categorie indien vereist) naar dergelijke middelen te verwijzen en te dienen.
 
-AEM verzamelt de CSS en Javascript van de site in één bestand, op een centrale locatie, om ervoor te zorgen dat slechts één kopie van een bron wordt opgenomen in de HTML-uitvoer. Hierdoor wordt de efficiëntie van de levering gemaximaliseerd en kunnen dergelijke bronnen centraal in de opslagplaats worden onderhouden via proxy, zodat de toegang veilig blijft.
+AEM verzamelt de CSS en JavaScript van de site in één bestand, op een centrale locatie, om ervoor te zorgen dat slechts één kopie van een bron wordt opgenomen in de HTML-uitvoer. Hierdoor wordt de efficiëntie van de levering gemaximaliseerd en kunnen dergelijke bronnen centraal in de opslagplaats worden onderhouden via proxy, zodat de toegang veilig blijft.
 
 ## Front-end ontwikkeling voor AEM as a Cloud Service {#fed-for-aemaacs}
 
@@ -170,11 +170,11 @@ De `dumplibs` component omvat een testselecteur die de broncode toont die voor w
 
 ## Extra functies voor clientbibliotheekmappen {#additional-features}
 
-Er zijn een aantal andere functies die in AEM door clientbibliotheekmappen worden ondersteund. Deze zijn echter niet vereist voor AEM as a Cloud Service en daarom wordt het gebruik ervan afgeraden. Ze worden hier ter volledigheid vermeld.
+Er zijn een aantal andere functies die in AEM door clientbibliotheekmappen worden ondersteund. Deze zijn echter niet vereist voor AEM as a Cloud Service en daarom wordt het gebruik ervan afgeraden. Zij worden hier vermeld voor volledigheid.
 
 >[!WARNING]
 >
->Deze extra functies van clientbibliotheekmappen zijn niet vereist voor AEM as a Cloud Service en daarom wordt het gebruik ervan afgeraden. Ze worden hier ter volledigheid vermeld.
+>Deze extra functies van clientbibliotheekmappen zijn niet vereist voor AEM as a Cloud Service en daarom wordt het gebruik ervan afgeraden. Zij worden hier vermeld voor volledigheid.
 
 ### Adobe Granite HTML Library Manager {#html-library-manager}
 
@@ -189,7 +189,7 @@ De extra omslageigenschappen omvatten staan controle van gebiedsdelen en bedden 
 
 ### Koppeling naar afhankelijke instellingen {#linking-to-dependencies}
 
-Wanneer de code in de map met clientbibliotheken verwijst naar andere bibliotheken, identificeert u de andere bibliotheken als afhankelijkheden. De `ui:includeClientLib` -tag die verwijst naar de map met de clientbibliotheek, bevat de HTML-code een koppeling naar het gegenereerde bibliotheekbestand en de afhankelijkheden.
+Wanneer de code in de map met clientbibliotheken verwijst naar andere bibliotheken, identificeert u de andere bibliotheken als afhankelijkheden. De `ui:includeClientLib` -tag die verwijst naar de clientbibliotheekmap, bevat de HTML-code een koppeling naar het gegenereerde bibliotheekbestand en de afhankelijkheden.
 
 De afhankelijkheden moeten een andere `cq:ClientLibraryFolder`. Om gebiedsdelen te identificeren, voeg een bezit aan uw toe `cq:ClientLibraryFolder` knooppunt met de volgende kenmerken:
 

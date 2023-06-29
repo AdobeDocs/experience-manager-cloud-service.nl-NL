@@ -2,9 +2,9 @@
 title: Uw pijplijn instellen
 description: Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Dit deel van de reis is van toepassing op de beheerder van de Manager van de Wol
 * U moet toegang hebben tot Cloud Manager.
 * U moet lid zijn van de **Implementatiebeheer** rol in Cloud Manager.
 * Er moet een git-repo voor de AEM worden ingesteld in Cloud Manager.
-   * Dit is in het algemeen al het geval voor elk actief project. Als dit niet het geval is, raadpleegt u de documentatie van de opslagplaatsen van Cloud Manager die beschikbaar is onder de [Aanvullende bronnen](#additional-resources) sectie.
+   * Dit is in het algemeen al het geval voor elk actief project. Als dit echter niet het geval is, raadpleegt u de documentatie bij opslagplaatsen voor Cloud Manager die beschikbaar is onder de [Aanvullende bronnen](#additional-resources) sectie.
 
 ## Wat is een voorste pijpleiding {#front-end-pipeline}
 
@@ -102,7 +102,7 @@ De nieuwe pijpleiding wordt gecreeerd en zichtbaar in **Pijpleidingen** in het v
 
 >[!TIP]
 >
->Als u reeds met pijpleidingen in AEMaaCS vertrouwd bent en meer over de verschillen tussen de verschillende types pijpleidingen met inbegrip van verdere details over de voorste eindpijpleiding wilt leren, gelieve te verwijzen naar Configure CI/CD Pijpleiding - Cloud Services verbonden in [Aanvullende bronnen](#additional-resources) hieronder.
+>Als u reeds met pijpleidingen in AEMaaCS vertrouwd bent en meer over de verschillen tussen de verschillende types pijpleidingen met inbegrip van verdere details over de voorste eindpijpleiding wilt leren, zie CI/CD Pijpleiding vormen - Cloud Services verbonden in [Aanvullende bronnen](#additional-resources) hieronder.
 
 ## Volgende functies {#what-is-next}
 

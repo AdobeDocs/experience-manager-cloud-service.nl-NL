@@ -2,9 +2,9 @@
 title: Aangepaste foutpagina's
 description: AEM wordt geleverd met een standaardfouthandler voor de afhandeling van HTTP-fouten, die kan worden aangepast.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Wanneer de verzoekverwerking in een uitzondering resulteert, het kader Apache Sl
    * De HTTP-responscode 500
    * De trace van de uitzonderingsstapel
 
-Door [aanpassen van de pagina&#39;s die worden weergegeven door de fouthandler](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` kan worden gemaakt. Het wordt echter alleen gebruikt als `HttpServletResponse.sendError(500)` uitdrukkelijk wordt uitgevoerd; d.w.z. van een uitzonderingscatcher.
+Door [aanpassen van de pagina&#39;s die worden weergegeven door de fouthandler](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` kan worden gemaakt. Het wordt echter alleen gebruikt als `HttpServletResponse.sendError(500)` uitdrukkelijk wordt uitgevoerd; dat wil zeggen, van een uitzonderingsvanger.
 
 Anders is de antwoordcode ingesteld op 500, maar wordt de `500.jsp` script niet uitgevoerd.
 
@@ -77,6 +77,6 @@ Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fou
 >
 >Op een instantie van de auteur [CQ WCM-foutopsporingsfilter](/help/implementing/deploying/configuring-osgi.md) is standaard ingeschakeld. Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
 >
->Voor een aangepaste fout-handler zijn reacties met code 500 nodig - dus de [CQ WCM-foutopsporingsfilter moet worden uitgeschakeld.](/help/implementing/deploying/configuring-osgi.md) Dit zorgt ervoor dat reactiecode 500 is teruggekeerd, die beurtelings de correcte fout-manager van het Sling teweegbrengt.
+>Voor een aangepaste fout-handler zijn reacties met code 500 nodig - dus de [CQ WCM-foutopsporingsfilter moet worden uitgeschakeld](/help/implementing/deploying/configuring-osgi.md). Dit zorgt ervoor dat reactiecode 500 is teruggekeerd, die beurtelings de correcte fout-manager van het Sling teweegbrengt.
 >
 >Voor een publicatie-instantie is CQ WCM Debug Filter **altijd** uitgeschakeld (zelfs als geconfigureerd als ingeschakeld).

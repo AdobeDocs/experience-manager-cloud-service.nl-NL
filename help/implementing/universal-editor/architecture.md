@@ -2,9 +2,9 @@
 title: Architectuur van Universal Editor
 description: Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -28,16 +28,16 @@ Dit document schetst elk van deze bouwstenen en hoe zij gegevens uitwisselen.
 
 >[!TIP]
 >
->Als u de Universal Editor en de bijbehorende architectuur in actie wilt zien, raadpleegt u het document [Aan de slag met de Universal Editor in AEM](getting-started.md) om te leren hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
+>Zie voor informatie over de Universal Editor en de bijbehorende architectuur [Aan de slag met de Universal Editor in AEM](getting-started.md) om te leren hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 
 ### Editors {#editors}
 
-* **Universele editor** - De Universal Editor gebruikt een van instrumenten voorzien DOM om het op locatie bewerken van inhoud toe te staan. Zie het document [Kenmerken en typen](attributes-types.md) voor meer informatie over de vereiste metagegevens. Zie het document [Aan de slag met de Universal Editor in AEM](getting-started.md) voor een voorbeeld van de instrumenten in AEM.
+* **Universele editor** - De Universal Editor gebruikt een van instrumenten voorzien DOM om het op locatie bewerken van inhoud toe te staan. Zie [Kenmerken en typen](attributes-types.md) voor meer informatie over de vereiste metagegevens. Zie het document [Aan de slag met de Universal Editor in AEM](getting-started.md) voor een voorbeeld van de instrumenten in AEM.
 * **Eigenschappenspoorlijn** - Sommige eigenschappen van componenten kunnen niet in de context worden bewerkt, bijvoorbeeld de rotatietijd van een carrousel of het accordeontabblad moet altijd worden geopend of gesloten. Om het bewerken van dergelijke componentgegevens mogelijk te maken, wordt een formuliereditor geleverd in de zijspoor van de editor.
 
 ### Externe app {#remote-app}
 
-Als u een app in de context bewerkbaar wilt maken in de Universal Editor, moet het DOM van instrumenten zijn voorzien. De externe toepassing moet bepaalde kenmerken in het DOM renderen. Zie het document [Kenmerken en typen](attributes-types.md) voor meer informatie over de vereiste metagegevens. Zie het document [Aan de slag met de Universal Editor in AEM](getting-started.md) voor een voorbeeld van de instrumenten in AEM.
+Als u een app in de context bewerkbaar wilt maken in de Universal Editor, moet het DOM van instrumenten zijn voorzien. De externe toepassing moet bepaalde kenmerken in het DOM renderen. Zie [Kenmerken en typen](attributes-types.md) voor meer informatie over de vereiste metagegevens. Zie het document [Aan de slag met de Universal Editor in AEM](getting-started.md) voor een voorbeeld van de instrumenten in AEM.
 
 De Universal Editor streeft naar een minimale SDK, zodat de instrumentatie de verantwoordelijkheid is van de implementatie van de externe app.
 

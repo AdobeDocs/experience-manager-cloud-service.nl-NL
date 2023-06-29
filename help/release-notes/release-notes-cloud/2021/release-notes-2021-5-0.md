@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ De volgende release is gepland voor 3 juni 2021.
 
 ### Wat is er nieuw? {#what-is-new-may}
 
-* De PackageOverlaps kwaliteitsregel ontdekt nu gevallen waar het zelfde pakket veelvoudige tijden, d.w.z. in veelvoudige ingebedde plaatsen, in de zelfde opgestelde pakketreeks werd opgesteld.
+* De PackageOverlaps kwaliteitsregel ontdekt nu gevallen waar het zelfde pakket veelvoudige tijden, dat wil zeggen, in veelvoudige ingebedde plaatsen, in de zelfde opgestelde pakketreeks werd opgesteld.
 
 * Het eindpunt van de repository in de Public API bevat nu de Git URL.
 
@@ -146,7 +146,7 @@ De releasedatum voor Content Transfer Tool v1.4.6 is 27 mei 2021.
 
 ### Wat is er nieuw? {#what-is-new-ctt-latest}
 
-* De nieuwe logboekverklaring werd toegevoegd aan het foutenlogboek van QuickStart, als de gebruiker geen toestemming op uitvoerbaar Java heeft.
+* Er is een nieuwe logboekinstructie toegevoegd aan het foutenlogboek van de quickstart als de gebruiker geen machtigingen heeft voor het uitvoerbare bestand van Java.
 
 * Wanneer een gebruiker een migratieset verwijdert uit de CTT-gebruikersinterface, waar een extractie is uitgevoerd, wordt `tmp` de map die aan die migratieset is gekoppeld, wordt verwijderd om ruimte te besparen.
 

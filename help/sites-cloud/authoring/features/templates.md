@@ -2,9 +2,9 @@
 title: Paginasjablonen maken
 description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4579'
+source-wordcount: '4577'
 ht-degree: 9%
 
 ---
@@ -266,7 +266,7 @@ Wanneer een component is ontgrendeld, kunt u de [initiële inhoud](#editing-a-te
 
 >[!NOTE]
 >
->In **Oorspronkelijke inhoud** zowel in de modus als op de resulterende pagina&#39;s kunnen alle ontgrendelde onderdelen die een toegankelijk bovenliggend element hebben (d.w.z. onderdelen in een lay-outcontainer) worden verwijderd.
+>In **Oorspronkelijke inhoud** in de modus en op de resulterende pagina&#39;s kunnen alle ontgrendelde onderdelen met een toegankelijk bovenliggend element (dat wil zeggen onderdelen in een lay-outcontainer) worden verwijderd.
 
 #### Layout {#template-layout}
 

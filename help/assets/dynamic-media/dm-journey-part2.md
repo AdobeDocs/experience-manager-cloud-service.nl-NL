@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2845'
+source-wordcount: '2842'
 ht-degree: 0%
 
 ---
@@ -141,7 +141,7 @@ Als u nogmaals kijkt naar de onderstaande afbeelding, ziet u dat er een `Cart` v
 ![Statische en dynamische voorinstellingen voor afbeeldingen](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _Statische en dynamische voorinstellingen voor afbeeldingen. De gecontroleerde afbeelding is gerenderd met de `PDP-page` voorinstelling afbeelding._
 
-Maar wat als u een beeld op uw website moet veranderen? Stel dat u een aantal tests hebt uitgevoerd en dat de afbeelding van 120 x 120 (de `Cart` (voorinstelling afbeelding) wordt niet zo goed ontvangen als u had gedacht. U moet de afbeelding groter maken door de breedte te verhogen tot 175 pixels en de hoogte te verhogen tot 175 pixels. Traditioneel zou je naar Adobe Photoshop moeten gaan om al die kartonafbeeldingen opnieuw te maken. Maar in Dynamic Media bewerkt u gewoon de voorinstelling van de afbeelding door de waarden voor Breedte en Hoogte bij te werken naar 175 en de voorinstelling op te slaan, zoals in het onderstaande voorbeeld wordt getoond.
+Maar wat als u een beeld op uw website moet veranderen? Stel dat u een aantal tests hebt uitgevoerd en dat de afbeelding van 120 x 120 (de `Cart` (voorinstelling afbeelding) niet ontvangen zoals u dacht. U moet de afbeelding groter maken door de breedte te verhogen tot 175 pixels en de hoogte te verhogen tot 175 pixels. Traditioneel zou je naar Adobe Photoshop moeten gaan om al die kartonafbeeldingen opnieuw te maken. Maar in Dynamic Media bewerkt u gewoon de voorinstelling van de afbeelding door de waarden voor Breedte en Hoogte bij te werken naar 175 en de voorinstelling op te slaan, zoals in het onderstaande voorbeeld wordt getoond.
 
 ![Een voorinstelling voor afbeeldingen bewerken](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _De breedte en hoogte van het dialoogvenster `Cart` voorinstelling afbeelding._
@@ -193,7 +193,7 @@ Met de enkele URL kunt u de afbeeldingsset en de viewer gebruiken waar u deze no
 
 De Flyout-viewer is een standaardviewer zonder vak waarvan u de eigenschappen kunt bewerken. U kunt ook, net als bij het maken van een voorinstelling voor afbeeldingen, uw eigen aangepaste viewer maken.
 
-Vermeend dat uw verkoop- en marketingteam de Flyout-viewer niet leuk vindt. Ze houden van de zoomfunctie, maar ze willen dat klanten het zoomeffect direct boven de schoenen zien. In dat geval past u gewoon de InlineZoom-viewer toe op de afbeeldingsset en kopieert en plakt u de URL in uw browser om te zien hoe deze zich gedraagt. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
+Vermeend dat uw verkoop- en marketingteam de Flyout-viewer niet bevalt. Ze houden van de zoomfunctie, maar ze willen dat klanten het zoomeffect direct boven de schoenen zien. In dat geval past u gewoon de InlineZoom-viewer toe op de afbeeldingsset en kopieert en plakt u de URL in uw browser om te zien hoe deze zich gedraagt. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
 
 Wanneer u de muisaanwijzer over de schoen beweegt, zoomt u in op die afbeelding en ziet u meer details wanneer u de aanwijzer verplaatst. En de reden daarvoor is gewoon de grootte van de afbeelding die aanvankelijk in Dynamic Media werd geüpload.
 
@@ -208,7 +208,7 @@ U leest alleen over afbeeldingssets en viewers. Laten we naar een paar andere ki
 
 ## Optioneel - Meer informatie
 
-Als je meer wilt weten over wat je net leest, gebruik dan de onderstaande materialen om meer in detail concepten te verkennen. Anders is de Dynamic Media-reis voltooid!
+Als u meer wilt weten over wat u zojuist leest, gebruikt u de onderstaande materialen om concepten in detail te verkennen. Anders is de Dynamic Media-reis voltooid!
 
 _Dynamic Media Help-onderwerpen_
 

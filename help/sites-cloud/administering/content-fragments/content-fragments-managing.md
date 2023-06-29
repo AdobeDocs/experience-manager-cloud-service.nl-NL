@@ -4,9 +4,9 @@ description: Leer hoe te om de console van Fragmenten van de Inhoud te gebruiken
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2054'
 ht-degree: 0%
 
 ---
@@ -196,11 +196,11 @@ De editor heeft verschillende opties:
   >
   >Naast het eenvoudig opslaan van uw wijzigingen, werken de acties ook verwijzingen bij en zorgen ervoor dat de Dispatcher wordt leeggemaakt zoals vereist. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
   >
-  >Houd hier rekening mee wanneer u **Opslaan en sluiten** en voert u vervolgens snel de fragmenteditor opnieuw in om verdere wijzigingen aan te brengen en op te slaan.
+  >Houd rekening met deze procestijd wanneer u **Opslaan en sluiten** en voer vervolgens snel de fragmenteditor opnieuw in om verdere wijzigingen aan te brengen en op te slaan.
 
 * **Sluiten**
 
-  Sluit de editor af zonder de laatste wijzigingen op te slaan (dat wil zeggen sinds de laatste **Opslaan**).
+  Sluit de editor af zonder de laatste wijzigingen op te slaan (dat wil zeggen, die zijn aangebracht sinds de laatste **Opslaan**).
 
 AEM tijdens het bewerken van het inhoudsfragment automatisch versies maken om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u de wijzigingen annuleert (met **Sluiten** zonder opslaan):
 
@@ -231,7 +231,7 @@ Nadat u de Master inhoud hebt gemaakt, kunt u [Variaties](/help/sites-cloud/admi
 
 ## Inhoud koppelen aan uw fragment {#associating-content-with-your-fragment}
 
-U kunt ook [gekoppelde inhoud](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) met een fragment. Dit biedt een verbinding zodat elementen (d.w.z. afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
+U kunt ook [gekoppelde inhoud](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) met een fragment. Dit biedt een verbinding zodat elementen (dat wil zeggen afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
 
 ## De metagegevens (eigenschappen) van het fragment weergeven en bewerken {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -251,7 +251,7 @@ U kunt inhoudsfragmenten publiceren naar:
 
   >[!NOTE]
   >
-  Voor meer informatie over de Voorvertoningsomgevingen raadpleegt u:
+  Raadpleeg de volgende secties voor meer informatie over de voorvertoningsomgevingen:
   >
   * [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [OSGi-instellingen configureren voor de voorbeeldreeks](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)

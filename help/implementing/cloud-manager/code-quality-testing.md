@@ -2,9 +2,9 @@
 title: Testen van de codekwaliteit
 description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1159'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de k
 
 Bij het testen van de codekwaliteit wordt uw toepassingscode geëvalueerd op basis van een set kwaliteitsregels. Het is het primaire doel van een code-kwaliteit slechts pijpleiding en wordt uitgevoerd onmiddellijk na de bouwstap in alle productie en niet-productiepijpleidingen.
 
-Het document raadplegen [Het vormen van Uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie over verschillende soorten pijpleidingen.
+Zie [Het vormen van Uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie over verschillende soorten pijpleidingen.
 
 ## Codekwaliteitsregels {#understanding-code-quality-rules}
 
@@ -30,7 +30,7 @@ Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan b
 
 >[!NOTE]
 >
->U kunt de volledige lijst met regels downloaden [met deze koppeling.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>U kunt de volledige lijst met regels downloaden [met deze koppeling](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 ### Waarderingen met drie lagen {#three-tiered-gate}
 
@@ -69,7 +69,7 @@ De volgende tabel geeft een overzicht van de classificaties en foutdrempels voor
 
 >[!NOTE]
 >
->Meer informatie over de kwaliteitsregels van de aangepaste code die worden uitgevoerd door [!UICONTROL Cloud Manager], gelieve het document te raadplegen [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>Meer informatie over de kwaliteitsregels voor aangepaste code die worden uitgevoerd door [!UICONTROL Cloud Manager], zie [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Werken met valse positieven {#dealing-with-false-positives}
 
@@ -103,10 +103,10 @@ Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 
 >[!NOTE]
 >
->Het is weliswaar de beste praktijk om `@SuppressWarnings` annotatie zo specifiek mogelijk, d.w.z. alleen de specifieke instructie of het blok dat de uitgave veroorzaakt, annoteren op klasseniveau mogelijk maken.
+>Het is weliswaar de beste praktijk om `@SuppressWarnings` annotatie die zo specifiek mogelijk is, dat wil zeggen dat alleen de specifieke instructie of het specifieke blok dat de uitgave veroorzaakt, kan worden geannoteerd op klasseniveau.
 
 >[!NOTE]
->Terwijl er geen expliciete veiligheidsteststap is, zijn er veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Het document raadplegen [Beveiligingsoverzicht voor AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) voor meer informatie over beveiliging in Cloud Service.
+>Terwijl er geen expliciete veiligheidsteststap is, zijn er veiligheid-verwante code kwaliteitsregels die tijdens de stap van de codekwaliteit worden geëvalueerd. Zie [Beveiligingsoverzicht voor AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) voor meer informatie over beveiliging in Cloud Service.
 
 ## Optimalisatie van inhoudspakketscannen {#content-package-scanning-optimization}
 
@@ -120,7 +120,7 @@ Als de enige items binnen `myco-all-1.0.0-SNAPSHOT.zip` zijn de twee overgeslage
 
 Voor projecten die tientallen ingebedde pakketten produceren, is deze optimalisering getoond om naar boven van 10 minuten per pijpleidingsuitvoering te besparen.
 
-Een speciaal geval kan voorkomen wanneer het &quot;alle&quot;inhoudspakket een combinatie overgeslagen inhoudspakketten en bundels OSGi bevat. Als `myco-all-1.0.0-SNAPSHOT.zip` bevat de twee ingesloten pakketten die eerder werden vermeld evenals een of meer OSGi-bundels, dan wordt een nieuw, minimaal inhoudspakket samengesteld met alleen de OSGi-bundels. Dit pakket krijgt altijd een naam `cloudmanager-synthetic-jar-package` en de opgenomen bundels worden in `/apps/cloudmanager-synthetic-installer/install`.
+Een speciaal geval kan voorkomen wanneer het &quot;alle&quot;inhoudspakket een combinatie overgeslagen inhoudspakketten en bundels OSGi bevat. Als `myco-all-1.0.0-SNAPSHOT.zip` bevat de twee eerder vermelde ingesloten pakketten en een of meer OSGi-bundels, dan wordt een nieuw, minimaal inhoudspakket samengesteld met alleen de OSGi-bundels. Dit pakket krijgt altijd een naam `cloudmanager-synthetic-jar-package` en de opgenomen bundels worden in `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >

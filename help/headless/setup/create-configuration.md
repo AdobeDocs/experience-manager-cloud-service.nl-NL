@@ -2,7 +2,7 @@
 title: Een configuratie maken - installatie zonder kop
 description: Creeer een configuratie als eerste stap aan het worden begonnen met hoofdloos in AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
 1. Een **Titel** en **Naam** voor uw configuratie.
    * De **Titel** moeten beschrijvend zijn.
    * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
-      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies](/help/implementing/developing/introduction/naming-conventions.md).
       * Deze kan zo nodig worden aangepast.
 1. Controleer de volgende opties:
    * **Modellen van contentfragmenten**
@@ -51,4 +51,4 @@ Met deze configuratie kunt u nu naar het tweede deel van de gids Aan de slag gaa
 
 >[!TIP]
 >
->Voor volledige details over Browser van de Configuratie, [zie de Browser van de Configuratie documentatie.](/help/implementing/developing/introduction/configurations.md)
+>Voor volledige details over Browser van de Configuratie, [zie de Browser van de Configuratie documentatie](/help/implementing/developing/introduction/configurations.md).

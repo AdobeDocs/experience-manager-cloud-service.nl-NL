@@ -2,9 +2,9 @@
 title: Experience Audit Testing
 description: Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ Experience Audit wordt aangedreven door Google Lighthouse, een opensource tool v
 
 >[!TIP]
 >
->U vormt welke pagina&#39;s inbegrepen in de Controle van de Ervaring wanneer u [zet uw pijpleiding op.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>U vormt welke pagina&#39;s inbegrepen in de Controle van de Ervaring wanneer u [de pijpleiding instellen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## Werken met de resultaten van Experience Audit {#understanding-experience-audit-results}
 
-De Audit van de ervaring verstrekt geaggregeerde en gedetailleerde testresultaten op paginaniveau via [pagina voor de uitvoering van de productiepijplijn.](/help/implementing/cloud-manager/deploy-code.md)
+De Audit van de ervaring verstrekt geaggregeerde en gedetailleerde testresultaten op paginaniveau via [uitvoeringspagina van productiepijplijn](/help/implementing/cloud-manager/deploy-code.md).
 
 * Met statistische gegevens worden de gemiddelde scores op de pagina&#39;s gemeten die zijn gecontroleerd op prestaties, toegankelijkheid, aanbevolen procedures, SEO (Search Engine Optimization).
 * Afzonderlijke scores op paginaniveau zijn ook beschikbaar via de neerwaartse boor.
@@ -68,6 +68,6 @@ De metrische wijziging kan een van de volgende waarden hebben.
 
 Door in een van de tests te boren, is meer gedetailleerde paginaniveau-scoring beschikbaar. U kunt zien hoe de individuele pagina&#39;s voor de specifieke test samen met de verandering van de vorige testlooppas werden gescoord.
 
-Klik op de details van een afzonderlijke pagina om informatie te geven over de elementen van de pagina die zijn geëvalueerd, en om problemen op te lossen als er mogelijkheden voor verbetering worden gevonden.
+Als u op de details van een afzonderlijke pagina klikt, krijgt u informatie over de elementen van de pagina die zijn geëvalueerd en kunt u aangeven wat de problemen zijn als er mogelijkheden voor verbetering zijn gevonden.
 
 ![Scores op paginaniveau](/help/implementing/cloud-manager/assets/exp-audit-2.png)

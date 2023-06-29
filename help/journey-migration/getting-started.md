@@ -2,9 +2,9 @@
 title: Aan de slag met de migratiereis om as a Cloud Service te AEM
 description: De migratiejourney starten door u vertrouwd te maken met de basis van de overgang naar AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ In dit gedeelte van de AEM as a Cloud Service Migratiereis leert u over de basis
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen waarom u een inheemse wolkenversie van AEM, evenals de verschillende fasen van migratie aan AEM as a Cloud Service zou moeten gebruiken. Na het lezen moet u:
+Dit document helpt u begrijpen waarom u een inheemse wolkenversie van AEM, en de verschillende fasen van het migreren aan AEM as a Cloud Service zou moeten gebruiken. Na het lezen moet u:
 
 * Begrijp de voordelen van het bewegen AEM as a Cloud Service
 * Verken uzelf met de algemene stappen die u moet uitvoeren om over te stappen naar de cloud

@@ -4,9 +4,9 @@ description: Integreren met Adobe Analytics
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '558'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ De velden in het configuratievenster zijn als volgt:
 
 ### Adobe Analytics met IMS-verificatie {#configuration-parameters-ims}
 
-Een IMS-configuratie is vereist om Adobe Analytics op de juiste manier te integreren met AEM as a Cloud Service. Deze configuratie moet worden gemaakt, dus raadpleeg deze [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) om te leren hoe te om de configuratie van Analytics IMS tot stand te brengen.
+Een IMS-configuratie is vereist om Adobe Analytics op de juiste manier te integreren met AEM as a Cloud Service. Deze configuratie moet worden gecreeerd zodat zie [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) om te leren hoe te om de configuratie van Analytics IMS tot stand te brengen.
 
 ### Een configuratie toevoegen aan een site {#add-configuration}
 

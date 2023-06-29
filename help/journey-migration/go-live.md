@@ -2,9 +2,9 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ In de vorige fasen van de reis:
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen hoe u de migratie naar AEM as a Cloud Service kunt uitvoeren zodra u bekend bent met de vorige stappen van de reis. U leert hoe u de initiële migratie van productie kunt uitvoeren, evenals de aanbevolen werkwijzen die u kunt volgen bij het migreren naar AEM as a Cloud Service.
+Dit document helpt u begrijpen hoe te om de migratie uit te voeren aan AEM as a Cloud Service zodra u met de vorige stappen van de reis vertrouwd bent. U leert hoe u de initiële migratie van productie uitvoert en de beste werkwijzen die u kunt volgen wanneer u naar AEM as a Cloud Service migreert.
 
 ## Oorspronkelijke productiemigratie {#initial-migration}
 
-Voordat u de migratie van de productie kunt uitvoeren, volgt u de stappen voor de installatie en het bewijs van migratie die in het dialoogvenster [Strategie en tijdlijn voor migratie van inhoud](/help/journey-migration/implementation.md##strategy-timeline) van de [Implementatiefase](/help/journey-migration/implementation.md).
+Voordat u de migratie van de productie kunt uitvoeren, volgt u de stappen voor de implementatie en het bewijs van migratie die in het dialoogvenster [Strategie en tijdlijn voor migratie van inhoud](/help/journey-migration/implementation.md##strategy-timeline) van de [Implementatiefase](/help/journey-migration/implementation.md).
 
 * De migratie vanuit de productie starten op basis van de ervaring die u hebt opgedaan tijdens de migratie van het AEM as a Cloud Service stadium die op klonen is uitgevoerd:
    * Auteur
@@ -120,7 +120,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepe
    * [Aangepaste functionele tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
 * Inhoud migreren naar productie en ervoor zorgen dat een relevante subset beschikbaar is voor testdoeleinden.
-   * Houd er rekening mee dat de beste praktijken van DevOps voor AEM impliceren dat de code zich van ontwikkeling aan het productiemilieu beweegt terwijl de inhoud zich van productiemilieu&#39;s beweegt.
+   * De beste praktijken van DevOps voor AEM impliceren dat de code zich omhoog van ontwikkeling aan het productiemilieu beweegt terwijl de inhoud zich van productiemilieu&#39;s beweegt.
 * Plan een code- en inhoudstijdsperiode.
    * Zie ook de sectie [Tijdlijnen voor code en inhoud vastzetten voor migratie](#code-content-freeze)
 * Voer de laatste top-up van de inhoud uit.

@@ -2,7 +2,7 @@
 title: Implementatiefase
 description: Zorg ervoor dat uw code en inhoud klaar zijn voor de migratie naar de cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 8%
@@ -15,7 +15,7 @@ In de implementatiefase van de reis, zult u de hulpmiddelen onderzoeken waardoor
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In de vorige delen van de reis heb je doorgemaakt [kennis krijgen van de veranderingen in AEM as a Cloud Service](/help/journey-migration/getting-started.md)en om te bepalen of uw implementatie klaar is om met de [gereedheidsfase](/help/journey-migration/readiness.md).
+In de vorige delen van de reis hebt u [kennis krijgen van de veranderingen in AEM as a Cloud Service](/help/journey-migration/getting-started.md)en bepaalt of uw implementatie klaar is om met de [gereedheidsfase](/help/journey-migration/readiness.md).
 
 Dit artikel gaat verder met advies over het gebruik van de door Adobe verschafte gereedschappen om ervoor te zorgen dat uw code en inhoud klaar zijn om naar de cloud te worden verplaatst.
 
@@ -256,4 +256,4 @@ In de volgende sectie worden de belangrijke stappen en bijbehorende taken weerge
 
 ## Volgende functies {#what-is-next}
 
-Zodra u volledig hebt begrepen hoe te om te beoordelen of uw AEM installatie klaar is om aan de wolk te worden verplaatst, aangezien wij leren hoe te om de hulpmiddelen te gebruiken nodig om het klaar te maken, is het tijd om zich op aan te zetten [introductiefase](/help/journey-migration/go-live.md).
+Nadat u volledig hebt begrepen hoe te om te beoordelen of uw AEM installatie klaar is om aan de wolk te worden bewogen, aangezien wij leren hoe te om de hulpmiddelen te gebruiken nodig om het klaar te maken, is het tijd om zich op aan te zetten [introductiefase](/help/journey-migration/go-live.md).

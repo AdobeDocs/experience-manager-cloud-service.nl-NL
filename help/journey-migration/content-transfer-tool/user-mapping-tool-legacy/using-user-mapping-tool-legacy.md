@@ -4,9 +4,9 @@ description: Gebruikerstoewijzing gebruiken (verouderd)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '829'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Voer de onderstaande stappen uit om dit in te stellen:
 
 ## De gebruikersinterface openen voor het Hulpmiddel van de Toewijzing van de Gebruiker {#user-interface}
 
-Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmiddel van de Overdracht van de Inhoud. U kunt het gereedschap Inhoud overbrengen downloaden van [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Raadpleeg voor meer informatie over de meest recente versie de [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md).
+Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmiddel van de Overdracht van de Inhoud. U kunt het gereedschap Inhoud overbrengen downloaden van [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Ga voor meer informatie over de nieuwste versie naar [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Selecteer de Adobe Experience Manager en navigeer naar de gereedschappen -> **Bewerkingen** -> **Inhoud migreren**.
 

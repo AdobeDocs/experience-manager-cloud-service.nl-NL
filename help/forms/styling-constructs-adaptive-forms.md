@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2310'
 ht-degree: 0%
 
 ---
@@ -202,7 +202,7 @@ Afhankelijk van het type, bevatten widgets ook klassen. Vaak bevatten widgets de
   </tr>
   <tr>
    <td><p><code>widgets-bg-color</code></p> </td>
-   <td>Achtergrondkleur voor widgets (werkt niet voor selectievakje en keuzerondje)</td>
+   <td>Achtergrondkleur voor widgets (werkt niet voor selectievakjes en keuzerondjes)</td>
   </tr>
   <tr>
    <td><p><code>widgets-border-color</code></p> </td>
@@ -702,7 +702,7 @@ Bovendien zijn er klassen om tabnavigators (zowel links als boven) op te maken o
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
-   <td><p>Tabnavigatoren (links en boven) zonder geneste/onderliggende/subnavigators</p> </td>
+   <td><p>Tabnavigators (links en boven) die geen geneste/onderliggende/subnavigators hebben</p> </td>
   </tr>
  </tbody>
 </table>
@@ -941,7 +941,7 @@ Een deelvenster bevat een optionele werkbalk en de bijbehorende inhoud.
  </tbody>
 </table>
 
-Het knooppunt van het deelvenster is onderverdeeld in navigators en inhoud. Daar `` `` is geen afzonderlijke stijlcomponent voor de inhoud. De beschreven variabelen worden zowel op de navigator als op de inhoud toegepast.
+Het knooppunt van het deelvenster is onderverdeeld in navigators en inhoud. Daar `` `` is geen afzonderlijke stijlcomponent voor de inhoud. De beschreven variabelen worden toegepast op de navigator en de inhoud.
 
 Het bovenste deelvenster (RootPanel) heeft deze klasse niet.
 

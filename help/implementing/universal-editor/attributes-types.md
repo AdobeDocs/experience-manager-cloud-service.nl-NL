@@ -2,9 +2,9 @@
 title: Kenmerken en typen
 description: Leer over de gegevensattributen en de types die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '662'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 |---|---|
 | `itemid` | URL aan het middel, zie de sectie [Instrueer de Pagina van het document die Begonnen met de Universele Redacteur in AEM worden](getting-started.md#instrument-thepage) |
 | `itemprop` | Kenmerk van de bron, zie de sectie [Instrueer de Pagina van het document die Begonnen met de Universele Redacteur in AEM worden](getting-started.md#instrument-thepage) |
-| `itemtype` | Type van het bewerkbare item (bijv. tekst, afbeelding, referentie enz.) |
+| `itemtype` | Type van het bewerkbare item (bijvoorbeeld tekst, afbeelding en verwijzing) |
 | `data-editor-itemfilter` | Definieert welke verwijzingen kunnen worden gebruikt |
 | `data-editor-itemlabel` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven <br>In geval van `itemmodel` is ingesteld, wordt het label opgehaald via het model |
 | `data-editor-itemmodel` | Definieert een model dat wordt gebruikt voor bewerkingen op basis van formulieren in de rail Eigenschappen |
@@ -41,7 +41,7 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 | `richtext` | Tekst kan worden bewerkt met volledige tekstopties. RTE wordt weergegeven in het rechterdeelvenster | Optioneel | Vereist | n.v.t. | Optioneel | n.v.t. | Optioneel |
 | `media` | Het bewerkbare element is een element, bijvoorbeeld een afbeelding of video | Optioneel | Vereist | Optioneel<br>lijst met afbeeldings- of videofiltercriteria die worden doorgegeven aan de elementenkiezer | Optioneel | n.v.t. | Optioneel |
 | `container` | Het bewerkbare gedrag gedraagt zich als container voor componenten o.a. het Systeem van de Paragraaf. | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>een lijst met toegestane componenten | Optioneel | n.v.t. | n.v.t. |
-| `component` | Het bewerkbare item is een component. Toevoegt geen extra functionaliteit, is vereist om beweegbare/delfbare delen van het DOM en voor het openen van het vastgoed per spoor en zijn gebieden aan te geven | Vereist | n.v.t. | n.v.t. | Optioneel | Optioneel | n.v.t. |
+| `component` | Het bewerkbare item is een component. Toevoegt geen extra functionaliteit, is vereist om beweegbare/verhandelbare delen van het DOM en voor het openen van de spoorstaaf en zijn velden aan te geven | Vereist | n.v.t. | n.v.t. | Optioneel | Optioneel | n.v.t. |
 | `reference` | Het bewerkbare item is een verwijzing, bijvoorbeeld een inhoudsfragment, een ervaringsfragment of een product | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>lijst met filtercriteria voor Content Fragment, Product of Experience Fragment die worden doorgegeven aan de referentiekiezer | Optioneel | Optioneel | n.v.t. |
 
 Afhankelijk van het gebruiksgeval `itemprop` of `itemid` al dan niet verplicht zijn. Bijvoorbeeld:

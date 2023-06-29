@@ -4,9 +4,9 @@ description: Leer de grondbeginselen van AE; pakketbeheer met Package Manager.
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3780'
+source-wordcount: '3775'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Inhoudspakketten die voor AEM as a Cloud Service toepassingen worden gemaakt, mo
 
 >[!NOTE]
 >
->Pakketten kunnen alleen inhoud bevatten. Willekeurige functionaliteit (bijvoorbeeld inhoud die is opgeslagen onder `/apps`) moet [geïmplementeerd via uw CI/CD-pijplijn in Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
+>Pakketten kunnen alleen inhoud bevatten. Willekeurige functionaliteit (bijvoorbeeld inhoud die is opgeslagen onder `/apps`) moet [geïmplementeerd via uw CI/CD-pijpleiding in Cloud Manager](/help/implementing/cloud-manager/deploy-code.md).
 
 >[!IMPORTANT]
 >
@@ -43,7 +43,7 @@ Inhoudspakketten die voor AEM as a Cloud Service toepassingen worden gemaakt, mo
 >
 >Probeer de installatie niet opnieuw als er een dergelijke fout optreedt. De installatie verloopt op de juiste wijze op de achtergrond. Als u de installatie opnieuw start, kunnen er conflicten optreden tijdens meerdere importprocessen tegelijk.
 
-Voor meer informatie over het beheren van pakketten voor AEMaaCS raadpleegt u het document [Distribueren naar AEM as a Cloud Service](/help/implementing/deploying/overview.md) in de het opstellen gebruikershandleiding.
+Ga voor meer informatie over het beheren van pakketten voor AEMaaCS naar [Distribueren naar AEM as a Cloud Service](/help/implementing/deploying/overview.md) in de het opstellen gebruikershandleiding.
 
 ## Pakketgrootte {#package-size}
 
@@ -57,7 +57,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 Aangezien het netwerkverkeer variabel is en altijd kleiner is dan de geadverteerde maximale theoretische waarde, kunt u proberen een online testtool voor de snelheid van internetverbinding te gebruiken.
 
-Internetsnelheden zijn bijna altijd verschillend voor uploads en downloads. Ervan uitgaande dat u pakketten moet uploaden en downloaden, moet u de lagere waarde (doorgaans uploadsnelheid) gebruiken in uw berekening.
+Internetsnelheden zijn bijna altijd verschillend voor uploads en downloads. Ervan uitgaande dat u pakketten moet uploaden en downloaden, moet u de lagere waarde (gewoonlijk uploadsnelheid) gebruiken in uw berekening.
 
 ### Voorbeeld {#example}
 
@@ -194,8 +194,8 @@ Wanneer u filters maakt, kunt u een pad definiëren of een reguliere expressie g
 
 | Type regel | Beschrijving |
 |---|---|
-| include | Als u een map opneemt, worden die map en alle bestanden en mappen in die map (dus de volledige substructuur) opgenomen, maar **niet** andere bestanden of mappen vanuit het opgegeven hoofdpad opnemen. |
-| uitsluiten | Als u een map uitsluit, worden die map en alle bestanden en mappen in die map (dus de volledige substructuur) uitgesloten. |
+| include | Als u een map opneemt, worden die map en alle bestanden en mappen in die map (dat wil zeggen de volledige substructuur) opgenomen, maar **niet** andere bestanden of mappen vanuit het opgegeven hoofdpad opnemen. |
+| uitsluiten | Als u een map uitsluit, worden die map en alle bestanden en mappen in die map (dat wil zeggen de volledige substructuur) uitgesloten. |
 
 Pakketfilters worden meestal gedefinieerd wanneer u het eerst [Maak het pakket.](#creating-a-new-package) U kunt ze echter ook later bewerken, waarna het pakket opnieuw moet worden samengesteld om de inhoud bij te werken op basis van de nieuwe filterdefinities.
 

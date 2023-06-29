@@ -3,7 +3,7 @@ title: Ondersteuning voor miniaturen voor video's in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u ondersteuning voor miniaturen voor video's in as a Cloud Service schermen toevoegt.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f5af37bf39ecd5a964a8c94a731111c561c2934e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -43,25 +43,25 @@ Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 1. Selecteer het kanaal. Klik op de actiebalk op **Bewerken** om de editor te openen.
 
 
-   ![Bewerk de knop op de actiebalk.](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![De knop Bewerken op de actiebalk](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
 
 1. Voeg of geef een bestaande videocomponent, zoals aangetoond in hieronder figuur toe uit.
 
-   ![Gemarkeerde afbeelding van een video-element.](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Gemarkeerde afbeelding van een video-element](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
 
 1. Voeg of geef een bestaande videocomponent, zoals aangetoond in hieronder figuur toe uit.
 
 1. Selecteer de video en klik op Configure (*moersleutel*) om de video-eigenschappen te openen.
 
-   ![Afbeelding van geselecteerd video-element met pijl die wijst naar het pictogram Configureren, weergegeven als een moersleutel. op de werkbalk.](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![Afbeelding van geselecteerd video-element met pijl die wijst naar het pictogram Configureren, weergegeven als een moersleutel. op de werkbalk](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
 1. De **Video** wordt geopend waar u de **Miniatuur** dropzone.
 
-   ![Het dialoogvenster Video waarin de afbeelding van het video-element en het dialoogvenster Miniatuur worden weergegeven.](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![Het dialoogvenster Video waarin de afbeelding van het video-element en het dialoogvenster Miniatuur worden weergegeven](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
 1. Sleep een afbeelding van de elementkiezer naar de **Miniatuur** zone neerzetten en klikken **Gereed**.
 
-   ![De afbeeldingskiezer van het element die achter het dialoogvenster Video wordt weergegeven, toont de afbeeldingselementen in het vervolgkeuzemenu Miniatuur.](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+   ![De afbeeldingskiezer van het element die achter het dialoogvenster Video wordt weergegeven met het afbeeldingselement dat wordt weergegeven in de vervolgkeuzelijst Miniatuur](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 
 1. Klikken **Voorvertoning**.
 

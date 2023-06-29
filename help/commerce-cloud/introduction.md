@@ -3,9 +3,9 @@ title: Inleiding en overzicht
 description: Inleiding en overzicht van inhoud en handel. Het Kader van de Integratie van de Handel van de Experience Manager (CIF) wordt geadviseerd Adobe om de handelsdiensten van Adobe Commerce en andere derde handelsoplossingen met de Experience Cloud te integreren en uit te breiden.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Met Adobe Experience Manager-content en -handel kunnen merken sneller schalen en
 
 Door de steeds hogere verwachtingen van klanten voor online handelservaringen worden merken onder druk gezet om gedifferentieerde ervaringen en meer inhoud sneller te bieden. De implementatie van een platform voor contentbeheer vereist echter vaak veel tijd en budgetinvesteringen in de ontwikkeling van basiselementen, zoals aangepaste componenten en ontwerpgereedschappen, en leidt tot hogere kosten voor onderhoud en upgrades. Experience Manager Sites biedt Inhoud en Handel als toe:voegen-op module voor as a Cloud Service Experience Manager aan die uit-van-de-doos commerciële kerncomponenten, auteurshulpmiddelen, en een verwijzingsopslag verstrekt om go-live te versnellen, naadloze samenwerking over teams toe te laten, en aandrijvingsomzetting.
 
-Merken kunnen Experience Manager integreren met Adobe Commerce, een deel van Adobe Experience Cloud, en elke andere commerciële motor van keuze. Met Inhoud en Handel van de Experience Manager, kunnen de merken:
+Merken kunnen Experience Manager met Adobe Commerce, een deel van Adobe Experience Cloud, en om het even welke commerciële motor van keus integreren. Met Inhoud en Handel van de Experience Manager, kunnen de merken:
 
 * Sneller schalen en innoveren
 * Ervaringen aanpassen om conversie te stimuleren
@@ -79,6 +79,6 @@ CIF steunt klanten met gestandaardiseerde integratiepatronen die op beste prakti
 
 ## Reis {#journey}
 
-Ga naar de volgende stap als je een Commerce-reis volgt:
+Ga naar de volgende stap als u een Handelsreis volgt:
 
 * De [Reis AEM Content Author](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

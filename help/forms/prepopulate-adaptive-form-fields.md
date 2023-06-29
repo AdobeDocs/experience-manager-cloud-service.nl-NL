@@ -6,7 +6,7 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1947'
 ht-degree: 0%
@@ -21,7 +21,7 @@ U kunt de velden van een adaptief formulier vooraf invullen met bestaande gegeve
 
 ## Structuur van vooraf ingevulde gegevens {#the-prefill-structure}
 
-Een adaptief formulier kan bestaan uit gebonden en niet-gebonden velden. Gebonden velden zijn velden die worden gesleept vanaf het tabblad Inhoudszoeker en die niet-leeg zijn `bindRef` in het dialoogvenster voor het bewerken van velden. Niet-gebonden velden worden rechtstreeks vanuit de deelbrowser van Sidetrap gesleept en hebben een lege `bindRef` waarde.
+Een adaptief formulier kan bestaan uit gebonden en niet-gebonden velden. Gebonden velden zijn velden die worden gesleept vanaf het tabblad Inhoudszoeker en die niet-leeg zijn `bindRef` in het dialoogvenster voor het bewerken van velden. Niet-gebonden velden worden rechtstreeks vanuit de deelbrowser van de Sidekick gesleept en hebben een lege pagina `bindRef` waarde.
 
 U kunt zowel gebonden als niet-gebonden velden van een adaptief formulier vooraf invullen. De vooraf ingevulde gegevens bevatten de secties afBoundData en afUnBoundData om zowel gebonden als niet-gebonden gebieden van een Adaptief Vorm vooraf in te vullen. De `afBoundData` bevat de vooraf ingevulde gegevens voor gebonden velden en deelvensters. Deze gegevens moeten voldoen aan het bijbehorende formuliermodelschema:
 
@@ -128,7 +128,7 @@ Voor velden waarvan het model het XML-schema is, worden de gegevens vooraf ingev
 
 >[!NOTE]
 >
->Het wordt aanbevolen geen niet-gebonden velden in gebonden deelvensters te gebruiken (deelvensters met niet-lege deelvensters) `bindRef` die is gemaakt door componenten te slepen vanaf het tabblad Sidetrap of Gegevensbronnen). Hierdoor kunnen gegevens van deze niet-gebonden velden verloren gaan. Daarnaast wordt aanbevolen dat de namen van de velden uniek zijn in het formulier, met name voor niet-gebonden velden.
+>Het wordt aanbevolen geen niet-gebonden velden in gebonden deelvensters te gebruiken (deelvensters met niet-lege deelvensters) `bindRef` die is gemaakt door componenten te slepen van het tabblad Sidekick of Gegevensbronnen). Hierdoor kunnen gegevens van deze niet-gebonden velden verloren gaan. Daarnaast wordt aanbevolen dat de namen van de velden uniek zijn in het formulier, met name voor niet-gebonden velden.
 
 #### Een voorbeeld zonder de omslag afData en afBoundData {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -199,7 +199,8 @@ Hieronder ziet u een voorbeeld zonder `afData/afBoundData` omslag:
 
 >[!NOTE]
 >
-> Het gebruik van niet-gebonden velden in gebonden deelvensters (deelvensters met niet-lege bindRef die zijn gemaakt door componenten te slepen van het tabblad Sijp of Gegevensbronnen) is **niet** aanbevolen omdat dit gegevensverlies van de niet-gebonden velden tot gevolg kan hebben. Het wordt aanbevolen unieke veldnamen te hebben in het formulier, vooral voor niet-gebonden velden.
+> Het gebruik van niet-gebonden velden in gebonden deelvensters (deelvensters met niet-lege bindRef die zijn gemaakt door componenten te slepen van het tabblad Sidekick of Gegevensbronnen) is **niet** aanbevolen omdat dit gegevensverlies van de niet-gebonden velden tot gevolg kan hebben. Het wordt aanbevolen unieke veldnamen te hebben in het formulier, vooral voor niet-gebonden velden.
+>
 
 ### Adaptief formulier zonder formuliermodel {#adaptive-form-with-no-form-model}
 
@@ -247,7 +248,6 @@ Om waarden van een configuratie te plaatsen, [OSGi-configuraties genereren met d
 > - Prefill wordt standaard toegestaan via crx-bestanden voor alle typen adaptieve Forms (XSD, XDP, JSON, FDM en geen op formuliermodel gebaseerd). Vooraf invullen is alleen toegestaan met JSON- en XML-bestanden.
 > - Het crx-protocol zorgt voor de beveiliging van vooraf ingevulde gegevens en is daarom standaard toegestaan. Prefilling via andere protocollen met behulp van generieke regex kan kwetsbaarheid veroorzaken. Geef in de configuratie een veilige URL-configuratie op om uw gegevens te beveiligen.
 
-
 ## Het merkwaardige geval van herhaalbare deelvensters {#the-curious-case-of-repeatable-panels}
 
 Over het algemeen worden gebonden (formulierschema) en niet-gebonden velden geschreven in dezelfde adaptieve vorm, maar het volgende is een paar uitzonderingen voor het geval de gebonden velden herhaalbaar zijn:
@@ -292,7 +292,7 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-- SERVICE_NAME verwijst naar de naam van de prefill dienst OSGI. Vernieuwen [Een vooraf ingevulde service maken en uitvoeren](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- SERVICE_NAME verwijst naar de naam van de prefill dienst OSGI. Zie [Een vooraf ingevulde service maken en uitvoeren](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
 - IDENTIFIER verwijst naar om het even welke meta-gegevens die door de Prefill dienst worden vereist OSGI om de Prefill gegevens te halen. Een id voor de aangemelde gebruiker is een voorbeeld van metagegevens die kunnen worden gebruikt.
 
 >[!NOTE]
@@ -301,7 +301,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 ### Gegevenskenmerk instellen in slingRequest {#setting-data-attribute-in-slingrequest}
 
-U kunt ook de `data` kenmerk in `slingRequest`, waarbij `data` attribute is a string containing XML or JSON, as displayed in the sample code below (Example is for XML):
+U kunt ook de `data` kenmerk in `slingRequest`, waarbij `data` Het kenmerk is een tekenreeks die XML of JSON bevat, zoals in de voorbeeldcode hieronder wordt getoond (Voorbeeld is voor XML):
 
 ```javascript
 <%

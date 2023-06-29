@@ -2,9 +2,9 @@
 title: as a Cloud Service teams en productprofielen AEM
 description: Leer hoe AEM as a Cloud Service team en productprofielen toegang tot uw gelicentieerde oplossingen van de Adobe kunnen verlenen en beperken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Leer hoe AEM as a Cloud Service team en productprofielen toegang tot uw gelicent
 
 ## Productprofielen {#profiles}
 
-Wanneer het verlenen van een gebruikerstoegang tot een specifieke oplossing van de Adobe, wilt u hen niet noodzakelijk volledige toegang verlenen. De profielen van het product laten elke oplossing toe om zijn eigen reeks gebruikerstoestemmingen te hebben. Deze zijn beschikbaar en toegankelijk via de [Admin Console.](/help/journey-onboarding/admin-console.md)
+Wanneer het verlenen van een gebruikerstoegang tot een specifieke oplossing van de Adobe, wilt u hen niet noodzakelijk volledige toegang verlenen. De profielen van het product laten elke oplossing toe om zijn eigen reeks gebruikerstoestemmingen te hebben. Deze zijn beschikbaar en toegankelijk via de [Admin Console](/help/journey-onboarding/admin-console.md).
 
 ## as a Cloud Service productprofielen AEM {#aem-product-profiles}
 
@@ -41,8 +41,8 @@ Uw AEM as a Cloud Service teamleden worden tijdens het instappen toegevoegd en t
 
 >[!TIP]
 >
->* Meer informatie over AEM productprofielen vindt u in het document [AEM productprofielen toewijzen.](/help/journey-onboarding/assign-profiles-aem.md)
->* Raadpleeg voor meer informatie over het instapproces de [op instapreis.](/help/journey-onboarding/overview.md)
+>* Ga voor meer informatie over AEM productprofielen naar [AEM productprofielen toewijzen](/help/journey-onboarding/assign-profiles-aem.md).
+>* Voor meer informatie over het instapproces raadpleegt u [instapreis](/help/journey-onboarding/overview.md).
 
 ## Productprofielen van Cloud Manager {#cloud-manager-product-profiles}
 
@@ -50,7 +50,7 @@ Cloud Manager heeft vooraf geconfigureerde productprofielen die kunnen worden be
 
 >[!TIP]
 >
->Raadpleeg het document [Op rollen gebaseerde machtigingen in Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) voor meer informatie .
+>Zie [Op rollen gebaseerde machtigingen in Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) voor meer informatie .
 
 Aan elk van de productprofielen zijn specifieke machtigingen gekoppeld.
 
@@ -73,5 +73,5 @@ Uw team van Cloud Manager omvat ten minste:
 
 >[!TIP]
 >
->* Raadpleeg het document voor meer informatie over productprofielen van Cloud Manager [Teamleden toewijzen aan productprofielen van Cloud Manager.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
->* Raadpleeg voor meer informatie over het instapproces de [op instapreis.](/help/journey-onboarding/overview.md)
+>* Ga voor meer informatie over productprofielen van Cloud Manager naar [Teamleden toewijzen aan productprofielen van Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* Voor meer informatie over het instapproces raadpleegt u [instapreis](/help/journey-onboarding/overview.md).

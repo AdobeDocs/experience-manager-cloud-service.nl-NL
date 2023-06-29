@@ -2,9 +2,9 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3649'
+source-wordcount: '3650'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
 | Naam | Type | Beschrijving |
 |---|---|---|
 | `.` | `cq:Component` | Dit vertegenwoordigt de huidige component. Een component is van het knooppunttype `cq:Component`. |
-| `componentGroup` | `String` | Dit vertegenwoordigt de groep waaronder de component in kan worden geselecteerd [Componentbrowser.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Een waarde die begint met `.` wordt gebruikt voor componenten die niet beschikbaar voor selectie van UI zoals basiscomponenten zijn waarvan andere componenten erven. |
+| `componentGroup` | `String` | Dit vertegenwoordigt de groep waaronder de component in kan worden geselecteerd [Browser voor componenten](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Een waarde die begint met `.` wordt gebruikt voor componenten die niet beschikbaar voor selectie van UI zoals basiscomponenten zijn waarvan andere componenten erven. |
 | `cq:isContainer` | `Boolean` | Dit geeft aan of de component een containercomponent is en daarom andere componenten zoals een alineasysteem kan bevatten. |
 | `cq:dialog` | `nt:unstructured` | Dit is de definitie van het dialoogvenster Bewerken voor de component. |
 | `cq:design_dialog` | `nt:unstructured` | Dit is de definitie van het ontwerpdialoogvenster voor de component. |
@@ -223,7 +223,7 @@ In het dialoogvenster worden afzonderlijke velden gedefinieerd:
 
 De dialoogvensters van het ontwerp zijn gelijkaardig aan de dialogen die worden gebruikt om inhoud uit te geven en te vormen, maar zij verstrekken de interface voor malplaatjeauteurs om ontwerpdetails voor die component op een paginasjabloon pro-vormen en te verstrekken. Paginasjablonen worden vervolgens door de auteurs van de inhoud gebruikt om inhoudspagina&#39;s te maken. Zie de [sjabloondocumentatie](/help/sites-cloud/authoring/features/templates.md) voor meer informatie over hoe sjablonen worden gemaakt.
 
-[Ontwerpdialoogvensters worden gebruikt bij het bewerken van een paginasjabloon](/help/sites-cloud/authoring/features/templates.md), hoewel ze niet voor alle componenten nodig zijn. Bijvoorbeeld de **Titel** en **Afbeeldingscomponenten** beide hebben ontwerpdialoogvensters, terwijl de **Component voor delen van sociale media** niet.
+[Ontwerpdialoogvensters worden gebruikt bij het bewerken van een paginasjabloon](/help/sites-cloud/authoring/features/templates.md), hoewel ze niet voor alle componenten nodig zijn. De **Titel** en **Afbeeldingscomponenten** beide hebben ontwerpdialoogvensters, terwijl de **Component voor delen van sociale media** niet.
 
 ### Gebruikersinterface voor koralen en graniet {#coral-and-granite}
 
@@ -321,7 +321,7 @@ Er zijn vele bestaande configuraties in AEM. U kunt gemakkelijk naar specifieke 
 
 Componenten moeten altijd HTML renderen die zichtbaar is voor de auteur, zelfs als de component geen inhoud heeft. Anders zou het van de interface van de redacteur visueel kunnen verdwijnen, die het technisch aanwezig maar onzichtbaar maken op de pagina en in de redacteur. In een dergelijk geval zullen de auteurs de lege component niet kunnen selecteren en ermee werken.
 
-Om deze reden, zouden de componenten placeholder moeten teruggeven zolang zij geen zichtbare output teruggeven wanneer de pagina in de paginaredacteur wordt teruggegeven (wanneer de wijze WCM is `edit` of `preview`).
+Om deze reden zouden de componenten placeholder moeten teruggeven zolang zij geen zichtbare output teruggeven wanneer de pagina in de paginaredacteur wordt teruggegeven (wanneer de wijze WCM is `edit` of `preview`).
 De gebruikelijke HTML-markering voor een tijdelijke aanduiding is:
 
 ```HTML
@@ -383,7 +383,7 @@ De volgende configuratie laat het op zijn plaats uitgeven van de component toe e
 
 ### Veldgebeurtenissen verwerken - cq:listeners {#cq-listeners}
 
-De methode voor het afhandelen van gebeurtenissen in dialoogvelden wordt uitgevoerd met listeners in een aangepaste [clientbibliotheek.](/help/implementing/developing/introduction/clientlibs.md)
+De methode voor het afhandelen van gebeurtenissen in dialoogvelden wordt uitgevoerd met listeners in een aangepaste [clientbibliotheek](/help/implementing/developing/introduction/clientlibs.md).
 
 Om logica in uw gebied te injecteren, zou u moeten:
 
@@ -416,7 +416,7 @@ De `cq:listeners` node (type node) `cq:EditListenersConfig`) definieert wat er v
 >* `aftermove`
 >* `aftercopy`
 
-De gebeurtenishandler kan worden geïmplementeerd met een aangepaste implementatie. Bijvoorbeeld: `project.customerAction` is een statische methode):
+De gebeurtenishandler kan worden geïmplementeerd met een aangepaste implementatie. Bijvoorbeeld (waarbij `project.customerAction` is een statische methode):
 
 `afteredit = "project.customerAction"`
 
@@ -469,7 +469,7 @@ U hoeft alleen maar een `README.md` in de componentstructuur.
 
 ![README.md in componentenstructuur](assets/components-documentation.png)
 
-Deze markering wordt dan weergegeven in het dialoogvenster [Component Console.](/help/sites-cloud/authoring/features/components-console.md)
+Deze markering wordt dan weergegeven in het dialoogvenster [Component Console](/help/sites-cloud/authoring/features/components-console.md).
 
 ![README.md zichtbaar in de Componentenconsole](assets/components-documentation-console.png)
 

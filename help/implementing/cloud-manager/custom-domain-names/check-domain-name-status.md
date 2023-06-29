@@ -2,9 +2,9 @@
 title: Status domeinnaam controleren
 description: Leer hoe u kunt bepalen of uw aangepaste domeinnaam is geverifieerd door Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,13 @@ Cloud Manager controleert het eigendom van het domein via de TXT-waarde en geeft
 * **Domein geverifieerd en geïmplementeerd** - Deze status geeft aan dat uw aangepaste domeinnaam klaar is om te worden gebruikt.
 
    * Op dit moment is uw aangepaste domeinnaam klaar om te worden getest en moet deze naar de domeinnaam van Cloud Manager worden verwezen.
-   * Raadpleeg het document [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) voor meer informatie.
+   * Zie [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) voor meer informatie.
 
 * **Verwijderen** - De verwijdering van een aangepaste domeinnaam wordt uitgevoerd.
 
 * **Verwijderen mislukt** - Het verwijderen van een aangepaste domeinnaam is mislukt en moet opnieuw worden geprobeerd.
 
-   * Raadpleeg het document [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) voor meer informatie.
+   * Zie [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) voor meer informatie.
 
 Cloud Manager activeert automatisch een TXT-verificatie wanneer u **Opslaan** over de verificatiestap van de **Aangepast domein toevoegen** wizard. Voor verdere controles, moet u actief selecteren opnieuw verifieert pictogram naast de status.
 
@@ -86,4 +86,4 @@ Als u een reeds bestaande configuratie CDN voor uw namen van het douanedomein he
 
 Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 
-Raadpleeg het document [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) voor meer informatie .
+Zie [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) voor meer informatie .

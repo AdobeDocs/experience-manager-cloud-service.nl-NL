@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2590'
 ht-degree: 0%
 
 ---
@@ -174,7 +174,7 @@ De vertalingen van de machine keren automatisch met een staat van terug **Goedge
 >
 >Als u de projectoptie niet hebt gedeactiveerd **Starten na aanbieding verwijderen** als [beschreven in het vorige punt,](#using-translation-project) vertaalde items worden weergegeven bij de **Verwijderd** status. Dit is normaal, omdat AEM de vertaalverslagen automatisch verwijdert zodra de vertaalde punten aankomen. De vertaalde items zijn geïmporteerd als taalkopieën, alleen de vertaalrecords zijn verwijderd omdat ze niet meer nodig zijn.
 >
->Maak je geen zorgen als dit onduidelijk is. Dit zijn diepgaande details van hoe AEM werkt en niet uw begrip van de reis beïnvloedt. Als u dieper wilt gaan werken op de manier waarop AEM vertalingen verwerkt, raadpleegt u de [extra middelen](#additional-resources) aan het einde van dit artikel.
+>Maak je geen zorgen als dit onduidelijk is. Dit zijn diepgaande details van hoe AEM werkt en niet uw begrip van de reis beïnvloedt. Als u dieper wilt duiken op hoe AEM vertalingen verwerkt, raadpleegt u [extra middelen](#additional-resources) aan het einde van dit artikel.
 
 ### Een handmatig gemaakt vertaalproject gebruiken {#using-manual-project}
 
@@ -234,7 +234,7 @@ De vertalingen van de machine keren automatisch met een staat van terug **Goedge
 >
 >Als u de projectoptie niet hebt gedeactiveerd **Starten na aanbieding verwijderen** als [beschreven in het vorige punt,](#using-translation-project) vertaalde items worden weergegeven bij de **Verwijderd** status. Dit is normaal, omdat AEM de vertaalverslagen automatisch verwijdert zodra de vertaalde punten aankomen. De vertaalde items zijn geïmporteerd als taalkopieën, alleen de vertaalrecords zijn verwijderd omdat ze niet meer nodig zijn.
 >
->Maak je geen zorgen als dit onduidelijk is. Dit zijn diepgaande details van hoe AEM werkt en niet uw begrip van de reis beïnvloedt. Als u dieper wilt gaan werken op de manier waarop AEM vertalingen verwerkt, raadpleegt u de [extra middelen](#additional-resources) aan het einde van dit artikel.
+>Maak je geen zorgen als dit onduidelijk is. Dit zijn diepgaande details van hoe AEM werkt en niet uw begrip van de reis beïnvloedt. Als u dieper wilt duiken op hoe AEM vertalingen verwerkt, raadpleegt u [extra middelen](#additional-resources) aan het einde van dit artikel.
 
 ## Vertaalde inhoud controleren {#reviewing}
 

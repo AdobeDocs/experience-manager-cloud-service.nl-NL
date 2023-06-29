@@ -2,9 +2,9 @@
 title: Sluiende en ontsmette zandbakomgevingen
 description: Leer hoe omgevingen van een sandboxprogramma automatisch overschakelen op een hibernatiemodus en hoe u deze kunt deorganiseren.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Voer de volgende stappen uit om de omgevingen van uw sandboxprogramma handmatig 
 
 1. Op de **Omgevingen** kaart, klikt u op de knop voor ovaal en selecteert u **Ontwerpconsole**.
 
-   * Het document raadplegen [Developer Console openen](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor meer informatie over de Developer Console.
+   * Zie [Developer Console openen](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor meer informatie over de Developer Console.
 
    ![Optie in het menu Developer Console](assets/developer-console-menu-option.png)
 
@@ -69,7 +69,7 @@ U kunt uw Sandbox-programma handmatig via de ontwikkelaarsconsole herbergen.
 
 1. Op de **Omgevingen** kaart, klikt u op de knop voor ovaal en selecteert u **Ontwerpconsole**.
 
-   * Het document raadplegen [Developer Console openen](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor meer informatie over de Developer Console.
+   * Zie [Developer Console openen](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor meer informatie over de Developer Console.
 
 1. Klikken op **De-hibernate**.
 

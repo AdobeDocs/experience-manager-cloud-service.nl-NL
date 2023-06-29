@@ -2,9 +2,9 @@
 title: Functionele tests
 description: Leer over de drie verschillende types van functionele tests die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,9 @@ Er zijn drie verschillende soorten functionele tests in AEM as a Cloud Service.
 * [Aangepaste functionele tests](#custom-functional-testing)
 * [Aangepaste UI-tests](#custom-ui-testing)
 
-Voor alle functionele tests kunnen de gedetailleerde resultaten van de tests als `.zip` bestand met de **Buildlog downloaden** knoop in het bouwstijloverzichtsscherm als deel van [implementatieproces.](/help/implementing/cloud-manager/deploy-code.md)
+Voor alle functionele tests kunnen de gedetailleerde resultaten van de tests als `.zip` bestand met de **Buildlog downloaden** knoop in het bouwstijloverzichtsscherm als deel van [implementatieproces](/help/implementing/cloud-manager/deploy-code.md).
 
-Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Raadpleeg het document voor toegang tot deze logboeken [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie .
+Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Ga voor toegang tot deze logboeken naar [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie .
 
 Zowel de functionele tests van het product als de aangepaste functionele tests zijn gebaseerd op de [AEM Clients testen.](https://github.com/adobe/aem-testing-clients)
 
@@ -54,7 +54,7 @@ De functionele tests van het product worden gehandhaafd als open-source-project.
 
 Terwijl het functionele testen van producten door Adobe wordt bepaald, kunt u uw eigen kwaliteitstests voor uw eigen toepassing schrijven. Dit wordt uitgevoerd als aangepaste functionele tests als onderdeel van het [productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) of optioneel [niet-productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) om de kwaliteit van uw toepassing te garanderen.
 
-Het functionele testen van de douane wordt uitgevoerd zowel voor douanecode plaatsingen als duw verbeteringen, die het vooral belangrijk maken om goede functionele tests te schrijven die AEM codeveranderingen verhinderen uw toepassingscode te breken. De aangepaste functionele teststap is altijd aanwezig en kan niet worden overgeslagen.
+Het functionele testen van de douane wordt in werking gesteld zowel voor douanecodeplaatsingen als duw verbeteringen, wat het bijzonder belangrijk maakt om goede functionele tests te schrijven die AEM codeveranderingen verhinderen uw toepassingscode te breken. De aangepaste functionele teststap is altijd aanwezig en kan niet worden overgeslagen.
 
 Zie [Functionele Java-tests](/help/implementing/cloud-manager/java-functional-testing.md) voor meer informatie .
 

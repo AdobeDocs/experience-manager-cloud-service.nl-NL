@@ -2,7 +2,7 @@
 title: Onderhoudstaken in AEM as a Cloud Service
 description: Onderhoudstaken in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 0%
@@ -44,7 +44,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
   <tr>
     <td>Versie wissen</td>
     <td>Adobe</td>
-    <td>Voor bestaande milieu's (die vóór 1 Juni, 2023 worden gecreeerd), wordt het zuiveren onbruikbaar gemaakt en zal niet in de toekomst worden toegelaten tenzij uitdrukkelijk toegelaten door de klant, wanneer zij het met douanewaarden kunnen ook vormen.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Nieuwe omgevingen (die vanaf 1 juni 2023 zijn gemaakt) worden standaard leeggemaakt met de onderstaande waarden, waarbij klanten kunnen configureren met aangepaste waarden.
+    <td>Voor bestaande milieu's (die vóór 1 Juni, 2023 worden gecreeerd), wordt het zuiveren onbruikbaar gemaakt en zal niet in de toekomst worden toegelaten tenzij uitdrukkelijk toegelaten door de klant, wanneer zij het met douanewaarden kunnen ook vormen.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Nieuwe omgevingen (die vanaf 1 juni 2023 zijn gemaakt) worden standaard leeggemaakt met de onderstaande waarden, waarbij klanten kunnen configureren met aangepaste waarden.
      <ol>
        <li>Versies ouder dan 30 dagen worden verwijderd</li>
        <li>De meest recente vijf versies in de laatste 30 dagen worden bewaard</li>

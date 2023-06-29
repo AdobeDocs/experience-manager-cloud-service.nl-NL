@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '5037'
+source-wordcount: '5039'
 ht-degree: 5%
 
 ---
@@ -31,11 +31,11 @@ Het zoeken van middelen in AEM steunt de volgende gebruiksgevallen en dit artike
 | [Zoeken in suggesties](#searchsuggestions) | [Verplichte metagegevens](#mandatorymetadata) | [Downloaden](#download) |
 | [Zoekresultaten en gedrag begrijpen](#searchbehavior) | [Zoekfacetten wijzigen](#searchfacets) | [Bulkupdates van metagegevens](#metadata-updates) |
 | [Zoeken in rang en opvoeren](#searchrank) | [Aangepaste voorspelling](#custompredicates) | [Slimme verzamelingen](#collections) |
-| [Geavanceerd zoeken: filteren en zoekbereik](#scope) |  | [Onverwachte resultaten begrijpen en problemen oplossen](#unexpected-results) |
-| [Zoeken in andere oplossingen en toepassingen](#search-assets-other-surfaces):<ul><li>[Adobe-itemkoppeling](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager-bureaubladtoepassing](#desktop-app)</li><li>[Adobe Stock-afbeeldingen](#adobe-stock)</li><li>[Dynamic Media-middelen](#search-dynamic-media-assets)</li></ul> |  |  |
-| [Elementkiezer](#asset-picker) |  |  |
-| [Beperkingen](#limitations) en [Tips](#tips) |  |  |
-| [Afbeeldingsvoorbeelden](#samples) |  |  |
+| [Geavanceerd zoeken: filteren en zoekbereik](#scope) | | [Onverwachte resultaten begrijpen en problemen oplossen](#unexpected-results) |
+| [Zoeken in andere oplossingen en toepassingen](#search-assets-other-surfaces):<ul><li>[Adobe-itemkoppeling](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager-bureaubladtoepassing](#desktop-app)</li><li>[Adobe Stock-afbeeldingen](#adobe-stock)</li><li>[Dynamic Media-middelen](#search-dynamic-media-assets)</li></ul> | | |
+| [Elementkiezer](#asset-picker) | | |
+| [Beperkingen](#limitations) en [Tips](#tips) | | |
+| [Afbeeldingsvoorbeelden](#samples) | | |
 
 Middelen zoeken met behulp van het veld Onderzoek boven aan het dialoogvenster [!DNL Experience Manager] webinterface. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], klikt u op ![search_icon](assets/do-not-localize/search_icon.png) Voer in de bovenste balk het trefwoord Zoeken in en selecteer `Return`. U kunt ook de trefwoordsneltoets gebruiken `/` (slash) om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. [!DNL Experience Manager] biedt suggesties als u begint met het typen van een trefwoord voor zoeken.
 
@@ -243,7 +243,7 @@ Geef de volgende aanvraagparameters in een URL door om de elementenkiezer in een
 | `mode` | enkelvoudig, meerdere | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | In meerdere modi kunt u meerdere elementen tegelijk selecteren met de elementkiezer. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Gebruik deze parameters om de elementenkiezer te openen als granietdialoogvenster. Deze optie is alleen van toepassing wanneer u de elementenkiezer start via Granite Path Field en deze configureert als pickerSrc URL. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Gebruik deze optie om de hoofdmap voor de elementenkiezer op te geven. In dit geval kunt u met de elementenkiezer alleen onderliggende elementen (direct/indirect) in de hoofdmap selecteren. |
-| `viewmode` | zoeken |  | U kunt de elementkiezer in de zoekmodus starten met `assettype` en `mimetype` parameters. |
+| `viewmode` | zoeken | | U kunt de elementkiezer in de zoekmodus starten met `assettype` en `mimetype` parameters. |
 | `assettype` | Afbeeldingen, documenten, multimedia, archieven. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Gebruik de optie om elementtypen te filteren op basis van de opgegeven waarde. |
 | `mimetype` | MIME-type (`/jcr:content/metadata/dc:format`) van een element (jokerteken wordt ook ondersteund). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Gebruik deze optie om elementen te filteren op basis van het MIME-type. |
 
@@ -405,7 +405,7 @@ U kunt naar digitale elementen zoeken op basis van een of meer van de volgende e
 
 ## Werken met resultaten voor middelenzoekopdrachten {#aftersearch}
 
-U kunt het volgende doen met de middelen u hebt gezocht in [!DNL Experience Manager]:
+U kunt het volgende doen met de middelen u binnen hebt gezocht [!DNL Experience Manager]:
 
 * Eigenschappen van metagegevens en andere informatie weergeven.
 * Download een of meer middelen.
@@ -483,7 +483,7 @@ Verwante en losse elementen die in de zoekresultaten worden weergegeven. Selecte
 | Zoekfilter of voorspelling is niet beschikbaar. | <ul><li>Het zoekfilter is niet geconfigureerd.</li><li>Het is niet beschikbaar voor uw aanmelding.</li><li>(Minder waarschijnlijk) De onderzoeksopties worden niet aangepast op de plaatsing u gebruikt.</li></ul> | <ul><li>Neem contact op met de beheerder om te controleren of de zoekaanpassingen beschikbaar zijn of niet.</li><li>Neem contact op met de beheerder om te controleren of uw account de rechten/machtigingen heeft om de aanpassing te gebruiken.</li><li>Neem contact op met de beheerder en controleer de beschikbare aanpassingen voor de [!DNL Assets] implementatie die u gebruikt.</li></ul> |
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen ontbreekt een verwachte afbeelding. | <ul><li>Afbeelding is niet beschikbaar in [!DNL Experience Manager].</li><li>Afbeelding is niet geïndexeerd. Doorgaans wanneer het onlangs is geüpload.</li><li>Afbeelding heeft geen slimme tags.</li></ul> | <ul><li>Voeg de afbeelding toe aan [!DNL Assets].</li><li>Neem contact op met de beheerder om de gegevensopslagruimte opnieuw te indexeren. Zorg er ook voor dat u de juiste index gebruikt.</li><li>Neem contact op met de beheerder om de relevante elementen een slimme tag te geven.</li></ul> |
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt een irrelevante afbeelding weergegeven. | Zichtbaar zoekgedrag. | [!DNL Experience Manager] geeft zoveel mogelijk relevante activa weer. Eventuele minder relevante afbeeldingen worden aan de resultaten toegevoegd, maar met een lagere zoekpositie. De kwaliteit van de overeenkomsten en de relevantie van de gezochte elementen nemen af wanneer u de zoekresultaten omlaag schuift. |
-| Wanneer u zoekresultaten selecteert en gebruikt, wordt niet op alle gezochte elementen ingegaan. | De [!UICONTROL Select All] Hiermee selecteert u alleen de eerste 100 zoekresultaten in de kaartweergave en de eerste 200 zoekresultaten in de lijstweergave. |  |
+| Wanneer u zoekresultaten selecteert en gebruikt, wordt niet op alle gezochte elementen ingegaan. | De [!UICONTROL Select All] Hiermee selecteert u alleen de eerste 100 zoekresultaten in de kaartweergave en de eerste 200 zoekresultaten in de lijstweergave. | |
 
 **Zie ook**
 
@@ -504,4 +504,3 @@ Verwante en losse elementen die in de zoekresultaten worden weergegeven. Selecte
 >* [[!DNL Experience Manager] zoekimplementatiegids](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Geavanceerde configuratie om zoekresultaten te verhogen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Zoeken naar slimme vertaling configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
-

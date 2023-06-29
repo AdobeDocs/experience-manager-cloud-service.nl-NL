@@ -2,9 +2,9 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1896'
 ht-degree: 77%
 
 ---
@@ -150,7 +150,7 @@ Er zijn ook aanzienlijke verschillen door de aanwezigheid van:
 
 >[!TIP]
 >
->Voor een volledig overzicht van het instapproces raadpleegt u de [op instapreis.](/help/journey-onboarding/overview.md)
+>Voor een volledig overzicht van het instapproces raadpleegt u de [instapreis](/help/journey-onboarding/overview.md).
 
 ## Ontwikkeling {#developing}
 
@@ -274,6 +274,6 @@ Zie voor meer informatie:
 
 >[!TIP]
 >
->Als u een overzicht hebt van AEM as a Cloud Service, kunt u snel aan boord gaan door de [Op instapreis.](/help/journey-onboarding/overview.md)
+>Als u een overzicht hebt van AEM as a Cloud Service, kunt u snel aan boord gaan door de [Onboarding Journaal](/help/journey-onboarding/overview.md).
 >
 >Hebt u al een functie voor het testen van AEM? Installeer de [AEM Reference Demos Add-on](/help/journey-sites/demos-add-on/overview.md) om AEM krachtige functies te verkennen aan de hand van rijke voorbeelden.

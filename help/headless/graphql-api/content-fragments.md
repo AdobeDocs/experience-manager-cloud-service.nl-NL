@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4924'
+source-wordcount: '4918'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ GraphQL is:
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-Raadpleeg de volgende secties (onder andere over veel andere bronnen) voor meer informatie over de GraphQL API:
+Raadpleeg de volgende secties (onder andere over veel andere bronnen) voor informatie over de GraphQL API:
 
 * At [graphql.org](https://graphql.org):
 
@@ -377,7 +377,7 @@ Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/headless/grap
 
 ## GraphQL-variabelen {#graphql-variables}
 
-GraphQL staat toe dat variabelen in de query worden geplaatst. Voor meer informatie kunt u de [GraphQL-documentatie voor variabelen](https://graphql.org/learn/queries/#variables).
+GraphQL staat toe dat variabelen in de query worden geplaatst. Zie voor meer informatie [GraphQL-documentatie voor variabelen](https://graphql.org/learn/queries/#variables).
 
 Als u bijvoorbeeld alle inhoudsfragmenten van het type wilt ophalen `Author` in een specifieke variatie (indien beschikbaar), kunt u het argument specificeren `variation` in GraphiQL.
 
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 Deze query retourneert de volledige lijst met auteurs. Auteurs zonder de `another` de wijziging wordt teruggebracht naar de oorspronkelijke gegevens (`_variation` rapporteren `master` in dit geval).
 
-Als u de lijst wilt beperken tot auteurs die de opgegeven variatie leveren (en auteurs overslaan die terugvallen naar de oorspronkelijke gegevens), moet u een [filter](#filtering):
+Als u de lijst wilt beperken tot auteurs die de opgegeven variatie leveren (en auteurs overslaan die terugvallen op de oorspronkelijke gegevens), past u een [filter](#filtering):
 
 ```graphql
 query($variation: String!) {
@@ -431,7 +431,7 @@ query($variation: String!) {
 
 In GraphQL bestaat de mogelijkheid om de query te wijzigen op basis van variabelen, de zogenaamde GraphQL-richtlijnen.
 
-U kunt bijvoorbeeld de opdracht `adventurePrice` veld in een query voor alle `AdventureModels`, gebaseerd op een variabele `includePrice`.
+Hier kunt u bijvoorbeeld de opdracht `adventurePrice` veld in een query voor alle `AdventureModels`, gebaseerd op een variabele `includePrice`.
 
 ![GraphQL-richtlijnen](assets/cfm-graphqlapi-04.png "GraphQL-richtlijnen")
 
@@ -570,7 +570,7 @@ De sorteercriteria:
 
 * is een door komma&#39;s gescheiden lijst met waarden die het veldpad aangeven
    * het eerste veld in de lijst definieert de primaire sorteervolgorde, het tweede veld wordt gebruikt als twee waarden van het primaire sorteercriterium gelijk zijn, het derde als de eerste twee criteria gelijk zijn, enz.
-   * puntnotatie, d.w.z. veld1.subveld.subveld enz..
+   * puntnotatie, dat wil zeggen veld1.subfield.subfield enzovoort..
 * met een optionele bestelrichting
    * ASC (oplopend) of DESC (aflopend); als standaard-ASC wordt toegepast
    * de richting kan per veld worden opgegeven; dit betekent dat u een veld in oplopende volgorde kunt sorteren, een ander veld in aflopende volgorde (naam, voornaam DESC)

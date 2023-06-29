@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ Meer informatie over de [Gegevensverzameling Experience Platform](https://experi
 
 ## Verzenden `addToCart` gebeurtenisgegevens naar Experience Platform {#send-addtocart-to-aep}
 
-In de volgende stappen wordt getoond hoe u de `addToCart` gebeurtenisgegevens van AEM-teruggegeven productpagina&#39;s aan het Experience Platform gebruikend CIF - de Schakelaar van het Experience Platform. Met de browserextensie van Adobe Experience Platform Debugger kunt u de verzonden gegevens testen en bekijken.
+In de volgende stappen wordt getoond hoe u de `addToCart` gebeurtenisgegevens van AEM-teruggegeven productpagina&#39;s aan het Experience Platform gebruikend CIF - de Schakelaar van het Experience Platform. Met de browserextensie van het Adobe Experience Platform Debugger kunt u de verzonden gegevens testen en bekijken.
 
-![AddToCart-gebeurtenisgegevens controleren in Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
+![AddToCart-gebeurtenisgegevens in Adobe Experience Platform Debugger controleren](../assets/aep-integration/EventData-AEM-AEP.png)
 
 ## Vereisten {#prerequisites}
 
@@ -382,7 +382,7 @@ Om de gebeurtenisgegevens op te slaan, moet u een Dataset tot stand brengen die 
 
 - Op de nieuwe pagina: __zoeken en selecteren__ het schema u in de vorige stap creeerde, en klik __Volgende__ knop.
 
-   ![AEP-gegevensset maken Selectieschema](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+  ![AEP-gegevensset maken Selectieschema](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
 1. Geef uw gegevensset een naam met de __Gegevensset configureren > Naam__ en klik op de knop __Voltooien__ knop.
 
@@ -499,7 +499,7 @@ __XDM-profielgebeurtenissen:__
 
 ## Aanvullende bronnen {#additional-resources}
 
-Raadpleeg de volgende bronnen voor meer informatie:
+Zie de volgende bronnen voor meer informatie:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Overzicht van de Experience Platform-aansluiting](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)

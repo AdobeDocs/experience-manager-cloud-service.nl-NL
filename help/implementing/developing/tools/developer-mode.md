@@ -4,7 +4,7 @@ seo-title: Developer Mode
 description: In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Elk componentitem kan de volgende opties hebben:
 
 * **Script bewerken:** Een koppeling waarmee het componentscript in CRXDE Lite wordt geopend.
 
-* **Componentdetails weergeven:** Hiermee opent u de details van de component in het dialoogvenster [Componentenconsole.](/help/sites-cloud/authoring/features/components-console.md)
+* **Componentdetails weergeven:** Hiermee opent u de details van de component in het dialoogvenster [Componentenconsole](/help/sites-cloud/authoring/features/components-console.md).
 
 U kunt een componentitem uitbreiden door te tikken op het chevron of erop te klikken. U kunt ook het volgende weergeven:
 
