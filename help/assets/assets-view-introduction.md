@@ -2,9 +2,9 @@
 title: Wat zijn de voordelen van uw middelenweergave?
 description: Meer informatie over de belangrijkste voordelen van de weergave Middelen
 mini-toc-levels: 3
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: 97b6f66f2d19b85ec0a71eda756aaa334ea5da57
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1064'
 ht-degree: 0%
 
 ---
@@ -121,14 +121,15 @@ Naast deze functies kunt u in de weergave Middelen ook de volgende functies uitv
 
 * Wijzig de naam van elementen en mappen die beschikbaar zijn in de opslagplaats.
 
+De nieuwe Adobe Experience Manager Assets-weergave is toegesneden op het stroomlijnen van workflows, het bevorderen van samenwerking en het versnellen van de levering van middelen. Door de snelheid van de inhoud te omarmen, kunnen marketers het volledige potentieel van hun digitale middelen ontsluiten en creativiteit ontketenen zoals nooit tevoren.
+
+
 Gebruik de volgende koppelingen om snel aan de slag te gaan met de weergave Middelen:
 
 * [Mijn werkruimte](/help/assets/my-workspace-assets-view.md)
 * [Aan de slag met de middelenweergave](/help/assets/get-started-assets-view.md)
 
-## Conclusie {#conclusion}
 
-Het tijdperk van digitaal-eerst is aangebroken en het is tijd om onze marketingtools om te zetten om het evoluerende zakelijke landschap te ondersteunen. De nieuwe Adobe Experience Manager Assets-weergave is toegesneden op het stroomlijnen van workflows, het bevorderen van samenwerking en het versnellen van de levering van middelen. Door de snelheid van de inhoud te omarmen, kunnen marketers het volledige potentieel van hun digitale middelen ontsluiten en creativiteit ontketenen zoals nooit tevoren. Bereid u voor om de kracht van de nieuwe Adobe in te zetten voor een weergave en om de uitzonderlijke resultaten van uw marketingcampagnes te optimaliseren. Het is tijd om de toekomst van DAM te omarmen en uw bedrijf vooruit te helpen.
 
 
 
