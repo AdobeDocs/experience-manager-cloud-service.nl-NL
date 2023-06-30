@@ -1,9 +1,9 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2023.6.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.6.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2023.7.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.7.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2023.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2023.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release 2023.6.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
+Op deze pagina worden de opmerkingen bij de release 2023.7.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
 
 >[!NOTE]
 >
@@ -21,17 +21,18 @@ Op deze pagina worden de opmerkingen bij de release 2023.6.0 van Cloud Manager i
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2023.6.0 in AEM as a Cloud Service is 8 juni 2023. De volgende release is gepland voor 6 juli 2023.
+De releasedatum voor Cloud Manager versie 2023.7.0 in AEM as a Cloud Service is 29 juni 2023. De volgende release is gepland voor 10 augustus 2023.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Klanten kunnen naast het primaire gebied aanvullende secundaire publicatiegebieden aanschaffen, wat voordelen oplevert als gevolg van een lagere latentie en een hogere beschikbaarheid. Opmerking: Bepaalde beperkingen kunnen van toepassing zijn.
-* Bij het maken van een nieuwe [programma of milieu;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) de naam mag nu alleen alfanumerieke tekens en een beperkte set speciale tekens bevatten .
-* Bij het hervatten van een [productiepijpleiding,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) er wordt nu een bevestigingsvenster weergegeven bij de stap Goedkeuren.
-* Voor de **[Functionele tests van de klant](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** en **[Aangepaste UI-tests](/help/implementing/cloud-manager/ui-testing.md)** pijpleidingstappen, een nieuwe `INCOMPLETE` de status is nu mogelijk , hetgeen erop wijst dat dergelijke tests niet aanwezig waren en dus niet werden uitgevoerd .
-   * In dergelijke gevallen mislukt de pijpleiding niet en gaat deze verder naar de volgende stap.
+* Kaarten op de landingspagina van Cloud Manager geven nu aan of [verbeterde beveiliging](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) is ingeschakeld voor hun programma&#39;s.
+* Indien een ontwikkeling [pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) bevat geen teststappen. Gebruikers kunnen nu teststappen opnemen als ze [start de pijpleiding.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * Dit zal gefaseerd worden uitgevoerd.
+* Wanneer [annulering van de uitvoering,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) in de goedkeuringsstap voor de uitvoering van de pijpleiding wordt de gebruiker nu verzocht een reden voor annulering te geven .
+   * Dit zal gefaseerd worden uitgevoerd.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* De [configuratiepijplijn voor webniveau](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) zijn niet meer onjuist ingeschakeld voor programma&#39;s met alleen elementen.
-* Er is een robuustere validatie toegevoegd om bepaalde typen fouten tijdens de levering van omgevingen te voorkomen.
+* Navigeer aan auteursUI van de Manager van de Wolk niet meer om in Verenigde Shell na login opnieuw te richten.
+* Als u de datum van de go-live via de go-live widget bewerkt, gaat u nu naar de **Live gaan** in plaats van de **Uitgebreide beveiliging** tab.
+* Wanneer een kopieerbewerking wordt gestart, kan een gebruiker niet langer een omgeving selecteren waarin al een kopieerbewerking is aangeroepen.
