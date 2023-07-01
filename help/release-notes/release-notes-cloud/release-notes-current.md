@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5a37f237d04d19f3c4113c2ea3e37ab447bf3b0c
+source-git-commit: da5634dfa812268b81b2db783da772b6ecc1d7ce
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -115,8 +115,8 @@ In de middelenweergave kunt u nu [toevoegen, tekst met meerdere waarden en eigen
 
 * [Adaptieve Forms in AEM paginabewerker en ervaringsfragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): U kunt nu AEM pagina-editor en Experience Fragment gebruiken om snel meerdere formulieren te maken en aan uw AEM Sites-pagina&#39;s toe te voegen. Dankzij deze functie kunnen auteurs van inhoud naadloze ervaringen met gegevensvastlegging maken op Sites-pagina&#39;s met behulp van de kracht van adaptieve Forms-componenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van registratie- en bedrijfsprocesautomatisering.
 
-      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&amp;learn=on)
-  
+  >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+
 * [Adobe Acrobat Sign Solutions for Government (HIPPA-klacht) gebruiken met AEM Forms](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms is nu geïntegreerd met Adobe Acrobat Sign Solutions voor de regering. Deze integratie biedt een geavanceerd niveau van naleving en beveiliging voor e-handtekeningen met Adaptief formulier-inzendingen voor met de overheid verband houdende rekeningen (overheidsdiensten en agentschappen).
 
   Dankzij de integratie met Adobe Acrobat Sign Solutions for Government kunnen Adobe en klanten van de overheid elektronische handtekeningen gebruiken in Adaptive Forms voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met de Matige naleving FedRAMP zijn, die Adobe klanten van vrede van mening voorzien.
