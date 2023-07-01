@@ -4,9 +4,9 @@ description: Leer hoe u problemen met de uitrol van meerdere sitebeheer kunt beh
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ AEM biedt:
 De standaardconflicthandler is `ResourceNameRolloutConflictHandler`
 
 * Met deze handler krijgt de blauwdrukpagina prioriteit.
-* De de dienstrangschikking voor deze manager wordt geplaatst laag, d.w.z. onder de standaardwaarde voor `service.ranking` bezit, aangezien de veronderstelling is dat de aangepaste managers een hogere rangschikking zullen vereisen. De rangorde is echter niet het absolute minimum om zo nodig flexibiliteit te garanderen.
+* De de dienstrangschikking voor deze manager wordt geplaatst laag, namelijk onder de standaardwaarde voor `service.ranking` bezit, aangezien de veronderstelling is dat de aangepaste managers een hogere rangschikking zullen vereisen. De rangorde is echter niet het absolute minimum om zo nodig flexibiliteit te garanderen.
 
 Deze conflicthandler geeft voorrang aan de blauwdruk. Voorbeeld: de pagina Live kopiëren `/b` wordt verplaatst binnen de vertakking Live kopie naar `/b_msm_moved`.
 

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '5919'
 ht-degree: 3%
@@ -242,6 +242,7 @@ Zie [Een voorinstelling voor viewers maken](/help/assets/dynamic-media/managing-
 Als u de video en miniatuurelementen al hebt geüpload, gaat u verder met [Interactiviteit toevoegen aan uw video](#adding-interactivity-to-your-video).
 
 >[!NOTE]
+>
 De MXF-video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media.
 
 Als u de verkeerde video&#39;s of afbeeldingen hebt geüpload of als u geüploade video&#39;s of afbeeldingen wilt verwijderen die u niet meer nodig hebt, raadpleegt u [Elementen verwijderen](/help/assets/manage-digital-assets.md#delete-assets).
@@ -264,9 +265,11 @@ Nadat u tijdlijnsegmenten hebt toegevoegd, voegt u miniatuurafbeeldingen toe bin
 Zie [Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
+>
 Gereedschappen voor het delen van sociale media in interactieve video worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. In plaats daarvan kunt u voorinstellingen voor viewers gebruiken of maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
 >[!NOTE]
+>
 De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
 
 Opties voor Ongedaan maken en Opnieuw worden in de rechterbovenhoek van de pagina ondersteund tijdens de huidige sessie voor maken en bewerken.
@@ -288,11 +291,11 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    * Selecteer de optie **[!UICONTROL Play]** knop. Wanneer een bepaald product, de dienst, of een detail dat u wilt benadrukken in mening komt, uitgezocht **[!UICONTROL Add Segment]** op de werkbalk. Herhaal deze bewerking totdat u het einde van de video hebt bereikt.
 
-      Voor elk tijdsegment dat u toevoegt, kunt u er een of meer miniatuurafbeeldingen aan toewijzen. Vervolgens kunt u deze miniaturen koppelen aan de productpagina&#39;s van QuickView die klanten kunnen kopen of aan webpagina&#39;s voor meer informatie.
+     Voor elk tijdsegment dat u toevoegt, kunt u er een of meer miniatuurafbeeldingen aan toewijzen. Vervolgens kunt u deze miniaturen koppelen aan de productpagina&#39;s van QuickView die klanten kunnen kopen of aan webpagina&#39;s voor meer informatie.
 
    * Selecteer de optie **[!UICONTROL Play]** knop. Wanneer een bepaald product, de dienst, of een detail dat u wilt benadrukken in mening komt, uitgezocht **[!UICONTROL Pause]**. Selecteer **[!UICONTROL Add Segment]**.
 
-      Ga door met het afspelen en pauzeren van de video op punten langs de tijdlijn waar u een segment wilt toevoegen totdat u het einde van de video hebt bereikt.
+     Ga door met het afspelen en pauzeren van de video op punten langs de tijdlijn waar u een segment wilt toevoegen totdat u het einde van de video hebt bereikt.
 
 1. (Optioneel) Sleep de balk op de **[!UICONTROL Timeline Scale Slider]** links om in te zoomen of rechts om uit te zoomen. Met deze actie kunt u bepalen hoeveel details u ziet van de segmenten die u hebt toegevoegd.
 
@@ -355,9 +358,9 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    * De begintijd en eindtijd van een segment aanpassen.
 
-      Selecteer een segment en sleep vervolgens de voorloopblauwe of navolgende blauwe ovaal om respectievelijk de begin- of eindtijd aan te passen. Het weergegeven videoframe wordt op basis van uw aanpassingen naar de juiste tijd in de video verplaatst. De verplaatsing van het tijdlijnsegment wordt beperkt op basis van eventuele aangrenzende segmenten in de tijdlijn. De minimaal toegestane segmenttijd is één seconde.
+     Selecteer een segment en sleep vervolgens de voorloopblauwe of navolgende blauwe ovaal om respectievelijk de begin- of eindtijd aan te passen. Het weergegeven videoframe wordt op basis van uw aanpassingen naar de juiste tijd in de video verplaatst. De verplaatsing van het tijdlijnsegment wordt beperkt op basis van eventuele aangrenzende segmenten in de tijdlijn. De minimaal toegestane segmenttijd is één seconde.
 
-      Gebruik de volgende sneltoetsen voor navigatie om uw videosegmenten snel te controleren en af te stemmen:
+     Gebruik de volgende sneltoetsen voor navigatie om uw videosegmenten snel te controleren en af te stemmen:
 
       * Als u de video direct naar het begin van dat segment wilt zoeken, selecteert u het voorafgaande blauwe ovaal.
       * Als u de video direct naar het einde van dat segment wilt zoeken, selecteert u het navolgende blauwe ovaal.
@@ -369,10 +372,9 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    * Een segment verwijderen
 
-      Selecteer het laatste segment op de tijdlijn en selecteer vervolgens op de werkbalk de optie **[!UICONTROL Delete Segment]**. Als twee of meer segmenten zijn geselecteerd, is de functie Segment verwijderen uitgeschakeld.
+     Selecteer het laatste segment op de tijdlijn en selecteer vervolgens op de werkbalk de optie **[!UICONTROL Delete Segment]**. Als twee of meer segmenten zijn geselecteerd, is de functie Segment verwijderen uitgeschakeld.
 
-      U kunt alleen het laatste segment verwijderen. Als u bijvoorbeeld alle segmenten op de tijdlijn wilt verwijderen, moet u altijd de laatste selecteren en vervolgens **[!UICONTROL Delete Segment]**.
-
+     U kunt alleen het laatste segment verwijderen. Als u bijvoorbeeld alle segmenten op de tijdlijn wilt verwijderen, moet u altijd de laatste selecteren en vervolgens **[!UICONTROL Delete Segment]**.
 
 1. Selecteer een tijdsegment waaraan u een of meer miniatuurafbeeldingen wilt koppelen.
 1. Selecteer rechts van de video de optie **[!UICONTROL Content]** tab.
@@ -463,18 +465,20 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    * **[!UICONTROL Merge Segment]** - U kunt twee aangrenzende segmenten (met of zonder productminiaturen aan hen toegewezen) in één segment combineren.
 
-      Selecteer in de tijdlijn twee of meer aangrenzende segmenten die u wilt samenvoegen. Er zijn geen blauwe, ovale sleepgrepen op de twee geselecteerde segmenten in de onderstaande afbeelding.
+     Selecteer in de tijdlijn twee of meer aangrenzende segmenten die u wilt samenvoegen. Er zijn geen blauwe, ovale sleepgrepen op de twee geselecteerde segmenten in de onderstaande afbeelding.
 
-      Selecteren **[!UICONTROL Merge Segment]** op de werkbalk.
+     Selecteren **[!UICONTROL Merge Segment]** op de werkbalk.
+
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
    Twee geselecteerde segmenten van vijf seconden samenvoegen tot één segment van tien seconden.
 
    * **[!UICONTROL Split Segment]** - U kunt één segment opsplitsen in twee segmenten met gelijke tijdnotatie. Als er al productminiaturen aan het segment zijn toegewezen, worden de miniaturen gecombineerd in het linkersegment.
 
-      Selecteer op de tijdlijn een segment dat u wilt delen in de helft en selecteer vervolgens **[!UICONTROL Split Segment]** op de werkbalk.
+     Selecteer op de tijdlijn een segment dat u wilt delen in de helft en selecteer vervolgens **[!UICONTROL Split Segment]** op de werkbalk.
 
-      Als u twee of meer segmenten selecteert, wordt het dialoogvenster **[!UICONTROL Split Segment]** gebruiken.
+     Als u twee of meer segmenten selecteert, wordt het dialoogvenster **[!UICONTROL Split Segment]** gebruiken.
+
    ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Een geselecteerd segment van tien seconden opsplitsen in twee segmenten van vijf seconden elk.
@@ -488,6 +492,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
    Als u klaar bent, selecteert u **[!UICONTROL Save]**.
 
    >[!NOTE]
+   >
    Wanneer u uw interactieve video opslaat, wordt er automatisch een gekoppeld `.vtt`-bestand bij opgeslagen. De `.vtt` bestand wordt opgeslagen in de `_VTT` map in de hoofdmap van **[!UICONTROL Assets]**. Uw interactieve video kan alleen correct worden afgespeeld op uw website als het bestand en de map aanwezig zijn. Verplaats, bewerk of verwijder daarom de map `_VTT` of de content ervan niet.
 
 1. Publiceer de interactieve video. Met Publiceren maakt u de insluitcode of URL die u uiteindelijk kopieert en plakt naar uw website.
@@ -497,6 +502,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
    Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
+   >
    Als u een schokkende video wilt publiceren met Snelle weergaven, moet u ook elk van de verwante afbeeldingselementen van de video afzonderlijk publiceren vanuit uw handelsgebied.
 
    Nadat u tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze toevoegen aan de openingspagina van uw bestaande website. Zie [Een interactieve video integreren met uw website](#integrating-an-interactive-video-with-your-website).
@@ -522,7 +528,9 @@ Als u interactiviteit hebt toegevoegd met Snelle weergaven, gebruikt u alleen de
 De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat deze automatisch past in het gebied dat eerder werd ingenomen door de statische video.
 
 >[!NOTE]
+>
 Als u nu alleen interactiviteit met hypergekoppelde webpagina&#39;s hebt toegevoegd, bent u klaar.
+>
 Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren, gelden de miniaturen naast de interactieve video alleen voor weergavedoeleinden. deze zijn nog niet geïntegreerd met uw bestaande Snelle weergaven. In dat geval moet u de interactieve video integreren met bestaande Snelle weergaven op uw website.
 
 **Voorbeeld**
@@ -565,6 +573,7 @@ Integratie is zo eenvoudig als het verwijderen van de video-insluitcode en het v
 ## Een interactieve video integreren met een bestaande QuickView {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
+>
 Deze taak is alleen van toepassing als u een zelfstandige Experience Manager Assets-klant bent.
 
 De laatste stap in dit proces is het integreren van uw interactieve video met een bestaande implementatie van QuickView die op uw website wordt gebruikt. Er is geen oplossing voor de integratie die in alle gevallen werkt. Elke Quickview-implementatie is uniek. Daarom is een specifieke aanpak nodig waarbij een front-end IT-persoon wordt bijgestaan.
@@ -622,7 +631,7 @@ De insluitcode die door Experience Manager wordt geretourneerd, heeft al een geb
      var sku=inData.sku; //SKU for product ID
     //To pass other parameter from the hotspot, you need to add custom parameter during the hotspot setup as parameterName=value
     loadQuickView(sku); //Replace this call with your quickview plugin
-    //Please refer to your quickviewer plugin for the quickview call
+    //See your quickviewer plugin for the quickview call
     },
 "initComplete":function() {
     //--- Attach quickview popup to viewer container so popup will work in fullscreen mode ---

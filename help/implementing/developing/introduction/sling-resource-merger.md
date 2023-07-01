@@ -2,9 +2,9 @@
 title: Het gebruiken van de Verzameling van Middel in Adobe Experience Manager as a Cloud Service
 description: De het Verdelen Samenvoeging van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1160'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Sling Resource Merger verleent de diensten om tot middelen toegang te hebben en 
 
 Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getreden middelen en/of de eigenschappen samengevoegd met de originele middelen/eigenschappen:
 
-* De inhoud van de aangepaste definitie heeft een hogere prioriteit dan die van het origineel (d.w.z. *bedekkingen* of *overschrijvingen* het).
+* De inhoud van de aangepaste definitie heeft een hogere prioriteit dan die van het origineel (dat wil zeggen *bedekkingen* of *overschrijvingen* het).
 
 * Indien nodig [eigenschappen](#properties) Geef aan hoe inhoud die is samengevoegd met het origineel, moet worden gebruikt.
 
@@ -117,7 +117,7 @@ In het bovenstaande overlayvoorbeeld zijn dus de volgende knooppunten nodig:
 
 >[!NOTE]
 >
->Wanneer u de samenvoeging van de slingerende bron gebruikt (d.w.z. wanneer u werkt met de standaard, interface met aanraakbediening), wordt het niet aanbevolen om de volledige structuur te kopiëren van `/libs` omdat het zou leiden tot te veel informatie in `/apps`. Dit kan problemen veroorzaken wanneer het systeem op om het even welke manier wordt bevorderd.
+>Wanneer u de samenvoeging van het Sling Resource (dat wil zeggen, wanneer u werkt met de standaard, interface met aanraakbediening) gebruikt, wordt het niet aanbevolen om de volledige structuur te kopiëren van `/libs` omdat het zou leiden tot te veel informatie in `/apps`. Dit kan problemen veroorzaken wanneer het systeem op om het even welke manier wordt bevorderd.
 
 ### Gevallen gebruiken {#use-cases}
 

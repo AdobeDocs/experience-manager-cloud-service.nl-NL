@@ -2,9 +2,9 @@
 title: Handleiding Snel aan de slag met de authoring van pagina's
 description: Een snelle gids op hoog niveau waarmee u pagina-inhoud kunt gaan ontwerpen
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1569'
 ht-degree: 4%
 
 ---
@@ -270,7 +270,7 @@ Deze acties kunnen allemaal worden geactiveerd door:
 [Door een pagina te vergrendelen](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) voorkomt u dat andere auteurs op hetzelfde moment als u op de pagina kunnen werken. Het pictogram/de knop Vergrendelen (en Ontgrendelen) vindt u hier:
 
 * De werkbalk wanneer uw [pagina is geselecteerd](#selecting-your-page-for-further-action).
-* De [Paginagegevens, vervolgkeuzelijst](#editing-the-page-properties) wanneer u een pagina bewerkt.
+* De [Vervolgkeuzelijst Pagina-informatie](#editing-the-page-properties) wanneer u een pagina bewerkt.
 * De pagina-werkbalk tijdens het bewerken van een pagina (wanneer de pagina is vergrendeld)
 
 Het vergrendelingspictogram ziet er bijvoorbeeld als volgt uit:

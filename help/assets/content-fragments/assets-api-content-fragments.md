@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service Content Fragments Support in 
 description: Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een belangrijk stuk van AEM koploze leveringseigenschap.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1785'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,6 @@ Bijvoorbeeld om `/content/dam/wknd/en/adventures/cycling-tuscany`, verzoek `/api
 >
 >* `/api/assets` **niet** het gebruik van de `.model` kiezer.
 >* `/content/path/to/page` **doet** het gebruik van de `.model` kiezer.
-
 
 De HTTP-methode bepaalt de uit te voeren bewerking:
 
@@ -154,7 +153,6 @@ Als de REST API van Middelen binnen een milieu zonder specifieke authentificatie
 >* [Video - Ontwikkelen voor CORS met AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 >
 
-
 In omgevingen met specifieke verificatievereisten wordt OAuth aanbevolen.
 
 ## Beschikbare functies {#available-features}
@@ -177,7 +175,7 @@ De reactie zal het pagineren informatie als deel van bevatten `properties` van d
 
 >[!NOTE]
 >
->Paginering wordt doorgaans toegepast op containerentiteiten (d.w.z. mappen of elementen met uitvoeringen), aangezien deze betrekking hebben op de onderliggende elementen van de aangezochte entiteit.
+>Pagina&#39;s worden doorgaans toegepast op containerentiteiten (dat wil zeggen mappen of elementen met uitvoeringen), omdat ze betrekking hebben op de onderliggende elementen van de aangezochte entiteit.
 
 #### Voorbeeld: Paginering {#example-paging}
 
@@ -230,7 +228,7 @@ Inhoudsfragmenten:
 * Maak geen binaire gegevens beschikbaar.
 * volledig ingesloten in de JSON-uitvoer (binnen de `properties` eigenschap).
 
-* Wordt ook als atomisch beschouwd, d.w.z. de elementen en variaties worden blootgesteld als onderdeel van de eigenschappen van het fragment ten opzichte van als koppelingen of onderliggende entiteiten. Op deze manier hebt u efficiënt toegang tot de lading van een fragment.
+* Wordt ook als atomisch beschouwd, dat wil zeggen dat de elementen en variaties worden blootgesteld als onderdeel van de eigenschappen van het fragment in plaats van als koppelingen of onderliggende entiteiten. Op deze manier hebt u efficiënt toegang tot de lading van een fragment.
 
 #### Inhoudsmodellen en Inhoudsfragmenten {#content-models-and-content-fragments}
 
@@ -275,68 +273,71 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
 * **200** (OK)
 
-   Geretourneerd wanneer:
+  Geretourneerd wanneer:
 
    * een inhoudsfragment aanvragen via `GET`
    * het bijwerken van een inhoudsfragment via `PUT`
 
 * **201** (Gemaakt)
 
-   Geretourneerd wanneer:
+  Geretourneerd wanneer:
 
    * een inhoudsfragment maken via `POST`
 
 * **404** (Niet gevonden)
 
-   Geretourneerd wanneer:
+  Geretourneerd wanneer:
 
    * het gewenste inhoudsfragment bestaat niet
 
 * **500** (Interne serverfout)
 
-   >[!NOTE]
-   >
-   >Deze fout wordt geretourneerd:
-   >
-   >* wanneer een fout is opgetreden die niet met een specifieke code kan worden geïdentificeerd
-   >* wanneer de opgegeven lading niet geldig was
+  >[!NOTE]
+  >
+  >Deze fout wordt geretourneerd:
+  >
+  >* wanneer een fout is opgetreden die niet met een specifieke code kan worden geïdentificeerd
+  >* wanneer de opgegeven lading niet geldig was
 
-
-   In het volgende voorbeeld worden algemene scenario&#39;s weergegeven wanneer deze foutstatus wordt geretourneerd, samen met het gegenereerde foutbericht (monospace):
+  In het volgende voorbeeld worden algemene scenario&#39;s weergegeven wanneer deze foutstatus wordt geretourneerd, samen met het gegenereerde foutbericht (monospace):
 
    * Bovenliggende map bestaat niet (wanneer u een inhoudsfragment maakt via `POST`)
    * Er is geen inhoudsfragmentmodel opgegeven (cq:model ontbreekt), kan niet worden gelezen (vanwege een ongeldig pad of een machtigingsprobleem) of er is geen geldig fragmentmodel:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
+
    * Het inhoudsfragment kan niet worden gemaakt (mogelijk een probleem met de machtigingen):
 
       * `Could not create content fragment`
+
    * Titel en/of beschrijving kunnen niet worden bijgewerkt:
 
       * `Could not set value on content fragment`
+
    * Kan metagegevens niet instellen:
 
       * `Could not set metadata on content fragment`
+
    * Het element Content kan niet worden gevonden of kan niet worden bijgewerkt
 
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-   De gedetailleerde foutberichten worden meestal als volgt geretourneerd:
+  De gedetailleerde foutberichten worden meestal als volgt geretourneerd:
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## API-naslag {#api-reference}
 

@@ -2,9 +2,9 @@
 title: Exporteren van ervaringsfragmenten naar Adobe Target
 description: Exporteren van ervaringsfragmenten naar Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '2245'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ U kunt Experience Fragments exporteren naar de standaardwerkruimte in Adobe Targ
 
 >[!NOTE]
 >
->Zie ook voor meer informatie:
+>Raadpleeg de volgende secties voor meer informatie:
 >
 >* [Adobe Target-ontwikkeling](https://developers.adobetarget.com/)
 >* [Kernonderdelen - Ervaar fragmenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
@@ -240,7 +240,7 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel tot stand 
 
    <!-- ![config-target-framework-dialog](assets/config-target-framework-dialog.png) -->
 
-   De pagina Framework wordt geopend. Sidetrap biedt componenten die informatie van de [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) dat u kunt toewijzen.
+   De pagina Framework wordt geopend. Sidekick verstrekt componenten die informatie van de [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) dat u kunt toewijzen.
 
    <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
 
@@ -356,7 +356,7 @@ Een ervaringsfragment exporteren van AEM naar doel (na het opgeven van de cloudc
 
 ## Uw ervaringsfragmenten in Adobe Target gebruiken {#using-your-experience-fragments-in-adobe-target}
 
-Na het uitvoeren van de voorafgaande taken, toont het ervaringsfragment op de pagina van Aanbiedingen in Doel. Kijk eens naar de [specifieke doeldocumentatie](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) om te leren wat je daar kunt bereiken.
+Na het uitvoeren van de voorafgaande taken, toont het ervaringsfragment op de pagina van Aanbiedingen in Doel. Zie [specifieke doeldocumentatie](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) om te leren wat je daar kunt bereiken.
 
 >[!NOTE]
 >

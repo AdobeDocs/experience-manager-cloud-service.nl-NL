@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '6274'
+source-wordcount: '6273'
 ht-degree: 8%
 
 ---
@@ -22,7 +22,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 
 *Dynamic Media Viewers* Met de extensie Experience Platform Tags en Dynamic Media Viewers 5.13 kunnen klanten met Adobe Analytics- en Experience Platform Tags gebeurtenissen en gegevens gebruiken die specifiek zijn voor Dynamic Media Viewers in hun configuratie met Experience Platform Tags.
 
-Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw website bijhouden met Adobe Analytics. Tegelijkertijd kunt u de gebeurtenissen en gegevens gebruiken die door de viewers beschikbaar worden gesteld, met een andere extensie Experience Platform Tags die afkomstig is van Adobe of een derde.
+Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw website bijhouden met Adobe Analytics. Tegelijkertijd kunt u de gebeurtenissen en gegevens gebruiken die door de viewers beschikbaar worden gesteld, met elke andere extensie Experience Platform Tags die afkomstig is van Adobe of een derde.
 
 Voor meer informatie over Adobe-extensies of extensies van derden raadpleegt u [Adobe-extensies](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html) in de gebruikershandleiding voor tags Experience Platform.
 

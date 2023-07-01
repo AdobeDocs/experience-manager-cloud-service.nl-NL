@@ -2,7 +2,7 @@
 title: Technische stichtingen AEM
 description: Een overzicht van de technische fundamenten van AEM, inclusief hoe AEM is gestructureerd en fundamentele technologieën zoals JCR, Sling en OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2144'
 ht-degree: 0%
@@ -162,7 +162,7 @@ Wanneer u het vorige voorbeeld gebruikt, `sling:resourceType` is `hr/jobs` vervo
    * Bijvoorbeeld, `../content/corporate/jobs/developer.pdf`
    * Het script is `/apps/hr/jobs/jobs.pdf.esp`; het achtervoegsel wordt toegevoegd aan de manuscriptnaam.
 * URL&#39;s met kiezers
-   * Kiezers kunnen worden gebruikt om dezelfde inhoud in een andere indeling weer te geven. Bijvoorbeeld een printervriendelijke versie, een rss-feed of een overzicht.
+   * Kiezers kunnen worden gebruikt om dezelfde inhoud in een andere indeling weer te geven. Bijvoorbeeld een printervriendelijke versie, een rss feed of een samenvatting.
    * Als u een printervriendelijke versie bekijkt waarin de kiezer mogelijk `print`; zoals in `../content/corporate/jobs/developer.print.html`
    * Het script is `/apps/hr/jobs/jobs.print.esp`; de kiezer wordt toegevoegd aan de scriptnaam.
 * Zo nee, `sling:resourceType` wordt dan gedefinieerd:

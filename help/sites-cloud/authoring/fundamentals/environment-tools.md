@@ -2,7 +2,7 @@
 title: Ontwerpomgeving en -gereedschappen
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2153'
 ht-degree: 11%
@@ -85,7 +85,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
   Vanaf de bovenste werkbalk in het dialoogvenster **Componenten** browser die u kunt:
 
    * Componenten filteren op naam.
-   * Beperk de weergave tot een specifieke groep met behulp van de keuzelijst.
+   * Beperk de weergave tot een specifieke groep met behulp van de vervolgkeuzelijst.
 
   Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor **Inhoudsfragment**:
 
@@ -152,7 +152,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
 >[!NOTE]
 >
->Een mobiel apparaat wordt ontdekt wanneer de breedte minder dan 1024px is; dat wil zeggen ook in een klein bureaubladvenster.
+>Een mobiel apparaat wordt ontdekt wanneer de breedte minder dan 1024px is; dat wil zeggen, ook in een klein bureaubladvenster.
 
 Als u snel een wijziging in een element moet aanbrengen, kunt u de opdracht [middeleneditor](/help/assets/manage-digital-assets.md) rechtstreeks vanuit de elementenbrowser door op het bewerkingspictogram naast de naam van het element te klikken.
 

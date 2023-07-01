@@ -3,7 +3,7 @@ title: OSGi configureren voor Adobe Experience Manager as a Cloud Service
 description: OSGi-configuratie met geheime waarden en milieu-specifieke waarden
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '3318'
 ht-degree: 0%
@@ -293,7 +293,7 @@ Men adviseert dat een eenvoudig bash manuscript wordt geschreven dat de milieuva
 
 De waarden voor geheimen worden gelezen uit bestanden. Daarom moet voor elke plaatsaanduiding die een geheim gebruikt, een tekstbestand met de geheime waarde worden gemaakt.
 
-Bijvoorbeeld: `$[secret:server_password]` wordt gebruikt, een tekstbestand genaamd **server_password** moet worden gemaakt. Al deze geheime dossiers moeten in de zelfde folder en het kader bezit worden opgeslagen `org.apache.felix.configadmin.plugin.interpolation.secretsdir` moet met die lokale folder worden gevormd.
+Als `$[secret:server_password]` wordt gebruikt, een tekstbestand genaamd **server_password** moet worden gemaakt. Al deze geheime dossiers moeten in de zelfde folder en het kader bezit worden opgeslagen `org.apache.felix.configadmin.plugin.interpolation.secretsdir` moet met die lokale folder worden gevormd.
 
 >[!CAUTION]
 >

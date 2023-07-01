@@ -2,10 +2,10 @@
 title: Contentfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 1%
+source-wordcount: '1811'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +46,7 @@ CFM (Content Fragment Management) maakt deel uit van AEM Assets als:
 
 * Inhoudsfragmenten zijn elementen.
 * Ze gebruiken de bestaande functionaliteit Elementen.
-* Ze zijn volledig geïntegreerd met middelen (beheerconsoles, enz.).
+* Ze zijn volledig geïntegreerd met Elementen (beheerconsoles, enzovoort).
 
 Inhoudsfragmenten worden als volgt beschouwd als een functie Sites:
 
@@ -106,7 +106,7 @@ Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met 
 
 * De component staat tussenliggende inhoud toe:
 
-   * Hier kunt u andere elementen (afbeeldingen, enz.) plaatsen tussen de alinea&#39;s van het fragment waarnaar wordt verwezen.
+   * Hier kunt u andere elementen (afbeeldingen, enzovoort) tussen de alinea&#39;s van het fragment waarnaar wordt verwezen plaatsen.
 
    * Voor tussenliggende inhoud moet u:
 
@@ -278,7 +278,7 @@ Zie het volgende:
 
 >[!CAUTION]
 >
->Houd rekening met deze achtergrondinformatie. U mag hier niets wijzigen (omdat het als een *privégebied* in de opslagplaats), maar het zou in sommige gevallen kunnen helpen begrijpen hoe dingen onder de kap werken.
+>Overweeg deze achtergrondinformatie. U mag hier niets wijzigen (omdat het als een *privégebied* in de opslagplaats), maar het zou in sommige gevallen kunnen helpen begrijpen hoe dingen onder de kap werken.
 
 Het bewerken van een inhoudsfragment, dat meerdere weergaven kan beslaan (= HTML pagina&#39;s), is atomisch. Aangezien dergelijke atomische multi-view bewerkingsmogelijkheden geen typisch AEM concept zijn, gebruiken de inhoudsfragmenten wat wordt genoemd een *bewerksessie*.
 

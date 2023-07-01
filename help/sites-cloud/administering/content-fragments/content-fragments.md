@@ -4,9 +4,9 @@ description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) 
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2122'
 ht-degree: 3%
 
 ---
@@ -87,7 +87,7 @@ Deze inhoudsfragmenten kunnen vervolgens worden samengevoegd om via verschillend
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Zie ook voor meer informatie [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>Zie voor meer informatie [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 ## Inhoudsfragmenten en inhoudsservices {#content-fragments-and-content-services}
 
@@ -147,7 +147,7 @@ Inhoudsfragmenten zijn een inhoudsstructuur die:
 * Kan [afbeeldingen bevatten of ermee verbonden zijn](#fragments-with-visual-assets).
 * Kan gebruiken [tussenliggende inhoud](#in-between-content-when-page-authoring-with-content-fragments) wanneer verwezen op een pagina.
 
-* zijn onafhankelijk van het leveringsmechanisme (d.w.z. pagina, kanaal).
+* Zijn onafhankelijk van het leveringsmechanisme (namelijk pagina, kanaal).
 
 ### Fragmenten met visuele elementen {#fragments-with-visual-assets}
 
@@ -294,7 +294,7 @@ Als u de Content Fragments wilt gebruiken voor het ontwerpen van pagina&#39;s, h
 
    * Instrumentaal voor het leveren van het fragment in HTML- en/of JSON-indeling.
    * Vereist voor [verwijzen naar het fragment op een pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Verantwoordelijk voor de lay-out en levering van een fragment; d.w.z. kanalen.
+   * Verantwoordelijk voor de lay-out en levering van een fragment; dat wil zeggen kanalen .
    * Fragmenten hebben een of meer specifieke componenten nodig om de lay-out te definiëren en om enkele of alle elementen/variaties en bijbehorende inhoud te leveren.
    * Als u een fragment naar een pagina sleept tijdens het ontwerpen, wordt de vereiste component automatisch gekoppeld.
 

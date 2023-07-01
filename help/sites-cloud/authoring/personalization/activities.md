@@ -2,9 +2,9 @@
 title: Activiteiten beheren
 description: Met de activiteitenconsole kunt u de marketingactiviteiten van uw merken maken, organiseren en beheren
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2020'
 ht-degree: 18%
 
 ---
@@ -29,7 +29,7 @@ De activiteiten worden getoond met een etiket beschrijvend welke soort activitei
 
 * XT - Adobe Target-ervaring gericht
 * A/B - Adobe Target A/B-tests
-* AEM - Adobe Experience Manager gericht (d.w.z. aangestuurd ContextHub)
+* AEM - Adobe Experience Manager gericht (namelijk gedreven ContextHub)
 
 ![Typen activiteiten](/help/sites-cloud/authoring/assets/activities-types.png)
 

@@ -2,9 +2,9 @@
 title: Contentfragmenten die componenten voor rendering configureren
 description: Contentfragmenten die componenten voor rendering configureren
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '524'
 ht-degree: 4%
 
 ---
@@ -36,7 +36,7 @@ U wordt aangeraden de Core Components (Basiscomponenten) te gebruiken.
 
 De diensten die de registratie van een component vereisen zijn:
 
-* De afhankelijkheden correct bepalen tijdens de publicatie (zorg er dus voor dat fragmenten en modellen automatisch met een pagina kunnen worden gepubliceerd als ze zijn gewijzigd sinds de laatste publicatie).
+* De afhankelijkheden correct bepalen tijdens de publicatie (dat wil zeggen dat fragmenten en modellen automatisch met een pagina kunnen worden gepubliceerd als ze zijn gewijzigd sinds de laatste publicatie).
 * Ondersteuning voor inhoudsfragmenten in volledige tekstzoekopdracht.
 * Het beheer/de verwerking van *tussenliggende inhoud.*
 * Het beheer/de verwerking van *gemengde media-elementen.*
@@ -93,7 +93,7 @@ De configuratie OSGi is:
  </tbody>
 </table>
 
-Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde conventies houden. In de volgende tabel worden de eigenschappen weergegeven die door de component voor elke alinea (d.w.z. `jcr:paragraph` voor elke componentinstantie) zodat de services deze op de juiste wijze kunnen detecteren en verwerken.
+Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde conventies houden. In de volgende tabel worden de eigenschappen weergegeven die door de component voor elke alinea moeten worden gedefinieerd (dat wil zeggen: `jcr:paragraph` voor elke componentinstantie) zodat de services deze op de juiste wijze kunnen detecteren en verwerken.
 
 <table>
  <thead>

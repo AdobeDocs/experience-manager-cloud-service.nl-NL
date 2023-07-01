@@ -2,9 +2,9 @@
 title: Inleiding tot Sandbox-programma's
 description: Leer welke sandboxprogramma's verschillen van productieprogramma's.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Leer welke sandboxprogramma&#39;s verschillen van productieprogramma&#39;s.
 
 Een zandbakprogramma wordt typisch gecreeerd om ten behoeve van opleiding, lopende demo&#39;s, enablement, of het bewijs van concepten (POCs) te dienen en daarom niet bedoeld om levend verkeer te vervoeren.
 
-Een sandboxprogramma is een van de twee soorten programma&#39;s die beschikbaar zijn in AEM Cloud Service, terwijl het andere een [productieprogramma.](introduction-production-programs.md) Raadpleeg het document [Programma&#39;s en programmatypen begrijpen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor meer informatie over programmatypen.
+Een sandboxprogramma is een van de twee soorten programma&#39;s die beschikbaar zijn in AEM Cloud Service, terwijl het andere een [productieprogramma.](introduction-production-programs.md) Zie [Programma&#39;s en programmatypen begrijpen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor meer informatie over programmatypen.
 
 ## Automatisch maken {#auto-creation}
 
@@ -49,7 +49,7 @@ Aangepaste domeinen en IP-lijsten van gewenste personen zijn niet beschikbaar in
 
 ### Geen geavanceerde netwerken {#advanced-networking}
 
-[Geavanceerde netwerkfuncties](/help/security/configuring-advanced-networking.md) (bijvoorbeeld, zelf-dient levering van VPN, niet-standaardhavens, specifieke IP adressen van de uitgang, enz.) zijn niet beschikbaar in sandboxprogramma&#39;s.
+[Geavanceerde netwerkfuncties](/help/security/configuring-advanced-networking.md) (bijvoorbeeld, zelf-serverlevering van VPN, niet-standaardhavens, specifieke IP adressen van de uitgang, etc.) zijn niet beschikbaar in zandbakprogramma&#39;s.
 
 ### Handmatige AEM {#updates}
 
@@ -58,9 +58,9 @@ AEM updates worden niet automatisch doorgegeven aan sandboxprogramma&#39;s, maar
 * Een handupdate kan slechts worden in werking gesteld wanneer het gerichte milieu een behoorlijk gevormde pijpleiding heeft.
 * Een handmatige update van een productie- of testomgeving werkt automatisch de andere bij. De Production+Stage-omgeving moet zich op dezelfde AEM bevinden.
 
-Raadpleeg het document [AEM versies bijwerken](/help/implementing/deploying/aem-version-updates.md) voor meer informatie .
+Zie [AEM versies bijwerken](/help/implementing/deploying/aem-version-updates.md) voor meer informatie .
 
-Raadpleeg het document [Omgeving bijwerken](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) voor meer informatie over het bijwerken van een omgeving.
+Zie [Omgeving bijwerken](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) voor meer informatie over het bijwerken van een omgeving.
 
 ### Sluimerstand en verwijdering {#hibernation}
 

@@ -4,9 +4,9 @@ description: Maak kennis met de introductie van het hergebruik van inhoud met AE
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2706'
 ht-degree: 0%
 
 ---
@@ -155,7 +155,7 @@ Als inleiding, verstrekt de volgende lijst een overzicht van de belangrijkste te
 | Bron | De originele pagina&#39;s die als basis voor Actieve exemplaren worden gebruikt | Gelijk aan blauwdrukken en/of vervagingspagina&#39;s |
 | Live kopie | De kopie (van de bron), onderhouden door synchronisatiehandelingen zoals gedefinieerd door de rollout-configuraties |  |
 | Configuratie van live kopiëren | Definitie van de configuratiedetails voor een Live Copy |  |
-| Live relatie | Effectieve definitie van de overerving van een bepaalde bron, d.w.z. de verbinding(en) tussen de bron en actieve kopieën | Hiermee zorgt u ervoor dat wijzigingen in de bron kunnen worden gesynchroniseerd met Live Copy |
+| Live relatie | Effectieve definitie van de overerving voor een bepaalde bron, namelijk de verbinding(en) tussen de bron en actieve kopieën | Hiermee zorgt u ervoor dat wijzigingen in de bron kunnen worden gesynchroniseerd met Live Copy |
 | Blauwdruk | Gelijk aan bron | Kan worden gedefinieerd door een configuratie van een blauwdruk |
 | Blauwdrukconfiguratie | Vooraf gedefinieerde configuratie die een bronpad opgeeft | Wanneer in een blauwdrukconfiguratie naar een blauwdrukpagina wordt verwezen, wordt de opdracht Uitrollen beschikbaar |
 | Hoofdstuk | De gedeelten van de blauwdruk die moeten worden opgenomen in de actieve kopie | Dit zijn doorgaans subpagina&#39;s van de hoofdmap |

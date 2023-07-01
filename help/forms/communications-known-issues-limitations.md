@@ -2,9 +2,9 @@
 title: Bekende problemen en best practices
 description: Communicatie beste praktijken, bekende kwesties, en beperkingen
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -161,11 +161,11 @@ In de volgende tabel worden XCI-opties opgegeven.
 
 * U kunt een specifiek rendertype (PDF, AFDRUKKEN) slechts eenmaal gebruiken in de lijst met afdrukopties. U kunt bijvoorbeeld niet beschikken over twee PRINT-opties die elk een PCL-rendertype opgeven.
 
-* Voor een batchconfiguratie is slechts één instantie van een combinatie van waarden van OutputType (PDF, PRINT) en RenderType (PostScript, PCL, IPL, ZPL, enz.) is toegestaan.
+* Voor een batchconfiguratie is slechts één instantie van combinatie van waarden van OutputType (PDF, PRINT) en RenderType (PostScript, PCL, IPL, ZPL, enzovoort) toegestaan.
 
 * Voor asynchrone API&#39;s (batchverwerking) is het standaard recordniveau ingesteld op 2. U kunt een aangepaste XCI gebruiken om het recordniveau te wijzigen in 1.
 
-* Wanneer de standaard-XCI is geconfigureerd, bevat deze paden tot de oorspronkelijke uitvoering. Bijvoorbeeld `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+* Wanneer de standaard-XCI is geconfigureerd, bevat deze paden tot de oorspronkelijke uitvoering. Bijvoorbeeld, `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 

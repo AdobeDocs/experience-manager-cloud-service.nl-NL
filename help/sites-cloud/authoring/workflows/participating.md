@@ -2,9 +2,9 @@
 title: Deelnemen aan workflows
 description: Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit op een pagina of element uitvoert.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1537'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Voer de volgende procedure uit om het werkitem te voltooien:
 1. Open de **[AEM Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteren **Voltooid** op de werkbalk.
-1. De **Voltooid het werkitem** wordt geopend. Selecteer **Volgende stap** van de drop down selecteur en voeg een **Opmerking** indien nodig.
+1. De **Voltooid het werkitem** wordt geopend. Selecteer **Volgende stap** van de drop-down selecteur en voeg toe **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
 
 #### Een stap voor een deelnemer voltooien - Pagina-editor {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ Voer de volgende procedure uit om het werkitem te voltooien:
 
 1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Selecteren **Voltooid** in de statusbalk bovenaan.
-1. De **Voltooid het werkitem** wordt geopend. Selecteer **Volgende stap** van de drop down selecteur en voeg een **Opmerking** indien nodig.
+1. De **Voltooid het werkitem** wordt geopend. Selecteer **Volgende stap** van de drop-down selecteur en voeg toe **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
 
 #### Een deelnemersstap voltooien - tijdlijn {#completing-a-participant-step-timeline}

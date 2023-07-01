@@ -2,7 +2,7 @@
 title: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 description: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2812'
 ht-degree: 1%
@@ -191,15 +191,15 @@ AEM Forms als Cloud Services biedt een docker-gebaseerde SDK-omgeving voor een e
    * (Apple macOS) Installeren [Docker Desktop voor Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Dit omvat Docker Engine, Docker CLI-client, Docker Compose, Docker Content Trust, Kubernetes en Credential Helper.
 
    * (Voor Linux®) Installeren [Docker Engine](https://docs.docker.com/engine/install/#server) en [Samenstellen dokken](https://docs.docker.com/compose/install/) op uw computer.
+
    >[!NOTE]
    >
    > * Voor Apple macOS, de omslagen van de lijst van gewenste personen die lokale instanties AEM Auteur bevatten.
    >
    > * Docker Desktop voor Windows ondersteunt twee achtergronden, Hyper-V
-      > (verouderd) en WSL2 (modern). Bestanden delen wordt automatisch
-      > beheerd door Docker wanneer het gebruiken van WSL2 (modern). U moet
-      > Configureer het delen van bestanden expliciet tijdens het gebruik van Hyper-V (verouderd).
-
+   > (verouderd) en WSL2 (modern). Bestanden delen wordt automatisch
+   > beheerd door Docker wanneer het gebruiken van WSL2 (modern). U moet
+   > Configureer het delen van bestanden expliciet tijdens het gebruik van Hyper-V (verouderd).
 
 1. Maak een map, bijvoorbeeld aem-sdk, parallel aan de auteur en publiceer instanties. Bijvoorbeeld C:\aem-sdk.
 
@@ -234,7 +234,7 @@ Met dit project kunt u Adaptive Forms maken, configuratie-updates, overlays impl
 ---------|----------|---------
 | Canvas 3.0 | Basis | Microsoft® Dynamics 365 |
 | Tranquil | Leeg | Salesforce |
-| Urbane |  |  |
+| Urbane |   |  |
 | Ultramarijn |  |  |
 | Beryl |  |  |
 

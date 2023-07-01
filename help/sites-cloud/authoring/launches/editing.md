@@ -2,9 +2,9 @@
 title: Lanceringen bewerken
 description: Nadat u een opstartafbeelding voor de pagina (of set pagina's) hebt gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina('s).
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '553'
 ht-degree: 17%
 
 ---
@@ -72,7 +72,7 @@ U kunt op elk gewenst moment pagina&#39;s toevoegen aan of verwijderen uit het b
 
 >[!NOTE]
 >
->Als u pagina&#39;s wilt toevoegen aan een opstart, moeten deze zich onder een gemeenschappelijke taalbasis bevinden. d.w.z. binnen één locatie.
+>Als u pagina&#39;s wilt toevoegen aan een opstart, moeten deze zich onder een gemeenschappelijke taalbasis bevinden. dat wil zeggen, binnen één site.
 
 ## Een opstartconfiguratie bewerken {#editing-a-launch-configuration}
 

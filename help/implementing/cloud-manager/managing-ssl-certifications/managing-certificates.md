@@ -2,9 +2,9 @@
 title: SSL-certificaten beheren
 description: Leer hoe u Cloud Manager gebruikt om de status van uw SSL-certificaten te controleren en hoe u deze kunt bewerken, vervangen, bijwerken en verwijderen.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Een SSL-certificaat kan worden vervangen door dezelfde stappen uit te voeren als
 
 Certificaten verwijderen uit Cloud Manager is een permanente handeling die niet ongedaan kan worden gemaakt. U kunt het beste SSL-bestanden lokaal opslaan voordat Adobe ze verwijdert in Cloud Manager.
 
-Met Cloud Manager kunt u geen SSL-certificaat verwijderen waaraan een of meer domeinen zijn gekoppeld. Alle bijbehorende domeinen moeten worden geschrapt alvorens het SSL certificaat te schrappen. Raadpleeg het document [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) voor meer informatie.
+Met Cloud Manager kunt u geen SSL-certificaat verwijderen waaraan een of meer domeinen zijn gekoppeld. Alle bijbehorende domeinen moeten worden geschrapt alvorens het SSL certificaat te schrappen. Zie [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) voor meer informatie.
 
 Ga als volgt te werk om een SSL-certificaat te verwijderen.
 
@@ -67,6 +67,6 @@ Als u een reeds bestaande CDN configuratie voor uw SSL certificaat hebt, is er e
 
 Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 
-Raadpleeg het document [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer informatie .
+Zie [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer informatie .
 
 Een soortgelijk bericht wordt ook gegeven op de **IP-Lijst van gewenste personen** en de **Omgevingen** pagina&#39;s voor milieu&#39;s die reeds bestaande configuraties CDN voor IP lijsten van gewenste personen of douanedomeinnamen hebben.

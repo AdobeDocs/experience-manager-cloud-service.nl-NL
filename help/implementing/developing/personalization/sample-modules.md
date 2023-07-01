@@ -2,7 +2,7 @@
 title: Voorbeeld van UI-moduletypen van ContextHub
 description: ContextHub verstrekt verscheidene modules van steekproefUI die u in uw oplossingen kunt gebruiken
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%
@@ -35,7 +35,7 @@ De broncode bevindt zich op `/libs/granite/contexthub/code/ui/container/js/Conte
 
 ### Configuratie {#configuration}
 
-Configureer de module contexthub.base UI met behulp van een Javascript-object in JSON-indeling. Omvat om het even welke volgende eigenschappen om de eigenschappen van de UI module te vormen:
+Configureer de module Contextthub.base UI met behulp van een JavaScript-object in JSON-indeling. Omvat om het even welke volgende eigenschappen om de eigenschappen van de UI module te vormen:
 
 * **afbeelding:** Een URL naar een afbeelding die als pictogram moet worden weergegeven.
 * **pictogram:** De naam van een [Pictogram Koraalinterface](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) klasse. Als u een waarde opgeeft voor zowel het pictogram als de afbeeldingseigenschappen, wordt de afbeelding gebruikt.

@@ -1,17 +1,17 @@
 ---
-title: ContextHub JavaScript API-naslaggids
+title: JavaScript API-naslaggids voor ContextHub
 description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de component ContextHub aan de pagina is toegevoegd
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 0%
 
 ---
 
-# ContextHub JavaScript API-naslaggids {#contexthub-javascript-api-reference}
+# JavaScript API-naslaggids voor ContextHub {#contexthub-javascript-api-reference}
 
-De JavaScript-API van ContextHub is beschikbaar voor uw scripts wanneer de [De component ContextHub is toegevoegd aan de pagina](adding-contexthub.md).
+De JavaScript-API van de ContextHub is beschikbaar voor uw scripts wanneer de [De component ContextHub is toegevoegd aan de pagina](adding-contexthub.md).
 
 ## ContextHub-constanten {#contexthub-constants}
 
@@ -62,7 +62,7 @@ De volgende lijst maakt een lijst van de namen van gebeurtenissen die voor Conte
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | Wordt geactiveerd wanneer de UI-container wordt geïnitialiseerd | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | Geeft de actieve UI-modus aan | `/_/active-ui-mode` |
 
-## ContextHub JavaScript API-naslaggids {#contexthub-javascript-api-reference-2}
+## JavaScript API-naslaggids voor ContextHub {#contexthub-javascript-api-reference-2}
 
 Het voorwerp ContextHub verleent toegang tot alle opslag.
 
@@ -369,7 +369,7 @@ A `boolean` waarde:
 
 Een opslag die JSON-gegevens bevat. De gegevens worden teruggewonnen van de externe dienst JSONP, of naar keuze van de dienst die JSON- gegevens terugkeert. Geef de servicedetails op met de [`init`](#init-name-config) wanneer u een instantie van deze klasse maakt.
 
-De opslag gebruikt in-geheugenpersistentie (variabele Javascript). De gegevens van de opslag zijn beschikbaar slechts tijdens het leven van de pagina.
+De opslag gebruikt persistentie in het geheugen (variabele JavaScript). De gegevens van de opslag zijn beschikbaar slechts tijdens het leven van de pagina.
 
 ContextHub.Store.JSONPStore extends [ContextHub.Store.Core](#contexthub-store-core) en neemt de functies van die klasse over.
 
@@ -441,7 +441,7 @@ initialiseert de `ContextHub.Store.JSONPStore` object.
 * **`config`:** (Object) Een object dat de eigenschap service bevat. Het JSONPStore-object gebruikt de eigenschappen van de `service` object voor het samenstellen van de URL van de JSONP-service:
    * `eventDeferring`: 32.
    * `eventing`: Het object ContextHub.Utils.Event voor deze winkel. De standaardwaarde is `ContextHub.eventing` object.
-   * `persistence`: Het object ContextHub.Utils.Persistence voor deze winkel. Standaard wordt geheugenpersistentie gebruikt (Javascript-object).
+   * `persistence`: Het object ContextHub.Utils.Persistence voor deze winkel. Standaard wordt geheugenpersistentie gebruikt (JavaScript-object).
    * `service`: (Object)
       * `host`: (Tekenreeks) De servernaam of het IP-adres.
       * `jsonp`: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt `{callback: "ContextHub.Callbacks.*Object.name*}`object wordt toegevoegd aan `service.params`.
@@ -489,7 +489,7 @@ Hiermee wordt de opgegeven parameter omgezet.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` extends [ContextHub.Store.Core](#contexthub-store-core) dus neemt het alle functies van die klasse over. De gegevens in deze opslag blijven behouden met in-memory persistance (Javascript-object).
+`ContextHub.Store.SessionStore` extends [ContextHub.Store.Core](#contexthub-store-core) dus neemt het alle functies van die klasse over. De gegevens in deze opslag blijven behouden met in-memory persistance (JavaScript-object).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -795,7 +795,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Serializes Javascript-waarden en -objecten in tekenreekswaarden in de JSON-indeling.
+Hiermee worden JavaScript-waarden en -objecten geserialiseerd naar tekenreekswaarden in de JSON-indeling.
 
 ##### Parameters {#parameters-stringify}
 
@@ -1045,7 +1045,7 @@ Een kopie van de `tree` object dat het `key`/ `value` paar.
 
 ##### Voorbeeld {#example-setitem-2}
 
-Overweeg de volgende Javascript-code:
+Overweeg de volgende JavaScript-code:
 
 ```javascript
 var myObject = {

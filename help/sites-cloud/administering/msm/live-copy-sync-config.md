@@ -4,7 +4,7 @@ description: Leer hoe u de krachtige synchronisatieopties van Live Copy kunt con
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 0%
@@ -123,7 +123,7 @@ In de volgende tabel worden de eigenschappen beschreven die u kunt configureren:
 
 Verscheidene eigenschappen en knooptypes worden uitgesloten door gebrek, worden deze bepaald in de configuratie OSGi van **Update-actie CQ MSM-inhoud**, onder **Eigenschappen van uitgesloten pagina**.
 
-Standaard worden eigenschappen die overeenkomen met de volgende reguliere expressies uitgesloten (d.w.z. niet bijgewerkt) bij rollout:
+Standaard worden eigenschappen die overeenkomen met de volgende reguliere expressies uitgesloten (dat wil zeggen niet bijgewerkt) bij rollout:
 
 ![Uitsluitingsregexx voor live kopiëren](../assets/live-copy-exclude.png)
 
@@ -196,7 +196,7 @@ De onderliggende pagina&#39;s van de blauwdrukpagina nemen de configuratie over.
 1. Gebruik de **Sites** -console om de basispagina van de blauwdruk te selecteren.
 1. Selecteren **Eigenschappen** op de werkbalk.
 1. Open de **Blauwdruk** tab.
-1. Selecteer een of meer **Uitrolconfiguraties** de keuzelijst gebruiken.
+1. Selecteer een of meer **Uitrolconfiguraties** met de keuzelijst.
 1. Updates blijven gebruiken met **Opslaan**.
 
 ### De standaardconfiguratie van de systeemuitrol instellen {#setting-the-system-default-rollout-configuration}

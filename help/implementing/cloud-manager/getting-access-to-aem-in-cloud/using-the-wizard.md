@@ -2,9 +2,9 @@
 title: Wizard Project maken
 description: Leer over de tovenaar van de projectverwezenlijking om u te helpen snel opstelling uw project na het creëren van uw productieprogramma.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Wanneer het programma is gemaakt, kunt u **Omgeving toevoegen** de kaart vervang
 
 U hebt nu een AEM project gebaseerd op het AEM archetype dat aan uw git bewaarplaats wordt toegevoegd als basis voor ontwikkeling voor uw eigen project. Daarna kunt u uw milieu&#39;s tot stand brengen waar u de projectcode kunt opstellen.
 
-Raadpleeg het document [Uw omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) om te leren hoe u omgevingen kunt toevoegen of beheren.
+Zie [Uw omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) om te leren hoe u omgevingen kunt toevoegen of beheren.
 
 >[!NOTE]
 >

@@ -3,9 +3,9 @@ title: Bevoegdheidsoverwegingen voor inhoud zonder kop
 description: Leer over verschillende toestemmings en ACL overwegingen voor een headless implementatie met Adobe Experience Manager. Begrijp de verschillende personen en de potentiële toestemmingsniveaus nodig voor zowel auteur als Publish milieu's.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Als u IMS gebruikt voor groepslidmaatschap, voegt u de juiste IMS-groepen toe al
 
 Het is beter om toestemmingen van een uit de bakgroep direct niet te wijzigen. In plaats daarvan kunt u ook uw eigen groep(en) maken die na de **DAM-gebruikers** groepsmachtigingen en de toegang tot verschillende **mappen** in AEM Assets.
 
-Voor meer granulaire machtigingen gebruikt u de optie **Machtigingen** console in AEM en werk het pad bij vanuit `/content/dam` naar een meer specifiek pad, d.w.z. `/content/dam/mycontentfragments`.
+Voor meer granulaire machtigingen gebruikt u de optie **Machtigingen** console in AEM en werk het pad bij vanuit `/content/dam` naar een meer specifiek pad, dat wil zeggen: `/content/dam/mycontentfragments`.
 
 Het kan wenselijk zijn om deze groep gebruikers toestemmingen te geven om inhoudsfragmenten tot stand te brengen en uit te geven maar niet te schrappen. Zie voor het controleren en toewijzen van machtigingen voor bewerken, maar niet verwijderen [Inhoudsfragmenten - Overwegingen verwijderen](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
 

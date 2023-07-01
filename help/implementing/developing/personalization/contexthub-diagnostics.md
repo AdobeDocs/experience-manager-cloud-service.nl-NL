@@ -2,9 +2,9 @@
 title: ContextHub Diagnostics
 description: ContextHub verstrekt een diagnostische pagina waar u een overzicht van het kader ContextHub kunt zien
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -52,8 +52,8 @@ In de sectie Clientlibs worden alle [clientbibliotheekmappen](/help/implementing
 De sectie URLs bevat verbindingen aan eigenschappen ContextHub:
 
 * **Configuratie-editor:** Hiermee opent u de [ContextHub Configuration-pagina](configuring-contexthub.md) waar u opslag, wijzen UI, en modules UI kunt vormen.
-* **Configuratie van ContextHub-modules:** Hiermee opent u de `/etc/cloudsettings/default/contexthub.config.kernel.js` bestand, dat de Javascript-objectrepresentatie van de ContextHub-opslagconfiguraties bevat.
-* **Configuratie van ContextHub UI:** Hiermee opent u de `/etc/cloudsettings/default/contexthub.config.ui.js` bestand, dat de Javascript-objectrepresentatie van de ContextHub UI-modusconfiguraties bevat.
+* **Configuratie van ContextHub-modules:** Hiermee opent u de `/etc/cloudsettings/default/contexthub.config.kernel.js` bestand, dat de JavaScript-objectrepresentatie van de ContextHub-opslagconfiguraties bevat.
+* **Configuratie van ContextHub UI:** Hiermee opent u de `/etc/cloudsettings/default/contexthub.config.ui.js` bestand, dat de JavaScript-objectrepresentatie bevat van de ContextHub UI-modusconfiguraties.
 * **kernel.js:** Hiermee opent u de `/etc/cloudsettings/default/contexthub.kernel.js` dossier, dat de broncode van de cliëntbibliotheken bevat die het kader ContextHub, de segmentmotor, en opslagtypes uitvoeren.
 * **ui.js:** Hiermee opent u de `/etc/cloudsettings/default/contexthub.ui.js` dossier, dat de broncode van de cliëntbibliotheken bevat die de ContextHub UI en UI moduletypes uitvoeren.
 * **style.css:** Hiermee opent u de `/etc/cloudsettings/default/contexthub.styles.css` bestand, dat de CSS-stijlen voor de modules ContextHub UI en UI bevat.

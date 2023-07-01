@@ -3,7 +3,7 @@ title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
 ht-degree: 1%
@@ -194,7 +194,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Wanneer `PERSISTENT_PATH` is een verkort pad naar de opslaglocatie van de Persisted-query.
 
-1. Bijvoorbeeld `wknd` is de configuratienaam en `plain-article-query` is de naam van de Persisted-query. De query uitvoeren:
+1. Bijvoorbeeld: `wknd` is de configuratienaam en `plain-article-query` is de naam van de Persisted-query. De query uitvoeren:
 
    ```shell
    $ curl -X GET \
@@ -396,7 +396,7 @@ Het veld `Respond with application/graphql-response+json` (`responseContentTypeG
 
 ## De URL van de query coderen voor gebruik door een app {#encoding-query-url}
 
-Voor gebruik door een toepassing worden speciale tekens gebruikt bij het samenstellen van queryvariabelen (dus puntkomma&#39;s (`;`), gelijkteken (`=`), slashes `/`) moet worden omgezet om de overeenkomstige UTF-8-codering te gebruiken.
+Voor gebruik door een toepassing worden speciale tekens gebruikt bij het samenstellen van queryvariabelen (puntkomma&#39;s (`;`), gelijkteken (`=`), slashes `/`) moet worden omgezet om de overeenkomstige UTF-8-codering te gebruiken.
 
 Bijvoorbeeld:
 
