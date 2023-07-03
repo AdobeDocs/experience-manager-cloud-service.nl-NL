@@ -3,32 +3,32 @@ title: Hoe kunt u een adaptief formulier toevoegen aan de AEM Sites-pagina?
 description: Ontdek hoe u eenvoudig een adaptief formulier kunt maken of toevoegen aan uw AEM Sites-pagina. Leer stapsgewijze technieken en tips en trucs voor het integreren van formulieren in uw website en het optimaliseren van uw digitale ervaringen voor maximale impact.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bbb01d049083d0aef09bc2365235a7930fb53070
 workflow-type: tm+mt
-source-wordcount: '3193'
+source-wordcount: '3212'
 ht-degree: 0%
 
 ---
 
 
-# Een adaptief formulier maken in een AEM Sites-pagina of AEM Experience Fragment {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# Een adaptief formulier maken in AEM Sites-pagina of Experience Fragment {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=en) |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-Met AEM Forms kunt u naadloos een adaptief formulier toevoegen aan uw AEM Sites-pagina. Zo kunnen bezoekers formulieren op een gemakkelijke manier invullen en verzenden zonder de pagina waarop ze staan te verlaten. Op die manier kunnen ze moeiteloos betrokken blijven bij andere elementen van de website terwijl ze actief met het formulier communiceren.
+Met AEM Forms kunt u naadloos een formulier toevoegen aan uw AEM Sites-pagina. Zo kunnen bezoekers formulieren op een gemakkelijke manier invullen en verzenden zonder de pagina waarop ze staan te verlaten. Op die manier kunnen ze moeiteloos betrokken blijven bij andere elementen van de website terwijl ze actief met het formulier communiceren.
 
-Met AEM paginaeditor kunt u snel meerdere formulieren maken en toevoegen aan uw AEM Sites-pagina&#39;s. Met AEM Pagina-editor kunnen auteurs van inhoud naadloze ervaringen met het vastleggen van gegevens maken op een sitepagina met behulp van de kracht van adaptieve formuliercomponenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van record- en bedrijfsprocesautomatisering. Bovendien kunt u verschillende functies van AEM Sites-pagina&#39;s gebruiken, zoals versioning, adressering, vertaling en beheer voor meerdere sites.
+Met AEM paginaeditor kunt u snel meerdere formulieren maken en toevoegen aan uw AEM Sites-pagina&#39;s. Met AEM Pagina-editor kunnen auteurs van inhoud naadloze ervaringen met het vastleggen van gegevens maken op een sitepagina met behulp van de kracht van adaptieve formuliercomponenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van records en de automatisering van bedrijfsprocessen. Bovendien kunt u verschillende functies van AEM Sites-pagina&#39;s gebruiken, zoals versioning, adressering, vertaling en beheer voor meerdere sites.
 
-AEM Forms biedt adaptieve formuliercontainer en adaptieve Forms - Embed-componenten. Met de component Adaptief Forms - Embed kunt u een bestaand adaptief formulier toevoegen of een nieuw formulier maken met de Adaptief Forms Editor.
+AEM Forms Cloud Service biedt adaptieve Form Container en Adaptive Forms - Embed-componenten. Met de component Adaptief Forms - Insluiten kunt u een bestaand adaptief formulier toevoegen of een nieuw formulier maken met de Adaptief Forms Editor.
 
 ![Een voorbeeld van een adaptief formulier in een AEM Sites-pagina](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-## Waarom een adaptief formulier maken in AEM Sites-pagina of AEM Experience Fragment?
+## Waarom gebruik Adaptive Forms Core Components om een adaptief formulier te maken op een AEM Sites-pagina of Experience Fragment?
 
-Met de adaptieve formuliercontainer in AEM paginaeditor kunt u naadloze ervaringen met het vastleggen van gegevens maken op een sitepagina met behulp van de kracht van Adaptieve Forms-componenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van record- en bedrijfsprocesautomatisering. Met deze functie kunt u ook verschillende functies van AEM Sites-pagina&#39;s gebruiken, zoals versioning, doelgericht maken, vertalen en beheer op meerdere sites, waardoor het maken en beheren van formulieren in hun geheel wordt verbeterd. Hieronder volgen enkele voorbeelden:
+Als u in het verleden adaptieve Forms Foundation Component of gewone HTML-formulieren voor uw sites hebt gemaakt, raadt Adobe aan om Adaptive Forms Core Components te gebruiken om een adaptief formulier te maken op de AEM Sites-pagina of in een fragment met experts. Hiermee kunt u verschillende functies van AEM Sites-pagina&#39;s gebruiken, zoals versioning, doelgericht maken, vertalen en beheer op meerdere sites, waardoor het maken en beheren van formulieren voor Adaptive Forms wordt verbeterd. Hieronder volgen enkele voorbeelden:
 
 * **Versioning:** Aanbieding voor AEM Sites-pagina&#39;s [robuuste versiemogelijkheden](/help/sites-cloud/authoring/features/page-versions.md), waarmee u verschillende versies van uw formulieren kunt bijhouden en beheren. Op deze manier kunt u wijzigingen aanbrengen en formulieren verbeteren terwijl u de mogelijkheid behoudt om indien nodig terug te draaien naar vorige versies. Versioning zorgt voor een beheerste en georganiseerde benadering van formulierontwikkeling en -ontwikkeling.
 * **Doelstelling (integratie met Adobe Target):** Met AEM Sites-pagina&#39;s die zich richten op mogelijkheden, kunt u ook [de formulierervaring aanpassen voor verschillende doelgroepen](/help/sites-cloud/integrating/integration-adobe-target-ims.md). Door gebruikerssegmenten te benutten en criteria als doel in te stellen, kunt u de inhoud, het ontwerp of het gedrag van het formulier aanpassen aan specifieke groepen gebruikers. Hierdoor kunt u een persoonlijke en relevante formulierervaring bieden, waardoor de betrokkenheid en conversiesnelheden toenemen.
@@ -38,7 +38,7 @@ Met de adaptieve formuliercontainer in AEM paginaeditor kunt u naadloze ervaring
 * **Tags:** Met AEM Sites-pagina&#39;s kunt u [tags of labels toewijzen aan een pagina, element of andere inhoud](/help/implementing/developing/introduction/tagging-framework.md). Tags zijn trefwoorden of metagegevenslabels waarmee u inhoud kunt indelen en indelen op basis van specifieke criteria. U kunt een of meer tags toewijzen aan pagina&#39;s, elementen of andere inhoudsonderdelen binnen AEM om de zoekopdracht te verbeteren en de elementen te categoriseren.
 * **Inhoud vergrendelen en ontgrendelen:** AEM Sites staat gebruikers toe om [toegang tot en wijzigingen in pagina&#39;s beheren](/help/sites-cloud/authoring/fundamentals/editing-content.md) in de AEM Sites-omgeving. Wanneer een pagina is vergrendeld, betekent dit dat deze is beveiligd tegen onbevoegde wijzigingen of bewerkingen door andere gebruikers. Alleen de gebruiker die de inhoud heeft vergrendeld of een aangewezen beheerder kan deze ontgrendelen om wijzigingen toe te staan.
 
-Daarnaast gebruikt Adaptive Forms in AEM Page Editor [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Deze kerncomponenten bieden een standaard en eenvoudigere methode om de componenten op te maken en aan te passen, identiek aan [AEM Sites WCM-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+Daarnaast gebruikt Adaptive Forms in AEM Page Editor [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Deze kerncomponenten bieden een standaard en eenvoudigere methode om de componenten op te maken en aan te passen, identiek aan [AEM Sites WCM-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 
 ## Hoe maakt u een adaptief formulier of voegt u dit toe aan een AEM Sites-pagina of AEM Experience-fragment? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -262,4 +262,9 @@ Bij het verzenden van een formulier kunt u de gebruiker omleiden naar een andere
 * [Stijlen of thema&#39;s maken voor uw formulieren](using-themes-in-core-components.md)
 * [Dynamisch gedrag toevoegen aan formulieren met de regeleditor](rule-editor.md)
 * [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+
+## Verwante artikelen {#related-article}
+
+* [Een op zichzelf staand adaptief formulier voor kerncomponenten maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
