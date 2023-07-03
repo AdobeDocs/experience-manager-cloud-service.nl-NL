@@ -4,9 +4,9 @@ description: PDF-documenten beheren in [!DNL Adobe Experience Manager] als [!DNL
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '853'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,7 @@ De PDF-viewer van Document Cloud profiteert AEM Assets op de volgende manieren:
 
 > Tip
 > Als u de voorvertoning van meerdere pagina&#39;s van een eerder geüpload PDF-document niet kunt ophalen, selecteert u de PDF en klikt u op **![Opnieuw verwerken](/help/assets/assets/Reprocess.svg) Elementen opnieuw verwerken**.
+>
 
 ## Ondersteuning voor PDF Document Cloud Viewer-componenten {#pdf-doc-cloud}
 
@@ -55,6 +56,7 @@ U kunt ook [annotaties](#pdf-annotations) op het PDF-document in een voorvertoni
 
 > OPMERKING
 > De maximale grootte van een element waarvan u een voorbeeld kunt bekijken, is 100 MB.
+>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -110,6 +112,10 @@ Hieronder vindt u de annotaties die kunnen worden toegepast op een PDF-document:
         </tr>
     </table>
 
+>[!NOTE]
+>
+>De annotaties die u toevoegt aan het PDF-document zijn beschikbaar in de voorvertoningsmodus. De annotaties worden echter niet weergegeven wanneer u het PDF-document downloadt of afdrukt.
+
 ## Ondersteuning voor Voorvertoning van meerdere pagina&#39;s voor documenten in andere indelingen {#multi-format}
 
 Naast de PDF-documenten kunt u ook een voorvertoning weergeven van meerdere pagina&#39;s voor documenten in andere indelingstypen. De ondersteunde documentindelingen zijn TXT, RTF, DOC, DOCX, PPT, PPTX, XLS en XLSX. Experience Manager Assets converteert deze documentindelingen automatisch naar een PDF-indeling en stelt deze beschikbaar voor een voorvertoning.
@@ -126,7 +132,6 @@ Voer de volgende stappen uit voor de voorvertoning van meerdere pagina&#39;s van
 > * De maximale grootte van een element waarvan u een voorbeeld kunt bekijken, is 100 MB.
 > * De maximale grootte van XLS- of XLSX-bestanden die u wilt voorvertonen, is 20 MB.
 >
-
 
 **Zie ook**
 

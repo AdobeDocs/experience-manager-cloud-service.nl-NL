@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '5039'
-ht-degree: 5%
+source-wordcount: '5101'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Het zoeken van middelen in AEM steunt de volgende gebruiksgevallen en dit artike
 | [Beperkingen](#limitations) en [Tips](#tips) | | |
 | [Afbeeldingsvoorbeelden](#samples) | | |
 
-Middelen zoeken met behulp van het veld Onderzoek boven aan het dialoogvenster [!DNL Experience Manager] webinterface. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], klikt u op ![search_icon](assets/do-not-localize/search_icon.png) Voer in de bovenste balk het trefwoord Zoeken in en selecteer `Return`. U kunt ook de trefwoordsneltoets gebruiken `/` (slash) om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. [!DNL Experience Manager] biedt suggesties als u begint met het typen van een trefwoord voor zoeken.
+Middelen zoeken met behulp van het veld Onderzoek boven aan het dialoogvenster [!DNL Experience Manager] webinterface. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], klikt u op ![search_icon](assets/do-not-localize/search_icon.png) Voer in de bovenste balk het trefwoord Zoeken in en selecteer `Return`. U kunt ook de trefwoordsneltoets gebruiken `/` (slash) om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. `Path:/content/dam` wordt ook weergegeven wanneer u zoekopdrachten uitvoert op het hoofdniveau in het dialoogvenster **[!UICONTROL Files]** map. Als u naar een andere map navigeert, `Path:/content/dam/<folder name>` wordt in het veld Onderzoek weergegeven om het zoekbereik te beperken tot de huidige map. [!DNL Experience Manager] biedt suggesties wanneer u een zoekwoord begint te typen.
 
 Gebruik de **[!UICONTROL Filters]** om te zoeken naar elementen, mappen, tags en metagegevens. U kunt zoekresultaten filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van element, gegevens over inzichten en Adobe Stock-licenties. U kunt het deelvenster Filters aanpassen en voorvertoningen van zoekopdrachten toevoegen of verwijderen met behulp van [zoekfacetten](/help/assets/search-facets.md). De [!UICONTROL File Type] filter in de [!UICONTROL Filters] heeft selectievakjes met gemengde status. Tenzij u alle geneste voorspellen (of indelingen) selecteert, worden de selectievakjes op het eerste niveau daarom gedeeltelijk gecontroleerd.
 
@@ -415,6 +415,7 @@ U kunt het volgende doen met de middelen u binnen hebt gezocht [!DNL Experience 
 * Een workflow starten
 * Relatieve of ongerelateerde elementen
 * Pas filters toe met behulp van het deelvenster Filters dat na het uitvoeren van de zoekopdracht automatisch wordt weergegeven om de zoekresultaten te beperken.
+* Navigeren naar de middelenlocatie
 
 ### Zoekresultaten sorteren {#sort}
 
@@ -466,6 +467,10 @@ Net als bij de functie voor het maken van een versie kunt u ook een workflow mak
 ### Relatieve en niet-gerelateerde elementen {#relate-unrelate-assets}
 
 Verwante en losse elementen die in de zoekresultaten worden weergegeven. Selecteer de elementen en klik op **[!UICONTROL Relate]** of **[!UICONTROL Unrelate]**.
+
+### Navigeren naar de locatie van de elementenmap {#navigate-asset-folder-location}
+
+Navigeer naar de maplocatie voor elementen die in de zoekresultaten worden weergegeven. Selecteer het element en klik op **[!UICONTROL Show File Location]**.
 
 ## Onverwachte zoekresultaten en problemen {#unexpected-results}
 
