@@ -1,16 +1,16 @@
 ---
 title: Hoe migreren van een AEM 6.5 Forms naar [!DNL AEM Forms] as a Cloud Service omgeving?
 description: Migreren van een [!DNL AEM Forms] (Op locatie en AMS-omgevingen) naar [!DNL AEM Forms] as a Cloud Service omgeving.
-keywords: 6.5-formulieren naar cloudservice, 6.5-formulieren naar cs, migratie 6.5-formulieren naar CS, migratie 6.5-formulieren naar cloudservice, upgrade 6.5-formulieren naar CS, verplaatsing 6.5-formulieren naar CS, upgrade AEM 6.5 naar CS
+keywords: 6.5-formulieren naar cloudservice, 6.5-formulieren naar cs, migratie 6.5-formulieren naar CS, migratie 6.5-formulieren naar cloudservice, upgrade 6.5-formulieren naar CS, verplaatsing 6.5-formulieren naar CS, upgrade AEM 6.5 naar CS, AEM Forms 6.5 naar Cloud Service, AEM migratie naar cloudservice
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: f6b8ef52ad551be70e665a14ce00c197d1470e84
+source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1517'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ Voer de volgende stappen uit om uw [!DNL AEM Forms] activa die verenigbaar zijn 
 
    De Cloud Service steunt geen manuscripten van de regelredacteur. De **[!UICONTROL Code editor script migration]** het hulpmiddel zet alle regelmanuscripten op uw milieu in herbruikbare functies om en past de herbruikbare functies op visuele redacteur op aangewezen plaats toe. Deze herbruikbare functies worden opgeslagen in de vorm van clientbibliotheken en zorgen ervoor dat de bestaande functionaliteit behouden blijft. Het gereedschap past automatisch de gegenereerde herbruikbare functies toe op de overeenkomstige adaptieve Forms.
 
-   Gebruik de [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) om de herbruikbare functies (Clientbibliotheken) naar een pakket te exporteren.
+   AEM de migratie van formulieren naar de Cloud Service [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) om de herbruikbare functies (Clientbibliotheken) naar een pakket te exporteren.
 
 1. [Implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager) het pakket herbruikbare functies (Client Libraries); [aangepaste code, componenten, configuraties](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager), aangepaste, landspecifieke bibliotheken voor uw [!DNL AEM] as a Cloud Service omgeving.
 
@@ -152,7 +152,7 @@ U kunt hieronder vermelde mappaden op het hoogste niveau toevoegen of specifieke
 * `/content/forms/af`
 * `/etc/clientlibs/fd/theme`
 
-Als u AEM workflowmodellen wilt migreren, geeft u de volgende paden op:
+Wanneer u AEM workflowmodellen van AEM Forms 6.5 naar Cloud Service migreert, geeft u de volgende paden op:
 
 * `/conf/global/settings/workflow/models/`
 * `/conf/global/settings/workflow/launcher`
