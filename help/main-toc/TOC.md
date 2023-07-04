@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: e60a734d7e0887a23978efac8d896ac3745dbb5d
+source-git-commit: 823d9875f1cd293df834cc6e2fc16fc8f7e0d37b
 workflow-type: tm+mt
-source-wordcount: '4150'
+source-wordcount: '4160'
 ht-degree: 20%
 
 ---
@@ -526,7 +526,6 @@ ht-degree: 20%
       + [Externe afhankelijkheden voor bestaande installaties verwijderen](/help/assets/remove-external-dependencies.md)
       + [Configureren [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Bijwerken [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-
 + Forms {#forms}
    + Overzicht {#forms-overview}
       + [Inleiding](/help/forms/home.md)
@@ -627,9 +626,10 @@ ht-degree: 20%
       + [Aangepaste lettertypen gebruiken in PDF-documenten](/help/forms/use-custom-fonts.md)
       + [Bekende problemen, aanbevolen procedures en veelgestelde vragen](/help/forms/communications-known-issues-limitations.md)
    + Referentie ontwikkelings-API {#aem-forms-developer-api-reference}
+      + [Aangepaste Forms API-naslaggids](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms Cloud Service JavaScript API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [AEM Forms Cloud Service Java API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [AEM Forms Cloud Service Java API Reference](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
    + Problemen oplossen {#troubleshooting-aem-forms-cloud-service}
       + [Installatie en configuratie](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Verzender en CDN in cache plaatsen](/help/forms/troubleshooting-caching-performance.md)
