@@ -2,7 +2,7 @@
 title: Inhoudsfragmenten - Overwegingen verwijderen (elementen - Inhoudsfragmenten)
 description: Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de gevolgen van het verwijderen ervan moeten zorgvuldig worden overwogen.
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 8%
@@ -88,5 +88,5 @@ The `add` and `modify` privileges can also be administered in CRXDE Lite, or usi
 
 For example, the definition of the `remove` privileges for a group `content-authors-no-delete`:
 
-![cf-delete-03](assets/cf-delete-03.png)
+![Remove privileges](assets/cf-delete-03.png)
 -->

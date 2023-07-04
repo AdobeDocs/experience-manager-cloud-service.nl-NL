@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten beheren (elementen - Inhoudsfragmenten)
 description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1770'
 ht-degree: 5%
 
 ---
@@ -56,7 +56,7 @@ De methode voor het maken van een inhoudsfragment is:
 
    Na selectie kunt u **Volgende** om verder te gaan.
 
-   ![fragmentbasis](assets/cfm-managing-01.png)
+   ![Inhoudsfragmentmodel selecteren](assets/cfm-managing-01.png)
 
 1. Geef in de stap **Eigenschappen** het volgende op:
 
@@ -92,7 +92,7 @@ In de **Activa** een reeks acties beschikbaar is voor uw inhoudsfragmenten:
 * van de werkbalk; nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikbaar.
 * Als [snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); een subset van acties beschikbaar voor de afzonderlijke fragmentkaarten.
 
-![handelingen](assets/cfm-managing-02.png)
+![Handelingen in werkbalk](assets/cfm-managing-02.png)
 
 Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
@@ -139,7 +139,7 @@ Uw fragment openen voor bewerken:
 
 1. De fragmenteditor wordt geopend. Breng de gewenste wijzigingen aan:
 
-   ![fragmenteditor](assets/cfm-managing-03.png)
+   ![Fragmenteditor](assets/cfm-managing-03.png)
 
 1. Nadat u wijzigingen hebt aangebracht, kunt u **Opslaan**, **Opslaan en sluiten** of **Sluiten** zoals vereist.
 
@@ -167,13 +167,13 @@ Navigeer door de verschillende modi met de pictogrammen in het zijpaneel:
 * [Boomstructuur](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Voorvertoning](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![modi](assets/cfm-managing-04.png)
+![Modi in de Content Fragment-editor](assets/cfm-managing-04.png)
 
 ### Werkbalkhandelingen in de Inhoudsfragmenteditor {#toolbar-actions-in-the-content-fragment-editor}
 
 Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 
-![modi](assets/cfm-managing-top-toolbar.png)
+![Werkbalkacties beschikbaar in verschillende modi](assets/cfm-managing-top-toolbar.png)
 
 * Er wordt een bericht weergegeven wanneer er al naar het fragment wordt verwezen op een inhoudspagina. U kunt **Sluiten** het bericht.
 
@@ -303,7 +303,7 @@ Annotaties (voor inhoudsfragmenten) zijn:
 
 Bijvoorbeeld:
 
-![tijdlijn](assets/cfm-managing-05.png)
+![Tijdlijn](assets/cfm-managing-05.png)
 
 ## Fragmentversies vergelijken {#comparing-fragment-versions}
 
@@ -331,7 +331,7 @@ Zij worden naast elkaar getoond, waarbij:
 >
 U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
 
-![vergelijking](assets/cfm-managing-06.png)
+![Variaties vergelijken](assets/cfm-managing-06.png)
 
 ## Een versie herstellen  {#reverting-to-a-version}
 
