@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 0efdb9353ef908cf5a655c989ae7be1107c8f3de
+source-git-commit: e302d24261f24697aeb5f97b99ffee1fc2135959
 workflow-type: tm+mt
-source-wordcount: '2771'
+source-wordcount: '2705'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,17 @@ ht-degree: 0%
 
 Met Adaptive Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een gebruiksvriendelijke wizard voor zakelijke gebruikers om snel een Adaptive Forms te maken. De wizard beschikt over een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken.
 
+![Wizard voor het maken van een adaptief formulier](/help/release-notes/assets/wizard.png){width="100%" align="center"}
+
 Voordat u begint, moet u meer weten over het type Forms-componenten waarover u beschikt:
 
-* [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): Dit zijn gestandaardiseerde componenten voor het vastleggen van gegevens. Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijving. Een ontwikkelaar kan deze componenten eenvoudig aanpassen en opmaken. **Adobe raadt aan deze moderne en uitbreidbare componenten te gebruiken om Adaptive Forms te ontwikkelen**.
+* [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): Dit zijn gestandaardiseerde componenten voor het vastleggen van gegevens. Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijving. Een ontwikkelaar kan deze componenten eenvoudig aanpassen en opmaken. U kunt [https://aemcomponents.dev/](https://aemcomponents.dev/) beschikbare kerncomponenten in actie weergeven **Adobe raadt aan deze moderne en uitbreidbare componenten te gebruiken om Adaptive Forms te ontwikkelen**.
 
 * [Aangepaste Forms Foundation-componenten](creating-adaptive-form.md): Dit zijn klassieke (oude) componenten voor gegevensvastlegging. U kunt deze blijven gebruiken om uw bestaande basiscomponenten te bewerken op basis van adaptief formulier. Adobe raadt u aan nieuwe formulieren te gebruiken als u nieuwe formulieren maakt  [Adaptieve Forms Core-componenten om een adaptieve Forms te maken](#create-an-adaptive-form-core-components).
 
-![Wizard voor het maken van een adaptief formulier](/help/release-notes/assets/wizard.png){width="100%" align="center"}
-
-
 >[!BEGINTABS]
 
->[!TAB Adaptieve Forms maken met kerncomponenten]
-
-## Voorwaarden {#pre-requisites-to-create-a-core-components-based-adaptive-form}
+>[!TAB Adaptieve Forms maken met kerncomponenten (aanbevolen)]
 
 U hebt het volgende nodig om een adaptief formulier te maken:
 
@@ -101,25 +98,20 @@ U hebt het volgende nodig om een adaptief formulier te maken:
    * **[!UICONTROL Name:]** Hier geeft u de naam van het formulier op. Er wordt een knooppunt met de opgegeven naam gemaakt in de repository. Wanneer u een titel begint te typen, wordt automatisch een waarde voor het naamveld gegenereerd. U kunt de voorgestelde waarde wijzigen. Het naamveld mag alleen alfanumerieke tekens, afbreekstreepjes en onderstrepingstekens bevatten. Alle ongeldige invoer wordt vervangen door een afbreekstreepje.
    * **[!UICONTROL Path:]** Hier geeft u de locatie op waar het adaptieve formulier moet worden opgeslagen. U kunt het adaptieve formulier rechtstreeks opslaan op `/content/dam/formsanddocuments` of maak een map, zoals `/content/dam/formsanddocuments/adaptiveforms` om een adaptief formulier op te slaan. Zorg ervoor dat u de map maakt voordat u deze in het pad gebruikt. De **[!UICONTROL Path]** wordt niet automatisch een map gemaakt.
 
-1. Tik op **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt en geopend in de Adaptive Forms-editor. De redacteur toont de inhoud beschikbaar in het malplaatje.  Op basis van het type adaptief formulier worden de formulierelementen in het bijbehorende formulier <!--XFA form template, XML schema or --> Het JSON-schema of het formuliergegevensmodel worden weergegeven in het **[!UICONTROL Data Model Objects]** tabblad van het dialoogvenster **[!UICONTROL Content Browser]** in de zijbalk. U kunt deze elementen ook slepen en neerzetten om het adaptieve formulier te maken.
+1. Tik op **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt en geopend in de Adaptive Forms-editor. De redacteur toont de inhoud beschikbaar in het malplaatje.  Op basis van het type adaptief formulier worden de formulierelementen in het bijbehorende formulier <!--XFA form template, XML schema or --> Het JSON-schema of het formuliergegevensmodel worden weergegeven in het **[!UICONTROL Data Model Objects]** tabblad van het dialoogvenster **[!UICONTROL Content Browser]** in de zijbalk.
 
-Nu kunt u de container Adaptive Forms Core Components naar Adaptive Forms slepen om het formulier te ontwerpen en te maken.
+Nu kunt u de [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#components) of schema-elementen om uw Adaptief formulier te maken.
 
-## Beschikbare adaptieve Forms Core-componenten {#available-core-components}
-
-Adaptieve Forms Core-componenten zijn gestandaardiseerde componenten voor het vastleggen van gegevens. Deze componenten bieden aanpassingsmogelijkheden, helpen de ontwikkelingstijd te verminderen en lagere onderhoudskosten voor uw digitale inschrijving. [Adaptive Forms Core Components documentatie](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) bevat een gedetailleerde lijst met beschikbare componenten, samen met gedetailleerde informatie over de mogelijkheden van elke component. U kunt ook [https://aemcomponents.dev/](https://aemcomponents.dev/) om beschikbare kerncomponenten in actie te bekijken.
 
 ## Eigenschappen van een formuliermodel bewerken in een adaptief formulier {#edit-form-model-core-components-based-adaptive-forms}
 
-1. Selecteer het adaptieve formulier en tik op ![Pagina-informatie](/help/forms/assets/Smock_Properties_18_N.svg){width="100%" align="center"} > **[!UICONTROL Open Properties]**. De pagina Formuliereigenschappen wordt geopend.
+1. Selecteer het adaptieve formulier en tik op ![Pagina-informatie](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Open Properties]**. De pagina Formuliereigenschappen wordt geopend.
 
 1. Ga naar de **[!UICONTROL Form Model]** en kiest u een formuliermodel. Als het adaptieve formulier geen formuliermodel heeft, hebt u de vrijheid om een JSON-schema of een formuliergegevensmodel te kiezen. Als het adaptieve formulier echter al is gebaseerd op een formuliermodel, kunt u overschakelen op een ander formuliermodel van hetzelfde type. Als het formulier bijvoorbeeld een JSON-schema gebruikt, kunt u eenvoudig overschakelen naar een ander JSON-schema. Op dezelfde manier kunt u overschakelen naar een ander formuliergegevensmodel als het formulier een formuliergegevensmodel gebruikt.
 
 1. Tikken **[!UICONTROL Save]** om de eigenschappen op te slaan.
 
 >[!TAB Aangepaste Forms maken met Foundation-componenten]
-
-## Voorwaarden {#pre-requisites-to-create-a-foundation-components-based-adaptive-form}
 
 U hebt het volgende nodig om een adaptief formulier te maken:
 
@@ -254,7 +246,7 @@ U kunt het formuliermodel wijzigen voor een adaptief formulier (op JSON gebaseer
 U kunt ook de eigenschappen van het formuliermodel wijzigen in de editor voor adaptieve formulieren of de sjablooneditor voor adaptieve formulieren.
 
 1. Selecteer **[!UICONTROL Adaptive Form container (Root)]** component.
-1. Klikken ![Pictogram configureren](/help/forms/assets/configure-icon.svg){width="100%" align="center"} pictogram om het **[!UICONTROL Properties]** van de container Adaptief formulier.
+1. Klikken ![Pictogram configureren](/help/forms/assets/configure-icon.svg) pictogram om het **[!UICONTROL Properties]** van de container Adaptief formulier.
 1. Selecteer **[!UICONTROL Data Model]** en voer een van de volgende handelingen uit:
 
    * Als het adaptieve formulier geen formuliermodel heeft, kunt u een formuliermodel kiezen en dienovereenkomstig <!-- a form template, --> XML- of JSON-schema of formuliergegevensmodel.
