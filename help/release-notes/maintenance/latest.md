@@ -2,10 +2,10 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
+source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 1%
+source-wordcount: '607'
+ht-degree: 0%
 
 ---
 
@@ -13,18 +13,18 @@ ht-degree: 1%
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 12441 {#release-12441}
+## Release 12549 {#release-12549}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12441 samengevat, die op 27 juni 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 12255.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12549 samengevat, die op 4 juli 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 12255. Onderhoudsversie 12549 vervangt versie 12441 om twee problemen op te lossen.
 
 2023.7.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
-### Verbeteringen {#enhancements-12441}
+### Verbeteringen {#enhancements-12549}
 
 - SITES-8769: StijlImpl-aanroepen in ResponsiveGrid verbeteren
 - Forms-5054: Toegevoegde ondersteuning voor alle [beelden](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) ondersteund door Adobe Sign.
 
-### Opgeloste problemen {#fixed-issues-12441}
+### Opgeloste problemen {#fixed-issues-12549}
 
 - Verschillende updates met betrekking tot toegankelijkheid
 - SITES-12688: Pagina-editor: Logische operator OF werkt niet correct in zoekopdracht met Asset Finder
@@ -53,11 +53,11 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12441 same
 - Forms-9072: Als u een schema doorzoekt terwijl u een formulierfragment maakt, retourneert het zoekresultaat geen schema voor selectie.
 - Forms: Oplossing voor problemen met betrekking tot toegankelijkheid om de toegankelijkheid van AEM Forms-functies te verbeteren.
 
-### Bekende problemen {#known-issues-12441}
+### Bekende problemen {#known-issues-12549}
 
 Geen.
 
-### Ingesloten technologieën {#embedded-tech-12441}
+### Ingesloten technologieën {#embedded-tech-12549}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
