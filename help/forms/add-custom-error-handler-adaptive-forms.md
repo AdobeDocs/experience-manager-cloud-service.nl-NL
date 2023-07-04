@@ -7,9 +7,9 @@ keywords: Voeg een manager van de douanefout toe, voeg een standaardfoutenmanage
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
+source-git-commit: 11ab8d41b911afc73fe5339d43ca3a0fc80a5f8d
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1907'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ De onderstaande code illustreert de bestaande structuur van de mislukkingsreacti
     ]
     originCode : <target error Code>
     originMessage : <unstructured error message returned by service>
-}
+    }
 ```
 
 
@@ -125,20 +125,20 @@ Enkele opties om de foutreacties weer te geven zijn:
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
 
-      &quot;javascript
-      {
-      &quot;type&quot;: &quot;VALIDATION_ERROR&quot;,
-      &quot;validationErrors&quot;: [
-      {
-      &quot;fieldName&quot;: &quot;guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]&quot;,
-      &quot;dataRef&quot;: &quot;&quot;,
-      &quot;details&quot;: [
-      &quot;Ongeldige ID opgegeven. Opgegeven waarde is niet juist!&quot;
-      ]
-      }
-      ]}
-      &quot;
-  
+  ```javascript
+          {
+              "type": "VALIDATION_ERROR",
+              "validationErrors": [
+              {
+              "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+              "dataRef": "",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+          ]
+          }
+          ]}
+  ```
+
   U kunt de SOM-expressie van elk veld in een adaptief formulier weergeven door op het veld te tikken en de **[!UICONTROL View SOM Expression]**.
 
   ![Som-expressie van een adaptief formulierveld voor weergave van foutreacties in aangepaste fouthandler](/help/forms/assets/custom-error-handler-somexpression.png)
@@ -152,17 +152,17 @@ Enkele opties om de foutreacties weer te geven zijn:
 * **`Response:`**
 
   ```javascript
-  {
-      "type": "VALIDATION_ERROR",
-      "validationErrors": [
       {
-          "fieldName": "",
-          "dataRef": "/Pet/id",
-          "details": [
-          "Invalid ID supplied. Provided value is not correct!"
-          ]
-          }
-  ]}
+          "type": "VALIDATION_ERROR",
+          "validationErrors": [
+          {
+              "fieldName": "",
+              "dataRef": "/Pet/id",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+              ]
+              }
+      ]}
   ```
 
   ![Gegevensverwijzing van een adaptief formulierveld voor weergave van foutreacties in aangepaste fouthandler](/help/forms/assets/custom-errorhandler-dataref.png)
@@ -235,21 +235,21 @@ Voer de volgende stappen uit om een aangepaste foutfunctie te maken:
 1. Een JavaScript-bestand toevoegen, bijvoorbeeld `function.js`. Het bestand bevat de code voor aangepaste fouthandler.
 Voeg de volgende code aan het dossier JavaScript toe om de reactie en kopballen te tonen, die van het de diensteindpunt van REST, in de browser console worden ontvangen.
 
-       &quot;javascript
+   ```javascript
        /**
-       * Aangepaste fouthandler
-       * @name customErrorHandler Custom Error Handler Functie
+       * Custom Error handler
+       * @name customErrorHandler Custom Error Handler Function
        * @errorHandler
        */
        function customErrorHandler(response, headers)
        {
-       console.log(&quot;Custom Error Handler processing start...&quot;);
-       console.log(&quot;response:&quot;+JSON.stringify(response));
-       console.log(&quot;headers:&quot;+JSON.stringify(headers));
-       console.log(&quot;Custom Error Handler processing end...&quot;);
+           console.log("Custom Error Handler processing start...");
+           console.log("response:"+JSON.stringify(response));
+           console.log("headers:"+JSON.stringify(headers));
+           console.log("Custom Error Handler processing end...");
        }
-       &quot;
-   
+   ```
+
    <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
 1. Sla de `function.js` bestand.
