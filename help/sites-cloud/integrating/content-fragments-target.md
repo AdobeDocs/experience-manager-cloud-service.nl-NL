@@ -2,7 +2,7 @@
 title: Inhoudsfragmenten exporteren naar Adobe Target
 description: Inhoudsfragmenten exporteren naar Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 0%
@@ -236,11 +236,11 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel tot stand 
 
 1. Geef in het dialoogvenster Kader maken een **Titel**, selecteert u de **Adobe Target Framework** en klik op **Maken**.
 
-   <!-- ![config-target-framework-dialog](assets/config-target-framework-dialog.png) -->
+   <!-- ![Configure Target Framework Dialog](assets/config-target-framework-dialog.png) -->
 
    De pagina Framework wordt geopend. Sidekick verstrekt componenten die informatie van de [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) dat u kunt toewijzen.
 
-   <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
+   <!-- ![Configuring ContextHub](assets/chlimage_1-162.png) -->
 
 1. Sleep de component van de Context van de Cliënt die de gegevens vertegenwoordigt die u voor afbeelding aan het dalingsdoel wilt gebruiken. U kunt ook de **ContextHub Store** aan het framework.
 
@@ -250,11 +250,11 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel tot stand 
 
    Bijvoorbeeld om te gebruiken **Profielgegevens** over uw site-bezoekers om uw doelcampagne te beheren, sleept u de **Profielgegevens** naar de pagina. De variabelen van profielgegevens die voor afbeelding aan de parameters van het Doel beschikbaar zijn verschijnen.
 
-   <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
+   <!-- ![Profile Data](assets/chlimage_1-163.png) -->
 
 1. Selecteer de variabelen die u zichtbaar wilt maken voor het Adobe Target-systeem door de optie **Delen** in de desbetreffende kolommen.
 
-   <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
+   <!-- ![Share](assets/chlimage_1-164.png) -->
 
    >[!NOTE]
    >
@@ -291,7 +291,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-  ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![Cloud Service Configurations](assets/chlimage_1-165.png)
 
 1. Select the framework you want under **Configuration Reference**.
 
