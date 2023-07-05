@@ -2,9 +2,9 @@
 title: Hoe kan ik Forms Designer downloaden en installeren om Document of Record-sjablonen te maken?
 description: Met Forms Designer kunt u XDP- en PDF-formuliersjablonen maken die als sjabloon voor een document met records fungeren. Designer is beschikbaar in het dialoogvenster [!DNL AEM Forms] licentie.
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e71dd8a4eb92acbed53fb9384bc40efc3e743761
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ U hebt de volgende software en minimale hardware nodig om Designer te installere
 * Hardwareversnelling voor video (optioneel)
 * Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC.
 * Beheerdersrechten voor het installeren van Designer.
+* Microsoft Visual C++ 2019 (VC 14.28 of hoger) 32-bits runtime
 
 ## Designer installeren {#install-designer}
 
