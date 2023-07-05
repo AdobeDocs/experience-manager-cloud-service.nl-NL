@@ -59,7 +59,7 @@ Zoals eerder vermeld, moet u een periode voor het bevriezen van code en inhoud p
 * Hoe lang moet ik de creatie van content bevriezen?
 * Voor hoe lang zou ik mijn leveringsteam moeten vragen om op te houden toevoegend nieuwe eigenschappen?
 
-Als u de eerste vraag wilt beantwoorden, moet u rekening houden met de tijd die nodig is om proefversies uit te voeren in omgevingen waar geen productie plaatsvindt. Om de tweede vraag te beantwoorden, hebt u nauwe samenwerking tussen het team nodig dat nieuwe eigenschappen toevoegt en het team dat de code opnieuw in beweging brengt. Het doel is ervoor te zorgen alle code die aan de bestaande plaatsing wordt toegevoegd, wordt getest en, aan de tak van de wolkendiensten wordt opgesteld. In het algemeen betekent dit dat de hoeveelheid code die vastloopt, lager is.
+Als u de eerste vraag wilt beantwoorden, moet u rekening houden met de tijd die nodig is om proefversies uit te voeren in omgevingen waar geen productie plaatsvindt. Om de tweede vraag te beantwoorden, hebt u nauwe samenwerking tussen het team nodig dat nieuwe eigenschappen toevoegt en het team dat de code opnieuw in beweging brengt. Het doel is ervoor te zorgen alle code die aan de bestaande plaatsing wordt toegevoegd, wordt getest en, aan de tak van de wolkendiensten wordt opgesteld. Over het algemeen betekent dit dat de hoeveelheid code die vastloopt, lager is.
 
 Bovendien moet u plannen dat de inhoud wordt vastgezet wanneer de laatste aanvulling op de inhoud gepland is.
 

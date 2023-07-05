@@ -218,7 +218,7 @@ Phase 3 finished
 Het script doet het volgende:
 
 1. De validator wordt uitgevoerd. Als de configuratie ongeldig is, ontbreekt het manuscript.
-2. Het runt de `httpd -t` om te testen of de syntaxis correct is, zodat Apache httpd kan starten. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
+2. Het runt de `httpd -t` gebruiken om te testen of de syntaxis correct is, zodat Apache httpd kan starten. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
 3. Controleert of de subset van de Dispatcher SDK-configuratiebestanden, die zijn bedoeld om onveranderbaar te zijn zoals beschreven in het dialoogvenster [Sectie Bestandsstructuur](##legacy-mode-file-structure), is niet bewerkt. Deze controle is nieuw en is geïntroduceerd met AEM SDK-versie 2021.1.4738 die ook Dispatcher Tools versie 2.0.36 bevat. Vóór deze update hebben klanten mogelijk ten onrechte aangenomen dat eventuele lokale SDK-wijzigingen van die onveranderlijke bestanden ook worden toegepast op de cloud-omgeving.
 
 Tijdens een implementatie van Cloud Manager kunt u de `httpd -t` syntaxiscontrole wordt ook uitgevoerd en eventuele fouten worden opgenomen in Cloud Manager `Build Images step failure` log.

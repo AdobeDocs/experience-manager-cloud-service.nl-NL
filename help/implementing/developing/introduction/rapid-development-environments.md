@@ -54,7 +54,7 @@ Ga als volgt te werk om Cloud Manager te gebruiken om een RDE voor uw programma 
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
+1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
 
    * Selecteren **Snelle ontwikkeling** onder de **Omgevingstype selecteren** kop.
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter het omgevingstype weergegeven.

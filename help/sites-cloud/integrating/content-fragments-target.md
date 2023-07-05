@@ -238,7 +238,7 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel tot stand 
 
    <!-- ![config-target-framework-dialog](assets/config-target-framework-dialog.png) -->
 
-   De pagina Framework wordt geopend. Sidetrap biedt componenten die informatie van de [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) dat u kunt toewijzen.
+   De pagina Framework wordt geopend. Sidekick verstrekt componenten die informatie van de [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) dat u kunt toewijzen.
 
    <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
 

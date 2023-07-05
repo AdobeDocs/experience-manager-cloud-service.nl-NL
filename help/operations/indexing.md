@@ -39,7 +39,7 @@ Indexdefinities kunnen als volgt in drie gevallen van primair gebruik worden ing
 
 1. **Toevoegen** een nieuwe aangepaste indexdefinitie.
 2. **Bijwerken** een bestaande indexdefinitie door een nieuwe versie toe te voegen.
-3. **Verwijderen** een indexdefinitie die niet langer nodig is.
+3. **Verwijderen** een indexdefinitie die niet meer nodig is.
 
 Voor zowel de punten 1 als 2 hierboven moet u een nieuwe indexdefinitie maken als onderdeel van uw aangepaste codebasis in het respectievelijke releaseprogramma voor Cloud Manager. Zie voor meer informatie de [Distribueren naar AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentatie.
 
