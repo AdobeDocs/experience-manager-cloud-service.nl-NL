@@ -1,12 +1,12 @@
 ---
 title: Inleiding tot [!DNL AEM Forms] as a Cloud Service
-description: Ontdek AEM Forms en leer hoe u hiermee bedrijfsklare documenten en formulieren kunt maken. Leer meer over Platform-as-a-Service (PaaS) en hoe te om onderneming-klasse digitale vormen en bedrijfsprocessen te beheren, en Forms met Adobe Sign en huidige gegevensbronnen aan te sluiten.
+description: Ontdek AEM Forms en leer hoe u hiermee bedrijfsklare documenten en formulieren kunt maken. Meer informatie over Platform-as-a-Service (PaaS) en het beheer van digitale formulieren en bedrijfsprocessen op ondernemingsniveau, en het verbinden van Forms met Adobe Sign en actuele gegevensbronnen.
 landing-page-description: Inzicht in hoe u formulieren in AEM as a Cloud Service kunt gebruiken.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
 source-wordcount: '1117'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
