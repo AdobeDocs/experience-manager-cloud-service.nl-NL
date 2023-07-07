@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
+source-git-commit: 1251f36ece4449d8be6a40f34421351161bf3b23
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,6 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12549 same
 
 ### Verbeteringen {#enhancements-12549}
 
-- SITES-8769: StijlImpl-aanroepen in ResponsiveGrid verbeteren
 - Forms-5054: Toegevoegde ondersteuning voor alle [beelden](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) ondersteund door Adobe Sign.
 
 ### Opgeloste problemen {#fixed-issues-12549}
@@ -55,7 +54,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12549 same
 
 ### Bekende problemen {#known-issues-12549}
 
-Geen.
+- SKYOPS-61385: Met de meest recente update voor de dispatcher zijn bepaalde ongeldige reguliere expressies die eerder stilzwijgend werden genegeerd door `libpcre1` worden niet meer geaccepteerd door de bijgewerkte `libpcre2` tijdens de implementatie. De de configuratiecontrole van de verzender zal spoedig worden bijgewerkt om deze ook vroeger te identificeren.
 
 ### Ingesloten technologieën {#embedded-tech-12549}
 
