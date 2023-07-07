@@ -1,16 +1,17 @@
 ---
 title: Hoe migreren van een AEM 6.5 Forms naar [!DNL AEM Forms] as a Cloud Service omgeving?
-description: Migreren van een [!DNL AEM Forms] (Op locatie en AMS-omgevingen) naar [!DNL AEM Forms] as a Cloud Service omgeving.
-keywords: 6.5-formulieren naar cloudservice, 6.5-formulieren naar cs, migratie 6.5-formulieren naar CS, migratie 6.5-formulieren naar cloudservice, upgrade 6.5-formulieren naar CS, verplaatsing 6.5-formulieren naar CS, upgrade AEM 6.5 naar CS, AEM Forms 6.5 naar Cloud Service, AEM migratie naar cloudservice
+description: Aan de slag met de migratiereis om as a Cloud Service te AEM | Adobe Experience Manager. Migreren van een [!DNL AEM Forms] (Op locatie en AMS-omgevingen) naar [!DNL AEM Forms] as a Cloud Service omgeving.
+keywords: 6.5-formulieren naar cloudservice, 6.5-formulieren naar cs, migratie 6.5-formulieren naar CS, migratie 6.5-formulieren naar cloudservice, upgrade 6.5-formulieren naar CS, verplaatsing 6.5-formulieren naar CS, upgrade AEM 6.5 naar CS, AEM Forms 6.5 naar Cloud Service, AEM migratie naar cloudservice, migratie naar AEM as a Cloud Service | Adobe Experience Manager
 contentOwner: khsingh
 feature: Adaptive Forms
+feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
+source-git-commit: 8dc89bf4b20d12bdb380797b6e56db1a2ce6ce0a
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1559'
 ht-degree: 1%
 
 ---
@@ -22,7 +23,8 @@ ht-degree: 1%
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-U kunt uw adaptieve Forms-, thema-, sjablonen- en cloudconfiguraties migreren of upgraden vanuit <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms over OSGi aan [!DNL AEM] as a Cloud Service. Voordat u deze elementen gaat migreren, gebruikt u het migratiehulpprogramma om de indeling die in de eerdere versies werd gebruikt, om te zetten in de indeling die in [!DNL AEM] as a Cloud Service. Wanneer u het Hulpprogramma voor migratie uitvoert, worden de volgende middelen bijgewerkt:
+U kunt uw adaptieve Forms-, thema-, sjablonen- en cloudconfiguraties migreren of upgraden vanuit <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms over OSGi aan [!DNL AEM] as a Cloud Service. Voordat u deze elementen gaat migreren, gebruikt u het migratiehulpprogramma om de indeling die in de eerdere versies werd gebruikt, om te zetten in de indeling die in [!DNL AEM] as a Cloud Service.
+Laten we beginnen met de migratiereis naar AEM as a Cloud Service | Adobe Experience Manager. Wanneer u het Hulpprogramma voor migratie uitvoert, worden de volgende middelen bijgewerkt:
 
 * Aangepaste componenten voor adaptieve Forms
 * Aangepaste Forms-sjablonen en -thema&#39;s
