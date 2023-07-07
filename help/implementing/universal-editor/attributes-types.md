@@ -2,9 +2,9 @@
 title: Kenmerken en typen
 description: Leer over de gegevensattributen en de types die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '663'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 | `richtext` | Tekst kan worden bewerkt met volledige tekstopties. RTE wordt weergegeven in het rechterdeelvenster | Optioneel | Vereist | n.v.t. | Optioneel | n.v.t. | Optioneel |
 | `media` | Het bewerkbare element is een element, bijvoorbeeld een afbeelding of video | Optioneel | Vereist | Optioneel<br>lijst met afbeeldings- of videofiltercriteria die worden doorgegeven aan de elementenkiezer | Optioneel | n.v.t. | Optioneel |
 | `container` | Het bewerkbare gedrag gedraagt zich als container voor componenten o.a. het Systeem van de Paragraaf. | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>een lijst met toegestane componenten | Optioneel | n.v.t. | n.v.t. |
-| `component` | Het bewerkbare item is een component. Toevoegt geen extra functionaliteit, is vereist om beweegbare/verhandelbare delen van het DOM en voor het openen van de spoorstaaf en zijn velden aan te geven | Vereist | n.v.t. | n.v.t. | Optioneel | Optioneel | n.v.t. |
+| `component` | Het bewerkbare item is een component. Er wordt geen extra functionaliteit aan toegevoegd. Het is verplicht beweegbare/verhandelbare delen van het DOM aan te geven en de spoorstaaf en de velden ervan te openen. | Vereist | n.v.t. | n.v.t. | Optioneel | Optioneel | n.v.t. |
 | `reference` | Het bewerkbare item is een verwijzing, bijvoorbeeld een inhoudsfragment, een ervaringsfragment of een product | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>lijst met filtercriteria voor Content Fragment, Product of Experience Fragment die worden doorgegeven aan de referentiekiezer | Optioneel | Optioneel | n.v.t. |
 
 Afhankelijk van het gebruiksgeval `itemprop` of `itemid` al dan niet verplicht zijn. Bijvoorbeeld:

@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c6ab2d9b01a3f1abedb06d1d413e7eceb8b1c031
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1557'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stan
 
 Met de Universal Editor kunt u elk aspect van elke inhoud in een implementatie bewerken, zodat u uitzonderlijke ervaringen kunt bieden, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
 
-Hiervoor beschikken inhoudsauteurs over een intuïtieve gebruikersinterface die minimale training vereist om eenvoudig in de inhoud te kunnen springen en te kunnen beginnen bewerken.
+Hiervoor verschaft de Universal Editor de auteur van inhoud een intuïtieve gebruikersinterface die minimale training vereist om eenvoudig in de inhoud te kunnen springen en beginnen met het bewerken ervan.
 
 >[!TIP]
 >
@@ -39,16 +39,17 @@ Als u inhoud voor een app wilt ontwerpen met de Universal Editor, moet de app va
 
 Wanneer de app van instrumenten is voorzien om met de Universal Editor te werken, moet u zich aanmelden bij de Universal Editor. U hebt een Adobe ID nodig om u aan te melden en [toegang hebben tot de Universal Editor.](getting-started.md#request-access)
 
-Nadat u bent aangemeld, voert u de URL van de pagina die u wilt bewerken in het dialoogvenster [adresbalk.](#address-bar) zodat u kunt beginnen [bewerken van de inhoud.](#edit-content)
+Nadat u bent aangemeld, voert u de URL van de pagina die u wilt bewerken in het dialoogvenster [locatiebalk.](#location-bar) zodat u inhoud zoals [tekstinhoud](#text-mode) of [media-inhoud.](#media-mode)
 
 ## De gebruikersinterface begrijpen {#ui}
 
-De interface is verdeeld in vier hoofdgebieden.
+De interface is verdeeld in vijf hoofdgebieden.
 
 * [De koptekst Experience Cloud](#experience-cloud-header)
 * [De koptekst van de Universal Editor](#universal-editor-header)
-* [De spoorwegen](#rail)
+* [De modusrail](#mode-rail)
 * [De editor](#editor)
+* [De componentrail](#component-rail)
 
 ![De gebruikersinterface van de Universal Editor](assets/ui.png)
 
@@ -84,7 +85,7 @@ Met het Help-pictogram hebt u snel toegang tot leermiddelen en ondersteuningsbro
 
 #### Meldingen {#notifications}
 
-Dit pictogram is gemarkeerd met het aantal momenteel toegewezen onvolledige [meldingen](/help/implementing/cloud-manager/notifications.md).
+Dit pictogram is gemarkeerd met het aantal momenteel toegewezen onvolledige [meldingen.](/help/implementing/cloud-manager/notifications.md)
 
 ![Meldingen](assets/notifications.png)
 
@@ -104,13 +105,13 @@ De Universal Editor-koptekst bevindt zich altijd boven aan het scherm net onder 
 
 Het hamburgermenu is nog niet geïmplementeerd.
 
-![Hambuger-menu](assets/hamburger-menu.png)
+![Hamburger-menu](assets/hamburger-menu.png)
 
-#### Locatiebalk {#Location-bar}
+#### Locatiebalk {#location-bar}
 
 Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Tik of klik om het adres in te voeren van een andere pagina die u wilt bewerken.
 
-![Locatiebalk](assets/address-bar.png)
+![Locatiebalk](assets/location-bar.png)
 
 >[!TIP]
 >
@@ -120,6 +121,24 @@ Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Tik of klik om h
 >
 >Elke pagina die u wilt bewerken met de universele editor moet [van instrumenten voorzien om de Universele Redacteur te steunen.](getting-started.md)
 
+#### Emulatorinstellingen {#emulator}
+
+Tik of klik op het emulatiepictogram om te bepalen hoe de Universal Editor de pagina weergeeft.
+
+![Emulatorpictogram](assets/emulator.png)
+
+Als u op het emulatiepictogram tikt of erop klikt, worden de opties weergegeven.
+
+![Opties voor emulatie](assets/emulation-options.png)
+
+Standaard wordt de editor geopend in een computerlay-out waarin de hoogte en breedte automatisch door de browser worden gedefinieerd.
+
+U kunt er ook voor kiezen om een mobiel apparaat te emuleren en in de Universele Editor:
+
+* De oriëntatie definiëren
+* Breedte en hoogte definiëren
+* De richting wijzigen
+
 #### App-voorvertoning openen {#open-app-preview}
 
 Tik of klik op het pictogram met de voorvertoning van de geopende app om de pagina die u momenteel bewerkt te openen in een eigen browser, zodat de editor er geen voorvertoning van kan weergeven.
@@ -128,7 +147,7 @@ Tik of klik op het pictogram met de voorvertoning van de geopende app om de pagi
 
 >[!TIP]
 >
->De sneltoets gebruiken `O` om de voorvertoning van de app te openen.
+>De sneltoets gebruiken `O` (de letter O) om de voorvertoning van de app te openen.
 
 #### Publicatie {#publish}
 
@@ -140,11 +159,11 @@ Tik of klik op de knop Publiceren zodat u de wijzigingen in de live inhoud kunt 
 >
 >Zie het document [Inhoud publiceren met de Universal Visual Editor](publishing.md) voor meer informatie over publiceren met de Universele Redacteur.
 
-### Het spoor {#rail}
+### De Modus Rail {#rail}
 
-De spoorstaaf is altijd aanwezig langs de linkerkant van de redacteur. Het staat voor gemakkelijke omschakeling toe de redacteur tussen voorproefwijze en geeft wijze uit.
+De modusrail is altijd aanwezig langs de linkerkant van de editor. Zo kunt u gemakkelijk schakelen tussen de verschillende bewerkingsmodi.
 
-![De spoorwegen](assets/rail.png)
+![De modusrail](assets/mode-rail.png)
 
 #### Voorvertoningsmodus {#preview-mode}
 
@@ -156,23 +175,87 @@ In voorproefwijze, de pagina die in de redacteur wordt teruggegeven zoals het op
 >
 >De sneltoets gebruiken `P` om over te schakelen naar de voorvertoningsmodus.
 
-#### Bewerkingsmodus {#edit-mode}
+#### Tekstmodus {#text-mode}
 
-In de bewerkingsmodus wordt de pagina gerenderd in de editor, maar de auteur van de inhoud kan klikken om de inhoud te selecteren en te bewerken. Dit is de standaardmodus van de editor wanneer een pagina wordt geladen.
+In de tekstmodus wordt de pagina gerenderd in de editor, maar de auteur van de inhoud kan klikken om tekstinhoud te selecteren om deze te bewerken. Dit is de standaardmodus van de editor wanneer een pagina wordt geladen.
 
-![Bewerkingsmodus](assets/edit-mode.png)
+![Tekstmodus](assets/text-mode.png)
+
+>[!TIP]
+>
+>De sneltoets gebruiken `T` om over te schakelen naar de tekstmodus.
+
+#### Mediamodus {#media-mode}
+
+In de mediamodus wordt de pagina gerenderd in de editor, maar de auteur van de inhoud kan klikken om media-inhoud te selecteren om deze te bewerken.
+
+![Mediamodus](assets/media-mode.png)
+
+>[!TIP]
+>
+>De sneltoets gebruiken `M` om over te schakelen naar de mediamodus.
+
+#### Componentmodus {#component-mode}
+
+In de componentmodus wordt de pagina gerenderd in de editor, maar de auteur van de inhoud kan klikken om pagina-componenten te selecteren.
+
+![Componentmodus](assets/component-mode.png)
+
+>[!TIP]
+>
+>De sneltoets gebruiken `C` om over te schakelen naar componentmodus.
+
+>[!NOTE]
+>
+>De componentmodus is nog in ontwikkeling en is momenteel beperkt tot het selecteren van componenten.
 
 ### De Editor {#editor}
 
-De editor neemt het grootste deel van het venster in beslag en bevindt zich op de locatie van de pagina die is opgegeven in [de adresbalk](#address-bar) wordt weergegeven.
+De editor neemt het grootste deel van het venster in beslag en bevindt zich op de locatie van de pagina die is opgegeven in [de locatiebalk](#location-bar) wordt weergegeven.
 
-Afhankelijk van of de editor is ingesloten [bewerkingsmodus](#edit-mode) of [voorvertoningsmodus,](#edit-mode) de inhoud kan worden bewerkt of kan worden genavigeerd.
+* Als de editor zich in een bewerkingsmodus bevindt, zoals [tekstmodus](#text-mode) of [mediamodus,](#media-mode) de inhoud kan worden bewerkt en u kunt geen koppelingen volgen.
+* Als de editor zich bevindt in [voorvertoningsmodus,](#preview-mode) U kunt wel navigeren naar de inhoud en koppelingen volgen, maar u kunt de inhoud niet bewerken.
 
 ![Editor](assets/editor.png)
 
+### Component Rail {#component-rail}
+
+De componentrail is altijd aanwezig langs de linkerkant van de redacteur. Afhankelijk van de modus, kunnen er details worden weergegeven voor een component die is geselecteerd in de inhoud of de hiërarchie van de pagina-inhoud.
+
+![De componentrail](assets/component-rail.png)
+
+#### Eigenschappenmodus {#properties-mode}
+
+In de modus Eigenschappen toont de rail de eigenschappen van de component die momenteel in de editor is geselecteerd. Dit is de standaardmodus van de componentrail wanneer een pagina wordt geladen.
+
+![Eigenschappenmodus](assets/properties-mode.png)
+
+De details van de geselecteerde component worden in de spoorstaaf weergegeven. Niet alle componenten hebben details die moeten worden weergegeven.
+
+![Componentdetails](assets/component-details.png)
+
+>[!TIP]
+>
+>De sneltoets gebruiken `D` om over te schakelen naar de modus Eigenschappen.
+
+#### Modus Inhoudsstructuur {#Content-tree-mode}
+
+In de modus Inhoudsboomstructuur wordt in de rails de hiërarchie van de pagina-inhoud weergegeven.
+
+![Modus Inhoudsboomstructuur](assets/content-tree-mode.png)
+
+Wanneer het selecteren van een punt in de inhoudsboom, scrolt de redacteur aan die inhoud en selecteert het.
+
+![Inhoudsstructuur](assets/content-tree.png)
+
+>[!TIP]
+>
+>De sneltoets gebruiken `F` om over te schakelen naar de modus voor de inhoudstructuur.
+
+
 ## Inhoud bewerken {#editing-content}
 
-Inhoud bewerken is eenvoudig en intuïtief. In [bewerkingsmodus,](#edit-mode) terwijl u de muis boven de inhoud in de editor houdt, wordt bewerkbare inhoud gemarkeerd met een blauw vak.
+Inhoud bewerken is eenvoudig en intuïtief. In de bewerkingsmodi ([tekstmodus](#text-mode), [mediamodus](#media-mode), en [componentmodus](#component-mode)), wordt bewerkbare inhoud gemarkeerd met een blauw vak terwijl u de muis over de inhoud in de editor beweegt.
 
 ![Bewerkbare inhoud wordt gemarkeerd door een blauw vak](assets/editable-content.png)
 
@@ -182,11 +265,13 @@ Tik of klik op de inhoud in het blauwe vak om een interne editor te starten en u
 
 Houd er rekening mee dat in de bewerkingsmodus door tikken of klikken op inhoud wordt geprobeerd deze te selecteren voor bewerking. Als u door de inhoud wilt navigeren door de koppelingen te volgen, schakelt u over naar [voorvertoningsmodus.](#preview-mode)
 
+Afhankelijk van de modus waarin u werkt en de inhoud die u selecteert, zijn er mogelijk verschillende opties voor het bewerken van de plaats. Bovendien kunt u extra eigenschappen voor de inhoud bekijken met de [spoorstaaf.](#component-rail)
+
 ## Inhoud voorvertonen {#previewing-content}
 
 Wanneer u klaar bent met het bewerken van inhoud, wilt u er vaak door navigeren om te zien hoe het er uitziet in de inhoud van andere pagina&#39;s. In [voorbeeldmodus](#preview-mode) u kunt op koppelingen klikken om door de inhoud te navigeren zoals een lezer zou doen. De inhoud wordt in de editor gerenderd zoals deze zou worden gepubliceerd.
 
-Houd er rekening mee dat in de voorvertoningsmodus tikken of klikken op inhoud reageert op de manier waarop dit voor een lezer van de inhoud gebeurt. Als u de te bewerken inhoud wilt selecteren, schakelt u over naar [bewerkingsmodus.](#edit-mode)
+Houd er rekening mee dat in de voorvertoningsmodus tikken of klikken op inhoud reageert op de manier waarop dit voor een lezer van de inhoud gebeurt. Als u de te bewerken inhoud wilt selecteren, schakelt u over naar een bewerkingsmodus, zoals [tekstmodus](#text-mode) of [mediamodus.](#media-mode)
 
 ## Aanvullende bronnen {#additional-resources}
 

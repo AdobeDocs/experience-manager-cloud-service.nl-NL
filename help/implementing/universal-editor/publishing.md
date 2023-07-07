@@ -2,12 +2,13 @@
 title: Inhoud publiceren met de Universal Visual Editor
 description: Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
+
 
 # Inhoud publiceren met de Universal Visual Editor {#publishing}
 
@@ -31,6 +32,6 @@ Een andere optie is de app te implementeren in twee verschillende omgevingen die
 
 ## Samenvatting {#summary}
 
-Het doel van de Universele Redacteur is om geen enkel bepaald patroon op te leggen, zodat de tenuitvoerlegging zijn doelstellingen het best op een volledig ontkoppelde manier kan bereiken terwijl alles eenvoudig en recht voor de uitvoering blijft.
+Het doel van de Universele Redacteur is om geen enkel bepaald patroon op te leggen, zodat de implementatie het best zijn doelstellingen op een volledig ontkoppelde manier kan bereiken terwijl alles eenvoudig en recht voor de uitvoering blijft.
 
 Evenzo stelt de Universele Redacteur geen vereisten op hoe om het even welk bepaald project zou moeten gaan bepalen van welke rij om de inhoud te leveren. In plaats daarvan biedt het een aantal mogelijkheden en stelt het project in staat te bepalen welke oplossing het beste is voor zijn eigen vereisten.
