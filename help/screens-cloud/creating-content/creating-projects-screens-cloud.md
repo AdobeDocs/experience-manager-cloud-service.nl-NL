@@ -2,10 +2,10 @@
 title: Een project maken in as a Cloud Service schermen
 description: Leer hoe u een project maakt in as a Cloud Service schermen.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 0%
+source-wordcount: '335'
+ht-degree: 1%
 
 ---
 
@@ -28,18 +28,18 @@ Voer de onderstaande stappen uit om een project te maken in as a Cloud Service s
 
 1. Klik in de rechterbovenhoek van de actiebalk op **Schermproject maken**.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
+   ![create-screens-project1](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
 1. Voer de **Titel** van uw project in **Schermproject maken** in. Bijvoorbeeld: *FirstDigitalExperience*.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
+   ![create-screens-project2](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
    >De **Naam** veld wordt automatisch ingevuld in het dialoogvenster **Schermproject maken** op de titel die u kiest.
 
 1. Klikken **Opslaan**. U ziet uw project van Schermen, genoemd als *FirstDigitalExperience* in de Inhoudsprovider voor schermen. U ziet uw project ook in de Leverancier van de Inhoud van het Scherm, met twee omslagen noemden, **Locaties** en **Kanalen**.
 
-   ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
+   ![create-screens-project3](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
    Nu u een AEM Screens-project hebt ingesteld, kunt u beginnen met het toevoegen van kanalen en locaties aan uw project.
 
@@ -51,7 +51,7 @@ Bestaande projecten in as a Cloud Service schermen kunnen worden verwijderd.
 1. Selecteer het project dat u wilt verwijderen.
 1. Klik op de actiebalk op **Verwijderen**.
 
-   ![](/help/screens-cloud/assets/create-content/create-project5.png)
+   ![create-project5](/help/screens-cloud/assets/create-content/create-project5.png)
 
 1. Klikken **Verwijderen** de schrapping van het project te bevestigen.
 

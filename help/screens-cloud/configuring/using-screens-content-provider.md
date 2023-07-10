@@ -2,9 +2,9 @@
 title: Scherminhoudprovider gebruiken
 description: Op deze pagina wordt beschreven hoe u de Inhoudsprovider voor schermen kunt gebruiken om inhoud te maken.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -30,21 +30,21 @@ Voer de onderstaande stappen uit om u aan te melden bij de Inhoudsprovider voor 
 1. Navigeren naar [Adobe Experience Cloud](https://experience.adobe.com) Startpagina.
 
 1. Selecteren **Experience Manager**.
-   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![Openingspagina voor Snelle toegang tot gebieden van Experience Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Klikken **Starten** op de kaart van Cloud Manager. Nadat u zich hebt aangemeld bij [!UICONTROL Cloud Manager], kunt u de gebruikersinterface (UI) gebruiken.
-   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![Vier gebieden van Cloud Manager — Brand Portal, Cloud Manager, Cloud Acceleration Manager en Software Distribution — elk met een eigen Launch-knop.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Selecteer het programma voor as a Cloud Service schermen en klik op het pictogram, zoals hieronder wordt weergegeven, om Cloud Manager te openen **Overzicht** pagina voor dat specifieke programma.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-1.png)
+   ![Pictogram voor de overzichtspagina van Cloud Manager wordt helemaal links op een werkbalk weergegeven.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
    >Als u geen programma hebt gemaakt, raadpleegt u [Eerste aanmelding bij schermen as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en). Het onderwerp begeleidt u door het toevoegen van een programma voor as a Cloud Service schermen, in de Manager van de Wolk.
 
 1. Selecteer de koppeling in het menu **Omgevingen** -kaart zodat u toegang kunt krijgen tot de Inhoudsprovider voor schermen.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-2.png)
+   ![Koppeling die is gemarkeerd via de kaart voor omgevingen waarmee u toegang krijgt tot de Content Provider voor schermen.](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
    Nadat u zich hebt aangemeld bij de Inhoudsprovider voor schermen, kunt u nu inhoud maken om de inhoud af te spelen.
 

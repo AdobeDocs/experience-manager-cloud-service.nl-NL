@@ -2,9 +2,9 @@
 title: Kanalen maken en beheren in as a Cloud Service schermen
 description: In deze pagina wordt beschreven hoe u kanalen in as a Cloud Service schermen maakt en beheert.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -36,17 +36,18 @@ Voer de onderstaande stappen uit om een nieuw volgnummer te maken in as a Cloud 
 
 1. Selecteer **Kanalen** map van uw project, zoals **FirstDigitalExperience** —> **Kanalen** en klik op **Maken** in de actiebalk.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create1.png)
+   ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
 1. Selecteer de sjabloon, zoals: **Volgekanaal** van de **Maken** wizard en klik op **Volgende**.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create2.png)
+   ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
+
    >[!NOTE]
    > De **Maken** biedt verschillende typen sjablonen tijdens het maken van een kanaal. Zie [Beschikbare sjablonen](#available-templates) in de wizard Maken voor meer informatie.
 
 1. Voer de naam van het volgnummer in, bijvoorbeeld: **LoopingChannelOne** en klik op **Maken**.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create3.png)
+   ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
    U ziet nu een **LoopingChannelOne** in uw map Kanalen in uw AEM Screens-project.
 
@@ -58,7 +59,7 @@ U kunt een kanaal bewerken, weergeven, eigenschappen en dashboard, kopiëren, vo
 
 Navigeer naar het kanaal vanuit uw project en selecteer het kanaal, zoals in de onderstaande afbeelding wordt getoond. U kunt nu opties selecteren, zoals het bewerken van het kanaal, het weergeven van eigenschappen, het voorvertonen van inhoud, het beheren van publicatie of het verwijderen van het kanaal uit de actiebalk.
 
-![](/help/screens-cloud/assets/create-content/channelprop1.png)
+![channelprop1](/help/screens-cloud/assets/create-content/channelprop1.png)
 
 ### Inhoud toevoegen aan een kanaal {#add-content}
 
@@ -66,17 +67,17 @@ Ga als volgt te werk om inhoud aan een kanaal toe te voegen of te bewerken:
 
 1. Selecteer het kanaal dat u wilt bewerken, zoals in de onderstaande afbeelding wordt getoond. Klikken op **Bewerken** in de linkerbovenhoek van de actiebalk om de editor te openen.
 
-   ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
+   ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
 1. In de editor kunt u elementen/componenten aan uw kanaal toevoegen die u wilt publiceren.
 
 1. Sleep de elementen vanuit het linkerdeelvenster en voeg deze toe aan de editor.
 
-   ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
+   ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
    >Klikken op **Voorvertoning** om een voorvertoning van de inhoud van het kanaal weer te geven.
-   >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
+   >![bewerken, kanaalvoorbeeld](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## Beschikbare sjablonen in wizard Maken {#available-templates}
 

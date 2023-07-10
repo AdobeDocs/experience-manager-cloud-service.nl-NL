@@ -2,9 +2,9 @@
 title: Video-uitvoeringen maken in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u video-uitvoeringen kunt maken in as a Cloud Service schermen.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -37,15 +37,15 @@ Voer de onderstaande stappen uit om video-uitvoeringen te maken in rasters die z
 
 1. Voer de **Naam**, zoals **ScreensProcessingProfile**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![Dialoogvenster Profiel verwerken waarin het veld Naam is gemarkeerd.](/help/screens-cloud/assets/configure/screens-video-3.png)
 
 1. Navigeren naar **Video** zodat u een videocodering kunt toevoegen en vervolgens op **Nieuwe toevoegen**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![Dialoogvenster Profiel verwerken met de knop Nieuwe toevoegen gemarkeerd.](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
 1. Voer de **Coderingsnaam** zoals **schermvullend** en de **Bitsnelheid** als **2500**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![Dialoogvenster Profiel verwerken met de knop Opslaan gemarkeerd.](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >Gebruik de coderingsnaam die begint met &#39;&#39;screens-&#39;&#39;. Alleen deze video-uitvoeringen worden beschouwd als het afspelen van de video-ervaring in as a Cloud Service schermen. Voer de bitsnelheid in die voor uw video&#39;s wordt gebruikt (2500 kbps voor video van 720 pixels en 5000 kbps voor video van 1080 px).

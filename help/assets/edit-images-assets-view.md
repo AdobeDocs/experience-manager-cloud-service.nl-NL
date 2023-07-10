@@ -3,9 +3,9 @@ title: Afbeeldingen bewerken
 description: Afbeeldingen bewerken met [!DNL Adobe Photoshop Express] Aangedreven opties en sparen bijgewerkte beelden als versies.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Met veel standaardopties kunt u uw afbeelding uitsnijden naar de beste verhoudin
 
 ## Afbeelding vergroten/verkleinen {#resize-image}
 
-Een afbeelding vergroten of verkleinen tot een bepaalde grootte is een veelgebruikte optie. [!DNL Assets view] Hiermee kunt u snel het formaat van een afbeelding aanpassen aan de gebruikelijke fotoformaten door vooraf berekende nieuwe resoluties voor specifieke fotoformaten te bieden. U kunt de gebruikelijke fotoformaten in centimeters of inches weergeven om de afmetingen te kennen. Standaard behoudt de methode voor het wijzigen van de grootte de hoogte-breedteverhouding. Als u de hoogte-breedteverhouding handmatig wilt overschrijven, klikt u op ![](assets/do-not-localize/lock-closed-icon.png).
+Een afbeelding vergroten of verkleinen tot een bepaalde grootte is een veelgebruikte optie. [!DNL Assets view] Hiermee kunt u snel het formaat van een afbeelding aanpassen aan de gebruikelijke fotoformaten door vooraf berekende nieuwe resoluties voor specifieke fotoformaten te bieden. U kunt de gebruikelijke fotoformaten in centimeters of inches weergeven om de afmetingen te kennen. Standaard behoudt de methode voor het wijzigen van de grootte de hoogte-breedteverhouding. Als u de hoogte-breedteverhouding handmatig wilt overschrijven, klikt u op ![Opties voor het wijzigen van het formaat van een afbeelding.](assets/do-not-localize/lock-closed-icon.png).
 
 Voer de afmetingen in en klik op **[!UICONTROL Resize Image]** om het formaat van de afbeelding te wijzigen. Voordat u de wijzigingen opslaat als een versie, kunt u alle wijzigingen ongedaan maken voordat u de wijzigingen opslaat door op [!UICONTROL Undo] of u kunt de specifieke stap in het bewerkingsproces wijzigen door op [!UICONTROL Revert].
 
