@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
+source-git-commit: e0bee5134bea71010cacf4bf16eac0baa3dee725
 workflow-type: tm+mt
-source-wordcount: '5827'
+source-wordcount: '6188'
 ht-degree: 1%
 
 ---
@@ -27,27 +27,26 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 >* Zie [Dynamic Media-Cloud Services configureren](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) in Configureer Dynamic Media en [Problemen met Dynamic Media oplossen](/help/assets/dynamic-media/troubleshoot-dm.md).
 >
 
-
 1. **Dynamic Media-video&#39;s uploaden** door het volgende te doen:
 
    * Maak uw eigen videocoderingsprofiel. U kunt ook gewoon de vooraf gedefinieerde _Adaptieve videocodering_ profiel dat bij Dynamic Media wordt geleverd.
 
       * [Een videocoderingsprofiel maken](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Meer informatie over [Aanbevolen procedures voor videocodering](#best-practices-for-encoding-videos).
+
    * Koppel het videoverwerkingsprofiel aan een of meer mappen waar u de primaire bronvideo&#39;s gaat uploaden.
 
       * [Een videoprofiel toepassen op mappen](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * Meer informatie over [Digitale elementen ordenen](/help/assets/organize-assets.md).
+
    * Upload uw primaire bronvideo&#39;s naar de mappen. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
 
       * Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 x 25.
       * U kunt videobestanden uploaden van maximaal 15 GB elk.
       * [Uw video&#39;s uploaden](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Meer informatie over [Ondersteunde bestandsindelingen voor invoer](/help/assets/file-format-support.md).
+
    * Controleren hoe [videocodering wordt voortgezet](#monitoring-video-encoding-and-youtube-publishing-progress) vanuit het element of de werkstroomweergave.
-
-
-
 
 1. **Uw Dynamic Media-video&#39;s beheren** door een van de volgende handelingen uit te voeren:
 
@@ -55,21 +54,24 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
       * [Digitale elementen ordenen](/help/assets/organize-assets.md)
       * [Video-elementen zoeken](/help/assets/search-assets.md#custompredicates) of [Elementen zoeken](/help/assets/manage-digital-assets.md#search-assets)
+
    * Video-elementen voorvertonen en publiceren
 
       * Bekijk de bronvideo en de gecodeerde vertoningen van de video samen met de bijbehorende miniaturen:
-         [Video&#39;s voorvertonen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) of [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md)
-         [Video-uitvoeringen beheren](/help/assets/manage-digital-assets.md#managing-renditions)
+        [Video&#39;s voorvertonen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) of [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md)
+        [Video-uitvoeringen beheren](/help/assets/manage-digital-assets.md#managing-renditions)
 
       * [Viewervoorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md)
       * [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+
    * Werken met videometagegevens
 
       * Bewerk de eigenschappen van video, zoals de titel, beschrijving en tags, aangepaste metagegevensvelden:
-         [Video-eigenschappen bewerken](/help/assets/manage-digital-assets.md#editing-properties)
+        [Video-eigenschappen bewerken](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Metagegevens voor digitale elementen beheren](/help/assets/manage-metadata.md)
       * [Metagegevensschema&#39;s](/help/assets/metadata-schemas.md)
+
    * Video&#39;s bekijken, goedkeuren en annoteren en volledige versiebeheer behouden
 
       * [Video&#39;s annoteren](/help/assets/manage-video-assets.md#annotate-video-assets) of [Annoteren van elementen](/help/assets/manage-digital-assets.md#annotating)
@@ -80,26 +82,23 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
       * [Mapmiddelen controleren](/help/assets/bulk-approval.md)
       * [Projecten](/help/sites-cloud/authoring/projects/overview.md)
 
-
-
-
 1. **Dynamic Media-video&#39;s publiceren** door een van de volgende handelingen uit te voeren:
 
    * Als u Experience Manager gebruikt als uw WCM-systeem (Web Content Management), kunt u video&#39;s rechtstreeks toevoegen aan uw webpagina&#39;s.
 
       * [Video&#39;s toevoegen aan uw webpagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+
    * Als u een systeem voor webcontentbeheer van derden gebruikt, kunt u video&#39;s koppelen aan of insluiten in uw webpagina&#39;s.
 
       * Video integreren met URL:
-         [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+        [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Video integreren met gebruik van ingesloten code op webpagina:
-         [De videoviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
+        [De videoviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
+
    * [Videorapporten genereren](#viewing-video-reports).
 
    * [Bijschriften toevoegen aan video](#adding-captions-to-video).
-
-
 
 ## Werken met video in Dynamic Media {#working-with-video-in-dynamic-media}
 
@@ -600,15 +599,15 @@ Zie [Statische (niet-afbeeldings) inhoud bedienen](https://experienceleague.adob
 
    * Voor een pop-upviewerervaring voor video selecteert u **[!UICONTROL URL]**. Selecteer in het dialoogvenster URL de URL en kopieer deze naar het Klembord en passeer de URL naar een eenvoudige teksteditor. Voeg de gekopieerde URL van de video toe met de volgende syntaxis:
 
-      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
+     `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      Noteer de `,1` aan het einde van het bijschriftpad. Onmiddellijk na de VTT-bestandsnaamextensie in het pad kunt u optioneel de knop voor een gesloten bijschrift op de videospelerbalk in- of uitschakelen (uitschakelen) door in te stellen op `,1` of `,0`, respectievelijk.
+     Noteer de `,1` aan het einde van het bijschriftpad. Onmiddellijk na de VTT-bestandsnaamextensie in het pad kunt u optioneel de knop voor een gesloten bijschrift op de videospelerbalk in- of uitschakelen (uitschakelen) door in te stellen op `,1` of `,0`, respectievelijk.
 
    * Voor een ingesloten videoviewerervaring selecteert u **[!UICONTROL Embed Code]**. Selecteer in het dialoogvenster Code insluiten de insluitcode en kopieer deze naar het klembord. Plak de code vervolgens in een eenvoudige teksteditor. Voeg de gekopieerde insluitcode toe met de volgende syntaxis:
 
-      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
+     `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      Noteer de `,1` aan het einde van het bijschriftpad. Onmiddellijk na de VTT-bestandsnaamextensie in het pad kunt u optioneel de knop voor een gesloten bijschrift op de videospelerbalk in- of uitschakelen (uitschakelen) door in te stellen op `,1` of `,0`, respectievelijk.
+     Noteer de `,1` aan het einde van het bijschriftpad. Onmiddellijk na de VTT-bestandsnaamextensie in het pad kunt u optioneel de knop voor een gesloten bijschrift op de videospelerbalk in- of uitschakelen (uitschakelen) door in te stellen op `,1` of `,0`, respectievelijk.
 
 ## Hoofdstukmarkeringen aan video toevoegen {#adding-chapter-markers-to-video}
 
@@ -688,51 +687,49 @@ Zie [WebVTT: De indeling Webvideoteksttracks](https://w3c.github.io/webvtt/).
      </tbody>
    </table>
 
-<!--
 
-## About video thumbnails {#about-video-thumbnails}
 
-A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to select the video.
+## Informatie over videominiaturen {#about-video-thumbnails}
 
-All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
+Een videominiatuur is een verkleinde versie van een videoframe of een afbeeldingselement dat de video voor de klant vertegenwoordigt. De miniatuur moet de klant aanmoedigen om de video te selecteren.
 
-Note that a custom video thumbnail image that you select from a video is not extracted and saved in the DAM as a separate and distinct asset. However, a custom video thumbnail that you select from an existing image asset is saved to the JCR. The path of the selected asset gets stored under the video asset's node as in the following example path:
+Aan alle video&#39;s in de Experience Manager moet een miniatuur zijn gekoppeld. u kunt een miniatuur niet verwijderen zonder deze te vervangen. Wanneer u een video uploadt naar Experience Manager, wordt standaard het eerste frame gebruikt als miniatuur. U kunt de miniatuur echter aanpassen voor bijvoorbeeld branding of visuele zoekopdracht. Wanneer u een videominiatuur aanpast, kunt u de video afspelen en pauzeren op het frame dat u wilt gebruiken, of een afbeeldingselement selecteren dat u al hebt geüpload en *gepubliceerd* in uw Digital Asset Manager.
 
-`/content/dam/*<folder_name*>/<*video_name*>/jcr:content/manualThumbnail`
+Wanneer de miniatuur voor een video is gewijzigd, wordt het genereren van miniaturen via Asset compute Service bij het opnieuw verwerken van de video overgeslagen.
 
-The ability to customize a video thumbnail is only available after you have applied a video profile to the folder where the video is located.
+De mogelijkheid om een videominiatuur aan te passen is alleen beschikbaar nadat u een videoprofiel hebt toegepast op de map waarin de video zich bevindt.
 
-### Adding a custom video thumbnail {#adding-a-custom-video-thumbnail}
+### Een aangepaste videominiatuur toevoegen {#adding-a-custom-video-thumbnail}
 
-1. Be sure you have already done the following:
+1. Zorg ervoor dat u al het volgende hebt gedaan:
 
-    * Created a folder for your video assets.
-    * [Applied a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+   * Er is een map gemaakt voor uw video-elementen.
+   * [Een videoprofiel op de map toepassen](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-    * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+   * [Uw video&#39;s zijn geüpload naar de map](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
-1. Navigate to an uploaded video asset whose thumbnail image you want to change.
-1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
-1. On the toolbar, select the **[!UICONTROL Properties** icon (a circle with an "i" in it).
-1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, do one of the following:
+1. Navigeer naar een geüpload video-element waarvan u de miniatuurafbeelding wilt wijzigen.
+1. In de modus voor selectie van middelen **[!UICONTROL List View]** of **[!UICONTROL Card View]** selecteert u het video-element.
+1. Selecteer op de werkbalk de optie **[!UICONTROL Properties]** pictogram (een cirkel met een &quot;i&quot; erin).
+1. Selecteer op de pagina Eigenschappen van video de optie **[!UICONTROL Change Thumbnail]**.
+1. Voer een van de volgende handelingen uit op de pagina Miniatuur wijzigen:
 
-    * To use a frame from the video as the new thumbnail:
+   * Een frame van de video gebruiken als de nieuwe miniatuur:
 
-        * On the toolbar, select **[!UICONTROL Select Frame from video]**.
-        * Select the Play button, then select the Pause button on the frame you want to capture as the video's new thumbnail.
+      * Selecteer op de werkbalk de optie **[!UICONTROL Select Frame from video]**.
+      * Selecteer de knop Afspelen en selecteer vervolgens de knop Pauzeren in het frame dat u wilt vastleggen als de nieuwe miniatuur van de video.
 
-    * To use an image asset as the new thumbnail:
+   * Een afbeeldingselement gebruiken als de nieuwe miniatuur:
 
-        * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
-        * Select **[!UICONTROL Select Thumbnail]**.
-        * Navigate to a previously uploaded and published image asset you want to use. Note that the asset will automatically be resized to serve as a thumbnail image for the video.
-        * Select the image asset, then select **[!UICONTROL Select]**.
+      * Selecteer op de werkbalk de optie **[!UICONTROL Select Thumbnail from Assets]**.
+      * Selecteer **[!UICONTROL Select Thumbnail]**.
+      * Navigeer naar een eerder geüpload en gepubliceerd afbeeldingselement dat u wilt gebruiken. Het formaat van het element wordt automatisch aangepast om te dienen als miniatuurafbeelding voor de video.
+      * Selecteer het afbeeldingselement en selecteer vervolgens **[!UICONTROL Select]**.
 
-1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
-1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. Selecteer op de pagina Miniatuur wijzigen de optie **[!UICONTROL Save Change]**.
+1. Selecteer in de rechterbovenhoek van de pagina Eigenschappen van video de optie **[!UICONTROL Save & Close]**.
 
--->
+
 
 <!--
 
