@@ -2,16 +2,16 @@
 title: Hoe kunt u een adaptief formulier toevoegen aan de AEM Sites-pagina?
 description: Ontdek hoe u eenvoudig een adaptief formulier kunt maken of toevoegen aan uw AEM Sites-pagina. Leer stapsgewijze technieken en tips en trucs voor het integreren van formulieren in uw website en het optimaliseren van uw digitale ervaringen voor maximale impact.
 feature: Adaptive Forms, Page Editor, Authoring
-Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: bbb01d049083d0aef09bc2365235a7930fb53070
+Keywords: adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
+source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
 workflow-type: tm+mt
-source-wordcount: '3212'
+source-wordcount: '3213'
 ht-degree: 0%
 
 ---
 
 
-# Een adaptief formulier maken in AEM Sites-pagina of Experience Fragment {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |

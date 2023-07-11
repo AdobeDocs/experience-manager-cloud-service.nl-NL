@@ -3,12 +3,13 @@ title: Inleiding tot [!DNL AEM Forms] as a Cloud Service
 description: Ontdek AEM Forms en leer hoe u hiermee bedrijfsklare documenten en formulieren kunt maken. Meer informatie over Platform-as-a-Service (PaaS) en het beheer van digitale formulieren en bedrijfsprocessen op ondernemingsniveau, en het verbinden van Forms met Adobe Sign en actuele gegevensbronnen.
 landing-page-description: Inzicht in hoe u formulieren in AEM as a Cloud Service kunt gebruiken.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
+source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1137'
 ht-degree: 4%
 
 ---
+
 
 # Inleiding tot AEM Forms as a Cloud Service {#introduction}
 
@@ -58,5 +59,12 @@ De service is geïntegreerd met Adobe Analytics waarmee u prestatiegegevens voor
 | E-handtekeningen | Integreer met Adobe Sign en Adobe Sign Solutions for Government om Forms en documenten eenvoudig voor e-handtekeningen naar gebruikers te verzenden: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html">Een adaptief formulier elektronisch ondertekenen met Adobe Sign </a></li><li></a> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=en#sign-document-step">Een document elektronisch ondertekenen met Adobe Sign en AEM Workflows</a></li></ul> |
 | Forms Analytics | Gebruik Adobe Analytics om waardevolle inzichten in gebruikersgedrag en -voorkeuren te verkrijgen: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html?lang=en">Een adaptief formulier verbinden met Adobe Analytics</a></li></ul> |
 | Gegevensbronnen | Sluit uw formulieren en documenten eenvoudig aan op externe gegevensbronnen om gegevens op te halen en te verzenden: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=en">Verbinden met RDBMS of Rest eindpunt</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en">Verbinding maken met de Microsoft® Dynamics 365- of Salesforce-cloudservice</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=en">Verbinding maken met Microsoft® Azure Blob Storage</a></li></ul> |
+
+
+## Verwante artikelen
+
+* [Aan boord van een Cloud Service](/help/forms/setup-forms-cloud-service.md)
+* [Een lokale ontwikkelomgeving instellen](/help/forms/setup-local-development-environment.md)
+* [Migreren van AEM 6.5 Forms naar Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 
 
