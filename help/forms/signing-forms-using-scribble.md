@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
+source-git-commit: 50f5b34fa9453fd6d8e85290f69194622afeb42c
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ U kunt tikken op de knop **Configureren** ![Configuratiepictogram](assets/config
    >
    >De component voor de stap Handtekening gebruikt de volledige breedte die beschikbaar is voor het formulier. Het wordt aanbevolen geen andere component op te nemen in de sectie die de component voor de stap Handtekening bevat.
 
-1. Tik in de Inhoudsbrowser op **Formuliercontainer** en tik op de knop **Configureren** ![](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeren naar **Aangepaste formuliercontainer** > **Elektronische handtekening** en deselecteer de **Adobe Sign inschakelen** optie. Tik op Gereed ![aem_forms_save](assets/aem_forms_save.png) om de wijzigingen op te slaan.
+1. Tik in de Inhoudsbrowser op **Formuliercontainer** en tik op de knop **Configureren** ![Configuratiepictogram](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeren naar **Aangepaste formuliercontainer** > **Elektronische handtekening** en deselecteer de **Adobe Sign inschakelen** optie. Tik op Gereed ![aem_forms_save](assets/aem_forms_save.png) om de wijzigingen op te slaan.
 
    >[!NOTE]
    >
