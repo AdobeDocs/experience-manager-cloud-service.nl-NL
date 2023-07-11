@@ -3,9 +3,9 @@ title: Verschillen tussen AEM 6.5 Forms en AEM Cloud Services
 description: Bent u een Experience Manager Forms-gebruiker en wilt u een upgrade uitvoeren naar Adobe Experience Manager Forms as a Cloud Service? Vergelijk AEM 6.5 Forms en AEM Cloud Services en leer de meest opvallende wijzigingen voordat u een upgrade uitvoert of naar Cloud Service migreert.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * Ontwikkelaars onderhouden code voor de Cloud Service en de lokale ontwikkelomgeving in een gemeenschappelijke omgeving [git-opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). Een git-opslagplaats, gebaseerd op AEM Archetype, wordt automatisch gemaakt bij het maken van een AEM as a Cloud Service programma.
 
-  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![automatisch aanmaken van git-opslagplaats op AEM als cloudserviceprogramma](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * De stroom van de ontwikkeling voor as a Cloud Service Forms richt zich op AEM Archetype voor AEM Cloud Service. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om verenigbaar te zijn met AEM Cloud Service. Op hoog niveau vereist AEM een scheiding van inhoud en code in afzonderlijke subpakketten om de splitsing tussen muteerbare en onveranderlijke inhoud te respecteren. Gebruik de [Gereedschap Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) bestaande projectpakketten te herstructureren door inhoud en code te scheiden in afzonderlijke pakketten, zodat deze verenigbaar zijn met de voor Adobe Experience Manager as a Cloud Service gedefinieerde projectstructuur.
 

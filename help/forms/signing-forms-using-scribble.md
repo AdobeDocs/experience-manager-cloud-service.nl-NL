@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ U kunt de **Krabbelhandtekening** en **Handtekeningstap** te tekenen (krabbelen)
 
 Zodra u gereed tikt ![aem_forms_save](assets/aem_forms_save.png) in het venster Krabbelhandtekening kunt u de handtekening niet bewerken. Als u de handtekening wilt bewerken, moet u de huidige handtekening negeren en opnieuw ondertekenen met de bovenstaande optie Penseel/toetsenbord.
 
-U kunt tikken op de knop **Configureren** ![](assets/configure.png) pictogram om de hoogte-breedteverhouding van het canvas voor Krabbelhandtekeningen in te stellen.
+U kunt tikken op de knop **Configureren** ![Configuratiepictogram](assets/configure.png) pictogram om de hoogte-breedteverhouding van het canvas voor Krabbelhandtekeningen in te stellen.
 * Wanneer de hoogte-breedteverhouding van het canvas voor Krabbelhandtekeningen kleiner is dan 1, worden de gegevens over de geolocatie toegevoegd onder aan het canvas voor Krabbelhandtekeningen.
 
 
@@ -46,6 +46,7 @@ U kunt tikken op de knop **Configureren** ![](assets/configure.png) pictogram om
 >[!NOTE]
 >
 >Handtekeningen worden altijd opgeslagen in de PNG-indeling.
+>
 
 ## Een adaptief formulier configureren voor het gebruik van een scripthandtekening {#configure-an-adaptive-form-to-use-scribble-signature}
 
