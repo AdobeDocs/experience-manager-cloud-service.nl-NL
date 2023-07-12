@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6ab2d9b01a3f1abedb06d1d413e7eceb8b1c031
+source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1682'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stan
 
 Met de Universal Editor kunt u elk aspect van elke inhoud in een implementatie bewerken, zodat u uitzonderlijke ervaringen kunt bieden, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
 
-Hiervoor verschaft de Universal Editor de auteur van inhoud een intuïtieve gebruikersinterface die minimale training vereist om eenvoudig in de inhoud te kunnen springen en beginnen met het bewerken ervan.
+Hiervoor verschaft de Universal Editor de auteur van inhoud een intuïtieve gebruikersinterface die minimale training vereist om eenvoudig in de inhoud te kunnen springen en beginnen met het bewerken ervan. In dit document wordt de auteurservaring van de Universal Editor beschreven.
 
 >[!TIP]
 >
@@ -25,7 +25,7 @@ Hiervoor verschaft de Universal Editor de auteur van inhoud een intuïtieve gebr
 
 >[!NOTE]
 >
->De Universal Editor is nog in ontwikkeling en kan momenteel niet alle inhoudstypen bewerken.
+>De Universal Editor is nog in ontwikkeling. Momenteel kunnen niet alle inhoudstypen worden bewerkt.
 
 ## De app voorbereiden {#prepare-app}
 
@@ -201,13 +201,23 @@ In de componentmodus wordt de pagina gerenderd in de editor, maar de auteur van 
 
 ![Componentmodus](assets/component-mode.png)
 
+Wanneer u een inhoudsfragment selecteert, worden de details ervan weergegeven in het dialoogvenster [spoorstaaf.](#component-rail)
+
 >[!TIP]
 >
 >De sneltoets gebruiken `C` om over te schakelen naar componentmodus.
 
->[!NOTE]
+#### Bewerken {#edit}
+
+Wanneer in [componentmodus,](#component-mode) als u een inhoudsfragment selecteert, wordt de optie voor bewerken weergegeven op de modusrail.
+
+![Pictogram Bewerken](assets/edit.png)
+
+Als u op de knop Bewerken tikt of erop klikt, wordt de editor voor inhoudsfragmenten op een nieuw tabblad geopend, zodat u inhoud waarnaar wordt verwezen, en tekst en media-inhoud vanuit de Universal Editor kunt bewerken.
+
+>[!TIP]
 >
->De componentmodus is nog in ontwikkeling en is momenteel beperkt tot het selecteren van componenten.
+>De sneltoets gebruiken `E` om een geselecteerde component te bewerken.
 
 ### De Editor {#editor}
 
@@ -230,9 +240,11 @@ In de modus Eigenschappen toont de rail de eigenschappen van de component die mo
 
 ![Eigenschappenmodus](assets/properties-mode.png)
 
-De details van de geselecteerde component worden in de spoorstaaf weergegeven. Niet alle componenten hebben details die moeten worden weergegeven.
+De details van de geselecteerde component worden in de spoorstaaf weergegeven. Als u een inhoudsfragment hebt geselecteerd met [componentmodus,](#component-mode) u kunt de instellingen in de componentrails wijzigen. Wijzigingen worden automatisch opgeslagen door de Universal Editor.
 
 ![Componentdetails](assets/component-details.png)
+
+Merk op dat niet alle componenten details hebben die kunnen worden getoond.
 
 >[!TIP]
 >
@@ -259,13 +271,17 @@ Inhoud bewerken is eenvoudig en intuïtief. In de bewerkingsmodi ([tekstmodus](#
 
 ![Bewerkbare inhoud wordt gemarkeerd door een blauw vak](assets/editable-content.png)
 
-Tik of klik op de inhoud in het blauwe vak om een interne editor te starten en uw wijzigingen aan te brengen. Druk op Enter of Return om de wijzigingen op te slaan.
+Tik of klik op de inhoud in het blauwe vak om een interne editor te starten en uw wijzigingen aan te brengen. Uw wijzigingen worden automatisch opgeslagen.
 
 ![Inhoud bewerken](assets/editing-content.png)
 
 Houd er rekening mee dat in de bewerkingsmodus door tikken of klikken op inhoud wordt geprobeerd deze te selecteren voor bewerking. Als u door de inhoud wilt navigeren door de koppelingen te volgen, schakelt u over naar [voorvertoningsmodus.](#preview-mode)
 
-Afhankelijk van de modus waarin u werkt en de inhoud die u selecteert, zijn er mogelijk verschillende opties voor het bewerken van de plaats. Bovendien kunt u extra eigenschappen voor de inhoud bekijken met de [spoorstaaf.](#component-rail)
+Afhankelijk van de [mode](#mode-rail) Als u werkt en de inhoud die u selecteert, hebt u mogelijk andere opties voor het bewerken van de plaats.
+
+Bovendien kunt u extra eigenschappen voor de inhoud bekijken met de [spoorstaaf.](#component-rail) Als u bijvoorbeeld een RTF-component selecteert, kunt u opmaakopties in de componenttrack bewerken.
+
+![Een RTF-component bewerken](assets/rich-text-editing.png)
 
 ## Inhoud voorvertonen {#previewing-content}
 
