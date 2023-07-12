@@ -3,9 +3,9 @@ title: Hoe kunt u een adaptief formulier toevoegen aan de AEM Sites-pagina?
 description: Ontdek hoe u eenvoudig een adaptief formulier kunt maken of toevoegen aan uw AEM Sites-pagina. Leer stapsgewijze technieken en tips en trucs voor het integreren van formulieren in uw website en het optimaliseren van uw digitale ervaringen voor maximale impact.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
+source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
 workflow-type: tm+mt
-source-wordcount: '3213'
+source-wordcount: '3173'
 ht-degree: 0%
 
 ---
@@ -200,13 +200,13 @@ Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn va
 1. Open de AEM van de Pagina-editor of Ervaar Fragment dat het adaptieve formulier bevat.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Adaptive Forms Container]** dat als host fungeert voor uw adaptieve formulier. Een AEM Sites-pagina kan meerdere Adaptive Forms hosten. Selecteer dus zorgvuldig de juiste adaptieve Forms-container.
 1. Klik op de eigenschappen van de container van het adaptieve formulier ![Eigenschappen van adaptieve formuliercontainers](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van verzendacties wordt geopend.
-   ![Klik op het pictogram Sleutel om het dialoogvenster Aangepaste formuliercontainer te openen voor het configureren van gegevensmodellen voor de component Aangepaste formuliercontainer](/help/forms/assets/adaptive-forms-container.png)
+   ![Klik op het pictogram Sleutel om het dialoogvenster Aangepaste formuliercontainer te openen om een verzendactie te configureren](/help/forms/assets/adaptive-forms-container.png)
 1. Selecteer en vorm een Submit actie, die op uw vereisten wordt gebaseerd. Zie voor meer informatie over Handelingen verzenden [Handeling Adaptief verzenden van formulier](/help/forms/configuring-submit-actions.md)
 
 
 ## Een schema of formuliergegevensmodel configureren voor een formulier in een AEM Sites-pagina of -fragment met experts {#configure-schema-or-data-model-for-form}
 
-Met het formuliergegevensmodel kunt u een formulier verbinden met een gegevensbron om gegevens te verzenden en te ontvangen op basis van gebruikersacties. U kunt een formulier ook verbinden met een JSON-schema om de verzonden gegevens in een vooraf gedefinieerde indeling te ontvangen. Voordat u een formulier koppelt aan een schema of formuliergegevensmodel:
+Met het formuliergegevensmodel kunt u een formulier verbinden met een gegevensbron om gegevens te verzenden en te ontvangen op basis van gebruikersacties. U kunt een formulier ook verbinden met een JSON-schema om de verzonden gegevens in een vooraf gedefinieerde indeling te ontvangen. Afhankelijk van de vereiste verbinding, sluit uw formulier aan op een JSON-schema of formuliergegevensmodel:
 
 * [Een JSON-schema maken en uploaden naar uw omgeving](/help/forms/adaptive-form-json-schema-form-model.md)  of
 * [Een formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
@@ -216,7 +216,7 @@ Een JSON-schema of formuliergegevensmodel configureren voor uw formulier:
 1. Open de AEM van de Pagina-editor of Ervaar Fragment dat het adaptieve formulier bevat.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Adaptive Forms Container]** dat als host fungeert voor uw adaptieve formulier. Een AEM Sites-pagina kan meerdere Adaptive Forms hosten. Selecteer dus zorgvuldig de juiste adaptieve Forms-container.
 1. Klik op de eigenschappen van de container van het adaptieve formulier ![Eigenschappen van adaptieve formuliercontainers](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van gegevensmodellen wordt geopend.
-   ![Klik op het pictogram Sleutel om het dialoogvenster Aangepaste formuliercontainer te openen voor het configureren van gegevensmodellen voor de component Aangepaste formuliercontainer](/help/forms/assets/form-data-model-adaptive-forms-container.png)
+   ![Klik op het pictogram Sleutel om het dialoogvenster Aangepaste formuliercontainer te openen en een gegevensmodel voor het adaptieve formulier te configureren](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. Selecteer en configureer een JSON-schema of formuliergegevensmodel op basis van uw vereisten. Zie voor meer informatie over Handelingen verzenden [Handeling Adaptief verzenden van formulier](/help/forms/configuring-submit-actions.md).
 
    * Wanneer u **[!UICONTROL Form Model]** gebruiken **[!UICONTROL Select Form Data Model]** om een vooraf geconfigureerd formuliergegevensmodel te selecteren.
@@ -238,7 +238,7 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
 1. Open de AEM van de Pagina-editor of Ervaar Fragment dat het adaptieve formulier bevat.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Adaptive Forms Container]** dat als host fungeert voor uw adaptieve formulier. Een AEM Sites-pagina kan meerdere Adaptive Forms hosten. Selecteer dus zorgvuldig de juiste adaptieve Forms-container.
 1. Klik op de eigenschappen van de container van het adaptieve formulier ![Eigenschappen van adaptieve formuliercontainers](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van gegevensmodellen wordt geopend.
-   ![Klik op het pictogram Sleutel om het dialoogvenster Aangepaste formuliercontainer te openen voor het configureren van gegevensmodellen voor de component Aangepaste formuliercontainer](/help/forms/assets/adaptive-forms-container.png)
+   ![Klik op het pictogram Sleutel om het dialoogvenster Aangepaste formuliercontainer te openen voor het configureren van een prefill-service](/help/forms/assets/adaptive-forms-container.png)
 1. Selecteer een formuliergegevensmodel. Open de **[!UICONTROL Basic]** tab. Selecteer in de service Prefill de optie **[!UICONTROL Form Data Model Prefill Service]**.
 1. Klik op **[!UICONTROL Done]**. Uw adaptieve formulier is nu geconfigureerd voor het vooraf invullen van het formuliergegevensmodel. U kunt nu de [regeleditor](rule-editor.md) om regels te maken voor het vooraf invullen van velden van het formulier.
 
@@ -249,13 +249,12 @@ Bij het verzenden van een formulier kunt u de gebruiker omleiden naar een andere
 
 1. Open de AEM van de Pagina-editor of Ervaar Fragment dat het adaptieve formulier bevat.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Adaptive Forms Container]** dat als host fungeert voor uw adaptieve formulier. Een AEM Sites-pagina kan meerdere Adaptive Forms hosten. Selecteer dus zorgvuldig de juiste adaptieve Forms-container.
-1. Klik op de eigenschappen van de container van het adaptieve formulier ![Eigenschappen van adaptieve formuliercontainers](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van gegevensmodellen wordt geopend.
+
 1. Open de **[!UICONTROL Submission]** tab.
 
-   * Als u een omleidings-URL wilt configureren, selecteert u bij Verzenden de optie Omleiden naar URL en geeft u een absoluut adres, een omleidings-URL of een relatief pad van een AEM Sites-pagina op.
+   * Als u een omleidings-URL wilt configureren, selecteert u bij Verzenden de optie **[!UICONTROL Redirect to URL]** en bladert u naar een AEM Sites-pagina en selecteert u deze. U kunt ook een URL van een externe pagina opgeven.
 
-   * Als u een aangepast bericht of een bedankbericht wilt configureren, selecteert u bij Verzenden de optie Bericht tonen en geeft u een bericht op in het vak Berichtinhoud. Het is een tekstvak met tekstopmaak. U kunt de optie Volledig scherm gebruiken om alle beschikbare tekstitems met tekstopmaak weer te geven.
-
+   * Als u een aangepast bericht of een bedankbericht wilt configureren, selecteert u bij Verzenden de optie **[!UICONTROL Show Message]** en geef een bericht op in het dialoogvenster **[!UICONTROL Message content]** doos. Het is een tekstvak met tekstopmaak. U kunt de optie Volledig scherm gebruiken om alle beschikbare tekstitems met tekstopmaak weer te geven.
 
 ## Zie volgende
 
