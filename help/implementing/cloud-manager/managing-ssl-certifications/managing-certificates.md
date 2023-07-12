@@ -2,12 +2,13 @@
 title: SSL-certificaten beheren
 description: Leer hoe u Cloud Manager gebruikt om de status van uw SSL-certificaten te controleren en hoe u deze kunt bewerken, vervangen, bijwerken en verwijderen.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: aeb407f8971dabb4e86203b3cee82318330638b0
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
+
 
 # SSL-certificaten beheren {#managing-ssl-certificates}
 
@@ -34,6 +35,7 @@ Wanneer een certificaat verloopt, werken domeinen die in gebruik zijn met het ve
 1. Ga naar de **SSL-certificaten** van het scherm **Omgevingen** scherm.
 1. Er wordt een tabel met een rij weergegeven voor elk SSL-certificaat dat is geïnstalleerd in uw programma. Klik op de knop met de ovaal helemaal rechts in de rij van het certificaat dat u wilt bijwerken en selecteer **Weergeven en bijwerken**.
 1. De certificaatdetails worden weergegeven en kunnen worden bijgewerkt.
+1. Voer de pijplijn uit om het bijgewerkte certificaat in te voeren.
 
 >[!NOTE]
 >
@@ -56,6 +58,7 @@ Ga als volgt te werk om een SSL-certificaat te verwijderen.
 1. Ga naar de **SSL-certificaten** van het scherm **Omgevingen** scherm.
 1. Er wordt een tabel met een rij weergegeven voor elk SSL-certificaat dat is geïnstalleerd in uw programma. Klik op de knop met de ovaal helemaal rechts in de rij van het certificaat dat u wilt verwijderen en selecteer **Verwijderen**.
 1. Bevestig de verwijdering in de **SSL-certificaat verwijderen** .
+1. Voer de pijplijn uit om het verwijderde certificaat ongedaan te maken.
 
 >[!NOTE]
 >
