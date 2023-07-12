@@ -2,12 +2,13 @@
 title: Programma maken
 description: Leer hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op op te stellen.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 7c33a618f474914ca80dff525552017c55a32517
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
+
 
 # Programma maken {#creating-a-program}
 
@@ -47,48 +48,36 @@ Nadat u zich hebt aangemeld bij Cloud Manager, kunt u een nieuw sandboxprogramma
 
 1. Tik of klik op **Programma toevoegen** rechtsboven in het venster.
 
-1. In de **Laten we uw programma maken** moet u ervoor zorgen dat **Adobe Experience Manager** is geselecteerd onder **Producten** tikken of klikken **Doorgaan**.
+1. In de **Laten we uw programma maken** dialoogvenster:
+
+   1. Een **Programmanaam** om uw programma te beschrijven.
+   1. Tik of klik op **Een sandbox instellen** voor uw **Programmadoelstelling**
+   1. Tik of klik op **Doorgaan**.
 
    ![Het dialoogvenster Programma maken](assets/create-program.png)
 
-1. In het volgende dialoogvenster:
+1. In de **Sandbox instellen** in het dialoogvenster **Oplossingen en invoegtoepassingen** tabel uitvouwen **Sites** item in de lijst door erop te tikken of erop te klikken en vervolgens te controleren **Demo van referenties**.
 
-   * Een **Programmanaam** om uw programma te beschrijven.
-   * Tik of klik op **Een sandbox instellen** voor uw **Programmadoelstelling**
+   * Als u ook demo&#39;s voor AEM Screens wilt maken, schakelt u het selectievakje **Schermen** ook in de lijst. Tik of klik op **Bijwerken**.
 
-   Tik vervolgens of klik op **Maken**.
+   ![Invoegtoepassing selecteren voor verwijzingsdemo in programma-instelling](assets/select-reference-demo-add-on.png)
 
-   ![Programmanaam](assets/program-name.png)
 
-1. U wordt naar het scherm met het programmaoverzicht geleid waar u het proces van het creëren van uw programma kunt waarnemen. Cloud Manager geeft een schatting van de resterende tijd. U kunt bij het maken van het programma weg van dit scherm navigeren en indien nodig later terugkeren.
+1. Tik of klik op **Maken** en Cloud Manager wordt gestart met het instellen van uw sandboxprogramma. U wordt naar het scherm met het programmaoverzicht geleid en een korte bannermelding geeft aan dat het proces is gestart. Er is een kaart toegevoegd aan de overzichtspagina voor uw nieuwe programma. Het installatieproces duurt een paar minuten.
 
-   ![Programma&#39;s maken](assets/program-creation.png)
+1. Zodra de installatie is voltooid, geeft de kaart voor de omgeving op de overzichtspagina zijn status als **Gereed**. Tik of klik op de kaart om de omgeving te openen.
 
-1. Na voltooiing geeft Cloud Manager een overzicht met de omgevingen en pijpleidingen die automatisch worden gemaakt.
+   ![Programma is voltooid](assets/ready.png)
 
-   ![Programma is voltooid](assets/creation-complete.png)
+1. Uw omgeving is gereed en de invoegtoepassing is nu ingeschakeld als optie, maar de inhoud van de demo moet worden geïmplementeerd om beschikbaar te AEM. Om deze kraan te doen of de ellipsknoop naast Deploy te klikken aan Dev pijpleiding in **Pijpleidingen** kaart en selecteer **Uitvoeren**.
 
-1. Bewerk de programmatiedetails door op de programmanaam linksboven op de pagina te klikken en in de vervolgkeuzelijst de optie **Programma bewerken**.
-
-   ![Programma bewerken](assets/edit-program.png)
-
-1. In de **Programma bewerken** dialoogvenster, schakelen naar de **Oplossingen en invoegtoepassingen** tab.
-
-   ![Dialoogvenster Programma bewerken](assets/edit-program-dialog.png)
-
-1. Op de **Oplossingen en invoegtoepassingen** tabblad, vouwt u de **Sites** vermelding in de lijst en vervolgens controleren **Demo van referenties**. Als u ook demo&#39;s voor AEM Screens wilt maken, schakelt u het selectievakje **Schermen** ook in de lijst. Tik of klik op **Bijwerken**.
-
-   ![Opties voor demo&#39;s van verwijzingen controleren](assets/edit-program-add-on.png)
-
-1. Invoegtoepassing wordt nu toegelaten als optie, maar zijn inhoud moet aan AEM worden opgesteld om beschikbaar te zijn. Tik of klik op de pagina met het programmaoverzicht **Start** om de pijpleiding te beginnen om de toe:voegen-on inhoud aan AEM op te stellen.
-
-   ![Start](assets/deploy.png)
+   ![Start](assets/run.png)
 
 1. De pijpleiding begint en u wordt genomen aan een pagina die de vooruitgang van de plaatsing detailleert. U kunt bij het maken van het programma weg van dit scherm navigeren en indien nodig later terugkeren.
 
    ![Implementatie](assets/deployment.png)
 
-Zodra de pijpleiding volledig is, is toe:voegen-op en zijn demo inhoud beschikbaar voor gebruik in het AEM auteursmilieu.
+De pijplijn kan enkele minuten duren. Zodra volledig, toe:voegen-op en zijn demo inhoud is beschikbaar voor gebruik in het AEM auteursmilieu.
 
 ## Volgende functies {#what-is-next}
 
