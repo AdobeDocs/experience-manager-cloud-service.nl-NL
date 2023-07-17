@@ -2,10 +2,10 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 241dcc75e9f2c840be85c34800d8145457baa58d
+source-git-commit: eca0903050bb178f13d37073f8d65354f4bf36d3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '283'
+ht-degree: 2%
 
 ---
 
@@ -34,6 +34,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 12697 same
 - Hulplijnen AEM: Verschillende correcties voor Native PDF
 - SKYOPS-53130: Verbeterde ondersteuning voor wisselstroomgereedschappen in RDE
 - SKYOPS-57146: Blokkering bij AEM opstarten verhelpen
+- SKYOPS-61646: Laatste replicatiedatum wordt niet bijgewerkt na upgrade naar versie 12585
 
 ### Bekende problemen {#known-issues-12697}
 
