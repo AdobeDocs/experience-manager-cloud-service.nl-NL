@@ -2,10 +2,10 @@
 title: Inhoud in doel invoegen
 description: Inhoud in doel invoegen
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 7%
+source-wordcount: '1925'
+ht-degree: 6%
 
 ---
 
@@ -155,7 +155,7 @@ Als het Orchestrator van de Versie nog loopt wanneer een ingestie wordt begonnen
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### Top-up Ingestiefout
+### Bijkomende congestiefout als gevolg van Uniqueness Constraint
 
 Een gemeenschappelijke oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) error is een conflict in knoop ids. Als u deze fout wilt identificeren, downloadt u het innamelogboekbestand met de interface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
@@ -166,6 +166,18 @@ Deze situatie kan zich voordoen als een knooppunt van de bron wordt verplaatst t
 Het kan ook gebeuren als een knoop op het doel tussen een inname en een verdere top-up inname wordt bewogen.
 
 Dit conflict moet handmatig worden opgelost. Iemand die bekend is met de inhoud, moet beslissen welke van de twee knooppunten moet worden verwijderd, rekening houdend met andere inhoud die ernaar verwijst. De oplossing kan vereisen dat de top-up extractie opnieuw wordt gedaan zonder de beledigende knoop.
+
+### Opsommingsfout vanwege niet-verwijderen knooppunt waarnaar wordt verwezen
+
+Een andere veelvoorkomende oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) de mislukking is een versieconflict voor een bepaalde knoop op de doelinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboekbestand met de interface van Cloud Acceleration Manager en zoekt u een item als de volgende:
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
+
+Dit kan gebeuren als een knooppunt op het doel wordt gewijzigd tussen een opname en een volgende opvulopname, zodat er een nieuwe versie is gemaakt. Als voor de opname &#39;include-versies&#39; is ingeschakeld, kan er een conflict optreden omdat het doel nu een recentere versie heeft waarnaar wordt verwezen door de versiegeschiedenis en andere inhoud. Het insluitingsproces kan het conflicterende versieknooppunt niet verwijderen omdat ernaar wordt verwezen.
+
+De oplossing kan vereisen dat de top-up extractie opnieuw wordt gedaan zonder de beledigende knoop. Of u maakt een kleine migratieset van het aanstootgevende knooppunt, maar met &quot;include-versies&quot; uitgeschakeld.
+
+De beste praktijken wijzen erop dat als een opname met wipe=false en &quot;omvat versies&quot;=waar moet worden in werking gesteld het van cruciaal belang is dat de inhoud op het doel zo weinig mogelijk wordt gewijzigd, tot de migratiereis volledig is. Anders kunnen deze conflicten optreden.
+
 
 ## Volgende functies {#whats-next}
 
