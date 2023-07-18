@@ -1,40 +1,85 @@
 ---
 title: Een verzendhandeling configureren voor een adaptief formulier
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
-exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
+hide: true
+hidefromtoc: true
 source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '3004'
+source-wordcount: '3190'
 ht-degree: 0%
 
 ---
 
 # Handeling Adaptief verzenden van formulier {#configuring-the-submit-action}
 
+
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-**Van toepassing op**: ✔️ Aangepaste componenten van de Stichting van de Vorm. ❌ [Adaptieve Core-componenten](/help/forms/configure-submit-actions-core-components.md). Adobe raadt u aan Core Components te gebruiken voor [Adaptieve Forms toevoegen aan een AEM Sites-pagina](create-or-add-an-adaptive-form-to-aem-sites-page.md) of aan [standalone adaptieve Forms maken](creating-adaptive-form-core-components.md).
+**Van toepassing op**: ✔️ Adaptieve vorm Core-componenten ❌ [Aangepaste componenten van de Stichting van de Vorm](/help/forms/configuring-submit-actions.md). Adobe raadt u aan Core Components te gebruiken voor [Adaptieve Forms toevoegen aan een AEM Sites-pagina](create-or-add-an-adaptive-form-to-aem-sites-page.md) of aan [standalone adaptieve Forms maken](creating-adaptive-form-core-components.md).
 
-Er wordt een handeling Verzenden geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier. Forms as a Cloud Service verstrekt de volgende Verzendacties uit de doos.
+Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier.
 
+Forms as a Cloud Service, voor Adaptive Forms die is gebaseerd op Core Components, biedt een array van vooraf gebouwde verzendhandelingen. Met deze verzendacties kunt u:
 
-* [Verzenden naar REST-eindpunt](#submit-to-rest-endpoint)
-* [E-mail verzenden](#send-email)
-* [Verzenden met gebruik van formuliergegevensmodel](#submit-using-form-data-model)
-* [Een AEM-workflow aanroepen](#invoke-an-aem-workflow)
-* [Verzenden naar SharePoint](#submit-to-sharedrive)
-* [Verzenden naar OneDrive](#submit-to-onedrive)
-* [Verzenden naar Azure Blob Storage](#azure-blob-storage)
+* U kunt formuliergegevens eenvoudig verzenden via e-mail.
+* Start Microsoft Power Automate-stromen of AEM Workflows tijdens het verzenden van de gegevens.
+* Verzend de formuliergegevens rechtstreeks naar Microsoft SharePoint Server, Microsoft Azure Blob Storage of Microsoft OneDrive.
+* Verzend naadloos de gegevens naar een gevormde gegevensbron gebruikend het Model van de Gegevens van de Vorm.
+* Verzend de gegevens gemakkelijk naar een REST-eindpunt.
 
-U kunt ook [De standaardverzendhandelingen uitbreiden](custom-submit-action-form.md) om uw eigen handeling Verzenden te maken.
+U kunt ook [De standaardverzendhandelingen uitbreiden](custom-submit-action-form.md) om zelf een handeling Verzenden te maken.
 
-U kunt een handeling Verzenden configureren in het dialoogvenster **[!UICONTROL Submission]** in de zijbalk van de eigenschappen van de container voor adaptieve formulieren.
+## Een handeling voor verzenden selecteren en configureren voor een adaptief formulier {#select-and-configure-submit-action}
 
-![Verzendhandeling configureren](assets/submission.png)
+Een handeling voor verzenden selecteren en configureren voor uw formulier:
 
+1. Open de Inhoudsbrowser en selecteer de **[!UICONTROL Guide Container]** van uw adaptieve formulier.
+1. Klik op de eigenschappen van de container van de hulplijn ![Eigenschappen van hulplijnen](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+
+1. Klik op de knop  **[!UICONTROL Submission]** tab.
+
+   ![Klik op het pictogram Sleutel om het dialoogvenster Aangepaste formuliercontainer te openen om een verzendactie te configureren](/help/forms/assets/adaptive-forms-submit-message.png)
+
+1. Selecteer en vorm een **[!UICONTROL Submit action]**, op basis van uw vereisten. Zie voor meer informatie over de geselecteerde handeling Verzenden:
+
+   * [E-mail verzenden](#send-email)
+   * [Verzenden naar SharePoint](#submit-to-sharedrive)
+   * [Verzenden met gebruik van formuliergegevensmodel](#submit-using-form-data-model)
+   * [Verzenden naar Azure Blob Storage](#azure-blob-storage)
+   * [Verzenden naar REST-eindpunt](#submit-to-rest-endpoint)
+   * [Verzenden naar OneDrive](#submit-to-onedrive)
+   * [Een AEM-workflow aanroepen](#invoke-an-aem-workflow)
+
+## E-mail verzenden {#send-email}
+
+Als u een e-mail naar een of meer ontvangers wilt verzenden nadat het formulier is verzonden, kunt u de opdracht **[!UICONTROL Send Email]** Handeling verzenden. Met deze handeling kunt u een e-mail maken die formuliergegevens in een vooraf gedefinieerde indeling bevat. Neem bijvoorbeeld de volgende sjabloon waar de naam van de klant, het verzendadres, de naam van de staat en de postcode worden opgehaald uit de ingediende formuliergegevens:
+
+    &quot;
+    
+    Hallo ${customer_Name},
+    
+    Het volgende is ingesteld als je standaard verzendadres:
+    ${customer_Name},
+    ${customer_Shipping_Address},
+    ${customer_State},
+    ${customer_ZIPCode}
+    
+    met betrekking tot
+    WKND
+    
+    &quot;
+
+>[!NOTE]
+>
+> * Het is van cruciaal belang dat alle formuliervelden unieke elementnamen hebben, zelfs als ze op verschillende deelvensters in een adaptief formulier zijn geplaatst.
+> * Wanneer u AEM as a Cloud Service gebruikt, is codering vereist voor uitgaande e-mail. Standaard is de functie voor uitgaande e-mail uitgeschakeld. Als u het wilt activeren, verzendt u een ondersteuningsticket naar [Toegang aanvragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+
+Bovendien **[!UICONTROL Send Email]** Met Actie verzenden kunt u bijlagen en een Document of Record (DoR) bij het e-mailbericht opnemen.
+
+Om het [!UICONTROL Attach Document of Record] , raadpleegt u de documentatie op [Het adaptieve formulier configureren om een Document of Record (DoR) te genereren](generate-document-of-record-core-components.md). U kunt deze optie inschakelen in de eigenschappen van het adaptieve formulier.
 
 <!-- [!NOTE]
 >
@@ -57,6 +102,64 @@ U kunt een handeling Verzenden configureren in het dialoogvenster **[!UICONTROL 
 
 
 -->
+
+## Verzenden naar SharePoint {#submit-to-sharedrive}
+
+De **[!UICONTROL Submit to SharePoint]** Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® SharePoint-opslag. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft® SharePoint-opslag. Als u de opdracht **[!UICONTROL Submit to SharePoint]** Actie verzenden in een adaptieve vorm:
+
+1. [Een SharePoint-configuratie maken](#create-a-sharepoint-configuration-create-sharepoint-configuration): AEM Forms wordt aangesloten op uw Microsoft® Sharepoint Storage.
+2. [De verzendactie Verzenden naar SharePoint gebruiken in een adaptief formulier](#use-sharepoint-configuartion-in-af): Het verbindt uw Adaptief Formulier met gevormde Microsoft® SharePoint.
+
+### Een SharePoint-configuratie maken {#create-sharepoint-configuration}
+
+AEM Forms verbinden met uw Microsoft® SharePoint-opslag:
+
+1. Ga naar uw **AEM Forms** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Selecteer een **Configuratiecontainer**. Klik niet op de controle-doos van de Container van de Configuratie. Klik de naam van de Container van de Configuratie om het te selecteren. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
+1. Klik op **[!UICONTROL Create]**. De configuratietovenaar van SharePoint verschijnt.
+   ![SharePoint-configuratie](/help/forms/assets/sharepoint_configuration.png)
+1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]**. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheim, identiteitskaart van de Aannemer voor OAuth URL, zie [Microsoft®-documentatie](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * U kunt de `Client ID` en `Client Secret` van uw app via de Microsoft® Azure-portal.
+   * Voeg in de Microsoft® Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Vervangen `[author-instance]` met de URL van je AEM Forms Author-instantie.
+   * API-machtigingen toevoegen `offline_access` en `Sites.Manage.All` om lees-/schrijfmachtigingen te bieden.
+   * OAuth-URL gebruiken: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Vervangen `<tenant-id>` met de `tenant-id` van uw app via de Microsoft® Azure-portal.
+
+   >[!NOTE]
+   >
+   > De **clientgeheim** is verplicht of facultatief afhankelijk van uw Azure Actieve de toepassingsconfiguratie van de Folder. Als uw toepassing wordt gevormd om een cliëntgeheim te gebruiken, is het verplicht om het cliëntgeheim te verstrekken.
+
+1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding wordt de `Connection Successful` wordt weergegeven.
+
+1. Als u een map wilt selecteren om de gegevens op te slaan, selecteert u **SharePoint-site** > **Documentbibliotheek** > **SharePoint-map**, .
+
+   >[!NOTE]
+   >
+   >* Standaard worden de `forms-ootb-storage-adaptive-forms-submission` Deze map is beschikbaar op de geselecteerde SharePoint-site. Als de map niet beschikbaar is, gebruikt u de **Map maken** om het te maken.
+
+U kunt deze configuratie voor SharePoint-sites nu gebruiken voor de **Verzenden naar SharePoint** verzenden, actie in een adaptief formulier.
+
+### De verzendactie Verzenden naar SharePoint gebruiken in een adaptief formulier {#use-sharepoint-configuartion-in-af}
+
+Met de SharePoint-configuratie die u in de vorige sectie hebt gemaakt, kunt u gegevens of Document of Record opslaan in een SharePoint-map. Voer de volgende stappen uit om de verzendactie Verzenden naar SharePoint in een adaptief formulier te gebruiken:
+
+1. Een [Adaptief formulier](/help/forms/creating-adaptive-form.md). Selecteer tijdens het maken van het adaptieve formulier de optie [!UICONTROL Configuration Container] gebruikt voor [een SharePoint-configuratie maken](#create-sharepoint-configuration).
+
+   >[!NOTE]
+   >
+   > Wanneer [!UICONTROL Configuration Container] is geselecteerd, de algemene [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
+
+1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to SharePoint]**.
+1. Selecteer de geconfigureerde **[!UICONTROL Storage Configuration]**. Hiermee wordt de map in SharePoint opgegeven waarin de formuliergegevens en het Document of Record moeten worden opgeslagen.
+1. Klikken **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
+
+Wanneer u het formulier verzendt, worden de gegevens opgeslagen op de opgegeven locatie voor Microsoft® Sharepoint Storage (Map).
+Mapstructuur voor opgeslagen gegevens is `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## Verzenden met gebruik van formuliergegevensmodel {#submit-using-form-data-model}
+
+De **[!UICONTROL Submit using Form Data Model]** Met Actie verzenden worden verzonden Adaptieve formuliergegevens voor het opgegeven gegevensmodelobject in een formuliergegevensmodel naar de gegevensbron. Wanneer u de handeling Verzenden configureert, kunt u een gegevensmodelobject kiezen waarvan de verzonden gegevens u naar de gegevensbron wilt schrijven.
+
+Daarnaast kunt u een formulierbijlage verzenden met behulp van een formuliergegevensmodel en een Document of Record (DoR) naar de gegevensbron. Voor informatie over het formuliergegevensmodel raadpleegt u [[!DNL AEM Forms] Gegevensintegratie](data-integration.md).
 
 ## Verzenden naar REST-eindpunt {#submit-to-rest-endpoint}
 
@@ -95,34 +198,6 @@ U kunt ook **[!UICONTROL Enable POST request]** en geef een URL op om de aanvraa
 >
 >Als u de velden als parameters in een REST-URL wilt doorgeven, moeten alle velden verschillende elementnamen hebben, zelfs als de velden op verschillende deelvensters zijn geplaatst.
 
-## E-mail verzenden {#send-email}
-
-U kunt de **[!UICONTROL Send Email]** Verzend Actie om een e-mail naar een of meer ontvangers te verzenden wanneer het formulier met succes is verzonden. Het gegenereerde e-mailbericht kan formuliergegevens in een vooraf gedefinieerde indeling bevatten. In de volgende sjabloon worden bijvoorbeeld de naam van de klant, het verzendadres, de naam van de staat en de postcode opgehaald uit de ingediende formuliergegevens.
-
-    &quot;
-    
-    Hallo ${customer_Name},
-    
-    Het volgende is ingesteld als je standaard verzendadres:
-    ${customer_Name},
-    ${customer_Shipping_Address},
-    ${customer_State},
-    ${customer_ZIPCode}
-    
-    met betrekking tot
-    WKND
-    
-    &quot;
-
->[!NOTE]
->
-> * Alle formuliervelden moeten verschillende elementnamen hebben, zelfs als de velden op verschillende deelvensters van een adaptief formulier zijn geplaatst.
-> * AEM as a Cloud Service vereist dat uitgaande post wordt gecodeerd. Standaard is uitgaande e-mail uitgeschakeld. Als u het wilt activeren, verzendt u een ondersteuningsticket naar [Toegang aanvragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
-
-U kunt ook bijlagen en een Document of Record (DoR) aan de e-mail toevoegen. Inschakelen **[!UICONTROL Attach Document of Record]** configureert u het adaptieve formulier om een Document of Record (DoR) te genereren. U kunt de optie inschakelen om een document met records te genereren op basis van de eigenschappen van een adaptief formulier.
-
-
-
 <!-- ## Send PDF via Email {#send-pdf-via-email}
 
 The **Send PDF via Email** Submit Action sends an email with a PDF containing form data, to one or more recipients on successful submission of the form.
@@ -137,11 +212,7 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## Verzenden met gebruik van formuliergegevensmodel {#submit-using-form-data-model}
 
-De **[!UICONTROL Submit using Form Data Model]** Met Actie verzenden worden verzonden Adaptieve formuliergegevens voor het opgegeven gegevensmodelobject in een formuliergegevensmodel naar de gegevensbron. Wanneer u de handeling Verzenden configureert, kunt u een gegevensmodelobject kiezen waarvan de verzonden gegevens u naar de gegevensbron wilt schrijven.
-
-Daarnaast kunt u een formulierbijlage verzenden met behulp van een formuliergegevensmodel en een Document of Record (DoR) naar de gegevensbron. Voor informatie over het formuliergegevensmodel raadpleegt u [[!DNL AEM Forms] Gegevensintegratie](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -170,60 +241,7 @@ Voordat u de **[!UICONTROL Invoke an AEM Workflow]** Met Handeling verzenden wor
 
 * **[!UICONTROL Processing Server Password]**: Wachtwoord workflowgebruiker
 
-## Verzenden naar SharePoint {#submit-to-sharedrive}
 
-De **[!UICONTROL Submit to SharePoint]** Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® SharePoint-opslag. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft® SharePoint-opslag. Als u de opdracht **[!UICONTROL Submit to SharePoint]** Actie verzenden in een adaptieve vorm:
-
-1. [Een SharePoint-configuratie maken](#create-a-sharepoint-configuration-create-sharepoint-configuration): AEM Forms wordt aangesloten op uw Microsoft® Sharepoint Storage.
-2. [De verzendactie Verzenden naar SharePoint gebruiken in een adaptief formulier](#use-sharepoint-configuartion-in-af): Het verbindt uw Adaptief Formulier met gevormde Microsoft® SharePoint.
-
-### Een SharePoint-configuratie maken {#create-sharepoint-configuration}
-
-AEM Forms verbinden met uw Microsoft® SharePoint-opslag:
-
-1. Ga naar uw **AEM Forms-auteur** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
-1. Wanneer u de **[!UICONTROL Microsoft® SharePoint]**, u wordt doorgestuurd naar **[!UICONTROL SharePoint Browser]**.
-1. Selecteer een **Configuratiecontainer**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
-1. Klik op **[!UICONTROL Create]**. De configuratietovenaar van SharePoint verschijnt.
-   ![SharePoint-configuratie](/help/forms/assets/sharepoint_configuration.png)
-1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]**. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheim, identiteitskaart van de Aannemer voor OAuth URL, zie [Microsoft®-documentatie](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * U kunt de `Client ID` en `Client Secret` van uw app via de Microsoft® Azure-portal.
-   * Voeg in de Microsoft® Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Vervangen `[author-instance]` met de URL van uw instantie Auteur.
-   * API-machtigingen toevoegen `offline_access` en `Sites.Manage.All` om lees-/schrijfmachtigingen te bieden.
-   * OAuth-URL gebruiken: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Vervangen `<tenant-id>` met de `tenant-id` van uw app via de Microsoft® Azure-portal.
-
-   >[!NOTE]
-   >
-   > De **clientgeheim** het gebied is verplicht of facultatief hangt van uw Azure Actieve de toepassingsconfiguratie van de Folder af. Als uw toepassing wordt gevormd om een cliëntgeheim te gebruiken, is het verplicht om het cliëntgeheim te verstrekken.
-
-1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding wordt de `Connection Successful` wordt weergegeven.
-
-1. Nu selecteert u **SharePoint-site** > **Documentbibliotheek** > **SharePoint-map** om de gegevens op te slaan.
-
-   >[!NOTE]
-   >
-   >* Standaard, `forms-ootb-storage-adaptive-forms-submission` is aanwezig op geselecteerde SharePoint-site.
-   >* Een map maken als `forms-ootb-storage-adaptive-forms-submission`, indien niet reeds aanwezig in de `Documents` bibliotheek van de geselecteerde SharePoint-site door op **Map maken**.
-
-U kunt deze configuratie voor SharePoint-sites nu gebruiken voor de verzendactie in een adaptief formulier.
-
-### SharePoint-configuratie gebruiken in een adaptief formulier {#use-sharepoint-configuartion-in-af}
-
-U kunt de gemaakte SharePoint-configuratie in een adaptief formulier gebruiken om gegevens of gegenereerd document met record op te slaan in een SharePoint-map. Voer de volgende stappen uit om een SharePoint-opslagconfiguratie in een adaptief formulier te gebruiken als:
-1. Een [Adaptief formulier](/help/forms/creating-adaptive-form.md).
-
-   >[!NOTE]
-   >
-   > * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw SharePoint-opslag hebt gemaakt.
-   > * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
-
-1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to SharePoint]**.
-   ![SharePoint-GIF](/help/forms/assets/sharedrive-video.gif)
-1. Selecteer **[!UICONTROL Storage Configuration]**, waar u de gegevens wilt opslaan.
-1. Klikken **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
-
-Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft® Sharepoint Storage.
-De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## Verzenden naar OneDrive {#submit-to-onedrive}
 

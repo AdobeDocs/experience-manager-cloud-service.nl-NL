@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2174'
 ht-degree: 0%
 
 ---
 
-# Een adaptief formulier maken (kerncomponenten) {#creating-an-adaptive-form-core-components}
+# Een adaptief formulier maken {#creating-an-adaptive-form-core-components}
 
 Met Adaptive Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een gebruiksvriendelijke wizard voor zakelijke gebruikers om snel een Adaptive Forms te maken. De wizard beschikt over een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken.
 
@@ -44,7 +44,7 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 * **Machtigingen**: Gebruikers toevoegen aan [!DNL forms-users] groep. De leden van de [!DNL forms-users] groep heeft machtigingen om een adaptief formulier te maken. Voor een gedetailleerde lijst met formulierspecifieke gebruikersgroepen gaat u naar [Groepen en machtigingen](forms-groups-privileges-tasks.md).
 
 
-## Een adaptief formulier maken (kerncomponenten) {#create-an-adaptive-form-core-components}
+## Een adaptief formulier maken  {#create-an-adaptive-form-core-components}
 
 1. Meld u aan bij uw [!DNL Experience Manager Forms] Instantie van auteur. Dit kan een Cloud-instantie of een lokale ontwikkelingsinstantie zijn.
 
