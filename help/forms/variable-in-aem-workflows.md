@@ -2,14 +2,19 @@
 title: Hoe te om variabelen in AEM stappen van het Werkschema toe te voegen?
 description: Leer een variabele te maken, stel een waarde voor de variabele in en gebruik deze in [!DNL AEM Forms] Workflowstappen.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2066'
 ht-degree: 0%
 
 ---
 
 # Variabelen in Forms-centric AEM Workflows {#variables-in-aem-forms-workflows}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
+| AEM as a Cloud Service | Dit artikel |
 
 Een variabele in een workflowmodel is een manier om een waarde op te slaan op basis van het gegevenstype. U kunt de naam van de variabele in om het even welke werkschemastap gebruiken om de waarde terug te winnen die in de variabele wordt opgeslagen. U kunt veranderlijke namen ook gebruiken om uitdrukkingen te bepalen voor het nemen van verpletterende besluiten.
 

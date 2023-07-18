@@ -6,14 +6,19 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1967'
 ht-degree: 0%
 
 ---
 
 # Aangepaste formuliervelden vooraf invullen{#prefill-adaptive-form-fields}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
+| AEM as a Cloud Service | Dit artikel |
 
 ## Inleiding {#introduction}
 
@@ -301,7 +306,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 ### Gegevenskenmerk instellen in slingRequest {#setting-data-attribute-in-slingrequest}
 
-U kunt ook de `data` kenmerk in `slingRequest`, waarbij `data` Het kenmerk is een tekenreeks die XML of JSON bevat, zoals in de voorbeeldcode hieronder wordt getoond (Voorbeeld is voor XML):
+U kunt ook de `data` kenmerk in `slingRequest`, waarbij `data` attribute is a string containing XML or JSON, as displayed in the sample code below (Example is for XML):
 
 ```javascript
 <%

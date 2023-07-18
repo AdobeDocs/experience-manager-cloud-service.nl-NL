@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1485'
 ht-degree: 0%
 
 ---
 
 # Formuliergegevensmodel maken {#create-form-data-model}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
+| AEM as a Cloud Service | Dit artikel |
+
 
 ![Gegevensintegratie](do-not-localize/data-integeration.png)
 
@@ -77,7 +83,7 @@ Ga als volgt te werk om gegevensbronnen toe te voegen aan of bij te werken naar 
    * Tik op de knop **[!UICONTROL Edit]** pictogram voor de gegevensbron en selecteer uit de lijst van beschikbare gegevensbronnen.
    * Tik op de knop **[!UICONTROL Delete]** pictogram voor de gegevensbron. Het pictogram Verwijderen is uitgeschakeld als een gegevensmodelobject in de gegevensbron wordt toegevoegd aan het formuliergegevensmodel.
 
-      ![fdm-eigenschappen](assets/fdm-properties.png)
+     ![fdm-eigenschappen](assets/fdm-properties.png)
 
 1. Tikken **[!UICONTROL Save & Close]** om de updates op te slaan.
 
@@ -108,8 +114,7 @@ Implementatiespecifieke cloudconfiguraties inschakelen in [!UICONTROL Form Data 
 
 1. Maak een contextbewuste configuratie voor Apache Sling. Om de configuratie te creëren OSGi:
    1. **OSGi-configuratiebestanden instellen in [!DNL Experience Manager] Archetype-project.**
-OSGi-fabrieksconfiguratiebestanden maken met PID 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Maak een bestand met dezelfde naam onder elke uitvoermodusmap waarin de waarden per uitvoermodus moeten worden gewijzigd. Zie voor meer informatie [OSGi configureren voor [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+OSGi-fabrieksconfiguratiebestanden maken met PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Maak een bestand met dezelfde naam onder elke uitvoermodusmap waarin de waarden per uitvoermodus moeten worden gewijzigd. Zie voor meer informatie [OSGi configureren voor [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **Stel de configuratie-json OSGI in.** Om Apache Sling Context-Aware de Leverancier van de Opheffing van de Configuratie te gebruiken:
       1. Instantie voor lokale ontwikkeling `/system/console/configMgr`selecteert u de OSGi-configuratie in de fabriek met de naam **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi configuration]**.
@@ -123,7 +128,6 @@ U kunt meerdere overschrijvingen toevoegen door **[!UICONTROL +]**.
       1. De waarde wijzigen van `newURL` op basis van omgeving (of runmode).
       1. Om geheime waarde te veranderen die op runmode wordt gebaseerd, kan de geheime variabele tot stand worden gebracht gebruikend [cloudbeheer-API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) en kan later worden verwezen in de [OSGi-configuratie](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
 Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, zal de opheffing verschillende waarden op verschillende milieu&#39;s (of looppaswijze) verstrekken.
-
       >[!NOTE]
       >
       >[!DNL Adobe Managed Service] gebruikers kunnen de geheime waarden coderen gebruikend crypto steun (voor details, zie [coderingsondersteuning voor configuratie-eigenschappen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) en plaats gecodeerde tekst na [de context bewuste configuraties zijn beschikbaar in de dienstpak 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).

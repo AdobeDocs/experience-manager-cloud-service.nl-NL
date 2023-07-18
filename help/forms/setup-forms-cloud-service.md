@@ -2,14 +2,20 @@
 title: Procedure voor het instellen van een [!DNL AEM Forms] as a Cloud Service omgeving?
 description: Leer instellen en configureren van een [!DNL AEM Forms] as a Cloud Service omgeving
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 0%
+source-wordcount: '625'
+ht-degree: 1%
 
 ---
 
 # Aan boord tot [!DNL AEM Forms] as a Cloud Service {#overview}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) |
+| AEM as a Cloud Service | Dit artikel |
+
 
 ## Persoonlijke beslissingen nemen {#personas-aem-forms-project}
 

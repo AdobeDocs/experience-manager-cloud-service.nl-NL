@@ -2,14 +2,19 @@
 title: Hoe kan AEM Forms met Adobe Analytics worden geïntegreerd?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
 
 # Integreren met [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM as a Cloud Service | Dit artikel |
 
 AEM Forms kan worden geïntegreerd met [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) waarmee u prestatiegegevens voor gepubliceerde formulieren kunt vastleggen en bijhouden. Het doel achter het analyseren van deze metriek is bedrijfsgebruikers toe te laten om inzicht in eindgebruikergedrag te verwerven en de ervaring van het gegevensvangst te optimaliseren. U kunt gedrag van zowel aangemelde als niet-aangemelde (anonieme) gebruikers vastleggen en volgen via Adobe Analytics for Adaptive Forms.
 
@@ -140,7 +145,7 @@ Voer de volgende stappen uit om regels te maken op basis van de **[!UICONTROL Ad
 
    * **[!UICONTROL Clear Variables]**: Gebruik dit actietype om het gegevensspoor te wissen zodat de gebeurtenis slechts eenmaal wordt geregistreerd [!DNL Adobe Analytics].
 
-      De aanbevolen aanpak is het gebruik van de **[!UICONTROL Set Variables]** actietype om de gebeurtenis en gegevenselementen te vormen, dan gebruik **[!UICONTROL Send Beacon]** om gegevens te verzenden, en dan te gebruiken **[!UICONTROL Clear Variables]** om het gegevensspoor te wissen.
+     De aanbevolen aanpak is het gebruik van de **[!UICONTROL Set Variables]** actietype om de gebeurtenis en gegevenselementen te vormen, dan gebruik **[!UICONTROL Send Beacon]** om gegevens te verzenden, en dan te gebruiken **[!UICONTROL Clear Variables]** om het gegevensspoor te wissen.
 
 1. In de **[!UICONTROL Props]** de sectie, in kaart brengen de opties van de rapportreeks beschikbaar in de drop-down lijst met de gegevenselementen die gebruikend worden bepaald [Gegevenselementen configureren](#configure-data-elements).
 

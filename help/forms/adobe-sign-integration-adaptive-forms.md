@@ -4,14 +4,19 @@ description: Leer hoe u Adobe Acrobat Sign for configureert [!DNL AEM Forms] as 
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1806'
 ht-degree: 0%
 
 ---
 
 # Verbinden [!DNL AEM Forms] as a Cloud Service met [!DNL Adobe Acrobat Sign] {#integrate-adobe-sign-with-aem-forms}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
+| AEM as a Cloud Service | Dit artikel |
 
 [!DNL Adobe Acrobat Sign] maakt workflows voor e-handtekeningen mogelijk voor Adaptive Forms en AEM Workflows. E-handtekeningen verbeteren workflows om documenten te verwerken voor juridische documenten, verkoop, salarisadministratie, personeelsbeheer en nog veel meer gebieden.
 

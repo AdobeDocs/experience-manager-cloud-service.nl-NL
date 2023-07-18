@@ -3,14 +3,19 @@ title: Lay-outmogelijkheden van adaptieve Forms
 seo-title: Layout capabilities of Adaptive Forms
 description: De lay-out en vormgeving van Adaptief Forms op verschillende apparaten worden bepaald door de lay-outinstellingen. Begrijp de verschillende lay-outs en hoe te om hen toe te passen.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
 
 # Lay-outmogelijkheden van adaptieve Forms {#layout-capabilities-of-adaptive-forms}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service | Dit artikel |
 
 [!DNL Adobe Experience Manager] Hiermee kunt u gebruiksvriendelijke adaptieve Forms maken die eindgebruikers dynamische ervaringen biedt. De formulierindeling bepaalt hoe items of componenten in een adaptieve vorm worden weergegeven.
 
@@ -68,7 +73,7 @@ De summiere uitdrukking kan worden gebruikt om de waarden te tonen die door de e
 
 ![Herhaalbare deelvensters met de accordeonlay-out in Adaptive Forms](assets/accordion-layout.png)
 
-### [!UICONTROL Tabbed layout - tabs appear on the left ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Tabbed layout - tabs appear on the left]{#tabbed-layout-tabs-appear-on-the-left}
 
 Met deze lay-out kunt u de **[!UICONTROL Panel Adaptive Form]** in een deelvenster met tabnavigatie. De tabbladen worden links van de inhoud van het deelvenster geplaatst.
 
@@ -102,7 +107,7 @@ In deze indeling worden, zoals in de naam wordt gesuggereerd, deelvenstertitels 
 
 ![Mobiele lay-outs met titels van deelvensters in de formulierkoppen](assets/mobile-layout1.png)
 
-### [!UICONTROL Layout without panel titles in the form header ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Layout without panel titles in the form header]{#layout-without-panel-titles-in-the-form-header}
 
 In deze indeling worden, zoals in de naam wordt gesuggereerd, alleen het navigatiemenu en de navigatiebalk zonder venstertitels weergegeven. Deze indeling biedt ook de pictogrammen Volgende en Vorige voor navigatie.
 

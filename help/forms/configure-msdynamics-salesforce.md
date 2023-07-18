@@ -2,14 +2,19 @@
 title: Hoe te om de Dynamica 365 van Microsoft en Salesforce uit de doos gegevensmodellen van de vormgegevens voor adaptieve vormen te vormen?
 description: Leer hoe u Microsoft Dynamics 365 en Salesforce kunt integreren met adaptieve formulieren.
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 0%
+source-wordcount: '890'
+ht-degree: 1%
 
 ---
 
 # Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices {#configure-azure-storage}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM as a Cloud Service | Dit artikel |
 
 [[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md) verstrekt [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices voor het integreren van adaptieve formulieren met modellen formuliergegevens buiten het vak. De Adaptive Forms kan dan communiceren met [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] servers om bedrijfswerkstromen toe te laten. Bijvoorbeeld:
 
@@ -30,11 +35,11 @@ Voordat u de [!DNL Salesforce] cloudservices, zorg ervoor dat u de volgende take
 
 * [Maak een aangesloten OAuth-ingeschakeld [!DNL Salesforce] toepassing](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5). Wanneer u de verbinding maakt [!DNL Salesforce] de callback-URL in de volgende notatie opgeven:
 
-   ```
-   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
-   ```
+  ```
+  https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+  ```
 
-   Waar server en poort verwijzen naar de hostnaam en het poortnummer voor de [!DNL AEM Forms] server.
+  Waar server en poort verwijzen naar de hostnaam en het poortnummer voor de [!DNL AEM Forms] server.
 
 * Tijdens het maken van de verbinding [!DNL Salesforce] toepassing, specificeer `full` en `offline_access` als de waarden voor het OAuth-bereik.
 
@@ -66,11 +71,11 @@ Voordat u de [!DNL Microsoft Dynamics 365] cloudservice, zorg ervoor dat u de vo
 
 * [Een aanvraag registreren voor [!DNL Microsoft Dynamics 365] met Azure Active Directory](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory). Wanneer u de verbinding maakt [!DNL Microsoft Dynamics 365] -toepassing, geeft u de antwoordURL&#39;s op in de volgende indeling:
 
-   ```
-   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
-   ```
+  ```
+  https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+  ```
 
-   Waar server en poort verwijzen naar de hostnaam en het poortnummer voor de [!DNL AEM Forms] server.
+  Waar server en poort verwijzen naar de hostnaam en het poortnummer voor de [!DNL AEM Forms] server.
 
 * Noteer de waarden voor de client-id (ook toepassings-id genoemd) en het clientgeheim voor de verbonden toepassing.
 

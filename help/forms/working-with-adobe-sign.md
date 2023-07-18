@@ -5,15 +5,21 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2948'
 ht-degree: 0%
 
 ---
 
 
 # Gebruiken [!DNL Adobe Sign] in een adaptieve vorm {#using-adobe-sign-in-an-adaptive-form}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM as a Cloud Service | Dit artikel |
+
 
 [!DNL Adobe Sign] maakt workflows voor e-handtekeningen mogelijk voor Adaptive Forms. E-handtekeningen verbeteren werkstromen om documenten voor wettig, verkoop, loonlijst, personeelsbeheer, en meer gebieden te verwerken.
 
@@ -73,6 +79,7 @@ Een adaptief formulier maken dat geschikt is voor ondertekenen:
    1. Geef de **[!UICONTROL Name]** en **[!UICONTROL Title]** voor het adaptieve formulier.
 
    1. Selecteer [configuratiecontainer](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) gemaakt tijdens [integreren [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+
    De configuratiecontainer bevat de [!DNL Adobe Sign] Cloud Services geconfigureerd voor uw omgeving. Deze services zijn beschikbaar voor selectie in de Adaptieve formuliereditor.
 
 1. In de **[!UICONTROL Form Model]** selecteert u een van de volgende opties:
@@ -114,7 +121,6 @@ U voegt als volgt velden toe aan een adaptief formulier en past verschillende op
    >
    >  * Gebruiken [!DNL Adobe Sign] blok is niet verplicht [!DNL Adobe Sign] in een adaptieve vorm. Als u het niet gebruikt [!DNL Adobe Sign] Hiermee worden velden voor de ontvangers gebundeld en toegevoegd. Vervolgens wordt het standaardhandtekeningveld onder aan de ondertekeningsdocumenten weergegeven.
    >  * Gebruiken [!DNL Adobe Sign] alleen blokkeren voor Adaptive Forms die automatisch Document of Record genereren. Als u een aangepaste XDP gebruikt voor het genereren van een document of een op een formuliersjabloon gebaseerd adaptief formulier, [!DNL Adobe Sign] blok wordt niet ondersteund.
-
 
 
 1. Selecteer **[!UICONTROL Adobe Sign Block]** en tik op de **[!UICONTROL Edit]** ![Bewerken](assets/Smock_Edit_18_N.svg) pictogram. Er worden opties weergegeven voor het toevoegen van velden en het opmaken van de weergave van een veld.
@@ -190,15 +196,16 @@ U kunt een of meerdere ontvangers voor een Adobe Sign-overeenkomst hebben. Wanne
 
    * **[!UICONTROL Recipient Email Address]:** Geef het e-mailadres van de ontvanger op. De ontvanger ontvangt de Adobe Sign-overeenkomst over het opgegeven e-mailadres. U kunt ervoor kiezen een e-mailadres te gebruiken dat wordt opgegeven in een formulierveld, in het gebruikersprofiel voor Experience Managers van de aangemelde gebruiker of handmatig een e-mailadres in te voeren. Het is een verplichte stap.
 
-      >[!NOTE]
-      >
-      >Zorg ervoor dat het e-mailadres van de eerste ontvanger of de enige ontvanger (als er één ontvanger is) niet hetzelfde is als [!DNL Adobe Sign] account dat wordt gebruikt om AEM Cloud Services te configureren.
+     >[!NOTE]
+     >
+     >Zorg ervoor dat het e-mailadres van de eerste ontvanger of de enige ontvanger (als er één ontvanger is) niet hetzelfde is als [!DNL Adobe Sign] account dat wordt gebruikt om AEM Cloud Services te configureren.
 
    * **[!UICONTROL Recipient Authentication Method]:** Geef de methode op voor het verifiëren van een ontvanger voordat u de Adobe Sign-overeenkomst opent. U kunt kiezen tussen telefoon, kennisbasis, sociale op identiteit-gebaseerde authentificatie, en [Overheids-id](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) for [!DNL Adobe Acrobat Sign]. Voor [!DNL Adobe Acrobat Sign for Government] u kunt tussen telefoon en op kennis-gebaseerde authentificatie kiezen.
+
    >[!NOTE]
    >
    >    * Standaard biedt verificatie op basis van sociale identiteit een optie voor verificatie met behulp van Facebook, Google en LinkedIn. U kunt contact opnemen met [!DNL Adobe Sign] ondersteuning om andere aanbieders van sociale authenticatie mogelijk te maken.
-
+   >
 
    * **[!DNL Adobe Sign]velden die moeten worden ingevuld of ondertekend:** Selecteren [!DNL Adobe Sign] velden voor de ontvanger. Een adaptief formulier kan meerdere [!DNL Adobe Sign] velden. U kunt specifieke velden inschakelen voor een ontvanger. In het veld worden alle beschikbare [!DNL Adobe Sign] Blokken. Wanneer u een blok selecteert, worden alle velden van het blok geselecteerd. U kunt het X-pictogram gebruiken om de selectie van een veld op te heffen.
 
@@ -310,16 +317,16 @@ Na [Adaptief formulier-eigenschappen bewerken voor Adobe Sign](working-with-adob
    * Wolkhandtekeningen: Ondertekenen met een [digitale id](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) gehost door een vertrouwde serviceprovider.
    * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met een smartcard, USB-token of een digitale id op basis van een bestand.
 
-      >[!NOTE]
-      >
-      > Digitale handtekening is ook van toepassing op [!DNL Adobe Acrobat Sign for Government] maar u kunt dit niet toepassen met gebruik van Cloud-handtekeningen.
+     >[!NOTE]
+     >
+     > Digitale handtekening is ook van toepassing op [!DNL Adobe Acrobat Sign for Government] maar u kunt dit niet toepassen met gebruik van Cloud-handtekeningen.
+
    Nadat u het handtekeningveld voor de cloud aan het adaptieve formulier hebt toegevoegd, voert u de volgende stappen uit om het configuratieproces te voltooien:
 
    * [Adobe Sign inschakelen voor een adaptief formulier](#enableadobsignforanadaptiveform)
    * [Adobe Sign Cloud Service selecteren voor een adaptief formulier](#selectadobesigncloudserviceforanadaptiveform)
    * [Ontvangers toevoegen aan een adaptief formulier](#addsignerstoanadaptiveform)
    * [Selecteer Handeling verzenden voor een adaptief formulier](#selectsubmitactionforanadaptiveform)
-
 
 ### De component voor de prullenbak of overzichtsstap configureren {#configure-the-thank-you-page-or-summary-step-component}
 

@@ -2,14 +2,19 @@
 title: Thema's maken en gebruiken om een adaptief formulier te stileren
 description: Met thema's kunt u een adaptief formulier stileren en een visuele identiteit geven. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '5362'
+source-wordcount: '5382'
 ht-degree: 0%
 
 ---
 
 # Thema&#39;s maken en gebruiken {#creating-and-using-themes}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM as a Cloud Service | Dit artikel |
 
 U kunt thema&#39;s maken en toepassen om een adaptief formulier te stileren<!-- or an interactive communication-->. Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten. Thema wordt onafhankelijk beheerd zonder verwijzing naar een adaptief formulier<!-- or interactive communication -->.
 

@@ -2,14 +2,19 @@
 title: Een verzendhandeling configureren voor een adaptief formulier
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2959'
+source-wordcount: '2979'
 ht-degree: 0%
 
 ---
 
 # Handeling Adaptief verzenden van formulier {#configuring-the-submit-action}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM as a Cloud Service | Dit artikel |
 
 Er wordt een handeling Verzenden geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier. Adaptief Forms geeft enkele verzendhandelingen uit het vak op. De beschikbare verzendhandelingen zijn:
 
@@ -111,7 +116,6 @@ U kunt de **[!UICONTROL Send Email]** Verzend Actie om een e-mail naar een of me
 > * Alle formuliervelden moeten verschillende elementnamen hebben, zelfs als de velden op verschillende deelvensters van een adaptief formulier zijn geplaatst.
 > * AEM as a Cloud Service vereist dat uitgaande post wordt gecodeerd. Standaard is uitgaande e-mail uitgeschakeld. Als u het wilt activeren, verzendt u een ondersteuningsticket naar [Toegang aanvragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
-
 U kunt ook bijlagen en een Document of Record (DoR) aan de e-mail toevoegen. Inschakelen **[!UICONTROL Attach Document of Record]** configureert u het adaptieve formulier om een Document of Record (DoR) te genereren. U kunt de optie inschakelen om een document met records te genereren op basis van de eigenschappen van een adaptief formulier.
 
 
@@ -198,7 +202,6 @@ AEM Forms verbinden met uw Microsoft® SharePoint-opslag:
    >* Standaard, `forms-ootb-storage-adaptive-forms-submission` is aanwezig op geselecteerde SharePoint-site.
    >* Een map maken als `forms-ootb-storage-adaptive-forms-submission`, indien niet reeds aanwezig in de `Documents` bibliotheek van de geselecteerde SharePoint-site door op **Map maken**.
 
-
 U kunt deze configuratie voor SharePoint-sites nu gebruiken voor de verzendactie in een adaptief formulier.
 
 ### SharePoint-configuratie gebruiken in een adaptief formulier {#use-sharepoint-configuartion-in-af}
@@ -210,7 +213,6 @@ U kunt de gemaakte SharePoint-configuratie in een adaptief formulier gebruiken o
    >
    > * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw SharePoint-opslag hebt gemaakt.
    > * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
-
 
 1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to SharePoint]**.
    ![SharePoint-GIF](/help/forms/assets/sharedrive-video.gif)
@@ -257,7 +259,6 @@ AEM Forms aansluiten op uw Microsoft® OneDrive-opslag:
    >* Standaard, `forms-ootb-storage-adaptive-forms-submission` is aanwezig in OneDrive Container.
    > * Een map maken als `forms-ootb-storage-adaptive-forms-submission`, indien nog niet aanwezig, klikt u op **Map maken**.
 
-
 U kunt deze OneDrive-opslagconfiguratie nu gebruiken voor de verzendactie in een adaptief formulier.
 
 ### OneDrive-configuratie gebruiken in een adaptief formulier {#use-onedrive-configuartion-in-af}
@@ -269,7 +270,6 @@ U kunt de gemaakte OneDrive-opslagconfiguratie in een adaptief formulier gebruik
    >
    > * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw OneDrive-opslag hebt gemaakt.
    > * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
-
 
 1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to OneDrive]**.
    ![OneDrive-GIF](/help/forms/assets/onedrive-video.gif)
@@ -284,7 +284,7 @@ De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/mo
 De **[!UICONTROL Submit to Azure Blob Storage]**  Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® Azure-portal. U kunt de formuliergegevens, het bestand, de bijlagen of het document met records verzenden naar de aangesloten Azure Storage-containers. De handeling Verzenden voor Azure Blob Storage gebruiken:
 
 1. [Een Azure Blob Storage Container maken](#create-a-azure-blob-storage-container-create-azure-configuration): Het verbindt AEM Forms met Azure Storage containers.
-2. [Azure Storage Configuration in een Adaptive Form gebruiken ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Het verbindt uw Adaptief Vorm met gevormde Azure containers van de Opslag.
+2. [Azure Storage Configuration in een Adaptive Form gebruiken](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Het verbindt uw Adaptief Vorm met gevormde Azure containers van de Opslag.
 
 ### Een Azure Blob Storage Container maken {#create-azure-configuration}
 
@@ -313,7 +313,6 @@ U kunt de gemaakte Azure Storage Container-configuratie in een Adaptief formulie
    >
    > * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw OneDrive-opslag hebt gemaakt.
    > * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
-
 
 1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to Azure Blob Storage]**.
    ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)

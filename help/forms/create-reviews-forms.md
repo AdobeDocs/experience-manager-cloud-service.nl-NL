@@ -4,14 +4,20 @@ seo-title: Creating and managing reviews in forms
 description: Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen op een formulier kunnen plaatsen.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
-source-git-commit: 3efd7d81424369ce6430802373129ab91b7356ab
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
 # Revisies maken en beheren op formulieren{#creating-and-managing-reviews-to-forms}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
+| AEM as a Cloud Service | Dit artikel |
 
 ## Controleren {#review}
 
@@ -35,7 +41,6 @@ Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen op formu
    >* Beheerders hebben toegang tot alle groepen die aan de formuliergebruikers zijn gekoppeld.
    >* De gebruikersgroep van de dienst is niet beschikbaar aan selectie voor overzicht.
 
-
 ### Handelingen die worden uitgevoerd wanneer een revisie wordt ingesteld {#actions-that-occur-when-a-review-is-set-up}
 
 In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt of ingesteld.
@@ -55,7 +60,6 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 >
 >* Alleen lopende revisies kunnen worden gewijzigd.
 >* Volledige revisies kunnen niet worden gewijzigd.
-
 
 1. Navigeer naar het tabblad Formulieren en selecteer een formulier.
 
@@ -107,4 +111,5 @@ In deze sectie wordt beschreven wat er gebeurt met **Bijwerken/beëindigen contr
    1. **Revisoren**: Voor elke controleur wordt de onvolledige taak met betrekking tot de revisie beëindigd. De taak wordt niet meer weergegeven als &#39;In behandeling&#39; in de sectie Meldingen van de controleur.
    1. **Initiator**: De taak die is toegewezen aan de aanvrager van de revisie is gemarkeerd als voltooid. De taak wordt verwijderd uit de sectie Melding van de revisieaanvrager.
    1. **Alles**: De revisie wordt weergegeven in de sectie Vorige revisies. Er kunnen geen verdere opmerkingen worden toegevoegd.
+
    ![revisie voltooid](assets/review-complete-imgg.png)

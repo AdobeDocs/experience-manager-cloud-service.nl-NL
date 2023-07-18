@@ -2,7 +2,7 @@
 title: Herhaalbaarheid in adaptieve vorm (kerncomponenten)
 description: Gebruik de functie herhaalbaarheid van deelvenstercomponenten om vergelijkbare secties in een adaptieve vorm te herhalen.
 role: Architect, Developer, Admin, User
-source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 0%
@@ -97,6 +97,7 @@ Het bovenliggende element van het deelvenster moet een verwijderknop bevatten om
    * Als u een knop in het deelvenster Verwijderen wilt maken, geeft u `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
    Klikken **Gereed**.
+>[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >

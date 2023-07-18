@@ -2,14 +2,19 @@
 title: Een recorddocument genereren voor Adaptive Forms
 description: Verklaart hoe u een malplaatje voor een Document van Verslag (DoR) voor Aangepast Forms kunt produceren.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3926'
+source-wordcount: '3946'
 ht-degree: 0%
 
 ---
 
 # Document met record genereren voor adaptieve Forms
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM as a Cloud Service | Dit artikel |
 
 ## Overzicht {#overview}
 
@@ -359,6 +364,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
       * **Disclaimtekst**: Tekst van disclaimer.
 
       ![Master pagina-eigenschappen](/help/forms/assets/masterpagepropertiesdor.png)
+
    >[!NOTE]
    >
    >Als u een adaptieve formuliersjabloon gebruikt dat is gemaakt met een versie van Designer die ouder is dan versie 6.3, werken de eigenschappen Accentkleur en Lettertypefamilie alleen als het volgende aanwezig is in de sjabloon Adaptief formulier onder het basissubformulier:
