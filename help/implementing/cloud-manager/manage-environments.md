@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2558'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen 
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
+1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
 
    * Selecteer een [**omgevingstype**.](#environment-types)
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter de naam van het omgevingstype weergegeven.
@@ -172,6 +172,38 @@ Nadat de functie is geactiveerd, kunt u inhoud publiceren naar de voorbeeldservi
 >[!NOTE]
 >
 >Uw omgeving moet zijn AEM versie `2021.05.5368.20210529T101701Z` of hoger om de voorvertoningsservice te gebruiken. Zorg ervoor dat een updatepijpleiding op uw milieu met succes heeft gelopen zodat kunt u de voorproefdienst gebruiken.
+
+### Status van aanvullende publicatiegebieden {#additional-region-status}
+
+Als u aanvullende publicatiegebieden hebt geactiveerd, kunt u de status van deze gebieden controleren via het tabblad **Omgevingen** kaart.
+
+1. Op de **Overzicht** pagina, zoek de **Omgevingen** kaart.
+
+1. Op de **Omgevingen** kaart **Status** de kolom zal wijzen op als er om het even welke kwesties met gevormde extra publiceer gebieden zijn. Klik op de knop **Info** pictogram voor details van de gebieden.
+
+   ![Statusinformatie over aanvullende publicatiegebieden op de kaart voor omgevingen](assets/additional-publish-region-status-environments-card.png)
+
+U kunt dezelfde informatie ook openen via de **Omgevingen** tab.
+
+1. Op de **Overzicht** pagina, selecteert u de **Omgevingen** tab.
+
+1. Op de **Omgevingen** selecteert u in het linkernavigatievenster de omgeving waarin u een query wilt uitvoeren.
+
+1. Nadat een omgeving is geselecteerd:
+
+   * De **Omgevingsinformatie** de lijst zal tonen welke gebieden voor het geselecteerde milieu worden gevormd.
+   * De **Status** kolom van de **Omgevingssegmenten** de lijst zal nadenken als er om het even welke kwesties met de gevormde extra publiceer gebieden zijn. Houd de status boven voor details over een kwestie.
+
+   ![Statusinformatie over aanvullende publicatiegebieden op het tabblad Milieu&#39;s](assets/additional-publish-region-status-environments-tab.png)
+
+Als er problemen zijn gemeld met extra publicatiegebieden:
+
+1. Wees geduldig. Cloud Manager probeert het gebied voortdurend te herstellen en kan op elk moment beschikbaar komen.
+1. Als het probleem na een aantal uren voortduurt, kunt u het extra publicatiegebied verwijderen en het (of het zelfde gebied of een andere regio) opnieuw toevoegen om een volledige plaatsing teweeg te brengen.
+
+Hoe lang u wacht tot het systeem op zich terugkrijgt alvorens extra actie te ondernemen hangt van de invloed af het mislukken van dat gebied op uw systemen heeft.
+
+Houd er rekening mee dat in ieder geval: [het verkeer zal altijd aan het andere dichtstbijzijnde gebied worden verpletterd dat online is.](/help/operations/additional-publish-regions.md) Neem contact op met de klantenservice van Adobe als u problemen blijft zien.
 
 ## Omgevingen bijwerken {#updating-dev-environment}
 
