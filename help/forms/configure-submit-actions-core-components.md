@@ -3,7 +3,7 @@ title: Een verzendhandeling configureren voor een adaptief formulier
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 hide: true
 hidefromtoc: true
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
 workflow-type: tm+mt
 source-wordcount: '3190'
 ht-degree: 0%
@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Handeling Adaptief verzenden van formulier {#configuring-the-submit-action}
 
+<span class="preview"> Adobe raadt u aan Core Components te gebruiken voor [Adaptieve Forms toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) of aan [standalone adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md). </span>
+
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Dit artikel |
+| Van toepassing op | ✅ adaptieve Form Core-componenten, ❎ [Aangepaste componenten van de Stichting van de Vorm](/help/forms/configuring-submit-actions.md) |
 
-**Van toepassing op**: ✔️ Adaptieve vorm Core-componenten ❌ [Aangepaste componenten van de Stichting van de Vorm](/help/forms/configuring-submit-actions.md). Adobe raadt u aan Core Components te gebruiken voor [Adaptieve Forms toevoegen aan een AEM Sites-pagina](create-or-add-an-adaptive-form-to-aem-sites-page.md) of aan [standalone adaptieve Forms maken](creating-adaptive-form-core-components.md).
 
-Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier.
-
-Forms as a Cloud Service, voor Adaptive Forms die is gebaseerd op Core Components, biedt een array van vooraf gebouwde verzendhandelingen. Met deze verzendacties kunt u:
+Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier. Forms as a Cloud Service, voor Adaptive Forms op basis van Core Components, biedt een array van vooraf gebouwde verzendhandelingen. Met deze verzendacties kunt u:
 
 * U kunt formuliergegevens eenvoudig verzenden via e-mail.
 * Start Microsoft Power Automate-stromen of AEM Workflows tijdens het verzenden van de gegevens.
