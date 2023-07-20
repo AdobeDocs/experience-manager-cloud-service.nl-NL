@@ -4,9 +4,9 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1086'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,6 @@ U start in GraphQL Explorer op een nieuw tabblad. Hier kunt u query&#39;s samens
    ![Lijstquery](assets/do-not-localize/list-query-1-3-4-5.png)
 
 U hebt zojuist een lijstquery voor een volledige lijst met alle inhoudsfragmenten gevalideerd. Dit proces helpt ervoor te zorgen dat de reactie is wat uw app verwacht, met resultaten die aantonen hoe uw apps en websites de in AEM gemaakte inhoud zullen ophalen.
-
->[!NOTE]
->
->Als u de optie **AEM Demo-elementen** eindpunt van drop-down, contacteer de Zorg van de Klant van de Adobe of reik uit op het [AEM het kanaal Slack.](https://adobe-dx-support.slack.com/)
 
 ## Query voor een specifiek deel van de voorbeeldinhoud {#bypath-query}
 

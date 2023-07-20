@@ -4,9 +4,9 @@ description: Ontdek het ophalen van JSON-inhoud uit uw testomgeving met een Code
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Klik op de knop **De voorbeeldtoepassing CodePen starten** vanuit de proefversie
           ...
 ```
 
-Als u in plaats daarvan een fout ziet, controleer de browser console voor meer detail of bereik uit [op Slack](https://adobe-dx-support.slack.com).
+Als u in plaats daarvan een fout ziet, controleer de browser console voor meer detail of bereik uit [per e-mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
 
 Nu u een beetje over CodePen kent, zult u dan app vormen om gegevens van de voortgezette vraag te halen u in een vorige module creeerde.
 
@@ -92,7 +92,7 @@ Op regel 25 geeft u aan van welke GraphQL-query de app gegevens moet ophalen. De
    persistedQueryName = 'your-project/adventure-list';
    ```
 
-1. Zodra deze wijziging is aangebracht, moet de app automatisch vernieuwen en de onbewerkte JSON-reactie van uw aanhoudende query afdrukken naar de `#output` div. Als u een foutenmelding ziet, controleer de console voor extra details. Bereik uit [op Slack](https://adobe-dx-support.slack.com) als er nog problemen zijn met deze stap.
+1. Zodra deze wijziging is aangebracht, moet de app automatisch vernieuwen en de onbewerkte JSON-reactie van uw aanhoudende query afdrukken naar de `#output` div. Als u een foutenmelding ziet, controleer de console voor extra details. Bereik uit [per e-mail](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) als er nog problemen zijn met deze stap.
 
 1. Bevat deze JSON precies de eigenschappen die uw app nodig heeft? Indien niet, ga terug naar de [Inhoud extraheren met de GraphQL API](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) leergids om wijzigingen aan te brengen. Vergeet niet om uw vraag te bewaren en te publiceren zodra u wordt gedaan.
 
