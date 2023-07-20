@@ -2,9 +2,9 @@
 title: Herhaalbaarheid in adaptieve vorm (kerncomponenten)
 description: Gebruik de functie herhaalbaarheid van deelvenstercomponenten om vergelijkbare secties in een adaptieve vorm te herhalen.
 role: Architect, Developer, Admin, User
-source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
+source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,11 @@ Het bovenliggende element van het deelvenster moet een verwijderknop bevatten om
 >`Panel1.instanceManager.instances[1].textbox.value`
 >
 >
->Zie voor meer informatie: Klasse: InstanceManager#instances in [Referentie AEM Forms Java API](https://adobe.com/go/learn_aemforms_documentation_63).
+>
+
+<!-- 
+>For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).      
+-->
 
 >[!NOTE]
 >
@@ -221,7 +225,7 @@ In de volgende code worden de `SampleType`gebruikt de eigenschap minOccurs &amp;
 ```
 
 
-## verwante artikelen
+## Verwante artikelen
 
 * [Een adaptief formulier maken](creating-adaptive-form-core-components.md)
 * [Stijlen of thema&#39;s maken voor uw formulieren](using-themes-in-core-components.md)
