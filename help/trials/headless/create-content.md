@@ -4,9 +4,9 @@ description: Gebruik het model Inhoudsfragment dat u eerder hebt gemaakt om inho
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="Nieuwe inhoud maken"
+>title="Inhoud zonder kop maken"
 >abstract="Gebruikend het model dat u in de vorige module creeerde, leert u hoe te om inhoud tot stand te brengen die voor paginauteurs, of als basis van uw inhoud zonder kop kan worden gebruikt."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="De console voor inhoudsfragmenten starten"
->abstract="Het maken van consistente inhoud van hoge kwaliteit die naadloos werkt in uw apps en websites, leidt tot een geweldige klantervaring. In deze module wordt u door het maken van het eerste inhoudsfragment geleid om te tonen hoe u dit kunt doen.<br><br>Start deze module op een nieuw tabblad door op de onderstaande knop te klikken en volg deze handleiding."
+>abstract="Het maken van consistente inhoud van hoge kwaliteit die naadloos werkt in uw apps en websites, leidt tot een geweldige klantervaring. Deze module begeleidt u door het creëren van uw eerste inhoud zonder kop door de console van het Fragment van de Inhoud te gebruiken.<br><br>Start deze module op een nieuw tabblad door op de onderstaande knop te klikken en volg deze handleiding."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Geweldig werk! In deze module hebt u geleerd hoe u een inhoudsfragment kunt ontwerpen op basis van het model dat u eerder hebt gemaakt. U begrijpt nu hoe inhoudsteams inhoud kunnen maken en beheren voor apps en websites, onafhankelijk van ontwikkelingscycli."
+>title="Geweldig werk! In deze module hebt u geleerd hoe u koploze inhoud kunt ontwerpen als een inhoudsfragment op basis van het model dat u eerder hebt gemaakt. U begrijpt nu hoe inhoudsteams inhoud kunnen maken en beheren voor apps en websites, onafhankelijk van ontwikkelingscycli."
 >abstract=""
 
 ## Een inhoudsfragment maken {#create-fragment}
@@ -34,6 +34,8 @@ ht-degree: 0%
 Inhoudsfragmenten vertegenwoordigen uw inhoud zonder kop en zijn gebaseerd op vooraf gedefinieerde structuren, de zogenaamde Content Fragment-modellen. U hebt al een model gemaakt in een vorige module.
 
 In deze module maakt u een nieuw inhoudsfragment op basis van dat model met de console voor inhoudsfragmenten. U kunt de Content Fragment-console beschouwen als een bibliotheek met inhoud zonder kop. Gebruik dit besturingselement om nieuwe inhoudsfragmenten te maken en bestaande fragmenten te beheren.
+
+De console van het Fragment van de Inhoud wordt gebruikt om inhoud zonder kop over leveringskanalen en onafhankelijk van context tot stand te brengen en uit te geven, die de meest efficiënte methode in vele auteursgevallen kan zijn. In een recentere module zullen wij het uitgeven van inhoud zonder titel in context en op zijn plaats onderzoeken.
 
 1. Tik of klik op de knop **Maken** knoop bij top-right van de console.
 
