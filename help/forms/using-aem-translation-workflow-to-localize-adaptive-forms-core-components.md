@@ -2,9 +2,9 @@
 title: Een adaptief formulier op basis van kerncomponenten vertalen
 description: Gebruik machinevertaling of menselijke vertaling om een adaptief formulier met kerncomponenten te vertalen
 feature: Adaptive Forms
-source-git-commit: a33b380570210a32f4a4a1f26c9a2fe37c885bb1
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Voer de volgende stappen uit om een formulier en het bijbehorende document te lo
 1. Onder aan het dialoogvenster **Samenvatting** tegel, klik op de knop **ovalen**. Het scherm Projecteigenschappen omzetten wordt geopend.
 1. Open de **[!UICONTROL Advanced]** tabblad boven aan het dialoogvenster **Eigenschappen van vertaalproject** scherm. Voor de **[!UICONTROL Translation field]**, selecteert u **[!UICONTROL Human Translation]**. Klikken **Opslaan en sluiten** boven aan het scherm.
 1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Exporteren**. Klik in het dialoogvenster Exporteren op de optie Geëxporteerd bestand downloaden. Er wordt een ZIP-bestand gedownload.
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   ![Omzetbestand exporteren](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. Extraheer het gedownloade .zip-bestand. De geëxtraheerde map heeft twee bestanden:
    * transleren_export_summary.xml
    * [formuliervelden-bestand].xml.
@@ -79,6 +79,6 @@ Voer de volgende stappen uit om een formulier en het bijbehorende document te lo
 1. De bestanden transleren_export_summary.xml en [formuliervelden-bestand].xml.
 1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Importeren**. Selecteer het archief met [formuliervelden-bestand].xml. met gelokaliseerde tekenreeksen en berichten voor formuliervelden.
 
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![Omzetbestand importeren](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klik op **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u het `afAcceptLang=<locale code>` naar de URL van het formulier. Voeg bijvoorbeeld `afAcceptLang=de`om de Duitse versie van het formulier te openen.

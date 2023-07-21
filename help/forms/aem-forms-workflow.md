@@ -8,9 +8,9 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '2335'
+source-wordcount: '2337'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Forms-centric workflow op OSGi{#forms-centric-workflow-on-osgi}
 
-![](do-not-localize/header.png)
+![Hoofdafbeelding](do-not-localize/header.png)
 
 Ondernemingen verzamelen gegevens uit honderden en duizenden formulieren, verschillende back-endsystemen en online of offline gegevensbronnen. Zij hebben ook een dynamische reeks gebruikers om besluiten over de gegevens te nemen, die herhalende herbeoordeling en goedkeuringsprocessen impliceren.
 
