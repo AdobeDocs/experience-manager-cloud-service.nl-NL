@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2023.7.0 in Adobe Experience Man
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.7.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
+source-git-commit: 2721cb20083eeda7546513817f1ddfe12e9cb43a
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ De releasedatum voor Cloud Manager versie 2023.7.0 in AEM as a Cloud Service is 
    * Dit zal gefaseerd worden uitgevoerd.
 * Wanneer [annulering van de uitvoering,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) in de goedkeuringsstap voor de uitvoering van de pijpleiding wordt de gebruiker nu verzocht een reden voor annulering te geven .
    * Dit zal gefaseerd worden uitgevoerd.
+* Gebruikers kunnen nu toegang krijgen [logboeken van het proces van de exemplaarinhoud.](/help/implementing/developing/tools/content-copy.md#accessing-logs)
+   * Deze optie is alleen beschikbaar als zowel de bron- als de doelomgeving zich in AEM versie bevindt `2023.7.12549` of hoger.
 
 ## Opgeloste problemen {#bug-fixes}
 

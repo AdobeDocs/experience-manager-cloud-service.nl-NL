@@ -2,12 +2,13 @@
 title: Het gereedschap Inhoud kopiëren
 description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud uit hun productieomgeving kopiëren op AEM as a Cloud Service naar lagere omgevingen voor testdoeleinden.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
+source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1308'
 ht-degree: 0%
 
 ---
+
 
 # Het gereedschap Inhoud kopiëren {#content-copy}
 
@@ -40,6 +41,8 @@ Als u het gereedschap Inhoud kopiëren wilt gebruiken, zijn bepaalde machtiginge
 |---|---|---|
 | Maken en wijzigen [inhoudssets](#create-content-set) | Vereist | Niet vereist |
 | Start of annuleer de [kopiëren van inhoud, proces](#copy-content) | Vereist | Vereist |
+
+Raadpleeg het document voor meer informatie over machtigingen en hoe u deze kunt instellen [AEM as a Cloud Service team en productprofielen.](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ## Een inhoudsset maken {#create-content-set}
 
@@ -174,6 +177,16 @@ Daartoe **Inhoudsactiviteit kopiëren** pagina, selecteert u de **Annuleren** ac
 >Wanneer u een bewerking voor het kopiëren van inhoud annuleert, kan dit resulteren in een gedeeltelijke kopie van de inhoud in de doelomgeving. Deze situatie kan het bestemmingsmilieu in een onbruikbaar geval verlaten.
 >
 >Als uw omgeving zich in een dergelijke toestand bevindt als gevolg van annulering, neemt u contact op met de klantenservice van Adobe voor hulp.
+
+### Logbestanden openen {#accessing-logs}
+
+U kunt de logbestanden controleren op zowel de bron- als de doelomgeving voor een voltooid proces voor het kopiëren van inhoud.
+
+Daartoe **Inhoudsactiviteit kopiëren** pagina, selecteert u de **Logboeken** actie van het elliptische menu van het exemplaarproces waarvoor u de logboeken wilt herzien en dan kiezen voor welke milieu.
+
+![Logbestanden openen voor kopiëren-inhoudsproces](assets/copy-content-logs.png)
+
+De logbestanden worden naar uw lokale computer gedownload. Als het downloaden niet begint, controleert u de instellingen van de pop-upblokkering.
 
 ## Beperkingen {#limitations}
 
