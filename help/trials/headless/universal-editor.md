@@ -1,22 +1,22 @@
 ---
-title: In context bewerken
-description: Ontdek hoe u de Universal Editor kunt gebruiken om alle aspecten van uw inhoud op locatie en in context in een implementatie te bewerken.
+title: Bewerken in context
+description: Ontdek hoe u de Universal Editor kunt gebruiken om alle aspecten van uw inhoud op hun plaats en in context in een implementatie te bewerken.
 hidefromtoc: true
 index: false
-source-git-commit: 4dd0998862baf3e1d0c8ed2d42006acfcf5d0873
+source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 
-# In context bewerken {#editing-in-context}
+# Bewerken in context {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="In context bewerken"
->abstract="Ontdek hoe uw headless-apps de Universal Editor kunnen gebruiken om in de context weinig wrijving te betrachten bij het bewerken van toepassingen binnen handbereik van uw auteurs."
+>title="Bewerken in context"
+>abstract="Ontdek hoe uw toepassingen zonder kop de Universal Editor kunnen gebruiken om weinig wrijving te veroorzaken, in context bewerken tot de vingertoppen van uw auteurs."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,14 +25,18 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="In deze module, leerde u hoe te om inhoud in-context en op zijn plaats aan te passen gebruikend de Universele Redacteur."
+>title="In deze module hebt u geleerd hoe u inhoud in context en op plaats kunt aanpassen met de Universal Editor."
 >abstract=""
 
 ## Tekst in context bewerken {#edit-text}
 
-Het op zijn plaats en in context bewerken kan vaak voordelig zijn in vergelijking met het bewerken van inhoud zonder kop, zoals in de editor voor inhoudsfragmenten, die u in vorige modules hebt gezien.
+Het op plaats en in context bewerken kan vaak voordelig zijn in vergelijking met het bewerken van inhoud zonder kop, zoals in de editor voor inhoudsfragmenten, die u in vorige modules hebt gezien.
 
-Met de Universal Editor kunt u uw tekst op een flexibele manier in context en op plaats bewerken, zodat u eenvoudig en intuïtief inhoud kunt ontwerpen.
+>[!NOTE]
+>
+>Als u de Universal Editor in deze proefversie wilt gebruiken, moet u Chrome gebruiken als browser en niet in de incognitomodus. Dit is een beperking van de proefversie, niet van de Universal Editor.
+
+Met de Universal Editor kunt u tekst op een flexibele manier in context en op zijn plaats bewerken, zodat u eenvoudig en intuïtief inhoud kunt ontwerpen.
 
 1. De editor moet standaard worden geladen in **Tekst** in. Als dat niet het geval is, tikt u of klikt u op de knop **Tekst** pictogram in de modusrail links van de editor.
 
@@ -47,6 +51,26 @@ Met de Universal Editor kunt u uw tekst op een flexibele manier in context en op
 1. Druk op Enter/Return of tik of klik buiten de tekstcomponent en uw wijzigingen worden automatisch opgeslagen.
 
 De Universal Editor slaat uw wijzigingen automatisch op in de ontwerpomgeving. U moet ze nog publiceren zodat uw lezers ze kunnen zien, wat we in een latere stap zullen doen.
+
+## Media in context bewerken {#edit-media}
+
+Met de Universal Editor kunt u ook afbeeldingen omwisselen terwijl u in de context van uw inhoud blijft.
+
+1. Editor wijzigen in **Media** door te tikken of op de knop **Media** op de modusrail.
+
+1. Tik of klik op de afbeelding van de surfer om deze te selecteren.
+
+1. In de componentrail kunt u de details van het element zien. Tik of klik op **Vervangen**.
+
+   ![Een afbeelding selecteren om te bewerken](assets/do-not-localize/ue-edit-media.png)
+
+1. In de **Elementen selecteren** venster, omlaag schuiven en tikken of op de knop `surfer-wave-02.JPG` afbeelding om deze te selecteren.
+
+1. Tik of klik op **Selecteren** in de **Elementen selecteren** venster.
+
+   ![Een afbeelding selecteren met het venster Element selecteren](assets/do-not-localize/ue-select-asset.png)
+
+De afbeelding wordt vervangen door de afbeelding die u hebt geselecteerd.
 
 ## Ervaar uw inhoud zoals uw Readers {#emulators}
 
@@ -102,6 +126,5 @@ Als u het schrijven van inhoud wilt versnellen terwijl het gestructureerd bewerk
 1. Een nieuwe **Bewerken** verschijnt op de modusrail. Tik of klik op de knop **Bewerken** pictogram om de editor voor inhoudsfragmenten te openen op een nieuw tabblad.
 
 ![Inhoudsfragmenten selecteren in de Universal Editor](assets/do-not-localize/ue-content-fragments.png)
-
 
 Op het nieuwe tabblad kunt u nu het inhoudsfragment bewerken dat u hebt geselecteerd in de universele editor.
