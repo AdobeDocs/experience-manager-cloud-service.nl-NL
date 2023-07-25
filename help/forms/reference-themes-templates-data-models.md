@@ -4,14 +4,16 @@ seo-title: Reference Themes, Templates, and Form Data models
 description: AEM Forms biedt adaptieve formulierthema's, sjablonen en formuliergegevensmodellen die u kunt ophalen via softwaredistributie
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
 
 # Referentiethema&#39;s, sjablonen en modellen formuliergegevens {#reference-themes-templates-and-data-models}
+
+<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 AEM Forms as a Cloud Service biedt meerdere referentiethema&#39;s, sjablonen en formuliergegevensmodellen waarmee u snel kunt beginnen met het maken van Adaptief Forms. U kunt de [referentie-inhoudspakket van de portal voor softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) en gebruiken de [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) om de [inhoudsopgave-pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in uw productie-, ontwikkelings- of lokale ontwikkelomgeving om deze referentie-elementen naar uw omgeving te brengen.
 
@@ -22,11 +24,11 @@ De thema&#39;s, sjablonen en modellen van formuliergegevens die in het pakket me
 ---------|----------|---------
 | Canvas 3.0 | Basis | Microsoft Dynamics 365 |
 | Tranquil | Leeg | Salesforce |
-| Urbane |  |  |
+| Urbane |   |  |
 | Ultramarijn |  |  |
 | Beryl |  |  |
-| Gezondheidszorg |  |  |
-| FSI |  |  |
+| Gezondheidszorg |  |   |
+| FSI |   |   |
 
 ## Referentiethema&#39;s {#reference-themes}
 

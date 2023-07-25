@@ -3,14 +3,17 @@ title: Lay-outmogelijkheden van adaptieve Forms
 seo-title: Layout capabilities of Adaptive Forms
 description: De lay-out en vormgeving van Adaptief Forms op verschillende apparaten worden bepaald door de lay-outinstellingen. Begrijp de verschillende lay-outs en hoe te om hen toe te passen.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
 
 # Lay-outmogelijkheden van adaptieve Forms {#layout-capabilities-of-adaptive-forms}
+
+<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |

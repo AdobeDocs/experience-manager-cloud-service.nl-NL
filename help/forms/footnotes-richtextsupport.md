@@ -2,14 +2,16 @@
 title: Ondersteuning voor voetnoten
 description: RTE-ondersteuning voor voetnoten.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
 # Voetnootcomponent {#footnotecomponent}
+
+<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 **[!UICONTROL Footnote]** Dit is het extra beetje informatie of nota&#39;s die aan het eind van de pagina verschijnen. [!UICONTROL Footnote] bestaat uit de notities die in de tekst worden aangegeven met getallen als superscript.
 
@@ -44,13 +46,11 @@ Voer de volgende stappen uit om voetnoot toe te voegen in Adaptive Forms:
    >* Voetnoten worden automatisch genummerd en worden weergegeven op een manier die ze maken op het adaptieve formulier.
    >* Als er dubbele voetnoten zijn, is de nummering voor alle dubbele voetnoten gelijk.
 
-
 1. Sleep vanuit de componentbrowser de **[!UICONTROL Footnote Placeholder]** naar het adaptieve formulier.
    >[!NOTE]
    >
    >* In de publicatie-instantie worden voetnoten weergegeven op de positie waar **[!UICONTROL Footnote Placeholder]** wordt op het adaptieve formulier geplaatst.
    >* Wanneer u tussen verschillende deelvensters navigeert, worden alleen zichtbare voetnoten weergegeven in de **[!UICONTROL Footnote Placeholder]** die aanwezig zijn in het deelvenster waarin u kunt navigeren.
-
 
 1. Sla de eigenschappen op.
 
