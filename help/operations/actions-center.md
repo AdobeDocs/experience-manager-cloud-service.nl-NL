@@ -4,9 +4,9 @@ description: Gebruik het actiecentrum om gemakkelijk actie te ondernemen tegen i
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >[!NOTE]
 >Deze functie is niet vrijgegeven.
 
-AEM als Cloud Service verzendt de e-mailberichten van het Centrum van Acties wanneer de kritieke incidenten voorkomen die onmiddellijke actie vereisen, en pro-actieve aanbevelingen voor optimalisaties. De voorbeelden omvatten een geblokkeerde rij, of een het verlopen reeks geloofsbrieven; de volledige reeks kennisgevingen van het actiecentrum kan worden weergegeven in het gedeelte [tabel hieronder](#supported-notification-types), die na verloop van tijd zal toenemen.
+AEM als Cloud Service verzendt de e-mailberichten van het Centrum van Acties wanneer de kritieke incidenten voorkomen die onmiddellijke actie vereisen, en pro-actieve aanbevelingen voor optimalisaties. De voorbeelden omvatten een geblokkeerde rij, of een het verlopen reeks geloofsbrieven; de volledige reeks berichten van het Centrum van Acties kunnen in worden bekeken [tabel hieronder](#supported-notification-types), die na verloop van tijd zal toenemen.
 
 Wanneer een e-mailbericht van het Centrum van Acties wordt ontvangen, kan het worden geklikt om AEM Centrum van Acties van het as a Cloud Service met popup te openen die extra context toont die de actie voor een klant verklaart te nemen.
 
@@ -72,7 +72,7 @@ AEM as a Cloud Service heeft verschillende soorten meldingen, maar er wordt alle
 
 ## Ondersteunde berichttypen {#supported-notification-types}
 
-In de volgende tabel worden de berichttypen weergegeven die momenteel worden ondersteund in het Actions Center.
+In de volgende tabel worden de berichttypen weergegeven die momenteel worden ondersteund in Actions Center. Meldingen zijn momenteel beperkt tot productieomgevingen.
 
 | Meldingstype | Verwante productprofiel | Correctieve actie |
 |---|---|---|
