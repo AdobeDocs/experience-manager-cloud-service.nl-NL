@@ -2,9 +2,9 @@
 title: Replicatie
 description: Distributie en replicatie van probleemoplossing.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e545ff2bc3dc0c56cd6d3e1160b453551816f07f
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Adobe Experience Manager as a Cloud Service gebruikt de [Distributie van inhoud 
 >
 >Als u geïnteresseerd bent in het bulksgewijs publiceren van inhoud, gebruikt u de [Workflow van inhoudsstructuur publiceren](#publish-content-tree-workflow).
 >Deze workflowstap is speciaal voor Cloud Service gemaakt en kan grote ladingen efficiënt verwerken.
->Het wordt niet aanbevolen om uw eigen aangepaste code voor bulkpublicaties te maken.
+>Het wordt niet aangeraden om uw eigen aangepaste code voor bulkpublicaties te maken.
 >Als u om welke reden dan ook moet aanpassen, kunt u deze workflow/workflowstap activeren met behulp van bestaande workflow-API&#39;s.
 >Het is altijd een goede gewoonte om alleen inhoud te publiceren die moet worden gepubliceerd. En wees voorzichtig als u geen grote aantallen content probeert te publiceren, als dat niet nodig is. Er gelden echter geen beperkingen voor de hoeveelheid inhoud die u via de workflow van de inhoudsstructuur voor publiceren kunt verzenden.
 
@@ -51,18 +51,18 @@ U vindt meer gedetailleerde informatie over Publicatie beheren op het tabblad [P
 
 ### Workflow van inhoudsstructuur publiceren {#publish-content-tree-workflow}
 
-U kunt een boomreplicatie teweegbrengen door te kiezen **Tools - Workflow - Modellen** en het kopiëren van de **Inhoudsstructuur publiceren** out-of-the-box workflowmodel, zoals hieronder getoond:
+U kunt een boomreplicatie teweegbrengen door te kiezen **Tools - Workflow - Modellen** en kopiëren **Inhoudsstructuur publiceren** out-of-the-box workflowmodel, zoals hieronder getoond:
 
 ![De werkstroomkaart van de inhoudsstructuur publiceren](/help/operations/assets/publishcontenttreeworkflow.png)
 
-Wijzig het originele model niet of activeer het niet. In plaats daarvan, zorg ervoor om het model eerst te kopiëren en dan die exemplaar te wijzigen of aan te halen.
+Roep het oorspronkelijke model niet aan. Let er in plaats daarvan op dat u het model eerst kopieert en dat exemplaar aanroept.
 
 Net als bij alle workflows kan de functie ook via de API worden aangeroepen. Zie voor meer informatie [Programmatische interactie met Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
 
 U kunt ook een workflowmodel maken waarin de `Publish Content Tree` processtap:
 
 1. Ga vanaf de AEM as a Cloud Service startpagina naar **Tools - Workflow - Modellen**.
-1. Druk op de pagina Workflowmodellen op **Maken** in de rechterbovenhoek van het scherm.
+1. Druk op de pagina Workflowmodellen op **Maken** rechtsboven in het scherm.
 1. Voeg een titel en een naam toe aan uw model. Zie voor meer informatie [Workflowmodellen maken](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
 1. Selecteer het nieuwe model in de lijst en druk op **Bewerken**
 1. Sleep in het volgende venster de processtap naar de huidige modelstroom:
@@ -70,7 +70,7 @@ U kunt ook een workflowmodel maken waarin de `Publish Content Tree` processtap:
    ![Processtap](/help/operations/assets/processstep.png)
 
 1. Selecteer de processtap in de flow en selecteer **Configureren** door op het moersleutelpictogram te drukken.
-1. Selecteer **Proces** en selecteert u `Publish Content Tree` in de vervolgkeuzelijst, controleert u vervolgens de **Handler Advance** selectievakje
+1. Selecteer de **Proces** en selecteert u `Publish Content Tree` in de vervolgkeuzelijst, controleert u vervolgens de **Handler Advance** selectievakje
 
    ![Treeactivation](/help/operations/assets/newstep.png)
 
@@ -90,7 +90,7 @@ U kunt ook een workflowmodel maken waarin de `Publish Content Tree` processtap:
 * `includeChildren` (booleaanse waarde, standaardwaarde): `false`). De waarde `false` betekent dat alleen het pad wordt gepubliceerd; `true` betekent dat ook kinderen worden gepubliceerd.
 * `replicateAsParticipant` (booleaanse waarde, standaardwaarde): `false`). Indien geconfigureerd als `true`, gebruikt de replicatie de `userid` van de opdrachtgever die de deelnemersstap heeft uitgevoerd.
 * `enableVersion` (booleaanse waarde, standaardwaarde): `true`). Deze parameter bepaalt als een nieuwe versie op replicatie wordt gecreeerd.
-* `agentId` (tekenreekswaarde; de standaardwaarde betekent dat alleen agents voor publicatie worden gebruikt). Men adviseert om over agentId uitdrukkelijk te zijn; Stel bijvoorbeeld de waarde in: publiceren. De agent instellen op `preview` publiceert naar de voorbeeldservice.
+* `agentId` (tekenreekswaarde; de standaardwaarde betekent dat alleen agents voor publicatie worden gebruikt). Men adviseert om over agentId uitdrukkelijk te zijn; bijvoorbeeld, plaatsend het de waarde: publiceer. De agent instellen op `preview` publiceert naar de voorbeeldservice.
 * `filters` (standaardwaarde betekent dat alle paden zijn geactiveerd). Beschikbare waarden zijn:
    * `onlyActivated` - alleen pagina&#39;s activeren die (al) zijn geactiveerd. Werkt als een vorm van reactivering.
    * `onlyModified` - activeer alleen paden die al zijn geactiveerd en een wijzigingsdatum na de activeringsdatum hebben.
@@ -124,7 +124,7 @@ De workflow verwerkt inhoud in blokken, die elk een subset vormen van de volledi
 
 U kunt inhoud publiceren gebruikend de Replicatie API die in AEM as a Cloud Service wordt getoond.
 
-Zie voor meer informatie de [API-documentatie](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
+Zie de klasse [API-documentatie](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
 **Basisgebruik van de API**
 
@@ -178,7 +178,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 Als u een dergelijk filter niet aanbiedt en alleen de &quot;publish&quot;-agent gebruikt, wordt de &quot;preview&quot;-agent niet gebruikt en heeft de replicatiehandeling geen invloed op de voorvertoningslaag.
 
-De `ReplicationStatus` van een middel wordt slechts gewijzigd als de replicatieactie minstens één agent omvat die door gebrek actief is. In het bovenstaande voorbeeld was deze stroom niet het geval. De replicatie gebruikte gewoon de &#39;preview&#39;-agent. Daarom moet u het nieuwe `getStatusForAgent()` methode, die het vragen van de status voor een specifieke agent toestaat. Deze methode werkt ook voor de &quot;publiceer&quot;agent. Het keert een niet-krachteloze waarde terug als er om het even welke replicatieactie die gebruikend de verstrekte agent is gedaan geweest.
+Het geheel `ReplicationStatus` van een middel wordt slechts gewijzigd als de replicatieactie minstens één agent omvat die door gebrek actief is. In het bovenstaande voorbeeld was deze stroom niet het geval. De replicatie gebruikte gewoon de &#39;preview&#39;-agent. Daarom moet u het nieuwe `getStatusForAgent()` methode, die het vragen van de status voor een specifieke agent toestaat. Deze methode werkt ook voor de &quot;publiceer&quot;agent. Het keert een niet-krachteloze waarde terug als er om het even welke replicatieactie is gedaan gebruikend de verstrekte agent.
 
 ### Methoden voor het ongeldig maken van inhoud {#invalidating-content}
 
@@ -201,7 +201,7 @@ Om replicatie problemen op te lossen, navigeer aan de Queuws van de Replicatie i
    ![Status](assets/publish-status.png "Status")
 3. Controleer de wachtrijstatus die groen moet zijn
 4. U kunt de verbinding met de replicatieservice testen
-5. Selecteer **Logboeken** tabblad waarin de geschiedenis van publicaties met inhoud wordt weergegeven
+5. Selecteer de **Logboeken** tabblad waarin de geschiedenis van publicaties met inhoud wordt weergegeven
 
 ![Logboeken](assets/publish-logs.png "Logboeken")
 
