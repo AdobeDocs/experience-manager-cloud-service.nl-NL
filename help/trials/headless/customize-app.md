@@ -4,9 +4,9 @@ description: Gebruik een voorbeeld van een React-app om te leren hoe u inhoud ku
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
+source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
->title="In deze module hebt u geleerd hoe u een voorbeeld van een React-app kunt aanpassen.<br><br>Tijd tot de markt: Versneld!<br>Ontwikkelingscycli: Verlaagd!<br><br>Nu begrijpt u hoe eenvoudig het beheren van inhoud zonder kop is voor websites en toepassingen die worden aangedreven door AEM mogelijkheden zonder kop."
+>title="In deze module hebt u geleerd hoe u een voorbeeld van een React-app kunt aanpassen.<br><br>Tijd naar markt: versneld!<br>Ontwikkelingscycli: gereduceerd!<br><br>Nu begrijpt u hoe eenvoudig het beheren van inhoud zonder kop is voor websites en toepassingen die worden aangedreven door AEM mogelijkheden zonder kop."
 >abstract=""
 
 ## Voorvertoning van de app weergeven {#preview}
@@ -53,7 +53,7 @@ In de editor voor inhoudsfragmenten wordt de basislay-out van de app weergegeven
 
 1. Selecteer de tekstlaag **Mtn Biker in Canyon-tekstlaag** om de details van de laag in de redacteur te openen. De laag bestaat uit meerdere inhoudsfragmenten die de tekst bepalen die in dit deelvenster van de app wordt weergegeven.
 
-1. Selecteer **Mtn Biker in Canyon-titel** tekstitem. Hiermee opent u de editor voor inhoudsfragmenten waarin de inhoud van dit fragment wordt weergegeven en waarin u het fragment kunt wijzigen.
+1. Selecteer de **Mtn Biker in Canyon-titel** tekstitem. Hiermee opent u de editor voor inhoudsfragmenten waarin de inhoud van dit fragment wordt weergegeven en waarin u het fragment kunt wijzigen.
 
 1. De tekst wijzigen vanuit `Your next great adventure is calling` tot `Choose your own adventure`. De wijziging wordt automatisch opgeslagen door de editor.
 
@@ -73,17 +73,17 @@ Nu u een kopregel in de app hebt gewijzigd, kunt u proberen een afbeelding te wi
 
    ![Broodkruimels](assets/do-not-localize/swap-image-2.png)
 
-1. Selecteer **Mtn Biking - Biker** afbeeldingslaag. Hiermee opent u de editor voor inhoudsfragmenten
+1. Selecteer de **Mtn Biking - Biker** afbeeldingslaag Hiermee opent u de editor voor inhoudsfragmenten
 
 1. Tik of klik op de knop **X** om de fietsafbeelding te verwijderen. De afbeelding verdwijnt en in de editor wordt een fout weergegeven omdat de afbeelding vereiste gegevens is voor dit model van inhoudsfragment.
 
    ![Afbeelding verwijderen uit fragment](assets/do-not-localize/swap-image-4.png)
 
-1. Tik of klik op **Element toevoegen**.
+1. Tik of klik op **Element toevoegen** en vervolgens **Zoeken in middelen** in het pop-upmenu.
 
 1. De **Element selecteren** wordt geopend en het pad **voorbeeldapp** > **en** > **afbeeldingsbestanden** wordt automatisch voor u geselecteerd.
 
-1. Selecteer de afbeelding `biker-yellow.png` tikken of klikken **Selecteren**.
+1. Selecteer de afbeelding `biker-yellow.png` tikken of klikken op **Selecteren**.
 
 1. De afbeelding van de fietser wordt vervangen door de geselecteerde afbeelding. De editor slaat de wijzigingen automatisch op.
 
@@ -101,15 +101,15 @@ Nu u de afbeelding van de fietser hebt bijgewerkt, gaan we door hoe u nieuwe inh
 
 1. U moet terugkeren naar de juiste plaats in de editor voor inhoudsfragmenten. De broodkruimels bij top-left van de redacteur tonen waar u in uw inhoudshiërarchie bent. Tik of klik op **WKND Home** in de breadcrumbs om terug te keren naar die pagina.
 
-1. Selecteer **Mtn Biker op WKND Yellow** deelvenster.
+1. Selecteer de **Mtn Biker op WKND Yellow** deelvenster.
 
-1. Selecteer **Mtn Biking - Shopable** laag.
+1. Selecteer de **Mtn Biking - Shopable** laag.
 
 1. Om een nieuwe vraag-uit op dit paneel tot stand te brengen, moet u een nieuw shoppable ogenblikFragment van de Inhoud tot stand brengen. Tik of klik op de knop **+ Nieuw fragment maken** knop.
 
    ![Een schokkend moment toevoegen](assets/do-not-localize/add-reference-1-5.png)
 
-1. U moet eerst een model kiezen waarop u het nieuwe inhoudsfragment wilt baseren. Selecteer **Opstuitbaar mompitem** model van het **Inhoudsfragmentmodel** vervolgkeuzelijst.
+1. U moet eerst een model kiezen waarop u het nieuwe inhoudsfragment wilt baseren. Selecteer de **Opstuitbaar mompitem** model van het **Inhoudsfragmentmodel** vervolgkeuzelijst.
 
 1. Geef het inhoudsfragment een naam. Voer bijvoorbeeld `Shorts` in de **Naam** veld.
 
