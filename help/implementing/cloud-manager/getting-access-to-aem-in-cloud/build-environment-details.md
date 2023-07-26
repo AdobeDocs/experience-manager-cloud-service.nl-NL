@@ -2,9 +2,9 @@
 title: Build-omgeving
 description: Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en test.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
    * `graphicsmagick`
 
 * Andere pakketten kunnen worden geïnstalleerd tijdens het samenstellen zoals beschreven in de sectie [Extra systeempakketten installeren.](#installing-additional-system-packages)
-* Elke bouw wordt gedaan op een ongerepte milieu; de bouwstijlcontainer houdt geen staat tussen uitvoeringen.
+* Elke build wordt uitgevoerd in een ongerepte omgeving; de constructiecontainer bewaart geen status tussen executies.
 * Maven wordt altijd uitgevoerd met de volgende drie opdrachten.
 
 * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
 * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
 * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
-* Maven is geconfigureerd op systeemniveau met een `settings.xml` bestand, dat automatisch de openbare gegevensopslagruimte Adobe bevat met een profiel genaamd `adobe-public`. (Zie [Adobe Public Maven Repository](https://repo1.maven.org/) voor meer informatie ).
+* Maven is geconfigureerd op systeemniveau met een `settings.xml` bestand, dat automatisch de openbare gegevensopslagruimte van het Adobe-artefact bevat met een profiel met de naam `adobe-public`. (Zie [Adobe Public Maven Repository](https://repo1.maven.org/) voor meer informatie ).
 
 >[!NOTE]
 >
@@ -54,34 +54,48 @@ Standaard worden projecten gemaakt door het buildproces van Cloud Manager met Or
 
 De [Insteekmodule Maven Toolketins](https://maven.apache.org/plugins/maven-toolchains-plugin/) Hiermee kunnen projecten een specifieke JDK (of toolchain) selecteren die moet worden gebruikt in de context van Maven-plug-ins die geschikt zijn voor toolketens. Dit wordt gedaan in het project `pom.xml` door een leverancier- en versiewaarde op te geven.
 
+Deze plug-in voor de gereedschapsketen kan worden toegevoegd als onderdeel van een profiel zoals hieronder wordt weergegeven.
+
 ```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-toolchains-plugin</artifactId>
-    <version>1.1</version>
-    <executions>
-        <execution>
-            <goals>
-                <goal>toolchain</goal>
-            </goals>
-        </execution>
-    </executions>
-    <configuration>
-        <toolchains>
-            <jdk>
-                <version>11</version>
-                <vendor>oracle</vendor>
-            </jdk>
-        </toolchains>
-    </configuration>
-</plugin>
+<profile>
+    <id>cm-java-11</id>
+    <activation>
+        <property>
+            <name>env.CM_BUILD</name>
+        </property>
+    </activation>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-toolchains-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>toolchain</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <toolchains>
+                        <jdk>
+                            <version>11</version>
+                            <vendor>oracle</vendor>
+                        </jdk>
+                    </toolchains>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</profile>
 ```
 
 Hierdoor wordt voor alle plug-ins met behoud van gereedschappen het Oracle JDK, versie 11, gebruikt.
 
 Wanneer u deze methode gebruikt, wordt Maven zelf nog steeds uitgevoerd met de standaard-JDK (Oracle 8) en de `JAVA_HOME`  omgevingsvariabele wordt niet gewijzigd. Daarom werkt het controleren of afdwingen van de Java-versie via plug-ins zoals de Apache Maven Enforcer Plugin niet en mogen dergelijke plug-ins niet worden gebruikt.
 
-De momenteel beschikbare leverancier/versiecombinaties zijn:
+De momenteel beschikbare combinaties leverancier/versie zijn:
 
 | Leverancier | Versie |
 |---|---|
@@ -116,10 +130,10 @@ Ter ondersteuning hiervan voegt Cloud Manager deze standaardomgevingsvariabelen 
 |---|---|
 | `CM_BUILD` | Altijd instellen op `true` |
 | `BRANCH` | De gevormde tak voor de uitvoering |
-| `CM_PIPELINE_ID` | De numerieke identificatie van de pijpleiding |
+| `CM_PIPELINE_ID` | De numerieke identificatie van de pijplijn |
 | `CM_PIPELINE_NAME` | De pijpleidingsnaam |
 | `CM_PROGRAM_ID` | De numerieke programma-id |
-| `CM_PROGRAM_NAME` | De naam van het programma |
+| `CM_PROGRAM_NAME` | De programmenaam |
 | `ARTIFACTS_VERSION` | Voor een stadium of productiepijplijn, de synthetische versie die door Cloud Manager wordt geproduceerd |
 | `CM_AEM_PRODUCT_VERSION` | De releaseversie |
 
@@ -127,7 +141,7 @@ Ter ondersteuning hiervan voegt Cloud Manager deze standaardomgevingsvariabelen 
 
 Uw bouwstijlproces kan van specifieke configuratievariabelen afhangen die om in de git bewaarplaats ongepast zouden zijn te plaatsen of u kunt hen tussen pijpleidinguitvoeringen moeten variëren gebruikend de zelfde tak.
 
-Met Cloud Manager kunnen deze variabelen per pijpleiding worden geconfigureerd via de Cloud Manager API of Cloud Manager CLI. Variabelen kunnen worden opgeslagen als onbewerkte tekst of in rust worden versleuteld. In beide gevallen worden variabelen binnen de ontwikkelomgeving beschikbaar gemaakt als een omgevingsvariabele die vervolgens van binnen de `pom.xml` of andere build-scripts.
+Met Cloud Manager kunnen deze variabelen per pijpleiding worden geconfigureerd via de Cloud Manager API of Cloud Manager CLI. Variabelen kunnen worden opgeslagen als normale tekst of in rust worden versleuteld. In beide gevallen worden variabelen binnen de ontwikkelomgeving beschikbaar gemaakt als een omgevingsvariabele die vervolgens van binnen de `pom.xml` of andere build-scripts.
 
 Dit CLI bevel plaatst een variabele.
 
