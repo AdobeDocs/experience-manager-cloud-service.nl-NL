@@ -1,20 +1,15 @@
 ---
 title: Handelingencentrum
 description: Gebruik het actiecentrum om gemakkelijk actie te ondernemen tegen incidenten en andere belangrijke informatie
-hidefromtoc: true
-hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
 
 # Handelingencentrum {#actions-center}
-
->[!NOTE]
->Deze functie is niet vrijgegeven.
 
 AEM als Cloud Service verzendt de e-mailberichten van het Centrum van Acties wanneer de kritieke incidenten voorkomen die onmiddellijke actie vereisen, en pro-actieve aanbevelingen voor optimalisaties. De voorbeelden omvatten een geblokkeerde rij, of een het verlopen reeks geloofsbrieven; de volledige reeks berichten van het Centrum van Acties kunnen in worden bekeken [tabel hieronder](#supported-notification-types), die na verloop van tijd zal toenemen.
 
@@ -40,7 +35,7 @@ Om het ontvangen van de e-mailberichten van het Centrum van Acties te vormen, cr
 
 ## Gedetailleerde gebruikersstroom {#detailed-user-flow}
 
-Als u op de e-mail klikt, gaat u naar het Actions Center, met een pop-up waarin de context wordt weergegeven van de melding waarop u hebt geklikt en in sommige gevallen koppelingen naar aanvullende informatie waarin wordt beschreven hoe u corrigerende maatregelen kunt nemen.
+Als u op de e-mail klikt, gaat u naar het Actions Center, met een pop-up waarin de context wordt weergegeven van de melding waarop u hebt geklikt en in sommige gevallen koppelingen naar aanvullende informatie waarin wordt beschreven hoe u corrigerende maatregelen kunt nemen. U hebt ook rechtstreeks toegang tot het Actions Center op [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), waar u het relevante programma en de omgeving kunt selecteren.
 
 ![Gegevens over incidenten](/help/operations/assets/incident-details.png)
 

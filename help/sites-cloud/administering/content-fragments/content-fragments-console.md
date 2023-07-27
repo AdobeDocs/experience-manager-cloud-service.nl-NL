@@ -5,9 +5,9 @@ landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fr
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
@@ -58,12 +58,13 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
    * Dit kan worden aangepast om geneste mappen weer te geven
 * Het hoofd-/rechterdeelvenster - vanaf hier kunt u:
    * Zie de lijst met alle inhoudsfragmenten in de geselecteerde vertakking van de structuur:
-      * De plaats wordt aangegeven door de broodkruimels; deze kunnen ook worden gebruikt om de locatie te wijzigen
+      * De locatie wordt aangegeven door de broodkruimels; deze kunnen ook worden gebruikt om de locatie te wijzigen
       * Inhoudsfragmenten uit de geselecteerde map en alle onderliggende mappen worden weergegeven:
-         * [Verschillende informatiegebieden](#selectuse-available-columns) over een inhoudsfragment koppelingen verschaft; afhankelijk van het veld kunnen :
+         * [Verschillende informatiegebieden](#selectuse-available-columns) over een inhoudsfragment koppelingen verschaft. Afhankelijk van het veld kunnen deze koppelingen:
             * Open het gewenste fragment in de editor
             * Informatie over verwijzingen weergeven
             * Informatie weergeven over taalversies van het fragment
+            * Snel filteren op een geselecteerde tag
       * Door muis-over op de kolomkopballen te gebruiken, worden een drop-down actieselector, en breedteschuiven, getoond. Hiermee kunt u het volgende doen:
          * Sorteren - selecteer de gewenste actie voor oplopend of aflopend. De volledige tabel wordt op basis van die kolom gesorteerd. Sorteren is alleen beschikbaar voor de desbetreffende kolommen.
          * De grootte van de kolom wijzigen - met de actie of de breedtegraadregelaars
@@ -83,11 +84,11 @@ Bepaalde acties zijn beschikbaar via de console, zonder een specifiek inhoudsfra
 * [Filter](#filtering-fragments) de Inhoudsfragmenten op basis van een selectie van voorspelling en sla het filter op voor toekomstig gebruik
 * [Zoeken](#searching-fragments) de inhoudsfragmenten
 * [De tabelweergave aanpassen om geselecteerde kolommen met informatie weer te geven](#select-available-columns)
-* Gebruiken **Openen in elementen** om de huidige locatie rechtstreeks te openen in het dialoogvenster **Activa** console
+* Gebruiken **Openen in elementen** om de huidige locatie in het dialoogvenster **Activa** console
 
   >[!NOTE]
   >
-  >De **Activa** wordt gebruikt om toegang te krijgen tot elementen, zoals afbeeldingen, video&#39;s, enz.  Deze console is toegankelijk:
+  >De **Activa** -console wordt gebruikt om toegang te krijgen tot elementen, zoals afbeeldingen, video&#39;s, enz.  U hebt toegang tot deze console:
   >
   >* met de **Openen in elementen** koppeling (in de console Inhoudsfragmenten)
   >* rechtstreeks vanuit het globale navigatievenster
@@ -116,28 +117,35 @@ Het hoofd/juiste paneel (lijstmening) van de console verstrekt een waaier van in
 * **Naam**
    * Hier vindt u een koppeling waarmee u het fragment in de editor kunt openen.
 * **Model**
-   * Hier vindt u een koppeling waarmee u het fragment in de editor kunt openen.
+   * Alleen informatie.
+   * Kan worden gebruikt voor [Snel filteren](#fast-filtering#fast-filtering)
 * **Map**
    * Verstrekt een verbinding om de omslag in de console te openen.
 Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 * **Status**
-   * Alleen informatie
+   * Alleen informatie.
+   * Kan worden gebruikt voor [Snel filteren](#fast-filtering#fast-filtering)
 * **Voorvertoning**
    * Alleen informatie:
       * **synchroon**: Inhoudsfragment wordt gesynchroniseerd op het tabblad **Auteur** en **Voorvertoning** diensten.
       * **Niet meer gesynchroniseerd**: Inhoudsfragment is niet meer synchroon op het tabblad **Auteur** en **Voorvertoning** diensten. U moet **Publiceren** tot **Voorvertoning** om ervoor te zorgen dat beide instanties weer synchroon zijn.
-      * leeg: Het inhoudsfragment bestaat niet in het dialoogvenster **Voorvertoning** service.
-* **Gewijzigd**
-   * Alleen informatie
+      * leeg: het inhoudsfragment bestaat niet in het dialoogvenster **Voorvertoning** service.
+* **gewijzigd**
+   * Alleen informatie.
 * **Gewijzigd door**
-   * Alleen informatie
+   * Alleen informatie.
+   * Kan worden gebruikt voor [Snel filteren](#fast-filtering#fast-filtering).
+* **Tags**
+   * Alleen informatie.
+   * Hiermee worden alle codes weergegeven die betrekking hebben op het inhoudsfragment. Dit zijn zowel de Hoofd- als eventuele variaties.
+   * Kan worden gebruikt voor [Snel filteren](#fast-filtering#fast-filtering).
 * **Gepubliceerd op**
-   * Alleen informatie
+   * Alleen informatie.
 * **Gepubliceerd door**
-   * Alleen informatie
+   * Alleen informatie.
+   * Kan worden gebruikt voor [Snel filteren](#fast-filtering#fast-filtering).
 * **Verwezen door**
-
-   * Verstrekt een verbinding die een dialoog opent die van alle ouderverwijzingen van dat fragment een lijst maakt; inclusief verwijzen naar inhoudsfragmenten, ervaringsfragmenten en pagina&#39;s. Als u een specifieke verwijzing wilt openen, klikt u op de knop **Titel** in het dialoogvenster.
+   * Verstrekt een verbinding die een dialoog opent die van alle ouderverwijzingen van dat fragment een lijst maakt; met inbegrip van het van verwijzingen voorzien van de Fragmenten van de Inhoud, de Fragmenten van de Ervaring en pagina&#39;s. Als u een specifieke verwijzing wilt openen, klikt u op de knop **Titel** in het dialoogvenster.
 
      ![Content Fragments console - References dialog](assets/cfc-console-references-dialog.png)
 
@@ -157,7 +165,7 @@ Zoals met andere consoles kunt u de kolommen vormen die zichtbaar, en beschikbaa
 
 ![Content Fragments console - column configuration](assets/cfc-console-column-icon.png)
 
-Dit zal een lijst van kolommen voorstellen die u kunt verbergen of tonen:
+Hiermee wordt een lijst weergegeven met kolommen die u kunt verbergen of weergeven:
 
 ![Content Fragments console - column configuration](assets/cfc-console-column-selection.png)
 
@@ -165,9 +173,13 @@ Dit zal een lijst van kolommen voorstellen die u kunt verbergen of tonen:
 
 Het deelvenster Filter biedt de volgende opties:
 
-* een selectie van de voorspelling; een of meer voorspelden kunnen worden geselecteerd en gecombineerd om het filter te maken
+* een selectie van de voorspelling;
+   * inclusief modellen van inhoudsfragmenten, lokalisatie, tags, statusvelden, enzovoort
+   * een of meer voorspelden kunnen worden geselecteerd en gecombineerd om het filter te maken
 * de mogelijkheid **Opslaan** uw configuratie
 * de optie om een opgeslagen zoekfilter op te halen voor hergebruik
+
+Als deze optie is geselecteerd, wordt **Filteren met** worden weergegeven (onder het vak Zoeken). Ze kunnen van daaruit worden geschrapt. Bijvoorbeeld:
 
 ![Content Fragments console - Filteren](assets/cfc-console-filter.png)
 
@@ -179,7 +191,7 @@ Selecteer bijvoorbeeld **Gepubliceerd** in de **Status** kolom:
 
 >[!NOTE]
 >
->Snel filteren wordt alleen ondersteund voor de **Model**, **Status**, **Gewijzigd door**, en **Gepubliceerd door** kolommen.
+>Snel filteren wordt alleen ondersteund voor de **Model**, **Status**, **Gewijzigd door**, **Tags**, en **Gepubliceerd door** kolommen.
 
 ![Content Fragments console - Filteren](assets/cfc-console-fast-filter-01.png)
 

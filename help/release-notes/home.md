@@ -2,18 +2,18 @@
 title: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
 description: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 12dc95da58690284ade3963bf7e9336196062d3f
+source-git-commit: 3f62a7db9038dabdcca3dd59612e8e26c48b8482
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 32%
 
 ---
 
-# Geen informatie {#release-information}
+# Gegevens vrijgeven {#release-information}
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2023.6.0 |
+| Versie | 2023.7.0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 
@@ -32,10 +32,10 @@ Naast de snelheid van de innovatie, [!DNL Adobe Experience Manager] as a Cloud S
 
 Een release voorbereiden:
 
-1. Markeer uw kalenders: Controleer de belangrijkste datums voor maandelijkse versies op de [Routekaart voor release van Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) en markeer uw kalenders om u voor te bereiden op de belangrijkste activiteiten om klaar te zijn voor de release.
-1. Lees de opmerkingen bij de release: Lees de [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md) om vertrouwd te raken met de functies voor release en pre-release.
-1. Toegang tot en probeer nieuwe functies: De optie [prerelease-kanaal](/help/release-notes/prerelease.md) in uw niet-productieomgevingen en probeer de functies die u wilt beoordelen in uw aangepaste omgevingen.
-1. Uw gebruikers trainen: Documentatie en Experiencen League gebruiken om gebruikers snel en op de hoogte te brengen van de nieuwe functies.
+1. Markeer uw kalenders: controleer de belangrijkste datums voor maandelijkse versies op de [Routekaart voor release van Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) en markeer uw kalenders om u voor te bereiden op de belangrijkste activiteiten om klaar te zijn voor de release.
+1. Lees de opmerkingen bij de release: lees de [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md) om vertrouwd te raken met de functies voor release en pre-release.
+1. Toegang tot nieuwe functies en probeer deze: Schakel de [prerelease-kanaal](/help/release-notes/prerelease.md) in uw niet-productieomgevingen en probeer de functies die u wilt beoordelen in uw aangepaste omgevingen.
+1. Leer uw gebruikers: Gebruik documentatie en Experiencen League om gebruikers aan snelheid te brengen en met de nieuwe eigenschappen goed doordrongen.
 
 ## Informatie over sleutelrelease {#key-articles}
 
