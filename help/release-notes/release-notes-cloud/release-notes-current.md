@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
+source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Assets Essentials sorteert de zoekresultaten nu standaard op Relevance. U kunt d
 
 * [**Buiten-de-box thema&#39;s**](/help/forms/using-themes-in-core-components.md) **en sjablonen**: Kickstart uw formulierontwerpproces met onze gebruiksklare OTB-thema&#39;s en -sjablonen, speciaal ontworpen voor ervaren professionals en nieuwe formulierauteurs. Dankzij deze nauwgezette thema&#39;s en sjablonen, die naadloos zijn gebouwd met Adaptive Forms Core Components, kunt u snel formulieren maken voor veelgebruikte toepassingen.
 
-!![Sjablonen uit de keuzelijst](/help/forms/assets/form-templates-ootb.png)
+  ![Sjablonen uit de keuzelijst](/help/forms/assets/form-templates-ootb.png)
 
 * **Componenten reageren voor Forms zonder hoofd**: U kunt nu een voorbeeld bekijken van de koploze adaptieve formulieruitvoeringen en deze aanpassen met de React-componenten in het vak. Deze componenten maken gebruik van BEM-klassen van Adaptive Forms Core Components for styling, waardoor het voor u gemakkelijker wordt om de weergave aan te passen aan uw specifieke vereisten.
 
