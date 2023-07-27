@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8efe5d66929d1e2ccd7af71a2de8ae02f2bbc290
+source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -77,10 +77,9 @@ Assets Essentials sorteert de zoekresultaten nu standaard op Relevance. U kunt d
 
 * [**Buiten-de-box thema&#39;s**](/help/forms/using-themes-in-core-components.md) **en sjablonen**: Kickstart uw formulierontwerpproces met onze gebruiksklare OTB-thema&#39;s en -sjablonen, speciaal ontworpen voor ervaren professionals en nieuwe formulierauteurs. Dankzij deze nauwgezette thema&#39;s en sjablonen, die naadloos zijn gebouwd met Adaptive Forms Core Components, kunt u snel formulieren maken voor veelgebruikte toepassingen.
 
+!![Sjablonen uit de keuzelijst](/help/forms/assets/form-templates-ootb.png)
 
 * **Componenten reageren voor Forms zonder hoofd**: U kunt nu een voorbeeld bekijken van de koploze adaptieve formulieruitvoeringen en deze aanpassen met de React-componenten in het vak. Deze componenten maken gebruik van BEM-klassen van Adaptive Forms Core Components for styling, waardoor het voor u gemakkelijker wordt om de weergave aan te passen aan uw specifieke vereisten.
-
-  Dankzij de integratie met Adobe Acrobat Sign Solutions for Government kunnen Adobe en klanten van de overheid elektronische handtekeningen gebruiken in Adaptive Forms voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met de Matige naleving FedRAMP zijn, die Adobe klanten van vrede van mening voorzien.
 
 * [**Adaptieve Forms maken met herhaalbare secties**](/help/forms/create-forms-repeatable-sections.md): U kunt nu maken [Accordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Deelvenster](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), en [Horizontale tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) componenten gebaseerd op Adaptief formulier herhaalbaar voor het vastleggen van meerdere gegevensrecords.  Met deze herhaalbare secties kunt u eenvoudig meerdere gegevensitems opgeven. Dit is handig wanneer de vereiste instanties van gegevens vooraf onbekend zijn. Een invuller van een formulier kan eenvoudig secties toevoegen of verwijderen, waardoor formulieren kunnen worden aangepast aan verschillende scenario&#39;s voor gegevensinvoer en de verzameling van meerdere exemplaren van dezelfde gegevensrecord kan worden vereenvoudigd.
 
