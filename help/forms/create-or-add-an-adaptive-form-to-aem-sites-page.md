@@ -3,9 +3,9 @@ title: Hoe kunt u een adaptief formulier toevoegen aan de AEM Sites-pagina?
 description: Ontdek hoe u een adaptief formulier kunt maken of toevoegen aan uw AEM Sites-pagina. Leer ook de voordelen en verschillende manieren om formulieren te integreren in uw website.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: c5a3b5a22283e0e14b8d0a8464b9bba460a80c71
+source-git-commit: 6a462b7a437f74e659a43f7f5d4a95663b92c2cf
 workflow-type: tm+mt
-source-wordcount: '3155'
+source-wordcount: '3219'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | Dit artikel |
+
+## Overzicht {#overview}
 
 Met AEM Forms kunt u naadloos een formulier toevoegen aan uw AEM Sites-pagina. Zo kunnen bezoekers formulieren op een gemakkelijke manier invullen en verzenden zonder de pagina waarop ze staan te verlaten. Op die manier kunnen ze moeiteloos betrokken blijven bij andere elementen van de website terwijl ze actief met het formulier communiceren.
 
@@ -51,11 +53,12 @@ U kunt deze functie optimaal benutten door de volgende opties te gebruiken:
 
 * **[Een adaptief formulier converteren naar fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Converteer een adaptief formulier dat aan een AEM Sites-pagina is toegevoegd naar een Experience-fragment en gebruik het formulier opnieuw op meerdere AEM Sites-pagina&#39;s.
 
-* **Meerdere formulieren toevoegen aan een AEM Sites-pagina of Ervaar fragment:**  U kunt meerdere Adaptieve Forms-bestanden maken of toevoegen aan een AEM Sites-pagina om gebruikers meerdere keuzes te bieden op basis van hun voorkeuren en vereisten. Dit kan een combinatie van geheel nieuwe formulieren en bestaande formulieren zijn.
+* **[Formulieren op basis van goedgekeurde sjablonen maken en toevoegen aan een AEM Sites-pagina:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** U kunt vooraf goedgekeurde sjablonen gebruiken om snel een adaptieve Forms te maken die aansluit bij de richtlijnen en ontwerpstandaarden van uw organisatie voor het brandmerken. Deze optie is alleen beschikbaar voor Adaptive Forms die is gemaakt met de Adaptive Forms Editor of de Adaptive Forms - Embed-component.
 
-* **Formulieren op basis van goedgekeurde sjablonen maken en toevoegen aan een AEM Sites-pagina:** U kunt vooraf goedgekeurde sjablonen gebruiken om snel een adaptieve Forms te maken die aansluit bij de richtlijnen en ontwerpstandaarden van uw organisatie voor het brandmerken. Deze optie is alleen beschikbaar voor Adaptive Forms die is gemaakt met de Adaptive Forms Editor of de Adaptive Forms - Embed-component.
+* **[Bestaande formulieren toevoegen aan een AEM Sites-pagina:](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** U kunt formulieren die u al hebt gemaakt, eenvoudig integreren in uw websites, zodat bezoekers direct met hen kunnen communiceren. Deze optie is alleen beschikbaar voor Adaptive Forms die is gemaakt met de Adaptive Forms Editor of de Adaptive Forms - Embed-component.
 
-* **Bestaande formulieren toevoegen aan een AEM Sites-pagina:** U kunt formulieren die u al hebt gemaakt, eenvoudig integreren in uw websites, zodat bezoekers direct met hen kunnen communiceren. Deze optie is alleen beschikbaar voor Adaptive Forms die is gemaakt met de Adaptive Forms Editor of de Adaptive Forms - Embed-component.
+
+* **Meerdere formulieren toevoegen aan een AEM Sites-pagina of Ervaar fragment:**  U kunt meerdere Adaptieve Forms-bestanden maken of toevoegen aan een AEM Sites-pagina om gebruikers meerdere keuzes te bieden op basis van hun voorkeuren en vereisten. Dit kan een combinatie van geheel nieuwe formulieren en bestaande formulieren zijn. U kunt de **[!UICONTROL Adaptive Form Container]** om Adaptief Forms meerdere keren toe te voegen aan een AEM Sites-pagina. U kunt de **[!UICONTROL Adaptive Forms - Embed]** meerdere keren op een AEM Sites-pagina opnemen, alleen als **[!UICONTROL Form covers entire width of the frame]** is geselecteerd. In het geval van **[!UICONTROL Form covers entire width of the frame]** is niet ingeschakeld, ondersteunt de AEM Sites-pagina slechts één adaptief formulier dat zonder iframe kan bestaan. Als u meer adaptieve Forms wilt toevoegen, gebruikt u de opdracht **[!UICONTROL Adaptive Forms - Embed]** component, selecteren **[!UICONTROL Form covers entire width of the frame]** -optie.
 
 ## Overwegingen bij het maken van een adaptief formulier in AEM Sites-pagina of AEM Experience Fragment {#consideration}
 
