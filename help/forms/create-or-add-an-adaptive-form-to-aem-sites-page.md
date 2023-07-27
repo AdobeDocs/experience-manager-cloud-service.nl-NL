@@ -2,8 +2,8 @@
 title: Hoe kunt u een adaptief formulier toevoegen aan de AEM Sites-pagina?
 description: Ontdek hoe u een adaptief formulier kunt maken of toevoegen aan uw AEM Sites-pagina. Leer ook de voordelen en verschillende manieren om formulieren te integreren in uw website.
 feature: Adaptive Forms, Page Editor, Authoring
-Keywords: af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
+source-git-commit: 991de20303380af76d3e2e97aca8e0a4373e2232
 workflow-type: tm+mt
 source-wordcount: '3155'
 ht-degree: 0%
@@ -28,14 +28,14 @@ AEM Forms Cloud Service biedt adaptieve Form Container en Adaptive Forms - Embed
 
 ## Waarom gebruik Adaptive Forms Core Components om een adaptief formulier te maken op een AEM Sites-pagina of Experience Fragment?
 
-Als u in het verleden adaptieve Forms Foundation Component of gewone HTML-formulieren voor uw sites hebt gemaakt, raadt Adobe aan om Adaptive Forms Core Components te gebruiken om een adaptief formulier te maken op de AEM Sites-pagina of in een fragment met experts. Hiermee kunt u verschillende functies van AEM Sites-pagina&#39;s gebruiken, zoals versioning, doelgericht maken, vertalen en beheer op meerdere sites, waardoor het maken en beheren van formulieren voor Adaptive Forms wordt verbeterd. Hieronder volgen enkele voorbeelden:
+Als u in het verleden adaptieve Forms Foundation Component of gewone HTML-formulieren voor uw sites hebt gemaakt, raadt Adobe u aan om Adaptive Forms Core Components te gebruiken om een adaptief formulier te maken op de AEM Sites-pagina of in een fragment met experts. Hiermee kunt u verschillende functies van AEM Sites-pagina&#39;s gebruiken, zoals versioning, doelgericht maken, vertalen en beheer op meerdere sites, waardoor het maken en beheren van formulieren voor Adaptive Forms wordt verbeterd. Hieronder volgen enkele voorbeelden:
 
-* **Versioning:** Aanbieding voor AEM Sites-pagina&#39;s [robuuste versiemogelijkheden](/help/sites-cloud/authoring/features/page-versions.md), waarmee u verschillende versies van uw formulieren kunt bijhouden en beheren. Op deze manier kunt u wijzigingen aanbrengen en formulieren verbeteren terwijl u de mogelijkheid behoudt om indien nodig terug te draaien naar vorige versies. Versioning zorgt voor een beheerste en georganiseerde benadering van formulierontwikkeling en -ontwikkeling.
-* **Doelstelling (integratie met Adobe Target):** Met AEM Sites-pagina&#39;s die zich richten op mogelijkheden, kunt u ook [de formulierervaring aanpassen voor verschillende doelgroepen](/help/sites-cloud/integrating/integration-adobe-target-ims.md). Door gebruikerssegmenten te benutten en criteria als doel in te stellen, kunt u de inhoud, het ontwerp of het gedrag van het formulier aanpassen aan specifieke groepen gebruikers. Hierdoor kunt u een persoonlijke en relevante formulierervaring bieden, waardoor de betrokkenheid en conversiesnelheden toenemen.
+* **Versioning:** AEM Sites-pagina&#39;s bieden [robuuste versiemogelijkheden](/help/sites-cloud/authoring/features/page-versions.md), waarmee u verschillende versies van uw formulieren kunt bijhouden en beheren. Op deze manier kunt u wijzigingen aanbrengen en formulieren verbeteren terwijl u de mogelijkheid behoudt om indien nodig terug te draaien naar vorige versies. Versioning zorgt voor een beheerste en georganiseerde benadering van formulierontwikkeling en -ontwikkeling.
+* **Doelstelling (integratie met Adobe Target):** Met AEM Sites-pagina&#39;s die zich richten op mogelijkheden, kunt u ook [de formulierervaring aanpassen voor verschillende doelgroepen](/help/sites-cloud/integrating/integration-adobe-target-ims.md). Door gebruikerssegmenten te benutten en criteria als doel in te stellen, kunt u de inhoud, het ontwerp of het gedrag van het formulier aanpassen aan specifieke groepen gebruikers. Hierdoor kunt u een gepersonaliseerde en relevante formulierervaring bieden, waardoor de betrokkenheid en conversiesnelheden toenemen.
 * **Vertaling:** AEM Sites [naadloze integratie met vertaalservices](/help/sites-cloud/administering/translation/overview.md)waarmee u formulieren eenvoudig in meerdere talen kunt vertalen. Deze functie vereenvoudigt het lokalisatieproces, zodat uw formulieren toegankelijk zijn voor een wereldwijd publiek. U kunt vertalingen efficiënt beheren binnen AEM vertaalprojecten, waardoor u minder tijd en moeite nodig hebt voor ondersteuning van meertalige formulieren. Zie de sectie Overwegingen voor meer informatie over vertaling.
 * **Beheer van meerdere sites en Live Copy:** AEM Sites biedt robuuste [Multisite beheer en mogelijkheden voor live kopiëren](/help/sites-cloud/administering/msm/overview.md), waarmee u meerdere websites kunt maken en beheren in één omgeving. Met deze functie kunt u nu formulieren hergebruiken op verschillende sites, zodat consistentie wordt gegarandeerd en dubbel werk wordt beperkt. Met gecentraliseerde controle en beheer kunt u formulieren efficiënt onderhouden en bijwerken op meerdere websites.
 * **Thema&#39;s:** AEM Sites-pagina&#39;s bieden een raamwerk voor het ontwerpen en onderhouden van consistente visuele stijlen op meerdere webpagina&#39;s. Met deze opties definieert u kleuren, lettertypen, stijlpagina&#39;s en andere visuele elementen die een bijdrage leveren aan het algehele uiterlijk van de website. [U kunt de voor een AEM Sites-pagina ontworpen thema&#39;s gebruiken voor een adaptief formulier, zodat u tijd en moeite bespaart](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes).
-* **Tags:** Met AEM Sites-pagina&#39;s kunt u [tags of labels toewijzen aan een pagina, element of andere inhoud](/help/implementing/developing/introduction/tagging-framework.md). Tags zijn trefwoorden of metagegevenslabels waarmee u inhoud kunt indelen en indelen op basis van specifieke criteria. U kunt een of meer tags toewijzen aan pagina&#39;s, elementen of andere inhoudsonderdelen binnen AEM om de zoekopdracht te verbeteren en de elementen te categoriseren.
+* **Tags:** Met AEM Sites-pagina&#39;s kunt u [Labels of labels toewijzen aan een pagina, element of andere inhoud](/help/implementing/developing/introduction/tagging-framework.md). Tags zijn trefwoorden of metagegevenslabels waarmee u inhoud kunt indelen en indelen op basis van specifieke criteria. U kunt een of meer tags toewijzen aan pagina&#39;s, elementen of andere inhoudsonderdelen binnen AEM om de zoekopdracht te verbeteren en de elementen te categoriseren.
 * **Inhoud vergrendelen en ontgrendelen:** AEM Sites staat gebruikers toe om [toegang tot en wijzigingen in pagina&#39;s beheren](/help/sites-cloud/authoring/fundamentals/editing-content.md) in de AEM Sites-omgeving. Wanneer een pagina is vergrendeld, betekent dit dat deze is beveiligd tegen onbevoegde wijzigingen of bewerkingen door andere gebruikers. Alleen de gebruiker die de inhoud heeft vergrendeld of een aangewezen beheerder kan deze ontgrendelen om wijzigingen toe te staan.
 
 Daarnaast gebruikt Adaptive Forms in AEM Page Editor [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Deze kerncomponenten bieden een standaard en eenvoudigere methode om de componenten op te maken en aan te passen, identiek aan [AEM Sites WCM-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
@@ -129,8 +129,8 @@ Om volledige functionaliteit van de Adaptive Forms Container component toe te la
 Inschakelen [!UICONTROL Adaptive Forms Container] in het sjabloonbeleid voert u de volgende stappen uit:
 
 1. Open de AEM Sites-pagina of Experience Fragment om te bewerken. Als u de pagina wilt openen om te bewerken, selecteert u de pagina en klikt u op Bewerken.
-1. Open de sjabloon van de pagina Sites of Experience Fragment. Als u de sjabloon wilt openen, gaat u naar de [!UICONTROL Page Information] ![Pagina-informatie](/help/forms/assets/Smock_Properties_18_N.svg) > [!UICONTROL Edit Template]. De bijbehorende sjabloon wordt geopend in de sjablooneditor.
-1. Klik in de structuurweergave op de knop **[!UICONTROL Policy]** ![Beleid](/help/forms/assets/Smock_FeedManagement_18_N.svg) in de menubalk. In de **[!UICONTROL Allowed Components]** en selecteer de **[!UICONTROL Adaptive Forms Container]**  selectievakje onder **[Projectnaam AEM] - Adaptief formulier**.
+1. Open de sjabloon van de pagina Sites of Experience Fragment. Ga naar de [!UICONTROL Page Information] ![Pagina-informatie](/help/forms/assets/Smock_Properties_18_N.svg) > [!UICONTROL Edit Template]. De bijbehorende sjabloon wordt geopend in de sjablooneditor.
+1. Klik in de structuurweergave op de knop **[!UICONTROL Policy]** ![Beleid](/help/forms/assets/Smock_FeedManagement_18_N.svg) in de menubalk. In de **[!UICONTROL Allowed Components]** en selecteert u de **[!UICONTROL Adaptive Forms Container]**  selectievakje onder **[Projectnaam AEM] - Adaptief formulier**.
 1. Klik op **[!UICONTROL Done]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
@@ -189,7 +189,7 @@ Een adaptief formulier in AEM Sites-pagina converteren naar een Experience-fragm
 
    * **Handeling:** Selecteer deze optie om een nieuw ervaringsfragment te maken of Toevoegen aan een bestaand ervaringsfragment.
    * **Bovenliggend pad:** Geef het pad van de map op waarin u het ervaringsfragment wilt plaatsen. De optie is alleen beschikbaar voor het maken van een nieuw Ervingsfragment.
-   * **Sjabloon:** Geef het pad van de fragmentsjabloon voor ervaring op. Als u geen fragmentsjabloon voor ervaring hebt, [maken](/help/implementing/developing/extending/experience-fragments.md). De optie is alleen beschikbaar als u een adaptief formulier toevoegt aan een bestaand ervaringsfragment.
+   * **Template:** Geef het pad van de fragmentsjabloon voor ervaring op. Als u geen fragmentsjabloon voor ervaring hebt, [maken](/help/implementing/developing/extending/experience-fragments.md). De optie is alleen beschikbaar als u een adaptief formulier toevoegt aan een bestaand ervaringsfragment.
    * **Fragmenttitel:** Geef de titel van het ervaringsfragment op. De titel identificeert op unieke wijze een ervaringsfragment
 
 
@@ -240,7 +240,7 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
 1. Klik op de eigenschappen van de container van het adaptieve formulier ![Eigenschappen van adaptieve formuliercontainers](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van gegevensmodellen wordt geopend.
    ![Klik op het pictogram Sleutel om het dialoogvenster Aangepaste formuliercontainer te openen om de vooraf ingevulde service voor het adaptieve formulier te configureren](/help/forms/assets/adaptive-forms-container.png)
 1. Selecteer een formuliergegevensmodel. Open de **[!UICONTROL Basic]** tab. Selecteer in de service Prefill de optie **[!UICONTROL Form Data Model Prefill Service]**.
-1. Klik op **[!UICONTROL Done]**. Uw adaptieve formulier is nu geconfigureerd voor het vooraf invullen van het formuliergegevensmodel. U kunt nu de [regeleditor](rule-editor.md) om regels te maken voor het vooraf invullen van velden van het formulier.
+1. Klik op **[!UICONTROL Done]**. Uw adaptieve formulier is nu geconfigureerd voor vooraf invullen van formuliergegevensmodel. U kunt nu de [regeleditor](rule-editor.md) om regels te maken voor het vooraf invullen van velden van het formulier.
 
 
 ## Leid de gebruiker om naar een pagina of toon een dank u bericht bij de vormverzending
@@ -252,9 +252,9 @@ Bij het verzenden van een formulier kunt u de gebruiker omleiden naar een andere
 
 1. Open de **[!UICONTROL Submission]** tab.
 
-   * Als u een omleidings-URL wilt configureren, selecteert u bij Verzenden de optie **[!UICONTROL Redirect to URL]** en bladert u naar een AEM Sites-pagina en selecteert u deze. U kunt ook een URL van een externe pagina opgeven.
+   * Als u een omleidings-URL wilt configureren, selecteert u bij Verzenden de optie **[!UICONTROL Redirect to URL]** en een AEM Sites-pagina selecteren of een URL van een externe pagina opgeven.
 
-   * Als u een aangepast bericht of een bedankbericht wilt configureren, selecteert u bij Verzenden de optie **[!UICONTROL Show Message]** en geef een bericht op in het dialoogvenster **[!UICONTROL Message content]** doos. Het is een tekstvak met tekstopmaak. U kunt de optie Volledig scherm gebruiken om alle beschikbare tekstitems met tekstopmaak weer te geven.
+   * Als u een aangepast bericht of een bedankbericht wilt configureren, selecteert u bij Verzenden de optie **[!UICONTROL Show Message]** en geef een bericht op in het dialoogvenster **[!UICONTROL Message content]** doos. Het is een tekstvak met tekstopmaak. U kunt de optie Volledig scherm gebruiken om alle beschikbare tekstitems weer te geven.
 
 ## Zie volgende
 
