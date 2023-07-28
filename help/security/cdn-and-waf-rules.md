@@ -1,9 +1,9 @@
 ---
 title: Het vormen CDN en de Regels van WAF aan het Verkeer van de Filter
 description: Gebruik CDN en de Regels van de Firewall van de Toepassing van het Web om Kwaadwillig Verkeer te filtreren
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2371'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Adobe probeert om aanvallen tegen klantenwebsites te verlichten, maar het kan nu
 In dit artikel wordt de laatste aanpak beschreven, die twee categorieën regels omvat:
 
 1. **CDN-regels**: blok of sta verzoeken toe die op verzoekeigenschappen en verzoekkopballen, met inbegrip van IP, wegen, en gebruikersagent worden gebaseerd. Deze regels kunnen door alle AEM as a Cloud Service klanten worden gevormd
-1. **WAF** (Web Application Firewall): blokverzoeken die diverse patronen aanpassen die om met kwaadwillig verkeer worden gekend. Deze regels kunnen door klanten worden gevormd die WAF toe:voegen-op vergunning geven; Neem contact op met het accountteam van uw Adobe voor meer informatie. Let op: er is geen extra licentie vereist tijdens het programma voor vroege adoptie.
+1. **WAF** (De Firewall van de Toepassing van het Web) regels: blokverzoeken die diverse patronen aanpassen die om met kwaadwillig verkeer worden gekend worden geassocieerd. Deze regels kunnen worden geconfigureerd door klanten die een licentie voor de WAF-invoegtoepassing hebben; neem contact op met uw Adobe-accountteam voor meer informatie. Let op: er is geen extra licentie vereist tijdens het programma voor vroege adoptie.
 
 Deze regels kunnen worden toegepast om omgevingstypen voor werkruimten, werkruimten en prod-wolken te ontwikkelen, voor productieprogramma&#39;s (niet-sandbox). Ondersteuning voor RDE-omgevingen zal in de toekomst beschikbaar zijn.
 
@@ -50,7 +50,7 @@ Deze regels kunnen worden toegepast om omgevingstypen voor werkruimten, werkruim
 1. `cdn.yaml` moet een lijst met CDN-regels en WAF-regels bevatten, zoals hieronder wordt beschreven
 1. Om de regels van WAF aan te passen, moet WAF in de Manager van de Wolk worden toegelaten, zoals hieronder voor zowel de nieuwe als bestaande programmascenario&#39;s wordt beschreven. Voor WAF moet een aparte vergunning worden aangeschaft.
 
-   1. Om WAF op een nieuw Programma te vormen, controleer **WAF-DDOS-beveiliging** in het **Beveiliging** zoals hieronder weergegeven. Ga door met het volgen van de stappen beschreven in [Productieprogramma toevoegen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) om uw programma te maken
+   1. Om WAF op een nieuw Programma te vormen, controleer **WAF-DDOS-beveiliging** in het dialoogvenster **Beveiliging** zoals hieronder weergegeven. Ga door met het volgen van de stappen beschreven in [Productieprogramma toevoegen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) om uw programma te maken
 
    1. Om WAF op een bestaand programma te vormen, selecteer **Programma bewerken** door de in de [Programma&#39;s bewerken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) documentatie. Dan, in **Beveiliging** kunt u de optie WAF-DDOS op elk gewenst moment uitschakelen of controleren
 
@@ -115,8 +115,8 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 
 | **Eigenschap** | **Type** | **Beschrijving** |
 |---|---|---|
-| **allOf** | `array[Condition]` | **en** bewerking. true als alle vermelde voorwaarden true retourneren |
-| **anyOf** | `array[Condition]` | **of** bewerking. true als een van de vermelde voorwaarden true retourneert |
+| **allOf** | `array[Condition]` | **en** -bewerking. true als alle vermelde voorwaarden true retourneren |
+| **anyOf** | `array[Condition]` | **of** -bewerking. true als een van de vermelde voorwaarden true retourneert |
 
 **Getter**
 
@@ -156,15 +156,15 @@ De `wafRules` eigenschap kan de volgende regels omvatten:
 | AWS SSRF | AWS-SSRF | SSRF (Server Side Request Smeedery) is een verzoek dat probeert verzoeken te verzenden die door de webtoepassing worden gedaan om interne systemen te richten. De aanvallen van AWS SSRF gebruiken SSRF om de sleutels van Amazon Web Services (AWS) te verkrijgen en toegang tot S3 emmers en hun gegevens te krijgen. |
 | BHH | Onjuiste koppen | De slechte Kopballen van de Hop wijzen op een HTTP het smokkelen poging door of een misvormde overdracht-Codering (TE) of een inhoud-Lengte (CL) kopbal, of een goed gevormde TE en kopbal CL |
 | ABNORMALPATH | Abnormaal pad | Met Abnormal Path wordt aangegeven dat het oorspronkelijke pad afwijkt van het genormaliseerde pad (bijvoorbeeld `/foo/./bar` is genormaliseerd naar `/foo/bar`) |
-| GECOMPRIMEERD | Compressie gedetecteerd | De POST aanvraaginstantie is gecomprimeerd en kan niet worden geïnspecteerd. Bijvoorbeeld als een &quot;Content-Encoding: gzip&#39;&#39; request header is specified and the POST body is not plain text. |
+| GECOMPRIMEERD | Compressie gedetecteerd | De POST aanvraaginstantie is gecomprimeerd en kan niet worden gecontroleerd. Als bijvoorbeeld een aanvraagheader &quot;Content-Encoding: gzip&quot; wordt opgegeven en de hoofdtekst van de POST geen onbewerkte tekst is. |
 | DOUBLEENCODERING | Dubbele codering | De dubbele Codering controleert de ontduikingstechniek van het tweemaal coderen van HTML- karakters |
 | FORCEFULBROWSING | Snel bladeren | Snel bladeren is de mislukte poging om beheerpagina&#39;s te openen |
 | NOTUTF8 | Ongeldige codering | Ongeldige codering kan ertoe leiden dat de server schadelijke tekens van een verzoek in een reactie omzet, wat of een ontkenning van de dienst of XSS veroorzaakt |
 | JSON-ERROR | JSON-coderingsfout | Een POST, PUT, of PATCH- verzoeklichaam dat als bevattende JSON binnen de &quot;Content-Type&quot;verzoekkopbal wordt gespecificeerd maar JSON het ontleden fouten bevat. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
-| MALFORMED-DATA | Onjuiste gegevens in de aanvraaginstantie | Een POST, een PUT, of PATCH verzoeken lichaam dat volgens de &quot;Inhoud-Type&quot;verzoekkopbal misvormd is. Bijvoorbeeld, als &quot;Content-Type: application/x-www-form-urlencoded&quot; request header is specified and contains a POST body that is json. Dit is vaak een programmeerfout, een geautomatiseerd of een kwaadwillig verzoek. Vereist agent 3.2 of hoger. |
-| SANS | Malicious IP Verkeer | [SANS Internet Storm Center](https://isc.sans.edu/) lijst van IP adressen die om aan kwaadwillige activiteit zijn gemeld te hebben betrokken |
-| SIGSCI-IP | Netwerkeffect | IP gemarkeerd door SignalSciences: Wanneer IP wegens een kwaadwillig signaal door de besluitvormingsmotor wordt gemarkeerd, zal dat IP aan alle klanten worden verspreid. De verdere verzoeken van die IP adressen die om het even welk extra signaal voor de duur van de vlag bevatten worden dan geregistreerd |
-| NO-CONTENT-TYPE | Ontbrekende aanvraagheader &quot;Content-Type&quot; | Een POST-, PUT- of PATCH-aanvraag die geen aanvraagheader &quot;Content-Type&quot; heeft. Standaard moeten toepassingsservers het inhoudssoort gebruiken: tekst/onbewerkt; charset=us-ascii&quot; in dit geval. Bij veel geautomatiseerde en kwaadaardige verzoeken ontbreekt mogelijk &quot;Inhoudstype&quot;. |
+| MALFORMED-DATA | Onjuiste gegevens in de aanvraaginstantie | Een POST, een PUT, of PATCH verzoeken lichaam dat volgens de &quot;Inhoud-Type&quot;verzoekkopbal misvormd is. Bijvoorbeeld, als een &quot;Content-Type: application/x-www-form-urlencoded&quot;verzoekkopbal wordt gespecificeerd en een POST bevat die json is. Dit is vaak een programmeerfout, een geautomatiseerd of een kwaadwillig verzoek. Vereist agent 3.2 of hoger. |
+| SANS | Verkeer van kwaadwillige IP | [SANS Internet Storm Center](https://isc.sans.edu/) lijst van IP adressen die om aan kwaadwillige activiteit zijn gemeld te hebben betrokken |
+| SIGSCI-IP | Netwerkeffect | IP die door SignalSciences wordt gemarkeerd: Wanneer IP wegens een kwaadwillig signaal door de besluitvormingsmotor wordt gemarkeerd, zal dat IP aan alle klanten worden verspreid. De verdere verzoeken van die IP adressen die om het even welk extra signaal voor de duur van de vlag bevatten worden dan geregistreerd |
+| NO-CONTENT-TYPE | Ontbrekende aanvraagheader &quot;Content-Type&quot; | Een POST-, PUT- of PATCH-aanvraag die geen aanvraagheader &quot;Content-Type&quot; heeft. Standaard moeten toepassingsservers in dit geval &#39;Content-Type: text/plain; charset=us-ascii&#39; aannemen. Bij veel geautomatiseerde en kwaadaardige verzoeken ontbreekt mogelijk het type inhoud. |
 | NOUA | Geen gebruikersagent | Vele geautomatiseerde en kwaadwillige verzoeken gebruiken vals of ontbrekende Gebruiker-Agenten om het moeilijk te maken om het type van apparaat te identificeren dat de verzoeken maakt. |
 | TORNODE | Teerverkeer | Tor is software die de identiteit van een gebruiker verbergt. Een piek in het verkeer van de Tor kan op een aanvaller wijzen die probeert om hun plaats te maskeren. |
 | DATACENTER | Datacenter-verkeer | Datacenterverkeer is niet-biologisch verkeer dat afkomstig is van geïdentificeerde hostingproviders. Dit type van verkeer wordt niet algemeen geassocieerd met een echt eind - gebruiker. |
@@ -183,7 +183,7 @@ De `wafRules` eigenschap kan de volgende regels omvatten:
 
 ## Voorbeelden {#examples}
 
-Hier volgen enkele regelvoorbeelden. Zie de [tarieflimietsectie](#rules-with-rate-limits) verder worden uitgewerkt voor voorbeelden van tariefbeperkingen.
+Hier volgen enkele regelvoorbeelden. Zie de [tarieflimiteringssectie](#rules-with-rate-limits) verder worden uitgewerkt voor voorbeelden van tariefbeperkingen.
 
 **Voorbeeld 1**
 
@@ -257,11 +257,11 @@ Soms is het wenselijk om verkeer te blokkeren die een regel aanpassen slechts al
 |---|---|---|---|
 | limiet | geheel getal van 10 tot en met 10000 | vereist | Het tarief van het verzoek in verzoeken per seconde waarvoor de regel wordt teweeggebracht |
 | venster | geheel getal: 1, 10 of 60 | 10 | Samplingvenster in seconden waarvoor de aanvraagsnelheid wordt berekend |
-| straf | geheel getal van 60 tot en met 3600 | 300 (5 minuten) | Een periode in seconden waarvoor overeenkomstige verzoeken worden geblokkeerd (afgerond naar de dichtstbijzijnde minuut) |
+| straf | geheel getal van 60 tot 3600 | 300 | Een periode in seconden waarvoor overeenkomstige verzoeken worden geblokkeerd (afgerond naar de dichtstbijzijnde minuut) |
 
 ### Voorbeelden {#ratelimiting-examples}
 
-Voorbeeld 1: Wanneer het verzoektarief 100 verzoeken per seconde in de laatste 60 seconden overschrijdt, blok `/critical/resource` gedurende 60 seconden
+Voorbeeld 1: Wanneer de aanvraagsnelheid in de laatste 60 seconden meer dan 100 verzoeken per seconde bedraagt, blok `/critical/resource` gedurende 60 seconden
 
 ```
 - name: rate-limit-example
@@ -312,6 +312,7 @@ data:
 "ttfb": 19,
 "cip": "147.160.230.112",
 "rid": "974e67f6",
+"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
 "req_mthd": "GET",
@@ -329,11 +330,12 @@ data:
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
 "cip": "147.160.230.112",
+"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
 "req_mthd": "GET",
-"res_type": "",
+"res_type": "image/png",
 "cache": "PASS",
 "res_status": 406,
 "res_bsize": 3362,
@@ -352,12 +354,13 @@ Hieronder vindt u een lijst met veldnamen die in CDN-logbestanden worden gebruik
 | *ttfb* | Afkorting van *Tijd naar eerste byte*. Het tijdinterval tussen het verzoek begon tot het punt alvorens het reactiekarakter begon te worden gestroomd. |
 | *cip* | Het client-IP-adres. |
 | *afdanken* | De waarde van de verzoekkopbal die wordt gebruikt om het verzoek uniek te identificeren. |
+| *ua* | De gebruikersagent die verantwoordelijk is voor het indienen van een bepaalde HTTP-aanvraag. |
 | *host* | De autoriteit waarvoor het verzoek is bestemd. |
 | *url* | Het volledige pad, inclusief queryparameters. |
 | *req_mthd* | HTTP-methode die door de client wordt verzonden, zoals &quot;GET&quot; of &quot;POST&quot;. |
 | *res_type* | Het inhoudstype dat wordt gebruikt om het oorspronkelijke mediatype van de bron aan te geven |
 | *cachegeheugen* | Status van de cache. Mogelijke waarden zijn HIT, MISS of PASS |
-| *res_status* | De HTTP-statuscode als een geheel-getalwaarde. |
+| *res_status* | De HTTP-statuscode als een geheel getal. |
 | *res_bsize* | Bodybytes die naar de client worden verzonden in de reactie. |
 | *server* | Datacenter van de CDN-cacheserver. |
 | *regels* | De naam van om het even welke passende regels, voor zowel CDN regels als golfregels.<br><br>Overeenkomende CDN-regels worden weergegeven in de logbestandvermelding voor alle aanvragen naar de CDN, ongeacht of het een CDN-hit, -pass of -miss is.<br><br>Geeft ook aan of de overeenkomst tot een blok heeft geleid. <br><br>Bijvoorbeeld &quot;`cdn=;waf=SQLI;action=blocked`&quot;<br><br>Leeg als geen regels overeenkomen. |
