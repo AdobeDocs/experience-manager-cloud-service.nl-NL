@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
+source-git-commit: 3ac4fcd1f3ef1ef78dcee3c10bfbc99f9d7ba3ad
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,15 @@ Bekijk de video Overzicht van de release van juli 2023 voor een overzicht van de
 
 ### Nieuwe functies in de weergave Elementen {#assets-view-features}
 
-**Metagegevensformulier toewijzen aan een map**
+<!--
 
-U kunt nu een metagegevensformulier toewijzen aan een specifieke map in uw Assets Essentials-implementatie. Alle elementen in de map, inclusief de elementen in de submappen, geven vervolgens de eigenschappen weer die in het toegewezen metagegevensformulier zijn gedefinieerd.
+**Assign metadata form to a folder**
 
-![metagegevensformulier toewijzen aan een map](/help/release-notes/assets/assign-to-folder.png)
+You can now assign metadata form to a specific folder within your Assets Essentials deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
+
+![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
+
+-->
 
 **Verbeterd kunstmatig intelligentiekader voor beeld Slimme Markeringen**
 
