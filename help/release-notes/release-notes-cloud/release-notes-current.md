@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3ac4fcd1f3ef1ef78dcee3c10bfbc99f9d7ba3ad
+source-git-commit: 5995c416328e6f340285004ec2e723cc9279dabd
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
@@ -30,7 +30,7 @@ De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] hui
 
 ## Video vrijgeven {#release-video}
 
-Bekijk de video Overzicht van de release van juli 2023 voor een overzicht van de functies die zijn toegevoegd in de release van 2023.6.0:
+Bekijk de video Overzicht van de release van juli 2023 voor een overzicht van de functies die zijn toegevoegd in de release van 2023.7.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
