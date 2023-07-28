@@ -2,7 +2,7 @@
 title: Het gereedschap Inhoud kopiëren
 description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud uit hun productieomgeving kopiëren op AEM as a Cloud Service naar lagere omgevingen voor testdoeleinden.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
+source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 0%
@@ -31,15 +31,15 @@ De inhoud die moet worden gekopieerd, wordt gedefinieerd door een inhoudsset. Ee
 Wanneer het kopiëren van inhoud, is het bronmilieu de bron van waarheid.
 
 * Als de inhoud in de bestemmingsmilieu is gewijzigd, wordt het beschreven door inhoud in de bron, als de wegen het zelfde zijn.
-* Als de paden verschillend zijn, wordt inhoud van de bron samengevoegd met de inhoud in de bestemming.
+* Als de paden verschillend zijn, wordt de inhoud van de bron samengevoegd met de inhoud in de bestemming.
 
 ## Machtigingen {#permissions}
 
 Als u het gereedschap Inhoud kopiëren wilt gebruiken, zijn bepaalde machtigingen vereist in zowel de bronomgeving als de doelomgeving.
 
-| Functie voor kopiëren van inhoud | Beheerdersgroep AEM | Implementatiebeheerfunctie |
+| Functie Inhoud kopiëren | Beheerdersgroep AEM | Implementatiebeheerfunctie |
 |---|---|---|
-| Maken en wijzigen [inhoudssets](#create-content-set) | Vereist | Niet vereist |
+| Maken en wijzigen [inhoudssets](#create-content-set) | Niet vereist | Vereist |
 | Start of annuleer de [kopiëren van inhoud, proces](#copy-content) | Vereist | Vereist |
 
 Raadpleeg het document voor meer informatie over machtigingen en hoe u deze kunt instellen [AEM as a Cloud Service team en productprofielen.](/help/onboarding/aem-cs-team-product-profiles.md)
@@ -48,11 +48,11 @@ Raadpleeg het document voor meer informatie over machtigingen en hoe u deze kunt
 
 Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nadat deze is gedefinieerd, kunnen inhoudssets opnieuw worden gebruikt om inhoud te kopiëren. Voer de volgende stappen uit, zodat u een inhoudsset kunt maken.
 
-1. Meld u aan bij Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 
-1. Ga naar de **Inhoudssets** pagina van **Omgevingen** scherm.
+1. Ga naar de **Inhoudssets** pagina van de **Omgevingen** scherm.
 
 1. Klik rechtsboven in het scherm op **Inhoudsset toevoegen**.
 
@@ -60,7 +60,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nad
 
 1. Op de **Details** Geef een naam en een beschrijving voor de inhoudenset op en tik of klik op **Doorgaan**.
 
-   ![Details inhoudset](assets/add-content-set-details.png)
+   ![Details van inhoudsset](assets/add-content-set-details.png)
 
 1. Op de **Inhoudspaden** van de wizard, geeft u de paden op van de inhoud die u wilt wijzigen.
 
@@ -78,7 +78,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nad
    1. Tik of klik op **Pad uitsluiten**.
    1. Tik of klik op **Subpaden uitsluiten toevoegen** nogmaals om extra paden toe te voegen om deze uit te sluiten.
       * Uitgesloten paden moeten relatief zijn ten opzichte van het ingesloten pad.
-      * Er is geen limiet voor het aantal uitgesloten paden.
+      * Het aantal uitgesloten paden is niet beperkt.
 
    ![Paden uitsluiten](assets/add-content-set-paths-excluded.png)
 
@@ -112,11 +112,11 @@ Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëre
 
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 
-1. Ga naar de **Inhoudssets** pagina van **Omgevingen** scherm.
+1. Ga naar de **Inhoudssets** pagina van de **Omgevingen** scherm.
 
 1. Selecteer een inhoudsset in de console en selecteer **Inhoud kopiëren** in het ovaalmenu.
 
-   ![Kopie van inhoud](assets/copy-content.png)
+   ![Inhoud kopiëren](assets/copy-content.png)
 
    >[!NOTE]
    >
@@ -149,7 +149,7 @@ U kunt de status van uw kopieerprocessen in de **Inhoudsactiviteit kopiëren** p
 
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 
-1. Ga naar de **Inhoudsactiviteit kopiëren** pagina van **Omgevingen** scherm.
+1. Ga naar de **Inhoudsactiviteit kopiëren** pagina van de **Omgevingen** scherm.
 
 ![Activiteit voor kopiëren van inhoud](assets/copy-content-activity.png)
 
@@ -168,7 +168,7 @@ Wanneer u begint inhoud te kopiëren, kan het proces een van de volgende statuss
 
 Als u een bewerking voor het kopiëren van inhoud moet afbreken nadat u deze hebt gestart, kunt u deze desgewenst annuleren.
 
-Daartoe **Inhoudsactiviteit kopiëren** pagina, selecteert u de **Annuleren** actie van het elliptische menu van het exemplaarproces u eerder begon.
+Om dit te doen, **Inhoudsactiviteit kopiëren** pagina, selecteert u de **Annuleren** actie van het elliptische menu van het exemplaarproces u eerder begon.
 
 ![Kopie van inhoud annuleren](assets/content-copy-cancel.png)
 
@@ -182,7 +182,7 @@ Daartoe **Inhoudsactiviteit kopiëren** pagina, selecteert u de **Annuleren** ac
 
 U kunt de logbestanden controleren op zowel de bron- als de doelomgeving voor een voltooid proces voor het kopiëren van inhoud.
 
-Daartoe **Inhoudsactiviteit kopiëren** pagina, selecteert u de **Logboeken** actie van het elliptische menu van het exemplaarproces waarvoor u de logboeken wilt herzien en dan kiezen voor welke milieu.
+Om dit te doen, **Inhoudsactiviteit kopiëren** pagina, selecteert u de **Logboeken** actie van het elliptische menu van het exemplaarproces waarvoor u de logboeken wilt herzien en dan kiezen voor welke milieu.
 
 ![Logbestanden openen voor kopiëren-inhoudsproces](assets/copy-content-logs.png)
 
@@ -194,7 +194,7 @@ Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen.
 
 * Inhoud kan niet van een lagere omgeving naar een hogere omgeving worden gekopieerd.
 * Inhoud kan alleen van en naar ontwerpservices worden gekopieerd.
-* Kopiëren van inhoud tussen programma&#39;s is niet mogelijk.
+* Kopiëren van inhoud naar andere programma&#39;s is niet mogelijk.
 * Het uitvoeren van gelijktijdige bewerkingen voor het kopiëren van inhoud in dezelfde omgeving is niet mogelijk.
 * Per inhoudenset kunnen maximaal 50 paden worden opgegeven. Uitgesloten paden zijn niet beperkt.
 * Het gereedschap voor het kopiëren van inhoud mag niet worden gebruikt als een kloon- of spiegelgereedschap omdat het geen verplaatste of verwijderde inhoud van de bron kan bijhouden.
