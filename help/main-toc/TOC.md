@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0b79cc8ee956226e10cffdfec05c7c38caccaee0
+source-git-commit: 9c9e773d3ba69f5582bf75a30f50bd9c8aaa3272
 workflow-type: tm+mt
-source-wordcount: '4197'
+source-wordcount: '4205'
 ht-degree: 20%
 
 ---
@@ -559,6 +559,7 @@ ht-degree: 20%
          + [Verbind uw gegevensbronnen met Cloud Service](/help/forms/data-integration.md)
          + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
          + [Configureren [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+         + [Integratie van Salesforce-toepassingen met OAuth 2.0-clientreferentie](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [Configureren [!DNL Azure] opslag](/help/forms/configure-azure-storage.md)
          + [Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
          + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)

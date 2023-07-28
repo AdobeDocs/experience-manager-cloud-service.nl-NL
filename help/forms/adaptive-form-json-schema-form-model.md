@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 558662fb646abcf298a46fd0c1b1c709d53bce45
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
@@ -69,10 +69,10 @@ Deze toewijzing van JSON-elementen met componenten Adaptief formulier ziet er al
    <th><strong>Component Adaptief formulier</strong></th>
   </tr>
   <tr>
-   <td><p>Tekenreekseigenschappen met de beperking enum en enumNames.</p> <p>Syntaxis,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>Tekenreekseigenschappen met de beperking enum en enumNames</p> <p>Syntaxis,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td>
    <td><p>Onderdeel vervolgkeuzelijst:</p>
     <ul>
-     <li>Waarden die worden vermeld in enumNames, worden weergegeven in het keuzemenu.</li>
+     <li>Waarden die worden vermeld in enumNames, worden weergegeven in het vak drop.</li>
      <li>Waarden die in de opsomming staan, worden gebruikt voor de berekening.</li>
     </ul> </td>
   </tr>
@@ -342,7 +342,7 @@ In het bovenstaande voorbeeld wordt een klantrecord gedefinieerd, waarbij elke k
 
 ## Velden vooraf configureren in JSON-schemadefinitie {#pre-configuring-fields-in-json-schema-definition}
 
-U kunt de **aem:afProperties** eigenschap om het JSON-schemaveld vooraf te configureren voor toewijzing aan een aangepaste adaptieve formuliercomponent. Hieronder ziet u een voorbeeld:
+U kunt de **aem:afProperties** eigenschap om het veld JSON-schema vooraf te configureren voor toewijzing aan een aangepaste component Adaptief formulier. Hieronder ziet u een voorbeeld:
 
 ```json
 {
@@ -730,6 +730,20 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
  </tbody>
 </table>
+
+
+## Schema-compatibele gegevens inschakelen {#enablig-schema-compliant-data}
+
+Voer de volgende stappen uit om het adaptieve formulier in staat te stellen de schema-compatibele gegevens te genereren voor het verzenden van formulieren:
+
+1. Ga naar Experience Manager webconsole op `https://server:host/system/console/configMgr`.
+1. Zoeken **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]**.
+1. Tik om de configuratie te openen in de bewerkingsmodus.
+1. Selecteer de **[!UICONTROL Generate Schema Compliant Data]** selectievakje.
+1. Sla de instellingen op.
+
+![adaptieve vorm en interactieve communicatie webkanaalconfiguratie](/help/forms/assets/af-ic-web-channel-configuration.png)
+
 
 ## Niet-ondersteunde constructies  {#non-supported-constructs}
 
