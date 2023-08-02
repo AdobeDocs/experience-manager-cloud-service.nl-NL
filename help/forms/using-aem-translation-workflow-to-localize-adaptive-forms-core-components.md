@@ -2,7 +2,7 @@
 title: Een adaptief formulier op basis van kerncomponenten vertalen
 description: Gebruik machinevertaling of menselijke vertaling om een adaptief formulier met kerncomponenten te vertalen
 feature: Adaptive Forms
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 0%
@@ -17,15 +17,15 @@ Met gelokaliseerde formulieren hebt u een groter publiek in verschillende regio&
 
 De vertaalservice zet uw inhoud direct om in Adaptief formulier en [Document van record](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service is vooraf geconfigureerd voor het gebruik van een proefversie van Microsoft Translator voor machinevertaling. Voer de volgende stappen uit om automatische vertaling in te schakelen voor uw Adaptieve Forms en Document of Record:
 
-1. Selecteer een formulier in de gebruikersinterface van AEM Forms en tik op **[!UICONTROL Add Dictionary]** optie.
+1. Selecteer een formulier in de gebruikersinterface van AEM Forms en tik op **[!UICONTROL Add Dictionary]** -optie.
 1. In Add Woordenboek aan het scherm van het Project van de Vertaling, voor **[!UICONTROL Project]** option
 
    * Als u een vertaalproject wilt maken, selecteert u de optie **[!UICONTROL Create a new translation project]** en in de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld, `Government Reference Site - German locale.`
    * Als u een nieuw woordenboek wilt toevoegen aan een bestaand vertaalproject, selecteert u de optie **[!UICONTROL Add to an existing translation project]** en selecteert u een **[!UICONTROL Existing translation project]**.
-1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`). U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die zijn opgegeven in het dialoogvenster **Doeltalen** veld. Klikken **Gereed**.
+1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`). U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld. Klikken **Gereed**.
 1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**.
 1. Klik in het scherm Projecten op het nieuwe project. Klik bijvoorbeeld op de knop **Referentiesite van de overheid - Duitse landinstelling** tegel.
-1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Start**. De status van de tegel verandert in Concept. Wanneer de vertaling is voltooid, verandert de status in **Goedgekeurd**. Vernieuw de pagina na een paar minuten en controleer de status.
+1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Start**. De status van de tegel verandert in Concept. Na de vertaling verandert de status in **Goedgekeurd**. Vernieuw de pagina na een paar minuten en controleer de status.
 
    ![Vertaling starten](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
 1. Nadat de status is gewijzigd in **Goedgekeurd** op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Voltooid**.
@@ -60,12 +60,12 @@ Voor vertaling wordt een woordenboek met bestanden in XLIFF-indeling gedeeld met
 
 Voer de volgende stappen uit om een formulier en het bijbehorende document te lokaliseren met behulp van Human Translators:
 
-1. Selecteer een formulier in de gebruikersinterface van AEM Forms en tik op **[!UICONTROL Add Dictionary]** optie.
+1. Selecteer een formulier in de gebruikersinterface van AEM Forms en tik op **[!UICONTROL Add Dictionary]** -optie.
 1. In Add Woordenboek aan het scherm van het Project van de Vertaling, voor **[!UICONTROL Project]** option
 
    * Als u een vertaalproject wilt maken, selecteert u de optie **[!UICONTROL Create a new translation project]** en in de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld, `Government Reference Site - German locale.`
    * Als u een nieuw woordenboek wilt toevoegen aan een bestaand vertaalproject, selecteert u de optie **[!UICONTROL Add to an existing translation project]** en selecteert u een **[!UICONTROL Existing translation project]**.
-1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`). U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die zijn opgegeven in het dialoogvenster **Doeltalen** veld. Klikken **Gereed**.
+1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`). U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld. Klikken **Gereed**.
 1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**.
 1. Klik in het scherm Projecten op het nieuwe project. Klik bijvoorbeeld op de knop **Referentiesite van de overheid - Duitse landinstelling** tegel.
 1. Onder aan het dialoogvenster **Samenvatting** tegel, klik op de knop **ovalen**. Het scherm Projecteigenschappen omzetten wordt geopend.
