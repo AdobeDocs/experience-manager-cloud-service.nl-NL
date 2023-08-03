@@ -1,11 +1,11 @@
 ---
 title: Een AEM-connector verzenden
-description: Een AEM-connector verzenden
+description: Leer hoe u connectors kunt implementeren met Cloud Manager.
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 11%
+source-wordcount: '302'
+ht-degree: 9%
 
 ---
 
@@ -37,7 +37,7 @@ Ongeacht waar zij worden ontvangen, moeten de pakketten als gebiedsdelen in pom.
 </dependency>
 ```
 
-Als de ISV-partner de aansluiting host op een voor internet toegankelijke (zoals Cloud Manager toegankelijk) opslagplaats, moet de ISV de configuratie van de opslagplaats bieden waar de pom.xml kan worden geplaatst, zodat de (hierboven) vermelde connectorafhankelijkheden kunnen worden opgelost tijdens het maken (zowel lokaal als door Cloud Manager).
+Als de ISV-partner de aansluiting host op een voor internet toegankelijke gegevensopslagruimte (zoals Cloud Manager toegankelijk), moet de ISV de configuratie van de opslagplaats bieden waar de pom.xml kan worden geplaatst, zodat de (hierboven) vermelde connectorafhankelijkheden tijdens de build (zowel lokaal als door Cloud Manager) kunnen worden opgelost.
 
 ```xml
 <repository>

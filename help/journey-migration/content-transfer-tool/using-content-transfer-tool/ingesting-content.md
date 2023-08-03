@@ -1,10 +1,10 @@
 ---
 title: Inhoud in doel invoegen
-description: Inhoud in doel invoegen
+description: Leer hoe u met het gereedschap Inhoud overbrengen inhoud uit een migratieset kunt toevoegen aan een Cloud Service-instantie.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1941'
 ht-degree: 6%
 
 ---
@@ -59,7 +59,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Klik op de knop **i)** in de rij voor meer informatie over de innametaak. U kunt de duur van elke stap van de Ingestie zien wanneer het loopt of door te klikken **...** en klik vervolgens op **Duur weergeven**. Uit de informatie over de extractie blijkt ook dat men zich realiseert wat er wordt ingeslikt.
+1. Klik op de knop **i)** voor meer informatie over de innametaak. U kunt de duur van elke stap van de Ingestie zien wanneer het loopt of door te klikken **...** en klik vervolgens op **Duur weergeven**. Uit de informatie over de extractie blijkt ook dat men zich realiseert wat er wordt ingeslikt.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
@@ -98,7 +98,7 @@ Voer de onderstaande stappen uit om uw migratieset uit de Content Transfer-tool 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële *aanvulling* van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
 
 >[!NOTE]
->Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service. Als u de pre-exemplaarstap voor de eerste volledige opname hebt gebruikt, kunt u pre-exemplaar voor verdere bovenop-up ingestions overslaan (als de top-up migratie vastgestelde grootte minder dan 200 GB is). De reden is dat het tijd kan toevoegen aan het hele proces.
+>Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service. Als u de pre-exemplaarstap voor de eerste volledige opname hebt gebruikt, kunt u pre-exemplaar voor verdere bovenop-up ingezien overslaan (als de top-up migratie vastgestelde grootte minder dan 200 GB is). De reden is dat het tijd kan toevoegen aan het hele proces.
 
 Als u de delta-inhoud wilt innemen nadat het inslikken is voltooid, moet u een [Extractie bovenaan](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)en gebruikt u vervolgens de methode voor het verhogen van de inname.
 
@@ -110,7 +110,7 @@ Begin met het maken van een Ingestietaak en zorg ervoor dat **Sluitereffect** is
 
 ### CAM Kan migratietoken niet ophalen {#cam-unable-to-retrieve-the-migration-token}
 
-De automatische herwinning van het migratietoken kan om verschillende redenen ontbreken, met inbegrip van u [een IP-lijst van gewenste personen instellen via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) in de omgeving van de doelCloud Service. In dergelijke scenario&#39;s, ziet u de volgende dialoogdoos wanneer u probeert om een opname te beginnen:
+Het automatisch ophalen van het migratietoken kan om verschillende redenen mislukken, waaronder u [een IP-lijst van gewenste personen instellen via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) in de omgeving van de doelCloud Service. In dergelijke scenario&#39;s, ziet u de volgende dialoogdoos wanneer u probeert om een opname te beginnen:
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -159,7 +159,7 @@ Als het Orchestrator van de Versie nog loopt wanneer een ingestie wordt begonnen
 
 Een gemeenschappelijke oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) error is een conflict in knoop ids. Als u deze fout wilt identificeren, downloadt u het innamelogboekbestand met de interface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
->java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Ongelijkheidsbeperking geschonden eigenschap [jcr:uuid] met waarde a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] met waarde a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
 Elk knooppunt in AEM moet een unieke uuid hebben. Deze fout geeft aan dat een knooppunt dat wordt ingesloten, dezelfde uuid heeft als een knooppunt dat zich elders op een ander pad op de doelinstantie bevindt.
 Deze situatie kan zich voordoen als een knooppunt van de bron wordt verplaatst tussen een extractie en een volgende [Extractie bovenaan](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
@@ -170,7 +170,7 @@ Dit conflict moet handmatig worden opgelost. Iemand die bekend is met de inhoud,
 ### Opsommingsfout vanwege niet-verwijderen knooppunt waarnaar wordt verwezen
 
 Een andere veelvoorkomende oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) de mislukking is een versieconflict voor een bepaalde knoop op de doelinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboekbestand met de interface van Cloud Acceleration Manager en zoekt u een item als de volgende:
->java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e 976a8
 
 Dit kan gebeuren als een knooppunt op het doel wordt gewijzigd tussen een opname en een volgende opvulopname, zodat er een nieuwe versie is gemaakt. Als voor de opname &#39;include-versies&#39; is ingeschakeld, kan er een conflict optreden omdat het doel nu een recentere versie heeft waarnaar wordt verwezen door de versiegeschiedenis en andere inhoud. Het insluitingsproces kan het conflicterende versieknooppunt niet verwijderen omdat ernaar wordt verwezen.
 

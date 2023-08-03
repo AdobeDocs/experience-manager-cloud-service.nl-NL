@@ -1,11 +1,11 @@
 ---
 title: Een AEM-connector implementeren
-description: Een AEM-connector implementeren
+description: Leer hoe te om een AEM schakelaar te bouwen en uit te voeren.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 7%
+source-wordcount: '971'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ AEM is een geavanceerde oplossing voor het beheer van webervaring en biedt vele 
 * Gegevens van een extern systeem naar AEM halen. U kunt bijvoorbeeld contactgegevens van een CRM exporteren om deze beschikbaar te maken voor een breder publiek dat een website met een AEM bezoekt.  Implementaties moeten gebruikmaken van de [Geplande taken](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs), die garandeert dat de taak ook wordt uitgevoerd als de containers omlaag gaan. De code zou moeten worden ontworpen om te veronderstellen dat de baan potentieel meer dan eens kan worden teweeggebracht.
 * Gegevens exporteren van AEM naar een extern systeem. Bijvoorbeeld instellingen voor abonnementen op nieuwsbrieven die op een door AEM aangedreven website worden ingediend bij een CRM.
 * Elementen ophalen van AEM. Bijvoorbeeld een extern inhoudsbeheersysteem (CMS) dat verwijst naar een element dat is opgeslagen in AEM Assets. Een ander voorbeeld is een PIM-systeem dat een koppeling maakt naar een afbeelding in AEM Assets.
-* Elementen opslaan in de AEM-infrastructuur. Bijvoorbeeld, een systeem van het Beheer van het Middel van de Marketing (MRM) dat een goedgekeurd activa in AEM Assets opslaat.
+* Elementen opslaan in de AEM. Bijvoorbeeld, een systeem van het Beheer van het Middel van de Marketing (MRM) dat een goedgekeurd activa in AEM Assets opslaat.
 * Een aangepaste UI-component configureren en renderen. Stel bijvoorbeeld dat een auteur een video-component mag slepen en neerzetten en een specifieke video moet configureren om op de livesite af te spelen.
 * Handelend op activa met een partnerdienst. Bijvoorbeeld het verzenden van middelen naar een videoplatform wanneer een pagina wordt gepubliceerd.
 * Een site, pagina of element analyseren in de AEM-beheerconsole. Bijvoorbeeld: SEO-aanbevelingen doen voor een bestaande of niet-gepubliceerde pagina.
@@ -81,7 +81,7 @@ Als de gewijzigde configuraties in de Schakelaar worden gebruikt, architect de S
 Aanbevolen werkwijzen voor codering
 ----------------------
 
-Aangezien AEM as a Cloud Service een Cloud-inheemse oplossing is, zijn er sommige richtlijnen die de codestrategieën van een schakelaar kunnen beïnvloeden. Zie [Richtsnoeren voor as a Cloud Service ontwikkeling AEM](/help/implementing/developing/introduction/development-guidelines.md) voor meer informatie .
+Aangezien AEM as a Cloud Service een Cloud-inheemse oplossing is, zijn er sommige richtlijnen die de codestrategieën van een schakelaar kunnen beïnvloeden. Zie [as a Cloud Service ontwikkelingsrichtsnoeren AEM](/help/implementing/developing/introduction/development-guidelines.md) voor meer informatie .
 
 De AEM-aansluiting testen
 -------------------------

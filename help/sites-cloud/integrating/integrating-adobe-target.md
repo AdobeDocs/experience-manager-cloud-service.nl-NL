@@ -1,21 +1,21 @@
 ---
 title: Integreren met Adobe Target
-description: Integreren met Adobe Target
+description: Leer hoe u Adobe Target kunt integreren met AEM as a Cloud Service.
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1026'
 ht-degree: 1%
 
 ---
 
 # Integreren met Adobe Target{#integrating-with-adobe-target}
 
-Als onderdeel van de Adobe Experience Cloud kunt u met Adobe Target de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Voor de integratie van Adobe Target en AEM as a Cloud Service is het volgende vereist:
+Als onderdeel van de Adobe Experience Cloud kunt u met Adobe Target de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Voor de integratie van Adobe Target en AEM as a Cloud Service zijn:
 
-* het gebruiken van Touch UI om een Configuratie van het Doel in AEM as a Cloud Service (vereiste configuratie IMS) tot stand te brengen.
+* het gebruiken van Touch UI om een Configuratie van het Doel in AEM as a Cloud Service (vereiste configuratie IMS) te creëren.
 * Adobe Target toevoegen en configureren als extensie in [Adobe starten](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
 Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). Dat gezegd hebbende, is de integratie met Lancering nodig voor &quot;Ervaring gericht&quot;.
@@ -31,14 +31,14 @@ Voor het uitvoeren van de Fragmenten van de Ervaring en/of de Fragmenten van de 
 1. Navigeren naar **Gereedschappen** → **Cloud Services**.
    ![Navigatie](assets/cloudservice1.png "Navigatie")
 2. Selecteren **Adobe Target**.
-3. Selecteer **Maken** knop.
+3. Selecteer de **Maken** knop.
    ![Maken](assets/tenant1.png "Maken")
 4. Vul de details in (zie hieronder), en selecteer **Verbinden**.
    ![Verbinden](assets/open_screen1.png "Verbinden")
 
 ### IMS-configuratie {#ims-configuration}
 
-Een configuratie IMS voor zowel de Lancering als Doel is noodzakelijk om Doel met AEM en Lancering behoorlijk te integreren. Terwijl de configuratie IMS voor Lancering vooraf in AEM as a Cloud Service wordt gevormd, moet de configuratie van doel IMS worden gecreeerd (nadat het Doel provisioned is). Zie [IMS-configuratie voor gebruik bij integratie met Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) en de video [Experience Platform Launch en AEM integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) om te leren hoe te om de configuratie van het Doel te creëren IMS.
+Een configuratie IMS voor zowel Lancering als Doel is noodzakelijk om Doel met AEM en Lancering behoorlijk te integreren. Terwijl de configuratie IMS voor Lancering vooraf in AEM as a Cloud Service wordt gevormd, moet de configuratie van doel IMS worden gecreeerd (nadat het Doel provisioned is). Zie [IMS-configuratie voor gebruik bij integratie met Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) en de video [Experience Platform Launch en AEM integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) om te leren hoe te om de configuratie van het Doel te creëren IMS.
 
 ### Adobe Target Tenant ID and Adobe Target Client Code {#tenant-client}
 
@@ -74,11 +74,11 @@ Ga als volgt te werk om de doelconfiguratie te bewerken:
 
 ### Een configuratie toevoegen aan een site {#add-configuration}
 
-Ga naar: **Sites** > **Een sitepagina selecteren** > **Eigenschappen** > **Geavanceerd** > **Configuratie** > Selecteer de configuratieteuse.
+Ga als volgt te werk om een Touch UI-configuratie op een site toe te passen: **Sites** > **Een sitepagina selecteren** > **Eigenschappen** > **Geavanceerd** > **Configuratie** > Selecteer de configuratieteuse.
 
 ## Adobe Target integreren op AEM sites met behulp van Adobe starten {#integrate-target-launch}
 
-AEM biedt een out of the box integratie met Experience Platform Launch. Door de Adobe Target-extensie toe te voegen aan Experience Platform Launch, kunt u de functies van Adobe Target op AEM webpagina&#39;s gebruiken. Doelbibliotheken worden alleen gerenderd met Launch.
+AEM biedt een out of the box integratie met Experience Platform Launch. Door de Adobe Target-extensie toe te voegen aan Experience Platform Launch, kunt u de functies van Adobe Target op AEM webpagina&#39;s gebruiken. Doelbibliotheken worden alleen weergegeven met Launch.
 
 >[!NOTE]
 >
@@ -96,10 +96,10 @@ Als algemeen overzicht, zijn de integratiestappen:
 
 Een eigenschap is een container die is gevuld met extensies, regels en gegevenselementen.
 
-1. Selecteer **Nieuwe eigenschap** knop.
+1. Selecteer de **Nieuwe eigenschap** knop.
 2. Geef een naam op voor de eigenschap.
 3. Als domein voert u de IP/host in waarop u de opstartafspeelbibliotheek wilt laden.
-4. Selecteer **Opslaan** knop.
+4. Selecteer de **Opslaan** knop.
    ![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
 
 ### De vereiste extensies toevoegen {#add-extension}
@@ -109,7 +109,7 @@ Een eigenschap is een container die is gevuld met extensies, regels en gegevense
 1. Selecteer de optie Extension Catalog en zoek naar Target in het filter.
 2. Selecteren **Adobe Target** om.js en klik op de Install optie.
    ![Doel zoeken](assets/search_ext1.png "Doel zoeken")
-3. Selecteer **Configureren** knop. Bericht het configuratievenster met de ingevoerde de rekeningsgeloofsbrieven van het Doel, en de versie at.js voor deze uitbreiding.
+3. Selecteer de **Configureren** knop. Bericht het configuratievenster met de ingevoerde de rekeningsgeloofsbrieven van het Doel, en de versie at.js voor deze uitbreiding.
 4. Selecteren **Opslaan** om de uitbreiding van het Doel aan uw bezit van de Lancering toe te voegen. U zou de uitbreiding van het Doel moeten kunnen zien onder **Geïnstalleerde extensies** lijst.
    ![Extensie opslaan](assets/configure_extension1.png "Extensie opslaan")
 5. Herhaal bovenstaande stappen om te zoeken naar de **Adobe ContextHub** extensie en installeer deze extensie (deze extensie is vereist voor de integratie met contexthub-parameters, op basis waarvan u het doel opgeeft).
