@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
+source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Met de basissjabloon kunt u snel een formulier voor inschrijvingservaring maken.
 
 >[!TAB Telefoon]
 
-![Standaardsjabloontelefoon](assets/Basic-temp-phone-view.png)
+![Standaardsjabloontelefoon](assets/Basic-temp-phone-view.png){width:&quot;25%&quot;}
 
 >[!TAB Tablet]
 
@@ -93,7 +93,21 @@ Met de basissjabloon kunt u snel een formulier voor inschrijvingservaring maken.
 
 Een lege canvassjabloon wordt gebruikt om een adaptieve formulierstructuur, inhoud en helemaal nieuwe regels te maken. Er zijn geen formuliercomponenten vooraf opgenomen in de lege sjabloon.
 
-![Lege sjabloon](assets/Blank-template.png)
+>[!BEGINTABS]
+
+>[!TAB Desktop]
+
+![Lege sjabloondesktop](assets/Blank-temp-desktop-view.png)
+
+>[!TAB Telefoon]
+
+![Standaardsjabloontelefoon](assets/Blank-temp-phone-view.png){width:&quot;25%&quot;}
+
+>[!TAB Tablet]
+
+![Tablet Standaardsjabloon](assets/Blank-temp-tablet-view.png)
+
+>[!ENDTABS]
 
 ### Contact opnemen {#Contact-Us}
 
@@ -147,7 +161,7 @@ Met een formulier voor inkoopaanvragen kunt u een formulier maken waarmee het aa
 
 ## Referentieformuliergegevensmodellen {#reference-models}
 
-Nadat u een [Adaptief formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) gebaseerd op [Kerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), kunt u een verbinding maken met de achterzijde van uw formulier via de database Microsoft® Dynamics 365 en Salesforce-servers om de workflows voor bedrijven mogelijk te maken. Bijvoorbeeld:
+Nadat u een [Adaptief formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) gebaseerd op [Kerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), kunt u uw formulier verbinden met de database Microsoft® Dynamics 365 en Salesforce-servers om bedrijfsworkflows mogelijk te maken. Bijvoorbeeld:
 
 * Schrijf gegevens in Microsoft® Dynamics 365 en Salesforce over het verzenden van adaptieve formulieren.
 * Schrijf gegevens in Microsoft® Dynamics 365 en Salesforce via aangepaste entiteiten die zijn gedefinieerd in het Form Data Model en vice versa.
