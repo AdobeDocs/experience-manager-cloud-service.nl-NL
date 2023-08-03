@@ -1,10 +1,10 @@
 ---
 title: Rechts personen, juiste rollen
-description: Rechts personen, juiste rollen
+description: Leer hoe u de juiste mensen kiest en ze toewijst aan de juiste rollen voor uw project.
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -34,8 +34,8 @@ Een winnend bemanningsteam heeft negen mensen op de juiste plaatsen nodig — ne
 |--- |--- |--- |--- |
 | Projectmanager | PMP-certificering, eenvoudige certificering, ervaring met risicobeheer | Expert | Eerlijk, consistent, verantwoordelijk, georganiseerd, positief, acceptabel, bereid om verandering te omarmen |
 | Master scrubben | ScrumMaster-certificering, mobiele certificering, ervaring met faciliteren | Expert | Consistent, creatief |
-| Eigenaar product | Gelijke certificering, diepgaand inzicht in bedrijfsbehoeften | Expert | Evenwichtig, zeker |
-| IT-managers voor beveiliging, infrastructuur, tools | CISM-certificering, Adobe Experience Manager Component Developer-certificering | Expert | Gedetailleerd |
+| Eigenaar van product | Gelijke certificering, diepgaand inzicht in bedrijfsbehoeften | Expert | Evenwichtig, zeker |
+| IT-hoofden voor beveiliging, infrastructuur, tools | CISM-certificering, Adobe Experience Manager Component Developer-certificering | Expert | Gedetailleerd |
 | Strategisten/Power-gebruikers | Kennis in Adobe Experience Manager Sites | Melding aan expert | Gelijkaardig, nieuwsgierig, grondig, open, bereid om verandering te omarmen, samenwerkend |
 | QA/UAT-lead | Gelijke certificering, begrip van SDLC | Melding aan intermediair | Gedetailleerd, processtation, consistent |
 | Technisch architect | Ervaring met IT-infrastructuur | Expert | Gedetailleerd, op processen gebaseerd, consistent |
@@ -54,14 +54,14 @@ Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wa
 
 Van architect tot ScrumMaster, elke rol in dit team is onmisbaar — inclusief de DAM-bibliotheek.
 
-Mogelijk hebt u al de meeste mensen die u nodig hebt om een geslaagde Adobe Experience Manager Assets-implementatie uit te voeren. Deze lijst is vergelijkbaar met die voor Adobe Experience Manager Sites, met één belangrijke toevoeging: u hebt een bibliothecaris nodig om ervoor te zorgen dat uw digitale middelen op een manier worden georganiseerd en geëtiketteerd die hen gemakkelijk maken te vinden.
+Mogelijk hebt u al de meeste mensen die u nodig hebt om een geslaagde Adobe Experience Manager Assets-implementatie uit te voeren. Deze lijst is vergelijkbaar met de lijst voor Adobe Experience Manager Sites, met één belangrijke toevoeging: u hebt een bibliothecaris nodig om ervoor te zorgen dat uw digitale middelen op een manier worden georganiseerd en geëtiketteerd die hen gemakkelijk maken te vinden.
 
 | Rol | Vaardigheden | Capaciteitsniveau | Kwaliteit |
 |--- |--- |--- |--- |
 | Projectmanager | PMP-certificering, eenvoudige certificering, ervaring met risicobeheer | Expert | Eerlijk, consistent, verantwoordelijk, georganiseerd, positief, acceptabel, bereid om verandering te omarmen |
 | Master scrubben | ScrumMaster-certificering, mobiele certificering, ervaring met faciliteren | Expert | Consistent, creatief |
-| Eigenaar product | Gelijke certificering, diepgaand inzicht in bedrijfsbehoeften | Expert | Evenwichtig, zeker |
-| IT-managers voor beveiliging, infrastructuur, tools | CISM-certificering, Adobe Experience Manager Component Developer-certificering | Expert | Gedetailleerd |
+| Eigenaar van product | Gelijke certificering, diepgaand inzicht in bedrijfsbehoeften | Expert | Evenwichtig, zeker |
+| IT-hoofden voor beveiliging, infrastructuur, tools | CISM-certificering, Adobe Experience Manager Component Developer-certificering | Expert | Gedetailleerd |
 | Strategisten/Power-gebruikers | Kennis in Adobe Experience Manager Sites | Melding aan expert | Gelijkaardig, nieuwsgierig, grondig, open, bereid om verandering te omarmen, samenwerkend |
 | QA/UAT-lead | Gelijke certificering, begrip van SDLC | Melding aan intermediair | Gedetailleerd, processtation, consistent |
 | Technisch architect | Ervaring met IT-infrastructuur | Expert | Gedetailleerd, op processen gebaseerd, consistent |

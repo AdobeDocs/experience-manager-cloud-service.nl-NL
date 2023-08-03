@@ -1,10 +1,10 @@
 ---
 title: Pagina-eigenschappen bewerken
-description: De vereiste eigenschappen voor een pagina definiëren
+description: Leer hoe u de eigenschappen definieert die vereist zijn voor het beheer van een pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2341'
+source-wordcount: '2347'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Titel en tags**
 
-   * **Titel** - De titel van de pagina wordt op verschillende plaatsen weergegeven. De **Websites** en de **Sites** kaart-/lijstweergaven.
+   * **Titel** - De titel van de pagina wordt op verschillende plaatsen weergegeven. Bijvoorbeeld de **Websites** en de **Sites** kaart-/lijstweergaven.
       * Dit is een verplicht veld.
    * **Tags** - Hier kunt u codes aan de pagina toevoegen of eruit verwijderen door de lijst in het selectievak bij te werken.
       * Nadat u een tag hebt geselecteerd, wordt deze weergegeven onder het selectievak. U kunt een tag uit deze lijst verwijderen met de x.
@@ -62,7 +62,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
   > Zie [Aan- en uittijden - Configuratie activeren](/help/operations/replication.md#on-and-off-times-trigger-configuration) voor details van hoe te om de verwante automatische replicatie te vormen.
 
   >[!NOTE]
-  >Indien **Op tijd** of **Uit-tijd** is in het verleden, en de automatische replicatie wordt gevormd, dan wordt de relevante actie onmiddellijk teweeggebracht.
+  >Als een van de **Op tijd** of **Uit-tijd** is in het verleden, en de automatische replicatie wordt gevormd, dan wordt de relevante actie onmiddellijk teweeggebracht.
 
    * **Op tijd** - De datum en het tijdstip waarop de gepubliceerde pagina zichtbaar wordt gemaakt (weergegeven) in de publicatieomgeving. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
 
@@ -109,7 +109,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Configuratie**
 
-   * **Overgenomen van &lt;path>** - overname in- en uitschakelen; schakelen tussen beschikbaarheid van **Cloud Configuration** voor selectie
+   * **Overgenomen van &lt;path>** - overerving in-/uitschakelen; schakelt beschikbaarheid van **Cloud Configuration** voor selectie
 
    * **Cloud Configuration** - Het pad naar de geselecteerde configuratie
 
@@ -133,7 +133,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **SEO**
 
-   * **Canonical Url** - kan worden gebruikt om de canonieke URL van de pagina te overschrijven; indien leeg gelaten, is de URL van de pagina de canonieke URL
+   * **Canonical Url** - kan worden gebruikt om de canonieke URL van de pagina te overschrijven; als deze leeg wordt gelaten, is de URL van de pagina de canonieke URL
 
    * **Robots-tags** - selecteer de robots-tags om het gedrag van zoekprogrammacrawlers te bepalen.
 
@@ -147,13 +147,13 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Aanbevolen afbeelding**
 
-  Selecteer en configureer de afbeelding die u wilt weergeven. Dit wordt gebruikt in componenten die naar de pagina verwijzen; bijvoorbeeld stramienen, paginalijsten, enz.
+  Selecteer en configureer de afbeelding die u wilt weergeven. Dit wordt gebruikt in componenten die verwijzen naar de pagina, bijvoorbeeld stramienen, paginalijsten, enzovoort.
 
    * **Afbeelding**
 
      U kunt **Selecteren** een middel, of doorblader voor een dossier om te uploaden, dan **Bewerken**, of **Wissen**.
 
-   * **Alternatieve tekst** - een tekst die wordt gebruikt om de betekenis en/of functie van de afbeelding weer te geven; bijvoorbeeld voor schermlezers.
+   * **Alternatieve tekst** - een tekst die wordt gebruikt om de betekenis en/of functie van de afbeelding weer te geven, bijvoorbeeld voor schermlezers.
 
    * **Overnemen - Uit het DAM-activum overgenomen waarde** - als deze optie wordt ingeschakeld, wordt de alternatieve tekst gevuld met de waarde van de optie `dc:description`metagegevens in DAM
 
@@ -161,7 +161,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
   De paginaminiatuur configureren
 
-   * **Voorvertoning genereren** - Genereer een voorvertoning van de pagina die u als miniatuur wilt gebruiken
+   * **Voorvertoning genereren** - Een voorbeeld van de pagina genereren om als miniatuur te gebruiken
    * **Afbeelding uploaden** - Upload een afbeelding die u als miniatuur wilt gebruiken
    * **Afbeelding selecteren** - Selecteer een bestaand element dat u als miniatuur wilt gebruiken
    * **Vorige versie** - Deze optie wordt beschikbaar nadat u een wijziging in de miniatuur hebt aangebracht. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
@@ -174,10 +174,10 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **ContextHub-configuraties**
 
-   * **Overgenomen van &lt;path>** - overname in- en uitschakelen; schakelen tussen beschikbaarheid van **ContextHub Pathn** en **Segmentpad** voor selectie
+   * **Overgenomen van &lt;path>** - overerving in-/uitschakelen; schakelt beschikbaarheid van **ContextHub Pathn** en **Segmentpad** voor selectie
 
-   * **ContextHub-pad** - Definieer de [ContextHub-configuratie](/help/sites-cloud/authoring/personalization/contexthub.md)
-   * **Segmentpad** - Definieer de [Segmentpad](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+   * **ContextHub-pad** - De [ContextHub-configuratie](/help/sites-cloud/authoring/personalization/contexthub.md)
+   * **Segmentpad** - De [Segmentpad](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
 * **Doelconfiguratie**
 
@@ -192,7 +192,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    * **Machtigingen toevoegen**
    * **Gesloten gebruikersgroep bewerken**
-   * De weergave van **Effectieve machtigingen**
+   * De weergave **Effectieve machtigingen**
 
 ### Blauwdruk {#blueprint}
 
@@ -241,7 +241,7 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) 
 
 * **Installeerbare ervaring configureren**
 
-   * **PWA inschakelen** - de functie in-/uitschakelen; staat gebruikers toe om de plaats als PWA te installeren
+   * **PWA inschakelen** - de functie in-/uitschakelen; gebruikers kunnen de site als een PWA installeren
    * **StartupURL** - de voorkeursopstarthURL
    * **Weergavemodus** - hoe de browser moet worden verborgen of op een andere manier aan de gebruiker moet worden getoond op het lokale apparaat
    * **Schermoriëntatie** - hoe de PWA de oriëntatie van het apparaat zal verwerken
@@ -273,7 +273,7 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) 
 Klikken of tikken **Eigenschappen** om de pagina-eigenschappen te definiëren:
 
 1. Met de **Sites** navigeer naar de locatie van de pagina waarvan u de eigenschappen wilt weergeven en bewerken.
-1. Selecteer **Eigenschappen** optie voor de vereiste pagina met behulp van:
+1. Selecteer de **Eigenschappen** optie voor de vereiste pagina met behulp van:
    * [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * De pagina-eigenschappen worden weergegeven met de juiste tabbladen.
@@ -285,7 +285,7 @@ Klikken of tikken **Eigenschappen** om de pagina-eigenschappen te definiëren:
 Wanneer u een pagina bewerkt, kunt u **Pagina-informatie** om de pagina-eigenschappen te definiëren:
 
 1. Open de pagina waarvan u de eigenschappen wilt bewerken.
-1. Selecteer **Pagina-informatie** pictogram om het selectiemenu te openen:
+1. Selecteer de **Pagina-informatie** pictogram om het selectiemenu te openen:
 1. Selecteer **Eigenschappen openen** en er wordt een dialoogvenster geopend waarin u de eigenschappen kunt bewerken, gesorteerd op het juiste tabblad. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
    * **Annuleren**
    * **Opslaan en sluiten**
@@ -335,7 +335,7 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
       * Als u de paginaselectie tot één pagina reduceert, zijn alle eigenschappen zichtbaar.
    * Algemene eigenschappen met een gemeenschappelijke waarde
       * Alleen eigenschappen met een gemeenschappelijke waarde worden weergegeven in de weergavemodus.
-      * Als het veld meerdere waarden heeft (bijvoorbeeld Codes), worden waarden alleen weergegeven als *alles* vaak voorkomen. Als slechts enkele van deze voorbeelden algemeen zijn, worden deze alleen weergegeven tijdens het bewerken.
+      * Als het veld meerdere waarden heeft (bijvoorbeeld Codes), worden waarden alleen weergegeven als *alles* vaak voorkomen. Als slechts enkele van de algemene voorbeelden worden weergegeven, worden deze alleen weergegeven tijdens het bewerken.
       * Wanneer er geen eigenschappen met een gemeenschappelijke waarde bestaan, wordt een bericht weergegeven.
 
 * **Bewerken**

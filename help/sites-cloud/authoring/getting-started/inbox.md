@@ -1,10 +1,10 @@
 ---
 title: Uw inbox
-description: Taken beheren met de Postvak IN
+description: Leer hoe u de meldingen in uw Postvak IN kunt gebruiken om uw taken te beheren.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '914'
 ht-degree: 15%
 
 ---
@@ -39,7 +39,7 @@ Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoo
 
 >[!NOTE]
 >
->Bepaalde acties worden ook weergegeven in de [kaartweergave van de juiste bron](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
+>Bepaalde acties worden ook weergegeven in het gedeelte [kaartweergave van de juiste bron](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
 ## De Postvak IN openen {#opening-the-inbox}
 
@@ -50,7 +50,7 @@ U opent als volgt het AEM-vak:
 1. Selecteer **Alles bekijken**. De **AEM Inbox** wordt geopend. In de inbox ziet u items uit workflows, projecten en taken.
 1. De standaardweergave is [Lijstweergave](#inbox-list-view), maar u kunt ook schakelen naar [Kalenderweergave](#inbox-calendar-view). Dit gebeurt met de weergavekiezer (werkbalk, rechtsboven).
 
-   Voor beide weergaven kunt u ook definiëren [Instellingen weergeven](#inbox-view-settings). Welke opties beschikbaar zijn, is afhankelijk van de huidige weergave.
+   Voor beide weergaven kunt u ook definiëren [Instellingen weergeven](#inbox-view-settings). De beschikbare opties zijn afhankelijk van de huidige weergave.
 
    ![Inbox-weergave-instellingen](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
 
@@ -174,7 +174,7 @@ In het Postvak IN kunt u taken maken:
 
    * **Geavanceerd**
 
-      * **Naam**: Wordt gebruikt om de URL te vormen en als deze leeg is, is deze gebaseerd op de **Titel**.
+      * **Naam**: Wordt gebruikt om de URL te vormen en als deze leeg is, is deze gebaseerd op de eigenschap **Titel**.
 
    ![Geavanceerde opties voor Inbox Add task](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -188,9 +188,9 @@ Voor bepaalde taken kunt u een [Project](/help/sites-cloud/authoring/projects/ov
 
    >[!NOTE]
    >
-   >Alleen taken die zijn gemaakt met de opdracht **Maken** de **Inbox** kan worden gebruikt om een project tot stand te brengen.
+   >Alleen taken die zijn gemaakt met de **Maken** van de **Inbox** kan worden gebruikt om een project tot stand te brengen.
    >
-   >De punten van het werk (van een werkschema) kunnen niet worden gebruikt om een project tot stand te brengen.
+   >Werkitems (vanuit een workflow) kunnen niet worden gebruikt om een project te maken.
 
 1. Selecteer **Project maken** op de werkbalk om de wizard te openen.
 1. Selecteer de gewenste sjabloon en **Volgende**.
@@ -218,7 +218,7 @@ Voor bepaalde taken kunt u een [Project](/help/sites-cloud/authoring/projects/ov
 
 U kunt de vermelde items filteren:
 
-1. Open de **AEM Postvak IN**.
+1. Open de **AEM Inbox**.
 
 1. Open de filterkiezer:
 

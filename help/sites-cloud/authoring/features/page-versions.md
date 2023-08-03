@@ -1,10 +1,10 @@
 ---
 title: Werken met paginaversies
-description: Versies van een pagina maken, vergelijken en herstellen
+description: Leer hoe u versies van uw pagina's in AEM maakt, vergelijkt en terugzet.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1507'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ U kunt een versie van uw bron maken op basis van:
 
 1. Navigeer naar de pagina waarvoor u een versie wilt maken.
 1. Selecteer de pagina in [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Selecteer **Maken** van de werkbalk.
+1. Selecteer de **Maken** van de werkbalk.
 1. Hetzelfde dialoogvenster wordt geopend. U kunt een **Label** en **Opmerking**, indien nodig.
 1. De nieuwe versie bevestigen met **Maken**.
 
@@ -84,7 +84,7 @@ Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op vers
 >
 >1. Maak versies van een willekeurige pagina.
 >1. De initiële labels en namen van versieknooppunten zijn 1.0, 1.1, 1.2 enzovoort.
->1. De eerste versie opnieuw installeren; dat wil zeggen, 1.0.
+>1. Zet de eerste versie opnieuw in, dat wil zeggen 1.0.
 >1. Maak opnieuw versies.
 >1. De gegenereerde labels en knooppuntnamen zijn nu 1.0.0, 1.0.1, 1.0.2 enzovoort.
 
@@ -201,7 +201,7 @@ Omdat content creation een doorlopend en gezamenlijk proces is, is het doel van 
 Deze functie gebruiken:
 
 * Het systeem zoekt naar de paginaversie die op het geselecteerde tijdstip actief was.
-* Dit betekent dat de weergegeven versie is gemaakt/geactiveerd *voor* het punt in tijd dat in Timewarp wordt geselecteerd.
+* Dit betekent dat de getoonde versie is gemaakt/geactiveerd *voor* het punt in tijd dat in Timewarp wordt geselecteerd.
 * Wanneer u naar een pagina navigeert die is verwijderd, wordt deze ook weergegeven, zolang de oude versies van de pagina nog beschikbaar zijn in de opslagplaats.
 * Als geen gepubliceerde versie wordt gevonden, keert Timewarp aan de huidige staat van de pagina op het auteursmilieu terug (de reden is om een fout/404 pagina te verhinderen, die het doorbladeren zou verhinderen).
 
@@ -221,7 +221,7 @@ Timewaring is een [mode](/help/sites-cloud/authoring/fundamentals/environment-to
 
    ![In de modus Tijdlijn verdraaien](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 
-### Beperkingen voor tijdverdraaiing {#timewarp-limitations}
+### Beperkingen voor tijdwijziging {#timewarp-limitations}
 
 Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de tijd te reproduceren. Vanwege de complexiteit van het voortdurend ontwerpen van inhoud in AEM is deze reproductie echter niet altijd mogelijk. Houd deze beperkingen in mening aangezien u Timewarp gebruikt.
 

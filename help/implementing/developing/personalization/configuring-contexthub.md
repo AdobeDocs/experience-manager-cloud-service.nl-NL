@@ -1,10 +1,10 @@
 ---
 title: ContextHub configureren
-description: Leer hoe te om de Hub van de Context te vormen.
+description: Leer hoe te om de Hub van de Context, een kader te vormen om, contextgegevens op te slaan te manipuleren en voor te stellen.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,12 @@ Om de dienst te vormen kunt u of gebruiken [Webconsole](/help/implementing/deplo
 
 Wanneer het tonen van ContextHub UI, verschijnt het slechts op pagina&#39;s op AEM auteursinstanties. De interface wordt niet weergegeven op pagina&#39;s met publicatie-instanties.
 
-## ContextHub UI-modi en -modules toevoegen {#adding-contexthub-ui-modes-and-modules}
+## ContextHub UI-modi en modules toevoegen {#adding-contexthub-ui-modes-and-modules}
 
 Vorm de wijzen UI en de modules die op de toolbar ContextHub op de wijze van de Voorproef verschijnen:
 
-* UI-modi: Groepen van verwante modules
-* Modules: Widgets die contextgegevens van een opslag blootstellen en auteurs toelaten om de context te manipuleren
+* UI-modi: Groepen gerelateerde modules
+* Modules: widgets die contextgegevens uit een winkel beschikbaar maken en auteurs in staat stellen de context te manipuleren
 
 UI-modi worden als een reeks pictogrammen aan de linkerkant van de werkbalk weergegeven. Wanneer geselecteerd, verschijnen de modules van een wijze UI aan het recht.
 
@@ -52,17 +52,17 @@ Voeg een wijze UI aan groep verwante modules ContextHub toe. Wanneer u de wijze 
 
 1. Geef waarden op voor de volgende eigenschappen:
 
-   * Titel UI-modus: De titel die de UI-modus identificeert
-   * Pictogram modus: De kiezer voor de [Pictogram Koraalinterface](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) bijvoorbeeld `coral-Icon--user`
-   * Ingeschakeld: Selecteer om de wijze UI op de toolbar te tonen ContextHub
+   * UI Mode Title: The title that identify the UI mode
+   * Pictogram Modus: De kiezer voor de [Pictogram Koraalinterface](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) bijvoorbeeld `coral-Icon--user`
+   * Toegelaten: Uitgezocht om de wijze UI op de toolbar te tonen ContextHub
 
-1. Klik op Opslaan of tik op Opslaan.
+1. Klik of tik op Opslaan.
 
-### UI-modules toevoegen {#adding-a-ui-module}
+### Een UI-module toevoegen {#adding-a-ui-module}
 
 Voeg een module ContextHub UI aan een wijze UI toe zodat het in de toolbar ContextHub voor het voorvertonen van paginainhoud verschijnt. Wanneer u een module UI toevoegt, creeert u een geval van een moduletype dat met ContextHub wordt geregistreerd. Om een module UI toe te voegen, moet u de naam van het bijbehorende moduletype kennen.
 
-AEM verstrekt een moduletype van basisUI evenals verscheidene types van steekproefUI Module waarop u een module UI kunt baseren. De volgende tabel bevat een korte beschrijving van elke tabel. Voor informatie over het ontwikkelen van een module van douaneUI, zie [ContextHub UI-modules maken](extending-contexthub.md#creating-contexthub-ui-module-types).
+AEM verstrekt een moduletype van basisUI evenals verscheidene types van steekproefUI Module waarop u een module UI kunt baseren. In de volgende tabel vindt u een korte beschrijving van elke tabel. Voor informatie over het ontwikkelen van een module van douaneUI, zie [ContextHub UI-modules maken](extending-contexthub.md#creating-contexthub-ui-module-types).
 
 De eigenschappen van de module UI omvatten een detailconfiguratie waar u waarden voor module-specifieke eigenschappen kunt verstrekken. U verstrekt de detailconfiguratie in formaat JSON. De kolom van het Type van Module in de lijst verstrekt verbindingen aan informatie over de code JSON die voor elk UI moduletype wordt vereist.
 
@@ -86,12 +86,12 @@ De eigenschappen van de module UI omvatten een detailconfiguratie waar u waarden
 
 1. Geef waarden op voor de volgende eigenschappen:
 
-   * Titel module UI: Een titel die de UI-module identificeert
-   * Moduletype: Het moduletype
-   * Ingeschakeld: Selecteer om de module UI in de toolbar te tonen ContextHub
+   * UI Module Title: Een titel die de UI module identificeert
+   * Moduletype: het moduletype
+   * Toegelaten: Uitgezocht om de module UI in de toolbar te tonen ContextHub
 
 1. (Optioneel) Als u de standaardwinkelconfiguratie wilt overschrijven, voert u een JSON-object in om de UI-module te configureren.
-1. Klik op Opslaan of tik op Opslaan.
+1. Klik of tik op Opslaan.
 
 ## Een ContextHub-winkel maken {#creating-a-contexthub-store}
 
@@ -130,9 +130,9 @@ AEM verstrekt de volgende kandidaten van de steekproefopslag waarop u een opslag
    * **Ingeschakeld:** Selecteren om de winkel in te schakelen
 
 1. (Optioneel) Als u de standaardopslagconfiguratie wilt overschrijven, voert u een JSON-object in het vak Detail Configuration (JSON) in.
-1. Klik op Opslaan of tik op Opslaan.
+1. Klik of tik op Opslaan.
 
-## Voorbeeld: Het gebruiken van de Dienst JSONP  {#example-using-a-jsonp-service}
+## Voorbeeld: een JSONP-service gebruiken  {#example-using-a-jsonp-service}
 
 Dit voorbeeld illustreert hoe te om een opslag te vormen en de gegevens in een module UI te tonen. In dit voorbeeld wordt de MD5-service van de site jsontest.com gebruikt als gegevensbron voor een winkel. De service retourneert de MD5-hash-code van een tekenreeks in JSON-indeling.
 
@@ -181,9 +181,9 @@ Voeg een module UI aan de toolbar ContextHub toe om de gegevens te tonen die in 
 
 ![ContextHub MD5-archief](assets/contexthub-md5-store.png)
 
-Gebruik de procedure in [UI-modules toevoegen](#adding-a-ui-module) om de module UI aan een bestaande Wijze UI, zoals de wijze van de steekproef toe te voegen Persona UI. Voor de Module UI, gebruik de volgende bezitswaarden:
+Gebruik de procedure in [Een UI-module toevoegen](#adding-a-ui-module) om de module UI aan een bestaande Wijze UI, zoals de wijze van de steekproef toe te voegen Persona UI. Voor de Module UI, gebruik de volgende bezitswaarden:
 
-* **Titel module UI:** MD5
+* **UI-moduletitel:** MD5
 * **Moduletype:** contexthub.base
 * **Detailconfiguratie (JSON):**
 
@@ -206,8 +206,8 @@ Een het zuiveren wijze voor ContextHub kan worden toegelaten om voor het oplosse
 Bewerk de configuratie van ContextHub en controleer de optie **Foutopsporing**
 
 1. Klik of tik in de spoorstaaf **Extra > Sites > ContextHub**
-1. Klik of tik de standaard **Configuratiecontainer**
-1. Selecteer **ContextHub-configuratie** en klik of tik **Geselecteerd element bewerken**
+1. Klik of tik de standaard **Configuratie-container**
+1. Selecteer de **ContextHub-configuratie** en klik of tik **Geselecteerd element bewerken**
 1. Klikken of tikken **Foutopsporing** en klik of tik **Opslaan**
 
 ### Via CRXDE {#via-crxde}
@@ -223,8 +223,8 @@ Vorm de Adobe Granite ContextHub OSGi dienst (PID = `com.adobe.granite.contexthu
 
 Om de dienst te vormen kunt u of gebruiken [Webconsole](/help/implementing/deploying/configuring-osgi.md) of gebruik een JCR-knooppunt in de repository:
 
-* Webconsole: Om te registreren zuivert berichten, selecteer het Debug bezit.
-* JCR-knooppunt: Om te registreren zuivert berichten, plaats boolean `com.adobe.granite.contexthub.debug` eigenschap aan `true`.
+* Webconsole: Als u Foutopsporingsberichten wilt registreren, selecteert u de eigenschap Foutopsporing.
+* JCR-knooppunt: als u foutopsporingsberichten wilt registreren, stelt u de Boolean in `com.adobe.granite.contexthub.debug` eigenschap aan `true`.
 
 ### Stille modus {#silent-mode}
 
@@ -244,8 +244,8 @@ ContextHub kan worden onbruikbaar gemaakt om het te verhinderen js/css te laden 
 * Bewerk de configuratie van ContextHub en controleer de optie **ContextHub uitschakelen**
 
    1. Klik of tik in de spoorstaaf **Extra > Sites > ContextHub**
-   1. Klik of tik de standaard **Configuratiecontainer**
-   1. Selecteer **ContextHub-configuratie** en klik of tik **Geselecteerd element bewerken**
+   1. Klik of tik de standaard **Configuratie-container**
+   1. Selecteer de **ContextHub-configuratie** en klik of tik **Geselecteerd element bewerken**
    1. Klikken of tikken **ContextHub uitschakelen** en klik of tik **Opslaan**
 
 of

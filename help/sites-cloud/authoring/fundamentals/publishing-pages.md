@@ -1,10 +1,10 @@
 ---
 title: Pagina's publiceren
-description: Pagina's publiceren en verwijderen met AEM
+description: Leer hoe u uw pagina's op verschillende manieren in AEM publiceert en publiceert.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1807'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ Wanneer u de inhoud in de ontwerpomgeving hebt gemaakt en gecontroleerd, is het 
 
 Dit wordt bedoeld als het publiceren van een pagina. Wanneer u een pagina uit het publicatiemilieu wilt verwijderen wordt bedoeld unpublishing. Wanneer u de pagina publiceert en publiceert, blijft deze beschikbaar in de ontwerpomgeving voor verdere wijzigingen totdat u de pagina verwijdert.
 
-U kunt een pagina direct of op een vooraf gedefinieerde datum/tijd publiceren of verwijderen.
+U kunt een pagina direct of op een vooraf gedefinieerde datum/tijd publiceren of de publicatie ervan ongedaan maken.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Afhankelijk van uw locatie kunt u publiceren:
 
 Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 
-1. Selecteer **Pagina-informatie** het pictogram om het menu te openen en dan **Pagina publiceren** optie.
+1. Selecteer de **Pagina-informatie** het pictogram om het menu te openen en dan **Pagina publiceren** -optie.
 
    ![Pagina&#39;s publiceren via paginaopties](/help/sites-cloud/authoring/assets/publishing-page-options.png)
 
@@ -106,7 +106,7 @@ Een pagina publiceren met Snel publiceren:
 
 1. Bevestig de publicatie in het dialoogvenster Snel publiceren door op **Publiceren** of annuleren door op **Annuleren**. Onthoud dat niet-gepubliceerde verwijzingen automatisch ook worden gepubliceerd.
 
-   ![Snelle publicatiebevestiging](/help/sites-cloud/authoring/assets/publishing-quick-publish.png)
+   ![Snelle publicatie](/help/sites-cloud/authoring/assets/publishing-quick-publish.png)
 
 1. Wanneer de pagina wordt gepubliceerd, wordt een waarschuwing getoond die de publicatie bevestigt.
 
@@ -144,7 +144,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
 1. Klikken **Volgende** om door te gaan.
 
-1. In de volgende stap van de wizard Publicatie beheren: **Toepassingsgebied**, kunt u het bereik van de publicatie/niet-publicatie definiëren, bijvoorbeeld om onderliggende pagina&#39;s op te nemen en/of verwijzingen op te nemen.
+1. In de volgende stap van de wizard Publicatie beheren: **Toepassingsgebied**, kunt u het bereik van de publicatie/niet-publicatie definiëren, bijvoorbeeld om onderliggende pagina&#39;s en/of verwijzingen op te nemen.
 
    ![Publicatiebereik beheren](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
 
@@ -152,7 +152,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    U kunt de knop **Inhoud toevoegen** gebruiken om extra pagina&#39;s toe te voegen aan de lijst met pagina&#39;s die moeten worden gepubliceerd voor het geval u deze niet hebt geselecteerd voordat u de wizard Publicatie beheren start.
 
-   Het selecteren van **Inhoud toevoegen** start de knop [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) om het selecteren van inhoud toe te staan.
+   De **Inhoud toevoegen** start de knop [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) om inhoudselectie toe te staan.
 
    Selecteer de vereiste pagina&#39;s en klik vervolgens op **Selecteren** om de inhoud toe te voegen aan de wizard of **Annuleren** om de selectie te annuleren en terug te keren naar de wizard.
 
@@ -168,7 +168,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![Publicatieopties beheren](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   De **Gepubliceerde verwijzingen** geeft de referenties voor de geselecteerde inhoud weer. Deze zijn standaard allemaal geselecteerd en worden gepubliceerd/niet gepubliceerd, maar u kunt de selectie opheffen zodat ze niet in de handeling worden opgenomen.
+   De **Gepubliceerde verwijzingen** geeft de referenties voor de geselecteerde inhoud weer. Deze zijn standaard allemaal geselecteerd en worden gepubliceerd/niet gepubliceerd, maar u kunt de selectie opheffen om ze uit te schakelen, zodat ze niet worden opgenomen in de handeling.
 
    Klikken **Gereed** om uw wijzigingen op te slaan of **Annuleren** om de selectie te annuleren en terug te keren naar de wizard.
 
@@ -184,7 +184,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    Klikken **Inclusief onderliggende items** Hiermee opent u een dialoogvenster waarin u:
 
-   * **Inclusief kinderen**
+   * **Inclusief onderliggende items**
    * **Alleen directe kinderen opnemen**
    * **Alleen gewijzigde pagina&#39;s opnemen**
    * **Alleen reeds gepubliceerde pagina&#39;s opnemen**
@@ -193,7 +193,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![Publicatie beheren, waaronder kinderen](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
-1. Klikken **Publiceren** om te voltooien.
+1. Klikken **Publiceren** in.
 
    Terug in de plaatsenconsole zal een berichtbericht de publicatie bevestigen.
 
@@ -237,7 +237,7 @@ Net zoals u [de optie Publicatie beheren gebruiken om te publiceren](#manage-pub
 1. Selecteer de pagina of pagina&#39;s in de siteconsole en klik op de knop **Publicatie beheren** knop.
 1. De wizard **Publicatie beheren** wordt gestart. In de eerste stap, bij **Opties**, selecteert u **Publicatie ongedaan maken** in plaats van de standaardoptie **Publiceren**.
 
-   ![Unpublishing - Opties](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
+   ![Publiceren ongedaan maken - opties](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
    Net zoals later met publiceren een workflow wordt gestart om deze versie van de pagina op het opgegeven tijdstip te publiceren, wordt later met deactiveren een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald tijdstip ongedaan te maken.
 
@@ -269,7 +269,7 @@ U kunt de [Publicatie beheren](#manage-publication) optie op de plaatsenconsole 
    * selecteren **Inclusief onderliggende items**
    * deselecteren **Alleen directe kinderen opnemen**
    * deselecteren **Alleen reeds gepubliceerde pagina&#39;s opnemen**
-   * vormen **Alleen gewijzigde pagina&#39;s opnemen** vereist
+   * vormen **Alleen gewijzigde pagina&#39;s opnemen** indien vereist
 
    Deze opties zijn standaard geselecteerd, dus u moet eraan denken om ze te configureren. De selectie bevestigen met **OK** om de inhoud toe te voegen aan de publicatie/niet-publicatie.
 
@@ -277,7 +277,7 @@ U kunt de [Publicatie beheren](#manage-publication) optie op de plaatsenconsole 
 
 1. In de **Publicatie beheren** kunt u de selectie verder aanpassen door extra pagina&#39;s toe te voegen of geselecteerde pagina&#39;s te verwijderen.
 
-   U kunt ook de referenties controleren die via het dialoogvenster **Gepubliceerde verwijzingen** optie.
+   U kunt ook de referenties controleren die via het dialoogvenster **Gepubliceerde verwijzingen** -optie.
 
 1. [Doorgaan met de normale wizard Publicatie beheren](#manage-publication) om de publicatie of niet-publicatie van de boom te voltooien.
 
@@ -285,9 +285,9 @@ U kunt de [Publicatie beheren](#manage-publication) optie op de plaatsenconsole 
 
 U kunt de publicatiestatus van een pagina bepalen:
 
-* In de [resource overview information on the sites console](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+* In de [bron overzichtsinformatie over de plaatsenconsole](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 
-  ![Status van publicatie in de kaartweergave](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
+  ![Publicatiestatus in de kaartweergave](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
   De publicatiestatus wordt weergegeven in [kaart](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)-, [kolom](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)- en [lijstweergaven](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) in de Sites-console.
 

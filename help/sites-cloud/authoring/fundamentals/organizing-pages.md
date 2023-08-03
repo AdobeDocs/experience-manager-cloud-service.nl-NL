@@ -1,10 +1,10 @@
 ---
 title: Pagina's maken en indelen
-description: Pagina's maken en ordenen met AEM
+description: Leer hoe u uw website kunt ordenen door pagina's met AEM te maken en te beheren.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2539'
+source-wordcount: '2544'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ U kunt ook [mappen](#creating-a-new-folder) om uw inhoud beter in te delen.
 
 De structuur van een website kan worden beschouwd als een structuur die uw inhoudspagina&#39;s bevat. De namen van deze inhoudspagina&#39;s worden gebruikt om URLs te vormen, terwijl de titels worden getoond wanneer de paginainhoud wordt bekeken.
 
-In het volgende voorbeeld wordt een voorbeeld getoond van het [WKND-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) site, waar een artikel over skateparks ( `la-skateparks`) is geopend:
+In het volgende voorbeeld wordt getoond [WKND-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) site, waar een artikel over skateparks ( `la-skateparks`) is geopend:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -65,7 +65,7 @@ Vanuit elk punt kunt u de vertakking naar boven zien vanuit de broodkruimels in 
 
 ![Door broodkruimels te navigeren](/help/sites-cloud/authoring/assets/organizing-breadcrumbs.png)
 
-### Naamgevingsconventies voor pagina&#39;s {#page-naming-conventions}
+### Naamgevingsconventies voor pagina {#page-naming-conventions}
 
 Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
 
@@ -102,7 +102,7 @@ De minimaal toegestane tekens zijn:
 * `_` (onderstrepingsteken)
 * `-` (afbreekstreepje/minteken)
 
-Alle tekens die zijn toegestaan, zijn beschikbaar in [de naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md).
+Alle tekens die zijn toegestaan, zijn beschikbaar in [naamconventies](/help/implementing/developing/introduction/naming-conventions.md).
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ Componenten zijn de elementen die worden verschaft door AEM, zodat u specifieke 
 * Carousel
 * En nog veel meer
 
-Nadat u een pagina hebt gemaakt en geopend, kunt u [inhoud toevoegen met de componenten](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), die beschikbaar zijn op [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
+Als u eenmaal een pagina hebt gemaakt en geopend, kunt u [inhoud toevoegen met de componenten](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), die beschikbaar zijn op [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
 >[!TIP]
 >
@@ -203,12 +203,12 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
-      * Als u een pagina opgeeft **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) opgelegd door AEM en JCR.
+      * Als u een pagina **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) opgelegd door AEM en JCR.
       * U **kan geen ongeldige tekens verzenden** in de **Naam** veld. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
 
    >[!TIP]
    >
-   >Zie [Naamgevingsconventies voor pagina&#39;s](#page-naming-conventions).
+   >Zie [Naamgevingsconventies voor pagina](#page-naming-conventions).
 
    De minimale informatie die nodig is om een nieuwe pagina te maken, is de **Titel**.
 
@@ -220,7 +220,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 
    >[!NOTE]
    >
-   >Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `beach` bestaat al `beach1`.
+   >Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `beach` bestaat al, wordt een nieuwe pagina `beach1`.
 
 1. Als u terugkeert naar de console, zult u uw nieuwe pagina zien:
 
@@ -228,7 +228,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 
 >[!CAUTION]
 >
->Nadat een pagina is gemaakt, kan de sjabloon ervan niet worden gewijzigd - tenzij u [een lancering met een nieuw malplaatje creëren](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), hoewel de bestaande inhoud hierdoor verloren gaat.
+>Nadat een pagina is gemaakt, kan de sjabloon ervan niet worden gewijzigd - tenzij u [een lancering met een nieuw malplaatje creëren](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), hoewel de bestaande inhoud hierdoor verloren zal gaan.
 
 ### Een pagina openen voor bewerken {#opening-a-page-for-editing}
 
@@ -236,7 +236,7 @@ Nadat u een pagina hebt gemaakt of naar een bestaande pagina (in de console) heb
 
 1. Open de **Sites** console.
 1. Navigeer totdat u de pagina vindt die u wilt bewerken.
-1. Selecteer de pagina door een van de volgende twee handelingen uit te voeren:
+1. Selecteer de pagina door een van de volgende twee methoden te gebruiken:
 
    * [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
@@ -261,7 +261,7 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
    * [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
 
-   En dan de **Kopiëren** paginapictogram:
+   En dan de **Kopiëren** pagina-pictogram:
 
    ![Kopiëren](/help/sites-cloud/authoring/assets/copy.png)
 
@@ -280,7 +280,7 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
 
 >[!NOTE]
 >
->Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Als `beach` bestaat al `beach` wordt `beach1`.
+>Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Als `beach` bestaat al, een nieuwe pagina met de naam `beach` wordt `beach1`.
 
 >[!NOTE]
 >
@@ -290,7 +290,7 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
 
 De procedure voor het verplaatsen of wijzigen van de naam van een pagina is in feite hetzelfde en beide handelingen worden verwerkt door de wizard Pagina verplaatsen. Met deze wizard kunt u:
 
-* De naam van een pagina wijzigen zonder deze te verplaatsen
+* Naam van pagina wijzigen zonder deze te verplaatsen
 * De pagina verplaatsen zonder de naam ervan te wijzigen
 * Tegelijkertijd verplaatsen en hernoemen
 
@@ -302,7 +302,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
    * [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) en de werkbalk
 
-   Selecteer vervolgens de **Verplaatsen** paginapictogram:
+   Selecteer vervolgens de **Verplaatsen** pagina-pictogram:
 
    ![Knop Verplaatsen](/help/sites-cloud/authoring/assets/move.png)
 
@@ -319,7 +319,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    >[!NOTE]
    >
-   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `beach` bestaat al `beach` wordt `beach1`.
+   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `beach` bestaat al, een nieuwe pagina met de naam `beach` wordt `beach1`.
 
 1. Van de **Doel selecteren** het werkgebied van de wizard dat u kunt instellen:
 
@@ -334,7 +334,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
    >
    >Standaard is het bovenliggende element van de pagina die u verplaatst of waarvan u de naam wijzigt, geselecteerd als het doel.
 
-   ![Doel pagina verplaatsen selecteren](/help/sites-cloud/authoring/assets/move-page-destination.png)
+   ![Doel voor verplaatsen pagina selecteren](/help/sites-cloud/authoring/assets/move-page-destination.png)
 
    >[!NOTE]
    >
@@ -354,7 +354,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 >[!NOTE]
 >
->Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. Standaard wordt de animatie opnieuw gepubliceerd wanneer de verplaatsing is voltooid, maar dit kan veranderen door de controle op de knop **Opnieuw publiceren** in het **Aanpassen/Opnieuw publiceren** stap.
+>Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. Standaard wordt de animatie opnieuw gepubliceerd wanneer de verplaatsing is voltooid, maar dit kan veranderen door de controle op de knop **Opnieuw publiceren** in het veld **Aanpassen/Opnieuw publiceren** stap.
 
 >[!NOTE]
 >
@@ -362,7 +362,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 >[!NOTE]
 >
->De naam van een pagina wijzigen is ook afhankelijk van de instelling [Naamgevingsconventies voor pagina&#39;s](#page-naming-conventions) wanneer u de nieuwe paginanaam opgeeft.
+>De naam van een pagina wijzigen is ook afhankelijk van de instelling [Naamgevingsconventies voor pagina](#page-naming-conventions) wanneer u de nieuwe paginanaam opgeeft.
 
 >[!NOTE]
 >
@@ -424,13 +424,13 @@ U kunt [Een pagina vergrendelen/ontgrendelen](/help/sites-cloud/authoring/fundam
 ![Knop Vergrendelen](/help/sites-cloud/authoring/assets/lock.png)
 ![Knop Ontgrendelen](/help/sites-cloud/authoring/assets/unlock.png)
 
-### Nieuwe map maken {#creating-a-new-folder}
+### Een nieuwe map maken {#creating-a-new-folder}
 
 U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 
 1. Open de **Sites** en navigeer naar de gewenste locatie.
 1. Selecteer **Maken** van de werkbalk
-1. Selecteren **Map** om het dialoogvenster te openen. Hier kunt u de **Naam** en **Titel**:
+1. Selecteren **Map** het dialoogvenster openen. Hier kunt u de **Naam** en **Titel**:
 
    ![Map maken](/help/sites-cloud/authoring/assets/organizing-create-folder.png)
 
@@ -438,7 +438,7 @@ U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 
 >[!NOTE]
 >
->Mappen zijn ook onderworpen aan de [Naamgevingsconventies voor pagina&#39;s](#page-naming-conventions) wanneer u de nieuwe mapnaam opgeeft.
+>Mappen zijn ook onderworpen aan de [Naamgevingsconventies voor pagina](#page-naming-conventions) wanneer u de nieuwe mapnaam opgeeft.
 
 >[!CAUTION]
 >

@@ -1,10 +1,10 @@
 ---
 title: Authoring van concepten
-description: Concepten van ontwerpen in AEM
+description: Leer de concepten ontwerpen in AEM, gebruikend de auteur, voorproef en publicatiemilieu's.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '394'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ In de auteursomgeving, wordt de functionaliteit van AEM ter beschikking gesteld 
 
 ## Auteursomgeving {#author-environment}
 
-De auteur werkt in wat bekend staat als de **auteursomgeving**. Deze omgeving biedt een gebruiksvriendelijke interface (grafische gebruikersinterface (GUI of UI)) voor het maken van de inhoud. De auteur moet zich aanmelden met een account waaraan de juiste toegangsrechten zijn toegewezen.
+De auteur werkt in wat als **auteursomgeving**. Deze omgeving biedt een gebruiksvriendelijke interface (GUI of UI) voor het maken van de inhoud. De auteur moet zich aanmelden met een account waaraan de juiste toegangsrechten zijn toegewezen.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Afhankelijk van hoe uw instantie en uw persoonlijke toegangsrechten worden gevor
 * Nieuwe inhoud genereren of bestaande inhoud op een pagina bewerken
 * Vooraf gedefinieerde sjablonen gebruiken om inhoudspagina&#39;s te maken
 * Uw elementen en verzamelingen maken, bewerken en beheren
-* Inhoudspagina&#39;s en elementen verplaatsen, kopiëren en verwijderen.
+* Inhoud, pagina&#39;s en elementen verplaatsen, kopiëren en verwijderen.
 * Pagina&#39;s en elementen publiceren (of verwijderen).
 
 Bovendien zijn er beheertaken die u helpen uw inhoud te beheren:
