@@ -5,9 +5,9 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b56c90edacbe891afe3fe0add670f75ba46b0064
+source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,9 @@ Om uw AEM Forms-omgeving te verbinden met de reCAPTCHA-service van Google
    1. Selecteer een Container van de Configuratie, die in vorige sectie wordt gecreeerd of wordt bijgewerkt. Tik op **[!UICONTROL Create]**.
    1. Opgeven **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de service reCAPTCHA (verkregen in stap 1). Tik op **[!UICONTROL Create]**.
 
-   ![Configureer de Cloud Service om uw AEM Forms-omgeving te verbinden met de reCAPTCHA-service van Google](/help/forms/assets/captcha-configuration.gif){width="50%"}
+
+   ![Configureer de Cloud Service om uw AEM Forms-omgeving te verbinden met de reCAPTCHA-service van Google](/help/forms/assets/captcha-configuration.gif)
+
 
 
    Zodra de dienst reCAPTCHA wordt gevormd, is het beschikbaar voor gebruik in een AanpassingsVorm. Zie voor meer informatie [Google reCAPTCHA gebruiken in een adaptief formulier](#using-reCAPTCHA).
@@ -62,12 +64,13 @@ ReCAPTCHA gebruiken in Adaptive Forms:
 1. Selecteer een adaptieve Forms en tik op **[!UICONTROL Properties]**. Voor de **[!UICONTROL Configuration Container]** Selecteer de configuratiecontainer die de Cloud Configuration bevat die AEM Forms verbindt met de reCAPTCHA-service van Google en tik **[!UICONTROL Save & Close]**.
 
    Als u niet zulk een Container van de Configuratie hebt, zie sectie [Verbind uw AEM Forms-omgeving met de reCAPTCHA-service van Google](#connect-your-forms-environment-with-recaptcha-service-by-google) om te leren hoe te om zulk een Container van de Configuratie tot stand te brengen.
-   ![Configuratiecontainer selecteren](/help/forms/assets/captcha-properties.png){width="50%"}
+
+   ![Configuratiecontainer selecteren](/help/forms/assets/captcha-properties.png)
 
 1. Selecteer een adaptieve Forms en tik op **[!UICONTROL Edit]**. Het adaptieve formulier wordt geopend in de Adaptive Forms Editor.
 1. Sleep vanuit de componentbrowser de **[!UICONTROL Adaptive Form reCAPTCHA]** naar het adaptieve formulier.
 
-   De Google reCAPTCHA-validatie is tijdgevoelig en verloopt over ongeveer een minuut. Daarom raadt Adobe aan de **[!UICONTROL Adaptive Form reCAPTCHA]** component vlak voor de **[!UICONTROL Submit]** knop.
+   De Google reCAPTCHA-validatie is tijdgevoelig en verloopt over een paar minuten. Daarom raadt Adobe aan de **[!UICONTROL Adaptive Form reCAPTCHA]** component vlak voor de **[!UICONTROL Submit]** knop.
 
 1. Selecteer de **[!UICONTROL Adaptive Form reCAPTCHA]** component en tik op de eigenschappen ![Pictogram Eigenschappen](assets/configure-icon.svg) pictogram. Hiermee wordt het dialoogvenster met eigenschappen geopend. Geef de volgende verplichte eigenschappen op:
    * **[!UICONTROL Name]:** U kunt een formuliercomponent gemakkelijk herkennen met de unieke naam, zowel in het formulier als in de regeleditor, maar de naam mag geen spaties of speciale tekens bevatten.
