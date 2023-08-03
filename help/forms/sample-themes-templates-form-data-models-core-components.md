@@ -7,7 +7,7 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
+source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Voorbeeldthema&#39;s, sjablonen en modellen formuliergegevens in kerncomponenten {#sample-themes-templates-and-data-models}
 
-AEM Forms as a Cloud Service biedt voorbeeldreferentiethema&#39;s, sjablonen en formuliergegevensmodellen waarmee u snel Adaptive Forms with Core Components kunt gaan maken. U kunt [Adaptieve Forms Core-componenten inschakelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) over de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms om voorbeelden te krijgen van OTB-sjablonen en om [voorbeeldthema&#39;s gebruiken en aanpassen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+AEM Forms Core Components biedt voorbeeldreferentiethema&#39;s, sjablonen en formuliergegevensmodellen waarmee u snel kunt beginnen met het maken van Adaptive Forms met Core Components. U kunt [Adaptieve Forms Core-componenten inschakelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) over de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms om voorbeelden te krijgen van OTB-sjablonen en om [voorbeeldthema&#39;s gebruiken en aanpassen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
 
 De voorbeeldthema&#39;s, sjablonen en modellen van formuliergegevens in het pakket met referentie-inhoud zijn:
 
@@ -47,20 +47,20 @@ Met referentiemonsteringsthema&#39;s kunnen auteurs stijlen definiëren en aanpa
 
 Canvas-thema is het standaardthema voor formulieren en benadrukt het gebruik van basiskleuren, transparantie en platte pictogrammen. In de onderstaande schermafbeelding kunt u zien hoe het thema Canvas eruitziet.
 
-![Canvasthema](assets/canvas-theme.png)
+![Canvasthema](assets/Safety-Inspection-Theme-Canvas.png)
 
 ### WKND {#WKND}
 
 Het WKND-thema belichaamt een levendig, verbeeldend en boeiend ontwerp om uw formulieren een stijlvol uiterlijk te geven. Het thema is gebaseerd op de vormgeving en opmaak van [WKND-site](https://wknd.site/us/en.html) de website voor reizen en avontuur is gebaseerd op [Adobe Experience Manager Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
 
-![WKND-thema](assets/WKND-theme.png)
+![WKND-thema](assets/Safety-Inspection-Form-Theme.png)
 
 
 ### Easel {#Easel}
 
 Met het thema Easel kunt u een aantrekkelijk en eenvoudig in te stellen formulier maken dat is aangepast aan de eenvoud en gebruiksvriendelijkheid. Het Easel-thema is gebaseerd op het concept waar een draagbare standaard die kunstenaars gebruiken om een canvas te ondersteunen terwijl ze aan hun schilderijen werken.
 
-![Easel-thema](assets/Easel-theme.png)
+![Easel-thema](assets/Safety-Inspection-Theme-Easel.png)
 
 ## Voorbeeldsjablonen {#Sample-templates}
 
@@ -72,46 +72,19 @@ Sjablonen definiëren de initiële formulierstructuur, inhoud en handelingen die
 
 Met de basissjabloon kunt u snel een formulier voor inschrijvingservaring maken. U kunt het ook gebruiken om functionaliteit voor voorvertoningen van [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction). Het verstrekt een tovenaar lay-out voor sectie-door-sectie presentatie van gegevens.
 
->[!BEGINTABS]
-
->[!TAB Desktop]
-
-![Basissjabloondesktop](assets/Basic-template-desktop-view.png)
-
->[!TAB Telefoon]
-
-![Standaardsjabloontelefoon](assets/Basic-temp-phone-view.png){width:&quot;25%&quot;}
-
->[!TAB Tablet]
-
-![Tablet Standaardsjabloon](assets/Basic-temp-tablet-view.png)
-
->[!ENDTABS]
-
+![Standaardsjabloon](assets/Basic-template-desktop-view.png)
 
 ### Leeg {#Blank}
 
 Een lege canvassjabloon wordt gebruikt om een adaptieve formulierstructuur, inhoud en helemaal nieuwe regels te maken. Er zijn geen formuliercomponenten vooraf opgenomen in de lege sjabloon.
 
->[!BEGINTABS]
-
->[!TAB Desktop]
-
-![Lege sjabloondesktop](assets/Blank-temp-desktop-view.png)
-
->[!TAB Telefoon]
-
-![Standaardsjabloontelefoon](assets/Blank-temp-phone-view.png){width:&quot;25%&quot;}
-
->[!TAB Tablet]
-
-![Tablet Standaardsjabloon](assets/Blank-temp-tablet-view.png)
-
->[!ENDTABS]
+![Lege sjabloon](assets/Blank-temp-desktop-view.png)
 
 ### Contact opnemen {#Contact-Us}
 
 Met de formuliersjabloon Contact opnemen wordt een formulier gemaakt waarmee bezoekers en beheerders van websites gemakkelijker kunnen communiceren. Gebruikers kunnen via het formulier query&#39;s, feedback of ondersteuningsverzoeken verzenden.
+
+![Contactpersonensjabloon](assets/Contact-us-desktop-view.png)
 
 ### Update contactgegevens {#Contact-Details-Update}
 
@@ -123,21 +96,34 @@ Auteurs van de updatesjabloon voor contactgegevens kunnen een formulier maken vo
 
 Met een formuliersjabloon voor instemming wordt een formulier gemaakt voor de aanschaf van een juridisch document van deelnemers die deelnemen aan een specifieke activiteit, een onderzoeksstudie, een medische procedure of een situatie waarin hun persoonlijke informatie of rechten in het geding kunnen komen. Het formulier zorgt voor transparantie, beschermt de rechten van de deelnemer en geeft een duidelijk inzicht in wat het individu ermee instemt.
 
+![Goedkeuringsformulier](assets/Consent-form-desktop-view.png)
+
 ### Aanvraag voor logservice {#Log-Service-Request}
 
 Het malplaatje van het de dienstverzoek van het logboek helpt om een vorm tot stand te brengen die verzoek-specifieke registrerendiensten van een dienstverlener. Het formulier fungeert als een formeel verzoek om een ticket te maken. Er zijn bepaalde gebeurtenissen, activiteiten of gegevens geregistreerd voor de controle of het bijhouden van de status.
+
+![Log Service Request Template](assets/Log-service-request-desktop-view.png)
+
 
 ### Feedback geven {#Give-Feedback}
 
 Met een feedbackformuliersjabloon kunt u een formulier samenstellen om een andere persoon of een ander team constructieve feedback te geven. Het formulier helpt ervoor te zorgen dat feedback duidelijk, specifiek en handelbaar is en open communicatie en verbetering bevordert.
 
+![Feedbacksjabloon geven](assets/Give-feedback-desktop-view.png)
+
+
 ### Inschrijving voordelen {#Benefits-Enrollment}
 
 Het inschrijvingsformuliersjabloon wordt gebruikt om een formulier te maken voor het verzamelen van essentiële informatie van hun werknemers over hun voorkeursvoordelen en dekkingsopties. Het gaat doorgaans vergezeld van de jaarlijkse periode waarin uitkeringen worden ingeschreven.
 
+![Voordelen van inschrijfsjabloon](assets/Benefits-enrollment-form-template.png)
+
+
 ### Overzicht personeelsbeloningen {#Employee-Benefits-Summary}
 
 Samenvattingsformuliersjabloon voor personeelsbeloningen wordt gebruikt om een formulier te maken voor het verzamelen van essentiële details over de prestaties van een individu. Het helpt om dekking snel en nauwkeurig te evalueren, die een uitvoerig overzicht voor efficiënte hulp en steun verstrekken.
+![Overzicht personeelsbeloningen](assets/Employee-benefits-summary.png)
+
 
 ### Verzoek om accountverklaring {#Request-for-Account-Statement}
 
@@ -149,15 +135,20 @@ Met de sjabloon Aanvragen voor accountinstructies kunt u een formulier maken dat
 
 Met het sjabloon van het formulier voor veiligheidscontroles kunt u een formulier maken om gegevens in te voeren voor een veilige werkomgeving. Door regelmatige inspecties uit te voeren met behulp van dit formulier kunnen mogelijke gevaren worden geïdentificeerd. Het formulier heeft betrekking op diverse aspecten, zoals nooduitgangen, brandveiligheid, elektrische veiligheid, gevaarlijke materialen, persoonlijke beschermingsmiddelen, ergonomie van het werkstation voor de veiligheid en het welzijn van werknemers, bezoekers en klanten.
 
+![Veiligheidscontroleformulier](assets/Safety-inspection-form.png)
+
 ### Kwaliteitscontrole {#Quality-Control-Inspection}
 
 Met het voorbeeldformulier voor kwaliteitscontrole kunt u een formulier maken voor het beoordelen en documenteren van de visuele weergave, afmetingen, functionaliteit, documentatie, testresultaten en algemene kwaliteit van een product of item. Het helpt gebreken, afwijkingen, en correctieve acties identificeren noodzakelijk om naleving van kwaliteitsnormen te verzekeren.
+
+![Kwaliteitscontrole](assets/Quality-Control-Inspection.png)
+
 
 ### Aankoopaanvraag {#Purchase-Request}
 
 Met een formulier voor inkoopaanvragen kunt u een formulier maken waarmee het aanbestedingsproces kan worden geïnitieerd en werknemers de mogelijkheid krijgen formeel de aankoop van goederen of diensten aan te vragen die nodig zijn voor hun werk. In het formulier worden essentiële gegevens opgenomen, zoals de beschrijving van de artikelen, de hoeveelheid, de leverancier van de voorkeursleverancier (indien van toepassing), de toewijzing van het budget, de rechtvaardiging voor de aankoop, de leveringsinformatie en de vereiste goedkeuringen.
 
-![koopaanvraag](assets/purchase-request.gif)
+![purchase-request-form](assets/Purchase-request-form.png)
 
 ## Referentieformuliergegevensmodellen {#reference-models}
 
