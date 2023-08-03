@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
+source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Om uw AEM Forms-omgeving te verbinden met de reCAPTCHA-service van Google
 
 1. Verkrijgen [reCAPTCHA API-sleutelpaar](https://www.google.com/recaptcha/admin) uit Google. Het omvat een **site-sleutel** en **geheime sleutel**.
 
-   ![Google reCAPTCHA-configuratie van Google-website maken voor reCAPTCHA-sleutels](/help/forms/assets/google-captcha.gif){width="50%"}
+   ![Google reCAPTCHA-configuratie van Google-website maken voor reCAPTCHA-sleutels](/help/forms/assets/google-captcha.gif)
 1. Maak een configuratiecontainer op uw as a Cloud Service AEM Forms-omgeving. Een configuratiecontainer bevat Cloud Configurations die worden gebruikt om AEM te verbinden met externe services. Om een Container van de Configuratie te creëren en te vormen om uw milieu van AEM Forms met de dienst van reCAPTCHA aan te sluiten door Google:
    1. Open uw as a Cloud Service AEM Forms-exemplaar.
    1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]**. In Browser van de Configuratie, kunt u:
