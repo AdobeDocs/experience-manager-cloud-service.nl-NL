@@ -1,12 +1,12 @@
 ---
 title: CDN in AEM as a Cloud Service
-description: CDN in AEM as a Cloud Service
+description: Leer hoe te om AEM-geleide CDN te gebruiken en hoe te om uw eigen CDN aan AEM-beheerde CDN te richten.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 10%
+source-wordcount: '1033'
+ht-degree: 9%
 
 ---
 
@@ -40,7 +40,7 @@ Zie [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/
 >
 >Slechts worden de verzoeken van toegestane IPs gediend door AEM beheerde CDN. Als u uw eigen CDN aan AEM-beheerde CDN richt, dan zorg ervoor IPs van uw CDN in de lijst van gewenste personen inbegrepen is.
 
-## CDN van de klant wijst aan AEM-Beheerde CDN {#point-to-point-CDN}
+## CDN van de klant wijst aan AEM beheerde CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -63,7 +63,7 @@ Configuratieinstructies:
 1. Stel de `X-Forwarded-Host` header met de domeinnaam zodat AEM de hostheader kan bepalen. Bijvoorbeeld: `X-Forwarded-Host:example.com`.
 1. Set `X-AEM-Edge-Key`. De waarde moet van Adobe komen.
 
-   * Nodig zodat Adobe CDN de bron van de verzoeken kan bevestigen en overgaan `X-Forwarded-*` kopteksten naar de AEM toepassing. Bijvoorbeeld:`X-Forwarded-For` wordt gebruikt om cliëntIP te bepalen. Zo, wordt het de verantwoordelijkheid van de vertrouwde op bezoeker (namelijk klant-beheerde CDN) om de juistheid van te verzekeren `X-Forwarded-*` kopteksten (zie onderstaande opmerking).
+   * Nodig zodat Adobe CDN de bron van de verzoeken kan bevestigen en overgaan `X-Forwarded-*` kopteksten naar de AEM toepassing. Bijvoorbeeld:`X-Forwarded-For` wordt gebruikt om cliëntIP te bepalen. Zo, wordt het de verantwoordelijkheid van de vertrouwde op bezoeker (namelijk klant-beheerde CDN) om de juistheid van te verzekeren `X-Forwarded-*` kopteksten (zie de opmerking hieronder).
    * De toegang tot de ingangen van Adobe CDN kan optioneel worden geblokkeerd wanneer een `X-AEM-Edge-Key` is niet aanwezig. Informeer Adobe als u directe toegang tot de ingangen van Adobe CDN nodig hebt (te blokkeren).
 
 Zie de [Voorbeeld van CDN-leveranciersconfiguraties](#sample-configurations) sectie voor configuratievoorbeelden van belangrijke verkopers CDN.
@@ -138,9 +138,9 @@ De waarden voor de continentale codes zijn:
 * AF Afrika
 * AN Antarctica
 * AS Azië
-* EU-Europa
-* NA Noord-Amerika
+* EU Europa
+* NA North America
 * OC Oceanië
-* SA Zuid-Amerika
+* SA South America
 
 Deze informatie kan nuttig zijn in gevallen zoals omleiding naar een andere URL op basis van de oorsprong (land) van het verzoek. Gebruik de header Variëren voor het in cache plaatsen van reacties die afhankelijk zijn van geo-informatie. Omleiding naar een specifieke landingspagina moet bijvoorbeeld altijd het volgende bevatten: `Vary: x-aem-client-country`. Indien nodig kunt u `Cache-Control: private` om caching te voorkomen. Zie ook [Caching](/help/implementing/dispatcher/caching.md#html-text).

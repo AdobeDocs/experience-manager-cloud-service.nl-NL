@@ -1,11 +1,11 @@
 ---
 title: Dispatcher in de cloud
-description: Dispatcher in de cloud
+description: Leer meer over de Dispatcher-gereedschappen, de ondersteunde Apache-modules en de verouderde en flexibele modi.
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ De Dispatcher Tools maken deel uit van de algemene AEM as a Cloud Service SDK en
 
 ## De gereedschappen downloaden en uitpakken {#extracting-the-sdk}
 
-De Dispatcher-gereedschappen maken deel uit van de [as a Cloud Service SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), kan worden gedownload van een ZIP-bestand op het [Softwaredistributie](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portaal. Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools kan worden gebruikt om te worden geïmplementeerd in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
+De Dispatcher-gereedschappen maken deel uit van de [AS A CLOUD SERVICE SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), kan worden gedownload van een ZIP-bestand op het tabblad [Softwaredistributie](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portaal. Elke nieuwe configuratie die beschikbaar is in die nieuwe versie van Dispatcher Tools kan worden gebruikt om te worden geïmplementeerd in Cloud-omgevingen waarop die versie van AEM in de cloud of hoger wordt uitgevoerd.
 
 Pak de SDK uit, die Dispatcher Tools voor macOS, Linux® en Windows bundelt.
 
@@ -50,9 +50,9 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 De hulpmiddelen van de Verzender worden gebruikt om de configuratie van de Verzender van uw project te bevestigen en te zuiveren. Leer meer over hoe te om die hulpmiddelen in de pagina&#39;s te gebruiken die hieronder worden vermeld, op basis van of de configuratie van de Ontvanger van uw project op flexibele wijze of erfeniswijze gestructureerd is:
 
-* **Flexibele modus** - de aanbevolen modus en de standaardinstelling voor [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) en hoger, die ook wordt gebruikt door Cloud Manager voor nieuwe omgevingen die zijn gemaakt na de release van Cloud Manager 2021.7.0. Klanten kunnen deze modus activeren door de map en het bestand toe te voegen `opt-in/USE_SOURCES_DIRECTLY`. Door deze flexibelere modus te gebruiken, zijn er geen beperkingen in de bestandsstructuur onder de map rewrites waarvoor in de oude modus slechts één bestand nodig was `rewrite.rules` bestand. Bovendien is er geen beperking op het aantal regels dat u kunt toevoegen. Zie voor meer informatie over de mapstructuur en lokale validatie [Validatie en foutopsporing met Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md).
+* **Flexibele modus** - de aanbevolen modus en de standaardwaarde voor [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) en hoger, die ook wordt gebruikt door Cloud Manager voor nieuwe omgevingen die zijn gemaakt na de release van Cloud Manager 2021.7.0. Klanten kunnen deze modus activeren door map en bestand toe te voegen `opt-in/USE_SOURCES_DIRECTLY`. Door deze flexibelere modus te gebruiken, zijn er geen beperkingen in de bestandsstructuur onder de map rewrites waarvoor in de oude modus slechts één bestand nodig was `rewrite.rules` bestand. Bovendien is er geen beperking op het aantal regels dat u kunt toevoegen. Zie voor meer informatie over de mapstructuur en lokale validatie [Validatie en foutopsporing met Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md).
 
-* **Oudere modus** - voor meer informatie over de mapstructuur en lokale validatie voor de verouderde modus van de Dispatcher-configuratie raadpleegt u [Validatie en foutopsporing met Dispatcher Tools (verouderd)](/help/implementing/dispatcher/validation-debug-legacy.md)
+* **Oudere modus** - voor details over de omslagstructuur en lokale bevestiging voor de verouderde wijze van de configuratie van de Dispatcher zie [Validatie en foutopsporing met Dispatcher Tools (verouderd)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 Voor meer informatie over hoe te van het model van de erfenisconfiguratie aan flexibelere te migreren, die van AEM archetype 28 wordt voorzien, zie [deze documentatie](/help/implementing/dispatcher/validation-debug.md#migrating).
 
@@ -123,4 +123,4 @@ De mapstructuur Apache en Dispatcher van het project verschillen enigszins afhan
 
 ## De Dispatcher-configuratie migreren van AMS {#ams-aem}
 
-Voor meer informatie over hoe u de configuratie Dispatcher van AMS naar AEM as a Cloud Service kunt migreren, raadpleegt u de [De Dispatcher-configuratie migreren van AMS naar AEM](/help/implementing/dispatcher/ams-aem.md) as a Cloud Service pagina.
+Zie voor meer informatie over hoe u de configuratie Dispatcher van AMS naar AEM as a Cloud Service kunt migreren de [De Dispatcher-configuratie migreren van AMS naar AEM](/help/implementing/dispatcher/ams-aem.md) as a Cloud Service pagina.

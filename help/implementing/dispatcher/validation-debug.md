@@ -1,11 +1,11 @@
 ---
 title: Validatie en foutopsporing met Dispatcher Tools
-description: Validatie en foutopsporing met Dispatcher Tools
+description: Leer meer over lokale validatie, foutopsporing, de bestandsstructuur in de flexibele modus en hoe u van de oude modus naar de flexibele modus kunt migreren.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
-source-wordcount: '2847'
+source-wordcount: '2861'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 ## Inleiding {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Raadpleeg voor meer informatie over Dispatcher in de cloud en over het downloaden van Dispatcher Tools de [Dispatcher in de cloud](/help/implementing/dispatcher/disp-overview.md) pagina. Als uw configuratie van de Verzender op erfeniswijze is, zie [documentatie over oudere modus](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Raadpleeg voor meer informatie over Dispatcher in de cloud en over het downloaden van Dispatcher Tools de [Dispatcher in de cloud](/help/implementing/dispatcher/disp-overview.md) pagina. Als uw configuratie van de Verzender op erfeniswijze is, zie [documentatie van de oudere modus](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 In de volgende secties wordt de structuur van het bestand in de flexibele modus beschreven, evenals lokale validatie, foutopsporing en migratie van de oude modus naar de flexibele modus.
 
-Dit artikel veronderstelt dat de configuratie van de Verzender van uw project het dossier omvat `opt-in/USE_SOURCES_DIRECTLY`. Dit bestand zorgt ervoor dat de SDK en de runtime de configuratie op een betere manier valideren en implementeren dan in de verouderde modus, waarbij beperkingen rond het aantal en de grootte van bestanden worden verwijderd.
+In dit artikel wordt ervan uitgegaan dat de configuratie Dispatcher van uw project het bestand bevat `opt-in/USE_SOURCES_DIRECTLY`. Dit bestand zorgt ervoor dat de SDK en de runtime de configuratie op een betere manier valideren en implementeren dan in de verouderde modus, waarbij beperkingen rond het aantal en de grootte van bestanden worden verwijderd.
 
 Als het eerder vermelde bestand niet is opgenomen in de configuratie van de Dispatcher, raadt Adobe u aan om over te schakelen van de oude modus naar de flexibele modus, zoals beschreven in het dialoogvenster [Migreren van oude modus naar flexibele modus](#migrating) sectie.
 
@@ -125,7 +125,7 @@ U kunt één of meerdere van deze dossiers hebben, en zij bevatten landbouwbedri
 
 * `conf.dispatcher.d/cache/rules.any`
 
-Het bestand wordt vanuit uw `.farm` bestanden. Hiermee geeft u voorkeuren voor caching op.
+Het bestand wordt vanuit uw `.farm` bestanden. Hiermee geeft u voorkeuren voor het in cache plaatsen op.
 
 * `conf.dispatcher.d/clientheaders/clientheaders.any`
 
@@ -249,7 +249,7 @@ Phase 3 finished
 Het script heeft de volgende drie fasen:
 
 1. De validator wordt uitgevoerd. Als de configuratie ongeldig is, ontbreekt het manuscript.
-2. Het voert het `httpd -t` om te testen of de syntaxis correct is, zodat Apache httpd kan starten. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
+2. Het voert het `httpd -t` gebruiken om te testen of de syntaxis correct is, zodat Apache httpd kan starten. Indien succesvol, zou de configuratie voor plaatsing klaar moeten zijn.
 3. Controleert of de subset van de Dispatcher SDK-configuratiebestanden, die zijn bedoeld om onveranderbaar te zijn zoals beschreven in het dialoogvenster [Sectie Bestandsstructuur](##flexible-mode-file-structure), is niet gewijzigd en komt overeen met de huidige SDK-versie.
 
 Tijdens een implementatie van Cloud Manager kunt u de `httpd -t` syntaxiscontrole wordt ook uitgevoerd en eventuele fouten worden opgenomen in Cloud Manager `Build Images step failure` log.
@@ -318,10 +318,10 @@ Behalve de zes secties die in de bovenstaande paragrafen worden vermeld, bent u 
 }
 ```
 
-**Toegestane clients/renders worden niet opgenomen in: ...**
+**Toegestane clients/renders worden niet opgenomen vanaf: ...**
 
 Deze fout wordt gegenereerd wanneer u geen include-bestand opgeeft voor `/renders` en `/allowedClients` in de `/cache` sectie. Zie de
-**Ingesloten bestand (...) moet een naam hebben: ...** voor meer informatie.
+**Het opgenomen bestand (...) moet een naam hebben: ...** voor meer informatie.
 
 **Filter mag geen globpatroon gebruiken om verzoeken toe te staan**
 
@@ -337,7 +337,7 @@ Deze verklaring moet verzoeken om `css` bestanden, maar ook verzoeken om **alle*
 
 **Het opgenomen bestand (...) komt niet overeen met een bekend bestand**
 
-Standaard kunnen twee typen bestanden in uw virtuele Apache-hostconfiguratie worden opgegeven als: herschrijft en variabelen.
+Standaard kunnen twee typen bestanden in uw virtuele Apache-hostconfiguratie worden opgegeven als include-bestanden: herschreven en variabelen.
 
 | Type | Bestandsnaam opnemen |
 |-----------|---------------------------------|
@@ -404,7 +404,7 @@ Tijdens een implementatie van Cloud Manager kunt u de `httpd -t` syntaxiscontrol
 
 ### Fase 3 {#third-phase}
 
-Als er in deze fase een fout optreedt, betekent dit dat Adobe een of meer onveranderlijke bestanden heeft gewijzigd. In dat geval moet u de overeenkomstige onveranderlijke bestanden vervangen door de nieuwe versie die in het dialoogvenster `src` directory van de SDK. In het onderstaande logboekvoorbeeld ziet u dit probleem:
+Als er in deze fase een fout optreedt, betekent dit dat Adobe een of meer onveranderlijke bestanden heeft gewijzigd. In dat geval moet u de overeenkomstige onveranderlijke bestanden vervangen door de nieuwe versie die in het dialoogvenster `src` directory van de SDK. In het onderstaande logboekvoorbeeld wordt dit probleem geïllustreerd:
 
 ```
 Phase 3: Immutability check
@@ -566,7 +566,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migreren van oude modus naar flexibele modus {#migrating}
 
-Met de release van Cloud Manager 2021.7.0 genereren nieuwe programma&#39;s van Cloud Manager gemaven projectstructuren met [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) of hoger, dat het bestand bevat **opt-in/USE_SOURCES_DIRECTLY**. Eerdere beperkingen van de [verouderde modus](/help/implementing/dispatcher/validation-debug-legacy.md) rond het aantal en de grootte van dossiers, die ook SDK en runtime ertoe brengen om de configuratie op een betere manier te bevestigen en op te stellen. Als dit bestand niet beschikbaar is in de configuratie Dispatcher, wordt u ten zeerste aangeraden te migreren. Gebruik de volgende stappen om een veilige overgang te garanderen:
+Met de release van Cloud Manager 2021.7.0 genereren nieuwe programma&#39;s van Cloud Manager gemaven projectstructuren met [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) of hoger, dat het bestand bevat **opt-in/USE_SOURCES_DIRECTLY**. Eerdere beperkingen van de [oude modus](/help/implementing/dispatcher/validation-debug-legacy.md) rond het aantal en de grootte van dossiers, die ook SDK en runtime ertoe brengen om de configuratie op een betere manier te bevestigen en op te stellen. Als dit bestand niet beschikbaar is in de configuratie Dispatcher, wordt u ten zeerste aangeraden te migreren. Gebruik de volgende stappen om een veilige overgang te garanderen:
 
 1. **Lokaal testen.** Voeg de map en het bestand toe met de meest recente SDK voor Dispatcher-gereedschappen `opt-in/USE_SOURCES_DIRECTLY`. Volg de instructies voor lokale validatie in dit artikel, zodat u kunt testen of de Dispatcher lokaal werkt.
 1. **Testen voor ontwikkeling van cloud:**
