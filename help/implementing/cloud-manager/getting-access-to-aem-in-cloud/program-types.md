@@ -2,9 +2,9 @@
 title: Programma's en programmatypen
 description: Leer meer over de hiërarchie van Cloud Manager en hoe de verschillende typen programma's in de structuur passen en hoe ze verschillen.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Programma&#39;s en programmatypen {#understanding-programs}
 
-Cloud Manager is opgebouwd rond een hiërarchie van entiteiten. De details hiervan zijn niet van essentieel belang voor uw dagelijkse werk in Cloud Manager, maar een overzicht hiervan helpt u bij het begrijpen van programma&#39;s en het opzetten van uw eigen programma&#39;s.
+Cloud Manager is opgebouwd rond een hiërarchie van entiteiten. De details hiervan zijn niet van essentieel belang voor uw dagelijkse werk in Cloud Manager, maar een overzicht hiervan helpt u bij het begrijpen van programma&#39;s en het opzetten van uw eigen programma.
 
 ![Hiërarchie van Cloud Manager](assets/program-types1.png)
 
@@ -26,7 +26,7 @@ Cloud Manager is opgebouwd rond een hiërarchie van entiteiten. De details hierv
 Een voorbeeld is vaak handig bij het contextualiseren van deze hiërarchie.
 
 * WKND Travel and Adventure Enterprises zou een **huurder** die zich richt op reisgerelateerde media.
-* De huurder van WKND Reizen en Adventure Enterprises zou twee kunnen hebben **programma&#39;s**: Eén Sites-programma voor WKND Magazine en één Assets-programma voor WKND Media.
+* De huurder van WKND Reizen en Adventure Enterprises zou twee kunnen hebben **programma&#39;s**: één Sites-programma voor WKND Magazine en één Assets-programma voor WKND Media.
 * De programma&#39;s WKND Magazine en WKND Media zouden zowel dev, stadium, als productie hebben **omgevingen**.
 
 ## Broncodeopslagplaats {#source-code-repository}
