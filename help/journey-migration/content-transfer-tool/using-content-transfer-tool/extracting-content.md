@@ -1,11 +1,11 @@
 ---
 title: Inhoud uit bron extraheren
-description: Inhoud uit bron extraheren
+description: Leer hoe u inhoud kunt extraheren uit een bron AEM instantie om deze later over te brengen naar een Cloud Service AEM instantie.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 21%
+source-wordcount: '718'
+ht-degree: 20%
 
 ---
 
@@ -45,7 +45,7 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png)
 
-   U kunt op **Voortgang van weergave** voor een korrelig beeld van de lopende extractie.
+   U kunt klikken op **Voortgang van weergave** om een korrelig beeld van de lopende extractie te krijgen.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 

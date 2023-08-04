@@ -1,10 +1,10 @@
 ---
 title: Indexconversie
-description: Indexconversie
+description: Leer hoe u uw indexdefinities kunt migreren ter voorbereiding op de overgang naar AEM as a Cloud Service.
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -34,10 +34,10 @@ Indien [Oak-index controleren](https://adobe-consulting-services.github.io/acs-a
 
 ## De indexconverter gebruiken {#using-index-converter}
 
-* Als Adobe I/O CLI : U wordt aangeraden de indexconverter te gebruiken als `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor de Adobe I/O CLI).
+* Als Adobe I/O CLI: het wordt aanbevolen de Indexconverter te gebruiken als `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor de Adobe I/O CLI).
 
-  Zie **[Git-bron: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** voor informatie over het installeren en gebruiken van de plug-in.
+  Zie **[Git-bron: audio-cli-plugin-aem-cloud-service-migratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** voor informatie over het installeren en gebruiken van de plug-in.
 
-* Als zelfstandig hulpprogramma: De omzetter van de Index kan ook als standalone nut worden uitgevoerd.
+* Als standalone nut: De Convertor van de Index kan ook als standalone nut worden uitgevoerd.
 
-  Zie **[Git-bron: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** voor meer informatie over het gebruik van dit gereedschap.
+  Zie **[Git Resource: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** voor meer informatie over het gebruik van dit gereedschap.

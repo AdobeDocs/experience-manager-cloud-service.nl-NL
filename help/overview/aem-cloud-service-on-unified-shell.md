@@ -1,10 +1,10 @@
 ---
 title: AEM as a Cloud Service op Verenigde Shell
-description: AEM as a Cloud Service op Verenigde Shell
+description: Leer over de voordelen van AEM as a Cloud Service op Verenigde Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '399'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Klik op het profielpictogram om het donkere thema te wijzigen. Deze actie toont 
 
 ## Identificatie van de AEM as a Cloud Service omgeving {#identify-aemaacs-environment}
 
-AEM as a Cloud Service biedt drie typen omgevingen: Productie, werkgebied en ontwikkeling. Zie [Omgevingstypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) voor meer informatie . Met deze integratie met Verenigde Shell, wordt het type van milieu dat de gebruiker op de dienst van de Auteur wordt geregistreerd getoond op top-header via een etiket zoals hieronder getoond.
+AEM as a Cloud Service biedt drie typen omgevingen: productie, werkgebied en ontwikkeling. Zie [Omgevingstypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) voor meer informatie . Met deze integratie met Verenigde Shell, wordt het type van milieu dat de gebruiker op de dienst van de Auteur wordt geregistreerd getoond op top-header via een etiket zoals hieronder getoond.
 
 ![afbeelding](/help/overview/assets/unifiedshell_header_label.png)
 

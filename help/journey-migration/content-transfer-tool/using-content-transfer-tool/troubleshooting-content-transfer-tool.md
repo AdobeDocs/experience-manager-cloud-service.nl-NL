@@ -1,11 +1,11 @@
 ---
 title: Problemen met het gereedschap Inhoud overbrengen oplossen
-description: Problemen met het gereedschap Inhoud overbrengen oplossen
+description: Leer hoe u problemen kunt oplossen met het gereedschap Inhoud overbrengen
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 89%
+source-wordcount: '183'
+ht-degree: 87%
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: Repository Modernizer
-description: Repository Modernizer
+description: Leer hoe u bestaande projectpakketten kunt herstructureren en compatibel kunt maken met de projectstructuur die is gedefinieerd voor Adobe Experience Manager as a Cloud Service.
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Met Repository Modernizer wordt een compatibele AEM Cloud Service-projectstructu
 
 * `ui.apps` pakket implementeert naar `/apps` en bevat alle code
 
-* `ui.content` pakketten worden geïmplementeerd in runtime schrijfbare gebieden (bijvoorbeeld `/content`, `/conf`, `/home`of iets anders `/apps`) en bevat alle inhoud en configuratie.
+* `ui.content` pakketten worden geïmplementeerd in runtime-schrijfbare gebieden (bijvoorbeeld `/content`, `/conf`, `/home`of iets anders `/apps`) en bevat alle inhoud en configuratie.
 
 * `all` pakket is een containerpakket dat de subpakketten bevat `ui.apps` en `ui.content`.
 
@@ -32,13 +32,13 @@ Met Repository Modernizer wordt een compatibele AEM Cloud Service-projectstructu
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Als Adobe I/O CLI : Het wordt aanbevolen de Repository Modernizer te gebruiken via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor de Adobe I/O CLI).
+* Als Adobe I/O CLI: het wordt aanbevolen de Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor de Adobe I/O CLI).
 
-  Zie **[Git-bron: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** zodat u leert installeren en gebruiken de stop.
+  Zie **[Git-bron: audio-cli-plugin-aem-cloud-service-migratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** zodat u leert installeren en gebruiken de stop.
 
-* Als zelfstandig hulpprogramma: De Repository Modernizer kan ook als standalone nut worden uitgevoerd.
+* Als standalone nut: De Modernizer van de Bewaarplaats kan ook als standalone nut worden uitgevoerd.
 
-  Zie **[Git-bron: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** zodat u kunt leren hoe u dit gereedschap kunt gebruiken.
+  Zie **[Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** zodat u kunt leren hoe u dit gereedschap kunt gebruiken.
 
   >[!NOTE]
   >

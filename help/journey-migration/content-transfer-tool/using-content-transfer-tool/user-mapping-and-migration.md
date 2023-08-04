@@ -1,10 +1,10 @@
 ---
 title: Toewijzing van gebruikers en belangrijkste migratie
-description: Overzicht van de toewijzing van gebruikers en de belangrijkste migratie
+description: Overzicht van gebruikerstoewijzing en belangrijkste migratie in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '837'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 >abstract="Met het gereedschap Inhoud overbrengen kunt u gebruikers en groepen verplaatsen van uw bestaande Adobe Experience Manager-systeem (AEM) naar AEM as a Cloud Service. Bestaande gebruikers moeten worden toegewezen aan hun IMS-id&#39;s om te voorkomen dat ze worden gedupliceerd op de auteurinstantie van de Cloud Service."
 
 >[!NOTE]
->Voor vorige versies van het Hulpmiddel van de Toewijzing van de Gebruiker, zie [oudere documentatie](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
+>Voor eerdere versies van het gereedschap Toewijzing gebruiker raadpleegt u de [oudere documentatie](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
 
 ## Inleiding {#introduction}
 
@@ -25,7 +25,7 @@ Als onderdeel van de as a Cloud Service overgang naar Adobe Experience Manager (
 
 Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag. Voor dit proces moet gebruik worden gemaakt van de [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) voor het beheren van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS), dat één aanmelding voor alle Adobe-cloudtoepassingen biedt. Zie voor meer informatie [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Vanwege deze wijziging moeten bestaande gebruikers worden toegewezen aan hun IMS-id&#39;s om dubbele gebruikers op de auteur-instantie van de Cloud Service te voorkomen. Aangezien groepen in traditionele AEM fundamenteel verschillen van groepen in IMS, worden groepen niet in kaart gebracht, maar moeten de twee groepen na de migratie met elkaar in overeenstemming worden gebracht.
 
-## Gegevens gebruikersmigratie {#user-migration-detail}
+## Gegevens over gebruikersmigratie {#user-migration-detail}
 
 Met het gereedschap Inhoud overbrengen en het beheer van cloudversnelling migreert u naar het cloudsysteem voor alle gebruikers die zijn gekoppeld aan de inhoud die wordt gemigreerd.
 

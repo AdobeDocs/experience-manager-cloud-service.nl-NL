@@ -1,10 +1,10 @@
 ---
 title: Aan de slag met het gereedschap Inhoud overbrengen
-description: Aan de slag met het gereedschap Inhoud overbrengen
+description: Leer hoe u aan de slag kunt met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1439'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 6%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Release-opmerkingen"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
-Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket installeren via [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) op uw Adobe Experience Manager-bronexemplaar (AEM). Download de nieuwste versie. Ga voor meer informatie over de nieuwste versie naar [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket installeren via [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) op uw bron-Adobe Experience Manager (AEM)-exemplaar. Download de nieuwste versie. Ga voor meer informatie over de nieuwste versie naar [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 Alleen versie 2.0.0 en hoger wordt ondersteund en het is raadzaam de meest recente versie te gebruiken.
 
@@ -39,7 +39,7 @@ De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde ga
 * De Azure-opslagservice: `casstorageprod.blob.core.windows.net`
 
 >[!NOTE]
->Indien extractie mislukt als gevolg van de volgende fout: &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX-pad samenstellen mislukt: sun.security.provider.certpath.SunCertPathBuilderException: kan geen geldig certificatiepad vinden naar gevraagd doel&quot;, dan kan dit worden opgelost door het desbetreffende CA-certificaat te importeren.
+>Als de extractie mislukt als gevolg van de volgende fout: &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certificate path to requested target&quot;, kan dit worden opgelost door het relevante CA-certificaat te importeren.
 
 ### SSL-registratie inschakelen {#enable-ssl-logging}
 
@@ -114,15 +114,15 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 >abstract="Nadat een migratieset is gemaakt, moet deze worden gevuld met de inhoud van de broninstantie die naar de AEM as a Cloud Service omgeving moet worden verplaatst. Hiervoor moet het gereedschap Inhoud overbrengen op de broninstantie zijn geïnstalleerd."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Inhoud uitnemen"
 
-Als u de migratieset wilt vullen die u hebt gemaakt in de Cloud Acceleration Manager, moet u de nieuwste versie van het Content Transfer Tool installeren op uw Adobe Experience Manager-broninstantie (AEM). Volg deze sectie om te leren hoe u de migratieset kunt vullen.
+Als u de migratieset wilt vullen die u hebt gemaakt in het beheer voor cloudversnelling, moet u de nieuwste versie van het gereedschap Inhoud overbrengen installeren op uw Adobe Experience Manager-broninstantie (AEM). Volg deze sectie om te leren hoe u de migratieset kunt vullen.
 
-1. Nadat u de nieuwste versie van het gereedschap Inhoud overbrengen op uw Adobe Experience Manager-bronexemplaar hebt geïnstalleerd, gaat u naar **Bewerkingen - Inhoud migreren**
+1. Nadat u de nieuwste versie van het gereedschap Inhoud overbrengen op uw Adobe Experience Manager-bronexemplaar hebt geïnstalleerd, gaat u naar **Bewerkingen - Migratie van inhoud**
 
 1. Klikken op **Migratieset maken**
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Plak de extractietoets die eerder uit CAM is gekopieerd naar het invoerveld Extractietoets van **Migratieset maken** formulier. Hierna worden de velden Naam migratieset en Naam CAM-project (Cloud Acceleration Manager) automatisch ingevuld. Deze zouden de Vastgestelde naam van de Migratie in CAM en het CAM projectnaam moeten aanpassen die u creeerde. U kunt nu inhoudspaden toevoegen. Nadat u inhoudspaden hebt toegevoegd, slaat u de migratieset op. U kunt de extractie uitvoeren met inbegrepen of uitgesloten versies.
+1. Plak de extractietoets die eerder uit CAM is gekopieerd naar het invoerveld Extractietoets van **Migratieset maken** formulier. Hierna worden de velden Naam migratieset en Naam CAM-project (Cloud Acceleration Manager) automatisch ingevuld. Deze zouden de Vastgestelde naam van de Migratie in CAM en het CAM projectnaam moeten aanpassen die u creeerde. U kunt nu inhoudspaden toevoegen. Sla de migratieset op nadat u inhoudspaden hebt toegevoegd. U kunt de extractie uitvoeren met inbegrepen of uitgesloten versies.
 
    >[!NOTE]
    >
@@ -179,7 +179,7 @@ Voer de onderstaande stappen uit om een groottecontrole uit te voeren:
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Hierdoor wordt de **Formaat controleren** .
+1. Hierdoor wordt de **Formaat controleren** in.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
