@@ -4,14 +4,14 @@ description: Maak kennis met de introductie van het hergebruik van inhoud met AE
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
 workflow-type: tm+mt
-source-wordcount: '2706'
+source-wordcount: '2719'
 ht-degree: 0%
 
 ---
 
-# Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy {#multi-site-manager-and-live-copy}
+# Inhoud opnieuw gebruiken: Sitebeheer en Live kopiëren {#multi-site-manager-and-live-copy}
 
 Met MSM (Multi Site Manager) kunt u dezelfde site-inhoud op meerdere locaties gebruiken. MSM gebruikt hiervoor de Live Copy-functionaliteit.
 
@@ -132,7 +132,7 @@ MSM is direct toegankelijk in UI gebruikend diverse opties van de aangewezen con
 
 * **Verwijzingen** (**Sites**)
 
-   * De [Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) spoor verstrekt informatie over **Actieve kopieën** en toegang tot passende maatregelen.
+   * De [Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) spoor verstrekt informatie **Actieve kopieën** en toegang tot passende maatregelen.
 
 * **Overzicht van live kopiëren** (**Sites**)
 
@@ -144,7 +144,7 @@ MSM is direct toegankelijk in UI gebruikend diverse opties van de aangewezen con
 
 >[!NOTE]
 >
->De aspecten van de functionaliteit MSM worden gebruikt in verscheidene andere AEM eigenschappen zoals Lanceringen. In deze gevallen wordt Live Copy beheerd door die functie.
+>De aspecten van de functionaliteit MSM worden gebruikt in verscheidene andere AEM eigenschappen zoals Lanceringen. In deze gevallen wordt de live kopie beheerd door die functie.
 
 ### Gebruikte termen {#terms-used}
 
@@ -152,7 +152,7 @@ Als inleiding, verstrekt de volgende lijst een overzicht van de belangrijkste te
 
 | Term | Definitie | Meer details |
 |---|---|---|
-| Bron | De originele pagina&#39;s die als basis voor Actieve exemplaren worden gebruikt | Gelijk aan blauwdrukken en/of vervagingspagina&#39;s |
+| Bron | De originele pagina&#39;s die als basis voor Actieve exemplaren worden gebruikt | Gelijk aan blauwdrukken en/of blauwdrukken |
 | Live kopie | De kopie (van de bron), onderhouden door synchronisatiehandelingen zoals gedefinieerd door de rollout-configuraties |  |
 | Configuratie van live kopiëren | Definitie van de configuratiedetails voor een Live Copy |  |
 | Live relatie | Effectieve definitie van de overerving voor een bepaalde bron, namelijk de verbinding(en) tussen de bron en actieve kopieën | Hiermee zorgt u ervoor dat wijzigingen in de bron kunnen worden gesynchroniseerd met Live Copy |
@@ -161,7 +161,7 @@ Als inleiding, verstrekt de volgende lijst een overzicht van de belangrijkste te
 | Hoofdstuk | De gedeelten van de blauwdruk die moeten worden opgenomen in de actieve kopie | Dit zijn doorgaans subpagina&#39;s van de hoofdmap |
 | Synchronisatie | De generische term voor de synchronisatie van inhoud tussen de bron en Live kopieën (door beide **Uitrol** en **Synchroniseren** opties) |  |
 | Uitrol | Synchroniseert van bron naar Live kopie | Kan worden geactiveerd door een auteur (op een blauwdrukpagina) of door een systeemgebeurtenis (zoals gedefinieerd door de rollout-configuratie) |
-| Configuratie van rollout | Regels die bepalen welke eigenschappen worden gesynchroniseerd, hoe en wanneer |  |
+| Rolloutconfiguratie | Regels die bepalen welke eigenschappen worden gesynchroniseerd, hoe en wanneer |  |
 | Synchroniseren | Een handmatig verzoek om synchronisatie, uitgevoerd vanaf de Live Copy-pagina&#39;s |  |
 | Overerving | Een pagina/component van Actieve kopie overerft de inhoud van de bronpagina/component wanneer de synchronisatie plaatsvindt |  |
 | Onderbreken | Hiermee wordt de live relatie tussen een actieve kopie en de bijbehorende blauwdrukpagina tijdelijk verwijderd |  |
@@ -170,11 +170,9 @@ Als inleiding, verstrekt de volgende lijst een overzicht van de belangrijkste te
 | Ondiep | Een actieve kopie van één pagina |  |
 | Diep | Een actieve kopie van een pagina, samen met de onderliggende pagina&#39;s ervan |  |
 
-<!--
 >[!TIP]
 >
->See [Overview of the Java API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) for the object names.
--->
+>Zie het document [Het beheer van meerdere sites uitbreiden](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) voor de objectnamen.
 
 ## Actieve kopieën {#live-copies}
 
@@ -184,7 +182,7 @@ Een live MSM-kopie is een kopie van specifieke site-inhoud waarvoor een live rel
 * De synchronisatie voert de daadwerkelijke overdracht van inhoud uit wanneer de veranderingen in de bron worden aangebracht.
 * Een actieve kopie kan worden beschouwd als:
    * Ondiep: één pagina
-   * Diep: de pagina, samen met de onderliggende pagina&#39;s ervan
+   * Diep: de pagina, samen met de onderliggende pagina&#39;s
 * De regels van de synchronisatie, genoemd rollout configuraties, bepalen welke eigenschappen worden gesynchroniseerd en wanneer de synchronisatie voorkomt.
 
 In het vorige voorbeeld: `/content/wknd/language-masters/en` is de wereldwijde master site in het Engels. Als u de inhoud van deze site opnieuw wilt gebruiken, worden live MSM-kopieën gemaakt:
@@ -224,7 +222,7 @@ Wanneer u een live kopie maakt in AEM, kunt u de vertakking Live kopie zien en d
 * Dergelijke bronnen hebben geen live relatie met de bron-/blauwdrukpagina&#39;s en zijn niet gesynchroniseerd.
 * De scenario&#39;s kunnen voorkomen dat MSM als speciale gevallen behandelt. Wanneer u (of een proces) bijvoorbeeld een pagina maakt met dezelfde positie en naam in de vertakkingen van de bron/blauwdruk en Live kopie. Zie voor dergelijke situaties [Conflicten MSM-rollout](rollout-conflicts.md) voor meer informatie .
 
-![Live kopie met niet-live kopiëren pagina&#39;s](../assets/live-copy-with-non-live-copy-pages.png)
+![Live kopiëren met niet-live kopiëren pagina&#39;s](../assets/live-copy-with-non-live-copy-pages.png)
 
 #### Geneste actieve kopieën {#nested-live-copies}
 
@@ -247,7 +245,7 @@ Een actieve kopie wordt een gestapelde live kopie genoemd wanneer deze wordt gem
 
 ### Bron-, blauwdruk- en blauwdrukconfiguraties {#source-blueprints-and-blueprint-configurations}
 
-Elke pagina of elke vertakking met pagina&#39;s kan worden gebruikt als bron van een Live kopie. Nochtans, staat MSM u ook toe om een blauwdrukconfiguratie te bepalen die een bronweg specificeert. De voordelen van het gebruik van een blauwdrukconfiguratie zijn:
+Elke pagina of elke vertakking met pagina&#39;s kan worden gebruikt als bron van een Live kopie. Nochtans, staat MSM u ook toe om een blauwdrukconfiguratie te bepalen die een bronweg specificeert. De voordelen van het gebruik van een blauwdrukconfiguratie zijn dat zij:
 
 * Laat de auteur het **Uitrol** op een blauwdruk. Dit wil zeggen dat er expliciet wijzigingen moeten worden aangebracht in Live kopieën die van deze blauwdruk overerven.
 * Laat de auteur gebruiken **Site maken**. Op deze manier kan de gebruiker eenvoudig talen selecteren en de structuur van Live Copy configureren.
@@ -290,7 +288,7 @@ De configuraties van de rollout kunnen worden opnieuw gebruikt, zodat meer dan �
 
 ### Conflicten bij rollout {#rollout-conflicts}
 
-Rollouts kunnen ingewikkeld worden, vooral wanneer auteurs inhoud in zowel de bron als Live kopie bewerken. Het is dus handig om te weten hoe AEM omgaat met alle [conflicten die kunnen optreden tijdens rollout.](rollout-conflicts.md)
+Rollouts kunnen ingewikkeld worden, vooral wanneer auteurs inhoud in zowel de bron als Live kopie bewerken. Het is dus handig om te weten hoe AEM omgaat met [conflicten die kunnen optreden tijdens rollout.](rollout-conflicts.md)
 
 ### Overerving en synchronisatie opschorten en annuleren {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -302,7 +300,7 @@ Wanneer auteurs een afzonderlijke pagina bewerken, kunnen ze **Overerving annule
 
 ### Een actieve kopie ontkoppelen {#detaching-a-live-copy}
 
-U kunt ook [Een actieve kopie loskoppelen](creating-live-copies.md#detaching-a-live-copy) om alle verbindingen te verwijderen.
+U kunt [Een actieve kopie loskoppelen](creating-live-copies.md#detaching-a-live-copy) van zijn blauwdruk om alle verbindingen te verwijderen.
 
 >[!CAUTION]
 >

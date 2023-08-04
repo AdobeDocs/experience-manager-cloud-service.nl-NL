@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: Leer hoe u de eigenschappen definieert die vereist zijn voor het beheer van een pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2281'
 ht-degree: 3%
 
 ---
@@ -294,18 +294,6 @@ Wanneer u een pagina bewerkt, kunt u **Pagina-informatie** om de pagina-eigensch
 ### Van de Console van Plaatsen - Meerdere Pagina&#39;s {#from-the-sites-console-multiple-pages}
 
 Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgens **Eigenschappen weergeven** gebruiken om de pagina-eigenschappen te bekijken en/of te bewerken. Dit wordt het bulkgewijs bewerken van pagina-eigenschappen genoemd.
-
->[!NOTE]
->
->Bulkbewerking van eigenschappen is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie Eigenschappen van meerdere elementen bewerken voor meer informatie.
->
->Er is ook de Bulk Editor, waarmee u met GQL (Google Query Language) naar inhoud van meerdere pagina&#39;s kunt zoeken en de inhoud vervolgens rechtstreeks in de grote editor kunt bewerken voordat u de wijzigingen opslaat in de oorspronkelijke pagina&#39;s.
-
-<!--
->Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
->
->There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
--->
 
 U kunt meerdere pagina&#39;s selecteren voor bulkbewerking op verschillende manieren, zoals:
 

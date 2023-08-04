@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '4222'
+source-wordcount: '4236'
 ht-degree: 20%
 
 ---
@@ -963,6 +963,11 @@ ht-degree: 20%
       + [De Rich Text-editor configureren](/help/implementing/developing/extending/rich-text-editor.md)
       + [De RTE-insteekmodules configureren](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
       + [RTE configureren om toegankelijke sites te maken](/help/implementing/developing/extending/rte-accessible-content.md)
+      + [Pagina&#39;s ontwerpen uitbreiden](/help/implementing/developing/extending/page-authoring.md)
+      + [Consoles uitbreiden](/help/implementing/developing/extending/consoles.md)
+      + [Pagina-eigenschappen uitbreiden](/help/implementing/developing/extending/page-properties.md)
+      + [De Bulkeditor uitbreiden](/help/implementing/developing/extending/bulk-editor.md)
+      + [MSM uitbreiden](/help/implementing/developing/extending/msm.md)
    + Implementeren naar AEM as a Cloud Service {#deploying}
       + [Implementeren naar AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [Versie-updates AEM](/help/implementing/deploying/aem-version-updates.md)
