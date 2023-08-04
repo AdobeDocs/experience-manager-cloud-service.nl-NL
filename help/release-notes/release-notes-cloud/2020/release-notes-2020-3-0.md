@@ -1,10 +1,10 @@
 ---
 title: Opmerkingen bij de release 2020.3.0
-description: Opmerkingen bij de release 2020.3.0
+description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.3.0."
 exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 1%
 
 ---
@@ -30,8 +30,8 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 * Logbestanden voor de aangepaste teststappen en de functionele teststappen voor het product kunnen niet worden gedownload via de gebruikersinterface.
 * Toen de git-opslagplaats voor een Cloud Service-programma niet kon worden gemaakt, konden gebruikers met de rol van Implementatiebeheer zich soms niet herstellen van deze fout.
-* Bepaalde gebruikersactiviteiten tijdens het maken van een sandboxprogramma kunnen ertoe leiden dat het maken van het programma mislukt voordat de niet-productiepijplijn is gemaakt.
-* De voorlopige SonarQube-instantie die in de bouwstap wordt gebruikt, kon soms niet binnen de geconfigureerde time-out worden gestart.
+* Bepaalde gebruikersactiviteiten tijdens het maken van een sandboxprogramma kunnen ertoe leiden dat het programma niet wordt gemaakt voordat de niet-productiepijplijn is gemaakt.
+* De voorlopige SonarQube-instantie die in de stap build werd gebruikt, kon niet zo nu en dan starten binnen de geconfigureerde time-out.
 * Bij het gelijktijdig maken van ontwikkelomgevingen in hetzelfde Cloud Service-programma kan er een voorwaarde optreden waarbij slechts één hiervan met succes kan worden gemaakt.
 * Experience Cloud-meldingen voor programma&#39;s voor Cloud Service werden niet altijd ontvangen.
-* Bij specifieke projecten *ResourceResolver-objecten moeten altijd worden gesloten* een Null-aanwijzeruitzondering zou veroorzaken; dit had echter geen invloed op de uitvoering van de pijpleiding .
+* Bij specifieke projecten *ResourceResolver-objecten moeten altijd worden gesloten* zou een Null-aanwijzeruitzondering veroorzaken, maar dit had geen invloed op de uitvoering van de pijpleiding.

@@ -1,10 +1,10 @@
 ---
 title: Opmerkingen bij de release van Adobe Experience Manager as a Cloud Service voor 2020.6.0
-description: Opmerkingen bij de release van Experience Manager voor 2020.6.0
+description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.6.0."
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Release 2.9.0 van de [Kernonderdelen](https://experienceleague.adobe.com/docs/ex
 
 * Componenten in de lay-outcontainer zijn niet zichtbaar wanneer de container Layout is gekopieerd en opnieuw op een pagina wordt geplakt.
 
-* Probleem opgelost met vergroten/verkleinen van lay-outcomponent.
+* Probleem opgelost met vergroten/verkleinen van layoutcomponent.
 
 * Toegevoegde capaciteit om het verpletteren van Angular slechts pagina&#39;s en AEM/Angular pagina&#39;s te beheren.
 
@@ -42,7 +42,7 @@ Release 2.9.0 van de [Kernonderdelen](https://experienceleague.adobe.com/docs/ex
 
 * De commentaarrol en de staat zijn nu mogelijk voor de items in de metselaar in de **Pagina maken** tijdens het navigeren in de bladermodus met de pijl omlaag.
 
-* Er is een koppeling in de navigatie toegevoegd waarmee gebruikers de hoofdinhoud kunnen overslaan.
+* Een koppeling in de navigatie toegevoegd waarmee gebruikers de hoofdinhoud kunnen overslaan.
 
 * Verbeteringen voor schermlezers.
 
@@ -58,7 +58,7 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 ### Wat is er nieuw? {#what-is-new-cloud-manager}
 
-* Een gebruiker in de *Zakelijke eigenaar* rol in Cloud Manager kan nu een Sandbox-programma verwijderen van de bestemmingspagina (via de knop voor snelle actie op de programmakaart) of van binnen het programma.
+* Een gebruiker in het dialoogvenster *Zakelijke eigenaar* rol in Cloud Manager kan nu een Sandbox-programma verwijderen van de bestemmingspagina (via de knop voor snelle actie op de programmakaart) of van binnen het programma.
 
   Zie [Een Sandbox-programma verwijderen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) voor meer informatie .
 
@@ -135,7 +135,7 @@ De elementen van de gebruikersinterface zijn schermlezervriendelijk, zijn toegan
 
    * Hiermee worden de tabelgegevens meteen vermeld wanneer het dialoogvenster wordt geladen.
    * Kan niet naar alle vermelde automatische suggesties navigeren.
-   * De weergegeven automatische suggesties voor de [!UICONTROL Add Email Address/Search] keuzelijst met invoervak. (CQ-4294232)
+   * De weergegeven automatische suggesties voor de [!UICONTROL Add Email Address/Search] invoervak. (CQ-4294232)
 
 * De [!UICONTROL Metadata Schema Editor] De pagina en de bijbehorende elementen zijn nu toegankelijk via een toetsenbord en zijn schermlezervriendelijk. (CQ-4272953) Gebruikers kunnen de componenten slepen met het toetsenbord in de NVDA-bladermodus. (CQ-4296326)
 
