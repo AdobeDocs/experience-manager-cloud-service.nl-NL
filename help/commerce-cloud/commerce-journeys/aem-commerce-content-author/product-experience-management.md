@@ -1,10 +1,10 @@
 ---
 title: Ervaringen maken met producten
-description: Leer hoe u productervaringen kunt opbouwen.
+description: Leer hoe u productinhoud bouwt die vervolgens op verschillende manieren kan worden gebruikt om een indrukwekkende winkelervaring te creëren.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 412e206a66de470e2798aafc58bcac93dc7e3cad
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Dit document helpt u te begrijpen hoe u productinhoud en ervaringen kunt opbouwe
 
 ## Beheer van productervaring {#management}
 
-Het Beheer van de Ervaring van het product is de discipline om productgegevens (die door een PIM of handelsoplossing wordt bezeten) met marketing inhoud in AEM te versieren. Deze verrijkte productgegevens met inhoud kunnen vervolgens op verschillende manieren worden gebruikt om een indrukwekkende boodschappenervaring te creëren.
+Het Beheer van de Ervaring van het product is de discipline om productgegevens (die door een PIM of handelsoplossing wordt bezeten) met marketing inhoud in AEM te versieren. Deze verrijkte productgegevens met inhoud kunnen vervolgens op verschillende manieren worden gebruikt om een meeslepende boodschappenervaring te creëren.
 
 In AEM kunt u verschillende typen inhoud maken en deze koppelen aan de productcatalogus. De bijbehorende inhoud kan gemakkelijk worden ontdekt en worden gebruikt die tot een hoge productiviteit leidt.
 
@@ -91,7 +91,7 @@ Bekijk nu een productpagina met een bijbehorend inhoudsfragment en/of ervaringsf
 
 Het is ook mogelijk om een regelmatige AEM pagina uit elkaar te zetten door commerciële componenten toe te voegen. Maak een nieuwe inhoudspagina in AEM en open de lege pagina in de editor.
 
-![lege pem-pagina](assets/pem-page-empty.png)
+![lege pagina pruimen](assets/pem-page-empty.png)
 
 Sleep eerst een productdetailcomponent naar de pagina. Schakel vervolgens over naar de zijbalk Middelen, schakel over naar producten en selecteer een product. Sleep het product naar de productcomponent. Hierdoor wordt een gewone productcomponent op een inhoudspagina weergegeven.
 

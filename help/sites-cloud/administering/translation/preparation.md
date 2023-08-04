@@ -1,12 +1,12 @@
 ---
 title: Inhoud voorbereiden voor vertaling
-description: Leer hoe u inhoud voorbereidt voor vertaling.
+description: Leer hoe u inhoud voorbereidt voor vertaling bij het ontwikkelen van meertalige websites.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ De [WKND-zelfstudiesite](/help/implementing/developing/introduction/develop-wknd
 
 De taalkopie waarvoor u oorspronkelijk site-inhoud hebt gemaakt, is de master taal. De master taal is de bron die in andere talen wordt vertaald.
 
-Elke taalvertakking van een site wordt een taalkopie genoemd. De hoofdpagina van een taalkopie, ook wel de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: `/content/wknd/fr` Dit is de hoofdtaal van de Franse taalkopie. Taalkopieën moeten een [correct geconfigureerde taalhoofdmap](preparation.md#creating-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van een bronsite worden uitgevoerd.
+Elke taalvertakking van een site wordt een taalkopie genoemd. De hoofdpagina van een taalkopie, ook wel de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: `/content/wknd/fr` Dit is de hoofdtaalkennis van de Franse taalkopie. Taalkopieën moeten een [correct geconfigureerde taalhoofdmap](preparation.md#creating-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van een bronsite worden uitgevoerd.
 
 Gebruik de volgende stappen om uw site voor te bereiden op vertaling:
 
@@ -71,7 +71,7 @@ Als u de hoofdtaal wilt maken, maakt u een pagina en gebruikt u een ISO-taalcode
 * `<language-code>` - De ondersteunde taalcode is bijvoorbeeld een tweelettercode zoals gedefinieerd in ISO-639-1 `en`.
 * `<language-code>_<country-code>` of `<language-code>-<country-code>` - De ondersteunde landcode is bijvoorbeeld een tweelettercode in kleine letters of hoofdletters, zoals gedefinieerd in ISO 3166. `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-U kunt beide indelingen gebruiken op basis van de structuur die u voor uw globale site hebt gekozen. De hoofdpagina van de Franse taalkopie van de WKND-site heeft bijvoorbeeld `fr` als de **Naam** eigenschap. De **Naam** eigenschap wordt gebruikt als de naam van het paginaknooppunt in de repository en bepaalt daarom het pad van de pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+U kunt beide indelingen gebruiken op basis van de structuur die u voor uw globale site hebt gekozen. De hoofdpagina van de Franse taalkopie van de WKND-site heeft bijvoorbeeld `fr` als de **Naam** eigenschap. Let erop dat de **Naam** eigenschap wordt gebruikt als de naam van het paginaknooppunt in de repository en bepaalt daarom het pad van de pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Navigeer naar sites.
 1. Klik of tik op de site waarvoor u een taalkopie wilt maken.
@@ -88,7 +88,7 @@ U kunt beide indelingen gebruiken op basis van de structuur die u voor uw global
 
 ## De status van taalwortels bekijken {#seeing-the-status-of-language-roots}
 
-AEM biedt een **Verwijzingen** rail die een lijst toont van taalwortels die zijn gecreeerd.
+AEM biedt **Verwijzingen** rail die een lijst toont van taalwortels die zijn gecreeerd.
 
 ![Taalwortels](../assets/language-roots.png)
 

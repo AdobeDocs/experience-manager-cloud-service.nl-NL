@@ -1,6 +1,6 @@
 ---
 title: Aan de slag met AEM as a Cloud Service Handel
-description: Leer hoe te om een handel-toegelaten AEM project aan een lopende AEM als de dienstmilieu van de Wolk op te stellen. Gebruik functies van Adobe Cloud Manager en een CI/CD-pijplijn, zodat u de Venia-referentieopslag kunt bouwen naar een actieve omgeving.
+description: Leer hoe te om een AEM handelsproject op te stellen, gebruikend de Manager van de Wolk van de Adobe, een pijpleiding CI/CD en de verwijzingswinkel van Venia.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1098'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Om AEM met een handelsoplossing door middel van Adobe I/O CLI te verbinden, volg
 
 1. De Adobe I/O CLI ophalen met de plug-in Cloud Manager
 
-   Controleer de [Adobe Cloud Manager-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) over het downloaden, instellen en gebruiken van de [Adobe I/O CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager CLI-insteekmodule](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Controleer de [Adobe Cloud Manager-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) over het downloaden, instellen en gebruiken van de [ADOBE I/O CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager CLI-insteekmodule](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. Verifieer Adobe I/O CLI met het AEM as a Cloud Service programma
 
@@ -134,12 +134,12 @@ De volgende eigenschappen kunnen worden geconfigureerd:
 
 De configuratie hierboven wordt getoond is voor verwijzing. De projecten zouden hun eigen configuraties moeten verstrekken.
 
-Voor complexere instellingen raadpleegt u het dialoogvenster [Multi-Store-installatie voor handel](configuring/multi-store-setup.md) zelfstudie.
+Voor complexere instellingen raadpleegt u het dialoogvenster [Multi-Store Setup (Commerce)](configuring/multi-store-setup.md) zelfstudie.
 
 ## Aanvullende bronnen {#additional-resources}
 
 - [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Multi-Store-installatie voor handel](configuring/multi-store-setup.md)
+- [Multi-Store Setup (Commerce)](configuring/multi-store-setup.md)
 - [Meerdere instellingen voor handelssystemen](configuring/multiple-commerce-systems-setup.md)
 

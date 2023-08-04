@@ -1,10 +1,10 @@
 ---
 title: Ervaringen op het gebied van authoringhandel
-description: Werkopdrachten
+description: Leer hoe u op efficiënte wijze ervaringen met betrekking tot handel kunt maken en opbouwen door toegang te krijgen tot productgegevens en inhoud zonder de context te verlaten.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Deze kiezer kan door de catalogusstructuur bladeren om de categorie te zoeken.
 
 ![Carrouselcomponent zonder selectie](../assets/authoring/carousel_component_without_selection.png)
 
-Het configuratiedialoogvenster van deze component vereist 1: n categorieën. CIF gebruikt UID/ID als categorie-id. Auteurs kunnen de id handmatig invoeren of op het mappictogram klikken om de categoriekiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster dat de component bevat de naam van de geselecteerde categorie weergegeven.
+Het configuratiedialoogvenster van deze component vereist 1 : n-categorieën. CIF gebruikt UID/ID als categorie-id. Auteurs kunnen de id handmatig invoeren of op het mappictogram klikken om de categoriekiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster dat de component bevat de naam van de geselecteerde categorie weergegeven.
 
 ![Carrousel-component met selectie](../assets/authoring/carousel_component_with_selection.png)
 
@@ -77,7 +77,7 @@ Hierdoor wordt een koppeling voor plaatsaanduidingen gemaakt die wordt vervangen
 
 ### Gekoppelde productinhoud openen {#associated-content}
 
-Als de Universele Redacteur 1:n producten op een pagina erkent, zal het zijpaneel automatisch het lusje &quot;Bijbehorende Inhoud van de Handel tonen&quot;. Op dit tabblad hebben auteurs snel toegang tot AEM inhoud die aan het product is gekoppeld (zie [productgegevens verrijken met de bijbehorende AEM-inhoud](./enrich-product-associated-content.md) voor meer informatie ) . Op dit tabblad kunt u vervolgkeuzelijsten gebruiken om te filteren op inhoudstype en specifieke producten als er meerdere producten op de pagina staan. Het gebruik van de inhoud werkt precies hetzelfde als het gebruik van inhoud op het tabblad &quot;Middelen&quot;.
+Als de Universele Redacteur 1:n producten op een pagina erkent, zal het zijpaneel automatisch het lusje &quot;Bijbehorende Inhoud van de Handel tonen&quot;. Op dit tabblad hebben auteurs snel toegang tot AEM inhoud die is gelabeld met het product (zie [productgegevens verrijken met de bijbehorende AEM-inhoud](./enrich-product-associated-content.md) voor meer informatie ) . Op dit tabblad kunt u vervolgkeuzelijsten gebruiken om te filteren op inhoudstype en specifieke producten als er meerdere producten op de pagina staan. Het gebruik van de inhoud werkt precies hetzelfde als het gebruik van inhoud op het tabblad &quot;Middelen&quot;.
 
 ![Tabblad Productgegevens](../assets/authoring/associated-commerce-content-tab.png)
 

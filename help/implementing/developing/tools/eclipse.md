@@ -1,10 +1,10 @@
 ---
 title: AEM Developer Tools for Eclipse
-description: AEM Developer Tools for Eclipse
+description: Leer hoe u de AEM Developer Tools for Eclipse, een Eclipse-plug-in op basis van de Eclipse-plug-in voor Apache Sling, gebruikt.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
 >[!NOTE]
 >
->In macOS moet u met de rechtermuisknop klikken op **Eclipse.app** en selecteer vervolgens **Pakketinhoud tonen** om uw `eclipse.ini`**.**
+>In macOS moet u met de rechtermuisknop klikken op **Eclipse.app** en selecteer vervolgens **Toon de Inhoud van het Pakket** om uw `eclipse.ini`**.**
 
 ## Hoe te om de Hulpmiddelen van de Ontwikkelaar van de AEM voor Eclipse te installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -42,7 +42,7 @@ Wanneer u aan [vereisten](#requirements) hierboven kunt u de plug-in als volgt i
 
 1. Open de [Website AEM Developer Tools](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
-1. Kopieer de **Installatiekoppeling**.
+1. De **Installatiekoppeling**.
 
    U kunt ook een archief downloaden in plaats van de installatiekoppeling te gebruiken. Deze methode staat offlineinstallatie toe maar u ontvangt geen automatische updatedeclaraties op deze manier.
 
@@ -75,9 +75,9 @@ De _Experience Manager Developer Tools for Eclipse_ komt met een steekproef, mul
 
 Ga als volgt te werk om het voorbeeldproject te maken:
 
-1. In de **Bestand** > **Nieuw** > **Project** , bladert u naar de **AEM** en selecteert u **AEM Monster nemen van project met meerdere modules**.
+1. In de **Bestand** > **Nieuw** > **Project** , bladert u naar de **AEM** en selecteert u **AEM Monster nemen van meermoduleproject**.
 
-   ![AEM Monster nemen van project met meerdere modules](assets/aem-sample-project.png)
+   ![AEM Monster nemen van meermoduleproject](assets/aem-sample-project.png)
 
 1. Klik op **Next**.
 
@@ -126,13 +126,13 @@ U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
 
    * `PROJECT.ui.apps` for `/apps` en `/etc` content
    * `PROJECT.ui.content` for `/content` die is gemaakt
-   * `PROJECT.core` voor Java™-bundels (deze worden interessant wanneer u Java™-code wilt toevoegen)
+   * `PROJECT.core` voor Java™-pakketten (deze worden interessant wanneer u Java™-code wilt toevoegen)
    * `PROJECT.it.launcher` en `PROJECT.it.tests` voor integratietests
 
-1. De inhoud van uw `PROJECT.ui.apps` met de `apps` en `etc` mappen van het pakket:
+1. Vervang de inhoud van uw `PROJECT.ui.apps` met de `apps` en `etc` mappen van het pakket:
 
    1. In het paneel van de Ontdekkingsreiziger van het Project, ontvouw `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
-   1. Klik met de rechtermuisknop op de knop `apps` en kies **Tonen in** > **Systeemverkenner**.
+   1. Klik met de rechtermuisknop op de knop `apps` map en kies **Tonen in** > **Systeemverkenner**.
    1. Verwijder de `apps` en `etc` mappen die u nu moet zien en hier plaatsen `apps` en `etc` mappen van het inhoudspakket.
    1. Klik in Eclipse met de rechtermuisknop op de knop `PROJECT.ui.apps` project en kies **Vernieuwen**.
 
@@ -145,7 +145,7 @@ U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
 
 1. Nu moet u de `filter.xml` De bestanden van deze twee projecten komen overeen met de inhoud van het inhoudspakket. Open daarvoor de `META-INF/vault/filter.xml` bestand van het inhoudspakket in een aparte tekst/code-editor.
 
-   * Dit is een voorbeeld van hoe uw `filter.xml` kan er uitzien:
+   * Dit is een voorbeeld van hoe uw `filter.xml` bestand kan er uitzien:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -162,7 +162,7 @@ U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
 1. Wat de inhoud van het pakket betreft dat in twee projecten is gesplitst, moet u deze filterregels ook in twee splitsen en dienovereenkomstig bijwerken `filter.xml` bestanden van de twee projecten.
 
    1. Open in Eclipse `PROJECT.ui.apps/src/main/content/META-INF/filter.xml`.
-   1. De inhoud van het dialoogvenster vervangen `<workspaceFilter>` element met de regels van uw pakket waarmee begint `/apps` en `/etc`
+   1. De inhoud van de `<workspaceFilter>` element met de regels van uw pakket waarmee begint `/apps` en `/etc`
       * Bijvoorbeeld:
 
         ```xml
@@ -187,14 +187,14 @@ U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
         </workspaceFilter>
         ```
 
-1. Sla al uw wijzigingen op. U kunt die nieuwe inhoud nu synchroniseren met uw AEM.
+1. Zorg ervoor dat u al uw wijzigingen opslaat. U kunt die nieuwe inhoud nu synchroniseren met uw AEM.
 
 1. Controleer of in het deelvenster Servers de verbinding is gestart en start deze als dat niet het geval is.
 1. Klik op de knop **Reinigen en publiceren** pictogram.
 
 Als u klaar bent, moet het pakket op de instantie worden uitgevoerd en als u het bestand opslaat, wordt elke wijziging automatisch gesynchroniseerd met de instantie.
 
-Als u een pakket opnieuw wilt maken uit uw project, klikt u met de rechtermuisknop op de knop `PROJECT.ui.apps` of `PROJECT.ui.content` en kiest u **Uitvoeren als** -> **Maven Install**.
+Als u een pakket opnieuw wilt samenstellen vanuit uw project, klikt u met de rechtermuisknop op de knop `PROJECT.ui.apps` of `PROJECT.ui.content` en kiest u **Uitvoeren als** -> **Maven Install**.
 
 U hebt nu een doelmap gemaakt met daarin uw pakket (bijvoorbeeld `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
@@ -206,7 +206,7 @@ Om ongeldige gebiedsdelen en projectdefinitie op te lossen ga als volgt te werk:
 
 1. Selecteer alle gemaakte projecten.
 1. Klik met de rechtermuisknop.
-1. Selecteer in het contextmenu de optie **Maven** -> **Projecten bijwerken**.
+1. Selecteer in het contextmenu **Maven** -> **Projecten bijwerken**.
 1. Controleren **Updates van momentopname/releases forceren**.
 1. Klikken **OK**.
 

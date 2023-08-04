@@ -1,10 +1,10 @@
 ---
 title: Aangepaste HTTP-headers
-description: Aangepaste HTTP-headers configureren
+description: Leer hoe te om de kopballen van douaneHTTP te vormen die naar de handelingsmotor, samen met degenen zouden worden verzonden die reeds door CIF worden verzonden.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Om meer controle over hun achterkant te verkrijgen, kunnen de auteurs de kopball
 
 ## Configuratie {#configuration}
 
-Om de kopballen van douaneHTTP te vormen, moet men hen eerst bepalen. De aangepaste HTTP-headers moeten eerst worden gedefinieerd door ze toe te voegen aan de `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` de dienstconfiguratie die een OSGi config gebruikt.
+Om de kopballen van douaneHTTP te vormen, moet men hen eerst bepalen. De aangepaste HTTP-headers moeten eerst worden gedefinieerd door deze aan de `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` de dienstconfiguratie die een OSGi config gebruikt.
 
 U kunt de waarden van de kopballen van HTTP in de pagina van de Configuratie van de Cloud Service voor uw project vormen:
 

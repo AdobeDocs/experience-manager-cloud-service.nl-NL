@@ -1,10 +1,10 @@
 ---
 title: Product Cockpit
-description: Werken met productcoating
+description: Leer hoe u met de productwakkit werkt, die een uniform overzicht biedt van gekoppelde productcatalogi en bijbehorende inhoud.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De gefaseerde productgegevens omvatten om het even welke mutatie in de toekomst 
 
 Productcatalogi moeten in AEM worden geconfigureerd. Zie [configureren, winkel en catalogi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) voor meer informatie .
 
-Voor het inschakelen van niet-actieve catalogusfuncties is verificatie vereist. Zie [Aan de slag](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) voor meer informatie .
+Voor het inschakelen van niet-gefaseerde catalogusfuncties is verificatie vereist. Zie [Aan de slag](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) voor meer informatie .
 
 >[!NOTE]
 >
@@ -35,11 +35,11 @@ Voor het inschakelen van niet-actieve catalogusfuncties is verificatie vereist. 
 
 De eenvoudigste manier om toegang te krijgen tot de Product Cockpit is via het menu &#39;Handel&#39; in AEM hoofdmenu. Het is ook mogelijk om Omnissearch (search for Commerce) of Openen te gebruiken `https://<yourAEMInstance>/commerce.html`.
 
-![AEM](../assets/aem-menu.png)
+![Menu AEM](../assets/aem-menu.png)
 
 ## Bladeren door productcatalogi {#browsing-product-catalogs}
 
-De productcockpit is hiërarchisch georganiseerd volgens de structuur van de productcatalogus. Het eerste niveau toont het cataloguswortelniveau van alle gevormde productcatalogi met inbegrip van meta-informatie van de handels achterkant.
+De productcockpit is hiërarchisch geordend volgens de structuur van de productcatalogus. Het eerste niveau toont het cataloguswortelniveau van alle gevormde productcatalogi met inbegrip van meta-informatie van de handels achterkant.
 
 ![Gevormde catalogi](../assets/catalog-overview.png)
 
@@ -73,7 +73,7 @@ Als u op het eigenschappenpictogram van een product of categorie klikt, wordt de
 
 ### Tabs Handel {#tabs}
 
-De algemene en variantlusjes tonen vooraf bepaalde handelseigenschappen die uit de handelskorend achterste komen. Deze gegevens (incl. varianten) is read-only gegevens in AEM aangezien het systeem van verslag de handelsafstand is. Het tabblad Variant wordt alleen weergegeven voor producten met varianten en bevat een lijst met alle varianten.
+De algemene en variantlusjes tonen vooraf bepaalde handelseigenschappen die uit de handelskorend achterste komen. Deze gegevens (inclusief varianten) is read-only gegevens in AEM aangezien het systeem van verslag de handelsafstand is. Het tabblad Variant wordt alleen weergegeven voor producten met varianten en bevat een lijst met alle varianten.
 
 ![cataloguseigenschappen](../assets/catalog-properties.png)
 
