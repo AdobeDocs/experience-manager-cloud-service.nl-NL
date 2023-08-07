@@ -3,20 +3,14 @@ title: Verschillen tussen AEM 6.5 Forms en AEM Cloud Services
 description: Bent u een Experience Manager Forms-gebruiker en wilt u een upgrade uitvoeren naar Adobe Experience Manager Forms as a Cloud Service? Vergelijk AEM 6.5 Forms en AEM Cloud Services en leer de meest opvallende wijzigingen voordat u een upgrade uitvoert of naar Cloud Service migreert.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
 
 # Opvallende wijzigingen voor bestaande Adobe Experience Manager 6.5 Forms-gebruikers  {#notable-changes-for-existing-AEM-Forms-users}
-
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html) |
-| AEM as a Cloud Service | Dit artikel |
-
 
 Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke veranderingen in bestaande eigenschappen in vergelijking met Adobe Experience Manager Forms On-Premise en [!DNL Adobe-Managed Service] omgevingen. De belangrijkste verschillen worden hieronder vermeld:
 
@@ -33,7 +27,7 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * De dienst verstrekt SDK om douanecode in een lokale milieu (lokale machine) te ontwikkelen en te testen alvorens de code aan een Cloud Service op te stellen. Ontwikkelaars ontwikkelen en testen aangepaste componenten, thema&#39;s, workflowtoepassingen, configuraties, sjablonen en meer met de SDK op hun lokale computers. Na het testen van de douanecode in hun lokale ontwikkelomgeving, voeren zij de douanecode in aan een [Forms CS-omgeving ontwikkelen of stadium-omgeving](/help/implementing/cloud-manager/deploy-code.md) voor verdere tests voordat deze worden bevorderd tot een productieomgeving.
 
-* Ontwikkelaars onderhouden code voor de Cloud Service en de lokale ontwikkelomgeving in een gemeenschappelijke omgeving [git-opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). Een git-opslagplaats, gebaseerd op AEM Archetype, wordt automatisch gemaakt bij het maken van een AEM as a Cloud Service programma.
+* Ontwikkelaars onderhouden code voor Cloud Service en lokale ontwikkelomgeving in een gemeenschappelijke omgeving [git-opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). Een git-opslagplaats, gebaseerd op AEM Archetype, wordt automatisch gemaakt bij het maken van een AEM as a Cloud Service programma.
 
   ![automatisch aanmaken van git-opslagplaats op AEM als cloudserviceprogramma](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
@@ -41,7 +35,7 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * Voordat u uw klantbundels gebruikt met as a Cloud Service Forms, moet u uw aangepaste code opnieuw compileren met de nieuwste versie van adobe-aemfd-docmanager.
 
-* Gebruiken [AEM Forms as a Cloud Service migratiehulpprogramma](/help/forms/migrate-to-forms-as-a-cloud-service.md) om uw Adaptieve Forms, thema&#39;s, sjablonen en cloudconfiguraties voor te bereiden en te migreren vanuit <!-- AEM 6.3 Forms--> AEM 6.4 Forms op OSGi en AEM 6.5 Forms op OSGi aan [!DNL AEM] as a Cloud Service. Gebruiken [Opslagruimte van uw programma](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) om bestaande adaptieve formuliersjablonen te importeren.
+* Gebruiken [AEM Forms as a Cloud Service migratiehulpprogramma](/help/forms/migrate-to-forms-as-a-cloud-service.md) om uw Adaptieve Forms, thema&#39;s, sjablonen en cloudconfiguraties voor te bereiden en te migreren vanuit <!-- AEM 6.3 Forms--> AEM 6.4 Forms op OSGi en AEM 6.5 Forms op OSGi aan [!DNL AEM] as a Cloud Service. Gebruiken [Opslagruimte van uw programma maken](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) bestaande adaptieve formuliersjablonen importeren.
 
 * E-mail steunt slechts HTTP en protocollen van HTTP, door gebrek. [Contact opnemen met het ondersteuningsteam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) om havens voor het verzenden van e-mail toe te laten en SMTP protocol voor uw milieu toe te laten.
 
@@ -54,15 +48,15 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 ## Adaptieve Forms
 
-* **Regeleditor:** AEM Forms as a Cloud Service biedt een harde [Regeleditor](rule-editor.md#visual-rule-editor). De code-editor is niet beschikbaar in Forms as a Cloud Service.
+* **Regeleditor:** AEM Forms as a Cloud Service biedt een geharde [Regeleditor](rule-editor.md#visual-rule-editor). De code-editor is niet beschikbaar in Forms as a Cloud Service.
 
   De [migratiehulpprogramma](/help/forms/migrate-to-forms-as-a-cloud-service.md) helpt u bij het migreren van formulieren met aangepaste regels (gemaakt in de code-editor). Het hulpprogramma converteert dergelijke regels naar aangepaste functies die worden ondersteund op as a Cloud Service Forms. U kunt de herbruikbare functies met de redacteur van de Regel gebruiken om resultaten te blijven verkrijgen die met regelmanuscripten worden verkregen. De `onSubmitError` of `onSubmitSuccess` functies zijn nu beschikbaar als handelingen in de Editor voor regels.
 
 * **Prefill-service:** Standaard voegt de Prefill-service gegevens samen met een Adaptief formulier op de client in plaats van gegevens op de server samen te voegen in AEM 6.5 Forms. De functie helpt de tijd te verbeteren die nodig is om een adaptief formulier vooraf in te vullen. U kunt altijd configureren om de samenvoegactie op de Adobe Experience Manager Forms-server uit te voeren.
 
-* **Handelingen verzenden:** De **E-mail** Verzenden bevat opties voor het verzenden van bijlagen en het toevoegen van een e-mail aan het Document of Record (DoR). U kunt het gebruiken in plaats van **E-mailen als PDF** actie beschikbaar in AEM 6.5 Forms.
+* **Handelingen verzenden:** De **E-mail** Verzenden bevat opties voor het verzenden van bijlagen en het toevoegen van een e-maildocument (DoR) bij het document Record. U kunt het gebruiken in plaats van **E-mailen als PDF** in AEM 6.5 Forms.
 
-* **automatede form conversion Service**: De dienst verstrekt meta-model voor de Dienst van de Automatede form conversion niet. U kunt [download het van de documentatie van de Dienst van de Automatede form conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).
+* **Automatede form conversion-service**: De dienst verstrekt meta-model voor de Dienst van de Automatede form conversion niet. U kunt [download het van de documentatie van de Dienst van de Automatede form conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).
 
 * **Adaptieve Forms op basis van XSD:** U kunt XDP-malplaatje gebruiken om een malplaatje voor Document voor Verslag te ontwerpen. De service biedt geen ondersteuning voor adaptieve Forms op basis van XFA
 
@@ -78,7 +72,7 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken van documenten. U kunt deze API&#39;s gebruiken om documenten te genereren of te manipuleren op aanvraag of in batches, naar wens:
 
-* **Documentservices: API&#39;s voor het genereren van documenten (uitvoerservice)**: In één enkele API vraag of partij, kunt u slechts één malplaatje met veelvoudige DATA dossiers van XML gebruiken. Het gebruik van meerdere sjablonen met meerdere gegevensbestanden in één API-aanroep wordt niet ondersteund.
+* **Documentservices: API&#39;s voor het genereren van documenten (uitvoerservice)**: In één API-aanroep of -batch kunt u slechts één sjabloon gebruiken met meerdere DATA XML-bestanden. Het gebruik van meerdere sjablonen met meerdere gegevensbestanden in één API-aanroep wordt niet ondersteund.
 
 * **Document Manipulation APIs (Assembler Service)**:
 
@@ -97,7 +91,7 @@ Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken 
 
 * Forms-gegevensmodel ondersteunt alleen HTTP- en HTTPS-eindpunten voor het verzenden van gegevens. De service biedt geen ondersteuning voor wederzijdse SSL voor REST-connector en op x509-certificaten gebaseerde verificatie voor SOAP-gegevensbronnen.
 
-* Met Forms as a Cloud Service kunt u Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive en services die algemene CRUD-bewerkingen (Maken, Lezen, Bijwerken en Verwijderen) ondersteunen, gebruiken als gegevensopslagsystemen. Zowel de specificatie Open API 2.0 als de specificatie Open API 3.0 worden ondersteund.
+* Met Forms as a Cloud Service kunt u Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive en services die algemene CRUD-bewerkingen (Maken, Lezen, Bijwerken en Verwijderen) ondersteunen, gebruiken als gegevensopslag. Zowel de specificatie Open API Specification 2.0 als de specificatie Open API 3.0 worden ondersteund.
 
 
 ## Elektronisch ondertekenen
@@ -111,7 +105,7 @@ Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken 
 
 * U kunt een AEM 6.5 Forms-omgeving gebruiken om:
 
-   * formulieren op basis van XDP weergeven als HTML5 Forms. De service biedt geen ondersteuning voor HTML5 Forms (Mobile Forms).
+   * formulieren op basis van XDP weergeven als HTML5 Forms. De service ondersteunt geen HTML5 Forms (Mobile Forms).
 
    * gegevens offline vastleggen en synchroniseren de volgende keer dat u online terugkeert met [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) app.
 
@@ -128,4 +122,4 @@ Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken 
 ## Aanvullende informatie
 
 * [Inleiding tot AEM Forms as a Cloud Service](/help/forms/home.md)
-* [Een lokale ontwikkelomgeving en een initiële ontwikkelingsproject opzetten](/help/forms/setup-local-development-environment.md)
+* [Een lokale ontwikkelomgeving en een project voor initiële ontwikkeling opzetten](/help/forms/setup-local-development-environment.md)

@@ -6,9 +6,9 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -16,20 +16,25 @@ ht-degree: 0%
 
 # Adaptieve Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM as a Cloud Service | Dit artikel |
+
 Als u Adaptive Forms Core Components inschakelt op AEM Forms as a Cloud Service, kunt u beginnen met het maken, publiceren en leveren van Core Components based Adaptive Forms and Headless Forms met uw AEM Forms Cloud Service-instanties naar meerdere kanalen. Voor het gebruik van Headless Adaptive Forms hebt u de omgeving geschikt voor Adaptive Forms Core Components nodig.
 
 ## Overwegingen
 
 * Wanneer u een nieuw as a Cloud Service AEM Forms-programma maakt, [Adaptieve Forms Core-componenten en Headless Adaptive Forms zijn al ingeschakeld voor uw omgeving](#are-adaptive-forms-core-components-enabled-for-my-environment).
 
-* Als u een ouder as a Cloud Service Forms-programma hebt met Core Components [niet ingeschakeld](#enable-components), kunt u [Aangepaste Forms Core-componentafhankelijkheden toevoegen](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) naar uw AEM as a Cloud Service opslagplaats en implementeer de opslagplaats in uw Cloud Service-omgevingen om Headless Adaptive Forms in te schakelen.
+* Als u een ouder Forms as a Cloud Service programma hebt met Core Components [niet ingeschakeld](#enable-components), kunt u [Aangepaste Forms Core-componentafhankelijkheden toevoegen](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) naar uw AEM as a Cloud Service opslagplaats en implementeer de opslagplaats in uw Cloud Service-omgevingen om Headless Adaptive Forms in te schakelen.
 
 * Als uw bestaande omgeving van de Cloud Service optie biedt voor [Adaptieve Forms op basis van Core Components maken](creating-adaptive-form-core-components.md), Adaptive Forms Core Components en Headless Adaptive Forms zijn al ingeschakeld voor uw omgeving en u kunt Adaptive Forms op basis van Core-componenten gebruiken als een vorm zonder kop voor kanalen als mobiel, web, native apps en services waarvoor een headless representatie van Adaptive Forms vereist is.
 
 
 ## Adaptieve Forms Core-componenten en Forms zonder koptekst inschakelen {#enable-headless-forms}
 
-Voer de volgende stappen uit, in de aangegeven volgorde, om Adaptive Forms Core Components en Headless Adaptive Forms in te schakelen voor een AEM Forms as a Cloud Service omgeving
+Voer de volgende stappen uit in de aangegeven volgorde om Adaptive Forms Core Components en Headless Adaptive Forms in te schakelen voor een AEM Forms as a Cloud Service omgeving
 
 
 ![Basiscomponenten en adaptieve formulieren zonder kop inschakelen](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
@@ -39,7 +44,7 @@ Voer de volgende stappen uit, in de aangegeven volgorde, om Adaptive Forms Core 
 
 1. Aanmelden bij [Cloud Manager](https://my.cloudmanager.adobe.com/) en selecteert u uw organisatie en programma.
 
-1. Ga naar de **Pijpleidingen** kaart van uw **Programmaoverzicht** pagina, klikt u op de knop **Repo-info openen** om toegang te krijgen tot uw Git Repository en deze te beheren. De pagina bevat de volgende informatie:
+1. Ga naar de **Pijpleidingen** kaart van uw **Programmaoverzicht** pagina, klikt u op de **Repo-info openen** om toegang te krijgen tot uw Git Repository en deze te beheren. De pagina bevat de volgende informatie:
 
    * URL naar de Git Repository van Cloud Manager.
    * Referenties van de Git Repository (Gebruikersnaam en Wachtwoord) Gebruikersnaam.
@@ -272,7 +277,7 @@ Voer de volgende stappen uit, in de aangegeven volgorde, om Adaptive Forms Core 
 
 1. Sla het bestand op en sluit het.
 
-## 3. De bijgewerkte code samenstellen en implementeren
+## 3. Bouw en stel de bijgewerkte code op
 
 Implementeer de bijgewerkte code in uw lokale ontwikkelings- en Cloud Service-omgevingen om de Core Components op beide omgevingen in te schakelen:
 
