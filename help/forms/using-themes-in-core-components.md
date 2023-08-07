@@ -4,9 +4,9 @@ description: U kunt thema's gebruiken om een adaptief formulier te stileren en e
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: nieuw thema maken, thema aanpassen, nieuw thema uploaden, thema gebruiken in formulieren, thema aanpassen met frontend-pijplijn
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 1cec6e01e72cb286949f64749e2386a2b652920e
+source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
 workflow-type: tm+mt
-source-wordcount: '2651'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
@@ -417,6 +417,7 @@ Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals e
 * [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Document met record genereren voor adaptieve Forms (kerncomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Een adaptieve Forms maken met herhalende secties](/help/forms/create-forms-repeatable-sections.md)
+* [Voorbeeldthemasjablonen en formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## Verwante artikelen {#related-article}
