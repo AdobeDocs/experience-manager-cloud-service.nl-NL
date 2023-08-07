@@ -3,9 +3,9 @@ title: Versie-updates AEM
 description: Leer hoe AEM as a Cloud Service ononderbroken integratie en levering (CI/CD) gebruikt om uw projecten op de recentste versie te houden.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd567c484d71e25de1808f784c455cfb9b124fbf
+source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '800'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,37 @@ Op dezelfde manier als een geautomatiseerde update van een ontwikkelomgeving ont
 >[!NOTE]
 >
 >Als de douanecode aan het opvoeren en niet aan productie werd geduwd, zal de volgende AEM update die veranderingen verwijderen om de git markering van de laatste succesvolle klantenversie aan productie te weerspiegelen. Daarom zal de douanecode die slechts op het opvoeren beschikbaar was opnieuw moeten worden opgesteld.
+
+## Best practices voor {#best-practices}
+
+* 
+   * **Gebruik van Stage-omgeving**
+   * Gebruik een andere omgeving (geen werkgebied) voor lange QA/UAT-cycli.
+   * Nadat het testen van de hygiëne in het werkgebied is voltooid, gaat u naar Verifiëren bij Productie.
+
+* 
+   * **Productiepijpleiding**
+   * Pauze voordat u gaat implementeren naar productie.
+   * Als u de pijplijn annuleert nadat een werkgebied is geïmplementeerd, geeft u aan dat de code &quot;een baan&quot; is en geen geldige kandidaat voor productie. Raadpleeg [Een productiepijpleiding configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+
+* 
+   * **Niet-productiepijpleiding**
+* Configureren [Niet-productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* 
+   * Versnelt leversnelheid/frequentie voor mislukte productiepijplijnen.  Identificeer kwesties in niet-prod pijpleidingen door het Functionele Testen van het Product, het Eigen Functionele Testen van de Douane en het Testen van de UI van de Douane toe te laten.
+
+* 
+   * **Inhoud kopiëren**
+   * Gebruiken [Inhoud kopiëren](/help/implementing/developing/tools/content-copy.md) om vergelijkbare inhoudssets te verplaatsen naar een niet-prodomgeving.
+
+* 
+   * **Geautomatiseerde functionele tests**
+* Neem automatisch tests op in uw pijplijn om kritieke functionaliteit te testen.
+* [Functionele tests van de klant](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) en [Aangepaste UI-tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) blokkeren, als ze er niet in slagen AEM de release uit te voeren.
+
+## Regressie {#regression}
+
+Als u een probleem tegenkomt met betrekking tot regressie, kunt u een ondersteuningskwestie aankaarten via de beheerconsole.  Als de kwestie een blokker is en het effect op Productie heeft zou een P1 moeten worden opgeheven.  Geef alle gegevens op die nodig zijn om het regressieprobleem te reproduceren.
 
 ## Composite Node Store {#composite-node-store}
 
