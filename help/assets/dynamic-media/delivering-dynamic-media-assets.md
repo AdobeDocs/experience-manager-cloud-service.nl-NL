@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media-middelen leveren
-description: Leer hoe u Dynamic Media-middelen kunt leveren.
+description: Leer hoe u Dynamic Media-elementen naar uw webpagina's kunt leveren via ingesloten video en afbeeldingen of door URL's aan uw webtoepassing te koppelen.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---

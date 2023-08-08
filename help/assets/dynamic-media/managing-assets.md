@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media-middelen beheren
-description: Leer hoe u met Dynamic Media-middelen werkt.
+description: Leer hoe u met Dynamic Media-middelen werkt en deze beheert met behulp van workflows, zoals voorvertonen, downloaden of publiceren.
 contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '128'
 ht-degree: 7%
 
 ---

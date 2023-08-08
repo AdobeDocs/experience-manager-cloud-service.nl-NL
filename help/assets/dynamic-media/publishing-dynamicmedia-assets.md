@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media-elementen publiceren
-description: Leer hoe u Dynamic Media-middelen publiceert.
+description: Leer hoe u Dynamic Media-video en -afbeeldingselementen publiceert, zodat u deze via een URL of code op een webpagina kunt opnemen.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '476'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,6 @@ Zie ook [De Dynamic Media Video-viewer of Image-viewer insluiten op een webpagin
 >* Elementen moeten worden gepubliceerd om de URL te kunnen gebruiken. Als de elementen niet worden gepubliceerd, werkt het kopiëren en plakken van de URL in een webbrowser niet.
 >* Voorinstellingen voor afbeeldingen en viewervoorinstellingen moeten worden geactiveerd en gepubliceerd voor live levering.
 >
-
 
 Ga voor gedetailleerde informatie over het publiceren van een set of element naar [Middelen publiceren](/help/assets/manage-digital-assets.md).
 

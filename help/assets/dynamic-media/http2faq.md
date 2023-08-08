@@ -1,12 +1,12 @@
 ---
 title: Veelgestelde vragen over HTTP2-levering van content
-description: Meer informatie over de levering van HTTP2-inhoud.
+description: Leer over de levering van HTTP2 inhoud en hoe het communicatie tussen browsers en servers voor snellere informatieoverdracht verbetert.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Prestatieverbetering varieert sterk, omdat deze op verschillende factoren is geb
 
 Resultaten:
 
-* Voor afbeeldingen verbeterde de responstijd 7%-28%, afhankelijk van het apparaat en de browser. De meest opmerkelijke prestatiewinst was op iOS-apparaten.
+* Voor afbeeldingen verbeterde de responstijd 7%-28%, afhankelijk van apparaat en browser. De meest opmerkelijke prestatiewinst was op iOS-apparaten.
 * Voor viewers verbeterde de laadtijd tot 15%.
 
 De volgende demonstratie illustreert het verschil tussen het laden van HTTP/1 en HTTP/2:
@@ -52,7 +52,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 ## Wat is het proces voor het inschakelen van HTTP/2 voor mijn Dynamic Media-account? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[Gebruik de Admin Console om een steungeval tot stand te brengen](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) en verzoek om over te schakelen op HTTP/2; het wordt niet automatisch voor u gedaan.
+[Gebruik de Admin Console om een steungeval te creëren](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) en verzoek om over te schakelen naar HTTP/2; dit wordt niet automatisch voor u gedaan.
 
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
@@ -65,7 +65,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
    * Controleer of u beveiligde HTTPS gebruikt voor aanvragen voor rich media.
    * Verifieer u CDN door Adobe gebruikt en niet beheerd met een directe verhouding.
-   * Controleer of u een specifiek domein gebruikt. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`, geen algemeen Dynamic Media-domein zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+   * Controleer of u een specifiek domein gebruikt. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`, niet een algemeen Dynamic Media-domein zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
    Als u uw domeinen wilt zoeken, opent u het dialoogvenster [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw account.
 
@@ -77,7 +77,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 ## Wanneer kan ik verwachten over te gaan naar HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Verzoeken worden verwerkt in de volgorde waarin ze door Customer Support worden ontvangen.
+Verzoeken worden verwerkt in de volgorde waarin ze door de Klantenondersteuning worden ontvangen.
 
 >[!NOTE]
 >
