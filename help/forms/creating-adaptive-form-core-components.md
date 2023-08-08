@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: e6358044af395ee0fc785db3531465a3a6fbd5d5
+source-git-commit: 910c0dd53fa1890ac61b2f14fc4380a0dfbca76c
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2270'
 ht-degree: 0%
 
 ---
@@ -42,13 +42,21 @@ U hebt het volgende nodig om een adaptief formulier te maken:
    * De `blank` De sjabloon wordt bij elk nieuw as a Cloud Service AEM Forms-programma geleverd.
    * U kunt het referentiepakket installeren via Package Manager om het `blank` template naar uw as a Cloud Service AEM Forms-programma.
    * U kunt [een nieuwe adaptieve Forms-sjabloon maken (Core Components)](template-editor.md) helemaal niet.
+   * U kunt ook een voorbeeld implementeren [sjablonen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) naar uw omgeving. Hiermee kunt u snel formulieren maken.
 
-* **Een adaptief formulierthema**: Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten.  De `Canvas` De sjabloon wordt bij elk nieuw as a Cloud Service AEM Forms-programma geleverd.
+* **Een adaptief formulierthema**: Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten.  De `Canvas` De sjabloon wordt bij elk nieuw as a Cloud Service AEM Forms-programma geleverd. U kunt ook een voorbeeld implementeren [thema&#39;s](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) naar uw omgeving. Deze hulp u begint uw vormen te stileren en een basisstructuur te verstrekken om een thema tot stand te brengen of aan te passen volgens uw bedrijfsvereisten.
+
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
 
 * **Machtigingen**: Voeg uw gebruikers toe aan [!DNL forms-users] groep. De leden van de [!DNL forms-users] groep heeft machtigingen om een adaptief formulier te maken. Zie voor een gedetailleerde lijst met formulierspecifieke gebruikersgroepen [Groepen en machtigingen](forms-groups-privileges-tasks.md).
 
+<!--
+>[!NOTE]
+>
+>
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
+-->
 
 ## Een adaptief formulier maken  {#create-an-adaptive-form-core-components}
 
