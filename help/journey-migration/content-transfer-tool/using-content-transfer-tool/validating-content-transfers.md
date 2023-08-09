@@ -2,9 +2,9 @@
 title: Inhoudsoverdrachten valideren
 description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten te valideren
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1077'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## Aan de slag {#getting-started}
 
-Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inhoud overbrengen is uitgepakt, is opgenomen in de doelinstantie. Deze validatiefunctie werkt door een overzicht te vergelijken van de paden van alle knooppunten die bij de extractie betrokken waren, met een overzicht van de paden van alle knooppunten die bij de opname betrokken waren. Als er knoopwegen inbegrepen in de extractiesamenvatting zijn die van de opname digest missen, wordt de bevestiging beschouwd als ontbroken, en de extra handbevestiging kan noodzakelijk zijn.
+Gebruikers kunnen op betrouwbare wijze bepalen of alle inhoud die met het gereedschap Inhoud overbrengen is uitgepakt, is opgenomen in de doelinstantie. Deze validatiefunctie werkt door een overzicht te vergelijken van de paden van alle knooppunten die bij de extractie betrokken waren, met een overzicht van de paden van alle knooppunten die bij de opname betrokken waren. Als er knoopwegen inbegrepen in de extractiesamenvatting zijn die van de opname digest missen, wordt de bevestiging beschouwd als ontbroken, en de extra handbevestiging kan noodzakelijk zijn.
 
 >[!INFO]
 >
@@ -138,7 +138,7 @@ Zie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migratio
 
 Nadat de extractie en inname met succes zijn voltooid, is een samenvatting en rapport van de belangrijkste migratie beschikbaar. Deze informatie kan worden gebruikt om te valideren welke gebruikers en groepen met succes zijn gemigreerd, en misschien om te bepalen waarom sommige niet.
 
-Ga naar Cloud Acceleration Manager om deze informatie te bekijken. Klik op uw projectkaart en klik op de kaart van de Overdracht van de Inhoud. Navigeren naar **Ingestietaken** en zoek de inname die u wilt controleren. Klik op de drie stippen (**...**) voor die opname, klikt u op **Hoofdoverzicht weergeven** in de vervolgkeuzelijst.
+Ga naar Cloud Acceleration Manager om deze informatie weer te geven. Klik op uw projectkaart en klik op de kaart van de Overdracht van de Inhoud. Navigeren naar **Ingestietaken** en zoek de inname die u wilt controleren. Klik op de drie stippen (**...**) voor die opname, klikt u op **Hoofdoverzicht weergeven** in de vervolgkeuzelijst.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
@@ -163,3 +163,7 @@ Kies een pad in het validatierapport en controleer of dit aanwezig is in de doel
 Sommige paden uit de extractie- en innamesamenvattingen worden doelbewust uitgesloten om de grootte van deze bestanden beheerbaar te houden, met als doel het resultaat van de migratievalidatie binnen twee uur na voltooiing van de inname te kunnen berekenen.
 
 De paden die we momenteel uitsluiten van de samenvattingen zijn: `cqdam.text.txt` vertoningen, knooppunten binnen `/home`en knooppunten binnen `/jcr:system`.
+
+### Gesloten gebruikersgroepen functioneren niet {#validating-cugs}
+
+Zie [Gesloten gebruikersgroepen migreren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen wanneer het gebruiken van een Gesloten beleid van de Groep van de Gebruiker (CUG).

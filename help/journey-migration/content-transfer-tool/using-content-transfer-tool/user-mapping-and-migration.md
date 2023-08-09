@@ -2,9 +2,9 @@
 title: Toewijzing van gebruikers en belangrijkste migratie
 description: Overzicht van gebruikerstoewijzing en belangrijkste migratie in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '855'
 ht-degree: 3%
 
 ---
@@ -57,6 +57,7 @@ De volgende specifieke gevallen worden geregistreerd:
 * Als de instelling **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** is ingesteld, worden reeds overgedragen gebruikers op de instantie Cloud Service samen met de gehele bestaande opslagplaats verwijderd. En er wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit proces stelt ook alle montages met inbegrip van toestemmingen op de instantie van de doelCloud Service terug en is waar voor een admin gebruiker die aan wordt toegevoegd **beheerders** groep. De gebruiker van admin moet aan de **beheerders** groep om het toegangstoken voor CTT terug te winnen.
 * Als de inhoud wordt uitgebreid en de inhoud niet wordt overgedragen omdat deze niet is gewijzigd sinds de vorige overdracht, worden gebruikers en groepen die aan de inhoud zijn gekoppeld, ook niet overgedragen. Deze regel geldt ook als de gebruikers en groepen inmiddels zijn gewijzigd. De reden hiervoor is dat gebruikers en groepen worden gemigreerd met de inhoud waaraan ze zijn gekoppeld.
 * Als het doel-AEM Cloud Service-exemplaar een gebruiker heeft met een andere gebruikersnaam maar hetzelfde e-mailadres als een van de gebruikers op de bron-AEM en Gebruikerstoewijzing is ingeschakeld, wordt in het logbestand een foutbericht opgenomen. Bovendien wordt de bron AEM gebruiker niet overgedragen, aangezien slechts één gebruiker met een bepaald e-mailadres op het doelsysteem is toegestaan.
+* Zie [Gesloten gebruikersgroepen migreren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen voor groepen die in een Gesloten beleid van de Groep van de Gebruiker (CUG) worden gebruikt.
 
 ## Laatste samenvatting en rapport {#final-report}
 

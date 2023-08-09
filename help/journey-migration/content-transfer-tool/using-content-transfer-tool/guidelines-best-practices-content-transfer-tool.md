@@ -2,9 +2,9 @@
 title: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 description: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1562'
 ht-degree: 14%
 
 ---
@@ -27,17 +27,17 @@ ht-degree: 14%
 Er is een nieuwe versie van het gereedschap Inhoud overbrengen beschikbaar waarin het proces voor de overdracht van inhoud wordt geïntegreerd met het programma voor de versnelling van de cloud. U wordt ten zeerste aangeraden over te schakelen naar deze nieuwe versie om alle voordelen van de toepassing te benutten:
 
 * Zelfbediening om een migratieset één keer uit te pakken en tegelijkertijd in meerdere omgevingen in te voeren
-* Verbeterde gebruikerservaring dankzij betere laadstatussen, hulplijnen en foutafhandeling
+* Verbeterde gebruikerservaring dankzij betere laadstatussen, instructies en foutafhandeling
 * Logbestanden voor insluiting blijven bestaan en zijn altijd beschikbaar voor probleemoplossing
 
-Als u de nieuwe versie wilt gebruiken, moet u de installatie van oudere versies van het gereedschap Inhoud overbrengen ongedaan maken. Dit is nodig omdat de nieuwe versie een grote architectonische verandering heeft. Met versie 2.x moet u nieuwe migratiesets maken en de extractie en inname van de nieuwe migratiesets opnieuw uitvoeren.
+Als u de nieuwe versie wilt gebruiken, moet u de installatie van oudere versies van het gereedschap Inhoud overbrengen ongedaan maken. Dit is nodig omdat de nieuwe versie een grote architectonische verandering heeft. Met versie 2.x moet u nieuwe migratiesets maken en de extractie en opname van de nieuwe migratiesets opnieuw uitvoeren.
 Versies die ouder zijn dan 2.0.0 worden niet meer ondersteund en het is raadzaam de meest recente versie te gebruiken.
 
 De volgende Richtlijnen en Beste praktijken zijn op de nieuwe versie van het Hulpmiddel van de Overdracht van de Inhoud van toepassing:
 
 * Het is raadzaam om [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) en [consistentiecontroles voor de dataopslagplaats](https://helpx.adobe.com/nl/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) op de **bronrepository** uit te voeren om potentiële problemen te identificeren en de repository te verkleinen.
 
-* In de fase van inname wordt aanbevolen de inname uit te voeren met behulp van de *vegen* Modus ingeschakeld waarbij de bestaande opslagplaats (auteur of publicatie) in de AEM Cloud Service-doelomgeving volledig wordt verwijderd en vervolgens wordt bijgewerkt met de gegevens van de migratieset. Deze modus is veel sneller dan de modus voor niet-wissen, waarbij de migratieset boven op de huidige content wordt toegepast.
+* In de fase van inname wordt aanbevolen om de inname uit te voeren met behulp van de *vegen* Modus ingeschakeld waarbij de bestaande opslagplaats (auteur of publicatie) in de AEM Cloud Service-doelomgeving volledig wordt verwijderd en vervolgens wordt bijgewerkt met de gegevens van de migratieset. Deze modus is veel sneller dan de modus voor niet-wissen, waarbij de migratieset boven op de huidige content wordt toegepast.
 
 * Wanneer alle content is verplaatst, is de juiste projectstructuur in de Cloud Service-omgeving vereist. Anders wordt de content niet correct weergegeven in de Cloud Service-omgeving.
 
@@ -59,21 +59,21 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Java moet zijn geconfigureerd in de AEM omgeving, zodat de `java` kan worden uitgevoerd door de gebruiker die AEM start.
 
-* U kunt het gereedschap Inhoud overbrengen gebruiken met de volgende typen gegevensopslag: File Data Store, S3 Data Store, Shared S3 Data Store en Azure Blob Store Data Store.
+* Het gereedschap voor het overbrengen van inhoud kan worden gebruikt met de volgende typen gegevensopslag: File Data Store, S3 Data Store, Shared S3 Data Store en Azure Blob Store Data Store.
 
 * Als u een *Sandbox-omgeving*, zorgt u ervoor dat uw omgeving actueel is en wordt bijgewerkt naar de nieuwste versie. Als u een *Productieomgeving* gebruikt, wordt deze automatisch bijgewerkt.
 
 * Om een inname te beginnen, moet u tot de lokale AEM behoren **beheerders** in de instantie Cloud Service waarnaar u inhoud overbrengt. Niet-geprivilegieerde gebruikers kunnen geen toegang krijgen zonder handmatig het migratietoken op te geven.
 
-* Als de instelling **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** is ingeschakeld, wordt de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud kan worden ingevoerd. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die is toegevoegd aan de **beheerders** groep. De gebruiker moet opnieuw aan worden toegevoegd **beheerders** groep om het toegangstoken voor het Hulpmiddel van de Overdracht van de Inhoud terug te winnen.
+* Als de instelling **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** is ingeschakeld, wordt de gehele bestaande opslagplaats verwijderd en wordt een nieuwe opslagplaats gemaakt waarin inhoud kan worden ingevoerd. Dit betekent dat alle instellingen, inclusief de machtigingen voor de Cloud Service van het doel, opnieuw worden ingesteld. Dit geldt ook voor een beheerder die is toegevoegd aan de **beheerders** groep. De gebruiker moet opnieuw worden toegevoegd aan de **beheerders** groep om het toegangstoken voor het Hulpmiddel van de Overdracht van de Inhoud terug te winnen.
 
 * Oplossingen ondersteunen het samenvoegen van inhoud van meerdere bronnen in de instantie van de Cloud Service van het doel niet als de inhoud van de twee bronnen naar dezelfde paden op het doel wordt verplaatst. Als u inhoud van meerdere bronnen naar één doelinstantie wilt verplaatsen, moet u ervoor zorgen dat de inhoudspaden van de Cloud Servicen elkaar niet overlappen.
 
 * De extractiecode is 14 dagen geldig vanaf het moment dat deze is gemaakt/vernieuwd. Het kan op elk ogenblik worden verlengd. Als de extractietoets is verlopen, kunt u geen extractie uitvoeren.
 
-* Met het CTT-hulpprogramma (Content Transfer Tool) wordt geen inhoudanalyse uitgevoerd voordat inhoud van de broninstantie naar de doelinstantie wordt overgebracht. CTT maakt bijvoorbeeld geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud wanneer inhoud wordt ingesloten in een publicatieomgeving. De inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. De gebruiker heeft de capaciteit om een migratie in te voeren die in een instantie Auteur of Publish of beide wordt geplaatst. Men adviseert dat terwijl het bewegen van inhoud naar een instantie van de Productie, CTT op de instantie van de bronauteur moet worden geïnstalleerd om inhoud naar de instantie van de doelauteur te verplaatsen en zo ook, CTT op de bron te installeren publiceer instantie om inhoud naar het doel te verplaatsen publiceer instantie. Zie [Het gereedschap Inhoud overbrengen uitvoeren op een instantie Publiceren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) voor meer informatie .
+* Met het gereedschap Inhoud overbrengen (CTT) kunt u geen inhoudanalyse uitvoeren voordat u inhoud van de broninstantie naar de doelinstantie overbrengt. CTT maakt bijvoorbeeld geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud wanneer inhoud wordt ingesloten in een publicatieomgeving. De inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. De gebruiker heeft de capaciteit om een migratie in te voeren die in een instantie Auteur of Publish of beide wordt geplaatst. Men adviseert dat terwijl het bewegen van inhoud naar een instantie van de Productie, CTT op de instantie van de bronauteur moet worden geïnstalleerd om inhoud naar de instantie van de doelauteur te verplaatsen en zo ook, CTT op de bron te installeren publiceer instantie om inhoud naar het doel te verplaatsen publiceer instantie. Zie [Het gereedschap Inhoud overbrengen uitvoeren op een instantie Publiceren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) voor meer informatie .
 
-* De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. De _Extractie_ proceskopieën `/home` in de migratieset en er wordt een gebruikerstoewijzing aan toegevoegd door een veld toe te voegen dat van het e-mailadres van elke gebruiker is gemaakt. Zie voor meer informatie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). De _Inname_ proces kopieert alle gebruikers en groepen die in gemigreerde inhoud ACLs van verwijzingen worden voorzien.
+* De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. De _Extractie_ proceskopieën `/home` in de migratieset en er wordt een gebruikerstoewijzing aan toegevoegd door een veld toe te voegen dat van het e-mailadres van elke gebruiker is gemaakt. Zie voor meer informatie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). De _Inname_ proces kopieert alle gebruikers en groepen die in gemigreerde inhoud ACLs van verwijzingen worden voorzien. Zie [Gesloten gebruikersgroepen migreren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen voor groepen die in een Gesloten beleid van de Groep van de Gebruiker (CUG) worden gebruikt.
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
