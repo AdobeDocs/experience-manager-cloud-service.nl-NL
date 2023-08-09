@@ -2,9 +2,9 @@
 title: Kenmerken en typen
 description: Leer over de gegevensattributen en de types die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 9df57ce958bb8f7f9406b9fe342c9d2a4ccb0ae0
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '681'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 
 >[!NOTE]
 >
->De validatie van de inhoud wordt uitgevoerd aan de serverzijde. De Universele Redacteur werkt eenvoudig met de gegevensattributen. De validatie dat deze in het model/de structuur passen, moet op API-niveau worden uitgevoerd.
+>De validatie van de inhoud wordt uitgevoerd op de server. De Universele Redacteur werkt eenvoudig met de gegevensattributen. De validatie dat deze in het model/de structuur passen, moet op API-niveau worden uitgevoerd.
 
 ## Gegevenseigenschappen {#data-properties}
 
@@ -31,29 +31,30 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 | `data-editor-itemfilter` | Definieert welke verwijzingen kunnen worden gebruikt |
 | `data-editor-itemlabel` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven <br>In geval van `itemmodel` is ingesteld, wordt het label opgehaald via het model |
 | `data-editor-itemmodel` | Definieert een model dat wordt gebruikt voor bewerkingen op basis van formulieren in de rail Eigenschappen |
-| `data-editor-behavior` | Definieert het gedrag van een instrumentatie, bijvoorbeeld tekst of afbeelding die op zichzelf staat en die een component kan simuleren om deze verplaatsbaar of verplaatsbaar te maken |
+| `data-editor-behavior` | Definieert het gedrag van een instrumentatie, bijvoorbeeld tekst of afbeelding die op zichzelf staat en die een component kan simuleren om deze verplaatsbaar of verplaatsbaar te maken. |
 
 ## Itemtypen {#item-types}
 
 | `itemtype` | Beschrijving | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
 |---|---|---|---|---|---|---|---|
-| `text` | Tekst kan worden bewerkt binnen de HTML-tags, maar alleen in eenvoudige tekstopmaak, zonder tekstopmaak, wordt deze doorgaans gebruikt voor titelcomponenten, bijvoorbeeld | Optioneel | Vereist | n.v.t. | Optioneel | n.v.t. | Optioneel |
-| `richtext` | Tekst kan worden bewerkt met volledige tekstopties. RTE wordt weergegeven in het rechterdeelvenster | Optioneel | Vereist | n.v.t. | Optioneel | n.v.t. | Optioneel |
-| `media` | Het bewerkbare element is een element, bijvoorbeeld een afbeelding of video | Optioneel | Vereist | Optioneel<br>lijst met afbeeldings- of videofiltercriteria die worden doorgegeven aan de elementenkiezer | Optioneel | n.v.t. | Optioneel |
-| `container` | Het bewerkbare gedrag gedraagt zich als container voor componenten o.a. het Systeem van de Paragraaf. | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>een lijst met toegestane componenten | Optioneel | n.v.t. | n.v.t. |
-| `component` | Het bewerkbare item is een component. Er wordt geen extra functionaliteit aan toegevoegd. Het is verplicht beweegbare/verhandelbare delen van het DOM aan te geven en de spoorstaaf en de velden ervan te openen. | Vereist | n.v.t. | n.v.t. | Optioneel | Optioneel | n.v.t. |
-| `reference` | Het bewerkbare item is een verwijzing, bijvoorbeeld een inhoudsfragment, een ervaringsfragment of een product | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>lijst met filtercriteria voor Content Fragment, Product of Experience Fragment die worden doorgegeven aan de referentiekiezer | Optioneel | Optioneel | n.v.t. |
+| `text` | Tekst kan worden bewerkt binnen de HTML-tags, maar alleen in de eenvoudige tekstopmaak, zonder tekstopmaak, wordt deze doorgaans gebruikt voor titelcomponenten, bijvoorbeeld | Optioneel | Vereist | nvt | Optioneel | nvt | Optioneel |
+| `richtext` | Tekst kan worden bewerkt met volledige tekstopties. RTE wordt weergegeven in het rechterdeelvenster | Optioneel | Vereist | nvt | Optioneel | nvt | Optioneel |
+| `media` | Het bewerkbare element is een element, bijvoorbeeld een afbeelding of video | Optioneel | Vereist | Optioneel<br>lijst met afbeeldings- of videofiltercriteria die worden doorgegeven aan de elementenkiezer | Optioneel | nvt | Optioneel |
+| `container` | Het bewerkbare gedrag gedraagt zich als container voor componenten o.a. het Systeem van de Paragraaf. | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>een lijst met toegestane componenten | Optioneel | nvt | nvt |
+| `component` | Het bewerkbare item is een component. Er wordt geen extra functionaliteit aan toegevoegd. Het is verplicht beweegbare/verhandelbare delen van het DOM aan te geven en de spoorstaaf en de velden ervan te openen. | Vereist | nvt | nvt | Optioneel | Optioneel | nvt |
+| `reference` | Het bewerkbare item is een verwijzing, bijvoorbeeld een inhoudsfragment, een ervaringsfragment of een product | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>lijst met filtercriteria voor Content Fragment, Product of Experience Fragment die worden doorgegeven aan de referentiekiezer | Optioneel | Optioneel | nvt |
 
 Afhankelijk van het gebruiksgeval `itemprop` of `itemid` al dan niet verplicht zijn. Bijvoorbeeld:
 
 * `itemid` is vereist als u Content Fragments via GraphQL opvraagt en u de lijst in context bewerkbaar wilt maken.
-* `itemprop` is vereist als u een component hebt die de inhoud van een Content Fragment waarnaar wordt verwezen, rendert en u de verwijzing in de component wilt bijwerken.
+* `itemprop` is vereist voor het geval u een component hebt die de inhoud van een Content Fragment waarnaar wordt verwezen, rendert en u de verwijzing in de component wilt bijwerken.
 
 ## Gedrag {#behaviors}
 
 | `data-editor-behavior` | Beschrijving |
 |---|---|
-| `component` | Kan standalone tekst, richtext, en media simuleren componenten zo te laten zij ook beweegbaar en verwijderbaar op de pagina zijn |
+| `component` | Wordt gebruikt om zelfstandige tekst, richtext en mediamimicomponenten toe te staan, zodat deze ook kunnen worden verplaatst en verplaatst op de pagina |
+| `container` | Gebruikt om containers te laten behandelen als hun eigen componenten zodat zij beweegbaar en verhandelbaar op de pagina zijn |
 
 ## Aanvullende bronnen {#additional-resources}
 

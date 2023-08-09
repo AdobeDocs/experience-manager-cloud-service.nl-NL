@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
+source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '2271'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Tik of klik om h
 
 >[!TIP]
 >
->De sneltoets gebruiken `L` om de adresbalk te openen.
+>De sneltoets gebruiken `L` de adresbalk openen.
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ In de tekstmodus kan de auteur van de inhoud klikken om tekstinhoud te selectere
 ![Tekstmodus](assets/text-mode.png)
 
 * U kunt [onbewerkte tekst bewerken](#editing-content) op zijn plaats.
-* U kunt ook [RTF bewerken](#editing-rich-text) op zijn plaats met extra opmaakopties die in de componentrail worden weergegeven.
+* U kunt [RTF bewerken](#editing-rich-text) op zijn plaats met extra opmaakopties die in de componentrail worden weergegeven.
 
 >[!TIP]
 >
@@ -203,7 +203,7 @@ De details van de inhoud worden weergegeven in de componentrail en de auteur kan
 
 #### Componentmodus {#component-mode}
 
-In de componentmodus kan de auteur van de inhoud klikken om te selecteren [Inhoudsfragmenten.](/help/assets/content-fragments/content-fragments.md)
+In de componentmodus kan de auteur van de inhoud klikken om te selecteren [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
 
 ![Componentmodus](assets/component-mode.png)
 
@@ -213,23 +213,9 @@ Wanneer u een inhoudsfragment selecteert, worden de details ervan weergegeven in
 >
 >De sneltoets gebruiken `C` om over te schakelen naar componentmodus.
 
-#### Bewerken {#edit}
-
-Wanneer in [componentmodus,](#component-mode) als u een [Inhoudsfragment,](/help/assets/content-fragments/content-fragments.md) de bewerkingsoptie wordt weergegeven op de modusrail.
-
-![Pictogram Bewerken](assets/edit.png)
-
-Als u op de knop Bewerken tikt of erop klikt, wordt het dialoogvenster [Inhoudsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) op een nieuw tabblad, zodat u toegang hebt tot de volledige bevoegdheden van de Inhoudsfragmenteditor.
-
-U kunt ook details van het inhoudsfragment bewerken in het dialoogvenster [componentrails](#edit-content-fragment) afhankelijk van de behoeften van uw workflow.
-
->[!TIP]
->
->De sneltoets gebruiken `E` om een geselecteerde component te bewerken.
-
 ### De Editor {#editor}
 
-De editor neemt het grootste deel van het venster in beslag en bevindt zich op de locatie van de pagina die is opgegeven in [de locatiebalk](#location-bar) wordt weergegeven.
+De editor neemt het grootste deel van het venster in beslag en is de locatie van de pagina die is opgegeven in [de locatiebalk](#location-bar) wordt weergegeven.
 
 * Als de editor zich in een bewerkingsmodus bevindt, zoals [tekstmodus](#text-mode) of [mediamodus,](#media-mode) de inhoud kan worden bewerkt, maar u kunt de koppelingen niet volgen.
 * Als de editor zich bevindt in [voorvertoningsmodus,](#preview-mode) U kunt wel navigeren naar de inhoud en koppelingen volgen, maar u kunt de inhoud niet bewerken.
@@ -258,7 +244,7 @@ Niet alle componenten hebben details die kunnen worden weergegeven en/of bewerkt
 >
 >De sneltoets gebruiken `D` om over te schakelen naar de modus Eigenschappen.
 
-#### Modus Inhoudsstructuur {#Content-tree-mode}
+#### Modus Inhoudsstructuur {#content-tree-mode}
 
 In de modus Inhoudsboomstructuur wordt in de rails de hiërarchie van de pagina-inhoud weergegeven.
 
@@ -272,6 +258,43 @@ Wanneer het selecteren van een punt in de inhoudsboom, scrolt de redacteur aan d
 >
 >De sneltoets gebruiken `F` om over te schakelen naar de modus voor de inhoudstructuur.
 
+#### Bewerken {#edit}
+
+Wanneer in [componentmodus,](#component-mode) als u een [Inhoudsfragment](/help/assets/content-fragments/content-fragments.md) de bewerkingsoptie verschijnt op de componentrail.
+
+![Pictogram Bewerken](assets/edit.png)
+
+Als u op de knop Bewerken tikt of erop klikt, wordt het dialoogvenster [Inhoudsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) op een nieuw tabblad, zodat u toegang hebt tot de volledige bevoegdheden van de Inhoudsfragmenteditor.
+
+U kunt de details van het inhoudsfragment ook bewerken in de componenttrack, afhankelijk van de vereisten van de workflow.
+
+>[!TIP]
+>
+>De sneltoets gebruiken `E` om een geselecteerde component te bewerken.
+
+#### Toevoegen {#add}
+
+Als u een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de optie voor toevoegen weergegeven op de componentrails.
+
+![Pictogram toevoegen](assets/ue-add-component-icon.png)
+
+Als u op de knop Toevoegen tikt of erop klikt, wordt een vervolgkeuzelijst geopend met componenten die beschikbaar zijn voor [toevoegen aan de geselecteerde container.](#adding-components)
+
+>[!TIP]
+>
+>De sneltoets gebruiken `A` om een component aan een geselecteerde containercomponent toe te voegen.
+
+#### Verwijderen {#delete}
+
+Als u een component binnen een containercomponent selecteert in de inhoudsstructuur of in de editor, wordt de verwijderingsoptie weergegeven op de componentrail.
+
+![Pictogram Verwijderen](assets/ue-delete-component-icon.png)
+
+Tikken of klikken op de knop Verwijderen [verwijdert de component.](#deleting-components)
+
+>[!TIP]
+>
+>De sneltoets gebruiken `Shift+Backspace` om een geselecteerde component uit een container te verwijderen.
 
 ## Inhoud bewerken {#editing-content}
 
@@ -323,7 +346,7 @@ Wijzigingen worden automatisch in de inhoud opgeslagen.
 
 ### Inhoudsfragmenten bewerken {#edit-content-fragment}
 
-Als u binnen [componentmodus](#component-mode) en selecteert u een [Inhoudsfragment,](/help/assets/content-fragments/content-fragments.md) u kunt de details in de componentrail bewerken.
+Als u binnen [componentmodus](#component-mode) en selecteert u een [Inhoudsfragment](/help/assets/content-fragments/content-fragments.md) u kunt de details in de componentrail bewerken.
 
 ![Een inhoudsfragment bewerken](assets/ue-edit-cf.png)
 
@@ -331,11 +354,43 @@ De velden die zijn gedefinieerd in het inhoudsmodel van het geselecteerde inhoud
 
 Wijzigingen worden automatisch in de inhoud opgeslagen.
 
-Als u het inhoudsfragment in het dialoogvenster [Inhoudsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in plaats daarvan, klik [bewerkknop](#edit) in de modusspoorstaaf.
+Als u het inhoudsfragment in het dialoogvenster [Inhoudsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in plaats daarvan, klik [bewerkknop](#edit) in de modusrail.
+
+### Componenten toevoegen aan containers {#adding-components}
+
+1. Selecteer een containercomponent in de inhoudsstructuur of in de editor.
+1. Tik vervolgens op het pictogram Toevoegen of klik op het pictogram in de componenttrack.
+
+   ![Een component selecteren om aan een container toe te voegen](assets/ue-add-component.png)
+
+De component wordt opgenomen in de container en kan in de redacteur worden uitgegeven.
+
+### Componenten uit containers verwijderen {#deleting-components}
+
+1. Selecteer een containercomponent in de inhoudsstructuur of in de editor.
+1. Tik of klik op het chevron-pictogram van de container om de inhoud ervan in de inhoudsstructuur uit te vouwen.
+1. Selecteer vervolgens in de inhoudsstructuur een component in de container.
+1. Tik of klik op het verwijderpictogram in de componenttrack.
+
+   ![Een component verwijderen](assets/ue-delete-component.png)
+
+De geselecteerde component is verwijderd.
+
+### Componenten opnieuw ordenen in containers {#reordering-components}
+
+1. Selecteer een containercomponent in de inhoudsstructuur of in de editor.
+1. Indien nog niet in [de modus Inhoudsboomstructuur,](#content-tree-mode) ga naar de site.
+1. Tik of klik op het chevron-pictogram van de container om de inhoud ervan in de inhoudsstructuur uit te vouwen.
+1. De greeppictogrammen van de belemmering naast de componenten binnen de container tonen dat u hen kunt herschikken. Sleep de componenten om deze binnen de container opnieuw te ordenen.
+
+   ![Componenten opnieuw ordenen](assets/ue-reordering-components.png)
+1. De gesleepte component wordt grijs in de componentstructuur, terwijl de invoegpositie wordt aangeduid met een blauwe lijn. Laat de component los om deze op de nieuwe locatie te plaatsen.
+
+De componenten worden opnieuw gerangschikt in zowel de inhoudsstructuur als de editor
 
 ## Inhoud voorvertonen {#previewing-content}
 
-Wanneer u klaar bent met het bewerken van inhoud, wilt u er vaak door navigeren om te zien hoe het er uitziet in de inhoud van andere pagina&#39;s. In [voorbeeldmodus](#preview-mode) u kunt op koppelingen klikken om door de inhoud te navigeren zoals een lezer zou doen. De inhoud wordt in de editor gerenderd zoals deze zou worden gepubliceerd.
+Wanneer u klaar bent met het bewerken van inhoud, wilt u er vaak door navigeren om te zien hoe de inhoud er op andere pagina&#39;s uitziet. In [voorbeeldmodus](#preview-mode) u kunt op koppelingen klikken om door de inhoud te navigeren zoals een lezer zou doen. De inhoud wordt in de editor gerenderd zoals deze zou worden gepubliceerd.
 
 Houd er rekening mee dat in de voorvertoningsmodus tikken of klikken op inhoud reageert op de manier waarop dit voor een lezer van de inhoud gebeurt. Als u de te bewerken inhoud wilt selecteren, schakelt u over naar een bewerkingsmodus, zoals [tekstmodus](#text-mode) of [mediamodus.](#media-mode)
 
