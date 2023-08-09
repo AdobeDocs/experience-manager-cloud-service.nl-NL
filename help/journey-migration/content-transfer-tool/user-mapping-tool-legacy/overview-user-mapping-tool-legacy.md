@@ -36,7 +36,7 @@ Als onderdeel van de as a Cloud Service overgang naar Adobe Experience Manager (
 
 Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag. Deze integratie vereist het gebruik van de [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) voor het beheren van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS), dat één aanmelding voor alle Adobe-cloudtoepassingen biedt. Zie voor meer informatie [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=en#identity-management). Vanwege deze wijziging moeten bestaande gebruikers en groepen worden toegewezen aan hun IMS-id&#39;s om dubbele gebruikers en groepen in de auteur-instantie van de Cloud Service te voorkomen.
 
-## Gereedschap Toewijzing gebruiker {#mapping-tool}
+## Gereedschap Gebruiker toewijzen {#mapping-tool}
 
 Met het gereedschap Inhoud overbrengen (zonder gebruikerstoewijzing) worden alle gebruikers en groepen gemigreerd die zijn gekoppeld aan de inhoud die wordt gemigreerd. Het gereedschap Toewijzing gebruiker maakt deel uit van het gereedschap Inhoud overbrengen. Het enige doel is de gebruikers te bewerken, zodat ze correct worden herkend door IMS, de functionaliteit voor eenmalige aanmelding die door AEM as a Cloud Service wordt gebruikt. Nadat deze wijzigingen zijn doorgevoerd, worden de gebruikers en groepen van de opgegeven inhoud met het gereedschap Inhoud overbrengen naar de gebruikelijke locatie gemigreerd.
 

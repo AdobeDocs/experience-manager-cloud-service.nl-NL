@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Metagegevens in middelenweergave {#metadata}
 
-Metagegevens zijn gegevens of een beschrijving van de gegevens. Uw afbeeldingen als element kunnen bijvoorbeeld informatie bevatten over de camera waarop u hebt geklikt of over copyrightgegevens. Deze informatie is metagegevens van de afbeelding. Metagegevens zijn essentieel voor efficiënt middelenbeheer. Metagegevens zijn de verzameling van alle gegevens die voor een element beschikbaar zijn, maar hoeven niet noodzakelijkerwijs in dat element te zijn opgenomen.
+Metagegevens zijn gegevens of een beschrijving van de gegevens. Uw afbeeldingen als een element kunnen bijvoorbeeld informatie bevatten over de camera waarop u hebt geklikt of over copyrightgegevens. Deze informatie is metagegevens van de afbeelding. Metagegevens zijn essentieel voor efficiënt middelenbeheer. Metagegevens zijn de verzameling van alle gegevens die voor een element beschikbaar zijn, maar hoeven niet noodzakelijkerwijs in dat element te zijn opgenomen.
 
-Met metagegevens kunt u elementen verder indelen. Dit is handig wanneer de hoeveelheid digitale informatie toeneemt. Het is mogelijk om een paar honderd bestanden te beheren op basis van alleen de bestandsnamen, miniaturen en het geheugen. Deze aanpak is echter niet schaalbaar. Het is te kort wanneer het aantal betrokken personen en het aantal beheerde activa toenemen.
+Met metagegevens kunt u elementen verder indelen. Dit is handig wanneer de hoeveelheid digitale informatie toeneemt. U kunt een paar honderd bestanden beheren op basis van alleen de bestandsnamen, miniaturen en het geheugen. Deze aanpak is echter niet schaalbaar. Het is te kort wanneer het aantal betrokken personen en het aantal beheerde activa toenemen.
 
 Als er metagegevens worden toegevoegd, neemt de waarde van een digitaal element toe, omdat het element
 
@@ -23,7 +23,7 @@ Als er metagegevens worden toegevoegd, neemt de waarde van een digitaal element 
 * Gemakkelijker te beheren - u kunt gemakkelijker middelen met de zelfde reeks eigenschappen vinden en veranderingen op hen toepassen.
 * Volledig - asset bevat meer informatie en context met meer metagegevens.
 
-Om deze redenen beschikt u over de juiste middelen om metagegevens voor uw digitale elementen te maken, beheren en uit te wisselen.
+Om deze redenen beschikt u over de juiste middelen om metagegevens voor uw digitale elementen te maken, te beheren en uit te wisselen.
 
 ## De metagegevens weergeven {#view-metadata}
 
@@ -47,7 +47,7 @@ De slimme tags worden toegepast in de buurt van realtime en worden gegenereerd o
 
 ![Slimme tags van een element weergeven](assets/metadata-view-tags.png)
 
-*Afbeelding: Als u de slimme tags van een element wilt weergeven, klikt u op **[!UICONTROL Details]**op de werkbalk of dubbelklikt u op het element.*
+*Figuur: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**op de werkbalk of dubbelklikt u op het element.*
 
 Slimme tags bevatten ook een betrouwbaarheidsscore als percentage. Het geeft het vertrouwen aan dat aan de toegepaste tag is gekoppeld. U kunt de automatisch toegepaste slimme tags verkleinen.
 
@@ -66,7 +66,7 @@ Tags kunnen ook in een hiërarchie worden genest ter ondersteuning van relaties 
 >[!CONTEXTUALHELP]
 >id="assets_metadata_forms"
 >title="Metagegevens Forms"
->abstract="[!DNL Experience Manager Assets] biedt standaard veel standaardmetagegevensvelden. Organisaties hebben extra behoeften aan metagegevens en hebben meer metagegevensvelden nodig om bedrijfsspecifieke metagegevens toe te voegen. Met metagegevensformulieren kunnen bedrijven aangepaste metagegevensvelden toevoegen aan de pagina Details van een element. De bedrijfsspecifieke metagegevens verbeteren het beheer en de ontdekking van de bedrijfsmiddelen."
+>abstract="[!DNL Experience Manager Assets] biedt standaard veel standaardvelden voor metagegevens. Organisaties hebben extra behoeften aan metagegevens en hebben meer metagegevensvelden nodig om bedrijfsspecifieke metagegevens toe te voegen. Met metagegevensformulieren kunnen bedrijven aangepaste metagegevensvelden toevoegen aan de pagina Details van een element. De bedrijfsspecifieke metagegevens verbeteren het beheer en de ontdekking van de bedrijfsmiddelen."
 
 De middelenweergave biedt standaard vele standaardmetagegevensvelden. Organisaties hebben extra behoeften aan metagegevens en hebben meer metagegevensvelden nodig om bedrijfsspecifieke metagegevens toe te voegen. Met metagegevensformulieren kunnen bedrijven aangepaste metagegevensvelden toevoegen aan het element [!UICONTROL Details] pagina. De bedrijfsspecifieke metagegevens verbeteren het beheer en de ontdekking van de bedrijfsmiddelen. U kunt geheel nieuwe formulieren maken of een bestaand formulier opnieuw gebruiken.
 
@@ -78,7 +78,7 @@ In de middelenweergave wordt de volgende reeks gebruikt om te zoeken naar bestaa
 
 MIME-subtype > MIME-type > `default` form > Out-of-the-box form
 
-Als een metagegevensformulier bijvoorbeeld op naam staat `PDF` of `pdf` bestaat, bevat het geüploade PDF-document metagegevensvelden zoals gedefinieerd in het formulier. Als een metagegevensformulier met de naam `PDF` of `pdf` bestaat niet. De middelenweergave komt overeen als er een metagegevensformulier met de naam bestaat `application`. Als er een metagegevensformulier met de naam `application`De geüploade PDF-documenten bevatten metagegevensvelden zoals gedefinieerd in het formulier. Als in de weergave Elementen nog steeds geen overeenkomend metagegevensformulier wordt gevonden, wordt gezocht naar de `default` een metagegevensformulier om de in het formulier gedefinieerde metagegevensvelden toe te passen op de geüploade PDF-documenten. Als geen van deze stappen werkt, worden in de weergave Middelen metagegevensvelden toegepast die in het formulier buiten het vak zijn gedefinieerd, op alle geüploade PDF-documenten.
+Als een metagegevensformulier bijvoorbeeld op naam staat `PDF` of `pdf` bestaat, bevat het geüploade PDF-document metagegevensvelden zoals gedefinieerd in het formulier. Als een metagegevensformulier met de naam `PDF` of `pdf` bestaat niet. De middelenweergave komt overeen als er een metagegevensformulier met de naam bestaat `application`. Als er een metagegevensformulier met de naam `application`De geüploade PDF-documenten bevatten metagegevensvelden zoals gedefinieerd in het formulier. Als in de weergave Middelen nog steeds geen overeenkomend metagegevensformulier wordt gevonden, wordt gezocht naar de `default` metagegevensformulier waarmee u in het formulier gedefinieerde metagegevensvelden kunt toepassen op de geüploade PDF-documenten. Als geen van deze stappen werkt, worden in de weergave Middelen metagegevensvelden toegepast die in het formulier buiten het vak zijn gedefinieerd, op alle geüploade PDF-documenten.
 
 >[!IMPORTANT]
 >
@@ -90,14 +90,14 @@ Ga als volgt te werk om een metagegevensformulier te maken:
 
    ![metagegevensformulieren, optie in linkerzijbalk](assets/metadata-forms-sidebar.png)
 
-1. Klikken **[!UICONTROL Create]** in de rechterbovenhoek van de gebruikersinterface.
-1. Geef een naam op voor het formulier en klik op **[!UICONTROL Create]**.
+1. Klikken **[!UICONTROL Create]**, in de rechterbovenhoek van de gebruikersinterface.
+1. Geef het formulier een naam en klik op **[!UICONTROL Create]**.
 1. Geef een naam op voor de tab in **[!UICONTROL Settings]** in het rechterspoor.
 1. Van de **[!UICONTROL Components]** Sleep de vereiste componenten naar een tabblad in het formulier. Sleep de componenten in de gewenste volgorde.
 
    ![metagegevensformulieren, optie in linkerzijbalk](assets/metadata-form-new.png)
 
-   *Afbeelding: Metagegevens maken interface met opties voor het toevoegen van componenten en optie voor het weergeven van een voorbeeld van het formulier.*
+   *Afbeelding: interface voor het maken van metagegevens met opties voor het toevoegen van componenten en de optie voor een voorbeeldweergave van het formulier.*
 
 1. Geef voor elke component een naam op in het dialoogvenster **[!UICONTROL Settings]** in de rechterspoorstaaf een kaart van de ondersteunde eigenschappen leveren.
 1. Selecteer optioneel voor een component **[!UICONTROL Required]** om het metagegevensveld verplicht te maken en selecteer **[!UICONTROL Read-Only]** om het veld in het element onbewerkbaar te maken [!UICONTROL Details] pagina.

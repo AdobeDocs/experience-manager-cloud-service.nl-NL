@@ -15,9 +15,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI-tests"
->abstract="Het testen van de gebruikersinterface van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd)."
+>abstract="Het testen UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd)."
 
-Het testen van de gebruikersinterface van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen.
+Het testen UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen.
 
 ## Overzicht {#custom-ui-testing}
 
@@ -29,7 +29,7 @@ Adobe moedigt het gebruik van Cypress aan, aangezien het in real time herladen e
 
 UI-tests worden uitgevoerd als onderdeel van een specifieke kwaliteitspoort voor elke Cloud Manager-pijplijn met een [**Aangepaste UI-tests** stap](/help/implementing/cloud-manager/deploy-code.md) in [productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) of optioneel [niet-productieleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten toelaten om fouten te ontdekken en te melden.
 
-In tegenstelling tot aangepaste functionele tests, die HTTP-tests zijn die in Java zijn geschreven, kunnen UI-tests een Docker-afbeelding zijn met tests die in elke taal zijn geschreven, mits ze de conventies volgen die in de sectie zijn gedefinieerd [UI-tests samenstellen](#building-ui-tests).
+In tegenstelling tot aangepaste functionele tests, die HTTP-tests zijn die in Java zijn geschreven, kunnen UI-tests een Docker-afbeelding zijn met tests die in elke taal zijn geschreven, mits ze de conventies volgen die in de sectie zijn gedefinieerd [Interfacetests maken](#building-ui-tests).
 
 >[!TIP]
 >
@@ -49,19 +49,19 @@ In deze sectie worden de stappen beschreven die zijn vereist voor het instellen 
 
      >[!NOTE]
      >
-     >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `ui.tests` mappen, kunt u ook de nieuwste versie genereren met de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
+     >Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `ui.tests` mappen, kunt u ook de meest recente versie genereren met de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
 
    * Gebruik voor Java en WebDriver de voorbeeldcode van het dialoogvenster [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
-   * Voor andere programmeertalen raadpleegt u de sectie [UI-tests samenstellen](#building-ui-tests) in dit document aan opstelling het testproject.
+   * Zie de sectie voor andere programmeertalen [Interfacetests maken](#building-ui-tests) in dit document aan opstelling het testproject.
 
-1. Zorg ervoor dat de UI-test wordt geactiveerd volgens de sectie [Klanten kiezen](#customer-opt-in) in dit document.
+1. Zorg ervoor dat UI-tests worden geactiveerd zoals beschreven in de sectie [Klanten kiezen](#customer-opt-in) in dit document.
 
 1. Ontwikkel uw testdoosjes en [Voer de tests lokaal uit](#run-ui-tests-locally).
 
 1. Leg uw code vast in de gegevensopslagruimte van Cloud Manager en voer een pijplijn van Cloud Manager uit.
 
-## UI-tests samenstellen {#building-ui-tests}
+## Interfacetests maken {#building-ui-tests}
 
 Een Maven project produceert een Docker bouwt context. In deze docker wordt de bouwcontext beschreven hoe u een Docker-afbeelding kunt maken die de UI-tests bevat en die door Cloud Manager wordt gebruikt om een Docker-afbeelding te genereren die de werkelijke UI-tests bevat.
 
@@ -216,7 +216,7 @@ De volgende omgevingsvariabelen worden bij uitvoering aan de Docker-afbeelding d
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | De URL van de AEM instantie van de auteur | Alles |
 | `AEM_AUTHOR_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt om u aan te melden bij de instantie van de AEM auteur | Alles |
 | `AEM_AUTHOR_PASSWORD` | `admin` | Het wachtwoord om u aan te melden bij de AEM | Alles |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | De URL van de AEM-publicatie-instantie | Alles |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | De URL van de AEM-instantie | Alles |
 | `AEM_PUBLISH_USERNAME` | `admin` | De gebruikersnaam die moet worden gebruikt om u aan te melden bij de AEM-publicatie-instantie | Alles |
 | `AEM_PUBLISH_PASSWORD` | `admin` | Het wachtwoord voor aanmelding bij de AEM-publicatie-instantie | Alles |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Het pad waar het XML-rapport van de testresultaten moet worden opgeslagen | Alles |
@@ -259,7 +259,7 @@ Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geï
 
 >[!NOTE]
 >
-> Als u meer middelen nodig hebt, maakt u een geval voor de klantenservice en beschrijft u uw gebruikscase. Adobe zal uw verzoek beoordelen en de nodige assistentie verlenen.
+> Als u meer middelen nodig hebt, maakt u een kwestie voor de klantenservice en beschrijft u uw gebruikscase. Adobe zal uw verzoek beoordelen en de juiste hulp bieden.
 
 ## Seleniumspecifieke details
 
@@ -309,11 +309,11 @@ Tests moeten soms bestanden uploaden naar de toepassing die wordt getest. Om de 
 
 ## UI-tests lokaal uitvoeren {#run-ui-tests-locally}
 
-Alvorens tests UI in een pijpleiding van de Manager van de Wolk te activeren, adviseert het om de tests UI plaatselijk tegen te stellen [as a Cloud Service SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) of tegen een werkelijk AEM as a Cloud Service instantie.
+Alvorens tests UI in een pijpleiding van de Manager van de Wolk te activeren, adviseert het om de tests UI plaatselijk tegen te stellen [AS A CLOUD SERVICE SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) of tegen een werkelijk AEM as a Cloud Service instantie.
 
 ### Monster van Cypress-test {#cypress-sample}
 
-1. Open een shell en navigeer naar de `ui.tests/test-module` map in uw opslagplaats
+1. Open een shell en navigeer naar `ui.tests/test-module` map in uw opslagplaats
 
 1. Cypress en andere voorwaarden installeren
 
@@ -349,7 +349,7 @@ Alvorens tests UI in een pijpleiding van de Manager van de Wolk te activeren, ad
 
 ### Voorbeeld van JavaScript WebdriverIO-test {#javascript-sample}
 
-1. Open een shell en navigeer naar de `ui.tests` map in uw opslagplaats
+1. Open een shell en navigeer naar `ui.tests` map in uw opslagplaats
 
 1. Voer hieronder bevel uit om de tests te beginnen gebruikend Maven
 
@@ -371,9 +371,9 @@ Alvorens tests UI in een pijpleiding van de Manager van de Wolk te activeren, ad
 >
 >Zie voor meer informatie [Opslagplaats voor projectarchetype AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
-### Voorbeeld van Java Selenium WebDriver-test {#java-sample}
+### Java Selenium WebDriver Test Sample {#java-sample}
 
-1. Open een shell en navigeer naar de `ui.tests/test-module` map in uw opslagplaats
+1. Open een shell en navigeer naar `ui.tests/test-module` map in uw opslagplaats
 
 1. Voer de onderstaande opdrachten uit om de tests te starten met Maven
 

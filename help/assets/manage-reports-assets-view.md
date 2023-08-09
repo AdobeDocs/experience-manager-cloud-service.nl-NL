@@ -14,9 +14,9 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="assets_reports"
 >title="Rapporten"
->abstract="Middelenrapportage geeft beheerders inzicht in de activiteiten van de weergaveomgeving van Adobe Experience Manager Assets. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product omgaan. Alle gebruikers die aan het het productprofiel van Beheerders worden toegewezen kunnen tot het dashboard van Inzichten toegang hebben of user-defined rapporten creëren."
+>abstract="Middelenrapportage geeft beheerders inzicht in de activiteiten van de weergaveomgeving van Adobe Experience Manager Assets. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken. Alle gebruikers die aan het het productprofiel van Beheerders worden toegewezen kunnen tot het dashboard van Inzichten toegang hebben of user-defined rapporten creëren."
 
-Middelenrapportage geeft beheerders inzicht in de activiteiten van de weergaveomgeving van Adobe Experience Manager Assets. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product omgaan.
+Middelenrapportage geeft beheerders inzicht in de activiteiten van de weergaveomgeving van Adobe Experience Manager Assets. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken.
 
 ## Toegangsrapporten {#access-reports}
 
@@ -28,11 +28,11 @@ In de weergave Elementen kunt u realtime gegevens voor de weergave Elementen wee
 
 ![Werkbalkopties wanneer u een element selecteert](assets/assets-essentials-live-statistics.png)
 
-Klikken **[!UICONTROL Insights]** U kunt de volgende automatisch gegenereerde grafieken weergeven in het navigatievenster aan de linkerkant:
+Klikken **[!UICONTROL Insights]** U kunt de volgende automatisch gegenereerde grafieken weergeven in het linkernavigatiegebied:
 
-* **Downloads**: Het aantal elementen dat in de laatste 30 dagen of 12 maanden in de omgeving van de weergave Elementen is gedownload, uitgedrukt aan de hand van een lijndiagram.
+* **Downloads**: Het aantal elementen dat in de afgelopen 30 dagen of 12 maanden is gedownload van de weergaveomgeving Elementen, uitgedrukt met behulp van een lijngrafiek.
 
-* **Uploads**: Het aantal elementen dat in de weergaveomgeving van Elementen is geüpload in de laatste 30 dagen of 12 maanden die met behulp van een lijndiagram zijn weergegeven.
+* **Uploads**: Het aantal elementen dat in de weergaveomgeving van Elementen is geüpload in de laatste 30 of 12 maanden die met behulp van een lijngrafiek worden weergegeven.
 
 * **Meest gebruikte zoekopdrachten**: Bekijk de belangrijkste gezochte termen samen met het aantal keren dat deze termen in de weergaveomgeving van de Middelen zijn doorzocht in de laatste 30 dagen of 12 maanden, weergegeven in een tabelindeling.
 
@@ -121,7 +121,7 @@ De volgende lijst verklaart het gebruik van alle kolommen die u aan het rapport 
     </tbody>
    </table>
 
-## Een uploadrapport maken {#create-upload-report}
+## Een rapport voor uploaden maken {#create-upload-report}
 
 Een rapport voor uploaden maken:
 

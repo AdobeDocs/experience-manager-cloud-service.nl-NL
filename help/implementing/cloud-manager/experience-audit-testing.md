@@ -1,5 +1,5 @@
 ---
-title: Experience Audit Testing
+title: Ervaring controleren testen
 description: Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
@@ -10,11 +10,11 @@ ht-degree: 0%
 ---
 
 
-# Experience Audit Testing {#experience-audit-testing}
+# Ervaring controleren testen {#experience-audit-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_expaudittesting"
->title="Experience Audit Testing"
+>title="Ervaring controleren testen"
 >abstract="Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen."
 
 Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen.
@@ -35,7 +35,7 @@ Experience Audit wordt aangedreven door Google Lighthouse, een opensource tool v
 
 >[!TIP]
 >
->U vormt welke pagina&#39;s inbegrepen in de Controle van de Ervaring wanneer u [de pijpleiding instellen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
+>U vormt welke pagina&#39;s inbegrepen in de Controle van de Ervaring wanneer u [de pijplijn instellen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## Werken met de resultaten van Experience Audit {#understanding-experience-audit-results}
 
@@ -60,7 +60,7 @@ De metrische wijziging kan een van de volgende waarden hebben.
 
 * **Geen wijziging** - De pagina(&#39;s) hebben dezelfde score gekregen sinds de laatste productiepijpleiding.
 
-* **N.v.t.** - Er was geen vorige score beschikbaar om te vergelijken.
+* **NVT** - Er was geen vorige score beschikbaar om te vergelijken.
 
 ![Resultaten van controle door ervaring](/help/implementing/cloud-manager/assets/exp-audit-1.png)
 
