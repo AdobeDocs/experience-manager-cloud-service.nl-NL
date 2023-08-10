@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2023.7.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.7.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2023.8.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.8.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 2721cb20083eeda7546513817f1ddfe12e9cb43a
+source-git-commit: d1640c14c796d7b7b6a7b236b38077e360559966
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2023.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2023.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release 2023.7.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
+Op deze pagina worden de opmerkingen bij de release 2023.8.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
 
 >[!NOTE]
 >
@@ -21,20 +21,34 @@ Op deze pagina worden de opmerkingen bij de release 2023.7.0 van Cloud Manager i
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2023.7.0 in AEM as a Cloud Service is 29 juni 2023. De volgende release is gepland voor 10 augustus 2023.
+De releasedatum voor Cloud Manager versie 2023.8.0 in AEM as a Cloud Service is 10 augustus 2023. De volgende release is gepland voor 7 september 2023.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Kaarten op de landingspagina van Cloud Manager geven nu aan of [verbeterde beveiliging](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) is ingeschakeld voor hun programma&#39;s.
-* Indien een ontwikkeling [pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) bevat geen teststappen. Gebruikers kunnen nu teststappen opnemen als ze [start de pijpleiding.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
-   * Dit zal gefaseerd worden uitgevoerd.
-* Wanneer [annulering van de uitvoering,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) in de goedkeuringsstap voor de uitvoering van de pijpleiding wordt de gebruiker nu verzocht een reden voor annulering te geven .
-   * Dit zal gefaseerd worden uitgevoerd.
-* Gebruikers kunnen nu toegang krijgen [logboeken van het proces van de exemplaarinhoud.](/help/implementing/developing/tools/content-copy.md#accessing-logs)
-   * Deze optie is alleen beschikbaar als zowel de bron- als de doelomgeving zich in AEM versie bevindt `2023.7.12549` of hoger.
+* Wanneer u inhoud configureert die is ingesteld op [inhoud kopiëren,](/help/implementing/developing/tools/content-copy.md) [contextbewuste configuraties](/help/implementing/developing/introduction/configurations.md) zijn nu toegestaan in inhoudssets in de gebruikersinterface.
+* Er zijn verbeteringen aangebracht om de begrijpelijkheid en het omgaan met foutberichten in de gebruikersinterface van Cloud Manager te verbeteren.
+
+## Self-Service Content Restore-programma voor vroegtijdige goedkeuring {#early-adoption}
+
+[Een nieuwe functie voor het terugzetten van selfservice-inhoud](/help/operations/restore.md) biedt nu back-upherstel voor maximaal zeven dagen en is beschikbaar voor vroege gebruikers voor evaluatiedoeleinden met:
+
+* Point-in-time back-upherstel voor de voorgaande 24 uur
+* Herstel van vaste tijd tot zeven dagen
+
+Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-restorefrombackup-adopter@adobe.com` van uw e-mail die aan uw Adobe ID is gekoppeld. Opmerking:
+
+* Het programma voor vroege adoptie is beperkt tot ontwikkelomgevingen.
+* De beschikbaarheid van het programma voor vroegtijdige adoptie is beperkt.
+* Deze functie is bedoeld om per ongeluk verwijderde inhoud te herstellen en is niet bedoeld voor noodherstel.
 
 ## Opgeloste problemen {#bug-fixes}
 
-* Navigeer aan auteursUI van de Manager van de Wolk niet meer om in Verenigde Shell na login opnieuw te richten.
-* Als u de datum van de go-live via de go-live widget bewerkt, gaat u nu naar de **Live gaan** in plaats van de **Uitgebreide beveiliging** tab.
-* Wanneer een kopieerbewerking wordt gestart, kan een gebruiker niet langer een omgeving selecteren waarin al een kopieerbewerking is aangeroepen.
+* De **Omgevingen** wordt nu gesloten na het activeren van de **[Inhoud kopiëren](/help/implementing/developing/tools/content-copy.md)** modal.
+* [Een wederuitvoering van de pijpleiding](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) is niet meer toegestaan als de vorige uitvoering geen `commitId` reeks op de bouwstijlstaat.
+* Een begrijpelijker bericht wordt nu getoond voor zeldzame fouten wanneer een gebruiker op een pijpleiding in klikt **Activiteit** of **Pijpleiding** schermen.
+* De `contentSetName` de waarde ontbreekt niet meer in logbestanden en wordt nu in de invoer opgegeven wanneer een [inhoudskopie](/help/implementing/developing/tools/content-copy.md) -bewerking.
+* Het is in bepaalde zeldzame omstandigheden niet langer mogelijk om twee executies te starten vanaf dezelfde pijpleiding die tot een &quot;vastgelopen&quot; staat leiden.
+* Wanneer een certificaat verloopt, worden de domeinnamen en IP allow-lists verbonden aan het certificaat niet meer verwijderd uit CDN.
+   * In dergelijke gevallen, zal de plaats bereikbaar blijven.
+   * [De interface van Cloud Manager](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) geeft meer zichtbare voorafgaande waarschuwingen dat het SSL-certificaat op het punt staat te verlopen.
+* Een probleem met AEM het verliezen van toegang tot te publiceren eindpunt werd bevestigd in situaties wanneer de Plaatsen als oplossing aan een activa-slechts programma worden toegevoegd.

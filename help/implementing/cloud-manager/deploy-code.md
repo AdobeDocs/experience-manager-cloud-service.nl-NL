@@ -2,9 +2,9 @@
 title: Uw code implementeren
 description: Leer hoe u uw code implementeert met gebruik van Cloud Manager-pijpleidingen in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 2d1d3ac98f8fe40ba5f9ab1ccec946c8448ddc43
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ _Slechts steunt het Volledige type van de pijpleiding van de Code van de Stapel 
 
 ## Uw code implementeren met Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
-Zodra u [Uw productiepijpleiding geconfigureerd](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) Met inbegrip van bewaarplaats, milieu, en het testen milieu, bent u bereid om uw code op te stellen.
+Als u eenmaal [Uw productiepijpleiding geconfigureerd](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) Met inbegrip van bewaarplaats, milieu, en het testen milieu, bent u bereid om uw code op te stellen.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
@@ -37,7 +37,7 @@ Zodra u [Uw productiepijpleiding geconfigureerd](/help/implementing/cloud-manage
 
    ![CTA](assets/deploy-code1.png)
 
-1. De **Uitvoering pijpleiding** weergegeven. Klikken **Opbouwen** om het proces te starten.
+1. De **Uitvoering pijpleiding** schermweergaven. Klikken **Opbouwen** om het proces te starten.
 
    ![Uitvoerscherm pijpleiding](assets/deploy-code2.png)
 
@@ -56,7 +56,7 @@ Het bouwstijlproces stelt uw code door drie fasen op.
 De **Werkgebiedimplementatie** fase. Deze stappen worden uitgevoerd.
 
 * **Validatie**  - Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken. bijvoorbeeld, het testen dat de gevormde tak bestaat en dat de milieu&#39;s beschikbaar zijn.
-* **Testen van build en eenheid** - Met deze stap wordt een inperkt ontwikkelproces uitgevoerd.
+* **Testen van build en eenheid** - Met deze stap wordt een inperkt buildproces uitgevoerd.
    * Zie [Omgevingsdetails samenstellen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) voor meer informatie over de ontwikkelomgeving.
 * **Codescannen** - Deze stap evalueert de kwaliteit van uw toepassingscode.
    * Zie [Testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md) voor meer informatie over het testproces.
@@ -126,34 +126,41 @@ Alle plaatsingen van de Cloud Service volgen een het rollen proces om nul onderb
 >
 >Het cachegeheugen van de Dispatcher wordt bij elke implementatie gewist. Het wordt dan opgewarmd alvorens de nieuwe publicatieknooppunten verkeer goedkeuren.
 
-## Een productieimplementatie opnieuw uitvoeren {#Reexecute-Deployment}
+## Het opnieuw uitvoeren van een Plaatsing van de Productie {#reexecute-deployment}
 
-Heruitvoering van de productieleidingsstap wordt ondersteund voor uitvoeringen waarbij de productieleidingsstap is voltooid. Het type voltooiing is niet belangrijk: de implementatie kan worden geannuleerd of mislukt. Dit gezegd zijnde, wordt verwacht dat het primaire gebruiksgeval gevallen is waarin de productielocatie om tijdelijke redenen is mislukt. De heruitvoering leidt tot een nieuwe uitvoering gebruikend de zelfde pijpleiding. Deze nieuwe uitvoering bestaat uit drie stappen:
+In zeldzame gevallen kunnen de stappen van de productielocatie om voorbijgaande redenen ontbreken. In dergelijke gevallen wordt heruitvoering van de productieleidingsfase ondersteund zolang de productieleidingsfase is voltooid, ongeacht het type voltooiing (bv. geannuleerd of mislukt). De heruitvoering leidt tot een nieuwe uitvoering gebruikend de zelfde pijpleiding die uit drie stappen bestaat.
 
 1. Bevestig stap - dit is hoofdzakelijk de zelfde bevestiging die tijdens een normale pijpleidingsuitvoering voorkomt.
-1. De bouwstijlstap - in de context van een heruitvoering, kopieert de bouwstijlstap artefacten, niet echt voert een nieuw bouwstijlproces uit.
+1. De bouwstijlstap - in de context van een heruitvoering, kopieert de bouwstijlstap artefacten en voert eigenlijk geen nieuw bouwstijlproces uit.
 1. De stap van de productieleiding - dit gebruikt de zelfde configuratie en de opties zoals de stap van de productieleiding in een normale pijpleidingsuitvoering.
 
-De bouwstijlstap kan lichtjes verschillend geëtiketteerd in UI zijn om erop te wijzen dat het artefacten kopieert, niet herbouwt.
+In dergelijke omstandigheden waarin een wederuitvoering mogelijk is, biedt de statuspagina van de productiepijpleiding de **Opnieuw uitvoeren** naast de gebruikelijke **Buildlog downloaden** -optie.
 
-![Opnieuw implementeren](assets/Re-deploy.png)
+![De optie Opnieuw uitvoeren in het venster Overzicht van de pijplijn](assets/re-execute.png)
 
-Beperkingen:
+>[!NOTE]
+>
+>In een heruitvoering, wordt de bouwstijlstap geëtiketteerd in UI om erop te wijzen dat het artefacten kopieert, niet re-bouwt.
 
-* Het opnieuw uitvoeren van de stap van de productieplaatsing zal slechts bij de laatste uitvoering beschikbaar zijn.
-* Heruitvoering is niet beschikbaar voor het uitvoeren van push-updates. Als de laatste uitvoering een uitvoering van een push-update is, is het niet mogelijk deze opnieuw uit te voeren.
-* Als de laatste uitvoering een uitvoering van een push-update is, is het niet mogelijk deze opnieuw uit te voeren.
+### Beperkingen {#limitations}
+
+* Het opnieuw uitvoeren van de stap van de productieplaatsing zal slechts voor de laatste uitvoering beschikbaar zijn.
+* Heruitvoering is niet beschikbaar voor het uitvoeren van push-updates.
+   * Als de laatste uitvoering een uitvoering van een push-update is, is het niet mogelijk deze opnieuw uit te voeren.
 * Als de laatste uitvoering is mislukt op een willekeurig punt vóór de stap voor de implementatie van de productie, is het niet mogelijk de productie opnieuw uit te voeren.
 
-### API opnieuw uitvoeren {#Reexecute-API}
+### API opnieuw uitvoeren {#reexecute-API}
 
-### Identificatie van een uitvoering van de uitvoering
+U kunt niet alleen gebruikmaken van de interface, maar ook van [De API voor Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) om wederuitvoeringen in gang te zetten en executies te identificeren die als wederuitvoeringen werden teweeggebracht.
 
-Om te bepalen of een uitvoering een uitvoering is die opnieuw wordt uitgevoerd, kan het triggerveld worden gecontroleerd. De waarde is *RE_EXECUTE*.
+#### Een nieuwe uitvoering activeren {#reexecute-deployment-api}
 
-### Nieuwe uitvoering activeren
+Om een re-uitvoering teweeg te brengen, doe een verzoek van de PUT aan de Verbinding van de HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` op de productie opstellen stapstaat.
 
-Om een heruitvoering te activeren, moet een verzoek van de PUT aan de Verbinding van het HAL &lt; (<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> op de status van de stap Implementeren van de productie. Als deze koppeling aanwezig is, kan de uitvoering vanaf die stap opnieuw worden gestart. Als dit niet het geval is, kan de uitvoering niet vanaf die stap opnieuw worden gestart. In de aanvankelijke versie, zal deze verbinding slechts ooit op de productie zijn opstellen stap maar de toekomstige versies kunnen het beginnen van de pijpleiding van andere stappen steunen. Voorbeeld:
+* Als deze koppeling aanwezig is, kan de uitvoering vanaf die stap opnieuw worden gestart.
+* Als dit niet het geval is, kan de uitvoering niet vanaf die stap opnieuw worden gestart.
+
+Deze verbinding is slechts beschikbaar voor de productie stelt stap op.
 
 ```JavaScript
  {
@@ -190,7 +197,10 @@ Om een heruitvoering te activeren, moet een verzoek van de PUT aan de Verbinding
   "status": "FINISHED"
 ```
 
+De syntaxis van de href-waarde van de HAL-koppeling is slechts een voorbeeld. De werkelijke waarde moet altijd worden gelezen van de HAL-koppeling en niet worden gegenereerd.
 
-De syntaxis van de HAL-koppeling _href_  bovenstaande waarde is niet bedoeld als referentiepunt. De werkelijke waarde moet altijd worden gelezen van de HAL-koppeling en niet worden gegenereerd.
+Het voorleggen van een verzoek van de PUT aan dit eindpunt resulteert in een 201 reactie als succesvol, en het antwoordlichaam is de vertegenwoordiging van de nieuwe uitvoering. Dit is vergelijkbaar met het starten van een normale uitvoering via de API.
 
-Een *PUT* verzoek aan dit eindpunt resulteert in een *201* reactie indien succesvol, en de responsinstantie is de representatie van de nieuwe uitvoering. Dit is vergelijkbaar met het starten van een normale uitvoering via de API.
+#### Een opnieuw uitgevoerde uitvoering identificeren {#identify-reexecution}
+
+Herhaalde uitvoeringen kunnen worden geïdentificeerd door de waarde `RE_EXECUTE` in de `trigger` veld.
