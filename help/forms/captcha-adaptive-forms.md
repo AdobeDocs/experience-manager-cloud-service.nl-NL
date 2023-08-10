@@ -2,7 +2,7 @@
 title: reCAPTCHA gebruiken in Adaptive Forms
 description: Leer hoe u de Google reCAPTCHA-service configureert in Adaptive Forms.
 topic-tags: adaptive_forms, author
-source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
+source-git-commit: b4665d0291ee1223e46c8ecf13ca13ea336107d3
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 0%
@@ -207,7 +207,7 @@ ReCAPTCHA in adaptieve vorm gebruiken:
 > 
 > Niet selecteren **[!UICONTROL Default]** van de de dienstdrop-down Captcha aangezien de standaard AEM dienst CAPTCHA wordt afgekeurd.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422641/recaptcha-google-adaptive-forms/?quality=12&learn=on)
 
 ### CAPTCHA-component tonen of verbergen op basis van regels {#show-hide-captcha}
 
