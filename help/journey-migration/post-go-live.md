@@ -2,9 +2,9 @@
 title: Post Go-Live
 description: Leer hoe u op problemen kunt controleren en de prestaties kunt verbeteren
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '477'
 ht-degree: 9%
 
 ---
@@ -15,10 +15,10 @@ ht-degree: 9%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM voor probleemoplossing"
 >abstract="De beste praktijken van het overzicht voor ononderbroken ontwikkeling en beheert logboeken samen met hulpmiddelen zoals de console &amp; CRXDE Lite van de Ontwikkelaar om met het oplossen van problemenkwesties met AEM te helpen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Logbestanden openen en beheren"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="as a Cloud Service ontwikkelingsinstrumenten AEM"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Logbestanden openen en beheren"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="as a Cloud Service ontwikkelingsinstrumenten AEM"
 
-Dit is het laatste deel van de reis zodat zult u leren hoe te om op kwesties te controleren en prestaties te verbeteren zodra de migratie volledig is. U moet ervoor zorgen dat tijdelijke bestanden worden opgeschoond, best practices voor continue ontwikkeling controleren en logbestanden beheren.
+Deze reis is het laatste deel, zodat zult u leren hoe te om op kwesties te controleren en prestaties te verbeteren zodra de migratie volledig is. U moet ervoor zorgen dat tijdelijke bestanden worden opgeschoond, best practices voor continue ontwikkeling controleren en logbestanden beheren.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -45,7 +45,7 @@ Als gebruiker hebt u toegang tot CRXDE Lite in de ontwikkelomgeving, maar niet i
 >[!IMPORTANT]
 >Schrijven naar onveranderlijke opslagplaatsen zoals `/libs` en `/apps` resulteert in fouten. Bovendien hebt u geen toegang tot ontwikkelaarstools voor testomgevingen en productieomgevingen.
 
-Zie [Ontwikkelen met CRXDE Lite](/help/implementing/developing/tools/crxde.md) om te leren hoe u uw AEM toepassing kunt ontwikkelen met behulp van CRXDE Lite.
+Zie [Ontwikkelen met CRXDE Lite](/help/implementing/developing/tools/crxde.md) voor meer informatie over hoe te om uw AEM toepassing te ontwikkelen gebruikend CRXDE Lite.
 
 ## Logbestanden beheren {#managing-logs}
 
@@ -58,20 +58,20 @@ Zie [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-log
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="Help en ondersteuning"
->abstract="Neem contact op met ons AEM ondersteuningsteam om uitleg te krijgen of om eventuele zorgen weg te nemen."
+>abstract="Neem contact op met AEM ondersteuningsteam van de Adobe voor meer informatie of om eventuele problemen op te lossen."
 >additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Ondersteuning voor Experience Cloud"
 
-Als u vragen hebt over toegang tot Cloud Service, neem dan contact op met uw Adobe of [Ondersteuning voor Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor meer informatie .
+Als u vragen heeft over toegang tot Cloud Service, neem dan contact op met uw Adobe of [Ondersteuning voor Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) voor meer informatie .
 
 ## Documentlessen {#document-learnings}
 
-Als de migratie is voltooid, moet u de tijdens dit proces verworven kennis documenteren. Sommige vragen die het documentatieproces kunnen helpen zijn:
+Als de migratie is voltooid, documenteert u de tijdens dit proces verworven kennis. Sommige vragen die het documentatieproces kunnen helpen zijn:
 
 * Wat werkte goed en wat niet?
 * Wat waren de belangrijkste pijnpunten?
-* Recommendations in geval van een toekomstige migratie.
+* Recommendations als er een toekomstige migratie is.
 
-Vervolgens deelt u deze cursussen na de migratie met belanghebbenden en teams binnen uw organisatie.
+Deze cursussen na de migratie delen met belanghebbenden en teams binnen uw organisatie.
 
 ## De reis eindigt - of wel? {#journey-ends}
 
