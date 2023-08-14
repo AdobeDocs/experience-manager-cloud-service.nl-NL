@@ -14,10 +14,10 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_benefits"
 >title="Voordelen van het gebruik van Cloud Acceleration Manager"
->abstract="Met CAM (Cloud Acceleration Manager) worden uw teams uitgerust met een begeleide ervaring met aanbevolen Adobe-methoden en methoden om uw teams te helpen bij het plannen, implementeren en uitvoeren van en gaan werken met vertrouwen."
+>abstract="Met CAM (Cloud Acceleration Manager) worden uw teams uitgerust met een ervaring met aanbevolen Adoben en methoden om uw teams te helpen bij het plannen, implementeren en uitvoeren van uw werk."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html" text="Aan de slag met Cloud Acceleration Manager"
 
-Met een groot aantal bedrijfsvereisten en aanpassingen kan het overstappen naar cloud een betrokken project zijn. Met CAM (Cloud Acceleration Manager) worden uw teams uitgerust met een begeleide ervaring met aanbevolen Adobe-methoden en methoden om uw teams te helpen bij het plannen, implementeren en uitvoeren van en gaan werken met vertrouwen.
+Met een groot aantal bedrijfsvereisten en aanpassingen kan het overstappen naar cloud een betrokken project zijn. Met CAM (Cloud Acceleration Manager) worden uw teams uitgerust met een ervaring met aanbevolen Adoben en methoden om uw teams te helpen bij het plannen, implementeren en uitvoeren van uw werk.
 
 De belangrijkste voordelen van het gebruik van Cloud Acceleration Manager zijn:
 
@@ -35,7 +35,7 @@ De belangrijkste voordelen van het gebruik van Cloud Acceleration Manager zijn:
 
 1. Optimaliseren van de inspanningen:
 
-   Toegang tot aanbevolen Adobe-procedures en automatiseringsgereedschappen om de migratie te helpen versnellen en toegang te krijgen tot tools om de migratietijd te minimaliseren.
+   Toegang tot aanbevolen best practices en automatiseringsgereedschappen voor Adobe om de migratie te versnellen en toegang te krijgen tot tools om de migratietijd te minimaliseren.
 
 ## Volgende functies {#whats-next}
 
