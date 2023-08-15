@@ -2,9 +2,9 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2990'
+source-wordcount: '2983'
 ht-degree: 4%
 
 ---
@@ -72,7 +72,7 @@ De werkbalk biedt toegang tot een groot aantal opties. Afhankelijk van uw huidig
 
 * **Modus selecteren**
 
-  Geeft de huidige [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en kunt u een andere modus selecteren, zoals bewerken, lay-out, tijdverdraaiing of doelversie.
+  Hiermee wordt de huidige [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en kunt u een andere modus selecteren, zoals bewerken, lay-out, tijdverdraaiing of doelversie.
 
   ![Modus selecteren, knop](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -84,7 +84,7 @@ De werkbalk biedt toegang tot een groot aantal opties. Afhankelijk van uw huidig
 
 * **Annoteren**
 
-  Hiermee kunt u [annotaties](/help/sites-cloud/authoring/fundamentals/annotations.md) naar de pagina wanneer een pagina wordt gecontroleerd. Na de eerste annotatie schakelt het pictogram over naar een getal dat het aantal annotaties op de pagina aangeeft.
+  Hiermee kunt u toevoegen [annotaties](/help/sites-cloud/authoring/fundamentals/annotations.md) naar de pagina wanneer een pagina wordt gecontroleerd. Na de eerste annotatie schakelt het pictogram over naar een getal dat het aantal annotaties op de pagina aangeeft.
 
   ![Knop Annotatie](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -144,7 +144,7 @@ U kunt een nieuwe component toevoegen door de **Componenten hierheen slepen** va
 1. Zorg ervoor dat de pagina zich bevindt in [**Bewerken** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Er zijn twee manieren om een nieuwe component in het alineasysteem te selecteren en toe te voegen:
 
-   * Selecteer **Component invoegen** van de werkbalk van een bestaande component of van de **Componenten hierheen slepen** doos.
+   * Selecteer de **Component invoegen** van de werkbalk van een bestaande component of van de **Componenten hierheen slepen** doos.
 
      ![Een component invoegen](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
@@ -240,25 +240,25 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
 * **Groep**
 
-  Hierdoor kunt u meerdere componenten tegelijk selecteren. Hetzelfde kan worden bereikt op een desktopapparaat met een **Ctrl+klikken** of **Command+klikken**.
+  Hiermee kunt u meerdere componenten tegelijk selecteren. Hetzelfde kan worden bereikt op een desktopapparaat met een **Ctrl+klikken** of **Command+klikken**.
 
   ![Groeperen, knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **Bovenliggend**
 
-  Hierdoor kunt u de bovenliggende component van de geselecteerde component selecteren.
+  Hiermee kunt u de bovenliggende component van de geselecteerde component selecteren.
 
   ![Bovenliggende knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **Layout**
 
-  Hierdoor kunt u de [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) van de geselecteerde component. Dit geldt alleen voor de geselecteerde component en activeert de component [Lay-outmodus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) voor de gehele pagina.
+  Hiermee kunt u de [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) van de geselecteerde component. Dit geldt alleen voor de geselecteerde component en activeert de component [Lay-outmodus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) voor de gehele pagina.
 
   ![Indeling, knop](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **Omzetten in een ervaringsfragmentvariatie**
 
-  Zo kunt u een nieuwe [ervaren, fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) van de geselecteerde component of voeg het aan een bestaand ervaringsfragment toe.
+  Hiermee kunt u een nieuwe [ervaren, fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) van de geselecteerde component of voeg het aan een bestaand ervaringsfragment toe.
 
   ![Omzetten in knop Fragment ervaren](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -307,7 +307,7 @@ Voor alle componenten kunt u de modus Volledig scherm openen (en afsluiten):
 
 ![De knop Volledig scherm](/help/sites-cloud/authoring/assets/editing-full-screen.png)
 
-De **Tekst** component:
+Bijvoorbeeld de **Tekst** component:
 
 ![Tekstcomponent op volledig scherm](/help/sites-cloud/authoring/assets/editing-text-full-screen.png)
 
@@ -317,10 +317,10 @@ De **Tekst** component:
 
 ## Een component verplaatsen {#moving-a-component}
 
-Een alineacomponent verplaatsen:
+Een alinea-component verplaatsen:
 
-1. Selecteer de alinea die u wilt verplaatsen met Tik en houd de muisknop ingedrukt of klik en houd de muisknop ingedrukt.
-1. Sleep de alinea naar de nieuwe locatie. AEM geeft aan waar de alinea kan worden gedeponeerd. Zet het neer op de gewenste plaats.
+1. Selecteer de alinea die u wilt verplaatsen met Tikken en vasthouden of klikken en vasthouden.
+1. Sleep de alinea naar de nieuwe locatie. AEM geeft aan waar de alinea kan worden geplaatst. Zet het neer op de gewenste plaats.
 
    ![Een component verplaatsen](/help/sites-cloud/authoring/assets/editing-moving-component.png)
 
@@ -328,15 +328,15 @@ Een alineacomponent verplaatsen:
 
 >[!TIP]
 >
->U kunt ook [Knippen en plakken](#component-toolbar) om een component te verplaatsen.
+>U kunt ook [Knippen en plakken](#component-toolbar) een component verplaatsen.
 
-## Componentindeling bewerken {#edit-component-layout}
+## Componentlay-out bewerken {#edit-component-layout}
 
 In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de lay-outmodus](/help/sites-cloud/authoring/features/responsive-layout.md) om een component aan te passen, kunt u de actie **Lay-out** selecteren zodat een component de lay-out van die component kan wijzigen en tijd kan besparen door de bewerkingsmodus niet te verlaten.
 
 1. Wanneer in **Bewerken** wijze van de plaatsenconsole, die een component selecteert openbaart de toolbar van de component.
 
-   ![De componentwerkbalk van een paginacomponent](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
+   ![De componentwerkbalk van een pagina-component](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
    Klik of tik op **Layout** actie om de lay-out van de component aan te passen.
 
@@ -354,7 +354,7 @@ In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de la
 
 1. Klik op de knop **Sluiten** in het actiemenu van de component om het wijzigen van de lay-out van de component op te houden. De werkbalk van de component keert terug naar de normale bewerkingsstatus.
 
-   ![De componentwerkbalk van een paginacomponent](/help/sites-cloud/authoring/assets/editing-layout-exit.png)
+   ![De componentwerkbalk van een pagina-component](/help/sites-cloud/authoring/assets/editing-layout-exit.png)
 
 >[!TIP]
 >
@@ -398,7 +398,7 @@ U kunt gemakkelijk zien op welke sjabloon de pagina is gebaseerd wanneer u de pa
 De [De paginamodus Actieve kopie](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) Hiermee kunt u snel een overzicht geven van de status van de live kopie en van de onderdelen die u wel of niet wilt overnemen:
 
 * Groene rand: Overgenomen
-* Roze rand: Overerving is geannuleerd
+* Roze rand: overerving is geannuleerd
 
 Bijvoorbeeld:
 
@@ -450,14 +450,14 @@ Een pagina kan worden vergrendeld vanuit:
 * **Sites** console
 
    1. Selecteer de pagina met [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-   1. Selecteer het vergrendelingspictogram.
+   1. Selecteer het slotpictogram.
 
       ![Knop Vergrendelen](/help/sites-cloud/authoring/assets/lock.png)
 
 * **Pagina-editor**
 
-   1. Selecteer **Pagina-informatie** om het menu te openen.
-   1. Selecteer **Pagina vergrendelen** optie.
+   1. Selecteer de **Pagina-informatie** om het menu te openen.
+   1. Selecteer de **Pagina vergrendelen** -optie.
 
 Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt en wanneer u een vergrendelingssymbool bewerkt, wordt deze weergegeven op de werkbalk.
 
@@ -492,7 +492,7 @@ In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en he
 >
 >Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
 >
->Pages can not be unlocked by impersonating the user who locked the page.
+>Pages cannot be unlocked by impersonating the user who locked the page.
 -->
 
 <!--

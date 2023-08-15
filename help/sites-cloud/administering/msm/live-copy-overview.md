@@ -4,9 +4,9 @@ description: Leer meer over de basisbeginselen van de overzichtsconsole van Live
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ U kunt het Live Copy-overzicht openen via het volgende:
 De **Overzicht van live kopiëren** kan worden geopend vanuit de **Verwijzingen** zijpaneel van **Sites** console:
 
 1. In de **Sites** console, [navigeer naar uw blauwdrukpagina en selecteer deze](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open de **[Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** spoorstaaf en selecteer **Actieve kopieën**.
+1. Open de **[Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** spoor en selecteer **Actieve kopieën**.
 
    ![Live kopie van referentiespoor](../assets/live-copy-references.png)
 
@@ -90,21 +90,21 @@ Wanneer u een pagina voor Live kopie selecteert, zijn de volgende acties beschik
 ![Acties in het kader van Live Copy-overzicht voor een live kopie](../assets/live-copy-overview-actions.png)
 
 * **Bewerken** - Open de pagina Live kopie voor bewerking.
-* **[Relationistatiestatus](#relationship-status)** - Informatie weergeven over de status en overerving.
+* **[Relatie status](#relationship-status)** - Informatie weergeven over de status en overerving.
 * **[Synchroniseren](overview.md#rollout-and-synchronize)** - Synchroniseer een actieve kopie om wijzigingen van de bron naar de actieve kopie over te brengen.
 * **[Herstellen](creating-live-copies.md#resetting-a-live-copy-page)** - Een pagina van Live kopie opnieuw instellen om alle annuleringen van overerving te verwijderen en de pagina terug te brengen naar dezelfde status als de bronpagina.
 * **[Onderbreken](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** - Hiermee deactiveert u tijdelijk de live relatie tussen een actieve kopie en de bijbehorende blauwdrukpagina.
 * **[Hervatten](creating-live-copies.md#resuming-inheritance-for-a-page)** - Met Hervatten kunt u een geschorste relatie herstellen.
 * **[Loskoppelen](overview.md#detaching-a-live-copy)** - Hiermee wordt de live relatie tussen een actieve kopie en de bijbehorende blauwdrukpagina permanent verwijderd.
 
-## Relationistatiestatus {#relationship-status}
+## Relatie status {#relationship-status}
 
-De **Relationistatiestatus** console heeft twee lusjes die een waaier van functionaliteit verstrekken.
+De **Relatie status** console heeft twee lusjes die een waaier van functionaliteit verstrekken.
 
-* [Relationistatiestatus](#relationship-status-tab)
+* [Relatie status](#relationship-status-tab)
 * [Live kopie](#live-copy-tab)
 
-### Relationistatiestatus {#relationship-status-tab}
+### Relatie status {#relationship-status-tab}
 
 Dit tabblad bevat gedetailleerde informatie over de status van de relatie tussen de blauwdruk en Live kopie.
 

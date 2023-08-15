@@ -2,9 +2,9 @@
 title: Uw demo-sites beheren
 description: Leer meer over de gereedschappen die beschikbaar zijn om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Leer meer over de gereedschappen die beschikbaar zijn om u te helpen uw demosite
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Reference Demos Add-on trip, [Site maken](create-site.md) u creeerde een nieuwe demoplaats die op de malplaatjes van de Toevoeging van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
+In het vorige document van de AEM Reference Demos Add-on trip, [Site maken,](create-site.md) u creeerde een nieuwe demoplaats die op de malplaatjes van de Toevoeging van de Demo van de Verwijzing wordt gebaseerd. Nu moet u:
 
 * Begrijp hoe te om tot het AEM auteursmilieu toegang te hebben.
 * Weet hoe u een site kunt maken op basis van een sjabloon.
@@ -41,7 +41,7 @@ Dit document helpt u begrijpen hoe u de demosites kunt beheren die u hebt gemaak
 
 Nu u uw eigen demosites hebt, wilt u waarschijnlijk weten hoe u deze kunt beheren. De pijpleiding stelde niet alleen de plaatsmalplaatjes op om uw inhoud van demoplaatsen te geven, zette het ook een reeks nut op om die plaatsen te beheren.
 
-1. Selecteer in de AEM algemene navigatiebalk **Gereedschappen** -> **Demo van referenties** -> **Referentie-demo-hulpprogramma&#39;s**.
+1. Selecteer in de AEM algemene navigatiebalk de optie **Gereedschappen** -> **Demo van referenties** -> **Referentie-demo-hulpprogramma**.
 
    ![Self-Service Demo-hulpprogramma&#39;s](assets/demo-utilities.png)
 
@@ -51,10 +51,10 @@ Nu u uw eigen demosites hebt, wilt u waarschijnlijk weten hoe u deze kunt behere
 
 De Hulpprogramma&#39;s van de Demo van de zelfbediening verstrekken een aantal hulpmiddelen.
 
-* **Sites verwijderen** - Selecteer de site die u wilt verwijderen in dit Adobe Experience Manager-exemplaar. Onthoud dat dit een destructieve actie is en dat deze actie niet ongedaan kan worden gemaakt wanneer de actie wordt gestart.
-* **Sitesjablonen verwijderen** - Selecteer de Sjabloon site die u in dit Adobe Experience Manager-exemplaar wilt verwijderen. Voordat u een Sjabloon site verwijdert, moet u ervoor zorgen dat alle sites die verwijzen naar de sjabloon, ook worden verwijderd. Onthoud dat dit een destructieve actie is en dat deze actie niet ongedaan kan worden gemaakt wanneer de actie wordt gestart.
+* **Sites verwijderen** - Selecteer de site die u wilt verwijderen in dit Adobe Experience Manager-exemplaar. Onthoud dat dit een destructieve actie is en dat deze actie niet ongedaan kan worden gemaakt als de actie eenmaal is gestart.
+* **Sitesjablonen verwijderen** - Selecteer de Sjabloon site die u in dit Adobe Experience Manager-exemplaar wilt verwijderen. Voordat u een Sjabloon site verwijdert, moet u ervoor zorgen dat alle sites die verwijzen naar de sjabloon, ook worden verwijderd. Onthoud dat dit een destructieve actie is en dat deze actie niet ongedaan kan worden gemaakt als de actie eenmaal is gestart.
 * **Cache primaire auteur** - Hiermee worden verschillende bronnen opgehaald in het Adobe Experience Manager-exemplaar, waardoor de ophaaltijden worden verkort. Het kan enkele seconden duren.
-* **Android-toepassing** - Gereedschappen voor het installeren en starten van de Android-demonstratieapp. Een site maken op basis van de **WKND App met één pagina** om deze pagina te vullen. Gebruiken vanaf een Android-apparaat, emulator of Bluestacks.
+* **Android-toepassing** - Gereedschappen voor het installeren en starten van de Android-demonstratieapp. Een site maken op basis van de **WKND App met één pagina** deze pagina vullen. Gebruiken vanaf een Android-apparaat, emulator of Bluestacks.
 * **Gebruikersvoorkeuren** - Pop-updialoogvensters met zelfstudies uitschakelen.
 * **GraphQL instellen** - Het algemene GraphQL-eindpunt snel instellen.
 
@@ -62,7 +62,7 @@ De Hulpprogramma&#39;s van de Demo van de zelfbediening verstrekken een aantal h
 
 Nadat u een set AEM hebt getest, hebt u mogelijk niet langer uw demosite of zelfs de sjabloon waarop deze is gebaseerd nodig. Het is gemakkelijk om zowel demo plaatsen als plaatsmalplaatjes te schrappen.
 
-1. Toegang krijgen tot **Referentie-demo-hulpprogramma&#39;s** tikken of klikken **Sites verwijderen**.
+1. Toegang krijgen tot de **Referentie-demo-hulpprogramma** tikken of klikken **Sites verwijderen**.
 
    ![Sites verwijderen](assets/delete-sites.png)
 
@@ -70,7 +70,7 @@ Nadat u een set AEM hebt getest, hebt u mogelijk niet langer uw demosite of zelf
 
    >[!CAUTION]
    >
-   >De plaats en de malplaatjeschrapping zijn een destructieve actie en kunnen niet ongedaan worden gemaakt zodra in werking gesteld.
+   >De plaats en malplaatjeschrapping is een destructieve actie en kan niet ongedaan worden gemaakt zodra in werking gesteld.
 
 1. Bevestig het verwijderen van de site in het dialoogvenster.
 
@@ -82,7 +82,7 @@ Nadat u een set AEM hebt getest, hebt u mogelijk niet langer uw demosite of zelf
 
 De site wordt nu verwijderd.
 
-U kunt sjablonen op dezelfde manier verwijderen onder de kop **Sitesjablonen verwijderen** in de **Referentie-demo-hulpprogramma&#39;s**.
+U kunt sjablonen op dezelfde manier verwijderen onder de kop **Sitesjablonen verwijderen** in de **Referentie-demo-hulpprogramma**.
 
 >[!CAUTION]
 >

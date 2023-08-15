@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 62649d9aaa7c4307351cc83eefbab14806f91378
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3758'
+source-wordcount: '3757'
 ht-degree: 14%
 
 ---
@@ -73,7 +73,7 @@ De diverse rollen die betrokken zijn om te vormen en het vermogen en hun overeen
 
 Met Experience Manager kunt u een externe DAM-implementatie als bron verbinden met meerdere Experience Managers [!DNL Sites] implementaties. U kunt echter wel verbinding maken met een [!DNL Sites] implementatie met slechts één externe DAM-implementatie.
 
-Evalueer het optimale aantal instanties van Plaatsen om met een verre plaatsing te verbinden DAM. Adobe adviseert om instanties van Plaatsen aan de plaatsing en test incrementeel aan te sluiten dat er geen prestatieseffect bij verre DAM is, aangezien elke verbonden instantie van Plaatsen aan het gegevensverkeer op verre DAM bijdraagt.
+Evalueer het optimale aantal instanties van Plaatsen om met een verre plaatsing te verbinden DAM. De Adobe adviseert om instanties van Plaatsen aan de plaatsing en test incrementeel aan te sluiten dat er geen prestatieseffect bij verre DAM is, aangezien elke verbonden instantie van Plaatsen aan het gegevensverkeer op verre DAM bijdraagt.
 
 De volgende diagrammen illustreren de gesteunde scenario&#39;s:
 

@@ -2,9 +2,9 @@
 title: Basisbeginselen van Content Modeling
 description: Leer de basis van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Fragments van de Inhoud.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '903'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud voor uw project
 ## Doelstelling {#objective}
 
 * **Publiek**: Begin
-* **Doelstelling**: Introduceer de concepten Inhoud modelleren voor Hoofdloze CMS.
+* **Doelstelling**: Introduceer de concepten van Content Modeling voor CMS zonder hoofd.
 
 ## Inhoud modelleren met modellen van inhoudsfragmenten {#architect-content-fragment-models}
 
@@ -128,9 +128,9 @@ U kunt bijvoorbeeld de volgende modellen van inhoudsfragmenten definiëren:
 * Plaats
 * Bedrijf
 * Persoon
-* Awards
+* Uitreiking
 
-Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers....en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
+Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers...en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
 
 En een persoon kan een Prijs (of misschien twee) hebben.
 
@@ -151,7 +151,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
 * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-   * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+   * [Modellen van inhoudsfragmenten - gegevenstypen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
 * [Authoring van concepten](/help/sites-cloud/authoring/getting-started/concepts.md)
 

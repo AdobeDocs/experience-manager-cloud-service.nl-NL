@@ -2,9 +2,9 @@
 title: Contentfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Content Fragments kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,9 @@ Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragme
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** zijn verschillende functies in AEM:
+>**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** Er zijn verschillende functies binnen AEM:
 >* **Inhoudsfragmenten** redactionele inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, cijfers en datums.
->* **Ervaar fragmenten** volledig zijn ingedeeld; een fragment van een webpagina.
+>* **Ervaar fragmenten** volledig opgemaakt zijn, een fragment van een webpagina.
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
@@ -53,10 +53,10 @@ Met de inhoudsfragmenten kunt u:
 ## Een inhoudsfragment toevoegen aan uw pagina {#adding-a-content-fragment-to-your-page}
 
 1. Open de pagina om deze te bewerken.
-2. Voeg de **Inhoudsfragment** onderdeel; van **Componenten** browser of **Nieuwe component invoegen**.
+2. Voeg de **Inhoudsfragment** component; van of **Componenten** browser of **Nieuwe component invoegen**.
 3. U kunt:
    * Open de **Activa** browser en filter voor **Inhoudsfragmenten** (de standaardwaarde is Afbeeldingen). Sleep het gewenste fragment vervolgens naar de componentinstantie.
-   * Selecteer vervolgens de inhoudfragment-component **Configureren** op de werkbalk. In het dialoogvenster kunt u het dialoogvenster Selectie openen waarin u de vereiste **Inhoudsfragment**.
+   * Selecteer vervolgens de component voor het inhoudsfragment **Configureren** op de werkbalk. In het dialoogvenster kunt u het dialoogvenster Selectie openen waarin u de vereiste **Inhoudsfragment**.
 
    >[!NOTE]
    >
@@ -79,7 +79,7 @@ De fragmentinstellingen openen **Configuratie** om het fragment te configureren 
 
 >[!NOTE]
 >
->Zie ook [Core Components, de component Content Fragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+>Zie ook [Kerncomponenten, de component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 In het juiste configuratiedialoogvenster kunt u de beschikbare parameters selecteren, waaronder:
 
@@ -93,7 +93,7 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
 
   >[!NOTE]
   >
-  >Welke elementen beschikbaar zijn, is afhankelijk van het gebruikte model.
+  >De beschikbare elementen zijn afhankelijk van het gebruikte model.
 
 * **Variatie**
    * De standaardwaarde **Master** is altijd beschikbaar.
@@ -101,7 +101,7 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
 
 * **ID**
 
-   * **HTML-id** kenmerk dat op de component moet worden toegepast.
+   * **HTML-id** toe te passen op de component.
 
 ### Snelle verbinding met de fragmenteditor {#quick-connection-to-fragment-editor}
 
@@ -115,7 +115,7 @@ U kunt de fragmentbron openen voor bewerking (het element) met de opdracht **Bew
 
 Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is er een **Componenten hierheen slepen** tijdelijke aanduiding tussen elke HTML-alinea (en boven/onder) van het fragment.
 
-Zo kunt u extra inhoud toevoegen [tussenliggend (dat wil zeggen, tussen inhoud)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) de fragmentinhoud (op een van de beschikbare punten), zonder dat u het basisfragment hoeft te wijzigen.
+Hiermee kunt u extra inhoud toevoegen [tussenliggend (dat wil zeggen, tussen inhoud)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) de fragmentinhoud (op een van de beschikbare punten), zonder dat u het basisfragment hoeft te wijzigen.
 
 Voor tussenliggende inhoud kunt u:
 
@@ -131,7 +131,7 @@ Voor tussenliggende inhoud kunt u:
 
 >[!NOTE]
 >
->U kunt ook [visuele elementen (afbeeldingen) invoegen in het fragment zelf](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>U kunt [visuele elementen (afbeeldingen) invoegen in het fragment zelf](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
 >Visuele elementen die in het fragment zelf worden ingevoegd, worden aan de voorafgaande alinea in het fragment gekoppeld. Dit betekent dat u geen tussenliggende inhoud tussen een visueel element en de voorgaande alinea kunt plaatsen. Als u dit verbindingsniveau nodig hebt, kunt u de afbeelding aan het fragment toevoegen (als een [fragment met gemengde media](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
@@ -144,7 +144,7 @@ Voor tussenliggende inhoud kunt u:
 >* Tussen componenten heeft een absolute positie binnen de reeks componenten in de fragmentstroom. Deze positie verandert niet, zelfs niet wanneer de inhoud van alinea&#39;s in het fragment verandert.
 >
 >  Hierdoor kan het lijken alsof de relatieve positionering is gewijzigd, aangezien de tussenliggende alinea&#39;s geen contextafhankelijke relatie hebben met de (fragment)alinea&#39;s naast de alinea&#39;s.
->* Tenzij de twee alinea&#39;s met elkaar in strijd zijn; in dat geval wordt de tussenliggende inhoud niet weergegeven (hoewel deze inhoud intern nog steeds aanwezig is).
+>* Tenzij de twee alinea&#39;s met elkaar in strijd zijn, wordt in dat geval de tussenliggende inhoud niet weergegeven (hoewel deze intern nog steeds aanwezig is).
 
 ### Gekoppelde inhoud gebruiken {#using-associated-content}
 

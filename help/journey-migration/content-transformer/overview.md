@@ -1,16 +1,16 @@
 ---
 title: Overzicht tot Inhoud transformeren
 description: Leer hoe u aan inhoud gerelateerde problemen kunt detecteren en verhelpen die door de BPA zijn gemeld met Content Transformer.
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
 # Overzicht {#overview-ct}
 
-De Content Transformer (CT) is een hulpmiddel dat door Adobe is ontwikkeld en dat kan worden gebruikt om problemen met betrekking tot inhoud die door de [Best Practices Analyzer (BPA)](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) voordat u inhoud migreert van uw huidige AEM-implementatie (On-premise of Managed Services) naar AEM as a Cloud Service.
+De Content Transformer (CT) is een hulpmiddel dat door de Adobe is ontwikkeld en dat kan worden gebruikt om problemen met betrekking tot inhoud die door de [Best Practices Analyzer (BPA)](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) voordat u inhoud migreert van uw huidige AEM-implementatie (On-premise of Managed Services) naar AEM as a Cloud Service.
 
 De Content Transformer kan helpen problemen op te lossen die onder de volgende [BPA-patrooncategorieën](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html) (weergegeven in de onderstaande tabel) door gebruikers in staat te stellen bulkhandelingen uit te voeren, zoals verplaatsen of verwijderen. Dit kan de tijd aanzienlijk verminderen en de complexiteit van een migratieproject verminderen.
 

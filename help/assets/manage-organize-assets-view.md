@@ -4,9 +4,9 @@ description: Verplaats, verwijder, kopieer, hernoem, werk en versie uw activa in
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ Gebruiken [!DNL Assets view] om de volgende taken voor middelenbeheer uit te voe
 
 ![Werkbalkopties wanneer u een element selecteert](assets/toolbar-image-selected.png)
 
-*Afbeelding: De werkbalk bevat opties voor een geselecteerde afbeelding.*
+*Afbeelding: op de werkbalk zijn opties beschikbaar voor een geselecteerde afbeelding.*
 
 * ![pictogram deselecteren](assets/do-not-localize/close-icon.png) Schakel de selectie uit.
 * ![detailpictogram](assets/do-not-localize/edit-in-icon.png) Klik om een voorvertoning van een element weer te geven en de gedetailleerde metagegevens weer te geven. Als u een voorvertoning weergeeft, kunt u de versies weergeven en een afbeelding bewerken.
 * ![downloadpictogram](assets/do-not-localize/download-icon.png) Download het geselecteerde element naar uw lokale bestandssysteem.
 * ![verwijderpictogram](assets/do-not-localize/delete-icon.png) Verwijder het geselecteerde element of de geselecteerde map.
 * ![uitcheckpictogram](assets/do-not-localize/checkout-icon.png) Het geselecteerde element uitchecken.
-* ![pictogram kopiëren](assets/do-not-localize/copy-icon.png) Kopieer het geselecteerde bestand of de geselecteerde map.
+* ![kopieerpictogram](assets/do-not-localize/copy-icon.png) Kopieer het geselecteerde bestand of de geselecteerde map.
 * ![verplaatsingspictogram](assets/do-not-localize/move-icon.png) Verplaats het geselecteerde element of de geselecteerde map naar een andere locatie in de hiërarchie van de opslagplaats.
 * ![pictogram hernoemen](assets/do-not-localize/rename-icon.png) Wijzig de naam van het geselecteerde element of de geselecteerde map. Gebruik een unieke naam anders ontbreekt het anders noemen met een waarschuwing. U kunt het opnieuw proberen met een nieuwe naam.
 * ![taakpictogram toewijzen](assets/do-not-localize/review-delegate-icon.png) Taken toewijzen aan andere gebruikers om samen te werken aan een element.
@@ -39,11 +39,11 @@ U kunt dezelfde opties weergeven op de miniaturen van elementen.
 
 ![Werkbalkopties wanneer u een element selecteert](assets/toolbar-folder-selected.png)
 
-*Afbeelding: De werkbalk bevat opties voor een geselecteerde map.*
+*Afbeelding: opties beschikbaar op de werkbalk voor een geselecteerde map.*
 
 ![Werkbalkopties wanneer u een element selecteert](assets/toolbar-pdf-selected.png)
 
-*Afbeelding: De werkbalk bevat opties voor een geselecteerd PDF-bestand.*
+*Afbeelding: op de werkbalk zijn opties beschikbaar voor een geselecteerd PDF-bestand.*
 
 ## Elementen downloaden en distribueren {#download}
 
@@ -60,7 +60,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
   ![Versies maken tijdens uploaden](assets/uploads-manage-duplicates.png)
 
-  *Afbeelding: Wanneer u een element uploadt dat hetzelfde heet als een bestaand element, kunt u een versie van het element maken.*
+  *Afbeelding: wanneer u een element uploadt dat hetzelfde heet als een bestaand element, kunt u een versie van het element maken.*
 
 * Een afbeelding bewerken en klikken **[!UICONTROL Save as Version]**. Zie [afbeeldingen bewerken](/help/assets/edit-images-assets-view.md).
 
@@ -98,7 +98,7 @@ U kunt de volgende status instellen voor elementen:
 
 * Geen status
 
-### Elementstatus instellen {#set-asset-status}
+### Status van element instellen {#set-asset-status}
 
 De elementstatus instellen:
 
@@ -117,7 +117,7 @@ De vervaldatum van het element instellen:
 
 1. Selecteer het element en klik op **[!UICONTROL Details]** in de werkbalk.
 
-1. In de **[!UICONTROL Basic]** -tab, stelt u de vervaldatum voor het element in met de  **[!UICONTROL Expiration date]** veld.
+1. In de **[!UICONTROL Basic]** de vervaldatum voor het element in met de  **[!UICONTROL Expiration date]** veld.
 
 De `Expired` de indicator van de activakaart treedt `Approved` of `Rejected` voor een element ingestelde indicator.
 
@@ -137,7 +137,7 @@ Als u een metagegevensveld voor de elementstatus aan het formulier wilt toevoege
 
 **Metagegevensveld Vervaldatum toevoegen aan het formulier**
 
-Als u het metagegevensveld Vervaldatum aan het formulier wilt toevoegen, sleept u **[!UICONTROL Date]** van de linkerspoorstaaf naar het formulier. Opgeven **Vervaldatum** als etiket en `pur:expirationDate` als de toewijzingseigenschap. Sla het formulier op om de wijzigingen te bevestigen.
+Als u het metagegevensveld Vervaldatum aan het formulier wilt toevoegen, sleept u **[!UICONTROL Date]** van de linkerspoorstaaf naar het formulier. Opgeven **Vervaldatum** als het etiket en `pur:expirationDate` als de toewijzingseigenschap. Sla het formulier op om de wijzigingen te bevestigen.
 
 ## Volgende stappen {#next-steps}
 

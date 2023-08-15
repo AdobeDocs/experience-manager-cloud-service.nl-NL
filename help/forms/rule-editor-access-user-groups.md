@@ -4,9 +4,9 @@ description: Er zijn verschillende soorten gebruikers met verschillende vaardigh
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 0%
 
 Er zijn verschillende soorten gebruikers met verschillende vaardigheden die werken met Adaptive Forms. Terwijl deskundige gebruikers de juiste kennis kunnen hebben om met manuscripten en complexe regels te werken, kunnen er gebruikers op basisniveau zijn die slechts met de lay-out en basiseigenschappen van Aangepast Forms moeten werken.
 
-[!DNL Experience Manager Forms] staat u toe om de toegang van de regelredacteur tot gebruikers te beperken die op hun rol of functie wordt gebaseerd. In de instellingen van de Adaptive Forms Configuration Service kunt u de [gebruikersgroepen](forms-groups-privileges-tasks.md) die tot regelredacteur kunnen bekijken en toegang hebben.
+[!DNL Experience Manager Forms] laat u regeleditortoegang tot gebruikers beperken die op hun rol of functie wordt gebaseerd. In de instellingen van de Adaptive Forms Configuration Service kunt u de [gebruikersgroepen](forms-groups-privileges-tasks.md) die tot regelredacteur kunnen bekijken en toegang hebben.
 
 ## Geef gebruikersgroepen op die toegang kunnen krijgen tot de regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
 1. Aanmelden bij [!DNL Experience Manager Forms] als beheerder.
-1. Klik in de auteurinstantie op ![Adobe Experience Manager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Gereedschappen ![hamer](assets/hammer-icon.svg) > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. De webconsole wordt in een nieuw venster geopend.
+1. Klik in de auteur-instantie op ![Adobe Experience Manager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Gereedschappen ![hamer](assets/hammer-icon.svg) > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. De webconsole wordt in een nieuw venster geopend.
 
    ![1-2](assets/1-2.png)
 
@@ -52,5 +52,5 @@ Er zijn verschillende soorten gebruikers met verschillende vaardigheden die werk
 
    De toolbar van Componenten zoals zichtbaar aan een gebruiker zonder de toegang van de regelredacteur
 
-   Voor instructies over het toevoegen van gebruikers aan groepen raadpleegt u [Gebruikersbeheer en beveiliging](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+   Zie voor instructies over het toevoegen van gebruikers aan groepen [Gebruikersbeheer en beveiliging](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
 

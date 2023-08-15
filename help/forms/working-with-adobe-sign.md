@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3005'
+source-wordcount: '3004'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Gebruiken [!DNL Adobe Sign] in een adaptieve vorm {#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 
 | Versie | Artikelkoppeling |
@@ -31,7 +31,7 @@ Normaal [!DNL Adobe Sign] en Adaptief Forms-scenario vult een gebruiker een adap
 * Sluit overeenkomsten van om het even welk apparaat met volledig geautomatiseerde voorstel, citaat, en contractprocessen.
 * Voltooi processen voor menselijke hulpbronnen sneller en geef uw werknemers de digitale ervaring.
 * Verkort de duur van de contractcyclus en neem sneller aan boord van uw leveranciers.
-* Maak digitale workflows waarmee algemene processen worden geautomatiseerd.
+* Maak digitale workflows die algemene processen automatiseren.
 
 [!DNL Adobe Sign] integratie met [!DNL AEM Forms] ondersteunt:
 
@@ -81,15 +81,15 @@ Een adaptief formulier maken dat geschikt is voor ondertekenen:
 
    1. Geef de **[!UICONTROL Name]** en **[!UICONTROL Title]** voor het adaptieve formulier.
 
-   1. Selecteer [configuratiecontainer](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) gemaakt tijdens [integreren [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+   1. Selecteer de [configuratieconsole](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) gemaakt tijdens [integreren [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   De configuratiecontainer bevat de [!DNL Adobe Sign] Cloud Services geconfigureerd voor uw omgeving. Deze services zijn beschikbaar voor selectie in de Adaptieve formuliereditor.
+   De configuratiecontainer bevat de [!DNL Adobe Sign] Cloud Servicen geconfigureerd voor uw omgeving. Deze services zijn beschikbaar voor selectie in de Adaptieve formuliereditor.
 
 1. In de **[!UICONTROL Form Model]** selecteert u een van de volgende opties:
 
    * Als u een aangepaste formuliersjabloon hebt en een Document of Record op basis van de formuliersjabloon nodig hebt, selecteert u de optie **[!UICONTROL Associate form template as the Document of Record template]** en selecteert u een Document of Record-sjabloon. Als u deze optie gebruikt, worden alleen de velden weergegeven die zijn gebaseerd op de bijbehorende formuliersjabloon die zijn verzonden voor ondertekening. Niet alle velden van het adaptieve formulier worden weergegeven.
 
-   * Als u geen aangepaste formuliersjabloon hebt, selecteert u de optie **[!UICONTROL Generate Document of Record]** optie. Als u deze optie gebruikt, worden in het document dat voor ondertekening is verzonden alle velden van het adaptieve formulier weergegeven.
+   * Als u geen aangepaste formuliersjabloon hebt, selecteert u de optie **[!UICONTROL Generate Document of Record]** -optie. Als u deze optie gebruikt, worden in het document dat voor ondertekening is verzonden alle velden van het adaptieve formulier weergegeven.
 
 1. Tikken **[!UICONTROL Create.]** Er wordt een adaptief formulier gemaakt dat geschikt is voor ondertekening. U kunt uw [!DNL Adobe Sign] velden naar het formulier en verzenden voor ondertekening.
 
@@ -99,12 +99,12 @@ Te gebruiken [!DNL Adobe Sign] in een bestaand adaptief formulier:
 
 1. Ga naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Selecteer het adaptieve formulier en tik op **[!UICONTROL Properties]**.
-1. In de **[!UICONTROL Basic]** selecteert u de [configuratiecontainer](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) gemaakt tijdens het integreren [!DNL Adobe Sign] with [!DNL AEM Forms].
+1. In de **[!UICONTROL Basic]** selecteert u de [configuratieconsole](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) gemaakt tijdens het integreren [!DNL Adobe Sign] with [!DNL AEM Forms].
 1. In de **[!UICONTROL Form Mode]** selecteert u een van de volgende opties:
 
    * Als u een aangepaste formuliersjabloon hebt en een Document of Record op basis van de formuliersjabloon nodig hebt, selecteert u de optie **[!UICONTROL Associate form template as the Document of Record template]** en selecteert u een Document of Record-sjabloon. Als u deze optie gebruikt, worden alleen de velden weergegeven die zijn gebaseerd op de bijbehorende formuliersjabloon die zijn verzonden voor ondertekening. Niet alle velden van het adaptieve formulier worden weergegeven.
 
-   * Als u geen aangepaste formuliersjabloon hebt, selecteert u de optie **[!UICONTROL Generate Document of Record]** optie. Als u deze optie gebruikt, worden in het document dat voor ondertekening is verzonden alle velden van het adaptieve formulier weergegeven.
+   * Als u geen aangepaste formuliersjabloon hebt, selecteert u de optie **[!UICONTROL Generate Document of Record]** -optie. Als u deze optie gebruikt, worden in het document dat voor ondertekening is verzonden alle velden van het adaptieve formulier weergegeven.
 
 1. Tik op **[!UICONTROL Save & Close]**. Het adaptieve formulier is ingeschakeld voor [!DNL Adobe Sign]. Nu kunt u uw [!DNL Adobe Sign] velden naar het formulier en verzenden voor ondertekening.
 
@@ -126,7 +126,7 @@ U voegt als volgt velden toe aan een adaptief formulier en past verschillende op
    >  * Gebruiken [!DNL Adobe Sign] alleen blokkeren voor Adaptive Forms die automatisch Document of Record genereren. Als u een aangepaste XDP gebruikt voor het genereren van een document of een op een formuliersjabloon gebaseerd adaptief formulier, [!DNL Adobe Sign] blok wordt niet ondersteund.
 
 
-1. Selecteer **[!UICONTROL Adobe Sign Block]** en tik op de **[!UICONTROL Edit]** ![Bewerken](assets/Smock_Edit_18_N.svg) pictogram. Er worden opties weergegeven voor het toevoegen van velden en het opmaken van de weergave van een veld.
+1. Selecteer de **[!UICONTROL Adobe Sign Block]** en tik op de **[!UICONTROL Edit]** ![Bewerken](assets/Smock_Edit_18_N.svg) pictogram. Er worden opties weergegeven voor het toevoegen van velden en het opmaken van de weergave van een veld.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
@@ -134,11 +134,11 @@ U voegt als volgt velden toe aan een adaptief formulier en past verschillende op
 
 1. Tik op de knop **[!UICONTROL Adobe Sign]** Veld ![Adobe Sign](assets/adobesign.png) pictogram. Er worden opties weergegeven om te selecteren en toe te voegen [!DNL Adobe Sign] velden.
 
-   Breid uit **[!UICONTROL Type]** vervolgkeuzelijst voor het selecteren van een [!DNL Adobe Sign] veld en tik op Gereed ![Opslaan](assets/save_icon.svg) pictogram om het geselecteerde veld toe te voegen aan [!DNL Adobe Sign] blokkeren. De **[!UICONTROL Type]** De vervolgkeuzelijst bevat de typen Handtekening, Ontvangersinfo en Gegevensveld. [!DNL Adobe Sign] integratie met AEM [!DNL Forms] ondersteuningsvelden die worden vermeld in het dialoogvenster [!UICONTROL Type] alleen vervolgkeuzelijst. Voor gedetailleerde informatie over [!DNL Adobe Sign] velden, zie [Adobe Sign-documentatie](https://helpx.adobe.com/sign/help/field-types.html).
+   Breid uit **[!UICONTROL Type]** vervolgkeuzeveld om een [!DNL Adobe Sign] veld en tik op Gereed ![Opslaan](assets/save_icon.svg) pictogram om het geselecteerde veld toe te voegen aan [!DNL Adobe Sign] blokkeren. De **[!UICONTROL Type]** De vervolgkeuzelijst bevat de typen Handtekening, Ontvangersinfo en Gegevensveld. [!DNL Adobe Sign] integratie met AEM [!DNL Forms] ondersteuningsvelden die worden vermeld in het dialoogvenster [!UICONTROL Type] alleen vervolgkeuzelijst. Voor gedetailleerde informatie over [!DNL Adobe Sign] velden, zie [Adobe Sign-documentatie](https://helpx.adobe.com/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
-   U moet een unieke naam opgeven voor een veld. U kunt ook de vereiste optie selecteren om een verplicht veld te markeren. Naast de **[!UICONTROL Name]** en **[!UICONTROL Required]** optie, sommige [!DNL Adobe Sign] veld bevat meer opties. Bijvoorbeeld masker en meerdere regels. Geef bovendien voor elke [!DNL Adobe Sign] veld of de velden zich in hetzelfde of een ander veld bevinden [!DNL Adobe Sign] blokken.
+   U moet een unieke naam opgeven voor een veld. U kunt ook de vereiste optie selecteren om een verplicht veld te markeren. Naast de **[!UICONTROL Name]** en **[!UICONTROL Required]** optie, sommige [!DNL Adobe Sign] veld bevat meer opties. Bijvoorbeeld masker en meerdere regels. Geef bovendien een unieke naam voor elke [!DNL Adobe Sign] veld of de velden zich in hetzelfde of een ander veld bevinden [!DNL Adobe Sign] blokken.
 
    Als u **[!UICONTROL Digital Signature]** in de vervolgkeuzelijst kunt u digitale handtekeningen toepassen op het adaptieve formulier:
 
@@ -149,12 +149,12 @@ U voegt als volgt velden toe aan een adaptief formulier en past verschillende op
 
 Uit de doos, [!DNL Adobe Sign] is niet ingeschakeld voor een adaptief formulier. U schakelt dit als volgt in:
 
-1. Tik in de Inhoudsbrowser op **[!UICONTROL Form Container]** en tik op de knop **[!UICONTROL Configure]** ![vormen](assets/Smock_Wrench_18_N.svg) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven.
-1. Vouw in de eigenschappenbrowser de **[!UICONTROL Electronic Signature]** en selecteert u de **[!UICONTROL Enable Adobe Sign]** optie. Het maakt [!DNL Adobe Sign] voor een adaptief formulier.
+1. Tik in de inhoudbrowser op **[!UICONTROL Form Container]** en tik op de knop **[!UICONTROL Configure]** ![vormen](assets/Smock_Wrench_18_N.svg) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven.
+1. Vouw in de eigenschappenbrowser de optie **[!UICONTROL Electronic Signature]** en selecteert u de **[!UICONTROL Enable Adobe Sign]** -optie. Het maakt [!DNL Adobe Sign] voor een adaptief formulier.
 
 ### Selecteren [!DNL Adobe Sign] Cloud Service en handtekeningvolgorde {#select-adobe-sign-cloud-service-and-signing-order}
 
-U kunt meerdere [!DNL Adobe Sign] diensten voor AEM [!DNL Forms]. Het is raadzaam voor elke functie een aparte reeks diensten te hebben (Human Resource, Finance, enzovoort). Hierdoor kunt u ondertekende documenten gemakkelijker bijhouden en rapporteren. Een bank heeft bijvoorbeeld meerdere afdelingen. U kunt een afzonderlijke configuratie voor elke afdeling hebben voor het beter volgen van de documenten.
+U kunt meerdere [!DNL Adobe Sign] diensten voor een AEM [!DNL Forms]. Het is raadzaam voor elke functie een aparte reeks diensten te hebben (Human Resource, Finance, enzovoort). Hierdoor kunt u ondertekende documenten gemakkelijker bijhouden en rapporteren. Een bank heeft bijvoorbeeld meerdere afdelingen. U kunt een afzonderlijke configuratie voor elke afdeling hebben voor het beter volgen van de documenten.
 
 Een document kan ook meerdere ontvangers hebben. Een creditcardtoepassing kan bijvoorbeeld meerdere aanvragers hebben. Een bank vereist handtekeningen van alle aanvragers voordat de aanvraag wordt verwerkt. Bij scenario&#39;s met meerdere ontvangers kunt u ervoor kiezen het document in volgorde van opeenvolgende of gelijktijdige bewerkingen te ondertekenen.
 
@@ -162,13 +162,13 @@ Een Cloud Service en volgorde voor ondertekening selecteren:
 
 ![Cloud-service](assets/cloud-service.png)
 
-1. Tik in de Inhoudsbrowser op **[!UICONTROL Form Container]** en tik op de knop **[!UICONTROL Configure]** ![vormen](assets/Smock_Wrench_18_N.svg) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven.
-1. Vouw in de eigenschappenbrowser de **[!UICONTROL Electronic Signature]** en selecteert u de **[!UICONTROL Enable Adobe Sign]** optie. Het maakt [!DNL Adobe Sign] voor een adaptief formulier.
-1. Selecteer een Cloud Service in de lijst met reeds geconfigureerde [!DNL Adobe Sign] Cloud Services.
+1. Tik in de inhoudbrowser op **[!UICONTROL Form Container]** en tik op de knop **[!UICONTROL Configure]** ![vormen](assets/Smock_Wrench_18_N.svg) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven.
+1. Vouw in de eigenschappenbrowser de optie **[!UICONTROL Electronic Signature]** en selecteert u de **[!UICONTROL Enable Adobe Sign]** -optie. Het maakt [!DNL Adobe Sign] voor een adaptief formulier.
+1. Selecteer een Cloud Service in de lijst met reeds geconfigureerde [!DNL Adobe Sign] Cloud Servicen.
 
    Als de **[!UICONTROL Adobe Sign Cloud Service]** lijst is leeg, volgt de [Configureren [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) artikel om de dienst te vormen.
 
-   In het vervolgkeuzemenu worden de Cloud Services weergegeven die in het dialoogvenster `global` map in Gereedschappen > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Daarnaast worden in het vervolgkeuzemenu ook de Cloud Services weergegeven die aanwezig zijn in de map die u selecteert in het dialoogvenster **[!UICONTROL Configuration Container]** wanneer u een adaptief formulier maakt.
+   In het vervolgkeuzemenu worden de Cloud Servicen weergegeven die in het dialoogvenster `global` map in Gereedschappen > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Daarnaast worden in het vervolgkeuzemenu ook de Cloud Servicen weergegeven die aanwezig zijn in de map die u selecteert in het dialoogvenster **[!UICONTROL Configuration Container]** wanneer u een adaptief formulier maakt.
 
 1. Selecteer de handtekeningvolgorde in het menu **[!UICONTROL Recipients can complete]** in. De ontvangers kunnen een adaptief formulier ondertekenen **[!UICONTROL Sequentially]** - een na een andere ontvanger, of **[!UICONTROL Simultaneously]** - in willekeurige volgorde.
 
@@ -184,9 +184,9 @@ Een Cloud Service en volgorde voor ondertekening selecteren:
 
 U kunt een of meerdere ontvangers voor een Adobe Sign-overeenkomst hebben. Wanneer u een ontvanger toevoegt, kunt u ook verificatiedetails voor de ontvanger configureren en bepalen of de invuller en de ontvanger van het formulier dezelfde persoon zijn. Voer de volgende stappen uit om diverse details over een ontvanger toe te voegen en te verstrekken:
 
-1. Tik in de Inhoudsbrowser op **[!UICONTROL Form Container]** en tik op de knop **[!UICONTROL Configure]** ![vormen](assets/Smock_Wrench_18_N.svg) pictogram. De eigenschappenbrowser wordt geopend met de eigenschappen van de container Adaptief formulier.
-1. Vouw in de eigenschappenbrowser de **[!UICONTROL Electronic Signature]** en selecteert u de **[!UICONTROL Enable Adobe Sign]** optie. Het maakt [!DNL Adobe Sign] voor een adaptief formulier.
-1. Tik op **[!UICONTROL Add Recipient]**. Er wordt een ontvanger toegevoegd aan het adaptieve formulier. U kunt meerdere ontvangers toevoegen aan een adaptief formulier. Alle ontvangers ontvangen een Adobe Sign-overeenkomst over de indiening van het adaptieve formulier.
+1. Tik in de inhoudbrowser op **[!UICONTROL Form Container]** en tik op de knop **[!UICONTROL Configure]** ![vormen](assets/Smock_Wrench_18_N.svg) pictogram. De eigenschappenbrowser wordt geopend met de eigenschappen van de container Adaptief formulier.
+1. Vouw in de eigenschappenbrowser de optie **[!UICONTROL Electronic Signature]** en selecteert u de **[!UICONTROL Enable Adobe Sign]** -optie. Het maakt [!DNL Adobe Sign] voor een adaptief formulier.
+1. Tik op **[!UICONTROL Add Recipient]**. Hiermee voegt u een ontvanger toe aan het adaptieve formulier. U kunt meerdere ontvangers toevoegen aan een adaptief formulier. Alle ontvangers ontvangen een Adobe Sign-overeenkomst over de indiening van het adaptieve formulier.
    ![telefoongegevens](assets/recipient-settings.png)
 
 1. Klik op de knop **[!UICONTROL Edit]** ![Bewerken](assets/Smock_Edit_18_N.svg) pictogram om de volgende informatie over de ontvanger op te geven:
@@ -195,26 +195,26 @@ U kunt een of meerdere ontvangers voor een Adobe Sign-overeenkomst hebben. Wanne
 
    * **[!UICONTROL Is the recipient and the person filling the form same?]:** Selecteren **[!UICONTROL Yes]**, als de invuller van het formulier en de eerste ontvanger dezelfde persoon zijn. <!-- If the option is set to **No,** then do not use the signature step component in the Adaptive Form. If the form contains a Signature Step component, then the field is automatically set to Yes. -->
 
-   * **[!UICONTROL Recipient Role]:** Selecteer de rol van een ontvanger. Adobe Sign voor zakelijke en zakelijke serviceniveaus heeft de mogelijkheid om de [rollen voor ontvangers van overeenkomsten](https://helpx.adobe.com/sign/using/set-up-signer-approver-roles.html), naast de **Ondertekenaar**, om beter aan hun werkschemavereisten aan te passen.
+   * **[!UICONTROL Recipient Role]:** Selecteer de rol van een ontvanger. Adobe Sign voor zakelijke en zakelijke serviceniveaus heeft de mogelijkheid om de [rollen voor ontvangers van overeenkomsten](https://helpx.adobe.com/sign/using/set-up-signer-approver-roles.html), naast alleen de **Ondertekenaar**, om beter aan hun werkschemavereisten aan te passen.
 
    * **[!UICONTROL Recipient Email Address]:** Geef het e-mailadres van de ontvanger op. De ontvanger ontvangt de Adobe Sign-overeenkomst over het opgegeven e-mailadres. U kunt ervoor kiezen een e-mailadres te gebruiken dat wordt opgegeven in een formulierveld, in het gebruikersprofiel voor Experience Managers van de aangemelde gebruiker of handmatig een e-mailadres in te voeren. Het is een verplichte stap.
 
      >[!NOTE]
      >
-     >Zorg ervoor dat het e-mailadres van de eerste ontvanger of de enige ontvanger (als er één ontvanger is) niet hetzelfde is als [!DNL Adobe Sign] account dat wordt gebruikt om AEM Cloud Services te configureren.
+     >Zorg ervoor dat het e-mailadres van de eerste ontvanger of de enige ontvanger (als er één ontvanger is) niet hetzelfde is als [!DNL Adobe Sign] account gebruikt om AEM Cloud Servicen te configureren.
 
    * **[!UICONTROL Recipient Authentication Method]:** Geef de methode op voor het verifiëren van een ontvanger voordat u de Adobe Sign-overeenkomst opent. U kunt kiezen tussen telefoon, kennisbasis, sociale op identiteit-gebaseerde authentificatie, en [Overheids-id](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) for [!DNL Adobe Acrobat Sign]. Voor [!DNL Adobe Acrobat Sign for Government] u kunt tussen telefoon en op kennis-gebaseerde authentificatie kiezen.
 
    >[!NOTE]
    >
-   >    * Standaard biedt verificatie op basis van sociale identiteit een optie voor verificatie met behulp van Facebook, Google en LinkedIn. U kunt contact opnemen met [!DNL Adobe Sign] ondersteuning om andere aanbieders van sociale authenticatie mogelijk te maken.
+   >    * Standaard biedt verificatie op basis van sociale identiteit een optie voor verificatie met behulp van Facebook, Google en LinkedIn. U kunt contact [!DNL Adobe Sign] ondersteuning om andere aanbieders van sociale authenticatie mogelijk te maken.
    >
 
-   * **[!DNL Adobe Sign]velden die moeten worden ingevuld of ondertekend:** Selecteren [!DNL Adobe Sign] velden voor de ontvanger. Een adaptief formulier kan meerdere [!DNL Adobe Sign] velden. U kunt specifieke velden inschakelen voor een ontvanger. In het veld worden alle beschikbare [!DNL Adobe Sign] Blokken. Wanneer u een blok selecteert, worden alle velden van het blok geselecteerd. U kunt het X-pictogram gebruiken om de selectie van een veld op te heffen.
+   * **[!DNL Adobe Sign]velden die moeten worden ingevuld of ondertekend:** Selecteren [!DNL Adobe Sign] velden voor de ontvanger. Een adaptief formulier kan meerdere [!DNL Adobe Sign] velden. U kunt specifieke velden inschakelen voor een ontvanger. In het veld worden alle beschikbare [!DNL Adobe Sign] Blokken. Wanneer u een blok selecteert, worden alle velden van het blok geselecteerd. U kunt het X-pictogram gebruiken om een veld te deselecteren.
 
    ![gegevens van de ontvanger](assets/signer-details.png)
 
-   De bovenstaande afbeelding heeft twee voorbeelden [!DNL Adobe Sign] Blokken: Persoonlijke gegevens en kantoorgegevens
+   De bovenstaande afbeelding heeft twee voorbeelden [!DNL Adobe Sign] Blokken: Personal-Information en Office-details
 
    Tik op de knop ![Opslaan](assets/save_icon.svg) pictogram. De ontvanger wordt toegevoegd.
 
@@ -224,7 +224,7 @@ Voeg [!DNL Adobe Sign] velden naar een adaptief formulier inschakelen [!DNL Adob
 
 Het ondertekenen en verzenden van een formulier is onafhankelijk van elkaar. Het verzenden van een adaptief formulier vindt plaats zodra een Adobe Sign-overeenkomst is gemaakt nadat een gebruiker een formulier heeft verzonden. [!DNL AEM Forms] as a Cloud Service wacht niet tot de ontvangers andere acties ondertekenen of voltooien om een adaptief formulier te verzenden. Een formulier wordt verzonden zodra een gebruiker op de knop Verzenden klikt of wanneer een stap Overzicht de samenvatting van het formulier weergeeft.
 
-Ook een [!DNL Adobe Sign] Met Aangepast formulier wordt de Adobe Sign-overeenkomst-id ingesloten voor het verzenden van gegevens. U kunt de overeenkomst-id gebruiken voor het bijhouden van de status van de overeenkomst met behulp van aangepaste code (aangepaste implementatie is vereist).
+Ook, en [!DNL Adobe Sign] Met Aangepast formulier wordt de Adobe Sign-overeenkomst-id ingesloten voor het verzenden van gegevens. U kunt de overeenkomst-id gebruiken voor het bijhouden van de status van de overeenkomst met behulp van aangepaste code (aangepaste implementatie is vereist).
 
 Adobe Sign Agreement ID (agreementId) is opgenomen in de verzendgegevens van het adaptieve formulier. Standaard is de overeenkomst-id aanwezig in de `afSubmissionInfo` knooppunt van de ingediende gegevens.
 
@@ -254,7 +254,7 @@ Adobe Sign Agreement ID (agreementId) is opgenomen in de verzendgegevens van het
    </afData>
 ```
 
-U kunt ook een bindref aan overeenkomst-id (agreementId) koppelen. Er wordt een Overeenkomst-id toegevoegd aan de sectie afBoundData van de verzonden gegevens. In de volgende verzonden gegevens is de overeenkomst-id bijvoorbeeld gebonden aan `<userName>` knooppunt:
+U kunt desgewenst ook een bindref aan overeenkomst-id (agreementId) koppelen. Er wordt een Overeenkomst-id toegevoegd aan de sectie afBoundData van de verzonden gegevens. In de volgende verzonden gegevens is de overeenkomst-id bijvoorbeeld gebonden aan `<userName>` knooppunt:
 
 ```xml
       <?xml version="1.0" encoding="UTF-8"?>
@@ -301,7 +301,7 @@ Na [Adaptief formulier-eigenschappen bewerken voor Adobe Sign](working-with-adob
 
    ![Blok ondertekenen](assets/sign-block-new.png)
 
-1. Selecteer **[!UICONTROL Adobe Sign Block]** en tik op de **[!UICONTROL Edit]** ![Bewerken](assets/Smock_Edit_18_N.svg) pictogram. Er worden opties weergegeven voor het toevoegen van velden en het opmaken van de weergave van een veld.
+1. Selecteer de **[!UICONTROL Adobe Sign Block]** en tik op de **[!UICONTROL Edit]** ![Bewerken](assets/Smock_Edit_18_N.svg) pictogram. Er worden opties weergegeven voor het toevoegen van velden en het opmaken van de weergave van een veld.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
@@ -309,7 +309,7 @@ Na [Adaptief formulier-eigenschappen bewerken voor Adobe Sign](working-with-adob
 
 1. Tik op de knop **[!UICONTROL Adobe Sign Field]** ![Adobe Sign](assets/adobesign.png) pictogram. Er worden opties weergegeven om te selecteren en toe te voegen [!DNL Adobe Sign] velden.
 
-   Breid uit **[!UICONTROL Type]** vervolgkeuzelijst die moet worden geselecteerd **[!UICONTROL Digital Signature]** en tik op **[!UICONTROL Done]** pictogram om het geselecteerde veld toe te voegen aan [!DNL Adobe Sign] blokkeren.
+   Breid uit **[!UICONTROL Type]** vervolgkeuzelijst die moet worden geselecteerd **[!UICONTROL Digital Signature]** en tik op de **[!UICONTROL Done]** pictogram om het geselecteerde veld toe te voegen aan [!DNL Adobe Sign] blokkeren.
 
    ![Digitale handtekeningen](assets/digital_signatures_new.png)
 
@@ -317,8 +317,8 @@ Na [Adaptief formulier-eigenschappen bewerken voor Adobe Sign](working-with-adob
 
    Digitale handtekeningen toepassen op het adaptieve formulier met:
 
-   * Wolkhandtekeningen: Ondertekenen met een [digitale id](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) gehost door een vertrouwde serviceprovider.
-   * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met een smartcard, USB-token of een digitale id op basis van een bestand.
+   * Cloud-handtekeningen: ondertekenen met een [digitale id](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) gehost door een vertrouwde serviceprovider.
+   * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met een smartcard, USB-token of digitale id op basis van een bestand.
 
      >[!NOTE]
      >
@@ -341,7 +341,7 @@ De **[!UICONTROL Summary Step]** wordt het formulier automatisch verzonden, word
 **Ans:** Nee, Experience Manager Forms biedt geen ondersteuning voor het gebruik van een adaptief formulier dat een [!DNL Adobe Sign] Aangepast formulier voor ondertekening ingeschakeld
 
 **V:** Wanneer ik een adaptief formulier maak met de geavanceerde sjabloon en dit open voor bewerking, wordt het foutbericht &quot;Elektronische handtekening of ontvangers zijn niet correct geconfigureerd&quot; weergegeven. wordt weergegeven. Hoe kan ik het foutbericht oplossen?
-**Ans:** Aangepast formulier dat is gemaakt met de geavanceerde sjabloon is geconfigureerd voor gebruik [!DNL Adobe Sign]. Als u de fout wilt verhelpen, maakt en selecteert u een [!DNL Adobe Sign] cloudconfiguratie en [!DNL Adobe Sign] ontvanger voor het adaptieve formulier.
+**Ans:** Aangepast formulier dat is gemaakt met de geavanceerde sjabloon is geconfigureerd voor gebruik [!DNL Adobe Sign]. U lost de fout op door een [!DNL Adobe Sign] cloudconfiguratie en [!DNL Adobe Sign] ontvanger voor het adaptieve formulier.
 
 **V:** Kan ik gebruiken [!DNL Adobe Sign] tekstcodes in een statische tekstcomponent van een adaptief formulier?
 **Ans:** Ja, u kunt tekstcodes in een tekstcomponent gebruiken om toe te voegen [!DNL Adobe Sign] met velden naar een document of record (alleen bij automatisch gegenereerd document of record) is adaptief formulier ingeschakeld. Ga voor meer informatie over de procedure en regels voor het maken van een tekstlabel naar [Adobe Sign-documentatie](https://helpx.adobe.com/sign/using/text-tag.html). Let ook op: Adaptive Forms biedt beperkte ondersteuning voor tekstcodes. U kunt de tekstlabels gebruiken om alleen die velden te maken die [Adobe Sign Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) ondersteunt.
@@ -357,9 +357,9 @@ Wanneer [!DNL Adobe Sign] de dienst wordt gevormd voor een Aangepast Vorm, ontbr
 
 * Controleer de [configuratie van Adobe Sign Cloud Service](adobe-sign-integration-adaptive-forms.md) gebruikt in het adaptieve formulier.
 * Zorg ervoor dat de API-toepassing ingeschakeld is [!DNL Adobe Sign] server gebruikt om te vormen [!DNL Adobe Sign] Cloud Service heeft vereiste machtigingen.
-* Als u meerdere [!DNL Adobe Sign] Cloud Services, wijs de **[!UICONTROL oAuth URL]** van alle diensten **[!UICONTROL Adobe Sign Shard]**.
+* Als u meerdere [!DNL Adobe Sign] Cloud Servicen, wijzen de **[!UICONTROL oAuth URL]** van alle diensten **[!UICONTROL Adobe Sign Shard]**.
 
-* Afzonderlijke e-mailadressen gebruiken om te configureren [!DNL Adobe Sign] en voor de eerste of de enkele ontvanger. Het e-mailadres van de eerste ontvanger of de enige ontvanger (als er één ontvanger is) kan niet gelijk zijn aan [!DNL Adobe Sign] account dat wordt gebruikt om AEM Cloud Services te configureren.
+* Afzonderlijke e-mailadressen gebruiken om te configureren [!DNL Adobe Sign] en voor de eerste of de enkele ontvanger. Het e-mailadres van de eerste ontvanger of de enige ontvanger (als er één ontvanger is) kan niet gelijk zijn aan [!DNL Adobe Sign] account gebruikt om AEM Cloud Servicen te configureren.
 
 ## Verwante artikelen {#related-articles}
 

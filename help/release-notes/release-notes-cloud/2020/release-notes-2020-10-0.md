@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2020.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.10.0."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
 ### Nieuwe functies in [!DNL Sites] {#what-is-new-sites}
 
-* **[Core Components 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**: Adobe Experience Manager as a Cloud Service profiteert van automatische updates van de nieuwste versie van de Core Components. Versie 2.12.0 bevat de meest recente verbeteringen die de gemeenschap heeft aangebracht. Tot de verbeteringen behoren [een nieuwe POST-formulierhandler;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) de mogelijkheid om aangepaste CSS, JavaScript en metagegevens op te nemen [tags via contextbewuste configuratie;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) en [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) nut om de integratie van de Laag van Gegevens van Adobe in douanecomponenten te vereenvoudigen. Zie de [lijst met wijzigingen](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) in 2.12.0.
+* **[Core Components 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**: Adobe Experience Manager as a Cloud Service profiteert van automatische updates van de nieuwste versie van de Core Components. Versie 2.12.0 bevat de meest recente verbeteringen die de gemeenschap heeft aangebracht. Tot de verbeteringen behoren [een nieuwe POST-formulierhandler;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) de mogelijkheid om aangepaste CSS, JavaScript en metagegevens op te nemen [tags via contextbewuste configuratie;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) en [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) nut om de integratie van de Laag van Gegevens van de Adobe in douanecomponenten te vereenvoudigen. Zie de [lijst met wijzigingen](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) in 2.12.0.
 
-* **[Projectarchetype 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: De aanbevolen basis voor het starten van een nieuw Experience Manager project werd beter. Het bevat nu de nieuwe [Gegevenslaag Adobe-client](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), optie om [site in AMP leveren;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) en nieuwe [extensiepunten om project-CSS/JS toe te voegen.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
+* **[Projectarchetype 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: De aanbevolen basis voor het starten van een nieuw Experience Manager project werd beter. Het bevat nu de nieuwe [Gegevenslaag client-Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), optie om [site in AMP leveren;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) en nieuwe [extensiepunten om project-CSS/JS toe te voegen.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 
-* **[ContextHub-mappen](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: Capaciteit om publieksomslagen tot stand te brengen om, publiekssegmenten gemakkelijk te organiseren te vinden en te selecteren voor de aanbieding van ContextHub richtend mogelijkheden.
+* **[ContextHub-mappen](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: Mogelijkheid om publieksomslagen tot stand te brengen om, publiekssegmenten gemakkelijk te organiseren te vinden en te selecteren voor aanbieding ContextHub richtend mogelijkheden.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -47,15 +47,15 @@ De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analyses voor Adaptive Forms**: U kunt nu het gedrag vastleggen en volgen van zowel aangemelde als niet-aangemelde (anonieme) gebruikers via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Zakelijke gebruikers kunnen op basis van de verzamelde inzichten beslissingen nemen over aangepaste formulierinhoud, lay-out en stijl.
+* **Analyses voor Adaptive Forms**: U kunt nu het gedrag vastleggen en bijhouden van zowel aangemelde als niet-aangemelde (anonieme) inhoud via Adobe Analytics voor Adaptive Forms om inzichten van eindgebruikers te verzamelen. Zakelijke gebruikers kunnen op basis van de verzamelde inzichten beslissingen nemen over aangepaste formulierinhoud, lay-out en stijl.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms-oct-2021}
 
-* **Externe AEM workflowgegevens voor veilige verwerking**: U kunt gegevens van werkstroomvariabelen in proces opslaan AEM gegevens die de elementen van Gevoelige Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. Tijdens de verwerking van de workflow worden de gegevens die in workflowvariabelen zijn opgeslagen, niet in AEM opslagplaats bewaard. Het wordt opgehaald op bestelling van de klant-beheerde bewaarplaats.
+* **Externe AEM workflowgegevens voor veilige verwerking**: U kunt in-process AEM gegevens van de variabelen van het Werkschema opslaan die de Gevoelige elementen van Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. Tijdens de verwerking van de workflow worden de gegevens die in workflowvariabelen zijn opgeslagen, niet in AEM opslagplaats bewaard. Het wordt opgehaald op bestelling van de klant-beheerde bewaarplaats.
 
 ### Bètafuncties van [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om documenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus en in batchmodus.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om documenten in verschillende indelingen te genereren. Met deze service kunt u documenten in synchrone modus en in batchmodus genereren.
 
 U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het bètaprogramma.
 
@@ -85,7 +85,7 @@ De releasedatum voor Cloud Manager in Experience Manager as a Cloud Service 2020
 
 * In gedownneerde omgevingen wordt nu een aparte status weergegeven in Cloud Manager wanneer deze worden gehiberneerd.
 
-* De &quot;build container&quot; van Cloud Manager ondersteunt nu het compileren van projecten met behulp van Java™ 8 of Java™ 11. Ondersteuning voor Java™ 11 wordt geleverd door het Maven-toolketensysteem.
+* De &quot;build container&quot; van Cloud Manager ondersteunt nu het compileren van projecten met Java™ 8 of Java™ 11. Ondersteuning voor Java™ 11 wordt geleverd door het Maven-toolketensysteem.
 
 * Het aantal omgevingsvariabelen per omgeving is verhoogd tot 200.
 

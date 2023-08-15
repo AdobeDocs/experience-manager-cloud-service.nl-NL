@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-U kunt een adaptief formulier maken op basis van een XFA-formuliersjabloon ( `*.XDP` bestand). Dankzij dit hergebruik kunt u uw investering in bestaande XFA-formulieren behouden. Voor informatie over het gebruik van een XFA-formuliersjabloon voor het maken van een adaptief formulier, [Een adaptief formulier maken op basis van een sjabloon](creating-adaptive-form.md).
+U kunt een adaptief formulier maken op basis van een XFA-formuliersjabloon ( `*.XDP` bestand). Met dit hergebruik kunt u uw investering in bestaande XFA-formulieren behouden. Voor informatie over het gebruik van een XFA-formuliersjabloon voor het maken van een adaptief formulier, [Een adaptief formulier maken op basis van een sjabloon](creating-adaptive-form.md).
 
 U kunt velden uit het XDP-bestand in het adaptieve formulier opnieuw gebruiken. Deze velden worden gebonden velden genoemd. De eigenschappen van de gebonden velden (zoals scripts, labels en weergave-indeling) worden uit het XDP-bestand gekopieerd. U kunt er ook voor kiezen de waarde van sommige van deze eigenschappen te overschrijven.
 
@@ -75,7 +75,7 @@ Als voorbeeld, laten wij bijwerken `sample-form.xdp` bestand met de volgende sta
 
 1. Navigeren naar `https://<server>:<port>/projects.html.` Voer desgevraagd uw referenties in.
 1. Klik op het tabblad Forms aan de linkerkant.
-1. Download de `sample-form.xdp` op uw lokale computer. Het XDP-bestand wordt gedownload als een `.zip` bestand, dat kan worden uitgepakt met elk hulpprogramma voor het decomprimeren van bestanden.
+1. Download de `sample-form.xdp` op uw lokale computer. Het XDP-bestand wordt gedownload als `.zip` bestand, dat kan worden uitgepakt met elk hulpprogramma voor het decomprimeren van bestanden.
 
 1. Open de `sample-form.xdp` bestand en wijzig de titel van het veld TextField1 van **Tekstveld** tot **Mijn tekstveld**.
 
@@ -121,7 +121,7 @@ De volgende stappen illustreren deze gebruiksstroom voor de elementen in het voo
 
 1. Werk de `sample-form.xdp` bestand en verwijder NumericField1.
 1. Upload de `sample-form.xdp` in het [!DNL AEM Forms] UI
-1. Open de `sample-xfa-af` Aangepast formulier voor ontwerpen. Het volgende foutbericht wordt weergegeven: Schema/formuliersjabloon voor het adaptieve formulier is bijgewerkt. `Click Here` om het met de nieuwe versie opnieuw te baseren.
+1. Open de `sample-xfa-af` Aangepast formulier voor ontwerpen. Het volgende foutbericht wordt weergegeven: Het schema/formuliersjabloon voor het adaptieve formulier is bijgewerkt. `Click Here` om het met de nieuwe versie opnieuw te baseren.
 
 1. Klik op de koppeling (met het label &quot; `Click Here`&quot;) in het bericht. Er wordt een foutbericht weergegeven met de mededeling dat het veld niet meer bestaat in het XDP-bestand.
 
@@ -133,7 +133,7 @@ Het veld dat is verwijderd, wordt ook gemarkeerd met een pictogram om een fout i
 
 >[!NOTE]
 >
->De velden in het adaptieve formulier met een onjuiste binding (een ongeldige `bindRef` (in het dialoogvenster Bewerken) worden ook als verwijderde velden beschouwd. Als de auteur deze fouten niet corrigeert en het adaptieve formulier niet publiceert, wordt het veld behandeld als een normaal niet-gebonden adaptief formulierveld en wordt het veld opgenomen in de niet-gebonden sectie van het XML-uitvoerbestand.
+>De velden in het adaptieve formulier met een onjuiste binding (een ongeldige `bindRef` (in het dialoogvenster Bewerken) worden ook als verwijderde velden beschouwd. Als de auteur deze fouten niet herstelt en het adaptieve formulier publiceert, wordt het veld beschouwd als een normaal, niet-gebonden adaptief formulierveld en wordt het veld opgenomen in de niet-gebonden sectie van het XML-uitvoerbestand.
 
 ## Downloads {#downloads}
 

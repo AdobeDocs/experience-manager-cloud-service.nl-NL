@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2076'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Volg de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experienc
 ![AEM Commerce-project](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-Bouw en stel het onlangs gecreëerde AEM project van de Handel aan lokale AEM SDK op door het volgende bevel van de wortelfolder van het project in werking te stellen.
+Bouw en stel het onlangs-gecreeerde AEM project van de Handel aan lokale AEM SDK op door het volgende bevel van de de wortelfolder van het project in werking te stellen.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -109,7 +109,7 @@ Navigeer naar het hoofd-POM-bestand van het project `pom.xml` en zoek de `<id>np
 
 ### Babel-configuratieopmaak wijzigen
 
-Van standaard overschakelen `.babelrc` bestands-relatieve indeling van configuratiebestand `babel.config.js` gebruiken. Dit is een configuratieformaat voor het hele project en laat de plugins en de voorinstellingen toe om op worden toegepast `node_module` met meer controle.
+Van de standaard overschakelen `.babelrc` bestands-relatieve indeling van configuratiebestand `babel.config.js` gebruiken. Dit is een configuratieformaat voor het hele project en laat de plugins en de voorinstellingen toe om op worden toegepast `node_module` met meer controle.
 
 1. Ga naar de `ui.frontend` en de bestaande `.babelrc` bestand.
 
@@ -148,7 +148,7 @@ Ga naar de `ui.frontend` en de `webpack.common.js` bestand om de volgende regel 
 
 De [Apollo-client](https://www.apollographql.com/docs/react/) wordt gebruikt voor het beheer van lokale en externe gegevens met GraphQL. De resultaten van GraphQL-query&#39;s worden ook opgeslagen in een lokale, genormaliseerde cache in het geheugen.
 
-Voor [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) om effectief te werken hebt u een `possibleTypes.js` bestand. Als u dit bestand wilt genereren, raadpleegt u [Mogelijke typen automatisch genereren](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Zie ook de [PWA Studio-referentieimplementatie](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) en een voorbeeld van een [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) bestand.
+Voor [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) om effectief te kunnen werken hebt u een `possibleTypes.js` bestand. Als u dit bestand wilt genereren, raadpleegt u [Mogelijke typen automatisch genereren](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Zie ook de [Referentie-implementatie van PWA Studio](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) en een voorbeeld van [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) bestand.
 
 
 1. Ga naar de `ui.frontend` en sla het bestand op als `./src/main/possibleTypes.js`
@@ -399,21 +399,21 @@ Voer de volgende stappen uit om een DataStream in het Experience Platform te mak
 
 1. Navigeer in de browser naar de knop __Adobe Experience Platform__ startpagina product. Bijvoorbeeld, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
-1. Zoek de __DataStreams__ in de linkernavigatiesectie en klik op de knop __Nieuwe DataStream__ in de rechterbovensectie.
+1. Zoek de __Gegevensstromen__ in de linkernavigatiesectie en klik op de knop __Nieuwe DataStream__ in de rechterbovensectie.
 
    ![AEP-gegevensstromen maken](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. Geef uw DataStream een naam met de __Naam__ vereist veld. Onder de __Gebeurtenisschema__ veld, selecteer het nieuwe schema en klik op __Opslaan__.
+1. Geef uw DataStream een naam met de __Naam__ vereist veld. Onder de __Gebeurtenisschema__ selecteert u het nieuwe schema en klikt u op __Opslaan__.
 
    ![AEP definieert gegevensstromen](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. Open de nieuwe DataStream en klik op __Service toevoegen__.
+1. Open de nieuwe DataStream, en klik __Service toevoegen__.
 
    ![AEP-gegevensstreams toevoegen service](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 
-1. Onder de __Service__ veld selecteert u de __Adobe Experience Platform__ optie. Onder __Gebeurtenisgegevens__ veld, selecteert u de naam van de gegevensset uit de vorige stap en klikt u op __Opslaan__.
+1. Onder de __Service__ veld selecteert u de __Adobe Experience Platform__ -optie. Onder __Gebeurtenisgegevens__ veld, selecteer de naam van de gegevensset uit de vorige stap en klik op __Opslaan__.
 
-   ![AEP-gegevensstreams voegt servicedetails toe](../assets/aep-integration/AEP-Datastream-Add-Service-Define.png)
+   ![AEP-gegevensstreams voegt servicegegevens toe](../assets/aep-integration/AEP-Datastream-Add-Service-Define.png)
 
 >[!TIP]
 >
@@ -421,18 +421,18 @@ Voer de volgende stappen uit om een DataStream in het Experience Platform te mak
 
 ## Gegevensstroomwaarde toevoegen aan AEM Commerce-configuratie {#add-aep-values-to-aem}
 
-Nadat u de bovenstaande installatie van het Experience Platform hebt voltooid, hebt u `datastreamId` in de linkerspoorlijn van de DataStream-gegevens en `orgId` in de rechterbovenhoek van het dialoogvenster __Profielafbeelding > Accountgegevens > Gebruikersgegevens__ modal.
+Nadat u de bovenstaande installatie van het Experience Platform hebt voltooid, hebt u `datastreamId` in de linkerspoorlijn van de DataStream-gegevens en `orgId` in de rechterbovenhoek van het __Profielafbeelding > Accountgegevens > Gebruikersgegevens__ modal.
 
 ![ID AEP-gegevensstromen](../assets/aep-integration/AEP-Datastream-ID.png)
 
-1. In het AEM Commerce-project `ui.frontend` -module, werkt u de `config.js` en met name de `eventsCollector > aep` objecteigenschappen.
+1. In het AEM Commerce-project `ui.frontend` -module, de `config.js` en met name de `eventsCollector > aep` objecteigenschappen.
 
 1. Het bijgewerkte AEM Commerce-project samenstellen en implementeren
 
 
 ## Trigger `addToCart` gebeurtenis en verifieer gegevensverzameling {#event-trigger-verify}
 
-De bovenstaande stappen voltooien de installatie van AEM Commerce en Experience Platform. U kunt nu een `addToCart` gebeurtenis en verifieer gegevensinzameling gebruikend debugger en dataset van het Experience Platform __Statistieken en grafieken__ schakelen in de interface van het product.
+De bovenstaande stappen voltooien de installatie van AEM Commerce en Experience Platform. U kunt nu een `addToCart` gebeurtenis en verifieer gegevensinzameling gebruikend debugger en dataset van het Experience Platform __Statistieken en grafieken__ schakelen in de gebruikersinterface van het product.
 
 Als u de gebeurtenis wilt activeren, kunt u AEM auteur of de publicatieservice gebruiken vanuit uw lokale instellingen. In dit voorbeeld gebruikt u AEM auteur door u aan te melden bij uw account.
 
@@ -456,15 +456,15 @@ Als u de gebeurtenis wilt activeren, kunt u AEM auteur of de publicatieservice g
 
 1. Navigeer in de gebruikersinterface van het product Experience Platform naar de __Datasets > My Demo StoreFront__, onder de __Gegevensactiviteit__ tab. Als de __Statistieken en grafieken__ schakeloptie is ingeschakeld, worden de status van de gebeurtenisgegevens weergegeven.
 
-   ![Dataset-gegevensstatussen van Experience Platform](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
+   ![Dataset-gegevensstatussen Experience Platform](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
 
 
 
 ## Implementatiedetails {#implementation-details}
 
-De [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is bovenop de [Experience Platform Connector voor Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), die deel uitmaakt van het [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project.
+De [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is op de bovenkant van [Experience Platform Connector voor Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), die deel uitmaakt van het [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project.
 
-Het project van de PWA Studio laat u Progressive Web Application (PWA) opslagplaatsen tot stand brengen die door Adobe Commerce of Magento Open Source worden aangedreven. Het project bevat ook een componentenbibliotheek genoemd [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) voor het toevoegen van logica aan visuele componenten. De [Peregrin-bibliotheek](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) biedt ook de aangepaste React-haken die worden gebruikt door [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) naadloos integreren met Experience Platform.
+Het project van de PWA Studio laat u Progressive Web Application (PWA) opslagplaatsen tot stand brengen die door Adobe Commerce of Magento Open Source worden aangedreven. Het project bevat ook een componentenbibliotheek genoemd [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) voor het toevoegen van logica aan visuele componenten. De [Peregrin-bibliotheek](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) biedt ook de aangepaste React-haken die worden gebruikt door [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) naadloos met Experience Platform te integreren.
 
 
 ## Ondersteunde gebeurtenissen {#supported-events}

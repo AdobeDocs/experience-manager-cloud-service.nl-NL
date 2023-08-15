@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1425'
 ht-degree: 14%
 
 ---
@@ -24,7 +24,7 @@ Gemengde mediasets worden aangegeven door een banner met het woord **[!UICONTROL
 >
 >Voor informatie over de gebruikersinterface van Middelen raadpleegt u [Elementen beheren met de Touch UI](/help/assets/manage-digital-assets.md).
 
-## Snel starten: Gemengde mediasets {#quick-start-mixed-media-sets}
+## Snel starten: gemengde mediasets {#quick-start-mixed-media-sets}
 
 Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
@@ -36,11 +36,11 @@ Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
 1. [Gemengde mediasets maken](#creating-mixed-media-sets).
 
-   Ga naar **[!UICONTROL Create]** > **[!UICONTROL Mixed Media Set]** en geeft u de set een naam, kiest u de elementen en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
+   Als u een gemengde mediaset wilt maken, gaat u naar **[!UICONTROL Create]** > **[!UICONTROL Mixed Media Set]** en geeft u de set een naam, kiest u de elementen en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
 
    Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md).
 
-1. Instellen [Voorinstellingen voor gemengde media-viewer](/help/assets/dynamic-media/managing-viewer-presets.md), indien nodig.
+1. Instellen [Voorinstellingen gemengde Media Viewer](/help/assets/dynamic-media/managing-viewer-presets.md), indien nodig.
 
    Beheerders kunnen viewervoorinstellingen voor gemengde mediasets maken of wijzigen. Als u de gemengde media met een viewervoorinstelling wilt weergeven, selecteert u de gemengde mediaset en selecteert u **[!UICONTROL Viewers]** in de vervolgkeuzelijst van het linkerspoor.
 
@@ -96,21 +96,21 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
    >[!NOTE]
    >
-   >Wanneer u de gemengde mediaset maakt, kunt u de miniatuur van de gemengde mediaset wijzigen of Experience Manager toestaan de miniatuur automatisch te selecteren op basis van de elementen in de gemengde mediaset. Als u een miniatuur wilt selecteren, selecteert u **[!UICONTROL Change thumbnail]** en selecteert u een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd en vervolgens wilt dat Experience Manager een miniatuur genereert op basis van de gemengde mediaset, selecteert u **[!UICONTROL Switch to Automatic thumbnail]**.
+   >Wanneer u de gemengde mediaset maakt, kunt u de miniatuur van de gemengde mediaset wijzigen of Experience Manager toestaan de miniatuur automatisch te selecteren op basis van de elementen in de gemengde mediaset. Selecteer een miniatuur door **[!UICONTROL Change thumbnail]** en selecteert u een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd, kiest u de optie Experience Manager een miniatuur uit de gemengde mediaset wilt genereren. Selecteer **[!UICONTROL Switch to Automatic thumbnail]**.
 
-1. Selecteer Elementkiezer om elementen te selecteren die u in de gemengde mediaset wilt opnemen. Selecteer deze en selecteer **[!UICONTROL Select]**.
+1. Selecteer Elementkiezer om elementen te selecteren die u in de gemengde mediaset wilt opnemen. Selecteer ze en selecteer ze **[!UICONTROL Select]**.
 
-   Met de Asset Selector kunt u naar elementen zoeken door een trefwoord in te voeren en **[!UICONTROL Return]**. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en selecteer vervolgens het **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door het pictogram **[!UICONTROL View]** te selecteren en **[!UICONTROL List View]**, **[!UICONTROL Column View]** of **[!UICONTROL Card View]** te selecteren.
+   Met de Asset Selector kunt u naar elementen zoeken door een trefwoord in te voeren en **[!UICONTROL Return]**. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en selecteer vervolgens het filter **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door het pictogram **[!UICONTROL View]** te selecteren en **[!UICONTROL List View]**, **[!UICONTROL Column View]** of **[!UICONTROL Card View]** te selecteren.
 
    Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md).
 
    ![chlimage_1-140](assets/chlimage_1-351.png)
 
-1. Wijzig de volgorde van de elementen door deze omhoog of omlaag te slepen (selecteer de optie **[!UICONTROL Reorder]** pictogram), indien nodig.
+1. Wijzig de volgorde van de elementen door deze omhoog of omlaag te slepen in de lijst (selecteer de optie **[!UICONTROL Reorder]** pictogram), indien nodig.
 
    ![chlimage_1-141](assets/chlimage_1-352.png)
 
-   Als u miniaturen wilt toevoegen, selecteert u de optie **+** **[!UICONTROL thumbnail]** naast de afbeelding en navigeer naar de gewenste miniatuur. Wanneer u klaar bent met het selecteren van alle miniatuurafbeeldingen, selecteert u **[!UICONTROL Save]**.
+   Als u miniaturen wilt toevoegen, selecteert u de optie **+** **[!UICONTROL thumbnail]** naast de afbeelding en navigeer naar de gewenste miniatuur. Wanneer u alle miniatuurafbeeldingen hebt geselecteerd, selecteert u **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
@@ -142,27 +142,25 @@ U kunt verschillende bewerkingstaken rechtstreeks in de gebruikersinterface uitv
 1. Voer in de Editor gemengde mediaset een van de volgende handelingen uit:
 
    * Als u elementen opnieuw wilt rangschikken, selecteert u in het linkerdeelvenster **[!UICONTROL Assets]** (Afbeeldingspictogram), sleept u een element naar een nieuwe locatie.
-   * Als u elementen wilt toevoegen, selecteert u op de werkbalk de optie **[!UICONTROL Add Asset]**. Navigeer naar de elementen. Voor elk element dat u wilt toevoegen, beweegt u de muisaanwijzer over de afbeelding van het element (niet over de naam van het element) en selecteert u het pictogram van het vinkje. Selecteer in de rechterbovenhoek de optie **[!UICONTROL Select]**.
+   * Als u elementen wilt toevoegen, selecteert u op de werkbalk **[!UICONTROL Add Asset]**. Navigeer naar de elementen. Voor elk element dat u wilt toevoegen, beweegt u de muisaanwijzer over de afbeelding van het element (niet over de naam van het element) en selecteert u het pictogram van het vinkje. Selecteer in de rechterbovenhoek de optie **[!UICONTROL Select]**.
 
-   * Als u een element wilt verwijderen, selecteert u in het linkerdeelvenster de optie **[!UICONTROL Assets]** (Afbeeldingspictogram) en selecteer vervolgens het element. Selecteer in de werkbalk de optie **[!UICONTROL Delete Asset]**.
+   * Als u een element wilt verwijderen, selecteert u in het linkerdeelvenster **[!UICONTROL Assets]** (Afbeeldingspictogram) en selecteer vervolgens het element. Selecteer in de werkbalk de optie **[!UICONTROL Delete Asset]**.
 
-   * Selecteer in het linkerdeelvenster de optie **[!UICONTROL Assets]** (afbeeldingspictogram). Rechts van het **[!UICONTROL Assets]** selecteert u de pictogrammen voor de pijl-omhoog of -omlaag.
+   * Als u elementen op naam wilt sorteren in oplopende of aflopende volgorde, selecteert u in het linkerdeelvenster **[!UICONTROL Assets]** (afbeeldingspictogram). Rechts van het **[!UICONTROL Assets]** selecteert u de pictogrammen voor de pijl-omhoog of -omlaag.
 
-      >[!NOTE]
-      >
-      >* Om een volledige Gemengde Reeks van Media te schrappen, van om het even welke het bekijken wijze (zoals **[!UICONTROL Card View]** of **[!UICONTROL Column View]**) navigeer naar de gemengde mediaset. Houd de muisaanwijzer boven het element en selecteer het vinkje zodat u het kunt selecteren. Druk **[!UICONTROL Backspace]** op het toetsenbord, of selecteer **[!UICONTROL More]** (drie punten) op de werkbalk en selecteer vervolgens **[!UICONTROL Delete]**.
-      >
-      >* U kunt de elementen in een gemengde mediaset bewerken door naar de set te navigeren. Selecteer in het linkerspoor **[!UICONTROL Set Members]** Selecteer vervolgens de **[!UICONTROL Pencil]** op een afzonderlijk element om het bewerkingsvenster te openen.
-
+     >[!NOTE]
+     >
+     >* Om een volledige Gemengde Reeks van Media te schrappen, van om het even welke het bekijken wijze (zoals **[!UICONTROL Card View]** of **[!UICONTROL Column View]**) navigeer naar de gemengde mediaset. Houd de muisaanwijzer boven het element en selecteer het vinkje zodat u het kunt selecteren. Druk **[!UICONTROL Backspace]** op het toetsenbord, of selecteer **[!UICONTROL More]** (drie punten) op de werkbalk en selecteer vervolgens **[!UICONTROL Delete]**.
+     >
+     >* U kunt de elementen in een gemengde mediaset bewerken door naar de set te navigeren. Selecteer in het linkerspoor de optie **[!UICONTROL Set Members]** en selecteert u vervolgens de **[!UICONTROL Pencil]** op een afzonderlijk element om het bewerkingsvenster te openen.
 
 1. Selecteren **[!UICONTROL Save]** wanneer u klaar bent met bewerken.
 
    >[!NOTE]
    >
-   >* Als u de assets in een gemengde mediaset wilt bewerken, gaat u naar de gemengde mediaset. Tik (niet selecteren) op de set zodat u deze kunt openen op de pagina Voorvertoning Experience Manager instellen. Selecteer in de linkertrack het inlasteken omlaag om de vervolgkeuzelijst te openen en selecteer **[!UICONTROL Set Members]**. Houd de muisaanwijzer op een element op de pagina Leden instellen en selecteer vervolgens **[!UICONTROL Edit]** (potloodpictogram) om de bewerkingspagina te openen.
+   >* Als u de assets in een gemengde mediaset wilt bewerken, gaat u naar de gemengde mediaset. Tik (niet selecteren) op de set zodat u deze kunt openen op de pagina Voorvertoning Experience Manager instellen. Selecteer in het linkerspoor het inlasteken om de vervolgkeuzelijst te openen en selecteer **[!UICONTROL Set Members]**. Houd de muisaanwijzer op een element op de pagina Leden instellen en selecteer vervolgens **[!UICONTROL Edit]** (potloodpictogram) om de bewerkingspagina te openen.
    >
    >* Als u een volledige gemengde mediaset wilt verwijderen, gaat u vanuit een willekeurige weergavemodus (zoals kaart- of kolomweergave) naar de gemengde mediaset. Houd de muisaanwijzer boven de set en selecteer vervolgens **[!UICONTROL Select]** (vinkje). Druk **[!UICONTROL Backspace]** op uw toetsenbord, of selecteer **[!UICONTROL More]** (rij van drie stippen), selecteert u **[!UICONTROL Delete]**.
-
 
 ## Voorvertoning van gemengde mediasets {#previewing-mixed-media-sets}
 
@@ -170,7 +168,7 @@ Zie [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md) vo
 
 ## Gemengde mediasets publiceren {#publishing-mixed-media-sets}
 
-Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor details over hoe te om Gemengde Reeksen van Media te publiceren.
+Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) voor meer informatie over hoe u gemengde mediasets kunt publiceren.
 
 >[!NOTE]
 >

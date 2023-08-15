@@ -2,9 +2,9 @@
 title: Client-Side bibliotheken gebruiken op AEM as a Cloud Service
 description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientlibs) in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden verzonden
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2552'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Clientlibs zijn de ingebouwde oplossing voor het leveren van CSS en JavaScript v
 
 >[!TIP]
 >
->Ontwikkelaars aan de voorzijde die CSS en JavaScript voor AEM projecten maken, moeten zich ook vertrouwd maken met de [AEM Project Archetype en zijn geautomatiseerd front-end bouwproces.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>Voor-eind ontwikkelaars die CSS en JavaScript voor AEM projecten creëren zouden zich met het [AEM Project Archetype en zijn geautomatiseerd front-end bouwproces.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
 ## Wat zijn clientbibliotheken? {#what-are-clientlibs}
 
@@ -35,13 +35,13 @@ AEM verzamelt de CSS en JavaScript van de site in één bestand, op een centrale
 
 ## Front-end ontwikkeling voor AEM as a Cloud Service {#fed-for-aemaacs}
 
-Alle JavaScript-, CSS- en andere front-end elementen moeten in de [ui.frontend module van het Archetype van het Project van de AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) Dankzij de flexibiliteit van het archetype kunt u uw moderne webgereedschappen gebruiken om deze bronnen te maken en te beheren.
+Alle JavaScript-, CSS- en andere front-end elementen moeten in de [ui.frontend module van het Archetype van het AEM Project.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) Dankzij de flexibiliteit van het archetype kunt u uw moderne webgereedschappen gebruiken om deze bronnen te maken en te beheren.
 
 Het archetype kan de bronnen vervolgens compileren in één CSS- en JS-bestand, en deze automatisch insluiten in een `cq:clientLibraryFolder` in de repository.
 
 ## Structuur van bibliotheekmap op de client {#clientlib-folders}
 
-Een bibliotheekmap aan de clientzijde is een opslagplaats-knooppunt van het type `cq:ClientLibraryFolder`. De definitie ervan in [CND-notatie](https://jackrabbit.apache.org/node-type-notation.html) is
+Een bibliotheekmap op de client is een opslagplaats van het type `cq:ClientLibraryFolder`. De definitie ervan in [CND-notatie](https://jackrabbit.apache.org/node-type-notation.html) is
 
 ```text
 [cq:ClientLibraryFolder] > sling:Folder
@@ -56,10 +56,10 @@ Een bibliotheekmap aan de clientzijde is een opslagplaats-knooppunt van het type
 
 Elk `cq:ClientLibraryFolder` wordt gevuld met een set JS- en/of CSS-bestanden, samen met enkele ondersteunende bestanden (zie hieronder). Belangrijke eigenschappen van de `cq:ClientLibraryFolder` zijn als volgt geconfigureerd:
 
-* `allowProxy`: Omdat alle clientlibs onder moeten worden opgeslagen `apps`Met deze eigenschap hebt u via proxyservlet toegang tot clientbibliotheken. Zie de sectie [Een clientbibliotheekmap zoeken en de server Proxy Client Libraries gebruiken](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) hieronder.
+* `allowProxy`: Aangezien alle clientlibs onder moeten worden opgeslagen `apps`Met deze eigenschap hebt u via proxyservlet toegang tot clientbibliotheken. Zie de sectie [Een clientbibliotheekmap zoeken en de server Proxy Client Libraries gebruiken](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) hieronder.
 * `categories`: Identificeert de categorieën waarin de set JS- en/of CSS-bestanden binnen deze set `cq:ClientLibraryFolder` vallen. De `categories` Met een eigenschap met meerdere waarden kan een bibliotheekmap deel uitmaken van meerdere categorieën (zie hieronder voor meer informatie).
 
-Als de map met clientbibliotheken een of meer bronbestanden bevat die tijdens runtime worden samengevoegd tot één JS- en/of CSS-bestand. De naam van het gegenereerde bestand is de knooppuntnaam met een van de `.js` of `.css` bestandsnaamextensie. Het bibliotheekknooppunt genaamd `cq.jquery` resulteert in het gegenereerde bestand met de naam `cq.jquery.js` of `cq.jquery.css`.
+Als de map met clientbibliotheken een of meer bronbestanden bevat die tijdens runtime worden samengevoegd tot één JS- en/of CSS-bestand. De naam van het gegenereerde bestand is de knooppuntnaam met een van de `.js` of `.css` bestandsextensie. Het bibliotheekknooppunt genaamd `cq.jquery` resulteert in het gegenereerde bestand met de naam `cq.jquery.js` of `cq.jquery.css`.
 
 Clientbibliotheekmappen bevatten de volgende items:
 
@@ -76,19 +76,19 @@ Clientbibliotheken moeten zich onder `/apps`. Deze regel is nodig om code beter 
 Voor de clientbibliotheken onder `/apps` om toegankelijk te zijn, wordt een volmachtsserver gebruikt. ACLs wordt nog afgedwongen op de omslag van de cliëntbibliotheek, maar servlet laat voor de inhoud toe om via worden gelezen `/etc.clientlibs/` als de `allowProxy` eigenschap is ingesteld op `true`.
 
 1. CRXDE Lite openen in een webbrowser (`https://<host>:<port>/crx/de`).
-1. Selecteer `/apps` map en klik op **Maken > knooppunt maken**.
+1. Selecteer de `/apps` map en klik op **Maken > Knooppunt maken**.
 1. Voer een naam in voor de bibliotheekmap en in het dialoogvenster **Type** lijst selecteren `cq:ClientLibraryFolder`. Klikken **OK** en klik vervolgens op **Alles opslaan**.
-1. Als u de categorie of categorieën wilt opgeven waartoe de bibliotheek behoort, selecteert u de optie `cq:ClientLibraryFolder` knoop, voeg het volgende bezit toe, en klik dan **Alles opslaan**:
+1. Selecteer de categorie of categorieën waartoe de bibliotheek behoort `cq:ClientLibraryFolder` knoop, voeg het volgende bezit toe, en klik dan **Alles opslaan**:
    * Naam: `categories`
    * Type: String
-   * Waarde: De categorienaam
-   * Meerdere: Geselecteerd
-1. Om de clientbibliotheken toegankelijk te maken via proxy `/etc.clientlibs`, selecteert u de `cq:ClientLibraryFolder` knoop, voeg het volgende bezit toe, en klik dan **Alles opslaan**:
+   * Waarde: de categorienaam
+   * Meerdere: geselecteerd
+1. Om de clientbibliotheken toegankelijk te maken via proxy onder `/etc.clientlibs`, selecteert u de `cq:ClientLibraryFolder` knoop, voeg het volgende bezit toe, en klik dan **Alles opslaan**:
    * Naam: `allowProxy`
    * Type: Boolean
    * Waarde: `true`
 1. Als u statische bronnen moet beheren, maakt u een submap met de naam `resources` onder de clientbibliotheekmap.
-   * Als u statische bronnen ergens anders opslaat dan onder de map `resources`, kunnen er niet naar worden verwezen in een publicatie-instantie.
+   * Als u statische bronnen ergens anders opslaat dan onder de map `resources`Er kan niet naar worden verwezen bij een publicatie-instantie.
 1. Bronbestanden toevoegen aan de bibliotheekmap.
    * Dit wordt typisch gedaan door het front-end bouwstijlproces van [AEM Projectarchetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * U kunt bronbestanden desgewenst in submappen ordenen.
@@ -112,7 +112,7 @@ Zodra de clientbibliotheekmap [zo nodig geconfigureerd,](#creating-clientlib-fol
 * U hebt een clientlib in `/apps/myproject/clientlibs/foo`
 * U hebt een statische afbeelding in `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
-De `allowProxy` kunt u het volgende aanvragen:
+De `allowProxy` eigenschap kunt u aanvragen:
 
 * Clilib via `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * De statische afbeelding via `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
@@ -135,7 +135,7 @@ This is possible. Still need detail.
 
 ## Clientbibliotheken op auteur versus publiceren {#clientlibs-author-publish}
 
-De meeste clientlibs zijn vereist op de AEM-publicatie-instantie. Dat wil zeggen dat de meeste clientlibs-doeleinden de eindgebruikerservaring van de inhoud moeten opleveren. Voor clientlibs bij publicatie-instanties [front-end constructiegereedschappen](#fed-for-aemaacs) kan worden gebruikt en geïmplementeerd via [clientbibliotheekmappen zoals hierboven beschreven.](#creating-clientlib-folders)
+De meeste clientlibs zijn vereist op de AEM-publicatie-instantie. Dat wil zeggen dat de meeste clientlibs-doeleinden de eindgebruikerservaring van de inhoud moeten opleveren. Voor clientlibs bij publicatie-instanties, [front-end buildtools](#fed-for-aemaacs) kan worden gebruikt en geïmplementeerd via [clientbibliotheekmappen zoals hierboven beschreven.](#creating-clientlib-folders)
 
 Er zijn echter momenten waarop clientbibliotheken nodig kunnen zijn om de ontwerpervaring aan te passen. Als u bijvoorbeeld een dialoogvenster aanpast, moet u mogelijk kleine CSS- of JS-bits implementeren in de AEM ontwerpinstantie.
 
@@ -162,11 +162,11 @@ Tot de gegevens behoren het bibliotheekpad en -type (CSS of JS) en de waarden va
 De `dumplibs` component omvat een testselecteur die de broncode toont die voor wordt geproduceerd `ui:includeClientLib` -tags. De pagina bevat code voor verschillende combinaties van js-, css- en themakenmerken.
 
 1. Gebruik een van de volgende methoden om de pagina Uitvoer testen te openen:
-   * Van de `dumplibs.html` pagina, klikt u op de koppeling in het dialoogvenster **Klik hier voor het testen van de uitvoer** tekst.
+   * Van de `dumplibs.html` pagina, klikt u op de koppeling in het dialoogvenster **Klik hier voor testen van uitvoer** tekst.
    * Open de volgende URL in uw webbrowser (gebruik indien nodig een andere host en poort):
       * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
    * Op de standaardpagina wordt uitvoer weergegeven voor tags zonder waarde voor het categoriekenmerk.
-1. Als u de uitvoer voor een categorie wilt zien, typt u de waarde van de clientbibliotheek `categories` eigenschap en klikken **Query verzenden**.
+1. Als u de uitvoer voor een categorie wilt zien, typt u de waarde van de clientbibliotheek `categories` eigenschap en klik op **Query verzenden**.
 
 ## Extra functies voor clientbibliotheekmappen {#additional-features}
 
@@ -197,7 +197,7 @@ De afhankelijkheden moeten een andere `cq:ClientLibraryFolder`. Om gebiedsdelen 
 * **Type:** String[]
 * **Waarden:** De waarde van het eigenschap category van het knooppunt cq:ClientLibraryFolder waarvan de huidige bibliotheekmap afhankelijk is.
 
-De `/etc/clientlibs/myclientlibs/publicmain` is afhankelijk van de `cq.jquery` bibliotheek. De pagina die verwijst naar de hoofdclientbibliotheek genereert een HTML die de volgende code bevat:
+Bijvoorbeeld de `/etc/clientlibs/myclientlibs/publicmain` is afhankelijk van de `cq.jquery` bibliotheek. De pagina die verwijst naar de hoofdclientbibliotheek genereert een HTML die de volgende code bevat:
 
 ```xml
 <script src="/etc/clientlibs/foundation/cq.jquery.js" type="text/javascript">
@@ -212,7 +212,7 @@ Het insluiten van code is handig voor het verschaffen van toegang tot bibliothek
 
 #### Toepassingsspecifieke clientbibliotheekmappen {#app-specific-client-library-folders}
 
-Het wordt aanbevolen alle toepassingsgerelateerde bestanden in de onderstaande toepassingsmap te houden `/apps`. Het is ook aan te raden bezoekers van websites de toegang tot de `/apps` map. Om aan beide beste praktijken te voldoen, creeer een omslag van de cliëntbibliotheek onder `/etc` map waarin de clientbibliotheek is ingesloten die zich onder `/apps`.
+Het wordt aanbevolen om alle toepassingsgerelateerde bestanden in de onderstaande toepassingsmap te houden `/apps`. Het is ook aan te raden bezoekers van websites de toegang tot de `/apps` map. Voor beide aanbevolen procedures maakt u een clientbibliotheekmap onder de `/etc` map waarin de clientbibliotheek is ingesloten die zich onder `/apps`.
 
 Gebruik de eigenschap Categorieën om de clientbibliotheekmap te identificeren die u wilt insluiten. Als u de bibliotheek wilt insluiten, voegt u een eigenschap toe aan het insluiten `cq:ClientLibraryFolder` node, met de volgende eigenschapkenmerken:
 
@@ -222,13 +222,13 @@ Gebruik de eigenschap Categorieën om de clientbibliotheekmap te identificeren d
 
 #### Insluiten gebruiken om verzoeken te minimaliseren {#using-embedding-to-minimize-requests}
 
-In sommige gevallen zult u zien dat de uiteindelijke HTML die door uw publicatieexemplaar voor een standaardpagina wordt gegenereerd, een relatief groot aantal items bevat `<script>` elementen.
+In sommige gevallen zult u merken dat de uiteindelijke HTML die door uw publicatieexemplaar voor een standaardpagina wordt gegenereerd, een relatief groot aantal `<script>` elementen.
 
-In dergelijke gevallen kan het handig zijn om alle vereiste code van de clientbibliotheek te combineren in één bestand, zodat het aantal heen en weer aanvragen bij het laden van de pagina wordt verminderd. U kunt dit doen `embed` de vereiste bibliotheken in uw toepassingsspecifieke clientbibliotheek met de eigenschap embed van het dialoogvenster `cq:ClientLibraryFolder` knooppunt.
+In dergelijke gevallen kan het handig zijn om alle vereiste code van de clientbibliotheek te combineren in één bestand, zodat het aantal heen en weer aanvragen bij het laden van de pagina wordt verminderd. Om dit te doen kunt u `embed` de vereiste bibliotheken in uw toepassingsspecifieke clientbibliotheek met de eigenschap embed van het dialoogvenster `cq:ClientLibraryFolder` knooppunt.
 
 #### Paden in CSS-bestanden {#paths-in-css-files}
 
-Wanneer u CSS-bestanden insluit, gebruikt de gegenereerde CSS-code paden naar bronnen die relatief zijn ten opzichte van de insluitingsbibliotheek. Bijvoorbeeld de openbaar toegankelijke bibliotheek `/etc/client/libraries/myclientlibs/publicmain` sluit het `/apps/myapp/clientlib` clientbibliotheek:
+Wanneer u CSS-bestanden insluit, gebruikt de gegenereerde CSS-code paden naar bronnen die relatief zijn ten opzichte van de insluitingsbibliotheek. De openbaar toegankelijke bibliotheek `/etc/client/libraries/myclientlibs/publicmain` sluit het `/apps/myapp/clientlib` clientbibliotheek:
 
 De `main.css` bestand bevat de volgende stijl:
 
@@ -275,7 +275,7 @@ Het openen van de `publicmain.css` het dossier openbaart de volgende code:
 
 ### Voorprocessors gebruiken {#using-preprocessors}
 
-AEM maakt het mogelijk om af te spelen op preprocessoren en schepen met ondersteuning voor [YUI-compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) voor CSS en JavaScript en [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) voor JavaScript met YUI ingesteld als AEM standaardvoorprocessor.
+AEM maakt het mogelijk om af te spelen op preprocessoren en schepen met ondersteuning voor [YUI-compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) voor CSS en JavaScript en [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) voor JavaScript waarvoor YUI is ingesteld als AEM standaardvoorprocessor.
 
 Met de aanpasbare voorprocessoren kunt u flexibel gebruik maken, waaronder:
 
@@ -290,11 +290,11 @@ Met de aanpasbare voorprocessoren kunt u flexibel gebruik maken, waaronder:
 
 >[!CAUTION]
 >
->Plaats geen geminiateerde bibliotheek in een clientbibliotheek. Geef in plaats daarvan de onbewerkte bibliotheek op en gebruik de opties van de voorprocessoren als miniaturen vereist zijn.
+>Plaats geen geminiateerde bibliotheek in een clientbibliotheek. Geef in plaats daarvan de onbewerkte bibliotheek op en gebruik de opties van de voorprocessoren als miniatuurafbeelding vereist is.
 
 #### Gebruik {#usage}
 
-U kunt kiezen om de configuratie preprocessoren per clientbibliotheek of systeembreed te configureren.
+U kunt kiezen om de configuratie van preprocessoren per clientbibliotheek of systeembreed te configureren.
 
 * Eigenschappen voor meerdere waarden toevoegen `cssProcessor` en `jsProcessor` op het clientbibliotheekknooppunt
 * Of definieer de standaardconfiguratie van het systeem via de **HTML Library Manager** OSGi-configuratie
@@ -346,8 +346,8 @@ Voor meer informatie over GCC-opties raadpleegt u de [GCC-documentatie](https://
 YUI wordt geplaatst als standaardminifier in AEM. Voer de volgende stappen uit om dit te wijzigen in GCC.
 
 1. Ga naar Apache Felix Config Manager op (`http://<host>:<portY/system/console/configMgr`)
-1. Zoeken en bewerken **Adobe Granite HTML Library Manager**.
+1. De opdracht Zoeken en bewerken **Adobe Granite HTML Library Manager**.
 1. De optie **Minieren** (als deze optie nog niet is ingeschakeld).
 1. De waarde instellen **Standaardconfiguratie JS-processor** tot `min:gcc`.
    * Opties kunnen worden doorgegeven als deze bijvoorbeeld met een puntkomma worden gescheiden. `min:gcc;obfuscate=true`.
-1. Klikken **Opslaan** om de wijzigingen op te slaan.
+1. Klikken **Opslaan** om de wijzigingen op te slaan

@@ -3,9 +3,9 @@ title: Doelkiezer voor AEM as a Cloud Service
 description: Met de AEM Doelkiezer kunt u elementen weergeven en selecteren die u als een kopie van het oorspronkelijke element kunt gebruiken.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1894'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Micro-front-bestemmingskiezer {#Overview}
 
-Micro-Frontend de Selector van de Bestemming verstrekt een gebruikersinterface binnen uw toepassing die gemakkelijk met het [!DNL Experience Manager Assets as a Cloud Service] opslagplaats. U kunt naar de juiste map in de [!DNL Experience Manager Assets as a Cloud Service] opslagplaats en uploadt activa van uw toepassing.
+Micro-Front de Selector van de Bestemming verstrekt een gebruikersinterface binnen uw toepassing die gemakkelijk met het [!DNL Experience Manager Assets as a Cloud Service] opslagplaats. U kunt naar de juiste map in de [!DNL Experience Manager Assets as a Cloud Service] opslagplaats en uploadt activa van uw toepassing.
 
 De gebruikersinterface Micro-Frontend wordt beschikbaar gesteld in uw toepassingservaring gebruikend het pakket van de Selecteur van de Bestemming. Eventuele updates van het pakket worden automatisch geïmporteerd en de meest recente geïmplementeerde doelkiezer wordt automatisch in de toepassing geladen.
 
@@ -21,7 +21,7 @@ De gebruikersinterface Micro-Frontend wordt beschikbaar gesteld in uw toepassing
 
 De Selector van de bestemming verstrekt vele voordelen, zoals:
 
-* Eenvoudige integratie met alle Adobe- of niet-Adobe-toepassingen met Vanilla JavaScript-bibliotheek.
+* Eenvoudig te integreren met alle Adobe- of niet-Adobe-toepassingen die gebruikmaken van Vanilla JavaScript-bibliotheek.
 * Eenvoudig te handhaven aangezien de updates aan het pakket van de Selecteur van de Bestemming automatisch worden opgesteld aan de Selecteur van de Bestemming beschikbaar voor uw toepassing. Uw toepassing hoeft geen updates uit te voeren om de laatste wijzigingen te laden.
 * Gemak van aanpassing aangezien er eigenschappen beschikbaar zijn die de vertoning van de Selecteur van de Bestemming binnen uw toepassing controleren.
 * In volledige tekst zoeken om snel naar mappen te navigeren om elementen vanuit uw toepassing te uploaden.
@@ -37,12 +37,12 @@ Voer de volgende taken uit om de Kiezer van de Bestemming met uw te integreren e
 
 ## Doelkiezer integreren met Vanilla JS {#integration-with-vanilla-js}
 
-U kunt alle [!DNL Adobe] of niet-Adobe-toepassing met [!DNL Experience Manager Assets] als [!DNL Cloud Service] opslagplaats en selecteer elementen vanuit de toepassing.
+U kunt alle [!DNL Adobe] of niet-Adobe [!DNL Experience Manager Assets] als [!DNL Cloud Service] opslagplaats en selecteer elementen vanuit de toepassing.
 
 De integratie wordt gedaan door het pakket van de Selecteur van de Bestemming in te voeren en met de as a Cloud Service Activa te verbinden gebruikend de bibliotheek Vanilla JavaScript. U moet een `index.html` of een geschikt bestand in uw toepassing naar -
 * De verificatiedetails definiëren
 * Toegang krijgen tot de as a Cloud Service gegevensopslagruimte
-* Vorm de de vertoningseigenschappen van de Selecteur van de Bestemming
+* De weergave-eigenschappen voor de doelkiezer configureren
 
 U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als:
 
@@ -136,7 +136,7 @@ In de volgende tabel worden enkele belangrijke eigenschappen van het geselecteer
 | *repo:modifiedBy* | string | De gebruiker of het systeem dat het element als laatste heeft gewijzigd. |
 | *repo:modifyDate* | string | De datum en het tijdstip waarop het element voor het laatst is gewijzigd. |
 | *dc:indeling* | string | De indeling van het element. |
-| *_page* | orderBy: tekenreeks; aantal: nummer; | Hiermee neemt u het paginanummer van het document op. |
+| *_page* | orderBy: string; count: number; order | Hiermee neemt u het paginanummer van het document op. |
 
 Voor een volledige lijst met eigenschappen en een gedetailleerd voorbeeld gaat u naar [Voorbeeld van code doelkiezer](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
@@ -185,22 +185,22 @@ U kunt de eigenschappen van de Selector van de Bestemming gebruiken om de manier
 
 | Eigenschap | Type | Vereist | Standaard | Beschrijving |
 |---|---|---|---|---|
-| *imsOrg* | string | Ja | | Adobe Identity Management System-id (IMS) die tijdens de provisioning is toegewezen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] voor uw organisatie. De `imsOrg` is vereist om te controleren of de organisatie waartoe u toegang hebt, onder Adobe IMS valt of niet. |
+| *imsOrg* | string | Ja | | Adobe Identity Management System (IMS)-id die tijdens de provisioning is toegewezen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] voor uw organisatie. De `imsOrg` is vereist om te controleren of de organisatie waartoe u toegang hebt, onder Adobe IMS valt of niet. |
 | *imsToken* | string | Nee | | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is niet vereist als u de SUSI-flow gebruikt. Dit is echter vereist als u de niet-SUSI-flow gebruikt. |
 | *apiKey* | string | Nee | | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is niet vereist als u de SUSI-flow gebruikt. Dit is echter vereist in niet-SUSI-stromen. |
-| *rootPath* | string | Nee | /content/dam/ | Het pad naar de map waarin de doelkiezer uw elementen weergeeft. `rootPath` kan ook in de vorm van inkapseling worden gebruikt. Op basis van het volgende pad, `/content/dam/marketing/subfolder/`Met Doelselectie kunt u niet door een bovenliggende map bladeren, maar alleen de onderliggende mappen. |
+| *rootPath* | string | Nee | /content/dam/ | Het pad naar de map waarin de doelkiezer uw elementen weergeeft. `rootPath` kan ook in de vorm van inkapseling worden gebruikt. Als u bijvoorbeeld het volgende pad kiest, `/content/dam/marketing/subfolder/`Met Doelselectie kunt u niet door een bovenliggende map bladeren, maar alleen de onderliggende mappen. |
 | *hasMore* | boolean | Nee | | Wanneer de toepassing meer inhoud heeft om weer te geven, kunt u deze eigenschap gebruiken om een lader toe te voegen die de inhoud laadt om deze zichtbaar te maken in de toepassing. Het is een indicator die aangeeft dat inhoud wordt geladen. |
 | *orgName* | boolean | Nee | | Het is de naam van org (waarschijnlijk orgID) verbonden aan AEM |
 | *initRepoID* | string | Nee | | Het is het pad van de gegevensopslagruimte die u wilt gebruiken in een standaardbeginweergave |
-| *onCreateFolder* | string | Nee | | De `onCreateFolder` kunt u een pictogram toevoegen waarmee een nieuwe map in de toepassing wordt toegevoegd. |
+| *onCreateFolder* | string | Nee | | De `onCreateFolder` Met deze eigenschap kunt u een pictogram toevoegen waarmee een nieuwe map in de toepassing wordt toegevoegd. |
 | *onConfirm* | string | Nee | | Dit is een callback wanneer u op de knop Bevestigen klikt. |
 | *confirmDisabled* | string | Nee | | This property controls the toggle of the confirm button. |
-| *viewType* | string | Nee | | De `viewType` Deze eigenschap wordt gebruikt om de weergaven op te geven die u gebruikt om elementen weer te geven. |
+| *viewType* | string | Nee | | De `viewType` wordt gebruikt om de weergaven op te geven die u gebruikt om elementen weer te geven. |
 | *viewTypeOptions* | string | Nee | | Deze eigenschap is gerelateerd aan `viewType` eigenschap. u kunt een of meer weergaven opgeven om elementen weer te geven. Beschikbare viewTypeOptions zijn: Lijstweergave, Rasterweergave, Galerieweergave, Watervalweergave en Boomweergave. |
 | *itemNameFormatter* | string | Nee | | Met deze eigenschap kunt u de itemnaam opmaken |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |  | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen aangepaste gelokaliseerde waarden kunt doorgeven via de `i18nSymbols` prop. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Als u de overschrijving wilt uitvoeren, moet u een geldige waarde opgeven [Berichtbeschrijving](https://formatjs.io/docs/react-intl/api/#message-descriptor) naar de toets van `i18nSymbols` die u wilt overschrijven. |
 | *inlineAlertSetup* | string | Nee | | Er wordt een waarschuwingsbericht toegevoegd dat u in de toepassing wilt doorgeven. U kunt bijvoorbeeld een waarschuwingsbericht toevoegen dat u geen toestemming hebt om deze map te openen. |
-| *intl* | Object | Nee | | Doelselectie biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige tekenreeks voor de landinstelling op te geven via het dialoogvenster `intl.locale` prop. Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> De landinstellingstekenreeksen die worden ondersteund, volgen de [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
+| *intl* | Object | Nee | | Doelselectie biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige landinstelling op te geven via het dialoogvenster `intl.locale` prop. Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> De landinstellingstekenreeksen die worden ondersteund volgen de [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
 
 ## Voorbeelden voor het gebruik van de eigenschappen van de doelkiezer {#usage-examples}
 
@@ -208,11 +208,11 @@ U kunt de doelkiezer definiëren [eigenschappen](#destination-selector-propertie
 
 ### Voorbeeld 1: Een map maken in de doelkiezer
 
-Met de doelkiezer kunt u een nieuwe map maken om elementen naar de desbetreffende locatie te uploaden, verplaatsen of kopiëren.
+Met Doelkiezer kunt u een nieuwe map maken om elementen op de desbetreffende locatie te uploaden, te verplaatsen of te kopiëren.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
-### Voorbeeld 2: Weergavetype van doelkiezer opgeven
+### Voorbeeld 2: weergavetype van doelkiezer opgeven
 
 Met Doelselectie wordt een grote verscheidenheid aan elementen in vier verschillende weergaven weergegeven, waaronder de lijstweergave, de rasterweergave, de galerijweergave en de watervalweergave. Als u standaardweergavetype wilt opgeven, kunt u `viewType` eigenschap. De `viewTypeOptions` eigenschap wordt samen met `viewType` om andere weergavetypen op te geven, zodat andere opties voor weergavetype in een vervolgkeuzelijst kunnen worden weergegeven. Er kan één argument worden gebruikt voor het geval u slechts één optie wilt weergeven.
 
@@ -241,7 +241,7 @@ Zodra de selecteur van de Bestemming opstelling is en u voor authentiek wordt ve
 
 ### Zoekbalk {#search-bar}
 
-Met de doelkiezer kunt u zoeken naar volledige tekst van elementen in de geselecteerde opslagplaats. Als u bijvoorbeeld het trefwoord typt `wave` in de zoekbalk, alle elementen met de opdracht `wave` trefwoord dat in een van de metagegevenseigenschappen wordt vermeld, wordt weergegeven.
+Met de optie Doelselectie kunt u zoeken in volledige tekst naar elementen in de geselecteerde opslagplaats. Als u bijvoorbeeld het trefwoord typt `wave` in de zoekbalk, alle elementen met de opdracht `wave` trefwoord dat in een van de metagegevenseigenschappen wordt vermeld, wordt weergegeven.
 
 ### Sorteren {#sorting}
 
@@ -261,7 +261,7 @@ Hiermee kunt u een nieuwe map maken in de doelmap van uw [!DNL Adobe Experience 
 
 ### Weergavetypen {#types-of-view}
 
-Met de optie Doelselectie kunt u het element in vier verschillende weergaven bekijken:
+Met de optie Doelselectie kunt u het element in vier verschillende weergaven weergeven:
 
 * **![lijstweergave](assets/do-not-localize/list-view.png)[!UICONTROL List View]**: In de lijstweergave worden schuifbare bestanden en mappen in één kolom weergegeven.
 * **![rasterweergave](assets/do-not-localize/grid-view.png)[!UICONTROL Grid View]**: In de rasterweergave worden schuifbare bestanden en mappen weergegeven in een raster met rijen en kolommen.
@@ -270,8 +270,8 @@ Met de optie Doelselectie kunt u het element in vier verschillende weergaven bek
 
 ### Info {#info}
 
-Met het informatie- of infopictogram kunt u metagegevens van het geselecteerde element weergeven. Het bevat verschillende details, zoals afmetingen, grootte, beschrijving, pad, gewijzigde datum en aanmaakdatum. De metagegevens worden weergegeven tijdens het uploaden of kopiëren of het maken van een nieuw element.
+Met het informatie- of infopictogram kunt u metagegevens van het geselecteerde element weergeven. Het bevat verschillende details, zoals afmetingen, grootte, beschrijving, pad, gewijzigde datum en datum. De metagegevens worden weergegeven tijdens het uploaden of kopiëren of het maken van een nieuw element.
 
 ### Map selecteren {#select-folder}
 
-Met de knop Map selecteren kunt u elementen selecteren voor verschillende bewerkingen die zijn gekoppeld aan [eigenschappen](#destination-selector-properties) op doelkiezer.
+Met de knop Map selecteren kunt u elementen selecteren voor diverse bewerkingen die zijn gekoppeld aan [eigenschappen](#destination-selector-properties) op doelkiezer.

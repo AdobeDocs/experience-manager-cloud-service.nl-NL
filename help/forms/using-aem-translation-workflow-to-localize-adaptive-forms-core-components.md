@@ -2,9 +2,9 @@
 title: Een adaptief formulier op basis van kerncomponenten vertalen
 description: Gebruik machinevertaling of menselijke vertaling om een adaptief formulier met kerncomponenten te vertalen
 feature: Adaptive Forms
-source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---

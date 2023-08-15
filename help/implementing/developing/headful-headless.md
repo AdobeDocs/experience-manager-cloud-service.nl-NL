@@ -2,9 +2,9 @@
 title: Hoofdletters en headless in AEM
 description: AEM projecten kunnen worden geïmplementeerd in een krachtig en zonder kop, maar de keuze is niet binair. AEM biedt de flexibiliteit om de voordelen van beide modellen in één project te benutten.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ In een krachtig of volledig-stapelmodel, wordt de inhoud beheerd in de AEM bewaa
 
 In een headless model, wordt de inhoud beheerd in de AEM bewaarplaats, maar geleverd via APIs zoals REST en GraphQL aan een ander systeem om de inhoud voor de gebruikerservaring terug te geven. In dit model wordt inhoud gemaakt in AEM, maar wordt de inhoud vormgegeven, gepresenteerd en geleverd op een ander platform.
 
-Toepassingen op één pagina (SPA) zijn vaak de bestemming voor inhoud die zonder kop door AEM wordt geleverd. Deze SPA hoeven echter niet geheel buiten de AEM te liggen. AEM kunt u bepalen in welke mate uw SPA in AEM is geïntegreerd. Laten we een voorbeeld nemen.
+Toepassingen op één pagina (SPA) zijn vaak de bestemming voor inhoud die zonder kop door AEM wordt geleverd. Deze SPA hoeven echter niet geheel buiten de AEM te liggen. AEM kunt u bepalen in welke mate uw SPA in AEM wordt geïntegreerd. Laten we een voorbeeld nemen.
 
 ## Voorbeeld van webwinkel {#web-shop-example}
 
-Stel dat u een bestaande webshop hebt voor uw bedrijf als SPA. Hierin staan al uw productdetails en afbeeldingen. Vervolgens introduceert u AEM om uw marketingactiviteiten, zoals promotiesites, blogs en inhoud van campagnes, kracht bij te zetten. Hoe integreer je deze twee? AEM maakt een spectrum van opties mogelijk:
+Laten we zeggen dat u een bestaande webshop hebt voor uw bedrijf als SPA. Hierin staan al uw productdetails en afbeeldingen. Vervolgens introduceert u AEM om uw marketingactiviteiten, zoals promotiesites, blogs en inhoud van campagnes, kracht bij te zetten. Hoe integreer je deze twee? AEM maakt een spectrum van opties mogelijk:
 
 * **De systemen onafhankelijk laten werken.**
 * **Bied de webshop met beperkte inhoud van AEM via GraphQL.** Inhoud kan door auteurs in AEM worden gemaakt, maar kan alleen via de SPA van de webshop worden bekeken.
@@ -49,23 +49,23 @@ In de volgende sectie worden deze integratieniveaus nader beschreven.
 
 SPA integratie ligt op een spectrum van vier niveaus in AEM.
 
-* **Niveau 0: Geen integratie**
+* **Niveau 0: geen integratie**
    * De SPA en AEM bestaan afzonderlijk en wisselen geen informatie uit.
    * Inhoud wordt in twee aparte systemen gemaakt, beheerd en afzonderlijk geleverd.
-* **Niveau 1: Integratie van inhoudsfragmenten**
+* **Niveau 1: integratie van inhoudsfragmenten**
    * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) worden gebruikt in AEM om beperkte inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API](/help/headless/graphql-api/content-fragments.md).
+   * De SPA haalt deze inhoud op via AEM [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan alleen in de SPA worden weergegeven.
-* **Niveau 2: De SPA insluiten in AEM**
+* **Niveau 2: sluit de SPA in AEM in**
    * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API](/help/headless/graphql-api/content-fragments.md).
+   * De SPA haalt deze inhoud op via AEM [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan binnen AEM in context worden weergegeven.
    * Beperkte inhoud kan binnen AEM worden bewerkt.
 * **Niveau 3: SPA insluiten en volledig inschakelen in AEM**
    * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API](/help/headless/graphql-api/content-fragments.md).
+   * De SPA haalt deze inhoud op via AEM [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
    * Inhoud kan binnen AEM in context worden weergegeven.
    * De meeste inhoud kan worden bewerkt in AEM.
 

@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: Leer hoe u de eigenschappen definieert die vereist zijn voor het beheer van een pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2279'
 ht-degree: 3%
 
 ---
@@ -76,7 +76,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Vanity URL**
 
-   * Hiermee kunt u een vanity-URL voor deze pagina invoeren, waarmee u een kortere en/of expressieve URL kunt hebben.
+   * Hiermee kunt u een vanity-URL voor deze pagina invoeren, waarmee u een kortere en/of meer expressieve URL kunt gebruiken.
    * Als bijvoorbeeld de URL voor Vanity is ingesteld op `welcome` naar de pagina die wordt aangeduid door het pad `/v1.0/startpage` voor de website `http://example.com`vervolgens `http://example.com/welcome` zou de vanzelf-URL zijn van `http://example.com/content/v1.0/startpage`
 
   >[!CAUTION]

@@ -1,17 +1,17 @@
 ---
 title: URL's extern maken
-description: ExternalAlizer is de dienst OSGi die u toestaat om een middelweg in externe en absolute URL programmatically om te zetten.
+description: ExternalAlizer is de dienst OSGi die u programmatically een middelweg in een externe en absolute URL laat omzetten.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
 
 # URL&#39;s extern maken {#externalizing-urls}
 
-In AEM **ExternalAlizer** is de dienst OSGi die u toestaat om een middelweg programmatically om te zetten (bijvoorbeeld `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door het pad vooraf te bevestigen met een vooraf geconfigureerde DNS.
+In AEM **ExternalAlizer** is de dienst OSGi die u programmatically een middelweg laat omzetten (bijvoorbeeld `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door het pad vooraf te bevestigen met een vooraf geconfigureerde DNS.
 
 Omdat een AEM as a Cloud Service instantie zijn uiterlijk zichtbare URL niet kan kennen en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
@@ -44,7 +44,7 @@ Als u de opdracht `preview` en `publish` waarden, omgevingsvariabelen van Cloud 
 
 ## Het vormen van de Dienst Externalzer {#configuring-the-externalizer-service}
 
-De dienst ExternalAlizer staat u toe om het domein centraal te bepalen dat aan programmatically voorvoegselmiddelwegen kan worden gebruikt. De dienst Externalzer zou slechts voor toepassingen met één enkel domein moeten worden gebruikt.
+De dienst ExternalAlizer laat u centraal het domein bepalen dat aan programmatically prefixmiddelwegen kan worden gebruikt. De dienst Externalzer zou slechts voor toepassingen met één enkel domein moeten worden gebruikt.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Om een domeinafbeelding voor de dienst te bepalen Externalzer:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
-   Waar:
+   Waarbij:
 
    * **`scheme`** is meestal http of https, maar kan een ander protocol zijn.
 

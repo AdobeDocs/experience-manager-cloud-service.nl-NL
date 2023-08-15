@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021 enzovoort.
+>Van hieruit kunt u navigeren om notities van eerdere versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Kijk eens naar de [Overzicht release juli 2021](https://video.tv.adobe.com/v/335
 
 ### Wat is er nieuw? {#what-is-new-foundation}
 
-* Meer flexibele configuratie van de verzender: Projecten kunnen gemakkelijker worden georganiseerd. U kunt nu bijvoorbeeld meerdere herschrijfregelbestanden opnemen die de sitestructuur weerspiegelen. [Meer informatie over](/help/implementing/dispatcher/disp-overview.md#validation-debug) deze flexibele wijze, met inbegrip van hoe te om uw dispatcherconfiguratie te structureren zodat kunt u uit het voordeel halen.
+* Flexibelere configuratie van de verzender: De projecten kunnen gemakkelijker worden georganiseerd. U kunt nu bijvoorbeeld meerdere herschrijfregelbestanden opnemen die de sitestructuur weerspiegelen. [Meer informatie over](/help/implementing/dispatcher/disp-overview.md#validation-debug) deze flexibele wijze, met inbegrip van hoe te om uw dispatcherconfiguratie te structureren zodat kunt u uit het voordeel halen.
 * De boomreplicatie UI onder het &quot;Distribute&quot;lusje van de replicatieagent zou moeten worden beschouwd als afgekeurd en is gepland om na 30 september worden verwijderd. [Meer informatie over](/help/operations/replication.md#tree-activation) alternatieve replicatiestrategieën.
 * Bundel `org.apache.sling.datasource-1.0.4.jar` voor de steun van de Gegevensbron van Sling is verwijderd, aangezien het verouderde functionaliteit heeft en niet in gebruik door klanten is.
 
@@ -44,7 +44,7 @@ Kijk eens naar de [Overzicht release juli 2021](https://video.tv.adobe.com/v/335
 
 * Met de functionaliteit voor automatisering van inhoud kunt u [!DNL Experience Manager Assets] gebruiken [!DNL Adobe Creative Cloud] API&#39;s om de productie van bedrijfsmiddelen op schaal te automatiseren. Het verbetert de snelheid van de inhoud door de benodigde tijd en herhalingen aanzienlijk te verminderen om variaties van hetzelfde element te maken. Voor deze functionaliteit is geen programmering vereist en werken vanuit de DAM. Zie [variaties van elementen genereren met behulp van Creative Cloud-integratie](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] bevat de [!DNL Document Cloud] PDF Viewer voor een native voorvertoning van PDF-documenten. Met deze functie kunnen gebruikers PDF-bestanden met meerdere pagina&#39;s voorvertonen zonder dat er bestanden hoeven te worden verwerkt of geconverteerd. Met deze functie verbetert u de pariteit met [!DNL Experience Manager] 6.5 De besturingselementen die beschikbaar zijn in de viewer zijn onder andere zoomen, naar pagina&#39;s navigeren, besturingselementen loskoppelen en op volledig scherm weergeven. Gebruikers kunnen ook een voorvertoning weergeven van pagina&#39;s en bladwijzers. Opmerkingen over het bestand zelf worden ondersteund. Opmerkingen en annotaties over de inhoud in het PDF-bestand worden in een toekomstige versie toegevoegd.
+* [!DNL Experience Manager Assets] bevat de [!DNL Document Cloud] PDF Viewer voor een native voorvertoning van PDF-documenten. Met deze functie kunnen gebruikers PDF-bestanden met meerdere pagina&#39;s voorvertonen zonder dat er bestanden hoeven te worden verwerkt of geconverteerd. Met deze functie verbetert u de pariteit met [!DNL Experience Manager] 6.5. De besturingselementen in de viewer zijn onder andere zoomen, naar pagina&#39;s navigeren, besturingselementen loskoppelen en op volledig scherm weergeven. Gebruikers kunnen ook een voorvertoning weergeven van pagina&#39;s en bladwijzers. Opmerkingen over het bestand zelf worden ondersteund. Opmerkingen en annotaties over de inhoud in het PDF-bestand worden in een toekomstige versie toegevoegd.
 
   ![PDF-bestanden voorvertonen in [!DNL Experience Manager] PDF Viewer gebruiken](/help/assets/assets/preview-pdf-file-viewer.png)
 
@@ -73,7 +73,7 @@ Kijk eens naar de [Overzicht release juli 2021](https://video.tv.adobe.com/v/335
   ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
 -->
 
-* Wanneer u digitale elementen deelt als een koppeling, kunnen gebruikers de URL naar het klembord kopiëren. Dankzij deze verbetering kunt u elementen sneller en gemakkelijker delen.
+* Wanneer u digitale elementen deelt als een koppeling, kunnen gebruikers de URL naar het klembord kopiëren. Dankzij deze verbetering kunt u elementen sneller en handiger delen.
 
 ### Buizen vastgesteld in [!DNL Assets] {#assets-bugs-fixed}
 
@@ -83,8 +83,8 @@ De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* U kunt de dienst van de Automatede form conversion nu gebruiken aan [PDF forms converteren in het Frans, Duits en Spaans](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) aan adaptieve formulieren.
-* Een apart deelvenster toegevoegd aan de sjablooneditor om fouten weer te geven die betrekking hebben op adaptieve formuliercomponenten. Hiermee kunt u alle adaptieve formulierfouten op één locatie consolideren en de resolutietijd verminderen.
+* U kunt nu de service Automatede form conversion gebruiken voor [PDF forms converteren in het Frans, Duits en Spaans](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) aan adaptieve formulieren.
+* Er is een apart deelvenster toegevoegd aan de sjablooneditor om fouten weer te geven die betrekking hebben op adaptieve formuliercomponenten. Hiermee kunt u alle adaptieve formulierfouten op één locatie consolideren en de resolutietijd verminderen.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#beta-features-forms}
 
@@ -93,7 +93,7 @@ De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    * Afdruk-PDF-bestanden genereren op basis van een XFA-formulier met PDF en Adobe Acrobat-formulier.
 
-* **Variabele-gegevensexternalizer**: U kunt gegevens van AEM workflowvariabelen opslaan op een extern opslagsysteem dat door uw organisatie wordt beheerd.
+* **Variabele-gegevensexternalizer**: U kunt gegevens van AEM workflowvariabelen opslaan op een extern opslagsysteem dat wordt beheerd door uw organisatie.
 
 * **Op acroform gebaseerd document of record**: U kunt ook [Adobe Acrobat Form PDF gebruiken (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als een sjabloon voor Document of Record naast XFA-formuliersjabloon.
 
@@ -151,7 +151,7 @@ De volgende release is gepland voor 12 augustus 2021.
 
 ### Wat is er nieuw? {#what-is-new-cm-july}
 
-* Klanten kunnen nu 8 en 11 JDK&#39;s gebruiken voor hun buildprocessen in Cloud Manager en kunnen een van deze JDK&#39;s selecteren voor gebruik van met toolketens compatibele Maven-plug-ins *of* de volledige uitvoering van het Maven-proces.
+* Klanten kunnen nu 8 en 11 JDK&#39;s gebruiken voor hun buildprocessen in Cloud Manager en kunnen een van deze JDK&#39;s selecteren voor gebruik van met toolketens compatibele Maven-plug-ins *of* de volledige Maven procesuitvoering.
 
 * Uitgaande uitgang IP zal nu het programma worden geopend het dossier van het bouwstijlstaplogboek.
 
@@ -189,7 +189,7 @@ De releasedatum voor Cloud Acceleration Manager is 15 juli 2021.
 
 ### Nieuwe functies {#what-is-new-cam}
 
-Cloud Acceleration Manager is een cloudgebaseerde toepassing die ontworpen is om uw IT-teams te begeleiden tijdens de overgang van planning tot live gaan met Cloud Service. Stel uw teams in voor een geslaagde migratie met aanbevolen Adobe-procedures, tips, documentatie en tools om u te helpen bij elke fase van de reis naar AEM als Cloud Service. Meer informatie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Cloud Acceleration Manager is een cloudgebaseerde toepassing die ontworpen is om uw IT-teams te begeleiden tijdens de overgang van planning tot live gaan met Cloud Service. Stel uw teams in voor een geslaagde migratie met aanbevolen best practices, tips, documentatie en tools voor de Adobe in elke fase van de reis naar AEM als Cloud Service. Meer informatie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
 
 >[!NOTE]
 >

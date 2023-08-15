@@ -4,9 +4,9 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ U hebt zojuist een lijstquery voor een volledige lijst met alle inhoudsfragmente
 
 ## Query voor een specifiek deel van de voorbeeldinhoud {#bypath-query}
 
-Als u een query van het type byPath uitvoert, kunt u inhoud voor een bepaald inhoudsfragment ophalen. Productdetailpagina&#39;s en pagina&#39;s die zich op een specifieke set inhoud richten, vereisen doorgaans dit type query.
+Als u een query op basis van pad uitvoert, kunt u inhoud voor een bepaald inhoudsfragment ophalen. Productdetailpagina&#39;s en pagina&#39;s die zich op een specifieke set inhoud richten, vereisen doorgaans dit type query.
 
 1. Kopieer het volgende codefragment voor een byPath-query van het vooraf geladen bestand **AEM Demo-elementen** eindpunt.
 
@@ -113,7 +113,7 @@ Nu u de twee primaire soorten vragen in werking hebt gesteld, bent u bereid om u
 
 1. Om vragen tegen uw eigen Fragmenten van de Inhoud in werking te stellen, verander het eindpunt van **AEM Demo-elementen** aan de **Uw project** map.
 
-1. Verwijder alle bestaande inhoud in de query-editor. Typ vervolgens open haakje `{` en druk Ctrl+Space of Option+Space voor een automatisch aangevulde lijst van de modellen die in uw eindpunt werden bepaald. Selecteer het model dat u hebt gemaakt en waarin u eindigt `List` van de opties. Als u de voorbeelden in de vorige modules volgde, zou u moeten vinden `adventureList` in de lijst voor automatisch aanvullen.
+1. Verwijder alle bestaande inhoud in de query-editor. Typ vervolgens het open haakje `{` en druk Ctrl+Space of Option+Space voor een automatisch aangevulde lijst van de modellen die in uw eindpunt werden bepaald. Selecteer het model dat u hebt gemaakt en waarin u eindigt `List` van de opties. Als u de voorbeelden in de vorige modules volgde, zou u moeten vinden `adventureList` in de lijst voor automatisch aanvullen.
 
    ![Aangepaste query starten](assets/do-not-localize/custom-query-1.png)
 
@@ -175,13 +175,13 @@ U maakt een doorlopende query die gegevens bevat die u van uw clienttoepassing w
 
 1. Als u tevreden bent met de query, klikt u op de knop **Opslaan als** knoop bij de bovenkant van de vraagredacteur om de vraag voort te zetten.
 
-1. In de **Naam query** pop-up, geef uw vraag de naam `adventure-list`.
+1. In de **Naam van query** pop-up, geef uw vraag de naam `adventure-list`.
 
 1. Tik of klik op **Opslaan als**.
 
    ![Query voortzetten](assets/do-not-localize/persist-query.png)
 
-1. De vraag wordt voortgeduurd zoals bevestigd door een bannerbericht bij de bodem van het scherm. De query wordt nu ook weergegeven in het linkerdeelvenster met aanhoudende query&#39;s in het venster.
+1. De vraag wordt voortgeduurd zoals bevestigd door een bannerbericht bij de bodem van het scherm. De query wordt nu ook weergegeven in het linkerdeelvenster met doorlopende query&#39;s in het venster.
 
 1. Opdat de persistente query openbaar beschikbaar is, moet deze worden gepubliceerd, ongeveer zoals hoe de Content Fragments moeten worden gepubliceerd. Klik op de knop **Publiceren** knoop bij het hoogste recht van de vraagredacteur om de vraag te publiceren.
 

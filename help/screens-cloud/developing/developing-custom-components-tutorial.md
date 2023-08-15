@@ -2,9 +2,9 @@
 title: Een aangepaste component voor as a Cloud Service schermen ontwikkelen
 description: De volgende zelfstudie doorloopt de stappen om een aangepaste component voor AEM Screens te maken. AEM Screens gebruikt veel bestaande ontwerppatronen en technologieën van andere AEM. In de zelfstudie worden verschillen en speciale overwegingen benadrukt bij het ontwikkelen voor AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2107'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ AEM Screens heeft sommige interessante beperkingen die niet noodzakelijk waar vo
    Schermcomponenten vereisen twee verschillende weergaven afhankelijk van welke [ontwerpmodus](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=en#page-modes) wordt gebruikt:
 
    1. **Productie**: Modus Voorvertoning of Publiceren (wcmmode=disabled)
-   1. **Bewerken**: worden gebruikt voor alle andere ontwerpmodi, zoals bewerken, ontwerpen, basiskleur, ontwikkelaar...
+   1. **Bewerken**: wordt gebruikt voor alle andere ontwerpmodi, zoals bewerken, ontwerpen, basisstructuur, ontwikkelaar...
 
    `helloworld.html`handelt als schakelaar, die welke auteurswijze controleert en aan een ander manuscript van HTML opnieuw richt. Een algemene regel die door rasteronderdelen wordt gebruikt, is het hebben van een `edit.html` script voor de bewerkingsmodus en een `production.html` script voor de productiemodus.
 
@@ -255,7 +255,7 @@ AEM Screens heeft sommige interessante beperkingen die niet noodzakelijk waar vo
    </jcr:root>
    ```
 
-   De `textfield` for the Message is saved to a property named `message` en dat `numberfield` for the Duration is saved to a property named `duration`. Er wordt naar deze twee eigenschappen verwezen in `/apps/weretail-run/components/content/helloworld/production.html` door HTL als `${properties.message}` en `${properties.duration}`.
+   De `textfield` for the Message is saved to a property named `message` en dat de `numberfield` for the Duration is saved to a property named `duration`. Naar deze twee eigenschappen wordt in `/apps/weretail-run/components/content/helloworld/production.html` door HTL als `${properties.message}` en `${properties.duration}`.
 
    ![Hello World - dialoogvenster voltooid](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
@@ -265,7 +265,7 @@ AEM Screens heeft sommige interessante beperkingen die niet noodzakelijk waar vo
 
 Client-Side Libraries bieden een mechanisme voor het organiseren en beheren van CSS- en JavaScript-bestanden die nodig zijn voor een AEM-implementatie.
 
-AEM Screens-componenten worden in de bewerkingsmodus anders weergegeven dan in de modus Voorbeeld/productie. Er worden twee clientbibliotheken gemaakt: één voor Edit wijze, en één voor Voorproef/Productie.
+AEM Screens-componenten worden in de bewerkingsmodus anders weergegeven dan in de modus Voorbeeld/productie. Er worden twee clientbibliotheken gemaakt: een voor de bewerkingsmodus en een voor Voorvertoning/Productie.
 
 1. Maak een map voor client-side bibliotheken voor de component Hello World.
 
@@ -287,7 +287,7 @@ AEM Screens-componenten worden in de bewerkingsmodus anders weergegeven dan in d
 
    Eigenschappen voor /apps/weretail-run/components/content/helloworld/clientlibs/shared
 
-   De eigenschap Categorieën is een tekenreeks die de clientbibliotheek identificeert. De categorie cq.screens.component wordt gebruikt in zowel de modus Bewerken als de modus Voorbeeld/productie. Daarom wordt elke CSS/JS die in de sharedclientLib is gedefinieerd, in alle modi geladen.
+   De eigenschap category is een tekenreeks die de clientbibliotheek identificeert. De categorie cq.screens.component wordt gebruikt in zowel de modus Bewerken als de modus Voorbeeld/productie. Daarom wordt elke CSS/JS die in de sharedclientLib is gedefinieerd, in alle modi geladen.
 
    Het is aan te raden geen paden in een productieomgeving rechtstreeks toegankelijk te maken voor /apps. De eigenschap allowProxy zorgt ervoor dat naar de CSS- en JS-clientbibliotheek wordt verwezen via het voorvoegsel of/etc.clientlibs.
 
@@ -327,7 +327,7 @@ AEM Screens-componenten worden in de bewerkingsmodus anders weergegeven dan in d
    }
    ```
 
-1. Kopieer en plak de `shared` clientbibliotheekmap om een clientbibliotheek met de naam `production`.
+1. Kopieer en plak de `shared` clientbibliotheekmap om een clientbibliotheek te maken met de naam `production`.
 
    ![Kopieer de gedeelde clientbibliotheek om een nieuwe productieclientbibliotheek te maken](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
@@ -390,13 +390,13 @@ Een Web.Retail pagina van het Ontwerp van de Looppas wordt gecreeerd hieronder d
    | sling:resourceType | String | wcm/core/components/ontwerper |
    | cq:doctype | String | html_5 |
 
-   ![Ontwerppagina bij /apps/settings/wcm/designs/we-Retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1219pm.png)
+   ![Ontwerppagina op /apps/settings/wcm/designs/we-Retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1219pm.png)
 
-   Ontwerppagina bij /apps/settings/wcm/designs/we-Retail-run
+   Ontwerppagina op /apps/settings/wcm/designs/we-Retail-run
 
 ## Een volgend kanaal maken {#create-sequence-channel}
 
-De component Hello World is bedoeld voor gebruik op een Kanaal van de Opeenvolging. Om de component te testen, wordt een nieuw Kanaal van de Opeenvolging gecreeerd.
+De Hello World-component is bedoeld voor gebruik op een Volgekanaal. Om de component te testen, wordt een nieuw Kanaal van de Opeenvolging gecreeerd.
 
 1. Navigeer in het menu AEM Start naar **Schermen** > **We.Retail Ru** n > en selecteer **Kanalen**.
 
@@ -412,7 +412,7 @@ De component Hello World is bedoeld voor gebruik op een Kanaal van de Opeenvolgi
 
    1. Eigenschappenstap
 
-   * Basistabel > Titel = **Niet-actief kanaal**
+   * Basistabblad > Titel = **Niet-actief kanaal**
    * Tabblad Kanaal > Controleren **Kanaal online maken**
 
    ![niet-kanaals](/help/screens-cloud/developing/assets/idle-channel.gif)
@@ -423,13 +423,13 @@ De component Hello World is bedoeld voor gebruik op een Kanaal van de Opeenvolgi
 
    Ontwerpconfiguratie die wijst naar /apps/settings/wcm/designs/we-retail-run
 
-1. Bewerk het nieuwe inactieve kanaal zodat u het kunt openen.
+1. Bewerk het zojuist gemaakte niet-actieve kanaal zodat u het kunt openen.
 
 1. De paginamodus wijzigen in **Ontwerp** Modus.
 
    1. Klik op de knop **moersleutel** Pictogram in Parsys zodat kunt u de toegestane componenten vormen.
 
-   1. Selecteer **Schermen** en de **We.Retail Run - Inhoud** groep.
+   1. Selecteer de **Schermen** en de **We.Retail Run - Inhoud** groep.
 
    ![2018-04-30_om_5_43:00](assets/2018-04-30_at_5_43pm.png)
 
@@ -447,7 +447,7 @@ De component Hello World is bedoeld voor gebruik op een Kanaal van de Opeenvolgi
 
 Als uw aangepaste component externe bronnen gebruikt, zoals elementen (afbeeldingen, video&#39;s, lettertypen en pictogrammen), specifieke elementuitvoeringen of clientbibliotheken (css en js), worden deze bronnen niet automatisch toegevoegd aan de offlineconfiguratie. De reden is dat Adobe de markering van de HTML standaard bundelt.
 
-Om u te laten aanpassen en de nauwkeurige activa optimaliseren die aan de speler worden gedownload, biedt Adobe een uitbreidingsmechanisme voor douanecomponenten aan om hun gebiedsdelen aan de off-line caching logica in Schermen bloot te stellen.
+Om u te laten aanpassen en de nauwkeurige activa optimaliseren die aan de speler worden gedownload, biedt de Adobe een uitbreidingsmechanisme voor douanecomponenten aan om hun gebiedsdelen aan de off-line caching logica in Schermen bloot te stellen.
 
 In de onderstaande sectie ziet u de sjabloon voor aangepaste offline bronhandlers en de minimumvereisten in de `pom.xml` voor dat specifieke project.
 

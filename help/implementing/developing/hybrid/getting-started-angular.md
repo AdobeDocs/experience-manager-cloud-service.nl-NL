@@ -1,10 +1,10 @@
 ---
 title: Aan de slag met SPA in AEM Angular gebruiken
-description: Dit artikel presenteert een voorbeeld SPA toepassing, legt uit hoe het wordt samengesteld, en staat u toe om met uw eigen SPA snel het kader van de Angular in gebruik te nemen.
+description: Dit artikel presenteert een voorbeeld SPA toepassing, legt uit hoe het wordt samengesteld, en laat u met uw eigen SPA snel het kader van de Angular in werking stellen.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Naast de verwachte afhankelijkheid van de Angular, kan de steekproef SPA extra b
 
 ### Afhankelijkheden {#dependencies}
 
-De `package.json` het dossier bepaalt de vereisten van het algemene SPA pakket. De minimum vereiste AEM gebiedsdelen zijn hier vermeld.
+De `package.json` bevat de vereisten van het algemene SPA. De minimum vereiste AEM gebiedsdelen zijn hier vermeld.
 
 ```
 "dependencies": {
@@ -102,7 +102,7 @@ Voor elk AEM project moet het [Projectarchetype AEM](https://experienceleague.ad
 
 ## Toepassingsstructuur {#application-structure}
 
-Als u de afhankelijkheden opneemt en uw app samenstelt zoals eerder beschreven, blijft er een werkende SPA over die u kunt uploaden naar uw AEM.
+Als u de afhankelijkheden opneemt en uw app samenstelt zoals eerder beschreven, blijft er een werkende SPA over die u kunt uploaden naar uw AEM-exemplaar.
 
 In het volgende gedeelte van dit document wordt uitgelegd hoe een SPA in AEM is gestructureerd, welke belangrijke bestanden de toepassing sturen en hoe deze samenwerken.
 
@@ -206,11 +206,11 @@ export class MainContentComponent {
 }
 ```
 
-De `MainComponent` Voert de JSON-representatie van het paginamodel in en verwerkt de inhoud om elk element van de pagina om te buigen of te versieren. Meer informatie over de `Page` te vinden in het document [SPA](blueprint.md).
+De `MainComponent` Voert de JSON-representatie van het paginamodel in en verwerkt de inhoud om elk element van de pagina om te buigen of te versieren. Nadere bijzonderheden over de `Page` kan in het document worden gevonden [SPA](blueprint.md).
 
 ### image.component.ts {#image-component-ts}
 
-De `Page` bestaat uit componenten. Met de JSON ingepakt, `Page` kan componenten zoals `image.component.ts` zoals u hier ziet.
+De `Page` bestaat uit componenten. Als de JSON wordt ingeslikt, kan de `Page` kan componenten zoals `image.component.ts` zoals u hier ziet.
 
 ```
 /// image.component.ts

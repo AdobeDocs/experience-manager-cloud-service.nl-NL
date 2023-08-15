@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 6822011a46a1c12c0057e828d976c735ec878eea
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1575'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ U hebt beheerdersrechten nodig voor [configureren van instellingen voor het dele
 
 ## Instellingen voor gedeelde koppelingen configureren {#config-link-share-settings}
 
-[!DNL Experience Manager Assets] staat u toe om de standaardmontages van het verbindingsaandeel te vormen.
+[!DNL Experience Manager Assets] Hiermee kunt u de standaardinstellingen voor het delen van koppelingen configureren.
 
 1. Klik op de knop [!DNL Experience Manager] logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets Configuration]** > **[!UICONTROL Link Share]**.
 1. Begininstellingen:
@@ -46,10 +46,10 @@ U hebt beheerdersrechten nodig voor [configureren van instellingen voor het dele
       * Selecteren `Select Include Renditions` om de `Include Renditions` in het dialoogvenster voor het delen van koppelingen.
       * Selecteer het gedrag door de juiste optie te kiezen om het `Include Renditions` bewerkbaar, alleen-lezen of verborgen.
 
-1. Geef de standaardgeldigheidsperiode op voor de koppeling in het dialoogvenster `Validity Period` in het `Expiration date` sectie.
+1. Geef de standaardgeldigheidsperiode op voor de koppeling in het dialoogvenster `Validity Period` in het veld `Expiration date` sectie.
 
 1. **[!UICONTROL Link share]** in de actiebalk:
-   * Alle gebruikers met `jcr:modifyAccessControl` machtigingen kunnen de [!UICONTROL Link share] optie. Het is standaard zichtbaar voor alle beheerders. De [!UICONTROL Link share] Deze knop is standaard zichtbaar voor iedereen. U kunt configureren om deze optie alleen voor de gedefinieerde groepen weer te geven of u kunt deze optie ook van specifieke groepen weigeren. Selecteren `Allow only for groups` als u specifieke groepen wilt toestaan om `Share Link` optie. Selecteren `Deny from groups` de `Share Link` van specifieke groepen. Als u een van deze opties hebt geselecteerd, geeft u de groepnamen op met `Select Groups` veld om de groepnamen toe te voegen die u moet toestaan of weigeren.
+   * Alle gebruikers met `jcr:modifyAccessControl` machtigingen kunnen de [!UICONTROL Link share] -optie. Het is standaard zichtbaar voor alle beheerders. De [!UICONTROL Link share] Deze knop is standaard zichtbaar voor iedereen. U kunt configureren om deze optie alleen voor de gedefinieerde groepen weer te geven of u kunt deze optie ook van specifieke groepen weigeren. Selecteren `Allow only for groups` als u specifieke groepen wilt toestaan om `Share Link` -optie. Selecteren `Deny from groups` de `Share Link` van specifieke groepen. Als u een van deze opties hebt geselecteerd, geeft u de groepnamen op met `Select Groups` veld om de groepnamen toe te voegen die u moet toestaan of weigeren.
 
 Voor instellingen met betrekking tot e-mailconfiguratie gaat u naar [Documentatie voor e-mailservice](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
 
@@ -115,17 +115,17 @@ Elke gebruiker die toegang heeft tot de koppeling voor gedeelde elementen, kan d
 
 * In de [!UICONTROL Card View]kunt u de muis boven het gedeelde element of de map met gedeelde elementen plaatsen om de elementen te selecteren of in de wachtrij voor downloaden.
 
-* Standaard wordt in de gebruikersinterface het **[!UICONTROL Download Inbox]** optie. Het geeft de lijst weer van alle gedeelde elementen of mappen die samen met hun status in de wachtrij voor downloaden staan.
+* Standaard wordt in de gebruikersinterface het **[!UICONTROL Download Inbox]** -optie. Het geeft de lijst weer van alle gedeelde elementen of mappen die samen met hun status in de wachtrij voor downloaden staan.
 
 * Bij het selecteren van de middelen of map, kunt u een **[!UICONTROL Queue Download]** verschijnt op het scherm. Klik op de knop **[!UICONTROL Queue Download]** om het downloadproces te starten.
 
   ![Downloaden van wachtrij](assets/queue-download.png)
 
-* Klik tijdens het voorbereiden van het downloadbestand op de knop **[!UICONTROL Download Inbox]** om de status van uw download weer te geven. Voor grote downloads klikt u op de knop **[!UICONTROL Refresh]** om de status bij te werken.
+* Klik tijdens het voorbereiden van het downloadbestand op **[!UICONTROL Download Inbox]** om de status van uw download weer te geven. Voor grote downloads klikt u op de knop **[!UICONTROL Refresh]** om de status bij te werken.
 
   ![Postvak IN downloaden](assets/link-sharing-download-inbox.png)
 
-* Als de verwerking is voltooid, klikt u op de knop **[!UICONTROL Download]** om het ZIP-bestand te downloaden.
+* Als de verwerking is voltooid, klikt u op **[!UICONTROL Download]** om het ZIP-bestand te downloaden.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -205,7 +205,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Elementen downloaden en afzonderlijk delen {#download-and-share-assets}
 
-Gebruikers kunnen de vereiste middelen downloaden en deze delen buiten [!DNL Experience Manager]. Zie voor meer informatie [hoe te om activa te zoeken](/help/assets/search-assets.md), [middelen downloaden](/help/assets/download-assets-from-aem.md), en [hoe te om inzamelingen te downloaden](manage-collections.md#download-a-collection)
+Gebruikers kunnen de vereiste middelen downloaden en deze delen buiten [!DNL Experience Manager]. Zie voor meer informatie [hoe te om activa te zoeken](/help/assets/search-assets.md), [hoe te om activa te downloaden](/help/assets/download-assets-from-aem.md), en [hoe verzamelingen te downloaden](manage-collections.md#download-a-collection)
 
 ## Elementen delen met creatieve professionals {#share-with-creatives}
 
@@ -213,7 +213,7 @@ Marketers en zakelijke gebruikers kunnen hun goedgekeurde bedrijfsmiddelen eenvo
 
 * **Experience Manager-bureaubladtoepassing**: De app werkt in Windows en Mac. Zie [Overzicht van desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Als u wilt weten hoe geautoriseerde desktopgebruikers gemakkelijk toegang kunnen krijgen tot de gedeelde elementen, raadpleegt u [elementen zoeken, zoeken en voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [elementen uploaden met bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Adobe-itemkoppeling**: Creatieve professionals kunnen rechtstreeks van binnenuit zoeken en middelen gebruiken [!DNL Adobe InDesign], [!DNL Adobe Illustrator], en [!DNL Adobe Photoshop].
+* **Adobe-itemkoppeling**: De creatieve professionals kunnen hun middelen rechtstreeks van binnen zoeken en gebruiken [!DNL Adobe InDesign], [!DNL Adobe Illustrator], en [!DNL Adobe Photoshop].
 
 ## Assets delen configureren {#configure-sharing}
 
@@ -223,7 +223,7 @@ De verschillende opties om de activa te delen vereisen specifieke configuratie e
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u met gebruikers wilt delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share` de locatie kan de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat ze zich eerst hoeven aan te melden bij [!DNL Assets].
+Als u de URL wilt genereren voor elementen die u met gebruikers wilt delen, gebruikt u het dialoogvenster Koppeling delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share` de locatie kan de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat ze zich eerst moeten aanmelden bij [!DNL Assets].
 
 >[!NOTE]
 >
@@ -270,7 +270,7 @@ Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij 
 
 Zie [hoe te vormen [!DNL Assets] gebruiken met [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
 
-## Beste werkwijzen en probleemoplossing {#bestpractices}
+## Aanbevolen werkwijzen en problemen oplossen {#bestpractices}
 
 * Elementmappen of -verzamelingen die in hun naam een witruimte bevatten, worden mogelijk niet gedeeld.
 * Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de beheerder van de Experience Manager om de downloadlimieten. De standaardwaarde is 100 MB.

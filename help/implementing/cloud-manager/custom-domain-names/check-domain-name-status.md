@@ -2,9 +2,9 @@
 title: Status domeinnaam controleren
 description: Leer hoe u kunt bepalen of uw aangepaste domeinnaam is geverifieerd door Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Cloud Manager controleert het eigendom van het domein via de TXT-waarde en geeft
 
 * **Geverifieerd, implementatie mislukt** - De TXT-verificatie is gelukt, maar de CDN-implementatie is mislukt.
 
-   * Neem in dergelijke gevallen contact op met uw Adobe-vertegenwoordiger.
+   * Neem in dergelijke gevallen contact op met uw Adobe.
 
 * **Domein geverifieerd en geïmplementeerd** - Deze status geeft aan dat uw aangepaste domeinnaam klaar is om te worden gebruikt.
 
@@ -70,7 +70,7 @@ De fout is als volgt gecorrigeerd:
 
 * Gebruik deze optie om het apex-domein en alle subdomeinen te koppelen aan de AEM as a Cloud Service snelaccount. Zie [Werken met domeinen in de sneldocumentatie](https://docs.fastly.com/en/guides/working-with-domains) voor meer informatie.
 
-* Als uw apex-domein meerdere subdomeinen heeft voor AEM as a Cloud Service en niet-AEM as a Cloud Service sites die u wilt koppelen aan verschillende snelaccounts, installeert u het domein dan in Cloud Manager. Als de domeininstallatie mislukt, maakt u snel een Customer Support-ticket, zodat Adobe het snel kan opvolgen.
+* Als uw apex-domein meerdere subdomeinen heeft voor AEM as a Cloud Service en niet-AEM as a Cloud Service sites die u wilt koppelen aan verschillende snelaccounts, installeert u het domein dan in Cloud Manager. Als de domeininstallatie mislukt, maakt u snel een Customer Support-ticket, zodat de Adobe in uw naam snel een vervolg kan geven aan de installatie.
 
 >[!TIP]
 >

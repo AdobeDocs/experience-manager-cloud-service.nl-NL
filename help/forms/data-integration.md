@@ -1,11 +1,11 @@
 ---
 title: Hoe te om een gegevensbestand met te verbinden [!DNL AEM Forms] as a Cloud Service?
 seo-title: AEM Forms Data Integration
-description: U kunt gegevens ophalen en opslaan in RESTful-webservices, SOAP-webservices en OData-services van [!DNL AEM Forms] as a Cloud Service. De service biedt een speciaal hulpmiddel voor het ophalen, testen, valideren en verzenden van gegevens naar verschillende typen gegevensbronnen.
+description: U kunt gegevens ophalen en opslaan in RESTful-webservices, SOAP-webservices en OData-services van [!DNL AEM Forms] as a Cloud Service. De dienst verstrekt een specifiek hulpmiddel om, gegevens terug te winnen te testen te bevestigen en te verzenden naar diverse types van gegevensbronnen.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Terwijl een verdeeld, modulair systeem zijn eigen voordelen heeft, ligt de uitda
 
 [!DNL AEM Forms] Dankzij gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden met [!DNL AEM Forms]. Het verstrekt een intuïtieve gebruikersinterface om een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten over verbonden gegevensbronnen tot stand te brengen. De verenigde vertegenwoordiging is genoemd geworden vormgegevensmodel, een uitbreiding van het schema JSON. De entiteiten in een formuliergegevensmodel worden gegevensmodelobjecten genoemd. Met een formuliergegevensmodel kunt u:
 
-* Toegang tot gegevensmodelvoorwerpen, eigenschappen, en de diensten van verbonden gegevensbronnen.
+* Toegang tot gegevensmodelobjecten, eigenschappen en services van verbonden gegevensbronnen.
 * Objecten en eigenschappen van een aangepast gegevensmodel maken
 * Bouw verenigingen tussen de voorwerpen van het gegevensmodel binnen en over gegevensbronnen.
 * Roep gegevensmodelobjectservices aan om gegevens van en naar gegevensbronnen te zoeken of te schrijven.
@@ -48,7 +48,7 @@ Nadat u een formuliergegevensmodel hebt gemaakt, kunt u het gebruiken in verschi
 
 De eerste stap om gegevensintegratie uit te voeren is gegevensbronnen te identificeren en te vormen die informatie opslaan u in Aanpassings Forms en interactieve communicatie gebruiksgevallen wilt gebruiken. Vervolgens maakt u een formuliergegevensmodel dat gebruikmaakt van gegevensmodelobjecten, eigenschappen en services van een of meer gegevensbronnen. U kunt adaptieve Forms en interactieve communicatie maken op basis van een formuliergegevensmodel, waarbij adaptieve formuliervelden of plaatsaanduidingen in interactieve communicatie zijn gebonden aan de desbetreffende gegevensbroneigenschappen.
 
-[!DNL AEM Forms] Hiermee kunt u ook een formuliergegevensmodel maken dat onafhankelijk is van gegevensbronnen en kunt u later gegevensmodelobjecten en eigenschappen in het formuliergegevensmodel koppelen aan of binden met gegevensbron. Hiermee worden afhankelijkheden van gegevensbronnen verwijderd terwijl u werkt aan een formuliergegevensmodel.
+[!DNL AEM Forms] Hiermee kunt u ook een formuliergegevensmodel maken dat onafhankelijk is van gegevensbronnen en kunt u later gegevensmodelobjecten en -eigenschappen in het formuliergegevensmodel koppelen aan of binden met gegevensbron. Hiermee worden afhankelijkheden van gegevensbronnen verwijderd terwijl u werkt aan een formuliergegevensmodel.
 
 Herzie het volgende om, gegevensintegratie te beginnen te begrijpen en uit te voeren.
 
@@ -59,4 +59,4 @@ Herzie het volgende om, gegevensintegratie te beginnen te begrijpen en uit te vo
 
 >[!NOTE]
 >
->[!UICONTROL Experience Manager Forms] ondersteunt geen relationele database.
+>[!UICONTROL Experience Manager Forms] biedt geen ondersteuning voor relationele databases.

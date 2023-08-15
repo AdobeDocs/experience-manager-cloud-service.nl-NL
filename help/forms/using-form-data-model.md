@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ U kunt [Adaptieve Forms](creating-adaptive-form.md) en Adaptieve formulierfragme
 
    ![create-af-3](assets/create-af-3.png)
 
-   Nadat het adaptieve formulier- of adaptief formulierfragment op basis van een formuliergegevensmodel is gemaakt, worden formuliergegevensmodelobjecten weergegeven in het dialoogvenster **[!UICONTROL Data Sources]** in de Inhoudsbrowser in de Adaptieve formuliereditor.
+   Nadat het adaptieve formulier- of adaptief formulierfragment op basis van een formuliergegevensmodel is gemaakt, worden formuliergegevensmodelobjecten weergegeven in het dialoogvenster **[!UICONTROL Data Sources]** van de inhoudbrowser in de Adaptieve formuliereditor.
 
    >[!NOTE]
    >
@@ -133,7 +133,7 @@ U kunt ook formulierbijlagen verzenden naar een gegevensbron met binaire objecte
 1. Tik om de toegevoegde component te selecteren en tik ![settings_icon](assets/configure-icon.svg) om de browser van Eigenschappen voor de component te openen.
 1. Tik in het veld Bindverwijzing op ![mapSearch_18](assets/folder-search-icon.svg) en navigeer om de binaire eigenschap te selecteren die u in het formuliergegevensmodel hebt toegevoegd. Configureer desgewenst andere eigenschappen.
 
-   Tikken ![check-button](assets/save_icon.svg) om de eigenschappen op te slaan. Het bijslagveld is nu gebonden aan de binaire eigenschap van het formuliergegevensmodel.
+   Tikken ![knop controleren](assets/save_icon.svg) om de eigenschappen op te slaan. Het bijslagveld is nu gebonden aan de binaire eigenschap van het formuliergegevensmodel.
 
 1. Schakel in het gedeelte Verzending van de eigenschappen van de container van adaptieve formulieren de optie **[!UICONTROL Submit Form Attachments]**. De bijlage in het binaire-eigenschapveld wordt naar de gegevensbron verzonden bij het verzenden van het formulier.
 

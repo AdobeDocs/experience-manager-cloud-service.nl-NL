@@ -4,19 +4,19 @@ description: Leer hoe u uw inhoud kunt hergebruiken in uw project en meertalige 
 feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
 
 # Beheer en vertaling van meerdere sites {#msm-and-translation}
 
-Met de ingebouwde tools voor beheer van meerdere sites van Adobe Experience Manager kunt u uw inhoud eenvoudiger lokaliseren.
+Met de ingebouwde tools voor beheer en vertaling van meerdere sites van Adobe Experience Manager kunt u uw inhoud eenvoudiger lokaliseren.
 
 * Met MSM (Multi Site Manager) en de bijbehorende functies voor Live Copy kunt u dezelfde site-inhoud op meerdere locaties gebruiken, terwijl variaties mogelijk zijn:
-   * [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](msm/overview.md)
+   * [Inhoud opnieuw gebruiken: Sitebeheer en Live kopiëren](msm/overview.md)
 * Met vertaling kunt u de vertaling van pagina-inhoud automatiseren om meertalige websites te maken en onderhouden:
    * [Inhoud vertalen voor meertalige sites](translation/overview.md)
 
@@ -24,7 +24,7 @@ Deze twee functies kunnen worden gecombineerd om te kunnen werken met websites d
 
 >[!TIP]
 >
->Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u [Vertaalreis naar sites](/help/journey-sites/translation/overview.md). Het is een geleide weg door uw inhoud van AEM Sites te vertalen gebruikend AEM krachtige vertaalhulpmiddelen; ideaal als u geen AEM of vertaalervaring hebt.
+>Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u [Vertaalreis naar sites](/help/journey-sites/translation/overview.md). Het is een geleid pad door uw AEM Sites-inhoud te vertalen met behulp van AEM krachtige vertaalhulpmiddelen. Ideaal als u geen AEM of vertaalervaring hebt.
 
 ## Meertalige en meertalige sites {#multinational-and-multilingual-sites}
 

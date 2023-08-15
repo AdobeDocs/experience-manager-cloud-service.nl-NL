@@ -2,7 +2,7 @@
 title: Inhoudsfragmenten exporteren naar Adobe Target
 description: Leer hoe u uw Content Fragments naar Adobe Target exporteert om ervaringen te testen en te personaliseren.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2231'
 ht-degree: 0%
@@ -81,7 +81,7 @@ U kunt de vereiste opties selecteren in **Pagina-eigenschappen** van de vereiste
    >
    >Als u de cloudconfiguratie aan het inhoudsfragment zelf toevoegt, wordt de configuratie door alle variaties overgeërfd.
 
-1. Selecteer de **Cloud Services** tab.
+1. Selecteer de **Cloud Servicen** tab.
 
 1. Onder **Configuratie Cloud Service**, selecteert u **Adobe Target** in de vervolgkeuzelijst.
 
@@ -112,7 +112,7 @@ U kunt de vereiste opties selecteren in **Pagina-eigenschappen** van de vereiste
 
    <!-- need a new screenshot -->
 
-   ![Map - Cloud Services](assets/cf-target-integration-01.png "Map - Cloud Services")
+   ![Map - Cloud Servicen](assets/cf-target-integration-01.png "Map - Cloud Servicen")
 
 1. **Opslaan en sluiten**.
 
@@ -136,7 +136,7 @@ U kunt de wolkenconfiguratie vormen om segmenten van Adobe Target te synchronise
 
 Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM tot stand te brengen:
 
-1. Navigeren naar **Oudere Cloud Services** via de **AEM logo** > **Gereedschappen** > **Cloud Services** > **Oudere Cloud Services**.
+1. Navigeren naar **Oudere Cloud Servicen** via de **AEM logo** > **Gereedschappen** > **Cloud Servicen** > **Oudere Cloud Servicen**.
 Bijvoorbeeld: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    De **Adobe Experience Cloud** overzichtspagina wordt geopend.
@@ -197,7 +197,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
      >
      >mbox.js is afgekeurd en wordt in een later stadium verwijderd.
      >
-     >Adobe raadt u aan AT.js te gebruiken in plaats van mbox.js als clientbibliotheek.
+     >De Adobe adviseert dat u AT.js in plaats van mbox.js als cliëntbibliotheek gebruikt.
      >
      >AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
      >
@@ -208,7 +208,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
      >
      >U kunt AT.js of mbox.js in selecteren **Clientbibliotheek** vervolgkeuzelijst.
 
-   * **Tag Management System gebruiken om clientbibliotheek te leveren** - Selecteer deze optie als u de clientbibliotheek van Adobe Launch of een ander systeem voor tagbeheer (of DTM, dat is afgekeurd) wilt gebruiken.
+   * **Tag Management System gebruiken om clientbibliotheek te leveren** - Selecteer deze optie als u de clientbibliotheek wilt gebruiken vanuit Adobe Launch of een ander tagbeheersysteem (of DTM, dat is afgekeurd).
 
    * **Aangepaste AT.js**: Blader om uw aangepaste AT.js te uploaden. Leeg laten om de standaardbibliotheek te gebruiken.
 
@@ -304,7 +304,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+   >If the framework you attached to the page was not activated yet, a wizard opens which lets you publish it as well.
 -->
 
 ## Een inhoudsfragment exporteren naar Adobe Target {#exporting-a-content-fragment-to-adobe-target}

@@ -3,9 +3,9 @@ title: GraphQL-eindpunten beheren in AEM
 description: Leer hoe u GraphQL-eindpunten in Adobe Experience Manager as a Cloud Service beheert voor levering van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,9 @@ Er zijn twee soorten eindpunten in AEM:
 >
 >In zulk een geval, is niet alle inhoud terugwinnbaar gebruikend een de configuratie van Plaatsen specifiek eindpunt.
 >
->De inhoudauteur zou dit scenario moeten controleren; Het kan bijvoorbeeld handig zijn om gedeelde modellen van inhoudsfragmenten onder de configuratie Algemene sites te plaatsen.
+>De inhoudauteur zou dit scenario moeten controleren; bijvoorbeeld, kan het nuttig zijn om het plaatsen van gedeelde Modellen van het Fragment van de Inhoud onder de Globale configuratie van Plaatsen te overwegen.
 
-Het pad naar de opslagplaats van de GraphQL voor AEM globale eindpunt is:
+Het pad naar de gegevensopslagruimte van de GraphQL voor AEM globale eindpunt is:
 
 `/content/cq:graphql/global/endpoint`
 
@@ -47,7 +47,7 @@ Voor welke toepassing uw toepassing het volgende pad in de aanvraag-URL kan gebr
 
 Om een eindpunt voor GraphQL voor AEM toe te laten moet u:
 
-* [GraphQL Endpoint inschakelen](#enabling-graphql-endpoint)
+* [GraphQL-eindpunt inschakelen](#enabling-graphql-endpoint)
 * [GraphQL-eindpunt publiceren](#publishing-graphql-endpoint)
 
 ## GraphQL Endpoint inschakelen {#enabling-graphql-endpoint}
@@ -56,15 +56,15 @@ Om een Eindpunt van GraphQL toe te laten moet u eerst een aangewezen configurati
 
 >[!CAUTION]
 >
->Als de [gebruik van inhoudsfragmentmodellen is niet ingeschakeld](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)de **Maken** is niet beschikbaar.
+>Als de [gebruik van inhoudsfragmentmodellen is niet ingeschakeld](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)de **Maken** deze optie is niet beschikbaar.
 
 Om het overeenkomstige eindpunt toe te laten:
 
 1. Navigeren naar **Gereedschappen**, **Algemeen** selecteert u vervolgens **GraphQL**.
 1. Selecteer **Maken**.
 1. De **Nieuw GraphQL-eindpunt maken** wordt geopend. Hier kunt u opgeven:
-   * **Naam**: naam van het eindpunt; U kunt elke gewenste tekst invoeren.
-   * **GraphQL-schema gebruiken dat wordt geleverd door**: Gebruik de vervolgkeuzelijst om de gewenste site of het vereiste project te selecteren.
+   * **Naam**: naam van het eindpunt; u kunt elke tekst invoeren.
+   * **GraphQL-schema gebruiken dat wordt geleverd door**: gebruik het vervolgkeuzemenu om de gewenste site of het vereiste project te selecteren.
 
    >[!NOTE]
    >
@@ -73,7 +73,7 @@ Om het overeenkomstige eindpunt toe te laten:
    >* *GraphQL-eindpunten kunnen problemen met gegevensbeveiliging en -prestaties veroorzaken als deze niet zorgvuldig worden beheerd. Zorg ervoor dat de aangewezen toestemmingen na het creëren van een eindpunt worden geplaatst.*
 
 1. Bevestigen met **Maken**.
-1. De **Volgende stappen** de dialoog zal een directe verbinding aan de console van de Veiligheid verstrekken zodat u kunt ervoor zorgen dat het onlangs gecreeerde eindpunt geschikte toestemmingen heeft.
+1. De **Volgende stappen** de dialoog zal een directe verbinding aan de console van de Veiligheid verstrekken zodat u kunt ervoor zorgen dat het onlangs-gecreeerde eindpunt geschikte toestemmingen heeft.
 
    >[!CAUTION]
    >

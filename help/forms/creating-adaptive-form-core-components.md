@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 6d9ebc5410f6ffce0f0c7c7f4e9302b30e82b70b
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2268'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Met Adaptive Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve f
 
 Voordat u begint, moet u meer weten over het type Forms-componenten waarover u beschikt:
 
-* [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): Dit zijn gestandaardiseerde componenten voor het vastleggen van gegevens. Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijving. Een ontwikkelaar kan deze componenten eenvoudig aanpassen en opmaken. Adobe raadt aan deze moderne en uitbreidbare componenten te gebruiken voor de ontwikkeling van Adaptive Forms.
+* [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): Dit zijn gestandaardiseerde componenten voor het vastleggen van gegevens. Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijving. Een ontwikkelaar kan deze componenten eenvoudig aanpassen en opmaken. Adobe beveelt aan deze moderne en uitbreidbare componenten te gebruiken om Adaptive Forms te ontwikkelen.
 
-* [Aangepaste Forms Foundation-componenten](creating-adaptive-form.md): Dit zijn klassieke (oude) componenten voor gegevensvastlegging. U kunt deze blijven gebruiken om uw bestaande basiscomponenten te bewerken op basis van adaptief formulier. Adobe raadt u aan nieuwe formulieren te gebruiken als u nieuwe formulieren maakt  [Adaptieve Forms Core-componenten](creating-adaptive-form-core-components.md) om een Adaptieve Forms te maken.
+* [Aangepaste Forms Foundation-componenten](creating-adaptive-form.md): Dit zijn klassieke (oude) componenten voor gegevensvastlegging. U kunt deze blijven gebruiken om uw bestaande basiscomponenten te bewerken op basis van adaptief formulier. Als u nieuwe formulieren maakt, wordt u door de Adobe aanbevolen  [Adaptieve Forms Core-componenten](creating-adaptive-form-core-components.md) om een Adaptieve Forms te maken.
 
 ![Wizard voor het maken van een adaptief formulier](/help/release-notes/assets/wizard.png)
 

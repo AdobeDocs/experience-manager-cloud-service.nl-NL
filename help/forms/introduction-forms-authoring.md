@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 86da8e784e3e5ff034efdb9186cf134d4b1c6e9c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2471'
+source-wordcount: '2467'
 ht-degree: 0%
 
 ---
 
 # Adaptieve Forms-editor {#introduction-to-authoring-adaptive-forms}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -44,7 +44,7 @@ Voor adaptieve Forms die met deze optie is gemaakt, wordt geen formuliermodel ge
 
   >[!NOTE]
   >
-  > U kunt de eigenschappen van het formuliermodel wijzigen in de sjablooneditor voor Adaptief formulier of Adaptief formulier. Zie voor meer informatie [Eigenschappen van een formuliermodel bewerken in een adaptief formulier](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  > U kunt de eigenschappen van het formuliermodel wijzigen in de sjablooneditor voor Adaptief formulier of Adaptief formulier. Zie voor meer informatie [Eigenschappen van formuliermodellen bewerken in een adaptief formulier](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Als u een adaptief formulier wilt maken, raadpleegt u [Een adaptief formulier maken](creating-adaptive-form.md).
 
@@ -98,7 +98,7 @@ Hiermee kunt u formuliermodelelementen naar het adaptieve formulier slepen en ne
 
 * **Eigenschappenbrowser**
 
-  Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van een component. Eigenschappen van de container van het Adaptief formulier weergeven:
+  Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen worden gewijzigd op basis van een component. Eigenschappen van de container van het Adaptief formulier weergeven:
 
   Selecteer een component en tik vervolgens op ![op veldniveau](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Adaptive Form Container]** en tikt u vervolgens op ![eigenschappen](assets/Smock_Wrench_18_N.svg).
 
@@ -234,7 +234,7 @@ Hiermee kunt u formuliermodelelementen naar het adaptieve formulier slepen en ne
   </tr>
   <tr>
    <td>Tekst</td>
-   <td>Hiermee kunt u statische tekst opgeven.</td>
+   <td>Hier kunt u statische tekst opgeven.</td>
   </tr>
   <tr>
    <td>Verzendknop</td>
@@ -276,27 +276,27 @@ Hiermee kunt u formuliermodelelementen naar het adaptieve formulier slepen en ne
   </tr>
   <tr>
    <td>Stap verifiëren</td>
-   <td><p>Hiermee voegt u een tijdelijke aanduiding toe waarmee het ingevulde formulier wordt weergegeven ter verificatie door de gebruiker.</p> <p><strong>Opmerking</strong>: Het adaptieve formulier met de component Verify ondersteunt geen anonieme gebruikers. Het wordt ook afgeraden de component Verify te gebruiken in een adaptief formulierfragment.</p> </td>
+   <td><p>Hiermee voegt u een tijdelijke aanduiding toe waarmee het ingevulde formulier wordt weergegeven ter verificatie door de gebruiker.</p> <p><strong>Opmerking</strong>: Het adaptieve formulier met de component Verify biedt geen ondersteuning voor anonieme gebruikers. Het wordt ook afgeraden de component Verify te gebruiken in een adaptief formulierfragment.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Pagina, werkbalk {#page-toolbar}
 
-De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van het formulier kunt bekijken, de eigenschappen van het formulier kunt wijzigen en de indeling van het formulier kunt bewerken. U kunt een voorbeeld van het formulier bekijken wanneer u het maakt en wijzigingen aanbrengen. In de paginabooltoolbar, ziet u:
+De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van het formulier kunt bekijken, de eigenschappen van het formulier kunt wijzigen en de indeling van het formulier kunt bewerken. U kunt een voorbeeld van het formulier bekijken wanneer u het maakt en de wijzigingen daarop aanbrengen. In de paginabooltoolbar, ziet u:
 
 * **Zijpaneel in-/uitschakelen** ![schakelen tussen zijpaneel](assets/Smock_RailLeft_18_N.svg): Hiermee kunt u Zijbalk tonen of verbergen.
 
 * **Pagina-informatie** ![thema-opties](assets/Smock_Properties_18_N.svg): Hiermee kunt u pagina-eigenschappen weergeven, een formulier publiceren/publiceren, een formulierwerkstroom starten en het formulier openen in een klassieke gebruikersinterface.
 
-* **Emulator** ![liniaal](assets/Smock_Devices_18_N.svg): Hiermee kunt u het uiterlijk van een formulier emuleren voor verschillende weergavegrootten, zoals tablets en telefoons.
+* **Emulator** ![liniaal](assets/Smock_Devices_18_N.svg): Hiermee kunt u het uiterlijk van het formulier emuleren voor verschillende weergavegrootten, zoals tablets en telefoons.
 
 * **Bewerken**: Hiermee kunt u andere modi selecteren, zoals: **[!UICONTROL Edit]**, **[!UICONTROL Style]**, **[!UICONTROL Developer]**, en **[!UICONTROL Design]**.
 
    * **Bewerken**: Hiermee kunt u de eigenschappen van het formulier en de componenten ervan bewerken. U kunt bijvoorbeeld een component toevoegen, een afbeelding neerzetten en verplichte velden opgeven.
    * **Stijl**: Hiermee kunt u de vormgeving van componenten van het formulier opmaken. In de stijlmodus kunt u bijvoorbeeld een deelvenster selecteren en de achtergrondkleur ervan opgeven.
 
-   * **Ontwikkelaar**: Hiermee kan een ontwikkelaar:
+   * **Ontwikkelaar**: Laat een ontwikkelaar:
 
       * Ontdek waaruit de formulieren bestaan.
       * Foutopsporing waar en wanneer gebeurt, wat weer helpt om problemen op te lossen.
@@ -315,7 +315,7 @@ A.**Configureren**: Wanneer u tikt **[!UICONTROL Configure]**, zijn componenteig
 
 B.**Kopiëren**: Met de optie Kopiëren kunt u een component kopiëren en op andere plaatsen in het formulier plakken. Wanneer u een component plakt, krijgt de geplakte component een nieuwe elementnaam maar behoudt deze de eigenschappen van de gekopieerde component.
 
-C.**Knippen**: Met de optie Knippen kunt u een component in het adaptieve formulier van de ene naar de andere plaats verplaatsen.
+C.**Knippen**: U kunt de optie Knippen gebruiken om een component van de ene plaats naar de andere in het Aangepaste formulier te verplaatsen.
 
 D. **Verwijderen**: Hiermee kunt u de component uit het formulier verwijderen.
 
@@ -323,7 +323,7 @@ E. **Invoegen**: Hiermee kunt u een component invoegen boven de geselecteerde co
 
 F. **Plakken**: Hiermee kunt u de component die u hebt geknipt of gekopieerd, plakken met de hierboven beschreven opties.
 
-G. **Regels bewerken**: Hiermee opent u de regeleditor. Voor meer informatie, <!-- see [Rule Editor](rule-editor.md). -->
+G. **Regels bewerken**: Hiermee kunt u de regeleditor openen. Voor meer informatie, <!-- see [Rule Editor](rule-editor.md). -->
 
 H. **Groep**: Hiermee kunt u meerdere componenten selecteren als u meerdere componenten tegelijk wilt knippen, kopiëren of plakken.
 
@@ -336,7 +336,7 @@ Als u bijvoorbeeld tikt **[!UICONTROL Parent]** voor een tekstvak ziet u :
 * guideRootPanel
 * Container voor adaptieve vorm
 
-J. **Overige**: Biedt meer opties voor het werken met de geselecteerde component.
+J. **Overige**: biedt meer opties om met de geselecteerde component te werken.
 
 * SOM-expressie weergeven
 * Een deelvenster opslaan als fragment (alleen voor deelvensters)
@@ -352,15 +352,15 @@ De pagina Adaptief formulier is het daadwerkelijke formulier. Het is als elke an
 
 De inhoudsstructuur bevat doorgaans de volgende primaire componenten:
 
-* **guideContainer**: De basis van een adaptief formulier, dat is gemarkeerd als **[!UICONTROL Start of Adaptive Form]** in de interface voor adaptief formulier. In deze component kunt u het volgende opgeven:
+* **guideContainer**: De basis van een adaptief formulier, gemarkeerd als **[!UICONTROL Start of Adaptive Form]** in de interface voor adaptief formulier. In deze component kunt u het volgende opgeven:
 
    * *Mobiele lay-out van het adaptieve formulier*: Hiermee definieert u de weergave van het formulier op mobiele apparaten.
-   * *Pagina Bedankt*: Hiermee definieert u de pagina waarop de gebruiker na het verzenden van het formulier wordt omgeleid.
-   * *Handeling verzenden*: Hiermee bepaalt u hoe het formulier op de server wordt verwerkt wanneer de gebruiker het formulier verzendt.
-   * *Stijlen*: Hiermee geeft u het pad op naar het CSS-bestand dat wordt gebruikt om de weergave van het formulier aan te passen.
+   * *Pagina Bedankt*: Hiermee definieert u de pagina waarnaar de gebruiker wordt omgeleid na het verzenden van het formulier.
+   * *Handeling verzenden*: Hiermee definieert u hoe het formulier op de server wordt verwerkt wanneer de gebruiker het formulier verzendt.
+   * *Stijlen*: Hiermee geeft u het pad op naar het CSS-bestand waarmee de weergave van het formulier wordt aangepast.
 
 * **rootPanel:** Het hoofdvenster van een adaptief formulier. Het kan subdeelvensters onder de puntenknoop bevatten. Aan elk deelvenster, inclusief het hoofddeelvenster, kan een lay-out zijn gekoppeld. De indeling van het deelvenster bepaalt hoe het formulier wordt opgemaakt. In de schermindeling Accordeon worden de items ervan bijvoorbeeld ingedeeld als Accordion-stappen.
 
 * **werkbalk:** Een container voor adaptieve formulieren heeft een bijbehorende algemene werkbalk, die algemeen is voor het formulier. Deze werkbalk kan worden toegevoegd met de opdracht **[!UICONTROL Add Toolbar]** in de bewerkbalk. Hiermee kunnen auteurs handelingen toevoegen, zoals Verzenden, Opslaan, Herstellen, enzovoort.
 
-* **activa:** Dit knooppunt bevat aanvullende informatie die wordt gebruikt voor het ontwerpen van formulieren. Bijvoorbeeld details van het formuliermodel, lokalisatiedetails, enzovoort.
+* **activa:** Dit knooppunt bevat aanvullende informatie die wordt gebruikt voor het ontwerpen van formulieren. Bijvoorbeeld details van het formuliermodel, lokalisatiegegevens enzovoort.

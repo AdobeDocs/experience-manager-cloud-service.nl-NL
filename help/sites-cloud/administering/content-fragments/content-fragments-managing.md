@@ -1,12 +1,12 @@
 ---
 title: Contentfragmenten beheren
-description: Leer hoe te om de console van Fragmenten van de Inhoud te gebruiken om uw AEM Contentfragmenten te beheren; voor het ontwerpen van pagina's of als basis voor inhoud zonder kop.
+description: Leer hoe te om de console van de Fragmenten van de Inhoud te gebruiken om uw AEMInhoudsfragmenten te beheren; voor paginauteurs, of als basis van uw inhoud zonder kop.
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2052'
+source-wordcount: '2051'
 ht-degree: 0%
 
 ---
@@ -90,8 +90,8 @@ Er is een nieuw inhoudsfragment gemaakt, maar het is nooit bewerkt of geopend in
 Iemand heeft het (nieuwe) inhoudsfragment bewerkt of geopend in de Inhoudsfragmenteditor, maar het is nog niet gepubliceerd.
 * **Gepubliceerd**
 Het inhoudsfragment is gepubliceerd.
-* **Gewijzigd**
-Het inhoudsfragment is bewerkt nadat het is gepubliceerd (maar voordat de wijziging is gepubliceerd).
+* **gewijzigd**
+Het inhoudsfragment is bewerkt na publicatie (maar vóór publicatie van de wijziging).
 * **Ongepubliceerd**
 Het inhoudsfragment is niet gepubliceerd.
 
@@ -152,15 +152,15 @@ Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 
    * De naam is ook een verbinding die de modelredacteur zal openen.
 
-* Zie de status van het fragment; bijvoorbeeld informatie over het tijdstip waarop deze is gemaakt, gewijzigd of gepubliceerd. De status heeft ook een kleurcode:
+* Zie de status van het fragment, bijvoorbeeld informatie over wanneer het is gemaakt, gewijzigd of gepubliceerd. De status heeft ook een kleurcode:
 
    * **Nieuw**: grijs
    * **Concept**: blauw
    * **Gepubliceerd**: groen
-   * **Gewijzigd**: oranje
+   * **gewijzigd**: oranje
    * **gedeactiveerd**: rood
 
-* **Opslaan** verleent toegang tot **Opslaan en sluiten** optie.
+* **Opslaan** verleent toegang tot **Opslaan en sluiten** -optie.
 
 * De drie stippen (**...**) biedt toegang tot extra handelingen:
    * **Paginaverwijzingen bijwerken**
@@ -227,11 +227,11 @@ Als u het fragment hebt geopend, kunt u de opdracht [Variaties](/help/sites-clou
 
 ## Variaties maken en beheren in uw fragment {#creating-and-managing-variations-within-your-fragment}
 
-Nadat u de Master inhoud hebt gemaakt, kunt u [Variaties](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) van die inhoud.
+Als u de inhoud van het stramien hebt gemaakt, kunt u [Variaties](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) van die inhoud.
 
 ## Inhoud koppelen aan uw fragment {#associating-content-with-your-fragment}
 
-U kunt ook [gekoppelde inhoud](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) met een fragment. Dit biedt een verbinding zodat elementen (dat wil zeggen afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
+U kunt [gekoppelde inhoud](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) met een fragment. Dit biedt een verbinding zodat elementen (dat wil zeggen afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
 
 ## De metagegevens (eigenschappen) van het fragment weergeven en bewerken {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -247,14 +247,14 @@ U kunt inhoudsfragmenten publiceren naar:
 
   >[!CAUTION]
   >
-  Inhoudsfragmenten publiceren naar de **Voorvertoningsservice** is alleen beschikbaar via [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); met de **Publiceren** handeling.
+  Inhoudsfragmenten publiceren naar de **Voorvertoningsservice** is alleen beschikbaar via [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); de **Publiceren** handeling.
 
   >[!NOTE]
   >
   Zie voor meer informatie over de voorvertoningsomgevingen:
   >
   * [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  * [OSGi-instellingen configureren voor de voorbeeldreeks](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  * [OSGi-instellingen configureren voor de voorvertoningsreeks](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
   * [Foutopsporingsvoorbeeld met de ontwikkelaarsconsole](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
 Als u inhoudsfragmenten wilt publiceren met de opdracht **Publiceren** op de werkbalk van het dialoogvenster [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
@@ -272,7 +272,7 @@ Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd
    * **Nu** - selecteer een van de **Service voor publiceren** of de **Voorvertoningsservice**; na bevestiging wordt het fragment onmiddellijk gepubliceerd
    * **Schema** - naast de vereiste service kunt u ook de datum en tijd selecteren waarop het fragment wordt gepubliceerd
 
-   Indien nodig moet u de te publiceren referenties opgeven. Standaard worden verwijzingen ook gepubliceerd naar de voorvertoningsservice om ervoor te zorgen dat de inhoud niet wordt afgebroken.
+   Indien nodig moet u de referenties opgeven die u wilt publiceren. Standaard worden verwijzingen ook gepubliceerd naar de voorvertoningsservice om ervoor te zorgen dat de inhoud niet wordt afgebroken.
 Bijvoorbeeld voor een gepland publicatieverzoek:
    ![Het dialoogvenster Publiceren](assets/cfm-publish-01.png)
 
@@ -325,7 +325,7 @@ Een fragment verwijderen:
 
 ## Bovenliggende verwijzingen van het fragment zoeken {#parent-references-fragment}
 
-De details van ouderverwijzingen kunnen van worden betreden **Verwijzingen** kolom van de [Console voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+Details van bovenliggende verwijzingen zijn toegankelijk via het **Verwijzingen** kolom van de [Console voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Taalkopieën van het fragment zoeken {#language-copies-fragment}
 
@@ -378,11 +378,11 @@ Bijvoorbeeld:
 >
 Deze functionaliteit is alleen beschikbaar in het dialoogvenster **Activa** console
 
-De **Vergelijken met huidige** actie is beschikbaar via [Tijdlijn](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
+De **Vergelijken met huidige** actie is beschikbaar via de [Tijdlijn](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
 
 Hiermee wordt het volgende geopend:
 
-* de **Huidig** (laatste) versie (links)
+* de **Huidig** (meest recente) versie (links)
 
 * de geselecteerde versie **v&lt;*x.y*>** (rechts)
 
@@ -394,7 +394,7 @@ Zij worden naast elkaar getoond, waarbij:
    * Ingevoegde tekst - groen
    * Vervangen tekst - blauw
 
-* Met het pictogram voor volledig scherm kunt u elke versie afzonderlijk openen. dan terug naar de parallelle weergave
+* Met het pictogram voor volledig scherm kunt u een van beide versies afzonderlijk openen en vervolgens terugschakelen naar de parallelle weergave
 * U kunt **Vorige versie** naar de specifieke versie
 * **Gereed** zult u aan de console terugkeren
 
@@ -416,4 +416,4 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 
   Selecteer de gewenste versie en klik vervolgens op **Deze versie herstellen** handeling.
 
-* while [een versie vergelijken met de huidige versie](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **Vorige versie** naar de geselecteerde versie.
+* while [een versie vergelijken met de huidige versie](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u kunt **Vorige versie** naar de geselecteerde versie.

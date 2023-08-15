@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten beheren (elementen - Inhoudsfragmenten)
 description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1768'
 ht-degree: 5%
 
 ---
@@ -50,7 +50,7 @@ De methode voor het maken van een inhoudsfragment is:
 1. Selecteer **Maken** en vervolgens **Inhoudsfragment** om de wizard te openen.
 1. In de eerste stap van de wizard moet u de basis van het nieuwe fragment opgeven.
 
-   * [Model](/help/assets/content-fragments/content-fragments-models.md) - wordt gebruikt om een fragment te maken waarvoor gestructureerde inhoud nodig is; bijvoorbeeld **Adventure** model
+   * [Model](/help/assets/content-fragments/content-fragments-models.md) - wordt gebruikt om een fragment te maken waarvoor gestructureerde inhoud nodig is, bijvoorbeeld de **Adventure** model
 
       * Alle beschikbare modellen worden weergegeven.
 
@@ -76,7 +76,7 @@ De methode voor het maken van een inhoudsfragment is:
 
       * **Naam**
 
-        de naam; wordt gebruikt om de URL te vormen.
+        De naam; wordt gebruikt om de URL te vormen.
 
         Verplicht; wordt automatisch afgeleid van de titel, maar kan worden bijgewerkt.
 
@@ -89,7 +89,7 @@ De methode voor het maken van een inhoudsfragment is:
 
 In de **Activa** een reeks acties beschikbaar is voor uw inhoudsfragmenten:
 
-* van de werkbalk; nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikbaar.
+* Vanuit de werkbalk; nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikbaar.
 * Als [snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); een subset van acties beschikbaar voor de afzonderlijke fragmentkaarten.
 
 ![Handelingen in werkbalk](assets/cfm-managing-02.png)
@@ -100,16 +100,16 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 * **Maken**
 * **Downloaden**
 
-   * Sla het fragment op als een ZIP-bestand. U kunt definiëren of u Elements, Variaties, Metagegevens wilt opnemen.
+   * Sla het fragment op als een ZIP-bestand. U kunt opgeven of u elementen, variaties of metagegevens wilt opnemen.
 
 * **Afhandeling**
 * **Eigenschappen**
 
-   * Hiermee kunt u de metagegevens van het fragment weergeven en/of bewerken.
+   * Hiermee kunt u de metagegevens van het fragment weergeven, bewerken of beide.
 
 * **Bewerken**
 
-   * Hiermee kunt u [het fragment openen voor het bewerken van inhoud](/help/assets/content-fragments/content-fragments-variations.md) samen met de elementen, variaties, bijbehorende inhoud en metagegevens.
+   * Laat u [het fragment openen voor het bewerken van inhoud](/help/assets/content-fragments/content-fragments-variations.md) samen met de elementen, variaties, bijbehorende inhoud en metagegevens.
 
 * **Snel publiceren**
 * **Publicatie beheren**
@@ -183,15 +183,15 @@ Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 
    * De naam is ook een verbinding die de modelredacteur zal openen.
 
-* Zie de status van het fragment; bijvoorbeeld informatie over het tijdstip waarop deze is gemaakt, gewijzigd of gepubliceerd. De status heeft ook een kleurcode:
+* Zie de status van het fragment, bijvoorbeeld informatie over wanneer het is gemaakt, gewijzigd of gepubliceerd. De status heeft ook een kleurcode:
 
    * **Nieuw**: grijs
    * **Concept**: blauw
    * **Gepubliceerd**: groen
-   * **Gewijzigd**: oranje
+   * **gewijzigd**: oranje
    * **gedeactiveerd**: rood
 
-* **Opslaan** verleent toegang tot **Opslaan en sluiten** optie.
+* **Opslaan** verleent toegang tot **Opslaan en sluiten** -optie.
 
 * De drie stippen (**...**) biedt toegang tot extra handelingen:
    * **Paginaverwijzingen bijwerken**
@@ -258,11 +258,11 @@ Als u het fragment hebt geopend, kunt u de opdracht [Variaties](/help/assets/con
 
 ## Variaties maken en beheren in uw fragment {#creating-and-managing-variations-within-your-fragment}
 
-Nadat u de Master inhoud hebt gemaakt, kunt u [Variaties](/help/assets/content-fragments/content-fragments-variations.md) van die inhoud.
+Als u de inhoud van het stramien hebt gemaakt, kunt u [Variaties](/help/assets/content-fragments/content-fragments-variations.md) van die inhoud.
 
 ## Inhoud koppelen aan uw fragment {#associating-content-with-your-fragment}
 
-U kunt ook [gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) met een fragment. Dit biedt een verbinding zodat elementen (dat wil zeggen afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
+U kunt [gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) met een fragment. Dit biedt een verbinding zodat elementen (dat wil zeggen afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
 
 ## De metagegevens (eigenschappen) van het fragment weergeven en bewerken {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -307,11 +307,11 @@ Bijvoorbeeld:
 
 ## Fragmentversies vergelijken {#comparing-fragment-versions}
 
-De **Vergelijken met huidige** actie is beschikbaar via [Tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
+De **Vergelijken met huidige** actie is beschikbaar via de [Tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
 
 Hiermee wordt het volgende geopend:
 
-* de **Huidig** (laatste) versie (links)
+* de **Huidig** (meest recente) versie (links)
 
 * de geselecteerde versie **v&lt;*x.y*>** (rechts)
 
@@ -323,7 +323,7 @@ Zij worden naast elkaar getoond, waarbij:
    * Ingevoegde tekst - groen
    * Vervangen tekst - blauw
 
-* Met het pictogram voor volledig scherm kunt u elke versie afzonderlijk openen. dan terug naar de parallelle weergave
+* Met het pictogram voor volledig scherm kunt u een van beide versies afzonderlijk openen en vervolgens terugschakelen naar de parallelle weergave
 * U kunt **Vorige versie** naar de specifieke versie
 * **Gereed** zult u aan de console terugkeren
 
@@ -341,7 +341,7 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 
   Selecteer de gewenste versie en klik vervolgens op **Deze versie herstellen** handeling.
 
-* while [een versie vergelijken met de huidige versie](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **Vorige versie** naar de geselecteerde versie.
+* while [een versie vergelijken met de huidige versie](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u kunt **Vorige versie** naar de geselecteerde versie.
 
 ## Een fragment publiceren en ernaar verwijzen {#publishing-and-referencing-a-fragment}
 
@@ -358,7 +358,7 @@ Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgevi
 
 Dit is toegankelijk:
 
-* Na de aanmaak; gebruiken [acties beschikbaar in de middelenconsole](#actions-for-a-content-fragment-assets-console).
+* Na het maken; gebruiken [acties beschikbaar in de middelenconsole](#actions-for-a-content-fragment-assets-console).
 * Van de [Inhoudsfragmenteditor](#toolbar-actions-in-the-content-fragment-editor).
 
 Wanneer u [Een pagina publiceren die het fragment gebruikt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); het fragment wordt weergegeven in de paginaverwijzingen.

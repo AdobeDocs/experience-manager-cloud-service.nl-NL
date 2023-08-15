@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Pagina Nul-inhoud wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer,
 
 [!DNL AEM Forms] Met de versie van Designer kunt u het bericht wijzigen dat wordt weergegeven op Pagina Nul. Voer de volgende stappen uit om het bericht Pagina nul te wijzigen:
 
-1. Zorg ervoor dat u beschikt over de [!DNL AEM Forms] versie van Designer geïnstalleerd. U kunt de versie controleren van het ongeveer scherm van ontwerper.
+1. Zorg ervoor dat u de [!DNL AEM Forms] versie van Designer geïnstalleerd. U kunt de versie controleren van het ongeveer scherm van ontwerper.
 
 1. Open het formulier waarvoor u de inhoud Pagina nul wilt wijzigen.
 

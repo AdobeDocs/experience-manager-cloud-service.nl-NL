@@ -2,9 +2,9 @@
 title: Modellen voor inhoudsfragmenten maken - Instellingen zonder kop
 description: Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp va
 
 ## Wat zijn modellen van inhoudsfragmenten? {#what-are-content-fragment-models}
 
-[Nu u een configuratie hebt gecreeerd,](create-configuration.md) U kunt het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
+[Nu u een configuratie hebt gecreeerd,](create-configuration.md) U kunt het gebruiken om de Modellen van het Fragment van de Inhoud te creëren.
 
 Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u in AEM maakt en beheert. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een model voor inhoudsfragmenten dat u definieert en dat hen bij het maken van inhoud begeleidt.
 
@@ -28,13 +28,13 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 
    ![De map Modellen](../assets/models-folder.png)
 1. Tik of klik op **Maken**.
-1. Een **Modeltitel**, **Tags** en **Beschrijving**. U kunt ook selecteren/deselecteren **Model inschakelen** om te bepalen of het model onmiddellijk na verwezenlijking wordt toegelaten.
+1. Geef een **Modeltitel**, **Tags** en **Beschrijving**. U kunt ook selecteren/deselecteren **Model inschakelen** om te bepalen of het model onmiddellijk na verwezenlijking wordt toegelaten.
 
    ![Een model maken](../assets/models-create.png)
-1. Tik of klik in het bevestigingsvenster op **Openen** om uw model te configureren.
+1. Tik in het bevestigingsvenster op **Openen** om uw model te configureren.
 
    ![Bevestigingsvenster](../assets/models-confirmation.png)
-1. Met de **Inhoudsfragmentmodeleditor**, maakt u het model van het inhoudsfragment door velden te slepen en neer te zetten vanaf het tabblad **Gegevenstypen** kolom.
+1. Met de **Inhoudsfragmentmodeleditor** kunt u het inhoudsfragmentmodel samenstellen door velden te slepen en neer te zetten vanaf het tabblad **Gegevenstypen** kolom.
 
    ![Velden slepen en neerzetten](../assets/models-drag-and-drop.png)
 
@@ -45,10 +45,10 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 1. Tik of klik op **Opslaan**.
 
 1. De modus van het nieuwe model is afhankelijk van of u **Model inschakelen** bij het maken van het model:
-   * geselecteerd - het nieuwe model zal reeds worden **Ingeschakeld**
+   * geselecteerd - het nieuwe model zal reeds worden geselecteerd **Ingeschakeld**
    * niet geselecteerd - het nieuwe model wordt gecreeerd in **Concept** mode
 
-1. Als dit nog niet het geval is, moet het model **Ingeschakeld** gebruiken.
+1. Als dit nog niet het geval is, moet het model **Ingeschakeld** om het te gebruiken.
    1. Selecteer het model dat u net hebt gemaakt en tik of klik op **Inschakelen**.
 
       ![Het model inschakelen](../assets/models-enable.png)

@@ -2,9 +2,9 @@
 title: Navigeren naar de Serviceverlener voor schermen
 description: In deze pagina wordt beschreven hoe u naar de Serviceverlener voor schermen kunt navigeren.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ De volgende sectie om de Dienstverlener van de Diensten van Schermen te vormen e
 
 ## Stappen om de Dienstverlener van de Diensten van het scherm te vestigen {#screens-services-provider}
 
-Voer de onderstaande stappen uit om de Serviceprovider voor schermen in te stellen:
+Voer de onderstaande stappen uit om de Serviceverlener voor schermen in te stellen:
 
 1. Ga vanuit [hier](https://experience.adobe.com/screens).
 
@@ -41,13 +41,13 @@ Voer de onderstaande stappen uit om de Serviceprovider voor schermen in te stell
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Klikken **Opslaan** verbinding maken met de inhoudprovider van schermen
+4. Klikken **Opslaan** om verbinding te maken met de inhoudprovider van schermen
 
 5. Selecteren **Kanalen** van de linkernavigatiebalk en klik op **openen in inhoudsprovider**.
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. De Inhoudsleverancier van schermen wordt geopend in een ander lusje dat u toestaat om uw inhoud tot stand te brengen.
+6. De Inhoudsprovider van schermen wordt geopend op een ander tabblad waarop u uw inhoud kunt maken.
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens2.png)
 

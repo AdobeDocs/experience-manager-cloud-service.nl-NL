@@ -2,9 +2,9 @@
 title: Omgevingsvariabelen van Cloud Manager
 description: De standaardmilieuvariabelen kunnen via de Manager van de Wolk worden gevormd en worden beheerd en aan het runtime milieu worden verstrekt, dat in configuratie OSGi moet worden gebruikt.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Standaardomgevingsvariabelen kunnen worden geconfigureerd en beheerd via Cloud M
 
 ## Overzicht {#overview}
 
-Omgevingsvariabelen bieden gebruikers van AEM as a Cloud Service:
+De variabelen van het milieu bieden een verscheidenheid van voordelen aan gebruikers van AEM as a Cloud Service:
 
 * Ze stellen het gedrag van uw code en toepassing in staat te variëren op basis van context en omgeving. Ze kunnen bijvoorbeeld worden gebruikt om verschillende configuraties in de ontwikkelomgeving mogelijk te maken in vergelijking met de productie- of werkgebiedomgevingen om kostbare fouten te voorkomen.
 * Ze hoeven slechts eenmaal te worden geconfigureerd en ingesteld en kunnen indien nodig worden bijgewerkt en verwijderd.
@@ -36,11 +36,11 @@ De meest gangbare gebruiksgevallen voor het gebruik van omgevingsvariabelen zijn
 >
 >U moet lid zijn van de [**Implementatiebeheer** rol](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) om omgevingsvariabelen toe te voegen of te wijzigen.
 
-1. Meld u aan bij Adobe Cloud Manager via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager geeft een overzicht van de verschillende beschikbare programma&#39;s. Selecteer het bestand dat u wilt beheren.
-1. Selecteer **Omgevingen** selecteert u vervolgens in het linkernavigatievenster de omgeving waarvoor u een omgevingsvariabele wilt maken.
-1. Selecteer binnen de details van de omgeving de optie **Configuratie** dan selecteert u **Toevoegen** om de **Omgevingsconfiguratie** .
-   * Als u voor het eerst een omgevingsvariabele toevoegt, ziet u een **Configuratie toevoegen** in het midden van de pagina. U kunt deze knop of **Toevoegen** om de **Omgevingsconfiguratie** .
+1. Aanmelden bij Adobe Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Selecteer het bestand dat u wilt beheren.
+1. Selecteer de **Omgevingen** selecteert u vervolgens in het linkernavigatievenster de omgeving waarvoor u een omgevingsvariabele wilt maken.
+1. Selecteer binnen de details van de omgeving de optie **Configuratie** dan selecteert u **Toevoegen** om de **Omgevingsconfiguratie** in.
+   * Als u voor het eerst een omgevingsvariabele toevoegt, ziet u een **Configuratie toevoegen** midden op de pagina. U kunt deze knop of **Toevoegen** om de **Omgevingsconfiguratie** in.
 
    ![Tabblad Configuratie](assets/configuration-tab.png)
 
@@ -69,12 +69,12 @@ Een indicator met de status **Bijwerken** wordt getoond bij de bovenkant van de 
 
 ## Omgevingsvariabelen bijwerken {#update-variables}
 
-Nadat u omgevingsvariabelen hebt gemaakt, kunt u deze bijwerken met de opdracht **Toevoegen/bijwerken** knop om het dialoogvenster **Omgevingsconfiguratie** .
+Nadat u omgevingsvariabelen hebt gemaakt, kunt u deze bijwerken met de opdracht **Toevoegen/bijwerken** knop om het dialoogvenster **Omgevingsconfiguratie** in.
 
-1. Meld u aan bij Adobe Cloud Manager via [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager geeft een overzicht van de verschillende beschikbare programma&#39;s. Selecteer het bestand dat u wilt beheren.
-1. Selecteer **Omgevingen** selecteert u vervolgens in het linkernavigatievenster de omgeving waarvoor u een omgevingsvariabele wilt maken.
-1. Selecteer binnen de details van de omgeving de optie **Configuratie** dan selecteert u **Toevoegen/bijwerken** in de rechterbovenhoek **Omgevingsconfiguratie** .
+1. Aanmelden bij Adobe Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Selecteer het bestand dat u wilt beheren.
+1. Selecteer de **Omgevingen** selecteert u vervolgens in het linkernavigatievenster de omgeving waarvoor u een omgevingsvariabele wilt maken.
+1. Selecteer binnen de details van de omgeving de optie **Configuratie** dan selecteert u **Toevoegen/bijwerken** in de rechterbovenhoek **Omgevingsconfiguratie** in.
 
    ![Knop Toevoegen/Bijwerken voor variabelen](assets/add-update-variables.png)
 
@@ -90,7 +90,7 @@ Nadat u omgevingsvariabelen hebt gemaakt, kunt u deze bijwerken met de opdracht 
 
 1. Nadat u alle vereiste configuratiewijzigingen hebt aangebracht, selecteert u **Opslaan**.
 
-[Zoals bij het toevoegen van variabelen](#add-variables) een indicator met de status **Bijwerken** boven aan de tabel en naast de nieuw bijgewerkte variabele(n) wordt weergegeven dat de omgeving wordt bijgewerkt met de configuratie. Na voltooiing, zijn de bijgewerkte milieuvariabelen zichtbaar in de lijst.
+[Zoals bij het toevoegen van variabelen](#add-variables) een indicator met de status **Bijwerken** boven aan de tabel en naast de nieuw bijgewerkte variabele(n) om aan te geven dat de omgeving met de configuratie wordt bijgewerkt. Na voltooiing, zijn de bijgewerkte milieuvariabelen zichtbaar in de lijst.
 
 >[!TIP]
 >
@@ -98,7 +98,7 @@ Nadat u omgevingsvariabelen hebt gemaakt, kunt u deze bijwerken met de opdracht 
 
 ## Omgevingsvariabelen gebruiken {#using}
 
-Omgevingsvariabelen kunnen `pom.xml` configuraties veiliger en flexibeler. Bijvoorbeeld, moeten de wachtwoorden niet hard worden gecodeerd en uw configuratie kan aanpassen gebaseerd op de waarden in omgevingsvariabelen.
+Omgevingsvariabelen kunnen uw `pom.xml` configuraties veiliger en flexibeler. Bijvoorbeeld, moeten de wachtwoorden niet hard worden gecodeerd en uw configuratie kan aanpassen gebaseerd op de waarden in omgevingsvariabelen.
 
 U hebt als volgt toegang tot omgevingsvariabelen en geheimen via XML.
 
@@ -118,13 +118,13 @@ Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in de ontw
 
 ### Dispatcher {#dispatcher}
 
-Alleen normale omgevingsvariabelen kunnen worden gebruikt met [de verzender.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Geheimen kunnen niet worden gebruikt.
+Alleen normale omgevingsvariabelen kunnen worden gebruikt [de verzender.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Kan niet worden gebruikt.
 
-Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` richtlijnen.
+Omgevingsvariabelen kunnen echter niet worden gebruikt bij `IfDefine` richtlijnen.
 
 >[!TIP]
 >
->U moet het gebruik van omgevingsvariabelen valideren met de [lokale verzender](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) voordat u gaat implementeren.
+>U moet het gebruik van omgevingsvariabelen valideren met de [lokale verzender](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) vóór implementatie.
 
 ### OSGi-configuraties {#osgi}
 

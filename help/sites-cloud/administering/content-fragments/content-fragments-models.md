@@ -4,9 +4,9 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2919'
+source-wordcount: '2916'
 ht-degree: 2%
 
 ---
@@ -25,18 +25,18 @@ U kunt als volgt modellen van inhoudsfragmenten gebruiken:
 ## Een inhoudsfragmentmodel maken {#creating-a-content-fragment-model}
 
 1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
-1. Navigeer naar de map die geschikt is voor uw [configuratie of subconfiguratie](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
+1. Navigeer naar de map die geschikt is voor uw [configuratie, of subconfiguratie](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
 1. Gebruiken **Maken** om de wizard te openen.
 
    >[!CAUTION]
    >
-   >Als de [gebruik van inhoudsfragmentmodellen is niet ingeschakeld](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)de **Maken** is niet beschikbaar.
+   >Als de [gebruik van inhoudsfragmentmodellen is niet ingeschakeld](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)de **Maken** deze optie is niet beschikbaar.
 
 1. Geef de **modeltitel** op. U kunt ook toevoegen **Tags**, **Beschrijving** en selecteert u **Model inschakelen** tot [het model inschakelen](#enabling-disabling-a-content-fragment-model) indien nodig.
 
    ![titel en beschrijving](assets/cfm-models-02.png)
 
-1. Gebruiken **Maken** om het lege model op te slaan. Een bericht geeft het succes van de actie aan. U kunt **Openen** het model onmiddellijk te bewerken, of **Gereed** om naar de console terug te keren.
+1. Gebruiken **Maken** het lege model opslaan. Een bericht geeft het succes van de actie aan. U kunt **Openen** het model onmiddellijk te bewerken, of **Gereed** om naar de console terug te keren.
 
 ## Het model van het inhoudsfragment definiëren {#defining-your-content-fragment-model}
 
@@ -49,7 +49,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
-1. Open het vereiste model voor **Bewerken**; gebruik de snelle actie of selecteer het model en de actie op de werkbalk.
+1. Open het vereiste model voor **Bewerken**; gebruik de snelle actie of selecteer het model en vervolgens de actie op de werkbalk.
 
    Zodra open de modelredacteur toont:
 
@@ -100,7 +100,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
 * **Tekst met één regel**
-   * Voeg een of meer velden van één regel tekst toe. de maximumlengte kan worden bepaald
+   * Voeg een of meer velden van één regel tekst toe. De maximumlengte kan worden gedefinieerd
 * **Tekst met meerdere regels**
    * Een tekstgebied dat RTF-tekst, normale tekst of markeringen kan bevatten
 * **Getal**
@@ -114,7 +114,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 * **Tags**
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
 * **Content Reference**
-   * verwijzingen naar andere inhoud, ongeacht het type; kan worden gebruikt om [geneste inhoud maken](#using-references-to-form-nested-content)
+   * Verwijzingen naar andere inhoud, van elk type; kan worden gebruikt voor [geneste inhoud maken](#using-references-to-form-nested-content)
    * Als er naar een afbeelding wordt verwezen, kunt u ervoor kiezen een miniatuur weer te geven
 * **Fragmentverwijzing**
    * Verwijzingen naar andere inhoudsfragmenten; kan worden gebruikt om [geneste inhoud maken](#using-references-to-form-nested-content)
@@ -194,7 +194,7 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
   De **Vertaalbaar** Schakel het selectievakje in een veld in de editor van het inhoudsfragmentmodel in:
 
    * Zorg ervoor dat de eigenschapsnaam van het veld wordt toegevoegd aan de vertaalconfiguratie, context `/content/dam/<sites-configuration>`, indien nog niet aanwezig.
-   * Voor GraphQL: instellen `<translatable>` eigenschap in het veld Inhoudsfragment naar `yes`, om GraphQL-queryfilter toe te staan voor JSON-uitvoer met alleen vertaalbare inhoud.
+   * Voor GraphQL: stel een `<translatable>` eigenschap in het veld Inhoudsfragment naar `yes`, om GraphQL-queryfilter toe te staan voor JSON-uitvoer met alleen vertaalbare inhoud.
 
 ## Validatie {#validation}
 
@@ -207,7 +207,7 @@ Verschillende gegevenstypen bieden nu de mogelijkheid om validatievereisten te d
 * **Content Reference**
    * Testen op specifieke typen inhoud.
    * Er kan alleen worden verwezen naar elementen van een opgegeven bestandsgrootte of kleiner.
-   * Er kan alleen worden verwezen naar afbeeldingen binnen een vooraf gedefinieerd bereik van breedte en/of hoogte (in pixels).
+   * Er kan alleen worden verwezen naar afbeeldingen met een vooraf gedefinieerde breedte en/of hoogte (in pixels).
 * **Fragmentverwijzing**
    * Testen op een specifiek inhoudsfragmentmodel.
 
@@ -216,12 +216,13 @@ Verschillende gegevenstypen bieden nu de mogelijkheid om validatievereisten te d
 Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenstypen:
 
 * **[Content Reference](#content-reference)**
-   * Verstrekt een eenvoudige verwijzing naar andere inhoud; van elk type.
+   * Verstrekt een eenvoudige verwijzing naar andere inhoud; van om het even welk type.
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
 * **[Fragmentverwijzing](#fragment-reference-nested-fragments)** (Geneste fragmenten)
    * Verwijzingen naar andere fragmenten, afhankelijk van de opgegeven modellen.
    * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
+
      >[!NOTE]
      >
      >Deze methode is van bijzonder belang in samenhang met [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
@@ -239,7 +240,7 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 
 ### Content Reference {#content-reference}
 
-Met de Content Reference kunt u inhoud van een andere bron renderen. bijvoorbeeld een afbeeldings- of inhoudsfragment.
+Met de Content Reference kunt u inhoud van een andere bron renderen, bijvoorbeeld een afbeeldings- of inhoudsfragment.
 
 Naast de standaardeigenschappen kunt u opgeven:
 
@@ -254,11 +255,11 @@ Naast de standaardeigenschappen kunt u opgeven:
 
 ### Fragmentverwijzing (geneste fragmenten) {#fragment-reference-nested-fragments}
 
-De fragmentverwijzing verwijst naar een of meer inhoudsfragmenten. Deze functie is vooral van belang wanneer u inhoud ophaalt die u wilt gebruiken in uw app, omdat u gestructureerde gegevens met meerdere lagen kunt ophalen.
+De fragmentverwijzing verwijst naar een of meer inhoudsfragmenten. Deze functie is vooral van belang bij het ophalen van inhoud voor gebruik in uw app, omdat u gestructureerde gegevens met meerdere lagen kunt ophalen.
 
 Bijvoorbeeld:
 
-* een model dat de gegevens voor een werknemer definieert; deze omvatten :
+* Een model dat details voor een werknemer bepaalt; deze omvatten:
    * Een verwijzing naar het model dat de werkgever (onderneming) definieert
 
 ```xml
@@ -327,7 +328,7 @@ Nadat een model is gemaakt, moet het worden ingeschakeld zodat het:
 
 * Deze optie is beschikbaar voor selectie wanneer u een nieuw inhoudsfragment maakt.
 * Er kan vanuit een inhoudsfragmentmodel naar worden verwezen.
-* beschikbaar is voor GraphQL; zodat wordt het schema geproduceerd.
+* Is beschikbaar aan GraphQL; zo wordt het schema geproduceerd.
 
 Een model inschakelen dat is gemarkeerd als:
 
@@ -345,7 +346,7 @@ U gebruikt de **Inschakelen** optie van:
 
 Een model kan ook worden uitgeschakeld, zodat:
 
-* Het model is niet meer beschikbaar als basis voor het maken van *new* Inhoudsfragmenten.
+* Het model is niet meer beschikbaar als basis voor het maken van *new* Inhoudsfragmenten
 * Echter:
    * Het GraphQL-schema wordt steeds gegenereerd en kan nog steeds worden opgevraagd (om te voorkomen dat JSON API wordt beïnvloed).
    * Om het even welke die Inhoudsfragmenten van het model worden gebaseerd kunnen nog van het eindpunt van GraphQL worden gevraagd en zijn teruggekeerd.
@@ -366,7 +367,7 @@ Om inhoudsbeheer uit te voeren, kunt u vormen **Beleid** in de map Elementen om 
 >
 >Het mechanisme lijkt op [toestaan, van paginasjablonen](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) voor een pagina en de onderliggende elementen, in geavanceerde eigenschappen van een pagina.
 
-Om het **Beleid** for **Modellen voor toegestane inhoudsfragmenten**:
+Om te vormen **Beleid** for **Modellen voor toegestane inhoudsfragmenten**:
 
 1. Navigeren en openen **Eigenschappen** voor de map met vereiste middelen.
 
@@ -374,7 +375,7 @@ Om het **Beleid** for **Modellen voor toegestane inhoudsfragmenten**:
 
    * **Overgenomen van`<folder>`**
 
-     Het beleid wordt automatisch geërft wanneer het creëren van nieuwe kindomslagen; het beleid kan worden aangepast (en de overerving wordt verbroken) als submappen andere modellen dan de bovenliggende map moeten toestaan.
+     Het beleid wordt automatisch geërft wanneer het creëren van nieuwe kindomslagen; het beleid kan (en de erfenis gebroken) worden opnieuw gevormd als de subomslagen modellen moeten toestaan verschillend aan de ouderomslag.
 
    * **Modellen van inhoudsfragmenten op pad toestaan**
 
@@ -391,8 +392,8 @@ Om het **Beleid** for **Modellen voor toegestane inhoudsfragmenten**:
 De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als volgt opgelost:
 * De **Beleid** for **Modellen voor toegestane inhoudsfragmenten**.
 * Als dit leeg is, kunt u het beleid bepalen met behulp van de overervingsregels.
-* Als de overervingsketen geen resultaat oplevert, kijkt u naar de **Cloud Services** configuratie voor die map (ook eerst rechtstreeks en vervolgens via overerving).
-* Als geen van de bovenstaande resultaten worden weergegeven, zijn er geen modellen toegestaan voor die map.
+* Als de overervingsketen geen resultaat oplevert, kijkt u naar de **Cloud Servicen** configuratie voor die map (ook eerst rechtstreeks en vervolgens via overerving).
+* Als geen van de bovenstaande resultaten worden behaald, zijn er geen modellen toegestaan voor die map.
 
 ## Een inhoudsfragmentmodel verwijderen {#deleting-a-content-fragment-model}
 
@@ -494,7 +495,7 @@ U kunt **Vergrendeld** modellen van of de console, of modelredacteur:
 
      Vervolgens kunt u het model openen en bewerken.
 
-   * U kunt ook **Vergrendelen** het model daarna.
+   * U kunt **Vergrendelen** het model daarna.
    * Als u het model opnieuw publiceert, wordt het meteen weer opgenomen in **Vergrendeld** (ALLEEN-LEZEN) modus.
 
 * Modeleditor
@@ -505,7 +506,7 @@ U kunt **Vergrendeld** modellen van of de console, of modelredacteur:
 
    * Als u **Alleen-lezen weergeven** u kunt de inhoud en de structuur van het model zien:
 
-     ![Alleen-lezen weergeven - Vergrendeld inhoudsfragmentmodel](assets/cfm-model-editor-locked-view-only.png)
+     ![Alleen-lezen weergeven - Vergrendeld model inhoudsfragment](assets/cfm-model-editor-locked-view-only.png)
 
    * Als u **Bewerken** u kunt uw updates bewerken en opslaan:
 

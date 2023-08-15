@@ -2,9 +2,9 @@
 title: Ervaringen maken met producten
 description: Leer hoe u productinhoud bouwt die vervolgens op verschillende manieren kan worden gebruikt om een indrukwekkende winkelervaring te creëren.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 412e206a66de470e2798aafc58bcac93dc7e3cad
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Laten we beginnen met de tijdelijke aanduiding voor het ervaringsfragment. Open 
 
 ![tijdelijke aanduiding](assets/pem-placeholder.png)
 
-Open het dialoogvenster van de component en voer een naam voor deze tijdelijke aanduiding in. U moet een tijdelijke aanduiding opgeven, zodat u zoveel plaatsaanduidingen kunt toevoegen als u nodig hebt.
+Open het dialoogvenster van de component en voer een naam voor deze tijdelijke aanduiding in. De naam van een plaatsaanduiding is vereist en u kunt zoveel plaatsaanduidingen toevoegen als u nodig hebt.
 
 ![PEM XF-dialoogvenster](assets/pem-dialog-xf.png)
 
@@ -109,7 +109,7 @@ Gefeliciteerd! U hebt de reis van de Ontwikkelaar van de AEM Inhoud en van de Ha
 * gebruik plaatsaanduidingen om producten en categoriepagina&#39;s afzonderlijk te verrijken
 * weten hoe u inhoud overzichtelijk kunt maken en het bijbehorende tabblad Inhoud kunt gebruiken
 
-U bent nu klaar om productervaringen te beheren met AEM Content and Commerce. Er zijn echter nog veel meer opties beschikbaar voor AEM Inhoud en Handel. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
+U bent nu klaar om productervaringen te beheren met AEM Content and Commerce. AEM Inhoud en Handel hebben echter nog veel meer mogelijkheden. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
 
 ## Aanvullende bronnen {#additional-resources}
 

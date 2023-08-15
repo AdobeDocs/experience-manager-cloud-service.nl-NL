@@ -2,9 +2,9 @@
 title: Het gereedschap Inhoud kopiëren
 description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud uit hun productieomgeving kopiëren op AEM as a Cloud Service naar lagere omgevingen voor testdoeleinden.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1306'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Om dit te doen, **Inhoudsactiviteit kopiëren** pagina, selecteert u de **Annule
 >
 >Wanneer u een bewerking voor het kopiëren van inhoud annuleert, kan dit resulteren in een gedeeltelijke kopie van de inhoud in de doelomgeving. Deze situatie kan het bestemmingsmilieu in een onbruikbaar geval verlaten.
 >
->Als uw omgeving zich in een dergelijke toestand bevindt als gevolg van annulering, neemt u contact op met de klantenservice van Adobe voor hulp.
+>Als uw omgeving zich in een dergelijke toestand bevindt als gevolg van annulering, neemt u contact op met de klantenservice van de Adobe voor hulp.
 
 ### Logbestanden openen {#accessing-logs}
 

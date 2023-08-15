@@ -1,7 +1,7 @@
 ---
 title: Rollen en verantwoordelijkheden
 description: Rollen en verantwoordelijkheden
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 2%
@@ -60,6 +60,6 @@ Adobe levert een reeks diensten met betrekking tot de levering, ontwikkeling, st
 
 >[!NOTE]
 >
-> In het bovenstaande wordt ervan uitgegaan dat Premier Support is opgenomen. De tabel kan in overleg tussen de klant en de klant worden gewijzigd. We raden u aan samen te werken met de verkoop- en aanpassingsteams van uw Adobe als u meer informatie nodig hebt over het bovenstaande.
+> In het bovenstaande wordt ervan uitgegaan dat Premier Support is opgenomen. De tabel kan in overleg tussen de klant en de klant worden gewijzigd. Adobe raadt u aan samen te werken met uw Adobe verkoop- en aanpassingsteams als u meer informatie nodig hebt over het bovenstaande.
 > De klanten die geen aanpassing zelf willen behandelen zouden de diensten van het team van de Diensten van de Beroeps van de Adobe of een partner van de Experience Manager moeten verkrijgen.
 >Om hoge kwaliteitsniveaus te handhaven, vereist de Adobe dat de partners die bij de Experience Manager as a Cloud Service ontwikkelingsprojecten betrokken zijn bemand met minstens één persoon die de Geavanceerde Certificatie van de Ontwikkelaar voor de software van de Experience Manager heeft verkregen.

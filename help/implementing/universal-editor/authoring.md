@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2266'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Nadat u bent aangemeld, voert u de URL van de pagina die u wilt bewerken in het 
 
 De interface is verdeeld in vijf hoofdgebieden.
 
-* [De koptekst Experience Cloud](#experience-cloud-header)
+* [De koptekst van het Experience Cloud](#experience-cloud-header)
 * [De koptekst van de Universal Editor](#universal-editor-header)
 * [De modusrail](#mode-rail)
 * [De editor](#editor)
@@ -54,11 +54,11 @@ De interface is verdeeld in vijf hoofdgebieden.
 
 ![De gebruikersinterface van de Universal Editor](assets/ui.png)
 
-### De koptekst Experience Cloud {#experience-cloud-header}
+### De koptekst van het Experience Cloud {#experience-cloud-header}
 
-De koptekst van de Experience Cloud staat altijd boven aan het scherm. Het is een anker dat u vertelt waar u zich binnen Experience Cloud bevindt en u helpt u naar andere Experience Cloud-apps te navigeren.
+De koptekst van het Experience Cloud bevindt zich altijd boven aan het scherm. Het is een anker dat u vertelt waar u binnen Experience Cloud bent en u helpt aan andere Experience Cloud apps navigeren.
 
-![De koptekst Experience Cloud](assets/experience-cloud-header.png)
+![De koptekst van het Experience Cloud](assets/experience-cloud-header.png)
 
 #### Experience Manager {#experience-manager}
 
@@ -74,7 +74,7 @@ Hier wordt de organisatie weergegeven waarmee u momenteel bent aangemeld. Tik of
 
 #### Oplossingen {#solutions}
 
-Als u op de schakeloptie voor oplossingen tikt of erop klikt, kunt u snel naar andere Experience Cloud-oplossingen gaan.
+Als u op de schakeloptie voor oplossingen tikt of erop klikt, kunt u snel naar andere oplossingen voor Experiencen Cloud gaan.
 
 ![Oplossingsschakelaar](assets/solutions.png)
 
@@ -98,7 +98,7 @@ Tik of klik op het pictogram dat uw gebruiker vertegenwoordigt om toegang te kri
 
 ### De koptekst van de Universal Editor {#universal-editor-header}
 
-De Universal Editor-koptekst bevindt zich altijd boven aan het scherm net onder [de koptekst van de Experience Cloud.](#experience-cloud-header) Hiermee kunt u snel naar een andere pagina navigeren om deze te bewerken en te publiceren.
+De Universal Editor-koptekst bevindt zich altijd boven aan het scherm net onder [de koptekst van het Experience Cloud.](#experience-cloud-header) Hiermee kunt u snel naar een andere pagina navigeren om deze te bewerken en te publiceren.
 
 ![De koptekst van de Universal Editor](assets/universal-editor-header.png)
 
@@ -217,7 +217,7 @@ Wanneer u een inhoudsfragment selecteert, worden de details ervan weergegeven in
 
 De editor neemt het grootste deel van het venster in beslag en is de locatie van de pagina die is opgegeven in [de locatiebalk](#location-bar) wordt weergegeven.
 
-* Als de editor zich in een bewerkingsmodus bevindt, zoals [tekstmodus](#text-mode) of [mediamodus,](#media-mode) de inhoud kan worden bewerkt, maar u kunt de koppelingen niet volgen.
+* Als de editor zich in een bewerkingsmodus bevindt, zoals [tekstmodus](#text-mode) of [mediamodus,](#media-mode) de inhoud kan worden bewerkt, maar u kunt geen koppelingen volgen.
 * Als de editor zich bevindt in [voorvertoningsmodus,](#preview-mode) U kunt wel navigeren naar de inhoud en koppelingen volgen, maar u kunt de inhoud niet bewerken.
 
 ![Editor](assets/editor.png)

@@ -4,9 +4,9 @@ description: Leer over het gebruiken van de Tovenaar van het Exemplaar van de Ta
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De wizard Taalkopie is een begeleide ervaring voor het maken en van instrumenten
 
 >[!NOTE]
 >
->De gebruiker moet lid zijn van de `project-administrators` om een taalkopie van een site te maken.
+>De gebruiker moet lid zijn van de `project-administrators` een taalkopie van een site maken.
 
 De wizard openen:
 
@@ -29,7 +29,7 @@ De wizard openen:
 
    ![Taalkopie maken van wizard](../assets/language-copy-wizard.png)
 
-1. De wizard wordt geopend voor de **Bron selecteren** stap waarmee u pagina&#39;s kunt toevoegen of verwijderen. U kunt ook subpagina&#39;s opnemen of uitsluiten. Selecteer de pagina&#39;s die u wilt opnemen en tik of klik op **Volgende**.
+1. De wizard wordt geopend voor de **Bron selecteren** stap waarmee u pagina&#39;s kunt toevoegen/verwijderen. U kunt ook subpagina&#39;s opnemen of uitsluiten. Selecteer de pagina&#39;s die u wilt opnemen en tik of klik op **Volgende**.
 
    ![Pagina&#39;s toevoegen met de wizard](../assets/language-copy-wizard-add-pages.png)
 
@@ -39,7 +39,7 @@ De wizard openen:
 
    >[!NOTE]
    >
-   >Standaard is er slechts één vertaalinstelling. Om andere montages te kunnen selecteren, moet u wolkenconfiguraties eerst vormen. Zie [Het framework voor vertaalintegratie configureren](integration-framework.md).
+   >Standaard is er slechts één vertaalinstelling. Om andere montages te kunnen selecteren, moet u wolkenconfiguraties eerst vormen. Zie [Het Kader voor de Integratie van de Vertaling vormen](integration-framework.md).
 
 1. In de **Vertalen** kunt u kiezen tussen het maken van alleen de structuur, het maken van een nieuw vertaalproject of het toevoegen aan een bestaand vertaalproject.
 

@@ -2,9 +2,9 @@
 title: SSL-certificaten beheren
 description: Leer hoe u Cloud Manager gebruikt om de status van uw SSL-certificaten te controleren en hoe u deze kunt bewerken, vervangen, bijwerken en verwijderen.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: aeb407f8971dabb4e86203b3cee82318330638b0
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Wanneer een certificaat verloopt, werken domeinen die in gebruik zijn met het ve
 
 >[!NOTE]
 >
->Een gebruiker moet lid zijn van **Zakelijke eigenaar** of **Implementatiebeheer** rol om een SSL-certificaat bij te werken in Cloud Manager.
+>Een gebruiker moet lid zijn van de **Zakelijke eigenaar** of **Implementatiebeheer** rol om een SSL-certificaat bij te werken in Cloud Manager.
 
 ## Een SSL-certificaat vervangen {#replace-ssl-certificate}
 
@@ -47,7 +47,7 @@ Een SSL-certificaat kan worden vervangen door dezelfde stappen uit te voeren als
 
 ## Een SSL-certificaat verwijderen {#deleting-an-ssl-certificate}
 
-Certificaten verwijderen uit Cloud Manager is een permanente handeling die niet ongedaan kan worden gemaakt. U kunt het beste SSL-bestanden lokaal opslaan voordat Adobe ze verwijdert in Cloud Manager.
+Certificaten verwijderen uit Cloud Manager is een permanente handeling die niet ongedaan kan worden gemaakt. Het wordt aanbevolen SSL-bestanden lokaal op te slaan voordat Adobe ze verwijdert in Cloud Manager.
 
 Met Cloud Manager kunt u geen SSL-certificaat verwijderen waaraan een of meer domeinen zijn gekoppeld. Alle bijbehorende domeinen moeten worden geschrapt alvorens het SSL certificaat te schrappen. Zie [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) voor meer informatie.
 
@@ -57,12 +57,12 @@ Ga als volgt te werk om een SSL-certificaat te verwijderen.
 1. Navigeren naar **Omgevingen** van het scherm **Overzicht** pagina.
 1. Ga naar de **SSL-certificaten** van het scherm **Omgevingen** scherm.
 1. Er wordt een tabel met een rij weergegeven voor elk SSL-certificaat dat is geïnstalleerd in uw programma. Klik op de knop met de ovaal helemaal rechts in de rij van het certificaat dat u wilt verwijderen en selecteer **Verwijderen**.
-1. Bevestig de verwijdering in de **SSL-certificaat verwijderen** .
+1. Bevestig de verwijdering in de **SSL-certificaat verwijderen** in.
 1. Voer de pijplijn uit om het verwijderde certificaat ongedaan te maken.
 
 >[!NOTE]
 >
->Een gebruiker moet lid zijn van **Zakelijke eigenaar** of **Implementatiebeheer** rol om een SSL-certificaat te verwijderen in Cloud Manager.
+>Een gebruiker moet lid zijn van de **Zakelijke eigenaar** of **Implementatiebeheer** rol om een SSL-certificaat te verwijderen in Cloud Manager.
 
 ## Bestaande CDN-configuraties {#pre-existing-cdn}
 

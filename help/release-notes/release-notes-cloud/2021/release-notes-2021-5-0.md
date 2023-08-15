@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021 enzovoort.
+>Van hieruit kunt u navigeren om notities van eerdere versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -29,9 +29,9 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
 ### Nieuw in AEM as a Cloud Service Stichting {#what-is-new-foundation}
 
-* [Prerelease-kanaal](/help/release-notes/prerelease.md): Bekijk de volgende functies een volledige maand voordat u live gaat met de productie.
+* [Prerelease-kanaal](/help/release-notes/prerelease.md): Bekijk de volgende functies een volledige maand voordat u live gaat in productie!
 
-* [API-veroudering](/help/release-notes/deprecated-apis.md): er is een lijst beschikbaar van de meest recente vervangen API&#39;s voor AEM as a Cloud Service.
+* [API-veroudering](/help/release-notes/deprecated-apis.md): er is een lijst beschikbaar met de meest recente vervangen API&#39;s voor AEM as a Cloud Service.
 
 * [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Werk uw gemaakte projecten bij naar de nieuwste versie, die een verouderde Java API-controle en andere verbeteringen bevat.
 
@@ -66,21 +66,21 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 * Als u zeer grote bestanden uploadt, loopt de [!DNL Experience Manager desktop app]. (CQ-4320942)
 * De werkbalkopties verschillen wanneer dezelfde verzameling in een map is geselecteerd en wanneer deze is geselecteerd uit een zoekresultaat. (CQ-4321406)
 
-#### Nieuw in Dynamic Media {#what-is-new-dm}
+#### Nieuwe functies in Dynamic Media {#what-is-new-dm}
 
-* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u afbeeldingen van de beste kwaliteit efficiënt leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Zie voor meer informatie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md) en [Optimalisatie van afbeeldingen met de volgende generatie afbeeldingsindelingen WebP en AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
-* Introductie van ondersteuning voor AVIF van de volgende generatie bij levering via Dynamic Media (fmt URL-modifier).
+* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte. Zie voor meer informatie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/dynamic-media/imaging-faq.md) en [Optimalisatie van afbeeldingen met de volgende generatie afbeeldingsindelingen WebP en AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* Introductie van ondersteuning voor AVIF van de volgende generatie voor afbeeldingsindeling in Dynamic Media-levering (fmt URL-modifier).
 
 ## [!DNL Adobe Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* **Contextafhankelijke Help**: Er is contextafhankelijke Help toegevoegd voor een aangepaste formuliereditor, sjablooneditor en themaeditor, zodat ontwerpers meer inzicht kunnen krijgen in verschillende functies van editors.
+* **Contextafhankelijke Help**: Er is contextafhankelijke Help toegevoegd voor een aangepaste formuliereditor, sjablooneditor en themaeditor om auteurs te helpen verschillende functies van editors beter te begrijpen.
 * **Foutberichten in de browser Eigenschappen**: Foutberichten toegevoegd voor elke eigenschap in de browser Adaptive Forms Properties. Met deze berichten kunt u de toegestane waarden voor een veld beter begrijpen.
 
 ### De aanstaande bètafunctie van [!DNL Forms] {#what-is-new-forms-prerelease}
 
-Uitvoeren als cloudservice: Met de uitvoerservice kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone en asynchrone batchmodus. Met uitvoerservice kunt u toepassingen maken waarmee u:
+Uitvoer als cloudservice: de uitvoerservice helpt u bij het combineren van XDP-sjablonen en XML-gegevens om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone en asynchrone batchmodus. Met uitvoerservice kunt u toepassingen maken waarmee u:
 
 * Definitieve formulierdocumenten genereren door sjabloonbestanden te vullen met XML-gegevens.
 * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
@@ -112,7 +112,7 @@ De volgende release is gepland voor 3 juni 2021.
 
 * Het implementatielogboek dat door een gebruiker van Cloud Manager is gedownload, is begrijpelijker en bevat details over fouten en successcenario&#39;s.
 
-* Intermitterende fouten die werden aangetroffen tijdens het doorvoeren van code naar Adobe-it, zijn nu opgelost.
+* Intermitterende fouten die werden aangetroffen tijdens het doorvoeren van code naar de Adobe-kit, zijn nu opgelost.
 
 * Invoegtoepassing voor handel kan nu worden toegepast op Sandbox-programma&#39;s tijdens de workflow van het bewerkingsprogramma.
 

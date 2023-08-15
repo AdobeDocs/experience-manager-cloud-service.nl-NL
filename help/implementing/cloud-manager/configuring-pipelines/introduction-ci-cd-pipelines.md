@@ -3,9 +3,9 @@ title: CI/CD-pijpleidingen
 description: Leer meer over de CI/CD-pijpleidingen van Cloud Manager en hoe deze kunnen worden gebruikt om uw code efficiënt te implementeren.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1337'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Cloud Manager biedt twee soorten pijpleidingen:
 * [Productiepijpleidingen](#prod-pipeline)
 * [Niet-productiepijpleidingen](#non-prod-pipeline)
 
-![Typen pijpleidingen](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
+![Soorten pijpleidingen](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
 ## Video-overzicht {#video}
 
@@ -70,10 +70,10 @@ In de volgende tabel vindt u een overzicht van alle pijpleidingen die beschikbaa
 
 | Type pijpleiding | Implementatie- of codekwaliteit | Broncode | Doel | Notities |
 |--- |--- |--- |---|---|
-| Productie of niet-productie | Implementatie | Volledige stapel | Plaatst gelijktijdig achter-eind en front-end code bouwt samen met configuraties HTTPD/Dispatcher | Wanneer front-end code met AEM servercode moet worden opgesteld.<br>Wanneer de pijpleidingen aan de voorzijde of de configuratieleidingen aan de Webzijde nog niet zijn goedgekeurd. |
+| Productie of niet-productie | Implementatie | Volledig stapel | Plaatst gelijktijdig achter-eind en front-end code bouwt samen met configuraties HTTPD/Dispatcher | Wanneer front-end code met AEM servercode moet worden opgesteld.<br>Wanneer de pijpleidingen aan de voorzijde of de configuratieleidingen aan de Webzijde nog niet zijn goedgekeurd. |
 | Productie of niet-productie | Implementatie | Voorkant | Implementeert front-end code-build die een of meer client-side UI-toepassingen bevat | Ondersteunt meerdere, gelijktijdige front-end pijpleidingen<br>Veel sneller dan implementaties op volledige stapel |
 | Productie of niet-productie | Implementatie | Config. web | Implementeert HTTPD/Dispatcher-configuraties | Binnen enkele minuten implementeren |
-| Niet-productie | Codekwaliteit | Volledige stapel | Hiermee wordt de codekwaliteit zonder implementatie gescand op een full-stack code | Ondersteunt meerdere pijpleidingen |
+| Niet-productie | Codekwaliteit | Volledig stapel | Hiermee wordt de codekwaliteit zonder implementatie gescand op een full-stack code | Ondersteunt meerdere pijpleidingen |
 | Niet-productie | Codekwaliteit | Voorkant | Hiermee wordt de codekwaliteit zonder implementatie gescand op de front-end code | Ondersteunt meerdere pijpleidingen |
 | Niet-productie | Codekwaliteit | Config. web | Hiermee wordt de codekwaliteit zonder implementatie gescand op de configuraties van de verzender | Ondersteunt meerdere pijpleidingen |
 
@@ -91,13 +91,13 @@ De volledig-stapel pijpleidingen voeren achterste-eindcode, front-end code, en d
 
 De full-stack pijpleiding vertegenwoordigt een &#39;uber&#39; pijpleiding, die alles in één keer doet, terwijl het geven van gebruikers de opties om hun front-end code of configuraties van de Verzender via de front-end pijpleiding en de Web-rij config pijpleidingen exclusief op te stellen.
 
-Poortvolle pijpleidingen verpakken front-end code (JavaScript/CSS) als [Clientbibliotheken AEM](/help/implementing/developing/introduction/clientlibs.md).
+Poortvolle pijpleidingen verpakken front-end code (JavaScript/CSS) als [AEM clientbibliotheken](/help/implementing/developing/introduction/clientlibs.md).
 
 Bij volledige-stapelpijpleidingen kunnen configuraties in een weblaag worden geïmplementeerd als een [configuratiepijplijn voor webniveau](#web-tier-config-pipelines) is niet geconfigureerd.
 
 De volgende beperkingen zijn van toepassing.
 
-* Een gebruiker moet met het programma worden geregistreerd **Implementatiebeheer** rol om pijpleidingen te vormen of in werking te stellen.
+* Een gebruiker moet met het programma worden geregistreerd **Implementatiebeheer** rol om pijpleidingen te vormen of te leiden.
 * Op elk ogenblik, kan er slechts één volledig-stapelpijpleiding per milieu zijn.
 
 Bovendien moet u zich bewust zijn van het gedrag van de pijplijn in de volledige stapel als u ervoor kiest om een [configuratiepijplijn voor webniveau.](#web-tier-config-pipelines)
@@ -105,11 +105,11 @@ Bovendien moet u zich bewust zijn van het gedrag van de pijplijn in de volledige
 * De volledig-stapelpijpleiding voor een milieu zal de configuratie van de Verzender negeren als de overeenkomstige Web rij config pijpleiding bestaat.
 * Als de overeenkomstige web rij config pijpleiding voor het milieu niet bestaat, kan de gebruiker de volledig-stapelpijpleiding vormen omvatten of negeren de configuratie van de Ontvanger.
 
-De volledig-stapelpijpleidingen kunnen de pijpleidingen of plaatsing van de codekwaliteit zijn.
+De volledig-stapel pijpleidingen kunnen de pijpleidingen of plaatsing van de codekwaliteit zijn.
 
 ## Pijpleidingen aan de voorzijde {#front-end}
 
-Voorste-eindcode is om het even welke code die als statische dossiers wordt gediend. Het is verschillend van code UI die door AEM wordt gediend en kan plaatsthema&#39;s, klant-bepaalde SPA, SPA, en andere oplossingen omvatten.
+Voorste code is elke code die als statische bestanden wordt gebruikt. Het is verschillend van code UI die door AEM wordt gediend en kan plaatsthema&#39;s, klant-bepaalde SPA, SPA, en andere oplossingen omvatten.
 
 De front-end pijpleidingen helpen uw teams uw ontwerp en ontwikkelingsproces stroomlijnen door versnelde plaatsing van front-end code asynchroon van achterste-eindontwikkeling toe te laten. Deze speciale pijpleiding stelt JavaScript en CSS aan de AEM distributielaag als thema op, resulterend in een nieuwe themaversie die van pagina&#39;s door AEM kan worden van verwijzingen voorzien.
 
@@ -127,7 +127,7 @@ Voorste pijpleidingen kunnen pijpleidingen van codekwaliteit zijn of uitzetpijpl
 
 ### Alvorens u Voorste-Eind Pijpleidingen vormt {#before-start}
 
-Controleer voordat u front-end pijpleidingen configureert de [Reis voor snel maken van site AEM](/help/journey-sites/quick-site/overview.md) voor een end-to-end gids door het makkelijk te gebruiken AEM Snelle hulpmiddel van de Plaats. Deze reis zal u helpen uw front-end ontwikkeling stroomlijnen en u toestaan om uw plaats snel aan te passen zonder achterste-AEM kennis.
+Voordat u front-end pijpleidingen configureert, moet u de [Reis voor snel maken van site AEM](/help/journey-sites/quick-site/overview.md) voor een end-to-end gids door het makkelijk te gebruiken AEM Snelle hulpmiddel van de Plaats. Deze reis zal u helpen uw front-end ontwikkeling stroomlijnen en u toestaan om uw plaats snel aan te passen zonder achterste-AEM kennis.
 
 ### Vorm een Voorste-Eind Pijpleiding {#configure-front-end}
 
@@ -140,7 +140,7 @@ Leren hoe te om front-end pijpleidingen te vormen, zie het volgende:
 
 Met frontend pijpleidingen wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en kan het ontwikkelingsproces worden versneld.
 
-Zie [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces samen met enkele overwegingen werkt , moet u zich ervan bewust zijn dat dit proces alle mogelijkheden biedt .
+Zie [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces samen met een aantal overwegingen werkt , moet u zich ervan bewust zijn dat dit proces alle mogelijkheden biedt .
 
 ### Het vormen volledig-Stapel Pijpleidingen {#configure-full-stack}
 
@@ -162,9 +162,9 @@ De volgende beperkingen zijn van toepassing.
 
 * U moet AEM versie hebben `2021.12.6151.20211217T120950Z` of nieuwer om web-tier config pijpleidingen te gebruiken.
 * U moet [deelnemen aan de flexibele modus van de verzendingsprogramma&#39;s](/help/implementing/dispatcher/disp-overview.md#validation-debug) om web-tier config pijpleidingen te gebruiken.
-* Een gebruiker moet met het programma worden geregistreerd **Implementatiebeheer** rol om pijpleidingen te vormen of in werking te stellen.
-* Op elk ogenblik, kan er slechts één pijpleiding van de Webrij config per milieu zijn.
-* De gebruiker kan geen configuratiepijplijn van de Webrij vormen wanneer zijn overeenkomstige volledig-stapelpijpleiding loopt.
+* Een gebruiker moet met het programma worden geregistreerd **Implementatiebeheer** rol om pijpleidingen te vormen of te leiden.
+* Op elk ogenblik, kan er slechts één Web rij config pijpleiding per milieu zijn.
+* De gebruiker kan geen Web rij config pijpleiding vormen wanneer zijn overeenkomstige volledig-stapelpijpleiding loopt.
 * De structuur van de weblaag moet voldoen aan de structuur van de flexibele modus, zoals gedefinieerd in het document [Dispatcher in de cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 Houd er bovendien rekening mee dat de [volledige stapelpijplijn](#full-stack-pipeline) gedraagt zich wanneer het invoeren van een Web-rij pijpleiding.

@@ -3,9 +3,9 @@ title: "[!DNL Assets view] gebruikersinterface"
 description: De gebruikersinterface en navigatie begrijpen in [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ Wanneer u zich aanmeldt [!DNL Assets view], ziet u de volgende interface.
 ![[!DNL Assets view] gebruikersinterface](assets/assets-view-interface.png)
 
     *A: Linkerzijbalk voor bladeren in gegevensopslagruimte en biedt toegang tot een paar andere opties*
-    *B: De linkerzijbalk weergeven of samenvouwen om het weergavegebied voor elementen te vergroten*
+    *B: De linkerzijbalk weergeven of samenvouwen om het gebied voor weergave van elementen te vergroten*
     *C: Zoekresultaten filteren*
     *D: Alle inhoud van de geselecteerde map selecteren*
     *E: Opties voor het sorteren van elementen*
     *F: Zoekvak*
     *G: Bestanden uploaden of slepen en neerzetten met `Add Assets` knop*
-    *H: Nieuwe map maken*
+    *H: Een nieuwe map maken*
     *I: Schakelen tussen verschillende weergaven*
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
@@ -40,15 +40,15 @@ Wanneer u zich aanmeldt [!DNL Assets view], ziet u de volgende interface.
 
 U kunt door de mappen bladeren vanuit de hoofdgebruikersinterface of vanuit de linkerzijbalk. Wanneer u bladert, kunt u de interface gebruiken om elementminiaturen weer te geven en visueel door de opslagplaats te bladeren of elementdetails weer te geven om snel het gewenste element te vinden. In de linkerzijbalk zijn de volgende opties beschikbaar:
 
-* [Mijn werkruimte](/help/assets/my-workspace-assets-view.md): Middelen beschikken nu over een aanpasbare werkruimte die widgets biedt voor eenvoudige toegang tot belangrijke gebieden van de gebruikersinterface van Elementen en informatie die voor u het meest relevant is. Deze pagina dient als een one-stop oplossing om een overzicht van uw het werkpunten te verstrekken en snelle toegang tot zeer belangrijke werkschema&#39;s te geven. Een handiger toegang tot deze opties verhoogt de efficiëntie en snelheid van de inhoud.
+* [Mijn werkruimte](/help/assets/my-workspace-assets-view.md): Middelen bevatten nu een aanpasbare werkruimte die widgets biedt voor eenvoudige toegang tot belangrijke gebieden van de gebruikersinterface van Elementen en informatie die voor u het meest relevant is. Deze pagina dient als een one-stop oplossing om een overzicht van uw het werkpunten te verstrekken en snelle toegang tot zeer belangrijke werkschema&#39;s te geven. Een handiger toegang tot deze opties verhoogt de efficiëntie en snelheid van de inhoud.
 * [Taken](/help/assets/my-workspace-assets-view.md): U kunt de taken bekijken die onder **Mijn taken** tab. U kunt de taken die u hebt gemaakt onder **Toegewezen taken** tab. Bovendien worden de taken die u voltooit gevestigd onder **Voltooide taken** tab.
 * [Activa](/help/assets/manage-organize-assets-view.md): Lijst met alle mappen in een boomstructuurweergave waartoe u toegang hebt.
 * **Onlangs bekeken**: Lijst met elementen waarvan u onlangs een voorvertoning hebt weergegeven. [!DNL Assets view] geeft alleen de elementen weer die u voorvertoont. De elementen die u voorbij schuift tijdens het bladeren door de bestanden of mappen in de opslagplaats worden niet weergegeven.
 * [Verzamelingen](/help/assets/manage-collections-assets-view.md): Een verzameling is een set elementen, mappen of andere verzamelingen in de weergave Adobe Experience Manager Assets. Gebruik verzamelingen om elementen tussen gebruikers te delen. In tegenstelling tot mappen kan een verzameling elementen van verschillende locaties bevatten. U kunt meerdere verzamelingen delen met een gebruiker. Elke verzameling bevat verwijzingen naar elementen. De referentiële integriteit van activa wordt gehandhaafd over inzamelingen.
 
 * [Inzichten](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view]kunt u real-time inzichten op uw dashboard bekijken. In de weergave Elementen kunt u realtime gegevens voor de weergave Elementen weergeven met het dashboard Inzichten. U kunt real-time gebeurtenismetriek tijdens de laatste 30 dagen of voor de laatste 12 maanden bekijken.
-* **Prullenbak**: De elementen weergeven die zijn verwijderd uit de hoofdmap **[!UICONTROL Assets]** map. U kunt een middel in de omslag van het Afval selecteren om of het aan de originele plaats te herstellen of het permanent te schrappen. U kunt ook een trefwoord opgeven of standaard- of aangepaste filters toepassen om te zoeken naar de juiste elementen in de map Prullenbak. Ga voor meer informatie over het gebruik van standaard- en aangepaste filters naar [Middelen zoeken in de middelenweergave](/help/assets/search-assets-view.md).
-* **Instellingen**: U kunt verschillende opties van de mening van Activa vormen gebruikend **Instellingen**, zoals metagegevensformulieren, rapporten en taxonomiebeheer.
+* **Prullenbak**: Maak een lijst met de elementen die uit de hoofdmap zijn verwijderd **[!UICONTROL Assets]** map. U kunt een middel in de omslag van het Afval selecteren om of het aan de originele plaats te herstellen of het permanent te schrappen. U kunt ook een trefwoord opgeven of standaard- of aangepaste filters toepassen om te zoeken naar de juiste elementen in de map Prullenbak. Ga voor meer informatie over het gebruik van standaard- en aangepaste filters naar [Middelen zoeken in de middelenweergave](/help/assets/search-assets-view.md).
+* **Instellingen**: U kunt verschillende opties voor de weergave Elementen configureren met **Instellingen**, zoals metagegevensformulieren, rapporten en taxonomiebeheer.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
 * **Libraries**: Access to [!DNL Adobe Creative Cloud Team] (CCT) Libraries view. This view is visible only if the user is entitled to CCT Libraries.
@@ -64,7 +64,7 @@ In [!DNL Assets view]kunt u elementen, mappen en zoekresultaten in vier verschil
 * ![pictogram lijstweergave](assets/do-not-localize/list-view.png) [!UICONTROL List View]
 * ![pictogram rasterweergave](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]
 * ![pictogram galerieweergave](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]
-* ![watervalweergavepictogram](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]
+* ![pictogram watervalweergave](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]
 
 Als u een element wilt zoeken, kunt u de elementen in oplopende of aflopende volgorde sorteren van `Name`, `Relevancy`, `Size`, `Modified`, en `Created`.
 
@@ -72,33 +72,33 @@ Als u naar een map wilt navigeren, dubbelklikt u op de miniaturen van de map of 
 
 ![Bladeren door mappen](assets/browsing-folders.png)
 
-*Afbeelding: Als u in de hiërarchie wilt bladeren, gebruikt u de broodkruimels boven of links in het zijpaneel.*
+*Afbeelding: als u in de hiërarchie wilt bladeren, gebruikt u de broodkruimels boven of links in de zijbalk.*
 
 ## Elementen voorvertonen {#preview-assets}
 
 Voordat u middelen gebruikt, deelt of downloadt, kunt u deze nauwkeuriger bekijken. Met de voorvertoningsfunctie kunt u niet alleen de afbeeldingen bekijken, maar ook een paar andere ondersteunde elementtypen.
 
-Als u een voorvertoning van een element wilt weergeven, selecteert u het en klikt u op [!UICONTROL Details] ![detailpictogram](assets/do-not-localize/edit-in-icon.png) van de werkbalk bovenaan. U kunt niet alleen het element weergeven, maar ook de gedetailleerde metagegevens bekijken en andere handelingen uitvoeren.
+Als u een voorvertoning van een element wilt weergeven, selecteert u het en klikt u op [!UICONTROL Details] ![detailpictogram](assets/do-not-localize/edit-in-icon.png) van de werkbalk bovenaan. U kunt niet alleen het element weergeven, maar ook de gedetailleerde metagegevens ervan bekijken en andere handelingen uitvoeren.
 
 ![Een voorvertoning van een element weergeven](assets/preview-asset-2.png)
 
-*A: Terugkeren naar de huidige map of het huidige zoekresultaat in de repository*
+*A: Ga terug naar de huidige map of het huidige zoekresultaat in de repository*
 *B: Naam en indeling voor het bestand waarvan u een voorvertoning weergeeft*
 *C: Taken toewijzen*
-*D: Middelen downloaden*
-*E: Middel voorvertonen en metagegevens weergeven*
+*D: Middel downloaden*
+*E: Voorbeeld van element bekijken en informatie over metagegevens bekijken*
 *D: Geavanceerde metagegevens*
 *E: Trefwoorden en slimme tags*
-*F: Opmerkingen en notities aanbrengen*
-*G: Taken met betrekking tot het geselecteerde element weergeven*
+*F: Opmerking en annotatie*
+*G: Taken weergeven met betrekking tot het geselecteerde element*
 *H: Versies weergeven en beheren*
 *I: Uitvoeringen van de afbeelding weergeven*
 *J: Afbeelding bewerken*
-*K: Standaardmetagegevens*
+*K: Basismetagegevens*
 *L: Geavanceerde metagegevens*
 *M: Trefwoorden en slimme tags*
 *N: Meer informatie. Zoomen, volledig scherm en andere opties*
-*O: Naar vorig of volgend middel in de huidige omslag zonder terug naar de omslag te gaan*
+*O: Ga naar het vorige of volgende middel in de huidige omslag zonder terug naar de omslag te gaan*
 
 U kunt ook voorvertoningen van video&#39;s weergeven.
 

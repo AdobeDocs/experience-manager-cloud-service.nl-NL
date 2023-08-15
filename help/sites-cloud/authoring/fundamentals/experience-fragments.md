@@ -2,9 +2,9 @@
 title: Ervaringsfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2044'
 ht-degree: 4%
 
 ---
@@ -41,9 +41,9 @@ Auteurs willen AEM alleen gebruiken voor ontwerpen, maar niet voor levering aan 
 
 >[!NOTE]
 >
->**[Inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** en **Ervaar fragmenten** zijn verschillende functies in AEM:
+>**[Inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** en **Ervaar fragmenten** Er zijn verschillende functies binnen AEM:
 >* **Inhoudsfragmenten** redactionele inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, cijfers en datums.
->* **Ervaar fragmenten** volledig zijn ingedeeld; een fragment van een webpagina.
+>* **Ervaar fragmenten** volledig opgemaakt zijn, een fragment van een webpagina.
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
@@ -68,7 +68,7 @@ Er moeten ervaringsfragmenten worden gebruikt:
    * Inhoud insluiten in aanraakpunten van derden.
 * Als u ervaring hebt met verschillende variaties of uitvoeringen.
    * Kanaal- of contextspecifieke variaties.
-   * ervaring die zinvol is om te groeperen; bijvoorbeeld een campagne met verschillende ervaringen op verschillende kanalen.
+   * Ervaringen die zinvol zijn om te groeperen, bijvoorbeeld een campagne met verschillende ervaringen over verschillende kanalen.
 * Wanneer u Omnichannel Commerce gebruikt.
    * Aanraakpunten transactioneel maken.
 
@@ -81,7 +81,7 @@ Het wordt aanbevolen:
 
 Door mappen te maken kunt u:
 
-* een zinvolle structuur voor uw ervaringsfragmenten maken; bijvoorbeeld volgens classificatie
+* een zinvolle structuur voor uw ervaringsfragmenten maken, bijvoorbeeld volgens de classificatie
 
   >[!NOTE]
   >
@@ -111,7 +111,7 @@ Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vorme
 
 >[!NOTE]
 >
->Het is ook mogelijk om [Toegestane sjablonen voor uw instantie](#configure-allowed-templates-instance), maar deze methode is **niet** aanbevolen omdat de waarden tijdens de upgrade kunnen worden overschreven.
+>Het is ook mogelijk om [Toegestane sjablonen voor uw instantie](#configure-allowed-templates-instance), maar deze methode **niet** aanbevolen omdat de waarden tijdens de upgrade kunnen worden overschreven.
 
 ### Configureer de toegestane sjablonen voor uw map {#configure-allowed-templates-folder}
 
@@ -171,7 +171,7 @@ Een ervaringsfragment maken:
 
    ![Ervaar fragmenten in het navigatievenster](/help/sites-cloud/authoring/assets/xf-01.png)
 
-1. Navigeer naar de gewenste map en selecteer **Maken**:
+1. Ga naar de gewenste map en selecteer **Maken**:
 
    ![Een map maken voor Experience Fragments](/help/sites-cloud/authoring/assets/xf-02.png)
 
@@ -260,7 +260,7 @@ U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pa
 
 1. Maak een instantie van de component Experience Fragment in het paginalineasysteem:
 
-1. Voeg het daadwerkelijke fragment van de Ervaring aan de componenteninstantie toe; ofwel:
+1. Voeg het daadwerkelijke Fragment van de Ervaring aan de componenteninstantie toe; of:
 
    * Sleep het vereiste fragment uit de middelenbrowser en zet het neer op de component.
    * Selecteren **Configureren** op de componentwerkbalk en geef het te gebruiken fragment op, bevestigen met **Gereed**.
@@ -301,7 +301,7 @@ Een nieuw bouwblok maken:
 
 Uw bouwsteen is zichtbaar in **Bouwstenen** tab. Voor elk blok zijn de volgende acties beschikbaar:
 
-* **Ga naar master**: de basispaginavariatie openen op een nieuw tabblad
+* **Ga naar stramien**: open de variatie van de wortelpagina in een nieuw lusje
 * **Naam wijzigen**
 * **Verwijderen**
 
@@ -311,7 +311,7 @@ Uw bouwsteen is zichtbaar in **Bouwstenen** tab. Voor elk blok zijn de volgende 
 
 U kunt de bouwsteen naar het alineasysteem van om het even welk fragment slepen, zoals met om het even welke component.
 
-Als u een Experience Fragment bewerkt, worden de beschikbare bouwstenen weergegeven op het tabblad Left-hanf. U kunt filteren op basis van:
+Als u een Experience Fragment bewerkt, worden de beschikbare bouwstenen weergegeven op het tabblad links. U kunt filteren op basis van:
 
 * **Lokaal** - Blokken maken op basis van het huidige ervaringsfragment
 * **Alles** - Blokken maken van alle fragmenten
@@ -327,13 +327,13 @@ Als u het fragment personaliseert op uw ervaringsfragment, kunt u als een markee
 
 U kunt een Experience Fragment maken met meerdere componenten die binnen dit ene fragment zijn gegroepeerd. U kunt ook variaties van het fragment maken voor elk specifiek publiekssegment en deze fragmenten van de Ervaring vervolgens opnieuw gebruiken voor alle vereiste kanalen.
 
-Personalisatie wordt bereikt door het definiëren van de **Personalisatie** eigenschappen op het fragment of de variatie van de Ervaring, of de omslag die de fragmenten bevat; dit betekent dat overerving personalisatie-eigenschappen kan overschrijven.
+Personalisatie wordt bereikt door het definiëren van de **Personalisatie** eigenschappen op het fragment of de variatie van de Ervaring, of de omslag die de fragmenten bevat; dit betekent dat de overerving verpersoonlijkingseigenschappen kan met voeten treden.
 
-Als u deze eigenschappen configureert, wordt de optie **Doelstelling** in de Experience Fragment-editor.
+Als u deze eigenschappen configureert, wordt de optie **Targeting** in de Experience Fragment-editor.
 
 ### Specialisatie definiëren voor uw ervaringsfragment {#defining-personalization-experience-fragment}
 
-U past het fragment als volgt aan:
+Het fragment aanpassen:
 
 1. Ga naar de gewenste locatie in het dialoogvenster **Ervaar fragmenten** console.
 
@@ -367,7 +367,7 @@ De **Segmentpad** geselecteerd in het dialoogvenster **Personalisatie** tab:
 
 ### Doelstelling definiëren voor uw ervaringsfragment {#defining-targeting-experience-fragment}
 
-Nadat de verpersoonlijkingseigenschappen worden gevormd, is de Doelwijze beschikbaar wanneer het fragment voor het uitgeven wordt geopend.
+Nadat de verpersoonlijkingseigenschappen worden gevormd, is de het richten wijze beschikbaar wanneer het fragment voor het uitgeven wordt geopend.
 
 ![Experience Fragment Editor - Targeingmodus](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
@@ -422,11 +422,11 @@ Met de `.plain.` in de URL hebt, kunt u vanuit de browser toegang krijgen tot de
 
 >[!NOTE]
 >
-Hoewel dit direct beschikbaar is in de browser, [het primaire doel is om andere toepassingen (bijvoorbeeld webapps van derden, aangepaste mobiele implementaties) rechtstreeks toegang te geven tot de inhoud van het Experience Fragment, waarbij alleen de URL wordt gebruikt](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Hoewel dit direct beschikbaar is in de browser, [het primaire doel is om andere toepassingen (bijvoorbeeld webapps van derden, aangepaste mobiele implementaties) rechtstreeks toegang te geven tot de inhoud van het Experience Fragment, met alleen de URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Fragmenten voor publicatie-ervaring {#publishing-experience-fragments}
 
-Het publiceren van het fragment van uw ervaring is in feite hetzelfde als [publiceren, pagina&#39;s](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (vanuit de console of editor van de Experience Fragments).
+Het publiceren van het fragment van uw ervaring is in feite hetzelfde als [publiceren, een pagina](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (vanuit de console of editor van de Experience Fragments).
 
 U kunt ook [publiceren naar voorvertoning](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (opnieuw van de console of de redacteur van Fragmenten van de Ervaring).
 

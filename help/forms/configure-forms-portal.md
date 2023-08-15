@@ -2,25 +2,25 @@
 title: Een Forms Portal maken op een Experience Manager Sites-pagina
 description: Leer hoe u een Forms Portal kunt maken en de kerncomponenten van een AEM Sites-pagina kunt gebruiken die niet in de verpakking staan.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1757'
 ht-degree: 0%
 
 ---
 
 # Adaptieve Forms op een portal weergeven {#publish-forms-on-portal}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-In een typisch vorm-centric portaalplaatsingsscenario, vormen ontwikkeling en poortontwikkeling zijn twee gescheiden activiteiten. Terwijl formulierontwerpers formulieren ontwerpen en opslaan in een gegevensopslagruimte, maken webontwikkelaars een webtoepassing om formulieren weer te geven en de verzending van formulieren af te handelen. Forms wordt naar de weblaag gekopieerd omdat er geen communicatie is tussen de formulieropslagplaats en de webtoepassing.
+In een typisch vorm-centric portaalplaatsingsscenario, vormen ontwikkeling en portaalontwikkeling zijn twee gescheiden activiteiten. Terwijl formulierontwerpers formulieren ontwerpen en opslaan in een gegevensopslagruimte, maken webontwikkelaars een webtoepassing om formulieren weer te geven en de verzending van formulieren af te handelen. Forms wordt naar de weblaag gekopieerd omdat er geen communicatie is tussen de formulieropslagplaats en de webtoepassing.
 
-Dergelijke scenario&#39;s leiden vaak tot beheerproblemen en productievertragingen. Als er bijvoorbeeld een nieuwere versie van een formulier beschikbaar is in de gegevensopslagruimte, moet u het formulier op de weblaag vervangen, de webtoepassing wijzigen en het formulier opnieuw distribueren op de openbare site. Als u de webtoepassing opnieuw implementeert, kan dit leiden tot serverdowntime. De serverdowntime is doorgaans een geplande activiteit en daarom kunnen de wijzigingen niet onmiddellijk naar de openbare site worden doorgevoerd.
+Dergelijke scenario&#39;s leiden vaak tot beheerproblemen en productievertragingen. Als er bijvoorbeeld een nieuwere versie van een formulier beschikbaar is in de gegevensopslagruimte, moet u het formulier op de weblaag vervangen, de webtoepassing wijzigen en het formulier opnieuw distribueren op de openbare site. Als u de webtoepassing opnieuw implementeert, kan dit leiden tot serverdowntime. Doorgaans is de serverdowntime een geplande activiteit en daarom kunnen de wijzigingen niet onmiddellijk naar de openbare site worden doorgevoerd.
 
 AEM Forms biedt portalcomponenten die de beheerkosten en productievertragingen verminderen. Met deze componenten kunnen webontwikkelaars een Forms Portal maken en aanpassen op websites die zijn gemaakt met Adobe Experience Manager (AEM).
 
@@ -39,11 +39,11 @@ Met de componenten Form Portal kunt u de volgende functionaliteit toevoegen:
 
 AEM Forms biedt de volgende poortcomponenten uit de verpakking:
 
-* Zoeken en register: Met deze component kunt u formulieren weergeven vanuit de formulieropslagplaats naar uw portalpagina en configuratieopties voor het weergeven van formulieren op basis van opgegeven criteria.
+* Zoeken en registreren: met deze component kunt u formulieren uit de formulieropslagplaats op uw portalpagina weergeven en configuratieopties voor het weergeven van formulieren op basis van opgegeven criteria.
 
-* Concepten en verzendingen: In het onderdeel Zoeken en opslaan worden formulieren weergegeven die door de auteur van Forms openbaar zijn gemaakt, maar in het onderdeel Concepten en verzendingen worden formulieren weergegeven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. Deze component verstrekt gepersonaliseerde ervaring aan om het even welke het programma geopende gebruiker.
+* Concepten en verzenden: terwijl in de component Zoeken en opslaan formulieren worden weergegeven die door de auteur van Forms openbaar zijn gemaakt, worden in de component Concepten en verzendingen formulieren weergegeven die zijn opgeslagen als concept voor het later invullen en verzonden formulieren. Deze component verstrekt gepersonaliseerde ervaring aan om het even welke aangemelde gebruiker.
 
-* Koppeling: Met deze component kunt u overal op de pagina een koppeling naar een formulier maken.
+* Koppeling: met deze component kunt u overal op de pagina een koppeling naar een formulier maken.
 
 U kunt [de uit-van-de-doos Forms Portal-componenten importeren](#import-forms-portal-components-aem-archetype) van het AEM Project Archetype. Voer na het importeren de volgende configuraties uit:
 
@@ -75,14 +75,14 @@ Voer de volgende stappen uit als u Forms Portal-componenten buiten de box wilt i
 
    `mvn -PautoInstallPackage clean install`
 
-   Voor de volledige lijst met opdrachten raadpleegt u [Samenstellen en installeren](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
+   Zie voor de volledige lijst met opdrachten [Samenstellen en installeren](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
 1. [De code implementeren op uw [!DNL AEM Forms] as a Cloud Service omgeving](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
 
 
-## Azure Storage configureren voor Adaptive Forms {#configure-azure-storage-adaptive-forms}
+## Azure-opslag voor adaptieve Forms configureren {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md) verstrekt [!DNL Azure] opslagconfiguratie om formulieren te integreren met [!DNL Azure] opslagservices. Met het formuliergegevensmodel kunt u een adaptieve Forms maken die interactief werkt met [!DNL Azure] om bedrijfsworkflows in te schakelen.
+[[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md) verstrekt [!DNL Azure] opslagconfiguratie om formulieren te integreren met [!DNL Azure] opslagservices. Met het formuliergegevensmodel kunt u een adaptieve Forms maken die interactief werkt met [!DNL Azure] server om bedrijfswerkstromen toe te laten.
 
 ### Azure Storage Configuration maken {#create-azure-storage-configuration}
 
@@ -100,7 +100,7 @@ Voer de volgende stappen uit om de Verenigde Verbinding van de Opslag voor AEM W
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]**.
 1. In de **[!UICONTROL Forms Portal]** sectie, selecteert u **[!UICONTROL Azure]** van de **[!UICONTROL Storage]** vervolgkeuzelijst.
 1. Geef de [configuratiepad voor de Azure-opslagconfiguratie](#create-azure-storage-configuration) in de **[!UICONTROL Storage Configuration Path]** veld.
-1. Tikken **[!UICONTROL Publish]** en tik vervolgens op **[!UICONTROL Save]** om de configuratie op te slaan.
+1. Tikken **[!UICONTROL Publish]** en tikt u vervolgens op **[!UICONTROL Save]** om de configuratie op te slaan.
 
 ## Forms Portal-componenten inschakelen {#enable-forms-portal-components}
 
@@ -112,11 +112,11 @@ Zodra een poortcomponent wordt toegelaten, kunt u het in de auteursinstantie van
 
 U kunt Forms Portal maken en aanpassen op websites die zijn gemaakt met AEM door de portalcomponenten toe te voegen en te configureren. Zorg ervoor dat de [componenten zijn ingeschakeld](#enable-forms-portal-components) voordat u ze in de Forms Portal gebruikt.
 
-Als u een component wilt toevoegen, sleept u de component van het deelvenster Componenten naar de lay-outcontainer op de pagina of tikt u op het pictogram Toevoegen op de lay-outcontainer en voegt u de component toe vanuit het deelvenster [!UICONTROL Insert New Component] .
+Als u een component wilt toevoegen, sleept u de component van het deelvenster Componenten naar de lay-outcontainer op de pagina of tikt u op het pictogram Toevoegen op de lay-outcontainer en voegt u de component toe vanuit het deelvenster [!UICONTROL Insert New Component] in.
 
 ### Concepten en verzendingen configureren {#configure-drafts-submissions-component}
 
-In het onderdeel Concepten en verzendingen worden formulieren weergegeven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. Tik op de component om deze te configureren en tik vervolgens op de ![Pictogram Configureren](assets/configure_icon.png). In de [!UICONTROL Drafts and Submissions] geeft u de titel op om de formulierlijst aan te geven als concept of als verzonden formulier. Selecteer ook of de component concepten of verzonden formulieren in kaart- of lijstindeling moet vermelden.
+In het onderdeel Concepten en verzendingen worden formulieren weergegeven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. Tik op de component om deze te configureren en tik vervolgens op de ![Pictogram Configureren](assets/configure_icon.png). In de [!UICONTROL Drafts and Submissions] geeft u de titel op om de formulierlijst aan te geven als concept of als verzonden formulieren. Selecteer ook of de component concepten of verzonden formulieren in kaart- of lijstindeling moet vermelden.
 
 ![Concepten, pictogram](assets/drafts-component.png)
 
@@ -136,7 +136,7 @@ Tik op de component om deze te configureren en tik vervolgens op de ![Pictogram 
    * Selecteren **[!UICONTROL Hide Search]** en **[!UICONTROL Hide Sorting]** om de zoekopdracht te verbergen en te sorteren op functies.
    * In **[!UICONTROL Tooltip]**, geeft u de knopinfo op die wordt weergegeven wanneer u de muisaanwijzer op de component plaatst.
 1. In de [!UICONTROL Asset Folder] , geeft u de locatie op vanwaar de formulieren worden opgehaald en weergegeven op de pagina. U kunt meerdere maplocaties configureren.
-1. In de [!UICONTROL Results] het maximumaantal formulieren configureren dat per pagina wordt weergegeven. Standaard zijn dit acht formulieren per pagina.
+1. In de [!UICONTROL Results] , configureert u het maximale aantal formulieren dat per pagina wordt weergegeven. Standaard zijn dit acht formulieren per pagina.
 
 ### Koppelingscomponent configureren {#configure-link-component}
 
@@ -151,7 +151,7 @@ Met de koppelingscomponent kunt u koppelingen naar een adaptief formulier op de 
 U kunt configureren om alleen een adaptief formulier te verzenden wanneer alle ontvangers de ondertekeningsceremonie hebben voltooid. Voer de onderstaande stappen uit om de instelling te configureren met Adobe Sign.
 
 1. Open in de auteur een adaptief formulier in de bewerkingsmodus.
-1. Tik in het linkerdeelvenster op het pictogram Eigenschappen en vouw de **[!UICONTROL ELECTRONIC SIGNTATURE]** optie.
+1. Tik in het linkerdeelvenster op het pictogram Eigenschappen en vouw de **[!UICONTROL ELECTRONIC SIGNTATURE]** -optie.
 1. Selecteer **[!UICONTROL Enable Adobe Sign]**. Verschillende configuratieopties worden weergegeven.
 1. In de [!UICONTROL Submit the form] selecteert u de **[!UICONTROL after every recipient completes signing ceremony]** Hiermee configureert u de handeling Formulier verzenden, waarbij het formulier voor het eerst naar alle ontvangers wordt verzonden voor ondertekening. Nadat alle ontvangers het formulier hebben ondertekend, wordt het formulier alleen verzonden.
 
@@ -169,8 +169,8 @@ Volg onderstaande stappen om een regel voor Formulier opslaan op een formulierco
 1. Tik vanuit het linkervenster op ![Pictogram Componenten](assets/components_icon.png) en sleep de [!UICONTROL Button] aan het formulier.
 1. Tik op de knop [!UICONTROL Button] en tik vervolgens op de ![Pictogram Configureren](assets/configure_icon.png).
 1. Tik op de knop [!UICONTROL Edit Rules] om de Regeleditor te openen.
-1. Tikken **[!UICONTROL Create]** om de regel te vormen en tot stand te brengen.
-1. In de [!UICONTROL When] selecteert u &quot;klikt op&quot; en in het dialoogvenster [!UICONTROL Then] selecteert u de optie Formulier opslaan.
+1. Tikken **[!UICONTROL Create]** om de regel te vormen en te creëren.
+1. In de [!UICONTROL When] selecteert u &quot;klikt op&quot; en in het dialoogvenster [!UICONTROL Then] selecteert u de opties voor Formulier opslaan.
 1. Tikken **[!UICONTROL Done]** om de regel op te slaan.
 
 ### Automatisch opslaan inschakelen {#enable-auto-save}
@@ -178,7 +178,7 @@ Volg onderstaande stappen om een regel voor Formulier opslaan op een formulierco
 U kunt de functie voor automatisch opslaan als volgt configureren voor een adaptief formulier:
 
 1. Open in de auteur een adaptief formulier in de bewerkingsmodus.
-1. Tik in het linkervenster op de knop ![Pictogram Eigenschappen](assets/configure_icon.png) en breid de [!UICONTROL AUTO-SAVE] optie.
-1. Selecteer **[!UICONTROL Enable]** schakelt u het automatisch opslaan van het formulier in. U kunt het volgende configureren:
+1. Tik in het linkervenster op de knop ![Pictogram Eigenschappen](assets/configure_icon.png) en breid de [!UICONTROL AUTO-SAVE] -optie.
+1. Selecteer de **[!UICONTROL Enable]** schakelt u het automatisch opslaan van het formulier in. U kunt het volgende configureren:
 * Standaard worden de [!UICONTROL Adaptive Form Event] is ingesteld op &quot;true&quot;, wat betekent dat het formulier na elke gebeurtenis automatisch wordt opgeslagen.
-* In [!UICONTROL Trigger]configureren om automatisch opslaan te activeren op basis van het optreden van een gebeurtenis of na een bepaald tijdsinterval.
+* In [!UICONTROL Trigger], configureert u voor het activeren van automatisch opslaan op basis van het optreden van een gebeurtenis of na een bepaald tijdsinterval.

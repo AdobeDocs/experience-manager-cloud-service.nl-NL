@@ -1,10 +1,10 @@
 ---
 title: Query Builder-API
-description: De functionaliteit van Asset Share Query Builder wordt via een Java&trade weergegeven. API en een REST-API.
+description: De functionaliteit van de Asset Share Query Builder wordt weergegeven via een Java&trade; API en een REST API.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2006'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ De REST API biedt toegang tot dezelfde functies via HTTP, waarbij reacties worde
 
 ## Gem-sessie {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en) Dit is een reeks technische diepteduiken in Adobe Experience Manager die door experts van Adobe worden geleverd.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en) Dit is een reeks technische diepteduiken in Adobe Experience Manager die door experts van de Adobe worden geleverd.
 
 U kunt [herzie de zitting specifiek aan de vraagbouwer wordt gewijd](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=en) voor een overzicht en gebruik van het gereedschap.
 
@@ -51,7 +51,7 @@ Voor de `QueryBuilder` JSON Servlet, elk voorbeeld omvat een steekproefverbindin
 
 ### Alle resultaten retourneren {#returning-all-results}
 
-De volgende query **retourneert tien resultaten** (of om precies te zijn, een maximum van tien), maar informeert u over de **Aantal treffers:** die beschikbaar is:
+De volgende query **retourneert tien resultaten** (of om precies te zijn, maximaal tien), maar informeert u over de **Aantal treffers:** die beschikbaar is:
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&orderby=path`
 
@@ -130,7 +130,7 @@ De interface kan bijvoorbeeld de volgende benadering aanpassen:
 
 * De reactie kan het volgende resultaat hebben:
 
-   * `total=43`, `more=false` - Geeft aan dat het totale aantal treffers 43 is. De interface kan tot tien resultaten als deel van de eerste pagina tonen en paginering voor de volgende drie pagina&#39;s verstrekken. U kunt deze implementatie ook gebruiken om een beschrijvende tekst weer te geven, zoals **&quot;43 resultaten gevonden&quot;**.
+   * `total=43`, `more=false` - Geeft aan dat het totale aantal treffers 43 is. De interface kan tot tien resultaten als deel van de eerste pagina tonen en paginering voor de volgende drie pagina&#39;s verstrekken. U kunt deze implementatie ook gebruiken om een beschrijvende tekst weer te geven zoals **&quot;43 resultaten gevonden&quot;**.
    * `total=100`, `more=true` - Geeft aan dat het totale aantal treffers groter is dan 100 en dat het exacte aantal niet bekend is. De interface kan maximaal tien pagina&#39;s weergeven als onderdeel van de eerste pagina en paginering voor de volgende tien pagina&#39;s bieden. U kunt deze functie ook gebruiken om tekst als tekst weer te geven **&quot;meer dan 100 resultaten gevonden&quot;**. Aangezien de gebruiker naar de volgende pagina&#39;s gaat, zou de vraag aan de Bouwer van de Vraag wordt gemaakt de grens van verhogen `guessTotal` en van de `offset` en `limit` parameters.
 
 Ook gebruiken `guessTotal` in gevallen waarin de gebruikersinterface oneindig schuiven moet gebruiken om te voorkomen dat de Bouwer van de Vraag de nauwkeurige klaptelling bepaalt.
@@ -208,7 +208,7 @@ Deze query gebruikt een *groep* (benoemd `group`), die fungeert als scheidingste
 
 In de groep in het voorbeeld worden de `path` predikaat wordt meerdere keren gebruikt. Om de twee instanties van predikaat (het opdracht geven tot wordt vereist voor sommige predikaten) te onderscheiden en te rangschikken, moet u prefixeren predikaten met `N_` waar `N` is de bestelindex. In het vorige voorbeeld zijn de resulterende voorspellingen `1_path` en `2_path`.
 
-De `p` in `p.or` is een speciaal scheidingsteken dat aangeeft wat volgt (in dit geval `or`) is *parameter* van de groep, in tegenstelling tot een subpredicaat van de groep, zoals `1_path`.
+De `p` in `p.or` is een speciaal scheidingsteken dat aangeeft wat volgt (in dit geval `or`) is *parameter* van de groep, in tegenstelling tot een subgroep van de groep, zoals `1_path`.
 
 Indien niet `p.or` worden gegeven, dan zijn alle voorspellingen ENed samen, dat wil zeggen, elk resultaat moet aan alle voorspellingen voldoen.
 
@@ -345,7 +345,7 @@ p.nodedepth=5
 
 ## Meer voorspellingen {#morepredicates}
 
-Voor meer voorspellingen raadpleegt u de [Voorspelde referentiepagina van Query Builder](query-builder-predicates.md).
+Zie voor meer voorspellingen de [Voorspelde referentiepagina van Query Builder](query-builder-predicates.md).
 
 U kunt ook de [Javadoc voor de `PredicateEvaluator` klassen](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Javadoc voor deze klassen bevat de lijst met eigenschappen die u kunt gebruiken.
 
@@ -413,7 +413,7 @@ Dezelfde query die via HTTP wordt uitgevoerd met de Query Builder (JSON) Servlet
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&type=cq:Page&group.p.or=true&group.1_fulltext=WKND&group.1_fulltext.relPath=jcr:content&group.2_fulltext=WKND&group.2_fulltext.relPath=jcr:content/@cq:tags&p.offset=0&p.limit=20`
 
-## Vragen opslaan en laden {#storing-and-loading-queries}
+## Query&#39;s opslaan en laden {#storing-and-loading-queries}
 
 U kunt query&#39;s opslaan in de opslagplaats, zodat u ze later kunt gebruiken. De `QueryBuilder` verstrekt `storeQuery` methode met de volgende handtekening:
 
@@ -421,7 +421,7 @@ U kunt query&#39;s opslaan in de opslagplaats, zodat u ze later kunt gebruiken. 
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Wanneer u de [`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) methode, de `Query` in de opslagplaats wordt opgeslagen als een bestand of als een eigenschap volgens de `createFile` argumentwaarde. In het volgende voorbeeld wordt getoond hoe u een `Query` naar het pad `/mypath/getfiles` als bestand:
+Wanneer u de opdracht [`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) methode, de `Query` in de opslagplaats wordt opgeslagen als een bestand of als een eigenschap volgens de `createFile` argumentwaarde. In het volgende voorbeeld wordt getoond hoe u een `Query` naar het pad `/mypath/getfiles` als bestand:
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);

@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.11.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.11.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021, enzovoort.
+>Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Kijk eens naar de [Overzicht release december 2021](https://video.tv.adobe.com/v
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* Dynamic Media Image Smart Crop and Swatch wordt nu aangedreven door de nieuwste Sensei-services, die verbeterde gewassen en stalen genereert. Bovendien is een verbetering gestart om verschillende uitsnijdinhoud te genereren, voor dezelfde hoogte-breedteverhouding maar voor verschillende resoluties. Bovendien blijven eventuele handmatige bewerkingen behouden bij het opwerken als de breedte en hoogte in het afbeeldingsprofiel niet worden gewijzigd.
+* Dynamic Media Image Smart Crop and Swatch wordt nu aangedreven door de nieuwste Sensei-services, die verbeterde gewassen en stalen genereert. Er is ook een verbetering gestart om verschillende uitsnijdinhoud te genereren, voor dezelfde hoogte-breedteverhouding maar voor verschillende resoluties. Bovendien blijven eventuele handmatige bewerkingen behouden bij het opwerken als de breedte en hoogte in het afbeeldingsprofiel niet worden gewijzigd.
 
 ### Nieuwe functies in het dialoogvenster [!DNL Assets] prerelease-kanaal {#assets-prerelease-features}
 
@@ -48,16 +48,16 @@ Kijk eens naar de [Overzicht release december 2021](https://video.tv.adobe.com/v
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* **Externe AEM workflowgegevens voor veilige verwerking**: U kunt AEM werkstroomgegevens (AEM gegevens van de Variabelen van het Werkschema) opslaan die de gevoelige elementen van Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. De gegevenselementen en workflowvariabelen worden niet opgeslagen in AEM opslagplaats en worden op verzoek opgehaald van een door de klant beheerde opslagplaats tijdens de verwerking van de Workflow.
+* **Externe AEM workflowgegevens voor veilige verwerking**: U kunt in-process AEM Workflows gegevens (AEM gegevens van de Variabelen van het Werkschema) opslaan die de gevoelige elementen van Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. De gegevenselementen en workflowvariabelen worden niet opgeslagen in AEM opslagplaats en worden op verzoek opgehaald van een door de klant beheerde opslagplaats tijdens de verwerking van de Workflow.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
    * Genereer documenten door sjabloonbestanden (PDF en XDP) te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
 
-* **Aangepaste lettertypen voor document van record- en PDF-documenten die zijn gemaakt met communicatie-API&#39;s**: U kunt nu met een merk goedgekeurde lettertypen gebruiken in PDF-documenten die zijn gegenereerd met communicatie-API&#39;s, zodat deze kunnen worden afgestemd op uw organisatorische vereisten.
+* **Aangepaste lettertypen voor document van record- en PDF-documenten die zijn gemaakt met communicatie-API&#39;s**: U kunt nu met een merk goedgekeurde lettertypen gebruiken in PDF-documenten die zijn gegenereerd met communicatie-API&#39;s en die aan uw organisatorische vereisten voldoen.
 
 * **Forms Portal**: U kunt [Forms Portal](/help/forms/configure-forms-portal.md) om gepubliceerde adaptieve formulieren op een AEM Sites-pagina weer te geven. Hiermee kan een sitebezoeker alle beschikbare formulieren detecteren. Bovendien kan de bezoeker de portal Formulieren gebruiken om een concept van een adaptief formulier op te slaan en te openen en de versie van de PDF van een ingediend adaptief formulier te bekijken.
 
@@ -65,7 +65,7 @@ Kijk eens naar de [Overzicht release december 2021](https://video.tv.adobe.com/v
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* Uitgebreide myAccount componenten die op de verlengbare Peregrine componenten van de Handel gebaseerd zijn
+* Uitgebreide myAccount-componenten die zijn gebaseerd op uitbreidbare Peregrine-componenten van de Handel
 
 ![Uitgebreide myAccount-componenten](/help/assets/CIF/extended-myAccount-components.png)
 
@@ -99,7 +99,7 @@ De volgende release is gepland voor 9 december 2021.
 
 * De `x-request-id` responsheader is nu zichtbaar in de API-afspeelruimte op [www.adobe.io](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
 
-* Als gebruiker zie ik een pijplijnkaart met nulpijpleidingen die mij de juiste begeleiding biedt.
+* Als gebruiker zie ik een pijplijnkaart met nulpijpleidingen die mij van de juiste begeleiding voorziet.
 
 * Een nieuwe pagina van de Activiteit is nu beschikbaar waar de activiteiten zoals pijpleiding en codeuitvoering samen met hun bijbehorende details kunnen worden bekeken. In de loop der tijd zullen de activiteiten die op deze pagina worden vermeld, in het toepassingsgebied worden uitgebreid, samen met de verstrekte gegevens.
 
@@ -127,7 +127,7 @@ De volgende release is gepland voor 9 december 2021.
 
 ### Releasedatum {#release-date-bpa}
 
-De releasedatum voor de analyse van best practices v2.1.22 is 1 december 2021.
+De releasedatum voor de analyse van best practices v2.1.2 is 1 december 2021.
 
 ### Wat is er nieuw? {#what-is-new-bpa}
 

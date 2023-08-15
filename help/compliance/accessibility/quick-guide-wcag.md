@@ -2,10 +2,10 @@
 title: Snelgids voor WCAG 2.1
 description: A Quick Guide to the Web Content Accessibility Guidelines (WCAG) version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 92%
+source-wordcount: '1782'
+ht-degree: 90%
 
 ---
 
@@ -68,7 +68,7 @@ Iets meer uitgewerkt:
 * De richtlijnen zijn genummerd van 1.1 tot en met 4.1, waarbij het eerste nummer overeenkomt met het hoofdbeginsel.
 * Elke richtlijn bestaat uit een of meer **succescriteria**.
 * Succescriteria worden geschreven als instructies, die ofwel `True` of `False` zijn voor een bepaalde webpagina.
-* Succescriteria kunnen ofwel/of-keuzes omvatten, of uitzonderingen. Dit zijn situaties waarin niet aan de succescriteria moet worden voldaan.
+* Succescriteria kunnen ofwel keuzes bevatten, ofwel uitzonderingen, situaties waarin niet aan de succescriteria hoeft te worden voldaan.
 * Succescriteria worden genummerd volgens de hoofdrichtlijn en het hoofdbeginsel, van 1.1.1 tot en met 4.1.1. Ze hebben ook een korte naam die de bedoeling van het criterium samenvat en die ervoor zorgt dat de richtlijn en het beginsel gemakkelijker geraadpleegd kunnen worden. Het succescriterium [1.1.1 is bijvoorbeeld Niet-tekstuele content](https://www.w3.org/TR/WCAG/#non-text-content).
 * De succescriteria omvatten een lijst met verwante **technieken** (hieronder nader beschreven).
 

@@ -2,16 +2,16 @@
 title: Pagina-annotaties toevoegen
 description: Annotatiemodus gebruiken om annotaties en schetsen op pagina's te laten zoals u notities gebruikt om het revisieproces van de inhoud te begeleiden
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
 
 # Pagina-annotaties toevoegen {#adding-page-annotations}
 
-Voor het maken van inhoud voor uw digitale ervaring is vaak overleg en feedback vereist voordat deze kan worden gepubliceerd. Voor dit feedbackproces kunt u AEM annotaties toevoegen aan uw inhoud.
+Voor het maken van inhoud voor uw digitale ervaring is vaak overleg en feedback vereist voordat deze kan worden gepubliceerd. Als u dit feedbackproces wilt ondersteunen, kunt AEM annotaties toevoegen aan uw inhoud.
 
 Een annotatie plaatst een eenvoudige schets of notitie (denk in real-world kleverige noot) op de pagina. Met de annotatie kunt u opmerkingen of vragen aan andere auteurs en revisoren overlaten.
 
@@ -29,9 +29,9 @@ Een speciale [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.m
 
 Annotaties worden niet weergegeven in de modus Bewerken, maar het symbool rechtsboven op de werkbalk geeft aan hoeveel annotaties er bestaan voor de huidige pagina. Het pictogram vervangt het standaardpictogram Annotaties, maar werkt nog steeds als een snelle koppeling die van/naar de modus Annotatie schakelt:
 
-![Indicator voor aantekening](/help/sites-cloud/authoring/assets/annotation-indicator.png)
+![Indicator voor annotatie](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
-## Annotatiemodus {#annotate-mode}
+## Aantekenmodus {#annotate-mode}
 
 Annotaties zijn alleen zichtbaar in de modus Annotatie.
 
@@ -51,7 +51,7 @@ Annotaties zijn alleen zichtbaar in de modus Annotatie.
 
 ## Annotaties toevoegen en bewerken {#annotating-a-component}
 
-In de modus Annotatie kunt u niet alleen notities weergeven, maar ook annotaties maken, bewerken, verplaatsen of verwijderen
+In de modus Annotatie kunt u niet alleen annotaties weergeven, maar ook annotaties maken, bewerken, verplaatsen of verwijderen
 
 1. [Annotatiemodus starten](#annotate-mode) op de pagina.
 
@@ -76,11 +76,11 @@ In de modus Annotatie kunt u niet alleen notities weergeven, maar ook annotaties
 
 1. U kunt het dialoogvenster met annotaties sluiten door buiten het dialoogvenster te klikken of erop te tikken. Er wordt een afgekapte weergave van de annotatie getoond, samen met eventuele schetsen:
 
-   ![Schetsen voor notities](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![Schetsen voor annotaties](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
 1. Nadat u een specifieke annotatie hebt bewerkt, kunt u:
 
-   * Klik of tik op de tekstmarkering om de annotatie te openen. Als u de volledige tekst hebt geopend, kunt u wijzigingen aanbrengen of [de annotatie verwijderen.](#deleting-annotations)
+   * Klik of tik op de tekstmarkering om de aantekening te openen. Als u de volledige tekst hebt geopend, kunt u wijzigingen aanbrengen of [de annotatie verwijderen.](#deleting-annotations)
    * Verander de positie van de tekstmarkering.
    * Klik of tik op een schetslijn om die schets te selecteren en sleep deze naar de gewenste positie.
    * Een component verplaatsen of kopiëren

@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1531'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Adobe Experience Manager] as a Cloud Service.
 
 >[!NOTE]
->Vanuit deze locatie kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021 enzovoort.
+>Hier kunt u navigeren om notities van eerdere versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 * GraphQL Endpoints - het is nu mogelijk om de AEM GraphQL API voor afzonderlijke AEM Sites-configuraties in te schakelen en aangepaste GraphQL-eindpunten voor die configuraties te maken met een nieuwe GraphQL Console-interface. Met de gebruikersinterface kunt u ook GraphQL-eindpunten beheren.
 
-* Inhoudsmodellen, verbeterd gegevenstype Datum&amp;tijd - het is nu mogelijk het datum&amp;tijdtype te configureren om alleen datum-, alleen tijd- of datum- en tijdgegevens voor het schrijven toe te staan.
+* Inhoudsmodellen, verbeterd gegevenstype Datum&amp;tijd - het is nu mogelijk het datum&amp;tijdtype te configureren om alleen datum-, alleen tijd- of datum- en tijdgegevens voor de auteur toe te staan.
 
 * Inhoudsmodellen, uitgebreid gegevenstype Codes - het is nu mogelijk het gegevenstype Codes te configureren om het schrijven van enkele of meerdere tags toe te staan.
 
@@ -55,9 +55,9 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 * [!DNL Experience Manager] één elementdownload niet archiveert op de plaats waar het oorspronkelijke bestand is gedownload. Deze verbetering maakt snellere downloads mogelijk.
 
-* Wanneer een element wordt gedownload via de optie voor het delen van koppelingen, kunt u nu kiezen of u de uitvoeringen wilt downloaden of niet. Eerder werden alle elementuitvoeringen gedownload.
+* Wanneer een element wordt gedownload via de optie voor het delen van koppelingen, kunt u de uitvoeringen nu downloaden of niet downloaden. Eerder werden alle elementuitvoeringen gedownload.
 
-* Beheerders kunnen configureren [!DNL Experience Manager] om de bron van activa te schrappen nadat het doen van bulkactiva. Zie [bulkasset-opname](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Beheerders kunnen [!DNL Experience Manager] om de bron van activa te schrappen nadat het doen van bulkactiva. Zie [bulkasset-opname](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Wanneer het uitvoeren van een gezondheidscontrole om activa in bulk in te voeren, verstrekt de Experience Manager nu meer informatieredenen voor mislukkingen. Zie [bulkasset-opname](/help/assets/add-assets.md#asset-bulk-ingestor).
 
@@ -67,7 +67,7 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 * Bij het bewerken van een metagegevensschema wordt een gegevenstype toegevoegd dat een tekstgebied met vrije vorm biedt in de metagegevenseditor. Gebruikers kunnen dit tekstgebied gebruiken om vrije tekst in te voeren als metagegevens van een element. Zie [editor voor metagegevensschema](/help/assets/metadata-schemas.md).
 
-* Metagegevens van vele elementen kunnen bulksgewijs worden geïmporteerd met behulp van een CSV-bestand en kunnen worden geëxporteerd naar een CSV-bestand. De standaarddatumnotatie is nu `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gebruikers kunnen een andere indeling gebruiken door de kolomkop bij te werken. Voeg bijvoorbeeld `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` als kolomkop in het CSV-bestand in plaats van het woord `Date`.
+* Metagegevens van vele elementen kunnen in bulk worden geïmporteerd met behulp van een CSV-bestand en kunnen worden geëxporteerd naar een CSV-bestand. De standaarddatumnotatie is nu `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Gebruikers kunnen een andere indeling gebruiken door de kolomkop bij te werken. Voeg bijvoorbeeld `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` als kolomkop in het CSV-bestand in plaats van het woord `Date`.
 
 * Wanneer u elementen bladert in de kolomweergave, geeft een visuele indicator de goedgekeurde of geweigerde status van elk element weer.
 
@@ -107,7 +107,7 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
   Terwijl u een adaptief formulier vooraf invult voor een toewijzingsstap, kunt u nu een variabele van het documenttype gebruiken om een invoerbijlage te selecteren voor het adaptieve formulier.
 
-* **Ondersteuning voor het gebruik van de letterlijke optie voor het instellen van de waarde voor een JSON-typevariabele**
+* **Ondersteuning voor het gebruik van de letterlijke optie voor het instellen van de waarde voor een JSON-type variabele**
 
   U kunt letterlijke optie gebruiken om waarde voor een JSON typevariabele in de vastgestelde veranderlijke stap van een AEM Werkstroom te plaatsen. Met de letterlijke optie kunt u een JSON opgeven in de vorm van een tekenreeks.
 
@@ -130,9 +130,9 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 * Steun voor categorie UID - dit ontgrendelt derde handelsintegraties voor systemen die Koorden voor categorie ids gebruiken
 
-* AEM extensie voor PWA Studio incl. voorbeeldintegratie
+* AEM extensie voor PWA Studio incl. voorbeeld-integratie
 
-* Nieuwe CIF-kerncomponent voor navigatie die de WCM-kerncomponent voor navigatie uitbreidt
+* Nieuwe CIF-kerncomponent voor navigatie die de WCM-kerncomponent uitbreidt
 
 * Visuele indicator voor gefaseerde catalogusgegevens in AEM storefront
 
@@ -181,7 +181,7 @@ De volgende release is gepland voor 6 mei 2021.
 
 * Problemen met de `CloudServiceIncompatibleWorkflowProcess` had de onjuiste strengheid in het downloadbare uitgave CSV dossier.
 
-* De `Runmode` controle leverde valse positieven op niet-omslagknopen op.
+* De `Runmode` controle leverde vals positieve op niet omslagknopen.
 
 ## Analysator van best practices {#best-practices-analyzer}
 

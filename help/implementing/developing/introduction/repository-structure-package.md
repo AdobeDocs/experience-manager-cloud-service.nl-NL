@@ -2,7 +2,7 @@
 title: AEM-projectrepositorystructuurpakket
 description: Gemaakte projecten op Adobe Experience Manager as a Cloud Service vereisen een definitie van subpakket van de Structuur van de Bewaarplaats met als enig doel de wortels van de bewaarplaats van JCR te bepalen waarin de Codepakketten van het project in subpakketten van de Code van het project opstellen.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 2%
@@ -19,11 +19,11 @@ Als uw codepakket in een plaats opstelt **niet gedekt** door het codepakket moet
 
 In het structuurpakket van de repository wordt de verwachte, algemene status van `/apps` welke de pakketvalidator gebruikt om te bepalen welke gebieden &quot;veilig zijn tegen potentiële conflicten&quot; als standaardwortels hebben.
 
-De meest gangbare paden die in het opslagstructuurpakket moeten worden opgenomen zijn:
+De meest gangbare paden die in het opslagstructuurpakket moeten worden opgenomen, zijn:
 
 + `/apps` Dit is een systeemknooppunt
 + `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`, en `/apps/sling/...` die algemene overlays bieden voor `/libs`.
-+ `/apps/settings` Dit is het gedeelde context-bewuste pad van de configuratiegrootte
++ `/apps/settings` Dit is het gedeelde context-bewuste pad van de configuratiepunt
 
 Dit subpakket **heeft geen** alle inhoud en die uitsluitend bestaat uit een `pom.xml` de filterwortels definiëren.
 
@@ -86,7 +86,7 @@ Zorg ervoor dit nieuwe Gemaakt subproject aan de ouderprojecten toevoegt `<modul
                         Examples of complex roots
 
 
-                        Overlays of /libs typically require defining the overlayed structure, at each level here.
+                        Overlays of /libs typically require defining the overlay structure, at each level here.
 
                         For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
 
@@ -153,7 +153,7 @@ In de `ui.apps/pom.xml`en elk ander codepakket `pom.xml`s, voeg een verwijzing n
 </dependencies>
 ```
 
-## Gebruiksscenario voor meerdere code
+## Gebruiksscenario voor multi-code pakket
 
 Een minder gangbare, en complexere gebruikscase biedt ondersteuning voor de implementatie van meerdere codepakketten die in dezelfde gebieden van de JCR-opslagplaats worden geïnstalleerd.
 
@@ -162,7 +162,7 @@ Bijvoorbeeld:
 + Codepakket A wordt geïmplementeerd in `/apps/a`
 + Codepakket B wordt geïmplementeerd in `/apps/a/b`
 
-Als een op pakketniveau gebiedsdeel niet van codepakket B op codepakket A wordt gevestigd, kan het codepakket B eerst in `/apps/a`. Het zou dan door codepakket B worden gevolgd, dat in opstelt `/apps/a`. Het resultaat is dat de eerder geïnstalleerde `/apps/a/b`.
+Als een op pakketniveau gebiedsdeel niet van codepakket B op codepakket A wordt gevestigd, kan het codepakket B eerst in `/apps/a`. Het zou dan door codepakket B worden gevolgd, dat in `/apps/a`. Het resultaat is dat de eerder geïnstalleerde `/apps/a/b`.
 
 In dit geval:
 

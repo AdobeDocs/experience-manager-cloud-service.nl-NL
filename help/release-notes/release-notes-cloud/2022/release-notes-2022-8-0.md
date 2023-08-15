@@ -2,20 +2,20 @@
 title: Opmerkingen bij de release 2022.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release 2022.8.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 202.8.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 In de volgende sectie worden de opmerkingen bij de release met functies voor de versie 2022.8.0 van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021, enzovoort.
+>Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -39,9 +39,9 @@ Bekijk de video Overzicht van de release van augustus 2022 voor een overzicht va
 * Met de E-mailcomponent kunt u inhoud maken in AEM die vervolgens als e-mails via Campaign Classic wordt bezorgd. De Core Email Component:
    * is gebaseerd op de [Core WCM-component](https://github.com/adobe/aem-core-wcm-components) die Bewerkbare sjablonen en het Stijlsysteem ondersteunt.
    * biedt tien voor e-mail geoptimaliseerde componenten voor productie (pagina, container, titel, tekst, afbeelding, knop, taser, Experience Fragment, Content Fragment, Segmentatie).
-   * biedt dankzij de [invoeging van campagnevariabelen](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) op de meeste dialooggebieden en op de flexibele [Segmenteringscomponent](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+   * biedt geavanceerde personalisatie en segmentering dankzij de [invoeging van campagnevariabelen](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) op de meeste dialooggebieden en op de flexibele [Segmenteringscomponent](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
    * biedt optimale e-mailvriendelijke HTML-uitvoer dankzij de [CSS-stijlen inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)de [HTML-kenmerkinliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation)en de [HTML-ontsmettingsmiddel](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
-   * Hiermee kunt u overal e-mails maken.
+   * maakt het mogelijk om overal e-mails te maken.
 
 ### Nieuwe functies beschikbaar in [!DNL Sites] prerelease-kanaal {#prerelease-features-sites}
 
@@ -61,11 +61,11 @@ Bekijk de video Overzicht van de release van augustus 2022 voor een overzicht va
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
 
-* [Adaptieve Forms-wizard](/help/forms/creating-adaptive-form.md): AEM Forms biedt een gebruiksvriendelijke wizard die Adaptive Forms snel ontwikkelt. De wizard beschikt over een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken. Deze release biedt de wizard de volgende verbeteringen:
+* [Adaptieve Forms-wizard](/help/forms/creating-adaptive-form.md): AEM Forms biedt een gebruiksvriendelijke wizard voor zakelijke gebruikers waarmee u Adaptive Forms snel kunt ontwerpen. De wizard beschikt over een snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken. Deze release biedt de wizard de volgende verbeteringen:
 
-   * Selecteer of deselecteer velden: Met de wizard kunt u een adaptief formulier maken op basis van JSON- en formuliergegevensmodelschema&#39;s. U kunt nu een subset van velden in een schema selecteren en opnemen in een adaptief formulier. De geselecteerde velden worden geconverteerd naar overeenkomstige componenten voor het vastleggen van adaptieve formuliergegevens om snel de gewenste adaptieve formulieren te maken.
+   * Velden selecteren of deselecteren: met de wizard kunt u een adaptief formulier maken op basis van JSON- en formuliergegevensmodelschema&#39;s. U kunt nu een subset van velden in een schema selecteren en opnemen in een adaptief formulier. De geselecteerde velden worden geconverteerd naar overeenkomstige componenten voor het vastleggen van adaptieve formuliergegevens om snel de gewenste adaptieve formulieren te maken.
 
-   * Statische sjablonen gebruiken: Klanten met bestaande investeringen in verouderde statische sjablonen kunnen hun reis naar cloudacceptatie voortzetten door statische sjablonen in wizard te gebruiken om adaptieve formulieren te maken. Dit geeft klanten extra tijd om oude statische sjablonen te migreren naar moderne bewerkbare sjablonen.
+   * Statische sjablonen gebruiken: klanten met bestaande investeringen in verouderde statische sjablonen kunnen doorgaan met het toepassen van de cloud door statische sjablonen te gebruiken in de wizard voor het schrijven van adaptieve formulieren. Dit geeft klanten extra tijd om oude statische sjablonen te migreren naar moderne bewerkbare sjablonen.
 
 * [Verborgen velden verwijderen uit een Document of Record (DoR) tijdens verwerking op de server](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): U kunt het document met record PDF voor eindgebruikers genereren met alleen die velden die voor hen zichtbaar waren tijdens het vastleggen van gegevens. Bij het verzenden van het formulier controleert de server welke velden op basis van verzonden gegevens verborgen waren voor de eindgebruiker en sluit deze velden uit van het document met het oog op consistentie.
 
@@ -82,4 +82,4 @@ U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/imp
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst vinden van de versies van de Hulpmiddelen van de Migratie [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+U vindt een volledige lijst met de releases van de migratiehulpmiddelen [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

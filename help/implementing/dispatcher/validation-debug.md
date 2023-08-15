@@ -3,9 +3,9 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Leer meer over lokale validatie, foutopsporing, de bestandsstructuur in de flexibele modus en hoe u van de oude modus naar de flexibele modus kunt migreren.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2861'
+source-wordcount: '2860'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In de volgende secties wordt de structuur van het bestand in de flexibele modus 
 
 In dit artikel wordt ervan uitgegaan dat de configuratie Dispatcher van uw project het bestand bevat `opt-in/USE_SOURCES_DIRECTLY`. Dit bestand zorgt ervoor dat de SDK en de runtime de configuratie op een betere manier valideren en implementeren dan in de verouderde modus, waarbij beperkingen rond het aantal en de grootte van bestanden worden verwijderd.
 
-Als het eerder vermelde bestand niet is opgenomen in de configuratie van de Dispatcher, raadt Adobe u aan om over te schakelen van de oude modus naar de flexibele modus, zoals beschreven in het dialoogvenster [Migreren van oude modus naar flexibele modus](#migrating) sectie.
+Als het eerder vermelde bestand niet is opgenomen in de configuratie van de Dispatcher, wordt u door de Adobe aangeraden over te stappen van de oude modus naar de flexibele modus, zoals beschreven in het dialoogvenster [Migreren van oude modus naar flexibele modus](#migrating) sectie.
 
 ## Bestandsstructuur {#flexible-mode-file-structure}
 
@@ -86,7 +86,7 @@ U kunt een of meer van deze bestanden hebben. Zij bevatten `<VirtualHost>` verme
 >
 >In de flexibele modus moet u relatieve paden gebruiken in plaats van absolute paden.
 
-Zorg ervoor dat ten minste één virtuele host altijd beschikbaar is die overeenkomt met ServerAlias `\*.local`, `localhost`, en `127.0.0.1` die nodig zijn voor de validatie van de verzender. De serveraliassen `*.adobeaemcloud.net` en `*.adobeaemcloud.com` zijn ook vereist in minstens één gastheerconfiguratie en zijn nodig voor interne processen van Adobe.
+Zorg ervoor dat ten minste één virtuele host altijd beschikbaar is die overeenkomt met ServerAlias `\*.local`, `localhost`, en `127.0.0.1` die nodig zijn voor de validatie van de verzender. De serveraliassen `*.adobeaemcloud.net` en `*.adobeaemcloud.com` zijn ook vereist in minstens één gastheerconfiguratie en zijn nodig voor interne processen van de Adobe.
 
 Als u precies de gastheer wilt aanpassen omdat u veelvoudige vhost dossiers hebt, kunt u het volgende voorbeeld volgen:
 
@@ -156,7 +156,7 @@ Het wordt aanbevolen dat de bovenstaande bestanden verwijzen naar de hieronder v
 Bevat een virtuele voorbeeldhost. Voor uw eigen virtuele host maakt u een kopie van dit bestand, past u het aan, gaat u naar `conf.d/enabled_vhosts` en maak een symbolische koppeling naar uw aangepaste kopie.
 Kopieer het bestand default.vhost niet rechtstreeks naar `conf.d/enabled_vhosts`.
 
-Zorg ervoor dat er altijd een virtuele host beschikbaar is die overeenkomt met ServerAlias `\*.local`, `localhost`, en `127.0.0.1` die nodig zijn voor de validatie van de verzender. De serveraliassen `*.adobeaemcloud.net` en `*.adobeaemcloud.com` nodig zijn voor interne Adobe-processen.
+Zorg ervoor dat er altijd een virtuele host beschikbaar is die overeenkomt met ServerAlias `\*.local`, `localhost`, en `127.0.0.1` die nodig zijn voor de validatie van de verzender. De serveraliassen `*.adobeaemcloud.net` en `*.adobeaemcloud.com` noodzakelijk zijn voor de interne Adobe.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -404,7 +404,7 @@ Tijdens een implementatie van Cloud Manager kunt u de `httpd -t` syntaxiscontrol
 
 ### Fase 3 {#third-phase}
 
-Als er in deze fase een fout optreedt, betekent dit dat Adobe een of meer onveranderlijke bestanden heeft gewijzigd. In dat geval moet u de overeenkomstige onveranderlijke bestanden vervangen door de nieuwe versie die in het dialoogvenster `src` directory van de SDK. In het onderstaande logboekvoorbeeld wordt dit probleem geïllustreerd:
+Als er in deze fase een fout optreedt, houdt dit in dat de Adobe een of meer onveranderlijke bestanden heeft gewijzigd. In dat geval moet u de overeenkomstige onveranderlijke bestanden vervangen door de nieuwe versie die in het dialoogvenster `src` directory van de SDK. In het onderstaande logboekvoorbeeld wordt dit probleem geïllustreerd:
 
 ```
 Phase 3: Immutability check

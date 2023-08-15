@@ -2,9 +2,9 @@
 title: Sandbox-programma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen sandboxprogramma te maken voor training, demo, POC of andere niet-productiedoeleinden.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Een zandbakprogramma wordt typisch gecreeerd om ten behoeve van opleiding, lopende demo&#39;s, enablement, POCs, of documentatie te dienen en is niet bedoeld om levend verkeer te vervoeren.
 
-Meer informatie over programmatypen in het document [Het begrip van Programma en de Types van Programma.](program-types.md)
+Meer informatie over programmatypen in het document [Het begrip van Programma en Programma Types.](program-types.md)
 
 ## Een Sandbox-programma maken {#create}
 
-1. Meld u aan bij Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Vanuit de openingspagina van Cloud Manager klikt u in de rechterbovenhoek van het scherm op **Programma toevoegen**.
+1. Klik in de openingspagina van Cloud Manager rechtsboven in het scherm op **Programma toevoegen**.
 
    ![Openingspagina van Cloud Manager](assets/cloud-manager-my-programs.png)
 
@@ -61,7 +61,7 @@ U kunt de details van uw zandbakopstelling bekijken en tot het milieu (zodra bes
    >
    >Ga voor meer informatie over toegang tot en beheer van uw it-opslagplaats naar [Toegang tot it](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-1. Als de ontwikkelomgeving eenmaal is gemaakt, kunt u de **AEM** koppeling om u aan te melden bij AEM.
+1. Als de ontwikkelomgeving eenmaal is gemaakt, kunt u de **AEM** koppeling om u aan te melden AEM.
 
    ![Toegang AEM koppeling](assets/create-program-5.png)
 
@@ -69,6 +69,6 @@ U kunt de details van uw zandbakopstelling bekijken en tot het milieu (zodra bes
 
    ![Sandbox implementeren](assets/create-program-setup-deploy.png)
 
-Als u naar een ander programma moet overschakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om de **Navigeren naar** optie.
+Als u naar een ander programma moet overschakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om de **Navigeren naar** -optie.
 
 ![Ga naar](assets/create-program-a1.png)

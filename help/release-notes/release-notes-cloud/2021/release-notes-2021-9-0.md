@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.9.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.9.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021, enzovoort.
+>Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -64,21 +64,21 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-sep-2021}
 
-* **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt nu [elke ontvanger van de overeenkomst in staat stellen zijn rol in een adaptief formulier te configureren](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), waarbij Ondertekenaar de standaardrol is.
+* **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt nu [elke ontvanger van de overeenkomst de mogelijkheid bieden zijn rol in een adaptief formulier te configureren](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), waarbij Ondertekenaar de standaardrol is.
 
-* **Analyses voor Adaptive Forms**: U kunt het gedrag van de eindgebruiker nu vastleggen en volgen via Adobe Analytics for Adaptive Forms om inzichten van de eindgebruiker te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+* **Analyses voor Adaptive Forms**: U kunt nu het gedrag van eindgebruikers vastleggen en bijhouden via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
-* **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce**: De dienst verstrekt uit de doos gegevensbronconfiguratie en gegevensmodellen voor de Dynamica en Salesforce van Microsoft, makend het [ontwikkelaars kunnen Microsoft Dynamics en Salesforce sneller en eenvoudiger configureren als gegevensbronnen voor een adaptief formulier](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
+* **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce**: De dienst verstrekt uit de doos configuratie van de gegevensbron en gegevensmodellen voor de Dynamica en Salesforce van Microsoft, makend het [ontwikkelaars kunnen Microsoft Dynamics en Salesforce sneller en eenvoudiger configureren als gegevensbronnen voor een adaptief formulier](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
 
 * **Een adaptief formulier elektronisch ondertekenen met DocuSign:** U kunt DocuSign gebruiken om een adaptief formulier elektronisch te ondertekenen. De service biedt een aangepaste verzendactie om DocuSign te gebruiken met een adaptief formulier. U kunt het pakket dat beschikbaar is op Softwaredistributie installeren om de verzendactie te importeren.
 
 ### Bètafuncties van [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
 * **Unified Storage-connector:** Gebruik Unified Storage Connector om procesgegevens in door de klant beheerde opslagruimten extern te maken. U kunt bijvoorbeeld
-   * Schakel de functie Opslaan en hervatten van Forms Portal in en sla adaptieve formulierconcepten op in een gegevensopslagruimte onder klantbeheer.
+   * Schakel de functie Opslaan en hervatten van Forms Portal in en sla adaptieve formulierconcepten op in een gegevensopslagruimte onder beheer van de klant.
    * Sla AEM werkstroomgegevens (AEM gegevens van de Variabelen van het Werkschema) op die Gevoelige Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats bevatten.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
    * Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    * Afdruk-PDF-bestanden genereren op basis van een XFA-formulier met PDF en Adobe Acrobat-formulier.
@@ -111,7 +111,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 ### Nieuwe functies {#what-is-new-screens}
 
-* as a Cloud Service schermen ondersteunen nu elementaire afspeelcontrole. De speler zal nu diverse playbackmetriek met elk melden pingelt (gebrek aan 30 seconden). Gebaseerd op de metriek, verstrekt het de capaciteit om diverse randgevallen (gespoolde ervaring, leeg scherm, het plannen probleem, etc.) te ontdekken. Met deze functie kan het team op afstand controleren of een speler inhoud correct afspeelt, de reactiviteit verbetert tot lege schermen of gebroken ervaringen in het veld en het risico dat de eindgebruiker een verbroken ervaring krijgt verkleind.
+* As a Cloud Service schermen ondersteunen nu elementaire afspeelcontrole. De speler zal nu diverse playbackmetriek met elk melden pingelt (gebrek aan 30 seconden). Gebaseerd op de metriek, verstrekt het de capaciteit om diverse randgevallen (gespoolde ervaring, leeg scherm, het plannen probleem, etc.) te ontdekken. Met deze functie kan het team op afstand controleren of een speler inhoud correct afspeelt, de reactiviteit verbetert tot lege schermen of gebroken ervaringen in het veld en het risico dat de eindgebruiker een verbroken ervaring krijgt verkleind.
 Zie [Standaardafspeelcontrole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) voor meer informatie .
 
 * Ondersteuning van miniaturen voor video&#39;s wordt nu ondersteund in as a Cloud Service schermen. Een inhoudauteur kan een duimnagel voor video&#39;s bepalen zodat het beeld als placeholder kan worden gebruikt en behoorlijk het playback en richten van inhoud testen, terwijl de daadwerkelijke video door het aangewezen team wordt gebeëindigd. De afbeelding kan ook worden gebruikt voor het geval dat het afspelen van de video mislukt.
@@ -145,7 +145,7 @@ Lees de [documentatie](/help/security/configuring-advanced-networking.md) voor m
 
 **Indexoptimalisatie**
 
-Om de prestaties van onderzoeksvragen en het indexeren te verbeteren, wordt full-text index lucene-2 niet meer gebruikt buiten-van-de-doos binnen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] uit deze release. Om deze full-text index op AEM milieu&#39;s in overeenstemming met AEM klanten te verwijderen, werkt de Techniek van Adobe individueel en pro-actief met klanten voor een zachte en duurzame verwijdering van de full-text index van Lucene. Ga naar [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [documentatie](/help/operations/indexing.md#index-optimizations) voor meer informatie en neem direct contact op met onze ondersteuning als u vragen hebt.
+Om de prestaties van onderzoeksvragen en het indexeren te verbeteren, wordt full-text index lucene-2 niet meer gebruikt buiten-van-de-doos binnen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] uit deze release. Om deze full-text index op AEM milieu&#39;s in overeenstemming met AEM klanten te verwijderen, werkt de Techniek van de Adobe individueel en pro-actief met klanten voor een zachte en duurzame verwijdering van de full-text index van Lucene. Ga naar [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [documentatie](/help/operations/indexing.md#index-optimizations) voor meer informatie en neem direct contact op met onze ondersteuning als u vragen hebt.
 
 ## Cloud Manager {#cloud-manager}
 

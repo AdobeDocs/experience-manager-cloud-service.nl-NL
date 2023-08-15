@@ -5,7 +5,7 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 1%
@@ -28,9 +28,9 @@ Als u al bekend bent met AEM Sites en uw vertaalvereisten, hebt u wellicht al de
 
 [Een documentatiereis](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
-Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
+Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
-Als u wilt weten hoe Adobe adviseert om plaatszaken met AEM op te lossen, zijn de Reizen van AEM Sites waar te beginnen.
+Als u wilt weten hoe de Adobe aanbeveelt om vestigingenzaken met AEM op te lossen, zijn de Reizen van AEM Sites waar te beginnen.
 
 ## Publiek {#audience}
 
@@ -53,7 +53,7 @@ Informatie op deze reis kan natuurlijk nuttig zijn voor iedereen, maar sommige i
 
 U zult vele onderwerpen in deze reis onderzoeken. De volgende artikelen geven u grondkennis van het vertalen van de inhoud van sites in AEM en koppelen deze aan gedetailleerde technische documentatie.
 
-Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom adviseren wij als u aan vertaling in AEM nieuw bent, dat u bij het begin begint en opeenvolgend vordert.
+Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom als u in AEM nieuw aan vertaling bent, adviseert de Adobe dat u bij het begin begint en opeenvolgend vordert.
 
 | Aantal | Artikel | Beschrijving |
 |---|---|---|

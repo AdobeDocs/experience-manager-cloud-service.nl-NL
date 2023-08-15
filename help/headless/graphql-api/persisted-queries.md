@@ -1,11 +1,11 @@
 ---
 title: Blijvende GraphQL-query's
-description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
+description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten voor optimale prestaties. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1680'
 ht-degree: 1%
 
 ---
@@ -18,11 +18,11 @@ Blijvende query&#39;s zijn GraphQL query&#39;s die worden gemaakt en opgeslagen 
 >
 >Blijvende query&#39;s worden aanbevolen. Zie [Aanbevolen werkwijzen voor GraphQL-query (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) voor details, en de verwante configuratie van de Verzender.
 
-De [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is beschikbaar in AEM voor u om uw GraphQL-query&#39;s te ontwikkelen, te testen en voort te zetten voordat [overbrengen naar uw productieomgeving](#transfer-persisted-query-production). Voor gevallen die aanpassing vereisen (bijvoorbeeld wanneer [cache aanpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) u kunt de API gebruiken; zie het cURL-voorbeeld in [Een GraphQL-query laten doorgaan](#how-to-persist-query).
+De [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is beschikbaar in AEM voor u om uw GraphQL-query&#39;s te ontwikkelen, te testen en voort te zetten voordat [overbrengen naar uw productieomgeving](#transfer-persisted-query-production). Voor gevallen die aanpassing vereisen (bijvoorbeeld wanneer [cache aanpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) u de API kunt gebruiken; zie het cURL-voorbeeld in [Een GraphQL-query laten doorgaan](#how-to-persist-query).
 
 ## Blijvende query&#39;s en eindpunten {#persisted-queries-and-endpoints}
 
-De aanhoudende vragen moeten altijd het eindpunt met betrekking tot [geschikte configuratie Sites](graphql-endpoint.md); zodat ze beide of beide kunnen gebruiken:
+De aanhoudende vragen moeten altijd het eindpunt met betrekking tot [de geschikte configuratie van Plaatsen](graphql-endpoint.md); dus kunnen ze beide of beide gebruiken:
 
 * De globale configuratie en het eindpunt de vraag heeft toegang tot alle Modellen van het Fragment van de Inhoud.
 * De specifieke configuratie(s) van Plaatsen en eindpunt(s) Creërend een persisted vraag voor een specifieke configuratie van Plaatsen vereist een overeenkomstig plaats-configuratie-specifiek eindpunt (om toegang tot de verwante Modellen van het Fragment van de Inhoud te verlenen).
@@ -286,8 +286,8 @@ Hiervoor gold het volgende:
 * kan niet worden overschreven:
    * met een OSGi-configuratie
 * kan worden overschreven:
-   * door een aanvraag die HTTP-headerinstellingen definieert met cURL; het zou geschikte montages moeten omvatten voor `cache-control` en/of `surrogate-control`; voor voorbeelden , zie [Het beheren van Geheime voorgeheugen op het Aanhoudende Niveau van de Vraag](#cache-persisted-query-level)
-   * als u waarden opgeeft in het dialoogvenster **Kopteksten** dialoog [GraphiQL IDE](#http-cache-headers-graphiql-ide)
+   * door een aanvraag die HTTP-headerinstellingen definieert met cURL; deze moet geschikte instellingen bevatten voor `cache-control` en/of `surrogate-control`; voor voorbeelden, zie [Het beheren van Geheime voorgeheugen op het Aanhoudende Niveau van de Vraag](#cache-persisted-query-level)
+   * als u waarden opgeeft in het dialoogvenster **Kopteksten** de dialoog [GraphiQL IDE](#http-cache-headers-graphiql-ide)
 
 ### Exemplaren publiceren {#publish-instances}
 
@@ -302,7 +302,7 @@ Deze kunnen worden overschreven:
 
 * [van de GraphQL IDE](#http-cache-headers-graphiql-ide)
 
-* [op het niveau van de Vraag Blijven](#cache-persisted-query-level); dit impliceert het posten van de vraag aan AEM gebruikend cURL in uw interface van de bevellijn, en het publiceren van de Verlengde Vraag.
+* [op het niveau van de Vraag Blijven](#cache-persisted-query-level); dit houdt in dat de query naar AEM wordt gepost met gebruik van cURL in uw opdrachtregelinterface en dat de geplakte query wordt gepubliceerd.
 
 * [met variabelen van Cloud Manager](#cache-cloud-manager-variables)
 
@@ -365,10 +365,10 @@ De standaard configuratie OSGi voor publiceer instanties:
 
   | OSGi-configuratieeigenschap | leest dit | Variabele voor wolkenbeheer |
   |--- |--- |--- |
-  | `cacheControlMaxAge` | lezen | `graphqlCacheControl` |
-  | `surrogateControlMaxAge` | lezen | `graphqlSurrogateControl` |
-  | `surrogateControlStaleWhileRevalidate` | lezen | `graphqlStaleWhileRevalidate` |
-  | `surrogateControlStaleIfError` | lezen | `graphqlStaleIfError` |
+  | `cacheControlMaxAge` | leest | `graphqlCacheControl` |
+  | `surrogateControlMaxAge` | leest | `graphqlSurrogateControl` |
+  | `surrogateControlStaleWhileRevalidate` | leest | `graphqlStaleWhileRevalidate` |
+  | `surrogateControlStaleIfError` | leest | `graphqlStaleIfError` |
 
   {style="table-layout:auto"}
 
@@ -376,7 +376,7 @@ De standaard configuratie OSGi voor publiceer instanties:
 
 ## De antwoordcode voor de query configureren {#configuring-query-response-code}
 
-Standaard worden de `PersistedQueryServlet` verzendt `200` reactie wanneer het een vraag uitvoert, ongeacht het daadwerkelijke resultaat.
+Standaard worden de `PersistedQueryServlet` verzendt een `200` reactie wanneer het een vraag uitvoert, ongeacht het daadwerkelijke resultaat.
 
 U kunt [vorm de montages OSGi](/help/implementing/deploying/configuring-osgi.md) voor de **Configuratie van blijvende query-service** om te bepalen welke statuscode door wordt geretourneerd `/execute.json/persisted-query` eindpunt, wanneer er een fout in de persisted vraag is.
 
@@ -386,9 +386,9 @@ U kunt [vorm de montages OSGi](/help/implementing/deploying/configuring-osgi.md)
 
 Het veld `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) kan worden gedefinieerd als vereist:
 
-* `false` (standaardwaarde): Het maakt niet uit of de voortgezette query succesvol is of niet. De `/execute.json/persisted-query` retourneert de statuscode `200` en de `Content-Type` header returned is `application/json`.
+* `false` (standaardwaarde): het maakt niet uit of de voortgezette query succesvol is of niet. De `/execute.json/persisted-query` retourneert de statuscode `200` en de `Content-Type` header returned is `application/json`.
 
-* `true`: Het eindpunt zal terugkeren `400` of `500` zoals aangewezen wanneer er om het even welke vorm van fout bij het runnen van de persisted vraag is. De geretourneerde `Content-Type` is `application/graphql-response+json`.
+* `true`: Het eindpunt wordt geretourneerd `400` of `500` zoals aangewezen wanneer er om het even welke vorm van fout bij het runnen van de persisted vraag is. De geretourneerde `Content-Type` is `application/graphql-response+json`.
 
   >[!NOTE]
   >
@@ -426,11 +426,11 @@ Als u een voortgezette query in een client-app wilt gebruiken, moet de SDK van d
 
 ## Het overbrengen van een blijvende vraag aan uw milieu van de Productie  {#transfer-persisted-query-production}
 
-Verblijfsde vragen zouden altijd op de dienst van de Auteur AEM moeten worden gecreeerd en dan gepubliceerd (herhaald) aan de dienst van de Publicatie AEM. Vaak, worden de Persisted vragen gecreeerd en op lagere milieu&#39;s zoals lokale of milieu&#39;s van de Ontwikkeling getest. Het is dan noodzakelijk om Verlengde vragen aan hogere niveaumilieu&#39;s te bevorderen, die hen uiteindelijk op een productieAEM publiceren milieu voor cliënttoepassingen ter beschikking stellen om te verbruiken.
+De gepersisteerde vragen zouden altijd op de dienst van de Auteur van de AEM moeten worden gecreeerd en dan (herhaald) aan de AEM publicatiedienst worden gepubliceerd. Vaak, worden de Persisted vragen gecreeerd en op lagere milieu&#39;s zoals lokale of milieu&#39;s van de Ontwikkeling getest. Het is dan noodzakelijk om Verlengde vragen aan hogere niveaumilieu&#39;s te bevorderen, die hen uiteindelijk op een productie AEM publiceren milieu voor cliënttoepassingen ter beschikking stellen om te verbruiken.
 
 ### Voorbehouden query&#39;s verpakken
 
-De blijvende vragen kunnen in worden gebouwd [AEM](/help/implementing/developing/tools/package-manager.md). AEM pakketten kunnen vervolgens worden gedownload en geïnstalleerd in verschillende omgevingen. AEM Pakketten kunnen ook worden gerepliceerd vanuit een AEM-auteuromgeving naar een AEM-publicatieomgeving.
+De blijvende vragen kunnen in worden gebouwd [AEM](/help/implementing/developing/tools/package-manager.md). AEM pakketten kunnen vervolgens worden gedownload en geïnstalleerd in verschillende omgevingen. AEM Pakketten kunnen ook worden gerepliceerd vanuit een AEM-ontwerpomgeving naar AEM publicatieomgevingen.
 
 Een pakket maken:
 
@@ -440,7 +440,7 @@ Een pakket maken:
 1. Voer een versienummer in, bijvoorbeeld &quot;1.0&quot;.
 1. Onder **Filters** een nieuwe **Filter**. Gebruik de Finder van de Weg om te selecteren `persistentQueries` onder de configuratie. Bijvoorbeeld voor `wknd` configuratie, het volledige pad is `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tikken **Opslaan** om de nieuwe pakketdefinitie op te slaan en het dialoogvenster te sluiten.
-1. Tik op de knop **Opbouwen** in de nieuw gecreëerde definitie van het Pakket.
+1. Tik op de knop **Opbouwen** in de nieuw-gecreeerde definitie van het Pakket.
 
 Nadat het pakket is gemaakt, kunt u:
 

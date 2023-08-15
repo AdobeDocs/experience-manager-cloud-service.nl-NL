@@ -2,16 +2,16 @@
 title: Implementatiefase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de implementatiefase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '661'
 ht-degree: 2%
 
 ---
 
 # Implementatiefase in Cloud Acceleration Manager {#implementation-phase-cam}
 
-De uitvoeringsfase omvat:
+De implementatiefase omvat:
 
 * [Lokale ontwikkeling](#local-development)
 * [Herstructurering van code](#code-refactoring)
@@ -128,4 +128,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u zich kunt aanmelden bij Cloud Acceleration Manager en hoe u de Implementatiefase kunt gebruiken, bent u klaar om door te gaan met het evalueren van de volgende stap in het dialoogvenster [Actieve fase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).
+Nadat u hebt geleerd hoe u zich kunt aanmelden bij Cloud Acceleration Manager en hoe u de Implementatiefase kunt gebruiken, bent u klaar om door te gaan met de volgende stap in het dialoogvenster [Actieve fase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).

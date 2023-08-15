@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Gebruikersgroepen koppelen aan een adaptief formulier:
 1. Navigeer in de ontwerpmodus naar **Forms** > **Forms &amp; Documenten**.
 1. Selecteer een adaptief formulier met de optie **Selecteren **Selecteren en klik op **Eigenschappen weergeven**.
 1. Klik in het venster Eigenschappen van het formulier op **Bewerken** en klik vervolgens op **GEAVANCEERD**.
-1. Voer de groep in het groepsveld voor de revisorgroep voor verzending in en klik op **Gereed**.
+1. Voer de groep in het groepsveld Verzendrevisor in en klik op **Gereed**.
 
    Het groepsveld Verzendrevisor wordt weergegeven met de naam die u hebt opgegeven in het bewerkte metagegevensschema van Adaptive Forms.
 

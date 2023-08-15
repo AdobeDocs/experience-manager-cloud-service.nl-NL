@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -24,16 +24,16 @@ In dit artikel wordt uitgelegd hoe u AEM vertaalworkflow kunt gebruiken met Adap
 
 ## Een adaptief formulier en document met record lokaliseren met behulp van automatische vertaling {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-De vertaalservice zet uw inhoud direct om in Adaptief formulier en Document of Record. [!DNL AEM Forms] is vooraf geconfigureerd voor het gebruik van een proefversie van [!DNL Microsoft Translator] voor machinevertaling. Voer de volgende stappen uit om automatische vertaling in te schakelen voor uw Adaptieve Forms en Document of Record:
+De vertaalservice zet uw inhoud direct om in Adaptief formulier en Document of Record. [!DNL AEM Forms] is vooraf geconfigureerd voor het gebruik van een proefversie van [!DNL Microsoft Translator] voor automatische vertaling. Voer de volgende stappen uit om automatische vertaling in te schakelen voor uw Adaptieve Forms en Document of Record:
 
-1. Op de [!DNL AEM Forms] UI, selecteert u een formulier en tikt u op de **Woordenboek toevoegen** optie.
-1. In **Woordenboek toevoegen aan vertaalproject** scherm, selecteert u de **Een nieuw vertaalproject maken** of **Toevoegen aan een bestaand vertaalproject** optie.
+1. Op de [!DNL AEM Forms] UI, selecteert u een formulier en tikt u op **Woordenboek toevoegen** -optie.
+1. In **Woordenboek toevoegen aan vertaalproject** scherm, selecteert u de **Een nieuw vertaalproject maken** of **Toevoegen aan een bestaand vertaalproject** -optie.
 1. In de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld, `Government Reference Site - German locale.`
-1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`) en klik op **Gereed**. U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die zijn opgegeven in het dialoogvenster **Doeltalen** veld.
+1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`) en klik op **Gereed**. U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld.
 1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**. Open het nieuwe project in het scherm Projecten.
 1. Klik op de knop **ovalen** onder aan het dialoogvenster **Omzettingsoverzicht** tegel. Het scherm Translation Summary wordt geopend.
 1. Klik op de knop **Bewerken** pictogram boven aan **Omzettingsoverzicht** scherm. Open de **Vertaling** en selecteert u Machine Translation in het dialoogvenster **Omzettingsmethode** scherm. Selecteer de juiste **Vertaalbureau** en **Cloud Configuration**. Klik op de knop **Gereed** aan de bovenkant van het scherm.
-1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Start**. De status van de tegel verandert in Concept. Wanneer de vertaling is voltooid, verandert de status in **Gereed voor revisie**. Vernieuw de pagina na een paar minuten en controleer de status.
+1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Start**. De status van de tegel verandert in Concept. Na de vertaling verandert de status in **Gereed voor revisie**. Vernieuw de pagina na een paar minuten en controleer de status.
 1. Nadat de status is gewijzigd in **Gereed voor revisie** op de **Vertaaltaak** Open het formulier in een browservenster. Er wordt een gelokaliseerde versie van het formulier weergegeven.
 
    >[!NOTE]

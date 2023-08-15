@@ -2,9 +2,9 @@
 title: Werken met projectworkflows
 description: Een verscheidenheid van projectwerkschema's is beschikbaar uit de doos.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '451'
 ht-degree: 10%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 De projectworkflows die beschikbaar zijn uit het vak zijn onder andere:
 
-* **Workflow voor projectgoedkeuring** - Met deze workflow kunt u inhoud toewijzen aan een gebruiker, deze controleren en vervolgens goedkeuren.
+* **Workflow voor projectgoedkeuring** - Met deze workflow kunt u inhoud toewijzen aan een gebruiker, controleren en vervolgens goedkeuren.
 * **Verzoek starten** - Een workflow waarvoor de toepassing wordt gestart.
 * **Openingspagina aanvragen** - Voor deze workflow is een bestemmingspagina vereist.
 * **E-mail aanvragen** - Workflow voor het aanvragen van een e-mail.
@@ -32,7 +32,7 @@ Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows be
 
 >[!NOTE]
 >
->&amp;asteren; Deze workflows worden niet gestart vanuit de **Workflow** tegel in projecten. Zie [Taalkopieën voor middelen maken](/help/sites-cloud/administering/translation/managing-projects.md).
+>&amp;Laatste; deze workflows worden niet gestart vanuit de **Workflow** tegel in projecten. Zie [Taalkopieën voor middelen maken](/help/sites-cloud/administering/translation/managing-projects.md).
 
 De stappen voor het starten en voltooien van workflows zijn hetzelfde, ongeacht de workflow die u kiest. Alleen de stappen worden gewijzigd.
 
@@ -55,14 +55,14 @@ In het werkschema van de Goedkeuring van het Project, wijst u inhoud aan een geb
 
    ![Goedkeuring aanvragen](/help/sites-cloud/authoring/assets/projects-approval.png)
 
-1. Klikken **Maken**. De workflow wordt gestart. De taak wordt weergegeven in het dialoogvenster **Taken** tegel.
+1. Klikken **Maken**. De workflow wordt gestart. De taak wordt weergegeven in de **Taken** tegel.
 
 ## Verzoek indienen om workflow te starten {#request-launch-workflow}
 
 Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 
 1. Selecteer in uw Simple-project het **+**-teken in de tegel **Workflows** en selecteer **Workflow voor lancering aanvragen**.
-1. Voer een titel in voor de opstart en geef het bronpad voor de opstart op. U kunt ook een beschrijving en live datum toevoegen, indien van toepassing. Selecteer Live-gegevens van bronpagina overnemen of subpagina&#39;s uitsluiten, afhankelijk van de manier waarop u de opstart wilt laten uitvoeren.
+1. Voer een titel in voor de opstart en geef het bronpad op. U kunt ook een beschrijving en live datum toevoegen, indien van toepassing. Selecteer Live-gegevens van bronpagina overnemen of subpagina&#39;s uitsluiten, afhankelijk van de manier waarop u de opstart wilt laten uitvoeren.
 
    ![Verzoek starten](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 

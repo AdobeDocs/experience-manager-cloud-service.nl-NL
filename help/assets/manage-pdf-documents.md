@@ -4,16 +4,16 @@ description: PDF-documenten beheren in [!DNL Adobe Experience Manager] als [!DNL
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '849'
 ht-degree: 1%
 
 ---
 
 # PDF-documenten beheren in Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
 
-Experience Manager Assets kan naadloos worden geïntegreerd met de Document Cloud PDF Viewer, waardoor u meerdere pagina&#39;s van een PDF-document kunt voorvertonen. Daarnaast kunt u ook geavanceerde viewerfuncties voor PDF gebruiken, zoals annotaties, zoektekst, navigatie in het PDF-document met bladwijzers en miniaturen, enzovoort, onder hetzelfde dak. Met Experience Manager Assets kunt u ook documenten in andere ondersteunde indelingen uploaden en deze voorvertonen in een PDF-indeling.
+Experience Manager Assets kan naadloos worden geïntegreerd met de Document Cloud PDF Viewer, waarmee u meerdere pagina&#39;s van een PDF-document kunt voorvertonen. Daarnaast kunt u ook geavanceerde viewerfuncties voor PDF gebruiken, zoals annotaties, zoektekst, navigatie in het PDF-document met bladwijzers en miniaturen, enzovoort, onder hetzelfde dak. Met Experience Manager Assets kunt u ook documenten in andere ondersteunde indelingen uploaden en deze voorvertonen in een PDF-indeling.
 
 De PDF-viewer van Document Cloud profiteert AEM Assets op de volgende manieren:
 * [Ondersteuning voor PDF Document Cloud Viewer-componenten](#pdf-doc-cloud)
@@ -66,7 +66,7 @@ U kunt ook [annotaties](#pdf-annotations) op het PDF-document in een voorvertoni
 
 **PDF-annotaties{#pdf-annotations}**
 
-In Experience Manager Assets kunt u opmerkingen toevoegen aan een PDF-document. Een PDF-document kan meerdere annotaties hebben.
+Met Experience Manager Assets kunt u opmerkingen toevoegen aan een PDF-document. Een PDF-document kan meerdere annotaties hebben.
 
 Ga als volgt te werk om een PDF-document van een annotatie te voorzien:
 1. Ga naar de interface Middelen en navigeer naar het PDF-document dat u wilt annoteren. De native PDF-viewer wordt aan de rechterkant geopend en geeft een voorvertoning van het geselecteerde PDF-document weer.
@@ -126,7 +126,7 @@ Voer de volgende stappen uit voor de voorvertoning van meerdere pagina&#39;s van
 1. Voer de volgende stappen uit om [elementen uploaden in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Blader naar het document dat u wilt uploaden en bekijk een voorvertoning.
 1. Open het document.
-1. Selecteer PDF onder het statische gedeelte in het linkerdeelvenster. In het rechterdeelvenster ziet u de voorvertoning van meerdere pagina&#39;s van een element. Selecteer een miniatuur in het linkerdeelvenster om de pagina te kiezen die u wilt voorvertonen.
+1. Selecteer PDF onder het statische gedeelte in het linkerdeelvenster. In het rechterdeelvenster ziet u de voorvertoning van meerdere pagina&#39;s van een element. Selecteer een miniatuur in het linkerdeelvenster om de pagina te kiezen waarvan u een voorvertoning wilt weergeven.
 
 > OPMERKING
 > * De maximale grootte van een element waarvan u een voorbeeld kunt bekijken, is 100 MB.

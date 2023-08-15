@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1434'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021 enzovoort.
+>Van hieruit kunt u navigeren om notities van eerdere versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ De volgende release is gepland voor 15 juli 2021.
 * [!DNL Adobe Asset Link] v3.0 voor [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], en [!DNL Adobe InDesign] en [!DNL Adobe Asset Link] v2.0 voor [!DNL Adobe XD] wordt vrijgegeven. Het voorziet in:
 
    * Ondersteuning voor [!DNL Assets Essentials].
-   * Mogelijkheid om automatisch verbinding te maken met [!DNL Experience Manager] als [!DNL Cloud Service] of [!DNL Assets Essentials].
+   * Mogelijkheid om automatisch te verbinden met [!DNL Experience Manager] als [!DNL Cloud Service] of [!DNL Assets Essentials].
 
 <!-- TBD: Checking with PMs if AAE release should be mentioned here.
 -->
@@ -123,23 +123,23 @@ De volgende release is gepland voor 15 juli 2021.
 
 * Toegevoegde mogelijkheid om aangepaste kolommen in AEM Inbox te filteren.
 * Mogelijkheid toegevoegd om de themaeditor en stijllaag van een aangepaste formuliereditor te gebruiken voor het opmaken van de component captcha.
-* Verbeterde snelheid en nauwkeurigheid voor het automatisch detecteren van logische secties in de bron-PDF forms en het converteren van deze secties naar overeenkomstige adaptieve formulierdeelvensters.
+* Verbeterde snelheid en nauwkeurigheid voor het automatisch detecteren van logische secties in de PDF forms van de bron en het converteren van deze secties naar overeenkomstige adaptieve formulierdeelvensters.
 * Toegevoegde verplaatsingsactie om een PDF- of XDP-bestand van de ene map naar de andere te verplaatsen.
 
 ### Beta-functie van [!DNL Forms] {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: Via communicatie-API&#39;s kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: Met communicatie-API&#39;s kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
    * Definitieve formulierdocumenten genereren door sjabloonbestanden te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    * Afdruk-PDF genereren op basis van een XFA-formulier PDF en een Adobe Acrobat-formulier (AcroForm).
 
-* **Variabele-gegevensexternalizer**: U kunt gegevens van AEM workflowvariabelen opslaan op een extern opslagsysteem dat door uw organisatie wordt beheerd.
+* **Variabele-gegevensexternalizer**: U kunt gegevens van AEM workflowvariabelen opslaan op een extern opslagsysteem dat wordt beheerd door uw organisatie.
 
 U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het bètaprogramma.
 
 ### Buizen vastgesteld in [!DNL Forms] {#forms-bugs-fixed}
 
-* Wanneer een veld wordt gevalideerd voordat gegevens worden verzonden naar de service Back-end via het Form Data Model (FDM), slagen validaties erin, maar wordt postvalidatie niet aangeroepen door de service Form Data Model.
+* Wanneer een veld wordt gevalideerd voordat gegevens via FDM (Form Data Model) naar de service Backend worden verzonden, slagen validaties erin, maar wordt postvalidatie niet aangeroepen door de service Form Data Model.
 * Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 byte ontvangen. Dit is een bekend probleem in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Experience Manager Screens] als [!DNL Cloud Service] {#screens}
@@ -153,7 +153,7 @@ De releasedatum voor AEM Screens as a Cloud Service is 24 juni 2021.
 ### Wat is er nieuw? {#what-is-new-screens-june}
 
 >[!NOTE]
->Zie [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Handleiding voor basiskennis die vereist is voor het met succes installeren, configureren en uitvoeren van rasters as a Cloud Service en koppeling naar gedetailleerde technische documentatie.
+>Zie [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Handleiding voor basiskennis die vereist is voor het correct installeren, configureren en uitvoeren van rasters as a Cloud Service en koppeling naar gedetailleerde technische documentatie.
 
 * Bulk Device Registration Management betekent dat het provisioning van enorme hoeveelheden spelerapparaten sneller en efficiënter verloopt.
 
@@ -167,7 +167,7 @@ De releasedatum voor AEM Screens as a Cloud Service is 24 juni 2021.
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* Nieuwe CIF-product- en categoriereferentiedetypen voor inhoudsfragmenten (incl. product/categoriekiezer (ondersteuning voor gebruikersinterface)
+* Nieuwe CIF-productgegevenstypen en categoriereferenties voor inhoudsfragmenten (incl. product/categoriekiezer (ondersteuning voor gebruikersinterface)
 * New Commerce Content Fragment Core Component
 * Full-text zoekopdracht ondersteund in AEM achterkant
 * Commerce Core Components ondersteunt Adobe Commerce Sensei Recs gegevensverzameling
@@ -188,7 +188,7 @@ De releasedatum voor Content Transfer Tool v1.5.4 is 28 juni 2021.
 
 * De logboeken van de uitwinning maakten beschrijvender om met het oplossen van problemen te helpen.
 
-* Meer beschrijvende statusberichten voor inname zijn toegevoegd in de gebruikersinterface.
+* Meer beschrijvende statusberichten voor opname toegevoegd in de gebruikersinterface.
 
 ### Opgeloste problemen {#bug-fixes-ctt-latest}
 

@@ -2,9 +2,9 @@
 title: Page Diff-optie
 description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina naast elkaar kunnen vergelijken met een andere versie.
+Inhoud maken is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina naast elkaar kunnen vergelijken met een andere versie.
 
 Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijken met de gemarkeerde verschillen.
 
 >[!NOTE]
 >
->De gebruiker moet de **Wijzigen/Maken/Verwijderen** toestemming voor het knooppunt `/content/versionhistory` om de functie te gebruiken.
+>De gebruiker moet de **Wijzigen/maken/verwijderen** toestemming voor het knooppunt `/content/versionhistory` om de functie te gebruiken.
 >
 >Zie [Developing and Page Diff](/help/implementing/developing/introduction/page-diff.md#operation-details) voor meer technische details over deze functie.
 
@@ -54,7 +54,7 @@ Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd
 * Lichtgroen - component toegevoegd
 * Roze - component verwijderd
 
-**HTML wijzigen**
+**Wijzigingen in HTML**
 
 * Donkergroen - HTML toegevoegd
 * Rood - HTML verwijderd
@@ -90,7 +90,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Bij verschillende versies en lanceringen houdt diff geen rekening met dynamische componenten zoals broodkruimels, menu&#39;s, productlijsten of logo&#39;s (componenten die op de plaatsstructuur vertrouwen om hun inhoud terug te geven).
 * Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
-   * Als u problemen ondervindt met een diff, controleert u [Tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) om te zien of de pagina is verplaatst.
+   * Als u problemen ondervindt met een diff, controleert u de [Tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) om te zien of de pagina is verplaatst.
 
 >[!NOTE]
 >

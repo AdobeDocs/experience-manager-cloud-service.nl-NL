@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1399'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Er zijn een aantal vereisten voordat u begint met het vertalen van AEM inhoud.
 * Credentials om verbinding te maken met uw voorkeursvertaalservice
 * Lid zijn van de `project-administrators` groep in AEM
 
-## Hoe AEM inhoud opslaat {#content-in-aem}
+## Inhoud AEM opslaan {#content-in-aem}
 
 Voor de vertaalspecialist is het niet belangrijk om diepgaand te begrijpen hoe AEM inhoud beheert. Het is echter nuttig bekend te zijn met de basisbeginselen en -terminologie, aangezien u later AEM vertaalhulpmiddelen gebruikt. Het belangrijkste is dat u uw eigen inhoud begrijpt en hoe deze gestructureerd is om deze effectief te vertalen.
 
@@ -117,7 +117,7 @@ U kunt naar de plaatsenconsole terugkeren door terug naar dat lusje in uw browse
 
 ## Structuur is sleutel {#content-structure}
 
-AEM inhoud wordt aangestuurd door de structuur ervan. AEM stelt weinig vereisten aan de inhoudsstructuur op, maar een zorgvuldige overweging van uw inhoudshiërarchie als onderdeel van de projectplanning kan vertaling veel eenvoudiger maken.
+AEM inhoud wordt gestuurd door de structuur ervan. AEM stelt weinig vereisten aan de inhoudsstructuur op, maar een zorgvuldige overweging van uw inhoudshiërarchie als onderdeel van de projectplanning kan vertaling veel eenvoudiger maken.
 
 >[!TIP]
 >
@@ -181,9 +181,9 @@ Let op het specifieke pad van uw inhoud, omdat dit later nodig is om uw vertalin
 >
 >Het is in het algemeen de verantwoordelijkheid van de inhoudarchitect om de inhoudstructuur te definiëren, vaak in samenwerking met de vertaalspecialist.
 >
->Het wordt hier nader toegelicht om de volledigheid.
+>Het wordt hier nader toegelicht om de volledigheid te waarborgen.
 
-## AEM {#translation-tools}
+## AEM vertaalgereedschappen {#translation-tools}
 
 Nu u de de plaatsenconsole en redacteur en het belang van inhoudsstructuur begrijpt, kunnen wij bekijken hoe te om inhoud te vertalen. De vertaalhulpmiddelen in AEM zijn vrij krachtig, maar eenvoudig te begrijpen op hoog niveau.
 
@@ -195,7 +195,7 @@ U plaatst over het algemeen slechts eens uw schakelaar voor uw instantie en rege
 
 ## Volgende functies {#what-is-next}
 
-Nu u dit deel van de AEM Sites vertaalreis hebt voltooid, moet u:
+Nu u dit deel van de AEM Sites-vertaalreis hebt voltooid, moet u:
 
 * Begrijp het belang van inhoudsstructuur voor vertaling.
 * Begrijp hoe AEM inhoud opslaat.
@@ -209,5 +209,5 @@ U kunt het beste naar het volgende gedeelte van de vertaalreis gaan door het doc
 
 * [AEM basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Leer de basisbeginselen van de AEM-interface om eenvoudig door essentiële taken te kunnen navigeren en deze uit te voeren, zoals het zoeken naar uw inhoud.
 * [Te vertalen inhoud identificeren](/help/sites-cloud/administering/translation/rules.md) - Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.
-* [Het framework voor vertaalintegratie configureren](/help/sites-cloud/administering/translation/integration-framework.md) - Leer hoe u het vertaalintegratieframework kunt configureren voor integratie met externe vertaalservices.
+* [Het Kader voor de Integratie van de Vertaling vormen](/help/sites-cloud/administering/translation/integration-framework.md) - Leer hoe u het vertaalintegratieframework kunt configureren voor integratie met vertaalservices van derden.
 * [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md) - Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM kunt maken en beheren.

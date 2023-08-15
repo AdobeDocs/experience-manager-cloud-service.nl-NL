@@ -6,9 +6,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 2%
 
 ---
@@ -44,11 +44,11 @@ Als de toewijzing automatisch het voorvoegsel toevoegt `/content` tot `/we-retai
 
 De toewijzingen uit twee lijsten die de Resolver van het Middel JCR (top-down) evalueert om een gelijke te vinden.
 
-Deze lijsten kunnen (samen met configuratiegegevens) onder de **JCR ResourceResolver** optie van de Felix-console; bijvoorbeeld: `https://<*host*>:<*port*>/system/console/jcrresolver`:
+Deze lijsten kunnen (samen met configuratiegegevens) onder de **JCR ResourceResolver** optie van de Felix-console, bijvoorbeeld `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
 * De configuratie toont de huidige configuratie (zoals die voor [Resolver Apache Sling-resource](/help/overview/seo-and-url-management.md#etc-map)).
 
-* De Test van de configuratie dit staat u toe om een URL of middelweg in te gaan. Klikken **Oplossen** of **Kaart** om te bevestigen hoe het systeem de ingang transformeert.
+* De Test van de configuratie dit laat u een URL of middelweg ingaan. Klikken **Oplossen** of **Kaart** om te bevestigen hoe het systeem de ingang transformeert.
 
 * **Resolver Map-items**
 De lijst van ingangen die door de methodes ResourceResolver.resolve worden gebruikt om URLs aan Middelen in kaart te brengen.
@@ -56,7 +56,7 @@ De lijst van ingangen die door de methodes ResourceResolver.resolve worden gebru
 * **Toewijzingskaartitems**
 De lijst van ingangen die door de methodes ResourceResolver.map worden gebruikt om de Wegen van het Middel aan URLs in kaart te brengen.
 
-De twee lijsten tonen verschillende ingangen, met inbegrip van die ingangen die als gebreken door de toepassingen worden bepaald. Deze vermeldingen zijn vaak bedoeld om URL&#39;s voor de gebruiker te vereenvoudigen.
+De twee lijsten tonen verschillende ingangen, met inbegrip van die ingangen die als gebreken door de toepassingen worden bepaald. Deze ingangen zijn vaak bedoeld om URLs voor de gebruiker te vereenvoudigen.
 
 De lijsten vormen een paar **Patroon**, een reguliere expressie die overeenkomt met de aanvraag, met een **Vervanging** Hiermee definieert u de omleiding die moet worden toegepast.
 
@@ -90,7 +90,7 @@ In een standaardinstallatie van AEM kunt u de map vinden:
 
 Deze map is de structuur die wordt gebruikt bij het definiëren van toewijzingen voor het HTTP-protocol. Overige mappen ( `sling:Folder`) kan worden gemaakt onder `/etc/map` voor andere protocollen die u in kaart wilt brengen.
 
-#### Het vormen van Interne Redirect aan /content {#configuring-an-internal-redirect-to-content}
+#### Het vormen van Intern Redirect aan /content {#configuring-an-internal-redirect-to-content}
 
 Om de afbeelding tot stand te brengen die om het even welk verzoek aan https://localhost:4503/ met prefixen `/content`:
 

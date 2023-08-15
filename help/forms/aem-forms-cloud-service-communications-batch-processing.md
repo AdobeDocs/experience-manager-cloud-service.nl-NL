@@ -2,22 +2,22 @@
 title: Experience Manager [!DNL Forms] Batchverwerking voor as a Cloud Service communicatie
 description: Hoe te om merkgeoriënteerde en gepersonaliseerde mededelingen tot stand te brengen?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
 
 # Batchverwerking gebruiken
 
-Met behulp van communicatie kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, claimverwerkingsbrieven, aankondigingen van voordelen, claimverwerkingsbrieven, maandelijkse facturen en welkomstkits. U kunt Communicatie APIs gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, DPL, IPL, en ZPL formaten te produceren.
+Met communicatiemiddelen kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, claimverwerkingsbrieven, aankondigingen van voordelen, aanvraagverwerkingsbrieven, maandelijkse facturen en welkomstkits. U kunt Communicatie APIs gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, DPL, IPL, en ZPL formaten te produceren.
 
 De mededelingen verstrekken APIs voor het op bestelling en geplande documentgeneratie. U kunt synchrone API&#39;s voor asynchrone API&#39;s (Asynchrone API&#39;s) voor het genereren van geplande documenten gebruiken:
 
-* Synchrone API&#39;s zijn geschikt voor gebruik op aanvraag, met lage latentie en het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op gebruikersacties. Het genereren van een document bijvoorbeeld nadat een gebruiker een formulier heeft ingevuld.
+* Synchrone API&#39;s zijn geschikt voor gebruik op aanvraag, met lage latentie en het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op handelingen van gebruikers. Het genereren van een document bijvoorbeeld nadat een gebruiker een formulier heeft ingevuld.
 
-* Batch-API&#39;s (Asynchrone API&#39;s) zijn geschikt voor geplande toepassingen waarbij meerdere documenten met hoge doorvoer worden gegenereerd. Deze API&#39;s genereren documenten batchgewijs. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
+* Batch-API&#39;s (Asynchrone API&#39;s) zijn geschikt voor geplande toepassingen waarbij meerdere documenten met hoge doorvoer worden gegenereerd. Met deze API&#39;s worden documenten batchgewijs gegenereerd. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
 
 <!-- The following skills are required to create templates and use HTTP APIs: 
 
@@ -30,17 +30,17 @@ De mededelingen verstrekken APIs voor het op bestelling en geplande documentgene
 
 ## Batchbewerkingen {#batch-operations}
 
-Een batchbewerking is een proces waarbij meerdere documenten van een vergelijkbaar type voor een set records met geplande intervallen worden gegenereerd. Een batchbewerking bestaat uit twee delen: Configuratie (definitie) en uitvoering.
+Een batchbewerking is een proces waarbij meerdere documenten van een vergelijkbaar type voor een set records met geplande intervallen worden gegenereerd. Een batchbewerking bestaat uit twee onderdelen: Configuratie (definitie) en uitvoering.
 
-* **Configuratie (definitie)**: In een batchconfiguratie wordt informatie over diverse elementen en eigenschappen opgeslagen die voor gegenereerde documenten moeten worden ingesteld. Bijvoorbeeld, verstrekt het details over het malplaatje XDP of PDF en de plaats van klantengegevens aan gebruik samen met het specificeren van diverse eigenschappen voor outputdocumenten.
+* **Configuratie (definitie)**: Een batchconfiguratie slaat informatie op over diverse elementen en eigenschappen die moeten worden ingesteld voor gegenereerde documenten. Bijvoorbeeld, verstrekt het details over het malplaatje XDP of PDF en de plaats van klantengegevens aan gebruik samen met het specificeren van diverse eigenschappen voor outputdocumenten.
 
 * **Uitvoering**: Als u een batchbewerking wilt starten, geeft u de naam van de batchconfiguratie door aan de API voor batchuitvoering.
 
 ### Componenten van een batchbewerking {#components-of-a-batch-operations}
 
-**Cloudconfiguratie**: Met de configuratie Experience Manger Cloud kunt u een Experience Manager-exemplaar aansluiten op Microsoft Azure Storage in eigendom van klanten. Hiermee kunt u de referenties opgeven waarmee Microsoft Azure-account bij een klant verbinding kan maken.
+**Cloud-configuratie**: Dankzij de configuratie Experience Manger Cloud kunt u een Experience Manager-exemplaar aansluiten op Microsoft Azure Storage in eigendom van klanten. Hiermee kunt u de referenties opgeven waarmee Microsoft Azure-account bij een klant verbinding kan maken.
 
-**Configuratie gegevensopslag in batch (USC)**: Met de configuratie van batchgegevens kunt u een specifieke instantie van blob-opslag configureren voor batch-API&#39;s. Hiermee kunt u de invoer- en uitvoerlocaties opgeven in Microsoft Azure Blob-opslag die eigendom is van klanten.
+**Configuratie gegevensopslag in batch (USC)**: Met de configuratie van batchgegevens kunt u een specifiek exemplaar van Blob-opslag configureren voor batch-API&#39;s. Hiermee kunt u de invoer- en uitvoerlocaties opgeven in de Microsoft Azure Blob-opslag die eigendom is van de klant.
 
 **Batch-API&#39;s**: Hiermee kunt u batchconfiguraties maken en de batchbewerkingen op basis van deze configuraties uitvoeren om een PDF- of XDP-sjabloon samen te voegen met gegevens en uitvoer te genereren in de indelingen PDF, PS, PCL, DPL, IPL en ZPL. De mededelingen verstrekken partij APIs voor configuratiebeheer en partijuitvoering.
 
@@ -48,7 +48,7 @@ Een batchbewerking is een proces waarbij meerdere documenten van een vergelijkba
 
 **Opslag**: Communicatie-API&#39;s maken gebruik van Microsoft Azure Cloud-opslag die eigendom is van klanten, om klantgegevens op te halen en gegenereerde documenten op te slaan. U configureert Microsoft Azure Storage in Experience Manager Cloud Service Configuration.
 
-**App**: Uw aangepaste toepassing om de batch-API&#39;s te gebruiken voor het genereren en gebruiken van documenten.
+**App**: De aangepaste toepassing waarmee u de batch-API&#39;s kunt gebruiken voor het genereren en gebruiken van documenten.
 
 ## Meerdere documenten genereren met behulp van batchbewerkingen {#generate-multiple-documents-using-batch-operations}
 
@@ -56,7 +56,7 @@ U kunt batchbewerkingen gebruiken om meerdere documenten met een gepland interva
 
 >[!VIDEO](https://video.tv.adobe.com/v/338349)
 
-U kunt de video bekijken of de onderstaande instructies uitvoeren om te leren hoe u documenten kunt genereren met behulp van batchbewerkingen. De API-naslagdocumentatie die in video wordt gebruikt, is beschikbaar in de indeling .yaml. U kunt de [Batch-API&#39;s](assets/batch-api.yaml) bestand maken en uploaden naar Postman om de functionaliteit van API&#39;s te controleren en de video te volgen.
+U kunt de video bekijken of de onderstaande instructies uitvoeren om te leren hoe u documenten kunt genereren met behulp van batchbewerkingen. De API verwijzingsdocumentatie die in video wordt gebruikt is beschikbaar in het formaat .yaml. U kunt de [Batch-API&#39;s](assets/batch-api.yaml) bestand maken en uploaden naar Postman om de functionaliteit van API&#39;s te controleren en de video te volgen.
 
 ### Voorwaarden {#pre-requisites}
 
@@ -87,7 +87,7 @@ Maak op uw Microsoft Azure Storage [containers](https://docs.microsoft.com/en-us
 
 Met de cloudconfiguratie wordt uw Experience Manager-instantie verbonden met Microsoft Azure Storage. Een cloudconfiguratie maken:
 
-1. Ga naar Gereedschappen > Cloud Services > Azure Storage
+1. Ga naar Extra > Cloud Servicen > Azure Storage
 1. Open een map als host voor de configuratie en klik op Maken. U gebruikt de algemene map of maakt een map.
 1. Geef een naam op voor de configuratie en referenties waarmee u verbinding wilt maken met de service. U kunt [deze gegevens ophalen van uw Microsoft Azure Storage portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
 1. Klik op Maken.
@@ -129,9 +129,9 @@ Als u een batch wilt maken, gebruikt u de opdracht `POST /config` API. Neem de v
 
 * **configName**: Geef de unieke naam van de batch op. Bijvoorbeeld, `wknd-job`
 * **dataSourceConfigUri**: Geef de locatie van de configuratie Batch Data Store op. Het kan relatieve of absolute weg van de configuratie zijn. Bijvoorbeeld: `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**: Uitvoerindelingen opgeven: PDF en AFDRUKKEN. Als u het uitvoertype PRINT gebruikt, kunt u `printedOutputOptionsList` -eigenschap, geeft u ten minste één afdrukoptie op. De afdrukopties worden bepaald door hun rendertype, zodat er momenteel geen meerdere afdrukopties met hetzelfde rendertype zijn toegestaan. De ondersteunde indelingen zijn PS, PCL, DPL, IPL en ZPL.
+* **outputTypes**: Geef uitvoerindelingen op: PDF en PRINT. Als u het uitvoertype PRINT gebruikt, kunt u `printedOutputOptionsList` -eigenschap, geeft u ten minste één afdrukoptie op. De afdrukopties worden bepaald door hun rendertype, zodat er momenteel geen meerdere afdrukopties met hetzelfde rendertype zijn toegestaan. De ondersteunde indelingen zijn PS, PCL, DPL, IPL en ZPL.
 
-* **template**: Geef een absoluut of relatief pad van de sjabloon op. Bijvoorbeeld, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
+* **template**: Geef het absolute of relatieve pad van de sjabloon op. Bijvoorbeeld, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
 Als u een relatief pad opgeeft, moet u ook een basisinhoud opgeven. Zie API-documentatie voor meer informatie over de hoofdmap van de inhoud.
 
@@ -158,12 +158,11 @@ Het antwoord op het statusverzoek bevat de statussectie. Het verstrekt details o
 >* Wanneer u meerdere PRINT-indelingen aanvraagt, bevat de status meerdere items. Bijvoorbeeld PRINT/ZPL, PRINT/IPL.
 >* Een batchtaak leest niet alle records tegelijk, maar de taak blijft het aantal records lezen en verhogen. De status retourneert dus -1 totdat alle records zijn gelezen.
 
-
 ### Gegenereerde documenten weergeven {#view-generated-documents}
 
-Nadat de taak is voltooid, worden de gegenereerde documenten opgeslagen in de `success` map op de doellocatie die is opgegeven in de configuratie Batch Data Store. Als er om het even welke fouten zijn, leidt de dienst tot een `failure` map. Het verstrekt informatie over het type en de reden van fouten.
+Nadat de taak is voltooid, worden de gegenereerde documenten opgeslagen in de `success` map op de doellocatie die is opgegeven in de configuratie Batch Data Store. Als er om het even welke fouten zijn, leidt de dienst tot `failure` map. Het verstrekt informatie over het type en de reden van fouten.
 
-Laten we het met behulp van een voorbeeld begrijpen: Stel dat er een invoergegevensbestand is `record1.xml` en twee uitvoertypen: `PDF` en `PCL`. De doellocatie bevat vervolgens twee submappen `pdf` en `pcl`, één voor elk uitvoertype. Laten we aannemen dat de generatie PDF is gelukt, dan de `pdf` submap bevat de `success` submap die op zijn beurt het gegenereerde PDF-document bevat `record1.pdf`. Laten we aannemen dat PCL-generatie is mislukt. `pcl` submap bevat een `failure` submap die op zijn beurt een foutbestand bevat `record1.error.txt` bevat details over de fout. Daarnaast bevat de doellocatie een tijdelijke map met de naam `__tmp__` die bepaalde bestanden bevat die vereist zijn tijdens de uitvoering van de batch. Deze map kan worden verwijderd als er geen actieve batchbewerkingen zijn die verwijzen naar de doelmap.
+Laten we het met behulp van een voorbeeld begrijpen: aannemen dat er een invoergegevensbestand is `record1.xml` en twee uitvoertypen: `PDF` en `PCL`. De doellocatie bevat vervolgens twee submappen `pdf` en `pcl`, één voor elk uitvoertype. Laten we aannemen dat de generatie van PDF is gelukt, dan de `pdf` submap bevat de `success` submap die op zijn beurt het daadwerkelijk gegenereerde PDF-document bevat `record1.pdf`. Laten we aannemen dat PCL-generatie is mislukt. `pcl` submap bevat een `failure` submap die op zijn beurt een foutbestand bevat `record1.error.txt` bevat details over de fout. Daarnaast bevat de doellocatie een tijdelijke map met de naam `__tmp__` die bepaalde bestanden bevat die vereist zijn tijdens de uitvoering van de batch. Deze map kan worden verwijderd als er geen actieve batchbewerkingen zijn die verwijzen naar de doelmap.
 
 >[!NOTE]
 >

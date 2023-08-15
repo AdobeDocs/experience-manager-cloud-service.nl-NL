@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2039'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Voordat u relationele databases configureert met [!DNL Experience Manager] Webco
 
 ### Stappen om relationele database te configureren
 
-U kunt relationele databases configureren met [!DNL Experience Manager] Webconsoleconfiguratie. Ga als volgt te werk:
+U kunt relationele databases configureren met [!DNL Experience Manager] Webconsole-configuratie. Ga als volgt te werk:
 
 1. Ga naar [!DNL Experience Manager] webconsole op `https://server:host/system/console/configMgr`.
 1. Zoeken **[!UICONTROL Day Commons JDBC Connections Pools]** configuratie. Tik om de configuratie te openen in de bewerkingsmodus.
@@ -55,7 +55,7 @@ U kunt relationele databases configureren met [!DNL Experience Manager] Webconso
 
    * Java™-klassenaam voor het JDBC-stuurprogramma
    * URI voor JDBC-verbinding
-   * Gebruikersnaam en wachtwoord om verbinding te maken met het JDBC-stuurprogramma
+   * Gebruikersnaam en wachtwoord voor verbinding met het JDBC-stuurprogramma
    * Geef een SQL SELECT-query op in het dialoogvenster **[!UICONTROL Validation Query]** veld voor het valideren van verbindingen vanuit de pool. De query moet ten minste één rij retourneren. Geef op basis van uw database een van de volgende opties op:
       * SELECT 1 (MySQL en MS SQL)
       * SELECTEER 1 uit twee items (Oracle)
@@ -122,7 +122,7 @@ De map configureren voor configuraties van cloudservices:
 
 ## RESTful-webservices configureren {#configure-restful-web-services}
 
-RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https://swagger.io/specification/v2/) in JSON- of YAML-indeling in een [!DNL Swagger] definitiebestand. RESTful-webservice configureren in [!DNL Experience Manager] as a Cloud Service, zorg ervoor dat u of [!DNL Swagger] file ([Versie 2.0](https://swagger.io/specification/v2/)) of [!DNL Swagger] file ([Tagvormige versie 3.0](https://swagger.io/specification/v3/)) op uw bestandssysteem of de URL waar het bestand wordt gehost.
+RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https://swagger.io/specification/v2/) in JSON- of YAML-indeling in een [!DNL Swagger] definitiebestand. RESTful-webservice configureren in [!DNL Experience Manager] as a Cloud Service, zorg ervoor dat u of [!DNL Swagger] file ([Versie 2.0](https://swagger.io/specification/v2/)) of [!DNL Swagger] file ([Tagvormige versie 3.0](https://swagger.io/specification/v3/)) op uw bestandssysteem of op de URL waar het bestand wordt gehost.
 
 ### RESTful-services configureren voor Open API Specification versie 2.0 {#configure-restful-services-open-api-2.0}
 
@@ -136,9 +136,9 @@ RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https:
    * Selecteer URL of Bestand in het menu [!UICONTROL Swagger Source] vervolgkeuzelijst en geeft dienovereenkomstig de [!DNL Swagger URL] aan de[!DNL  Swagger] definitiebestand uploaden of [!DNL Swagger] van uw lokale bestandssysteem.
    * Op basis van de[!DNL  Swagger] Broninvoer. De volgende velden zijn vooraf ingevuld met waarden:
 
-      * Schema: De overdrachtprotocollen die door REST API worden gebruikt. Het aantal schematypen dat in de drop-down lijst toont hangt van de regelingen af die in worden bepaald [!DNL Swagger] bron.
-      * Host: De domeinnaam of het IP-adres van de host die de REST API aanbiedt. Het is een verplicht veld.
-      * Basispad: Het URL-voorvoegsel voor alle API-paden. Het is een optioneel veld.\
+      * Schema: de overdrachtprotocollen die door de REST API worden gebruikt. Het aantal schematypen dat in de drop-down lijst toont hangt van de regelingen af die in worden bepaald [!DNL Swagger] bron.
+      * Host: de domeinnaam of het IP-adres van de host die de REST API aanbiedt. Het is een verplicht veld.
+      * Basispad: het URL-voorvoegsel voor alle API-paden. Het is een optioneel veld.\
         Bewerk indien nodig de vooraf ingevulde waarden voor deze velden.
 
    * Selecteer het verificatietype: None, OAuth2.0([Autorisatiecode](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, of Custom Authentication — om toegang te krijgen tot de RESTful-service en dienovereenkomstig gegevens te verstrekken voor verificatie.
@@ -147,7 +147,7 @@ RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https:
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst tot stand te brengen.
+1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst te creëren.
 
 ### RESTful-services configureren voor Open API Specification versie 3.0 {#configure-restful-services-open-api-3.0}
 
@@ -166,7 +166,7 @@ RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https:
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst tot stand te brengen.
+1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst te creëren.
 
 Sommige bewerkingen die niet worden ondersteund door RESTful-services Open API Specification versie 3.0 zijn:
 * Callbacks
@@ -189,7 +189,7 @@ Stel de volgende eigenschappen van de **[!UICONTROL Form Data Model HTTP Client 
 
 * Gebruik de `http.connection.keep.alive.duration` eigenschap om de duur op te geven waarvoor een blijvende HTTP-verbinding in leven wordt gehouden. De standaardwaarde is 15 seconden.
 
-* Gebruik de `http.connection.timeout` eigenschap om de duur op te geven waarvoor [!DNL Experience Manager Forms] server wacht tot een verbinding tot stand is gebracht. De standaardwaarde is 10 seconden.
+* Gebruik de `http.connection.timeout` eigenschap om de duur op te geven waarvoor de [!DNL Experience Manager Forms] server wacht tot een verbinding tot stand is gebracht. De standaardwaarde is 10 seconden.
 
 * Gebruik de `http.socket.timeout` eigenschap om de maximale periode voor inactiviteit tussen twee gegevenspakketten op te geven. De standaardwaarde is 30 seconden.
 
@@ -217,7 +217,7 @@ In het volgende JSON-bestand wordt een voorbeeld weergegeven:
 
    * Geef de duur op, gedurende welke een blijvende HTTP-verbinding in leven blijft in het dialoogvenster **[!UICONTROL Keep alive]** veld. De standaardwaarde is 15 seconden.
 
-   * Geef de duur op waarvoor de [!DNL Experience Manager Forms] server wacht tot een verbinding tot stand is gebracht, in het dialoogvenster **[!UICONTROL Connection timeout]** veld. De standaardwaarde is 10 seconden.
+   * Geef de duur op waarvoor de [!DNL Experience Manager Forms] server wacht tot een verbinding tot stand is gebracht, in de **[!UICONTROL Connection timeout]** veld. De standaardwaarde is 10 seconden.
 
    * Geef de maximale periode voor inactiviteit op tussen twee gegevenspakketten in het dialoogvenster **[!UICONTROL Socket timeout]** veld. De standaardwaarde is 30 seconden.
 
@@ -247,7 +247,7 @@ Om op SOAP-Gebaseerde Webdienst te vormen binnen [!DNL Experience Manager] as a 
 
 ### Het gebruik van importinstructies in SOAP-webservices WSDL inschakelen {#enable-import-statements}
 
-U kunt een reguliere expressie opgeven die fungeert als filter voor absolute URL&#39;s die zijn toegestaan als importinstructies in de WSDL van SOAP-webservices. Standaard is er geen waarde in dit veld. Dientengevolge [!DNL Experience Manager] blokkeert alle importinstructies die beschikbaar zijn in WSDL. Als u `.*` als waarde in dit veld, [!DNL Experience Manager] staat alle instructies import toe.
+U kunt een reguliere expressie opgeven die fungeert als filter voor absolute URL&#39;s die zijn toegestaan als importinstructies in de WSDL van SOAP-webservices. Standaard is er geen waarde in dit veld. Dientengevolge, [!DNL Experience Manager] blokkeert alle importinstructies die beschikbaar zijn in WSDL. Als u `.*` als waarde in dit veld, [!DNL Experience Manager] staat alle instructies import toe.
 
 Stel de `importAllowlistPattern` eigendom van de **[!UICONTROL Form Data Model SOAP Web Services Import Allowlist]** configuratie om de reguliere expressie op te geven. In het volgende JSON-bestand wordt een voorbeeld weergegeven:
 

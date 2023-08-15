@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021, enzovoort.
+>Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -34,10 +34,10 @@ Kijk eens naar de [Overzicht release augustus 2021](https://video.tv.adobe.com/v
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* Wanneer gebruikers digitale elementen delen als een koppeling, kunnen ze de URL direct naar het klembord kopiëren. Dankzij deze verbetering kunt u elementen sneller en gemakkelijker delen. Dankzij deze functionaliteit kunt u sneller en handig elementen delen.
+* Wanneer gebruikers digitale elementen delen als een koppeling, kunnen ze de URL direct naar het klembord kopiëren. Dankzij deze verbetering kunt u elementen sneller en handiger delen. Dankzij deze functionaliteit kunt u sneller en handig elementen delen.
 
   ![De optie URL kopiëren wanneer een element wordt gedeeld als een koppeling](/help/assets/assets/link-share-copy-URL-option.png)
-  *Afbeelding: Wanneer u een element deelt als een koppeling, kunt u de URL nu kopiëren en afzonderlijk delen.*
+  *Afbeelding: wanneer u een element deelt als een koppeling, kunt u de URL nu kopiëren en afzonderlijk delen.*
 
 * Wanneer u TXT-bestanden uploadt, genereert de elementmicroservices automatisch een miniatuur. De PNG-miniatuur is een uitvoering van het TXT-bestand waarmee gebruikers de inhoud of de bestanden tot op zekere hoogte kunnen identificeren zonder de bestanden te openen. Deze functionaliteit vereist geen configuratie en werkt standaard.
 
@@ -53,7 +53,7 @@ Kijk eens naar de [Overzicht release augustus 2021](https://video.tv.adobe.com/v
 
 ### Buizen vastgesteld in [!DNL Assets] {#assets-bugs-fixed}
 
-* Wanneer een lid van de contributiegroep naar de [!DNL Assets] Console, een extra `POST` Er wordt een aanvraag gegenereerd om een verzameling te maken. Dit verzoek is niet vereist; het ontbreekt vanwege problemen met machtigingen en het veroorzaakt veel fouten in de logbestanden. (CQ-4328856)
+* Wanneer een lid van de contributiegroep naar de [!DNL Assets] Console, een extra `POST` Er wordt een aanvraag gegenereerd om een verzameling te maken. Dit verzoek is niet vereist. Het mislukt vanwege problemen met machtigingen en het leidt tot veel fouten in de logbestanden. (CQ-4328856)
 * Wanneer gebruikers een element weergeven en de optie [!UICONTROL Timeline] in het pop-upmenu in het linkerdeelvenster wordt een fout weergegeven. In de logboeken, worden vele waarschuwingen geregistreerd toe te schrijven aan een slechte vraag. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
@@ -62,7 +62,7 @@ Kijk eens naar de [Overzicht release augustus 2021](https://video.tv.adobe.com/v
 
 * De service automatede form conversion kan [PDF forms converteren naar Italiaans en Portugees](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) naar Adaptive Forms.
 
-* **Op acroform gebaseerd document of record**: as a Cloud Service AEM Forms-ondersteuning gebruiken [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als een sjabloon voor Document of Record naast XFA-formuliersjabloon.
+* **Op acroform gebaseerd document of record**: as a Cloud Service AEM Forms-ondersteuning voor [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als een sjabloon voor Document of Record naast XFA-formuliersjabloon.
 
 * **Microsoft Azure Data Store-connector**: U kunt nu [Formuliergegevensmodel verbinden met Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft Azure Storage als een BLOB.
 
@@ -70,9 +70,9 @@ Kijk eens naar de [Overzicht release augustus 2021](https://video.tv.adobe.com/v
 
 * **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt nu elke ontvanger van de overeenkomst inschakelen om zijn rol in een adaptief formulier te configureren, waarbij ondertekenaar de standaardrol is.
 
-* **Analyses voor Adaptive Forms**: U kunt het gedrag van de eindgebruiker nu vastleggen en volgen via Adobe Analytics for Adaptive Forms om inzichten van de eindgebruiker te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+* **Analyses voor Adaptive Forms**: U kunt nu het gedrag van eindgebruikers vastleggen en bijhouden via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
-* **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce.com**: De dienst verstrekt uit de doos gegevensbronconfiguratie en gegevensmodellen voor de Dynamica van Microsoft en Salesforce.com, die het voor ontwikkelaars sneller en gemakkelijker maken om de Dynamica van Microsoft en Salesforce.com als gegevensbronnen voor een adaptieve vorm te vormen.
+* **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce.com**: De service biedt vanuit de box-configuratie van gegevensbronnen en gegevensmodellen voor Microsoft Dynamics en Salesforce.com, zodat ontwikkelaars Microsoft Dynamics en Salesforce.com sneller en eenvoudiger kunnen configureren als gegevensbronnen voor een adaptieve vorm.
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
@@ -132,4 +132,4 @@ De releasedatum voor Content Transfer Tool v1.5.6 is 11 augustus 2021.
 
 * De **Inscriptie stoppen** werd uitgeschakeld tijdens het toevoegen aan de instantie Publiceren. Dit is niet nodig omdat er geen stap voor het herstellen van het mongo is tijdens de opname van Publiceren.
 
-* De CTT heeft de `/tmp` map na een geslaagde extractie. Dit leidde soms tot problemen met schijfruimte.
+* De CTT heeft de `/tmp` map na een extractie. Dit leidde soms tot problemen met schijfruimte.

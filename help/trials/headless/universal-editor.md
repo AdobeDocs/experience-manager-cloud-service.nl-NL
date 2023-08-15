@@ -3,9 +3,9 @@ title: Bewerken in context
 description: Ontdek hoe u de Universal Editor kunt gebruiken om alle aspecten van uw inhoud op hun plaats en in context in een implementatie te bewerken.
 hidefromtoc: true
 index: false
-source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Het op plaats en in context bewerken kan vaak voordelig zijn in vergelijking met
 
 Met de Universal Editor kunt u tekst op een flexibele manier in context en op zijn plaats bewerken, zodat u eenvoudig en intuïtief inhoud kunt ontwerpen.
 
-1. De editor moet standaard worden geladen in **Tekst** in. Als dat niet het geval is, tikt u of klikt u op de knop **Tekst** pictogram in de modusrail links van de editor.
+1. De editor moet standaard in **Tekst** -modus. Als dat niet het geval is, tikt u op de knop **Tekst** pictogram in de modusrail links van de redacteur.
 
 1. Tik of klik op de titel van het meest recente artikel om dit te bewerken.
 
@@ -78,11 +78,11 @@ Met de Universal Editor kunt u in de context van de editor communiceren met uw i
 
 1. Standaard rendert de editor de bureaubladversie van uw inhoud. Tik of klik op de emulatorknop rechtsboven in de editor om het doelapparaat te wijzigen.
 
-   ![Het menu-item emulator](assets/do-not-localize/ue-emulator-1.png)
+   ![Het menu-item Emulator](assets/do-not-localize/ue-emulator-1.png)
 
 1. Readers kunnen zich op verschillende apparaten met verschillende hoogte-breedteverhoudingen bevinden, zodat de editor emulatiemodi aanbiedt om te zien hoe de pagina aan gebruikers wordt weergegeven. Selecteer bijvoorbeeld de optie Mobiel apparaat in de staande modus.
 
-   ![Het menu-item emulator](assets/do-not-localize/ue-emulator-3.png)
+   ![Het menu-item Emulator](assets/do-not-localize/ue-emulator-3.png)
 
 1. Zie de inhoudswijziging in de editor. Het pictogram voor de emulator verandert ook om de modus aan te geven waarin deze zich bevindt. Tik of klik ergens buiten het emulatormenu om het te sluiten en te communiceren met de inhoud.
 
@@ -116,7 +116,7 @@ Als u het schrijven van inhoud wilt versnellen terwijl het gestructureerd bewerk
 
 1. Verschuiven verder omlaag op de pagina naar de **avonturen** sectie.
 
-1. Selecteer in de modus rail links van de editor de optie **Componenten**. Op deze manier kunt u paginacomponenten selecteren in de editor.
+1. Selecteer in de modus rail aan de linkerkant van de editor de optie **Componenten**. Hiermee kunt u paginacomponenten in de editor selecteren.
 
 1. Tik of klik op een van de avonturen om deze te selecteren.
 

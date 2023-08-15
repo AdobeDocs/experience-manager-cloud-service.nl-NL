@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Meer informatie over Inhoud zoeken en indexeren in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2324'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Wijzigingen in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Met AEM as a Cloud Service, beweegt Adobe zich weg van een AEM instantie-centric model aan een op dienst-gebaseerde mening met n-x AEM Containers, die door CI/CD pijpleidingen in de Manager van de Wolk wordt gedreven. In plaats van het vormen van en het handhaven van Indexen op enige AEM instanties, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als niet nader aangegeven, getest en opnieuw geïndexeerd voordat deze in productie worden genomen.
+Met AEM as a Cloud Service, beweegt de Adobe zich van een AEM instantie-centric model aan een op dienst-gebaseerde mening met n-x AEM Containers, die door CI/CD pijpleidingen in de Manager van de Wolk wordt gedreven. In plaats van het vormen van en het handhaven van Indexen op enige AEM instanties, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als niet nader aangegeven, getest en opnieuw geïndexeerd voordat deze in productie worden genomen.
 
 Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 6.5 en eerdere versies:
 
@@ -31,7 +31,7 @@ Beperkingen:
 
 * Indexbeheer op AEM as a Cloud Service wordt momenteel alleen ondersteund voor indexen van het type `lucene`.
 * Alleen standaardanalysatoren worden ondersteund (dat wil zeggen de analysatoren die bij het product worden geleverd). Aangepaste analysatoren worden niet ondersteund.
-* Intern, zouden andere indexen voor vragen kunnen worden gevormd en worden gebruikt. Bijvoorbeeld, vragen die tegen `damAssetLucene` De index zou, op Skyline, in feite tegen een versie van Elasticsearch van deze index kunnen worden uitgevoerd. Dit verschil is doorgaans niet zichtbaar voor de toepassing en de gebruiker, maar voor bepaalde gereedschappen, zoals de `explain` een andere index rapporteren. Voor verschillen tussen Lucene-indexen en Elastic-indexen raadpleegt u [de Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten hoeven en kunnen Elasticsearch-indexen niet rechtstreeks configureren.
+* Intern, zouden andere indexen voor vragen kunnen worden gevormd en worden gebruikt. Bijvoorbeeld, vragen die tegen `damAssetLucene` De index zou, op Skyline, in feite tegen een versie van de Elasticsearch van deze index kunnen worden uitgevoerd. Dit verschil is doorgaans niet zichtbaar voor de toepassing en de gebruiker, maar voor bepaalde gereedschappen, zoals de `explain` een andere index rapporteren. Voor verschillen tussen Lucene-indexen en Elastic-indexen raadpleegt u [de Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten hoeven en kunnen Elasticsearch-indexen niet rechtstreeks configureren.
 * Zoeken op vergelijkbare vakvectoren (`useInSimilarity = true`) wordt niet ondersteund.
 
 ## Het gebruik {#how-to-use}
@@ -287,7 +287,7 @@ Het versienummer wordt telkens verhoogd wanneer de index wordt gewijzigd. Als u 
 
 ### Wijzigingen in indexen buiten de box {#changes-to-out-of-the-box-indexes}
 
-Nadat Adobe een out-of-the-box index zoals &quot;damAssetLucene&quot; of &quot;cqPageLucene&quot; verandert, een nieuwe index genoemd `damAssetLucene-2` of `cqPageLucene-2` wordt gemaakt. Of als de index al is aangepast, wordt de aangepaste indexdefinitie samengevoegd met de wijzigingen in de index buiten het vak, zoals hieronder wordt weergegeven. Het samenvoegen van wijzigingen gebeurt automatisch. Dat betekent dat u niets hoeft te doen als een index buiten de doos verandert. Het is echter mogelijk de index later opnieuw aan te passen.
+Nadat de Adobe een uit-van-de-doos index zoals &quot;damAssetLucene&quot;of &quot;cqPageLucene&quot;verandert, een nieuwe index genoemd `damAssetLucene-2` of `cqPageLucene-2` wordt gemaakt. Of als de index al is aangepast, wordt de aangepaste indexdefinitie samengevoegd met de wijzigingen in de index buiten het vak, zoals hieronder wordt weergegeven. Het samenvoegen van wijzigingen gebeurt automatisch. Dat betekent dat u niets hoeft te doen als een index buiten de doos verandert. Het is echter mogelijk de index later opnieuw aan te passen.
 
 | Index | Index buiten de box | Gebruiken in versie 2 | Gebruiken in versie 3 |
 |---|---|---|---|
@@ -298,7 +298,7 @@ Nadat Adobe een out-of-the-box index zoals &quot;damAssetLucene&quot; of &quot;c
 
 ### Huidige beperkingen {#current-limitations}
 
-Indexbeheer wordt alleen ondersteund voor typeindexen `lucene`, met `compatVersion` instellen op `2`. Intern, zouden andere indexen voor vragen, bijvoorbeeld Elasticsearch indexen kunnen worden gevormd en worden gebruikt. Vragen die worden geschreven tegen de `damAssetLucene` De index kan, op AEM as a Cloud Service, in feite tegen een versie van Elasticsearch van deze index worden uitgevoerd. Dit verschil is onzichtbaar voor de eindgebruiker van de toepassing, maar bepaalde gereedschappen, zoals de `explain` deze functie rapporteert een andere index. Voor verschillen tussen indexen Lucene en Elasticsearch raadpleegt u [de Elasticsearch-documentatie in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten kunnen en hoeven Elasticsearch indexen niet direct te vormen.
+Indexbeheer wordt alleen ondersteund voor typeindexen `lucene`, met `compatVersion` instellen op `2`. Intern, zouden andere indexen voor vragen, bijvoorbeeld Elasticsearch indexen kunnen worden gevormd en worden gebruikt. Vragen die worden geschreven tegen de `damAssetLucene` De index kan, op AEM as a Cloud Service, in feite tegen een Elasticsearch versie van deze index worden uitgevoerd. Dit verschil is onzichtbaar voor de eindgebruiker van de toepassing, maar bepaalde gereedschappen, zoals de `explain` deze functie rapporteert een andere index. Voor verschillen tussen indexen van Lucene en van de Elasticsearch, zie [de documentatie over de Elasticsearch in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten kunnen en hoeven Elasticsearch-indexen niet rechtstreeks te configureren.
 
 Alleen ingebouwde analysatoren worden ondersteund (dat wil zeggen de analysatoren die bij het product worden geleverd). Aangepaste analysatoren worden niet ondersteund.
 

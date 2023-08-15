@@ -2,16 +2,16 @@
 title: De RemotePage-component
 description: De component RemotePage is een aangepaste pagina-component voor het bewerken van SPA op afstand in AEM.
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # De RemotePage-component {#remote-page-component}
 
-Bij het bepalen van [welk integratieniveau](/help/implementing/developing/headful-headless.md) tussen uw externe SPA en AEM wilt, is het vaak duidelijk dat u de SPA binnen AEM moet kunnen bekijken en bewerken. De component RemotePage is alleen voor dit doel een aangepaste pagina-component.
+Wanneer u besluit [welk integratieniveau](/help/implementing/developing/headful-headless.md) tussen uw externe SPA en AEM wilt, is het vaak duidelijk dat u de SPA binnen AEM moet kunnen bekijken en bewerken. De component RemotePage is alleen voor dit doel een aangepaste pagina-component.
 
 ## Overzicht {#overview}
 
@@ -28,12 +28,12 @@ Zie het artikel [Een externe SPA bewerken in AEM](editing-external-spa.md) voor 
 * CORS in ontwikkeling inschakelen
 * Externe URL configureren in Pagina-eigenschappen
 * De SPA renderen in AEM
-* De webtoepassing moet een bundler-asset-manifest gebruiken, zoals een van de volgende, en een `asset-manifest.json` bestand in de hoofdmap van het domein dat in een `entrypoints property` alle CSS- en JS-bestanden die moeten worden geladen:
+* De webtoepassing moet een bundler-element gebruiken als een van de volgende elementen en een `asset-manifest.json` bestand in de hoofdmap van het domein dat in een `entrypoints property` alle CSS- en JS-bestanden die moeten worden geladen:
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
      ![entrypoints, voorbeeld van eigenschap](assets/asset-manifest-entrypoints.png)
-* De toepassing moet in een `<div id="root"></div>` onder de `body` element. Als er een andere opmaak wordt verwacht voor de toepassing die moet worden geïnstantieerd, moet deze overeenkomstig worden aangepast in de HTML-scripts van de proxycomponent die een `sling:resourceSuperType="spa-project-core/components/remotepage`.
+* De toepassing moet in een `<div id="root"></div>` onder de `body` element. Als er een andere opmaak wordt verwacht voor de app om te instantiëren, moet deze dienovereenkomstig worden aangepast in de HTML-scripts van de proxycomponent die een `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
 ## Beperkingen {#limitations}
 

@@ -2,9 +2,9 @@
 title: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 description: Best practices voor SEO- en URL-beheer voor Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3706'
+source-wordcount: '3705'
 ht-degree: 53%
 
 ---
@@ -41,7 +41,7 @@ Hier volgen enkele algemene tips voor het samenstellen van URL&#39;s voor SEO:
    * Gebruik de mappenstructuur om de informatiearchitectuur aan te geven, indien beschikbaar.
    * Als een mappenstructuur geen optie is, gebruikt u Selectoren voor delen in de URL in plaats van queryreeksen. Naast de SEO-waarde die ze bieden, zorgen slingende kiezers ervoor dat de pagina&#39;s in de cache kunnen worden geplaatst voor de Dispatcher.
 
-* Hoe beter een URL voor mensen leesbaar is, hoe beter. trefwoorden aanwezig te hebben in de URL, verhoogt de waarde.
+* Hoe leesbaarder een URL is, hoe beter. Als trefwoorden in de URL aanwezig zijn, vergroot u de waarde.
 
    * Wanneer u selectors op een pagina gebruikt, hebben selectors die semantische waarde bieden, de voorkeur.
    * Als mensen uw URL niet kunnen lezen, kan een zoekmachine dat ook niet.
@@ -77,7 +77,7 @@ heeft de voorkeur boven `mybrand.com/products/product-detail.1234.html`
 
 * Zorg ervoor dat elke pagina slechts vanaf één protocol wordt aangeboden.
 
-   * Soms worden sites langer gebruikt `http` totdat een gebruiker een pagina bereikt met bijvoorbeeld een uitcheckformulier of een aanmeldingsformulier, waarna de gebruiker naar `https`. Wanneer de gebruiker een koppeling maakt vanaf deze pagina, als de gebruiker kan terugkeren naar `http` pagina&#39;s en open deze via `https`Deze worden door het zoekprogramma bijgehouden als twee afzonderlijke pagina&#39;s.
+   * Soms worden sites langer gebruikt `http` totdat een gebruiker een pagina bereikt met bijvoorbeeld een uitcheckformulier of een aanmeldingsformulier, waarna de gebruiker overschakelt naar `https`. Wanneer de gebruiker een koppeling maakt vanaf deze pagina, als de gebruiker kan terugkeren naar `http` pagina&#39;s en open deze via `https`Deze worden door het zoekprogramma bijgehouden als twee afzonderlijke pagina&#39;s.
 
    * Google geeft momenteel de voorkeur aan `https`-pagina&#39;s boven `http`-pagina&#39;s. Daarom maakt het het voor iedereen vaak gemakkelijker om de hele site te bedienen `https`.
 
@@ -192,7 +192,7 @@ U kunt gelokaliseerde paginanamen aan gebruikers van vertaalde inhoud willen ton
 
 De uitdaging bij het lokaliseren van de naam van de pagina is dat veel van de lokalisatieprogramma&#39;s die beschikbaar zijn op het AEM-platform, erop vertrouwen dat de paginanamen in verschillende landinstellingen overeenkomen, zodat de inhoud gesynchroniseerd blijft.
 
-Dankzij de `sling:alias` eigenschap kunt u echt het onderste uit de kan halen. `sling:alias` kan als eigenschap aan om het even welke bron worden toegevoegd om een aliasnaam voor de bron mogelijk te maken. In het vorige voorbeeld hebt u het volgende:
+De `sling:alias` met eigenschap kunt u ook onze taart eten . `sling:alias` kan als eigenschap aan om het even welke bron worden toegevoegd om een aliasnaam voor de bron mogelijk te maken. In het vorige voorbeeld hebt u het volgende:
 
 * Een pagina in het JCR op:
   `…/es/home`
@@ -237,7 +237,7 @@ Hier volgt een voorbeeld van hoe dit probleem optreedt:
 1. De Dispatcher stuurt dit verzoek door naar de publicatieserver.
 1. Met behulp van `/etc/map` zet de publicatieserver deze aanvraag om naar `/content/my-brand/my-page` en wordt de pagina gerenderd.
 
-1. De Dispatcher plaatst de reactie in de cache op `/my-page.html` en retourneert de reactie aan de gebruiker.
+1. De Dispatcher plaatst de reactie in het cachegeheugen `/my-page.html` en retourneert de reactie aan de gebruiker.
 1. Een auteur van inhoud wijzigt deze pagina en activeert deze.
 1. De Dispatcher flush-agent verzendt een verzoek tot ongeldigmaking voor `/content/my-brand/my-page`**.** Omdat de verzender geen pagina in het cachegeheugen heeft op dit pad, blijft de oude inhoud in het cachegeheugen en in de schaal.
 
@@ -377,7 +377,7 @@ Als u de achtergrondtaak die de XML-sitemaps genereert, wilt inschakelen: `Sitem
 
 De sitemap-generatietaak kan zowel op de auteur- als op de publicatielaag worden uitgevoerd. In de meeste gevallen, wordt het geadviseerd om de generatie op te stellen publiceren lijstinstanties, aangezien juiste canonieke URLs slechts daar kan worden geproduceerd (wegens het Verschuiven van de regels van de Afbeelding van Middel die algemeen slechts op publiceer lijstinstanties aanwezig zijn). Het is echter mogelijk om een aangepaste implementatie van het externaliseringsmechanisme in te sluiten dat wordt gebruikt om de canonieke URL&#39;s te genereren door de [SitemapLinkExternalzer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) interface. Als een aangepaste implementatie de canonieke URL&#39;s van een sitemap kan genereren voor de instanties van de auteurslaag, wordt de `SitemapScheduler` kan worden geconfigureerd voor de uitvoeringsmodus van de auteur en de werkbelasting voor het genereren van XML-sitemap kan worden verdeeld over de instanties van de cluster van de auteurservice. In dit scenario moet bijzondere voorzichtigheid worden besteed aan het behandelen van inhoud die nog niet is gepubliceerd, gewijzigd of slechts zichtbaar aan een beperkte groep gebruikers is.
 
-AEM Sites bevat een standaardimplementatie van een `SitemapGenerator` Hiermee wordt een boomstructuur met pagina&#39;s doorlopen om een sitemap te genereren. Het is vooraf geconfigureerd om alleen de canonieke URL&#39;s van een site en eventuele taalalternatieven uit te voeren, indien beschikbaar. Het kan ook worden gevormd om de laatste gewijzigde datum van een pagina indien nodig te omvatten. Daartoe moet u de *Laatst gewijzigd toevoegen* de *Adobe AEM SEO - Page Tree Sitemap Generator* Configuratie en selecteer een *Laatst gewijzigd bron*. Wanneer de Sitemaps op de publicatielaag worden gegenereerd, wordt aangeraden de opdracht `cq:lastModified` datum.
+AEM Sites bevat een standaardimplementatie van een `SitemapGenerator` Hiermee wordt een boomstructuur met pagina&#39;s doorlopen om een sitemap te genereren. Het is vooraf geconfigureerd om alleen de canonieke URL&#39;s van een site en eventuele taalalternatieven uit te voeren, indien beschikbaar. Het kan ook worden gevormd om de laatste gewijzigde datum van een pagina indien nodig te omvatten. Daartoe moet u de *Laatst gewijzigd toevoegen* van de *Adobe AEM SEO - Page Tree Sitemap Generator* Configuratie en selecteer een *Laatst gewijzigd bron*. Wanneer de Sitemaps op de publicatielaag worden gegenereerd, wordt aangeraden de opdracht `cq:lastModified` datum.
 
 ![Adobe AEM SEO - Configuratie van Sitemap van paginaboom Generator](assets/sling-sitemap-pagetreegenerator.png)
 

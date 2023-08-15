@@ -2,9 +2,9 @@
 title: Editor-beperkingen
 description: De editor in de interface met aanraakbediening maakt gebruik van overlays voor interactie met inhoud die zich in een iframe bevindt. Deze interactie leidt tot sommige beperkingen in zowel gebruik van de redacteur als ook voor ontwikkelaars.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Wanneer [pagina&#39;s bewerken](/help/sites-cloud/authoring/fundamentals/editing
 
 ### Structuurpagina&#39;s {#structure-pages}
 
-Pagina&#39;s kunnen geen naam krijgen `structure`. Benoemde pagina&#39;s `structure` kan niet worden bewerkt in de pagina-editor.
+Pagescann krijgt geen naam `structure`. Benoemde pagina&#39;s `structure` kan niet worden bewerkt in de pagina-editor.
 
 ## CSS-beperkingen {#css-limitations}
 
@@ -45,7 +45,7 @@ Absoluut gepositioneerde elementen kunnen problemen veroorzaken in de positie va
 
 Vaste achtergrondafbeeldingen worden mogelijk niet als vast weergegeven tijdens het schuiven omdat deze zijn ingesloten in een iframe.
 
-* Selecteren **Pagina weergeven zoals gepubliceerd** in de koptekstbalk wordt de pagina correct weergegeven.
+* Selecteren **Pagina weergeven zoals gepubliceerd** in de koptekstbalk geeft de actie de pagina correct weer.
 
 ### 100% hoogte {#height}
 

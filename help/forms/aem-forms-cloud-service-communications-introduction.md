@@ -2,7 +2,7 @@
 title: Een inleiding tot as a Cloud Service communicatie in Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 94b24e3fb1ce009fb31506a1b0a6d5159c4907eb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 2%
@@ -84,7 +84,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ### Flatten interactive PDF documents {#flatten-interactive-pdf-documents}
 
-You can use document generation APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document’s fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
+You can use document generation APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document's fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
 
 You can flatten the following types of PDF documents:
 
@@ -106,7 +106,7 @@ Via API&#39;s voor documentmanipulatie kunt u PDF-documenten combineren, opnieuw
 
 ### PDF-documenten samenstellen
 
-U kunt de API&#39;s voor documentmanipulatie gebruiken om twee of meer PDF- of XDP-documenten samen te stellen tot één PDF-document of PDF-Portfolio. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
+Met de API&#39;s voor documentmanipulatie kunt u twee of meer PDF- of XDP-documenten samenvoegen tot één PDF-document of PDF-Portfolio. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
 
 * Een eenvoudig PDF-document samenstellen
 * Een PDF-Portfolio maken
@@ -127,9 +127,9 @@ U kunt de API&#39;s voor documentmanipulatie gebruiken om een PDF-document te de
 ![Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meerdere documenten](assets/as_intro_pdfsfrombookmarks.png)
 Afbeelding: Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meerdere documenten
 
-### Converteren naar documenten die voldoen aan de PDF/A-standaard en deze valideren
+### Converteren naar en valideren van documenten die voldoen aan PDF/A
 
-Met de API&#39;s voor documentmanipulatie kunt u een PDF-document converteren naar een document dat voldoet aan de PDF/A-standaard en bepalen of een PDF-document voldoet aan de PDF/A-standaard. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
+U kunt de API&#39;s voor documentmanipulatie gebruiken om een PDF-document te converteren naar een document dat voldoet aan de PDF/A-standaard en om te bepalen of een PDF-document voldoet aan de PDF/A-standaard. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
 
 <!-- 
 
@@ -161,23 +161,23 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 Communicatie biedt HTTP-API&#39;s voor het genereren van documenten op aanvraag en in batches:
 
-* **[Synchrone API&#39;s](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor on-demand, lage latentie en scenario&#39;s voor het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op gebruikersacties. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
+* **[Synchrone API&#39;s](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor on-demand, lage latentie en scenario&#39;s voor het genereren van één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op handelingen van gebruikers. Als u bijvoorbeeld een document genereert nadat een gebruiker een formulier heeft ingevuld.
 
-* **[Batch-API&#39;s (Asynchrone API&#39;s)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Deze API&#39;s genereren documenten batchgewijs. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
+* **[Batch-API&#39;s (Asynchrone API&#39;s)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** zijn geschikt voor geplande, hoge productie, en veelvoudige scenario&#39;s van de documentgeneratie. Met deze API&#39;s worden documenten batchgewijs gegenereerd. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
 
 ## Onboarding
 
-Communicatiecapaciteit is beschikbaar als zelfstandige en add-on module voor as a Cloud Service Forms-gebruikers. U kunt contact opnemen met het verkoopteam van Adobe of uw Adobe om toegang aan te vragen. Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan uw as a Cloud Service Forms-ontwikkelaars (gebruikers) van uw organisatie om de API&#39;s te gebruiken.
+Communicatiecapaciteit is beschikbaar als zelfstandige en add-on module voor as a Cloud Service Forms-gebruikers. U kunt contact opnemen met het verkoopteam van de Adobe of met uw Adobe als u toegang wilt aanvragen. Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan uw as a Cloud Service Forms-ontwikkelaars (gebruikers) van uw organisatie om de API&#39;s te gebruiken.
 
 Na het instappen, om Communicatie vermogen voor uw as a Cloud Service milieu van Forms toe te laten:
 
 1. Meld u aan bij Cloud Manager en open de as a Cloud Service AEM Forms-instantie.
 
-1. Open de optie Programma bewerken, ga naar het tabblad Oplossingen en invoegtoepassingen en selecteer de optie **[!UICONTROL Forms - Communications]** optie.
+1. Open de optie Programma bewerken, ga naar het tabblad Oplossingen en invoegtoepassingen en selecteer de optie **[!UICONTROL Forms - Communications]** -optie.
 
    ![Communicatie](assets/communications.png)
 
-   Als u al **[!UICONTROL Forms - Digital Enrollment]** en selecteert u vervolgens de optie **[!UICONTROL Forms - Communications Add-On]** optie.
+   Als u al **[!UICONTROL Forms - Digital Enrollment]** en selecteert u vervolgens de optie **[!UICONTROL Forms - Communications Add-On]** -optie.
 
    ![Addon](assets/add-on.png)
 
@@ -194,7 +194,7 @@ Na het instappen, om Communicatie vermogen voor uw as a Cloud Service milieu van
 
 <!--
 
-Communication help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
+Communication help you combine a template and XML data to generate print documents in various formats. The service lets you generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
 
   * Generate documents by populating template files (PDF and XDP) with XML data.
   * Generate output forms in various formats, including non-interactive PDF print streams.
@@ -203,7 +203,7 @@ Consider a scenario where you have one or more templates and multiple records of
 
  There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as REST endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
 
-The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document.  
+The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully-qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document.  
 
 The [API reference documentation](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:b1223732-ae0f-4921-bdc0-c31e48b56044) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml for [Batch APIs](assets/batch-api.yaml) or [non-Batch API.yaml](assets/non-batch-api.yaml) file and upload it to postman to check functionality of APIs.
 
@@ -231,7 +231,7 @@ You can use the _generatePDFOutput_ API to create PDF document that is based on 
 
 ### Create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document {#create-PS-PCL-ZPL-documents}
 
-You can use Communications APIs to create PostScript (PS), Printer Command Language (PCL), and Zebra Printing Language (ZPL) document that are based on a XDP form design or PDF document. The _generatePrintedOutput_ API merges a form design with form data to generate a document. You can save the document to a file and develop a custom process to send it to a printer.
+You can use Communications APIs to create PostScript (PS), Printer Command Language (PCL), and Zebra Printing Language (ZPL) document that are based on an XDP form design or PDF document. The _generatePrintedOutput_ API merges a form design with form data to generate a document. You can save the document to a file and develop a custom process to send it to a printer.
 
  ### Processing batch data to create multiple documents
 
@@ -257,7 +257,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ### Flatten interactive PDF documents {#flatten-interactive-pdf-documents}
 
-You can use the Communications APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document’s fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
+You can use the Communications APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document's fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
 
 You can flatten the following types of PDF documents:
 

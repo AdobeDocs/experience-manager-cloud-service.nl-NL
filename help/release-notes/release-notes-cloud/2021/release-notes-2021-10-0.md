@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021, enzovoort.
+>Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Kijk eens naar de [Overzicht release oktober 2021](https://video.tv.adobe.com/v/
 
 ### Nieuwe functie in het dialoogvenster [!DNL Assets] prerelease-kanaal {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Smart Crop and Swatch van afbeeldingen wordt nu aangedreven door de nieuwste Sensei-services, die verbeterde gewassen en stalen genereert. Bovendien is een verbetering gestart om verschillende uitsnijdinhoud te genereren, voor dezelfde hoogte-breedteverhouding maar voor verschillende resoluties. Bovendien blijven eventuele handmatige bewerkingen behouden bij het opwerken als de breedte en hoogte in het afbeeldingsprofiel niet worden gewijzigd.
+* [!DNL Dynamic Media] Smart Crop and Swatch van afbeeldingen wordt nu aangedreven door de nieuwste Sensei-services, die verbeterde gewassen en stalen genereert. Er is ook een verbetering gestart om verschillende uitsnijdinhoud te genereren, voor dezelfde hoogte-breedteverhouding maar voor verschillende resoluties. Bovendien blijven eventuele handmatige bewerkingen behouden bij het opwerken als de breedte en hoogte in het afbeeldingsprofiel niet worden gewijzigd.
 
 * Slimme tags worden automatisch toegepast op de elementen met behulp van asset-microservices in plaats van Smart Content Services. Het onderliggende model wordt bijgewerkt om de coderingsresultaten te verbeteren en afwijking te verminderen. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -58,15 +58,15 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analyses voor Adaptive Forms**: U kunt nu gedrag vastleggen en bijhouden van zowel aangemelde als niet-aangemelde (anonieme) gebruikers via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+* **Analyses voor Adaptive Forms**: U kunt nu gedrag vastleggen en bijhouden van zowel aangemelde als niet-aangemelde (anonieme) inhoud via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms-oct-2021}
 
-* **Externe AEM workflowgegevens voor veilige verwerking**: U kunt AEM werkstroomgegevens (AEM gegevens van de Variabelen van het Werkschema) opslaan die de gevoelige elementen van Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. De gegevenselementen en workflowvariabelen worden niet opgeslagen in AEM opslagplaats en worden op verzoek opgehaald van een door de klant beheerde opslagplaats tijdens de verwerking van de Workflow.
+* **Externe AEM workflowgegevens voor veilige verwerking**: U kunt in-process AEM Workflows gegevens (AEM gegevens van de Variabelen van het Werkschema) opslaan die de gevoelige elementen van Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. De gegevenselementen en workflowvariabelen worden niet opgeslagen in AEM opslagplaats en worden op verzoek opgehaald van een door de klant beheerde opslagplaats tijdens de verwerking van de Workflow.
 
 ### Bètafuncties van [!DNL Forms] {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
    * Genereer documenten door sjabloonbestanden (PDF en XDP) te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
@@ -113,7 +113,7 @@ De volgende release is gepland voor 9 december 2021.
 
 * De `x-request-id` responsheader is nu zichtbaar in de API-afspeelruimte op [www.adobe.io](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
 
-* Als gebruiker zie ik een pijplijnkaart met nulpijpleidingen die mij de juiste begeleiding biedt.
+* Als gebruiker zie ik een pijplijnkaart met nulpijpleidingen die mij van de juiste begeleiding voorziet.
 
 * Een nieuwe pagina van de Activiteit is nu beschikbaar waar de activiteiten zoals pijpleiding en codeuitvoering samen met hun bijbehorende details kunnen worden bekeken. In de loop der tijd zullen de activiteiten die op deze pagina worden vermeld, in het toepassingsgebied worden uitgebreid, samen met de verstrekte gegevens.
 
@@ -166,11 +166,11 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.10.0 is 14 okt
 
 ### Opgeloste problemen {#bug-fixes-cm-oct}
 
-* In zeldzame situaties, wanneer een personeel van Adobe de omgeving van een klant zou herstellen, werd het herstel als volledig beschouwd alvorens het milieu volledig operationeel was.
+* In zeldzame situaties, wanneer een personeel van de Adobe het milieu van een klant zou herstellen, werd het herstel als volledig beschouwd alvorens het milieu volledig operationeel was.
 
 * Bepaalde interne verzoeken die tijdens het creëren van het milieu werden gedaan, werden niet opnieuw beproefd.
 
-* Als de plaatsing mislukte fout na de controle van de domeinnaam voorkomt, is het foutenbericht verbeterd om de klant te verzoeken om hun vertegenwoordiger van de Adobe te contacteren.
+* Als de plaatsing mislukte fout na de controle van de domeinnaam voorkomt, is het foutenbericht verbeterd om de klant te verzoeken om hun Adobe te contacteren vertegenwoordiger.
 
 ## Analysator van best practices {#best-practices-analyzer}
 

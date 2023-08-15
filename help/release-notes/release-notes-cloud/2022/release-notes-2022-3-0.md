@@ -2,20 +2,20 @@
 title: Opmerkingen bij de release 2022.3.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.3.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1148'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release 2022.3.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 202.3.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 In de volgende sectie worden de opmerkingen bij de release met functies voor de versie 2022.3.0 van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021, enzovoort.
+>Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Kijk eens naar de [Overzicht release maart 2022](https://video.tv.adobe.com/v/34
 
 ### Nieuwe functies beschikbaar in [!DNL Sites] prerelease-kanaal {#prerelease-features-sites}
 
-* De gegevenstypen van het inhoudsmodel kunnen nu worden gedefinieerd als vertaalbaar met behulp van een eenvoudig selectievakje in de inhoudsmodeleditor. Bovendien worden AEM vertaalregels en configuraties automatisch bijgewerkt.
+* De gegevenstypen van het inhoudsmodel kunnen nu worden gedefinieerd als vertaalbaar met behulp van een eenvoudig selectievakje in de inhoudsmodeleditor. Daarnaast worden AEM vertaalregels en -configuraties automatisch bijgewerkt.
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
@@ -44,13 +44,13 @@ Kijk eens naar de [Overzicht release maart 2022](https://video.tv.adobe.com/v/34
 
 * U kunt nu de opdracht [!DNL Experience Manager Assets] gebruikersinterface naar:
 
-   * Configureer de [detectie van dubbele elementen](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in een opslagplaats.
+   * Vorm [detectie van dubbele elementen](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in een opslagplaats.
 
    * Configureren [toevoegen van digitale watermerken](/help/assets/watermark-assets.md) naar afbeeldingen.
 
 * De beheerders kunnen nu de e-mailservice configureren voor grote downloads. Hiermee kunnen gebruikers [e-mailmeldingen inschakelen voor grote downloads](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) van de [!DNL Experience Manager Assets] interface. De gebruiker ontvangt een e-mailbericht met de downloadkoppeling van de gearchiveerde ZIP-map na voltooiing van het downloadproces.
 
-* De [Publicatie beheren](/help/assets/manage-publication.md) wordt verbeterd met een verbeterde gebruikersinterface. De gebruikers kunnen inhoud publiceren of unpublish aan en van de geselecteerde bestemming. [Inhoud toevoegen](/help/assets/manage-publication.md#add-content) naar de publicatielijst vanuit de DAM-opslagplaats, [Inclusief mapinstellingen](/help/assets/manage-publication.md#include-folder-settings) de inhoud van de geselecteerde mappen publiceren en filters toepassen, en [publiceren plannen](/help/assets/manage-publication.md#publish-assets-later) naar een latere datum of tijd.
+* De [Publicatie beheren](/help/assets/manage-publication.md) wordt verbeterd met een verbeterde gebruikersinterface. De gebruikers kunnen inhoud publiceren of unpublish aan en van de geselecteerde bestemming. [Inhoud toevoegen](/help/assets/manage-publication.md#add-content) naar de publicatielijst vanuit de DAM-opslagplaats, [Inclusief mapinstellingen](/help/assets/manage-publication.md#include-folder-settings) om inhoud van de geselecteerde omslagen te publiceren en filters toe te passen, en [publiceren plannen](/help/assets/manage-publication.md#publish-assets-later) naar een latere datum of tijd.
 
 ### Nieuwe functies beschikbaar in [!DNL Assets] prerelease-kanaal {#prerelease-features-assets}
 
@@ -60,7 +60,7 @@ Kijk eens naar de [Overzicht release maart 2022](https://video.tv.adobe.com/v/34
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**: [API&#39;s voor het genereren van documenten](/help/forms/aem-forms-cloud-service-communications.md) Help bij het combineren, herschikken en valideren van PDF-documenten. Met deze service kunt u documenten genereren in synchrone modus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL Communications - Document Generation APIs]**: [API&#39;s voor het genereren van documenten](/help/forms/aem-forms-cloud-service-communications.md) Help bij het combineren, herschikken en valideren van PDF-documenten. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
    * Stel PDF-documenten samen.
    * U kunt PDF-documenten deassembleren.
@@ -70,7 +70,7 @@ Kijk eens naar de [Overzicht release maart 2022](https://video.tv.adobe.com/v/34
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
 
-* **Aangepaste XCI gebruiken voor het genereren van een document met records**: U kunt nu een aangepast XCI-bestand gebruiken om verschillende eigenschappen van een Document of Record in te stellen. Het treedt master XCI met de douaneveranderingen met voeten.
+* **Aangepaste XCI gebruiken voor het genereren van een document met records**: U kunt nu een aangepast XCI-bestand gebruiken om verschillende eigenschappen van een Document of Record in te stellen. De aangepaste wijzigingen hebben voorrang op de hoofd-XCI.
 
 * **Onzichtbare CAPTCHA gebruiken in een adaptieve vorm**: U kunt de onzichtbare CAPTCHA gebruiken om de CAPTCHA-uitdaging alleen te tonen in het geval van een verdachte activiteit. Als er geen verdachte activiteit wordt gevonden, wordt de CAPTCHA-uitdaging niet weergegeven.
 
@@ -78,7 +78,7 @@ Kijk eens naar de [Overzicht release maart 2022](https://video.tv.adobe.com/v/34
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* Verbeterde SEO voor meerdere winkelscenario&#39;s: URL-indelingen voor PDP/PLP kunnen nu op archiefniveau worden geconfigureerd via de CIF Cloud Config-eigenschappen
+* Verbeterde SEO voor meerdere opslagscenario&#39;s: URL-indelingen voor PDP / PLP kunnen nu op archiefniveau worden geconfigureerd via de CIF Cloud Config-eigenschappen
 * Productkiezer ondersteunt gefaseerde producten via een nieuwe filteroptie in de gebruikersinterface.  Hierdoor kunnen gebruikers van inhoud het beheer van de productinhoud voorbereiden op de volgende productlanceringen
 * Vereenvoudigd CIF-configuratiebeheer en foutafhandeling door CIF Cloud Config-naam te gebruiken in plaats van proxyURL te configureren
 * Handmatige categorieselectie voor productlijst en carrouselcomponenten. Hierdoor kunnen gebruikers van inhoud deze componenten gebruiken op inhoudspagina&#39;s, buiten de ervaring met catalogi
@@ -91,7 +91,7 @@ Kijk eens naar de [Overzicht release maart 2022](https://video.tv.adobe.com/v/34
 
 ### Nieuwe functies {#what-is-new-foundation}
 
-* Voor efficiëntere en effectievere probleemoplossing van aangepaste functies in cloudomgevingen hebben we een nieuwe ontwikkelaarstool uitgebracht - [de Repository Browser](/help/implementing/developing/tools/repository-browser.md). Het is een lichtgewicht, alleen-lezen browser van HTML die u kunt starten vanuit de Developer Console. U krijgt zichtbaarheid in de opslagplaats voor inhoud op de uitgever-, auteur- en voorvertoningslagen en in alle omgevingen, inclusief productie, werkgebied en ontwikkeling. Blader door de inhoudsstructuur, de weergave-eigenschappen en de binaire bestanden voor voorvertoningen en downloads.
+* Voor efficiëntere en effectievere probleemoplossing van aangepaste functies in cloudomgevingen hebben we een nieuwe ontwikkelaarstool uitgebracht - [de Repository Browser](/help/implementing/developing/tools/repository-browser.md). Het is een lichtgewicht, alleen-lezen browser van de HTML die u kunt starten vanuit de Developer Console. U krijgt zichtbaarheid in de opslagplaats voor inhoud op de uitgever-, auteur- en voorvertoningslagen en in alle omgevingen, inclusief productie, werkgebied en ontwikkeling. Blader door de inhoudsstructuur, de weergave-eigenschappen en de binaire bestanden voor voorvertoningen en downloaden.
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
@@ -99,7 +99,7 @@ Kijk eens naar de [Overzicht release maart 2022](https://video.tv.adobe.com/v/34
 
 * De het zuiveren van de versie en de taken van het de zuiveringslogboek van de controle, die niet eerder waren toegelaten, worden nu toegelaten voor nieuwe milieu&#39;s. Zie de gekoppelde waarden in het dialoogvenster [Onderhoudstaken](/help/operations/maintenance.md) artikel.
 
-* AEM as a Cloud Service SDK Dispatcher Tools biedt nu ondersteuning voor Mac-computers met de M1-chip
+* AEM as a Cloud Service SDK Dispatcher Tools ondersteunt nu Mac-computers met de M1-chip
 
 ## Cloud Manager {#cloud-manager}
 
@@ -113,7 +113,7 @@ De releasedatum voor Content Transfer Tool v1.9.0 is 28 februari 2022.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Hulplijnen voor grootte controleren - Met de functie voor het controleren van de grootte van het gereedschap Inhoud overbrengen kunt u mislukte overdrachten van inhoud reduceren.  Met de functie Grootte controleren kunnen gebruikers 1) bepalen of ze voldoende schijfruimte hebben in het dialoogvenster `crx-quickstart` subdirectory voor extractie, en 2) schat de grootte van de migratieset en controleer of deze wordt ondersteund. Als één of beide controles worden geschonden, zullen de gebruikers waarschuwingen in CTT UI zien. Met deze garantie kunt u mislukte inhoudsoverdrachten voorkomen en de migratieopties proactief bespreken met de klantenservice van Adobe. Zie [Grootte en schijfruimte van migratieset bepalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) voor meer informatie .
+* Hulplijnen voor grootte controleren - Met de functie voor het controleren van de grootte van het gereedschap Inhoud overbrengen kunt u mislukte overdrachten van inhoud reduceren.  Met de functie Grootte controleren kunnen gebruikers 1) bepalen of ze voldoende schijfruimte hebben in het dialoogvenster `crx-quickstart` subdirectory vóór extractie, en 2) schat de migratie vastgestelde grootte en verifieert of het wordt gesteund. Als één of beide controles worden geschonden, zullen de gebruikers waarschuwingen in CTT UI zien. Met deze garantie kunt u mislukte inhoudsoverdrachten voorkomen en de migratieopties proactief bespreken met de klantenservice van de Adobe. Zie [Grootte en schijfruimte van migratieset bepalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) voor meer informatie .
 
 ## Analysator van best practices {#bpa-release}
 

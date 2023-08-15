@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2499'
+source-wordcount: '2496'
 ht-degree: 19%
 
 ---
@@ -23,9 +23,9 @@ Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags i
 
 Om AEM middelenvertaling te automatiseren, integreert u de leveranciers van vertaaldiensten met Experience Manager en creeert projecten voor het vertalen van activa in veelvoudige talen. Experience Manager ondersteunt workflows voor het vertalen van mensen en machines.
 
-Vertaling van menselijk kapitaal in AEM: De vertaalde elementen worden geretourneerd en in Experience Manager geïmporteerd. Wanneer uw vertaalbureau met Experience Manager wordt geïntegreerd, worden de activa automatisch verzonden tussen Experience Manager en de vertaalleverancier.
+Vertaling van menselijke activa in AEM: De vertaalde activa worden teruggegeven en in Experience Manager ingevoerd. Wanneer uw vertaalbureau met Experience Manager wordt geïntegreerd, worden de activa automatisch verzonden tussen Experience Manager en de vertaalleverancier.
 
-Vertaling van systeemmiddelen in AEM: De vertaalservice zet de metagegevens en tags voor elementen direct om.
+Vertalen van computermiddelen in AEM: De vertaalservice zet de metagegevens en tags voor elementen direct om.
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -59,7 +59,7 @@ Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags i
 
 In Adobe Experience Manager Assets worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
 
-Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdmap van de taal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: `/content/dam/it` is de Italiaanse taalbasis voor de Italiaanse taalkopie. Taalkopieën moeten een [correct geconfigureerde taalhoofdmap](#create-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van bronelementen worden uitgevoerd.
+Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: `/content/dam/it` is de Italiaanse taalbasis voor de Italiaanse taalkopie. Taalkopieën moeten een [correct geconfigureerde taalhoofdmap](#create-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van bronelementen worden uitgevoerd.
 
 De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de primaire taal. De primaire taal is de bron die in andere talen wordt vertaald. Een voorbeeld van een maphiërarchie bevat verschillende taalwortels:
 
@@ -84,7 +84,7 @@ Voer de volgende stappen uit om het vertalen van elementen voor te bereiden:
 
 ### Een hoofdmap voor talen maken {#create-a-language-root}
 
-Als u de hoofdmap van de taal wilt maken, maakt u een map en gebruikt u een ISO-taalcode als waarde voor de eigenschap Naam. Nadat u de hoofdtaal hebt gemaakt, kunt u op elk niveau in de hoofdmap van de taal een kopie van de taal maken.
+Als u de hoofdmap van de taal wilt maken, maakt u een map en gebruikt u een ISO-taalcode als waarde voor de eigenschap Naam. Nadat u de hoofdmap van de taal hebt gemaakt, kunt u op elk niveau in de hoofdmap van de taal een kopie van de taal maken.
 
 De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bijvoorbeeld `it` als de eigenschap Name. Het bezit van de Naam wordt gebruikt als naam van de activaknoop in de bewaarplaats, en bepaalt daarom de weg van de activa. (*&lt;server>:&lt;port>/assets.html/content/dam/it/*)
 
@@ -111,7 +111,7 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 1. Van de **[!UICONTROL Project]** list, selecteer **[!UICONTROL Create a new translation project]**.
 1. Voer in het veld **[!UICONTROL Project Title]** een titel in voor het project.
 1. Klikken/tikken op **[!UICONTROL Create]**. Middelen uit de bronmap worden gekopieerd naar de doelmappen voor de landinstellingen die u in stap 4 hebt geselecteerd.
-1. Als u naar de map wilt navigeren, selecteert u de taalkopie en klikt u op **[!UICONTROL Reveal in Assets]**.
+1. Om aan de omslag te navigeren, selecteer het taalexemplaar, en klik **[!UICONTROL Reveal in Assets]**.
 1. Navigeer aan de console van Projecten. De vertaalomslag wordt gekopieerd aan de console van Projecten.
 1. Open de map om het vertaalproject weer te geven.
 1. Klik of tik op het project om de detailpagina te openen.
@@ -149,7 +149,7 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
 1. Als u de vertaling voor de elementen wilt starten, klikt of tikt u op de pijl op de knop **[!UICONTROL Translation Job]** tegel en selecteer **[!UICONTROL Start]** in de lijst. Een bericht brengt het begin van de vertaalbaan op de hoogte.
 1. Als u de status van de vertaaltaak wilt weergeven, klikt of tikt u op de ellips onder aan het dialoogvenster **[!UICONTROL Translation Job]** tegel. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
-1. Nadat de vertaling is voltooid, verandert de status in Ready to Review. Navigeer naar de interface Middelen en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
+1. Nadat de vertaling is voltooid, verandert de status in Klaar voor revisie. Navigeer naar de interface Middelen en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
 ### Taalkopieën bijwerken {#update-language-copies}
 
@@ -231,14 +231,14 @@ Met de optie **Alleen structuur maken** kunt u een doelmaphiërarchie in de hoof
 1. Selecteer in de interface Elementen de bronmap waarvoor u een structuur wilt maken in de hoofdmap van de doeltaal.
 1. Open het deelvenster **[!UICONTROL References]** en klik of tik op **[!UICONTROL Language Copies]** onder **[!UICONTROL Copies]**.
 1. Klikken/tikken **[!UICONTROL Create & Translate]** onderaan.
-1. Van de **[!UICONTROL Target Languages]** Selecteer de taal waarvoor u een mappenstructuur wilt maken.
+1. Van de **[!UICONTROL Target Languages]** selecteert u de taal waarvoor u een mappenstructuur wilt maken.
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Create structure only]**.
 1. Klik of tik op **[!UICONTROL Create]**. De nieuwe structuur voor de doeltaal wordt onder **[!UICONTROL Language Copies]**.
 1. Klik of tik op de structuur in de lijst en klik/tik vervolgens op **[!UICONTROL Reveal in Assets]** om naar de mapstructuur in de doeltaal te navigeren.
 
 ## Vertaalcloudservices toepassen op mappen {#applying-translation-cloud-services-to-folders}
 
-Met Adobe Experience Manager kunt u vertaalservices in de cloud gebruiken van het vertaalbureau van uw keuze om ervoor te zorgen dat uw middelen op basis van uw vereisten worden vertaald.
+Met Adobe Experience Manager kunt u vertaalservices in de cloud gebruiken van de vertaalprovider van uw keuze om ervoor te zorgen dat uw middelen op basis van uw vereisten worden vertaald.
 
 U kunt de vertaalcloudservice rechtstreeks toepassen op de map met middelen, zodat u deze kunt gebruiken tijdens vertaalworkflows.
 
@@ -272,7 +272,7 @@ Als u een aangepaste connector wilt toepassen voor de vertaalservices die u wilt
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Klik/tik op de knop **[!UICONTROL Configure now]** de koppeling openen **[!UICONTROL Create Configuration]** .
+1. Klik op de knop **[!UICONTROL Configure now]** de koppeling openen **[!UICONTROL Create Configuration]** in.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 

@@ -2,9 +2,9 @@
 title: Kanalen maken en beheren in as a Cloud Service schermen
 description: In deze pagina wordt beschreven hoe u kanalen in as a Cloud Service schermen maakt en beheert.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1092'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Voer de onderstaande stappen uit om een nieuw volgnummer te maken in as a Cloud 
 
 1. Ga naar uw AEM Screens-project, zoals *FirstDigitalExperience*.
 
-1. Selecteer **Kanalen** map van uw project, zoals **FirstDigitalExperience** —> **Kanalen** en klik op **Maken** in de actiebalk.
+1. Selecteer de **Kanalen** map van uw project, zoals **FirstDigitalExperience** —> **Kanalen** en klik op **Maken** in de actiebalk.
 
    ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
@@ -76,7 +76,7 @@ Ga als volgt te werk om inhoud aan een kanaal toe te voegen of te bewerken:
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >Klikken op **Voorvertoning** om een voorvertoning van de inhoud van het kanaal weer te geven.
+   >Klikken op **Voorvertoning** om de inhoud van het kanaal voor te vertonen.
    >![bewerken, kanaalvoorbeeld](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## Beschikbare sjablonen in wizard Maken {#available-templates}
@@ -101,7 +101,7 @@ Met deze functie kunt u een standaard activeringsschema voor een kanaal definië
    ![afbeelding](/help/screens-cloud/assets/display/Assignment1.png)
 
 1. Klikken **Standaarddetails instellen**.
-1. Configureer de standaardtoewijzingsdetails, inclusief prioriteit, begin- en einddatum en herhalingspatronen voor het kanaal en klik op **Toewijzen**.
+1. Configureer de standaardtoewijzingsdetails, inclusief prioriteit, begin- en einddatums en herhalingspatronen voor het kanaal en klik op **Toewijzen**.
 
    ![afbeelding](/help/screens-cloud/assets/display/Assignments2.png)
 
@@ -125,7 +125,7 @@ Of selecteer de gewenste weergave in de overzichtsweergave en klik op de knop **
    ![afbeelding](/help/screens-cloud/assets/display/Assignments4.png)
 
 1. Selecteer in de kanaalkiezer het gewenste kanaal met de standaardtoewijzingsdetails.
-1. U ziet dat het dialoogvenster voor kanaaltoewijzing is gewijzigd en u kunt de standaardtoewijzingsdetails kiezen of aangepaste toewijzingsdetails selecteren:
+1. U ziet dat het dialoogvenster voor kanaaltoewijzing is gewijzigd, zodat u de standaardtoewijzingsdetails kunt kiezen of aangepaste toewijzingsdetails kunt selecteren:
 
    ![afbeelding](/help/screens-cloud/assets/display/Assignments5.png)
 
@@ -144,7 +144,7 @@ Of selecteer de gewenste weergave in de overzichtsweergave en klik op de knop **
 
 **Opmerking:** Een kanaaltoewijzing die de standaardtoewijzingsdetails gebruikt, kan niet worden bewerkt in de context van de weergave.
 
-* Als u deze in een aangepaste toewijzing moet wijzigen, verwijdert u deze eerst en voegt u deze vervolgens opnieuw toe met de opdracht **Aangepaste toewijzingsdetails instellen** optie.
+* Als u deze in een aangepaste toewijzing moet wijzigen, verwijdert u deze eerst en voegt u deze vervolgens opnieuw toe met de opdracht **Aangepaste toewijzingsdetails instellen** -optie.
 * Als u de eigenschappen van de standaardtoewijzingsdetails moet wijzigen, doet u dit rechtstreeks vanaf de pagina met kanaaldetails.
 
 ### Standaardtoewijzingsgegevens uit een kanaal verwijderen {#remove-display}

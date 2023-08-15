@@ -4,9 +4,9 @@ description: Zodra zij de systeembeheerder opstelling de noodzakelijke wolkenmid
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ In dit facultatieve deel van [aan boord gaan,](overview.md) u zult leren hoe de 
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Je bent ver gekomen op je instapreis! Gefeliciteerd! De systeembeheerder heeft de instapreis voltooid door de benodigde cloudbronnen in te stellen en toegang te verlenen in het document [AEM productprofielen toewijzen.](assign-profiles-aem.md)
+Je hebt een lange weg afgelegd op je instapreis! Gefeliciteerd! De systeembeheerder heeft de instapreis voltooid door de benodigde cloudbronnen in te stellen en toegang te verlenen in het document [AEM productprofielen toewijzen.](assign-profiles-aem.md)
 
 Op dit punt kunnen uw ontwikkelaars en implementatiemanagers beginnen met het maken van uw eigen toepassingen, terwijl uw AEM gebruikers kunnen beginnen met het maken van inhoud. In die zin is uw instapsysteem voltooid en nu is het tijd om uw nieuwe AEM as a Cloud Service systeem te gebruiken, wat dit document zal illustreren.
 
@@ -82,26 +82,26 @@ Voer de volgende stappen uit om uw eerste niet-productie implementatiepijplijn t
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Toegang krijgen tot **Pijpleidingen** kaart van het startscherm van Cloud Manager. Klikken op **+Toevoegen** en selecteert u **Niet-productiepijpleiding toevoegen**.
+1. Toegang krijgen tot de **Pijpleidingen** kaart van het startscherm van Cloud Manager. Klikken op **+Toevoegen** en selecteert u **Niet-productiepijpleiding toevoegen**.
 
    ![Niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Op de **Configuratie** tabblad van het dialoogvenster **Niet-productiepijpleiding toevoegen** selecteert u het type niet-productiepijplijn dat u wilt toevoegen. In dit voorbeeld selecteert u **Implementatiepijp**.
+1. Op de **Configuratie** tabblad van het **Niet-productiepijpleiding toevoegen** selecteert u het type niet-productiepijplijn dat u wilt toevoegen. In dit voorbeeld selecteert u **Implementatiepijp**.
 
    ![Dialoogvenster Niet-productiepijplijn toevoegen](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
-1. Een **Naam niet-productiepijpleiding** om uw pijpleiding samen met de volgende extra informatie te identificeren.
+1. Geef een **Naam niet-productiepijpleiding** om uw pijpleiding samen met de volgende extra informatie te identificeren.
 
 1. Voor de **Implementatieactivering** selecteren **Handmatig** zodat de pijpleiding slechts loopt wanneer u het begint.
 
 1. Klikken **Doorgaan**.
 
-1. Op de **Broncode** tabblad van het dialoogvenster **Niet-productiepijpleiding toevoegen** moet u selecteren welk type code de pijplijn moet verwerken. In dit voorbeeld selecteert u **Volledige stapelcode**.
+1. Op de **Broncode** tabblad van het **Niet-productiepijpleiding toevoegen** moet u selecteren welk type code de pijplijn moet verwerken. In dit voorbeeld selecteert u **Volledige stapelcode**.
 
 1. Op de **Broncode** moet u de volgende opties definiëren.
 
    * **In aanmerking komende implementatieomgevingen** - U moet kiezen welk milieu waarop de pijpleiding zou moeten opstellen.
-   * **Bewaarplaats** - Deze opties bepalen waarvan de git repo de pijpleiding de code zou moeten terugwinnen.
+   * **Bewaarplaats** - Deze opties bepalen waarvan git de pijpleiding de code zou moeten terugwinnen.
    * **Git Branch** - Deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
       * Voer de eerste paar tekens van de naam van de vertakking in en met de functie voor automatisch aanvullen van dit veld kunt u de overeenkomende vertakkingen vinden om u te helpen selecteren.
 
@@ -146,10 +146,10 @@ Als u geïnteresseerd bent in de manier waarop auteurs van inhoud toegang krijge
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
-* [Toegang tot opslagplaatsen](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Leer hoe u uw git-opslagplaats kunt openen en beheren met behulp van het beheer van een git-account voor zelfbediening vanuit Cloud Manager.
+* [Toegang tot opslagplaatsen](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Leer hoe u uw git-opslagplaats kunt openen en beheren met behulp van het beheer van de git-account voor zelfbediening vanuit Cloud Manager.
 * [Git gebruiken met Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Leer hoe u de git-opslagruimten van Cloud Manager kunt gebruiken en hoe u uw eigen, door de klant beheerde git-opslagplaats op locatie kunt integreren met Cloud Manager.
 * [Lokale ontwikkelomgeving instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) - Deze zelfstudie begeleidt u bij het instellen van een lokale ontwikkelomgeving voor Adobe Experience Manager (AEM) met behulp van de AEM as a Cloud Service SDK.
 * [Aan de slag met AEM Sites - WKND-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - Deze meerdelige zelfstudie is ontworpen voor ontwikkelaars die nog geen ervaring hebben met Adobe Experience Manager (AEM). In deze zelfstudie wordt de implementatie besproken van een AEM site voor een fictieve levensstijl, de WKND. De zelfstudie behandelt fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, Bewerkbare Malplaatjes, cliënt-zijbibliotheken, en componentenontwikkeling met Adobe Experience Manager Sites.
-* [Aan de slag met SPA in AEM Reageren gebruiken](/help/implementing/developing/hybrid/getting-started-react.md) - Dit artikel bevat een voorbeeld SPA toepassing, legt uit hoe deze is samengesteld en stelt u in staat snel met uw eigen SPA aan de slag te gaan met behulp van het React-framework.
-* [Aan de slag met SPA in AEM Angular gebruiken](/help/implementing/developing/hybrid/getting-started-angular.md) - In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wordt uitgelegd hoe deze wordt samengesteld en kunt u snel met uw eigen SPA aan de slag gaan met behulp van het raamwerk voor Angulars.
+* [Aan de slag met SPA in AEM Reageren gebruiken](/help/implementing/developing/hybrid/getting-started-react.md) - Dit artikel bevat een voorbeeld SPA toepassing, legt uit hoe deze is samengesteld en laat u snel aan de slag met uw eigen SPA met behulp van het React-framework.
+* [Aan de slag met SPA in AEM Angular gebruiken](/help/implementing/developing/hybrid/getting-started-angular.md) - In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wordt uitgelegd hoe deze wordt samengesteld en kunt u snel met uw eigen SPA aan de slag met het raamwerk voor Angulars.
 * [Headless Developer Journey](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide cursus voor het ontwikkelen van toepassingen zonder kop met AEM.

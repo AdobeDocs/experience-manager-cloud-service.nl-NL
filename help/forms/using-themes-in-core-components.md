@@ -4,9 +4,9 @@ description: U kunt thema's gebruiken om een adaptief formulier te stileren en e
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: nieuw thema maken, thema aanpassen, nieuw thema uploaden, thema gebruiken in formulieren, thema aanpassen met frontend-pijplijn
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpass
 ### Vereisten {#prerequisites-to-customize}
 
 * Verken uzelf met [een pijplijn instellen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) en het hebben van basiskennis van hoe te opstelling helpt een pijpleiding u efficiënt beheren en uw themaaanpassingen opstellen.
-* Leer hoe u [een gebruiker configureren met de rol van contribuant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Begrijpen hoe te om een gebruiker met de bijdragerrol te vormen staat u toe om de noodzakelijke toestemmingen voor themaaanpassing te verlenen.
+* Leer hoe u [een gebruiker configureren met de rol van contribuant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Begrijpen hoe te om een gebruiker met de bijdragerrol te vormen laat u de noodzakelijke toestemmingen voor themaaanpassing verlenen.
 * Installeer de nieuwste versie van [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is een tool voor automatisering van build die veel wordt gebruikt voor Java™-projecten. De installatie van de recentste versie verzekert u de noodzakelijke gebiedsdelen voor themaaanpassing.
 * Installeer een teksteditor zonder opmaak. Bijvoorbeeld Microsoft® Visual Studio Code. Het gebruiken van een gewone tekstredacteur zoals de Code van Microsoft® Visual Studio verstrekt een gebruikersvriendelijk milieu voor het uitgeven en het wijzigen van themadossiers.
 
@@ -165,7 +165,7 @@ De `variable.scss` Het bestand bevat de algemene themavariabelen. Door deze vari
 
    ![Thema bewerken](/help/forms/assets/edit_theme.png)
 
-U kunt ook de opdracht `variable.scss` bestand voor het instellen van lettertypefamilie en -type, thema- en lettertypekleuren, lettergrootte, themaspatiëring, foutpictogram, themarand en meer variabele die van invloed zijn op meerdere componenten van Adaptief formulier.
+U kunt ook de opdracht `variable.scss` bestand voor het instellen van lettertypefamilie en -type, thema- en lettertypekleuren, lettergrootte, themaspatiëring, foutpictogram, themarand en meer variabele die van invloed zijn op meerdere componenten van het adaptieve formulier.
 
 ##### Stijlen op componentniveau instellen {#component-based-customization}
 

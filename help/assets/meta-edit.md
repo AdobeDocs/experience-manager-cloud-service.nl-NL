@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '444'
 ht-degree: 9%
 
 ---
@@ -34,7 +34,7 @@ Metagegevens bewerken:
 
    >[!NOTE]
    >
-   >Als een tekstveld leeg is, is er geen bestaande metagegevensset. U kunt een waarde in het veld invoeren en deze opslaan om die eigenschap voor metagegevens toe te voegen.
+   >Als een tekstveld leeg is, is er geen bestaande metagegevensset. U kunt een waarde in het veld invoeren en deze opslaan om de eigenschap metadata toe te voegen.
 
 Eventuele wijzigingen in de metagegevens van een element worden teruggeschreven naar het oorspronkelijke binaire bestand als onderdeel van de XMP gegevens. Dit gebeurt via de workflow voor het terugschrijven van metagegevens van Experience Managers. Wijzigingen in bestaande eigenschappen (zoals `dc:title`) worden overschreven en nieuwe eigenschappen gemaakt (inclusief aangepaste eigenschappen zoals `cq:tags`) worden samen met het schema toegevoegd.
 

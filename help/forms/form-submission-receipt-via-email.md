@@ -1,17 +1,13 @@
 ---
 title: Een bevestiging van het verzenden van een formulier verzenden via e-mail
-seo-title: Sending a form submission acknowledgement via email
-description: Met AEM Forms kunt u de handeling Verzenden via e-mail configureren die een bevestiging naar een gebruiker stuurt bij het verzenden van het formulier.
-seo-description: AEM Forms allows you to configure the email Submit Action that sends an acknowledgement to a user on submitting the form.
-uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
+description: Met AEM Forms kunt u de handeling voor het verzenden van e-mail configureren die een bevestiging naar een gebruiker stuurt bij het verzenden van het formulier.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -23,13 +19,13 @@ ht-degree: 0%
 
 Adaptive Forms biedt verschillende kant-en-klare [Handelingen verzenden](configuring-submit-actions.md) workflows voor het verzenden van de formuliergegevens naar verschillende eindpunten.
 
-De **[!UICONTROL Send email]** Met Actie verzenden wordt een e-mail verzonden wanneer een adaptief formulier met succes is verzonden. Het kan ook worden geconfigureerd om de formuliergegevens en de PDF in de e-mail te verzenden.
+Bijvoorbeeld de **[!UICONTROL Send email]** Met Actie verzenden wordt een e-mail verzonden wanneer een adaptief formulier met succes is verzonden. Het kan ook worden geconfigureerd om de formuliergegevens en de PDF in de e-mail te verzenden.
 
 In dit artikel worden de stappen beschreven waarmee de e-mailactie wordt ingeschakeld op een adaptief formulier en op verschillende configuraties ervan.
 
 >[!NOTE]
 >
->U kunt ook de opdracht **[!UICONTROL Send PDF via email]** om het ingevulde formulier per e-mail te verzenden als PDF-bijlage. De configuratieopties die beschikbaar zijn voor deze actie zijn gelijk aan de opties die beschikbaar zijn voor de **[!UICONTROL Send email]** handeling. De PDF-actie via e-mail is alleen beschikbaar voor adaptieve Forms op basis van XFA
+>U kunt ook de opdracht **[!UICONTROL Send PDF via email]** om het ingevulde formulier per e-mail te verzenden als een PDF-bijlage. De configuratieopties die beschikbaar zijn voor deze actie zijn gelijk aan de opties die beschikbaar zijn voor de **[!UICONTROL Send email]** handeling. De PDF-actie via e-mail is alleen beschikbaar voor adaptieve Forms op basis van XFA
 
 ## E-mailactie verzenden {#email-action}
 
@@ -69,13 +65,13 @@ De veldnamen in een adaptief formulier worden tijdelijke aanduidingen genoemd di
 
 In de **[!UICONTROL Send email]** gebruiken, kunt u plaatsaanduidingen gebruiken die worden verwerkt wanneer de handeling wordt uitgevoerd. Dit betekent dat de kopteksten van de e-mail (zoals **[!UICONTROL To]**, **[!UICONTROL CC]**, **[!UICONTROL BCC]**, **[!UICONTROL Subject]**) worden gegenereerd wanneer de gebruiker het formulier verzendt.
 
-Als u een tijdelijke aanduiding wilt definiëren, geeft u `${<field name>}` in een veld na het selecteren **[!UICONTROL Send email]** als de handeling Verzenden.
+Als u een tijdelijke aanduiding wilt definiëren, geeft u `${<field name>}` in een veld na het selecteren **[!UICONTROL Send email]** als handeling verzenden.
 
 Als het formulier bijvoorbeeld het **[!UICONTROL Email address]** veld, naam `email_addr`Voor het vastleggen van de e-mailadres van een gebruiker kunt u het volgende opgeven in het dialoogvenster **[!UICONTROL To]**, **[!UICONTROL CC]**, of **[!UICONTROL BCC]** velden.
 
 `${email_addr}`
 
-Wanneer een gebruiker het formulier verzendt, wordt een e-mail verzonden naar de e-mailid die is ingevoerd in het dialoogvenster `email_addr` van het formulier.
+Wanneer een gebruiker het formulier verzendt, wordt een e-mailbericht verzonden naar de e-mailid die is ingevoerd in het dialoogvenster `email_addr` veld van het formulier.
 
 >[!NOTE]
 >

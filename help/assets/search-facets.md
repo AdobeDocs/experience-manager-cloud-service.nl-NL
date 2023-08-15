@@ -4,9 +4,9 @@ description: In dit artikel wordt beschreven hoe u zoekfacetten in de Experience
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2327'
 ht-degree: 16%
 
 ---
@@ -41,19 +41,19 @@ Voor zoekopdrachten in volledige tekst voegt u de opdracht `Fulltext` voorspelle
 
    ![Een voorspelling selecteren en verplaatsen om de zoekfilters aan te passen](assets/drag_predicate.png)
 
-   *Afbeelding: Selecteer en verplaats een voorspelling om de zoekfilters aan te passen.*
+   *Afbeelding: selecteer en verplaats een voorspelling om de zoekfilters aan te passen.*
 
 1. Voer op het tabblad Instellingen een veldlabel, plaatsaanduidingstekst en beschrijving voor de voorspelling in. Geef een geldige naam op voor de eigenschap metadata die u aan de voorspelling wilt koppelen. Het koptekstlabel op het tabblad Instellingen geeft het type van de geselecteerde voorspelling aan.
 
    ![Gebruik het tabblad Instellingen om de vereiste opties voor een voorspelling op te geven](assets/settings.png)
 
-   *Afbeelding: Gebruik het lusje van Montages om de vereiste opties van een predikaat te verstrekken.*
+   *Afbeelding: Gebruik het tabblad Instellingen voor de vereiste opties van een voorspelling.*
 
 1. Geef in het veld **[!UICONTROL Property Name]** een geldige naam op voor de metadata-eigenschap die u aan het predicaat wilt koppelen. Dit is de naam op basis waarvan de zoekopdracht wordt uitgevoerd. Voer bijvoorbeeld `jcr:content/metadata/dc:description` of `./jcr:content/metadata/dc:description` in. U kunt ook een bestaand knooppunt selecteren in het dialoogvenster Selecteren.
 
    ![Een metagegevenseigenschap koppelen aan een voorspelling in het veld Eigenschapnaam](assets/property_settings.png)
 
-   *Afbeelding: Koppel een eigenschap metadata aan een voorspelling in het veld Eigenschapnaam.*
+   *Afbeelding: Koppel een eigenschap metadata aan een voorspelling in het veld Naam eigenschap.*
 
 1. Klik op de knop **[!UICONTROL Preview]** ![voorvertoning](assets/preview.png) Hiermee genereert u een voorvertoning van het deelvenster Filters zoals dit wordt weergegeven nadat u de voorspelling hebt toegevoegd.
 1. Bekijk de lay-out van de voorspelling in de modus Voorbeeld.
@@ -69,7 +69,7 @@ Voor zoekopdrachten in volledige tekst voegt u de opdracht `Fulltext` voorspelle
 
 ## Een voorspelling van opties toevoegen {#adding-an-options-predicate}
 
-Met de voorspelling Opties kunt u meerdere zoekopties toevoegen in het deelvenster Filters. U kunt een of meer van deze opties selecteren in het deelvenster Filters om te zoeken naar elementen. Als u bijvoorbeeld naar elementen wilt zoeken op basis van het bestandstype, configureert u opties, zoals Afbeeldingen, Multimedia, Documenten en Archieven, in het zoekformulier. Nadat u deze opties hebt geconfigureerd, wordt de zoekopdracht uitgevoerd op elementen van het type GIF, JPEG, PNG, enzovoort, wanneer u de optie Afbeeldingen selecteert in het deelvenster Filters.
+Met de voorspelling Opties kunt u meerdere zoekopties toevoegen in het deelvenster Filters. U kunt een of meer van deze opties selecteren in het deelvenster Filters om te zoeken naar elementen. Als u bijvoorbeeld naar elementen wilt zoeken op basis van het bestandstype, configureert u opties, zoals Afbeeldingen, Multimedia, Documenten en Archieven, in het zoekformulier. Nadat u deze opties hebt geconfigureerd, wordt de zoekopdracht uitgevoerd op elementen van het type GIF, JPEG, PNG, enzovoort, wanneer u de optie Afbeeldingen in het deelvenster Filters selecteert.
 
 Als u de opties wilt toewijzen aan de desbetreffende eigenschap, maakt u een knooppuntstructuur voor de opties en geeft u het pad van het bovenliggende knooppunt op in de eigenschap Eigenschapnaam van de voorspelling van opties. Het bovenliggende knooppunt moet van het type zijn `sling`: `OrderedFolder`. De opties moeten van het type zijn `nt:unstructured`. De optieknooppunten moeten de eigenschappen hebben `jcr:title` en `value` geconfigureerd.
 
@@ -116,7 +116,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 
    De beschikbare velden in de voorspelling Opties
 
-1. In de **Beschrijving** veld, voer een optionele beschrijving in en klik op **[!UICONTROL Done]**.
+1. In de **Beschrijving** veld, voer een optionele beschrijving in en klik vervolgens op **[!UICONTROL Done]**.
 1. Navigeer naar het deelvenster Zoeken. De voorspelling Opties wordt toegevoegd aan de **Zoeken** deelvenster. De opties voor **[!UICONTROL File Type]** worden weergegeven als selectievakjes.
 
 ## Een voorspelling van een eigenschap met meerdere waarden toevoegen {#adding-a-multi-value-property-predicate}
@@ -124,7 +124,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 De `Multi Value Property` Met predicate kunt u elementen zoeken naar meerdere waarden. Overweeg een scenario waar u beelden van veelvoudige producten in hebt [!DNL Assets] en de metagegevens voor elke afbeelding bevatten een SKU-nummer dat aan het product is gekoppeld. Met deze voorspelling kunt u op basis van meerdere SKU-nummers zoeken naar productafbeeldingen.
 
 1. Klik op het logo van de Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Selecteer op de pagina Zoeken in Forms de optie **[!UICONTROL Assets Admin Search Rail]**, de tik **Bewerken** ![aemassets_edit](assets/aemassets_edit.png).
+1. Selecteer op de pagina Search Forms de optie **[!UICONTROL Assets Admin Search Rail]**, de tik **Bewerken** ![aemassets_edit](assets/aemassets_edit.png).
 1. Sleep op de pagina Zoekformulier bewerken een **[!UICONTROL Multi Value Property Predicate]** van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster.
 1. In de **[!UICONTROL Settings]** voert u een label en plaatsaanduidingstekst in voor de voorspelling. Geef de naam van de eigenschap op op basis waarvan de zoekopdracht in het eigenschapveld moet worden uitgevoerd, bijvoorbeeld `jcr:content/metadata/dc:value`. U kunt ook een knooppunt selecteren in het dialoogvenster Selecteren.
 1. Zorg ervoor dat **[!UICONTROL Delimiter Support]** is geselecteerd. Geef in het veld **[!UICONTROL Input Delimiters]** scheidingstekens op om afzonderlijke waarden van elkaar te scheiden. Standaard wordt een komma opgegeven als scheidingsteken. U kunt een ander scheidingsteken opgeven.
@@ -134,10 +134,10 @@ De `Multi Value Property` Met predicate kunt u elementen zoeken naar meerdere wa
 
 ## Een voorspelling van tags toevoegen {#adding-a-tags-predicate}
 
-De `Tags` Met behulp van voorspellingen kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Standaard, [!DNL Assets] zoekt elementen naar een of meer labels die overeenkomen met de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
+De `Tags` Met predicate kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Standaard, [!DNL Assets] zoekt elementen naar een of meer labels die overeenkomen met de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
 
 1. Klik op het logo van de Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Selecteer op de pagina Zoeken in Forms de optie **[!UICONTROL Assets Admin Search Rail]** en tik vervolgens op **Bewerken** ![aemassets_edit](assets/aemassets_edit.png).
+1. Selecteer op de pagina Zoeken in Forms de optie **[!UICONTROL Assets Admin Search Rail]** en tikt u vervolgens op **Bewerken** ![aemassets_edit](assets/aemassets_edit.png).
 1. Sleep in de pagina Zoekformulier bewerken het gereedschap **[!UICONTROL Tags Predicate]** van het Uitgezochte lusje Predicate aan de belangrijkste ruit.
 1. Voer op het tabblad Instellingen een plaatsaanduidingstekst in voor de voorspelling. Geef de naam van de eigenschap op op basis waarvan de zoekopdracht in het eigenschapveld moet worden uitgevoerd, bijvoorbeeld `jcr:content/metadata/cq:tags`. U kunt ook een knooppunt in CRXDE selecteren in het dialoogvenster Selecteren.
 1. Configureer de padeigenschap Root-tags van deze voorspelling om verschillende tags in de lijst Tags te vullen.
@@ -146,7 +146,7 @@ De `Tags` Met behulp van voorspellingen kunt u op tags gebaseerde zoekopdrachten
    ![Typische instellingen van labels voorspellen](assets/tags_predicate.png)
 
 1. In de **[!UICONTROL Description]** veld, voer een optionele beschrijving in en klik/tik op **[!UICONTROL Done]**.
-1. Navigeer naar het deelvenster Zoeken. De **[!UICONTROL Tags]** predikaat wordt toegevoegd aan het paneel van het Onderzoek.
+1. Navigeer naar het deelvenster Zoeken. De **[!UICONTROL Tags]** predicate wordt toegevoegd aan het deelvenster Zoeken.
 1. Geef tags op op basis waarvan u de elementen wilt zoeken of een selectie wilt maken in de lijst met suggesties.
 1. Selecteren **[!UICONTROL Match all]** om te zoeken naar overeenkomsten die alle tags bevatten die u opgeeft.
 
@@ -168,7 +168,7 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
   </tr>
   <tr>
    <td><p>Fulltext</p> </td>
-   <td>Zoekvoorspelling om volledige tekstzoekopdrachten uit te voeren op een volledig elementknooppunt. Het is toegewezen aan <code>jcr</code>:<code>contains</code> operator. U kunt een relatief pad opgeven als u een volledige tekstzoekopdracht wilt uitvoeren op een bepaald gedeelte van het knooppunt met elementen.</td>
+   <td>Zoekvoorspelling om volledige tekstzoekopdrachten uit te voeren op een volledig elementknooppunt. Het is toegewezen aan de <code>jcr</code>:<code>contains</code> operator. U kunt een relatief pad opgeven als u een volledige tekstzoekopdracht wilt uitvoeren op een bepaald gedeelte van het knooppunt met elementen.</td>
    <td>
     <ul>
      <li>Label</li>
@@ -306,7 +306,7 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
 
 ## Standaardzoekfacetten herstellen {#restoring-default-search-facets}
 
-Standaard wordt een vergrendelingspictogram weergegeven vóór **[!UICONTROL Assets Admin Search Rail]** in de **[!UICONTROL Search Forms]** pagina. Het vergrendelingspictogram verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
+Standaard wordt een vergrendelingspictogram weergegeven **[!UICONTROL Assets Admin Search Rail]** in de **[!UICONTROL Search Forms]** pagina. Het vergrendelingspictogram verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
 
 Het vergrendelingspictogram tegen een optie op de pagina Zoeken in Forms geeft aan dat de standaardinstellingen intact zijn en niet worden aangepast.
 
@@ -325,8 +325,8 @@ Als er geen beheerdersrol aan u is toegewezen, volgt hier een lijst met machtigi
 | Handeling | Machtiging |
 |---|---|
 | Bewerken | Lezen en schrijven toestemmingen op `/apps` in CRX. |
-| Verwijderen | De lees-, schrijf- en schrappingsmachtigingen op de `/apps` in CRX. |
-| Voorvertoning | De lees-, schrijf- en schrappingsmachtigingen op de `/var/dam/content` in CRX. Ook lees- en schrijfmachtigingen voor `/apps` knooppunt. |
+| Verwijderen | Rechten lezen, schrijven en verwijderen op de `/apps` in CRX. |
+| Voorvertoning | Rechten lezen, schrijven en verwijderen op de `/var/dam/content` in CRX. Ook lees- en schrijfmachtigingen voor `/apps` knooppunt. |
 
 **Zie ook**
 
@@ -345,4 +345,3 @@ Als er geen beheerdersrol aan u is toegewezen, volgt hier een lijst met machtigi
 >[!MORELIKETHIS]
 >
 >* [Digitale middelen zoeken](search-assets.md).
-

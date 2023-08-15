@@ -2,9 +2,9 @@
 title: Tags gebruiken
 description: Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '562'
 ht-degree: 6%
 
 ---
@@ -22,7 +22,7 @@ Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te class
 1. **Tags ordenen** - Terwijl tags inhoud ordenen, ordenen hiërarchische taxonomieën/naamruimten tags.
 1. **Georganiseerde tags toepassen** - Met de mogelijkheid om codes en subcodes te maken, wordt het mogelijk volledige taxonomische systemen uit te drukken, met inbegrip van termen, subtermen en hun relaties. Zo kunt u een tweede (of derde) inhoudshiërarchie maken die parallel is aan de officiële inhoudshiërarchie.
 1. **Gecontroleerde labeling** - Tags kunnen worden ingesteld door machtigingen toe te passen op tags en/of naamruimten om het maken en de toepassing van tags te beheren.
-1. **Flexibele tags** - Tags hebben vele namen en gezichten: tags, taxonomie termen, categorieën, labels en nog veel meer. Zij zijn flexibel in hun inhoudsmodel en in de manier waarop zij kunnen worden gebruikt; bijvoorbeeld bij het schetsen van doeldemografie, het categoriseren en classificeren van inhoud of het creëren van een secundaire inhoudshiërarchie.
+1. **Flexibele tags** - Tags hebben vele namen en gezichten: tags, taxonomie termen, categorieën, labels en nog veel meer. Ze zijn flexibel in hun inhoudsmodel en in de manier waarop ze kunnen worden gebruikt, bijvoorbeeld bij het beschrijven van doeldemografie, het categoriseren en classificeren van inhoud of het creëren van een secundaire inhoudshiërarchie.
 1. **Verbeterd zoeken** - De standaardzoekcomponent in AEM bevat over het algemeen gemaakte tags en toegepaste tags waarop filters kunnen worden toegepast om de resultaten te beperken tot de relevante waarden.
 1. **SEO inschakelen** - Labels die als pagina-eigenschappen zijn toegepast, worden automatisch weergegeven in de tags van de pagina, zodat deze zichtbaar zijn voor zoekmachines.
 1. **Eenvoudig, geavanceerd** - Tags kunnen eenvoudig worden gemaakt op basis van een woord en de druk op een knop. Daarna kunt u een titel, beschrijving en een onbeperkt label toevoegen om meer semantiek aan de tag toe te voegen.

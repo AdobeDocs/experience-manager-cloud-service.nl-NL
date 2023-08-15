@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen
 description: Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma's van Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma&#39;
 
 >[!TIP]
 >
->Een certificaat kan een paar dagen aan levering vergen. Adobe beveelt daarom aan dat het certificaat ruim van tevoren wordt verstrekt.
+>Een certificaat kan een paar dagen aan levering vergen. De Adobe beveelt daarom aan dat het certificaat ruim van tevoren wordt verstrekt.
 
 ## Certificaatindeling {#certificate-format}
 
@@ -73,7 +73,7 @@ Nadat u het certificaat hebt opgeslagen, wordt het weergegeven als een nieuwe ri
 
 >[!NOTE]
 >
->Een gebruiker moet lid zijn van **Zakelijke eigenaar** of **Implementatiebeheer** rol om een SSL-certificaat te installeren in Cloud Manager.
+>Een gebruiker moet lid zijn van de **Zakelijke eigenaar** of **Implementatiebeheer** rol om een SSL-certificaat te installeren in Cloud Manager.
 
 ## Certificaatfouten {#certificate-errors}
 

@@ -2,9 +2,9 @@
 title: Adaptieve formulierexpressies
 seo-title: Adaptive Form Expressions
 description: Met Adaptieve Forms-expressies kunt u automatische validatie, berekening en de zichtbaarheid van een sectie in- of uitschakelen.
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '2695'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adaptieve formulierexpressies {#adaptive-form-expressions}
 
-Adaptief Forms biedt geoptimaliseerde en vereenvoudigde ervaring voor het invullen van formulieren voor eindgebruikers met dynamische scriptmogelijkheden. Hiermee kunt u expressies schrijven waarmee u verschillende gedragingen kunt toevoegen, zoals dynamische tonen/verbergen van velden en deelvensters. Ook kunt u berekende velden toevoegen, velden alleen-lezen maken, validatielogica toevoegen en nog veel meer. Het dynamische gedrag is gebaseerd op de gebruikersinvoer of voorgevulde gegevens.
+Adaptief Forms biedt geoptimaliseerde en vereenvoudigde ervaring voor het invullen van formulieren voor eindgebruikers met dynamische scriptmogelijkheden. Hiermee kunt u expressies schrijven om verschillende gedragingen toe te voegen, zoals velden en deelvensters voor dynamisch tonen/verbergen. Ook kunt u berekende velden toevoegen, velden alleen-lezen maken, validatielogica toevoegen en nog veel meer. Het dynamische gedrag is gebaseerd op de gebruikersinvoer of voorgevulde gegevens.
 
 JavaScript™ is de expressietaal van Adaptive Forms. Alle expressies zijn geldige JavaScript™-expressies en gebruiken API&#39;s van het Adaptive Forms-scriptmodel. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst met adaptieve Forms-klassen, -gebeurtenissen, -objecten en openbare API&#39;s raadpleegt u [JavaScript™ Library API-referentie voor Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
@@ -29,7 +29,7 @@ Herhalende deelvensters zijn instanties van een deelvenster die dynamisch worden
 * Als u een herhalend deelvenster wilt maken, opent u in het dialoogvenster van het deelvenster de instellingen en stelt u de waarde van het maximale telveld in op meer dan 1.
 * De minimale telwaarde van de herhalingsinstellingen van het deelvenster kan een of meer zijn, maar mag niet meer zijn dan de maximale telwaarde.
 * Wanneer een expressie verwijst naar een veld van een herhalend deelvenster, worden de veldnamen in de expressie omgezet naar het dichtstbijzijnde herhalende element.
-* Adaptief Forms biedt een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Voor de volledige lijst met functies raadpleegt u [JavaScript™ Library API-referentie voor Adaptive Forms](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
+* Adaptief Forms biedt een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Zie voor de volledige lijst met functies [JavaScript™ Library API-referentie voor Adaptive Forms](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
 * API&#39;s voor het manipuleren van instanties van herhalende deelvensters zijn:
 
    * Een deelvensterinstantie toevoegen: `panel1.instanceManager.addInstance()`
@@ -42,10 +42,10 @@ Herhalende deelvensters zijn instanties van een deelvenster die dynamisch worden
 In Adaptief Forms kunt u expressies schrijven om gedrag toe te voegen, zoals velden en deelvensters voor dynamisch tonen/verbergen. U kunt ook expressies schrijven om berekende velden toe te voegen, velden alleen-lezen te maken, validatielogica toe te voegen en nog veel meer. Adaptive Forms biedt ondersteuning voor de volgende expressies:
 
 * **[Toegang tot expressies](#access-expression-enablement-expression)**: om een veld in of uit te schakelen.
-* **[Expressies berekenen](#calculate-expression)**: om de waarde van een veld automatisch te berekenen.
-* **[Klikexpressie](#click-expression)**: om handelingen af te handelen bij klikgebeurtenis van een knop.
+* **[Expressies berekenen](#calculate-expression)**: als u de waarde van een veld automatisch wilt berekenen.
+* **[Klikexpressie](#click-expression)**: om handelingen af te handelen wanneer op een knop wordt geklikt.
 * **[Initialisatiescript](#initialization-script):** een handeling uitvoeren bij initialisatie van een veld.
-* **[Expressie](#options-expression)**: om een vervolgkeuzelijst dynamisch in te vullen.
+* **[Expressie](#options-expression)**: als u een vervolgkeuzelijst dynamisch wilt vullen.
 * **[Samenvattingsexpressie](#summary)**: om de titel van een accordeon dynamisch te berekenen.
 * **[Expressies valideren](#validate-expression)**: om een veld te valideren.
 * **[Waarde script vastleggen](#value-commit-script):** om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
@@ -54,7 +54,7 @@ In Adaptief Forms kunt u expressies schrijven om gedrag toe te voegen, zoals vel
 
 ### Access Expression (Enablement Expression) {#access-expression-enablement-expression}
 
-U kunt de toegangsuitdrukking gebruiken om een gebied in of onbruikbaar te maken. Als de expressie de waarde van een veld gebruikt, wordt de expressie opnieuw geactiveerd wanneer de waarde van het veld verandert.
+U kunt de toegangsuitdrukking gebruiken om een gebied toe te laten of onbruikbaar te maken. Als de expressie de waarde van een veld gebruikt, wordt de expressie opnieuw geactiveerd wanneer de waarde van het veld verandert.
 
 **Van toepassing op**: velden
 
@@ -70,7 +70,7 @@ De expressie calculate wordt gebruikt om de waarde van een veld automatisch te b
 
 **Retourtype**: De expressie retourneert een waarde die compatibel is met het veld waarin het resultaat van de expressie wordt weergegeven (bijvoorbeeld decimaal).
 
-**Voorbeeld**: De expressie Berekenen die de som van twee velden in **field1** is:
+**Voorbeeld**: De berekeningsexpressie die de som van twee velden moet weergeven in **field1** is:
 `field2.value + field3.value`
 
 ### Klikken op uitdrukking {#click-expression}
@@ -79,7 +79,7 @@ De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop w
 
 **Van toepassing op**: Knopvelden
 
-**Retourtype**: De klikuitdrukking keert geen waarde terug. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
+**Retourtype**: De klikexpressie retourneert geen waarde. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
 
 **Voorbeeld**: Een tekstvak vullen **textbox1** op de klikactie van een knoop met waarde **AEM Forms**, is de klikexpressie van de knop `textbox1.value="AEM Forms"`
 
@@ -98,23 +98,23 @@ Het initialisatiescript wordt geactiveerd wanneer een Adaptief formulier wordt g
 **Voorbeeld:** Als u velden met de standaardwaarde wilt vullen in een scenario vóór het invullen van de gegevens `'Adaptive Forms'` wanneer hun waarde als ongeldig wordt bewaard, is de initialisatiescriptexpressie:
 `if(this.value==null) this.value='Adaptive Forms';`
 
-### Opties {#options-expression}
+### Opties voor expressie {#options-expression}
 
 De optiesuitdrukking wordt gebruikt om opties van een drop-down lijstgebied dynamisch te vullen.
 
 **Van toepassing op**: vervolgkeuzelijstvelden
 
-**Retourtype**: De optiesuitdrukking keert een serie van koordwaarden terug. Elke waarde kan een eenvoudige tekenreeks zijn, zoals **Mannelijk**, of in een key=value paarformaat, zoals **1=Mannelijk**
+**Retourtype**: De optiesexpressie retourneert een array met tekenreekswaarden. Elke waarde kan een eenvoudige tekenreeks zijn, zoals **Mannelijk**, of in een key=value paarformaat, zoals **1=Mannelijk**
 
-**Voorbeeld**: Als u de waarde van een veld wilt vullen op basis van de waarde van een ander veld, geeft u een eenvoudige expressie voor opties op. Als u bijvoorbeeld een veld wilt vullen, **Aantal kinderen** op basis van de **Burgerlijke staat** uitgedrukt in een ander veld, wordt de volgende expressie gebruikt:
+**Voorbeeld**: Als u de waarde van een veld wilt vullen, op basis van de waarde van een ander veld, geeft u een eenvoudige expressie voor opties op. Als u bijvoorbeeld een veld wilt vullen, **Aantal kinderen** op basis van de **Burgerlijke staat** uitgedrukt in een ander veld, wordt de volgende expressie gebruikt:
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Wanneer de waarde van **huwelijks_status** veldwijzigingen, wordt de expressie opnieuw geactiveerd. U kunt dropdown van de dienst van REST ook bevolken. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+Wanneer de waarde van **huwelijks_status** wijzigingen in het veld, wordt de expressie opnieuw geactiveerd. U kunt dropdown van de dienst van REST ook bevolken. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### Samenvattingsexpressie {#summary}
 
-De expressie Samenvatting berekent dynamisch de titel van een onderliggend deelvenster van een accordeonlay-outdeelvenster. U kunt de expressie Samenvatting opgeven in een regel, die een formulierveld of een aangepaste logica gebruikt om de titel te evalueren. De expressie wordt uitgevoerd wanneer het formulier wordt geïnitialiseerd. Als u een formulier vooraf invult, wordt de expressie uitgevoerd nadat de gegevens zijn voorgevuld of wanneer de waarde van afhankelijke velden die in de expressie worden gebruikt, verandert.
+Met de expressie Samenvatting wordt de titel van een onderliggend deelvenster van een accordeonlay-outdeelvenster dynamisch berekend. U kunt de expressie Samenvatting opgeven in een regel, die een formulierveld of een aangepaste logica gebruikt om de titel te evalueren. De expressie wordt uitgevoerd wanneer het formulier wordt geïnitialiseerd. Als u een formulier vooraf invult, wordt de expressie uitgevoerd nadat de gegevens zijn voorgevuld of wanneer de waarde van afhankelijke velden die in de expressie worden gebruikt, verandert.
 
 De expressie Samenvatting wordt doorgaans gebruikt voor het herhalen van onderliggende items van een accordeonlay-outdeelvenster, zodat elk onderliggend deelvenster een betekenisvolle titel krijgt.
 
@@ -131,7 +131,7 @@ De expressie validate wordt gebruikt om de velden te valideren met de opgegeven 
 **Van toepassing op**: velden
 
 **Retourtype**: De expressie retourneert een Booleaanse waarde die de validatiestatus van het veld vertegenwoordigt. De waarde **false** geeft aan dat het veld ongeldig is en **true** geeft aan dat het veld geldig is.
-**Voorbeeld**: Voor een veld met postcode van het Verenigd Koninkrijk is de validatie-expressie:
+**Voorbeeld**: Voor een veld met de postcode van het Verenigd Koninkrijk is de validatie-expressie:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
 
@@ -165,9 +165,9 @@ De uitdrukking van de Zichtbaarheid wordt gebruikt om de zichtbaarheid van gebie
 
 **Van toepassing op**: velden en deelvenster
 
-**Retourtype**: De uitdrukking keert een waarde Van Boole terug, die het gebied/het paneel vertegenwoordigt is zichtbaar of niet. **false** geeft aan dat het veld of deelvenster niet zichtbaar is en true aangeeft dat het veld of deelvenster zichtbaar is.
+**Retourtype**: Expressie retourneert een Booleaanse waarde die aangeeft of het veld/deelvenster zichtbaar is of niet. **false** geeft aan dat het veld of deelvenster niet zichtbaar is en true aangeeft dat het veld of deelvenster zichtbaar is.
 
-**Voorbeeld**: Voor een deelvenster dat alleen zichtbaar wordt als de waarde van **field1** is ingesteld op **Mannelijk**, is de zichtbaarheidsexpressie: `field1.value == "Male"`
+**Voorbeeld**: voor een deelvenster dat alleen zichtbaar wordt als de waarde van **field1** is ingesteld op **Mannelijk**, is de zichtbaarheidsexpressie: `field1.value == "Male"`
 
 ### Uitdrukking voor stapvoltooiing {#step-completion-expression}
 
@@ -184,7 +184,7 @@ De expressie voor het voltooien van de stap wordt gebruikt om te voorkomen dat e
 
 Er zijn meerdere methoden om veldvalidatie toe te voegen aan een adaptief formulier. Als een validatiecontrole wordt toegevoegd aan een veld, **Waar** geeft aan dat de waarde die in het veld wordt ingevoerd, geldig is. **Onwaar** geeft aan dat de waarde ongeldig is. Als u in- en uitgaat van een veld, wordt het foutbericht niet gegenereerd.
 
-U kunt als volgt validaties toevoegen aan een veld:
+De methoden om validaties toe te voegen aan een veld zijn:
 
 ### Vereist {#required}
 
@@ -202,7 +202,7 @@ De validatie van een veld kan ook worden berekend met behulp van expressies in v
 
 ### Veldweergave-indeling gebruiken {#using-field-display-format}
 
-De indeling van de weergave kan worden gebruikt om de gegevens in verschillende indelingen weer te geven. U kunt bijvoorbeeld de weergave-indeling gebruiken om een telefoonnummer met afbreekstreepjes, ZIP-code of datumkiezer weer te geven. Deze weergavepatronen kunnen worden geselecteerd in het menu **Patronen** in het dialoogvenster Bewerken van een component. U kunt aangepaste weergavepatronen schrijven, vergelijkbaar met de hierboven vermelde validatiepatronen.
+U kunt de indeling weergeven gebruiken om de gegevens in verschillende indelingen weer te geven. U kunt bijvoorbeeld de weergave-indeling gebruiken om een telefoonnummer met afbreekstreepjes, ZIP-code of datumkiezer weer te geven. Deze weergavepatronen kunnen worden geselecteerd in het menu **Patronen** in het dialoogvenster Bewerken van een component. U kunt aangepaste weergavepatronen schrijven, vergelijkbaar met de hierboven vermelde validatiepatronen.
 
 ### GuideBridge - API&#39;s en gebeurtenissen {#guidebridge-apis-and-events}
 
@@ -216,13 +216,13 @@ GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interac
 
 * Als u formuliervelden opnieuw wilt instellen, kunt u de activering activeren `guideBridge.reset()` API op de klikuitdrukking van een knoop. Er is ook een API voor verzenden die kan worden aangeroepen als een klikexpressie `guideBridge.submit()`**.**
 
-* U kunt de `setFocus()` API waarmee de focus in verschillende velden of deelvensters wordt ingesteld (voor de focus van het deelvenster wordt automatisch ingesteld op het eerste veld). `setFocus()`biedt een breed scala aan opties voor navigatie, zoals navigatie tussen deelvensters, Vorige/Volgende verplaatsing, focus instellen op een bepaald veld en nog veel meer. Als u bijvoorbeeld naar het volgende deelvenster wilt gaan, kunt u het volgende gebruiken: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* U kunt de `setFocus()` API waarmee de focus in verschillende velden of deelvensters wordt ingesteld (voor de focus van het deelvenster wordt automatisch ingesteld op het eerste veld). `setFocus()`biedt een breed scala aan opties voor navigatie, zoals navigatie tussen deelvensters, Vorige/Volgende verplaatsing, het instellen van de focus op een bepaald veld en nog veel meer. Als u bijvoorbeeld naar het volgende deelvenster wilt gaan, kunt u het volgende gebruiken: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
 * Als u een adaptief formulier of de specifieke deelvensters wilt valideren, gebruikt u `guideBridge.validate(errorList, somExpression).`
 
 #### GuideBridge gebruiken buiten expressies  {#using-guidebridge-outside-expressions-nbsp}
 
-U kunt de GuideBridge API&#39;s ook buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen pagina-HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
+U kunt ook de GuideBridge-API&#39;s buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen pagina-HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
 
 Als u GuideBridge API wilt gebruiken voor het bovenstaande voorbeeld, neemt u een instantie van GuideBridge op. Om de instantie vast te leggen, luistert u naar `bridgeInitializeStart`een `window`object:
 
@@ -266,7 +266,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 ### Aangepaste patronen maken voor een veld {#creating-custom-patterns-for-a-field}
 
-Zoals hierboven vermeld, kan de auteur met Adaptive Forms patronen voor validatie- of weergaveindelingen opgeven. U kunt niet alleen patronen uit de vakken gebruiken, maar ook herbruikbare aangepaste patronen definiëren voor een component Adaptief formulier. U kunt bijvoorbeeld een tekstveld of een numeriek veld definiëren. Als u deze patronen eenmaal hebt gedefinieerd, kunt u deze patronen in alle formulieren gebruiken voor het opgegeven type component. U kunt bijvoorbeeld een aangepast patroon maken voor een tekstveld en dit gebruiken in de tekstvelden in de Adaptief Forms. U kunt het aangepaste patroon selecteren door de patroonsectie te openen in het dialoogvenster Bewerken van een component. <!-- For details about Pattern definition or format, see [Picture clause support for HTML5 forms](picture-clause-support.md).-->
+Zoals hierboven is vermeld, kan de auteur met Adaptive Forms patronen voor validatie- of weergaveindelingen opgeven. U kunt niet alleen patronen uit de vakken gebruiken, maar ook herbruikbare aangepaste patronen definiëren voor een component Adaptief formulier. U kunt bijvoorbeeld een tekstveld of een numeriek veld definiëren. Als u deze patronen eenmaal hebt gedefinieerd, kunt u deze patronen in alle formulieren gebruiken voor het opgegeven type component. U kunt bijvoorbeeld een aangepast patroon maken voor een tekstveld en dit gebruiken in de tekstvelden in de Adaptief Forms. U kunt het aangepaste patroon selecteren door de patroonsectie te openen in het dialoogvenster Bewerken van een component. <!-- For details about Pattern definition or format, see [Picture clause support for HTML5 forms](picture-clause-support.md).-->
 
 Voer de volgende stappen uit om een aangepast patroon te maken voor een specifiek veldtype en dit opnieuw te gebruiken voor andere velden van hetzelfde type:
 

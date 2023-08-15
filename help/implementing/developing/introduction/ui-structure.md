@@ -2,9 +2,9 @@
 title: Structuur van de AEM-interface
 description: De AEM UI heeft verschillende onderliggende beginselen en bestaat uit verschillende sleutelelementen
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,12 @@ Als de resolutie bijvoorbeeld lager is dan 1024 pixels (zoals op een mobiel appa
 
 De kopbalbar toont globale elementen met inbegrip van:
 
-* Het logo en het specifieke product/de oplossing die u momenteel gebruikt. Voor AEM vormt dit element ook een koppeling naar de globale navigatie
+* Het logo en het specifieke product/de specifieke oplossing die u momenteel gebruikt. Voor AEM vormt dit element ook een koppeling naar de globale navigatie
 * Zoeken
 * Pictogram voor toegang tot de Help-bronnen
 * Pictogram voor toegang tot andere oplossingen
 * Een indicator van - en toegang tot - om het even welke alarm of Inbox punten die op u wachten
-* Het gebruikerspictogram, samen met een koppeling naar uw profielbeheer
+* Het gebruikerspictogram en een koppeling naar uw profielbeheer
 
 ### Werkbalk {#toolbar}
 
@@ -64,7 +64,7 @@ De linkerspoorstaaf kan worden geopend/verborgen zoals vereist om te tonen:
 * **Verwijzingen**
 * **Filter**
 
-De standaardwaarde is **Alleen inhoud** (spoorstaaf verborgen).
+De standaardwaarde is **Alleen inhoud** (spoor verborgen).
 
 ![Linkerspoor](assets/ui-left-rail.png)
 
@@ -80,7 +80,7 @@ Het inhoudskader bevindt zich in de rechtersectie van het venster, onder de werk
 
 ![Inhoudskader](assets/ui-content-frame.png)
 
-### Editor-frame {#editor-frame}
+### Editor frame {#editor-frame}
 
 Het editorkader laat de het uitgeven eigenschappen toe.
 
@@ -89,7 +89,7 @@ Het editorframe is een container (abstract) voor alle pagina-ontwerpelementen. H
 * De bovenste werkbalk
 * Het zijpaneel
 * Alle overlays
-* elk ander pagina-ontwerpelement; bijvoorbeeld de werkbalk van de component
+* Een ander pagina-ontwerpelement, bijvoorbeeld de componentwerkbalk
 
 ![Editor-frame](assets/ui-editor-frame.png)
 
@@ -142,7 +142,7 @@ Een laag is een onafhankelijke bundel van functionaliteit die kan worden geactiv
 
 De lagen bieden geavanceerde functionaliteit voor de gehele pagina, in tegenstelling tot specifieke handelingen voor een afzonderlijke component.
 
-AEM wordt geleverd met verschillende lagen die al zijn geïmplementeerd voor het ontwerpen van pagina&#39;s; bijvoorbeeld lagen bewerken, voorvertonen en notities aanbrengen.
+AEM wordt geleverd met verschillende lagen die al zijn geïmplementeerd voor het ontwerpen van pagina&#39;s, zoals het bewerken, voorvertonen en notities aanbrengen van lagen.
 
 >[!NOTE]
 >

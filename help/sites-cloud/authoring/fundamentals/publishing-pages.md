@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Leer hoe u uw pagina's op verschillende manieren in AEM publiceert en publiceert.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1804'
 ht-degree: 5%
 
 ---
@@ -124,7 +124,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![Pagina&#39;s selecteren voor publicatie](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. De wizard **Publicatie beheren** wordt gestart. De eerste stap, **Opties**, kunt u:
+1. De wizard **Publicatie beheren** wordt gestart. De eerste stap, **Opties**, laat u:
 
    * **Handeling**
 
@@ -228,7 +228,7 @@ Als u tijdens het bewerken van een pagina de publicatie van die pagina ongedaan 
 
 >[!NOTE]
 >
->Pagina&#39;s die worden benaderd door [aliassen](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in de editor kan niet ongedaan worden gemaakt. Publicatieopties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
+>Pagina&#39;s die worden benaderd door [aliassen](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in de editor kan niet worden gepubliceerd. Publicatieopties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
 
 ### Publicatie ongedaan maken vanuit de console {#unpublishing-from-the-console}
 

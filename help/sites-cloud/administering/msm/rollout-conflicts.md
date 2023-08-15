@@ -4,9 +4,9 @@ description: Leer hoe u problemen met de uitrol van meerdere sitebeheer kunt beh
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ In de volgende secties gebruiken we het voorbeeld van een nieuwe pagina `b`, die
 
 * blauwdruk: `/b`
 
-  Een master pagina met 1 onderliggende pagina, `bp-level-1`
+  Een basispagina met 1 onderliggende pagina, `bp-level-1`
 
 * Live kopie: `/b`
 
@@ -69,7 +69,7 @@ AEM biedt:
 * De [default conflict handler](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
 * De mogelijkheid om een [aangepaste handler](#customized-handlers)
-* Het de dienstrangschikkingsmechanisme dat u toestaat om de prioriteit van elke individuele manager te plaatsen
+* Het de dienstrangschikkingsmechanisme dat u de prioriteit van elke individuele manager laat plaatsen
    * De dienst met het hoogste rangschikken wordt gebruikt.
 
 ### Standaardconflicthandler {#default-conflict-handler}
@@ -123,7 +123,7 @@ Als u handmatig [conflictafhandeling deactiveren,](#rollout-manager-and-conflict
 >
 >Wanneer conflictafhandeling wordt gedeactiveerd, geeft AEM geen enkele aanwijzing dat conflicten worden genegeerd. Aangezien in dergelijke gevallen dit gedrag uitdrukkelijk moet worden gevormd, wordt aangenomen dat het het gewenste gedrag is.
 
-In dit geval heeft Live Copy voorrang. De blauwdrukpagina `/b` wordt niet gekopieerd en de pagina Live Copy `/b` ongewijzigd blijft.
+In dit geval heeft Live Copy voorrang. De blauwdrukpagina `/b` wordt niet gekopieerd en de pagina Live Copy `/b` onaangeroerd blijft.
 
 * Blauwdruk: `/b`
 

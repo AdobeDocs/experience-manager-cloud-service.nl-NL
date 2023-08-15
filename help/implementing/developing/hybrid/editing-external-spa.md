@@ -2,16 +2,16 @@
 title: Een externe SPA bewerken in AEM
 description: In dit document worden de aanbevolen stappen beschreven voor het uploaden van een zelfstandige SPA naar een AEM-instantie, het toevoegen van bewerkbare gedeelten van inhoud en het inschakelen van ontwerpen.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2421'
+source-wordcount: '2418'
 ht-degree: 0%
 
 ---
 
 # Een externe SPA bewerken in AEM {#editing-external-spa-within-aem}
 
-Bij het bepalen van [welk integratieniveau](/help/implementing/developing/headful-headless.md) wilt u tussen uw externe SPA en AEM hebben, moet u de SPA in AEM kunnen uitgeven en bekijken, vaak.
+Wanneer u besluit [welk integratieniveau](/help/implementing/developing/headful-headless.md) wilt u tussen uw externe SPA en AEM hebben, moet u de SPA in AEM kunnen uitgeven en bekijken, vaak.
 
 ## Overzicht {#overview}
 
@@ -24,7 +24,7 @@ De voorwaarden zijn eenvoudig.
 * Zorg ervoor dat een instantie van AEM lokaal wordt uitgevoerd.
 * Een basis AEM SPA project maken met [het AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Forms de basis van het AEM project dat wordt bijgewerkt om de externe SPA op te nemen.
-   * Voor de voorbeelden in dit document gebruikt Adobe het beginpunt van [het WKND-SPA-project](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
+   * Voor de voorbeelden in dit document gebruikt de Adobe het beginpunt van [het WKND-SPA-project](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Heb de werkende, externe Reactie SPA die u bij hand wilt integreren.
 
 ## SPA uploaden naar AEM project {#upload-spa-to-aem-project}
@@ -76,7 +76,7 @@ In dit voorbeeld wordt `ModelManager` is geïnitialiseerd en is leeg `ModelStore
 De `initializationAsync` kan optioneel een `options` object als parameter:
 
 * `path` - Bij initialisatie wordt het model op het gedefinieerde pad opgehaald en opgeslagen in het dialoogvenster `ModelStore`. Dit pad kan worden gebruikt om het `rootModel` bij initialisatie, indien nodig.
-* `modelClient` - Hiermee kunt u een aangepaste client opgeven die verantwoordelijk is voor het ophalen van het model.
+* `modelClient` - Hiermee kunt u een aangepaste client opgeven die het model moet ophalen.
 * `model` - A `model` object dat wordt doorgegeven als een parameter die doorgaans wordt gevuld [SSR gebruiken](/help/implementing/developing/hybrid/ssr.md).
 
 ### AEM authorable Leaf Components {#authorable-leaf-components}
@@ -103,7 +103,7 @@ De `initializationAsync` kan optioneel een `options` object als parameter:
 
    >[!NOTE]
    >
-   >In dit voorbeeld zijn er afzonderlijke versies van de component: AEM omwikkelde en losgekoppelde React componenten. De omloopversie moet worden gebruikt wanneer uitdrukkelijk het gebruiken van de component. Wanneer de component deel uitmaakt van een pagina, kunt u de standaardcomponent blijven gebruiken zoals momenteel gedaan in de SPA editor.
+   >In dit voorbeeld zijn er afzonderlijke versies van de component: AEM omwikkelde en losgekoppelde React-componenten. De omloopversie moet worden gebruikt wanneer uitdrukkelijk het gebruiken van de component. Wanneer de component deel uitmaakt van een pagina, kunt u de standaardcomponent blijven gebruiken zoals momenteel gedaan in de SPA editor.
 
 1. Inhoud in de component renderen.
 
@@ -111,7 +111,7 @@ De `initializationAsync` kan optioneel een `options` object als parameter:
 
    ![Eigenschappen van tekstcomponent](assets/external-spa-text-properties.png)
 
-   Deze waarden worden als eigenschappen doorgegeven aan het nieuwe gemaakte `AEMText` React-component en kan worden gebruikt om de inhoud te renderen.
+   Deze waarden worden als eigenschappen doorgegeven aan het nieuwe object `AEMText` React-component en kan worden gebruikt om de inhoud te renderen.
 
    ```javascript
    import React from 'react';
@@ -171,7 +171,7 @@ Neem een voorbeeldpagina waar u een tekst van het WKND SPA project moet toevoege
 
 #### Bewerken van tekstinhoud op AEM controleren {#verify-text-edit}
 
-Test nu de component op de actieve AEM-instantie.
+Test nu de component op de actieve AEM.
 
 1. Voer de volgende Maven-opdracht uit vanuit de `aem-guides-wknd-spa` directory zodat kunt u het project bouwen en opstellen aan AEM.
 
@@ -209,7 +209,7 @@ De `AEMText` -component kan nu worden AEM.
 
 #### Pagina-inhoud controleren op AEM {#verify-page-content}
 
-Volg dezelfde stappen in de sectie om te controleren of de pagina kan worden bewerkt [Bewerken van tekstinhoud op AEM controleren](#verify-text-edit).
+Voer dezelfde stappen uit in de sectie om te controleren of de pagina kan worden bewerkt [Bewerken van tekstinhoud op AEM controleren](#verify-text-edit).
 
 ![Een pagina bewerken in AEM](assets/external-spa-edit-page.png)
 
@@ -235,7 +235,7 @@ De `TestPage` ziet er als volgt uit na het toevoegen van de virtuele component.
 
 >[!NOTE]
 >
->Zorg ervoor dat de `AEMText` component heeft `resourceType` Stel de configuratie zo in dat u deze functie kunt inschakelen.
+>Zorg ervoor dat `AEMText` component heeft `resourceType` Stel de configuratie zo in dat u deze functie kunt inschakelen.
 
 U kunt de wijzigingen nu implementeren in AEM volgende stappen in de sectie [Bewerken van tekstinhoud op AEM controleren](#verify-text-edit). Er wordt een tijdelijke aanduiding weergegeven voor de momenteel niet bestaande `text_20` knooppunt.
 
@@ -282,7 +282,7 @@ Nadat de auteur een onderliggende component aan de container heeft toegevoegd, w
 
 ![Container met inhoud in JCR](assets/container-with-content-jcr.png)
 
-Meer componenten en inhoud kunnen nu aan de container worden toegevoegd zoals de auteur vereist en de wijzigingen worden voortgezet.
+Meer componenten en inhoud kunnen nu aan de container worden toegevoegd zoals de auteur vereist en de veranderingen worden voortgeduurd.
 
 #### Eisen en beperkingen {#container-limitations}
 
@@ -291,7 +291,7 @@ Er zijn verschillende vereisten om virtuele containers en enkele beperkingen toe
 * Het beleid om te bepalen welke componenten kunnen worden toegevoegd wordt geërft van de oudercontainer.
 * De directe bovenliggende container van de container die moet worden gemaakt, moet in AEM bestaan.
    * Als de container `root/responsivegrid` bestaat in de AEM container, dan kan een nieuwe container tot stand worden gebracht door de weg te verstrekken `root/responsivegrid/newContainer`.
-   * Niettemin `root/responsivegrid/newContainer/secondNewContainer` is niet mogelijk.
+   * Echter `root/responsivegrid/newContainer/secondNewContainer` is niet mogelijk.
 * Er kan slechts één nieuw componentniveau tegelijk worden gemaakt.
 
 ## Aanvullende aanpassingen {#additional-customizations}
@@ -314,7 +314,7 @@ Stel dat u een SPA hebt waarin de toepassing wordt gerenderd in een `div` van el
 
 1. Voer twee stappen uit in de hoofdtekst van de paginacomponent van de AEM-app:
 
-   1. Een `body.html` voor de paginacomponent.
+   1. Een `body.html` voor de pagina-component.
 
    ![Een bestand body.html maken](assets/external-spa-update-body.gif)
 
@@ -343,7 +343,7 @@ Om het uitgeven binnen AEM voor dit SPA toe te laten, zijn de volgende stappen v
 
 1. Voeg helpers binnen SPA het verpletteren toe.
 
-   * De nieuwe pagina kan de verwachte inhoud nog niet in AEM weergeven. De reden is omdat de router een weg van verwacht `/test` overwegende dat het AEM actieve pad `/wknd-spa-react/us/en/test`. Om het AEM-specifieke gedeelte van URL aan te passen, moet u sommige helpers op de SPA toevoegen.
+   * De nieuw gemaakte pagina kan de verwachte inhoud nog niet in AEM weergeven. De reden is omdat de router een weg van verwacht `/test` overwegende dat het AEM actieve pad `/wknd-spa-react/us/en/test`. Om het AEM-specifieke gedeelte van URL aan te passen, moet u sommige helpers op de SPA toevoegen.
 
    ![Routeringshelper](assets/external-spa-router-helper.png)
 

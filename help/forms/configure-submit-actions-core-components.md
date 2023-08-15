@@ -3,9 +3,9 @@ title: Een verzendhandeling configureren voor een adaptief formulier
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 hide: true
 hidefromtoc: true
-source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3190'
+source-wordcount: '3189'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Dit artikel |
-| Van toepassing op | ✅ adaptieve Form Core-componenten, ❎ [Aangepaste componenten van de Stichting van de Vorm](/help/forms/configuring-submit-actions.md) |
+| Van toepassing op | ✅ adaptieve Form Core-componenten, ❎ [Aangepaste componenten van de Stichting van vormen](/help/forms/configuring-submit-actions.md) |
 
 
 Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier. Forms as a Cloud Service, voor Adaptive Forms op basis van Core Components, biedt een array van vooraf gebouwde verzendhandelingen. Met deze verzendacties kunt u:
@@ -30,7 +30,7 @@ Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn va
 * Verzend naadloos de gegevens naar een gevormde gegevensbron gebruikend het Model van de Gegevens van de Vorm.
 * Verzend de gegevens gemakkelijk naar een REST-eindpunt.
 
-U kunt ook [De standaardverzendhandelingen uitbreiden](custom-submit-action-form.md) om zelf een handeling Verzenden te maken.
+U kunt [De standaardverzendhandelingen uitbreiden](custom-submit-action-form.md) om zelf een handeling Verzenden te maken.
 
 ## Een handeling voor verzenden selecteren en configureren voor een adaptief formulier {#select-and-configure-submit-action}
 
@@ -79,7 +79,7 @@ Als u een e-mail naar een of meer ontvangers wilt verzenden nadat het formulier 
 
 Bovendien **[!UICONTROL Send Email]** Met Actie verzenden kunt u bijlagen en een Document of Record (DoR) bij het e-mailbericht opnemen.
 
-Om het [!UICONTROL Attach Document of Record] , raadpleegt u de documentatie op [Het adaptieve formulier configureren om een Document of Record (DoR) te genereren](generate-document-of-record-core-components.md). U kunt deze optie inschakelen in de eigenschappen van het adaptieve formulier.
+Om het [!UICONTROL Attach Document of Record] Raadpleeg de documentatie bij [Het adaptieve formulier configureren om een Document of Record (DoR) te genereren](generate-document-of-record-core-components.md). U kunt deze optie inschakelen in de eigenschappen van het adaptieve formulier.
 
 <!-- [!NOTE]
 >
@@ -107,15 +107,15 @@ Om het [!UICONTROL Attach Document of Record] , raadpleegt u de documentatie op 
 
 De **[!UICONTROL Submit to SharePoint]** Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® SharePoint-opslag. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft® SharePoint-opslag. Als u de opdracht **[!UICONTROL Submit to SharePoint]** Actie verzenden in een adaptieve vorm:
 
-1. [Een SharePoint-configuratie maken](#create-a-sharepoint-configuration-create-sharepoint-configuration): AEM Forms wordt aangesloten op uw Microsoft® Sharepoint Storage.
-2. [De verzendactie Verzenden naar SharePoint gebruiken in een adaptief formulier](#use-sharepoint-configuartion-in-af): Het verbindt uw Adaptief Formulier met gevormde Microsoft® SharePoint.
+1. [Een SharePoint-configuratie maken](#create-a-sharepoint-configuration-create-sharepoint-configuration): AEM Forms wordt aangesloten op uw Microsoft® SharePoint-opslag.
+2. [De verzendactie Verzenden naar SharePoint gebruiken in een adaptief formulier](#use-sharepoint-configuartion-in-af): Het maakt een verbinding tussen uw Adaptief formulier en de geconfigureerde Microsoft® SharePoint.
 
 ### Een SharePoint-configuratie maken {#create-sharepoint-configuration}
 
 AEM Forms verbinden met uw Microsoft® SharePoint-opslag:
 
 1. Ga naar uw **AEM Forms** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
-1. Selecteer een **Configuratiecontainer**. Klik niet op de controle-doos van de Container van de Configuratie. Klik de naam van de Container van de Configuratie om het te selecteren. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
+1. Selecteer een **Configuratie-container**. Klik niet op de controle-doos van de Container van de Configuratie. Klik de naam van de Container van de Configuratie om het te selecteren. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]**. De configuratietovenaar van SharePoint verschijnt.
    ![SharePoint-configuratie](/help/forms/assets/sharepoint_configuration.png)
 1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]**. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheim, identiteitskaart van de Aannemer voor OAuth URL, zie [Microsoft®-documentatie](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
@@ -130,11 +130,11 @@ AEM Forms verbinden met uw Microsoft® SharePoint-opslag:
 
 1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding wordt de `Connection Successful` wordt weergegeven.
 
-1. Als u een map wilt selecteren om de gegevens op te slaan, selecteert u **SharePoint-site** > **Documentbibliotheek** > **SharePoint-map**, .
+1. Selecteer een map om de gegevens op te slaan **SharePoint-site** > **Documentbibliotheek** > **SharePoint-map**, .
 
    >[!NOTE]
    >
-   >* Standaard worden de `forms-ootb-storage-adaptive-forms-submission` Deze map is beschikbaar op de geselecteerde SharePoint-site. Als de map niet beschikbaar is, gebruikt u de **Map maken** om het te maken.
+   >* Standaard worden de `forms-ootb-storage-adaptive-forms-submission` Deze map is beschikbaar op de geselecteerde SharePoint-site. Als de map niet beschikbaar is, gebruikt u de **Map maken** gebruiken om het te maken.
 
 U kunt deze configuratie voor SharePoint-sites nu gebruiken voor de **Verzenden naar SharePoint** verzenden, actie in een adaptief formulier.
 
@@ -159,7 +159,7 @@ Mapstructuur voor opgeslagen gegevens is `/folder_name/form_name/year/month/date
 
 De **[!UICONTROL Submit using Form Data Model]** Met Actie verzenden worden verzonden Adaptieve formuliergegevens voor het opgegeven gegevensmodelobject in een formuliergegevensmodel naar de gegevensbron. Wanneer u de handeling Verzenden configureert, kunt u een gegevensmodelobject kiezen waarvan de verzonden gegevens u naar de gegevensbron wilt schrijven.
 
-Daarnaast kunt u een formulierbijlage verzenden met behulp van een formuliergegevensmodel en een Document of Record (DoR) naar de gegevensbron. Voor informatie over het formuliergegevensmodel raadpleegt u [[!DNL AEM Forms] Gegevensintegratie](data-integration.md).
+Daarnaast kunt u een formulierbijlage verzenden met behulp van een formuliergegevensmodel en een Document of Record (DoR) naar de gegevensbron. Zie voor informatie over het formuliergegevensmodel [[!DNL AEM Forms] Gegevensintegratie](data-integration.md).
 
 ## Verzenden naar REST-eindpunt {#submit-to-rest-endpoint}
 
@@ -192,7 +192,7 @@ Zoals in de onderstaande afbeelding wordt getoond: `param1` en `param2` worden d
 
 ![Rest Endpoint-verzendhandeling configureren](assets/action-config.png)
 
-U kunt ook **[!UICONTROL Enable POST request]** en geef een URL op om de aanvraag te posten. Als u gegevens wilt verzenden naar de AEM server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM server. Bijvoorbeeld, `/content/forms/af/SampleForm.html`. Gebruik absoluut pad om gegevens naar een andere server te verzenden.
+U kunt **[!UICONTROL Enable POST request]** en geef een URL op om de aanvraag te posten. Als u gegevens wilt verzenden naar de AEM server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM server. Bijvoorbeeld, `/content/forms/af/SampleForm.html`. Gebruik absoluut pad om gegevens naar een andere server te verzenden.
 
 >[!NOTE]
 >
@@ -223,15 +223,15 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## Een AEM-workflow aanroepen {#invoke-an-aem-workflow}
 
-De **[!UICONTROL Invoke an AEM Workflow]** Bij Actie verzenden wordt een adaptief formulier gekoppeld aan een [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). Wanneer een formulier wordt verzonden, wordt de bijbehorende workflow automatisch gestart bij de instantie Auteur. U kunt het gegevensbestand, de gehechtheid, en Document van Verslag aan de ladingsplaats van het werkschema of aan een variabele opslaan. Als de workflow is gemarkeerd voor externe gegevensopslag en geconfigureerd voor externe gegevensopslag, is alleen de optie Variabele beschikbaar. U kunt uit de lijst van variabelen selecteren beschikbaar voor het werkschemamodel. Als de workflow later wordt gemarkeerd voor externe gegevensopslag en niet op het moment dat de workflow wordt gemaakt, moet u ervoor zorgen dat de vereiste variabele configuraties aanwezig zijn.
+De **[!UICONTROL Invoke an AEM Workflow]** Een adaptief formulier wordt gekoppeld aan een [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). Wanneer een formulier wordt verzonden, wordt de bijbehorende workflow automatisch gestart bij de instantie Auteur. U kunt het gegevensbestand, de gehechtheid, en Document van Verslag aan de ladingsplaats van het werkschema of aan een variabele opslaan. Als de workflow is gemarkeerd voor externe gegevensopslag en geconfigureerd voor externe gegevensopslag, is alleen de optie Variabele beschikbaar. U kunt uit de lijst van variabelen selecteren beschikbaar voor het werkschemamodel. Als de workflow later wordt gemarkeerd voor externe gegevensopslag en niet op het moment dat de workflow wordt gemaakt, moet u ervoor zorgen dat de vereiste variabele configuraties aanwezig zijn.
 
 Met de handeling Verzenden wordt het volgende geplaatst op de laadlocatie van de werkstroom, of de variabele als de werkstroom is gemarkeerd voor externe gegevensopslag:
 
-* **Gegevensbestand**: Het bevat gegevens die naar het adaptieve formulier worden verzonden. U kunt de **[!UICONTROL Data File Path]** om de naam van het bestand en het pad van het bestand ten opzichte van de lading op te geven. De `/addresschange/data.xml` pad maakt een map met de naam `addresschange` en plaatst deze ten opzichte van de lading. U kunt ook alleen `data.xml` om alleen verzonden gegevens te verzenden zonder een maphiërarchie te maken. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
+* **Gegevensbestand**: Het bevat gegevens die naar het adaptieve formulier worden verzonden. U kunt de **[!UICONTROL Data File Path]** om de naam van het bestand en het pad van het bestand ten opzichte van de laadbewerking op te geven. Bijvoorbeeld de `/addresschange/data.xml` pad maakt een map met de naam `addresschange` en plaatst deze ten opzichte van de lading. U kunt ook alleen `data.xml` om alleen verzonden gegevens te verzenden zonder een maphiërarchie te maken. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
 
-* **Bijlagen**: U kunt de **[!UICONTROL Attachment Path]** om de mapnaam op te geven waarin de bijlagen worden opgeslagen die naar het adaptieve formulier zijn geüpload. De map wordt gemaakt ten opzichte van de lading. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
+* **Bijlagen**: U kunt de opdracht **[!UICONTROL Attachment Path]** om de mapnaam op te geven waarin de bijlagen worden opgeslagen die naar het adaptieve formulier zijn geüpload. De map wordt gemaakt ten opzichte van de lading. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
 
-* **Document van record**: Het bevat het Document van Verslag dat voor het Aangepaste Vorm wordt geproduceerd. U kunt de **[!UICONTROL Document of Record Path]** Hiermee geeft u de naam op van het bestand Document of Record en het pad van het bestand ten opzichte van de laadbewerking. De `/addresschange/DoR.pdf` pad maakt een map met de naam `addresschange` ten opzichte van de lading en plaatst het `DoR.pdf` ten opzichte van de lading. U kunt ook alleen `DoR.pdf` alleen Document of Record opslaan zonder een mappenhiërarchie te maken. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
+* **Document van record**: Het bevat het Document of Record dat is gegenereerd voor het adaptieve formulier. U kunt de **[!UICONTROL Document of Record Path]** Hiermee geeft u de naam op van het bestand Document of Record en het pad van het bestand ten opzichte van de laadbewerking. Bijvoorbeeld de `/addresschange/DoR.pdf` pad maakt een map met de naam `addresschange` ten opzichte van de lading en plaatst het `DoR.pdf` ten opzichte van de lading. U kunt ook alleen `DoR.pdf` alleen Document of Record opslaan zonder een mappenhiërarchie te maken. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
 
 Voordat u de **[!UICONTROL Invoke an AEM Workflow]** Met Handeling verzenden wordt het volgende geconfigureerd voor de **[!UICONTROL AEM DS settings service]** configuratie:
 
@@ -239,7 +239,7 @@ Voordat u de **[!UICONTROL Invoke an AEM Workflow]** Met Handeling verzenden wor
 
 * **[!UICONTROL Processing Server User Name]**: Gebruikersnaam van workflowgebruiker
 
-* **[!UICONTROL Processing Server Password]**: Wachtwoord workflowgebruiker
+* **[!UICONTROL Processing Server Password]**: Wachtwoord van workflowgebruiker
 
 
 
@@ -256,7 +256,7 @@ AEM Forms aansluiten op uw Microsoft® OneDrive-opslag:
 
 1. Ga naar uw **AEM Forms-auteur** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® OneDrive]**.
 1. Wanneer u de **[!UICONTROL Microsoft® OneDrive]**, u wordt doorgestuurd naar **[!UICONTROL OneDrive Browser]**.
-1. Selecteer een **Configuratiecontainer**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
+1. Selecteer een **Configuratie-container**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]**. De OneDrive-configuratietovenaar wordt weergegeven.
 
    ![OneDrive-configuratiescherm](/help/forms/assets/onedrive-configuration.png)
@@ -273,7 +273,7 @@ AEM Forms aansluiten op uw Microsoft® OneDrive-opslag:
 
 1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding wordt de `Connection Successful` wordt weergegeven.
 
-1. Nu selecteert u **[!UICONTROL OneDrive Container]** > **[Map OneDrive]**  om de gegevens op te slaan.
+1. Nu selecteert u **[!UICONTROL OneDrive Container]** > **[Map OneDrive]**  de gegevens opslaan.
 
    >[!NOTE]
    >
@@ -294,7 +294,7 @@ U kunt de gemaakte OneDrive-opslagconfiguratie in een adaptief formulier gebruik
 
 1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to OneDrive]**.
    ![OneDrive-GIF](/help/forms/assets/onedrive-video.gif)
-1. Selecteer **[!UICONTROL Storage Configuration]**, waar u de gegevens wilt opslaan.
+1. Selecteer de **[!UICONTROL Storage Configuration]**, waar u de gegevens wilt opslaan.
 1. Klikken **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
 
 Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft® OneDrive-opslag.
@@ -304,15 +304,15 @@ De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/mo
 
 De **[!UICONTROL Submit to Azure Blob Storage]**  Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® Azure-portal. U kunt de formuliergegevens, het bestand, de bijlagen of het document met records verzenden naar de aangesloten Azure Storage-containers. De handeling Verzenden voor Azure Blob Storage gebruiken:
 
-1. [Een Azure Blob Storage Container maken](#create-a-azure-blob-storage-container-create-azure-configuration): Het verbindt AEM Forms met Azure Storage containers.
-2. [Azure Storage Configuration in een Adaptive Form gebruiken](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Het verbindt uw Adaptief Vorm met gevormde Azure containers van de Opslag.
+1. [Een Azure Blob Storage Container maken](#create-a-azure-blob-storage-container-create-azure-configuration): AEM Forms wordt aangesloten op Azure Storage containers.
+2. [Azure Storage Configuration in een Adaptive Form gebruiken](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Het verbindt uw Adaptief Vorm met gevormde Azure opslagcontainers.
 
 ### Een Azure Blob Storage Container maken {#create-azure-configuration}
 
 AEM Forms aansluiten op uw Azure Storage-containers:
 1. Ga naar uw **AEM Forms-auteur** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure Storage]**.
 1. Wanneer u de **[!UICONTROL Azure Storage]**, u wordt doorgestuurd naar **[!UICONTROL Azure Storage Browser]**.
-1. Selecteer een **Configuratiecontainer**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
+1. Selecteer een **Configuratie-container**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]**. De wizard Azure Storage Configuration wordt weergegeven.
 
    ![Azure Storage Configuration](/help/forms/assets/azure-storage-configuration.png)
@@ -338,7 +338,7 @@ U kunt de gemaakte Azure Storage Container-configuratie in een Adaptief formulie
 1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to Azure Blob Storage]**.
    ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)
 
-1. Selecteer **[!UICONTROL Storage Configuration]**, waar u de gegevens wilt opslaan.
+1. Selecteer de **[!UICONTROL Storage Configuration]**, waar u de gegevens wilt opslaan.
 1. Klikken **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
 
 Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven configuratie van de Azure Storage Container.
@@ -350,11 +350,11 @@ Om waarden van een configuratie te plaatsen, [OSGi-configuraties genereren met d
 
 Een verzendactie kan synchrone of asynchrone verzending gebruiken.
 
-**Synchrone verzending**: Webformulieren zijn meestal geconfigureerd voor synchroon verzenden. Wanneer gebruikers een formulier verzenden in een synchrone verzending, worden ze omgeleid naar een bevestigingspagina, een pagina om u te bedanken of een pagina om een fout op te lossen bij het verzenden. U kunt de **[!UICONTROL Use asynchronous submission]** om de gebruikers om te leiden naar een webpagina of een bericht te tonen bij verzending.
+**Synchrone verzending**: Webformulieren zijn traditioneel geconfigureerd voor synchroon verzenden. Wanneer gebruikers een formulier verzenden in een synchrone verzending, worden ze omgeleid naar een bevestigingspagina, een pagina om u te bedanken of een pagina om een fout op te lossen. U kunt de **[!UICONTROL Use asynchronous submission]** om de gebruikers om te leiden naar een webpagina of een bericht te tonen bij verzending.
 
 ![Verzendhandeling configureren](assets/thank-you-setting.png)
 
-**Asynchrone verzending**: Moderne webervaringen zoals toepassingen van één pagina krijgen steeds populairder, waarbij de webpagina statisch blijft terwijl interactie tussen client en server plaatsvindt op de achtergrond. U kunt deze ervaring nu aanbieden met Adaptive Forms via [asynchrone verzending configureren](asynchronous-submissions-adaptive-forms.md).
+**Asynchrone verzending**: Moderne webervaringen zoals toepassingen van één pagina krijgen steeds meer populariteit, waarbij de webpagina statisch blijft terwijl interactie tussen client en server plaatsvindt op de achtergrond. U kunt deze ervaring nu aanbieden met Adaptive Forms via [asynchrone verzending configureren](asynchronous-submissions-adaptive-forms.md).
 
 ## Revalidatie op de server in adaptieve vorm {#server-side-revalidation-in-adaptive-form}
 
@@ -378,7 +378,7 @@ Gebruik de **[!UICONTROL Revalidate on server]** onder Adaptieve formuliercontai
 
 Validatie op de server inschakelen
 
-Als de eindgebruiker deze validaties overslaat en de formulieren verzendt, wordt de validatie opnieuw uitgevoerd door de server. Als de validatie op het servereinde mislukt, wordt de verzendtransactie gestopt. De eindgebruiker krijgt het oorspronkelijke formulier opnieuw te zien. De vastgelegde gegevens en verzonden gegevens worden als een fout aan de gebruiker gepresenteerd.
+Als de eindgebruiker deze validaties overslaat en de formulieren verzendt, wordt de validatie opnieuw uitgevoerd door de server. Als de validatie aan het einde van de server mislukt, wordt de verzendtransactie gestopt. De eindgebruiker krijgt het oorspronkelijke formulier opnieuw te zien. De vastgelegde gegevens en verzonden gegevens worden als een fout aan de gebruiker gepresenteerd.
 
 >[!NOTE]
 >
@@ -386,7 +386,7 @@ Als de eindgebruiker deze validaties overslaat en de formulieren verzendt, wordt
 
 ### Aangepaste functies ondersteunen in validatie-expressies {#supporting-custom-functions-in-validation-expressions-br}
 
-Als er **complexe validatieregels** Het exacte validatiescript bevindt zich in aangepaste functies en de auteur roept deze aangepaste functies aan vanuit de expressie voor veldvalidatie. Als u deze aangepaste functiebibliotheek bekend en beschikbaar wilt maken tijdens het uitvoeren van validaties aan de serverzijde, kan de auteur van het formulier de naam van AEM clientbibliotheek configureren onder de **[!UICONTROL Basic]** tabblad Adaptieve formuliercontainereigenschappen, zoals hieronder weergegeven.
+Als er soms **complexe validatieregels** Het exacte validatiescript bevindt zich in aangepaste functies en de auteur roept deze aangepaste functies aan vanuit de expressie voor veldvalidatie. Als u deze aangepaste functiebibliotheek bekend en beschikbaar wilt maken tijdens het uitvoeren van validaties aan de serverzijde, kan de auteur van het formulier de naam van AEM clientbibliotheek configureren onder de **[!UICONTROL Basic]** tabblad Adaptieve formuliercontainereigenschappen, zoals hieronder weergegeven.
 
 ![Aangepaste functies ondersteunen in validatie-expressies](assets/clientlib-cat.png)
 

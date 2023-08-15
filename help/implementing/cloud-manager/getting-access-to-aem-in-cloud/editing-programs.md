@@ -2,9 +2,9 @@
 title: Programma's bewerken
 description: Leer hoe u uw productie- en sandboxprogramma's kunt bewerken om de opties aan te passen nadat u deze hebt gemaakt.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 Gebruikers met de vereiste machtigingen kunnen bewerken [productieprogramma&#39;s die in uw organisatie zijn gemaakt](creating-production-programs.md) en [sandboxprogramma&#39;s die in uw organisatie zijn gemaakt.](creating-sandbox-programs.md) Door een programma te bewerken kunt u:
 
 * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa en vice versa toe.
-* Sites of middelen verwijderen uit een bestaand programma met zowel Sites als Middelen.
+* Sites of middelen verwijderen uit een bestaand programma met zowel sites als middelen.
 * Voeg een tweede, ongebruikte oplossingsrecht aan of een bestaand programma of als nieuw Programma toe.
 * Sandboxprogramma&#39;s verwijderen.
 
 ## Machtigingen {#permissions}
 
-U moet lid zijn van de **Zakelijke eigenaar** rol voor het bewerken van programma&#39;s of het verwijderen van sandboxprogramma&#39;s.
+U moet lid zijn van de **Zakelijke eigenaar** rol om programma&#39;s te bewerken of sandboxprogramma&#39;s te verwijderen.
 
 ## Een programma bewerken {#editing}
 
@@ -34,7 +34,7 @@ Voer de volgende stappen uit om een programma te bewerken.
 
    ![Programma bewerken, optie](assets/edit-program-overview.png)
 
-1. De **Programma bewerken** pagina wordt geopend. Op de **Algemeen** bewerken.
+1. De **Programma bewerken** pagina wordt geopend. Op de **Algemeen** de naam en beschrijving van het programma bewerken.
 
    * Voor een programma moet ten minste één oplossing worden gekozen.
 
@@ -61,9 +61,9 @@ Elke keer dat een programma wordt bewerkt, inclusief het toevoegen of verwijdere
 
 Als de uitgebreide beveiliging van uw productieprogramma is ingeschakeld, kunt u een extra **Uitgebreide beveiliging** tabblad is beschikbaar in het dialoogvenster **Programma bewerken** venster om te bevestigen dat de functie actief is voor het programma.
 
-![Uitgebreide beveiliging actief voor een programma](assets/edit-program-enhanced.png)
+![Enhanced Security actief voor een programma](assets/edit-program-enhanced.png)
 
-Deze instelling kan niet worden gewijzigd nadat het programma is gemaakt. Voor meer informatie over de verbeterde beveiligingsoptie raadpleegt u [Productieprogramma&#39;s maken](creating-production-programs.md) document.
+Deze instelling kan niet worden gewijzigd nadat het programma is gemaakt. Zie voor meer informatie over de verbeterde beveiligingsoptie [Productieprogramma&#39;s maken](creating-production-programs.md) document.
 
 ## Sandbox-programma&#39;s verwijderen {#delete-sandbox-program}
 
@@ -89,4 +89,4 @@ U kunt ook op de knop Ovaal op de kaart van uw programma klikken op de overzicht
 
 >[!NOTE]
 >
->Alleen sandboxprogramma&#39;s kunnen worden verwijderd. Productieprogramma&#39;s kunnen niet worden geschrapt.
+>Alleen sandboxprogramma&#39;s kunnen worden verwijderd. Het productieprogramma kan niet worden geschrapt.

@@ -3,9 +3,9 @@ title: Productiepijpleidingen configureren
 description: Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu's te bouwen en op te stellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Leer hoe te om de pijpleidingen van de Productie te vormen om uw code aan de milieu&#39;s van de Productie te bouwen en op te stellen. Een productiepijpleiding stelt code eerst aan het milieu van het Stadium op, en op goedkeuring stelt de zelfde code aan het milieu van de Productie op.
 
-Een gebruiker moet beschikken over de **[Implementatiebeheer](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** rol om productiepijpleidingen te configureren.
+Een gebruiker moet beschikken over **[Implementatiebeheer](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** rol om productiepijpleidingen te configureren.
 
 >[!NOTE]
 >
->Een productiepijpleiding kan niet worden opgezet tot de programmaverwezenlijking volledig is, heeft een git bewaarplaats minstens één tak, en een productie en het opvoeren milieu wordt geplaatst.
+>Een productiepijpleiding kan pas worden ingesteld nadat de programma&#39;s zijn gemaakt, een opslagplaats voor kombuizen ten minste één tak heeft en er een productie- en halteplaats is ingesteld.
 
 Alvorens u begint uw code op te stellen, moet u uw pijpleidingsmontages van vormen [!UICONTROL Cloud Manager].
 
@@ -41,7 +41,7 @@ Als u uw programma hebt ingesteld en ten minste één omgeving hebt die de [!UIC
 
    ![De pijplijnkaart op het overzicht van de Manager van het Programma](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
-1. De **Productiepijpleiding toevoegen** wordt weergegeven. Een **Naam pijpleiding** om uw pijpleiding samen met de volgende opties te identificeren. Klikken **Doorgaan**.
+1. De **Productiepijpleiding toevoegen** wordt weergegeven. Geef een **Naam pijpleiding** om uw pijpleiding samen met de volgende opties te identificeren. Klikken **Doorgaan**.
 
    **Implementatieactivering** - U hebt de volgende opties wanneer het bepalen van de plaatsingstrekkers om de pijpleiding te beginnen.
 
@@ -50,7 +50,7 @@ Als u uw programma hebt ingesteld en ten minste één omgeving hebt die de [!UIC
 
    **Belangrijk gedrag metrische fouten** - Tijdens het instellen of bewerken van pijpleidingen **Implementatiebeheer** heeft de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitspoorten wordt ontmoet. De beschikbare opties zijn:
 
-   * **Telkens vragen** - Dit is de standaardinstelling en u moet handmatig ingrijpen bij belangrijke fouten.
+   * **Telkens vragen** - Dit is de standaardinstelling en u moet handmatig ingrijpen als een belangrijke fout optreedt.
    * **Direct mislukken** - Indien geselecteerd, wordt de pijpleiding geannuleerd wanneer een belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
    * **Direct doorgaan** - Indien geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
@@ -115,14 +115,14 @@ Om de configuratie van de full-stack de productiepijplijn van de codeproductie t
 
    ![Volledige stapelcode](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Klikken **Doorgaan** aan **Experience Audit** kunt u de paden definiëren die altijd moeten worden opgenomen in de controle van de ervaring.
+1. Klikken **Doorgaan** aan de **Experience Audit** kunt u de paden definiëren die altijd moeten worden opgenomen in de controle van de ervaring.
 
    ![Erviteitscontrole toevoegen](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
 1. Geef een pad op dat moet worden opgenomen in de Experience Audit.
 
    * Pagina-paden moeten beginnen met `/`.
-   * Als u bijvoorbeeld `https://wknd.site/us/en/about-us.html` in de Controle van de Ervaring, ga de weg in `/us/en/about-us.html`.
+   * Als u bijvoorbeeld `https://wknd.site/us/en/about-us.html` Voer in de Experience Audit het pad in `/us/en/about-us.html`.
 
    ![Een pad definiëren voor de Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
@@ -158,12 +158,12 @@ Om de configuratie van de full-stack de productiepijplijn van de codeproductie t
    * **Git Branch** - Deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
       * Voer de eerste paar tekens van de naam van de vertakking in en met de functie voor automatisch aanvullen van dit veld kunt u de overeenkomende vertakkingen vinden om u te helpen selecteren.
    * **Codelocatie** - Deze optie bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
-      * Voor configuratieleidingen voor het web is dit meestal het pad dat `conf.d`, `conf.dispatcher.d`, en `opt-in` directory&#39;s.
+      * Voor configuratieleidingen voor het web is dit meestal het pad dat `conf.d`, `conf.dispatcher.d`, en `opt-in` mappen.
       * Als de projectstructuur bijvoorbeeld is gegenereerd op basis van de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) het pad zou `/dispatcher/src`.
    * **Pauzeren vóór implementatie naar productie** - Deze optie pauzeert de pijpleiding alvorens aan productie op te stellen.
    * **Gepland** - Met deze optie kan de gebruiker de geplande implementatie van de productie inschakelen.
 
-   ![Code op de weblijst](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
+   ![Code weblijst](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
 
 1. Klikken **Opslaan** om uw pijpleiding te redden.
 
@@ -177,9 +177,9 @@ De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managin
 
 Met frontend pijpleidingen wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en kan het ontwikkelingsproces worden versneld.
 
-Zie [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces samen met enkele overwegingen werkt , moet u zich ervan bewust zijn dat dit proces alle mogelijkheden biedt .
+Zie [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces samen met een aantal overwegingen werkt , moet u zich ervan bewust zijn dat dit proces alle mogelijkheden biedt .
 
-## Verzendpakketten overslaan {#skip-dispatcher-packages}
+## Verzendingspakketten overslaan {#skip-dispatcher-packages}
 
 Als u de pakketten wilt die van de dispatcher als deel van uw pijpleiding worden gebouwd, maar hen niet willen worden gepubliceerd om opslag te bouwen, kunt u het publiceren van hen onbruikbaar maken, die pijpleidingsloopduur kunnen verminderen.
 

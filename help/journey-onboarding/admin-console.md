@@ -2,9 +2,9 @@
 title: De Admin Console openen
 description: Zodra u de voorbereiding noodzakelijk aan het aan boord gaan en de grondbeginselen van structuur AEMaaCS begrijpt, bent u bereid om in de Admin Console voor het eerst te registreren.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
@@ -22,25 +22,25 @@ Als systeembeheerder bent u verantwoordelijk voor het beheer van gebruikers binn
 * Begrijp wat een Adobe ID is.
 * Aanmelden bij Admin Console.
 * Begrijp hoe te om uw voorrechten als systeembeheerder via Admin Console te herzien.
-* Zorg dat u weet hoe u contact kunt opnemen met de ondersteuning van Adobe.
+* Zorg dat u weet hoe u contact kunt opnemen met de ondersteuning van Adoben voor hulp.
 
 ## De Admin Console {#admin-console}
 
-De Adobe Admin Console is een centrale plaats voor het beheer en beheer van uw Adobe-productlicenties en -gebruikers. Met de Admin Console kunt u gebruikers op één locatie maken en beheren in plaats van binnen de verschillende afzonderlijke oplossingen.
+De Adobe Admin Console is een centrale plaats voor het beheer en beheer van uw Adobe productlicenties en gebruikers. Met de Admin Console kunt u gebruikers op één locatie maken en beheren in plaats van binnen de verschillende afzonderlijke oplossingen.
 
 ## Adobe ID {#adobe-id}
 
-Als u zich wilt aanmelden bij de Admin Console, hebt u een Adobe ID nodig. En Adobe ID is een account die is gekoppeld aan een specifiek e-mailadres dat vereist is voor aanmelding en toegang AEM as a Cloud Service of een van uw Adobe-oplossingen. Door je Adobe ID te gebruiken, bewaar je al je Adobe-plannen en -producten die aan één account zijn gekoppeld.
+Als u zich wilt aanmelden bij de Admin Console, hebt u een Adobe ID nodig. En Adobe ID is een account die is gekoppeld aan een specifiek e-mailadres dat vereist is voor aanmelding en toegang AEM as a Cloud Service of een van uw Adobe-oplossingen. Door je Adobe ID te gebruiken, bewaar je al je Adobe plannen en producten die aan één account zijn gekoppeld.
 
 Wanneer u als systeembeheerder uw team instelt in de Admin Console, geeft u het e-mailadres op dat als Adobe ID wordt gebruikt.
 
 Er zijn drie typen Adobe-id&#39;s:
 
-* **Persoonlijke id**: Dit is het standaardtype Adobe ID en wordt gemaakt op adobe.com. Dit account wordt beheerd door Adobe en iedereen kan een dergelijk account maken.
+* **Persoonlijke id**: Dit is het standaardtype van Adobe ID en wordt gecreeerd in adobe.com. Dit account wordt beheerd door Adobe en iedereen kan een dergelijk account maken.
 
-* **Enterprise ID**: Organisaties willen doorgaans de controle over de gebruikersaccounts vergroten. Alleen systeembeheerders kunnen id&#39;s voor bedrijven maken en de organisatie heeft deze accounts in eigendom met alleen Adobe als host.
+* **Enterprise ID**: Organisaties willen doorgaans de controle over de gebruikersaccounts vergroten. Alleen systeembeheerders kunnen id&#39;s voor ondernemingen maken en de organisatie heeft deze accounts in eigendom met Adobe die alleen als host fungeert.
 
-* **Federated ID**: Met federatieve id&#39;s neemt de organisatie de volledige eigendom en controle over de accounts. Hiervoor moet uw organisatie de Adobe Experience Cloud integreren met uw SSO2-systeem (Single Sign-On). Dit staat gebruikers toe om tegen het systeem van SSO van hun organisatie eerder dan een rekening voor authentiek te verklaren die door Adobe wordt ontvangen.
+* **Federated ID**: Met federatieve id&#39;s neemt de organisatie de volledige eigendom en controle over de rekeningen. Hiervoor moet uw organisatie de Adobe Experience Cloud integreren met uw SSO2-systeem (Single Sign-On). Dit staat gebruikers toe om tegen het systeem van SSO van hun organisatie eerder dan een rekening voor authentiek te verklaren die door Adobe wordt ontvangen.
 
 Als systeembeheerder, kunt u aan boord van zich en uw team op AEM as a Cloud Service het gebruiken van persoonlijke IDs besluiten alvorens onderneming of gefedereerde IDs opstelling zijn. Zodra de onderneming of gefedereerde IDs opstelling zijn, kunnen de leden aan het gebruiken van die IDs worden overgegaan.
 
@@ -48,7 +48,7 @@ Als systeembeheerder, kunt u aan boord van zich en uw team op AEM as a Cloud Ser
 
 Alvorens u de Admin Console kunt gebruiken om gebruikers binnen uw team te beheren, moet u ervoor zorgen dat u tot het kunt behoorlijk toegang hebben en de aangewezen toestemmingen hebben.
 
-1. Als systeembeheerder ontvangt u meerdere e-mails van Adobe als onderdeel van het instapproces. Zoek de welkomstmail die de informatie over de organisatienaam verstrekt waaraan u toegang hebt verleend.
+1. Als systeembeheerder ontvangt u meerdere e-mails van de Adobe als onderdeel van het instapproces. Zoek de welkomstmail die de informatie over de organisatienaam verstrekt waaraan u toegang hebt verleend.
 
 1. Klik op de knop **Aan de slag** koppeling in uw welkomstbericht om naar de Admin Console te navigeren. Als u het e-mailbericht niet kunt vinden, opent u een browser rechtstreeks naar de Admin Console op [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
@@ -80,17 +80,17 @@ Gefeliciteerd, systeembeheerder!
 
 AEM as a Cloud Service wordt vooraf geconfigureerd met Adobe Identity Management System (ook wel IMS genoemd) voor verificatie. Er is niets u als systeembeheerder moet doen om dit toe te laten.
 
-Door IMS te gebruiken, consolideert AEM as a Cloud Service de login ervaring tussen AEM en de rest van Adobe Experience Cloud. Organisaties met meerdere Adobe-producten hebben vooral baat bij het maken van op rol gebaseerde groepen in de Admin Console en het toewijzen van toegang tot meerdere producten, waaronder AEM as a Cloud Service via IMS.
+Door IMS te gebruiken, consolideert AEM as a Cloud Service de login ervaring tussen AEM en de rest van Adobe Experience Cloud. Organisaties met meerdere producten van de Adobe hebben vooral baat bij het maken van op rol gebaseerde groepen in de Admin Console en het toewijzen van toegang tot meerdere producten, waaronder AEM as a Cloud Service via IMS.
 
 In het volgende gedeelte van deze instapreis leert u meer over productprofielen en kunt u gebruikers toewijzen.
 
 ## Contact opnemen met Adobe-ondersteuning {#support}
 
-Als u problemen hebt, kunt u Adobe-ondersteuning openen via de Admin Console. De **Ondersteuning** kunt u verschillende Adobe-ondersteuningsfuncties gebruiken via een eenvoudige en gebruiksvriendelijke interface.
+Als u problemen hebt, kunt u de ondersteuning voor Adoben openen via de Admin Console. De **Ondersteuning** kunt u via een eenvoudige en gebruiksvriendelijke interface toegang krijgen tot verschillende functies voor ondersteuning van Adoben.
 
 ![Het tabblad Ondersteuning](/help/journey-onboarding/assets/support-menu.png)
 
-Op het tabblad kunt u zaken maken en beheren, rechtstreeks chatten met Adobe-vertegenwoordigers voor klantenondersteuning en sessies plannen met experts. Systeembeheerders en supportbeheerders moeten zich aanmelden voor toegang tot ondersteuningsgevallen en sessieopties van experts.
+Op het tabblad kunt u zaken maken en beheren, rechtstreeks chatten met Adobe-vertegenwoordigers van klantenondersteuning en sessies plannen met experts. Systeembeheerders en supportbeheerders moeten zich aanmelden voor toegang tot ondersteuningsgevallen en sessieopties van experts.
 
 ## Volgende functies {#whats-next}
 
@@ -99,7 +99,7 @@ Nu u dit document hebt gelezen, moet u:
 * Begrijp wat en Adobe ID is.
 * Aanmelden bij Admin Console.
 * Begrijp hoe te om uw voorrechten als systeembeheerder via Admin Console te herzien.
-* Zorg dat u weet hoe u contact kunt opnemen met de ondersteuning van Adobe.
+* Zorg dat u weet hoe u contact kunt opnemen met de ondersteuning van Adoben voor hulp.
 
 U bent klaar om uw instapreis voort te zetten door te leren hoe te [teamleden toewijzen aan productprofielen van Cloud Manager](assign-profiles-cloud-manager.md) zodat uw collega&#39;s ook toegang hebben tot AEMaaCS.
 
@@ -110,5 +110,5 @@ Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de in
 * [Overzicht van Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) - Een uitgebreid overzicht van de Admin Console
 * [Adobe ID maken of bijwerken](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Leer hoe u een Adobe ID maakt, wijzigt en meerdere Adobe-id&#39;s beheert.
 * [SAML 2.0-verificatiehandler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html) - AEM schepen met een SAML authentificatiemanager. Deze manager verleent steun voor SAML 2.0 het Protocol van het Verzoek van de Authentificatie (Web-SSO profiel) gebruikend de POST van HTTP band.
-* [Administratieve rollen](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) - Met behulp van de Adobe Admin Console kunnen organisaties een flexibele beheershiërarchie definiëren waarmee toegang tot en het gebruik van producten van de Adobe in een verfijnde volgorde kunnen worden beheerd.
+* [Administratieve rollen](https://helpx.adobe.com/enterprise/using/admin-roles.ug.html) - Met behulp van de Adobe Admin Console kunnen organisaties een flexibele beheershiërarchie definiëren die een geavanceerd beheer van de toegang tot en het gebruik van producten in de Adobe mogelijk maakt.
 * [Ondersteunings- en sessies met experts](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) - Leer hoe u toegang krijgt tot de ondersteuningsopties op de Admin Console, hoe u uw ondersteuningsgevallen beheert, hoe u een sessie met een expert instelt, enzovoort.

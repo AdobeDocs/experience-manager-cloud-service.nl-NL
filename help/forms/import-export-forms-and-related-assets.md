@@ -3,9 +3,9 @@ title: Elementen importeren en exporteren
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: U kunt Adaptieve Forms en gerelateerde elementen importeren en exporteren naar een AEM. Zo kunt u formulieren migreren of verplaatsen naar andere systemen.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1272'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Elementen importeren en exporteren {#importing-and-exporting-assets-to-aem-forms}
 
-U kunt formulieren, thema&#39;s, sjablonen, documentfragmenten, thema&#39;s en andere elementen verplaatsen tussen verschillende [!DNL AEM Forms] instanties. Een dergelijke verplaatsing is vereist wanneer systemen worden gemigreerd of formulieren van een ontwikkelings- of staging-server naar een productieserver worden verplaatst.
+U kunt formulieren, thema&#39;s, sjablonen, documentfragmenten, thema&#39;s en andere elementen verplaatsen tussen verschillende [!DNL AEM Forms] instanties. Een dergelijke verplaatsing is vereist wanneer u systemen migreert of formulieren verplaatst van een ontwikkelings- of staging-server naar een productieserver.
 
 Voor de activa waarvoor uploaden en importeren via de [!DNL AEM Forms] UI wordt gesteund, is het gebruiken van de UI van Forms de geadviseerde manier voor uitvoer of invoer. Het wordt niet aanbevolen om AEM pakketbeheer te gebruiken voor het exporteren of importeren van dergelijke elementen.
 
@@ -23,22 +23,22 @@ Voor de activa waarvoor uploaden en importeren via de [!DNL AEM Forms] UI wordt 
 
 Exporteren en importeren via [!DNL AEM Forms] De gebruikersinterface wordt ondersteund voor alle elementen, met uitzondering van sjablonen voor adaptieve formulieren en beleid voor adaptieve formulierinhoud. Bij het exporteren van een adaptief formulier uit [!DNL AEM Forms] UI, worden de gerelateerde adaptieve formuliersjabloon en het inhoudsbeleid niet automatisch geëxporteerd als andere gerelateerde elementen.
 
-Voor deze elementtypen moet u AEM Package Manager gebruiken om een CRX-pakket te maken op de bron- AEM server en het pakket op de doelserver te installeren. Voor informatie over het maken en installeren van pakketten raadpleegt u [Distribueren naar AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html).
+Voor deze elementtypen moet u AEM Package Manager gebruiken om een CRX-pakket te maken op de bron- AEM server en het pakket op de doelserver te installeren. Zie voor informatie over het maken en installeren van pakketten [Distribueren naar AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html).
 
 ### Forms- en Documenten downloaden {#download-forms-amp-documents-assets}
 
 Forms en Documenten downloaden:
 
 1. Aanmelden bij de [!DNL AEM Forms] -instantie.
-1. Experience Manager tikken ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/Smock_Compass_18_N.svg) pictogram> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Tikken, Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/Smock_Compass_18_N.svg) pictogram> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Selecteer de formulierelementen en tik op de **[!UICONTROL Download]** pictogram.
 1. Kies in het (de) downloadmiddel(en) een van de volgende opties en tik **[!UICONTROL Download]**.
 
    * **Downloaden als CRX-pakket:** Gebruik de optie om alle geselecteerde elementen en gerelateerde afhankelijkheden te downloaden en te verplaatsen van een [!DNL AEM Forms] aan een andere instantie. Alle elementen en mappen worden als crx-pakket gedownload. Alle formulierelementen, waaronder de formulieren die zijn geschreven in AEM (Adaptieve Forms en Adaptieve formulierfragmenten), PDF-documenten en bronnen (XSD&#39;s, XFS, afbeeldingen), kunnen worden gedownload als pakket van [!DNL AEM Forms] UI.
 Het voordeel van het downloaden van elementen als pakket is dat ook elementen worden gedownload die door het geselecteerde element zijn gebruikt om te downloaden. Als u bijvoorbeeld een adaptief formulier hebt waarin een formuliersjabloon, XSD en een afbeelding worden gebruikt. Wanneer u dit adaptieve formulier selecteert en het als pakket downloadt, bevat het gedownloade pakket ook de formuliersjabloon, XSD en de afbeelding. Alle metagegevenseigenschappen (inclusief aangepaste eigenschappen) die aan het element zijn gekoppeld, worden ook gedownload.
 
-   * **Elementen downloaden als binaire bestanden:** Gebruik de optie om alleen formuliersjablonen (XDP), PDF forms (PDF), document (PDF) en bronnen (afbeeldingen, schema&#39;s, opmaakmodellen) te downloaden. U kunt deze elementen bewerken met externe toepassingen. De formulierbestanden met binaire bestanden, zoals XSD&#39;s, XDP&#39;s, afbeeldingen, PDF en XDP&#39;s, worden gedownload als ZIP-bestand.
-U kunt geen adaptieve Forms, adaptieve formulierfragmenten en thema&#39;s downloaden met **[!UICONTROL Download asset(s) as binary files]** optie. Gebruik **[!UICONTROL Download as CRX Package]** optie.
+   * **Elementen downloaden als binaire bestanden:** Gebruik de optie om alleen formuliersjablonen (XDP), PDF forms (PDF), documenten (PDF) en bronnen (afbeeldingen, schema&#39;s, opmaakmodellen) te downloaden. U kunt deze elementen bewerken met externe toepassingen. De formulierbestanden met binaire bestanden, zoals XSD&#39;s, XDP&#39;s, afbeeldingen, PDF en XDP&#39;s, worden gedownload als ZIP-bestand.
+U kunt geen adaptieve Forms, adaptieve formulierfragmenten en thema&#39;s downloaden met **[!UICONTROL Download asset(s) as binary files]** -optie. Als u deze middelen wilt downloaden, kunt u het beste **[!UICONTROL Download as CRX Package]** -optie.
 
    De geselecteerde elementen worden gedownload als een archief (.zip-bestand).
 
@@ -51,11 +51,11 @@ U kunt geen adaptieve Forms, adaptieve formulierfragmenten en thema&#39;s downlo
 Forms en Documenten uploaden:
 
 1. Aanmelden bij de [!DNL AEM Forms] -instantie.
-1. Experience Manager tikken ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/Smock_Compass_18_N.svg) pictogram> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Tikken, Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/Smock_Compass_18_N.svg) pictogram> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Tikken **Maken** >**Bestand uploaden**. Er wordt een dialoogvenster voor het uploaden of verpakken weergegeven.
-1. Blader in het dialoogvenster naar het te importeren pakket of archief en selecteer dit. U kunt ook PDF-documenten, XSD&#39;s, afbeeldingen, stijlpagina&#39;s en XDP-formulieren selecteren. Tik op **[!UICONTROL Open]**. De map of de bestandsnaam die u selecteert, mag geen speciale tekens bevatten.
+1. Blader in het dialoogvenster naar het pakket of het archief dat u wilt importeren en selecteer dit. U kunt ook PDF-documenten, XSD&#39;s, afbeeldingen, stijlpagina&#39;s en XDP-formulieren selecteren. Tik op **[!UICONTROL Open]**. De map of de bestandsnaam die u selecteert, mag geen speciale tekens bevatten.
 
-   Controleer in het dialoogvenster de details van de elementen die worden geüpload en tik op **[!UICONTROL Upload]**.
+   Controleer in het dialoogvenster de details van de te uploaden middelen en tik op **[!UICONTROL Upload]**.
 
    Als u een bestaand formulierelement uploadt, wordt het element bijgewerkt.
 
@@ -74,7 +74,7 @@ U kunt thema&#39;s exporteren in [!DNL AEM Forms] die u kunt gebruiken in andere
 Een thema downloaden:
 
 1. Aanmelden bij de [!DNL AEM Forms] -instantie.
-1. Experience Manager tikken ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/Smock_Compass_18_N.svg) pictogram> **[!UICONTROL Forms]** > **[!UICONTROL Themes]**.
+1. Tikken, Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/Smock_Compass_18_N.svg) pictogram> **[!UICONTROL Forms]** > **[!UICONTROL Themes]**.
 1. Selecteer het thema en tik op **[!UICONTROL Download]**. Het thema wordt gedownload als een archief (.zip-bestand).
 
 ### Een thema uploaden {#uploading-a-theme}
@@ -169,7 +169,7 @@ U kunt AEM pakketbeheer gebruiken om workflowtoepassingen te exporteren. De proc
 1. Geef een naam, versie en groep voor het pakket op. Klik op **[!UICONTROL OK]**.
 1. Klikken **[!UICONTROL Edit]** en opent u de **[!UICONTROL Filters]** tab. Klik op **[!UICONTROL Add Filter]**. Geef het pad van de workflowtoepassing op. Bijvoorbeeld /etc/fd/dashboard/startpoints/homemortgauge. Klik op **[!UICONTROL Add rule]**.
 
-1. Open de **[!UICONTROL Advanced]** tab. Selecteren **[!UICONTROL Merge]** of **[!UICONTROL Overwrite]** in ACL het Behandelen gebied. Klik op **[!UICONTROL Save]**.
+1. Open de **[!UICONTROL Advanced]** tab. Selecteren **[!UICONTROL Merge]** of **[!UICONTROL Overwrite]** in ACL Behandelend gebied. Klik op **[!UICONTROL Save]**.
 1. Klikken **[!UICONTROL Build]** om het pakket te maken.
 
    Nadat het pakket is gemaakt, kunt u het pakket downloaden en naar de andere server importeren. De workflowtoepassing wordt weergegeven op de server waarop het pakket is geüpload.
@@ -221,9 +221,9 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-[!DNL AEM Forms] UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
+[!DNL AEM Forms] UI lets you search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 
-When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -239,7 +239,7 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 

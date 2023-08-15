@@ -3,9 +3,9 @@ title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Onder aan de lijst met pijpleidingen staan algemene opties.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ellipsieknoop naast de pijpleiding u in werking stelt uitgezocht **Uitvoeren** in het menu.
+1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ellipsieknoop naast de pijpleiding u in werking stelt selecteren **Uitvoeren** in het menu.
 
 1. De pijpleidingslooppas begint en door **Status** kolom.
 
@@ -68,7 +68,7 @@ Afhankelijk van het type pijplijn, kunt u de looppas kunnen annuleren door de el
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ellipsieknoop naast de pijpleiding u in werking stelt uitgezocht **Verwijderen** in het menu.
+1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ellipsieknoop naast de pijpleiding u in werking stelt selecteren **Verwijderen** in het menu.
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Afhankelijk van het type pijplijn, kunt u de looppas kunnen annuleren door de el
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ellipsieknoop naast de pijpleiding u in werking stelt uitgezocht **Details weergeven** in het menu.
+1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ellipsieknoop naast de pijpleiding u in werking stelt selecteren **Details weergeven** in het menu.
 
 1. U wordt genomen aan de detailspagina van de lopende pijpleiding.
 

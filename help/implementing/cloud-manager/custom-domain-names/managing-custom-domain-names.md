@@ -2,9 +2,9 @@
 title: Aangepaste domeinnamen beheren
 description: Leer hoe u met Cloud Manager aangepaste domeinnamen kunt weergeven, bijwerken, vervangen en verwijderen.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ Gebruik de **Weergeven en bijwerken** om de details van om het even welk van uw 
 
 1. Klik op de knop met de ellips helemaal rechts van de rij.
 
-1. Selecteer **Weergeven en bijwerken** optie.
+1. Selecteer de **Weergeven en bijwerken** -optie.
 
 ## SSL-certificaat van aangepaste domeinnaam bijwerken {#update-cert}
 
-U kunt [dezelfde stappen volgen om een aangepaste domeinnaam weer te geven en bij te werken](#view-and-update) om het SSL-certificaat van een aangepaste domeinnaam bij te werken.
+U kunt volgen [dezelfde stappen volgen om een aangepaste domeinnaam weer te geven en bij te werken](#view-and-update) om het SSL-certificaat van een aangepaste domeinnaam bij te werken.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Een gebruiker met de **Zakelijke eigenaar** of **Implementatiebeheer** Met de ro
 
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 
-1. Ga naar de **Domeininstellingen** pagina van **Omgevingen** scherm.
+1. Ga naar de **Domeininstellingen** pagina van de **Omgevingen** scherm.
 
 1. Identificeer de rij van de naam van het douanedomein u wenst te schrappen.
 

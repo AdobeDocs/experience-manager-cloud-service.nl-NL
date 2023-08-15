@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Communicatie
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Synchrone verwerking gebruiken {#sync-processing-introduction}
 
-Forms as a Cloud Service - Communicatie APIs staat u toe om, merkgeoriënteerde en gepersonaliseerde mededelingen tot stand te brengen samen te stellen en te leveren zoals bedrijfscorrespondentie, documenten, verklaringen, claimverwerkingsbrieven, voordeelberichten, claimverwerkingsbrieven, maandelijkse rekeningen, en welkomstkits. U kunt Communicatie APIs gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, DPL, IPL, en ZPL formaten te produceren.
+Forms as a Cloud Service - Met communicatie-API&#39;s kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, aanvraagverwerkingsbrieven, aankondigingen van voordelen, aanvraagverwerkingsbrieven, maandelijkse facturen en welkomstkits. U kunt Communicatie APIs gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, DPL, IPL, en ZPL formaten te produceren.
 
 Overweeg een scenario waar u één of meerdere malplaatjes en veelvoudige verslagen van de gegevens van XML voor elke malplaatje hebt. U kunt communicatie-API&#39;s gebruiken om een afdrukdocument te genereren voor elke record. <!-- You can also combine the records into a single document. --> Het resultaat is een niet-interactief PDF-document. In een niet-interactief PDF-document kunnen gebruikers geen gegevens invoeren in de desbetreffende velden.
 
 Forms as a Cloud Service - Communications biedt API&#39;s (asynchrone API&#39;s) op aanvraag en in batch voor het genereren van geplande documenten:
 
-* Synchrone API&#39;s zijn geschikt voor gebruik op aanvraag, met lage latentie en het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op gebruikersacties. Het genereren van een document bijvoorbeeld nadat een gebruiker een formulier heeft ingevuld.
+* Synchrone API&#39;s zijn geschikt voor gebruik op aanvraag, met lage latentie en het genereren van documenten met één record. Deze API&#39;s zijn geschikter voor gebruiksgevallen die zijn gebaseerd op handelingen van gebruikers. Het genereren van een document bijvoorbeeld nadat een gebruiker een formulier heeft ingevuld.
 
-* Batch-API&#39;s (Asynchrone API&#39;s) zijn geschikt voor geplande toepassingen waarbij meerdere documenten met hoge doorvoer worden gegenereerd. Deze API&#39;s genereren documenten batchgewijs. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
+* Batch-API&#39;s (Asynchrone API&#39;s) zijn geschikt voor geplande toepassingen waarbij meerdere documenten met hoge doorvoer worden gegenereerd. Met deze API&#39;s worden documenten batchgewijs gegenereerd. Zo worden telefoonrekeningen, creditcardafschriften en uitkeringsafschriften elke maand gegenereerd.
 
 ## Synchrone bewerkingen gebruiken {#batch-operations}
 
@@ -41,19 +41,19 @@ Een synchrone bewerking is een proces waarbij documenten lineair worden gegenere
 
 API-bewerkingen van één gebruiker ondersteunen twee verificatietypen:
 
-* **Basisverificatie**: De basisauthentificatie is een eenvoudige authentificatieregeling die in het protocol van HTTP wordt gebouwd. De client verzendt HTTP-aanvragen met de machtigingsheader die het woord Basic bevat, gevolgd door een spatie en een base64-coded tekenreeks username:password. Als u bijvoorbeeld autoriseert als beheerder/beheerder, verzendt de client Basic [base64-coded string username]: [base64-gecodeerd tekenreekswachtwoord].
+* **Basisverificatie**: De basisauthentificatie is een eenvoudige authentificatieregeling die in het protocol van HTTP wordt gebouwd. De client verzendt HTTP-aanvragen met de machtigingsheader die het woord Basic bevat, gevolgd door een spatie en een base64-coded tekenreeks username:password. Als u bijvoorbeeld autoriseert als beheerder/beheerder, verzendt de client Basic [base64-coded string username]: [base64-coded string password].
 
 * **Tokengebaseerde verificatie:** De op token-gebaseerde authentificatie gebruikt een toegangstoken (het teken van de authentificatie van de Drager) om verzoeken aan Experience Manager as a Cloud Service te maken. AEM Forms as a Cloud Service verstrekt APIs om het toegangstoken veilig terug te winnen. Om het teken terug te winnen en te gebruiken om een verzoek voor authentiek te verklaren:
 
-   1. [as a Cloud Service referentie van Experience Manager ophalen uit de ontwikkelaarsconsole](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [As a Cloud Service referentie van Experience Manager ophalen uit de ontwikkelaarsconsole](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. [Installeer de as a Cloud Service credentie van de Experience Manager op uw milieu](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (De Server van de Toepassing, de Server van het Web, of andere niet-AEM servers) die worden gevormd om verzoeken naar (maken vraag) de wolkendienst te verzenden.
    1. [Een JWT-token genereren en deze uitgewisseld met Adobe IMS API&#39;s voor een toegangstoken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. Voer de Experience Manager-API met het toegangstoken uit als een token voor Dragerverificatie.
    1. [Stel de juiste machtigingen in voor de gebruiker van de technische account in de Experience Manager-omgeving](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
-   >[!NOTE]
-   >
-   >Adobe raadt aan tokenverificatie op een productieomgeving te gebruiken.
+  >[!NOTE]
+  >
+  >Adobe raadt aan tokengebaseerde verificatie op een productieomgeving te gebruiken.
 
 <!-- 
 

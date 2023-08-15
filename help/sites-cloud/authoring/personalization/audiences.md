@@ -2,10 +2,10 @@
 title: Audiences beheren
 description: Met de console Soorten publiek kunt u soorten publiek voor uw Adobe Target-account maken, organiseren en beheren of segmenten voor ContextHub beheren
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 11%
+source-wordcount: '962'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,7 @@ Om een segment ContextHub in de console van het publiek tot stand te brengen:
 
    >[!NOTE]
    >
-   >U kunt de gewijzigde lijst sorteren door op **Gewijzigd** te tikken of te klikken om in aflopende volgorde te sorteren om de nieuwe doelgroep te zien.
+   >U kunt de gewijzigde lijst sorteren door te tikken of te klikken **gewijzigd** om te sorteren op aflopende volgorde om nieuw gecreëerd publiek weer te geven.
 
 Voor verder detail over het creëren van segmenten die ContextHub gebruiken, zie de het Vormen Segmentatie met documentatie ContextHub. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
@@ -87,7 +87,7 @@ U kunt het richten regels voor elk van de volgende attributen tot stand brengen:
 | **Sitepagina&#39;s** | Doelbezoekers die zich op een specifieke pagina bevinden of een specifieke parameter mbox hebben. | Zie [Documentatie over sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) in Adobe Target. |
 | **Browser** | U kunt zich richten op gebruikers die een specifieke browser of specifieke browseropties gebruiken wanneer zij uw pagina bezoeken. | Zie [Documentatie voor browseropties](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) in Adobe Target. |
 | **Bezoekerprofiel** | Doelbezoekers die voldoen aan specifieke profielparameters. | Zie [Documentatie bezoekersprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html) in Adobe Target. |
-| **Verkeersbronnen** | Doelbezoekers op basis van het zoekprogramma of de bestemmingspagina die hen naar uw site verwijst. | Zie [Documentatie verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) in Adobe Target. |
+| **verkeersbronnen** | Doelbezoekers op basis van het zoekprogramma of de bestemmingspagina die hen naar uw site verwijst. | Zie [Documentatie verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) in Adobe Target. |
 
 ## Een publiek wijzigen in de console Soorten publiek {#modifying-an-audience-in-the-audiences-console}
 
@@ -99,4 +99,4 @@ U kunt om het even welk publiek ContextHub van de console van het Publiek uitgev
 
 1. Klik of tik in de navigatieconsole op **Personalisatie**. Klikken of tikken **Soorten publiek**.
 1. Tik of klik op het pictogram naast het ContextHub-segment dat u wilt bewerken en tik of klik op **Bewerken**.
-1. Breng desgewenst wijzigingen aan in de segmenteditor. Zie de documentatie ContextHub voor meer informatie. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->
+1. Breng om het even welke veranderingen in de segmentredacteur aan. Zie de documentatie ContextHub voor meer informatie. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

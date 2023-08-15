@@ -2,9 +2,9 @@
 title: Contentfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit. Leer hoe u ze kunt aanpassen.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1812'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Inhoudsfragmenten, gebaseerd op een inhoudsfragmentmodel, worden toegewezen aan 
 
 * Alle inhoud wordt opgeslagen onder de `jcr:content/data` knooppunt van het element:
 
-   * De elementgegevens worden opgeslagen onder het master subknooppunt:
+   * De elementgegevens worden opgeslagen onder het hoofdsubknooppunt:
      `jcr:content/data/master`
 
    * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie: bijvoorbeeld `jcr:content/data/myvariation`
@@ -106,7 +106,7 @@ Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met 
 
 * De component staat tussenliggende inhoud toe:
 
-   * Hier kunt u andere elementen (afbeeldingen, enzovoort) tussen de alinea&#39;s van het fragment waarnaar wordt verwezen plaatsen.
+   * Hier kunt u met de component andere elementen (afbeeldingen, enzovoort) tussen de alinea&#39;s van het fragment waarnaar wordt verwezen plaatsen.
 
    * Voor tussenliggende inhoud moet u:
 
@@ -176,7 +176,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
 * **Inhoudsfragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-  Met deze interface kunt u op abstracte wijze werken met een inhoudsfragment.
+  Met deze interface kunt u op abstracte wijze met een inhoudsfragment werken.
 
   De interface voorziet u van de middelen:
 

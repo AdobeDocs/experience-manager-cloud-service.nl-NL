@@ -1,9 +1,9 @@
 ---
 title: Experience Audit Dashboard
 description: Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO door een duidelijke, informatieve dashboardinterface voldoen.
-source-git-commit: 7a8e6c3d226b02c65943629d0df196252218aa3c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ De **Inzichten** bevat een korte beschrijving van de aanbevelingen die u kunt do
 
 Tik of klik op de knop **Meer weergeven** om het volledige dashboard te openen.
 
-In de **Inzichten en aanbevelingen** in deze sectie vindt u een gedetailleerd overzicht van aanbevelingen die u kunt uitvoeren, met een duidelijke waardeaanduiding die gekoppeld is aan de prestatiewinst, samen met het beïnvloede percentage pagina&#39;s. Dit staat u toe om aan deze aanbevelingen voor uw teams gemakkelijk voorrang te geven.
+In de **Inzichten en aanbevelingen** in deze sectie vindt u een gedetailleerd overzicht van aanbevelingen die u kunt uitvoeren, met een duidelijke waardeaanduiding die gekoppeld is aan de prestatiewinst, samen met het beïnvloede percentage pagina&#39;s. Dit laat u gemakkelijk aan deze aanbevelingen voor uw teams voorrang geven.
 
 ![Inzichten en aanbevelingen](assets/insights-recommendations.png)
 
@@ -105,7 +105,7 @@ De **Problemen** het lusje vat om het even welke prestatiesproblemen samen die i
 
 Tik of klik op de knop **Meer weergeven** om het volledige dashboard te openen.
 
-In de **Inzichten en aanbevelingen** in de sectie vindt u een gedetailleerdere lijst met aanbevelingen die kunnen worden uitgevoerd, met een duidelijke waarde-indicator die gekoppeld is aan prestatiewinsten en aan het beïnvloede percentage pagina&#39;s. Dit staat u toe om aan deze aanbevelingen voor uw teams gemakkelijk voorrang te geven.
+In de **Inzichten en aanbevelingen** in de sectie vindt u een gedetailleerdere lijst met aanbevelingen die kunnen worden uitgevoerd, met een duidelijke waarde-indicator die gekoppeld is aan prestatiewinsten en aan het beïnvloede percentage pagina&#39;s. Dit laat u gemakkelijk aan deze aanbevelingen voor uw teams voorrang geven.
 
 ![Inzichten en aanbevelingen](assets/insights-recommendations.png)
 

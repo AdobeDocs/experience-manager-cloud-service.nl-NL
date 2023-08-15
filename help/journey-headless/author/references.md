@@ -2,9 +2,9 @@
 title: Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten
 description: Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud, voor inhoud, andere fragmenten en andere activa (media). Introduceer de noodzaak voor en de mechaniek van geneste fragmenten voor CMS-creatie zonder koppen.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '728'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Dit artikel bouwt op deze voort zodat begrijpt u hoe te om verwijzingen te gebru
 ## Doelstelling {#objective}
 
 * **Publiek**: Geavanceerd
-* **Doelstelling**: Introduceer het gebruik van verwijzingen voor het Creëren van CMS zonder hoofd. Welke soorten verwijzingen beschikbaar zijn, en wat zijn hun doeleinden:
+* **Doelstelling**: Introduceer het gebruik van verwijzingen voor CMS-ontwerpen zonder koptekst. Welke soorten verwijzingen beschikbaar zijn, en wat zijn hun doeleinden:
 
    * Content References
    * Verwijzingen naar element/media
@@ -43,7 +43,7 @@ Content Reference do just that - they allow you to reference any other content. 
 
 ## Verwijzingen naar element/media {#assets-media-references}
 
-In een tekstblok kan naar elementen (bijvoorbeeld afbeeldingen of media) worden verwezen met de opdracht **Element invoegen** optie. Hiermee wordt een browser geopend waarin u het element kunt selecteren.
+In een tekstblok kan naar elementen (bijvoorbeeld afbeeldingen of media) worden verwezen met de opdracht **Element invoegen** -optie. Hiermee wordt een browser geopend waarin u het element kunt selecteren.
 
 ![Inhoudsfragmenten - Element invoegen](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -56,9 +56,9 @@ U kunt bijvoorbeeld de volgende modellen van inhoudsfragmenten definiëren:
 * Plaats
 * Bedrijf
 * Persoon
-* Awards
+* Uitreiking
 
-Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers....en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
+Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers...en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
 
 En een persoon kan een Prijs (of misschien twee) hebben.
 
@@ -79,14 +79,14 @@ Als auteur bent u niet verantwoordelijk voor het definiëren van deze relaties (
 
 ### Geneste fragmenten ontwerpen {#author-nested-fragment}
 
-Verwijzingen naar fragmenten ontwerpen is vrij eenvoudig (hoewel het veld gewoonlijk niet wordt gelabeld als **Fragmentverwijzing**). U kunt de verwijzing rechtstreeks invoeren of (waarschijnlijker) het mappictogram selecteren om een browser te openen waarin u door het gewenste fragment kunt navigeren en het gewenste fragment kunt selecteren.
+Verwijzingen naar fragmenten ontwerpen is vrij eenvoudig (hoewel het veld doorgaans niet wordt aangeduid als **Fragmentverwijzing**). U kunt de verwijzing rechtstreeks invoeren of (waarschijnlijker) het mappictogram selecteren om een browser te openen waarin u door het gewenste fragment kunt navigeren en het gewenste fragment kunt selecteren.
 
 ![Inhoudsfragmenten - verwijzingen](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
 De definitie van de besturingselementen van het inhoudsfragmentmodel:
 
 * of u meerdere referenties kunt selecteren om toe te voegen
-* de modeltypen inhoudsfragmenten die u kunt selecteren; In het Content Fragment Model worden de fragmentmodellen gedefinieerd die zijn toegestaan voor de referentie, zodat AEM alleen fragmenten presenteert die op die modellen zijn gebaseerd.
+* de modeltypen van inhoudsfragmenten die u kunt selecteren; het model van het Fragment van de Inhoud bepaalt de fragmentmodellen die voor de verwijzing worden toegestaan, zodat AEM slechts fragmenten presenteert die op die modellen worden gebaseerd.
 
 ### Door geneste fragmenten navigeren {#navigate-nested-fragment}
 
@@ -122,7 +122,7 @@ Nu u over verwijzingen en structuur in Inhoudsfragmenten hebt geleerd, is de vol
 
    * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [Modellen van inhoudsfragmenten - gegevenstypen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
       * [Modellen van inhoudsfragmenten - eigenschappen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
@@ -131,4 +131,4 @@ Nu u over verwijzingen en structuur in Inhoudsfragmenten hebt geleerd, is de vol
 
 * Reis van architect zonder hoofdinhoud AEM
 
-* AEM doorlopende vertaalreis
+* AEM doorsnedenloze vertaalreis

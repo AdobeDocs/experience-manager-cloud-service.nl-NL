@@ -4,9 +4,9 @@ description: Leer de krachtige functies van de Site-rail om u te helpen uw site 
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -17,14 +17,14 @@ Leer de krachtige functies van de Site-rail om u te helpen uw site eenvoudig aan
 
 ## Overzicht {#overview}
 
-Met de Site-rail kunt u het thema en de sjabloonbronnen van uw site beheren. [Als andere rails](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) zoals de rails Inhoudsstructuur, Verwijzingen of Tijdlijn wordt de sitelijn weergegeven als het meest linkse deelvenster in de siteconsole, waarin informatie over het geselecteerde item wordt weergegeven. In tegenstelling tot andere spoorstaven geldt de Sitrails alleen voor de wortels van de Sitepagina.
+Met de sitetraject kunt u het thema en de sjabloonbronnen van uw site beheren. [Net als andere rails](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) zoals de rails Inhoudsstructuur, Verwijzingen of Tijdlijn wordt de sitelijn weergegeven als het meest linkse deelvenster in de siteconsole, waarin informatie over het geselecteerde item wordt weergegeven. In tegenstelling tot andere spoorstaven geldt de Sitrails alleen voor de wortels van de Sitepagina.
 
 De site-rail wordt gebruikt voor het beheer van thema- en sjabloongerelateerde informatie voor uw site, waaronder:
 
 * [Themabronnen downloaden](#downloading-theme-sources)
 * [Sjabloonbronnen downloaden, zoals draadframes](#downloading-template-resources)
 * [Themaversies weergeven en wijzigen](#theme-vrsions)
-* [Toelatend de front-end pijpleiding](#enabling-the-front-end-pipeline)
+* [Toelaten van de front-end pijpleiding](#enabling-the-front-end-pipeline)
 
 >[!TIP]
 >
@@ -44,7 +44,7 @@ Tik of klik op **Themabronnen downloaden** om een lokale kopie van het sitethema
 
 [Sitesjablonen](site-templates.md) kan informatie bevatten naast de structuur van uw site-inhoud en [site-thema.](site-themes.md) Sitesjablonen kunnen bijvoorbeeld draadframemodellen of andere sitegerelateerde bestanden bevatten.
 
-Als uw site is gebaseerd op een sitesjabloon en de Site-rail in de siteconsole wordt weergegeven, selecteert u de hoofdmap van uw site om themagegevens over de site weer te geven, inclusief aanvullende sitebronnen.
+Als uw site is gebaseerd op een sitesjabloon en de Site-rail in de siteconsole wordt weergegeven, selecteert u de hoofdmap van uw site om themagegevens over de site weer te geven, inclusief extra bronnen voor de site.
 
 ![Themabronnen downloaden](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
@@ -56,7 +56,7 @@ Als uw site is gebaseerd op een sitesjabloon, is het mogelijk dat het thema al i
 
 Terwijl de Site-rail in de siteconsole wordt weergegeven, selecteert u de hoofdmap van uw site om themagegevens over de site weer te geven.
 
-![De versies van de plaats in spoorstaaf](/help/sites-cloud/administering/assets/theme-versions.png)
+![De versies van de plaats in spoorweg](/help/sites-cloud/administering/assets/theme-versions.png)
 
 De huidige versie van het thema wordt weergegeven met de knoeiboel voor vastleggen samen met de tijdstempel van de laatste update.
 
@@ -72,7 +72,7 @@ Als AEM ontdekt dat een nieuwere versie van het thema via de front-end pijpleidi
 
 U kunt de **Versie selecteren** om bij te werken naar de nieuwe themaversie.
 
-## Het toelaten van de Voor-Eind Pijpleiding {#enabling-front-end-pipeline}
+## Het toelaten van de Voorste Pijpleiding {#enabling-front-end-pipeline}
 
 Als uw plaats niet gebruikend een plaatsmalplaatje werd gecreeerd, is het niet mogelijk om de front-end pijpleiding te gebruiken om zijn thema aan te passen en op te stellen.
 

@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f69b348b7de6c6537a9945793e3397bf4fe30f98
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2653'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Dit document bevat richtsnoeren voor de ontwikkeling van AEM as a Cloud Service 
 
 ## Code moet clustervriendelijk zijn {#cluster-aware}
 
-De code die in AEM as a Cloud Service loopt moet zich ervan bewust zijn dat het altijd in een cluster loopt. Dit betekent dat er altijd meer dan één instantie actief is. De code moet veerkrachtig zijn, vooral omdat een instantie op om het even welk ogenblik zou kunnen worden tegengehouden.
+De code die in AEM as a Cloud Service loopt moet zich bewust zijn van het feit dat het altijd in een cluster loopt. Dit betekent dat er altijd meer dan één instantie actief is. De code moet veerkrachtig zijn, vooral omdat een instantie op om het even welk ogenblik zou kunnen worden tegengehouden.
 
 Tijdens de update van AEM as a Cloud Service, zijn er instanties met oude en nieuwe code die parallel lopen. Daarom moet oude code niet breken met inhoud die door nieuwe code wordt gecreeerd en de nieuwe code moet oude inhoud kunnen behandelen.
 
@@ -29,7 +29,7 @@ Als de primaire code in de cluster moet worden geïdentificeerd, kan de API voor
 
 ## Staat in geheugen {#state-in-memory}
 
-De staat moet niet in geheugen worden bewaard maar in bewaarplaats voortbestaan. Anders kan deze status verloren gaan als een instantie wordt gestopt.
+De staat moet niet in geheugen worden bewaard maar in bewaarplaats voortgeduurd. Anders kan deze status verloren gaan als een instantie wordt gestopt.
 
 ## Status van het bestandssysteem {#state-on-the-filesystem}
 
@@ -45,19 +45,19 @@ Net als bij alles wat asynchroon gebeurt, zoals bij observatiegebeurtenissen, ka
 
 Code die als achtergrondtaken wordt uitgevoerd, moet ervan uitgaan dat de instantie waarin deze wordt uitgevoerd, op elk gewenst moment kan worden ingedrukt. Daarom moet de code veerkrachtig zijn, en het allerbelangrijkste herbruikbaar. Dat betekent dat als de code opnieuw wordt uitgevoerd, deze niet opnieuw van het begin moet beginnen, maar eerder dicht bij het punt waar de code is gebleven. Hoewel dit geen nieuw vereiste voor dit soort code is, is het in AEM as a Cloud Service waarschijnlijker dat een instantie zal verdwijnen.
 
-Om de problemen tot een minimum te beperken, moeten zo mogelijk langdurige banen worden vermeden, en die moeten ten minste herbruikbaar zijn. Voor het uitvoeren van dergelijke banen gebruikt u Sling Jobs, die minstens eenmaal een garantie hebben en die daarom zo snel mogelijk opnieuw zal worden uitgevoerd als ze worden onderbroken. Maar ze zouden waarschijnlijk niet opnieuw van het begin moeten beginnen. Voor het plannen van dergelijke taken kunt u het beste de opdracht [Verkooptaken](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) planner als dit opnieuw verzekert minstens eenmaal uitvoering.
+Om de problemen tot een minimum te beperken, moeten zo mogelijk langdurige banen worden vermeden, en deze moeten ten minste herbruikbaar zijn. Voor het uitvoeren van dergelijke banen gebruikt u Sling Jobs, die minstens eenmaal een garantie hebben en die daarom zo snel mogelijk opnieuw zal worden uitgevoerd als ze worden onderbroken. Maar ze zouden waarschijnlijk niet opnieuw van het begin moeten beginnen. Voor het plannen van dergelijke taken kunt u het beste de opdracht [Verkooptaken](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) planner als dit opnieuw verzekert minstens eenmaal uitvoering.
 
 De Sling Commons Planner zou niet voor het plannen moeten worden gebruikt aangezien de uitvoering niet kan worden gewaarborgd. Het is nog waarschijnlijker dat het gepland is.
 
-Op dezelfde manier, met alles dat asynchroon gebeurt, zoals handelend op observatiegebeurtenissen, (het zijn gebeurtenissen JCR of Sling resource), kan niet gegarandeerd worden uitgevoerd en daarom met voorzichtigheid worden gebruikt. Dit geldt al voor AEM implementaties in het heden.
+Op dezelfde manier, met alles dat asynchroon gebeurt, zoals handelend op observatiegebeurtenissen, (het zijn gebeurtenissen JCR of Sling resource), kan niet worden gewaarborgd om worden uitgevoerd en daarom moet met voorzichtigheid worden gebruikt. Dit geldt al voor AEM implementaties in het heden.
 
 ## Uitgaande HTTP-verbindingen {#outgoing-http-connections}
 
-Het wordt sterk geadviseerd dat om het even welke uitgaande verbindingen van HTTP redelijk plaatsen verbind en lees onderbrekingen; De voorgestelde waarden zijn 1 seconde voor de verbindingsperiode en 5 seconden voor read timeout. De nauwkeurige aantallen moeten worden bepaald gebaseerd op de prestaties van het backend systeem die deze verzoeken behandelen.
+Het wordt sterk aanbevolen dat uitgaande HTTP-verbindingen redelijke time-outs voor verbinding en lezen instellen. De voorgestelde waarden zijn 1 seconde voor de time-out van de verbinding en 5 seconden voor de time-out bij lezen. De nauwkeurige aantallen moeten worden bepaald gebaseerd op de prestaties van het backend systeem die deze verzoeken behandelen.
 
 Voor code die deze time-outs niet toepast, AEM instanties die op AEM as a Cloud Service worden uitgevoerd een algemene time-out afdwingen. Deze onderbrekingswaarden zijn 10 seconden voor verbind vraag en 60 seconden voor gelezen vraag naar verbindingen.
 
-Adobe raadt het gebruik van de meegeleverde [Apache HttpComponents Client 4.x-bibliotheek](https://hc.apache.org/httpcomponents-client-ga/) voor het maken van HTTP-verbindingen.
+Adobe beveelt aan de verstrekte informatie te gebruiken [Apache HttpComponents Client 4.x-bibliotheek](https://hc.apache.org/httpcomponents-client-ga/) voor het maken van HTTP-verbindingen.
 
 Alternatieven waarvan bekend is dat ze werken, maar waarvoor de afhankelijkheid zelf nodig kan zijn, zijn:
 
@@ -67,7 +67,7 @@ Alternatieven waarvan bekend is dat ze werken, maar waarvoor de afhankelijkheid 
 
 Naast het verstrekken van onderbrekingen ook zou een juiste behandeling van dergelijke onderbrekingen en onverwachte HTTP- statuscodes moeten worden uitgevoerd.
 
-## Aanvraagsnelheidslimieten verwerken {#rate-limit-handling}
+## Aanvraagsnelheidslimieten afhandelen {#rate-limit-handling}
 
 >[!NOTE]
 >De HTTP-foutreactie verandert van 503 in 429 in de week van 7 augustus 2023.
@@ -84,11 +84,11 @@ Native binaire bestanden en bibliotheken mogen niet worden geïmplementeerd of g
 
 Bovendien mag de code niet proberen native binaire bestanden of native Java-extensies (bijvoorbeeld JNI) te downloaden tijdens runtime.
 
-## Geen streamingbinders via AEM as a Cloud Service {#no-streaming-binaries}
+## Geen streamingbinaire getallen via AEM as a Cloud Service {#no-streaming-binaries}
 
 De binaire getallen zouden door CDN moeten worden betreden, die binaire getallen buiten de kern AEM diensten zal dienen.
 
-Niet gebruiken `asset.getOriginal().getStream()`, die het downloaden van binair binair getal op de van de dienst van de AEM in werking stelt.
+Gebruik bijvoorbeeld niet `asset.getOriginal().getStream()`, die het downloaden van binair binair getal op de van de dienst van de AEM in werking stelt.
 
 ## Geen reverse Replication-agents {#no-reverse-replication-agents}
 
@@ -154,7 +154,7 @@ De logniveaus zijn als volgt:
 | 0 | Fatale fout | De handeling is mislukt en het installatieprogramma kan niet doorgaan. |
 |---|---|---|
 | 1 | Fout | De handeling is mislukt. De installatie gaat door, maar een deel van CRX is niet correct geïnstalleerd en werkt niet. |
-| 2 | Waarschuwing | De actie is geslaagd maar heeft problemen ondervonden. CRX werkt mogelijk niet correct. |
+| 2 | Waarschuwing | De actie is geslaagd maar heeft problemen ondervonden. CRX werkt mogelijk wel of niet correct. |
 | 3 | Informatie | De actie is geslaagd. |
 
 ### Thread Dumps {#thread-dumps}
@@ -201,11 +201,11 @@ Ook nuttig voor het zuiveren, heeft de console van de Ontwikkelaar een verbindin
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Voor productieprogramma&#39;s wordt de toegang tot de Developer Console gedefinieerd door &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor elke gebruiker met een productprofiel dat hem toegang geeft tot AEM as a Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - Developer Role&quot; vereist voor statusdumps en moeten de browser van de opslagplaats en gebruikers ook worden gedefinieerd in het productprofiel van AEM gebruikers of AEM beheerders voor zowel auteur- als publicatieservices om gegevens van beide services te bekijken. Voor meer informatie over het instellen van gebruikersmachtigingen raadpleegt u [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Voor productieprogramma&#39;s wordt de toegang tot de Developer Console gedefinieerd door &quot;Cloud Manager - Developer Role&quot; in de Admin Console, terwijl voor sandboxprogramma&#39;s de Developer Console beschikbaar is voor elke gebruiker met een productprofiel dat hem toegang geeft tot AEM as a Cloud Service. Voor alle programma&#39;s is &quot;Cloud Manager - Developer Role&quot; vereist voor statusdumps en moeten de browser van de opslagplaats en gebruikers ook worden gedefinieerd in het productprofiel van AEM gebruikers of AEM beheerders voor zowel auteur- als publicatieservices om gegevens van beide services te bekijken. Zie voor meer informatie over het instellen van gebruikersmachtigingen [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Prestatiebewaking {#performance-monitoring}
 
-Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kunnen maatgegevens van toepassingen niet worden nageleefd.
+De Adobe bewaakt de prestaties van de toepassing en neemt maatregelen om verslechtering te verhelpen. Op dit moment kan de metrieke toepassing niet worden nageleefd.
 
 ## E-mail verzenden {#sending-email}
 
@@ -217,15 +217,15 @@ In de onderstaande secties wordt beschreven hoe u e-mail kunt aanvragen, configu
 
 ### Uitgaande e-mail inschakelen {#enabling-outbound-email}
 
-Standaard zijn poorten die worden gebruikt om e-mail te verzenden, uitgeschakeld. Om een haven te activeren, vorm [geavanceerde netwerken](/help/security/configuring-advanced-networking.md), waarbij u ervoor zorgt dat voor elke benodigde omgeving de `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` De haven die van het eindpunt regels door:sturen, die de voorgenomen haven (bijvoorbeeld, 465 of 587) aan een volmachtshaven in kaart brengt.
+Standaard zijn poorten die worden gebruikt om e-mail te verzenden, uitgeschakeld. Om een haven te activeren, vorm [geavanceerd netwerken](/help/security/configuring-advanced-networking.md), waarbij u ervoor zorgt dat voor elke benodigde omgeving de `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` De haven die van het eindpunt regels door:sturen, die de voorgenomen haven (bijvoorbeeld, 465 of 587) aan een volmachtshaven in kaart brengt.
 
-Het wordt geadviseerd om geavanceerd voorzien van een netwerk met te vormen `kind` parameter ingesteld op `flexiblePortEgress` aangezien Adobe de prestaties van flexibel havenuitgang verkeer kan optimaliseren. Als een uniek uitgangIP adres noodzakelijk is, kies een `kind` parameter van `dedicatedEgressIp`. Als u reeds VPN voor andere redenen hebt gevormd, kunt u het unieke IP adres gebruiken dat door die geavanceerde voorzien van een netwerkvariatie eveneens wordt verstrekt.
+Het wordt geadviseerd om geavanceerd voorzien van een netwerk met te vormen `kind` parameter ingesteld op `flexiblePortEgress` aangezien de Adobe prestaties van flexibel havenuitgang verkeer kan optimaliseren. Als een uniek uitgangIP adres noodzakelijk is, kies een `kind` parameter van `dedicatedEgressIp`. Als u reeds VPN voor andere redenen hebt gevormd, kunt u het unieke IP adres gebruiken dat door die geavanceerde voorzien van een netwerkvariatie eveneens wordt verstrekt.
 
 U moet e-mail via een e-mailserver verzenden in plaats van rechtstreeks naar e-mailclients. Anders kunnen de e-mailberichten geblokkeerd zijn.
 
 ### E-mails verzenden {#sending-emails}
 
-De [Day CQ Mail Service OSGI-service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moeten worden gebruikt en e-mails moeten worden verzonden naar de mailserver die in het supportverzoek wordt vermeld, en niet rechtstreeks naar ontvangers.
+De [Day CQ Mail Service OSGI](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) moeten worden gebruikt en e-mails moeten worden verzonden naar de mailserver die in het supportverzoek wordt vermeld, en niet rechtstreeks naar ontvangers.
 
 ### Configuratie {#email-configuration}
 
@@ -275,7 +275,7 @@ De SMTP servergastheer zou aan dat van uw postserver moeten worden geplaatst.
 
 ## Vermijd grote multi-value eigenschappen {#avoid-large-mvps}
 
-De opslagplaats van de Eak-inhoud die AEM as a Cloud Service steunt is niet bedoeld om met een bovenmatig aantal multi-value eigenschappen (MVPs) te worden gebruikt. MVP&#39;s zijn lager dan 1000 en daarom is het handig deze regel te handhaven. De werkelijke prestaties zijn echter afhankelijk van vele factoren.
+De opslagplaats van de Eak-inhoud die AEM as a Cloud Service steunt is niet bedoeld om met een bovenmatig aantal multi-value eigenschappen (MVPs) te worden gebruikt. Een duimregel is MVPs onder 1000 te houden. De werkelijke prestaties zijn echter afhankelijk van vele factoren.
 
 De waarschuwingen worden geregistreerd door gebrek na meer dan 1000. Ze zijn vergelijkbaar met het volgende.
 

@@ -1,19 +1,17 @@
 ---
 title: Ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier
-seo-title: Learn to add support for new locales to your adaptive forms
 description: Met AEM Forms kunt u nieuwe landinstellingen toevoegen voor het lokaliseren van adaptieve formulieren. Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaanse (ko-KR) landinstellingen.
-seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
 
 # Ondersteuning voor nieuwe landinstellingen voor Adaptive Forms-lokalisatie {#supporting-new-locales-for-adaptive-forms-localization}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 
 | Versie | Artikelkoppeling |
@@ -44,28 +42,28 @@ AEM Forms ondersteunt momenteel de lokalisatie van Adaptive Forms-inhoud in het 
 
 Ondersteuning voor een nieuwe landinstelling toevoegen bij Adaptive Forms-runtime:
 
-1. [Uw opslagplaats klonen](#clone-the-repository)
+1. [Uw gegevensopslagruimte klonen](#clone-the-repository)
 1. [Een landinstelling toevoegen aan de GuideLocalizationService-service](#add-a-locale-to-the-guide-localization-service)
 1. [Specifieke map voor landnamen toevoegen](#add-locale-name-specific-folder)
 1. [Ondersteuning voor landinstellingen toevoegen voor het woordenboek](#add-locale-support-for-the-dictionary)
 1. [Leg de wijzigingen in de opslagplaats vast en implementeer de pijpleiding](#commit-changes-in-repo-deploy-pipeline)
 
-#### 1. De opslagplaats klonen {#clone-the-repository}
+#### 1. Kloont de repository {#clone-the-repository}
 
 1. Navigeer vanaf de opdrachtregel naar de locatie waar u de Forms Cloud Service-opslagplaats wilt klonen.
 1. Voer het bevel uit dat u [opgehaald uit Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) Het lijkt op `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Gebruik de gebruikersnaam en het wachtwoord van de it om de repository te klonen.
 1. Open de gekloonde opslagmap voor Forms Cloud Service in de voorkeurseditor.
 
-#### 2. Een landinstelling toevoegen aan de Guide Localization-service {#add-a-locale-to-the-guide-localization-service}
+#### 2. Voeg een landinstelling toe aan de Guide Localization-service {#add-a-locale-to-the-guide-localization-service}
 
 1. Zoek de `Guide Localization Service.cfg.json` en voeg de landinstelling toe die u wilt toevoegen aan de lijst met ondersteunde landinstellingen.
 
    >[!NOTE]
    >
-   > Een bestand maken met de naam `Guide Localization Service.cfg.json` bestand, als dit nog niet bestaat.
+   > Een bestand maken met de naam `Guide Localization Service.cfg.json` bestand, als dit al niet aanwezig is.
 
-#### 3. Specifieke mapclientbibliotheek toevoegen aan de naam van een landinstelling {#add-locale-name-specific-folder}
+#### 3. Voeg een locale-name specifieke mapclientbibliotheek toe {#add-locale-name-specific-folder}
 
 1. Maak in de map UI.content `etc/clientlibs` map.
 1. Maak een map met de naam `locale-name` krachtens `etc/clientlibs` om als container voor xfa en af clientlibs te dienen.
@@ -78,9 +76,9 @@ Een knooppunt maken met de naam `[locale-name]_xfa` en type as `cq:ClientLibrary
 * **js.txt** die het volgende bevatten:
   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
-##### 3.2. Adaptief formulier-clientbibliotheek toevoegen voor een landinstellingsnaammap
+##### 3.2. Voeg een adaptieve clientbibliotheek van het formulier toe voor een landinstellingsnaammap
 
-1. Een knooppunt maken met de naam `[locale-name]_af` en type as `cq:ClientLibraryFolder` krachtens `etc/clientlibs/locale_name`, met categorie als `guides.I18N.<locale>` en afhankelijkheden als `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` en `guide.common`.
+1. Een knooppunt maken met de naam `[locale-name]_af` en type as `cq:ClientLibraryFolder` krachtens `etc/clientlibs/locale_name`, met categorie als `guides.I18N.<locale>` en afhankelijkheid als `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` en `guide.common`.
 1. Een map maken met de naam `javascript` en voeg de volgende bestanden toe:
 
    * **i18n.js** definiëren `guidelib.i18n`met patronen van &quot;agendaSymbolen&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` voor de `<locale>` volgens de XFA-specificaties die worden beschreven in [Locale Set Specification](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf).
@@ -156,5 +154,5 @@ Get [voorbeeldclientbibliotheek](/help/forms/assets/locale-support-sample.zip) o
 * Adobe raadt u aan een vertaalproject te maken nadat u een adaptief formulier hebt gemaakt.
 
 * Wanneer nieuwe velden worden toegevoegd aan een bestaand adaptief formulier:
-   * **Voor machinevertaling**: Maak het woordenboek opnieuw en voer het vertaalproject uit. Velden die na het maken van een vertaalproject aan een adaptief formulier zijn toegevoegd, blijven onvertaald.
-   * **Voor menselijke vertaling**: Het woordenboek exporteren door `[server:port]/libs/cq/i18n/gui/translator.html`. Werk het woordenboek voor de zojuist toegevoegde velden bij en upload het.
+   * **Voor automatische vertaling**: Maak het woordenboek opnieuw en voer het vertaalproject uit. Velden die na het maken van een vertaalproject aan een adaptief formulier zijn toegevoegd, blijven onvertaald.
+   * **Voor menselijke vertaling**: Exporteer het woordenboek door `[server:port]/libs/cq/i18n/gui/translator.html`. Werk het woordenboek voor de zojuist toegevoegde velden bij en upload het.

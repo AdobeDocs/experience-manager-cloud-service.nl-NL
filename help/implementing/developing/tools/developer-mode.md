@@ -1,17 +1,17 @@
 ---
-title: Ontwerpmodus
+title: Modus voor ontwikkelaars
 seo-title: Developer Mode
 description: In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-# Ontwerpmodus {#developer-mode}
+# Modus voor ontwikkelaars {#developer-mode}
 
 Bij het bewerken van pagina&#39;s in AEM, diverse [modi](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) zijn beschikbaar, inclusief de modus Ontwikkelaar. In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar technische informatie over de huidige pagina bieden.
 
@@ -35,7 +35,7 @@ Deze hulp een ontwikkelaar om:
 
 ## Ontwerpmodus openen {#opening-developer-mode}
 
-De modus Ontwikkelaar wordt als een zijpaneel geïmplementeerd in de pagina-editor. Selecteer **Ontwikkelaar** in de moduskiezer op de werkbalk van de pagina-editor:
+De modus Ontwikkelaar wordt als een zijpaneel geïmplementeerd in de pagina-editor. Als u het deelvenster wilt openen, selecteert u **Ontwikkelaar** in de moduskiezer op de werkbalk van de pagina-editor:
 
 ![De modus Ontwikkelaar openen](assets/developer-mode.png)
 
@@ -52,7 +52,7 @@ Dit toont een componentenboom die:
 
 * Hiermee wordt de keten van componenten en sjablonen op de pagina weergegeven. De structuur kan worden uitgebreid om de context binnen de hiërarchie te tonen.
 * Geeft de computertijd aan de serverzijde weer die nodig is om de component te renderen.
-* Hiermee kunt u de structuur uitvouwen en specifieke componenten in de structuur selecteren. De selectie biedt toegang tot componentdetails; zoals:
+* Hiermee kunt u de structuur uitvouwen en specifieke componenten in de structuur selecteren. De selectie biedt toegang tot componentdetails, zoals:
    * Pad naar opslagplaats
    * Koppelingen naar scripts (geopend in CRXDE Lite)
    * Componentdetails zoals weergegeven in het dialoogvenster [Componentenconsole](/help/sites-cloud/authoring/features/components-console.md)
@@ -92,4 +92,4 @@ Hopelijk **Fouten** tab zal altijd leeg zijn (zoals hierboven), maar als er prob
 * Een waarschuwing als de component een ingang aan het foutenlogboek, samen met details van de fout en directe verbindingen aan de aangewezen code binnen CRXDE Lite schrijft.
 * Een waarschuwing als de component een beheersessie opent.
 
-Als bijvoorbeeld een niet-gedefinieerde methode wordt aangeroepen, wordt de resulterende fout weergegeven in het dialoogvenster **Fouten** en het componentitem in de boomstructuur van het dialoogvenster **Componenten** wordt ook een indicator weergegeven wanneer een fout optreedt.
+Als bijvoorbeeld een niet-gedefinieerde methode wordt aangeroepen, wordt de resulterende fout weergegeven in het dialoogvenster **Fouten** en het componentitem in de boomstructuur van het dialoogvenster **Componenten** wordt ook gemarkeerd met een indicator wanneer een fout optreedt.

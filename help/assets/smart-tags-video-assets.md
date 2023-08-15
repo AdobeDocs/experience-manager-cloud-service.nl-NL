@@ -4,18 +4,18 @@ description: Experience Manager voegt contextafhankelijke en beschrijvende slimm
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1171'
 ht-degree: 1%
 
 ---
 
 # Slimme tag toewijzen aan video-elementen {#video-smart-tags}
 
-De groeiende behoefte aan nieuwe inhoud vraagt om minder handmatige inspanningen om op korte termijn aantrekkelijke digitale ervaringen te bieden. [!DNL Adobe Experience Manager] als [!DNL Cloud Service] ondersteunt automatische labeling van video-elementen met behulp van kunstmatige intelligentie. Het kan tijdrovend zijn om de video&#39;s handmatig te labelen. Maar [!DNL Adobe Sensei] Intelligente videotags worden gebruikt voor kunstmatige intelligentiemodellen om video-inhoud te analyseren en tags toe te voegen aan de video-elementen. Hierdoor verkort u tijd voor DAM-gebruikers om hun klanten rijke ervaringen te bieden. Adobe genereert twee sets met tags voor een video. Eén set komt overeen met objecten, scènes en kenmerken in die video. de andere reeks heeft betrekking op handelingen zoals drinken , lopen en joggen .
+De groeiende behoefte aan nieuwe inhoud vraagt om minder handmatige inspanningen om op korte termijn aantrekkelijke digitale ervaringen te bieden. [!DNL Adobe Experience Manager] als [!DNL Cloud Service] ondersteunt automatische labeling van video-elementen met behulp van kunstmatige intelligentie. Het kan tijdrovend zijn om de video&#39;s handmatig te labelen. Maar [!DNL Adobe Sensei] Intelligente videotags worden gebruikt voor kunstmatige intelligentiemodellen om video-inhoud te analyseren en tags toe te voegen aan de video-elementen. Hierdoor verkort u tijd voor DAM-gebruikers om hun klanten rijke ervaringen te bieden. De leerservice voor computers van Adobe genereert twee sets tags voor een video. De ene set komt weliswaar overeen met objecten, scènes en kenmerken in die video, maar de andere set heeft betrekking op handelingen zoals drinken, lopen en jogging.
 
-Videocodering is standaard ingeschakeld in [!DNL Adobe Experience Manager] als [!DNL Cloud Service]. U kunt echter [opt-out van slimme tags voor video](#opt-out-video-smart-tagging) in een map. Video&#39;s worden automatisch van tags voorzien wanneer u nieuwe video&#39;s uploadt of bestaande video&#39;s opnieuw verwerkt. [!DNL Experience Manager] Hiermee maakt u ook de miniaturen en extraheert u de metagegevens van de videobestanden. De slimme tags worden in aflopende volgorde weergegeven [vertrouwensscore](#confidence-score-video-tag) in actief [!UICONTROL Properties].
+Videocodering is standaard ingeschakeld in [!DNL Adobe Experience Manager] als [!DNL Cloud Service]. U kunt echter [opt-out van slimme tags voor video](#opt-out-video-smart-tagging) in een map. Video&#39;s worden automatisch van tags voorzien wanneer u nieuwe video&#39;s uploadt of bestaande video&#39;s opnieuw verwerkt. [!DNL Experience Manager] Hiermee maakt u ook de miniaturen en extraheert u de metagegevens van de videobestanden. De slimme tags worden in aflopende volgorde weergegeven [betrouwbaarheidsscore](#confidence-score-video-tag) in actief [!UICONTROL Properties].
 
 ## Slimme tags toepassen op video&#39;s tijdens het uploaden {#smart-tag-assets-on-ingestion}
 
@@ -23,7 +23,7 @@ Wanneer u [video-elementen uploaden](add-assets.md#upload-assets) tot [!DNL Adob
 
 ![Slimme tags worden toegevoegd aan video&#39;s en weergegeven op het tabblad Standaard van de Eigenschappen van elementen](assets/smart-tags-added-to-videos.png)
 
-De toegepaste slimme tags worden in aflopende volgorde gesorteerd van [vertrouwensscore](#confidence-score-video-tag), gecombineerd voor object- en actietags, binnen [!UICONTROL Smart Tags].
+De toegepaste slimme tags worden in aflopende volgorde gesorteerd van [betrouwbaarheidsscore](#confidence-score-video-tag), gecombineerd voor object- en actietags, binnen [!UICONTROL Smart Tags].
 
 >[!IMPORTANT]
 >
@@ -31,25 +31,25 @@ De toegepaste slimme tags worden in aflopende volgorde gesorteerd van [vertrouwe
 
 ## Bestaande video&#39;s slim labelen in DAM {#smart-tag-existing-videos}
 
-De bestaande video-elementen in DAM worden niet automatisch gecodeerd als slimme tags. U moet [!UICONTROL Reprocess Assets] handmatig slimme tags genereren.
+De bestaande video-elementen in DAM worden niet automatisch gecodeerd als slimme tags. U moet [!UICONTROL Reprocess Assets] handmatig om slimme tags voor deze tags te genereren.
 
 Voer de volgende stappen uit om slimme tags toe te wijzen aan video-elementen of mappen (inclusief submappen) van elementen die al in de opslagplaats voor elementen bestaan:
 
-1. Selecteer [!DNL Adobe Experience Manager] logo en selecteer vervolgens elementen in het [!UICONTROL Navigation] pagina.
+1. Selecteer de [!DNL Adobe Experience Manager] logo en selecteer vervolgens elementen in het [!UICONTROL Navigation] pagina.
 
 1. Selecteren [!UICONTROL Files] om de interface Elementen weer te geven.
 
-1. Navigeer naar de map waarop u slimme tags wilt toepassen.
+1. Ga naar de map waarop u slimme tags wilt toepassen.
 
 1. Selecteer de volledige map of specifieke video-elementen.
 
-1. Selecteren ![Pictogram Elementen opnieuw verwerken](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] en selecteert u de [!UICONTROL Full Process] optie.
+1. Selecteren ![Pictogram Elementen opnieuw verwerken](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] en selecteert u de [!UICONTROL Full Process] -optie.
 
 <!-- TBD: Limit size -->
 
 ![Elementen opnieuw verwerken om tags toe te voegen aan video&#39;s in de bestaande DAM-opslagplaats](assets/reprocess.gif)
 
-Als het proces is voltooid, navigeert u naar de [!UICONTROL Properties] pagina met alle video-elementen in de map. De automatisch toegevoegde tags worden weergegeven in [!UICONTROL Smart Tags] sectie in [!UICONTROL Basic] tab. Deze toegepaste slimme tags worden in aflopende volgorde gesorteerd op [vertrouwensscore](#confidence-score-video-tag).
+Als het proces is voltooid, navigeert u naar de [!UICONTROL Properties] pagina met alle video-elementen in de map. De automatisch toegevoegde tags worden weergegeven in [!UICONTROL Smart Tags] sectie in [!UICONTROL Basic] tab. Deze toegepaste slimme tags worden in aflopende volgorde gesorteerd op [betrouwbaarheidsscore](#confidence-score-video-tag).
 
 ## Zoeken naar gelabelde video&#39;s {#search-smart-tagged-videos}
 
@@ -67,7 +67,7 @@ Uw zoekresultaten zijn een combinatie van video-elementen met gezochte trefwoord
 
 ## Slimme videolabels modereren {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] Hiermee kunt u de slimme tags op de volgende manieren curven:
+[!DNL Adobe Experience Manager] Hiermee kunt u de slimme tags krommen naar:
 
 * Verwijder onjuiste tags die zijn toegewezen aan uw merkvideo&#39;s.
 
@@ -130,7 +130,7 @@ Om de configuratie van de betrouwbaarheidsscoreOSGI aan het project toe te voege
 
 * De voortgang van de codering wordt niet weergegeven.
 
-* Alleen video&#39;s die kleiner zijn dan 300 MB, worden automatisch gecodeerd. De [!DNL Adobe Sensei] de dienst slaat videodossiers over die in grootte groter zijn.
+* Alleen video&#39;s die kleiner zijn dan 300 MB, worden automatisch gecodeerd. De [!DNL Adobe Sensei] De dienst slaat videodossiers over die in grootte groter zijn.
 
 * Alleen de video&#39;s in de bestandsindelingen en ondersteunde codecs die worden vermeld in [Slimme tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats) zijn gelabeld.
 

@@ -2,9 +2,9 @@
 title: CRXDE Lite gebruiken
 description: CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor u om toegang te krijgen tot en wijzigingen aan te brengen in de opslagruimte in uw lokale ontwikkelomgevingen in de browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor u om toeg
 
 Aan de slag met CRXDE Lite:
 
-1. Start uw lokale AEM ontwikkeling snel.
+1. Start uw lokale AEM-ontwikkeling snel.
 1. Open de URL in uw browser `https://<host>:<port>/crx/de`.
 1. Voer uw **gebruikersnaam** en **password**.
 1. Klikken **OK**.
@@ -40,7 +40,7 @@ De gebruikersinterface van CRXDE Lite bevat veel onderdelen en functies.
 
 ### Bovenste schakelbalk {#top-switcher-bar}
 
-De hoogste Bar van de Schakelaar staat u toe om tussen CRXDE Lite en snel te schakelen [Pakketbeheer.](package-manager.md)
+De hoogste Bar van de Schakelaar laat u snel tussen CRXDE Lite en schakelen [Package Manager.](package-manager.md)
 
 ### Knooppuntwidget {#node-path-widget}
 
@@ -50,9 +50,9 @@ U kunt het ook gebruiken om naar een knoop te springen door de weg in te gaan do
 
 Het biedt ook ondersteuning voor het zoeken naar knooppunten met een specifieke knooppuntnaam. Voer de naam in van het knooppunt dat u wilt zoeken en wacht (of selecteer het zoekpictogram aan de rechterkant). Als een bepaald knooppunt of bepaalde knooppunten in het verkennervenster wordt geladen, wordt de lijst weergegeven en kunt u het pad selecteren en op Enter drukken om naar het knooppunt te navigeren. Het werkt alleen voor de knooppunten die momenteel in de CRXDE-clienttoepassing in de browser zijn geladen. Als u de hele repository wilt doorzoeken, gebruikt u **Gereedschappen** ->: **Query**.
 
-### Venster Explorer {#explorer-pane}
+### Explorer-venster {#explorer-pane}
 
-De **Venster Explorer** geeft een structuur weer van alle knooppunten in de opslagplaats.
+De **Explorer-venster** geeft een structuur weer van alle knooppunten in de opslagplaats.
 
 Klik op een knooppunt om de eigenschappen ervan weer te geven in het dialoogvenster **Eigenschappen** tab. Nadat u op een knooppunt hebt geklikt, kunt u een handeling op de werkbalk selecteren. Klik nogmaals op het knooppunt om de naam ervan te wijzigen.
 
@@ -62,11 +62,11 @@ Met het structuurnavigatiefilter (het binoculars-pictogram) kunt u de knooppunte
 
 De **Venster bewerken** Hiermee kunt u de inhoud van het geselecteerde bestand in de opslagplaats bekijken. Elk geopend bestand wordt in het deelvenster weergegeven als een eigen tabblad.
 
-De **Home** kunt u zoeken in inhoud en/of documentatie en toegang krijgen tot de documentatie van de ontwikkelaar en tot de steun van de Adobe.
+De **Home** kunt u zoeken in inhoud en/of documentatie en toegang krijgen tot de documentatie en ondersteuning van Adoben van ontwikkelaars.
 
-Dubbelklik op een bestand in het dialoogvenster **Venster Explorer** om de inhoud ervan in de **Venster bewerken**. U kunt het dan wijzigen en de veranderingen bewaren.
+Dubbelklik op een bestand in het dialoogvenster **Explorer-venster** om de inhoud ervan in de **Venster bewerken**. U kunt het dan wijzigen en de veranderingen bewaren.
 
-Als een bestand eenmaal is bewerkt in het dialoogvenster **Venster bewerken** zijn de volgende gereedschappen beschikbaar op de werkbalk:
+Als een bestand eenmaal is bewerkt in de **Venster bewerken** zijn de volgende gereedschappen beschikbaar op de werkbalk:
 
 * **Tonen in boomstructuur** - Geeft het bestand weer in de boomstructuur van de opslagplaats.
 * **Zoeken/vervangen** - Voert een zoekopdracht of vervangactie uit.
@@ -84,7 +84,7 @@ De **Tabblad Toegangsbeheer** geeft rechten weer op basis van het huidige pad, d
 De machtigingen zijn onderverdeeld in de volgende categorieën.
 
 * **Toepasselijk toegangsbeheerbeleid** - Het beleid dat op de huidige selectie kan worden toegepast
-* **Beleid voor lokaal toegangsbeheer** - Het huidige beleid dat lokaal wordt toegepast op de huidige selectie
+* **Lokaal beleid voor toegangsbeheer** - Het huidige beleid dat lokaal wordt toegepast op de huidige selectie
 * **Effectief beleid voor toegangscontrole** - Het huidige beleid dat wordt toegepast voor de huidige selectie, die lokaal kan worden ingesteld of kan worden overgeërfd van bovenliggende knooppunten
 
 >[!NOTE]
@@ -112,13 +112,13 @@ De **Knop Vernieuwen** Hiermee vernieuwt u de huidige selectie. Wijzigingen van 
 De **Alle knoppen opslaan** Hiermee slaat u alle aangebrachte wijzigingen op. Tot u verkiest om te bewaren, zijn de veranderingen tijdelijk, en verloren wanneer u de console weggaat.
 
 * **Vorige versie** - Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in het geselecteerde knooppunt sinds de laatste opslaghandeling en wordt vervolgens de huidige status van de opslagplaats voor het geselecteerde knooppunt opnieuw geladen
-* **Alles herstellen** - Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in de gehele opslagplaats sinds de laatste opslaghandeling, en wordt vervolgens de huidige status van de opslagplaats opnieuw geladen
+* **Alles terugkeren** - Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in de gehele opslagplaats sinds de laatste opslaghandeling, en wordt vervolgens de huidige status van de opslagplaats opnieuw geladen
 
 ### Knop Maken {#create-button}
 
 De **Knop Maken** is een drop-down menu om het volgende onder de geselecteerde knoop tot stand te brengen:
 
-* Knooppunt - een knoop met een willekeurig knooppunttype
+* Node - een knoop met een willekeurig knooptype
 * Bestand - een `nt:file` node en its nt:resource subnode
 * Map - een `nt:folder` node
 
@@ -126,9 +126,9 @@ De **Knop Maken** is een drop-down menu om het volgende onder de geselecteerde k
 
 De **Knop Verwijderen** Hiermee verwijdert u het geselecteerde knooppunt.
 
-### Knop Kopiëren {#copy-button}
+### Knop kopiëren {#copy-button}
 
-De **Knop Kopiëren** Kopieert het geselecteerde knooppunt.
+De **Knop kopiëren** Kopieert het geselecteerde knooppunt.
 
 ## Knop Plakken {#paste-button}
 
@@ -140,11 +140,11 @@ De **Knop Verplaatsen** Hiermee wordt het geselecteerde knooppunt verplaatst naa
 
 ### Naam wijzigen {#rename-button}
 
-De **Naam knop wijzigen** wijzigt de naam van het geselecteerde knooppunt.
+De **Knop Naam wijzigen** wijzigt de naam van het geselecteerde knooppunt.
 
 ### Mixins {#mixins-button}
 
-De **Mixins, knop** staat u toe om mixingstypes aan het knooptype toe te voegen. De mixintypen worden meestal gebruikt om geavanceerde functies toe te voegen.
+De **Mixins, knop** Hiermee kunt u gemengde typen toevoegen aan het knooppunttype. De mixintypen worden meestal gebruikt om geavanceerde functies toe te voegen.
 
 ### Gereedschappen {#tools-button}
 
@@ -152,7 +152,7 @@ De **Gereedschapknop** is een vervolgkeuzemenu met de volgende gereedschappen be
 
 * **Serverconfiguratie** - toegang tot de Felix-console (ook beschikbaar op `https://<host>:<port>/system/console/configMgr`)
 * **Query** - de gegevensopslagplaats opvragen
-* **Bevoegdheden** - om rechten weer te geven en toe te voegen
+* **Rechten** - om rechten weer te geven en toe te voegen
 * **Toegangsbeheer testen** - om de toestemming voor bepaalde paden en/of aangever te testen
 * **Notitietype exporteren** - knooppunttypen in het systeem exporteren als CND-notatie
 * **Notitietype importeren** - om knooppunttypes in te voeren gebruikend aantekening CND.
@@ -190,9 +190,9 @@ U kunt het knooppunt nu aan uw behoeften aanpassen door eigenschappen te wijzige
 
 >[!NOTE]
 >
-De meeste bewerkingen, inclusief **Knooppunt maken**, houdt alle wijzigingen in het geheugen bij en slaat deze alleen op in de opslagplaats wanneer deze worden opgeslagen (met behulp van de [**Alle knoppen opslaan**](#save-all-button)). Sommige bewerkingen, zoals verplaatsen, worden echter automatisch voortgezet.
+De meeste bewerkingen, inclusief **Knooppunt maken**, houdt alle wijzigingen in het geheugen bij en slaat deze alleen op in de opslagplaats bij het opslaan (met de [**Alle knoppen opslaan**](#save-all-button)). Sommige bewerkingen, zoals verplaatsen, worden echter automatisch voortgezet.
 >
-De validatie met betrekking tot het al dan niet toestaan van het nieuwe knooppunt door het knooppunttype van het bovenliggende knooppunt wordt ook uitgevoerd door de gegevensopslagruimte wanneer wijzigingen worden opgeslagen. Als u een foutbericht ontvangt tijdens het opslaan van een knooppunt, controleert u of de inhoudsstructuur geldig is (u kunt bijvoorbeeld geen `nt:unstructured` knooppunt als onderliggend element van `nt:folder` knooppunt).
+De validatie met betrekking tot of het nieuwe knooppunt wordt toegestaan door het knooppunttype van het bovenliggende knooppunt, wordt ook uitgevoerd door de gegevensopslagruimte wanneer wijzigingen worden opgeslagen. Als u een foutbericht ontvangt tijdens het opslaan van een knooppunt, controleert u of de inhoudsstructuur geldig is (u kunt bijvoorbeeld geen `nt:unstructured` knooppunt als onderliggend element van `nt:folder` knooppunt).
 
 ## Een eigenschap maken {#creating-a-property}
 
@@ -214,7 +214,7 @@ Een nieuw bestand maken met CRXDE Lite:
 1. Klikken **OK**.
 1. Het nieuwe bestand wordt geopend als een tabblad in het dialoogvenster [**Venster bewerken**.](#edit-pane)
 1. Bewerk het bestand.
-1. Klik op de knop [**Alle knoppen opslaan**](#save-all-button) om de wijzigingen op te slaan.
+1. Klik op de knop [**Alle knoppen opslaan**](#save-all-button) om de wijzigingen op te slaan
 
 ## Nodetypen exporteren en importeren {#exporting-and-importing-node-types}
 

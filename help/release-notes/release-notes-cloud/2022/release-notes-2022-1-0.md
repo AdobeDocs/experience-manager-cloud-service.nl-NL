@@ -2,20 +2,20 @@
 title: Opmerkingen bij de release 2022.1.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.1.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1079'
 ht-degree: 1%
 
 ---
 
-# Opmerkingen bij de release 2022.1.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 202.1.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 In de volgende sectie worden de opmerkingen bij de release met functies voor de versie 2022.1.0 van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021, enzovoort.
+>Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Kijk eens naar de [Overzicht release januari 2022](https://video.tv.adobe.com/v/
 * De beheerders kunnen nu de e-mailservice configureren voor grote downloads. Hiermee kunnen gebruikers [e-mailmeldingen inschakelen voor grote downloads](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) van de [!DNL Experience Manager Assets] interface. De gebruiker ontvangt een e-mailbericht met de downloadkoppeling van de gearchiveerde ZIP-map na voltooiing van het downloadproces.
 
 
-* De [Publicatie beheren](/help/assets/manage-publication.md) wordt verbeterd met een verbeterde gebruikersinterface. De gebruikers kunnen inhoud publiceren of unpublish aan en van de geselecteerde bestemming. [Inhoud toevoegen](/help/assets/manage-publication.md#add-content) naar de publicatielijst vanuit de DAM-opslagplaats, [Inclusief mapinstellingen](/help/assets/manage-publication.md#include-folder-settings) de inhoud van de geselecteerde mappen publiceren en filters toepassen, en [publiceren plannen](/help/assets/manage-publication.md#publish-assets-later) naar een latere datum of tijd.
+* De [Publicatie beheren](/help/assets/manage-publication.md) wordt verbeterd met een verbeterde gebruikersinterface. De gebruikers kunnen inhoud publiceren of unpublish aan en van de geselecteerde bestemming. [Inhoud toevoegen](/help/assets/manage-publication.md#add-content) naar de publicatielijst vanuit de DAM-opslagplaats, [Inclusief mapinstellingen](/help/assets/manage-publication.md#include-folder-settings) om inhoud van de geselecteerde omslagen te publiceren en filters toe te passen, en [publiceren plannen](/help/assets/manage-publication.md#publish-assets-later) naar een latere datum of tijd.
 
 ### Opgeloste problemen {#bug-fixes}
 
@@ -67,18 +67,18 @@ Kijk eens naar de [Overzicht release januari 2022](https://video.tv.adobe.com/v/
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met deze service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
    * Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
    * Formulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    * Afdruk-PDF genereren op basis van XFA-formulier-PDF.
-   * Genereer bulksgewijs PDF-, PostScript-, PCL- en ZPL-documenten door meerdere gegevenssets samen te voegen met bronsjablonen.
+   * Genereer PDF-, PostScript-, PCL- en ZPL-documenten in bulk door meerdere gegevenssets samen te voegen met bronsjablonen.
 
-* **Aangepaste lettertypen voor document van record- en PDF-documenten die zijn gemaakt met communicatie-API&#39;s**: U kunt nu met een merk goedgekeurde lettertypen gebruiken in PDF-documenten die zijn gegenereerd met communicatie-API&#39;s, zodat deze kunnen worden afgestemd op uw organisatorische vereisten.
+* **Aangepaste lettertypen voor document van record- en PDF-documenten die zijn gemaakt met communicatie-API&#39;s**: U kunt nu met een merk goedgekeurde lettertypen gebruiken in PDF-documenten die zijn gegenereerd met communicatie-API&#39;s en die aan uw organisatorische vereisten voldoen.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
 
-* **[Assembler-API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Stel API&#39;s samen om PDF-documenten te combineren, opnieuw te rangschikken, te vergroten en te verkrijgen.
+* **[Assembler API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assembler-API&#39;s om PDF-documenten te combineren, opnieuw te rangschikken, te vergroten en te verkrijgen.
 
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
@@ -103,8 +103,8 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 jan
 
 ### Wat is er nieuw? {#what-is-new-cm}
 
-* Cloud Manager wordt [vermijd het herbouwen van de codebasis wanneer het ontdekt dat het zelfde git begaan wordt gebruikt](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in veelvoudige full-stack pijpleidingexecuties.
-* Voor toegang tot het AEM-omgevingslogboek is nu de **Implementatiebeheer** productprofiel. Gebruikers zonder dit profiel zien een uitgeschakelde knop in de gebruikersinterface.
+* Cloud Manager wordt [vermijd het opnieuw samenstellen van de codebasis wanneer het ontdekt dat het zelfde git begaan wordt gebruikt](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in veelvoudige full-stack pijpleidingexecuties.
+* Voor het openen van het AEM-omgevingslogboek is nu de **Implementatiebeheer** productprofiel. Gebruikers zonder dit profiel zien een uitgeschakelde knop in de gebruikersinterface.
 * UI zal niet front-end pijpleidingsconfiguratie voor een programma toestaan waar de Plaatsen niet als oplossing wordt toegelaten.
 * Bij het genereren van een wachtwoord voor een kit wordt de vervaldatum weergegeven.
 
@@ -127,7 +127,7 @@ De releasedatum voor Content Transfer Tool v1.8.6 is 3 februari 2022.
 
 ### Opgeloste problemen {#bug-fixes-ctt}
 
-* Sommige gebruikers zijn niet toegewezen omdat de toewijzing van de gebruiker hoofdlettergevoelig was. Dit is opgelost. Toewijzing van gebruikers is niet langer hoofdlettergevoelig.
+* Sommige gebruikers zijn niet toegewezen omdat de toewijzing van de gebruiker hoofdlettergevoelig was. Dit is opgelost. Gebruikerstoewijzing is niet langer hoofdlettergevoelig.
 
 ## Analysator van best practices {#bpa-release}
 

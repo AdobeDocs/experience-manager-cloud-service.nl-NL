@@ -1,11 +1,11 @@
 ---
-title: Het gebruiken van GrahiQL winde in AEM
+title: GraphiQL IDE gebruiken in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1141'
 ht-degree: 0%
 
 ---
@@ -18,26 +18,26 @@ Tenuitvoerlegging van de norm [GraphiQL](https://graphql.org/learn/serving-over-
 >
 >GraphiQL is inbegrepen in alle milieu&#39;s van AEM (maar zal slechts toegankelijk/zichtbaar zijn wanneer u uw eindpunten vormt).
 >
->In vorige versies was een pakket nodig om GraphiQL IDE te installeren. Als u deze installatie hebt, kunt u deze nu verwijderen.
+>In vorige versies was een pakket nodig om de GraphiQL IDE te installeren. Als u deze installatie hebt, kunt u deze nu verwijderen.
 
 >[!NOTE]
 >U moet [Uw eindpunten geconfigureerd](/help/headless/graphql-api/graphql-endpoint.md) in de [configuratievenster](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) voordat u GraphiQL IDE gebruikt.
 
-De **GraphiQL** kunt u uw GraphQL-query&#39;s testen en er fouten in opsporen door het volgende in te stellen:
+De **GraphiQL** kunt u testen en fouten opsporen in uw GraphQL-query&#39;s door het volgende in te schakelen:
 * Selecteer de **Endpoint** aangewezen aan de configuratie van Plaatsen die u voor uw vragen wilt gebruiken
 * direct nieuwe query&#39;s invoeren
 * creëren en openen, **[Blijvende query&#39;s](/help/headless/graphql-api/persisted-queries.md)**
 * stel uw vragen in werking om de resultaten onmiddellijk te zien
 * beheren **Query-variabelen**
 * opslaan en beheren **Blijvende query&#39;s**
-* publiceren of publiceren ongedaan maken, **Blijvende query&#39;s**, aan uw **Publiceren** of **Voorvertoning** dienst; bijvoorbeeld van/naar `dev-publish`
+* publiceren of publiceren ongedaan maken, **Blijvende query&#39;s**, aan of uw **Publiceren** of **Voorvertoning** dienst, bijvoorbeeld van/naar `dev-publish`
 * zie **Historie** van uw vorige vragen
-* gebruiken **Documentatieverkenner** toegang tot de documentatie; helpen u te leren en te begrijpen welke methoden beschikbaar zijn.
+* gebruiken **Documentatieverkenner** om toegang te krijgen tot de documentatie, zodat u kunt leren welke methoden beschikbaar zijn en begrijpen.
 
 U kunt tot de vraagredacteur van één van beiden toegang hebben:
 
 * **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
-* rechtstreeks; bijvoorbeeld: `http://localhost:4502/aem/graphiql.html`
+* rechtstreeks; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
@@ -74,15 +74,15 @@ Gebruiken **Opslaan als** om uw nieuwe vraag voort te zetten.
 
 Selecteer de query die u wilt bijwerken in de lijst in het dialoogvenster **Blijvende query&#39;s** (helemaal links).
 
-De query wordt weergegeven in het editorvenster. Breng de gewenste wijzigingen aan en gebruik vervolgens **Opslaan** om uw updates aan de persisted query vast te leggen.
+De vraag wordt getoond in het redacteurspaneel. Breng de gewenste wijzigingen aan en gebruik vervolgens **Opslaan** om uw updates aan de persisted query vast te leggen.
 
-## Bezig met uitvoeren van query&#39;s {#running-queries}
+## Query&#39;s uitvoeren {#running-queries}
 
 U kunt een nieuwe vraag in werking stellen onmiddellijk, of u kunt een voortgezette vraag laden en in werking stellen. Als u een voortgezette query wilt laden, selecteert u deze in de lijst. De query wordt weergegeven in het deelvenster Editor.
 
 In beide gevallen is de query die in het editorpaneel wordt weergegeven, de query die wordt uitgevoerd wanneer u een van de volgende twee doet:
 
-* klikken/tikken op de **Query uitvoeren** pictogram
+* klikken/tikken op de knop **Query uitvoeren** pictogram
 * de toetsenbordcombinatie gebruiken `Control-Enter`
 
 ## Query-variabelen {#query-variables}
@@ -115,12 +115,12 @@ Gebruikend GraphQL kunt u de Kopballen van het Geheime voorgeheugen van HTTP vor
 
 1. Als u deze optie selecteert, wordt het dialoogvenster **Cacheconfiguratie** dialoogvenster:
 
-   ![Instellingen voor blijvende HTTP-cache van query](assets/cfm-graphqlapi-headers-02.png "Instellingen voor blijvende HTTP-cache van query")
+   ![Instellingen voor blijvende HTTP-cachekoptekst voor query](assets/cfm-graphqlapi-headers-02.png "Instellingen voor blijvende HTTP-cachekoptekst voor query")
 
 1. Selecteer de gewenste parameter en pas vervolgens de gewenste waarde aan:
 
    * **cache-control** - **maximale leeftijd**
-Deze inhoud kan gedurende een opgegeven aantal seconden in cache worden opgeslagen. Dit is doorgaans de TTL-indeling van de browser (tijd om te leven).
+Deze inhoud kan gedurende een opgegeven aantal seconden in cache worden opgeslagen. Dit is doorgaans de TTL-browser (Time To Live).
    * **surrogaatcontrole** - **s-maxage**
 Hetzelfde als maximale leeftijd, maar is specifiek van toepassing op proxycaches.
    * **surrogaatcontrole** - **stale-while-revalidate**
@@ -146,7 +146,7 @@ Hierdoor wordt de query geactiveerd naar de omgeving die u selecteert. U kunt ki
 
 Als bij het publiceren, kunt u, zodra u uw voortgezette vraag van de lijst (linkerpaneel) hebt geselecteerd, **Publiceren ongedaan maken** handeling.
 
-Hierdoor wordt de query gedeactiveerd vanuit de omgeving die u selecteert. ofwel **Publiceren** of uw **Voorvertoning** milieu.
+Hierdoor wordt de query gedeactiveerd vanuit de omgeving die u selecteert; uw **Publiceren** of uw **Voorvertoning** milieu.
 
 >[!NOTE]
 >
@@ -154,7 +154,7 @@ Hierdoor wordt de query gedeactiveerd vanuit de omgeving die u selecteert. ofwel
 
 ## URL kopiëren om rechtstreeks toegang te krijgen tot de query {#copy-url}
 
-De **URL kopiëren** Met deze optie kunt u een query simuleren door de URL te kopiëren die wordt gebruikt voor directe toegang tot de voortgezette query en de resultaten te bekijken. Dit kan vervolgens voor tests worden gebruikt; bijvoorbeeld door toegang te krijgen tot een browser:
+De **URL kopiëren** Met deze optie kunt u een query simuleren door de URL te kopiëren die wordt gebruikt om rechtstreeks toegang te krijgen tot de voortgezette query en de resultaten te bekijken. Dit kan vervolgens voor testdoeleinden worden gebruikt, bijvoorbeeld door toegang te krijgen tot een browser:
 
 <!--
   >[!NOTE]

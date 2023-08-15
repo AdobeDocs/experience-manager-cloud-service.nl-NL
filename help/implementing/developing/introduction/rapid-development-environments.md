@@ -2,16 +2,16 @@
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3313'
+source-wordcount: '3312'
 ht-degree: 0%
 
 ---
 
 # Snelle ontwikkelomgevingen {#rapid-development-environments}
 
-Om veranderingen op te stellen, vereisen de huidige milieu&#39;s van de Ontwikkeling van de Wolk het gebruik van een proces dat uitgebreide codeveiligheid en kwaliteitsregels gebruikt genoemd een pijpleiding CI/CD. Voor situaties waar snelle en iteratieve veranderingen nodig zijn, heeft Adobe de Milieu&#39;s van de Snelle Ontwikkeling (RDEs voor kort) geïntroduceerd.
+Om veranderingen op te stellen, vereisen de huidige milieu&#39;s van de Ontwikkeling van de Wolk het gebruik van een proces dat uitgebreide codeveiligheid en kwaliteitsregels gebruikt genoemd een pijpleiding CI/CD. Voor situaties waar snelle en iteratieve veranderingen nodig zijn, heeft de Adobe de Milieu&#39;s van de Snelle Ontwikkeling (RDEs voor kort) ingevoerd.
 
 RDEs staat ontwikkelaars toe om veranderingen snel op te stellen en te herzien, die de hoeveelheid tijd minimaliseren nodig om eigenschappen te testen die aan een lokale ontwikkelomgeving blijken te werken.
 
@@ -44,7 +44,7 @@ Ga als volgt te werk om Cloud Manager te gebruiken om een RDE voor uw programma 
 
    * RDE&#39;s kunnen aan beide worden toegevoegd [sandboxprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) en [productieprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
-1. Van de **Programmaoverzicht** pagina, klik op **Omgeving toevoegen** op de **Omgevingen** kaart om een omgeving toe te voegen.
+1. Van de **Programmaoverzicht** pagina, klik op **Omgeving toevoegen** op de **Omgevingen** -kaart om een omgeving toe te voegen.
 
    ![Milieukaart](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -54,12 +54,12 @@ Ga als volgt te werk om Cloud Manager te gebruiken om een RDE voor uw programma 
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
+1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
 
    * Selecteren **Snelle ontwikkeling** onder de **Omgevingstype selecteren** kop.
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter het omgevingstype weergegeven.
-   * Een **Naam** voor het milieu.
-   * Een optionele **Beschrijving** voor het milieu.
+   * Geef een **Naam** voor het milieu
+   * Een optionele **Beschrijving** voor het milieu
    * Selecteer een **Cloud Region**.
 
    ![Omgevingsdialoogvenster toevoegen](/help/implementing/cloud-manager/assets/add-environment-wizard.png)
@@ -78,7 +78,7 @@ Nadat u een RDE voor uw programma hebt toegevoegd gebruikend de Manager van de W
 
 >[!IMPORTANT]
 >
->Zorg ervoor dat u beschikt over de nieuwste versie van [Knooppunt en NPM geïnstalleerd](https://nodejs.org/en/download/) voor Adobe I/O CLI en verwante plug-ins correct te laten werken.
+>Zorg ervoor dat u de nieuwste versie van [Knooppunt en NPM geïnstalleerd](https://nodejs.org/en/download/) voor Adobe I/O CLI en verwante plug-ins correct te laten werken.
 
 
 1. Installeer de Adobe I/O CLI-gereedschappen volgens de procedure [hier](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
@@ -158,7 +158,7 @@ Adobe raadt de volgende workflow aan voor het ontwikkelen van een nieuwe functie
 
 * Test de code in RDE. Auteur- en publicatie-URL&#39;s zijn beschikbaar in Cloud Manager.
 
-* Als de code zich niet zoals verwacht gedraagt, gebruik standaard het zuiveren technieken om het probleem te begrijpen en de aangewezen veranderingen aan te brengen. Zonder de codewijzigingen toe te wijzen om (aangezien zij niet) zijn bevestigd, gebruik lokale CLI om de code aan RDE te synchroniseren. Herhaal dit totdat het probleem is opgelost.
+* Als de code zich niet zoals verwacht gedraagt, gebruik standaard het zuiveren technieken om het probleem te begrijpen en de aangewezen veranderingen aan te brengen. Zonder de codewijzigingen toe te wijzen aan git (aangezien zij niet) zijn bevestigd, gebruik lokale CLI om de code aan RDE te synchroniseren. Herhaal dit totdat het probleem is opgelost.
 
 * Zodra de code zich zoals verwacht gedraagt, wijs de code aan de git eigenschaptak toe.
 
@@ -190,13 +190,13 @@ Met zorgvuldige coördinatie is het echter mogelijk dat meerdere ontwikkelaars e
 
   `aio aem rde <command> --help`
 
-### Implementeren op RDE {#deploying-to-rde}
+### Distribueren naar RDE {#deploying-to-rde}
 
 Deze sectie beschrijft het gebruiken van RDE CLI voor het opstellen van, het installeren van, of het bijwerken van bundels, configuraties OSGI, inhoudspakketten, individuele inhoudsdossiers, en Apache of Dispatcher configuraties.
 
 Het algemene gebruikspatroon is `aio aem:rde:install <artifact>`.
 
-Hier volgen enkele voorbeelden:
+Hieronder vindt u enkele voorbeelden:
 
 <u>Een inhoudspakket implementeren</u>
 
@@ -280,7 +280,7 @@ dan stel de configuratie door dit bevel op:
 
 >[!NOTE]
 >
->RDE ondersteunt de configuratie van de &quot;Flexible mode&quot;verzender, maar niet de &quot;Legacy mode&quot;verzender configuratie. Zie [verzendingsdocumentatie](/help/implementing/dispatcher/disp-overview.md#validation-debug) voor informatie over de twee modi. U kunt ook de documentatie raadplegen over [migreren naar flexibele modus](/help/implementing/dispatcher/validation-debug.md#migrating), als u dat nog niet hebt gedaan.
+>RDE ondersteunt de configuratie van de &quot;Flexible mode&quot;-dispatcher, maar niet de configuratie van de &quot;Legacy mode&quot;-dispatcher. Zie [verzendingsdocumentatie](/help/implementing/dispatcher/disp-overview.md#validation-debug) voor informatie over de twee modi. U kunt ook de documentatie raadplegen over [migreren naar flexibele modus](/help/implementing/dispatcher/validation-debug.md#migrating), als u dat nog niet hebt gedaan.
 
 Een succesvolle plaatsing zal een reactie op het volgende produceren lijken:
 
@@ -347,7 +347,7 @@ die een antwoord geeft in de vorm van:
 
 ### Verwijderen uit RDE {#deleting-from-rde}
 
-U kunt configuraties en bundels schrappen die eerder aan RDE via CLI hulpmiddelen zijn opgesteld. Gebruik de `status` gebruiken voor een lijst met handelingen die u wilt verwijderen, waaronder de opdracht `bsn` voor bundels en `pid` voor vormen om in het schrappingsbevel van verwijzingen te voorzien.
+U kunt configuraties en bundels schrappen die eerder aan RDE via CLI hulpmiddelen zijn opgesteld. Gebruik de `status` gebruiken voor een lijst met handelingen die u wilt verwijderen, waaronder de opdracht `bsn` voor bundels `pid` voor vormen om in het schrappingsbevel van verwijzingen te voorzien.
 
 Als `com.adobe.granite.demo.MyServlet.cfg.json` is geïnstalleerd, `bsn` is net `com.adobe.granite.demo.MyServlet`, zonder de **cfg.json** achtervoegsel.
 
@@ -441,7 +441,7 @@ Zie de [documentatie over de bedrijfsmodus](/help/implementing/deploying/overvie
 >
 >De configuratie van RDE OSGI is uniek in die zin dat het de waarden van om het even welke eigenschappen overerft OSGI die door de bundel worden verklaard `dev` uitvoeringsmodus.
 
-RDE&#39;s verschillen van andere omgevingen omdat inhoud kan worden geïnstalleerd in de map install.load (of install.auteur.rde of install.publish.rde) onder /apps. Dit staat u toe om inhoud te begaan om het te git en het te leveren aan RDE gebruikend het hulpmiddel van de bevellijn.
+RDE&#39;s verschillen van andere omgevingen omdat inhoud kan worden geïnstalleerd in de map install.load (of install.auteur.rde of install.publish.rde) onder /apps. Dit laat u inhoud aan git begaan en het leveren aan RDE gebruikend het hulpmiddel van de bevellijn.
 
 ## vullen met inhoud {#populating-content}
 
@@ -451,7 +451,7 @@ Wanneer een RDE wordt teruggesteld, wordt al inhoud verwijderd en zo zo, zo moet
 
 1. Plaats en wijs de steekproefinhoud in git binnen een install.rde omslag onder /apps toe en synchroniseer dan het overkoepelende inhoudspakket aan RDE gebruikend het hulpmiddel van de bevellijn.
 
-1. Gebruik de [kopiëren van inhoud, gereedschap](/help/implementing/developing/tools/content-copy.md) om een bepaalde inhoudenset van prod, stadium, of ontwikkelmilieu&#39;s, of van een andere RDE te kopiëren.
+1. Gebruik de [inhoudskopie](/help/implementing/developing/tools/content-copy.md) om een bepaalde inhoudenset van prod, stadium, of ontwikkelmilieu&#39;s, of van een andere RDE te kopiëren.
 
 1. Pakketbeheer gebruiken
 
@@ -467,7 +467,7 @@ Terwijl RDE in vele opzichten gelijkaardig aan een Milieu van de Ontwikkeling va
 
 Om deze redenen, adviseert men dat na het bevestigen van code op een milieu RDE, u de code aan een Milieu van de Ontwikkeling van de Wolk zou moeten opstellen gebruikend de niet productiepijplijn. Tot slot test de code alvorens met de productiepijpleiding op te stellen.
 
-Let ook op het volgende:
+Houd ook rekening met het volgende:
 
 * RDE&#39;s bevatten geen voorvertoningsniveau
 * RDEs steunt momenteel niet het bekijken en het zuiveren voorste code die gebruikend de Voorste-EindPijl van de Manager van de Wolk wordt opgesteld.
@@ -476,11 +476,11 @@ Let ook op het volgende:
 
 ## Hoeveel RDEs heb ik nodig? {#how-many-rds-do-i-need}
 
-RDE is beschikbaar voor elke vergunning gegeven oplossing en Adobe biedt ook extra RDEs aan, die voor Productie (niet zandbak) programma&#39;s kan worden vergunning gegeven.
+RDE is beschikbaar voor elke vergunning gegeven oplossing en de Adobe biedt ook extra RDEs aan, die voor Productie (niet zandbak) programma&#39;s kan worden vergunning gegeven.
 
 Het aantal vereiste RDEs hangt van de samenstelling en de processen van een organisatie af. Het meest flexibele model is waar een organisatie een specifieke RDE voor elk van hun ontwikkelaars van AEM Cloud Service koopt. In dit model, kan elke ontwikkelaar hun code op RDE testen zonder met andere teamleden rond te coördineren of een milieu RDE beschikbaar is.
 
-Aan het andere uiteinde kan een team met één RDE interne processen gebruiken om te coördineren welke ontwikkelaar het milieu op een bepaald ogenblik kan gebruiken. Dit kan mogelijk altijd zijn wanneer een ontwikkelaar een mijlpaal voor tussentijdse functies heeft bereikt en klaar is om te valideren in een Cloud-omgeving waar hij snel de gewenste wijzigingen kan aanbrengen.
+Aan het andere uiteinde kan een team met één RDE interne processen gebruiken om te coördineren welke ontwikkelaar het milieu op een bepaald ogenblik kan gebruiken. Dit kan mogelijk altijd zijn wanneer een ontwikkelaar een mijlpaal voor tussentijdse functies heeft bereikt en klaar is om te valideren in een Cloud-omgeving waar hij snel de benodigde wijzigingen kan aanbrengen.
 
 Een tussenliggend model is een model waarbij een organisatie een aantal RDE&#39;s koopt, zodat de kans groter is dat een ongebruikte RDE beschikbaar is. Eén strategie zou kunnen bestaan uit het toewijzen van een RDE per rumteam of belangrijke functie. Interne processen kunnen worden gebruikt om het gebruik van de omgevingen te coördineren.
 
@@ -500,4 +500,4 @@ Forms-ontwikkelaars kunnen AEM Forms Cloud Service Rapid Development Environment
 
 ## RDE-zelfstudie
 
-Voor meer informatie over RDE in AEM as a Cloud Service raadpleegt u [videozelfstudie die laat zien hoe u het programma kunt instellen, gebruiken en de ontwikkelingscyclus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
+Voor meer informatie over RDE in AEM as a Cloud Service raadpleegt u [videozelfstudie die laat zien hoe u het programma kunt instellen, gebruiken en de levenscyclus van de ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)

@@ -6,7 +6,7 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Tabellen in adaptieve vorm {#tables-in-adaptive-forms}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 
 | Versie | Artikelkoppeling |
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Het gebruik van tabellen is een effectieve, vereenvoudigde en georganiseerde manier om complexe gegevens weer te geven. Het helpt gebruikers bij het gemakkelijk identificeren van informatie en het verstrekken van input in een geordende regeling van rijen en kolommen. De meeste vormen van financiële diensten en overheidsorganisaties vereisen grote gegevenslijsten om aantallen te zetten en berekeningen uit te voeren.
 
-AEM Forms biedt een component Tabel in de deelvensterbrowser op het zijpaneel waarmee u tabellen kunt maken in adaptieve formulieren. Enkele belangrijke mogelijkheden zijn:
+AEM Forms biedt een component Tabel in de deelvensterbrowser op het zijpaneel waarmee u tabellen kunt maken in adaptieve formulieren. Enkele belangrijke mogelijkheden die het verstrekt zijn:
 
 * Responsieve lay-out op mobiele apparaten
 * Configureerbare rijen en kolommen
@@ -53,7 +53,7 @@ De lichaamscellen zijn tekstvakjes, door gebrek. U kunt een hoofdcel vervangen d
 
 De eerste tekstrij in de volgende tabel bevat bijvoorbeeld tekstvak, datumkiezer en vervolgkeuzelijstcomponenten als cellen.
 
-![rijceltypen](assets/row-cell-types.png)
+![row-cell-typen](assets/row-cell-types.png)
 
 U kunt twee of meer lichaamscellen samenvoegen door de cellen te selecteren u wilt samenvoegen, met de rechtermuisknop klikken, en selecteren **Samenvoegen**. U kunt ook een samengevoegde cel splitsen door er met de rechtermuisknop op te klikken en selecteren **Cellen splitsen**.
 
@@ -63,7 +63,7 @@ U kunt een rij of kolom toevoegen en verwijderen en een rij omhoog en omlaag ver
 
 #### Een rij toevoegen, verwijderen of verplaatsen
 
-Als u de rij wilt toevoegen, verwijderen of verplaatsen, klikt u op een cel van de rij. de inhoudbrowser openen ![Inhoudsbrowser](/help/forms/assets/Smock_Layers_18_N.svg) en selecteert u de desbetreffende rij, wordt de geselecteerde rij gemarkeerd met de werkbalkoptie waaruit u de rij omhoog of omlaag kunt toevoegen, verwijderen of verplaatsen.
+Als u de rij wilt toevoegen, verwijderen of verplaatsen, klikt u op een cel van de rij. de inhoudbrowser openen ![Content Browser](/help/forms/assets/Smock_Layers_18_N.svg) en selecteert u de desbetreffende rij, wordt de geselecteerde rij gemarkeerd met de werkbalkoptie waaruit u de rij omhoog of omlaag kunt toevoegen, verwijderen of verplaatsen.
 
 * De **[!UICONTROL Move Up]** en **[!UICONTROL Move Down]** Hiermee verplaatst u de geselecteerde rij omhoog en omlaag.
 
@@ -91,7 +91,7 @@ Als u een kolom wilt toevoegen of verwijderen, klikt u op de tekstcel in de kopt
 
 U kunt een beschrijving van de tabel toevoegen om uit te leggen hoe de informatie is ingedeeld die schermlezers kunnen interpreteren en lezen. De beschrijving toevoegen:
 
-1. Selecteer de tabel en tik op ![cmppr](assets/cmppr.png) om de eigenschappen in de zijbalk weer te geven.
+1. Selecteer de tabel en tik ![cmppr](assets/cmppr.png) om de eigenschappen in de zijbalk weer te geven.
 1. Geef een overzicht op op het tabblad Toegankelijkheid.
 1. Klikken **Gereed**.
 
@@ -109,13 +109,13 @@ Als u sortering wilt toepassen op tabelkolommen, moeten de cellen in de tabelkol
 
 Sorteren inschakelen:
 
-1. Selecteer de tabel en tik op ![configure_icon](assets/configure_icon.png) (Configureren). U kunt de tabel ook selecteren met de **Inhoud** browser in het hulpje van de Interactieve Communicatie.
+1. Selecteer de tabel en tik ![configure_icon](assets/configure_icon.png) (Configureren). U kunt de tabel ook selecteren met de **Inhoud** browser in het hulpje van de Interactieve Communicatie.
 1. Selecteren **Sorteren inschakelen**.
 1. Tikken ![done_icon](assets/done_icon.png) om de tabeleigenschappen op te slaan. De sorteerpictogrammen, pijlen omhoog en omlaag, in kolomkoppen geven aan dat het sorteren is ingeschakeld.
 
    ![Sorteren inschakelen](assets/enable_sorting_new.png)
 
-1. Naar de **Voorvertoning** om de uitvoer weer te geven. De tabel wordt automatisch gesorteerd op basis van de eerste kolom van de tabel.
+1. Schakel over naar de **Voorvertoning** om de uitvoer weer te geven. De tabel wordt automatisch gesorteerd op basis van de eerste kolom van de tabel.
 1. Klik op de kolomkop om de waarden te sorteren op basis van de kolom.
 
    Een kolomkop met een pijl-omhoog geeft aan dat de tabel is gesorteerd op basis van die kolom. Bovendien worden de waarden in de kolom in oplopende volgorde weergegeven.
@@ -178,14 +178,14 @@ Tabellen en rijen bieden alleen ondersteuning voor zichtbaarheidsexpressies om d
 >
 >Als het XFA change/exit-script ook op hetzelfde veld wordt toegepast, wordt het XFA change/exit-script uitgevoerd vóór het Value Commit-script.
 
-* **Expressies berekenen**: om de waarde van een veld automatisch te berekenen.
+* **Expressies berekenen**: als u de waarde van een veld automatisch wilt berekenen.
 * **Validatie-expressies**: om een veld te valideren.
 * **Toegang tot expressies**: om een veld in of uit te schakelen.
 * **Visibility expression**: om de zichtbaarheid van een veld en deelvenster te regelen.
 
 De zichtbaarheidsexpressie voor een tabel of rij kan worden gedefinieerd op het tabblad Eigenschappen van deelvenster van het corresponderende dialoogvenster van de component Bewerken. De expressies voor een cel kunnen worden gedefinieerd op het tabblad Script van het dialoogvenster dat de component Edit bevat.
 
-Voor de volledige lijst met adaptieve formulierklassen, gebeurtenissen, objecten en openbare API&#39;s raadpleegt u [JavaScript Library API-referentie voor adaptieve formulieren](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+Zie voor de volledige lijst met adaptieve formulierklassen, gebeurtenissen, objecten en openbare API&#39;s [JavaScript Library API-referentie voor adaptieve formulieren](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Mobiele lay-outs {#mobile-layouts}
 
@@ -199,7 +199,7 @@ In de kopteksten op linkerlay-out, wordt de kopbal in de lijst omgezet op de lin
 
 ![bureaubladweergave](assets/desktopview_new.png)
 
-Bureaubladweergave van een tabel met koptekst in de linkerlay-out
+Bureaubladweergave van een tabel met Koptekst in linkerindeling
 
 ![Kopteksten aan de linkerkant](assets/headersontheleft_new.png)
 
@@ -231,7 +231,7 @@ Neem bijvoorbeeld de volgende overzichtstabel voor banktransacties die we willen
 
 ![data-merge-table](assets/data-merge-table.png)
 
-In dit voorbeeld, het bezit van de Naam van het Element voor:
+In dit voorbeeld is de eigenschap Element name for:
 
 * de rij is **Rij1**
 * de cel van het lichaam onder de transactiedatum is **tableItem1**
@@ -328,6 +328,6 @@ Bovendien kunt u een groep XSD-complexe tekstelementen slepen en neerzetten om e
 ## Belangrijkste overwegingen {#key-considerations}
 
 * Als u rijen omhoog en omlaag verplaatst tijdens het ontwerpen van een op XSD gebaseerde tabel, wordt enig gegevensverlies uit tabelrijen gezien in de gegevens-XML die bij het verzenden van het formulier worden gegenereerd.
-* Aan elke cel in een standaardtabel is een vooraf gedefinieerde elementnaam gekoppeld. Als u een andere tabel in het aangepaste formulier toevoegt, hebben de standaardhoofdtekstcellen in de nieuwe tabel dezelfde elementnaam als in de eerste tabel. In dat geval bevatten de gegevens die bij het verzenden van het formulier worden gegenereerd, gegevens in de standaardhoofdtekstcellen van slechts een van de tabellen. Zorg er daarom voor dat u de elementnamen voor standaardlichaamscellen hernoemt om ze uniek te houden in verschillende tabellen en gegevensverlies te voorkomen.
+* Aan elke hoofdcel in een standaardtabel is een vooraf gedefinieerde elementnaam gekoppeld. Als u een andere tabel in het aangepaste formulier toevoegt, hebben de standaardhoofdtekstcellen in de nieuwe tabel dezelfde elementnaam als in de eerste tabel. In dat geval bevatten de gegevens die bij het verzenden van het formulier worden gegenereerd, gegevens in de standaardhoofdtekstcellen van slechts een van de tabellen. Zorg er daarom voor dat u de elementnamen voor standaardlichaamscellen hernoemt om ze uniek te houden in verschillende tabellen en gegevensverlies te voorkomen.
 
-  Merk op dat dit slechts op de standaardlichaamscellen van toepassing is. Als u meer rijen of kolommen aan een tabel toevoegt, worden automatisch unieke elementnamen voor niet-standaardlichaamscellen gegenereerd.
+  Dit is alleen van toepassing op de standaardlichaamscellen. Als u meer rijen of kolommen aan een tabel toevoegt, worden automatisch unieke elementnamen voor niet-standaardlichaamscellen gegenereerd.

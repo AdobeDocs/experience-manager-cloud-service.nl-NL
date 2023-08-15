@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2020.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 * Videotranscodering wordt nu ondersteund met middelenmicroservices. Een nieuwe sectie in het dialoogvenster [!UICONTROL Processing Profiles] Met de configuratie kunt u de bitsnelheid en afmetingen voor de video instellen. De uitvoerindeling is MP4 met H.264-codec. Zie voor meer informatie [video-elementen beheren](/help/assets/manage-video-assets.md#transcode-video). Voor meer transcoderingsopties en voor het afleveren van video gebruikt u [!DNL Dynamic Media] invoegtoepassing.
 
-* Op nieuw [!DNL Experience Manager Assets] implementaties, is de functionaliteit voor slimme tags nu standaard geconfigureerd. U hoeft niet handmatig te integreren met [!DNL Adobe Developer Console]. Bij bestaande implementaties configureren beheerders de integratie van slimme tags zoals voorheen.
+* Op nieuw [!DNL Experience Manager Assets] implementaties, is de functionaliteit voor slimme tags nu standaard geconfigureerd. Niet handmatig integreren met [!DNL Adobe Developer Console]. Bij bestaande implementaties configureren beheerders de integratie van slimme tags zoals voorheen.
 
 * Een nieuwe [download van middelen](/help/assets/download-assets-from-aem.md) toestaat,
 
@@ -53,7 +53,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
    * De accordeonelementen in de sectie met zoekfilters worden geïnterpreteerd als standaard uitbreidbare accordeons. <!-- via CQ-4273103 -->
    * Wanneer u een tag toepast op een element, worden labels in het dialoogvenster weergegeven als boomelementen. ARIA-kenmerken worden op de juiste wijze toegepast op de boomelementen om ze nu toegankelijk te maken. <!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] 2.0.3-release is nu beschikbaar. De compatibiliteit met [!DNL Experience Manager] 6.5.5 de dienstpak en heeft een bijgewerkte lijst van de verenigbaarheid van het cliëntOS. [!DNL Windows] 7 en [!DNL macOS] eerdere versies dan 10.14 worden niet ondersteund.
+* [!DNL AEM Desktop app] 2.0.3-release is nu beschikbaar. Het verbetert de verenigbaarheid met [!DNL Experience Manager] 6.5.5 de dienstpak en heeft een bijgewerkte lijst van de verenigbaarheid van het cliëntOS. [!DNL Windows] 7 en [!DNL macOS] eerdere versies dan 10.14 worden niet ondersteund.
 
 ### Buizen vastgesteld in [!DNL Assets] {#bugs-fixed}
 
@@ -72,7 +72,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 ### Releasedatum {#release-date-cm}
 
-De releasedatum voor [!UICONTROL Cloud Manager] Versie 2020.8.0 is 6 augustus 2020.
+De releasedatum voor [!UICONTROL Cloud Manager] Versie 202.8.0 is 6 augustus 2020.
 
 ### Wat is er nieuw? {#what-is-new-cloud-manager}
 
@@ -82,9 +82,9 @@ De releasedatum voor [!UICONTROL Cloud Manager] Versie 2020.8.0 is 6 augustus 20
   >[!NOTE]
   >De naam van Content Audit is sindsdien gewijzigd in Experience Audit.
 
-  Zie [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie .
+  Zie [Ervaring controleren testen](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie .
 
-* Nieuw gemaakte omgevingen in middelenprogramma&#39;s worden nu automatisch geconfigureerd met Smart Content Services.
+* Nieuwe omgevingen in middelenprogramma&#39;s worden nu automatisch geconfigureerd met Smart Content Services.
 
 * Gesamberde omgevingen kunnen worden gedehiberneerd uit de cloudbeheerfunctie **Overzicht** pagina.
 
@@ -138,8 +138,8 @@ Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen v
 
 ### Wat is er nieuw? {#what-is-new-refactoring}
 
-* De insteekmodule AIO-CLI wordt vrijgegeven om code refactoring hulpmiddelen te verenigen om ontwikkelaars toe te laten om code refactoring hulpmiddelen van één plaats aan te halen en uit te voeren. Zie [Git-bron: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie .
+* De insteekmodule AIO-CLI wordt vrijgegeven om code refactoring hulpmiddelen te verenigen om ontwikkelaars toe te laten om code refactoring hulpmiddelen van één plaats aan te halen en uit te voeren. Zie [Git-bron: audio-cli-plugin-aem-cloud-service-migratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie .
 
-* AEM Dispatcher Converter uitgebreid om conversies van On-premise en Adobe Managed Services Dispatcher-configuraties in AEM as a Cloud Service compatibele Dispatcher-configuraties te ondersteunen. Zie [Git-bron: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) voor meer informatie .
+* AEM Dispatcher Converter uitgebreid om conversies van On-premise en Adobe van Managed Services Dispatcher-configuraties in AEM as a Cloud Service compatibele Dispatcher-configuraties te ondersteunen. Zie [Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) voor meer informatie .
 
 * AEM Dispatcher Converter opnieuw geschreven in ` node.js ` en geïntegreerd met AIO-CLI-plug-in.

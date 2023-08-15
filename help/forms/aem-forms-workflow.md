@@ -8,9 +8,9 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2336'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Met Forms-centric werkschema op OSGi, kunt u werkschema&#39;s voor diverse taken
 
 Nadat de werkstromen zijn ingesteld, kunnen deze handmatig worden geactiveerd om een gedefinieerd proces te voltooien of via programmacode worden uitgevoerd wanneer gebruikers een formulier verzenden <!-- or [correspondence management](cm-overview.md) letter-->. <!-- With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-Forms-gecentreerde workflow op OSGi breidt uit [AEM Postvak IN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#authoring) en biedt extra componenten (stappen) voor AEM Workfloweditor om ondersteuning toe te voegen voor [!DNL AEM Forms]-centric workflows. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+Forms-gecentreerde workflow op OSGi breidt uit [AEM Inbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#authoring) en biedt extra componenten (stappen) voor AEM Workfloweditor om ondersteuning toe te voegen voor [!DNL AEM Forms]-centric workflows. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 Alles [!DNL AEM Forms] workflowstappen ondersteunen het gebruik van variabelen. Met variabelen kunnen workflowstappen metagegevens tijdens runtime bevatten en doorgeven. U kunt verschillende typen variabelen maken om verschillende typen gegevens op te slaan. U kunt ook variabele verzamelingen (arrays) maken om meerdere instanties van verwante, met hetzelfde type getypte gegevens op te slaan. Typisch, gebruikt u een variabele of een inzameling van variabelen wanneer u een besluit moet nemen dat op de waarde wordt gebaseerd die het houdt of informatie opslaat die u later in een proces nodig hebt. Zie voor meer informatie over het gebruik van variabelen in deze Forms-centric workflowcomponenten (stappen) [Forms-centric workflow voor OSGi - Step Reference](aem-forms-workflow-step-reference.md). Voor informatie over het maken en beheren van variabelen raadpleegt u [Variabelen in AEM werkstromen](variable-in-aem-workflows.md).
 
@@ -45,7 +45,7 @@ Het volgende diagram toont de procedure van begin tot eind om, een Forms-centric
 * Een werkschema is een vertegenwoordiging van een echt bedrijfsproces. Houd uw real-world bedrijfsproces en lijst van de deelnemers van het bedrijfsproces klaar. Houd ook het onderpand (Adaptive Forms, PDF Documents en meer) gereed voordat u een workflow gaat maken.
 * Een werkstroom kan uit meerdere fasen bestaan. Deze fasen worden weergegeven in het AEM Inbox en Help de voortgang van de workflow te melden. Verdeel uw bedrijfsproces in logische stadia.
 * U kunt de taakstap van AEM Workflows configureren om e-mailmeldingen te verzenden naar de gebruikers of de toewijzingen. Dus, [e-mailberichten inschakelen](#configure-email-service).
-* Een workflow kan ook Adobe-handtekeningen gebruiken voor digitale handtekeningen. Als u Adobe Sign in een workflow wilt gebruiken, [Adobe Sign configureren voor [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) voordat u het gebruikt in een workflow.
+* Een workflow kan ook gebruikmaken van een Adobe voor digitale handtekeningen. Als u Adobe Sign in een workflow wilt gebruiken, [Adobe Sign configureren voor [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) voordat u het gebruikt in een workflow.
 
 ## Een workflowmodel maken {#create-a-workflow-model}
 
@@ -59,7 +59,7 @@ AEM biedt een intuïtieve gebruikersinterface voor het maken van een workflowmod
 
 ### Een model maken voor een goedkeurings- en revisiewerkstroom {#create-a-model-for-an-approval-and-review-workflow}
 
-Goedkeuring- en revisiewerkstroom is bedoeld voor de taken waarvoor menselijke tussenkomst vereist is om beslissingen te nemen. In het volgende voorbeeld wordt een workflowmodel gemaakt voor een hypotheekleningaanvraag die moet worden ingevuld door een bankagent van het hoofdkantoor. Nadat de aanvraag is ingevuld, wordt deze ter goedkeuring verzonden. Later wordt de goedgekeurde aanvraag met Adobe Sign naar de aanvrager van elektronische handtekeningen gezonden.
+Goedkeuring- en revisiewerkstroom is bedoeld voor de taken waarvoor menselijke tussenkomst vereist is om beslissingen te nemen. In het volgende voorbeeld wordt een workflowmodel gemaakt voor een hypotheekleningaanvraag die moet worden ingevuld door een bankagent voor het hoofdkantoor. Nadat de aanvraag is ingevuld, wordt deze ter goedkeuring verzonden. Later wordt de goedgekeurde aanvraag met Adobe Sign naar de aanvrager van elektronische handtekeningen gezonden.
 
 Het voorbeeld is beschikbaar als een hieronder bijgevoegd pakket. Importeer en installeer het voorbeeld met pakketbeheer. U kunt ook de volgende stappen uitvoeren om handmatig het workflowmodel voor de toepassing te maken:
 
@@ -70,20 +70,20 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 1. Open de console Workflowmodellen. De standaard-URL is `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Selecteren **Maken** vervolgens **Model maken**. Het dialoogvenster Workflowmodel toevoegen wordt weergegeven.
 1. Voer de **Titel** en **Naam** (optioneel). Bijvoorbeeld een hypotheekaanvraag. Tikken **Gereed**.
-1. Selecteer het nieuwe workflowmodel en tik op **Bewerken**. Nu kunt u workflowstappen toevoegen om bedrijfslogica te maken. Wanneer u voor het eerst een workflowmodel maakt, bevat dit het volgende:
+1. Selecteer het nieuwe workflowmodel en tik op **Bewerken**. Nu kunt u workflowstappen toevoegen om bedrijfslogica te maken. Wanneer u voor het eerst een workflowmodel maakt, bevat dit:
 
-   * De stappen: Start- en stroomeinde van stroom. Deze stappen vertegenwoordigen het begin en het einde van de workflow. Deze stappen zijn vereist en kunnen niet worden bewerkt of verwijderd.
+   * De stappen: Start en Einde stroom. Deze stappen vertegenwoordigen het begin en het einde van de workflow. Deze stappen zijn vereist en kunnen niet worden bewerkt of verwijderd.
    * Een stap van de voorbeelddeelnemer genoemd Stap 1. Deze stap wordt gevormd om een het werkpunt aan de admin gebruiker toe te wijzen. Verwijder deze stap.
 
 1. E-mailmeldingen inschakelen. U kunt een op Forms gerichte workflow op OSGi configureren om e-mailmeldingen naar de gebruikers of gebruikers te sturen. Voer de volgende configuraties uit om e-mailmeldingen in te schakelen:
 
-   1. Ga naar AEM configuratiebeheer op `https://[server]:[port]/system/console/configMgr`.
+   1. Ga naar AEM configuratiemanager op `https://[server]:[port]/system/console/configMgr`.
    1. Open de **[!UICONTROL Day CQ Mail Service]** configuratie. Geef een waarde op voor de **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** en **[!UICONTROL "From" address]** velden. Klik op **[!UICONTROL Save]**.
    1. Open de **[!UICONTROL Day CQ Link Externalizer]** configuratie. In de **[!UICONTROL Domains]** Geef het daadwerkelijke hostname-/IP-adres en poortnummer op voor lokale instanties, auteurs- en publicatieinstanties. Klik op **[!UICONTROL Save]**.
 
 1. Workflowfasen maken. Een werkstroom kan uit meerdere fasen bestaan. Deze fasen worden weergegeven in het AEM Inbox en de voortgang van de workflow rapporteren.
 
-   Tik op de knop ![info-circle](assets/info-circle.png) om eigenschappen van workflowmodellen te openen, opent u het dialoogvenster **Staven** , fasen voor het workflowmodel toevoegen en tikken **Opslaan en sluiten**. Maak bijvoorbeeld fasen in het voorbeeld van de hypotheektoepassing: leningaanvraag, status van leningaanvraag, te ondertekenen documenten en ondertekend leningsdocument.
+   Tik op de knop ![info-circle](assets/info-circle.png) om eigenschappen van workflowmodellen te openen, opent u het dialoogvenster **Staven** tabblad, fasen voor het workflowmodel toevoegen en tikken **Opslaan en sluiten**. Voor het voorbeeld van de hypotheektoepassing kunt u fasen maken: aanvraag voor een lening, status van de leningaanvraag, te ondertekenen documenten en ondertekend leningdocument.
 
 1. Sleep de **Taak toewijzen** stappen browser aan het werkschemamodel. Maak van het de eerste stap van het model.
 
@@ -93,7 +93,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
    ![workflow-editor](assets/workflow-editor.png)
 
-   Configureer voor het voorbeeld van de hypotheektoepassing de taakstap voor toewijzen om een alleen-lezen adaptief formulier te gebruiken en PDF Document weer te geven zodra de taak is voltooid. Selecteer ook voor gebruikersgroep die de aanvraag voor een lening mag goedkeuren. Op de **Handelingen** tabblad, schakelt u de **Verzenden** optie. Een **actionTake** variabele van het gegevenstype String en geef de variabele op als de **Route Variable**. Bijvoorbeeld actionTake. Voeg ook de routes Goedkeuren en Afwijzen toe. De routes worden getoond als afzonderlijke acties (knopen) in AEM Inbox. De werkstroom selecteert een vertakking op basis van de actie (knoop) een gebruiker tikt.
+   Configureer voor het voorbeeld van de hypotheektoepassing de taakstap voor toewijzen om een alleen-lezen adaptief formulier te gebruiken en PDF Document weer te geven zodra de taak is voltooid. Selecteer ook voor gebruikersgroep die de aanvraag voor een lening mag goedkeuren. Op de **Handelingen** tabblad, schakelt u de **Verzenden** -optie. Een **actionTake** variabele van het gegevenstype String en geef de variabele op als de **Route Variable**. Bijvoorbeeld actionTake. Voeg ook de routes Goedkeuren en Afwijzen toe. De routes worden getoond als afzonderlijke acties (knopen) in AEM Inbox. De werkstroom selecteert een vertakking op basis van de actie (knoop) een gebruiker tikt.
 
    U kunt het voorbeeldpakket importeren, dat u kunt downloaden vanaf het begin van de sectie, voor de volledige set waarden van alle velden van de taakstap toewijzen die is geconfigureerd, bijvoorbeeld hypotheektoepassing.
 
@@ -119,7 +119,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
 1. Voeg andere workflowstappen toe om de bedrijfslogica te bouwen.
 
-   Voeg voor het hypotheekvoorbeeld een Document van Record genereren toe, wijzen twee taakstappen toe en een stap van het ondertekeningsdocument naar vertakking 1 van het model, zoals in de onderstaande afbeelding wordt weergegeven. Eén taakstap toewijzen is weergeven en verzenden **te ondertekenen leningsdocumenten aan de aanvrager** en een andere taakcomponent toewijzen is **om ondertekende documenten weer te geven**. Voeg ook een taakcomponent toe aan vertakking 2. Deze wordt geactiveerd wanneer een gebruiker op Afwijzen in AEM Postvak IN tikt.
+   Voeg voor het hypotheekvoorbeeld een Document van Record genereren toe, wijzen twee taakstappen toe en een stap van het ondertekeningsdocument naar vertakking 1 van het model, zoals in de onderstaande afbeelding wordt weergegeven. Eén taakstap toewijzen is weergeven en verzenden **te ondertekenen leningsdocumenten aan de aanvrager** en een andere taakcomponent toewijzen is **om ondertekende documenten te tonen**. Voeg ook een taakcomponent toe aan vertakking 2. Deze wordt geactiveerd wanneer een gebruiker op Afwijzen in AEM Postvak IN tikt.
 
    Voor de volledige set waarden van alle velden van de taakstappen toewijzen, de stap Document of Record en de stap Document ondertekenen die zijn geconfigureerd voor bijvoorbeeld hypotheektoepassing, importeert u het voorbeeldpakket dat beschikbaar is voor downloaden in het begin van deze sectie.
 
@@ -136,7 +136,7 @@ De toepassing is het adaptieve formulier dat aan de workflow is gekoppeld. Wanne
 >U moet lid van de fd-beheerder groep zijn om werkschematoepassingen te kunnen tot stand brengen en beheren.
 
 1. Ga naar de AEM ![gereedschappen-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Manage Workflow Application]** en kranen **[!UICONTROL Create]**.
-1. Geef in het venster Workflowtoepassing maken invoer op voor de volgende velden en tikt u op **Maken**. Er wordt een nieuwe toepassing gemaakt en deze wordt weergegeven in het scherm Workflowtoepassingen.
+1. Geef in het venster Workflowtoepassing maken invoer op voor de volgende velden en tikken **Maken**. Er wordt een nieuwe toepassing gemaakt en deze wordt weergegeven in het scherm Workflowtoepassingen.
 
 <table>
  <tbody>
@@ -150,7 +150,7 @@ De toepassing is het adaptieve formulier dat aan de workflow is gekoppeld. Wanne
   </tr>
   <tr>
    <td>Naam </td>
-   <td>Geef de naam van de toepassing op. Alle andere tekens dan alfabeten, getallen, afbreekstreepjes en onderstrepingstekens worden vervangen door afbreekstreepjes. </td>
+   <td>Geef de naam van de toepassing op. Alle andere tekens dan alfabeten, getallen, koppeltekens en onderstrepingstekens worden vervangen door afbreekstreepjes. </td>
   </tr>
   <tr>
    <td>Beschrijving</td>
@@ -201,11 +201,11 @@ U kunt een Forms-centric workflow starten of activeren door:
 
 ### Een toepassing verzenden vanuit AEM Postvak In {#inbox}
 
-De workflowtoepassing die u hebt gemaakt, is beschikbaar als een toepassing in Inbox. Gebruikers die lid zijn van [!DNL workflow-users] kan de toepassing die de bijbehorende workflow activeert, vullen en verzenden. Voor informatie over het gebruiken van AEM Inbox om toepassingen voor te leggen en taken te beheren, zie [Forms-toepassingen en -taken beheren in AEM Postvak In](manage-applications-inbox.md).
+De workflowtoepassing die u hebt gemaakt, is beschikbaar als een toepassing in Inbox. Gebruikers die lid zijn van [!DNL workflow-users] de groep kan de toepassing die de bijbehorende workflow activeert, vullen en verzenden. Voor informatie over het gebruiken van AEM Inbox om toepassingen voor te leggen en taken te beheren, zie [Forms-toepassingen en -taken beheren in AEM Postvak In](manage-applications-inbox.md).
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
-The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and allows you to make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
+The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and lets you make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
 
 ### Een adaptief formulier verzenden {#af}
 

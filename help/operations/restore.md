@@ -1,9 +1,9 @@
 ---
 title: Inhoud herstellen in AEM as a Cloud Service
 description: Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met gebruik van Cloud Manager.
-source-git-commit: 6813b5b9570a4d115cd0600bcccd4d787dc42154
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met g
 
 ## Overzicht {#overview}
 
-Met het terugzetproces van Cloud Manager worden gegevens van back-ups van het Adobe-systeem gekopieerd en wordt de oorspronkelijke omgeving hersteld. Herstel wordt uitgevoerd om gegevens terug te keren die zijn verloren, beschadigd of per ongeluk verwijderd.
+Met het terugzetproces voor zelfbediening van Cloud Manager worden gegevens van back-ups van het systeem van de Adobe gekopieerd en wordt de oorspronkelijke omgeving hersteld. Herstel wordt uitgevoerd om gegevens terug te keren die zijn verloren, beschadigd of per ongeluk verwijderd.
 
 Het terugzetproces beïnvloedt slechts inhoud, verlatend uw code en versie van AEM onveranderd. U kunt op elk gewenst moment een herstelbewerking van afzonderlijke omgevingen starten.
 
@@ -59,11 +59,11 @@ Bepaal eerst het tijdkader van de inhoud die u wilt herstellen. Voer vervolgens 
 
 1. Op de **Inhoud herstellen** tabblad van de pagina met omgevingsdetails, selecteert u eerst het tijdframe van de terugzetbewerking onder het tabblad **Te herstellen tijd** vervolgkeuzelijst.
 
-   1. Als u **Afgelopen 24 uur** de omgeving **Tijd** kunt u de exacte tijd opgeven binnen de laatste 24 uur die u wilt herstellen.
+   1. Als u **Afgelopen 24 uur** de omgeving **Tijd** in dit veld kunt u de exacte tijd opgeven binnen de laatste 24 uur die u wilt herstellen.
 
       ![Afgelopen 24 uur](assets/backup-time.png)
 
-   1. Als u **Vorige week** de omgeving **Dag** in dit veld kunt u een datum selecteren die valt binnen de afgelopen zeven dagen, exclusief de voorafgaande 24 uur.
+   1. Als u **Vorige week** de omgeving **Dag** in dit veld kunt u een datum in de afgelopen zeven dagen selecteren, met uitzondering van de voorafgaande 24 uur.
 
       ![Vorige week](assets/backup-date.png)
 
@@ -114,11 +114,11 @@ Door op het informatiepictogram voor een back-up te klikken kunt u logboeken voo
 
 ## Offsite back-up {#offsite-backup}
 
-Regelmatige back-ups dekken het risico van onopzettelijke verwijderingen of technische storingen in AEM Cloud Services, maar extra risico&#39;s kunnen het gevolg zijn van een fout in een regio. Naast beschikbaarheid is het grootste risico in dergelijke regionale uitvallen een gegevensverlies.
+Regelmatige back-ups dekken het risico van onopzettelijke verwijderingen of technische storingen binnen AEM Cloud Servicen, maar extra risico&#39;s kunnen het gevolg zijn van het falen van een regio. Naast beschikbaarheid is het grootste risico in dergelijke regionale uitvallen een gegevensverlies.
 
 AEM as a Cloud Service beperkt dit risico voor alle AEM productieomgevingen door alle AEM inhoud voortdurend naar een afgelegen gebied te kopiëren en deze gedurende drie maanden beschikbaar te stellen voor herstel. Dit vermogen wordt bedoeld als off-site steun.
 
-De restauratie van AEM Cloud Services voor het opvoeren van en productieomgevingen vanaf externe back-ups wordt uitgevoerd door AEM Service Reliability Engineering in het geval van een storing in het gegevensgebied.
+De restauratie van AEM Cloud Servicen voor het opvoeren en productiemilieu&#39;s van off-site steun wordt uitgevoerd door AEM de Techniek van de Betrouwbaarheid van de Dienst in het geval van gegevensgebiedstroomonderbrekingen.
 
 ## Beperkingen {#limitations}
 

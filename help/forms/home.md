@@ -3,9 +3,9 @@ title: Inleiding tot [!DNL AEM Forms] as a Cloud Service
 description: Ontdek AEM Forms en leer hoe u hiermee bedrijfsklare documenten en formulieren kunt maken. Meer informatie over Platform-as-a-Service (PaaS) en het beheer van digitale formulieren en bedrijfsprocessen op ondernemingsniveau, en het verbinden van Forms met Adobe Sign en actuele gegevensbronnen.
 landing-page-description: Inzicht in hoe u formulieren in AEM as a Cloud Service kunt gebruiken.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1155'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 5%
 | AEM as a Cloud Service | Dit artikel |
 
 
-Adobe [!DNL Experience Manager Forms as a Cloud Service] biedt bedrijven een oplossing voor cloud-native Platform als service (PaaS) voor het maken, beheren, publiceren en bijwerken van complexe digitale formulieren en het integreren van verzonden gegevens met back-endprocessen, bedrijfsregels en het opslaan van gegevens in een externe gegevensopslag.
+Adobe [!DNL Experience Manager Forms as a Cloud Service] biedt een cloud-native, Platform as a Service (PaaS)-oplossing voor bedrijven om complexe digitale formulieren te maken, beheren, publiceren en bijwerken, terwijl ingediende gegevens worden geïntegreerd met back-endprocessen, bedrijfsregels en gegevens worden opgeslagen in een externe gegevensopslag.
 
 De dienst is altijd huidig, altijd beschikbaar, en altijd het leren. Organisaties kunnen [!DNL AEM Forms] as a Cloud Service en ontvang al deze functies in de cloud zonder dat u hiervoor een lokale infrastructuur nodig hebt. De dienst bevrijdt organisaties van complexe verbeteringscycli aangezien het altijd met de recentste eigenschappen bijgewerkt is.
 
@@ -28,7 +28,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klant-centric op
 
 ## Inschrijving en instapervaring digitaliseren en stroomlijnen
 
-Met deze service kunt u interactieve en aantrekkelijke digitale formulieren maken en implementeren. Bijvoorbeeld, neem een organisatie die zijn reis van de klanteninschrijving probeert te digitaliseren. Zij hebben veelvoudige gegevensbronnen met bestaande klantengegevens. Ze willen formulieren vooraf invullen, hun formulieren elektronisch ondertekenen en ingevulde formulieren archiveren als PDF-bestanden. Bovendien heeft de organisatie meerdere afdrukformulieren (PDF forms), maar ze zijn ook op zoek naar het converteren van al hun afdrukformulieren naar digitale formulieren.
+Met deze service kunt u interactieve en aantrekkelijke digitale formulieren maken en implementeren. Bijvoorbeeld, neem een organisatie die zijn reis van de klanteninschrijving probeert te digitaliseren. Zij hebben veelvoudige gegevensbronnen met bestaande klantengegevens. Ze willen formulieren vooraf invullen, hun formulieren elektronisch ondertekenen en ingevulde formulieren archiveren als PDF-bestanden. Bovendien beschikt de organisatie over meerdere afdrukformulieren (PDF forms), maar proberen zij ook al hun afdrukformulieren om te zetten in digitale formulieren.
 
 De organisatie kan [!DNL AEM Forms] as a Cloud Service om digitale formulieren te maken, formulieren te verbinden met bestaande gegevensbronnen, formulieren te integreren met [!DNL Adobe Sign] om e-handtekeningen toe te voegen aan formulieren en om Ingesloten formulieren als PDF-bestanden te archiveren. De organisatie kan de service ook gebruiken om bestaande PDF forms om te zetten in digitale formulieren.
 

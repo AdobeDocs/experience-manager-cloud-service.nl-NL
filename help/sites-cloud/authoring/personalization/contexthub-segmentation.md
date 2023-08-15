@@ -2,9 +2,9 @@
 title: Het vormen Segmentatie met ContextHub
 description: Leer hoe te om segmentatie te vormen gebruikend ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1687'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstel
 
 Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. [Activiteiten](activities.md) Hier gedefinieerd kan op elke pagina worden opgenomen en definiëren voor welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 
-AEM kunt u de ervaringen van uw gebruikers eenvoudig aanpassen. Het staat u ook toe om de resultaten van uw segmentdefinities te verifiëren.
+Met AEM kunt u de ervaringen van uw gebruikers eenvoudig aanpassen. Het laat u ook de resultaten van uw segmentdefinities verifiëren.
 
 ## Segmenten openen {#accessing-segments}
 
@@ -27,10 +27,10 @@ Om tot uw segmenten toegang te hebben, in globale navigatie selecteer **Navigati
 
 ![Het publiek beheren](../assets/contexthub-segmentation-audiences.png)
 
-## Segmenteditor {#segment-editor}
+## Segment-editor {#segment-editor}
 
-<!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-De **Segmenteditor** kunt u een segment gemakkelijk wijzigen. Als u een segment wilt bewerken, selecteert u een segment in de lijst met segmenten en klikt u op de knop **Bewerken** knop.
+<!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
+De **Segment-editor** Hiermee kunt u een segment gemakkelijk wijzigen. Om een segment uit te geven, selecteer een segment in de lijst van segmenten en klik **Bewerken** knop.
 
 ![Segment-editor](../assets/contexthub-segment-editor.png)
 
@@ -40,7 +40,7 @@ Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelos
 
 >[!CAUTION]
 >
->De segmentredacteur controleert geen cirkelverwijzingen. Zo verwijst segment A bijvoorbeeld naar een ander segment B, dat op zijn beurt weer naar segment A verwijst. U moet ervoor zorgen dat de segmenten geen cirkelverwijzingen bevatten.
+>De segmentredacteur controleert geen cirkelverwijzingen. Zo verwijst segment A bijvoorbeeld naar een ander segment B, dat weer naar segment A verwijst. U moet ervoor zorgen dat de segmenten geen cirkelverwijzingen bevatten.
 
 ### Containers {#containers}
 
@@ -48,7 +48,7 @@ De volgende containers zijn beschikbaar uit-van-de-doos en staan u toe om vergel
 
 |  |  |
 |---|---|
-| Container en | De operator Boolean AND |
+| Container en | De Booleaanse operator AND |
 | Container OF | De operator Boolean OR |
 
 ### Vergelijkingen {#comparisons}
@@ -58,7 +58,7 @@ De volgende segmentvergelijkingen zijn beschikbaar uit-van-de-doos om segmenteig
 |  |  |
 |---|---|
 | Eigenschap-waarde | Vergelijkt een bezit van een opslag met een bepaalde waarde |
-| Eigenschap-eigenschap | Vergelijkt één bezit van een opslag aan een ander bezit |
+| Eigenschap | Vergelijkt één bezit van een opslag aan een ander bezit |
 | Eigenschap-segmentverwijzing | Vergelijkt een bezit van een opslag aan een ander referenced segment |
 | Eigenschapverwijzing | Vergelijkt een bezit van een opslag met de resultaten van een manuscript |
 | Referentie-script voor segment | Vergelijkt een segment waarnaar wordt verwezen met de resultaten van een script |
@@ -101,7 +101,7 @@ Het nieuwe segment definiëren:
    * Minimumwaarde: `0`
    * Maximumwaarde: `1000000`
 
-1. Van de segmentconsole, geef uw onlangs gecreeerd segment uit om het in de segmentredacteur te openen.
+1. Van de segmentconsole, geef uw onlangs-gecreeerd segment uit om het in de segmentredacteur te openen.
 1. Sleep een vergelijking of een verwijzing naar de segmentredacteur het in het gebrek EN container zal verschijnen.
 1. Dubbelklik op of tik op de configureoptie van de nieuwe verwijzing of het nieuwe segment om de specifieke parameters te bewerken. In dit voorbeeld testen we mensen in Bazel.
 
@@ -114,7 +114,7 @@ Het nieuwe segment definiëren:
 
 ### AND en OR-containers gebruiken {#using-and-and-or-containers}
 
-Gebruikend EN en OF containercomponenten, kunt u complexe segmenten in AEM construeren. Hierbij is het nuttig om op een aantal basispunten te letten:
+Gebruikend EN en OF containercomponenten, kunt u complexe segmenten in AEM construeren. Hierbij is het nuttig om u bewust te maken van een aantal basispunten:
 
 * Het hoogste niveau van de definitie is altijd de EN container die aanvankelijk wordt gecreeerd. Dit kan niet worden veranderd, maar heeft geen effect op de rest van uw segmentdefinitie.
 * Zorg ervoor dat het nesten van de container zinvol is. De containers kunnen als steunen van uw booleaanse uitdrukking worden bekeken.
@@ -139,7 +139,7 @@ U kunt meerdere AND- en OR-operatoren naar wens nesten.
 
 Door de component van de Verwijzing van het Manuscript te gebruiken, kan de evaluatie van een segmentbezit aan een extern manuscript worden afgevaardigd. Zodra het manuscript behoorlijk wordt gevormd, kan het als een andere component van een segmentvoorwaarde worden gebruikt.
 
-#### Een script definiëren als naslaggids {#defining-a-script-to-reference}
+#### Een script definiëren naar verwijzing {#defining-a-script-to-reference}
 
 1. Bestand toevoegen aan `contexthub.segment-engine.scripts` clientlib.
 1. Voer een functie uit die een waarde terugkeert. Bijvoorbeeld:
@@ -175,7 +175,7 @@ Door de component van de Verwijzing van het Manuscript te gebruiken, kan de eval
 
 1. Script registreren met `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Als het script afhankelijk is van aanvullende eigenschappen, moet het script `this.dependOn()`. Als het script bijvoorbeeld afhankelijk is van `profile/age`:
+Als het script afhankelijk is van aanvullende eigenschappen, moet het script worden aangeroepen `this.dependOn()`. Als het script bijvoorbeeld afhankelijk is van `profile/age`:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -183,7 +183,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 #### Naar een script verwijzen {#referencing-a-script}
 
-1. Maak een ContextHub-segment.
+1. Creeer segment ContextHub.
 1. Toevoegen **Scriptreferentie** op de gewenste plaats van het segment.
 1. Het dialoogvenster Bewerken van het dialoogvenster **Scriptreferentie** component. Indien [correct geconfigureerd](#defining-a-script-to-reference), moet het script beschikbaar zijn in het dialoogvenster **Scriptnaam** vervolgkeuzelijst.
 
@@ -197,7 +197,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
    ![Map toevoegen](../assets/contexthub-create-segment.png)
 
-1. Een **Titel** en **Naam** voor uw map.
+1. Geef een **Titel** en **Naam** voor uw map.
    * De **Titel** moeten beschrijvend zijn.
    * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
       * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies](/help/implementing/developing/introduction/naming-conventions.md).
@@ -210,7 +210,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
    ![Map bevestigen](../assets/contexthub-confirm-folder.png)
 
 1. De map wordt weergegeven in de lijst met segmenten.
-   * Hoe u de kolommen sorteert, is van invloed op de plaats in de lijst waar de nieuwe map wordt weergegeven.
+   * Hoe u de kolommen sorteert, is van invloed op de plaats in de lijst waar de nieuwe map verschijnt.
    * Tik of klik op de kolomkoppen om de sortering aan te passen.
      ![De nieuwe map](../assets/contexthub-folder.png)
 
@@ -236,7 +236,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
    ![Map selecteren](../assets/contexthub-select-folder.png)
 
-1. Tik of klik op **Verwijderen** in de werkbalk om de map te verwijderen.
+1. Tik of klik op **Verwijderen** om de map te verwijderen.
 
 1. Een dialoogvenster bevat een lijst met mappen die zijn geselecteerd om te worden verwijderd.
 
@@ -258,7 +258,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
 ## De toepassing van een segment testen {#testing-the-application-of-a-segment}
 
-Zodra het segment is bepaald, kunnen de potentiële resultaten met de hulp van worden getest **[ContextHub](contexthub.md).**
+Zodra het segment is bepaald, kunnen de potentiële resultaten met behulp van worden getest **[ContextHub](contexthub.md).**
 
 1. Een voorvertoning van een pagina weergeven
 1. Klik het pictogram ContextHub om de toolbar te openbaren ContextHub

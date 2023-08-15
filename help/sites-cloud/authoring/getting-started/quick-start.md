@@ -2,9 +2,9 @@
 title: Handleiding Snel aan de slag met de authoring van pagina's
 description: Een snelle gids op hoog niveau waarmee u pagina-inhoud kunt gaan ontwerpen
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1568'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Zie voor meer informatie over ontwerpen met AEM:
 
 Voordat u met de snelstartgids begint, volgt hier een kleine verzameling algemene tips en tips die u in gedachten moet houden, verdeeld over de verschillende onderdelen van het ontwerpsysteem.
 
-### In de siteconsole {#sites-console}
+### In de Sites-console {#sites-console}
 
 * Knop Maken
 
@@ -39,7 +39,7 @@ Voordat u met de snelstartgids begint, volgt hier een kleine verzameling algemen
 
 * Navigeren door koppelingen
 
-   * **Koppelingen zijn niet beschikbaar voor navigatie** wanneer u binnen bent **Bewerken** in. Als u wilt navigeren met koppelingen, moet u [voorvertoning van de pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) door gebruik te maken van:
+   * **Koppelingen zijn niet beschikbaar voor navigatie** wanneer u binnen bent **Bewerken** -modus. Als u wilt navigeren met koppelingen, moet u [voorvertoning van de pagina](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) door:
 
       * [Voorvertoningsmodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [Weergeven als gepubliceerd](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
@@ -55,7 +55,7 @@ Voordat u met de snelstartgids begint, volgt hier een kleine verzameling algemen
 
 ### Uw pagina zoeken {#finding-your-page}
 
-Het zoeken naar een pagina kent verschillende aspecten. u kunt navigeren en/of zoeken:
+Er zijn verschillende aspecten om een pagina te zoeken. U kunt navigeren en/of zoeken:
 
 1. Open de **Sites** console (met de **Sites** in de [Algemene navigatie](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - deze wordt geactiveerd (vervolgkeuzelijst) wanneer u de Adobe Experience Manager-koppeling selecteert (linksboven).
 
@@ -67,7 +67,7 @@ Het zoeken naar een pagina kent verschillende aspecten. u kunt navigeren en/of z
 
    ![Dropdown-balkkkruimel](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
-1. U kunt ook [Zoeken](/help/sites-cloud/authoring/getting-started/search.md) voor een pagina. U kunt de pagina selecteren in de weergegeven resultaten.
+1. U kunt [Zoeken](/help/sites-cloud/authoring/getting-started/search.md) voor een pagina. U kunt de pagina selecteren in de weergegeven resultaten.
 
    ![Zoekveld](/help/sites-cloud/authoring/assets/search.png)
 
@@ -100,8 +100,8 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
    * Selectiemodus openen met [de vereiste bron selecteren](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). Hoe u dit doet, hangt af van uw apparaat:
 
-      * Op een mobiel apparaat: Tik en houd de kaart vast
-      * Op een desktopapparaat: gebruiken [snelle actie](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) aangeduid met het verdeelstreepje:
+      * Op een mobiel apparaat: tik en houd de kaart vast
+      * Op een desktopapparaat: gebruik de [snelle actie](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) aangeduid met het verdeelstreepje:
 
    * De kaart wordt bedekt met een vinkje om aan te geven dat de pagina is geselecteerd.
 
@@ -146,7 +146,7 @@ Uw pagina bewerken:
 
       * Open de werkbalk van de component met Tik of klik. Gebruik de **Bewerken** (potlood) pictogram om het dialoogvenster te openen.
       * Open de editor op plaats voor de component met Tikken en vasthouden of dubbelklikken. De beschikbare acties worden weergegeven (voor sommige componenten is dit een beperkte selectie).
-      * U kunt als volgt alle beschikbare acties weergeven:
+      * Als u alle beschikbare acties wilt weergeven, opent u de modus Volledig scherm met:
 
         ![Knop Volledig scherm](/help/sites-cloud/authoring/assets/full-screen.png)
 
@@ -157,7 +157,7 @@ Uw pagina bewerken:
    * [Een component verplaatsen](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) ofwel:
 
       * Sleep de vereiste component naar de nieuwe locatie.
-      * Open de werkbalk van de component met Tik of klik. Gebruik de **Knippen** dan **Plakken** pictogrammen indien nodig.
+      * Open de werkbalk van de component met Tik of klik. Gebruik de **Knippen** dan **Plakken** pictogrammen, indien nodig.
 
    * [Kopiëren (en Plakken)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) een component:
 
@@ -173,7 +173,7 @@ Uw pagina bewerken:
 
    * [Annotaties toevoegen](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) op de pagina:
 
-      * Selecteer **Annoteren** (pictogram spraakballon). Annotaties toevoegen met de opdracht **Annotatie toevoegen** (plus). Sluit de annotatiemodus af met behulp van de X rechtsboven.
+      * Selecteer de **Annoteren** (pictogram spraakballon). Annotaties toevoegen met de opdracht **Annotatie toevoegen** (plus). Sluit de annotatiemodus af met behulp van de X rechtsboven.
 
         ![Knop Annotaties](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -185,7 +185,7 @@ Uw pagina bewerken:
 
    >[!NOTE]
    >
-   >Als u wilt navigeren met koppelingen in de inhoud, moet u deze gebruiken [Voorvertoningsmodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
+   >Als u wilt navigeren met koppelingen in de inhoud, moet u [Voorvertoningsmodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
 
 ### De pagina-eigenschappen bewerken {#editing-the-page-properties}
 
@@ -194,7 +194,7 @@ Er zijn twee (belangrijkste) methoden [bewerken, pagina-eigenschappen](/help/sit
 * Van de **Sites** console:
 
    1. [Naar de pagina navigeren](#finding-your-page) wilt publiceren.
-   1. Selecteer **Eigenschappen** pictogram uit:
+   1. Selecteer de **Eigenschappen** pictogram uit:
 
       * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de passende bron.
       * De werkbalk wanneer uw [pagina is geselecteerd](#selecting-your-page-for-further-action).
@@ -217,7 +217,7 @@ Er zijn twee hoofdmethoden [publiceren, uw pagina](/help/sites-cloud/authoring/f
 * Van de **Sites** console:
 
    1. [Naar de pagina navigeren](#finding-your-page) wilt publiceren.
-   1. Selecteer **Snel publiceren** pictogram uit:
+   1. Selecteer de **Snel publiceren** pictogram uit:
 
       * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de passende bron.
       * De werkbalk wanneer uw [pagina is geselecteerd](#selecting-your-page-for-further-action) (biedt ook toegang tot [Later publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)).
@@ -270,10 +270,10 @@ Deze acties kunnen allemaal worden geactiveerd door:
 [Door een pagina te vergrendelen](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) voorkomt u dat andere auteurs op hetzelfde moment als u op de pagina kunnen werken. Het pictogram/de knop Vergrendelen (en Ontgrendelen) vindt u hier:
 
 * De werkbalk wanneer uw [pagina is geselecteerd](#selecting-your-page-for-further-action).
-* De [Vervolgkeuzelijst Pagina-informatie](#editing-the-page-properties) wanneer u een pagina bewerkt.
+* De [Vervolgkeuzemenu Pagina-informatie](#editing-the-page-properties) wanneer u een pagina bewerkt.
 * De pagina-werkbalk tijdens het bewerken van een pagina (wanneer de pagina is vergrendeld)
 
-Het vergrendelingspictogram ziet er bijvoorbeeld als volgt uit:
+Het slotpictogram ziet er bijvoorbeeld als volgt uit:
 
 ![Knop Vergrendelen](/help/sites-cloud/authoring/assets/lock.png)
 
@@ -293,7 +293,7 @@ Het vergrendelingspictogram ziet er bijvoorbeeld als volgt uit:
 
 ### Een versie van uw pagina maken {#creating-a-version-of-your-page}
 
-Als u een [versie](/help/sites-cloud/authoring/features/page-versions.md) van uw pagina:
+Een [versie](/help/sites-cloud/authoring/features/page-versions.md) van uw pagina:
 
 1. Selecteer **[Tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** met het pictogram van de werkbalk (voor of na [pagina selecteren](#selecting-your-page-for-further-action)):
 

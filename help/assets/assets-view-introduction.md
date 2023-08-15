@@ -2,9 +2,9 @@
 title: Hoe heeft de nieuwe gebruikersinterface of de nieuwe middelenweergave van AEM Assets in AEM voordeel?
 description: Meer informatie over de belangrijkste voordelen van de nieuwe gebruikersinterface van AEM Assets of de nieuwe weergave Middelen vindt u in AEM
 mini-toc-levels: 3
-source-git-commit: 9980064be3ba7e8a15b95ac8ef6e23ba0f258cb0
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ In de map Prullenmand die beschikbaar is in de nieuwe gebruikersinterface van AE
 
 [![Zie de Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
 
-Naast deze functies kunt u met de nieuwe gebruikersinterface van AEM Assets ook de volgende functies uitvoeren die niet beschikbaar zijn in de beheerweergave:
+Naast deze functies kunt u met de nieuwe gebruikersinterface van AEM Assets ook de volgende functies uitvoeren die niet beschikbaar zijn in de Admin-weergave:
 
 * Upload een nieuwe versie van een element, met een andere naam, van uw lokale bestandssysteem naar de gegevensopslagruimte. Het geüploade element is beschikbaar als een nieuwe versie met dezelfde naam als het oorspronkelijke element.
 
@@ -127,7 +127,7 @@ De nieuwe gebruikersinterface van AEM Assets is ontworpen om workflows te stroom
 Gebruik de volgende koppelingen om snel aan de slag te gaan met de nieuwe gebruikersinterface van AEM Assets:
 
 * [Mijn werkruimte](/help/assets/my-workspace-assets-view.md)
-* [Aan de slag met de middelenweergave](/help/assets/get-started-assets-view.md)
+* [Aan de slag met de weergave Middelen](/help/assets/get-started-assets-view.md)
 
 
 

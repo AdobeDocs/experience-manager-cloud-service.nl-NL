@@ -2,9 +2,9 @@
 title: Onderdelenconsole
 description: Met de componentenconsole kunt u door alle componenten bladeren die voor uw instantie zijn gedefinieerd
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '273'
 ht-degree: 17%
 
 ---
@@ -33,34 +33,34 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
 
 * **Eigenschappen**
 
-   ![Eigenschappen van Componentconsole](/help/sites-cloud/authoring/assets/components-console-properties.png)
+  ![Eigenschappen van Componentconsole](/help/sites-cloud/authoring/assets/components-console-properties.png)
 
-   Op het tabblad Eigenschappen kunt u het volgende doen:
+  Op het tabblad Eigenschappen kunt u het volgende doen:
 
    * De algemene eigenschappen van de component weergeven.
       * Geef weer hoe het pictogram of de afkorting is gedefinieerd voor de component. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
       * Als u op de bron van het pictogram klikt, gaat u naar die component.
-   * De weergave van **Type bron** en **Super Type resource** (indien gedefinieerd) voor de component.
+   * De weergave **Resourcetype** en **Super Type resource** (indien gedefinieerd) voor de component.
       * Als u op het Super Type van Middel klikt, gaat u naar die component.
 
-   >[!NOTE]
-   >
-   >Omdat `/apps` kan tijdens runtime niet worden bewerkt, is de Componentenconsole alleen-lezen.
+  >[!NOTE]
+  >
+  >Omdat `/apps` kan tijdens runtime niet worden bewerkt, is de Componentenconsole alleen-lezen.
 
 * **Beleid**
 
-   ![Beleid voor componentconsoles](/help/sites-cloud/authoring/assets/components-console-policies.png)
+  ![Beleid voor componentconsoles](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **Live-gebruik**
 
-   ![Actief gebruik van componenten](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
+  ![Actief gebruik van componenten](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
 
-   >[!CAUTION]
-   >
-   >Vanwege de aard van de informatie die voor deze weergave wordt verzameld, kan het enige tijd duren voordat deze wordt gesorteerd of weergegeven.
+  >[!CAUTION]
+  >
+  >Vanwege de aard van de informatie die voor deze weergave wordt verzameld, kan het enige tijd duren voordat deze wordt gesorteerd of weergegeven.
 
 * **Documentatie**
 
-   Als de ontwikkelaar documentatie voor de component heeft verstrekt, zal het op het **Documentatie** tab. Als er geen documentatie beschikbaar is, **Documentatie** wordt niet weergegeven. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+  Als de ontwikkelaar documentatie voor de component heeft verstrekt, zal het op het **Documentatie** tab. Als er geen documentatie beschikbaar is, **Documentatie** wordt niet weergegeven. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
-   ![Componentdocumentatie](/help/sites-cloud/authoring/assets/components-console-documentation.png)
+  ![Componentdocumentatie](/help/sites-cloud/authoring/assets/components-console-documentation.png)

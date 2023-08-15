@@ -4,9 +4,9 @@ description: Maak kennis met de introductie van het hergebruik van inhoud met AE
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2719'
+source-wordcount: '2714'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Er zijn vele gebruiksgevallen voor MSM en Levende Exemplaren. Enkele scenario&#3
 
   Bijvoorbeeld de Engelse sectie van het [WKND-lesbestand](/help/implementing/developing/introduction/develop-wknd-tutorial.md) is opgericht voor klanten in de VS. De meeste inhoud op deze site kan ook worden gebruikt voor andere WKND-sites die geschikt zijn voor Engelstalige klanten van verschillende landen en culturen. De kerninhoud blijft voor alle sites hetzelfde, terwijl regionale aanpassingen kunnen worden aangebracht.
 
-  De volgende structuur kan voor plaatsen voor de Verenigde Staten en Canada worden gebruikt. Let op: `language-masters` node behoudt de master kopie van niet alleen Engelstalige maar ook andere taalinhoud. Deze inhoud kan worden gebruikt als basis voor aanvullende regionale taalinhoud naast het Engels.
+  De volgende structuur kan voor plaatsen voor de Verenigde Staten en Canada worden gebruikt. Let op: `language-masters` de knoop handhaaft het hoofdexemplaar van niet alleen Engels maar andere taalinhoud. Deze inhoud kan worden gebruikt als basis voor aanvullende regionale taalinhoud naast het Engels.
 
   ```xml
   /content
@@ -185,7 +185,7 @@ Een live MSM-kopie is een kopie van specifieke site-inhoud waarvoor een live rel
    * Diep: de pagina, samen met de onderliggende pagina&#39;s
 * De regels van de synchronisatie, genoemd rollout configuraties, bepalen welke eigenschappen worden gesynchroniseerd en wanneer de synchronisatie voorkomt.
 
-In het vorige voorbeeld: `/content/wknd/language-masters/en` is de wereldwijde master site in het Engels. Als u de inhoud van deze site opnieuw wilt gebruiken, worden live MSM-kopieën gemaakt:
+In het vorige voorbeeld: `/content/wknd/language-masters/en` is de algemene hoofdsite in het Engels. Als u de inhoud van deze site opnieuw wilt gebruiken, worden live MSM-kopieën gemaakt:
 
 * De onderstaande inhoud `/content/wknd/language-masters/en` is de bron.
 * De onderstaande inhoud `/content/wknd/language-masters/en` wordt gekopieerd onder de `/content/wknd/us/en/` en `/content/wknd/ca/en` knooppunten. Dit zijn de actieve kopieën.
@@ -245,7 +245,7 @@ Een actieve kopie wordt een gestapelde live kopie genoemd wanneer deze wordt gem
 
 ### Bron-, blauwdruk- en blauwdrukconfiguraties {#source-blueprints-and-blueprint-configurations}
 
-Elke pagina of elke vertakking met pagina&#39;s kan worden gebruikt als bron van een Live kopie. Nochtans, staat MSM u ook toe om een blauwdrukconfiguratie te bepalen die een bronweg specificeert. De voordelen van het gebruik van een blauwdrukconfiguratie zijn dat zij:
+Elke pagina of elke vertakking met pagina&#39;s kan worden gebruikt als bron van een Live kopie. Nochtans, MSM laat u ook een blauwdrukconfiguratie bepalen die een bronweg specificeert. De voordelen van het gebruik van een blauwdrukconfiguratie zijn dat zij:
 
 * Laat de auteur het **Uitrol** op een blauwdruk. Dit wil zeggen dat er expliciet wijzigingen moeten worden aangebracht in Live kopieën die van deze blauwdruk overerven.
 * Laat de auteur gebruiken **Site maken**. Op deze manier kan de gebruiker eenvoudig talen selecteren en de structuur van Live Copy configureren.

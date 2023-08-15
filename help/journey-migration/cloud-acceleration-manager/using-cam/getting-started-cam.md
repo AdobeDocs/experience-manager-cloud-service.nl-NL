@@ -2,16 +2,16 @@
 title: Aan de slag met Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van het gebruik en het gebruik van Cloud Acceleration Manager.
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 1%
 
 ---
 
 # Aan de slag met Cloud Acceleration Manager {#get-started-cam}
 
-Cloud Acceleration Manager is een cloudgebaseerde toepassing die ontworpen is om uw IT-teams te begeleiden tijdens de overgang van planning tot live gaan met Cloud Service. Stel uw teams in voor een geslaagde migratie met aanbevolen Adobe-procedures, tips, documentatie en tools om u te helpen bij elke fase van de reis naar AEM als Cloud Service.
+Cloud Acceleration Manager is een cloudgebaseerde toepassing die ontworpen is om uw IT-teams te begeleiden tijdens de overgang van planning tot live gaan met Cloud Service. Stel uw teams in voor een geslaagde migratie met aanbevolen best practices, tips, documentatie en tools voor de Adobe in elke fase van de reis naar AEM als Cloud Service.
 
 ## Doelstelling {#objective}
 
@@ -63,7 +63,7 @@ Voer de onderstaande stappen uit om een project te maken:
 
    ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing.png)
 
-1. Klik op de projectkaart zodat u het project kunt invoeren. U wordt genomen naar de openingspagina van het project.
+1. Klik op de projectkaart zodat u het project kunt invoeren. U wordt genomen aan de project het landen pagina.
 
    ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/cam-5.png)
 

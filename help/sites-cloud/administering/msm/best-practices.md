@@ -1,12 +1,12 @@
 ---
 title: Aanbevolen MSM-procedures
-description: Leer de beste praktijken die door Adobe engineering en raadplegende teams worden samengesteld helpen om met de AEM MultiManager van de Plaats in gebruik te worden.
+description: Leer de beste praktijken die door Adobe engineering en raadplegende teams worden gecompileerd helpen om met de AEM MultiManager van de Plaats aan de slag te gaan.
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 MSM is een configureerbaar framework voor het automatiseren van de implementatie van inhoud. Bij implementaties gaat het vaak om grote delen van een website en meerdere organisaties en geografische gebieden. Daarom wordt u ten zeerste aangeraden MSM-implementaties net zo zorgvuldig te plannen als uw website:
 
 * zorgvuldig **planstructuur en inhoudsstromen** voordat de implementatie wordt gestart.
-* **Pas de aanpassingen zoveel als nodig is, maar zo weinig mogelijk.** Hoewel MSM een hoge mate van aanpassing (bijvoorbeeld, rollout configuraties) steunt, typisch is de beste praktijken voor de prestaties, de betrouwbaarheid en de upgradeability van uw website aanpassing minimaliseren.
+* **Pas de aanpassingen zo veel als nodig is, maar zo weinig mogelijk.** Hoewel MSM een hoge mate van aanpassing (bijvoorbeeld, rollout configuraties) steunt, typisch is de beste praktijken voor de prestaties, de betrouwbaarheid en de upgradeability van uw website aanpassing minimaliseren.
 * Een **bestuur** model in een vroeg stadium, en de gebruikers dienovereenkomstig trainen, om succes te verzekeren. Een goede praktijk vanuit bestuurlijk oogpunt is: **de autoriteit die producenten van lokale inhoud hebben** om inhoud toe te wijzen/te verbinden aan andere lokale gebruikers en hun respectieve Levende Exemplaren. Dit komt omdat onbestuurde, geketende overerving de complexiteit van een MSM-structuur aanzienlijk kan verhogen en de prestaties en betrouwbaarheid ervan in gevaar kan brengen.
 * Zodra er een plan voor uw structuur, inhoudsstromen, automatisering, en bestuur bestaat, **prototype maken en uw systeem grondig testen** voordat een live implementatie wordt gestart.
 * Houd er rekening mee dat **Adobe Consulting en toonaangevende systeemintegrators** hebben diepe ervaring planning en het uitvoeren van inhoudautomatisering met MSM, zodat kunnen zij u zowel beginnen met uw project MSM als door zijn volledige implementatie helpen.
@@ -68,7 +68,7 @@ Houd rekening met het volgende wanneer u een site maakt:
 
 * Als u een nieuwe site wilt maken, hebt u een [blauwdrukconfiguratie](creating-live-copies.md#managing-blueprint-configurations).
 * Als u wilt dat de taalpaden op een nieuwe site kunnen worden geselecteerd, moeten de overeenkomstige taalwortels in de blauwdruk (bron) aanwezig zijn.
-* Eenmaal [nieuwe site is gemaakt als een live kopie](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (gebruiken **Maken** vervolgens **Site**), zijn de eerste twee niveaus van deze Live Copy *ondiep*. Onderliggende items van de pagina behoren niet tot de live-relatie, maar de rollout neemt wel af als een live-relatie wordt gevonden die overeenkomt met de trigger.
+* Eenmaal [nieuwe site is gemaakt als een live kopie](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (gebruiken **Maken** vervolgens **Site**), zijn de eerste twee niveaus van deze Live Copy *onbeschaamd*. Onderliggende items van de pagina behoren niet tot de live-relatie, maar de rollout neemt wel af als een live-relatie wordt gevonden die overeenkomt met de trigger.
 
 Het is nuttig om te vermijden:
 
@@ -81,8 +81,8 @@ MSM kan op twee manieren helpen bij het maken van meertalige websites:
 
 Houd bij het maken van taalstramienen rekening met het volgende:
 
-* Terwijl MSM zelf **biedt geen vertaling van inhoud**, kan het met derde vertaalschakelaars worden geïntegreerd die doen. Let op het volgende:
-   * Met MSM kunt u overerving op pagina- en/of componentniveau annuleren. Zo voorkomt u bij de volgende rollout dat u vertaalde inhoud overschrijft (van een Live Copy met nog niet-vertaalde inhoud van een blauwdruk).
+* Terwijl MSM zelf **biedt geen vertaling van inhoud**, kan het met derdevertaalschakelaars worden geïntegreerd die dat doen. Let op het volgende:
+   * Met MSM kunt u overname op pagina- en/of componentniveau annuleren. Zo voorkomt u bij de volgende rollout dat u vertaalde inhoud overschrijft (van een Live Copy met nog niet-vertaalde inhoud van een blauwdruk).
       * Sommige vertalingsconnectors van derden automatiseren dit beheer van MSM-overerving.
       * Vraag uw vertaalservicebureau om meer informatie.
       * Een alternatieve benadering voor het maken en vertalen van taalmeesters is het gebruik van taalkopieën in combinatie met AEM kader voor vertaalintegratie buiten de doos.
@@ -113,9 +113,9 @@ Houd rekening met de volgende aanbevolen procedures wanneer u overweegt pagina&#
    * Voeg geen andere acties aan deze configuratie toe.
 1. Plaats de nieuwe configuratie.
    * Als u de pagina volledig wilt uitrollen, verplaatst u de pagina terwijl u de desbetreffende pagina&#39;s op hun oude locatie in Live Copy verwijdert:
-      * Plaats de nieuw gecreëerde configuratie vóór de standaardrollout configuratie. De standaardrollout configuratie zal ervoor zorgen om de pagina&#39;s in hun oude plaatsen te schrappen.
+      * Plaats de nieuw-gecreeerde configuratie vóór de standaardrollout configuratie. De standaardrollout configuratie zal ervoor zorgen om de pagina&#39;s in hun oude plaatsen te schrappen.
       * Als u de pagina wilt uitrollen, verplaatst u de pagina terwijl de respectievelijke pagina&#39;s op hun oude locatie in Live kopieën blijven staan (de inhoud wordt in feite gedupliceerd):
-         * Plaats de nieuw gecreëerde configuratie na de standaardrollout configuratie. Zo voorkomt u dat inhoud wordt verwijderd uit Live kopie of gedeactiveerd uit publicatie.
+         * Plaats de nieuw-gecreeerde configuratie na de standaardrollout configuratie. Zo voorkomt u dat inhoud wordt verwijderd uit Live kopie of gedeactiveerd uit publicatie.
 
 ## Rollen aanpassen {#customizing-rollouts}
 
@@ -128,7 +128,7 @@ MSM-rollout-configuraties zijn in hoge mate aanpasbaar. Het automatiseren van ro
 
 ### onModify {#onmodify}
 
-Wanneer u de [rollout trigger](live-copy-sync-config.md#rollout-triggers) `onModify` u dient in overweging te nemen dat :
+Wanneer u de opdracht [rollout trigger](live-copy-sync-config.md#rollout-triggers) `onModify` u dient in overweging te nemen dat :
 
 * Rolouts automatiseren met `onModify` triggers kunnen een negatief effect hebben op de ontwerpprestaties omdat ze rollouts activeren na elke wijziging van de pagina.
 * Het rollout-resultaat kan afwijken van het verwachte resultaat:
@@ -140,7 +140,7 @@ Daarom wordt aangeraden dat u alleen `onModify` veroorzaakt als de voordelen van
 
 ### Knooppunttypen/eigenschappen {#node-types-properties}
 
-Naast het aanpassen van rollout acties, staat MSM u ook toe om knoopeigenschappen aan te passen die worden uitgerold. De [MSM OSGi configuratie staat u toe om knooptypes uit te sluiten](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) van de bron naar de Live kopie worden gekopieerd.
+Naast het aanpassen van rollout acties, laat MSM u knoopeigenschappen ook aanpassen die worden opgesteld. De [MSM OSGi configuratie laat u knooptypes uitsluiten](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) van de bron naar de Live kopie worden gekopieerd.
 
 ## Aanvullende informatie {#further-information}
 

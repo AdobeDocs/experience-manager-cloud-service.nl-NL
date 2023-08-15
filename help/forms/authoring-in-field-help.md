@@ -1,16 +1,12 @@
 ---
 title: Contextassistentie voor het ontwerpen van formuliervelden
-seo-title: Authoring in-context help for form fields
 description: Met AEM Forms kunt u in de context Help toevoegen aan velden en deelvensters voor adaptieve formulieren als tekst of rich media, waaronder video's.
-seo-description: AEM Forms allows you to add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.
-uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -39,7 +35,7 @@ U kunt in-context hulp specificeren gebruikend de volgende opties in de sectie v
 
 ### Korte beschrijving {#short-description}
 
-Het veld Korte beschrijving bevat snelle en korte aanwijzingen over het invullen van een formulierveld. De tekst die in het veld Korte beschrijving is opgegeven, wordt als knopinfo weergegeven wanneer u de muis boven het veld houdt.
+In het veld Korte beschrijving kunt u snelle en korte aanwijzingen geven over het invullen van een formulierveld. De tekst die in het veld Korte beschrijving is opgegeven, wordt als knopinfo weergegeven wanneer u de muis boven het veld houdt.
 
 ![Korte beschrijving voor het toevoegen van hulp in context voor formuliervelden](assets/tooltip.png)
 
@@ -55,7 +51,7 @@ U kunt het lange beschrijvingsgebied gebruiken om lange teksten te specificeren 
 
 ![Veelzijdige media toevoegen als in-context Help voor formuliervelden](assets/long-descriptions.png)
 
-Als u een lange beschrijving toevoegt, wordt een **?** naast het veld. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de lange beschrijving.
+Een lange beschrijving wordt weergegeven als **?** naast het veld. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de lange beschrijving.
 
 ![Voorbeeld van uitgebreide media in-context-Help](assets/photoshop.png)
 
