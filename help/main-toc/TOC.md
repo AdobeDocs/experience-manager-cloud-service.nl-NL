@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2f187eaec2f8418b63e54dc4f377d5798f8ed07a
+source-git-commit: d092e68b4f6dbc4f2bcfc45d2e522cfbfa831c0d
 workflow-type: tm+mt
-source-wordcount: '4238'
+source-wordcount: '4242'
 ht-degree: 20%
 
 ---
@@ -75,6 +75,7 @@ ht-degree: 20%
    + Opmerkingen bij de release AEMaaCS-onderhoud {#maintenance}
       + [Opmerkingen bij de release voor huidige onderhoud](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [Opmerkingen bij de onderhoudsrelease voor 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
@@ -509,7 +510,7 @@ ht-degree: 20%
       + [Werken met Selectieve publicatie in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
       + [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md)
       + [Veelgestelde vragen over HTTP2-levering van content](/help/assets/dynamic-media/http2faq.md)
-      + [Flash Viewers end of Life](/help/assets/dynamic-media/flash-viewers-eol.md)
+      + [Einde van levensduur van Flash Viewers](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Einde levensduur DHTML-viewers](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Werken met de middelenweergave {#assets-view}
       + [Inleiding](/help/assets/assets-view-introduction.md)
