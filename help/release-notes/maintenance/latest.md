@@ -2,7 +2,7 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4c38285f9e75618ad181a85034212c7c24030e99
+source-git-commit: b2c67687e2f3577b44929777a31b6ce85a5f1877
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 0%
@@ -15,7 +15,7 @@ In de volgende sectie worden de opmerkingen bij de technische release voor de hu
 
 ## Release 13099 {#release-13099}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13099 samengevat, die op 16 augustus 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 12874.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13099 samengevat, die op 15 augustus 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 12874.
 
 2023.8.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
