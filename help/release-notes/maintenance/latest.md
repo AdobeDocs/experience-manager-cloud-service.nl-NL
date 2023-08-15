@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b2c67687e2f3577b44929777a31b6ce85a5f1877
+source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13099 same
 ### Verbeteringen {#enhancements-13099}
 
 - SITES-13906: GraphQL - Upgrade to graphql-java 20.1.
-- SITES-8972: GraphQL - Optie Toevoegen```label``` in JSON voor gegevenstype Opsomming.
+- SITES-8972: GraphQL - Add option label in JSON for Enumeration data type.
 - SITES-9689: GraphQL - Voeg een titel en beschrijving toe in JSON voor het gegevenstype Content Reference.
 - SITES-13052: Inhoudsfragmenten - Inhoudsfragmenten exporteren naar Adobe Target
 
