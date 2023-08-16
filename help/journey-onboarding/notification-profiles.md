@@ -4,9 +4,9 @@ description: Leer hoe u gebruikersprofielen maakt in de Admin Console voor het b
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,10 @@ Leer hoe u gebruikersprofielen maakt in de Admin Console voor het beheer van de 
 
 ## Overzicht {#overview}
 
-Van tijd tot tijd moet Adobe contact opnemen met gebruikers over hun AEM as a Cloud Service omgeving. Naast productmeldingen gebruikt Adobe soms ook e-mail voor berichten. Er zijn twee typen e-mailmeldingen:
+Van tijd tot tijd, moet de Adobe gebruikers betreffende hun AEM as a Cloud Service milieu&#39;s contacteren. Naast productmeldingen wordt in Adobe soms ook e-mail gebruikt voor meldingen. Er zijn twee typen e-mailmeldingen:
 
-* **Melding incident** - Deze meldingen worden verzonden tijdens een incident of wanneer Adobe een probleem met de mogelijke beschikbaarheid in uw AEM as a Cloud Service omgeving heeft vastgesteld.
-* **Proactieve kennisgeving** - Deze meldingen worden verzonden wanneer een lid van het ondersteuningsteam van Adobe advies wil geven over een mogelijke optimalisatie of aanbeveling die uw AEM as a Cloud Service omgeving ten goede kan komen.
+* **Melding incident** - Deze meldingen worden verzonden tijdens een incident of wanneer de Adobe een potentieel probleem met de beschikbaarheid van uw AEM as a Cloud Service omgeving heeft vastgesteld.
+* **Proactieve kennisgeving** - Deze meldingen worden verzonden wanneer een medewerker van het ondersteuningsteam van de Adobe advies wil geven over een mogelijke optimalisatie of aanbeveling die uw AEM as a Cloud Service omgeving ten goede kan komen.
 
 Voor de correcte gebruikers om deze berichten te ontvangen, moet u gebruikersprofielen vormen en toewijzen zoals die in dit document worden beschreven.
 
@@ -56,7 +56,7 @@ Als u de ontvangst van meldingen correct wilt instellen, moet u twee gebruikersp
 
    * **Naam van productprofiel**: `Incident Notification - Cloud Service`
    * **Weergavenaam**: `Incident Notification - Cloud Service`
-   * **Beschrijving**: Het profiel van de Manager van de wolk voor de gebruikers die berichten tijdens een incident zullen ontvangen of wanneer Adobe een potentieel beschikbaarheidsprobleem met uw AEM as a Cloud Service milieu heeft geïdentificeerd
+   * **Beschrijving**: Cloud Manager-profiel voor gebruikers die meldingen ontvangen tijdens een incident of wanneer de Adobe een potentieel beschikbaarheidsprobleem met uw AEM as a Cloud Service omgeving heeft vastgesteld
 
 1. Klikken **Opslaan**.
 
@@ -64,7 +64,7 @@ Als u de ontvangst van meldingen correct wilt instellen, moet u twee gebruikersp
 
    * **Naam van productprofiel**: `Proactive Notification - Cloud Service`
    * **Weergavenaam**: `Proactive Notification - Cloud Service`
-   * **Beschrijving**: Het profiel van de Manager van de wolk voor de gebruikers die berichten zullen ontvangen wanneer een lid van het de ondersteuningsteam van Adobe raad over een potentiële optimalisering of aanbeveling willen verstrekken om met uw AEM as a Cloud Service omgevingsconfiguratie te doen
+   * **Beschrijving**: Cloud Manager-profiel voor gebruikers die meldingen ontvangen wanneer een lid van het ondersteuningsteam voor Adoben advies wil geven over een mogelijke optimalisatie of aanbeveling voor de configuratie van uw AEM as a Cloud Service omgeving
 
 1. Klikken **Opslaan**.
 
@@ -74,7 +74,7 @@ Uw twee nieuwe meldingsprofielen worden gemaakt.
 >
 >Het is belangrijk dat de Cloud Manager **productprofielnaam** is precies hetzelfde als opgegeven. Kopieer en plak de opgegeven productprofielnaam om fouten te voorkomen. Eventuele afwijkingen of typos leiden ertoe dat meldingen niet naar wens worden verzonden.
 >
->Als er een fout optreedt of als de profielen niet zijn gedefinieerd, meldt Adobe de bestaande gebruikers die aan de profielen zijn toegewezen standaard **Cloud Manager Developer** of **Implementatiebeheer** profielen.
+>Als er een fout optreedt of als de profielen niet zijn gedefinieerd, wordt de Adobe standaard ingesteld op het op de hoogte brengen van bestaande gebruikers die aan de **Cloud Manager Developer** of **Implementatiebeheer** profielen.
 
 ## Gebruikers toewijzen aan de meldingsprofielen {#add-users}
 
@@ -104,7 +104,7 @@ Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde i
 
 1. Selecteren **Adobe Experience Manager as a Cloud Service** en wijs een of beide nieuwe profielen aan de gebruiker toe.
 
-   * **Melding van incidenten - Cloud Service**
+   * **Melding van voorvallen - Cloud Service**
    * **Proactieve melding - Cloud Service**
 
 1. Klikken **Opslaan** en er wordt een welkomstbericht verzonden naar de gebruiker die u hebt toegevoegd.
@@ -123,19 +123,25 @@ Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde i
 
 1. Van de **Overzicht** pagina, selecteert u **Adobe Experience Manager as a Cloud Service** van de **Producten en diensten** kaart.
 
-1. Selecteer **Gebruikers** van de bovenste navigatie.
+1. Selecteer de **Gebruikers** van de bovenste navigatie.
 
 1. Als de gefedereerde identiteitskaart reeds voor het teamlid bestaat die u aan een berichtprofiel wilt toevoegen, bepaal de plaats van die gebruiker in de lijst en klik het. Anders overslaan naar de sectie [Voeg nieuwe gebruikers toe aan profielen.](#add-user)
 
 1. In de **Producten** in het venster met gebruikersgegevens klikt u op de knop voor ovaal en selecteert u **Bewerken**.
 
-1. In de **Producten bewerken** venster, klikt u op de potloodknop onder de **Producten selecteren** kop om productselectie te beginnen.
+1. In de **Producten bewerken** venster, klik de potloodknoop onder **Producten selecteren** kop om productselectie te beginnen.
 
 1. Selecteren **Adobe Experience Manager as a Cloud Service** en wijs een of beide nieuwe profielen aan de gebruiker toe.
 
-   * **Melding van incidenten - Cloud Service**
+   * **Melding van voorvallen - Cloud Service**
    * **Proactieve melding - Cloud Service**
 
 1. Klikken **Opslaan** en er wordt een welkomstbericht verzonden naar de gebruiker die u hebt toegevoegd.
 
 De uitgenodigde gebruiker zal nu de berichten ontvangen. Herhaal deze stappen voor de gebruikers in uw team die u meldingen wilt ontvangen.
+
+## Aanvullende bronnen {#additional-resources}
+
+Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
+
+* [Handelingencentrum](/help/operations/actions-center.md) - Gebruik het actiecentrum om op een gemakkelijke manier actie te ondernemen tegen incidenten en andere belangrijke informatie.
