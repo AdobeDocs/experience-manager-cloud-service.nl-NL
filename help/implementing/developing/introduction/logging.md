@@ -2,9 +2,9 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2683'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,9 @@ AEM de as a Cloud Service registrerenmontages en de logboekniveaus worden beheer
 
 * AEM registreren, die registreren op het niveau van de AEM toepassing uitvoert
 * Apache HTTPD Web Server/Dispatcher registreren, die het registreren van de Webserver en de Verzender op de Publish rij uitvoert.
+* Het registreren CDN, die als zijn naam wijst, voert het registreren bij CDN uit. Deze functie is momenteel beschikbaar voor vroege gebruikers. Als u wilt deelnemen aan het programma voor vroege adopters, kunt u een e-mail sturen **aemcs-cdnlogs-adopter@adobe.com**, inclusief de naam van uw organisatie en context over uw interesse in de functie.
 
-## AEM {#aem-logging}
+## AEM vastleggen {#aem-logging}
 
 Het registreren op het AEM toepassingsniveau, wordt behandeld door drie logboeken:
 
@@ -286,7 +287,7 @@ Deze reeks logboeken verstrekt inzichten in HTTP- verzoeken aan de AEM as a Clou
 
 Het toegangslogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke HTTP- aanvraag die de Publish server/de Verzender van het Web van de rij bereikt. Merk op dat de verzoeken die van upstream CDN worden gediend niet in deze logboeken worden weerspiegeld.
 
-Zie informatie over de indeling van het foutenlogboek in het dialoogvenster [officiële documentatie van apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
+Zie de informatie over de indeling van het foutenlogboek in het dialoogvenster [officiële documentatie van apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
 **Uitvoer voorbeeldlog**
 
@@ -314,7 +315,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Datum en tijd</td>
-<td>01-05-2020:00:09:46 +0000</td>
+<td>01-05-2020:00:9.46 +0000</td>
 </tr>
 <tr>
 <td>HTTP-methode</td>
@@ -342,7 +343,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Gebruikersagent</td>
-<td>"Mozilla/5.0 (Macintosh); Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
@@ -355,7 +356,7 @@ Dit logboek is niet configureerbaar in AEM as a Cloud Service.
 
 Het foutenlogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke fout in de Publish server/de Verzender van het Web van de rij.
 
-Zie informatie over de indeling van het foutenlogboek in het dialoogvenster [officiële documentatie van apache](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
+Zie de informatie over de indeling van het foutenlogboek in het dialoogvenster [officiële documentatie van apache](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
 **Uitvoer voorbeeldlog**
 
@@ -371,7 +372,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <tbody>
 <tr>
 <td>Datum en tijd</td>
-<td>17 jul. 02:16:42,608913 2020</td>
+<td>17 jul. 02:16:42 608 913 2020</td>
 </tr>
 <tr>
 <td>Gebeurtenisniveau</td>
@@ -478,7 +479,7 @@ Het kan aan fout worden geplaatst, waarschuwen, info, zuiveren en spoor1, met ee
 
 Hoewel het registreren van de Ontvanger verscheidene andere niveaus van registrerende granulariteit steunt, adviseert de AEM as a Cloud Service gebruikend de hieronder beschreven niveaus.
 
-Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in het dialoogvenster `global.var` bestand, zoals hieronder beschreven:
+Als u het logniveau per omgeving wilt instellen, gebruikt u de desbetreffende voorwaardelijke vertakking in de `global.var` bestand, zoals hieronder beschreven:
 
 ```
 Define DISP_LOG_LEVEL debug
@@ -499,11 +500,62 @@ Define DISP_LOG_LEVEL debug
 >
 >Voor AEM as a Cloud Service omgevingen is foutopsporing het maximale breedtepunt. Het niveau van het spoorlogboek wordt niet gesteund zodat zou u moeten vermijden plaatsend het wanneer het werken in wolkenmilieu&#39;s.
 
+## CDN-logboek {#cdn-log}
+
+>[!NOTE]
+>
+>Deze functie is nog niet algemeen beschikbaar. E-mail voor deelname aan het lopende programma voor vroegtijdige adoptie **aemcs-cdnlogs-adopter@adobe.com**, inclusief de naam van uw organisatie en context over uw interesse in de functie.
+>
+
+AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding nuttig zijn. De CDN-logindeling kan niet worden aangepast en er bestaat geen concept om de indeling in te stellen op verschillende modi, zoals info, warn of error.
+
+**Voorbeeld**
+
+```
+{
+"timestamp": "2023-05-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR"
+}
+```
+
+**Logbestandsindeling**
+
+De logboeken CDN zijn verschillend van de andere logboeken in die dat het aan een json formaat volgt.
+
+| **Veldnaam** | **Beschrijving** |
+|---|---|
+| *tijdstempel* | De tijd waarop de aanvraag is gestart, na beëindiging van TLS |
+| *ttfb* | Afkorting van *Tijd naar eerste byte*. Het tijdinterval tussen het verzoek begon tot het punt alvorens het reactiekarakter begon te worden gestroomd. |
+| *cli_ip* | Het client-IP-adres. |
+| *cli_country* | Twee letters [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2-landcode voor het land van de cliënt. |
+| *afdanken* | De waarde van de verzoekkopbal die wordt gebruikt om het verzoek uniek te identificeren. |
+| *req_ua* | De gebruikersagent die verantwoordelijk is voor het indienen van een bepaalde HTTP-aanvraag. |
+| *host* | De autoriteit waarvoor het verzoek is bestemd. |
+| *url* | Het volledige pad, inclusief queryparameters. |
+| *methode* | HTTP-methode die door de client wordt verzonden, zoals &quot;GET&quot; of &quot;POST&quot;. |
+| *res_ctype* | Het Content-Type dat wordt gebruikt om het oorspronkelijke mediatype van de bron aan te geven. |
+| *cachegeheugen* | Status van de cache. Mogelijke waarden zijn HIT, MISS of PASS |
+| *status* | De HTTP-statuscode als een geheel getal. |
+| *res_age* | De hoeveelheid tijd (in seconden) dat een reactie in de cache is geplaatst (in alle knooppunten). |
+| *pop* | Datacenter van de CDN-cacheserver. |
+
 ## Hoe te om Logs toegang te hebben {#how-to-access-logs}
 
 ### Cloud-omgevingen {#cloud-environments}
 
-AEM as a Cloud Service logbestanden voor cloudservices kunt u openen door de interface van Cloud Manager te downloaden of door logbestanden op de opdrachtregel te plaatsen met behulp van de opdrachtregelinterface van Adobe I/O. Zie voor meer informatie de [Logboekdocumentatie van Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
+AEM as a Cloud Service logbestanden voor cloudservices kunt u openen door de interface van Cloud Manager te downloaden of door logbestanden op de opdrachtregel te plaatsen met behulp van de opdrachtregelinterface van Adobe I/O. Zie de klasse [Logboekdocumentatie van Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
 
 ### Lokale SDK {#local-sdk}
 
@@ -520,10 +572,10 @@ Logbestanden van Apache-lagen, inclusief dispatcher, bevinden zich in de Docker-
 De logbestanden ophalen:
 
 1. Typ op de opdrachtregel `docker ps` om uw containers weer te geven
-1. Als u zich wilt aanmelden bij de container, typt u &quot;`docker exec -it <container> /bin/sh`&quot;, waarbij `<container>` is de verzender container-id van de vorige stap
-1. Ga naar de cachroot onder `/mnt/var/www/html`
+1. Om in de container te registreren, typ &quot;`docker exec -it <container> /bin/sh`&quot;, waarbij `<container>` is de verzender container-id van de vorige stap
+1. Naar de cachroot onder navigeren `/mnt/var/www/html`
 1. De logbestanden bevinden zich onder `/etc/httpd/logs`
-1. Inspect the logs: ze zijn toegankelijk in de map XYZ, waar de volgende logbestanden kunnen worden weergegeven:
+1. Inspect the logs: they can be access under the folder XYZ, where the following logs can view:
    * Apache HTTPD Logboek van de de servertoegang van het Web - `httpd_access.log`
    * Logboeken van fouten van de Apache HTTPD-webserver - `httpd_error.log`
    * Logbestanden van Dispatcher - `dispatcher.log`
@@ -579,23 +631,23 @@ Hieronder vindt u een voorbeeld van een verzoek voor klantenondersteuning:
 Programma 123, Production Env
 
 * Splunk HEC eindpuntadres: `splunk-hec-ext.acme.com`
-* Splunk-index: acme_123prod (de klant kan kiezen welke noemende overeenkomst het wenst)
-* Splunk-poort: 443
-* Splunk HEC-token: ABC123
+* Splunk-index: acme_123prod (de klant kan kiezen welke naamgevingsconventie hij wenst)
+* Splondepoort: 443
+* Splunk HEC token: ABC123
 
 Programma 123, Stage Env
 
 * Splunk HEC eindpuntadres: `splunk-hec-ext.acme.com`
-* Splunk-index: acme_123stage
-* Splunk-poort: 443
-* Splunk HEC-token: ABC123
+* Splonindex: acme_123stage
+* Splondepoort: 443
+* Splunk HEC token: ABC123
 
 Programma 123, Dev Envs
 
 * Splunk HEC eindpuntadres: `splunk-hec-ext.acme.com`
-* Splunk-index: acme_123dev
-* Splunk-poort: 443
-* Splunk HEC-token: ABC123
+* Splonindex: acme_123dev
+* Splondepoort: 443
+* Splunk HEC token: ABC123
 
 Het kan voldoende zijn dat dezelfde segmentindex voor elke omgeving wordt gebruikt, in welk geval ofwel `aem_env_type` kan worden gebruikt om onderscheid te maken op basis van de waarden dev, stage en prod. Als er meerdere ontwikkelomgevingen zijn, `aem_env_id` kan ook worden gebruikt. Sommige organisaties kunnen een afzonderlijke index voor de logboeken van het productiemilieu kiezen als de bijbehorende index toegang tot een verminderde reeks gebruikers van de Splunk beperkt.
 
