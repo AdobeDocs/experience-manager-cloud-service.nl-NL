@@ -1,11 +1,11 @@
 ---
-title: Verschillen tussen AEM 6.5 Forms en AEM Cloud Services
-description: Bent u een Experience Manager Forms-gebruiker en wilt u een upgrade uitvoeren naar Adobe Experience Manager Forms as a Cloud Service? Vergelijk AEM 6.5 Forms en AEM Cloud Services en leer de meest opvallende wijzigingen voordat u een upgrade uitvoert of naar Cloud Service migreert.
+title: Verschillen tussen AEM 6.5 Forms en AEM Cloud Servicen
+description: Bent u een Experience Manager Forms-gebruiker en wilt u een upgrade uitvoeren naar Adobe Experience Manager Forms as a Cloud Service? Vergelijk AEM 6.5 Forms en AEM Clouden Services en leer de belangrijkste wijzigingen voordat u een upgrade uitvoert of naar Cloud Service migreert.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * De URL-conventie van gelokaliseerde adaptieve Forms ondersteunt nu het opgeven van een landinstelling in de URL. Met de nieuwe URL-conventie kunnen gelokaliseerde formulieren op een verzender of CDN in cache worden geplaatst. Gebruik in een Cloud Service-omgeving de URL-indeling `http://host:port/content/forms/af/<afName>.<locale>.html` een gelokaliseerde versie van een adaptief formulier aanvragen in plaats van `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
-* Adobe raadt u aan Dispatcher of CDN in cache te plaatsen. Hiermee kunt u de rendersnelheid van voorgevulde formulieren verbeteren.
+* Adobe raadt aan Dispatcher of CDN in cache te plaatsen. Hiermee kunt u de rendersnelheid van voorgevulde formulieren verbeteren.
 
 
 ## Adaptieve Forms
@@ -60,11 +60,11 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * **Adaptieve Forms op basis van XSD:** U kunt XDP-malplaatje gebruiken om een malplaatje voor Document voor Verslag te ontwerpen. De service biedt geen ondersteuning voor adaptieve Forms op basis van XFA
 
-* **Componenten**: U kunt [Adaptieve Forms Core-componenten](/help/forms/creating-adaptive-form-core-components.md) om uw formulieren te ontwerpen. Deze componenten zijn gebaseerd op WCM Core-componenten, volgen BEM-standaarden en kunnen eenvoudig worden aangepast. De service biedt geen ondersteuning voor ondertekeningservaring in formulieren en bevat geen componenten Overzicht en Verifiëren voor adaptief formulier
+* **Componenten**: De service biedt geen ondersteuning voor ondertekeningservaring in formulieren en bevat geen componenten Overzicht en Verifiëren voor Adaptief formulier.
+
+* **Wizard-interface:** U kunt de [Wizard-interface](/help/forms/creating-adaptive-form-core-components.md) om snel de algemene opties te configureren en eenvoudig een adaptief formulier te maken.
 
 ## Forms Portal
-
-* U kunt de componenten Zoeken en registreren, Concepten en Verzending en Koppeling van Forms Portal gebruiken om formulieren weer te geven voor aangemelde gebruikers. Ondersteuning voor anoniem gebruik van Forms Portal is niet beschikbaar via de verpakking (OOTB). U kunt de Forms Portal aanpassen om de weergave van formulieren voor niet-aangemelde gebruikers in te schakelen.
 
 * De service behoudt geen metagegevens voor concepten en verzonden Adaptive Forms.
 
@@ -85,7 +85,7 @@ Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken 
 
 ## Gegevensintegratie (formuliergegevensmodel)
 
-* De service biedt ook ondersteuning voor JDBC-connector, Microsoft Dynamics, SalesForce, SOAP-webservices en services die OData ondersteunen.
+* De service biedt ook ondersteuning voor Microsoft Dynamics, SalesForce, SOAP-webservices en services die OData ondersteunen.
 
 * U kunt ook verbinding maken AEM gebruikersprofiel om gebruikersgegevens op te halen en bij te werken.
 
@@ -96,8 +96,6 @@ Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken 
 
 ## Elektronisch ondertekenen
 
-* De service biedt een OOTB-integratie met Adobe Sign en ondersteunt DocuSign voor e-handtekeningen.
-
 * De service ondersteunt ook Adobe Sign-rollen. U kunt de rollen in de Adaptieve redacteur van Forms voor bedrijfsgebruikers vormen om ondertekenende werkschema&#39;s gemakkelijk te vormen.
 
 
@@ -105,7 +103,7 @@ Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken 
 
 * U kunt een AEM 6.5 Forms-omgeving gebruiken om:
 
-   * formulieren op basis van XDP weergeven als HTML5 Forms. De service ondersteunt geen HTML5 Forms (Mobile Forms).
+   * formulieren op basis van XDP weergeven als HTML5 Forms. De service biedt geen ondersteuning voor HTML5 Forms.
 
    * gegevens offline vastleggen en synchroniseren de volgende keer dat u online terugkeert met [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) app.
 
