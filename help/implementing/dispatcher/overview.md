@@ -1,10 +1,10 @@
 ---
 title: Overzicht van de inhoudsleveringsstroom
-description: Overzicht van de inhoudsleveringsstroom
+description: Meer informatie over de gegevensstroom voor de levering van inhoud en hoe u uw inhoud publiceert
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '217'
 ht-degree: 1%
 
 ---
@@ -34,4 +34,4 @@ In de volgende secties vindt u meer informatie over de levering van inhoud:
 * [Caching](/help/implementing/dispatcher/caching.md)
 
 
-Er is informatie beschikbaar over de replicatie van de auteurservice naar de publicatieservice [hier](/help/operations/replication.md).
+Informatie over replicatie van de auteurservice naar de publicatieservice is beschikbaar [hier](/help/operations/replication.md).

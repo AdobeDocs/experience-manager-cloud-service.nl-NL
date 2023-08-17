@@ -1,10 +1,10 @@
 ---
 title: KPI's uitlijnen
-description: KPI's uitlijnen
+description: Leer hoe te om juiste KPIs voor uw AEM implementatie te kiezen
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ In een digitale wereld kun je bijna alles meten. Als u drie KPI&#39;s kiest voor
 
 1. **Voor elk doel, identificeer prestatiesindicatoren.** Het kan bijvoorbeeld uw doel zijn om de juridische kosten voor DRM-overtredingen met $100.000 te verlagen. Een goede prestatie-indicator kan zijn &quot;100% van de verlopen elementen worden verwijderd uit digitale eigenschappen op of vóór de vervaldatum.&quot; Probeer om met veelvoudige indicatoren voor elk doel te komen. Als u met 2-3 bedrijfsdoelstellingen en 3-5 doelstellingen bent begonnen, zou u een lijst van 15-20 prestatiesindicatoren kunnen hebben.
 
-1. **Kies de drie indicatoren die het belangrijkst voor uw zaken zijn.** Deze indicatoren zijn uw KPIs. Ze zouden zich kunnen richten op drie bedrijfsdoelstellingen — elk bepleit door een verschillende manager op C-niveau — of alle drie KPI&#39;s zouden hetzelfde doel kunnen ondersteunen, als iedereen het ermee eens is dat het de belangrijkste is.
+1. **Kies de drie indicatoren die het belangrijkst voor uw zaken zijn.** Deze indicatoren zijn uw KPIs. Ze zouden zich kunnen aanpassen aan drie bedrijfsdoelstellingen — elk bepleit door een verschillende manager op C-niveau — of alle drie KPI&#39;s zouden hetzelfde doel kunnen ondersteunen, als iedereen het ermee eens is dat het de belangrijkste is.
 
-1. **Maak een meetbare methode voor elke PKI.** Nadat u hebt gekozen, download uw malplaatje van Methodologie KPI, dat u door de rest van het proces begeleidt.
+1. **Maak een meetbare methode voor elke PKI.** Nadat u KPIs hebt gekozen, download de malplaatje van de Methodologie van KPI van de Adobe, die u door de rest van het proces begeleidt.
 
 1. **Bepaal het publiek voor elke KPI.** Uw laatste stap voor deze week is het identificeren van de groep belanghebbenden die het meest om elk KPI geeft. Volgende week werkt u met elke groep om KPI te bevestigen, de methodologie te verfijnen en akkoord te gaan over de indeling en het tijdstip van uw rapporten.
 

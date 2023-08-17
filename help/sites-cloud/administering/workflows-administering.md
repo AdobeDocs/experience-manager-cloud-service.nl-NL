@@ -1,11 +1,11 @@
 ---
 title: Workflowinstanties beheren
-description: Leer hoe u workflowinstanties beheert
+description: Leer hoe u workflowinstanties beheert met de workflowconsole
 feature: Administering
 role: Admin
-source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 * **Modellen**: Workflowdefinities beheren
 * **Instanties**: Doorlopende workflowinstanties weergeven en beheren
 * **Launchers**: De manier beheren waarop workflows worden gestart
-* **Archief**: De geschiedenis weergeven van workflows die zijn voltooid
+* **Archief**: De geschiedenis van workflows weergeven die zijn voltooid
 * **Mislukt**: De geschiedenis weergeven van workflows die zijn voltooid met fouten
 * **Automatisch toewijzen**: Workflows automatisch toewijzen aan sjablonen configureren
 
@@ -30,7 +30,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 1. Op de bovenste rail, in de rechterhoek, tonen de werkschemainstanties **Workflows uitvoeren**, **Status**, en **Details**.
 1. **Workflows uitvoeren** toont het aantal actieve workflows, en hun status. in de gegeven afbeeldingen is de getoonde waarde bijvoorbeeld het aantal **Workflows uitvoeren** en de **Status** van AEM instantie:
 
-   * **Status: Gezonde**
+   * **Status: gezond**
      ![status-gezond](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Status: Ongezond**
@@ -38,7 +38,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 1. Voor **Statusdetails** van workflowinstanties klikt u op **Details** om de **aantal actieve workflows**, **voltooide workflowinstanties**, **afgebroken workflowinstanties**, **mislukte werkstroominstanties**, enzovoort. hieronder ziet u bijvoorbeeld de afbeeldingen die u ziet **Statusdetails** met:
 
-   * **Statusdetails: Gezonde**
+   * **Statusdetails: gezond**
      ![status-details-gezond](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Statusdetails: Ongezond**
@@ -57,14 +57,14 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 1. Selecteer de zoekcriteria voor de workflow in het dialoogvenster Filter. U kunt zoeken op basis van de volgende gegevens:
 
-   * Payloadpad: Een specifiek pad selecteren
-   * Workflowmodel: Een workflowmodel selecteren
-   * Geadresseerde: Een werkstroomontvanger selecteren
-   * Type: Taak, workflowitem of workflowfout
-   * Taakstatus: Actief, Volledig of Beëindigd
-   * Waar ik ben: Eigenaar EN gemachtigde, alleen eigenaar, alleen gevolmachtigde
+   * Payloadpad: een specifiek pad selecteren
+   * Workflowmodel: een workflowmodel selecteren
+   * Aangewezen persoon: Selecteer een werkstroomontvanger
+   * Type: taak, workflowitem of workflowfout
+   * Taakstatus: actief, voltooid of beëindigd
+   * Waar ik ben: Eigenaar en ontvanger, alleen eigenaar, alleen gevolmachtigde
    * Begindatum: Begindatum voor of na een opgegeven datum
-   * Einddatum: Einddatum voor of na een opgegeven datum
+   * Einddatum: Einddatum vóór of na een opgegeven datum
    * Vervaldatum: Vervaldatum voor of na een bepaalde datum
    * Bijgewerkte datum: Bijgewerkte datum voor of na een opgegeven datum
 
@@ -99,7 +99,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
    >De afbreekstatus wordt beschouwd als een succesvolle beëindiging aangezien het als resultaat van gebruikersactie voorkomt; bijvoorbeeld:
    >
    >* gebruik van de **Beëindigen** action
-   >* als een pagina, die onderworpen is aan een werkstroom, (geforceerd) wordt geschrapt, dan wordt het werkschema geëindigd.
+   >* als een pagina die aan een workflow is onderworpen (geforceerd) wordt verwijderd, wordt de workflow beëindigd.
 
 1. Selecteer vervolgens een specifiek item **Historie openen** voor meer informatie :
 
@@ -107,7 +107,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 ## Fouten in werkstroominstantie herstellen {#fixing-workflow-instance-failures}
 
-Wanneer een werkstroom mislukt, AEM de **Mislukt** console om u toe te staan om aangewezen actie te onderzoeken en te nemen zodra de originele oorzaak is behandeld:
+Wanneer een werkstroom mislukt, biedt AEM de **Mislukt** console om u toe te staan om aangewezen actie te onderzoeken en te nemen zodra de originele oorzaak is behandeld:
 
 * **Foutgegevens**
 Hiermee opent u een venster waarin de **Foutbericht**, **Stap, en **Stapel mislukt**.
@@ -132,7 +132,7 @@ Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, 
 
 Door het minimaliseren van het aantal workflowexemplaren worden de prestaties van de workflow-engine verbeterd, zodat u regelmatig voltooide of actieve workflowexemplaren uit de repository kunt verwijderen.
 
-Configureren **Adobe Granite-werkstroom leegmaken configuratie** om werkstroominstanties te wissen op basis van hun leeftijd en status. U kunt ook werkstroominstanties van alle modellen of van een specifiek model wissen.
+Configureren **Configuratie van opschonen van de Adobe van Granite-workflow** om werkstroominstanties te wissen op basis van hun leeftijd en status. U kunt ook werkstroominstanties van alle modellen of van een specifiek model wissen.
 
 U kunt ook meerdere configuraties van de service maken om workflowinstanties die aan verschillende criteria voldoen, leeg te maken. Maak bijvoorbeeld een configuratie die de instanties van een bepaald workflowmodel zuivert wanneer deze veel langer dan de verwachte tijd worden uitgevoerd. Maak een andere configuratie die alle voltooide workflows na enkele dagen leegmaakt om de grootte van de opslagplaats te minimaliseren.
 
@@ -159,10 +159,10 @@ Om de dienst te vormen, kunt u de Dossiers van de Configuratie vormen OSGi zie [
   <tr>
    <td>Workflowstatus</td>
    <td>scheduledpurge.workflowStatus</td>
-   <td><p>De status van de werkstroominstanties die moeten worden gewist. De volgende waarden zijn geldig:</p>
+   <td><p>De status van de te wissen werkstroominstanties. De volgende waarden zijn geldig:</p>
     <ul>
-     <li>VOLTOOID: Voltooide workflowinstanties worden gewist.</li>
-     <li>UITVOEREN: Doorlopende workflowinstanties worden gewist.</li>
+     <li>VOLTOOID: instanties van voltooide werkstromen worden gewist.</li>
+     <li>UITVOEREN: instanties van actieve werkstromen worden gewist.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -192,7 +192,7 @@ U kunt de maximumgrootte van inbox plaatsen door te vormen **Adobe Granite Workf
 
 ## Workflowvariabelen gebruiken voor datastores die eigendom zijn van klanten {#using-workflow-variables-customer-datastore}
 
-Gegevens die door workflows worden verwerkt, worden opgeslagen in de door Adobe verschafte opslag (JCR). Deze gegevens kunnen van nature gevoelig zijn. U kunt alle door de gebruiker gedefinieerde metagegevens of gegevens in uw eigen beheerde opslagruimte opslaan in plaats van de door de gebruiker verschafte Adobe opslagruimte. In deze secties wordt beschreven hoe u deze variabelen instelt voor externe opslag.
+Gegevens die door workflows worden verwerkt, worden opgeslagen in de Adobe opgegeven opslagruimte (JCR). Deze gegevens kunnen van nature gevoelig zijn. U kunt alle door de gebruiker gedefinieerde metagegevens of gegevens in uw eigen beheerde opslagruimte opslaan in plaats van de door de Adobe verschafte opslagruimte. In deze secties wordt beschreven hoe u deze variabelen instelt voor externe opslag.
 
 ### Het model instellen voor externe opslag van metagegevens {#set-model-for-external-storage}
 

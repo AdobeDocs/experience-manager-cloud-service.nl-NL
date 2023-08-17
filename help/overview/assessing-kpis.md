@@ -1,10 +1,10 @@
 ---
 title: KPI's openen
-description: KPI's openen
+description: Leer hoe te om tot uw KPIs toegang te hebben en het rapporteringsproces te bepalen
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Houd rekening met de volgende vragen bij het definiëren van het rapportageproce
 
 1. Wie is het publiek voor dit PKI-rapport? Voor elke KPI, zorg ervoor u een uitvoerende sponsor - iemand hebt die u en de rest van het team voor die metrische waarde kan houden - en een bredere lijst van mensen hebt geïdentificeerd die regelmatige rapporten zouden moeten ontvangen.
 1. Hoe vaak zult u over dit KPI rapporteren?
-1. Hoe wordt deze KPI bijgehouden? Wie haalt de gegevens? Welke gegevensbronnen zal die persoon of dat team gebruiken? Is er iets wat je nu kunt doen om dat proces te vergemakkelijken?
+1. Hoe wordt deze KPI bijgehouden? Wie haalt de gegevens op? Welke gegevensbronnen zal die persoon of dat team gebruiken? Is er iets wat je nu kunt doen om dat proces te vergemakkelijken?
 1. Wat zal de vorm van het verslag zijn?
 1. Hoe zal het verslag worden opgesteld?
 
