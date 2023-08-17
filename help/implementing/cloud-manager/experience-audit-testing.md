@@ -2,9 +2,9 @@
 title: Ervaring controleren testen
 description: Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e9f205a506fb2d2b7f5e634b353b112bf077058a
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ De controle van de ervaring in de Manager van de Wolk zorgt ervoor dat de ervari
 De controleresultaten zijn informatief en staan de plaatsingsmanager toe om de scores en de verandering tussen de huidige en vorige scores te zien. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing werd geïntroduceerd.
 
 Experience Audit wordt aangedreven door Google Lighthouse, een opensource tool van Google, en wordt ingeschakeld in alle productiepijpleidingen van Cloud Manager.
+
+>[!INFO]
+>
+>Met ingang van 28 augustus 2023 zal Experience Audit een overgang maken naar toonaangevende resultaten die specifiek zijn voor het mobiele platform. Merk op dat mobiele prestatiesmetriek typisch lager dan die van Desktop registreren, zodat gelieve een verschuiving in de gemelde prestaties na deze verandering te voorzien.
 
 >[!TIP]
 >
