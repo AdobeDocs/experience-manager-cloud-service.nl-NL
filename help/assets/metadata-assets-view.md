@@ -1,12 +1,12 @@
 ---
-title: Metagegevens beheren
-description: Metagegevens van elementen beheren in [!DNL Assets view]
+title: Hoe te om meta-gegevens in de mening van Activa te beheren?
+description: Leer hoe u metagegevens beheert in de weergave Middelen. Een beter beheer van metagegevens maakt een middel toegankelijker, eenvoudiger te beheren en compleet.
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---

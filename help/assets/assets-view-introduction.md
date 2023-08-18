@@ -1,10 +1,10 @@
 ---
 title: Hoe heeft de nieuwe gebruikersinterface of de nieuwe middelenweergave van AEM Assets in AEM voordeel?
-description: Meer informatie over de belangrijkste voordelen van de nieuwe gebruikersinterface van AEM Assets of de nieuwe weergave Middelen vindt u in AEM
+description: Meer informatie over de belangrijkste voordelen van de nieuwe gebruikersinterface van AEM Assets of de nieuwe weergave Middelen vindt u in AEM. Adobe, die gebruik maakt van zijn expertise op het gebied van het versterken van marketing en creatieve professionals, introduceert een game veranderende nieuwe gebruikerservaring.
 mini-toc-levels: 3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---

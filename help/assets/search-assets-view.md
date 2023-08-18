@@ -1,11 +1,11 @@
 ---
-title: Middelen zoeken en ontdekken in [!DNL Assets view]
-description: Middelen zoeken en ontdekken in [!DNL Assets view].
+title: Leer hoe u middelen kunt zoeken en ontdekken in [!DNL Assets view]?
+description: Leer hoe u middelen kunt zoeken en ontdekken in de weergave AEM Assets. Met de krachtige zoekfunctionaliteit kunt u snel de juiste middelen vinden en de snelheid van de inhoud verbeteren.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: ed7ce8be17ad1445132b9aa38a0efa84ffa70fdf
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Als u elementen wilt zoeken,
 
    * Zoeken met een trefwoord en desgewenst map wijzigen. Druk op Return.
 
-   * Begin met werken met een onlangs weergegeven element door er direct naar te zoeken. Klik in het zoekvak en selecteer een element dat onlangs is weergegeven in de suggesties.
+   * Begin met het werken met een onlangs weergegeven element door er direct naar te zoeken. Klik in het zoekvak en selecteer een element dat onlangs is weergegeven in de suggesties.
 
 ## De zoekresultaten filteren {#refine-search-results}
 
@@ -36,17 +36,17 @@ U kunt de zoekresultaten filteren op basis van de volgende parameters.
 
 ![Zoekfilters](assets/filters1.png)
 
-*Afbeelding: Gezochte elementen filteren op basis van verschillende parameters.*
+*Afbeelding: gezochte elementen filteren op basis van verschillende parameters.*
 
-* Status van element: De zoekresultaten filteren met een `Approved`, `Rejected`, of `No Status` status van het element.
+* De Status van het element: Filter de onderzoeksresultaten gebruikend een `Approved`, `Rejected`, of `No Status` status van het element.
 
-* Bestandstype: Filter de zoekresultaten op de ondersteunde bestandstypen, namelijk `Images`, `Documents`, en `Videos`.
-* MIME-type: Filter voor een of meer ondersteunde bestandsindelingen. <!-- TBD:  [supported file formats](/help/assets/supported-file-formats-assets-view.md). -->
-* Afbeeldingsgrootte: Geef een van de minimale en maximale afmetingen op voor het filteren van afbeeldingen. De grootte wordt opgegeven in pixelafmetingen en is niet de bestandsgrootte van de afbeeldingen.
-* Gemaakt op: De aanmaakdatum van het element, zoals vermeld in de metagegevens. De standaard datumnotatie die wordt gebruikt is `yyyy-mm-dd`.
-* Datum gewijzigd: De laatste gewijzigde datum van de elementen. De standaard datumnotatie die wordt gebruikt is `yyyy-mm-dd`.
+* Bestandstype: filtreer de zoekresultaten op de ondersteunde bestandstypen, namelijk `Images`, `Documents`, en `Videos`.
+* MIME-type: filter voor een of meer ondersteunde bestandsindelingen. <!-- TBD:  [supported file formats](/help/assets/supported-file-formats-assets-view.md). -->
+* Afbeeldingsgrootte: geef een van de minimale en maximale afmetingen op voor het filteren van afbeeldingen. De grootte wordt opgegeven in pixelafmetingen en is niet de bestandsgrootte van de afbeeldingen.
+* Aanmaakdatum: de aanmaakdatum van het element zoals vermeld in de metagegevens. De standaard datumnotatie die wordt gebruikt is `yyyy-mm-dd`.
+* Gewijzigde datum: de datum waarop de elementen als laatste zijn gewijzigd. De standaard datumnotatie die wordt gebruikt is `yyyy-mm-dd`.
 
-* Vervaldatum: De zoekresultaten filteren op basis van een `Expired` status van het element. Daarnaast kunt u een datumbereik voor de vervaldatum voor elementen opgeven om de zoekresultaten verder te filteren.
+* Vervaldatum: filter de zoekresultaten op basis van een `Expired` status van het element. Daarnaast kunt u een datumbereik voor de vervaldatum voor elementen opgeven om de zoekresultaten verder te filteren.
 
 * Aangepaste filters: [Aangepaste filters toevoegen](#custom-filters) aan de gebruikersinterface van de middelenweergave. Pas de aangepaste filters toe naast de standaardfilters om de zoekresultaten te verfijnen.
 
@@ -100,7 +100,7 @@ Aangepaste filters toevoegen:
 
 1. Klik op **[!UICONTROL Filters]**.
 
-1. In de **[!UICONTROL Custom Filters]** sectie, klikt u op **[!UICONTROL Edit]** of **[!UICONTROL Add Filters]**.
+1. In de **[!UICONTROL Custom Filters]** sectie, klikken **[!UICONTROL Edit]** of **[!UICONTROL Add Filters]**.
 
    ![Aangepaste filters toevoegen](assets/add-custom-filters.png)
 
@@ -114,7 +114,7 @@ Aangepaste filters verwijderen:
 
 1. Klik op **[!UICONTROL Filters]**.
 
-1. In de **[!UICONTROL Custom Filters]** sectie, klikt u op **[!UICONTROL Edit]**.
+1. In de **[!UICONTROL Custom Filters]** sectie, klikken **[!UICONTROL Edit]**.
 
 1. Op de **[!UICONTROL Custom filters management]** schakelt u de filters uit die u uit de bestaande lijst met filters wilt verwijderen.
 

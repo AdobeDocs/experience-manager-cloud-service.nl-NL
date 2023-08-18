@@ -1,14 +1,14 @@
 ---
-title: Watermerk van de elementen
-description: Voeg een watermerk toe aan uw digitale elementen.
+title: Hoe kunt u uw middelen in AEM voorzien van een watermerk?
+description: Leer hoe u in AEM een digitaal watermerk aan uw middelen kunt toevoegen. Met watermerken kunnen gebruikers de authenticiteit en de copyrighteigendom van de elementen controleren.
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 7%
+source-wordcount: '304'
+ht-degree: 6%
 
 ---
 
@@ -39,7 +39,7 @@ Om te vormen [!DNL Experience Manager] op watermerkelementen:
 
    >[!NOTE]
    >
-   >Als u een systeemwatermerkingsprofiel hebt geconfigureerd met `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` configuratiedossier (configuratie OSGi), kunt u het blijven gebruiken, nochtans, adviseert Adobe het gebruiken van de nieuwe methode.
+   >Als u een systeemwatermerkingsprofiel hebt geconfigureerd met `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` configuratiedossier (configuratie OSGi), kunt u het blijven gebruiken, nochtans, adviseert de Adobe het gebruiken van de nieuwe methode.
 
 
 1. [Een verwerkingsprofiel maken](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) gebruik te maken van asset microservices om het watermerk toe te passen.

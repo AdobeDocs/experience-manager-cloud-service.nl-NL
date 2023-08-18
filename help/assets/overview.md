@@ -1,13 +1,13 @@
 ---
 title: Inleiding tot elementen als een [!DNL Cloud Service]
-description: Nieuwe functies in Elementen als een [!DNL Cloud Service].
-contentOwner: AG
+description: Meer weten over nieuwe functies en de voordelen van Experience Manager Assets als [!DNL Cloud Service]. Een geïntegreerde PaaS-oplossing voor bedrijven in de cloud.
+contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '752'
 ht-degree: 1%
 
 ---
@@ -28,22 +28,22 @@ Lees verder om de [details van de nieuwe middelenmogelijkheden](#whats-new-asset
 
 ## Oplossingsvoordelen {#solution-benefits}
 
-Hieronder worden de belangrijkste voordelen van activa als een [!DNL Cloud Service]. Zie voor meer informatie [overzicht van de Experience Manager als [!DNL Cloud Service]](/help/overview/introduction.md).
+Hieronder worden de belangrijkste voordelen van activa als [!DNL Cloud Service]. Zie voor meer informatie [overzicht van de Experience Manager als een [!DNL Cloud Service]](/help/overview/introduction.md).
 
-* **Moderne cloudservices voor de verwerking van bedrijfsmiddelen**: De nieuwe assetmicroservices zijn een cloudgebaseerde, schaalbare, betrouwbare en probleemloze service voor de verwerking van bedrijfsmiddelen.
+* **Moderne cloudservices voor middelenverwerking**: De nieuwe assetmicroservices zijn een cloudgebaseerde, schaalbare, betrouwbare en probleemloze service voor de verwerking van bedrijfsmiddelen.
 * **Zeer schaalbaar**: Elastische schaalbaarheid voor alle typen implementaties. Praktisch onbeperkte middelen die op bestelling, zoals en wanneer nodig beschikbaar zijn. Bespart de kosten van overontwerp in vergelijking met een traditioneel systeem.
-* **Nieuwste software**: Altijd actueel en altijd bijgewerkt. Alle gebruikers beschikken alleen over de nieuwste software met alle patches, functies, beveiliging en oplossingen voor problemen die voor hen beschikbaar zijn. Ontwikkelaars en integrators werken met de nieuwste set API&#39;s zonder ondersteuning voor meerdere versies.
-* **Altijd online**: Geen downtime (0dt), dankzij de instantie die in een cluster met back-ups en redundantie is geïmplementeerd. Upgrades zijn ook 0dt.
-* **Constante bewaking**: De controle van het systeem is geautomatiseerde en ingebouwde controles en trekkers helpen de prestaties, de beschikbaarheid, en algemene robuustheid handhaven.
+* **Nieuwste software**: Altijd bijgewerkt en bijgewerkt. Alle gebruikers beschikken alleen over de nieuwste software met alle patches, functies, beveiliging en oplossingen voor problemen die voor hen beschikbaar zijn. Ontwikkelaars en integrators werken met de nieuwste set API&#39;s zonder ondersteuning voor meerdere versies.
+* **Altijd online**: Geen downtime (0dt), dankzij de instantie die is geïmplementeerd in een cluster met back-ups en redundantie. Upgrades zijn ook 0dt.
+* **Constante bewaking**: De controle van het systeem wordt geautomatiseerd en ingebouwde controles en trekkers helpen de prestaties, de beschikbaarheid, en algemene robuustheid handhaven.
 * **Hapeloze implementaties**: Experience Manager in de Cloud-bewerkingen wordt volledig geautomatiseerd en hoeft niet handmatig te worden uitgevoerd. Voor geautomatiseerde implementaties automatiseert de component Cloud Manager (CM) de opbouw van implementeerbare Docker-afbeeldingen die uw aangepaste code bevatten.
 
 ## Beschikbare persoonlijke ervaringen {#persona-based-experiences}
 
-Adobe biedt robuuste DAM-oplossingen (Digital Asset Management) waarmee u optimaal kunt profiteren van uw digitale middelen. Adobe Experience Manager Assets heeft twee aparte ervaringen die dezelfde gegevensopslagruimte voor Cloud Services gebruiken:
+Adobe biedt robuuste DAM-oplossingen (Digital Asset Management) waarmee u optimaal kunt profiteren van uw digitale middelen. Adobe Experience Manager Assets heeft twee aparte ervaringen die dezelfde gegevensopslagruimte voor Cloud Servicen gebruiken:
 
-* **Admin View**: De bestaande Assets as a Cloud Service gebruikersinterface. Gebruik de beheerweergave voor alle geavanceerde mogelijkheden voor middelenbeheer, zoals integratie, workflows, automatisering van inhoud, publicatie en meer.
+* **Admin View**: De as a Cloud Service gebruikersinterface voor bestaande elementen. Gebruik de beheerweergave voor alle geavanceerde mogelijkheden voor middelenbeheer, zoals integratie, workflows, automatisering van inhoud, publicatie en meer.
 
-* **Weergave Elementen**: Adobe-tweight-beheerervaring voor opslag, beheer, detectie en gebruik van digitale elementen. Gestroomlijnde gebruikersinterface met essentiële mogelijkheden voor middelenbeheer. Ontworpen voor de lichtgewicht DAM-gebruikers met focus op uploaden, metagegevensbeheer, zoeken, downloaden en delen.
+* **Weergave Elementen**: De lichte ervaring van de Adobe op het gebied van middelenbeheer voor het opslaan, beheren, ontdekken en gebruiken van digitale middelen. Gestroomlijnde gebruikersinterface met essentiële mogelijkheden voor middelenbeheer. Ontworpen voor de lichtgewicht DAM-gebruikers met focus op uploaden, metagegevensbeheer, zoeken, downloaden en delen.
 
 Gebruikers met toegang tot de beheerweergave hebben ook toegang tot de weergave Middelen. De weergave Elementen biedt een vereenvoudigde gebruikersinterface waarmee u uw digitale elementen eenvoudig kunt beheren, ontdekken en distribueren. Een brede reeks gebruikers van verschillende functies, met inbegrip van creatieve, marketing en brancheteams kunnen aan activa samenwerken en tot het recht toegang hebben, erkende activa wanneer en waar zij hen nodig hebben. Veel incidentele DAM-gebruikers geven de voorkeur aan de weergave Middelen, omdat deze alleen een subset functies bevat. De ervaring is gericht op creatieve personen, alleen-lezen klanten en minder belangrijke DAM-gebruikers.
 
