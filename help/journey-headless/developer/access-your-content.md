@@ -2,9 +2,9 @@
 title: Toegang tot uw inhoud via AEM levering-API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u GraphQL-query's kunt gebruiken om toegang te krijgen tot de inhoud van Content Fragments.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1366'
 ht-degree: 0%
 
 ---
@@ -374,5 +374,6 @@ Nu u hebt geleerd hoe u toegang kunt krijgen tot inhoud zonder kop en deze kunt 
    * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [JSON-uitvoer](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [Werken met het delen van bronnen tussen verschillende bronnen (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
+* [GraphQL Persisted Queries - caching inschakelen in Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 * [Toegangstokens genereren voor server-side API&#39;s](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [Aan de slag met AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Een korte videozelfstudie waarin een overzicht wordt gegeven van het gebruik van AEM functies zonder kop, zoals het modelleren van inhoud en GraphQL.

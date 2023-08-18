@@ -1,16 +1,17 @@
 ---
-title: Dispatcher-configuratie met AEM headless
+title: De eindpuntconfiguratie van de verzending met AEM Zwaartepunt
 description: De Dispatcher is een caching- en beveiligingslaag voor Adobe Experience Manager-publicatieomgevingen. Verschillende configuraties worden gebruikt om GraphQL-eindpunten te openen voor toepassingen zonder kop.
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
+source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
-# Dispatcher-configuratie met AEM headless
+
+# Dispatcher - Eindpuntconfiguratie met AEM headless
 
 De [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is een caching- en beveiligingslaag voor Adobe Experience Manager Publish-omgevingen. Verschillende configuraties zijn standaard inbegrepen bij het openen van GraphQL-eindpunten voor toepassingen zonder kop.
 
@@ -28,7 +29,7 @@ Als onderdeel van de standaardfilters, [GraphQL-eindpunten](/help/headless/graph
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-De `*` jokerteken opent meerdere eindpunten van de AEM-instantie. Het vragen gebruikend een eindpunt van GraphQL wordt gemaakt gebruikend `POST` en de reactie **niet** in cache geplaatst.
+De `*` jokerteken opent meerdere eindpunten van de AEM-instantie. Het vragen gebruikend een eindpunt van GraphQL wordt gemaakt gebruikend `POST` en de reactie is **niet** in cache geplaatst.
 
 ## Aangehouden GraphQL-query&#39;s
 
@@ -38,4 +39,4 @@ Het verzoek om Persisted query wordt ingediend tegen een verschillend eindpunt. 
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-U kunt blijvende query&#39;s aanvragen met `GET`, door de reactie op Dispatcher en CDN-niveau in cache te plaatsen. Meer informatie over caching en cachevalidatie vindt u [hier](/help/implementing/dispatcher/caching.md).
+U kunt blijvende query&#39;s aanvragen met `GET`, door de reactie op Dispatcher en CDN-niveau in de cache op te nemen. Meer informatie over caching en cachevalidatie vindt u [hier](/help/implementing/dispatcher/caching.md).
