@@ -2,7 +2,7 @@
 title: Onderhoudstaken in AEM as a Cloud Service
 description: Leer over onderhoudstaken in AEM as a Cloud Service en hoe te om hen te vormen.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 1d20c42dd140e1bdadbf4e7e0abf899c824d3b34
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Onderhoudstaken zijn processen die volgens een schema worden uitgevoerd om de op
 
 ## Onderhoudstaken configureren {#maintenance-tasks-configuring}
 
-In vorige versies van AEM kon u onderhoudstaken configureren met de onderhoudskaart (Opties > Bewerkingen > Onderhoud). Voor AEM as a Cloud Service, is de Kaart van het Onderhoud niet meer beschikbaar zodat zouden de configuraties aan broncontrole moeten worden geëngageerd en door de Manager van de Wolk worden opgesteld. Adobe beheert die onderhoudstaken die montages hebben die niet door klanten (bijvoorbeeld, de Inzameling van de Schrapping van de Schrapping van de Datastore, de Schrapping van het Logboek van de Controle, de Schrapping van de Versie) configureerbaar zijn. Andere onderhoudstaken kunnen door klanten worden geconfigureerd, zoals in de onderstaande tabel wordt beschreven.
+In vorige versies van AEM kon u onderhoudstaken configureren met de onderhoudskaart (Opties > Bewerkingen > Onderhoud). Voor AEM as a Cloud Service, is de Kaart van het Onderhoud niet meer beschikbaar zodat zouden de configuraties aan broncontrole moeten worden geëngageerd en door de Manager van de Wolk worden opgesteld. De Adobe beheert die onderhoudstaken die montages hebben die niet door klanten (bijvoorbeeld, de Inzameling van de Schrapping van de Schrapping van de Datastore, de Schrapping van het Logboek van de Controle, de Schrapping van de Versie) configureerbaar zijn. Andere onderhoudstaken kunnen door klanten worden geconfigureerd, zoals in de onderstaande tabel wordt beschreven.
 
 >[!CAUTION]
 >
->Adobe behoudt zich het recht voor om de configuratie-instellingen voor onderhoudstaak van een klant te negeren om problemen zoals prestatievermindering te beperken.
+>Adobe behoudt zich het recht voor om de configuratie-instellingen voor onderhoudstaken van een klant te negeren om problemen zoals prestatievermindering te beperken.
 
 De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het moment van de release van AEM as a Cloud Service.
 
@@ -38,13 +38,13 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
   <tr>
     <td>Afvalverzameling datastore</td>
     <td>Adobe</td>
-    <td>N.v.t. volledig in Adobe bezit</td>
+    <td>N.v.t. volledig eigendom van de Adobe</td>
   </td> 
   </tr>
   <tr>
     <td>Versie wissen</td>
     <td>Adobe</td>
-    <td>Voor bestaande milieu's (die vóór 1 September, 2023 worden gecreeerd), wordt het zuiveren onbruikbaar gemaakt en zal niet in de toekomst worden toegelaten tenzij uitdrukkelijk toegelaten door de klant, waarbij zij het met douanewaarden kunnen ook vormen.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Nieuwe omgevingen (die vanaf 1 september 2023 zijn gemaakt) worden standaard leeggemaakt met de onderstaande waarden, waarbij klanten kunnen configureren met aangepaste waarden.
+    <td>Voor bestaande milieu's (die vóór 1 November, 2023 worden gecreeerd), wordt het zuiveren onbruikbaar gemaakt en zal niet in de toekomst worden toegelaten tenzij uitdrukkelijk toegelaten door de klant, waarbij zij het met douanewaarden kunnen ook vormen.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->De nieuwe milieu's (die gecreeerd vanaf 1 November, 2023) zullen zuiverend hebben die door gebrek met de hieronder waarden wordt toegelaten, met klanten die met douanewaarden kunnen vormen.
      <ol>
        <li>Versies ouder dan 30 dagen worden verwijderd</li>
        <li>De meest recente vijf versies in de laatste 30 dagen worden bewaard</li>
@@ -56,7 +56,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
   <tr>
     <td>Logboek controleren leegmaken</td>
     <td>Adobe</td>
-    <td>Voor bestaande milieu's (die vóór 1 September, 2023 worden gecreeerd), wordt het zuiveren onbruikbaar gemaakt en zal niet in de toekomst worden toegelaten tenzij uitdrukkelijk toegelaten door de klant, waarbij zij het met douanewaarden kunnen ook vormen.<br><br> <!-- See above for the two line breaks -->In nieuwe omgevingen (die vanaf 1 september 2023 zijn gemaakt) wordt leegmaken standaard ingeschakeld onder de <code>/content</code> knooppunt van de repository volgens het volgende gedrag:
+    <td>Voor bestaande milieu's (die vóór 1 November, 2023 worden gecreeerd), wordt het zuiveren onbruikbaar gemaakt en zal niet in de toekomst worden toegelaten tenzij uitdrukkelijk toegelaten door de klant, waarbij zij het met douanewaarden kunnen ook vormen.<br><br> <!-- See above for the two line breaks -->De nieuwe milieu's (die gecreeerd die 1 November, 2023 beginnen) zullen zuiverend hebben die door gebrek onder wordt toegelaten <code>/content</code> knooppunt van de repository volgens het volgende gedrag:
      <ol>
        <li>Voor replicatiecontrole worden controlelogboeken ouder dan 3 dagen verwijderd</li>
        <li>Voor DAM-audits (Assets) worden auditlogboeken ouder dan 30 dagen verwijderd</li>
@@ -68,7 +68,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
   <tr>
     <td>Lucene Binaries Cleanup</td>
     <td>Adobe</td>
-    <td>Ongebruikt en daarom door Adobe uitgeschakeld.</td>
+    <td>Ongebruikt en daarom door Adobe gehandicapt.</td>
   </td>
   </tr>
   <tr>
@@ -92,7 +92,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
     <td>Klant</td>
     <td>
     <p>Moet in de put worden gedaan. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code>. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
-    <p>Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven toe te voegen (noem het) <code>granite_ProjectPurgeTask</code>) met de juiste eigenschappen. Zie de lijst van eigenschappen OSGI onder "Adobe Projecten zuivert Configuratie".</p>
+    <p>Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven toe te voegen (noem het) <code>granite_ProjectPurgeTask</code>) met de juiste eigenschappen. Zie de lijst van eigenschappen OSGI onder "de Projecten van de Adobe zuiveren Configuratie".</p>
   </td>
   </tr>
   </tbody>
