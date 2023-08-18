@@ -2,7 +2,7 @@
 title: Ervaring controleren testen
 description: Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: e9f205a506fb2d2b7f5e634b353b112bf077058a
+source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Experience Audit wordt aangedreven door Google Lighthouse, een opensource tool v
 
 >[!INFO]
 >
->Met ingang van 28 augustus 2023 zal Experience Audit een overgang maken naar toonaangevende resultaten die specifiek zijn voor het mobiele platform. Merk op dat mobiele prestatiesmetriek typisch lager dan die van Desktop registreren, zodat gelieve een verschuiving in de gemelde prestaties na deze verandering te voorzien.
+>Met ingang van 31 augustus 2023 zal Experience Audit een overgang maken naar toonaangevende resultaten die specifiek zijn voor het mobiele platform. Merk op dat mobiele prestatiesmetriek typisch lager dan die van Desktop registreren, zodat gelieve een verschuiving in de gemelde prestaties na deze verandering te voorzien.
 
 >[!TIP]
 >
