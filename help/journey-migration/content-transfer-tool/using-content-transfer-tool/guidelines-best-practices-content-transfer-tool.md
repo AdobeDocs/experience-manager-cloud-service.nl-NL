@@ -2,9 +2,9 @@
 title: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 description: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: 9212042db782dc413b64d40ebde096c12d754f97
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1599'
 ht-degree: 14%
 
 ---
@@ -51,6 +51,8 @@ Voor een segmentopslagplaats van 20 GB is dus 94 GB aan vrije schijfruimte verei
 
 * Een migratieset moet gedurende de gehele activiteit van de inhoudsoverdracht worden gehandhaafd om de toevoeging van inhoud te steunen. Per project kunnen maximaal vijf migratiesets worden gemaakt en onderhouden in Cloud Acceleration Manager tijdens de activiteit voor het overbrengen van inhoud. Als u meer dan vijf migratiesets nodig hebt, moet u een tweede project maken in Cloud Acceleration Manager. Dit vereist echter extra projectbeheer en beheer buiten het product om te voorkomen dat inhoud op het doel door meerdere gebruikers wordt overschreven.
 
+* Wijzig de installatiemap van het gereedschap CTT niet. Standaard vindt de installatie plaats in het crx-quickstart/cloud-migratiepad. Deze specifieke locatie wordt intern gebruikt door andere bibliotheken. Als u dit pad wijzigt, kan dit leiden tot extractieproblemen.
+
 ## Belangrijke overwegingen voordat u het gereedschap Inhoud overbrengen gebruikt {#important-considerations}
 
 Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overwegingen bij het uitvoeren van de Content Transfer-tool:
@@ -77,7 +79,7 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
-* Na het voltooien van de *Extractie* fase van het proces voor de overdracht van inhoud en vóór het begin van de *Ingestiefase* om inhoud in uw as a Cloud Service AEM in te voeren *Werkgebied* of *Productie* instanties, zult u een steunkaartje moeten registreren om Adobe van uw voornemen op de hoogte te brengen om te lopen *Inname* zodat Adobe ervoor kan zorgen dat er geen onderbrekingen optreden tijdens de *Inname* proces. U zult het steunkaartje 1 week voorafgaand aan uw gepland moeten registreren *Inname* datum. Nadat u het steunkaartje hebt voorgelegd, verstrekt het ondersteuningsteam begeleiding bij volgende stappen. U kunt een steunkaartje met de volgende details registreren:
+* Na het voltooien van de *Extractie* fase van het proces voor de overdracht van inhoud en vóór het begin van de *Ingestiefase* om inhoud in uw as a Cloud Service AEM in te voeren *Werkgebied* of *Productie* instanties, zult u een steunkaartje moeten registreren om Adobe van uw voornemen op de hoogte te brengen om te lopen *Inname* zodat de Adobe ervoor kan zorgen dat er geen onderbrekingen optreden tijdens de *Inname* proces. U zult het steunkaartje 1 week voorafgaand aan uw gepland moeten registreren *Inname* datum. Nadat u het steunkaartje hebt voorgelegd, verstrekt het ondersteuningsteam begeleiding bij volgende stappen. U kunt een steunkaartje met de volgende details registreren:
 
    * De exacte datum en geschatte tijd (met uw tijd-streek) wanneer u van plan bent om te beginnen *Inname* fase.
    * Omgevingstype (werkgebied of productie) waarin u gegevens wilt opnemen.
