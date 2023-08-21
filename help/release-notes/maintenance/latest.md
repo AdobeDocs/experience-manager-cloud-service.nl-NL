@@ -2,7 +2,7 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 64d88b9af48f1c5736ef668ae00fb29e9bfad9f7
+source-git-commit: e78410a1ce229db0dd3529bf544f694e97bfff46
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
@@ -15,7 +15,7 @@ In de volgende sectie worden de opmerkingen bij de technische release voor de hu
 
 ## Release 13206 {#release-13206}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13206 samengevat, die op 22 augustus 2023 openbaar werd gemaakt. Deze onderhoudrelease vervangt de releases 13173 en 13099 om een probleem op te lossen dat gevolgen heeft voor de functionaliteit van Inbox.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13206 samengevat, die op 21 augustus 2023 openbaar werd gemaakt. Deze onderhoudrelease vervangt de releases 13173 en 13099 om een probleem op te lossen dat gevolgen heeft voor de functionaliteit van Inbox.
 
 2023.8.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
