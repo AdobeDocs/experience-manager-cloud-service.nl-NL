@@ -1,18 +1,18 @@
 ---
-title: Google reCAPTCHA gebruiken in een adaptieve vorm op basis van Core Components
+title: Google reCAPTCHA gebruiken in een AEM adaptief formulier
 description: Verbeter de formulierbeveiliging zonder problemen met de Google reCAPTCHA-service. Stap-voor-stap gids binnen!
 topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b81acc99b1d90b05b7c341253e7cbb46c6ea12ae
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
 
-# Gebruik reCAPTCHA in Adaptive Forms op basis van Core Components {#using-reCAPTCHA-in-adaptive-forms}
+# Google reCAPTCHA gebruiken in een AEM adaptief formulier {#using-reCAPTCHA-in-adaptive-forms}
 
 CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
 
@@ -70,7 +70,7 @@ ReCAPTCHA gebruiken in Adaptive Forms:
 1. Selecteer een adaptieve Forms en tik op **[!UICONTROL Edit]**. Het adaptieve formulier wordt geopend in de Adaptive Forms Editor.
 1. Sleep vanuit de componentbrowser de **[!UICONTROL Adaptive Form reCAPTCHA]** naar het adaptieve formulier.
 
-   De Google reCAPTCHA-validatie is tijdgevoelig en verloopt over een paar minuten. Daarom raadt Adobe aan de **[!UICONTROL Adaptive Form reCAPTCHA]** component vlak voor de **[!UICONTROL Submit]** knop.
+   De Google reCAPTCHA-validatie is tijdgevoelig en verloopt over een paar minuten. Daarom beveelt de Adobe aan de **[!UICONTROL Adaptive Form reCAPTCHA]** component vlak voor de **[!UICONTROL Submit]** knop.
 
 1. Selecteer de **[!UICONTROL Adaptive Form reCAPTCHA]** component en tik op de eigenschappen ![Pictogram Eigenschappen](assets/configure-icon.svg) pictogram. Hiermee wordt het dialoogvenster met eigenschappen geopend. Geef de volgende verplichte eigenschappen op:
    * **[!UICONTROL Name]:** U kunt een formuliercomponent gemakkelijk herkennen met de unieke naam, zowel in het formulier als in de regeleditor, maar de naam mag geen spaties of speciale tekens bevatten.

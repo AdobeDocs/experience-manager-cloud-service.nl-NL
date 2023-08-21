@@ -1,15 +1,15 @@
 ---
-title: Een inleiding tot as a Cloud Service communicatie in Forms
+title: Inleiding tot as a Cloud Service communicatie met Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 2%
 
 ---
 
-# AEM Forms as a Cloud Service communicatie gebruiken {#frequently-asked-questions}
+# Inleiding tot as a Cloud Service communicatie met AEM Forms {#frequently-asked-questions}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |

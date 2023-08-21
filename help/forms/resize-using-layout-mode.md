@@ -1,18 +1,18 @@
 ---
-title: Hoe gebruikt u de lay-outmodus om de grootte van componenten voor Adaptief Forms te wijzigen?
+title: Gebruik de lay-outmodus om de grootte van componenten voor Adaptief Forms te wijzigen
 description: Bepaal de positie van componenten gebruikend het ontvankelijke net beschikbaar op de wijze van de Lay-out. Leer hoe u de modus Indeling kunt openen, de grootte van componenten kunt wijzigen, deelvensters kunt vergroten of verkleinen, lay-out met meerdere kolommen voor een deelvenster kunt definiëren, het nieuwe responsieve raster kunt inschakelen voor oude responsieve layouts en de modus Indeling kunt uitschakelen voor formulieren met een oude responsieve indeling.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
 
-# Gebruik de modus Lay-out om het formaat van componenten te wijzigen {#use-layout-mode-to-resize-components}
+# Gebruik de modus Lay-out om het formaat van componenten voor Adaptief Forms te wijzigen {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 

@@ -1,15 +1,14 @@
 ---
-title: Hoe te om de Dynamica 365 van Microsoft en Salesforce uit de doos gegevensmodellen van de vormgegevens voor adaptieve vormen te vormen?
+title: Microsoft Dynamics 365 of Salesforce voor AEM Forms configureren
 description: Leer hoe u Microsoft Dynamics 365 en Salesforce kunt integreren met adaptieve formulieren.
-exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
 
-# Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices {#configure-azure-storage}
+# Microsoft Dynamics 365 of Salesforce voor AEM Forms configureren {#configure-azure-storage}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -52,8 +51,8 @@ Voer de volgende stappen uit om het [!DNL Salesforce] cloudservice:
 1. In de **[!UICONTROL Authentication Settings]** tab:
    1. Geef de [!DNL Salesforce] Domein URL in de **[!UICONTROL Host]** veld. Bijvoorbeeld: [Domeinnaam].my.salesforce.com.
    1. Geef de client-id (Consumer Key) en het clientgeheim (Consumentengeheim) voor de verbonden toepassing op.
-   1. Opgeven **full offline_access** (`full` en `offine_access` waarden, gescheiden door een spatie) in de **[!UICONTROL Authorization Scope]** veld.
-   1. Tik op **[!UICONTROL Connect to OAuth]**. U wordt omgeleid naar [!DNL Microsoft Dynamics] aanmeldingspagina.
+   1. Opgeven **full offline_access** (`full` en `offine_access` waarden, gescheiden door een spatie) in het dialoogvenster **[!UICONTROL Authorization Scope]** veld.
+   1. Tik op **[!UICONTROL Connect to OAuth]**. U wordt omgeleid naar [!DNL Microsoft Dynamics] aanmeldingspagina
    1. Meld u aan met uw [!DNL Salesforce] referenties en accepteren om de configuratie van de cloudservice in staat te stellen verbinding te maken met [!DNL Salesforce] service. Als de verbinding tot stand is gebracht, wordt u omgeleid naar de [!DNL Salesforce] de configuratiepagina van de wolkendienst, die een succesbericht toont.
 1. Tikken **[!UICONTROL Save & Close]** om de configuratie te voltooien opstelling.
 

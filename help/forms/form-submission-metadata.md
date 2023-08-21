@@ -1,12 +1,12 @@
 ---
-title: Hoe te om Informatie van de Gegevens van de Gebruiker aan Metagegevens van de Verzending van de Vorm toe te voegen?
+title: Informatie uit gebruikersgegevens toevoegen aan metagegevens voor formulierverzending
 description: Leer hoe u met door de gebruiker verstrekte gegevens informatie aan metagegevens van een verzonden formulier kunt toevoegen. Dig dieper in op de manier waarop u de bijgewerkte metagegevens voor formulierverzending in de CRX-opslagplaats kunt bekijken.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Voer de volgende stappen uit om een element toe te voegen aan de metagegevens:
 
    ![Metagegevensscript](assets/add-element-metadata.png)
 
-   Script dat is ingevoerd op het tabblad Metagegevens
+   Script ingevoerd op het tabblad Metagegevens
 
 1. Klik op **[!DNL OK]**.
 
-Nadat een gebruiker gegevens in het element invoert dat als meta-gegevensgebied wordt geselecteerd, wordt de gegevens gegevens gegevens geregistreerd in de meta-gegevens. U ziet de metagegevens in de opslagplaats waarin u metagegevens hebt opgeslagen.
+Nadat een gebruiker gegevens in het element invoert dat als meta-gegevensgebied wordt geselecteerd, wordt de gegevens gegevens gegevens geregistreerd in de meta-gegevens. U kunt de metagegevens bekijken in de opslagplaats die u hebt geconfigureerd voor het opslaan van metagegevens.
 
 ## Metagegevens voor bijgewerkte formulierverzending bekijken: {#seeing-updated-form-nbsp-submission-metadata}
 

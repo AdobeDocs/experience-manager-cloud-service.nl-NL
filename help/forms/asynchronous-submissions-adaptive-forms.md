@@ -1,18 +1,17 @@
 ---
-title: Hoe te om Asynchrone Verzending voor Adaptive Forms te vormen?
+title: Asynchrone verzending van AEM adaptieve Forms configureren
 description: Leer hoe u de asynchrone verzending voor Adaptive Forms configureert. Dig dieper in op de werking van asynchrone verzending voor Adaptive Forms.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
 
-# Asynchrone indiening van Adaptive Forms {#asynchronous-submission-of-adaptive-forms}
+# Asynchrone verzending van AEM Adaptieve Forms configureren {#asynchronous-submission-of-adaptive-forms}
 
 
 | Versie | Artikelkoppeling |
@@ -35,8 +34,8 @@ Om asynchrone voorlegging voor een Aangepast Vorm te vormen:
 1. In de **[!UICONTROL Submission]** eigenschappensectie, inschakelen **[!UICONTROL Use asynchronous submission]**.
 1. In de **[!UICONTROL On Submit]** selecteert u een van de volgende opties voor het verzenden van formulieren.
 
-   * **[!UICONTROL Redirect to URL]**: Hiermee wordt de opgegeven URL of pagina bij het verzenden van het formulier gebruikt. U kunt een URL opgeven of bladeren naar het pad naar een pagina in het dialoogvenster **[!UICONTROL Redirect URL/Path]** veld.
-   * **[!UICONTROL Show Message]**: Hiermee wordt een bericht weergegeven bij het verzenden van het formulier. U kunt een bericht schrijven in het tekstveld onder de **[!UICONTROL Show Message]** optie. Het tekstveld ondersteunt RTF-opmaak.
+   * **[!UICONTROL Redirect to URL]**: leidt bij het verzenden van het formulier naar de opgegeven URL of pagina. U kunt een URL opgeven of bladeren naar het pad naar een pagina in het dialoogvenster **[!UICONTROL Redirect URL/Path]** veld.
+   * **[!UICONTROL Show Message]**: geeft een bericht weer bij het verzenden van het formulier. U kunt een bericht schrijven in het tekstveld onder de **[!UICONTROL Show Message]** -optie. Het tekstveld ondersteunt RTF-opmaak.
 
 1. Tikken ![check-button1](assets/save_icon.svg) om de eigenschappen op te slaan.
 

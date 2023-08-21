@@ -1,6 +1,5 @@
 ---
-title: De AEM vertaalworkflow gebruiken om Adaptief Forms en Document of Record te lokaliseren
-seo-title: Using AEM translation workflow to localize Adaptive Forms and Document of Record
+title: Aangepast Forms en document met record lokaliseren
 description: Leer hoe u AEM vertaalworkflows kunt gebruiken om Adaptive Forms en Document of Record te lokaliseren.
 seo-description: Learn to use AEM translation workflows to localize Adaptive Forms and Document of Record.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
@@ -8,15 +7,15 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
 
-# De AEM vertaalworkflow gebruiken om Adaptief Forms en Document of Record te lokaliseren {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# Aangepast Forms en document met record lokaliseren{#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
 Met gelokaliseerde formulieren hebt u een groter publiek in verschillende regio&#39;s. Met de vertaalworkflow van Adobe Experience Manager kunt u Adaptive Forms en de bijbehorende documenten van record lokaliseren. U kunt **machinevertaling** of **menselijke vertalers** om een adaptief formulier te lokaliseren.
 

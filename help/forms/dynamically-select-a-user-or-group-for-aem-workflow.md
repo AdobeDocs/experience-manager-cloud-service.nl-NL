@@ -1,17 +1,17 @@
 ---
-title: Een gebruiker of groep dynamisch selecteren voor workflowstappen die op AEM Forms zijn gericht
+title: Dynamische selectie van gebruiker of groep in AEM workflow
 description: Leer hoe u een gebruiker of groep voor een [!DNL AEM Forms] tijdens de runtime.
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
 
 
-# Een gebruiker of groep dynamisch selecteren voor workflowstappen die op AEM Forms zijn gericht {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Dynamische selectie van gebruiker of groep in AEM workflow {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Leer hoe u een gebruiker of groep voor een [!DNL AEM Forms] tijdens de runtime.
 
@@ -29,7 +29,7 @@ ECMAScript is een scripttaal. Het wordt gebruikt voor client-side scripting en s
    * (Pad voor taakstap toewijzen) `/apps/fd/dashboard/scripts/participantChooser`
    * (Pad voor stap Handtekening) `/apps/fd/workflow/scripts/adobesign`
 
-1. Voeg ECMAScript, dat de logica heeft om een gebruiker dynamisch te selecteren, aan het .ecma dossier toe. Klik op **[!UICONTROL Save All]**.
+1. Voeg ECMAScript, dat de logica aan dynamisch het selecteren van een gebruiker, aan het .ecma dossier heeft. Klik op **[!UICONTROL Save All]**.
 
    Zie voor voorbeeldscripts [Voorbeeld-ECMAScripts voor het dynamisch selecteren van een gebruiker of groep](dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 
@@ -112,9 +112,9 @@ function getAdobeSignRecipients() {
 
 ## Java-interface gebruiken om een gebruiker of groep dynamisch te kiezen {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-U kunt de [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface om dynamisch een gebruiker of groep te kiezen voor [!DNL Adobe Sign] en Taakstappen toewijzen. U kunt een bundel tot stand brengen OSGi die het gebruik gebruikte [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface en implementeer deze in de [!DNL AEM Forms] server. Hiermee maakt u de optie beschikbaar voor selectie in de categorie Taak toewijzen en [!DNL Adobe Sign] componenten van AEM Workflow.
+U kunt de [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface om dynamisch een gebruiker of groep te kiezen voor [!DNL Adobe Sign] en Taakstappen toewijzen. U kunt een bundel tot stand brengen OSGi die het gebruik gebruikte [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface en implementeren in de [!DNL AEM Forms] server. Hiermee maakt u de optie beschikbaar voor selectie in de categorie Taak toewijzen en [!DNL Adobe Sign] componenten van AEM Workflow.
 
-U hebt [[!DNL AEM Forms] Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) jar en [granietjar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden om het hieronder vermelde codevoorbeeld te compileren. Voeg deze jar dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
+U hebt [[!DNL AEM Forms] Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) jar [granietjar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden om het hieronder vermelde codevoorbeeld te compileren. Voeg deze jar dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
 1. Open Eclipse IDE. Ga naar **[!UICONTROL File]**> **[!UICONTROL New Project]**.
 1. Selecteer in het scherm Selecteer een wizard de optie **[!UICONTROL Maven Project]** en klik op **[!UICONTROL Next]**.

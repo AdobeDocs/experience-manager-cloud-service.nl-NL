@@ -1,16 +1,9 @@
 ---
 title: Elektronische handtekeningen toepassen op een formulier met scripthandtekeningen
-seo-title: Apply electronic signatures to a form using scribble signatures
 description: Formulieren ondertekenen met behulp van krabbelen
 seo-description: Signing forms using scribble
-uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
-docset: aem65
-google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -19,7 +12,7 @@ ht-degree: 0%
 
 # Elektronische handtekeningen toepassen op een formulier met scripthandtekeningen{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -40,8 +33,8 @@ U kunt de **Krabbelhandtekening** en **Handtekeningstap** te tekenen (krabbelen)
 
 Zodra u gereed tikt ![aem_forms_save](assets/aem_forms_save.png) in het venster Krabbelhandtekening kunt u de handtekening niet bewerken. Als u de handtekening wilt bewerken, moet u de huidige handtekening negeren en opnieuw ondertekenen met de bovenstaande optie Penseel/toetsenbord.
 
-U kunt tikken op de knop **Configureren** ![Configuratiepictogram](assets/configure.png) pictogram om de hoogte-breedteverhouding van het canvas voor Krabbelhandtekeningen in te stellen.
-* Wanneer de hoogte-breedteverhouding van het canvas voor Krabbelhandtekeningen kleiner is dan 1, worden de gegevens over de geolocatie toegevoegd onder aan het canvas voor Krabbelhandtekeningen.
+U kunt op de knop **Configureren** ![Configuratiepictogram](assets/configure.png) pictogram om de hoogte-breedteverhouding van het canvas Krabbelen in te stellen.
+* Als de hoogte-breedteverhouding van het canvas voor Krabbelhandtekeningen kleiner is dan 1, worden de gegevens over de geolocatie toegevoegd onder aan het canvas voor Krabbelhandtekeningen.
 
 
 * Wanneer de hoogte-breedteverhouding van het canvas voor Krabbelhandtekeningen groter is dan 1, wordt de informatie over de geolocatie toegevoegd aan de rechterkant van het canvas voor Krabbelhandtekeningen.
@@ -67,7 +60,7 @@ U kunt tikken op de knop **Configureren** ![Configuratiepictogram](assets/config
    >
    >De component voor de stap Handtekening gebruikt de volledige breedte die beschikbaar is voor het formulier. Het wordt aanbevolen geen andere component op te nemen in de sectie die de component voor de stap Handtekening bevat.
 
-1. Tik in de Inhoudsbrowser op **Formuliercontainer** en tik op de knop **Configureren** ![Configuratiepictogram](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeren naar **Aangepaste formuliercontainer** > **Elektronische handtekening** en deselecteer de **Adobe Sign inschakelen** optie. Tik op Gereed ![aem_forms_save](assets/aem_forms_save.png) om de wijzigingen op te slaan.
+1. Tik in de inhoudbrowser op **Formuliercontainer** en tik op de knop **Configureren** ![Configuratiepictogram](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeren naar **Aangepaste formuliercontainer** > **Elektronische handtekening** en deselecteer de **Adobe Sign inschakelen** -optie. Tik op Gereed ![aem_forms_save](assets/aem_forms_save.png) om de wijzigingen op te slaan.
 
    >[!NOTE]
    >
@@ -75,11 +68,11 @@ U kunt tikken op de knop **Configureren** ![Configuratiepictogram](assets/config
 
 1. Tik op de knop **Configureren** ![vormen](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen voor stap Handtekening worden weergegeven. Configureer de volgende eigenschappen:
 
-   * **Elementnaam**: Geef de naam van de component op.
+   * **Elementnaam**: Geef een naam op voor de component.
 
    * **Titel:** Geef een unieke titel van de component op.
    * **Sjabloonbericht:** Geef het bericht op dat moet worden weergegeven wanneer de PDF van de handtekening wordt geladen. Adobe Sign-services hebben enige tijd nodig om de PDF van de handtekening voor te bereiden en te laden.
-   * **Ondertekeningsservice:** Selecteer **Krabbelhandtekening** optie.
+   * **Ondertekeningsservice:** Selecteer de **Krabbelhandtekening** -optie.
 
    * **CSS-klasse**: Geef eventueel de CSS-klasse van de clientbibliotheek op. Het wordt aanbevolen [thema&#39;s](themes.md) en [inline stijlen](inline-style-adaptive-forms.md) in plaats van CSS-klasse.
 

@@ -1,13 +1,12 @@
 ---
-title: Hoe kan ik de prestaties van grote formulieren verbeteren door ze lui te laden?
+title: Verbeter de prestaties van grote formulieren met het laden van de formulieren
 description: Leer hoe u de prestaties van grote formulieren kunt verbeteren door ze lui te laden. Lazy loading verbetert de prestaties van grote en complexe Adaptive Forms aanzienlijk door de initialisatie en het laden van formulierfragmenten uit te stellen totdat deze zichtbaar zijn.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---

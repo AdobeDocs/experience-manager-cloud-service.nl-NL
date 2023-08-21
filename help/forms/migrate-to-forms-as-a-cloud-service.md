@@ -1,5 +1,5 @@
 ---
-title: Hoe migreren van een AEM 6.5 Forms naar [!DNL AEM Forms] as a Cloud Service omgeving?
+title: Migreren van AEM 6.5 Forms naar AEM Forms as a Cloud Service
 description: Aan de slag met de migratiereis om as a Cloud Service te AEM | Adobe Experience Manager. Migreren van een [!DNL AEM Forms] (Op locatie en AMS-omgevingen) naar [!DNL AEM Forms] as a Cloud Service omgeving.
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: d43e2d555a09f481900ec70e5e38bab42f4cc1d7
+source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1507'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Om van AEM 6.5 Forms naar AEM Cloud Service te migreren, is het belangrijk reken
 
 * (Alleen voor versies ouder dan AEM 6.5 Forms) Adaptieve Forms op basis van out-of-the-box sjablonen en thema&#39;s die beschikbaar zijn in AEM 6.3 Forms of vorige versie worden niet ondersteund op [!DNL AEM Forms] as a Cloud Service.
 
-* Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke veranderingen in bestaande eigenschappen in vergelijking met Adobe Experience Manager 6.5 Forms (On-Premise en Adobe-Managed Service) milieu&#39;s. Voordat u verdergaat met de migratie naar de service, [Meer informatie over deze opmerkelijke wijzigingen](notable-changes.md) en de [verschillen op functieniveau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report) om te beslissen over migratie op basis van functies die uw organisatie nodig heeft.
+* Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke veranderingen in bestaande eigenschappen in vergelijking met Adobe Experience Manager 6.5 Forms (On-Premise en Adobe-Beheerde Dienst) milieu&#39;s. Voordat u naar de service gaat migreren, [Meer informatie over deze opmerkelijke wijzigingen](notable-changes.md) en de [verschillen op functieniveau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report) om te beslissen over migratie op basis van functies die uw organisatie nodig heeft.
 
 
 
@@ -64,10 +64,10 @@ Om een soepele overgang van AEM Forms 6.5 naar AEM as a Cloud Service omgeving t
 
   ![Droog resultaat](assets/enable-add-on.png)
 
-* In een Cloud Service-omgeving werkt het migratiehulpprogramma samen met het Hulpprogramma voor het toewijzen van gebruikersgegevens en het gereedschap voor het overbrengen van inhoud. Het migratiehulpprogramma maakt [!DNL AEM Forms] elementen die compatibel zijn met Cloud Service en het gereedschap voor inhoudsoverdracht migreren de inhoud van uw [!DNL AEM Forms] milieu aan een [!DNL AEM] as a Cloud Service omgeving. Voordat u het migratiehulpprogramma gaat gebruiken, moet u het proces van [verplaatsen naar AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Het proces heeft twee gereedschappen:
-   * [Gereedschap Toewijzing gebruiker](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration): Met het gereedschap Toewijzing gebruiker kunt u uw gebruikers toewijzen met de bijbehorende Adobe IMS-gebruikersaccounts.
+* In een Cloud Service-omgeving werkt het migratiehulpprogramma samen met het Hulpprogramma voor het toewijzen van gebruikersgegevens en het gereedschap voor het overbrengen van inhoud. Het migratiehulpprogramma maakt [!DNL AEM Forms] elementen die compatibel zijn met Cloud Service en het gereedschap voor inhoudsoverdracht migreren de inhoud van uw [!DNL AEM Forms] milieu aan [!DNL AEM] as a Cloud Service omgeving. Voordat u het migratiehulpprogramma gaat gebruiken, moet u het proces van [verplaatsen naar AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Het proces heeft twee gereedschappen:
+   * [Gereedschap Gebruiker toewijzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration): Met het gereedschap Toewijzing gebruiker kunt u uw gebruikers toewijzen met de bijbehorende Adobe IMS-gebruikersaccounts.
    * [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration): Met het gereedschap Inhoud overbrengen kunt u inhoud voorbereiden en overbrengen van een bestaande omgeving naar een Cloud Service-omgeving. Hiermee kunnen gebruikers eenvoudig upgraden van AEM Forms naar de cloud-omgeving.
-* Accounts met beheerdersrechten op [!DNL AEM Forms] as a Cloud Service en lokaal [!DNL AEM Forms] milieu.
+* Accounts met beheerdersrechten op [!DNL AEM Forms] as a Cloud Service en uw lokale [!DNL AEM Forms] milieu.
 * Download en installeer Best Practice Analyzer, Content Transfer Tool en [!DNL AEM Forms] Hulpprogramma voor migratie van [Software Distribution Portal.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
 
 * Voer de [Analysator van best practices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) en verhelpt u het gerapporteerde probleem. Voor de mogelijke problemen met betrekking tot de migratie van Adobe Experience Manager Forms naar Adobe Experience Manager Forms as a Cloud Service gaat u naar [AEM Patroondetectie voor Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#viewing-report).
@@ -80,7 +80,7 @@ Om een soepele overgang van AEM Forms 6.5 naar AEM as a Cloud Service omgeving t
 
 ## Migreren [!DNL AEM 6.5 Forms] activa aan AEM Cloud Service {#use-the-migration-utility}
 
-Voer de volgende stappen uit om uw [!DNL AEM Forms] activa die verenigbaar zijn met de Cloud Service en deze overdragen aan een [!DNL AEM] as a Cloud Service omgeving.
+Voer de volgende stappen uit om uw [!DNL AEM Forms] activa die verenigbaar zijn met de Cloud Service, en deze overdragen aan een [!DNL AEM] as a Cloud Service omgeving.
 
 1. Een [klonen](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/qaq-p/363487) van uw bestaande [!DNL AEM Forms] milieu.
 
@@ -90,7 +90,7 @@ Voer de volgende stappen uit om uw [!DNL AEM Forms] activa die verenigbaar zijn 
 
 1. Meld u met beheerdersrechten aan bij uw gekloonde omgeving.
 
-1. Voer de [Gereedschap Toewijzing gebruiker](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) om uw gebruikers toe te wijzen aan de overeenkomstige Adobe IMS-gebruikersaccounts. Adobe IMS-gebruikersaccounts moeten zich aanmelden bij een [!DNL AEM Forms] as a Cloud Service instantie.
+1. Voer de [Gereedschap Gebruiker toewijzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) om uw gebruikers toe te wijzen aan de overeenkomstige Adobe IMS-gebruikersaccounts. Adobe IMS-gebruikersaccounts moeten zich aanmelden bij een [!DNL AEM Forms] as a Cloud Service instantie.
 
 1. Download en installeer de [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) en [!DNL AEM Forms] as a Cloud Service migratiehulpprogramma van [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) over de gekloonde omgeving. U kunt AEM Package Manager gebruiken om het hulpmiddel en het nut te installeren.
 
@@ -105,13 +105,13 @@ Voer de volgende stappen uit om uw [!DNL AEM Forms] activa die verenigbaar zijn 
 
 1. Gebruik de optie een voor een om uw [!DNL AEM Forms] activa die verenigbaar zijn met [!DNL AEM] as a Cloud Service:
 
-   1. Tikken **[!UICONTROL AEM Forms Assets Migration]** en tikt u in het volgende scherm op **[!UICONTROL Start Migration]**. Het maakt Adaptieve Forms en thema&#39;s op uw [!DNL AEM Forms] omgeving die compatibel is met [!DNL AEM] as a Cloud Service .
+   1. Tikken **[!UICONTROL AEM Forms Assets Migration]** en tikt u op het volgende scherm **[!UICONTROL Start Migration]**. Het maakt Adaptieve Forms en thema&#39;s op uw [!DNL AEM Forms] milieu verenigbaar met [!DNL AEM] AS A CLOUD SERVICE .
 
-   1. Tikken **[!UICONTROL Adaptive Forms Custom Components Migration]** en tikt u op de pagina Custom Components Migration op **[!UICONTROL Start Migration]**. Elke aangepaste component die is ontwikkeld voor Adaptive Forms en componentoverlays op uw [!DNL AEM Forms] omgeving die compatibel is met [!DNL AEM] as a Cloud Service .
+   1. Tikken **[!UICONTROL Adaptive Forms Custom Components Migration]** en tikken op de pagina Custom Components Migration **[!UICONTROL Start Migration]**. Elke aangepaste component die is ontwikkeld voor Adaptive Forms en componentoverlays op uw [!DNL AEM Forms] milieu verenigbaar met [!DNL AEM] AS A CLOUD SERVICE .
 
-   1. Tikken **[!UICONTROL Adaptive Forms Template Migration]** en tikt u op de pagina Custom Components Migration op **[!UICONTROL Start Migration]**. Er worden adaptieve formuliersjablonen gemaakt op `/apps` of `/conf` en gemaakt met AEM Sjablooneditor die compatibel is met [!DNL AEM] as a Cloud Service .
+   1. Tikken **[!UICONTROL Adaptive Forms Template Migration]** en tikken op de pagina Custom Components Migration **[!UICONTROL Start Migration]**. Er worden adaptieve formuliersjablonen gemaakt op `/apps` of `/conf` en gemaakt met AEM Sjablooneditor die compatibel is met [!DNL AEM] AS A CLOUD SERVICE .
 
-   1. Tikken **[!UICONTROL AEM Forms Cloud Configurations Migration]** en tikt u vervolgens op de pagina Configuration Migration **[!UICONTROL Start Migration]**. De volgende Cloud Services worden bijgewerkt en naar een nieuwe locatie verplaatst:
+   1. Tikken **[!UICONTROL AEM Forms Cloud Configurations Migration]** en tikt u vervolgens op de pagina Configuration Migration **[!UICONTROL Start Migration]**. De volgende Cloud Servicen worden bijgewerkt en naar een nieuwe locatie verplaatst:
 
       * Cloud Service formuliergegevensmodel
       * Google reCAPTCHA Cloud Service
@@ -120,7 +120,7 @@ Voer de volgende stappen uit om uw [!DNL AEM Forms] activa die verenigbaar zijn 
 
    1. Tikken **[!UICONTROL Code Editor Script Migration]**, geeft u een locatie op waar herbruikbare functies moeten worden opgeslagen en tikt op **[!UICONTROL Start Migration].
 
-   De Cloud Service steunt geen manuscripten van de regelredacteur. De **[!UICONTROL Code editor script migration]** het hulpmiddel zet alle regelmanuscripten op uw milieu in herbruikbare functies om en past de herbruikbare functies op visuele redacteur op aangewezen plaats toe. Deze herbruikbare functies worden opgeslagen in de vorm van clientbibliotheken en zorgen ervoor dat de bestaande functionaliteit behouden blijft. Het gereedschap past automatisch de gegenereerde herbruikbare functies toe op de overeenkomstige adaptieve Forms.
+   De Cloud Service ondersteunt geen regeleditorscripts. De **[!UICONTROL Code editor script migration]** het hulpmiddel zet alle regelmanuscripten op uw milieu in herbruikbare functies om en past de herbruikbare functies op visuele redacteur op aangewezen plaats toe. Deze herbruikbare functies worden opgeslagen in de vorm van clientbibliotheken en zorgen ervoor dat de bestaande functionaliteit behouden blijft. Het gereedschap past automatisch de gegenereerde herbruikbare functies toe op de overeenkomstige adaptieve Forms.
 
    AEM de migratie van formulieren naar de Cloud Service [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) om de herbruikbare functies (Clientbibliotheken) naar een pakket te exporteren.
 
@@ -128,14 +128,14 @@ Voer de volgende stappen uit om uw [!DNL AEM Forms] activa die verenigbaar zijn 
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Voer de [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Terwijl het specificeren van parameters op **[!UICONTROL Create Migration Set]** het scherm, specificeer de weg van Adaptive Forms, thema&#39;s, malplaatjes, de Modellen van de Gegevens van de Vorm, Cloud Services, de Componenten van de Douane en andere AEM Forms-specifieke activa aan het **[!UICONTROL Paths to be included]** optie. Opgegeven [!DNL AEM Forms] te migreren elementen.
+1. Voer de [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Terwijl het specificeren van parameters op **[!UICONTROL Create Migration Set]** het scherm, specificeer de weg van Adaptive Forms, thema&#39;s, malplaatjes, de Modellen van de Gegevens van de Vorm, Cloud Servicen, de Componenten van de Douane en andere AEM Forms-specifieke activa aan het **[!UICONTROL Paths to be included]** -optie. Opgegeven [!DNL AEM Forms] te migreren elementen.
 
 ## Paden van verschillende AEM Forms-specifieke activa
 
 Wanneer u van AEM Forms 6.5 naar de cloudservice migreert, kunt u de AEM Forms-specifieke middelen vinden op:
 
-* **Adaptieve Forms**: U vindt adaptieve formulieren op `/content/dam/formsanddocuments/`en `/content/forms/af`. Voeg bijvoorbeeld paden toe voor een adaptief formulier met de naam WKND-registratie `/content/dam/formsanddocuments/wknd-registration` en `/content/forms/af/wknd-registration`.
-* **Formuliergegevensmodel**: U kunt alle modellen van de Gegevens van het Vorm vinden bij `/content/dam/formsanddocuments-fdm`. Bijvoorbeeld, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **Adaptieve Forms**: U kunt Adaptieve formulieren vinden op `/content/dam/formsanddocuments/`en `/content/forms/af`. Voeg bijvoorbeeld paden toe voor een adaptief formulier met de naam WKND-registratie `/content/dam/formsanddocuments/wknd-registration` en `/content/forms/af/wknd-registration`.
+* **Formuliergegevensmodel**: U kunt alle modellen van de Gegevens van de Vorm vinden bij `/content/dam/formsanddocuments-fdm`. Bijvoorbeeld, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Clientbibliotheken**: Het standaardpad van clientbibliotheken is `/etc/clientlibs/fd/theme`.
 
@@ -145,9 +145,9 @@ Wanneer u van AEM Forms 6.5 naar de cloudservice migreert, kunt u de AEM Forms-s
 
 * **Cloudconfiguraties**: U vindt Cloud Configurations op `/conf/`. De cloudconfiguratie van het formuliergegevensmodel bevindt zich bijvoorbeeld op `/conf/global/settings/cloudconfigs/fdm`.
 
-* **Workflowmodel**: U vindt AEM workflowmodellen op `/conf/global/settings/workflow/models/`. Bijvoorbeeld voor een workflowmodel met de naam WKND-registratie: pad toevoegen `/conf/global/settings/workflow/models/wknd-registration`
+* **Workflowmodel**: U kunt AEM workflowmodellen vinden op `/conf/global/settings/workflow/models/`. Bijvoorbeeld voor een workflowmodel met de naam WKND-registratie: pad toevoegen `/conf/global/settings/workflow/models/wknd-registration`
 
-U kunt hieronder vermelde mappaden op het hoogste niveau toevoegen of specifieke mappaden zoals hieronder beschreven. Hiermee kunt u een bepaald middel en alle elementen en formulieren tegelijk migreren wanneer u vanaf AEM formulieren 6.5 een upgrade naar de cloudservice uitvoert.
+U kunt hieronder vermelde mappaden op het hoogste niveau toevoegen of specifieke mappaden zoals hieronder beschreven. Hiermee kunt u een bepaald middel en alle elementen en formulieren tegelijk migreren wanneer u een upgrade uitvoert naar de cloudservice van AEM formulieren 6.5.
 
 * `/content/dam/formsanddocuments-fdm`
 * `/content/dam/formsanddocuments/themes`

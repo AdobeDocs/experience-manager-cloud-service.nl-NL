@@ -1,15 +1,15 @@
 ---
-title: Experience Manager [!DNL Forms] Batchverwerking voor as a Cloud Service communicatie
+title: AEM Forms as a Cloud Service Communicatie Batch-verwerking
 description: Hoe te om merkgeoriënteerde en gepersonaliseerde mededelingen tot stand te brengen?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
 
-# Batchverwerking gebruiken
+# AEM Forms as a Cloud Service Communicatie Batch-verwerking
 
 Met communicatiemiddelen kunt u merkgeoriënteerde en gepersonaliseerde communicatie maken, samenstellen en leveren, zoals zakelijke correspondentie, documenten, instructies, claimverwerkingsbrieven, aankondigingen van voordelen, aanvraagverwerkingsbrieven, maandelijkse facturen en welkomstkits. U kunt Communicatie APIs gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, DPL, IPL, en ZPL formaten te produceren.
 

@@ -1,14 +1,12 @@
 ---
-title: Een adaptief formulier (Core Components) toevoegen of maken op de AEM Sites-pagina
-seo-title: How to add or create an Adaptive Form (Core Components) to an AEM Sites page?
+title: Een adaptief formulier maken of toevoegen met de AEM Sites Editor
 description: U kunt een formulier met Adaptief formulier (Core Components) op een AEM Sites-pagina invullen en verzenden zonder de AEM Sites-pagina's te verlaten.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
