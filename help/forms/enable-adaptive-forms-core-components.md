@@ -5,15 +5,15 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
 
 
-# Adaptieve Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Adaptieve Forms Core-componenten inschakelen {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |

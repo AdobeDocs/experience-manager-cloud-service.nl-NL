@@ -1,16 +1,16 @@
 ---
-title: Elektronische handtekeningen toepassen op een formulier met scripthandtekeningen
+title: Een formulier elektronisch ondertekenen met scripthandtekeningen
 description: Formulieren ondertekenen met behulp van krabbelen
 seo-description: Signing forms using scribble
 topic-tags: author
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
 
-# Elektronische handtekeningen toepassen op een formulier met scripthandtekeningen{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# Een formulier elektronisch ondertekenen met scripthandtekeningen{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 <span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 

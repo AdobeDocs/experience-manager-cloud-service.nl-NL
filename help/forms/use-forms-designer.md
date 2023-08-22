@@ -1,15 +1,15 @@
 ---
-title: Forms Designer gebruiken om DOR-sjablonen en formulierfragmenten te maken
+title: AEM Forms Designer gebruiken
 description: Gebruiken [!DNL AEM Forms] ontwerper om Document met Record-sjablonen te maken.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
-# Forms Designer gebruiken om DoR-sjablonen (Document of Record) en formulierfragment te maken {#install-designer}
+# AEM Forms Designer gebruiken {#install-designer}
 
 Designer is een toepassing waarmee u eenvoudig grafische formulieren kunt ontwerpen en waarmee u eenvoudig XDP-formuliersjablonen kunt maken. U kunt een formuliersjabloon ontwerpen, de logica ervan definiëren en aan strikte wettelijke vereisten voldoen. Deze sjabloonserver als een Document of Record-sjabloon voor een adaptief formulier. Deze formuliersjablonen verschillen van [Aangepaste formuliersjablonen](template-editor.md).
 
