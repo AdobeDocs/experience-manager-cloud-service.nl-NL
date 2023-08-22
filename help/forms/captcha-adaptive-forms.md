@@ -2,21 +2,24 @@
 title: reCAPTCHA gebruiken in Adaptive Forms
 description: Leer hoe u de Google reCAPTCHA-service configureert in Adaptive Forms.
 topic-tags: adaptive_forms, author
-source-git-commit: b4665d0291ee1223e46c8ecf13ca13ea336107d3
+source-git-commit: ad63083016f0f8c51ea336e37461562e61c02a8f
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1852'
 ht-degree: 0%
 
 ---
 
 # reCAPTCHA gebruiken in Adaptive Forms{#using-reCAPTCHA-in-adaptive-forms}
 
+<span class="preview"> Dit is een pre-release functie die toegankelijk is via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
 
@@ -81,7 +84,7 @@ Zodra de reCAPTCHA Enterprise-service is ingeschakeld, is deze beschikbaar voor 
 
 1. Configureer de cloudservice voor reCAPTCHA v2.
 
-   1. Ga naar de AEM ![gereedschappen-1](assets/tools-1.png) > **Cloud Services**.
+   1. Ga naar de AEM ![gereedschappen-1](assets/tools-1.png) > **Cloud Servicen**.
    1. Tik op **[!UICONTROL reCAPTCHA]**. De pagina Configurations wordt geopend. Selecteer de configuratiecontainer die u hebt gemaakt en tik op **[!UICONTROL Create]**.
    1. Versie selecteren als [!DNL reCAPTCHA v2] , specificeer Naam, de sleutel van de Plaats, en Geheime Sleutel voor de dienst reCAPTCHA (Verkregen in Stap 1) en tik **[!UICONTROL Create]** om de configuratie van de cloudservice te maken.
    1. Geef in het dialoogvenster Component bewerken de site en de geheime sleutels op die in stap 1 zijn verkregen. Tikken **[!UICONTROL Save Settings]** en tikt u vervolgens op **OK** de configuratie voltooien.
