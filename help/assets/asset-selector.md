@@ -4,7 +4,7 @@ description: Gebruik de functie Asset Selector om de metagegevens en vertoningen
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: dd923ae9d63f1ca1379d8e177ff7b00648da052a
 workflow-type: tm+mt
 source-wordcount: '2361'
 ht-degree: 0%
@@ -44,6 +44,7 @@ Voer de volgende taken uit om Asset Selector te integreren en te gebruiken in uw
 U kunt alle [!DNL Adobe] of niet-Adobe [!DNL Experience Manager Assets] als [!DNL Cloud Service] opslagplaats en selecteer elementen vanuit de toepassing.
 
 De integratie gebeurt door het pakket Asset Selector te importeren en verbinding te maken met de middelen die zijn as a Cloud Service met de Vanilla JavaScript-bibliotheek. U moet een `index.html` of een geschikt bestand in uw toepassing naar -
+
 * De verificatiedetails definiëren
 * Toegang krijgen tot de as a Cloud Service gegevensopslagruimte
 * De weergave-eigenschappen voor de middelenkiezer configureren
@@ -73,6 +74,7 @@ You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken
 -->
 
 Definieer de vereisten in het dialoogvenster `index.html` bestand of een vergelijkbaar bestand in de implementatie van de toepassing om de verificatiegegevens te definiëren voor toegang tot het [!DNL Experience Manager Assets] als [!DNL Cloud Service] opslagplaats. Voorwaarden zijn:
+
 * imsOrg
 * imsToken
 * apikey
@@ -105,7 +107,7 @@ Middelen Kiezers zijn beschikbaar via beide ESM CDN (bijvoorbeeld [esm.sh](https
 In browsers die **UMD-versie** (aanbevolen):
 
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
   const { renderAssetSelector } = PureJSSelectors;
@@ -116,14 +118,14 @@ In browsers met `import maps` ondersteuning gebruiken **ESM CDN-versie**:
 
 ```
 <script type="module">
-  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 In Deno/Webpack Module Federation met **ESM CDN-versie**:
 
 ```
-import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### Geselecteerd elementtype {#selected-asset-type}
@@ -526,7 +528,7 @@ De Kiezer van activa verstrekt ook uit-van-de-doos filteropties om uw onderzoeks
 * `MIME type`: omvat JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
 * `Image Size`: inclusief minimale/maximale breedte, minimale/maximale hoogte van afbeelding
 
-![spoorstaafvoorbeeld](assets/filters-asset-selector.png)
+  ![spoorstaafvoorbeeld](assets/filters-asset-selector.png)
 
 ### Aangepaste zoekopdracht
 
