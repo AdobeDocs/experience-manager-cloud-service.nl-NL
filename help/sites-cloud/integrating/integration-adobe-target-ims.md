@@ -2,9 +2,9 @@
 title: IMS-configuratie voor gebruik bij integratie met Adobe Target
 description: Meer informatie over IMS Configuration voor gebruik bij Integratie met Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 155b24c4b46e8baebd6215c0717d9f2adde95017
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '883'
 ht-degree: 1%
 
 ---
@@ -23,9 +23,9 @@ Voor de integratie van AEM met Adobe Target via de Target Standard API is de con
 
 Voordat u met deze procedure begint:
 
-* [Adobe-ondersteuning](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) moet je account opgeven voor:
+* [Ondersteuning voor Adobe](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) moet je account opgeven voor:
 
-   * Adobe-console
+   * Adobe Console
    * Adobe Developer Console
    * Adobe Target en
    * Adobe IMS (Identity Management-systeem)
@@ -38,7 +38,7 @@ Voordat u met deze procedure begint:
 
 ## Een IMS-configuratie configureren - Een openbare sleutel genereren {#configuring-an-ims-configuration-generating-a-public-key}
 
-De eerste fase van de configuratie is het creëren van een Configuratie IMS in AEM en het produceren van de Openbare Sleutel.
+De eerste fase van de configuratie is een Configuratie IMS in AEM te creëren en de Openbare Sleutel te produceren.
 
 1. In AEM opent u de **Gereedschappen** -menu.
 1. In de **Beveiliging** sectie selecteren **Adobe IMS-configuraties**.
@@ -64,6 +64,12 @@ Adobe Developer Console Project (integratie) met Adobe Target dat AEM gebruiken,
 ### Het project maken {#creating-the-project}
 
 Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM gebruiken:
+
+>[!CAUTION]
+>
+>Momenteel ondersteunen we alleen de **Serviceaccount (JWT)** referentietype.
+>
+>Gebruik de **OAuth Server-to-Server** type referentie, dat in de toekomst zal worden gesteund.
 
 1. Open de Adobe Developer-console voor projecten:
 
@@ -126,7 +132,7 @@ U moet nu de vereiste rechten toewijzen aan de integratie:
 
    * [https://adminconsole.adobe.com](https://adminconsole.adobe.com/)
 
-1. Navigeren naar **Producten** (bovenste werkbalk) selecteert u vervolgens **Adobe Target - &lt;*uw huurder*>** (in het linkerdeelvenster).
+1. Navigeren naar **Producten** (bovenste werkbalk) selecteert u vervolgens **ADOBE TARGET - &lt;*uw huurder*>** (in het linkerdeelvenster).
 1. Selecteren **Productprofielen**, dan uw vereiste werkruimte uit de gepresenteerde lijst. Bijvoorbeeld de standaardwerkruimte.
 1. Selecteren **API-referenties**, dan de vereiste integratieconfiguratie.
 1. Selecteren **Editor** als de **Productrol**; in plaats van **Waarnemer**.
@@ -161,8 +167,8 @@ Terugkeren naar AEM kunt u de IMS-configuratie voltooien door vereiste waarden v
 
    * **Titel**: Uw tekst.
    * **Autorisatieserver**: Kopieer/plak deze vanuit de `aud` lijn van de **Payload** hieronder, bijvoorbeeld `https://ims-na1.adobelogin.com` in het onderstaande voorbeeld
-   * **API-sleutel**: Dit kopiëren vanuit het project [Overzicht](#details-stored-for-the-ims-integration-project) sectie
-   * **Clientgeheim**: Dit genereren in het project [Overzicht](#details-stored-for-the-ims-integration-project) en kopiëren
+   * **API-sleutel**: Kopieer dit uit het project [Overzicht](#details-stored-for-the-ims-integration-project) sectie
+   * **Clientgeheim**: Genereer dit in het project [Overzicht](#details-stored-for-the-ims-integration-project) en kopiëren
    * **Payload**: Kopieer deze van de [JWT genereren](#details-stored-for-the-ims-integration-project) sectie
 
    ![Configuratie technische account van Adobe IMS](assets/integrate-target-ims-10.png)
