@@ -3,9 +3,9 @@ title: Hoe kan ik Adaptief-formuliergegevens verbinden en verzenden naar Microso
 description: Een stapsgewijze gids voor het maken van een verbinding en het verzenden van Adaptief formulier naar Microsoft&reg; Power Automate.
 keywords: Adaptive Forms Microsoft Power Automate, Adaptive Forms data verzenden naar Microsoft Power Automate
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1098'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Na u [Sluit uw as a Cloud Service Forms-exemplaar aan met Microsoft® Power Auto
 1. Meld u aan bij de instantie van uw auteur, selecteer het adaptieve formulier en klik op **[!UICONTROL Properties]**.
 1. In de Container van de Configuratie, doorblader en selecteer de container die in sectie wordt gecreeerd [Microsoft® Power Automated Dataverse Cloud Configuration maken](#microsoft-power-automate-dataverse-cloud-configuration)en tikken **[!UICONTROL Save and Close]**.
 1. Open het adaptieve formulier voor bewerking en navigeer naar **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren.
-1. In de eigenschappencontainer, voor **[!UICONTROL Submit Actions]** Selecteer de **[!UICONTROL Invoke a Power Automate flow]** -optie. Er wordt een lijst met beschikbare stroomstromen voor automatisering beschikbaar **[!UICONTROL Power Automate flow]** -optie. Selecteer de vereiste stroom en de Adaptieve Forms-gegevens worden bij verzending naar de server verzonden.
+1. In de eigenschappencontainer, voor **[!UICONTROL Submit Actions]** Selecteer de **[!UICONTROL Invoke a Power Automate flow]** en selecteert u een **[!UICONTROL Power Automate flow]**. Selecteer de vereiste stroom en de Adaptieve Forms-gegevens worden bij verzending naar de server verzonden.
 
    ![Verzendhandeling configureren](assets/submission.png)
 
