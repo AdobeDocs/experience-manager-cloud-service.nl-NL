@@ -1,13 +1,10 @@
 ---
-title: Installatie en configuratie van problemen oplossen
-seo-title: Troubleshooting installation and configuration
-description: Installatie en configuratie van problemen oplossen
-seo-description: Troubleshooting installation and configuration
+title: De installatie en de Cloud Service van het oplossen van problemen
+description: Hoe te om installatie en configuratie verwante kwesties voor as a Cloud Service AEM Forms problemen op te lossen?
 contentOwner: khsingh
-exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -27,7 +24,7 @@ Om het **[!UICONTROL Forms]** optie:
 1. Aanmelden bij de [Cloud Manager](https://experience.adobe.com/)
 1. Zoek uw programma en klik op de knop ![Forms-optie is niet beschikbaar](assets/Smock_Edit_18_N.svg) pictogram. Hiermee wordt de pagina Programma bewerken voor uw programma geopend.
 1. Open de **[!UICONTROL Solutions & Add-ons]** tab.
-1. Selecteer **[!UICONTROL Forms]** en klik op **[!UICONTROL Save]**.
+1. Selecteer de **[!UICONTROL Forms]** en klik op **[!UICONTROL Save]**.
 
    ![Selecteer de optie Forms](assets/installation-configuration-select-forms-option.png)
 1. [Maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) en [run](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) zowel productiepijpleidingen als niet-productiepijpleidingen.

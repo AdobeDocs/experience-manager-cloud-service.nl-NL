@@ -1,10 +1,9 @@
 ---
 title: Aangepaste lettertypen gebruiken
-description: Aangepaste lettertypen gebruiken
-exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+description: Leer aangepaste lettertypen toe te voegen aan een as a Cloud Service Forms-omgeving.
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -25,12 +24,12 @@ U kunt [een lettertype insluiten](https://adobedocs.github.io/experience-manager
 
 Aangepaste lettertypen toevoegen aan uw Cloud Service-omgeving:
 
-1. De instellingen en openen [lokaal ontwikkelingsproject](setup-local-development-environment.md). U kunt elke gewenste IDE gebruiken.
+1. De instellingen en openen de [lokaal ontwikkelingsproject](setup-local-development-environment.md). U kunt elke gewenste IDE gebruiken.
 1. Maak in de mapstructuur op hoofdniveau van het project een map (module) waarin u aangepaste lettertypen kunt opslaan en aangepaste lettertypen kunt toevoegen aan de map. Bijvoorbeeld lettertypen/src/main/resources
    ![Map Fonts](assets/fonts.png)
 
 1. Open het bestand pom.xml in de module Fonts van het ontwikkelingsproject.
-1. Voeg jar plugin aan het pomdossier toe:
+1. Voeg jar plug-in toe aan het pombestand:
 
    ```xml
    <plugin>

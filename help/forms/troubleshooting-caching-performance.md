@@ -1,13 +1,10 @@
 ---
 title: Problemen met prestaties in cache oplossen
-seo-title: Troubleshooting caching performance
-description: Problemen met prestaties in cache oplossen
-seo-description: Troubleshooting caching performance
+description: Hoe te om caching verwante kwesties voor as a Cloud Service AEM Forms problemen op te lossen?
 contentOwner: khsingh
-exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -18,7 +15,7 @@ U kunt enkele van de volgende problemen tegenkomen tijdens het configureren of g
 
 ## Sommige Adaptive Forms-afbeeldingen of video&#39;s worden niet automatisch ongeldig gemaakt in de Dispatcher-cache {#images-videos-not-invalidated}
 
-U kunt afbeeldingen of video&#39;s vanuit de middelenbrowser selecteren en toevoegen aan een adaptief formulier. Wanneer deze afbeeldingen worden bewerkt in de Middelen-editor, wordt de versie in de cache van een adaptief formulier met dergelijke afbeeldingen niet ongeldig gemaakt. In het adaptieve formulier worden nog steeds oudere afbeeldingen weergegeven.
+U kunt afbeeldingen of video&#39;s vanuit de middelenbrowser selecteren en toevoegen aan een adaptief formulier. Wanneer deze afbeeldingen worden bewerkt in de middeleneditor, wordt de versie in de cache van een adaptief formulier met dergelijke afbeeldingen niet ongeldig gemaakt. In het adaptieve formulier worden nog steeds oudere afbeeldingen weergegeven.
 
 Als u dit probleem wilt oplossen, maakt u na publicatie van de afbeeldingen en video de publicatie van de Adaptive Forms die naar deze elementen verwijzen, expliciet ongedaan en publiceert u deze.
 
