@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: c6186e549a9ef2aebddb4925cf84289aa7f7e662
+source-git-commit: 6b4fa2802b860c938f5085f047cc880f29698f3e
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13206 same
 - FORMS-10444: Adaptieve Forms-sjablonen - Sjablonen kunnen niet worden gepubliceerd (tijdelijke oplossing: distributieconsole gebruiken).
 - CQ-4354191: Workflows - Aangepaste opstartcher kan vele malen worden geactiveerd vanwege replicatiemetagegevens die aanwezig zijn op nt:ungestructureerde knooppunten (workaround: updatedetectoren om eigenschappen van replicatiemetagegevens uit te sluiten om overlapping te voorkomen).
 - SITES-15622: GraphQL - Issue with persisted query with number &amp; boolean parameters.
+- SITES-15654: GraphQL - Issues with union and properties of same name.
 
 ### Ingesloten technologieën {#embedded-tech-13206}
 
