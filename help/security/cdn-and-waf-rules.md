@@ -1,9 +1,9 @@
 ---
 title: Het vormen CDN en de Regels van WAF aan het Verkeer van de Filter
 description: Gebruik CDN en de Regels van de Firewall van de Toepassing van het Web om Kwaadwillig Verkeer te filtreren
-source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
+source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2391'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Deze functie is nog niet algemeen beschikbaar. E-mail voor deelname aan het lopende programma voor vroegtijdige adoptie **aemcs-waf-adopter@adobe.com**, inclusief de naam van uw organisatie en context over uw interesse in de functie.
 
-Adobe probeert om aanvallen tegen klantenwebsites te verlichten, maar het kan nuttig zijn om verzoeken proactively te filtreren die bepaalde patronen aanpassen zodat het kwaadwillige verkeer uw toepassing niet bereikt. Mogelijke benaderingen zijn:
+De Adobe probeert om aanvallen tegen klantenwebsites te verlichten, maar het kan nuttig zijn om verzoeken proactively te filtreren die bepaalde patronen aanpassen zodat het kwaadwillige verkeer uw toepassing niet bereikt. Mogelijke benaderingen zijn:
 
 * Apache-laagmodules zoals `mod_security`
 * Het vormen regels die aan CDN via de configuratiepijplijn van de Manager van de Wolk worden opgesteld.
@@ -23,7 +23,7 @@ Adobe probeert om aanvallen tegen klantenwebsites te verlichten, maar het kan nu
 In dit artikel wordt de laatste aanpak beschreven, die twee categorieën regels omvat:
 
 1. **CDN-regels**: blok of sta verzoeken toe die op verzoekeigenschappen en verzoekkopballen, met inbegrip van IP, wegen, en gebruikersagent worden gebaseerd. Deze regels kunnen door alle AEM as a Cloud Service klanten worden gevormd
-1. **WAF** (De Firewall van de Toepassing van het Web) regels: blokverzoeken die diverse patronen aanpassen die om met kwaadwillig verkeer worden gekend worden geassocieerd. Deze regels kunnen worden geconfigureerd door klanten die een licentie voor de WAF-invoegtoepassing hebben; neem contact op met uw Adobe-accountteam voor meer informatie. Let op: er is geen extra licentie vereist tijdens het programma voor vroege adoptie.
+1. **WAF** (De Firewall van de Toepassing van het Web) regels: blokverzoeken die diverse patronen aanpassen die om met kwaadwillig verkeer worden gekend worden geassocieerd. Deze regels kunnen worden gevormd door klanten die WAF toe:voegen-op vergunning geven; contacteer uw de rekeningsteam van de Adobe voor details. Let op: er is geen extra licentie vereist tijdens het programma voor vroege adoptie.
 
 Deze regels kunnen worden toegepast om omgevingstypen voor werkruimten, werkruimten en prod-wolken te ontwikkelen, voor productieprogramma&#39;s (niet-sandbox). Ondersteuning voor RDE-omgevingen zal in de toekomst beschikbaar zijn.
 
@@ -282,7 +282,7 @@ Voorbeeld 2: Wanneer het verzoektarief 10 verzoeken per seconde in 10 seconden o
 
 ## CDN-logs {#cdn-logs}
 
-AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen CDN en de regels van WAF nuttig zijn. CDN-logboeken worden weergegeven in Cloud Manager **Logbestanden downloaden** wanneer u de service Auteur of Publiceren selecteert.
+AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen van CDN en de regels van WAF nuttig zijn. CDN-logboeken worden weergegeven in Cloud Manager **Logbestanden downloaden** wanneer u de service Auteur of Publiceren selecteert.
 
 De naam van de regel wordt getoond in het regelbezit als het verzoek de regel aanpast, zelfs als de actie &quot;toestaat&quot;is en daarom wordt het verkeer niet geblokkeerd.
 
@@ -310,17 +310,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
 "rid": "974e67f6",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
-"req_mthd": "GET",
-"res_type": "",
+"method": "GET",
+"res_ctype": "",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=path-rule;waf=;action=blocked"
 }
 ```
@@ -329,17 +330,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
-"req_mthd": "GET",
-"res_type": "image/png",
+"method": "GET",
+"res_ctype": "image/png",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=;waf=SQLI;action=blocked"
 }
 ```
@@ -352,15 +354,16 @@ Hieronder vindt u een lijst met veldnamen die in CDN-logbestanden worden gebruik
 |---|---|
 | *tijdstempel* | De tijd waarop de aanvraag is gestart, na beëindiging van TLS |
 | *ttfb* | Afkorting van *Tijd naar eerste byte*. Het tijdinterval tussen het verzoek begon tot het punt alvorens het reactiekarakter begon te worden gestroomd. |
-| *cip* | Het client-IP-adres. |
+| *cli_ip* | Het client-IP-adres. |
+| *cli_country* | Twee letters [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2-landcode voor het land van de cliënt. |
 | *afdanken* | De waarde van de verzoekkopbal die wordt gebruikt om het verzoek uniek te identificeren. |
-| *ua* | De gebruikersagent die verantwoordelijk is voor het indienen van een bepaalde HTTP-aanvraag. |
+| *req_ua* | De gebruikersagent die verantwoordelijk is voor het indienen van een bepaalde HTTP-aanvraag. |
 | *host* | De autoriteit waarvoor het verzoek is bestemd. |
 | *url* | Het volledige pad, inclusief queryparameters. |
-| *req_mthd* | HTTP-methode die door de client wordt verzonden, zoals &quot;GET&quot; of &quot;POST&quot;. |
-| *res_type* | Het inhoudstype dat wordt gebruikt om het oorspronkelijke mediatype van de bron aan te geven |
+| *methode* | HTTP-methode die door de client wordt verzonden, zoals &quot;GET&quot; of &quot;POST&quot;. |
+| *res_ctype* | Het Content-Type dat wordt gebruikt om het oorspronkelijke mediatype van de bron aan te geven. |
 | *cachegeheugen* | Status van de cache. Mogelijke waarden zijn HIT, MISS of PASS |
-| *res_status* | De HTTP-statuscode als een geheel getal. |
-| *res_bsize* | Bodybytes die naar de client worden verzonden in de reactie. |
-| *server* | Datacenter van de CDN-cacheserver. |
+| *status* | De HTTP-statuscode als een geheel getal. |
+| *res_age* | De hoeveelheid tijd (in seconden) dat een reactie in de cache is geplaatst (in alle knooppunten). |
+| *pop* | Datacenter van de CDN-cacheserver. |
 | *regels* | De naam van om het even welke passende regels, voor zowel CDN regels als golfregels.<br><br>Overeenkomende CDN-regels worden weergegeven in de logbestandvermelding voor alle aanvragen naar de CDN, ongeacht of het een CDN-hit, -pass of -miss is.<br><br>Geeft ook aan of de overeenkomst tot een blok heeft geleid. <br><br>Bijvoorbeeld &quot;`cdn=;waf=SQLI;action=blocked`&quot;<br><br>Leeg als geen regels overeenkomen. |
