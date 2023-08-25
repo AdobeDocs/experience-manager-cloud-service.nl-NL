@@ -1,9 +1,9 @@
 ---
 title: Forms Designer downloaden en installeren
 description: Met Forms Designer kunt u XDP- en PDF-formuliersjablonen maken die als sjabloon voor een document met records fungeren. Designer is beschikbaar in het dialoogvenster [!DNL AEM Forms] licentie.
-source-git-commit: 115612a11f43000894c76758b1d2bcb3506f3bcb
+source-git-commit: 3b05d413756a98c034388eb31e752b2448758496
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,12 @@ Designer is een toepassing waarmee u met eenvoudige muisfuncties grafische formu
 
 Als u de nieuwste versie van AEM Forms Designer 64-bits of 32-bits wilt installeren, hebt u de volgende software en minimale hardware nodig voor de installatie en configuratie van Designer:
 
+<!--
 >[!BEGINTABS]
 
->[!TAB 64-bits besturingssysteem (aanbevolen)]
+>[!TAB 64-bit OS (Recommended)] -->
+
++++ 64-bits besturingssysteem (aanbevolen)
 
 * [!DNL Microsoft® Windows® 2016 Server] of [!DNL Microsoft® Windows® 2019 Server], en [!DNL Microsoft® Windows® 10]
 * Minimaal 2 GB RAM
@@ -31,7 +34,9 @@ Als u de nieuwste versie van AEM Forms Designer 64-bits of 32-bits wilt installe
 * Beheerdersrechten voor de installatie van Designer
 * [!DNL Microsoft® Visual C++ 2019] (VC 14.28 of hoger)
 
->[!TAB 32-bits besturingssysteem]
++++
+
++++ 32-bits besturingssysteem
 
 * [!DNL Microsoft® Windows® 2016 Server] of [!DNL Microsoft® Windows® 2019 Server], en [!DNL Microsoft® Windows® 10]
 * Minimaal 1 GB RAM
@@ -42,10 +47,9 @@ Als u de nieuwste versie van AEM Forms Designer 64-bits of 32-bits wilt installe
 * Hardwareversnelling voor video (optioneel)
 * Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
 * Beheerdersrechten voor de installatie van Designer
-* Microsoft® Visual C++ 2019 (VC 14.28 of hoger)
+* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 of hoger)
 
->[!ENDTABS]
-
++++
 
 ## Designer installeren {#install-designer}
 
