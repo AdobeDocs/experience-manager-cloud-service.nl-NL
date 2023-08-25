@@ -3,9 +3,9 @@ title: Doelkiezer voor AEM as a Cloud Service
 description: Met de AEM Doelkiezer kunt u elementen weergeven en selecteren die u als een kopie van het oorspronkelijke element kunt gebruiken.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,7 @@ Voer de volgende taken uit om de Kiezer van de Bestemming met uw te integreren e
 U kunt alle [!DNL Adobe] of niet-Adobe [!DNL Experience Manager Assets] als [!DNL Cloud Service] opslagplaats en selecteer elementen vanuit de toepassing.
 
 De integratie wordt gedaan door het pakket van de Selecteur van de Bestemming in te voeren en met de as a Cloud Service Activa te verbinden gebruikend de bibliotheek Vanilla JavaScript. U moet een `index.html` of een geschikt bestand in uw toepassing naar -
+
 * De verificatiedetails definiëren
 * Toegang krijgen tot de as a Cloud Service gegevensopslagruimte
 * De weergave-eigenschappen voor de doelkiezer configureren
@@ -52,6 +53,7 @@ U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als
 ## Vereisten {#prerequisites}
 
 Definieer de vereisten in het dialoogvenster `index.html` bestand of een vergelijkbaar bestand in de implementatie van de toepassing om de verificatiegegevens te definiëren voor toegang tot het [!DNL Experience Manager Assets] als [!DNL Cloud Service] opslagplaats. Voorwaarden zijn:
+
 * imsOrg
 * imsToken
 * apikey
@@ -62,11 +64,13 @@ Doelkiezer is beschikbaar via beide ESM CDN (bijvoorbeeld [esm.sh](https://esm.s
 
 In browsers die **UMD-versie** (aanbevolen):
 
+In browsers die **UMD-versie** (aanbevolen):
+
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
-  const { renderDestinationSelector } = PureJSSelectors;
+  const { renderAssetSelector } = PureJSSelectors;
 </script>
 ```
 
@@ -74,14 +78,14 @@ In browsers met `import maps` ondersteuning gebruiken **ESM CDN-versie**:
 
 ```
 <script type="module">
-  import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 In Deno/Webpack Module Federation met **ESM CDN-versie**:
 
 ```
-import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### Geselecteerd doel {#selected-destination}
