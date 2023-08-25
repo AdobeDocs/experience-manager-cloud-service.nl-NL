@@ -2,7 +2,7 @@
 title: Ervaringsfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
 workflow-type: tm+mt
 source-wordcount: '2044'
 ht-degree: 4%
@@ -356,14 +356,18 @@ Het fragment aanpassen:
    >De **ContextHub-pad** geselecteerd in het dialoogvenster **Personalisatie** tab:
    >
    >* hetzelfde pad als het pad dat is geconfigureerd voor de pagina waar het fragment wordt gerenderd
-   >Of:
+   >
+   >  Of:
+   >
    >* een weg die een ondergroep van de opslag bevat die in ContextHub wordt bepaald die voor de pagina wordt gevormd
    >
-   > 
-De **Segmentpad** geselecteerd in het dialoogvenster **Personalisatie** tab:
+   >De **Segmentpad** geselecteerd in het dialoogvenster **Personalisatie** tab:
    >
-   * hetzelfde pad als het pad dat is geconfigureerd voor de pagina waar het fragment wordt gerenderd of
-   * een pad dat een subset bevat van de segmenten die voor de pagina zijn geconfigureerd
+   >* hetzelfde pad als het pad dat is geconfigureerd voor de pagina waar het fragment wordt gerenderd
+   >
+   >  of
+   >
+   >* een pad dat een subset bevat van de segmenten die voor de pagina zijn geconfigureerd
 
 ### Doelstelling definiëren voor uw ervaringsfragment {#defining-targeting-experience-fragment}
 
@@ -390,9 +394,9 @@ Details worden getoond in alle weergaven van de console voor **Experience-fragme
 
    >[!CAUTION]
    >
-   Deze tabbladen worden weergegeven wanneer u **Eigenschappen** van de console van de Fragmenten van de Ervaring.
+   >Deze tabbladen worden weergegeven wanneer u **Eigenschappen** van de console van de Fragmenten van de Ervaring.
    >
-   Als u **Eigenschappen opent** tijdens het bewerken van een Experience-fragment, worden de juiste [Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) weergegeven.
+   >Als u **Eigenschappen opent** tijdens het bewerken van een Experience-fragment, worden de juiste [Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) weergegeven.
 
    ![Ervaar fragmenteigenschappen](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -422,7 +426,7 @@ Met de `.plain.` in de URL hebt, kunt u vanuit de browser toegang krijgen tot de
 
 >[!NOTE]
 >
-Hoewel dit direct beschikbaar is in de browser, [het primaire doel is om andere toepassingen (bijvoorbeeld webapps van derden, aangepaste mobiele implementaties) rechtstreeks toegang te geven tot de inhoud van het Experience Fragment, met alleen de URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Hoewel dit direct beschikbaar is in de browser, [het primaire doel is om andere toepassingen (bijvoorbeeld webapps van derden, aangepaste mobiele implementaties) rechtstreeks toegang te geven tot de inhoud van het Experience Fragment, met alleen de URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Fragmenten voor publicatie-ervaring {#publishing-experience-fragments}
 
