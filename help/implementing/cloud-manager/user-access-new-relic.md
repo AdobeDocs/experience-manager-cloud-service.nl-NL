@@ -2,9 +2,9 @@
 title: New Relic One
 description: Meer informatie over de service voor het controleren van de prestaties van New Relic One-toepassingen (APM) voor AEM as a Cloud Service en over hoe u deze service kunt gebruiken.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f695bc891b60d2494b936a43f5c0a729c64628d7
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,12 @@ Voor het toevoegen van gebruikers aan New Relic One gelden de volgende beperking
 * Gebruikers die aan New Relic worden toegevoegd, zijn van het type **Beperkt**, zie [de documentatie van New Relic voor meer informatie.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuen%20who,change)
 * AEM as a Cloud Service biedt alleen de New Relic One APM-oplossing en biedt geen ondersteuning voor waarschuwingen, logboekregistratie of API-integratie.
 
+>[!NOTE]
+>
+>Als er gedurende 90 dagen of langer geen activiteit in uw New Relic One-account wordt gedetecteerd, wordt de APM-agent gestopt.
+>
+>Open een ondersteuningsticket via de [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) als u APM-agent opnieuw wilt inschakelen voor uw AEMaaCS-omgevingen.
+
 Voor meer hulp of extra hulp bij New Relic One-aanbiedingen voor uw AEM as a Cloud Service Programma, open een steunkaartje via [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Veelgestelde vragen over New Relic One {#faqs}
@@ -189,3 +195,7 @@ Terwijl de steun van de Adobe de AEM as a Cloud Service toepassing zal controler
 >[!NOTE]
 >
 >Om beide gegevensreeksen binnen New Relic One te bekijken, moet een gebruiker de juiste toestemmingen hebben en de zelfde login methodologie voor beide rekeningen (Adobe New Relic One en de klant-beheerde rekeningen van New Relic) gebruiken.
+
+### De APM-agent voor mijn New Relic One-account wordt gestopt. Wat is er gebeurd? {#deactivated}
+
+[APM-agents worden gestopt](#limitations) als gedurende 90 dagen of langer geen activiteit wordt gedetecteerd. Open een ondersteuningsticket via de [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) als u APM-agent opnieuw wilt inschakelen voor uw AEMaaCS-omgevingen.

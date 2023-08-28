@@ -2,9 +2,9 @@
 title: Inleiding tot Cloud Manager
 description: Meer informatie over hoe Cloud Manager uw AEM project ondersteunt via programma's, omgevingen en pijpleidingen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: fe2b0eab36a3ecd6c731fe8c9ac23fd4a3175341
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Ga als volgt te werk om naar Cloud Manager te navigeren.
 
 U kunt ook vanuit de startpagina van Adobe Experience Cloud naar de pagina Programma&#39;s en producten van Cloud Manager navigeren door deze stappen uit te voeren.
 
-1. Ga naar Adobe Experience Cloud op [`https://experience.adobe.com`](https://experience.adobe.com) en meld u aan met uw Adobe ID.
+1. Ga naar Adobe Experience Cloud op [`https://experience.adobe.com`](https://experience.adobe.com) en aanmelden met uw Adobe ID.
 
 1. Zorg ervoor dat u zich in de juiste organisatie bevindt door te verwijzen naar de naam van de organisatie die rechtsboven op de werkbalk wordt weergegeven.
 
@@ -51,6 +51,8 @@ U kunt ook vanuit de startpagina van Adobe Experience Cloud naar de pagina Progr
 | Token voor persoonlijke toegang genereren | Toegangsuitrusting |  | x |  | x |
 | RDE maken | Een snelle ontwikkelomgeving maken | x |  |  | x |
 | RDE opnieuw instellen | Een snelle ontwikkelomgeving opnieuw instellen | x |  |  | x |
+| Inhoudssets maken/wijzigen | Een inhoudset maken of wijzigen voor het kopiëren van inhoud |  | x |  |  |
+| Kopie van inhoud starten/annuleren | Een proces voor het kopiëren van inhoud starten of annuleren |  | x |  |  |
 
 >[!NOTE]
 >
@@ -93,7 +95,7 @@ Een AEM-ontwerpservice is inbegrepen in omgevingen waar site-inhoud en digitale 
 
 ### AEM Publishing Service {#publish-services}
 
-Een AEM publicatieservice is inbegrepen in omgevingen waarin de ervaring van de eindgebruiker wordt gehost, zoals op een website. Dit is de service waarmee bezoekers van de site de site kunnen bekijken en communiceren. Doorgaans is de publicatieservice openbaar beschikbaar.
+Een AEM publicatieservice is inbegrepen in omgevingen waarin de ervaring van eindgebruikers wordt ondergebracht, zoals op websites. Dit is de service waarmee bezoekers van de site de site kunnen bekijken en communiceren. Doorgaans is de publicatieservice openbaar beschikbaar.
 
 ### AEM Dispatcher Service {#dispatcher-services}
 
