@@ -1,7 +1,7 @@
 ---
 title: Het vormen CDN en de Regels van WAF aan het Verkeer van de Filter
 description: Gebruik CDN en de Regels van de Firewall van de Toepassing van het Web om Kwaadwillig Verkeer te filtreren
-source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
+source-git-commit: 27165ce7d6259f5b5fc9915349d87f551076389e
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 0%
@@ -265,7 +265,7 @@ Voorbeeld 1: Wanneer de aanvraagsnelheid in de laatste 60 seconden meer dan 100 
 
 ```
 - name: rate-limit-example
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -274,7 +274,7 @@ Voorbeeld 2: Wanneer het verzoektarief 10 verzoeken per seconde in 10 seconden o
 
 ```
 - name: rate-limit-using-defaults
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit:
     limit: 10
