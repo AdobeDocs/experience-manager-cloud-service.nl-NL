@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 385b7708fab15b3f0e8740a0ca2c612b44381742
+source-git-commit: 22ed74b307b9eb4c6c2f72ac2a34e2ab6d30a85c
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '284'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,6 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13239 same
 
 - GRANITE-46784: Voeg optie toe om BeonderAuthenticationHandler onbruikbaar te maken
 - GRANITE-36205: Update internal eak release version to latest
-- GRANITE-43908: Jackson-database-2.13.4.jar sluit kwetsbare colson-database in
 - GRANITE-47059: SSL-bundel van graniet verwijderen
 - ASSETS-26713: Touch UI External Link to New Experience UI Dashboard - Unified-shell-integratie en upgrade die geoptimaliseerd is voor ui-touch
 - SKYOPS-63302: Upgrade com.adobe.granite:com.adobe.granite.auth.saml naar v1.0.54
@@ -39,7 +38,6 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13239 same
 - SKYOPS-63290: Correctie van onjuiste evolutie van emmers
 - SKYOPS-54607: Ratelimiter-serverlaadberekening is niet correct voor een verzoek dat is mislukt
 - ASSETS-27648: ContentModelIT kan uitsluitingsbestanden van andere bundels niet lezen
-- GRANITE-43160: De manager van de Fout van de verkoop beschrijft Content-Type
 - GRANITE-43744: Het stileren Authenticator werkt niet behoorlijk als er wanconfiguratie met authentificatie-vereiste en ijdelingspad is
 - GRANITE-46419: AEM integratieprobleem met Auth0 Idp
 - GRANITE-46292: Okta SAML configuratie werkt niet na AEM Cloud-update
