@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
 workflow-type: tm+mt
-source-wordcount: '5101'
+source-wordcount: '5311'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,21 @@ U kunt de gewenste elementen sneller vinden op de pagina met zoekresultaten met 
 
 ![Zie het geschatte aantal elementen zonder de zoekresultaten te filteren in zoekfacetten.](assets/asset_search_results_in_facets_filters.png)
 
-*Afbeelding: Zie het geschatte aantal elementen zonder de zoekresultaten te filteren in zoekfacetten.*
+*Figuur: Zie het benaderende aantal activa zonder het filtreren onderzoeksresultaten in onderzoeksfacetten.*
+
+Experience Manager Assets geeft standaard facetaantallen voor twee eigenschappen weer:
+
+* Type element (jcr:content/metadata/dc:format)
+
+* Goedkeuringsstatus (jcr:content/metadata/dam:status)
+
+Vanaf augustus 2023 bevat Experience Manager Assets een nieuwe versie 9 van `damAssetLucene` index. De vorige versies, `damAssetLucene-8` en hieronder gebruikt u de `statistical` om toegangsbeheer op een steekproef van de punten voor elke telling van de onderzoeksfacet te controleren.
+
+`damAssetLucene-9` Hiermee wijzigt u het gedrag van het tellen van Oak Query-facetten zodat het toegangsbeheer niet meer wordt geëvalueerd voor de facettellingen die door de onderliggende zoekindex worden geretourneerd. Dit resulteert in snellere zoekresponstijden. Dit heeft tot gevolg dat gebruikers mogelijk waarden voor het aantal facetten krijgen, waaronder elementen waartoe ze geen toegang hebben. Deze gebruikers hebben geen toegang tot, kunnen geen gegevens downloaden van of lezen over deze elementen, inclusief de paden, of kunnen geen verdere informatie over deze elementen krijgen.
+
+Als u naar het vorige gedrag moet schakelen (`statistical` modus), zie [Inhoud zoeken en indexeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) om een aangepaste versie van het dialoogvenster `damAssetLucene-9` index. Adobe adviseert niet overschakeling aan `secure` Deze modus is van invloed op de responstijden van zoekopdrachten met grote resultaatsets.
+
+Voor meer informatie over de facetmogelijkheden van Oak, met inbegrip van een gedetailleerde beschrijving van deze wijzen, zie [dit artikel](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Suggesties zoeken terwijl u typt {#searchsuggestions}
 
@@ -122,7 +136,7 @@ U kunt dit in uw voordeel gebruiken door de positie van bepaalde elementen in de
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*Video: Begrijp hoe de onderzoeksresultaten worden gerangschikt en hoe de rang kan worden beïnvloed.*
+*Video: begrijp hoe zoekresultaten worden gerangschikt en hoe de rang kan worden beïnvloed.*
 
 ## Geavanceerd zoeken {#scope}
 
@@ -142,7 +156,7 @@ Als u afbeeldingen wilt zoeken die visueel lijken op een door de gebruiker gesel
 
 ![Vergelijkbare afbeeldingen zoeken met de optie in de kaartweergave](assets/search_find_similar.png)
 
-*Afbeelding: U kunt vergelijkbare afbeeldingen zoeken met de optie in de kaartweergave.*
+*Afbeelding: vergelijkbare afbeeldingen zoeken met de optie in de kaartweergave.*
 
 ### Adobe Stock-afbeeldingen {#adobe-stock}
 
@@ -170,9 +184,9 @@ U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, z
 | Vervaldatum | verloopt:YYYY-MM-DDTHH |
 | Op tijd | ontime:YYYY-MM-DDTHH |
 | Uit-tijd | offtime:YYYY-MM-DDTHH |
-| Tijdsbereik (verloopt dateontime, offtime) | facetveld: lager gebonden..bovenaan |
+| Tijdsbereik (verloopt dateontime, offtime) | facet field : lowerbound..bovenaan |
 | Pad | /content/dam/&lt;folder name=&quot;&quot;> |
-| PDF-titel | pdftitle:&quot;Adobe-document&quot; |
+| PDF-titel | pdftitle:&quot;Document Adoben&quot; |
 | Onderwerp | onderwerp: &quot;Opleiding&quot; |
 | Tags | tags:&quot;Locatie en reizen&quot; |
 | Type | type:&quot;image\png&quot; |
@@ -180,7 +194,7 @@ U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, z
 | Hoogte van afbeelding | hoogte:ondergrens..bovenaan |
 | Persoon | persoon:John |
 
-De eigenschappen `path`, `limit`, `size`, en `orderby` kan niet worden gecombineerd met `OR` met een andere eigenschap.
+De eigenschappen `path`, `limit`, `size`, en `orderby` kan niet worden gecombineerd `OR` met een andere eigenschap.
 
 <!-- TBD: Where are the limit, size, orderby properties defined?
 -->
@@ -190,20 +204,20 @@ Het sleutelwoord voor een user-generated bezit is zijn gebiedsetiket in de bezit
 Hier volgen enkele voorbeelden van zoekindelingen voor complexe query&#39;s:
 
 * Alle elementen weergeven met meerdere facetvelden (bijvoorbeeld: title=Jan Smit en creator tool = Adobe Photoshop): `title:"John Doe" creatortool:Adobe*`
-* Om alle activa te tonen wanneer de facetwaarde niet één enkel woord maar één zin is (bijvoorbeeld: title=Scott Reynolds): `title:"Scott Reynolds"`
+* Om alle activa te tonen wanneer de facetwaarde niet één enkel woord maar een zin (bijvoorbeeld: title=Scott Reynolds) is: `title:"Scott Reynolds"`
 * Elementen weergeven met meerdere waarden van één eigenschap (bijvoorbeeld: title=Scott Reynolds of Jan Smit): `title:"Scott Reynolds" OR "John Doe"`
-* Elementen weergeven met eigenschapswaarden die beginnen met een specifieke tekenreeks (bijvoorbeeld: de titel is Scott Reynolds): `title:Scott*`
-* Elementen weergeven met eigenschapswaarden die eindigen met een specifieke tekenreeks (bijvoorbeeld: de titel is Scott Reynolds): `title:*Reynolds`
-* Elementen weergeven met een eigenschapswaarde die een specifieke tekenreeks bevat (bijvoorbeeld: titel = Bazel-vergaderruimte): `title:*Meeting*`
-* Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoek naar string Adobe in assets met title=Jan Smit): `*Adobe* title:"John Doe"`
+* Elementen weergeven waarvan de eigenschapswaarden beginnen met een specifieke tekenreeks (bijvoorbeeld: title is Scott Reynolds): `title:Scott*`
+* Elementen weergeven met eigenschapswaarden die eindigen met een specifieke tekenreeks (bijvoorbeeld: title is Scott Reynolds): `title:*Reynolds`
+* Elementen weergeven met een eigenschapswaarde die een specifieke tekenreeks bevat (bijvoorbeeld: title = Basel Meeting Room): `title:*Meeting*`
+* Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoeken naar Adobe van tekenreeks in elementen met de naam title=Jan Smit): `*Adobe* title:"John Doe"`
 
 ## Middelen zoeken van andere [!DNL Experience Manager] aanbiedingen of interfaces {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] maakt verbinding met DAM-opslagplaats met verschillende andere [!DNL Experience Manager] oplossingen om snellere toegang tot digitale middelen te bieden en de creatieve workflows te stroomlijnen. Elke detectie van middelen begint met bladeren of zoeken. Het zoekgedrag blijft grotendeels hetzelfde op de verschillende oppervlakken en oplossingen. Sommige zoekmethoden veranderen als doelpubliek, de gebruiksgevallen en de gebruikersinterface. Dit kan per doelgroep en gebruikersinterface verschillen. [!DNL Experience Manager] oplossingen. De specifieke methoden worden gedocumenteerd voor de afzonderlijke oplossingen in de onderstaande koppelingen. De algemeen toepasselijke tips en gedragingen worden in dit artikel beschreven.
 
-### Middelen zoeken vanuit het deelvenster Adobe-itemkoppeling {#aal}
+### Middelen zoeken vanuit het deelvenster Adobe-elementkoppeling {#aal}
 
-Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets], zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Met het deelvenster in de app in het [!DNL Adobe Creative Cloud] apps: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], en [!DNL Adobe InDesign]. Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [elementen zoeken en doorbladeren](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) Adobe Asset Link gebruiken.
+Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets], zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Met het deelvenster in de app in het [!DNL Adobe Creative Cloud] apps: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], en [!DNL Adobe InDesign]. Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [elementen zoeken en doorbladeren](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) het gebruiken van de Verbinding van Activa van de Adobe.
 
 ### Middelen zoeken in [!DNL Experience Manager] bureaubladtoepassing {#desktop-app}
 
@@ -239,7 +253,7 @@ Geef de volgende aanvraagparameters in een URL door om de elementenkiezer in een
 
 | Naam | Waarden | Voorbeeld | Doel |
 |---|---|---|---|
-| bronachtervoegsel (B) | Mappad als resix van de bron in de URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | De elementkiezer starten met een bepaalde map geselecteerd, bijvoorbeeld met de map `/content/dam/we-retail/en/activities` geselecteerd, moet de URL de volgende vorm hebben: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Als u wilt dat een bepaalde map wordt geselecteerd wanneer de elementenkiezer wordt gestart, geeft u deze door als een bronachtervoegsel. |
+| bronachtervoegsel (B) | Mappad als resix van de bron in de URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | De elementkiezer starten met een bepaalde map geselecteerd, bijvoorbeeld met de map `/content/dam/we-retail/en/activities` geselecteerd is, moet de URL de volgende vorm hebben: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Als u wilt dat een bepaalde map wordt geselecteerd wanneer de elementenkiezer wordt gestart, geeft u deze door als een bronachtervoegsel. |
 | `mode` | enkelvoudig, meerdere | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | In meerdere modi kunt u meerdere elementen tegelijk selecteren met de elementkiezer. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Gebruik deze parameters om de elementenkiezer te openen als granietdialoogvenster. Deze optie is alleen van toepassing wanneer u de elementenkiezer start via Granite Path Field en deze configureert als pickerSrc URL. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Gebruik deze optie om de hoofdmap voor de elementenkiezer op te geven. In dit geval kunt u met de elementenkiezer alleen onderliggende elementen (direct/indirect) in de hoofdmap selecteren. |
@@ -266,7 +280,7 @@ De zoekfunctie in [!DNL Experience Manager Assets] heeft de volgende beperkingen
 Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 
 * Het visuele onderzoek werkt het best met een grote bewaarplaats. Hoewel er geen minimaal aantal afbeeldingen vereist is voor goede resultaten, is de kwaliteit van overeenkomsten met een paar afbeeldingen minder goed dan de overeenkomsten met een grote opslagplaats.
-* U kunt het model of de trein niet wijzigen [!DNL Experience Manager] voor vergelijkbare afbeeldingen. Als u bijvoorbeeld slimme tags toevoegt of verwijdert aan een paar elementen, verandert het model niet. De elementen worden wel uitgesloten van de visueel vergelijkbare zoekresultaten.
+* U kunt het model of de trein niet wijzigen [!DNL Experience Manager] om vergelijkbare afbeeldingen te zoeken. Als u bijvoorbeeld slimme tags toevoegt of verwijdert aan een paar elementen, verandert het model niet. De elementen worden wel uitgesloten van de visueel vergelijkbare zoekresultaten.
 
 De zoekfunctionaliteit kan prestatiebeperkingen hebben in de volgende scenario&#39;s:
 
@@ -286,7 +300,7 @@ De zoekfunctionaliteit kan prestatiebeperkingen hebben in de volgende scenario&#
 
 * **Indexeren**: Alleen geïndexeerde metagegevens en elementen worden geretourneerd in de zoekresultaten. Voor betere dekking en betere prestaties, zorg behoorlijk indexeren en volg de beste praktijken. Zie [indexeren](#searchindex).
 
-## Enkele voorbeelden van zoekopdrachten {#samples}
+## Enkele voorbeelden ter illustratie van zoekopdrachten {#samples}
 
 Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen die de exacte woordgroep bevatten in de exacte volgorde die de gebruiker heeft opgegeven.
 
@@ -303,9 +317,9 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 ![Het gebruik van een sterretje in het zoeken naar elementen illustreren aan de hand van een voorbeeld](assets/search_with_asterisk_run.gif)
 
-*Afbeelding: Het illustreren van het gebruik van asteriskvervanging in het onderzoek van Activa gebruikend een voorbeeld.*
+*Afbeelding: het gebruik van jokertekens voor sterretjes in het zoeken naar elementen aan de hand van een voorbeeld.*
 
-**Zoeken met jokerteken voor vraagtekens**: Als u de zoekopdracht wilt uitbreiden, gebruikt u een of meer &#39;?&#39; tekens die exact overeenkomen met het aantal tekens. In de volgende afbeelding, bijvoorbeeld:
+**Zoeken met jokerteken voor vragen**: Als u de zoekopdracht wilt uitbreiden, gebruikt u een of meer &#39;?&#39; tekens die exact overeenkomen met het aantal tekens. In de volgende afbeelding, bijvoorbeeld:
 
 * `run???` query komt niet overeen met enig element.
 
@@ -315,13 +329,13 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 ![Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de hand van een voorbeeld](assets/search_with_questionmark_run.gif)
 
-*Afbeelding: Het illustreren van het gebruik van vraagtekenvervanging in de onderzoek van Activa gebruikend een voorbeeld.*
+*Afbeelding: een voorbeeld van het gebruik van jokertekens voor vraagtekens bij het zoeken naar elementen.*
 
-**Een trefwoord uitsluiten**: Gebruik een streepje om te zoeken naar elementen die geen trefwoord bevatten. Bijvoorbeeld: `running -shoe` query retourneert elementen die bevatten `running`, maar niet `shoe`. Evenzo `camp -night` query retourneert elementen die bevatten `camp` maar niet `night`. De query `camp-night` retourneert elementen die beide bevatten `camp` en `night`.
+**Een trefwoord uitsluiten**: Gebruik een streepje om te zoeken naar elementen die geen trefwoord bevatten. Bijvoorbeeld: `running -shoe` query retourneert elementen die bevatten `running`, maar niet `shoe`. Op dezelfde manier `camp -night` query retourneert elementen die bevatten `camp` maar niet `night`. De query `camp-night` retourneert elementen die beide bevatten `camp` en `night`.
 
 ![Gebruik van streepje om te zoeken naar elementen die geen uitgesloten trefwoord bevatten](assets/search_dash_exclude_keyword.gif)
 
-*Afbeelding: Gebruik van streepje om te zoeken naar elementen die geen uitgesloten trefwoord bevatten.*
+*Figuur: Het gebruik van streepje om naar activa te zoeken die geen uitgesloten sleutelwoord bevatten.*
 
 <!--
 ## Configuration and administration tasks related to search functionality {#configadmin}
@@ -421,7 +435,7 @@ U kunt het volgende doen met de middelen u binnen hebt gezocht [!DNL Experience 
 
 U kunt zoekresultaten sorteren om sneller de vereiste elementen te vinden. U kunt de zoekresultaten alleen sorteren in de lijstweergave en wanneer u **[[!UICONTROL Files]](#searchui)** van de **[!UICONTROL Filters]** deelvenster. [!DNL Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
 
-In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimension, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
+In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimensionen, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
 
 Voor beperkingen van de sorteerfunctionaliteit raadpleegt u [beperkingen](#limitations).
 
@@ -435,7 +449,7 @@ Als u de opmerkingen over een asset of de versiegeschiedenis van een asset wilt 
 
 ![Tijdlijnitems voor een zoekmiddel sorteren](assets/sort_timeline_search_results.gif)
 
-*Afbeelding: Sorteer de tijdlijnitems voor een zoekmiddel.*
+*Afbeelding: de items in de tijdlijn sorteren voor een zoekelement.*
 
 ### Gezochte middelen downloaden {#download}
 
@@ -481,13 +495,13 @@ Navigeer naar de maplocatie voor elementen die in de zoekresultaten worden weerg
 | Fout, problemen, symptomen | Mogelijke reden | Mogelijke oplossing of begrip van het probleem |
 |---|---|---|
 | Onjuiste resultaten bij het zoeken naar elementen met ontbrekende metagegevens. | Bij het zoeken naar elementen waarbij de verplichte metagegevens ontbreken, [!DNL Experience Manager] kunnen elementen weergeven die geldige metagegevens hebben. De resultaten zijn gebaseerd op de eigenschap voor geïndexeerde metagegevens. | Nadat de metagegevens zijn bijgewerkt, moet de index opnieuw worden geïndexeerd om de juiste status van metagegevens voor elementen weer te geven. Zie [verplichte metagegevens](metadata-schemas.md#define-mandatory-metadata). |
-| Te veel zoekresultaten. | Brede zoekparameter. | U kunt overwegen de [zoekopdracht](#scope). Het gebruik van slimme tags kan meer zoekresultaten opleveren dan u had verwacht. Zie [zoekgedrag met slimme tags](#withsmarttags). |
+| Te veel zoekresultaten. | Brede zoekparameter. | Overweeg het beperken van [zoekopdracht](#scope). Het gebruik van slimme tags kan meer zoekresultaten opleveren dan u had verwacht. Zie [zoekgedrag met slimme tags](#withsmarttags). |
 | Onverwante of gedeeltelijk verwante zoekresultaten. | Wijzigingen in zoekgedrag met slimme tags. | Begrijpen [hoe zoeken verandert na slimme tags](#withsmarttags). |
 | Geen suggesties voor automatisch aanvullen van elementen. | Nieuw geüploade elementen zijn nog niet geïndexeerd. De metagegevens zijn niet direct beschikbaar als suggesties wanneer u een trefwoord in de zoekbalk typt. | [!DNL Experience Manager] wacht tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade of bijgewerkte elementen te indexeren en voegt de metagegevens vervolgens toe aan de lijst met suggesties. |
 | Geen zoekresultaten. | <ul><li>Elementen die overeenkomen met uw query bestaan niet. </li><li> Whitespace toegevoegd vóór de zoekquery. </li><li> Niet-ondersteund metagegevensveld bevat het trefwoord waarnaar u hebt gezocht.</li><li> Zoeken tijdens offline uitvoering van een element. </li></ul> | <ul><li>Zoeken met een ander trefwoord. U kunt ook slim labelen of zoeken op basis van gelijkenis gebruiken om de zoekresultaten te verbeteren. </li><li>[Bekende beperking](#limitations).</li><li>Niet alle metagegevensvelden worden in aanmerking genomen voor zoekopdrachten. Zie [bereik](#scope).</li><li>Later zoeken of on-time en off-time wijzigen voor de vereiste elementen.</li></ul> |
 | Zoekfilter of voorspelling is niet beschikbaar. | <ul><li>Het zoekfilter is niet geconfigureerd.</li><li>Het is niet beschikbaar voor uw aanmelding.</li><li>(Minder waarschijnlijk) De onderzoeksopties worden niet aangepast op de plaatsing u gebruikt.</li></ul> | <ul><li>Neem contact op met de beheerder om te controleren of de zoekaanpassingen beschikbaar zijn of niet.</li><li>Neem contact op met de beheerder om te controleren of uw account de rechten/machtigingen heeft om de aanpassing te gebruiken.</li><li>Neem contact op met de beheerder en controleer de beschikbare aanpassingen voor de [!DNL Assets] implementatie die u gebruikt.</li></ul> |
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen ontbreekt een verwachte afbeelding. | <ul><li>Afbeelding is niet beschikbaar in [!DNL Experience Manager].</li><li>Afbeelding is niet geïndexeerd. Doorgaans wanneer het onlangs is geüpload.</li><li>Afbeelding heeft geen slimme tags.</li></ul> | <ul><li>Voeg de afbeelding toe aan [!DNL Assets].</li><li>Neem contact op met de beheerder om de gegevensopslagruimte opnieuw te indexeren. Zorg er ook voor dat u de juiste index gebruikt.</li><li>Neem contact op met de beheerder om de relevante elementen een slimme tag te geven.</li></ul> |
-| Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt een irrelevante afbeelding weergegeven. | Zichtbaar zoekgedrag. | [!DNL Experience Manager] geeft zoveel mogelijk relevante activa weer. Eventuele minder relevante afbeeldingen worden aan de resultaten toegevoegd, maar met een lagere zoekpositie. De kwaliteit van de overeenkomsten en de relevantie van de gezochte elementen nemen af wanneer u de zoekresultaten omlaag schuift. |
+| Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt een irrelevante afbeelding weergegeven. | Visuele zoekfunctionaliteit. | [!DNL Experience Manager] geeft zoveel mogelijk relevante activa weer. Eventuele minder relevante afbeeldingen worden aan de resultaten toegevoegd, maar met een lagere zoekpositie. De kwaliteit van de overeenkomsten en de relevantie van de gezochte elementen nemen af wanneer u de zoekresultaten omlaag schuift. |
 | Wanneer u zoekresultaten selecteert en gebruikt, wordt niet op alle gezochte elementen ingegaan. | De [!UICONTROL Select All] Hiermee selecteert u alleen de eerste 100 zoekresultaten in de kaartweergave en de eerste 200 zoekresultaten in de lijstweergave. | |
 
 **Zie ook**
@@ -506,6 +520,6 @@ Navigeer naar de maplocatie voor elementen die in de zoekresultaten worden weerg
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] zoekimplementatiegids](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [[!DNL Experience Manager] naslaggids voor implementatie](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Geavanceerde configuratie om zoekresultaten te verhogen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Zoeken naar slimme vertaling configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
