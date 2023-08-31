@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e0bee5134bea71010cacf4bf16eac0baa3dee725
+source-git-commit: 3203e79d1dd083d13d9357b21040dfa88194c4db
 workflow-type: tm+mt
-source-wordcount: '6188'
+source-wordcount: '9313'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
 >[!NOTE]
 >
->Voordat u in Dynamic Media met video werkt, moet u controleren of uw Adobe Experience Manager-beheerder Dynamic Media-Cloud Services al heeft ingeschakeld en geconfigureerd.
+>Voordat u in Dynamic Media met video werkt, moet u controleren of uw Adobe Experience Manager-beheerder Dynamic Media-Cloud Servicen al heeft ingeschakeld en geconfigureerd.
 >
->* Zie [Dynamic Media-Cloud Services configureren](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) in Configureer Dynamic Media en [Problemen met Dynamic Media oplossen](/help/assets/dynamic-media/troubleshoot-dm.md).
+>* Zie [Dynamic Media-Cloud Servicen configureren](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) in Configureer Dynamic Media en [Problemen met Dynamic Media oplossen](/help/assets/dynamic-media/troubleshoot-dm.md).
 >
 
 1. **Dynamic Media-video&#39;s uploaden** door het volgende te doen:
@@ -61,7 +61,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
         [Video&#39;s voorvertonen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) of [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md)
         [Video-uitvoeringen beheren](/help/assets/manage-digital-assets.md#managing-renditions)
 
-      * [Viewervoorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md)
+      * [Voorinstellingen voor viewers beheren](/help/assets/dynamic-media/managing-viewer-presets.md)
       * [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
    * Werken met videometagegevens
@@ -110,7 +110,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -129,15 +129,15 @@ Voor het beheren van afzonderlijke video- en adaptieve videosets wordt het volge
 * Video organiseren, doorbladeren en doorzoeken met volledige metagegevensondersteuning voor een efficiënt beheer van video-elementen.
 * Lever Adaptieve videosets naar het web en desktops, tablets en mobiele apparaten.
 
-Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie [Referentiehandleiding voor Dynamic Media Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that support this video format at the following [Supported video formats on Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
-* Speel de video terug gebruikend de Voorinstellingen van de VideoKijker van Dynamic Media, met inbegrip van het volgende:
+* Speel de video terug gebruikend de Voorinstellingen van de VideoKijker van Dynamic Media, met inbegrip van:
 
-   * Afzonderlijke videoviewers.
+   * Enkele videoviewers.
    * Gemengde Media-viewers die zowel video- als afbeeldingsinhoud combineren.
 
 * Configureer videospelers om aan uw brandingbehoeften te voldoen.
@@ -145,9 +145,9 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 Zie [Dynamische videoweergave](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) monster nemen.
 
-Zie ook [Viewers voor Experience Manager Assets en Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) en [Alleen viewers voor Experience Manager Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in de [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+Zie ook [Viewers voor Experience Manager Assets en Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) en [Alleen viewers voor Experience Manager Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in de [Referentiehandleiding voor Dynamic Media Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
-## Beste praktijken: De HTML5-videoviewer gebruiken {#best-practice-using-the-html-video-viewer}
+## Tips en trucs: De HTML5-videoviewer gebruiken {#best-practice-using-the-html-video-viewer}
 
 De Dynamic Media HTML5 Video viewer-voorinstellingen zijn robuuste videospelers. U kunt ze gebruiken om veel voorkomende problemen te voorkomen die te maken hebben met het afspelen van HTML5-video en met problemen die te maken hebben met mobiele apparaten. Bijvoorbeeld een gebrek aan adaptieve streaminglevering met bitsnelheid en een beperkt bereik van de desktopbrowser.
 
@@ -157,11 +157,11 @@ Aan de afspeelzijde van de viewer wordt automatisch de videocapaciteit van de br
 
 >[!NOTE]
 >
->Als u DASH wilt gebruiken voor uw video&#39;s, moet deze eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).
+>Als u DASH wilt gebruiken voor uw video&#39;s, moet u deze eerst inschakelen via de Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).
 
 U kunt de mogelijkheid om de afspeelcomponenten te ontwerpen met behulp van HTML5 en CSS combineren tot één speler. Het kan het afspelen ingesloten hebben en adaptief en progressief streamen gebruiken, afhankelijk van de mogelijkheden van de browser. Met al deze functionaliteit kunt u het bereik van uw uitgebreide media-inhoud uitbreiden voor zowel gebruikers op het bureaublad als mobiele apparaten en een gestroomlijnde videobeleving garanderen.
 
-Zie ook [Alleen viewers voor Experience Manager Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in de [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+Zie ook [Alleen viewers voor Experience Manager Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) in de [Referentiehandleiding voor Dynamic Media Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 
 ### Video afspelen op bureaubladcomputers en mobiele apparaten met de HTML5-videoviewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -170,7 +170,7 @@ Voor adaptieve videostreaming op het bureaublad en mobiele apparaten zijn de vid
 
 Het afspelen van video vindt plaats met HLS of DASH of met progressieve videodownload. In eerdere versies van Experience Manager, zoals 6.0, 6.1 en 6.2, werden video&#39;s gestreamd via HTTP.
 
-In Experience Manager 6.3 en hoger worden video&#39;s nu gestreamd via HTTPS (dat wil zeggen, HLS of DASH) omdat de URL van de DM-gatewayservice altijd HTTPS gebruikt. Dit standaardgedrag heeft geen gevolgen voor de klant. Videostreaming vindt altijd plaats via HTTPS, tenzij dit niet door de browser wordt ondersteund. (zie de volgende tabel).
+In Experience Manager 6.3 en hoger worden video&#39;s nu gestreamd via HTTPS (dat wil zeggen, HLS of DASH) omdat de URL van de DM-gatewayservice altijd HTTPS gebruikt. Dit standaardgedrag heeft geen gevolgen voor de klant. Videostreaming vindt altijd plaats via HTTPS, tenzij dit niet door de browser wordt ondersteund. Zie de volgende tabel.
 
 Daarom
 
@@ -198,7 +198,7 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>In Windows® 8 en Windows® 10 - Gebruik HTTPS geforceerd wanneer DASH of HLS wordt aangevraagd. Bekende beperking: HTTP op DASH of HLS werkt niet in deze combinatie van browser en besturingssysteem<br /> <br /> Windows® 7 - Progressief downloaden. Gebruikt de standaardlogica voor het selecteren van het protocol HTTP versus HTTPS.</td>
+   <td>In Windows® 8 en Windows® 10 - Gebruik HTTPS geforceerd wanneer DASH of HLS wordt aangevraagd. Bekende beperking: HTTP op DASH of HLS werkt niet in deze combinatie van browser en besturingssysteem<br /> <br /> In Windows® 7 - Progressief downloaden. Gebruikt de standaardlogica voor het selecteren van het protocol HTTP versus HTTPS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -250,7 +250,7 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
 
 >[!IMPORTANT]
 >
->*Als u DASH wilt gebruiken voor uw video&#39;s, moet DASH eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).)
+>*Als u DASH wilt gebruiken voor uw video&#39;s, moet u deze eerst inschakelen via de Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).)
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -271,7 +271,7 @@ In de volgende afbeelding ziet u de algemene ontwerpworkflow voor video&#39;s di
 
 ## Aanbevolen werkwijzen voor het coderen van video&#39;s {#best-practices-for-encoding-videos}
 
-De **Dynamic Media-video coderen** als u Dynamic Media hebt ingeschakeld en video-Cloud Services hebt ingesteld, codeert de workflow video. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Als u Dynamic Media hebt ingeschakeld en video-Cloud Services hebt ingesteld, kunt u **[!UICONTROL Dynamic Media Encode Video]** de workflow wordt automatisch van kracht wanneer u een video uploadt. (Als u Dynamic Media niet gebruikt, wordt **[!UICONTROL DAM Update Asset]** workflow wordt van kracht.)
+De **Dynamic Media-video coderen** de workflow codeert video als u Dynamic Media hebt ingeschakeld en video-Cloud Servicen hebt ingesteld. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Als u Dynamic Media hebt ingeschakeld en video-Cloud Servicen hebt ingesteld, **[!UICONTROL Dynamic Media Encode Video]** de workflow wordt automatisch van kracht wanneer u een video uploadt. (Als u Dynamic Media niet gebruikt, wordt **[!UICONTROL DAM Update Asset]** workflow wordt van kracht.)
 
 Hier volgt een overzicht van tips voor het coderen van bronvideobestanden.
 
@@ -307,13 +307,13 @@ U kunt de metagegevens van een bestand verkrijgen door de metagegevens van het b
 
 Wanneer u een voorinstelling voor videocodering kiest of maakt voor uw primaire bronvideobestand, moet u ervoor zorgen dat de voorinstelling dezelfde hoogte-breedteverhouding heeft als het primaire bronvideobestand. De hoogte-breedteverhouding is de verhouding tussen de breedte en de hoogte van de video.
 
-Als u de hoogte-breedteverhouding van een videobestand wilt bepalen, vraagt u de metagegevens van het bestand op en noteert u de breedte en hoogte van het bestand (zie De metagegevens van een bestand hierboven verkrijgen). Gebruik vervolgens deze formule om de hoogte-breedteverhouding te bepalen:
+Als u de hoogte-breedteverhouding van een videobestand wilt bepalen, vraagt u de metagegevens van het bestand op en noteert u de breedte en hoogte van het bestand (zie De metagegevens van het bestand hierboven verkrijgen). Gebruik vervolgens deze formule om de hoogte-breedteverhouding te bepalen:
 
 width/height = hoogte-breedteverhouding
 
 In de volgende tabel wordt beschreven hoe de resultaten van de formule worden omgezet in algemene opties voor de hoogte-breedteverhouding:
 
-| Resultaat van formule | Hoogte-breedteverhouding |
+| Formulerresultaat | Hoogte-breedteverhouding |
 |--- |--- |
 | 1.33 | 4:3 |
 | 0.75 | 3:4 |
@@ -336,7 +336,7 @@ Wanneer u een codering voor bitsnelheden selecteert, kunt u kiezen uit twee type
 Gebruik CBR als uw video een vergelijkbaar bewegingsniveau in de gehele video bevat. CBR wordt meestal gebruikt voor het streamen van video-inhoud. Zie ook [Parameters voor aangepaste videocodering gebruiken](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
 
 * **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR-codering past de gegevenssnelheid naar beneden en naar de bovenste limiet die u instelt, aan op basis van de gegevens die de compressor nodig heeft. Deze functionaliteit houdt in dat de bitsnelheid van het mediabestand tijdens een VBR-coderingsproces dynamisch wordt verhoogd of verlaagd, afhankelijk van de behoeften aan bitsnelheid van mediabestanden.
-VBR duurt langer om te coderen maar produceert de gunstigste resultaten; de kwaliteit van het mediabestand is superieur. VBR wordt het meest meestal gebruikt voor http progressieve levering van video-inhoud.
+VBR duurt langer om te coderen, maar geeft de meest gunstige resultaten. De kwaliteit van het mediabestand is superieur. VBR wordt het meest meestal gebruikt voor http progressieve levering van video-inhoud.
 
 Wanneer gebruikt u VBR versus CRB?
 Als u VBR en CBR selecteert, wordt het bijna altijd aanbevolen VBR te gebruiken voor uw mediabestanden. VBR biedt bestanden van hogere kwaliteit tegen concurrerende bitsnelheden. Wanneer u VBR gebruikt, moet u ervoor zorgen dat u met codering met twee controles gebruikt en de maximale bitsnelheid instellen op 1,5x de bitsnelheid van de doelvideo.
@@ -385,7 +385,7 @@ Wanneer u een voorinstelling voor videocodering kiest (of maakt) voor uw primair
 
 ### FPS (frames per seconde) {#fps-frames-per-second}
 
-In de Verenigde Staten en Japan wordt de meeste video opgenomen met een snelheid van 29,97 frames per seconde (fps); in Europa wordt de meeste video opgenomen met 25 fps. Film wordt opgenomen bij 24 fps.
+In de Verenigde Staten en Japan wordt de meeste video met 29,97 frames per seconde (fps) opgenomen; in Europa wordt de meeste video met 25 fps opgenomen. Film wordt opgenomen bij 24 fps.
 
 Kies een voorinstelling voor videocodering die overeenkomt met de fps-snelheid van het primaire bronvideobestand. Als uw primaire bronvideo bijvoorbeeld 25 fps is, kiest u een coderingsvoorinstelling met 25 fps. Standaard wordt bij alle aangepaste codering de fps van het primaire bronvideobestand gebruikt. Daarom hoeft u de fps-instelling niet expliciet op te geven wanneer u een voorinstelling voor videocodering maakt.
 
@@ -409,37 +409,6 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 ### Gecodeerde videobestandsindeling {#encoded-video-file-format}
 
 Dynamic Media raadt u aan voorinstellingen voor MP4 H.264-videocodering te gebruiken. Omdat MP4-bestanden de H.264-videocodec gebruiken, biedt deze video van hoge kwaliteit, maar met een gecomprimeerde bestandsgrootte.
-
-### DASH inschakelen voor uw account {#enable-dash}
-
-DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Als DASH op uw account is ingeschakeld, kunt u kiezen uit DASH of HLS voor adaptieve videostreaming. Of u kunt kiezen voor beide opties met automatische schakeling tussen spelers wanneer **[!UICONTROL auto]** is geselecteerd als het afspeeltype in de voorinstelling Viewer.
-
-Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
-
-* Pakket DASH-streamvideo voor adaptieve bitsnelheidstreaming. Deze methode leidt tot een efficiëntere levering. Adaptieve streaming zorgt voor de beste kijkervaring voor uw klanten.
-* Bij voor browsers geoptimaliseerde streaming met Dynamic Media-spelers wordt geschakeld tussen HLS- en DASH-streaming voor de beste kwaliteit van de service. Wanneer een Safari-browser wordt gebruikt, schakelt de videospeler automatisch over naar HLS.
-* U kunt uw voorkeursstreammethode (HLS of DASH) configureren door de voorinstelling voor de videoviewer te bewerken.
-* Geoptimaliseerde videocodering zorgt ervoor dat er geen extra opslagruimte wordt gebruikt terwijl DASH-mogelijkheden worden ingeschakeld. Er wordt één set videocoderingscodes gemaakt voor zowel HLS als DASH om de opslagkosten voor video te optimaliseren.
-* Helpt de levering van video toegankelijker te maken voor uw klanten.
-* U kunt de URL voor streaming ook ophalen via API&#39;s.
-
-U stelt een verzoek in om DASH te gebruiken; het wordt niet automatisch ingeschakeld voor uw account.
-
-Als u DASH op uw account wilt inschakelen, maakt u een geval voor klantenondersteuning zoals hieronder wordt beschreven. Geef in uw geval van ondersteuning op dat u DASH wilt inschakelen voor uw Dynamic Media-account en op Experience Manager.
-
-**DASH inschakelen voor uw account:**
-
-1. [Gebruik de Admin Console om een nieuwe steungeval te beginnen](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Als u een ondersteuningsgeval wilt maken, volgt u de instructies en zorgt u ervoor dat u de volgende informatie opgeeft:
-
-   * Primaire contactpersoon, e-mail, telefoon.
-   * Naam van je Dynamic Media-account.
-   * Geef op of u DASH wilt inschakelen op uw Dynamic Media-account en op de Experience Manager.
-
-1. De Steun van de Klant van Adobe voegt u aan de DASH klant toe wachtlijst die op de orde wordt gebaseerd waarin de verzoeken worden voorgelegd.
-1. Wanneer Adobe klaar is om uw verzoek te behandelen, contacteert de Steun van de Klant u om een doeldatum voor DASH toe te voegen te coördineren en te plaatsen.
-1. Klantenondersteuning stuurt u een melding nadat deze is voltooid.
-1. Maak uw [videoviewervoorinstelling](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) zoals gebruikelijk.
 
 ## Videorapporten weergeven {#viewing-video-reports}
 
@@ -467,7 +436,7 @@ Als de video buiten Adobe Experience Manager Dynamic Media is gecodeerd, zijn he
 
 Door gebrek, de eerste keer u VideoRapporten ingaat, toont het rapport videogegevens die bij de eerste van de huidige maand beginnen en met de datum van de huidige maand beëindigen. U kunt het standaarddatumbereik echter overschrijven door uw eigen datumbereik op te geven. De volgende keer dat u Video-rapporten invoert, wordt het opgegeven datumbereik gebruikt.
 
-Voor het correct werken van videorapporten, wordt een identiteitskaart van de Reeks van het Rapport automatisch gecreeerd wanneer de Cloud Services van Dynamic Media wordt gevormd. Tegelijkertijd wordt de rapportsuite-id doorgegeven aan de publicatieserver, zodat deze beschikbaar is voor de functie URL kopiëren wanneer u een voorvertoning van elementen weergeeft. Voor deze functionaliteit is echter vereist dat de publicatieserver al is ingesteld. Als de publicatieserver niet is ingesteld, kunt u toch publiceren om het videoverslag te zien. U moet echter terugkeren naar de Dynamic Media Cloud Configuration en **[!UICONTROL OK]**.
+Voor het correct werken van videorapporten, wordt een identiteitskaart van de Reeks van het Rapport automatisch gecreeerd wanneer de Cloud Servicen van Dynamic Media wordt gevormd. Tegelijkertijd wordt de rapportsuite-id doorgegeven aan de publicatieserver, zodat deze beschikbaar is voor de functie URL kopiëren wanneer u een voorvertoning van elementen weergeeft. Voor deze functionaliteit is echter vereist dat de publicatieserver al is ingesteld. Als de publicatieserver niet is ingesteld, kunt u toch publiceren om het videoverslag te zien. U moet echter terugkeren naar de Dynamic Media Cloud Configuration en **[!UICONTROL OK]**.
 
 **Videorapporten weergeven:**
 
@@ -548,7 +517,314 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
+
+
+
+
+### Ondersteuning voor DASH-, multi-subtitle- en multi-audiotracks inschakelen voor uw Dynamic Media-account {#enable-dash}
+
+**Informatie over het inschakelen van DASH-ondersteuning voor uw account**
+DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Als DASH op uw account is ingeschakeld, kunt u kiezen uit DASH of HLS voor adaptieve videostreaming. Of u kunt kiezen voor beide opties met automatische schakeling tussen spelers wanneer **[!UICONTROL auto]** is geselecteerd als het afspeeltype in de voorinstelling Viewer.
+
+Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
+
+* Pakketvideo voor aangepaste bitsnelheidstreaming. Deze methode leidt tot een efficiëntere levering. Adaptieve streaming zorgt voor de beste kijkervaring voor uw klanten.
+* Bij voor browsers geoptimaliseerde streaming met Dynamic Media-spelers wordt geschakeld tussen HLS- en DASH-streaming voor de beste kwaliteit van de service. Wanneer een Safari-browser wordt gebruikt, schakelt de videospeler automatisch over naar HLS.
+* U kunt uw voorkeursstreammethode (HLS of DASH) configureren door de voorinstelling voor de videoviewer te bewerken.
+* Geoptimaliseerde videocodering zorgt ervoor dat er geen extra opslagruimte wordt gebruikt terwijl DASH-mogelijkheden worden ingeschakeld. Er wordt één set videocoderingscodes gemaakt voor zowel HLS als DASH om de opslagkosten voor video te optimaliseren.
+* Helpt de levering van video toegankelijker te maken voor uw klanten.
+* U kunt de URL voor streaming ook ophalen via API&#39;s.
+
+Het inschakelen van DASH-ondersteuning voor uw account gebeurt via een Adobe voor klantenondersteuning die u maakt en verzendt.
+
+**Ondersteuning voor multi-subtitle en multi-audiotracks voor uw account inschakelen**
+
+Als u een Adobe Support-case maakt en DASH op uw account wilt inschakelen, kunt u er ook van profiteren dat ondersteuning voor meerdere ondertitels en voor meerdere audiotracks automatisch wordt ingeschakeld. Na deze functie worden alle volgende video&#39;s die u uploadt verwerkt met een nieuwe back-endarchitectuur die ondersteuning voor het toevoegen van multi-subtitle- en multi-audiotracks aan uw video&#39;s bevat.
+
+>[!IMPORTANT]
+>
+>Alle video&#39;s die u hebt geüpload *voor* ondersteuning voor multi-subtitle en multi-audiotracks inschakelen voor uw Dynamic Media-account, [moet worden opgewerkt](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere ondertitels en meerdere audiotracks voor hen beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
+
+**U kunt als volgt ondersteuning voor DASH-, multi-subtitle- en multi-audiotracks inschakelen op uw Dynamic Media-account:**
+
+1. [Gebruik de Admin Console om een nieuwe steungeval te beginnen](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Als u een ondersteuningsgeval wilt maken, volgt u de instructies en zorgt u ervoor dat u de volgende informatie opgeeft:
+
+   * Primaire contactpersoon, e-mail, telefoon.
+   * Naam van je Dynamic Media-account.
+   * Geef op of u ondersteuning voor DASH-, multi-subtitle- en multi-audiotracks wilt inschakelen voor uw Dynamic Media-account, op Experience Manager 6.5.
+
+1. De Steun van de Klant van de Adobe voegt u aan de klant toe wachtlijst die op de orde wordt gebaseerd waarin de verzoeken worden voorgelegd.
+1. Wanneer de Adobe klaar is om uw verzoek te behandelen, contacteert de Steun van de Klant u om een doeldatum voor enablement te coördineren en te plaatsen.
+1. Klantenondersteuning stuurt u een melding nadat de service is voltooid.
+1. U kunt nu een van de volgende twee handelingen uitvoeren:
+
+   * Maak uw [videoviewervoorinstelling](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) zoals gebruikelijk.
+   * [Meerdere ondertitels en audiotracks toevoegen](#add-msma) naar uw video.
+
+
+## Ondersteuning voor multi-subtitle en multi-audiotracks voor video&#39;s in Dynamic Media{#about-msma}
+
+Met de mogelijkheid om meerdere ondertitels en meerdere audiotracks te gebruiken in Dynamic Media, kunt u eenvoudig meerdere ondertitels en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+
+![Het tabblad Ondertitels en audiotracks in Dynamic Media en een tabel met geüploade .VTT-ondertitelingsbestanden en geüploade .MP3-audiotrackbestanden voor een video.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
+
+U kunt onder andere de volgende gebruiksscenario&#39;s gebruiken voor het toevoegen van meerdere ondertitels en audiotracks aan uw primaire video:
+
+| Type | Hoofdletters gebruiken |
+|--- |--- |
+| **Ondertitels** | Ondersteuning voor meerdere talen |
+|  | Beschrijvende tekst voor toegankelijkheid |
+| **Audiotracks** | Ondersteuning voor meerdere talen |
+|  | Stereo en meerdere kanalen (surround sound) |
+|  | Commentaartracks |
+|  | Beschrijvende audio |
+
+Alles [video-indelingen ondersteund in Dynamic Media](/help/assets/file-format-support.md) en alle Dynamic Media-videoviewers, behalve de Dynamic Media *Video_360* viewer: wordt ondersteund voor gebruik met meerdere ondertitels en audiotracks.
+
+Mogelijkheid tot meerdere ondertitels en meerdere audiotracks is beschikbaar voor uw Dynamic Media-account via een functiewissel die moet worden ingeschakeld (ingeschakeld) door de Adobe Klantenondersteuning.
+
+### Multiondertitels en audiotracks toevoegen aan uw video {#add-msma}
+
+Voordat u multi-subtitle- en multi-audiotracks aan uw video toevoegt, moet u controleren of u al over het volgende beschikt:
+
+* Dynamic Media wordt ingesteld in een AEM omgeving.
+* A [Dynamic Media-videoprofiel wordt toegepast op de map waarin uw video&#39;s worden opgenomen](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+* [Multi-subtitle en multi-audiotrack is ingeschakeld voor uw Dynamic Media-account](#enable-dash).
+
+Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen WebVTT en Adobe VTT. Toegevoegde audiotrackbestanden worden ook ondersteund in de MP3-indeling.
+
+>[!IMPORTANT]
+>
+>Alle video&#39;s die u hebt geüpload *voor* ondersteuning voor multi-subtitle en multi-audiotracks inschakelen voor uw Dynamic Media-account, [moet worden opgewerkt](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere ondertitels en meerdere audiotracks voor hen beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
+
+**U kunt als volgt meerdere ondertitels en audiotracks toevoegen aan uw video:**
+
+1. [Uw primaire video uploaden naar een map](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) waaraan al een videoprofiel is toegewezen.
+1. Navigeer naar het geüploade video-element waaraan u nummers voor meerdere ondertitels en audio wilt toevoegen.
+1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
+1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
+   ![Geselecteerd video-element met vinkje boven de miniatuurafbeelding van de video en Weergave-eigenschappen gemarkeerd op de werkbalk.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Geselecteerd video-element in de kaartweergave.*
+1. Selecteer op de pagina Eigenschappen van video de optie **[!UICONTROL Subtitles & Audio Tracks]** tab.
+
+   >[!TIP]
+   >Als u het geneesmiddel niet ziet **[!UICONTROL Subtitles & Audio Tracks]** tab, betekent dit een van de volgende twee dingen:
+   >
+   >* Aan de map waarin de geselecteerde video zich bevindt, is geen videoprofiel toegewezen. In dat geval, zie [Een videoprofiel toepassen op de map](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
+   >* Of de video moet opnieuw worden verwerkt door Dynamic Media. In dat geval, zie [Dynamic Media-elementen in een map opnieuw verwerken](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >
+   >Als u een van de bovenstaande taken hebt uitgevoerd, gaat u terug naar deze stappen.
+
+   ![Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen.](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen van de video.*
+
+1. (Optioneel) Ga als volgt te werk om een of meer ondertitelingsbestanden (of bijschriftbestanden) aan een video toe te voegen:
+   * Selecteer **[!UICONTROL Upload Subtitles]**.
+   * Navigeer naar en selecteer een of meer .vtt-bestanden (videoteksttracks) en open deze.
+   * Als ondertitels zichtbaar moeten zijn op de mediaspeler, kunt u *moet* vereiste details (metagegevens) toevoegen over *elk* ondertitelingsbestand dat u hebt geüpload. Selecteer het potloodpictogram rechts van de bestandsnaam van een ondertitel. In de **Ondertitel bewerken** voert u de volgende vereiste gegevens over het bestand in en selecteert u **[!UICONTROL Save]**. Herhaal dit proces voor elk ondertitelbestand dat u hebt geüpload:
+
+     | Metagegevens ondertitel | Beschrijving |
+     |--- |--- |
+     | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra ondertitelingsbestanden en audiotrackbestanden. |
+     | Taal | Selecteer de taal van de ondertitel. |
+     | Type | Selecteer het type ondertitel dat u gebruikt.<br>**Ondertitel** - De ondertiteltekst die wordt weergegeven met de video die het dialoogvenster vertaalt of transcripeert.<br>**Bijschrift** - De bijschrifttekst bevat ook achtergrondgeluiden, sprekersdifferentiatie en andere relevante informatie, samen met de vertaling of transcriptie van de dialoog, waardoor de inhoud toegankelijker wordt voor doven of slechthorenden. |
+     | Label | De tekst die voor de naam van de ondertitel wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld, `English (CC)`. |
+
+     U kunt metagegevens van ondertitels indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
+
+1. (Optioneel) Ga als volgt te werk om een of meer audiotracks aan een video toe te voegen:
+   * Selecteer **[!UICONTROL Upload Audio Tracks]**.
+   * Navigeer naar en selecteer een of meer MP3-bestanden en open deze.
+   * Voor audiotracks die zichtbaar moeten zijn in het dialoogvenster **[!UICONTROL Select audio or caption]** op de mediaspeler, kunt u *moet* vereiste gegevens toevoegen over *elk* audiotrackbestand dat u hebt toegevoegd. Selecteer het potloodpictogram rechts van de bestandsnaam van een audiotrack. In de **Audiotrack bewerken** voert u de volgende vereiste gegevens in en selecteert u **[!UICONTROL Save]**. Herhaal dit proces voor elk audiospoordossier dat u uploadde.
+
+     | Metagegevens audiotrack | Beschrijving |
+     |--- |--- |
+     | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra audiotrackbestanden of ondertitelingsbestanden. |
+     | Taal | Selecteer de taal van de audiotrack. |
+     | Type | Selecteer het type audiotrack dat u gebruikt.<br>**Origineel** - De audiotrack die oorspronkelijk aan de video was gekoppeld en die werd weergegeven als `[Original]` op het etiket met `English` taal die standaard is geselecteerd. while **[!UICONTROL Label]** en **[!UICONTROL Language]** kan worden gewijzigd in het dialoogvenster **[!UICONTROL Edit Audio Track]** de oorspronkelijke waarden als de primaire video opnieuw wordt verwerkt.<br>**Standaard** - Een add-on audiotrack voor een andere taal dan het origineel.<br>**Audiobeschrijving** - Een audiotrack die ook een beschrijvende beschrijving van niet-verbale handelingen en bewegingen in de video bevat, waardoor inhoud toegankelijker wordt voor personen met een visuele handicap. |
+     | Label | De tekst die als naam van de audiotrack wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een audiotrack correspondeert. Bijvoorbeeld, `English [Original]`. Het label van de audio die aan een video is gekoppeld, is ingesteld op `[Original|` standaard. |
+
+     U kunt deze metagegevens van de audiotrack indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
+
+1. In de rechterbovenhoek van de pagina, vanaf de **[!UICONTROL Save & Close]** vervolgkeuzelijst, selecteert u **[!UICONTROL Save]**. De bestanden worden geüpload en de verwerking van metagegevens wordt gestart, zoals in het dialoogvenster **Status** kolom van de interface.
+
+   >[!NOTE]
+   >
+   >Op basis van de cacheinstellingen van uw instantie kan het verwerken van metagegevens enkele minuten duren voordat dit effect wordt weerspiegeld in de voorvertoning en in gepubliceerde URL&#39;s.
+
+1. (Optioneel) Als u **[!UICONTROL Save & Close]** in de vorige stap in plaats van **[!UICONTROL Save]** kunt u nog steeds de verwerkingsstatus van de geüploade bestanden bekijken. Zie [De levenscyclusstatus van geüploade ondertitels en audiotrackbestanden weergeven](#lifecycle-status-video).
+1. (Optioneel) Geef een voorvertoning van de video weer voordat u gaat publiceren om ervoor te zorgen dat de ondertitels en audio naar behoren werken. Zie [Een voorvertoning weergeven van een video met meerdere ondertitels en audiotracks](#preview-video-audio-subtitle)
+1. Publiceer de video. Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
+
+#### Subkop- en audiotrackbestanden toevoegen aan een video die al is gepubliceerd
+
+Wanneer u aanvullende ondertitelingsbestanden of audiotrackbestanden uploadt naar een video die al is gepubliceerd, betekent dit dat deze bestanden een `Processed` status nadat ze zijn voorbereid, na uploaden. Op dat moment kunt u de video voorvertonen in Dynamic Media om de nieuw geüploade bestanden te bekijken of te horen.
+
+Na de voorvertoning moet u echter *publish* de video opnieuw voor de nieuw toegevoegde ondertitel of audiospoordossiers te publiceren. Na publicatie worden de ondertitels of audio beschikbaar via de openbare Dynamic Media-URL.
+
+>[!NOTE]
+>
+>Op basis van de cacheinstellingen van uw instantie kunnen updates van metagegevens enkele minuten duren voordat deze worden weergegeven in de voorvertoning en in gepubliceerde URL&#39;s.
+
+In het scenario waarin u Dynamic Media hebt geconfigureerd voor direct publiceren, wordt door het uploaden van extra ondertitels of audiobestanden direct een publicatie van de video gestart na het uploaden van ondertitels of audiobestanden.
+
+>[!CAUTION]
+>
+>Wanneer u ondertitelingsbestanden of audiobestanden uploadt naar een video die al is gepubliceerd, worden deze bestanden verwijderd als u [*herverwerken*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) de video. Alleen de oorspronkelijke audio van de video blijft intact. In dergelijke gevallen moet u de ondertitelingsbestanden en audiotrackbestanden opnieuw uploaden naar de video.
+
+#### Meerdere bijschriften toevoegen aan een video met een bestaande URL met bijschriftoptie
+
+Dynamic Media ondersteunt het toevoegen van één bijschrift met video via een URL-modifier. Zie [Bijschriften toevoegen aan video](#adding-captions-to-video).
+
+Meerdere bijschriftwijzigingen hebben voorrang op een bijschrift dat is toegevoegd via een URL-modifier voor gepubliceerde video&#39;s.
+
+**Meerdere bijschriften toevoegen aan een video met een bestaande URL met bijschriftoptie:**
+
+1. Upload het bijschriftbestand dat al als een modifier aan de video is toegevoegd, zodat u het bestand expliciet kunt beheren.
+1. U kunt desgewenst aanvullende bestanden voor ondertitels en bijschriften uploaden.
+1. Publiceer de video op de gebruikelijke wijze.
+De bestaande URL met de optie caption kan nu meerdere bijschriften laden.
+
+### De levenscyclusstatus van geüploade ondertitels en audiotrackbestanden weergeven{#lifecycle-status-video}
+
+U kunt de levenscyclusstatus van elke ondertitel of audiotrackbestand dat naar uw primaire video is geüpload, bekijken via het **Ondertitels en audiotracks** tabblad van **Eigenschappen**.
+
+**De levenscyclusstatus van een video weergeven:**
+
+1. Navigeer naar het video-element waarvan u de levenscyclusstatus wilt weergeven.
+1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
+1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
+1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Subtitles & Audio Tracks]** tab. Noteer in de kolom Status de status van elk ondertitelings- of audiobestand.
+
+| Status van ondertitel of audiotrack | Beschrijving |
+| --- | --- |
+| Verwerking | Wanneer een nieuwe ondertitel of audiospoordossier wordt toegevoegd en opgeslagen, gaat het in een &quot;Verwerkingsstaat&quot;. Dynamic Media verwerkt het bestand door het streamingmanifest aan de primaire video te koppelen. |
+| Verwerkt | Nadat de verwerking is voltooid, wordt de ondertitel of het audiotrackbestand, of de oorspronkelijke audiotrack die is gekoppeld aan de primaire video, weergegeven in de status &quot;Verwerkt&quot;. U kunt een voorvertoning weergeven van ondertitels en audiotrackbestanden die als &quot;Verwerkt&quot; worden weergegeven *voor* u publiceert de video live. |
+| Gepubliceerd | De status &quot;Gepubliceerd&quot; vertegenwoordigt een vergelijkbare status als &quot;Gepubliceerd&quot; voor een primaire video. Elementen worden gepubliceerd wanneer de primaire video wordt gepubliceerd en zijn beschikbaar via de openbare URL van Dynamic Media. |
+| Mislukt | De status &quot;Mislukt&quot; betekent dat de verwerking van een ondertitel of audiotrackbestand niet is voltooid. Verwijder de ondertitel of het audiotrackbestand en upload het opnieuw. |
+| Ongepubliceerd | Wanneer een gepubliceerde primaire video niet expliciet wordt gepubliceerd, worden de bestanden in de subtitel of audiotrack die u aan de video hebt toegevoegd, ook niet gepubliceerd. |
+
+![De statuskolom is gemarkeerd voor de velden Ondertitels en Audiotracks.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Levenscyclusstatus van elke geüploade ondertitel en audiotrackbestand.*
+
+### De standaardaudio instellen voor een video met meerdere audiotracks
+
+Standaard wordt de oorspronkelijke audio van een video ingesteld als de standaardaudio die moet worden afgespeeld.
+
+Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardaudio die moet worden afgespeeld nadat een video in de viewer is geladen. In de gebruikersinterface van Eigenschappen, onder **Ondertitels en audiotracks** de `Default` label wordt rechts van het audiotrackbestand toegepast voor het afspelen van video.
+
+>[!NOTE]
+>
+>Het afspelen van standaardaudio kan ook afhankelijk zijn van de instelling in de volgende browsers:
+>
+>* Chrome - De standaardaudio die in de video is ingesteld, wordt afgespeeld.
+* Safari - Als de standaardtaal in Safari wordt geplaatst, wordt de audio gespeeld met de vastgestelde standaardtaal, als beschikbaar met manifest van de video. Anders wordt de standaardaudio afgespeeld die is ingesteld als onderdeel van de eigenschappen van een video.
+
+**U kunt als volgt de standaardaudio instellen voor een video met meerdere audiotracks:**
+
+1. Navigeer naar het video-element waarvan u de standaardaudiotrack wilt instellen.
+1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
+1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
+1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. Onder de **Audiotracks** Selecteer het audiotrackbestand dat u wilt instellen als de standaardnaam van de video.
+1. Selecteer **[!UICONTROL Set as default]**.
+In de **Instellen als standaard** dialoogvenster selecteert u **[!UICONTROL Replace]**.
+
+   ![De kop Audiotracks bevat een geselecteerde naam voor het audiotrackbestand en de gemarkeerde knop &quot;Instellen als standaard&quot;.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*De standaardaudiotrack voor een video instellen.*
+
+1. Selecteer in de rechterbovenhoek de optie **[!UICONTROL Save & Close]**.
+1. Publiceer de video. Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
+
+### Een voorvertoning weergeven van een video met meerdere ondertitels en audiotracks{#preview-video-audio-subtitle}
+
+Nadat ondertitelingsbestanden en audiotrackbestanden naar een video zijn geüpload en zijn verwerkt, kunt u met de Dynamic Media-videoviewer een voorvertoning van alle verschillende tracks weergeven. Zo kunt u zien hoe de video er uitziet en hoe de video er voor de klant uitziet en zorgt u ervoor dat de video zich naar behoren gedraagt.
+
+Wanneer u tevreden bent met de video, kunt u [publiceren](publishing-dynamicmedia-assets.md) met een van de volgende methoden.
+
+Zie [De video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md).
+Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
+Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+
+>[!NOTE]
+>
+Het standaardtabblad voor voorvertoningen van Experience Managers geeft geen meerdere ondertitels en audiotracks weer. De reden hiervoor is dat deze tracks zijn gekoppeld aan Dynamic Media en alleen kunnen worden weergegeven met de voorvertoning van de Dynamic Media Viewer.
+
+**Een voorvertoning weergeven van een video met meerdere ondertitels en audiotracks:**
+
+1. In **[!UICONTROL Assets]** Navigeer naar een bestaande video waaraan u meerdere ondertitels en audiotracks hebt toegevoegd.
+1. Klik op het video-element zodat u dit kunt openen in de voorvertoningsmodus.
+1. Selecteer op de voorvertoningspagina, linksboven op de pagina, de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers]**.
+
+   ![Vervolgkeuzelijst met de optie Viewers.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
+
+1. Selecteer in de lijst Viewers een viewer die u wilt gebruiken voor de videovoorvertoning. In de volgende schermafbeelding ziet u bijvoorbeeld de **[!UICONTROL Video]** de geselecteerde viewer.
+
+   ![Selectie van de videoviewer in de vervolgkeuzelijst Viewers.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
+
+1. Selecteer bij de rechterbenedenhoek, links van het volumepictogram, het pictogram van de spraakballon en selecteer vervolgens de audio of ondertitel die u wilt horen, of zien of beide. Desgewenst kunt u onder Ondertitels de optie **[!UICONTROL Off]** geen ondertitels of bijschriften weergeven.
+
+   ![De pop-uplijst Audio en ondertitels in de videoviewer.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulatie van een gebruiker die de audio en ondertitel voor het afspelen van video selecteert.*
+
+1. Selecteer de video&#39;s om het afspelen te starten **[!UICONTROL Play]** knop.
+Noteer de **[!UICONTROL URL]** en **[!UICONTROL Embed]** in de linkerbenedenhoek. Gebruik deze knoppen om [de URL van de video koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) of aan [de video insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md), respectievelijk.
+1. Selecteer in de rechterbovenhoek van de voorvertoningspagina de optie **[!UICONTROL Close]**.
+
+### Ondertitel- of audiotrackbestanden verwijderen uit een video
+
+U kunt ondertitels of audiospoordossiers van een video schrappen. Verwijderen van gepubliceerde ondertitels of audiotrackbestanden wordt automatisch weerspiegeld in de gepubliceerde URL van de video.
+
+De oorspronkelijke audiotrack die uit een primaire video is geëxtraheerd, kan niet worden verwijderd.
+
+**U kunt als volgt ondertitels of audiotrackbestanden uit een video verwijderen:**
+
+1. Navigeer naar het video-element waarvan u de standaardaudiotrack wilt instellen.
+1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
+1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
+1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. Voer een van de volgende handelingen uit:
+
+   * Ondertitels—Onder de **Ondertitels** , selecteert u een of meer ondertitelingsbestanden die u uit de video wilt verwijderen en selecteert u vervolgens **[!UICONTROL Delete]**.
+   * Audiotracks—Onder de **Audiotracks** , selecteert u een of meer audiotrackbestanden die u uit de video wilt verwijderen en selecteert u **[!UICONTROL Delete]**.
+
+1. Selecteer in het dialoogvenster Verwijderen **[!UICONTROL OK]**.
+1. Publiceer de video.
+
+### Ondertitel- of audiotrackbestanden downloaden die naar een video zijn geüpload
+
+U kunt een of meer ondertitels of audiotrackbestanden downloaden die u voor gebruik met een video hebt geüpload. U kunt alle geselecteerde bestanden downloaden als ZIP-bestand of een aparte downloadmap maken voor elk bestand.
+
+De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet worden gedownload.
+
+**U kunt als volgt ondertitels of audiotrackbestanden downloaden van een video:**
+
+1. Navigeer naar het video-element waarvan u de standaardaudiotrack wilt instellen.
+1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
+1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
+1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. Voer een van de volgende handelingen uit:
+
+   * Ondertitels—Onder de **Ondertitels** Selecteer een of meer ondertitelingsbestanden die u van de video wilt downloaden en selecteer vervolgens **[!UICONTROL Download]**.
+   * Audiotracks—Onder de **Audiotracks** Selecteer een of meer audiotrackbestanden die u van de video wilt downloaden en selecteer vervolgens **[!UICONTROL Download]**.
+
+1. Stel in het dialoogvenster Downloaden de volgende opties in:
+
+   | Optie | Beschrijving |
+   |--- |--- |
+   | Opslaan als | Gebruik de standaardbestandsnaam die u in het tekstveld Opslaan als hebt opgegeven of geef uw eigen naam op. |
+   | Een aparte map maken voor elk element | Maak een map voor elk ondertitelbestand of audiotrackbestand dat u hebt geselecteerd om te downloaden. |
+   | E-mail | Gebruik uw standaard e-mailprogramma om het .zip-bestand naar een opgegeven e-mailadres te verzenden. |
+   | Assets | Hiermee geeft u het aantal bestanden op dat u downloadt en de gecombineerde totale grootte van alle geselecteerde bestanden. Als u deze optie uitschakelt, wordt het dialoogvenster **[!UICONTROL Download]** , zodat u geen bestanden kunt downloaden. |
+1. Selecteer **[!UICONTROL Download]**.
+1. Publiceer de video. Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
+
+
+
+
+
+
 ## Gesloten bijschriften of ondertitels toevoegen aan video {#adding-captions-to-video}
+
+>[!IMPORTANT]
+>
+Adobe beveelt aan [multi-subtitle en multi-audiospoorcapaciteit toelaten](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
 
 U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen, vermijdt u de behoefte om de audio te duwen, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Er verschijnen ondertitels in vreemde talen, zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 
@@ -556,7 +832,7 @@ Ondertiteling met gesloten deuren zorgt ook voor betere toegankelijkheid voor do
 
 >[!NOTE]
 >
->De videospeler die u gebruikt moet de vertoning van gesloten titels steunen.
+De videospeler die u gebruikt moet de vertoning van gesloten titels steunen.
 
 Zie ook [Toegankelijkheid in Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
 
@@ -570,7 +846,7 @@ Zie [Statische (niet-afbeeldings) inhoud bedienen](https://experienceleague.adob
 
    Zorg ervoor dat het bestand dat u maakt, voldoet aan de WebVTT-standaard (Web Video Text Tracks). De bestandsnaamextensie voor ondertiteling is .VTT. U kunt meer informatie over de WebVTT ondertitelingsnorm leren.
 
-   Zie [WebVTT: De indeling Webvideoteksttracks](https://w3c.github.io/webvtt/).
+   Zie [WebVTT: De indeling Web Video Text Tracks](https://w3c.github.io/webvtt/).
 
    Er zijn zowel gratis als premiumtools en -services die u kunt gebruiken voor het schrijven van bijschriften en ondertitelingsbestanden buiten Dynamic Media. Als u bijvoorbeeld een eenvoudig videobijschriftbestand zonder opmaak wilt maken, kunt u de volgende gratis gereedschappen voor het maken en bewerken van bijschriften gebruiken:
 
@@ -584,9 +860,9 @@ Zie [Statische (niet-afbeeldings) inhoud bedienen](https://experienceleague.adob
 
    >[!NOTE]
    >
-   >Voor algemene ondersteuning van videoondertitels in meerdere talen vereist de WebVTT-standaard dat u afzonderlijke .vtt-bestanden maakt en dat u voor elke taal die u wilt ondersteunen, een oproep doet.
+   Voor algemene ondersteuning van videoondertitels in meerdere talen, vereist de WebVTT-standaard dat u afzonderlijke .vtt-bestanden maakt en dat u voor elke taal die u wilt ondersteunen, een oproep doet.
 
-   Over het algemeen wilt u het VTT-bestand van het bijschrift dezelfde naam geven als het videobestand en dit bestand toevoegen met de landinstelling van de taal, zoals -EN, of -FR of -DE. Hierdoor kunt u het genereren van video-URL&#39;s automatiseren met behulp van uw bestaande systeem voor webcontentbeheer.
+   Over het algemeen wilt u het VTT-bestand van het bijschrift dezelfde naam geven als het videobestand en dit bestand toevoegen met de landinstelling van de taal, zoals -EN, of -FR of -DE. Op deze manier kunt u het genereren van video-URL&#39;s automatiseren met behulp van uw bestaande systeem voor webcontentbeheer.
 
 1. Upload in Experience Manager uw WebVTT-bijschriftbestand naar DAM.
 1. Ga naar de *gepubliceerd* video-element dat u wilt koppelen aan het bijschriftbestand dat u hebt geüpload.
@@ -615,7 +891,7 @@ U kunt uw lange formuliervideo&#39;s beter weergeven en navigeren door hoofdstuk
 
 >[!NOTE]
 >
->De videospeler die wordt gebruikt moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
+De videospeler die wordt gebruikt moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -645,13 +921,13 @@ In het bovenstaande voorbeeld: `Chapter 1` is de cue-id en is optioneel. De acti
 
 Omdat u een HTML5-videoviewer gebruikt, moet u ervoor zorgen dat het hoofdstukbestand dat u maakt, voldoet aan de WebVTT-standaard (Web Video Text Tracks). De bestandsextensie van het hoofdstuk is .VTT. U kunt meer informatie over de WebVTT ondertitelingsnorm leren.
 
-Zie [WebVTT: De indeling Webvideoteksttracks](https://w3c.github.io/webvtt/).
+Zie [WebVTT: De indeling Web Video Text Tracks](https://w3c.github.io/webvtt/).
 
 **Hoofdstukmarkeringen aan video toevoegen:**
 
 1. Sla het VTT-bestand op in UTF8-codering, zodat u problemen met tekenuitvoering in de hoofdstuktiteltekst voorkomt.
 
-   Over het algemeen wilt u het hoofdstuk VTT-bestand dezelfde naam geven als het videobestand en het toevoegen met hoofdstukken. Hierdoor kunt u het genereren van video-URL&#39;s automatiseren met behulp van uw bestaande systeem voor webcontentbeheer.
+   Over het algemeen wilt u het hoofdstuk VTT-bestand dezelfde naam geven als het videobestand en het toevoegen met hoofdstukken. Op deze manier kunt u het genereren van video-URL&#39;s automatiseren met behulp van uw bestaande systeem voor webcontentbeheer.
 1. Upload in Experience Manager uw WebVTT-hoofdstukbestand.
 
    Zie [Elementen uploaden](/help/assets/manage-digital-assets.md#uploading-assets).
@@ -689,13 +965,13 @@ Zie [WebVTT: De indeling Webvideoteksttracks](https://w3c.github.io/webvtt/).
 
 
 
-## Informatie over videominiaturen {#about-video-thumbnails}
+## Videominiaturen {#about-video-thumbnails}
 
 Een videominiatuur is een verkleinde versie van een videoframe of een afbeeldingselement dat de video voor de klant vertegenwoordigt. De miniatuur moet de klant aanmoedigen om de video te selecteren.
 
-Aan alle video&#39;s in de Experience Manager moet een miniatuur zijn gekoppeld. u kunt een miniatuur niet verwijderen zonder deze te vervangen. Wanneer u een video uploadt naar Experience Manager, wordt standaard het eerste frame gebruikt als miniatuur. U kunt de miniatuur echter aanpassen voor bijvoorbeeld branding of visuele zoekopdracht. Wanneer u een videominiatuur aanpast, kunt u de video afspelen en pauzeren op het frame dat u wilt gebruiken, of een afbeeldingselement selecteren dat u al hebt geüpload en *gepubliceerd* in uw Digital Asset Manager.
+Aan alle video&#39;s in de Experience Manager moet een miniatuur zijn gekoppeld. U kunt een miniatuur niet verwijderen zonder deze te vervangen. Wanneer u een video uploadt naar Experience Manager, wordt standaard het eerste frame gebruikt als miniatuur. U kunt de miniatuur echter aanpassen voor bijvoorbeeld branding of visuele zoekopdracht. Wanneer u een videominiatuur aanpast, kunt u de video afspelen en pauzeren op het frame dat u wilt gebruiken. U kunt ook een afbeeldingselement selecteren dat u al hebt geüpload en *gepubliceerd* in uw Digital Asset Manager.
 
-Wanneer de miniatuur voor een video is gewijzigd, wordt het genereren van miniaturen via Asset compute Service bij het opnieuw verwerken van de video overgeslagen.
+Wanneer de miniatuur voor een video wordt gewijzigd, wordt het genereren van miniaturen via de Asset compute Service bij het opnieuw verwerken van de video overgeslagen.
 
 De mogelijkheid om een videominiatuur aan te passen is alleen beschikbaar nadat u een videoprofiel hebt toegepast op de map waarin de video zich bevindt.
 
@@ -714,7 +990,7 @@ De mogelijkheid om een videominiatuur aan te passen is alleen beschikbaar nadat 
 1. Selecteer op de pagina Eigenschappen van video de optie **[!UICONTROL Change Thumbnail]**.
 1. Voer een van de volgende handelingen uit op de pagina Miniatuur wijzigen:
 
-   * Een frame van de video gebruiken als de nieuwe miniatuur:
+   * Een frame uit de video gebruiken als de nieuwe miniatuur:
 
       * Selecteer op de werkbalk de optie **[!UICONTROL Select Frame from video]**.
       * Selecteer de knop Afspelen en selecteer vervolgens de knop Pauzeren in het frame dat u wilt vastleggen als de nieuwe miniatuur van de video.
@@ -723,7 +999,7 @@ De mogelijkheid om een videominiatuur aan te passen is alleen beschikbaar nadat 
 
       * Selecteer op de werkbalk de optie **[!UICONTROL Select Thumbnail from Assets]**.
       * Selecteer **[!UICONTROL Select Thumbnail]**.
-      * Navigeer naar een eerder geüpload en gepubliceerd afbeeldingselement dat u wilt gebruiken. Het formaat van het element wordt automatisch aangepast om te dienen als miniatuurafbeelding voor de video.
+      * Navigeer naar een eerder geüpload en gepubliceerd afbeeldingselement dat u wilt gebruiken. De grootte van het element wordt automatisch gewijzigd om te dienen als miniatuurafbeelding voor de video.
       * Selecteer het afbeeldingselement en selecteer vervolgens **[!UICONTROL Select]**.
 
 1. Selecteer op de pagina Miniatuur wijzigen de optie **[!UICONTROL Save Change]**.
@@ -852,7 +1128,7 @@ Deze API heeft de volgende drie parameters:
 | `manifestType` | Kan `ManifestType.DASH` of `ManifestType.HLS` |
 | `onlyIfPublished` | Ingesteld op true voor het geval dat de manifest-uri alleen wordt gegenereerd als deze wordt gepubliceerd en beschikbaar is op de leveringslaag. |
 
-Als u de manifest-URL&#39;s voor video&#39;s wilt ophalen met de bovenstaande methode, voegt u een [videocoderingsprofiel](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) naar een map voor het uploaden van video&#39;s. Dynamic Media verwerkt deze video&#39;s op basis van de coderingen in het videocoderingsbestand dat aan de map is toegewezen. Nu kunt u de bovenstaande API aanroepen om manifest-URL&#39;s voor de geüploade video&#39;s op te halen.
+Als u de manifest-URL&#39;s voor video&#39;s wilt ophalen met de bovenstaande methode, voegt u een [videocoderingsprofiel](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) naar de map &quot;upload videos&quot;. Dynamic Media verwerkt deze video&#39;s op basis van de coderingen in het videocoderingsbestand dat aan de map is toegewezen. Nu kunt u de bovenstaande API aanroepen om manifest-URL&#39;s voor de geüploade video&#39;s op te halen.
 
 ### Foutscenario&#39;s
 

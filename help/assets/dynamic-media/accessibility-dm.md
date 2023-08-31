@@ -7,7 +7,7 @@ content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 0d3262a3182063e69f764339e7937e2f83ad7bbb
+source-git-commit: 483a72f67f361023ebeefa3d74ec9f35a5f4f765
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -20,12 +20,12 @@ Dynamic Media ondersteunt toetsenbordbesturing en ondersteunende hulpmiddelen, z
 
 ## Ondersteuning voor toetsenbordtoegankelijkheid in Dynamic Media {#keyboard-support-in-dm}
 
-Omdat Dynamic Media een insteekmodule is voor [!DNL Experience Manager Assets], is het meeste toetsenbordbesturingsgedrag hetzelfde als in [!DNL Experience Manager Assets]. De `Cancel` in Dynamic Media heeft dezelfde focusmarkering als in [!DNL Experience Manager Assets]. Het reageert ook op de `Spacebar` key as in [!DNL Experience Manager Assets]. Zie [sneltoetsen in elementen](/help/assets/accessibility.md#keyboard-shortcuts).
+Omdat Dynamic Media een insteekmodule is voor [!DNL Experience Manager Assets], is het meeste toetsenbordbesturingsgedrag hetzelfde als in [!DNL Experience Manager Assets]. Bijvoorbeeld de `Cancel` in Dynamic Media heeft dezelfde focus als in [!DNL Experience Manager Assets]. Het reageert ook op de `Spacebar` key as in [!DNL Experience Manager Assets]. Zie [sneltoetsen in elementen](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Toetsen die door de interface-elementen Individuele gebruikers in Dynamic Media worden ondersteund, zijn meestal duidelijk en gemakkelijk te vinden. Toetsenbordbesturing in Dynamic Media gaat over het volgende:
 
 * Gebruiksmogelijkheden `Tab` en `Shift+Tab` toetsaanslagen om te navigeren tussen interactieve elementen op de pagina.
-Gebruiken `Tab` gaat de invoerfocus naar het volgende interface-element in de tabvolgorde; gebruiken `Shift+Tab` Hiermee wordt invoerfocus teruggezet naar het vorige gebruikersinterface-element.
+Gebruiken `Tab` gaat inputnadruk naar het volgende gebruikersinterface element in de lusjeorde vooruit; het gebruiken `Shift+Tab` Hiermee wordt invoerfocus teruggezet naar het vorige gebruikersinterface-element.
 Het focustraversal volgt de natuurlijke locatie van het interface-element op het scherm en beweegt van links naar rechts en vervolgens van boven naar beneden. Als een veld een fout bevat, kunt u bovendien op `Tab` om de focus naar de afbeelding te verplaatsen.
 * De mogelijkheid om de `Spacebar` en `Enter` toets voor het activeren van standaardelementen van de gebruikersinterface, zoals knoppen en vervolgkeuzelijsten.
 * Mogelijkheid om de toetsenbordfocus te zien op het actieve element. Het element van de gebruikersinterface dat inputnadruk heeft ontving een visuele nadrukaanwijzing als grens die rond het gebruikersinterface element wordt teruggegeven.
@@ -39,7 +39,7 @@ Zie [Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken]
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (Experience Manager 6.5) or Coral Spectrum (in Skyline)) as entire Experience Manager Assets.  -->
 
-<!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md##adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
+<!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
 
 <!-- I think we should definitely mention this in the DM-specific area of documentation for keyboard support. -->
 
@@ -71,4 +71,3 @@ Zie [Video in Dynamic Media - Gesloten bijschriften of ondertitels toevoegen aan
 >
 >* [Toegankelijkheid voor Adobe-oplossingen](https://www.adobe.com/accessibility.html)
 >* [Toegankelijkheid in Experience Manager Assets](/help/assets/dynamic-media/accessibility-dm.md)
-
