@@ -3,9 +3,9 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Leer meer over lokale validatie, foutopsporing, de bestandsstructuur in de flexibele modus en hoe u van de oude modus naar de flexibele modus kunt migreren.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
+source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
 workflow-type: tm+mt
-source-wordcount: '2988'
+source-wordcount: '2990'
 ht-degree: 0%
 
 ---
@@ -113,13 +113,13 @@ Deze map bevat relatieve symbolische koppelingen naar bestanden onder conf.dispa
 
 Voorbeeldopdrachten vereist om deze symbolische koppelingen te maken:
 
-Apple® macOS, Linux en WSL
+Apple macOS, Linux en WSL
 
 ```
 ln -s ../available_vhosts/wknd.vhost wknd.vhost
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.vhost ..\available_vhosts\wknd.vhost
@@ -151,13 +151,13 @@ Deze map bevat relatieve symbolische koppelingen naar bestanden onder conf.dispa
 
 Voorbeeldopdrachten vereist om deze symbolische koppelingen te maken:
 
-Apple® macOS, Linux en WSL
+Apple macOS, Linux en WSL
 
 ```
 ln -s ../available_farms/wknd.farm wknd.farm
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.farm ..\available_farms\wknd.farm
