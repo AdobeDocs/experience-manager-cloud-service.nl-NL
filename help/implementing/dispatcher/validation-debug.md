@@ -3,9 +3,9 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Leer meer over lokale validatie, foutopsporing, de bestandsstructuur in de flexibele modus en hoe u van de oude modus naar de flexibele modus kunt migreren.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2988'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,28 @@ Als u precies de gastheer wilt aanpassen omdat u veelvoudige vhost dossiers hebt
 </VirtualHost>
 ```
 
+* `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
+
+Deze map bevat relatieve symbolische koppelingen naar bestanden onder conf.dispatcher.d/available_hosts.
+
+Voorbeeldopdrachten vereist om deze symbolische koppelingen te maken:
+
+Apple® macOS, Linux en WSL
+
+```
+ln -s ../available_vhosts/wknd.vhost wknd.vhost
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.vhost ..\available_vhosts\wknd.vhost
+```
+
+>[!NOTE]
+>
+> Wanneer het werken met symbolische verbindingen onder Vensters, zou u in een opgeheven bevelherinnering, in het Subsysteem van Vensters voor Linux moeten lopen of hebben [Symbolische koppelingen maken](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) toegewezen bevoegdheid.
+
 * `conf.d/rewrites/rewrite.rules`
 
 Het bestand wordt vanuit uw `.vhost` bestanden. Er is een set herschrijfregels voor `mod_rewrite`.
@@ -122,6 +144,28 @@ Het bestand wordt opgenomen vanuit de `dispatcher_vhost.conf` bestand. U kunt de
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
 U kunt één of meerdere van deze dossiers hebben, en zij bevatten landbouwbedrijven om gastheernamen aan te passen en de module van de Verzender toe te staan om elk landbouwbedrijf met verschillende regels te behandelen. Bestanden worden gemaakt in het dialoogvenster `available_farms` en ingeschakeld met een symbolische koppeling in het dialoogvenster `enabled_farms` directory. Van de `.farm` bestanden, andere bestanden, zoals filters, cacheregels en andere bestanden, worden opgenomen.
+
+* `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
+
+Deze map bevat relatieve symbolische koppelingen naar bestanden onder conf.dispatcher.d/available_farm.
+
+Voorbeeldopdrachten vereist om deze symbolische koppelingen te maken:
+
+Apple® macOS, Linux en WSL
+
+```
+ln -s ../available_farms/wknd.farm wknd.farm
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.farm ..\available_farms\wknd.farm
+```
+
+>[!NOTE]
+>
+> Wanneer het werken met symbolische verbindingen onder Vensters, zou u in een opgeheven bevelherinnering, in het Subsysteem van Vensters voor Linux moeten lopen of hebben [Symbolische koppelingen maken](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) toegewezen bevoegdheid.
 
 * `conf.dispatcher.d/cache/rules.any`
 
