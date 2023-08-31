@@ -2,9 +2,9 @@
 title: Mijn werkruimte voor de weergave Middelen
 description: Mijn werkruimte is een pagina die aanpasbare visuele modules voor gemakkelijke toegang tot zeer belangrijke gebieden van het gebruikersinterface van Activa en informatie verstrekt die voor de gebruiker het meest relevant is.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: ab607be0cc4a6c7f686978250a513c776f73024e
+source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '705'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,17 @@ Highlights upcoming features for Assets.
 
 Bestanden, mappen en verzamelingen vastzetten om sneller toegang te krijgen tot deze items wanneer u deze later nodig hebt. Alle vastgezette items worden weergegeven in het dialoogvenster **Snelle toegang** van Mijn werkruimte. U kunt ze openen met Mijn werkruimte in plaats van naar de locatie te navigeren waar ze zijn opgeslagen in de opslagplaats.
 
-Als u een element, map of verzameling wilt vastzetten, selecteert u het item en klikt u op **[!UICONTROL Pin to Quick Access]**.
+Een element, map of verzameling vastzetten:
 
-![Taken in de werkruimte](assets/quick-access.png)
+1. Selecteer het item en klik op **[!UICONTROL Pin to Quick Access]**.
+
+1. Selecteer deze optie als u het item alleen voor u, voor de hele organisatie of voor geselecteerde groepen wilt vastzetten. Als u **[!UICONTROL For groups]**, definieert u de groepnamen in het dialoogvenster **[!UICONTROL Pin for groups]** veld.
+
+   ![Items vastzetten voor groepen](assets/pin-items-for-groups.png)
+1. Klik op **[!UICONTROL Pin]**.
+
+   Het geselecteerde item wordt weergegeven in het dialoogvenster **[!UICONTROL Quick Access]** van Mijn werkruimte.
+   ![Taken in de werkruimte](assets/quick-access.png)
 
 **Inzichten**
 
@@ -74,10 +82,10 @@ De **[!UICONTROL Top Downloads]** worden de bovenste tien gedownloade elementen 
 
 Alle widgets worden standaard weergegeven, maar u kunt de widgets die in Mijn werkruimte worden weergegeven, in- of uitschakelen. De voorkeuren zijn specifiek voor elke gebruiker.
 
-1. Klikken **[!UICONTROL My Workspace]** beschikbaar in het linkernavigatievenster en klik op **[!UICONTROL Customize]**.
+1. Klikken **[!UICONTROL My Workspace]** beschikbaar in het linkernavigatievenster en klik **[!UICONTROL Customize]**.
 
 1. Schakel de schakeloptie uit voor de widget die u niet hoeft weer te geven in de werkruimte. U kunt een widget ook naar een geschikte locatie slepen om de weergavevolgorde in de werkruimte bij te werken.
 
-1. Klikken **[!UICONTROL Done]** om de wijzigingen op te slaan.
+1. Klikken **[!UICONTROL Done]** om de wijzigingen op te slaan
 
    ![Widgets aanpassen in werkruimte](assets/customize-workspace.png)
