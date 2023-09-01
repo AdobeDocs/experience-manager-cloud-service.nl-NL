@@ -1,9 +1,9 @@
 ---
 title: Forms Designer downloaden en installeren
 description: Met Forms Designer kunt u XDP- en PDF-formuliersjablonen maken die als sjabloon voor een document met records fungeren. Designer is beschikbaar in het dialoogvenster [!DNL AEM Forms] licentie.
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 34d966f6550cb9e507c751b580b16a3043137255
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,9 @@ Designer is een toepassing waarmee u met eenvoudige muisfuncties grafische formu
 
 Als u de nieuwste versie van AEM Forms Designer 64-bits of 32-bits wilt installeren, hebt u de volgende software en minimale hardware nodig om Designer te installeren en configureren:
 
->[!NOTE]
->
-> Als u 32-bits Designer gebruikt, moet u de installatie van 32-bits Designer ongedaan maken om problemen bij de installatie van 64-bits Designer te voorkomen.
-
-<!--
->[!BEGINTABS]
-
->[!TAB 64-bit OS (Recommended)] -->
-
 +++ 64-bits Designer (aanbevolen)
 
+* Verwijder de 32-bits versie van Designer voordat u de 64-bits versie van Forms Designer installeert.
 * [!DNL Microsoft® Windows® 2016 Server] of [!DNL Microsoft® Windows® 2019 Server], en [!DNL Microsoft® Windows® 10]
 * Minimaal 2 GB RAM
 * 20 GB schijfruimte
