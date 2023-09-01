@@ -2,9 +2,9 @@
 title: Overzicht van ervaringsfragmenten
 description: Breid de Fragmenten van de Ervaring van Adobe Experience Manager as a Cloud Service uit.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1646'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ Bijvoorbeeld:
 >[!NOTE]
 >
 >Koppelingen verwijzen altijd naar de publicatie-instantie. Ze zijn bedoeld voor gebruik door derden. De koppeling wordt dus altijd aangeroepen vanuit het publicatie-exemplaar en niet vanuit de auteur-instantie.
+>
+>Zie voor meer informatie [URL&#39;s extern maken](/help/implementing/developing/tools/externalizer.md).
 
 ![Onbewerkte HTML-uitvoering](assets/xf-14.png)
 
