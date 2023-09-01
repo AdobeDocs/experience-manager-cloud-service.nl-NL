@@ -2,7 +2,7 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f28b8a85de76a1658ef45c509cbf5600baa1bb3a
+source-git-commit: 4cf7d3692b53e5cb5baecd7d0ee93824d9186380
 workflow-type: tm+mt
 source-wordcount: '2267'
 ht-degree: 0%
@@ -346,7 +346,7 @@ Wijzigingen worden automatisch in de inhoud opgeslagen.
 
 ### Inhoudsfragmenten bewerken {#edit-content-fragment}
 
-Als u binnen [componentmodus](#component-mode) en selecteert u een [Inhoudsfragment](/help/assets/content-fragments/content-fragments.md) u kunt de details in de componentrail bewerken.
+Als u binnen [componentmodus](#component-mode) en selecteert u een [Inhoudsfragment](/help/sites-cloud/administering/content-fragments/overview.md) u kunt de details in de componentrail bewerken.
 
 ![Een inhoudsfragment bewerken](assets/ue-edit-cf.png)
 
@@ -354,7 +354,7 @@ De velden die zijn gedefinieerd in het inhoudsmodel van het geselecteerde inhoud
 
 Wijzigingen worden automatisch in de inhoud opgeslagen.
 
-Als u het inhoudsfragment in het dialoogvenster [Inhoudsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in plaats daarvan, klik [bewerkknop](#edit) in de modusrail.
+Als u het inhoudsfragment in het dialoogvenster [Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) in plaats daarvan, klik [bewerkknop](#edit) in de modusrail.
 
 ### Componenten toevoegen aan containers {#adding-components}
 
