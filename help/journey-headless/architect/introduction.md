@@ -2,9 +2,9 @@
 title: Content Modeling for AEM as a Headless CMS - An Introduction
 description: Een inleiding tot het gebruik van de functies van Adobe Experience Manager as a Cloud Service als een Headless CMS voor het modelleren van inhoud voor uw project.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: d280bcfa7e4fe297952309a94bc0229d08fd5f9c
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -81,6 +81,9 @@ Nu u de concepten en de terminologie hebt geleerd, is de volgende stap: [Leer de
 * AEM Headless Developer Journey
    * [Meer informatie over CMS Headless Development](/help/journey-headless/developer/learn-about.md)
    * [Leer hoe u uw inhoud kunt modelleren](/help/journey-headless/developer/model-your-content.md)
-* [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
+
+<!--
+* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
 * [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+-->
