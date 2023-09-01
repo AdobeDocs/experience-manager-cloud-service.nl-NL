@@ -2,9 +2,9 @@
 title: Ontwerpen voor AEM als een headless CMS - Een inleiding
 description: Een inleiding tot het gebruiken van de eigenschappen van Adobe Experience Manager as a Cloud Service als Zwaardeloze CMS om inhoud voor uw project te ontwerpen.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '691'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Dit betekent dat uw inhoud op elk apparaat in een groot aantal indelingen kan wo
 
 ## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
 
-Wat is AEM?
+Dus wat is AEM?
 
 In de eerste plaats is AEM een contentbeheersysteem met een groot aantal functies die ook aan uw vereisten kunnen worden aangepast.
 
@@ -77,10 +77,16 @@ Nu u de concepten en de terminologie hebt geleerd, is de volgende stap: [Leer de
 
 ## Aanvullende bronnen {#additional-resources}
 
+* [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
+
+* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+
 * AEM Headless Developer Journey
    * [Meer informatie over CMS Headless Development](/help/journey-headless/developer/learn-about.md)
    * [Leer hoe u uw inhoud kunt modelleren](/help/journey-headless/developer/model-your-content.md)
 
-* Reis van architect zonder hoofdinhoud AEM
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 
-* Reis voor omzetting van inhoud zonder kop AEM
+* [Reis van architect zonder hoofdinhoud AEM](/help/journey-headless/architect/overview.md)
+
+* [Reis voor omzetting van inhoud zonder kop AEM](/help/journey-headless/translation/overview.md)

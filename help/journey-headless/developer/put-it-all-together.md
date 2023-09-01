@@ -2,9 +2,9 @@
 title: Alles bij elkaar plaatsen - uw app en uw inhoud in AEM headless
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw AEM Project met inbegrip van Inhoudsfragmenten, uw GraphQL-aanroepen, uw REST API-aanroepen en uw toepassing kunt uitvoeren en voorbereiden op live gaan.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Een volledige AEM omgeving bestaat uit een Auteur, Publish en Dispatcher. Deze c
 
 * **De service Auteur** In dit deelvenster kunnen interne gebruikers inhoud maken, beheren en voorvertonen.
 
-* **De service Publiceren** wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de interactie tussen eindgebruikers. Inhoud wordt na bewerking en goedkeuring in de service Auteur gedistribueerd naar de service Publiceren. Het meest gebruikelijke implementatiepatroon met toepassingen zonder kop is dat de productieversie van de toepassing verbinding maakt met een AEM-publicatieservice.
+* **De service Publiceren** wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de interactie tussen eindgebruikers. Inhoud wordt na bewerking en goedkeuring in de service Auteur gedistribueerd naar de service Publiceren. Het gemeenschappelijkste plaatsingspatroon met AEM hoofdloze toepassingen moet de productieversie van de toepassing hebben met de AEM publicatieservice verbinden.
 
 * **De verzender** is een statische webserver die is uitgebreid met de module AEM Dispatcher. Webpagina&#39;s die door de instantie publish worden gemaakt, worden in het cachegeheugen opgeslagen om de prestaties te verbeteren.
 
@@ -86,7 +86,7 @@ In een productiesysteem zullen een Dispatcher en een http Apache-server altijd v
 
 Als u uw AEM project zonder kop wilt voorbereiden op de start, moet u ervoor zorgen dat alle onderdelen van uw project goed werken.
 
-Om dat te doen, moet je alles samenvoegen: code, inhoud, en configuratie en test het in een lokale ontwikkelomgeving voor gaan levende gereedheid.
+Om dat te doen, moet u alles samenvoegen: code, inhoud, en configuratie en het testen in een lokale ontwikkelomgeving voor levende bereidheid.
 
 De lokale ontwikkelomgeving bestaat uit drie hoofdgebieden:
 
@@ -114,4 +114,6 @@ Ga door met het doornemen van het document zonder AEM [Hoe u met uw headless toe
 * [AEM Headless SDK voor clientbrowsers (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 * [AEM Headless SDK voor server-side/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 * [AEM headless SDK voor Java™](https://github.com/adobe/aem-headless-client-java)
-
+* [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

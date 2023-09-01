@@ -2,9 +2,9 @@
 title: Hoe u met uw headless toepassing kunt gaan werken
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u een toepassing zonder kop kunt implementeren door uw lokale code in Git te nemen en deze naar Cloud Manager Git voor de CI/CD-pijplijn te verplaatsen.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Voor gebruikers die de beste ervaring hebben wanneer ze de toepassing zonder AEM
 * Toepassings- en ruimtespecifieke prestatierapporten openen
    * Als de server is geactiveerd, controleert u of de algemene meetwaarden groen/oranje/rood zijn en identificeert u vervolgens specifieke toepassingsproblemen
    * Open dezelfde rapporten die hierboven zijn gefilterd naar app of space (bijvoorbeeld Photoshop-bureaublad, paywall)
-   * Logbestand-API&#39;s van Splunk gebruiken om toegang te krijgen tot service- en toepassingsprestaties
+   * Logbestand-API&#39;s van Splunk gebruiken voor toegang tot service- en toepassingsprestaties
    * Neem contact op met de Klantenondersteuning als er andere problemen zijn.
 
 ## Problemen oplossen {#troubleshooting}
@@ -101,9 +101,9 @@ Volg deze beste praktijken als algemene benadering van het zuiveren:
 
 ### Een probleem aanmelden met ondersteuning {#logging-a-bug-with-support}
 
-Om een insect met Steun efficiënt te registreren voor het geval u verdere hulp nodig hebt, doe het volgende:
+Om een insect met Steun efficiënt te registreren voor het geval dat u verdere hulp nodig hebt, doe het volgende:
 
-* Maak, indien nodig, screenshots van het probleem
+* Indien nodig screenshots van het probleem nemen
 * Een manier documenteren om het probleem te reproduceren
 * Documenteer de inhoud waarmee de uitgave wordt gereproduceerd
 * Logboek een kwestie door het portaal van de Steun van de AEM met de aangewezen prioriteit
@@ -115,7 +115,7 @@ Gefeliciteerd! U hebt de AEM Headless Developer Journey voltooid! U zou nu een i
 * Het verschil tussen koploze en koprijke levering van inhoud.
 * AEM functies zonder kop.
 * Hoe te om Hoofdloze project te organiseren en te AEM.
-* Hoe te om koploze inhoud in AEM tot stand te brengen.
+* Hoe te om koploze inhoud in AEM te creëren.
 * Hoe te om koploze inhoud in AEM terug te winnen en bij te werken.
 * Hoe te om met een AEM Zwaardeloos project te leven.
 * Wat moet u doen na de go-live.
@@ -130,6 +130,9 @@ Als dit soort flexibiliteit iets u voor uw project nodig hebt, ga aan het facult
 
 ## Aanvullende bronnen {#additional-resources}
 
+* [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 * [Een overzicht van het Opstellen aan AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Cloud Manager gebruiken om uw code te implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
 * [Integreer de opslagplaats voor de Intel Health Care Management Suite van Cloud Manager met een externe opslagplaats voor Git en implementeer een project om as a Cloud Service te AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
