@@ -2,10 +2,10 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: bb7d8145eb954557d185b58f884532f8f08c5a54
+source-git-commit: a1686d7796bb1e310b776195bd19df98f6f10650
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 2%
+source-wordcount: '305'
+ht-degree: 1%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 2%
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 13239 {#release-13239}
+## Release 13323 {#release-13323}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13239 samengevat, die op 29 augustus 2023 openbaar werd gemaakt. Deze onderhoudrelease vervangt release 13206.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13323 samengevat, die op 1 september 2023 openbaar werd gemaakt. Deze onderhoudrelease vervangt release 13239.
 
 2023.9.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
-### Verbeteringen {#enhancements-13239}
+### Verbeteringen {#enhancements-13323}
 
 - GRANITE-46784: Voeg optie toe om BeonderAuthenticationHandler onbruikbaar te maken
 - GRANITE-36205: Update internal eak release version to latest
@@ -31,7 +31,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13239 same
 - GRANITE-46631: Update Jackrabbit versie to 2.20.11
 - SKYOPS-61895: Update to Jackrabbit FileVault 3.7.0
 
-### Opgeloste problemen {#fixed-issues-13239}
+### Opgeloste problemen {#fixed-issues-13323}
 
 - SKYOPS-63290: Correctie van onjuiste evolutie van emmers
 - SKYOPS-54607: Ratelimiter-serverlaadberekening is niet correct voor een verzoek dat is mislukt
@@ -41,11 +41,12 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13239 same
 - GRANITE-46292: Okta SAML configuratie werkt niet na AEM Cloud-update
 - GRANITE-47059: SSL-bundel van graniet verwijderen
 
-### Bekende problemen {#known-issues-13239}
+### Bekende problemen {#known-issues-13323}
 
-Geen.
+- SITES-15622: GraphQL - Issue with persisted query with number &amp; boolean parameters.
+- SITES-15654: GraphQL - Issues with union and properties of same name.
 
-### Ingesloten technologieën {#embedded-tech-13239}
+### Ingesloten technologieën {#embedded-tech-13323}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
