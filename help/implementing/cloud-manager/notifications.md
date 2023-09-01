@@ -2,9 +2,9 @@
 title: Meldingen
 description: Leer hoe te om informatie over pijpleidingsplaatsingen te ontvangen gebruikend het het berichtsysteem van Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Leer hoe Cloud Manager u op de hoogte brengt van belangrijke gebeurtenissen.
 
 Deze meldingen worden verzonden via de [!UICONTROL Experience Cloud] meldingssysteem voor gebruikers in de **Zakelijke eigenaar**, **Programmabeheerder**, en **Implementatiebeheer** rollen.
 
-De meldingen worden weergegeven in een zijbalk in [!UICONTROL Cloud Manager] en door de Adobe [!UICONTROL Experience Cloud]. Het belpictogram in de koptekst is gemarkeerd wanneer u nieuwe meldingen hebt.
+De meldingen worden weergegeven in een zijbalk in [!UICONTROL Cloud Manager] en gedurende de gehele Adobe [!UICONTROL Experience Cloud]. Het belpictogram in de koptekst is gemarkeerd wanneer u nieuwe meldingen hebt.
 
 ![Meldingspictogram](assets/notifications-bell-badged.png)
 
@@ -28,7 +28,7 @@ Klik op het belpictogram om de zijbalk te openen en de meldingen weer te geven. 
 
 ![Zijbalk voor meldingen](assets/notifications-activities.png)
 
-De **Aankondigingen** bevat Adobe-productaankondigingen. Aankondigingen hebben betrekking op het product.
+De **Aankondigingen** bevat productmededelingen voor Adoben. Aankondigingen betreffen het product.
 
 ![Zijbalk voor meldingen](assets/notificaitons-announcements.png)
 
@@ -54,7 +54,7 @@ In abonnementen wordt gedefinieerd voor welke producten u meldingen ontvangt en 
 
 ![Abonnementen op meldingen](assets/notifications-subscriptions.png)
 
-Standaard ontvangt u alle meldingen voor alle producten. Klikken op **Aanpassen** naast een product om de typen meldingen te definiëren die u voor dat product ontvangt.
+Standaard ontvangt u alle meldingen voor alle producten, zowel in de toepassing als via e-mail. Klik op het chevron naast een productnaam om de gedetailleerde opties weer te geven en de typen meldingen te definiëren die u voor dat product ontvangt. U kunt ook de opties op productniveau in- of uitschakelen om alle opties voor het product in of uit te schakelen.
 
 ![Aanpassing van berichtabonnement](assets/notifications-subscriptions-customize.png)
 
@@ -70,7 +70,7 @@ Gebruik de vervolgkeuzelijst om aan de lijst met categorieën toe te voegen die 
 
 Er worden enkele seconden waarschuwingen weergegeven in de rechterbovenhoek van het venster. Gebruik de **Waarschuwingen** in deze sectie om te definiëren voor welke meldingen u waarschuwingen ontvangt.
 
-![Meldingswaarschuwingen](assets/notifications-alerts.png)
+![Waarschuwingen](assets/notifications-alerts.png)
 
 U kunt het gedrag van de waarschuwingen definiëren.
 
@@ -80,7 +80,7 @@ U kunt het gedrag van de waarschuwingen definiëren.
 
 ### E-mails {#emails}
 
-Meldingen zijn beschikbaar in de webgebruikersinterface van Adobe [!UICONTROL Experience Cloud] oplossingen. U kunt ervoor kiezen deze meldingen via e-mail te verzenden in het dialoogvenster **E-mails** sectie.
+Meldingen zijn beschikbaar in de webgebruikersinterface in de hele Adobe [!UICONTROL Experience Cloud] oplossingen. U kunt ervoor kiezen deze meldingen via e-mail te verzenden in het dialoogvenster **E-mails** sectie.
 
 ![E-mailberichten](assets/notifications-emails.png)
 
