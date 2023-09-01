@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten beheren (elementen - Inhoudsfragmenten)
 description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1813'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,11 @@ De [Inhoudsfragmenteditor](#opening-the-fragment-editor) biedt diverse [modi](#m
 
 >[!NOTE]
 >
->Inhoudsfragmenten worden opgeslagen als **Activa**. Ze worden nu voornamelijk beheerd met de **[Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, hoewel zij nog van kunnen leiden **Activa** console. Deze afdeling heeft betrekking op het beheer van de **Activa** console.
+>Inhoudsfragmenten zijn een functie Sites, maar worden opgeslagen als **Activa**.
+>
+>Ze worden nu voornamelijk beheerd met de **[Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, hoewel zij nog van kunnen leiden **Activa** console. Deze afdeling heeft betrekking op het beheer van de **Activa** console.
+>
+>Er zijn twee editors voor het ontwerpen van inhoudsfragmenten. In deze sectie wordt de oorspronkelijke editor beschreven, die voornamelijk wordt geopend vanuit de **Activa** console. Zie de documentatie van Plaatsen, [Inhoudsfragmenten - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), voor meer informatie over de nieuwe editor (die voornamelijk wordt benaderd vanuit de **Inhoudsfragmenten** console).
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 

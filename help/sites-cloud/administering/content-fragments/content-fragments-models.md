@@ -3,8 +3,11 @@ title: Modellen van contentfragmenten
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw Fragments van de Inhoud in AEM dienen. Hiermee kunt u gestructureerde inhoud maken voor gebruik in koploze levering of voor het ontwerpen van pagina's.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2916'
 ht-degree: 2%
@@ -12,6 +15,12 @@ ht-degree: 2%
 ---
 
 # Modellen van contentfragmenten {#content-fragment-models}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Modellen van inhoudsfragmenten in AEM definiëren de structuur voor de inhoud [inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md). Deze kunnen worden gebruikt voor het ontwerpen van pagina&#39;s of als basis voor inhoud zonder kop.
 

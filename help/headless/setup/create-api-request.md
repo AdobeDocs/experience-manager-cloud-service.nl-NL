@@ -2,7 +2,7 @@
 title: Een API-verzoek maken - headless Setup
 description: Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van inhoudsfragmenten en AEM middelen REST API voor het beheer van inhoudsfragmenten.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -96,6 +96,6 @@ GraphQL kan herhalende API-aanvragen en overlevering voorkomen en maakt het in p
 
 Dat is het! U hebt nu een basiskennis van beheer van inhoud zonder kop in AEM. Er zijn veel meer bronnen waar u dieper kunt duiken voor een volledig begrip van de beschikbare functies.
 
-* **[Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)** - Voor meer informatie over het maken en beheren van inhoudsfragmenten
+* **[Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md)** - Voor meer informatie over het maken en beheren van inhoudsfragmenten
 * **[Ondersteuning voor inhoudsfragmenten in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)** - Voor meer informatie over het rechtstreeks benaderen van AEM inhoud via de HTTP-API, via CRUD-bewerkingen (Maken, Lezen, Bijwerken, Verwijderen)
 * **[GRAPHQL API](/help/headless/graphql-api/content-fragments.md)** - Voor meer informatie over hoe u inhoudsfragmenten zonder problemen kunt leveren

@@ -1,8 +1,8 @@
 ---
 title: SPA Inleiding en Analyse
-description: Dit artikel introduceert de concepten SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
+description: Dit artikel introduceert de concepten van een SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 0%
@@ -46,7 +46,7 @@ De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SP
 
 ### Wat is een SPA? {#what-is-a-spa}
 
-Een toepassing van één pagina (SPA) verschilt van een conventionele pagina in die zin dat deze wordt weergegeven op de client en voornamelijk door JavaScript wordt aangedreven. Hierbij wordt uitgegaan van Ajax-aanroepen om gegevens te laden en de pagina dynamisch bij te werken. De meeste of alle inhoud wordt één keer opgehaald in één pagina die wordt geladen met extra bronnen die asynchroon worden geladen, afhankelijk van gebruikersinteractie met de pagina.
+Een toepassing van één pagina (SPA) verschilt van een conventionele pagina in die zin dat deze wordt weergegeven op de client en voornamelijk wordt aangedreven door JavaScript. Hierbij wordt uitgegaan van Ajax-aanroepen om gegevens te laden en de pagina dynamisch bij te werken. De meeste of alle inhoud wordt één keer opgehaald in één pagina die wordt geladen met extra bronnen die asynchroon worden geladen, afhankelijk van gebruikersinteractie met de pagina.
 
 Hierdoor is het minder nodig pagina&#39;s te vernieuwen en wordt de gebruiker een ervaring geboden die naadloos, snel is en meer lijkt op een native app-ervaring.
 
@@ -156,7 +156,7 @@ Door te ervaren hoe een SPA zich gedraagt voor de eindgebruiker en vervolgens de
 
 Dus als de pagina niet opnieuw wordt geladen wanneer u door de onderliggende pagina&#39;s navigeert, hoe wordt deze geladen?
 
-de volgende afdeling, [Een SPA-toepassing laden](#loading-a-spa-application), gaat dieper in de mechanica van het laden van de SPA en hoe de inhoud synchroon en asynchroon kan worden geladen.
+de volgende afdeling, [Een SPA laden](#loading-a-spa-application), gaat dieper in de mechanica van het laden van de SPA en hoe de inhoud synchroon en asynchroon kan worden geladen.
 
 ### Een SPA laden {#loading-a-spa-application}
 
@@ -187,7 +187,7 @@ de volgende afdeling, [Een SPA-toepassing laden](#loading-a-spa-application), ga
 
    ![JSON van de homepage van het SPA WKND Project](assets/wknd-json.png)
 
-   De AEM SPA Editor gebruikt [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) om de volledige inhoud van de pagina als JSON-model te leveren.
+   De AEM SPA Editor gebruikt [AEM Content Services](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-and-content-services) om de volledige inhoud van de pagina als JSON-model te leveren.
 
    Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan de SPA. De levering van de JSON-gegevens wordt omlaag gedelegeerd aan elke component (van pagina, alinea, component, enzovoort).
 
@@ -213,7 +213,7 @@ Voor de auteur van de inhoud is het maken van inhoud met een SPA-editor bovendie
 
 In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur toestaat om componenten binnen de SPA met AEM componenten te verbinden en deze naadloze het uitgeven ervaring te bereiken.
 
-1. Laad de WKND SPA toepassing van het Project in de redacteur en schakelaar aan **Voorvertoning** in.
+1. Laad de WKND SPA toepassing van het Project in de redacteur en schakelaar aan **Voorvertoning** -modus.
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 

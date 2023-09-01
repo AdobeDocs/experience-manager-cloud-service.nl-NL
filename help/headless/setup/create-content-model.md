@@ -2,7 +2,7 @@
 title: Modellen voor inhoudsfragmenten maken - Instellingen zonder kop
 description: Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -69,4 +69,4 @@ Nu u de structuren van uw Inhoudsfragmenten hebt gedefinieerd door modellen te m
 
 >[!TIP]
 >
->Voor volledige informatie over modellen van inhoudsfragmenten raadpleegt u de [Documentatie bij Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+>Voor volledige informatie over modellen van inhoudsfragmenten raadpleegt u de [Documentatie bij Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

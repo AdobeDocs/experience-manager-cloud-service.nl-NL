@@ -2,7 +2,7 @@
 title: Hoofdletters en headless in AEM
 description: AEM projecten kunnen worden geïmplementeerd in een krachtig en zonder kop, maar de keuze is niet binair. AEM biedt de flexibiliteit om de voordelen van beide modellen in één project te benutten.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 0%
@@ -53,18 +53,18 @@ SPA integratie ligt op een spectrum van vier niveaus in AEM.
    * De SPA en AEM bestaan afzonderlijk en wisselen geen informatie uit.
    * Inhoud wordt in twee aparte systemen gemaakt, beheerd en afzonderlijk geleverd.
 * **Niveau 1: integratie van inhoudsfragmenten**
-   * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) worden gebruikt in AEM om beperkte inhoud voor de SPA te maken en te beheren.
+   * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) worden gebruikt in AEM om beperkte inhoud voor de SPA te maken en te beheren.
    * De SPA haalt deze inhoud op via AEM [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan alleen in de SPA worden weergegeven.
 * **Niveau 2: sluit de SPA in AEM in**
-   * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
+   * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
    * De SPA haalt deze inhoud op via AEM [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan binnen AEM in context worden weergegeven.
    * Beperkte inhoud kan binnen AEM worden bewerkt.
 * **Niveau 3: SPA insluiten en volledig inschakelen in AEM**
-   * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
+   * [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
    * De SPA haalt deze inhoud op via AEM [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
    * Inhoud kan binnen AEM in context worden weergegeven.
    * De meeste inhoud kan worden bewerkt in AEM.

@@ -1,7 +1,7 @@
 ---
 title: Opmerkingen bij de release 2023.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 2d10d03e478bff5a162c620c41ceac38a6d7911a
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Bekijk de video Overzicht van de release van juni 2023 voor een overzicht van de
 
 ### Nieuwe functies in [!DNL Experience Manager Sites] {#sites-features}
 
-* Inhoudsfragmenten en de bijbehorende verwijzingen kunnen nu worden gepubliceerd naar de [AEM](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) met de [Console voor inhoudsfragment](/help/sites-cloud/administering/content-fragments/content-fragments-console.md), zodat gebruikers een voorvertoning van de uiteindelijke ervaring kunnen bekijken in een ontkoppelde voorvertoningstoepassing voordat ze live gaan.
+* Inhoudsfragmenten en de bijbehorende verwijzingen kunnen nu worden gepubliceerd naar de [AEM](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) met de [Console voor inhoudsfragment](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console), zodat gebruikers een voorvertoning van de uiteindelijke ervaring kunnen bekijken in een ontkoppelde voorvertoningstoepassing voordat ze live gaan.
 
 ![Voorvertoning in console van inhoudsfragment](/help/assets/content-fragments-console-preview.png)
 
@@ -124,7 +124,7 @@ In de weergave Elementen kunt u nu [toevoegen, tekst met meerdere waarden en eig
 
 * [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms is nu geïntegreerd met Adobe Acrobat Sign Solutions voor de regering. Deze integratie biedt een geavanceerd niveau van naleving en beveiliging voor e-handtekeningen met Adaptief formulier-inzendingen voor met de overheid verband houdende rekeningen (overheidsdiensten en agentschappen).
 
-  Dankzij de integratie met Adobe Acrobat Sign Solutions for Government kunnen Adobe en klanten van de overheid elektronische handtekeningen gebruiken in Adaptive Forms voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met de Matige naleving FedRAMP zijn, die Adobe klanten van vrede van mening voorzien.
+  Dankzij de integratie met Adobe Acrobat Sign Solutions for Government kunnen partners en klanten van de Adobe in Adaptive Forms elektronische handtekeningen gebruiken voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met de Matige naleving FedRAMP zijn, die de klanten van de overheid van de Adobe van mening voorziet.
 
 * [Verbeterde foutafhandeling met aangepaste fouthandlers in de regeleditor](/help/forms/add-custom-error-handler-adaptive-forms.md): U kunt nu een aangepaste functie (met behulp van de clientbibliotheek) activeren als reactie op een fout die door een externe service is geretourneerd, en eindgebruikers een op maat gemaakte reactie geven. Of u kunt specifieke acties uitvoeren voor fouten die door een service worden geretourneerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is.
 

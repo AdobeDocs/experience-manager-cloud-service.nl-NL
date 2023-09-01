@@ -2,9 +2,9 @@
 title: Variaties - Fragmentinhoud ontwerpen (elementen - Inhoudsfragmenten)
 description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler kunnen maken door u toe te staan om inhoud voor het fragment te ontwerpen en dan variaties van die inhoud volgens doel tot stand te brengen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2435'
+source-wordcount: '2567'
 ht-degree: 8%
 
 ---
@@ -12,6 +12,12 @@ ht-degree: 8%
 # Variaties - Authoring van content voor fragmenten{#variations-authoring-fragment-content}
 
 [Variaties](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een belangrijk kenmerk van AEM inhoudsfragmenten, aangezien u hiermee kopieën van de basisinhoud kunt maken en bewerken voor gebruik op specifieke kanalen en/of scenario&#39;s, waardoor de levering van inhoud zonder kop nog flexibeler wordt.
+
+>[!NOTE]
+>
+>Inhoudsfragmenten zijn een functie Sites, maar worden opgeslagen als **Activa**.
+>
+>Er zijn twee editors voor het ontwerpen van inhoudsfragmenten. In deze sectie wordt de oorspronkelijke editor beschreven, die voornamelijk wordt geopend vanuit de **Activa** console. Zie de documentatie van Plaatsen, [Inhoudsfragmenten - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), voor meer informatie over de nieuwe editor (die voornamelijk wordt benaderd vanuit de **Inhoudsfragmenten** console).
 
 Van de **Variaties** tabblad kunt u:
 
@@ -391,8 +397,33 @@ Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/assets/cont
    >[!CAUTION]
    >
    Als u na het toevoegen van een verwijzing naar een ander fragment de opmaak wijzigt in:
+   >
    * **Onbewerkte tekst**: de verwijzing gaat volledig verloren uit het fragment.
    * **Markering**: de referentie blijft behouden.
+
+## Overerving {#inheritance}
+
+Overerving is het mechanisme waarbij inhoud automatisch van het ene naar het andere fragment kan worden verplaatst. Overgenomen velden en variaties kunnen het product zijn van [Beheer van meerdere sites](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk van de context, kan dit voor een variatie, of een individueel gebied, beschikbaar zijn als het fragment deel van een levende kopie uitmaakt.
+
+![Een inhoudsfragment dat de overervingsrelatie weergeeft](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+Bijvoorbeeld:
+
+* Overerving annuleren
+
+  ![Overerving annuleren, knop](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* Overerving opnieuw inschakelen (als overerving al is geannuleerd)
+
+  ![Knop Overerving opnieuw inschakelen](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## Variaties beheren {#managing-variations}
 

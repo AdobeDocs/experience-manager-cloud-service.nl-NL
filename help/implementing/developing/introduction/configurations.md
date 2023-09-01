@@ -2,7 +2,7 @@
 title: Configuraties en de Configuratiebrowser
 description: Begrijp AEM configuraties en hoe zij werkruimtemontages in AEM beheren.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Een configuratie kan vanuit twee verschillende gezichtspunten worden overwogen.
 * [Beheerder](#configurations-administrator) gebruikt configuraties als werkruimten binnen AEM om groepen montages te bepalen en te beheren.
 * [Een ontwikkelaar](#configurations-developer) gebruikt het onderliggende configuratiemechanisme dat configuraties uitvoert om montages in AEM voort te zetten en op te zoeken.
 
-Samenvattend: vanuit het standpunt van een beheerder, zijn de configuraties hoe u werkruimten creeert om montages in AEM te beheren, terwijl de ontwikkelaar zou moeten begrijpen hoe AEM deze configuraties binnen de bewaarplaats gebruikt en beheert.
+Samengevat: vanuit het standpunt van de beheerder, zijn de configuraties hoe u werkruimten creeert om montages in AEM te beheren, terwijl de ontwikkelaar zou moeten begrijpen hoe AEM deze configuraties binnen de bewaarplaats gebruikt en beheert.
 
 Configuraties hebben, ongeacht uw perspectief, twee hoofddoelen in AEM:
 
@@ -34,7 +34,7 @@ De AEM beheerder en auteurs kunnen configuraties als werkruimten beschouwen. Dez
 Configuraties kunnen worden gemaakt voor vele verschillende functies in AEM.
 
 * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Bewerkbare sjablonen](/help/sites-cloud/authoring/features/templates.md)
 * diverse cloudconfiguraties
 
@@ -52,7 +52,7 @@ De beheerder kan vervolgens de WKND-General koppelen aan alle inhoud van de WKND
 Op deze manier:
 
 * Wanneer een inhoudsauteur een nieuwe pagina voor het tijdschrift maakt, kan de auteur kiezen uit algemene sjablonen (WKND-Algemeen) of tijdschriftsjablonen (WKND-Magazine).
-* Wanneer een auteur van inhoud een nieuwe pagina maakt voor een ander gedeelte van de site dat niet het tijdschrift is, kan de auteur alleen kiezen uit de algemene sjablonen (WKND-Algemeen).
+* Wanneer een auteur van inhoud een nieuwe pagina maakt voor een ander deel van de site dat niet het tijdschrift is, kan de auteur alleen kiezen uit de algemene sjablonen (WKND-Algemeen).
 
 De gelijkaardige montages zijn mogelijk niet alleen voor Bewerkbare Malplaatjes maar ook voor de Configuraties van de Wolk, Segmenten ContextHub, en Modellen van het Fragment van de Inhoud.
 
@@ -70,7 +70,7 @@ Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen doo
 
 1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** -> **Algemeen** -> **Configuratiebrowser**.
 1. Tik of klik op **Maken**.
-1. Een **Titel** en **Naam** voor uw configuratie.
+1. Geef een **Titel** en **Naam** voor uw configuratie.
 
    ![Configuratie maken](assets/configuration-create.png)
 
@@ -80,7 +80,7 @@ Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen doo
       * Deze kan zo nodig worden aangepast.
 1. Controleer het type configuraties dat u wilt toestaan.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Bewerkbare sjablonen](/help/sites-cloud/authoring/features/templates.md)
    * diverse cloudconfiguraties
 1. Tik of klik op **Maken**.
@@ -101,7 +101,7 @@ Als u configuraties als werkruimten beschouwt, kunnen de toegangsrechten op die 
    >Het is niet mogelijk om een functie uit te schakelen wanneer de configuratie is gemaakt.
 1. Gebruik de **Effectieve machtigingen** knoop om een matrijs van rollen te bekijken en welke toestemmingen zij momenteel aan configuraties worden verleend.
    ![venster Effectieve machtigingen](assets/configuration-effective-permissions.png)
-1. Als u nieuwe machtigingen wilt toewijzen, voert u de naam van de gebruiker of groep in het dialoogvenster **Gebruiker of groep selecteren** in het **Nieuwe machtigingen toevoegen** sectie.
+1. Als u nieuwe machtigingen wilt toewijzen, voert u de naam van de gebruiker of groep in het dialoogvenster **Gebruiker of groep selecteren** in het veld **Nieuwe machtigingen toevoegen** sectie.
    * De  **Gebruiker of groep selecteren** het veld biedt automatisch aanvullen op basis van bestaande gebruikers en rollen.
 1. Selecteer de gewenste gebruiker of rol in de resultaten die automatisch worden voltooid.
    * U kunt meerdere gebruikers of rollen selecteren.
@@ -118,7 +118,7 @@ Als ontwikkelaar, is het belangrijk om te weten hoe AEM as a Cloud Service met c
 
 Hoewel de [beheerders en gebruikers kunnen configuraties als werkplekken zien](#configurations-administrator) om verschillende instellingen en inhoud te beheren is het belangrijk te begrijpen dat configuraties en inhoud afzonderlijk worden opgeslagen en beheerd door AEM in de opslagplaats.
 
-* `/content` is home aan alle inhoud.
+* `/content` is de thuisbasis van alle inhoud.
 * `/conf` is huis aan alle configuratie.
 
 Content verwijst naar de bijbehorende configuratie via een `cq:conf` eigenschap. AEM voert een zoekopdracht uit op basis van de inhoud en het is contextueel `cq:conf` eigenschap om de juiste configuratie te vinden.
@@ -155,11 +155,11 @@ Nu een blik op de overeenkomstige inhoud JCR:
 
 In dit voorbeeld nemen we hier een WKND-specifieke DAM-map en een bijbehorende configuratie aan. Vanaf die map `/content/dam/wknd`, zullen wij zien dat er een koordbezit genoemd is `cq:conf` dat verwijst naar de configuratie die voor de substructuur zou moeten van toepassing zijn. De eigenschap wordt meestal ingesteld op de knop `jcr:content` van een elementmap of -pagina. Deze `conf` De verbindingen zijn uitdrukkelijk, zodat is het gemakkelijk om hen te volgen door de inhoud in CRXDE te bekijken.
 
-Binnenin pompen `/conf`, volgen we de referentie en zien we dat er een `/conf/wknd` knooppunt. Dit is een configuratie. De zoekopdracht is volledig transparant voor de toepassingscode. De voorbeeldcode heeft er nooit een specifieke referentie naar, maar is verborgen achter het `Conf` object. Welke configuratie van toepassing is, wordt volledig gecontroleerd door de inhoud JCR.
+Binnenin pompen `/conf`, volgen we de referentie en zien we dat er een `/conf/wknd` knooppunt. Deze configuratie. De zoekopdracht is volledig transparant voor de toepassingscode. De voorbeeldcode heeft er nooit een specifieke referentie naar, maar is verborgen achter het `Conf` object. Welke configuratie van toepassing is, wordt volledig gecontroleerd door de inhoud JCR.
 
-We zien dat de configuratie een vaste naam bevat `settings` knooppunt dat de werkelijke items bevat, inclusief de `dam/imageserver` in ons geval is dat nodig . Een dergelijk item kan worden beschouwd als een &quot;instellingendocument&quot; en wordt gewoonlijk aangeduid met een `cq:Page` met inbegrip van `jcr:content` de feitelijke inhoud bezitten.
+We zien dat de configuratie een vaste naam bevat `settings` knooppunt dat de werkelijke items bevat, inclusief de `dam/imageserver` wij hebben dat in ons geval nodig . Een dergelijk item kan worden beschouwd als een &quot;instellingendocument&quot; en wordt gewoonlijk aangeduid met een `cq:Page` inclusief `jcr:content` de feitelijke inhoud bezitten.
 
-Tot slot zien we de eigenschap `bgkcolor` dat onze voorbeeldcode nodig heeft. De `ValueMap` we komen terug van `getItem` is gebaseerd op de pagina&#39;s `jcr:content` knooppunt.
+Tot slot zien we de eigenschap `bgkcolor` dat onze voorbeeldcode nodig heeft. De `ValueMap` we komen terug van `getItem` is gebaseerd op de `jcr:content` knooppunt.
 
 ### Configuratieresolutie {#configuration-resolution}
 

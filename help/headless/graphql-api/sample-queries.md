@@ -3,7 +3,7 @@ title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
 description: Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen kunt bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 0%
@@ -18,11 +18,11 @@ Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen kunt bedienen
 >
 >Lees deze pagina samen met het volgende:
 >
->* [Contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
->* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+>* [Contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
+>* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 >* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
 
-Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, helpt het om enkele praktische voorbeelden te zien.
+Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, is het nuttig om enkele praktische voorbeelden te zien.
 
 Zie voor hulp bij dit:
 
@@ -46,7 +46,7 @@ Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekpr
 >U kunt tot de vraagredacteur van één van beiden toegang hebben:
 >
 >* **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
->* rechtstreeks; bijvoorbeeld: `http://localhost:4502/aem/graphiql.html`
+>* rechtstreeks; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
 >
@@ -230,7 +230,7 @@ Bij uitvoering wordt de query automatisch uitgebreid met alle velden:
 
 ### Voorbeeldquery - Namen van alle steden {#sample-names-all-cities}
 
-Een eenvoudige query om de `name`van alle vermeldingen in de `city`schema.
+Een eenvoudige query om de opdracht `name`van alle vermeldingen in de `city`schema.
 
 **Voorbeeldquery**
 
@@ -321,7 +321,7 @@ Een query om de details van één fragmentitem te retourneren op een specifieke 
 
 ### Voorbeeldquery - Alle steden met een benoemde variatie {#sample-cities-named-variation}
 
-Als u een variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`), voor de `city` Berlijn, dan kunt u een vraag gebruiken om details van de variatie terug te keren.
+Als u een variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`) voor de `city` Berlijn, dan kunt u een vraag gebruiken om details van de variatie terug te keren.
 
 **Voorbeeldquery**
 
@@ -367,7 +367,7 @@ Als u een variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`)
 Als u:
 
 * verschillende tags maken, met de naam `Tourism` : `Business`, `City Break`, `Holiday`
-* en deze toe te wijzen aan de Master variatie van diverse `City` instances
+* en wijst deze toe aan de Master-variatie van diverse `City` instances
 
 Dan kunt u een vraag gebruiken om details van terug te keren `name` en `tags`van alle items die zijn getagd als Stadseinden in het dialoogvenster `city`schema.
 
@@ -544,7 +544,7 @@ query {
 
 ### Voorbeeldquery - Alle personen met de naam &quot;Jobs&quot; of &quot;Smith&quot; {#sample-all-persons-jobs-smith}
 
-Een query die alles filtert `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
+Een query die alle filters geeft `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
 
 **Voorbeeldquery**
 
@@ -598,7 +598,7 @@ query {
 
 ### Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot; {#sample-all-persons-not-jobs}
 
-Een query die alles filtert `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
+Een query die alle filters geeft `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
 
 **Voorbeeldquery**
 
@@ -934,7 +934,7 @@ query {
 
 ### Voorbeeldquery voor geneste inhoudsfragmenten - Alle bedrijven met ten minste één werknemer met de naam &quot;Smith&quot; {#sample-companies-employee-smith}
 
-Deze vraag illustreert het filtreren voor om het even welk `person` van `name` &quot;Smith&quot;, die informatie van over twee geneste fragmenten terugkeert - `company` en `employee`.
+Deze query illustreert het filteren van alle `person` van `name` &quot;Smith&quot;, die informatie van over twee geneste fragmenten terugkeert - `company` en `employee`.
 
 **Voorbeeldquery**
 
@@ -1167,7 +1167,7 @@ Deze steekproefvragen zijn gebaseerd op het project WKND. Het heeft het volgende
 
 ### Voorbeeldquery voor alle inhoudsfragmenten van een bepaald model met de opgegeven eigenschappen {#sample-wknd-all-model-properties}
 
-Deze voorbeeldquery vraagt om:
+Met deze voorbeeldquery wordt het volgende gevraagd:
 
 * voor alle inhoudfragmenten van het type `article`
 * met de `_path` en de eigenschappen van de `authorFragment`.
@@ -1253,7 +1253,7 @@ Deze query vraagt om:
 
 ### Voorbeeldquery voor één inhoudsfragment van een bepaald model {#sample-wknd-single-content-fragment-of-given-model}
 
-Deze voorbeeldquery vraagt om:
+Met deze voorbeeldquery wordt het volgende gevraagd:
 
 * voor één inhoudsfragment van type `article` op een bepaald pad
    * in dat fragment, alle indelingen van inhoud:
@@ -1288,7 +1288,7 @@ Deze voorbeeldquery vraagt om:
 
 ### Voorbeeldquery voor een inhoudsfragmentmodel op basis van een model {#sample-wknd-content-fragment-model-from-model}
 
-Deze voorbeeldquery vraagt om:
+Met deze voorbeeldquery wordt het volgende gevraagd:
 
 * voor één inhoudsfragment
    * details van het onderliggende inhoudsfragmentmodel
@@ -1349,7 +1349,7 @@ Deze query vraagt om:
 
 >[!NOTE]
 >
->Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met het model `Article` geselecteerd. Query levert `fragments` als een array van `[Article]`.
+>Het veld `fragments` heeft het gegevenstype Data `fragment-reference`, met het model `Article` geselecteerd. Query levert `fragments` als een array van `[Article]`.
 
 ```graphql
 {
@@ -1609,7 +1609,7 @@ query {
 }
 ```
 
-### Voorbeeldquery voor inhoudfragmentvariaties van een bepaald model waaraan een specifieke tag is gekoppeld{#sample-wknd-fragment-variations-given-model-specific-tag}
+### Voorbeeldquery voor variaties van inhoudsfragmenten van een bepaald model waaraan een specifieke tag is gekoppeld{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 Deze query vraagt om:
 
@@ -1722,7 +1722,7 @@ Deze query vraagt om:
 Deze query vraagt om:
 
 * voor inhoudfragmenten van het type `vehicle` met de tag `big-block`
-* exclusief wijzigingen
+* uitsluiten, variaties
 
 **Voorbeeldquery**
 
@@ -1831,7 +1831,7 @@ De velden waarin een persoon wordt gedefinieerd, die ook een werknemer kan zijn:
 |--- |--- |--- |
 | Naam | Tekst met één regel | |
 | Voornaam | Tekst met één regel | |
-| Awards | Fragmentverwijzing (meerdere velden) | [Uitreiking](#model-award) |
+| Uitreiking | Fragmentverwijzing (meerdere velden) | [Uitreiking](#model-award) |
 
 #### Uitreiking {#model-award}
 
@@ -1867,7 +1867,7 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 
 #### Persoon {#fragment-person}
 
-| Naam | Voornaam | Awards |
+| Naam | Voornaam | Uitreiking |
 |--- |--- |--- |
 | Lincoln | Abe | |
 | Smith | Adam | |

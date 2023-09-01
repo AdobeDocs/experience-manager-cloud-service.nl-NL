@@ -4,8 +4,11 @@ description: Leer hoe u inhoudsfragmenten beheert met de console voor inhoudsfra
 landing-page-description: Leer hoe te om Inhoudsfragmenten van de Console van Fragmenten van de Inhoud te beheren die op het hoge volumengebruik van Inhoudsfragmenten voor Hoofdloze gebruik-gevallen wordt geconcentreerd, maar ook gebruikt wanneer de pagina creatie.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 0%
@@ -13,6 +16,12 @@ ht-degree: 0%
 ---
 
 # Console voor inhoudsfragmenten  {#content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Leer hoe de console van de Fragmenten van de Inhoud toegang tot uw Fragments van de Inhoud optimaliseert, die u, hen helpen tot stand brengen zoeken en leiden door administratieve acties zoals te voeren publiceren, unpublish, exemplaar.
 
@@ -165,7 +174,7 @@ Zoals met andere consoles kunt u de kolommen vormen die zichtbaar, en beschikbaa
 
 ![Content Fragments console - column configuration](assets/cfc-console-column-icon.png)
 
-Hiermee wordt een lijst weergegeven met kolommen die u kunt verbergen of weergeven:
+Dit zal een lijst van kolommen voorstellen die u kunt verbergen of tonen:
 
 ![Content Fragments console - column configuration](assets/cfc-console-column-selection.png)
 

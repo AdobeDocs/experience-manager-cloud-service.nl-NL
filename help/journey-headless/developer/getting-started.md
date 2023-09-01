@@ -2,7 +2,7 @@
 title: Aan de slag met AEM headless as a Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3080'
 ht-degree: 0%
@@ -166,7 +166,7 @@ De beheerder moet de gebruiker zijn die AEM instelt en de runtimeomgeving voorbe
 
 #### Inhoudsauteur {#content-author}
 
-Inhoudsauteurs maken en beheren de inhoud die zonder kop door AEM wordt geleverd. Inhoudsauteurs gebruiken AEM functies zoals Inhoudsfragmenten en de Console Elementen om de inhoud ervan te beheren.
+Inhoudsauteurs maken en beheren de inhoud die zonder kop door AEM wordt geleverd. Auteurs van inhoud gebruiken AEM functies zoals de editor voor inhoudsfragmenten en diverse consoles om de inhoud ervan te beheren.
 
 Inhoudsauteurs dienen de volgende aanbevolen procedures in acht te nemen.
 
@@ -289,8 +289,8 @@ Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder
 * [Naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md) - Technische documentatie van beperkingen voor paginanummering in AEM
 * [Beheer en vertaling van meerdere sites](/help/sites-cloud/administering/msm-and-translation.md) - Technische documentatie over AEM krachtige vertaalfuncties
 * [Workflows AEM](/help/sites-cloud/authoring/workflows/overview.md) - Technische documentatie over de automatisering van workflows in AEM
-* [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Technische documentatie voor inhoudsfragmenten.
-* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Technische documentatie voor modellen van inhoudsfragmenten.
+* [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) - Technische documentatie voor inhoudsfragmenten.
+* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Technische documentatie voor modellen van inhoudsfragmenten.
 * [GraphQL - Technische documentatie](https://graphql.org) - De GraphQL-definitie (externe koppeling)
 * [GRAPHQL API](/help/headless/graphql-api/content-fragments.md) - Technische documentatie die verklaart hoe te om verzoeken tot toegang te leiden en inhoudsfragmenten te leveren
 * [REST-API voor middelen](/help/assets/content-fragments/assets-api-content-fragments.md) - Technische documentatie die verklaart hoe te om de Fragmenten van de Inhoud (en andere activa) tot stand te brengen en te wijzigen

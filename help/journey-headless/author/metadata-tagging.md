@@ -2,10 +2,10 @@
 title: Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten
 description: Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 2%
+source-wordcount: '191'
+ht-degree: 3%
 
 ---
 
@@ -26,21 +26,9 @@ Dit artikel bouwt hierop verder zodat u begrijpt hoe u meta-gegevens en het etik
 
 ## Metagegevens en tags toevoegen {#adding-metadata-and-tags}
 
-U kunt drie methoden gebruiken om metagegevens en tags toe te voegen:
+U kunt metagegevens en tags toevoegen vanuit het rechterdeelvenster van de Content Fragment Editor:
 
-* Wanneer u voor het eerst een fragment maakt (van de **Activa** console):
-
-  ![Inhoudsfragment maken - naam opgeven](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-* De **Variaties** tabblad van de editor voor inhoudsfragmenten kunt u vooraf gedefinieerde **Tags** van uw project:
-
-  ![Content Fragment Editor - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
-
-* De **Metagegevens** tabblad van de editor voor inhoudsfragmenten kunt u zowel verschillende metagegevensvelden als vooraf gedefinieerde velden toevoegen **Tags** van uw project:
-
-  ![Content Fragment Editor - Metadata](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
-
-   * Dit is ook rechtstreeks toegankelijk via de **Eigenschappen** op de werkbalk van de middelenconsole.
+![Content Fragment Editor - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Volgende functies {#whats-next}
 
@@ -48,8 +36,8 @@ Nu kunt u al deze kennis aan gebruik zetten en beginnen creërend de Fragments v
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Metagegevens - Fragmenteigenschappen](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+* [Metagegevens - Fragmenteigenschappen](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
 * [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

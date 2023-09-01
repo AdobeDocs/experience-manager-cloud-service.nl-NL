@@ -2,7 +2,7 @@
 title: Uw inhoud modelleren
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw inhoud voor AEM levering zonder kop kunt modelleren met behulp van Content Modeling with Content Fragment Models and Content Fragments.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 0%
@@ -270,10 +270,10 @@ Nu u hebt geleerd hoe u uw structuur kunt modelleren en inhoud kunt maken die hi
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) - de introductiepagina voor inhoudsfragmenten
-   * [Inhoudsfragmenten in de configuratiebrowser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) - functionaliteit voor inhoudsfragmenten inschakelen in de configuratiegids
-   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - modellen voor inhoudsfragmenten maken en bewerken
-   * [Inhoudsfragmenten beheren](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - Inhoudsfragmenten maken en ontwerpen; deze pagina leidt u naar andere gedetailleerde secties
+* [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) - de introductiepagina voor inhoudsfragmenten
+   * [Inhoudsfragmenten in de configuratiebrowser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - functionaliteit voor inhoudsfragmenten inschakelen in de configuratiegids
+   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - modellen voor inhoudsfragmenten maken en bewerken
+   * [Inhoudsfragmenten beheren](/help/sites-cloud/administering/content-fragments/managing.md) - Inhoudsfragmenten maken en ontwerpen; deze pagina leidt u naar andere gedetailleerde secties
 * [AEM GraphQL Schemas](access-your-content.md) - hoe GraphQL modellen realiseert
 * [De structuur van het voorbeeldinhoudsfragment](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [Aan de slag met AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Een korte videozelfstudie waarin een overzicht wordt gegeven van het gebruik van functies zonder kop, zoals het modelleren van inhoud en GraphQL

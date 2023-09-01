@@ -2,9 +2,9 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1729'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 Binnen de console kunt u mappen in het linkerdeelvenster selecteren om naar het inhoudsfragment te navigeren. U kunt ook filteren en/of zoeken.
 
-![Content Fragments-console](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
+![Content Fragments-console](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### Handelingen, selecteren, weergeven {#actions-selecting-viewing}
 
@@ -183,43 +183,44 @@ Geef de volgende instellingen op:
 
 Bevestig vervolgens met een van beide **Maken** of **Maken en openen**.
 
-<!--
-Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
-
-![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
-
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
-
-![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
-
-After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
-
-![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-Confirm with **Create** and you can then **Open** your fragment in the editor.
--->
-
 ### Een fragment bewerken {#editing-fragment}
 
 U kunt een fragment direct openen nadat u het hebt gemaakt, of door het te selecteren vanuit de console Inhoudsfragmenten (ook vanaf de console Elementen).
 
+>[!NOTE]
+>
+>Inhoudsfragmenten zijn een functie Sites, maar worden opgeslagen als **Activa**.
+>
+>Er zijn twee editors voor het ontwerpen van inhoudsfragmenten.
+>
+>* De nieuwe editor, die voornamelijk wordt geopend vanuit de **Inhoudsfragmenten** console.
+>* De oorspronkelijke editor, die voornamelijk wordt geopend vanuit de **Activa** console.
+
 Wanneer de redacteur eerst opent ziet u:
 
-* Een lijst met pictogrammen aan de linkerkant - hiermee hebt u toegang tot verschillende functies. De editor wordt geopend in het dialoogvenster **Variaties** , is dit de plaats waar de meeste bewerkingen worden uitgevoerd. U bent wellicht ook geïnteresseerd in de **Annotaties** en **Metagegevens** tabs.
+* bovenste werkbalk: voor belangrijke informatie en handelingen
+   * een koppeling naar de Content Fragment Console (pictogram Start)
+   * informatie over het model en de map
+   * koppelingen naar Voorvertoning; als het standaard URL-voorvertoningspatroon is geconfigureerd voor het model
+   * Handelingen publiceren en publiceren ongedaan maken
+   * een optie om alles weer te geven **Bovenliggende verwijzingen** (koppelingspictogram)
+   * het fragment **Status** en laatst opgeslagen gegevens
+   * een schakeloptie voor het overschakelen naar de oorspronkelijke (op elementen gebaseerde) editor
+* linkerdeelvenster: toont de **Variaties** voor het inhoudsfragment en de bijbehorende **Velden**:
+   * U kunt deze koppelingen gebruiken om door de structuur van het inhoudsfragment te navigeren
+* rechterdeelvenster: geeft tabbladen weer met de eigenschappen (metagegevens) en tags, informatie over de versiegeschiedenis en informatie over eventuele taalkopieën
+   * in de **Eigenschappen** kunt u de **Titel** en **Beschrijving** voor het fragment, of **Variatie**
+* centraal deelvenster: geeft de daadwerkelijke velden en inhoud van de geselecteerde variatie weer
+   * kunt u de inhoud bewerken
+   * indien **Tijdelijke aanduiding voor tab** velden worden gedefinieerd binnen het model dat ze hier worden weergegeven en kunnen worden gebruikt voor navigatie
 
-* Een koptekst met informatie over het fragment en toegang tot verschillende handelingen.
+Een fragment kan bijvoorbeeld:
 
-* Het hoofdbewerkingsgebied. Dit is afhankelijk van het model waarmee het fragment is gemaakt.
+* Vereisen veelvoudige stukken van informatie, sommige met een specifiek type. Voor inhoud zonder kop zijn verwijzingen van essentieel belang (hierover leert u later op de reis).
 
-Als voorbeelden:
+* Hiermee kunt u een lange sectie tekst schrijven. Hier zijn aanvullende opties voor het beheren en opmaken van de tekst. U kunt zelfs de afzonderlijke tekstvelden openen in een volledige-schermeditor (met het kleine schermachtige pictogram rechts)
 
-* Een fragment dat alleen meerdere gegevens vereist, waarvan sommige een specifiek type hebben. Voor inhoud zonder kop zijn verwijzingen van essentieel belang (hierover leert u later op de reis).
-
-  ![Inhoudsfragmenteditor - Mijn fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
-
-* Een fragment waarmee u een lang tekstgedeelte kunt schrijven. Hier zijn aanvullende opties voor het beheren en opmaken van de tekst. U kunt zelfs de afzonderlijke tekstvelden openen in een volledige-schermeditor (met het kleine schermachtige pictogram rechts)
-
-  ![Content Fragment Editor - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+![Content Fragment Editor - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
@@ -239,26 +240,12 @@ Dit lijkt misschien een iets vreemde sectie, maar zodra u de Content Fragment Ed
 
 * **Modellen van contentfragmenten**
 
-  De naam van het inhoudsfragmentmodel wordt boven in de editor weergegeven, direct onder de fragmentnaam. Dit is ook een verbinding die u aan de modelredacteur neemt.
+  De naam van het model van het inhoudsfragment wordt weergegeven in het rechterdeelvenster van de editor. Dit is ook een verbinding die u aan de modelredacteur neemt.
 Modellen van inhoudsfragmenten zijn in feite van vitaal belang voor inhoudsfragmenten als ze de structuur definiëren die u gebruikt. Het maken en bewerken van deze bestanden valt (gewoonlijk) echter onder de verantwoordelijkheid van een andere persoon, de Content Architect.
 
   >[!NOTE]
   >
   >Als u meer wilt weten, kunt u de AEM Headless Content Architect Journey lezen.
-
-* **Gekoppelde inhoud**
-
-  Dit is duidelijk aangezien het een lusje in de redacteur is.
-
-  Inhoudsfragmenten zijn in AEM al een aantal versies beschikbaar. Oorspronkelijk zijn ze beschikbaar gesteld voor &quot;traditioneel&quot; gebruik bij het ontwerpen van pagina&#39;s...en zij worden in dit verband nog steeds gebruikt . Hierbij kan het gaan om het koppelen van elementen (bijvoorbeeld afbeeldingen) die weliswaar niet in het fragment zijn ingesloten, maar die wel beschikbaar moeten zijn voor de auteur wanneer deze een pagina ontwerpt.
-
-* **Voorvertoning**
-
-  Dit is een ander tabblad in de editor en biedt een technische weergave, voornamelijk bedoeld voor ontwikkelaars.
-
-* **Paginaverwijzingen bijwerken**
-
-  Deze handeling is beschikbaar via de **...** (ellipsen) drop-down. Het is niet interessant voor headless auteurs aangezien het op paginascreatie betrekking heeft.
 
 ### Publiceren {#publishing}
 
@@ -296,15 +283,15 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
    * [Spoorwegkiezer](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-* [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Contentfragmenten beheren](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [Contentfragmenten beheren](/help/sites-cloud/administering/content-fragments/managing.md)
 
-   * [De configuratie toepassen op de middelenmap](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [De configuratie toepassen op de middelenmap](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-   * [Een inhoudsfragment maken](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Een inhoudsfragment maken](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [Variaties - Inhoudsfragmenten ontwerpen](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [Inhoudsfragmenten ontwerpen](/help/sites-cloud/administering/content-fragments/authoring.md)
 
    * Publiceren
 
@@ -316,15 +303,17 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
       * Van de **Inhoudsfragmenten** Console
 
-         * [Een inhoudsfragment publiceren en voorvertonen](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+         * [Een inhoudsfragment publiceren en voorvertonen](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-   * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Modellen van inhoudsfragmenten - gegevenstypen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [Modellen van inhoudsfragmenten - gegevenstypen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [Modellen van inhoudsfragmenten - eigenschappen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [Modellen van inhoudsfragmenten - eigenschappen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-      * [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+
+* [Inhoudsfragmenten - oorspronkelijke editor, uit de middelenconsole](/help/assets/content-fragments/content-fragments-variations.md)
 
 * Aan de slag - hulplijnen
    * [Een headless Setup voor middelenmappen maken](/help/headless/setup/create-assets-folder.md)

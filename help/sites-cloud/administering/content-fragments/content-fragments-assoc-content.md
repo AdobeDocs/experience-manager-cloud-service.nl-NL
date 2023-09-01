@@ -3,15 +3,25 @@ title: Gekoppelde inhoud
 description: Begrijp hoe de bijbehorende inhoudseigenschap voor de Fragmenten van de Inhoud de verbinding voor activa (naar keuze) verstrekt die met het fragment moeten worden gebruikt, toevoegend extra flexibiliteit aan zowel pagina creatie als hoofdloze inhoudslevering.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 4%
 
 ---
 
+
 # Gekoppelde inhoud{#associated-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 AEM de functie Gekoppelde inhoud biedt de verbinding, zodat elementen optioneel met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd, door [een reeks elementen bieden die toegankelijk zijn wanneer het inhoudsfragment op een pagina wordt gebruikt;](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) en de tijd die nodig is om het juiste middel te zoeken, te verkorten. Dit biedt ook flexibiliteit voor het leveren van inhoud zonder kop.
 
@@ -27,14 +37,14 @@ Als u de koppeling wilt maken, moet u eerst [media-elementen toevoegen aan een v
 
    ![Gekoppelde inhoud](assets/cfm-assoc-content-01.png)
 
-1. Afhankelijk van het feit of er al verzamelingen zijn gekoppeld of niet, selecteert u een van de volgende opties:
+1. Afhankelijk van het feit of er al verzamelingen zijn gekoppeld of niet, selecteert u:
 
    * **Inhoud koppelen** - de eerste bijbehorende verzameling
-   * **Verzameling koppelen** - bijbehorende verzamelingen zijn al geconfigureerd
+   * **Verzameling koppelen** - de bijbehorende inzamelingen worden reeds gevormd
 
 1. Selecteer de gewenste verzameling.
 
-   U kunt optioneel het fragment zelf toevoegen aan de geselecteerde verzameling. dit is het volgen van hulpmiddelen .
+   U kunt desgewenst het fragment zelf toevoegen aan de geselecteerde verzameling. Dit is nuttig bij het bijhouden van gegevens.
 
    ![Verzameling selecteren](assets/cfm-assoc-content-02.png)
 

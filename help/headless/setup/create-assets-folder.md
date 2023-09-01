@@ -2,7 +2,7 @@
 title: Een middelenmap maken - Instellingen zonder kop
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
 
 1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Navigation -> Middelen -> Bestanden**.
 1. Tik of klik op **Maken -> Map**.
-1. Een **Titel** en **Naam** voor uw map.
+1. Geef een **Titel** en **Naam** voor uw map.
    * De **Titel** moeten beschrijvend zijn.
    * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
       * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies](/help/implementing/developing/introduction/naming-conventions.md).
@@ -35,8 +35,8 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
 
    ![Map maken](../assets/assets-folder-create.png)
 1. Selecteer de map die u zojuist hebt gemaakt door de muis boven het vinkje te houden en erop te tikken. Selecteer vervolgens **Eigenschappen** van de werkbalk (of gebruik de `p` [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
-1. In de **Eigenschappen** venster, selecteert u de **Cloud Services** tab.
-1. Voor de **Cloud Configuration** Selecteer [configuratie die u eerder hebt gemaakt.](create-configuration.md)
+1. In de **Eigenschappen** venster, selecteert u de **Cloud Servicen** tab.
+1. Voor de **Cloud Configuration** Selecteer de [eerder gemaakte configuratie.](create-configuration.md)
    ![Map met middelen configureren](../assets/assets-folder-configure.png)
 1. Tik of klik op **Opslaan en sluiten**.
 1. Tik of klik op **OK** in het bevestigingsvenster.
@@ -45,12 +45,12 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
 
 U kunt extra submappen maken in de map die u net hebt gemaakt. De submappen nemen de **Cloud Configuration** van de bovenliggende map. Dit kan echter worden genegeerd als u modellen uit een andere configuratie wilt gebruiken.
 
-Als u een gelokaliseerde sitestructuur gebruikt, kunt u [een hoofdmap voor een taal maken](/help/assets/translate-assets.md) onder uw nieuwe map.
+U kunt een gelokaliseerde sitestructuur gebruiken [een hoofdmap voor een taal maken](/help/assets/translate-assets.md) onder uw nieuwe map.
 
 ## Volgende stappen {#next-steps}
 
-Nu u een map voor de inhoudsfragmenten hebt gemaakt, kunt u verdergaan naar het vierde gedeelte van de gids Aan de slag en [inhoudsfragmenten maken](create-content-fragment.md).
+Nu u een map voor de inhoudsfragmenten hebt gemaakt, kunt u verdergaan naar het vierde gedeelte van de gids Aan de slag en [maken, inhoudsfragmenten](create-content-fragment.md).
 
 >[!TIP]
 >
->Voor volledige details over het beheren van Inhoudsfragmenten raadpleegt u de [Documentatie over inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+>Voor volledige details over het beheren van Inhoudsfragmenten raadpleegt u de [Documentatie over inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)

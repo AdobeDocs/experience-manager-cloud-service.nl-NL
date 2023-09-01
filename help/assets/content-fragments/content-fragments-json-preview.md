@@ -2,9 +2,9 @@
 title: Voorvertoning - JSON-representatie (middelen - inhoudsfragmenten)
 description: Leer hoe u een JSON-weergave van uw inhoudsfragmenten eenvoudig kunt voorvertonen bij het implementeren van uw AEM oplossing zonder kop.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '168'
 ht-degree: 1%
 
 ---
@@ -12,6 +12,12 @@ ht-degree: 1%
 # Voorvertoning - JSON-representatie {#preview-json-representation}
 
 Wanneer het ontwikkelen van de modellen voor de Fragmenten van de Inhoud als deel van uw AEM hoofdloze implementatie, zou u steekproefJSON output voor een inhoudsfragment kunnen willen bekijken, zoals die op een model wordt gebaseerd. Als u bijvoorbeeld wilt weten hoe de uiteindelijke uitvoer eruit zal zien. Dit kan handig zijn voor het valideren van de JSON-modelstructuur, bijvoorbeeld met standaardvoorbeeldinhoud per gegevenstype.
+
+>[!NOTE]
+>
+>Inhoudsfragmenten zijn een functie Sites, maar worden opgeslagen als **Activa**.
+>
+>Er zijn twee editors voor het ontwerpen van inhoudsfragmenten. In deze sectie wordt de oorspronkelijke editor beschreven, die voornamelijk wordt geopend vanuit de **Activa** console. Zie de documentatie van Plaatsen, [Inhoudsfragmenten - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), voor meer informatie over de nieuwe editor (die voornamelijk wordt benaderd vanuit de **Inhoudsfragmenten** console).
 
 Met de **Voorvertoning** pictogram:
 

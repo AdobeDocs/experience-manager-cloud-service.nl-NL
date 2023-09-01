@@ -3,9 +3,9 @@ title: Formuliergerichte AEM gebruiken om bedrijfsprocessen te automatiseren
 description: Met Forms-gerichte workflows kunt u snel adaptieve, op Forms gebaseerde workflows maken. Met Adobe Sign kunt u documenten elektronisch ondertekenen, op formulieren gebaseerde bedrijfsprocessen maken, gegevens ophalen en verzenden naar meerdere gegevensbronnen en e-mailmeldingen verzenden
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '6543'
+source-wordcount: '6801'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Dit artikel |
+
+<span class="preview"> Singer-rollen, audittrail en op overheids-id gebaseerde verificatieopties in het dialoogvenster [stap Document ondertekenen](#sign-document-step) zijn functies die vooraf beschikbaar zijn en toegankelijk zijn via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 U gebruikt workflowmodellen. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [omvat diverse AEM stappen van het Werkschema in een model om bedrijfslogica te bereiken](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
@@ -37,7 +39,7 @@ Forms-centric workflowstappen voeren AEM Forms-specifieke bewerkingen uit in een
 
 >[!NOTE]
 >
->Als het workflowmodel is gemarkeerd voor externe opslag, kunt u voor alle Forms-workflowstappen alleen de optie voor het opslaan of ophalen van gegevensbestanden en bijlagen selecteren.
+>Als het workflowmodel is gemarkeerd voor externe opslag, kunt u voor alle stappen in de Forms Workflow alleen de optie voor het opslaan of ophalen van gegevensbestanden en bijlagen selecteren.
 
 
 ## Taakstap toewijzen {#assign-task-step}
@@ -46,10 +48,10 @@ De taakstap toewijzen maakt een tijdelijk item en wijst dit toe aan een gebruike
 
 U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijvoorbeeld, creërend een automatisch Document van Verslag, toewijzend de taak aan een specifieke gebruiker of een groep, specificerend de weg van de voorgelegde gegevens, specificerend de weg van te vullen gegevens, en specificerend standaardacties. De stap Taak toewijzen heeft de volgende eigenschappen:
 
-* **[!UICONTROL Title]**: Titel van de taak. De titel wordt weergegeven in AEM Postvak IN.
+* **[!UICONTROL Title]**: Titel van de taak. De titel wordt weergegeven in het AEM Inbox.
 * **[!UICONTROL Description]**: Uitleg van de bewerkingen die in de taak worden uitgevoerd. Deze informatie is nuttig voor andere procesontwikkelaars wanneer u in een gedeelde ontwikkelomgeving werkt.
 
-* **[!UICONTROL Thumbnail Path]**: Pad van de taakminiatuur. Als er geen pad is opgegeven, wordt voor een standaardminiatuur van een adaptief formulier en voor Document of Record een standaardpictogram weergegeven.
+* **[!UICONTROL Thumbnail Path]**: Pad van de taakminiatuur. Als er geen pad is opgegeven, wordt voor een adaptief formulier een standaardminiatuur weergegeven en voor Document of Record, wordt een standaardpictogram weergegeven.
 * **[!UICONTROL Workflow Stage]**: Een werkstroom kan uit meerdere fasen bestaan. Deze stadia worden getoond in AEM Inbox. U kunt deze fasen definiëren in de eigenschappen van het model (Sidekick > Pagina > Pagina-eigenschappen > Staven).
 * **[!UICONTROL Priority]**: De geselecteerde prioriteit wordt weergegeven in het AEM Inbox. De beschikbare opties zijn Hoog, Normaal en Laag. De standaardwaarde is Normaal.
 * **[!UICONTROL Due Date]**: Geef het aantal dagen of uren op waarna de taak achterstallig is. Als u **[!UICONTROL Off]** En dan is de taak nooit achterstallig. U kunt ook een time-outhandler opgeven om specifieke taken uit te voeren nadat de taak is uitgevoerd.
@@ -126,34 +128,34 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 
 * **[!UICONTROL Arguments]**: Het veld is beschikbaar wanneer een ander script dan het script RandomParticipantChoose is geselecteerd in het veld Deelnemerkiezer. In het veld kunt u een lijst met door komma&#39;s gescheiden argumenten opgeven voor het script dat is geselecteerd in het veld Deelnemerkiezer.
 
-* **[!UICONTROL User or Group]**: De taak wordt toegewezen aan de geselecteerde gebruiker of groep. De optie is beschikbaar wanneer de optie **[!UICONTROL To a specific user or group option]** is geselecteerd in het dialoogvenster **[!UICONTROL Assign options]** veld. In het veld worden alle gebruikers en groepen van de [!DNL workflow-users] groep.\
-  De **[!UICONTROL User or Group]** drop-down menu maakt een lijst van de gebruikers en de groepen die de het programma geopende gebruiker toegang heeft tot. De weergave van de gebruikersnaam is afhankelijk van het feit of u toegangsmachtigingen hebt voor de **[!UICONTROL users]** knooppunt in crx-repository voor die bepaalde gebruiker.
+* **[!UICONTROL User or Group]**: De taak wordt toegewezen aan een geselecteerde gebruiker of groep. De optie is beschikbaar wanneer de optie **[!UICONTROL To a specific user or group option]** is geselecteerd in het dialoogvenster **[!UICONTROL Assign options]** veld. In het veld worden alle gebruikers en groepen van de [!DNL workflow-users] groep.\
+  De **[!UICONTROL User or Group]** drop-down menu maakt een lijst van de gebruikers en de groepen die de het programma geopende gebruiker toegang heeft tot. De weergave van de gebruikersnaam is afhankelijk van het feit of u toegangsmachtigingen hebt voor de **[!UICONTROL users]** knooppunt in de crx-repository voor die bepaalde gebruiker.
 
 * **[!UICONTROL Send Notification Email]**: Selecteer deze optie als u e-mailberichten wilt verzenden naar de ontvanger. Deze meldingen worden verzonden wanneer een taak wordt toegewezen aan een gebruiker of een groep. U kunt de **[!UICONTROL Recipient Email Address]** om het mechanisme voor het ophalen van het e-mailadres op te geven.
 
-* **[!UICONTROL Recipient Email Address]**: U kunt e-mailadres opslaan in een variabele, een letterlijk teken gebruiken om een permanent e-mailadres op te geven of het standaard e-mailadres van de toegewezen persoon gebruiken die is opgegeven in het profiel van de toegewezen persoon. U kunt het letterlijke of variabele gebruiken om het e-mailadres van een groep op te geven. De optie Variabele is handig bij het dynamisch ophalen en gebruiken van een e-mailadres. De **[!UICONTROL Use default email address of the assignee]** Deze optie geldt slechts voor één enkele ontvanger. In dit geval wordt het e-mailadres gebruikt dat is opgeslagen in het gebruikersprofiel van de toewijzing.
+* **[!UICONTROL Recipient Email Address]**: U kunt een e-mailadres opslaan in een variabele, een letterlijk adres gebruiken om een permanent e-mailadres op te geven of het standaard e-mailadres van de toegewezen persoon gebruiken dat is opgegeven in het profiel van de toegewezen persoon. U kunt het letterlijke of variabele gebruiken om het e-mailadres van een groep op te geven. De optie Variabele is handig bij het dynamisch ophalen en gebruiken van een e-mailadres. De **[!UICONTROL Use default email address of the assignee]** Deze optie geldt slechts voor één enkele ontvanger. In dit geval wordt het e-mailadres gebruikt dat is opgeslagen in het gebruikersprofiel Toegewezen.
 
-* **[!UICONTROL HTML Email Template]**: Selecteer een e-mailsjabloon voor de e-mailmelding. Als u een sjabloon wilt bewerken, wijzigt u het bestand op /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in de crx-repository.
+* **[!UICONTROL HTML Email Template]**: Selecteer de e-mailsjabloon voor de e-mailmelding. Als u een sjabloon wilt bewerken, wijzigt u het bestand op /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in de crx-repository.
 * **[!UICONTROL Allow Delegation To]**: AEM Inbox verstrekt een optie aan de het programma geopende gebruiker om het toegewezen werkschema aan een andere gebruiker te delegeren. U kunt delegeren binnen dezelfde groep of aan de werkschemagebruiker van een andere groep. Als de taak aan één enkele gebruiker wordt toegewezen en **[!UICONTROL allow delegation to members of the assignee group]** wordt geselecteerd, dan is het niet mogelijk om de taak aan een andere gebruiker of een groep te delegeren.
-* **[!UICONTROL Share Settings]**: AEM Inbox biedt opties om één of alle taken in de Postvak IN te delen met andere gebruikers:
+* **[!UICONTROL Share Settings]**: AEM Inbox biedt opties om één of alle taken in het Postvak IN met een andere gebruiker te delen:
    * Wanneer de **[!UICONTROL Allow assignee to share explicitly in inbox]** is geselecteerd, kan de gebruiker de taak in AEM Postvak In selecteren en deze delen met een andere AEM.
-   * Wanneer de **[!UICONTROL Allow assignee to share via inbox sharing]** is geselecteerd en gebruikers hun Postvak IN-items delen of andere gebruikers toegang geven tot hun Postvak IN-items. Alleen taken waarvoor de optie is ingeschakeld, worden met andere gebruikers gedeeld.
+   * Wanneer de **[!UICONTROL Allow assignee to share via inbox sharing]** is geselecteerd en gebruikers hun Postvak IN-items delen of andere gebruikers toegang geven tot hun Postvak IN-items, worden alleen taken waarvoor de optie is ingeschakeld, gedeeld met andere gebruikers.
    * Wanneer de **[!UICONTROL Allow assignee to delegate using 'Out of Office' settings]** is geselecteerd. De ontvanger kan de optie toelaten om de taak aan andere gebruikers samen met andere uit opties van het Bureau te delegeren. Om het even welke nieuwe die taken aan de uit-van-bureaugebruiker worden toegewezen worden automatisch gedelegeerd (toegewezen) aan de gebruikers in uit-van-bureaumontages worden vermeld.
 
-  Het staat andere gebruikers toe om toewijstaken te kiezen terwijl buiten bureau is en niet aan toegewezen taken kan werken.
+  Het staat andere gebruikers toe om toewijstaken te kiezen terwijl buiten het bureau is en niet aan toegewezen taken kan werken.
 
 * **[!UICONTROL Actions]** > **[!UICONTROL Default Actions]**: Verzenden, Opslaan en Herstellen zijn uit het vak beschikbaar. Standaard zijn alle standaardhandelingen ingeschakeld.
 * **[!UICONTROL Route Variable]**: Naam van de routevariabele. De routevariabele vangt douaneacties die een gebruiker in AEM Inbox selecteert.
-* **[!UICONTROL Routes]**: Een taak kan zich vertakken naar verschillende routes. Wanneer geselecteerd in AEM Inbox, keert de route een waarde en de werkschematakken terug die op de geselecteerde route worden gebaseerd. U kunt routes opslaan in een variabele van een gegevenstype String of **[!UICONTROL Literal]** om routes manueel toe te voegen.
+* **[!UICONTROL Routes]**: Een taak kan zich vertakken naar verschillende routes. Wanneer geselecteerd in AEM Inbox, keert de route een waarde en de werkschematakken terug die op de geselecteerde route worden gebaseerd. U kunt routes in een variabele van serie van de gegevenstypes van het Koord opslaan of selecteren **[!UICONTROL Literal]** om routes manueel toe te voegen.
 
-* **[!UICONTROL Route Title]**: Geef de titel voor de route op. Deze wordt weergegeven in AEM Postvak IN.
-* **[!UICONTROL Coral Icon]**: Geef het HTML-kenmerk van een koraalpictogram op. De Adobe CorelUI-bibliotheek biedt een uitgebreide set aanraakpictogrammen. U kunt een pictogram voor de route kiezen en gebruiken. Deze wordt samen met de titel in AEM Inbox weergegeven. Als u de routes in een variabele opslaat, gebruiken de routes een standaard &quot;Tags&quot;koraalpictogram.
-* **[!UICONTROL Allow assignee to add comment]**: Selecteer deze optie als u opmerkingen voor de taak wilt inschakelen. Een toegewezen persoon kan de opmerkingen toevoegen vanuit AEM Postvak In op het moment dat de taak wordt verzonden.
+* **[!UICONTROL Route Title]**: Geef de titel voor de route op. Deze wordt weergegeven in het AEM Inbox.
+* **[!UICONTROL Coral Icon]**: Geef een HTML-kenmerk van een koraalpictogram op. De Adobe CorelUI-bibliotheek biedt een uitgebreide set aanraakpictogrammen. U kunt een pictogram voor de route kiezen en gebruiken. Deze wordt samen met de titel weergegeven in het AEM Inbox. Als u de routes in een variabele opslaat, gebruiken de routes een standaard &quot;Tags&quot;koraalpictogram.
+* **[!UICONTROL Allow assignee to add comment]**: Selecteer deze optie als u opmerkingen voor de taak wilt inschakelen. Een toegewezen persoon kan de opmerkingen toevoegen vanuit het Postvak AEM op het moment dat de taak wordt verzonden.
 * **[!UICONTROL Save comment in variable]**: Sla de opmerking op in een variabele van het gegevenstype String. Deze optie wordt alleen weergegeven als u **[!UICONTROL Allow assignee to add comment]** selectievakje.
 
-* **[!UICONTROL Allow assignee to add attachments to the task]**: Selecteer deze optie om bijlagen in te schakelen voor de taak. Een toegewezen persoon kan de bijlagen toevoegen vanuit AEM Postvak In op het moment dat de taak wordt verzonden. U kunt ook de maximumgrootte beperken **[!UICONTROL (Maximum File Size)]** van een bijlage. De standaardgrootte is 2 MB.
+* **[!UICONTROL Allow assignee to add attachments to the task]**: Selecteer deze optie om bijlagen in te schakelen voor de taak. Een toegewezen persoon kan de bijlagen toevoegen vanuit het AEM Postvak In op het moment dat de taak wordt verzonden. U kunt ook de maximumgrootte beperken **[!UICONTROL (Maximum File Size)]** van een bijlage. De standaardgrootte is 2 MB.
 
-* **[!UICONTROL Save output task attachments using]**: Geef de locatie van de bijlagemap op. U kunt uitvoertaakbijlagen opslaan met een pad dat is gebaseerd op de laadbewerking of met een variabele van een array van documentgegevenstype. Deze optie wordt alleen weergegeven als u **[!UICONTROL Allow assignee to add attachments to the task]** Selectievakje en selecteer **[!UICONTROL Adaptive Form]**, **[!UICONTROL Read-only Adaptive Form]**, of **[!UICONTROL Non-interactive PDF document]** van de **[!UICONTROL Type]** vervolgkeuzelijst in de **[!UICONTROL Form/Document]** tab.
+* **[!UICONTROL Save output task attachments using]**: Geef de locatie van de bijlage op. U kunt uitvoertaakbijlagen opslaan met een pad dat is gebaseerd op de lading of in een variabele van een array met documentgegevenstypen. Deze optie wordt alleen weergegeven als u **[!UICONTROL Allow assignee to add attachments to the task]** Selectievakje en selecteer **[!UICONTROL Adaptive Form]**, **[!UICONTROL Read-only Adaptive Form]**, of **[!UICONTROL Non-interactive PDF document]** van de **[!UICONTROL Type]** vervolgkeuzelijst in de **[!UICONTROL Form/Document]** tab.
 
 * **[!UICONTROL Use custom metadata]**: Selecteer deze optie om het veld Aangepaste metagegevens in te schakelen. Aangepaste metagegevens worden gebruikt in e-mailsjablonen.
 * **[!UICONTROL Custom Metadata]**: Selecteer aangepaste metagegevens voor de e-mailsjablonen. De aangepaste metagegevens zijn beschikbaar in de crx-gegevensopslagruimte op apps/fd/dashboard/scripts/metadataScripts. Het opgegeven pad bestaat niet in de crx-gegevensopslagruimte. Een beheerder maakt het pad voordat het wordt gebruikt. U kunt ook een service gebruiken voor de aangepaste metagegevens. U kunt ook het dialoogvenster `WorkitemUserMetadataService` interface voor aangepaste metagegevens.
@@ -171,7 +173,7 @@ PDF/A is een archiefindeling voor langdurige bewaring van de inhoud van het docu
 
 De stap Omzetten in PDF/A heeft de volgende eigenschappen:
 
-**[!UICONTROL Input Document]**: Het invoerdocument kan relatief zijn ten opzichte van de lading, een absoluut pad hebben, kunnen worden opgegeven als lading of opgeslagen in een variabele van het gegevenstype Document.
+**[!UICONTROL Input Document]**: Het invoerdocument kan relatief zijn ten opzichte van de lading, een absoluut pad hebben, als een lading kunnen worden verstrekt of in een variabele van het gegevenstype Document worden opgeslagen.
 
 **[!UICONTROL Conversion Options]**: Met deze eigenschap worden de instellingen voor het omzetten van PDF-documenten in PDF/A-documenten opgegeven. Onder dit tabblad zijn verschillende opties beschikbaar:
 * **[!UICONTROL Compliance]**: Geeft de standaard aan waaraan het PDF/A-uitvoerdocument moet voldoen. Het steunt verschillende normen van PDF zoals PDF/A-1b, PDF/A-2b, of PDF/A-3b.
@@ -184,9 +186,9 @@ De stap Omzetten in PDF/A heeft de volgende eigenschappen:
 
 ## E-mailstap verzenden {#send-email-step}
 
-Gebruik de stap E-mail om een e-mail te verzenden, bijvoorbeeld een e-mail met een Document of Record, koppeling van een adaptief formulier <!-- , link of an interactive communication-->of met een bijgevoegd PDF-document. E-mailstapondersteuning verzenden [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de weergave, het kleurenschema en het gedrag van de e-mail definiëren.
+Gebruik de stap E-mail om een e-mail te verzenden, bijvoorbeeld een e-mail met een Document of Record, koppeling van een adaptief formulier <!-- , link of an interactive communication-->of met een bijgevoegd PDF-document. E-mailstapondersteuning verzenden [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de vormgeving, het kleurenschema en het gedrag van de e-mail definiëren.
 
-In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [Contact opnemen met het ondersteuningsteam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) om havens voor het verzenden van e-mail toe te laten en SMTP protocol voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
+In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de e-mailservice is geconfigureerd. E-mailondersteuning biedt standaard alleen HTTP- en HTTP-protocollen. [Contact opnemen met het ondersteuningsteam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) om havens toe te laten om e-mail te verzenden en SMTP protocol voor uw milieu toe te laten. De beperking helpt de beveiliging van het platform te verbeteren.
 
 De e-mailstap heeft de volgende eigenschappen:
 
@@ -241,20 +243,20 @@ U kunt meerdere Adaptive Forms aan een workflow koppelen. Hierdoor kunt u bij ui
 
 Als u bijvoorbeeld het pad van een map opgeeft, worden alle bestanden die rechtstreeks in de map beschikbaar zijn, gekoppeld aan het document met records. Als er bestanden beschikbaar zijn in de mappen die rechtstreeks beschikbaar zijn in het opgegeven pad naar de bijlage, worden de bestanden als bijlagen opgenomen in Document of Record. Als er mappen in direct beschikbare mappen staan, worden deze overgeslagen.
 
-**[!UICONTROL Save Generated Document of Record using below options]**: Geef de locatie op waar u een document van een recordbestand wilt behouden. U kunt ervoor kiezen om de payload-map te overschrijven, Document of Record op een locatie in de payload-map te plaatsen of het Document of Record op te slaan in een variabele van het documentgegevenstype.
+**[!UICONTROL Save Generated Document of Record using below options]**: Geef de locatie op waar u een document van een recordbestand wilt behouden. U kunt ervoor kiezen om de ladingmap te overschrijven, het document of record op een locatie in de ladingmap te plaatsen of het document of record op te slaan in een variabele van het gegevenstype Document.
 
 **[!UICONTROL Locale]**: Geef de taal van het document met records op. Selecteren **[!UICONTROL Literal]** om de landinstelling te selecteren in een vervolgkeuzelijst of selecteer **[!UICONTROL Variable]** om de landinstelling op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String. Definieer de landinstellingscode terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **nl_NL** voor het Engels en **fr_FR** voor Frans.
 
 ## DDX-stap aanroepen {#invokeddx}
 
-XML (DDX) van de Beschrijving van het document is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX definieert een set bewerkingen die op een of meer invoerdocumenten kan worden toegepast om een of meer uitvoerdocumenten te genereren. Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de ***DDX-stap aanroepen*** in een AEM Workflow voor het uitvoeren van diverse bewerkingen, zoals het samenstellen van documenten, het maken en wijzigen van Acrobat en XFA Forms, en andere bewerkingen die worden beschreven in [DDX-naslagdocumentatie](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+XML (DDX) van de Beschrijving van het document is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX definieert een set bewerkingen die op een of meer invoerdocumenten kan worden toegepast om een of meer uitvoerdocumenten te genereren. Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de ***DDX-stap aanroepen*** in een AEM Workflow voor het uitvoeren van diverse bewerkingen, zoals het samenstellen van documenten, het maken en wijzigen van Acrobat en XFA Forms, en andere bewerkingen die in de [DDX-naslagdocumentatie](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
 
 De aanroepende DDX-stap heeft de volgende eigenschappen:
 
 **[!UICONTROL Input Documents]**: Wordt gebruikt om eigenschappen van een invoerdocument in te stellen. Onder dit tabblad zijn verschillende opties beschikbaar:
 * **[!UICONTROL Specify DDX Using]**: Geeft het invoerdocument aan ten opzichte van de payload, heeft een absoluut pad, kan worden opgegeven als een payload of kan worden opgeslagen in een variabele van het gegevenstype Document.
 * **[!UICONTROL Create Map from Payload]**: Voeg alle documenten onder de ladingsomslag aan de Kaart van het Document van de Input voor aan te halen API in Assembler. De knooppuntnaam voor elk document wordt gebruikt als sleutel in de kaart.
-* **[!UICONTROL Input Document's Map]**: Option wordt gebruikt om meerdere items toe te voegen met **[!UICONTROL ADD]** knop. Elk item vertegenwoordigt de sleutel van het document in de kaart en de bron van het document.
+* **[!UICONTROL Input Document's Map]**: Option wordt gebruikt om meerdere items toe te voegen met de opdracht **[!UICONTROL ADD]** knop. Elk item vertegenwoordigt de sleutel van het document in de kaart en de bron van het document.
 
 **[!UICONTROL Environment Options]**: Deze optie wordt gebruikt om verwerkingsinstellingen in te stellen voor het aanroepen van de API. Onder dit tabblad zijn verschillende opties beschikbaar:
 * **[!UICONTROL Validate Only]**: Controleert de geldigheid van het invoer-DDX-document.
@@ -329,12 +331,12 @@ Om input voor gebieden van de stap te verklaren, worden de volgende gegevensbest
 
 Voor de stap Service van het formuliergegevensmodel aanroepen worden de onderstaande velden weergegeven om bewerkingen in het formuliergegevensmodel te vergemakkelijken:
 
-* **[!UICONTROL Title]**: Titel van de stap. Het helpt de stap in de werkschemaredacteur identificeren.
+* **[!UICONTROL Title]**: Titel van de stap. Hiermee kunt u de stappen in de werkstroomeditor identificeren.
 * **[!UICONTROL Description]**: Uitleg nuttig voor andere procesontwikkelaars wanneer u in een gedeelde ontwikkelomgeving werkt.
 
 * **[!UICONTROL Form Data Model Path]**: Blader en selecteer een formuliergegevensmodel dat op de server aanwezig is.
 
-* **[!UICONTROL Errors and Validations]**: Met deze optie kunt u foutberichten vastleggen en validatieopties opgeven voor gegevens die zijn opgehaald en naar gegevensbronnen worden verzonden. Met deze veranderingen, kunt u gegevens verzekeren die tot de Invoke stap van de Dienst van het Gegevensmodel van de Vorm worden overgegaan voldoet aan de gegevensbeperkingen die door gegevensbron worden bepaald. Zie voor meer informatie [Geautomatiseerde validatie van invoergegevens](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL Errors and Validations]**: Met deze optie kunt u foutberichten vastleggen en validatieopties opgeven voor gegevens die zijn opgehaald en naar gegevensbronnen worden verzonden. Met deze veranderingen, kunt u gegevens verzekeren die tot de Invoke stap van de Dienst van het Gegevensmodel van de Vorm worden overgegaan voldoet aan de gegevensbeperkingen die door de gegevensbron worden bepaald. Zie voor meer informatie [Geautomatiseerde validatie van invoergegevens](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL Validation level]**: Er zijn drie validatiecategorieën: Standaard, Volledig en UIT:
 
@@ -361,23 +363,27 @@ Voor de stap Service van het formuliergegevensmodel aanroepen worden de ondersta
 
      Bijvoorbeeld als de map Relatief aan Payload in de CRX-opslagplaats een bestandsbijlage bevat in de `attachment\attachment-folder` locatie, opgeven `attachment\attachment-folder` in het tekstvak nadat u de **[!UICONTROL Relative to Payload]** -optie.
 
-   * **[!UICONTROL JSON Dot Notation]**: Gebruik de optie wanneer de te gebruiken waarde zich in een JSON-bestand bevindt. Bijvoorbeeld verzekering.customerDetails.emailAddress. De optie Puntnotatie JSON is alleen beschikbaar als de optie Invoervelden toewijzen van de invoeroptie JSON is geselecteerd.
-   * **[!UICONTROL Map input fields from input JSON]**: Geef het pad op van een JSON-bestand om de invoerwaarde van bepaalde serviceargumenten op te halen uit het JSON-bestand. Het pad van het JSON-bestand kan relatief zijn ten opzichte van de payload, een absoluut pad of u kunt een invoer-JSON-document selecteren met een variabele van het type JSON- of Formuliergegevensmodel.
+   * **[!UICONTROL JSON Dot Notation]**: Gebruik de optie wanneer de te gebruiken waarde zich in een JSON-bestand bevindt. Bijvoorbeeld verzekering.customerDetails.emailAddress. De optie JSON-puntnotatie is alleen beschikbaar als invoervelden toewijzen van de JSON-invoeroptie is geselecteerd.
+   * **[!UICONTROL Map input fields from input JSON]**: Geef het pad van een JSON-bestand op om de invoerwaarde van bepaalde serviceargumenten op te halen uit het JSON-bestand. Het pad van het JSON-bestand kan relatief zijn ten opzichte van de payload, een absoluut pad, of u kunt een invoer-JSON-document selecteren met een variabele van het type JSON of Formuliergegevensmodel.
 
 * **[!UICONTROL Input for services]** > **[!UICONTROL Provide input data using variable or a JSON file]**: Selecteer de optie om waarden voor alle argumenten op te halen uit een JSON-bestand dat is opgeslagen op een absoluut pad, een pad dat relatief is ten opzichte van de payload of een variabele.
 * **[!UICONTROL Select Input JSON document using]**: Het JSON-bestand met waarden voor alle serviceargumenten. Het pad van het JSON-bestand kan **[!UICONTROL relative to the payload]** of een **[!UICONTROL absolute path]**. U kunt het invoer-JSON-document ook ophalen met behulp van een variabele van het gegevenstype JSON of Form Data Model.
 
 * **[!UICONTROL JSON Dot Notation]**: Laat het veld leeg als u alle objecten van het opgegeven JSON-bestand als invoer voor serviceargumenten wilt gebruiken. Als u een specifiek JSON-object uit het opgegeven JSON-bestand wilt lezen als invoer voor serviceargumenten, geeft u puntnotatie voor het JSON-object op. Als u bijvoorbeeld een JSON-object hebt dat vergelijkbaar is met de JSON-object dat aan het begin van de sectie wordt vermeld, geeft u Insurance.customerDetails op om alle details van een klant als invoer voor de service op te geven.
-* **[!UICONTROL Output of service]** > **[!UICONTROL Map and write output values to variable or metadata]**: Selecteer de optie om de uitvoerwaarden op te slaan als eigenschappen van het metagegevensknooppunt voor workflowinstanties in de crx-repository. Specificeer de naam van het meta-gegevensbezit en selecteer het overeenkomstige attribuut van de de dienstoutput dat met meta-gegevensbezit moet worden in kaart gebracht, bijvoorbeeld, phone_number dat door de outputdienst met het phone_number bezit van werkschemameta-gegevens is teruggekeerd. Op dezelfde manier kunt u de uitvoer opslaan in een variabele van het gegevenstype Long. Wanneer u een eigenschap voor de **[!UICONTROL Service output attribute to be mapped]** optie, alleen variabelen die gegevens van de geselecteerde eigenschap kunnen opslaan, worden gevuld voor de **[!UICONTROL Save the output to]** -optie.
+* **[!UICONTROL Output of service]** > **[!UICONTROL Map and write output values to variable or metadata]**: Selecteer de optie om de uitvoerwaarden op te slaan als eigenschappen van het metagegevensknooppunt voor workflowinstanties in de crx-repository. Specificeer de naam van het meta-gegevensbezit en selecteer het overeenkomstige attribuut van de de dienstoutput dat met het meta-gegevensbezit moet worden in kaart gebracht, bijvoorbeeld, phone_number dat door de outputdienst met het phone_number bezit van werkschemameta-gegevens is teruggekeerd. Op dezelfde manier kunt u de uitvoer opslaan in een variabele van het gegevenstype Long. Wanneer u een eigenschap voor de **[!UICONTROL Service output attribute to be mapped]** optie, alleen variabelen die gegevens van de geselecteerde eigenschap kunnen opslaan, worden gevuld voor de **[!UICONTROL Save the output to]** -optie.
 
-* **[!UICONTROL Output of service]** > **[!UICONTROL Save output to variable or a JSON file]**: Selecteer de optie om de uitvoerwaarden in een JSON-bestand op te slaan met een absoluut pad, een pad dat relatief is ten opzichte van de laadtijd of een variabele.
+* **[!UICONTROL Output of service]** > **[!UICONTROL Save output to variable or a JSON file]**: Selecteer de optie om de uitvoerwaarden in een JSON-bestand op te slaan met een absoluut pad, een pad dat relatief is ten opzichte van de payload of een variabele.
 * **[!UICONTROL Save Output JSON document using below options]**: Sla het JSON-uitvoerbestand op. Het pad van het JSON-uitvoerbestand kan relatief zijn ten opzichte van de payload of een absoluut pad. U kunt het JSON-uitvoerbestand ook opslaan met een variabele van het gegevenstype JSON of Form Data Model.
+
+
 
 ## stap Document ondertekenen {#sign-document-step}
 
-Met de stap Document ondertekenen kunt u [!DNL Adobe Sign] om documenten te ondertekenen. Wanneer u [!DNL Adobe Sign] Workflowstap voor het ondertekenen van een adaptief formulier: het formulier kan door ondertekenaars worden doorgegeven of tegelijkertijd naar alle ondertekenaars worden verzonden, afhankelijk van de configuratie van de workflowstap. [!DNL Adobe Sign] Aangepaste adaptieve Forms worden alleen naar Experience Manager Forms Server verzonden nadat alle ondertekenaars het ondertekeningsproces hebben voltooid.
+<span class="preview"> De rollen van de Singer, het spoor van de Controle, en op overheids-identiteitskaart gebaseerde authentificatieoptie in de stap van Adobe Sign zijn pre-versieeigenschap en toegankelijk door ons [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-Standaard worden de [!DNL Adobe Sign] De diensten van de planner controleren (opiniepeilingen) ondertekeningsreactie na om de 24 uur. U kunt [het standaardinterval voor uw omgeving wijzigen](adobe-sign-integration-adaptive-forms.md##configure-adobe-sign-scheduler-to-sync-the-signing-status).
+Met de stap Document ondertekenen kunt u [!DNL Adobe Sign] om documenten te ondertekenen. Wanneer u de opdracht [!DNL Adobe Sign] Workflowstap voor het ondertekenen van een adaptief formulier: het formulier kan door de ontvangers worden doorgegeven of kan tegelijkertijd naar alle ontvangers worden verzonden, afhankelijk van de configuratie van de workflowstap. [!DNL Adobe Sign] Aangepaste Forms worden alleen naar Experience Manager Forms Server verzonden nadat alle ontvangers het ondertekeningsproces hebben voltooid.
+
+Standaard worden de [!DNL Adobe Sign] De dienstcontroles van de planner (opiniepeilingen) ontvankelijke reactie na om de 24 uur. U kunt [het standaardinterval voor uw omgeving wijzigen](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status).
 
 De stap Document ondertekenen heeft de volgende eigenschappen:
 
@@ -388,14 +394,26 @@ De stap Document ondertekenen heeft de volgende eigenschappen:
 * **[!UICONTROL Adobe Sign Cloud Configuration]**: Kies een [!DNL Adobe Sign] Cloudconfiguratie. Als u niet hebt geconfigureerd [!DNL Adobe Sign] for [!DNL AEM Forms], zie [Adobe Sign integreren met [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
 * **[!UICONTROL Select Document to be signed using]**: U kunt een document kiezen op een locatie die relatief is ten opzichte van de lading, de lading gebruiken als het document, een absoluut pad van het document opgeven of het document ophalen dat is opgeslagen in een variabele van het gegevenstype Document.
-* **[!UICONTROL Days Until Deadline]**: Een document is gemarkeerd als vervallen (verstreken deadline) nadat de taak gedurende het opgegeven aantal dagen niet is geactiveerd in het dialoogvenster **[!UICONTROL Days Until Deadline]** veld. Het aantal dagen wordt geteld nadat het document is toegewezen aan een gebruiker voor ondertekening.
+* **[!UICONTROL Days Until Deadline]**: Een document is gemarkeerd als vervallen (verstreken deadline) nadat de taak gedurende het opgegeven aantal dagen niet is geactiveerd in het dialoogvenster **[!UICONTROL Days Until Deadline]** veld. Het aantal dagen wordt geteld nadat de documentatie aan een gebruiker is toegewezen voor ondertekening.
 * **[!UICONTROL Reminder Email Frequency]**: U kunt elke dag of elke week een herinnering per e-mail verzenden. De week wordt geteld vanaf de dag waarop de documentatie aan een gebruiker is toegewezen voor ondertekening.
 * **[!UICONTROL Signature Process]**: U kunt een document in een opeenvolgende of parallelle volgorde ondertekenen. Eén ondertekenaar ontvangt het document op volgorde voor ondertekening. Nadat de eerste ondertekenaar het ondertekenen van het document heeft voltooid, wordt het document verzonden naar de tweede ondertekenaar, enzovoort. Parallel hieraan kunnen meerdere ondertekenaars een document tegelijk ondertekenen.
 * **[!UICONTROL Redirection URL]**: Geef een URL voor omleiding op. Nadat het document is ondertekend, kunt u de ontvanger omleiden naar een URL. Gewoonlijk bevat deze URL een bedankbericht of verdere instructies.
 * **[!UICONTROL Workflow Stage]**: Een werkstroom kan uit meerdere fasen bestaan. Deze stadia worden getoond in AEM Inbox. U kunt deze fasen definiëren in de eigenschappen van het model ( **[!UICONTROL Sidekick]** > **[!UICONTROL Page]** > **[!UICONTROL Page Properties]** > **[!UICONTROL Stages]**).
-* **[!UICONTROL Select Signers]**: Geef de methode op waarmee u ondertekenaars voor het document wilt kiezen. U kunt de workflow dynamisch toewijzen aan een gebruiker of groep of gegevens van een ondertekenaar handmatig toevoegen.
-* **[!UICONTROL Script or service to select signers]**: De optie is alleen beschikbaar als de optie Dynamisch is geselecteerd in het veld Ondertekenaars selecteren. U kunt een ECMAScript of een dienst specificeren om ondertekenaars en verificatieopties voor een document te kiezen.
-* **[!UICONTROL Signer Details]**: De optie is alleen beschikbaar als de optie Handmatig is geselecteerd in het veld Ondertekenaars selecteren. Geef een e-mailadres op en kies een optioneel verificatiemechanisme. Voordat u een verificatiemechanisme met twee stappen selecteert, moet u ervoor zorgen dat de bijbehorende verificatieoptie is ingeschakeld voor de geconfigureerde [!DNL Adobe Sign] account. U kunt een variabele van het gegevenstype String gebruiken om waarden voor de velden E-mail, Landcode en Telefoonnummer te definiëren. De velden Landcode en Telefoonnummer worden alleen weergegeven als u Telefoonverificatie selecteert in de vervolgkeuzelijst in twee stappen.
+* **[!UICONTROL Select Recipients]**: Geef de methode op waarmee u ontvangers voor het document wilt kiezen. U kunt de workflow dynamisch toewijzen aan een gebruiker of groep of gegevens van een ontvanger handmatig toevoegen. Wanneer u Handmatig selecteert in het vervolgkeuzemenu, voegt u gegevens over ontvangers toe, zoals E-mail, Rol en Verificatie.
+
+  >[!NOTE]
+  >
+  >* In de sectie Rol kunt u de rol van ontvanger opgeven als ondertekenaar, fiatteur, accepteerder, gecertificeerde ontvanger, invuller van formulier en gedelegeerde.
+  >* Als u Delegator in de optie van de Rol selecteert, kan de Delegator de ondertekeningstaak aan een andere ontvanger toewijzen.
+  >* Als u een authentificatiemethode voor hebt gevormd [!DNL Adobe Sign], gebaseerd op uw configuratie, selecteert u een verificatiemethode zoals verificatie via telefoon, verificatie op basis van sociale identiteit, verificatie op basis van kennis, verificatie op basis van identiteit van de overheid.
+
+* **[!UICONTROL Script or service to select recipients]**: De optie is alleen beschikbaar als u de optie Dynamisch selecteert in het veld Ontvangers selecteren. U kunt een ECMAScript of een dienst specificeren om ondertekenaars en verificatieopties voor een document te kiezen.
+* **[!UICONTROL Recipient Details]**: De optie is alleen beschikbaar als de optie Handmatig is geselecteerd in het veld Ontvangers selecteren. Geef een e-mailadres op en kies een optioneel verificatiemechanisme. Voordat u een verificatiemechanisme met twee stappen selecteert, moet u ervoor zorgen dat de bijbehorende verificatieoptie is ingeschakeld voor de geconfigureerde [!DNL Adobe Sign] account. U kunt een variabele van het gegevenstype String gebruiken om waarden voor de velden E-mail, Landcode en Telefoonnummer te definiëren. De velden Landcode en Telefoonnummer worden alleen weergegeven als u Telefoonverificatie selecteert in de vervolgkeuzelijst in twee stappen.
+* **[!UICONTROL Signed Document]**: U kunt de status van het ondertekende document opslaan als een variabele. Als u een elektronisch audittrail voor handtekeningen wilt toevoegen voor meer beveiliging en wettigheid aan uw ondertekende document, kunt u Auditrapport opnemen. U kunt het ondertekende document opslaan in de map Variabele of Payload.
+
+  >[!NOTE]
+  >
+  > Het auditrapport wordt toegevoegd aan de laatste pagina van het ondertekende document.
 
 <!--
 ## Document Services steps {#document-services-steps}
@@ -503,7 +521,7 @@ De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 
 **[!UICONTROL Input properties]**
 
-* **[!UICONTROL Select template file using]**: Geef het pad van het sjabloonbestand op. U kunt het sjabloonbestand selecteren met het pad dat relatief is ten opzichte van de lading, opgeslagen op een absoluut pad of met een variabele van het gegevenstype Document. Bijvoorbeeld: [Payload_Directory]/Workflow/data.xml. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt. Bovendien kunt u ook payload accepteren als het invoergegevensbestand.
+* **[!UICONTROL Select template file using]**: Geef het pad van het sjabloonbestand op. U kunt het sjabloonbestand selecteren met het pad dat relatief is ten opzichte van de lading, opgeslagen op een absoluut pad of met een variabele van het gegevenstype Document. Bijvoorbeeld: [Payload_Directory]/Workflow/data.xml. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt. Bovendien kunt u de laadgegevens ook accepteren als het invoergegevensbestand.
 
 * **[!UICONTROL Select data document using]**: Geef het pad op van een invoergegevensbestand. U kunt het invoergegevensbestand selecteren met het pad dat relatief is ten opzichte van de lading, opgeslagen op een absoluut pad of met een variabele van het gegevenstype Document. Bijvoorbeeld: [Payload_Directory]/Workflow/data.xml. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt.
 

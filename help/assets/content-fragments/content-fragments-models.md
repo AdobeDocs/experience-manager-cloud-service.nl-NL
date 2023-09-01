@@ -2,9 +2,9 @@
 title: Content Fragment Models (Assets - Content Fragments)
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '2937'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,12 @@ U kunt als volgt modellen van inhoudsfragmenten gebruiken:
    >
    >Als de [gebruik van inhoudsfragmentmodellen is niet ingeschakeld](/help/assets/content-fragments/content-fragments-configuration-browser.md)de **Maken** deze optie is niet beschikbaar.
 
-1. Geef de **modeltitel** op. U kunt ook toevoegen **Tags**, **Beschrijving** en selecteert u **Model inschakelen** tot [het model inschakelen](#enabling-disabling-a-content-fragment-model) indien nodig.
+1. Geef de **modeltitel** op.
+U kunt ook verschillende eigenschappen definiëren, bijvoorbeeld **Tags**, **Beschrijving** en selecteert u **Model inschakelen** tot [het model inschakelen](#enabling-disabling-a-content-fragment-model) indien nodig.
+
+   >[!NOTE]
+   >
+   >Voor meer informatie over de **URL-standaardvoorvertoningspatroon** zie [Inhoudsfragmentmodel - eigenschappen](#content-fragment-model-properties).
 
    ![titel en beschrijving](assets/cfm-models-02.png)
 
@@ -313,6 +318,12 @@ U kunt de **Eigenschappen** van een inhoudsfragmentmodel:
    * **Tags**
    * **Beschrijving**
    * **Afbeelding uploaden**
+   * **URL-standaardvoorvertoningspatroon**
+
+     >[!NOTE]
+     >
+     >Dit wordt alleen gebruikt door de *new* Inhoudsfragmenteditor. Zie [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) voor nadere informatie.
+
 
 ## Een inhoudsfragmentmodel in- of uitschakelen {#enabling-disabling-a-content-fragment-model}
 

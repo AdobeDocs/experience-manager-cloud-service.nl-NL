@@ -2,7 +2,7 @@
 title: Sneltoetsen voor paginabewerking
 description: In AEM zijn verschillende sneltoetsen beschikbaar, waaronder enkele voor paginabewerking
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Sneltoetsen voor paginabewerking {#keyboard-shortcuts-when-editing-pages}
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op de [gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), en met name de [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op de [gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), en met name de [Content Fragments-console](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
 >
 >Wanneer de gebruiker in de voorvertoningsmodus begint te communiceren met de pagina, wordt de `Ctrl-Shift-m` sneltoets is niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar als de gebruiker op de bovenste editor-balk klikt of naar de modus Bewerken teruggaat.
 
-Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de opdracht [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), en met name de [Content Fragments-console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de opdracht [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), en met name de [Content Fragments-console](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de 
 
 ## OS-specifieke wijzigingstoetsen {#os-specific-modifier-keys}
 
-De wijzigingstoetsen die voor de toetsenbordkortere weg worden gebruikt variëren afhankelijk van het werkende systeem dat door de cliënt wordt gebruikt.
+De wijzigingstoetsen die worden gebruikt voor de sneltoetsen, zijn afhankelijk van het besturingssysteem dat wordt gebruikt door de client.
 
 | Windows en Linux | macOS |
 |---|---|

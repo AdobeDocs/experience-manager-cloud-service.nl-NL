@@ -6,9 +6,9 @@ keywords: Voeg een manager van de douanefout toe, voeg een standaardfoutenmanage
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '2397'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,9 @@ AEM Forms biedt offline succeshandlers en foutafhandelaars voor het verzenden va
 
 ![fout handler-workflow voor meer informatie over het toevoegen van een aangepaste fouthandler in formulieren](/help/forms/assets/error-handler-workflow.png)
 
-De adaptieve Vorm bevestigt de input u op gebieden verstrekt die op vooraf ingestelde bevestigingscriteria worden gebaseerd en controleert diverse fouten die door het REST eindpunt worden teruggekeerd dat wordt gevormd om een externe dienst aan te halen. U kunt de validatiecriteria instellen op basis van de gegevensbron die u gebruikt met het adaptieve formulier. Als u bijvoorbeeld RESTful-webservices gebruikt als gegevensbron, kunt u de validatiecriteria definiëren in een Swagger-definitiebestand.
+De adaptieve Vorm bevestigt de input die u op gebieden verstrekt die op vooraf ingestelde bevestigingscriteria en controles op diverse fouten wordt gebaseerd door het REST eindpunt wordt gevormd om de externe dienst aan te halen. U kunt de validatiecriteria instellen op basis van de gegevensbron die u gebruikt met het adaptieve formulier. Als u bijvoorbeeld RESTful-webservices gebruikt als gegevensbron, kunt u de validatiecriteria definiëren in een Swagger-definitiebestand.
 
-Als de invoerwaarden aan de validatiecriteria voldoen, worden de waarden naar de andere gegevensbron verzonden, geeft het adaptieve formulier een foutbericht weer met behulp van een fouthandler. Net als bij deze aanpak integreert Adaptive Forms met aangepaste fouthandlers voor het uitvoeren van gegevensvalidaties. Als de invoerwaarden niet voldoen aan de validatiecriteria, worden de foutberichten weergegeven op veldniveau in het adaptieve formulier. Dit gebeurt wanneer het foutbericht van de validatie dat door de server wordt geretourneerd, de standaardberichtindeling heeft.
+Als de invoerwaarden aan de validatiecriteria voldoen, worden de waarden naar de andere gegevensbron verzonden, geeft het adaptieve formulier een foutbericht weer met behulp van een fouthandler. Net als bij deze aanpak worden adaptieve Forms geïntegreerd met aangepaste fouthandlers voor het uitvoeren van gegevensvalidaties. Als de invoerwaarden niet voldoen aan de validatiecriteria, worden de foutberichten weergegeven op veldniveau in het adaptieve formulier. Dit gebeurt wanneer het foutbericht van de validatie dat door de server wordt geretourneerd, de standaardberichtindeling heeft.
 
 
 ## Gebruikt fouthandlers {#uses-of-error-handler}
@@ -180,44 +180,42 @@ Met de [Invoke-service van de Rule Editor](https://experienceleague.adobe.com/do
 >[!NOTE]
 >
 > * Om foutenmanagers met de Invoke van de Redacteur van de Regel de dienstactie te gebruiken, vorm Aangepast Forms met een model van vormgegevens.
-> * Standaard wordt een standaardfouthandler weergegeven voor het weergeven van foutberichten in velden als de foutreactie in het standaardschema staat. De standaardfoutenmanager kan de manager van de douanefout ook roepen als de foutenreactie niet aan het standaardschema voldoet.
+> * Er wordt een standaardfouthandler geboden voor het weergeven van foutberichten op velden als de foutreactie in het standaardschema staat. U kunt de standaardfoutenmanager van de functie van de douaneformmanager ook roepen.
 
-<!-- 
-Using Rule Editor, you can:
-* [Add default error handler function](#add-default-errror-handler)
-* [Add custom error handler function](#add-custom-errror-handler)
+Gebruikend de Redacteur van de Regel, kunt u:
+* [Standaardfouthandlerfunctie toevoegen](#add-default-errror-handler)
+* [Aangepaste fouthandlerfunctie toevoegen](#add-custom-errror-handler)
 
 
-### Add default error handler function {#add-default-errror-handler}
+### Standaardfouthandlerfunctie toevoegen {#add-default-errror-handler}
 
-A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
-To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take an example of a simple Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a default error handler at the **Pet ID** field to check for various errors returned by the REST endpoint configured to invoke an external service, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
+Een standaardfouthandler wordt ondersteund voor het weergeven van foutberichten in velden als de foutreactie in het standaardschema of bij een validatiefout op de server staat.
+Als u wilt weten hoe u een standaardfouthandler gebruikt met de functie [Invoke-service van de Rule Editor](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) handeling, neem een voorbeeld van een eenvoudig adaptief formulier met twee velden. **Huisdier-id** en **Naam huisdier** en gebruik een standaardfouthandler bij de **Huisdier-id** gebied om diverse fouten te controleren die door het REST eindpunt zijn teruggekeerd dat wordt gevormd om een externe dienst, bijvoorbeeld aan te halen, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Om een standaardfoutenmanager toe te voegen gebruikend de Actie van de Dienst van de Redacteur van de Regel Invoke, voer de volgende stappen uit:
 
-1. Open an Adaptive Form in authoring mode, select a form component and tap **[!UICONTROL Rule Editor]** to open the rule editor.
-1. Tap **[!UICONTROL Create]**.
-1. Create a condition in the **When** section of the rule. For example, **When[Name of Pet ID field]** is changed. Select is changed from the **Select State** drop-down list.
-1. In the **Then** section, select **[!UICONTROL Invoke Service]** from the **Select Action** drop-down list.
-1. Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
-1. Select the data bindings from the **Output** section. Select **Pet Name** in the **Output** section.
-1. Select **[!UICONTROL Default Error Handler]** from the **Error Handler** section. 
-1. Click **[!UICONTROL Done]**.
+1. Open een adaptief formulier in de ontwerpmodus, selecteer een formulieronderdeel en tik op **[!UICONTROL Rule Editor]** om de regeleditor te openen.
+1. Tik op **[!UICONTROL Create]**.
+1. Een voorwaarde maken in het dialoogvenster **Wanneer** van de regel. Bijvoorbeeld: **Wanneer[Naam van veld Dierenid]** is gewijzigd. Selecteren wordt gewijzigd in het menu **Frame selecteren** vervolgkeuzelijst.
+1. In de **Vervolgens** sectie, selecteert u **[!UICONTROL Invoke Service]** van de **Handeling selecteren** vervolgkeuzelijst.
+1. Selecteer een **Postservice** en de overeenkomstige gegevensbindingen van de **Invoer** sectie. Bijvoorbeeld om te bevestigen **Huisdier-id** selecteert u een **Postservice** als **GET /pet/{petId}** en selecteert u **Huisdier-id** in de **Invoer** sectie.
+1. Selecteer de gegevensbindingen in het menu **Uitvoer** sectie. Selecteren **Naam huisdier** in de **Uitvoer** sectie.
+1. Selecteren **[!UICONTROL Default Error Handler]** van de **Fouthandler** sectie.
+1. Klik op **[!UICONTROL Done]**.
 
- ![add a default error handler for a field validation checks in a form](/help/forms/assets/default-error-handler.png)
+![een standaardfouthandler toevoegen voor veldvalidatiecontroles in een formulier](/help/forms/assets/default-error-handler.png)
 
-As a result of this rule, the values you enter for **Pet ID** checks validation for **Pet Name** using external service invoked by REST endpoint. If the validation criteria based on the data source fail, the error messages are displayed at the field level.
+Als resultaat van deze regel worden de waarden waarvoor u invoert **Huisdier-id** controleert validatie voor **Naam huisdier** het gebruiken van externe dienst die door het eindpunt van REST wordt aangehaald. Als de validatiecriteria op basis van de gegevensbron mislukken, worden de foutberichten weergegeven op veldniveau.
 
- ![display the default error message when you add a default error handler in a form to handle error responses](/help/forms/assets/default-error-message.png)
-
--->
+![Geef het standaardfoutbericht weer wanneer u een standaardfouthandler in een formulier toevoegt voor de verwerking van foutreacties](/help/forms/assets/default-error-message.png)
 
 ### Aangepaste fouthandlerfunctie toevoegen {#add-custom-errror-handler}
 
 U kunt een aangepaste fouthandlerfunctie toevoegen om een aantal van de volgende handelingen uit te voeren:
+
 * foutreacties verwerken die niet-standaard of standaardfoutreacties gebruiken. Het is belangrijk om op te merken dat deze niet-standaardfoutreacties niet voldoen aan de [standaardschema van foutreacties](#failure-response-format).
 * verzendt analytische gebeurtenissen naar alle analytische platforms. Bijvoorbeeld Adobe Analytics.
 * modaal dialoogvenster weergeven met foutberichten.
 
-Naast de genoemde acties, kunnen de managers van de douanefout worden gebruikt om aangepaste functies uit te voeren die aan specifieke gebruikersvereisten voldoen.
+Naast de vermelde acties, kunnen de managers van de douanefout worden gebruikt om aangepaste functies uit te voeren die aan specifieke gebruikersvereisten voldoen.
 
 De manager van de douanefout is een functie (de Bibliotheek van de Cliënt) die wordt ontworpen om aan fouten te antwoorden die door de externe dienst zijn teruggekeerd en een aangepaste reactie aan eind te leveren - gebruikers. Elke clientbibliotheek met annotatie `@errorHandler` wordt beschouwd als een aangepaste fouthandlerfunctie. Deze aantekening helpt de functie van de foutenmanager te identificeren die in `.js` bestand.
 Als u wilt weten hoe u een aangepaste fouthandler maakt en gebruikt met de functie [De Invoke-service van de Rule Editor](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) handeling, laten we een voorbeeld nemen van Adaptief formulier met twee velden. **Huisdier-id** en **Naam huisdier** en gebruik een aangepaste fouthandler bij het **Huisdier-id** gebied om diverse fouten te controleren die door het REST eindpunt zijn teruggekeerd dat wordt gevormd om een externe dienst, bijvoorbeeld aan te halen, `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
@@ -229,8 +227,10 @@ Voer de volgende stappen uit om een aangepaste fouthandler toe te voegen en te g
 #### 1. Een aangepaste fouthandler maken {#create-custom-error-message}
 
 Voer de volgende stappen uit om een aangepaste foutfunctie te maken:
-1. [Clone your AEM Forms as a Cloud Service Repository.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Ga naar `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/`.
+
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+1. Een map maken onder de `[AEM Forms as a Cloud Service repository folder]/apps/` map. Maak bijvoorbeeld een map met de naam `experience-league`
+1. Navigeren naar `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` en een `ClientLibraryFolder` als `clientlibs`.
 1. Een map maken met de naam `js`.
 1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` map.
 1. Een JavaScript-bestand toevoegen, bijvoorbeeld `function.js`. Het bestand bevat de code voor aangepaste fouthandler.
@@ -247,12 +247,22 @@ Voeg de volgende code aan het dossier JavaScript toe om de reactie en kopballen 
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
+           guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
            console.log("Custom Error Handler processing end...");
        }
    ```
 
-   <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
-        `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
+   Om de standaardfoutenmanager van uw manager van de douanefout te roepen, wordt de volgende lijn van de steekproefcode gebruikt:
+   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+
+   >[!NOTE]
+   >
+   > In de `.content.xml` bestand toevoegen `allowProxy` en `categories` eigenschappen.
+   >
+   > * `allowProxy = [Boolean]true`
+   > * `categories= customfunctionsdemo`
+   >In dit geval bijvoorbeeld: [custom-errorhandler-name] wordt verstrekt zoals `customfunctionsdemo`.
+
 1. Sla de `function.js` bestand.
 1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` map.
 1. Een tekstbestand toevoegen als `js.txt`. Het bestand bevat:
@@ -262,7 +272,10 @@ Voeg de volgende code aan het dossier JavaScript toe om de reactie en kopballen 
        functions.js
    ```
 
-1. Sla de `js.txt` bestand.
+1. Sla de `js.txt` bestand.\
+   De gemaakte mapstructuur ziet er als volgt uit:
+
+   ![Map-structuur voor clientbibliotheek gemaakt](/help/forms/assets/customclientlibrary_folderstructure.png)
 
    >[!NOTE]
    >
@@ -276,11 +289,17 @@ Voeg de volgende code aan het dossier JavaScript toe om de reactie en kopballen 
        git push
    ```
 
-1. [Voer de pijplijn uit.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
+1. [Voer de pijplijn uit.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 Zodra de pijpleiding met succes wordt uitgevoerd, wordt de manager van de douanefout beschikbaar in uw Adaptieve redacteur van de Regel van de Vorm. Nu, begrijpen hoe te om een manager van de douanefout te vormen en te gebruiken gebruikend de Invoke van de Redacteur van de Regel dienst in AEM Forms.
 
 #### 2. Gebruik de Redacteur van de Regel om de manager van de douanefout te vormen {#use-custom-error-handler}
+
+Voordat u de aangepaste fouthandler implementeert in een adaptief formulier, moet u ervoor zorgen dat de naam van de clientbibliotheek in het dialoogvenster **[!UICONTROL Client Library Category]** wordt uitgelijnd met de naam die is opgegeven in de optie Categorieën van het dialoogvenster `.content.xml` bestand.
+
+![De naam van de clientbibliotheek toevoegen in de configuratie van de adaptieve formuliercontainer](/help/forms/assets/client-library-category-name.png)
+
+In dit geval wordt de naam van de clientbibliotheek opgegeven zoals `customfunctionsdemo` in de `.content.xml` bestand.
 
 Als u een aangepaste fouthandler wilt gebruiken met de **[!UICONTROL Rule Editor's Invoke Service]** handeling:
 
@@ -295,9 +314,7 @@ Als u een aangepaste fouthandler wilt gebruiken met de **[!UICONTROL Rule Editor
 
 ![Aangepaste fouthandler toevoegen aan een formulier voor het verwerken van reacties op fouten](/help/forms/assets/custom-error-handler.png)
 
-
 Als resultaat van deze regel worden de waarden waarvoor u invoert **Huisdier-id** controleert validatie voor **Naam huisdier** het gebruiken van externe dienst die door het eindpunt van REST wordt aangehaald. Als de validatiecriteria op basis van de gegevensbron mislukken, worden de foutberichten weergegeven op veldniveau.
-
 
 ![Voeg een aangepaste fouthandler toe aan een formulier voor het verwerken van reacties op fouten](/help/forms/assets/custom-error-handler-message.png)
 

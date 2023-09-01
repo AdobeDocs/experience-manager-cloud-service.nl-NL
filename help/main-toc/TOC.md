@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '4249'
+source-wordcount: '4258'
 ht-degree: 20%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 20%
    + Opmerkingen bij de release AEMaaCS-functies {#release-notes}
       + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023 {#2023}
+         + [Opmerkingen bij de release 2023.7.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
          + [Opmerkingen bij de release 2023.6.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
          + [Opmerkingen bij de release 2023.4.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
          + [Opmerkingen bij de release 2023.2.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
@@ -315,6 +316,16 @@ ht-degree: 20%
          + [Registratie, aanmelding en gebruikersprofiel](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + Beheer {#administering}
       + Contentfragmenten {#content-fragments}
+         + [Overzicht en concepten](/help/sites-cloud/administering/content-fragments/overview.md)
+         + [Levering zonder koptelefoon met GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+         + [Instellen van inhoudsfragment](/help/sites-cloud/administering/content-fragments/setup.md)
+         + [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+         + [Contentfragmenten beheren](/help/sites-cloud/administering/content-fragments/managing.md)
+         + [Fragmentinhoud ontwerpen](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [Markering](/help/sites-cloud/administering/content-fragments/markdown.md)
+         + [Overwegingen verwijderen](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
+         + [Structuur analyseren](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [Sneltoetsen](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
          + [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
          + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
          + [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
@@ -519,6 +530,7 @@ ht-degree: 20%
       + [Ondersteunde bestandstypen en gebruiksgevallen](/help/assets/supported-file-formats-assets-view.md)
       + [Elementen weergeven](/help/assets/navigate-assets-view.md)
       + [Elementen uploaden en toevoegen](/help/assets/add-delete-assets-view.md)
+      + [Bulkimportmiddelen](/help/assets/bulk-import-assets-view.md)
       + [Elementen zoeken en ontdekken](/help/assets/search-assets-view.md)
       + [Taken voor middelenbeheer](/help/assets/manage-organize-assets-view.md)
       + [Afbeeldingen bewerken](/help/assets/edit-images-assets-view.md)
@@ -574,6 +586,7 @@ ht-degree: 20%
       + Adaptieve Forms ontwerpen - Core-componenten {#authoring-adaptive-forms-core-components}
          + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
             + [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
+            + [Een adaptief formulierfragment maken](/help/forms/adaptive-form-fragments-core-components.md)
             + [Thema&#39;s maken voor een adaptief formulier - Core Components](/help/forms/using-themes-in-core-components.md)
             + [Document met record genereren voor adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)
             + [Een adaptieve Forms - Core Components maken op een AEM Sites-pagina](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
@@ -582,6 +595,7 @@ ht-degree: 20%
             + [Formulieren maken met herhaalbare secties](/help/forms/create-forms-repeatable-sections.md)
             + [Handeling verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-actions-core-components.md)
             + [Google reCAPTCHA gebruiken in een adaptief formulier](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [Aangepaste fouthandler toevoegen in een adaptief formulier](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
       + Aangepaste Forms ontwerpen - Elementaire componenten {#authoring-adaptive-forms-foundation-components}
          + Uw PDF forms converteren naar Adaptieve Forms {#afcs}
             + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -730,18 +744,14 @@ ht-degree: 20%
       + [Inhoudsfragment](/help/headless/setup/create-content-fragment.md)
       + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
    + Contentfragmenten {#content-fragments}
-      + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [Console voor inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
-      + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
-      + [Beheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
+      + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Contentfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Authoring{#authoring}
-         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
-         + [Teksteditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
-         + [Gekoppelde inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
-         + [Variaties](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
-      + [Metagegevens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
-      + [Boomstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
-      + [JSON-voorvertoning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
+         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Markeringseditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Boomstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [JSON-voorvertoning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + GRAPHQL API {#graphql-api}
       + [GraphQL API voor inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL-eindpunten beheren](/help/headless/graphql-api/graphql-endpoint.md)
@@ -961,6 +971,7 @@ ht-degree: 20%
       + [Contentfragmenten aanpassen en uitbreiden](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Contentfragmenten die componenten voor rendering configureren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [De console voor inhoudsfragmenten aanpassen](/help/implementing/developing/extending/content-fragment-console-customizing.md)
+      + [De console en Editor voor inhoudsfragmenten aanpassen](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + Zoeken in Forms beheren {#manage-search-forms}
          + [Zoekformulieren configureren](/help/implementing/developing/extending/search-forms.md)
          + [Zoekfilters voor Postvak IN configureren](/help/implementing/developing/extending/configure-inbox-search-rail.md)

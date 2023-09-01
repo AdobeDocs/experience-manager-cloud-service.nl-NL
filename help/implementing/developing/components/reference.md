@@ -2,7 +2,7 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3648'
 ht-degree: 0%
@@ -473,4 +473,4 @@ Deze markering wordt dan weergegeven in het dialoogvenster [Component Console](/
 
 ![README.md zichtbaar in de Componentenconsole](assets/components-documentation-console.png)
 
-De ondersteunde markering is gelijk aan die voor [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+De ondersteunde markering is gelijk aan die voor [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md).

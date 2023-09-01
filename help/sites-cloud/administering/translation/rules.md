@@ -4,7 +4,7 @@ description: Leer hoe vertaalregels inhoud identificeren die moet worden vertaal
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 0%
@@ -21,9 +21,9 @@ De vertaalregels identificeren de inhoud om voor pagina&#39;s, componenten, en a
 
 ## Inhoudsfragmenten en vertaalregels {#content-fragments}
 
-De vertaalregels die in dit document worden beschreven, zijn alleen van toepassing op inhoudsfragmenten als de **Velden voor inhoudsmodellen inschakelen voor vertaling** Deze optie is niet geactiveerd op het tabblad [configuratieniveau van het framework voor vertaalintegratie.](integration-framework.md#assets-configuration-properties)
+De in dit document beschreven vertaalregels zijn alleen van toepassing op inhoudsfragmenten als de **Velden voor inhoudsmodellen inschakelen voor vertaling** Deze optie is niet geactiveerd op het tabblad [configuratieniveau van het framework voor vertaalintegratie.](integration-framework.md#assets-configuration-properties)
 
-Als de **Velden voor inhoudsmodellen inschakelen voor vertaling** -optie is actief, AEM gebruikt de optie **Vertaalbaar** veld op [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) om te bepalen of het veld moet worden vertaald, worden automatisch vertaalregels vastgesteld. Deze optie vervangt de vertaalregels die u hebt gemaakt en vereist geen interventie of extra stappen.
+Als de **Velden voor inhoudsmodellen inschakelen voor vertaling** -optie is actief, AEM gebruikt de optie **Vertaalbaar** veld op [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) om te bepalen of het veld moet worden vertaald, worden automatisch vertaalregels vastgesteld. Deze optie vervangt de vertaalregels die u hebt gemaakt en vereist geen interventie of extra stappen.
 
 Als u vertaalregels wilt gebruiken voor het vertalen van uw inhoudsfragmenten, **Velden voor inhoudsmodellen inschakelen voor vertaling** Deze optie in de configuratie van het vertaalintegratieframework moet worden uitgeschakeld en u moet de onderstaande stappen volgen om uw regels te maken.
 
@@ -50,7 +50,7 @@ U kunt bijvoorbeeld een regel maken die de inhoud vertaalt die auteurs aan alle 
 
 Er is een [console](#translation-rules-ui) dat is toegevoegd voor het vormen van vertaalregels. De definities in UI zullen het dossier voor u bevolken.
 
-Voor een overzicht van de vertaalfuncties voor inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](overview.md).
+Voor een overzicht van de functies voor het vertalen van inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](overview.md).
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ In het volgende voorbeeld worden afbeeldingen uit de afbeeldingscomponent geëxt
 
 ## Regels overschrijven {#overriding-rules}
 
-De `translation_rules.xml` bestand bestaat uit een `nodelist` element met meerdere onderliggende elementen `node` elementen. AEM leest de nodenlijst van boven naar beneden. Wanneer de veelvoudige regels de zelfde knoop richten, wordt de regel die lager in het dossier is gebruikt. De volgende regels veroorzaken bijvoorbeeld alle inhoud in `text` eigenschappen die moeten worden vertaald, met uitzondering van de `/content/mysite/en` vertakking van pagina&#39;s:
+De `translation_rules.xml` bestand bestaat uit een `nodelist` element met meerdere onderliggende elementen `node` elementen. AEM leest de nodenlijst van boven naar beneden. Wanneer de veelvoudige regels de zelfde knoop richten, wordt de regel die lager in het dossier is gebruikt. De volgende regels veroorzaken bijvoorbeeld alle inhoud in `text` eigenschappen die moeten worden vertaald, met uitzondering van `/content/mysite/en` vertakking van pagina&#39;s:
 
 ```xml
 <nodelist>
@@ -151,7 +151,7 @@ De volgende regels veroorzaken bijvoorbeeld alle inhoud in `text` te vertalen ei
 <nodelist>
 ```
 
-## Interface voor vertaalregels {#translation-rules-ui}
+## UI voor omzettingsregels {#translation-rules-ui}
 
 Een console is ook beschikbaar voor het vormen van vertaalregels.
 
@@ -159,7 +159,7 @@ Toegang tot dit bestand:
 
 1. Navigeren naar **Gereedschappen** en vervolgens **Algemeen**.
 
-1. Selecteren **Configuratie vertaling**.
+1. Selecteren **Omzetconfiguratie**.
 
 In de interface met vertaalregels kunt u:
 
@@ -167,11 +167,11 @@ In de interface met vertaalregels kunt u:
 
    ![Vertaalcontext toevoegen](../assets/add-translation-context.png)
 
-1. Gebruik de padbrowser om de vereiste context te selecteren en tik of klik op de knop **Bevestigen** op te slaan.
+1. Gebruik de padbrowser om de vereiste context te selecteren en tik op de knop **Bevestigen** op te slaan.
 
    ![Context selecteren](../assets/select-context.png)
 
-1. Selecteer vervolgens de context en klik op **Bewerken**. Hiermee opent u de Editor voor de vertaalregels.
+1. Vervolgens moet u de context selecteren en vervolgens op **Bewerken**. Hiermee opent u de Editor voor de vertaalregels.
 
    ![Editor voor omzettingsregels](../assets/translation-rules-editor.png)
 
@@ -218,7 +218,7 @@ In de UI kunt u controleren/uncheck **Vertalen** in de **Eigenschappen** tab.
 
 In de UI kunt u controleren/uncheck **Vertalen** in de **Eigenschappen** om deze waarde te wijzigen, maar voor de specifieke eigenschappen die taalcodes als waarde hebben.
 
-Ter verduidelijking van het verschil tussen `updateDestinationLanguage` en `translate`Hier is een eenvoudig voorbeeld van een context met slechts twee regels:
+Om het verschil tussen `updateDestinationLanguage` en `translate`Hier is een eenvoudig voorbeeld van een context met slechts twee regels:
 
 ![updateDestinationLanguage, voorbeeld](../assets/translation-rules-updatedestinationlanguage.png)
 

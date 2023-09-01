@@ -1,12 +1,13 @@
 ---
 title: Forms Designer downloaden en installeren
 description: Met Forms Designer kunt u XDP- en PDF-formuliersjablonen maken die als sjabloon voor een document met records fungeren. Designer is beschikbaar in het dialoogvenster [!DNL AEM Forms] licentie.
-source-git-commit: 3b05d413756a98c034388eb31e752b2448758496
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
+
 
 # Forms Designer downloaden en installeren {#installing-and-configuring-designer}
 
@@ -14,14 +15,18 @@ Designer is een toepassing waarmee u met eenvoudige muisfuncties grafische formu
 
 ## Voorwaarden {#pre-requisites}
 
-Als u de nieuwste versie van AEM Forms Designer 64-bits of 32-bits wilt installeren, hebt u de volgende software en minimale hardware nodig voor de installatie en configuratie van Designer:
+Als u de nieuwste versie van AEM Forms Designer 64-bits of 32-bits wilt installeren, hebt u de volgende software en minimale hardware nodig om Designer te installeren en configureren:
+
+>[!NOTE]
+>
+> Als u 32-bits Designer gebruikt, moet u de installatie van 32-bits Designer ongedaan maken om problemen bij de installatie van 64-bits Designer te voorkomen.
 
 <!--
 >[!BEGINTABS]
 
 >[!TAB 64-bit OS (Recommended)] -->
 
-+++ 64-bits besturingssysteem (aanbevolen)
++++ 64-bits Designer (aanbevolen)
 
 * [!DNL Microsoft® Windows® 2016 Server] of [!DNL Microsoft® Windows® 2019 Server], en [!DNL Microsoft® Windows® 10]
 * Minimaal 2 GB RAM
@@ -30,24 +35,24 @@ Als u de nieuwste versie van AEM Forms Designer 64-bits of 32-bits wilt installe
 * 2,35 GB beschikbare ruimte op de vaste schijf
 * Monitorresolutie van 1024 x 768 pixels of hoger
 * Hardwareversnelling voor video (optioneel)
-* Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
-* Beheerdersrechten voor de installatie van Designer
-* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 of hoger)
+* Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC.
+* Beheerdersrechten voor het installeren van Designer.
+* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 of hoger) 64-bits runtime
 
 +++
 
-+++ 32-bits besturingssysteem
++++ 32-bits Designer
 
-* [!DNL Microsoft® Windows® 2016 Server] of [!DNL Microsoft® Windows® 2019 Server], en [!DNL Microsoft® Windows® 10]
-* Minimaal 1 GB RAM
-* 16 GB schijfruimte
+* [!DNL Microsoft® Windows® 2016 Server], [!DNL Microsoft® Windows® 2019 Server], of [!DNL Microsoft® Windows® 10]
+* 1 GB RAM voor 32-bits besturingssysteem of 2 GB RAM voor 64-bits besturingssysteem
+* 16 GB schijfruimte voor 32-bits besturingssysteem of 20 GB schijfruimte voor 64-bits besturingssysteem
 * Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)
 * 2,35 GB beschikbare ruimte op de vaste schijf
 * Monitorresolutie van 1024 x 768 pixels of hoger
 * Hardwareversnelling voor video (optioneel)
-* Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
-* Beheerdersrechten voor de installatie van Designer
-* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 of hoger)
+* Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC.
+* Beheerdersrechten voor het installeren van Designer.
+* Microsoft® Visual C++ 2019 (VC 14.28 of hoger) 32-bits runtime
 
 +++
 

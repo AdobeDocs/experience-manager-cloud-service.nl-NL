@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2022.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -15,7 +15,7 @@ In de volgende sectie worden de opmerkingen bij de release met functies voor de 
 
 >[!NOTE]
 >
->Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. bijvoorbeeld voor die in 2020, 2021, enzovoort.
+>Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Bekijk de video Overzicht van de release van juli 2022 voor een overzicht van de
 
 ### Nieuwe functies in [!DNL Sites] {#sites-features}
 
-* De [Console voor inhoudsfragment](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now supports [sneltoetsen](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+* De [Console voor inhoudsfragment](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) now supports [sneltoetsen](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
 * AEM als Cloud Service [voor het web geoptimaliseerde afbeeldingslevering](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) staat toe om paginasnelheid beduidend te verbeteren door formaten zoals WebP te leveren. Deze nieuwe service biedt ook flexibelere opties voor het vergroten en verkleinen en transformeren van afbeeldingen. Alle versies van de [Component Core Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) staat toe om deze dienst te gebruiken en beelden als WebP te leveren door de klik van een optie in het beleid van de beeldcomponent.
 
@@ -62,7 +62,7 @@ U kunt nu Adobe Experience Manager Assets configureren voor [het type elementen 
 
 ### Nieuwe functies in [!DNL Forms] {#forms-features}
 
-* **[Ondersteuning voor toetsenbordinvoer voor scripthandtekeningen](/help/forms/signing-forms-using-scribble.md)**: Adaptief Forms wordt steeds meer gebruikt op aanraakapparaten en een algemene vereiste is het ondersteunen van handtekeningen. Het ondertekenen van documenten op aanraakapparaten is een geaccepteerde manier geworden voor het ondertekenen van formulieren. Adaptive Forms biedt native ondersteuning voor scripthandtekeningen en Adobe Sign voor dergelijke gebruiksgevallen. Nu kunt u, samen met andere reeds ondersteunde opties, ook het toetsenbord gebruiken om handtekeningen in een adaptief formulier te krabbelen. Het helpt ook toegankelijkheidscompatibiliteit te verbeteren.
+* **[Ondersteuning voor toetsenbordinvoer voor scripthandtekeningen](/help/forms/signing-forms-using-scribble.md)**: Adaptieve Forms wordt steeds vaker gebruikt op aanraakapparaten en handtekeningen worden vaak ondersteund. Het ondertekenen van documenten op aanraakapparaten is een geaccepteerde manier geworden voor het ondertekenen van formulieren. Adaptive Forms biedt native ondersteuning voor scripthandtekeningen en Adobe Sign voor dergelijke gebruiksgevallen. Nu kunt u, samen met andere reeds ondersteunde opties, ook het toetsenbord gebruiken voor het schrijven van scripts in een adaptief formulier. Het helpt ook toegankelijkheidscompatibiliteit te verbeteren.
 
 ![Ondersteuning voor toetsenbordinvoer voor scripthandtekeningen op iPhone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
@@ -78,7 +78,7 @@ U kunt nu Adobe Experience Manager Assets configureren voor [het type elementen 
 
 -->
 
-* **[DDX aanroepen - Een stap voor AEM workflow](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: XML (DDX) van de Beschrijving van het document is een verklarende prijsverhogingstaal de waarvan elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX-documenten zijn sjablonen voor de documenten en beschrijven de gewenste kenmerken van brondocumenten die in de resulterende documenten moeten worden weergegeven. Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de Invoke stap en de Werkstroom van de AEM gebruiken om diverse verrichtingen uit te voeren, zoals het assembleren van het demonteren van documenten, het creëren van en het wijzigen van Acrobat en XFA Forms, en andere die verrichtingen in [DDX-referentie](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentatie.
+* **[DDX aanroepen - Een stap voor AEM workflow](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) is een declaratieve opmaaktaal waarvan de elementen bouwstenen van documenten vertegenwoordigen. Deze bouwstenen omvatten PDF- en XDP-documenten en andere elementen, zoals opmerkingen, bladwijzers en gestileerde tekst. DDX-documenten zijn sjablonen voor de documenten en beschrijven de gewenste kenmerken van brondocumenten die in de resulterende documenten moeten worden weergegeven. Eén DDX kan worden gebruikt met een reeks brondocumenten. U kunt de Invoke stap en de Werkstroom van de AEM gebruiken om diverse verrichtingen uit te voeren, zoals het assembleren van het demonteren van documenten, het creëren van en het wijzigen van Acrobat en XFA Forms, en andere die verrichtingen in [DDX-referentie](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentatie.
 
 * **[Omzetten in PDF/A - Een stap voor AEM workflow](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A is een archiefindeling voor langdurige bewaring van de inhoud van het document, alle lettertypen worden ingesloten en het bestand wordt niet gecomprimeerd. Nu kunt u met de stap Omzetten in PDF/A en AEM Workflow uw documenten of bestanden in elke indeling converteren naar PDF/A-indeling.
 
@@ -108,15 +108,15 @@ U kunt nu Adobe Experience Manager Assets configureren voor [het type elementen 
 ### Verbeteringen AEM as a Cloud Service SDK Dispatcher Tools {#dispatcher-tools-enhancements}
 
 * Apache kan worden gestart met `docker_run_hot_reload.sh` script, dat automatisch alle volgende wijzigingen in de configuratie apache en dispatcher laadt en valideert, waardoor de ontwikkelsnelheid wordt verbeterd. Alleen ondersteund voor de flexibele modus van de verzendingsprogramma&#39;s. Zie ook [Fouten opsporen in uw Apache- en Dispatcher-configuratie](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) voor meer informatie over automatisch opnieuw laden en valideren.
-* De lokale configuratie van apache/verzender zal veranderingen in wolkenmilieu&#39;s nauwkeuriger volgen, die gelijkheid tussen de twee milieu&#39;s verhogen.
+* De lokale configuratie van apache/verzender zal veranderingen in wolkenmilieu&#39;s nauwkeuriger volgen, die pariteit tussen de twee milieu&#39;s verhogen.
 
 ### Nieuwe functies beschikbaar in [!DNL Experience Manager] prerelease-kanaal {#prerelease-features-foundation}
 
-* AEM as a Cloud Service is nu geïntegreerd met Verenigde Shell om de gebruikerservaring te verbeteren en het met alle andere toepassingen van Experience Cloud te verenigen. Zie [AEM as a Cloud Service op Verenigde Shell](/help/overview/aem-cloud-service-on-unified-shell.md) voor meer informatie .
+* AEM as a Cloud Service is nu geïntegreerd met Verenigde Shell om de gebruikerservaring te verbeteren en het met alle andere toepassingen van het Experience Cloud te verenigen. Zie [AEM as a Cloud Service op Verenigde Shell](/help/overview/aem-cloud-service-on-unified-shell.md) voor meer informatie .
 
-## Adobe Learning Manager-aansluitingen {#learn-manage}
+## Adobe Learning Manager-connectors {#learn-manage}
 
-* De nieuwe Adobe Learning Manager heeft connectors naar Adobe Experience Manager Sites, Marketo Engage en Adobe Commerce. Zie voor meer informatie: [Handleiding voor Adobe Leerbeheer](https://helpx.adobe.com/learning-manager/user-guide.html).
+* De nieuwe Adobe Learning Manager heeft connectors naar Adobe Experience Manager Sites, Marketo Engage en Adobe Commerce. Zie voor meer informatie: [Gebruikershandleiding voor Leerbeheer Adobe](https://helpx.adobe.com/learning-manager/user-guide.html).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -124,4 +124,4 @@ U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/imp
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U kunt een volledige lijst vinden van de versies van de Hulpmiddelen van de Migratie [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+U vindt een volledige lijst met de releases van de migratiehulpmiddelen [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

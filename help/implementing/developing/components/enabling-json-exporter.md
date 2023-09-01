@@ -2,7 +2,7 @@
 title: JSON-export inschakelen voor een component
 description: Componenten kunnen worden aangepast om JSON-export van hun inhoud te genereren op basis van een modellerframework.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 1%
@@ -19,10 +19,10 @@ De JSON-export is gebaseerd op [Verkoopmodellen](https://sling.apache.org/docume
 
 Dit betekent dat de component een Sling Model moet hebben als het JSON moet uitvoeren. Daarom zult u deze twee stappen moeten volgen om de uitvoer van JSON op om het even welke component toe te laten.
 
-* [Definieer een Sling-model voor de component](#define-a-sling-model-for-the-component)
+* [Definieer een verkoopmodel voor de component](#define-a-sling-model-for-the-component)
 * [Annoteer de interface van het Verkoopmodel](#annotate-the-sling-model-interface)
 
-## Definieer een Sling-model voor de component {#define-a-sling-model-for-the-component}
+## Definieer een verkoopmodel voor de component {#define-a-sling-model-for-the-component}
 
 Eerst moet een Sling Model voor de component worden bepaald.
 
@@ -58,13 +58,13 @@ Hoewel het geen standaard gebruikscase is, is het mogelijk om veelvoudige select
 https://<server>:<port>/content/page.model.selector1.selector2.json
 ```
 
-In dat geval echter `model` selector moet de eerste kiezer zijn en de extensie moet `.json`.
+In dat geval echter `model` moet de eerste kiezer zijn en de extensie moet `.json`.
 
 ## De interface van het verkoopmodel notities aanbrengen {#annotate-the-sling-model-interface}
 
 Om door het JSON Exporter-kader in aanmerking te worden genomen, moet de modelinterface de `ComponentExporter` interface (of `ContainerExporter`, in het geval van een containercomponent).
 
-De overeenkomstige interface van het Model van de Verkoop (`MyComponent`) wordt vervolgens geannoteerd met [Jackson-annotaties](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) om te bepalen hoe het (geserialiseerd) zou moeten worden uitgevoerd.
+De overeenkomstige interface van het Model van de Verkoop (`MyComponent`) wordt vervolgens met behulp van [Jackson-annotaties](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) om te bepalen hoe het (geserialiseerd) zou moeten worden uitgevoerd.
 
 De modelinterface moet behoorlijk worden geannoteerd om te bepalen welke methodes zouden moeten in series worden vervaardigd. Standaard worden alle methoden die de gebruikelijke naamgevingsconventie voor getters respecteren, geserialiseerd en worden hun JSON-eigenschapnamen op natuurlijke wijze afgeleid van de namen van getter. Dit kan worden voorkomen of overschreven door `@JsonIgnore` of `@JsonProperty` om de naam van de JSON-eigenschap te wijzigen.
 
@@ -78,7 +78,7 @@ Een voorbeeld vindt u in de implementatie Sling Model van de Image Core-componen
 
 Zie voor meer informatie:
 
-* [Contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

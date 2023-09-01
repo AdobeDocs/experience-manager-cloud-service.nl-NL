@@ -3,7 +3,7 @@ title: Bevoegdheidsoverwegingen voor inhoud zonder kop
 description: Leer over verschillende toestemmings en ACL overwegingen voor een headless implementatie met Adobe Experience Manager. Begrijp de verschillende personen en de potentiële toestemmingsniveaus nodig voor zowel auteur als Publish milieu's.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
@@ -40,21 +40,21 @@ Op hoog niveau is het proces:
 
 Om te beheren **groepen** in AEM, navigeer naar **Gereedschappen** > **Beveiliging** > **Groepen**.
 
-Als u machtigingen van groepen in AEM wilt beheren, navigeert u naar **Gereedschappen** > **Beveiliging** > **Machtigingen**.
+Navigeer naar om machtigingen van groepen in AEM te beheren **Gereedschappen** > **Beveiliging** > **Machtigingen**.
 
 ### DAM-gebruikers
 
-&quot;DAM&quot; staat in dit verband voor Digital Asset Management. De **DAM-gebruikers** is een out van de kadergroep in AEM die voor &quot;alledaagse&quot;gebruikers kan worden gebruikt die digitale activa en de Fragments van de Inhoud beheren. Deze groep biedt machtigingen voor **weergave**, **toevoegen**, **update**, **delete**, en **publish** Inhoudsfragmenten en alle andere bestanden in AEM Assets.
+&quot;DAM&quot; staat in dit verband voor Digital Asset Management. De **DAM-gebruikers** is een out van de kadergroep in AEM die voor &quot;alledaagse&quot;gebruikers kan worden gebruikt die digitale activa en de Fragments van de Inhoud beheren. Deze groep biedt machtigingen voor **weergave**, **toevoegen**, **update**, **delete**, en **publish** Content Fragments en alle andere bestanden in AEM Assets.
 
 Als u IMS gebruikt voor groepslidmaatschap, voegt u de juiste IMS-groepen toe als leden van de **DAM-gebruikers** groep. Leden van de IMS-groep nemen de machtigingen van de groep DAM-gebruikers over wanneer ze zich aanmelden bij de AEM.
 
 #### DAM-gebruikersgroep aanpassen
 
-Het is beter om toestemmingen van een uit de bakgroep direct niet te wijzigen. In plaats daarvan kunt u ook uw eigen groep(en) maken die na de **DAM-gebruikers** groepsmachtigingen en de toegang tot verschillende **mappen** in AEM Assets.
+Het is beter om toestemmingen van een uit de bakgroep direct niet te wijzigen. In plaats daarvan kunt u ook uw eigen groep(en) maken die na de **DAM-gebruikers** groepsmachtigingen en beperken de toegang tot verschillende **mappen** in AEM Assets.
 
 Voor meer granulaire machtigingen gebruikt u de optie **Machtigingen** console in AEM en werk het pad bij vanuit `/content/dam` naar een meer specifiek pad, dat wil zeggen: `/content/dam/mycontentfragments`.
 
-Het kan wenselijk zijn om deze groep gebruikers toestemmingen te geven om inhoudsfragmenten tot stand te brengen en uit te geven maar niet te schrappen. Zie voor het controleren en toewijzen van machtigingen voor bewerken, maar niet verwijderen [Inhoudsfragmenten - Overwegingen verwijderen](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+Het kan wenselijk zijn om deze groep gebruikers toestemmingen te geven om inhoudsfragmenten tot stand te brengen en uit te geven maar niet te schrappen. Zie voor het controleren en toewijzen van machtigingen voor bewerken, maar niet verwijderen [Inhoudsfragmenten - Overwegingen verwijderen](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 ### Modeleditors
 
@@ -66,7 +66,7 @@ De mogelijkheid om te wijzigen **Modellen van inhoudsfragmenten** moet worden ov
 
 Als u wenst om een groep tot stand te brengen die de Modellen van het Fragment van de Inhoud maar niet volledige beheerderstoegang beheert, kunt u een groep met de volgende ingangen van de toegangscontrole tot stand brengen:
 
-| Pad | Machtiging | Bevoegdheden |
+| Pad | Machtiging | Rechten |
 |-----| -------------| ---------|
 | `/conf` | **toestaan** | `jcr:read` |
 | `/conf/<config-name>/settings/dam/cfm` | **toestaan** | `rep:write`, `crx:replicate` |
@@ -75,7 +75,7 @@ Als u wenst om een groep tot stand te brengen die de Modellen van het Fragment v
 
 De publicatieservice wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de interactie tussen GraphQL API-gebruikers en andere gebruikers. Inhoud wordt na bewerking en goedkeuring in de service Auteur gepubliceerd naar de service Publiceren. De toepassing zonder koppen gebruikt vervolgens de goedgekeurde inhoud van de publicatieservice via GraphQL API&#39;s.
 
-Standaard is inhoud die via de GraphQL-eindpunten van de AEM-publicatieservice wordt weergegeven, toegankelijk voor iedereen, inclusief niet-geverifieerde gebruikers.
+Standaard is inhoud die via de eindpunten van GraphQL van AEM publicatieservice wordt weergegeven, toegankelijk voor iedereen, inclusief niet-geverifieerde gebruikers.
 
 ### Machtigingen voor inhoud
 
@@ -86,7 +86,7 @@ CUG&#39;s met middelen werken op:
 * Eerst, ontken al toegang tot de omslag en subfolders
 * Dan, die leestoegang tot de omslag en subfolders voor alle AEM Gebruikersgroepen verlenen die in de lijst van KUGs worden vermeld
 
-CUG&#39;s kunnen worden ingesteld in middelenmappen die inhoud bevatten die via GraphQL API&#39;s beschikbaar wordt gemaakt. De toegang tot de omslagen van activa op publiceren AEM zou via Gebruikersgroepen, eerder dan gebruiker direct moeten worden gecontroleerd. Maak (of hergebruik) een AEM gebruikersgroep die toegang verleent tot mappen met elementen die inhoud bevatten die door GraphQL API&#39;s beschikbaar is gemaakt.
+CUG&#39;s kunnen worden ingesteld in middelenmappen die inhoud bevatten die via GraphQL API&#39;s beschikbaar wordt gemaakt. De toegang tot de omslagen van activa op AEM publiceren zou via Gebruikersgroepen, eerder dan gebruiker direct moeten worden gecontroleerd. Maak (of hergebruik) een AEM gebruikersgroep die toegang verleent tot mappen met elementen die inhoud bevatten die door GraphQL API&#39;s beschikbaar is gemaakt.
 
 #### Het verificatieschema selecteren{#publish-permissions-users}
 
@@ -97,4 +97,4 @@ De [AEM headless SDK](https://github.com/adobe/aem-headless-client-js#create-aem
 
 ### De GraphQL API openen
 
-HTTP-aanvragen die de [juiste verificatiereferenties](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) aan de GraphQL API-eindpunten van de AEM Publish-service bevat inhoud die de aanmeldingsgegevens mogen lezen en die anoniem toegankelijk is. Andere gebruikers van de GraphQL API kunnen de inhoud in de door CUG&#39;s beveiligde mappen niet lezen.
+HTTP-aanvragen die de [juiste verificatiereferenties](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) op de GraphQL API-eindpunten van de AEM publicatieservice vindt u inhoud die de referenties mogen lezen en die anoniem toegankelijk is. Andere gebruikers van de GraphQL API kunnen de inhoud in de door CUG&#39;s beveiligde mappen niet lezen.

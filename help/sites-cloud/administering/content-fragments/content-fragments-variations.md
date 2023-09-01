@@ -3,8 +3,11 @@ title: Variaties - Authoring van content voor fragmenten
 description: Begrijp hoe u met behulp van variaties inhoud voor het fragment kunt ontwerpen en maak vervolgens variaties van die inhoud afhankelijk van het doel. Dit biedt extra flexibiliteit voor zowel levering zonder kop als het ontwerpen van pagina's.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 7%
@@ -12,6 +15,12 @@ ht-degree: 7%
 ---
 
 # Variaties - Authoring van content voor fragmenten{#variations-authoring-fragment-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 [Variaties](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een belangrijk kenmerk van AEM inhoudsfragmenten, aangezien u hiermee kopieën van de basisinhoud kunt maken en bewerken voor gebruik op specifieke kanalen en/of scenario&#39;s, waardoor zowel het ontwerpen van pagina&#39;s als het leveren van inhoud zonder kop nog flexibeler wordt.
 

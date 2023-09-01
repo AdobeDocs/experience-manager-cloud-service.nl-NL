@@ -2,7 +2,7 @@
 title: Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM
 description: Leer over de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 2%
@@ -20,7 +20,7 @@ Dit artikel bouwt op deze voort zodat begrijpt u hoe te om uw eigen Modellen van
 ## Doelstelling {#objective}
 
 * **Publiek**: Begin
-* **Doelstelling**: de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
+* **Doelstelling**: de concepten en mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 
 <!-- which persona does this? -->
 <!-- and who allows the configuration on the folders? -->
@@ -45,7 +45,7 @@ Vervolgens kunt u de modellen van Content Fragments maken en de structuur defini
 
 Nadat u deze optie hebt geselecteerd, navigeert u naar de locatie voor uw model en selecteert u **Maken**. Hier kunt u verschillende belangrijke details invoeren.
 
-De optie **Model inschakelen** is standaard geactiveerd. Dit betekent dat uw model beschikbaar is voor gebruik (bij het maken van inhoudsfragmenten) zodra u het hebt opgeslagen. U kunt dit desgewenst deactiveren. Er zijn later mogelijkheden om een bestaand model in te schakelen (of uit te schakelen).
+De optie **Model inschakelen** is standaard geactiveerd. Dit betekent dat uw model beschikbaar is voor gebruik (bij het maken van inhoudsfragmenten) zodra u het hebt opgeslagen. U kunt dit desgewenst deactiveren. Er zijn later mogelijkheden om een bestaand model in of uit te schakelen.
 
 ![Inhoudsfragmentmodel maken](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -53,7 +53,7 @@ Bevestigen met **Maken** en u kunt **Openen** uw model om de structuur te beginn
 
 ## Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
-Wanneer u voor het eerst een nieuw model opent, ziet u een groot, leeg vak aan de linkerkant en een lange lijst met **Gegevenstypen** rechts:
+Wanneer u voor het eerst een nieuw model opent, ziet u dit - een grote lege ruimte links en een lange lijst met **Gegevenstypen** rechts:
 
 ![Leeg model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 
@@ -100,7 +100,7 @@ Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke 
 
 Zodra een model is gepubliceerd, wordt het *vergrendeld* in de modus ALLEEN-LEZEN bij de auteur. Dit is bedoeld om wijzigingen te voorkomen die zouden leiden tot fouten in bestaande GraphQL-schema&#39;s en query&#39;s, met name in de publicatieomgeving. Het wordt in de console aangegeven door **Vergrendeld**.
 
-Wanneer het model **Vergrendeld** (in de modus ALLEEN-LEZEN) kunt u de inhoud en structuur van modellen zien, maar niet rechtstreeks bewerken; hoewel u kunt beheren **Vergrendeld** modellen van of de console, of de modelredacteur.
+Wanneer het model **Vergrendeld** (in de modus ALLEEN-LEZEN) kunt u de inhoud en de structuur van modellen zien, maar niet rechtstreeks bewerken, hoewel u deze kunt beheren **Vergrendeld** modellen van of de console, of de modelredacteur.
 
 ## Volgende functies {#whats-next}
 
@@ -112,23 +112,23 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap het creëren van uw ei
 
 * [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** -console, maar veel/de meeste functies zijn ook relevant voor het navigeren naar en het uitvoeren van actie op **Modellen van inhoudsfragmenten** onder de **Algemeen** console.
 
-* [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Het model van het inhoudsfragment definiëren](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [Het model van het inhoudsfragment definiëren](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)
 
-      * [Een inhoudsfragmentmodel in- of uitschakelen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [Een inhoudsfragmentmodel in- of uitschakelen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Modellen voor inhoudsfragmenten toestaan in de middelenmap](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Modellen voor inhoudsfragmenten toestaan in de middelenmap](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Een inhoudsfragmentmodel verwijderen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [Een inhoudsfragmentmodel verwijderen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#deleting-a-content-fragment-model)
 
-      * [Een inhoudsfragmentmodel publiceren](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [Een inhoudsfragmentmodel publiceren](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)
 
-      * [Publicatie van een inhoudsfragmentmodel ongedaan maken](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [Publicatie van een inhoudsfragmentmodel ongedaan maken](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#unpublishing-a-content-fragment-model)
 
-      * [Vergrendelde (gepubliceerde) modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [Vergrendelde (gepubliceerde) modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#locked-published-content-fragment-models)
 
 * Aan de slag - hulplijnen
 

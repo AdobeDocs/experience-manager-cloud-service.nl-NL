@@ -2,7 +2,7 @@
 title: Basisbewerkingen
 description: Geniet van comfortabel navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 3%
@@ -72,7 +72,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
 | Ervaringsfragmenten | An [Ervaar fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een stand-alone ervaring die kan worden hergebruikt over kanalen en variaties hebben, die het probleem van het herhaaldelijk kopiëren en het kleven ervaringen of delen van ervaringen bespaart. |
 | Assets | Met de middelenconsole kunt u importeren en beheren [digitale elementen, zoals afbeeldingen, video&#39;s, documenten en audiobestanden](/help/assets/overview.md). Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM wordt uitgevoerd. U kunt ook maken en beheren [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) vanaf de middelenconsole. |
 | Personalisatie | Deze console biedt een raamwerk van gereedschappen voor [doelgerichte inhoud ontwerpen en persoonlijke ervaringen presenteren](/help/sites-cloud/authoring/personalization/overview.md). |
-| Contentfragmenten | [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Met deze sjablonen kunt u gestructureerde inhoud voorbereiden, klaar voor gebruik op meerdere locaties/via meerdere kanalen, en ideaal voor zowel paginaontwerp als levering zonder kop. |
+| Contentfragmenten | [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Met deze sjablonen kunt u gestructureerde inhoud voorbereiden, klaar voor gebruik op meerdere locaties/via meerdere kanalen, en ideaal voor zowel paginaontwerp als levering zonder kop. |
 
 ## Deelvenster Gereedschappen {#tools-panel}
 

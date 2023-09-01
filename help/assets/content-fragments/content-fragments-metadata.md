@@ -1,17 +1,23 @@
 ---
-title: Metagegevens - fragmenteigenschappen (elementen - inhoudsfragmenten)
+title: Metagegevens - Fragmenteigenschappen (elementen - Inhoudsfragmenten)
 description: Zie hoe u de eigenschappen van metagegevens voor Content Fragments kunt weergeven en bewerken.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 3%
+source-wordcount: '274'
+ht-degree: 2%
 
 ---
 
 # Metagegevens - Fragmenteigenschappen {#metadata-fragment-properties}
 
 Zie hoe u de eigenschappen van metagegevens voor Content Fragments in AEM kunt weergeven en bewerken om de inhoud zonder kop aan te passen.
+
+>[!NOTE]
+>
+>Inhoudsfragmenten zijn een functie Sites, maar worden opgeslagen als **Activa**.
+>
+>Er zijn twee editors voor het ontwerpen van inhoudsfragmenten. In deze sectie wordt de oorspronkelijke editor beschreven, die voornamelijk wordt geopend vanuit de **Activa** console. Zie de documentatie van Plaatsen, [Inhoudsfragmenten - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), voor meer informatie over de nieuwe editor (die voornamelijk wordt benaderd vanuit de **Inhoudsfragmenten** console).
 
 ## Eigenschappen/metagegevens bewerken {#editing-properties-meta-data}
 

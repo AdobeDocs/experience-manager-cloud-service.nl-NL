@@ -1,17 +1,17 @@
 ---
-title: Hoe kan ik Adaptief-formuliergegevens verbinden en verzenden naar Microsoft&reg; Power Automate?
-description: Een stapsgewijze gids voor het maken van een verbinding en het verzenden van Adaptief formulier naar Microsoft&reg; Power Automate.
-keywords: Adaptive Forms Microsoft Power Automate, Adaptive Forms data verzenden naar Microsoft Power Automate
+title: Een adaptief formulier integreren met Microsoft&reg; Power Automate
+description: Een adaptief formulier integreren met Microsoft&reg; Power Automate.
+hide: true
+hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
 
-
-# Adaptieve formuliergegevens verbinden en verzenden naar Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
+# Een adaptief formulier aansluiten met Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
 U kunt een adaptief formulier configureren om een Microsoft® Power Automate Cloud Flow uit te voeren bij verzending. Met het geconfigureerde adaptieve formulier worden vastgelegde gegevens, bijlagen en het document met records naar Power Automate Cloud Flow verzonden voor verwerking. Het helpt u om een aangepaste ervaring op het gebied van gegevensvastlegging op te bouwen en tegelijk de kracht van Microsoft® Power Automate te benutten om bedrijfslogics rond vastgelegde gegevens te bouwen en de workflows van klanten te automatiseren. Hier volgen enkele voorbeelden van wat u kunt doen na de integratie van een adaptief formulier met Microsoft® Power Automate:
 
@@ -26,8 +26,8 @@ De Adaptive Forms-editor biedt de **Een Microsoft® Power Automate-flow aanroepe
 
 U hebt het volgende nodig om een adaptief formulier te verbinden met Microsoft® Power Automate:
 
-* Microsoft® Power Automate Premium-licentie
-* Microsoft® [Stroomvoorziening automatiseren](https://docs.microsoft.com/en-us/power-automate/create-flow-solution) met de `When an HTTP request is received` trigger voor het accepteren van Adaptief verzenden van formulieren
+* Microsoft® Power Automate Premium-licentie.
+* Microsoft® [Stroomvoorziening automatiseren](https://docs.microsoft.com/en-us/power-automate/create-flow-solution) met de `When an HTTP request is received` trigger voor het accepteren van Adaptief verzenden van formulieren.
 * Een gebruiker van de Experience Manager met [Forms-auteur](/help/forms/forms-groups-privileges-tasks.md) en [Forms Admin](/help/forms/forms-groups-privileges-tasks.md) rechten
 * Account dat wordt gebruikt om verbinding te maken met Microsoft® Power Automate is eigenaar van de Power Automate-flow die is geconfigureerd om gegevens van het adaptieve formulier te ontvangen
 
@@ -80,7 +80,8 @@ Voer de volgende handelingen uit om uw as a Cloud Service Forms-instantie te ver
 1. Navigeer in AEM Forms-auteurinstantie naar **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**.
 1. Op de **[!UICONTROL Configuration Browser]** pagina, tikken **[!UICONTROL Create]**.
 1. In de **[!UICONTROL Create Configuration]** dialoogvenster, geeft u een **[!UICONTROL Title]** voor de configuratie, laat toe **[!UICONTROL Cloud Configurations]** en tikken **[!UICONTROL Create]**. Het leidt tot een configuratiecontainer om Cloud Servicen op te slaan. Zorg ervoor dat de mapnaam geen ruimte bevat.
-1. Navigeren naar **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft®® Power Automate Dataverse]** en open de configuratiecontainer u in de vorige stap creeerde.
+1. Navigeren naar **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** en open de configuratiecontainer u in de vorige stap creeerde.
+
 
    >[!NOTE]
    >
@@ -97,9 +98,11 @@ Voer de volgende handelingen uit om uw as a Cloud Service Forms-instantie te ver
 
 1. Navigeren naar **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft®® Power Automate Flow Service]** en open de configuratiecontainer u in de vorige sectie creeerde.
 
+
    >[!NOTE]
    >
    Wanneer u een adaptief formulier maakt, geeft u de naam van de container op in het dialoogvenster **[!UICONTROL Configuration Container]** veld.
+
 1. Tik op de configuratiepagina **[!UICONTROL Create]** om [!DNL Microsoft®® Power Automate Flow Service] in AEM Forms.
 1. Op de **[!UICONTROL Configure Dataverse for Microsoft®® Power Automate]** pagina, geeft u de **[!UICONTROL Client ID]** (ook wel toepassings-id genoemd), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]** en **[!UICONTROL Dynamic Environment URL]**. Gebruik identiteitskaart van de Cliënt, Geheime cliënt, OAuth URL, en identiteitskaart van het Milieu van de Dynamiek. Gebruik de optie Eindpunten in de gebruikersinterface van de Microsoft® Azure Active Directory-toepassing om OAuth URL te zoeken. Open de [Mijn stromen](https://us.flow.microsoft.com) De verbinding en de Tik Mijn Stromen gebruiken identiteitskaart die in URL als identiteitskaart van het Milieu van de Dynamiek wordt vermeld.
 1. Tik op **[!UICONTROL Connect]**. Meld u desgevraagd aan bij uw Microsoft® Azure-account. Tik op **[!UICONTROL Save]**.

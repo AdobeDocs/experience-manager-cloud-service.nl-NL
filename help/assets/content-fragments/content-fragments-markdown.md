@@ -4,16 +4,22 @@ description: Begrijp hoe de redacteur van het Fragment van de Inhoud markeringss
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 3%
+source-wordcount: '576'
+ht-degree: 2%
 
 ---
 
 # Markering {#markdown}
 
 Wanneer u [ontwerpen](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), gebruikt de inhoudfragmenteditor *markeren* syntaxis waarmee u eenvoudig inhoud zonder kop kunt schrijven:
+
+>[!NOTE]
+>
+>Inhoudsfragmenten zijn een functie Sites, maar worden opgeslagen als **Activa**.
+>
+>Er zijn twee editors voor het ontwerpen van inhoudsfragmenten. In deze sectie wordt de oorspronkelijke editor beschreven, die voornamelijk wordt geopend vanuit de **Activa** console. Zie de documentatie van Plaatsen, [Inhoudsfragmenten - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), voor meer informatie over de nieuwe editor (die voornamelijk wordt benaderd vanuit de **Inhoudsfragmenten** console).
 
 ![Markeringseditor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -27,7 +33,7 @@ U kunt het volgende definiëren:
 * [Lijsten](/help/assets/content-fragments/content-fragments-markdown.md#lists)
 * [Nadruk](/help/assets/content-fragments/content-fragments-markdown.md#emphasis)
 * [Codeblokken](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks)
-* [Backslash-escape](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
+* [Backslash-escapen](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
 ## Kop {#heading-notation}
 
@@ -129,7 +135,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-&amp;Als u een ongeordende lijst wilt maken, gebruikt u de voorste lijst; vóór de items in de lijst. Bijvoorbeeld:
+Als u een niet-geordende lijst wilt maken, gebruikt u het symbool &amp;ast; vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 
@@ -179,7 +185,7 @@ Codeblokken worden doorgaans gebruikt om broncode te illustreren. U kunt codeblo
 
         `This is a code block.`
 
-## Backslash-escape {#backslash-escapes}
+## Backslash-escapen {#backslash-escapes}
 
 Met backslash-escape kunt u letterlijke tekens genereren die een speciale betekenis hebben in de opmaaksyntaxis. Als u bijvoorbeeld een woord met letterlijke sterretjes wilt omringen (in plaats van een HTML-tag), kunt u als volgt backslashes vóór de sterretjes gebruiken:
 

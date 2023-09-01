@@ -3,8 +3,11 @@ title: Markering
 description: Begrijp hoe de redacteur van het Fragment van de Inhoud markeringssyntaxis gebruikt om u toe te staan om inhoud gemakkelijk tot stand te brengen, voor zowel pagina creatie als hoofdloze levering.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 3%
@@ -12,6 +15,12 @@ ht-degree: 3%
 ---
 
 # Markering {#markdown}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Wanneer u [ontwerpen](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content), gebruikt de inhoudfragmenteditor *markeren* syntaxis waarmee u eenvoudig inhoud kunt schrijven voor zowel paginaontwerp als levering zonder kop:
 
@@ -27,7 +36,7 @@ U kunt het volgende definiëren:
 * [Lijsten](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#lists)
 * [Nadruk](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#emphasis)
 * [Codeblokken](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#code-blocks)
-* [Backslash-escape](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#backslash-escapes)
+* [Backslash-escapen](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
 ## Kop {#heading-notation}
 
@@ -129,7 +138,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-&amp;Als u een ongeordende lijst wilt maken, gebruikt u de voorste lijst; vóór de items in de lijst. Bijvoorbeeld:
+Als u een niet-geordende lijst wilt maken, gebruikt u het symbool &amp;ast; vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 
@@ -179,7 +188,7 @@ Codeblokken worden doorgaans gebruikt om broncode te illustreren. U kunt codeblo
 
         `This is a code block.`
 
-## Backslash-escape {#backslash-escapes}
+## Backslash-escapen {#backslash-escapes}
 
 Met backslash-escape kunt u letterlijke tekens genereren die een speciale betekenis hebben in de opmaaksyntaxis. Als u bijvoorbeeld een woord met letterlijke sterretjes wilt omringen (in plaats van een HTML-tag), kunt u als volgt backslashes vóór de sterretjes gebruiken:
 

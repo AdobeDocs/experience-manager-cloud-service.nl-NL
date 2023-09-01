@@ -2,7 +2,7 @@
 title: Basisbeginselen van Content Modeling
 description: Leer de basis van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Fragments van de Inhoud.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 1%
@@ -149,12 +149,12 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-   * [Modellen van inhoudsfragmenten - gegevenstypen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+   * [Modellen van inhoudsfragmenten - gegevenstypen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
 * [Authoring van concepten](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** console, maar veel/de meeste eigenschappen zijn ook relevant voor het ontwerpen **Inhoudsfragmenten** onder de **Activa** console.
 
-* [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)

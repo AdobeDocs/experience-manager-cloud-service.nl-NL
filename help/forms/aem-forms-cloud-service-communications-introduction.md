@@ -2,14 +2,16 @@
 title: Inleiding tot as a Cloud Service communicatie met Forms
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 2%
+source-wordcount: '1466'
+ht-degree: 1%
 
 ---
 
 # Inleiding tot as a Cloud Service communicatie met AEM Forms {#frequently-asked-questions}
+
+<span class="preview"> [DocAssurance-service](#doc-assurance) is een pre-releasefunctie en is toegankelijk via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). De documentatie voor de functie kan worden gewijzigd.</span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -157,7 +159,35 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## Typen communicatie-API&#39;s
+
+<span class="preview"> De dienst van de Verzekering van het document is een pre-versieeigenschap en toegankelijk door ons [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). De documentatie voor de functie kan worden gewijzigd.</span>
+
+## Documentcontrole {#doc-assurance}
+
+De DocAssurance-service bevat de API&#39;s voor handtekeningen en versleuteling:
+
+### Handtekening-API&#39;s
+
+Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen. Omdat beveiligingsfuncties op het document zelf worden toegepast, blijft het document gedurende de gehele levenscyclus beveiligd en beheerd. Een document blijft veilig buiten de firewall, wanneer het offline wordt gedownload en wanneer het terug naar uw organisatie wordt verzonden. U kunt de volgende taken uitvoeren met de handtekening-API&#39;s:
+
+* Voeg een handtekeningveld toe aan een PDF-document.
+* Onderteken het opgegeven handtekeningveld in een PDF-document.
+* Een PDF-document certificeren
+
+### Coderings-API&#39;s
+
+Met de API&#39;s voor versleuteling kunt u documenten versleutelen en ontsleutelen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Als een PDF-document met een wachtwoord is versleuteld, moet de gebruiker het wachtwoord voor openen opgeven voordat het document in Adobe Reader of Adobe Acrobat kan worden weergegeven. Als een PDF-document met een certificaat is versleuteld, moet de gebruiker het PDF-document decoderen met de openbare sleutel die overeenkomt met het certificaat (de persoonlijke sleutel) waarmee het PDF-document is versleuteld.
+
+U kunt deze taken uitvoeren met de API&#39;s voor codering:
+
+* Codeer een PDF-document met een wachtwoord.
+* Verwijder op wachtwoord gebaseerde versleuteling uit een PDF-document.
+* Hiermee haalt u het type beveiliging op dat op een PDF-document is toegepast.
+
+Zowel handtekening-API&#39;s als versleutelings-API&#39;s zijn [Synchrone API&#39;s](#types-of-communications-apis-types).
+
+
+## Typen communicatie-API&#39;s {#types}
 
 Communicatie biedt HTTP-API&#39;s voor het genereren van documenten op aanvraag en in batches:
 

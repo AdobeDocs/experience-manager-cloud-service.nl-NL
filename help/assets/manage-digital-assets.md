@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
 workflow-type: tm+mt
-source-wordcount: '4219'
+source-wordcount: '4347'
 ht-degree: 9%
 
 ---
@@ -28,10 +28,10 @@ Bij het organiseren van een verzameling elementen, bijvoorbeeld alle `Nature` af
 
 >[!NOTE]
 >
->* Een map Middelen van het type `sling:OrderedFolder`, wordt niet ondersteund bij het delen naar Experience Cloud. Als u een map wilt delen, selecteert u [!UICONTROL Ordered] wanneer u een map maakt.
+>* Een map Middelen van het type `sling:OrderedFolder`, wordt niet ondersteund bij delen naar Experience Cloud. Selecteer [!UICONTROL Ordered] wanneer u een map maakt.
 >* Experience Manager staat het gebruik niet toe `subassets` woord als de naam van een map. Het is een trefwoord dat is gereserveerd voor knooppunten die subassets voor samengestelde elementen bevatten
 
-1. Navigeer naar de plaats in de map met digitale elementen waar u een nieuwe map wilt maken. Klik in het menu op **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
+1. Navigeer naar de plaats in de map met digitale elementen waar u een nieuwe map wilt maken. Klik op **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
 1. In de **[!UICONTROL Title]** veld, geef een mapnaam op. Standaard gebruikt DAM de titel die u als mapnaam hebt opgegeven. Nadat de map is gemaakt, kunt u de standaardinstelling overschrijven en een andere mapnaam opgeven.
 1. Klik op **[!UICONTROL Create]**. De map wordt weergegeven in de map met digitale middelen.
 
@@ -66,16 +66,31 @@ De functie inschakelen:
 
 >[!NOTE]
 >
->Als u Duplicatiedetector hebt geconfigureerd met `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuratiedossier (configuratie OSGi), kunt u het blijven gebruiken, nochtans, adviseert Adobe het gebruiken van de nieuwe methode.
+>Als u Duplicatiedetector hebt geconfigureerd met `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuratiedossier (configuratie OSGi), kunt u het blijven gebruiken, nochtans, adviseert de Adobe het gebruiken van de nieuwe methode.
 
 
-Zodra toegelaten, verzendt de Experience Manager berichten van dubbele activa naar Experience Manager Inbox. Het is een geaggregeerd resultaat voor meerdere duplicaten. Gebruikers kunnen de elementen op basis van de resultaten verwijderen.
+Zodra toegelaten, verzendt de Experience Manager berichten van dubbele activa naar Experience Manager Inbox. Het is een geaggregeerd resultaat voor meerdere duplicaten. Op basis van de resultaten kunnen gebruikers ervoor kiezen de elementen te verwijderen.
 
 ![Melding in postvak voor dubbele elementen](assets/duplicate-detect-inbox-notification.png)
 
 >[!NOTE]
 >
 >Wanneer u elementen uploadt naar de opslagplaats, detecteert Experience Manager duplicatie en wordt u op de hoogte gebracht van de eerste 100 dubbele elementen.
+
+## ZIP-archieven extraheren {#extract-zip-archives}
+
+Selecteer ZIP-archieven die in Experience Manager worden beheerd en extraheer de bestanden rechtstreeks naar de Experience Manager zonder ze te downloaden.
+
+Voer de volgende stappen uit om de ZIP-bestanden te extraheren:
+
+1. Selecteer het bestandstype ZIP.
+1. Klik op de knop **[!UICONTROL Extract Archive]** beschikbaar op de actiebalk.
+1. Selecteer de map waarin u de geëxtraheerde elementen wilt opslaan die beschikbaar zijn in de gecomprimeerde map.
+1. Klik op **[!UICONTROL Next]**.
+1. Selecteer het juiste gedrag om conflicten met bestandsnamen tijdens het uitpakken te verwerken. U kunt selecteren om een nieuwe versie van een bestaand element te maken, het element te vervangen, beide elementen in de doelmap te houden of de extractie van het nieuwe element over te slaan.
+1. Klik op **[!UICONTROL Extract]**. Het Zip-extractieproces wordt gestart. Nadat het proces is voltooid, kunt u de geëxtraheerde elementen weergeven in de doelmap.
+
+   ![ZIP-extractie](assets/zip-extraction.png)
 
 ## Elementen voorvertonen {#previewing-assets}
 
@@ -98,7 +113,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. In de [!UICONTROL Properties] pagina, bewerkt u de eigenschappen van de metagegevens onder verschillende tabbladen. Onder de **[!UICONTROL Basic]** , bewerkt u de titel, beschrijving, enzovoort.
+1. In de [!UICONTROL Properties] pagina, bewerkt u de eigenschappen van de metagegevens onder verschillende tabbladen. Bijvoorbeeld onder de **[!UICONTROL Basic]** , bewerkt u de titel, beschrijving, enzovoort.
 
    >[!NOTE]
    >
@@ -108,7 +123,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum/tijd van deactivering in de datumkiezer naast de **[!UICONTROL Off Time]** veld. De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na de [!UICONTROL Off Time], een middel en de vertoningen ervan zijn niet beschikbaar via de Elementen-webinterface of via de HTTP-API.
+1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum/tijd van deactivering in de datumkiezer naast de **[!UICONTROL Off Time]** veld. De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na de [!UICONTROL Off Time], een middel en de vertoningen ervan zijn niet beschikbaar via de interface Middelen of de HTTP-API.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
@@ -146,7 +161,7 @@ Wanneer u een middel of een omslag kopieert, wordt het volledige middel of de om
 
 Enkele kenmerken die uniek zijn voor een bepaalde kopie van een element, worden niet overgedragen. Enkele voorbeelden zijn:
 
-* Element-id, aanmaakdatum en -tijd en versies en versiegeschiedenis. Sommige van deze eigenschappen worden aangegeven door de eigenschappen `jcr:uuid`, `jcr:created`, en `cq:name`.
+* Element-id, aanmaakdatum en -tijd en versies en versiehistorie. Sommige eigenschappen worden aangegeven door de eigenschappen `jcr:uuid`, `jcr:created`, en `cq:name`.
 
 * De aanmaaktijd en de paden waarnaar wordt verwezen, zijn uniek voor elk element en elke uitvoering ervan.
 
@@ -176,7 +191,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Navigeer naar de locatie van het element dat u wilt verplaatsen.
 
-1. Selecteer het element en tik op het **[!UICONTROL Move]** pictogram ![move_icon](assets/move_icon.png) op de werkbalk.
+1. Selecteer het element en tik/klik op de knop **[!UICONTROL Move]** pictogram ![move_icon](assets/move_icon.png) op de werkbalk.
 
 1. Voer een van de volgende handelingen uit in de wizard Elementen verplaatsen:
 
@@ -197,11 +212,11 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Als de elementen die worden verplaatst, verwijzen naar pagina&#39;s, elementen of verzamelingen, wordt het **[!UICONTROL Adjust References]** wordt weergegeven naast de **[!UICONTROL Select Destination]** tab.
 
-   Voer een van de volgende handelingen uit in het dialoogvenster **[!UICONTROL Adjust References]** scherm:
+   Voer een van de volgende handelingen uit in de **[!UICONTROL Adjust References]** scherm:
 
    * Geef de referenties op die u wilt aanpassen op basis van de nieuwe details en tik/klik op **[!UICONTROL Move]** om verder te gaan.
 
-   * Van de **[!UICONTROL Adjust]** , selecteert of deselecteert u verwijzingen naar de elementen.
+   * Van de **[!UICONTROL Adjust]** -kolom, verwijzingen naar de elementen selecteren of de selectie ervan opheffen.
    * Tikken/klikken **[!UICONTROL Back]** om terug te keren naar de **[!UICONTROL Select Destination]** scherm.
 
    * Tikken/klikken **[!UICONTROL Cancel]** om de verplaatsingsbewerking te stoppen.
@@ -226,7 +241,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    >[!NOTE]
    >
-   >Standaard, [!DNL Experience Manager Assets] geeft de oorspronkelijke vertoning van het element niet weer in de voorvertoningsmodus. Als beheerder kunt u overlays gebruiken om [!DNL Assets] om de originele uitvoeringen weer te geven in de voorvertoningsmodus.
+   >Standaard, [!DNL Experience Manager Assets] geeft de oorspronkelijke vertoning van het element niet weer in de voorvertoningsmodus. Als u een beheerder bent, kunt u overlays gebruiken om te vormen [!DNL Assets] om de originele uitvoeringen weer te geven in de voorvertoningsmodus.
 
 1. Selecteer een vertoning om de vertoning weer te geven of te verwijderen.
 
@@ -258,7 +273,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    >[!NOTE]
    >
-   >Videoaantekeningen worden alleen ondersteund in browsers met video-indelingen die compatibel zijn met HTML5. Afhankelijk van de browser worden bovendien verschillende video-indelingen ondersteund. De MXF-video-indeling wordt echter nog niet ondersteund met video-annotaties.
+   >Videoannotaties worden alleen ondersteund in browsers met video-indelingen die compatibel zijn met HTML5. Afhankelijk van de browser worden bovendien verschillende video-indelingen ondersteund. De MXF-video-indeling wordt echter nog niet ondersteund met video-annotaties.
 
 ## Elementen verwijderen {#delete-assets}
 
@@ -294,14 +309,14 @@ Zie [middelen downloaden van [!DNL Experience Manager]](/help/assets/download-as
 
 1. Navigeer naar de locatie van het element of de map met middelen die u wilt publiceren of die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
 
-1. Selecteer het element of de map die u wilt publiceren of de publicatie ongedaan wilt maken en selecteer **[!UICONTROL Manage Publication]** ![publicatieoptie beheren](assets/do-not-localize/globe-publication.png) van de werkbalk. Als u snel wilt publiceren, selecteert u de optie **[!UICONTROL Quick Publish]** van de werkbalk. Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
+1. Selecteer het element of de map die u wilt publiceren of de publicatie ongedaan wilt maken en selecteer **[!UICONTROL Manage Publication]** ![publicatieoptie beheren](assets/do-not-localize/globe-publication.png) van de werkbalk. Als u snel wilt publiceren, selecteert u **[!UICONTROL Quick Publish]** van de werkbalk. Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
 
-1. Selecteer **[!UICONTROL Publish]** of **[!UICONTROL Unpublish]** naar wens.
+1. Selecteer de **[!UICONTROL Publish]** of **[!UICONTROL Unpublish]** naar wens.
 
    ![Handeling Unpublish](assets/unpublish_action.png)
    *Afbeelding: Publiceer- en publicatieopties en de planningsoptie.*
 
-1. Selecteren **[!UICONTROL Now]** om direct op het middel te handelen of selecteer **[!UICONTROL Later]** om de actie te plannen. Selecteer een datum en tijd als u de optie **[!UICONTROL Later]** optie. Klik op **[!UICONTROL Next]**.
+1. Selecteren **[!UICONTROL Now]** om direct op het middel te handelen of selecteer **[!UICONTROL Later]** om de actie te plannen. Selecteer een datum en tijd als u de optie **[!UICONTROL Later]** -optie. Klik op **[!UICONTROL Next]**.
 
 1. Als een element bij het publiceren naar andere elementen verwijst, worden de bijbehorende verwijzingen in de wizard weergegeven. Alleen die verwijzingen worden weergegeven die niet zijn gepubliceerd of zijn gewijzigd sinds de laatste publicatie. Kies de referenties die u wilt publiceren.
 
@@ -309,7 +324,7 @@ Zie [middelen downloaden van [!DNL Experience Manager]](/help/assets/download-as
 
 De volgende beperkingen en tips voor het publiceren of verwijderen van middelen of mappen zijn beschikbaar:
 
-* De optie [!UICONTROL Manage Publication] is beschikbaar slechts aan de gebruikersrekeningen die replicatiemachtigingen hebben.
+* De optie om [!UICONTROL Manage Publication] is beschikbaar slechts aan de gebruikersrekeningen die replicatiemachtigingen hebben.
 * Verwijder tijdens het verwijderen van de publicatie van een complex element alleen de publicatie van het element. Verwijder de publicatie van de verwijzingen niet omdat er mogelijk naar wordt verwezen door andere gepubliceerde elementen.
 * Lege mappen worden niet gepubliceerd.
 * Als u elementen publiceert die worden verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
@@ -325,7 +340,7 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 
    ![add_user](assets/add_user.png)
 
-1. Als u een aanmeldingsscherm wilt weergeven wanneer gebruikers de map openen, selecteert u de optie **[!UICONTROL Enable]** optie. Selecteer vervolgens het pad naar een aanmeldingspagina in [!DNL Experience Manager]en sla de wijzigingen op.
+1. Als u een aanmeldingsscherm wilt weergeven wanneer gebruikers de map openen, selecteert u de optie **[!UICONTROL Enable]** -optie. Selecteer vervolgens het pad naar een aanmeldingspagina in [!DNL Experience Manager]en sla de wijzigingen op.
 
    ![login_page](assets/login_page.png)
 
@@ -346,7 +361,7 @@ Voor eenvoudige, geavanceerde, en douaneonderzoeken om de meest aangewezen activ
 
 De snelle actiepictogrammen zijn beschikbaar voor één middel tegelijkertijd. Voer afhankelijk van het apparaat de volgende handelingen uit om de snelactiepictogrammen weer te geven:
 
-* Aanraakapparaten: Raak aan en houd de muisknop ingedrukt. Op een iPad kunt u bijvoorbeeld tikken en een element vasthouden, zodat de snelle acties worden weergegeven.
+* Aanraakapparaten: aanraken en vasthouden. Op een iPad kunt u bijvoorbeeld tikken en een element vasthouden, zodat de snelle acties worden weergegeven.
 * Niet-aanraakapparaten: Aanwijzer aanwijzen. Op een bureaubladapparaat wordt bijvoorbeeld de snelle actiebalk weergegeven als u de aanwijzer boven de elementminiatuur houdt.
 
 <!-- Hiding this topic via cqdoc-18707
@@ -418,7 +433,7 @@ In de tijdlijn kunt u verschillende gebeurtenissen voor een geselecteerd item we
 
 >[!NOTE]
 >
->Tijdlijn bevat verschillende [specifieke opties voor inhoudsfragmenten](content-fragments/content-fragments.md).
+>De tijdlijn bevat verschillende [specifieke opties voor inhoudsfragmenten](content-fragments/content-fragments.md).
 
 ## Elementen notities aanbrengen {#annotating}
 
@@ -434,7 +449,7 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
 1. Tik/klik op de knop **[!UICONTROL Annotate]** pictogram uit een van de volgende opties:
 
    * [Snelle acties](#quick-actions)
-   * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent genavigeerd
+   * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent gegaan
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
@@ -452,7 +467,7 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. Nadat u de annotatie hebt toegevoegd, klikt u op **[!UICONTROL Add]** om het op te slaan. Een kennisgeving voor de aantekening wordt verzonden naar Aaron.
+1. Nadat u de annotatie hebt toegevoegd, klikt u op **[!UICONTROL Add]** opslaan. Een kennisgeving voor de aantekening wordt verzonden naar Aaron.
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -479,7 +494,7 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
 >
 >U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderliggende verzamelingen bevat, kunt u echter alleen annotaties/opmerkingen aan de bovenliggende verzameling toevoegen. De optie Annoteren is niet beschikbaar voor onderliggende verzamelingen.
 
-### Opgeslagen notities weergeven {#viewing-saved-annotations}
+### Opgeslagen annotaties weergeven {#viewing-saved-annotations}
 
 U kunt slechts één annotatie tegelijk weergeven.
 
@@ -549,7 +564,7 @@ Tik of klik op de knop **[!UICONTROL Print]** en volgt u de instructies in de wi
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   Als u de vormgeving van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u het dialoogvenster **[!UICONTROL Annotation PDF configuration]** van de Manager van de Configuratie, en wijzig de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie voor informatie over het wijzigen van de lettertypekleur van annotaties [Annotatie](/help/assets/manage-digital-assets.md#annotating).
+   Als u de vormgeving van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u het dialoogvenster **[!UICONTROL Annotation PDF configuration]** van de Manager van de Configuratie, en wijzig de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie voor informatie over het wijzigen van de fontkleur van annotaties [Annotatie](/help/assets/manage-digital-assets.md#annotating).
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF geeft de wijzigingen weer die u hebt aangebracht.
 
@@ -577,7 +592,7 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
    ![tijdlijn](assets/timeline.png)
 
-1. Tik/klik op de knop **[!UICONTROL Actions]** (pijl) onderaan om de beschikbare acties weer te geven die u op het element kunt uitvoeren.
+1. Tik/klik op de knop **[!UICONTROL Actions]** (pijl) onder aan om de beschikbare acties weer te geven die u op het element kunt uitvoeren.
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
@@ -613,7 +628,7 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
 ### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
 
-1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en tik op het element of klik erop om de elementpagina te openen.
+1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en tik op het element of klik op het element om de elementpagina te openen.
 1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Timeline]** in het menu om de tijdlijn weer te geven.
 
    ![timeline-1](assets/timeline-1.png)
@@ -649,7 +664,7 @@ Voor meer informatie over het beheer van verzamelingen raadpleegt u [Verzameling
 
 ## Verlopen elementen verbergen bij weergave van elementen in bureaubladtoepassing of Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] bureaubladtoepassing biedt toegang tot de DAM-opslagplaats van Windows of Mac-desktop. Met Adobe Asset Link hebt u toegang tot elementen vanuit de ondersteunde [!DNL Creative Cloud] bureaubladtoepassingen.
+[!DNL Experience Manager] bureaubladtoepassing biedt toegang tot de DAM-opslagplaats van Windows of Mac-desktop. Met de Adobe Asset Link hebt u toegang tot elementen vanuit de ondersteunde [!DNL Creative Cloud] bureaubladtoepassingen.
 
 Bij bladeren door elementen vanuit [!DNL Experience Manager] gebruikersinterface, worden de verlopen elementen niet weergegeven. Beheerders kunnen de volgende configuratie uitvoeren om te voorkomen dat verlopen middelen worden weergegeven, gezocht en opgehaald wanneer ze middelen zoeken vanuit de bureaubladtoepassing en de Asset Link. De configuratie werkt voor alle gebruikers, ongeacht beheerderrechten.
 
@@ -665,7 +680,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Meer informatie vindt u in [door DAM-middelen bladeren met bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en [hoe te om Adobe Asset Link te gebruiken](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Meer informatie vindt u in [door DAM-middelen bladeren met bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en [hoe te om de Verbinding van Activa van de Adobe te gebruiken](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **Zie ook**
 

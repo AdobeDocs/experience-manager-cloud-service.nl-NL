@@ -2,9 +2,9 @@
 title: Werken met inhoudsfragmenten (elementen - inhoudsfragmenten)
 description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service inhoud kunt ontwerpen, maken, curven en gebruiken die onafhankelijk is van pagina's. Dit is ideaal voor het ontwerpen van pagina's en het leveren zonder kop. Ook hoe zij samen met MSM kunnen worden gebruikt.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2216'
 ht-degree: 2%
 
 ---
@@ -34,14 +34,18 @@ Inhoudsfragmenten kunnen ook worden geleverd in JSON-indeling, waarbij gebruik w
 
 >[!NOTE]
 >
->Inhoudsfragmenten worden opgeslagen als **Activa**. Ze worden nu voornamelijk beheerd met de **[Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, hoewel zij nog van kunnen leiden **Activa** console. Deze afdeling heeft betrekking op het beheer van de **Activa** console.
+>Inhoudsfragmenten zijn een functie Sites, maar worden opgeslagen als **Activa**.
+>
+>Ze worden nu voornamelijk beheerd met de **[Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, hoewel zij nog van kunnen leiden **Activa** console. Deze afdeling heeft betrekking op het beheer van de **Activa** console.
+>
+>Er zijn twee editors voor het ontwerpen van inhoudsfragmenten. In deze sectie wordt de oorspronkelijke editor beschreven, die voornamelijk wordt geopend vanuit de **Activa** console. Zie de documentatie van Plaatsen, [Inhoudsfragmenten - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), voor meer informatie over de nieuwe editor (die voornamelijk wordt benaderd vanuit de **Inhoudsfragmenten** console).
 
 Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren, onderhouden en gebruiken van uw inhoudsfragmenten:
 
 * [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) - het inschakelen, maken en definiëren van uw modellen
 * [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md) - maak uw inhoudsfragmenten; bewerk, publiceer en verwijs vervolgens naar
-* [Variaties - Fragmentinhoud ontwerpen](/help/assets/content-fragments/content-fragments-variations.md) - de fragmentinhoud ontwerpen en variaties van de Master inhoud maken
+* [Variaties - Fragmentinhoud ontwerpen](/help/assets/content-fragments/content-fragments-variations.md) - de fragmentinhoud ontwerpen en variaties van het stramien maken
 * [Markering](/help/assets/content-fragments/content-fragments-markdown.md) - markeringssyntaxis gebruiken voor uw fragment
 * [Gekoppelde inhoud gebruiken](/help/assets/content-fragments/content-fragments-assoc-content.md) - gekoppelde inhoud toevoegen
 * [Metagegevens - Fragmenteigenschappen](/help/assets/content-fragments/content-fragments-metadata.md) - de fragmenteigenschappen weergeven en bewerken
@@ -114,7 +118,7 @@ Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructu
 
 Indien benaderd via de **Activa** kunt u MSM gebruiken en Actieve kopieën maken voor uw fragmenten.
 
-Zie voor meer informatie [Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen](/help/assets/reuse-assets-using-msm.md).
+Zie voor meer informatie [Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen](/help/assets/reuse-assets-using-msm.md). Dit schakelt [overerving](/help/assets/content-fragments/content-fragments-variations.md#inheritance) voor zowel variaties als afzonderlijke velden van uw fragmenten.
 
 >[!CAUTION]
 >
@@ -239,10 +243,10 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Een integraal onderdeel van het fragment
 
       * Elk inhoudsfragment heeft één instantie van Master.
-      * Master kan niet worden verwijderd.
+      * Stramien kan niet worden verwijderd.
 
-   * Master is toegankelijk in de fragmenteditor onder **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)**.
-   * Master is geen variatie als zodanig, maar is de basis van alle variaties.
+   * Stramien is toegankelijk in de fragmenteditor onder **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)**.
+   * Stramien is geen variatie als zodanig, maar is de basis van alle variaties.
 
 * **Variaties**
 
@@ -250,7 +254,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Wordt gemaakt als kopieën van **Master**, maar kan vervolgens naar wens worden bewerkt; de inhoud overlapt gewoonlijk de variaties zelf.
    * Kan worden gedefinieerd tijdens het ontwerpen van fragmenten.
    * Opgeslagen in het fragment, om spreiding van inhoudskopieën te voorkomen.
-   * Variaties kunnen [gesynchroniseerd](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) master als de Master inhoud is bijgewerkt.
+   * Variaties kunnen [gesynchroniseerd](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) met stramien als de stramieninhoud is bijgewerkt.
    * Kan [Samengevat](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) om de tekst snel af te kappen tot een vooraf gedefinieerde lengte.
    * Beschikbaar onder [Variaties](/help/assets/content-fragments/content-fragments-variations.md) tabblad van de fragmenteditor.
 

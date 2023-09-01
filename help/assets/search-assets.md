@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
+source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
 workflow-type: tm+mt
-source-wordcount: '5311'
+source-wordcount: '5463'
 ht-degree: 4%
 
 ---
@@ -137,6 +137,20 @@ U kunt dit in uw voordeel gebruiken door de positie van bepaalde elementen in de
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Video: begrijp hoe zoekresultaten worden gerangschikt en hoe de rang kan worden beïnvloed.*
+
+## De grootte van een elementbatch configureren om zoekresultaten weer te geven {#configure-asset-batch-size}
+
+Beheerders kunnen nu de batchgrootte configureren van elementen die worden weergegeven wanneer u een zoekopdracht uitvoert. De resultaten van het activaonderzoek tonen in veelvouden van het gevormde aantal van de partijgrootte wanneer u verder neer scrolt om de resultaten te laden. U kunt kiezen uit de beschikbare batchformaten van 200, 500 en 1000 elementen. Als u een lagere batch-grootte instelt, resulteert dit in snellere zoekresponstijden.
+
+Als u bijvoorbeeld de limiet voor het aantal resultaten instelt op een batch van 200 elementen, geeft Experience Manager Assets een batch-grootte van 200 elementen weer in de zoekresultaten wanneer u de zoekopdracht uitvoert. Wanneer u omlaag schuift om door de onderzoeksresultaten te navigeren, wordt de volgende partij van 200 activa getoond. Het proces gaat door tot alle activa die de onderzoeksvraag aanpassen worden getoond.
+
+De grootte van de elementbatch configureren:
+
+1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets Configurations]** > **[!UICONTROL Assets Omnisearch Configuration]**.
+
+1. Selecteer de limiet voor het aantal resultaten en klik op **[!UICONTROL Save]**.
+
+   ![Groepsgrootteconfiguratie van middelen](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## Geavanceerd zoeken {#scope}
 

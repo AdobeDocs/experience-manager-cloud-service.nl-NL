@@ -3,8 +3,11 @@ title: Contentfragmenten beheren
 description: Leer hoe te om de console van de Fragmenten van de Inhoud te gebruiken om uw AEMInhoudsfragmenten te beheren; voor paginauteurs, of als basis van uw inhoud zonder kop.
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2051'
 ht-degree: 0%
@@ -12,6 +15,12 @@ ht-degree: 0%
 ---
 
 # Contentfragmenten beheren {#managing-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Leer hoe u de **Inhoudsfragmenten** -console voor het beheren van AEM inhoudsfragmenten. Deze kunnen worden gebruikt voor het ontwerpen van pagina&#39;s of als basis voor inhoud zonder kop.
 

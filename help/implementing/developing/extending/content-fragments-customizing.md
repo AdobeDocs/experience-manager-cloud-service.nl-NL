@@ -2,7 +2,7 @@
 title: Contentfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit. Leer hoe u ze kunt aanpassen.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1812'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 In Adobe Experience Manager as a Cloud Service breidt een inhoudsfragment een standaard element uit. Zie:
 
-* [Inhoudsfragmenten maken en beheren](/help/sites-cloud/administering/content-fragments/content-fragments.md) en [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md) voor meer informatie over inhoudsfragmenten.
+* [Inhoudsfragmenten maken en beheren](/help/sites-cloud/administering/content-fragments/overview.md) en [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md) voor meer informatie over inhoudsfragmenten.
 
 * [Elementen beheren](/help/assets/manage-digital-assets.md) voor meer informatie over standaardactiva.
 
 ## Architectuur {#architecture}
 
-De basis [samenstellende delen](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van een inhoudsfragment zijn:
+De basis [samenstellende delen](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) van een inhoudsfragment zijn:
 
 * A *Inhoudsfragment*,
 * bestaande uit een of meer *Inhoud-elementen*,
@@ -78,7 +78,7 @@ Net als bij standaardelementen wordt een inhoudsfragment opgeslagen onder:
 
 #### Elementmachtigingen {#asset-permissions}
 
-Zie voor meer informatie [Inhoudsfragment - Overwegingen verwijderen](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+Zie voor meer informatie [Inhoudsfragment - Overwegingen verwijderen](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 #### Functie-integratie {#feature-integration}
 
@@ -324,7 +324,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Voorbeeld: het interval voor automatisch opslaan opgeven {#example-specifying-the-auto-save-interval}
 
-De [interval voor automatisch opslaan](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) (gemeten in seconden) kan worden gedefinieerd met behulp van configuratiemanager (ConfMgr):
+De [interval voor automatisch opslaan](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) (gemeten in seconden) kan worden gedefinieerd met behulp van configuratiemanager (ConfMgr):
 
 * Knooppunt: `<conf-root>/settings/dam/cfm/jcr:content`
 * Naam eigenschap: `autoSaveInterval`

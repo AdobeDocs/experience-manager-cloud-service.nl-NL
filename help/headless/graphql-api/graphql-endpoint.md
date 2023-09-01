@@ -3,7 +3,7 @@ title: GraphQL-eindpunten beheren in AEM
 description: Leer hoe u GraphQL-eindpunten in Adobe Experience Manager as a Cloud Service beheert voor levering van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -22,10 +22,10 @@ Er zijn twee soorten eindpunten in AEM:
 
 * Algemeen
    * Beschikbaar voor gebruik door alle sites.
-   * Dit eindpunt kan alle Modellen van het Fragment van de Inhoud van alle configuraties van Plaatsen gebruiken (die in [Configuratiebrowser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Dit eindpunt kan alle Modellen van het Fragment van de Inhoud van alle configuraties van Plaatsen gebruiken (die in [Configuratiebrowser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)).
    * Als er om het even welke Modellen van het Fragment van de Inhoud zijn die onder de configuraties van Plaatsen zouden moeten worden gedeeld, dan zouden deze onder de globale configuraties van Plaatsen moeten worden gecreeerd.
 * Siteconfiguraties:
-   * Komt overeen met een configuratie Sites, zoals gedefinieerd in het dialoogvenster [Configuratiebrowser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Komt overeen met een configuratie Sites, zoals gedefinieerd in het dialoogvenster [Configuratiebrowser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
    * Specifiek voor een opgegeven site/project.
    * Een configuratie-specifiek eindpunt van Plaatsen zal de Modellen van het Fragment van de Inhoud van die specifieke configuratie van Plaatsen samen met die van de globale configuratie van Plaatsen gebruiken.
 
@@ -52,11 +52,11 @@ Om een eindpunt voor GraphQL voor AEM toe te laten moet u:
 
 ## GraphQL Endpoint inschakelen {#enabling-graphql-endpoint}
 
-Om een Eindpunt van GraphQL toe te laten moet u eerst een aangewezen configuratie hebben. Zie [Inhoudsfragmenten - Configuratiebrowser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
+Om een Eindpunt van GraphQL toe te laten moet u eerst een aangewezen configuratie hebben. Zie [Inhoudsfragmenten - Configuratiebrowser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
 >[!CAUTION]
 >
->Als de [gebruik van inhoudsfragmentmodellen is niet ingeschakeld](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)de **Maken** deze optie is niet beschikbaar.
+>Als de [gebruik van inhoudsfragmentmodellen is niet ingeschakeld](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)de **Maken** deze optie is niet beschikbaar.
 
 Om het overeenkomstige eindpunt toe te laten:
 
