@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 370d5742065d659f32ec1ff4d4b0fc0a153f71c2
+source-git-commit: 288f871b75e68fdbca1244099e490408ea66ff40
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13323 same
 - SKYOPS-63290: Oplossing voor een onjuiste evolutie van emmers.
 - SKYOPS-54607: Ratelimiter-serverlaadberekening is niet correct voor een mislukte aanvraag.
 - ASSETS-27648: ContentModelIT kan uitsluitingsbestanden van andere bundels niet lezen.
-- GRANITE-43744: Het stileren Authenticator werkt niet behoorlijk als er wanconfiguratie met authentificatie-vereiste en ijdelingspad is.
+- GRANITE-43744: Het stileren Authenticator werkt niet behoorlijk als er een misconfiguration met authentificatie-vereiste en ijdelingspad is.
 - GRANITE-46419: AEM integratieprobleem met Auth0 Idp.
 - GRANITE-46292: Okta SAML configuratie werkt niet na AEM Cloud-update.
 - GRANITE-47059: Verwijder SSL-bundel van graniet Jetty.
