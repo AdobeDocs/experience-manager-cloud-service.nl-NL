@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
+source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
 workflow-type: tm+mt
-source-wordcount: '4320'
+source-wordcount: '4340'
 ht-degree: 9%
 
 ---
@@ -91,6 +91,11 @@ Voer de volgende stappen uit om de ZIP-bestanden te extraheren:
 1. Klik op **[!UICONTROL Extract]**. Het Zip-extractieproces wordt gestart. Nadat het proces is voltooid, kunt u de geëxtraheerde elementen weergeven in de doelmap.
 
    ![ZIP-extractie](assets/zip-extraction.png)
+
+>[!NOTE]
+>
+>* De maximale ondersteunde ZIP-bestandsgrootte is 15 GB.
+>* U kunt maximaal drie ZIP-bestanden tegelijk extraheren.
 
 ## Elementen voorvertonen {#previewing-assets}
 
