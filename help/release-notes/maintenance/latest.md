@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: a1686d7796bb1e310b776195bd19df98f6f10650
+source-git-commit: 370d5742065d659f32ec1ff4d4b0fc0a153f71c2
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '315'
 ht-degree: 1%
 
 ---
@@ -21,25 +21,26 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13323 same
 
 ### Verbeteringen {#enhancements-13323}
 
-- GRANITE-46784: Voeg optie toe om BeonderAuthenticationHandler onbruikbaar te maken
-- GRANITE-36205: Update internal eak release version to latest
-- ASSETS-26713: Touch UI External Link to New Experience UI Dashboard - Unified-shell-integratie en upgrade die geoptimaliseerd is voor ui-touch
-- SKYOPS-63302: Upgrade com.adobe.granite:com.adobe.granite.auth.saml naar v1.0.54
-- GRANITE-46634: Upgrade naar gebeurtenisclient 1.4.0
-- GRANITE-46788: Werk bibliotheken bij naar Apache Commons IO 2.13.0, Commons Lang 3.13.0, Commons Code 1.16.0 en Commons Compress 1.23.0
-- GRANITE-46705: Update to Apache Felix HTTP Jetty 4.1.14
-- GRANITE-46631: Update Jackrabbit versie to 2.20.11
-- SKYOPS-61895: Update to Jackrabbit FileVault 3.7.0
+- GRANITE-46784: Voeg optie toe om BeonderAuthenticationHandler onbruikbaar te maken.
+- GRANITE-36205: Werk de interne versie van de eikversie bij naar de recentste versie.
+- ASSETS-26713: Touch UI External Link to New Experience UI Dashboard - Unified-shell-integration en ui-touch-geoptimaliseerde upgrade.
+- SKYOPS-63302: Upgrade com.adobe.granite:com.adobe.granite.auth.saml naar v1.0.54.
+- GRANITE-46634: Upgrade naar gebeurtenisclient 1.4.0.
+- GRANITE-46788: Werk bibliotheken bij naar Apache Commons IO 2.13.0, Commons Lang 3.13.0, Commons Code 1.16.0 en Commons Compress 1.23.0.
+- GRANITE-46705: Update to Apache Felix HTTP Jetty 4.1.14.
+- GRANITE-46631: Update Jackrabbit version to 2.20.11.
+- SKYOPS-61895: Update to Jackrabbit FileVault 3.7.0.
 
 ### Opgeloste problemen {#fixed-issues-13323}
 
-- SKYOPS-63290: Correctie van onjuiste evolutie van emmers
-- SKYOPS-54607: Ratelimiter-serverlaadberekening is niet correct voor een verzoek dat is mislukt
-- ASSETS-27648: ContentModelIT kan uitsluitingsbestanden van andere bundels niet lezen
-- GRANITE-43744: Het stileren Authenticator werkt niet behoorlijk als er wanconfiguratie met authentificatie-vereiste en ijdelingspad is
-- GRANITE-46419: AEM integratieprobleem met Auth0 Idp
-- GRANITE-46292: Okta SAML configuratie werkt niet na AEM Cloud-update
-- GRANITE-47059: SSL-bundel van graniet verwijderen
+- ASSETS-28461: Doc cloud viewer werkt niet voor PDF, hersteld vanaf 13239.
+- SKYOPS-63290: Oplossing voor een onjuiste evolutie van emmers.
+- SKYOPS-54607: Ratelimiter-serverlaadberekening is niet correct voor een mislukte aanvraag.
+- ASSETS-27648: ContentModelIT kan uitsluitingsbestanden van andere bundels niet lezen.
+- GRANITE-43744: Het stileren Authenticator werkt niet behoorlijk als er wanconfiguratie met authentificatie-vereiste en ijdelingspad is.
+- GRANITE-46419: AEM integratieprobleem met Auth0 Idp.
+- GRANITE-46292: Okta SAML configuratie werkt niet na AEM Cloud-update.
+- GRANITE-47059: Verwijder SSL-bundel van graniet Jetty.
 
 ### Bekende problemen {#known-issues-13323}
 
