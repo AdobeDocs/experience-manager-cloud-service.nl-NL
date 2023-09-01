@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5a60c491db4a182529a2c4b6490b18b356c14fa7
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2746'
 ht-degree: 1%
 
 ---
@@ -99,6 +99,14 @@ De omgekeerde replicatie van Publiceren aan Auteur wordt niet gesteund in AEM as
 Inhoud wordt van Auteur naar Publiceren gerepliceerd via een submechanisme. Aangepaste replicatiemiddelen worden niet ondersteund.
 
 ## Controle en foutopsporing {#monitoring-and-debugging}
+
+## Geen overbelastende ontwikkelomgevingen {#overloading-dev-envs}
+
+Productieomgevingen zijn groter om een stabiele werking te garanderen, terwijl werkgebiedomgevingen als productieomgevingen worden geschaald om realistische tests onder productieomstandigheden te garanderen.
+
+Dev-omgevingen en Rapid Dev-omgevingen dienen beperkt te blijven tot ontwikkeling, foutenanalyse en functionele tests en zijn niet ontworpen voor het verwerken van hoge werklasten of grote hoeveelheden inhoud.
+
+Als voorbeeld, kan het veranderen van een indexdefinitie op een grote inhoudsbewaarplaats op een Dev milieu in het re-indexeren resulteren resulterend in teveel verwerking. Tests waarvoor aanzienlijke inhoud nodig is, moeten worden uitgevoerd in werkgebiedomgevingen.
 
 ### Logboeken {#logs}
 
