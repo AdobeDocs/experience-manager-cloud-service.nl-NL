@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
+source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
 workflow-type: tm+mt
-source-wordcount: '4347'
+source-wordcount: '4320'
 ht-degree: 9%
 
 ---
@@ -121,19 +121,18 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
 1. Gebruik de datumkiezer naast het veld **[!UICONTROL On Time]** om een bepaalde datum/tijd voor de activering van de asset te plannen.
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![Datumkiezer](assets/date-picker.png)
 
 1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum/tijd van deactivering in de datumkiezer naast de **[!UICONTROL Off Time]** veld. De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na de [!UICONTROL Off Time], een middel en de vertoningen ervan zijn niet beschikbaar via de interface Middelen of de HTTP-API.
 
-   ![chlimage_1-218](assets/chlimage_1-218.png)
-
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)
 1. In de **[!UICONTROL Tags]** veld, selecteert u een of meer tags. Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en selecteert u de optie `Enter` toets. De nieuwe tag wordt opgeslagen in [!DNL Experience Manager].
 
    YouTube vereist dat tags worden gepubliceerd en een koppeling naar YouTube hebben (als er een geschikte koppeling is gevonden).
 
    >[!NOTE]
    >
-   >Als u tags wilt maken, moet u schrijfmachtigingen hebben op `/content/cq:tags/default` pad in de CRX-opslagplaats.
+   > Als u tags wilt maken, moet u schrijfmachtigingen hebben op `/content/cq:tags/default` pad in de CRX-opslagplaats.
 
 1. Tik of klik op **[!UICONTROL Save & Close]**.
 
@@ -181,7 +180,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Klik op de knop **[!UICONTROL Paste]** middelenpictogram van de werkbalk. Elementen worden naar deze locatie gekopieerd.
 
-   ![chlimage_1-219](assets/chlimage_1-219.png)
+   <!--![chlimage_1-219](assets/chlimage_1-219.png)-->
 
    >[!NOTE]
    >
@@ -229,7 +228,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Tik/klik op het element om de elementpagina te openen.
 
-   ![chlimage_1-220](assets/chlimage_1-220.png)
+   <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
 1. Tik/klik op het pictogram GlobalNav en selecteer **[!UICONTROL Renditions]** in de lijst.
 
@@ -255,7 +254,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    Ga naar de pagina met assetdetails voor de asset en tik of klik op het pictogram **[!UICONTROL Add Rendition]** op de werkbalk om een nieuwe uitvoering voor de asset te uploaden.
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
    >[!NOTE]
    >
@@ -267,7 +266,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    Op dezelfde manier kunt u de afbeelding van de pagina Annotatie aanpassen door deze te bedekken `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+   <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
    Navigeer naar het deelvenster `videopicker` knooppunt in de CRX-opslagplaats op de locatie `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, bedekt het knooppunt en bewerkt vervolgens de desbetreffende eigenschap.
 
@@ -451,11 +450,11 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
    * [Snelle acties](#quick-actions)
    * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent gegaan
 
-   ![chlimage_1-233](assets/chlimage_1-233.png)
+   <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
 1. Voeg een opmerking toe in het vak **[!UICONTROL Comment]** onder aan de tijdlijn. U kunt ook een gebied in de afbeelding markeren en een annotatie toevoegen in het dialoogvenster **[!UICONTROL Add Annotation]**.
 
-   ![chlimage_1-234](assets/chlimage_1-234.png)
+<!-- ![chlimage_1-234](assets/chlimage_1-234.png)-->
 
 <!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
@@ -465,11 +464,11 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
 >
 >Voor een gebruiker die geen beheerder is, worden suggesties alleen weergegeven als de gebruiker Leesmachtigingen heeft op `/home` in CRXDE.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+<!--![chlimage_1-235](assets/chlimage_1-235.png)-->
 
 1. Nadat u de annotatie hebt toegevoegd, klikt u op **[!UICONTROL Add]** opslaan. Een kennisgeving voor de aantekening wordt verzonden naar Aaron.
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   <!--![chlimage_1-236](assets/chlimage_1-236.png)-->
 
    >[!NOTE]
    >
@@ -484,11 +483,11 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
 
 1. Als u een andere kleur wilt kiezen, zodat u onderscheid kunt maken tussen gebruikers, klikt of tikt u op het pictogram Profiel en klikt/tikt u op **[!UICONTROL My Preferences]**.
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
    Geef de gewenste kleur op in het vak **[!UICONTROL Annotation Color]** en klik of tik op **[!UICONTROL Accept]**.
 
-   ![chlimage_1-238](assets/chlimage_1-238.png)
+<!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
 >[!NOTE]
 >
@@ -508,15 +507,15 @@ U kunt slechts één annotatie tegelijk weergeven.
 
 1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Timeline]** in de lijst.
 
-   ![chlimage_1-239](assets/chlimage_1-239.png)
+   <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
 1. Selecteer in de lijst **[!UICONTROL Show All]** in de tijdlijn de optie **[!UICONTROL Comments]** om de resultaten te filteren op basis van annotaties.
 
-   ![chlimage_1-240](assets/chlimage_1-240.png)
+   <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
    Tik/klik op een opmerking in het dialoogvenster **[!UICONTROL Timeline]** om de bijbehorende annotatie in de afbeelding weer te geven.
 
-   ![chlimage_1-241](assets/chlimage_1-241.png)
+   <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
    Tikken/klikken **[!UICONTROL Delete]** om een bepaalde opmerking te verwijderen.
 
@@ -540,29 +539,29 @@ Tik of klik op de knop **[!UICONTROL Print]** en volgt u de instructies in de wi
 
 1. Als u specifieke annotaties wilt afdrukken, selecteert u de annotaties in de tijdlijn.
 
-   ![chlimage_1-242](assets/chlimage_1-242.png)
+   <!--![chlimage_1-242](assets/chlimage_1-242.png)-->
 
    Als u alleen de revisiestatus wilt afdrukken, selecteert u deze in de tijdlijn.
 
-   ![chlimage_1-243](assets/chlimage_1-243.png)
+   <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
 1. Tik of klik op het pictogram **[!UICONTROL Print]** op de werkbalk.
 
-   ![chlimage_1-244](assets/chlimage_1-244.png)
+   <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
 1. Kies in het dialoogvenster Afdrukken de positie waarop u de annotaties/revisiestatus wilt weergeven op de PDF. Als u bijvoorbeeld wilt dat de annotaties/status rechtsboven op de pagina met de afgedrukte afbeelding worden afgedrukt, gebruikt u de optie **Linksboven** instellen. Deze optie is standaard geselecteerd.
 
-   ![chlimage_1-245](assets/chlimage_1-245.png)
+   <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
    U kunt andere instellingen kiezen, afhankelijk van de positie waar u de annotaties/status wilt weergeven in de afgedrukte PDF. Kies **[!UICONTROL Next Page]** als u de annotaties/status wilt weergeven op een pagina die gescheiden is van de afgedrukte asset.
 
 1. Klik op **[!UICONTROL Print]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties/status op de opgegeven positie weer. Als u bijvoorbeeld zowel annotaties als de revisiestatus wilt afdrukken met de instelling **Linksboven**, lijkt de gegenereerde uitvoer op het PDF-bestand dat hier wordt weergegeven.
 
-   ![chlimage_1-246](assets/chlimage_1-246.png)
+   <!--![chlimage_1-246](assets/chlimage_1-246.png)-->
 
 1. Download of druk de PDF af met de opties rechtsboven.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
    Als u de vormgeving van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u het dialoogvenster **[!UICONTROL Annotation PDF configuration]** van de Manager van de Configuratie, en wijzig de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie voor informatie over het wijzigen van de fontkleur van annotaties [Annotatie](/help/assets/manage-digital-assets.md#annotating).
 
@@ -594,15 +593,15 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
 1. Tik/klik op de knop **[!UICONTROL Actions]** (pijl) onder aan om de beschikbare acties weer te geven die u op het element kunt uitvoeren.
 
-   ![chlimage_1-249](assets/chlimage_1-249.png)
+   <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
 1. Tikken/klikken **[!UICONTROL Save as Version]** om een versie voor het element te maken.
 
-   ![chlimage_1-250](assets/chlimage_1-250.png)
+<!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
 1. Voeg een label en een opmerking toe en klik vervolgens op **[!UICONTROL Create]** om een versie te maken. Of tik/klik **Annuleren** om de bewerking af te sluiten.
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
 1. Als u de nieuwe versie wilt weergeven, opent u de lijst **[!UICONTROL Show All]** in de tijdlijn op de pagina met assetdetails of op de gebruikersinterface Assets en kiest u **[!UICONTROL Versions]**. Alle versies die voor een asset zijn gemaakt, worden weergegeven onder het tabblad Tijdlijn. U kunt de lijst filteren om Versies weer te geven door op de pijl-omlaag te klikken en **[!UICONTROL Versions]** in de lijst te selecteren.
 
@@ -635,23 +634,23 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
 1. Tik/klik op de knop **[!UICONTROL Actions]** (pijl) onderaan om de lijst met acties te openen die beschikbaar zijn voor het element.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
 1. Tikken/klikken **[!UICONTROL Start Workflow]** in de lijst.
 
-   ![chlimage_1-253](assets/chlimage_1-253.png)
+   <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
 1. In de **[!UICONTROL Start Workflow]** selecteert u een workflowmodel in de lijst.
 
-   ![chlimage_1-254](assets/chlimage_1-254.png)
+   <!--![chlimage_1-254](assets/chlimage_1-254.png)-->
 
 1. (Optioneel) Geef een titel voor de workflow op, die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
 
-   ![chlimage_1-255](assets/chlimage_1-255.png)
+   <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
 1. Tik of klik op **[!UICONTROL Start]** en tik of klik vervolgens op **[!UICONTROL Proceed]** in het dialoogvenster om te bevestigen. Elke stap van de workflow wordt als een gebeurtenis in de tijdlijn weergegeven.
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
+   <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 
 ## Verzamelingen {#collections}
 
