@@ -1,16 +1,16 @@
 ---
-title: Hoe heeft de nieuwe gebruikersinterface of de nieuwe middelenweergave van AEM Assets in AEM voordeel?
-description: Meer informatie over de belangrijkste voordelen van de nieuwe gebruikersinterface van AEM Assets of de nieuwe weergave Middelen vindt u in AEM. Adobe, die gebruik maakt van zijn expertise op het gebied van het versterken van marketing en creatieve professionals, introduceert een game veranderende nieuwe gebruikerservaring.
+title: Hoe heeft de weergave van middelen in AEM voordeel?
+description: Meer informatie over de belangrijkste voordelen van de weergave Middelen vindt u in AEM. Adobe, die gebruik maakt van zijn expertise op het gebied van het versterken van marketing en creatieve professionals, introduceert een game veranderende nieuwe gebruikerservaring.
 mini-toc-levels: 3
-source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
+source-git-commit: 20e0527ebecb6720f39c0a4b2957dc899117d96f
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
 
 
-# Introductie van de nieuwe gebruikersinterface van AEM Assets {#assets-view}
+# De middelenweergave introduceren {#assets-view}
 
 ![Assets Essentials implementeren](assets/banner-image.jpg)
 
@@ -18,9 +18,9 @@ In het snelle digitale-eerste landschap van vandaag, waar het creëren en levere
 
 Voor meer informatie over de beschikbare persoonlijke ervaringen voor as a Cloud Service middelen raadpleegt u [Inleiding tot elementen as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
-## Hoe te om tot nieuwe UI van AEM Assets toegang te hebben? {#access-assets-view}
+## Hoe te om tot de mening van Activa toegang te hebben? {#access-assets-view}
 
-U hebt op de volgende manieren toegang tot de nieuwe gebruikersinterface van AEM Assets of de nieuwe AEM Assets-weergave:
+U kunt de weergave Middelen op de volgende manieren openen:
 ![Overzicht van Mijn werkruimte](assets/assets-view.png)
 
 <!--
@@ -45,9 +45,9 @@ U hebt op de volgende manieren toegang tot de nieuwe gebruikersinterface van AEM
 
     -->
 
-## Waarom de nieuwe AEM Assets?
+## Waarom middelenweergave?
 
-De nieuwe gebruikersinterface van AEM Assets biedt de volgende belangrijke voordelen die niet beschikbaar zijn in de beheerweergave:
+De weergave Middelen biedt de volgende belangrijke voordelen die niet beschikbaar zijn in de beheerweergave:
 
 * [Mijn werkruimtemashboard biedt gestroomlijnde ervaringen](#my-workspace-for-streamlined-experience)
 * [Eerste benadering zoeken om de efficiëntie te verbeteren](#search-first)
@@ -59,7 +59,7 @@ De nieuwe gebruikersinterface van AEM Assets biedt de volgende belangrijke voord
 
 ### Mijn werkruimtemashboard biedt gestroomlijnde ervaringen {#my-workspace-for-streamlined-experience}
 
-Doe een groeten aan een Digital Asset Management-oplossing die de uiteenlopende behoeften van verschillende organisatorische rollen begrijpt. De gestroomlijnde nieuwe AEM Assets UI-weergave geeft voorrang aan gebruiksgemak en snelheid, zodat de voorkeur van de marketers wordt afgestemd op visuele aantrekkingskracht en werkruimten zonder wirwar van kabels. Met een aanpasbaar gebruikersspecifiek dashboard voor Mijn werkruimte kunnen marketers snel middelen zoeken, voorvertonen, bewerken, beheren en leveren met opmerkelijke efficiëntie. Bodyvakantie naar eindeloze uren besteed aan het zoeken naar specifieke middelen en verwelkom een gestroomlijnde ervaring die alles wat u nodig hebt binnen handbereik brengt.
+Doe een groeten aan een Digital Asset Management-oplossing die de uiteenlopende behoeften van verschillende organisatorische rollen begrijpt. In de gestroomlijnde weergave Elementen wordt de voorkeur gegeven aan gebruiksgemak en snelheid, zodat de voorkeur van de marketers wordt afgestemd op visuele aantrekkingskracht en werkruimten zonder rommel. Met een aanpasbaar gebruikersspecifiek dashboard voor Mijn werkruimte kunnen marketers snel middelen zoeken, voorvertonen, bewerken, beheren en leveren met opmerkelijke efficiëntie. Bodyvakantie naar eindeloze uren besteed aan het zoeken naar specifieke middelen en verwelkom een gestroomlijnde ervaring die alles wat u nodig hebt binnen handbereik brengt.
 
 ![Overzicht van Mijn werkruimte](assets/my-workspace-demo.gif)
 
@@ -67,7 +67,7 @@ Doe een groeten aan een Digital Asset Management-oplossing die de uiteenlopende 
 
 ### Inzichten om gegevensgestuurde beslissingen te nemen {#insights-data}
 
-Om gelijke tred te houden met de snelheid van de inhoud, zijn activeerbare inzichten essentieel. De nieuwe AEM Assets-gebruikersinterface biedt geavanceerde inzichten in de My Workspace en biedt waardevolle gegevens over de prestaties van bedrijfsmiddelen, het gebruik van het publiek en services. Marktdeelnemers kunnen gegevensgestuurde beslissingen nemen, inhoudsstrategieën optimaliseren en hun aflevering achteraf verfijnen om optimale resultaten te behalen. Met toegang tot betekenisvolle inzichten kunnen bedrijven de concurrentie blijven voorlopen en uitzonderlijke resultaten aansturen.
+Om gelijke tred te houden met de snelheid van de inhoud, zijn activeerbare inzichten essentieel. De weergave Middelen biedt geavanceerde inzichten in de Mijn werkruimte en biedt waardevolle gegevens over de prestaties van bedrijfsmiddelen, het gebruik van het publiek en services. Marktdeelnemers kunnen gegevensgestuurde beslissingen nemen, inhoudsstrategieën optimaliseren en hun aflevering achteraf verfijnen om optimale resultaten te behalen. Met toegang tot betekenisvolle inzichten kunnen bedrijven de concurrentie blijven voorlopen en uitzonderlijke resultaten aansturen.
 
 ![Overzicht van inzichten](assets/insights-overview.gif)
 
@@ -77,7 +77,7 @@ Om gelijke tred te houden met de snelheid van de inhoud, zijn activeerbare inzic
 
 De nieuwe ervaring verstrekt een robuuste reeks samenwerkingseigenschappen, met inbegrip van het uitgeven in real time van ingebouwde mogelijkheden van Adobe Photoshop, versiecontroles, en annotatiehulpmiddelen. Dit maakt naadloze samenwerking mogelijk tussen ontwerp-, creatieve, branding- en marketingteams, zodat deze knelpunten kunnen overwinnen en het marketingproces kunnen versnellen. Marktdeelnemers beschikken nu over krachtige instrumenten om de levering van projecten te versnellen en hun algehele productiviteit te verhogen.
 
-Bekijk deze video om de kracht te begrijpen van de nieuwe AEM Assets UI-integratie met Adobe Photoshop Express:
+Bekijk deze video om te zien hoe krachtig de integratie van de middelenweergave met Adobe Photoshop Express is:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
@@ -87,7 +87,7 @@ De komende uitgaven voor as a Cloud Service activa zouden ook omvatten [Adobe Fi
 
 ### De omslag uploadt aan opstelling hiërarchische structuur voor uw organisatie {#folder-uploads}
 
-Stel snel een mapstructuur voor uw organisatie in met de nieuwe gebruikersinterface van AEM Assets door mappen te uploaden die op uw lokale bestandssysteem aanwezig zijn. U hoeft geen mappen te maken onder de hoofdmap en vervolgens handmatig elementen te uploaden naar die mappen om de logische hiërarchische structuur te behouden. Alle mappen en elementen in de hoofdmap worden automatisch geüpload naar Experience Manager Assets.
+Stel snel een mapstructuur voor uw organisatie in met de weergave Middelen door mappen te uploaden die op uw lokale bestandssysteem aanwezig zijn. U hoeft geen mappen te maken onder de hoofdmap en vervolgens handmatig elementen te uploaden naar die mappen om de logische hiërarchische structuur te behouden. Alle mappen en elementen in de hoofdmap worden automatisch geüpload naar Experience Manager Assets.
 
 ![Mappen uploaden](assets/folder-uploads.gif)
 
@@ -101,7 +101,7 @@ Ontgrendel het potentieel van de digitale bibliotheek van uw organisatie met de 
 
 ### Abonneren op inhoud in opslagplaats voor efficiënt middelenbeheer {#subscribe-content}
 
-De nieuwe AEM Assets-gebruikersinterface biedt de mogelijkheid om de bewerkingen te controleren die worden uitgevoerd op de middelen, mappen of verzamelingen die beschikbaar zijn in de opslagplaats. U moet de inhoud selecteren en zich erop abonneren waarvoor de meldingen naar u worden verzonden. U kunt de gebeurtenistypen, zoals schrapping van uw geabonneerde inhoud, wijzigingen op geabonneerde inhoud, etc. ook vormen. De meldingen worden vervolgens alleen naar u verzonden voor deze gebeurtenistypen.
+De weergave Middelen biedt de mogelijkheid om de bewerkingen te controleren die worden uitgevoerd op de middelen, mappen of verzamelingen die beschikbaar zijn in de opslagplaats. U moet de inhoud selecteren en zich erop abonneren waarvoor de meldingen naar u worden verzonden. U kunt de gebeurtenistypen, zoals schrapping van uw geabonneerde inhoud, wijzigingen op geabonneerde inhoud, etc. ook vormen. De meldingen worden vervolgens alleen naar u verzonden voor deze gebeurtenistypen.
 
 ![Meldingen ontvangen](assets/notifications.gif)
 
@@ -109,22 +109,22 @@ De nieuwe AEM Assets-gebruikersinterface biedt de mogelijkheid om de bewerkingen
 
 ### Soft delete activa om betere controle aan beheerders te verstrekken {#soft-delete-assets}
 
-In de map Prullenmand die beschikbaar is in de nieuwe gebruikersinterface van AEM Assets, worden de elementen weergegeven die zijn verwijderd uit de hoofdmap Middelen. U kunt middelen van de omslag van het Afval selecteren om of het aan de originele plaats te herstellen of het permanent te schrappen. U kunt ook een trefwoord opgeven of standaard- of aangepaste filters toepassen om te zoeken naar de juiste elementen in de map Prullenbak.
+In de map met prullenmand die beschikbaar is in de weergave Middelen, worden de elementen weergegeven die zijn verwijderd uit de hoofdmap Middelen. U kunt middelen van de omslag van het Afval selecteren om of het aan de originele plaats te herstellen of het permanent te schrappen. U kunt ook een trefwoord opgeven of standaard- of aangepaste filters toepassen om te zoeken naar de juiste elementen in de map Prullenbak.
 
 ![Zacht verwijderen](assets/soft-delete.gif)
 
 [![Zie de Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
 
-Naast deze functies kunt u met de nieuwe gebruikersinterface van AEM Assets ook de volgende functies uitvoeren die niet beschikbaar zijn in de Admin-weergave:
+Naast deze functies kunt u in de weergave Middelen ook de volgende functies uitvoeren die niet beschikbaar zijn in de beheerweergave:
 
 * Upload een nieuwe versie van een element, met een andere naam, van uw lokale bestandssysteem naar de gegevensopslagruimte. Het geüploade element is beschikbaar als een nieuwe versie met dezelfde naam als het oorspronkelijke element.
 
 * Wijzig de naam van elementen en mappen die beschikbaar zijn in de opslagplaats.
 
-De nieuwe gebruikersinterface van AEM Assets is ontworpen om workflows te stroomlijnen, samenwerking te bevorderen en de levering van bedrijfsmiddelen te versnellen. Door de snelheid van de inhoud te omarmen, kunnen marketers het volledige potentieel van hun digitale middelen ontsluiten en creativiteit ontketenen zoals nooit tevoren.
+De weergave Middelen is toegesneden op het stroomlijnen van workflows, het bevorderen van samenwerking en het versnellen van de levering van middelen. Door de snelheid van de inhoud te omarmen, kunnen marketers het volledige potentieel van hun digitale middelen ontsluiten en creativiteit ontketenen zoals nooit tevoren.
 
 
-Gebruik de volgende koppelingen om snel aan de slag te gaan met de nieuwe gebruikersinterface van AEM Assets:
+Gebruik de volgende koppelingen om snel aan de slag te gaan met de weergave Middelen:
 
 * [Mijn werkruimte](/help/assets/my-workspace-assets-view.md)
 * [Aan de slag met de weergave Middelen](/help/assets/get-started-assets-view.md)
