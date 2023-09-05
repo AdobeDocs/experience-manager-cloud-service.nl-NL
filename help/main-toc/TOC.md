@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+source-git-commit: 71e9325997dcb32e27758d23177670cc70381537
 workflow-type: tm+mt
-source-wordcount: '4253'
+source-wordcount: '4260'
 ht-degree: 20%
 
 ---
@@ -516,6 +516,7 @@ ht-degree: 20%
       + [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [De dynamische video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/dynamic-media/embed-code.md)
       + [URL&#39;s koppelen aan uw webtoepassing](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+      + [Foutrapport aanvragen voor mislukte URL&#39;s voor levering](/help/assets/dynamic-media/reporting-dm.md)
       + [Regels gebruiken om URL&#39;s te transformeren](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [Dynamic Media-elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Werken met Selectieve publicatie in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
