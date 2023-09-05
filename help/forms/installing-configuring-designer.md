@@ -1,7 +1,7 @@
 ---
 title: Forms Designer downloaden en installeren
 description: Met Forms Designer kunt u XDP- en PDF-formuliersjablonen maken die als sjabloon voor een document met records fungeren. Designer is beschikbaar in het dialoogvenster [!DNL AEM Forms] licentie.
-source-git-commit: a22c21ba05e72c1bf18c56df72b7e3c7c62edc0c
+source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
@@ -53,7 +53,6 @@ Als u de nieuwste versie van AEM Forms Designer 64-bits of 32-bits wilt installe
 Voer de volgende stappen uit om Designer te installeren:
 
 1. Designer downloaden van [Softwaredistributie](https://experience.adobe.com/downloads).
-
 1. Dubbelklik op setup.exe om het installatieprogramma uit te voeren.
 1. Ga verder en geef uw gegevens op het scherm Personaliseren op.
 1. Als u de licentieovereenkomst accepteert, klikt u **[!UICONTROL Next]** om verder te gaan.

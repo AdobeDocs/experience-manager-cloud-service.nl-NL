@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1861'
 ht-degree: 0%
 
 ---
@@ -112,12 +112,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
-### Nieuwe functies beschikbaar in [!DNL Forms] {#new-features-available-in-forms-channel}
-
-* [**Google reCAPTCHA-bedrijfsondersteuning**](/help/forms/captcha-adaptive-forms.md): Gebruik Google reCAPTCHA Enterprise in een adaptieve vorm om een betere bescherming te bieden tegen frauduleuze activiteiten en spam, zodat gebruikers veiliger worden. Met een geavanceerde risicoanalyse en naadloze integratie kunnen echte gebruikers eenvoudig formulieren indienen terwijl de bots effectief worden geblokkeerd.
-
-
 ### Functies voor pre-release beschikbaar in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+
+* [**Google reCAPTCHA-bedrijfsondersteuning**](/help/forms/captcha-adaptive-forms-core-components.md): Gebruik Google reCAPTCHA Enterprise in een adaptieve vorm om een betere bescherming te bieden tegen frauduleuze activiteiten en spam, zodat gebruikers veiliger worden. Met een geavanceerde risicoanalyse en naadloze integratie kunnen echte gebruikers eenvoudig formulieren indienen terwijl de bots effectief worden geblokkeerd.
 
 * **Adobe Analytics with Experience Cloud Setup Automation for Forms**: U kunt nu Adobe Analytics met de Automatisering van de Opstelling van het Experience Cloud met een omdraaiing van een paar knopen toelaten. Hiermee kunt u AEM Forms as a Cloud Service verbinden met Experience Platforms-tags en Adobe Analytics om prestatiegegevens voor gepubliceerde formulieren vast te leggen en bij te houden.
 
@@ -141,9 +138,13 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * **[Fout bij afhandeling van aangepaste fouthandlers in de regeleditor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: U kunt nu een aangepaste functie aanroepen als reactie op een fout die door een externe service is geretourneerd, en eindgebruikers een op maat gemaakte reactie geven. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is.
 
 
-### Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
+### Programma voor vroegtijdige adoptie {#forms-early-adopter}
 
-Gebruiken [Forms zonder hoofdadapter](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) om uw ontwikkelaars in staat te stellen om interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden benaderd en waarmee interactie mogelijk is, in plaats van via een traditionele grafische gebruikersinterface. Met behulp van hoofdloze adaptieve formulieren kunt u:
+* **[Protect uw documenten met DocAssurance-API&#39;s (onderdeel van communicatie-API&#39;s)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: De DocAssurance-API&#39;s geven u de bevoegdheid om vertrouwelijke informatie te beveiligen door de documenten te ondertekenen en te versleutelen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
+
+U kunt de Steun van de Adobe verbinden om zich bij het vroege adopterprogramma voor DocAssurance APIs aan te sluiten.
+
+**Forms zonder hoofdadapter**: Gebruik [Forms zonder hoofdadapter](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) om uw ontwikkelaars in staat te stellen om interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden benaderd en waarmee interactie mogelijk is, in plaats van via een traditionele grafische gebruikersinterface. Met behulp van hoofdloze adaptieve formulieren kunt u:
 
 * multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
 * U kunt zelf formulieren integreren in uw bureaublad en mobiele apps, websites en chattoepassingen
