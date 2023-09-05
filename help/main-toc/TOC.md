@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: bb15e840071279dbdf8bd2bfe89d59c067898aca
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4253'
 ht-degree: 20%
 
 ---
@@ -570,6 +570,7 @@ ht-degree: 20%
          + [AEM Forms as a Cloud Service met Adobe Analytics integreren](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Een adaptief formulier integreren met Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Een adaptieve Forms insluiten in een AEM Sites-pagina](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [Aangepast formulier insluiten op basis van kerncomponenten op een externe webpagina](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + Formuliergegevensmodel {#use-form-data-model}
          + [Verbind uw gegevensbronnen met Cloud Service](/help/forms/data-integration.md)
          + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
@@ -583,20 +584,19 @@ ht-degree: 20%
    + Adaptieve Forms {#adaptive-forms-authoring}
       + [Een adaptief formulier maken](/help/forms/create-an-adaptive-form.md)
       + [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-      + Adaptieve Forms ontwerpen - Core-componenten {#authoring-adaptive-forms-core-components}
+      + Kernonderdelen {#authoring-adaptive-forms-core-components}
          + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
             + [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
             + [Een adaptief formulierfragment maken](/help/forms/adaptive-form-fragments-core-components.md)
             + [Thema&#39;s maken voor een adaptief formulier - Core Components](/help/forms/using-themes-in-core-components.md)
             + [Document met record genereren voor adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)
-            + [Een adaptieve Forms - Core Components maken op een AEM Sites-pagina](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Een adaptief formulier vertalen met behulp van automatische vertaling of menselijke vertaling](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Pagina omleiden of bedankbericht configureren](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Formulieren maken met herhaalbare secties](/help/forms/create-forms-repeatable-sections.md)
             + [Handeling verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-actions-core-components.md)
             + [Google reCAPTCHA gebruiken in een adaptief formulier](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Aangepaste fouthandler toevoegen in een adaptief formulier](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-      + Aangepaste Forms ontwerpen - Elementaire componenten {#authoring-adaptive-forms-foundation-components}
+      + Elementaire componenten {#authoring-adaptive-forms-foundation-components}
          + Uw PDF forms converteren naar Adaptieve Forms {#afcs}
             + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
             + [Een bestaand PDF-formulier converteren naar een adaptief formulier](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
