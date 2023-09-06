@@ -4,9 +4,9 @@ description: Leer hoe u een adaptief formulier insluit in een externe webpagina
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -99,14 +99,12 @@ Het adaptieve formulier insluiten:
 
 Het adaptieve formulier is ingesloten in de webpagina. Bekijk het volgende in het ingesloten adaptieve formulier:
 
-* Koptekst en voettekst in het oorspronkelijke adaptieve formulier worden niet opgenomen in het ingesloten formulier.
 * Concepten en verzonden formulieren zijn beschikbaar op het tabblad Concepten en verzendingen in de Forms Portal.
 * Verzendactie die is geconfigureerd op het oorspronkelijke adaptieve formulier, blijft behouden in het ingesloten formulier.
 * Aangepaste formulierregels blijven behouden en werken volledig in het ingesloten formulier.
 * De in het oorspronkelijke adaptieve formulier geconfigureerde ervaringstips en A/B-tests werken niet in het ingesloten formulier.
 * Als Adobe Analytics op het oorspronkelijke formulier is geconfigureerd, worden de analysegegevens vastgelegd op de Adobe Analytics-server. Het is echter niet beschikbaar in het analyserapport van Forms.
-
-In Adaptive Forms op basis van Core Components worden de clientbibliotheken (ClientLibs) samen met de componenten Koptekst en Voettekst van een formulier opgenomen en geladen. Als u dus een adaptieve Forms op basis van kerncomponenten insluit in een webpagina, bevat deze altijd de koptekst en voettekst van het formulier.
+* In Adaptive Forms op basis van Core Components worden de clientbibliotheken (ClientLibs) samen met de componenten Koptekst en Voettekst van een formulier opgenomen en geladen. Als u dus een adaptieve Forms op basis van kerncomponenten insluit in een webpagina, bevat deze altijd de koptekst en voettekst van het formulier.
 
 ## Voorbeeldtopologie {#sample-topology}
 

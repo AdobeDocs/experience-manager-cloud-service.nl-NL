@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 325769d4a3b93502b0c6857e20911b05df34a24a
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1926'
 ht-degree: 0%
 
 ---
@@ -137,21 +137,23 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[Fout bij afhandeling van aangepaste fouthandlers in de regeleditor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: U kunt nu een aangepaste functie aanroepen als reactie op een fout die door een externe service is geretourneerd, en eindgebruikers een op maat gemaakte reactie geven. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is.
 
+* **[64-bits versie van AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: De 64-bits versie van AEM Forms Designer biedt verbeterde prestaties, schaalbaarheid en geheugenbeheer, zodat u meer mogelijkheden hebt om formulieren te maken. Met de 64-bits architectuur kunt u nog grotere en complexere projecten eenvoudig aanpakken, zodat u kunt zorgen voor naadloze ontwerpworkflows en geoptimaliseerde efficiëntie. Verhoog uw mogelijkheden voor formulierontwerp en omarm de toekomst van AEM Forms Designer met deze geavanceerde release.
+
 
 ### Programma voor vroegtijdige adoptie {#forms-early-adopter}
 
 * **[Protect uw documenten met DocAssurance-API&#39;s (onderdeel van communicatie-API&#39;s)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: De DocAssurance-API&#39;s geven u de bevoegdheid om vertrouwelijke informatie te beveiligen door de documenten te ondertekenen en te versleutelen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
 
-U kunt de Steun van de Adobe verbinden om zich bij het vroege adopterprogramma voor DocAssurance APIs aan te sluiten.
+  U kunt de Steun van de Adobe verbinden om zich bij het vroege adopterprogramma voor DocAssurance APIs aan te sluiten.
 
-**Forms zonder hoofdadapter**: Gebruik [Forms zonder hoofdadapter](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) om uw ontwikkelaars in staat te stellen om interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden benaderd en waarmee interactie mogelijk is, in plaats van via een traditionele grafische gebruikersinterface. Met behulp van hoofdloze adaptieve formulieren kunt u:
+* **[Forms zonder hoofdadapter](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**: Gebruik Headless Adaptive Forms om uw ontwikkelaars in staat te stellen interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden geopend en gebruikt in plaats van via een traditionele grafische gebruikersinterface. Met behulp van hoofdloze adaptieve formulieren kunt u:
 
-* multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
-* U kunt zelf formulieren integreren in uw bureaublad en mobiele apps, websites en chattoepassingen
-* gebruik uw eigen UI-componenten opnieuw met formuliertoepassingen
-* de kracht van Adobe Experience Manager Forms gebruiken
+   * multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
+   * U kunt zelf formulieren integreren in uw bureaublad en mobiele apps, websites en chattoepassingen
+   * gebruik uw eigen UI-componenten opnieuw met formuliertoepassingen
+   * de kracht van Adobe Experience Manager Forms gebruiken
 
-U kunt een e-mail verzenden naar `aem-forms-headless@adobe.com` van uw officiële e-mailadres om deel te nemen aan het vroege adoptieprogramma.
+  U kunt een e-mail verzenden naar `aem-forms-headless@adobe.com` van uw officiële e-mailadres om deel te nemen aan het vroege adoptieprogramma.
 
 
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
