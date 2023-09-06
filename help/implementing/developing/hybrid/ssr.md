@@ -2,9 +2,9 @@
 title: SPA en rendering op de server
 description: Door SSR (Server-Side Rendering) in uw SPA te gebruiken, kunt u de eerste laadbewerking van de pagina versnellen en vervolgens verdere rendering aan de client doorgeven.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Toepassingen op één pagina (SPA) kunnen de gebruiker een rijke, dynamische ervaring bieden die op vertrouwde manieren reageert en zich gedraagt, vaak net als een native toepassing. [Deze functionaliteit wordt bereikt door op de client te vertrouwen om de inhoud vóór te laden en vervolgens de interactie van de gebruiker zwaar op te heffen](introduction.md#how-does-a-spa-work). Dit proces minimaliseert de hoeveelheid communicatie die nodig is tussen de client en de server, waardoor de app reactiever wordt.
 
-Dit proces kan echter leiden tot langere openingstijden, vooral als de SPA groot en rijk is aan inhoud. Om de laadtijden te optimaliseren, kan een deel van de inhoud op de server worden gerenderd. Met SSR (Server-Side Rendering) kunt u de eerste belasting van de pagina versnellen en vervolgens verdere rendering doorgeven aan de client.
+Dit proces kan echter leiden tot langere openingstijden, vooral als de SPA groot en rijk is aan inhoud. Om de laadtijden te optimaliseren, kan een deel van de inhoud op de server worden weergegeven. Met SSR (Server-Side Rendering) kunt u de eerste belasting van de pagina versnellen en vervolgens verdere rendering doorgeven aan de client.
 
 ## Wanneer gebruikt u SSR {#when-to-use-ssr}
 
-SSR is niet vereist voor alle projecten. Hoewel AEM volledig JS SSR voor SPA steunt, adviseert Adobe niet het systematisch voor elk project uit te voeren.
+SSR is niet vereist voor alle projecten. Hoewel AEM volledig JS SSR voor SPA steunt, beveelt de Adobe niet aan het systematisch voor elk project uit te voeren.
 
 Wanneer u besluit SSR te implementeren, moet u eerst inschatten welke extra complexiteit, inspanning en kosten het toevoegen van SSR realistisch vertegenwoordigt voor het project, inclusief het langetermijnonderhoud. Een SSR-architectuur mag alleen worden gekozen wanneer de toegevoegde waarde duidelijk hoger is dan de geraamde kosten.
 
@@ -26,11 +26,11 @@ SSR verstrekt gewoonlijk één of andere waarde wanneer er duidelijk &quot;ja&qu
 * **SEO:** Is SSR nog vereist voor uw plaats om behoorlijk door de onderzoeksmotoren worden geïndexeerd die verkeer brengen? Vergeet niet dat de zoekmachine die als hoofdopzoekprogramma wordt gebruikt nu JS evalueert.
 * **Paginasnelheid:** Biedt SSR een meetbare snelheidsverbetering in levensechte omgevingen en vergroot de algehele gebruikerservaring?
 
-Slechts wanneer minstens één van deze twee vragen met duidelijk &quot;ja&quot;voor uw project wordt beantwoord adviseert Adobe het uitvoeren van SSR. In de volgende secties wordt beschreven hoe u dit kunt doen met Adobe I/O Runtime, onderdeel van [App Builder](https://developer.adobe.com/app-builder).
+Slechts wanneer minstens één van deze twee vragen met duidelijk &quot;ja&quot;voor uw project wordt beantwoord adviseert de Adobe het uitvoeren van SSR. In de volgende secties wordt beschreven hoe u dit kunt doen met Adobe I/O Runtime, onderdeel van [App Builder](https://developer.adobe.com/app-builder).
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
-Als u [vertrouwen erop dat uw project de implementatie van SSR vereist](#when-to-use-ssr), Adobe aanbevolen voor gebruik door Adobe I/O Runtime.
+Als u [vertrouwen erop dat uw project de implementatie van SSR vereist](#when-to-use-ssr)De aanbevolen oplossing van Adobe is het gebruik van Adobe I/O Runtime.
 
 Raadpleeg de volgende secties voor meer informatie over Adobe I/O Runtime:
 
@@ -49,9 +49,13 @@ In de volgende secties wordt beschreven hoe Adobe I/O Runtime kan worden gebruik
 >
 >Er is geen aparte werkruimte nodig per instantie (auteur, publiceren), tenzij er verschillen zijn in de runtimplementatie per instantietype.
 
+>[!NOTE]
+>
+>Cloud Manager ondersteunt geen implementatie op Adobe I/O Runtime. Als gevolg hiervan moet uw eigen infrastructuur zijn ingesteld om SSR-code te implementeren in de Adobe I/O Runtime.
+
 ## Configuratie van externe renderer {#remote-content-renderer-configuration}
 
-AEM moet weten waar de extern gerenderde inhoud kan worden opgehaald. Ongeacht of [welk model u verkiest om voor SSR uit te voeren,](#adobe-i-o-runtime) u moet opgeven hoe u toegang kunt krijgen tot deze externe renderingsservice.
+AEM moet weten waar de extern gerenderde inhoud kan worden opgehaald. Ongeacht [welk model u verkiest om voor SSR uit te voeren,](#adobe-i-o-runtime) u moet opgeven hoe u toegang kunt krijgen tot deze externe renderingsservice.
 
 Deze service wordt uitgevoerd via de **RemoteContentRenderer - Configuratie in fabriek OSGi-service**. Zoek naar het koord &quot;RemoteContentRenderer&quot;in de console van de Configuratie van de Console van het Web bij `http://<host>:<port>/system/console/configMgr`.
 
@@ -72,7 +76,7 @@ De volgende velden zijn beschikbaar voor de configuratie:
 
 >[!NOTE]
 >
->Deze configuratie gebruikt [Renderer voor externe inhoud,](#remote-content-renderer) waarvoor aanvullende opties voor extensie en aanpassing beschikbaar zijn.
+>Deze configuratie gebruikt de [Renderer voor externe inhoud,](#remote-content-renderer) waarvoor aanvullende opties voor extensie en aanpassing beschikbaar zijn.
 
 ## AEM-gestuurde communicatiestroom {#aem-driven-communication-flow}
 
@@ -116,7 +120,7 @@ Beide modellen zijn geldig en worden ondersteund door AEM. Men moet echter eerst
    <th><strong>via Adobe I/O Runtime<br /> </strong></th>
    <td>
     <ul>
-     <li>Meer bekend bij SPA ontwikkelaars<br /> </li>
+     <li>SPA ontwikkelaars meer bekend<br /> </li>
     </ul> </td>
    <td>
     <ul>
@@ -130,7 +134,7 @@ Beide modellen zijn geldig en worden ondersteund door AEM. Men moet echter eerst
 
 ## Planning voor SSR {#planning-for-ssr}
 
-Over het algemeen moet slechts een deel van een toepassing op de server worden gerenderd. Het algemene voorbeeld is de inhoud die boven de voud wordt weergegeven bij de eerste keer dat de pagina wordt geladen, wordt weergegeven op de server. Dit proces bespaart tijd door aan de cliënt, reeds teruggegeven inhoud te leveren. Terwijl de gebruiker met de SPA communiceert, wordt de extra inhoud door de client gerenderd.
+Over het algemeen moet slechts een deel van een toepassing op de server worden weergegeven. Het algemene voorbeeld is de inhoud die boven de voud wordt weergegeven bij de eerste keer dat de pagina wordt geladen, wordt weergegeven op de server. Dit proces bespaart tijd door aan de cliënt, reeds teruggegeven inhoud te leveren. Terwijl de gebruiker met de SPA communiceert, wordt de extra inhoud door de client gerenderd.
 
 Wanneer u rendering op de server wilt implementeren voor uw SPA, moet u controleren welke delen van de app u nodig hebt.
 
@@ -144,7 +148,7 @@ Als u SSR wilt gebruiken, moet u de code in AEM en op Adobe I/O Runtime implemen
 
 SSR voor SPA in AEM vereist Adobe I/O Runtime, dat wordt opgeroepen voor het renderen van de zijde van de toepassingsinhoudsserver. Binnen de HTML van de app wordt een resource op Adobe I/O Runtime aangeroepen om de inhoud te renderen.
 
-Net zoals AEM de Angular- en Reactie-SPA-frameworks buiten de box ondersteunt, wordt rendering op de server ook ondersteund voor Angular- en React-apps. Zie de NPM documentatie voor beide kaders voor verdere details.
+Net zoals AEM de Angular- en Reactie-SPA-frameworks buiten de box ondersteunt, wordt rendering op de server ook ondersteund voor Angular- en Reactie-apps. Zie de NPM documentatie voor beide kaders voor verdere details.
 
 ## Renderer voor externe inhoud {#remote-content-renderer}
 
