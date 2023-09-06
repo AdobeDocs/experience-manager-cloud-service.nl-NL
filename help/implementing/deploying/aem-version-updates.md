@@ -3,7 +3,7 @@ title: Versie-updates AEM
 description: Leer hoe AEM as a Cloud Service ononderbroken integratie en levering (CI/CD) gebruikt om uw projecten op de recentste versie te houden.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: ca91e969014415e872ecf8e42fe86ffc9ca41e10
+source-git-commit: 7cdbda468221c42325a957131c6817c9f85a574a
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Er zijn twee typen AEM versie-updates:
 
 ## Update mislukt {#update-failure}
 
-AEM updates doorlopen een intensieve en volledig geautomatiseerde productvalideringspijplijn met meerdere stappen, zodat de service voor alle systemen in productie niet wordt onderbroken. Gezondheidscontroles worden gebruikt om de gezondheid van de toepassing te controleren. Als deze controles tijdens een AEM as a Cloud Service update ontbreken, zal de versie niet te werk gaan, en Adobe zal onderzoeken waarom de update dit onverwachte gedrag veroorzaakte.
+AEM updates doorlopen een intensieve en volledig geautomatiseerde productvalideringspijplijn met meerdere stappen, zodat de service voor alle systemen in productie niet wordt onderbroken. Gezondheidscontroles worden gebruikt om de gezondheid van de toepassing te controleren. Als deze controles tijdens een AEM as a Cloud Service update ontbreken, zal de versie niet te werk gaan, en de Adobe zal onderzoeken waarom de update dit onverwachte gedrag veroorzaakte.
 
 Wanneer u een nieuwe versie van een douanecode van op uw milieu&#39;s opstelt, [Product- en aangepaste functionele tests](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) een cruciale rol spelen bij het waarborgen dat de productiesystemen stabiel en functioneel blijven, ook na een wijziging. Deze tests worden ook gebruikt in het updateproces van de Versie van de AEM.
 
@@ -55,28 +55,22 @@ Op dezelfde manier als een geautomatiseerde update van een ontwikkelomgeving ont
 
 ## Best practices voor {#best-practices}
 
-* 
-   * **Gebruik van Stage-omgeving**
-   * Gebruik een andere omgeving (geen werkgebied) voor lange QA/UAT-cycli.
-   * Nadat het testen van de hygiëne in het werkgebied is voltooid, gaat u naar Verifiëren bij Productie.
+* **Gebruik van Stage-omgeving**
+* Gebruik een andere omgeving (geen werkgebied) voor lange QA/UAT-cycli.
+* Nadat het testen van de hygiëne in het werkgebied is voltooid, gaat u naar Verifiëren bij Productie.
 
-* 
-   * **Productiepijpleiding**
-   * Pauze voordat u gaat implementeren naar productie.
-   * Als u de pijplijn annuleert nadat een werkgebied is geïmplementeerd, geeft u aan dat de code &quot;een baan&quot; is en geen geldige kandidaat voor productie. Raadpleeg [Een productiepijpleiding configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+* **Productiepijpleiding**
+* Pauze voordat u gaat implementeren naar productie.
+* Als u de pijplijn annuleert nadat een werkgebied is geïmplementeerd, geeft u aan dat de code &quot;een baan&quot; is en geen geldige kandidaat voor productie. Raadpleeg [Een productiepijpleiding configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
-* 
-   * **Niet-productiepijpleiding**
+* **Niet-productiepijpleiding**
 * Configureren [Niet-productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-* 
-   * Versnelt leversnelheid/frequentie voor mislukte productiepijplijnen.  Identificeer kwesties in niet-prod pijpleidingen door het Functionele Testen van het Product, het Eigen Functionele Testen van de Douane en het Testen van de UI van de Douane toe te laten.
+* Versnelt leversnelheid/frequentie voor mislukte productiepijplijnen.  Identificeer kwesties in niet-prod pijpleidingen door het Functionele Testen van het Product, het Eigen Functionele Testen van de Douane en het Testen van de UI van de Douane toe te laten.
 
-* 
-   * **Inhoud kopiëren**
-   * Gebruiken [Inhoud kopiëren](/help/implementing/developing/tools/content-copy.md) om vergelijkbare inhoudssets te verplaatsen naar een niet-prodomgeving.
+* **Inhoud kopiëren**
+* Gebruiken [Inhoud kopiëren](/help/implementing/developing/tools/content-copy.md) om vergelijkbare inhoudssets te verplaatsen naar een niet-prodomgeving.
 
-* 
-   * **Geautomatiseerde functionele tests**
+* **Geautomatiseerde functionele tests**
 * Neem automatisch tests op in uw pijplijn om kritieke functionaliteit te testen.
 * [Functionele tests van de klant](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) en [Aangepaste UI-tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) blokkeren, als ze er niet in slagen AEM de release uit te voeren.
 
