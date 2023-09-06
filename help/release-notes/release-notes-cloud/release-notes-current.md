@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e75c957e8e791ed991117f5cd54012c3a24a2958
+source-git-commit: 555873b15e3a748c95893a371925d3ab6e87ae67
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1934'
 ht-degree: 0%
 
 ---
@@ -144,9 +144,8 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[Protect uw documenten met DocAssurance-API&#39;s (onderdeel van communicatie-API&#39;s)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: De DocAssurance-API&#39;s stellen u in staat gevoelige informatie te beveiligen door de documenten te ondertekenen en te versleutelen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
 
-  <br> U kunt een e-mailbericht verzenden van uw officiële e-mailadres naar `aem-forms-early-adopter-program@adobe.com`  zich aan te sluiten bij het programma voor vroegtijdige adoptie en toegang te vragen tot het vermogen.  <br>  <br>
-
-
+      U kunt schrijven naar &quot;aem-forms-early-adopter-program@adobe.com&quot;van uw officiële e-mailidentiteitskaart om zich bij het vroege adopterprogramma aan te sluiten en toegang tot het vermogen te verzoeken.
+  
 * **[Forms zonder hoofdadapter](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**: Gebruik Headless Adaptive Forms om uw ontwikkelaars in staat te stellen interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden geopend en gebruikt in plaats van via een traditionele grafische gebruikersinterface. Met behulp van hoofdloze adaptieve formulieren kunt u:
 
    * multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
