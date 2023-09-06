@@ -2,9 +2,9 @@
 title: Post Go-Live
 description: Leer hoe u op problemen kunt controleren en de prestaties kunt verbeteren
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
+source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '483'
 ht-degree: 9%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 9%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Logbestanden openen en beheren"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="as a Cloud Service ontwikkelingsinstrumenten AEM"
 
-Deze reis is het laatste deel, zodat zult u leren hoe te om op kwesties te controleren en prestaties te verbeteren zodra de migratie volledig is. U moet ervoor zorgen dat tijdelijke bestanden worden opgeschoond, best practices voor continue ontwikkeling controleren en logbestanden beheren.
+Deze reis is het laatste deel, zodat zult u leren hoe te om op kwesties te controleren en prestaties te verbeteren nadat de migratie volledig is. U moet ervoor zorgen dat tijdelijke bestanden worden opgeschoond, best practices voor continue ontwikkeling controleren en logbestanden beheren.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -51,7 +51,7 @@ Zie [Ontwikkelen met CRXDE Lite](/help/implementing/developing/tools/crxde.md) v
 
 Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
 
-Zie [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie over het openen en beheren van logbestanden via de gebruikersinterface of via de API via Cloud Manager.
+Zie [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie over het openen en beheren van logbestanden via de gebruikersinterface of de API via Cloud Manager.
 
 ## Contact opnemen met ondersteuning {#contacting-support}
 
