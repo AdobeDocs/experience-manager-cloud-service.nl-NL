@@ -1,19 +1,18 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2023.8.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.8.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2023.9.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.9.0 in AEM as a Cloud Service.
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
+source-git-commit: dd52aef2f88cf64e8d9a32b1c8cafe4fcfbcb812
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2023.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2023.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release 2023.8.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
+Op deze pagina worden de opmerkingen bij de release 2023.9.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
 
 >[!NOTE]
 >
@@ -21,12 +20,11 @@ Op deze pagina worden de opmerkingen bij de release 2023.8.0 van Cloud Manager i
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2023.8.0 in AEM as a Cloud Service is 10 augustus 2023. De volgende release is gepland voor 7 september 2023.
+De releasedatum voor Cloud Manager versie 2023.9.0 in AEM as a Cloud Service is 7 september 2023. De volgende release is gepland voor 5 oktober 2023.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Wanneer u inhoud configureert die is ingesteld op [inhoud kopiëren,](/help/implementing/developing/tools/content-copy.md) [contextbewuste configuraties](/help/implementing/developing/introduction/configurations.md) zijn nu toegestaan in inhoudssets in de gebruikersinterface.
-* Er zijn verbeteringen aangebracht om de begrijpelijkheid en het omgaan met foutberichten in de gebruikersinterface van Cloud Manager te verbeteren.
+Deze release is gericht op opgeloste problemen.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
@@ -55,12 +53,6 @@ Geïnteresseerd in het testen van het nieuwe dashboard? Stuur een e-mail naar `a
 
 ## Opgeloste problemen {#bug-fixes}
 
-* De **Omgevingen** wordt nu gesloten na het activeren van de **[Inhoud kopiëren](/help/implementing/developing/tools/content-copy.md)** modal.
-* [Een wederuitvoering van de pijpleiding](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) is niet meer toegestaan als de vorige uitvoering geen `commitId` reeks op de bouwstijlstaat.
-* Een begrijpelijker bericht wordt nu getoond voor zeldzame fouten wanneer een gebruiker op een pijpleiding in klikt **Activiteit** of **Pijpleiding** schermen.
-* De `contentSetName` de waarde ontbreekt niet meer in logbestanden en wordt nu in de invoer opgegeven wanneer een [inhoudskopie](/help/implementing/developing/tools/content-copy.md) -bewerking.
-* Het is in bepaalde zeldzame omstandigheden niet langer mogelijk om twee executies te starten vanaf dezelfde pijpleiding die tot een &quot;vastgelopen&quot; staat leiden.
-* Wanneer een certificaat verloopt, worden de domeinnamen en IP allow-lists verbonden aan het certificaat niet meer verwijderd uit CDN.
-   * In dergelijke gevallen, zal de plaats bereikbaar blijven.
-   * [De interface van Cloud Manager](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) geeft meer zichtbare voorafgaande waarschuwingen dat het SSL-certificaat op het punt staat te verlopen.
-* Een probleem met AEM het verliezen van toegang tot te publiceren eindpunt werd bevestigd in situaties wanneer de Plaatsen als oplossing aan een activa-slechts programma worden toegevoegd.
+* Wanneer een programma wordt geschrapt, wordt om het even welke bijbehorende, lopende pijpleiding ook geschrapt, die ervoor zorgen dat de pijpleiding niet verkeerd als ontbroken status wordt aangewezen.
+* Af en toe, wanneer alle stappen van een pijpleidingsuitvoering &quot;voltooid&quot;zijn, wordt de status van de pijpleiding beschouwd als &quot;lopend&quot;, die het schijnen in een vastgelopen staat te zijn. Het wordt nu beschouwd als een &#39;complete&#39;.
+* Voor bewaarplaatsaftakkingen die gebruikend het archetype van de codegenerator worden geproduceerd, ontbreekt de pijpleiding van CI/CD.
