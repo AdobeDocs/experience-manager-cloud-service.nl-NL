@@ -1,37 +1,30 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.07.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2022.07.0
+title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.09.0
+description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2022.09.0
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
+source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 1%
+source-wordcount: '150'
+ht-degree: 3%
 
 ---
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.07.0 {#release-notes}
+# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.09.0 {#release-notes}
 
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.07.0.
+Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.09.0.
 
-## Analysator van best practices {#bpa-release}
+## De tool Content Transfer {#ctt-release}
 
-### Releasedatum {#release-date-bpa}
+### Releasedatum {#release-date-ctt}
 
-De releasedatum voor de analyse van best practices v2.1.42 is 6 juli 2023.
+De releasedatum voor Content Transfer Tool v3.0.0 is 7 september 2023.
 
-### Wat is er nieuw? {#what-is-new-bpa}
+### Wat is er nieuw? {#what-is-new-ctt}
 
-* Er zijn meerdere best practices-patronen toegevoegd aan deze versie van de Best Practices Analyzer. Deze omvatten:
-   * Configuratie van minimale onderhoudstaken identificeren
-   * Langlopende/zware query&#39;s detecteren
-   * Een groot aantal workflows voor auteurs detecteren in de status actief of geschaald
-   * Configuratie van OSGI Apache-slingertaken detecteren
-   * Aangepaste guave-caches detecteren
+Het gereedschap Inhoud overbrengen is aanzienlijk verbeterd en biedt de volgende voordelen:
+* Minder overdrachtstijd bij het migreren van een subset van een opslagplaats voor inhoud door AzCopy te gebruiken om alleen de vereiste blob-id&#39;s te kopiëren in plaats van alle blob-id&#39;s te kopiëren
+* Snellere differentiële inhoudverhogingen gebruikend eiken-verbetering
+* Verbeterde robuustheid door het indexeringsproces te scheiden van het innameproces van de inhoud. Als de indexering mislukt, hoeft de inhoud niet opnieuw te worden ingevoerd. Alleen indexering wordt automatisch opnieuw gestart en bespaart aanzienlijke tijd en moeite
 
-### Opgeloste problemen {#bug-fixes-bpa}
-
-* BPA werd verbeterd om te voorkomen dat het genereren van rapporten met een hoog aantal bevindingen mislukte vanwege het genereren van rapporten vanwege onvoldoende geheugen.
-* BPA is verbeterd op het detecteren van escapetekens in paden om mislukte inname van inhoud te voorkomen wanneer migratieinhoud AEM as a Cloud Service.
 
 
