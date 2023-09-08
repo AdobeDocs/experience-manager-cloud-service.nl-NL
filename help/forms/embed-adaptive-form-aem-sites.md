@@ -5,9 +5,9 @@ description: Met de component Adaptive Forms - Embed kunt u Adaptive Forms inslu
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
 workflow-type: tm+mt
-source-wordcount: '2947'
+source-wordcount: '2966'
 ht-degree: 0%
 
 ---
@@ -259,6 +259,11 @@ U kunt de geavanceerde instellingen van het dialoogvenster **[!UICONTROL Adaptiv
 * **Paginataal gebruiken**: Gebruik de landinstelling van de AEM Sites-pagina in plaats van Adaptief formulier. Deze optie is alleen van toepassing voor Adaptief formulier (Foundation).
 * **Focus op formulier instellen**: Selecteer deze optie om de focus in te stellen op het eerste veld van het adaptieve formulier. Deze optie is alleen van toepassing voor Adaptief formulier (Foundation).
 * **Thema**: Selecteer een thema waarmee u opmaak definieert voor componenten van uw adaptieve formulier. Stijlen omvat vormgevingseigenschappen zoals letterstijl, achtergrondkleur, afmetingen en uitlijning. Deze optie is alleen van toepassing voor Adaptief formulier (Foundation).
+
+  >[!NOTE]
+  >
+  > U kunt de **Paginataal gebruiken**, **Focus op formulier instellen** en **Thema** alleen opties voor Adaptief formulier (Foundation).
+
 * **Het formulier bedekt de volledige breedte van het kader**: Een inline-frame (iframe) is een HTML-element dat een adaptief formulier laadt naar een AEM Sites-pagina.
 
    * Als de **[!UICONTROL Form covers entire width of the frame]** Als deze optie is ingeschakeld, neemt een adaptief formulier de volledige breedte in van de container waarin het is geplaatst. In dit geval wordt geen iframe gebruikt om het formulier te genereren. De indeling en het ontwerp van een adaptief formulier worden aangepast om de volledige breedte van de container te omspannen, zodat de container reageert en kan worden aangepast aan verschillende schermgrootten. Met deze optie kunt u meerdere Adaptieve Forms insluiten in een AEM Sites-pagina.

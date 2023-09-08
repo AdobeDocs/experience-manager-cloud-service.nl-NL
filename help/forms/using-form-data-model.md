@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -146,3 +146,26 @@ Bijvoorbeeld, haalt de volgende regel de dienst aan die Werknemeridentiteitskaar
 ![oproepdienst](assets/invoke-service.png)
 
 Daarnaast kunt u de opdracht `guidelib.dataIntegrationUtils.executeOperation` API om een JavaScript in de coderedacteur voor de regelredacteur te schrijven. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+
+### Een formuliergegevensmodel aanroepen met behulp van aangepaste functies {#invoke-form-data-model-using-custom-functions}
+
+U kunt [een formuliergegevensmodel aanroepen vanuit een regeleditor met behulp van aangepaste functies](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Als u het gegevensmodel van het formulier wilt aanroepen, voegt u een formuliergegevensmodel toe aan de lijst van gewenste personen. Een formuliergegevensmodel toevoegen aan een toegestane lijst:
+
+1. Ga naar Experience Manager webconsole op `https://server:host/system/console/configMgr`.
+1. Zoeken **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]**.
+1. Klikken ![pluspictogram](/help/forms/assets/Smock_Add_18_N.svg) pictogram om de configuratie toe te voegen.
+1. Toevoegen **[!UICONTROL Content path pattern]** om de locatie van uw Adaptieve Forms op te geven.  De standaardwaarde is `/content/forms/af/(.*)` die alle adaptieve Forms omvat. U kunt ook het pad opgeven voor een specifiek adaptief formulier.
+1. Toevoegen **[!UICONTROL Form Data Model path pattern]** om de locatie van het formuliergegevensmodel op te geven. De standaardwaarde is `/content/dams/formsanddocuments-fdm/(.*)` Dit omvat het gegevensmodel van het formulier. U kunt ook het pad opgeven voor een specifiek formuliergegevensmodel.
+1. Sla de instellingen op.
+
+De toegevoegde configuratie wordt opgeslagen onder de **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]** -optie.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
+
+>[!NOTE]
+>
+> Om een model van vormgegevens van de regelredacteur aan te halen gebruikend douanefuncties door een AEM archetype project:
+>
+>1. [Een configuratiebestand maken](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. Stel eigenschappen van getContentPathPattern en getFormDataModelPathPattern in.
+>1. Implementeer het project.
