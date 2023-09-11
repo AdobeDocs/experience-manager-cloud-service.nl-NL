@@ -1,31 +1,30 @@
 ---
-title: Het vormen CDN en de Regels van WAF aan het Verkeer van de Filter
-description: Gebruik CDN en de Regels van de Firewall van de Toepassing van het Web om Kwaadwillig Verkeer te filtreren
-source-git-commit: 27165ce7d6259f5b5fc9915349d87f551076389e
+title: Het vormen de Regels van de Filter van het Verkeer (met de Regels van WAF)
+description: De Regels van de Filter van het Verkeer van het Gebruik (met de Regels van WAF) aan het Verkeer van de Filter
+source-git-commit: dc0c7e77bb4bc5423040364202ecac3c59adced0
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2690'
 ht-degree: 0%
 
 ---
 
 
-# Het vormen CDN en de Regels van WAF aan het Verkeer van de Filter {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# Het vormen van de Regels van de Filter van het Verkeer (met de Regels van WAF) aan het Verkeer van de Filter {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
 >Deze functie is nog niet algemeen beschikbaar. E-mail voor deelname aan het lopende programma voor vroegtijdige adoptie **aemcs-waf-adopter@adobe.com**, inclusief de naam van uw organisatie en context over uw interesse in de functie.
 
-De Adobe probeert om aanvallen tegen klantenwebsites te verlichten, maar het kan nuttig zijn om verzoeken proactively te filtreren die bepaalde patronen aanpassen zodat het kwaadwillige verkeer uw toepassing niet bereikt. Mogelijke benaderingen zijn:
+De Adobe probeert om aanvallen tegen klantenwebsites te verlichten, maar het kan nuttig zijn om verkeer pro-actief te filtreren die bepaalde patronen aanpassen zodat het kwaadwillige verkeer uw toepassing niet bereikt. Mogelijke benaderingen zijn:
 
 * Apache-laagmodules zoals `mod_security`
-* Het vormen regels die aan CDN via de configuratiepijplijn van de Manager van de Wolk worden opgesteld.
+* Het vormen de regels van de verkeersfilter die aan CDN via de configuratiepijplijn van de Manager van de Wolk worden opgesteld
 
-In dit artikel wordt de laatste aanpak beschreven, die twee categorieën regels omvat:
+Dit artikel beschrijft de benadering van de regels van de verkeersfilter. De meeste van deze regels blokkeren of staan verzoeken toe die op verzoekeigenschappen en verzoekkopballen, met inbegrip van IP, wegen, en gebruikersagent worden gebaseerd. Deze regels kunnen door alle AEM as a Cloud Service Plaatsen en klanten van Forms worden gevormd.
 
-1. **CDN-regels**: blok of sta verzoeken toe die op verzoekeigenschappen en verzoekkopballen, met inbegrip van IP, wegen, en gebruikersagent worden gebaseerd. Deze regels kunnen door alle AEM as a Cloud Service klanten worden gevormd
-1. **WAF** (De Firewall van de Toepassing van het Web) regels: blokverzoeken die diverse patronen aanpassen die om met kwaadwillig verkeer worden gekend worden geassocieerd. Deze regels kunnen worden gevormd door klanten die WAF toe:voegen-op vergunning geven; contacteer uw de rekeningsteam van de Adobe voor details. Let op: er is geen extra licentie vereist tijdens het programma voor vroege adoptie.
+De klanten die van WAF (de Firewall van de Toepassing van het Web) toe:voegen-op vergunning geven kunnen een extra categorie van regels ook vormen genoemd &quot;de regels van de het verkeersfilter van WAF&quot; (of de regels van WAF voor kort). Deze regels van WAF blokkeren verzoeken die diverse patronen aanpassen gekend om met kwaadwillig verkeer worden geassocieerd. Neem contact op met het accountteam van de Adobe voor meer informatie over het verlenen van licenties voor deze toekomstige mogelijkheid. Let op: er is geen extra licentie vereist tijdens het programma voor vroege adoptie.
 
-Deze regels kunnen worden toegepast om omgevingstypen voor werkruimten, werkruimten en prod-wolken te ontwikkelen, voor productieprogramma&#39;s (niet-sandbox). Ondersteuning voor RDE-omgevingen zal in de toekomst beschikbaar zijn.
+De filterregels van het verkeer kunnen aan alle types van het wolkenmilieu (RDE, dev, stadium, prod) in productie (niet zandbak) programma&#39;s worden opgesteld.
 
 ## Instellen {#setup}
 
@@ -35,20 +34,26 @@ Deze regels kunnen worden toegepast om omgevingstypen voor werkruimten, werkruim
    config/
         cdn/
            cdn.yaml
-           _config.yaml
    ```
 
-1. `_config.yaml` beschrijft sommige meta-gegevens over de configuratie. De &quot;kind&quot;parameter zou aan &quot;CDN&quot;moeten worden geplaatst en de versie zou aan de schemaversie moeten worden geplaatst, die momenteel &quot;1&quot;is. Zie het onderstaande fragment:
+1. `cdn.yaml` moeten metagegevens en een lijst met verkeersfilterregels en WAF-regels bevatten.
 
    ```
    kind: "CDN"
    version: "1"
+   envType: "dev"
+   data:
+     trafficFilters:
+       rules:
+         ...
    ```
 
-   <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+De &quot;kind&quot;parameter zou aan &quot;CDN&quot;moeten worden geplaatst en de versie zou aan de schemaversie moeten worden geplaatst, die momenteel &quot;1&quot;is. Zie onderstaande voorbeelden.
 
-1. `cdn.yaml` moet een lijst met CDN-regels en WAF-regels bevatten, zoals hieronder wordt beschreven
-1. Om de regels van WAF aan te passen, moet WAF in de Manager van de Wolk worden toegelaten, zoals hieronder voor zowel de nieuwe als bestaande programmascenario&#39;s wordt beschreven. Voor WAF moet een aparte vergunning worden aangeschaft.
+
+<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+
+1. Om de regels van WAF te vormen, moet WAF in de Manager van de Wolk worden toegelaten, zoals hieronder voor zowel de nieuwe als bestaande programmascenario&#39;s wordt beschreven. Voor WAF moet een aparte vergunning worden aangeschaft.
 
    1. Om WAF op een nieuw Programma te vormen, controleer **WAF-DDOS-beveiliging** in het dialoogvenster **Beveiliging** zoals hieronder weergegeven. Ga door met het volgen van de stappen beschreven in [Productieprogramma toevoegen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) om uw programma te maken
 
@@ -72,22 +77,47 @@ Deze regels kunnen worden toegepast om omgevingstypen voor werkruimten, werkruim
 
       >[!NOTE]
       >
-      >U kunt slechts één pijpleiding Config per milieu vormen en in werking stellen.
+      > De gebruikers moeten als Manager van de Plaatsing worden het programma geopend om deze pijpleidingen te vormen of in werking te stellen.
+      > Ook, kunt u slechts één pijpleiding Config per milieu vormen en in werking stellen.
 
    1. Selecteren **Opslaan**. Uw nieuwe pijpleiding zal in de pijpleidingskaart verschijnen en kan worden in werking gesteld wanneer u klaar bent.
-   1. Voor RDE, zal de bevellijn worden gebruikt, maar RDE wordt niet gesteund op dit ogenblik.
+   1. Voor RDEs, zal de bevellijn worden gebruikt, maar RDE wordt niet gesteund op dit ogenblik.
 
-## Syntaxis regels {#rules-syntax}
+## Syntaxis verkeersfilterregels {#rules-syntax}
 
-De opmaak van de regels wordt hieronder beschreven, gevolgd door enkele voorbeelden in een volgende sectie.
+U kunt `traffic filter rules` om op patronen zoals IPs, gebruikersagent, verzoekkopballen, hostname, geo, en url aan te passen.
 
-| **Eigenschap** | **CDN-regels** | **WAF-regels** | **Type** | **Standaardwaarde** | **Beschrijving** |
+Klanten die een vergunning geven voor het aanbieden van WAF kunnen ook een speciale categorie regels van de verkeersfilter vormen genoemd `WAF traffic filter rules` (of de regels van de WAF voor kort) die één of meerdere vlaggen van de WAF van verwijzingen voorzien, die in zijn eigen sectie hieronder vermeld zijn.
+
+Hier is een voorbeeld van een reeks regels van de verkeersfilter, die ook een regel van WAF omvat.
+
+```
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: 
+          type: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS]
+```
+
+De indeling van de verkeersfilterregels in het bestand cdn.yaml wordt hieronder beschreven. Zie enkele voorbeelden in een latere sectie.
+
+
+| **Eigenschap** | **De meeste regels van de verkeersfilter** | **Regels voor WAF-verkeersfilters** | **Type** | **Standaardwaarde** | **Beschrijving** |
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | Regelnaam (64 tekens lang, alleen alfanumerieke tekens en -) |
 | wanneer | X | X | `Condition` | - | De basisstructuur is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>Zie Hieronder de syntaxis van de Condition Structure, die de getters, voorspellingen en hoe u meerdere voorwaarden kunt combineren beschrijft. |
-| action | X | X | `Enum` | log (CDN-regels) | Voor CDN-regels: allow, block, log. Standaard is logbestand.<br><br>Voor WAF-regels: `enableWafRules`, `disableWafRules`, log. Geen standaardwaarde. |
+| action | X | X | `Action` | log | log, allow, block, log of action object Default is log |
 | rateLimit | X |   | `RateLimit` | niet gedefinieerd | Snelheidsbeperkende configuratie. Snelheidsbeperking is uitgeschakeld als deze niet is gedefinieerd.<br><br>Hieronder vindt u een aparte sectie waarin de syntaxis rateLimit wordt beschreven, samen met voorbeelden. |
-| wafRules |   | X | `array[Enum]` | - | Lijst met WAF-regels die moeten worden in- of uitgeschakeld.<br><br>Voorbeelden zijn SQLI en XSS. Zie de lijst Regels van de Wafel hieronder voor een volledige lijst. |
 
 ### Voorwaardestructuur {#condition-structure}
 
@@ -113,7 +143,7 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
     - { <getter>: <value>, <predicate>: <value> }
 ```
 
-| **Eigenschap** | **Type** | **Beschrijving** |
+| **Eigenschap** | **Type** | **Betekenis** |
 |---|---|---|
 | **allOf** | `array[Condition]` | **en** -bewerking. true als alle vermelde voorwaarden true retourneren |
 | **anyOf** | `array[Condition]` | **of** -bewerking. true als een van de vermelde voorwaarden true retourneert |
@@ -129,7 +159,7 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 
 **Voorspelend**
 
-| **Eigenschap** | **Type** | **Beschrijving** |
+| **Eigenschap** | **Type** | **Betekenis** |
 |---|---|---|
 | **equals** | `string` | true als het resultaat van de getter gelijk is aan de opgegeven waarde |
 | **doesNotEqual** | `string` | true als het resultaat van de getter niet gelijk is aan de opgegeven waarde |
@@ -140,11 +170,25 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 | **in** | `array[string]` | true als de opgegeven lijst het resultaat getter bevat |
 | **notIn** | `array[string]` | true als de opgegeven lijst geen resultaat voor getter bevat |
 
-**wafRules-lijst**
+### Handelingsstructuur {#action-structure}
 
-De `wafRules` eigenschap kan de volgende regels omvatten:
+Opgegeven door `action` veld dat een tekenreeks kan zijn die het handelingstype opgeeft (toestaan, blokkeren, vastleggen) en standaardwaarden aanneemt voor alle andere opties of een object waarvoor regeltype is gedefinieerd via `type` vereist veld en andere opties die op dat type van toepassing zijn.
 
-| **Regel-id** | **Naam van regel** | **Beschrijving** |
+**Typen handelingen**
+
+De acties worden geprioriteerd volgens hun types in de volgende lijst, die wordt bevolen om op de ordeacties te wijzen wordt uitgevoerd:
+
+| **Naam** | **Toegestane eigenschappen** | **Betekenis** |
+|---|---|---|
+| **toestaan** | `wafFlags` (optioneel) | als wafFlags niet aanwezig is, houdt verdere regelverwerking tegen en gaat aan het dienen van reactie te werk. Als wafFlags aanwezig is, maakt het gespecificeerde bescherming van WAF onbruikbaar en gaat aan verdere regelverwerking te werk. |
+| **blok** | `status, wafFlags` (facultatief en wederzijds exclusief) | als wafFlags niet aanwezig is, retourneert de HTTP-fout waarbij alle andere eigenschappen worden overgeslagen, wordt de foutcode gedefinieerd door de status-eigenschap of is de standaardwaarde 406. Als wafFlags aanwezig is, laat het gespecificeerde bescherming van WAF toe en gaat aan verdere regelverwerking te werk. |
+| **log** | `wafFlags` (optioneel) | registreert het feit dat de regel werd teweeggebracht, anders beïnvloedt niet de verwerking. wafFlags heeft geen effect |
+
+### Lijst met WAF-markeringen {#waf-flags-list}
+
+De `wafFlag` eigenschap kan het volgende omvatten:
+
+| **Markering-id** | **Vlagnaam** | **Beschrijving** |
 |---|---|---|
 | SQLI | SQL-injectie | SQL de Injectie is de poging om toegang tot een toepassing te verkrijgen of bevoorrechte informatie te verkrijgen door willekeurige gegevensbestandvragen uit te voeren. |
 | BACKEUR | Achterkant | Een achterdeursignaal is een verzoek dat probeert te bepalen als een gemeenschappelijk achterdeurdossier op het systeem aanwezig is. |
@@ -181,7 +225,9 @@ De `wafRules` eigenschap kan de volgende regels omvatten:
 
 * Als een regel wordt aangepast en geblokkeerd, reageert CDN met een `406` retourcode.
 
-## Voorbeelden {#examples}
+* De configuratiedossiers zouden geen geheimen moeten bevatten aangezien zij door iedereen leesbaar zouden zijn die toegang tot de git bewaarplaats heeft
+
+## Voorbeelden van regels {#examples}
 
 Hier volgen enkele regelvoorbeelden. Zie de [tarieflimiteringssectie](#rules-with-rate-limits) verder worden uitgewerkt voor voorbeelden van tariefbeperkingen.
 
@@ -190,11 +236,16 @@ Hier volgen enkele regelvoorbeelden. Zie de [tarieflimiteringssectie](#rules-wit
 Deze regel blokkeert verzoeken die van IP 192.168.1.1 komen:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-from-ip"
-      when: { reqProperty: clientIp, equals: "192.168.1.1" }
-      action: block
+  trafficFilters:
+     rules:
+       - name: "block-request-from-ip"
+         when: { reqProperty: clientIp, equals: "192.168.1.1" }
+         action: 
+           type: block
 ```
 
 **Voorbeeld 2**
@@ -202,15 +253,20 @@ data:
 Deze regel blokkeert aanvragen op pad `/helloworld` bij het publiceren met een Gebruiker-Agent die Chrome bevat:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
-      when:
-        allOf:
-          - { reqProperty: path, equals: /helloworld }
-          - { reqProperty: tier, equals: publish }
-          - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-      action: block
+  trafficFilters:
+     rules:
+       - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
+         when: { reqProperty: clientIp, equals: "192.168.1.1" }
+           allOf:
+            - { reqProperty: path, equals: /helloworld }
+            - { reqProperty: tier, equals: publish }
+            - { reqHeader: user-agent, matches: '.*Chrome.*'  }
+           action: 
+             type: block
 ```
 
 **Voorbeeld 3**
@@ -218,14 +274,20 @@ data:
 Deze regel blokkeert verzoeken die de vraagparameter bevatten `foo`, maar staat elk verzoek toe dat van IP 192.168.1.1 komt:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-that-contains-query-parameter-foo"
-      when: { queryParam: url-param, equals: foo }
-      action: block
-    - name: "allow-all-requests-from-ip"
-      when: { reqProperty: clientIp, equals: 192.168.1.1 }
-      action: allow
+  trafficFilters:
+    rules:
+      - name: "block-request-that-contains-query-parameter-foo"
+        when: { queryParam: url-param, equals: foo }
+        action: 
+          type: block
+      - name: "allow-all-requests-from-ip"
+        when: { reqProperty: clientIp, equals: 192.168.1.1 }
+        action: 
+          type: allow
 ```
 
 **Voorbeeld 4**
@@ -233,18 +295,53 @@ data:
 Deze regel blokkeert verzoeken aan weg /block-me, en blokkeert elk verzoek dat een patroon SQLI of XSS aanpast:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "path-rule"
-      when: { reqProperty: path, equals: /block-me }
-      action: block
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: 
+          type: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS]
+```
 
-    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
-      when: { reqProperty: path, like: "*" }
-      action: enableWafRules
-      wafRules:
-        - SQLI
-        - XSS
+**Voorbeeld 4**
+
+Deze regel blokkeert de toegang tot OFAC-landen:
+
+```
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
 ```
 
 ## Regels met tarieflimieten {#rules-with-rate-limits}
@@ -253,7 +350,7 @@ Soms is het wenselijk om verkeer te blokkeren die een regel aanpassen slechts al
 
 ### rateLimit-structuur {#ratelimit-structure}
 
-| **Eigenschap** | **Type** | **Standaardwaarde** | **Beschrijving** |
+| **Eigenschap** | **Type** | **Standaard** | **BETEKENEN** |
 |---|---|---|---|
 | limiet | geheel getal van 10 tot en met 10000 | vereist | Het tarief van het verzoek in verzoeken per seconde waarvoor de regel wordt teweeggebracht |
 | venster | geheel getal: 1, 10 of 60 | 10 | Samplingvenster in seconden waarvoor de aanvraagsnelheid wordt berekend |
@@ -261,49 +358,90 @@ Soms is het wenselijk om verkeer te blokkeren die een regel aanpassen slechts al
 
 ### Voorbeelden {#ratelimiting-examples}
 
-Voorbeeld 1: Wanneer de aanvraagsnelheid in de laatste 60 seconden meer dan 100 verzoeken per seconde bedraagt, blok `/critical/resource` gedurende 60 seconden
+**Voorbeeld 1**
+
+Deze regel blokkeert een client voor 5 m wanneer deze in de laatste 60 sec meer dan 100 req/sec heeft
 
 ```
-- name: rate-limit-example
-  when: { reqProperty: path, equals: /critical/resource }
-  action: block
-  rateLimit: { limit: 100, window: 60, penalty: 60 }
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 60
+        window: 10
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
 ```
 
-Voorbeeld 2: Wanneer het verzoektarief 10 verzoeken per seconde in 10 seconden overschrijdt, blok het middel voor 300 seconden:
+**Voorbeeld 2**
+
+De verzoeken van het blok voor 60s op weg /kritiek/middel wanneer het 100 req/sec in de laatste 60 sec. overschrijdt
 
 ```
-- name: rate-limit-using-defaults
-  when: { reqProperty: path, equals: /critical/resource }
-  action: block
-  rateLimit:
-    limit: 10
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: rate-limit-example
+        when: { reqProperty: path, equals: /critical/resource }
+        action: 
+          type: block
+        rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
 
 ## CDN-logs {#cdn-logs}
 
 AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen van CDN en de regels van WAF nuttig zijn. CDN-logboeken worden weergegeven in Cloud Manager **Logbestanden downloaden** wanneer u de service Auteur of Publiceren selecteert.
 
-De naam van de regel wordt getoond in het regelbezit als het verzoek de regel aanpast, zelfs als de actie &quot;toestaat&quot;is en daarom wordt het verkeer niet geblokkeerd.
+De eigenschap &quot;rules&quot; beschrijft welke regels voor de verkeersfilter worden aangepast en heeft het volgende patroon:
 
-Overeenkomende CDN-regels worden weergegeven in de logbestandvermelding voor alle aanvragen naar de CDN, ongeacht of het een CDN-hit, -pass of -miss is. Nochtans, verschijnen de regels van WAF in de logboekingang slechts voor verzoeken aan CDN die als CDN missen of overgaan, maar niet CDN- klappen worden beschouwd.
+```
+"rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
+```
 
-In het onderstaande voorbeeld ziet u een voorbeeld `cdn.yaml` en twee CDN logboekingangen, met niet-lege waarden in het regelbezit toe te schrijven aan geblokkeerde verzoeken die de CDN regel en de regel van WAF aanpassen, respectievelijk.
+Bijvoorbeeld:
+
+```
+"rules": "match=Block-Traffic-under-private-folder,Enable-SQL-injection-everywhere,waf="SQLI,SANS",action=block"
+```
+
+De regels gedragen zich als volgt:
+
+* de klant-verklaarde regelnaam van om het even welke passende regels zal in de gelijkenattributen worden vermeld.
+* de actiekenmerken detailleert of de regels het effect van het blokkeren, toestaan of registreren hadden
+* als WAF vergunning en toegelaten is, zal het waf attribuut van om het even welke wafregels (b.v., SQLI een lijst maken; merk op dat dit van de klant-verklaarde naam) onafhankelijk is die werden ontdekt, ongeacht of de waf regels in de configuratie werden vermeld.
+* als geen klant-verklaarde regels aanpassen en geen golfregels aanpassen, zal het bezit van regelattributen leeg zijn.
+
+In het algemeen, verschijnen de passende regels in de logboekingang voor alle verzoeken aan CDN, ongeacht of het een CDN hit, pas, of mis is. Nochtans, verschijnen de regels van WAF in de logboekingang slechts voor verzoeken aan CDN die als CDN missen of overgaan, maar niet CDN- klappen worden beschouwd.
+
+In het onderstaande voorbeeld ziet u een voorbeeld van cdn.yaml en twee CDN-logitems:
 
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "path-rule"
-      when: { reqProperty: path, equals: /block-me }
-      action: block
-
-    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
-      when: { reqProperty: path, like: "*" }
-      action: enableWafRules
-      wafRules:
-        - SQLI
-        - XSS
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS ]
 ```
 
 ```
@@ -322,7 +460,7 @@ data:
 "status": 406,
 "res_age": 0,
 "pop": "PAR",
-"rules": "cdn=path-rule;waf=;action=blocked"
+"rules": "match=path-rule,action=blocked"
 }
 ```
 
@@ -342,7 +480,7 @@ data:
 "status": 406,
 "res_age": 0,
 "pop": "PAR",
-"rules": "cdn=;waf=SQLI;action=blocked"
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -366,4 +504,4 @@ Hieronder vindt u een lijst met veldnamen die in CDN-logbestanden worden gebruik
 | *status* | De HTTP-statuscode als een geheel getal. |
 | *res_age* | De hoeveelheid tijd (in seconden) dat een reactie in de cache is geplaatst (in alle knooppunten). |
 | *pop* | Datacenter van de CDN-cacheserver. |
-| *regels* | De naam van om het even welke passende regels, voor zowel CDN regels als golfregels.<br><br>Overeenkomende CDN-regels worden weergegeven in de logbestandvermelding voor alle aanvragen naar de CDN, ongeacht of het een CDN-hit, -pass of -miss is.<br><br>Geeft ook aan of de overeenkomst tot een blok heeft geleid. <br><br>Bijvoorbeeld &quot;`cdn=;waf=SQLI;action=blocked`&quot;<br><br>Leeg als geen regels overeenkomen. |
+| *regels* | De naam van eventuele overeenkomende regels.<br><br>Geeft ook aan of de overeenkomst tot een blok heeft geleid. <br><br>Bijvoorbeeld &quot;`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`&quot;<br><br>Leeg als geen regels overeenkomen. |
