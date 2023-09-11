@@ -2,10 +2,10 @@
 title: Toewijzing van gebruikers en belangrijkste migratie
 description: Overzicht van gebruikerstoewijzing en belangrijkste migratie in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 3%
+source-wordcount: '952'
+ht-degree: 2%
 
 ---
 
@@ -21,43 +21,40 @@ ht-degree: 3%
 
 ## Inleiding {#introduction}
 
-Als onderdeel van de as a Cloud Service overgang naar Adobe Experience Manager (AEM) moet u gebruikers en groepen van uw bestaande AEM naar AEM as a Cloud Service verplaatsen. Dit wordt gedaan door het Hulpmiddel van de Overdracht van de Inhoud.
+In het kader van de overgang naar as a Cloud Service Adobe Experience Manager (AEM) moeten gebruikers en groepen (of &#39;hoofden&#39;) van bestaande AEM naar AEM as a Cloud Service worden gemigreerd. Dit wordt gedaan door het Hulpmiddel van de Overdracht van de Inhoud.
 
-Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag. Voor dit proces moet gebruik worden gemaakt van de [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) voor het beheren van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS), dat één aanmelding voor alle Adobe-cloudtoepassingen biedt. Zie voor meer informatie [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Vanwege deze wijziging moeten bestaande gebruikers worden toegewezen aan hun IMS-id&#39;s om dubbele gebruikers op de auteur-instantie van de Cloud Service te voorkomen. Aangezien groepen in traditionele AEM fundamenteel verschillen van groepen in IMS, worden groepen niet in kaart gebracht, maar moeten de twee groepen na de migratie met elkaar in overeenstemming worden gebracht.
+Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag. Voor dit proces moet gebruik worden gemaakt van de [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) voor het beheren van gebruikers en gebruikersgroepen. De gebruikersprofielgegevens zijn gecentraliseerd in het Adobe Identity Management System (IMS), dat één aanmelding voor alle Adobe cloudtoepassingen biedt. Zie voor meer informatie [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Vanwege deze wijziging moeten bestaande gebruikers worden toegewezen aan hun IMS-id&#39;s om te voorkomen dat dubbele gebruikers worden gemaakt op de auteurinstantie van de Cloud Service. Aangezien groepen in traditionele AEM fundamenteel verschillen van groepen in IMS, worden groepen niet in kaart gebracht, maar moeten de twee groepen na de migratie met elkaar in overeenstemming worden gebracht.
 
-## Gegevens over gebruikersmigratie {#user-migration-detail}
+## Belangrijkste migratiegegevens {#principal-migration-detail}
 
-Met het gereedschap Inhoud overbrengen en het beheer van cloudversnelling migreert u naar het cloudsysteem voor alle gebruikers die zijn gekoppeld aan de inhoud die wordt gemigreerd.
+Met het gereedschap Inhoud overbrengen en het beheer van cloudversnelling kunt u alle principes die aan de gemigreerde inhoud zijn gekoppeld, migreren naar het cloudsysteem.  Dit doet u met het gereedschap Inhoud overbrengen door tijdens het extractieproces alle hoofdelementen van het AEM bronsysteem te kopiëren.  CAM Ingestie selecteert en migreert dan slechts die principes verbonden aan de inhoud die worden opgenomen.
 
 ## Details gebruikerstoewijzing {#user-mapping-detail}
 
-AEM gebruikers kunnen worden toegewezen aan overeenkomstige gebruikers van Adobe IMS met hetzelfde e-mailadres.  Deze toewijzing kan automatisch in CTT worden uitgevoerd, en of het wordt gedaan kan door een knevel worden gecontroleerd alvorens de extractie wordt begonnen. De standaardinstelling van de schakeloptie kan door de gebruiker worden genegeerd wanneer de extractie wordt gestart.
+AEM gebruikers kunnen worden toegewezen aan overeenkomstige gebruikers van Adobe IMS met hetzelfde e-mailadres.  Deze toewijzing kan automatisch plaatsvinden in CTT (tijdens de extractiestap) en of dit gebeurt of niet door een knevel kan worden geregeld voordat de extractie wordt gestart. De standaardinstelling van de schakeloptie kan door de gebruiker worden genegeerd wanneer de extractie wordt gestart.
 
 * Als het bronsysteem een auteurinstantie is, door gebrek is de keus om de afbeelding te doen _op_, omdat dit het aanbevolen proces is.
-* Als het bronsysteem een publicatie-instantie is, kunt u de toewijzing standaard uitvoeren _uit_, omdat gebruikers gewoonlijk niet worden gemigreerd of gebruikt op publicatieinstanties.
+* Als het bronsysteem een publicatie-instantie is, kunt u de toewijzing standaard uitvoeren _uit_, omdat gebruikers gewoonlijk niet worden gemigreerd of gebruikt op publicatieinstanties; of als zij worden gebruikt, wordt een verschillend authentificatiesysteem (d.w.z., niet IMS) typisch gebruikt voor hen.
+
+Of gebruikers tijdens de extractie al dan niet worden toegewezen, ze worden samen met de groepen tijdens de opname naar het wolkensysteem gemigreerd als ze zijn gekoppeld aan inhoud die wordt gemigreerd.
 
 ## Belangrijke overwegingen bij het in kaart brengen van en het Migreren van Gebruikers {#important-considerations}
-
 
 ### Uitzonderlijke gevallen {#exceptional-cases}
 
 De volgende specifieke gevallen worden geregistreerd:
 
 1. Als een gebruiker geen e-mailadres heeft in het dialoogvenster `profile/email` van hun *jcr* knooppunt, de gebruiker of groep in kwestie kan worden gemigreerd, maar is niet toegewezen. Dit scenario is het geval zelfs als het e-mailadres als gebruikersnaam voor het programma openen wordt gebruikt.
-
-1. Als de gebruiker is uitgeschakeld, wordt deze op dezelfde manier behandeld als wanneer de gebruiker niet is uitgeschakeld. Deze wordt toegewezen en gemigreerd als normaal en blijft uitgeschakeld in de cloudinstantie.
-
-1. Als een gebruiker op de doelAEM Cloud Service instantie met de zelfde gebruikersnaam (rep:principalName) zoals één van de gebruikers op de bron AEM instantie bestaat, wordt de gebruiker in kwestie niet gemigreerd.
-
-1. Als een gebruiker wordt gemigreerd zonder dat deze is toegewezen via gebruikerstoewijzing, kunnen deze zich op het doelwolkensysteem niet aanmelden met hun IMS-id. Of als hun e-mailadres niet overeenkomt met het e-mailadres dat wordt gebruikt voor aanmelding bij IMS, kunnen zij zich op het doelcloudsysteem ook niet aanmelden met hun IMS-id. Ze kunnen zich misschien aanmelden met de traditionele AEM, maar deze methode is normaal gesproken niet wat gewenst of verwacht wordt.
-
+2. Als de gebruiker is uitgeschakeld, wordt deze op dezelfde manier behandeld als andere gebruikers. De gebruiker wordt toegewezen en gemigreerd als normaal en blijft uitgeschakeld in de cloudinstantie.
+3. Als een principal met dezelfde naam (rep:principalName) op zowel de bron AEM instantie als de doel-AEM Cloud Service-instantie bestaat, wordt de principal in kwestie niet gemigreerd en blijft de eerder bestaande principal op het wolkensysteem ongewijzigd.
+4. Als een gebruiker wordt gemigreerd zonder dat deze is toegewezen via gebruikerstoewijzing, kan de gebruiker zich op het doelwolkensysteem niet aanmelden met zijn IMS-id. Of als hun e-mailadres niet overeenkomt met het e-mailadres dat wordt gebruikt voor aanmelding bij IMS, kunnen zij zich op het doelcloudsysteem ook niet aanmelden met hun IMS-id. Ze kunnen zich misschien aanmelden met de traditionele AEM methode (lokale aanmelding), maar deze methode is normaal gesproken niet wat wordt gewild of verwacht.
 
 ## Aanvullende overwegingen {#additional-considerations}
 
-* Als de instelling **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** is ingesteld, worden reeds overgedragen gebruikers op de instantie Cloud Service samen met de gehele bestaande opslagplaats verwijderd. En er wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit proces stelt ook alle montages met inbegrip van toestemmingen op de instantie van de doelCloud Service terug en is waar voor een admin gebruiker die aan wordt toegevoegd **beheerders** groep. De gebruiker van admin moet aan de **beheerders** groep om het toegangstoken voor CTT terug te winnen.
-* Als de inhoud wordt uitgebreid en de inhoud niet wordt overgedragen omdat deze niet is gewijzigd sinds de vorige overdracht, worden gebruikers en groepen die aan de inhoud zijn gekoppeld, ook niet overgedragen. Deze regel geldt ook als de gebruikers en groepen inmiddels zijn gewijzigd. De reden hiervoor is dat gebruikers en groepen worden gemigreerd met de inhoud waaraan ze zijn gekoppeld.
+* Als de instelling **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** is ingesteld, worden reeds overgedragen gebruikers op de instantie Cloud Service samen met de gehele bestaande opslagplaats verwijderd; er wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Dit proces stelt ook alle montages met inbegrip van toestemmingen op de instantie van de doelCloud Service terug en is waar voor een admin gebruiker die aan wordt toegevoegd **beheerders** groep. De gebruiker van admin moet aan opnieuw worden toegevoegd **beheerders** groep om het toegangstoken voor Ingestie CTT/CAM terug te winnen.
+* Als de inhoud wordt uitgebreid en de inhoud niet wordt overgedragen omdat deze niet is gewijzigd sinds de vorige overdracht, worden gebruikers en groepen die aan de inhoud zijn gekoppeld, ook niet overgedragen. Deze regel geldt zelfs als de gebruikers en groepen op het bronsysteem zijn gewijzigd. De reden hiervoor is dat gebruikers en groepen alleen worden gemigreerd met de inhoud waaraan ze zijn gekoppeld.
 * Als het doel-AEM Cloud Service-exemplaar een gebruiker heeft met een andere gebruikersnaam maar hetzelfde e-mailadres als een van de gebruikers op de bron-AEM en Gebruikerstoewijzing is ingeschakeld, wordt in het logbestand een foutbericht opgenomen. Bovendien wordt de bron AEM gebruiker niet overgedragen, aangezien slechts één gebruiker met een bepaald e-mailadres op het doelsysteem is toegestaan.
-* Zie [Gesloten gebruikersgroepen migreren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen voor groepen die in een Gesloten beleid van de Groep van de Gebruiker (CUG) worden gebruikt.
+* Zie [Gesloten gebruikersgroepen migreren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen voor hoofden die in een Gesloten beleid van de Groep van de Gebruiker (CUG) worden gebruikt.
 
 ## Laatste samenvatting en rapport {#final-report}
 
