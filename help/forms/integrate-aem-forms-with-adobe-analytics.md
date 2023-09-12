@@ -3,9 +3,9 @@ title: Hoe kan AEM Forms met Adobe Analytics worden geïntegreerd?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: d97b17981e82323317e34185e47ee3f4224795b3
+source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1549'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-<span class="preview"> Voor een naadloze en snellere integratie van adaptieve formulieren met Adobe Analytics gaat u naar [Adobe Analytics inschakelen voor een adaptief formulier met behulp van Experience Cloud Setup Automation](/help/forms/forms-experience-cloud-setup-automation.md). </span>
+<span class="preview"> In dit document wordt de handmatige procedure beschreven voor het inschakelen van Adobe Analytics op een adaptief formulier. De Adobe beveelt echter aan de [Adobe Analytics inschakelen voor een adaptief formulier met behulp van Experience Cloud Setup Automation](/help/forms/forms-experience-cloud-setup-automation.md). </span>
 
 AEM Forms kan worden geïntegreerd met [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) waarmee u prestatiegegevens voor gepubliceerde formulieren kunt vastleggen en bijhouden. Het doel achter het analyseren van deze metriek is bedrijfsgebruikers toe te laten om inzicht in eindgebruikergedrag te verwerven en de ervaring van het gegevensvangst te optimaliseren. U kunt het gedrag vastleggen en volgen van zowel aangemelde als niet-aangemelde (anonieme) gebruikers via Adobe Analytics for Adaptive Forms.
 

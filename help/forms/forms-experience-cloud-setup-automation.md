@@ -1,7 +1,7 @@
 ---
 title: Adobe Analytics inschakelen voor een adaptief formulier met behulp van Experience Cloud Setup Automation
 description: Met de Experience Cloud Setup Automation kunt u Adobe Analytics verbinden met een adaptief formulier. Het helpt bij het bijhouden en analyseren van gebruikersinteractie met een adaptief formulier, zodat u inzichten krijgt in de interactie en betrokkenheid van bezoekers.
-source-git-commit: c88f8f61cf54059b1d141d08b77983dd45edfaa6
+source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
@@ -117,5 +117,4 @@ Voer de onderstaande stappen uit om Adobe Analytics voor uw Adaptive Forms in te
 
 1. Klikken **Adobe Analytics** om uw rapport te bekijken en prestatiesgegevens te analyseren.
 
-
-Als u via een oudere methode verbinding wilt maken met een adaptief formulier, gaat u naar [AEM Forms integreren met Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
+Als u via de handmatige methode een adaptief formulier wilt verbinden met Adobe Analytics, gaat u naar [AEM Forms integreren met Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
