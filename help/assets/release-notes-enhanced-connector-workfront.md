@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9981fb1ac5ddf5d918cf76476fa185c524749c70
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
@@ -15,16 +15,17 @@ In de volgende sectie worden de algemene opmerkingen bij de release beschreven v
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor de laatste versie 1.9.12 van [!DNL Workfront for Experience Manager enhanced connector] is 9 augustus 2023.
+De releasedatum voor de laatste versie 1.9.13 van [!DNL Workfront for Experience Manager enhanced connector] is 11 september 2023.
 
 ## Geen hooglichten {#release-highlights}
 
 De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de volgende updates:
 
-* Kan geen gekoppelde mappen maken in Experience Manager, omdat er geen gebruikersaccount is gekoppeld aan de gekoppelde map.
+* De Experience Manager verbeterde schakelaar haalt alle gebeurtenisabonnementen van Workfront terwijl het schrappen van een gebeurtenisabonnement voor een project, dat tot een prestatieseffect op de toepassing leidt.
 
-* De omstandigheden van de ruimte tijdens meta-gegevensupdates voor activa in Experience Manager.
+* Wanneer een element van Workfront naar Experience Manager wordt verzonden, is het MIME-type van het element niet ingesteld op `dc:format` attribuut binnen Experience Manager.
 
+* Het project IDs van Workfront die op Experience Manager verbeterde schakelaar wordt opgeslagen omvat duplicaten.
 
 >[!NOTE]
 >
@@ -33,7 +34,7 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 
 >[!IMPORTANT]
 >
->Adobe raadt u aan [upgrade naar de nieuwste versie 1.9.12](/help/assets/workfront-connector-install.md) van de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe raadt u aan [upgrade naar de nieuwste versie 1.9.13](/help/assets/workfront-connector-install.md) van de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekende problemen {#known-issues}
 
@@ -42,6 +43,12 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 * Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** in de vervolgkeuzelijst kunt u de doelbestemming in de Experience Manager niet selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** vervolgkeuzelijst beschikbaar in de nieuwe Workfront-ervaring.
 
 ## Eerdere versies {#previous-releases}
+
+### Release van augustus 2023 {#august-2023-release}
+
+* Kan geen gekoppelde mappen maken in Experience Manager, omdat er geen gebruikersaccount is gekoppeld aan de gekoppelde map.
+
+* De omstandigheden van de ruimte tijdens meta-gegevensupdates voor activa in Experience Manager.
 
 ### Release juni 2023 {#june-2023-release}
 
