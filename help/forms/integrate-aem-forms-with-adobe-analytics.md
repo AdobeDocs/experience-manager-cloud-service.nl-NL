@@ -2,21 +2,24 @@
 title: Hoe kan AEM Forms met Adobe Analytics worden geïntegreerd?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+hidefromtoc: true
+source-git-commit: d97b17981e82323317e34185e47ee3f4224795b3
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
 
-# Integreren met [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+# AEM Forms integreren met [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-AEM Forms kan worden geïntegreerd met [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) waarmee u prestatiegegevens voor gepubliceerde formulieren kunt vastleggen en bijhouden. Het doel achter het analyseren van deze metriek is bedrijfsgebruikers toe te laten om inzicht in eindgebruikergedrag te verwerven en de ervaring van het gegevensvangst te optimaliseren. U kunt gedrag van zowel aangemelde als niet-aangemelde (anonieme) gebruikers vastleggen en volgen via Adobe Analytics for Adaptive Forms.
+<span class="preview"> Voor een naadloze en snellere integratie van adaptieve formulieren met Adobe Analytics gaat u naar [Adobe Analytics inschakelen voor een adaptief formulier met behulp van Experience Cloud Setup Automation](/help/forms/forms-experience-cloud-setup-automation.md). </span>
+
+AEM Forms kan worden geïntegreerd met [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) waarmee u prestatiegegevens voor gepubliceerde formulieren kunt vastleggen en bijhouden. Het doel achter het analyseren van deze metriek is bedrijfsgebruikers toe te laten om inzicht in eindgebruikergedrag te verwerven en de ervaring van het gegevensvangst te optimaliseren. U kunt het gedrag vastleggen en volgen van zowel aangemelde als niet-aangemelde (anonieme) gebruikers via Adobe Analytics for Adaptive Forms.
 
 Nadat u de in dit artikel vermelde handelingen hebt uitgevoerd, kunt u rapporten configureren en weergeven in [!DNL Adobe Analytics], zoals in de volgende video wordt getoond:
 
@@ -24,21 +27,21 @@ Nadat u de in dit artikel vermelde handelingen hebt uitgevoerd, kunt u rapporten
 
 U kunt [!DNL Adobe Analytics] om interactiepatronen en problemen te ontdekken waarmee gebruikers worden geconfronteerd wanneer ze adaptieve formulieren gebruiken. Uit de doos, [!DNL Adobe Analytics] volgt en slaat informatie over de volgende gebeurtenissen op:
 
-* **Renderen**: Aantal keren dat een formulier wordt geopend.
+* **Renderen**: Het aantal keren dat een formulier wordt geopend.
 
 * **Verzenden**: Aantal keer dat een formulier wordt verzonden.
 
-* **Abandon**: Aantal keren dat de gebruikers het formulier verlaten zonder het in te vullen.
+* **Abandon**: Het aantal keren dat de gebruikers het formulier verlaten zonder het in te vullen.
 
 * **Fout**: Aantal fouten aangetroffen in het deelvenster en in de velden van het deelvenster.
 
-* **Help**: Het aantal keren dat een gebruiker de Help van een deelvenster en de velden van het deelvenster opent.
+* **Help**: Het aantal keren dat een gebruiker Help van een deelvenster en de velden van het deelvenster opent.
 
-* **Veld bezoeken**: Aantal keren dat een gebruiker een veld in het formulier bezoekt.
+* **Veld bezoeken**: Het aantal keren dat een gebruiker een veld in het formulier bezoekt.
 
-* **Opslaan**: Aantal keren dat gebruikers een formulier opslaan op de Forms Portal.
+* **Opslaan**: Het aantal keren dat gebruikers een formulier opslaan op de Forms Portal.
 
-Naast deze gebeurtenissen uit het vak kunt u aangepaste gebeurtenissen definiëren in adaptieve formulieren met de regeleditor en deze gebeurtenissen toewijzen aan gebeurtenissen in [!DNL Adobe Analytics]
+Naast deze gebeurtenissen uit het vak kunt u aangepaste gebeurtenissen definiëren in adaptieve formulieren met een regeleditor en deze gebeurtenissen toewijzen aan gebeurtenissen in [!DNL Adobe Analytics]
 
 Het volgende cijfer illustreert de acties die u moet uitvoeren alvorens rapporten in te bekijken [!DNL Adobe Analytics]:
 
@@ -71,7 +74,7 @@ Voer de volgende stappen uit om AEM Forms en [Adobe Analytics](https://experienc
 1. Tikken **[!UICONTROL Catalog]** en tikken **[!UICONTROL Install]** voor de **[!UICONTROL Adobe Experience Manager Forms]** extensie. **[!UICONTROL Adobe Experience Manager Forms]** wordt weergegeven in de lijst met geïnstalleerde extensies die beschikbaar is in het dialoogvenster **Geïnstalleerd** tab.
 
 1. Tikken **[!UICONTROL Install]** voor de **[!UICONTROL Adobe Analytics]** extensie.
-1. Selecteer de naam van de rapportsuite in het dialoogvenster **[!UICONTROL Development Report Suites]**, **[!UICONTROL Staging Report Suites]**, en **[!UICONTROL Product Report Suites]** vervolgkeuzelijsten en tikken **[!UICONTROL Save]** om de extensie op te slaan.
+1. Selecteer de naam van de rapportsuite in het dialoogvenster **[!UICONTROL Development Report Suites]**, **[!UICONTROL Staging Report Suites]**, en **[!UICONTROL Product Report Suites]** vervolgkeuzelijsten en tikken **[!UICONTROL Save]** de extensie opslaan.
 
 ### Gegevenselementen configureren {#configure-data-elements}
 
@@ -107,11 +110,11 @@ Voer de volgende stappen uit om gegevenselementen te configureren:
 
 1. Geef een naam op voor het gegevenselement. Bijvoorbeeld het gegevenstype Formuliertitel voor het gegevenstype FormTitle.
 
-1. Opgeven **[!UICONTROL Adobe Experience Manager Forms]** als de naam van de extensie.
+1. Opgeven **[!UICONTROL Adobe Experience Manager Forms]** als de extensienaam.
 
-1. Selecteer **[!UICONTROL Data Element Type]**.
+1. Selecteer de **[!UICONTROL Data Element Type]**.
 
-1. Tikken **[!UICONTROL Save]** om het gegevenselement op te slaan.
+1. Tikken **[!UICONTROL Save]** het gegevenselement opslaan.
 
    >[!VIDEO](https://video.tv.adobe.com/v/337472)
 
@@ -127,7 +130,7 @@ Voer de volgende stappen uit om regels te maken op basis van de **[!UICONTROL Ad
 
 1. In de **[!UICONTROL Events]** sectie, tikken **[!UICONTROL Add]**.
 
-1. Opgeven **[!UICONTROL Adobe Experience Manager Forms]** als de naam van de extensie.
+1. Opgeven **[!UICONTROL Adobe Experience Manager Forms]** als de extensienaam.
 
 1. Selecteer het gebeurtenistype. De invoer voor de **[!UICONTROL Name]** wordt automatisch ingevuld op basis van het geselecteerde gebeurtenistype.
 
@@ -135,21 +138,21 @@ Voer de volgende stappen uit om regels te maken op basis van de **[!UICONTROL Ad
 
 1. In de **[!UICONTROL Actions]** sectie, tikken **[!UICONTROL Add]**.
 
-1. Opgeven **[!UICONTROL Adobe Analytics]** als de naam van de extensie.
+1. Opgeven **[!UICONTROL Adobe Analytics]** als de extensienaam.
 
-1. Selecteren **[!UICONTROL Set Variables]** als het Type van Actie. De volgende opties zijn beschikbaar in de vervolgkeuzelijst:
+1. Selecteren **[!UICONTROL Set Variables]** als het Type actie. De volgende opties zijn beschikbaar in de vervolgkeuzelijst:
 
-   * **[!UICONTROL Set Variables]**: Gebruik dit actietype om het gebeurtenistype te bepalen waarvoor de geselecteerde gegevenselementen van AEM Forms naar worden verzonden [!DNL Adobe Analytics].
+   * **[!UICONTROL Set Variables]**: Gebruik dit actietype om het gebeurtenistype te definiëren waarnaar de geselecteerde gegevenselementen van AEM Forms worden verzonden [!DNL Adobe Analytics].
 
-   * **[!UICONTROL Send Beacon]**: Gebruik dit actietype om gegevens van AEM Forms naar te verzenden [!DNL Adobe Analytics].
+   * **[!UICONTROL Send Beacon]**: Gebruik dit actietype om gegevens van AEM Forms te verzenden naar [!DNL Adobe Analytics].
 
-   * **[!UICONTROL Clear Variables]**: Gebruik dit actietype om het gegevensspoor te wissen zodat de gebeurtenis slechts eenmaal wordt geregistreerd [!DNL Adobe Analytics].
+   * **[!UICONTROL Clear Variables]**: Gebruik dit actietype om het gegevensspoor te wissen, zodat de gebeurtenis slechts eenmaal wordt geregistreerd in [!DNL Adobe Analytics].
 
-     De aanbevolen aanpak is het gebruik van de **[!UICONTROL Set Variables]** actietype om de gebeurtenis en gegevenselementen te vormen, dan gebruik **[!UICONTROL Send Beacon]** om gegevens te verzenden, en dan te gebruiken **[!UICONTROL Clear Variables]** om het gegevensspoor te wissen.
+     De aanbevolen aanpak is om de **[!UICONTROL Set Variables]** actietype om de gebeurtenis en gegevenselementen te vormen, dan gebruik **[!UICONTROL Send Beacon]** om gegevens te verzenden, en dan te gebruiken **[!UICONTROL Clear Variables]** om het gegevensspoor te wissen.
 
 1. In de **[!UICONTROL Props]** de sectie, in kaart brengen de opties van de rapportreeks beschikbaar in de drop-down lijst met de gegevenselementen die gebruikend worden bepaald [Gegevenselementen configureren](#configure-data-elements).
 
-   Bijvoorbeeld om te verzenden **Formuliertitel** gegevenselement van AEM Forms naar [!DNL Adobe Analytics] wanneer u een formulier verzendt:
+   Bijvoorbeeld om te verzenden **Formuliertitel** data-element van AEM Forms tot [!DNL Adobe Analytics] wanneer u een formulier verzendt:
    1. In de **[!UICONTROL Props]** selecteert u een proxy voor Formuliertitel in de rapportsuite en tikt u vervolgens op ![Databasepictogram](assets/database-icon.svg) om deze toe te wijzen aan Formuliertitel die is gemaakt in [Gegevenselementen configureren](#configure-data-elements).
 
       ![definiëren-eigenschappen](assets/define-props.png)
@@ -158,16 +161,16 @@ Voer de volgende stappen uit om regels te maken op basis van de **[!UICONTROL Ad
 
 1. In de **[!UICONTROL Events]** selecteert u een gebeurtenis uit de opties in de rapportsuite en tikt u op **[!UICONTROL Keep Changes]**.
 
-1. In de **[!UICONTROL Actions]** sectie, tikken + en specificeren **[!UICONTROL Adobe Analytics]** als de naam van de extensie.
+1. In de **[!UICONTROL Actions]** sectie, tikken + en specificeren **[!UICONTROL Adobe Analytics]** als de extensienaam.
 
-1. Selecteren **[!UICONTROL Send Beacon]** als het Type van Actie. Selecteer in het rechterdeelvenster de optie **[!UICONTROL s.t()]** gegevens verzenden naar [!DNL Adobe Analytics] en behandelt het als paginaweergave of **[!UICONTROL s.tl()]** gegevens verzenden naar [!DNL Adobe Analytics] en niet behandelen als paginaweergave. Tik op **[!UICONTROL Keep Changes]**.
+1. Selecteren **[!UICONTROL Send Beacon]** als het Type actie. Selecteer in het rechterdeelvenster de optie **[!UICONTROL s.t()]** gegevens verzenden naar [!DNL Adobe Analytics] en behandelt het als paginaweergave of **[!UICONTROL s.tl()]** gegevens verzenden naar [!DNL Adobe Analytics] en niet behandelen als paginaweergave. Tik op **[!UICONTROL Keep Changes]**.
 
-1. In de **[!UICONTROL Actions]** sectie, tikken + en specificeren **[!UICONTROL Adobe Analytics]** als de naam van de extensie.
+1. In de **[!UICONTROL Actions]** sectie, tikken + en specificeren **[!UICONTROL Adobe Analytics]** als de extensienaam.
 
-1. Selecteren **[!UICONTROL Clear Variables]** als het Type van Actie. Tik op **[!UICONTROL Keep Changes]**. Nadat u deze stappen hebt uitgevoerd, **[!UICONTROL Actions]** wordt weergegeven als:
+1. Selecteren **[!UICONTROL Clear Variables]** als het Type actie. Tik op **[!UICONTROL Keep Changes]**. Nadat u deze stappen hebt uitgevoerd, **[!UICONTROL Actions]** wordt weergegeven als:
    ![Configuratie van handelingen](assets/actions-config.png)
 
-   De **[!UICONTROL Actions]** op basis van uw vereisten. U kunt bijvoorbeeld twee **Band verzenden** stappen in een stroom Handelingen om gegevens te verzenden naar [!DNL Adobe Analytics] en behandelt het als paginaweergave in één stap en verzendt gegevens naar [!DNL Adobe Analytics] en deze in de tweede stap niet als paginaweergave behandelen.
+   De **[!UICONTROL Actions]** op basis van uw vereisten. U kunt bijvoorbeeld twee **Bandbaken verzenden** stappen in een actiestroom om gegevens te verzenden naar [!DNL Adobe Analytics] en behandelt het als paginaweergave in één stap en verzendt gegevens naar [!DNL Adobe Analytics] en deze in de tweede stap niet als paginaweergave behandelen.
 
    ![Configuratie van handelingen](assets/actions-config-2.png)
 
@@ -188,21 +191,21 @@ Voer de volgende stappen uit om de configuratie te publiceren:
 
 1. Tikken **[!UICONTROL Add Library]** en geeft u een naam op en selecteert u de omgeving voor de bibliotheek.
 
-1. Tikken **[!UICONTROL Add All Changed Resources]** en tik vervolgens op **[!UICONTROL Save & Build to Development]**.
+1. Tikken **[!UICONTROL Add All Changed Resources]** en tikt u vervolgens op **[!UICONTROL Save & Build to Development]**.
 
-1. In de **[!UICONTROL Development]** sectie, tikken ![Meer opties](assets/more-options-icon.svg) en tik vervolgens op **[!UICONTROL Approve & Publish to Production]**.
+1. In de **[!UICONTROL Development]** sectie, tikken ![Meer opties](assets/more-options-icon.svg) en tikt u vervolgens op **[!UICONTROL Approve & Publish to Production]**.
 
-1. Bevestig de wijzigingen en de publicatiestroom wordt binnenkort weergegeven in het dialoogvenster **[!UICONTROL Published]** sectie.
+1. Bevestig dat de wijzigingen en de publicatiestroom binnenkort worden weergegeven in het dialoogvenster **[!UICONTROL Published]** sectie.
 
 ![Stroom publiceren](assets/publish-flow.png)
 
 ## 2. AEM Forms configureren {#configure-aem-forms}
 
-Voordat u de Adobe Launch-configuratie maakt, moet u een [Adobe IMS-configuratie met Adobe Launch als cloudoplossing](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+Voordat u een Adobe Launch-configuratie maakt, moet u een [Adobe IMS-configuratie met Adobe Launch als cloudoplossing](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
-### Adobe-startconfiguratie maken {#create-adobe-launch-configuration}
+### Configuratie van Adobe starten maken {#create-adobe-launch-configuration}
 
-Voer de volgende stappen uit om een configuratie van de Adobe Lancering tot stand te brengen:
+Voer de volgende stappen uit om een configuratie van de Lancering van de Adobe tot stand te brengen:
 
 1. Ga in de AEM Forms Author-instantie naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Launch Configurations]**.
 
@@ -210,7 +213,7 @@ Voer de volgende stappen uit om een configuratie van de Adobe Lancering tot stan
 
 1. Geef een titel voor de configuratie op in het dialoogvenster **[!UICONTROL Title]** veld.
 
-1. Selecteer [gekoppelde Adobe IMS-configuratie](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+1. Selecteer de [gekoppelde Adobe IMS-configuratie](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
 1. Selecteer de naam van het bedrijf dat tijdens het [Adobe Analytics configureren](#Configure-adobe-analytics).
 
@@ -222,11 +225,11 @@ Voer de volgende stappen uit om een configuratie van de Adobe Lancering tot stan
 
 ### Inschakelen [!DNL Adobe Analytics] voor een adaptief formulier {#enable-analytics-adaptive-form}
 
-Te gebruiken [!DNL Adobe Launch] configuratie in een bestaand adaptief formulier:
+Als u de opdracht [!DNL Adobe Launch] configuratie in een bestaand adaptief formulier:
 
 1. Ga in de AEM Forms Author-instantie naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Selecteer het adaptieve formulier en tik op **[!UICONTROL Properties]**.
-1. In de **[!UICONTROL Basic]** selecteert u de [configuratiecontainer](#create-adobe-launch-configuration) wordt gebruikt tijdens het maken van de Adobe Launch-configuratie.
+1. In de **[!UICONTROL Basic]** selecteert u de [configuratieconsole](#create-adobe-launch-configuration) wordt gebruikt tijdens het maken van de configuratie Adobe starten.
 1. Tik op **[!UICONTROL Save & Close]**. Het adaptieve formulier is ingeschakeld voor [!DNL Adobe Analytics].
 1. Publiceer het formulier.
 
@@ -234,11 +237,11 @@ Nadat u [!DNL Adobe Analytics] voor een adaptief formulier kunt u [validate](htt
 
 ### Regels maken om aangepaste gebeurtenissen vast te leggen (optioneel) {#capture-custom-events}
 
-Maak regels voor specifieke velden van een adaptief formulier met de regeleditor om analysegegevens van een adaptief formulier te verzenden naar [!DNL Adobe Analytics].
+Maak regels voor specifieke velden van een adaptief formulier met behulp van een regeleditor om analysegegevens van een adaptief formulier te verzenden naar [!DNL Adobe Analytics].
 
-In een proces in twee fasen definieert u een regel voor een veld in een adaptieve vorm. De regel verzendt een gebeurtenis. De naam van de gebeurtenis wordt toegewezen aan een aangepaste vastleggebeurtenis in het programma Adobe Launch.
+In een proces in twee fasen definieert u een regel voor een veld in een adaptieve vorm. De regel verzendt een gebeurtenis. De naam van de gebeurtenis wordt toegewezen aan een aangepaste vastleggebeurtenis in de Adobe Launch.
 
-U kunt als volgt regels maken met de regeleditor:
+U kunt als volgt regels maken met behulp van een regeleditor:
 
 1. Tik op het veld en selecteer ![Regeleditor](assets/rule-editor-icon.svg) om de pagina van de regelredacteur te openen.
 1. Een voorwaarde definiëren in het dialoogvenster [!UICONTROL When] van de regel.
@@ -247,7 +250,7 @@ U kunt als volgt regels maken met de regeleditor:
 
 Als de geboortedatum bijvoorbeeld vóór een bepaalde datum ligt, verzendt AEM Forms de **Beveiliging** gebeurtenis.
 
-![Verzendgebeurtenis](assets/security-event.png)
+![Dispatch-gebeurtenis](assets/security-event.png)
 
 De gebeurtenis toewijzen aan een aangepaste vastleggebeurtenis in [!DNL Adobe Analytics]:
 
@@ -255,7 +258,7 @@ De gebeurtenis toewijzen aan een aangepaste vastleggebeurtenis in [!DNL Adobe An
 
 1. In de **[!UICONTROL Events]** sectie, tikken **[!UICONTROL Add]**.
 
-1. Opgeven **[!UICONTROL Adobe Experience Manager Forms]** als de naam van de extensie.
+1. Opgeven **[!UICONTROL Adobe Experience Manager Forms]** als de extensienaam.
 
 1. Selecteren **[!UICONTROL Capture Custom Event]** van de **[!UICONTROL Event Type]** vervolgkeuzelijst.
 
@@ -263,7 +266,7 @@ De gebeurtenis toewijzen aan een aangepaste vastleggebeurtenis in [!DNL Adobe An
 
 1. Tikken **Wijzigingen behouden** en voert de overige handelingen uit die in [Regels configureren](#configure-rules).
 
-## 3. Rapporten configureren en weergeven in [!DNL Adobe Analytics] {#view-reports-adobe-analytics}
+## 3. Configureer en bekijk rapporten in [!DNL Adobe Analytics] {#view-reports-adobe-analytics}
 
 Nadat u een adaptief formulier hebt geconfigureerd voor het verzenden van gebeurtenisgegevens naar [!DNL Adobe Analytics]kunt u rapporten bekijken in [!DNL Adobe Analytics]:
 
@@ -281,7 +284,7 @@ Nadat u een adaptief formulier hebt geconfigureerd voor het verzenden van gebeur
 
 1. Tikken ![Visualisaties](assets/visualization-icon.svg) en zet u een diagramtype neer in de sectie Vrije vorm. Op dezelfde manier kunt u veelvoudige grafiektypes aan de sectie van de Vrije vorm toevoegen.
 
-1. Tik op Ctrl + S en geef een naam op om het project op te slaan.
+1. Tik op de toetsen Ctrl + S en geef een naam op om het project op te slaan.
 
 <!--
 
