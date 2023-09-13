@@ -2,10 +2,10 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 288f871b75e68fdbca1244099e490408ea66ff40
+source-git-commit: 57d818e3e89f17f829a6b51689f02e5f59614563
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 1%
+source-wordcount: '296'
+ht-degree: 2%
 
 ---
 
@@ -13,41 +13,38 @@ ht-degree: 1%
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 13323 {#release-13323}
+## Release 13420 {#release-13420}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13323 samengevat, die op 1 september 2023 openbaar werd gemaakt. Deze onderhoudrelease vervangt release 13239.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13420 samengevat, die op 11 september 2023 openbaar werd gemaakt. Deze onderhoudrelease vervangt release 13323.
 
 2023.9.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
-### Verbeteringen {#enhancements-13323}
+### Verbeteringen {#enhancements-13420}
 
-- GRANITE-46784: Voeg optie toe om BeonderAuthenticationHandler onbruikbaar te maken.
-- GRANITE-36205: Werk de interne versie van de eikversie bij naar de recentste versie.
-- ASSETS-26713: Touch UI External Link to New Experience UI Dashboard - Unified-shell-integration en ui-touch-geoptimaliseerde upgrade.
-- SKYOPS-63302: Upgrade com.adobe.granite:com.adobe.granite.auth.saml naar v1.0.54.
-- GRANITE-46634: Upgrade naar gebeurtenisclient 1.4.0.
-- GRANITE-46788: Werk bibliotheken bij naar Apache Commons IO 2.13.0, Commons Lang 3.13.0, Commons Code 1.16.0 en Commons Compress 1.23.0.
-- GRANITE-46705: Update to Apache Felix HTTP Jetty 4.1.14.
-- GRANITE-46631: Update Jackrabbit version to 2.20.11.
-- SKYOPS-61895: Update to Jackrabbit FileVault 3.7.0.
+- ASSETS-19544: Activa die het laatst door eigendom zijn gewijzigd, zijn nu ingesteld op de gebruiker die de verwerking aanvraagt.
 
-### Opgeloste problemen {#fixed-issues-13323}
+### Opgeloste problemen {#fixed-issues-13420}
 
-- ASSETS-28461: Doc cloud viewer werkt niet voor PDF, hersteld vanaf 13239.
-- SKYOPS-63290: Oplossing voor een onjuiste evolutie van emmers.
-- SKYOPS-54607: Ratelimiter-serverlaadberekening is niet correct voor een mislukte aanvraag.
-- ASSETS-27648: ContentModelIT kan uitsluitingsbestanden van andere bundels niet lezen.
-- GRANITE-43744: Het stileren Authenticator werkt niet behoorlijk als er een misconfiguration met authentificatie-vereiste en ijdelingspad is.
-- GRANITE-46419: AEM integratieprobleem met Auth0 Idp.
-- GRANITE-46292: Okta SAML configuratie werkt niet na AEM Cloud-update.
-- GRANITE-47059: Verwijder SSL-bundel van graniet Jetty.
+- ASSETS-27628: Onjuiste &#39;kanalen&#39;-node die wordt gemaakt tijdens het aanpassen van het middelenzoekvenster
+- ASSETS-27539: uploadbeperkingen reguliere expressie matching.
+- ASSETS-26530: Unified Shell haalt gebruikers niet terug naar de oorspronkelijke pagina.
+- ASSETS-22719: haken in de naam Onderbrekingspunt slim uitsnijden breken de functie Slim uitsnijden bewerken.
+- ASSETS-27726: linkshare.html zou niet door Google moeten worden geïndexeerd.
+- ASSETS-27791: Validatie van het metagegevensschema vindt alleen plaats voor het eerste veld.
+- ASSETS-25544: Vaste knop voor CDN-cache-ongeldigmaking.
+- ASSETS-26575: afkapping met vaste naam bij het maken van afbeeldingssets.
+- ASSETS-26705: Oplossing voor onnodige verwerking van niet-DM-mapelementen en inhoudsfragmenten.
+- ASSETS-25740: Vaste schermlezers vertellen de naam en de rol voor de besturingselementen Bewerken/Uitsnijden niet op de pagina &#39;Slimme uitsnijdingen bewerken&#39; met de pijltoetsen omlaag.
+- CQ-4354266: Kan items in postvak niet openen.
+- CQ-4354347: Bijgewerkte AEM vertalingen.
+- DISP-1009: Gebruiker-Agent als niet eerste kopbal maakt x-Door:sturen-Gastheer in orde.
+- Verschillende oplossingen voor toegankelijkheid en beveiliging.
 
-### Bekende problemen {#known-issues-13323}
+### Bekende problemen {#known-issues-13420}
 
-- SITES-15622: GraphQL - Issue with persisted query with number &amp; boolean parameters.
-- SITES-15654: GraphQL - Issues with union and properties of same name.
+Geen.
 
-### Ingesloten technologieën {#embedded-tech-13323}
+### Ingesloten technologieën {#embedded-tech-13420}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
