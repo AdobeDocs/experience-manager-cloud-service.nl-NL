@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
+source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Voor het rapport AEM Forms Analytics integreert u eerst Adobe Analytics met AEM 
 1. Ga op uw AEM naar **[!UICONTROL Forms]** >> **[!UICONTROL Forms and Document]**.
 1. Selecteer uw formulier. Adobe Analytics wordt geïntegreerd zoals links in het scherm wordt weergegeven, terwijl de Forms wordt geactiveerd voor Adobe Analytics.
 
-   ![Rapport weergeven](assets/activ-aa.png)
+   ![Rapport weergeven](assets/activ-aa.png){width="100%"}
 
 1. Klikken **Adobe Analytics** om uw rapport te bekijken en prestatiesgegevens te analyseren.
 
@@ -50,7 +50,7 @@ Het heeft de metrieke Uitvoeringen van de Vorm, de Voor verzending bestemde Vorm
 
 * **Unieke bezoekers**: Unieke bezoekers geven het aantal keren weer dat het formulier door een bezoeker wordt gegenereerd. Voor meer informatie over unieke bezoekers raadpleegt u [Unieke bezoekers, bezoeken en klantengedrag](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 
-  ![Forms-prestaties](assets/forms-performance.png)
+  ![Forms-prestaties](assets/forms-performance.png){width="100%"}
 
 ### **Bezoekers van uw formulieren** {#visitors-to-your-forms}
 
@@ -59,46 +59,46 @@ Zo krijgt u waardevolle inzichten in bezoekersactiviteiten op uw formulieren:
 * **Bezoeken en opmerkingen**: Hierin worden de frequentie van bezoeken aan uw formulieren in een datumbereik en het bijbehorende aantal verzonden formulieren beschreven. Meer informatie over deze klik vindt u op [Bezoeken](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 * **Unieke bezoekers en hun totale bezoeken**: Er wordt een onderscheid gemaakt tussen de nieuwe en de terugkerende gebruikers. Een bezoeker kan bijvoorbeeld elke dag een maand naar uw site komen, maar hij telt nog steeds als één unieke bezoeker. Bezoek [Unieke bezoekers](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) voor nadere informatie.
 
-  ![Forms-bezoekers](assets/forms-visitors.png)
+  ![Forms-bezoekers](assets/forms-visitors.png){width="100%"}
 
 ### **Apparaattype** {#device-type}
 
 Met apparaattype kunt u bepalen welk type apparaat wordt gebruikt voor toegang tot uw formulieren. Het apparaattype wordt gecategoriseerd als Mobiel apparaattype. In dit geval is het bijvoorbeeld Mobiel apparaattype: Overige en Mobiel apparaattype: Mobiele telefoon. De verschillende typen mobiele apparaten zijn onder andere mobiele telefoons, tablets, mediaspelers, gameconsole en nog veel meer.
 
-![Apparaattype](assets/device-type.png)
+![Apparaattype](assets/device-type.png){width="100%"}
 
 ### **Geografische indeling** {#geographical-breakdown}
 
 U ziet hier de locatie waar de Forms is geopend. Deze pagina bevat regiospecifieke informatie over formuliergebruikers. U ziet bijvoorbeeld dat specifieke informatie over een formuliergebruiker India is, zoals wordt weergegeven in de afbeelding.
 
-![geografische indeling](assets/geographical-breakdown.png)
+![Geografische indeling](assets/geographical-breakdown.png){width="100%"}
 
 ### **Bovenste bronnen van verkeer en populaire formulieren** {#top-sources-of-traffic-and-popular-forms}
 
 Zo kunt u de primaire bron of de koppeling identificeren waarnaar uw formulieren verwijzen. In de onderstaande afbeelding ziet u bijvoorbeeld zoekinstanties naar uw adaptieve formulieren met een percentage van 18,9% **Getypte/bladwijzer**, 70,49% gebaseerd op **Zoekmachines**, en 24% komt van **Andere websites**. U kunt dimensie-items definiëren op basis van uw vereisten. U kunt ook uitzoeken welke formulieren het meest worden bezocht of populair zijn.
 
-![Aangewezen sites](assets/referred-sites.png)
+![Verwezen sites](assets/referred-sites.png){width="100%"}
 
 ### **Gebruikersactiviteiten op de belangrijkste formulieren** {#user-activity-on-top-forms}
 
 Een uitgebreide weergave van de betrokkenheid van gebruikers bij veldbezoeken, formulieruitvoeringen, validatiefouten, verlaten formulieren en het verzenden van formulieren bieden inzicht in de meest actieve formulieren. In de onderstaande afbeelding ziet u dat het toepassingsformulier het actiefst is op basis van de cijfers voor formuliergebeurtenissen.
 
-![gebruikersactiviteit](assets/user-activity.png)
+![Gebruikersactiviteit](assets/user-activity.png){width="100%"}
 
 ### **Tijdlijn voor aan formulieren bestede tijd** {#timeline-for-time-spent-on-forms}
 
 Het is de tijd die gebruikers in de loop der tijd aan uw formulieren besteden, die u helpen om betrokkenheidspatronen te identificeren.
 
-![tijd besteed aan formulieren](assets/time-spent-on-forms.png)
+![Tijd besteed aan formulieren](assets/time-spent-on-forms.png){width="100%"}
 
 ### **Gebieden waar bezoekers hulp nodig hebben bij het invullen van het formulier** {#areas-requiring-assistance}
 
 Metrische gegevens zoals Help-weergaven, validatiefouten en veldbezoeken laten zien waar gebruikers hulp nodig hebben of hoe we fouten in velden kunnen opsporen. In de onderstaande afbeelding ziet u bijvoorbeeld die in een formulier met velden zoals **Volledige naam**, **Telefoonnummer**, **DoB**. De **Volledige naam** in het veld zijn 12 bezoeken , van de 12 bezoeken 8 hebben een validatiefout en 1 op het Help-pictogram voor de Help-weergave in dit veld geklikt . U kunt de metrische gegevens voor andere formuliervelden zien.
 
-![bijstandsgebieden](assets/assisting-areas.png)
+![Gebieden helpen](assets/assisting-areas.png){width="100%"}
 
 ### **Het laatste formulierveld dat bezoekers hebben weergegeven voordat ze het formulier hebben verlaten** {#last-form-field-that-visitors-viewed}
 
 Hiermee kunt u de formuliervelden analyseren waarin de gebruikers tijd hebben doorgebracht voordat ze het formulier verlaten. In de onderstaande afbeelding staan bijvoorbeeld van de vijf verlaten formulieren 2 links in het veld **Volledige naam**, 2 links in het veld **Telefoonnummer** en 1 links op het veld **Tekstinvoer**.
 
-![veldbezoekers](assets/field-visitors.png)
+![Veldbezoekers](assets/field-visitors.png){width="100%"}
