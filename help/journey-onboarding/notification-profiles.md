@@ -4,9 +4,9 @@ description: Leer hoe u gebruikersprofielen maakt in de Admin Console voor het b
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
+source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ Van tijd tot tijd, moet de Adobe gebruikers betreffende hun AEM as a Cloud Servi
 
 * **Melding incident** - Deze meldingen worden verzonden tijdens een incident of wanneer de Adobe een potentieel probleem met de beschikbaarheid van uw AEM as a Cloud Service omgeving heeft vastgesteld.
 * **Proactieve kennisgeving** - Deze meldingen worden verzonden wanneer een medewerker van het ondersteuningsteam van de Adobe advies wil geven over een mogelijke optimalisatie of aanbeveling die uw AEM as a Cloud Service omgeving ten goede kan komen.
+
+>[!NOTE]
+>
+>Het toewijzen van groepen aan proactieve meldingen wordt niet ondersteund. In plaats daarvan moet u gebruikers rechtstreeks toewijzen aan de productprofielen.
 
 Voor de correcte gebruikers om deze berichten te ontvangen, moet u gebruikersprofielen vormen en toewijzen zoals die in dit document worden beschreven.
 
