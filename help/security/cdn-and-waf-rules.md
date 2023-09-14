@@ -1,9 +1,9 @@
 ---
 title: Het vormen de Regels van de Filter van het Verkeer (met de Regels van WAF)
 description: De Regels van de Filter van het Verkeer van het Gebruik (met de Regels van WAF) aan het Verkeer van de Filter
-source-git-commit: dc0c7e77bb4bc5423040364202ecac3c59adced0
+source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,8 @@ De filterregels van het verkeer kunnen aan alle types van het wolkenmilieu (RDE,
    ```
    kind: "CDN"
    version: "1"
-   envType: "dev"
+   metadata:
+     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -94,13 +95,14 @@ Hier is een voorbeeld van een reeks regels van de verkeersfilter, die ook een re
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -225,7 +227,7 @@ De `wafFlag` eigenschap kan het volgende omvatten:
 
 * Als een regel wordt aangepast en geblokkeerd, reageert CDN met een `406` retourcode.
 
-* De configuratiedossiers zouden geen geheimen moeten bevatten aangezien zij door iedereen leesbaar zouden zijn die toegang tot de git bewaarplaats heeft
+* De configuratiedossiers zouden geen geheimen moeten bevatten aangezien zij door iedereen leesbaar zouden zijn die toegang tot de git bewaarplaats heeft.
 
 ## Voorbeelden van regels {#examples}
 
@@ -238,13 +240,14 @@ Deze regel blokkeert verzoeken die van IP 192.168.1.1 komen:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
        - name: "block-request-from-ip"
          when: { reqProperty: clientIp, equals: "192.168.1.1" }
-         action: 
+         action:
            type: block
 ```
 
@@ -255,7 +258,8 @@ Deze regel blokkeert aanvragen op pad `/helloworld` bij het publiceren met een G
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -265,7 +269,7 @@ data:
             - { reqProperty: path, equals: /helloworld }
             - { reqProperty: tier, equals: publish }
             - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-           action: 
+           action:
              type: block
 ```
 
@@ -276,17 +280,18 @@ Deze regel blokkeert verzoeken die de vraagparameter bevatten `foo`, maar staat 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
         when: { queryParam: url-param, equals: foo }
-        action: 
+        action:
           type: block
       - name: "allow-all-requests-from-ip"
         when: { reqProperty: clientIp, equals: 192.168.1.1 }
-        action: 
+        action:
           type: allow
 ```
 
@@ -297,13 +302,14 @@ Deze regel blokkeert verzoeken aan weg /block-me, en blokkeert elk verzoek dat e
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -319,7 +325,8 @@ Deze regel blokkeert de toegang tot OFAC-landen:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -352,20 +359,22 @@ Soms is het wenselijk om verkeer te blokkeren die een regel aanpassen slechts al
 
 | **Eigenschap** | **Type** | **Standaard** | **BETEKENEN** |
 |---|---|---|---|
-| limiet | geheel getal van 10 tot en met 10000 | vereist | Het tarief van het verzoek in verzoeken per seconde waarvoor de regel wordt teweeggebracht |
-| venster | geheel getal: 1, 10 of 60 | 10 | Samplingvenster in seconden waarvoor de aanvraagsnelheid wordt berekend |
-| straf | geheel getal van 60 tot 3600 | 300 | Een periode in seconden waarvoor overeenkomstige verzoeken worden geblokkeerd (afgerond naar de dichtstbijzijnde minuut) |
+| limiet | geheel getal van 10 tot en met 10000 | vereist | Het tarief van het verzoek in verzoeken per seconde waarvoor de regel wordt teweeggebracht. |
+| venster | geheel getal: 1, 10 of 60 | 10 | Samplingvenster in seconden waarvoor de aanvraagsnelheid wordt berekend. |
+| straf | geheel getal van 60 tot 3600 | 300 | Een periode in seconden waarvoor overeenkomstige verzoeken worden geblokkeerd (afgerond naar de dichtstbijzijnde minuut). |
+| groupBy | array[Getter] | none | De teller van de snelheidsbegrenzer zal door een reeks verzoekeigenschappen (bijvoorbeeld clientIp) worden bijeengevoegd. |
 
 ### Voorbeelden {#ratelimiting-examples}
 
 **Voorbeeld 1**
 
-Deze regel blokkeert een client voor 5 m wanneer deze in de laatste 60 sec meer dan 100 req/sec heeft
+Deze regel blokkeert een client voor 5 m wanneer deze in de laatste 60 sec meer dan 100 req/sec bedraagt:
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     - name: limit-requests-client-ip
@@ -383,18 +392,19 @@ data:
 
 **Voorbeeld 2**
 
-De verzoeken van het blok voor 60s op weg /kritiek/middel wanneer het 100 req/sec in de laatste 60 sec. overschrijdt
+De verzoeken van het blok voor 60s op weg /kritiek/middel wanneer het 100 req/sec in de laatste 60 sec overschrijdt:
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: rate-limit-example
         when: { reqProperty: path, equals: /critical/resource }
-        action: 
+        action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -418,7 +428,7 @@ Bijvoorbeeld:
 De regels gedragen zich als volgt:
 
 * de klant-verklaarde regelnaam van om het even welke passende regels zal in de gelijkenattributen worden vermeld.
-* de actiekenmerken detailleert of de regels het effect van het blokkeren, toestaan of registreren hadden
+* de actiekenmerken detailleert of de regels het effect van het blokkeren, toestaan of registreren hadden.
 * als WAF vergunning en toegelaten is, zal het waf attribuut van om het even welke wafregels (b.v., SQLI een lijst maken; merk op dat dit van de klant-verklaarde naam) onafhankelijk is die werden ontdekt, ongeacht of de waf regels in de configuratie werden vermeld.
 * als geen klant-verklaarde regels aanpassen en geen golfregels aanpassen, zal het bezit van regelattributen leeg zijn.
 
@@ -430,7 +440,8 @@ In het onderstaande voorbeeld ziet u een voorbeeld van cdn.yaml en twee CDN-logi
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -490,7 +501,7 @@ Hieronder vindt u een lijst met veldnamen die in CDN-logbestanden worden gebruik
 
 | **Veldnaam** | **Beschrijving** |
 |---|---|
-| *tijdstempel* | De tijd waarop de aanvraag is gestart, na beëindiging van TLS |
+| *tijdstempel* | De tijd waarop de aanvraag is gestart, na beëindiging van TLS. |
 | *ttfb* | Afkorting van *Tijd naar eerste byte*. Het tijdinterval tussen het verzoek begon tot het punt alvorens het reactiekarakter begon te worden gestroomd. |
 | *cli_ip* | Het client-IP-adres. |
 | *cli_country* | Twee letters [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2-landcode voor het land van de cliënt. |
