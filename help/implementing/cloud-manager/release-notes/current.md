@@ -1,9 +1,9 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2023.8.0 in Adobe Experience Manager as a Cloud Service
+title: Opmerkingen bij de release Cloud Manager 2023.9.0 in Adobe Experience Manager as a Cloud Service
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.9.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 2b23abec404689d1cc4deb55a2d5ed2a4f236644
+source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Op deze pagina worden de opmerkingen bij de release 2023.9.0 van Cloud Manager i
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2023.8.0 in AEM as a Cloud Service is 14 september 2023. De volgende release is gepland voor 5 oktober 2023.
+De releasedatum voor Cloud Manager versie 2023.9.0 in AEM as a Cloud Service is 14 september 2023. De volgende release is gepland voor 5 oktober 2023.
 
 ## Wat is er nieuw? {#what-is-new}
 
