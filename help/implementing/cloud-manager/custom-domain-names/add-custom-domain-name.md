@@ -2,9 +2,9 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Leer hoe u een aangepaste domeinnaam kunt toevoegen met Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 600288a87e024fbe58ff605a8bcdc61535cc0759
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ U kunt een aangepaste domeinnaam toevoegen vanuit twee locaties in Cloud Manager
 
 >[!NOTE]
 >
->Een gebruiker moet beschikken over de **Zakelijke eigenaar** of **Implementatiebeheer** rol om een aangepaste domeinnaam toe te voegen in Cloud Manager
+>Een gebruiker moet beschikken over **Zakelijke eigenaar** of **Implementatiebeheer** rol om een aangepaste domeinnaam toe te voegen in Cloud Manager en u moet de snelste CDN gebruiken.
 
 ## Een aangepaste domeinnaam toevoegen vanaf de pagina Domeininstellingen {#adding-cdn-settings}
 
-Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Domeininstellingen** pagina.
+Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Domeininstellingen** pagina. Als u een verschillende CDN dan de Fastly gebruikt die werd verstrekt, zullen deze stappen niet voor u werken, en u moet uw domein met CDN vormen u opstelling.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
@@ -32,7 +32,7 @@ Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Dome
 
    ![Het venster Domeininstellingen](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. Klik op de knop **Domein toevoegen** om de **Domeinnaam toevoegen** .
+1. Klik op de knop **Domein toevoegen** aan de rechterbovenhoek om de **Domeinnaam toevoegen** in.
 
    ![Domein toevoegen, dialoogvenster](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -42,11 +42,11 @@ Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Dome
    >
    >Niet opnemen `http://`, `https://`of spaties bij het invoeren in uw domein.
 
-1. Selecteer **Omgeving** waarvan de dienst met de domeinnaam wordt geassocieerd.
+1. Selecteer de **Omgeving** waarvan de dienst met de domeinnaam wordt geassocieerd.
 
 1. Selecteer een van de **Publiceren** of **Voorvertoning** service.
 
-1. Selecteer **Domain SSL-certificaat** gekoppeld aan de domeinnaam in de vervolgkeuzelijst en selecteert u **Doorgaan**.
+1. Selecteer de **Domain SSL-certificaat** gekoppeld aan de domeinnaam in de vervolgkeuzelijst en selecteert u **Doorgaan**.
 
 1. De **Domeinnaam toevoegen** wordt weergegeven en gaat u naar het proces voor domeinnaamverificatie. Volg de instructies die worden gegeven om domeineigendom voor uw milieu te bewijzen. Klikken op **Maken**.
 
