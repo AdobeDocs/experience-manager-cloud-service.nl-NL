@@ -1,7 +1,7 @@
 ---
-title: Het vormen de Regels van de Filter van het Verkeer (met de Regels van WAF)
-description: De Regels van de Filter van het Verkeer van het Gebruik (met de Regels van WAF) aan het Verkeer van de Filter
-source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
+title: Het vormen van de Regels van de Filter van het Verkeer met de Regels van WAF
+description: De Regels van de Filter van het Verkeer van het Gebruik met de Regels van WAF om Verkeer te filtreren
+source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 0%
@@ -9,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Het vormen van de Regels van de Filter van het Verkeer (met de Regels van WAF) aan het Verkeer van de Filter {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# Het vormen van de Regels van de Filter van het Verkeer met de Regels van WAF aan het Verkeer van de Filter {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
