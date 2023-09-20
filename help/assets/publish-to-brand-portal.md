@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 56a4b03e78e835108aa57fdb241803e75b867260
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 94%
+source-wordcount: '1130'
+ht-degree: 89%
 
 ---
 
@@ -87,6 +87,16 @@ Meld u aan bij de Brand Portal-interface om de gepubliceerde assets te bekijken 
 
 ![bp_landingpage](assets/bp_landingpage.png)
 
+>[!NOTE]
+>
+> * Het bestaande gebruikersonderdeel van de groep DAM-Users heeft leestoegang op het pad &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
+>* De nieuwe gebruikers (of gebruikers die geen beheerder zijn) hebben de volgende rechten nodig om op het merkportaal te publiceren.
+> Paden:
+> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
+>/libs : jcr:read
+>/conf : jcr:read
+>/content: jcr:read , crx:replicate
+>/content/dam/ : jcr:read,Modify, crx:replicate
 
 ## Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal}
 
@@ -104,7 +114,7 @@ U kunt mappen met assets direct publiceren of verwijderen of op een latere datum
 
    * Selecteer **[!UICONTROL Quick Publish]** in de werkbalk.
 
-      Selecteer **[!UICONTROL Publish to Brand Portal]** in het menu.
+     Selecteer **[!UICONTROL Publish to Brand Portal]** in het menu.
 
    * Selecteer **[!UICONTROL Manage Publication]** in de werkbalk.
 
