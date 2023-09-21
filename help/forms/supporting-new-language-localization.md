@@ -2,9 +2,9 @@
 title: Ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier
 description: Met AEM Forms kunt u nieuwe landinstellingen toevoegen voor het lokaliseren van adaptieve formulieren. Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaanse (ko-KR) landinstellingen.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
-| AEM as a Cloud Service | Dit artikel |
 
 AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR). U kunt ook ondersteuning toevoegen voor meer landinstellingen, zoals Hindi(hi_IN).
 
@@ -31,7 +30,7 @@ De lokalisatie van adaptieve formulieren is afhankelijk van twee typen taalwoord
 
 ## Ondersteuning voor nieuwe landinstellingen toevoegen {#add-support-for-new-locales}
 
-Voer de volgende stappen uit om ondersteuning voor een nieuwe landinstelling toe te voegen:
+Voer de volgende stappen uit om ondersteuning voor een landinstelling toe te voegen:
 
 1. [Ondersteuning voor lokalisatie toevoegen voor niet-ondersteunde landinstellingen](#add-localization-support-for-non-supported-locales)
 1. [Toegevoegde landinstellingen gebruiken in Adaptive Forms](#use-added-locale-in-af)
@@ -40,7 +39,7 @@ Voer de volgende stappen uit om ondersteuning voor een nieuwe landinstelling toe
 
 AEM Forms ondersteunt momenteel de lokalisatie van Adaptive Forms-inhoud in het Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR).
 
-Ondersteuning voor een nieuwe landinstelling toevoegen bij Adaptive Forms-runtime:
+Ondersteuning voor een landinstelling toevoegen:
 
 1. [Uw gegevensopslagruimte klonen](#clone-the-repository)
 1. [Een landinstelling toevoegen aan de GuideLocalizationService-service](#add-a-locale-to-the-guide-localization-service)
@@ -112,12 +111,12 @@ Voordat u de wijzigingen doorvoert in de AEM Git-opslagplaats, hebt u toegang no
 
 #### 5. Leg de wijzigingen in de opslagplaats vast en implementeer de pijpleiding {#commit-changes-in-repo-deploy-pipeline}
 
-Leg de wijzigingen vast in de GIT-opslagplaats nadat u een nieuwe ondersteuning voor landinstellingen hebt toegevoegd. Implementeer uw code met de volledige stackpijplijn. Meer informatie [hoe een pijpleiding op te zetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) om nieuwe ondersteuning voor landinstellingen toe te voegen.
+Leg de wijzigingen vast in de GIT-opslagplaats nadat u een ondersteuning voor landinstellingen hebt toegevoegd. Implementeer uw code met de volledige stackpijplijn. Meer informatie [hoe een pijpleiding op te zetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) om nieuwe ondersteuning voor landinstellingen toe te voegen.
 Zodra de pijpleiding volledig is, verschijnt de onlangs toegevoegde scène in het AEM milieu.
 
 ### Toegevoegde landinstelling gebruiken in Adaptive Forms {#use-added-locale-in-af}
 
-Voer de volgende stappen uit om een adaptief formulier te gebruiken en weer te geven met behulp van een nieuw toegevoegde landinstelling:
+Voer de volgende stappen uit om een adaptief formulier te gebruiken en weer te geven met de nieuwe landinstelling:
 
 1. Meld u aan bij de AEM auteur.
 1. Ga naar **Forms** >  **Forms en Documenten**.
