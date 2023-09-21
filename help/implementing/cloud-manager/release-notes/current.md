@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2023.9.0 in Adobe Experience Man
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.9.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
+source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,6 @@ Geïnteresseerd in het testen van het nieuwe dashboard? Stuur een e-mail naar `a
 
 ## Opgeloste problemen {#bug-fixes}
 
-* Wanneer een programma wordt geschrapt, wordt om het even welke bijbehorende, lopende pijpleiding ook geschrapt, die ervoor zorgen dat de pijpleiding niet verkeerd als ontbroken status wordt aangewezen.
-* De Go-live volledige knoop is gehandicapt en informeert de gebruiker over de reden dat een pijpleiding lopend is.
-* Af en toe, wanneer alle stappen van een pijpleidingsuitvoering &quot;voltooid&quot;zijn, wordt de status van de pijpleiding beschouwd als &quot;lopend&quot;, die het schijnen in een vastgelopen staat te zijn. Het wordt nu beschouwd als een &#39;complete&#39;.
+* Wanneer een programma wordt geschrapt, wordt om het even welke bijbehorende, lopende pijpleiding nu ook geschrapt.
+* Als een pijpleiding lopend is, **Verzenden** van de **GoLive voltooid** wordt nu onbruikbaar gemaakt en deelt de gebruiker mee dat de go-live datum niet wegens de lopende pijpleiding kan worden geplaatst.
+* Er is een incidentele fout gecorrigeerd waarbij alle stappen van een uitvoering van een pijpleiding zijn gemarkeerd als voltooid, maar de status van de pijpleiding nog steeds actief was, waardoor er een geplakte toestand werd weergegeven.

@@ -2,7 +2,7 @@
 title: Tags gebruiken
 description: Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a7774ff75fb6bac55d5e931b13597d90bf8d721b
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
 
-* Zie Tags beheren voor informatie over het maken en beheren van tags en waarop inhoudstags zijn toegepast. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
+* Zie [Tags beheren](/help/sites-cloud/administering/tags.md) voor informatie over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
 * Zie [Tags voor ontwikkelaars](/help/implementing/developing/introduction/tagging-framework.md) voor informatie over het etiketteringskader en het opnemen van en het uitbreiden van markeringen in douanetoepassingen.
 
 ## Tien redenen voor het gebruik van tags {#ten-reasons-to-use-tagging}
