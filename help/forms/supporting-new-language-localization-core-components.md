@@ -1,7 +1,7 @@
 ---
 title: Hoe kunt u ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier op basis van kerncomponenten?
 description: Met AEM Forms kunt u nieuwe landinstellingen toevoegen voor het lokaliseren van adaptieve formulieren.
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 0%
@@ -48,7 +48,7 @@ AEM Forms ondersteunt momenteel de lokalisatie van Adaptive Forms-inhoud in het 
 
 ![Een landinstelling toevoegen aan een gegevensopslagruimte](add-a-locale-adaptive-form-core-components.png)
 
-### 1. Kloont uw AEM as a Cloud Service Git-opslagplaats {#clone-the-repository}
+### Cloud uw AEM as a Cloud Service Git-opslagplaats {#clone-the-repository}
 
 1. Open de opdrachtregel en kies een directory waarin de opslagplaats moet worden opgeslagen, zoals `/cloud-service-repository/`.
 
@@ -63,7 +63,7 @@ AEM Forms ondersteunt momenteel de lokalisatie van Adaptive Forms-inhoud in het 
    Na succesvolle voltooiing van bevel, een omslag `<my-program>` wordt gemaakt. Het bevat de inhoud die is gekloond uit de Git-opslagplaats. In de rest van het artikel wordt de map aangeduid als: `[AEM Forms as a Cloud Service Git repostory]`.
 
 
-### 2. Voeg de nieuwe landinstelling toe aan de Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
+### De nieuwe landinstelling toevoegen aan de Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
 
 1. Open de repository map, gekloond in vorige sectie, in een onbewerkte teksteditor.
 1. Ga naar de `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` map. U kunt de `<appid>` in de `archetype.properties` bestanden van het project.
@@ -74,7 +74,7 @@ AEM Forms ondersteunt momenteel de lokalisatie van Adaptive Forms-inhoud in het 
 1. Voeg de [landinstellingscode voor de taal](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) u wilt bijvoorbeeld &#39;hi&#39; toevoegen voor hindi.
 1. Sla het bestand op en sluit het.
 
-### 3. Maak een clientbibliotheek om een landinstelling toe te voegen
+### Een clientbibliotheek maken om een landinstelling toe te voegen
 
 AEM Forms biedt een voorbeeldclientbibliotheek waarmee u eenvoudig nieuwe landinstellingen kunt toevoegen. U kunt de `clientlib-it-custom-locale` clientbibliotheek van de Adaptive Forms Core Components-opslagplaats op GitHub naar uw as a Cloud Service Forms-opslagplaats. Ga als volgt te werk om de clientbibliotheek toe te voegen:
 
@@ -84,7 +84,7 @@ AEM Forms biedt een voorbeeldclientbibliotheek waarmee u eenvoudig nieuwe landin
 1. Navigeren naar `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` en plak de `clientlib-it-custom-locale` directory.
 
 
-### 4. Maak een bestand dat specifiek is voor de landinstelling {#locale-specific-file}
+### Een landspecifiek bestand maken {#locale-specific-file}
 
 1. Ga naar `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Zoek de [English locale.json file on GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), die de meest recente set standaardtekenreeksen bevat die in het product zijn opgenomen.
@@ -94,7 +94,7 @@ AEM Forms biedt een voorbeeldclientbibliotheek waarmee u eenvoudig nieuwe landin
 1. Sla het bestand op en sluit het.
 
 
-### 4. Voeg ondersteuning voor landinstellingen toe aan het woordenboek {#add-locale-support-for-the-dictionary}
+### Ondersteuning voor landinstellingen toevoegen aan het woordenboek {#add-locale-support-for-the-dictionary}
 
 Voer deze stap alleen uit als de `<locale>` u toevoegt behoort niet tot `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -133,7 +133,7 @@ Voer deze stap alleen uit als de `<locale>` u toevoegt behoort niet tot `en`, `d
 
    ![Voeg de nieuwe mappen toe aan het dialoogvenster `filter.xml` krachtens `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### 5. Leg de veranderingen vast en stel de pijpleiding op {#commit-changes-in-repo-deploy-pipeline}
+### Leg de wijzigingen vast en implementeer de pijpleiding {#commit-changes-in-repo-deploy-pipeline}
 
 Leg de wijzigingen vast in de GIT-opslagplaats nadat u een nieuwe ondersteuning voor landinstellingen hebt toegevoegd. Implementeer uw code met de volledige stackpijplijn. Meer informatie [hoe een pijpleiding op te zetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) om nieuwe ondersteuning voor landinstellingen toe te voegen.
 Zodra de pijpleiding volledig is, verschijnt de onlangs toegevoegde scène in het AEM milieu.
