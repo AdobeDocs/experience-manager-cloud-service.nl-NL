@@ -1,9 +1,9 @@
 ---
 title: Hoe kunt u ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier op basis van kerncomponenten?
 description: Met AEM Forms kunt u nieuwe landinstellingen toevoegen voor het lokaliseren van adaptieve formulieren.
-source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
+source-git-commit: 0a1310290c25a94ffe6f95ea6403105475ef5dda
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,20 @@ ht-degree: 0%
 | Elementaire componenten | [Klik hier](supporting-new-language-localization.md) |
 | Kernonderdelen | Dit artikel |
 
-AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR). U kunt ook ondersteuning toevoegen voor meer landinstellingen, zoals Hindi(hi_IN).
+AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR).
 
-## Werken met taalwoordenboeken {#about-locale-dictionaries}
+U kunt ook ondersteuning toevoegen voor meer landinstellingen, zoals Hindi(hi_IN).
 
-De lokalisatie van adaptieve formulieren is afhankelijk van twee typen taalwoordenboeken:
+<!-- 
+## Understanding locale dictionaries {#about-locale-dictionaries}
 
-* **Formulierspecifiek woordenboek** Bevat tekenreeksen die in adaptieve formulieren worden gebruikt. Bijvoorbeeld labels, veldnamen, foutberichten en Help-beschrijvingen. Het wordt beheerd als een set XLIFF-bestanden voor elke landinstelling en u kunt het bestand openen op `[author-instance]/libs/cq/i18n/gui/translator.html`.
+The localization of adaptive forms relies on two types of locale dictionaries:
 
-* **Algemene woordenboeken** Er zijn twee algemene woordenboeken, beheerd als JSON-objecten, in AEM clientbibliotheek. Deze woordenboeken bevatten standaardfoutberichten, naam van de maand, valutasymbolen, datum- en tijdpatronen, enzovoort. U vindt deze woordenboeken op `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Deze locaties bevatten afzonderlijke mappen voor elke landinstelling. Omdat algemene woordenboeken niet vaak worden bijgewerkt, kunnen browsers door afzonderlijke JavaScript-bestanden voor elke landinstelling te bewaren deze in cache plaatsen en het gebruik van de netwerkbandbreedte verminderen wanneer ze toegang krijgen tot verschillende adaptieve formulieren op dezelfde server.
+*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[AEM Forms as a Cloud Service Author instance]/libs/cq/i18n/gui/translator.html`.
+
+*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on.  These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+
+-->
 
 ## Vereisten {#prerequistes}
 
@@ -44,7 +49,7 @@ Voordat u ondersteuning voor een nieuwe landinstelling gaat toevoegen,
 
 ## Een landinstelling toevoegen {#add-localization-support-for-non-supported-locales}
 
-AEM Forms ondersteunt momenteel de lokalisatie van Adaptive Forms-inhoud in het Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR). Ga als volgt te werk als u ondersteuning voor een nieuwe landinstelling wilt toevoegen bij Adaptive Forms runtime:
+Ga als volgt te werk als u ondersteuning voor een nieuwe landinstelling wilt toevoegen:
 
 ![Een landinstelling toevoegen aan een gegevensopslagruimte](add-a-locale-adaptive-form-core-components.png)
 
@@ -136,13 +141,14 @@ Voer deze stap alleen uit als de `<locale>` u toevoegt behoort niet tot `en`, `d
 ### Leg de wijzigingen vast en implementeer de pijpleiding {#commit-changes-in-repo-deploy-pipeline}
 
 Leg de wijzigingen vast in de GIT-opslagplaats nadat u een nieuwe ondersteuning voor landinstellingen hebt toegevoegd. Implementeer uw code met de volledige stackpijplijn. Meer informatie [hoe een pijpleiding op te zetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) om nieuwe ondersteuning voor landinstellingen toe te voegen.
-Zodra de pijpleiding volledig is, verschijnt de onlangs toegevoegde scène in het AEM milieu.
 
-## Toegevoegde landinstelling gebruiken in Adaptive Forms {#use-added-locale-in-af}
+Zodra de pijpleidingslooppas succesvol is, is de onlangs toegevoegde scène klaar voor gebruik.
 
-Voer de volgende stappen uit om een adaptief formulier te gebruiken en weer te geven met behulp van een nieuw toegevoegde landinstelling:
+## Een voorbeeld bekijken van een adaptief formulier met de nieuwe landinstelling {#use-added-locale-in-af}
 
-1. Meld u aan bij de AEM auteur.
+Voer de volgende stappen uit om een voorvertoning weer te geven van een adaptief met de nieuwe landinstelling:
+
+1. Meld u aan bij uw as a Cloud Service AEM Forms-exemplaar.
 1. Ga naar **Forms** >  **Forms en Documenten**.
 1. Selecteer een adaptief formulier en klik op **Woordenboek toevoegen** en **Woordenboek toevoegen aan vertaalproject** wordt weergegeven.
 1. Geef de **Projecttitel** en selecteert u de **Doeltalen** in het keuzemenu in het dialoogvenster **Woordenboek toevoegen aan vertaalproject** wizard.
@@ -153,7 +159,7 @@ Voer de volgende stappen uit om een adaptief formulier te gebruiken en weer te g
 
 Er zijn twee methoden om de landinstelling van een adaptief formulier te bepalen. Wanneer een adaptief formulier wordt weergegeven, geeft dit de aangevraagde landinstelling aan met:
 
-* De `[local]` in het aangepaste formulier-URL. De opmaak van de URL is `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Gebruiken `[local]` kunt u een adaptief formulier in cache plaatsen.
+* De `[local]` in het aangepaste formulier-URL. De opmaak van de URL is `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Gebruiken `[local]` kunt u een adaptief formulier in cache plaatsen.
 
 * De volgende parameters in de vermelde volgorde ophalen:
 
@@ -165,17 +171,18 @@ Als u de browserlandinstelling van gebruikers wilt overschrijven, kunt u het `af
 
 Als er geen clientbibliotheek voor de aangevraagde landinstelling bestaat, wordt in de bibliotheek gecontroleerd of er taalcode in de landinstelling aanwezig is. Als de aangevraagde landinstelling bijvoorbeeld `en_ZA` (Zuid-Afrikaans Engels) en de clientbibliotheek voor `en_ZA` niet bestaat, gebruikt het adaptieve formulier de clientbibliotheek voor `en` (Engels) taal, als deze bestaat. Als er echter geen van deze profielen bestaat, wordt in het adaptieve formulier het woordenboek gebruikt voor `en` landinstelling.
 
-
 Nadat de landinstelling is geïdentificeerd, wordt in het adaptieve formulier het formulierspecifieke woordenboek gekozen. Als het formulierspecifieke woordenboek voor de aangevraagde landinstelling niet wordt gevonden, wordt het woordenboek gebruikt voor de taal waarin het adaptieve formulier is geschreven.
 
-Als er geen landinstellingsinformatie beschikbaar is, wordt het adaptieve formulier weergegeven in de oorspronkelijke taal, de taal die tijdens de ontwikkeling wordt gebruikt.
+Als er geen landinstellingsinformatie beschikbaar is, wordt het adaptieve formulier weergegeven in de oorspronkelijke taal, de taal die wordt gebruikt tijdens de ontwikkeling van het formulier.
 
-Get [voorbeeldclientbibliotheek](/help/forms/assets/locale-support-sample.zip) om ondersteuning voor nieuwe landinstellingen toe te voegen. U moet de inhoud van de map wijzigen in de vereiste landinstelling.
+<!--
+Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-## Aanbevolen procedures voor ondersteuning van nieuwe lokalisatie {#best-practices}
+## Best Practices to support for new localization {#best-practices}
 
-* Adobe raadt u aan een vertaalproject te maken nadat u een adaptief formulier hebt gemaakt.
+*   Adobe recommends creating a translation project after creating an Adaptive Form.
 
-* Wanneer nieuwe velden worden toegevoegd aan een bestaand adaptief formulier:
-   * **Voor automatische vertaling**: Maak het woordenboek opnieuw en voer het vertaalproject uit. Velden die na het maken van een vertaalproject aan een adaptief formulier zijn toegevoegd, blijven onvertaald.
-   * **Voor menselijke vertaling**: Exporteer het woordenboek door `[server:port]/libs/cq/i18n/gui/translator.html`. Werk het woordenboek voor de zojuist toegevoegde velden bij en upload het.
+*   When new fields are added in an existing Adaptive Form:
+    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
+    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
+-->
