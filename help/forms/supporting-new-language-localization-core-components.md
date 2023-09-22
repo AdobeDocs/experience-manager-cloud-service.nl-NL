@@ -1,9 +1,9 @@
 ---
 title: Hoe kunt u ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier op basis van kerncomponenten?
 description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formulier.
-source-git-commit: 056aecd0ea1fd9ec1e4c05299d2c50bca161615f
+source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1449'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,18 @@ AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Sp
 
 ## Hoe wordt de landinstelling geselecteerd voor een adaptief formulier?
 
+
 Er zijn twee methoden voor het identificeren en selecteren van de landinstelling van een adaptief formulier wanneer dit wordt gegenereerd:
 
 * **Met de [landinstelling] Kiezer in de URL**: Bij het genereren van een adaptief formulier identificeert het systeem de aangevraagde landinstelling door de [landinstelling] in de URL van het aangepaste formulier. De URL heeft de volgende notatie: http:/[URL AEM Forms-server]/content/forms/af/[afName].[landinstelling].html?wcmmode=disabled. Het gebruik van [landinstelling] kunt u het adaptieve formulier in cache plaatsen.
 
 * De parameters worden in de onderstaande volgorde opgehaald:
 
-   * Request-parameter `afAcceptLang`: Als u de landinstelling van de browser van de gebruiker wilt overschrijven, kunt u de aanvraagparameter afAcceptLang doorgeven. Met deze URL wordt bijvoorbeeld afgedwongen dat het formulier wordt weergegeven in de landinstelling Canadees Frans: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **Request-parameter`afAcceptLang`**: Als u de landinstelling van de browser van de gebruiker wilt overschrijven, kunt u de aanvraagparameter afAcceptLang doorgeven. Met deze URL wordt bijvoorbeeld afgedwongen dat het formulier wordt weergegeven in de landinstelling Canadees Frans: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
 
-   * Landinstelling browser (Accept-Language Header): Het systeem houdt ook rekening met de landinstelling van de browser van de gebruiker, die in de aanvraag wordt opgegeven met behulp van de `Accept-Language` header.
+   * **Landinstelling browser (Koptekst voor geaccepteerde taal)**: Het systeem houdt ook rekening met de landinstelling van de browser van de gebruiker, die in de aanvraag is opgegeven met de instelling `Accept-Language` header.
 
-  Als er geen clientbibliotheek voor de aangevraagde landinstelling beschikbaar is, controleert het systeem of er een clientbibliotheek bestaat voor de taalcode in de landinstelling. Als de aangevraagde landinstelling bijvoorbeeld `en_ZA` (Zuid-Afrikaans Engels) en er is geen clientbibliotheek voor `en_ZA`, gebruikt het adaptieve formulier de clientbibliotheek voor en (Engels), indien beschikbaar. Als geen van beide is gevonden, wordt het adaptieve formulier opnieuw gesorteerd naar het woordenboek voor de `en` landinstelling.
+  Als er geen clientbibliotheek voor de aangevraagde landinstelling beschikbaar is, controleert het systeem of er een clientbibliotheek bestaat voor de taalcode in de landinstelling. Als de aangevraagde landinstelling bijvoorbeeld `en_ZA` (Zuid-Afrikaans Engels) en er is geen clientbibliotheek voor `en_ZA`In het Adaptief formulier wordt de clientbibliotheek voor en (Engels) gebruikt, indien beschikbaar. Als geen van beide is gevonden, wordt het adaptieve formulier opnieuw gesorteerd naar het woordenboek voor de `en` landinstelling.
 
   Als de landinstelling eenmaal is vastgesteld, wordt in het adaptieve formulier het bijbehorende formulierspecifieke woordenboek geselecteerd. Als het woordenboek voor de aangevraagde landinstelling niet wordt gevonden, wordt standaard het woordenboek gebruikt in de taal waarin het adaptieve formulier is gemaakt.
 
@@ -42,7 +43,8 @@ Er zijn twee methoden voor het identificeren en selecteren van de landinstelling
 Voordat u ondersteuning voor een nieuwe landinstelling gaat toevoegen,
 
 * Installeer een normale tekstverwerker (IDE) voor eenvoudige bewerking. De voorbeelden in dit document zijn gebaseerd op de Code van Microsoft® Visual Studio.
-* Clone the Adaptive Forms Core Components repository. De gegevensopslagruimte klonen:
+* Een versie van [Git](https://git-scm.com), indien niet beschikbaar op uw computer.
+* Klonen met [Adaptieve Forms Core-componenten](https://github.com/adobe/aem-core-forms-components) opslagplaats. De gegevensopslagruimte klonen:
    1. Open de opdrachtregel of het terminalvenster en navigeer naar een locatie waar u de opslagplaats wilt opslaan. Bijvoorbeeld `/adaptive-forms-core-components`
    1. Voer de volgende opdracht uit om de gegevensopslagruimte te klonen:
 
@@ -50,7 +52,7 @@ Voordat u ondersteuning voor een nieuwe landinstelling gaat toevoegen,
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  De gegevensopslagruimte bevat een clientbibliotheek die nodig is om een landinstelling toe te voegen.
+  De gegevensopslagruimte bevat een clientbibliotheek die nodig is om een landinstelling toe te voegen. In de rest van het artikel wordt de map aangeduid als: [Adaptive Forms Core Components-opslagplaats].
 
 
 ## Een landinstelling toevoegen {#add-localization-support-for-non-supported-locales}
@@ -59,9 +61,9 @@ Ga als volgt te werk als u ondersteuning voor een nieuwe landinstelling wilt toe
 
 ![Een landinstelling toevoegen aan een gegevensopslagruimte](add-a-locale-adaptive-form-core-components.png)
 
-### Cloud uw AEM as a Cloud Service Git-opslagplaats {#clone-the-repository}
+### 1. Kloont uw AEM as a Cloud Service Git-opslagplaats {#clone-the-repository}
 
-1. Open de opdrachtregel en kies een directory waarin de opslagplaats moet worden opgeslagen, zoals `/cloud-service-repository/`.
+1. Open de opdrachtregel en kies een directory waarin de as a Cloud Service AEM Forms-opslagplaats moet worden opgeslagen, zoals `/cloud-service-repository/`.
 
 1. Voer de volgende opdracht uit om de gegevensopslagruimte te klonen:
 
@@ -74,7 +76,7 @@ Ga als volgt te werk als u ondersteuning voor een nieuwe landinstelling wilt toe
    Na succesvolle voltooiing van bevel, een omslag `<my-program>` wordt gemaakt. Het bevat de inhoud die is gekloond uit de Git-opslagplaats. In de rest van het artikel wordt de map aangeduid als: `[AEM Forms as a Cloud Service Git repository]`.
 
 
-### De nieuwe landinstelling toevoegen aan de Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
+### 2. Voeg de nieuwe landinstelling toe aan de Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
 
 1. Open de repository map, gekloond in de vorige sectie, in een onbewerkte teksteditor.
 1. Ga naar de `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` map. U kunt de `<appid>` in de `archetype.properties` bestanden van het project.
@@ -85,17 +87,17 @@ Ga als volgt te werk als u ondersteuning voor een nieuwe landinstelling wilt toe
 1. Voeg de [landinstellingscode voor de taal](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) u wilt bijvoorbeeld &#39;hi&#39; toevoegen voor hindi.
 1. Sla het bestand op en sluit het.
 
-### Een clientbibliotheek maken om een landinstelling toe te voegen
+### 3. Maak een clientbibliotheek om een landinstelling toe te voegen
 
-AEM Forms biedt een voorbeeldclientbibliotheek waarmee u eenvoudig nieuwe landinstellingen kunt toevoegen. U kunt de `clientlib-it-custom-locale` clientbibliotheek van de Adaptive Forms Core Components-opslagplaats op GitHub naar uw as a Cloud Service Forms-opslagplaats. Ga als volgt te werk om de clientbibliotheek toe te voegen:
+AEM Forms biedt een voorbeeldclientbibliotheek waarmee u eenvoudig nieuwe landinstellingen kunt toevoegen. U kunt de `clientlib-it-custom-locale` clientbibliotheek van de [Adaptive Forms Core Components-opslagplaats] op GitHub naar uw as a Cloud Service opslagplaats van Forms. Ga als volgt te werk om de clientbibliotheek toe te voegen:
 
-1. Open de Adaptive Forms Core Components-opslagplaats in uw normale teksteditor. Als de repository niet gekloond is, zie [Vereisten](#prerequistes) voor instructies om de gegevensopslagplaats te klonen.
+1. Open uw [Adaptive Forms Core Components-opslagplaats] in de teksteditor zonder opmaak. Als de repository niet gekloond is, zie [Vereisten](#prerequistes) voor instructies om de gegevensopslagplaats te klonen.
 1. Ga naar de `/aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs` directory.
 1. De `clientlib-it-custom-locale` directory.
 1. Navigeren naar `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` en plak de `clientlib-it-custom-locale` directory.
 
 
-### Een landspecifiek bestand maken {#locale-specific-file}
+### 4. Maak een bestand dat specifiek is voor de landinstelling {#locale-specific-file}
 
 1. Ga naar `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Zoek de [English locale.json file on GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), die de meest recente set standaardtekenreeksen bevat die in het product zijn opgenomen.
@@ -105,7 +107,7 @@ AEM Forms biedt een voorbeeldclientbibliotheek waarmee u eenvoudig nieuwe landin
 1. Sla het bestand op en sluit het.
 
 
-### Ondersteuning voor landinstellingen toevoegen aan het woordenboek {#add-locale-support-for-the-dictionary}
+### 5. Voeg ondersteuning voor landinstellingen toe aan het woordenboek {#add-locale-support-for-the-dictionary}
 
 Voer deze stap alleen uit als de `<locale>` u toevoegt behoort niet tot `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -144,9 +146,9 @@ Voer deze stap alleen uit als de `<locale>` u toevoegt behoort niet tot `en`, `d
 
    ![Voeg de nieuwe mappen toe aan het dialoogvenster `filter.xml` krachtens `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### Leg de wijzigingen vast en implementeer de pijpleiding {#commit-changes-in-repo-deploy-pipeline}
+### 6. Leg de veranderingen vast en stel de pijpleiding op {#commit-changes-in-repo-deploy-pipeline}
 
-Leg de wijzigingen vast in de GIT-opslagplaats nadat u een nieuwe ondersteuning voor landinstellingen hebt toegevoegd. Implementeer uw code met de volledige stackpijplijn. Meer informatie [hoe een pijpleiding op te zetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) om nieuwe ondersteuning voor landinstellingen toe te voegen.
+Breng de wijzigingen aan in de GIT-opslagplaats nadat u de nieuwe landinstelling hebt toegevoegd. Implementeer uw code met de volledige stackpijplijn. Meer informatie [hoe een pijpleiding op te zetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) om nieuwe ondersteuning voor landinstellingen toe te voegen.
 
 Zodra de pijpleidingslooppas succesvol is, is de onlangs toegevoegde scène klaar voor gebruik.
 
