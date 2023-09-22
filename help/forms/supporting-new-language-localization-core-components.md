@@ -1,9 +1,9 @@
 ---
 title: Hoe kunt u ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier op basis van kerncomponenten?
 description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formulier.
-source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
+source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1484'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,11 @@ ht-degree: 0%
 | Elementaire componenten | [Klik hier](supporting-new-language-localization.md) |
 | Kernonderdelen | Dit artikel |
 
-AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR).
+AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR). U kunt ook ondersteuning toevoegen voor meer landinstellingen, zoals Hindi(hi_IN).
 
 ## Hoe wordt de landinstelling geselecteerd voor een adaptief formulier?
 
-
-Er zijn twee methoden voor het identificeren en selecteren van de landinstelling van een adaptief formulier wanneer dit wordt gegenereerd:
+Voordat u een nieuwe landinstelling toevoegt voor Adaptive Forms, moet u begrijpen hoe een landinstelling is geselecteerd voor een adaptief formulier. Er zijn twee methoden voor het identificeren en selecteren van de landinstelling van een adaptief formulier wanneer dit wordt gegenereerd:
 
 * **Met de [landinstelling] Kiezer in de URL**: Bij het genereren van een adaptief formulier identificeert het systeem de aangevraagde landinstelling door de [landinstelling] in de URL van het aangepaste formulier. De URL heeft de volgende notatie: http:/[URL AEM Forms-server]/content/forms/af/[afName].[landinstelling].html?wcmmode=disabled. Het gebruik van [landinstelling] kunt u het adaptieve formulier in cache plaatsen.
 
