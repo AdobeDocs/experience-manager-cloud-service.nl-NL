@@ -2,16 +2,16 @@
 title: Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters
 description: Leer hoe u de inhoudsfragmenten voor geoptimaliseerde GraphQL-filters in Adobe Experience Manager as a Cloud Service kunt bijwerken voor levering van inhoud zonder kop.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '890'
 ht-degree: 2%
 
 ---
 
 # Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters {#updating-content-fragments-for-optimized-graphql-filtering}
 
-Om de prestaties van uw GraphQL-filters te optimaliseren, moet u een procedure uitvoeren om uw Content Fragments bij te werken.
+Als u de prestaties van uw GraphQL-filters wilt optimaliseren, voert u een procedure uit om uw Content Fragments bij te werken.
 
 >[!NOTE]
 >
@@ -29,8 +29,6 @@ Er zijn voorwaarden voor deze taak:
    * ten minste `Deployment Manager` rol in Cloud Manager is vereist.
 
 ## Inhoudsfragmenten bijwerken {#updating-content-fragments}
-
-Voer de volgende stappen uit om de procedure uit te voeren:
 
 1. Schakel de update in door de volgende variabelen voor uw instantie in te stellen met behulp van de interface van Cloud Manager:
 
@@ -69,7 +67,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
       <td>Alles </td>
       <td> </td>
       <td>Variabele </td>
-      <td>Afdwingen (!=0) hermigratie van inhoudsfragmenten.<br>Het plaatsen van deze vlag aan 0 zal een stijgende migratie van CFs doen. Dit betekent dat als de taak om welke reden dan ook wordt beëindigd, de volgende taak de migratie start vanaf het punt waar deze is beëindigd. De allereerste migratie wordt aanbevolen (waarde=1). </td>
+      <td>Afdwingen (!=0) hermigratie van inhoudsfragmenten.<br>Als u deze markering instelt op 0, wordt er een incrementele migratie van CF's uitgevoerd. Dit betekent dat als de taak om welke reden dan ook wordt beëindigd, de volgende uitvoering van de taak de migratie start vanaf het punt waar deze is beëindigd. De eerste migratie wordt aanbevolen voor handhaving (waarde=1). </td>
      </tr>
      <tr>
       <td>3</td>
@@ -79,7 +77,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
       <td>Alles </td>
       <td> </td>
       <td>Variabele </td>
-      <td>Grootte van de batch voor het opslaan van het aantal inhoudsfragmenten na de migratie.<br>Dit is relevant voor hoeveel CFs aan bewaarplaats in één partij wordt bewaard, en kan worden gebruikt om aantal te optimaliseren schrijft aan bewaarplaats. </td>
+      <td>Grootte van de batch voor het opslaan van het aantal inhoudsfragmenten na de migratie.<br>Dit is relevant voor hoeveel CFs aan de bewaarplaats in één partij wordt bewaard, en kan worden gebruikt om het aantal te optimaliseren schrijft aan de bewaarplaats. </td>
      </tr>
      <tr>
       <td>4</td>
@@ -99,7 +97,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
       <td>Alles </td>
       <td> </td>
       <td>Variabele </td>
-      <td>Interval (seconden) om resterende inhoudsfragmenten tot de volgende limiet te verwerken<br>Dit interval wordt ook beschouwd als zowel een wachttijd alvorens de baan te beginnen, als een vertraging tussen verwerking van elk verdere aantal CF_MIGRATION_LIMIT van CFs.<br>(*)</td>
+      <td>Interval (seconden) om de resterende inhoudsfragmenten tot de volgende limiet te verwerken<br>Dit interval wordt ook beschouwd als zowel een wachttijd alvorens de baan te beginnen, als een vertraging tussen verwerking van elk verdere aantal CF_MIGRATION_LIMIT van CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -118,7 +116,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
    >* Geschatte tijd die nodig is om de migratie te voltooien = 60 + (20,000/1000 * 60) = 1260 sec = 21 minuten
    >  De extra &#39;60&#39; seconden die aan het begin worden toegevoegd, zijn het gevolg van de eerste vertraging bij het starten van de taak.
    >
-   >U moet zich er ook van bewust zijn dat dit alleen de *minimum* de tijd die nodig is om de taak uit te voeren, zonder de I/O-tijd. De werkelijke tijd zou aanzienlijk meer kunnen zijn dan deze schatting.
+   >Dit is alleen de *minimum* de tijd die nodig is om de taak uit te voeren, zonder de I/O-tijd. De werkelijke tijd zou meer kunnen zijn dan deze schatting.
 
 1. De voortgang en voltooiing van de update volgen.
 
@@ -126,7 +124,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
 
    * `com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob`
 
-      * Auteurslogboeken; bijvoorbeeld:
+      * Auteurslogboeken, bijvoorbeeld:
 
         ```shell
         23.01.2023 13:13:45.926 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob This instance<dd9ffdc1-0c28-4d04-9a96-5d4d223e457e> is the leader, will schedule the upgrade schedule job.
@@ -136,7 +134,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
         23.01.2023 13:20:40.960 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 6m, slingJobId: 2023/1/23/13/13/50e1a575-4cd7-497b-adf0-62cb5768eedb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-      * stammen van stamhout; bijvoorbeeld:
+      * Logboeken met gouden publicatie, bijvoorbeeld:
 
         ```shell
         23.01.2023 12:35:05.150 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob This instance<ad1b399e-77be-408e-bc3f-57097498fddb> is the leader, will schedule the upgrade schedule job.
@@ -146,16 +144,16 @@ Voer de volgende stappen uit om de procedure uit te voeren:
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   De klanten, die toegang tot de milieulogboeken gebruikend Splunk toeliet, kunnen de voorbeeldvraag hieronder gebruiken om het verbeteringsproces te controleren. Voor details over het toelaten van het registreren van het Splunk, zie [Fouten opsporen in productie en werkgebied](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) pagina.
+   De klanten, die toegang tot de milieulogboeken gebruikend Splunk toeliet, kunnen de voorbeeldvraag hieronder gebruiken om het verbeteringsproces te controleren. Voor details over het toelaten van het registreren van het Splunk, zie [Fouten opsporen in productie en werkgebied](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
    (aem_tier=golden-publish OR aem_tier=author) | table _time aem_tier pod_name msg | sort -_time desc
    ```
 
-   Waar:
+   Waarbij:
 
-   * `environmentId` - een identificatiecode voor de omgeving van de klant; bijvoorbeeld: `e1234`
+   * `environmentId` - een identificatiecode voor de omgeving van de klant, bijvoorbeeld `e1234`
    * `indexName` - een naam van een klantindex, verzamelen `aemerror` gebeurtenissen
 
    Voorbeeld-uitvoer:
@@ -174,13 +172,13 @@ Voer de volgende stappen uit om de procedure uit te voeren:
          <td>2023-04-21 06:00:35.723</td>
          <td>auteur</td>
          <td>cm-p1234-e1234-aem-auteur-76d6dc4b79-8lsb5</td>
-         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-baan-draad-pool)-1-Inhoud Config van de Rij van de Rij van de Verbetering van het Fragment (cfm/upgrader)] com.adobe.cq.dam.impl.upgrade.UpgradeJob Voltooide content fragments upgrade in 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade aan versie '1' is uitgevoerd.', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
+         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-baan-draad-pool)-1-Inhoud Config van de Rij van de Rij van de Verbetering van het Fragment (cfm/upgrader)] com.adobe.cq.dam.impl.upgrade.UpgradeJob Voltooide content fragments upgrade in 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade naar versie '1' is uitgevoerd.', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
        </tr>
        <tr>
          <td>2023-04-21 06:05:48.207</td>
          <td>gouden publicatie</td>
          <td>cm-p1234-e1234-aem-golden-publish-644487c9c5-lvkv2</td>
-         <td>[sling-threadpool-284b9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-baan-draad-pool)-1-Inhoud Config van de Rij van de Rij van de Verbetering van het Fragment (cfm/upgrader)] com.adobe.cq.dam.cfm.impl.impl.impl upgrade.UpgradeJob Voltooide content fragments upgrade in 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f3394ddfc_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade aan versie '1' is uitgevoerd.', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
+         <td>[sling-threadpool-284b9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-baan-draad-pool)-1-Inhoud Config van de Rij van de Rij van de Verbetering van het Fragment (cfm/upgrader)] com.adobe.cq.dam.cfm.impl.impl.impl upgrade.UpgradeJob Voltooide content fragments upgrade in 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f3394ddfc_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade naar versie '1' is uitgevoerd.', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
        </tr>
      </tbody>
    <table>
@@ -189,7 +187,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
 
    >[!IMPORTANT]
    >
-   >Deze stap wordt vereist om de verbetering te voltooien.
+   >Deze stap is vereist om de verbetering te voltooien.
 
    Nadat de updateprocedure is uitgevoerd, stelt u de omgevingsvariabele van de cloud opnieuw in `CF_MIGRATION_ENABLED` tot &#39;0&#39;, om de recycling van alle pods te starten.
 
@@ -220,7 +218,7 @@ Voer de volgende stappen uit om de procedure uit te voeren:
 
    >[!NOTE]
    >
-   >Dit is met name van belang voor de publicatielijst, aangezien de content-update alleen wordt uitgevoerd op gouden publicaties en bij het recyclen van pods alle normale publicatiepods zijn gebaseerd op de gouden publicatie.
+   >Dit is belangrijk voor het publicatieniveau, aangezien de content-update alleen wordt uitgevoerd op gouden publicaties en bij het recyclen van pods alle normale publicatiepods zijn gebaseerd op de gouden publicatie.
 
 1. Verifieer voltooiing van de updateprocedure.
 
@@ -236,9 +234,9 @@ De aanwezigheid van deze eigenschap op het JCR-knooppunt `/content/dam` met een 
 
      >[!NOTE]
      >
-     >De procedure werkt inhoudsfragmenten bij op auteur- en publicatieinstanties.
+     >De procedure werkt Inhoudsfragmenten op instanties Auteur en Publiceren bij.
      >
-     >Daarom wordt aanbevolen de verificatie via de browser van de repository uit te voeren voor *ten minste* één auteur *en* één publicatieexemplaar.
+     >Daarom raadt de Adobe u aan de verificatie uit te voeren via de browser van de repository voor *ten minste* één auteur *en* één instantie Publish.
 
 ## Beperkingen {#limitations}
 
@@ -246,4 +244,4 @@ Houd rekening met de volgende beperkingen:
 
 * Optimalisatie van de prestaties van GraphQL-filters is alleen mogelijk na een volledige update van al uw Content Fragments (aangegeven door de aanwezigheid van de `cfGlobalVersion` eigenschap voor de JCR-node `/content/dam`)
 
-* Als inhoudsfragmenten worden geïmporteerd uit een inhoudspakket (met `crx/de`) nadat de updateprocedure is uitgevoerd, worden die inhoudsfragmenten niet in de resultaten van de GraphQL-query meegenomen totdat de updateprocedure opnieuw wordt uitgevoerd.
+* Als inhoudsfragmenten worden geïmporteerd uit een inhoudspakket (met `crx/de`) nadat de updateprocedure is uitgevoerd, worden die Content Fragments niet overwogen in de GraphQL vraagresultaten tot de updateprocedure opnieuw in werking wordt gesteld.

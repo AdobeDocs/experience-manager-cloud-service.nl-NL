@@ -1,29 +1,29 @@
 ---
 title: Versie-updates AEM
-description: Leer hoe AEM as a Cloud Service ononderbroken integratie en levering (CI/CD) gebruikt om uw projecten op de recentste versie te houden.
+description: Leer hoe Adobe Experience Manager (AEM) as a Cloud Service ononderbroken integratie en levering (CI/CD) gebruikt om uw projecten op de recentste versie te houden.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 620543b6c5d7bc017b8ac99d82b2a00dab2287b9
+source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 1%
+source-wordcount: '802'
+ht-degree: 0%
 
 ---
 
 
 # Versie-updates AEM {#aem-version-updates}
 
-Leer hoe AEM as a Cloud Service ononderbroken integratie en levering (CI/CD) gebruikt om uw projecten op de recentste versie te houden.
+Leer hoe Adobe Experience Manager (AEM) as a Cloud Service ononderbroken integratie en levering (CI/CD) gebruikt om uw projecten op de recentste versie te houden.
 
 ## CI/CD {#ci-cd}
 
 AEM as a Cloud Service gebruik ononderbroken integratie en ononderbroken levering (CI/CD) om ervoor te zorgen dat uw projecten op de huidigste AEM versie zijn. Met dit proces worden uw productie-, staging- en ontwikkelingsinstanties naadloos bijgewerkt, zonder dat dit uw gebruikers verstoort.
 
-Voordat uw exemplaren automatisch worden bijgewerkt, worden 3-5 dagen van tevoren nieuwe AEM onderhoudsreleases gepubliceerd. Tijdens deze periode kunt u [triggerhandmatige updates voor uw ontwikkelingsinstanties](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).Zodra deze tijd verstrijkt, worden de versie-updates automatisch toegepast op uw ontwikkelomgevingen eerst. Als de update succesvol is, gaat het updateproces naar uw werkgebied en productieinstanties. De ontwikkelings- en staging-instanties fungeren als een automatische kwaliteitspoort, waar uw aangepaste, geschreven tests worden uitgevoerd voordat de update wordt toegepast op uw productieomgeving.
+Voordat uw exemplaren automatisch worden bijgewerkt, wordt 3-5 dagen van tevoren een nieuwe AEM-onderhoudrelease gepubliceerd. Tijdens deze periode kunt u desgewenst [triggerhandmatige updates voor uw ontwikkelingsinstanties](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Nadat deze tijd is verstreken, worden de versie-updates automatisch toegepast op uw ontwikkelomgevingen. Als de update succesvol is, gaat het updateproces naar uw werkgebied en productieinstanties. De ontwikkelings- en staging-instanties fungeren als een geautomatiseerde kwaliteitspoort, waar uw op maat geschreven tests worden uitgevoerd voordat de update wordt toegepast op uw productieomgeving.
 
 >[!NOTE]
 >
-> Opmerking: de automatische updates voor ontwikkelomgevingen zullen in 2023 geleidelijk worden ingeschakeld voor alle klanten. Als uw ontwikkelomgevingen niet automatisch worden bijgewerkt, kunt u handmatige updates gebruiken om ze synchroon te houden met uw werkgebied- en productieomgeving.
+> Opmerking: de automatische updates voor ontwikkelomgevingen zijn in 2023 geleidelijk beschikbaar voor alle klanten. Als uw ontwikkelomgevingen niet automatisch worden bijgewerkt, kunt u handmatige updates gebruiken om ze synchroon te houden met uw werkgebied- en productieomgeving.
 
 
 ## Type updates {#update-types}
@@ -32,26 +32,26 @@ Er zijn twee typen AEM versie-updates:
 
 * **AEM onderhoudsupdates**
 
-   * Kunnen dagelijks worden uitgebracht.
-   * Deze bestanden zijn vooral bedoeld voor onderhoudsdoeleinden, zoals de nieuwste oplossingen voor problemen en beveiligingsupdates.
-   * minimaal effect hebben, aangezien de wijzigingen regelmatig worden toegepast.
+   * Ze kunnen dagelijks worden vrijgelaten.
+   * Ze zijn vooral bedoeld voor onderhoudsdoeleinden, inclusief de nieuwste oplossingen voor problemen en beveiligingsupdates.
+   * Het heeft minimale gevolgen, omdat de wijzigingen regelmatig worden toegepast.
 
 * **Nieuwe functies bijwerken**
 
-   * worden vrijgegeven op een [voorspelbaar maandelijks schema.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+   * Ze worden vrijgegeven op een [voorspelbaar maandelijks schema.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
 
 ## Update mislukt {#update-failure}
 
-AEM updates doorlopen een intensieve en volledig geautomatiseerde productvalideringspijplijn met meerdere stappen, zodat de service voor alle systemen in productie niet wordt onderbroken. Gezondheidscontroles worden gebruikt om de gezondheid van de toepassing te controleren. Als deze controles tijdens een AEM as a Cloud Service update ontbreken, zal de versie niet te werk gaan, en de Adobe zal onderzoeken waarom de update dit onverwachte gedrag veroorzaakte.
+AEM updates doorlopen een intensieve en volledig geautomatiseerde productvalideringspijplijn met meerdere stappen, zodat de service voor alle systemen in productie niet wordt onderbroken. Gezondheidscontroles worden gebruikt om de gezondheid van de toepassing te controleren. Als deze controles tijdens een AEM as a Cloud Service update ontbreken, gaat de versie niet te werk, en de Adobe onderzoekt waarom de update dit onverwachte gedrag veroorzaakte.
 
-Wanneer u een nieuwe versie van een douanecode van op uw milieu&#39;s opstelt, [Product- en aangepaste functionele tests](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) een cruciale rol spelen bij het waarborgen dat de productiesystemen stabiel en functioneel blijven, ook na een wijziging. Deze tests worden ook gebruikt in het updateproces van de Versie van de AEM.
+Wanneer u een nieuwe versie van douanecode op uw milieu opstelt, [Product- en aangepaste functionele tests](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) een cruciale rol spelen. Zij zorgen ervoor dat de productiesystemen stabiel en functioneel blijven, zelfs nadat een wijziging is aangebracht. Deze tests worden ook toegepast in het updateproces van de Versie van de AEM.
 
-Als de update naar de productieomgeving mislukt, wordt de testomgeving automatisch teruggedraaid in Cloud Manager. Dit wordt automatisch gedaan om ervoor te zorgen dat nadat een update voltooit, zowel de het opvoeren als productiemilieu&#39;s op de zelfde AEM versie zijn.
-Op dezelfde manier als een geautomatiseerde update van een ontwikkelomgeving ontbreekt, zal het opvoeren en de productiemilieu&#39;s niet worden bijgewerkt.
+Als de update naar de productieomgeving mislukt, draait Cloud Manager automatisch de testomgeving terug. Dit wordt automatisch gedaan om ervoor te zorgen dat nadat een update voltooit, zowel de het opvoeren als productiemilieu&#39;s op de zelfde AEM versie zijn.
+En als een geautomatiseerde update van een ontwikkelomgeving mislukt, worden de faserings- en productieomgevingen niet bijgewerkt.
 
 >[!NOTE]
 >
->Als de douanecode aan het opvoeren en niet aan productie werd geduwd, zal de volgende AEM update die veranderingen verwijderen om de git markering van de laatste succesvolle klantenversie aan productie te weerspiegelen. Daarom zal de douanecode die slechts op het opvoeren beschikbaar was opnieuw moeten worden opgesteld.
+>Als de douanecode aan het opvoeren en niet aan productie werd geduwd, verwijdert de volgende AEM update die veranderingen om op de git markering van de laatste succesvolle klantenversie aan productie te wijzen. Daarom moet de douanecode die slechts op het opvoeren beschikbaar was opnieuw worden opgesteld.
 
 ## Best practices voor {#best-practices}
 
@@ -61,27 +61,27 @@ Op dezelfde manier als een geautomatiseerde update van een ontwikkelomgeving ont
 
 * **Productiepijpleiding**
    * Pauze voordat u gaat implementeren naar productie.
-   * Als u de pijplijn annuleert nadat een werkgebied is geïmplementeerd, geeft u aan dat de code &quot;een baan&quot; is en geen geldige kandidaat voor productie. Raadpleeg [Een productiepijpleiding configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * Als de pijplijn wordt geannuleerd nadat een werkgebied is geïmplementeerd, geeft de code aan dat de code &quot;een wegbaan&quot; is en geen geldige kandidaat voor Productie. Raadpleeg [Een productiepijpleiding configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
 * **Niet-productiepijpleiding**
-   * Configureren [Niet-productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-   * Versnelt leversnelheid/frequentie voor mislukte productiepijplijnen.  Identificeer kwesties in niet-prod pijpleidingen door het Functionele Testen van het Product, het Eigen Functionele Testen van de Douane en het Testen van de UI van de Douane toe te laten.
+   * Een [Niet-productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+   * Versnelt leversnelheid/frequentie voor mislukte productiepijplijnen. Identificeer kwesties in niet-prod pijpleidingen door het Functionele Testen van het Product, het Aangepast Functioneren Testen, en het Testen van de UI van de Douane toe te laten.
 
 * **Inhoud kopiëren**
    * Gebruiken [Inhoud kopiëren](/help/implementing/developing/tools/content-copy.md) om vergelijkbare inhoudssets te verplaatsen naar een niet-prodomgeving.
 
 * **Geautomatiseerde functionele tests**
-   * Neem automatisch tests op in uw pijplijn om kritieke functionaliteit te testen.
-   * [Functionele tests van de klant](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) en [Aangepaste UI-tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) blokkeren, als ze er niet in slagen AEM de release uit te voeren.
+   * Neem de automatische test op in de pijplijn, zodat u kritieke functionaliteit kunt testen.
+   * [Functionele tests van de klant](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) en [Aangepaste UI-tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) blokkeren als ze er niet in slagen de AEM uit te voeren.
 
 ## Regressie {#regression}
 
-Als u een probleem tegenkomt met betrekking tot regressie, kunt u een ondersteuningskwestie aankaarten via de beheerconsole.  Als de kwestie een blokker is en het effect op Productie heeft zou een P1 moeten worden opgeheven.  Geef alle gegevens op die nodig zijn om het regressieprobleem te reproduceren.
+Als u een probleem tegenkomt met betrekking tot regressie, dient u een ondersteuningsgeval in via de Admin Console. Als de kwestie een blokker is en de invloed ervan op de productie, moet een P1 worden opgeworpen. Geef alle gegevens op die nodig zijn om het regressieprobleem te reproduceren.
 
 ## Composite Node Store {#composite-node-store}
 
-In de meeste gevallen worden updates zonder downtime uitgevoerd, ook voor de ontwerpinstantie, die een cluster met knooppunten is. Rolling-updates zijn mogelijk vanwege [de samengestelde eigenschap van de knoopopslag in Eak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+Meestal worden updates zonder downtime uitgevoerd, inclusief voor de ontwerpinstantie, die een cluster met knooppunten is. Rolling-updates zijn mogelijk vanwege [de samengestelde eigenschap van de knoopopslag in Eak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Met deze functie kunnen AEM tegelijkertijd verwijzen naar meerdere opslagplaatsen. In een [stationering,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) de nieuwe AEM bevat een eigen `/libs` (de op TarMK gebaseerde onveranderlijke opslagplaats), verschillend van de oudere AEM versie, hoewel beide verwijzen naar een gedeelde op DocumentMK gebaseerde veranderbare opslagplaats die gebieden zoals `/content` , `/conf` , `/etc` en andere.
+Met deze functie kunnen AEM tegelijkertijd verwijzen naar meerdere opslagplaatsen. In een [implementatie](/help/implementing/deploying/overview.md#how-rolling-deployments-work), bevat de nieuwe AEM een eigen versie `/libs` (de op TarMK gebaseerde onveranderlijke opslagplaats). Het is verschillend van de oudere AEM versie, hoewel allebei verwijzen naar een gedeelde op DocumentMK gebaseerde veranderbare bewaarplaats die gebieden zoals bevat `/content` , `/conf` , `/etc` en andere.
 
-Omdat zowel de oude als de nieuwe versie hun eigen versies hebben `/libs`, kunnen zij zowel tijdens de het rollen update actief zijn, en allebei verkeer nemen tot oud volledig door nieuw wordt vervangen.
+Omdat zowel de oude als de nieuwe versie hun eigen versies hebben `/libs`en kunnen beide actief zijn tijdens de actieve update. En, kunnen beide verkeer nemen tot de oude volledig door nieuwe wordt vervangen.

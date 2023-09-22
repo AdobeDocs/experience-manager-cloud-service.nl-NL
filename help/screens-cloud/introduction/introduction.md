@@ -1,31 +1,31 @@
 ---
 title: Inleiding tot AEM Screens as a Cloud Service
-description: Deze pagina fungeert als een inleiding tot AEM Screens as a Cloud Service.
+description: Deze pagina fungeert als een inleiding tot Adobe Experience Manager Screens as a Cloud Service.
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # Inleiding tot AEM Screens as a Cloud Service {#introduction-screens-cloud}
 
-Met AEM Screens as a Cloud Service kunt u aantrekkelijke en dynamische digitale signage-ervaringen creëren die bedoeld zijn om te worden gebruikt in openbare ruimten. Het is de volgende evolutie van het AEM Screens-product en betekent een grote stap voorwaarts in bruikbaarheid en schaalbaarheid.
+Met Adobe Experience Manager (AEM)-schermen as a Cloud Service kunt u aantrekkelijke en dynamische digitale signage-ervaringen creëren die bestemd zijn om te worden gebruikt in openbare ruimten. Het is de volgende evolutie van het AEM Screens-product en betekent een grote stap voorwaarts in bruikbaarheid en schaalbaarheid.
 
-AEM Screens as a Cloud Service is een digitale signaaloplossing waarmee marketers dynamische digitale ervaringen op schaal kunnen creëren en beheren. Daarnaast worden verschillende typen fysieke schermen gebruikt als onderdeel van een uitgebreide strategie voor digitale marketing. Het breidt Adobe-in-kanaal het gebruikelijke en mobiele kanalen uit om ook digitale signaalkanalen te omvatten die overal om ons zijn. AEM Screens as a Cloud Service maakt relevantere, contextafhankelijke, productieve en anticipatieve gebruikerservaring mogelijk door een diepgaand inzicht in het maken van inhoud, het samenstellen van inhoud, geactiveerd gebeurtenisbeheer en het afspelen van media voor alle consumenten en bezoekers in een openbare ruimte.
+AEM Screens as a Cloud Service is een digitale signaaloplossing waarmee marketers dynamische digitale ervaringen op schaal kunnen creëren en beheren. Daarnaast worden verschillende soorten fysieke schermen betrokken als onderdeel van een uitgebreide strategie voor digitale marketing. Het breidt het aanbod van de Adobe in het omni-kanaal uit tot meer dan het gebruikelijke web en mobiele kanalen, en omvat ook digitale signaalkanalen die overal om ons heen zijn. AEM Screens as a Cloud Service maakt relevantere, contextafhankelijke, productieve en anticipatieve gebruikerservaring mogelijk door een diepgaand inzicht in het maken van inhoud, het samenstellen van inhoud, geactiveerd gebeurtenisbeheer en het afspelen van media voor alle consumenten en bezoekers in een openbare ruimte.
 
 ## Componenten in as a Cloud Service schermen begrijpen {#understanding-components}
 
 De as a Cloud Service schermen bestaan uit twee hoofdcomponenten, namelijk:
 
-* **[Inhoudsprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)**, de invoegtoepassing Schermen die wordt uitgevoerd op AEM Cloud Service of op Adobe Managed Services (AMS). Met de Inhoudsprovider voor schermen kan de auteur van de inhoud kanalen maken en beheren. De auteurs van de inhoud kunnen nieuwe inhoud toevoegen, de inhoud bewerken zonder zich zorgen te maken over de details van het maken van weergaven of spelerregistratie. De Content Provider biedt een abstractie van de onderliggende details van het ontwikkelen van inhoud, weergaven of spelerregistratie.
+* **[Inhoudsprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)**, de invoegtoepassing Schermen die op AEM Cloud Service of op Adobe Managed Services (AMS) wordt uitgevoerd. Met de Inhoudsprovider voor schermen kan de auteur van de inhoud kanalen maken en beheren. De auteurs van de inhoud kunnen nieuwe inhoud toevoegen, de inhoud bewerken zonder zich zorgen te maken over de details van het maken van weergaven of spelerregistratie. De Content Provider biedt een abstractie van de onderliggende details van het ontwikkelen van inhoud, weergaven of spelerregistratie.
 
-* **[Serviceprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)**, de service voor digitaal signaalbeheer die wordt uitgevoerd op Adobe I/O-runtime. Met Screens Services Provider kunnen auteur, ontwikkelaar en beheerder van inhoud weergaven en spelers voor het afspelen van inhoud beheren zodra de inhoud aan de kanalen is toegevoegd. Bovendien informeert de Serviceverlener voor schermen de beheerder waar en wanneer inhoud op een hoog niveau wordt afgespeeld.
+* **[Serviceprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)**, de dienst voor het beheer van digitale signalen die op Adobe I/O Runtime wordt uitgevoerd. Met Screens Services Provider kunnen auteurs, ontwikkelaars en beheerders van inhoud weergaven en spelers voor het afspelen van inhoud beheren zodra de inhoud aan de kanalen is toegevoegd. Bovendien informeert de leverancier van de Diensten van het Scherm de organisator waar en wanneer de inhoud op een hoog niveau gaat spelen.
 
 
 ## Overzicht van architectuur {#architectural-overview}
 
-Als as a Cloud Service gebruiker van AEM Screens kunt u inhoud toevoegen en beheren in kanalen, vertoningen en spelers registreren en beheren van de interfaces die specifiek voor as a Cloud Service Schermen worden ontworpen, namelijk: **Schermserviceprovider** en **Scherminhoudsprovider**.
+Als as a Cloud Service AEM Screens-gebruiker kunt u inhoud toevoegen en beheren in kanalen. U kunt beeldschermen en spelers registreren en beheren vanuit de interfaces die specifiek zijn ontworpen voor as a Cloud Service schermen, namelijk: **Schermserviceprovider** en **Scherminhoudsprovider**.
 
 ![afbeelding](/help/screens-cloud/assets/architecture-screenscloud.png)

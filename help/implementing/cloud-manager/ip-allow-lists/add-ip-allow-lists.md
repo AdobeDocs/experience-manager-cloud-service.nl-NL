@@ -2,9 +2,9 @@
 title: IP-Lijsten van gewenste personen toevoegen
 description: Leer hoe u uw eigen IP-lijst van gewenste personen toevoegt met gebruik van Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -18,17 +18,17 @@ Een gebruiker in het dialoogvenster **Zakelijke eigenaar** of **Implementatiebeh
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Navigeren naar **Omgevingen** van het scherm **Overzicht** pagina.
+1. Van de **Overzicht** pagina, naar de **Omgevingen** scherm.
 
-1. Navigeren naar **IP-Lijsten van gewenste personen** pagina van de **Omgevingen** scherm.
+1. Van de **Omgevingen** scherm, navigeren aan **IP-Lijsten van gewenste personen** pagina.
 
    ![IP-lijsten van gewenste personen, optie in het zijpaneel](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
-1. Klikken **IP-Lijst van gewenste personen toevoegen** om de **IP-Lijst van gewenste personen toevoegen** in.
+1. Klikken **IP-Lijst van gewenste personen toevoegen**.
 
    ![Het dialoogvenster IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. Voer een naam in die u wilt gebruiken om naar de lijst van gewenste personen in het dialoogvenster **IP-naam Lijst van gewenste personen** veld.
+1. In de **IP-Lijst van gewenste personen toevoegen** voert u een naam in die u wilt gebruiken om naar de lijst van gewenste personen in het dialoogvenster **IP-naam Lijst van gewenste personen** veld.
 
    * Deze naam is alleen ter informatie en moet beschrijvend zijn om u te helpen de lijst te identificeren.
 
@@ -36,6 +36,6 @@ Een gebruiker in het dialoogvenster **Zakelijke eigenaar** of **Implementatiebeh
 
    * Meerdere blokken kunnen worden gescheiden door een komma of een tab.
 
-1. Klikken **Opslaan** om uw inzending te bevestigen.
+1. Klikken **Opslaan**.
 
 Na het bewaren, verschijnt de pas gecreëerde IP lijst van gewenste personen als rij in de lijst in **IP-Lijsten van gewenste personen** pagina.

@@ -1,6 +1,6 @@
 ---
 title: AEM instellen met meerdere handelssystemen
-description: Leer hoe u AEM kunt instellen met Multiple Commerce Systems. Dit staat projecten toe om enige laag van het ervaringsbeheer te steunen die met veelvoudige Adobe of derdehandel achtergronden voor multibrand, multiregion winkelcentra verbindt.
+description: Leer hoe u Adobe Experience Manager instelt met Multiple Commerce Systems. Dit staat projecten toe om één enkele laag van het ervaringsbeheer te steunen die met veelvoudige Adobe of derdehandel achtergronden voor multi-brand, multi-region opslagronts verbindt.
 sub-product: Commerce
 version: Cloud Service
 doc-type: technical-video
@@ -12,17 +12,17 @@ level: Beginner
 kt: 10529
 thumbnail: 346811.jpeg
 exl-id: 5328fe30-79ca-4496-8ebd-f1ef51ccfccf
-source-git-commit: 57477a041c51b3e1fe120ec94e1420b49af56f12
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
 
 # Meerdere handelssystemen instellen
 
-Het enige AEM CIF systeem kan worden gebruikt om met veelvoudige Adobe of derdehandelsystemen te verbinden om geavanceerde plaatsingen te steunen. Dit is nuttig in gevallen van multi-regio, multi-brand winkelcentra waar de enige laag van het ervaringsbeheer het de aanmaak en levering van handelsinhoud vereenvoudigt. Dit helpt organisaties ook tijd aan waarde (TTV) te versnellen en de totale kosten van eigendom (TCO) te verminderen.
+Het enige Adobe Experience Manager (AEM) CIF systeem kan worden gebruikt om met veelvoudige Adobe of derdehandelsystemen te verbinden om geavanceerde plaatsingen te steunen. Dit is nuttig in gevallen van multi-regio, multi-brand winkelcentra waar de enige laag van het ervaringsbeheer het de aanmaak en levering van handelsinhoud vereenvoudigt. Dit helpt organisaties ook om tijd aan waarde (TTV) te versnellen en de totale kosten van eigendom (TCO) te verminderen.
 
-Een videoanalyse die detailleert hoe te opstelling AEM met veelvoudige Adobe handelmilieu&#39;s. De functies voor AEM beheer van meerdere sites (MSM), zoals Live Copy en Taal Copy, worden gebruikt met CIF (Commerce Integration Framework) om een multiregio-winkel te maken waarin __EU-regio-winkelcentra__ verbinden met __EU Adobe Commerce__ en __Noordamerikaanse (NA) regio storefront__ verbinden met __NA Adobe Commerce__ systeem.
+Een videoanalyse die detailleert hoe te opstelling AEM met veelvoudige de handelmilieu&#39;s van de Adobe. Het AEM beheer van meerdere sites (MSM) bevat functies zoals Live Copy en Taalkopie. Deze functies worden samen met het Commerce integration framework (CIF) gebruikt om een winkel met meerdere regio&#39;s te maken waarin __EU-regio-bossen__ verbinden met __EU-Adobe Commerce__ en __Noordamerikaanse (NA) regio storefront__ verbinden met __NA ADOBE COMMERCE__ systeem.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346811/?quality=12&learn=on)
