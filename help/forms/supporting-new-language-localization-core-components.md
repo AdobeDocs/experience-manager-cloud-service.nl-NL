@@ -1,15 +1,15 @@
 ---
 title: Hoe kunt u ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier op basis van kerncomponenten?
-description: Met AEM Forms kunt u nieuwe landinstellingen toevoegen voor het lokaliseren van adaptieve formulieren.
-source-git-commit: 0a1310290c25a94ffe6f95ea6403105475ef5dda
+description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formulier.
+source-git-commit: 056aecd0ea1fd9ec1e4c05299d2c50bca161615f
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
 
-# Een landinstelling toevoegen voor Adaptive Forms op basis van Core Components {#supporting-new-locales-for-adaptive-forms-localization}
 
+# Een landinstelling toevoegen voor Adaptive Forms op basis van Core Components {#supporting-new-locales-for-adaptive-forms-localization}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -18,26 +18,32 @@ ht-degree: 0%
 
 AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR).
 
-U kunt ook ondersteuning toevoegen voor meer landinstellingen, zoals Hindi(hi_IN).
+## Hoe wordt de landinstelling geselecteerd voor een adaptief formulier?
 
-<!-- 
-## Understanding locale dictionaries {#about-locale-dictionaries}
+Er zijn twee methoden voor het identificeren en selecteren van de landinstelling van een adaptief formulier wanneer dit wordt gegenereerd:
 
-The localization of adaptive forms relies on two types of locale dictionaries:
+* **Met de [landinstelling] Kiezer in de URL**: Bij het genereren van een adaptief formulier identificeert het systeem de aangevraagde landinstelling door de [landinstelling] in de URL van het aangepaste formulier. De URL heeft de volgende notatie: http:/[URL AEM Forms-server]/content/forms/af/[afName].[landinstelling].html?wcmmode=disabled. Het gebruik van [landinstelling] kunt u het adaptieve formulier in cache plaatsen.
 
-*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[AEM Forms as a Cloud Service Author instance]/libs/cq/i18n/gui/translator.html`.
+* De parameters worden in de onderstaande volgorde opgehaald:
 
-*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on.  These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+   * Request-parameter `afAcceptLang`: Als u de landinstelling van de browser van de gebruiker wilt overschrijven, kunt u de aanvraagparameter afAcceptLang doorgeven. Met deze URL wordt bijvoorbeeld afgedwongen dat het formulier wordt weergegeven in de landinstelling Canadees Frans: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
 
--->
+   * Landinstelling browser (Accept-Language Header): Het systeem houdt ook rekening met de landinstelling van de browser van de gebruiker, die in de aanvraag wordt opgegeven met behulp van de `Accept-Language` header.
+
+  Als er geen clientbibliotheek voor de aangevraagde landinstelling beschikbaar is, controleert het systeem of er een clientbibliotheek bestaat voor de taalcode in de landinstelling. Als de aangevraagde landinstelling bijvoorbeeld `en_ZA` (Zuid-Afrikaans Engels) en er is geen clientbibliotheek voor `en_ZA`, gebruikt het adaptieve formulier de clientbibliotheek voor en (Engels), indien beschikbaar. Als geen van beide is gevonden, wordt het adaptieve formulier opnieuw gesorteerd naar het woordenboek voor de `en` landinstelling.
+
+  Als de landinstelling eenmaal is vastgesteld, wordt in het adaptieve formulier het bijbehorende formulierspecifieke woordenboek geselecteerd. Als het woordenboek voor de aangevraagde landinstelling niet wordt gevonden, wordt standaard het woordenboek gebruikt in de taal waarin het adaptieve formulier is gemaakt.
+
+  Als er geen landinstellingsinformatie beschikbaar is, wordt het adaptieve formulier weergegeven in de oorspronkelijke taal, de taal die wordt gebruikt tijdens de ontwikkeling van het formulier
+
 
 ## Vereisten {#prerequistes}
 
 Voordat u ondersteuning voor een nieuwe landinstelling gaat toevoegen,
 
-* Installeer een normale tekstverwerker (IDE) voor eenvoudige bewerking. De voorbeelden in dit document zijn gebaseerd op Microsoft VS-code.
+* Installeer een normale tekstverwerker (IDE) voor eenvoudige bewerking. De voorbeelden in dit document zijn gebaseerd op de Code van Microsoft® Visual Studio.
 * Clone the Adaptive Forms Core Components repository. De gegevensopslagruimte klonen:
-   1. Open de opdrachtregel of het tijdelijke venster en navigeer naar een locatie waar u de opslagplaats wilt opslaan. Bijvoorbeeld `/adaptive-forms-core-components`
+   1. Open de opdrachtregel of het terminalvenster en navigeer naar een locatie waar u de opslagplaats wilt opslaan. Bijvoorbeeld `/adaptive-forms-core-components`
    1. Voer de volgende opdracht uit om de gegevensopslagruimte te klonen:
 
       ```SHELL
@@ -65,14 +71,14 @@ Ga als volgt te werk als u ondersteuning voor een nieuwe landinstelling wilt toe
 
    Vervangen `<my-org>` en `<my-program>` in de bovenstaande URL met de naam van uw organisatie en het programma. Voor gedetailleerde instructies voor het verkrijgen van de naam van de organisatie, de naam van het programma of het volledige pad van uw Git-opslagplaats en de gegevens die nodig zijn om de opslagplaats te klonen, raadpleegt u de [Toegang tot it](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) artikel.
 
-   Na succesvolle voltooiing van bevel, een omslag `<my-program>` wordt gemaakt. Het bevat de inhoud die is gekloond uit de Git-opslagplaats. In de rest van het artikel wordt de map aangeduid als: `[AEM Forms as a Cloud Service Git repostory]`.
+   Na succesvolle voltooiing van bevel, een omslag `<my-program>` wordt gemaakt. Het bevat de inhoud die is gekloond uit de Git-opslagplaats. In de rest van het artikel wordt de map aangeduid als: `[AEM Forms as a Cloud Service Git repository]`.
 
 
 ### De nieuwe landinstelling toevoegen aan de Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
 
-1. Open de repository map, gekloond in vorige sectie, in een onbewerkte teksteditor.
-1. Ga naar de `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` map. U kunt de `<appid>` in de `archetype.properties` bestanden van het project.
-1. Open de `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` bestand voor bewerking. Als het bestand niet bestaat, maakt u het. Een voorbeeldbestand met ondersteunde landinstellingen ziet er als volgt uit:
+1. Open de repository map, gekloond in de vorige sectie, in een onbewerkte teksteditor.
+1. Ga naar de `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` map. U kunt de `<appid>` in de `archetype.properties` bestanden van het project.
+1. Open de `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` bestand voor bewerking. Als het bestand niet bestaat, maakt u het. Een voorbeeldbestand met ondersteunde landinstellingen ziet er als volgt uit:
 
    ![Een voorbeeldgids Localization Service.cfg.json](locales.png)
 
@@ -86,14 +92,14 @@ AEM Forms biedt een voorbeeldclientbibliotheek waarmee u eenvoudig nieuwe landin
 1. Open de Adaptive Forms Core Components-opslagplaats in uw normale teksteditor. Als de repository niet gekloond is, zie [Vereisten](#prerequistes) voor instructies om de gegevensopslagplaats te klonen.
 1. Ga naar de `/aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs` directory.
 1. De `clientlib-it-custom-locale` directory.
-1. Navigeren naar `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` en plak de `clientlib-it-custom-locale` directory.
+1. Navigeren naar `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` en plak de `clientlib-it-custom-locale` directory.
 
 
 ### Een landspecifiek bestand maken {#locale-specific-file}
 
-1. Ga naar `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
+1. Ga naar `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Zoek de [English locale.json file on GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), die de meest recente set standaardtekenreeksen bevat die in het product zijn opgenomen.
-1. Maak een nieuw JSON-bestand voor uw specifieke landinstelling.
+1. Maak een .json-bestand voor uw specifieke landinstelling.
 1. In het nieuwe .json-bestand weerspiegelt u de structuur van het Engelse landinstellingsbestand.
 1. Vervang de Engelse taaltekenreeksen in het JSON-bestand door de overeenkomstige gelokaliseerde tekenreeksen voor uw taal.
 1. Sla het bestand op en sluit het.
@@ -103,7 +109,7 @@ AEM Forms biedt een voorbeeldclientbibliotheek waarmee u eenvoudig nieuwe landin
 
 Voer deze stap alleen uit als de `<locale>` u toevoegt behoort niet tot `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
-1. Ga naar de `[AEM Forms as a Cloud Service Git repostory]/ui.content/src/main/content/jcr_root/etc/` map.
+1. Ga naar de `[AEM Forms as a Cloud Service Git repository]/ui.content/src/main/content/jcr_root/etc/` map.
 
 1. Een `etc` map onder de `jcr_root` map, indien nog niet aanwezig.
 
@@ -175,14 +181,13 @@ Nadat de landinstelling is geïdentificeerd, wordt in het adaptieve formulier he
 
 Als er geen landinstellingsinformatie beschikbaar is, wordt het adaptieve formulier weergegeven in de oorspronkelijke taal, de taal die wordt gebruikt tijdens de ontwikkeling van het formulier.
 
-<!--
-Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-## Best Practices to support for new localization {#best-practices}
+## Aanbevolen procedures voor ondersteuning van nieuwe lokalisatie {#best-practices}
 
-*   Adobe recommends creating a translation project after creating an Adaptive Form.
+* Adobe raadt u aan een vertaalproject te maken nadat u een adaptief formulier hebt gemaakt.
 
-*   When new fields are added in an existing Adaptive Form:
-    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
-    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
--->
+* Wanneer nieuwe velden worden toegevoegd aan een bestaand adaptief formulier:
+   * **Voor automatische vertaling**: Maak het woordenboek opnieuw en voer het vertaalproject uit. Velden die na het maken van een vertaalproject aan een adaptief formulier zijn toegevoegd, blijven onvertaald.
+   * **Voor menselijke vertaling**: Exporteer het woordenboek door `[server:port]/libs/cq/i18n/gui/translator.html`. Werk het woordenboek voor de zojuist toegevoegde velden bij en upload het.
+
+
