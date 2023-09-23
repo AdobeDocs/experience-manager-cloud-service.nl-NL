@@ -1,9 +1,9 @@
 ---
-title: Hoe kunt u ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier op basis van kerncomponenten?
+title: Hoe kunt u ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier op basis van Core Components?
 description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formulier.
-source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
+source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1254'
 ht-degree: 0%
 
 ---
@@ -163,25 +163,6 @@ Voer de volgende stappen uit om een voorvertoning weer te geven van een adaptief
 1. Selecteer een adaptief formulier en klik op **Voorvertonen als HTML**.
 1. Toevoegen `&afAcceptLang=<locale-name>` in de URL van een adaptief formulier.
 1. De pagina vernieuwen en het adaptieve formulier wordt weergegeven in een opgegeven landinstelling.
-
-Er zijn twee methoden om de landinstelling van een adaptief formulier te bepalen. Wanneer een adaptief formulier wordt weergegeven, geeft dit de aangevraagde landinstelling aan met:
-
-* De `[local]` in het aangepaste formulier-URL. De opmaak van de URL is `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Gebruiken `[local]` kunt u een adaptief formulier in cache plaatsen.
-
-* De volgende parameters in de vermelde volgorde ophalen:
-
-   * Request-parameter `afAcceptLang`
-Als u de browserlandinstelling van gebruikers wilt overschrijven, kunt u het `afAcceptLang` request parameter to force the locale. Met de volgende URL wordt bijvoorbeeld gedwongen het formulier te genereren in de landinstelling Canadees-Frans:
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
-
-   * De landinstelling van de browser die voor de gebruiker is ingesteld. Deze landinstelling wordt in de aanvraag opgegeven met de functie `Accept-Language` header.
-
-Als er geen clientbibliotheek voor de aangevraagde landinstelling bestaat, wordt in de bibliotheek gecontroleerd of er taalcode in de landinstelling aanwezig is. Als de aangevraagde landinstelling bijvoorbeeld `en_ZA` (Zuid-Afrikaans Engels) en de clientbibliotheek voor `en_ZA` niet bestaat, gebruikt het adaptieve formulier de clientbibliotheek voor `en` (Engels) taal, als deze bestaat. Als er echter geen van deze profielen bestaat, wordt in het adaptieve formulier het woordenboek gebruikt voor `en` landinstelling.
-
-Nadat de landinstelling is geïdentificeerd, wordt in het adaptieve formulier het formulierspecifieke woordenboek gekozen. Als het formulierspecifieke woordenboek voor de aangevraagde landinstelling niet wordt gevonden, wordt het woordenboek gebruikt voor de taal waarin het adaptieve formulier is geschreven.
-
-Als er geen landinstellingsinformatie beschikbaar is, wordt het adaptieve formulier weergegeven in de oorspronkelijke taal, de taal die wordt gebruikt tijdens de ontwikkeling van het formulier.
-
 
 ## Aanbevolen procedures voor ondersteuning van nieuwe lokalisatie {#best-practices}
 
