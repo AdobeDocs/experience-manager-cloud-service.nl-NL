@@ -1,9 +1,9 @@
 ---
 title: Hoe kunt u ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier op basis van Core Components?
 description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formulier.
-source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
+source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,17 @@ AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Sp
 
 ## Hoe wordt de landinstelling geselecteerd voor een adaptief formulier?
 
-Voordat u een nieuwe landinstelling toevoegt voor Adaptive Forms, moet u begrijpen hoe een landinstelling is geselecteerd voor een adaptief formulier. Er zijn twee methoden voor het identificeren en selecteren van de landinstelling van een adaptief formulier wanneer dit wordt gegenereerd:
+Voordat u een landinstelling toevoegt voor Adaptive Forms, moet u begrijpen hoe een landinstelling is geselecteerd voor een adaptief formulier. Er zijn twee methoden om de landinstelling voor een adaptief formulier te identificeren en te selecteren wanneer het wordt gegenereerd:
 
-* **Met de [landinstelling] Kiezer in de URL**: Bij het genereren van een adaptief formulier identificeert het systeem de aangevraagde landinstelling door de [landinstelling] in de URL van het aangepaste formulier. De URL heeft de volgende notatie: http:/[URL AEM Forms-server]/content/forms/af/[afName].[landinstelling].html?wcmmode=disabled. Het gebruik van [landinstelling] kunt u het adaptieve formulier in cache plaatsen.
+* **Met de `locale` Kiezer in de URL**: Bij het genereren van een adaptief formulier identificeert het systeem de aangevraagde landinstelling door de [landinstelling] in de URL van het aangepaste formulier. De URL heeft de volgende notatie: http:/[URL AEM Forms-server]/content/forms/af/[afName].[landinstelling].html?wcmmode=disabled. Het gebruik van [landinstelling] kunt u het adaptieve formulier in cache plaatsen. De URL `www.example.com/content/forms/af/contact-us.hi.html?wcmmmode=disabled` geeft het formulier weer in het Hindi.
 
 * De parameters worden in de onderstaande volgorde opgehaald:
 
-   * **Request-parameter`afAcceptLang`**: Als u de landinstelling van de browser van de gebruiker wilt overschrijven, kunt u de aanvraagparameter afAcceptLang doorgeven. Met deze URL wordt bijvoorbeeld afgedwongen dat het formulier wordt weergegeven in de landinstelling Canadees Frans: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **Met de `afAcceptLang`request, parameter**: Als u de landinstelling van de browser van de gebruiker wilt overschrijven, kunt u de aanvraagparameter afAcceptLang doorgeven. Bijvoorbeeld de `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr` URL dwingt AEM Forms Server af om het formulier te genereren in de Canadese Franse landinstelling.
 
-   * **Landinstelling browser (Koptekst voor geaccepteerde taal)**: Het systeem houdt ook rekening met de landinstelling van de browser van de gebruiker, die in de aanvraag is opgegeven met de instelling `Accept-Language` header.
+   * **De landinstelling van de browser gebruiken (Koptekst van geaccepteerde taal)**: Het systeem houdt ook rekening met de landinstelling van de browser van de gebruiker, die in de aanvraag is opgegeven met de instelling `Accept-Language` header.
 
-  Als er geen clientbibliotheek voor de aangevraagde landinstelling beschikbaar is, controleert het systeem of er een clientbibliotheek bestaat voor de taalcode in de landinstelling. Als de aangevraagde landinstelling bijvoorbeeld `en_ZA` (Zuid-Afrikaans Engels) en er is geen clientbibliotheek voor `en_ZA`In het Adaptief formulier wordt de clientbibliotheek voor en (Engels) gebruikt, indien beschikbaar. Als geen van beide is gevonden, wordt het adaptieve formulier opnieuw gesorteerd naar het woordenboek voor de `en` landinstelling.
+  Als een clientbibliotheek (het proces voor het maken en gebruiken van de bibliotheek wordt verderop in dit artikel behandeld) voor de aangevraagde landinstelling niet beschikbaar is, controleert het systeem of er een clientbibliotheek bestaat voor de taalcode binnen de landinstelling. Als de aangevraagde landinstelling bijvoorbeeld `en_ZA` (Zuid-Afrikaans Engels) en er is geen clientbibliotheek voor `en_ZA`In het Adaptief formulier wordt de clientbibliotheek voor en (Engels) gebruikt, indien beschikbaar. Als geen van beide is gevonden, wordt het adaptieve formulier opnieuw gesorteerd naar het woordenboek voor de `en` landinstelling.
 
   Als de landinstelling eenmaal is vastgesteld, wordt in het adaptieve formulier het bijbehorende formulierspecifieke woordenboek geselecteerd. Als het woordenboek voor de aangevraagde landinstelling niet wordt gevonden, wordt standaard het woordenboek gebruikt in de taal waarin het adaptieve formulier is gemaakt.
 
@@ -39,19 +39,21 @@ Voordat u een nieuwe landinstelling toevoegt voor Adaptive Forms, moet u begrijp
 
 ## Vereisten {#prerequistes}
 
-Voordat u ondersteuning voor een nieuwe landinstelling gaat toevoegen,
+Voordat u een landinstelling toevoegt:
 
-* Installeer een normale tekstverwerker (IDE) voor eenvoudige bewerking. De voorbeelden in dit document zijn gebaseerd op de Code van Microsoft® Visual Studio.
+* Installeer een normale tekstverwerker (IDE) voor eenvoudige bewerking. De voorbeelden in dit document zijn gebaseerd op [Microsoft® Visual Studio-code](https://code.visualstudio.com/download).
 * Een versie van [Git](https://git-scm.com), indien niet beschikbaar op uw computer.
 * Klonen met [Adaptieve Forms Core-componenten](https://github.com/adobe/aem-core-forms-components) opslagplaats. De gegevensopslagruimte klonen:
-   1. Open de opdrachtregel of het terminalvenster en navigeer naar een locatie waar u de opslagplaats wilt opslaan. Bijvoorbeeld `/adaptive-forms-core-components`
+   1. Open de opdrachtregel of het terminalvenster en navigeer naar een locatie waar u de opslagplaats wilt opslaan. Bijvoorbeeld, `/adaptive-forms-core-components`
    1. Voer de volgende opdracht uit om de gegevensopslagruimte te klonen:
 
       ```SHELL
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  De gegevensopslagruimte bevat een clientbibliotheek die nodig is om een landinstelling toe te voegen. In de rest van het artikel wordt de map aangeduid als: [Adaptive Forms Core Components-opslagplaats].
+  De gegevensopslagruimte bevat een clientbibliotheek die nodig is om een landinstelling toe te voegen.
+
+  Als de opdracht succesvol is uitgevoerd, wordt de opslagplaats gekloond naar de `aem-core-forms-components` op uw computer. In de rest van het artikel wordt de map aangeduid als: [Adaptive Forms Core Components-opslagplaats].
 
 
 ## Een landinstelling toevoegen {#add-localization-support-for-non-supported-locales}
@@ -169,7 +171,13 @@ Voer de volgende stappen uit om een voorvertoning weer te geven van een adaptief
 * Adobe raadt u aan een vertaalproject te maken nadat u een adaptief formulier hebt gemaakt.
 
 * Wanneer nieuwe velden worden toegevoegd aan een bestaand adaptief formulier:
-   * **Voor automatische vertaling**: Maak het woordenboek opnieuw en voer het vertaalproject uit. Velden die na het maken van een vertaalproject aan een adaptief formulier zijn toegevoegd, blijven onvertaald.
-   * **Voor menselijke vertaling**: Exporteer het woordenboek door `[server:port]/libs/cq/i18n/gui/translator.html`. Werk het woordenboek voor de zojuist toegevoegde velden bij en upload het.
+   * **Voor automatische vertaling**: Maak het woordenboek opnieuw en [het vertaalproject uitvoeren](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Velden die na het maken van een vertaalproject aan een adaptief formulier zijn toegevoegd, blijven onvertaald.
+   * **Voor menselijke vertaling**: Exporteer het woordenboek met de gebruikersinterface op `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Werk het woordenboek voor de zojuist toegevoegde velden bij en upload het.
+
+## Meer weergeven
+
+* [Gebruik machinevertaling of menselijke vertaling om een adaptief formulier met kerncomponenten te vertalen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Opnamedocument genereren voor Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+* [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 
