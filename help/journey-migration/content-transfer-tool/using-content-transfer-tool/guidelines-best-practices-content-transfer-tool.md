@@ -2,7 +2,7 @@
 title: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 description: Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9212042db782dc413b64d40ebde096c12d754f97
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 14%
@@ -49,7 +49,7 @@ De algemene formule voor het berekenen van de vereiste vrije schijfruimte is als
    * *Grootte van node-opslagplaats*: De grootte van de segmentopslagdirectory of de grootte van de MongoDB-database.
 Voor een segmentopslagplaats van 20 GB is dus 94 GB aan vrije schijfruimte vereist.
 
-* Een migratieset moet gedurende de gehele activiteit van de inhoudsoverdracht worden gehandhaafd om de toevoeging van inhoud te steunen. Per project kunnen maximaal vijf migratiesets worden gemaakt en onderhouden in Cloud Acceleration Manager tijdens de activiteit voor het overbrengen van inhoud. Als u meer dan vijf migratiesets nodig hebt, moet u een tweede project maken in Cloud Acceleration Manager. Dit vereist echter extra projectbeheer en beheer buiten het product om te voorkomen dat inhoud op het doel door meerdere gebruikers wordt overschreven.
+* Een migratieset moet gedurende de gehele activiteit van de inhoudsoverdracht worden gehandhaafd om de toevoeging van inhoud te steunen. Per project kunnen maximaal twintig migratiesets worden gemaakt en onderhouden in Cloud Acceleration Manager tijdens de activiteit voor het overbrengen van inhoud. Als er meer dan twintig migratiesets nodig zijn, moet u een tweede project maken in Cloud Acceleration Manager. Dit vereist echter extra projectbeheer en beheer buiten het product om te voorkomen dat inhoud op het doel door meerdere gebruikers wordt overschreven.
 
 * Wijzig de installatiemap van het gereedschap CTT niet. Standaard vindt de installatie plaats in het crx-quickstart/cloud-migratiepad. Deze specifieke locatie wordt intern gebruikt door andere bibliotheken. Als u dit pad wijzigt, kan dit leiden tot extractieproblemen.
 

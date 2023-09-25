@@ -2,7 +2,7 @@
 title: Overzicht van de tool Content Transfer
 description: Leer hoe u het gereedschap Inhoud overbrengen gebruikt om inhoud van een on-premise AEM-instantie over te brengen naar AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 31%
@@ -47,7 +47,7 @@ De overdracht van content bestaat uit twee fasen:
 
 Een migratieset heeft de volgende kenmerken:
 
-* Met de nieuwe versie kunt u maximaal vijf migratiesets maken in een project dat is gemaakt in Cloud Acceleration Manager.
+* Met de nieuwe versie kunt u maximaal twintig migratiesets maken in een project dat is gemaakt in Cloud Acceleration Manager.
 * Elke migratieset moet een unieke naam hebben.
 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.

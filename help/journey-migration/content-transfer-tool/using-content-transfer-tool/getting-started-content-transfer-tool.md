@@ -2,7 +2,7 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Leer hoe u aan de slag kunt met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7de874f607c98501052ddb715c4af98f6c5d5324
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 6%
@@ -86,7 +86,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
    >[!NOTE]
    >
-   >Per project kunnen maximaal vijf migratiesets, inclusief verlopen sets, worden gemaakt in Cloud Acceleration Manager.
+   >Per project kunnen maximaal twintig migratiesets worden gemaakt, inclusief verlopen sets, in Cloud Acceleration Manager.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
