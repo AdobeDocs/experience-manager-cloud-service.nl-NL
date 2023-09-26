@@ -2,12 +2,13 @@
 title: Basisbewerkingen
 description: Geniet van comfortabel navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 3%
 
 ---
+
 
 # Basisbewerkingen {#basic-handling}
 
@@ -17,6 +18,8 @@ Dit document is ontworpen om een overzicht te geven van de basisafhandeling bij 
 >
 >* Bepaalde functionaliteit is niet in alle consoles beschikbaar en in sommige consoles is mogelijk aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit wordt meer in detail besproken op andere pagina&#39;s.
 >* Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [consoles gebruiken](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) en [pagina&#39;s bewerken](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+{{edge-delivery-authoring}}
 
 ## Een interface met aanraakbediening {#a-touch-enabled-ui}
 

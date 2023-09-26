@@ -2,12 +2,13 @@
 title: Authoring van concepten
 description: Leer de concepten ontwerpen in AEM, gebruikend de auteur, voorproef en publicatiemilieu's.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 1%
 
 ---
+
 
 # Authoring van concepten {#authoring-concepts}
 
@@ -26,6 +27,8 @@ De auteursomgeving verstrekt de mechanismen om, deze inhoud tot stand te brengen
 ![Diagram van auteur, uitgever, en verzenders](/help/sites-cloud/authoring/assets/author-publish.png)
 
 In de auteursomgeving, wordt de functionaliteit van AEM ter beschikking gesteld door AEM auteursgebruikersinterface. Voor het publicatiemilieu, ontwerpt u het volledige blik-en-gevoel van de interface die aan uw gebruikers ter beschikking wordt gesteld.
+
+{{edge-delivery-authoring}}
 
 ## Auteursomgeving {#author-environment}
 

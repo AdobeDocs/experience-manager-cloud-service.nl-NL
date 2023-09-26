@@ -2,12 +2,13 @@
 title: Pagina's maken en indelen
 description: Leer hoe u uw website kunt ordenen door pagina's met AEM te maken en te beheren.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2543'
 ht-degree: 2%
 
 ---
+
 
 # Pagina&#39;s maken en indelen {#creating-and-organizing-pages}
 
@@ -26,6 +27,8 @@ In dit document wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Ad
 >[!TIP]
 >
 >Er zijn een aantal [sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) die u kunt gebruiken vanuit de websiteconsole om uw pagina&#39;s efficiënter te ordenen.
+
+{{edge-delivery-authoring}}
 
 ## Uw website ordenen {#organizing-your-website}
 

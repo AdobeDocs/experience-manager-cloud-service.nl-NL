@@ -2,12 +2,13 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 4%
 
 ---
+
 
 # Paginacontent bewerken{#editing-page-content}
 
@@ -31,6 +32,8 @@ Inhoud wordt toegevoegd met [componenten](/help/sites-cloud/authoring/features/c
 >[!TIP]
 >
 >Wanneer in **Bewerken** in de modus, zijn koppelingen in de inhoud zichtbaar, maar **niet toegankelijk**. Gebruiken [Voorvertoningsmodus](#previewing-pages) als u wilt navigeren met de koppelingen in de inhoud.
+
+{{edge-delivery-authoring}}
 
 ## Werkbalk Pagina {#page-toolbar}
 

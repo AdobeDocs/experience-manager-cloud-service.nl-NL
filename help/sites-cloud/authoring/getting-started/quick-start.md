@@ -2,12 +2,13 @@
 title: Handleiding Snel aan de slag met de authoring van pagina's
 description: Een snelle gids op hoog niveau waarmee u pagina-inhoud kunt gaan ontwerpen
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 4%
 
 ---
+
 
 # Handleiding Snel aan de slag met de authoring van pagina&#39;s {#quick-guide-to-authoring-pages}
 
@@ -20,6 +21,8 @@ Zie voor meer informatie over ontwerpen met AEM:
 
 * [Concepten van authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [Basisbewerkingen](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+
+{{edge-delivery-authoring}}
 
 ## Enkele snelle tips {#a-few-quick-hints}
 
