@@ -1,7 +1,7 @@
 ---
 title: Aan de slag met Edge Delivery Services
-description: Aan de slag met Edge Delivery Services
-source-git-commit: 22a3795340add4ae29ec690b41baef96e8fb4adc
+description: Aan de slag met Edge Delivery Services.
+source-git-commit: 6334efceb9abae560ae77c133df1a70ffb438e6a
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -27,7 +27,7 @@ In het volgende diagram ziet u hoe u inhoud in Microsoft Word (op documenten geb
 
 De levering van de rand is een composable reeks diensten die voor een hoge graad van flexibiliteit in toestaat hoe u inhoud op uw website ontwerpt. Zoals eerder vermeld, kunt u beide [AEM maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) en [op documenten gebaseerd schrijven](https://www.hlx.live/docs/authoring).
 
-U kunt bijvoorbeeld inhoud rechtstreeks vanuit Microsoft Word of Goggle Docs gebruiken. Dit betekent dat documenten uit deze bronnen pagina&#39;s op uw website kunnen worden. Daarnaast kunnen koppen, lijsten, afbeeldingen en lettertype-elementen allemaal van de oorspronkelijke bron naar de website worden overgebracht. De nieuwe inhoud wordt direct toegevoegd zonder een herbouwingsproces.
+U kunt inhoud bijvoorbeeld rechtstreeks vanuit Microsoft Word of Google Docs gebruiken. Dit betekent dat documenten uit deze bronnen pagina&#39;s op uw website kunnen worden. Daarnaast kunnen koppen, lijsten, afbeeldingen en lettertype-elementen allemaal van de oorspronkelijke bron naar de website worden overgebracht. De nieuwe inhoud wordt direct toegevoegd zonder een herbouwingsproces.
 
 De hefboomwerkingen van de Levering van de rand GitHub zodat kunnen de klanten code van hun bewaarplaats direct beheren en opstellen GitHub. U kunt bijvoorbeeld inhoud schrijven in Google Docs of Microsoft Word en de functionaliteit van uw site kan worden ontwikkeld met CSS en JavaScript in GitHub. Wanneer u klaar bent, kunt u de browser van de Sidekick extensie gebruiken om inhoudsupdates voor te vertonen en te publiceren.
 
