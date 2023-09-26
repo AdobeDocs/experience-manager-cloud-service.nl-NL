@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API
-description: Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een belangrijk stuk van AEM koploze leveringseigenschap.
+description: Meer informatie over ondersteuning voor Content Fragments in de HTTP API Middelen, een belangrijke Adobe Experience Manager-functie voor headless-levering.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1793'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een belangrijk stuk van AEM koploze leveringseigenschap.
+Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een belangrijk stuk van de  (AEM) hoofdloze leveringseigenschap van Adobe Experience Manager.
 
 >[!NOTE]
 >
@@ -30,13 +30,13 @@ Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een b
 >
 >De huidige implementatie van de HTTP-API voor middelen is gebaseerd op de [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) architectonische stijl.
 
-De [REST-API voor middelen](/help/assets/mac-api-assets.md) Hiermee kunnen ontwikkelaars voor Adobe Experience Manager as a Cloud Service inhoud (opgeslagen in AEM) direct via de HTTP-API benaderen via CRUD-bewerkingen (Maken, Lezen, Bijwerken, Verwijderen).
+De [REST-API voor middelen](/help/assets/mac-api-assets.md) Hiermee kunnen ontwikkelaars voor Adobe Experience Manager as a Cloud Service via CRUD-bewerkingen (Maken, Lezen, Bijwerken, Verwijderen) rechtstreeks toegang krijgen tot inhoud (opgeslagen in AEM) via de HTTP-API.
 
-Met de API kunt u Adobe Experience Manager as a Cloud Service gebruiken als een CMS zonder kop (Content Management System) door Content Services aan te bieden voor een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken.
+Met de API kunt u Adobe Experience Manager as a Cloud Service gebruiken als een CMS zonder kop (Content Management System) door Content Services aan te bieden voor een JavaScript-front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken.
 
 Bijvoorbeeld: [Toepassingen op één pagina (SPA)](/help/implementing/developing/hybrid/introduction.md), op framework gebaseerd of aangepast, vereisen inhoud die via de HTTP-API wordt aangeboden, vaak in JSON-indeling.
 
-while [AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Verstrek een zeer uitvoerige, flexibele en klantgerichte API die vereiste Gelezen verrichtingen voor dit doel kan dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (het Beheer van de Inhoud van het Web) knowhow voor implementatie aangezien zij in pagina&#39;s moeten worden ontvangen die op specifieke AEM malplaatjes gebaseerd zijn. Niet elke SPA ontwikkelingsorganisatie heeft directe toegang tot deze kennis.
+while [AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) verstrekken een klantgerichte API die vereiste Gelezen verrichtingen voor dit doel kan dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (het Beheer van de Inhoud van het Web) knowhow voor implementatie. Dit komt omdat ze moeten worden gehost op pagina&#39;s die zijn gebaseerd op speciale AEM sjablonen. Niet elke SPA ontwikkelingsorganisatie heeft directe toegang tot deze kennis.
 
 Dit is wanneer de REST API van Activa kan worden gebruikt. Ontwikkelaars hebben direct toegang tot elementen (bijvoorbeeld afbeeldingen en inhoudsfragmenten), zonder dat ze eerst in een pagina moeten worden ingesloten en hun inhoud in geserialiseerde JSON-indeling moeten leveren.
 
@@ -64,7 +64,7 @@ Het gebruikt de `/api/assets` eindpunt en vereist de weg van de activa om tot he
 
 * Dit betekent dat toegang tot het actief moet worden verkregen tegen:
    * `/content/dam/path/to/asset`
-* U moet een aanvraag indienen:
+* Verzoek:
    * `/api/assets/path/to/asset`
 
 Bijvoorbeeld om `/content/dam/wknd/en/adventures/cycling-tuscany`, verzoek `/api/assets/wknd/en/adventures/cycling-tuscany.json`
@@ -78,7 +78,7 @@ Bijvoorbeeld om `/content/dam/wknd/en/adventures/cycling-tuscany`, verzoek `/api
 De HTTP-methode bepaalt de uit te voeren bewerking:
 
 * **GET** - om een JSON-representatie van een middel of een map op te halen
-* **POST** - om nieuwe elementen of mappen te maken
+* **POST** - om elementen of mappen te maken
 * **PUT** - om de eigenschappen van een middel of een omslag bij te werken
 * **DELETE** - om een middel of een omslag te schrappen
 
@@ -106,32 +106,32 @@ Dit betekent dat`write`) verzoeken kunnen niet worden gecombineerd tot één enk
  </thead>
  <tbody>
   <tr>
-   <td>Ondersteunde gebruikscase(s)</td>
+   <td>Ondersteunde gebruiksgevallen</td>
    <td>Algemeen doel.</td>
-   <td><p>Geoptimaliseerd voor gebruik in een toepassing voor één pagina (SPA) of in een andere (content consuming) context.</p> <p>Kan ook lay-outgegevens bevatten.</p> </td>
+   <td><p>Geoptimaliseerd voor gebruik in een toepassing voor één pagina (SPA) of in een andere (content consuming) context.</p> <p>Het kan ook lay-outinformatie bevatten.</p> </td>
   </tr>
   <tr>
    <td>Ondersteunde bewerkingen</td>
-   <td><p>Maken, lezen, bijwerken, verwijderen.</p> <p>Met extra bewerkingen afhankelijk van het type entiteit.</p> </td>
+   <td><p>Maken, lezen, bijwerken, verwijderen.</p> <p>Met extra bewerkingen, afhankelijk van het type entiteit.</p> </td>
    <td>Alleen-lezen.</td>
   </tr>
   <tr>
    <td>Toegang</td>
-   <td><p>Kan rechtstreeks worden benaderd.</p> <p>Gebruikt de <code>/api/assets </code>eindpunt, toegewezen aan <code>/content/dam</code> (in de repository).</p> 
+   <td><p>Het kan direct worden betreden.</p> <p>Gebruikt de <code>/api/assets </code>eindpunt, toegewezen aan <code>/content/dam</code> (in de repository).</p> 
    <p>Een voorbeeldpad zou er als volgt uitzien: <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
-    <td><p>Moet door een AEM component op een AEM pagina worden van verwijzingen voorzien.</p> <p>Gebruikt de <code>.model</code> om de JSON-representatie te maken.</p> <p>Een voorbeeldpad zou er als volgt uitzien:<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
+    <td><p>Er moet naar worden verwezen door een AEM component op een AEM pagina.</p> <p>Gebruikt de <code>.model</code> om de JSON-representatie te maken.</p> <p>Een voorbeeldpad zou er als volgt uitzien:<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
    </td>
   </tr>
   <tr>
    <td>Beveiliging</td>
-   <td><p>Er zijn meerdere opties mogelijk.</p> <p>OAuth wordt voorgesteld; kan los van standaardopstelling worden gevormd.</p> </td>
+   <td><p>Er zijn meerdere opties mogelijk.</p> <p>OAuth wordt voorgesteld; kan los van de standaardopstelling worden gevormd.</p> </td>
    <td>Gebruikt AEM standaardinstallatie.</td>
   </tr>
   <tr>
    <td>Architecten</td>
-   <td><p>Schrijftoegang richt zich gewoonlijk tot een auteurinstantie.</p> <p>Lees kan ook naar een publicatie-instantie worden gestuurd.</p> </td>
-   <td>Aangezien deze benadering read-only is, zal het typisch voor publiceer instanties worden gebruikt.</td>
+   <td><p>Schrijftoegang richt zich doorgaans op een instantie Auteur.</p> <p>Lees kan ook naar een instantie Publish worden geleid.</p> </td>
+   <td>Omdat deze benadering alleen-lezen is, wordt deze doorgaans gebruikt voor instanties Publish.</td>
   </tr>
   <tr>
    <td>Uitvoer</td>
@@ -149,8 +149,8 @@ Als de REST API van Middelen binnen een milieu zonder specifieke authentificatie
 >
 >Zie voor meer informatie:
 >
->* [CORS/AEM toegelicht](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
->* [Video - Ontwikkelen voor CORS met AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+>* [CORS/AEM toegelicht](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
+>* [Video - Ontwikkeling voor CORS met AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
 >
 
 In omgevingen met specifieke verificatievereisten wordt OAuth aanbevolen.
@@ -171,7 +171,7 @@ De REST API voor middelen ondersteunt paginering (voor GET-aanvragen) via de URL
 * `offset` - het nummer van de eerste (onderliggende) entiteit die moet worden opgehaald
 * `limit` - het maximumaantal geretourneerde entiteiten
 
-De reactie zal het pagineren informatie als deel van bevatten `properties` van de SIREN-uitvoer. Dit `srn:paging` eigenschap bevat het totale aantal (onderliggende) entiteiten ( `total`), de verschuiving en de limiet ( `offset`, `limit`) zoals opgegeven in de aanvraag.
+De reactie bevat het pagineren informatie als deel van `properties` van de SIREN-uitvoer. Dit `srn:paging` eigenschap bevat het totale aantal (onderliggende) entiteiten ( `total`), de verschuiving en de limiet ( `offset`, `limit`) zoals opgegeven in de aanvraag.
 
 >[!NOTE]
 >
@@ -201,15 +201,15 @@ De reactie zal het pagineren informatie als deel van bevatten `properties` van d
 
 Mappen fungeren als containers voor elementen en andere mappen. Ze weerspiegelen de structuur van de AEM-inhoudsopslagplaats.
 
-De REST API voor middelen stelt toegang tot de eigenschappen van een map beschikbaar, bijvoorbeeld de naam, titel, enz. Elementen worden weergegeven als onderliggende entiteiten van mappen en submappen.
+De REST API voor middelen stelt toegang tot de eigenschappen van een map beschikbaar. Bijvoorbeeld de naam en de titel. Elementen worden weergegeven als onderliggende entiteiten van mappen en submappen.
 
 >[!NOTE]
 >
->Afhankelijk van het type element van de onderliggende elementen en mappen bevat de lijst met onderliggende entiteiten mogelijk al de volledige set eigenschappen die de onderliggende entiteit definieert. Alternatief, slechts kan een beperkte reeks eigenschappen voor een entiteit in deze lijst van kindentiteiten worden blootgesteld.
+>Afhankelijk van het type element van de onderliggende elementen en mappen, bevat de lijst met onderliggende entiteiten mogelijk al de volledige reeks eigenschappen die de onderliggende entiteit definieert. Alternatief, slechts kan een beperkte reeks eigenschappen voor een entiteit in deze lijst van kindentiteiten worden blootgesteld.
 
 ### Assets {#assets}
 
-Als een element wordt aangevraagd, retourneert het antwoord de metagegevens van het element, zoals de titel, de naam en andere informatie, zoals gedefinieerd in het desbetreffende elementschema.
+Als een element wordt aangevraagd, retourneert het antwoord de metagegevens van het element, zoals titel, naam en andere informatie, zoals gedefinieerd in het desbetreffende elementschema.
 
 De binaire gegevens van een element worden blootgesteld als een verbinding SIREN van type `content`.
 
@@ -217,7 +217,7 @@ Elementen kunnen meerdere uitvoeringen hebben. Deze worden doorgaans weergegeven
 
 ### Contentfragmenten {#content-fragments}
 
-A [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal soort actief. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, getallen, datums.
+A [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal soort actief. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals tekst, getallen, datums.
 
 Aangezien er verschillende verschillen zijn tussen *standaard* elementen (zoals afbeeldingen of audio). Voor de afhandeling ervan gelden enkele aanvullende regels.
 
@@ -226,38 +226,38 @@ Aangezien er verschillende verschillen zijn tussen *standaard* elementen (zoals 
 Inhoudsfragmenten:
 
 * Maak geen binaire gegevens beschikbaar.
-* volledig ingesloten in de JSON-uitvoer (binnen de `properties` eigenschap).
+* Deze bestanden bevinden zich in de JSON-uitvoer (binnen de `properties` eigenschap).
 
-* Wordt ook als atomisch beschouwd, dat wil zeggen dat de elementen en variaties worden blootgesteld als onderdeel van de eigenschappen van het fragment in plaats van als koppelingen of onderliggende entiteiten. Op deze manier hebt u efficiënt toegang tot de lading van een fragment.
+* Ze worden ook als atomisch beschouwd. De elementen en variaties worden dus weergegeven als onderdeel van de eigenschappen van het fragment in plaats van als koppelingen of onderliggende entiteiten. Op deze manier hebt u efficiënt toegang tot de lading van een fragment.
 
 #### Inhoudsmodellen en inhoudsfragmenten {#content-models-and-content-fragments}
 
-De modellen die de structuur van een inhoudsfragment definiëren, worden momenteel niet via een HTTP-API weergegeven. Daarom *consument* moet op de hoogte zijn van het model van een fragment (minimaal), hoewel de meeste informatie kan worden afgeleid van de lading; als gegevenstypen, enz. maken deel uit van de definitie.
+De modellen die de structuur van een inhoudsfragment definiëren, worden momenteel niet via een HTTP-API weergegeven. Daarom *consument* moet op de hoogte zijn van het model van een fragment (ten minste minimaal), hoewel de meeste informatie kan worden afgeleid van de lading; aangezien gegevenstypen, etc. deel uitmaken van de definitie.
 
-Als u een nieuw inhoudsfragment wilt maken, moet u het pad (interne gegevensopslagruimte) van het model opgeven.
+Als u een inhoudsfragment wilt maken, moet u het pad (interne gegevensopslagruimte) van het model opgeven.
 
 #### Gekoppelde inhoud {#associated-content}
 
-Gekoppelde inhoud wordt momenteel niet weergegeven.
+Gekoppelde inhoud wordt niet weergegeven.
 
 ## Gebruiken {#using}
 
 Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomgeving gebruikt, samen met uw specifieke gebruiksscenario.
 
-* Het wordt ten zeerste aanbevolen dat het maken is gebonden aan een instantie van de auteur ([en er is momenteel geen manier om een fragment te repliceren dat moet worden gepubliceerd met deze API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
+* Aanbevolen wordt dat het maken is gebonden aan een instantie Auteur ([en er is momenteel geen manier om een fragment te repliceren dat moet worden gepubliceerd met deze API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
 * De levering is mogelijk van beide, aangezien AEM gevraagde inhoud in formaat slechts JSON dient.
 
-   * Opslag en levering vanuit een AEM auteur-instantie zouden voldoende moeten zijn voor toepassingen achter de firewall, in de mediabibliotheek.
+   * Opslag en levering van een AEM instantie van de Auteur zou voor achter-de-firewall, media bibliotheektoepassingen moeten voldoende zijn.
 
-   * Voor live webweergave wordt een AEM-publicatie-instantie aanbevolen.
+   * Voor live webweergave wordt een AEM Publish-instantie aanbevolen.
 
 >[!CAUTION]
 >
->De configuratie van de verzender op AEM wolkeninstanties kan de toegang tot `/api`.
+>De configuratie van de Verzender op AEM wolkeninstanties zou toegang tot `/api`.
 
 >[!NOTE]
 >
->Zie voor meer informatie de [API-naslag](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Met name: [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>Zie voor meer informatie de [API-naslag](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Met name: [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ## Beperkingen {#limitations}
 
@@ -265,7 +265,7 @@ Er zijn een paar beperkingen:
 
 * **Inhoudsfragmentmodellen worden momenteel niet ondersteund**: ze kunnen niet worden gelezen of gemaakt. Ontwikkelaars moeten het juiste pad naar het inhoudsfragmentmodel weten om een nieuw inhoudsfragment te kunnen maken of een bestaand inhoudsfragment bij te werken. Momenteel is de enige methode om een overzicht van deze te krijgen door het beleid UI.
 * **Verwijzingen worden genegeerd**. Er wordt momenteel niet gecontroleerd of naar een bestaand inhoudsfragment wordt verwezen. Daarom kan het verwijderen van een inhoudsfragment bijvoorbeeld resulteren in problemen op een pagina die een verwijzing naar het verwijderde inhoudsfragment bevat.
-* **JSON-gegevenstype** De REST API-uitvoer van de *JSON-gegevenstype* is momenteel *op tekenreeks gebaseerde uitvoer*.
+* **JSON-gegevenstype** De REST API-uitvoer van de *JSON-gegevenstype* is *op tekenreeks gebaseerde uitvoer*.
 
 ## Statuscodes en foutberichten {#status-codes-and-error-messages}
 
@@ -275,14 +275,14 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
   Geretourneerd wanneer:
 
-   * een inhoudsfragment aanvragen via `GET`
+   * een inhoudsfragment aanvragen als `GET`
    * het bijwerken van een inhoudsfragment via `PUT`
 
 * **201** (Gemaakt)
 
   Geretourneerd wanneer:
 
-   * een inhoudsfragment maken via `POST`
+   * een inhoudsfragment maken door `POST`
 
 * **404** (Niet gevonden)
 
@@ -301,7 +301,7 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
   In het volgende voorbeeld worden algemene scenario&#39;s weergegeven wanneer deze foutstatus wordt geretourneerd, samen met het gegenereerde foutbericht (monospace):
 
-   * Bovenliggende map bestaat niet (wanneer u een inhoudsfragment maakt via `POST`)
+   * Bovenliggende map bestaat niet (wanneer u een inhoudsfragment maakt als `POST`)
    * Er is geen inhoudsfragmentmodel opgegeven (cq:model ontbreekt), kan niet worden gelezen (vanwege een ongeldig pad of een machtigingsprobleem) of er is geen geldig fragmentmodel:
 
       * `No content fragment model specified`
@@ -324,7 +324,7 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-  De gedetailleerde foutberichten worden meestal als volgt geretourneerd:
+  De gedetailleerde foutberichten worden als volgt geretourneerd:
 
   ```xml
   {
@@ -343,7 +343,7 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
 Zie hier voor gedetailleerde API-referenties:
 
-* [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
 * [HTTP-API voor assets](/help/assets/mac-api-assets.md)
 
@@ -354,4 +354,4 @@ Zie hier voor gedetailleerde API-referenties:
 Zie voor meer informatie:
 
 * [Elementen HTTP API-documentatie](/help/assets/mac-api-assets.md)
-* [AEM Gem-sessie: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem-sessie: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=en)

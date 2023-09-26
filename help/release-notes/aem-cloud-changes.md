@@ -1,22 +1,22 @@
 ---
 title: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
-description: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
+description: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 8%
+source-wordcount: '857'
+ht-degree: 7%
 
 ---
 
-# Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
+# Opvallende wijzigingen in Adobe Experience Manager as a Cloud Service {#notable-changes-aem-cloud}
 
-AEM Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer van uw AEM-projecten. Er zijn echter een aantal verschillen tussen AEM Sites op locatie of in Adobe Managed Service in vergelijking met AEM Cloud Service. In dit document worden de belangrijke verschillen belicht.
+Adobe Experience Manager (AEM) Cloud Service biedt veel nieuwe functies en mogelijkheden voor het beheer van uw AEM. Er zijn echter enkele verschillen tussen AEM Sites op locatie of in Adobe Managed Service in vergelijking met AEM Cloud Service. In dit document worden de belangrijke verschillen belicht.
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
 >title="Opvallende wijzigingen in AEM as a Cloud Service"
->abstract="Op dit tabblad kunt u inhoud weergeven die u helpt de verschillen te begrijpen tussen AEM op locatie of in Adobe Managed Services in vergelijking met AEM as a Cloud Service."
+>abstract="Op dit tabblad kunt u inhoud weergeven die u helpt de verschillen tussen AEM op locatie of in Adobe Managed Services te begrijpen in vergelijking met AEM as a Cloud Service."
 >additional-url="https://video.tv.adobe.com/v/330543" text="Evolutie van AEM as a Cloud Service"
 
 
@@ -35,38 +35,38 @@ De belangrijkste verschillen zijn te vinden op de volgende gebieden:
 
 * [OSGi-bundels en -configuraties moeten als code worden behandeld](#osgi)
 
-* [Wijzigingen in publicatieruimte zijn niet toegestaan](#changes-to-publish-repo)
+* [Wijzigingen in de publicatieopslagplaats zijn niet toegestaan](#changes-to-publish-repo)
 
-* [Aangepaste runmodi zijn niet toegestaan](#custom-runmodes)
+* [Aangepaste uitvoermodi zijn niet toegestaan](#custom-runmodes)
 
 * [Verwijderen van replicatieagents en gerelateerde wijzigingen](#replication-agents)
 
 * [Verwijderen van klassieke gebruikersinterface](#classic-ui)
 
-* [Levering op de website publiceren](#publish-side-delivery)
+* [Levering op de publicatievorm](#publish-side-delivery)
 
 * [Afhandeling en levering van bedrijfsmiddelen](#asset-handling)
 
 ## /apps en /libs zijn onveranderlijk bij runtime {#apps-libs-immutable}
 
-Alle inhoud en submappen in `/apps` en `/libs` is alleen-lezen. Om het even welke eigenschap of douanecode die verwacht om veranderingen daar aan te brengen zal er niet doen. Er wordt een fout geretourneerd dat dergelijke inhoud alleen-lezen is en de schrijfbewerking niet kan worden voltooid. Dit heeft gevolgen voor een aantal AEM:
+Alle inhoud en submappen in `/apps` en `/libs` is alleen-lezen. Om het even welke eigenschap of douanecode die verwacht om veranderingen daar aan te brengen doet niet dit. Er wordt een fout geretourneerd dat dergelijke inhoud alleen-lezen is en de schrijfbewerking niet kan worden voltooid. Dit heeft gevolgen voor verschillende AEM:
 
 * Geen wijzigingen in `/libs` zijn überhaupt toegestaan.
    * Dit is geen nieuwe regel, nochtans werd dit niet afgedwongen in vorige on-premise versies van AEM.
-* Bedekkingen voor gebieden in `/libs` die mogen worden overschreden, zijn nog steeds toegestaan binnen `/apps`.
-   * Dergelijke overlays moeten afkomstig zijn van Git via de CI/CD-leiding.
-* Statische het ontwerpinformatie van het Malplaatje die in wordt opgeslagen `/apps` kan niet via UI worden bewerkt.
+* Bedekkingen voor gebieden in `/libs` die kunnen worden overschreden, zijn nog toegestaan binnen `/apps`.
+   * Dergelijke overlays moeten afkomstig zijn van Git via de CI/CD-pijpleiding.
+* Statische het ontwerpinformatie van het Malplaatje die in wordt opgeslagen `/apps` kan niet worden bewerkt via de gebruikersinterface.
    * Het wordt aanbevolen Bewerkbare sjablonen te gebruiken.
-   * Als de Statische Malplaatjes nog worden vereist, moet de configuratieinformatie uit Git via de pijpleiding CI/CD komen.
-* MSM de Vervaging en de douaneMSM uitrolconfiguraties moeten van Git via de pijpleiding worden geïnstalleerd CI/CD.
-* I18n vertalingsveranderingen moeten van Git via de CI/CD pijpleiding komen.
+   * Als de Statische Malplaatjes nog worden vereist, moet de configuratieinformatie uit Git als pijpleiding CI/CD komen.
+* MSM de Vervaging en de douaneMSM uitrolconfiguraties moeten van Git door middel van de pijpleiding worden geïnstalleerd CI/CD.
+* I18n de vertaalveranderingen moeten uit Git door middel van de CI/CD pijpleiding komen.
 
 ## OSGi-bundels en -configuraties moeten als code worden behandeld {#osgi}
 
 Wijzigingen in OSGi-bundels en -configuraties moeten via de CI/CD-pijplijn worden aangebracht.
 
-* Nieuwe of bijgewerkte OSGi-bundels moeten via Git via de CI/CD-pijplijn worden geïntroduceerd.
-* Wijzigingen in OSGi-configuraties kunnen alleen via de CI/CD-leiding van Git komen.
+* Nieuwe of bijgewerkte OSGi-bundels moeten via Git worden ingevoerd via de CI/CD-pijplijn.
+* De veranderingen in configuraties OSGi kunnen slechts uit Git door middel van de pijpleiding CI/CD komen.
 
 De console van het Web, die in vorige versies van AEM wordt gebruikt om bundels OSGi en configuraties te veranderen, is niet beschikbaar in AEM Cloud Service.
 
@@ -74,12 +74,12 @@ De console van het Web, die in vorige versies van AEM wordt gebruikt om bundels 
 
 Behalve wijzigingen onder de `/home` op de publicatielijst. Directe wijzigingen in de publicatiereserver zijn niet toegestaan op AEM Cloud Service. In eerdere versies van on-premise AEM of AEM op AMS kunnen wijzigingen in de code rechtstreeks worden doorgevoerd in de publicatieopslagplaats. Sommige beperkingen kunnen op de volgende manieren worden beperkt:
 
-* Voor op inhoud en inhoud gebaseerde configuratie: Breng de wijzigingen aan in de auteurinstantie en publiceer deze.
-* Voor code en configuratie: de wijzigingen in de GIT-opslagplaats aan te brengen en de CI/CD-pijpleiding uit te voeren.
+* Voor inhoud en op inhoud-gebaseerde configuratie: breng uw veranderingen op de instantie van de Auteur aan en publiceer hen.
+* Voor code en configuratie: breng uw veranderingen in de gegevensopslagplaats van GIT aan en stel de pijpleiding van CI/CD in werking om hen uit te rollen.
 
-## Aangepaste runmodi zijn niet toegestaan {#custom-runmodes}
+## Aangepaste uitvoermodi zijn niet toegestaan {#custom-runmodes}
 
-De volgende runmodes worden verstrekt uit-van-de-doos voor AEM Cloud Service:
+De volgende uitvoeringsmodi zijn beschikbaar buiten de box voor AEM Cloud Service:
 
 * `author`
 * `publish`
@@ -97,24 +97,24 @@ Aanvullende of aangepaste uitvoermodi zijn niet mogelijk in AEM Cloud Service.
 
 ## Verwijderen van replicatieagents en gerelateerde wijzigingen {#replication-agents}
 
-In AEM Cloud Service wordt inhoud gepubliceerd met [Distributie van inhoud verkopen](https://sling.apache.org/documentation/bundles/content-distribution.html). De replicatieagenten die in vorige versies van AEM worden gebruikt worden niet meer gebruikt of verstrekt, die de volgende gebieden van bestaande AEM projecten zouden kunnen beïnvloeden:
+In AEM Cloud Service wordt inhoud gepubliceerd met [Distributie van inhoud verkopen](https://sling.apache.org/documentation/bundles/content-distribution.html). De replicatieagenten die in vorige versies van AEM worden gebruikt worden niet meer gebruikt of verstrekt, die de volgende gebieden van bestaande AEM Projecten zouden kunnen beïnvloeden:
 
 * Aangepaste workflows die bijvoorbeeld inhoud doorsturen naar replicatieagents van voorvertoningsservers.
-* Aanpassing aan replicatieagenten om inhoud om te zetten
-* De omgekeerde Replicatie gebruiken om inhoud van te brengen terug naar auteur publiceren
+* Aanpassing aan replicatieagenten om inhoud om te zetten.
+* Het gebruiken van Omgekeerde Replicatie om inhoud van Publish terug naar Auteur te brengen.
 
-Bovendien merk op dat de pauze en onbruikbaar maken knopen uit de console van het replicatieagentenbeleid zijn verwijderd.
+Daarnaast worden de pauze- en uitschakelknoppen verwijderd uit de beheerconsole van de replicatieagent.
 
 ## Verwijderen van klassieke gebruikersinterface {#classic-ui}
 
 De klassieke gebruikersinterface is niet meer beschikbaar in AEM Cloud Service.
 
-## Levering op de website publiceren {#publish-side-delivery}
+## Levering op de publicatievorm {#publish-side-delivery}
 
-De versnelling van HTTP met inbegrip van CDN en verkeersbeheer voor auteur en publiceer de diensten worden verstrekt door gebrek in AEM Cloud Service.
+De versnelling van HTTP met inbegrip van CDN en verkeersbeheer voor de diensten van de Auteur en van de Publicatie worden verstrekt door gebrek in AEM Cloud Service.
 
-Voor project dat van AMS of een op-gebouw Adobe overgaat adviseert sterk leveraging ingebouwde CDN, omdat de eigenschappen binnen AEM Cloud Service voor CDN worden geoptimaliseerd verstrekt.
+Voor projecten die van AMS of een op-gebouw installatie overgaan, adviseert de Adobe sterk gebruikend ingebouwde CDN, omdat de eigenschappen binnen AEM Cloud Service voor CDN worden geoptimaliseerd verstrekt.
 
 ## Afhandeling en levering van bedrijfsmiddelen {#asset-handling}
 
-Het uploaden, verwerken en downloaden van bedrijfsmiddelen worden geoptimaliseerd in [!DNL Experience Manager Assets] als [!DNL Cloud Service]. [!DNL Assets] is nu efficiënter, maakt meer schaling mogelijk en kunt u sneller uploaden en downloaden. Bovendien is dit van invloed op de bestaande aangepaste code en bepaalde bewerkingen. Voor een lijst met wijzigingen en voor pariteit met [!DNL Experience Manager] 6.5-functies, raadpleegt u de [wijzigingen in [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Het uploaden, verwerken en downloaden van bedrijfsmiddelen worden geoptimaliseerd in [!DNL Experience Manager Assets] als [!DNL Cloud Service]. AEM [!DNL Assets] is nu efficiënter, maakt meer schaling mogelijk en kunt u sneller uploaden en downloaden. Bovendien is dit van invloed op de bestaande aangepaste code en bepaalde bewerkingen. Voor een lijst met wijzigingen en voor pariteit met [!DNL Experience Manager] 6.5-functies, raadpleegt u de [wijzigingen in [!DNL Assets]](/help/assets/assets-cloud-changes.md).

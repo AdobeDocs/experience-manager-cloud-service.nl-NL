@@ -2,9 +2,9 @@
 title: Overzicht van componenten
 description: Componenten zijn modulaire eenheden die specifieke functionaliteit realiseren om uw inhoud op uw website weer te geven
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -15,26 +15,24 @@ Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, 
 
 ## Wat zijn componenten? {#what-are-components}
 
-Componenten in AEM zijn:
-
 * Modulaire eenheden die specifieke functionaliteit realiseren om uw inhoud op uw website te presenteren.
 * Herbruikbaar.
 * Ontwikkeld als zelfstandige eenheden in één map van de opslagplaats.
 * Geen verborgen configuratiebestanden hebben.
-* Kan andere componenten bevatten.
-* Kan overal binnen om het even welk AEM systeem lopen en kan ook beperkt zijn om onder specifieke componenten te lopen.
+* Ze kunnen andere componenten bevatten.
+* Ze kunnen overal binnen elk AEM systeem worden uitgevoerd en kunnen ook beperkt zijn tot bepaalde onderdelen.
 * Een gestandaardiseerde gebruikersinterface hebben.
 * Heb bewerkingsgedrag dat kan worden gevormd.
-* Dialoogvensters gebruiken die zijn gebouwd met subelementen op basis van graniet UI-componenten.
-* worden ontwikkeld met [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html).
-* Kan worden ontwikkeld om aangepaste componenten te maken die de standaardfunctionaliteit uitbreiden.
+* Dialoogvensters van het gebruik die gebruikend subelementen worden gebouwd die op componenten van Granite UI worden gebaseerd.
+* Ze worden ontwikkeld met [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
+* Ze kunnen worden ontwikkeld om aangepaste componenten te maken die de standaardfunctionaliteit uitbreiden.
 
 Omdat componenten modulair zijn, kunt u:
 
 * Ontwikkel een nieuwe component op uw lokale instantie.
 * Implementeer deze in de testomgeving.
 * Implementeer deze in uw live ontwerpomgeving, waar auteurs en/of beheerders inhoud kunnen toevoegen en configureren.
-* Implementeer deze in uw live publicatieomgeving(en), waar ze worden gebruikt om inhoud te renderen voor bezoekers van uw website.
+* Implementeer deze in uw livepublicatieomgevingen, waar ze worden gebruikt om inhoud te renderen voor bezoekers van uw website.
 
 Elke AEM component:
 
@@ -46,7 +44,7 @@ Elke AEM component:
 
 [De AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) zijn een reeks gestandaardiseerde WCM-componenten (Web Content Management) voor AEM om de ontwikkelingstijd te versnellen en de onderhoudskosten van uw websites te verlagen.
 
-De Core Components worden geleverd met AEM as a Cloud Service en de [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustreert hoe te om componenten uit te voeren en te gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
+De Core Components worden geleverd met AEM as a Cloud Service en de [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustreert hoe u componenten kunt implementeren en gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
 
 ### Beschikbare componenten weergeven {#viewing-available-components}
 
@@ -58,7 +56,7 @@ U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagpl
 
 1. In de **[!UICONTROL Query]** tab, selecteert u `XPath` als **[!UICONTROL Type]**.
 
-1. In de **[!UICONTROL Query]** invoerveld, voer de volgende tekenreeks in:
+1. In de **[!UICONTROL Query]** Voer de volgende tekenreeks in in het invoerveld:
 
    `//element(*, cq:Component)`
 

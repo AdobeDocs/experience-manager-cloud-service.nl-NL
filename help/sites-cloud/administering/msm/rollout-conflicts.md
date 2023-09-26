@@ -4,7 +4,7 @@ description: Leer hoe u problemen met de uitrol van meerdere sitebeheer kunt beh
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 0%
@@ -21,25 +21,25 @@ Wanneer conflicterende pagina&#39;s wel bestaan (in de vertakkingen Bladeren en 
 
 Om ervoor te zorgen dat de rollout niet wordt geblokkeerd, kunnen mogelijke definities omvatten:
 
-* Welke pagina (blauwdruk of Live kopie) prioriteit krijgt tijdens de rollout
+* Welke pagina (blauwdruk of Live kopie) prioriteit heeft tijdens de rollout
 * Welke pagina&#39;s worden hernoemd en hoe
-* Hoe dit effect heeft op gepubliceerde inhoud
+* Hoe dit invloed heeft op gepubliceerde inhoud
 
-Het standaardgedrag van AEM out-of-the-box is dat gepubliceerde inhoud niet wordt beïnvloed. Dus als een pagina die handmatig is gemaakt in de vertakking Live kopie is gepubliceerd, wordt die inhoud nog steeds gepubliceerd na de conflictafhandeling en -rollout.
+Het standaardgedrag van Adobe Experience Manager (AEM) is dat gepubliceerde inhoud niet wordt beïnvloed. Dus als een pagina die handmatig is gemaakt in de vertakking Live kopie is gepubliceerd, wordt die inhoud nog steeds gepubliceerd na de conflictafhandeling en -rollout.
 
 Naast de standaardfunctionaliteit, kunnen de aangepaste conflicthandlers worden toegevoegd om verschillende regels uit te voeren. Hierdoor kunnen publicatiehandelingen ook als een afzonderlijk proces worden toegestaan.
 
 ### Voorbeeldscenario {#example-scenario}
 
-In de volgende secties gebruiken we het voorbeeld van een nieuwe pagina `b`, die in zowel de blauwdruk als de Live Copy-vertakking (handmatig gemaakt) zijn gemaakt, om de verschillende methoden voor het oplossen van conflicten te illustreren:
+In de volgende secties, een voorbeeld van een nieuwe pagina `b` wordt gebruikt en gemaakt in zowel de blauwdruk als de vertakking Live kopie (handmatig gemaakt) om de verschillende methoden voor het oplossen van conflicten te illustreren:
 
 * blauwdruk: `/b`
 
-  Een basispagina met 1 onderliggende pagina, `bp-level-1`
+  Een basispagina met één onderliggende pagina, `bp-level-1`
 
 * Live kopie: `/b`
 
-  Een pagina die handmatig is gemaakt in de vertakking Live kopie met 1 onderliggende pagina, `lc-level-1`
+  Een pagina die handmatig in de vertakking Live kopie is gemaakt met één onderliggende pagina, `lc-level-1`
 
    * Geactiveerd bij publiceren als `/b`, samen met de onderliggende pagina
 
@@ -77,9 +77,9 @@ AEM biedt:
 De standaardconflicthandler is `ResourceNameRolloutConflictHandler`
 
 * Met deze handler krijgt de blauwdrukpagina prioriteit.
-* De de dienstrangschikking voor deze manager wordt geplaatst laag, namelijk onder de standaardwaarde voor `service.ranking` bezit, aangezien de veronderstelling is dat de aangepaste managers een hogere rangschikking zullen vereisen. De rangorde is echter niet het absolute minimum om zo nodig flexibiliteit te garanderen.
+* De dienst die voor deze manager rangschikt wordt geplaatst laag. Dat wil zeggen, onder de standaardwaarde voor de `service.ranking` bezit omdat de veronderstelling is dat de aangepaste managers een hogere rangschikking nodig hebben. De rangorde is echter niet het absolute minimum om zo nodig flexibiliteit te garanderen.
 
-Deze conflicthandler geeft voorrang aan de blauwdruk. Voorbeeld: de pagina Live kopiëren `/b` wordt verplaatst binnen de vertakking Live kopie naar `/b_msm_moved`.
+Deze conflicthandler geeft voorrang aan de blauwdruk. Bijvoorbeeld de pagina Live kopie `/b` wordt verplaatst binnen de vertakking Live kopie naar `/b_msm_moved`.
 
 * Live kopie: `/b`
 
@@ -98,7 +98,7 @@ Deze conflicthandler geeft voorrang aan de blauwdruk. Voorbeeld: de pagina Live 
 |  | Vervagen na rollout | Live kopie na rollout | Live kopie na rollout | Publiceren na rollout |
 |---|---|---|---|---|
 | Waarde | `b` | `b` | `b_msm_moved` | `b` |
-| Opmerking |  | Bevat de inhoud van de pagina Bladeren `b` dat is uitgevoerd | Bevat de inhoud van de pagina `b` die handmatig is gemaakt in de vertakking Live kopie | Geen wijziging, bevat de inhoud van de oorspronkelijke pagina `b` die handmatig is gemaakt in de vertakking Live kopie en nu wordt aangeroepen `b_msm_moved` |
+| Opmerking |  | Bevat de inhoud van de pagina Bladeren `b` dat is uitgevoerd | Bevat de inhoud van de pagina `b` die handmatig is gemaakt in de vertakking Live kopie | Geen wijziging; bevat de inhoud van de oorspronkelijke pagina `b` die handmatig is gemaakt in de vertakking Live kopie en nu wordt aangeroepen `b_msm_moved` |
 | Waarde | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Opmerking |  |  | Geen wijziging | Geen wijziging |
 
@@ -111,7 +111,7 @@ Aangepaste conflicthandlers kunnen:
 * Geef een naam op basis van uw vereisten.
 * Ontwikkeld/geconfigureerd worden volgens uw vereisten.
    * U kunt bijvoorbeeld een handler ontwikkelen die voorrang geeft aan de pagina Live kopie.
-* Kan worden ontworpen om te worden gevormd gebruikend [OSGi-configuratie](/help/implementing/deploying/configuring-osgi.md). In het bijzonder:
+* Het kan worden gevormd gebruikend [OSGi-configuratie](/help/implementing/deploying/configuring-osgi.md). In het bijzonder:
    * **Servicereeks** definieert de volgorde voor andere conflicthandlers ( `service.ranking`).
       * De standaardwaarde is `0`.
 
@@ -123,23 +123,23 @@ Als u handmatig [conflictafhandeling deactiveren,](#rollout-manager-and-conflict
 >
 >Wanneer conflictafhandeling wordt gedeactiveerd, geeft AEM geen enkele aanwijzing dat conflicten worden genegeerd. Aangezien in dergelijke gevallen dit gedrag uitdrukkelijk moet worden gevormd, wordt aangenomen dat het het gewenste gedrag is.
 
-In dit geval heeft Live Copy voorrang. De blauwdrukpagina `/b` wordt niet gekopieerd en de pagina Live Copy `/b` onaangeroerd blijft.
+In dit geval heeft Live Copy in feite voorrang. De blauwdrukpagina `/b` wordt niet gekopieerd en de pagina Live Copy `/b` onaangeroerd blijft.
 
 * Blauwdruk: `/b`
 
-  Wordt helemaal niet gekopieerd, maar wordt genegeerd.
+  Het wordt helemaal niet gekopieerd, maar wordt genegeerd.
 
 * Live kopie: `/b`
 
-  Dat blijft zo.
+  Het blijft hetzelfde.
 
 #### Na rollout {#after-rollout-no-conflict}
 
 |  | Vervagen na rollout | Live kopie na rollout | Publiceren na rollout |
 |---|---|---|---|
 | Waarde | `b` | `b` | `b` |
-| Opmerking |  | Geen wijziging, heeft de inhoud van de pagina `b` die handmatig is gemaakt in de vertakking Live kopie | Geen wijziging, bevat de inhoud van de pagina `b` die handmatig is gemaakt in de vertakking Live kopie |
-| Waarde | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
+| Opmerking |  | Geen wijziging; heeft de inhoud van de pagina `b` die handmatig is gemaakt in de vertakking Live kopie | Geen wijziging; bevat de inhoud van de pagina `b` die handmatig is gemaakt in de vertakking Live kopie |
+| Waarde | `/bp-level-1,` | `/lc-level-1` | `/lc-level-1` |
 | Opmerking |  | Geen wijziging | Geen wijziging |
 
 ### Servicebeoordelingen {#service-rankings}

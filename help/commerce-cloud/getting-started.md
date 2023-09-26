@@ -1,6 +1,6 @@
 ---
 title: Aan de slag met AEM as a Cloud Service Handel
-description: Leer hoe te om een AEM handelsproject op te stellen, gebruikend de Manager van de Wolk van de Adobe, een pijpleiding CI/CD en de verwijzingswinkel van Venia.
+description: Leer hoe te om een de handelproject van Adobe Experience Manager (AEM) op te stellen, gebruikend de Manager van de Wolk van de Adobe, een pijpleiding CI/CD, en de verwijzingswinkel van Venia.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -8,42 +8,42 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
 
 # Aan de slag met AEM as a Cloud Service Handel {#start}
 
-Om met AEM as a Cloud Service Handel te beginnen, moet uw Experience Manager Cloud Service met het Kader van de Integratie van de Handel (CIF) toe:voegen-on worden voorzien. De invoegtoepassing CIF is een extra module boven op [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+Om met de as a Cloud Service Handel van Adobe Experience Manager (AEM) te beginnen, moet uw Experience Manager Cloud Service voorzien zijn van de Commerce integration framework (CIF) toe:voegen-on. De CIF invoegtoepassing is een extra module boven op [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
 
 ## Onboarding {#onboarding}
 
 Het aan boord nemen voor AEM as a Cloud Service Handel is een proces in twee stappen:
 
-1. Krijg AEM as a Cloud Service Handel toegelaten en toe:voegen-op CIF provisioned
+1. Krijg AEM as a Cloud Service Handel toegelaten en CIF toe:voegen-op provisioned
 2. Connect AEM Commerce as a Cloud Service met uw handelsoplossing
 
 De eerste instapstap wordt uitgevoerd door Adobe. Voor meer informatie over prijzen en provisioning moet u contact opnemen met uw verkoper.
 
-Nadat u de CIF-invoegtoepassing hebt ingericht, wordt deze toegepast op bestaande Cloud Manager-programma&#39;s. Als u geen Cloud Manager-programma hebt, moet u er een maken. Zie voor meer informatie [Uw programma instellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+Nadat u de CIF invoegtoepassing hebt ingericht, wordt deze toegepast op alle bestaande Cloud Manager-programma&#39;s. Als u geen Cloud Manager-programma hebt, moet u er een maken. Zie voor meer informatie [Uw programma instellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
 
-De tweede stap is zelfbediening voor elke AEM as a Cloud Service omgeving. Er zijn sommige extra configuraties die u na de aanvankelijke levering van toe:voegen-op CIF moet doen.
+De tweede stap is zelfbediening voor elke AEM as a Cloud Service omgeving. Er zijn sommige extra configuraties die u na de aanvankelijke levering van CIF toe:voegen-op moet doen.
 
 ## AEM verbinden met een Oplossing van de Handel {#solution}
 
-De CIF-invoegtoepassing en de [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) met een handelsoplossing, moet u het eindpunt URL van GraphQL als milieuvariabele van de Manager van de Wolk verstrekken. De variabelenaam is `COMMERCE_ENDPOINT`. Er moet een beveiligde verbinding via HTTPS worden geconfigureerd.
+Om de CIF toe:voegen-aan &amp; te verbinden [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) met een handelsoplossing, moet u het eindpunt URL van GraphQL als milieuvariabele van de Manager van de Wolk verstrekken. De variabelenaam is `COMMERCE_ENDPOINT`. Er moet een beveiligde verbinding via HTTPS worden geconfigureerd.
 
 Deze omgevingsvariabele wordt op twee plaatsen gebruikt:
 
-- De vraag van GraphQL van AEM aan handelsafstand, als één of andere gemeenschappelijke cliënt GraphQl, die door de AEM componenten van de Kern van CIF en componenten van het klantenproject wordt gebruikt.
-- Stel een GraphQL-proxy-URL in voor elke AEM omgeving waarin de variabele beschikbaar is `/api/graphql`. Deze URL wordt gebruikt door de AEM handels auteurshulpmiddelen (toe:voegen-aan CIF) en cliënt-zijcomponenten CIF.
+- De vraag van GraphQL van AEM aan handelsafstand, als één of andere gemeenschappelijke cliënt GraphQl, die door de AEM wordt gebruikt van de Componenten van de Kern van de CIF en componenten van het klantenproject.
+- Stel een GraphQL-proxy-URL in voor elke AEM omgeving waarin de variabele beschikbaar is `/api/graphql`. Deze URL wordt gebruikt door de AEM handels auteurshulpmiddelen (CIF toe:voegen-aan) en CIF cliënt-zijcomponenten.
 
-Voor elke AEM as a Cloud Service omgeving kan een andere URL voor het eindpunt van GraphQL worden gebruikt. Zo kunnen projecten AEM het opvoeren milieu&#39;s met handel het opvoeren systemen en AEM productiemilieu met een handelsproductiesysteem verbinden. Dat het eindpunt van GraphQL openbaar moet zijn, privé VPN of lokale verbindingen worden niet gesteund. Naar keuze, kan een authentificatiekopbal worden verstrekt om extra eigenschappen te gebruiken CIF die authentificatie vereisen.
+Voor elke AEM as a Cloud Service omgeving kan een andere URL voor het eindpunt van GraphQL worden gebruikt. Zo kunnen projecten AEM het opvoeren milieu&#39;s met handel het opvoeren systemen en AEM productiemilieu met een handelsproductiesysteem verbinden. Dat het eindpunt van GraphQL openbaar moet zijn, privé VPN of lokale verbindingen worden niet gesteund. Naar keuze, kan een authentificatiekopbal worden verstrekt om extra CIF eigenschappen te gebruiken die authentificatie vereisen.
 
-De CIF-invoegtoepassing (optioneel en alleen voor Adobe Commerce Enterprise/Cloud) ondersteunt het gebruik van gefaseerde catalogusgegevens voor AEM auteurs. Deze gegevens vereisen dat u een vergunningskopbal vormt. Deze koptekst is alleen beschikbaar en wordt uit veiligheidsoverwegingen gebruikt bij AEM auteur-instanties. AEM publicatie-instanties kunnen geen gefaseerde gegevens weergeven.
+De CIF add-on (optioneel en alleen voor Adobe Commerce Enterprise/Cloud) ondersteunt het gebruik van gefaseerde catalogusgegevens voor AEM auteurs. Deze gegevens vereisen dat u een vergunningskopbal vormt. Deze koptekst is alleen beschikbaar en wordt uit veiligheidsoverwegingen gebruikt bij AEM instanties Auteur. AEM publicatie-instanties kunnen geen gefaseerde gegevens weergeven.
 
 Er zijn twee opties om het eindpunt te vormen:
 
@@ -69,7 +69,7 @@ Om AEM met een handelsoplossing door middel van Adobe I/O CLI te verbinden, volg
 
 1. De Adobe I/O CLI ophalen met de plug-in Cloud Manager
 
-   Controleer de [Adobe Cloud Manager-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) over het downloaden, instellen en gebruiken van de [ADOBE I/O CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager CLI-insteekmodule](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Controleer de [Documentatie voor Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) over het downloaden, instellen en gebruiken van de [ADOBE I/O CLI](https://github.com/adobe/aio-cli) met de [Cloud Manager CLI-insteekmodule](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. Verifieer Adobe I/O CLI met het AEM as a Cloud Service programma
 
@@ -103,17 +103,17 @@ U bent klaar om AEM as a Cloud Service Handel te gebruiken en kunt uw project al
 
 ## Opslaan en catalogi configureren {#catalog}
 
-De CIF-invoegtoepassing en de [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) kan op veelvoudige AEM plaatsstructuren worden gebruikt die met verschillende handels opslag (of opslagmeningen, etc.) worden verbonden. Standaard wordt de CIF-invoegtoepassing geïmplementeerd met een standaardconfiguratie die verbinding maakt met de standaardstore en -catalogus van Adobe Commerce.
+De CIF invoegtoepassing en de [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) kan op veelvoudige AEM plaatsstructuren worden gebruikt die met verschillende handels opslag (of opslagmeningen, etc.) worden verbonden. Standaard wordt de CIF add-on geïmplementeerd met een standaardconfiguratie die verbinding maakt met de standaardstore en -catalogus van Adobe Commerce.
 
 Deze configuratie kan voor het project als CIF Cloud Service worden aangepast config die deze stappen volgt:
 
-1. Ga in AEM naar Tools -> Cloud Services -> CIF Configuration.
+1. Ga in AEM naar Extra -> Cloud Servicen -> CIF Configuratie.
 
 2. Selecteer de handelsconfiguratie die u wilt veranderen.
 
 3. Open de configuratie-eigenschappen via de actiebalk.
 
-![Configuratie CIF-Cloud Services](/help/commerce-cloud/assets/cif-cloud-service-config.png)
+![Configuratie CIF Cloud Servicen](/help/commerce-cloud/assets/cif-cloud-service-config.png)
 
 De volgende eigenschappen kunnen worden geconfigureerd:
 
@@ -130,7 +130,7 @@ De volgende eigenschappen kunnen worden geconfigureerd:
 - Hoofdcategorie-id van catalogus - de id (UID of ID) van de hoofdmap van de opslagcatalogus
   >[!CAUTION]
   >
-  > Vanaf CIF Core Components versie 2.0.0 wordt de ondersteuning voor `id` is verwijderd en vervangen door `uid`. Als uw project CIF Core Components versie 2.0.0 gebruikt moet u de Steun van UID van de Catalogus toelaten en een geldige categorieUID als &quot;Identifier van de Categorie van de Hoofdmap van de Catalogus gebruiken&quot;.
+  > Vanaf CIF Core Components versie 2.0.0 wordt de ondersteuning voor `id` is verwijderd en vervangen door `uid`. Als uw project CIF versie 2.0.0 van de Componenten van de Kern gebruikt moet u de Steun van UID van de Catalogus toelaten en een geldige categorieUID als &quot;Identifier van de Categorie van de Hoofdstad van de Catalogus gebruiken&quot;.
 
 De configuratie hierboven wordt getoond is voor verwijzing. De projecten zouden hun eigen configuraties moeten verstrekken.
 

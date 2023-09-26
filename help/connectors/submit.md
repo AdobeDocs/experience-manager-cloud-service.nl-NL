@@ -1,27 +1,26 @@
 ---
 title: Een AEM-connector verzenden
-description: Leer hoe te om schakelaars in AEM as a Cloud Service correct van verwijzingen te voorzien en op te stellen.
+description: Leer hoe u in Adobe Experience Manager (AEM) as a Cloud Service naar connectors kunt verwijzen en deze kunt implementeren.
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 9%
+source-wordcount: '310'
+ht-degree: 2%
 
 ---
 
-Een AEM-connector verzenden
-===========================
+# Een AEM-connector verzenden
 
-Hieronder vindt u nuttige informatie over het verzenden van AEM-connectors. U dient deze informatie te lezen in combinatie met artikelen over het [implementeren](implement.md) en [onderhouden](maintain.md) van connectors.
+Hieronder vindt u nuttige informatie over het verzenden van Adobe Experience Manager (AEM) Connectors en deze informatie moet worden gelezen met artikelen over [uitvoeren](implement.md) en  [handhaven](maintain.md) connectors.
 
-AEM connectors worden vermeld op het tabblad [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
+AEM connectors worden vermeld op het tabblad [Adobe Exchange](https://partners.adobe.com/technologyprogram/experiencecloud.html).
 
-In eerdere AEM oplossingen [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) werd gebruikt om schakelaars op diverse AEM instanties te installeren. Met AEM as a Cloud Service connectors worden echter geïmplementeerd tijdens het CI-/CD-proces in Cloud Manager. Opdat de schakelaars worden opgesteld, moeten de schakelaars in pom.xml van het bepaalde project van verwijzingen worden voorzien.
+In eerdere AEM oplossingen [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) werd gebruikt om schakelaars op diverse AEM instanties te installeren. Met AEM as a Cloud Service connectors worden echter geïmplementeerd tijdens het CI-/CD-proces in Cloud Manager. Voor de schakelaars die moeten worden opgesteld, moeten de schakelaars in pom.xml van het bepaalde project van verwijzingen worden voorzien.
 
 Er zijn verschillende opties voor het opnemen van pakketten in een project:
 
 1. Openbare opslagplaats van de partner - een partner zou het inhoudspakket in een openbaar toegankelijke beheerde opslagplaats ontvangen
-1. Opslagplaats met wachtwoordbeveiliging voor partners - een partner zou het inhoudspakket hosten in een met wachtwoord beveiligde gegevensopslagruimte. Zie [met wachtwoord beveiligde gegevensopslagruimten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) voor instructies.
+1. Opslagplaats met wachtwoordbeveiliging voor partners - een partner zou het inhoudspakket hosten in een met wachtwoord beveiligde gegevensopslagruimte. Zie [met wachtwoord beveiligde gegevensopslagruimten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) voor instructies.
 1. Gebundelde vervorming - in dit geval is het aansluitingspakket lokaal opgenomen in het door de klant gemaakte project.
 
 Ongeacht waar zij worden ontvangen, moeten de pakketten als gebiedsdelen in pom.xml worden van verwijzingen voorzien, zoals die door de verkoper worden verstrekt.
@@ -37,7 +36,7 @@ Ongeacht waar zij worden ontvangen, moeten de pakketten als gebiedsdelen in pom.
 </dependency>
 ```
 
-Als de ISV-partner de aansluiting host op een voor internet toegankelijke gegevensopslagruimte (zoals Cloud Manager toegankelijk), moet de ISV de configuratie van de opslagplaats bieden waar de pom.xml kan worden geplaatst, zodat de (hierboven) vermelde connectorafhankelijkheden tijdens de build (zowel lokaal als door Cloud Manager) kunnen worden opgelost.
+Als de ISV-partner de aansluiting host op een gegevensopslagruimte die toegankelijk is voor internet (zoals Cloud Manager), moet de ISV de configuratie van de opslagplaats bieden waar de `pom.xml` kan worden geplaatst. De reden hiervoor is dat de verbindingsafhankelijkheden (boven) kunnen worden opgelost tijdens het samenstellen, zowel lokaal als via Cloud Manager.
 
 ```xml
 <repository>
@@ -54,4 +53,4 @@ Als de ISV-partner de aansluiting host op een voor internet toegankelijke gegeve
 </repository>
 ```
 
-Als de ISV-partner ervoor kiest de Connector als downloadbare bestanden te distribueren, moet de ISV instructies geven over hoe de bestanden kunnen worden geïmplementeerd in een opslagplaats voor lokale bestandssystemen die moet worden ingecheckt in Git als onderdeel van het AEM-project, zodat de Cloud Manager deze afhankelijkheden kan oplossen.
+Als de ISV partner verkiest om de Schakelaar als downloadbare dossiers te verdelen, dan zou ISV instructies moeten verstrekken. In de instructie moet worden beschreven hoe de bestanden kunnen worden geïmplementeerd in een opslagplaats voor lokale bestandssystemen die in Git moet worden ingecheckt als onderdeel van het AEM project. Zo zorgt u ervoor dat Cloud Manager deze afhankelijkheden kan oplossen.

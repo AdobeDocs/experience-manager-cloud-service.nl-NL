@@ -1,17 +1,17 @@
 ---
 title: Uw accountomgeving configureren
-description: AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren
+description: Adobe Experience Manager (AEM) biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '495'
 ht-degree: 4%
 
 ---
 
 # Uw accountomgeving configureren {#configuring-your-account-environment}
 
-AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
+Adobe Experience Manager (AEM) biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
 Met de optie [Gebruiker](#user-settings) in de [koptekst](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#my-preferences) kunt u uw gebruikersopties wijzigen, zoals
 
@@ -24,7 +24,7 @@ De **Gebruiker** In het dialoogvenster Instellingen hebt u toegang tot:
 * Imiteren als
    * Met Impersonate als functionaliteit, kan een gebruiker namens een andere gebruiker werken. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * Profiel
-   * Biedt een handige koppeling naar uw gebruikersinstellingen <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * Het biedt een handige koppeling naar uw gebruikersinstellingen <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [Mijn voorkeuren](#my-preferences)
    * Verschillende voorkeursinstellingen opgeven die uniek zijn voor uw gebruiker
 
@@ -32,9 +32,9 @@ De **Gebruiker** In het dialoogvenster Instellingen hebt u toegang tot:
 
 ### Mijn voorkeuren {#my-preferences}
 
-De **Mijn voorkeuren** dialoogvenster is toegankelijk via de [Gebruiker](#user-settings) in de koptekst.
+De **Mijn voorkeuren** wordt geopend via het dialoogvenster [Gebruiker](#user-settings) in de koptekst.
 
-Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
+Elke gebruiker kan zijn eigen voorkeurseigenschappen instellen.
 
 ![Mijn voorkeuren](/help/sites-cloud/authoring/assets/user-preferences.png)
 
@@ -56,18 +56,18 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Bureaubladhandelingen voor elementen weergeven**
 
-  Voor deze optie moet AEM bureaubladtoepassing worden gebruikt.
+  Voor deze optie moet de AEM-bureaubladtoepassing worden gebruikt.
 
 * **Annotatiekleur**
 
   Hiermee definieert u de standaardkleur die wordt gebruikt bij het maken van annotaties.
 
-   * Klik op het kleurblok om de staalkiezer te openen en een kleur te selecteren.
+   * Klik op het kleurblok, zodat u de staalkiezer kunt openen en een kleur kunt selecteren.
    * U kunt ook de hexadecimale code voor de gewenste kleur in het veld invoeren.
 
 * **Relatieve datumpresentatie**
 
-  Om de leesbaarheid te verbeteren, worden AEM datums in de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
+  Om de leesbaarheid te verbeteren, worden AEM datums binnen de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
 
   Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 
@@ -80,7 +80,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Sneltoetsen inschakelen**
 
-  AEM ondersteunt een aantal sneltoetsen die het ontwerpen efficiënter maken.
+  AEM ondersteunt verschillende sneltoetsen die het ontwerpen efficiënter maken.
 
    * [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Sneltoetsen voor consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
@@ -89,7 +89,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Introductiepagina van middelen inschakelen**
 
-  Deze optie is alleen beschikbaar als uw systeembeheerder de functie voor het introductiepagina van middelen heeft ingeschakeld voor de hele organisatie.
+  Deze optie is alleen beschikbaar als uw systeembeheerder de functie Introductiepagina van middelen voor de hele organisatie heeft ingeschakeld.
 
 * **Bestandsconfiguratie**
 

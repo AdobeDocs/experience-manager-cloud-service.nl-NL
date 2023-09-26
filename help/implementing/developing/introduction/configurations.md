@@ -1,17 +1,17 @@
 ---
 title: Configuraties en de Configuratiebrowser
-description: Begrijp AEM configuraties en hoe zij werkruimtemontages in AEM beheren.
+description: Begrijp Adobe Experience Manager (AEM) configuraties en hoe zij werkruimtemontages in AEM beheren.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
 
 # Configuraties en de Configuratiebrowser {#configuration-browser}
 
-AEM configuraties dienen om instellingen in AEM te beheren en dienen als werkruimten.
+Adobe Experience Manager (AEM)-configuraties dienen voor het beheren van instellingen in AEM en dienen als werkruimten.
 
 ## Wat is een Configuratie? {#what-is-a-configuration}
 
@@ -51,8 +51,8 @@ De beheerder kan vervolgens de WKND-General koppelen aan alle inhoud van de WKND
 
 Op deze manier:
 
-* Wanneer een inhoudsauteur een nieuwe pagina voor het tijdschrift maakt, kan de auteur kiezen uit algemene sjablonen (WKND-Algemeen) of tijdschriftsjablonen (WKND-Magazine).
-* Wanneer een auteur van inhoud een nieuwe pagina maakt voor een ander deel van de site dat niet het tijdschrift is, kan de auteur alleen kiezen uit de algemene sjablonen (WKND-Algemeen).
+* Wanneer een inhoudsauteur een pagina voor het tijdschrift maakt, kan de auteur kiezen uit algemene sjablonen (WKND-Algemeen) of tijdschriftsjablonen (WKND-Magazine).
+* Wanneer een auteur van inhoud een pagina maakt voor een ander gedeelte van de site dat niet het tijdschrift is, kan de auteur alleen kiezen uit de algemene sjablonen (WKND-Algemeen).
 
 De gelijkaardige montages zijn mogelijk niet alleen voor Bewerkbare Malplaatjes maar ook voor de Configuraties van de Wolk, Segmenten ContextHub, en Modellen van het Fragment van de Inhoud.
 
@@ -62,11 +62,11 @@ Browser van de Configuratie staat een beheerder toe om, toegangsrechten aan conf
 
 >[!NOTE]
 >
->Het is alleen mogelijk om configuraties te maken met de Configuration Browser als de gebruiker `admin` rechten. `admin` de rechten worden ook vereist om toegangsrechten aan de configuratie toe te wijzen of anders een configuratie te wijzigen.
+>Het is slechts mogelijk om configuraties tot stand te brengen gebruikend Browser van de Configuratie, als uw gebruiker heeft `admin` rechten. Dergelijke `admin` de rechten worden ook vereist om toegangsrechten aan de configuratie toe te wijzen of anders een configuratie te wijzigen.
 
 #### Een configuratie maken {#creating-a-configuration}
 
-Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen door Browser van de Configuratie te gebruiken.
+Het is eenvoudig om een configuratie in AEM tot stand te brengen gebruikend Browser van de Configuratie.
 
 1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** -> **Algemeen** -> **Configuratiebrowser**.
 1. Tik of klik op **Maken**.
@@ -94,20 +94,22 @@ Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen doo
 Als u configuraties als werkruimten beschouwt, kunnen de toegangsrechten op die configuraties worden geplaatst om af te dwingen wie tot die werkruimten kan en niet kan toegang hebben.
 
 1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** -> **Algemeen** -> **Configuratiebrowser**.
-1. Selecteer de configuratie die u wilt wijzigen en tik of klik op **Eigenschappen** in de werkbalk.
-1. Selecteer om het even welke extra eigenschappen u aan de configuratie wilt toevoegen
+1. Selecteer de configuratie die u wilt uitgeven, en dan selecteren **Eigenschappen** in de werkbalk.
+1. Selecteer om het even welke extra eigenschappen die u wenst om aan de configuratie toe te voegen.
+
    >[!NOTE]
    >
    >Het is niet mogelijk om een functie uit te schakelen wanneer de configuratie is gemaakt.
+
 1. Gebruik de **Effectieve machtigingen** knoop om een matrijs van rollen te bekijken en welke toestemmingen zij momenteel aan configuraties worden verleend.
    ![venster Effectieve machtigingen](assets/configuration-effective-permissions.png)
 1. Als u nieuwe machtigingen wilt toewijzen, voert u de naam van de gebruiker of groep in het dialoogvenster **Gebruiker of groep selecteren** in het veld **Nieuwe machtigingen toevoegen** sectie.
    * De  **Gebruiker of groep selecteren** het veld biedt automatisch aanvullen op basis van bestaande gebruikers en rollen.
 1. Selecteer de gewenste gebruiker of rol in de resultaten die automatisch worden voltooid.
    * U kunt meerdere gebruikers of rollen selecteren.
-1. Controleer de toegangsopties die de geselecteerde gebruiker(s) of rol(en) moet(en) hebben en klik op **Toevoegen**.
+1. Controleer de toegangsopties die een of meer geselecteerde gebruikers of rollen zouden moeten hebben en klik **Toevoegen**.
    ![Toegangsrechten toevoegen aan een configuratie](assets/configuration-edit.png)
-1. Herhaal de stappen om gebruikers of rollen te selecteren en zo nodig extra toegangsrechten toe te wijzen.
+1. Herhaal de stappen zodat u gebruikers of rollen kunt selecteren en zonodig extra toegangsrechten kunt toewijzen.
 1. Tik of klik op **Opslaan en sluiten** wanneer gereed.
 
 ## Configuraties als ontwikkelaar {#configurations-developer}
@@ -121,7 +123,7 @@ Hoewel de [beheerders en gebruikers kunnen configuraties als werkplekken zien](#
 * `/content` is de thuisbasis van alle inhoud.
 * `/conf` is huis aan alle configuratie.
 
-Content verwijst naar de bijbehorende configuratie via een `cq:conf` eigenschap. AEM voert een zoekopdracht uit op basis van de inhoud en het is contextueel `cq:conf` eigenschap om de juiste configuratie te vinden.
+De inhoud verwijst zijn bijbehorende configuratie door als `cq:conf` eigenschap. AEM voert een raadpleging uit die op de inhoud en zijn contextueel wordt gebaseerd `cq:conf` eigenschap om de juiste configuratie te vinden.
 
 ### Voorbeeld {#developer-example}
 
@@ -133,9 +135,9 @@ ValueMap imageServerSettings = conf.getItem("dam/imageserver");
 String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 ```
 
-Het uitgangspunt van alle configuratieraadpleging is een inhoudsmiddel, gewoonlijk ergens onder `/content`. Dit kan een pagina zijn, een component in een pagina, een element of een DAM-map. Dit is de inhoud waarvoor we op zoek zijn naar de juiste configuratie die in deze context van toepassing is.
+Het uitgangspunt van alle configuratieraadpleging is een inhoudsmiddel ergens onder `/content`. Dit kan een pagina zijn, een component in een pagina, een element of een DAM-map. Dit is de daadwerkelijke inhoud waarvoor u de juiste configuratie zoekt die in deze context van toepassing is.
 
-Nu met de `Conf` -object in hand, kunnen we het specifieke configuratieitem ophalen waarin we geïnteresseerd zijn. In dit geval is `dam/imageserver`, dat een verzameling instellingen is die betrekking hebben op de `imageserver`. De `getItem` call retourneert een `ValueMap`. Daarna lezen we een `bgkcolor` string bezit en verstrekken een standaardwaarde van &quot;FFFFFF&quot;voor het geval dat het bezit (of het volledige config punt) niet aanwezig is.
+Nu met de `Conf` in hand, kunt u het specifieke configuratiepunt terugwinnen dat u in geinteresseerd bent. In dit geval is het `dam/imageserver`, dat een verzameling instellingen is die betrekking hebben op de `imageserver`. De `getItem` call retourneert een `ValueMap`. Daarna leest u een `bgkcolor` string bezit en verstrekken een standaardwaarde van &quot;FFFFFF&quot;voor het geval dat het bezit (of het volledige config punt) niet aanwezig is.
 
 Nu een blik op de overeenkomstige inhoud JCR:
 
@@ -153,19 +155,19 @@ Nu een blik op de overeenkomstige inhoud JCR:
             - bgkcolor = "FF0000"
 ```
 
-In dit voorbeeld nemen we hier een WKND-specifieke DAM-map en een bijbehorende configuratie aan. Vanaf die map `/content/dam/wknd`, zullen wij zien dat er een koordbezit genoemd is `cq:conf` dat verwijst naar de configuratie die voor de substructuur zou moeten van toepassing zijn. De eigenschap wordt meestal ingesteld op de knop `jcr:content` van een elementmap of -pagina. Deze `conf` De verbindingen zijn uitdrukkelijk, zodat is het gemakkelijk om hen te volgen door de inhoud in CRXDE te bekijken.
+In dit voorbeeld kunt u hier een WKND-specifieke DAM-map en een bijbehorende configuratie aannemen. Vanaf die map `/content/dam/wknd`, kunt u zien dat er een tekenreekseigenschap is waaraan een naam is gegeven `cq:conf` die verwijst naar de configuratie die op de substructuur van toepassing is. De eigenschap wordt ingesteld op het tabblad `jcr:content` van een elementmap of -pagina. Deze `conf` De verbindingen zijn uitdrukkelijk, zodat is het gemakkelijk om hen te volgen door de inhoud in CRXDE te bekijken.
 
-Binnenin pompen `/conf`, volgen we de referentie en zien we dat er een `/conf/wknd` knooppunt. Deze configuratie. De zoekopdracht is volledig transparant voor de toepassingscode. De voorbeeldcode heeft er nooit een specifieke referentie naar, maar is verborgen achter het `Conf` object. Welke configuratie van toepassing is, wordt volledig gecontroleerd door de inhoud JCR.
+Binnenin pompen `/conf`volgt u de verwijzing en ziet u dat er een `/conf/wknd` knooppunt. Deze configuratie. De zoekopdracht is transparant voor de toepassingscode. De voorbeeldcode heeft er nooit een specifieke referentie naar, maar is verborgen achter het `Conf` object. Welke configuratie van toepassing is, wordt bepaald door de JCR-inhoud.
 
-We zien dat de configuratie een vaste naam bevat `settings` knooppunt dat de werkelijke items bevat, inclusief de `dam/imageserver` wij hebben dat in ons geval nodig . Een dergelijk item kan worden beschouwd als een &quot;instellingendocument&quot; en wordt gewoonlijk aangeduid met een `cq:Page` inclusief `jcr:content` de feitelijke inhoud bezitten.
+U ziet dat de configuratie een fixed-named bevat `settings` knooppunt dat de werkelijke items bevat, inclusief de `dam/imageserver` in dit geval is dat nodig. Een dergelijk item kan worden beschouwd als een &quot;instellingendocument&quot; en wordt voorgesteld door een `cq:Page` inclusief `jcr:content` de feitelijke inhoud bezitten.
 
-Tot slot zien we de eigenschap `bgkcolor` dat onze voorbeeldcode nodig heeft. De `ValueMap` we komen terug van `getItem` is gebaseerd op de `jcr:content` knooppunt.
+Tot slot ziet u de eigenschap `bgkcolor` dat deze voorbeeldcode nodig heeft. De `ValueMap` u bent terug `getItem` is gebaseerd op de `jcr:content` knooppunt.
 
 ### Configuratieresolutie {#configuration-resolution}
 
 Het basisvoorbeeld hierboven toonde één enkele configuratie. Maar er zijn veel gevallen waarin u verschillende configuraties wilt hebben, zoals een standaard globale configuratie, een andere configuratie voor elk merk en misschien een specifieke configuratie voor uw subprojecten.
 
-Om dit te steunen heeft de configuratieraadpleging in AEM overerving en fallback mechanisme in de volgende orde van voorkeur:
+Om dit te steunen heeft de configuratieraadpleging, AEM een overerving en een reservemechanisme in de volgende orde van voorkeur:
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
    * Specifiek config van verwijzingen voorzien `cq:conf` ergens in `/content`
@@ -179,7 +181,7 @@ Om dit te steunen heeft de configuratieraadpleging in AEM overerving en fallback
    * Veranderbaar bij uitvoering door gebruikers met configuratierechten
 1. `/conf/global`
    * Globale instellingen van systeem
-   * Gewoonlijk algemene standaardinstellingen voor uw installatie
+   * Algemene standaardinstellingen voor uw installatie
    * Met een `admin` rol
    * Veranderbaar bij uitvoering door gebruikers met configuratierechten
 1. `/apps`
@@ -210,7 +212,7 @@ Verstrek eenvoudig:
 * **Item**
 * **Gebruiker**
 
-Klikken **Oplossen** om te zien welke configuraties worden opgelost en steekproefcode te ontvangen die die configuraties zal oplossen.
+Klikken **Oplossen** zodat kunt u zien welke configuraties worden opgelost en codesteekproeven krijgen die helpen om die configuraties op te lossen.
 
 ### Contextbewuste configuratie webconsole {#context-aware-web-console}
 
@@ -223,4 +225,4 @@ Verstrek eenvoudig:
 * **Inhoudspad**
 * **Configuratienaam**
 
-Klikken **Oplossen** om de bijbehorende contextwegen en eigenschappen voor de geselecteerde configuratie terug te winnen.
+Klikken **Oplossen** zodat kunt u de bijbehorende contextwegen en eigenschappen voor de geselecteerde configuratie terugwinnen.

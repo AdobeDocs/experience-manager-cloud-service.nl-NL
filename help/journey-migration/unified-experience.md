@@ -2,16 +2,16 @@
 title: Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code
 description: Leer over Verenigde Ervaring voor de Hulpmiddelen van het Refactoring van de Code.
 exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # Verenigde Ervaring voor de Hulpmiddelen van de Refactoring van de Code {#unified-experience}
 
-Wij hebben hulpmiddelen ontwikkeld om sommige code te automatiseren refactoring taken die worden vereist om met AEM as a Cloud Service compatibel te zijn. Om de ingewikkeldheid te verminderen verbonden aan installatie en opstelling van verschillende code refactoring hulpmiddelen, hebben wij een stop ontwikkeld om hulpmiddelen te verenigen die op code en bewaarplaatsen werken.
+De Adobe heeft hulpmiddelen ontwikkeld om sommige code te automatiseren refactoring taken die worden vereist om met as a Cloud Service Adobe Experience Manager (AEM) compatibel te zijn. Om de ingewikkeldheid te verminderen verbonden aan de installatie en opstelling van verschillende code het refactoring hulpmiddelen, heeft de Adobe een stop-in ontwikkeld om hulpmiddelen te verenigen die op code en bewaarplaatsen werken.
 
 ## Voordelen {#benefits}
 
@@ -19,9 +19,9 @@ De Unified Experience plug-in biedt de volgende voordelen:
 
 * Hiermee verenigt u gereedschappen die werken aan broncode in één code `node.js` toepassing blootgesteld aan `aio-cli ` om de gebruiker een consistente gebruikerservaring te bieden.
 
-* Biedt de mogelijkheid om alle gereedschappen uit te voeren via één opdracht en biedt tegelijkertijd de flexibiliteit om desgewenst specifieke gereedschappen uit te voeren.
+* Voert alle hulpmiddelen als één enkel bevel in werking, terwijl ook het verstrekken van de flexibiliteit om specifieke hulpmiddelen in werking te stellen zoals nodig.
 
-* Verstrekt rekbaarheid om toevoeging van nieuwe hulpmiddelen te vereenvoudigen, terwijl het houden van de ervaring verenigbaar.
+* Vereenvoudigt de toevoeging van nieuwe hulpmiddelen, terwijl het houden van de ervaring verenigbaar.
 
 ## Inzicht krijgen in de insteekmodule {#understanding-plugin}
 
@@ -29,7 +29,7 @@ De `aio-cli-plugin-aem-cloud-service-migration` insteekmodule bestaat uit twee h
 
 * **Gebruikersinterface**
 
-   * `aio-cli` opdrachten voor het uitvoeren van een of meer gereedschappen voor het vernieuwen van code (via een keten van gereedschappen die opeenvolgend moeten worden uitgevoerd).
+   * `aio-cli` opdrachten om een of meer gereedschappen voor het refactoring van code uit te voeren (door een keten van gereedschappen die opeenvolgend moeten worden uitgevoerd).
    * `config.yaml` die de vereiste invoerparameters in beslag neemt.
 
 * **De onderliggende Reeks van het Hulpmiddel van de Refactoring van de Code**
@@ -42,7 +42,7 @@ De `aio-cli-plugin-aem-cloud-service-migration` insteekmodule bestaat uit twee h
 
 ## Beschikbaarheid {#availability}
 
-Zie [Git-bron: audio-cli-plugin-aem-cloud-service-migratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) om over het gebruik te leren en hoe u aan deze plugin code kunt bijdragen die open gesourced in GitHub is.
+Zie [Git-bron: audio-cli-plugin-aem-cloud-service-migratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) waar u over gebruik kunt leren en hoe u aan deze insteekcode kunt bijdragen die in GitHub open-sourced is.
 
 >[!NOTE]
 >De plug-in is momenteel geïntegreerd met AEM Dispatcher Converter en Repository Modernizer.

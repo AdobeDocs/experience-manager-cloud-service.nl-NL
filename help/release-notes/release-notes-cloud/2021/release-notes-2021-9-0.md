@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.9.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.9.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
+>Vanaf hier kunt u navigeren om notities van eerdere versies vrij te geven, bijvoorbeeld voor de versies in 2020 en 2021.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Kijk eens naar de [Overzicht release september 2021](https://video.tv.adobe.com/
 
 ### Nieuwe functie in het dialoogvenster [!DNL Sites] prerelease-kanaal {#sites-prerelease-features}
 
-* Inhoudsfragmentmodellen worden nu automatisch ingesteld op de status Alleen-lezen als ze eenmaal zijn gepubliceerd. Zo voorkomt u dat live API-query&#39;s per ongeluk worden afgebroken als een bewerkt model opnieuw wordt gepubliceerd. Gebruikers krijgen een waarschuwing te zien wanneer ze proberen een gepubliceerd model te bewerken. Bewerken is mogelijk bij het accepteren van de waarschuwing.
+* Inhoudsfragmentmodellen worden nu automatisch ingesteld op een alleen-lezen status nadat ze zijn gepubliceerd, om te voorkomen dat live API-query&#39;s per ongeluk worden onderbroken nadat een bewerkt model opnieuw is gepubliceerd. Gebruikers krijgen een waarschuwing te zien wanneer ze proberen een gepubliceerd model te bewerken. Bewerken is mogelijk bij het accepteren van de waarschuwing.
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
@@ -45,14 +45,14 @@ Kijk eens naar de [Overzicht release september 2021](https://video.tv.adobe.com/
   ![De zoekresultaten sorteren in [!DNL Assets] in kolom- en kaartweergaven](/help/assets/assets/sort-searched-assets.png)
   *Afbeelding: De zoekresultaten sorteren in [!DNL Assets] in de kolom- en kaartweergave.*
 
-* Voor het programmatisch aanroepen van verwerking met behulp van asset microservices wordt een nieuwe API geïntroduceerd. Ontwikkelaars kunnen nu een bestaand verwerkingsprofiel op mapniveau toepassen op een of meer specifieke elementen in een map. Het verwerkingsprofiel wordt toegepast op basis van aangepaste updates van eigenschappen van metagegevens. Zie `AssetProcessor` in de [[!DNL Experience Manager] API-referentie](https://www.adobe.io/experience-manager/reference-materials/). Zoals eerder is het mogelijk om [gebruik de microdiensten van activa van de gebruikersinterface](/help/assets/asset-microservices-configure-and-use.md).
+* Voor het programmatisch aanroepen van verwerking met behulp van asset microservices wordt een nieuwe API geïntroduceerd. Ontwikkelaars kunnen nu een bestaand verwerkingsprofiel op mapniveau toepassen op een of meer specifieke elementen in een map. Het verwerkingsprofiel wordt toegepast op basis van aangepaste updates van eigenschappen van metagegevens. Zie `AssetProcessor` in de [[!DNL Experience Manager] API-referentie](https://developer.adobe.com/experience-manager/reference-materials/). Zoals eerder is het mogelijk om [gebruik de microdiensten van activa van de gebruikersinterface](/help/assets/asset-microservices-configure-and-use.md).
 
 <!-- Leave this commented.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
 Apparently, no new Assets features in Sep beta channel.
-A/V transcription feature via CQ-4303854 has moved to Oct beta now.
+A/V transcription feature by way of CQ-4303854 has moved to Oct beta now.
 
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
@@ -64,21 +64,21 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-sep-2021}
 
-* **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt nu [elke ontvanger van de overeenkomst de mogelijkheid bieden zijn rol in een adaptief formulier te configureren](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), waarbij Ondertekenaar de standaardrol is.
+* **Adobe Sign-rollen gebruiken in een adaptief formulier** - Met Adobe Sign for Business and Enterprise Service-niveaus kunt u optioneel de rollen voor overeenkomstontvangers uitbreiden, en niet alleen de ondertekenaar, zodat ze beter aansluiten op hun workflowvereisten. U kunt nu [elke ontvanger van de overeenkomst in staat stellen zijn rol in een adaptief formulier te configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), waarbij Ondertekenaar de standaardrol is.
 
-* **Analyses voor Adaptive Forms**: U kunt nu het gedrag van eindgebruikers vastleggen en bijhouden via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+* **Analyses voor Adaptive Forms** - U kunt nu het gedrag van eindgebruikers vastleggen en volgen met Adobe Analytics for Adaptive Forms om inzicht te krijgen in eindgebruikers. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
-* **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce**: De dienst verstrekt uit de doos configuratie van de gegevensbron en gegevensmodellen voor de Dynamica en Salesforce van Microsoft, makend het [ontwikkelaars kunnen Microsoft Dynamics en Salesforce sneller en eenvoudiger configureren als gegevensbronnen voor een adaptief formulier](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
+* **Maak eenvoudig verbinding met Adobe Experience Manager (AEM) Forms met Microsoft® Dynamics en Salesforce** - De service biedt out-of-the-box gegevensbronconfiguratie en gegevensmodellen voor Microsoft® Dynamics en Salesforce. Dit maakt het [ontwikkelaars kunnen Microsoft® Dynamics en Salesforce sneller en eenvoudiger configureren als gegevensbronnen voor een adaptief formulier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
 
-* **Een adaptief formulier elektronisch ondertekenen met DocuSign:** U kunt DocuSign gebruiken om een adaptief formulier elektronisch te ondertekenen. De service biedt een aangepaste verzendactie om DocuSign te gebruiken met een adaptief formulier. U kunt het pakket dat beschikbaar is op Softwaredistributie installeren om de verzendactie te importeren.
+* **Een adaptief formulier elektronisch ondertekenen met DocuSign** - U kunt DocuSign gebruiken om een adaptief formulier elektronisch te ondertekenen. De service biedt een aangepaste verzendactie om DocuSign te gebruiken met een adaptief formulier. U kunt het pakket dat beschikbaar is op Softwaredistributie installeren om de verzendactie te importeren.
 
 ### Bètafuncties van [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-* **Unified Storage-connector:** Gebruik Unified Storage Connector om procesgegevens in door de klant beheerde opslagruimten extern te maken. U kunt bijvoorbeeld
+* **Unified Storage Connector** - Gebruik Unified Storage Connector om procesgegevens in door de klant beheerde opslagruimten extern te maken. U kunt bijvoorbeeld
    * Schakel de functie Opslaan en hervatten van Forms Portal in en sla adaptieve formulierconcepten op in een gegevensopslagruimte onder beheer van de klant.
    * Sla AEM werkstroomgegevens (AEM gegevens van de Variabelen van het Werkschema) op die Gevoelige Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats bevatten.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]** - [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
    * Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    * Afdruk-PDF-bestanden genereren op basis van een XFA-formulier met PDF en Adobe Acrobat-formulier.
@@ -89,11 +89,11 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* Het nieuwe lusje &quot;bijbehorende commerciële inhoud&quot;in de redacteur van Plaatsen verhoogt auteur efficiency door snel toegang tot relevante AEM productinhoud voor de huidige context te krijgen
+* Het nieuwe tabblad &quot;Associated commerce content&quot; in de AEM Sites Editor verhoogt de efficiëntie van de auteur door snel toegang te krijgen tot relevante AEM productinhoud voor de huidige context
 
   ![Gekoppelde commerciële inhoud](/help/assets/CIF/associated-commerce-content.png)
 
-* Verbeterde gebruikersinterface van productkiezer voor een betere gebruikerservaring, verbeterde efficiëntie en ondersteuning voor complexe productcatalogus
+* Verbeterde gebruikersinterface van de productkiezer voor een betere gebruikerservaring, verbeterde efficiëntie en ondersteuning voor complexe productcatalogus
 
   ![Nieuwe productkiezer](/help/assets/CIF/product-picker.png)
 
@@ -103,7 +103,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 * Het leegmaken van de menucache werkt niet zoals verwacht
 
-* JS-fouten tijdens AEM CS-implementatiestap en wanneer geen clientside-componenten worden gebruikt
+* JS-fouten tijdens de implementatiestap AEM CS en wanneer geen clientcomponenten worden gebruikt
 
 * Kan CIF-wolkenconfiguratie niet maken in mappen met een sling:confignode
 
@@ -111,15 +111,15 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 ### Nieuwe functies {#what-is-new-screens}
 
-* As a Cloud Service schermen ondersteunen nu elementaire afspeelcontrole. De speler zal nu diverse playbackmetriek met elk melden pingelt (gebrek aan 30 seconden). Gebaseerd op de metriek, verstrekt het de capaciteit om diverse randgevallen (gespoolde ervaring, leeg scherm, het plannen probleem, etc.) te ontdekken. Met deze functie kan het team op afstand controleren of een speler inhoud correct afspeelt, de reactiviteit verbetert tot lege schermen of gebroken ervaringen in het veld en het risico dat de eindgebruiker een verbroken ervaring krijgt verkleind.
-Zie [Standaardafspeelcontrole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) voor meer informatie .
+* As a Cloud Service schermen ondersteunen nu elementaire afspeelcontrole. De speler rapporteert nu verschillende playbackmetriek met elk pingelt (gebrek aan 30 seconden). Op basis van de meetgegevens kunnen er verschillende randgevallen worden gedetecteerd (geplakte ervaring, leeg scherm, planningsprobleem, enzovoort). Met deze functie kan het team op afstand controleren of een speler inhoud correct afspeelt. Het verbetert de reactiviteit aan lege schermen of gebroken ervaringen op het gebied, en vermindert het risico om een gebroken ervaring aan het eind te tonen - gebruiker.
+Zie [Standaardafspeelcontrole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) voor meer informatie .
 
-* Ondersteuning van miniaturen voor video&#39;s wordt nu ondersteund in as a Cloud Service schermen. Een inhoudauteur kan een duimnagel voor video&#39;s bepalen zodat het beeld als placeholder kan worden gebruikt en behoorlijk het playback en richten van inhoud testen, terwijl de daadwerkelijke video door het aangewezen team wordt gebeëindigd. De afbeelding kan ook worden gebruikt voor het geval dat het afspelen van de video mislukt.
-Zie [Ondersteuning van miniaturen voor video&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) voor meer informatie .
+* Ondersteuning van miniaturen voor video&#39;s wordt nu ondersteund in as a Cloud Service schermen. Een inhoudauteur kan een duimnagel voor video&#39;s bepalen zodat het beeld als placeholder wordt gebruikt en behoorlijk het playback en richten van inhoud test, terwijl de daadwerkelijke video door het aangewezen team wordt voltooid. De afbeelding kan ook worden gebruikt als het afspelen van de video mislukt.
+Zie [Ondersteuning van miniaturen voor video&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) voor meer informatie .
 
 ### Opgeloste problemen {#bug-fixes-screens}
 
-* De speler kan de inhoud van de ingesloten pagina niet weergeven en dit probleem is nu opgelost.
+* De speler kan de inhoud van de ingesloten pagina niet weergeven. Het probleem is nu opgelost.
 
 * Na een geslaagde aanmelding werd het navigeren naar de standaardpagina (kanalen) beëindigd op een pagina Interne serverfout.
 
@@ -133,7 +133,7 @@ Zie [Ondersteuning van miniaturen voor video&#39;s](https://experienceleague.ado
 
 >[!INFO]
 >
->De geavanceerde voorzien van een netwerkeigenschap maakt deel uit van de versie 2021.9.0, en zal voor klanten medio oktober worden toegelaten.
+>De geavanceerde voorzien van een netwerkeigenschap maakt deel uit van de versie 2021.9.0, en werd toegelaten voor klanten medio oktober 2021.
 
 [!DNL Adobe Experience Manager] als [!DNL Cloud Service] biedt nu diverse soorten geavanceerde voorzien van een netwerkmogelijkheden aan, die omvatten:
 
@@ -145,7 +145,7 @@ Lees de [documentatie](/help/security/configuring-advanced-networking.md) voor m
 
 **Indexoptimalisatie**
 
-Om de prestaties van onderzoeksvragen en het indexeren te verbeteren, wordt full-text index lucene-2 niet meer gebruikt buiten-van-de-doos binnen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] uit deze release. Om deze full-text index op AEM milieu&#39;s in overeenstemming met AEM klanten te verwijderen, werkt de Techniek van de Adobe individueel en pro-actief met klanten voor een zachte en duurzame verwijdering van de full-text index van Lucene. Ga naar [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [documentatie](/help/operations/indexing.md#index-optimizations) voor meer informatie en neem direct contact op met onze ondersteuning als u vragen hebt.
+Om de prestaties van onderzoeksvragen en het indexeren te verbeteren, wordt full-text index lucene-2 niet meer gebruikt buiten-van-de-doos binnen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] uit deze release. Om deze full-text index op AEM milieu&#39;s in overeenstemming met AEM klanten te verwijderen, werkt de Techniek van de Adobe individueel en pro-actief met klanten voor een zachte en duurzame verwijdering van de full-text index van Lucene. Ga naar [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [documentatie](/help/operations/indexing.md#index-optimizations) voor meer informatie en contacteer direct de steun van de Adobe als u vragen hebt.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -164,15 +164,15 @@ De volgende release is gepland voor 7 oktober 2021.
 
 * Het logbestand met stappen voor codekwaliteit bevat nu uitgebreide logboekgegevens over het OakPal-scanproces.
 
-* De opties in het menu Activiteit pagina bevatten nu een optie voor **Logbestand downloaden** voor voltooide uitvoering van de Code Generator. Als u deze optie selecteert, wordt het logboek met de stap build gedownload.
+* De opties in het menu van de pagina Activiteit bevatten nu een optie voor **Logbestand downloaden** voor voltooide uitvoering van de Code Generator. Als u deze optie selecteert, wordt het logboek van de stap build gedownload.
 
-* Als u rechtstreeks op de programmakaart klikt, gaat u nu naar de overzichtspagina van Cloud Manager.
+* Als u rechtstreeks op de programmakaart klikt, gaat u nu naar de pagina Overzicht van Cloud Manager.
 
 ### Opgeloste problemen {#bug-fixes-sept}
 
-* De gebruiker zal nu een begrijpelijker bericht wanneer het proberen om een nieuwe IP Lijst van gewenste personen in een programma toe te voegen dat het maximum toegestane aantal IP Lijsten van gewenste personen heeft bereikt die kunnen worden gevormd.
+* De gebruikers zien nu een begrijpelijker bericht wanneer het proberen om een IP lijst van gewenste personen in een programma toe te voegen dat het maximum toegestane aantal IP lijsten van gewenste personen heeft bereikt die kunnen worden gevormd.
 
-* Er is een onjuiste URL gekopieerd bij het selecteren van de menuoptie URL kopiëren in het scherm Opslagplaatsen.
+* De onjuiste URL is gekopieerd wanneer u de menuoptie URL kopiëren in het scherm Opslagplaatsen selecteert.
 
 ## Cloud Acceleration Manager {#cam}
 
@@ -182,7 +182,7 @@ De releasedatum voor Cloud Acceleration Manager is 4 oktober 2021.
 
 ### Nieuwe functies {#what-is-new-cam}
 
-* Met Cloud Acceleration Manager kunnen gebruikers de BPA-rapporten nu bekijken in een afdrukbaar voorbeeld, zodat ze eenvoudig kunnen afdrukken of afdrukken naar PDF, zodat ze gemakkelijk kunnen worden gedeeld. Zie Stap 6 en 7 in [De kaart van de Analyse van Beste praktijken gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Met Cloud Acceleration Manager kunnen gebruikers de BPA-rapporten nu bekijken in een afdrukbaar voorbeeld, zodat ze eenvoudig kunnen afdrukken of afdrukken naar PDF, zodat ze gemakkelijk kunnen worden gedeeld. Zie Stap 6 en 7 in [Het gebruiken van de Kaart van de Analyse van Beste praktijken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 ## De tool Content Transfer {#content-transfer-tool}
 
@@ -192,10 +192,10 @@ De releasedatum voor Content Transfer Tool v1.6.0 is 4 oktober 2021.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Verbeterde gebruikerstoewijzing met een vereenvoudigde gebruikerservaring, inclusief de volgende functies die hieronder worden vermeld. Zie voor meer informatie [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+* Verbeterde gebruikerstoewijzing met een vereenvoudigde gebruikerservaring, inclusief de volgende functies die hieronder worden vermeld. Zie voor meer informatie [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en#using-user-mapping-tool).
    * Verbinding met de gebruikersbeheerAPI testen voordat de gebruikerstoewijzing wordt uitgevoerd
    * Fouten op een fraaie manier overslaan en doorgaan met de gebruikerstoewijzingsactiviteit
-   * Toewijzing van gebruikers mislukt niet meer als Toegangstoken verloopt (na 24 uur). Toewijzing van gebruikers kan opnieuw worden uitgevoerd vanaf het punt waarop het laatst is gestopt.
+   * De Toewijzing van de gebruiker ontbreekt niet meer als het Token van de Toegang (na 24 uren) verloopt. Toewijzing van gebruikers kan opnieuw worden uitgevoerd vanaf het punt waar de gebruikerstoewijzing het laatst is gestopt.
 
 * Om de robuustheid te verhogen CTT, kan de inhoud aan of instantie Auteur of Publish tegelijkertijd worden opgenomen.
 
@@ -215,4 +215,4 @@ De releasedatum voor de analyse van best practices v2.1.18 is 2021 september.
 
 ### Opgeloste problemen {#bug-fixes-bpa}
 
-* BPA ontdekte ten onrechte de aanwezigheid van een kader voor de integratie van de handel.
+* BPA detecteerde ten onrechte de aanwezigheid van Commerce integration framework.

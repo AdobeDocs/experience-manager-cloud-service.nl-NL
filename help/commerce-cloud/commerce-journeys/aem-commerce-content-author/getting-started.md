@@ -1,37 +1,37 @@
 ---
 title: Aan de slag met CIF Authoring
-description: Aan de slag met CIF Authoring
+description: Aan de slag met CIF ontwerpen.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met AEM CIF Authoring {#getting-started}
+# Aan de slag met AEM CIF ontwerpen {#getting-started}
 
-Meer weten over AEM CIF Authoring.
+Meer weten over Adobe Experience Manager (AEM) CIF Authoring.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van deze AEM reis van de Inhoud en de Handel, [Meer informatie over AEM inhoud en handel](/help/commerce-cloud/introduction.md)U leerde de basistheorie van wat een CMS zonder kop is en u zou nu de basisconcepten van AEM Inhoud en Handel moeten begrijpen.
+In het vorige document van deze AEM reis van de Inhoud en de Handel, [Meer informatie over AEM inhoud en handel](/help/commerce-cloud/introduction.md), leerde u de basistheorie en de concepten hoofdloze CMS en AEM Inhoud en Handel.
 
 Dit artikel bouwt voort op die grondbeginselen.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen hoe te om CIF voor Inhoud en Handel specifieke creatie te gebruiken. Na het lezen moet u:
+Dit document helpt u begrijpen hoe te om CIF voor Inhoud en Handel te gebruiken specifieke creatie. Na het lezen moet u:
 
-* Begrijp de concepten creatie CIF gebruikend de Universele Redacteur
+* Begrijp de concepten CIF creatie gebruikend de Universele Redacteur
 * Toegang krijgen tot productcatalogusgegevens in AEM met product- en categoriekiezers
 * Toegang krijgen tot inhoud en handelsgegevens met de productcockpit en AEM Omnsearch
 
-## CIF Authoring in de Universal Editor {#cif-authoring}
+## CIF maken in de Universal Editor {#cif-authoring}
 
 CIF breidt de Universele Redacteur met mogelijkheden uit om tot de productgegevens in real time toegang te hebben zonder de context te verlaten:
 
-Open het zijpaneel en selecteer &#39;Producten&#39; in het vervolgkeuzemenu.
+Open het zijpaneel en selecteer &#39;Producten&#39; in de vervolgkeuzelijst.
 ![Producttype selecteren](assets/asset-finder-overview.png)
 
 U kunt door de productcatalogus bladeren of producten zoeken met het volledige tekstzoekveld.
@@ -65,44 +65,44 @@ Blader naar de catalogusstructuur aan de linkerkant en selecteer de categorie.
 
 ## Product Cockpit {#cockpit}
 
-De cockpit van het product is een centrale plaats om snel tot productcatalogus met al zijn verrijkte inhoud toegang te hebben. In een van de volgende modules leert u hoe u productgegevens kunt verrijken met inhoud. Laten we ons nu concentreren op de toegang tot productgegevens.
+De cockpit van het product is een centrale plaats om snel tot de productcatalogus met al zijn verrijkte inhoud toegang te hebben. In een van de volgende modules leert u hoe u productgegevens kunt verrijken met inhoud. Laten we ons nu concentreren op de toegang tot productgegevens.
 
-Klik in het hoofdmenu op Handelsversie om een lijst met alle gekoppelde productcatalogi weer te geven.
+Klik in het hoofdmenu op Handel om een lijst met alle gekoppelde productcatalogi weer te geven.
 ![menu-item handel](assets/commerce-menu-item.png)
 
-Dit toont een lijst van alle verbind productcatalogi.
+Hier wordt een lijst met alle verbonden productcatalogi weergegeven.
 ![cockpit geïntegreerde catalogi](assets/cockpit-Integrated-catalogs.png)
 
-De productcatalogus bevat standaard alle categorieën op het eerste niveau met alle producten. Als u op een categorie klikt, wordt die categorie geopend met alle verwante producten en subcategorieën, inclusief hun producten.
+In de productcatalogus worden standaard alle categorieën op het eerste niveau met alle producten weergegeven. Als u op een categorie klikt, wordt die categorie geopend met alle verwante producten en subcategorieën, inclusief de bijbehorende producten.
 ![cockpitproductcatalogus](assets/cockpit-product-catalog.png)
 
-U kunt de producteigenschappen openen door op het bezitspictogram te klikken. Het pictogram wordt weergegeven door de muisaanwijzer op een productegel te plaatsen.
+U kunt de eigenschappen van het product openen door op het eigenschapspictogram te klikken. Het pictogram wordt weergegeven door de muisaanwijzer op een productegel te plaatsen.
 ![eigenschappen van cockpit-producten](assets/cockpit-properties.png)
 
-Alle producteigenschappen zijn alleen-lezen omdat de gegevens in real-time worden geladen vanaf de verbonden backend. Het veranderen van producteigenschappen moet in het achterste systeem worden gedaan dat het systeem van verslag is. Het tabblad **Varianten** wordt alleen weergegeven als het product variaties heeft. Wanneer u op het tabblad klikt, worden alle variaties met de bijbehorende kenmerken weergegeven.
+Alle producteigenschappen zijn alleen-lezen omdat de gegevens in real-time worden geladen vanaf de verbonden backend. Het veranderen van producteigenschappen moet in het achterste systeem worden gedaan dat het systeem van verslag is. Het tabblad **Varianten** worden alleen weergegeven als het product variaties heeft. Wanneer u op het tabblad klikt, worden alle variaties met de bijbehorende kenmerken weergegeven.
 ![cockpitproductvarianten](assets/cockpit-properties-variants.png)
 
-Op de resterende tabbladen ziet u alle AEM inhoud die aan het product is gekoppeld. We zullen deze tabbladen in een van de volgende modules bespreken.
+Op de resterende tabbladen ziet u alle AEM inhoud die aan het product is gekoppeld. Deze lusjes worden besproken in één van de volgende modules.
 
 ## AEM Omnissearch {#omnisearch}
 
 Het gebruik van Omnissearch is een eenvoudige manier om AEM inhoud te zoeken met behulp van full-text zoekopdrachten. CIF breidt Omnissearch uit met full-text onderzoek van productcatalogi met zijn bijbehorende AEM inhoud.
 ![menu-item handel](assets/omnisearch.png)
 
-Het onderzoek zal een full-text onderzoek in de handelskolterug in werking stellen om alle verwante producten te vinden. Het resultaat wordt onder **Alle producten weergeven**. InSearch wordt ook AEM gezocht naar inhoud die is gekoppeld aan het doorzochte product. De resultaten worden vermeld in de respectieve AEM categorieën. In dit voorbeeld is één inhoudsfragment gerelateerd aan het product.
+Omnissearch voert een full-text zoekopdracht uit in de commerceback om alle verwante producten te zoeken. Het resultaat wordt weergegeven onder **Alle producten weergeven**. Het onderzoek van Omnissearch zoekt ook AEM naar inhoud die aan het gezochte product wordt geassocieerd. De resultaten worden vermeld in de respectieve AEM categorieën. In dit voorbeeld is één inhoudsfragment gerelateerd aan het product.
 
 ## Volgende functies {#what-is-next}
 
 Nu u dit deel van de reis hebt voltooid, moet u:
 
-* Begrijp de concepten creatie CIF gebruikend de Universele Redacteur
+* Begrijp de concepten CIF creatie gebruikend de Universele Redacteur
 * Toegang tot productcatalogus in AEM met product- en categoriekiezers
 * Toegang krijgen tot inhoud en handelsgegevens met de productcockpit en AEM Omnsearch
 
-Gebaseerd op deze kennis en doorgaan met uw reis door het document opnieuw te bekijken [Productcataloguspagina&#39;s en -sjablonen beheren](catalog-templates.md), waar u leert hoe u uw eerste ervaring met de productcatalogus kunt opbouwen en aanpassen.
+Gebaseerd op deze kennis en doorgaan met uw reis door het document opnieuw te bekijken [Productcataloguspagina&#39;s en -sjablonen beheren](catalog-templates.md), waarin u leert hoe u uw eerste ervaring met de productcatalogus kunt opbouwen en aanpassen.
 
 ## Aanvullende bronnen {#additional-resources}
 
-U kunt het beste naar het volgende gedeelte van de rit gaan door het document te bekijken [Productcataloguspagina&#39;s en -sjablonen beheren](catalog-templates.md)Hieronder volgt een aantal aanvullende, optionele bronnen die een diepgaander inzicht geven in bepaalde concepten die in dit document worden genoemd, maar die niet nodig zijn om verder te gaan op de reis.
+Terwijl u wordt aangeraden door te gaan naar het volgende deel van de reis-[Productcataloguspagina&#39;s en -sjablonen beheren](catalog-templates.md)- het volgende is sommige facultatieve middelen die een diepere duik op sommige hier genoemde concepten doen. Deze facultatieve middelen zijn echter niet nodig om op de reis door te gaan.
 
 * [Opslag en catalogi configureren](/help/commerce-cloud/getting-started.md#catalog)
