@@ -1,9 +1,9 @@
 ---
 title: Adobe Analytics inschakelen voor een adaptief formulier
 description: Met de Experience Cloud Setup Automation kunt u Adobe Analytics verbinden met een adaptief formulier om inzichten in de interactie en betrokkenheid van bezoekers bij te houden.
-source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
+source-git-commit: ea2fdc8e5866f7365c4fa6613b36d6b8bc77a837
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ Voor gedetailleerde informatie over elke metrisch, bezoek [AEM Forms-analyserapp
 Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (experience.adobe.com)
 -->
 
-Voor Experience Cloud Setup Automation in Adobe Experience Manager Forms is een **Adobe Analytics-licentie**, **Gegevensverzameling (voorheen Adobe starten)** om het volgen manuscripten, en integratie met te beheren **Experience Platform Launch (API)** voor gestroomlijnde gegevenssamenvoeging en het genereren van inzichten.
+Voor Experience Cloud Setup Automation is een **Adobe Analytics-licentie**, **Gegevensverzameling (voorheen Adobe starten)** om het bijhouden van scripts te beheren, en **Experience Manager Forms-licentie** voor gestroomlijnde gegevenssamenvoeging en het genereren van inzicht.
 
-Als u een actieve vergunning voor de Automatisering van de Opstelling van het Experience Cloud, Adobe Analytics, en Experience Platform Launch API hebt, zou u hun beschikbaarheid binnen uw ontwikkelaarsconsole moeten verifiëren.
+Als u een actieve licentie hebt voor **Adobe Analytics** en **Experience Manager Forms** en u hebt integratie met **Gegevensverzameling (voorheen Adobe starten)**, zou u hun beschikbaarheid binnen uw ontwikkelaarsconsole moeten verifiëren.
 
-Als u wilt controleren of het bovenstaande beschikbaar is voor uw as a Cloud Service Forms-omgeving, gaat u naar de [ontwikkelingsconsole](https://developer.adobe.com/console/projects)navigeer naar het project en doorzoek uw project met de programma-id, bijvoorbeeld voor de omgeving met URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, programma-id is `p45913-e175111`. Zorg ervoor dat de Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API vermeld zijn. Als deze worden vermeld, kunt u Adobe Analytics inschakelen voor uw Adaptieve Forms.
+Als u wilt controleren of het bovenstaande beschikbaar is voor uw as a Cloud Service Forms-omgeving, gaat u naar de [ontwikkelingsconsole](https://developer.adobe.com/console/projects)navigeer naar het project en doorzoek uw project met de programma-id - omgeving-id, bijvoorbeeld voor de omgeving met URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, programma-id - milieu-id is `p45913-e175111`. Zorg ervoor dat de Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API vermeld zijn. Als deze worden vermeld, kunt u Adobe Analytics inschakelen voor uw Adaptieve Forms.
 
 ![Forms Analytics Integration vereist](assets/analytics-aem.png){width="100%"}
 
@@ -96,6 +96,8 @@ Voer de onderstaande stappen uit om Adobe Analytics voor uw Adaptive Forms in te
 
 ![Geïntegreerde AEM Analytics](assets/analytics-aem-integrated.png){width="100%"}
 
+>[!VIDEO](https://video.tv.adobe.com/v/3424577/recaptcha-google-adaptive-forms/?quality=12&learn=on)
+
 ### Adobe Analytics inschakelen met Adaptive Forms for Core Components {#integrate-adobe-analytics-with-aem-forms-for-core-components}
 
 1. Ga op uw AEM naar **[!UICONTROL Forms]** >> **[!UICONTROL Forms and Document]** en selecteer uw **[!UICONTROL Form]**.
@@ -120,3 +122,85 @@ Voer de onderstaande stappen uit om Adobe Analytics voor uw Adaptive Forms in te
 1. Klikken **Adobe Analytics** om uw rapport te bekijken en prestatiesgegevens te analyseren.
 
 Als u via de handmatige methode een adaptief formulier wilt verbinden met Adobe Analytics, gaat u naar [AEM Forms integreren met Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
+
+## Analyses inschakelen voor adaptieve Forms op sites {#Connect-Analytics-to-Adaptive-Forms-in-Sites}
+
+Door analyses voor uw adaptieve formulier te configureren in AEM Sites kunt u gebruikersinteracties en formulierverzendingen bijhouden op de pagina Formulier op sites. Door de analyses naadloos te integreren in uw Sites Forms krijgt u waardevolle inzichten in gebruikersgedrag, conversietarieven en gebieden voor verbetering in uw formulier.
+
+### Vereisten {#Prerequisites-to-connect-forms-analytics-to-sites}
+
+Als u verbinding wilt maken met en analyses wilt inschakelen in Adaptive Forms for AEM Sites, moet u ervoor zorgen dat uw AEM Sites een actieve Adobe Analytics heeft.
+
+### Aangepaste Forms op sites verbinden om Analyse in te schakelen {#Connect-analytics-to-adaptive-forms}
+
+Als u Adaptief formulier wilt verbinden met een AEM Sites-pagina om Analytics in te schakelen, neemt u de opdracht `customfooterlibs` clientbibliotheek naar de AEM Sites-pagina met behulp van de AEM Archetype/Git Repository en distributiepijplijn.
+
+1. Open uw [AEM Forms Archetype of Cloned Git Repository](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) in een teksteditor. Bijvoorbeeld, de Code van Visual Studio.
+
+1. Navigeer naar de pagina van uw sites waar uw adaptieve formulier aanwezig is, bijvoorbeeld In dit demoproject hebben we `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
+
+1. De waarde kopiëren van `sling:resourceSuperType`. De waarde is bijvoorbeeld `core/wcm/components/page/v3/page`.
+
+   ![slingerbron](/help/forms/assets/slingresource.png)
+
+1. Een vergelijkbare structuur maken op de locatie `ui.apps/src/main/content/jcr_root/apps` gelijk aan `core/wcm/components/page/v3/page`.
+
+   ![bedekkingsstructuur](/help/forms/assets/overlaystructure.png)
+
+1. Voeg een `customfooterlibs.html` bestand.
+
+       &quot;
+       // customheaderlibs.html
+       &lt;sly data-sly-use.page=&quot;com.adobe.cq.wcm.core.components.models.Page&quot;>
+       &lt;sly data-sly-test=&quot;${page.data &amp;&amp; page.dataLayerClientlibIncluded}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.commons.v1.datalayer&amp;#39;, async=true}&quot;>&lt;/sly>
+       &lt;/sly>
+       
+       &quot;
+   
+   De `customfooterlibs.html` wordt gebruikt voor JavaScript.
+
+1. [De pijplijn uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) om de wijzigingen te implementeren.
+
+### Regels voor formulieranalyse op Forms in sites inschakelen {#bind-forms-analytics-rules-to-forms-in-sites}
+
+1. Ga naar **Adobe Experience Platform-gegevensverzameling**.
+1. Klikken **Tags** aan de linkerkant.
+1. Zoek in uw project met de programma-id zoals in de onderstaande afbeelding wordt getoond, bijvoorbeeld voor de omgeving met URL `https://author-p45921-e175111-cmstg.adobeaemcloud.com/index.html`, programma-id is `45921`.
+
+   ![Search-your-form-in-data-collection](/help/forms/assets/aep-data-collection.png)
+
+1. Configuratie toevoegen voor **Formulierregels** en **Gegevenselementen** zoals hieronder aangegeven:
+
+#### Formulierregels toevoegen {#form-rules}
+
+1. Selecteer het formulier en voeg het toe **Nieuwe eigenschap** rechtsboven of klik op het formulier.
+1. Klik op de pagina met eigenschappen **Regels** en selecteert u gebeurtenissen voor uw formulier. In de onderstaande voorbeeldafbeelding ziet u dat **Formuliergebeurtenissen**.
+
+   ![Search-your-form-in-data-collection](/help/forms/assets/aep-form-event-properties.png)
+
+1. Selecteer alle gebeurtenissen in het formulier en **kopiëren** die zich in de rechterbovenspoorlijn bevindt.
+1. Wanneer u een **Regel kopiëren** verschijnt pop-up waar u uw pagina van Plaatsen met project-identiteitskaart zoekt, om de Regels van de Vorm te kleven.
+
+   ![Formulierregels kopiëren](/help/forms/assets/copy-form-rules.png)
+
+1. Klikken **kopiëren** om de formulierregels op de sitepagina te plakken.
+
+#### Gegevenselementen toevoegen {#data-elements}
+
+1. Selecteer het formulier en voeg het toe **Nieuwe eigenschap** rechtsboven of klik op het formulier.
+1. Klik op de pagina met eigenschappen **Gegevenselementen** en selecteert u gebeurtenissen voor het formulier.
+1. Selecteer alle gebeurtenissen in het formulier en **kopiëren** op de rechterbovenspoorstaaf.
+1. Wanneer u een **Regel kopiëren** verschijnt pop-up waar u uw pagina van Plaatsen met project-identiteitskaart zoekt, om de Regels van de Vorm te kleven.
+1. Klikken **kopiëren** om de formulierregels op de sitepagina te plakken.
+
+   ![Formuliergegevenselementen](/help/forms/assets/form-data-elements.png)
+
+Nadat u de regels Formulier en Sites hebt gekoppeld via de bovenstaande stappen, voert u de volgende stappen uit om Analytics in te schakelen voor uw Adaptief formulier op de pagina Sites:
+
+1. Klikken **Publishing Flow** links.
+1. Klikken **Bibliotheek toevoegen** en voert u de gewenste naam in.
+1. In de **Omgeving** vervolgkeuzelijst rechts, selecteert u **ontwikkeling**.
+1. Klikken **Alle gewijzigde bronnen toevoegen**.
+1. Klikken **Opslaan en samenstellen tot ontwikkeling**.
+
+![publicatie-aan-ontwikkeling](/help/forms/assets/publish-to-dev.png)
