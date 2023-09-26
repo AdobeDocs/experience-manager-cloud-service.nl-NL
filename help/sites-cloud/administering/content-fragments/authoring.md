@@ -3,9 +3,9 @@ title: Inhoudsfragmenten ontwerpen
 description: Begrijp hoe te om inhoud voor uw Contentfragmenten te ontwerpen, dan creeer variaties van die inhoud volgens doel. Dit biedt extra flexibiliteit voor zowel levering zonder kop als het ontwerpen van pagina's.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2227'
 ht-degree: 0%
 
 ---
@@ -484,7 +484,7 @@ De **Velden** worden alle velden in het inhoudsfragment weergegeven. Het pictogr
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Tijdelijke aanduiding voor tab</b></p><p>Hoewel niet vertegenwoordigd door een daadwerkelijk pictogram, wordt een <b>Tijdelijke aanduiding voor tab</b> wordt vertegenwoordigd in het linkerpaneel, evenals in het centrale paneel.</p> </td>
+   <td><p><b>Tijdelijke aanduiding voor tab</b></p><p>Hoewel niet vertegenwoordigd door een daadwerkelijk pictogram, wordt een <b>Tijdelijke aanduiding voor tab</b> wordt weergegeven in het linkerdeelvenster. <br>Het wordt ook weergegeven in het centrale deelvenster, horizontaal zoals weergegeven of in een vervolgkeuzelijst (als er te veel zijn om horizontaal te tonen).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
