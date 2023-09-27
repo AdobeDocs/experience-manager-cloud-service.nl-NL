@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: af7a4a3e23a07e4768192ae7d6308e3c6036ceb6
+source-git-commit: 18d63a9ed1fd52ebcd696a4ec5f635350cacb1c0
 workflow-type: tm+mt
-source-wordcount: '4321'
+source-wordcount: '4268'
 ht-degree: 19%
 
 ---
@@ -331,20 +331,6 @@ ht-degree: 19%
          + [Overwegingen verwijderen](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Structuur analyseren](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [Sneltoetsen](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
-         + [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-         + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
-         + [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
-         + [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-         + [Console voor inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
-         + [Contentfragmenten beheren](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
-         + [Variaties - Authoring van content voor fragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
-         + [Aan contentfragmenten gekoppelde content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
-         + [Metagegevens - Fragmenteigenschappen](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
-         + [Contentfragmenten - Overwegingen verwijderen](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
-         + [Markering](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
-         + [Boomstructuur](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
-         + [Voorvertoning - JSON-representatie](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-         + [Console met inhoudsfragmenten - sneltoetsen](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + Site maken {#site-creation}
          + [Een nieuwe site maken](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Voorste pijplijn inschakelen](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
