@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service introductie van on-boarding
 description: Begin hier voor een overzicht van de begeleide journey via het onboarding proces naar AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
+source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -86,7 +86,7 @@ De volgende artikelen beschrijven in detail de kernconcepten op het instapniveau
 
 >[!NOTE]
 >
->Edge Delivery Services is een nieuwe set services die een snelle ontwikkelomgeving mogelijk maken waarin auteurs snel kunnen bijwerken en publiceren en nieuwe sites snel kunnen worden opgestart. Voor meer informatie over Edge Delivery-services raadpleegt u de [Aan de slag-pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
+>Edge Delivery Services is een nieuwe reeks composable diensten die een flexibele, snelle ontwikkelomgeving toelaten waar de auteurs kunnen bijwerken en publiceren snel, en de nieuwe plaatsen worden gelanceerd snel. Voor meer informatie over Edge Delivery-services raadpleegt u de [Aan de slag-pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## Volgende functies {#what-is-next}
 
