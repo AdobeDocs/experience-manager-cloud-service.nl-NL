@@ -2,10 +2,10 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: 0dab7428d8ae5ec4c11a88ff310fad649a365868
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 2%
+source-wordcount: '511'
+ht-degree: 1%
 
 ---
 
@@ -13,42 +13,60 @@ ht-degree: 2%
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 13420 {#release-13420}
+## Release 13665 {#release-13665}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13420 samengevat, die op 12 september 2023 openbaar werd gemaakt. Deze onderhoudrelease vervangt release 13323.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13665 samengevat, die op 27 september 2023 openbaar werd gemaakt. Deze onderhoudrelease vervangt release 13420.
 
-2023.9.0 Activering van de eigenschap verstrekt de volledige eigenschap die voor deze onderhoudsversie wordt geplaatst. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
+2023.10.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
-### Verbeteringen {#enhancements-13420}
+### Verbeteringen {#enhancements-13665}
 
-- ASSETS-19544: Activa die het laatst door eigendom zijn gewijzigd, zijn nu ingesteld op de gebruiker die de verwerking aanvraagt.
+* Verschillende verbeteringen in de API&#39;s voor inhoudsfragmenten.
+* ASSETS-26713: Assets-dashboard: het nieuwe Experience UI-dashboard is nu bereikbaar via Touch UI.
+* SITES-11206: Content Fragments: Search API for Content Fragments.
+* SITES-11262: Inhoudsfragmenten: knop om over te schakelen naar de nieuwe Inhoudsfragmenteditor.
+* SITES-15447: Core Components: Release van versie 2.23.4.
 
-### Opgeloste problemen {#fixed-issues-13420}
+### Opgeloste problemen {#fixed-issues-13665}
 
-- ASSETS-27628: Onjuiste &#39;kanalen&#39;-node die wordt gemaakt tijdens het aanpassen van het middelenzoekvenster
-- ASSETS-27539: uploadbeperkingen reguliere expressie matching.
-- ASSETS-26530: Verenigde Shell brengt gebruikers niet terug naar de originele pagina.
-- ASSETS-22719: haken in de naam Onderbrekingspunt slim uitsnijden breken de functie Slim uitsnijden bewerken.
-- ASSETS-27726: linkshare.html zou niet door Google moeten worden geïndexeerd.
-- ASSETS-27791: Validatie van het metagegevensschema vindt alleen plaats voor het eerste veld.
-- ASSETS-25544: Vaste knop voor CDN-cache-ongeldigmaking.
-- ASSETS-26575: afkapping met vaste naam bij het maken van afbeeldingssets.
-- ASSETS-26705: Oplossing voor onnodige verwerking van niet-DM-mapelementen en inhoudsfragmenten.
-- ASSETS-25740: Vaste schermlezers vertellen de naam en de rol voor de besturingselementen Bewerken/Uitsnijden niet op de pagina &#39;Slimme uitsnijdingen bewerken&#39; met de pijltoetsen omlaag.
-- CQ-4354266: Kan items in postvak niet openen.
-- CQ-4354347: Bijgewerkte AEM vertalingen.
-- DISP-1009: Gebruiker-Agent als niet-eerste kopbal ontdoet x-Door:sturen-Gastheer.
-- Verschillende oplossingen voor toegankelijkheid en beveiliging.
+* Verschillende vertalingen.
+* CQ-4354428: Workflows: kan een taak in Postvak IN niet voltooien.
+* SITES-9733: Content Fragments: Asset References in content fragment reference panel shows 0(zero) references.
+* SITES-14561: Inhoudsfragmenten: Vaste en verbeterde HTML naar Markup-conversie.
+* SITES-14882: Inhoudsfragmenten: als we het inhoudsfragment bewerken en het tabblad sluiten zonder op de knop Opslaan of Sluiten te klikken, worden de waarden opgeslagen.
+* SITES-15167: Inhoudsfragmenten: het repareren van een variatie met een ongeldige lading retourneert niet 400, maar 500.
+* SITES-15514: Content Fragments: Malformed Markdown output voor lijst binnen RTE.
+* SITES-15661: Inhoudsfragmenten: gebruik geen unieke restrictie en wijzig de volgorde van items in verwijzingsvelden in de API Fragments.
+* SITES-15730: Schermen: functionaliteit voor kanaalvoorvertoning werkt niet op het dashboard.
+* SITES-15995: Inhoudsfragmenten: MIME-typen van zowel model- als fragmentlange tekstvelden worden gecodeerd.
+* SITES-16074: Inhoudsfragmenten: Tagvelden die geen tekenreeks zijn[] kan niet van JCR worden opgehaald.
+* SITES-16084: Inhoudsfragmenten: CFHomeCardModelImpl ontbreekt de doelnavigator.
+* SITES-14773: De Fragmenten van de ervaring: De Verwijzing van de verbinding wordt niet bijgewerkt binnen ervaringsfragment.
+* SITES-14899: De Fragmenten van de Ervaring: Veelvoudige aanbiedingen die voor XF variaties in Doel worden gecreeerd.
+* SITES-8590: GraphQL: De coderingskwesties met variabelen in persisted query.
+* SITES-9224: GraphQL: de uitzondering Writer is al gesloten in GraphQLServlet.
+* SITES-14800: GraphQL: Exception in persisted GraphQL query&#39;s with variables.
+* SITES-15586: GraphQL: Issue with persisted query filtering with null values.
+* SITES-15622: GraphQL: Probleem met aanhoudende query&#39;s met getallen en bool parameters.
+* SITES-15654: GraphQL: Issue with union &amp; properties with same name.
+* SITES-15267: Opstarten: Bij de promotie worden geen opstartiepagina&#39;s opgehaald die zijn gewijzigd voordat de startconfiguratie werd gewijzigd.
+* SITES-15406: Start: kan geen startpagina toevoegen.
+* SITES-15427: Launches: Inconsistent gedrag van het bereik &quot;Huidige pagina en subpagina&#39;s bevorderen&quot;.
+* SITES-15429: Launches: pagina&#39;s ontwerpen verwijderd tijdens het promoten van startpagina&#39;s.
+* SITES-15462: Launches: Automatische promotieprocedure publiceert pagina&#39;s die buiten het promotiebereik vallen.
+* SITES-15815: Launches: Verwijderde pagina uit Launch zorgt ervoor dat Starten niet correct wordt bevorderd.
+* SITES-15223: Pagina-editor: kan componenten niet vergroten of verkleinen in emulator voor tabletgrootte.
+* SITES-15463: Paginasjablonen: sjablonen kunnen niet worden gepubliceerd.
 
-### Bekende problemen {#known-issues-13420}
+### Bekende problemen {#known-issues-13665}
 
-Geen.
+Geen
 
-### Ingesloten technologieën {#embedded-tech-13420}
+### Ingesloten technologieën {#embedded-tech-13665}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
 | AEM | 1,54-T20230817132355-3800a65 | [API 1.54.0 voor ongewenste API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
 | AEM SLING-API | Versie 2.27.2 | [API voor Apache Sling API 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Versie 1.4.20-1.4.0 | [HTML Sjabloontaalspecificaties](https://github.com/adobe/htl-spec) |
-| AEM-kerncomponenten | Versie 2.23.2 | [AEM WCM Core-componenten](https://github.com/adobe/aem-core-wcm-components) |
+| AEM-kerncomponenten | Versie 2.23.4 | [AEM WCM Core-componenten](https://github.com/adobe/aem-core-wcm-components) |
