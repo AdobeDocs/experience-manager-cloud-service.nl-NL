@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
+>Vanaf hier kunt u navigeren om notities van eerdere versies weer te geven. Bijvoorbeeld voor die in 2020 en 2021.
 
 >[!NOTE]
 >
@@ -34,12 +34,12 @@ Kijk eens naar de [Overzicht release augustus 2021](https://video.tv.adobe.com/v
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* Wanneer gebruikers digitale elementen delen als een koppeling, kunnen ze de URL direct naar het klembord kopiëren. Dankzij deze verbetering kunt u elementen sneller en handiger delen. Dankzij deze functionaliteit kunt u sneller en handig elementen delen.
+* Wanneer de gebruiker digitale middelen als verbinding deelt, kan de gebruiker URL aan het klembord onmiddellijk kopiëren. Dankzij deze verbetering kunt u elementen sneller en handiger delen. Dankzij deze functionaliteit kunt u sneller en handig elementen delen.
 
   ![De optie URL kopiëren wanneer een element wordt gedeeld als een koppeling](/help/assets/assets/link-share-copy-URL-option.png)
   *Afbeelding: wanneer u een element deelt als een koppeling, kunt u de URL nu kopiëren en afzonderlijk delen.*
 
-* Wanneer u TXT-bestanden uploadt, genereert de elementmicroservices automatisch een miniatuur. De PNG-miniatuur is een uitvoering van het TXT-bestand waarmee gebruikers de inhoud of de bestanden tot op zekere hoogte kunnen identificeren zonder de bestanden te openen. Deze functionaliteit vereist geen configuratie en werkt standaard.
+* Wanneer u TXT-bestanden uploadt, genereren de elementmicroservices automatisch een miniatuur. De PNG-miniatuur is een uitvoering van een TXT-bestand waarmee gebruikers de inhoud of de bestanden tot op zekere hoogte kunnen identificeren zonder de bestanden te openen. Deze functionaliteit vereist geen configuratie en werkt standaard.
 
   ![Er wordt automatisch een uitvoering van een TXT-bestand gegenereerd door [!DNL Assets] in PNG-indeling](/help/assets/assets/thumbnail-rendition-txt-file.png)
   *Afbeelding: Er wordt automatisch een uitvoering van een TXT-bestand gegenereerd om u te helpen het bestand te identificeren zonder het te openen.*
@@ -62,27 +62,27 @@ Kijk eens naar de [Overzicht release augustus 2021](https://video.tv.adobe.com/v
 
 * De service automatede form conversion kan [PDF forms converteren naar Italiaans en Portugees](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) naar Adaptive Forms.
 
-* **Op acroform gebaseerd document of record**: as a Cloud Service AEM Forms-ondersteuning voor [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als een sjabloon voor Document of Record naast XFA-formuliersjabloon.
+* **Op acroform gebaseerd document of record**: as a Cloud Service AEM Forms-ondersteuning voor [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als een sjabloon voor Document of Record naast XFA-formuliersjabloon.
 
-* **Microsoft Azure Data Store-connector**: U kunt nu [Formuliergegevensmodel verbinden met Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft Azure Storage als een BLOB.
+* **Microsoft® Azure Data Store-connector**: U kunt nu [Formuliergegevensmodel aansluiten op Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft® Azure Storage als een BLOB.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
 
-* **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt nu elke ontvanger van de overeenkomst inschakelen om zijn rol in een adaptief formulier te configureren, waarbij ondertekenaar de standaardrol is.
+* **Adobe Sign-rollen gebruiken in een adaptief formulier** - Adobe Sign for business and enterprise service levels kunnen optioneel de rollen voor overeenkomstontvangers uitbreiden, naast alleen de ondertekenaar, om beter aan hun workflowvereisten te voldoen. U kunt nu elke ontvanger van de overeenkomst inschakelen om zijn rol in een adaptief formulier te configureren, waarbij ondertekenaar de standaardrol is.
 
-* **Analyses voor Adaptive Forms**: U kunt nu het gedrag van eindgebruikers vastleggen en bijhouden via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+* **Analyses voor Adaptive Forms** - U kunt nu het gedrag van eindgebruikers vastleggen en volgen via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
-* **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce.com**: De service biedt vanuit de box-configuratie van gegevensbronnen en gegevensmodellen voor Microsoft Dynamics en Salesforce.com, zodat ontwikkelaars Microsoft Dynamics en Salesforce.com sneller en eenvoudiger kunnen configureren als gegevensbronnen voor een adaptieve vorm.
+* **Maak eenvoudig verbinding met AEM Forms met Microsoft® Dynamics en Salesforce.com** - De service biedt de configuratie van de box-gegevensbron en gegevensmodellen voor Microsoft® Dynamics en Salesforce.com. Zo kunnen ontwikkelaars Microsoft® Dynamics en Salesforce.com sneller en eenvoudiger configureren als gegevensbronnen voor een adaptieve vorm.
 
 ## CIF-invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* De nieuwe interface van de Categoriekiezer voor betere gebruikerservaring, verhoogde efficiency en betere steun voor complexe productcatalogus
+* De nieuwe interface van de Plukker van de Categorie voor betere gebruikerservaring, verhoogde efficiency en betere steun voor complexe productcatalogus
 
   ![Nieuwe rubriekkiezer](/help/assets/CIF/category-picker.png)
 
-* Betere A11Y-ondersteuning voor CIF Core-componenten
+* Betere A11Y-ondersteuning voor CIF Core Components
 
 ## Cloud Manager {#cloud-manager}
 
@@ -95,12 +95,12 @@ De volgende release is gepland voor 9 september 2021.
 
 ### Wat is er nieuw? {#what-is-new-aug}
 
-* Klanten van Cloud Servicen kunnen nu SLA-rapporten (Service Level Agreement) weergeven in Cloud Manager. Dit zal de komende maanden geleidelijk beschikbaar worden gesteld.
-Zie [SLA-rapportage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) voor meer informatie.
+* Klanten van Cloud Servicen kunnen nu SLA-rapporten (Service Level Agreement) weergeven in Cloud Manager. Dit zal de komende maanden geleidelijk beschikbaar komen.
+Zie [SLA-rapportage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html).
 
-* Het type en de ernst van het IndexType en `IndexDamAssetLucene` de kwaliteitsvoorschriften zijn gewijzigd . Dit zijn nu beide bugs van Blocker *seriteit*.
+* Het type en de ernst van het IndexType en `IndexDamAssetLucene` de kwaliteitsvoorschriften zijn gewijzigd . Dit zijn nu beide bugs van Blocker *ernst*.
 
-* De nieuwe de kwaliteitsregels van de indexkwaliteit van de eikel zijn geïntroduceerd om asynchrone en tika configuraties te behandelen.
+* De nieuwe de kwaliteitsregels van de indexkwaliteit van de eikel zijn geïntroduceerd om asynchrone en configuraties van de Tika te behandelen.
 
 * Verhoog de maximale SSL-certs per programma tot 50.
 
@@ -114,11 +114,11 @@ Zie [SLA-rapportage](https://experienceleague.adobe.com/docs/experience-manager-
 
 ### Opgeloste problemen {#bug-fixes-aug}
 
-* Update Available status should not be displayed when the latest release is less than the current release.
+* Update Available status should not appear when the latest release is less than the current release.
 
-* De eerste instapweigering mislukte voor nieuwe organisaties met zeer lange namen.
+* De eerste instapweigering mislukte voor nieuwe organisaties met lange namen.
 
-* Af en toe, wanneer een pijpleiding tweemaal om één of andere reden in werking wordt gesteld, resulteert het in één van de terechtstellingen die nalaten *kan uitvoerstatus van pijpleiding niet bijwerken* fout.
+* Soms, wanneer een pijpleiding tweemaal om een bepaalde reden in werking wordt gesteld, resulteert het in één van de executies die met een *`cannot update pipeline execution status`* fout.
 
 ## De tool Content Transfer {#content-transfer-tool}
 
@@ -128,7 +128,7 @@ De releasedatum voor Content Transfer Tool v1.5.6 is 11 augustus 2021.
 
 ### Opgeloste problemen {#bug-fixes-ctt}
 
-* In sommige gevallen zijn niet alle gebruikers gemigreerd naar de doelinstantie. Om deze moeilijke CTT v1.5.6 te krijgen wordt vereist samen met aem-ethos-hulpmiddelen 1.2.354 of recentere versie op het doel AEM as a Cloud Service instantie.
+* Soms zijn niet alle gebruikers gemigreerd naar de doelinstantie. Om deze correctie te verkrijgen, is CTT v1.5.6 vereist samen met aem-ethos-tools 1.2.354 of recentere versie op het doel AEM as a Cloud Service instantie.
 
 * De **Inscriptie stoppen** werd uitgeschakeld tijdens het toevoegen aan de instantie Publiceren. Dit is niet nodig omdat er geen stap voor het herstellen van het mongo is tijdens de opname van Publiceren.
 
