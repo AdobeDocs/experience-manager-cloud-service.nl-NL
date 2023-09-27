@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service introductie van on-boarding
 description: Begin hier voor een overzicht van de begeleide journey via het onboarding proces naar AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: d76a0782c72045698e8a595574f9e4c64c3ebaff
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1220'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Dientengevolge:
 
 Hoewel er veel te leren kan zijn wanneer begonnen met AEM as a Cloud Service, conceptueel zijn er slechts een paar, logische stukken.
 
-* **Het contract** - U moet bekend zijn met uw Adobe-contract, omdat het aspecten van het instapproces definieert.
+* **Het contract** - U moet bekend zijn met uw contract voor Adobe, aangezien hierin aspecten van het instapproces worden gedefinieerd.
 * **Admin Console** - Waar gebruikers worden beheerd en rollen worden toegewezen.
 * **Cloud Manager** - Het hulpmiddel om middelen zoals programma&#39;s en milieu&#39;s op te zetten. Het is ook waar u toegang hebt tot it en pijpleidingen creeert om uw douanecode te beheren en op te stellen.
 
@@ -64,11 +64,11 @@ Deze instapkaartgids illustreert het volledige proces van instapweigering als sy
 
 >[!TIP]
 >
->Als u nog nooit as a Cloud Service bent en vertrouwd bent met AEM en van on-premise of Adobe Managed Services migreert, moet u het volgende controleren: [AEM as a Cloud Service migratiereis](/help/journey-migration/getting-started.md).
+>Als u as a Cloud Service bent om te AEM en vertrouwd met AEM bent en van op-gebouw of Adobe Managed Services migreert, ben zeker om uit te checken [AEM as a Cloud Service migratiereis](/help/journey-migration/getting-started.md).
 
 ## Reisoverzicht aan boord {#overview}
 
-De volgende artikelen beschrijven in detail de kernconcepten op het instapniveau en geven u fundamentele kennis van AEM as a Cloud Service. Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom, als u nieuw aan het instappen bent, adviseert Adobe dat u bij het begin begint en opeenvolgend vordert.
+De volgende artikelen beschrijven in detail de kernconcepten op het instapniveau en geven u fundamentele kennis van AEM as a Cloud Service. Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom, als u nieuw aan het instappen bent, adviseert de Adobe dat u bij het begin begint en opeenvolgend vordert.
 
 | Aantal | Artikel | Beschrijving | Publiek |
 |---|---|---|---|
@@ -84,6 +84,10 @@ De volgende artikelen beschrijven in detail de kernconcepten op het instapniveau
 | 9 | [Taken van ontwikkelaar- en implementatiebeheer](developers.md) | Optioneel - Leer als ontwikkelaar hoe u toegang krijgt tot de Cloud Manager Git en hoe u als implementatiebeheerder pijpleidingen kunt instellen en code kunt implementeren in Cloud Manager. | Ontwikkelaars en implementatiemanagers |
 | 10 | [AEM](aem-users.md) | Optioneel - Leer als AEM auteur hoe u toegang kunt krijgen tot AEM as a Cloud Service instantie en hoe u vertrouwd bent met het ontwerpen van inhoud voor AEM as a Cloud Service. | AEM |
 
+>[!NOTE]
+>
+>Edge Delivery Services is een nieuwe set services die een snelle ontwikkelomgeving mogelijk maken waarin auteurs snel kunnen bijwerken en publiceren en nieuwe sites snel kunnen worden opgestart. Voor meer informatie over Edge Delivery-services raadpleegt u de [Aan de slag-pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
+
 ## Volgende functies {#what-is-next}
 
 U bent nu klaar om uw AEM as a Cloud Service instapreis te beginnen. U wordt aangemoedigd om door te gaan naar het volgende deel van de reis en het artikel te lezen [Voorbereiding aan boord](preparation.md)
@@ -92,9 +96,9 @@ U bent nu klaar om uw AEM as a Cloud Service instapreis te beginnen. U wordt aan
 
 [Een documentatiereis](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende, gecompliceerde onderwerpen en eigenschappen samen. Het verstrekt een verhaal dat een lezer nieuw helpt om een bedrijfsprobleem van begin tot eind te AEM begrijpen en op te lossen, terwijl het veronderstellen van minimaal voorafgaand onderwerp of AEM kennis.
 
-Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
+Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
-Als u wilt weten wat Adobe raadt om uw team op uw nieuwe AEM as a Cloud Service toepassing in te schakelen, begin hier!
+Als u wilt weten welke Adobe u adviseert om uw team op uw nieuwe AEM as a Cloud Service toepassing in te laten gaan, begin hier!
 
 <!-- ERROR: Not Found (HTTP error 404)
 ## Additional Resources {#additional-resources}
