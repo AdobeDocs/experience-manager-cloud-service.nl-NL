@@ -3,7 +3,7 @@ title: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 description: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 24c6e5e78e3e1b30e4becfad2f4f6e57e75ad4e9
 workflow-type: tm+mt
 source-wordcount: '1451'
 ht-degree: 16%
@@ -60,7 +60,7 @@ Map invoeren `conf.d/rewrites`.
 
 Bestandsnaam verwijderen `base_rewrite.rules` en `xforwarded_forcessl_rewrite.rules` en vergeet niet te verwijderen `Include` instructies in de virtuele hostbestanden die naar deze bestanden verwijzen.
 
-Indien `conf.d/rewrites` bevat nu één bestand. Wijzig de naam van dit bestand in `rewrite.rules` en vergeet niet de `Include` instructies die naar dat bestand verwijzen, ook in de virtuele hostbestanden.
+Indien `conf.d/rewrites` bevat nu één bestand. Wijzig de naam ervan in `rewrite.rules` en vergeet niet de `Include` instructies die naar dat bestand verwijzen, ook in de virtuele hostbestanden.
 
 Als de map echter meerdere, virtuele hostspecifieke bestanden bevat, moet de inhoud ervan naar de `Include` in de virtuele hostbestanden.
 
@@ -70,7 +70,7 @@ Map invoeren `conf.d/variables`.
 
 Bestandsnaam verwijderen `ams_default.vars` en vergeet niet te verwijderen `Include` instructies in de virtuele hostbestanden die naar deze bestanden verwijzen.
 
-Indien `conf.d/variables` bevat nu één bestand. Wijzig de naam van dit bestand in `custom.vars` en vergeet niet de `Include` instructies die naar dat bestand verwijzen, ook in de virtuele hostbestanden.
+Indien `conf.d/variables` bevat nu één bestand. Wijzig de naam ervan in `custom.vars` en vergeet niet de `Include` instructies die naar dat bestand verwijzen, ook in de virtuele hostbestanden.
 
 Als de map echter meerdere, virtuele hostspecifieke bestanden bevat, moet de inhoud ervan naar de `Include` in de virtuele hostbestanden.
 
@@ -104,7 +104,7 @@ Verwijder alle bestanden uit een farm in `conf.dispatcher.d/enabled_farms` dat `
 
 ### De naam van farmbestanden wijzigen
 
-Alle bedrijven in `conf.d/enabled_farms` moet worden hernoemd om overeen te komen met het patroon `*.farm`, dus bijvoorbeeld, een landbouwbedrijfdossier genoemd `customerX_farm.any` naam wijzigen `customerX.farm`.
+Alle bedrijven in `conf.dispatcher.d/enabled_farms` moet worden hernoemd om overeen te komen met het patroon `*.farm`, dus bijvoorbeeld, een landbouwbedrijfdossier genoemd `customerX_farm.any` naam wijzigen `customerX.farm`.
 
 ### Cache controleren
 
@@ -118,7 +118,7 @@ vanuit de standaardconfiguratie voor Dispatcher naar deze map. De standaardconfi
 
 Indien in `conf.dispatcher.d/cache` bevat nu één bestand met achtervoegsel `_cache.any`, moet de naam worden gewijzigd in `rules.any` en vergeet niet de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
 
-Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan moeten worden gekopieerd `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
+Als de map echter meerdere, bedrijfsspecifieke bestanden met dat patroon bevat, moet de inhoud ervan naar het `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
 
 Alle bestanden met het achtervoegsel verwijderen `_invalidate_allowed.any`.
 
@@ -138,7 +138,7 @@ Verwijder alle bestanden met het voorvoegsel `ams_`.
 
 Indien `conf.dispatcher.d/clientheaders` bevat nu één bestand met achtervoegsel `_clientheaders.any`, moet de naam worden gewijzigd in `clientheaders.any` en vergeet niet de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
 
-Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan moeten worden gekopieerd `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
+Als de map echter meerdere, bedrijfsspecifieke bestanden met dat patroon bevat, moet de inhoud ervan naar het `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
 
 Het bestand kopiëren `conf.dispatcher/clientheaders/default_clientheaders.any` van het gebrek AEM as a Cloud Service configuratie van de Verzender aan die plaats.
 
@@ -164,7 +164,7 @@ Verwijder alle bestanden met het voorvoegsel `ams_`.
 Indien `conf.dispatcher.d/filters` bevat nu één bestand waarnaar de naam moet worden gewijzigd
 `filters.any` en vergeet niet de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
 
-Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan moeten worden gekopieerd `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
+Als de map echter meerdere, bedrijfsspecifieke bestanden met dat patroon bevat, moet de inhoud ervan naar het `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
 
 Het bestand kopiëren `conf.dispatcher/filters/default_filters.any` van het gebrek AEM as a Cloud Service configuratie van de Verzender aan die plaats.
 
@@ -203,7 +203,7 @@ Verwijder alle bestanden met het voorvoegsel `ams_`.
 Indien `conf.dispatcher.d/virtualhosts` bevat nu één bestand waarnaar de naam moet worden gewijzigd
 `virtualhosts.any` en vergeet niet de `$include` verklaringen die naar dat dossier in de landbouwbedrijfdossiers eveneens verwijzen.
 
-Als de omslag echter veelvoudige, landbouwbedrijfspecifieke dossiers met dat patroon bevat, zou hun inhoud aan moeten worden gekopieerd `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
+Als de map echter meerdere, bedrijfsspecifieke bestanden met dat patroon bevat, moet de inhoud ervan naar het `$include` verklaring die naar hen in de landbouwbedrijfdossiers verwijst.
 
 Het bestand kopiëren `conf.dispatcher/virtualhosts/default_virtualhosts.any` van het gebrek AEM as a Cloud Service configuratie van de Verzender aan die plaats.
 
@@ -237,7 +237,7 @@ Bij andere fouten bekijkt u de sectie Problemen oplossen in de documentatie over
 
 Het script gebruiken `docker_run.sh` in de AEM as a Cloud Service Hulpmiddelen van de Verzender, kunt u testen dat uw configuratie geen andere fout bevat die slechts in plaatsing zou verschijnen:
 
-### Stap 1: Implementatiegegevens genereren met de validator
+### Stap 1: Genereer plaatsingsinformatie met validator
 
 ```
 validator full -d out .
@@ -245,7 +245,7 @@ validator full -d out .
 
 Dit bevestigt de volledige configuratie en produceert plaatsingsinformatie binnen `out`
 
-### Stap 2: De Dispatcher starten in een dockerafbeelding met die implementatiegegevens
+### Stap 2: Begin de Dispatcher in een docker beeld met die plaatsingsinformatie
 
 Wanneer uw AEM publicatieserver op uw macOS-computer wordt uitgevoerd en u luistert naar poort 4503, kunt u de Dispatcher als volgt voor die server starten:
 
