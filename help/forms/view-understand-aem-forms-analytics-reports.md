@@ -5,7 +5,7 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Door belangrijke prestatie-indicatoren vast te leggen en te volgen, kunnen bedri
 
 ## Adobe Analytics instellen op Adaptive Forms {#setup-adobe-analytics-to-aem-forms}
 
-Voor het rapport AEM Forms Analytics integreert u eerst Adobe Analytics met AEM Forms via de Automatisering van de Opstelling van het Experience Cloud. Voor Experience Cloud Setup Automation in Adaptive Forms is een Adobe Analytics-licentie, Data Collection (voorheen Adobe Launch) vereist voor het beheer van trackingscripts en integratie met de Experience Platform Launch-API voor gestroomlijnde gegevensaggregatie en het genereren van inzichten. Bezoek [Adobe Analytics inschakelen voor een adaptief formulier met behulp van Experience Cloud Setup Automation](/help/forms/forms-experience-cloud-setup-automation.md) voor een volledige opstellingsinformatie.
+Voor het rapport AEM Forms Analytics integreert u eerst Adobe Analytics met AEM Forms via de Automatisering van de Opstelling van het Experience Cloud. Voor Experience Cloud Setup Automation in Adaptive Forms is een Adobe Analytics-licentie, Data Collection (voorheen Adobe Launch) vereist voor het beheer van trackingscripts en integratie met de Experience Platform Launch-API voor gestroomlijnde gegevensaggregatie en het genereren van inzichten. Bezoek [Adobe Analytics inschakelen voor een adaptief formulier met behulp van Experience Cloud Setup Automation](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) voor een volledige opstellingsinformatie.
 
 ## Adaptief Forms Adobe Analytics-rapport weergeven {#view-adobe-analytics-report}
 

@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 407afc27911c507d3662fa4897b29e8187bbec7a
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 0%
@@ -116,7 +116,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * [**Google reCAPTCHA-bedrijfsondersteuning**](/help/forms/captcha-adaptive-forms-core-components.md): Gebruik Google reCAPTCHA Enterprise in een adaptieve vorm om een betere bescherming te bieden tegen frauduleuze activiteiten en spam, zodat gebruikers veiliger worden. Met een geavanceerde risicoanalyse en naadloze integratie kunnen echte gebruikers eenvoudig formulieren indienen terwijl de bots effectief worden geblokkeerd.
 
-* [**Adobe Analytics with Experience Cloud Setup Automation for Forms**](/help/forms/forms-experience-cloud-setup-automation.md): U kunt nu Adobe Analytics met de Automatisering van de Opstelling van het Experience Cloud met een omdraaiing van een paar knopen toelaten. Hiermee kunt u AEM Forms as a Cloud Service verbinden met Experience Platforms-tags en Adobe Analytics om prestatiegegevens voor gepubliceerde formulieren vast te leggen en bij te houden.
+* [**Adobe Analytics with Experience Cloud Setup Automation for Forms**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): U kunt nu Adobe Analytics met de Automatisering van de Opstelling van het Experience Cloud met een omdraaiing van een paar knopen toelaten. Hiermee kunt u AEM Forms as a Cloud Service verbinden met Experience Platforms-tags en Adobe Analytics om prestatiegegevens voor gepubliceerde formulieren vast te leggen en bij te houden.
 
 * [**Adobe Analytics-rapportsjabloon voor Adaptive Forms**](/help/forms/view-understand-aem-forms-analytics-reports.md): Forms as a Cloud Service geeft nu een Adobe Analytics-rapport OOTB. Zo kunt u gemakkelijk de prestaties van uw formulieren begrijpen. De maatstaven op formulierniveau bieden u inzicht in de manier waarop het formulier werkt met meerdere prestatie-indicatoren (KPI&#39;s), zoals uitvoeringen, bezoekers, verzendingen, gemiddelde vultijd. Door gebruikersgedrag en feedback te volgen, kunt u delen van het formulier identificeren die verwarring veroorzaken en verbeteringen aanbrengen in het ontwerp en de functionaliteit van het formulier.
 
