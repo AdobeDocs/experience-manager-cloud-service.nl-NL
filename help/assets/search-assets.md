@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
+source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
 workflow-type: tm+mt
-source-wordcount: '5463'
+source-wordcount: '5492'
 ht-degree: 4%
 
 ---
@@ -46,12 +46,26 @@ Gebruik de **[!UICONTROL Filters]** om te zoeken naar elementen, mappen, tags en
 ## Interface voor middelenzoekopdrachten begrijpen {#searchui}
 
 Verken uzelf met de interface voor het zoeken naar middelen en de beschikbare acties.
-
-![Experience Manager Assets-interface voor zoekresultaten begrijpen](assets/aem_search_results.png)
-
+<!--
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
+-->
+![Experience Manager Assets-interface voor zoekresultaten begrijpen](assets/aem-search-interface.png)
 *Afbeelding: Begrijpen [!DNL Experience Manager Assets] zoekresultateninterface.*
 
-**A.** Sla de zoekopdracht op als een slimme verzameling. **B.** Hiermee kunt u de zoekresultaten beperken door filters of voorspelling in te stellen. **C.** Bestanden, mappen of beide weergeven. **D.** Klik op Filters om het linkerspoor te openen of te sluiten. **E.** Zoeklocatie is DAM. **F.** Het gebied van het onderzoek met user-provided onderzoekssleutelwoord. **G.** Selecteer de geladen zoekresultaten. **H.** Aantal weergegeven zoekresultaten van de totale zoekresultaten. **I.** Zoekopdracht sluiten. **J.** Schakel tussen de kaartweergave en de lijstweergave.
+**A.** Sla de zoekopdracht op als een slimme verzameling.
+**B.** Hiermee kunt u de zoekresultaten beperken door filters of voorspelling in te stellen.
+**C.** Bestanden, mappen of beide weergeven.
+**D.** Zoeklocatie is DAM.
+**E.** Opgeslagen zoekopdrachten openen
+**F.** Klik op Filters om de linkertrack te openen of te sluiten.
+**G.** Hiermee geeft u elementen weer als standaardzoekopdracht.
+**H.** Zoeklocatie is DAM.
+**I.** Het gebied van het onderzoek met user-provided onderzoekssleutelwoord.
+**J.** Selecteer de geladen zoekresultaten.
+**K.** Sorteren op Gemaakt, Gewijzigd, Naam, Geen.
+**L.** Sorteren op Oplopende of Aflopende volgorde.
+**M.** Aantal weergegeven zoekresultaten van de totale zoekresultaten. **N.** Zoekopdracht sluiten.
+**O.** Schakel tussen de kaartweergave en de lijstweergave.
 
 ### Dynamische zoekfacetten {#dynamicfacets}
 
@@ -160,7 +174,10 @@ De grootte van de elementbatch configureren:
 
 **Middelen in een map zoeken**: U kunt de zoekopdracht beperken tot een specifieke map. In de **[!UICONTROL Filters]** , voegt u het pad van een map toe. U kunt slechts één map tegelijk selecteren.
 
-![Zoekresultaten beperken tot een map door een mappad toe te voegen in het deelvenster Filters](assets/search_folder_select.gif)
+![Zoekresultaten beperken tot een map door een mappad toe te voegen in het deelvenster Filters](assets/limiting-search.gif)
+<!--
+![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *Afbeelding: Beperk de zoekresultaten tot een map door een mappad toe te voegen in het deelvenster Filters.*
 
@@ -277,7 +294,9 @@ Geef de volgende aanvraagparameters in een URL door om de elementenkiezer in een
 
 Ga naar `https://[aem_server]:[port]/aem/assetpicker`. Navigeer naar de gewenste map en selecteer een of meer elementen. U kunt ook naar het gewenste element zoeken in het vak Zoeken, naar wens een filter toepassen en het vervolgens selecteren.
 
-![Door element bladeren en dit selecteren in de elementenkiezer](assets/assetpicker.png)
+![Door element bladeren en dit selecteren in de elementenkiezer](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *Afbeelding: Blader door elementen en selecteer deze in de elementenkiezer.*
 
