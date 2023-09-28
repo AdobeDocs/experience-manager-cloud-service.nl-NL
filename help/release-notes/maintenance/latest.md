@@ -2,7 +2,7 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b147c80581bcb554ae0b4ac971c5f98e7160d1df
+source-git-commit: c62ae58240298604e6cd7737678603eb734434b3
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 0%
@@ -94,15 +94,9 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13665 same
 * FORMS-10248: In Adaptive Forms gebaseerd op Core Components, werkt het instellen van de waarde van een keuzerondje of selectievakje wanneer het gegevenstype Boolean is, niet zoals verwacht.
 * FORMS-8114: De datumkiezer en het patroon worden niet correct gelezen door de NVDA-schermlezer. Met name bij gebruik van de NVDA-schermlezer wordt de datumkiezer zonder patroon correct gelezen. Wanneer een patroon echter wordt toegepast op de datumkiezer, wordt het gelezen als een tabel in plaats van correct te worden geïnterpreteerd.
 
-
-
-
-
-
-
 ### Bekende problemen {#known-issues-13665}
 
-Geen
+Geen.
 
 ### Ingesloten technologieën {#embedded-tech-13665}
 
