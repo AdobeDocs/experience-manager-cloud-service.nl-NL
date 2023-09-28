@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 39284210e6639c4ed2a80cf86dbf0ea32d889986
+source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Meer informatie over Edge Delivery Services in het artikel [hier](/help/edge/ove
 
 **Metagegevensformulier toewijzen aan een map**
 
-U kunt nu een metagegevensformulier toewijzen aan een specifieke map in de implementatie van Assets Essentials. Alle elementen in de map, inclusief de elementen in de submappen, geven vervolgens de eigenschappen weer die in het toegewezen metagegevensformulier zijn gedefinieerd.
+U kunt nu een metagegevensformulier toewijzen aan een specifieke map binnen uw implementatie. Alle elementen in de map, inclusief de elementen in de submappen, geven vervolgens de eigenschappen weer die in het toegewezen metagegevensformulier zijn gedefinieerd.
 
 ![metagegevensformulier toewijzen aan een map](/help/release-notes/assets/assign-to-folder.png)
 
