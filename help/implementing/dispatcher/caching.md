@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: Meer informatie over de basisbeginselen van Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2803'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Deze methode is bijvoorbeeld handig wanneer uw bedrijfslogica een nauwkeurige af
   ```
 
   >[!NOTE]
-  >De header Surrogate-Control is van toepassing op de door Adobe beheerde CDN. Als u een [door de klant beheerde CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), kan een verschillende kopbal afhankelijk van uw leverancier CDN worden vereist.
+  >De header Surrogate-Control is van toepassing op de Adobe beheerde CDN. Als u een [door de klant beheerde CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), kan een verschillende kopbal afhankelijk van uw leverancier CDN worden vereist.
 
   Wees voorzichtig bij het instellen van algemene cachebeheerkoppen of vergelijkbare cachekoppen die overeenkomen met een brede regex, zodat deze niet worden toegepast op inhoud die u privé moet houden. Overweeg meerdere richtlijnen te gebruiken om ervoor te zorgen dat regels op een fijnkorrelige manier worden toegepast. Met dit gezegd, verwijdert AEM as a Cloud Service de geheim voorgeheugenkopbal als het ontdekt dat het is toegepast op wat het ontdekt om door Dispatcher oncacheable te zijn, zoals die in de documentatie van de Verzender wordt beschreven. Als u AEM wilt dwingen om altijd de in cache plaatsen koppen toe te passen, kunt u de opdracht **`always`** optie als volgt:
 
@@ -87,7 +87,7 @@ Deze methode is bijvoorbeeld handig wanneer uw bedrijfslogica een nauwkeurige af
 
 ### Afbeeldingen en inhoud die groot genoeg is om in blokopslag te worden opgeslagen {#images}
 
-Het standaardgedrag voor programma&#39;s die na medio mei 2022 worden gemaakt (met name voor programma-id&#39;s van meer dan 65000), is standaard in cache plaatsen, terwijl ook de verificatiecontext van het verzoek wordt gerespecteerd. Oudere programma&#39;s (programma-id&#39;s van 65000 of lager) plaatsen standaard geen blob-inhoud in de cache.
+Het standaardgedrag voor programma&#39;s die na medio mei 2022 worden gemaakt (met name voor programma-id&#39;s van meer dan 65000), is door gebrek in cache plaatsen, terwijl ook de de authentificatiecontext van het verzoek respecteert. Oudere programma&#39;s (programma-id&#39;s van 65000 of lager) plaatsen standaard geen blob-inhoud in de cache.
 
 In beide gevallen kunnen de in cache plaatsen koppen op een fijner korrelig niveau op de laag Apache/Dispatcher worden overschreven met behulp van de Apache `mod_headers` richtlijnen , bijvoorbeeld :
 
@@ -132,7 +132,7 @@ Nu kunnen afbeeldingen in blob-opslag die als private zijn gemarkeerd, niet in d
 
 ### Verdere optimalisaties {#further-optimizations}
 
-* Vermijd gebruik `User-Agent` als onderdeel van de `Vary` header. Oudere versies van de standaardinstallatie van Dispatcher (vóór archetype versie 28) bevatten deze en Adobe raadt u aan deze versie te verwijderen door de onderstaande stappen uit te voeren.
+* Vermijd gebruik `User-Agent` als onderdeel van de `Vary` header. Oudere versies van de standaardinstallatie van Dispatcher (vóór archetype versie 28) bevatten deze en de Adobe raadt u aan deze versie te verwijderen door de onderstaande stappen uit te voeren.
    * Zoek de hostbestanden in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
    * Verwijder of verwijder de regel: `Header append Vary User-Agent env=!dont-vary` van alle hostbestanden, behalve default.vhost, dat alleen-lezen is
 * Gebruik de `Surrogate-Control` header om CDN in cache te plaatsen onafhankelijk van browser caching
@@ -199,20 +199,22 @@ Nu kunnen afbeeldingen in blob-opslag die als private zijn gemarkeerd, niet in d
 
 ### HEAD-aanvraaggedrag {#request-behavior}
 
-Wanneer een verzoek van HEAD bij Adobe CDN voor een middel wordt ontvangen dat **niet** in de cache wordt het verzoek getransformeerd en door de instantie Dispatcher en/of AEM ontvangen als een GET-verzoek. Als de reactie cacheable is, dan worden de verdere verzoeken van HEAD van CDN gediend. Als de reactie niet cacheable is, dan worden de verdere verzoeken van HEAD overgegaan tot de Dispatcher, of AEM instantie, of allebei, voor een tijd die van `Cache-Control` TTL.
+Wanneer een verzoek van HEAD bij de Adobe CDN voor een middel wordt ontvangen dat **niet** in de cache wordt het verzoek getransformeerd en door de instantie Dispatcher en/of AEM ontvangen als een GET-verzoek. Als de reactie cacheable is, dan worden de verdere verzoeken van HEAD van CDN gediend. Als de reactie niet cacheable is, dan worden de verdere verzoeken van HEAD overgegaan tot de Dispatcher, of AEM instantie, of allebei, voor een tijd die van `Cache-Control` TTL.
 
 ### Parameters van de marketingcampagne {#marketing-parameters}
 
-URL&#39;s van websites bevatten vaak parameters voor marketingcampagnes die worden gebruikt om het succes van een campagne te volgen. Om het geheime voorgeheugen van de Verzender effectief te gebruiken, adviseert men dat u de configuratie van de Verzender vormt `ignoreUrlParams` eigenschap as [hier gedocumenteerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+URL&#39;s van websites bevatten vaak parameters voor marketingcampagnes die worden gebruikt om het succes van een campagne te volgen.
 
-De `ignoreUrlParams` mag geen opmerkingen bevatten en moet verwijzen naar het bestand `conf.dispatcher.d/cache/marketing_query_parameters.any`. U kunt het bestand wijzigen door de opmerkingen van de regels die overeenkomen met de parameters die relevant zijn voor uw marketingkanalen ongedaan te maken. U kunt ook andere parameters toevoegen.
+Voor milieu&#39;s die in Oktober 2023 of recenter worden gecreeerd, om geheime voorgeheugenverzoeken te verbeteren, zal CDN gemeenschappelijke marketing verwante vraagparameters, specifiek die verwijderen die het volgende regex patroon aanpassen:
 
 ```
-/ignoreUrlParams {
-{{ /0001 { /glob "*" /type "deny" }}}
-{{ $include "../cache/marketing_query_parameters.any"}}
-}
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
+
+Geef een ondersteuningsticket op als u dit gedrag wilt uitschakelen.
+
+Voor milieu&#39;s die vóór Oktober 2023 worden gecreeerd, wordt het geadviseerd om de configuratie van de Dispatcher te vormen `ignoreUrlParams` eigenschap as [hier gedocumenteerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+
 
 ## Ongeldige validatie van cache-verzending {#disp}
 
@@ -257,7 +259,7 @@ De benaderingen verschillen in termen van laagbeschikbaarheid, de capaciteit om 
   <tr>
     <td>SCD-API (Sling Content Distribution)</td>
     <td>Auteur</td>
-    <td>Mogelijk met de API voor detectie of door de <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">deduplicatiemodus</a>.</td>
+    <td>Mogelijk gebruik van de API voor detectie of het inschakelen van de <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">deduplicatiemodus</a>.</td>
     <td>Ten minste één keer.</td>
     <td>
      <ol>
@@ -304,8 +306,8 @@ De benaderingen verschillen in termen van laagbeschikbaarheid, de capaciteit om 
      <ol>
        <li>Hiermee publiceert u inhoud en maakt u de cache ongeldig.</li>
        <li>Uit auteur/publicatiereeks - hiermee verwijdert u inhoud en maakt u de cache ongeldig.</li>
-       <li><p><strong>Van Auteursniveau</strong> - Verwijdert inhoud en maakt de cache ongeldig (indien geactiveerd uit de AEM-auteurscategorie in de publicatieagent).</p>
-           <p><strong>Uit publicatiereeks</strong> - Maakt alleen de cache ongeldig (indien geactiveerd vanaf de AEM-publicatielaag op de Flush- of Resource-Only-flush-agent).</p>
+       <li><p><strong>Van Auteursniveau</strong> - Verwijdert inhoud en maakt het geheime voorgeheugen ongeldig (indien teweeggebracht uit AEM laag van de Auteur op de Publish agent).</p>
+           <p><strong>Uit publicatiereeks</strong> - Maakt alleen de cache ongeldig (indien geactiveerd vanaf AEM publicatielaag op de Flush- of Resource-only-flush-agent).</p>
        </li>
      </ol>
      </td>
@@ -403,7 +405,7 @@ public class InvalidatedHandler implements EventHandler {
 
 >[!NOTE]
 >
->De Adobe CDN wordt niet verwijderd wanneer de Dispatcher ongeldig wordt gemaakt. De Adobe-beheerde CDN respecteert TTLs en zo is er geen behoefte aan het worden gespoeld.
+>De Adobe-CDN wordt niet verwijderd als de Dispatcher ongeldig wordt gemaakt. De Adobe-beheerde CDN respecteert TTLs en zo is er geen behoefte aan het worden gespoeld.
 
 ### Replicatie-API {#replication-api}
 
@@ -481,7 +483,7 @@ Strikte clientlib-versioning wordt standaard ingeschakeld in alle AEM as a Cloud
 Ga als volgt te werk om strikte clientlib-versioning in te schakelen in de lokale SDK QuickStart:
 
 1. Navigeer aan de Manager van de Configuratie OSGi `<host>/system/console/configMgr`
-1. Vind OSGi Config voor de Manager van de Bibliotheek van de HTML van Adobe Granite:
+1. Vind OSGi Config voor de Manager van de Bibliotheek van de HTML van de Adobe Granite:
    * Schakel het selectievakje in, zodat u de strikte versie inschakelt
    * In het veld met label **Cachetoets op lange termijn clientzijde**, voert u de waarde van / in.*;hash
 1. Sla de wijzigingen op. Het is niet noodzakelijk om deze configuratie in broncontrole te bewaren aangezien AEM as a Cloud Service deze configuratie in dev, stadium, en productiemilieu&#39;s automatisch toelaat.

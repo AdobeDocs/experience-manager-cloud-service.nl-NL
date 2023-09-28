@@ -2,7 +2,7 @@
 title: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
 description: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: c72c86abc44802d2266ddc0d490ed5d70e643fae
+source-git-commit: 531e8901458a52d0329b5dc2256d358fbfb9bbde
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 32%
@@ -13,7 +13,7 @@ ht-degree: 32%
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2023.8.0 |
+| Versie | 2023.9.0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 
@@ -59,7 +59,7 @@ Een release voorbereiden:
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM om zich voor te bereiden op uw eerste project zonder kop. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
-| [Handboek voor handel](/help/commerce-cloud/home.md) | Meer informatie over Commerce Integration Framework op AEM as a Cloud Service. |
+| [Handboek voor handel](/help/commerce-cloud/home.md) | Meer weten over Commerce integration framework op AEM as a Cloud Service? |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 

@@ -1,13 +1,14 @@
 ---
 title: Adaptieve Forms-analyserapporten weergeven en begrijpen
 description: Adaptieve Forms kan naadloos worden geïntegreerd met Adobe Analytics om prestatiegegevens voor gepubliceerde formulieren en documenten vast te leggen en bij te houden.
+keywords: Adaptive Forms-analyserapporten bekijken en begrijpen, analyserapport over Adobe, Forms Analytics-rapport
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,10 @@ ht-degree: 0%
 
 # Adaptieve Forms-analyserapporten weergeven en begrijpen {#viewing-and-understanding-aem-forms-analytics-reports}
 
-<span class="preview"> Dit is een pre-release functie die toegankelijk is via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Dit artikel |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 In het zich snel ontwikkelende landschap van digitale analysemogelijkheden is het absoluut noodzakelijk om de aandacht te houden aan mondiale trends om geïnformeerde beslissingen te nemen en de digitale ervaringen te optimaliseren. Om dit te verhelpen, integreert Adaptive Forms naadloos met Adobe Analytics om prestatiesmetriek voor uw gepubliceerde formulieren en documenten te vangen en te volgen. Het doel van de analyse van deze meetgegevens is gegevensgestuurde beslissingen te nemen, waarbij gebruik wordt gemaakt van meetgegevens en analyses om de bruikbaarheid en doeltreffendheid van de formulieren te verbeteren.
 
@@ -102,3 +106,9 @@ Metrische gegevens zoals Help-weergaven, validatiefouten en veldbezoeken laten z
 Hiermee kunt u de formuliervelden analyseren waarin de gebruikers tijd hebben doorgebracht voordat ze het formulier verlaten. In de onderstaande afbeelding staan bijvoorbeeld van de vijf verlaten formulieren 2 links in het veld **Volledige naam**, 2 links in het veld **Telefoonnummer** en 1 links op het veld **Tekstinvoer**.
 
 ![Veldbezoekers](assets/field-visitors.png){width="100%"}
+
+## Zie ook {#see-also}
+
+* [Adobe Analytics inschakelen voor een adaptief formulier met behulp van Experience Cloud Setup Automation](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [AEM Forms integreren met Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

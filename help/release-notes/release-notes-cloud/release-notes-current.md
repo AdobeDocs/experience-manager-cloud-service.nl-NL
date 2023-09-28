@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: 39284210e6639c4ed2a80cf86dbf0ea32d889986
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1421'
 ht-degree: 0%
 
 ---
@@ -26,78 +26,41 @@ In de volgende sectie worden de opmerkingen bij de release met functies voor de 
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2023.8.0) is 31 augustus 2023. De volgende release met functies (2023.9.0) is gepland voor 28 september 2023.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2023.9.0) is 28 september 2023. De volgende release met functies (2023.10.0) is gepland voor 26 oktober 2023.
 
-## Video vrijgeven {#release-video}
+<!-- 
 
-Bekijk de video Overzicht van de release van augustus 2023 voor een overzicht van de functies die in de release van 2023.8.0 zijn toegevoegd:
+## Release Video {#release-video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3423535/?quality=12)
+Have a look at the September 2023 Release Overview video for a summary of the features added in the 2023.9.0 release:
 
-## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
+>[!VIDEO](put new link here)
 
-### Nieuwe functies in [!DNL Experience Manager Sites] {#sites-features}
+-->
 
-* De [Console voor inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) Gebruikers kunnen nu tags weergeven en zoeken op tags die als metagegevens zijn toegepast op Inhoudsfragmenten. Gebruikers hoeven voor deze mogelijkheid niet meer over te schakelen op de interface Elementen, waardoor contextomschakeling wordt beperkt en de efficiëntie wordt verbeterd.
+## Edge Delivery Services {#edge-delivery}
 
-  ![Tags toevoegen in Content Fragment Console](/help/assets/content-fragments-console-tags.png)
-* De nieuwe Inhoudsfragmenteditor is nu beschikbaar op AEM as a Cloud Service. Het stelt inhoudsauteurs in staat productiever te zijn door hun ontwerptaken te stroomlijnen en de noodzaak om tussen verschillende apps te schakelen tijdens het bewerken van inhoud te verminderen.
-  ![Nieuwe editor voor inhoudsfragmenten](/help/release-notes/assets/newCFEditor.png)
+Edge Delivery is een nieuwe reeks composable services die erop gericht zijn de impact van inhoud te maximaliseren om meetbare bedrijfsresultaten op het punt van klantinteractie aan te sturen.
 
-De nieuwe editor voor inhoudsfragmenten biedt de volgende voordelen die niet beschikbaar zijn in de oorspronkelijke editor:
-* Automatisch opslaan om efficiënter te ontwerpen en te voorkomen dat bewerkingen per ongeluk verloren gaan.
-* De hiërarchische weergave van een inhoudsfragment en de bijbehorende verwijzingen met de boomstructuur voor snelle navigatie binnen een diep gestructureerd fragment.
-  ![Boomstructuur in de editor voor inhoudsfragmenten](/help/release-notes/assets/newCFEditor_StructureTree.png)
-
-* In line uploaden van elementen als inhoudsverwijzingen zonder dat deze eerst naar Asset DAM hoeven te worden geüpload
-* Ad-hocvoorvertoning van de gerenderde ervaring die door het inhoudsfragment wordt geleverd om auteurs te helpen de vormgeving van de inhoud op de frontend-app te visualiseren
-* 1-klik het publiceren en unpublishing van het inhoudsfragment van de redacteur
-* Taalkopieën weergeven en naar deze talen navigeren tijdens het bewerken van een inhoudsfragment
-  ![Taalkopieën in de Inhoudsfragmenteditor](/help/release-notes/assets/newCFEditor_LanguageCopies.PNG)
-
-* Versies weergeven om de tijdlijn van een inhoudsfragment bij te houden
-
-  ![Versies in de Content Fragment Editor](/help/release-notes/assets/newCFEditor_Versionhistory.PNG)
-
-* Bovenliggende verwijzingen weergeven om auteurs inzicht te geven in het effect van hun bewerkingen
-
-  ![Bovenliggende verwijzingen in de Content Fragment Editor](/help/release-notes/assets/newCFEditor_Parentreferences.PNG)
+Meer informatie over Edge Delivery Services in het artikel [hier](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in de weergave Elementen {#assets-view-features}
 
-<!--
+**Metagegevensformulier toewijzen aan een map**
 
-**Assign metadata form to a folder**
+U kunt nu een metagegevensformulier toewijzen aan een specifieke map in de implementatie van Assets Essentials. Alle elementen in de map, inclusief de elementen in de submappen, geven vervolgens de eigenschappen weer die in het toegewezen metagegevensformulier zijn gedefinieerd.
 
-You can now assign metadata form to a specific folder within your Assets Essentials deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
-
-![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
-
--->
-
-* **Bulkimportelementen uit gegevensbronnen**: Beheerders hebben nu de [mogelijkheid om een groot aantal activa te importeren](/help/assets/bulk-import-assets-view.md) van een gegevensbron naar AEM Assets. De beheerders hoeven geen afzonderlijke elementen of mappen meer te uploaden naar AEM Assets. Tot de ondersteunde gegevensbronnen voor bulkimport behoren Azure, AWS, Google Cloud en Dropbox.
-
-  ![Elementen voor bulkimport uit een gegevensbron](/help/release-notes/assets/bulk-import.png)
-
-* **Gereedschappen voor het bewerken van afbeeldingen aangedreven door Adobe Express**: Eenvoudig en intuïtief [gereedschappen voor het bewerken van afbeeldingen, aangedreven door Adobe Express](/help/assets/edit-images-assets-view.md) direct beschikbaar in AEM Assets om het hergebruik van inhoud te verhogen en de snelheid van inhoud te versnellen.
-
-  ![Afbeeldingen bewerken met Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
-
-* **Flexibiliteit bij het vastzetten van items voor Mijn werkruimte Snelle toegang**: Mogelijkheid om items voor u, voor uw hele organisatie of voor een lijst met groepen te selecteren en vast te zetten, zodat deze in het dialoogvenster [Sectie Snelle toegang van Mijn werkruimte](/help/assets/my-workspace-assets-view.md) op basis van uw selectie.
-
-  ![Items vastzetten voor groepen](/help/release-notes/assets/pin-items-for-groups.png)
+![metagegevensformulier toewijzen aan een map](/help/release-notes/assets/assign-to-folder.png)
 
 ### Nieuwe functies in de beheerweergave {#admin-view-features}
 
-**Verbeteringen voor zoeken**
+* **AEM Assets as a Cloud Service integreren met op documenten gebaseerde authoring voor Edge Delivery Services**: Integreer AEM Assets met op documenten gebaseerde authoring voor Edge Delivery Services om websiteauteurs in staat te stellen [gebruiken afbeeldingen die beschikbaar zijn in AEM Assets-opslagruimten tijdens het ontwerpen van documenten in Microsoft Word of Google Docs](/help/edge/using.md#integrate-assets-edge).
 
-* Beheerders kunnen nu [de batchgrootte van elementen configureren](/help/assets/search-assets.md#configure-asset-batch-size) die worden weergegeven wanneer u een zoekopdracht uitvoert. De resultaten van het activaonderzoek tonen in veelvouden van het gevormde aantal van de partijgrootte wanneer u verder neer scrolt om de resultaten te laden. U kunt kiezen uit de beschikbare batchformaten van 200, 500 en 1000 elementen. Als u een lagere batch-grootte instelt, resulteert dit in snellere zoekresponstijden.
+* **ZIP-archieven extraheren**: Mogelijkheid om ZIP-archieven te selecteren die in Experience Manager worden beheerd en [bestanden rechtstreeks uitpakken in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) zonder ze te downloaden.
 
-  ![Groepsgrootteconfiguratie van middelen](/help/release-notes/assets/assets-batch-size-configuration.png)
-
-* Experience Manager Assets bevat nu een nieuwe versie 9 van `damAssetLucene` index. `damAssetLucene-9` wijzigt het gedrag van het tellen van Oak Query-facetten in [niet langer het toegangsbeheer op factentellingen evalueren](/help/assets/search-assets.md) wordt geretourneerd door de onderliggende zoekindex, wat resulteert in snellere zoekresponstijden.
+  ![Items vastzetten voor groepen](/help/release-notes/assets/extract-archive.png)
 
 ### Functies voor pre-release beschikbaar in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
@@ -105,18 +68,15 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen van een geselecteerd video-element.](/help/release-notes/assets/msma-aem-cs.png)*Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen van een geselecteerd video-element.*
 
-* **Activa**: Mogelijkheid om ZIP-archieven te selecteren die in Experience Manager worden beheerd en [bestanden rechtstreeks uitpakken in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) zonder ze te downloaden.
-
-  ![Items vastzetten voor groepen](/help/release-notes/assets/extract-archive.png)
-
-
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
-### Functies voor pre-release beschikbaar in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### Nieuwe functies in [!DNL Experience Manager Forms] {#forms-features}
 
 * [**Google reCAPTCHA-bedrijfsondersteuning**](/help/forms/captcha-adaptive-forms-core-components.md): Gebruik Google reCAPTCHA Enterprise in een adaptieve vorm om een betere bescherming te bieden tegen frauduleuze activiteiten en spam, zodat gebruikers veiliger worden. Met een geavanceerde risicoanalyse en naadloze integratie kunnen echte gebruikers eenvoudig formulieren indienen terwijl de bots effectief worden geblokkeerd.
 
 * [**Adobe Analytics with Experience Cloud Setup Automation for Forms**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): U kunt nu Adobe Analytics met de Automatisering van de Opstelling van het Experience Cloud met een omdraaiing van een paar knopen toelaten. Hiermee kunt u AEM Forms as a Cloud Service verbinden met Experience Platforms-tags en Adobe Analytics om prestatiegegevens voor gepubliceerde formulieren vast te leggen en bij te houden.
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
 
 * [**Adobe Analytics-rapportsjabloon voor Adaptive Forms**](/help/forms/view-understand-aem-forms-analytics-reports.md): Forms as a Cloud Service geeft nu een Adobe Analytics-rapport OOTB. Zo kunt u gemakkelijk de prestaties van uw formulieren begrijpen. De maatstaven op formulierniveau bieden u inzicht in de manier waarop het formulier werkt met meerdere prestatie-indicatoren (KPI&#39;s), zoals uitvoeringen, bezoekers, verzendingen, gemiddelde vultijd. Door gebruikersgedrag en feedback te volgen, kunt u delen van het formulier identificeren die verwarring veroorzaken en verbeteringen aanbrengen in het ontwerp en de functionaliteit van het formulier.
 
@@ -131,21 +91,18 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
    * **Nieuwe rollen voor ontvangers van de Overeenkomst voorbij enkel de Ondertekenaar**: Adobe Acrobat Sign heeft de optie om de rollen voor overeenkomstontvangers uit te breiden tot buiten alleen de ondertekenaar om beter aan hun workflowvereisten te voldoen. Wanneer toegelaten, heeft elke ontvanger in een Overeenkomst zijn rol individueel configureerbaar, met Ondertekenaar die het gebrek is.
 
-* **[Protect uw documenten met Document Assurance-API&#39;s (onderdeel van communicatie-API&#39;s)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: Met de API&#39;s voor documentverzekering kunt u gevoelige informatie beveiligen door de documenten te ondertekenen en te versleutelen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
-
 * **Ondersteuning voor paginanummers in communicatie-API&#39;s**: Nu kunt u, samen met het ophalen van uw document via de communicatie-API&#39;s, ook de waardevolle informatie over het aantal pagina&#39;s in het document ontvangen.
 
 * **[Fout bij afhandeling van aangepaste fouthandlers in de regeleditor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: U kunt nu een aangepaste functie aanroepen als reactie op een fout die door een externe service is geretourneerd, en eindgebruikers een op maat gemaakte reactie geven. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is.
 
 * **[64-bits versie van AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: De 64-bits versie van AEM Forms Designer biedt verbeterde prestaties, schaalbaarheid en geheugenbeheer, zodat u meer mogelijkheden hebt om formulieren te maken. Met de 64-bits architectuur kunt u nog grotere en complexere projecten eenvoudig aanpakken, zodat u kunt zorgen voor naadloze ontwerpworkflows en geoptimaliseerde efficiëntie. Verhoog uw mogelijkheden voor formulierontwerp en omarm de toekomst van AEM Forms Designer met deze geavanceerde release.
 
-
 ### Programma voor vroegtijdige adoptie {#forms-early-adopter}
 
 * **[Protect uw documenten met DocAssurance-API&#39;s (onderdeel van communicatie-API&#39;s)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: De DocAssurance-API&#39;s stellen u in staat gevoelige informatie te beveiligen door de documenten te ondertekenen en te versleutelen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
 
-      U kunt schrijven naar &quot;aem-forms-early-adopter-program@adobe.com&quot;van uw officiële e-mailidentiteitskaart om zich bij het vroege adopterprogramma aan te sluiten en toegang tot het vermogen te verzoeken.
-  
+  U kunt schrijven naar `aem-forms-early-adopter-program@adobe.com` van uw officiële e-mailidentiteitskaart om zich bij het vroege adoptieprogramma aan te sluiten en toegang tot het vermogen te verzoeken.
+
 * **[Forms zonder hoofdadapter](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**: Gebruik Headless Adaptive Forms om uw ontwikkelaars in staat te stellen interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden geopend en gebruikt in plaats van via een traditionele grafische gebruikersinterface. Met behulp van hoofdloze adaptieve formulieren kunt u:
 
    * multikanaalformulieren van hoge kwaliteit maken in de programmeertaal van uw keuze
@@ -155,14 +112,13 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   U kunt een e-mail verzenden naar `aem-forms-headless@adobe.com` van uw officiële e-mailadres om deel te nemen aan het vroege adoptieprogramma.
 
-
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
 
-### CDN-logs {#cdn-logs}
+### Nieuw gedrag CDN in cache plaatsen voor aan campagne gerelateerde URL-parameters {#cache-url-params}
 
-Download CDN-logbestanden vanuit Cloud Manager. Dit is handig voor optimalisatie van de cache-hit verhouding en een betere zichtbaarheid in de leveringsstroom van de inhoud. [Meer informatie over](/help/implementing/developing/introduction/logging.md#cdn-log) de CDN-logindeling. Deze functie zal begin september geleidelijk aan aan aan de klanten worden aangeboden.
+Voor nieuwe milieu&#39;s, zal CDN marketing verwante vraagparameters door gebrek verwijderen om de prestaties van de marketing campagne en de slagverhoudingen van het geheime voorgeheugen te verhogen. Bestaande omgevingen blijven ongewijzigd. [Meer weten?](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
-### Voortijdig-adoptieprogramma voor CDN- en WAF-regels {#waf-early-adopter}
+### Regels voor vroege adoptie van verkeersfilters (inclusief WAF-regels) {#waf-early-adopter}
 
 Het verkeer van de filter bij CDN die op wordt gebaseerd:
 * aanvraagheaders en -eigenschappen (bijvoorbeeld IP-adres)
@@ -171,7 +127,6 @@ Het verkeer van de filter bij CDN die op wordt gebaseerd:
 Wilt u de functie proberen en feedback delen? Een e-mail verzenden naar **aemcs-waf-adopter@adobe.com** van uw officiële e-mailadres voor meer informatie over het programma voor vroege adoptie. De ruimte is beperkt.
 
 Meer informatie over de functie in het artikel [hier](/help/security/cdn-and-waf-rules.md).
-
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 

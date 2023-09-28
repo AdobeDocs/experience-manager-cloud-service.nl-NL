@@ -2,19 +2,16 @@
 title: Google reCAPTCHA gebruiken in een AEM adaptief formulier
 description: Verbeter de formulierbeveiliging zonder problemen met de Google reCAPTCHA-service. Stap-voor-stap gids binnen!
 topic-tags: Adaptive Forms, author
-hide: true
-hidefromtoc: true
-Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+keywords: De Google reCAPTCHA-service, Adaptive Forms, CAPTCHA-uitdaging, Boot Prevention, Core Components, Security Formulierverzending, Preventie van formulierspam
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
 
-# Google reCAPTCHA gebruiken in een AEM adaptief formulier op basis van Core Components {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> Dit is een pre-release functie die toegankelijk is via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+# Google reCAPTCHA gebruiken in een AEM adaptief formulier op basis van Core Components {#using-reCAPTCHA-in-adaptive-forms}
 
 | Van toepassing op | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -54,13 +51,9 @@ Om uw AEM Forms-omgeving te verbinden met de reCAPTCHA-service van Google
    1. Selecteer een Container van de Configuratie, die in vorige sectie wordt gecreeerd of wordt bijgewerkt. Tik op **[!UICONTROL Create]**.
    1. Opgeven **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de service reCAPTCHA (verkregen in stap 1). Tik op **[!UICONTROL Create]**.
 
-
    ![Configureer de Cloud Service om uw AEM Forms-omgeving te verbinden met de reCAPTCHA-service van Google](/help/forms/assets/captcha-configuration.gif)
 
-
-
    Zodra de dienst reCAPTCHA wordt gevormd, is het beschikbaar voor gebruik in een AanpassingsVorm. Zie voor meer informatie [Google reCAPTCHA gebruiken in een adaptief formulier](#using-reCAPTCHA).
-
 
 ## Google reCAPTCHA gebruiken in een adaptief formulier {#using-reCAPTCHA}
 

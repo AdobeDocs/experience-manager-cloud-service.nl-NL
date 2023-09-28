@@ -3,21 +3,21 @@ title: Formuliergerichte AEM gebruiken om bedrijfsprocessen te automatiseren
 description: Met Forms-gerichte workflows kunt u snel adaptieve, op Forms gebaseerde workflows maken. Met Adobe Sign kunt u documenten elektronisch ondertekenen, op formulieren gebaseerde bedrijfsprocessen maken, gegevens ophalen en verzenden naar meerdere gegevensbronnen en e-mailmeldingen verzenden
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+keywords: Gebruik AEM werkstromen, gebruik taakstappen, zet om in stap PDF/A, produceer document van geregistreerde stap, gebruik werkschema's, de stap van het Document van het Ondertekenen, produceer gedrukte outputstap, produceer niet interactieve PDF output
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '6801'
+source-wordcount: '6782'
 ht-degree: 0%
 
 ---
 
-# Forms-centrische AEM Workflows gebruiken - Step Reference to automatisate business processes{#forms-centric-workflow-on-osgi-step-reference}
+
+# Forms-centrische AEM Workflows gebruiken - Step Reference to automatisate business processes {#forms-centric-workflow-on-osgi-step-reference}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Dit artikel |
-
-<span class="preview"> Singer-rollen, audittrail en op overheids-id gebaseerde verificatieopties in het dialoogvenster [stap Document ondertekenen](#sign-document-step) zijn functies die vooraf beschikbaar zijn en toegankelijk zijn via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 U gebruikt workflowmodellen. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [omvat diverse AEM stappen van het Werkschema in een model om bedrijfslogica te bereiken](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
@@ -40,7 +40,6 @@ Forms-centric workflowstappen voeren AEM Forms-specifieke bewerkingen uit in een
 >[!NOTE]
 >
 >Als het workflowmodel is gemarkeerd voor externe opslag, kunt u voor alle stappen in de Forms Workflow alleen de optie voor het opslaan of ophalen van gegevensbestanden en bijlagen selecteren.
-
 
 ## Taakstap toewijzen {#assign-task-step}
 
@@ -379,8 +378,6 @@ Voor de stap Service van het formuliergegevensmodel aanroepen worden de ondersta
 
 ## stap Document ondertekenen {#sign-document-step}
 
-<span class="preview"> De rollen van de Singer, het spoor van de Controle, en op overheids-identiteitskaart gebaseerde authentificatieoptie in de stap van Adobe Sign zijn pre-versieeigenschap en toegankelijk door ons [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 Met de stap Document ondertekenen kunt u [!DNL Adobe Sign] om documenten te ondertekenen. Wanneer u de opdracht [!DNL Adobe Sign] Workflowstap voor het ondertekenen van een adaptief formulier: het formulier kan door de ontvangers worden doorgegeven of kan tegelijkertijd naar alle ontvangers worden verzonden, afhankelijk van de configuratie van de workflowstap. [!DNL Adobe Sign] Aangepaste Forms worden alleen naar Experience Manager Forms Server verzonden nadat alle ontvangers het ondertekeningsproces hebben voltooid.
 
 Standaard worden de [!DNL Adobe Sign] De dienstcontroles van de planner (opiniepeilingen) ontvankelijke reactie na om de 24 uur. U kunt [het standaardinterval voor uw omgeving wijzigen](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status).
@@ -589,3 +586,9 @@ De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 * **Lineaire PDF**: Geeft aan of de gegenereerde PDF moet worden geoptimaliseerd voor webweergave.
 * **Tagged PDF**: Geeft aan of de gegenereerde PDF toegankelijk moet worden gemaakt.
 * **XCI-document**: Geeft het pad naar het XCI-bestand op.
+
+## Zie ook {#see-also}
+
+* [Variabelen in Forms-centric AEM Workflows](/help/forms/variable-in-aem-workflows.md)
+* [Vorm uit Bureau het plaatsen](/help/forms/configure-out-of-office-settings.md)
+
