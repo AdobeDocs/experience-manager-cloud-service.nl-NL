@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service introductie van on-boarding
 description: Begin hier voor een overzicht van de begeleide journey via het onboarding proces naar AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
+source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1256'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 2%
 Gefeliciteerd met het kiezen van AEM as a Cloud Service! Dit document is het uitgangspunt voor een geleide reis door het instapproces. Of u nu een nieuwe toepassing implementeert of een bestaande toepassing migreert, deze instapreis zorgt ervoor dat uw teams zijn ingesteld en toegang hebben tot AEM as a Cloud Service.
 
 ## Inleiding {#introduction}
+
+Adobe Experience Manager is een krachtige suite van composable content services die snel indrukwekkende, persoonlijke ervaringen bieden over elk kanaal, waardoor inhoud voor iedereen wordt ontgrendeld. **Edge Delivery Services** Dit is de nieuwste innovatie in Adobe Experience Manager die de snelheid van de content kan verhogen en uitzonderlijke ervaringen oplevert. Leer hoe u aan de slag kunt met Edge Delivery Services, door te gaan [deze pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Als u wilt weten hoe u Edge Delivery Services gebruikt, raadpleegt u de [Zelfstudie voor ontwikkelaars](https://www.hlx.live/developer/tutorial) pagina.
 
 Onboarding is het proces waarin een aangewezen systeembeheerder opstelling AEM as a Cloud Service voor uw organisatie. Dit proces omvat de eerste levering van cloudbronnen en het toewijzen van gebruikers aan rollen op basis van hun taakverantwoordelijkheden. Dientengevolge, kan elk lid zich aanmelden en tot hun middel toegang hebben op AEM as a Cloud Service.
 
@@ -83,10 +85,6 @@ De volgende artikelen beschrijven in detail de kernconcepten op het instapniveau
 | 8 | [AEM productprofielen toewijzen](assign-profiles-aem.md) | Leer hoe de Beheerder van het Systeem uw teamleden aan productprofielen in AEM as a Cloud Service toewijst. | Systeembeheerder |
 | 9 | [Taken van ontwikkelaar- en implementatiebeheer](developers.md) | Optioneel - Leer als ontwikkelaar hoe u toegang krijgt tot de Cloud Manager Git en hoe u als implementatiebeheerder pijpleidingen kunt instellen en code kunt implementeren in Cloud Manager. | Ontwikkelaars en implementatiemanagers |
 | 10 | [AEM](aem-users.md) | Optioneel - Leer als AEM auteur hoe u toegang kunt krijgen tot AEM as a Cloud Service instantie en hoe u vertrouwd bent met het ontwerpen van inhoud voor AEM as a Cloud Service. | AEM |
-
->[!NOTE]
->
->Edge Delivery Services is een nieuwe reeks composable diensten die een flexibele, snelle ontwikkelomgeving toelaten waar de auteurs kunnen bijwerken en publiceren snel, en de nieuwe plaatsen worden gelanceerd snel. Voor meer informatie over Edge Delivery-services raadpleegt u de [Aan de slag-pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## Volgende functies {#what-is-next}
 
