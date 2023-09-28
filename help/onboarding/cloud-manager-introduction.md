@@ -2,9 +2,9 @@
 title: Inleiding tot Cloud Manager
 description: Meer informatie over hoe Cloud Manager uw AEM project ondersteunt via programma's, omgevingen en pijpleidingen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 1608a44b8c9b5ae6bd75307ecb29dcd8f0ff367f
+source-git-commit: 0e0daf9870ba2e5923f9ea5dcdf3821a0cd0b7c6
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ U kunt ook vanuit de startpagina van Adobe Experience Cloud naar de pagina Progr
 | Token voor persoonlijke toegang genereren | Toegangsuitrusting |  | x |  | x |
 | RDE maken | Een snelle ontwikkelomgeving maken | x |  |  | x |
 | RDE opnieuw instellen | Een snelle ontwikkelomgeving opnieuw instellen | x |  |  | x |
+| Inhoudssets maken/wijzigen | Een inhoudset maken of wijzigen voor het kopiëren van inhoud |  | x |  |  |
+| Kopie van inhoud starten/annuleren | Een proces voor het kopiëren van inhoud starten of annuleren |  | x |  |  |
 
 >[!NOTE]
 >
