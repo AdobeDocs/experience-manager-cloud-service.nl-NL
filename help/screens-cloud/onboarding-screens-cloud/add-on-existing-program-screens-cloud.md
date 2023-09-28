@@ -1,10 +1,10 @@
 ---
 title: Scherminvoegtoepassing toevoegen aan een bestaand programma in Cloud Manager
-description: Op deze pagina wordt beschreven hoe u een invoegtoepassing voor schermen toevoegt aan een bestaand programma in Cloud Manager for Screens as a Cloud Service.
+description: Leer hoe u een invoegtoepassing voor schermen toevoegt aan een bestaand programma in Cloud Manager for Screens as a Cloud Service.
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 In deze sectie wordt beschreven hoe u schermen kunt toevoegen als een invoegtoepassing aan een bestaand programma in Cloud Manager.
 
 >[!NOTE]
->Zie [Programma&#39;s en programmatypen begrijpen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) voor meer informatie over programma&#39;s van Cloud Manager.
+>Zie [Programma&#39;s en programmatypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en) voor meer informatie over programma&#39;s van Cloud Manager.
 
 ## Doelstelling {#objective}
 
-In de volgende stappen leert u hoe u de invoegtoepassing Schermen kunt toevoegen aan een bestaand programma in Cloud Manager.
+In de volgende stappen leert u hoe u een invoegtoepassing voor schermen kunt toevoegen aan een bestaand programma in Cloud Manager.
 
 ## Stappen voor het toevoegen van rasters aan een bestaand programma in Cloud Manager {#edit-programs-screens-cloud}
 
@@ -27,9 +27,9 @@ Voer de onderstaande stappen uit om schermen toe te voegen aan een bestaand prog
 1. Navigeren naar [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Zie [Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) voor meer informatie over Cloud Manager.
+   >Zie [Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=en) voor meer informatie over Cloud Manager.
 
-1. Navigeer naar uw project en klik op **Programma bewerken** van Cloud Manager **Overzicht** pagina.
+1. Navigeer naar uw project en klik op de knop **Programma bewerken** van Cloud Manager **Overzicht** pagina.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
@@ -40,8 +40,8 @@ Voer de onderstaande stappen uit om schermen toe te voegen aan een bestaand prog
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
-1. Klikken op **Bijwerken**, zodra u de opties hebt geselecteerd.
+1. Klikken **Bijwerken**, zodra u de opties hebt geselecteerd.
 
 ## Volgende functies {#whats-next}
 
-Als u eenmaal hebt geleerd hoe u rasters kunt toevoegen als een invoegtoepassing aan een bestaand Cloud Manager-programma en uw programma onder Programma&#39;s en Producten van Cloud Manager ziet, kunt u nu verdergaan met de volgende stap in het instapproces, namelijk: [Een vertakking voor uw project maken in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Nadat u hebt geleerd hoe u rasters kunt toevoegen als invoegtoepassing aan een bestaand Cloud Manager-programma en uw programma onder Programma&#39;s en Producten van Cloud Manager ziet, kunt u verdergaan. De volgende stap in het instapproces is [Een vertakking voor uw project maken in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).

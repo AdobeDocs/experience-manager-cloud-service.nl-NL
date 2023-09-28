@@ -1,17 +1,17 @@
 ---
 title: Speler toewijzen aan een as a Cloud Service weergave in schermen
-description: Op deze pagina wordt beschreven hoe u een speler kunt toewijzen aan een weergave in as a Cloud Service schermen.
+description: Leer hoe u een speler kunt toewijzen aan een as a Cloud Service weergave in schermen.
 exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '224'
 ht-degree: 1%
 
 ---
 
 # Speler toewijzen aan een as a Cloud Service weergave in schermen {#assign-player-displays-screens-cloud}
 
-Wanneer de projectinstelling is voltooid, moet u de speler aan een weergave toewijzen om de inhoud weer te geven.
+Nadat de projectinstellingen zijn voltooid, moet u de speler aan een weergave toewijzen om de inhoud weer te geven.
 
 ## Doelstelling {#objective}
 
@@ -23,7 +23,7 @@ Wanneer u de speler hebt geregistreerd, is het verplicht een speler aan het vere
 
 Voer de onderstaande stappen uit om een speler aan een weergave toe te wijzen:
 
-1. Selecteren **Players** onder Netwerkbeheer in het navigatievenster aan de linkerkant en selecteer de speler. Klikken op **Weergave toewijzen**
+1. Selecteren **Players** onder Netwerkbeheer in het navigatievenster aan de linkerkant en selecteer de speler. Klikken **Weergave toewijzen**
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player7.png)
 
@@ -33,8 +33,8 @@ Voer de onderstaande stappen uit om een speler aan een weergave toe te wijzen:
 
 ## Inhoud afspelen {#content-playback}
 
-Nadat u een weergave aan een speler hebt toegewezen, zoals in de voorgaande sectie wordt getoond, wordt de toegewezen weergave onder **TOEGEWEZEN WEERGAVE** deelvenster.
+Nadat u een vertoning aan een speler, zoals aangetoond in de vorige sectie hebt toegewezen, ziet u de toegewezen vertoning onder **TOEGEWEZEN WEERGAVE** deelvenster.
 
-De weergave wordt nu toegewezen aan de speler en het kanaal begint de inhoud af te spelen. De speler moet nu inhoud downloaden en afspelen. **Gefeliciteerd!**
+De weergave wordt nu toegewezen aan de speler en het kanaal begint de inhoud af te spelen. De speler moet nu de inhoud downloaden en afspelen. **Gefeliciteerd!**
 
 ![afbeelding](/help/screens-cloud/assets/player/output.gif)
