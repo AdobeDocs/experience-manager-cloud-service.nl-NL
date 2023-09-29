@@ -4,15 +4,15 @@ description: Adaptive Forms biedt een mechanisme om een formuliersegment te make
 topic-tags: author
 keywords: Adaptieve formulierfragmenten toevoegen, Adaptieve formulierfragmenten maken, een formulierfragment maken, een fragment toevoegen aan een adaptief formulier, Fragmenten beheren
 feature: Adaptive Forms
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 290cdecdb355b5c9a872d0f12ac701d271a258d4
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1738'
 ht-degree: 0%
 
 ---
 
 
-# Adaptieve formulierfragmenten {#adaptive-form-fragments}
+# Adaptieve Forms-fragmenten maken en gebruiken in een adaptief formulier op basis van kerncomponenten {#adaptive-form-fragments}
 
 
 | Versie | Artikelkoppeling |

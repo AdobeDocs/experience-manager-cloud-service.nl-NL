@@ -7,15 +7,15 @@ keywords: Voeg een manager van de douanefout toe, voeg een standaardfoutenmanage
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: a589005551dd7d8cdf8ac004725341905f0e99d1
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2380'
 ht-degree: 0%
 
 ---
 
 
-# Fouthandlers in Adaptive Forms (Core Components) {#error-handlers-in-adaptive-form}
+# Fouthandlers voor adaptief formulier op basis van kerncomponenten {#error-handlers-in-adaptive-form}
 
 
 | Versie | Artikelkoppeling |
