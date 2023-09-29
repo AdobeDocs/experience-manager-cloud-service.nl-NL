@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
+source-git-commit: 8c878833118b2d8dc51e8cfa2c15ce70efbd3deb
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 0%
@@ -27,6 +27,10 @@ In de volgende sectie worden de opmerkingen bij de release met functies voor de 
 ## Releasedatum {#release-date}
 
 De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2023.9.0) is 28 september 2023. De volgende release met functies (2023.10.0) is gepland voor 26 oktober 2023.
+
+## Opmerkingen bij de onderhoudsrelease {#maintenance}
+
+U vindt de meest recente opmerkingen in de onderhoudsrelease [hier](/help/release-notes/maintenance/latest.md).
 
 <!-- 
 
@@ -127,10 +131,6 @@ Het verkeer van de filter bij CDN die op wordt gebaseerd:
 Wilt u de functie proberen en feedback delen? Een e-mail verzenden naar **aemcs-waf-adopter@adobe.com** van uw officiële e-mailadres voor meer informatie over het programma voor vroege adoptie. De ruimte is beperkt.
 
 Meer informatie over de functie in het artikel [hier](/help/security/cdn-and-waf-rules.md).
-
-## Opmerkingen bij de onderhoudsrelease {#maintenance}
-
-U vindt de meest recente opmerkingen in de onderhoudsrelease [hier](/help/release-notes/maintenance/latest.md).
 
 ## Cloud Manager {#cloud-manager}
 
