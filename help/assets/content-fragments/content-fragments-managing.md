@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten beheren (elementen - Inhoudsfragmenten)
 description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1877'
 ht-degree: 5%
 
 ---
@@ -196,6 +196,10 @@ Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
    * **gedeactiveerd**: rood
 
 * Met een knop kunt u **Nieuwe editor proberen** door de *new* [Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) dat toegankelijk is via de [Content Fragments-console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+
+  >[!WARNING]
+  >
+  >De nieuwe editor wordt op hetzelfde tabblad geopend. Het wordt afgeraden beide editors tegelijk te openen.
 
 * **Opslaan** verleent toegang tot **Opslaan en sluiten** -optie.
 

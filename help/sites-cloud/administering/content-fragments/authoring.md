@@ -3,9 +3,9 @@ title: Inhoudsfragmenten ontwerpen
 description: Begrijp hoe te om inhoud voor uw Contentfragmenten te ontwerpen, dan creeer variaties van die inhoud volgens doel. Dit biedt extra flexibiliteit voor zowel levering zonder kop als het ontwerpen van pagina's.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2249'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,11 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
    * een optie om alles weer te geven **Bovenliggende verwijzingen** (koppelingspictogram)
    * het fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** en laatst opgeslagen gegevens
    * een schakeloptie voor het overschakelen naar de oorspronkelijke (op elementen gebaseerde) editor
+
+     >[!WARNING]
+     >
+     >De oorspronkelijke editor wordt op hetzelfde tabblad geopend. Het wordt afgeraden beide editors tegelijk te openen.
+
 * linkerdeelvenster: toont de **[Variaties](#variations)** voor het inhoudsfragment en de bijbehorende **Velden**:
    * deze koppelingen kunnen worden gebruikt om [navigeren door de structuur van het inhoudsfragment](#navigate-structure)
 * rechterdeelvenster: tabbladen voor presentaties [eigenschappen (metagegevens) en tags weergeven](#view-properties-tags), informatie over de [versiehistorie](#view-version-history)en informatie over [taalkopieën](#view-language-copies)
