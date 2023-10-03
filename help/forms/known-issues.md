@@ -1,14 +1,14 @@
 ---
-title: Bekende problemen en beperkingen
-description: Bekende problemen en beperkingen van  [!DNL AEM Forms] as a Cloud Service omgeving
+title: Bekende problemen en beperkingen van [!DNL AEM Forms] as a Cloud Service omgeving
+description: Bekende problemen en beperkingen van  [!DNL AEM Forms] as a Cloud Service omgeving.
 contentOwner: khsingh
 role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -37,5 +37,5 @@ Voordat u begint met [!DNL AEM Forms] as a Cloud Service, herzie de volgende bek
 
 ## Beperkingen {#limitations}
 
-* Ondersteuning voor adaptieve Forms op basis van XFA is niet beschikbaar in de verpakking. Als u van plan bent om op XFA-Gebaseerde AanpassingsForms te gebruiken, contacteer de Steun van de Adobe met details van uw gebruiksgeval en specifieke vereisten.
+* Ondersteuning voor adaptieve Forms op basis van XFA is niet beschikbaar in de verpakking. Als u van plan bent om op XFA-Gebaseerde Aangepaste Forms te gebruiken, contacteer de Steun van de Adobe met details van uw gebruiksgeval en specifieke vereisten.
 

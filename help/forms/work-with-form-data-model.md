@@ -1,13 +1,13 @@
 ---
 title: Hoe te met het Model van de Gegevens van het Vorm te werken?
-description: Leer hoe te om de voorwerpen en de diensten van het gegevensmodel toe te voegen, voorwerpen van het gegevensmodel en kindeigenschappen tot stand te brengen, de diensten te vormen, verenigingen toe te voegen, en met navigatie eigenschappen van de diensten te werken OData. Dig dieper op hoe te om steekproefgegevens te produceren en uit te geven, voorwerpen en de diensten van het testgegevensmodel, en bevestiging van inputgegevens te automatiseren.
+description: Voeg gegevensmodelvoorwerpen, de diensten toe, creeer gegevensmodelvoorwerpen en kindeigenschappen, vorm de diensten, werk met navigatie eigenschappen van de diensten OData.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '3984'
+source-wordcount: '3955'
 ht-degree: 0%
 
 ---

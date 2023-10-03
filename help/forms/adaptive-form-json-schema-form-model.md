@@ -1,20 +1,20 @@
 ---
 title: JSON-schema ontwerpen voor een adaptief formulier
-description: Leer hoe u Adaptive Forms maakt met JSON-schema als formuliermodel. U kunt bestaande JSON-schema's gebruiken om een adaptieve Forms te maken. Dig dieper met een steekproef van een schema JSON, preconfigure gebieden in JSON schemadefinitie, grens aanvaardbare waarden voor een Adaptieve component van de Vorm, en leer niet-gesteunde concepten.
+description: Leer een JSON-schema voor een adaptief formulier te maken en een adaptief formulier te maken op basis van het schema om klachtengegevens over het schema te produceren.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1331'
 ht-degree: 0%
 
 ---
 
 # JSON-schema ontwerpen voor een adaptief formulier {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |

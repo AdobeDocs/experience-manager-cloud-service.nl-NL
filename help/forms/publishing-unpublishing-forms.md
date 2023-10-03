@@ -1,18 +1,13 @@
 ---
-title: Formulieren en documenten publiceren en de publicatie ervan opheffen
-seo-title: Publishing and unpublishing forms and documents
-description: U kunt publiceren en het publiceren van formulieren ongedaan maken. Gepubliceerde formulieren worden gerepliceerd in het publicatie-exemplaar.
-seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
-uuid: 0bad5608-b7a8-4599-81cc-2cd0a3dc7dd5
+title: Hoe kan ik formulieren en documenten publiceren en verwijderen?
+description: Plan het publiceren en het verwijderen van uw Adaptive Forms. Gepubliceerde formulieren worden gerepliceerd in het publicatie-exemplaar.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+docset: aem65s
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -20,7 +15,7 @@ ht-degree: 0%
 
 # Formulieren en documenten publiceren en de publicatie ervan opheffen{#publishing-and-unpublishing-forms-and-documents}
 
-[!DNL AEM Forms] Hiermee kunt u gemakkelijk formulieren maken, publiceren en verwijderen. De [!DNL AEM Forms] server biedt twee instanties: Auteur en publiceer. De instantie Auteur is bedoeld voor het maken en beheren van formulierelementen en -bronnen. Publicatie-instantie is bedoeld om elementen en gerelateerde bronnen die beschikbaar zijn voor eindgebruikers, te behouden.
+[!DNL AEM Forms] Hiermee kunt u gemakkelijk formulieren maken, publiceren en verwijderen. De [!DNL AEM Forms] server biedt twee instanties: Auteur en Publiceren. De instantie Auteur is bedoeld voor het maken en beheren van formulierelementen en -bronnen. Publicatie-instantie is bedoeld om elementen en gerelateerde bronnen die beschikbaar zijn voor eindgebruikers, te behouden.
 
 ## Ondersteunde elementen   {#supported-assets-nbsp}
 
@@ -45,13 +40,13 @@ Het is mogelijk dat uw Adaptieve Forms gebruik maakt van bepaalde configuraties,
 * Bewerkbare adaptieve formuliersjablonen
 * Configuraties van Cloud Servicen voor Adobe Sign, Typekit, reCAPTCHA en Form Data Models
 * Configuraties met andere cloudservices worden alleen geactiveerd als de gebruiker beheerdersmachtigingen heeft.
-* Aanpassingen. Het gaat hierbij onder meer om:
+* Aanpassingen Het gaat hierbij onder meer om:
 
    * Aangepaste indelingen
    * Aangepaste weergaven
    * CSS-bestand - wordt gebruikt als invoer in dialoogvenster Eigenschappen van container van adaptieve formulieren
    * Clientbibliotheekcategorie - Wordt gebruikt als invoer in het dialoogvenster Eigenschappen van container van adaptieve formulieren
-   * Een andere clientbibliotheek die mogelijk is opgenomen als onderdeel van een adaptieve formuliersjabloon.
+   * Een andere clientbibliotheek die mogelijk is opgenomen als onderdeel van de sjabloon Adaptief formulier.
    * Ontwerppaden
 
 ## Elementstatussen {#asset-states}
@@ -59,8 +54,8 @@ Het is mogelijk dat uw Adaptieve Forms gebruik maakt van bepaalde configuraties,
 Middelen kunnen de volgende statussen hebben:
 
 * **Niet gepubliceerd:** An asset that has never been published (The unpublished state is apply only to Forms assets. De activa van het Beheer van de correspondentie hebben geen Unpublished staat.)
-* **Gepubliceerd**: Een middel dat is gepubliceerd en beschikbaar op de Publish instantie is
-* **Gewijzigd**: Een actief dat na publicatie is gewijzigd
+* **Gepubliceerd**: Een middel dat is gepubliceerd en beschikbaar is in de instantie Publiceren
+* **gewijzigd**: Een element dat na publicatie is gewijzigd
 
 ## Middelen publiceren {#publish-an-asset}
 
@@ -77,10 +72,9 @@ Middelen kunnen de volgende statussen hebben:
 
       >[!NOTE]
       >
-      >Selecteer geen meerdere elementen. Het tegelijk publiceren van meerdere elementen wordt niet ondersteund.
+      >Selecteer geen meerdere elementen. Het tegelijkertijd publiceren van meerdere elementen wordt niet ondersteund.
 
-
-1. Wanneer het publicatieproces wordt gestart, wordt een bevestigingsvenster weergegeven met alle gerelateerde elementen en bronnen. Tik in het dialoogvenster dat gerelateerde elementen bevat op **[!UICONTROL Publish]**. Het element wordt gepubliceerd en het dialoogvenster Elementen publiceren wordt weergegeven.
+1. Wanneer het publicatieproces wordt gestart, wordt een bevestigingsvenster weergegeven met alle gerelateerde elementen en bronnen. Tik in het dialoogvenster met verwante elementen op **[!UICONTROL Publish]**. Het element wordt gepubliceerd en het dialoogvenster Elementen publiceren wordt weergegeven.
 
    >[!NOTE]
    >
@@ -178,7 +172,7 @@ Elke keer dat u een element of brief publiceert nadat u deze hebt bewerkt, wordt
 
    >[!NOTE]
    >
-   >De optie Verwijderen is ook beschikbaar als u elementdetails weergeeft door op een element te tikken of als u de eigenschappen van een element weergeeft door op Weergave-eigenschappen te tikken ![viewproperties](assets/viewproperties.png).
+   >De optie Verwijderen is ook beschikbaar als u elementdetails weergeeft door op een element te tikken of als u de eigenschappen van een element weergeeft door op Eigenschappen weergeven te tikken ![viewproperties](assets/viewproperties.png).
 
 1. Voordat het element wordt verwijderd, verschijnt er een bevestigingsvenster. Tik op **[!UICONTROL Delete]**.
 
@@ -198,6 +192,6 @@ Om verificatie voor uw formulieren in te schakelen:
 1. Open configMgr in de publicatieinstantie in uw browser.\
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
-1. Klik in de configuratie van de Adobe Experience Manager-webconsole op **Apache Sling Authentication Service** om het te vormen.
+1. Klik in de Adobe Experience Manager Web Console Configuration op **Apache Sling Authentication Service** om het te vormen.
 1. Gebruik in het dialoogvenster Apache Sling Authentication Service dat wordt weergegeven de optie **+** om paden toe te voegen.\
    Wanneer u een pad toevoegt, wordt de verificatieservice ingeschakeld voor formulieren in dat pad.

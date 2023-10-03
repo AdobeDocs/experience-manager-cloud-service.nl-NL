@@ -1,15 +1,14 @@
 ---
 title: Adaptieve Forms-cache configureren
-description: De Adaptive Forms-cache is speciaal ontworpen voor Adaptive Forms en documenten. Het cachegeheugen van Adaptive Forms en adaptieve documenten met als doel de tijd die nodig is om een adaptief formulier of document op de client te genereren, te verkorten.
+description: De Adaptive Forms-cache is ontworpen voor Adaptive Forms en voor documenten met als doel de tijd die nodig is om een adaptief formulier of document te genereren te verkorten.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
-docset: aem65
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 # Adaptieve Forms-cache configureren {#configure-adaptive-forms-cache}
 
-Een cache is een mechanisme om de toegangstijd voor gegevens te verkorten, de latentie te verminderen en de invoer-/uitvoersnelheid (I/O) te verbeteren. Bij Adaptive Forms-cache worden alleen HTML-inhoud en JSON-structuur van een adaptief formulier opgeslagen zonder dat vooraf ingevulde gegevens worden opgeslagen. Hierdoor wordt de tijd die nodig is om een adaptief formulier op de client te genereren, verkort. Het is speciaal ontworpen voor Adaptive Forms.
+Een cache is een mechanisme om de toegangstijd voor gegevens te verkorten, de latentie te verminderen en de invoer-/uitvoersnelheid (I/O) te verbeteren. In de Adaptive Forms-cache worden alleen de HTML-inhoud en de JSON-structuur van een adaptief formulier opgeslagen zonder dat vooraf ingevulde gegevens worden opgeslagen. Hierdoor wordt de tijd die nodig is om een adaptief formulier op de client te genereren, verkort. Het is speciaal ontworpen voor Adaptive Forms.
 
 ## Adaptieve Forms-cache configureren bij auteur- en publicatieinstanties {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
@@ -38,18 +37,18 @@ Uw omgeving is geconfigureerd voor het gebruik van cacheadaptieve Forms en gerel
 
 ## (Optioneel) Adaptief formuliercache configureren bij Dispatcher {#configure-the-cache}
 
-U kunt ook Adaptive Form caching configureren bij Dispatcher voor extra prestatieverhoging.
+U kunt ook Adaptief in cache plaatsen van formulieren configureren bij Dispatcher voor een extra prestatieverhoging.
 
 ### Voorwaarden {#pre-requisites}
 
-* De optie [samenvoegen of vooraf invullen van gegevens op de client](prepopulate-adaptive-form-fields.md#prefill-at-client) optie. Hiermee kunt u unieke gegevens samenvoegen voor elk exemplaar van een vooraf ingevuld formulier.
-* [Uitlijningsagent inschakelen voor elke publicatie-instantie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance). Het helpt betere caching prestaties voor Adaptive Forms te bereiken. De standaard-URL van spoelmiddelen is `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
+* De optie [samenvoegen of vooraf invullen van gegevens op de client](prepopulate-adaptive-form-fields.md#prefill-at-client) -optie. Hiermee kunt u unieke gegevens samenvoegen voor elk exemplaar van een vooraf ingevuld formulier.
+* [Een uitlijningsagent inschakelen voor elke publicatie-instantie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance). Het helpt betere caching prestaties voor Adaptive Forms te bereiken. De standaard-URL van spoelmiddelen is `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
 ### Overwegingen bij het in cache plaatsen van Adaptive Forms op een Dispatcher {#considerations}
 
 * Wanneer u de Adaptive Forms-cache gebruikt, gebruikt u de AEM [!DNL Dispatcher] om clientbibliotheken (CSS en JavaScript) van een adaptief formulier in cache te plaatsen.
 * Zorg dat de Adaptive Forms-cache uitgeschakeld blijft wanneer u aangepaste componenten ontwikkelt op de server die voor ontwikkeling wordt gebruikt.
-* URL&#39;s zonder extensie worden niet in de cache opgeslagen. Bijvoorbeeld URL met patroon `/content/forms/[folder-structure]/[form-name].html` worden in cache geplaatst en worden URL&#39;s met een patroon genegeerd `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Gebruik dus URL&#39;s met extensies om te profiteren van caching.
+* URL&#39;s zonder extensie worden niet in de cache opgeslagen. Bijvoorbeeld URL met patroon `/content/forms/[folder-structure]/[form-name].html` worden in cache geplaatst en worden URL&#39;s met een patroon genegeerd `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Gebruik dus URL&#39;s met extensies om de voordelen van caching te benutten.
 * Overwegingen voor gelokaliseerde adaptieve Forms:
    * URL-indeling gebruiken `http://host:port/content/forms/af/<afName>.<locale>.html` een gelokaliseerde versie van een adaptief formulier aanvragen in plaats van `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
    * Uitschakelen met landinstelling browser <!-- [Disable using browser locale](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) -->voor URL&#39;s met opmaak `http://host:port/content/forms/af/<adaptivefName>.html`.
@@ -91,7 +90,7 @@ Voer de onderstaande stappen uit, zodat u het in cache plaatsen van Adaptieve Fo
 
    * Een adaptief formulier blijft in cache totdat een bijgewerkte versie van het formulier niet wordt gepubliceerd.
 
-   * Wanneer een nieuwere versie van de bron waarnaar in een adaptief formulier wordt verwezen, wordt gepubliceerd, wordt het beïnvloede adaptieve formulier automatisch ongeldig gemaakt. Er zijn enkele uitzonderingen op de automatische ongeldigmaking van bronnen waarnaar wordt verwezen. Zie voor meer informatie over uitzonderingen [problemen oplossen](#troubleshooting) sectie.
+   * Wanneer een nieuwere versie van een bron waarnaar in een adaptief formulier wordt verwezen, wordt gepubliceerd, wordt het beïnvloede adaptieve formulier automatisch ongeldig gemaakt. Er zijn enkele uitzonderingen op de automatische ongeldigmaking van bronnen waarnaar wordt verwezen. Zie voor meer informatie over uitzonderingen de [problemen oplossen](#troubleshooting) sectie.
 1. [Voeg het onderstaande bestand met regels dispatcher.any of aangepaste regels toe](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-documents-to-cache). De URL&#39;s die caching niet ondersteunen, worden uitgesloten. Bijvoorbeeld interactieve communicatie.
 
    ```JSON
@@ -126,7 +125,7 @@ Voer de onderstaande stappen uit, zodat u het in cache plaatsen van Adaptieve Fo
       }
    ```
 
-Uw AEM omgeving is geconfigureerd om Adaptive Forms in cache te plaatsen. Alle typen Adaptive Forms worden in het cachegeheugen opgeslagen. Als u toegangsmachtigingen voor gebruikers voor een pagina moet controleren voordat u de pagina in de cache afgeeft, raadpleegt u [caching, beveiligde inhoud](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+Uw AEM omgeving is geconfigureerd om Adaptive Forms in cache te plaatsen. Alle typen Adaptive Forms worden in het cachegeheugen opgeslagen. Als u toegangsmachtigingen voor gebruikers voor een pagina moet controleren voordat u de pagina in de cache aflevert, raadpleegt u [caching, beveiligde inhoud](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -144,17 +143,17 @@ Nadat u de afbeeldingen en video hebt gepubliceerd, maakt u de publicatie van de
 
 #### Probleem {#issue2}
 
-Wanneer u een inhoudsfragment of een Ervingsfragment toevoegt aan een adaptief formulier en deze elementen onafhankelijk worden bewerkt en gepubliceerd, wordt Adaptive Forms met deze elementen niet automatisch ongeldig gemaakt door de Dispatcher-cache.
+Wanneer u een inhoudsfragment of een Ervingsfragment toevoegt aan een adaptief formulier en deze elementen onafhankelijk worden bewerkt en gepubliceerd, wordt Adaptive Forms met deze elementen niet automatisch ongeldig gemaakt uit de Dispatcher-cache.
 
 #### Oplossing {#Solution2}
 
-Na publicatie van het bijgewerkte inhoudsfragment of Experience Fragment, publiceert en publiceert u de Adaptive Forms die deze elementen gebruikt expliciet.
+Nadat u een bijgewerkt inhoudsfragment of ervaringsfragment hebt gepubliceerd, publiceert en publiceert u de Adaptieve Forms die deze elementen gebruikt, expliciet.
 
 ### Alleen de eerste instantie van een adaptief formulier wordt in de cache geplaatst{#only-first-insatnce-of-adptive-forms-is-cached}
 
 #### Probleem {#issue3}
 
-Wanneer de Adaptive Form URL geen lokalisatiegegevens heeft, en **[!UICONTROL Use Browser Locale]** in configuratiemanager is ingeschakeld. Er wordt een gelokaliseerde versie van het adaptieve formulier verzonden en alleen de eerste instantie van het adaptieve formulier wordt in de cache opgeslagen en aan elke volgende gebruiker bezorgd.
+Wanneer de Adaptive Form URL geen lokalisatiegegevens heeft, en **[!UICONTROL Use Browser Locale]** in de configuratiemanager wordt toegelaten. Er wordt een gelokaliseerde versie van het adaptieve formulier verzonden en alleen de eerste instantie van het adaptieve formulier wordt in de cache opgeslagen en aan elke volgende gebruiker bezorgd.
 
 #### Oplossing {#Solution3}
 

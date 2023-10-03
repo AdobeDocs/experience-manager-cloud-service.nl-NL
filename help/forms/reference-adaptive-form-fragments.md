@@ -1,16 +1,14 @@
 ---
-title: Referentie adaptieve formulierfragmenten
-seo-title: Reference Adaptive Form Fragments
-description: AEM Forms biedt adaptieve formulierfragmenten die u kunt gebruiken als elementen om snel een formulier te maken.
-seo-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly.
+title: Wat zijn adaptieve referentieformulierfragmenten?
+description: AEM Forms biedt adaptieve formulierfragmenten die u kunt gebruiken als elementen om snel formulieren te maken.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -26,7 +24,7 @@ Voor Adaptive Forms-auteurs worden referentiefragmenten geleverd in het dialoogv
 * Contactgegevens
 * Creditcardgegevens
 * Huidige werkgelegenheid
-* Afhankelijke informatie
+* Informatie over afhankelijke personen
 * Werkgelegenheidsgeschiedenis
 * Inkomsten en uitgaven
 * Naam
@@ -39,7 +37,7 @@ Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzi
 
 ## Adres {#address}
 
-Bevat velden voor het opgeven van het mailadres. De beschikbare velden zijn adres, postcode, plaats, staat en land. Het omvat ook een vooraf geconfigureerde webservice die de stad en de staat voor een opgegeven Amerikaanse postcode vult.
+Bevat velden voor het opgeven van een postadres. De beschikbare velden zijn adres, postcode, plaats, staat en land. Het omvat ook een vooraf geconfigureerde webservice die de stad en de staat voor een opgegeven Amerikaanse postcode vult.
 
 ![Adresfragment](assets/address.png)
 
@@ -49,7 +47,7 @@ Bevat velden voor het opgeven van het mailadres. De beschikbare velden zijn adre
 
 ## Contactgegevens {#contact-information}
 
-Bevat velden voor het vastleggen van het telefoonnummer en het e-mailadres.
+Bevat velden voor het vastleggen van een telefoonnummer en e-mailadres.
 
 ![Fragment met contactgegevens](assets/contact-info.png)
 
@@ -60,7 +58,7 @@ Bevat velden voor het vastleggen van het telefoonnummer en het e-mailadres.
 ## Creditcardgegevens {#credit-card-information}
 
 Bevat velden voor het vastleggen van creditcardgegevens die kunnen worden gebruikt voor het verwerken van betalingen.
-[ ![Creditcardgegevensfragment](assets/cc-info.png)](assets/cc-info-1.png)
+[![Creditcardgegevensfragment](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Huidige werkgelegenheid {#current-employment}
 
@@ -72,7 +70,7 @@ Bevat velden waarin actuele werkgelegenheidsdetails worden opgenomen, zoals arbe
 
 ](assets/current-emp-1.png)-->
 
-## Afhankelijke informatie {#dependents-information}
+## Informatie over afhankelijke personen {#dependents-information}
 
 Omvat gebieden om informatie over één of meerdere gebiedsdelen, zoals hun naam, verhouding, en leeftijd in een tabelvorm te specificeren.
 

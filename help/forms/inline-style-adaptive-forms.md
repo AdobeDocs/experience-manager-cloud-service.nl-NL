@@ -1,20 +1,20 @@
 ---
 title: Hoe kunt u inline stijlen toepassen op adaptieve formuliercomponenten?
-description: Hoewel u aangepaste stijlen kunt toepassen op een adaptief formulier, kunt u ook inline CSS-eigenschappen toepassen op afzonderlijke componenten van een adaptief formulier. Leer hoe u inlinestijlen kunt toepassen op componenten van adaptieve formulieren. Dig dieper in het gebruik van een voorbeeld om inline stijl toe te passen op een component van het tekstgebied.
+description: Leer aangepaste stijlen toe te passen op een adaptief formulier, kunt u ook inline CSS-eigenschappen toepassen op afzonderlijke componenten van een adaptief formulier.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '742'
 ht-degree: 1%
 
 ---
 
 # Inline opmaak van adaptieve formuliercomponenten {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -76,19 +76,19 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
    <td><p>Tekstvak</p> </td>
    <td><p>background-color</p> </td>
    <td><p>#6495ED</p> </td>
-   <td><p>Hiermee wijzigt u de achtergrondkleur in CornflowerBlue (#6495ED)</p> <p>Opmerking: U kunt een kleurnaam of hexadecimale code opgeven in het waardeveld.</p> </td>
+   <td><p>Hiermee wijzigt u de achtergrondkleur in CornflowerBlue (#6495ED)</p> <p>Opmerking: u kunt een kleurnaam of hexadecimale code opgeven in het waardeveld.</p> </td>
   </tr>
   <tr>
    <td><p>Label</p> </td>
-   <td><p>Dimension en positie &gt; breedte</p> </td>
+   <td><p>Dimensionen en positie &gt; breedte</p> </td>
    <td><p>100px</p> </td>
    <td><p>Hiermee stelt u de breedte in op 100 px voor het label</p> </td>
   </tr>
   <tr>
-   <td>Pictogram Help-veld</td>
-   <td>Tekst &gt; Lettertypekleur</td>
+   <td>Help-pictogram Veld</td>
+   <td>Tekst &gt; Tekstkleur</td>
    <td>#2ECC40</td>
-   <td>Hiermee wijzigt u de kleur van het gezicht van het Help-pictogram.</td>
+   <td>Hiermee wijzigt u de kleur van het Help-pictogram.</td>
   </tr>
   <tr>
    <td><p>Lange beschrijving</p> </td>

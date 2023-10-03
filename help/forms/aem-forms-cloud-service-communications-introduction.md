@@ -1,11 +1,10 @@
 ---
-title: Inleiding tot as a Cloud Service communicatie met Forms
-description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+title: Een inleiding tot as a Cloud Service communicatie in Forms
+description: Gebruik communicatie-API's om uw documenten te ondertekenen, certificeren of beveiligen, om processen voor het genereren van PDF te automatiseren en om PDF-documenten om te zetten in een andere indeling.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1424'
 ht-degree: 1%
 
 ---

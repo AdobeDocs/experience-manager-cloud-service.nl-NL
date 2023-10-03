@@ -1,19 +1,17 @@
 ---
-title: Metagegevens beheren
-seo-title: Manage [!DNL AEM Forms] metadata
+title: Metagegevens voor AEM Forms beheren
 description: Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
-seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1720'
 ht-degree: 0%
 
 ---
 
 # Metagegevens van een adaptief formulier toevoegen, verwijderen of bewerken {#manage-form-metadata}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 
 | Versie | Artikelkoppeling |
@@ -73,7 +71,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
      <li>Document, document (ondertekend)</li> 
      <li>Adaptief formulier</li> 
      <li>Formuliergegevensmodel</li>
-     <li>Resource</li> 
+     <li>Bron</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -100,9 +98,9 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
    <td>Alles behalve bron</td> 
    <td><p> Een alleen-lezen waarde die een van de volgende statussen van een formulier definieert:</p> 
     <ul> 
-     <li>Geen waarde: Als een formulier nog nooit is gepubliceerd.</li> 
-     <li>Gepubliceerd: Wanneer een formulier wordt gepubliceerd.</li> 
-     <li>Gewijzigd: Wanneer een formulier is gewijzigd nadat het eenmaal is gepubliceerd.</li> 
+     <li>Geen waarde: als een formulier nog nooit is gepubliceerd.</li> 
+     <li>Gepubliceerd: wanneer een formulier wordt gepubliceerd.</li> 
+     <li>Gewijzigd: wanneer een formulier is gewijzigd nadat het eenmaal is gepubliceerd.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -151,11 +149,11 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
   </tr> 
   <tr> 
    <td>Verwijzingen</td> 
-   <td><p>Adaptief formulier</p> <p>Formuliersjabloon</p> <p>Resource</p> </td> 
+   <td><p>Adaptief formulier</p> <p>Formuliersjabloon</p> <p>Bron</p> </td> 
    <td><p>Lijst met elementen (andere formulieren of bronnen) waarmee dit formulier is gerelateerd. Deze activa kunnen in de volgende twee categorieën vallen:</p> 
     <ul> 
-     <li>Verwijst naar: Elementen waarnaar het huidige formulier verwijst.</li> 
-     <li>Verwezen door: Activa die verwijzen naar het huidige actief.</li> 
+     <li>Zie: Elementen waarnaar het huidige formulier verwijst.</li> 
+     <li>Verwezen door: Activa die naar het huidige element verwijzen.</li> 
     </ul> <p>Deze elementen worden als koppelingen weergegeven en de bijbehorende metagegevens zijn rechtstreeks toegankelijk door erop te klikken.<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -164,7 +162,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
    <td><p>Hiermee geeft u aan welk formuliermodel wordt gebruikt bij het ontwerpen van het adaptieve formulier. Deze eigenschap kan de volgende waarden hebben:</p> 
     <ul> 
       <li>Formuliergegevensmodel </li>
-      <li>Schema: Een XML van het JSON-schema</li>
+      <li>Schema: een XML van het JSON-schema</li>
      <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
      <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->
      <li>Geen</li> 
@@ -207,7 +205,7 @@ Elementen hebben bestaande eigenschapswaarden, die kunnen worden weergegeven in 
 
 ## Waarden van metagegevens van formulieren toevoegen/bijwerken {#add-update-form-metadata-values}
 
-U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe waarden toevoegen aan een bestaand veld voor de eigenschap van metagegevens (bijvoorbeeld wanneer een metagegevensveld leeg is).
+U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe waarden toevoegen aan een bestaand veld voor eigenschappen van metagegevens (bijvoorbeeld wanneer een metagegevensveld leeg is).
 
 <!-- ### Update metadata property values {#update-metadata-property-values}
 
@@ -232,7 +230,7 @@ U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe
 
 In het linkerdeelvenster op de pagina Eigenschappen wordt de miniatuur van het formulier weergegeven. Standaard wordt de miniatuur weergegeven die wordt gegenereerd bij het maken van het formulier (adaptief formulier) of bij het uploaden van het formulier.
 
-Voor alle formuliertypen kunt u een afbeelding uploaden door op **[!UICONTROL Upload Image]** en bladeren naar een afbeeldingsbestand vanuit de lokale map. De geselecteerde afbeelding wordt gebruikt als miniatuur in plaats van de standaardafbeelding.
+Voor alle formuliertypen kunt u een afbeelding uploaden door op **[!UICONTROL Upload Image]** en bladeren naar een afbeeldingsbestand vanuit de lokale map. De geselecteerde afbeelding wordt gebruikt als een miniatuur in plaats van de standaardafbeelding.
 
 Voor Adaptive Forms is een extra functionaliteit beschikbaar waarmee de gebruiker een miniatuur kan genereren als momentopname van de huidige adaptieve voorvertoning van formulieren. Sinds [!DNL AEM Forms] Ook wordt het ontwerpen van Adaptief Forms ondersteund. Elke keer dat u het Adaptief formulier wijzigt, wordt er mogelijk een voorvertoning van het Adaptief formulier weergegeven. Met deze functie voor het genereren van een miniatuur krijgt u een nieuwe miniatuur voor het adaptieve formulier op basis van de huidige voorbeeldstatus. Klikken **[!UICONTROL Generate Preview]** deze actie uit te voeren.
 
@@ -246,7 +244,7 @@ Voor Adaptive Forms is een extra functionaliteit beschikbaar waarmee de gebruike
 
 Behalve de in het vak vermelde metagegevens, [!DNL AEM Forms] ondersteunt nieuwe aangepaste metagegevens.
 
-Er is een hulpmiddel (de Editor voor het metagegevensschema) beschikbaar waarmee u het schema voor de indeling van metagegevens kunt definiëren. dat wil zeggen, de lay-out van wat in **[!UICONTROL Properties]** pagina van een formulier. Met de Metagegevensschemaeditor kunt u een aangepast schema voor uw elementen toevoegen of wijzigen.
+Er is een gereedschap (de Editor voor het metagegevensschema) beschikbaar waarmee u het schema voor de metagegevenslay-out kunt definiëren. Dit is de lay-out van wat wordt weergegeven in het deelvenster **[!UICONTROL Properties]** pagina van een formulier. Met de Metagegevensschemaeditor kunt u een aangepast schema voor uw elementen toevoegen of wijzigen.
 
 [!DNL AEM Forms] Hiermee worden de metagegevensschema&#39;s van de ondersteunde formuliertypen in dit gereedschap weergegeven. Op deze manier hebt u toegang tot deze schema&#39;s en kunt u aangepaste eigenschappen toevoegen met gebruik van de functionaliteit in de editor voor het metagegevensschema.
 
@@ -260,9 +258,9 @@ Er is een hulpmiddel (de Editor voor het metagegevensschema) beschikbaar waarmee
 
    >[!NOTE]
    >
-   >Deze schema&#39;s bevatten eigenschappen van metagegevens die buiten het vak worden weergegeven en mogen niet worden gewijzigd/bewerkt (door het selectievakje in te schakelen en op Bewerken op de werkbalk te klikken) om functionele problemen te voorkomen.
+   >Deze schema&#39;s bevatten eigenschappen van meta-gegevens die buiten doos worden verstrekt en moeten niet worden veranderd/worden uitgegeven (het selecteren van controledoos en het klikken geeft van toolbar uit) om functionele kwesties te vermijden.
 
-1. Met elk type element waarop u klikt, wordt een lijst geopend met de `extendedmetadata` optie. Bewerk dit schema.
+1. Met elk type element waarop u klikt, wordt een lijst geopend met de `extendedmetadata` -optie. Bewerk dit schema.
 
 1. Selecteren naast het selectievakje `extendedmetadata` en klik vervolgens op Bewerken ![Bewerken](assets/Smock_Edit_18_N.svg) in de werkbalk.
 
@@ -277,7 +275,7 @@ Er is een hulpmiddel (de Editor voor het metagegevensschema) beschikbaar waarmee
    1. U kunt extra tabbladen toevoegen door op het plus-symbool te klikken.
 
    1. U kunt een aangepast veld van het gewenste type toevoegen door de veldcomponent vanuit het dialoogvenster **[!UICONTROL Build Form]** op de schemapagina.
-   1. De specificaties voor dit veld zijn te vinden in het **[!UICONTROL Settings]** nadat u op het veld hebt geklikt.
+   1. De specificaties voor dit veld zijn te vinden in het **[!UICONTROL Settings]** te klikken op het veld.
 
 ### Aangepaste metagegevenseigenschap toevoegen in schema-editor {#add-custom-metadata-property-in-schema-editor}
 
@@ -291,8 +289,8 @@ Er is een hulpmiddel (de Editor voor het metagegevensschema) beschikbaar waarmee
 
 1. Klik op een component die u net hebt gesleept. Vul op het tabblad Instellingen dat in het rechterdeelvenster wordt geopend de gegevens in voor de volgende velden:
 
-   1. Geef een veldlabel op dat als een weergavenaam boven het veld in het schema moet worden gebruikt (bijvoorbeeld: Afdeling)
-   1. Onder Kaart aan bezitsgebied, kunt u een vooraf ingevulde waarde zien **&quot;./jcr:content/metadata/default&#39;**. Wijzig de &#39;**default**&#39; aan een gewenste bezitsnaam, die wordt gebruikt om het bezit in crx bewaarplaats op te slaan (bijvoorbeeld: &quot;./jcr:content/metadata/department&#39;)
+   1. Geef een veldlabel op dat als een weergavenaam boven het veld in het schema moet worden gebruikt (bijvoorbeeld: Department)
+   1. Onder Kaart aan bezitsgebied, kunt u een vooraf ingevulde waarde zien **&quot;./jcr:content/metadata/default&#39;**. Wijzig de &#39;**default**&quot; aan een gewenste bezitsnaam, die wordt gebruikt om het bezit in crx bewaart bewaart bewaart (bijvoorbeeld: &quot;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
@@ -300,8 +298,8 @@ Er is een hulpmiddel (de Editor voor het metagegevensschema) beschikbaar waarmee
       >
       >De eigenschapsnaam moet ook uniek zijn om te voorkomen dat waarden worden geschreven voor twee of meer eigenschappen op dezelfde locatie in de opslagplaats. Het wordt daarom aanbevolen de waarde &#39;default&#39; te wijzigen.
 
-   1. Vul andere instellingen in op basis van vereisten. Bijvoorbeeld: Selecteer de optie Vereist als u het veld verplicht wilt maken.
-   1. Als u een veld wilt verwijderen dat u hebt toegevoegd, selecteert u het veld en klikt u op de knop Verwijderen ![Verwijderen](assets/Smock_Delete_18_N.svg) pictogram.
+   1. Vul andere instellingen in op basis van vereisten. Selecteer bijvoorbeeld de optie Vereist als u het veld verplicht wilt maken.
+   1. Als u een veld wilt verwijderen dat u hebt toegevoegd, selecteert u het veld en klikt u op Verwijderen ![Verwijderen](assets/Smock_Delete_18_N.svg) pictogram.
 
 1. Voer indien nodig stap 1-3 uit om een andere eigenschap toe te voegen.
 1. Klikken **[!UICONTROL Save]** nadat alle wijzigingen zijn aangebracht.

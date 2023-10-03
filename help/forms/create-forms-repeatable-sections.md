@@ -1,14 +1,14 @@
 ---
-title: Herhaalbaarheid in adaptieve vorm (kerncomponenten)
-description: Gebruik de functie herhaalbaarheid van deelvenstercomponenten om vergelijkbare secties in een adaptieve vorm te herhalen.
+title: Hoe te om herhaalbare panelen in de Aangepaste Componenten van de Kern van de Vorm te creëren
+description: Leer herhaalbare secties of velden maken in een adaptief formulier.
 role: Architect, Developer, Admin, User
-source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
+exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
-
 
 # Formulieren maken met herhaalbare secties (kerncomponenten) {#repeat-panel}
 
@@ -68,7 +68,7 @@ Het bovenliggende element van het deelvenster dat moet worden herhaald, moet een
 
    Selecteren **Visuele editor** in de rij Formulierobjecten en -functies.
 
-   1. Selecteer in het regelgebied onder WHEN de staat **is aangeklikt**.
+   1. Selecteer in het regelgebied, onder WHEN, de status **is aangeklikt**.
    1. Selecteer onder VERVOLGENS **Instantie toevoegen** en sleep het deelvenster met slepen ![schakelen tussen zijpaneel](/help/forms/assets/toggle-side-panel.png) of selecteer het met **Object neerzetten of hier selecteren.**
 
    Selecteren **Code-editor** in de rij Formulierobjecten en -functies. Klikken **Regels bewerken** en in het codegebied:
@@ -119,13 +119,13 @@ Het bovenliggende element van het deelvenster moet een verwijderknop bevatten om
 >`<panel1><textbox1>AA3</panel1></textbox1>`
 >
 >
->Als u AA1-gegevens wilt lezen, geeft u op:
+>Als u AA1-gegevens wilt lezen, geeft u:
 >
 >
 >`Panel1.instanceManager.instances[0].textbox.value`
 >
 >
->Als u AA2-gegevens wilt lezen, geeft u op:
+>Als u AA2-gegevens wilt lezen, geeft u:
 >
 >
 >`Panel1.instanceManager.instances[1].textbox.value`
@@ -170,8 +170,8 @@ Herhalbaar subformulier is vergelijkbaar met de herhaalbare deelvensters in Adap
 1. Als u het minimale aantal herhalingen wilt opgeven, selecteert u Min. aantal en typt u een getal in het bijbehorende vak. Als deze optie is ingesteld op 0 en er geen gegevens zijn opgegeven voor de objecten in het subformulier bij het samenvoegen van gegevens, wordt het subformulier niet geplaatst wanneer het formulier wordt gegenereerd.
 1. Als u het maximale aantal herhalingen van subformulieren wilt opgeven, selecteert u Max en typt u een getal in het bijbehorende vak. Als u geen waarde opgeeft in het vak Max, is het aantal herhalingen van het subformulier onbeperkt.
 1. Als u een ingesteld aantal herhalingen van subformulieren wilt opgeven, ongeacht de hoeveelheid gegevens, selecteert u Eerste telling en typt u een getal in het bijbehorende vak. Als u deze optie selecteert en er geen gegevens beschikbaar zijn of er minder gegevensitems zijn dan de opgegeven waarde bij Eerste telling, worden lege exemplaren van het subformulier nog steeds op het formulier geplaatst.
-1. Voeg twee knoppen toe aan het bovenliggende subformulier: een voor het toevoegen van een exemplaar en een andere voor het verwijderen van exemplaren van herhaalbare subformulieren. Voor gedetailleerde stappen raadpleegt u [Een handeling maken](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. Koppel nu de formuliersjabloon aan het adaptieve formulier. Voor gedetailleerde stappen raadpleegt u [Een adaptief formulier maken op basis van een sjabloon](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template).
+1. Voeg twee knoppen toe aan het bovenliggende subformulier: een voor het toevoegen van een exemplaar en een andere voor het verwijderen van exemplaren van herhaalbare subformulieren. Zie voor meer informatie [Een handeling maken](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
+1. Koppel nu de formuliersjabloon aan het adaptieve formulier. Zie voor meer informatie [Een adaptief formulier maken op basis van een sjabloon](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template).
 1. Gebruik de knoppen die u in stap 9 hebt gemaakt om subformulieren toe te voegen en te verwijderen.
 
 ZIP-bestand dat is gekoppeld, bevat een voorbeeld van een herhaalbaar subformulier.

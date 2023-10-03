@@ -1,17 +1,13 @@
 ---
-title: Vervolgkeuzelijsten dynamisch vullen
-seo-title: Dynamically populating drop-down lists
-description: Procedure voor het dynamisch vullen van vervolgkeuzelijsten op basis van logica
-seo-description: Procedure to dynamically populate drop-down lists based on some logic
+title: Hoe te om drop-down lijsten dynamisch te bevolken?
+description: Leer hoe u een keuzelijst met trapsgewijze opmaak maakt of vervolgkeuzelijsten dynamisch vult.
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -28,7 +24,7 @@ ht-degree: 0%
 
 ## Procedure voor het dynamisch vullen van vervolgkeuzelijsten {#procedure-to-dynamically-populate-drop-down-lists}
 
-Overweeg een scenario waar u wilt bevolken **Staat** vervolgkeuzelijst gebaseerd op een waarde die u in het dialoogvenster **Land** vervolgkeuzelijst. Als u Australië selecteert in het dialoogvenster **Land** vervolgkeuzelijst, de **Staat** in de vervolgkeuzelijst worden de staten in Australië weergegeven. De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
+Overweeg een scenario waar u het **Staat** vervolgkeuzelijst op basis van een waarde die u in het dialoogvenster **Land** vervolgkeuzelijst. Als u Australië selecteert in het dialoogvenster **Land** vervolgkeuzelijst, de **Staat** in de vervolgkeuzelijst worden de staten in Australië weergegeven. De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
 
 1. Creeer een project met de volgende modules:
 

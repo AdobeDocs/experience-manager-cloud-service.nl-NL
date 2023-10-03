@@ -1,13 +1,13 @@
 ---
 title: Hoe wordt het formuliergegevensmodel gebruikt?
-description: Leer hoe u Adaptieve Forms- en Adaptieve formulierfragmenten maakt op basis van een formuliergegevensmodel. Dig dieper door steekproefgegevens voor gegevensmodelvoorwerpen in het model van vormgegevens te produceren en uit te geven. U kunt deze gegevens gebruiken om een voorbeeld van Adaptief Forms te bekijken en deze te testen.
+description: Leer Adaptieve Forms en Fragments maken op basis van een formuliergegevensmodel (FDM). Voorbeeldgegevens voor gegevensmodelobjecten in de FDM genereren en bewerken.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1149'
 ht-degree: 0%
 
 ---

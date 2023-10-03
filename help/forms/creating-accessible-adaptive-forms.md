@@ -1,17 +1,15 @@
 ---
-title: Toegankelijke adaptieve Forms maken
-seo-title: Creating accessible Adaptive Forms
-description: AEM Forms biedt u gereedschappen en maakt toegankelijke adaptieve Forms en helpt te voldoen aan toegankelijkheidsstandaarden.
-seo-description: AEM Forms provides you tools and to create accessible Adaptive Forms and helps comply with accessibility standards.
+title: Hoe maak je toegankelijke Adaptive Forms?
+description: AEM Forms biedt u gereedschappen om toegankelijke Adaptieve Forms te maken en voldoet aan toegankelijkheidsnormen.
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '2004'
 ht-degree: 0%
 
 ---
@@ -32,7 +30,7 @@ Tijdens het ontwerpen van een adaptief formulier moet de auteur de volgende punt
 
 ## Vereiste
 
-U hebt een toegankelijkheidsgereedschap nodig, zoals **Toegankelijke Inspecteur van de Naam en van de Beschrijving (ANDI)** en **Het thema Adaptief formulier is ontwikkeld om toegankelijkheidsproblemen op te lossen** om een toegankelijk adaptief formulier te maken.
+U hebt een toegankelijkheidsgereedschap nodig, zoals **Toegankelijke Inspecteur van de Naam en van de Beschrijving (ANDI)** en **Het thema Adaptief formulier is ontwikkeld om toegankelijkheidsproblemen op te lossen** een toegankelijk adaptief formulier maken.
 
 ### Gereedschap voor toegankelijkheidstesten downloaden en installeren
 
@@ -41,7 +39,7 @@ Met het hulpprogramma ANDI (Accessible Name and Description Inspector) kunt u co
 * Hiermee kunt u toegankelijkheidsproblemen &#x200B; op een webpagina detecteren
 * Biedt suggesties om de &#x200B; voor toegankelijkheid te verbeteren
 * Detecteert problemen met toetsenbordtoegankelijkheid en kleurcontrast
-* Geeft duidelijk aan welke inhoud van de schermlezer voldoet aan de normen
+* Hiermee wordt de inhoud van de schermlezer duidelijk geïdentificeerd in overeenstemming met de normen
 
 ANDI werkt met alle grote internetbrowsers. Zie, [Documentatie van ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) voor gedetailleerde instructies om het hulpmiddel te vormen en te gebruiken.
 
@@ -55,14 +53,14 @@ Het Ultramarijn-Toegankelijke thema is een verwijzingsthema. Hiermee kunt u demo
 
 ## Een adaptief formulier toegankelijk maken
 
-U moet zich op vier belangrijke aspecten concentreren: toetsenbordnavigatie, kleurcontrast, betekenisvolle alternatieve tekst voor afbeeldingen en geschikte labels voor formulierbesturingselementen om een adaptief formulier toegankelijk te maken. Voer de volgende stappen uit om uw bestaande Adaptive Forms toegankelijk te maken:
+U moet de nadruk leggen op vier belangrijke aspecten: toetsenbordnavigatie, kleurcontrast, betekenisvolle alternatieve tekst voor afbeeldingen en geschikte labels voor formulierbesturingselementen om een adaptief formulier toegankelijk te maken. Voer de volgende stappen uit om uw bestaande Adaptive Forms toegankelijk te maken:
 
-### 1. Een toegankelijk thema toepassen en aanvullende oplossingen uitvoeren
+### 1. Pas een toegankelijk thema toe en voer aanvullende oplossingen uit
 
 Pas het Ultramarijn-Toegankelijke thema op uw bestaande AanpassingsVorm toe. Het thema toepassen:
 
 1. Open het adaptieve formulier voor bewerking.
-1. Selecteer een component en tik op het bovenliggende pictogram. Tik in het contextmenu op **[!UICONTROL Adaptive Form Container]** en tik vervolgens op het configuratiepictogram.
+1. Selecteer een component en tik op het bovenliggende pictogram. Tik in het contextmenu **[!UICONTROL Adaptive Form Container]** en tik dan het configpictogram.
 1. Selecteer het Ultramarijn-Toegankelijke thema in eigenschappen browser en tik **[!UICONTROL Save]** pictogram.
 1. Vernieuw het browservenster. Het thema wordt toegepast op het adaptieve formulier.
 
@@ -126,7 +124,7 @@ Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 >* Keuzerondje en selectievakje kunnen slechts twee toegankelijkheidsopties hebben, namelijk Aangepaste tekst en Titel.
 >* Voor op XFA gebaseerde Adaptieve Forms wordt de toegankelijkheidsoptie overgenomen van de toegankelijkheidsopties die zijn ingesteld in de XDP. Knopinfo van XDP wordt toegewezen aan Korte beschrijving en Bijschrift wordt toegewezen aan Titel. De andere opties werken zoals is.
 
-### 3. Verstrek tekstequivalenten voor beelden {#provide-text-equivalents-for-images}
+### 3. Verstrek tekstequivalenten voor afbeeldingen {#provide-text-equivalents-for-images}
 
 Afbeeldingen kunnen sommige gebruikers helpen het begrip te verbeteren. Voor gebruikers die schermlezers gebruiken, verminderen afbeeldingen echter de toegankelijkheid van het formulier. Als u ervoor kiest om afbeeldingen te gebruiken, geef dan tekstbeschrijvingen op voor alle afbeeldingen.
 

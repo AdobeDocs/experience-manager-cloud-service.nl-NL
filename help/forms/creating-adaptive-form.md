@@ -1,13 +1,13 @@
 ---
-title: Adaptieve Forms maken
-description: Leer hoe u een adaptief formulier maakt met [!DNL Experience Manager Forms]. Adaptieve Forms zijn responsieve HTML5-formulieren die het verzamelen en verwerken van informatie stroomlijnen. Dig dieper in op het maken van een adaptief formulier op basis van een formuliergegevensmodel en een XML- of JSON-schema.
+title: Hoe maak je Adaptive Forms?
+description: Leer een adaptief formulier te maken om het verzamelen en verwerken van informatie te stroomlijnen. Leer ook Adaptief formulier maken op basis van een formuliergegevensmodel.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1513'
 ht-degree: 0%
 
 ---

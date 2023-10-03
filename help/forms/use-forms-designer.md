@@ -1,10 +1,10 @@
 ---
-title: AEM Forms Designer gebruiken
-description: Gebruiken [!DNL Adobe Experience Manager (AEM) Forms] Designer om Document met recordsjablonen te maken.
+title: Hoe maakt u met Forms Designer Document of Record (DoR)-sjablonen en formulierfragmenten?
+description: Gebruiken [!DNL AEM Forms] ontwerper maakt Document met recordsjablonen en formulierfragmenten.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---

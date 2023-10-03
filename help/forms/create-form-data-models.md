@@ -1,13 +1,13 @@
 ---
 title: Hoe maakt u een formuliergegevensmodel?
-description: Experience Manager Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen. Leer hoe te om modellen van vormgegevens met of zonder gevormde gegevensbronnen tot stand te brengen.
+description: Leer om een model van vormgegevens (FDM) tot stand te brengen, en gegevens te verzenden of terug te winnen naar een gegevensbron gebruikend een Aangepast Vorm of een Werkschema van de AEM.
 feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1478'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ![Gegevensintegratie](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen. Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling; u kunt echter wel een formuliergegevensmodel maken met of zonder gegevensbron. Er zijn twee benaderingen om van gegevensmodel afhankelijk van tot stand te brengen of u gegevensbronnen hebt gevormd:
+[!DNL Experience Manager Forms] gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen. Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling. U kunt echter wel een formuliergegevensmodel maken met of zonder gegevensbron. Er zijn twee benaderingen om van gegevensmodel afhankelijk van tot stand te brengen of u gegevensbronnen hebt gevormd:
 
 * **Vooraf geconfigureerde gegevensbronnen gebruiken**: Als u gegevensbronnen hebt geconfigureerd zoals beschreven in [Gegevensbronnen configureren](configure-data-sources.md)kunt u deze selecteren tijdens het maken van een formuliergegevensmodel. Hiermee worden alle gegevensmodelobjecten, eigenschappen en services van de geselecteerde gegevensbronnen beschikbaar gemaakt voor gebruik in het formuliergegevensmodel.
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->U moet lid zijn van beide **fdm-auteur** en **formuliergebruiker** groepen die u wilt maken en werken met het formuliergegevensmodel. Neem contact op met uw [!DNL Experience Manager] beheerder om lid te worden van de groepen.
+>U moet lid zijn van beide **fdm-auteur** en **formuliergebruiker** groepen die in staat zijn om een formuliergegevensmodel te maken en ermee te werken. Neem contact op met uw [!DNL Experience Manager] beheerder om lid te worden van de groepen.
 
 ## Formuliergegevensmodel maken {#data-sources}
 
@@ -42,7 +42,7 @@ Zorg ervoor dat u de gegevensbronnen hebt geconfigureerd die u wilt gebruiken in
 
    * Geef een naam op voor het gegevensmodel van het formulier.
    * (**Optioneel**) Geef een titel, beschrijving en codes op voor het formuliergegevensmodel.
-   * (**Optioneel en alleen van toepassing als gegevensbronnen zijn geconfigureerd**) Tik op het pictogram naast het pictogram **[!UICONTROL Data Source Configuration]** en selecteer het configuratieknooppunt waar de wolkendiensten voor de gegevensbronnen u wilt gebruiken verblijven. Het beperkt de lijst van gegevensbronnen beschikbaar voor selectie op de volgende pagina tot degenen beschikbaar in de geselecteerde configuratieknooppunt. Alle [!DNL Experience Manager] gegevensbronnen van gebruikersprofielen worden standaard weergegeven. Als u geen configuratieknooppunt selecteert, worden de gegevensbronnen van alle configuratieknooppunten vermeld.
+   * (**Optioneel en alleen van toepassing als gegevensbronnen zijn geconfigureerd**) Tik op het pictogram naast het pictogram **[!UICONTROL Data Source Configuration]** en selecteer het configuratieknooppunt waar de wolkendiensten voor de gegevensbronnen u wilt gebruiken verblijven. Het beperkt de lijst van gegevensbronnen beschikbaar voor selectie op de volgende pagina tot degenen beschikbaar in de geselecteerde configuratieknoop. Alle [!DNL Experience Manager] gegevensbronnen van gebruikersprofielen worden standaard weergegeven. Als u geen configuratieknooppunt selecteert, worden de gegevensbronnen van alle configuratieknooppunten vermeld.
 
 1. Tik op **[!UICONTROL Next]**.
 
@@ -65,7 +65,7 @@ Zorg ervoor dat u de gegevensbronnen hebt geconfigureerd die u wilt gebruiken in
 
    F. **[!UICONTROL Add Selected]** Hiermee voegt u geselecteerde gegevensmodelobjecten en -services toe aan het formuliergegevensmodel.
 
-Voor meer informatie over de redacteur van het Model van de Gegevens van de Vorm en hoe u met het kunt werken om het model van vormgegevens uit te geven en te vormen, zie [Werken met formuliergegevensmodel](work-with-form-data-model.md).
+Zie voor meer informatie over de formuliergegevensmodeleditor en hoe u ermee kunt werken om het formuliergegevensmodel te bewerken en te configureren [Werken met formuliergegevensmodel](work-with-form-data-model.md).
 
 ## Gegevensbronnen bijwerken {#update}
 
@@ -101,7 +101,7 @@ Om dit te bereiken moet u een configuratie tot stand brengen OSGi die parameter-
 
 Implementatiespecifieke cloudconfiguraties inschakelen in [!UICONTROL Form Data Model]:
 
-1. Cloudconfiguratie maken op een lokale ontwikkelingsinstantie. Voor gedetailleerde stappen raadpleegt u [Hoe te om gegevensbronnen te vormen](/help/forms/configure-data-sources.md).
+1. Cloudconfiguratie maken op een lokale ontwikkelingsinstantie. Zie voor meer informatie [Gegevensbronnen configureren](/help/forms/configure-data-sources.md).
 
 1. Sla uw cloudconfiguratie op het bestandssysteem op.
    1. Pakket maken met filter `/conf/{foldername}/settings/cloudconfigs/fdm`. Hetzelfde gebruiken `{foldername}` zoals in stap 1. en vervangen `fdm` with `azurestorage` voor Azure-opslagconfiguratie.

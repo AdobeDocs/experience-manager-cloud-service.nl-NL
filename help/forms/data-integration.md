@@ -1,9 +1,10 @@
 ---
-title: AEM Forms verbinden met een database
-description: U kunt gegevens ophalen en opslaan in RESTful-webservices, SOAP-webservices en OData-services van [!DNL AEM Forms] as a Cloud Service. De dienst verstrekt een specifiek hulpmiddel om, gegevens terug te winnen te testen te bevestigen en te verzenden naar diverse types van gegevensbronnen.
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+title: Hoe te om een gegevensbestand met te verbinden [!DNL AEM Forms] as a Cloud Service?
+description: Haal gegevens op en sla deze op voor RESTful-webservices, SOAP-webservices en OData-services van een adaptief formulier of een AEM workflow.
+exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---

@@ -1,14 +1,12 @@
 ---
 title: XFA-ondersteuning in adaptieve Forms op basis van XDP
-seo-title: XFA support in XDP-based Adaptive Forms
 description: Hier worden ondersteunde XFA-gebeurtenissen, -eigenschappen, -scripts en -validatie weergegeven in Adaptive Forms.
-seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%
@@ -22,7 +20,7 @@ ht-degree: 0%
 
 Adaptive Forms biedt ondersteuning voor verschillende XFA-gebeurtenissen, -eigenschappen, -scripts en -validaties die in een XDP-bestand zijn gedefinieerd, zoals:
 
-* Uitvoering van scripts die zijn gedefinieerd voor gebeurtenissen in het XDP-bestand.
+* Uitvoering van scripts gedefinieerd voor gebeurtenissen in het XDP-bestand.
 * Standaardwaarden en gedragseigenschappen vastleggen voor velden in het XDP-bestand.
 * Uitvoering van validatiescripts die zijn gedefinieerd in het XDP-bestand.
 
@@ -39,7 +37,7 @@ Wanneer een adaptief formulier wordt gemaakt met een XDP-bestand, kunt u een XFA
 <table>
  <tbody>
   <tr>
-   <td><p><strong>XFA-veld of -container</strong></p> </td>
+   <td><p><strong>XFA veld of container</strong></p> </td>
    <td><p><strong>Overeenkomende adaptieve formuliercomponent</strong></p> </td>
   </tr>
   <tr>
@@ -109,7 +107,7 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in de XD
  <tbody>
   <tr>
    <td><p><strong>Eigenschappen van XFA-componenten</strong></p> </td>
-   <td><p><strong>Overeenkomende werking in Adaptive Forms</strong></p> </td>
+   <td><p><strong>Corresponsief gedrag in Adaptive Forms</strong></p> </td>
   </tr>
   <tr>
    <td><p>somExpression </p> </td>
@@ -136,7 +134,7 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in de XD
    <td><p>Toegewezen aan de aangepaste toegankelijkheidstekst in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>Toegankelijkheid: toolTip </p> </td>
+   <td><p>Toegankelijkheid: knopinfo </p> </td>
    <td><p>Toegewezen aan de korte beschrijvingsbezit in AanpassingsVorm.</p> </td>
   </tr>
   <tr>
@@ -186,7 +184,7 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in het X
  <tbody>
   <tr>
    <td><p><strong>XFA-scriptgebeurtenissen</strong></p> </td>
-   <td><p><strong>Overeenkomende werking in Adaptive Forms</strong></p> </td>
+   <td><p><strong>Corresponsief gedrag in Adaptive Forms</strong></p> </td>
   </tr>
   <tr>
    <td><p>initialiseren </p> </td>

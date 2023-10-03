@@ -1,12 +1,10 @@
 ---
 title: Tabellen in adaptieve formulieren
-seo-title: Tables in adaptive forms
-description: Met de component Tabel in AEM Forms kunt u tabellen maken in adaptieve formulieren die reageren op mobiele lay-outs en kunt u ook XDP-tabelcomponenten gebruiken.
-seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+description: Gebruik de tabelcomponent om tabellen toe te voegen aan een adaptief formulier. Samen met het helpen met de ontvankelijke lay-out, staat de lijstcomponent het toevoegen van XDP lijstelementen toe.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 0%

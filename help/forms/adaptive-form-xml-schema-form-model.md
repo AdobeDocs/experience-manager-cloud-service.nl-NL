@@ -1,13 +1,13 @@
 ---
 title: XML-schema ontwerpen voor een adaptief formulier
-description: Leer hoe u het XML-schema als formuliermodel in een adaptief formulier gebruikt. Dig dieper in met een voorbeeld van een XML-schema, voeg speciale eigenschappen toe aan velden die gebruikmaken van het XML-schema en beperkt acceptabele waarden voor een component Adaptief formulier.
+description: Leer om een schema van XML voor een Adaptief Vorm tot stand te brengen en een Adaptief Vorm tot stand te brengen dat op het schema wordt gebaseerd om schemaklachtengegevens te produceren.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Vereisten {#prerequisites}
 
-Wanneer u een adaptief formulier maakt met een XML-schema als formuliermodel, hebt u basiskennis van XML-schema&#39;s nodig. Het wordt ook aanbevolen de volgende inhoud vóór dit artikel te lezen.
+Wanneer u een adaptief formulier maakt met een XML-schema als formuliermodel, hebt u basiskennis van XML-schema&#39;s nodig. Bovendien wordt aangeraden de volgende inhoud vóór dit artikel te lezen.
 
 * [Een adaptief formulier maken](creating-adaptive-form.md)
 * [XML-schema](https://www.w3.org/TR/xmlschema-2/)
@@ -122,7 +122,7 @@ Hier is een voorbeeld van een XML-schema.
 
 >[!NOTE]
 >
->Zorg ervoor dat uw XML-schema slechts één basiselement heeft. Een XML-schema met meer dan één hoofdelement wordt niet ondersteund.
+>Zorg ervoor dat uw XML-schema slechts één hoofdelement heeft. Een XML-schema met meer dan één hoofdelement wordt niet ondersteund.
 
 ## Speciale eigenschappen aan velden toevoegen met XML-schema {#adding-special-properties-to-fields-using-xml-schema}
 
@@ -132,7 +132,7 @@ U kunt de volgende kenmerken toevoegen aan de elementen van het XML-schema om sp
  <tbody>
   <tr>
    <th><strong>Schema, eigenschap</strong></th>
-   <th><strong>In adaptieve vorm gebruiken</strong></th>
+   <th><strong>Gebruiken in adaptieve vorm</strong></th>
    <th><strong>Ondersteund in </strong></th>
   </tr>
   <tr>

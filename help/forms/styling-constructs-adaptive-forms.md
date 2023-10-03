@@ -1,16 +1,14 @@
 ---
-title: Stijlconstructies voor adaptieve Forms
-seo-title: Styling constructs for Adaptive Forms
-description: Gebruik het LESS-framework om de weergave van Adaptive Forms aan te passen.
-seo-description: Use LESS framework to customize appearance of Adaptive Forms.
+title: Hoe kunt u constructies voor Adaptive Forms opmaken?
+description: Gebruik het LESS-framework voor Adaptive Forms om de weergave van Adaptive Forms aan te passen.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2315'
 ht-degree: 0%
 
 ---
@@ -128,7 +126,7 @@ Velden zijn labels, widgets, Help-beschrijving (zowel lange als korte beschrijvi
   </tr>
   <tr>
    <td><p><code>field-error-font-color</code></p> </td>
-   <td><p>Lettertypekleur van het foutbericht van het veld</p> </td>
+   <td><p>Fontkleur van de foutmelding van het veld</p> </td>
   </tr>
   <tr>
    <td><p><code>field-error-font-size</code></p> </td>
@@ -278,7 +276,7 @@ Afhankelijk van het type, bevatten widgets ook klassen. Vaak bevatten widgets de
   </tr>
   <tr>
    <td><p><code>listboxwidget-height</code></p> </td>
-   <td><p>Maximumhoogte voor een meerkeuzevrijheid</p> </td>
+   <td><p>Maximumhoogte voor een meerkeuzevervolgkeuzelijst</p> </td>
   </tr>
  </tbody>
 </table>
@@ -344,7 +342,7 @@ De Voorwaarden (TnC) `` ``) kunt u voorwaarden en bepalingen opgeven. U kunt de 
   </tr>
   <tr>
    <td><code>tnc-visited</code></td>
-   <td>Lettertypekleur van bezochte tnc-koppeling.</td>
+   <td>Tekenkleur van bezochte tnc-koppeling.</td>
   </tr>
  </tbody>
 </table>
@@ -416,7 +414,7 @@ HTML code voor knop:
   </tr>
   <tr>
    <td><p><code>button-font-color</code></p> </td>
-   <td><p>Lettertypekleur van de knop</p> </td>
+   <td><p>Tekenkleur van knop</p> </td>
   </tr>
   <tr>
    <td><p><code>button-border-color</code></p> </td>
@@ -534,7 +532,7 @@ U kunt het kleurthema voor koptekst- en tekstrijen in een tabel wijzigen met de 
 
 ## Bestandsbijlage {#file-attachment}
 
-Met de widget Bestandsbijlage van Adaptive Forms kunt u bestanden uploaden. U kunt de widget ook aanpassen met behulp van de variabelen.
+Met de widget Bestandsbijlage van Adaptive Forms kunt u bestanden uploaden. U kunt de widget ook aanpassen met de variabelen.
 
 <table>
  <tbody>
@@ -556,7 +554,7 @@ Met de widget Bestandsbijlage van Adaptive Forms kunt u bestanden uploaden. U ku
   </tr>
   <tr>
    <td><p><code>fileItemColor</code></p> </td>
-   <td><p>Lettertypekleur voor het bestandstitem</p> </td>
+   <td><p>Fontkleur voor het bestandstitem</p> </td>
   </tr>
   <tr>
    <td><p><code>filePreviewIconColor</code></p> </td>
@@ -564,7 +562,7 @@ Met de widget Bestandsbijlage van Adaptive Forms kunt u bestanden uploaden. U ku
   </tr>
   <tr>
    <td><p><code>fileItemCommentHeight</code></p> </td>
-   <td><p>Hoogte van de opmerking voor het bestandstitem</p> </td>
+   <td><p>Hoogte van de opmerking voor het bestandspunt</p> </td>
   </tr>
  </tbody>
 </table>
@@ -750,7 +748,7 @@ De klasse guideNavIcon biedt een standaardpictogram voor tabnavigators (zowel li
   </tr>
   <tr>
    <td><p><code>tabs-hover-font-color</code></p> </td>
-   <td><p>Fontkleur voor tab bij aanwijzen</p> </td>
+   <td><p>Fontkleur voor de tab bij aanwijzen</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-active-bg-color</code></p> </td>
@@ -822,7 +820,7 @@ De klasse guideNavIcon biedt een standaardpictogram voor tabnavigators (zowel li
   </tr>
   <tr>
    <td><p><code>wizard-tabs-font-color</code></p> </td>
-   <td><p>Fontkleur voor de wizard</p> </td>
+   <td><p>Lettertypekleur voor de wizard</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-active-bg-color</code></p> </td>
@@ -887,7 +885,7 @@ De klasse guideNavIcon biedt een standaardpictogram voor tabnavigators (zowel li
  </tbody>
 </table>
 
-## Opmaak voor deelvensters {#panel-styling}
+## Opmaak deelvenster {#panel-styling}
 
 Een deelvenster bevat een optionele werkbalk en de bijbehorende inhoud.
 
@@ -936,7 +934,7 @@ Een deelvenster bevat een optionele werkbalk en de bijbehorende inhoud.
   </tr>
   <tr>
    <td><p><code>panel-help-border-indicator-color</code></p> </td>
-   <td><p>Indicator randkleur voor de hulp van het paneel</p> </td>
+   <td><p>Randkleur voor het deelvenster aangeven</p> </td>
   </tr>
  </tbody>
 </table>
@@ -1075,7 +1073,7 @@ Deze variabelen in de volgende tabel zijn van invloed op de vaste indeling van d
 
 ## Themaspecifieke variabele {#theme-specific-variable}
 
-De **Eenvoudige inschrijving** thema op /etc/clientlibs/fd/af/guidetheme/simpleEnrollment en de categorie `guide.theme.simpleEnrollment` ook enkele variabelen invoeren. Als u een thema wilt creëren dat eenvoudige inschrijving verbetert, kunt u de volgende &quot;extra variabelen gebruiken:
+De **Eenvoudige inschrijving** thema op /etc/clientlibs/fd/af/guidetheme/simpleEnrollment en de categorie `guide.theme.simpleEnrollment` ook een aantal variabelen invoeren. Als u een thema wilt creëren dat eenvoudige inschrijving verbetert, kunt u de volgende &quot;extra variabelen gebruiken:
 
 <table>
  <tbody>

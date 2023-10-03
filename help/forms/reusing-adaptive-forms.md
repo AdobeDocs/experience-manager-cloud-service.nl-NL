@@ -1,19 +1,18 @@
 ---
-title: Eigenschappen van metagegevens van een adaptief formulier opnieuw gebruiken
-seo-title: Reuse metadata properties of an Adaptive Form
-description: U kunt een bestaand adaptief formulier opnieuw gebruiken om een nieuwe Adaptieve Forms te maken.
+title: Hoe te om meta-gegevenseigenschappen van een Aangepast Vorm opnieuw te gebruiken?
+description: Ontdek om een bestaand adaptief formulier efficiënt te hergebruiken om een nieuw formulier te maken.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 # Eigenschappen van metagegevens van een adaptief formulier opnieuw gebruiken {#reusing-adaptive-forms}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 
 | Versie | Artikelkoppeling |
@@ -47,7 +46,7 @@ Kopieer een adaptief formulier op een van de volgende manieren:
    >
    >Alle geselecteerde elementen moeten Adaptief Forms zijn, omdat de functie Kopiëren en plakken alleen wordt ondersteund voor Adaptief Forms. Alle geselecteerde elementen moeten in dezelfde map aanwezig zijn.
 
-   Nadat u de elementen hebt geselecteerd, klikt u op de kopie ![aem6forms_copy](assets/aem6forms_copy.png) op de werkbalk om het geselecteerde adaptieve formulier te kopiëren.
+   Klik op de kopie nadat u de elementen hebt geselecteerd ![aem6forms_copy](assets/aem6forms_copy.png) op de werkbalk om het geselecteerde adaptieve formulier te kopiëren.
 
 ## Een adaptief formulier plakken {#paste-an-adaptive-form}
 
@@ -55,7 +54,7 @@ Wanneer u op de kopieeractie klikt, wordt de selectiemodus automatisch verlaten 
 
 Als u plakt in dezelfde map of een ander bestand met dezelfde knooppuntnaam (waarmee het bestand is opgeslagen in de CRX-opslagruimte) bestaat in deze doelmap, wordt 1 toegevoegd aan het achtervoegsel (myaf wordt bijvoorbeeld myaf1 en als myaf1 op dezelfde locatie bestaat, wordt myaf myaf2. Alle andere eigenschappen blijven hetzelfde als het oorspronkelijke adaptieve formulier.
 
-Nadat u op de plakbewerking hebt geklikt ![Plakken](assets/Smock_Paste_18_N.svg) pictogram, wordt het opnieuw verborgen. In één keer kunt u slechts één keer plakken. Als u opnieuw een kopie van hetzelfde element wilt maken, kopieert u het opnieuw.
+Na het klikken op de plakbewerking ![Plakken](assets/Smock_Paste_18_N.svg) pictogram, wordt het opnieuw verborgen. U kunt tegelijkertijd slechts één keer plakken. Als u opnieuw een kopie van hetzelfde element wilt maken, kopieert u het opnieuw.
 
 ## Inhoud van nieuw adaptief formulier wijzigen {#change-contents-of-new-adaptive-form}
 
@@ -67,7 +66,7 @@ De inhoud van een geplakte adaptieve Forms kan op de volgende manieren worden ge
 
 1. **XFA/XSD wijzigen voor adaptieve Forms op basis van XFA/XSD:**
 
-   U kunt de XFA/XSD wijzigen die wordt gebruikt in Adaptive Forms. Als u wilt weten hoe deze Adaptive Forms kan worden gewijzigd, gaat u naar [Metagegevens van formulieren beheren](manage-form-metadata.md)
+   U kunt de XFA/XSD wijzigen die wordt gebruikt in Adaptive Forms. Als u wilt weten hoe deze Adaptive Forms kan worden gewijzigd, raadpleegt u [Metagegevens van formulieren beheren](manage-form-metadata.md)
 
 1. **Opnieuw publiceren:**
 

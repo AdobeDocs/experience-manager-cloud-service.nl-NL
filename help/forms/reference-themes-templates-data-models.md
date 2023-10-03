@@ -1,19 +1,19 @@
 ---
-title: Referentiethema's, sjablonen en modellen formuliergegevens
+title: Referentiethema's, sjablonen en modellen formuliergegevens in AEM Forms
 seo-title: Reference Themes, Templates, and Form Data models
-description: AEM Forms biedt adaptieve formulierthema's, sjablonen en formuliergegevensmodellen die u kunt ophalen via softwaredistributie
+description: AEM Forms biedt voorbeelden van adaptieve formulierthema's, sjablonen en formuliergegevensmodellen om u te helpen snel formulieren te maken.
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
 
 # Referentiethema&#39;s, sjablonen en modellen formuliergegevens {#reference-themes-templates-and-data-models}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 AEM Forms as a Cloud Service biedt meerdere referentiethema&#39;s, sjablonen en formuliergegevensmodellen waarmee u snel kunt beginnen met het maken van Adaptief Forms. U kunt de [referentie-inhoudspakket van de portal voor softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) en gebruiken de [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) om de [inhoudsopgave-pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in uw productie-, ontwikkelings- of lokale ontwikkelomgeving om deze referentie-elementen naar uw omgeving te brengen.
 
@@ -92,7 +92,7 @@ In het thema Gezondheid worden diepe groene tinten gebruikt om componenten zoals
 
 ## FSI (Financiële diensten en verzekeringen)
 
-In het FSI-thema wordt de nadruk gelegd op een minimalistische en functionele weergave van uw formulier. Wanneer u het FSI-thema toepast op uw formulier, ziet u dat deelvenstercomponenten geel zijn.
+In het FSI-thema wordt de nadruk gelegd op een minimalistisch en functioneel uiterlijk van uw formulier. Wanneer u het FSI-thema toepast op uw formulier, ziet u dat deelvenstercomponenten geel zijn.
 
 ![FSI-thema](assets/fsi.png)
 
@@ -121,4 +121,4 @@ U kunt de volgende modellen van de Gegevens van het Vorm krijgen door te install
 * Microsoft® Dynamics 365
 * Salesforce
 
-Voor informatie over het gebruik van deze modellen raadpleegt u [Microsoft Dynamics 365 en Salesforce-cloudservices configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Zie voor informatie over het gebruik van deze modellen [Microsoft Dynamics 365 en Salesforce-cloudservices configureren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)

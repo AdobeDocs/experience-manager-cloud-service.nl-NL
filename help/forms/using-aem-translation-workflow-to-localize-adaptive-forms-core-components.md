@@ -1,10 +1,11 @@
 ---
-title: Een adaptief formulier op basis van kerncomponenten vertalen
-description: Gebruik machinevertaling of menselijke vertaling om een adaptief formulier met kerncomponenten te vertalen
+title: Hoe een op kerncomponenten gebaseerde adaptieve vorm te vertalen?
+description: Leer een formuliergegevensmodel te maken in AEM Forms, het model te testen met voorbeeldgegevens en services en verschillende opties voor een model te configureren.
 feature: Adaptive Forms
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---

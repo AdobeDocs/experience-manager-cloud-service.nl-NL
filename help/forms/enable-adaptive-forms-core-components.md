@@ -1,17 +1,16 @@
 ---
-title: Adaptieve Forms Core-componenten inschakelen
-description: Leer hoe u Adaptive Forms Core Components op AEM Forms as a Cloud Service kunt inschakelen met onze stapsgewijze handleiding. In onze zelfstudie wordt u door het proces geleid, zodat u deze krachtige functie eenvoudig kunt inschakelen voor uw AEM Forms-omgeving.
-seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
+title: Adaptieve Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms
+description: Leer hoe u Adaptive Forms Core Components kunt inschakelen op AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1009'
 ht-degree: 0%
 
 ---
-
 
 # Adaptieve Forms Core-componenten inschakelen {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
@@ -356,4 +355,3 @@ Om te controleren of Adaptive Forms Core Components geschikt zijn voor uw omgevi
    ![Zoek het core-forms-components-af-core artefact op all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    Als de afhankelijkheden bestaan, worden Adaptive Forms Core Components ingeschakeld voor uw omgeving.
-

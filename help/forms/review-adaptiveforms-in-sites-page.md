@@ -1,12 +1,12 @@
 ---
-title: Revisies maken en beheren voor een adaptief formulier
-description: Revisie is een mechanisme waarmee revisoren verschillende taken voor aangepaste formulieren kunnen uitvoeren met de stap Taak toewijzen
+title: Hoe kunt u revisies van Adaptive Forms maken en beheren die zijn ingesloten of gemaakt op de pagina Sites?
+description: Revisie is een mechanisme waarmee revisoren verschillende taken voor adaptieve formulieren kunnen uitvoeren met de stap Taak toewijzen.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---

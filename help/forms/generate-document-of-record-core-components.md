@@ -1,10 +1,10 @@
 ---
-title: Opnamedocument genereren voor Adaptive Forms
-description: Verklaart hoe u een malplaatje voor een Document van Verslag (DoR) voor Aangepast Forms kunt produceren.
+title: Hoe te om document van verslag voor Adaptive Forms te produceren?
+description: Leer een sjabloon te genereren voor een Document of Record (DoR) voor Adaptive Forms Core Components.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '3003'
+source-wordcount: '3005'
 ht-degree: 0%
 
 ---

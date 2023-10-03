@@ -1,11 +1,11 @@
 ---
-title: Verschillen tussen AEM 6.5 Forms en AEM Cloud Servicen
-description: Bent u een Experience Manager Forms-gebruiker en wilt u een upgrade uitvoeren naar Adobe Experience Manager Forms as a Cloud Service? Vergelijk AEM 6.5 Forms en AEM Clouden Services en leer de belangrijkste wijzigingen voordat u een upgrade uitvoert of naar Cloud Service migreert.
+title: Wat zijn de verschillen tussen AEM 6,5 Forms en AEM Cloud Servicen?
+description: Vergelijk AEM 6.5 Forms en AEM Clouden Services en leer de belangrijkste wijzigingen voordat u een upgrade uitvoert of naar Cloud Service migreert.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * De service beschikt over een eigen cloudarchitectuur die automatisch schalen op basis van belasting, nuldowntime voor upgrades, veelvuldig en na de implementatie van nieuwe functies en updates, en topologieën die zijn geoptimaliseerd voor maximale veerkracht en efficiëntie.
 
-* De service omvat geen verzendhandelingen waarmee gegevens worden opgeslagen naar instanties van Adobe Experience Manager Cloud Service, waardoor deze superveilig zijn. Gegevens die via formulieren zijn vastgelegd, worden rechtstreeks naar geconfigureerde gegevensopslagruimten verzonden.
+* De service omvat geen verzendacties die gegevens opslaan naar Adobe Experience Manager Cloud Service-instanties, waardoor deze superveilig zijn. Gegevens die via formulieren zijn vastgelegd, worden rechtstreeks naar geconfigureerde gegevensopslagruimten verzonden.
 
 * Een gratis CDN (content delivery network) is ook inbegrepen om u te helpen sneller formulieren te leveren en te genereren.
 
@@ -35,9 +35,9 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * Voordat u uw klantbundels gebruikt met as a Cloud Service Forms, moet u uw aangepaste code opnieuw compileren met de nieuwste versie van adobe-aemfd-docmanager.
 
-* Gebruiken [AEM Forms as a Cloud Service migratiehulpprogramma](/help/forms/migrate-to-forms-as-a-cloud-service.md) om uw Adaptieve Forms, thema&#39;s, sjablonen en cloudconfiguraties voor te bereiden en te migreren vanuit <!-- AEM 6.3 Forms--> AEM 6.4 Forms op OSGi en AEM 6.5 Forms op OSGi aan [!DNL AEM] as a Cloud Service. Gebruiken [Opslagruimte van uw programma maken](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) bestaande adaptieve formuliersjablonen importeren.
+* Gebruiken [AEM Forms as a Cloud Service migratiehulpprogramma](/help/forms/migrate-to-forms-as-a-cloud-service.md) om uw Adaptieve Forms, thema&#39;s, sjablonen en cloudconfiguraties voor te bereiden en te migreren vanuit <!-- AEM 6.3 Forms--> AEM 6.4 Forms op OSGi en AEM 6.5 Forms op OSGi aan [!DNL AEM] as a Cloud Service. Gebruik de [Opslagruimte van uw programma maken](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) bestaande adaptieve formuliersjablonen importeren.
 
-* E-mail steunt slechts HTTP en protocollen van HTTP, door gebrek. [Contact opnemen met het ondersteuningsteam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) om havens voor het verzenden van e-mail toe te laten en SMTP protocol voor uw milieu toe te laten.
+* E-mail steunt slechts HTTP en protocollen van HTTP, door gebrek. [Contact opnemen met het ondersteuningsteam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) om havens toe te laten om e-mail te verzenden en SMTP protocol voor uw milieu toe te laten.
 
 ## Lokalisatie
 
@@ -56,7 +56,7 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * **Handelingen verzenden:** De **E-mail** Verzenden bevat opties voor het verzenden van bijlagen en het toevoegen van een e-maildocument (DoR) bij het document Record. U kunt het gebruiken in plaats van **E-mailen als PDF** in AEM 6.5 Forms.
 
-* **Automatede form conversion-service**: De dienst verstrekt meta-model voor de Dienst van de Automatede form conversion niet. U kunt [download het van de documentatie van de Dienst van de Automatede form conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).
+* **Automatede form conversion-service**: De dienst verstrekt geen meta-model voor de Dienst van de Automatede form conversion. U kunt [download het van de documentatie van de Dienst van de Automatede form conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).
 
 * **Adaptieve Forms op basis van XSD:** U kunt XDP-malplaatje gebruiken om een malplaatje voor Document voor Verslag te ontwerpen. De service biedt geen ondersteuning voor adaptieve Forms op basis van XFA
 
@@ -76,27 +76,29 @@ Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken 
 
 * **Document Manipulation APIs (Assembler Service)**:
 
-   * De bewerkingen die afhankelijk zijn van documentservices of -toepassingen zijn niet beschikbaar. Microsoft Word naar PDF, Microsoft Excel naar PDF en HTML naar PDF, PostScript (PS) naar PDF en XDP naar PDF forms worden bijvoorbeeld niet ondersteund. Deze bewerkingen zijn respectievelijk afhankelijk van Microsoft Office, Adobe Acrobat, Adobe Distiller en Forms Document Service.
+   * De bewerkingen die afhankelijk zijn van documentservices of -toepassingen zijn niet beschikbaar. Microsoft® Word naar PDF, Microsoft® Excel naar PDF en HTML naar PDF, PostScript (PS) naar PDF en XDP naar PDF forms worden bijvoorbeeld niet ondersteund. Deze bewerkingen zijn respectievelijk afhankelijk van Microsoft® Office, Adobe Acrobat, Adobe Distiller en Forms Document Service.
 
-   * Converteer documenten die een andere indeling dan PDF hebben naar een PDF-indeling voordat u de documenten gebruikt met API&#39;s voor documentanimatie voor communicatie. Als uw documenten bijvoorbeeld de indeling Microsoft Office, HTML, PostScript (PS) of XDP hebben, zet u deze documenten om in de indeling PDF voordat u de documenten met PDF-documenten gebruikt. U kunt de [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) voor dergelijke omzettingen.
+   * Converteer documenten die een andere indeling dan PDF hebben naar een PDF-indeling voordat u de documenten gebruikt met API&#39;s voor documentanimatie voor communicatie. Als uw documenten bijvoorbeeld de indeling Microsoft® Office, HTML, PostScript (PS) of XDP hebben, zet u deze documenten om in de indeling PDF voordat u de documenten met PDF-documenten gebruikt. U kunt de [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) voor dergelijke omzettingen.
 
-* U kunt een AEM 6.5 Forms-omgeving gebruiken voor Digital Signature, Encryption, Reader Extension, Send to Printer, Convert PDF en Barcoded Forms-service.
+   * U kunt een AEM 6.5 Forms-omgeving gebruiken voor Digital Signature, Encryption, Reader Extension, Send to Printer, Convert PDF en Barcoded Forms-service.
 
 
 ## Gegevensintegratie (formuliergegevensmodel)
 
-* De service biedt ook ondersteuning voor Microsoft Dynamics, SalesForce, SOAP-webservices en services die OData ondersteunen.
+* De service biedt ook ondersteuning voor JDBC-connector, Microsoft® Dynamics, SalesForce, SOAP-webservices en services die OData ondersteunen.
 
 * U kunt ook verbinding maken AEM gebruikersprofiel om gebruikersgegevens op te halen en bij te werken.
 
 * Forms-gegevensmodel ondersteunt alleen HTTP- en HTTPS-eindpunten voor het verzenden van gegevens. De service biedt geen ondersteuning voor wederzijdse SSL voor REST-connector en op x509-certificaten gebaseerde verificatie voor SOAP-gegevensbronnen.
 
-* Met Forms as a Cloud Service kunt u Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive en services die algemene CRUD-bewerkingen (Maken, Lezen, Bijwerken en Verwijderen) ondersteunen, gebruiken als gegevensopslag. Zowel de specificatie Open API Specification 2.0 als de specificatie Open API 3.0 worden ondersteund.
+* Met Forms as a Cloud Service kunt u Microsoft® Azure Blob, Microsoft® Sharepoint, Microsoft® OneDrive en services die algemene CRUD-bewerkingen (Maken, Lezen, Bijwerken en Verwijderen) ondersteunen, gebruiken als gegevensopslag. Zowel de Open API-specificatie 2.0 als de Open API 3.0-specificatie worden ondersteund.
 
 
 ## Elektronisch ondertekenen
 
-* De service ondersteunt ook Adobe Sign-rollen. U kunt de rollen in de Adaptieve redacteur van Forms voor bedrijfsgebruikers vormen om ondertekenende werkschema&#39;s gemakkelijk te vormen.
+* De service biedt een OOTB-integratie met Adobe Sign en ondersteunt DocuSign voor e-handtekeningen.
+
+* De service ondersteunt ook Adobe Sign-rollen. U kunt de rollen in de Adaptieve redacteur van Forms voor bedrijfsgebruikers vormen om het ondertekenen werkschema&#39;s gemakkelijk te vormen.
 
 
 ## HTML5 Forms
@@ -105,7 +107,7 @@ Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken 
 
    * formulieren op basis van XDP weergeven als HTML5 Forms. De service biedt geen ondersteuning voor HTML5 Forms.
 
-   * gegevens offline vastleggen en synchroniseren de volgende keer dat u online terugkeert met [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) app.
+   * gegevens offline vastleggen en synchroniseren de volgende keer dat u online terugkeert met de [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) app.
 
 ## Interactieve communicatie
 

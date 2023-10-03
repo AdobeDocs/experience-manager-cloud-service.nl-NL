@@ -1,10 +1,10 @@
 ---
-title: Bekende problemen en best practices
-description: Communicatie beste praktijken, bekende kwesties, en beperkingen
+title: Bekende problemen en beste praktijken in AEM Forms
+description: Bekende problemen en best practices voor AEM Forms Communication API's in overweging nemen.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Zorg altijd dat u het juiste XDC-bestand voor de printer gebruikt. Vermijd bijvo
 
 ### Scripts voor alleen XFA-formulieren (XDP/PDF) {#scripts}
 
-Een formulierontwerp dat wordt gebruikt met de communicatie-API&#39;s kan scripts bevatten die op de server worden uitgevoerd. Zorg ervoor dat een formulierontwerp geen scripts bevat die op de client worden uitgevoerd. Voor informatie over het maken van scripts voor formulierontwerp raadpleegt u [Help bij Designer](use-forms-designer.md).
+Een formulierontwerp dat wordt gebruikt met de communicatie-API&#39;s kan scripts bevatten die op de server worden uitgevoerd. Zorg ervoor dat een formulierontwerp geen scripts bevat die op de client worden uitgevoerd. Zie voor informatie over het maken van scripts voor formulierontwerpen [Help bij Designer](use-forms-designer.md).
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
@@ -121,7 +121,7 @@ Een apparaatprofiel (XDC-bestand) is een printerbeschrijvingsbestand in XML-inde
 U kunt de meegeleverde XDC-bestanden gebruiken om afdrukdocumenten te genereren of deze naar wens aan te passen.
 <!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
-Deze bestanden zijn referentie-XDC-bestanden die de functies van specifieke printers ondersteunen, zoals residente lettertypen, papierladen en nietmachines. Het doel van deze verwijzing is om u te helpen begrijpen hoe u uw eigen printers kunt instellen met apparaatprofielen. De verwijzing is ook een uitgangspunt voor gelijkaardige printers in de zelfde productlijn.
+Deze bestanden zijn referentie-XDC-bestanden die de functies van specifieke printers ondersteunen, zoals residente lettertypen, papierladen en nietmachines. Het doel van deze naslaggids is om u te helpen begrijpen hoe u uw eigen printers kunt instellen met apparaatprofielen. De verwijzing is ook een uitgangspunt voor gelijkaardige printers in de zelfde productlijn.
 
 ### Werken met het XCI-configuratiebestand {#working-with-xci-files}
 
@@ -129,14 +129,14 @@ Communicatie APIs gebruikt een XCI configuratiedossier om taken uit te voeren, z
 
 U kunt een gewijzigd XCI-bestand doorgeven terwijl u een communicatie-API gebruikt. Als u dit doet, maakt u een kopie van het standaardbestand, wijzigt u alleen de waarden die moeten worden gewijzigd om aan uw bedrijfsvereisten te voldoen en gebruikt u het aangepaste XCI-bestand.
 
-Communicatie-API&#39;s beginnen met het standaard-XCI-bestand (of het gewijzigde bestand). Vervolgens worden waarden toegepast die zijn opgegeven met de communicatie-API&#39;s. Deze waarden overschrijven XCI-instellingen.
+Communicatie API&#39;s beginnen met het standaard XCI-bestand (of het gewijzigde bestand). Vervolgens worden waarden toegepast die zijn opgegeven met de communicatie-API&#39;s. Deze waarden overschrijven XCI-instellingen.
 
 In de volgende tabel worden XCI-opties opgegeven.
 
 | XCI, optie | Beschrijving |
 | ------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| config/present/pdf/creator | Hiermee wordt de maker van het document geïdentificeerd met het item Maker in het documentgegevenswoordenboek. Zie de handleiding PDF Reference voor informatie over dit woordenboek. |
-| config/present/pdf/producer | Hiermee wordt de documentproducent geïdentificeerd met behulp van het Producent-item in het documentinformatiewoordenboek. Zie de handleiding PDF Reference voor informatie over dit woordenboek. |
+| config/present/pdf/creator | Hiermee wordt de maker van het document geïdentificeerd met het item Maker in het documentgegevenswoordenboek. Zie de handleiding PDF Reference voor meer informatie over dit woordenboek. |
+| config/present/pdf/producer | Hiermee wordt de documentproducent geïdentificeerd met behulp van het Producent-item in het documentinformatiewoordenboek. Zie de handleiding PDF Reference voor meer informatie over dit woordenboek. |
 | config/present/layout | Hiermee bepaalt u of de uitvoer één deelvenster is of gepagineerd. |
 | config/present/pdf/compression/level | Hiermee geeft u de mate van compressie op die moet worden gebruikt bij het genereren van een PDF-document. |
 | config/present/pdf/scriptModel | Bepaalt of XFA-specifieke informatie wordt opgenomen in het PDF-uitvoerdocument. |
@@ -151,7 +151,7 @@ In de volgende tabel worden XCI-opties opgegeven.
 | config/present/output/to | Controls the location that log data or output data is written to. |
 | config/present/script/currentPage | Hiermee geeft u de eerste pagina op wanneer het document wordt geopend. |
 | config/present/script/exclude | Meldt aan de server/Communicatie APIs van AEM Forms welke gebeurtenissen om te negeren. |
-| config/present/pdf/linearized | Bepaalt of het PDF-uitvoerdocument lineair is. |
+| config/present/pdf/linearized | Controls whether the output PDF document is linearized. |
 | config/present/script/runScripts | Hiermee bepaalt u welke set scripts AEM Forms uitvoert. |
 | config/present/pdf/tagged | Controls the include of tags into the output PDF document. Codes, in de context van PDF, zijn aanvullende informatie die in een document is opgenomen om de logische structuur van het document zichtbaar te maken. Tags zijn handig voor toegankelijkheidshulpmiddelen en voor het opnieuw opmaken. Een paginanummer kan bijvoorbeeld als een artefact worden gecodeerd, zodat een schermlezer het niet in het midden van de tekst activeert. Hoewel codes een document nuttiger maken, verhogen zij ook de grootte van het document en de verwerkingstijd om het tot stand te brengen. |
 | config/present/pdf/version | Hiermee geeft u de versie op van het PDF-document dat moet worden gegenereerd. |

@@ -1,13 +1,14 @@
 ---
-title: Een bevestiging van het verzenden van een formulier verzenden via e-mail
-description: Met AEM Forms kunt u de handeling voor het verzenden van e-mail configureren die een bevestiging naar een gebruiker stuurt bij het verzenden van het formulier.
+title: Hoe kan ik een ontvangstbevestiging voor formulierverzending via e-mail verzenden in AEM Forms?
+description: Met AEM Forms kunt u de handeling Verzenden via e-mail configureren die een bevestiging naar een gebruiker stuurt bij het verzenden van het formulier.
+uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---

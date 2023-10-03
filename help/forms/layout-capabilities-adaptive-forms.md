@@ -1,18 +1,17 @@
 ---
-title: Lay-outmogelijkheden van adaptieve Forms
-seo-title: Layout capabilities of Adaptive Forms
+title: Wat zijn de lay-outmogelijkheden van Adaptive Forms?
 description: De lay-out en vormgeving van Adaptief Forms op verschillende apparaten worden bepaald door de lay-outinstellingen. Begrijp de verschillende lay-outs en hoe te om hen toe te passen.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
 # Lay-outmogelijkheden van adaptieve Forms {#layout-capabilities-of-adaptive-forms}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 
 | Versie | Artikelkoppeling |
@@ -20,7 +19,7 @@ ht-degree: 0%
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-[!DNL Adobe Experience Manager] Hiermee kunt u gebruiksvriendelijke adaptieve Forms maken die eindgebruikers dynamische ervaringen biedt. De formulierindeling bepaalt hoe items of componenten in een adaptieve vorm worden weergegeven.
+[!DNL Adobe Experience Manager] Hiermee kunt u gebruiksvriendelijke adaptieve Forms maken die eindgebruikers een dynamische ervaring biedt. De formulierindeling bepaalt hoe items of componenten in een adaptieve vorm worden weergegeven.
 
 <!-- ## Prerequisite knowledge {#prerequisite-knowledge}
 
@@ -52,7 +51,7 @@ De schermindelingen van het deelvenster zijn beschikbaar op `/libs/fd/af/layouts
 
 Met deze deelvensterlay-out maakt u een responsieve lay-out die zich aanpast aan de schermgrootte van uw apparaat zonder dat u hiervoor speciale navigatie nodig hebt.
 
-Met deze lay-out kunt u meerdere plaatsen **[!UICONTROL Panel Adaptive Form]** in het deelvenster achter elkaar.
+Met deze layout kunt u meerdere plaatsen **[!UICONTROL Panel Adaptive Form]** in het deelvenster een voor een.
 
 ![Een formulier met een responsieve indeling zoals wordt weergegeven op een klein scherm](assets/responsive-layout.png)
 
@@ -100,7 +99,7 @@ De mobiele lay-outs zijn beschikbaar op `/libs/fd/af/layouts/mobile/` locatie. D
 
 ![Lijst met mobiele lay-outs in Adaptive Forms](assets/mobile-navigation.png)
 
-Selecteer **[!UICONTROL Add navigable items of responsive layout to mobile menu]** Hiermee geeft u de opties voor navigatie weer die beschikbaar zijn voor een deelvenster in de mobiele lay-out. De navigeerbare opties zijn alleen zichtbaar als u **[!UICONTROL Responsive]** lay-out voor een deelvenster.
+Selecteer de **[!UICONTROL Add navigable items of responsive layout to mobile menu]** Hiermee geeft u de opties voor navigatie weer die beschikbaar zijn voor een deelvenster in de mobiele lay-out. De navigeerbare opties zijn alleen zichtbaar als u **[!UICONTROL Responsive]** lay-out voor een deelvenster.
 
 Als u een mobiele indeling gebruikt, kunt u in het formuliermenu verschillende formulierdeelvensters openen door op ![aem6forms_form_menu](assets/rail-icon.svg) pictogram.
 

@@ -1,11 +1,12 @@
 ---
 title: Forms-centric workflow op OSGi
-description: Gebruiken [!DNL AEM Forms] Workflow voor het automatisch en snel samenstellen van revisie en goedkeuringen, voor het starten van documentservices
-seo-description: Use [!DNL AEM Forms] Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
+seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
+description: Gebruik AEM Forms Workflow om bedrijfsprocesworkflows te automatiseren en snel samen te stellen. Bijvoorbeeld, overzicht en goedkeuring, de Generatie van de PDF, de werkschema's van Adobe Sign.
+uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2336'
+source-wordcount: '2344'
 ht-degree: 0%
 
 ---

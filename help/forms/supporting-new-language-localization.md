@@ -1,8 +1,8 @@
 ---
-title: Ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier
-description: Met AEM Forms kunt u nieuwe landinstellingen toevoegen voor het lokaliseren van adaptieve formulieren. Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaanse (ko-KR) landinstellingen.
+title: Hoe kunt u ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier?
+description: Voor Adaptief Forms kunt u naast de landinstellingen uit het tekstvak ook landinstellingen voor meer talen toevoegen.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 0%
@@ -28,11 +28,11 @@ De lokalisatie van adaptieve formulieren is afhankelijk van twee typen taalwoord
 
 * **Formulierspecifiek woordenboek** Bevat tekenreeksen die in adaptieve formulieren worden gebruikt. Bijvoorbeeld labels, veldnamen, foutberichten en Help-beschrijvingen. Het wordt beheerd als een set XLIFF-bestanden voor elke landinstelling en u kunt het bestand openen op `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
-* **Algemene woordenboeken** Er zijn twee algemene woordenboeken, beheerd als JSON-objecten, in AEM clientbibliotheek. Deze woordenboeken bevatten standaardfoutberichten, naam van de maand, valutasymbolen, datum- en tijdpatronen, enzovoort. U vindt deze woordenboeken op `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Deze locaties bevatten afzonderlijke mappen voor elke landinstelling. Omdat algemene woordenboeken niet vaak worden bijgewerkt, kunnen browsers door afzonderlijke JavaScript-bestanden voor elke landinstelling te bewaren deze in cache plaatsen en het gebruik van de netwerkbandbreedte verminderen wanneer ze toegang krijgen tot verschillende adaptieve formulieren op dezelfde server.
+* **Algemene woordenboeken** Er zijn twee algemene woordenboeken, beheerd als JSON-objecten, in de AEM clientbibliotheek. Deze woordenboeken bevatten standaardfoutberichten, naam van de maand, valutasymbolen, datum- en tijdpatronen, enzovoort. U vindt deze woordenboeken op `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Deze locaties bevatten afzonderlijke mappen voor elke landinstelling. Omdat algemene woordenboeken niet vaak worden bijgewerkt, kunnen browsers door afzonderlijke JavaScript-bestanden voor elke landinstelling in cache te houden en het gebruik van netwerkbandbreedte verminderen wanneer ze verschillende adaptieve formulieren op dezelfde server gebruiken.
 
 ## Ondersteuning voor nieuwe landinstellingen toevoegen {#add-support-for-new-locales}
 
-Voer de volgende stappen uit om ondersteuning voor een landinstelling toe te voegen:
+Voer de volgende stappen uit om ondersteuning voor een nieuwe landinstelling toe te voegen:
 
 1. [Ondersteuning voor lokalisatie toevoegen voor niet-ondersteunde landinstellingen](#add-localization-support-for-non-supported-locales)
 1. [Toegevoegde landinstellingen gebruiken in Adaptive Forms](#use-added-locale-in-af)
@@ -41,7 +41,7 @@ Voer de volgende stappen uit om ondersteuning voor een landinstelling toe te voe
 
 AEM Forms ondersteunt momenteel de lokalisatie van Adaptive Forms-inhoud in het Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR).
 
-Ondersteuning voor een landinstelling toevoegen:
+Ondersteuning voor een nieuwe landinstelling toevoegen in de Adaptive Forms-runtime:
 
 1. [Uw gegevensopslagruimte klonen](#clone-the-repository)
 1. [Een landinstelling toevoegen aan de GuideLocalizationService-service](#add-a-locale-to-the-guide-localization-service)
@@ -69,7 +69,7 @@ Ondersteuning voor een landinstelling toevoegen:
 1. Maak in de map UI.content `etc/clientlibs` map.
 1. Maak een map met de naam `locale-name` krachtens `etc/clientlibs` om als container voor xfa en af clientlibs te dienen.
 
-##### 3.1 XFA-clientbibliotheek toevoegen voor een landinstelling in de map locale-name
+##### 3.1 XFA-clientbibliotheek toevoegen voor een landinstelling in een map met landnamen
 
 Een knooppunt maken met de naam `[locale-name]_xfa` en type as `cq:ClientLibraryFolder` krachtens `etc/clientlibs/locale_name`, met categorie `xfaforms.I18N.<locale>`en voeg de volgende bestanden toe:
 
@@ -148,7 +148,7 @@ Nadat de landinstelling is geïdentificeerd, wordt in het adaptieve formulier he
 
 Als er geen landinstellingsgegevens aanwezig zijn, wordt het adaptieve formulier geleverd in de oorspronkelijke taal van het formulier. De oorspronkelijke taal is de taal die wordt gebruikt bij het ontwikkelen van het adaptieve formulier.
 
-Get [voorbeeldclientbibliotheek](/help/forms/assets/locale-support-sample.zip) om ondersteuning voor nieuwe landinstellingen toe te voegen. U moet de inhoud van de map wijzigen in de vereiste landinstelling.
+Get a [voorbeeldclientbibliotheek](/help/forms/assets/locale-support-sample.zip) om ondersteuning voor nieuwe landinstellingen toe te voegen. U moet de inhoud van de map wijzigen in de vereiste landinstelling.
 
 ## Aanbevolen procedures voor ondersteuning van nieuwe lokalisatie {#best-practices}
 

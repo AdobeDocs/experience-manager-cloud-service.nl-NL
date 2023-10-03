@@ -1,9 +1,10 @@
 ---
-title: Ondersteuning voor voetnoten op Adaptive Forms
-description: Verbeter Adaptieve Forms met informatieve rijke tekstvoetnoten. Ervaring en betrokkenheid van gebruikers verbeteren.
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+title: Ondersteuning voor voetnoten in Adaptive Forms
+description: Gebruik Rich Text Editor (RTE) voor voetnoten in een adaptieve vorm.
+exl-id: f04dae84-daab-42f8-876f-02fe426f62be
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---

@@ -1,17 +1,17 @@
 ---
 title: Hoe wordt het gebruikt [!DNL Adobe Sign] in een adaptieve vorm?
-description: U kunt e-handtekening inschakelen ([!DNL Adobe Sign]) voor een adaptief formulier om ondertekeningsworkflows te automatiseren, processen met één of meerdere handtekeningen te vereenvoudigen en formulieren van mobiele apparaten elektronisch te ondertekenen.
+description: Gebruik Adobe Sign in een adaptief formulier om ontvangers van formulieren toe te staan een formulier elektronisch te ondertekenen vanaf het apparaat en de plaats van hun keuze.
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '3004'
+source-wordcount: '3000'
 ht-degree: 0%
 
 ---
-
 
 # Gebruiken [!DNL Adobe Sign] in een adaptieve vorm {#using-adobe-sign-in-an-adaptive-form}
 

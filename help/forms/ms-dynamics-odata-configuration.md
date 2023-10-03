@@ -1,13 +1,13 @@
 ---
-title: Hoe te vormen [!DNL Microsoft Dynamics] OData?
-description: Leer hoe u een formuliergegevensmodel maakt op basis van de entiteiten, kenmerken en services die zijn gedefinieerd in [!DNL Microsoft Dynamics] service. Met het formuliergegevensmodel kunt u een adaptieve Forms maken die interactief werkt met [!DNL Microsoft Dynamics] om bedrijfsworkflows in te schakelen.
+title: Hoe te vormen [!DNL Microsoft Dynamics] OData
+description: Leer formuliergegevensmodel te maken op basis van de entiteiten, kenmerken en services die zijn gedefinieerd in [!DNL Microsoft Dynamics] service.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ![gegevensintegratie](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] is een software van het Beheer van de Verhouding van de Klant (CRM) en van de Planning van het Middel van de Onderneming (ERP) die ondernemingsoplossingen voor het creëren van en het beheren van klantenrekeningen, contacten, lood, kansen, en gevallen verstrekt. [[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md) biedt een OData-cloudserviceconfiguratie voor de integratie van Forms met zowel online als op locatie [!DNL Microsoft Dynamics] server. Hiermee kunt u een formuliergegevensmodel maken op basis van de entiteiten, kenmerken en services die zijn gedefinieerd in [!DNL Microsoft Dynamics] service. Met het formuliergegevensmodel kunt u een adaptieve Forms maken die interactief werkt met [!DNL Microsoft Dynamics] om bedrijfsworkflows in te schakelen. Bijvoorbeeld:
+[!DNL Microsoft Dynamics] is een software van het Beheer van de Verhouding van de Klant (CRM) en van de Planning van het Middel van de Onderneming (ERP) die ondernemingsoplossingen voor het creëren van en het beheren van klantenrekeningen, contacten, lood, kansen, en gevallen verstrekt. [[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md) biedt een OData-cloudserviceconfiguratie voor de integratie van Forms met zowel online als op locatie [!DNL Microsoft Dynamics] server. Hiermee kunt u een formuliergegevensmodel maken op basis van de entiteiten, kenmerken en services die zijn gedefinieerd in [!DNL Microsoft Dynamics] service. Met het formuliergegevensmodel kunt u een adaptieve Forms maken die interactief werkt met [!DNL Microsoft Dynamics] server om bedrijfswerkstromen toe te laten. Bijvoorbeeld:
 
 * Query [!DNL Microsoft Dynamics] server voor gegevens en vooraf ingevulde Adaptive Forms
 * Gegevens schrijven naar [!DNL Microsoft Dynamics] over het indienen van adaptieve formulieren
@@ -38,15 +38,15 @@ ht-degree: 1%
 
 ## Vereisten {#prerequisites}
 
-Voordat u begint met instellen en configureren [!DNL Microsoft Dynamics], zorg ervoor dat u:
+Voordat u begint met het instellen en configureren [!DNL Microsoft Dynamics], zorg ervoor dat u:
 
 <!--* Installed the [[!DNL Experience Manager Forms] add-on package](installing-configuring-aem-forms-osgi.md) -->
-* Gevormd [!DNL Microsoft Dynamics] 365 online of geïnstalleerd een van de volgende exemplaren [!DNL Microsoft Dynamics] versies:
+* geconfigureerd [!DNL Microsoft Dynamics] 365 online of geïnstalleerd een van de volgende exemplaren: [!DNL Microsoft Dynamics] versies:
 
    * [!DNL Microsoft Dynamics] 365 ter plaatse
    * [!DNL Microsoft Dynamics] 2016 ter plaatse
 
-* [Ingeschreven [!DNL Microsoft Dynamics] onlineservice met [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Noteer de waarden voor de client-id (ook toepassings-id genoemd) en het clientgeheim voor de geregistreerde service. Deze waarden worden gebruikt terwijl [configureren van cloudservice voor uw [!DNL Microsoft Dynamics] service](#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Ingeschreven verzoek om [!DNL Microsoft Dynamics] onlineservice met [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Noteer de waarden voor de client-id (ook toepassings-id genoemd) en het clientgeheim voor de geregistreerde service. Deze waarden worden gebruikt terwijl [configureren van cloudservice voor uw [!DNL Microsoft Dynamics] service](#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## Reactie-URL instellen voor geregistreerd [!DNL Microsoft Dynamics] toepassing {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -96,7 +96,7 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
    `Add-AdfsClient -ClientId “<Client-ID>” -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
-   Waar:
+   Waarbij:
 
    * `Client-ID` is een cliëntidentiteitskaart u het gebruiken van om het even welke generator kunt produceren GUID.
    * `redirect-uri` is de URL naar de [!DNL Microsoft Dynamics] OData-cloudservice op [!DNL Experience Manager Forms]. De standaardcloudservice geïnstalleerd met de [!DNL Experience Manager Forms] wordt geïmplementeerd op de volgende URL:
@@ -106,7 +106,7 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
    `Grant-AdfsApplicationPermission -ClientRoleIdentifier “<Client-ID>” -ServerRoleIdentifier <resource> -ScopeNames openid`
 
-   Waar:
+   Waarbij:
 
    * `resource` is de [!DNL Microsoft Dynamics] organisatie-URL.
 
@@ -133,13 +133,13 @@ In de **[!UICONTROL Authentication Settings]** tab:
 
    1. Selecteren **[!UICONTROL OAuth 2.0]** als het verificatietype.
 
-   1. De standaardwaarden in het dialoogvenster **[!UICONTROL Client Id]** (ook aangeduid als **Toepassings-id**), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL Refresh Token URL]**, **[!UICONTROL Access Token URL]**, en **[!UICONTROL Resource]** velden met waarden uit uw [!DNL Microsoft Dynamics] serviceconfiguratie. Het is verplicht de URL van de dynamische instantie op te geven in het dialoogvenster **[!UICONTROL Resource]** te configureren veld [!DNL Microsoft Dynamics] met een formuliergegevensmodel. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. De standaardwaarden vervangen in het dialoogvenster **[!UICONTROL Client Id]** (ook aangeduid als **Toepassings-id**), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL Refresh Token URL]**, **[!UICONTROL Access Token URL]**, en **[!UICONTROL Resource]** velden met waarden uit uw [!DNL Microsoft Dynamics] serviceconfiguratie. Het is verplicht de URL van de dynamische instantie op te geven in het dialoogvenster **[!UICONTROL Resource]** te configureren veld [!DNL Microsoft Dynamics] met een formuliergegevensmodel. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Opgeven **[!UICONTROL openid]** in de **[!UICONTROL Authorization Scope]** veld voor het vergunningsproces op [!DNL Microsoft Dynamics].
 
       ![Verificatie-instellingen](assets/dynamics_authentication_settings_new.png)
 Formuliergegevensmodel
-1. Klik op **[!UICONTROL Connect to OAuth]**. U wordt omgeleid naar [!DNL Microsoft Dynamics] aanmeldingspagina.
+1. Klik op **[!UICONTROL Connect to OAuth]**. U wordt omgeleid naar [!DNL Microsoft Dynamics] aanmeldingspagina
 1. Meld u aan met uw [!DNL Microsoft Dynamics] referenties en accepteren om de configuratie van de cloudservice in staat te stellen verbinding te maken met [!DNL Microsoft Dynamics] service. Het is een eenmalige taak om het Model van de Gegevens van de Vorm tussen de clouddienst en de dienst te vestigen.
 
    U bent het Model van de Gegevens van de Vorm de pagina van de de dienstconfiguratie van de wolk, die een bericht toont dat de configuratie OData met succes wordt bewaard.

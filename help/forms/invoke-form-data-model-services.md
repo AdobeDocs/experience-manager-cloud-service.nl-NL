@@ -1,13 +1,10 @@
 ---
 title: API om de service Form Data Model aan te roepen vanuit Adaptive Forms
-seo-title: API to invoke Form Data Model service from Adaptive Forms
 description: Verklaart invokeWebServices API die u kunt gebruiken om Webdiensten aan te halen die in WSDL van binnen een Adaptief gebied van de Vorm worden geschreven.
-seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an Adaptive Form field.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
@@ -31,7 +28,7 @@ De `guidelib.dataIntegrationUtils.executeOperation` API roept een service aan va
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-De structuur van de `guidelib.dataIntegrationUtils.executeOperation` API specificeert details over de de dienstverrichting. De syntaxis van de structuur is als volgt.
+De structuur van de `guidelib.dataIntegrationUtils.executeOperation` API specificeert details over de de dienstverrichting. De syntaxis van de structuur ziet er als volgt uit.
 
 ```javascript
 var operationInfo = {

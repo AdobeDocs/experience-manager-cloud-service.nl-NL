@@ -1,13 +1,13 @@
 ---
 title: Hoe te om Gegevensbronnen te vormen?
-description: Met Experience Manager Forms Data Integration kunt u verschillende gegevensbronnen configureren en verbinden. Leer hoe u RESTful-webservices, SOAP-webservices en OData-services configureert als gegevensbronnen en deze kunt gebruiken om formuliergegevensmodellen te maken.
+description: Leer hoe u RESTful-webservices, SOAP-webservices en OData-services configureert als gegevensbronnen voor een formuliergegevensmodel.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2022'
 ht-degree: 0%
 
 ---

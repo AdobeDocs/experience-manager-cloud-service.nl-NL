@@ -1,16 +1,14 @@
 ---
-title: Pagina-nulinhoud wijzigen in Designer
-seo-title: Changing Page Zero content in Designer
-description: Weet u hoe u het bericht kunt wijzigen dat wordt weergegeven op Pagina Nul van een XFA-PDF wanneer u het weergeeft in een niet-Adobe PDF-viewer?
-seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
+title: Hoe wijzigt u de pagina Nul-inhoud in Designer?
+description: Wijzig het bericht dat wordt weergegeven op Pagina Nul van een XFA-PDF voor niet-Adobe PDF-viewers.
 uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '219'
 ht-degree: 2%
 
 ---

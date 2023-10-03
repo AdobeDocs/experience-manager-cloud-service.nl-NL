@@ -1,12 +1,10 @@
 ---
-title: Thema's maken en gebruiken
-description: U kunt thema's gebruiken om een adaptief formulier te stileren en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
-seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
-keywords: nieuw thema maken, thema aanpassen, nieuw thema uploaden, thema gebruiken in formulieren, thema aanpassen met frontend-pijplijn
+title: Hoe kunt u thema's maken en gebruiken in Adaptive Forms?
+description: U kunt thema's gebruiken om een adaptief formulier op te maken en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2651'
 ht-degree: 0%
 
 ---

@@ -1,15 +1,13 @@
 ---
-title: Aangepaste Forms-trefwoorden
-seo-title: Adaptive Forms keywords
-description: U kunt deze gereserveerde woorden niet als id's gebruiken in uw Adaptieve Forms.
-seo-description: You cannnot use these reserved words as identifiers in your Adaptive Forms.
+title: Trefwoorden gereserveerd voor Adaptive Forms
+description: Gereserveerde trefwoorden die u niet als id's kunt gebruiken in uw Adaptieve Forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---

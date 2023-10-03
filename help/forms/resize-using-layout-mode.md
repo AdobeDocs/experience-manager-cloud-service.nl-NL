@@ -1,13 +1,13 @@
 ---
-title: Gebruik de lay-outmodus om de grootte van componenten voor Adaptief Forms te wijzigen
-description: Bepaal de positie van componenten gebruikend het ontvankelijke net beschikbaar op de wijze van de Lay-out. Leer hoe u de modus Indeling kunt openen, de grootte van componenten kunt wijzigen, deelvensters kunt vergroten of verkleinen, lay-out met meerdere kolommen voor een deelvenster kunt definiëren, het nieuwe responsieve raster kunt inschakelen voor oude responsieve layouts en de modus Indeling kunt uitschakelen voor formulieren met een oude responsieve indeling.
+title: Hoe gebruikt u de lay-outmodus om de grootte van componenten voor Adaptief Forms te wijzigen?
+description: Definieer de positie van AEM Forms-componenten, leer toegang te krijgen tot de lay-outmodus, wijzig de grootte van componenten, wijzig de grootte van deelvensters en definieer de lay-out met meerdere kolommen voor een deelvenster.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---

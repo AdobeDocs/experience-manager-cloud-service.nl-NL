@@ -1,13 +1,13 @@
 ---
-title: Hoe te om de Aangepaste Forms regelredacteur te gebruiken?
-description: Met de Adaptive Forms-regeleditor kunt u dynamisch gedrag toevoegen en complexe logica in formulieren opnemen zonder codes of scripts. Ga aan het begrijpen van een regel en richtlijnen om een regelconstructie te kiezen. Meer informatie over beschikbare operatortypen en gebeurtenissen in de regeleditor.
+title: Wat is Adaptive Forms rule editor?
+description: Met de Adaptive Forms-regeleditor kunt u dynamisch gedrag toevoegen en complexe logica in formulieren opnemen zonder codes of scripts.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '6247'
+source-wordcount: '6223'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterfac
 * De waarde van een object valideren
 * Voer functies uit om de waarde van een object te berekenen
 * Een service voor formuliergegevensmodel aanroepen en een bewerking uitvoeren
-* Eigenschap van een object instellen
+* De eigenschap Instellen van een object
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
@@ -41,7 +41,7 @@ Gebruikers die zijn toegevoegd aan de gebruikersgroep voor formulieren, kunnen s
 
 ## Een regel begrijpen {#understanding-a-rule}
 
-Een regel is een combinatie van handelingen en voorwaarden. In de regeleditor omvatten handelingen activiteiten zoals verbergen, tonen, inschakelen, uitschakelen of de waarde van een object in een formulier berekenen. Voorwaarden zijn Booleaanse expressies die worden geëvalueerd door controles en bewerkingen uit te voeren op de staat, waarde of eigenschap van een formulierobject. Handelingen worden uitgevoerd op basis van de waarde ( `True` of `False`) geretourneerd door een voorwaarde te evalueren.
+Een regel is een combinatie van handelingen en voorwaarden. In de regeleditor omvatten handelingen zoals verbergen, weergeven, inschakelen, uitschakelen of de waarde van een object in een formulier berekenen. Voorwaarden zijn Booleaanse expressies die worden geëvalueerd door controles en bewerkingen uit te voeren op de status, waarde of eigenschap van een formulierobject. Handelingen worden uitgevoerd op basis van de waarde ( `True` of `False`) geretourneerd door een voorwaarde te evalueren.
 
 De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes, zoals wanneer, tonen, verbergen, toelaten, onbruikbaar maken, Vastgestelde Waarde van, en Valideren om u te helpen regels schrijven. Elk regeltype laat u voorwaarden en acties in een regel bepalen. Het document verklaart verder elk regeltype in detail.
 
@@ -49,11 +49,11 @@ Een regel volgt doorgaans een van de volgende constructies:
 
 **Voorwaarde-actie** In deze constructie definieert een regel eerst een voorwaarde gevolgd door een handeling die moet worden geactiveerd. De constructie is vergelijkbaar met if-then statement in programmeertalen.
 
-In de regeleditor forceert het **type Wanneer-regel** de condition-action-constructie.
+In de regeleditor **Wanneer** het regeltype dwingt de voorwaarde-actie constructie af.
 
-**Actie-voorwaarde** In deze constructie definieert een regel eerst een actie die een activering moet activeren, gevolgd door de evaluatievoorwaarden. Een andere variatie van deze constructie is actie-voorwaarde-afwisselende actie, die ook een afwisselende actie bepaalt om te teweegbrengen als de voorwaarde Vals terugkeert.
+**Actie-voorwaarde** In deze constructie definieert een regel eerst een actie die een activering moet activeren, gevolgd door de evaluatievoorwaarden. Een andere variant van deze constructie is de handeling-voorwaarde-alternatieve handeling, die ook een alternatieve handeling definieert om te activeren als de voorwaarde False retourneert.
 
-Toon, verberg, laat toe, maak onbruikbaar, plaats Waarde van, en bevestig regeltypes in regelredacteur om de actie-voorwaarde regelconstructie af te dwingen. Standaard is de alternatieve actie voor Tonen Verbergen en voor Inschakelen Uitgeschakeld en de tegenovergestelde manier. U kunt de alternatieve standaardhandeling niet wijzigen.
+Met de regeltypen Tonen, Verbergen, Inschakelen, Uitschakelen, Waarde instellen en Valideren in de regeleditor wordt de regelconstructie met de handelingsvoorwaarde afgedwongen. Standaard is de alternatieve actie voor Tonen verbergen en voor Inschakelen Uitschakelen, en omgekeerd. U kunt de alternatieve standaardhandeling niet wijzigen.
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebr
 
 De **[!UICONTROL When]** regeltype volgt **condition-action-alternate action** regelconstructie, of soms alleen de **voorwaarde-actie** construct. In dit regeltype geeft u eerst een voorwaarde op voor evaluatie gevolgd door een handeling die wordt geactiveerd als aan de voorwaarde is voldaan ( `True`). Wanneer u het regeltype When gebruikt, kunt u meerdere AND- en OR-operatoren gebruiken om [geneste expressies](#nestedexpressions).
 
-Met het type Wanneer-regel kunt u een voorwaarde voor een formulierobject evalueren en handelingen uitvoeren op een of meer objecten.
+Met het regeltype &#39;Wanneer&#39; kunt u een voorwaarde op een formulierobject evalueren en acties op een of meer objecten uitvoeren.
 
 In eenvoudige woorden, een typische When-regel is als volgt gestructureerd:
 
@@ -124,7 +124,7 @@ _
 
 Wanneer u een component met meerdere waarden hebt, zoals keuzerondjes of een lijst, worden de opties bij het maken van een regel voor die component automatisch opgehaald en beschikbaar gemaakt voor de maker van de regel. U hoeft de optiewaarden niet opnieuw te typen.
 
-Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het creëren van de regel, worden de opties (radioknopen) automatisch teruggewonnen en ter beschikking gesteld van de regelschepper als volgt:
+Een lijst bevat bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het maken van de regel worden de opties (keuzerondjes) automatisch opgehaald en als volgt beschikbaar gemaakt voor de maker van de regel:
 
 ![Meerdere waarden geeft opties weer](assets/multivaluefcdisplaysoptions.png)
 
@@ -140,9 +140,9 @@ Tijdens het schrijven van een When-regel kunt u de Clear Value of action activer
 
 **[!UICONTROL Disable]** Hiermee wordt het opgegeven object uitgeschakeld.
 
-**[!UICONTROL Invoke service]** Roept de dienst aan die in een model van vormgegevens wordt gevormd. Wanneer u de Invoke-service kiest, wordt een veld weergegeven. Als u op het veld tikt, worden alle services weergegeven die in alle modellen formuliergegevens zijn geconfigureerd op uw [!DNL Experience Manager] -instantie. Wanneer u een service voor formuliergegevensmodel kiest, verschijnen er meer velden waar u formulierobjecten kunt toewijzen aan de hand van invoer- en uitvoerparameters voor de opgegeven service. Zie voorbeeldregel voor het aanroepen van Services van formuliergegevensmodel.
+**[!UICONTROL Invoke service]** Roept de dienst aan die in een model van vormgegevens wordt gevormd. Wanneer u de Invoke-service kiest, wordt een veld weergegeven. Als u op het veld tikt, worden alle services weergegeven die in alle modellen formuliergegevens zijn geconfigureerd op uw [!DNL Experience Manager] -instantie. Als u een service Formuliergegevensmodel kiest, worden meer velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service. Zie voorbeeldregel voor het aanroepen van de diensten van het Model van de Gegevens van de Vorm.
 
-Naast de service Formuliergegevensmodel kunt u een directe WSDL-URL opgeven om een webservice aan te roepen. Nochtans, heeft de modeldienst van de Gegevens van het Vorm vele voordelen en de geadviseerde benadering om de dienst aan te halen.
+Naast de Form Data Model-service kunt u een directe WSDL-URL opgeven om een webservice aan te roepen. Nochtans, heeft de modeldienst van de Gegevens van het Vorm vele voordelen en de geadviseerde benadering om de dienst aan te halen.
 
 Voor meer informatie over het vormen van de diensten in het model van vormgegevens, zie [[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md).
 
@@ -206,7 +206,7 @@ Stel de waarde van Object A in op:
 
 (tekenreeks ABC) OR (objecteigenschap X van Object C) OR (waarde van een functie) OR (waarde van een wiskundige expressie) OR (uitvoerwaarde van een gegevensmodelservice of webservice);
 
-Wanneer (optioneel):
+Indien (optioneel):
 
 (Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is TRUE;
 
@@ -218,7 +218,7 @@ Voorbeeld van Waarderegel instellen met de service Formuliergegevensmodel
 
 >[!NOTE]
 >
->Bovendien kunt u Waarde van regel instellen gebruiken om alle waarden in een component van een vervolgkeuzelijst in te vullen uit de uitvoer van een Form Data Model-service of een webservice. Zorg er echter voor dat het uitvoerargument dat u kiest van een arraytype is. Alle waarden die in een array worden geretourneerd, worden beschikbaar in de opgegeven vervolgkeuzelijst.
+>Bovendien kunt u Waarde van regel instellen gebruiken om alle waarden in een component van een vervolgkeuzelijst in te vullen uit de uitvoer van een Form Data Model-service of een webservice. Zorg er echter voor dat het uitvoerargument dat u kiest een arraytype is. Alle waarden die in een array worden geretourneerd, worden beschikbaar in de opgegeven vervolgkeuzelijst.
 
 ### [!UICONTROL Show] {#show}
 

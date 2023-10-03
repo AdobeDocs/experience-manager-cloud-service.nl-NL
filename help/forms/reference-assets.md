@@ -1,13 +1,11 @@
 ---
 title: Referentiethema's
-seo-title: Reference Themes
-description: AEM Forms biedt adaptieve formulierthema's die u kunt ophalen bij Softwaredistributie en gebruiken om een formulier op te maken.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
+description: Gebruik de referentiemethoden voor adaptieve formulieren, sjablonen en formuliergegevens om snel aan de slag te gaan.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
-source-git-commit: 575e9836d676cf6711e039a5bb6860ad04324d60
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -122,10 +120,10 @@ De basissjabloon biedt een leeg canvas voor het maken van een initiële structuu
 
 Met het gegevensmodel Microsoft Dynamics 365 kunt u Microsoft Dynamics 365 gebruiken als gegevensbron. Het verleent ook de steekproefdiensten om, gegevens te lezen bij te werken, te schrappen en toe te voegen aan de gegevensbron van de Dynamiek van Microsoft 365.
 
-![Microsoft® Dynamics 365-formuliergegevensmodel](/help/forms/assets/microsoft-dynamic-fdm.png)
+![Microsoft® Dynamics 365 Form Data Model](/help/forms/assets/microsoft-dynamic-fdm.png)
 
 ### Salesforce
 
 Met het Salesforce-gegevensmodel kunt u Salesforce gebruiken als gegevensbron. Het verleent de steekproefdiensten ook om, gegevens te lezen bij te werken te schrappen en toe te voegen aan Salesforce.
 
-![Salesforce-formuliergegevensmodel](/help/forms/assets/salesforce-fdm.png)
+![Salesforce-gegevensmodel](/help/forms/assets/salesforce-fdm.png)
