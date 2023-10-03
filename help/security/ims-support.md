@@ -2,9 +2,9 @@
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 description: Ondersteuning voor Image Management System voor Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1978'
 ht-degree: 37%
 
 ---
@@ -21,9 +21,7 @@ ht-degree: 37%
 >
 >Zie [Toegang tot AEM voor beheerders configureren](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) voor een inleiding over hoe gebruikers het gebruik van Adobe IMS voor authentiek verklaren om as a Cloud Service te AEM. Leer ook hoe Adobe IMS-gebruikers, -gebruikersgroepen en -productprofielen worden gebruikt om de toegang tot AEM en de functies en functies ervan te beheren. Adobe ID vereist.
 
->[!NOTE]
->
->AEM ondersteunt momenteel niet het toewijzen van groepen aan profielen. In plaats daarvan moeten gebruikers afzonderlijk worden toegevoegd.
+{{ims-group-profiles}}
 
 ## Belangrijkste kenmerken {#key-highlights}
 
@@ -48,7 +46,7 @@ De gebruikersopenings van een sessiestroom wordt hieronder weergegeven, de gebru
 
 Als u Adobe IMS voor AEM-verificatie wilt gebruiken, is het on-boarden van de klant een eerste vereiste voor het gebruik van de Adobe IMS voor AEM-verificatie.
 
-Als eerste stap moeten klanten beschikken over een organisatie die is ingericht in Adobe IMS. Adobe Enterprise-klanten worden vertegenwoordigd als IMS-organisaties in de [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html). Dit gebied is het portaal dat klanten van de Adobe gebruiken om hun productrechten voor hun gebruikers en groepen te beheren.
+Als eerste stap moeten klanten beschikken over een organisatie die is ingericht in Adobe IMS. Adobe Enterprise-klanten worden in het [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html). Dit gebied is het portaal dat klanten van de Adobe gebruiken om hun productrechten voor hun gebruikers en groepen te beheren.
 
 AEM klanten zouden reeds een organisatie moeten hebben provisioned, en als deel van de levering IMS, worden de klanteninstanties ter beschikking gesteld in Admin Console voor het beheren van gebruikersrechten en toegang.
 
@@ -72,7 +70,7 @@ Er zijn drie manieren om aan boord van gebruikers te gaan. Elke methode is afhan
 
 **Handmatige toevoeging via de gebruikersinterface van de Admin Console**
 
-Gebruikers en groepen kunnen handmatig worden gemaakt in de gebruikersinterface van de Admin Console. Deze methode kan worden gebruikt als u niet veel gebruikers te beheren hebt. Stel bijvoorbeeld dat er minder dan 50 AEM gebruikers zijn of dat u deze methode al gebruikt voor het beheer van andere Adobe-producten, zoals Analytics-, Target- of Creative Cloud-toepassingen.
+Gebruikers en groepen kunnen handmatig worden gemaakt in de gebruikersinterface van de Admin Console. Deze methode kan worden gebruikt als u niet veel gebruikers te beheren hebt. Stel bijvoorbeeld dat er minder dan 50 AEM gebruikers zijn of dat u deze methode al gebruikt voor het beheer van andere Adobe producten, zoals Analytics, Target of Creative Cloud.
 
 ![Gebruiker on-boarden](/help/security/assets/ims3.png)
 
@@ -84,9 +82,9 @@ Als u op een eenvoudige manier gebruikers wilt maken, kunt u een `.csv`-bestand 
 
 **User Sync Tool**
 
-Het Hulpmiddel van de Synchronisatie van de gebruiker (MOET in het kort) laat de ondernemingsklanten van Adobe toe om Adobe gebruikers tot stand te brengen en te beheren gebruikend Actieve Folder. Dit MOET ook voor andere geteste OpenLDAP-directoryservices werken. De doelgebruikers zijn de Beheerders van de Identiteit van IT (de Folder van de Onderneming of de Beheerders van het Systeem) die het hulpmiddel kunnen installeren en vormen. Het opensource-programma kan worden aangepast, zodat klanten het kunnen aanpassen aan hun eigen specifieke vereisten.
+Het Hulpmiddel van de Synchronisatie van de gebruiker (MOET in het kort) laat de ondernemingsklanten van de Adobe toe om de gebruikers van de Adobe tot stand te brengen en te beheren gebruikend Actieve Folder. Dit MOET ook voor andere geteste OpenLDAP-directoryservices werken. De doelgebruikers zijn de Beheerders van de Identiteit van IT (de Folder van de Onderneming of de Beheerders van het Systeem) die het hulpmiddel kunnen installeren en vormen. Het opensource-programma kan worden aangepast, zodat klanten het kunnen aanpassen aan hun eigen specifieke vereisten.
 
-Wanneer de looppas van de Synchronisatie van de Gebruiker, het een lijst van gebruikers van de Actieve Folder van de organisatie haalt en het met de lijst van gebruikers binnen de Admin Console vergelijkt. Vervolgens wordt de API voor gebruikersbeheer van Adobe aangeroepen, zodat de Admin Console wordt gesynchroniseerd met de directory van de organisatie. De wijzigingsflow is uitsluitend eenrichtingsverkeer. Wijzigingen die u aanbrengt in de Admin Console, worden niet doorgestuurd naar de directory.
+Wanneer de looppas van de Synchronisatie van de Gebruiker, het een lijst van gebruikers van de Actieve Folder van de organisatie haalt en het met de lijst van gebruikers binnen de Admin Console vergelijkt. Het roept dan de Adobe API van het Gebruikersbeheer zodat de Admin Console met de folder van de organisatie wordt gesynchroniseerd. De wijzigingsflow is uitsluitend eenrichtingsverkeer. Wijzigingen die u aanbrengt in de Admin Console, worden niet doorgestuurd naar de directory.
 
 Met dit hulpprogramma kan de systeembeheerder gebruikersgroepen in de directory van de klant toewijzen aan productconfiguratie en gebruikersgroepen in de Admin Console.
 
@@ -94,7 +92,7 @@ Om Gebruikerssynchronisatie in te stellen, moet de organisatie een set referenti
 
 ![User Sync Tool](/help/security/assets/ims5.png)
 
-Het Hulpmiddel van de Synchronisatie van de gebruiker wordt verdeeld door de bewaarplaats van Adobe GitHub [op deze locatie](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.9.0rc2).
+Het Hulpmiddel van de Synchronisatie van de gebruiker wordt verdeeld door de bewaarplaats van GitHub van de Adobe [op deze locatie](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.9.0rc2).
 
 >[!NOTE]
 >
@@ -108,9 +106,9 @@ Meer informatie over de nieuwe groepsfuncties vindt u [op deze locatie](https://
 
 Zie [MOET documentatie](https://adobe-apiplatform.github.io/user-sync.py/en/) voor meer informatie .
 
-Het Hulpmiddel van de Synchronisatie van de Gebruiker moet als cliëntUMAPI van Adobe Developer registreren gebruikend de procedure [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+Het Hulpmiddel van de Synchronisatie van de Gebruiker moet als Adobe Developer cliënt UMAPI registreren gebruikend de procedure [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
-Documentatie voor Adobe Developer-console is te vinden [hier](https://developer.adobe.com/developer-console/).
+Documentatie voor Adobe Developer Console vindt u [hier](https://developer.adobe.com/developer-console/).
 
 De User Management-API die door de User Sync Tool wordt gebruikt, wordt [hier](https://adobe-apiplatform.github.io/user-sync.py/en/) besproken.
 
@@ -164,7 +162,7 @@ AEM kan lokale aanmeldingen voor Admin-gebruikers blijven ondersteunen. Via het 
 
 **Op IMS gebaseerde aanmelding**
 
-Voor andere gebruikers, wordt de op IMS-Gebaseerde opening van een sessie gebruikt nadat IMS op de instantie wordt gevormd. De gebruiker klikt op de knop Aanmelden met Adobe (zie hieronder):
+Voor andere gebruikers, wordt de op IMS-Gebaseerde opening van een sessie gebruikt nadat IMS op de instantie wordt gevormd. De gebruiker klikt op de knop Aanmelden met Adobe, zoals hieronder wordt weergegeven:
 
 ![IMS-aanmelding](/help/security/assets/ims10.png)
 
@@ -183,7 +181,7 @@ Als een gefedereerde IDP tijdens aanvankelijke opstelling van de Admin Console w
 
 ![IMS-aanmelding4](/help/security/assets/ims13.png)
 
-Nadat de verificatie is voltooid, wordt de gebruiker teruggeleid naar AEM en aangemeld:
+Nadat de authentificatie volledig is, wordt de gebruiker opnieuw gericht naar AEM en het programma geopend:
 
 ![IMS-aanmelding5](/help/security/assets/ims14.png)
 
