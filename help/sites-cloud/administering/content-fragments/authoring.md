@@ -4,7 +4,7 @@ description: Begrijp hoe te om inhoud voor uw Contentfragmenten te ontwerpen, da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
+source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
 workflow-type: tm+mt
 source-wordcount: '2253'
 ht-degree: 0%
@@ -27,8 +27,7 @@ Deze editor biedt:
 * [Voorvertoning](#preview-content-fragment) van de gerenderde ervaring die door het inhoudsfragment wordt geleverd.
 * Vermogen [Publiceren](#publish-content-fragment) en [Publiceren ongedaan maken](#unpublish-content-fragment) uit de editor.
 * Vermogen [gekoppelde taalkopieën bekijken en openen](#view-language-copies) in de editor.
-* Vermogen [versiedetails weergeven](#view-version-history) in de editor.
-   * U kunt ook terugkeren naar een geselecteerde versie.
+* Vermogen [versiedetails weergeven](#view-version-history) in de editor. U kunt ook terugkeren naar een geselecteerde versie.
 * Vermogen [bovenliggende verwijzingen weergeven en openen](#view-parent-references).
 * Een hiërarchische weergave van het inhoudsfragment en de bijbehorende verwijzingen met de opdracht [Structuurelboom](#structure-tree).
 
