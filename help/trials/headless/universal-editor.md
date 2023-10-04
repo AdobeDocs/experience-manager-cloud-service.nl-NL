@@ -1,21 +1,21 @@
 ---
-title: Bewerken in context
-description: Ontdek hoe u de Universal Editor kunt gebruiken om alle aspecten van uw inhoud op hun plaats en in context in een implementatie te bewerken.
+title: Bewerken in context met de universele editor
+description: Onderzoek hoe u de Universele Redacteur kunt gebruiken om om het even welk aspect van uw inhoud op zijn plaats en in context in om het even welke implementatie uit te geven.
 hidefromtoc: true
 index: false
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
+source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
 
-
-# Bewerken in context {#editing-in-context}
+# Bewerken in context met de universele editor {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Bewerken in context"
+>title="Bewerken in context met de universele editor"
 >abstract="Ontdek hoe uw toepassingen zonder kop de Universal Editor kunnen gebruiken om weinig wrijving te veroorzaken, in context bewerken tot de vingertoppen van uw auteurs."
 
 >[!CONTEXTUALHELP]
