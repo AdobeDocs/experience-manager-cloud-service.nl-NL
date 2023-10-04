@@ -3,13 +3,13 @@ title: Inhoudsfragmenten ontwerpen
 description: Begrijp hoe te om inhoud voor uw Contentfragmenten te ontwerpen, dan creeer variaties van die inhoud volgens doel. Dit biedt extra flexibiliteit voor zowel levering zonder kop als het ontwerpen van pagina's.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2253'
 ht-degree: 0%
 
 ---
-
 
 # Inhoudsfragmenten ontwerpen {#authoring-content-fragments}
 
@@ -32,23 +32,9 @@ Deze editor biedt:
 * Vermogen [bovenliggende verwijzingen weergeven en openen](#view-parent-references).
 * Een hiërarchische weergave van het inhoudsfragment en de bijbehorende verwijzingen met de opdracht [Structuurelboom](#structure-tree).
 
->[!CAUTION]
+>[!WARNING]
 >
 >De editor die in deze sectie wordt beschreven, is *alleen* beschikbaar in het *online* Adobe Experience Manager (AEM) as a Cloud Service.
-
->[!CAUTION]
->
->U moet een inhoudsfragment bewerken [de juiste machtigingen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Neem contact op met de systeembeheerder als er problemen optreden.
-> 
->Als u bijvoorbeeld geen `edit` de toestemmingen de redacteur zullen read-only zijn.
-
->[!NOTE]
->
->Zie de documentatie bij Middelen voor volledige informatie over de [oorspronkelijke editor voor inhoudsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) - het is verkrijgbaar bij **Activa** en de **Inhoudsfragmenten** console.
-
->[!NOTE]
->
->Uw projectteam kan de redacteur aanpassen indien nodig. Zie [De console en Editor voor inhoudsfragmenten aanpassen](/help/implementing/developing/extending/content-fragments-console-and-editor.md) voor nadere bijzonderheden.
 
 ## Inhoudsfragmenteditor {#content-fragment-editor}
 
@@ -76,12 +62,6 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
    * indien **Tijdelijke aanduiding voor tab** velden worden gedefinieerd binnen het model dat ze hier worden weergegeven en kunnen worden gebruikt voor navigatie; ze worden horizontaal weergegeven of als een vervolgkeuzelijst
 
 ![Inhoudsfragmenteditor - Overzicht](assets/cf-authoring-overview.png)
-
->[!CAUTION]
->
->Een inhoudsfragmentmodel kan vaak gegevensvelden definiëren met de naam **Titel** en **Beschrijving**. Als deze velden bestaan, zijn het door de gebruiker gedefinieerde velden en kunnen deze worden bijgewerkt in het dialoogvenster *centraal panel* wanneer u het fragment bewerkt.
->
->Het inhoudsfragment en de variaties ervan hebben ook metagegevensvelden (eigenschappen voor variatie) die worden genoemd **Titel** en **Beschrijving**. Deze velden maken integraal deel uit van elk inhoudsfragment en worden in eerste instantie gedefinieerd wanneer het fragment wordt gemaakt. Deze kunnen worden bijgewerkt in het dialoogvenster *rechterdeelvenster* wanneer u het fragment bewerkt.
 
 ## Navigeren door de structuur van het inhoudsfragment {#navigate-structure}
 
@@ -494,3 +474,19 @@ De **Velden** worden alle velden in het inhoudsfragment weergegeven. Het pictogr
   </tr>
  </tbody>
 </table>
+
+## Goed om te weten {#good-to-know}
+
+Daarnaast:
+
+* U moet een inhoudsfragment bewerken [de juiste machtigingen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Neem contact op met de systeembeheerder als er problemen optreden.
+
+  Als u bijvoorbeeld geen `edit` de toestemmingen de redacteur zullen read-only zijn.
+
+* Een inhoudsfragmentmodel kan vaak gegevensvelden definiëren met de naam **Titel** en **Beschrijving**. Als deze velden bestaan, zijn het door de gebruiker gedefinieerde velden en kunnen deze worden bijgewerkt in het dialoogvenster *centraal panel* wanneer u het fragment bewerkt.
+
+  Het inhoudsfragment en de variaties ervan hebben ook metagegevensvelden (eigenschappen voor variatie) die worden genoemd **Titel** en **Beschrijving**. Deze velden maken integraal deel uit van elk inhoudsfragment en worden in eerste instantie gedefinieerd wanneer het fragment wordt gemaakt. Deze kunnen worden bijgewerkt in het dialoogvenster *rechterdeelvenster* wanneer u het fragment bewerkt.
+
+* Zie de documentatie bij Middelen voor volledige informatie over de [oorspronkelijke editor voor inhoudsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) - het is verkrijgbaar bij **Activa** en de **Inhoudsfragmenten** console.
+
+* Uw projectteam kan de redacteur aanpassen indien nodig. Zie [De console en Editor voor inhoudsfragmenten aanpassen](/help/implementing/developing/extending/content-fragments-console-and-editor.md) voor nadere bijzonderheden.
