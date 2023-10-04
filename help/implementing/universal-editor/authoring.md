@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: b3ba87c1fa2f0578f93c7c3bd2671fbc75178b4e
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2410'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ Tik of klik op de knop Publiceren zodat u de wijzigingen in de live inhoud kunt 
 
 >[!TIP]
 >
->Zie het document [Inhoud publiceren met de Universal Visual Editor](publishing.md) voor meer informatie over publiceren met de Universele Redacteur.
+>Zie het document [Inhoud publiceren met de Universal Editor](publishing.md) voor meer informatie over publiceren met de Universele Redacteur.
 
 ### De Modus Rail {#rail}
 
@@ -409,7 +409,7 @@ Houd er rekening mee dat in de voorvertoningsmodus tikken of klikken op inhoud r
 Zie deze documenten voor meer informatie over de Universal Editor.
 
 * [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken, zodat u uitzonderlijke ervaringen kunt opdoen, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
-* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
+* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Aan de slag met de Universal Editor in AEM](getting-started.md) - Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 * [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [Kenmerken en typen](attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.

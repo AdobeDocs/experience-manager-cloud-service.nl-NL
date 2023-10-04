@@ -1,10 +1,10 @@
 ---
 title: Universal Editor-verificatie
-description: Leer hoe de Universele Redacteur Adobe Identity Management Systeem (IMS) voor authentificatie gebruikt.
+description: Leer hoe de Universele Redacteur het Systeem van Identity Management van de Adobe (IMS) voor authentificatie gebruikt.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
-source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Leer hoe de Universal Editor wordt geverifieerd.
 
 ## Opties {#options}
 
-De Universele Redacteur gebruikt de authentificatie van Identity Management van het Systeem (IMS), die via Verenigde Shell wordt verstrekt.
+De Universele Redacteur gebruikt de authentificatie van het Systeem van Identity Management van de Adobe (IMS), die via Verenigde Shell wordt verstrekt.
 
 Alle toepassingen/externe pagina&#39;s zijn verantwoordelijk voor verificatie op vereiste back-endsystemen. De universele dienst van de Redacteur heeft deze authentificatie aan achterste systemen nodig om verrichtingen CRUD uit te voeren aangezien het een standalone dienst is.
 
@@ -36,7 +36,7 @@ Zie deze documenten voor meer informatie over de Universal Editor.
 
 * [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken, zodat u uitzonderlijke ervaringen kunt opdoen, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
 * [Inhoud ontwerpen met de Universal Editor](authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
-* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
+* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Aan de slag met de Universal Editor in AEM](getting-started.md) - Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 * [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [Kenmerken en typen](attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.

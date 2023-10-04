@@ -2,9 +2,9 @@
 title: Aan de slag met de Universal Editor in AEM
 description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Als u geen toegang hebt, kunt u een aanvraag indienen via een formulier dat is g
 
 ![Toegang aanvragen tot de Universal Editor](assets/request-access.png)
 
-Klikken **Toegang aanvragen** en vul het formulier in volgens de instructies voor het aanvragen van toegang. Een Adobe-vertegenwoordiger zal uw verzoek beoordelen en contact opnemen om uw kwestie van het gebruik te bespreken.
+Klikken **Toegang aanvragen** en vul het formulier in volgens de instructies voor het aanvragen van toegang. Een vertegenwoordiger van de Adobe zal uw verzoek beoordelen en contact opnemen om uw kwestie van het gebruik te bespreken.
 
 ## Inclusief de Universal Editor Core-bibliotheek {#core-library}
 
@@ -64,7 +64,7 @@ Als u geen React app implementeert en/of rendering op de server vereist, kunt u 
 
 ## Voeg de noodzakelijke configuraties OSGi toe {#osgi-configurations}
 
-Als u AEM inhoud met uw app wilt bewerken met de Universal Editor, moeten de instellingen voor CORS en cookie binnen AEM zijn uitgevoerd.
+Als u AEM inhoud wilt kunnen bewerken met uw app met de Universal Editor, moeten de instellingen voor CORS en cookie binnen AEM zijn uitgevoerd.
 
 Het volgende [OSGi configuraties moeten op de AEM auteursinstantie worden geplaatst.](/help/implementing/deploying/configuring-osgi.md)
 
@@ -86,7 +86,7 @@ Deze eigenschap moet worden ingesteld in het dialoogvenster `com.day.crx.securit
 
 ### org.apache.sling.engine.impl.SlingMainServlet {#sameorigin}
 
-X-frame-opties: SAMEORIGIN voorkomt dat AEM pagina&#39;s binnen een iframe worden weergegeven. Als u de koptekst verwijdert, kunnen de pagina&#39;s worden geladen.
+X-Frame-Opties: SAMEORIGIN voorkomt dat AEM pagina&#39;s binnen een iframe worden weergegeven. Als u de koptekst verwijdert, kunnen de pagina&#39;s worden geladen.
 
 Deze eigenschap moet worden ingesteld in het dialoogvenster `org.apache.sling.engine.impl.SlingMainServlet` OSGi-configuratie.
 
@@ -100,7 +100,7 @@ Deze eigenschap moet worden ingesteld in het dialoogvenster `org.apache.sling.en
 
 ## De pagina instrumenteren {#instrument-page}
 
-De Universal Editor-service vereist een [Naam van uniforme bron (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) om het juiste back-endsysteem te identificeren en te gebruiken voor de inhoud in de app die wordt bewerkt. Daarom wordt een schema URN vereist om inhoud terug naar inhoudsmiddelen in kaart te brengen.
+Voor de Universal Editor-service is een [Naam van uniforme bron (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) om het juiste back-endsysteem te identificeren en te gebruiken voor de inhoud in de app die wordt bewerkt. Daarom wordt een schema URN vereist om inhoud terug naar inhoudsmiddelen in kaart te brengen.
 
 De instrumentatiekenmerken die aan de pagina worden toegevoegd, bestaan voornamelijk uit: [HTML Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) een industriestandaard die ook kan worden gebruikt om HTML semantischer te maken, HTML-documenten indexeerbaar te maken, enz.
 
@@ -116,7 +116,7 @@ Verbindingen die in de app worden gebruikt, worden opgeslagen als `<meta>` -tags
 * `<protocol>` - Hiermee wordt aangegeven welke persistentie-insteekmodule van de Universal Editor Persistence Service moet worden gebruikt. Bijv. `aem`
 * `<url>` - Dit is de URL naar het systeem waar de wijzigingen zullen worden voortgezet. Bijv. `http://localhost:4502`
 
-De id `adobe:aem:editor` vertegenwoordigt de verbinding voor de Adobe Universal Editor.
+De id `adobe:aem:editor` vertegenwoordigt de verbinding voor de Adobe Universele Redacteur.
 
 `itemid`s gebruikt de `urn` om de id te verkorten.
 
@@ -124,7 +124,7 @@ De id `adobe:aem:editor` vertegenwoordigt de verbinding voor de Adobe Universal 
 itemid="urn:<referenceName>:<resource>"
 ```
 
-* `<referenceName>` - Dit is de benoemde referentie die wordt vermeld in het dialoogvenster `<meta>` tag. Bijv. `aemconnection`
+* `<referenceName>` - Dit is de benoemde referentie die wordt vermeld in het dialoogvenster `<meta>` -tag. Bijv. `aemconnection`
 * `<resource>` - Dit is een aanwijzer naar de bron in het doelsysteem. Bijvoorbeeld een AEM inhoudspad, zoals `/content/page/jcr:content`
 
 >[!TIP]
@@ -161,7 +161,7 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## U bent klaar om de Universele Redacteur te gebruiken {#youre-ready}
+## U bent klaar om de Universal Editor te gebruiken {#youre-ready}
 
 Uw app is nu van instrumenten voorzien om de Universal Editor te gebruiken.
 
@@ -173,7 +173,7 @@ Zie deze documenten voor meer informatie over de Universal Editor.
 
 * [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken, zodat u uitzonderlijke ervaringen kunt opdoen, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
 * [Inhoud ontwerpen met de Universal Editor](authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
-* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
+* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [Kenmerken en typen](attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.
 * [Universal Editor-verificatie](authentication.md) - Leer hoe de Universal Editor wordt geverifieerd.

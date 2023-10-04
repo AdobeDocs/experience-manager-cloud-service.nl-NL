@@ -1,18 +1,18 @@
 ---
-title: Universal Visual Editor Introductie
-description: Leer hoe de Universele Visuele Redacteur (a.k.a. Met de Universal Editor) kunt u WYSIWYG-bewerkingen (what-you-see-is-what-you-get) zonder kop en met veel titel uitvoeren. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
+title: Introductie van Universal Editor
+description: Leer hoe de Universele Redacteur wat-u-ziet-is-wat-u-krijgt (WYSIWYG) het uitgeven van om het even welke headless en belangrijke ervaring toelaat. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '919'
 ht-degree: 0%
 
 ---
 
 
-# Universal Visual Editor Introductie {#introduction}
+# Introductie van Universal Editor {#introduction}
 
-Leer hoe de Universele Visuele Redacteur (a.k.a. Met de Universal Editor) kunt u WYSIWYG-bewerkingen (what-you-see-is-what-you-get) zonder kop en met veel titel uitvoeren. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
+Leer hoe de Universele Redacteur wat-u-ziet-is-wat-u-krijgt (WYSIWYG) het uitgeven van om het even welke headless en belangrijke ervaring toelaat. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
 
 ## Achtergrond {#background}
 
@@ -42,7 +42,7 @@ De vereisten voor een implementatie om de Universele Redacteur te gebruiken zijn
 
 De auteur van een inhoud moet dezelfde krachtige bewerkingservaring hebben als de AEM pagina-editor. Maar in de Universal Editor kunnen auteurs van inhoud bewerken **alle** inhoud visueel en in context en ondersteunt:
 
-* **Paginastructuren AEM** - Genest `cq:Components` van `cq:Pages`, met inbegrip van ervaringsfragmenten
+* **Paginastructuren AEM** - Genest `cq:Components` van `cq:Pages`, inclusief ervaringsfragmenten
 * **Inhoudsfragmenten AEM** - Inhoud uit inhoudsfragmenten bewerken zoals deze in de context van de ervaring worden weergegeven.
 * **Documenten** - Het bewijs van concepten heeft getoond dat ook Word, Excel, de Documenten van Google of van de Prijsverhoging de zelfde manier (dit is WIP) kunnen worden uitgegeven.
 
@@ -59,12 +59,12 @@ Door de ervaring voor het bewerken van inhoud los te koppelen van een bepaald sy
 ![De waarde van de universele editor](assets/value.png)
 
 * **Uitzonderlijke ervaringen leveren** - Om artsen in staat te stellen een aantrekkelijke ervaring voor bezoekers te creëren, staat de Universele Redacteur artsen toe om de inhoud in de context van de voorproef tot stand te brengen en uit te geven. Hierdoor kunnen ze inhoud maken die past bij het ontwerp van de ervaring en die een zinvolle reis voor bezoekers is.
-* **Snelheid inhoud verhogen** - Als u de beheerworkflow van artsen wilt stroomlijnen, kunt u met de Universal Editor inhoud bewerken in de voorvertoning. Zo kunt u artsen begeleiden door alleen de opties weer te geven die relevant zijn voor die context en de workflow onafhankelijk te maken van de inhoudsbronnen.
+* **Snelheid van inhoud verhogen** - Als u de beheerworkflow van artsen wilt stroomlijnen, kunt u met de Universal Editor inhoud bewerken in de voorvertoning. Zo kunt u artsen begeleiden door alleen de opties weer te geven die relevant zijn voor die context en de workflow onafhankelijk te maken van de inhoudsbronnen.
 * **Recentere ontwikkelaarservaring** - Om het heterogene toepassingslandschap in de wereld te ondersteunen, is de Universal Editor volledig ontkoppeld en is hij technologisch gezien niet-afhankelijk, zodat ontwikkelaars hun voorkeurstechnologie kunnen gebruiken om de ervaring te implementeren.
 
-## Universal Visual Editor en de Content Fragment Editor {#universal-editor-content-fragment-editor}
+## De Universal Editor en de Content Fragment Editor {#universal-editor-content-fragment-editor}
 
-Op het eerste gezicht lijkt het misschien alsof de Universal Visual Editor en de Content Fragment Editor vergelijkbare bewerkingsmogelijkheden bieden. Deze editors bieden echter zeer verschillende mogelijkheden en vervullen verschillende taken van de marketingdeskundige.
+Op het eerste gezicht lijken de Universal Editor en de Content Fragment Editor vergelijkbare bewerkingsmogelijkheden. Deze editors bieden echter zeer verschillende mogelijkheden en vervullen verschillende taken van de marketingdeskundige.
 
 ### Inhoudsfragmenteditor {#content-fragment-editor}
 
@@ -72,7 +72,7 @@ Een marketingdeskundige wil inhoud maken zonder de layout ervan te hoeven omschr
 
 * De onderliggende taak die moet worden uitgevoerd, is het schalen van de inhoudsstrategie.
 
-### Universal Visual Editor {#universal-editor}
+### Universele editor {#universal-editor}
 
 Een marketingdeskundige wil inhoud maken die is toegesneden op de lay-out van een bepaalde context en die een uitzonderlijke ervaring biedt.
 
@@ -82,14 +82,14 @@ Een marketingdeskundige wil inhoud maken die is toegesneden op de lay-out van ee
 
 Het is belangrijk om op te merken dat de Universele Redacteur een werk in uitvoering is en sommige van de mogelijkheden die in dit document worden beschreven een visie van de definitieve redacteur zijn en niet noodzakelijk representatief voor zijn huidige mogelijkheden zijn.
 
-Neem contact op met uw Adobe-contactpersoon voor meer informatie over de functies die u voor de Universal Editor wilt gaan gebruiken.
+Neem contact op met de Adobe voor meer informatie over de functies die u voor de Universal Editor wilt gebruiken.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Zie deze documenten voor meer informatie over de Universal Editor.
 
 * [Inhoud ontwerpen met de Universal Editor](authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
-* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
+* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Aan de slag met de Universal Editor in AEM](getting-started.md) - Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 * [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [Kenmerken en typen](attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.

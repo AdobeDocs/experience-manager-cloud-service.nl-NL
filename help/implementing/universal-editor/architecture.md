@@ -2,9 +2,9 @@
 title: Architectuur van Universal Editor
 description: Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen 
 
 ## Bouwstenen voor architectuur {#building-blocks}
 
-De Universele Redacteur wordt samengesteld uit vier essentiële bouwstenen die met elkaar in wisselwerking staan om inhoudsauteurs toe te staan om het even welk aspect van om het even welke inhoud in om het even welke implementatie uit te geven zodat kunt u uitzonderlijke ervaringen leveren, inhoudssnelheid verhogen, en een state-of-the-art ontwikkelaarservaring verstrekken.
+De Universele Redacteur wordt samengesteld uit vier essentiële bouwstenen die met elkaar in wisselwerking staan om inhoudsauteurs toe te staan om het even welk aspect van om het even welke inhoud in om het even welke implementatie uit te geven zodat kunt u uitzonderlijke ervaringen leveren, inhoudssnelheid verhogen, en een state-of-the-art ontwikkelaarervaring verstrekken.
 
 1. [Editors](#editors)
 1. [Externe app](#remote-app)
@@ -49,7 +49,7 @@ De Universal Editor streeft naar een minimale SDK, zodat de instrumentatie de ve
 
 ### Persistentielaag {#persistence-layer}
 
-* **Inhoudsfragmentmodel** - Voor ondersteuning van de rail voor het bewerken van eigenschappen van inhoudsfragmenten, zijn de Content Fragment Editor en op formulieren gebaseerde editors, modellen per component en inhoudsfragment vereist.
+* **Inhoudsfragmentmodel** - Voor ondersteuning van de rails voor het bewerken van eigenschappen van inhoudsfragmenten, zijn de Content Fragment Editor en op formulieren gebaseerde editors, modellen per component en inhoudsfragment vereist.
 * **Inhoud** - Inhoud kan overal worden opgeslagen, bijvoorbeeld in AEM, Magento, enzovoort.
 
 ![Persistentielaag](assets/persistence-layer.png)
@@ -80,7 +80,7 @@ Zie deze documenten voor meer informatie over de Universal Editor.
 
 * [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken, zodat u uitzonderlijke ervaringen kunt opdoen, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
 * [Inhoud ontwerpen met de Universal Editor](authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
-* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
+* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Aan de slag met de Universal Editor in AEM](getting-started.md) - Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 * [Kenmerken en typen](attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.
 * [Universal Editor-verificatie](authentication.md) - Leer hoe de Universal Editor wordt geverifieerd.

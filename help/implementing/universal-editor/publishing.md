@@ -1,26 +1,26 @@
 ---
-title: Inhoud publiceren met de Universal Visual Editor
-description: Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
+title: Inhoud publiceren met de Universal Editor
+description: Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
 
 
-# Inhoud publiceren met de Universal Visual Editor {#publishing}
+# Inhoud publiceren met de Universal Editor {#publishing}
 
-Leer hoe de Universal Visual Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
+Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 
 ## Gelijksoortigheid met AEM {#similarities}
 
-Voor gebruikers van AEM, werkt het proces om inhoud met de Universele Visuele Redacteur te publiceren aangezien u gewend bent: bij publicatie in AEM wordt de inhoud overgenomen van de auteurslaag naar de publicatielaag.
+Voor gebruikers van AEM werkt het proces om inhoud te publiceren met de Universele Redacteur zoals u gewend bent: bij publicatie in AEM, wordt de inhoud herhaald van de auteursrij aan de publicatielaag.
 
 ## Verschillen {#differences}
 
-Wat het publiceren met de Universele Visuele Redacteur een beetje verschillend maakt is niet zozeer de redacteur zelf, maar eerder het externe ontvangen van app die de Universele Redacteur mogelijk maakt.
+Wat het publiceren met de Universele Redacteur een beetje anders maakt is niet zozeer de redacteur zelf, maar eerder het externe ontvangen van de app die de Universele Redacteur mogelijk maakt.
 
 Als de app extern wordt gehost, zorgt de webtoepassing ervoor dat inhoud uit de auteurslaag wordt geladen wanneer de app door auteurs in de editor wordt geopend en vanaf de publicatielaag wordt geladen wanneer bezoekers de app openen.
 
