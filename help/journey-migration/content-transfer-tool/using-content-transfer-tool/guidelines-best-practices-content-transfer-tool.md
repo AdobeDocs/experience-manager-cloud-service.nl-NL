@@ -2,10 +2,10 @@
 title: Richtlijnen en tips en trucs voor het gebruik van het gereedschap Inhoud overbrengen
 description: Leer de richtlijnen en de beste werkwijzen voor het gebruik van het gereedschap Inhoud overbrengen.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 10%
+source-wordcount: '1432'
+ht-degree: 11%
 
 ---
 
@@ -78,12 +78,6 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 * De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. De _Extractie_ proceskopieën `/home` in de migratieset en er wordt een gebruikerstoewijzing aan toegevoegd door een veld toe te voegen dat van het e-mailadres van elke gebruiker is gemaakt. Zie voor meer informatie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). De _Inname_ proces kopieert alle gebruikers en groepen die in gemigreerde inhoud ACLs van verwijzingen worden voorzien. Zie [Gesloten gebruikersgroepen migreren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen voor groepen die in een Gesloten beleid van de Groep van de Gebruiker (CUG) worden gebruikt.
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
-
-* Na het voltooien van de *Extractie* fase van het proces voor de overdracht van inhoud en vóór het begin van de *Ingestiefase* om inhoud in uw as a Cloud Service AEM in te voeren *Werkgebied* of *Productie* instanties, registreer een steunkaartje. Adobe op de hoogte stellen van uw voornemen om te gaan werken *Inname* zodat de Adobe ervoor kan zorgen dat er geen onderbrekingen optreden tijdens de *Inname* proces. Logboek één week voor uw geplande ondersteuningsticket *Inname* datum. Nadat u het steunkaartje hebt voorgelegd, verstrekt het ondersteuningsteam raad over de volgende stappen. U kunt een ondersteuningsticket verzenden met de volgende gegevens:
-
-   * De exacte datum en geschatte tijd (met uw tijd-streek) wanneer u van plan bent om te beginnen *Inname* fase.
-   * Omgevingstype (werkgebied of productie) waarin u gegevens wilt opnemen.
-   * Programma-id.
 
 * De *Ingestiefase* voor de auteur schalen neer de volledige auteursplaatsing. Dit betekent dat de AEM van de auteur niet beschikbaar is tijdens het hele innameproces. Zorg er ook voor dat er geen Cloud Manager-pijplijnen worden uitgevoerd terwijl u het dialoogvenster *Inname* fase.
 

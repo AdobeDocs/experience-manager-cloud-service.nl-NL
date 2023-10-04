@@ -2,9 +2,9 @@
 title: Inhoud in Cloud Service invoegen
 description: Leer hoe u met de Cloud Acceleration Manager inhoud kunt opnemen van uw migratieset naar een bestemmings Cloud Service-instantie.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
+source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2191'
 ht-degree: 3%
 
 ---
@@ -20,9 +20,6 @@ ht-degree: 3%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="Extractie naar boven"
 
 Voer de onderstaande stappen uit om uw migratieset in te voeren met gebruik van Cloud Acceleration Manager:
-
->[!NOTE]
->Heb je een ondersteuningsticket voor deze inname onthouden? Zie [Belangrijke overwegingen voordat u het gereedschap Inhoud overbrengen gebruikt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) om die reden en om andere redenen kan de inname succesvol zijn .
 
 1. Ga naar Cloud Acceleration Manager. Klik op de projectkaart en klik op de kaart voor inhoudsoverdracht. Navigeren naar **Ingestietaken** en klik op **Nieuwe inname**
 
@@ -120,21 +117,27 @@ Dit bericht geeft aan dat de Cloud Acceleration Manager de migratieservice van d
 > Het veld &quot;Migratietoken&quot; wordt weergegeven omdat het ophalen van dat token in sommige gevallen niet is toegestaan. Door het handmatig aanbrengen van de injectie toe te staan, kan de gebruiker de opname snel starten, zonder extra hulp. Als het token is opgegeven en het bericht nog steeds wordt weergegeven, was het ophalen van het token niet het probleem.
 
 * AEM as a Cloud Service handhaaft de milieustaat, en moet af en toe de migratiedienst opnieuw beginnen om diverse normale redenen. Als die dienst opnieuw begint, kan het niet worden bereikt, maar is uiteindelijk beschikbaar.
-* Het is mogelijk dat een ander proces op de instantie wordt uitgevoerd. Bijvoorbeeld, als het Orchestrator van de Versie een update toepast, kan het systeem bezig zijn en de migratiedienst regelmatig niet beschikbaar. Daarom wordt het ten zeerste aanbevolen om updates tijdens een opname te pauzeren, en de mogelijkheid om het werkgebied of de productie-instantie te beschadigen.
+* Het is mogelijk dat een ander proces op de instantie wordt uitgevoerd. Als [Versie-updates AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) wordt een update toegepast, is het systeem mogelijk bezet en is de migratieservice regelmatig niet beschikbaar. Zodra dat proces is voltooid, kan opnieuw worden geprobeerd om met de inname te beginnen.
 * Als een [IP de Lijst van gewenste personen is toegepast](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager wordt het bereiken van de migratieservice door Cloud Acceleration Manager geblokkeerd. Een IP adres kan niet voor ingesties worden toegevoegd omdat zijn adres dynamisch is. Momenteel, is de enige oplossing de IP lijst van gewenste personen onbruikbaar te maken terwijl de opname loopt.
 * Er kunnen andere redenen zijn die een onderzoek vereisen. Neem contact op met de klantenservice van de Adobe als de opname nog steeds mislukt.
 
-### Automatische updates via Release Orchestrator zijn nog steeds ingeschakeld
+### Updates en oplossingen AEM versie
 
-De Orchestrator van de versie houdt automatisch milieu-bijgewerkt door updates automatisch toe te passen. Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving. Een goede reden om een kaartje van de klantensteun te registreren alvorens een ingang (zie &quot;Nota&quot;hierboven) te beginnen, zodat tijdelijk het onbruikbaar maken van Orchestrator van de Versie kan worden gepland.
+[Versie-updates AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) worden automatisch toegepast op omgevingen om deze up-to-date te houden met de meest recente AEM as a Cloud Service versie. Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving.
 
-Als het Orchestrator van de Versie nog loopt wanneer een ingestie wordt begonnen, presenteert het gebruikersinterface dit bericht. U kunt desondanks doorgaan, waarbij u het risico accepteert, door het veld te controleren en nogmaals op de knop te drukken.
+Als de &quot;Updates van de Versie van de AEM&quot;op het bestemmingsprogramma wordt ingezien, zal het innameproces proberen om zijn rij onbruikbaar te maken alvorens het begint. Wanneer de opname is voltooid, wordt de updaterstatus van de versie geretourneerd naar de staat waarin deze zich bevond voordat de opname(en) werd gestart.
 
 >[!NOTE]
 >
-> De Orchestrator van de versie wordt nu opgesteld aan de milieu&#39;s van de Ontwikkeling, zodat zou het pauzeren updates op die milieu&#39;s eveneens moeten worden gedaan.
+> Er is niet langer een behoefte om een steunkaartje te registreren om &quot;AEM de Updates van de Versie&quot;gehandicapt te krijgen.
 
-![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+Als &quot;AEM de Updates van de Versie&quot;actief is (d.w.z. de updates lopen of een rij worden gevormd om te lopen), zal de ingang niet beginnen en het gebruikersinterface presenteert het volgende bericht. Zodra de updates volledig zijn, kan de opname worden begonnen. U kunt Cloud Manager gebruiken om de huidige status van de pijpleidingen van het programma te bekijken.
+
+>[!NOTE]
+>
+> De &quot;AEM Updates van de Versie&quot;wordt in werking gesteld in de pijpleiding van het milieu en zal wachten tot de pijpleiding duidelijk is. Als updates langer dan verwacht in de wachtrij worden geplaatst, moet u ervoor zorgen dat de pijplijn niet onbedoeld is vergrendeld in een aangepaste workflow.
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
 ### Bijkomende congestiefout als gevolg van Uniqueness Constraint
 
