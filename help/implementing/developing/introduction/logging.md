@@ -2,9 +2,9 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
+source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2657'
 ht-degree: 1%
 
 ---
@@ -501,11 +501,6 @@ Define DISP_LOG_LEVEL debug
 >Voor AEM as a Cloud Service omgevingen is foutopsporing het maximale breedtepunt. Het niveau van het spoorlogboek wordt niet gesteund zodat zou u moeten vermijden plaatsend het wanneer het werken in wolkenmilieu&#39;s.
 
 ## CDN-logboek {#cdn-log}
-
->[!NOTE]
->
->Deze functie wordt begin september geleidelijk aan aan aan de klanten aangeboden.
->
 
 AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding nuttig zijn. De CDN-logindeling kan niet worden aangepast en er bestaat geen concept om de indeling in te stellen op verschillende modi, zoals info, warn of error.
 
