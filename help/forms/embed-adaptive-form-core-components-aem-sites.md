@@ -4,9 +4,9 @@ description: Gebruik Adaptief Form Core-componenten op een AEM Sites-pagina om e
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2031'
 ht-degree: 0%
 
 ---
@@ -267,3 +267,8 @@ AEM sitepagina bevat een verwijzing naar het adaptieve formulier. Wanneer u een 
 
 * Koptekst en voettekst in het oorspronkelijke formulier worden niet opgenomen in het ingesloten formulier.
 * Concepten en opmerkingen van gebruikers met ingesloten formulieren worden ondersteund en kunnen worden weergegeven op de tabbladen Concepten en Verzonden Forms op de Forms Portal.
+
+>[!MORELIKETHIS]
+>
+>* [Aangepast formulier insluiten op basis van kerncomponenten op een externe webpagina](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [Aangepast formulier insluiten in externe webpagina](/help/forms/embed-adaptive-form-external-web-page.md)

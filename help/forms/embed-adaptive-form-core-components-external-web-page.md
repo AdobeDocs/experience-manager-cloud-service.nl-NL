@@ -1,16 +1,16 @@
 ---
-title: Aangepast formulier insluiten in externe webpagina
-description: Leer hoe u een adaptief formulier insluit in een externe webpagina
+title: Hoe kunt u een adaptief formulier op basis van Core Components insluiten in een externe webpagina?
+description: Leer een Adaptive Forms in te sluiten op een website.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
-
 
 # Aangepast formulier insluiten op basis van kerncomponenten op een externe webpagina {#embed-adaptive-form-in-external-web-page}
 
@@ -162,6 +162,3 @@ Houd bij het insluiten van een adaptief formulier in een webpagina rekening met 
 1. Ga bij AEM publicatie-instantie naar AEM Web Console Configuration Manager op `https://'[server]:[port]'/system/console/configMgr`.
 1. Zoek en open de **Filter Apache Sling Referrer** configuratie.
 1. Geef in het veld Toegestane gastheren het domein op waar de webpagina zich bevindt. Het laat de gastheer toe om POST verzoeken aan de AEM server te doen. U kunt ook de reguliere expressie gebruiken om een reeks externe toepassingsdomeinen op te geven.
-
-
-

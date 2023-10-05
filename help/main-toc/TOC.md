@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9146bf7222ad3cb74e6558868c41b822364ef3f0
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '4296'
+source-wordcount: '4308'
 ht-degree: 19%
 
 ---
@@ -569,7 +569,8 @@ ht-degree: 19%
          + [Adaptief Forms Analytics-rapport weergeven en begrijpen](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Een adaptief formulier integreren met Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Een adaptieve Forms insluiten in een AEM Sites-pagina](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [Aangepast formulier insluiten op basis van kerncomponenten op een externe webpagina](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [Adaptief formulier insluiten op basis van Core Components op een externe webpagina](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [Het aangepaste formulier insluiten op basis van Foundation Components op een externe webpagina](/help/forms/embed-adaptive-form-external-web-page.md)
       + Formuliergegevensmodel {#use-form-data-model}
          + [Verbind uw gegevensbronnen met Cloud Service](/help/forms/data-integration.md)
          + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
