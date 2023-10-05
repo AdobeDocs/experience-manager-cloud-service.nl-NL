@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2023.10.0 in Adobe Experience Ma
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.10.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 661eac787439e6e696574a6973afa7e39eeb443e
+source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -25,16 +25,15 @@ De releasedatum voor Cloud Manager versie 2023.10.0 in AEM as a Cloud Service is
 
 ## Wat is er nieuw? {#what-is-new}
 
-* [U kunt een pijpleiding nu veilig annuleren](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#cancel) in de stappen voor het valideren en bouwen van afbeeldingen.
 * Verbeteringen aan [indexeren](/help/operations/indexing.md) hebben verminderde pijpleidingsduur wanneer het opstellen van nieuwe indexen.
    * De verbeteringen zijn afhankelijk van het inhoudsprofiel.
 * Automatisch [updates voor ontwikkelomgevingen](/help/implementing/cloud-manager/manage-environments.md#updating-environments) zijn standaard ingeschakeld voor nieuwe programma&#39;s, waardoor u de tijd bespaart die nodig is om updates handmatig uit te voeren.
    * Deze update wordt gefaseerd uitgevoerd.
-* Met de release van oktober 2023 van Cloud Manager worden Java- en Maven-versies bijgewerkt via een gefaseerde implementatie.
-   * Apache Maven wordt bijgewerkt naar versie 3.8.8.
-   * De Java-versies worden bijgewerkt naar Oracle JDK 8u371 en Oracle JDK 11.0.20.
-   * Standaard worden de `JAVA_HOME` omgevingsvariabele wordt bijgewerkt naar `/usr/lib/jvm/jdk1.8.0_371` die Oracle JDK 8u371 bevat.
-   * Zie het document [Build-omgeving](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) voor meer informatie .
+* Met de release van oktober 2023 van Cloud Manager worden Java-versies bijgewerkt via een gefaseerde implementatie.
+   * De kleine versies voor Java 8 en 11 en Maven zijn bijgewerkt en zullen in de komende twee maanden geleidelijk worden geïmplementeerd. De nieuwe versie heeft veelvoudige veiligheidsmoeilijke situaties en insecten. De nieuwe versies zijn:
+   * *Gemaakt: 3.8.8*
+   * *Java 8-versie: /usr/lib/jvm/jdk1.8.0_371*
+   * *Java 11-versie: /usr/lib/jvm/jdk-11.0.20*
    * [Zie het advies van OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) voor meer informatie over de beveiliging en foutoplossingen in deze JDK-updates.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
