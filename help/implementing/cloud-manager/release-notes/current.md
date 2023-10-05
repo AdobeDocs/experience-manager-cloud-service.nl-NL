@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2023.9.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.9.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2023.10.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.10.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
+source-git-commit: 661eac787439e6e696574a6973afa7e39eeb443e
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2023.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2023.10.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release 2023.9.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
+Op deze pagina worden de opmerkingen bij de release 2023.10.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
 
 >[!NOTE]
 >
@@ -21,16 +21,31 @@ Op deze pagina worden de opmerkingen bij de release 2023.9.0 van Cloud Manager i
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2023.9.0 in AEM as a Cloud Service is 14 september 2023. De volgende release is gepland voor 5 oktober 2023.
+De releasedatum voor Cloud Manager versie 2023.10.0 in AEM as a Cloud Service is 5 oktober 2023. De volgende release is gepland voor 2 november 2023.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* CDN-logbestanden kunnen, indien beschikbaar, worden gedownload via de interface van Cloud Manager.
-* Gebruikers kunnen zich nu aanmelden om Experience Audit Testing van Google LightHouse op te nemen in niet-productie, volledige stapelleidingen.
+* [U kunt een pijpleiding nu veilig annuleren](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#cancel) in de stappen voor het valideren en bouwen van afbeeldingen.
+* Verbeteringen aan [indexeren](/help/operations/indexing.md) hebben verminderde pijpleidingsduur wanneer het opstellen van nieuwe indexen.
+   * De verbeteringen zijn afhankelijk van het inhoudsprofiel.
+* Automatisch [updates voor ontwikkelomgevingen](/help/implementing/cloud-manager/manage-environments.md#updating-environments) zijn standaard ingeschakeld voor nieuwe programma&#39;s, waardoor u de tijd bespaart die nodig is om updates handmatig uit te voeren.
+   * Deze update wordt gefaseerd uitgevoerd.
+* Met de release van oktober 2023 van Cloud Manager worden Java- en Maven-versies bijgewerkt via een gefaseerde implementatie.
+   * Apache Maven wordt bijgewerkt naar versie 3.8.8.
+   * De Java-versies worden bijgewerkt naar Oracle JDK 8u371 en Oracle JDK 11.0.20.
+   * Standaard worden de `JAVA_HOME` omgevingsvariabele wordt bijgewerkt naar `/usr/lib/jvm/jdk1.8.0_371` die Oracle JDK 8u371 bevat.
+   * Zie het document [Build-omgeving](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) voor meer informatie .
+   * [Zie het advies van OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) voor meer informatie over de beveiliging en foutoplossingen in deze JDK-updates.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
 Maak deel uit van ons programma voor vroegtijdige goedkeuring en heb de kans om een aantal van de komende kenmerken te testen.
+
+### Aangepaste machtigingen {#custom-permissions}
+
+[Aangepaste machtigingen voor Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) Hiermee kunt u nieuwe aangepaste machtigingsprofielen maken met configureerbare machtigingen om de toegang tot programma&#39;s, pijpleidingen en omgevingen voor gebruikers van Cloud Manager te beperken.
+
+Als u interesse hebt in het testen van deze nieuwe functie en het delen van uw feedback, kunt u een e-mail sturen `Grp-CloudManager-custom-permissions@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
 
 ### Self-Service inhoud herstellen {#content-restore}
 
@@ -52,9 +67,3 @@ Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een 
 Het dashboard maakt gebruik van Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het tegen om het even welke Web-pagina in werking stellen, openbaar of het vereisen van authentificatie. Er zijn audits voor prestaties, toegankelijkheid, progressieve webapps, SEO en meer.
 
 Geïnteresseerd in het testen van het nieuwe dashboard? Stuur een e-mail naar `aem-lighthouse-pilot@adobe.com` via je e-mail die aan je Adobe ID is gekoppeld. We kunnen je aan de slag.
-
-## Opgeloste problemen {#bug-fixes}
-
-* Wanneer een programma wordt geschrapt, wordt om het even welke bijbehorende, lopende pijpleiding nu ook geschrapt.
-* Als een pijpleiding lopend is, **Verzenden** van de **GoLive voltooid** wordt nu onbruikbaar gemaakt en deelt de gebruiker mee dat de go-live datum niet wegens de lopende pijpleiding kan worden geplaatst.
-* Er is een incidentele fout gecorrigeerd waarbij alle stappen van een uitvoering van een pijpleiding zijn gemarkeerd als voltooid, maar de status van de pijpleiding nog steeds actief was, waardoor er een geplakte toestand werd weergegeven.
