@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit
 description: Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 57a7cd3fd2bfc34ebcee82832e020cf45887afa9
 workflow-type: tm+mt
-source-wordcount: '3502'
+source-wordcount: '3868'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die do
 
 >[!NOTE]
 >
->Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege Adobe-eigen informatie. U kunt de volledige lijst met regels downloaden [gebruiken van deze verbinding](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
+>Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege informatie die eigendom is van de Adobe. U kunt de volledige lijst met regels downloaden [gebruiken van deze verbinding](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
 
 >[!NOTE]
 >
@@ -33,8 +33,8 @@ In de volgende sectie worden SonarQube-regels beschreven die door Cloud Manager 
 ### Gebruik geen potentieel gevaarlijke functies {#do-not-use-potentially-dangerous-functions}
 
 * **Sleutel**: CQRules:CWE-676
-* **Type**: Kwetsbaarheid
-* **Ernst**: Majoor
+* **Type**: kwetsbaarheid
+* **Ernst**: Primair
 * **Sinds**: Versie 2018.4.0
 
 De methoden `Thread.stop()` en `Thread.interrupt()` kan problemen veroorzaken die moeilijk te reproduceren zijn en, soms, veiligheidskwetsbaarheden. Het gebruik ervan moet zorgvuldig worden gecontroleerd en gevalideerd. Over het algemeen is het doorgeven van berichten een veiligere manier om vergelijkbare doelen te bereiken.
@@ -89,8 +89,8 @@ public class DoThis implements Runnable {
 ### Gebruik geen opmaaktekenreeksen die extern kunnen worden beheerd {#do-not-use-format-strings-which-may-be-externally-controlled}
 
 * **Sleutel**: CQRules:CWE-134
-* **Type**: Kwetsbaarheid
-* **Ernst**: Majoor
+* **Type**: kwetsbaarheid
+* **Ernst**: Primair
 * **Sinds**: Versie 2018.4.0
 
 Het gebruiken van een formaatkoord van een externe bron (zoals een verzoekparameter of user-generated inhoud) kan een toepassing aan ontkenning van de dienstaanvallen blootstellen. Er zijn omstandigheden waarin een indelingstekenreeks extern kan worden beheerd, maar alleen is toegestaan vanuit vertrouwde bronnen.
@@ -108,7 +108,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 ### HTTP-aanvragen moeten altijd socket- en verbindingstime-outs hebben {#http-requests-should-always-have-socket-and-connect-timeouts}
 
 * **Sleutel**: CQRules:ConnectionTimeoutMechanism
-* **Type**: Bug
+* **Type**: Fout
 * **Ernst**: Kritiek
 * **Sinds**: Versie 2018.6.0
 
@@ -184,12 +184,12 @@ public void orDoThis() {
 
 * **Sleutel**: CQRules:CQBP-72
 * **Type**: Code Smell
-* **Ernst**: Majoor
+* **Ernst**: Primair
 * **Sinds**: Versie 2018.4.0
 
-`ResourceResolver` objecten verkregen uit `ResourceResolverFactory` verbruikt systeembronnen. Hoewel er maatregelen bestaan om deze middelen terug te vorderen wanneer een `ResourceResolver` niet meer in gebruik is, is het efficiënter om geopende `ResourceResolver` objecten aanroepen `close()` methode.
+`ResourceResolver` objecten verkregen uit de `ResourceResolverFactory` verbruikt systeembronnen. Hoewel er maatregelen bestaan om deze middelen terug te vorderen wanneer een `ResourceResolver` niet meer in gebruik is, is het efficiënter om geopende `ResourceResolver` objecten aanroepen `close()` methode.
 
-Eén relatief gebruikelijke misvatting is dat `ResourceResolver` objecten die met een bestaande JCR-sessie zijn gemaakt, mogen niet expliciet worden gesloten of dat de onderliggende JCR-sessie hierdoor wordt gesloten. Dat is niet het geval. Ongeacht hoe een `ResourceResolver` wordt geopend, moet het worden gesloten wanneer het niet meer wordt gebruikt. Sinds `ResourceResolver` implementeert de `Closeable` -interface, is het ook mogelijk de `try-with-resources` syntaxis in plaats van expliciet aan te roepen `close()`.
+Eén relatief gebruikelijke misvatting is dat `ResourceResolver` objecten die met een bestaande JCR-sessie zijn gemaakt, mogen niet expliciet worden gesloten of dat de onderliggende JCR-sessie hierdoor wordt gesloten. Dat is niet het geval. Ongeacht hoe `ResourceResolver` wordt geopend, moet het worden gesloten wanneer het niet meer wordt gebruikt. Sinds `ResourceResolver` implementeert de `Closeable` -interface, is het ook mogelijk de `try-with-resources` syntaxis in plaats van expliciet aan te roepen `close()`.
 
 #### Niet-compatibele code {#non-compliant-code-4}
 
@@ -226,7 +226,7 @@ public void orDoThis(Session session) throws Exception {
 
 * **Sleutel**: CQRules:CQBP-75
 * **Type**: Code Smell
-* **Ernst**: Majoor
+* **Ernst**: Primair
 * **Sinds**: Versie 2018.4.0
 
 Zoals beschreven in het [Verkoopdocumentatie](https://sling.apache.org/documentation/the-sling-engine/servlets.html)bindingen van servlets via paden worden afgeraden. Padgebonden servers kunnen geen standaard JCR-toegangsbesturingselementen gebruiken en vereisen daarom extra beveiligingsstrengheid. In plaats van het gebruiken van weg-gebonden servlets, wordt het geadviseerd om knopen in de bewaarplaats tot stand te brengen en servlets te registreren door middeltype.
@@ -498,7 +498,7 @@ public void doThis(Resource resource) {
 ### Gebruik geen Sling Planner {#sonarqube-sling-scheduler}
 
 * **Sleutel**: CQRules:AMSCORE-554
-* **Type**: Compatibiliteit van code met Cloud Service/Smal
+* **Type**: Compatibiliteit code/Cloud Service
 * **Ernst**: Klein
 * **Sinds**: Versie 2020.5.0
 
@@ -509,7 +509,7 @@ Zie [Apache Sling Event en Job Handling](https://sling.apache.org/documentation/
 ### Gebruik geen API&#39;s die zijn vervangen door Experience Managers {#sonarqube-aem-deprecated}
 
 * **Sleutel**: AMSCORE-553
-* **Type**: Compatibiliteit van code met Cloud Service/Smal
+* **Type**: Compatibiliteit code/Cloud Service
 * **Ernst**: Klein
 * **Sinds**: Versie 2020.5.0
 
@@ -531,11 +531,11 @@ In de volgende sectie worden de OakPAL-controles beschreven die door Cloud Manag
 ### Product-API&#39;s die met @ProviderType zijn geannoteerd, mogen niet door klanten worden geïmplementeerd of uitgebreid {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 * **Sleutel**: CQBP-84
-* **Type**: Bug
+* **Type**: Fout
 * **Ernst**: Kritiek
 * **Sinds**: Versie 2018.7.0
 
-De Experience Manager-API bevat Java™-interfaces en -klassen die alleen door aangepaste code moeten worden gebruikt, maar niet geïmplementeerd. De interface `com.day.cq.wcm.api.Page` uitsluitend door de Experience Manager worden uitgevoerd.
+De Experience Manager-API bevat Java™-interfaces en -klassen die alleen bedoeld zijn voor gebruik — maar niet geïmplementeerd — door aangepaste code. Bijvoorbeeld de interface `com.day.cq.wcm.api.Page` uitsluitend door de Experience Manager worden uitgevoerd.
 
 Wanneer nieuwe methodes aan deze interfaces worden toegevoegd, beïnvloeden die extra methodes geen bestaande code die deze interfaces gebruikt. Dientengevolge, wordt de toevoeging van nieuwe methodes aan deze interfaces beschouwd achterwaarts-compatibel te zijn. Als echter door aangepaste code één van deze interfaces wordt geïmplementeerd, heeft deze aangepaste code een risico voor compatibiliteit met eerdere versies voor de klant geïntroduceerd.
 
@@ -554,11 +554,11 @@ public class DontDoThis implements Page {
 ### Aangepaste Lucene Oak-indexen moeten een Tika-configuratie hebben {#oakpal-indextikanode}
 
 * **Sleutel**: IndexTikaNode
-* **Type**: Bug
+* **Type**: Fout
 * **Ernst**: Blocker
-* **Sinds**: 2021,8,0
+* **Sinds**: 2021.8.0
 
-De veelvoudige uit-van-de-doos indexen van het Eak van de Experience Manager omvatten een configuratie van de Tika en de aanpassingen van deze indexen moeten een configuratie van de Tika omvatten. Deze regel controleert aanpassingen van `damAssetLucene`, `lucene`, en `graphqlConfig` indexeert en roept een kwestie aan de orde als of `tika`  knooppunt ontbreekt of als het `tika` node mist een onderliggende node genaamd `config.xml`.
+De veelvoudige uit-van-de-doos indexen van het Eak van de Experience Manager omvatten een configuratie van de Tika en de aanpassingen van deze indexen moeten een configuratie van de Tika omvatten. Deze regel controleert aanpassingen van `damAssetLucene`, `lucene`, en `graphqlConfig` indexeert en roept een kwestie aan de orde als of `tika`  knooppunt ontbreekt of als het `tika` node mist een onderliggend knooppunt genaamd `config.xml`.
 
 Zie [indexeringsdocumentatie](/help/operations/indexing.md#preparing-the-new-index-definition) voor meer informatie over het aanpassen van indexdefinities.
 
@@ -570,7 +570,6 @@ Zie [indexeringsdocumentatie](/help/operations/indexing.md#preparing-the-new-ind
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
 ```
@@ -583,7 +582,6 @@ Zie [indexeringsdocumentatie](/help/operations/indexing.md#preparing-the-new-ind
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -593,9 +591,9 @@ Zie [indexeringsdocumentatie](/help/operations/indexing.md#preparing-the-new-ind
 ### Aangepaste indexen van luzerak mogen niet synchroon zijn {#oakpal-indexasync}
 
 * **Sleutel**: IndexAsyncProperty
-* **Type**: Bug
+* **Type**: Fout
 * **Ernst**: Blocker
-* **Sinds**: 2021,8,0
+* **Sinds**: 2021.8.0
 
 Eik-indexen van het type `lucene` moet altijd asynchroon worden geïndexeerd. Als u dit niet doet, kan dit leiden tot instabiliteit van het systeem. Meer informatie over de structuur van Lucene-indexen vindt u in de [Oak-documentatie.](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
 
@@ -606,11 +604,8 @@ Eik-indexen van het type `lucene` moet altijd asynchroon worden geïndexeerd. A
     + damAssetLucene-1-custom
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
-      - reindex: false
       - tags: [visualSimilaritySearch]
-      - type: lucene
       + tika
         + config.xml
 ```
@@ -623,7 +618,6 @@ Eik-indexen van het type `lucene` moet altijd asynchroon worden geïndexeerd. A
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -633,9 +627,9 @@ Eik-indexen van het type `lucene` moet altijd asynchroon worden geïndexeerd. A
 ### Aangepaste DAM Asset Lucene Oak-indexen hebben de juiste structuur  {#oakpal-damAssetLucene-sanity-check}
 
 * **Sleutel**: IndexDamAssetLucene
-* **Type**: Bug
+* **Type**: Fout
 * **Ernst**: Blocker
-* **Sinds**: 2021,6,0
+* **Sinds**: 2021.6.0
 
 Als u wilt dat het zoeken naar middelen correct werkt in Experience Manager Assets, kunt u de opties `damAssetLucene` De eiken-index moet een aantal richtlijnen volgen die specifiek zijn voor deze index. Deze regel controleert of de indexdefinitie een multi-getaxeerde genoemd bezit moet hebben `tags` die de waarde bevat `visualSimilaritySearch`.
 
@@ -647,7 +641,6 @@ Als u wilt dat het zoeken naar middelen correct werkt in Experience Manager Asse
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
       + tika
         + config.xml
@@ -661,7 +654,6 @@ Als u wilt dat het zoeken naar middelen correct werkt in Experience Manager Asse
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -671,17 +663,17 @@ Als u wilt dat het zoeken naar middelen correct werkt in Experience Manager Asse
 ### Klantpakketten mogen geen knooppunten onder /libs maken of wijzigen {#oakpal-customer-package}
 
 * **Sleutel**: BannedPath
-* **Type**: Bug
+* **Type**: Fout
 * **Ernst**: Kritiek
 * **Sinds**: Versie 2019.6.0
 
-Het is al lang een goede praktijk dat de `/libs` de inhoudsstructuur in de gegevensopslagplaats van de inhoud van de Experience Manager zou als read-only door klanten moeten worden beschouwd. Knooppunten en eigenschappen wijzigen onder `/libs` brengt een aanzienlijk risico met zich mee voor belangrijke en kleine updates. Wijzigingen in `/libs` moet via officiële kanalen door Adobe worden uitgevoerd.
+Het is al lang een goede praktijk dat de `/libs` de inhoudsstructuur in de gegevensopslagplaats van de inhoud van de Experience Manager zou als read-only door klanten moeten worden beschouwd. Knooppunten en eigenschappen wijzigen onder `/libs` brengt een aanzienlijk risico met zich mee voor belangrijke en kleine updates. Wijzigingen in `/libs` via officiële Adobe.
 
 ### De pakketten zouden geen dubbele configuraties OSGi moeten bevatten {#oakpal-package-osgi}
 
 * **Sleutel**: DuplicateOsgiConfigurations
-* **Type**: Bug
-* **Ernst**: Majoor
+* **Type**: Fout
+* **Ernst**: Primair
 * **Sinds**: Versie 2019.6.0
 
 Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zelfde component OSGi veelvoudige tijden wordt gevormd. Deze kwestie leidt tot dubbelzinnigheid over welke configuratie van toepassing is. Deze regel is &quot;runmode-bewust&quot;in die zin dat het slechts kwesties identificeert waar de zelfde component veelvoudige tijden op de zelfde looppaswijze of de combinatie looppaswijzen wordt gevormd.
@@ -692,7 +684,7 @@ Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zel
 >
 >Als de build bijvoorbeeld pakketten met de naam `com.myco:com.myco.ui.apps` en `com.myco:com.myco.all` waar `com.myco:com.myco.all` insluiten `com.myco:com.myco.ui.apps`, dan alle configuraties binnen `com.myco:com.myco.ui.apps` worden gerapporteerd als duplicaten.
 >
->Dit is doorgaans het geval als de [Richtlijnen voor de structuur van inhoudspakketten](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In dit specifieke voorbeeld wordt het pakket `com.myco:com.myco.ui.apps` ontbreekt het `<cloudManagerTarget>none</cloudManagerTarget>` eigenschap.
+>Dit is doorgaans een geval van niet-naleving van de [Richtlijnen voor de structuur van inhoudspakketten](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In dit specifieke voorbeeld wordt het pakket `com.myco:com.myco.ui.apps` ontbreekt het `<cloudManagerTarget>none</cloudManagerTarget>` eigenschap.
 
 #### Niet-compatibele code {#non-compliant-code-osgi}
 
@@ -718,8 +710,8 @@ Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zel
 ### Configureren en installatiemappen mogen alleen OSGi-knooppunten bevatten {#oakpal-config-install}
 
 * **Sleutel**: ConfigAndInstallShouldOnlyContainOsgiNodes
-* **Type**: Bug
-* **Ernst**: Majoor
+* **Type**: Fout
+* **Ernst**: Primair
 * **Sinds**: Versie 2019.6.0
 
 Om veiligheidsredenen, paden die `/config/` en `/install/` alleen leesbaar zijn door administratieve gebruikers in de Experience Manager en alleen moeten worden gebruikt voor OSGi-configuratie en OSGi-bundels. Als u andere typen inhoud onder paden plaatst die deze segmenten bevatten, resulteert dit in toepassingsgedrag dat per ongeluk verschilt tussen gebruikers met en zonder beheerdersrechten.
@@ -748,8 +740,8 @@ Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` 
 ### Pakketten mogen elkaar niet overlappen {#oakpal-no-overlap}
 
 * **Sleutel**: PackageOverlaps
-* **Type**: Bug
-* **Ernst**: Majoor
+* **Type**: Fout
+* **Ernst**: Primair
 * **Sinds**: Versie 2019.6.0
 
 Vergelijkbaar met de [De pakketten zouden geen dubbele OSGi configuratieregel moeten bevatten,](#oakpal-package-osgi) dit is een gemeenschappelijk probleem bij complexe projecten waar de zelfde knoopweg aan door veelvoudige afzonderlijke inhoudspakketten wordt geschreven. Terwijl het gebruiken van inhoudspakketgebiedsdelen kan worden gebruikt om een verenigbaar resultaat te verzekeren, is het beter om overlappingen volledig te vermijden.
@@ -757,7 +749,7 @@ Vergelijkbaar met de [De pakketten zouden geen dubbele OSGi configuratieregel mo
 ### Standaardontwerpmodus mag geen klassieke UI zijn {#oakpal-default-authoring}
 
 * **Sleutel**: ClassicUIAuthoringMode
-* **Type**: Compatibiliteit van code met Cloud Service/Smal
+* **Type**: Compatibiliteit code/Cloud Service
 * **Ernst**: Klein
 * **Sinds**: Versie 2020.5.0
 
@@ -766,13 +758,13 @@ De OSGi-configuratie `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` defin
 ### Componenten met dialoogvensters moeten een interface-aanraakdialoogvensters hebben {#oakpal-components-dialogs}
 
 * **Sleutel**: ComponentWithOnlyClassicUIDialog
-* **Type**: Compatibiliteit van code met Cloud Service/Smal
+* **Type**: Compatibiliteit code/Cloud Service
 * **Ernst**: Klein
 * **Sinds**: Versie 2020.5.0
 
-Componenten van Experience Managers die een Klassieke UI-dialoogvenster hebben, moeten altijd een overeenkomstig dialoogvenster Touch UI hebben. Beide bieden een optimale ontwerpervaring en zijn compatibel met het implementatiemodel van de Cloud Service, waarbij de klassieke interface niet wordt ondersteund. Deze regel verifieert de volgende scenario&#39;s:
+Componenten van Experience Managers die een Klassieke UI-dialoogvenster hebben, moeten altijd een overeenkomstig dialoogvenster Touch UI hebben. Beide bieden een optimale ontwerpervaring en zijn compatibel met het implementatiemodel van de Cloud Service, waarbij de klassieke gebruikersinterface niet wordt ondersteund. Deze regel verifieert de volgende scenario&#39;s:
 
-* Een component met een klassieke UI-dialoogvenster (een `dialog` onderliggende node) moet een corresponderend Touch UI-dialoogvenster hebben (dat wil zeggen een `cq:dialog` onderliggende node).
+* Een component met een klassieke UI-dialoogvenster (dat wil zeggen een `dialog` onderliggende node) moet een corresponderend Touch UI-dialoogvenster hebben (dat wil zeggen een `cq:dialog` onderliggende node).
 * Een component met een dialoogvenster voor het ontwerpen van een klassieke gebruikersinterface (dat wil zeggen een `design_dialog` knooppunt) moet een corresponderend dialoogvenster voor het ontwerpen van een aanraakinterface hebben (dat wil zeggen een `cq:design_dialog` onderliggende node).
 * Een component met zowel een dialoogvenster voor klassieke gebruikersinterface als een dialoogvenster voor klassieke gebruikersinterface moet zowel een corresponderend dialoogvenster voor aanraakinterface als een overeenkomstig dialoogvenster voor aanraakgebruikersinterface hebben.
 
@@ -781,7 +773,7 @@ De documentatie van de Hulpmiddelen van de Modernisering van de Experience Manag
 ### Pakketten mogen geen veranderbare en onveranderlijke inhoud mengen {#oakpal-packages-immutable}
 
 * **Sleutel**: ImmutableMutableMixedPackage
-* **Type**: Compatibiliteit van code met Cloud Service/Smal
+* **Type**: Compatibiliteit code/Cloud Service
 * **Ernst**: Klein
 * **Sinds**: Versie 2020.5.0
 
@@ -796,7 +788,7 @@ Zie [Projectstructuur Experience Manager](/help/implementing/developing/introduc
 ### Gebruik geen reverse-replicatiemiddelen {#oakpal-reverse-replication}
 
 * **Sleutel**: ReverseReplication
-* **Type**: Compatibiliteit van code met Cloud Service/Smal
+* **Type**: Compatibiliteit code/Cloud Service
 * **Ernst**: Klein
 * **Sinds**: Versie 2020.5.0
 
@@ -807,11 +799,11 @@ De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve op
 ### De middelen in volmacht-toegelaten cliëntbibliotheken zouden in een omslag genoemde middelen moeten zijn {#oakpal-resources-proxy}
 
 * **Sleutel**: ClientlibProxyResource
-* **Type**: Bug
+* **Type**: Fout
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-Clientbibliotheken van Experience Managers kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in het document [Voorprocessoren gebruiken](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) bij het gebruik van proxy-clientbibliotheken moeten deze statische bronnen zich in een onderliggende map bevinden met de naam `resources` om effectief van verwijzingen te worden voorzien op de publicatie instanties.
+Clientbibliotheken van Experience Managers kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in het document [Voorprocessoren gebruiken](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) bij het gebruik van proxy-clientbibliotheken moeten deze statische bronnen zich in een onderliggende map bevinden met de naam `resources` om effectief van verwijzingen te worden voorzien op de publicatieinstanties.
 
 #### Niet-compatibele code {#non-compliant-proxy-enabled}
 
@@ -838,8 +830,8 @@ Clientbibliotheken van Experience Managers kunnen statische bronnen bevatten, zo
 ### Gebruik van workflowprocessen die niet compatibel zijn met Cloud Servicen {#oakpal-usage-cloud-service}
 
 * **Sleutel**: CloudServiceIncompatibleWorkflowProcess
-* **Type**: Bug
-* **Ernst**: Majoor
+* **Type**: Fout
+* **Ernst**: Primair
 * **Sinds**: Versie 2021.2.0
 
 Met de overgang naar assetmicro-services voor de verwerking van bedrijfsmiddelen op as a Cloud Service Experience Manager zijn verschillende workflowprocessen die in on-premise en AMS-versies van Experience Manager werden gebruikt, niet ondersteund of overbodig geworden.
@@ -853,11 +845,11 @@ Het migratiehulpmiddel in [Experience Manager as a Cloud Service Assets GitHub-o
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-Terwijl het gebruik van statische malplaatjes historisch algemeen in de projecten van de Experience Manager is, adviseert Adobe editable malplaatjes omdat zij de meeste flexibiliteit verstrekken en extra eigenschappen steunen die niet in statische malplaatjes aanwezig zijn. Meer informatie vindt u in het document [Paginasjablonen](/help/implementing/developing/components/templates.md).
+Terwijl het gebruik van statische malplaatjes historisch algemeen in de projecten van de Experience Manager is, adviseert de Adobe editable malplaatjes omdat zij de meeste flexibiliteit verstrekken en extra eigenschappen steunen die niet in statische malplaatjes aanwezig zijn. Meer informatie vindt u in het document [Paginasjablonen](/help/implementing/developing/components/templates.md).
 
 De migratie van statische aan editable malplaatjes kan grotendeels worden geautomatiseerd gebruikend [Moderniseringsgereedschappen voor Experience Managers.](https://opensource.adobe.com/aem-modernize-tools/)
 
-### Het gebruik van verouderde basiscomponenten wordt afgeraden {#oakpal-usage-legacy}
+### Het gebruik van oudere basiscomponenten wordt afgeraden {#oakpal-usage-legacy}
 
 * **Sleutel**: LegacyFoundationComponentUsage
 * **Type**: Code Smell
@@ -884,7 +876,7 @@ as a Cloud Service Experience Manager dwingt een strikt naamgevingsbeleid voor n
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) zijn directe onderliggende knooppunten van `/oak:index`. De indexen in andere plaatsen moeten worden bewogen om met as a Cloud Service Experience Manager compatibel te zijn. Meer informatie over zoekindexen vindt u in het document [Inhoud zoeken en indexeren](/help/operations/indexing.md).
+as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) zijn directe onderliggende knooppunten van `/oak:index`. De indexen in andere plaatsen moeten worden bewogen om met as a Cloud Service Experience Manager compatibel te zijn. Het document bevat meer informatie over zoekindexen [Inhoud zoeken en indexeren](/help/operations/indexing.md).
 
 ### Definitieknooppunten van aangepaste zoekindex moeten een compatVersion van 2 hebben {#oakpal-custom-search-compatVersion}
 
@@ -925,7 +917,7 @@ as a Cloud Service Experience Manager vereist dat definities van de aangepaste z
 ### De de definitieknooppunten van de onderzoeksindex van de douane moeten het indextype Lucene gebruiken  {#oakpal-index-type-lucene}
 
 * **Sleutel**: IndexType
-* **Type**: Bug
+* **Type**: Fout
 * **Ernst**: Blocker
 * **Sinds**: Versie 2021.2.0 (type en ernst gewijzigd in 2021.8.0)
 
@@ -938,7 +930,7 @@ as a Cloud Service Experience Manager vereist dat definities van de aangepaste z
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager staat definities van aangepaste zoekindexen niet toe (knooppunten van het type) `oak:QueryIndexDefinition`) van het bevatten van een eigenschap met de naam `seed`. Indexering met deze eigenschap moet worden bijgewerkt voordat de migratie naar de Experience Manager as a Cloud Service is. Zie het document [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
+as a Cloud Service Experience Manager staat definities van aangepaste zoekindexen niet toe (knooppunten van het type) `oak:QueryIndexDefinition`) van een eigenschap met de naam `seed`. Indexering met deze eigenschap moet worden bijgewerkt voordat de migratie naar de Experience Manager as a Cloud Service is. Zie het document [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
 
 ### Definitie-knooppunten voor aangepaste zoekindex mogen geen eigenschap met de naam reindex bevatten {#oakpal-reindex-property}
 
@@ -947,4 +939,209 @@ as a Cloud Service Experience Manager staat definities van aangepaste zoekindexe
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager staat definities van aangepaste zoekindexen niet toe (knooppunten van het type) `oak:QueryIndexDefinition`) van het bevatten van een eigenschap met de naam `reindex`. Indexering met deze eigenschap moet worden bijgewerkt voordat de migratie naar de Experience Manager as a Cloud Service is. Zie het document [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
+as a Cloud Service Experience Manager staat definities van aangepaste zoekindexen niet toe (knooppunten van het type) `oak:QueryIndexDefinition`) van een eigenschap met de naam `reindex`. Indexering met deze eigenschap moet worden bijgewerkt voordat de migratie naar de Experience Manager as a Cloud Service is. Zie het document [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
+
+### Aangepaste DAM-knooppunten voor elementenwinst mogen geen queryPaths opgeven {#oakpal-damAssetLucene-queryPaths}
+
+* **Sleutel**: IndexDamAssetLucene
+* **Type**: Fout
+* **Ernst**: Blocker
+* **Sinds**: Versie 202.1.0
+
+#### Niet-compatibele code {#non-compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-1
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - queryPaths: [/content/dam]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### Compatibele code {#compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Als de definitie van de aangepaste zoekindex compatVersion bevat, moet deze zijn ingesteld op 2 {#oakpal-compatVersion}
+
+* **Sleutel**: IndexCompatVersion
+* **Type**: Code Smell
+* **Ernst**: Primair
+* **Sinds**: Versie 202.1.0
+
+
+### Indexknooppunt dat &#39;includedPaths&#39; opgeeft, moet ook &#39;queryPaths&#39; met dezelfde waarden opgeven {#oakpal-included-paths-without-query-paths}
+
+* **Sleutel**: IndexIncludedPathsWithoutQueryPaths
+* **Type**: Code Smell
+* **Ernst**: Klein
+* **Sinds**: Versie 2023.1.0
+
+Voor aangepaste indexen, beide `includedPaths` en `queryPaths` moeten worden geconfigureerd met identieke waarden. Als één wordt gespecificeerd, moet andere het aanpassen. Er is echter een speciaal geval voor indexen van `damAssetLucene`, inclusief aangepaste versies. Hiervoor dient u alleen `includedPaths`.
+
+### Indexknooppunt dat nodeScopeIndex opgeeft op generiek knooppunttype moet ook includePaths en queryPaths specificeren {#oakpal-full-text-on-generic-node-type}
+
+* **Sleutel**: IndexFulltextOnGenericType
+* **Type**: Code Smell
+* **Ernst**: Klein
+* **Sinds**: Versie 2023.1.0
+
+Wanneer u het `nodeScopeIndex` eigenschap op een &quot;generic&quot; knooppunttype als `nt:unstructured` of `nt:base`moet u ook de `includedPaths` en `queryPaths` eigenschappen.
+`nt:base` kan als &quot;generisch&quot;worden beschouwd, aangezien alle knooptypes van het erven. Zo kunt u een `nodeScopeIndex` op `nt:base` Hiermee worden alle knooppunten in de gegevensopslagruimte geïndexeerd. Op dezelfde manier `nt:unstructured` wordt ook als &quot;generiek&quot; beschouwd, aangezien er veel knooppunten in opslagruimten van dit type zijn.
+
+#### Niet-compatibele code {#non-compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+#### Compatibele code {#compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+  - includedPaths: ["/content/dam/"] 
+  - queryPaths: ["/content/dam/"]
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+### De eigenschap queryLimitReads van de query-engine mag niet worden overschreven {#oakpal-query-limit-reads}
+
+* **Sleutel**: OverrideOfQueryLimitReads
+* **Type**: Code Smell
+* **Ernst**: Klein
+* **Sinds**: Versie 2023.1.0
+
+Als u de standaardwaarde overschrijft, wordt de pagina zeer traag gelezen, vooral wanneer er meer inhoud wordt toegevoegd.
+
+### Meerdere actieve versies van dezelfde code {#oakpal-multiple-active-versions}
+
+* **Sleutel**: IndexDetectMultipleActiveVersionsOfSameIndex
+* **Type**: Code Smell
+* **Ernst**: Klein
+* **Sinds**: Versie 2023.1.0
+
+#### Niet-compatibele code {#non-compliant-code-multiple-active-versions}
+
+```text
++ oak:index
+  + damAssetLucene-1-custom-1
+    ...
+  + damAssetLucene-1-custom-2
+    ...
+  + damAssetLucene-1-custom-3
+    ...
+```
+
+#### Compatibele code {#compliant-code-multiple-active-versions}
+
+```text
++ damAssetLucene-1-custom-3
+    ...
+```
+
+
+### De naam van volledig aangepaste indexdefinities moet in overeenstemming zijn met de officiële richtlijnen {#oakpal-fully-custom-index-name}
+
+* **Sleutel**: IndexValidFullyCustomName
+* **Type**: Code Smell
+* **Ernst**: Klein
+* **Sinds**: Versie 2023.1.0
+
+Het verwachte patroon voor volledig aangepaste indexnamen is: `[prefix].[indexName]-custom-[version]`. Meer informatie vindt u in het document [Inhoud zoeken en indexeren](/help/operations/indexing.md).
+
+
+### Dezelfde eigenschap met verschillende geanalyseerde waarden in dezelfde indexdefinitie {#oakpal-same-property-different-analyzed-values}
+
+#### Niet-compatibele code {#non-compliant-code-same-property-different-analyzed-values}
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+```
+
+#### Compatibele code {#compliant-code-same-property-different-analyzed-values}
+
+Voorbeeld:
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+Voorbeeld:
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+Als de geanalyseerde eigenschap niet expliciet is ingesteld, is de standaardwaarde false.
+
+### Tags, eigenschap
+
+* **Sleutel**: IndexHasValidTagsProperty
+* **Type**: Code Smell
+* **Ernst**: Klein
+* **Sinds**: Versie 2023.1.0
+
+Voor specifieke indexen, zorg ervoor u het markeringsbezit en zijn huidige waarden behoudt. Als u nieuwe waarden toevoegt aan de eigenschap tags, kan het verwijderen van bestaande waarden (of de eigenschap in zijn geheel) leiden tot onverwachte resultaten.
