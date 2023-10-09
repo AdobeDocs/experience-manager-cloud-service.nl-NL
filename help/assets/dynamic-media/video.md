@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
+source-git-commit: 51b048f753fe2e548d0ffdd9e3a903b21032aed7
 workflow-type: tm+mt
-source-wordcount: '9316'
+source-wordcount: '9331'
 ht-degree: 1%
 
 ---
@@ -521,7 +521,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 
 
-### Ondersteuning voor DASH-, multi-subtitle- en multi-audiotracks inschakelen voor uw Dynamic Media-account {#enable-dash}
+## Ondersteuning voor DASH-, multi-subtitle- en multi-audiotracks inschakelen voor uw Dynamic Media-account {#enable-dash}
 
 **Informatie over het inschakelen van DASH-ondersteuning voor uw account**
 DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Als DASH op uw account is ingeschakeld, kunt u kiezen uit DASH of HLS voor adaptieve videostreaming. Of u kunt kiezen voor beide opties met automatische schakeling tussen spelers wanneer **[!UICONTROL auto]** is geselecteerd als het afspeeltype in de voorinstelling Viewer.
@@ -539,7 +539,7 @@ Het inschakelen van DASH-ondersteuning voor uw account gebeurt via een Adobe voo
 
 **Ondersteuning voor multi-subtitle en multi-audiotracks voor uw account inschakelen**
 
-Als u een Adobe Support-case maakt en DASH op uw account wilt inschakelen, kunt u er ook van profiteren dat ondersteuning voor meerdere ondertitels en voor meerdere audiotracks automatisch wordt ingeschakeld. Na deze functie worden alle volgende video&#39;s die u uploadt verwerkt met een nieuwe back-endarchitectuur die ondersteuning voor het toevoegen van multi-subtitle- en multi-audiotracks aan uw video&#39;s bevat.
+Als u een Adobe Support-case maakt voor DASH ingeschakeld op uw account, kunt u er ook van profiteren dat ondersteuning voor meerdere ondertitels en voor meerdere audiotracks automatisch is ingeschakeld. Na deze functie worden alle volgende video&#39;s die u uploadt verwerkt met een nieuwe back-endarchitectuur die ondersteuning voor het toevoegen van multi-subtitle- en multi-audiotracks aan uw video&#39;s bevat.
 
 >[!IMPORTANT]
 >
@@ -551,8 +551,9 @@ Als u een Adobe Support-case maakt en DASH op uw account wilt inschakelen, kunt 
 1. Als u een ondersteuningsgeval wilt maken, volgt u de instructies en zorgt u ervoor dat u de volgende informatie opgeeft:
 
    * Primaire contactpersoon, e-mail, telefoon.
-   * Uw programma-id en milieu-id.
-   * Naam van je Dynamic Media-account.
+   * De omgeving van uw Cloud Servicen (programma-id en milieu-id).
+   * De naam van je Dynamic Media-bedrijfsaccount.
+   * Uw Dynamic Media-regio: Noord-Amerika (NA), Azië-Stille Oceaan (APAC) of Europa-Midden-Oost-Azië (EMEA).
    * Geef op of u ondersteuning voor DASH-, multi-subtitle- en multi-audiotracks wilt inschakelen voor uw Dynamic Media-account, op Experience Manager 6.5.
 
 1. De Steun van de Klant van de Adobe voegt u aan de klant toe wachtlijst die op de orde wordt gebaseerd waarin de verzoeken worden voorgelegd.
@@ -887,7 +888,7 @@ Zie [Statische (niet-afbeeldings) inhoud bedienen](https://experienceleague.adob
 
 ## Hoofdstukmarkeringen aan video toevoegen {#adding-chapter-markers-to-video}
 
-U kunt uw lange formuliervideo&#39;s beter weergeven en navigeren door hoofdstukmarkeringen toe te voegen aan enkele video&#39;s of aan Adaptieve videosets. Wanneer een gebruiker de video afspeelt, kunnen deze de hoofdstukmarkeringen op de videotijdlijn selecteren (ook wel de videoscrubber genoemd). Ze kunnen gemakkelijk naar hun interesse gaan of meteen naar nieuwe inhoud, training en demonstraties gaan.
+U kunt lange-vormvideo&#39;s gemakkelijker bekijken en navigeren door hoofdstukmarkeringen toe te voegen aan enkele video&#39;s of aan Adaptieve videosets. Wanneer een gebruiker de video afspeelt, kunnen deze de hoofdstukmarkeringen op de videotijdlijn selecteren (ook wel de videoscrubber genoemd). Ze kunnen gemakkelijk naar hun interesse gaan of meteen naar nieuwe inhoud, training en demonstraties gaan.
 
 >[!NOTE]
 >
