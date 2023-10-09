@@ -1,13 +1,13 @@
 ---
 title: Het vormen van de Regels van de Filter van het Verkeer met de Regels van WAF
 description: De Regels van de Filter van het Verkeer van het Gebruik met de Regels van WAF om Verkeer te filtreren
-source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
+exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
+source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2740'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen van de Regels van de Filter van het Verkeer met de Regels van WAF aan het Verkeer van de Filter {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
@@ -32,8 +32,7 @@ De filterregels van het verkeer kunnen aan alle types van het wolkenmilieu (RDE,
 
    ```
    config/
-        cdn/
-           cdn.yaml
+        cdn.yaml
    ```
 
 1. `cdn.yaml` moeten metagegevens en een lijst met verkeersfilterregels en WAF-regels bevatten.
@@ -46,7 +45,15 @@ De filterregels van het verkeer kunnen aan alle types van het wolkenmilieu (RDE,
    data:
      trafficFilters:
        rules:
-         ...
+       # Block simple path
+       - name: block-path
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/block/me'
+         action: block
    ```
 
 De &quot;kind&quot;parameter zou aan &quot;CDN&quot;moeten worden geplaatst en de versie zou aan de schemaversie moeten worden geplaatst, die momenteel &quot;1&quot;is. Zie onderstaande voorbeelden.
@@ -81,6 +88,7 @@ De &quot;kind&quot;parameter zou aan &quot;CDN&quot;moeten worden geplaatst en d
       > De gebruikers moeten als Manager van de Plaatsing worden het programma geopend om deze pijpleidingen te vormen of in werking te stellen.
       > Ook, kunt u slechts één pijpleiding Config per milieu vormen en in werking stellen.
 
+   1. Plaats de Plaats van de Code aan waar uw wortelconfiguratie (b.v. /config) wordt opgeslagen.
    1. Selecteren **Opslaan**. Uw nieuwe pijpleiding zal in de pijpleidingskaart verschijnen en kan worden in werking gesteld wanneer u klaar bent.
    1. Voor RDEs, zal de bevellijn worden gebruikt, maar RDE wordt niet gesteund op dit ogenblik.
 
@@ -171,6 +179,7 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 | **doesNotMatch** | `string` | true als het resultaat van de getter niet overeenkomt met opgegeven regex |
 | **in** | `array[string]` | true als de opgegeven lijst het resultaat getter bevat |
 | **notIn** | `array[string]` | true als de opgegeven lijst geen resultaat voor getter bevat |
+| **exists** | `boolean` | true wanneer ingesteld op true en eigenschap bestaat of wanneer ingesteld op false en eigenschap niet bestaat |
 
 ### Handelingsstructuur {#action-structure}
 
@@ -188,7 +197,7 @@ De acties worden geprioriteerd volgens hun types in de volgende lijst, die wordt
 
 ### Lijst met WAF-markeringen {#waf-flags-list}
 
-De `wafFlag` eigenschap kan het volgende omvatten:
+De `wafFlags` eigenschap kan het volgende omvatten:
 
 | **Markering-id** | **Vlagnaam** | **Beschrijving** |
 |---|---|---|
@@ -318,7 +327,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-**Voorbeeld 4**
+**Voorbeeld 5**
 
 Deze regel blokkeert de toegang tot OFAC-landen:
 
@@ -333,7 +342,8 @@ data:
       - name: block-ofac-countries
         when:
           allOf:
-            - { reqProperty: tier, equals: publish }
+            - reqProperty: tier
+              matches: "author|publish"
             - reqProperty: clientCountry
               in:
                 - SY
@@ -379,8 +389,8 @@ data:
   trafficFilters:
     - name: limit-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        - reqProperty: tier
+        - matches: "author|publish"
       rateLimit:
         limit: 60
         window: 10
