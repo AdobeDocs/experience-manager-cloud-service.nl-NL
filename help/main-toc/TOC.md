@@ -8,9 +8,9 @@ user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en 
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2a1bb951c9da5ea0fdcafd1bb82eda3f55d0a16a
+source-git-commit: 73e2e84006cb6435d5bf34eef642269eeb8f5c4e
 workflow-type: tm+mt
-source-wordcount: '4316'
+source-wordcount: '4328'
 ht-degree: 19%
 
 ---
@@ -77,6 +77,7 @@ ht-degree: 19%
    + Opmerkingen bij de release AEMaaCS-onderhoud {#maintenance}
       + [Opmerkingen bij de release voor huidige onderhoud](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [Opmerkingen bij de onderhoudsrelease voor 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md)
@@ -580,6 +581,7 @@ ht-degree: 19%
          + [Integratie van Salesforce-toepassingen met OAuth 2.0-clientreferentie](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [Configureren [!DNL Azure] opslag](/help/forms/configure-azure-storage.md)
          + [Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
+         + [Een adaptief formulier verbinden met de Microsoft SharePoint-lijst](/help/forms/connect-aem-adaptive-form-to-sharepointlist.md)
          + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
          + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
          + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
