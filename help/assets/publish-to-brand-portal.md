@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 780d04852d3760f92c6f0c5edf77630d4bb5a343
+source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 89%
+source-wordcount: '1168'
+ht-degree: 86%
 
 ---
 
@@ -32,6 +32,8 @@ Als u volgende wijzigingen aanbrengt in de oorspronkelijke asset, map of verzame
 >[!NOTE]
 >
 >Adobe raadt gefaseerde publicatie aan, bij voorkeur niet tijdens piekuren, zodat de AEM-auteur niet te veel bronnen in beslag neemt.
+>De activa moeten in partijen worden gepubliceerd. De aanbeveling voor de partijgrootte is 15K.
+> Voor [!DNL Experience Manager Assets] als [!DNL Cloud Service], is het overdrachtstarief onder laboratoriumvoorwaarde wordt waargenomen 1000 activa per uur die. De snelheid wordt waargenomen met een gemiddelde grootte van 10 MB activa.
 
 ## Assets publiceren naar Brand Portal {#publish-assets-to-bp}
 
