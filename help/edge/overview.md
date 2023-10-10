@@ -3,10 +3,10 @@ title: Aan de slag met Edge Delivery Services
 description: Aan de slag met Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 6a4a257b3ca3d2db76d43707792d97db87974593
+source-git-commit: beaadc7b59223d527b61ed43d44fcd97a0079e0d
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 0%
+source-wordcount: '832'
+ht-degree: 2%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe biedt drie kanalen om u te helpen met Edge Delivery Services:
 
 ### Toegang tot communautaire bronnen {#community-resource}
 
-Adobe beschikt over twee Community Resources om u te helpen met Edge Delivery, [Gemeenschap Experience League](https://adobe.ly/3Q6kTKl) en [Disorder channel](https://discord.gg/YFTKQK8M).
+Adobe beschikt over twee Community Resources om u te helpen met Edge Delivery, [Gemeenschap Experience League](https://adobe.ly/3Q6kTKl) en [Disorder channel](https://discord.gg/aem-live).
 
 ### Toegang tot het kanaal voor samenwerking met producten {#collab-channel}
 
