@@ -2,9 +2,9 @@
 title: Een verzendhandeling configureren voor een adaptief formulier
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: ba83b35f411ffd51e0032e7c7f12c7c82cd982ad
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3218'
 ht-degree: 0%
 
 ---
@@ -184,8 +184,9 @@ AEM Forms verbinden met uw Microsoft® SharePoint-opslag:
 1. Ga naar uw **AEM Forms-auteur** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Wanneer u de **[!UICONTROL Microsoft® SharePoint]**, u wordt doorgestuurd naar **[!UICONTROL SharePoint Browser]**.
 1. Selecteer een **Configuratie-container**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
-1. Klik op **[!UICONTROL Create]**. De configuratietovenaar van SharePoint verschijnt.
-   ![SharePoint-configuratie](/help/forms/assets/sharepoint_configuration.png)
+1. Klikken **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.
+
+![SharePoint-configuratie](/help/forms/assets/sharepoint_configuration.png)
 1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]**. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheim, identiteitskaart van de Aannemer voor OAuth URL, zie [Microsoft®-documentatie](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
    * U kunt de `Client ID` en `Client Secret` van uw app via de Microsoft® Azure-portal.
    * Voeg in de Microsoft® Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Vervangen `[author-instance]` met de URL van uw instantie Auteur.
@@ -210,6 +211,7 @@ U kunt deze configuratie voor SharePoint-sites nu gebruiken voor de verzendactie
 ### SharePoint-configuratie gebruiken in een adaptief formulier {#use-sharepoint-configuartion-in-af}
 
 U kunt de gemaakte SharePoint-configuratie in een adaptief formulier gebruiken om gegevens of gegenereerd document met record op te slaan in een SharePoint-map. Voer de volgende stappen uit om een SharePoint-opslagconfiguratie in een adaptief formulier te gebruiken als:
+
 1. Een [Adaptief formulier](/help/forms/creating-adaptive-form.md).
 
    >[!NOTE]

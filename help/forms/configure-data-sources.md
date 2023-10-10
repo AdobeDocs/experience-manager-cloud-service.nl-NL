@@ -5,12 +5,13 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: ac7e1a1ada156734c3a487269e674e8eade7c9c3
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2260'
 ht-degree: 0%
 
 ---
+
 
 # Gegevensbronnen configureren {#configure-data-sources}
 
@@ -23,7 +24,7 @@ ht-degree: 0%
 
 [!DNL Experience Manager Forms] Met gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden. De volgende typen worden buiten de box ondersteund:
 
-* Relationele databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], en [!DNL Oracle RDBMS]
+* Relationele databases - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], en [!DNL Oracle RDBMS]
 * RESTful-webservices
 * SOAP-webservices
 * OData-diensten (versie 4.0)
@@ -42,7 +43,7 @@ Voordat u relationele databases configureert met [!DNL Experience Manager] Webco
 * [JDBC-stuurprogramma-afhankelijkheden toevoegen in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
 
 
-### Stappen om relationele database te configureren
+### Stappen om een relationele database te configureren
 
 U kunt relationele databases configureren met [!DNL Experience Manager] Webconsole-configuratie. Ga als volgt te werk:
 
@@ -57,11 +58,11 @@ U kunt relationele databases configureren met [!DNL Experience Manager] Webconso
    * URI voor JDBC-verbinding
    * Gebruikersnaam en wachtwoord voor verbinding met het JDBC-stuurprogramma
    * Geef een SQL SELECT-query op in het dialoogvenster **[!UICONTROL Validation Query]** veld voor het valideren van verbindingen vanuit de pool. De query moet ten minste één rij retourneren. Geef op basis van uw database een van de volgende opties op:
-      * SELECT 1 (MySQL en MS SQL)
+      * SELECT 1 (MySQL en MS® SQL)
       * SELECTEER 1 uit twee items (Oracle)
    * Naam van de gegevensbron
 
-   Voorbeeldtekenreeksen voor het configureren van relationele database:
+   Voorbeeldtekenreeksen voor het configureren van een relationele database:
 
    ```text
       "datasource.name": "sqldatasourcename-mysql",
@@ -122,7 +123,7 @@ De map configureren voor configuraties van cloudservices:
 
 ## RESTful-webservices configureren {#configure-restful-web-services}
 
-RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https://swagger.io/specification/v2/) in JSON- of YAML-indeling in een [!DNL Swagger] definitiebestand. RESTful-webservice configureren in [!DNL Experience Manager] as a Cloud Service, zorg ervoor dat u of [!DNL Swagger] file ([Versie 2.0](https://swagger.io/specification/v2/)) of [!DNL Swagger] file ([Tagvormige versie 3.0](https://swagger.io/specification/v3/)) op uw bestandssysteem of op de URL waar het bestand wordt gehost.
+RESTful-webservices kunnen worden beschreven met [Specificaties van de wagon](https://swagger.io/specification/v2/) in JSON- of YAML-indeling in een [!DNL Swagger] definitiebestand. RESTful-webservice configureren in [!DNL Experience Manager] as a Cloud Service, zorg ervoor dat u of [!DNL Swagger] file ([Versie 2.0](https://swagger.io/specification/v2/)) of [!DNL Swagger] file ([Tagvormige versie 3.0](https://swagger.io/specification/v3/)) op uw bestandssysteem of op de URL waar het bestand wordt gehost.
 
 ### RESTful-services configureren voor Open API Specification versie 2.0 {#configure-restful-services-open-api-2.0}
 
@@ -133,7 +134,7 @@ RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https:
 1. Tikken **[!UICONTROL Create]** om de **[!UICONTROL Create Data Source Configuration wizard]**. Geef een naam en eventueel een titel voor de configuratie op. Selecteer **[!UICONTROL RESTful Service]** van de **[!UICONTROL Service Type]** keuzelijst, bladert u optioneel naar een miniatuurafbeelding voor de configuratie en tikt u op **[!UICONTROL Next]**.
 1. Specificeer de volgende details voor de RESTful dienst:
 
-   * Selecteer URL of Bestand in het menu [!UICONTROL Swagger Source] vervolgkeuzelijst en geeft dienovereenkomstig de [!DNL Swagger URL] aan de[!DNL  Swagger] definitiebestand uploaden of [!DNL Swagger] van uw lokale bestandssysteem.
+   * Selecteer een URL of een bestand in het menu [!UICONTROL Swagger Source] vervolgkeuzelijst en geeft dienovereenkomstig de [!DNL Swagger URL] aan de[!DNL  Swagger] definitiebestand uploaden of [!DNL Swagger] van uw lokale bestandssysteem.
    * Op basis van de[!DNL  Swagger] Broninvoer. De volgende velden zijn vooraf ingevuld met waarden:
 
       * Schema: de overdrachtprotocollen die door de REST API worden gebruikt. Het aantal schematypen dat in de drop-down lijst toont hangt van de regelingen af die in worden bepaald [!DNL Swagger] bron.
@@ -158,7 +159,7 @@ RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https:
 1. Tikken **[!UICONTROL Create]** om de **[!UICONTROL Create Data Source Configuration wizard]**. Geef een naam en eventueel een titel voor de configuratie op. Selecteer **[!UICONTROL RESTful Service]** van de **[!UICONTROL Service Type]** keuzelijst, bladert u optioneel naar een miniatuurafbeelding voor de configuratie en tikt u op **[!UICONTROL Next]**.
 1. Specificeer de volgende details voor de RESTful dienst:
 
-   * Selecteer URL of Bestand in het menu [!UICONTROL Swagger Source] vervolgkeuzelijst en geeft dienovereenkomstig de [!DNL Swagger 3.0 URL] aan de[!DNL  Swagger] definitiebestand uploaden of [!DNL Swagger] van uw lokale bestandssysteem.
+   * Selecteer een URL of een bestand in het menu [!UICONTROL Swagger Source] vervolgkeuzelijst en geeft dienovereenkomstig de [!DNL Swagger 3.0 URL] aan de[!DNL  Swagger] definitiebestand uploaden of [!DNL Swagger] van uw lokale bestandssysteem.
    * Op basis van de[!DNL  Swagger] De broninvoer, de verbindingsinformatie met de doelserver wordt getoond.
    * Selecteer het verificatietype: None, OAuth2.0([Autorisatiecode](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, of Custom Authentication — om toegang te krijgen tot de RESTful-service en dienovereenkomstig gegevens te verstrekken voor verificatie.
 
@@ -179,7 +180,7 @@ Zie [OpenAPI 3.0-specificatie](https://swagger.io/specification/v3/) voor nadere
 
 ### Het model van de gegevens van de vormHTTP cliëntconfiguratie om prestaties te optimaliseren {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] formuliergegevensmodel bij integratie met RESTful-webservices als gegevensbron bevat HTTP-clientconfiguraties voor optimalisatie van prestaties.
+[!DNL Experience Manager Forms] vormen een gegevensmodel wanneer het integreren met RESTful Webdiensten aangezien de gegevensbron HTTP cliëntconfiguraties voor prestatiesoptimalisering omvat.
 
 Stel de volgende eigenschappen van de **[!UICONTROL Form Data Model HTTP Client Configuration for REST data source]** configuratie voor het opgeven van de reguliere expressie:
 
@@ -223,7 +224,7 @@ In het volgende JSON-bestand wordt een voorbeeld weergegeven:
 
 ## SOAP-webservices configureren {#configure-soap-web-services}
 
-SOAP-webservices worden beschreven met [Web Services Description Language (WSDL)-specificaties](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] biedt geen ondersteuning voor WSDL-model van RPC-stijl.
+SOAP-webservices worden beschreven met [Web Services Description Language (WSDL)-specificaties](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] ondersteunt het WSDL-model in RPC niet.
 
 Om op SOAP-Gebaseerde Webdienst te vormen binnen [!DNL Experience Manager] as a Cloud Service, zorg ervoor dat u WSDL URL voor de Webdienst hebt, en doe het volgende:
 
@@ -268,7 +269,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Een OData-
 >[!NOTE]
 >
 > Formuliergegevensmodel ondersteunt [OData versie 4](https://www.odata.org/documentation/).
->Voor geleidelijke gids om te vormen [!DNL Microsoft® Dynamics 365], online of ter plaatse, zie [[!DNL Microsoft® Dynamics] OData-configuratie](ms-dynamics-odata-configuration.md).
+>Voor een geleidelijke gids om te vormen [!DNL Microsoft®® Dynamics 365], online of ter plaatse, zie [[!DNL Microsoft® Dynamics] OData-configuratie](ms-dynamics-odata-configuration.md).
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
@@ -284,9 +285,32 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Een OData-
 
    >[!NOTE]
    >
-   U moet OAuth 2.0 authentificatietype selecteren om met te verbinden [!DNL Microsoft® Dynamics] diensten die eindpunt OData als de dienstwortel gebruiken.
+   U moet het OAuth 2.0 authentificatietype selecteren om met te verbinden [!DNL Microsoft®® Dynamics] diensten die het eindpunt OData als de dienstwortel gebruiken.
 
 1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de dienst te creëren OData.
+
+## Microsoft® SharePoint List configureren {#config-sharepoint-list}
+
+<span class="preview"> Dit is een pre-release functie die toegankelijk is via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+Microsoft® SharePoint List kan gegevens opslaan in een tabelvorm. Een Microsoft SharePoint List configureren in [!DNL Experience Manager] as a Cloud Service, doe het volgende:
+
+1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft®® SharePoint]**.
+1. Selecteer een **Configuratie-container**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
+1. Klikken **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.
+1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]**. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheim, identiteitskaart van de Aannemer voor OAuth URL, zie [Microsoft®-documentatie](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * U kunt de `Client ID` en `Client Secret` van uw app via de Microsoft® Azure-portal.
+   * Voeg in de Microsoft® Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Vervangen `[author-instance]` met de URL van uw instantie Auteur.
+   * API-machtigingen toevoegen `offline_access` en `Sites.Manage.All` in de **Microsoft® Graph** om lees-/schrijfmachtigingen te bieden. Toevoegen `AllSites.Manage` toestemming in de **Sharepoint** -tabbladen gebruiken om op afstand te werken met SharePoint-gegevens.
+   * OAuth-URL gebruiken: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Vervangen `<tenant-id>` met de `tenant-id` van uw app via de Microsoft® Azure-portal.
+
+     >[!NOTE]
+     >
+     De **clientgeheim** het gebied is verplicht of facultatief hangt van uw Azure Actieve de toepassingsconfiguratie van de Folder af. Als uw toepassing wordt gevormd om een cliëntgeheim te gebruiken, is het verplicht om het cliëntgeheim te verstrekken.
+
+1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding wordt de `Connection Successful` wordt weergegeven.
+1. Selecteren **[!UICONTROL SharePoint Site]** en **[!UICONTROL SharePoint List]** in de vervolgkeuzelijst.
+1. Tikken **[!UICONTROL Create]** om de cloudconfiguratie voor de Microsoft® SharePointList te maken.
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
