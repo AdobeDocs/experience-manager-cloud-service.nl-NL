@@ -2,10 +2,10 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 75%
+source-wordcount: '2015'
+ht-degree: 68%
 
 ---
 
@@ -60,7 +60,7 @@ Het schrapen van per-huurderinstanties van de dienst is op de twee assen van toe
 
 * Horizontaal: het aantal knopen voor een bepaalde dienst wordt verhoogd of automatisch verlaagd, nog toestaand voor individuele standaardconfiguraties.
 
-* Verticaal: toegewezen geheugen en CPU-capaciteit kunnen worden vergroot of verkleind door een configuratie voor een vast aantal knooppunten om aan de individuele vereisten te voldoen.
+* Verticaal: toegewezen geheugen en CPU-capaciteit kunnen worden vergroot of verkleind via configuratie voor een vast aantal knooppunten om aan de individuele vereisten te voldoen.
 
 ## Omgevingen {#environments}
 
@@ -147,9 +147,9 @@ Deze nieuwe architectuur bestaat uit verschillende hoofdonderdelen:
 
    * In de authoringlaag wordt content van en naar de persistentielaag gelezen en geschreven.
 
-   * De opslag van lobs wordt gedeeld over publiceren, de voorproef, en de auteursrijen; bestanden zijn niet *bewogen*.
+   * De opslag van lobs wordt gedeeld door de publicatie, voorvertoning en auteurslagen; bestanden zijn niet *bewogen*.
 
-   * Wanneer inhoud wordt goedgekeurd van de auteursrij, is dit een aanwijzing dat het kan worden geactiveerd, daarom aan de publicatielaag persistence laag worden geduwd; of naar keuze naar de voorvertoningslaag. Dit gebeurt via de Replication Service, een middleware-pijplijn. Deze pijpleiding ontvangt de nieuwe inhoud, met de individuele publiceerdienst (of voorproefdienst) knopen die aan de inhoud intekenen die aan de pijpleiding wordt geduwd.
+   * Wanneer inhoud wordt goedgekeurd vanaf de auteurslaag, is dit een aanwijzing dat het kan worden geactiveerd, daarom aan de laag van de publicatielaag persistence worden geduwd; of naar keuze aan de voorproefrij. Dit gebeurt via de Replication Service, een middleware-pijplijn. Deze pijpleiding ontvangt de nieuwe inhoud, met de individuele publiceerdienst (of voorproefdienst) knopen die aan de inhoud intekenen die aan de pijpleiding wordt geduwd.
 
      >[!NOTE]
      >
@@ -198,3 +198,26 @@ De nieuwe architectuur voor AEM as a Cloud Service introduceert een paar fundame
 * Het concept van een Golden Master werd geïntroduceerd om de levenscyclus van de publicatienodes te automatiseren. De Golden Master is een gespecialiseerde publicatienode waartoe geen enkele eindgebruiker toegang heeft, en waaruit alle nodes van de publicatieservice worden gecreëerd. Onderhoudsbewerkingen zoals compressie worden uitgevoerd op de content-repository die is gekoppeld aan de Golden Master. De publicatienodes worden dagelijks gerecycled en vergen geen routineonderhoud; vroeger was voor dergelijke onderhoud uitvaltijd nodig, vooral voor de authoringinstantie.
 
 * De architectuur scheidt de applicatiecontent volledig van de applicatiecode en de configuratie. Alle code en configuraties zijn praktisch onveranderlijk en ingebouwd in de basisinstallatiekopie die wordt gebruikt om de diverse nodes van de authoring- en publicatieservices te maken. Daardoor is absoluut gegarandeerd dat alle nodes identiek zijn, en kunnen veranderingen in de code en configuratie uitsluitend globaal worden aangebracht door een Cloud Manager-pijplijn uit te voeren.
+
+## AEM met Edge Delivery Services {#aem-with-edge-delivery-services}
+
+Met de toevoeging van Edge Delivery Services biedt AEM buitengewone ervaringen die de betrokkenheid en conversies stimuleren. AEM doet dit door het bieden van ervaringen met grote impact die snel bij de auteur en de ontwikkeling zijn. Edge Delivery Services zijn een set services die een snelle ontwikkelomgeving mogelijk maken waarin auteurs snel kunnen bijwerken en publiceren en nieuwe sites snel kunnen worden opgestart. Als zodanig kunt u met Edge Delivery Services de conversie verbeteren, de kosten verlagen en de snelheid van de inhoud extreem verhogen.
+
+De bijgewerkte architectuur omvat:
+
+* Inhoudsbeheer, nu inclusief een selectie editors:
+   * Universal Visual Editor
+   * Inhoudsfragmenteditor
+   * Pagina-editor
+   * Document gebaseerd ontwerpen; van SharePoint of Google Drive
+* Ervaring met leveren, nu inclusief:
+   * Edge Delivery Services
+* Nevenservices voor de snelle en efficiënte levering van inhoud en code
+
+![as a Cloud Service overzicht AEM - met Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "as a Cloud Service overzicht AEM - met Edge Delivery Services")
+
+Zie ook:
+
+* [as a Cloud Service overzicht AEM - met Edge Delivery Services](/help/edge/overview.md)
+* [Edge Delivery Services gebruiken](/help/edge/using.md)
+* [Ontdek de onderliggende architectuur en belangrijke AEM die as a Cloud Service zijn met Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
