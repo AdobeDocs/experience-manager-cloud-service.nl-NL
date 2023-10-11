@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 46ff33808e710b511db7cfcdad931c14846d8cfe
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3600'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Eenmaal geroepen, duurt het typisch ongeveer 15 minuten voor de voorzien van een
 
 Als de programma-scoped flexibele configuratie van de havenuitgang klaar is, `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` het eindpunt moet per milieu worden aangehaald om voorzien van een netwerk op het milieuniveau toe te laten en naar keuze om het even welke haven te verklaren die regels door:sturen. De parameters zijn configureerbaar per milieu om flexibiliteit aan te bieden.
 
-De haven die regels door:sturen zou voor om het even welke bestemmingshavens buiten 80/443, maar slechts als het gebruiken van het protocol van http of https, door de reeks bestemmingsgastheren (namen of IP, en met havens) te specificeren moeten worden verklaard. Voor elke bestemmingsgastheer, moeten de klanten de voorgenomen bestemmingshaven aan een haven van 30000 door 30999 in kaart brengen.
+De haven die regels door:sturen zou voor om het even welke bestemmingshavens buiten 80/443, maar slechts als het gebruiken van het protocol van http of https, door de reeks bestemmingsgastheren (namen of IP, en met havens) te specificeren moeten worden verklaard. De cliëntverbinding die haven 80/443 over http/https gebruikt moet volmachtsmontages in hun verbinding nog gebruiken om de eigenschappen van geavanceerd voorzien van een netwerk toe te passen op de verbinding. Voor elke bestemmingsgastheer, moeten de klanten de voorgenomen bestemmingshaven aan een haven van 30000 door 30999 in kaart brengen.
 
 De API moet binnen een paar seconden reageren. Dit geeft aan dat het bijwerken is voltooid en dat het eindpunt na ongeveer 10 minuten `GET` de methode zou erop moeten wijzen dat het geavanceerde voorzien van een netwerk wordt toegelaten.
 
