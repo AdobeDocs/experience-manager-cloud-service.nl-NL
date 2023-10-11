@@ -5,7 +5,7 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
+source-git-commit: ac393e4b275693fae7413fb79496052d106b219c
 workflow-type: tm+mt
 source-wordcount: '2447'
 ht-degree: 11%
@@ -106,7 +106,6 @@ Voer de volgende stappen uit om de verbinding tussen uw Experience Manager Asset
    Een Brand Portal-distributieagent (**[!UICONTROL bpdistributionagent0]**) is gemaakt onder **[!UICONTROL Publish to Brand Portal]**.
 
    ![Distributieagent maken](assets/test-bpconfig2.png)
-
 
 1. Klikken **[!UICONTROL Publish to Brand Portal]** om de distributieagent te openen.
 
