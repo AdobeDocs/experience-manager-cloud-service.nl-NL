@@ -1,13 +1,13 @@
 ---
-title: JSON-schema ontwerpen voor een adaptief formulier
+title: Hoe kan ik JSON-schema ontwerpen voor een adaptief formulier?
 description: Leer een JSON-schema voor een adaptief formulier te maken en een adaptief formulier te maken op basis van het schema om klachtengegevens over het schema te produceren.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1333'
 ht-degree: 0%
 
 ---

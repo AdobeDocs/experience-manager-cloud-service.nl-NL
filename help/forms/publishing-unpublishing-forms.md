@@ -1,13 +1,13 @@
 ---
-title: Hoe kan ik formulieren en documenten publiceren en verwijderen?
+title: Hoe kan ik formulieren en documenten in AEM formulieren publiceren en publiceren?
 description: Plan het publiceren en het verwijderen van uw Adaptive Forms. Gepubliceerde formulieren worden gerepliceerd in het publicatie-exemplaar.
 content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---

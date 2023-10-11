@@ -1,13 +1,13 @@
 ---
-title: Hoe kunt u ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier op basis van Core Components?
+title: Hoe voeg ik ondersteuning voor nieuwe landinstellingen toe aan een adaptief formulier op basis van kerncomponenten?
 description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formulier.
-source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
+exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
-
 
 # Een landinstelling toevoegen voor Adaptive Forms op basis van Core Components {#supporting-new-locales-for-adaptive-forms-localization}
 
@@ -179,5 +179,3 @@ Voer de volgende stappen uit om een voorvertoning weer te geven van een adaptief
 * [Gebruik machinevertaling of menselijke vertaling om een adaptief formulier met kerncomponenten te vertalen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Opnamedocument genereren voor Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
 * [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
-

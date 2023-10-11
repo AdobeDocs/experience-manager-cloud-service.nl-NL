@@ -1,13 +1,13 @@
 ---
-title: XML-schema ontwerpen voor een adaptief formulier
+title: Hoe te om het Schema van XML voor een Aangepast Vorm te ontwerpen?
 description: Leer om een schema van XML voor een Adaptief Vorm tot stand te brengen en een Adaptief Vorm tot stand te brengen dat op het schema wordt gebaseerd om schemaklachtengegevens te produceren.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---

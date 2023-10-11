@@ -1,11 +1,11 @@
 ---
-title: Dynamische selectie van gebruiker of groep in AEM workflow
+title: Hoe te om gebruikers in AEM Werkschema te selecteren?
 description: Leer hoe u een gebruiker of groep voor een [!DNL AEM Forms] tijdens de runtime.
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---

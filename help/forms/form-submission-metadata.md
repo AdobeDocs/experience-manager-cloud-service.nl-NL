@@ -1,12 +1,12 @@
 ---
-title: Informatie uit gebruikersgegevens toevoegen aan metagegevens voor formulierverzending
+title: Hoe kan ik metagegevens van een verzonden formulier bijwerken?
 description: Leer hoe u met door de gebruiker verstrekte gegevens informatie aan metagegevens van een verzonden formulier kunt toevoegen. Dig dieper in op de manier waarop u de bijgewerkte metagegevens voor formulierverzending in de CRX-opslagplaats kunt bekijken.
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---

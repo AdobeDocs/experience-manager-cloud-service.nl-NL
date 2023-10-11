@@ -1,23 +1,23 @@
 ---
-title: Forms as a Cloud Service veelgestelde vragen
+title: Veelgestelde vragen over AEM Forms as a Cloud Service
 description: Forms as a Cloud Service veelgestelde vragen
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
-source-git-commit: 93e7c4b31ea3037c98b64790ffdee11f94cc6134
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
 
 # Veelgestelde vragen {#frequently-asked-questions}
 
-* **Kan ik de Redacteur van de Code gebruiken om regels tot stand te brengen?**
+* **Kan ik Code Editor gebruiken om regels te maken?**
 U kunt de Visuele Redacteur gebruiken om de regels tot stand te brengen. De Code-editor is niet beschikbaar op [!DNL Forms] as a Cloud Service. Als in uw Adaptief formulier regelscripts worden gebruikt die zijn ontwikkeld met de code-editor, gebruikt u de opdracht [Hulpprogramma voor migratie](migrate-to-forms-as-a-cloud-service.md) om uw codemanuscripten in douanefuncties om te zetten. U kunt douanefuncties met Visuele Redacteur gebruiken om de resultaten te blijven verkrijgen die met de Redacteur van de Code worden verkregen.
 
 * **Kan ik een adaptief XFA-formulier maken op basis van Cloud Servicen?**
-Ja, u kunt een XFA-gebaseerd adaptief formulier maken op een Cloud Service-instantie. Ondersteuning voor adaptieve Forms op basis van XFA is echter niet beschikbaar voor as a Cloud Service SDK van AEM Forms (Local Development Environment). Als u van plan bent om op XFA-Gebaseerde AanpassingsForms met AEM Forms as a Cloud Service SDK te gebruiken, contacteer de Steun van de Adobe met details van uw gebruiksgeval en specifieke vereisten.
+Ja, u kunt een XFA-gebaseerd adaptief formulier maken op een Cloud Service-instantie. Ondersteuning voor adaptieve Forms op basis van XFA is echter niet beschikbaar voor as a Cloud Service SDK van AEM Forms (Local Development Environment). Als u van plan bent om op XFA gebaseerde Adaptive Forms te gebruiken met AEM Forms as a Cloud Service SDK, neemt u contact op met de Adobe Support voor meer informatie over uw gebruiksscenario en specifieke vereisten.
 
 <!-- * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
 
@@ -32,7 +32,7 @@ Ja, u kunt uw aangepaste code, inhoud en elementen migreren van Op locatie of [!
 U kunt de referentiedocumentatie voor Java™ API downloaden van [!DNL Maven Central Repository]. Downloaden:
    1. Ga naar [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Pagina met de nieuwste versie van [!DNL Experience Manager Forms] SDK.
-   1. Klik op de optie Alles weergeven om alle bestanden weer te geven.
+   1. Klik op Alles weergeven om alle bestanden weer te geven.
    1. Download en extraheer de `aem-forms-sdk-api-<version>-javadocs`.jar.
    1. Open het bestand index.html om de API-naslagdocumentatie te bekijken.
 
@@ -40,14 +40,14 @@ U kunt de referentiedocumentatie voor Java™ API downloaden van [!DNL Maven Cen
 U kunt downloaden [!DNL JavaScript™] API-naslagdocumentatie van[!DNL  Maven Central Repository]. Downloaden:
    1. Open [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Pagina met de nieuwste versie van [!DNL Experience Manager Forms] SDK.
-   1. Klik op de optie Alles weergeven om alle bestanden weer te geven.
+   1. Klik op Alles weergeven om alle bestanden weer te geven.
    1. Download en extraheer de `aem-forms-sdk-api-<version>-jsdoc.jar`.
    1. Open het bestand index.html om de API-naslagdocumentatie te bekijken.
 
 * **Kan ik bestaande thema&#39;s en sjablonen blijven gebruiken?**
 Ja, u kunt thema&#39;s blijven gebruiken die zijn gemaakt met AEM 6.4 Forms en AEM 6.5 Forms nadat u de [Hulpprogramma voor migratie](migrate-to-forms-as-a-cloud-service.md) om ze te verplaatsen naar [!DNL AEM Forms] as a Cloud Service.
 
-   U kunt ook een project maken op basis van [!DNL AEM Forms] as a Cloud Service [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment) en het gebruik omvat steekproefthema&#39;s en malplaatjes.
+  U kunt ook een project maken op basis van [!DNL AEM Forms] as a Cloud Service [Archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment) en het gebruik omvat steekproefthema&#39;s en malplaatjes.
 
 * **Kan ik schema-volgzame gegevens produceren?**
 Ja, u kunt Adaptive Forms maken om schemaconforme gegevens te produceren.
@@ -58,9 +58,9 @@ Custom parameters are planned for an upcoming release. -->
 * **Kan ik beveiligde inhoud in cache plaatsen?**
 Functies voor beveiligde inhoud die in de cache worden geplaatst, zijn standaard uitgeschakeld. Als u de functie wilt inschakelen, kunt u de instructies uitvoeren die worden geleverd op [Beveiligde inhoud in cache plaatsen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
-* **Ik heb een gelokaliseerd adaptief formulier; wordt de gelokaliseerde versie niet gerenderd? Wat zou de oorzaak kunnen zijn en hoe moet dit worden opgelost?**
+* **Ik heb een gelokaliseerd adaptief formulier; hiermee wordt de gelokaliseerde versie niet weergegeven? Wat zou de oorzaak kunnen zijn en hoe moet dit worden opgelost?**
 
-   De URL-conventie van gelokaliseerde adaptieve Forms ondersteunt nu het opgeven van een landinstelling in de URL. Met de nieuwe URL-conventie kunnen gelokaliseerde formulieren op een verzender of CDN in cache worden geplaatst. Gebruik in een Cloud Service-omgeving de URL-indeling `http://host:port/content/forms/af/<afName>.<locale>.html` een gelokaliseerde versie van een adaptief formulier aanvragen in plaats van `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe raadt u aan Dispatcher of CDN in cache te plaatsen. Hiermee kunt u de rendersnelheid van voorgevulde formulieren verbeteren.
+  De URL-conventie van gelokaliseerde adaptieve Forms ondersteunt nu het opgeven van een landinstelling in de URL. Met de nieuwe URL-conventie kunnen gelokaliseerde formulieren op een verzender of CDN in cache worden geplaatst. Gebruik in een Cloud Service-omgeving de URL-indeling `http://host:port/content/forms/af/<afName>.<locale>.html` een gelokaliseerde versie van een adaptief formulier aanvragen in plaats van `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe raadt aan Dispatcher of CDN in cache te plaatsen. Hiermee kunt u de rendersnelheid van voorgevulde formulieren verbeteren.
 
 * **Ik heb een adaptief formulier bijgewerkt; de bijgewerkte versie is niet beschikbaar voor klanten om te gebruiken?**
 CDN vernieuwt de cache standaard na elke 5 minuten, wacht 5 minuten en controleert vervolgens op de bijgewerkte versie.
@@ -82,11 +82,11 @@ Het formuliergegevensmodel bevat geen methode voor het gebruik van aangepaste ce
 
 * **Kan ik Forms Portal gebruiken om actie Adaptive Forms te verzenden?**
 
-   U kunt uw bestaande Adaptive Forms aanpassen voor gebruik [Verzenden naar REST-eindpunt](configuring-submit-actions.md#submit-to-rest-endpoint), [E-mail verzenden](configuring-submit-actions.md#send-email), [Verzenden met gebruik van formuliergegevensmodel](configuring-submit-actions.md#submit-using-form-data-model), en [Een AEM-workflow aanroepen](configuring-submit-actions.md#invoke-an-aem-workflow) Handelingen verzenden. Handeling Forms Portal en Forms Portal verzenden is nog niet beschikbaar. Houd de maandelijkse opmerkingen bij de release in de gaten voor de beschikbaarheid van de functies.
+  U kunt uw bestaande Adaptive Forms aanpassen voor gebruik [Verzenden naar REST-eindpunt](configuring-submit-actions.md#submit-to-rest-endpoint), [E-mail verzenden](configuring-submit-actions.md#send-email), [Verzenden met gebruik van formuliergegevensmodel](configuring-submit-actions.md#submit-using-form-data-model), en [Een AEM-workflow aanroepen](configuring-submit-actions.md#invoke-an-aem-workflow) Handelingen verzenden. Handeling Forms Portal en Forms Portal verzenden is nog niet beschikbaar. Houd de maandelijkse opmerkingen bij de release in de gaten voor de beschikbaarheid van de functies.
 
 * **Kan ik gebruiken [!DNL AEM Forms] app met [!DNL AEM Forms] as a Cloud Service?**
 
-   Adaptive Forms biedt een responsief ontwerp. Deze formulieren wijzigen de weergave, het ontwerp en de interactiviteit op basis van het onderliggende apparaat. U kunt Adaptive Forms blijven gebruiken op een mobiel apparaat terwijl u de maandelijkse opmerkingen over de release bijhoudt voor de beschikbaarheid van de functies.
+  Adaptive Forms biedt een responsief ontwerp. Deze formulieren wijzigen de weergave, het ontwerp en de interactiviteit op basis van het onderliggende apparaat. U kunt Adaptive Forms blijven gebruiken op een mobiel apparaat terwijl u de maandelijkse opmerkingen over de release bijhoudt voor de beschikbaarheid van de functies.
 
 * **Welke functies maken geen deel uit van de oorspronkelijke GA-release?**
 Forms Portal [!DNL AEM Forms] app, integratie met Adobe Analytics en integratie met Adobe Target maken geen deel uit van de eerste GA-release. Raadpleeg de maandelijkse releaseopmerkingen voor meer informatie over de nieuwe functies.

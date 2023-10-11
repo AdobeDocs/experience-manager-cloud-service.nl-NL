@@ -1,11 +1,11 @@
 ---
-title: Hoe een op kerncomponenten gebaseerde adaptieve vorm te vertalen?
+title: Hoe kunnen we een op kerncomponenten gebaseerde adaptieve vorm vertalen?
 description: Leer een formuliergegevensmodel te maken in AEM Forms, het model te testen met voorbeeldgegevens en services en verschillende opties voor een model te configureren.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---

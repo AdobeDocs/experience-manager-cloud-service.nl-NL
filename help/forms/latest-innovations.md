@@ -1,10 +1,10 @@
 ---
-title: Ontdek de nieuwste innovaties in Adobe Experience Manager Forms as a Cloud Service.
+title: Wat zijn de meest recente innovaties in Adobe Experience Manager Forms as a Cloud Service?
 description: Ontdek de nieuwste mogelijkheden van [!DNL AEM Forms] as a Cloud Service voor het maken, beheren en publiceren van bedrijfsformulieren en bedrijfsprocessen op bedrijfsniveau.
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---

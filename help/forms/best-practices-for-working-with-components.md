@@ -1,11 +1,9 @@
 ---
-title: Aanbevolen procedures voor het werken met componenten
-seo-title: Best practices for working with components
-description: Enkele aanbevolen procedures en belangrijke punten die u moet onthouden wanneer u werkt met componenten van Adaptief formulier
-seo-description: Some best practices and key points to remember when working with Adaptive Form components
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+title: Tips en trucs die u kunt onthouden bij het werken met AEM adaptieve formulieren.
+description: Sommige aanbevolen procedures en belangrijke punten die u moet onthouden wanneer u werkt met componenten van een adaptief formulier.
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -16,7 +14,7 @@ ht-degree: 0%
 U kunt de volgende tips en trucs gebruiken bij het werken met Aangepaste formuliercomponenten:
 
 * Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Tik op de component en tik om de eigenschappen van een component te configureren ![eigenschappen](assets/Smock_Wrench_18_N.svg) om de componenteigenschappen in de browser van Eigenschappen te openen.
-* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u tikt ![eigenschappen](assets/Smock_Wrench_18_N.svg)kunt u de naam van de component wijzigen door de **[!UICONTROL Element Name]** veldwaarde in de eigenschappenbrowser. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
+* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u tikt ![eigenschappen](assets/Smock_Wrench_18_N.svg)kunt u de naam van de component wijzigen door de **[!UICONTROL Element Name]** in de eigenschappenbrowser. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
 
 * U kunt de eigenschap Titel van een component Adaptief formulier inline wijzigen in de formuliereditor zonder de browser Eigenschappen te openen, zolang de titel maar zichtbaar is op het formulier. Daartoe:
 
@@ -24,7 +22,7 @@ U kunt de volgende tips en trucs gebruiken bij het werken met Aangepaste formuli
 
    1. Tikken ![Pictogram Bewerken](assets/Smock_Edit_18_N.svg) om de titel bewerkbaar te maken.
 
-   1. Wijzig de titel en tik op de Return-toets of tik ergens buiten de component om de wijzigingen op te slaan. Tik op Esc om de wijzigingen te verwijderen.
+   1. Wijzig de titel en tik op de Return-toets of tik ergens buiten de component om de wijzigingen op te slaan. Tik op de toets Esc om de wijzigingen te verwijderen.
 
 * Sommige componenten van Adaptief formulier, zoals E-mail en Telefoon, bevatten validatiepatronen die niet in de verpakking staan. U kunt echter aangepaste validatie opgeven door het dialoogvenster **[!UICONTROL Validation Pattern]** onder de accordeon Patronen in de eigenschappen van de component. Zie de componentbeschrijvingen in de bovenstaande tabel voor meer informatie over standaardvalidaties.
 

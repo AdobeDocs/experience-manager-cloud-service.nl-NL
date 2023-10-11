@@ -1,12 +1,12 @@
 ---
-title: Contextassistentie voor het ontwerpen van formuliervelden
+title: Hoe kunt u Help-tekst toevoegen voor AEM Adaptive Forms-velden?
 description: Met AEM Forms kunt u in de context Help toevoegen aan velden en deelvensters voor adaptieve formulieren als tekst of rich media, waaronder video's.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---

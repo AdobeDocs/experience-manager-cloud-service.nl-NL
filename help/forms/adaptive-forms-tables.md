@@ -1,12 +1,12 @@
 ---
-title: Tabellen in adaptieve formulieren
+title: Hoe kunt u tabellen toevoegen aan een adaptief formulier?
 description: Gebruik de tabelcomponent om tabellen toe te voegen aan een adaptief formulier. Samen met het helpen met de ontvankelijke lay-out, staat de lijstcomponent het toevoegen van XDP lijstelementen toe.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2482'
 ht-degree: 0%
 
 ---

@@ -1,12 +1,12 @@
 ---
-title: Hoe te om de Toegang van de Redacteur van de Regel tot de Uitgezochte Groepen van de Gebruiker te verlenen?
+title: Hoe te om toegang tot een adaptieve redacteur van de vormenregel te verlenen om gebruikersgroepen te selecteren?
 description: Er zijn verschillende soorten gebruikers met verschillende vaardigheden die werken met Adaptive Forms. Leer hoe te om de toegang van de regelredacteur tot gebruikers te beperken die op hun rol of functie wordt gebaseerd.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---

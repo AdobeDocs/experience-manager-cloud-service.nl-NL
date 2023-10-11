@@ -1,10 +1,10 @@
 ---
-title: Harden uw [!DNL AEM Forms] as a Cloud Service omgeving
+title: Hoe te om uw as a Cloud Service milieu van AEM Forms te beveiligen of te beharden?
 description: Beveilig uw [!DNL AEM Forms] as a Cloud Service omgeving.
 contentOwner: khsingh
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: Hoe kan een lokale ontwikkelomgeving voor AEM Forms worden opgezet?
+title: Hoe kan ik een lokale ontwikkelomgeving opzetten voor AEM Forms?
 description: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2805'
 ht-degree: 1%
 
 ---

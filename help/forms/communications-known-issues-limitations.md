@@ -1,10 +1,10 @@
 ---
-title: Bekende problemen en beste praktijken in AEM Forms
+title: Wat zijn overwegingen, bekende kwesties en beste praktijken in AEM Forms?
 description: Bekende problemen en best practices voor AEM Forms Communication API's in overweging nemen.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---

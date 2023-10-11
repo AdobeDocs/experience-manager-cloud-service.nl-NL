@@ -1,12 +1,11 @@
 ---
 title: Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken
-seo-title: Forms-centric workflows on OSGi | Handling user data
 description: Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 0%
@@ -16,7 +15,7 @@ ht-degree: 0%
 
 # Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken {#forms-centric-workflows-on-osgi-handling-user-data}
 
-Met Forms-gerichte AEM-workflows kunt u real-world Forms-gerichte bedrijfsprocessen automatiseren. Workflows bestaan uit een reeks stappen die worden uitgevoerd in een volgorde die is opgegeven in het bijbehorende workflowmodel. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services. Daarom kunnen werkstromen ingewikkelde activiteiten coördineren die om het even welk aspect van Experience Manager impliceren.
+Met Forms-gerichte AEM-workflows kunt u real-world Forms-gecentreerde bedrijfsprocessen automatiseren. Workflows bestaan uit een reeks stappen die worden uitgevoerd in een volgorde die is opgegeven in het bijbehorende workflowmodel. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services. Daarom kunnen werkstromen ingewikkelde activiteiten coördineren die om het even welk aspect van Experience Manager impliceren.
 
 Een op formulieren gerichte workflow kan op een van de volgende manieren worden geactiveerd of gestart:
 
@@ -30,7 +29,7 @@ Voor meer informatie over Forms-centric AEM workflows en mogelijkheden raadpleeg
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
-Wanneer een werkstroom wordt geactiveerd, wordt automatisch een lading gegenereerd voor de werkstroominstantie. Aan elke werkstroominstantie wordt een unieke instantie-id en een bijbehorende ladings-id toegewezen. De payload bevat de opslaglocaties voor gebruikers- en formuliergegevens die zijn gekoppeld aan een workflowexemplaar. Daarnaast worden concepten en historische gegevens voor een werkstroominstantie ook opgeslagen in de AEM opslagplaats.
+Wanneer een werkstroom wordt geactiveerd, wordt automatisch een laadbewerking voor de werkstroominstantie gegenereerd. Aan elke werkstroominstantie wordt een unieke instantie-id en een bijbehorende ladings-id toegewezen. De payload bevat de opslaglocaties voor gebruikers- en formuliergegevens die zijn gekoppeld aan een workflowexemplaar. Daarnaast worden concepten en historische gegevens voor een werkstroominstantie ook opgeslagen in de AEM opslagplaats.
 
 De standaardopslagplaatsen waar lading, concepten, en geschiedenis van een werkschemainstantie verblijven zijn als volgt:
 
@@ -81,7 +80,7 @@ U kunt de resultaten echter niet identificeren of dubbelzinnig weergeven wanneer
 
 Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benaderen die voor een workflowinstantie zijn opgeslagen:
 
-1. Ga bij AEM auteur naar `https://'[server]:[port]'/crx/de` en navigeer naar **[!UICONTROL Tools > Query]**.
+1. Ga bij AEM auteurinstantie naar `https://'[server]:[port]'/crx/de` en navigeer naar **[!UICONTROL Tools > Query]**.
 
    Selecteren **[!UICONTROL SQL2]** van de **[!UICONTROL Type]** vervolgkeuzelijst.
 

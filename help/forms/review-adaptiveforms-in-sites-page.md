@@ -1,12 +1,12 @@
 ---
-title: Hoe kunt u revisies van Adaptive Forms maken en beheren die zijn ingesloten of gemaakt op de pagina Sites?
+title: Hoe een adaptief formulier ter controle verzenden? Hoe kunt u revisies beheren voor een bepaald adaptief formulier?
 description: Revisie is een mechanisme waarmee revisoren verschillende taken voor adaptieve formulieren kunnen uitvoeren met de stap Taak toewijzen.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: Hoe kan ik elektronische handtekeningen toepassen op een formulier met krabbelhandtekeningen?
+title: Hoe kan ik e-handtekeningen toepassen op een formulier met krabbelhandtekeningen?
 description: Leer elektronische handtekeningen op een formulier toepassen met krabbelhandtekeningen.
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 0%

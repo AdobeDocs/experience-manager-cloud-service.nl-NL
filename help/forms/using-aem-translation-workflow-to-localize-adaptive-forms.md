@@ -1,15 +1,14 @@
 ---
-title: Hoe kan AEM vertaalworkflow worden gebruikt om Adaptive Forms en Document of Record te lokaliseren?
-description: AEM vertaalworkflow helpt u bij het lokaliseren van Adaptive Forms en de bijbehorende documenten met behulp van computer- of menselijke vertaling.
-seo-description: Learn to use AEM translation workflows to localize Adaptive Forms and Document of Record.
+title: Hoe kunnen we AEM vertaalworkflow gebruiken om Adaptive Forms en Document of Record te lokaliseren?
+description: Leer hoe u AEM vertaalworkflows kunt gebruiken om Adaptive Forms en Document of Record te lokaliseren.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
 content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---

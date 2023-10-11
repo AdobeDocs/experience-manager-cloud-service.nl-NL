@@ -1,10 +1,10 @@
 ---
-title: Vorm uit de montages van het Bureau
+title: Hoe te om uit de montages van het Bureau in AEM Forms te vormen?
 description: Taken delegeren tijdens of buiten het kantoor voor een naadloze workflowuitvoering.
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---

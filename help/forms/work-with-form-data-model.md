@@ -1,13 +1,13 @@
 ---
-title: Hoe te met het Model van de Gegevens van het Vorm te werken?
+title: Wat is het proces om met een Model van de Gegevens van het Vorm in AEM Forms te werken?
 description: Voeg gegevensmodelvoorwerpen, de diensten toe, creeer gegevensmodelvoorwerpen en kindeigenschappen, vorm de diensten, werk met navigatie eigenschappen van de diensten OData.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '3955'
+source-wordcount: '3962'
 ht-degree: 0%
 
 ---

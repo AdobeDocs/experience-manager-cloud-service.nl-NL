@@ -1,14 +1,14 @@
 ---
-title: Hoe wordt het gebruikt [!DNL Adobe Sign] in een adaptieve vorm?
+title: Hoe kunnen we Adobe Sign in een adaptieve vorm gebruiken?
 description: Gebruik Adobe Sign in een adaptief formulier om ontvangers van formulieren toe te staan een formulier elektronisch te ondertekenen vanaf het apparaat en de plaats van hun keuze.
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3003'
 ht-degree: 0%
 
 ---

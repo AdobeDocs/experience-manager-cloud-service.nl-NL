@@ -1,9 +1,9 @@
 ---
-title: Leer Adaptief Forms, PDF forms en andere middelen te importeren, exporteren en organiseren op een[!DNL AEM Forms] instance
+title: Hoe te om Aangepast Forms of PDF forms op een instantie van AEM Forms in te voeren, uit te voeren en te organiseren?
 description: Leer Adaptieve Forms, PDF forms, thema's en andere ondersteunende middelen migreren van en naar AEM instanties.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 1%
