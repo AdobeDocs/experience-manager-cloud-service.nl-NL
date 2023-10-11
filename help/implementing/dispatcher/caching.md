@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: Meer informatie over de basisbeginselen van Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
+source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2878'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Deze methode is bijvoorbeeld handig wanneer uw bedrijfslogica een nauwkeurige af
 
 ### Afbeeldingen en inhoud die groot genoeg is om in blokopslag te worden opgeslagen {#images}
 
-Het standaardgedrag voor programma&#39;s die na medio mei 2022 worden gemaakt (met name voor programma-id&#39;s van meer dan 65000), is door gebrek in cache plaatsen, terwijl ook de de authentificatiecontext van het verzoek respecteert. Oudere programma&#39;s (programma-id&#39;s van 65000 of lager) plaatsen standaard geen blob-inhoud in de cache.
+Het standaardgedrag voor programma&#39;s die na medio mei 2022 worden gemaakt (met name voor programma-id&#39;s van meer dan 65000), is standaard in cache plaatsen, terwijl ook de verificatiecontext van het verzoek wordt gerespecteerd. Oudere programma&#39;s (programma-id&#39;s van 65000 of lager) plaatsen standaard geen blob-inhoud in de cache.
 
 In beide gevallen kunnen de in cache plaatsen koppen op een fijner korrelig niveau op de laag Apache/Dispatcher worden overschreven met behulp van de Apache `mod_headers` richtlijnen , bijvoorbeeld :
 
@@ -99,6 +99,33 @@ In beide gevallen kunnen de in cache plaatsen koppen op een fijner korrelig nive
 ```
 
 Wanneer het wijzigen van de caching kopballen bij de laag van de Verzender, ben voorzichtig om niet te wijd in het voorgeheugen onder te brengen. Zie de discussie in de sectie HTML/tekst [boven](#html-text). Zorg er ook voor dat elementen die bedoeld zijn om privé te blijven (in plaats van in cache te worden geplaatst), geen deel uitmaken van de `LocationMatch` richtingsfilters.
+
+De middelen JCR (groter dan 16KB) die in blob opslag worden opgeslagen worden typisch gediend als 302 omleidingen door AEM. Deze omleidingen worden onderschept en door CDN gevolgd en de inhoud wordt direct geleverd van de blob opslag. Op deze reacties kan slechts een beperkte set kopteksten worden aangepast. Bijvoorbeeld om `Content-Disposition` U moet de verzendinstructies als volgt gebruiken:
+
+```
+<LocationMatch "\.(?i:pdf)$">
+  ForceType application/pdf
+  Header set Content-Disposition inline
+  </LocationMatch>
+```
+
+De lijst van kopballen die op blob reacties kunnen worden aangepast zijn:
+
+```
+content-security-policy
+x-frame-options
+x-xss-protection
+x-content-type-options
+x-robots-tag
+access-control-allow-origin
+content-disposition
+permissions-policy
+referrer-policy
+x-vhost
+content-disposition
+cache-control
+vary
+```
 
 #### Nieuw standaardgedrag in cache {#new-caching-behavior}
 
