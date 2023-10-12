@@ -4,9 +4,9 @@ description: In dit artikel wordt beschreven hoe u zoekfacetten in de Experience
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
 workflow-type: tm+mt
-source-wordcount: '2327'
+source-wordcount: '2386'
 ht-degree: 16%
 
 ---
@@ -303,6 +303,18 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
   </tr>
  </tbody>
 </table>
+
+## Standaardzoekfacetten verwijderen {#removing-default-search-facets}
+
+Adobe raadt u aan voorzichtig te zijn met het verwijderen van standaardzoekfacetten om prestatieproblemen te voorkomen. Het verwijderen van standaardzoekfacetten kan ook van invloed zijn op het standaardgedrag van functies.
+
+Verwijder de volgende verborgen velden niet omdat dit tot een probleem met de queryprestaties voor OmniSearch en slimme verzamelingen leidt:
+
+* group.2_group.type=dam:Asset
+
+* group.1_group.type=nt:map
+
+* group.p.or=true
 
 ## Standaardzoekfacetten herstellen {#restoring-default-search-facets}
 
