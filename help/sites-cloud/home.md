@@ -3,22 +3,23 @@ title: De middelen van de steun voor Experience Manager as a Cloud Service Plaat
 description: Ontvang een volledige lijst met al onze Adobe AEM Cloud Services-ondersteuningsbronnen. Zoek antwoorden op uw vragen over AEM Sites as Cloud Service.
 landing-page-description: Begrijp hoe u met AEM Sites as a Cloud Service kunt ontwerpen en beheren.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ce841a83d46dc1c4fa2edc858e4a0be0af3ac170
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '417'
 ht-degree: 50%
 
 ---
 
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-Deze pagina bevat een volledige lijst met alle ondersteuningsbronnen voor Adobe AEM Cloud Services. Ontvang antwoorden op je vraag over [!DNL AEM Sites as a Cloud Service].
+Deze pagina bevat een volledige lijst met alle Adoben AEM Cloud Servicen die bronnen ondersteunen. Ontvang antwoorden op je vraag over [!DNL AEM Sites as a Cloud Service].
 
 ## Belangrijke artikelen over Sites {#key-articles}
 
 * [Belangrijke wijzigingen in AEM Sites as a Cloud Service](sites-cloud-changes.md)
 * [Handleiding Snel aan de slag met authoring](authoring/getting-started/quick-start.md)
 * [Pagina&#39;s publiceren](authoring/fundamentals/publishing-pages.md)
+* [Authoring met Edge Delivery Services](/help/edge/overview.md)
 * [Authoring van responsieve lay-out](authoring/features/responsive-layout.md)
 * [Authoring van sjablonen](authoring/features/templates.md)
 * [Ervaringsfragmenten gebruiken](authoring/fundamentals/experience-fragments.md)
@@ -41,7 +42,7 @@ Deze pagina bevat een volledige lijst met alle ondersteuningsbronnen voor Adobe 
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM zodat u zich kunt voorbereiden op uw eerste project zonder kop. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
-| [Handboek voor handel](/help/commerce-cloud/home.md) | Meer informatie over Commerce Integration Framework op AEM as a Cloud Service. |
+| [Handboek voor handel](/help/commerce-cloud/home.md) | Meer weten over Commerce integration framework op AEM as a Cloud Service? |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 
