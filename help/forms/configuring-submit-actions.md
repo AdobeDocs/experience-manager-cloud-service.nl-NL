@@ -2,7 +2,7 @@
 title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 89e61c009890e2052c5db74b38c93fd54e697cd3
+source-git-commit: 6d949d9f31cc13b30f8ba06058911ddfe8e817af
 workflow-type: tm+mt
 source-wordcount: '3218'
 ht-degree: 0%
@@ -229,14 +229,16 @@ De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/mo
 
 ## Verzenden naar OneDrive {#submit-to-onedrive}
 
-De **[!UICONTROL Submit to OneDrive]** Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® OneDrive. U kunt de formuliergegevens, het bestand, de bijlagen of het document met records verzenden naar de aangesloten Microsoft® OneDrive-opslag. Als u de opdracht [!UICONTROL Submit to OneDrive] Actie verzenden in een adaptieve vorm:
+De **[!UICONTROL Submit to OneDrive]** Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® OneDrive. U kunt de formuliergegevens, het bestand, de bijlagen of het document met records verzenden naar de aangesloten Microsoft® OneDrive-opslag.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+Als u de opdracht [!UICONTROL Submit to OneDrive] Actie verzenden in een adaptieve vorm:
 
 1. [Een OneDrive-configuratie maken](#create-a-onedrive-configuration-create-onedrive-configuration): AEM Forms wordt aangesloten op uw Microsoft® OneDrive-opslag.
 2. [De verzendactie Verzenden naar OneDrive gebruiken in een adaptief formulier](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Het maakt een verbinding tussen uw Adaptief formulier en de geconfigureerde Microsoft® OneDrive.
 
 ### Een OneDrive-configuratie maken {#create-onedrice-configuration}
-
->[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
 AEM Forms aansluiten op uw Microsoft® OneDrive-opslag:
 
