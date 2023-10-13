@@ -1,12 +1,12 @@
 ---
 title: Inleiding tot [!DNL AEM Forms] as a Cloud Service
-description: Ontdek AEM Forms om bedrijfsklare formulieren te maken, workflows voor bedrijfsprocessen te maken en documentservices te gebruiken om documenten te maken en te beschermen.
+description: Ontdek AEM Forms om bedrijfsklare formulieren te maken, workflows voor bedrijfsprocessen te maken en documentservices te gebruiken om documenten te maken en te beveiligen.
 landing-page-description: Inzicht in hoe u formulieren in AEM as a Cloud Service kunt gebruiken.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1149'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
