@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Meer informatie over Inhoud zoeken en indexeren in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2433'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,11 @@ Beperkingen:
 * Intern, zouden andere indexen voor vragen kunnen worden gevormd en worden gebruikt. Bijvoorbeeld, vragen die tegen `damAssetLucene` De index zou, op Skyline, in feite tegen een versie van de Elasticsearch van deze index kunnen worden uitgevoerd. Dit verschil is doorgaans niet zichtbaar voor de toepassing en de gebruiker, maar voor bepaalde gereedschappen, zoals de `explain` een andere index rapporteren. Voor verschillen tussen Lucene-indexen en Elastic-indexen raadpleegt u [de Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten hoeven en kunnen Elasticsearch-indexen niet rechtstreeks configureren.
 * Zoeken op vergelijkbare vakvectoren (`useInSimilarity = true`) wordt niet ondersteund.
 
+>[!TIP]
+>
+>Voor meer informatie over de indexering en de Vragen van de Eik, met inbegrip van een gedetailleerde beschrijving van geavanceerde onderzoek en het indexeren eigenschappen, zie [Documentatie voor Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
+
+
 ## Het gebruik {#how-to-use}
 
 Indexdefinities kunnen als volgt in drie gevallen van primair gebruik worden ingedeeld:
@@ -54,11 +59,15 @@ Een indexdefinitie kan in één van de volgende categorieën vallen:
 
 3. Volledig aangepaste index: het is mogelijk een geheel nieuwe geheel nieuwe index te maken. Hun naam moet een voorvoegsel hebben om naamconflicten te voorkomen. Bijvoorbeeld: `/oak:index/acme.product-1-custom-2`, waarbij het voorvoegsel `acme.`
 
+>[!NOTE]
+>
+>Nieuwe indexen introduceren op de `dam:Asset` nodetype (in het bijzonder fulltext-indexen) wordt sterk afgeraden, omdat deze in conflict kunnen komen met OOTB-productkenmerken, wat kan leiden tot functionele en prestatieproblemen. In het algemeen voegt u aanvullende eigenschappen toe aan de huidige `damAssetLucene-*` indexversie is de meest geschikte manier om query&#39;s te indexeren op de `dam:Asset` nodetype (deze wijzigingen worden automatisch samengevoegd in een nieuwe productversie van de index als deze daarna wordt vrijgegeven). Neem voor advies contact op met de Adobe Support.
+
 ## De nieuwe indexdefinitie voorbereiden {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Als u een index buiten het vak aanpast, bijvoorbeeld `damAssetLucene-8`, kopieer de meest recente out-of-box-indexdefinitie van een *Cloud Service* met behulp van CRX DE Package Manager (`/crx/packmgr/`). Naam wijzigen in `damAssetLucene-8-custom-1` (of hoger) en voeg uw aanpassingen toe in het XML-bestand. Dit zorgt ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. Bijvoorbeeld de `tika` knooppunt onder `/oak:index/damAssetLucene-8/tika` is vereist in de aangepaste index van de cloudservice. Het bestaat niet op de Cloud SDK.
+>Als u een index buiten het vak aanpast, bijvoorbeeld `damAssetLucene-8`, kopieer de meest recente out-of-box-indexdefinitie van een *Cloud Service* met behulp van CRX DE Package Manager (`/crx/packmgr/`). Naam wijzigen in `damAssetLucene-8-custom-1` (of hoger) en voeg uw aanpassingen toe in het XML-bestand. Dit zorgt ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. Bijvoorbeeld de `tika` knooppunt onder `/oak:index/damAssetLucene-8/tika` is vereist in de aangepaste index die wordt geïmplementeerd in een AEM Cloud Service-omgeving, maar niet in de lokale AEM SDK.
 
 Maak voor aanpassingen van een OOTB-index een nieuw pakket met de feitelijke indexdefinitie die volgt op dit naamgevingspatroon:
 

@@ -2,9 +2,9 @@
 title: Voorlopige naslaggids voor Query Builder
 description: Predicate reference for the Query Builder API in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2295'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag; het is impliciet.
 * **`p.limit`** - getal dat het paginaformaat aangeeft.
 * **`p.guessTotal`** - aanbevolen: het volledige resultaattotaal, dat kostbaar kan zijn, niet berekenen. Of een aantal die op het maximumtotaal om te tellen tot (bijvoorbeeld 1000, een aantal wijst dat gebruikers genoeg terugkoppelt op de ruwe grootte en nauwkeurige aantallen voor kleinere resultaten). Of, `true` slechts tot het noodzakelijke minimum te tellen `p.offset` + `p.limit`.
 * **`p.excerpt`** - indien ingesteld op `true`, neemt u het volledige tekstfragment op in het resultaat.
+* **`p.indexTag`** - als de reeks een optie van de indexmarkering in de vraag zal omvatten (zie [Index-tag voor zoekopties](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
+* **`p.facetStrategy`** - indien ingesteld op `oak`, zal de Bouwer van de Vraag facetextractie aan Oak (zie [Facetten](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
 * **`p.hits`** - (alleen voor de JSON-servlet) selecteer de manier waarop de treffers als JSON worden geschreven, met deze standaardtreffers (uitbreidbaar via de service ResultHitWriter).
    * **`simple`** - minimale objecten zoals `path`, `title`, `lastmodified`, `excerpt` (indien ingesteld).
    * **`full`** - JSON-rendering van het knooppunt met `jcr:path` die het pad van de hit aangeven. Door gebrek, maakt een lijst enkel van de directe eigenschappen van de knoop, omvat een diepere boom met `p.nodedepth=N`, waarbij 0 de gehele, oneindige substructuur betekent. Toevoegen `p.acls=true` om de JCR-machtigingen van de huidige sessie op te nemen voor het opgegeven resultaatitem (toewijzingen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
