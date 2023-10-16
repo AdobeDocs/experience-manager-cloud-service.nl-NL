@@ -3,9 +3,9 @@ title: Aanbevolen werkwijzen voor query en indexering
 description: Leer hoe u indexen en query's optimaliseert op basis van de richtlijnen die de Adobe hanteert.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
+source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '3144'
 ht-degree: 0%
 
 ---
@@ -315,4 +315,15 @@ Dit kan om een aantal redenen voorkomen -
    * In dit geval, moeten alle resultaten die door de index zijn teruggekeerd door de vraagmotor worden gelezen en in geheugen worden gesorteerd.
    * Dit is vele tijden langzamer dan het toepassen van sortering in de onderliggende indexvraag.
 1. De uitvoerder van de query probeert een grote resultaatset te doorlopen.
-   * Deze situatie kan om een aantal redenen gebeuren - | Oorzaak | Opheffing | |—|—| | De Commissie van `p.guessTotal` (of het gebruik van een zeer grote gokTotal) veroorzakend QueryBuilder om grote aantallen resultaten telend resultaten te herhalen |Verlenen `p.guessTotal` met een geschikte waarde | | Het gebruik van een grote of onbegrensde grens in de Bouwer van de Vraag (ie `p.limit=-1`) |Gebruik een geschikte waarde voor `p.limit` (ideaal 1000 of lager) | | Het gebruik van het filtreren predikaat in de Bouwer van de Vraag die grote aantallen resultaten van de onderliggende vraag JCR filtreert | Voorspelden voor filteren vervangen door beperkingen die kunnen worden toegepast in de onderliggende JCR-query | | Het gebruik van een op vergelijker-gebaseerde sortering in QueryBuilder |Vervangen door op eigenschappen gebaseerde volgorde in de onderliggende JCR-query (met eigenschappen die zijn geïndexeerd als geordend) | | Filteren van grote aantallen resultaten als gevolg van toegangscontrole |Pas extra geïndexeerde bezit of wegbeperking op de vraag toe om het Toegangsbeheer te weerspiegelen | | Het gebruik van &#39;offset pagination&#39; met een grote offset |Gebruik [Hoofdsetpaginering](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Herhaling van grote of onbegrensde aantallen resultaten |Gebruik [Hoofdsetpaginering](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| | Onjuiste index gekozen |Gebruik codes in de vraag- en indexdefinitie om ervoor te zorgen dat de verwachte index wordt gebruikt|
+   * Deze situatie kan om een aantal redenen, zoals hieronder vermeld, gebeuren:
+
+| Oorzaak | Oplossing |
+|----------|--------------|
+| De Commissie `p.guessTotal` (of het gebruik van een zeer grote gokTotal) veroorzakend QueryBuilder om grote aantallen resultaten telend resultaten te herhalen | Verlenen `p.guessTotal` met een geschikte waarde |
+| Het gebruik van een grote of onbegrensde grens in de Bouwer van de Vraag (ie `p.limit=-1`) | Gebruik de juiste waarde voor `p.limit` (ideaal 1000 of lager) |
+| Het gebruik van het filtreren predikt in de Bouwer van de Vraag die grote aantallen resultaten van de onderliggende vraag JCR filtreert | Filtervoorspelling vervangen door beperkingen die kunnen worden toegepast in de onderliggende JCR-query |
+| Het gebruik van een op vergelijker-gebaseerde sortering in QueryBuilder | Vervangen door op eigenschappen gebaseerde volgorde in de onderliggende JCR-query (met eigenschappen die zijn geïndexeerd zoals geordend) |
+| Filteren van grote aantallen resultaten als gevolg van toegangsbeheer | Pas extra geïndexeerde bezit of wegbeperking op de vraag toe om het Toegangsbeheer te weerspiegelen |
+| Het gebruik van &#39;offsetpaginering&#39; met een grote verschuiving | Gebruik [Hoofdsetpaginering](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Herhaling van grote of onbegrensde aantallen resultaten | Gebruik [Hoofdsetpaginering](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| Onjuiste index gekozen | Tags gebruiken in vraag- en indexdefinitie om te controleren of de verwachte index wordt gebruikt |
