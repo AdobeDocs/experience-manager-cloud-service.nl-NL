@@ -2,7 +2,7 @@
 title: Inhoud uit bron extraheren
 description: Leer hoe u inhoud van een Adobe Experience Manager-broninstantie (AEM) extraheert om deze later naar een Cloud Service-AEM over te brengen.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 44a3f3c4ca08cffa06056ea85adc58e3cf1f2f1c
+source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 22%
@@ -36,7 +36,7 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
 
 1. Hiermee wordt het dialoogvenster Extractie weergegeven. Klikken **Extraheren** om de extractiefase te starten.
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
    >U kunt optioneel de container overschrijven tijdens de extractiefase. Indien **Stapelcontainer overschrijven** is uitgeschakeld, kunt u extracties versnellen voor volgende migraties waarbij de paden naar de inhoud of de instellingen van versies niet zijn gewijzigd. Als de instellingen voor de inhoudspaden of de include-versies echter zijn gewijzigd, **Stapelcontainer overschrijven** moet zijn ingeschakeld.
