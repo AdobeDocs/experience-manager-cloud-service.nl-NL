@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 3fbdb150a9a1c133b4910603682e37f1c5d885d2
+source-git-commit: e771913562b3770e5a504432d40c770804aadc4b
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '435'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,8 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 13804 same
 
 ### Bekende problemen {#known-issues-13804}
 
-Geen.
+* CQ-4354836: Kan geen workflow starten of taak maken vanuit projectenconsole.
+* CQ-4354834: Gebruikers kunnen geen opmerkingen toevoegen in een Postvak IN-taak.
 
 ### Ingesloten technologieën {#embedded-tech-13804}
 
