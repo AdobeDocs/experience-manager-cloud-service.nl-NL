@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '5492'
+source-wordcount: '5495'
 ht-degree: 4%
 
 ---
@@ -539,6 +539,7 @@ Navigeer naar de maplocatie voor elementen die in de zoekresultaten worden weerg
 
 **Zie ook**
 
+* [Beste werkwijzen zoeken](search-best-practices.md)
 * [Elementen vertalen](translate-assets.md)
 * [HTTP-API voor assets](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)

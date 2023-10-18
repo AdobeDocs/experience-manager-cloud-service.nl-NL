@@ -4,9 +4,9 @@ description: In dit artikel wordt beschreven hoe u zoekfacetten in de Experience
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '2386'
+source-wordcount: '2389'
 ht-degree: 16%
 
 ---
@@ -342,6 +342,7 @@ Als er geen beheerdersrol aan u is toegewezen, volgt hier een lijst met machtigi
 
 **Zie ook**
 
+* [Beste werkwijzen zoeken](search-best-practices.md)
 * [Elementen vertalen](translate-assets.md)
 * [HTTP-API voor assets](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
