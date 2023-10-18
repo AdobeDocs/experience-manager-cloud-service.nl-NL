@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1358'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar middelen rechtstreeks verzenden vanuit [!DNL Adobe Experience Manager Assets]. Gedownloade elementen worden gebundeld in een ZIP-bestand. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
+U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar middelen rechtstreeks verzenden vanuit [!DNL Adobe Experience Manager Assets]. Gedownloade elementen worden opgenomen in een ZIP-bestand. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 <!--
 >[!NOTE]
@@ -27,7 +27,7 @@ U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt 
 >Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
 -->
 
-De volgende elementtypen kunnen niet worden gedownload: Afbeeldingssets, centrifuges, gemengde mediasets en carrouselsets.
+De volgende elementtypen kunnen niet worden gedownload: Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets.
 
 U kunt elementen van Experience Manager downloaden met de volgende methoden:
 
@@ -63,7 +63,7 @@ E-mailmeldingen inschakelen:
 
 1. Aanmelden bij [!DNL Experience Manager Assets].
 1. Klik op het gebruikerspictogram in de rechterbovenhoek en klik vervolgens op **[!UICONTROL My Preferences]** om het venster Gebruikersvoorkeuren te openen.
-1. Selecteer **[!UICONTROL Asset Download email notifications]** selectievakje en klik op **[!UICONTROL Accept]**.
+1. Selecteer de **[!UICONTROL Asset Download email notifications]** selectievakje en klik op **[!UICONTROL Accept]**.
 
    ![inschakelen-e-mailmeldingen voor grote downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
@@ -82,17 +82,17 @@ Voer de volgende stappen uit om elementen te downloaden:
    | **[!UICONTROL Create separate folder for each asset]** | Selecteer deze optie om een map te maken voor elk element dat alle gedownloade uitvoeringen voor het element bevat. Als deze optie niet is geselecteerd, bevindt elk element (en de bijbehorende uitvoeringen als deze zijn geselecteerd om te worden gedownload) zich in de bovenliggende map van het gegenereerde archief. |
    | **[!UICONTROL Email]** | Selecteer deze optie om een e-mailbericht (met een koppeling naar uw download) naar een andere gebruiker te verzenden. De ontvangende gebruiker moet lid van zijn `dam-users` groep. De standaard e-mailsjablonen zijn beschikbaar op de volgende locaties:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> De malplaatjes die u tijdens plaatsing aanpast zijn beschikbaar bij de volgende plaatsen: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>U kunt huurdersspecifieke douanemalplaatjes bij de volgende plaatsen opslaan:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Asset(s)]** | Selecteer deze optie als u het element in de oorspronkelijke vorm wilt downloaden.<br>De optie Subassets is beschikbaar als het oorspronkelijke element subassets heeft. |
-   | **[!UICONTROL Rendition(s)]** | Een vertoning is de binaire representatie van een element. Elementen hebben een primaire representatie, namelijk die van het geüploade bestand. Zij kunnen om het even welk aantal vertegenwoordiging hebben. <br> Met deze optie kunt u de uitvoeringen selecteren die u wilt downloaden. Welke uitvoeringen beschikbaar zijn, is afhankelijk van het element dat u hebt geselecteerd. |
-   | **[!UICONTROL Smart Crops]** | Selecteer deze optie als u alle slimme-uitsnijduitvoeringen van het geselecteerde element vanuit [!DNL Experience Manager]. Er wordt een ZIP-bestand met de Smart Crop-uitvoeringen gemaakt en gedownload naar uw lokale computer. |
+   | **[!UICONTROL Rendition(s)]** | Een vertoning is de binaire representatie van een element. Elementen hebben een primaire representatie, namelijk die van het geüploade bestand. Zij kunnen om het even welk aantal vertegenwoordiging hebben. <br> Met deze optie kunt u de uitvoeringen selecteren die u wilt downloaden. Welke uitvoeringen beschikbaar zijn, is afhankelijk van het geselecteerde element. |
+   | **[!UICONTROL Smart Crops]** | Selecteer deze optie als u alle slimme uitsnijduitvoeringen van het geselecteerde element vanuit [!DNL Experience Manager]. Er wordt een ZIP-bestand met de Smart Crop-uitvoeringen gemaakt en gedownload naar uw lokale computer. |
    | **[!UICONTROL Dynamic Rendition(s)]** | Selecteer deze optie als u een reeks alternatieve vertoningen in real-time wilt genereren. Wanneer u deze optie selecteert, selecteert u ook de uitvoeringen die u dynamisch wilt maken door een van de opties [Voorinstelling afbeelding](/help/assets/dynamic-media/image-presets.md) lijst. <br>Bovendien kunt u de grootte en maateenheid, de indeling, de kleurruimte, de resolutie en eventuele optionele afbeeldingsaanpassingen selecteren, zoals het omkeren van de afbeelding. De optie is alleen beschikbaar als u [!DNL Dynamic Media] ingeschakeld. |
 
-1. Klik in het dialoogvenster op **[!UICONTROL Download]**.
+1. Klik op **[!UICONTROL Download]**.
 
    Als e-mailmelding is ingeschakeld voor grote downloads, wordt een e-mail met een download-URL van de gearchiveerde ZIP-map in uw Postvak IN weergegeven. Klik op de downloadkoppeling in de e-mail om het ZIP-archief te downloaden.
 
    ![e-mailmeldingen voor grote downloads](/help/assets/assets/email-for-large-notification.png)
 
-   U kunt de melding ook in uw [!DNL Experience Manager] Postvak IN.
+   U kunt de melding ook weergeven in uw [!DNL Experience Manager] Postvak IN.
 
    ![inbox-notifications-voor-grote downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
 
@@ -108,11 +108,11 @@ De [!UICONTROL Download Inbox] geeft de verwerkingsstatus van elk archief weer. 
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
-De standaardserver [!DNL Experience Manager] Hiermee kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige downloadaanvragen afgeven om ZIP-bestanden met elementen te maken. De downloadvoorbereiding kan prestatiesimplicaties hebben of kan zelfs de server en het netwerk overbelasten. Om dergelijke potentiële DoS-achtige risico&#39;s te verlichten die door deze eigenschap worden veroorzaakt, `AssetDownloadServlet` De component OSGi is uitgeschakeld voor publicatie-instanties. Als u de downloadfunctie niet nodig hebt op auteur-instanties, schakelt u het servlet-programma uit bij de auteur.
+De standaardserver [!DNL Experience Manager] Hiermee kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige downloadaanvragen afgeven om ZIP-bestanden met elementen te maken. De downloadvoorbereiding kan prestatiesimplicaties hebben of kan zelfs de server en het netwerk overbelasten. Om dergelijke potentiële DoS-achtige risico&#39;s te verlichten die door deze eigenschap worden veroorzaakt, `AssetDownloadServlet` De component OSGi is uitgeschakeld voor publicatie-instanties. Schakel het servlet-bestand bij de auteur uit als u de downloadfunctie niet nodig hebt voor instanties van de auteur.
 
-Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het gebruiken van iets zoals de Commons van het Aandeel van Activa of andere portaalachtige implementatie, laat manueel servlet via een configuratie OSGi toe. Adobe raadt u aan de toegestane downloadgrootte zo laag mogelijk in te stellen zonder dat dit van invloed is op de vereisten voor het dagelijks downloaden. Een hoge waarde kan van invloed zijn op de prestaties.
+Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het gebruiken van iets zoals de Commons van het Aandeel van Activa of andere portaalachtige implementatie, laat manueel servlet via een configuratie OSGi toe. Adobe raadt u aan de toegestane downloadgrootte zo laag mogelijk in te stellen zonder dat dit van invloed is op de dagelijkse downloadvereisten. Een hoge waarde kan de prestaties beïnvloeden.
 
-1. Maak een map met een naamgevingsconventie die zich richt op de publicatieroutmodus, dat wil zeggen: `config.publish`:
+1. Maak een map met een naamgevingsconventie die zich richt op de publicatieroutmodus, namelijk: `config.publish`:
 
    `/apps/<your-app-name>/config.publish`
 
@@ -126,11 +126,20 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
 
 ## Asset Download-server uitschakelen {#disable-asset-download-servlet}
 
-Als u de downloadfunctionaliteit niet nodig hebt, dan onbruikbaar servlet om het even welke DoS-gelijkaardige risico&#39;s te verhinderen. De `Asset Download Servlet` kan worden uitgeschakeld op een [!DNL Experience Manager] auteur en publiceer instanties door de configuratie van de verzender bij te werken om het even welke verzoeken van de activadownload te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
+Als u de downloadfunctionaliteit niet nodig hebt, dan onbruikbaar servlet om het even welke DoS-gelijkaardige risico&#39;s te verhinderen. De `Asset Download Servlet` kan worden uitgeschakeld op [!DNL Experience Manager] auteur en publiceer instanties door de configuratie van de verzender bij te werken om het even welke verzoeken van de activadownload te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 
 1. Als u aanvragen voor het downloaden van middelen wilt blokkeren via een dispatcherconfiguratie, bewerkt u de `dispatcher.any` en voeg een nieuwe regel toe aan de [filtersectie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+
+## OnTime/OffTime-uitvoering {#on-off-time-rendition}
+
+Om het `OnOffTimeAssetAccessFilter` de dienst, moet u een configuratie tot stand brengen OSGi. Met deze service kunt u naast het element zelf ook toegang tot vertoningen en metagegevens blokkeren op basis van de instellingen voor aan- en uittijd. De OSGi-configuratie moet `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Voer de onderstaande stappen uit:
+
+1. In uw projectcode in Git, creeer een configuratiedossier bij `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Het bestand moet het volgende bevatten `{}` als inhoud, die een lege configuratie OSGi voor de overeenkomstige component OSGi betekent. Deze actie laat de dienst toe.
+1. Implementeer uw code, inclusief deze nieuwe configuratie, via [!DNL Cloud Manager].
+1. Nadat de uitvoeringen en metagegevens zijn geïmplementeerd, zijn deze toegankelijk volgens de instellingen voor aan- en uittijd van de elementen. Als de huidige datum of tijd vóór de on-time of na de off-time valt, wordt een foutenmelding getoond.
+Voor meer details bij het toevoegen van een lege configuratie OSGi, kunt u naar dit verwijzen [hulplijn](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Tips en beperkingen {#tips-limitations}
 
@@ -154,4 +163,4 @@ Als u de downloadfunctionaliteit niet nodig hebt, dan onbruikbaar servlet om het
 >
 >* [Met DRM beveiligde middelen downloaden](drm.md)
 >* [Elementen downloaden met de bureaubladtoepassing Experience Manager op Win- of Mac-computers](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [Elementen downloaden met de Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-apps](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Elementen downloaden via Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-apps](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)

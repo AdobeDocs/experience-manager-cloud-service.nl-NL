@@ -2,9 +2,9 @@
 title: Het vormen van de Regels van de Filter van het Verkeer met de Regels van WAF
 description: De Regels van de Filter van het Verkeer van het Gebruik met de Regels van WAF om Verkeer te filtreren
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
+source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
 workflow-type: tm+mt
-source-wordcount: '2740'
+source-wordcount: '3810'
 ht-degree: 0%
 
 ---
@@ -526,3 +526,296 @@ Hieronder vindt u een lijst met veldnamen die in CDN-logbestanden worden gebruik
 | *res_age* | De hoeveelheid tijd (in seconden) dat een reactie in de cache is geplaatst (in alle knooppunten). |
 | *pop* | Datacenter van de CDN-cacheserver. |
 | *regels* | De naam van eventuele overeenkomende regels.<br><br>Geeft ook aan of de overeenkomst tot een blok heeft geleid. <br><br>Bijvoorbeeld &quot;`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`&quot;<br><br>Leeg als geen regels overeenkomen. |
+
+## Zelfstudie over dashboard-gereedschappen  {#dashboard-tooling}
+
+Adobe biedt een mechanisme voor het downloaden van dashboardgereedschappen naar uw computer voor het invoeren van CDN-logbestanden die zijn gedownload via Cloud Manager. Met dit tooling, kunt u uw verkeer analyseren om omhoog met de aangewezen regels van de verkeersfilter te komen om te verklaren, met inbegrip van de regels van WAF. In deze sectie worden eerst enkele instructies gegeven om vertrouwd te raken met het dashboard-gereedschap in een ontwikkelomgeving, gevolgd door richtlijnen over hoe u die kennis kunt gebruiken om regels voor een testomgeving te maken.
+
+Klanten die de Regels van de Filter van het verkeer vroegen vroegen om een ritje van het dashboardhulpmiddel, dat een README dossier omvat beschrijvend hoe te om de container van het Dok te laden en de CDN- logboeken in te nemen.
+
+
+### Kennis krijgen van de dashboardgereedschappen {#dashboard-getting-familiar}
+
+1. Creeer een pijpleiding van de niet-productieconfiguratie van de Manager van de Wolk, verbonden aan een dev env. Selecteer eerst de optie van de Pijl van de Plaatsing. Dan selecteer de Gerichte Plaatsing, Config, uw bewaarplaats, de git tak, en plaats de codeplaats aan /config.
+
+   ![Niet-productiepijpleiding toevoegen selecteert plaatsing](/help/security/assets/waf-select-pipeline1.png)
+
+   ![Niet-productiepijplijn toevoegen, selecteer doel](/help/security/assets/waf-select-pipeline2.png)
+
+
+1. In uw werkruimte, creeer een omslag config op het wortelniveau en voeg een dossier genoemd cdn.yaml toe, waar u een eenvoudige regel zult verklaren, die het plaatst op logboekwijze eerder dan op het blokkeren wijze.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: log
+   ```
+
+1. Leg uw veranderingen vast en duw, en stel uw configuratie op gebruikend de configuratiepijplijn.
+
+   ![Configuratiepijplijn uitvoeren](/help/security/assets/waf-run-pipeline.png)
+
+1. Zodra uw configuratie is opgesteld, probeer om tot https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me toegang te hebben gebruikend uw Webbrowser of met het krullbevel hieronder. U moet een 404-foutpagina krijgen omdat die pagina niet bestaat.
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. Download de CDN-logboeken van Cloud Manager en bevestig dat de regels overeenkomen met de verwachte waarden, met een regeleigenschap die overeenkomt met de regelnaam:
+
+   ```
+   "rules": "match=log-rule-example"
+   ```
+
+   ![Logbestanden downloaden selecteren](/help/security/assets/waf-download-logs1.png)
+
+   ![Logbestanden downloaden](/help/security/assets/waf-download-logs2.png)
+
+1. Laad de Docker-afbeelding met het dashboard-gereedschap en volg de README om de CDN-logboeken in te voeren. Zoals in de volgende schermafbeeldingen wordt getoond, selecteer de juiste tijdsperiode, de juiste omgeving, en de juiste filters.
+
+   ![Tijd selecteren vanuit dashboard](/help/security/assets/dashboard-select-time.png)
+
+   ![Omgeving van dashboard selecteren](/help/security/assets/dashboard-select-env.png)
+
+1. Nadat de juiste filters zijn toegepast, ziet u een dashboard dat met de verwachte gegevens is geladen. In het schermafbeelding hieronder, is het regel log-rule-example 3 keer geactiveerd in de laatste 2 uren, door zelfde IP die in Ierland wordt gevestigd, gebruikend Webbrowser en krullen.
+
+   ![Gegevens van het ontwikkeldashboard weergeven](/help/security/assets/dashboard-see-data-logmode.png)
+   ![Widgets dev-dashboardgegevens weergeven](/help/security/assets/dashboard-see-data-logmode2.png)
+
+1. Wijzig nu cdn.yaml om de regel in blokmodus te zetten, zodat de pagina&#39;s worden geblokkeerd, zoals u had verwacht. Dan begaat, duw en teweegbrengt de configuratiepijplijn zoals vroeger gedaan.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: block
+   ```
+
+1. Zodra uw configuratie is opgesteld, probeer om tot https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me toegang te hebben gebruikend uw Webbrowser of met het krullbevel hieronder. Er moet een pagina met 406 fouten worden weergegeven om aan te geven dat het verzoek is geblokkeerd.
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. Download opnieuw uw CDN-logbestanden in Cloud Manager (Opmerking: het kan tot 5 minuten duren voordat de nieuwe aanvragen in uw CDN-logbestanden worden weergegeven) en importeer ze in de dashboardwerkset, zoals we dat eerder deden. Vernieuw het dashboard als het gereed is. Zoals u in het hieronder opgenomen scherm kunt zien, worden de verzoeken aan /log/me geblokkeerd door onze regel.
+
+   ![Gegevens in het dashboard van een pod weergeven](/help/security/assets/dashboard-see-data-blockmode.png)
+   ![Gegevens in het dashboard van een pod weergeven](/help/security/assets/dashboard-see-data-blockmode2.png)
+
+1. Als u WAF verkeersfilters hebt toegelaten (dit zal een extra vergunning vereisen nadat de eigenschap GA is), herhaal met een regel van de het verkeersfilter van WAF, op logboekwijze, en stel de regels op.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: log-waf-flags
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           action:
+             type: log
+             wafFlags:
+                 - SANS
+                 - SIGSCI-IP
+                 - TORNODE
+                 - NOUA
+                 - SCANNER
+                 - USERAGENT
+                 - PRIVATEFILE
+                 - ABNORMALPATH
+                 - TRAVERSAL
+                 - NULLBYTE
+                 - BACKDOOR
+                 - LOG4J-JNDI
+                 - SQLI
+                 - XSS
+                 - CODEINJECTION
+                 - CMDEXE
+                 - NO-CONTENT-TYPE
+                 - UTF8
+   ```
+
+1. Een gereedschap gebruiken als [nikto](https://github.com/sullo/nikto/tree/master) om overeenkomstige verzoeken te produceren. Met de onderstaande opdracht worden ongeveer 550 kwaadaardige verzoeken binnen 1 minuut verzonden.
+
+   ```
+   ./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
+   ```
+
+1. Download de CDN-logbestanden van Cloud Manager (houd er rekening mee dat het maximaal 5 minuten kan duren om te worden weergegeven) en controleer of zowel de overeenkomende gedeclareerde regels als de WAF-markeringen worden weergegeven.
+
+   Zoals u kunt zien, worden verschillende verzoeken van Nikto door de WAF gemarkeerd als kwaadaardig. We kunnen zien dat Nikto heeft geprobeerd CMDEXE, SQLI en NULLBYTE te misbruiken. Als u nu de handeling wijzigt van log naar block en re-trigger voor een scan met Nikto, worden alle aanvragen die eerder waren gemarkeerd deze keer geblokkeerd.
+
+   ![WAF-gegevens weergeven](/help/security/assets/dashboard-see-data-waf.png)
+
+
+   Merk op dat wanneer een verzoek om om het even welke vlaggen van WAF aanpast, die vlaggen van WAF zullen verschijnen, zelfs als geen deel van de verklaarde regel; dit is zodat bent u altijd bewust van potentieel nieuw kwaadwillig verkeer, waarvoor u nog geen passende regels hebt verklaard. Als voorbeeld:
+
+   ```
+   "rules": "match=log-waf-flags,waf=SQLI,action=blocked"
+   ```
+
+1. Herhaal deze bewerking met een regel waarbij snelheidsbeperking wordt gebruikt in de logmodus. Zoals altijd, begaat, duw en brengt de configuratiepijplijn teweeg om uw configuratie toe te passen.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: limit-requests-client-ip
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           rateLimit:
+             limit: 10
+             window: 1
+             penalty: 60
+             groupBy:
+               - reqProperty: clientIp
+           action: log
+   ```
+
+1. Een gereedschap gebruiken als [Vegeta](https://github.com/tsenart/vegeta) om verkeer te produceren.
+
+   ```
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+   ```
+
+1. Nadat u het gereedschap hebt uitgevoerd, kunt u CDN-logboeken downloaden en deze in het dashboard invoeren om te controleren of de regel voor snelheidsbegrenzer is geactiveerd
+
+   Nu u vertrouwd bent met hoe de regels van de verkeersfilter werken, kunt u zich op het prodmilieu bewegen.
+
+### Regels implementeren in de profielomgeving {#dashboard-prod-env}
+
+Zorg ervoor om regels op logboekwijze aanvankelijk te verklaren om te bevestigen dat er geen valse positieven zijn, wat wettig verkeer betekent dat verkeerd zou worden geblokkeerd.
+
+1. Creeer een pijpleiding van de productieconfiguratie verbonden aan uw productiemilieu.
+
+1. Kopieer de aanbevolen regels hieronder naar cdn.yaml. Mogelijk wilt u de regels wijzigen op basis van de unieke kenmerken van het live verkeer van uw website. Leg uw configuratiepijplijn vast, duw en activeer deze. Zorg ervoor dat de regels in de logmodus staan.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 100
+        window: 1
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
+      # Block requests coming from OFAC countries
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
+        # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+        - name: block-waf-flags-globally
+          when:
+            reqProperty: tier
+            matches: "author|publish"
+          action:
+            type: block
+            wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+        # Disable protection against CMDEXE on /bin
+        - name: allow-cdmexe-on-root-bin
+          when:
+            allOf:
+              - reqProperty: tier
+                matches: "author|publish"
+              - reqProperty: path
+                matches: "^/bin/.*"
+          action:
+            type: allow
+            wafFlags:
+              - CMDEXE
+```
+
+1. Voeg om het even welke extra regels toe om kwaadwillig verkeer te blokkeren dat u zich van bewust kunt zijn. Bijvoorbeeld, bepaalde IPs die uw plaats hebben aangevallen.
+
+1. Na een paar minuten, uren of dagen, afhankelijk van het verkeersvolume van uw site, downloadt u CDN-logbestanden van Cloud Manager en analyseert u deze met het dashboard.
+
+1. Hier volgen enkele overwegingen:
+   1. Verkeersovereenkomsten tussen gedeclareerde regels worden weergegeven in grafieken en aanvraaglogboeken, zodat u eenvoudig kunt controleren of de gedeclareerde regels worden geactiveerd.
+   1. De de passende vlaggen van WAF van het verkeer verschijnen in grafieken en verzoeklogboeken, zelfs als u hen niet in een regel registreerde. Dit is zodat bent u zich altijd bewust van potentieel nieuw kwaadwillig verkeer en kan nieuwe regels tot stand brengen zoals nodig. Bekijk de vlaggen van WAF die niet in de verklaarde regels worden weerspiegeld en denk na verklarend hen.
+   1. Voor passende regels, inspecteer de verzoeklogboeken valse positieven en zie of kunt u hen uit de regels filtreren. Misschien zijn ze bijvoorbeeld alleen voor bepaalde paden onwaar positief.
+
+1. Plaats de aangewezen regels aan blokwijze en denk ook na toevoegend extra regels. Misschien zouden sommige regels op logboekwijze moeten blijven aangezien u verder met meer verkeer analyseert.
+
+1. Implementeer de configuratie opnieuw
+
+1. Herhaal dit, waarbij de dashboards regelmatig worden geanalyseerd.
+
