@@ -1,9 +1,9 @@
 ---
 title: Elementen importeren en exporteren naar [!DNL AEM Forms]?
 description: Leer hoe u DocuSign met een adaptief formulier kunt gebruiken om e-handtekeningen te verzamelen.
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -242,3 +242,8 @@ The side panel also lets you save your search settings with names of your choice
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 
 -->
+
+>[!MORELIKETHIS]
+>
+>* [Exportformuliersjablonen importeren](/help/forms/import-export-forms-templates.md)
+>* [Thema&#39;s gebruiken in Adaptief formulier Core-componenten](/help/forms/using-themes-in-core-components.md)

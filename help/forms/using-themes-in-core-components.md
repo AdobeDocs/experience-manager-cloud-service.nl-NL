@@ -2,9 +2,9 @@
 title: Hoe kunnen we thema's maken en gebruiken in Adaptive Forms?
 description: U kunt thema's gebruiken om een adaptief formulier op te maken en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2634'
 ht-degree: 0%
 
 ---
@@ -418,7 +418,11 @@ Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals e
 * [Voorbeeldthemasjablonen en formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
-## Verwante artikelen {#related-article}
+>[!MORELIKETHIS]
+>
+>* [Adaptieve Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
 
-* [Adaptieve Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
-* [Een op zichzelf staand adaptief formulier voor kerncomponenten maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+## Zie ook {#see-also}
+
+{{see-also}}

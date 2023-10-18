@@ -2,9 +2,9 @@
 title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6d949d9f31cc13b30f8ba06058911ddfe8e817af
+source-git-commit: ddc7ddbcd1761b4320e1c7a30a015d844ef3e0c0
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3226'
 ht-degree: 0%
 
 ---
@@ -403,3 +403,7 @@ Als deel van AEM veiligheid en het verharden richtlijnen, vorm de pagina&#39;s v
 Wanneer u een formuliergegevensmodel of een op schema gebaseerde adaptieve vorm met XML- of JSON-gegevensklacht vooraf instelt op een schema dat geen gegevens bevat `<afData>`, `<afBoundData>`, en `</afUnboundData>` -tags, gaan de gegevens van niet-begrensde velden van het adaptieve formulier verloren. Het schema kan een XML-schema, JSON-schema of een formuliergegevensmodel zijn. Niet-begrensde velden zijn adaptieve formuliervelden zonder de `bindref` eigenschap.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
+
+>[!MORELIKETHIS]
+>
+>* [Een aangepaste verzendactie maken voor Adaptieve Forms](/help/forms/custom-submit-action-form.md)

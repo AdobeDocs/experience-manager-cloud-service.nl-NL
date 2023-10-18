@@ -5,9 +5,9 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -169,3 +169,8 @@ In de volgende code worden de `SampleType`gebruikt de eigenschap minOccurs &amp;
 >[!NOTE]
 >
 >Voor niet-accordeonindeling gebruikt u de knopcomponenten Adaptief formulier om instanties toe te voegen en te verwijderen.
+
+
+>[!MORELIKETHIS]
+>
+>* [Formulieren maken met herhaalbare secties in Adaptief Form Core-componenten](/help/forms/create-forms-repeatable-sections.md)

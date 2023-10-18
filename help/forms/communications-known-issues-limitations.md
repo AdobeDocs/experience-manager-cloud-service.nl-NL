@@ -2,9 +2,9 @@
 title: Wat zijn overwegingen, bekende kwesties en beste praktijken in AEM Forms?
 description: Bekende problemen en best practices voor AEM Forms Communication API's in overweging nemen.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1748'
 ht-degree: 0%
 
 ---
@@ -202,4 +202,12 @@ In vergelijking met een omgeving op locatie biedt de Cloud Service extra voordel
 **Where is data hosted?** -->
 
 **Kan ik veelvoudige partijverrichtingen gelijktijdig in werking stellen?**
-Ja, u kunt meerdere batchbewerkingen tegelijkertijd uitvoeren. Gebruik altijd verschillende bron- en doelmappen voor elke bewerking om conflicten te voorkomen.
+Ja, u kunt meerdere batchbewerkingen tegelijk uitvoeren. Gebruik altijd verschillende bron- en doelmappen voor elke bewerking om conflicten te voorkomen.
+
+>[!MORELIKETHIS]
+>
+>* [Inleiding tot as a Cloud Service communicatie met AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service architectuur voor adaptieve Forms- en communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communicatieverwerking - synchrone API&#39;s](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communicatieverwerking - Batch-API&#39;s](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+

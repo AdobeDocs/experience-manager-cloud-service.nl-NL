@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service architectuur voor adaptieve Forms- en communicatie-API's
 description: De architectuur van [!DNL AEM Forms] as a Cloud Service om over de scalability, veerkracht, en prestatiesaspecten van het platform te leren.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1093'
 ht-degree: 1%
 
 ---
@@ -193,3 +193,10 @@ Wanneer u opstelling en vormt [!DNL AEM Forms] as a Cloud Service omgeving, stel
 ## Foutopsporing {#debugging}
 
 AEM as a Cloud Service runnen op zelfbediening, schaalbare cloudinfrastructuur. Het vereist AEM ontwikkelaars om diverse facetten van AEM as a Cloud Service te begrijpen en te zuiveren, van bouw, en op te stellen aan het verkrijgen van details van het runnen van AEM toepassingen. Zie voor meer informatie [Foutopsporing AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html).
+
+
+>[!MORELIKETHIS]
+>
+>* [Inleiding tot as a Cloud Service communicatie met AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Communicatie Batch-verwerking](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Communicatieverwerking - synchrone API&#39;s](/help/forms/aem-forms-cloud-service-communications.md)

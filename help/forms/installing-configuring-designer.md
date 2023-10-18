@@ -3,9 +3,9 @@ title: Hoe kan ik Forms Designer downloaden en installeren om Document of Record
 description: Met Forms Designer kunt u XDP- en PDF-formuliersjablonen maken die fungeren als sjabloon voor een document met records.
 keywords: Designer installeren, Forms-ontwerper installeren, vereisten voor de installatie van Forms Designer
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '405'
 ht-degree: 1%
 
 ---
@@ -74,3 +74,8 @@ Voer de volgende stappen uit om Designer te installeren:
 * [Aangepaste lettertypen gebruiken](/help/forms/use-custom-fonts.md)
 * [Een op zichzelf staand adaptief formulier voor kerncomponenten maken](/help/forms/creating-adaptive-form-core-components.md)
 * [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+>[!MORELIKETHIS]
+>
+>* [Forms Designer gebruiken om DoR-sjablonen (Document of Record) en formulierfragmenten te maken](/help/forms/use-forms-designer.md)

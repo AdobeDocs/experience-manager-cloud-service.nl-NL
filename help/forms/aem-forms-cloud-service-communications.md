@@ -2,9 +2,9 @@
 title: Hoe te om as a Cloud Service Forms te gebruiken om gegevens met malplaatjes samen te voegen XDP en PDF of output in formaat te produceren PCL, ZPL, en PostScript?
 description: Automatisch gegevens samenvoegen met XDP- en PDF-sjablonen of uitvoer genereren in PCL-, ZPL- en PostScript-indelingen
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -142,3 +142,10 @@ De [API-naslagdocumentatie](https://developer.adobe.com/experience-manager-forms
 >[!NOTE]
 >
 >Alleen leden van een groep met formuliergebruikers hebben toegang tot communicatie-API&#39;s.
+
+>[!MORELIKETHIS]
+>
+>* [Inleiding tot as a Cloud Service communicatie met AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service architectuur voor adaptieve Forms- en communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communicatieverwerking - synchrone API&#39;s](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communicatieverwerking - Batch-API&#39;s](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

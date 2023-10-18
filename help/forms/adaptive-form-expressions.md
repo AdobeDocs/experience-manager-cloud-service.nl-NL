@@ -1,8 +1,7 @@
 ---
 title: Wat zijn adaptieve formulierexpressies?
-seo-title: Adaptive Form Expressions
 description: Met Adaptieve Forms-expressies kunt u automatische validatie, berekening en de zichtbaarheid van een sectie in- of uitschakelen.
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '2697'
 ht-degree: 0%

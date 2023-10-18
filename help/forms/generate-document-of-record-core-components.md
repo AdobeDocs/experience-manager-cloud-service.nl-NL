@@ -2,9 +2,9 @@
 title: Hoe te om document van verslag voor Adaptive Forms te produceren?
 description: Leer een sjabloon te genereren voor een Document of Record (DoR) voor Adaptive Forms Core Components.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '3005'
+source-wordcount: '3007'
 ht-degree: 0%
 
 ---
@@ -404,4 +404,14 @@ De instelling van de component Document of Record is beschikbaar onder de eigens
 **Instellingen voor formulierniveau**
 
 * **Inclusief niet-gebonden velden in DoR:** Als u de eigenschap instelt, worden niet-gebonden velden van op schema gebaseerde adaptieve vorm opgenomen in Document of Record. Standaard is dit waar.
-<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
+
+## Zie ook {#see-also}
+
+{{see-also}}
+
+
+<!-- 
+
+**Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
+
+!->>

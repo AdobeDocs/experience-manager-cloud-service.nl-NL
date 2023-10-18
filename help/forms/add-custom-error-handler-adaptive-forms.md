@@ -8,9 +8,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '2439'
+source-wordcount: '2431'
 ht-degree: 0%
 
 ---
@@ -407,7 +407,10 @@ Using this custom error handler, the adaptive form converts the fields listed in
 
 ## Zie ook {#see-also}
 
-* [Aangepaste fouthandlers maken en gebruiken in Adaptive Forms (Core Components)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-* [Een op zichzelf staand adaptief formulier voor kerncomponenten maken](/help/forms/creating-adaptive-form-core-components.md)
-* [Stijlen of thema&#39;s maken voor uw formulieren](/help/forms/using-themes-in-core-components.md)
-* [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+{{see-also}}
+
+>[!MORELIKETHIS]
+>
+>* [Aangepaste fouthandlers maken en gebruiken in Adaptive Forms (Core Components)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+>* [Stijlen of thema&#39;s maken voor uw formulieren](/help/forms/using-themes-in-core-components.md)
+>* [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

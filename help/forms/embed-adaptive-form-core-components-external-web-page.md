@@ -5,7 +5,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
@@ -162,3 +162,11 @@ Houd bij het insluiten van een adaptief formulier in een webpagina rekening met 
 1. Ga bij AEM publicatie-instantie naar AEM Web Console Configuration Manager op `https://'[server]:[port]'/system/console/configMgr`.
 1. Zoek en open de **Filter Apache Sling Referrer** configuratie.
 1. Geef in het veld Toegestane gastheren het domein op waar de webpagina zich bevindt. Het laat de gastheer toe om POST verzoeken aan de AEM server te doen. U kunt ook de reguliere expressie gebruiken om een reeks externe toepassingsdomeinen op te geven.
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Embed adaptive form based on core components to AEM sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+
+-->

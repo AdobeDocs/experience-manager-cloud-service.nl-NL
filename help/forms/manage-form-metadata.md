@@ -2,9 +2,9 @@
 title: Hoe kunnen we metagegevens voor AEM Forms beheren?
 description: Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1725'
 ht-degree: 0%
 
 ---
@@ -307,3 +307,8 @@ Er is een gereedschap (de Editor voor het metagegevensschema) beschikbaar waarme
    U hebt een aangepaste eigenschap voor metagegevens toegevoegd.
 
 Alle adaptieve Forms in [!DNL AEM Forms] bevat nu deze extra eigenschap voor metagegevens. U kunt het van de eigenschappen pagina uitgeven.
+
+
+## Zie ook {#see-also}
+
+{{see-also}}

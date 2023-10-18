@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1482'
 ht-degree: 0%
 
 ---
@@ -139,3 +139,8 @@ Wanneer dit archetype project door de pijpleiding van cm wordt opgesteld, zal de
 U hebt nu een formuliergegevensmodel waaraan gegevensbronnen zijn toegevoegd. Vervolgens kunt u het formuliergegevensmodel bewerken om gegevensmodelobjecten en -services toe te voegen en te configureren, koppelingen tussen gegevensmodelobjecten toe te voegen, eigenschappen te bewerken, aangepaste gegevensmodelobjecten en -eigenschappen toe te voegen, voorbeeldgegevens te genereren, enzovoort.
 
 Zie voor meer informatie [Werken met formuliergegevensmodel](work-with-form-data-model.md).
+
+
+>[!MORELIKETHIS]
+>
+>* [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)

@@ -2,9 +2,9 @@
 title: Gemakkelijk maken van PDF, moeiteloos maken - Maak kennis met de kunst met batterijverwerking - Uw zelfhulplijn voor het genereren van miljoenen PDF-documenten!
 description: Hoe te om merkgeoriënteerde en gepersonaliseerde mededelingen tot stand te brengen?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1735'
 ht-degree: 0%
 
 ---
@@ -171,3 +171,10 @@ Laten we het met behulp van een voorbeeld begrijpen: aannemen dat er een invoerg
 ## API-naslagdocumentatie
 
 De API verwijzingsdocumentatie verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is beschikbaar in de indeling .yaml. U kunt de [Batch-API&#39;s](assets/batch-api.yaml) bestand maken en uploaden naar Postman om de functionaliteit van API&#39;s te controleren.
+
+>[!MORELIKETHIS]
+>
+>* [Inleiding tot as a Cloud Service communicatie met AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service architectuur voor adaptieve Forms- en communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communicatieverwerking - synchrone API&#39;s](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communicatieverwerking - Batch-API&#39;s](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

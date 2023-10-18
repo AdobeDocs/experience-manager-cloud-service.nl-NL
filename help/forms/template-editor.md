@@ -2,9 +2,9 @@
 title: Hoe kunnen we een adaptieve formuliersjabloon maken?
 description: Maak adaptieve formuliersjablonen om de basisstructuur en eerste inhoud te definiëren met de Sjablooneditor.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '2033'
 ht-degree: 1%
 
 ---
@@ -223,3 +223,8 @@ U kunt een adaptief formulier ook opslaan als een sjabloon voor toekomstig gebru
 * Wanneer u eigenschappen van het formulier in de sjablooneditor wijzigt, gebruikt u de eigenschap BindReference niet.
 * Als u een onderbrekingspunt wilt toevoegen, creeer het wanneer u een Adaptief malplaatje van de Vorm ontwerpt.
 Voor meer informatie over breekpunten raadpleegt u [Responsieve lay-out](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
+
+
+## Zie ook {#see-also}
+
+{{see-also}}

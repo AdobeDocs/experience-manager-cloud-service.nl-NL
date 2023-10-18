@@ -3,7 +3,7 @@ title: Hoe te om herhaalbare panelen in de Aangepaste Componenten van de Kern va
 description: Leer herhaalbare secties of velden maken in een adaptief formulier.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -225,9 +225,14 @@ In de volgende code worden de `SampleType`gebruikt de eigenschap minOccurs &amp;
 ```
 
 
-## Verwante artikelen
+## Zie ook {#see-also}
 
-* [Een adaptief formulier maken](creating-adaptive-form-core-components.md)
-* [Stijlen of thema&#39;s maken voor uw formulieren](using-themes-in-core-components.md)
-* [Dynamisch gedrag toevoegen aan formulieren met de regeleditor](rule-editor.md)
-* [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/features/responsive-layout.md)
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [Een adaptief formulier maken](creating-adaptive-form-core-components.md)
+>* [Stijlen of thema&#39;s maken voor uw formulieren](using-themes-in-core-components.md)
+>* [Dynamisch gedrag toevoegen aan formulieren met de regeleditor](rule-editor.md)
+>* [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/features/responsive-layout.md)

@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ac7e1a1ada156734c3a487269e674e8eade7c9c3
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
 source-wordcount: '2260'
 ht-degree: 0%
@@ -328,3 +328,14 @@ When you enable mutual authentication for form data model, both the data source 
 ## Volgende stappen {#next-steps}
 
 U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een formuliergegevensmodel maken of als u al een formuliergegevensmodel zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de gegevensbronnen die u hebt geconfigureerd. Zie [Formuliergegevensmodel maken](create-form-data-models.md) voor meer informatie.
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>*  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

@@ -2,9 +2,9 @@
 title: Hoe te om Verenigde Verbinding van de Opslag voor AEM Forms te vormen?
 description: Leer hoe u Unified Storage Connector voor AEM Forms beheert. Gebruik de Unified Storage-connector om AEM Forms aan te sluiten op externe gegevensopslagsystemen.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '572'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Voer de volgende stappen uit om de Verenigde Verbinding van de Opslag voor AEM W
 
 1. In de **[!UICONTROL Workflow]** sectie, selecteren **[!UICONTROL Azure]** in de vervolgkeuzelijst Opslag.
 1. Geef de [configuratiepad voor de Azure-opslagconfiguratie](#create-azure-storage-configuration) in de **[!UICONTROL Storage Configuration Path]** veld.
-1. Tikken **[!UICONTROL Publish]** en tik vervolgens op **[!UICONTROL Save]** om de configuratie op te slaan.
+1. Tikken **[!UICONTROL Publish]** en tikt u vervolgens op **[!UICONTROL Save]** om de configuratie op te slaan.
 
 ### Een AEM workflowmodel voor externe gegevensopslag configureren {#configure-workflow-external-data-storage}
 
@@ -66,3 +66,10 @@ Hieronder volgen de richtlijnen voor het gebruik van AEM Workflows en het opslaa
 * Gebruik geen aangepaste AEM Workflowstap in een workflowmodel voor het opslaan van gegevens in de CRX DE-opslagplaats.
 
 * Wanneer u [configureren van een AEM workflowmodel voor externe gegevensopslag](#configure-workflow-external-data-storage)Creëer geen aangepaste kolommen voor AEM Inbox, aangezien de waarden van de aangepaste kolommen niet worden opgehaald als het werkitem in AEM Inbox tot een workflow behoort die is gemarkeerd voor externe opslag.
+
+>[!MORELIKETHIS]
+>
+>* [Gegevensbronnen configureren voor AEM Forms](/help/forms/configure-data-sources.md)
+>* [Azure-opslag voor AEM Forms configureren](/help/forms/configure-azure-storage.md)
+>* [Integreer Microsoft Dynamics 365 en Salesforce met Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Forms Portal toevoegen aan een AEM Sites-pagina](/help/forms/configure-forms-portal.md)

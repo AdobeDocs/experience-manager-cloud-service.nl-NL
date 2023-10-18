@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
 workflow-type: tm+mt
 source-wordcount: '3003'
 ht-degree: 0%
@@ -361,7 +361,12 @@ Wanneer [!DNL Adobe Sign] de dienst wordt gevormd voor een Aangepast Vorm, ontbr
 
 * Afzonderlijke e-mailadressen gebruiken om te configureren [!DNL Adobe Sign] en voor de eerste of de enkele ontvanger. Het e-mailadres van de eerste ontvanger of de enige ontvanger (als er één ontvanger is) kan niet gelijk zijn aan [!DNL Adobe Sign] account gebruikt om AEM Cloud Servicen te configureren.
 
-## Verwante artikelen {#related-articles}
+>[!MORELIKETHIS]
+>
+>* [Integreren [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [Aanbevolen procedures voor het gebruik [!DNL Adobe Sign] met Adaptive Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
-* [Integreren [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
-* [Aanbevolen procedures voor het gebruik [!DNL Adobe Sign] met Adaptive Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+
+## Zie ook {#see-also}
+
+{{see-also}}

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '243'
 ht-degree: 2%
 
 ---
@@ -45,3 +45,8 @@ Pagina Nul-inhoud wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer,
 >[!NOTE]
 >
 >De aangepaste eigenschap die u zojuist hebt gemaakt, wordt mogelijk niet correct weergegeven in het dialoogvenster Formuliereigenschappen wanneer u het formulier opnieuw opent. Het werkt echter prima en in het formulier wordt het bijgewerkte bericht Pagina nul weergegeven.
+
+>[!MORELIKETHIS]
+>
+>* [Forms Designer downloaden en installeren om Document of Record-sjablonen te maken](/help/forms/installing-configuring-designer.md)
+>* [Met Forms Designer kunt u DoR-sjablonen (Document of Record) en formulierfragmenten maken?](/help/forms/use-forms-designer.md)

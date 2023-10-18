@@ -4,9 +4,9 @@ description: Verbeter de formulierbeveiliging zonder problemen met de Google reC
 topic-tags: Adaptive Forms, author
 keywords: De Google reCAPTCHA-service, Adaptive Forms, CAPTCHA-uitdaging, Boot Prevention, Core Components, Security Formulierverzending, Preventie van formulierspam
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -106,9 +106,6 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **V: Kan ik meer dan één Captcha-component in een adaptieve vorm gebruiken?**
 **Ans:** Het gebruik van meerdere Captcha-componenten in een adaptief formulier wordt niet ondersteund. Het wordt ook afgeraden de component Captcha te gebruiken in een fragment of een deelvenster dat is gemarkeerd voor wazig laden.
 
-## Zie ook
+## Zie ook {#see-also}
 
-* [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
-* [Een adaptief formulierfragment maken](/help/forms/adaptive-form-fragments-core-components.md)
-* [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Google reCAPTCHA gebruiken in een adaptief formulier](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

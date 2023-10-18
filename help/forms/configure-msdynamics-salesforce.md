@@ -2,9 +2,9 @@
 title: Hoe te om de Dynamica 365 van Microsoft en Salesforce uit de doos gegevensmodellen van de vormgegevens voor Adaptive Forms te vormen?
 description: Leer hoe u Microsoft Dynamics 365 en Salesforce integreert met Adaptive Forms.
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -100,3 +100,9 @@ A [!DNL Microsoft® Dynamics 365] Formuliergegevensmodel is beschikbaar in het v
 Als u het formuliergegevensmodel wilt openen, navigeert u naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**. De lijst met beschikbare mappen bevat een map met de titel die is opgegeven voor `DappTitle`  while [het produceren van het project van AEM archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Tik op de mapnaam en selecteer de optie **[!UICONTROL Microsoft® Dynamics 365 Data Model]** en tik op Bewerken ![Bewerken](assets/edit.png) pictogram om het formuliergegevensmodel weer te geven.
 
 Nadat u de [[!DNL Microsoft® Dynamics 365] Cloud Config-service](#configure-dynamics-cloud-service), kunt u adaptieve formulieren integreren met behulp van de doos [!DNL Microsoft® Dynamics 365] Gegevensmodel.
+
+>[!MORELIKETHIS]
+>
+* [Gegevensbronnen configureren voor AEM Forms](/help/forms/configure-data-sources.md)
+* [Azure-opslag voor AEM Forms configureren](/help/forms/configure-azure-storage.md)
+[Forms Portal toevoegen aan een AEM Sites-pagina](/help/forms/configure-forms-portal.md)

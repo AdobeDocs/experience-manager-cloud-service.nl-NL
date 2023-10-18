@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1515'
 ht-degree: 0%
 
 ---
@@ -204,3 +204,8 @@ U kunt ook de eigenschappen van het formuliermodel wijzigen in de editor voor ad
 >[!NOTE]
 >
 > U kunt een positief formulier ook als een sjabloon opslaan. Zie voor meer informatie [Een sjabloon maken met een adaptief formulier](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
+
+
+## Zie ook {#see-also}
+
+{{see-also}}

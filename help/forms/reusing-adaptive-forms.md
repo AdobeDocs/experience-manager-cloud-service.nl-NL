@@ -3,9 +3,9 @@ title: Hoe gebruik ik de metagegevenseigenschappen van een adaptief formulier op
 description: Ontdek om een bestaand adaptief formulier efficiënt te hergebruiken om een nieuw formulier te maken.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
@@ -71,3 +71,8 @@ De inhoud van een geplakte adaptieve Forms kan op de volgende manieren worden ge
 1. **Opnieuw publiceren:**
 
    Het geplakte element verschilt van het gekopieerde element. U kunt de presentatie publiceren als een nieuw element, zodat deze beschikbaar is voor eindgebruikers. Om te weten hoe te om activa te publiceren, <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
+
+
+## Zie ook {#see-also}
+
+{{see-also}}

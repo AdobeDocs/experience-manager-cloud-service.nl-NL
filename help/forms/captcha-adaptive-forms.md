@@ -1,14 +1,14 @@
 ---
 title: Hoe wordt CAPTCHA gebruikt in Adaptive Forms?
-description: Leer AEM CAPTCHA- of Google reCAPTCHA-service voor een adaptief formulier te configureren.
+description: Leer de Google reCAPTCHA-service voor een adaptief formulier te configureren of te gebruiken.
 uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
@@ -342,3 +342,12 @@ Stel de **[!UICONTROL af.cloudservices.recaptcha.domain]** eigendom van de **[!U
 ```
 
 Om waarden van een configuratie te plaatsen, [OSGi-configuraties genereren met de AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), en [stel de configuratie op](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) naar de instantie Cloud Service.
+
+## Zie ook {#see-also}
+
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [Referentiethema&#39;s, sjablonen en formuliergegevensmodellen voor adaptieve Forms](/help/forms/reference-themes-templates-data-models.md)

@@ -5,9 +5,9 @@ topic-tags: author
 keywords: Adaptieve formulierfragmenten toevoegen, Adaptieve formulierfragmenten maken, een formulierfragment maken, een fragment toevoegen aan een adaptief formulier, Fragmenten beheren
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -190,8 +190,8 @@ U kunt verschillende bewerkingen uitvoeren op Adaptief-formulierfragmenten met d
 Er zijn referentiefragmenten beschikbaar voor adaptieve formulieren die u kunt gebruiken om uw formulier te maken.
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
+
+
 ## Zie ook {#see-also}
 
-* [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Thema&#39;s maken of toevoegen in Adaptief Forms](/help/forms/using-themes-in-core-components.md)
-* [Google reCAPTCHA gebruiken in een AEM adaptief formulier op basis van Core Components](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

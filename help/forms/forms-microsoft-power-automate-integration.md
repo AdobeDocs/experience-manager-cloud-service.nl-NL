@@ -4,9 +4,9 @@ description: Een adaptief formulier integreren met Microsoft® Power Automate.
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -196,3 +196,6 @@ Voordat u het adaptieve formulier verzendt, moet u ervoor zorgen dat de `When an
 * [Een verzendhandeling configureren](configure-submit-actions-core-components.md)
 * [Adobe Experience Manager Connector voor Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
 
+>[!MORELIKETHIS]
+>
+* [Adaptief formulier aansluiten op Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)

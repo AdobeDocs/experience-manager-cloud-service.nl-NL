@@ -4,13 +4,13 @@ description: Leer hoe gebruikers een bedankt-uw-bericht kunnen worden getoond of
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
+exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
-
 
 # Omleidingspagina configureren {#configuring-redirect-page}
 
@@ -25,10 +25,18 @@ Bij indiening van een [Adaptief formulier met kerncomponenten](creating-adaptive
 
    * Als u een omleidings-URL wilt configureren, selecteert u bij Verzenden de optie **[!UICONTROL Redirect to URL option]** en geef een absoluut adres of een omleidings-URL of relatief pad van een AEM Sites-pagina op.
 
-   * Als u een aangepast bericht of een bedankbericht wilt configureren, selecteert u de optie **[!UICONTROL Show Message]** en geef een bericht op in het vak Berichtinhoud. Het is een tekstvak met tekstopmaak. U kunt de optie Volledig scherm gebruiken om alle beschikbare tekstitems met tekstopmaak weer te geven.
+   * Als u een aangepast bericht of een bedankbericht wilt configureren, selecteert u de optie **[!UICONTROL Show Message]** en geef een bericht op in het vak Bericht. Het is een tekstvak met tekstopmaak. U kunt de optie Volledig scherm gebruiken om alle beschikbare tekstitems weer te geven.
 
 Formulierauteurs kunnen een pagina configureren voor elk formulier, waarnaar de formuliergebruikers worden omgeleid na het verzenden van een formulier.
 
 **Verwante**
 
 * [Omleidingspagina configureren (Foundation Forms)](configuring-redirect-page.md)
+
+>[!MORELIKETHIS]
+>
+>* [Een omleidingspagina configureren](/help/forms/configuring-redirect-page.md)
+
+## Zie ook {#see-also}
+
+{{see-also}}

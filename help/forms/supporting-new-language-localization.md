@@ -2,9 +2,9 @@
 title: Hoe voeg ik steun voor nieuwe scènes aan een Aangepast Vorm toe dat op de Componenten van de Stichting wordt gebaseerd?
 description: Voor Adaptief Forms kunt u naast de landinstellingen uit het tekstvak ook landinstellingen voor meer talen toevoegen.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -157,3 +157,8 @@ Get a [voorbeeldclientbibliotheek](/help/forms/assets/locale-support-sample.zip)
 * Wanneer nieuwe velden worden toegevoegd aan een bestaand adaptief formulier:
    * **Voor automatische vertaling**: Maak het woordenboek opnieuw en voer het vertaalproject uit. Velden die na het maken van een vertaalproject aan een adaptief formulier zijn toegevoegd, blijven onvertaald.
    * **Voor menselijke vertaling**: Exporteer het woordenboek door `[server:port]/libs/cq/i18n/gui/translator.html`. Werk het woordenboek voor de zojuist toegevoegde velden bij en upload het.
+
+
+## Zie ook {#see-also}
+
+{{see-also}}

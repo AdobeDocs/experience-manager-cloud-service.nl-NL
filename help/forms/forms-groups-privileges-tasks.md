@@ -2,7 +2,7 @@
 title: Welke gebruikersgroepen zijn beschikbaar uit de doos in as a Cloud Service AEM Forms?
 description: Lijst van uit de doos gebruikersgroepen en toestemmingen die aan elke groep worden toegewezen
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 4%
@@ -114,5 +114,10 @@ Zodra u hebt ingesteld [!DNL AEM Forms] as a Cloud Service, de groepen die in on
 * [Een zelfstandig adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
 * [Een adaptief formulier toevoegen aan de AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
+<!--
 
+>[!MORELIKETHIS]
+>
+>* [Use AEM Forms workflow for business process automation](/help/forms/aem-forms-workflow.md)
 
+-->

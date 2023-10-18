@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Elk fragment dat u invoegt in Adaptief Forms, wordt weergegeven als een voorlopi
 
 Voer de volgende stappen uit om volledige fragmenten in formulieren weer te geven:
 
-1. Ga naar de configuratiepagina van de AEM-webconsole op https:[*host*]:[*port*]/system/console/configMgr.
+1. Ga naar AEM webconsoleconfiguratiepagina op https:[*host*]:[*poort*]/system/console/configMgr.
 
 1. Zoeken en klikken **[!UICONTROL Adaptive Form Configuration Service]** openen in bewerkingsmodus.
 1. Uitschakelen **[!UICONTROL Enable Placeholder in place of Fragment]** Schakel dit selectievakje in om volledige fragmenten te tonen in plaats van de voorlopige afbeelding.
@@ -249,3 +249,7 @@ Als u een adaptief formulier wilt lokaliseren dat Adaptieve formulierfragmenten 
 ## Referentiekaders {#reference-fragments}
 
 Er zijn referentie-adaptieve formulierfragmenten beschikbaar die u kunt gebruiken om uw formulier te maken. Zie voor meer informatie [Referentiekaders](reference-adaptive-form-fragments.md).
+
+>[!MORELIKETHIS]
+>
+>* [Adaptieve formulierfragmenten in kerncomponenten](/help/forms/adaptive-form-fragments-core-components.md)

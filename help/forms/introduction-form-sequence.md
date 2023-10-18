@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -51,3 +51,8 @@ Laten we een voorbeeld nemen waarbij u een reeks moet maken voor het invullen, v
 1. Voer de overige stappen uit om de formuliersjabloon te maken. <!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->
 
 Nadat u de formuliervolgorde in de formuliersjabloon hebt gedefinieerd, kunt u er formulieren mee maken die de basisstructuur hebben gedefinieerd als de ingestelde reeks. U kunt het formulier echter altijd aan uw wensen aanpassen.
+
+
+## Zie ook {#see-also}
+
+{{see-also}}

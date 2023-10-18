@@ -3,9 +3,9 @@ title: Hoe kunnen we een op kerncomponenten gebaseerde adaptieve vorm vertalen?
 description: Leer een formuliergegevensmodel te maken in AEM Forms, het model te testen met voorbeeldgegevens en services en verschillende opties voor een model te configureren.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---
@@ -83,3 +83,7 @@ Voer de volgende stappen uit om een formulier en het bijbehorende document te lo
    ![Omzetbestand importeren](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klik op **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u het `afAcceptLang=<locale code>` naar de URL van het formulier. Voeg bijvoorbeeld `afAcceptLang=de`om de Duitse versie van het formulier te openen.
+
+## Zie ook {#see-also}
+
+{{see-also}}

@@ -2,9 +2,9 @@
 title: Hoe maak je een Forms Portal op een Experience Manager Sites-pagina?
 description: Leer hoe u een Forms Portal kunt maken en de kerncomponenten van een AEM Sites-pagina kunt gebruiken die niet in de verpakking staan.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1761'
 ht-degree: 0%
 
 ---
@@ -182,3 +182,19 @@ U kunt de functie voor automatisch opslaan als volgt configureren voor een adapt
 1. Selecteer de **[!UICONTROL Enable]** schakelt u het automatisch opslaan van het formulier in. U kunt het volgende configureren:
 * Standaard worden de [!UICONTROL Adaptive Form Event] is ingesteld op &quot;true&quot;, wat betekent dat het formulier na elke gebeurtenis automatisch wordt opgeslagen.
 * In [!UICONTROL Trigger], configureert u voor het activeren van automatisch opslaan op basis van het optreden van een gebeurtenis of na een bepaald tijdsinterval.
+
+## Zie ook {#see-also}
+
+{{see-also}}
+
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+
+-->

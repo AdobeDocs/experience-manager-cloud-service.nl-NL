@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1770'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 Een adaptief formulier biedt meerdere OTB-acties (Verzenden buiten de box). In een handeling Verzenden worden de details opgegeven van de handelingen die moeten worden uitgevoerd op de gegevens die via het adaptieve formulier zijn verzameld. Bijvoorbeeld, verzendend gegevens over een e-mail.
 
-U kunt een aangepaste verzendactie maken om functionaliteit toe te voegen die niet is opgenomen in [Handelingen verzenden](configuring-submit-actions.md) of niet ondersteund via één OOTB-verzendactie. Bijvoorbeeld het verzenden van gegevens naar een werkstroom, het opslaan van de gegevens in een gegevensopslag, het verzenden van e-mailbericht naar de persoon die het formulier verzendt, en het verzenden van een e-mail naar de persoon die verantwoordelijk is voor de verwerking van het ingediende formulier voor goedkeuringen en afwijzingen via één verzendhandeling.
+U kunt een aangepaste verzendactie maken om functionaliteit toe te voegen die niet is opgenomen in [Handelingen verzenden buiten de box](configuring-submit-actions.md) of niet ondersteund via één OOTB-verzendactie. Bijvoorbeeld het verzenden van gegevens naar een werkstroom, het opslaan van de gegevens in een gegevensopslag, het verzenden van e-mailbericht naar de persoon die het formulier verzendt, en het verzenden van een e-mail naar de persoon die verantwoordelijk is voor de verwerking van het ingediende formulier voor goedkeuringen en afwijzingen via één verzendhandeling.
 
 ## XML-gegevensindeling {#xml-data-format}
 
-De XML-gegevens worden naar de servlet verzonden met behulp van de **`jcr:data`** request parameter. Verzendhandelingen hebben toegang tot de parameter om de gegevens te verwerken. In de volgende code wordt de indeling van de XML-gegevens beschreven. De velden die zijn gebonden aan het formuliermodel worden weergegeven in het dialoogvenster **`afBoundData`** sectie. Niet-gebonden velden worden weergegeven in het dialoogvenster `afUnoundData`sectie. <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
+De XML-gegevens worden naar de servlet verzonden met behulp van de **`jcr:data`** request parameter. Verzendhandelingen hebben toegang tot de parameter om de gegevens te verwerken. In de volgende code wordt de indeling van de XML-gegevens beschreven. De velden die aan het formuliermodel zijn gebonden, worden weergegeven in het dialoogvenster **`afBoundData`** sectie. Niet-gebonden velden worden weergegeven in het dialoogvenster `afUnoundData`sectie. <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
 
 ```xml
 <?xml ?>
@@ -73,7 +73,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 Als u bestanden bijvoegt bij het adaptieve formulier, valideert de server de bestandsbijlagen na het verzenden van het adaptieve formulier en wordt een foutbericht geretourneerd als:
 
-* Bestandsbijlagen bevatten een bestandsnaam die begint met (.) teken, bevat \ / : * ? &quot; &lt; > | ; % $ tekens of bevat speciale bestandsnamen die zijn gereserveerd voor het Windows-besturingssysteem, zoals `nul`, `prn`, `con`, `lpt`, of `com`.
+* Bestandsbijlagen bevatten een bestandsnaam die begint met (.) teken, bevat \ / : * ? &quot; &lt; > | ; % $ tekens of bevat speciale bestandsnamen die zijn gereserveerd voor Windows-besturingssystemen, zoals `nul`, `prn`, `con`, `lpt`, of `com`.
 
 * De grootte van de bestandsbijlage is 0 bytes.
 
@@ -89,7 +89,7 @@ Als de handeling geen voorwaarts pad biedt, leidt de verzendserver de browser om
 >
 >Een auteur verstrekt Redirect URL (gebruikend de Dank u Configuratie van de Pagina). [OOTB-verzendhandelingen](configuring-submit-actions.md) gebruik Redirect URL om browser van het middel om te leiden dat de voorwaartse weg verwijzingen.
 >
->U kunt een aangepaste handeling Verzenden schrijven die een aanvraag doorstuurt naar een bron of servlet. Adobe adviseert dat het manuscript dat middel behandeling voor de voorwaartse weg uitvoert het verzoek aan Redirect URL opnieuw richt wanneer de verwerking voltooit.
+>U kunt een aangepaste handeling Verzenden schrijven die een aanvraag doorstuurt naar een bron of servlet. De Adobe adviseert dat het manuscript dat middelbehandeling voor de voorwaartse weg uitvoert het verzoek aan Redirect URL opnieuw richt wanneer de verwerking voltooit.
 
 ## Handeling verzenden {#submit-action}
 
@@ -97,10 +97,10 @@ Een handeling Verzenden is een sling:map die het volgende bevat:
 
 * **addfields.jsp**: Dit script bevat de actievelden die tijdens de uitvoering aan het HTML-bestand worden toegevoegd. Gebruik dit script om verborgen invoerparameters toe te voegen die zijn vereist tijdens verzending in het script post.POST.jsp.
 * **dialog.xml**: Dit script is vergelijkbaar met het dialoogvenster CQ-component. Het verstrekt configuratieinformatie die de auteur aanpast. De velden worden weergegeven op het tabblad Handelingen verzenden in het dialoogvenster Formulier bewerken Adaptief wanneer u Handeling verzenden selecteert.
-* **post.POST.jsp**: Het Submit servlet roept dit manuscript met de gegevens die u en de extra gegevens in de vorige secties indient. Elke vermelding van het uitvoeren van een handeling op deze pagina houdt in dat het script post.POST.jsp wordt uitgevoerd. Als u de handeling Verzenden wilt registreren bij de Adaptief Forms en deze wilt weergeven in het dialoogvenster Formulier bewerken, voegt u deze eigenschappen toe aan de sling:Folder:
+* **post.POST.jsp**: De verzendserver roept dit script aan met de gegevens die u verzendt en de aanvullende gegevens in de vorige secties. Elke vermelding van het uitvoeren van een handeling op deze pagina houdt in dat het script post.POST.jsp wordt uitgevoerd. Als u de handeling Verzenden wilt registreren bij de Adaptief Forms en deze wilt weergeven in het dialoogvenster Formulier bewerken, voegt u deze eigenschappen toe aan de sling:Folder:
 
    * **guideComponentType** van het type String en value **fd/af/components/guidesubmittype**
-   * **guideDataModel** van het type String dat het type Adaptief formulier opgeeft waarvoor de handeling Verzenden van toepassing is. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** wordt ondersteund voor adaptieve Forms op basis van XSD. **basis** wordt ondersteund voor Adaptieve Forms die geen XDP of XSD gebruiken. Als u de handeling wilt weergeven op meerdere typen Adaptief Forms, voegt u de corresponderende tekenreeksen toe. Scheid elke tekenreeks door een komma. Als u bijvoorbeeld een handeling zichtbaar wilt maken op <!--XFA- and -->Aangepaste Forms op basis van XSD, geeft u de waarde op als <!--**xfa** and--> **xsd**.
+   * **guideDataModel** van het type String dat het type Adaptief formulier opgeeft waarvoor de handeling Verzenden van toepassing is. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** wordt ondersteund voor adaptieve Forms op basis van XSD. **basis** wordt ondersteund voor Adaptieve Forms die geen XDP of XSD gebruiken. Voeg de overeenkomende tekenreeksen toe om de handeling weer te geven op meerdere typen Adaptief Forms. Scheid elke tekenreeks door een komma. Als u bijvoorbeeld een handeling zichtbaar wilt maken op <!--XFA- and -->Aangepaste Forms op basis van XSD, geeft u de waarde op als <!--**xfa** and--> **xsd**.
 
    * **jcr:beschrijving** van het type String. De waarde van deze eigenschap wordt weergegeven in de lijst Handeling verzenden op het tabblad Handelingen verzenden van het dialoogvenster Formulier bewerken Adaptief. De OOTB-acties zijn aanwezig in de CRX-opslagplaats op de locatie **/libs/fd/af/components/guidesubmittype**.
 
@@ -108,7 +108,7 @@ Een handeling Verzenden is een sling:map die het volgende bevat:
 
 ## Een aangepaste verzendhandeling maken {#creating-a-custom-submit-action}
 
-Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de afgekeurde (OOTB) Action Store-inhoud die de gegevens in de CRX-opslagplaats opslaat. Daarnaast biedt AEM een [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API die kan worden gebruikt om e-mails te verzenden. Voordat u de Mail-API gebruikt, configureert u de Day CQ Mail-service via de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagruimte.
+Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de afgekeurde (OOTB) Action Store-inhoud die de gegevens in de CRX-opslagplaats opslaat. Daarnaast biedt AEM een [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API die kan worden gebruikt om e-mails te verzenden. Voordat u de e-mail-API gebruikt, configureert u de Day CQ Mail-service via de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagruimte.
 
 1. Meld u aan bij CRXDE Lite op de URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Maak een knooppunt met de eigenschap sling:Folder en name store_and_mail in de map /apps/custom_submit_action. Maak de map custom_submit_action als deze nog niet bestaat.
 
@@ -116,19 +116,19 @@ Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die 
 
 1. **Geef de verplichte configuratievelden op.**
 
-   Voeg de configuratie toe die de winkelactie vereist. Kopieer de **cq:dialoogvenster** knooppunt van de handeling Opslaan van /libs/fd/af/components/guidesubmittype/store naar de map action op /apps/custom_submit_action/store_and_email.
+   Voeg de configuratie toe die de winkelactie vereist. De **cq:dialoogvenster** knooppunt van de handeling Opslaan van /libs/fd/af/components/guidesubmittype/store naar de map action op /apps/custom_submit_action/store_and_email.
 
-   ![Screenshot met het kopiëren van het dialoogvenster naar de map action.](assets/step2.png)
+   ![Screenshot waarin het kopiëren van het dialoogvenster naar de map action wordt getoond](assets/step2.png)
 
 1. **Geef configuratievelden op om de auteur te vragen of er een e-mailconfiguratie nodig is.**
 
-   Het adaptieve formulier bevat ook een e-mailactie waarmee e-mailberichten naar gebruikers worden verzonden. Pas deze actie aan op basis van uw vereisten. Navigeer naar /libs/fd/af/components/guidesubmittype/email/dialog. Kopieer de knooppunten in het cq:dialog-knooppunt naar cq:dialog-knooppunt van uw verzendhandeling (/apps/custom_submit_action/store_and_email/dialog).
+   Het adaptieve formulier bevat ook een e-mailactie waarmee e-mailberichten naar gebruikers worden verzonden. Pas deze actie aan op basis van uw vereisten. Ga naar /libs/fd/af/components/guidesubmittype/email/dialog. Kopieer de knooppunten in het cq:dialog-knooppunt naar cq:dialog-knooppunt van uw verzendhandeling (/apps/custom_submit_action/store_and_email/dialog).
 
    ![De e-mailactie aanpassen](assets/step3.png)
 
 1. **De handeling beschikbaar stellen in het dialoogvenster Formulier bewerken Adaptief.**
 
-   Voeg de volgende eigenschappen in store_and_email knoop toe:
+   Voeg de volgende eigenschappen in de store_and_email knoop toe:
 
    * **guideComponentType** van het type **String** en waarde **fd/af/components/guidesubmittype**
 
@@ -138,7 +138,7 @@ Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die 
 
    * **submitService** van het type **String** en waarde **Winkel en e-mail**. Zie voor meer informatie [Aangepaste formulierverzending plannen voor aangepaste acties](#schedule-adaptive-form-submission).
 
-1. Open een adaptief formulier. Klik op de knop **Bewerken** knop naast **Start** om de **Bewerken** van de container Adaptief formulier. De nieuwe handeling wordt weergegeven in het dialoogvenster **Handelingen verzenden** Tab. Het selecteren van **Handeling opslaan en e-mailen** geeft de configuratie weer die in het dialoogvenster is toegevoegd.
+1. Open een adaptief formulier. Klik op de knop **Bewerken** knop naast **Start** om de **Bewerken** van de container Adaptief formulier. De nieuwe handeling wordt weergegeven in het dialoogvenster **Handelingen verzenden** Tab. De **Handeling opslaan en e-mailen** geeft de configuratie weer die in het dialoogvenster is toegevoegd.
 
    ![Dialoogvenster Handeling configureren verzenden](assets/store_and_email_submit_action_dialog.jpg)
 
@@ -206,7 +206,7 @@ Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die 
 
 Wanneer u de aangepaste handeling Verzenden instelt, die de opdracht `submitService` eigenschap, activeert het formulier de [FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) bij indiening. De `FormSubmitActionService` gebruikt de `getServiceName` methode om de waarde voor de `submitService` eigenschap. Op basis van de waarde van de `submitService` eigenschap, roept de service de juiste verzendmethode aan. Inclusief de `FormSubmitActionService` naar de aangepaste bundel die u uploadt naar de [!DNL AEM Forms] server.
 
-Voeg de `submitService` eigenschap van het type tekenreeks naar de `sling:Folder` van uw aangepaste handeling Verzenden om in te schakelen [!DNL Adobe Sign] voor het adaptieve formulier. U kunt de **[!UICONTROL Enable Adobe Sign]** in de **[!UICONTROL Electronic Signature]** -gedeelte van de containereigenschappen van het adaptieve formulier alleen na het instellen van de waarde voor de `submitService` eigenschap van uw aangepaste handeling Verzenden.
+Voeg de `submitService` eigenschap van het type tekenreeks naar de `sling:Folder` van uw aangepaste handeling Verzenden in om [!DNL Adobe Sign] voor het adaptieve formulier. U kunt de **[!UICONTROL Enable Adobe Sign]** in de **[!UICONTROL Electronic Signature]** -gedeelte van de containereigenschappen van het adaptieve formulier alleen na het instellen van de waarde voor de `submitService` eigenschap van uw aangepaste handeling Verzenden.
 
 <!--As a result of setting an appropriate value for the `submitService` property and enabling [!DNL Adobe Sign], you can schedule the submission of an Adaptive Form to ensure that all configured signers have taken an action on the form. [!DNL Adobe Sign] Configuration Service keeps polling [!DNL Adobe Sign] server at regular intervals to verify the status of signatures. If all the signers complete signing the form, the Submit Action service is started and the form is submitted.-->
 
@@ -390,3 +390,7 @@ Perform the following steps to create a custom Submit Action that saves the data
    Select the action in the Adaptive Form. The action sends an email and stores the data. 
 
 -->
+
+>[!MORELIKETHIS]
+>
+>* [Een handeling verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-actions-core-components.md)

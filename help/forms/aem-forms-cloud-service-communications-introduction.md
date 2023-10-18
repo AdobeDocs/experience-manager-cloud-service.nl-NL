@@ -3,9 +3,9 @@ title: Wat zijn Forms-API's voor as a Cloud Service communicatie?
 description: Gebruik communicatie-API's om uw documenten te ondertekenen, certificeren of beveiligen, om processen voor het genereren van PDF te automatiseren en om PDF-documenten om te zetten in een andere indeling.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1437'
 ht-degree: 1%
 
 ---
@@ -302,6 +302,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Zie ook {#see-also}
 
-
 * [Communicatieverwerking - synchrone API&#39;s](/help/forms/aem-forms-cloud-service-communications.md)
 * [Communicatieverwerking - Batch-API&#39;s](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+* [AEM Forms as a Cloud Service architectuur voor adaptieve Forms- en communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-architecture.md)
