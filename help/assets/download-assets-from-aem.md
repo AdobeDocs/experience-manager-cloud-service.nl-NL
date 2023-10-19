@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
+source-git-commit: d25d433203b8ec6787dec87a9ec35092a247096e
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1359'
 ht-degree: 2%
 
 ---
@@ -132,7 +132,7 @@ Als u de downloadfunctionaliteit niet nodig hebt, dan onbruikbaar servlet om het
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-## OnTime/OffTime-uitvoering {#on-off-time-rendition}
+## OnTime- of OffTime-uitvoering {#on-off-time-rendition}
 
 Om het `OnOffTimeAssetAccessFilter` de dienst, moet u een configuratie tot stand brengen OSGi. Met deze service kunt u naast het element zelf ook toegang tot vertoningen en metagegevens blokkeren op basis van de instellingen voor aan- en uittijd. De OSGi-configuratie moet `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Voer de onderstaande stappen uit:
 
