@@ -2,7 +2,7 @@
 title: OAuth2 Steun voor de Dienst van de Post
 description: Oauth2-ondersteuning voor de Mail Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 417efad485226464b396c3ac3ef5ca8968309792
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 0%
@@ -56,9 +56,15 @@ Om opnieuw te verpakken, gebruik volgende informatie om OAuth2 voor de dienst va
 
 Daarna, vernieuw symbolisch, dat een deel van de configuratie OSGi in een verdere stap door het volgende te doen is:
 
-1. Open de volgende URL in de browser nadat u deze hebt vervangen `clientID` en `tenantID` met de specifieke waarden voor uw account: `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`.
+1. Open de volgende URL in de browser nadat u deze hebt vervangen `clientID` en `tenantID` met de specifieke waarden voor uw account:
+
+   `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
+
 1. Toestaan dat toestemming wordt gevraagd als u hierom wordt gevraagd.
-1. De URL wordt omgeleid naar een nieuwe locatie, in de volgende indeling: `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`.
+1. De URL wordt omgeleid naar een nieuwe locatie, in de volgende indeling:
+
+   `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
+
 1. De waarde kopiëren van `<code>` in het bovenstaande voorbeeld.
 1. Gebruik het volgende cURL bevel om te krijgen refreshToken. Vervang de huurderID, clientID, en clientSecret met de waarden voor uw rekening, en de waarde voor `<code>`:
 
