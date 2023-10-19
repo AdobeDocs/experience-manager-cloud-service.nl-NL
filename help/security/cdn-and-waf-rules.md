@@ -2,9 +2,9 @@
 title: Het vormen van de Regels van de Filter van het Verkeer met de Regels van WAF
 description: De Regels van de Filter van het Verkeer van het Gebruik met de Regels van WAF om Verkeer te filtreren
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 146b85093331fe26da891252c398fc24d4f7c0d6
+source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
 workflow-type: tm+mt
-source-wordcount: '3810'
+source-wordcount: '3826'
 ht-degree: 0%
 
 ---
@@ -271,15 +271,15 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-     rules:
-       - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
-         when: { reqProperty: clientIp, equals: "192.168.1.1" }
-           allOf:
-            - { reqProperty: path, equals: /helloworld }
-            - { reqProperty: tier, equals: publish }
-            - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-           action:
-             type: block
+    rules:
+      - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
+        when:
+          allOf:
+          - { reqProperty: path, equals: /helloworld }
+          - { reqProperty: tier, equals: publish }
+          - { reqHeader: user-agent, matches: '.*Chrome.*'  }
+        action:
+          type: block
 ```
 
 **Voorbeeld 3**
@@ -387,10 +387,11 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
+    rules:
     - name: limit-requests-client-ip
       when:
-        - reqProperty: tier
-        - matches: "author|publish"
+        reqProperty: tier
+        matches: "author|publish"
       rateLimit:
         limit: 60
         window: 10
@@ -545,24 +546,24 @@ Klanten die de Regels van de Filter van het verkeer vroegen vroegen om een ritje
 
 1. In uw werkruimte, creeer een omslag config op het wortelniveau en voeg een dossier genoemd cdn.yaml toe, waar u een eenvoudige regel zult verklaren, die het plaatst op logboekwijze eerder dan op het blokkeren wijze.
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-       # Log request on simple path
-       - name: log-rule-example
-         when:
-           allOf:
-             - reqProperty: tier
-               matches: "author|publish"
-             - reqProperty: path
-               equals: '/log/me'
-         action: log
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    # Log request on simple path
+    - name: log-rule-example
+      when:
+        allOf:
+          - reqProperty: tier
+            matches: "author|publish"
+          - reqProperty: path
+            equals: '/log/me'
+      action: log
+```
 
 1. Leg uw veranderingen vast en duw, en stel uw configuratie op gebruikend de configuratiepijplijn.
 
@@ -597,24 +598,24 @@ Klanten die de Regels van de Filter van het verkeer vroegen vroegen om een ritje
 
 1. Wijzig nu cdn.yaml om de regel in blokmodus te zetten, zodat de pagina&#39;s worden geblokkeerd, zoals u had verwacht. Dan begaat, duw en teweegbrengt de configuratiepijplijn zoals vroeger gedaan.
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-       # Log request on simple path
-       - name: log-rule-example
-         when:
-           allOf:
-             - reqProperty: tier
-               matches: "author|publish"
-             - reqProperty: path
-               equals: '/log/me'
-         action: block
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    # Log request on simple path
+    - name: log-rule-example
+      when:
+        allOf:
+          - reqProperty: tier
+            matches: "author|publish"
+          - reqProperty: path
+            equals: '/log/me'
+      action: block
+```
 
 1. Zodra uw configuratie is opgesteld, probeer om tot https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me toegang te hebben gebruikend uw Webbrowser of met het krullbevel hieronder. Er moet een pagina met 406 fouten worden weergegeven om aan te geven dat het verzoek is geblokkeerd.
 
@@ -629,40 +630,40 @@ Klanten die de Regels van de Filter van het verkeer vroegen vroegen om een ritje
 
 1. Als u WAF verkeersfilters hebt toegelaten (dit zal een extra vergunning vereisen nadat de eigenschap GA is), herhaal met een regel van de het verkeersfilter van WAF, op logboekwijze, en stel de regels op.
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-         - name: log-waf-flags
-           when:
-             reqProperty: tier
-             matches: "author|publish"
-           action:
-             type: log
-             wafFlags:
-                 - SANS
-                 - SIGSCI-IP
-                 - TORNODE
-                 - NOUA
-                 - SCANNER
-                 - USERAGENT
-                 - PRIVATEFILE
-                 - ABNORMALPATH
-                 - TRAVERSAL
-                 - NULLBYTE
-                 - BACKDOOR
-                 - LOG4J-JNDI
-                 - SQLI
-                 - XSS
-                 - CODEINJECTION
-                 - CMDEXE
-                 - NO-CONTENT-TYPE
-                 - UTF8
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: log-waf-flags
+        when:
+          reqProperty: tier
+          matches: "author|publish"
+        action:
+          type: log
+          wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+```
 
 1. Een gereedschap gebruiken als [nikto](https://github.com/sullo/nikto/tree/master) om overeenkomstige verzoeken te produceren. Met de onderstaande opdracht worden ongeveer 550 kwaadaardige verzoeken binnen 1 minuut verzonden.
 
@@ -685,34 +686,40 @@ Klanten die de Regels van de Filter van het verkeer vroegen vroegen om een ritje
 
 1. Herhaal deze bewerking met een regel waarbij snelheidsbeperking wordt gebruikt in de logmodus. Zoals altijd, begaat, duw en brengt de configuratiepijplijn teweeg om uw configuratie toe te passen.
 
-   ```
-   kind: "CDN"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     trafficFilters:
-       rules:
-         - name: limit-requests-client-ip
-           when:
-             reqProperty: tier
-             matches: "author|publish"
-           rateLimit:
-             limit: 10
-             window: 1
-             penalty: 60
-             groupBy:
-               - reqProperty: clientIp
-           action: log
-   ```
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: limit-requests-client-ip
+        when:
+          reqProperty: tier
+          matches: "author|publish"
+        rateLimit:
+          limit: 10
+          window: 1
+          penalty: 60
+          groupBy:
+            - reqProperty: clientIp
+        action: log
+```
 
 1. Een gereedschap gebruiken als [Vegeta](https://github.com/tsenart/vegeta) om verkeer te produceren.
 
    ```
-   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s | tee results.bin | vegeta report
    ```
 
 1. Nadat u het gereedschap hebt uitgevoerd, kunt u CDN-logboeken downloaden en deze in het dashboard invoeren om te controleren of de regel voor snelheidsbegrenzer is geactiveerd
+
+   ![WAF-gegevens weergeven](/help/security/assets/waf-dashboard-ratelimiter-1.png)
+
+   ![WAF-gegevens weergeven](/help/security/assets/waf-dashboard-ratelimiter-2.png)
+
+   Zoals je onze regel ziet *limit-request-client-ip* is geactiveerd.
 
    Nu u vertrouwd bent met hoe de regels van de verkeersfilter werken, kunt u zich op het prodmilieu bewegen.
 
@@ -743,65 +750,65 @@ data:
         penalty: 300
         groupBy:
           - reqProperty: clientIp
-      action: block
-      # Block requests coming from OFAC countries
-      - name: block-ofac-countries
-        when:
-          allOf:
-            - { reqProperty: tier, equals: publish }
-            - reqProperty: clientCountry
-              in:
-                - SY
-                - BY
-                - MM
-                - KP
-                - IQ
-                - CD
-                - SD
-                - IR
-                - LR
-                - ZW
-                - CU
-                - CI
-        action: block
-        # Enable recommended WAF protections (only works if WAF is enabled for your environment)
-        - name: block-waf-flags-globally
-          when:
-            reqProperty: tier
+      action: log
+    # Block requests coming from OFAC countries
+    - name: block-ofac-countries
+      when:
+        allOf:
+          - { reqProperty: tier, equals: publish }
+          - reqProperty: clientCountry
+            in:
+              - SY
+              - BY
+              - MM
+              - KP
+              - IQ
+              - CD
+              - SD
+              - IR
+              - LR
+              - ZW
+              - CU
+              - CI
+      action: log
+    # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+    - name: block-waf-flags-globally
+      when:
+        reqProperty: tier
+        matches: "author|publish"
+      action:
+        type: log
+        wafFlags:
+          - SANS
+          - SIGSCI-IP
+          - TORNODE
+          - NOUA
+          - SCANNER
+          - USERAGENT
+          - PRIVATEFILE
+          - ABNORMALPATH
+          - TRAVERSAL
+          - NULLBYTE
+          - BACKDOOR
+          - LOG4J-JNDI
+          - SQLI
+          - XSS
+          - CODEINJECTION
+          - CMDEXE
+          - NO-CONTENT-TYPE
+          - UTF8
+    # Disable protection against CMDEXE on /bin
+    - name: allow-cdmexe-on-root-bin
+      when:
+        allOf:
+          - reqProperty: tier
             matches: "author|publish"
-          action:
-            type: block
-            wafFlags:
-              - SANS
-              - SIGSCI-IP
-              - TORNODE
-              - NOUA
-              - SCANNER
-              - USERAGENT
-              - PRIVATEFILE
-              - ABNORMALPATH
-              - TRAVERSAL
-              - NULLBYTE
-              - BACKDOOR
-              - LOG4J-JNDI
-              - SQLI
-              - XSS
-              - CODEINJECTION
-              - CMDEXE
-              - NO-CONTENT-TYPE
-              - UTF8
-        # Disable protection against CMDEXE on /bin
-        - name: allow-cdmexe-on-root-bin
-          when:
-            allOf:
-              - reqProperty: tier
-                matches: "author|publish"
-              - reqProperty: path
-                matches: "^/bin/.*"
-          action:
-            type: allow
-            wafFlags:
-              - CMDEXE
+          - reqProperty: path
+            matches: "^/bin/.*"
+      action:
+        type: log
+        wafFlags:
+          - CMDEXE
 ```
 
 1. Voeg om het even welke extra regels toe om kwaadwillig verkeer te blokkeren dat u zich van bewust kunt zijn. Bijvoorbeeld, bepaalde IPs die uw plaats hebben aangevallen.
