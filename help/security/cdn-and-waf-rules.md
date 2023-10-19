@@ -2,7 +2,7 @@
 title: Het vormen van de Regels van de Filter van het Verkeer met de Regels van WAF
 description: De Regels van de Filter van het Verkeer van het Gebruik met de Regels van WAF om Verkeer te filtreren
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
+source-git-commit: 146b85093331fe26da891252c398fc24d4f7c0d6
 workflow-type: tm+mt
 source-wordcount: '3810'
 ht-degree: 0%
@@ -165,7 +165,7 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 | reqProperty | `string` | Request-eigenschap.<br><br>Een van: `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>De domeineigenschap is een kleine omzetting van de hostheader van de aanvraag. Het is nuttig voor tekenreeksvergelijkingen zodat de gelijken niet wegens hoofdlettergevoeligheid worden gemist.<br><br>De `clientCountry` gebruikt twee lettercodes die worden weergegeven bij [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) |
 | reqHeader | `string` | Hiermee wordt aanvraagheader met de opgegeven naam geretourneerd |
 | queryParam | `string` | Hiermee wordt de query-parameter met de opgegeven naam geretourneerd |
-| koekje | `string` | Retourneert cookie met opgegeven naam |
+| reqCookie | `string` | Retourneert cookie met opgegeven naam |
 
 **Voorspelend**
 
