@@ -2,9 +2,9 @@
 title: Het vormen van de Regels van de Filter van het Verkeer met de Regels van WAF
 description: De Regels van de Filter van het Verkeer van het Gebruik met de Regels van WAF om Verkeer te filtreren
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
+source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3810'
 ht-degree: 0%
 
 ---
@@ -532,7 +532,7 @@ Hieronder vindt u een lijst met veldnamen die in CDN-logbestanden worden gebruik
 
 Adobe biedt een mechanisme voor het downloaden van dashboardgereedschappen naar uw computer voor het invoeren van CDN-logbestanden die zijn gedownload via Cloud Manager. Met dit tooling, kunt u uw verkeer analyseren om omhoog met de aangewezen regels van de verkeersfilter te komen om te verklaren, met inbegrip van de regels van WAF. In deze sectie worden eerst enkele instructies gegeven om vertrouwd te raken met het dashboard-gereedschap in een ontwikkelomgeving, gevolgd door richtlijnen over hoe u die kennis kunt gebruiken om regels voor een testomgeving te maken.
 
-Klanten die de Regels van de Filter van het verkeer vroegen vroegen om een ritje van het dashboardhulpmiddel, dat een README dossier omvat beschrijvend hoe te om de container van het Dok te laden en de CDN- logboeken in te nemen.
+Gereedschap Dashboard kan rechtstreeks worden gekloond vanuit het dialoogvenster [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github repository.
 
 
 ### Kennis krijgen van de dashboardgereedschappen {#dashboard-getting-familiar}
