@@ -2,9 +2,9 @@
 title: Hoe te om een gegevensbestand met te verbinden [!DNL AEM Forms] as a Cloud Service?
 description: Haal gegevens op en sla deze op voor RESTful-webservices, SOAP-webservices en OData-services van een adaptief formulier of een AEM workflow.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 596cd08a98b1d9d47825438e1d64b6db3f847271
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 0%
 | AEM as a Cloud Service | Dit artikel |
 
 
+
 ![Gegevensintegratie](do-not-localize/data-integeration.png)
 
 De infrastructuur van de onderneming omvat verschillende back-end systemen of gegevensbronnen zoals gegevensbestanden, Webdiensten, de diensten van REST, de diensten van OData, en de oplossingen van CRM. Samengesteld, maken zij een informatiesysteem dat gegevens aan ondernemingstoepassingen dient om zaken van dag tot dag uit te voeren. Anderzijds leggen toepassingen gegevens vast en sturen deze terug naar bijgewerkte gegevensbronnen.
 
-[!DNL AEM Forms] toepassingen zoals Adaptive Forms en interactieve communicatie vereisen integratie met gegevensbronnen om klantgegevens op te halen tijdens het genereren van formulieren en het maken van interactieve communicatie. Er zijn gevallen waarin gegevens worden opgehaald uit gegevensbronnen die zijn gebaseerd op gebruikersinvoer in Adaptive Forms. Bovendien kunnen de ingediende gegevens van het adaptieve formulier worden teruggeschreven om de respectieve gegevensbronnen bij te werken.
+Wanneer u een adaptief formulier aansluit op een database, is integratie met gegevensbronnen vereist om klantgegevens op te halen tijdens het genereren van formulieren. Er zijn gevallen waarin gegevens worden opgehaald uit gegevensbronnen die zijn gebaseerd op gebruikersinvoer in Adaptive Forms. Wanneer u een adaptief formulier naar een database verzendt, kunnen bovendien de verzonden Adaptieve formuliergegevens worden teruggeschreven om de respectieve gegevensbronnen bij te werken.
 
 Terwijl een verdeeld, modulair systeem zijn eigen voordelen heeft, ligt de uitdaging in het integreren van en het creëren van gegevensverenigingen over gegevensbronnen. De integratie van gegevens is de sleutel tot een functionele en efficiënte ondernemingsinfrastructuur met verschillende gegevensbronnen verbonden aan toepassingen voor de uitwisseling van bedrijfsgegevens.
 
@@ -36,20 +37,20 @@ Terwijl een verdeeld, modulair systeem zijn eigen voordelen heeft, ligt de uitda
 * Bouw verenigingen tussen de voorwerpen van het gegevensmodel binnen en over gegevensbronnen.
 * Roep gegevensmodelobjectservices aan om gegevens van en naar gegevensbronnen te zoeken of te schrijven.
 
-Nadat u een formuliergegevensmodel hebt gemaakt, kunt u het gebruiken in verschillende workflows voor adaptieve formulieren en interactieve communicatie, zoals:
+Nadat u een formuliergegevensmodel hebt gemaakt, kunt u dit gebruiken om:
 
-* Adaptieve Forms en interactieve communicatie maken op basis van het gegevensmodel van het formulier
-* Aangepaste Forms en interactieve communicatie vooraf vullen vanuit geconfigureerde gegevensbronnen
+* Adaptieve Forms maken op basis van een formuliergegevensmodel
+* Adaptieve Forms vooraf vullen met geconfigureerde gegevensbronnen
 * Gegevensbronservices/bewerkingen aanroepen met behulp van adaptieve formulierregels
 * Verzonden adaptieve formuliergegevens naar gegevensbronnen schrijven
 
 ## Aan de slag met gegevensintegratie {#get-started-with-data-integration}
 
-De eerste stap om gegevensintegratie uit te voeren is gegevensbronnen te identificeren en te vormen die informatie opslaan u in Aanpassings Forms en interactieve communicatie gebruiksgevallen wilt gebruiken. Vervolgens maakt u een formuliergegevensmodel dat gebruikmaakt van gegevensmodelobjecten, eigenschappen en services van een of meer gegevensbronnen. U kunt adaptieve Forms en interactieve communicatie maken op basis van een formuliergegevensmodel, waarbij adaptieve formuliervelden of plaatsaanduidingen in interactieve communicatie zijn gebonden aan de desbetreffende gegevensbroneigenschappen.
+De eerste stap voor het implementeren van gegevensintegratie om Adaptief formulier naar een database te verzenden, is het identificeren en configureren van gegevensbronnen die informatie opslaan die u wilt gebruiken in Adaptief Forms. Vervolgens maakt u een formuliergegevensmodel dat gebruikmaakt van gegevensmodelobjecten, eigenschappen en services van een of meer gegevensbronnen. U kunt een adaptieve Forms maken op basis van een formuliergegevensmodel, waarin adaptieve formuliervelden zijn gebonden aan de desbetreffende gegevensbroneigenschappen.
 
 [!DNL AEM Forms] Hiermee kunt u ook een formuliergegevensmodel maken dat onafhankelijk is van gegevensbronnen en kunt u later gegevensmodelobjecten en -eigenschappen in het formuliergegevensmodel koppelen aan of binden met gegevensbron. Hiermee worden afhankelijkheden van gegevensbronnen verwijderd terwijl u werkt aan een formuliergegevensmodel.
 
-Herzie het volgende om, gegevensintegratie te beginnen te begrijpen en uit te voeren.
+Lees het volgende om gegevensintegratie te beginnen, te begrijpen en te implementeren:
 
 * [Gegevensbronnen configureren](configure-data-sources.md)
 * [Formuliergegevensmodel maken](create-form-data-models.md)
