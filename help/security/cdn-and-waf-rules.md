@@ -2,9 +2,9 @@
 title: Het vormen van de Regels van de Filter van het Verkeer met de Regels van WAF
 description: De Regels van de Filter van het Verkeer van het Gebruik met de Regels van WAF om Verkeer te filtreren
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
+source-git-commit: 5231d152a67b72909ca5b38f0bbc40616ccd4739
 workflow-type: tm+mt
-source-wordcount: '3810'
+source-wordcount: '3661'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,7 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 | reqHeader | `string` | Hiermee wordt aanvraagheader met de opgegeven naam geretourneerd |
 | queryParam | `string` | Hiermee wordt de query-parameter met de opgegeven naam geretourneerd |
 | reqCookie | `string` | Retourneert cookie met opgegeven naam |
+| postParam | `string` | Retourneert parameter met de opgegeven naam van de hoofdtekst. Alleen werken als de hoofdtekst van het inhoudstype is `application/x-www-form-urlencoded` |
 
 **Voorspelend**
 
@@ -208,12 +209,9 @@ De `wafFlags` eigenschap kan het volgende omvatten:
 | TRAVERSAL | Directorytraversal | Directorytraversal is de poging om bevoorrechte omslagen door een systeem in hoop te navigeren om gevoelige informatie te verkrijgen. |
 | GEBRUIKER | Gereedschap Bijsluiten | De Tooling van de aanval is het gebruik van geautomatiseerde software om veiligheidskwetsbaarheid te identificeren of te proberen om een ontdekte kwetsbaarheid te exploiteren. |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI-aanvallen proberen de [Log4Shell-kwetsbaarheid](https://en.wikipedia.org/wiki/Log4Shell) aanwezig in eerdere versies van Log4J dan 2.16.0 |
-| AWS SSRF | AWS-SSRF | SSRF (Server Side Request Smeedery) is een verzoek dat probeert verzoeken te verzenden die door de webtoepassing worden gedaan om interne systemen te richten. De aanvallen van AWS SSRF gebruiken SSRF om de sleutels van Amazon Web Services (AWS) te verkrijgen en toegang tot S3 emmers en hun gegevens te krijgen. |
 | BHH | Onjuiste koppen | De slechte Kopballen van de Hop wijzen op een HTTP het smokkelen poging door of een misvormde overdracht-Codering (TE) of een inhoud-Lengte (CL) kopbal, of een goed gevormde TE en kopbal CL |
 | ABNORMALPATH | Abnormaal pad | Met Abnormal Path wordt aangegeven dat het oorspronkelijke pad afwijkt van het genormaliseerde pad (bijvoorbeeld `/foo/./bar` is genormaliseerd naar `/foo/bar`) |
-| GECOMPRIMEERD | Compressie gedetecteerd | De POST aanvraaginstantie is gecomprimeerd en kan niet worden gecontroleerd. Als bijvoorbeeld een aanvraagheader &quot;Content-Encoding: gzip&quot; wordt opgegeven en de hoofdtekst van de POST geen onbewerkte tekst is. |
 | DOUBLEENCODERING | Dubbele codering | De dubbele Codering controleert de ontduikingstechniek van het tweemaal coderen van HTML- karakters |
-| FORCEFULBROWSING | Snel bladeren | Snel bladeren is de mislukte poging om beheerpagina&#39;s te openen |
 | NOTUTF8 | Ongeldige codering | Ongeldige codering kan ertoe leiden dat de server schadelijke tekens van een verzoek in een reactie omzet, wat of een ontkenning van de dienst of XSS veroorzaakt |
 | JSON-ERROR | JSON-coderingsfout | Een POST, PUT, of PATCH- verzoeklichaam dat als bevattende JSON binnen de &quot;Content-Type&quot;verzoekkopbal wordt gespecificeerd maar JSON het ontleden fouten bevat. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
 | MALFORMED-DATA | Onjuiste gegevens in de aanvraaginstantie | Een POST, een PUT, of PATCH verzoeken lichaam dat volgens de &quot;Inhoud-Type&quot;verzoekkopbal misvormd is. Bijvoorbeeld, als een &quot;Content-Type: application/x-www-form-urlencoded&quot;verzoekkopbal wordt gespecificeerd en een POST bevat die json is. Dit is vaak een programmeerfout, een geautomatiseerd of een kwaadwillig verzoek. Vereist agent 3.2 of hoger. |
@@ -222,9 +220,7 @@ De `wafFlags` eigenschap kan het volgende omvatten:
 | NO-CONTENT-TYPE | Ontbrekende aanvraagheader &quot;Content-Type&quot; | Een POST-, PUT- of PATCH-aanvraag die geen aanvraagheader &quot;Content-Type&quot; heeft. Standaard moeten toepassingsservers in dit geval &#39;Content-Type: text/plain; charset=us-ascii&#39; aannemen. Bij veel geautomatiseerde en kwaadaardige verzoeken ontbreekt mogelijk het type inhoud. |
 | NOUA | Geen gebruikersagent | Vele geautomatiseerde en kwaadwillige verzoeken gebruiken vals of ontbrekende Gebruiker-Agenten om het moeilijk te maken om het type van apparaat te identificeren dat de verzoeken maakt. |
 | TORNODE | Teerverkeer | Tor is software die de identiteit van een gebruiker verbergt. Een piek in het verkeer van de Tor kan op een aanvaller wijzen die probeert om hun plaats te maskeren. |
-| DATACENTER | Datacenter-verkeer | Datacenterverkeer is niet-biologisch verkeer dat afkomstig is van geïdentificeerde hostingproviders. Dit type van verkeer wordt niet algemeen geassocieerd met een echt eind - gebruiker. |
 | NULLBYTE | Null Byte | Null-bytes worden normaal gesproken niet weergegeven in een verzoek en geven aan dat het verzoek onjuist is geformuleerd en mogelijk kwaadaardig is. |
-| IMPOSTOR | SearchBot Impostor | Zoekbotweefsel is iemand die doet alsof hij een Google- of Bing-zoekbot is, maar die niet legitiem is. Opmerking: is niet afhankelijk van een reactie op zich, maar moet eerst worden opgelost in de cloud, zodat deze niet mag worden gebruikt in een prerule. |
 | PRIVATEFIEL | Persoonlijke bestanden | Persoonlijke bestanden zijn doorgaans vertrouwelijk, zoals een Apache `.htaccess` bestand of een configuratiebestand dat vertrouwelijke informatie kan lekken |
 | SCANNER | Scanner | Identificeert populaire scanservices en -gereedschappen |
 | RESPONSESPLIT | HTTP-antwoordsplitsing | Identificeert wanneer CRLF-tekens als invoer naar de toepassing worden verzonden om headers in de HTTP-reactie te injecteren |
