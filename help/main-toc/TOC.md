@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
+source-git-commit: c9ad4b6f2ae5107569c556ca11c75868c9e4be63
 workflow-type: tm+mt
-source-wordcount: '4336'
+source-wordcount: '4335'
 ht-degree: 19%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 19%
    + [IMS-ondersteuning voor AEM as a Cloud Service](/help/security/ims-support.md)
    + [Ondersteuning voor zelfde site-cookie voor AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [OAuth2 Steun voor de postdienst](/help/security/oauth2-support-for-mail-service.md)
-   + [Het vormen van de Regels van de Filter van het Verkeer met de Regels van WAF aan het Verkeer van de Filter](/help/security/cdn-and-waf-rules.md)
+   + [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md)
    + [Overwegingen bij as a Cloud Service beveiliging AEM](/help/security/security-considerations.md)
 + Onboarding {#onboarding}
    + [Begin hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -578,7 +578,7 @@ ht-degree: 19%
          + [AEM Forms verbinden met database of gegevensbron](/help/forms/data-integration.md)
          + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
          + [Configureren [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Integratie van Salesforce-toepassingen met OAuth 2.0-clientreferentie](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [Aangepast formulier aansluiten op Salesforce-toepassing met OAuth 2.0-clientreferentie](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [Configureren [!DNL Azure] opslag](/help/forms/configure-azure-storage.md)
          + [Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
          + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)

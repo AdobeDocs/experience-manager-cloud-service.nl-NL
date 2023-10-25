@@ -1,13 +1,13 @@
 ---
 title: Opmerkingen bij de release 2023.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 2b242cb10fb5d1da725c1396633d2db779a78639
+exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
 workflow-type: tm+mt
 source-wordcount: '1686'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release 2023.8.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -156,7 +156,7 @@ Het verkeer van de filter bij CDN die op wordt gebaseerd:
 
 Wilt u de functie proberen en feedback delen? Een e-mail verzenden naar **aemcs-waf-adopter@adobe.com** van uw officiële e-mailadres voor meer informatie over het programma voor vroege adoptie. De ruimte is beperkt.
 
-Meer informatie over de functie in het artikel [hier](/help/security/cdn-and-waf-rules.md).
+Meer informatie over de functie in het artikel [hier](/help/security/traffic-filter-rules-including-waf.md).
 
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
