@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bb7bbe5e31d75a72b3c81939ce560e3ff3979a86
+source-git-commit: 5e6d209729809952b2478fd0a71b32668ba41230
 workflow-type: tm+mt
-source-wordcount: '4331'
+source-wordcount: '4336'
 ht-degree: 19%
 
 ---
@@ -873,6 +873,7 @@ ht-degree: 19%
          + [IP-Lijsten van gewenste personen toepassen en niet toepassen](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.md)
+      + [Inhoudsverzoeken van Cloud Servicen begrijpen](/help/implementing/cloud-manager/content-requests.md)
       + [Veelgestelde vragen over Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Ontwikkelen voor AEM as a Cloud Service {#developing}
       + [AEM-projectstructuur](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
