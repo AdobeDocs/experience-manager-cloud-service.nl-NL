@@ -2,9 +2,9 @@
 title: Productieprogramma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen productieprogramma te maken voor het hosten van liveverkeer.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Een productieprogramma is bedoeld voor een gebruiker die vertrouwd is met AEM en Cloud Manager en klaar is om te beginnen met het schrijven, bouwen en testen van code met als doel het op te stellen om levend verkeer te ontvangen.
 
-Meer informatie over programmatypen in het document [Het begrip van Programma en de Types van Programma.](program-types.md)
+Meer informatie over programmatypen in het document [Het begrip van Programma en Programma Types.](program-types.md)
 
 ## Een productieprogramma maken {#create}
 
@@ -32,12 +32,15 @@ Ga als volgt te werk om een productieprogramma te maken.
 
 1. U kunt desgewenst een afbeelding aan het programma toevoegen door een afbeeldingsbestand naar het **Een programmaafbeelding toevoegen** Selecteer een afbeelding in een bestandenbrowser of klik erop. Tik of klik op **Doorgaan**.
 
-1. Als u verbeterde beveiligingsrechten hebt, kunt u **Uitgebreide beveiliging** biedt de optie om **Uitgebreide beveiliging inschakelen** voor uw productieprogramma. Controleer indien nodig de optie om de uitgebreide beveiliging in te schakelen en tik of klik op **Doorgaan**.
+1. Als u over de nodige rechten beschikt, **Beveiliging** wordt weergegeven en krijgt de optie om **HIPAA** en/of **WAF-DDOS-beveiliging** voor uw productieprogramma. Indien vereist voor het programma dat u maakt, controleert u de toepasselijke optie(s) en tikt u op of klikt u op **Doorgaan**.
 
-   * Uitgebreide beveiliging kan niet worden in- of uitgeschakeld nadat het programma is gemaakt.
-   * [Meer informatie](https://www.adobe.com/go/hipaa-ready) over implementatie van Adobe
+   * HIPAA kan niet worden ingeschakeld of uitgeschakeld na het maken van het programma.
+      * [Meer informatie](https://www.adobe.com/go/hipaa-ready) over de HIPAA-gereed implementatie van de oplossing van Adobe.
+   * Zodra geactiveerd, kan de bescherming WAF-DDOS dan door opstelling worden gevormd [niet-productiepijpleiding.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
-   ![Uitgebreide beveiliging, optie](assets/create-production-program-enhanced.png)
+   {{waf-limited-release}}
+
+   ![Beveiligingsopties](assets/create-production-program-security.png)
 
 1. Op de **Oplossingen en invoegtoepassingen** selecteert u de oplossingen die u in het programma wilt opnemen.
 
@@ -52,7 +55,7 @@ Ga als volgt te werk om een productieprogramma te maken.
 
 1. Selecteer uw oplossingen en invoegtoepassingen en klik op **Doorgaan**.
 
-1. Op de **Go-Live-datum** voert u de datum in waarop u uw productieprogramma live wilt gaan.
+1. Op de **Go-Live-datum** voert u de datum in waarop u uw productieprogramma live wilt laten gaan.
 
    ![Geplande datum voor live gaan definiëren](assets/setup-go-live.png)
 
@@ -65,9 +68,9 @@ Uw programma wordt gemaakt door Cloud Manager en wordt weergegeven en geselectee
 
 ![Overzicht van Cloud Manager](assets/navigate-cm.png)
 
-## Toegang tot uw programma {#acessing}
+## Toegang tot uw programma {#accessing}
 
-1. Zodra u uw programmakaart op de landingspagina ziet, selecteer de ellipsknoop om de menuopties te bekijken beschikbaar aan u.
+1. Zodra u uw programmakaart op de landingspagina ziet, selecteer de elliptische knoop om de menuopties te bekijken beschikbaar aan u.
 
    ![Overzicht van programma](assets/program-overview.png)
 
@@ -77,7 +80,7 @@ Uw programma wordt gemaakt door Cloud Manager en wordt weergegeven en geselectee
 
    ![Overzicht van programma](assets/set-up-prod5.png)
 
-Als u op een bepaald moment naar een ander programma moet schakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om het **Navigeren naar** optie.
+Als u op een bepaald moment naar een ander programma moet schakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om het **Navigeren naar** -optie.
 
 ![Ga naar](assets/create-program-a1.png)
 

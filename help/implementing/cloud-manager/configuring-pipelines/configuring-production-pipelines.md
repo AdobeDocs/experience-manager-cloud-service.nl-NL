@@ -3,9 +3,9 @@ title: Productiepijpleidingen configureren
 description: Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu's te bouwen en op te stellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Een productiepijpleiding configureren {#configure-production-pipeline}
 
-Leer hoe te om de pijpleidingen van de Productie te vormen om uw code aan de milieu&#39;s van de Productie te bouwen en op te stellen. Een productiepijpleiding stelt code eerst aan het milieu van het Stadium op, en op goedkeuring stelt de zelfde code aan het milieu van de Productie op.
+Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu&#39;s te bouwen en op te stellen. Een productiepijpleiding stelt code eerst aan werkgebiedmilieu op, en bij goedkeuring stelt de zelfde code aan het productiemilieu op.
 
 Een gebruiker moet beschikken over **[Implementatiebeheer](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** rol om productiepijpleidingen te configureren.
 
 >[!NOTE]
 >
->Een productiepijpleiding kan pas worden ingesteld nadat de programma&#39;s zijn gemaakt, een opslagplaats voor kombuizen ten minste één tak heeft en er een productie- en halteplaats is ingesteld.
+>Een productiepijpleiding kan niet worden opgezet tot de programmaverwezenlijking volledig is, heeft een git bewaarplaats minstens één tak, en een productie en het opvoeren milieu wordt geplaatst.
 
 Alvorens u begint uw code op te stellen, moet u uw pijpleidingsmontages van vormen [!UICONTROL Cloud Manager].
 
@@ -56,42 +56,18 @@ Als u uw programma hebt ingesteld en ten minste één omgeving hebt die de [!UIC
 
    ![Configuratie productiepijplijn](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. Op de **Broncode** tabblad moet u bepalen waar de pijplijn zijn code moet terugwinnen en welk type code het is.
+1. Op de **Broncode** lusje u moet selecteren welk type van code de pijpleiding zou moeten verwerken.
 
-   * **[Code frontend](#front-end-code)**
    * **[Volledige stapelcode](#full-stack-code)**
-   * **[Config. web](#web-tier-config)**
+   * **[Gerichte implementatie](#targeted-deployment)**
 
-De stappen om de verwezenlijking van uw productiepijplijn te voltooien variëren afhankelijk van de optie voor **Broncode** geselecteerd. Volg de verbindingen hierboven om aan de volgende sectie van dit document te springen om de configuratie van uw pijpleiding te voltooien.
+Zie het document [CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie over de soorten pijpleidingen .
 
-### Code frontend {#front-end-code}
-
-Een front-end codepijpleiding stelt front-end code op bouwt die één of meerdere cliënt-kant toepassingen UI bevatten. Zie het document [CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) voor meer informatie over dit type pijpleiding .
-
-Om de configuratie van de front eind codeproductiepijplijn te beëindigen, volg deze stappen.
-
-1. Op de **Broncode** moet u de volgende opties definiëren.
-
-   * **Bewaarplaats** - Deze optie bepaalt waarvan git repo de pijpleiding de code zou moeten terugwinnen.
-
-   >[!TIP]
-   > 
-   >Zie het document [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
-
-   * **Git Branch** - Deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
-      * Voer de eerste paar tekens van de naam van de vertakking in en met de functie voor automatisch aanvullen van dit veld kunt u de overeenkomende vertakkingen vinden om u te helpen selecteren.
-   * **Codelocatie** - Deze optie bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
-   * **Pauzeren vóór implementatie naar productie** - Deze optie pauzeert de pijpleiding alvorens aan productie op te stellen.
-
-   ![Voorste eindcode](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
-
-1. Klikken **Opslaan** om uw pijpleiding te redden.
-
-De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managing-pipelines.md) op de **Pijpleidingen** kaart op **Programmaoverzicht** pagina.
+De stappen om de verwezenlijking van uw productiepijplijn te voltooien variëren afhankelijk van het type van broncode u selecteerde. Volg de verbindingen hierboven om aan de volgende sectie van dit document te springen zodat kunt u de configuratie van uw pijpleiding voltooien.
 
 ### Volledige stapelcode {#full-stack-code}
 
-Een full-stack codepijpleiding stelt gelijktijdig achterste en front-end codebouwstijlen op die één of meerdere AEM servertoepassingen samen met configuratie HTTPD/Dispatcher bevatten. Zie het document [CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) voor meer informatie over dit type pijpleiding .
+Een full-stack codepijpleiding stelt gelijktijdig achterste en front-end codebouwstijlen op die één of meerdere AEM servertoepassingen samen met configuratie HTTPD/Dispatcher bevatten.
 
 >[!NOTE]
 >
@@ -109,7 +85,7 @@ Om de configuratie van de full-stack de productiepijplijn van de codeproductie t
 
    * **Git Branch** - Deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
       * Voer de eerste paar tekens van de naam van de vertakking in en met de functie voor automatisch aanvullen van dit veld kunt u de overeenkomende vertakkingen vinden om u te helpen selecteren.
-   * **Codelocatie** - Deze optie bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
+   * **Configuratie van web-Tier negeren** - Als deze optie is ingeschakeld, implementeert de pijpleiding uw configuratie van de weblaag niet.
    * **Pauzeren vóór implementatie naar productie** - Deze optie pauzeert de pijpleiding alvorens aan productie op te stellen.
    * **Gepland** - Met deze optie kan de gebruiker de geplande implementatie van de productie inschakelen.
 
@@ -141,43 +117,54 @@ De wegen die voor de Controle van de Ervaring worden gevormd worden voorgelegd a
 
 De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managing-pipelines.md) op de **Pijpleidingen** kaart op **Programmaoverzicht** pagina.
 
-### Config. web {#web-tier-config}
+### Gerichte implementatie {#targeted-deployment}
 
-Een configuratiepijplijn van de Webrij stelt configuraties HTTPD/Dispatcher op. Zie het document [CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) voor meer informatie over dit type pijpleiding .
+Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM toepassing op. In een dergelijke implementatie kunt u ervoor kiezen **Inclusief** een van de volgende typen code:
 
-Om de configuratie van de full-stack de productiepijplijn van de codeproductie te beëindigen, volg deze stappen.
-
-1. Op de **Broncode** moet u de volgende opties definiëren.
-
-   * **Bewaarplaats** - Deze optie bepaalt waarvan git repo de pijpleiding de code zou moeten terugwinnen.
-
-   >[!TIP]
-   > 
-   >Zie het document [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
-
-   * **Git Branch** - Deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
-      * Voer de eerste paar tekens van de naam van de vertakking in en met de functie voor automatisch aanvullen van dit veld kunt u de overeenkomende vertakkingen vinden om u te helpen selecteren.
-   * **Codelocatie** - Deze optie bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
-      * Voor configuratieleidingen voor het web is dit meestal het pad dat `conf.d`, `conf.dispatcher.d`, en `opt-in` mappen.
-      * Als de projectstructuur bijvoorbeeld is gegenereerd op basis van de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) het pad zou `/dispatcher/src`.
-   * **Pauzeren vóór implementatie naar productie** - Deze optie pauzeert de pijpleiding alvorens aan productie op te stellen.
-   * **Gepland** - Met deze optie kan de gebruiker de geplande implementatie van de productie inschakelen.
-
-   ![Code weblijst](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
-
-1. Klikken **Opslaan** om uw pijpleiding te redden.
+* **[Config](#config)** - Configureer instellingen voor uw AEM, onderhoudstaken, CDN-regels en meer.
+   * Zie het document [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md) om te leren hoe u de configuraties in uw opslagplaats kunt beheren, zodat deze correct worden geïmplementeerd.
+* **[Code frontend](#front-end-code)** - Configureer JavaScript en CSS voor de voorzijde van de AEM toepassing.
+   * Met frontend pijpleidingen wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en kan het ontwikkelingsproces worden versneld.
+   * Zie het document [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces samen met een aantal overwegingen werkt , moet u zich ervan bewust zijn dat dit proces alle mogelijkheden biedt .
+* **[Config. web](#web-tier-config)** - Configureer de eigenschappen van de dispatcher voor het opslaan, verwerken en leveren van webpagina&#39;s aan de client.
 
 >[!NOTE]
 >
->Als u een bestaande full-stack pijpleiding die aan een milieu opstelt hebt, die tot een Web rij config pijpleiding voor het zelfde milieu leidt zal de bestaande configuratie van de Webrij in de full-stack pijpleiding worden genegeerd.
+>* Als er voor de geselecteerde omgeving een pijpleiding voor code in de weblaag bestaat, is deze selectie uitgeschakeld.
+>* Als u een bestaande full-stack pijpleiding die aan een milieu opstelt hebt, die tot een Web rij config pijpleiding voor het zelfde milieu leidt zal de bestaande configuratie van de Webrij in de full-stack pijpleiding worden genegeerd.
+> * Op elk ogenblik, kan er slechts één config plaatsingspijpleiding per milieu zijn.
+
+De stappen om de verwezenlijking van uw productie te voltooien, zijn de gerichte plaatsingspijpleiding het zelfde zodra u een plaatsingstype kiest.
+
+1. Kies welk implementatietype u nodig hebt.
+
+![Gerichte implementatieopties](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-targeted-deployment.png)
+
+1. Definieer de **In aanmerking komende implementatieomgevingen**.
+
+   * Als uw pijpleiding een plaatsingspijpleiding is, moet u selecteren aan welke milieu&#39;s het zou moeten opstellen.
+
+1. Onder **Broncode** Definieer de volgende opties:
+
+   * **Bewaarplaats** - Deze optie bepaalt waarvan git repo dat de pijpleiding de code zou moeten terugwinnen.
+
+   >[!TIP]
+   > 
+   >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) zodat u kunt leren om opslagruimten toe te voegen en te beheren in Cloud Manager.
+
+   * **Git Branch** - Deze optie bepaalt waarvan de tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
+      * Voer de eerste paar tekens in van de naam van de vertakking en de functie voor automatisch aanvullen van dit veld. U vindt de overeenkomende vertakkingen die u kunt selecteren.
+   * **Codelocatie** - Deze optie bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
+   * **Pauzeren vóór implementatie naar productie** - Deze optie pauzeert de pijpleiding alvorens aan productie op te stellen.
+   * **Gepland** - Met deze optie kan de gebruiker de geplande implementatie van de productie inschakelen. Alleen beschikbaar voor doelgerichte webimplementaties.
+
+   ![Config-implementatiepijplijn](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+
+1. Klikken **Opslaan**.
 
 De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managing-pipelines.md) op de **Pijpleidingen** kaart op **Programmaoverzicht** pagina.
 
-## Sites ontwikkelen met behulp van de voorste pijplijn {#developing-with-front-end-pipeline}
-
-Met frontend pijpleidingen wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en kan het ontwikkelingsproces worden versneld.
-
-Zie [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces samen met een aantal overwegingen werkt , moet u zich ervan bewust zijn dat dit proces alle mogelijkheden biedt .
+Wanneer het runnen van een gerichte plaatsingspijpleiding, configuraties [zoals WAF-configuraties](/help/security/traffic-filter-rules-including-waf.md) zal worden opgesteld, op voorwaarde dat zij aan milieu, bewaarplaats, en tak worden bewaard u in de pijpleiding bepaalde.
 
 ## Verzendingspakketten overslaan {#skip-dispatcher-packages}
 

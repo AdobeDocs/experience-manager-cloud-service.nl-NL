@@ -1,7 +1,7 @@
 ---
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 0%
 >[!NOTE]
 >
 >AEM ondersteunt momenteel niet het toewijzen van groepen aan profielen. In plaats daarvan moeten gebruikers afzonderlijk worden toegevoegd.
+
+## Beperkte WAF Config-versie {#waf-limited-release}
+
+[!BADGE De WAF-DDOS-bescherming zal eind 2023 beschikbaar zijn.]{type=Caution tooltip="De WAF-DDOS-bescherming zal eind 2023 beschikbaar zijn."}
 
 ## Zie ook {#see-also}
 

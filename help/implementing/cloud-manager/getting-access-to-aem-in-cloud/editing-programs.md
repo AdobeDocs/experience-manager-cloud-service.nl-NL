@@ -2,9 +2,9 @@
 title: Programma's bewerken
 description: Leer hoe u uw productie- en sandboxprogramma's kunt bewerken om de opties aan te passen nadat u deze hebt gemaakt.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -53,15 +53,19 @@ U moet lid zijn van de **Zakelijke eigenaar** rol om programma&#39;s te bewerken
    * Deze datum is uitsluitend ter informatie. De widget Go Live wordt geactiveerd op de pagina met het programmaoverzicht. Het biedt op zijn beurt in-product koppelingen naar de as a Cloud Service documentatie over beste praktijken van Adobe Experience Manager (AEM), die op uw reis is afgestemd. Dit culmineert in een geslaagde Go Live-ervaring.
    * Dit tabblad is niet beschikbaar voor sandboxprogramma&#39;s.
 
+1. Indien de vereiste rechten voor het programma beschikbaar zijn, **Beveiliging** wordt weergegeven waar u de beveiligingsopties voor het programma kunt wijzigen.
+
+   ![Beveiligingsinstellingen bewerken](assets/edit-program-security.png)
+
+   * HIPAA kan niet worden ingeschakeld of uitgeschakeld na [programma&#39;s maken.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      * [Meer informatie](https://www.adobe.com/go/hipaa-ready) over de HIPAA-gereed implementatie van de oplossing van Adobe.
+   * Zodra geactiveerd, kan de bescherming WAF-DDOS dan door opstelling worden gevormd [niet-productiepijpleiding.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+
+   {{waf-limited-release}}
+
 1. Klikken **Bijwerken** om uw wijzigingen in het programma op te slaan.
 
 Telkens wanneer een programma wordt uitgegeven, met inbegrip van het toevoegen van of het verwijderen van een oplossing of toe:voegen-op, worden die veranderingen van kracht na de volgende plaatsing.
-
-Als de uitgebreide beveiliging van uw productieprogramma is ingeschakeld, kunt u een extra **Uitgebreide beveiliging** tabblad is beschikbaar in het dialoogvenster **Programma bewerken** venster om te bevestigen dat de functie actief is voor het programma.
-
-![Enhanced Security actief voor een programma](assets/edit-program-enhanced.png)
-
-U kunt deze instelling niet bewerken nadat het programma is gemaakt. Zie voor meer informatie over de verbeterde beveiligingsoptie [Productieprogramma&#39;s maken](creating-production-programs.md).
 
 ## Sandbox-programma&#39;s verwijderen {#delete-sandbox-program}
 
