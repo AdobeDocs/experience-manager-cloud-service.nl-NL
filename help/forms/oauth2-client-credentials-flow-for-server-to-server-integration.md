@@ -3,14 +3,14 @@ title: Hoe te om Salesforce te integreren gebruikend OAuth 2.0 cliëntcredentië
 description: Leer Salesforce met AEM Forms te integreren met behulp van OAuth 2.0 client credential flow.
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 2%
 
 ---
 
-# Integratie van Salesforce door OAuth 2.0 client credential flow {#configure-salesforce-with-ouath-2.0-client-credential}
+# Aangepast formulier verbinden met Salesforce met gebruik van OAuth 2.0-clientreferentiestroom {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -20,6 +20,7 @@ ht-degree: 2%
 U kunt OAuth 2.0 cliëntgeloofsbrieven gebruiken om AEM Forms met de toepassing van Salesforce te integreren. OAuth 2.0 cliëntgeloofsbrieven zijn een standaard en veilige methode voor directe mededeling zonder gebruikersbetrokkenheid.
 
 ![Workflow bij het instellen van communicatie tussen AEM Forms en Salesforce-toepassing](/help/forms/assets/salesforce-workflow.png)
+
 AEM Forms wisselt de aanmeldingsgegevens van de client uit (de sleutel van de consument en het consumentengeheim), die zijn gedefinieerd in de toepassing Salesforce waarmee verbinding wordt gemaakt, om een toegangstoken te verkrijgen.
 
 Er zijn veelvoudige voordelen om OAuth 2.0 cliëntgeloofsbrieven voor authentificatie over de authentificatie van de Stroom van de Code van de Vergunning te gebruiken:
@@ -38,7 +39,7 @@ Voordat u de communicatie tussen een Salesforce-toepassing en een AEM omgeving i
 
 ## Salesforce-toepassing configureren met OAuth 2.0 Client Credential-stroom {#steps-to-create-aem-datasource-configuration}
 
-Voer de volgende stappen uit om de Salesforce-toepassing te integreren met een adaptief formulier met OAuth 2.0-instellingen voor clientverificatie:
+Voer de volgende stappen uit om Adaptief formulier te verbinden met de Salesforce-toepassing met OAuth 2.0-instellingen voor clientverificatie:
 
 1. Meld u aan bij de instantie Auteur.
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Data Sources]**.
@@ -66,4 +67,6 @@ Voer de volgende stappen uit om de Salesforce-toepassing te integreren met een a
 1. Klik op **[!UICONTROL Test Connection]**.
 1. Als de verbinding succesvol is, klik **[!UICONTROL Create]** knop.
 
-Nu kunt u [Maak het formuliergegevensmodel](/help/forms/create-form-data-models.md) om de gevormde gegevensbron met uw Aangepaste Vorm te integreren.
+Nu kunt u [Maak het formuliergegevensmodel](/help/forms/create-form-data-models.md) om adaptief formulier te verzenden naar Salesforce-toepassing.
+
+

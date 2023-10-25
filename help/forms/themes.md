@@ -2,9 +2,9 @@
 title: Hoe kunnen we thema's maken en gebruiken om een adaptief formulier op te maken?
 description: Gebruik thema's met een adaptief formulier om een adaptief formulier een visuele identiteit te geven. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '5444'
+source-wordcount: '5441'
 ht-degree: 0%
 
 ---
@@ -650,7 +650,7 @@ De gegenereerde CSS kunt u met de volgende opties zien:
     
     * **Thema-editor:**
     
-    Met de Thema-editor kunt u thema&#39;s maken om uw formulier op te maken &lt;!>— of interactieve communicatie —>. U kunt de stijl van componenten in een thema opgeven, zodat de weergave in meerdere formulieren consistent blijft &lt;!>— of interactieve communicatie —> u ontwikkelt. Het wordt aanbevolen om opmaakgegevens op te geven in een thema en het thema vervolgens toe te passen op een formulier.
+    Met de Thema-editor kunt u thema&#39;s maken om uw formulier op te maken &lt;!>— of interactieve communicatie —>. U kunt de stijl van componenten in een thema opgeven, zodat u de vormgeving in verschillende formulieren die u ontwikkelt consistent kunt houden. Het wordt aanbevolen om opmaakgegevens op te geven in een thema en het thema vervolgens toe te passen op een formulier.
     
     * **Inline styling:**
     

@@ -5,9 +5,9 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ U kunt gebruikersgegevens uit een werkstroominstantie in de gegevensopslagruimte
 U kunt de resultaten echter niet identificeren of dubbelzinnig weergeven wanneer u werkstromen identificeert die aan een aanvrager zijn gekoppeld in de volgende scenario&#39;s:
 
 * **Workflow geactiveerd door een gecontroleerde map**: Een workflowinstantie kan niet worden geïdentificeerd met de initiator als de workflow wordt geactiveerd door een gecontroleerde map. In dit geval wordt de gebruikersinformatie gecodeerd in de opgeslagen gegevens.
-* **Workflow gestart vanaf AEM publicatie-instantie**: Alle workflowinstanties worden gemaakt met behulp van een servicegebruiker wanneer Adaptive Forms, interactieve communicatie of letters worden verzonden vanuit AEM publicatie-instantie. In deze gevallen wordt de gebruikersnaam van de aangemelde gebruiker niet vastgelegd in de gegevens van de workflowinstantie.
+* **Workflow gestart vanaf AEM publicatie-instantie**: Alle workflowinstanties worden gemaakt met behulp van een servicegebruiker wanneer Adaptive Forms of letters worden verzonden vanuit AEM publicatie-instantie. In deze gevallen wordt de gebruikersnaam van de aangemelde gebruiker niet vastgelegd in de gegevens van de workflowinstantie.
 
 ### Gebruikersgegevens openen {#access}
 
