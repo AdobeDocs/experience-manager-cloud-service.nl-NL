@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5aa4a049bc6a69f161ad04d2a64ab0871e672432
+source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2733'
 ht-degree: 1%
 
 ---
@@ -69,9 +69,6 @@ Naast het verstrekken van onderbrekingen ook zou een juiste behandeling van derg
 
 ## Aanvraagsnelheidslimieten afhandelen {#rate-limit-handling}
 
->[!NOTE]
->De HTTP-foutreactie verandert van 503 in 429 in de week van 7 augustus 2023.
->
 Wanneer het tarief van inkomende verzoeken aan AEM gezonde niveaus overschrijdt, AEM aan nieuwe verzoeken met de foutencode van HTTP 429 beantwoordt. Toepassingen die programmatische vraag aan AEM maken kunnen defensief coderen overwegen, die na een paar seconden met een exponentiële backoff strategie opnieuw proberen. Vóór medio augustus 2023 reageerde AEM op dezelfde voorwaarde met HTTP-foutcode 503.
 
 ## Geen Klassieke UI-aanpassingen {#no-classic-ui-customizations}
