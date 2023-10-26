@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2023.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+source-git-commit: 75a26cf6f486ce951f1f81b5125026fac9458ab4
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -79,8 +79,6 @@ Assets Essentials sorteren nu standaard de zoekresultaten op Relevantie. U kunt 
 ### Nieuwe functies beschikbaar in [!DNL Forms] {#new-features-available-in-forms-channel}
 
 * [**Buiten-de-box thema&#39;s**](/help/forms/using-themes-in-core-components.md) **en sjablonen**: Kickstart uw formulierontwerpproces met onze gebruiksklare OTB-thema&#39;s en -sjablonen, speciaal ontworpen voor ervaren professionals en nieuwe formulierauteurs. Dankzij deze nauwgezette thema&#39;s en sjablonen, die naadloos zijn gebouwd met Adaptive Forms Core Components, kunt u snel formulieren maken voor veelgebruikte toepassingen.
-
-  ![Sjablonen uit de keuzelijst](/help/forms/assets/form-templates-ootb.png)
 
 * **[Componenten reageren voor Forms zonder hoofd](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: U kunt nu een voorbeeld bekijken van de koploze adaptieve formulieruitvoeringen en deze aanpassen met de React-componenten in het vak. Deze componenten maken gebruik van BEM-klassen van Adaptive Forms Core Components for styling, waardoor het voor u gemakkelijker wordt om de weergave aan te passen aan uw specifieke vereisten.
 

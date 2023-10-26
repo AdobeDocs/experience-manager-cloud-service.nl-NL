@@ -3,7 +3,9 @@ title: Hoe kan AEM adaptief formulier worden verbonden met de Microsoft® ShareP
 description: Sluit een adaptief formulier aan op de Microsoft® SharePoint List. Leer hoe u de Microsoft® SharePoint-lijst configureert en een formuliergegevensmodel maakt met behulp van de configuratie. Verder leert u hoe u de FDM kunt integreren met uw adaptieve formulier.
 role: User, Developer
 keywords: Sluit AEM adaptief formulier aan op de Microsoft SharePoint-lijst, sluit adaptief formulier aan op de Microsoft SharePoint-lijst, integreer AEM adaptief formulier met de SharePoint SharePoint-lijst, integreer Adaptief formulier met de-lijst, verzend gegevens van een adaptief formulier naar de-lijst, verzend AEM workflow naar de-lijst.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+hide: true
+hidefromToC: true
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%
