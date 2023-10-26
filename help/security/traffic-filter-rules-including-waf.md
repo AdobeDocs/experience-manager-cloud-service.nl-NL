@@ -2,9 +2,9 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3480'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ De `kind` parameter moet worden ingesteld op `CDN` en de versie moet worden inge
 
 Voor RDEs, zal de bevellijn worden gebruikt, maar RDE wordt niet gesteund op dit ogenblik.
 
+**Notities**
+
+* U kunt `yq` om de opmaak van uw configuratiebestand (bijv. `yq cdn.yaml`).
+
 ## Syntaxis verkeersfilterregels {#rules-syntax}
 
 U kunt `traffic filter rules` om op patronen zoals IPs, gebruikersagent, verzoekkopballen, hostname, geo, en url aan te passen.
@@ -152,7 +156,7 @@ Het formaat van de regels van de verkeersfilter in `cdn.yaml` wordt hieronder be
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | Regelnaam (64 tekens lang, alleen alfanumerieke tekens en -) |
 | wanneer | X | X | `Condition` | - | De basisstructuur is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[Zie Syntaxis van Condition Structure](#condition-structure) Hieronder vindt u een beschrijving van de getters, voorspellingen en hoe u meerdere voorwaarden kunt combineren. |
-| action | X | X | `Action` | log | log, allow, block, log of action object Default is log |
+| action | X | X | `Action` | log | log, allow, block of Action-object. Standaard is log |
 | rateLimit | X |   | `RateLimit` | niet gedefinieerd | Snelheidsbeperkende configuratie. Snelheidsbeperking is uitgeschakeld als deze niet is gedefinieerd.<br><br>Hieronder vindt u een aparte sectie waarin de syntaxis rateLimit wordt beschreven, samen met voorbeelden. |
 
 ### Voorwaardestructuur {#condition-structure}
@@ -188,11 +192,11 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 
 | **Eigenschap** | **Type** | **Beschrijving** |
 |---|---|---|
-| reqProperty | `string` | Request-eigenschap.<br><br>Een van: `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>De domeineigenschap is een kleine omzetting van de hostheader van de aanvraag. Het is nuttig voor tekenreeksvergelijkingen zodat de gelijken niet wegens hoofdlettergevoeligheid worden gemist.<br><br>De `clientCountry` gebruikt twee lettercodes die worden weergegeven bij [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) |
+| reqProperty | `string` | Request-eigenschap.<br><br>Een van:<br><ul><li>`path`: Retourneert het volledige pad van een URL zonder de queryparameters.</li><li>`queryString`: Retourneert het querygedeelte van een URL</li><li>`method`: Retourneert de HTTP-methode die in de aanvraag wordt gebruikt.</li><li>`tier`: Retourneert een van `author`, `preview` of `publish`.</li><li>`domain`: Hiermee wordt de eigenschap domain geretourneerd (zoals gedefinieerd in het dialoogvenster `Host` header) in kleine letters</li><li>`clientIp`: Retourneert de client-IP.</li><li>`clientCountry`: Retourneert een tweelettercode ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) die aangeven in welk land de cliënt zich bevindt.</li></ul> |
 | reqHeader | `string` | Hiermee wordt aanvraagheader met de opgegeven naam geretourneerd |
 | queryParam | `string` | Hiermee wordt de query-parameter met de opgegeven naam geretourneerd |
 | reqCookie | `string` | Retourneert cookie met opgegeven naam |
-| postParam | `string` | Retourneert parameter met de opgegeven naam van de hoofdtekst. Werkt alleen als de hoofdtekst van het inhoudstype is `application/x-www-form-urlencoded` |
+| postParam | `string` | Keert de Parameter van het Post met gespecificeerde naam van het lichaam van het Verzoek terug. Werkt alleen als de hoofdtekst van het inhoudstype is `application/x-www-form-urlencoded` |
 
 **Voorspelend**
 
@@ -207,6 +211,19 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 | **in** | `array[string]` | true als de opgegeven lijst het resultaat getter bevat |
 | **notIn** | `array[string]` | true als de opgegeven lijst geen resultaat voor getter bevat |
 | **exists** | `boolean` | true wanneer ingesteld op true en eigenschap bestaat of wanneer ingesteld op false en eigenschap niet bestaat |
+
+**Notities**
+
+* De eigenschap request `clientIp` kan alleen worden gebruikt met de volgende voorspelling: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` kan ook tegen IP waaiers worden vergeleken wanneer het gebruiken `in` en `notIn` voorspelt. In het volgende voorbeeld wordt een voorwaarde geïmplementeerd om te beoordelen of een client-IP zich in het IP-bereik van 192.168.0.0/24 bevindt (dus van 192.168.0.0 tot 192.168.0.255):
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* We raden het gebruik aan van [regex101](https://regex101.com/) en [Fastly Fiddle](https://fiddle.fastly.dev/) wanneer u met regex werkt. U kunt ook meer leren over hoe snel regex in dit [artikel](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+
 
 ### Handelingsstructuur {#action-structure}
 
@@ -259,6 +276,8 @@ De `wafFlags` eigenschap, die kan worden gebruikt in de licentiebare WAF-regels 
 * Als een regel wordt aangepast en geblokkeerd, reageert CDN met een `406` retourcode.
 
 * De configuratiedossiers zouden geen geheimen moeten bevatten aangezien zij door iedereen leesbaar zouden zijn die toegang tot de git bewaarplaats heeft.
+
+* IP de Lijsten van gewenste personen die in de Manager van de Wolk worden bepaald hebben belangrijkheid over de Regels van de Filters van het Verkeer.
 
 ## Voorbeelden van regels {#examples}
 
@@ -396,9 +415,10 @@ Snelheidslimieten worden berekend per CDN POP. Als voorbeeld, veronderstel dat P
 | **Eigenschap** | **Type** | **Standaard** | **BETEKENEN** |
 |---|---|---|---|
 | limiet | geheel getal van 10 tot en met 10000 | vereist | Het tarief van het verzoek (per CDN POP) in verzoeken per seconde waarvoor de regel wordt teweeggebracht. |
-| venster | geheel getal: 1, 10 of 60 | 10 | Samplingvenster in seconden waarvoor de aanvraagsnelheid wordt berekend. |
+| venster | geheel getal: 1, 10 of 60 | 10 | Samplingvenster in seconden waarvoor de aanvraagsnelheid wordt berekend. De nauwkeurigheid van de tellers hangt af van de grootte van het venster (grotere vensternauwkeurigheid). U kunt bijvoorbeeld een nauwkeurigheid van 50% verwachten voor het venster van 1 seconde en een nauwkeurigheid van 90% voor het venster van 60 seconden. |
 | straf | geheel getal van 60 tot 3600 | 300 | Een periode in seconden waarvoor overeenkomstige verzoeken worden geblokkeerd (afgerond naar de dichtstbijzijnde minuut). |
 | groupBy | array[Getter] | none | De teller van de snelheidsbegrenzer zal door een reeks verzoekeigenschappen (bijvoorbeeld clientIp) worden bijeengevoegd. |
+
 
 ### Voorbeelden {#ratelimiting-examples}
 
