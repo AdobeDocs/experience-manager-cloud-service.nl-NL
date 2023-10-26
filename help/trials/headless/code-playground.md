@@ -31,9 +31,9 @@ ht-degree: 0%
 
 ## CodePen {#codepen}
 
-CodePen is een online code-editor en afspeellocatie voor webontwikkeling aan de voorkant. Hiermee kunt u HTML-, CSS- en JavaScript-code schrijven in uw browser en de resultaten van uw werk bijna direct bekijken. U kunt uw werk ook opslaan en met anderen delen. Adobe heeft een app in CodePen gemaakt die u kunt gebruiken om JSON-gegevens op te halen uit uw testomgeving met behulp van de [AEM headless-client voor JavaScript](https://github.com/adobe/aem-headless-client-js). U kunt deze app ongewijzigd gebruiken of deze in uw eigen CodePen-account opnemen om deze verder aan te passen.
+CodePen is een online code-editor en afspeellocatie voor webontwikkeling aan de voorkant. Hiermee kunt u HTML-, CSS- en JavaScript-code schrijven in uw browser en de resultaten van uw werk bijna direct bekijken. U kunt uw werk ook opslaan en met anderen delen. Adobe heeft een app in CodePen gemaakt die u kunt gebruiken om JSON-gegevens op te halen uit uw testomgeving met de [AEM headless-client voor JavaScript](https://github.com/adobe/aem-headless-client-js). U kunt deze app ongewijzigd gebruiken of deze in uw eigen CodePen-account opnemen om deze verder aan te passen.
 
-Klik op de knop **De voorbeeldtoepassing CodePen starten** vanuit de proefversie gaat u naar de app in CodePen. De app dient als minimaal voorbeeld voor het ophalen van JSON-gegevens met JavaScript. De voorbeeld-app is ontworpen om JSON-inhoud te renderen die wordt geretourneerd, ongeacht de structuur van het onderliggende model van inhoudsfragment. De app haalt gegevens op van een `aem-demo-assets` persisted query die is opgenomen in uw testomgeving. U moet een JSON-respons zien die vergelijkbaar is met het volgende:
+Klik op de knop **De voorbeeldtoepassing CodePen starten** vanuit de proefversie gaat u naar de app in CodePen. De app dient als minimaal voorbeeld voor het ophalen van JSON-gegevens met JavaScript. De voorbeeld-app is ontworpen om JSON-inhoud te renderen die wordt geretourneerd, ongeacht de structuur van het onderliggende model van inhoudsfragment. De app haalt gegevens op van een `aem-demo-assets` persisted query die is opgenomen in uw testomgeving. U dient een JSON-respons te zien die vergelijkbaar is met het volgende:
 
 ```json
 {
@@ -77,13 +77,13 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 >
 >De **serviceURL** is ingesteld om een Adobe I/O Runtime-proxyfunctie te gebruiken om CORS-problemen te voorkomen. Deze proxy is niet vereist voor uw eigen projecten, maar is vereist voor de CodePen-app voor uw testomgeving. De volmachtsfunctie wordt gevormd om te gebruiken **publishHost** waarde die is opgegeven in de queryparameter.
 
-Ten slotte, de functie `fetchJsonFromGraphQL()` wordt gebruikt om het ophaalverzoek uit te voeren gebruikend de Zwaarloze Cliënt van de AEM. Deze wordt telkens aangeroepen wanneer de code wordt gewijzigd of kan worden geactiveerd door op de knop **Herstellen** koppeling. De werkelijke `aemHeadlessClient.runPersistedQuery(..)` de vraag komt op lijn 34 voor. Een beetje later wijzigt u de manier waarop deze JSON-gegevens worden gerenderd, maar drukt u deze nu af op de `#output` div gebruiken `resultToPreTag(queryResult)` functie.
+Ten slotte, de functie `fetchJsonFromGraphQL()` wordt gebruikt om het ophaalverzoek uit te voeren gebruikend de Zwaarloze Cliënt van de AEM. Deze wordt telkens aangeroepen wanneer de code wordt gewijzigd of kan worden geactiveerd door op de knop **Herstellen** koppeling. De werkelijke `aemHeadlessClient.runPersistedQuery(..)` de vraag komt op lijn 34 voor. Een beetje later wijzigt u de manier waarop deze JSON-gegevens worden weergegeven, maar drukt u deze nu af op de `#output` div gebruiken `resultToPreTag(queryResult)` functie.
 
 ## Gegevens ophalen van uw permanente query {#use-persisted-query}
 
 Op regel 25 geeft u aan van welke GraphQL-query de app gegevens moet ophalen. De voortgeduurde vraagnaam is een combinatie van de naam van het eindpunt (namelijk, `your-project` of `aem-demo-assets`), gevolgd door een slash en vervolgens de naam van de query. Als u de eerdere moduleinstructies precies hebt gevolgd, bevindt de voortgezette query die u hebt gemaakt zich in het dialoogvenster `your-project` eindpunt.
 
-1. Werk de `persistedQueryName` variabele zodat gebruikt het de voortgezette vraag u in de vorige module creeerde. Als u de naamgevingssuggestie hebt gevolgd, hebt u een doorlopende query met de naam `adventure-list` in de `your-project` en u zou het `persistedQueryName` variabele tot `your-project/adventure-list`:
+1. Werk de `persistedQueryName` variabele zodat gebruikt het de voortgezette vraag u in de vorige module creeerde. Als u de suggestie voor naamgeving hebt gevolgd, hebt u een doorlopende query met de naam `adventure-list` in de `your-project` en u zou het `persistedQueryName` variabele tot `your-project/adventure-list`:
 
    ```javascript
    //
@@ -98,7 +98,7 @@ Op regel 25 geeft u aan van welke GraphQL-query de app gegevens moet ophalen. De
 
 ## De JSON-rendering wijzigen {#change-rendering}
 
-De JSON wordt &#39;as-is&#39; weergegeven in een `pre` tag , die niet te creatief is . U kunt van CodePen veranderen om te gebruiken `resultToDom()` in plaats daarvan om te illustreren hoe de JSON-reactie kan worden herhaald om een interessanter resultaat te maken.
+De JSON wordt &#39;as-is&#39; gerenderd in een `pre` tag , die niet te creatief is . U kunt van CodePen veranderen om te gebruiken `resultToDom()` in plaats daarvan om te illustreren hoe de JSON-reactie kan worden herhaald om een interessanter resultaat te maken.
 
 1. Als u deze wijziging wilt aanbrengen, markeert u regel 37 en verwijdert u de opmerking uit regel 40:
 
@@ -110,7 +110,7 @@ De JSON wordt &#39;as-is&#39; weergegeven in een `pre` tag , die niet te creatie
    resultToDom(queryResult);
    ```
 
-1. Met deze functie worden alle afbeeldingen die in het JSON-antwoord zijn opgenomen, weergegeven als een `img` tag. Als de **Adventure** als de door u gemaakte inhoudsfragmenten geen afbeeldingen bevatten, kunt u proberen om te schakelen om de `aem-demo-assets/adventures-all` voortgezette vraag door lijn 25 te wijzigen:
+1. Met deze functie worden alle afbeeldingen die in het JSON-antwoord zijn opgenomen, weergegeven als een `img` -tag. Als de **Adventure** als de door u gemaakte inhoudsfragmenten geen afbeeldingen bevatten, kunt u proberen de `aem-demo-assets/adventures-all` voortgezette vraag door lijn 25 te wijzigen:
 
    ```javascript
    persistedQueryName = 'aem-demo-assets/adventures-all';

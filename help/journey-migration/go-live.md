@@ -59,7 +59,7 @@ Zoals eerder vermeld, moet u een periode voor het bevriezen van code en inhoud p
 * Hoe lang moet ik de creatie van content bevriezen?
 * Voor hoe lang zou ik mijn leveringsteam moeten vragen om op te houden toevoegend nieuwe eigenschappen?
 
-Als u de eerste vraag wilt beantwoorden, moet u rekening houden met de tijd die nodig is om proefversies uit te voeren in omgevingen waar geen productie plaatsvindt. Om de tweede vraag te beantwoorden, hebt u nauwe samenwerking tussen het team nodig dat nieuwe eigenschappen toevoegt en het team dat de code opnieuw in beweging brengt. Het doel is ervoor te zorgen alle code die aan de bestaande plaatsing wordt toegevoegd, wordt getest en, aan de tak van de wolkendiensten wordt opgesteld. Over het algemeen betekent dit dat de hoeveelheid code die vastloopt, lager is.
+Als u de eerste vraag wilt beantwoorden, moet u rekening houden met de tijd die nodig is om proefversies uit te voeren in omgevingen waar geen productie plaatsvindt. Om de tweede vraag te beantwoorden, hebt u nauwe samenwerking tussen het team nodig dat nieuwe eigenschappen toevoegt en het team dat de code opnieuw in beweging brengt. Het doel is ervoor te zorgen alle code die aan de bestaande plaatsing wordt toegevoegd, wordt getest en, aan de tak van de wolkendiensten wordt opgesteld. In het algemeen betekent dit dat de hoeveelheid code die vastloopt, lager is.
 
 Bovendien moet u plannen dat de inhoud wordt vastgezet wanneer de laatste aanvulling op de inhoud gepland is.
 
@@ -99,7 +99,7 @@ Houd er rekening mee dat de volledige inname mislukt als een van de volgende bep
 
 * Een JCR-knooppunt met een naam van meer dan 150 tekens
 * Een JCR-knooppunt dat groter is dan 16 MB
-* Willekeurige gebruiker/groep met `rep:AuthorizableID` die al aanwezig zijn op AEM as a Cloud Service
+* Elke gebruiker/groep met `rep:AuthorizableID` die al aanwezig zijn op AEM as a Cloud Service
 * Als een middel dat wordt geëxtraheerd en ingepakt, naar een ander pad wordt verplaatst op de bron of de bestemming vóór de volgende herhaling van de migratie.
 
 ## Systeemgezondheid {#asset-health}
@@ -135,7 +135,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepe
          * `*.local`
          * `publish*.adobeaemcloud.net`
          * `publish*.adobeaemcloud.com`
-* Configureer CDN, SSL en DNS.
+* Vorm CDN, SSL en DNS.
    * Als u uw eigen CDN gebruikt, ga een steunkaartje in om aangewezen het verpletteren te vormen.
       * Zie de sectie [CDN van de klant wijst naar AEM Beheerde CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) in de CDN-documentatie voor meer informatie.
       * U zult SSL en DNS volgens de documentatie van uw verkoper moeten vormen CDN.
@@ -144,7 +144,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepe
          * [Inleiding tot het beheren van SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [SSL-certificaat beheren](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Aangepaste domeinnamen (DNS) beheren
-         * Om ervoor te zorgen dat de DNS cutover geen onverwachte problemen zal introduceren, is het best om een testsubdomain tot stand te brengen om uw productieinstantie aan te sluiten alvorens u gaat-leven en een ronde van het testen van UAT doet. Dus als uw domein example.com is, kunt u een subdomain test.voorbeeld.com tot stand brengen en het op productie toepassen. Tijdens het testen van de UAT van het domein zult u dingen zoals juiste verbindingsredirection, caching, en verzender configuraties willen zoeken.
+         * Om ervoor te zorgen dat de DNS cutover geen onverwachte problemen zal introduceren, is het best om een testsubdomain tot stand te brengen om uw productieinstantie aan te sluiten alvorens u gaat-leven en een ronde van het testen van UAT doet. Dus als uw domein example.com is, kunt u een subdomein maken test.example.com en dit toepassen op productie. Tijdens het testen van de UAT van het domein zult u dingen zoals juiste verbindingsredirection, caching, en verzender configuraties willen zoeken.
          * [Inleiding tot aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [Aangepaste domeinnaam beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
@@ -153,7 +153,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepe
       * Als u zeer hoge TTL hebt, zullen de updates aan uw DNS verslag langer duren om zich te verspreiden.
 * Voer prestatie- en beveiligingstests uit die voldoen aan uw zakelijke vereisten en doelstellingen.
 * Besnoeiing over en zorg ervoor dat daadwerkelijke go-live zonder enige nieuwe plaatsing of inhoudsupdate wordt uitgevoerd.
-* Maak profielen voor gebruikersmeldingen voor Admin Consoles. Zie [Meldingsprofielen](/help/journey-onboarding/notification-profiles.md)
+* Maak profielen voor gebruikersmeldingen van Admin Consoles. Zie [Meldingsprofielen](/help/journey-onboarding/notification-profiles.md)
 
 U kunt altijd naar de lijst verwijzen als u uw taken opnieuw moet kalibreren tijdens het uitvoeren van de migratie.
 

@@ -59,19 +59,19 @@ Nadat u het nieuwe inhoudsfragment hebt opgeslagen en geopend, wordt de editor v
 
 1. In de inhoudsfragmenteditor worden de velden weergegeven die u in het geselecteerde model hebt gedefinieerd. Hier kunt u inhoud toevoegen aan elk veld om het inhoudsfragment te voltooien. Uw voortgang wordt automatisch opgeslagen.
 
-1. Een **Titel** voor uw fragment door `Tuscan Adventure`.
+1. Geef een **Titel** voor uw fragment door `Tuscan Adventure`.
 
-1. Een **Beschrijving** voor het fragment door in de volgende tekst te plakken.
+1. Geef een **Beschrijving** voor het fragment door in de volgende tekst te plakken.
 
    ```text
    Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour are rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany's natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
-1. Een **Prijs** voor uw fragment door in te voeren `$700`.
+1. Geef een **Prijs** voor uw fragment door in te voeren `$700`.
 
 1. Een **Afbeelding** dat representatief is voor de reis door te tikken of te klikken **Element toevoegen** in de **Afbeelding** veld.
 
-1. Tik of klik in het element-pop-upvenster op **Zoeken in middelen** om een bestaand element in de bibliotheek met elementen te selecteren.
+1. Tik of klik in het element-pop-upvenster op **Zoeken in middelen** om te selecteren uit een bestaand element in de bibliotheek met elementen.
 
    ![Element toevoegen](assets/do-not-localize/add-asset.png)
 
@@ -85,7 +85,7 @@ Nadat u het nieuwe inhoudsfragment hebt opgeslagen en geopend, wordt de editor v
 
 1. De geselecteerde afbeelding wordt weergegeven in het inhoudsfragment. De editor slaat de wijzigingen automatisch op.
 
-1. Tik of klik op de knop **Publiceren** in de rechterbovenhoek van de editor. Hierdoor is uw inhoudsfragment beschikbaar voor gebruik door externe apps. Selecteer vervolgens **Nu** in de vervolgkeuzelijst. U kunt ook plannen dat het later wordt gepubliceerd.
+1. Tik of klik op de knop **Publiceren** in de rechterbovenhoek van de editor. Hierdoor is uw inhoudsfragment beschikbaar voor gebruik door externe apps. Selecteer vervolgens **Nu** in de vervolgkeuzelijst. U kunt ook plannen dat de presentatie op een later tijdstip wordt gepubliceerd.
 
    ![Inhoud publiceren](assets/do-not-localize/publish.png)
 

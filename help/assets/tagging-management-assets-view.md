@@ -1,14 +1,15 @@
 ---
 title: Hoe kan ik tags beheren in de weergave Elementen?
 description: Leer hoe u tags beheert in de weergave Middelen. Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken.
-source-git-commit: bdbe47a8f06d2ec1cd75103905677fcd3955632d
+exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
 
 ---
 
-# Tags beheren in de middelenweergave {#view-assets-and-details}
+# Tags beheren in de weergave Elementen {#view-assets-and-details}
 
 
 >[!CONTEXTUALHELP]
@@ -52,7 +53,7 @@ Voer de volgende stappen uit om een naamruimte te maken:
 
 1. Ga naar `Taxonomy Management` krachtens `Settings` om de lijst met bestaande naamruimten weer te geven. U kunt ook de datum weergeven waarop het laatst is gewijzigd, de gebruiker die de naamruimte(n) heeft gewijzigd en het aantal keren dat de tag in een element wordt gebruikt.
 1. Klik op `Create Namespace`.
-1. Toevoegen `Title`, `Name`, en `Description` voor de naamruimte. De invoer die u opgeeft in het dialoogvenster `Title` veld wordt boven in de hiërarchie weergegeven. In de volgende afbeelding, bijvoorbeeld **Activiteiten** verwijst naar de titel van de naamruimte.
+1. Toevoegen `Title`, `Name`, en `Description` voor de naamruimte. De invoer die u opgeeft in het dialoogvenster `Title` veld wordt boven in de hiërarchie weergegeven. In de volgende afbeelding, bijvoorbeeld: **Activiteiten** verwijst naar de titel van de naamruimte.
 
    ![Tagbeheer](assets/tags-hierarchy.png)
 
@@ -73,7 +74,7 @@ Voer de volgende stappen uit om tags toe te voegen aan een naamruimte:
 1. Selecteer de naamruimte en klik op `Create` om de tag op het hoogste niveau onder de naamruimte te maken. Als u een subtag wilt maken onder een tag die voorkomt in een naamruimte, selecteert u de tag en klikt u op `Create`.
    ![Hiërarchie van tags](assets/hierarchy-of-tags.png)
 
-   In dit voorbeeld vertegenwoordigt de afbeelding aan de linkerkant de tag direct onder de naamruimte `automobile-four-wheeler` weergegeven in de `Path` veld. De afbeelding aan de rechterkant is een voorbeeld van subtags die binnen een tag worden toegevoegd, omdat er meer tagnamen zijn. `jeep` en `jeep-meridian`, weergegeven in de `Path` naast de naamruimte.
+   In dit voorbeeld vertegenwoordigt de afbeelding aan de linkerkant de tag direct onder de naamruimte `automobile-four-wheeler` weergegeven in het dialoogvenster `Path` veld. De afbeelding aan de rechterkant is een voorbeeld van subtags die binnen een tag worden toegevoegd, omdat er meer tagnamen zijn. `jeep` en `jeep-meridian`, weergegeven in de `Path` naast de naamruimte.
 1. Geef de titel, naam en beschrijving voor de tag op en klik op `Save`.
 
 
@@ -85,9 +86,9 @@ Voer de volgende stappen uit om tags toe te voegen aan een naamruimte:
 
 ## Labels toevoegen aan standaardlabels {#adding-tags-to-standard-tags}
 
-Niet-gestructureerde tags of de tags die geen hiërarchie hebben, worden opgeslagen onder `Standard Tags` naamruimte. Bovendien kunt u die waarde opslaan onder `Standard Tags`. U kunt deze waarden in de loop der tijd onder gestructureerde naamruimten verplaatsen. Bovendien kunt u de opdracht `Standard Tags` naamruimte als een gratis formulieritem voor trefwoorden.
+Niet-gestructureerde tags of tags zonder hiërarchie worden onder `Standard Tags` naamruimte. Bovendien kunt u die waarde opslaan onder `Standard Tags`. U kunt deze waarden in de loop der tijd onder gestructureerde naamruimten verplaatsen. Bovendien kunt u de opdracht `Standard Tags` naamruimte als een gratis formulieritem voor trefwoorden.
 
-Als u een standaardcode wilt maken, klikt u op `Create Tag` op hoofdniveau. Geef een titel, naam en beschrijving op en klik vervolgens op `Save`.
+Als u een standaardcode wilt maken, klikt u op `Create Tag` op het hoofdniveau. Geef een titel, naam en beschrijving op en klik vervolgens op `Save`.
 
 ![Labels toevoegen aan standaardcodes](assets/adding-tags-to-standard-tags.png)
 
@@ -157,7 +158,7 @@ Tags die zijn gewijzigd in de weergave Middelen, worden ook toegepast in de behe
 De volgende geavanceerde taxonomiemogelijkheden zijn momenteel niet beschikbaar in de weergave Elementen en zijn alleen toegankelijk via de beheerweergave:
 
 * **Lokalisatie:** Elke lokalisatie moet plaatsvinden in de beheerweergave.
-* **Hoofdpad:** Hoofdpaden kunnen niet worden geconfigureerd. Alle naamruimten die zijn opgeslagen in Taxonomy Management, worden weergegeven in de eigenschap Tags in de weergave Elementen.
+* **Hoofdpad:** De wegen van de wortel zijn niet configureerbaar. Alle naamruimten die zijn opgeslagen in Taxonomy Management, worden weergegeven in de eigenschap Tags in de weergave Elementen.
 * **Standaardlabels:** De standaardlabels die worden toegepast in de beheerweergave zijn zichtbaar in de middelenweergave. U kunt geen nieuwe standaardlabels toevoegen in de weergave Middelen op de pagina Asset Details. De bestaande waarden die zijn opgeslagen in Standaardcodes worden toegepast op de pagina Elementdetails.
 * **Aangepaste naamruimten:** Labels kunnen niet worden toegewezen aan aangepaste naamruimten.
 * **Referenties weergeven:** Beheerders kunnen het taggebruik zien in de weergave Middelen. Dit heeft betrekking op alle elementen die actief een tag gebruiken. Beheerders kunnen echter geen afzonderlijke elementen zien die de tag in verwijzingen gebruiken.

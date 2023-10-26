@@ -35,7 +35,7 @@ Er zijn drie verschillende soorten functionele tests in AEM as a Cloud Service.
 * [Aangepaste functionele tests](#custom-functional-testing)
 * [Aangepaste UI-tests](#custom-ui-testing)
 
-Voor alle functionele tests kunnen de gedetailleerde resultaten van de tests als `.zip` bestand met de **Buildlog downloaden** knoop in het bouwstijloverzichtsscherm als deel van [implementatieproces](/help/implementing/cloud-manager/deploy-code.md).
+Voor alle functionele tests kunnen de gedetailleerde resultaten van de tests als een `.zip` bestand met de **Buildlog downloaden** knoop in het bouwstijloverzichtsscherm als deel van [implementatieproces](/help/implementing/cloud-manager/deploy-code.md).
 
 Deze logboeken bevatten niet de logboeken van het werkelijke AEM runtimeproces. Ga voor toegang tot deze logboeken naar [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie .
 
@@ -43,16 +43,16 @@ Zowel de functionele tests van het product als de aangepaste functionele tests z
 
 ### Functioneel testen van producten {#product-functional-testing}
 
-De functionele tests van het product zijn een reeks stabiele HTTP integratietests (ITs) van kernfunctionaliteit in AEM zoals creatie en replicatietaken. Deze tests worden gehandhaafd door Adobe en zijn bedoeld om veranderingen in de code van de douanetoepassing te verhinderen worden opgesteld als het kernfunctionaliteit breekt.
+De functionele tests van het product zijn een reeks stabiele HTTP integratietests (ITs) van kernfunctionaliteit in AEM zoals creatie en replicatietaken. Deze tests worden onderhouden door Adobe en zijn bedoeld om te voorkomen dat wijzigingen in aangepaste toepassingscode worden geïmplementeerd als deze de kernfunctionaliteit verbreekt.
 
-* [Productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): Functionele tests voor producten worden automatisch uitgevoerd wanneer u nieuwe code implementeert in Cloud Manager en kunnen niet worden overgeslagen.
-* [Niet-productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): De functionele tests van het product kunnen naar keuze worden geselecteerd om te lopen wanneer u uw niet productiepijplijn uitvoert.
+* [Productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): De functionele tests van het product worden automatisch uitgevoerd wanneer u nieuwe code implementeert in Cloud Manager en kunnen niet worden overgeslagen.
+* [Niet-productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): U kunt desgewenst testen op productfuncties selecteren om te worden uitgevoerd wanneer u de niet-productiepijplijn uitvoert.
 
 De functionele tests van het product worden gehandhaafd als open-source-project. Zie [functionele producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub voor meer informatie.
 
 ### Aangepaste functionele tests {#custom-functional-testing}
 
-Terwijl het functionele testen van producten door Adobe wordt bepaald, kunt u uw eigen kwaliteitstests voor uw eigen toepassing schrijven. Dit wordt uitgevoerd als aangepaste functionele tests als onderdeel van het [productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) of optioneel [niet-productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) om de kwaliteit van uw toepassing te garanderen.
+Hoewel het testen van de productfunctionaliteit wordt gedefinieerd door Adobe, kunt u uw eigen kwaliteitstests voor uw eigen toepassing schrijven. Dit wordt uitgevoerd als aangepaste functionele tests als onderdeel van het [productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) of optioneel [niet-productiepijpleiding](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) om de kwaliteit van uw toepassing te garanderen.
 
 Het functionele testen van de douane wordt in werking gesteld zowel voor douanecodeplaatsingen als duw verbeteringen, wat het bijzonder belangrijk maakt om goede functionele tests te schrijven die AEM codeveranderingen verhinderen uw toepassingscode te breken. De aangepaste functionele teststap is altijd aanwezig en kan niet worden overgeslagen.
 
@@ -61,7 +61,7 @@ Zie [Functionele Java-tests](/help/implementing/cloud-manager/java-functional-te
 
 ### Aangepaste UI-tests {#custom-ui-testing}
 
-Het testen van de gebruikersinterface van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om voor een brede keus van taal en kaders zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden gebouwd.
+Het testen UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw toepassingen tot stand te brengen en automatisch in werking te stellen. De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om voor een brede keus van taal en kaders zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden gebouwd.
 
 Zie [Aangepaste UI-tests](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) voor meer informatie .
 

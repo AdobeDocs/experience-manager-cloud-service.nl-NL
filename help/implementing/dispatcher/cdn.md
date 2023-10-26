@@ -57,18 +57,18 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het leiden en het ri
 
 Configuratieinstructies:
 
-1. Wijs uw CDN aan de ingang van Adobe CDN als zijn oorsprongdomein. Bijvoorbeeld, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Wijs de CDN toe aan de ingangen van de Adobe CDN als zijn oorsprongdomein. Bijvoorbeeld, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Stel SNI in op de invoer van de Adobe CDN.
 1. Stel de Hostkop in op het oorspronkelijke domein. Bijvoorbeeld: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Stel de `X-Forwarded-Host` header met de domeinnaam zodat AEM de hostheader kan bepalen. Bijvoorbeeld: `X-Forwarded-Host:example.com`.
-1. Set `X-AEM-Edge-Key`. De waarde moet van Adobe komen.
+1. Set `X-AEM-Edge-Key`. De waarde moet afkomstig zijn van Adobe.
 
    * Nodig zodat Adobe CDN de bron van de verzoeken kan bevestigen en overgaan `X-Forwarded-*` kopteksten naar de AEM toepassing. Bijvoorbeeld:`X-Forwarded-For` wordt gebruikt om cliëntIP te bepalen. Zo, wordt het de verantwoordelijkheid van de vertrouwde op bezoeker (namelijk klant-beheerde CDN) om de juistheid van te verzekeren `X-Forwarded-*` kopteksten (zie de opmerking hieronder).
-   * De toegang tot de ingangen van Adobe CDN kan optioneel worden geblokkeerd wanneer een `X-AEM-Edge-Key` is niet aanwezig. Informeer Adobe als u directe toegang tot de ingangen van Adobe CDN nodig hebt (te blokkeren).
+   * De toegang tot de ingangen van de Adobe CDN kan optioneel worden geblokkeerd wanneer een `X-AEM-Edge-Key` is niet aanwezig. Informeer Adobe als u directe toegang tot de ingangen van CDN van de Adobe (moet worden geblokkeerd) nodig hebt.
 
 Zie de [Voorbeeld van CDN-leveranciersconfiguraties](#sample-configurations) sectie voor configuratievoorbeelden van belangrijke verkopers CDN.
 
-Alvorens levend verkeer goed te keuren, zou u met Adobe klantensteun moeten bevestigen dat het eind-aan-eind verkeer dat correct verplettert functioneert.
+Alvorens levend verkeer goed te keuren, zou u met klantensteun van de Adobe moeten bevestigen dat het verkeer dat van begin tot eind correct functioneert.
 
 Nadat u de `X-AEM-Edge-Key`, kunt u testen dat het verzoek correct als volgt wordt verpletterd.
 
@@ -131,7 +131,7 @@ De AEM-beheerde CDN voegt kopballen aan elk verzoek met toe:
 >
 >Als er een klant-geleide CDN is, wijzen deze kopballen op de plaats van de klantenCDN volmachtsserver eerder dan de daadwerkelijke cliënt. Daarom voor klant-beheerde CDN, zouden de geolocatiekopballen door klanten CDN moeten worden beheerd.
 
-De waarden voor de landcodes zijn de beschreven alpha-2-codes [hier](https://en.wikipedia.org/wiki/ISO_3166-1).
+De waarden voor de landcodes zijn de Alpha-2-codes die worden beschreven [hier](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 De waarden voor de continentale codes zijn:
 

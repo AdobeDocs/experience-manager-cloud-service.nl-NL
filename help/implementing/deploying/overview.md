@@ -193,7 +193,7 @@ Alle inhoudspakketten die via Cloud Manager worden geïnstalleerd (zowel verande
 
 ### Inclusief pakketten van derden {#including-third-party}
 
-Het is algemeen voor klanten om pre-gebouwde pakketten van derdebronnen zoals softwareleveranciers zoals vertaalpartners van Adobe te omvatten. De aanbeveling is om deze pakketten in een verre bewaarplaats te ontvangen en hen in verwijzing in `pom.xml`. Deze methode is mogelijk voor openbare gegevensbanken en ook voor persoonlijke gegevensbanken met wachtwoordbeveiliging, zoals beschreven in [met wachtwoord beveiligde gegevensopslagruimten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
+Het is gebruikelijk voor klanten om vooraf gebouwde pakketten van derdebronnen zoals softwareverkopers zoals de vertaalpartners van de Adobe te omvatten. De aanbeveling is om deze pakketten in een verre bewaarplaats te ontvangen en hen in verwijzing in `pom.xml`. Deze methode is mogelijk voor openbare gegevensbanken en ook voor persoonlijke gegevensbanken met wachtwoordbeveiliging, zoals beschreven in [met wachtwoord beveiligde gegevensopslagruimten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 Als het opslaan van het pakket in een externe opslagplaats niet mogelijk is, kunnen klanten in een lokale, op bestandssysteem gebaseerde Maven-opslagplaats plaatsen, die als onderdeel van het project aan SCM is toegewezen. Er wordt naar verwezen door wat er van afhangt. De gegevensopslagruimte wordt gedeclareerd in de projectpom, zoals hieronder wordt geïllustreerd:
 
@@ -263,7 +263,7 @@ Op dit moment werkt AEM as a Cloud Service niet met hulpmiddelen voor indexbehee
 
 Het publicatiemechanisme is achterwaarts compatibel met het [Java™ API&#39;s voor replicatie AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
 
-Om te ontwikkelen en te testen met replicatie met de cloud klaar AEM QuickStart, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Auteur/Publish opstelling. Als het ingangspunt voor de gebruikersinterface van de AEM-auteur is verwijderd voor de cloud, gaan gebruikers naar `http://localhost:4502/etc/replication` voor configuratie.
+Om te ontwikkelen en te testen met replicatie met de cloud klaar AEM QuickStart, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Auteur/Publish opstelling. Als het ingangspunt voor de gebruikersinterface van AEM auteur is verwijderd voor de cloud, gaan gebruikers naar `http://localhost:4502/etc/replication` voor configuratie.
 
 ## Achterwaarts Compatibele Code voor het Draaien Plaatsingen {#backwards-compatible-code-for-rolling-deployments}
 
@@ -308,7 +308,7 @@ De ondersteunde configuraties in de uitvoeringsmodus zijn:
 * **config.signer.rde** (*Is van toepassing op AEM RDE-auteurservice*)
 * **config.maker.stage** (*Is van toepassing op AEM Staging Author-service*)
 * **config.maker.prod** (*Van toepassing op AEM dienst Productieauteur*)
-* **config.publish** (*Is van toepassing op de AEM-publicatieservice*)
+* **config.publish** (*Is van toepassing op AEM publicatieservice*)
 * **config.publish.dev** (*Is van toepassing op AEM Dev Publish-service*)
 * **config.publish.rde** (*Is van toepassing op AEM RDE-publicatieservice*)
 * **config.publish.stage** (*Is van toepassing op AEM service Staging publiceren*)

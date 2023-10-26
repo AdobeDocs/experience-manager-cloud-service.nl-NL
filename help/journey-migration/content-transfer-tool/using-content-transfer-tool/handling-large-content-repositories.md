@@ -48,18 +48,18 @@ Volg de onderstaande sectie om de belangrijke overwegingen te begrijpen voordat 
 
 * Het lokale systeem moet vrije ruimte hebben strikt groter dan 1/256 grootte van de brondatastore. Als de datastore bijvoorbeeld 3 terabytes groot is, moet er een vrije ruimte van meer dan 11,72 GB aanwezig zijn in de `crx-quickstart/cloud-migration` -map op de bron zodat AzCopy kan werken. Het bronsysteem moet minstens 1 GB vrije ruimte hebben. Vrije ruimte kan worden verkregen door `df -h` op Linux®-instanties en opdracht dir in de Windows-instanties.
 
-* Telkens wanneer de extractie wordt uitgevoerd met AzCopy ingeschakeld, wordt de volledige datastore van het bestand afgevlakt en naar de container voor cloudmigratie gekopieerd. Als uw migratieset kleiner is dan de grootte van uw datastore, is de extractie van AzCopy niet de optimale benadering.
+* Telkens wanneer de extractie wordt uitgevoerd met AzCopy ingeschakeld, wordt de volledige bestandsdatastore afgevlakt en naar de container voor cloudmigratie gekopieerd. Als uw migratieset kleiner is dan de grootte van uw datastore, is de extractie van AzCopy niet de optimale benadering.
 
 * Als AzCopy eenmaal is gebruikt om over de bestaande datastore te kopiëren, schakelt u deze uit voor delta- of top-up extracties.
 
 ## AzCopy instellen als een stap vóór kopiëren {#setting-up-pre-copy-step}
 
 >[!NOTE]
->Vanaf versie 2.0.16 van CTT wordt de precoy-instelling automatisch uitgevoerd wanneer de bundel is geïnstalleerd. Als de ingestelde migratie groter is dan 200 GB, wordt in het extractieproces automatisch de functie voor precopy gebruikt. Het bestand azcopy.config wordt gemaakt in de map crx-quickstart/cloud-migration/. Controleer de onderstaande secties als u de configuratie van het bestand handmatig wilt bijwerken.
+>Vanaf versie 2.0.16 van CTT wordt de precoy-instelling automatisch uitgevoerd wanneer de bundel is geïnstalleerd. Als de ingestelde migratie groter is dan 200 GB, wordt in het extractieproces automatisch de functie voor precopy gebruikt. Het bestand azcopy.config wordt gemaakt in de map crx-quickstart/cloud-migration/. Als u de configuratie van het bestand handmatig wilt bijwerken, bekijkt u de onderstaande secties.
 
 Volg deze sectie zodat u kunt leren hoe u opstelling om AzCopy als pre-exemplaarstap met het Hulpmiddel van de Overdracht van de Inhoud te gebruiken om de inhoud aan AEM as a Cloud Service te migreren:
 
-### 0. Totale grootte van alle inhoud in de gegevensopslag bepalen {#determine-total-size}
+### 0. Bepaal de totale grootte van alle inhoud in de gegevensopslag {#determine-total-size}
 
 Het is om twee redenen belangrijk om de totale grootte van de gegevensopslag te bepalen:
 
@@ -86,7 +86,7 @@ U kunt het tabblad Metriek van de container gebruiken om de grootte van alle inh
 * Voor Vensters, gebruik het dir bevel op de datastore folder om zijn grootte te krijgen:
   `dir /a/s [location of datastore]`.
 
-### 1. AzCopy installeren {#install-azcopy}
+### 1. Installeer AzCopy {#install-azcopy}
 
 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) is een opdrachtregelprogramma van Microsoft® dat beschikbaar moet zijn in de broninstantie om deze functie in te schakelen.
 
@@ -95,7 +95,7 @@ Kortom, u wilt het binaire getal Linux® x86-64 downloaden van de [AzCopy-docume
 >[!IMPORTANT]
 >Noteer waar u het binaire bestand hebt geplaatst, omdat u het volledige pad naar het binaire bestand in een latere stap nodig hebt.
 
-### 2. CTT-release (Content Transfer Tool) installeren met AzCopy-ondersteuning {#install-ctt-azcopy-support}
+### 2. Installeer de CTT-release (Content Transfer Tool) met ondersteuning voor AzCopy {#install-ctt-azcopy-support}
 
 >[!IMPORTANT]
 >De laatst vrijgegeven versie van CTT moet worden gebruikt.
@@ -104,7 +104,7 @@ AzCopy-ondersteuning voor Amazon S3, Azure Blob Storage en File Data Store is in
 U kunt de nieuwste versie van CTT downloaden van de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portaal.
 Er zij op gewezen dat alleen versies 2.0.0 en hoger worden ondersteund en dat het raadzaam is de meest recente versie te gebruiken.
 
-### 3. Een bestand azcopy.config configureren {#configure-azcopy-config-file}
+### 3. Configureer een bestand azcopy.config {#configure-azcopy-config-file}
 
 Op de bron AEM instantie, in `crx-quickstart/cloud-migration`, maakt u een bestand met de naam `azcopy.config`.
 
@@ -196,12 +196,12 @@ Alle blobs die vóór de fout zijn gekopieerd, worden automatisch door AzCopy ov
 Wanneer AzCopy voor source file dataStore loopt, zou u berichten als deze in de logboeken moeten zien erop wijzen die dat de omslagen worden verwerkt:
 `c.a.g.s.m.c.a.AzCopyFileSourceBlobPreCopy - [AzCopy pre-copy] Processing folder (1/24) crx-quickstart/repository/datastore/5d`
 
-### 5. Inschakelen met AzCopy {#ingesting-azcopy}
+### 5. Bijwerken met AzCopy {#ingesting-azcopy}
 
 Zie [Inhoud in doel invoegen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
 voor algemene informatie over het opnemen van inhoud in het doel via CAM (Cloud Acceleration Manager), waaronder instructies over het al dan niet gebruiken van AzCopy (pre-copy) in het dialoogvenster Nieuwe inname.
 
-Als u AzCopy tijdens het gebruik wilt gebruiken, moet u voor Adobe een AEM as a Cloud Service versie gebruiken die versie 2021.6.5561 of hoger is.
+Als u AzCopy tijdens het gebruik wilt gebruiken, moet u beschikken over een AEM as a Cloud Service versie die ten minste versie 2021.6.5561 is.
 
 Zie de lijst Ingestietaken in het beheer van de versnelling van de cloud en de logboeken van de opname, zodat u de voortgang kunt zien. De logboekingangen met betrekking tot de succesvolle taken AzCopy verschijnen als volgt (die voor sommige verschillen) toestaan. Door de logboeken af en toe te controleren, kunt u vroegtijdig op problemen worden gewezen, en kunt u een snelle oplossing voor om het even welke problemen vinden.
 

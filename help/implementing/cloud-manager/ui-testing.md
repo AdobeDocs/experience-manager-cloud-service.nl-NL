@@ -25,7 +25,7 @@ AEM biedt een geïntegreerde suite [Kwaliteitspates van Cloud Manager](/help/imp
 
 UI-tests worden verpakt in een Docker-afbeelding, zodat u een ruime keuze kunt maken in taal en frameworks (zoals Cypress, Selenium, Java en Maven en JavaScript). Bovendien, kan een UI testproject gemakkelijk door te gebruiken worden geproduceerd [het AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
-Adobe moedigt het gebruik van Cypress aan, aangezien het in real time herladen en automatisch wachten aanbiedt, die hulp tijd bespaart en productiviteit tijdens het testen verbetert. Cypress biedt ook een eenvoudige en intuïtieve syntaxis, waardoor het gemakkelijk is om te leren en te gebruiken, zelfs voor mensen die nog niet aan tests hebben gewerkt.
+Adobe stimuleert het gebruik van Cypress, omdat deze in real time opnieuw laden en automatisch wachten biedt, wat tijd bespaart en de productiviteit tijdens het testen verbetert. Cypress biedt ook een eenvoudige en intuïtieve syntaxis, waardoor het gemakkelijk is om te leren en te gebruiken, zelfs voor mensen die nog niet aan tests hebben gewerkt.
 
 UI-tests worden uitgevoerd als onderdeel van een specifieke kwaliteitspoort voor elke Cloud Manager-pijplijn met een [**Aangepaste UI-tests** stap](/help/implementing/cloud-manager/deploy-code.md) in [productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) of optioneel [niet-productieleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Om het even welke tests van de UI met inbegrip van regressie en nieuwe functionaliteiten toelaten om fouten te ontdekken en te melden.
 
@@ -33,9 +33,9 @@ In tegenstelling tot aangepaste functionele tests, die HTTP-tests zijn die in Ja
 
 >[!TIP]
 >
->Adobe raadt u aan Cypress te gebruiken voor het testen van de gebruikersinterface, volgens de code in het dialoogvenster [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+>Adobe raadt aan Cypress te gebruiken voor het testen van de gebruikersinterface, volgens de code in het [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 > 
->Adobe biedt ook voorbeelden van UI-testmodules die zijn gebaseerd op JavaScript met WebdriverIO (zie [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) en Java met WebDriver (zie [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
+>Adobe biedt ook UI-testmodulevoorbeelden op basis van JavaScript met WebdriverIO (zie [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) en Java met WebDriver (zie [AEM opslagplaats voor testmonsters](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
 
 ## Aan de slag met gebruikersinterfacetests {#get-started-ui-tests}
 
@@ -199,7 +199,7 @@ Als u de voorbeelden gebruikt die door Adobe worden verstrekt:
   fi
   ```
 
-* Voor de Cypress- en Java Selenium-testmonsters die door Adobe worden geleverd, is de aanmeldingsmarkering al ingesteld.
+* Voor de Cypress- en Java Selenium-testmonsters die door de Adobe worden geleverd, is de aanmeldingsmarkering al ingesteld.
 
 ## Tests voor gebruikersinterface schrijven {#writing-ui-tests}
 
@@ -222,7 +222,7 @@ De volgende omgevingsvariabelen worden bij uitvoering aan de Docker-afbeelding d
 | `REPORTS_PATH` | `/usr/src/app/reports` | Het pad waar het XML-rapport van de testresultaten moet worden opgeslagen | Alles |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | De URL waarnaar het bestand moet worden geüpload om deze toegankelijk te maken voor het testframework | Alles |
 
-De Adobe testmonsters verstrekken helperfuncties om tot de configuratieparameters toegang te hebben:
+De testmonsters van de Adobe verstrekken helperfuncties om tot de configuratieparameters toegang te hebben:
 
 * Cypress: de standaardfunctie gebruiken `Cypress.env('VARIABLE_NAME')`
 * JavaScript: Zie de [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) module
@@ -255,11 +255,11 @@ Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geï
 | CPU | 2.0 | Hoeveelheid CPU-tijd gereserveerd per testuitvoering |
 | Geheugen | 1Gi | Hoeveelheid aan de test toegewezen geheugen, waarde in bytes |
 | Time-out | 30m | De duur waarna de test wordt beëindigd. |
-| Aanbevolen duur | 15m | Adobe raadt aan de tests te schrijven om deze tijd niet langer te laten duren. |
+| Aanbevolen duur | 15m | De Adobe beveelt aan de tests te schrijven om deze tijd niet langer te laten duren. |
 
 >[!NOTE]
 >
-> Als u meer middelen nodig hebt, maakt u een kwestie voor de klantenservice en beschrijft u uw gebruikscase. Adobe zal uw verzoek beoordelen en de juiste hulp bieden.
+> Als u meer middelen nodig hebt, maakt u een kwestie voor de klantenservice en beschrijft u uw gebruikscase. De Adobe zal uw verzoek beoordelen en de juiste hulp bieden.
 
 ## Seleniumspecifieke details
 
@@ -276,7 +276,7 @@ Alvorens de tests beginnen, is het de verantwoordelijkheid van het beeld van de 
 
 Zodra het statuseindpunt van Selenium met een positieve reactie beantwoordt, kunnen de tests beginnen.
 
-De Adobe UI teststeekproeven behandelen dit met het manuscript `wait-for-grid.sh`, die wordt uitgevoerd bij het opstarten van Docker en de daadwerkelijke testuitvoering pas begint wanneer het net klaar is.
+De teststeekproeven UI van de Adobe behandelen dit met het manuscript `wait-for-grid.sh`, die wordt uitgevoerd bij het opstarten van Docker en de daadwerkelijke testuitvoering pas begint wanneer het net klaar is.
 
 ### Schermafbeeldingen en video&#39;s vastleggen {#capture-screenshots}
 
@@ -300,7 +300,7 @@ Tests moeten soms bestanden uploaden naar de toepassing die wordt getest. Om de 
    * Het formulier met meerdere delen moet één bestandsveld hebben.
    * Dit is gelijk aan `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
    * Raadpleeg de documentatie en bibliotheken van de programmeertaal die in het beeld van de Docker wordt gebruikt om te weten hoe te om zulk een HTTP- verzoek uit te voeren.
-   * De monsters van de Adobe test verstrekken helperfuncties voor het uploaden van dossiers:
+   * De testmonsters van de Adobe verstrekken helperfuncties voor het uploaden van dossiers:
       * JavaScript: Zie de [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) gebruiken.
       * Java: Zie de [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) klasse.
 1. Als het uploaden is gelukt, retourneert de aanvraag een `200 OK` reactie van het type `text/plain`.

@@ -59,7 +59,7 @@ In de editor van het inhoudsfragmentmodel configureert u de gegevenstypen en eig
 >
 >Het is belangrijk om de noemende schema&#39;s in de volgende instructies te volgen omdat deze specifieke namen in recentere modules worden bedoeld.
 
-1. Sleep een **Tekst met één regel** veld van **Gegevenstypen** aan de rechterkant van de editor en zet deze neer op het model Inhoudsfragment.
+1. Sleep een **Tekst met één regel** veld van de **Gegevenstypen** aan de rechterkant van de editor en zet deze neer op het model Inhoudsfragment.
 
 1. Wanneer een gegevenstype is geplaatst, wordt de **Gegevenstypen** automatisch gewijzigd in **Eigenschappen** , waarin u de details kunt definiëren van het gegevenstype dat u hebt geplaatst. Voor dit eerste gebied, wilt u de titel van de reis of het avontuur opslaan. Voer de volgende eigenschappen in.
 

@@ -22,7 +22,7 @@ Het is mogelijk dat in uw organisatie verschillende afdelingen verschillende asp
 
 Digitaal bestuur begint met uitzoeken wie verantwoordelijk is voor wat en wie die digitaal gerichte baan doet. Mogelijk moet u een aantal strategische aannemers maken om de benodigde vaardigheden toe te voegen. Een nog grotere uitdaging is het aansturen van een cultuurverschuiving — het opbouwen van brede steun voor de nieuwe technologie en het helpen van mensen om gewend te raken aan nieuwe manieren om dingen te doen. Een belangrijk onderdeel van die inspanning is het creëren van een digitale gemeenschap, die mensen van elkaar laat leren en steunen.
 
-Momenteel is het belangrijk dat de juiste mensen in de juiste banen worden gezet om uw Adobe Experience Manager-implementatie te helpen stimuleren. Voor elk kernproduct — Experience Manager Sites en Experience Manager Assets — heeft Adobe een lijst van rollen verstrekt u moet vullen, samen met de vaardigheden, de niveaus van deskundigheid, en attributen die mensen in de diverse rollen effectief maken.
+Momenteel is het belangrijk dat de juiste mensen in de juiste banen worden gezet om uw Adobe Experience Manager-implementatie te helpen stimuleren. Voor elk kernproduct — Experience Manager Sites en Experience Manager Assets — heeft de Adobe een lijst van rollen verstrekt u moet vullen, samen met de vaardigheden, de niveaus van deskundigheid, en attributen die mensen in de diverse rollen effectief maken.
 
 Uw taak deze week is om beide lijsten met uw implementatieteam te evalueren en ervoor te zorgen dat u in elke rol personen met relevante kwalificaties hebt.
 
@@ -33,7 +33,7 @@ Een winnend bemanningsteam heeft negen mensen op de juiste plaatsen nodig — ne
 | Rol | Vaardigheden | Capaciteitsniveau | Kwaliteit |
 |--- |--- |--- |--- |
 | Projectmanager | PMP-certificering, eenvoudige certificering, ervaring met risicobeheer | Expert | Eerlijk, consistent, verantwoordelijk, georganiseerd, positief, acceptabel, bereid om verandering te omarmen |
-| Master scrubben | ScrumMaster-certificering, mobiele certificering, ervaring met faciliteren | Expert | Consistent, creatief |
+| Scrumstramien | ScrumMaster-certificering, mobiele certificering, ervaring met faciliteren | Expert | Consistent, creatief |
 | Eigenaar van product | Gelijke certificering, diepgaand inzicht in bedrijfsbehoeften | Expert | Evenwichtig, zeker |
 | IT-hoofden voor beveiliging, infrastructuur, tools | CISM-certificering, Adobe Experience Manager Component Developer-certificering | Expert | Gedetailleerd |
 | Strategisten/Power-gebruikers | Kennis in Adobe Experience Manager Sites | Melding aan expert | Gelijkaardig, nieuwsgierig, grondig, open, bereid om verandering te omarmen, samenwerkend |
@@ -59,7 +59,7 @@ Mogelijk hebt u al de meeste mensen die u nodig hebt om een geslaagde Adobe Expe
 | Rol | Vaardigheden | Capaciteitsniveau | Kwaliteit |
 |--- |--- |--- |--- |
 | Projectmanager | PMP-certificering, eenvoudige certificering, ervaring met risicobeheer | Expert | Eerlijk, consistent, verantwoordelijk, georganiseerd, positief, acceptabel, bereid om verandering te omarmen |
-| Master scrubben | ScrumMaster-certificering, mobiele certificering, ervaring met faciliteren | Expert | Consistent, creatief |
+| Scrumstramien | ScrumMaster-certificering, mobiele certificering, ervaring met faciliteren | Expert | Consistent, creatief |
 | Eigenaar van product | Gelijke certificering, diepgaand inzicht in bedrijfsbehoeften | Expert | Evenwichtig, zeker |
 | IT-hoofden voor beveiliging, infrastructuur, tools | CISM-certificering, Adobe Experience Manager Component Developer-certificering | Expert | Gedetailleerd |
 | Strategisten/Power-gebruikers | Kennis in Adobe Experience Manager Sites | Melding aan expert | Gelijkaardig, nieuwsgierig, grondig, open, bereid om verandering te omarmen, samenwerkend |

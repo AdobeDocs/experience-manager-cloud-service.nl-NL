@@ -26,7 +26,7 @@ Zie [Het vormen van Uw CI-CD Pijpleiding](/help/implementing/cloud-manager/confi
 
 ## Codekwaliteitsregels {#understanding-code-quality-rules}
 
-Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan bepaalde kwaliteitscriteria voldoet. Dit wordt geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met OakPAL. Er zijn meer dan 100 regels, die generieke regels van Java en AEM-specifieke regels combineren. Sommige AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld zoals [aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan bepaalde kwaliteitscriteria voldoet. Dit wordt geïmplementeerd door een combinatie van SonarQube en inhoudspakketonderzoek met behulp van OakPAL. Er zijn meer dan 100 regels, die generieke regels van Java en AEM-specifieke regels combineren. Sommige AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld zoals [aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ De volgende tabel geeft een overzicht van de classificaties en foutdrempels voor
 
 Het kwaliteitscontroleproces is niet perfect en zal soms ten onrechte problemen identificeren die eigenlijk niet problematisch zijn. Dit wordt bedoeld als a **vals positief**.
 
-In deze gevallen kan de broncode worden geannoteerd met de standaard-Java `@SuppressWarnings` annotatie die de regel-id opgeeft als het annotatiekenmerk. Bijvoorbeeld, één gemeenschappelijk vals positief is dat de regel SonarQube om hardcoded wachtwoorden te ontdekken agressief kan zijn over hoe een hard - gecodeerd wachtwoord wordt geïdentificeerd.
+In deze gevallen kan de broncode worden geannoteerd met de standaard-Java `@SuppressWarnings` annotatie die regel-id opgeeft als annotatiekenmerk. Bijvoorbeeld, één gemeenschappelijk vals positief is dat de regel SonarQube om hardcoded wachtwoorden te ontdekken agressief kan zijn over hoe een hard - gecodeerd wachtwoord wordt geïdentificeerd.
 
 De volgende code is vrij gemeenschappelijk in een AEM project, dat code heeft om met één of andere externe dienst te verbinden.
 

@@ -108,7 +108,7 @@ Een slimme verzameling maken:
 
 1. Selecteren **[!UICONTROL Public Collection]** als u alle gebruikers nodig hebt om toegang te krijgen tot de verzameling. Selecteren **[!UICONTROL Private Collection]** als u een beperkte groep gebruikers nodig hebt om toegang te krijgen tot de verzameling.
 
-1. Klikken **[!UICONTROL Create]** om de slimme verzameling te maken.
+1. Klikken **[!UICONTROL Create]** de slimme verzameling maken.
 
 ### Een slimme verzameling bewerken {#edit-smart-collection}
 
@@ -158,7 +158,7 @@ Metagegevens van verzamelingen weergeven en bewerken:
 
 ## Koppelingen voor verzamelingen delen {#share-collection-links}
 
-[!DNL Assets view] kunt u een koppeling genereren en verzamelingen en middelen delen in verzamelingen met externe belanghebbenden die geen toegang hebben tot de [!DNL Assets view] toepassing. U kunt een vervaldatum voor de verbinding bepalen en dan het delen met anderen gebruikend uw aangewezen communicatie methode zoals e-mail of overseinendiensten. Ontvangers van de koppeling kunnen een voorbeeld van de elementen bekijken en deze downloaden.
+[!DNL Assets view] kunt u een koppeling genereren en verzamelingen en middelen delen in verzamelingen met externe belanghebbenden die geen toegang hebben tot [!DNL Assets view] toepassing. U kunt een vervaldatum voor de verbinding bepalen en dan het delen met anderen gebruikend uw aangewezen communicatie methode zoals e-mail of overseinendiensten. Ontvangers van de koppeling kunnen een voorbeeld van de elementen bekijken en deze downloaden.
 
 ![Koppeling voor elementen delen](assets/share-link-collections.png)
 
@@ -172,7 +172,7 @@ Een verzameling downloaden:
 
 1. Selecteer de verzameling die u wilt downloaden en klik op **[!UICONTROL Download]**.
 
-1. Op de [!UICONTROL Downloading Asset] dialoogvenster, klikt u op **[!UICONTROL OK]**.
+1. Op de [!UICONTROL Downloading Asset] klikt u op **[!UICONTROL OK]**.
 
 De verzameling wordt als een ZIP-bestand gedownload op uw lokale computer.
 
