@@ -2,9 +2,9 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
+source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3453'
 ht-degree: 0%
 
 ---
@@ -227,7 +227,7 @@ when:
 
 ### Handelingsstructuur {#action-structure}
 
-Opgegeven door `action` veld dat een tekenreeks kan zijn die het handelingstype opgeeft (toestaan, blokkeren, vastleggen) en standaardwaarden aanneemt voor alle andere opties of een object waarvoor regeltype is gedefinieerd via `type` vereist veld en andere opties die op dat type van toepassing zijn.
+An `action` Dit kan een tekenreeks zijn die de handeling opgeeft (toestaan, blokkeren of vastleggen), of een object dat bestaat uit zowel het handelingstype (toestaan, blokkeren of vastleggen) als opties zoals wafFlags en/of status.
 
 **Typen handelingen**
 
@@ -278,6 +278,8 @@ De `wafFlags` eigenschap, die kan worden gebruikt in de licentiebare WAF-regels 
 * De configuratiedossiers zouden geen geheimen moeten bevatten aangezien zij door iedereen leesbaar zouden zijn die toegang tot de git bewaarplaats heeft.
 
 * IP de Lijsten van gewenste personen die in de Manager van de Wolk worden bepaald hebben belangrijkheid over de Regels van de Filters van het Verkeer.
+
+* De de regelovereenkomsten van WAF verschijnen slechts in CDN- logboeken voor CDN mist en passen, niet klappen.
 
 ## Voorbeelden van regels {#examples}
 
@@ -491,7 +493,7 @@ De regels gedragen zich als volgt:
 * Als WAF vergunning en toegelaten is, `waf` in het kenmerk worden alle WAF-markeringen (bijvoorbeeld SQLI) weergegeven die zijn gedetecteerd, ongeacht of de WAF-markeringen in een regel zijn vermeld. Dit moet inzicht verschaffen in mogelijke nieuwe regels die moeten worden gedeclareerd.
 * Als er geen door de klant gedeclareerde regels overeenkomen en er geen waf-regels overeenkomen, wordt de `rules` eigenschap is leeg.
 
-In het algemeen, verschijnen de passende regels in de logboekingang voor alle verzoeken aan CDN, ongeacht of het een CDN hit, pas, of mis is. Nochtans, verschijnen de regels van WAF in de logboekingang slechts voor verzoeken aan CDN die als CDN missen of overgaan, maar niet CDN- klappen worden beschouwd.
+Zoals eerder vermeld, verschijnen de de regelovereenkomsten van WAF slechts in CDN- logboeken voor CDN missen en overgaan, niet klappen.
 
 In het onderstaande voorbeeld ziet u een voorbeeld `cdn.yaml` en twee CDN-logitems:
 
