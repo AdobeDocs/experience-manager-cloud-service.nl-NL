@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6e834244f3de7e615df12b137f2ae90a11e64ad0
+source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -68,17 +68,12 @@ Bekijk de video Overzicht van de release van oktober 2023 voor een overzicht van
 
 ### Nieuwe functies in [!DNL Experience Manager Forms] {#forms-features}
 
-* **Aangepaste eigenschappen voor Adaptive Forms**: U kunt aangepaste kenmerken (sleutelwaardeparen) koppelen aan een formuliersjabloon of aan een adaptieve formuliercomponent, zodat formulierontwikkelaars dynamisch formuliergedrag kunnen aanbieden dat wordt aangepast op basis van de waarden van deze aangepaste kenmerken. Ontwikkelaars kunnen bijvoorbeeld verschillende uitvoeringen van een Forms-component zonder koptekst maken op mobiele apparaten, desktops of webplatforms, op basis van de waarden van aangepaste kenmerken. Hierdoor wordt de gebruikerservaring aanzienlijk verbeterd voor een groot aantal apparaten.
+* **[Aangepaste eigenschappen voor Adaptive Forms](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**: U kunt aangepaste kenmerken (sleutelwaardeparen) koppelen aan een formuliersjabloon of aan een adaptieve formuliercomponent, zodat formulierontwikkelaars dynamisch formuliergedrag kunnen aanbieden dat wordt aangepast op basis van de waarden van deze aangepaste kenmerken. Ontwikkelaars kunnen bijvoorbeeld verschillende uitvoeringen van een Forms-component zonder koptekst maken op mobiele apparaten, desktops of webplatforms, op basis van de waarden van aangepaste kenmerken. Hierdoor wordt de gebruikerservaring aanzienlijk verbeterd voor een groot aantal apparaten.
 
 * **Thema&#39;s en sjablonen**: Kickstart uw formulierontwerpproces met onze nieuwe thema&#39;s en sjablonen, speciaal ontworpen voor ervaren professionals en nieuwe auteurs van formulieren. Dankzij deze nauwgezette thema&#39;s en sjablonen, die naadloos zijn gebouwd met Adaptive Forms Core Components, kunt u snel formulieren maken voor veelgebruikte toepassingen.
 
   ![Sjablonen uit de keuzelijst](/help/forms/assets/form-templates-ootb.png)
 
-### Functies voor pre-release beschikbaar in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
-
-* **Forms verzenden naar Microsoft SharePoint-lijst**: AEM Forms biedt een OOTB-integratie voor het rechtstreeks verzenden van formuliergegevens naar SharePoint List, zodat u de mogelijkheden van SharePoint List kunt benutten.
-
-  >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 ### Programma voor vroegtijdige adoptie {#forms-early-adopter}
 
