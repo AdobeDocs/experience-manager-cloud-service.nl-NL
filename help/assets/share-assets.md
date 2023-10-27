@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 5540b7aa03a384fe613abe9b32cfbf6da2268b64
+source-git-commit: 177021106fc67e67a8cd6645a6684185331dd6f4
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 1%
+source-wordcount: '1303'
+ht-degree: 2%
 
 ---
 
@@ -21,39 +21,11 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen te delen van [!DNL Experience Manager Assets] als [!DNL Cloud Service]:
 
-* [Delen als koppeling](#sharelink).
+* [Delen als koppeling](#sharelink)
 * [Elementen downloaden](/help/assets/download-assets-from-aem.md) en delen afzonderlijk.
 * Delen met [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 * Delen met [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
 * Delen met [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
-
-## Vereisten {#prerequisites}
-
-U hebt beheerdersrechten nodig voor [configureren van instellingen voor het delen van elementen als een koppeling](#config-link-share-settings).
-
-## Instellingen voor gedeelde koppelingen configureren {#config-link-share-settings}
-
-[!DNL Experience Manager Assets] staat u toe om de standaardmontages van het verbindingsaandeel te vormen.
-
-1. Klik op de knop [!DNL Experience Manager] logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets Configuration]** > **[!UICONTROL Link Share]**.
-1. Begininstellingen:
-
-   * **Inclusief originelen:**
-
-      * Selecteren `Select Include Originals` om de `Include Originals` in het dialoogvenster voor het delen van koppelingen.
-      * Geef het gedrag op door de juiste optie te kiezen om het `Include Originals` bewerkbaar, alleen-lezen of verborgen.
-   * **Inclusief uitvoeringen:**
-      * Selecteren `Select Include Renditions` om de `Include Renditions` in het dialoogvenster voor het delen van koppelingen.
-      * Selecteer het gedrag door de juiste optie te kiezen om het `Include Renditions` bewerkbaar, alleen-lezen of verborgen.
-
-1. Geef de standaardgeldigheidsperiode op voor de koppeling in het dialoogvenster `Validity Period` in het veld `Expiration date` sectie.
-
-1. **[!UICONTROL Link share]** in de actiebalk:
-   * Alle gebruikers met `jcr:modifyAccessControl` machtigingen kunnen de [!UICONTROL Link share] -optie. Het is standaard zichtbaar voor alle beheerders. De [!UICONTROL Link share] Deze knop is standaard zichtbaar voor iedereen. U kunt configureren om deze optie alleen voor de gedefinieerde groepen weer te geven of u kunt deze optie ook van specifieke groepen weigeren. Selecteren `Allow only for groups` als u specifieke groepen wilt toestaan om `Share Link` -optie. Selecteren `Deny from groups` de `Share Link` van specifieke groepen. Als u een van deze opties hebt geselecteerd, geeft u de groepnamen op met `Select Groups` veld om de groepnamen toe te voegen die u moet toestaan of weigeren.
-
-Voor instellingen met betrekking tot e-mailconfiguratie gaat u naar [Documentatie voor e-mailservice](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
-
-![E-mailservice configureren](config-email-service.png)
 
 ## Elementen delen als koppeling {#sharelink}
 
@@ -70,12 +42,11 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 Er zijn twee manieren om de elementen te delen met behulp van de functie voor het delen van koppelingen:
 
-1. Een gedeelde koppeling genereren, [de elementkoppeling kopiëren en delen](#copy-and-share-assets-link) met andere gebruikers.
-1. Een gedeelde koppeling genereren en [de elementkoppeling via e-mail delen](#share-assets-link-through-email). U kunt de standaardwaarden wijzigen, zoals de vervaldatum en -tijd, en het downloaden van de oorspronkelijke elementen en de uitvoeringen toestaan. U kunt e-mail naar meerdere gebruikers verzenden door hun e-mailadres toe te voegen.
+1. Een gedeelde koppeling genereren, [de elementkoppeling kopiëren en delen](#copy-and-share-assets-link) met andere gebruikers. De standaardvervaltijd van de verbinding is één dag. U kunt de vervaltijd niet wijzigen wanneer u de gekopieerde koppeling deelt met andere gebruikers.
 
-   ![Dialoogvenster Delen van koppeling](assets/share-link.png)
+1. Een gedeelde koppeling genereren en [de elementkoppeling via e-mail delen](#share-assets-link-through-email). In dit geval kunt u de standaardwaarden wijzigen, zoals de vervaldatum en -tijd, en het downloaden van de oorspronkelijke elementen en de uitvoeringen toestaan. U kunt e-mail naar meerdere gebruikers verzenden door hun e-mailadres toe te voegen.
 
-In beide gevallen kunt u de standaardwaarden wijzigen, zoals de vervaldatum en -tijd, en het downloaden van de oorspronkelijke elementen en de uitvoeringen toestaan.
+   ![Dialoogvenster Delen van koppeling](assets/link-sharing-dialog.png)
 
 ### De elementkoppeling kopiëren en delen{#copy-and-share-asset-link}
 
@@ -84,9 +55,6 @@ Elementen delen als een openbare URL:
 1. Aanmelden bij [!DNL Experience Manager Assets] en navigeer naar **[!UICONTROL Files]**.
 1. Selecteer de elementen of map met elementen. Klik **[!UICONTROL Share Link]** op de werkbalk.
 1. De **[!UICONTROL Link Sharing]** wordt weergegeven met een koppeling naar automatisch gegenereerde elementen in het dialoogvenster **[!UICONTROL Share Link]** veld.
-1. Stel de vervaldatum van de gedeelde koppeling naar wens in.
-1. Onder **[!UICONTROL Link Settings]**, in- of uitschakelen `Include Originals` of `Include Renditions` om een van beide op te nemen of uit te sluiten. U moet ten minste de optie kiezen.
-1. De namen van de geselecteerde elementen worden weergegeven in de rechterkolom van het dialoogvenster [!DNL Share Link] in.
 1. Kopieer de elementkoppeling en deel deze met de gebruikers.
 
 ### Koppeling met middelen delen via e-mailkennisgeving {#share-assets-link-through-email}
@@ -96,7 +64,7 @@ Elementen delen via e-mail:
 1. Selecteer de elementen of map met elementen. Klik **[!UICONTROL Share Link]** op de werkbalk.
 1. De **[!UICONTROL Link Sharing]** wordt weergegeven met een koppeling naar automatisch gegenereerde elementen in het dialoogvenster **[!UICONTROL Share Link]** veld.
 
-   * Typ in het vak E-mailadres het e-mailadres van de gebruiker met wie u de koppeling wilt delen. U kunt de koppeling delen met meerdere gebruikers. Als de gebruiker lid is van uw organisatie, selecteert u het e-mailadres in de suggesties in de vervolgkeuzelijst. Typ in het tekstveld E-mailadres het e-mailadres van de gebruiker met wie u de koppeling wilt delen en klik op [!UICONTROL Enter]. U kunt de koppeling delen met meerdere gebruikers.
+   * Typ in het vak E-mailadres de e-mailadres van de gebruiker met wie u de koppeling wilt delen. U kunt de koppeling delen met meerdere gebruikers. Als de gebruiker lid is van uw organisatie, selecteert u de desbetreffende e-mailadres in de suggesties in de vervolgkeuzelijst. Als de gebruiker extern is, typt u de volledige e-mailid en drukt u op **[!UICONTROL Enter]**; de e-mailadres wordt toegevoegd aan de lijst met gebruikers.
 
    * In de **[!UICONTROL Subject]** Typ een onderwerp om het doel van de gedeelde elementen op te geven.
    * In de **[!UICONTROL Message]** Typ indien nodig een bericht.
@@ -121,11 +89,11 @@ Elke gebruiker die toegang heeft tot de koppeling voor gedeelde elementen, kan d
 
   ![Downloaden van wachtrij](assets/queue-download.png)
 
-* Klik tijdens het voorbereiden van het downloadbestand op **[!UICONTROL Download Inbox]** om de status van uw download weer te geven. Voor grote downloads klikt u op de knop **[!UICONTROL Refresh]** om de status bij te werken.
+* Klik tijdens het voorbereiden van het downloadbestand op de knop **[!UICONTROL Download Inbox]** om de status van uw download weer te geven. Voor grote downloads klikt u op de knop **[!UICONTROL Refresh]** om de status bij te werken.
 
   ![Postvak IN downloaden](assets/link-sharing-download-inbox.png)
 
-* Als de verwerking is voltooid, klikt u op **[!UICONTROL Download]** om het ZIP-bestand te downloaden.
+* Als de verwerking is voltooid, klikt u op de knop **[!UICONTROL Download]** om het ZIP-bestand te downloaden.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -223,7 +191,7 @@ De verschillende opties om de activa te delen vereisen specifieke configuratie e
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Als u de URL wilt genereren voor elementen die u met gebruikers wilt delen, gebruikt u het dialoogvenster Koppeling delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share` de locatie kan de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat ze zich eerst moeten aanmelden bij [!DNL Assets].
+Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u met gebruikers wilt delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share` de locatie kan de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat ze zich eerst moeten aanmelden bij [!DNL Assets].
 
 >[!NOTE]
 >
@@ -234,13 +202,20 @@ Als u de URL wilt genereren voor elementen die u met gebruikers wilt delen, gebr
 >* `[aem_server]:[port]/linkexpired.html`
 
 <!--
+## Configure Day CQ mail service {#configmailservice}
+
+Before you can share assets as links, configure the email service.
+
+1. Click or tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
     * SMTP user: email server user name
     * SMTP password: email server password
+
+1. Click/tap **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
