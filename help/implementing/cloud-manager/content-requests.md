@@ -1,13 +1,13 @@
 ---
 title: Inhoudsverzoeken van Cloud Servicen begrijpen
 description: Als u licenties voor inhoudsaanvragen van Adobe hebt aangeschaft, leert u meer over de typen inhoudsaanvragen die Adobe Experience Cloud als een service meet en over de verschillen met de analytische rapportagehulpprogramma's van een organisatie.
-source-git-commit: e34b21194e35b2f56dd1e7df2165c3fa5c0cb7da
+exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 0%
 
 ---
-
 
 # Verzoeken om Cloud Service-inhoud
 
@@ -67,5 +67,3 @@ Zie ook [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.m
 | Commerce integration framework-aanroepen uitsluiten | Uitgesloten | Dit zijn verzoeken aan AEM die door:sturen aan het Commerce integration framework-URL begint met `/api/graphql`—om dubbeltellingen te voorkomen, kunnen zij niet voor Cloud Service in rekening worden gebracht. |
 | Uitsluiten `manifest.json` | Uitgesloten | Manifest is geen API-aanroep. Het is hier om informatie op te geven over het installeren van websites op computers of mobiele telefoons. Adobe mag JSON-verzoek niet tellen voor `/etc.clientlibs/*/manifest.json` |
 | Uitsluiten `favicon.ico` | Uitgesloten | Terwijl de teruggekeerde inhoud niet HTML of JSON zou moeten zijn, zien wij dat in sommige scenario&#39;s zoals de authentificatiestromen van SAML, de favicons kunnen zijn teruggekeerd aangezien HTML daarom uitdrukkelijk van de telling wordt uitgesloten. |
-
-

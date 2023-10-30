@@ -2,13 +2,13 @@
 title: Hoe te om een Aangepast malplaatje van de Vorm tot stand te brengen dat op kerncomponent wordt gebaseerd?
 description: Maak adaptieve formuliersjablonen op basis van de kerncomponent om de basisstructuur en eerste inhoud te definiëren met de Sjablooneditor.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 0%
 
 ---
-
 
 # Een adaptieve formuliersjabloon maken op basis van kerncomponenten {#adaptive-form-templates}
 
@@ -290,4 +290,3 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## Zie ook {#see-also}
 
 {{see-also}}
-

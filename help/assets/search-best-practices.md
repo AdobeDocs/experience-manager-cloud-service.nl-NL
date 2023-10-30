@@ -2,13 +2,13 @@
 title: Best practices zoeken voor [!DNL Adobe Experience Manager] als [!DNL Cloud Service]
 description: Aanbevolen procedures voor het zoeken, zoeken en ophalen van metagegevens van elementen in uw toepassing.
 contentOwner: KK
-source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
+exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '2455'
 ht-degree: 1%
 
 ---
-
 
 # Aanbevolen werkwijzen AEM zoeken
 
