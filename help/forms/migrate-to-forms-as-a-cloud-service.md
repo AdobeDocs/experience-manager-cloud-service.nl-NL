@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 1%
@@ -171,7 +171,7 @@ Wanneer u AEM workflowmodellen van AEM Forms 6.5 naar Cloud Service migreert, ge
 Met het migratiehulpprogramma kunt u Adaptief Forms migreren op basis van stichtingscomponenten. Daarnaast biedt Forms as a Cloud Service ondersteuning voor Adaptive Forms Core Components. U kunt dus:
 
 * [Zelfstandige adaptieve Forms op basis van Core Component maken](/help/forms/creating-adaptive-form-core-components.md)
-* [Direct een adaptief formulier op basis van een kerncomponent maken op een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Een adaptief formulier op basis van een Core-component rechtstreeks op een AEM Sites-pagina maken](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 Meer informatie over as a Cloud Service AEM Forms vindt u in:
 

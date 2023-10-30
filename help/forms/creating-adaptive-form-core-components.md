@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2231'
 ht-degree: 0%
 
 ---
@@ -191,15 +191,21 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
 1. Tikken **[!UICONTROL Save]** om de eigenschappen op te slaan.
 
 
-## Zie volgende
+<!--
 
-* [Stijlen of thema&#39;s maken voor uw formulieren](using-themes-in-core-components.md)
-* [Dynamisch gedrag toevoegen aan formulieren met de regeleditor](rule-editor.md)
-* [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [Voorbeeldthemasjablonen en formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+## See next
+
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+
+-->
 
 ## Zie ook {#see-also}
 
 {{see-also}}
 
+* [Dynamisch gedrag toevoegen aan formulieren met de regeleditor](rule-editor.md)
+* [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/features/responsive-layout.md)
 

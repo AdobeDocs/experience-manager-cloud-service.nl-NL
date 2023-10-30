@@ -2,9 +2,9 @@
 title: Hoe kunnen we thema's maken en gebruiken in Adaptive Forms?
 description: U kunt thema's gebruiken om een adaptief formulier op te maken en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2632'
 ht-degree: 0%
 
 ---
@@ -410,19 +410,29 @@ Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals e
 
 **Ans:** Wanneer aanpassingen op zowel het globale niveau als componentenniveau worden gemaakt, neemt de aanpassing op het componentenniveau prioriteit.
 
-## Zie volgende
+<!--
 
-* [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [Document met record genereren voor adaptieve Forms (kerncomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-* [Een adaptieve Forms maken met herhalende secties](/help/forms/create-forms-repeatable-sections.md)
-* [Voorbeeldthemasjablonen en formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+## See next
+
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 >[!MORELIKETHIS]
 >
->* [Adaptieve Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+>* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
+
+-->
 
 
 ## Zie ook {#see-also}
 
 {{see-also}}
+
+* [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Document met record genereren voor adaptieve Forms (kerncomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [Een adaptieve Forms maken met herhalende secties](/help/forms/create-forms-repeatable-sections.md)
+* [Voorbeeldthemasjablonen en formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Adaptieve Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)

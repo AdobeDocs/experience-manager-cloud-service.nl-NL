@@ -4,9 +4,9 @@ description: Ontdek hoe u een adaptief formulier kunt maken of toevoegen aan uw 
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 7b797524d0df764c497baa6e4ffd0b3cabd368ca
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '3132'
+source-wordcount: '3123'
 ht-degree: 0%
 
 ---
@@ -255,14 +255,21 @@ Bij het verzenden van een formulier kunt u de gebruiker omleiden naar een andere
    * Als u een omleidings-URL wilt configureren, selecteert u bij Verzenden de optie **[!UICONTROL Redirect to URL]** en een AEM Sites-pagina selecteren of een URL van een externe pagina opgeven.
    * Als u een aangepast bericht of een bedankbericht wilt configureren, selecteert u bij Verzenden de optie **[!UICONTROL Show Message]** en geef een bericht op in het dialoogvenster **[!UICONTROL Message content]** doos. Het is een tekstvak met tekstopmaak. U kunt de optie Volledig scherm gebruiken om alle beschikbare tekstitems weer te geven.
 
-## Zie volgende
 
-* [Stijlen of thema&#39;s maken voor uw formulieren](using-themes-in-core-components.md)
-* [Dynamisch gedrag toevoegen aan formulieren met de regeleditor](rule-editor.md)
-* [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/features/responsive-layout.md)
+<!--
+## See next
 
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+-->
 
 ## Zie ook {#see-also}
 
 {{see-also}}
+
+* [Dynamisch gedrag toevoegen aan formulieren met de regeleditor](rule-editor.md)
+* [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/features/responsive-layout.md)
+
 

@@ -5,9 +5,9 @@ role: User, Developer
 keywords: Sluit AEM adaptief formulier aan op de Microsoft SharePoint-lijst, sluit adaptief formulier aan op de Microsoft SharePoint-lijst, integreer AEM adaptief formulier met de SharePoint SharePoint-lijst, integreer Adaptief formulier met de-lijst, verzend gegevens van een adaptief formulier naar de-lijst, verzend AEM workflow naar de-lijst.
 hide: true
 hidefromToC: true
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -86,16 +86,12 @@ Leer hoe u [AEM gebruiken](https://experienceleague.adobe.com/docs/experience-ma
 * [Gegevensbronnen configureren](/help/forms/configuring-submit-actions.md)
 * [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
 * [Forms-centrische AEM Workflows gebruiken - Step Reference to automatisate business processes](/help/forms/aem-forms-workflow-step-reference.md)
-
-## Aanvullende informatie
-
+* [Een aangepaste verzendactie maken voor Adaptieve Forms](/help/forms/custom-submit-action-form.md)
 * [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Een adaptief formulier insluiten op een AEM Sites-pagina](/help/forms/embed-adaptive-form-aem-sites.md)
 * [Thema&#39;s maken, gebruiken en aanpassen in een adaptief formulier](/help/forms/using-themes-in-core-components.md)
 
->[!MORELIKETHIS]
->
->* [Een aangepaste verzendactie maken voor Adaptieve Forms](/help/forms/custom-submit-action-form.md)
+
 
 
 

@@ -3,9 +3,9 @@ title: Hoe te om een Aangepast malplaatje van de Vorm tot stand te brengen dat o
 description: Maak adaptieve formuliersjablonen op basis van de kerncomponent om de basisstructuur en eerste inhoud te definiëren met de Sjablooneditor.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: 25a1504e2655e414f32dfea20e416889cea06dcc
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1913'
 ht-degree: 0%
 
 ---
@@ -282,11 +282,18 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 * Beperk het aantal sjablonen zodat deze overeenkomen met de fundamenteel verschillende formuliertypen die op de websites beschikbaar zijn
 * Verstrek de noodzakelijke flexibiliteit en configuratiemogelijkheden aan uw douanecomponenten die in een malplaatje worden gebruikt.
 
-## Zie volgende
+<!--
+## See next
 
-* [Stijlen of thema&#39;s maken voor uw formulieren](using-themes-in-core-components.md)
-* [Een adaptief formulier maken (kerncomponenten)](/help/forms/creating-adaptive-form-core-components.md)
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
+
+-->
 
 ## Zie ook {#see-also}
 
 {{see-also}}
+
+* [Stijlen of thema&#39;s maken voor uw formulieren](using-themes-in-core-components.md)
+* [Een adaptief formulier maken (kerncomponenten)](/help/forms/creating-adaptive-form-core-components.md)
+

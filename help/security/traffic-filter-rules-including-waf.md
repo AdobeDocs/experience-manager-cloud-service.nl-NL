@@ -2,9 +2,9 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
+source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3473'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Regels voor verkeersfilters, inclusief WAF-regels {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->Deze functie is binnenkort beschikbaar in ontwikkelomgevingen, met een geleidelijke implementatie in werkgebied- en prodomgevingen in november. U kunt eerder toegang aanvragen in het werkgebied en de proefperiode via e-mail **aemcs-waf-adopter@adobe.com**.
+>Deze functie is nu beschikbaar in ontwikkelomgevingen, met een geleidelijke implementatie in werkgebied- en prodomgevingen later in november. U kunt eerder toegang aanvragen in het werkgebied en de proefperiode via e-mail **aemcs-waf-adopter@adobe.com**.
 
 De filterregels van het verkeer kunnen worden gebruikt om verzoeken bij de laag te blokkeren of toe te staan CDN, die in scenario&#39;s zoals nuttig kan zijn:
 
@@ -26,6 +26,8 @@ De meeste van deze regels van de verkeersfilter zijn beschikbaar aan alle AEM as
 Een subcategorie van verkeersfilterregels vereist of een vergunning van Uitgebreide Veiligheid of een vergunning van de Bescherming WAF-DDoS, en zal later dit jaar beschikbaar zijn. Deze krachtige regels zijn gekend als het verkeersfilterregels van het WAF (de Firewall van de Toepassing van het Web) (of de regels van WAF voor kort) en hebben toegang tot [WAF-vlaggen](#waf-flags-list) wordt verderop in dit artikel beschreven.
 
 De filterregels van het verkeer kunnen via de configuratiepijpleidingen van de Manager van de Wolk worden opgesteld om, stadium, en de types van productiemilieu in productie (niet zandbak) programma&#39;s te ontwikkelen. Steun voor RDEs zal in de toekomst komen.
+
+[Een zelfstudie doorlopen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) snel concrete expertise op dit gebied op te bouwen.
 
 ## Hoe dit artikel is georganiseerd {#how-organized}
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '744'
 ht-degree: 1%
 
 ---
@@ -138,6 +138,11 @@ U kunt ook de status van succes en fout simuleren. Tik op het pictogram Uitvouwe
 
 {{see-also}}
 
+
+<!--
+
 >[!MORELIKETHIS]
 >
->* [Thema&#39;s gebruiken in Adaptief formulier Core-componenten](/help/forms/using-themes-in-core-components.md)
+>* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)
+
+-->

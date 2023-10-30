@@ -1,23 +1,23 @@
 ---
-title: Hoe te om Verenigde Verbinding van de Opslag voor AEM Forms te vormen?
-description: Leer hoe u Unified Storage Connector voor AEM Forms beheert. Gebruik de Unified Storage-connector om AEM Forms aan te sluiten op externe gegevensopslagsystemen.
+title: Hoe te om Verenigde Schakelaar van de Opslag (USC) voor AEM Forms te vormen?
+description: Leer hoe te om Verenigde Schakelaar van de Opslag (USC) voor AEM Forms te beheren. Gebruik de Unified Storage Connector (USC) om AEM Forms te verbinden met externe gegevensopslag.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
 
-# Unified Storage-connector beheren voor AEM Forms {#manage-unified-storage-connector}
+# Unified Storage Connector (USC) voor AEM Forms beheren {#manage-unified-storage-connector}
 
-Met Unified Storage Connector kunt u AEM Forms verbinden met externe gegevensopslag.
+U kunt Unified Storage Connector (USC) gebruiken om AEM Forms te verbinden met externe gegevensopslag.
 
-U kunt bijvoorbeeld waarden invullen voor velden in een adaptief formulier en deze verzenden naar een AEM Workflow. U kunt AEM Workflows verder configureren om gegevens op te slaan in een externe opslag, zoals de Microsoft Azure-opslagserver. Gebruik de Unified Storage-connector om een verbinding tot stand te brengen tussen AEM Workflows en de externe opslag.
+U kunt bijvoorbeeld waarden invullen voor velden in een adaptief formulier en deze verzenden naar een AEM Workflow. U kunt AEM Workflows verder configureren om gegevens op te slaan in een externe opslag, zoals de Microsoft Azure-opslagserver. Gebruik de Unified Storage Connector (USC) om een verbinding tot stand te brengen tussen AEM Workflows en de externe opslag.
 
 ## Connect AEM Workflows met een Microsoft Azure-opslagserver {#connect-workflows-with-azure}
 
-Creeer een Azure opslagconfiguratie en verwijs naar die configuratie gebruikend de Verenigde Schakelaar van de Opslag. Vervolgens kunt u AEM workflowmodellen configureren om de gegevensopslag te extern te maken en deze aan te sluiten op een Azure-opslagserver.
+Creeer een Azure opslagconfiguratie en verwijs naar die configuratie gebruikend de Verenigde Schakelaar van de Opslag (USC). Vervolgens kunt u AEM workflowmodellen configureren om de gegevensopslag te extern te maken en deze aan te sluiten op een Azure-opslagserver.
 
 ### Maken [!DNL Azure] opslagconfiguratie {#create-azure-storage-configuration}
 
@@ -31,9 +31,9 @@ Voer de volgende stappen uit om een [!DNL Azure] opslagconfiguratie:
 1. Geef de naam van de [!DNL Azure] opslagaccount in de **[!UICONTROL Azure Storage Account]** veld.
 1. Geef de sleutel op voor toegang tot Azure-opslagaccount in het dialoogvenster **[!UICONTROL Azure Access Key]** veld en tik **[!UICONTROL Save]**.
 
-### Unified Storage-connector configureren voor AEM workflows {#configure-unified-storage-connector-workflows}
+### Unified Storage Connector (USC) voor AEM workflows configureren {#configure-unified-storage-connector-workflows}
 
-Voer de volgende stappen uit om de Verenigde Verbinding van de Opslag voor AEM Workflows te vormen:
+Voer de volgende stappen uit om Verenigde Verbinding van de Opslag (USC) voor AEM Workflows te vormen:
 
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]**.
 
