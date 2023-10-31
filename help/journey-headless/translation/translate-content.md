@@ -2,7 +2,7 @@
 title: Koploze inhoud omzetten
 description: Gebruik de vertaalaansluiting om uw inhoud zonder kop te vertalen.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '2175'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Koploze inhoud omzetten {#translate-content}
 
-Gebruik de vertaalaansluiting om uw inhoud zonder kop te vertalen.
+Met de vertaalintegratie kunt u uw inhoud zonder kop vertalen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -28,7 +28,7 @@ Nu de connector is ingesteld, gaat u met dit artikel door de volgende stap voor 
 Dit document helpt u begrijpen hoe te om AEM vertaalprojecten samen met de schakelaar te gebruiken om inhoud te vertalen. Nadat u dit document hebt gelezen, moet u:
 
 * Begrijp wat een vertaalproject is.
-* Nieuwe vertaalprojecten kunnen maken.
+* U kunt nieuwe vertaalprojecten maken.
 * Gebruik vertaalprojecten om uw inhoud zonder kop te vertalen.
 
 ## Een vertaalproject maken {#creating-translation-project}
@@ -58,7 +58,7 @@ Voor eigenaars van inhoud die ook verantwoordelijk zijn voor vertaling, is het v
 1. Tik of klik op de railkiezer en toon de **Verwijzingen** deelvenster.
 1. Tik of klik op **Taalkopieën**.
 1. Controleer de **Taalkopieën** selectievakje.
-1. De sectie uitvouwen **Taalkopieën bijwerken** onder aan het venster Verwijzingen.
+1. De sectie uitbreiden **Taalkopieën bijwerken** onder aan het venster Verwijzingen.
 1. In de **Project** vervolgkeuzelijst, selecteren **Vertaalproject(en) maken**.
 1. Geef een geschikte titel op voor uw vertaalproject.
 1. Tik of klik op **Start**.
@@ -118,7 +118,7 @@ Het vertaalproject weergeven:
 Het project is verdeeld in meerdere kaarten.
 
 * **Samenvatting** - Deze kaart bevat de basiskoptekstinformatie van het project, waaronder de eigenaar, de taal en de vertaalprovider.
-* **Vertaaltaak** - Op deze kaart of op deze kaarten is (zijn) een overzicht te zien van de werkelijke vertaalbaan, met inbegrip van de status, het aantal activa, enz. Over het algemeen is er één taak per taal waarbij de ISO-2-taalcode aan de taaknaam wordt toegevoegd.
+* **Vertaaltaak** - Op deze kaart of op deze kaarten is (zijn) een overzicht te zien van de werkelijke vertaalbaan, met inbegrip van de status, het aantal activa, enz. Over het algemeen is er één taak per taal, waarbij de ISO-2-taalcode aan de taaknaam wordt toegevoegd.
 * **Team** - Deze kaart toont de gebruikers die aan dit vertaalproject samenwerken. Deze reis gaat niet over dit onderwerp.
 * **Taken** - Aanvullende taken die samenhangen met het vertalen van de inhoud, zoals het uitvoeren van items of workflowitems. Deze reis gaat niet over dit onderwerp.
 
@@ -138,7 +138,7 @@ U kunt als volgt de details van de inhoud zonder kop in dit project bekijken:
 
 ![Opties voor vertaaltaken](assets/translation-job-options.png)
 
-De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door de **Staat** in de **Vertaaltaak** venster.
+De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door **Staat** in de **Vertaaltaak** venster.
 
 Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan het dialoogvenster **Vertaaltaak** kaart en selecteer **Start**.
 
@@ -188,7 +188,7 @@ Inhoud toevoegen aan een vertaaltaak:
 
 U kunt de voorafgaande stappen gebruiken om de noodzakelijke inhoud aan alle talen (banen) voor het project toe te voegen. Nadat u alle inhoud hebt geselecteerd, kunt u de vertaling starten.
 
-De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door de **Staat** in de **Vertaaltaak** venster.
+De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door **Staat** in de **Vertaaltaak** venster.
 
 Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan het dialoogvenster **Vertaaltaak** kaart en selecteer **Start**.
 
@@ -239,10 +239,10 @@ Menselijke vertaling valt buiten het bereik van deze lokalisatietraject. Zie de 
 Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 
 * Begrijp wat een vertaalproject is.
-* Nieuwe vertaalprojecten kunnen maken.
+* U kunt nieuwe vertaalprojecten maken.
 * Gebruik vertaalprojecten om uw inhoud zonder kop te vertalen.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM doorlopende vertaaltocht door het document opnieuw te bekijken [Vertaalde inhoud publiceren](publish-content.md) waar u leert hoe u uw vertaalde inhoud publiceert en hoe u deze vertalingen bijwerkt wanneer de inhoud van de hoofdtaal verandert.
+Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [Vertaalde inhoud publiceren](publish-content.md) waar u leert hoe u uw vertaalde inhoud publiceert en hoe u deze vertalingen bijwerkt wanneer de inhoud van de hoofdtaal verandert.
 
 ## Aanvullende bronnen {#additional-resources}
 
