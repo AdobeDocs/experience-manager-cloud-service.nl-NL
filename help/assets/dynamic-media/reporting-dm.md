@@ -4,13 +4,15 @@ description: Leer hoe u een foutrapport opvraagt voor Dynamic Media die URL's le
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
-source-git-commit: 7ce15cc755c9db589001d543c16312096d88bcf0
+hide: true
+hidefromtoc: true
+exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
+source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
 
 ---
-
 
 # Een foutrapport aanvragen voor URL&#39;s die niet zijn geleverd door Dynamic Media
 
@@ -31,7 +33,3 @@ U kunt een foutenrapport eens per maand, voor een bepaald bedrijf aanvragen.
    Als u de bedrijfsnaam niet weet, raadpleegt u de [Dynamic Media-configuratie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=en#configuring-dynamic-media-cloud-services) pagina in **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuation]**. Klik op de pagina Dynamic Media Configuration Browser (-configuratiebrowser) op **[!UICONTROL global]**, selecteert u de *[Dynamic_Media_folder_icon]* selectievakje en selecteer vervolgens **[!UICONTROL Edit]**. U hebt beheerdersrechten nodig AEM u toegang wilt krijgen tot de Dynamic Media Configuration-pagina.
 
    ![Toegang tot de Dynamic Media Configuration-pagina.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
-
-
-
-
