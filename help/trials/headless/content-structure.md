@@ -4,9 +4,9 @@ description: Leer hoe u AEM modellen van inhoudsfragmenten kunt gebruiken om uw 
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
+source-git-commit: 07f61a3f6a794e18bc2e02e966392cdce3103a81
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1009'
 ht-degree: 0%
 
 ---
@@ -98,6 +98,7 @@ Voer dezelfde stappen uit als hierboven om deze extra velden toe te voegen. Het 
 
    * **Renderen als:** **Content Reference** - Wanneer u een avontuur creeert, wijst dit gebied aan beeldactiva die deze reis vertegenwoordigen.
    * **Veldlabel:** `Image` - Het label dat voor dit veld wordt weergegeven wanneer u een avontuur maakt.
+   * **Hoofdpad:** `/content/dam/aem-demo-assets/en` - Hiermee geeft u een beginpuntpad op bij het zoeken naar elementen met de Asset Selector.
 
 1. Nadat u de vereiste velden voor het model Inhoudsfragment hebt toegevoegd, klikt u rechtsboven in het venster op **Opslaan**.
 
