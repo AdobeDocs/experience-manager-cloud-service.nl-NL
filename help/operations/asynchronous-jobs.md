@@ -2,16 +2,16 @@
 title: Asynchrone taken
 description: Adobe Experience Manager optimaliseert de prestaties door sommige hulpbronintensieve taken als achtergrondbewerkingen asynchroon te voltooien.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '810'
 ht-degree: 71%
 
 ---
 
 # Asynchrone bewerkingen {#asynchronous-operations}
 
-Om negatieve gevolgen voor de prestaties te beperken, verwerkt Adobe Experience Manager bepaalde langlopende en middelintensieve bewerkingen asynchroon als achtergrondbewerkingen. Bij asynchrone verwerking worden meervoudige taken in wachtrijen geplaatst en serieel uitgevoerd, afhankelijk van de beschikbaarheid van systeembronnen.
+Om negatieve gevolgen voor prestaties te verminderen, verwerkt de Manager van de Ervaring van de Adobe bepaalde langlopende en middel-intensieve verrichtingen asynchroon als achtergrondverrichtingen. Bij asynchrone verwerking worden meervoudige taken in wachtrijen geplaatst en serieel uitgevoerd, afhankelijk van de beschikbaarheid van systeembronnen.
 
 Deze bewerkingen omvatten:
 
@@ -19,7 +19,6 @@ Deze bewerkingen omvatten:
 * Veel assets verplaatsen, of assets met veel verwijzingen verplaatsen
 * Metadata van assets bulksgewijs exporteren/importeren
 * Assets die boven de ingestelde drempelwaarde liggen, importeren vanaf een externe Experience Manager-implementatie
-* Pagina’s verplaatsen
 * Actieve exemplaren uitrollen
 
 U kunt de status van asynchrone taken weergeven in het menu **[!UICONTROL Background Operations]** dashboard op **Algemene navigatie** -> **Gereedschappen** -> **Algemeen** -> **Taken**.
@@ -70,7 +69,7 @@ Navigeer naar de pagina **[!UICONTROL Background Operations]** om de status van 
    >
    >U kunt een taak niet verwijderen als de status **Actief** of **In wachtrij** is.
 
-## Opties voor asynchrone taakverwerking configureren {#configure}
+## Asynchrone opties voor taakverwerking configureren {#configure}
 
 Er zijn een aantal opties rond asynchrone banen die kunnen worden gevormd. De volgende voorbeelden tonen hoe dit kan worden gedaan gebruikend de configuratiemanager op een lokaal ontwikkelingssysteem.
 
@@ -84,7 +83,7 @@ AEM voert elke dag om 10:00 een zuiveringstaak uit om voltooide asynchrone banen
 
 U kunt het schema wijzigen voor de opschoontaak en hoe lang details van voltooide taken bewaard blijven voordat ze worden verwijderd. U kunt ook het maximum aantal voltooide taken configureren waarvoor de details tot een gewenst tijdstip bewaard blijven.
 
-1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder.
+1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder gebruiker.
 1. Navigeren naar **OSGi** > **Configuratie**
 1. Open de taak **[!UICONTROL Adobe Granite Async Jobs Purge Scheduled Job]**.
 1. Geef het volgende op:
@@ -100,7 +99,7 @@ U kunt het schema wijzigen voor de opschoontaak en hoe lang details van voltooid
 
 Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wordt de verwijderingsbewerking asynchroon uitgevoerd.
 
-1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder.
+1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder gebruiker.
 1. Navigeren naar **OSGi** > **Configuratie**
 1. Open vanuit de webconsole de **[!UICONTROL Async Process Default Queue Configuration.]**
 1. Geef in het vak **[!UICONTROL Threshold number of assets]** het drempelaantal assets/mappen op voor de asynchrone verwerking van verwijderingsbewerkingen.
@@ -114,7 +113,7 @@ Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wo
 
 Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 
-1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder.
+1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder gebruiker.
 1. Navigeren naar **OSGi** > **Configuratie**
 1. Open vanuit de webconsole de **[!UICONTROL Async Move Operation Job Processing Configuration.]**
 1. Geef in het vak **[!UICONTROL Threshold number of assets/references]** het drempelaantal assets/mappen of verwijzingen op voor de asynchrone verwerkings- of verplaatsingsbewerkingen.
@@ -124,23 +123,9 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld, succes, mislukt.
 1. Sla de wijzigingen op.
 
-### Asynchrone verplaatsingsbewerkingen van pagina’s configureren {#configuring-asynchronous-page-move-operations}
-
-Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
-
-1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder.
-1. Navigeren naar **OSGi** > **Configuratie**
-1. Open vanuit de webconsole de **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
-1. Geef in het veld **[!UICONTROL Threshold number of references]** het drempelaantal verwijzingen op voor asynchrone verwerking van paginaverplaatsingsbewerkingen.
-
-   ![Drempel voor verplaatsing van pagina’s](assets/async-page-move.png)
-
-1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld, succes, mislukt.
-1. Sla de wijzigingen op.
-
 ### Asynchrone MSM-bewerkingen configureren {#configuring-asynchronous-msm-operations}
 
-1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder.
+1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder gebruiker.
 1. Navigeren naar **OSGi** > **Configuratie**
 1. Open vanuit de webconsole de **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
 1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld, succes, mislukt.
@@ -154,4 +139,3 @@ Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de
 >* [Pagina&#39;s maken en indelen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
 >* [Importeer/exporteer metadata van assets bulksgewijs](/help/assets/metadata-import-export.md).
 >* [Connected Assets gebruiken om DAM-assets te delen vanuit externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md).
-
