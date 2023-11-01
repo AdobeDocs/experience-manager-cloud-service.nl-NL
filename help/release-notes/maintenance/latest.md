@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 6e82bbcc1b83fa9216831f6f746665507a46eec7
+source-git-commit: 01f148dbe885c96b27f88a88e7020a1008f4c1d3
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '595'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14029 same
 
 ### Bekende problemen {#known-issues-14029}
 
-Geen.
+* ASSETS-31015: Kan bestanden niet uploaden naar middelen met onbekende bestandsextensies.
 
 ### Ingesloten technologieën {#embedded-tech-14029}
 
