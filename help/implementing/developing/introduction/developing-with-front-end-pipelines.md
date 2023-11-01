@@ -2,7 +2,7 @@
 title: Sites ontwikkelen met behulp van de voorste pijplijn
 description: Met de front-end pijpleiding wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijk sneller worden. In dit document worden enkele specifieke aspecten beschreven van het constructieproces aan de voorzijde die moeten worden vermeld.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 36e40976c43826efd7921cd9429373fe97a20426
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Sites ontwikkelen met behulp van de voorste pijplijn {#developing-site-with-front-end-pipeline}
 
-[Met de front-end pijpleiding,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) meer onafhankelijkheid wordt gegeven aan de front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijk sneller verlopen. In dit document wordt beschreven hoe dit proces werkt, samen met een aantal overwegingen, zodat u optimaal kunt profiteren van dit proces.
+[Met de front-end pijplijn,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) meer onafhankelijkheid wordt gegeven aan de front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijk sneller verlopen. In dit document wordt beschreven hoe dit proces werkt, samen met een aantal overwegingen, zodat u optimaal kunt profiteren van dit proces.
 
 >[!TIP]
 >
@@ -30,7 +30,7 @@ De inhoud van de `dist` Deze map is de map die uiteindelijk wordt geïmplementee
 
 Door gebrek de front-end pijpleiding gebruikt Node 14, maar 12 en 16 zijn ook beschikbaar.
 
-U kunt de `CM_CUSTOM_VAR_NODE_VERSION` omgevingsvariabele om de gewenste versie in te stellen.
+U kunt de `NODE_VERSION` omgevingsvariabele om de gewenste versie in te stellen.
 
 ## Eén betrouwbare bron {#single-source-of-truth}
 
@@ -60,7 +60,7 @@ De volgende stappen worden over het algemeen aanbevolen wanneer het nodig is om 
    1. Via de full-stack pijplijn, voeren zij de code op die wordt vereist om de nieuwe HTML en/of output terug te geven JSON die gewenst is.
    1. Als dat aan een milieu is dat het front-end team niet eerder toegang tot had, dan moeten de volgende stappen worden uitgevoerd.
       1. URL: Het front-end team moet URL van die ontwikkelomgeving kennen.
-      1. ACL: Het front-end team moet een lokale AEM gebruiker met iets gelijkaardig aan &quot;Medewerkers&quot;rechten worden gegeven.
+      1. ACL: Het front-end team moet een lokale AEM gebruiker met iets gelijkend op &quot;Medewerkers&quot;rechten worden gegeven.
       1. Git: Het front-end team moet een afzonderlijke plaats van het Git voor de front-end module hebben die specifiek die ontwikkelomgeving richt.
          * Een gebruikelijke praktijk is het creëren van een `dev` vertakking, zodat de veranderingen die voor het ontwikkelmilieu worden gedaan dan gemakkelijk terug in het `main` tak die aan het productiemilieu moet worden opgesteld.
       1. Pijpleiding: Het front-end team moet een front-end pijpleiding hebben die aan de ontwikkelomgeving opstelt. Die pijpleiding zou de front-end module opstellen die typisch in wordt gevestigd `dev` vertakking, zoals beschreven in het vorige punt.
@@ -77,4 +77,4 @@ De volgende stappen worden over het algemeen aanbevolen wanneer het nodig is om 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) - Leer hoe AEM sitethema&#39;s kunnen worden gebruikt om de stijl en het ontwerp van uw site aan te passen.
-* [Sitemenu AEM](https://github.com/adobe/aem-site-theme-builder) - Adobe biedt een AEM Site Theme Builder als een set scripts voor het maken van nieuwe sitethema&#39;s.
+* [Sitemenu AEM maken](https://github.com/adobe/aem-site-theme-builder) - Adobe biedt een AEM Site Theme Builder als een set scripts voor het maken van nieuwe sitethema&#39;s.

@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
+source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2601'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Een gebruiker met de vereiste toestemmingen kan de volgende milieutypes (binnen 
 
 * **Snelle ontwikkeling** - Met een snelle ontwikkelomgeving (RDE) kan een ontwikkelaar snel wijzigingen implementeren en evalueren, waardoor de tijd die nodig is om functies te testen waarvan is aangetoond dat ze werken in een lokale ontwikkelomgeving, tot een minimum wordt beperkt. Zie [documentatie over de snelle ontwikkelomgeving](/help/implementing/developing/introduction/rapid-development-environments.md) voor details over hoe te om RDE te gebruiken.
 
-De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen die in de [programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) van het milieu.
+De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen die in de [programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) van het milieu
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -37,11 +37,13 @@ De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen 
 
 ## Een omgeving toevoegen {#adding-environments}
 
+Een gebruiker moet lid zijn van de **Zakelijke eigenaar** rol.
+
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
 1. Klik op het programma waaraan u een omgeving wilt toevoegen.
 
-1. Van de **Programmaoverzicht** pagina, klikt u op **Omgeving toevoegen** op de **Omgevingen** kaart om een omgeving toe te voegen.
+1. Van de **Programmaoverzicht** pagina, klikt u **Omgeving toevoegen** op de **Omgevingen** -kaart om een omgeving toe te voegen.
 
    ![Milieukaart](assets/no-environments.png)
 
@@ -51,7 +53,7 @@ De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen 
 
    * De **Omgeving toevoegen** Deze optie kan worden uitgeschakeld bij gebrek aan machtigingen of afhankelijk van de gelicentieerde bronnen.
 
-1. In de **Omgeving toevoegen** dialoogvenster dat verschijnt:
+1. In de **Omgeving toevoegen** dialoogvenster dat wordt weergegeven:
 
    * Selecteer een [**omgevingstype**.](#environment-types)
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter de naam van het omgevingstype weergegeven.
@@ -60,7 +62,7 @@ De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen 
    * Als u een **Productie + werkgebied** -omgeving, moet u een omgevingsnaam en -beschrijving opgeven voor zowel uw productie- als staging-omgeving.
    * Selecteer een **Primair gebied** in de vervolgkeuzelijst.
       * Het primaire gebied kan na het maken niet meer worden gewijzigd.
-      * Afhankelijk van uw beschikbare rechten, kunt u kunnen vormen [meerdere gebieden](#multiple-regions).
+      * Afhankelijk van uw beschikbare rechten kunt u [meerdere gebieden](#multiple-regions).
 
    ![Omgevingsdialoogvenster toevoegen](assets/add-environment2.png)
 
@@ -80,7 +82,7 @@ Een gebruiker met de **Zakelijke eigenaar** Met rol kunt u productie- en staging
 
 Wanneer u een omgeving toevoegt, kunt u ervoor kiezen om naast het primaire gebied ook andere gebieden te configureren.
 
-1. Selecteer **Primair gebied**.
+1. Selecteer de **Primair gebied**.
    * Het primaire gebied kan na het creëren van het milieu niet worden veranderd.
 1. Selecteer de optie **Extra publicatiegebieden toevoegen** en een nieuwe **Aanvullende publicatiegebieden** verschijnt een keuzelijst met opties.
 1. In de **Aanvullende publicatiegebieden** selecteert u een extra gebied.
@@ -95,7 +97,7 @@ De geselecteerde gebieden zijn van toepassing op zowel productie als het opvoere
 
 Als u geen extra gebieden opgeeft, [dat kunt u later doen nadat de omgevingen zijn gemaakt.](#edit-regions)
 
-Als u een voorziening wilt [geavanceerde netwerken](/help/security/configuring-advanced-networking.md) voor het programma wordt aangeraden deze voorziening uit te voeren voordat u aanvullende publicatiegebieden aan de omgevingen toevoegt met de API voor Cloud Manager. Anders, gaat het extra publiceer gebiedsverkeer door de volmacht van het primaire gebied.
+Als u een voorziening wilt [geavanceerd netwerken](/help/security/configuring-advanced-networking.md) voor het programma wordt aangeraden deze voorziening uit te voeren voordat u aanvullende publicatiegebieden aan de omgevingen toevoegt met de API voor Cloud Manager. Anders, gaat het extra publiceer gebiedsverkeer door de volmacht van het primaire gebied.
 
 ### Meerdere publicatiegebieden bewerken {#edit-regions}
 
@@ -108,22 +110,22 @@ U kunt ook extra publicatiegebieden verwijderen. U kunt echter slechts gebieden 
    ![Omgeving bewerken](assets/select-edit-environment.png)
 
 1. In de **Productieomgeving bewerken** de benodigde wijzigingen aanbrengen in de aanvullende publicatiegebieden.
-   * Gebruik de **Aanvullende publicatiegebieden** vervolgkeuzelijst om extra gebieden te selecteren.
+   * Gebruik de **Aanvullende publicatiegebieden** om extra gebieden te selecteren.
    * Klik op de X naast de geselecteerde aanvullende publicatiegebieden om deze te desselecteren.
 
    ![Omgeving bewerken](assets/edit-environment.png)
 
-1. Tik of klik op **Opslaan** om de wijzigingen op te slaan.
+1. Tik of klik op **Opslaan** om de wijzigingen op te slaan
 
 Wijzigingen in de productieomgeving zijn van toepassing op zowel de productie- als de testomgeving. Wijzigingen in meerdere publicatiegebieden kunnen alleen worden bewerkt in de productieomgeving.
 
-Als u een voorziening wilt [geavanceerde netwerken](/help/security/configuring-advanced-networking.md) voor het programma wordt aanbevolen deze provisioning uit te voeren voordat aanvullende publicatiegebieden aan de omgevingen worden toegevoegd. Anders gaat het extra publicatiegebiedsverkeer door de volmacht van het primaire gebied.
+Als u een voorziening wilt [geavanceerd netwerken](/help/security/configuring-advanced-networking.md) voor het programma wordt aanbevolen deze provisioning uit te voeren voordat aanvullende publicatiegebieden aan de omgevingen worden toegevoegd. Anders gaat het extra publicatiegebiedsverkeer door de volmacht van het primaire gebied.
 
 ## Omgevingsdetails {#viewing-environment}
 
 U kunt de **Omgevingen** kaart op de overzichtspagina voor toegang tot de details van een milieu op twee manieren.
 
-1. Van de **Overzicht** pagina, klikt u op de knop **Omgevingen** aan de bovenkant van het scherm.
+1. Van de **Overzicht** pagina, klikt u op de **Omgevingen** aan de bovenkant van het scherm.
 
    ![Het tabblad Omgevingen](assets/environments-tab2.png)
 
@@ -147,7 +149,7 @@ U kunt ook op de knop voor weglatingsteken van de gewenste omgeving klikken en v
 >
 >De **Omgevingen** kaart bevat slechts drie omgevingen. Klikken **Alles tonen** zoals hierboven beschreven om alle milieu&#39;s van het programma te zien.
 
-### De voorbeeldservice openen {#access-preview-service}
+### Toegang tot de voorvertoningsservice {#access-preview-service}
 
 Cloud Manager biedt een voorbeeldservice (geleverd als een extra publicatieservice) voor elke AEM as a Cloud Service omgeving.
 
@@ -155,7 +157,7 @@ Met de service kunt u de uiteindelijke ervaring van een website voorvertonen voo
 
 Bij verwezenlijking, heeft de voorproefdienst een standaardIP lijst van gewenste personen op het wordt toegepast, geëtiketteerd `Preview Default [<envId>]`, die al verkeer aan de voorproefdienst blokkeert. Hef de standaardIP lijst van gewenste personen van de voorproefdienst op zodat kunt u toegang toelaten.
 
-![De dienst van de voorproef en zijn lijst van gewenste personen](assets/preview-ip-allow.png)
+![Voorvertoning weergeven van service en lijst van gewenste personen](assets/preview-ip-allow.png)
 
 Een gebruiker met de vereiste machtigingen moet de volgende stappen uitvoeren voordat de URL van de voorvertoningsservice wordt gedeeld om ervoor te zorgen dat deze toegankelijk is.
 
@@ -183,7 +185,7 @@ Als u aanvullende publicatiegebieden hebt geactiveerd, kunt u de status van deze
 
    ![Statusinformatie over aanvullende publicatiegebieden op de kaart voor omgevingen](assets/additional-publish-region-status-environments-card.png)
 
-U kunt dezelfde informatie ook openen via de **Omgevingen** tab.
+U kunt dezelfde informatie ook openen via het dialoogvenster **Omgevingen** tab.
 
 1. Op de **Overzicht** pagina, selecteert u de **Omgevingen** tab.
 
@@ -203,11 +205,11 @@ Als er problemen zijn gemeld met extra publicatiegebieden:
 
 Hoe lang u wacht tot het systeem op zich terugkrijgt alvorens extra actie te ondernemen hangt van de invloed af het mislukken van dat gebied op uw systemen heeft.
 
-Houd er rekening mee dat in ieder geval: [het verkeer zal altijd aan het andere dichtstbijzijnde gebied worden verpletterd dat online is.](/help/operations/additional-publish-regions.md) Neem contact op met de klantenservice van Adobe als u problemen blijft zien.
+Houd er rekening mee dat in ieder geval: [het verkeer zal altijd aan het andere dichtstbijzijnde gebied worden verpletterd dat online is.](/help/operations/additional-publish-regions.md) Neem contact op met de klantenservice van de Adobe als de problemen zich blijven voordoen.
 
-## Omgevingen bijwerken {#updating-dev-environment}
+## Bijwerken van omgevingen {#updating-dev-environment}
 
-Als cloudservice worden updates van uw testomgeving en productieomgevingen binnen productieprogramma&#39;s automatisch beheerd door Adobe.
+Als cloudservice worden updates van uw testomgeving en productieomgevingen binnen productieprogramma&#39;s automatisch door Adobe beheerd.
 
 Updates voor ontwikkelomgevingen en omgevingen in sandboxprogramma&#39;s worden echter binnen de programma&#39;s beheerd. Wanneer een dergelijke omgeving niet de meest recente openbaar beschikbare AEM versie uitvoert, wordt de status op de **Omgevingen** kaart op **Overzicht** scherm van de programma-shows **Update beschikbaar**.
 
@@ -215,9 +217,9 @@ Updates voor ontwikkelomgevingen en omgevingen in sandboxprogramma&#39;s worden 
 
 ### Updates en pijpleidingen {#updates-pipelines}
 
-Pijpleidingen zijn de enige manier om [code in te voeren aan de milieu&#39;s van AEM as a Cloud Service.](deploy-code.md) Om deze reden, wordt elke pijpleiding geassocieerd met een bepaalde AEM versie.
+Pijpleidingen zijn de enige manier om [code in te voeren aan de milieu&#39;s van AEM as a Cloud Service.](deploy-code.md) Daarom wordt elke pijpleiding geassocieerd met een bepaalde AEM versie.
 
-Als de Manager van de Wolk ontdekt dat er een nieuwere versie van AEM beschikbaar is dan wat het laatst met de pijpleiding werd opgesteld, toont het **Update beschikbaar** status voor het milieu.
+Als de Manager van de Wolk ontdekt dat er een nieuwere versie van AEM beschikbaar is dan wat het laatst met de pijpleiding werd opgesteld, toont het **Update beschikbaar** milieutoestand.
 
 Het proces van actualisering bestaat daarom uit twee stappen:
 
@@ -234,7 +236,7 @@ Deze optie is ook beschikbaar als u op **Omgevingen** van het programma en selec
 
 ![Optie bijwerken op het tabblad Omgevingen](assets/environ-update3.png)
 
-Een gebruiker met de **Implementatiebeheer** rol kan deze optie gebruiken om de pijpleiding verbonden aan dit milieu aan de recentste AEM versie bij te werken.
+Een gebruiker met de **Implementatiebeheer** of **Zakelijke eigenaar** rol kan deze optie gebruiken om de pijpleiding verbonden aan dit milieu aan de recentste AEM versie bij te werken.
 
 Zodra de pijpleidingsversie aan de recentste openbaar beschikbare AEM versie wordt bijgewerkt, wordt de gebruiker ertoe aangezet om de bijbehorende pijpleiding in werking te stellen om de recentste versie aan het milieu op te stellen.
 
@@ -246,15 +248,15 @@ De **Bijwerken** het gedrag van de optie is afhankelijk van de configuratie en d
 * Als de pijpleiding reeds wordt bijgewerkt, **Bijwerken** wordt de gebruiker geïnformeerd dat een update al wordt uitgevoerd.
 * Als een geschikte pijpleiding niet wordt gesloten, **Bijwerken** vraagt de gebruiker om er een te maken.
 
-## Ontwikkelomgeving verwijderen {#deleting-environment}
+## Ontwikkelomgevingen verwijderen {#deleting-environment}
 
-De gebruiker met de vereiste toestemming kan een ontwikkelomgeving schrappen.
+Een gebruiker met de **Implementatiebeheer** of **Zakelijke eigenaar** de rol kan een ontwikkelomgeving schrappen.
 
 Van de **Overzicht** scherm van het programma op het **Omgevingen** Klik op de knop voor weglatingsteken van de ontwikkelomgeving die u wilt verwijderen.
 
 ![De optie Verwijderen](assets/environ-delete.png)
 
-De optie Verwijderen is ook beschikbaar via het dialoogvenster **Omgevingen** tabblad van het dialoogvenster **Overzicht** venster van het programma. Klik op de knop voor weglatingsteken van de omgeving en selecteer **Verwijderen**.
+De optie Verwijderen is ook beschikbaar via het dialoogvenster **Omgevingen** tabblad van het **Overzicht** programmavenster. Klik op de knop voor weglatingsteken van de omgeving en selecteer **Verwijderen**.
 
 ![De verwijderoptie op het tabblad Omgevingen](assets/environ-delete2.png)
 
@@ -271,7 +273,7 @@ Selecteren **Toegang beheren** in het ovaalmenu van de omgeving op het **Omgevin
 
 >[!TIP]
 >
->Zie [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md) als u wilt leren hoe AEM as a Cloud Service team en productprofielen toegang tot uw gelicentieerde oplossingen van de Adobe kunnen verlenen en beperken.
+>Zie [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md) als u wilt leren hoe AEM as a Cloud Service team en productprofielen toegang tot uw vergunning gegeven oplossingen van de Adobe kunnen verlenen en beperken.
 
 ## Toegang tot de ontwikkelaarsconsole {#accessing-developer-console}
 
@@ -283,15 +285,15 @@ Alleen een gebruiker met de **Ontwikkelaar** de rol heeft toegang tot **Ontwerpc
 
 Zie [Sluiende en ontsmette zandbakomgevingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation) voor meer informatie .
 
-Deze optie is ook beschikbaar via de **Omgeving** tabblad van het dialoogvenster **Overzicht** venster wanneer u op het ellipsmenu van een afzonderlijke omgeving klikt.
+Deze optie is ook beschikbaar via de **Omgeving** tabblad van het **Overzicht** venster wanneer u op het ellipsmenu van een afzonderlijke omgeving klikt.
 
 ## Lokaal aanmelden {#login-locally}
 
-Selecteren **Lokale aanmelding** in het ovaalmenu van de omgeving in de **Omgevingen** zodat u zich lokaal kunt aanmelden bij Adobe Experience Manager.
+Selecteren **Lokale aanmelding** in het ovaalmenu van de omgeving in het deelvenster **Omgevingen** kaart om u lokaal aan te melden bij Adobe Experience Manager.
 
 ![Lokaal aanmelden](assets/environ-login-locally.png)
 
-U kunt zich ook lokaal aanmelden via de **Omgevingen** tabblad van het dialoogvenster **Overzicht** pagina.
+U kunt zich ook lokaal aanmelden via het dialoogvenster **Omgevingen** tabblad van het **Overzicht** pagina.
 
 ![Lokaal aanmelden via tabblad omgevingen](assets/environ-login-locally-2.png)
 
@@ -301,6 +303,8 @@ Aangepaste domeinnamen worden ondersteund in de programma&#39;s Cloud Manager fo
 
 Als u aangepaste domeinnamen wilt configureren, navigeert u naar de **Omgevingen** en klik op een omgeving om de omgevingsdetails weer te geven.
 
+Een gebruiker moet beschikken over **Zakelijke eigenaar** of **Implementatiebeheer** rol om een aangepaste domeinnaam toe te voegen in Cloud Manager
+
 ![Omgevingsdetails](assets/domain-names.png)
 
 De volgende acties kunnen op de publicatieservice voor uw milieu worden uitgevoerd.
@@ -309,7 +313,7 @@ De volgende acties kunnen op de publicatieservice voor uw milieu worden uitgevoe
 
 * [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
 
-* [Status van aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) of [SSL-certificaat](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
+* [Status van aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) of een [SSL-certificaat](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
 * [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
@@ -318,27 +322,27 @@ De volgende acties kunnen op de publicatieservice voor uw milieu worden uitgevoe
 
 IP-lijsten van gewenste personen worden ondersteund in Cloud Manager voor auteur-, publicatie- en voorvertoningsservices voor Sites-programma&#39;s.
 
-Om IP lijsten van gewenste personen te beheren, navigeer aan **Omgevingen** tabblad van het dialoogvenster **Overzicht** pagina van uw programma. Klik op een afzonderlijke omgeving zodat u de details ervan kunt beheren.
+Om IP lijsten van gewenste personen te beheren, navigeer aan **Omgevingen** tabblad van het **Overzicht** pagina van uw programma. Klik op een afzonderlijke omgeving zodat u de details ervan kunt beheren.
 
 ### Een IP-Lijst van gewenste personen toepassen {#apply-ip-allow-list}
 
-Het toepassen van een IP lijst van gewenste personen associeert alle IP waaiers inbegrepen in de definitie van de lijst van gewenste personen met een auteur of publiceer de dienst in een milieu. Een gebruiker in de **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet het programma worden geopend om een IP lijst van gewenste personen kunnen toepassen.
+Het toepassen van een IP lijst van gewenste personen associeert alle IP waaiers inbegrepen in de definitie van de lijst van gewenste personen met een auteur of publiceer de dienst in een milieu. Een gebruiker in het dialoogvenster **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet het programma worden geopend om een IP lijst van gewenste personen kunnen toepassen.
 
 De IP lijst van gewenste personen moet in de Manager van de Wolk bestaan om het op een milieu toe te passen. Voor meer informatie over IP-lijsten van gewenste personen in Cloud Manager raadpleegt u [Inleiding tot IP-Lijsten van gewenste personen in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 **Om een IP lijst van gewenste personen toe te passen:**
 
-1. Navigeer naar de specifieke omgeving vanuit de **Omgevingen** tabblad van het programma **Overzicht** en navigeer naar het **IP-Lijsten van gewenste personen** tabel.
+1. Navigeer vanuit de **Omgevingen** tabblad van het programma **Overzicht** en navigeer naar het **IP-Lijsten van gewenste personen** tabel.
 1. Gebruik de inputgebieden bij de bovenkant van de IP lijst van de lijst van gewenste personen zodat kunt u de IP lijst van gewenste personen en de auteur selecteren of de publicatieservice u wenst om het op toe te passen.
 1. Klikken **Toepassen** en bevestig uw inzending.
 
 ### Het toepassen van een IP lijst van gewenste personen ongedaan maken {#unapply-ip-allow-list}
 
-Als u een IP-lijst van gewenste personen niet toepast, worden alle IP-bereiken die zijn opgenomen in de definitie van de lijst van gewenste personen, losgekoppeld van een auteur- of uitgeversservice in een omgeving. Een gebruiker in de **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet het programma worden geopend om een IP lijst van gewenste personen kunnen ongedaan maken.
+Als u een IP-lijst van gewenste personen niet toepast, worden alle IP-bereiken die zijn opgenomen in de definitie van de lijst van gewenste personen, losgekoppeld van een auteur- of uitgeversservice in een omgeving. Een gebruiker in het dialoogvenster **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet het programma worden geopend om een IP lijst van gewenste personen kunnen ongedaan maken.
 
 **Om een IP lijst van gewenste personen ongedaan te maken:**
 
-1. Navigeer naar de specifieke omgeving vanuit de **Omgevingen** tabblad van het programma **Overzicht** en navigeer naar het **IP-Lijsten van gewenste personen** tabel.
+1. Navigeer vanuit de **Omgevingen** tabblad van het programma **Overzicht** en navigeer naar het **IP-Lijsten van gewenste personen** tabel.
 1. Identificeer de rij waar de IP regel van de lijst van gewenste personen die u wilt ongedaan maken vermeld is.
 1. Selecteer de ellipsknop vanaf het einde van de rij.
 1. Selecteren **Toepassen ongedaan maken** en bevestig uw inzending.

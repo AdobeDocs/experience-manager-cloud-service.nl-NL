@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen
 description: Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma's van Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -17,29 +17,9 @@ Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma&#39;
 >
 >Een certificaat kan een paar dagen aan levering vergen. De Adobe beveelt daarom aan dat het certificaat ruim van tevoren wordt verstrekt.
 
-## Certificaatindeling {#certificate-format}
+## Certificaatvereisten {#certificate-requirements}
 
-SSL-certificaatbestanden moeten de PEM-indeling hebben om te worden geïnstalleerd met Cloud Manager. Algemene bestandsextensies in de PEM-indeling omvatten: `.pem,` .`crt`, `.cer`, en `.cert`.
-
-Het volgende `openssl` U kunt opdrachten gebruiken om niet-PEM-certificaten om te zetten.
-
-* PFX converteren naar PEM
-
-  ```shell
-  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-  ```
-
-* P7B converteren naar PEM
-
-  ```shell
-  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-  ```
-
-* DER converteren naar PEM
-
-  ```shell
-  openssl x509 -inform der -in certificate.cer -out certificate.pem
-  ```
+Controleer de sectie **Certificaatvereisten** van het document [Inleiding tot het beheren van SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) om ervoor te zorgen dat het certificaat u wenst toe te voegen door AEM as a Cloud Service wordt gesteund.
 
 ## Een certificaat toevoegen {#adding-a-cert}
 

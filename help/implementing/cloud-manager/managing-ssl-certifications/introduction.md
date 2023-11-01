@@ -2,9 +2,9 @@
 title: Inleiding tot het beheren van SSL-certificaten
 description: Leer hoe u in Cloud Manager zelfbedieningsgereedschappen hebt om SSL-certificaten te installeren.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ AEM alleen as a Cloud Service ondersteunt veilige `https` sites.
 * Klanten met meerdere aangepaste domeinen willen niet telkens wanneer zij een domein toevoegen, een certificaat uploaden.
 * Dergelijke klanten profiteren door één certificaat met veelvoudige domeinen te krijgen.
 
-## Vereisten {#requirements}
+## Certificaatvereisten {#requirements}
 
 * AEM as a Cloud Service accepteert alleen certificaten die voldoen aan het OV- (Organisatie-validatie) of EV-beleid (Extended Validation).
 * Elk certificaat moet een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende persoonlijke RSA-sleutel van 2048 bits.
@@ -57,6 +57,30 @@ AEM alleen as a Cloud Service ondersteunt veilige `https` sites.
 * Zelfondertekende certificaten worden niet geaccepteerd.
 
 OV- en EV-certificaten bieden gebruikers extra door CA gevalideerde informatie die kan worden gebruikt om te bepalen of de eigenaar van een website, de afzender van een e-mail of de digitale handtekening van uitvoerbare code of PDF-documenten betrouwbaar is. DV-certificaten staan een dergelijke eigendomsverificatie niet toe.
+
+### Certificaatindeling {#certificate-format}
+
+SSL-certificaatbestanden moeten de PEM-indeling hebben om te worden geïnstalleerd met Cloud Manager. Algemene bestandsextensies in de PEM-indeling omvatten: `.pem,` .`crt`, `.cer`, en `.cert`.
+
+Het volgende `openssl` U kunt opdrachten gebruiken om niet-PEM-certificaten om te zetten.
+
+* PFX converteren naar PEM
+
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
+
+* P7B converteren naar PEM
+
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
+
+* DER converteren naar PEM
+
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## Beperkingen {#limitations}
 
