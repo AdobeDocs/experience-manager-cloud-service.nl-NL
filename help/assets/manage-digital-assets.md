@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
+source-git-commit: 22cfb23784544947b6a38be0453959913c9e8ccd
 workflow-type: tm+mt
-source-wordcount: '4340'
+source-wordcount: '4358'
 ht-degree: 9%
 
 ---
@@ -266,6 +266,14 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >Als u een uitvoering selecteert in het deelvenster **[!UICONTROL Renditions]**, verandert de context van de werkbalk en worden alleen die acties weergegeven die relevant zijn voor de uitvoering. Opties zoals het pictogram Uitvoering uploaden worden niet weergegeven. Ga naar de pagina met details voor de asset om deze opties in de werkbalk weer te geven.
 
    U kunt de afmetingen configureren voor de vertoning die u wilt weergeven op de detailpagina van een afbeelding of video-element. Op basis van de afmetingen die u opgeeft, wordt de vertoning in Elementen weergegeven met de exacte of dichtstbijzijnde afmetingen.
+
+   U kunt geen uitvoeringen maken met de volgende voorvoegsels, omdat deze intern zijn voor Adobe:
+
+   * cq5
+
+   * cqdam
+
+   * cq5dam
 
    Als u weergaveafmetingen van een afbeelding op het niveau van de assetdetails wilt configureren, overlapt u het knooppunt `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) en configureert u de waarde van de breedte-eigenschap. Configureer de eigenschap **[!UICONTROL size (Long) in KB]** in plaats van de breedte om de weergave op de pagina met assetdetails aan te passen op basis van de afbeeldingsgrootte. Voor aanpassing op basis van grootte wijst de eigenschap `preferOriginal` de voorkeur toe aan het origineel als de grootte van de overeenkomstige weergave groter is dan het origineel.
 
