@@ -2,9 +2,9 @@
 title: Inhoudsoverdrachten valideren
 description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten te valideren
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1084'
 ht-degree: 1%
 
 ---
@@ -101,7 +101,7 @@ Migration validation took 33 minutes
 
 Dit is een voorbeeld van een validatie die is geslaagd, aangezien er geen items ontbraken in de opname-digest die aanwezig waren in de extractiedigest.
 
-Om te vergelijken, hier is hoe een bevestigingsrapport zou kijken als de bevestiging had ontbroken:
+Om te vergelijken, is hier hoe een bevestigingsrapport zou kijken als de bevestiging (of als een top-up migratie werd uitgevoerd) ontbrak:
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]

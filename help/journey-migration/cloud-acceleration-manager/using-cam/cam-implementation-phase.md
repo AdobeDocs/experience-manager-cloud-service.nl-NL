@@ -2,9 +2,9 @@
 title: Implementatiefase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de implementatiefase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '652'
 ht-degree: 2%
 
 ---
@@ -109,7 +109,7 @@ Volg deze sectie zodat u de activiteitenkaart van de Overdracht van de Inhoud ku
 
 1. Download en installeer het gereedschap Inhoud overbrengen om de migratieset te vullen en de extractiefase van de overdracht van inhoud te voltooien. Controleren [Aan de slag met het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) voor meer informatie over het gebruik van het gereedschap Inhoud overbrengen.
 
-1. Als u inhoud van de Migratie-set wilt opnemen in een omgeving op AEM as a Cloud Service, moet u een opname starten. Navigeren naar **Ingestietaken** en klik op **Nieuwe opname**. Controleren [Inhoud in doel invoegen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) zodat kunt u leren hoe te om de fase van de Ingestie van inhoudoverdracht te voltooien.
+1. Als u inhoud van de Migratie-set wilt opnemen in een omgeving op AEM as a Cloud Service, moet u een opname starten. Navigeren naar **Ingestietaken** en klik op **Nieuwe opname**. Controleren [Inhoud in doel invoegen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) zodat kunt u leren hoe te om de fase van de Ingestie van inhoudoverdracht te voltooien.
 
    ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
