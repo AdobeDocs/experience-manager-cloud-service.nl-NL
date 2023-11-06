@@ -2,9 +2,9 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
+source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2665'
 ht-degree: 10%
 
 ---
@@ -198,7 +198,7 @@ In beide gevallen wordt dezelfde set geautomatiseerde tests uitgevoerd. Het best
 
 * door de Adobe wordt bijgedragen om de productintegriteit te waarborgen
 * door de klant geleverde tests
-   * Functionele tests: http
+   * Functionele tests: via http-verzoeken aan de AEM auteur of publicatielaag
    * UI-tests: gebaseerd op Selenium- of Cypress-technologie
 
 Deze geautomatiseerde tests worden uitgevoerd in de Stage-omgeving. Daarom is het belangrijk dat de Stage-omgeving zo dicht mogelijk bij de inhoud van de Production-instantie blijft.
