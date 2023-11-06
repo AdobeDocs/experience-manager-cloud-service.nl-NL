@@ -2,9 +2,9 @@
 title: Toewijzing van gebruikers en belangrijkste migratie
 description: Overzicht van gebruikerstoewijzing en belangrijkste migratie in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
+source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '1003'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde
 
 ## Belangrijkste migratiegegevens {#principal-migration-detail}
 
-Met het gereedschap Inhoud overbrengen en het beheer van cloudversnelling kunt u alle principes die aan de gemigreerde inhoud zijn gekoppeld, migreren naar het cloudsysteem.  Dit doet u met het gereedschap Inhoud overbrengen door tijdens het extractieproces alle hoofdelementen van het AEM bronsysteem te kopiëren.  CAM Ingestie selecteert en migreert dan slechts die principes verbonden aan de inhoud die worden opgenomen.
+Met het gereedschap Inhoud overbrengen en het beheer van cloudversnelling kunt u alle principes die aan de gemigreerde inhoud zijn gekoppeld, migreren naar het cloudsysteem.  Dit doet u met het gereedschap Inhoud overbrengen door tijdens het extractieproces alle hoofdelementen van het AEM bronsysteem te kopiëren.  CAM Ingestie selecteert en migreert dan slechts die principes verbonden aan de inhoud die worden opgenomen. Als een hoofd op ACL of het beleid van de GIDS van gemigreerde inhoud is, dat hoofd en alle groepen het binnen is en hun voorvader (ouder) groepen allen zullen worden gemigreerd. Bovendien, als een hoofd op de inhoud een groep is, zullen al zijn afstammende (kind) groepen en gebruikers ook worden gemigreerd.
 
 ## Details gebruikerstoewijzing {#user-mapping-detail}
 

@@ -1,15 +1,15 @@
 ---
-title: Aanvullende publicatiegebieden
+title: Aanvullende publicatieregio's
 description: Leer hoe AEM as a Cloud Service extra publicatiegebieden voor verhoogde beschikbaarheid en verminderde latentie steunt.
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
+source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
 
-
-# Aanvullende publicatiegebieden {#additional-publish-regions}
+# Aanvullende publicatieregio&#39;s {#additional-publish-regions}
 
 Voor aanvullende publicatiegebieden kan een licentie worden verleend en deze kunnen worden ingeschakeld voor programma&#39;s die zijn ingesteld met AEM Sites. Wanneer gevormd, wordt het verkeer op stadium en productiemilieu&#39;s verpletterd aan veelvoudige publicatielandbouwbedrijven, die de volgende voordelen heeft:
 
@@ -36,6 +36,11 @@ Nadat u een licentie voor een extra publicatiegebied hebt verleend, worden de re
 
 Aanvullende publicatiegebieden worden toegepast op stadium- en productieomgevingen, maar niet op RDE- of ontwikkelomgevingen.
 
+In het geval een gebied niet beschikbaar wordt, te hoeven de klanten niet om het verpletteren van verkeer aan beschikbare gebieden te beheren aangezien het door Adobe CDN wordt beheerd.
+
+Zoals beschreven in de Geavanceerde sectie van de Overwegingen van het Voorzien van een netwerk hieronder, wordt het geadviseerd dat de klanten die geavanceerd voorzien van een netwerk gebruiken het voor elk extra publicatiegebied vormen om beschikbaarheid te handhaven als een gebied niet beschikbaar wordt.
+
+
 ## Geavanceerde overwegingen voor netwerken {#advanced-networking-considerations}
 
 Wanneer een extra publicatiegebied op een programma met geavanceerd reeds gevormd voorzien van een netwerk wordt toegelaten, zal het verkeer in het extra publicatiegebied dat de geavanceerde voorzien van een netwerkregels aanpast door standaardroute door het primaire gebied. Om uit verhoogde beschikbaarheid voordeel te halen, wordt het geadviseerd om geavanceerd voorzien van een netwerk op de extra gebieden toe te laten.
@@ -46,7 +51,7 @@ Zie de [Geavanceerde netwerkconfiguratie voor extra publicatiegebieden](/help/se
 
 Houd rekening met de volgende beperkingen wanneer u overweegt extra publicatiegebieden te gebruiken.
 
-* Aanvullende publicatiegebieden mogen alleen aan AEM Sites worden toegevoegd. De extra publicatiegebieden strekken zich niet tot andere AEM oplossingen of verwante functionaliteit uit die in het zelfde programma (b.v. AEM Forms of de Leermanager van Adobe) worden opgesteld.
+* Aanvullende publicatiegebieden mogen alleen aan AEM Sites worden toegevoegd. De extra publicatiegebieden strekken zich niet tot andere AEM oplossingen of verwante functionaliteit uit die in het zelfde programma (b.v. AEM Forms of de Leermanager van de Adobe) worden opgesteld.
 * Aanvullende regio&#39;s kunnen alleen worden toegevoegd als de bijbehorende rechten beschikbaar en ongebruikt zijn in de huurder.
 * Er kunnen maximaal drie extra publicatiegebieden worden toegevoegd aan elke afzonderlijke omgeving.
 * Aanvullende regio&#39;s zijn alleen beschikbaar voor productieprogramma&#39;s. De functie is niet beschikbaar in sandboxprogramma&#39;s.
