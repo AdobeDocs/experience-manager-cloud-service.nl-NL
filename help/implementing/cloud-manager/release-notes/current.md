@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2023.10.0 in Adobe Experience Ma
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.10.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
+source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ De releasedatum voor Cloud Manager versie 2023.10.0 in AEM as a Cloud Service is
    * Deze update wordt gefaseerd uitgevoerd.
 * Met de release van oktober 2023 van Cloud Manager worden Java-versies bijgewerkt via een gefaseerde implementatie.
    * De kleine versies voor Java 8 en 11 en Maven zijn bijgewerkt en zullen in de komende twee maanden geleidelijk worden geïmplementeerd. De nieuwe versie heeft veelvoudige veiligheidsmoeilijke situaties en insecten. De nieuwe versies zijn:
-   * *Gemaakt: 3.8.8*
-   * *Java 8-versie: /usr/lib/jvm/jdk1.8.0_371*
-   * *Java 11-versie: /usr/lib/jvm/jdk-11.0.20*
+      * **Gemaakt:** `3.8.8`
+      * **Java 8-versie:** `/usr/lib/jvm/jdk1.8.0_371`
+      * **Java 11-versie:** `/usr/lib/jvm/jdk-11.0.20`
    * [Zie het advies van OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) voor meer informatie over de beveiliging en foutoplossingen in deze JDK-updates.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
@@ -66,3 +66,15 @@ Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een 
 Het dashboard maakt gebruik van Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het tegen om het even welke Web-pagina in werking stellen, openbaar of het vereisen van authentificatie. Er zijn audits voor prestaties, toegankelijkheid, progressieve webapps, SEO en meer.
 
 Geïnteresseerd in het testen van het nieuwe dashboard? Stuur een e-mail naar `aem-lighthouse-pilot@adobe.com` via je e-mail die aan je Adobe ID is gekoppeld. We kunnen je aan de slag.
+
+## Bekende problemen {#known-issues}
+
+Er is een bekende bug die voorkomt [Distributiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) van overschakelen op productie.
+
+Als de **Pauzeren vóór implementatie naar productie** de optie wordt vereist voor een config plaatsingspijpleiding, is het volgende gesuggereerde tijdelijke oplossing tot de bug wordt opgelost.
+
+1. Voer de pijplijn uit.
+1. Test de code in de testomgeving.
+1. Wanneer het opstellen en de goedkeuring beschikbaar wordt, klik op **Afwijzen**.
+1. Bewerk de pijplijn om de **Pauzeren vóór implementatie naar productie** -optie.
+1. Voer de pijplijn opnieuw uit. Het zal opnieuw lopen op het opvoeren toen op productie.
