@@ -3,9 +3,9 @@ title: Best practices zoeken voor [!DNL Adobe Experience Manager] als [!DNL Clou
 description: Aanbevolen procedures voor het zoeken, zoeken en ophalen van metagegevens van elementen in uw toepassing.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 8fc09f11127b29a6cd0f56f4e9d217b9756bbb8f
+source-git-commit: 780f0dee9a2a0fd7fa63b93bdd8be6bc23eef04f
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2455'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ U kunt de zoekopdracht specifieker maken door het trefwoord in dubbele aanhaling
 
 Als u in het dialoogvenster **[!UICONTROL Assets view]** ook.
 
-[Een video bekijken om een basiszoekopdracht uit te voeren in AEM Assets](https://video.tv.adobe.com/v/3425489)
+>[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
 ## Bestanden en mappen {#files-folders}
 
@@ -67,7 +67,7 @@ Selecteer de map in het pad en navigeer naar de vereiste map als u in de specifi
 
 ![Zoeken met bestanden en mappen](assets/files-folders.png)
 
-[Bekijk een video om te zoeken in AEM Assets met Bestanden en Mappen](https://video.tv.adobe.com/v/3425487)
+>[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
 ## Operatoren {#operators}
 
@@ -119,7 +119,7 @@ Sterretje is een jokertekenoperator die wordt gebruikt om uw zoekopdracht uit te
 * `car*` retourneert elementen met was, drager, vervoer, enzovoort.
 * `*car` retourneert bezittingen met moderne auto&#39;s, sportauto&#39;s enzovoort.
 
-[Bekijk een video om te zoeken in AEM Assets met jokertekens](https://video.tv.adobe.com/v/3425488)
+>[!VIDEO](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL Assets view]** ondersteunt het gebruik van jokertekens niet.
 
@@ -187,7 +187,7 @@ Om activa te zoeken gebruikend het vermelde scenario in **[!UICONTROL Assets vie
 1. Ga naar zoekfilters.
 1. Ga naar Filters. Onder [!UICONTROL MIME Type]selecteert u alle opgegeven MIME-typen, maar deselecteert u PNG.
 
-[Een video bekijken om te zoeken in AEM Assets met behulp van filters](https://video.tv.adobe.com/v/3425486)
+>[!VIDEO](https://video.tv.adobe.com/v/3425486)
 
 ## Geavanceerd zoeken {#advanced-search}
 
@@ -241,7 +241,7 @@ U kunt specifieke criteria vastleggen met behulp van verschillende zoekfilters. 
 
 Als u in het dialoogvenster **[!UICONTROL Assets view]** ook.
 
-[Bekijk een video om te zoeken in AEM Assets met Geavanceerd zoeken](https://video.tv.adobe.com/v/3425490)
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
 **Scenario 9: vergelijkbare overeenkomst zoeken voor rode kleurenauto**
 
