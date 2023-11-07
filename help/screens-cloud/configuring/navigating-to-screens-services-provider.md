@@ -2,9 +2,9 @@
 title: Navigeren naar de Serviceverlener voor schermen
 description: In deze pagina wordt beschreven hoe u naar de Serviceverlener voor schermen kunt navigeren.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: ad5a8656b200ba35a0a6f58afd4be03202138f47
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '292'
 ht-degree: 1%
 
 ---
@@ -38,6 +38,9 @@ Voer de onderstaande stappen uit om de Serviceverlener voor schermen in te stell
 3. Voer in het dialoogvenster Instellingen bewerken de volgende gegevens in.
    * **URL publiceren** - AEM publicatie-URL (bijvoorbeeld `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **Auteur-URL** - AEM auteur-URL (bijvoorbeeld `https://author-p12345-e12345.adobeaemcloud.com`)
+
+   >[!NOTE]
+   >Zorg ervoor dat u ten minste één schermkanaal maakt en publiceert voordat u de AEM onder Scherm Service Provider configureert. Als u een kanaal wilt maken, navigeert u naar /screens.html op uw inhoudsprovider.
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens4.png)
 
