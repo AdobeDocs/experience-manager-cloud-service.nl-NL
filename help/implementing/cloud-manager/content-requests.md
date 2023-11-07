@@ -2,9 +2,9 @@
 title: Inhoudsverzoeken van Cloud Servicen begrijpen
 description: Als u licenties voor inhoudsaanvragen van Adobe hebt aangeschaft, leert u meer over de typen inhoudsaanvragen die Adobe Experience Cloud als een service meet en over de verschillen met de analytische rapportagehulpprogramma's van een organisatie.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De Verzoeken van de inhoud kunnen variaties met Analytics van een organisatie he
 | Instrumenten voor toezicht en beveiliging van derden | Met de hulpprogramma&#39;s voor controle en beveiligingsscans kunt u verzoeken om inhoud genereren voor AEM die niet worden bijgehouden in analytische rapporten. |
 | API-toegang | Programmatische toegang tot pagina&#39;s of tot Adobe Experience Manager API&#39;s kan inhoudsverzoeken voor AEM genereren die niet worden bijgehouden in analyserapporten. |
 | Prefetverzoeken | Als u een prefetch-service gebruikt om pagina&#39;s vooraf te laden om de snelheid te verhogen, kan dit leiden tot aanzienlijke toename van het verkeer van inhoudsverzoeken. |
-| DDOS | Terwijl de Adobe al het mogelijke doet om verkeer van aanvallen DDOS automatisch te ontdekken en uit te filtreren, is er geen garantie dat alle mogelijke aanvallen DDOS worden ontdekt |
+| DDOS | Terwijl de Adobe pogingen doet om verkeer van aanvallen DDOS automatisch te ontdekken en uit te filtreren, is er geen garantie dat alle mogelijke aanvallen DDOS worden ontdekt. |
 | Verkeersblokkers | Als u een tracker-blokker in een browser gebruikt, kunnen sommige aanvragen niet worden bijgehouden. |
 | Firewalls | Firewalls kunnen het bijhouden van analyses blokkeren. Dit scenario komt vaker voor bij bedrijfsfirewalls. |
 
@@ -59,7 +59,7 @@ Zie ook [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.m
 | HTTP-code 400-499 | Uitgesloten | Fouten die aan de bezoeker zijn geretourneerd wanneer de inhoud niet bestaat (404) of wanneer er andere problemen zijn met inhoud of verzoeken. |
 | HTTP-code 300-399 | Uitgesloten | Dit zijn goede verzoeken die of controleren of iets op de server is veranderd, of het verzoek aan een andere middel opnieuw richten. Ze bevatten geen inhoud op zich en kunnen daarom niet worden gefactureerd. |
 | Verzoeken naar /libs/* | Uitgesloten | AEM interne JSON-aanvragen, zoals de CSRF-token die niet kan worden opgevraagd. |
-| Verkeer van aanvallen DDOS | Uitgesloten | DDOS-bescherming. AEM detecteert sommige DDOS-aanvallen automatisch en blokkeert deze. DDOS-aanvallen indien gedetecteerd, kunnen niet worden opgeladen.<br><br>Automatisch gedetecteerde DDOS-typen:<br>・ DDOSBlockedCiphersSHA<br>・ DDOSBlockedPattern<br>・ DDOSSuspiciousRequest |
+| Verkeer van aanvallen DDOS | Uitgesloten | DDOS-bescherming. AEM detecteert sommige DDOS-aanvallen automatisch en blokkeert deze. DDOS-aanvallen indien gedetecteerd, kunnen niet worden opgeladen. |
 | AEM as a Cloud Service NewRelic Monitoring | Uitgesloten | AEM as a Cloud Service wereldwijde monitoring. |
 | URL voor klanten om hun programma van de Cloud Service te controleren | Uitgesloten | Aanbevolen URL om de beschikbaarheid extern te controleren.<br><br>`/system/probes/health` |
 | as a Cloud Service pod Warm-up service AEM | Uitgesloten | Gebruikersagent: skyline-service-warmup/1.* |
