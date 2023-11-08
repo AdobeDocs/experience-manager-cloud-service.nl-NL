@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2022.3.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.3.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Kijk eens naar de [Overzicht release maart 2022](https://video.tv.adobe.com/v/34
 
 * U kunt nu de opdracht [!DNL Experience Manager Assets] gebruikersinterface naar:
 
-   * Vorm [detectie van dubbele elementen](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in een opslagplaats.
+   * Vorm [detectie van dubbele elementen](/help/assets/detect-duplicate-assets.md) in een opslagplaats.
 
    * Configureren [toevoegen van digitale watermerken](/help/assets/watermark-assets.md) naar afbeeldingen.
 
@@ -74,18 +74,18 @@ Kijk eens naar de [Overzicht release maart 2022](https://video.tv.adobe.com/v/34
 
 * **Onzichtbare CAPTCHA gebruiken in een adaptieve vorm**: U kunt de onzichtbare CAPTCHA gebruiken om de CAPTCHA-uitdaging alleen te tonen in het geval van een verdachte activiteit. Als er geen verdachte activiteit wordt gevonden, wordt de CAPTCHA-uitdaging niet weergegeven.
 
-## CIF-invoegtoepassing {#cloud-services-cif}
+## CIF invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 
 * Verbeterde SEO voor meerdere opslagscenario&#39;s: URL-indelingen voor PDP / PLP kunnen nu op archiefniveau worden geconfigureerd via de CIF Cloud Config-eigenschappen
 * Productkiezer ondersteunt gefaseerde producten via een nieuwe filteroptie in de gebruikersinterface.  Hierdoor kunnen gebruikers van inhoud het beheer van de productinhoud voorbereiden op de volgende productlanceringen
-* Vereenvoudigd CIF-configuratiebeheer en foutafhandeling door CIF Cloud Config-naam te gebruiken in plaats van proxyURL te configureren
+* Vereenvoudigd CIF configuratiebeheer en foutafhandeling met de naam CIF Cloud Config in plaats van proxyURL te configureren
 * Handmatige categorieselectie voor productlijst en carrouselcomponenten. Hierdoor kunnen gebruikers van inhoud deze componenten gebruiken op inhoudspagina&#39;s, buiten de ervaring met catalogi
 
-### Nieuwe functies beschikbaar in het CIF-prerelease-kanaal {#prerelease-features-cif}
+### Nieuwe functies beschikbaar in CIF prerelease-kanaal {#prerelease-features-cif}
 
-* AEM ondersteuning voor Kerncomponent CIF Search Commerce LiveSearch
+* AEM CIF de Steun van de Component van het Onderzoek van de KernComponent Commerce LiveSearch
 
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
 

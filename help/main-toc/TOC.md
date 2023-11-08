@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 54a80e7b980c28e50ee849bbb5d23adbf5de2073
+source-git-commit: dc79bb2bfae4071d353ba83c2c9d6cc44d4e9747
 workflow-type: tm+mt
-source-wordcount: '4360'
+source-wordcount: '4363'
 ht-degree: 19%
 
 ---
@@ -431,6 +431,7 @@ ht-degree: 19%
       + [Kleurlabels voor afbeeldingen](/help/assets/color-tag-images.md)
       + [PDF-documenten beheren](/help/assets/manage-pdf-documents.md)
    + Configureren, beheren en uitbreiden [!DNL Assets] {#admin}
+      + [Gedupliceerde elementen detecteren](/help/assets/detect-duplicate-assets.md)
       + [Referenties van ontwikkelaarsdocumenten en -API&#39;s](/help/assets/developer-reference-material-apis.md)
       + [Metadataschema van map](/help/assets/folder-metadata-schema.md)
       + [Werken met afbeeldings- en videoprofielen](/help/assets/dynamic-media/about-image-video-profiles.md)
