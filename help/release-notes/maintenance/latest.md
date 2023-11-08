@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e7e565556b382a662fb8afc5aadaa26d2357e294
+source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -101,9 +101,6 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14157 same
 * FORMS-11206: Wanneer een gebruiker een publicatieworkflow probeert te plannen voor een adaptief formulier, werkt dit niet zoals verwacht.
 * FORMS-11546: Lighthouse heeft een ontbrekend ARIA-label gedetecteerd voor herhaalde deelvensters in een adaptieve vorm, wat van invloed is op de toegankelijkheid.
 * FORMS-11095: Het kenmerk ARIA is onjuist gedefinieerd voor telefoonnummers, e-mailadres en nummervelden, wat leidt tot toegankelijkheidsproblemen.
-* FORMS-9894: De API van de Output Service genereert een onjuiste foutcode wanneer een gebruiker een ongeldig repository pad verschaft, wat tot verwarring leidt voor gebruikers die dit probleem tegenkomen.
-* FORMS-11404: De dienst ImportData vertoont inconsistent gedrag wanneer het samenvoegen van diverse gegevens van XML met een reader-uitgebreide PDF. Met name blijven de eigenschappen van de reader-extensie behouden voor één PDF-uitvoerdocument, maar dit gebeurt niet voor andere PDF.
-
 
 ### Bekende problemen {#known-issues-14157}
 
