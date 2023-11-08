@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
+source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2132'
 ht-degree: 0%
 
 ---
@@ -41,23 +41,23 @@ U kunt een adaptief formulierfragment helemaal opnieuw maken of een deelvenster 
 
 1. Klik om het dialoogvenster **Formuliermodel** en van de **Selecteren uit** selecteert u een van de volgende modellen voor het fragment:
 
-   * **Geen**: hiermee geeft u op dat het fragment helemaal opnieuw moet worden gemaakt zonder een formuliermodel te gebruiken.
+   * **Geen**: Hiermee geeft u op het fragment helemaal opnieuw te maken zonder een formuliermodel te gebruiken.
 
      >[!NOTE]
      >
-     > In adaptieve vormen op basis van kerncomponenten kunt u één formulierfragment meerdere keren in een formulier gebruiken. Deze ondersteunt zowel op geen gebaseerde als op schema gebaseerde formulierfragmenten.
+     > In Adaptive Forms kunt u één formulierfragment (op basis van kerncomponenten) meerdere keren gebruiken in een formulier. Dit biedt ondersteuning voor formulierfragmenten die zijn gebaseerd op geen en op schema&#39;s gebaseerde fragmenten.
 
-   * **Formuliersjabloon**: Geeft aan het fragment te maken met een XDP-sjabloon waarnaar geüpload wordt [!DNL AEM Forms]. Selecteer de juiste XDP-sjabloon als het formuliermodel voor het fragment.
+   * **Formuliersjabloon**: geeft aan dat het fragment moet worden gemaakt met behulp van een XDP-sjabloon die is geüpload naar [!DNL AEM Forms]. Selecteer de juiste XDP-sjabloon als het formuliermodel voor het fragment.
 
-   ![Een adaptief formulier maken met een formuliersjabloon als model](assets/form-template-model.png)
+   ![Een adaptief formulier maken met de formuliersjabloon als model](assets/form-template-model.png)
 
-   De subformulieren die als fragmenten zijn gemarkeerd in de geselecteerde formuliersjabloon worden ook weergegeven. U kunt een subformulier voor Adaptief formulierfragment selecteren in de vervolgkeuzelijst.
+   De subformulieren die als fragmenten zijn gemarkeerd in de geselecteerde formuliersjabloon, worden ook weergegeven. U kunt een subformulier voor Adaptief formulierfragment selecteren in de vervolgkeuzelijst.
 
-   ![Subvormen in de opgegeven formuliersjabloon selecteren](assets/fragment-subform.png)
+   ![Subformulieren selecteren uit de opgegeven formuliersjabloon](assets/fragment-subform.png)
 
-   Bovendien kunt u een adaptief formulierfragment maken met behulp van subvormen die niet als fragmenten zijn gemarkeerd in de formuliersjabloon door de SOM-expressie voor het subformulier op te geven in de vervolgkeuzelijst.
+   Daarnaast kunt u een adaptief formulierfragment maken met subformulieren die niet zijn gemarkeerd als fragmenten in de formuliersjabloon door de SOM-expressie voor het subformulier op te geven in de vervolgkeuzelijst.
 
-   * **XML-schema**: geeft aan dat het fragment moet worden gemaakt met behulp van een XML-schema dat wordt geüpload naar [!DNL AEM Forms]. U kunt uit de beschikbare XML-schema&#39;s uploaden of selecteren als formuliermodel voor het fragment.
+   * **XML-schema**: Geeft op om het fragment te maken met een XML-schema dat is geüpload naar [!DNL AEM Forms]. U kunt een van de beschikbare XML-schema&#39;s uploaden of selecteren als het formuliermodel voor het fragment.
 
    ![Een adaptief formulierfragment maken op basis van een XML-schema als model](assets/xml-schema-model.png)
 
@@ -69,7 +69,7 @@ U kunt een adaptief formulierfragment helemaal opnieuw maken of een deelvenster 
 
 In de bewerkingsmodus kunt u elke adaptieve formuliercomponent van de AEM naar het fragment slepen en neerzetten. <!-- For information about Adaptive Form components, see Introduction to authoring Adaptive Forms. -->
 
-Als u bovendien een XML-schema of XDP-formuliersjabloon hebt geselecteerd als het formuliermodel voor uw fragment, wordt een nieuw tabblad met de hiërarchie van het formuliermodel weergegeven in de zoeker naar inhoud. Hiermee kunt u formuliermodelelementen naar het fragment slepen en neerzetten. De toegevoegde formuliermodelelementen worden geconverteerd naar formuliercomponenten, terwijl de oorspronkelijke eigenschappen van de gekoppelde XDP of XSD behouden blijven.
+Als u bovendien een XML-schema of XDP-formuliersjabloon hebt geselecteerd als het formuliermodel voor uw fragment, wordt een nieuw tabblad met de hiërarchie van het formuliermodel weergegeven in de zoeker naar inhoud. Hiermee kunt u formuliermodelelementen naar het fragment slepen en neerzetten. De toegevoegde formuliermodelelementen worden omgezet in formuliercomponenten waarbij de oorspronkelijke eigenschappen van de bijbehorende XDP of XSD behouden blijven.
 
 ### Deelvenster opslaan als een fragment {#save-panel-as-a-fragment}
 
@@ -98,7 +98,7 @@ Als u bovendien een XML-schema of XDP-formuliersjabloon hebt geselecteerd als he
 
    * **Formuliermodel**: Afhankelijk van het formuliermodel voor het adaptieve formulier wordt in dit veld het dialoogvenster **XML-schema**, **Formuliersjabloon**, of **Geen**. Het is een niet-bewerkbaar veld.
 
-   * **Hoofdmap van fragmentmodel**: wordt alleen weergegeven in adaptieve Forms op basis van XSD. Hiermee geeft u de basis voor het fragmentmodel op. U kunt **/** of het XSD-complexe type uit de vervolgkeuzelijst. U kunt het fragment alleen opnieuw gebruiken in een ander adaptief formulier als u het complexe type selecteert als hoofdknooppunt van het fragmentmodel.
+   * **Hoofdmap** fragmentmodel: verschijnt alleen in op XSD gebaseerde adaptieve vormen. Hiermee geeft u de basis voor het fragmentmodel op. U kunt het XSD-complextype kiezen **** in de vervolgkeuzelijst. U kunt het fragment alleen opnieuw gebruiken in een ander adaptief formulier als u het complexe type selecteert als hoofdknooppunt van het fragmentmodel.
 Als u **/** Als hoofdmap van het fragmentmodel is de volledige XSD-structuur van het basismodel zichtbaar op het tabblad Adaptief formuliergegevensmodel. Voor een complexe hoofdmap van een fragmentmodel zijn alleen de onderliggende elementen van het geselecteerde complexe type zichtbaar op het tabblad Adaptief formuliergegevensmodel.
 
    * **XSD Ref**: wordt alleen weergegeven in adaptieve Forms op basis van XSD. De locatie van het XML-schema wordt weergegeven.
@@ -137,29 +137,29 @@ De adaptieve formulierfragmenten die u maakt, worden weergegeven op het tabblad 
 1. Open het adaptieve formulier in de bewerkingsmodus waarin u een adaptief formulierfragment wilt invoegen.
 1. Klikken **Activa** ![assets-browser](assets/assets-browser.png) in de zijbalk. Selecteer in de middelenbrowser de optie **Adaptieve formulierfragmenten** in de vervolgkeuzelijst.
 
-   U kunt er ook voor kiezen om alle Adaptieve formulierfragmenten of een filter weer te geven op basis van hun formuliermodel: Formuliersjabloon, XML-schema of Standaard.
+   U kunt er ook voor kiezen om alle adaptieve formulierfragmenten of filters weer te geven op basis van het formuliermodel (Formuliersjabloon, XML-schema of Standaard).
 
-1. Sleep een adaptief formulierfragment naar het adaptieve formulier.
+1. Sleep een adaptief formulierfragment naar de adaptieve vorm.
 
    >[!NOTE]
    >
-   >Het adaptieve formulierfragment is niet ingeschakeld voor ontwerpen vanuit het adaptieve formulier. Bovendien kunt u een XSD-fragment niet gebruiken in een op JSON gebaseerde adaptieve vorm en omgekeerd.
+   >Het adaptieve formulierfragment is niet ingeschakeld voor ontwerpen vanuit het Adaptieve formulier. Bovendien kunt u een op XSD gebaseerde fragment niet gebruiken in een op JSON gebaseerde adaptieve vorm en omgekeerd.
 
-Het adaptieve formulierfragment wordt ter referentie ingevoegd in het adaptieve formulier en wordt gesynchroniseerd met het standalone adaptieve formulierfragment. Dit betekent dat wanneer u het adaptieve formulierfragment bijwerkt, de wijzigingen worden doorgevoerd in alle adaptieve Forms waar het fragment wordt gebruikt.
+Het adaptieve formulierfragment wordt als referentie ingevoegd in het adaptieve formulier en wordt gesynchroniseerd met het op zichzelf staande adaptieve formulierfragment. Dit betekent dat wanneer u het adaptieve formulierfragment bijwerkt, de wijzigingen worden doorgevoerd in alle adaptieve vormen waar het fragment wordt gebruikt.
 
-### Een fragment insluiten in adaptieve vorm {#embed-a-fragment-in-adaptive-form}
+### Een fragment insluiten in Adaptieve vorm {#embed-a-fragment-in-adaptive-form}
 
-U kunt ervoor kiezen om een adaptief formulierfragment in te sluiten in een adaptief formulier door te klikken op de knop Element insluiten **: *fragmentName*>** op de deelvensterwerkbalk van het toegevoegde fragment, zoals weergegeven in de volgende voorbeeldafbeelding.
+U kunt een adaptief formulierfragment insluiten in een adaptief formulier door op **Element insluiten: &lt;*fragmentName*>** op de paneelwerkbalk van het toegevoegde fragment, zoals in de volgende voorbeeldafbeelding wordt getoond.
 
-![Een formulierfragment insluiten in Adaptieve vorm](assets/embed-fragment.png)
+![Een formulierfragment insluiten in adaptieve vorm](assets/embed-fragment.png)
 
 >[!NOTE]
 >
->Het ingesloten fragment is niet meer gekoppeld aan het op zichzelf staande fragment. U kunt de componenten in het ingesloten fragment bewerken vanuit het adaptieve formulier.
+>Het ingesloten fragment is niet meer gekoppeld aan het zelfstandige fragment. U kunt de componenten in het ingesloten fragment bewerken vanuit het adaptieve formulier.
 
-### Fragmenten binnen fragmenten gebruiken {#using-fragments-within-fragments}
+### Fragmenten in fragmenten gebruiken {#using-fragments-within-fragments}
 
-U kunt geneste adaptieve vormfragmenten maken. Dit betekent dat u een fragment naar een ander fragment kunt slepen en neerzetten en een geneste fragmentstructuur kunt hebben.
+U kunt geneste adaptieve formulierfragmenten maken, wat betekent dat u een fragment naar een ander fragment kunt slepen en neerzetten en dat u een geneste fragmentstructuur kunt hebben.
 
 ### Fragmenten wijzigen {#change-fragments}
 
@@ -173,25 +173,25 @@ U kunt een formulierfragment op basis van een schema meerdere keren gebruiken in
 
 >[!NOTE]
 >
-> * Als u op geen gebaseerde formulierfragmenten meerdere keren gebruikt in een adaptief formulier, worden gegevens gesynchroniseerd tussen de fragmentvelden. U kunt één [formulierfragment (op basis van kerncomponenten)](/help/forms/adaptive-form-fragments-core-components.md)  meerdere keren in een formulier. Dit gereedschap ondersteunt formulierfragmenten zonder problemen met gegevenssynchronisatie en op schema&#39;s gebaseerde formulierfragmenten.
+> Als u op geen gebaseerde formulierfragmenten meerdere keren in een adaptief formulier gebruikt, vindt gegevenssynchronisatie tussen de velden van de fragmenten plaats. U kunt één [formulierfragment (op basis van kerncomponenten)](/help/forms/adaptive-form-fragments-core-components.md) gebruiken dat niet meerdere keren in een formulier is gekoppeld aan een formuliergegevensmodel zonder problemen met gegevenssynchronisatie.
 
 ## Automatische toewijzing van fragmenten voor gegevensbinding {#auto-mapping-of-fragments-for-data-binding}
 
-Wanneer u een adaptief formulierfragment maakt met een XFA-formuliersjabloon of een XSD-complex type en het fragment naar een adaptief formulier sleept, wordt het XFA-fragment of het XSD-complexe type automatisch vervangen door het corresponderende adaptieve formulierfragment waarvan de hoofdmap van het fragmentmodel is toegewezen aan het XFA-fragment of het XSD-complexe type.
+Wanneer u een adaptief formulierfragment maakt met een XFA-formuliersjabloon of een XSD-complex type en het fragment naar een Adaptief formulier sleept, wordt het XFA-fragment of het XSD-complexe type automatisch vervangen door het overeenkomstige Adaptieve formulierfragment waarvan de basis van het fragmentmodel is toegewezen aan het XFA-fragment of het XSD-complexe type.
 
-U kunt het fragmentelement en de bijbehorende bindingen wijzigen in het dialoogvenster Component bewerken.
+U kunt het fragmentmiddel en de bindingen ervan wijzigen in het dialoogvenster Component bewerken.
 
 >[!NOTE]
 >
->U kunt een gebonden adaptief formulierfragment ook slepen en neerzetten vanuit de bibliotheek met adaptief formulierfragment in AEM inhoudzoeker en de juiste bindingsverwijzing opgeven in het dialoogvenster Component bewerken van het deelvenster Adaptief formulierfragment.
+>U kunt ook een gebonden adaptief formulierfragment uit de bibliotheek Adaptief formulierfragment in AEM Content Finder slepen en de juiste bindverwijzing weergeven vanuit het dialoogvenster Component bewerken van het deelvenster Fragment van adaptieve vorm.
 
 ## Fragmenten beheren {#manage-fragments}
 
-U kunt verschillende bewerkingen uitvoeren op Adaptieve formulierfragmenten via de [!DNL AEM Forms] gebruikersinterface.
+U kunt verschillende bewerkingen uitvoeren op adaptieve formulierfragmenten met de opdracht [!DNL AEM Forms] UI.
 
 1. Ga naar `https://[hostname]:'port'/aem/forms.html`.
 
-1. Klik op **Selecteren** in de werkbalk van de [!DNL AEM Forms] gebruikersinterface en selecteer een adaptief formulierfragment. Op de werkbalk worden de volgende bewerkingen weergegeven die u kunt uitvoeren op het geselecteerde fragment van de adaptieve vorm.
+1. Klikken **Selecteren** in de [!DNL AEM Forms] UI-werkbalk en selecteer een adaptief formulierfragment. De werkbalk bevat de volgende bewerkingen die u kunt uitvoeren op het geselecteerde adaptieve formulierfragment.
 
 <table>
  <tbody>
@@ -205,7 +205,7 @@ U kunt verschillende bewerkingen uitvoeren op Adaptieve formulierfragmenten via 
   </tr>
   <tr>
    <td><p>Eigenschappen weergeven</p> </td>
-   <td><p>Hiermee opent u het deelvenster Eigenschappen. In het deelvenster Eigenschappen kunt u eigenschappen weergeven en bewerken, een voorvertoning genereren en een miniatuurafbeelding voor het geselecteerde fragment uploaden. Zie voor meer informatie <a href="manage-form-metadata.md" target="_blank">Metagegevens beheren</a>.<br /> <br /> </p> </td>
+   <td><p>Hiermee opent u het deelvenster Eigenschappen. In het deelvenster Eigenschappen kunt u eigenschappen weergeven en bewerken, een voorvertoning genereren en een miniatuurafbeelding voor het geselecteerde fragment uploaden. Zie <a href="manage-form-metadata.md" target="_blank">Metagegevens</a> beheren voor meer informatie.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Kopiëren</p> </td>
@@ -254,16 +254,18 @@ Als u een adaptief formulier met adaptieve formulierfragmenten wilt lokaliseren,
 * Een fragment in een adaptief formulier dat een ander formuliergegevensmodel gebruikt, wordt niet ondersteund. Een XDP-fragment wordt bijvoorbeeld niet ondersteund in een XSD-gebaseerd adaptief formulier en omgekeerd.
 * Adaptieve formulierfragmenten zijn beschikbaar voor gebruik via het tabblad Adaptieve formulierfragmenten in AEM zoekfunctie.
 * Expressies, scripts of stijlen in een zelfstandig adaptief formulierfragment blijven behouden wanneer deze via verwijzing worden ingevoegd of in een adaptief formulier worden ingesloten.
-* Het is niet mogelijk om een adaptief formulierfragment, dat via verwijzing wordt ingevoegd, te bewerken in een adaptieve vorm. Als u het fragment wilt bewerken, bewerkt u het zelfstandige adaptieve formulierfragment of sluit u het fragment in het adaptieve formulier in.
-* Wanneer u een adaptief formulier publiceert, moet u de stand-alone adaptieve formulierfragmenten publiceren die door verwijzing zijn ingevoegd in het adaptieve formulier.
-* Wanneer u een bijgewerkt adaptief formulierfragment opnieuw publiceert, worden de wijzigingen doorgevoerd in de gepubliceerde exemplaren van het adaptieve formulier waarin het fragment wordt gebruikt.
-* Het adaptieve formulier met de component Verify ondersteunt geen anonieme gebruikers. Het wordt ook niet aangeraden de component Verify te gebruiken in een adaptief formulierfragment.
+* U kunt een adaptief formulierfragment, dat via verwijzing wordt ingevoegd, niet bewerken vanuit een adaptief formulier. Als u het fragment wilt bewerken, bewerkt u het zelfstandige adaptieve formulierfragment of sluit u het fragment in het adaptieve formulier in.
+* Wanneer u een adaptief formulier publiceert, moet u de op zichzelf staande Fragmenten van het adaptieve formulier publiceren die met behulp van een verwijzing zijn ingevoegd in het Adaptieve formulier.
+* Wanneer u een bijgewerkt fragment van een adaptieve formulier opnieuw publiceert, worden de wijzigingen doorgevoerd in de gepubliceerde exemplaren van de adaptieve vorm waarin het fragment wordt gebruikt.
+* Adaptief formulier dat de component Verifiëren bevat, biedt geen ondersteuning voor anonieme gebruikers. Ook wordt het niet opnieuw aangeraden om de component Verifiëren in een adaptief formulierfragment te gebruiken.
 * (**Alleen** Mac) Voeg het volgende item toe aan het bestand /private/etc/hosts om ervoor te zorgen dat de functionaliteit van formulierfragmenten in alle scenario&#39;s perfect werkt:
-  `127.0.0.1 <Host machine>`**Hostcomputer**: de Apple Mac-computer waarop [!DNL AEM Forms] is gedistribueerd.
+  `127.0.0.1 <Host machine>` **Hostmachine**: De Apple Mac-machine waarop [!DNL AEM Forms] wordt geïmplementeerd.
 
-## Referentiekaders {#reference-fragments}
+<!--
+## Reference Fragments {#reference-fragments}
 
-Er zijn referentie-adaptieve formulierfragmenten beschikbaar die u kunt gebruiken om uw formulier te maken. Zie voor meer informatie [Referentiekaders](reference-adaptive-form-fragments.md).
+Reference Adaptive Form Fragments that you can use to create your form are available. For more information, see [Reference Fragments](reference-adaptive-form-fragments.md).
+-->
 
 >[!MORELIKETHIS]
 >

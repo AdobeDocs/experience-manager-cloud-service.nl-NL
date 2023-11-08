@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 84529a8016cd05577ae481f2801904a37d58d6cc
+source-git-commit: 92e7e64f25fdb2b4d8fbfe0da6da4bc81b9c96a1
 workflow-type: tm+mt
-source-wordcount: '4367'
+source-wordcount: '4372'
 ht-degree: 19%
 
 ---
@@ -593,6 +593,7 @@ ht-degree: 19%
          + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
    + Adaptieve Forms {#adaptive-forms-authoring}
       + [Een adaptief formulier maken](/help/forms/create-an-adaptive-form.md)
+      + [Een adaptief formulierfragment maken](/help/forms/adaptive-form-fragments.md)
       + [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Kernonderdelen {#authoring-adaptive-forms-core-components}
          + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}

@@ -5,9 +5,9 @@ topic-tags: author
 keywords: Adaptieve formulierfragmenten toevoegen, Adaptieve formulierfragmenten maken, een formulierfragment maken, een fragment toevoegen aan een adaptief formulier, Fragmenten beheren
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 8de3189495c374fad156e7e6cb23c96c84ece482
+source-git-commit: 1bdd9e323e74a3f2bb06bff52235742e9e22a136
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1769'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ U kunt een adaptief formulierfragment helemaal zelf maken of een deelvenster in 
 
      >[!NOTE]
      >
-     > In adaptieve vormen op basis van kerncomponenten kunt u één formulierfragment meerdere keren in een formulier gebruiken. Dit biedt ondersteuning voor formulierfragmenten die zijn gebaseerd op geen en op schema&#39;s gebaseerde fragmenten.
+     > In Adaptieve vormen kunt u één formulierfragment (op basis van kerncomponenten) meerdere keren gebruiken. Dit biedt ondersteuning voor formulierfragmenten die zijn gebaseerd op geen en op schema&#39;s gebaseerde fragmenten.
 
    * **Schema**: geeft aan dat het fragment moet worden gemaakt met behulp van een XML- of JSON-schema dat naar AEM Forms wordt geüpload. U kunt het formuliermodel voor het fragment uploaden of selecteren uit de beschikbare XML- of JSON-schema&#39;s. Wanneer u een XML-schema selecteert, kunt u ook een fragment van de adaptieve vorm maken door een complexType in het geselecteerde schema te selecteren in de **[!UICONTROL XML Schema Complex Type]** vervolgkeuzelijst. Wanneer u een JSON-schema selecteert, kunt u ook een adaptief formulierfragment maken door in het geselecteerde schema een schemadefinitie te selecteren in het **[!UICONTROL JSON Schema Definitions]** vervolgkeuzelijst.
    * **Formuliergegevensmodel**: geeft op het fragment te maken met behulp van een formuliergegevensmodel. U kunt een adaptief formulierfragment maken op basis van slechts één gegevensmodelobject in een formuliergegevensmodel. Vervolgkeuzelijst Formuliergegevensmodeldefinities uitvouwen. Hiermee worden alle gegevensmodelobjecten in het opgegeven formuliergegevensmodel weergegeven. Selecteer een gegevensmodelobject in de lijst.
