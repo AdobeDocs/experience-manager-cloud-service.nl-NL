@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
+source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 14157 {#release-14157}
+## Release 14227 {#release-14227}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14157 samengevat, die op 7 november 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 14029.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14227 samengevat, die op 9 november 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 14029. Onderhoudsversie 14227 vervangt 14157 om één probleem op te lossen.
 
 2023.11.0 Activering van functies biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
-### Verbeteringen {#enhancements-14157}
+### Verbeteringen {#enhancements-14227}
 
 * ASSETS-29631: Assets Cloud: Use dam:rollen for secure delivery/search.
 * CQ-4354515: Vertalingen: Optie om de vertaling van bronnen waarnaar wordt verwezen te onderdrukken.
@@ -40,7 +40,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14157 same
 * SITES-16545: Inhoudsfragmenten: eindpunt toevoegen voor het ophalen van de referenties van de variatie van een inhoudsfragment.
 * SITES-16853: Inhoudsfragmenten: Verwijderen /adobe/sites/cf/fragments/{fragmentId}/variation/{name}/tags, eindpunt.
 
-### Opgeloste problemen {#fixed-issues-14157}
+### Opgeloste problemen {#fixed-issues-14227}
 
 * Verschillende toegankelijkheidsproblemen zijn opgelost
 * ASSETS-31015: Kan bestanden niet uploaden naar middelen met onbekende bestandsextensies.
@@ -85,7 +85,6 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14157 same
 * SITES-16243: Inhoudsfragmenten: Zoeken en vervangen werkt niet met velden die Renderen als: Meerdere.
 * SITES-16250: Content Fragments: Patching a CF may returns an incorrect etag header.
 * SITES-16686: Inhoudsfragmenten: Niet-fragmentverwijzingen van inhoudsfragment worden geserialiseerd wanneer de bovenliggende verwijzing de maximale diepte heeft.
-* SITES-16234: ContextHub: Correct de Geselecteerde Naam van de Activiteit van het Merk toont niet wanneer Begin richtend.
 * SITES-12880: Fast Track: herstel lokalisatie voor sites > Setup Analytics.
 * SITES-16103: De Fragmenten van de Ervaring: De opties van het doel worden niet getoond onder Cloud Servicen toe te schrijven aan consolefout.
 * SITES-16001: MSM: Mogelijkheid om componenten met meerdere velden uit te sluiten van rollout-configuratie tijdens het maken van Live Copy.
@@ -102,11 +101,11 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14157 same
 * FORMS-11546: Lighthouse heeft een ontbrekend ARIA-label gedetecteerd voor herhaalde deelvensters in een adaptieve vorm, wat van invloed is op de toegankelijkheid.
 * FORMS-11095: Het kenmerk ARIA is onjuist gedefinieerd voor telefoonnummers, e-mailadres en nummervelden, wat leidt tot toegankelijkheidsproblemen.
 
-### Bekende problemen {#known-issues-14157}
+### Bekende problemen {#known-issues-14227}
 
 Geen.
 
-### Ingesloten technologieën {#embedded-tech-14157}
+### Ingesloten technologieën {#embedded-tech-14227}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
