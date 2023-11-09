@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
+source-git-commit: 1835559f9becea5f79d179be9b01efbe67c82151
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2133'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ U kunt een formulierfragment op basis van een schema meerdere keren gebruiken in
 
 >[!NOTE]
 >
-> Als u op geen gebaseerde formulierfragmenten meerdere keren in een adaptief formulier gebruikt, vindt gegevenssynchronisatie tussen de velden van de fragmenten plaats. U kunt één [formulierfragment (op basis van kerncomponenten)](/help/forms/adaptive-form-fragments-core-components.md) gebruiken dat niet meerdere keren in een formulier is gekoppeld aan een formuliergegevensmodel zonder problemen met gegevenssynchronisatie.
+> Als u op geen gebaseerde formulierfragmenten meerdere keren in een adaptief formulier gebruikt, treedt er een probleem op met gegevenssynchronisatie tussen de velden van de fragmenten. U kunt één [formulierfragment (op basis van kerncomponenten)](/help/forms/adaptive-form-fragments-core-components.md) dat niet is gekoppeld aan een formuliergegevensmodel, meerdere keren gebruiken zonder problemen met gegevenssynchronisatie te ondervinden.
 
 ## Automatische toewijzing van fragmenten voor gegevensbinding {#auto-mapping-of-fragments-for-data-binding}
 
