@@ -4,12 +4,13 @@ description: Onderzoek hoe u de Universele Redacteur kunt gebruiken om om het ev
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
+source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
+
 
 # Bewerken in context met de universele editor {#editing-in-context}
 
@@ -38,11 +39,11 @@ Het op plaats en in context bewerken kan vaak voordelig zijn in vergelijking met
 
 Met de Universal Editor kunt u tekst op een flexibele manier in context en op zijn plaats bewerken, zodat u eenvoudig en intuïtief inhoud kunt ontwerpen.
 
-1. De editor moet standaard in **Tekst** -modus. Als dat niet het geval is, tikt u op de knop **Tekst** pictogram in de modusrail links van de redacteur.
+1. De editor moet standaard in **Componenten** -modus. Als dat niet het geval is, tikt u op de knop **Componenten** pictogram in de modusrail links van de redacteur.
 
-1. Tik of klik op de titel van het meest recente artikel om dit te bewerken.
+1. Dubbeltik of klik op de titel van het meest recente artikel om dit te bewerken.
 
-   ![De Universal Editor](assets/do-not-localize/ue-text-mode.png)
+   ![De Universal Editor](assets/do-not-localize/ue-component-mode.png)
 
 1. De component wordt geselecteerd zoals aangegeven door een blauwe rand met een tab die aangeeft dat het een tekstcomponent is. Er bevindt zich een cursor in de rand die op tekstinvoer wacht. De tekst wijzigen in `Aloha Spirit in Lofoten`.
 
@@ -56,11 +57,9 @@ De Universal Editor slaat uw wijzigingen automatisch op in de ontwerpomgeving. U
 
 Met de Universal Editor kunt u ook afbeeldingen omwisselen terwijl u in de context van uw inhoud blijft.
 
-1. Editor wijzigen in **Media** door te tikken of op de knop **Media** op de modusrail.
+1. Resterend in **Componenten** tikt of klikt u op de afbeelding van de surfer om deze te selecteren.
 
-1. Tik of klik op de afbeelding van de surfer om deze te selecteren.
-
-1. In de componentrail kunt u de details van het element zien. Tik of klik op **Vervangen**.
+1. In de componentrail kunt u de details van het element zien. Tik of klik op de knop **Aanbevolen afbeelding** miniatuur.
 
    ![Een afbeelding selecteren om te bewerken](assets/do-not-localize/ue-edit-media.png)
 
@@ -82,7 +81,7 @@ Met de Universal Editor kunt u in de context van de editor communiceren met uw i
 
 1. Readers kunnen zich op verschillende apparaten met verschillende hoogte-breedteverhoudingen bevinden, zodat de editor emulatiemodi aanbiedt om te zien hoe de pagina aan gebruikers wordt weergegeven. Selecteer bijvoorbeeld de optie Mobiel apparaat in de staande modus.
 
-   ![Het menu-item Emulator](assets/do-not-localize/ue-emulator-3.png)
+   ![Het menu-item Emulator](assets/do-not-localize/ue-emulator-2.png)
 
 1. Zie de inhoudswijziging in de editor. Het pictogram voor de emulator verandert ook om de modus aan te geven waarin deze zich bevindt. Tik of klik ergens buiten het emulatormenu om het te sluiten en te communiceren met de inhoud.
 
@@ -118,12 +117,12 @@ Als u het schrijven van inhoud wilt versnellen terwijl het gestructureerd bewerk
 
 1. Selecteer in de modus rail aan de linkerkant van de editor de optie **Componenten**. Hiermee kunt u paginacomponenten in de editor selecteren.
 
-1. Tik of klik op een van de avonturen om deze te selecteren.
+1. Tik of klik op een van de avonturen, zoals **Bali Surf Camp** om het te selecteren.
 
-   * Maak een notitie van de blauwe omtrek van de geselecteerde component. Het tabblad moet worden gelezen **referentie** wanneer een inhoudsfragment is geselecteerd.
+   * Maak een notitie van de blauwe omtrek van de geselecteerde component. Wanneer u een inhoudsfragment selecteert, moet op het tabblad de naam van het inhoudsfragment worden weergegeven. In dit geval **Bali Surf Camp**.
    * Omdat in de Universal Editor elk object op de pagina kan worden geselecteerd, kunnen componenten die onderdeel zijn van een inhoudsfragment ook afzonderlijk worden geselecteerd. Tik of klik op de plaats die in de illustratie is aangegeven om de volledige component Inhoudsfragment te selecteren.
 
-1. Een nieuwe **Bewerken** verschijnt op de modusrail. Tik of klik op de knop **Bewerken** pictogram om de editor voor inhoudsfragmenten te openen op een nieuw tabblad.
+1. De **Bewerken** verschijnt op de componentrail. Tik of klik op de knop **Bewerken** pictogram om de editor voor inhoudsfragmenten te openen op een nieuw tabblad.
 
 ![Inhoudsfragmenten selecteren in de Universal Editor](assets/do-not-localize/ue-content-fragments.png)
 
