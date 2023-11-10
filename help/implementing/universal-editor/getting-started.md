@@ -2,12 +2,13 @@
 title: Aan de slag met de Universal Editor in AEM
 description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: 6c3b286182ae33cafadf51e653c2076d1911e444
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
+
 
 # Aan de slag met de Universal Editor in AEM {#getting-started}
 
@@ -109,14 +110,17 @@ De instrumentatiekenmerken die aan de pagina worden toegevoegd, bestaan voorname
 Verbindingen die in de app worden gebruikt, worden opgeslagen als `<meta>` -tags in de pagina&#39;s `<head>`.
 
 ```html
-<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
+* `<category>` - Dit is een classificatie van het verband met twee opties.
+   * `system` - Voor eindpunten van verbindingen
+   * `config` - Voor [optionele configuratie-instellingen definiëren](#configuration-settings)
 * `<referenceName>` - Dit is een korte naam die opnieuw wordt gebruikt in het document om de verbinding te identificeren. Bijv. `aemconnection`
 * `<protocol>` - Hiermee wordt aangegeven welke persistentie-insteekmodule van de Universal Editor Persistence Service moet worden gebruikt. Bijv. `aem`
 * `<url>` - Dit is de URL naar het systeem waar de wijzigingen zullen worden voortgezet. Bijv. `http://localhost:4502`
 
-De id `adobe:aem:editor` vertegenwoordigt de verbinding voor de Adobe Universele Redacteur.
+De id `urn:adobe:aue:system` vertegenwoordigt de verbinding voor de Adobe Universele Redacteur.
 
 `itemid`s gebruikt de `urn` om de id te verkorten.
 
@@ -134,10 +138,12 @@ itemid="urn:<referenceName>:<resource>"
 ### Voorbeeldverbinding {#example}
 
 ```html
+<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
+
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aue:system:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
@@ -147,9 +153,9 @@ itemid="urn:<referenceName>:<resource>"
               <p itemprop="title" itemtype="text">Journalist</p>
               <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
             </li>
- 
+
 ...
- 
+
             <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
               <p itemprop="name" itemtype="text">John Smith</p>
               <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
@@ -159,6 +165,28 @@ itemid="urn:<referenceName>:<resource>"
         </aside>
 </body>
 </html>
+```
+
+### Configuratie-instellingen {#configuration-settings}
+
+U kunt de `config` in uw verbinding-URL om service- en extensieeindpunten indien nodig in te stellen.
+
+Als u de Universal Editor-service niet wilt gebruiken, die wordt gehost op Adobe, maar uw eigen gehoste versie, kunt u dit instellen in een metatag. Om het standaardde diensteindpunt te beschrijven dat de Universele Redacteur verstrekt, plaats uw eigen de diensteindpunt:
+
+* Metanaam - `urn:adobe:aue:config:service`
+* Metainhoud - `content="https://adobe.com"` (voorbeeld)
+
+```html
+<meta name="urn:adobe:aue:config:service" content="<url>">
+```
+
+Als u alleen bepaalde extensies wilt inschakelen voor een pagina, kunt u dit instellen in een metatag. Als u extensies wilt ophalen, stelt u de eindpunten van de extensie in:
+
+* Naam van meta: `urn:adobe:aue:config:extensions`
+* Metainhoud: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (voorbeeld)
+
+```html
+<meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
 ## U bent klaar om de Universal Editor te gebruiken {#youre-ready}
