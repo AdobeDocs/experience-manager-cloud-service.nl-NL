@@ -4,9 +4,9 @@ description: Voeg uw digitale middelen toe aan [!DNL Adobe Experience Manager] a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 4305b334afd3337b849d80e79ca4669802cd4be8
+source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
 workflow-type: tm+mt
-source-wordcount: '3115'
+source-wordcount: '3138'
 ht-degree: 0%
 
 ---
@@ -384,7 +384,7 @@ Technische details van de upload APIs en het protocol, en verbindingen aan open-
 
 * Directe binaire upload is een nieuwe methode om activa te uploaden. Dit wordt standaard ondersteund door de mogelijkheden en clients van het product, zoals [!DNL Experience Manager] gebruikersinterface, [!DNL Adobe Asset Link], en [!DNL Experience Manager] bureaubladtoepassing. Om het even welke douanecode die door klanten technische teams wordt aangepast of uitgebreid moet nieuwe uploaden APIs en protocollen gebruiken.
 
-* Adobe raadt aan niet meer dan 1000 elementen aan elke map toe te voegen in [!DNL Experience Manager Assets]. U kunt wel meer elementen aan een map toevoegen, maar er kunnen prestatieproblemen optreden, zoals een tragere navigatie naar dergelijke mappen.
+* Adobe raadt aan niet meer dan 1000 elementen aan elke map toe te voegen in [!DNL Experience Manager Assets]. Als u dit probeert, kunt u een waarschuwingsbericht krijgen die zegt, &quot;Deze folder bevat meer dan 1000 punten. Uploads en nieuwe omslagverwezenlijking kunnen worden vertraagd.&quot; U kunt nog steeds meer elementen aan een map toevoegen, maar er kunnen prestatieproblemen optreden, zoals een tragere navigatie naar dergelijke mappen.
 
 * Wanneer u **[!UICONTROL Replace]** in de [!UICONTROL Name Conflict] wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element. Indien [Assets Insights](/help/assets/assets-insights.md) is ingeschakeld voor het bijhouden van indrukken of klikken met [!DNL Adobe Analytics]maakt de opnieuw gegenereerde element-id de gegevensopname voor het element op ongeldig [!DNL Analytics].
 
