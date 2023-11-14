@@ -2,14 +2,20 @@
 title: Hoe krijg je referentiethema's en sjablonen voor AEM formulieren?
 description: AEM Forms biedt voorbeelden van adaptieve formulierthema's, sjablonen en formuliergegevensmodellen om u te helpen snel formulieren te maken.
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: dd0c45352ea402065c7c6fced1394849ed9c316c
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # Referentiethema&#39;s, sjablonen en modellen formuliergegevens {#reference-themes-templates-and-data-models}
+
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| Adaptieve Forms Core-componenten | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| AEM as a Cloud Service | Dit artikel |
 
 <span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
