@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 77%
+source-wordcount: '1897'
+ht-degree: 76%
 
 ---
 
@@ -75,7 +75,7 @@ AEM as a Cloud Service gebruikt nu ononderbroken integratie en ononderbroken lev
 
 Er zijn twee typen AEM versie-updates:
 
-* **Updates voor AEM**
+* **AEM onderhoudsupdates**
 
    * Kunnen dagelijks worden uitgebracht.
    * Deze bestanden zijn vooral bedoeld voor onderhoudsdoeleinden, zoals de nieuwste oplossingen voor problemen en beveiligingsupdates.
@@ -113,7 +113,7 @@ Met name het aantal en het type AEM-programma&#39;s dat met Cloud Manager kan wo
 
 Cloud Manager heeft zich ontwikkeld als een zelfbedieningsportal waar de belangrijkste onderdelen van AEM as a Cloud Service kunnen worden gemaakt en geconfigureerd:
 
-* Nieuwe programma&#39;s maken en beheren. Zie [Programma&#39;s en programmatypen begrijpen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor meer informatie .
+* Nieuwe programma&#39;s maken en beheren. Zie [Programma&#39;s en programmatypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor meer informatie .
 
 * De AEM-omgevingen binnen deze programma&#39;s maken en beheren. Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie .
 
@@ -206,7 +206,7 @@ Om snelle herhalingen en ontwikkeling te ondersteunen, is het ook mogelijk om AE
 
 >[!NOTE]
 >
->Begin met [Back-up](/help/operations/backup.md), [Indexering](/help/operations/indexing.md) en [andere Onderhoudstaken](/help/operations/maintenance.md) voor meer details.
+>Voor meer informatie begint u met [inhoudsherstel](/help/operations/backup.md), [Indexeren](/help/operations/indexing.md), en [overige onderhoudstaken](/help/operations/maintenance.md).
 
 Met AEM as a Cloud Service worden dergelijke bewerkingen geautomatiseerd, zodat de service niet meer hoeft te worden onderbroken.
 

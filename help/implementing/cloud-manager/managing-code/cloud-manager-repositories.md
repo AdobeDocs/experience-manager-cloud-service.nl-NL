@@ -2,9 +2,9 @@
 title: Opslagplaatsen voor Cloud Manager
 description: Leer hoe u uw git-opslagruimten maakt, weergeeft en verwijdert in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,11 @@ Leer hoe u uw git-opslagruimten maakt, weergeeft en verwijdert in Cloud Manager.
 
 Volg deze stappen om opslagruimten in Cloud Manager weer te geven en te beheren.
 
-1. Van de **Programmaoverzicht** pagina, klik op **Opslagplaatsen** en navigeer naar de **Opslagplaatsen** pagina.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Klikken op **Opslagplaats toevoegen** om de wizard te starten.
+1. Van de **Programmaoverzicht** pagina, tik of klik op **Opslagplaatsen** tab naar **Opslagplaatsen** pagina.
+
+1. Klikken op **Opslagplaats toevoegen**.
 
    ![Opslagplaats toevoegen, knop](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
@@ -74,7 +76,7 @@ Het volgende bevel zal elke submodule in de aangewezen folder uitchecken.
 $ git submodule update --init
 ```
 
-Deze techniek is een mogelijk alternatief voor de oplossing die in het document wordt beschreven [Werken met Meerdere opslagplaatsen voor Git-bronnen](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) voor organisaties die comfortabel zijn met het gebruik van git-submodules en geen extern samenvoegingsproces willen beheren.
+Deze techniek is een mogelijk alternatief voor de in het document beschreven oplossing [Werken met Meerdere bronopslaglocaties voor Git](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) voor organisaties die comfortabel zijn met het gebruik van git-submodules en geen extern samenvoegingsproces willen beheren.
 
 Stel bijvoorbeeld dat er drie opslagruimten zijn die elk één vertakking met de naam `main`. In de primaire opslagplaats, d.w.z. die gevormd in de pijpleidingen, `main` vertakking bevat een `pom.xml` dossier waarin de projecten in de andere twee gegevensbanken worden verklaard.
 
@@ -127,6 +129,6 @@ Houd rekening met de volgende beperkingen wanneer u git-submodules gebruikt.
 * Alleen submodules in de hoofdmap van de vertakking worden ondersteund.
 * Omwille van de beveiliging mag u referenties niet insluiten in URL&#39;s met git.
 * Tenzij anders nodig, wordt het ten zeerste aanbevolen oppervlakkige submodules te gebruiken.
-   * Voer `git config -f .gitmodules submodule.<submodule path>.shallow true` voor elke submodule.
+   * Voer hiervoor `git config -f .gitmodules submodule.<submodule path>.shallow true` voor elke submodule.
 * Verwijzingen naar de Git-submodule worden opgeslagen naar specifieke it-opdrachten. Dientengevolge, wanneer veranderingen in de submodule bewaarplaats worden aangebracht, begaat referenced moet worden bijgewerkt.
    * Bijvoorbeeld door `git submodule update --remote`

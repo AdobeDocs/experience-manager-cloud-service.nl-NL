@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2023.10.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.10.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2023.11.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
+source-git-commit: b51b3c9aed4d9dacbf12a6cad5f8923d82766bd9
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2023.10.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2023.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release 2023.10.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
+Op deze pagina worden de opmerkingen bij de release 2023.11.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
 
 >[!NOTE]
 >
@@ -21,24 +21,27 @@ Op deze pagina worden de opmerkingen bij de release 2023.10.0 van Cloud Manager 
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2023.10.0 in AEM as a Cloud Service is 5 oktober 2023. De volgende release is gepland voor 2 november 2023.
+De releasedatum voor Cloud Manager versie 2023.11.0 in AEM as a Cloud Service is 14 november 2023. De volgende release is gepland voor 7 december 2023.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Verbeteringen aan [indexeren](/help/operations/indexing.md) hebben verminderde pijpleidingsduur wanneer het opstellen van nieuwe indexen.
-   * De verbeteringen zijn afhankelijk van het inhoudsprofiel.
-* Automatisch [updates voor ontwikkelomgevingen](/help/implementing/cloud-manager/manage-environments.md#updating-environments) zijn standaard ingeschakeld voor nieuwe programma&#39;s, waardoor u de tijd bespaart die nodig is om updates handmatig uit te voeren.
-   * Deze update wordt gefaseerd uitgevoerd.
-* Met de release van oktober 2023 van Cloud Manager worden Java-versies bijgewerkt via een gefaseerde implementatie.
-   * De kleine versies voor Java 8 en 11 en Maven zijn bijgewerkt en zullen in de komende twee maanden geleidelijk worden geïmplementeerd. De nieuwe versie heeft veelvoudige veiligheidsmoeilijke situaties en insecten. De nieuwe versies zijn:
-      * **Gemaakt:** `3.8.8`
-      * **Java 8-versie:** `/usr/lib/jvm/jdk1.8.0_371`
-      * **Java 11-versie:** `/usr/lib/jvm/jdk-11.0.20`
-   * [Zie het advies van OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) voor meer informatie over de beveiliging en foutoplossingen in deze JDK-updates.
+* Web Application Firewall-DDOS protection (WAF-DDOS) is nu beschikbaar voor aankoop als deel van uw AEM as a Cloud Service rechten en [kan op een zelfbediening manier worden gevormd.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+* Gespecialiseerd [Distributiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) De pijpleidingen zijn nu beschikbaar om milieu montages, onderhoudstaken, regels CDN, en meer binnen notulen te vormen.
+* [Bij het kopiëren van inhoud](/help/implementing/developing/tools/content-copy.md) van een hogere omgeving tot een ontwikkelomgeving wordt nu een boodschap weergegeven waarin u wordt aangeraden grote inhoudssets te kopiëren omdat ontwikkelomgevingen beperkt zijn in de capaciteit.
+* [De pagina met details over de uitvoering van de pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) zullen nu alle stappen in een pijpleidingsuitvoering tonen met degenen die nog niet grayed zijn begonnen.
+* Op beide **[Activiteit](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** en **[Pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** pagina&#39;s, is een samenvatting van de pijpleidingsuitvoering nu beschikbaar wanneer het klikken op een pijpleiding met een lopende status.
+* Een nieuwe **Duur** is toegevoegd aan de [pagina met details over pijplijn](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) dit omvat de gemiddelde duur van de pijpleidingstap op basis van de historische trend voor dat programma.
+* Op de pagina van de pijpleidingsuitvoering, tonen de gebeëindigde stappen nu duur.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
 Maak deel uit van ons programma voor vroegtijdige goedkeuring en heb de kans om een aantal van de komende kenmerken te testen.
+
+### Breng uw eigen GitHub {#byo-github}
+
+Als u GitHub gebruikt om uw bewaarplaatsen te beheren, [u kunt code binnen uw bewaarplaatsen van GitHub door de Manager van de Wolk nu bevestigen.](/help/implementing/cloud-manager/managing-code/byo-github.md) Door deze integratie is het niet nodig de code consistent te synchroniseren met de opslagplaats van de Adobe en kunt u terugtrekkingsverzoeken verifiëren voordat u ze samenvoegt in de hoofdvertakkingen.
+
+Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `Grp-CloudManager_BYOG@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
 
 ### Aangepaste machtigingen {#custom-permissions}
 
