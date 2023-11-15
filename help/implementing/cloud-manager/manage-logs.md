@@ -2,9 +2,9 @@
 title: Logbestanden openen en beheren
 description: Leer hoe u logboeken kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '313'
 ht-degree: 3%
 
 ---
@@ -82,4 +82,9 @@ Environment Id Service    Name
 Zie de volgende aanvullende bronnen voor meer informatie over de API en Adobe I/O CLI van Cloud Manager:
 
 * [Documentatie voor API voor cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [ADOBE I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+
+Zie de volgende aanvullende bronnen voor meer informatie over logbestanden in AEM as a Cloud Service:
+
+* [Cloud 5 AEM logbestanden](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [Foutopsporing AEM as a Cloud Service met logbestanden](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)
