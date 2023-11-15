@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
+source-git-commit: afb3de515336d3d13b392f8fcc4d263f4f063689
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Bekijk de video Overzicht van de release van oktober 2023 voor een overzicht van
 
 [Het verkeer van de filter bij de Adobe Beheerde CDN](/help/security/traffic-filter-rules-including-waf.md) door regels te verklaren die websiteverkeer door eigenschappen met inbegrip van url, IP adres, en gebruikersagent aanpassen - of de grenzen van het douaneverkeer plaatsen om tegen de aanvallen van Dos te beschermen. Klanten kunnen ook een licentie verlenen voor een set geavanceerde WAF-regels (Web Application Firewall) voor extra bescherming tegen geavanceerde websitebedreigingen.
 
-Wij moedigen u aan om vertrouwd te raken met de regels van de verkeersfilter door [een zelfstudie proberen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! Het begeleidt u door vestiging een nieuwe Pijpleiding van de Configuratie van de Manager van de Wolk, verklarende regels in een configuratiedossier, en het analyseren van CDN- logboeken voor kwaadwillig verkeer.
+Wij moedigen u aan vertrouwd te worden met de regels van de verkeersfilter door [een zelfstudie proberen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! Het begeleidt u door vestiging een nieuwe Pijpleiding van de Configuratie van de Manager van de Wolk, verklarende regels in een configuratiedossier, en het analyseren van CDN- logboeken voor kwaadwillig verkeer.
 
 De filterregels van het verkeer zijn nu beschikbaar op ontwikkelomgevingen, met een geleidelijke uitrol aan stadium en prod milieu&#39;s in November. U kunt eerder toegang aanvragen in het werkgebied en de proefperiode via e-mail **aemcs-waf-adopter@adobe.com**.
 
