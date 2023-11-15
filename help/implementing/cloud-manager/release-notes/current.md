@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2023.11.0 in Adobe Experience Ma
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: b51b3c9aed4d9dacbf12a6cad5f8923d82766bd9
+source-git-commit: 71746b00c2d4ee05126af54241db30a7d3aeab1c
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '750'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,10 @@ De releasedatum voor Cloud Manager versie 2023.11.0 in AEM as a Cloud Service is
 * [De pagina met details over de uitvoering van de pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) zullen nu alle stappen in een pijpleidingsuitvoering tonen met degenen die nog niet grayed zijn begonnen.
 * Op beide **[Activiteit](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** en **[Pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** pagina&#39;s, is een samenvatting van de pijpleidingsuitvoering nu beschikbaar wanneer het klikken op een pijpleiding met een lopende status.
 * Een nieuwe **Duur** is toegevoegd aan de [pagina met details over pijplijn](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) dit omvat de gemiddelde duur van de pijpleidingstap op basis van de historische trend voor dat programma.
-* Op de pagina van de pijpleidingsuitvoering, tonen de gebeëindigde stappen nu duur.
+* Op de [pagina voor de uitvoering van pijpleidingen,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) de voltooide stappen geven nu de duur weer.
+* Uitvoeringen die [constructieartefacten opnieuw gebruiken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) De koppeling naar de uitvoering die deze artefacten aanvankelijk heeft gemaakt, wordt nu weergegeven.
+* De optie om te selecteren **Belangrijke metrische fouten** kan nu worden geconfigureerd voor [pijpleidingen van codekwaliteit](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) ook.
+
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
