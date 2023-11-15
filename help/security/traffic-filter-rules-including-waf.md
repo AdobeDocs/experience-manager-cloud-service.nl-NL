@@ -2,18 +2,15 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
+source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
 workflow-type: tm+mt
-source-wordcount: '3473'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
 
 
 # Regels voor verkeersfilters, inclusief WAF-regels {#traffic-filter-rules-including-waf-rules}
-
->[!NOTE]
->Deze functie is nu beschikbaar in ontwikkelomgevingen, met een geleidelijke implementatie in werkgebied- en prodomgevingen later in november. U kunt eerder toegang aanvragen in het werkgebied en de proefperiode via e-mail **aemcs-waf-adopter@adobe.com**.
 
 De filterregels van het verkeer kunnen worden gebruikt om verzoeken bij de laag te blokkeren of toe te staan CDN, die in scenario&#39;s zoals nuttig kan zijn:
 
