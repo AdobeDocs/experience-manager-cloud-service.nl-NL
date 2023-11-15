@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
+source-git-commit: 1a128e35be06d018ec25fb0e6a479cfd0d242dbd
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14227 same
 
 ### Verbeteringen {#enhancements-14227}
 
-* ASSETS-29631: Assets Cloud: Use dam:rollen for secure delivery/search.
+<!--* ASSETS-29631: Assets Cloud: Use dam:roles for secure delivery/search.-->
 * CQ-4354515: Vertalingen: Optie om de vertaling van bronnen waarnaar wordt verwezen te onderdrukken.
 * FORMS-9993: Bepaal Stappen om de Componenten van de Kern van Forms in Skyline te bewegen.
 * FORMS-10570: On-board EC APIs aan API - Eerste Router.
