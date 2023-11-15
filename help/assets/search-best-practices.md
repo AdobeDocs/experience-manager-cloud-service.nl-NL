@@ -3,7 +3,7 @@ title: Best practices zoeken voor [!DNL Adobe Experience Manager] als [!DNL Clou
 description: Aanbevolen procedures voor het zoeken, zoeken en ophalen van metagegevens van elementen in uw toepassing.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: a3f7564932e7f9318841623376f62dad91ceca18
+source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
 workflow-type: tm+mt
 source-wordcount: '2455'
 ht-degree: 1%
@@ -46,9 +46,7 @@ U kunt de zoekopdracht specifieker maken door het trefwoord in dubbele aanhaling
 
 Als u in het dialoogvenster **[!UICONTROL Assets view]** ook.
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
--->
 
 ## Bestanden en mappen {#files-folders}
 
@@ -69,9 +67,7 @@ Selecteer de map in het pad en navigeer naar de vereiste map als u in de specifi
 
 ![Zoeken met bestanden en mappen](assets/files-folders.png)
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
--->
 
 ## Operatoren {#operators}
 
@@ -123,9 +119,7 @@ Sterretje is een jokertekenoperator die wordt gebruikt om uw zoekopdracht uit te
 * `car*` retourneert elementen met was, drager, vervoer, enzovoort.
 * `*car` retourneert bezittingen met moderne auto&#39;s, sportauto&#39;s enzovoort.
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425488)
--->
 
 **[!UICONTROL Assets view]** ondersteunt het gebruik van jokertekens niet.
 
@@ -193,9 +187,7 @@ Om activa te zoeken gebruikend het vermelde scenario in **[!UICONTROL Assets vie
 1. Ga naar zoekfilters.
 1. Ga naar Filters. Onder [!UICONTROL MIME Type]selecteert u alle opgegeven MIME-typen, maar deselecteert u PNG.
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425486)
--->
 
 ## Geavanceerd zoeken {#advanced-search}
 
@@ -249,9 +241,7 @@ U kunt specifieke criteria vastleggen met behulp van verschillende zoekfilters. 
 
 Als u in het dialoogvenster **[!UICONTROL Assets view]** ook.
 
-<!--
->[!VIDEO](https://video.tv.adobe.com/v/3425490)  
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
 **Scenario 9: vergelijkbare overeenkomst zoeken voor rode kleurenauto**
 
