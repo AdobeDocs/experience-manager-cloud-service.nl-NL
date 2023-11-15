@@ -3,9 +3,9 @@ title: Productiepijpleidingen configureren
 description: Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu's te bouwen en op te stellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM to
 >
 >* Als er voor de geselecteerde omgeving een pijpleiding voor code in de weblaag bestaat, is deze selectie uitgeschakeld.
 >* Als u een bestaande full-stack pijpleiding die aan een milieu opstelt hebt, die tot een Web rij config pijpleiding voor het zelfde milieu leidt zal de bestaande configuratie van de Webrij in de full-stack pijpleiding worden genegeerd.
-> * Op elk ogenblik, kan er slechts één config plaatsingspijpleiding per milieu zijn.
+> * Op elk ogenblik, kan er slechts één config pijpleiding per milieu zijn.
 
 De stappen om de verwezenlijking van uw productie te voltooien, zijn de gerichte plaatsingspijpleiding het zelfde zodra u een plaatsingstype kiest.
 
@@ -158,7 +158,7 @@ De stappen om de verwezenlijking van uw productie te voltooien, zijn de gerichte
    * **Pauzeren vóór implementatie naar productie** - Deze optie pauzeert de pijpleiding alvorens aan productie op te stellen.
    * **Gepland** - Met deze optie kan de gebruiker de geplande implementatie van de productie inschakelen. Alleen beschikbaar voor doelgerichte webimplementaties.
 
-   ![Config-implementatiepijplijn](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![Config-pijplijn](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. Klikken **Opslaan**.
 

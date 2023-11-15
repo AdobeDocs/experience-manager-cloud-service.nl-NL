@@ -3,9 +3,9 @@ title: CI/CD-pijpleidingen
 description: Leer meer over de CI/CD-pijpleidingen van Cloud Manager en hoe deze kunnen worden gebruikt om uw code efficiënt te implementeren.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Een niet-productiepijpleiding dient hoofdzakelijk om codescannen in werking te s
 Naast productie en niet-productie kunnen pijpleidingen worden gedifferentieerd naar het type code dat zij invoeren.
 
 * **[Volledige stapelpijplijnen](#full-stack-pipeline)** - Tegelijkertijd back-end- en front-end codebuilds implementeren die een of meer AEM servertoepassingen bevatten, samen met configuraties van HTTPD/Dispatcher
-* **[Distributiepijpleidingen configureren](#config-deployment-pipeline)** - Configureer instellingen voor uw AEM, onderhoudstaken, CDN-regels en meer.
+* **[Config Pipelines](#config-deployment-pipeline)** - Configureer instellingen voor uw AEM, onderhoudstaken, CDN-regels en meer.
 * **[Pijpleidingen aan de voorzijde](#front-end)** - Maak front-end codebouwwerken die één of meerdere cliënt-kant toepassingen UI bevatten
 * **[Webservicepijpleidingen](#web-tier-config-pipelines)** - Implementeert HTTPD/Dispatcher-configuraties
 
@@ -111,15 +111,15 @@ Leren hoe te om volledig-stapelpijpleidingen te vormen, zie de volgende document
 * [Een productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 * [Een niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
-## Distributiepijpleidingen configureren {#config-deployment-pipeline}
+## Config Pipelines {#config-deployment-pipeline}
 
-Met een configuratiopijpleiding kunt u configuratiemontages op uw AEM milieu voor onderhoudstaken, CDN regels, en meer opstellen.
+Met een config pijpleiding kunt u configuratiemontages op uw AEM milieu voor onderhoudstaken, CDN regels, en meer opstellen.
 
 Zie het document [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md) om te leren hoe u de configuraties in uw opslagplaats kunt beheren, zodat deze correct worden geïmplementeerd.
 
-### Het vormen de Pijpleidingen van de Plaatsing Config {#configure-config-deployment}
+### Config Pipelines configureren {#configure-config-deployment}
 
-Leren hoe te om config plaatsingspijpleidingen te vormen, zie de volgende documenten:
+Leren hoe te om config pijpleidingen te vormen, zie de volgende documenten:
 
 * [Een productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
 * [Een niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
