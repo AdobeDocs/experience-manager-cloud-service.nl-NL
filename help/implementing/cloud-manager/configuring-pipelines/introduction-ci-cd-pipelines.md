@@ -3,9 +3,9 @@ title: CI/CD-pijpleidingen
 description: Leer meer over de CI/CD-pijpleidingen van Cloud Manager en hoe deze kunnen worden gebruikt om uw code efficiënt te implementeren.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Een niet-productiepijpleiding dient hoofdzakelijk om codescannen in werking te s
 Naast productie en niet-productie kunnen pijpleidingen worden gedifferentieerd naar het type code dat zij invoeren.
 
 * **[Volledige stapelpijplijnen](#full-stack-pipeline)** - Tegelijkertijd back-end- en front-end codebuilds implementeren die een of meer AEM servertoepassingen bevatten, samen met configuraties van HTTPD/Dispatcher
-* **[Config Pipelines](#config-deployment-pipeline)** - Configureer instellingen voor uw AEM, onderhoudstaken, CDN-regels en meer.
+* **[Config Pipelines](#config-deployment-pipeline)** - Vorm en stel de regels van de verkeersfilter, met inbegrip van de regels van WAF, binnen notulen op
 * **[Pijpleidingen aan de voorzijde](#front-end)** - Maak front-end codebouwwerken die één of meerdere cliënt-kant toepassingen UI bevatten
 * **[Webservicepijpleidingen](#web-tier-config-pipelines)** - Implementeert HTTPD/Dispatcher-configuraties
 
@@ -113,7 +113,7 @@ Leren hoe te om volledig-stapelpijpleidingen te vormen, zie de volgende document
 
 ## Config Pipelines {#config-deployment-pipeline}
 
-Met een config pijpleiding kunt u configuratiemontages op uw AEM milieu voor onderhoudstaken, CDN regels, en meer opstellen.
+Met een config pijpleiding kunt u de regels van de verkeersfilter, met inbegrip van de regels van WAF, binnen notulen vormen en opstellen.
 
 Zie het document [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md) om te leren hoe u de configuraties in uw opslagplaats kunt beheren, zodat deze correct worden geïmplementeerd.
 
@@ -129,10 +129,6 @@ Leren hoe te om config pijpleidingen te vormen, zie de volgende documenten:
 Voorste code is elke code die als statische bestanden wordt gebruikt. Het is verschillend van code UI die door AEM wordt gediend en kan plaatsthema&#39;s, klant-bepaalde SPA, SPA, en andere oplossingen omvatten.
 
 De front-end pijpleidingen helpen uw teams uw ontwerp en ontwikkelingsproces stroomlijnen door versnelde plaatsing van front-end code asynchroon van achterste-eindontwikkeling toe te laten. Deze speciale pijpleiding stelt JavaScript en CSS aan de AEM distributielaag als thema op, resulterend in een nieuwe themaversie die van pagina&#39;s door AEM kan worden van verwijzingen voorzien.
-
->[!IMPORTANT]
->
->U moet AEM versie hebben `2021.10.5933.20211012T154732Z ` of hoger met AEM Sites ingeschakeld voor het gebruik van voorste-eindpijpleidingen.
 
 >[!NOTE]
 >

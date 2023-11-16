@@ -3,7 +3,7 @@ title: Opmerkingen bij de release Cloud Manager 2023.11.0 in Adobe Experience Ma
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3a9eaa162d62cd3e674f14ba39ed7c96ad271f79
+source-git-commit: 4e2ea040ec14515525424b42f524601d34786cb8
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 0%
@@ -26,7 +26,7 @@ De releasedatum voor Cloud Manager versie 2023.11.0 in AEM as a Cloud Service is
 ## Wat is er nieuw? {#what-is-new}
 
 * Web Application Firewall-DDOS protection (WAF-DDOS) is nu beschikbaar voor aankoop als deel van uw AEM as a Cloud Service rechten en [kan op een zelfbediening manier worden gevormd.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* Gespecialiseerd [configuratieleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) zijn nu beschikbaar om milieu montages, onderhoudstaken, CDN regels, en meer binnen notulen te vormen.
+* Gespecialiseerd [configuratieleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) zijn nu beschikbaar om de regels van de verkeersfilter, met inbegrip van de regels van WAF, binnen notulen te vormen en op te stellen.
 * [Bij het kopiëren van inhoud](/help/implementing/developing/tools/content-copy.md) van een hogere omgeving tot een ontwikkelomgeving wordt nu een boodschap weergegeven waarin u wordt aangeraden grote inhoudssets te kopiëren omdat ontwikkelomgevingen beperkt zijn in de capaciteit.
 * [De pagina met details over de uitvoering van de pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) zullen nu alle stappen in een pijpleidingsuitvoering tonen met degenen die nog niet grayed zijn begonnen.
 * Op beide **[Activiteit](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** en **[Pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** pagina&#39;s, is een samenvatting van de pijpleidingsuitvoering nu beschikbaar wanneer het klikken op een pijpleiding met een lopende status.
