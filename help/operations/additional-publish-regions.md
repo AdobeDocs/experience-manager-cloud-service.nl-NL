@@ -2,9 +2,9 @@
 title: Aanvullende publicatieregio's
 description: Leer hoe AEM as a Cloud Service extra publicatiegebieden voor verhoogde beschikbaarheid en verminderde latentie steunt.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
+source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ Zoals beschreven in de Geavanceerde sectie van de Overwegingen van het Voorzien 
 Wanneer een extra publicatiegebied op een programma met geavanceerd reeds gevormd voorzien van een netwerk wordt toegelaten, zal het verkeer in het extra publicatiegebied dat de geavanceerde voorzien van een netwerkregels aanpast door standaardroute door het primaire gebied. Om uit verhoogde beschikbaarheid voordeel te halen, wordt het geadviseerd om geavanceerd voorzien van een netwerk op de extra gebieden toe te laten.
 
 Zie de [Geavanceerde netwerkconfiguratie voor extra publicatiegebieden](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) sectie in de Geavanceerde documentatie van het Voorzien van een netwerk voor details, met inbegrip van hoe te om geavanceerde voorzien van een netwerkconfiguraties aan extra gebieden toe te voegen zonder verlies van connectiviteit te veroorzaken.
+
+## Logboekregistratie {#logging}
+
+Als extra publicatiegebieden zijn ingeschakeld, worden afzonderlijke logbestanden voor elk gebied beschikbaar gesteld via Cloud Manager. Zie voor meer informatie [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) en [Logboeken voor extra publicatieregio&#39;s](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## Beperkingen {#limitations}
 

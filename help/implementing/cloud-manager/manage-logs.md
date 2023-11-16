@@ -2,10 +2,10 @@
 title: Logbestanden openen en beheren
 description: Leer hoe u logboeken kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 3%
+source-wordcount: '345'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ U kunt een lijst met beschikbare logbestanden voor de geselecteerde omgeving ope
 
 ## Logbestanden downloaden {#download-logs}
 
-Ga als volgt te werk om logbestanden te downloaden.
+Ga als volgt te werk om logbestanden te downloaden:
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
@@ -32,11 +32,17 @@ Ga als volgt te werk om logbestanden te downloaden.
 
    ![Het dialoogvenster Logbestanden downloaden](assets/download-preview.png)
 
+   In geval van [Aanvullende publicatieregio&#39;s](/help/operations/additional-publish-regions.md) zijn ingeschakeld voor uw omgeving, kunt u elk gebied selecteren en de bijbehorende logbestanden afzonderlijk downloaden, zoals hieronder wordt weergegeven:
+
+   ![Logbestanden downloaden voor extra publicatiegebieden](assets/download-publish-region-logs.png)
+
 1. Nadat u de service hebt geselecteerd, klikt u op het downloadpictogram naast het logbestand dat u wilt ophalen.
 
 U kunt uw logbestanden ook openen via het dialoogvenster **Omgevingen** pagina.
 
 ![Logbestanden van het scherm Environment](assets/download-logs.png)
+
+
 
 ## Logbestanden via API {#logs-through-api}
 

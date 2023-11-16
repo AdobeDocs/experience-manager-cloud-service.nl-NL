@@ -2,10 +2,10 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
+source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 1%
+source-wordcount: '2757'
+ht-degree: 0%
 
 ---
 
@@ -556,6 +556,16 @@ De logboeken CDN zijn verschillend van de andere logboeken in die dat het aan ee
 ### Cloud-omgevingen {#cloud-environments}
 
 AEM as a Cloud Service logbestanden voor cloudservices kunt u openen door de interface van Cloud Manager te downloaden of door logbestanden op de opdrachtregel te plaatsen met behulp van de opdrachtregelinterface van Adobe I/O. Zie de klasse [Logboekdocumentatie van Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
+
+### Logboeken voor extra publicatieregio&#39;s {#logs-for-additional-publish-regions}
+
+Als de optie Extra publicatiegebieden is ingeschakeld voor een bepaalde omgeving, kunnen logbestanden voor elk gebied worden gedownload van Cloud Manager, zoals hierboven vermeld.
+
+De AEM logboeken en de verzenders voor de Extra Publish Regio&#39;s zullen het gebied in de eerste 3 letters na milieu-id specificeren, zoals aangetoond door **nld2** in de onderstaande steekproef, die verwijst naar een extra AEM in Nederland gevestigde publicatie-instantie:
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+```
 
 ### Lokale SDK {#local-sdk}
 
