@@ -2,9 +2,9 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
+source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2683'
 ht-degree: 1%
 
 ---
@@ -523,7 +523,8 @@ Merk op dat de Splunk het door:sturen eigenschap nog geen CDN logboeken steunt.
 "cache": "PASS",
 "status": 200,
 "res_age": 0,
-"pop": "PAR"
+"pop": "PAR",
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -547,6 +548,8 @@ De logboeken CDN zijn verschillend van de andere logboeken in die dat het aan ee
 | *status* | De HTTP-statuscode als een geheel getal. |
 | *res_age* | De hoeveelheid tijd (in seconden) dat een reactie in de cache is geplaatst (in alle knooppunten). |
 | *pop* | Datacenter van de CDN-cacheserver. |
+| *regels* | De namen van alle overeenkomsten [verkeersfilterregels](/help/security/traffic-filter-rules-including-waf.md) en WAF vlaggen, die ook erop wijzen als de gelijke in een blok resulteerde. Leeg als geen regels overeenkomen. |
+
 
 ## Hoe te om Logs toegang te hebben {#how-to-access-logs}
 
