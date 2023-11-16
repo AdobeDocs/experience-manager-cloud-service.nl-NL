@@ -2,9 +2,9 @@
 title: Indexeren na migreren van inhoud
 description: Leer hoe het migratieproces de opgenomen inhoud op de Cloud Service-instantie van de bestemming zal indexeren.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="Indexering van inhoud"
->abstract="AEM Indexering verwijst naar het indexeren van de inhoud op de instantie Cloud Service na het migreren van inhoud naar de instantie. Indexering is vereist voor ondersteuning van het zoeken naar inhoud voor die instantie."
+>abstract="AEM Indexering verwijst naar het indexeren van de inhoud op de instantie Cloud Service na het migreren van inhoud naar de instantie. Indexering is vereist om het zoeken naar inhoud voor die instantie te ondersteunen."
 
 Zodra de Cloud Acceleration Manager de opname van inhoud in de Cloud Service-instantie heeft voltooid, kan deze worden gebruikt. In eerste instantie wordt de inhoud niet geïndexeerd, wat waarschijnlijk resulteert in een instabiele omgeving waarin problemen zoals ondoorzoekbare inhoud en verminderde prestaties kunnen worden verwacht.
 Voor optimale prestaties op de instantie wordt de inhoud automatisch geïndexeerd tijdens het migratieproces. Er hoeft niets te worden gedaan, behalve om de voortgang van de indexering te volgen.
@@ -46,13 +46,13 @@ Wanneer de opname slaagt, wordt de indexerende baan in werking gesteld automatis
 
 ### Voltooid
 
-Wanneer de indexeertaak succesvol is, is de instantie gereed om te worden gebruikt voor optimale prestaties. Op dit punt zijn de indexerende taaklogboeken beschikbaar om te bekijken of te downloaden om hen te inspecteren.
+Wanneer de indexeertaak succesvol is, is de instantie gereed om te worden gebruikt voor optimale prestaties. Op dit punt zijn de indexerende baanlogboeken beschikbaar om hen te bekijken of te downloaden te inspecteren.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-indexing/complete.png)
 
 ### Fouten
 
-Het indexeren van de instantie van de bestemmings Cloud Service zal zeer waarschijnlijk slagen. In sommige gevallen kan dit mislukken en wordt de rij met ingevulde taken als volgt weergegeven. In alle gevallen, kunt u sommige details van de mislukking ontdekken door over de mislukkingsstatus te hangen, en het kan meer informatie verstrekken om u te helpen volgende stappen bepalen. Op dit punt zullen de indexerende baanlogboeken aan mening of download beschikbaar zijn helpen de bron van de mislukking ontdekken. Als de volgende stap niet duidelijk is, gelieve de Steun van de Adobe met details van de opname en het indexerende logboek te contacteren.
+Het indexeren van de instantie van de bestemmings Cloud Service zal zeer waarschijnlijk slagen. In sommige gevallen kan dit mislukken en wordt de rij met ingevulde taken als volgt weergegeven. In alle gevallen, kunt u sommige details van de mislukking ontdekken door over de mislukkingsstatus te hangen, en het kan meer informatie verstrekken om u te helpen volgende stappen bepalen. Op dit punt, zijn de indexerende baanlogboeken beschikbaar aan mening of download helpen de bron van de mislukking ontdekken. Als de volgende stap niet duidelijk is, gelieve de Steun van de Adobe met details van de opname en het indexerende logboek te contacteren.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 
