@@ -3,9 +3,9 @@ title: Best practices zoeken voor [!DNL Adobe Experience Manager] als [!DNL Clou
 description: Aanbevolen procedures voor het zoeken, zoeken en ophalen van metagegevens van elementen in uw toepassing.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
+source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2431'
 ht-degree: 1%
 
 ---
@@ -38,11 +38,11 @@ De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden wor
 
 Opgeven `classic car` als zoekwoord en klik op Zoeken. U kunt de zoeksuggesties in een vervolgkeuzelijst bekijken terwijl u het trefwoord typt. De onderzoekssuggesties zijn gebaseerd op de inhoud van de onderzoeksindex op uw plaatsing van de Experience Manager. Als u de juiste elementen niet kunt weergeven in het keuzemenu, drukt u op Enter om de lijst met resultaten weer te geven. De resultaten worden gesorteerd op relevantie, beginnend bij de dichtstbijzijnde overeenkomsten.
 
-![Standaardzoekmethode 1 uitvoeren](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 U kunt de zoekopdracht specifieker maken door het trefwoord in dubbele aanhalingstekens (&quot; &quot;) toe te voegen. Deze zoekopdracht bevat alleen Elementen die de opgegeven termen bevatten. De zoekcriteria zien er zo uit - `"classic car"`. De zoekresultaten met beide termen `classic` en `car` worden weergegeven.
 
-![Exacte overeenkomst zoeken](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 Als u in het dialoogvenster **[!UICONTROL Assets view]** ook.
 
@@ -65,7 +65,7 @@ Voer de volgende stappen uit om dit scenario te bereiken:
 Selecteer de map in het pad en navigeer naar de vereiste map als u in de specifieke map wilt zoeken.
 3. Selecteer Bestanden in de vervolgkeuzelijst om alle bestanden met het trefwoord weer te geven `classic car`.
 
-![Zoeken met bestanden en mappen](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
@@ -164,7 +164,7 @@ Voer de volgende stappen uit in **[!UICONTROL Admin view]**:
 1. Selecteer [!UICONTROL PDF].
 1. Ga naar [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Unpublished].
 
-![Voorbeeld 2 van filter](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 Voer de volgende stappen uit in **[!UICONTROL Assets view]**:
 
@@ -180,7 +180,7 @@ Wanneer u niet zeker weet wat de titel of de meta-beschrijving van een element i
 1. Ga naar Filters. Onder [!UICONTROL File Type], uitbreiden [!UICONTROL Images] en selecteert u [!UICONTROL Web enabled]
 1. Schakel PNG uit.
 
-![Alle afbeeldingen behalve jeep doorzoeken](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 Om activa te zoeken gebruikend het vermelde scenario in **[!UICONTROL Assets view]** volgt u de onderstaande stappen:
 
@@ -203,7 +203,7 @@ Een zoekopdracht naar scenario 6 uitvoeren:
 2. Navigeer naar het deelvenster Filters en selecteer Documenten onder Bestandstype.
 3. Verfijn uw zoekopdracht met de jokerteken voor sterretjes. Type `"classic car"` om alle elementen te zoeken die het `classic car` trefwoord.
 
-![Scenario 6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 Scenario 6 kan niet worden uitgevoerd in **[!UICONTROL Assets view]** omdat het het gebruik van Wokjes niet steunt.
 
@@ -213,7 +213,7 @@ Een zoekopdracht uitvoeren naar scenario 7:
 
 Typ de `car - classic` in de zoekbalk. Navigeer naar het deelvenster Filters en selecteer Documenten onder Bestandstype. De prioriteitsvolgorde van de zoekopdracht is gebaseerd op: Prioriteit 1: Metagegevensprioriteit 2: Slimme tags
 
-![Scenario 7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 Scenario 7 kan niet worden uitgevoerd in **[!UICONTROL Assets view]** omdat het het gebruik van Wokjes niet steunt.
 
@@ -237,7 +237,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 U kunt specifieke criteria vastleggen met behulp van verschillende zoekfilters. Tag is een trefwoord dat aan een element wordt toegewezen om het element identificeerbaar te maken onder een groot aantal elementen. In dit scenario kunt u bijvoorbeeld zoeken naar elementen met *juweel* -tags. Typ `tags:jeep` in de zoekbalk. Alleen elementen die aan deze criteria voldoen, worden vermeld in de zoekresultaten.
 
-![Zoeken met tags](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 Als u in het dialoogvenster **[!UICONTROL Assets view]** ook.
 
